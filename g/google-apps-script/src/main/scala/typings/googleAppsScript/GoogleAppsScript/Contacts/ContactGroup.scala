@@ -2,34 +2,32 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A ContactGroup is is a group of contacts.
   */
-@js.native
 trait ContactGroup extends StObject {
   
-  def addContact(contact: Contact): ContactGroup = js.native
+  def addContact(contact: Contact): ContactGroup
   
-  def deleteGroup(): Unit = js.native
+  def deleteGroup(): Unit
   
-  def getContacts(): js.Array[Contact] = js.native
+  def getContacts(): js.Array[Contact]
   
-  /** @deprecated DO NOT USE */ def getGroupName(): String = js.native
+  /** @deprecated DO NOT USE */ def getGroupName(): String
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def isSystemGroup(): Boolean = js.native
+  def isSystemGroup(): Boolean
   
-  def removeContact(contact: Contact): ContactGroup = js.native
+  def removeContact(contact: Contact): ContactGroup
   
-  /** @deprecated DO NOT USE */ def setGroupName(name: String): Unit = js.native
+  /** @deprecated DO NOT USE */ def setGroupName(name: String): Unit
   
-  def setName(name: String): ContactGroup = js.native
+  def setName(name: String): ContactGroup
 }
 object ContactGroup {
   

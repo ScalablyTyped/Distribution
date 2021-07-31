@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppointmentDeletedEventUIParam extends StObject {
   
   /**
     * Gets the id of the deleted appointment.
     */
-  var appointmentId: js.UndefOr[js.Any] = js.native
+  var appointmentId: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the scheduler.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object AppointmentDeletedEventUIParam {
   

@@ -2,61 +2,59 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLicenseCode extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Description of this License Code.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of resource. Always compute#licenseCode for licenses.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL and description aliases of Licenses with the same
     * License Code.
     */
-  var licenseAlias: js.UndefOr[js.Array[SchemaLicenseCodeLicenseAlias]] = js.native
+  var licenseAlias: js.UndefOr[js.Array[SchemaLicenseCodeLicenseAlias]] = js.undefined
   
   /**
     * [Output Only] Name of the resource. The name is 1-20 characters long and
     * must be a valid 64 bit integer.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Current state of this License Code.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] If true, the license will remain attached when creating
     * images or snapshots from disks. Otherwise, the license is not
     * transferred.
     */
-  var transferable: js.UndefOr[Boolean] = js.native
+  var transferable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLicenseCode {
   

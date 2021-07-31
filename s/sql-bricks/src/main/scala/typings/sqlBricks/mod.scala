@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sqlBricks.anon.Placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,25 +17,27 @@ object mod extends Shortcut {
     * A DELETE statement
     */
   @js.native
-  trait DeleteStatement extends Statement {
+  trait DeleteStatement
+    extends StObject
+       with Statement {
     
     def and(): SelectStatement = js.native
-    def and(column: js.UndefOr[scala.Nothing], value: js.Any): SelectStatement = js.native
     def and(column: String): SelectStatement = js.native
     def and(column: String, value: js.Any): SelectStatement = js.native
     def and(column: Null, value: js.Any): SelectStatement = js.native
+    def and(column: Unit, value: js.Any): SelectStatement = js.native
     def and(whereExpr: WhereExpression*): SelectStatement = js.native
     
     def from(tbls: String*): DeleteStatement = js.native
     
-    def using(columnList: String*): SelectStatement = js.native
-    def using(columnList: js.Array[String]): SelectStatement = js.native
+    def `using`(columnList: String*): SelectStatement = js.native
+    def `using`(columnList: js.Array[String]): SelectStatement = js.native
     
     def where(): SelectStatement = js.native
-    def where(column: js.UndefOr[scala.Nothing], value: js.Any): SelectStatement = js.native
     def where(column: String): SelectStatement = js.native
     def where(column: String, value: js.Any): SelectStatement = js.native
     def where(column: Null, value: js.Any): SelectStatement = js.native
+    def where(column: Unit, value: js.Any): SelectStatement = js.native
     def where(whereExpr: WhereExpression*): SelectStatement = js.native
   }
   
@@ -44,7 +45,9 @@ object mod extends Shortcut {
     * An INSERT statement
     */
   @js.native
-  trait InsertStatement extends Statement {
+  trait InsertStatement
+    extends StObject
+       with Statement {
     
     def into(tbl: TableName, columns: js.Any*): InsertStatement = js.native
     
@@ -62,7 +65,9 @@ object mod extends Shortcut {
     * A SELECT statement
     */
   @js.native
-  trait SelectStatement extends Statement {
+  trait SelectStatement
+    extends StObject
+       with Statement {
     
     def and(options: js.Any*): SelectStatement = js.native
     
@@ -245,14 +250,14 @@ object mod extends Shortcut {
       * select('*').from('person').join('address').using('address_id', 'country_id');
       * // SELECT * FROM person INNER JOIN address USING (address_id, country_id)
       */
-    def using(columnList: String*): SelectStatement = js.native
-    def using(columnList: js.Array[String]): SelectStatement = js.native
+    def `using`(columnList: String*): SelectStatement = js.native
+    def `using`(columnList: js.Array[String]): SelectStatement = js.native
     
     def where(): SelectStatement = js.native
-    def where(column: js.UndefOr[scala.Nothing], value: js.Any): SelectStatement = js.native
     def where(column: String): SelectStatement = js.native
     def where(column: String, value: js.Any): SelectStatement = js.native
     def where(column: Null, value: js.Any): SelectStatement = js.native
+    def where(column: Unit, value: js.Any): SelectStatement = js.native
     def where(whereExpr: WhereExpression*): SelectStatement = js.native
   }
   
@@ -385,7 +390,6 @@ object mod extends Shortcut {
     def in(column: String, stmt: SelectStatement): WhereExpression = js.native
     def in(column: String, values: js.Any*): WhereExpression = js.native
     
-    def insert(tbl: js.UndefOr[scala.Nothing], values: js.Any*): InsertStatement = js.native
     /**
       * Returns a new INSERT statement. It can be used with or without the new operator.
       * @alias insertInto
@@ -397,8 +401,8 @@ object mod extends Shortcut {
       * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
       */
     def insert(tbl: String, values: js.Any*): InsertStatement = js.native
+    def insert(tbl: Unit, values: js.Any*): InsertStatement = js.native
     
-    def insertInto(tbl: js.UndefOr[scala.Nothing], values: js.Any*): InsertStatement = js.native
     /**
       * Returns a new INSERT statement. It can be used with or without the new operator.
       * @alias insert
@@ -410,6 +414,7 @@ object mod extends Shortcut {
       * // INSERT INTO person (first_name, last_name) VALUES ('Fred', 'Flintstone')
       */
     def insertInto(tbl: String, values: js.Any*): InsertStatement = js.native
+    def insertInto(tbl: Unit, values: js.Any*): InsertStatement = js.native
     
     def isNotNull(column: String): WhereExpression = js.native
     
@@ -523,17 +528,16 @@ object mod extends Shortcut {
     def `val`(value: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait SqlBricksParam extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any]
   }
   object SqlBricksParam {
     
     @scala.inline
-    def apply(text: String, values: js.Array[_]): SqlBricksParam = {
+    def apply(text: String, values: js.Array[js.Any]): SqlBricksParam = {
       val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], values = values.asInstanceOf[js.Any])
       __obj.asInstanceOf[SqlBricksParam]
     }
@@ -545,7 +549,7 @@ object mod extends Shortcut {
       def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesVarargs(value: js.Any*): Self = StObject.set(x, "values", js.Array(value :_*))
@@ -578,13 +582,15 @@ object mod extends Shortcut {
     * An UPDATE statement
     */
   @js.native
-  trait UpdateStatement extends Statement {
+  trait UpdateStatement
+    extends StObject
+       with Statement {
     
     def and(): UpdateStatement = js.native
-    def and(column: js.UndefOr[scala.Nothing], value: js.Any): UpdateStatement = js.native
     def and(column: String): UpdateStatement = js.native
     def and(column: String, value: js.Any): UpdateStatement = js.native
     def and(column: Null, value: js.Any): UpdateStatement = js.native
+    def and(column: Unit, value: js.Any): UpdateStatement = js.native
     def and(whereExpr: WhereExpression*): UpdateStatement = js.native
     
     def set(values: js.Any*): UpdateStatement = js.native
@@ -592,23 +598,24 @@ object mod extends Shortcut {
     def values(values: js.Any*): UpdateStatement = js.native
     
     def where(): UpdateStatement = js.native
-    def where(column: js.UndefOr[scala.Nothing], value: js.Any): UpdateStatement = js.native
     def where(column: String): UpdateStatement = js.native
     def where(column: String, value: js.Any): UpdateStatement = js.native
     def where(column: Null, value: js.Any): UpdateStatement = js.native
+    def where(column: Unit, value: js.Any): UpdateStatement = js.native
     def where(whereExpr: WhereExpression*): UpdateStatement = js.native
   }
   
-  @js.native
-  trait WhereBinary extends _WhereExpression {
+  trait WhereBinary
+    extends StObject
+       with _WhereExpression {
     
-    var col: String | SelectStatement = js.native
+    var col: String | SelectStatement
     
-    var op: String = js.native
+    var op: String
     
-    var quantifier: String = js.native
+    var quantifier: String
     
-    var `val`: js.Any = js.native
+    var `val`: js.Any
   }
   object WhereBinary {
     
@@ -648,12 +655,13 @@ object mod extends Shortcut {
   */
   type WhereExpression = _WhereExpression | WhereObject | String
   
-  @js.native
-  trait WhereGroup extends _WhereExpression {
+  trait WhereGroup
+    extends StObject
+       with _WhereExpression {
     
-    var expressions: js.Array[WhereExpression] = js.native
+    var expressions: js.Array[WhereExpression]
     
-    var op: js.UndefOr[String] = js.native
+    var op: js.UndefOr[String] = js.undefined
   }
   object WhereGroup {
     

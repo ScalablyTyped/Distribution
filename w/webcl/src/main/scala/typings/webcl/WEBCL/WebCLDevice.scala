@@ -2,18 +2,16 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.3
-@js.native
 trait WebCLDevice extends StObject {
   
-  def enableExtension(extensionName: String): Boolean = js.native
+  def enableExtension(extensionName: String): Boolean
   
-  def getInfo(name: DeviceInfo): js.Any = js.native
+  def getInfo(name: DeviceInfo): js.Any
   
-  def getSupportedExtensions(): js.Array[String] = js.native
+  def getSupportedExtensions(): js.Array[String]
 }
 object WebCLDevice {
   

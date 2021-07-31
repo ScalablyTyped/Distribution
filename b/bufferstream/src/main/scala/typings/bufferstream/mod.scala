@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -80,35 +79,34 @@ object mod {
     def split(token: Buffer, tokens: Buffer*): Unit = js.native
   }
   
-  @js.native
   trait Opts extends StObject {
     
     /*
       if true and the source is a child_process the stream will block the entire process (timeouts wont work anymore, but splitting and listening on data still works, because they work sync)
       */
-    var blocking: js.UndefOr[Boolean] = js.native
+    var blocking: js.UndefOr[Boolean] = js.undefined
     
     /*
       immediately call disable
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /*
       default encoding for writing strings
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /*
       defines buffer level or sets buffer to given size (see ↓setSize for more)
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /*
       short form for:
       split(token, function (chunk) {emit('data', chunk)})
       */
     // String or Buffer
-    var split: js.UndefOr[js.Any] = js.native
+    var split: js.UndefOr[js.Any] = js.undefined
   }
   object Opts {
     

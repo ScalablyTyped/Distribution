@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriangulationStatusChangedEventUIParam extends StObject {
   
   /**
     * Used to get current status.
     */
-  var currentStatus: js.UndefOr[js.Any] = js.native
+  var currentStatus: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to map object.
     */
-  var map: js.UndefOr[js.Any] = js.native
+  var map: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to current series object.
     */
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
 }
 object TriangulationStatusChangedEventUIParam {
   

@@ -2,29 +2,27 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The history of each state this submission has been in.
   */
-@js.native
 trait SchemaStateHistory extends StObject {
   
   /**
     * The teacher or student who made the change
     */
-  var actorUserId: js.UndefOr[String] = js.native
+  var actorUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The workflow pipeline stage.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * When the submission entered this state.
     */
-  var stateTimestamp: js.UndefOr[String] = js.native
+  var stateTimestamp: js.UndefOr[String] = js.undefined
 }
 object SchemaStateHistory {
   

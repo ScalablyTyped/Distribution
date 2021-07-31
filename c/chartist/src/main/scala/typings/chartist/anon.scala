@@ -3,23 +3,21 @@ package typings.chartist
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AreaBase extends StObject {
     
-    var areaBase: js.UndefOr[Double] = js.native
+    var areaBase: js.UndefOr[Double] = js.undefined
     
-    var lineSmooth: js.UndefOr[js.Function | Boolean] = js.native
+    var lineSmooth: js.UndefOr[js.Function | Boolean] = js.undefined
     
-    var showArea: js.UndefOr[Boolean] = js.native
+    var showArea: js.UndefOr[Boolean] = js.undefined
     
-    var showLine: js.UndefOr[Boolean] = js.native
+    var showLine: js.UndefOr[Boolean] = js.undefined
     
-    var showPoint: js.UndefOr[Boolean] = js.native
+    var showPoint: js.UndefOr[Boolean] = js.undefined
   }
   object AreaBase {
     
@@ -64,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object Max {
     
@@ -90,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double | Date = js.native
+    var x: Double | Date
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -116,12 +112,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Y extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Y {
     

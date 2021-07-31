@@ -2,25 +2,23 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrickButtonTheme extends StObject {
   
-  var bgBorder: String = js.native
+  var bgBorder: String
   
-  var bgBorderWidth: Double = js.native
+  var bgBorderWidth: Double
   
-  var bgRadius: Double = js.native
+  var bgRadius: Double
   
-  var fontColor: String = js.native
+  var fontColor: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var loadingBackground: String = js.native
+  var loadingBackground: String
   
-  var loadingColor: String = js.native
+  var loadingColor: String
 }
 object BrickButtonTheme {
   

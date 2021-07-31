@@ -10,43 +10,41 @@ import typings.awsSdkClientS3Node.typesOwnerMod.UnmarshalledOwner
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesObjectMod {
   
-  @js.native
   trait Object extends StObject {
     
     /**
       * _ETag shape
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * _ObjectKey shape
       */
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
     
     /**
       * _LastModified shape
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.native
+    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.native
+    var Owner: js.UndefOr[typings.awsSdkClientS3Node.typesOwnerMod.Owner] = js.undefined
     
     /**
       * _Size shape
       */
-    var Size: js.UndefOr[Double] = js.native
+    var Size: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The class of storage used to store the object.</p>
       */
-    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA | ONEZONE_IA | String] = js.native
+    var StorageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | GLACIER | STANDARD_IA | ONEZONE_IA | String] = js.undefined
   }
   object Object {
     
@@ -97,20 +95,21 @@ object typesObjectMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledObject extends Object {
+  trait UnmarshalledObject
+    extends StObject
+       with Object {
     
     /**
       * _LastModified shape
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledObject: js.UndefOr[Date] = js.native
+    var LastModified_UnmarshalledObject: js.UndefOr[Date] = js.undefined
     
     /**
       * _Owner shape
       */
     @JSName("Owner")
-    var Owner_UnmarshalledObject: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner_UnmarshalledObject: js.UndefOr[UnmarshalledOwner] = js.undefined
   }
   object UnmarshalledObject {
     

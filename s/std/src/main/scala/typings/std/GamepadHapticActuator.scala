@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Gamepad API interface represents hardware in the controller designed to provide haptic feedback to the user (if available), most commonly vibration hardware. */
-@js.native
 trait GamepadHapticActuator extends StObject {
   
-  def pulse(value: Double, duration: Double): js.Promise[scala.Boolean] = js.native
+  def pulse(value: Double, duration: Double): js.Promise[scala.Boolean]
   
-  val `type`: GamepadHapticActuatorType = js.native
+  val `type`: GamepadHapticActuatorType
 }
 object GamepadHapticActuator {
   

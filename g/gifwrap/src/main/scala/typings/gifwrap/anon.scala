@@ -3,21 +3,19 @@ package typings.gifwrap
 import typings.gifwrap.mod.GifPalette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Colors extends StObject {
     
-    var colors: js.UndefOr[js.Array[Double]] = js.native
+    var colors: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var indexCount: js.UndefOr[Double] = js.native
+    var indexCount: js.UndefOr[Double] = js.undefined
     
-    var palettes: js.Array[GifPalette] = js.native
+    var palettes: js.Array[GifPalette]
     
-    var usesTransparency: Boolean = js.native
+    var usesTransparency: Boolean
   }
   object Colors {
     
@@ -56,12 +54,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxHeight extends StObject {
     
-    var maxHeight: Double = js.native
+    var maxHeight: Double
     
-    var maxWidth: Double = js.native
+    var maxWidth: Double
   }
   object MaxHeight {
     

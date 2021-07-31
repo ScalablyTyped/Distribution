@@ -3,46 +3,39 @@ package typings.pangu
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pangu", "spacing")
+  @JSImport("pangu", JSImport.Namespace)
   @js.native
-  def spacing(text: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pangu", "spacingElementByClassName")
-  @js.native
-  def spacingElementByClassName(className: String): Unit = js.native
+  @scala.inline
+  def spacing(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("spacing")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pangu", "spacingElementById")
-  @js.native
-  def spacingElementById(id: String): Unit = js.native
+  @scala.inline
+  def spacingElementByClassName(className: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingElementByClassName")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pangu", "spacingElementByTagName")
-  @js.native
-  def spacingElementByTagName(tagName: String): Unit = js.native
+  @scala.inline
+  def spacingElementById(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingElementById")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pangu", "spacingFile")
-  @js.native
-  def spacingFile(path: String): js.Promise[String] = js.native
-  @JSImport("pangu", "spacingFile")
-  @js.native
-  def spacingFile(path: String, callback: js.Function2[/* error */ Error, /* data */ String, Unit]): Unit = js.native
+  @scala.inline
+  def spacingElementByTagName(tagName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingElementByTagName")(tagName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("pangu", "spacingFileSync")
-  @js.native
-  def spacingFileSync(path: String): String = js.native
+  @scala.inline
+  def spacingFile(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingFile")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def spacingFile(path: String, callback: js.Function2[/* error */ Error, /* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("spacingFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pangu", "spacingPage")
-  @js.native
-  def spacingPage(): Unit = js.native
+  @scala.inline
+  def spacingFileSync(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("pangu", "spacingText")
-  @js.native
-  def spacingText(text: String): js.Promise[String] = js.native
-  @JSImport("pangu", "spacingText")
-  @js.native
-  def spacingText(text: String, callback: js.Function2[/* error */ Error, /* data */ String, Unit]): Unit = js.native
+  @scala.inline
+  def spacingPage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingPage")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def spacingText(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("spacingText")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def spacingText(text: String, callback: js.Function2[/* error */ Error, /* data */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("spacingText")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

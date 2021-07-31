@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadMetadata extends StObject {
   
   /**
     * The signed headers.
     */
-  var SignedHeaders: js.UndefOr[SignedHeaderMap] = js.native
+  var SignedHeaders: js.UndefOr[SignedHeaderMap] = js.undefined
   
   /**
     * The URL of the upload.
     */
-  var UploadUrl: js.UndefOr[UrlType] = js.native
+  var UploadUrl: js.UndefOr[UrlType] = js.undefined
 }
 object UploadMetadata {
   

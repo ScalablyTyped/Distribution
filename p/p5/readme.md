@@ -10,9 +10,9 @@ Typings are for version 0.9
 | ------------------ | :-------------: |
 | Full name          | p5 |
 | Keywords           | - |
-| # releases         | 17 |
-| # dependents       | 66 |
-| # downloads        | 153316 |
+| # releases         | 18 |
+| # dependents       | 81 |
+| # downloads        | 189195 |
 | # stars            | 17 |
 
 ## Links

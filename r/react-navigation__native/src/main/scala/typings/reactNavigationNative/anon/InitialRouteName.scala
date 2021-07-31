@@ -3,15 +3,13 @@ package typings.reactNavigationNative.anon
 import typings.reactNavigationCore.typesMod.PathConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitialRouteName extends StObject {
   
-  var initialRouteName: js.UndefOr[String] = js.native
+  var initialRouteName: js.UndefOr[String] = js.undefined
   
-  var screens: PathConfigMap = js.native
+  var screens: PathConfigMap
 }
 object InitialRouteName {
   

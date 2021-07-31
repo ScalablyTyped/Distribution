@@ -5,37 +5,38 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/image-picker/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/image-picker/style", JSImport.Namespace)
   @js.native
-  def default(): ImagePickerStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): ImagePickerStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[ImagePickerStyle]
+  
   trait ImagePickerStyle extends StObject {
     
-    var closeText: TextStyle = js.native
+    var closeText: TextStyle
     
-    var closeWrap: ViewStyle = js.native
+    var closeWrap: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var image: ImageStyle = js.native
+    var image: ImageStyle
     
-    var item: ViewStyle = js.native
+    var item: ViewStyle
     
-    var plusText: TextStyle = js.native
+    var plusText: TextStyle
     
-    var plusWrap: ViewStyle = js.native
+    var plusWrap: ViewStyle
     
-    var plusWrapHighlight: ViewStyle = js.native
+    var plusWrapHighlight: ViewStyle
     
-    var plusWrapNormal: ViewStyle = js.native
+    var plusWrapNormal: ViewStyle
     
-    var size: ImageStyle = js.native
+    var size: ImageStyle
   }
   object ImagePickerStyle {
     

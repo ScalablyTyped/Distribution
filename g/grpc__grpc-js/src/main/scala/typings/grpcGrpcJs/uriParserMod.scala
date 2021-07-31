@@ -2,31 +2,30 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uriParserMod {
   
-  @JSImport("@grpc/grpc-js/build/src/uri-parser", "parseUri")
+  @JSImport("@grpc/grpc-js/build/src/uri-parser", JSImport.Namespace)
   @js.native
-  def parseUri(uriString: String): GrpcUri | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@grpc/grpc-js/build/src/uri-parser", "splitHostPort")
-  @js.native
-  def splitHostPort(path: String): HostPort | Null = js.native
+  @scala.inline
+  def parseUri(uriString: String): GrpcUri | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUri")(uriString.asInstanceOf[js.Any]).asInstanceOf[GrpcUri | Null]
   
-  @JSImport("@grpc/grpc-js/build/src/uri-parser", "uriToString")
-  @js.native
-  def uriToString(uri: GrpcUri): String = js.native
+  @scala.inline
+  def splitHostPort(path: String): HostPort | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("splitHostPort")(path.asInstanceOf[js.Any]).asInstanceOf[HostPort | Null]
   
-  @js.native
+  @scala.inline
+  def uriToString(uri: GrpcUri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriToString")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait GrpcUri extends StObject {
     
-    var authority: js.UndefOr[String] = js.native
+    var authority: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var scheme: js.UndefOr[String] = js.native
+    var scheme: js.UndefOr[String] = js.undefined
   }
   object GrpcUri {
     
@@ -56,12 +55,11 @@ object uriParserMod {
     }
   }
   
-  @js.native
   trait HostPort extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object HostPort {
     

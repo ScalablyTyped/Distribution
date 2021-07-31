@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "WriteKeyExpr")
@@ -15,14 +14,14 @@ class WriteKeyExpr protected () extends Expression {
     receiver: Expression,
     index: Expression,
     value: Expression,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(
     receiver: Expression,
     index: Expression,
     value: Expression,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: ParseSourceSpan
   ) = this()
   def this(

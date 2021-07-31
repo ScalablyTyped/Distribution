@@ -3,17 +3,15 @@ package typings.jackrabbit
 import typings.amqplib.mod.Connection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Amqp extends StObject {
     
-    var amqp: js.Any = js.native
+    var amqp: js.Any
     
-    var connection: Connection = js.native
+    var connection: Connection
   }
   object Amqp {
     

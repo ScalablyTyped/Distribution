@@ -7,7 +7,6 @@ import typings.stylableWebpackPlugin.typesMod.StylableModule
 import typings.webpackSources.mod.RawSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableBootstrapModuleMod {
@@ -33,7 +32,7 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       dependencies: js.Array[StylableImportDependency]
     ) = this()
     def this(
@@ -47,7 +46,7 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: Null,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       dependencies: js.Array[StylableImportDependency]
     ) = this()
     def this(
@@ -61,15 +60,7 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
-      name: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
-      runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       dependencies: js.Array[StylableImportDependency],
       name: String
     ) = this()
@@ -77,8 +68,8 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: Unit,
       name: String
     ) = this()
     def this(
@@ -91,17 +82,33 @@ object stylableBootstrapModuleMod {
     ) = this()
     def this(
       context: js.Any,
-      chunk: Null,
+      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
+      options: AutoInit,
+      dependencies: Unit,
       name: String
     ) = this()
     def this(
       context: js.Any,
       chunk: Null,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: js.Array[StylableImportDependency],
+      name: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: Null,
+      runtimeRenderer: js.Any,
+      options: Unit,
+      dependencies: Unit,
+      name: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: Null,
+      runtimeRenderer: js.Any,
+      options: AutoInit,
       dependencies: js.Array[StylableImportDependency],
       name: String
     ) = this()
@@ -110,49 +117,14 @@ object stylableBootstrapModuleMod {
       chunk: Null,
       runtimeRenderer: js.Any,
       options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
-      name: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: Null,
-      runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.Array[StylableImportDependency],
+      dependencies: Unit,
       name: String
     ) = this()
     def this(
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      `type`: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
-      runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
-      name: String,
-      `type`: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
-      runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.Array[StylableImportDependency],
-      name: js.UndefOr[scala.Nothing],
-      `type`: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
-      runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       dependencies: js.Array[StylableImportDependency],
       name: String,
       `type`: String
@@ -161,17 +133,17 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: js.Array[StylableImportDependency],
+      name: Unit,
       `type`: String
     ) = this()
     def this(
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: Unit,
       name: String,
       `type`: String
     ) = this()
@@ -179,9 +151,9 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.Array[StylableImportDependency],
-      name: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: Unit,
+      name: Unit,
       `type`: String
     ) = this()
     def this(
@@ -195,19 +167,37 @@ object stylableBootstrapModuleMod {
     ) = this()
     def this(
       context: js.Any,
-      chunk: Null,
+      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
+      options: AutoInit,
+      dependencies: js.Array[StylableImportDependency],
+      name: Unit,
+      `type`: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
+      runtimeRenderer: js.Any,
+      options: AutoInit,
+      dependencies: Unit,
+      name: String,
+      `type`: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Chunk */ js.Any,
+      runtimeRenderer: js.Any,
+      options: AutoInit,
+      dependencies: Unit,
+      name: Unit,
       `type`: String
     ) = this()
     def this(
       context: js.Any,
       chunk: Null,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
-      dependencies: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: js.Array[StylableImportDependency],
       name: String,
       `type`: String
     ) = this()
@@ -215,16 +205,34 @@ object stylableBootstrapModuleMod {
       context: js.Any,
       chunk: Null,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       dependencies: js.Array[StylableImportDependency],
-      name: js.UndefOr[scala.Nothing],
+      name: Unit,
       `type`: String
     ) = this()
     def this(
       context: js.Any,
       chunk: Null,
       runtimeRenderer: js.Any,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
+      dependencies: Unit,
+      name: String,
+      `type`: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: Null,
+      runtimeRenderer: js.Any,
+      options: Unit,
+      dependencies: Unit,
+      name: Unit,
+      `type`: String
+    ) = this()
+    def this(
+      context: js.Any,
+      chunk: Null,
+      runtimeRenderer: js.Any,
+      options: AutoInit,
       dependencies: js.Array[StylableImportDependency],
       name: String,
       `type`: String
@@ -234,8 +242,8 @@ object stylableBootstrapModuleMod {
       chunk: Null,
       runtimeRenderer: js.Any,
       options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
+      dependencies: js.Array[StylableImportDependency],
+      name: Unit,
       `type`: String
     ) = this()
     def this(
@@ -243,7 +251,7 @@ object stylableBootstrapModuleMod {
       chunk: Null,
       runtimeRenderer: js.Any,
       options: AutoInit,
-      dependencies: js.UndefOr[scala.Nothing],
+      dependencies: Unit,
       name: String,
       `type`: String
     ) = this()
@@ -252,17 +260,8 @@ object stylableBootstrapModuleMod {
       chunk: Null,
       runtimeRenderer: js.Any,
       options: AutoInit,
-      dependencies: js.Array[StylableImportDependency],
-      name: js.UndefOr[scala.Nothing],
-      `type`: String
-    ) = this()
-    def this(
-      context: js.Any,
-      chunk: Null,
-      runtimeRenderer: js.Any,
-      options: AutoInit,
-      dependencies: js.Array[StylableImportDependency],
-      name: String,
+      dependencies: Unit,
+      name: Unit,
       `type`: String
     ) = this()
     

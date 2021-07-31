@@ -2,16 +2,14 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAccountFromOrganizationRequest extends StObject {
   
   /**
     * The unique identifier (ID) of the member account that you want to remove from the organization. The regex pattern for an account ID string requires exactly 12 digits.
     */
-  var AccountId: typings.awsSdk.organizationsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.organizationsMod.AccountId
 }
 object RemoveAccountFromOrganizationRequest {
   

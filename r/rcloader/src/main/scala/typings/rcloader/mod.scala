@@ -3,23 +3,24 @@ package typings.rcloader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rcloader", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RcLoader {
+  class ^ protected ()
+    extends StObject
+       with RcLoader {
     def this(configfilename: String, options: String) = this()
     def this(configfilename: String, options: Options) = this()
   }
   
-  @js.native
   trait Options
-    extends /* property */ StringDictionary[js.Any] {
+    extends StObject
+       with /* property */ StringDictionary[js.Any] {
     
-    var lookup: js.UndefOr[Boolean] = js.native
+    var lookup: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

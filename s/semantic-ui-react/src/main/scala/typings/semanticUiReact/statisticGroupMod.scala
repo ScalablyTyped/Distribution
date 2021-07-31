@@ -13,7 +13,6 @@ import typings.semanticUiReact.statisticStatisticMod.StatisticProps
 import typings.semanticUiReact.statisticStatisticMod.StatisticSizeProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticGroupMod extends Shortcut {
@@ -22,9 +21,9 @@ object statisticGroupMod extends Shortcut {
   @js.native
   val default: StatelessComponent[StatisticGroupProps] = js.native
   
-  @js.native
   trait StatisticGroupProps
-    extends StrictStatisticGroupProps
+    extends StObject
+       with StrictStatisticGroupProps
        with /* key */ StringDictionary[js.Any]
   object StatisticGroupProps {
     
@@ -35,38 +34,37 @@ object statisticGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStatisticGroupProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A statistic group can be formatted to be different colors. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A statistic group can present its measurement horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** A statistic group can present its measurement horizontally. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Array of props for Statistic. */
-    var items: js.UndefOr[SemanticShorthandCollection[StatisticProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[StatisticProps]] = js.undefined
     
     /** A statistic group can vary in size. */
-    var size: js.UndefOr[StatisticSizeProp] = js.native
+    var size: js.UndefOr[StatisticSizeProp] = js.undefined
     
     /** A statistic group can have its items divided evenly. */
-    var widths: js.UndefOr[SemanticWIDTHS] = js.native
+    var widths: js.UndefOr[SemanticWIDTHS] = js.undefined
   }
   object StrictStatisticGroupProps {
     

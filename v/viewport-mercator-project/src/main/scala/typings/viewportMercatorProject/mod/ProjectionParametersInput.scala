@@ -2,23 +2,21 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectionParametersInput extends StObject {
   
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
-  var farZMultiplier: js.UndefOr[Double] = js.native
+  var farZMultiplier: js.UndefOr[Double] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var nearZMultiplier: js.UndefOr[Double] = js.native
+  var nearZMultiplier: js.UndefOr[Double] = js.undefined
   
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object ProjectionParametersInput {
   

@@ -4,24 +4,24 @@ import typings.voximplantWebsdk.mod.IMErrorType
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched in case of instant messaging subsystem error
   */
-@js.native
-trait SystemError extends VoxImplantIMEvent {
+trait SystemError
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    Error data object, contains the error details
     */
-  var errorData: js.Object = js.native
+  var errorData: js.Object
   
   /**
     *    Error type
     */
-  var errorType: IMErrorType = js.native
+  var errorType: IMErrorType
 }
 object SystemError {
   

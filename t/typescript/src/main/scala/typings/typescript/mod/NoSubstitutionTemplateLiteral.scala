@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.typescript.mod.LiteralLikeNode because Already inherited
 - typings.typescript.mod.TemplateLiteralLikeNode because var conflicts: hasExtendedUnicodeEscape, isUnterminated, text. Inlined rawText */ @js.native
 trait NoSubstitutionTemplateLiteral
-  extends LiteralExpression
+  extends StObject
+     with LiteralExpression
      with Declaration
      with LiteralToken
      with StringLiteralLike

@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "GameObjects.LightsPlugin")
 @js.native
 class LightsPlugin protected ()
-  extends typings.phaser.Phaser.GameObjects.LightsPlugin {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.LightsPlugin {
   /**
     * 
     * @param scene The Scene that this Lights Plugin belongs to.

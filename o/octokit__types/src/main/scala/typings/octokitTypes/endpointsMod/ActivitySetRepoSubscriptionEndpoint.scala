@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivitySetRepoSubscriptionEndpoint extends StObject {
   
   /**
     * Determines if all notifications should be blocked from this repository.
     */
-  var ignored: js.UndefOr[Boolean] = js.native
+  var ignored: js.UndefOr[Boolean] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Determines if notifications should be received from this repository.
     */
-  var subscribed: js.UndefOr[Boolean] = js.native
+  var subscribed: js.UndefOr[Boolean] = js.undefined
 }
 object ActivitySetRepoSubscriptionEndpoint {
   

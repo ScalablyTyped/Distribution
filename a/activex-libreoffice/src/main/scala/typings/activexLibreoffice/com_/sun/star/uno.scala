@@ -36,7 +36,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`9`
 import typings.activexLibreoffice.com_.sun.star.lang.XMultiComponentFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uno {
@@ -52,7 +51,6 @@ object uno {
     *
     * All exceptions defined in UNO idl should derive from this exception.
     */
-  @js.native
   trait Exception extends StObject {
     
     /**
@@ -60,14 +58,14 @@ object uno {
       *
       * May be NULL.
       */
-    var Context: XInterface = js.native
+    var Context: XInterface
     
     /**
       * gives a detailed description of the reason, why the exception was thrown.
       *
       * The description should be as detailed as possible.
       */
-    var Message: String = js.native
+    var Message: String
   }
   object Exception {
     
@@ -286,23 +284,22 @@ object uno {
     * This struct is deprecated. Uiks are not used anymore.
     * @deprecated Deprecated
     */
-  @js.native
   trait Uik extends StObject {
     
     /** specifies a 4 byte data block. */
-    var Data1: Double = js.native
+    var Data1: Double
     
     /** specifies a 2 byte data block. */
-    var Data2: Double = js.native
+    var Data2: Double
     
     /** specifies a 2 byte data block. */
-    var Data3: Double = js.native
+    var Data3: Double
     
     /** specifies a 4 byte data block. */
-    var Data4: Double = js.native
+    var Data4: Double
     
     /** specifies a 4 byte data block. */
-    var Data5: Double = js.native
+    var Data5: Double
   }
   object Uik {
     
@@ -338,21 +335,22 @@ object uno {
     * The implementation of {@link XAdapter} must know but not hold the adapted object, because it must not affect the lifetime of the adapted object.
     * @see XWeak for description of concepts.
     */
-  @js.native
-  trait XAdapter extends XInterface {
+  trait XAdapter
+    extends StObject
+       with XInterface {
     
     /**
       * adds a reference to the adapter.
       *
       * All added references are called when the adapted object dies.
       */
-    def addReference(xRef: XReference): Unit = js.native
+    def addReference(xRef: XReference): Unit
     
     /** queries the adapted object if it is alive. */
-    def queryAdapted(): XInterface = js.native
+    def queryAdapted(): XInterface
     
     /** removes a reference from the adapter. */
-    def removeReference(xRef: XReference): Unit = js.native
+    def removeReference(xRef: XReference): Unit
   }
   object XAdapter {
     
@@ -403,8 +401,9 @@ object uno {
     * with NULL before it releases its reference to its aggregated objects.
     * @deprecated DeprecatedAggregation will no longer be supported as a high-level concept of UNO. You may still have the option to implement an UNO object consis
     */
-  @js.native
-  trait XAggregation extends XInterface {
+  trait XAggregation
+    extends StObject
+       with XInterface {
     
     /**
       * is similar to {@link XInterface.queryInterface()} , but it is to be processed directly without being forwarded to the delegator.
@@ -414,14 +413,14 @@ object uno {
       * interface when it calls the method {@link XInterface.queryInterface()} .
       * @see XAggregation.setDelegator
       */
-    def queryAggregation(aType: `type`): js.Any = js.native
+    def queryAggregation(aType: `type`): js.Any
     
     /**
       * sets the object to which all calls to the method {@link XInterface.queryInterface()} have to be forwarded.
       * @param pDelegator specifies the object which handles the calls to {@link XInterface.queryInterface()} . If **pDelegator** is NULL, the delegator is remo
       * @see XAggregation.queryAggregation
       */
-    def setDelegator(pDelegator: XInterface): Unit = js.native
+    def setDelegator(pDelegator: XInterface): Unit
   }
   object XAggregation {
     
@@ -452,29 +451,30 @@ object uno {
     * Component context to be passed to a component via {@link com.sun.star.lang.XSingleComponentFactory} . Arbitrary values (e.g. deployment values) can be
     * retrieved from the context.
     */
-  @js.native
-  trait XComponentContext extends XInterface {
+  trait XComponentContext
+    extends StObject
+       with XInterface {
     
     /**
       * Gets the service manager instance to be used from key `/singletons/com.sun.star.lang.theServiceManager` . This method has been added for convenience,
       * because the service manager is used very often.
       * @returns service manager; throws {@link DeploymentException} in case service manager is null
       */
-    val ServiceManager: XMultiComponentFactory = js.native
+    val ServiceManager: XMultiComponentFactory
     
     /**
       * Gets the service manager instance to be used from key `/singletons/com.sun.star.lang.theServiceManager` . This method has been added for convenience,
       * because the service manager is used very often.
       * @returns service manager; throws {@link DeploymentException} in case service manager is null
       */
-    def getServiceManager(): XMultiComponentFactory = js.native
+    def getServiceManager(): XMultiComponentFactory
     
     /**
       * Gets a value from the context.
       * @param Name name of value
       * @returns value
       */
-    def getValueByName(Name: String): js.Any = js.native
+    def getValueByName(Name: String): js.Any
   }
   object XComponentContext {
     
@@ -510,15 +510,16 @@ object uno {
     *
     * You have to use UNO runtime functions to obtain the current context in your target language.
     */
-  @js.native
-  trait XCurrentContext extends XInterface {
+  trait XCurrentContext
+    extends StObject
+       with XInterface {
     
     /**
       * Gets a value from the context.
       * @param Name name of value
       * @returns value
       */
-    def getValueByName(Name: String): js.Any = js.native
+    def getValueByName(Name: String): js.Any
   }
   object XCurrentContext {
     
@@ -556,7 +557,6 @@ object uno {
     * The UNO object does not export the state of the reference count ( {@link acquire()} and {@link release()} do not have return values). In general, also
     * the UNO object itself should not make any assumption on the concrete value of the reference count (except on the transition from one to zero ).
     */
-  @js.native
   trait XInterface extends StObject {
     
     /**
@@ -568,7 +568,7 @@ object uno {
       *
       * Every call to acquire must be followed by a corresponding call to release some time later, which may eventually lead to the destruction of the object.
       */
-    def acquire(): Unit = js.native
+    def acquire(): Unit
     
     /**
       * queries for a new interface to an existing UNO object.
@@ -600,7 +600,7 @@ object uno {
       * @param aType a UNO interface type, for which an object reference shall be obtained.
       * @returns an interface reference in case the requested interface is supported by the object, a void any otherwise.
       */
-    def queryInterface(aType: `type`): js.Any = js.native
+    def queryInterface(aType: `type`): js.Any
     
     /**
       * decreases the reference counter by one.
@@ -609,7 +609,7 @@ object uno {
       *
       * Calling {@link release()} on the object is often called releasing or clearing the reference to an object.
       */
-    def release(): Unit = js.native
+    def release(): Unit
   }
   object XInterface {
     
@@ -634,25 +634,26 @@ object uno {
   }
   
   /** allows to insert, remove and access named objects. */
-  @js.native
-  trait XNamingService extends XInterface {
+  trait XNamingService
+    extends StObject
+       with XInterface {
     
     /** provides a previous registered object. */
-    def getRegisteredObject(Name: String): XInterface = js.native
+    def getRegisteredObject(Name: String): XInterface
     
     /**
       * registers one object under the specified name.
       *
       * If any object is registered before, then this object is revoked automatically.
       */
-    def registerObject(Name: String, Object: XInterface): Unit = js.native
+    def registerObject(Name: String, Object: XInterface): Unit
     
     /**
       * revokes the registration of an object.
       *
       * If the object was not previously registered, then this call does nothing.
       */
-    def revokeObject(Name: String): Unit = js.native
+    def revokeObject(Name: String): Unit
   }
   object XNamingService {
     
@@ -687,8 +688,9 @@ object uno {
     * must be implemented by anyone who holds the adapter on the client side.
     * @see XWeak for description af concepts.
     */
-  @js.native
-  trait XReference extends XInterface {
+  trait XReference
+    extends StObject
+       with XInterface {
     
     /**
       * removes all references to the adapter.
@@ -696,7 +698,7 @@ object uno {
       * This method is called when the adapted object dies. The implementation of the client-side's weak reference must include removal of all references to
       * the adapter. Otherwise, the adapted object will be destroyed, but the adapter will be alive.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object XReference {
     
@@ -718,10 +720,11 @@ object uno {
     * Backwards-compatibility remainder of a removed library unloading feature.
     * @deprecated DeprecatedDo not use.
     */
-  @js.native
-  trait XUnloadingPreference extends XInterface {
+  trait XUnloadingPreference
+    extends StObject
+       with XInterface {
     
-    def releaseOnNotification(): Boolean = js.native
+    def releaseOnNotification(): Boolean
   }
   object XUnloadingPreference {
     
@@ -767,8 +770,9 @@ object uno {
     * **XReference**: is a client-side interface which must be implemented by the holder of any weak reference. It is used for notification when the adapted
     * object dies.;
     */
-  @js.native
-  trait XWeak extends XInterface {
+  trait XWeak
+    extends StObject
+       with XInterface {
     
     /**
       * queries the weak adapter.
@@ -776,7 +780,7 @@ object uno {
       * It is important that the adapter must know, but not hold the adapted object. If the adapted object dies, all references to the adapter have to be
       * notified to release the adapter.
       */
-    def queryAdapter(): XAdapter = js.native
+    def queryAdapter(): XAdapter
   }
   object XWeak {
     

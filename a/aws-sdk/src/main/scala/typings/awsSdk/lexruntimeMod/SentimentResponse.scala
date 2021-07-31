@@ -2,21 +2,19 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SentimentResponse extends StObject {
   
   /**
     * The inferred sentiment that Amazon Comprehend has the highest confidence in.
     */
-  var sentimentLabel: js.UndefOr[SentimentLabel] = js.native
+  var sentimentLabel: js.UndefOr[SentimentLabel] = js.undefined
   
   /**
     * The likelihood that the sentiment was correctly inferred.
     */
-  var sentimentScore: js.UndefOr[SentimentScore] = js.native
+  var sentimentScore: js.UndefOr[SentimentScore] = js.undefined
 }
 object SentimentResponse {
   

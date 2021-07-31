@@ -2,22 +2,20 @@ package typings.knockoutEditables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // bestowed by ko.editable(target)
-@js.native
 trait KnockoutEditable extends StObject {
   
-  def addEditable(target: js.Any): js.Any = js.native
+  def addEditable(target: js.Any): js.Any
   
-  def beginEdit(): Unit = js.native
+  def beginEdit(): Unit
   
-  def commit(): Unit = js.native
+  def commit(): Unit
   
-  def hasChanges(): Boolean = js.native
+  def hasChanges(): Boolean
   
-  def rollback(): Unit = js.native
+  def rollback(): Unit
 }
 object KnockoutEditable {
   

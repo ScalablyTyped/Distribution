@@ -5,19 +5,17 @@ import typings.std.HTMLElement
 import typings.swfobject.anon.Ie
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swfobject {
   
-  @js.native
   trait ICallbackObj extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var ref: js.UndefOr[HTMLElement] = js.native
+    var ref: js.UndefOr[HTMLElement] = js.undefined
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object ICallbackObj {
     
@@ -44,14 +42,13 @@ object swfobject {
     }
   }
   
-  @js.native
   trait IFlashPlayerVersion extends StObject {
     
-    var major: Double = js.native
+    var major: Double
     
-    var minor: Double = js.native
+    var minor: Double
     
-    var release: Double = js.native
+    var release: Double
   }
   object IFlashPlayerVersion {
     
@@ -75,14 +72,13 @@ object swfobject {
     }
   }
   
-  @js.native
   trait ISwfObjectAttribute extends StObject {
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object ISwfObjectAttribute {
     
@@ -115,10 +111,9 @@ object swfobject {
     }
   }
   
-  @js.native
   trait ISwfObjectParameter extends StObject {
     
-    var flashvars: js.UndefOr[String] = js.native
+    var flashvars: js.UndefOr[String] = js.undefined
   }
   object ISwfObjectParameter {
     
@@ -147,9 +142,9 @@ object swfobject {
     def addLoadEvent(fn: js.Function1[/* event */ js.UndefOr[Event], Unit]): Unit = js.native
     
     def createCSS(selStr: String, declStr: String): Unit = js.native
-    def createCSS(selStr: String, declStr: String, mediaStr: js.UndefOr[scala.Nothing], newStyleBoolean: Boolean): Unit = js.native
     def createCSS(selStr: String, declStr: String, mediaStr: String): Unit = js.native
     def createCSS(selStr: String, declStr: String, mediaStr: String, newStyleBoolean: Boolean): Unit = js.native
+    def createCSS(selStr: String, declStr: String, mediaStr: Unit, newStyleBoolean: Boolean): Unit = js.native
     
     def createSWF(attObj: ISwfObjectAttribute, parObj: ISwfObjectParameter, replaceElemIdStr: String): HTMLElement = js.native
     
@@ -166,175 +161,6 @@ object swfobject {
       widthStr: String,
       heightStr: String,
       swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.Object,
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.Object,
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      flashvarsObj: js.Object,
-      parObj: js.Object,
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
       xiSwfUrlStr: String
     ): Unit = js.native
     def embedSWF(
@@ -344,86 +170,6 @@ object swfobject {
       heightStr: String,
       swfVersionStr: String,
       xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.UndefOr[scala.Nothing],
-      parObj: js.Object,
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
       flashvarsObj: js.Object
     ): Unit = js.native
     def embedSWF(
@@ -434,41 +180,6 @@ object swfobject {
       swfVersionStr: String,
       xiSwfUrlStr: String,
       flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.Object,
-      parObj: js.UndefOr[scala.Nothing],
-      attObj: js.Object,
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.Object,
       parObj: js.Object
     ): Unit = js.native
     def embedSWF(
@@ -480,18 +191,6 @@ object swfobject {
       xiSwfUrlStr: String,
       flashvarsObj: js.Object,
       parObj: js.Object,
-      attObj: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
-    def embedSWF(
-      swfUrlStr: String,
-      replaceElemIdStr: String,
-      widthStr: String,
-      heightStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: String,
-      flashvarsObj: js.Object,
-      parObj: js.Object,
       attObj: js.Object
     ): Unit = js.native
     def embedSWF(
@@ -504,6 +203,302 @@ object swfobject {
       flashvarsObj: js.Object,
       parObj: js.Object,
       attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: js.Object,
+      parObj: js.Object,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: String,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: js.Object,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: js.Object,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: js.Object,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: js.Object,
+      parObj: Unit,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: js.Object,
+      attObj: Unit,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: js.Object
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: js.Object,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def embedSWF(
+      swfUrlStr: String,
+      replaceElemIdStr: String,
+      widthStr: String,
+      heightStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
+      flashvarsObj: Unit,
+      parObj: Unit,
+      attObj: Unit,
       callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
     ): Unit = js.native
     
@@ -517,17 +512,17 @@ object swfobject {
     def hasFlashPlayerVersion(rv: String): Boolean = js.native
     
     def registerObject(objectIdStr: String, swfVersionStr: String): Unit = js.native
-    def registerObject(
-      objectIdStr: String,
-      swfVersionStr: String,
-      xiSwfUrlStr: js.UndefOr[scala.Nothing],
-      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
-    ): Unit = js.native
     def registerObject(objectIdStr: String, swfVersionStr: String, xiSwfUrlStr: String): Unit = js.native
     def registerObject(
       objectIdStr: String,
       swfVersionStr: String,
       xiSwfUrlStr: String,
+      callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
+    ): Unit = js.native
+    def registerObject(
+      objectIdStr: String,
+      swfVersionStr: String,
+      xiSwfUrlStr: Unit,
       callbackFn: js.Function1[/* callbackObj */ ICallbackObj, Unit]
     ): Unit = js.native
     

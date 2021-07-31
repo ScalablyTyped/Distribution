@@ -8,12 +8,12 @@ import typings.std.ArrayLike
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofDelaunay
-  extends Instantiable1[/* points */ ArrayLike[Double], Delaunay[js.Object]] {
+  extends StObject
+     with Instantiable1[/* points */ ArrayLike[Double], Delaunay[js.Object]] {
   
   /**
     * Returns the Delaunay triangulation for the given array or iterable of points where each point is an array in the form: [x, y].

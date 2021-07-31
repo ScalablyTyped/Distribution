@@ -3,49 +3,47 @@ package typings.speakingurl
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("speakingurl", JSImport.Namespace)
-  @js.native
-  def apply(input: String): String = js.native
-  @JSImport("speakingurl", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: String): String = js.native
-  @JSImport("speakingurl", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: SpeakingURLOptions): String = js.native
+  @scala.inline
+  def apply(input: String): String = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, options: String): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, options: SpeakingURLOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("speakingurl", "createSlug")
+  @JSImport("speakingurl", JSImport.Namespace)
   @js.native
-  def createSlug(options: SpeakingURLOptions): js.Function1[/* input */ String, String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createSlug(options: SpeakingURLOptions): js.Function1[/* input */ String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSlug")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* input */ String, String]]
   
   type Dictionary[T] = StringDictionary[T]
   
-  @js.native
   trait SpeakingURLOptions extends StObject {
     
-    var custom: js.UndefOr[js.Array[String] | Dictionary[String]] = js.native
+    var custom: js.UndefOr[js.Array[String] | Dictionary[String]] = js.undefined
     
-    var lang: js.UndefOr[String | Boolean] = js.native
+    var lang: js.UndefOr[String | Boolean] = js.undefined
     
-    var maintainCase: js.UndefOr[Boolean] = js.native
+    var maintainCase: js.UndefOr[Boolean] = js.undefined
     
-    var mark: js.UndefOr[Boolean] = js.native
+    var mark: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var symbols: js.UndefOr[Boolean] = js.native
+    var symbols: js.UndefOr[Boolean] = js.undefined
     
-    var titleCase: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var titleCase: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var truncate: js.UndefOr[Double] = js.native
+    var truncate: js.UndefOr[Double] = js.undefined
     
-    var uric: js.UndefOr[Boolean] = js.native
+    var uric: js.UndefOr[Boolean] = js.undefined
     
-    var uricNoSlash: js.UndefOr[Boolean] = js.native
+    var uricNoSlash: js.UndefOr[Boolean] = js.undefined
   }
   object SpeakingURLOptions {
     

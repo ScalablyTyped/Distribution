@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.assetAssetMod.Asset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object archiveMod {
@@ -15,13 +14,16 @@ object archiveMod {
   /* static members */
   object Archive {
     
+    @JSImport("@pulumi/pulumi/asset/archive", "Archive")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of an Archive.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/pulumi/asset/archive", "Archive.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/asset/archive.Archive */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/asset/archive", "AssetArchive")

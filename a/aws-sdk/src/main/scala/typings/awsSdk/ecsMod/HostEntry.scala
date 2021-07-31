@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostEntry extends StObject {
   
   /**
     * The hostname to use in the /etc/hosts entry.
     */
-  var hostname: String = js.native
+  var hostname: String
   
   /**
     * The IP address to use in the /etc/hosts entry.
     */
-  var ipAddress: String = js.native
+  var ipAddress: String
 }
 object HostEntry {
   

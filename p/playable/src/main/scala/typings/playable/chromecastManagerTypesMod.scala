@@ -2,19 +2,17 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromecastManagerTypesMod {
   
-  @js.native
   trait IChromecastManager extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var isCasting: Boolean = js.native
+    var isCasting: Boolean
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
   }
   object IChromecastManager {
     

@@ -2,21 +2,19 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorAction extends StObject {
   
-  val alias: String = js.native
+  val alias: String
   
-  val id: String = js.native
+  val id: String
   
-  def isSupported(): Boolean = js.native
+  def isSupported(): Boolean
   
-  val label: String = js.native
+  val label: String
   
-  def run(): js.Promise[Unit] = js.native
+  def run(): js.Promise[Unit]
 }
 object IEditorAction {
   

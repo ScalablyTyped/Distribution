@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see CertificateContainer
   * @since OOo 2.3.1
   */
-@js.native
 trait XCertificateContainer extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait XCertificateContainer extends StObject {
     * @param trust
     * @returns boolean
     */
-  def addCertificate(url: String, cert: String, trust: Boolean): Boolean = js.native
+  def addCertificate(url: String, cert: String, trust: Boolean): Boolean
   
   /**
     * Check if a certificate was stored earlier before.
@@ -28,7 +26,7 @@ trait XCertificateContainer extends StObject {
     * @param cert
     * @returns CertificateContainerStatus
     */
-  def hasCertificate(url: String, cert: String): CertificateContainerStatus = js.native
+  def hasCertificate(url: String, cert: String): CertificateContainerStatus
 }
 object XCertificateContainer {
   

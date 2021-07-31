@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "View")
@@ -55,9 +54,9 @@ class View_ protected () extends StObject {
     * @param overrideContext A secondary binding context that can override the standard context.
     */
   def bind(bindingContext: js.Object): Unit = js.native
-  def bind(bindingContext: js.Object, overrideContext: js.UndefOr[scala.Nothing], _systemUpdate: Boolean): Unit = js.native
   def bind(bindingContext: js.Object, overrideContext: js.Object): Unit = js.native
   def bind(bindingContext: js.Object, overrideContext: js.Object, _systemUpdate: Boolean): Unit = js.native
+  def bind(bindingContext: js.Object, overrideContext: Unit, _systemUpdate: Boolean): Unit = js.native
   
   /**
     * The primary binding context that this view is data-bound to.

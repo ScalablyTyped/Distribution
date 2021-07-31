@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableDomainAutoRenewRequest extends StObject {
   
   /**
     * The name of the domain that you want to disable automatic renewal for.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
 }
 object DisableDomainAutoRenewRequest {
   

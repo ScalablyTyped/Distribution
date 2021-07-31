@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductsCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The Content API feed id. */
-  var feedId: js.UndefOr[String] = js.native
+  var feedId: js.UndefOr[String] = js.undefined
   
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** The method of the batch entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The product to insert. Only required if the method is `insert`. */
-  var product: js.UndefOr[Product] = js.native
+  var product: js.UndefOr[Product] = js.undefined
   
   /** The ID of the product to get or delete. Only defined if the method is `get` or `delete`. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object ProductsCustomBatchRequestEntry {
   

@@ -4,10 +4,13 @@ import typings.bloem.anon.Initialcapacity
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("bloem", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bloem", "Bloem")
   @js.native
@@ -40,11 +43,9 @@ object mod {
     def has(key: Buffer): Boolean = js.native
   }
   
-  @JSImport("bloem", "calculateSize")
-  @js.native
-  def calculateSize(capacity: Double, error_rate: Double): Double = js.native
+  @scala.inline
+  def calculateSize(capacity: Double, error_rate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSize")(capacity.asInstanceOf[js.Any], error_rate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bloem", "calculateSlices")
-  @js.native
-  def calculateSlices(size: Double, capacity: Double): Double = js.native
+  @scala.inline
+  def calculateSlices(size: Double, capacity: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSlices")(size.asInstanceOf[js.Any], capacity.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

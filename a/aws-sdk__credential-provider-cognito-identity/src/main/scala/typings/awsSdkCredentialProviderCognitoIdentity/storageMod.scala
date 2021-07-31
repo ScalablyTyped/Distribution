@@ -2,19 +2,17 @@ package typings.awsSdkCredentialProviderCognitoIdentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
   
-  @js.native
   trait Storage extends StObject {
     
-    def getItem(key: String): String | Null | (js.Promise[String | Null]) = js.native
+    def getItem(key: String): String | Null | (js.Promise[String | Null])
     
-    def removeItem(key: String): Unit | js.Promise[Unit] = js.native
+    def removeItem(key: String): Unit | js.Promise[Unit]
     
-    def setItem(key: String, data: String): Unit | js.Promise[Unit] = js.native
+    def setItem(key: String, data: String): Unit | js.Promise[Unit]
   }
   object Storage {
     

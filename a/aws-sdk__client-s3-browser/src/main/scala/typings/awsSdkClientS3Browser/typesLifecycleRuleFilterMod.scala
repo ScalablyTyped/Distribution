@@ -6,28 +6,26 @@ import typings.awsSdkClientS3Browser.typesTagMod.Tag
 import typings.awsSdkClientS3Browser.typesTagMod.UnmarshalledTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesLifecycleRuleFilterMod {
   
-  @js.native
   trait LifecycleRuleFilter extends StObject {
     
     /**
       * <p>This is used in a Lifecycle Rule Filter to apply a logical AND to two or more predicates. The Lifecycle Rule will apply to any object matching all of the predicates configured inside the And operator.</p>
       */
-    var And: js.UndefOr[LifecycleRuleAndOperator] = js.native
+    var And: js.UndefOr[LifecycleRuleAndOperator] = js.undefined
     
     /**
       * <p>Prefix identifying one or more objects to which the rule applies.</p>
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * <p>This tag must exist in the object's tag set in order for the rule to apply.</p>
       */
-    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.native
+    var Tag: js.UndefOr[typings.awsSdkClientS3Browser.typesTagMod.Tag] = js.undefined
   }
   object LifecycleRuleFilter {
     
@@ -60,20 +58,21 @@ object typesLifecycleRuleFilterMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledLifecycleRuleFilter extends LifecycleRuleFilter {
+  trait UnmarshalledLifecycleRuleFilter
+    extends StObject
+       with LifecycleRuleFilter {
     
     /**
       * <p>This is used in a Lifecycle Rule Filter to apply a logical AND to two or more predicates. The Lifecycle Rule will apply to any object matching all of the predicates configured inside the And operator.</p>
       */
     @JSName("And")
-    var And_UnmarshalledLifecycleRuleFilter: js.UndefOr[UnmarshalledLifecycleRuleAndOperator] = js.native
+    var And_UnmarshalledLifecycleRuleFilter: js.UndefOr[UnmarshalledLifecycleRuleAndOperator] = js.undefined
     
     /**
       * <p>This tag must exist in the object's tag set in order for the rule to apply.</p>
       */
     @JSName("Tag")
-    var Tag_UnmarshalledLifecycleRuleFilter: js.UndefOr[UnmarshalledTag] = js.native
+    var Tag_UnmarshalledLifecycleRuleFilter: js.UndefOr[UnmarshalledTag] = js.undefined
   }
   object UnmarshalledLifecycleRuleFilter {
     

@@ -3,26 +3,24 @@ package typings.vegaLite.anon
 import typings.vegaTypings.encodeMod.TextEncodeEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega.vega.EncodeEntryName, vega.vega.TextEncodeEntry>> */
-@js.native
 trait PartialRecordEncodeEntryN extends StObject {
   
-  var enter: js.UndefOr[TextEncodeEntry] = js.native
+  var enter: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var exit: js.UndefOr[TextEncodeEntry] = js.native
+  var exit: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var hover: js.UndefOr[TextEncodeEntry] = js.native
+  var hover: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var leave: js.UndefOr[TextEncodeEntry] = js.native
+  var leave: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var release: js.UndefOr[TextEncodeEntry] = js.native
+  var release: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var select: js.UndefOr[TextEncodeEntry] = js.native
+  var select: js.UndefOr[TextEncodeEntry] = js.undefined
   
-  var update: js.UndefOr[TextEncodeEntry] = js.native
+  var update: js.UndefOr[TextEncodeEntry] = js.undefined
 }
 object PartialRecordEncodeEntryN {
   

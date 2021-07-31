@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSeverityLevelsResponse extends StObject {
   
   /**
     * The available severity levels for the support case. Available severity levels are defined by your service level agreement with AWS.
     */
-  var severityLevels: js.UndefOr[SeverityLevelsList] = js.native
+  var severityLevels: js.UndefOr[SeverityLevelsList] = js.undefined
 }
 object DescribeSeverityLevelsResponse {
   

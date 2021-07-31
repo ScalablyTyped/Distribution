@@ -4,16 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.karmaMocha.karmaMochaBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var mocha: js.UndefOr[MochaClientOptions] = js.native
+    var mocha: js.UndefOr[MochaClientOptions] = js.undefined
   }
   object ClientOptions {
     
@@ -34,16 +32,16 @@ object mod {
     }
   }
   
-  @js.native
   trait MochaClientOptions
-    extends /** any supported Mocha configuration options */
+    extends StObject
+       with /** any supported Mocha configuration options */
   /* key */ StringDictionary[js.Any] {
     
     /** This will be exposed in a reporter as `result.mocha.{exportedValue}` */
-    var export: js.UndefOr[js.Array[String]] = js.native
+    var `export`: js.UndefOr[js.Array[String]] = js.undefined
     
     /** You can set opts to equal true then plugin will load opts from default location 'test/mocha.opts' */
-    var opts: js.UndefOr[`true` | String] = js.native
+    var opts: js.UndefOr[`true` | String] = js.undefined
   }
   object MochaClientOptions {
     

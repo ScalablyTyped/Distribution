@@ -3,7 +3,6 @@ package typings.xhr2Cookies
 import typings.xhr2Cookies.progressEventMod.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlHttpRequestEventTargetMod {
@@ -39,10 +38,9 @@ object xmlHttpRequestEventTargetMod {
   
   type ProgressEventListener = js.Function1[/* event */ ProgressEvent, Unit]
   
-  @js.native
   trait ProgressEventListenerObject extends StObject {
     
-    def handleEvent(event: ProgressEvent): Unit = js.native
+    def handleEvent(event: ProgressEvent): Unit
   }
   object ProgressEventListenerObject {
     

@@ -4,7 +4,6 @@ import typings.activexStdole.stdole.StdPicture
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -96,9 +95,9 @@ trait ExchangeUser extends StObject {
   var Type: String = js.native
   
   def Update(): Unit = js.native
-  def Update(MakePermanent: js.UndefOr[scala.Nothing], Refresh: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any): Unit = js.native
   def Update(MakePermanent: js.Any, Refresh: js.Any): Unit = js.native
+  def Update(MakePermanent: Unit, Refresh: js.Any): Unit = js.native
   
   def UpdateFreeBusy(): Unit = js.native
   

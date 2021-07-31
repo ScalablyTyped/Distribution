@@ -2,15 +2,15 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StorageAclOptions extends TimeoutIntervalOptions {
+trait StorageAclOptions
+  extends StObject
+     with TimeoutIntervalOptions {
   
-  var leaseId: js.UndefOr[String] = js.native
+  var leaseId: js.UndefOr[String] = js.undefined
   
-  var signedIdentifiers: js.Array[SignedIdentifier] = js.native
+  var signedIdentifiers: js.Array[SignedIdentifier]
 }
 object StorageAclOptions {
   

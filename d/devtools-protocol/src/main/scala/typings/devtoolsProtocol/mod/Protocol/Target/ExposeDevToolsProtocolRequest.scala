@@ -2,18 +2,16 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExposeDevToolsProtocolRequest extends StObject {
   
   /**
     * Binding name, 'cdp' if not specified.
     */
-  var bindingName: js.UndefOr[String] = js.native
+  var bindingName: js.UndefOr[String] = js.undefined
   
-  var targetId: TargetID = js.native
+  var targetId: TargetID
 }
 object ExposeDevToolsProtocolRequest {
   

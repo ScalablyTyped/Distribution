@@ -2,11 +2,12 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpriteStage extends Stage {
+trait SpriteStage
+  extends StObject
+     with Stage {
   
   // methods
   def clearImageTexture(image: js.Object): Unit = js.native

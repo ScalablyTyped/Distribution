@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.statusupdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a point-of-service printer. */
 @js.native
 trait PosPrinter extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]): Unit = js.native
   
@@ -47,12 +46,12 @@ trait PosPrinter extends StObject {
   def getStatisticsAsync(statisticsCategories: IIterable[String]): IPromiseWithIAsyncOperation[String] = js.native
   
   /** Occurs when the status of the power or availability of the point-of-service printer changes. */
-  def onstatusupdated(ev: PosPrinterStatusUpdatedEventArgs with WinRTEvent[PosPrinter]): Unit = js.native
+  def onstatusupdated(ev: PosPrinterStatusUpdatedEventArgs & WinRTEvent[PosPrinter]): Unit = js.native
   /** Occurs when the status of the power or availability of the point-of-service printer changes. */
   @JSName("onstatusupdated")
   var onstatusupdated_Original: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_statusupdated(`type`: statusupdated, listener: TypedEventHandler[PosPrinter, PosPrinterStatusUpdatedEventArgs]): Unit = js.native
   

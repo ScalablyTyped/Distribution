@@ -3,38 +3,30 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipeNode
-  extends FormatNode
+  extends StObject
+     with FormatNode
      with Node {
   
-  var contents: Null = js.native
+  var contents: Null
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: pipe = js.native
+  var name: pipe
   
-  var nonTerminal: String = js.native
+  var nonTerminal: String
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var params: String = js.native
+  var params: String
 }
 object PipeNode {
   
   @scala.inline
-  def apply(
-    contents: Null,
-    location: LocationRange,
-    name: pipe,
-    nonTerminal: String,
-    optional: Boolean,
-    params: String
-  ): PipeNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+  def apply(contents: Null, location: LocationRange, nonTerminal: String, optional: Boolean, params: String): PipeNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "pipe", nonTerminal = nonTerminal.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
     __obj.asInstanceOf[PipeNode]
   }
   

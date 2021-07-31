@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object XMLService {
@@ -17,25 +16,39 @@ object XMLService {
   object ContentType extends StObject {
     
     @js.native
-    sealed trait CDATA extends ContentType
+    sealed trait CDATA
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait COMMENT extends ContentType
+    sealed trait COMMENT
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait DOCTYPE extends ContentType
+    sealed trait DOCTYPE
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait ELEMENT extends ContentType
+    sealed trait ELEMENT
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait ENTITYREF extends ContentType
+    sealed trait ENTITYREF
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait PROCESSINGINSTRUCTION extends ContentType
+    sealed trait PROCESSINGINSTRUCTION
+      extends StObject
+         with ContentType
     
     @js.native
-    sealed trait TEXT extends ContentType
+    sealed trait TEXT
+      extends StObject
+         with ContentType
   }
   
   /**
@@ -57,20 +70,19 @@ object XMLService {
     *     xml = XmlService.getPrettyFormat().format(document);
     *     Logger.log(xml);
     */
-  @js.native
   trait Attribute extends StObject {
     
-    def getName(): String = js.native
+    def getName(): String
     
-    def getNamespace(): Namespace = js.native
+    def getNamespace(): Namespace
     
-    def getValue(): String = js.native
+    def getValue(): String
     
-    def setName(name: String): Attribute = js.native
+    def setName(name: String): Attribute
     
-    def setNamespace(namespace: Namespace): Attribute = js.native
+    def setNamespace(namespace: Namespace): Attribute
     
-    def setValue(value: String): Attribute = js.native
+    def setValue(value: String): Attribute
   }
   object Attribute {
     
@@ -123,15 +135,15 @@ object XMLService {
     *     var xml = XmlService.getPrettyFormat().format(document);
     *     Logger.log(xml);
     */
-  @js.native
   trait Cdata
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def append(text: String): Text = js.native
+    def append(text: String): Text
     
-    def getText(): String = js.native
+    def getText(): String
     
-    def setText(text: String): Text = js.native
+    def setText(text: String): Text
   }
   object Cdata {
     
@@ -173,13 +185,13 @@ object XMLService {
   /**
     * A representation of an XML Comment node.
     */
-  @js.native
   trait Comment
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def getText(): String = js.native
+    def getText(): String
     
-    def setText(text: String): Comment = js.native
+    def setText(text: String): Comment
   }
   object Comment {
     
@@ -234,30 +246,29 @@ object XMLService {
     *
     * TextA representation of an XML Text node.
     */
-  @js.native
   trait Content extends StObject {
     
-    def asCdata(): Cdata = js.native
+    def asCdata(): Cdata
     
-    def asComment(): Comment = js.native
+    def asComment(): Comment
     
-    def asDocType(): DocType = js.native
+    def asDocType(): DocType
     
-    def asElement(): Element = js.native
+    def asElement(): Element
     
-    def asEntityRef(): EntityRef = js.native
+    def asEntityRef(): EntityRef
     
-    def asProcessingInstruction(): ProcessingInstruction = js.native
+    def asProcessingInstruction(): ProcessingInstruction
     
-    def asText(): Text = js.native
+    def asText(): Text
     
-    def detach(): typings.googleAppsScript.GoogleAppsScript.XMLService.Content = js.native
+    def detach(): typings.googleAppsScript.GoogleAppsScript.XMLService.Content
     
-    def getParentElement(): Element = js.native
+    def getParentElement(): Element
     
-    def getType(): ContentType = js.native
+    def getType(): ContentType
     
-    def getValue(): String = js.native
+    def getValue(): String
   }
   object Content {
     
@@ -320,25 +331,25 @@ object XMLService {
   /**
     * A representation of an XML DocumentType node.
     */
-  @js.native
   trait DocType
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def getElementName(): String = js.native
+    def getElementName(): String
     
-    def getInternalSubset(): String = js.native
+    def getInternalSubset(): String
     
-    def getPublicId(): String = js.native
+    def getPublicId(): String
     
-    def getSystemId(): String = js.native
+    def getSystemId(): String
     
-    def setElementName(name: String): DocType = js.native
+    def setElementName(name: String): DocType
     
-    def setInternalSubset(data: String): DocType = js.native
+    def setInternalSubset(data: String): DocType
     
-    def setPublicId(id: String): DocType = js.native
+    def setPublicId(id: String): DocType
     
-    def setSystemId(id: String): DocType = js.native
+    def setSystemId(id: String): DocType
   }
   object DocType {
     
@@ -456,7 +467,8 @@ object XMLService {
     */
   @js.native
   trait Element
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
     def addContent(content: typings.googleAppsScript.GoogleAppsScript.XMLService.Content): Element = js.native
     def addContent(index: Integer, content: typings.googleAppsScript.GoogleAppsScript.XMLService.Content): Element = js.native
@@ -523,21 +535,21 @@ object XMLService {
   /**
     * A representation of an XML EntityReference node.
     */
-  @js.native
   trait EntityRef
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def getName(): String = js.native
+    def getName(): String
     
-    def getPublicId(): String = js.native
+    def getPublicId(): String
     
-    def getSystemId(): String = js.native
+    def getSystemId(): String
     
-    def setName(name: String): EntityRef = js.native
+    def setName(name: String): EntityRef
     
-    def setPublicId(id: String): EntityRef = js.native
+    def setPublicId(id: String): EntityRef
     
-    def setSystemId(id: String): EntityRef = js.native
+    def setSystemId(id: String): EntityRef
   }
   object EntityRef {
     
@@ -622,12 +634,11 @@ object XMLService {
   /**
     * A representation of an XML namespace.
     */
-  @js.native
   trait Namespace extends StObject {
     
-    def getPrefix(): String = js.native
+    def getPrefix(): String
     
-    def getURI(): String = js.native
+    def getURI(): String
   }
   object Namespace {
     
@@ -651,13 +662,13 @@ object XMLService {
   /**
     * A representation of an XML ProcessingInstruction node.
     */
-  @js.native
   trait ProcessingInstruction
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def getData(): String = js.native
+    def getData(): String
     
-    def getTarget(): String = js.native
+    def getTarget(): String
   }
   object ProcessingInstruction {
     
@@ -695,15 +706,15 @@ object XMLService {
   /**
     * A representation of an XML Text node.
     */
-  @js.native
   trait Text
-    extends typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
+    extends StObject
+       with typings.googleAppsScript.GoogleAppsScript.XMLService.Content {
     
-    def append(text: String): Text = js.native
+    def append(text: String): Text
     
-    def getText(): String = js.native
+    def getText(): String
     
-    def setText(text: String): Text = js.native
+    def setText(text: String): Text
   }
   object Text {
     

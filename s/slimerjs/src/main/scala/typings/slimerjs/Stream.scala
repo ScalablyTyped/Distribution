@@ -2,27 +2,25 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stream extends StObject {
   
-  def atEnd(): Boolean = js.native
+  def atEnd(): Boolean
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def flush(): Unit = js.native
+  def flush(): Unit
   
-  def read(): String = js.native
+  def read(): String
   
-  def readLine(): String = js.native
+  def readLine(): String
   
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
-  def write(data: String): Unit = js.native
+  def write(data: String): Unit
   
-  def writeLine(data: String): Unit = js.native
+  def writeLine(data: String): Unit
 }
 object Stream {
   

@@ -6,7 +6,6 @@ import typings.html5plus.html5plusStrings.`slide-in-right`
 import typings.html5plus.html5plusStrings.`slide-out-right`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjAnimationOptions extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait PlusNativeObjAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 动画类型
@@ -48,7 +46,7 @@ trait PlusNativeObjAnimationOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var `type`: js.UndefOr[`pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`] = js.native
+  var `type`: js.UndefOr[`pop-in` | `pop-out` | `slide-in-right` | `slide-out-right`] = js.undefined
 }
 object PlusNativeObjAnimationOptions {
   

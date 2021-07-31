@@ -9,25 +9,23 @@ import typings.w2ui.W2UI.W2Tabs
 import typings.w2ui.W2UI.W2Toolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def w2form(options: js.Object): W2Form = js.native
+  def w2form(options: js.Object): W2Form
   
-  def w2grid(options: js.Object): W2Grid = js.native
+  def w2grid(options: js.Object): W2Grid
   
-  def w2layout(options: js.Object): W2Layout = js.native
+  def w2layout(options: js.Object): W2Layout
   
-  def w2popup(options: js.Object): W2Popup = js.native
+  def w2popup(options: js.Object): W2Popup
   
-  def w2sidebar(options: js.Object): W2Sidebar = js.native
+  def w2sidebar(options: js.Object): W2Sidebar
   
-  def w2tabs(options: js.Object): W2Tabs = js.native
+  def w2tabs(options: js.Object): W2Tabs
   
-  def w2toolbar(options: js.Object): W2Toolbar = js.native
+  def w2toolbar(options: js.Object): W2Toolbar
 }
 object JQuery {
   

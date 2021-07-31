@@ -3,13 +3,11 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a single action that runs a Docker container.
   */
-@js.native
 trait SchemaAction extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaAction extends StObject {
     * arguments. Otherwise, they are used as a command and arguments to run
     * inside the container.
     */
-  var commands: js.UndefOr[js.Array[String]] = js.native
+  var commands: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If the specified image is hosted on a private registry other than Google
@@ -26,12 +24,12 @@ trait SchemaAction extends StObject {
     * specified here as an encrypted secret.  The secret must decrypt to a
     * JSON-encoded dictionary containing both `username` and `password` keys.
     */
-  var credentials: js.UndefOr[SchemaSecret] = js.native
+  var credentials: js.UndefOr[SchemaSecret] = js.undefined
   
   /**
     * If specified, overrides the `ENTRYPOINT` specified in the container.
     */
-  var entrypoint: js.UndefOr[String] = js.native
+  var entrypoint: js.UndefOr[String] = js.undefined
   
   /**
     * The environment to pass into the container. This environment is merged
@@ -48,12 +46,12 @@ trait SchemaAction extends StObject {
     * authors to determine whether an individual action has succeeded or
     * failed.
     */
-  var environment: js.UndefOr[StringDictionary[String]] = js.native
+  var environment: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The set of flags to apply to this action.
     */
-  var flags: js.UndefOr[js.Array[String]] = js.native
+  var flags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The URI to pull the container image from. Note that all images referenced
@@ -62,7 +60,7 @@ trait SchemaAction extends StObject {
     * ensuring that the same image is used for all actions in a single
     * pipeline.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to associate with the action. This field is provided to assist
@@ -70,7 +68,7 @@ trait SchemaAction extends StObject {
     * what sort of action they perform, such as localization or debugging).
     * They are returned in the operation metadata, but are otherwise ignored.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * A list of mounts to make available to the action.  In addition to the
@@ -88,7 +86,7 @@ trait SchemaAction extends StObject {
     * complete contents of   each individual action&#39;s standard error
     * output.&lt;/li&gt; &lt;/ul&gt;
     */
-  var mounts: js.UndefOr[js.Array[SchemaMount]] = js.native
+  var mounts: js.UndefOr[js.Array[SchemaMount]] = js.undefined
   
   /**
     * An optional name for the container. The container hostname will be set to
@@ -96,14 +94,14 @@ trait SchemaAction extends StObject {
     * must contain only upper and lowercase alphanumeric characters and hypens
     * and cannot start with a hypen.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An optional identifier for a PID namespace to run the action inside.
     * Multiple actions should use the same string to share a namespace.  If
     * unspecified, a separate isolated namespace is used.
     */
-  var pidNamespace: js.UndefOr[String] = js.native
+  var pidNamespace: js.UndefOr[String] = js.undefined
   
   /**
     * A map of containers to host port mappings for this container. If the
@@ -113,7 +111,7 @@ trait SchemaAction extends StObject {
     * determine the resulting port number, consult the `ContainerStartedEvent`
     * in the operation metadata.
     */
-  var portMappings: js.UndefOr[StringDictionary[Double]] = js.native
+  var portMappings: js.UndefOr[StringDictionary[Double]] = js.undefined
   
   /**
     * The maximum amount of time to give the action to complete. If the action
@@ -121,7 +119,7 @@ trait SchemaAction extends StObject {
     * status will be non-zero. The pipeline will continue or terminate based on
     * the rules defined by the `ALWAYS_RUN` and `IGNORE_EXIT_STATUS` flags.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaAction {
   

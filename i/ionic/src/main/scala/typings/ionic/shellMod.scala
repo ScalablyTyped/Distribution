@@ -8,19 +8,24 @@ import typings.ionicUtilsSubprocess.mod.SubprocessOptions
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shellMod {
   
+  @JSImport("ionic/lib/shell", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ionic/lib/shell", "Shell")
   @js.native
-  class Shell protected () extends IShell {
+  class Shell protected ()
+    extends StObject
+       with IShell {
     def this(e: ShellDeps) = this()
     def this(e: ShellDeps, options: ShellOptions) = this()
     
     def createSubprocess(command: String): js.Promise[Subprocess] = js.native
-    def createSubprocess(command: String, args: js.UndefOr[scala.Nothing], options: SubprocessOptions): js.Promise[Subprocess] = js.native
+    def createSubprocess(command: String, args: Unit, options: SubprocessOptions): js.Promise[Subprocess] = js.native
     
     val e: ShellDeps = js.native
     
@@ -37,14 +42,12 @@ object shellMod {
     def resolveCommandPath(command: String, options: SpawnOptions): js.Promise[String] = js.native
   }
   
-  @JSImport("ionic/lib/shell", "prependNodeModulesBinToPath")
-  @js.native
-  def prependNodeModulesBinToPath(projectDir: String, p: String): String = js.native
+  @scala.inline
+  def prependNodeModulesBinToPath(projectDir: String, p: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prependNodeModulesBinToPath")(projectDir.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait ShellDeps extends StObject {
     
-    val log: ILogger = js.native
+    val log: ILogger
   }
   object ShellDeps {
     
@@ -62,10 +65,9 @@ object shellMod {
     }
   }
   
-  @js.native
   trait ShellOptions extends StObject {
     
-    val alterPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.native
+    val alterPath: js.UndefOr[js.Function1[/* p */ String, String]] = js.undefined
   }
   object ShellOptions {
     

@@ -2,25 +2,25 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatSnapshotsParams extends GenericParams {
+trait CatSnapshotsParams
+  extends StObject
+     with GenericParams {
   
-  var format: String = js.native
+  var format: String
   
-  var h: js.UndefOr[NameList] = js.native
+  var h: js.UndefOr[NameList] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUnavailable: js.UndefOr[Boolean] = js.native
+  var ignoreUnavailable: js.UndefOr[Boolean] = js.undefined
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var repository: js.UndefOr[NameList] = js.native
+  var repository: js.UndefOr[NameList] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatSnapshotsParams {
   

@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,22 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDatabaseParameterBroadcaster
   * @see com.sun.star.script.XEventAttacher
   */
-@js.native
-trait XDatabaseParameterBroadcaster2 extends XDatabaseParameterBroadcaster {
+trait XDatabaseParameterBroadcaster2
+  extends StObject
+     with XDatabaseParameterBroadcaster {
   
   /**
     * registers an {@link XDatabaseParameterListener}
     *
     * This method behaves exactly as the {@link XDatabaseParameterBroadcaster.addParameterListener()} method inherited from the base interface.
     */
-  def addDatabaseParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
+  def addDatabaseParameterListener(aListener: XDatabaseParameterListener): Unit
   
   /**
     * revokes an {@link XDatabaseParameterListener}
     *
     * This method behaves exactly as the {@link XDatabaseParameterBroadcaster.removeParameterListener()} method inherited from the base interface.
     */
-  def removeDatabaseParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
+  def removeDatabaseParameterListener(aListener: XDatabaseParameterListener): Unit
 }
 object XDatabaseParameterBroadcaster2 {
   

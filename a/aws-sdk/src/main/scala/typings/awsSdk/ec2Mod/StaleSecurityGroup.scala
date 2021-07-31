@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaleSecurityGroup extends StObject {
   
   /**
     * The description of the security group.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the security group.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the security group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the stale inbound rules in the security group.
     */
-  var StaleIpPermissions: js.UndefOr[StaleIpPermissionSet] = js.native
+  var StaleIpPermissions: js.UndefOr[StaleIpPermissionSet] = js.undefined
   
   /**
     * Information about the stale outbound rules in the security group.
     */
-  var StaleIpPermissionsEgress: js.UndefOr[StaleIpPermissionSet] = js.native
+  var StaleIpPermissionsEgress: js.UndefOr[StaleIpPermissionSet] = js.undefined
   
   /**
     * The ID of the VPC for the security group.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object StaleSecurityGroup {
   

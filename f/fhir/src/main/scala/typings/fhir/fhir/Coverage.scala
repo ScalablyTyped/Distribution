@@ -2,125 +2,125 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Insurance or medical plan or a payment agreement
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Coverage extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Coverage
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'dependent'.
     */
-  var _dependent: js.UndefOr[Element] = js.native
+  var _dependent: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'network'.
     */
-  var _network: js.UndefOr[Element] = js.native
+  var _network: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'order'.
     */
-  var _order: js.UndefOr[Element] = js.native
+  var _order: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'sequence'.
     */
-  var _sequence: js.UndefOr[Element] = js.native
+  var _sequence: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subscriberId'.
     */
-  var _subscriberId: js.UndefOr[Element] = js.native
+  var _subscriberId: js.UndefOr[Element] = js.undefined
   
   /**
     * Plan Beneficiary
     */
-  var beneficiary: js.UndefOr[Reference] = js.native
+  var beneficiary: js.UndefOr[Reference] = js.undefined
   
   /**
     * Contract details
     */
-  var contract: js.UndefOr[js.Array[Reference]] = js.native
+  var contract: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Dependent number
     */
-  var dependent: js.UndefOr[String] = js.native
+  var dependent: js.UndefOr[String] = js.undefined
   
   /**
     * Additional coverage classifications
     */
-  var grouping: js.UndefOr[CoverageGrouping] = js.native
+  var grouping: js.UndefOr[CoverageGrouping] = js.undefined
   
   /**
     * The primary coverage ID
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Insurer network
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Relative order of the coverage
     */
-  var order: js.UndefOr[positiveInt] = js.native
+  var order: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Identifier for the plan or agreement issuer
     */
-  var payor: js.UndefOr[js.Array[Reference]] = js.native
+  var payor: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Coverage start and end dates
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Owner of the policy
     */
-  var policyHolder: js.UndefOr[Reference] = js.native
+  var policyHolder: js.UndefOr[Reference] = js.undefined
   
   /**
     * Beneficiary relationship to the Subscriber
     */
-  var relationship: js.UndefOr[CodeableConcept] = js.native
+  var relationship: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The plan instance or sequence counter
     */
-  var sequence: js.UndefOr[String] = js.native
+  var sequence: js.UndefOr[String] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * Subscriber to the policy
     */
-  var subscriber: js.UndefOr[Reference] = js.native
+  var subscriber: js.UndefOr[Reference] = js.undefined
   
   /**
     * ID assigned to the Subscriber
     */
-  var subscriberId: js.UndefOr[String] = js.native
+  var subscriberId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of coverage such as medical or accident
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object Coverage {
   

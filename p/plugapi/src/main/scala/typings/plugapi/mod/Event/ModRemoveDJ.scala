@@ -2,17 +2,15 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModRemoveDJ extends StObject {
   
-  var moderator: String = js.native
+  var moderator: String
   
-  var userID: String = js.native
+  var userID: String
   
-  var username: String = js.native
+  var username: String
 }
 object ModRemoveDJ {
   

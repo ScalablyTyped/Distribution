@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.XDictionaryEventListener
   * @see com.sun.star.lang.EventObject
   */
-@js.native
-trait DictionaryEvent extends EventObject {
+trait DictionaryEvent
+  extends StObject
+     with EventObject {
   
   /**
     * is the type of event.
@@ -25,7 +25,7 @@ trait DictionaryEvent extends EventObject {
     * This must be the value of a single flag. No combinations are allowed.
     * @see com.sun.star.linguistic2.DictionaryEventFlags
     */
-  var nEvent: Double = js.native
+  var nEvent: Double
   
   /**
     * is the affected dictionary entry (if any).
@@ -33,7 +33,7 @@ trait DictionaryEvent extends EventObject {
     * It must be set if an entry was added or deleted, otherwise it should be empty.
     * @see com.sun.star.linguistic2.XDictionaryEntry
     */
-  var xDictionaryEntry: XDictionaryEntry = js.native
+  var xDictionaryEntry: XDictionaryEntry
 }
 object DictionaryEvent {
   

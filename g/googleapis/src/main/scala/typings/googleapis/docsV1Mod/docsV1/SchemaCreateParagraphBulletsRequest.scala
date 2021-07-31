@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,18 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * matching preset, the paragraphs being updated are added to that preceding
   * list.
   */
-@js.native
 trait SchemaCreateParagraphBulletsRequest extends StObject {
   
   /**
     * The kinds of bullet glyphs to be used.
     */
-  var bulletPreset: js.UndefOr[String] = js.native
+  var bulletPreset: js.UndefOr[String] = js.undefined
   
   /**
     * The range to apply the bullet preset to.
     */
-  var range: js.UndefOr[SchemaRange] = js.native
+  var range: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaCreateParagraphBulletsRequest {
   

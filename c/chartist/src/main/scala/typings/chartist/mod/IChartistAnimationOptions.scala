@@ -2,25 +2,23 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IChartistAnimationOptions extends StObject {
   
-  var begin: js.UndefOr[String] = js.native
+  var begin: js.UndefOr[String] = js.undefined
   
-  var dur: String | Double = js.native
+  var dur: String | Double
   
-  var easing: js.UndefOr[IChartistEasingDefinition | String] = js.native
+  var easing: js.UndefOr[IChartistEasingDefinition | String] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var from: String | Double = js.native
+  var from: String | Double
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var to: String | Double = js.native
+  var to: String | Double
 }
 object IChartistAnimationOptions {
   

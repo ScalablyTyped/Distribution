@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Target outcome for the goal
   */
-@js.native
-trait PlanDefinitionGoalTarget extends BackboneElement {
+trait PlanDefinitionGoalTarget
+  extends StObject
+     with BackboneElement {
   
   /**
     * The target value to be achieved
     */
-  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var detailCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * The target value to be achieved
     */
-  var detailQuantity: js.UndefOr[Quantity] = js.native
+  var detailQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * The target value to be achieved
     */
-  var detailRange: js.UndefOr[Range] = js.native
+  var detailRange: js.UndefOr[Range] = js.undefined
   
   /**
     * Reach goal within
     */
-  var due: js.UndefOr[Duration] = js.native
+  var due: js.UndefOr[Duration] = js.undefined
   
   /**
     * The parameter whose value is to be tracked
     */
-  var measure: js.UndefOr[CodeableConcept] = js.native
+  var measure: js.UndefOr[CodeableConcept] = js.undefined
 }
 object PlanDefinitionGoalTarget {
   

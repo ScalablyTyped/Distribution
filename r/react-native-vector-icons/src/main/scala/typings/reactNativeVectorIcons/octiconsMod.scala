@@ -9,7 +9,6 @@ import typings.reactNativeVectorIcons.iconMod.TabBarItemIOSProps
 import typings.reactNativeVectorIcons.iconMod.ToolbarAndroidProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octiconsMod {
@@ -26,6 +25,10 @@ object octiconsMod {
   }
   /* static members */
   object default {
+    
+    @JSImport("react-native-vector-icons/Octicons", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("react-native-vector-icons/Octicons", "default.Button")
     @js.native
@@ -75,45 +78,33 @@ object octiconsMod {
       def this(props: ToolbarAndroidProps, context: js.Any) = this()
     }
     
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: js.UndefOr[scala.Nothing], color: String): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double): js.Promise[ImageSource] = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSource")
-    @js.native
-    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = js.native
+    @scala.inline
+    def getImageSource(name: String): js.Promise[ImageSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Double, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
+    @scala.inline
+    def getImageSource(name: String, size: Unit, color: String): js.Promise[ImageSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSource")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ImageSource]]
     
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String): ImageSource = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: js.UndefOr[scala.Nothing], color: String): ImageSource = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double): ImageSource = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.getImageSourceSync")
-    @js.native
-    def getImageSourceSync(name: String, size: Double, color: String): ImageSource = js.native
+    @scala.inline
+    def getImageSourceSync(name: String): ImageSource = ^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any]).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Double, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
+    @scala.inline
+    def getImageSourceSync(name: String, size: Unit, color: String): ImageSource = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceSync")(name.asInstanceOf[js.Any], size.asInstanceOf[js.Any], color.asInstanceOf[js.Any])).asInstanceOf[ImageSource]
     
-    @JSImport("react-native-vector-icons/Octicons", "default.getRawGlyphMap")
-    @js.native
-    def getRawGlyphMap(): StringDictionary[Double] = js.native
+    @scala.inline
+    def getRawGlyphMap(): StringDictionary[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRawGlyphMap")().asInstanceOf[StringDictionary[Double]]
     
-    @JSImport("react-native-vector-icons/Octicons", "default.hasIcon")
-    @js.native
-    def hasIcon(name: String): Boolean = js.native
+    @scala.inline
+    def hasIcon(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasIcon")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-native-vector-icons/Octicons", "default.loadFont")
-    @js.native
-    def loadFont(): js.Promise[Unit] = js.native
-    @JSImport("react-native-vector-icons/Octicons", "default.loadFont")
-    @js.native
-    def loadFont(file: String): js.Promise[Unit] = js.native
+    @scala.inline
+    def loadFont(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")().asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def loadFont(file: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFont")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   }
 }

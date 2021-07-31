@@ -2,13 +2,11 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDestroyable extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
 }
 object IDestroyable {
   

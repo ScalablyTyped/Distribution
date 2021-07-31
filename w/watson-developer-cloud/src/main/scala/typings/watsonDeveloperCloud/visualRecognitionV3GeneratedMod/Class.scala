@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** A category within a classifier. */
-@js.native
 trait Class extends StObject {
   
   /** The name of the class. */
-  var class_name: String = js.native
+  var class_name: String
 }
 object Class {
   

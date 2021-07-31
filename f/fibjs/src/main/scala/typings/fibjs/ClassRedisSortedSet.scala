@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 用以操作 Redis 的 SortedSet 对象，创建方法：,```JavaScript,var db = require("db");,var rdb = new db.openRedis("redis-server");,var set = rdb.getSortedSet("test");,```
   */
 @js.native
-trait ClassRedisSortedSet extends ClassObject {
+trait ClassRedisSortedSet
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -74,8 +75,8 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     * 
     */
-  def range(start: Double, stop: Double): js.Array[_] = js.native
-  def range(start: Double, stop: Double, withScores: Boolean): js.Array[_] = js.native
+  def range(start: Double, stop: Double): js.Array[js.Any] = js.native
+  def range(start: Double, stop: Double, withScores: Boolean): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -87,8 +88,8 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     * 
     */
-  def rangeRev(start: Double, stop: Double): js.Array[_] = js.native
-  def rangeRev(start: Double, stop: Double, withScores: Boolean): js.Array[_] = js.native
+  def rangeRev(start: Double, stop: Double): js.Array[js.Any] = js.native
+  def rangeRev(start: Double, stop: Double, withScores: Boolean): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -127,7 +128,7 @@ trait ClassRedisSortedSet extends ClassObject {
     * 
     * 
     */
-  def remove(members: js.Array[_]): Double = js.native
+  def remove(members: js.Array[js.Any]): Double = js.native
   
   /**
     * 

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for events which concern clicking on the control's items.
   */
-@js.native
-trait ASPxClientMenuItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientMenuItemClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the HTML object that contains the processed item.
     */
-  var htmlElement: js.Any = js.native
+  var htmlElement: js.Any
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets the menu item object related to the event.
     */
-  var item: ASPxClientMenuItem = js.native
+  var item: ASPxClientMenuItem
 }
 object ASPxClientMenuItemClickEventArgs {
   

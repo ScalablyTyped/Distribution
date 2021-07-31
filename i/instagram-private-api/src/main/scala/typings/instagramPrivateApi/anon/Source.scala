@@ -3,15 +3,13 @@ package typings.instagramPrivateApi.anon
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var source: js.UndefOr[IgAppModule] = js.native
+  var source: js.UndefOr[IgAppModule] = js.undefined
   
-  var userIds: js.Array[Double | String] = js.native
+  var userIds: js.Array[Double | String]
 }
 object Source {
   

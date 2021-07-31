@@ -4,25 +4,25 @@ import typings.pulumiAws.outputMod.organizations.GetOrganizationalUnitsChildren
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOrganizationalUnitsMod {
   
-  @JSImport("@pulumi/aws/organizations/getOrganizationalUnits", "getOrganizationalUnits")
+  @JSImport("@pulumi/aws/organizations/getOrganizationalUnits", JSImport.Namespace)
   @js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = js.native
-  @JSImport("@pulumi/aws/organizations/getOrganizationalUnits", "getOrganizationalUnits")
-  @js.native
-  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs): js.Promise[GetOrganizationalUnitsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
+  @scala.inline
+  def getOrganizationalUnits(args: GetOrganizationalUnitsArgs, opts: InvokeOptions): js.Promise[GetOrganizationalUnitsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrganizationalUnits")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOrganizationalUnitsResult]]
+  
   trait GetOrganizationalUnitsArgs extends StObject {
     
     /**
       * The parent ID of the organizational unit.
       */
-    val parentId: String = js.native
+    val parentId: String
   }
   object GetOrganizationalUnitsArgs {
     
@@ -40,20 +40,19 @@ object getOrganizationalUnitsMod {
     }
   }
   
-  @js.native
   trait GetOrganizationalUnitsResult extends StObject {
     
     /**
       * List of child organizational units, which have the following attributes:
       */
-    val childrens: js.Array[GetOrganizationalUnitsChildren] = js.native
+    val childrens: js.Array[GetOrganizationalUnitsChildren]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val parentId: String = js.native
+    val parentId: String
   }
   object GetOrganizationalUnitsResult {
     

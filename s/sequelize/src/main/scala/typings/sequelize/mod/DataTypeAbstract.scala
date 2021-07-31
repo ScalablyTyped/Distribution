@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Abstract DataType interface. Use this if you want to create an interface that has a value any of the
   * DataTypes that Sequelize supports.
   */
-@js.native
 trait DataTypeAbstract extends StObject {
   
   /**
     * Although this is not needed for the definitions itself, we want to make sure that DataTypeAbstract is not
     * something than can be evaluated to an empty object.
     */
-  var dialectTypes: String = js.native
+  var dialectTypes: String
 }
 object DataTypeAbstract {
   

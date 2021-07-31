@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSubnetworksScopedList extends StObject {
   
   /**
     * A list of subnetworks contained in this scope.
     */
-  var subnetworks: js.UndefOr[js.Array[SchemaSubnetwork]] = js.native
+  var subnetworks: js.UndefOr[js.Array[SchemaSubnetwork]] = js.undefined
   
   /**
     * An informational warning that appears when the list of addresses is
     * empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaSubnetworksScopedList {
   

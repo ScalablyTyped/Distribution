@@ -3,7 +3,6 @@ package typings.electron.global.Electron
 import typings.electron.Electron.FromPartitionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Electron.Session")
@@ -42,10 +41,8 @@ object Session_ {
     * of an existing `Session` object.
     */
   /* static member */
-  @JSGlobal("Electron.Session.fromPartition")
-  @js.native
-  def fromPartition(partition: String): typings.electron.Electron.Session_ = js.native
-  @JSGlobal("Electron.Session.fromPartition")
-  @js.native
-  def fromPartition(partition: String, options: FromPartitionOptions): typings.electron.Electron.Session_ = js.native
+  @scala.inline
+  def fromPartition(partition: String): typings.electron.Electron.Session_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Session_]
+  @scala.inline
+  def fromPartition(partition: String, options: FromPartitionOptions): typings.electron.Electron.Session_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPartition")(partition.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.electron.Electron.Session_]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainEndpointOptionsRequest extends StObject {
   
   /**
     * Whether to require that all requests to the domain arrive over HTTPS. We recommend Policy-Min-TLS-1-2-2019-07 for TLSSecurityPolicy. For compatibility with older clients, the default is Policy-Min-TLS-1-0-2019-07. 
     */
-  var DomainEndpointOptions: typings.awsSdk.cloudsearchMod.DomainEndpointOptions = js.native
+  var DomainEndpointOptions: typings.awsSdk.cloudsearchMod.DomainEndpointOptions
   
   /**
     * A string that represents the name of a domain.
     */
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
 }
 object UpdateDomainEndpointOptionsRequest {
   

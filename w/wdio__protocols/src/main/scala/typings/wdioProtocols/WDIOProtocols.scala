@@ -5,7 +5,6 @@ import typings.wdioProtocols.anon.RecordEnvironmentsstring
 import typings.wdioProtocols.wdioProtocolsStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WDIOProtocols {
@@ -13,48 +12,47 @@ object WDIOProtocols {
   /**
     * describes a command endpoint
     */
-  @js.native
   trait CommandEndpoint extends StObject {
     
     /**
       * command name
       */
-    var command: String = js.native
+    var command: String
     
     /**
       * command description
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * set to true if command is only supported in Selenium Hub Node
       */
-    var isHubCommand: js.UndefOr[Boolean] = js.native
+    var isHubCommand: js.UndefOr[Boolean] = js.undefined
     
     /**
       * supported command parameters
       */
-    var parameters: js.Array[CommandParameters] = js.native
+    var parameters: js.Array[CommandParameters]
     
     /**
       * link to specification reference
       */
-    var ref: String = js.native
+    var ref: String
     
     /**
       * information on return data
       */
-    var returns: js.UndefOr[CommandReturnObject] = js.native
+    var returns: js.UndefOr[CommandReturnObject] = js.undefined
     
     /**
       * supported environments
       */
-    var support: js.UndefOr[SupportedEnvironments] = js.native
+    var support: js.UndefOr[SupportedEnvironments] = js.undefined
     
     /**
       * variables within the command path (e.g. /:sessionId/element)
       */
-    var variables: js.UndefOr[js.Array[CommandPathVariables]] = js.native
+    var variables: js.UndefOr[js.Array[CommandPathVariables]] = js.undefined
   }
   object CommandEndpoint {
     
@@ -129,16 +127,15 @@ object WDIOProtocols {
     def POST: typings.wdioProtocols.wdioProtocolsStrings.POST = "POST".asInstanceOf[typings.wdioProtocols.wdioProtocolsStrings.POST]
   }
   
-  @js.native
   trait CommandParameters extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CommandParameters {
     
@@ -168,20 +165,19 @@ object WDIOProtocols {
   
   type CommandPath = string
   
-  @js.native
   trait CommandPathVariables extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
     /**
       * the following are given for path variables, we should still define
       * it as values are populated automatically
       */
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CommandPathVariables {
     
@@ -214,14 +210,13 @@ object WDIOProtocols {
     }
   }
   
-  @js.native
   trait CommandReturnObject extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CommandReturnObject {
     
@@ -279,10 +274,9 @@ object WDIOProtocols {
   }
   
   /* Inlined std.Record<@wdio/protocols.WDIOProtocols.CommandPath, std.Record<@wdio/protocols.WDIOProtocols.CommandMethod, @wdio/protocols.WDIOProtocols.CommandEndpoint>> */
-  @js.native
   trait Protocol extends StObject {
     
-    var string: RecordCommandMethodComman = js.native
+    var string: RecordCommandMethodComman
   }
   object Protocol {
     
@@ -309,12 +303,11 @@ object WDIOProtocols {
     * ```
     */
   /* Inlined std.Record<@wdio/protocols.WDIOProtocols.Platform, std.Record<@wdio/protocols.WDIOProtocols.Environments, string>> */
-  @js.native
   trait SupportedEnvironments extends StObject {
     
-    var android: RecordEnvironmentsstring = js.native
+    var android: RecordEnvironmentsstring
     
-    var ios: RecordEnvironmentsstring = js.native
+    var ios: RecordEnvironmentsstring
   }
   object SupportedEnvironments {
     

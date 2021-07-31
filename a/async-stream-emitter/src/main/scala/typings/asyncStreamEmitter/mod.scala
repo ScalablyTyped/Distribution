@@ -3,47 +3,93 @@ package typings.asyncStreamEmitter
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("async-stream-emitter", JSImport.Namespace)
   @js.native
-  class ^[T] () extends AsyncStreamEmitter[T]
+  class ^[T] ()
+    extends StObject
+       with AsyncStreamEmitter[T] {
+    
+    /* CompleteClass */
+    override def closeAllListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    override def closeListener(eventName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def emit(eventName: String, data: T): Unit = js.native
+    
+    /* CompleteClass */
+    override def getAllListenersBackpressure(): Double = js.native
+    
+    /* CompleteClass */
+    override def getAllListenersConsumerStatsList(): js.Array[ConsumerStats] = js.native
+    
+    /* CompleteClass */
+    override def getListenerBackpressure(eventName: String): Double = js.native
+    
+    /* CompleteClass */
+    override def getListenerConsumerBackpressure(consumerId: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def getListenerConsumerStats(consumerId: Double): ConsumerStats = js.native
+    
+    /* CompleteClass */
+    override def getListenerConsumerStatsList(eventName: String): js.Array[ConsumerStats] = js.native
+    
+    /* CompleteClass */
+    override def hasAnyListenerConsumer(consumerId: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    override def hasListenerConsumer(eventName: String, consumerId: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    override def killAllListeners(): Unit = js.native
+    
+    /* CompleteClass */
+    override def killListener(eventName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def killListenerConsumer(consumerId: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def listener(eventName: String): typings.consumableStream.mod.^[T] = js.native
+  }
   
-  @js.native
   trait AsyncStreamEmitter[T] extends StObject {
     
-    def closeAllListeners(): Unit = js.native
+    def closeAllListeners(): Unit
     
-    def closeListener(eventName: String): Unit = js.native
+    def closeListener(eventName: String): Unit
     
-    def emit(eventName: String, data: T): Unit = js.native
+    def emit(eventName: String, data: T): Unit
     
-    def getAllListenersBackpressure(): Double = js.native
+    def getAllListenersBackpressure(): Double
     
-    def getAllListenersConsumerStatsList(): js.Array[ConsumerStats] = js.native
+    def getAllListenersConsumerStatsList(): js.Array[ConsumerStats]
     
-    def getListenerBackpressure(eventName: String): Double = js.native
+    def getListenerBackpressure(eventName: String): Double
     
-    def getListenerConsumerBackpressure(consumerId: Double): Double = js.native
+    def getListenerConsumerBackpressure(consumerId: Double): Double
     
-    def getListenerConsumerStats(consumerId: Double): ConsumerStats = js.native
+    def getListenerConsumerStats(consumerId: Double): ConsumerStats
     
-    def getListenerConsumerStatsList(eventName: String): js.Array[ConsumerStats] = js.native
+    def getListenerConsumerStatsList(eventName: String): js.Array[ConsumerStats]
     
-    def hasAnyListenerConsumer(consumerId: Double): Boolean = js.native
+    def hasAnyListenerConsumer(consumerId: Double): Boolean
     
-    def hasListenerConsumer(eventName: String, consumerId: Double): Boolean = js.native
+    def hasListenerConsumer(eventName: String, consumerId: Double): Boolean
     
-    def killAllListeners(): Unit = js.native
+    def killAllListeners(): Unit
     
-    def killListener(eventName: String): Unit = js.native
+    def killListener(eventName: String): Unit
     
-    def killListenerConsumer(consumerId: Double): Unit = js.native
+    def killListenerConsumer(consumerId: Double): Unit
     
-    def listener(eventName: String): typings.consumableStream.mod.^[T] = js.native
+    def listener(eventName: String): typings.consumableStream.mod.^[T]
   }
   object AsyncStreamEmitter {
     
@@ -70,7 +116,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AsyncStreamEmitterMutableBuilder[Self <: AsyncStreamEmitter[_], T] (val x: Self with AsyncStreamEmitter[T]) extends AnyVal {
+    implicit class AsyncStreamEmitterMutableBuilder[Self <: AsyncStreamEmitter[?], T] (val x: Self & AsyncStreamEmitter[T]) extends AnyVal {
       
       @scala.inline
       def setCloseAllListeners(value: () => Unit): Self = StObject.set(x, "closeAllListeners", js.Any.fromFunction0(value))

@@ -6,7 +6,6 @@ import typings.reactColor.anon.PartialClassesChromePicke
 import typings.reactColor.mod.ColorPickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeMod {
@@ -20,13 +19,14 @@ object chromeMod {
   trait ChromePicker
     extends Component[ChromePickerProps, js.Object, js.Any]
   
-  @js.native
-  trait ChromePickerProps extends ColorPickerProps[ChromePicker] {
+  trait ChromePickerProps
+    extends StObject
+       with ColorPickerProps[ChromePicker] {
     
-    var disableAlpha: js.UndefOr[Boolean] = js.native
+    var disableAlpha: js.UndefOr[Boolean] = js.undefined
     
     @JSName("styles")
-    var styles_ChromePickerProps: js.UndefOr[PartialClassesChromePicke] = js.native
+    var styles_ChromePickerProps: js.UndefOr[PartialClassesChromePicke] = js.undefined
   }
   object ChromePickerProps {
     
@@ -53,34 +53,33 @@ object chromeMod {
     }
   }
   
-  @js.native
   trait ChromePickerStylesProps extends StObject {
     
-    var Alpha: CSSProperties = js.native
+    var Alpha: CSSProperties
     
-    var Hue: CSSProperties = js.native
+    var Hue: CSSProperties
     
-    var Saturation: CSSProperties = js.native
+    var Saturation: CSSProperties
     
-    var active: CSSProperties = js.native
+    var active: CSSProperties
     
-    var alpha: CSSProperties = js.native
+    var alpha: CSSProperties
     
-    var body: CSSProperties = js.native
+    var body: CSSProperties
     
-    var color: CSSProperties = js.native
+    var color: CSSProperties
     
-    var controls: CSSProperties = js.native
+    var controls: CSSProperties
     
-    var hue: CSSProperties = js.native
+    var hue: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
     
-    var saturation: CSSProperties = js.native
+    var saturation: CSSProperties
     
-    var swatch: CSSProperties = js.native
+    var swatch: CSSProperties
     
-    var toggles: CSSProperties = js.native
+    var toggles: CSSProperties
   }
   object ChromePickerStylesProps {
     

@@ -2,18 +2,16 @@ package typings.googleGax.iamServiceMod.google.iam.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestIamPermissionsRequest. */
-@js.native
 trait ITestIamPermissionsRequest extends StObject {
   
   /** TestIamPermissionsRequest permissions */
-  var permissions: js.UndefOr[js.Array[String] | Null] = js.native
+  var permissions: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TestIamPermissionsRequest resource */
-  var resource: js.UndefOr[String | Null] = js.native
+  var resource: js.UndefOr[String | Null] = js.undefined
 }
 object ITestIamPermissionsRequest {
   

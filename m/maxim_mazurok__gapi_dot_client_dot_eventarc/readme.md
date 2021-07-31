@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201113
 
 ## Library description:
-TypeScript typings for Eventarc API v1beta1
+TypeScript typings for Eventarc API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.eventarc |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 78 |
+| # downloads        | 1160 |
 | # stars            | 0 |
 
 ## Links

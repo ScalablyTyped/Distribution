@@ -5,25 +5,25 @@ import typings.next.routeLoaderMod.RouteLoader
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageLoaderMod {
   
   @JSImport("next/dist/client/page-loader", JSImport.Default)
   @js.native
-  class default protected () extends PageLoader {
+  class default protected ()
+    extends StObject
+       with PageLoader {
     def this(buildId: String, assetPrefix: String) = this()
   }
   
-  @js.native
   trait GoodPageCache extends StObject {
     
-    var mod: js.Any = js.native
+    var mod: js.Any
     
-    var page: ComponentType[js.Object] = js.native
+    var page: ComponentType[js.Object]
     
-    var styleSheets: js.Array[StyleSheetTuple] = js.native
+    var styleSheets: js.Array[StyleSheetTuple]
   }
   object GoodPageCache {
     
@@ -84,12 +84,11 @@ object pageLoaderMod {
     var routeLoader: RouteLoader = js.native
   }
   
-  @js.native
   trait StyleSheetTuple extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var text: String = js.native
+    var text: String
   }
   object StyleSheetTuple {
     

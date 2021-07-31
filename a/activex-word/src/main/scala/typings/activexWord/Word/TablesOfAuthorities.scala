@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -33,64 +32,44 @@ trait TablesOfAuthorities extends StObject {
   def Item(Index: Double): TableOfAuthorities = js.native
   
   def MarkAllCitations(ShortCitation: String): Unit = js.native
-  def MarkAllCitations(
-    ShortCitation: String,
-    LongCitation: js.UndefOr[scala.Nothing],
-    LongCitationAutoText: js.UndefOr[scala.Nothing],
-    Category: js.Any
-  ): Unit = js.native
-  def MarkAllCitations(ShortCitation: String, LongCitation: js.UndefOr[scala.Nothing], LongCitationAutoText: js.Any): Unit = js.native
-  def MarkAllCitations(
-    ShortCitation: String,
-    LongCitation: js.UndefOr[scala.Nothing],
-    LongCitationAutoText: js.Any,
-    Category: js.Any
-  ): Unit = js.native
   def MarkAllCitations(ShortCitation: String, LongCitation: js.Any): Unit = js.native
-  def MarkAllCitations(
-    ShortCitation: String,
-    LongCitation: js.Any,
-    LongCitationAutoText: js.UndefOr[scala.Nothing],
-    Category: js.Any
-  ): Unit = js.native
   def MarkAllCitations(ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: js.Any): Unit = js.native
   def MarkAllCitations(ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: js.Any, Category: js.Any): Unit = js.native
+  def MarkAllCitations(ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: Unit, Category: js.Any): Unit = js.native
+  def MarkAllCitations(ShortCitation: String, LongCitation: Unit, LongCitationAutoText: js.Any): Unit = js.native
+  def MarkAllCitations(ShortCitation: String, LongCitation: Unit, LongCitationAutoText: js.Any, Category: js.Any): Unit = js.native
+  def MarkAllCitations(ShortCitation: String, LongCitation: Unit, LongCitationAutoText: Unit, Category: js.Any): Unit = js.native
   
   def MarkCitation(Range: Range, ShortCitation: String): Field = js.native
-  def MarkCitation(
-    Range: Range,
-    ShortCitation: String,
-    LongCitation: js.UndefOr[scala.Nothing],
-    LongCitationAutoText: js.UndefOr[scala.Nothing],
-    Category: js.Any
-  ): Field = js.native
-  def MarkCitation(
-    Range: Range,
-    ShortCitation: String,
-    LongCitation: js.UndefOr[scala.Nothing],
-    LongCitationAutoText: js.Any
-  ): Field = js.native
-  def MarkCitation(
-    Range: Range,
-    ShortCitation: String,
-    LongCitation: js.UndefOr[scala.Nothing],
-    LongCitationAutoText: js.Any,
-    Category: js.Any
-  ): Field = js.native
   def MarkCitation(Range: Range, ShortCitation: String, LongCitation: js.Any): Field = js.native
-  def MarkCitation(
-    Range: Range,
-    ShortCitation: String,
-    LongCitation: js.Any,
-    LongCitationAutoText: js.UndefOr[scala.Nothing],
-    Category: js.Any
-  ): Field = js.native
   def MarkCitation(Range: Range, ShortCitation: String, LongCitation: js.Any, LongCitationAutoText: js.Any): Field = js.native
   def MarkCitation(
     Range: Range,
     ShortCitation: String,
     LongCitation: js.Any,
     LongCitationAutoText: js.Any,
+    Category: js.Any
+  ): Field = js.native
+  def MarkCitation(
+    Range: Range,
+    ShortCitation: String,
+    LongCitation: js.Any,
+    LongCitationAutoText: Unit,
+    Category: js.Any
+  ): Field = js.native
+  def MarkCitation(Range: Range, ShortCitation: String, LongCitation: Unit, LongCitationAutoText: js.Any): Field = js.native
+  def MarkCitation(
+    Range: Range,
+    ShortCitation: String,
+    LongCitation: Unit,
+    LongCitationAutoText: js.Any,
+    Category: js.Any
+  ): Field = js.native
+  def MarkCitation(
+    Range: Range,
+    ShortCitation: String,
+    LongCitation: Unit,
+    LongCitationAutoText: Unit,
     Category: js.Any
   ): Field = js.native
   

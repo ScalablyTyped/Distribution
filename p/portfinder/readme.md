@@ -10,9 +10,9 @@ A simple tool to find an open port on the current machine
 | ------------------ | :-------------: |
 | Full name          | portfinder |
 | Keywords           | http, ports, utilities |
-| # releases         | 12 |
-| # dependents       | 1079 |
-| # downloads        | 336745460 |
+| # releases         | 9 |
+| # dependents       | 1203 |
+| # downloads        | 435412825 |
 | # stars            | 15 |
 
 ## Links

@@ -2,111 +2,109 @@ package typings.reveal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevealOptions extends StObject {
   
-  var autoSlide: js.UndefOr[Double] = js.native
+  var autoSlide: js.UndefOr[Double] = js.undefined
   
-  var autoSlideMethod: js.UndefOr[js.Any] = js.native
+  var autoSlideMethod: js.UndefOr[js.Any] = js.undefined
   
-  var autoSlideStoppable: js.UndefOr[Boolean] = js.native
+  var autoSlideStoppable: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundTransition: js.UndefOr[String] = js.native
+  var backgroundTransition: js.UndefOr[String] = js.undefined
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
   // Configuration
-  var controls: js.UndefOr[Boolean] = js.native
+  var controls: js.UndefOr[Boolean] = js.undefined
   
   // Dependencies
   // https://github.com/hakimel/reveal.js/#dependencies
-  var dependencies: js.UndefOr[js.Array[RevealDependency]] = js.native
+  var dependencies: js.UndefOr[js.Array[RevealDependency]] = js.undefined
   
-  var embedded: js.UndefOr[Boolean] = js.native
+  var embedded: js.UndefOr[Boolean] = js.undefined
   
-  var fragments: js.UndefOr[Boolean] = js.native
+  var fragments: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var hideAddressBar: js.UndefOr[Boolean] = js.native
+  var hideAddressBar: js.UndefOr[Boolean] = js.undefined
   
-  var history: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[Boolean] = js.undefined
   
   // https://github.com/hakimel/reveal.js/#keyboard-bindings
-  var keyboard: js.UndefOr[js.Any] = js.native
+  var keyboard: js.UndefOr[js.Any] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var margin: js.UndefOr[Double | String] = js.native
+  var margin: js.UndefOr[Double | String] = js.undefined
   
   // https://github.com/hakimel/reveal.js/#mathjax
-  var math: js.UndefOr[MathConfig] = js.native
+  var math: js.UndefOr[MathConfig] = js.undefined
   
-  var maxScale: js.UndefOr[Double | String] = js.native
+  var maxScale: js.UndefOr[Double | String] = js.undefined
   
-  var minScale: js.UndefOr[Double | String] = js.native
+  var minScale: js.UndefOr[Double | String] = js.undefined
   
-  var mouseWheel: js.UndefOr[Boolean] = js.native
+  var mouseWheel: js.UndefOr[Boolean] = js.undefined
   
   // https://github.com/hakimel/reveal.js/#multiplexing
-  var multiplex: js.UndefOr[MultiplexConfig] = js.native
+  var multiplex: js.UndefOr[MultiplexConfig] = js.undefined
   
-  var overview: js.UndefOr[Boolean] = js.native
+  var overview: js.UndefOr[Boolean] = js.undefined
   
   // CSS syntax, e.g. "2100px 900px" - currently only pixels are supported (don't use % or auto)
   // Number of pixels to move the parallax background per slide
   // - Calculated automatically unless specified
   // - Set to 0 to disable movement along an axis
-  var parallaxBackgroundHorizontal: js.UndefOr[Double] = js.native
+  var parallaxBackgroundHorizontal: js.UndefOr[Double] = js.undefined
   
   // https://github.com/hakimel/reveal.js/#parallax-background
   // Parallax background image
-  var parallaxBackgroundImage: js.UndefOr[String] = js.native
+  var parallaxBackgroundImage: js.UndefOr[String] = js.undefined
   
   // Parallax background size
-  var parallaxBackgroundSize: js.UndefOr[String] = js.native
+  var parallaxBackgroundSize: js.UndefOr[String] = js.undefined
   
-  var parallaxBackgroundVertical: js.UndefOr[Double] = js.native
+  var parallaxBackgroundVertical: js.UndefOr[Double] = js.undefined
   
   // Exposes the reveal.js API through window.postMessage
-  var postMessage: js.UndefOr[Boolean] = js.native
+  var postMessage: js.UndefOr[Boolean] = js.undefined
   
   // Dispatches all reveal.js events to the parent window through postMessage
-  var postMessageEvents: js.UndefOr[Boolean] = js.native
+  var postMessageEvents: js.UndefOr[Boolean] = js.undefined
   
-  var previewLinks: js.UndefOr[Boolean] = js.native
+  var previewLinks: js.UndefOr[Boolean] = js.undefined
   
-  var progress: js.UndefOr[Boolean] = js.native
+  var progress: js.UndefOr[Boolean] = js.undefined
   
-  var rollingLinks: js.UndefOr[Boolean] = js.native
+  var rollingLinks: js.UndefOr[Boolean] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var showNotes: js.UndefOr[Boolean] = js.native
+  var showNotes: js.UndefOr[Boolean] = js.undefined
   
-  var shuffle: js.UndefOr[Boolean] = js.native
+  var shuffle: js.UndefOr[Boolean] = js.undefined
   
   // https://github.com/hakimel/reveal.js/#slide-number
-  var slideNumber: js.UndefOr[Boolean | String] = js.native
+  var slideNumber: js.UndefOr[Boolean | String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var touch: js.UndefOr[Boolean] = js.native
+  var touch: js.UndefOr[Boolean] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var transitionSpeed: js.UndefOr[String] = js.native
+  var transitionSpeed: js.UndefOr[String] = js.undefined
   
-  var viewDistance: js.UndefOr[Double] = js.native
+  var viewDistance: js.UndefOr[Double] = js.undefined
   
   // Presentation Size
   // https://github.com/hakimel/reveal.js/#presentation-size
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object RevealOptions {
   

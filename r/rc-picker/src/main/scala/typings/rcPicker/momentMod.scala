@@ -5,7 +5,6 @@ import typings.moment.mod.Moment
 import typings.rcPicker.generateMod.GenerateConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentMod extends Shortcut {

@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactRequest extends StObject {
   
   /**
     * The name of the contact list to which the contact belongs.
     */
-  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName = js.native
+  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName
   
   /**
     * The contact's email addres.
     */
-  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress
 }
 object GetContactRequest {
   

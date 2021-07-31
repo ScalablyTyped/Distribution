@@ -2,19 +2,17 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The public key for a given CryptoKeyVersion. Obtained via GetPublicKey.
   */
-@js.native
 trait SchemaPublicKey extends StObject {
   
   /**
     * The Algorithm associated with this key.
     */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * The public key, encoded in PEM format. For more information, see the [RFC
@@ -23,7 +21,7 @@ trait SchemaPublicKey extends StObject {
     * [Textual Encoding of Subject Public Key Info]
     * (https://tools.ietf.org/html/rfc7468#section-13).
     */
-  var pem: js.UndefOr[String] = js.native
+  var pem: js.UndefOr[String] = js.undefined
 }
 object SchemaPublicKey {
   

@@ -3,29 +3,28 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.Longitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateMarkerOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 动画持续时长，默认值1000ms，平移与旋转分别计算。
-  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   // 指定marker移动到的目标点
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
   // 指定 marker
-  var destination: Longitude = js.native
+  var destination: Longitude
   
   // marker 的旋转角度
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var markerId: Double = js.native
+  var markerId: Double
   
   // 移动过程中是否自动旋转 marker
-  var rotate: Double = js.native
+  var rotate: Double
 }
 object TranslateMarkerOptions {
   

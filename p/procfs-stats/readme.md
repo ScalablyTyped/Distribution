@@ -12,7 +12,7 @@ get detailed information (more than ps, top etc) about running process on linux 
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 156612 |
+| # downloads        | 169676 |
 | # stars            | 1 |
 
 ## Links

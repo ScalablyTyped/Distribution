@@ -2,23 +2,22 @@ package typings.geopattern
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geopattern", "generate")
+  @JSImport("geopattern", JSImport.Namespace)
   @js.native
-  def generate(): Pattern = js.native
-  @JSImport("geopattern", "generate")
-  @js.native
-  def generate(string: js.UndefOr[scala.Nothing], options: PatternOptions): Pattern = js.native
-  @JSImport("geopattern", "generate")
-  @js.native
-  def generate(string: String): Pattern = js.native
-  @JSImport("geopattern", "generate")
-  @js.native
-  def generate(string: String, options: PatternOptions): Pattern = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def generate(): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Pattern]
+  @scala.inline
+  def generate(string: String): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any]).asInstanceOf[Pattern]
+  @scala.inline
+  def generate(string: String, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
+  @scala.inline
+  def generate(string: Unit, options: PatternOptions): Pattern = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Pattern]
   
   /* Rewritten from type alias, can be one of: 
     - typings.geopattern.geopatternStrings.chevrons
@@ -90,29 +89,28 @@ object mod {
     def xes: typings.geopattern.geopatternStrings.xes = "xes".asInstanceOf[typings.geopattern.geopatternStrings.xes]
   }
   
-  @js.native
   trait Pattern extends StObject {
     
     /** Gets the pattern's background color as a hexadecimal string. */
-    var color: String = js.native
+    var color: String
     
     /** Gets the SVG as a Base64-encoded string. */
-    def toBase64(): String = js.native
+    def toBase64(): String
     
     /**
       * Gets the pattern as a data URI,
       * i.e. data:image/svg+xml;base64,PHN2ZyB...
       */
-    def toDataUri(): String = js.native
+    def toDataUri(): String
     
     /**
       * Gets the pattern as a data URL suitable for use as a CSS
       * background-image, i.e. url("data:image/svg+xml;base64,PHN2ZyB...").
       */
-    def toDataUrl(): String = js.native
+    def toDataUrl(): String
     
     /** Gets the SVG string representing the pattern. */
-    def toSvg(): String = js.native
+    def toSvg(): String
   }
   object Pattern {
     
@@ -148,7 +146,6 @@ object mod {
     }
   }
   
-  @js.native
   trait PatternOptions extends StObject {
     
     /**
@@ -157,20 +154,20 @@ object mod {
       * by the generator. This is a CSS hexadecimal color value, which defaults
       * to #933c3c.
       */
-    var baseColor: js.UndefOr[String] = js.native
+    var baseColor: js.UndefOr[String] = js.undefined
     
     /**
       * Specify an exact background color. This is a CSS hexadecimal color
       * value.
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Determines the pattern. All of the original patterns from the Ruby
       * version at jasonlong/geo_pattern are available in this port, and their
       * names are camelCased.
       */
-    var generator: js.UndefOr[GeneratorType] = js.native
+    var generator: js.UndefOr[GeneratorType] = js.undefined
   }
   object PatternOptions {
     

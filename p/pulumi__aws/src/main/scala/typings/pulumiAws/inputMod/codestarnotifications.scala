@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codestarnotifications {
   
-  @js.native
   trait NotificationRuleTarget extends StObject {
     
     /**
       * The ARN of notification rule target. For example, a SNS Topic ARN.
       */
-    var address: Input[String] = js.native
+    var address: Input[String]
     
     /**
       * The status of the notification rule. Possible values are `ENABLED` and `DISABLED`, default is `ENABLED`.
       */
-    var status: js.UndefOr[Input[String]] = js.native
+    var status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the notification target. Default value is `SNS`.
       */
-    var `type`: js.UndefOr[Input[String]] = js.native
+    var `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object NotificationRuleTarget {
     

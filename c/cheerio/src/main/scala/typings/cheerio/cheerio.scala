@@ -7,7 +7,6 @@ import typings.node.Buffer
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cheerio {
@@ -16,7 +15,8 @@ object cheerio {
   
   @js.native
   trait Cheerio
-    extends // Document References
+    extends StObject
+       with // Document References
   // Cheerio https://github.com/cheeriojs/cheerio
   // JQuery http://api.jquery.com
   /* index */ NumberDictionary[Element] {
@@ -83,7 +83,7 @@ object cheerio {
     def data(name: String): js.Any = js.native
     def data(name: String, value: js.Any): js.Any = js.native
     
-    def each(func: js.Function2[/* index */ Double, /* element */ Element, _]): Cheerio = js.native
+    def each(func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): Cheerio = js.native
     
     def empty(): Cheerio = js.native
     
@@ -103,7 +103,7 @@ object cheerio {
     
     def first(): Cheerio = js.native
     
-    def get(): js.Array[_] = js.native
+    def get(): js.Array[js.Any] = js.native
     def get(index: Double): js.Any = js.native
     
     def has(element: Element): Cheerio = js.native
@@ -136,7 +136,7 @@ object cheerio {
     
     var length: Double = js.native
     
-    def map(func: js.Function2[/* index */ Double, /* element */ Element, _]): Cheerio = js.native
+    def map(func: js.Function2[/* index */ Double, /* element */ Element, js.Any]): Cheerio = js.native
     
     def next(): Cheerio = js.native
     def next(selector: String): Cheerio = js.native
@@ -149,9 +149,9 @@ object cheerio {
     def nextUntil(element: Cheerio, filter: String): Cheerio = js.native
     def nextUntil(element: Element): Cheerio = js.native
     def nextUntil(element: Element, filter: String): Cheerio = js.native
-    def nextUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
     def nextUntil(selector: String): Cheerio = js.native
     def nextUntil(selector: String, filter: String): Cheerio = js.native
+    def nextUntil(selector: Unit, filter: String): Cheerio = js.native
     
     def not(element: Element): Cheerio = js.native
     def not(func: js.Function2[/* index */ Double, /* element */ Element, Boolean]): Cheerio = js.native
@@ -169,9 +169,9 @@ object cheerio {
     def parentsUntil(element: Cheerio, filter: String): Cheerio = js.native
     def parentsUntil(element: Element): Cheerio = js.native
     def parentsUntil(element: Element, filter: String): Cheerio = js.native
-    def parentsUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
     def parentsUntil(selector: String): Cheerio = js.native
     def parentsUntil(selector: String, filter: String): Cheerio = js.native
+    def parentsUntil(selector: Unit, filter: String): Cheerio = js.native
     
     def prepend(content: String, contents: js.Any*): Cheerio = js.native
     def prepend(content: js.Array[Document], contents: js.Any*): Cheerio = js.native
@@ -191,9 +191,9 @@ object cheerio {
     def prevUntil(element: Cheerio, filter: String): Cheerio = js.native
     def prevUntil(element: Element): Cheerio = js.native
     def prevUntil(element: Element, filter: String): Cheerio = js.native
-    def prevUntil(selector: js.UndefOr[scala.Nothing], filter: String): Cheerio = js.native
     def prevUntil(selector: String): Cheerio = js.native
     def prevUntil(selector: String, filter: String): Cheerio = js.native
+    def prevUntil(selector: Unit, filter: String): Cheerio = js.native
     
     def prop(name: String): js.Any = js.native
     def prop(name: String, value: js.Any): Cheerio = js.native
@@ -249,7 +249,9 @@ object cheerio {
   }
   
   @js.native
-  trait CheerioAPI extends Root {
+  trait CheerioAPI
+    extends StObject
+       with Root {
     
     def load(element: Element): Root = js.native
     def load(element: Element, options: CheerioParserOptions): Root = js.native
@@ -261,34 +263,33 @@ object cheerio {
     var version: String = js.native
   }
   
-  @js.native
   trait CheerioParserOptions extends StObject {
     
-    var _useHtmlParser2: js.UndefOr[Boolean] = js.native
+    var _useHtmlParser2: js.UndefOr[Boolean] = js.undefined
     
-    var decodeEntities: js.UndefOr[Boolean] = js.native
+    var decodeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreWhitespace: js.UndefOr[Boolean] = js.native
+    var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.native
+    var lowerCaseAttributeNames: js.UndefOr[Boolean] = js.undefined
     
-    var lowerCaseTags: js.UndefOr[Boolean] = js.native
+    var lowerCaseTags: js.UndefOr[Boolean] = js.undefined
     
-    var normalizeWhitespace: js.UndefOr[Boolean] = js.native
+    var normalizeWhitespace: js.UndefOr[Boolean] = js.undefined
     
-    var recognizeCDATA: js.UndefOr[Boolean] = js.native
+    var recognizeCDATA: js.UndefOr[Boolean] = js.undefined
     
-    var recognizeSelfClosing: js.UndefOr[Boolean] = js.native
+    var recognizeSelfClosing: js.UndefOr[Boolean] = js.undefined
     
-    var withEndIndices: js.UndefOr[Boolean] = js.native
+    var withEndIndices: js.UndefOr[Boolean] = js.undefined
     
-    var withStartIndices: js.UndefOr[Boolean] = js.native
+    var withStartIndices: js.UndefOr[Boolean] = js.undefined
     
     // Document References
     // Cheerio https://github.com/cheeriojs/cheerio
     // HTMLParser2 https://github.com/fb55/htmlparser2/wiki/Parser-options
     // DomHandler https://github.com/fb55/DomHandler
-    var xmlMode: js.UndefOr[Boolean] = js.native
+    var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
   object CheerioParserOptions {
     
@@ -369,44 +370,43 @@ object cheerio {
     }
   }
   
-  @js.native
   trait Element extends StObject {
     
-    var attribs: StringDictionary[String] = js.native
+    var attribs: StringDictionary[String]
     
-    var childNodes: js.Array[Element] = js.native
+    var childNodes: js.Array[Element]
     
-    var children: js.Array[Element] = js.native
+    var children: js.Array[Element]
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var firstChild: Element = js.native
+    var firstChild: Element
     
-    var lastChild: Element = js.native
+    var lastChild: Element
     
-    var name: String = js.native
+    var name: String
     
-    var next: Element = js.native
+    var next: Element
     
-    var nextSibling: Element = js.native
+    var nextSibling: Element
     
-    var nodeValue: String = js.native
+    var nodeValue: String
     
-    var parent: Element = js.native
+    var parent: Element
     
-    var parentNode: Element = js.native
+    var parentNode: Element
     
-    var prev: Element = js.native
+    var prev: Element
     
-    var previousSibling: Element = js.native
+    var previousSibling: Element
     
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
     // Document References
     // Node Console
-    var tagName: String = js.native
+    var tagName: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Element {
     
@@ -502,7 +502,9 @@ object cheerio {
   }
   
   @js.native
-  trait Root extends Selector {
+  trait Root
+    extends StObject
+       with Selector {
     
     def contains(container: Element, contained: Element): Boolean = js.native
     
@@ -516,7 +518,7 @@ object cheerio {
     def html(options: CheerioParserOptions): String = js.native
     
     def parseHTML(data: String): js.Array[Document] = js.native
-    def parseHTML(data: String, context: js.UndefOr[scala.Nothing], keepScripts: Boolean): js.Array[Document] = js.native
+    def parseHTML(data: String, context: Unit, keepScripts: Boolean): js.Array[Document] = js.native
     def parseHTML(data: String, context: Document): js.Array[Document] = js.native
     def parseHTML(data: String, context: Document, keepScripts: Boolean): js.Array[Document] = js.native
     

@@ -5,30 +5,36 @@ import typings.jimp.mod.ColorActionName
 import typings.jimp.mod.ListenableName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jimpStrings {
   
   @js.native
-  sealed trait any extends ListenableName
+  sealed trait any
+    extends StObject
+       with ListenableName
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait background
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait `before-change` extends ListenableName
+  sealed trait `before-change`
+    extends StObject
+       with ListenableName
   @scala.inline
   def `before-change`: `before-change` = "before-change".asInstanceOf[`before-change`]
   
   @js.native
-  sealed trait `before-clone` extends ListenableName
+  sealed trait `before-clone`
+    extends StObject
+       with ListenableName
   @scala.inline
   def `before-clone`: `before-clone` = "before-clone".asInstanceOf[`before-clone`]
   
@@ -48,12 +54,16 @@ object jimpStrings {
   def bilinearInterpolation: bilinearInterpolation = "bilinearInterpolation".asInstanceOf[bilinearInterpolation]
   
   @js.native
-  sealed trait blue extends ColorActionName
+  sealed trait blue
+    extends StObject
+       with ColorActionName
   @scala.inline
   def blue: blue = "blue".asInstanceOf[blue]
   
   @js.native
-  sealed trait changed extends ListenableName
+  sealed trait changed
+    extends StObject
+       with ListenableName
   @scala.inline
   def changed: changed = "changed".asInstanceOf[changed]
   
@@ -61,7 +71,9 @@ object jimpStrings {
   sealed trait clone extends StObject
   
   @js.native
-  sealed trait cloned extends ListenableName
+  sealed trait cloned
+    extends StObject
+       with ListenableName
   @scala.inline
   def cloned: cloned = "cloned".asInstanceOf[cloned]
   
@@ -72,13 +84,16 @@ object jimpStrings {
   
   @js.native
   sealed trait crop
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
-  sealed trait green extends ColorActionName
+  sealed trait green
+    extends StObject
+       with ColorActionName
   @scala.inline
   def green: green = "green".asInstanceOf[green]
   
@@ -88,7 +103,9 @@ object jimpStrings {
   def hermiteInterpolation: hermiteInterpolation = "hermiteInterpolation".asInstanceOf[hermiteInterpolation]
   
   @js.native
-  sealed trait hue extends ColorActionName
+  sealed trait hue
+    extends StObject
+       with ColorActionName
   @scala.inline
   def hue: hue = "hue".asInstanceOf[hue]
   
@@ -128,12 +145,16 @@ object jimpStrings {
   def `imageSlashx-ms-bmp`: `imageSlashx-ms-bmp` = "image/x-ms-bmp".asInstanceOf[`imageSlashx-ms-bmp`]
   
   @js.native
-  sealed trait initialized extends ListenableName
+  sealed trait initialized
+    extends StObject
+       with ListenableName
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
-  sealed trait mix extends ColorActionName
+  sealed trait mix
+    extends StObject
+       with ColorActionName
   @scala.inline
   def mix: mix = "mix".asInstanceOf[mix]
   
@@ -143,29 +164,38 @@ object jimpStrings {
   def nearestNeighbor: nearestNeighbor = "nearestNeighbor".asInstanceOf[nearestNeighbor]
   
   @js.native
-  sealed trait red extends ColorActionName
+  sealed trait red
+    extends StObject
+       with ColorActionName
   @scala.inline
   def red: red = "red".asInstanceOf[red]
   
   @js.native
   sealed trait scan
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def scan: scan = "scan".asInstanceOf[scan]
   
   @js.native
-  sealed trait shade extends ColorActionName
+  sealed trait shade
+    extends StObject
+       with ColorActionName
   @scala.inline
   def shade: shade = "shade".asInstanceOf[shade]
   
   @js.native
-  sealed trait tint extends ColorActionName
+  sealed trait tint
+    extends StObject
+       with ColorActionName
   @scala.inline
   def tint: tint = "tint".asInstanceOf[tint]
   
   @js.native
-  sealed trait xor extends ColorActionName
+  sealed trait xor
+    extends StObject
+       with ColorActionName
   @scala.inline
   def xor: xor = "xor".asInstanceOf[xor]
 }

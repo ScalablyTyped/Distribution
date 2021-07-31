@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rolePolicyAttachmentMod {
@@ -40,6 +39,10 @@ object rolePolicyAttachmentMod {
   /* static members */
   object RolePolicyAttachment {
     
+    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RolePolicyAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,40 +52,34 @@ object rolePolicyAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RolePolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RolePolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RolePolicyAttachmentState): RolePolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RolePolicyAttachmentState, opts: CustomResourceOptions): RolePolicyAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RolePolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RolePolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RolePolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RolePolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RolePolicyAttachmentState): RolePolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RolePolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RolePolicyAttachmentState, opts: CustomResourceOptions): RolePolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RolePolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of RolePolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/rolePolicyAttachment", "RolePolicyAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicyAttachment.RolePolicyAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/rolePolicyAttachment.RolePolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/rolePolicyAttachment.RolePolicyAttachment */ Boolean]
   }
   
-  @js.native
   trait RolePolicyAttachmentArgs extends StObject {
     
     /**
       * The ARN of the policy you want to apply
       */
-    val policyArn: Input[ARN] = js.native
+    val policyArn: Input[ARN]
     
     /**
       * The role the policy should be applied to
       */
-    val role: Input[String | Role] = js.native
+    val role: Input[String | Role]
   }
   object RolePolicyAttachmentArgs {
     
@@ -97,18 +94,17 @@ object rolePolicyAttachmentMod {
     }
   }
   
-  @js.native
   trait RolePolicyAttachmentState extends StObject {
     
     /**
       * The ARN of the policy you want to apply
       */
-    val policyArn: js.UndefOr[Input[ARN]] = js.native
+    val policyArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * The role the policy should be applied to
       */
-    val role: js.UndefOr[Input[String | Role]] = js.native
+    val role: js.UndefOr[Input[String | Role]] = js.undefined
   }
   object RolePolicyAttachmentState {
     

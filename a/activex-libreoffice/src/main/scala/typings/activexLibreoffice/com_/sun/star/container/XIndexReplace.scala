@@ -3,18 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the generic interface for supporting the replacement of indexed elements.
   * @see XContainer
   */
-@js.native
-trait XIndexReplace extends XIndexAccess {
+trait XIndexReplace
+  extends StObject
+     with XIndexAccess {
   
   /** replaces the element at the specified index with the given element. */
-  def replaceByIndex(Index: Double, Element: js.Any): Unit = js.native
+  def replaceByIndex(Index: Double, Element: js.Any): Unit
 }
 object XIndexReplace {
   

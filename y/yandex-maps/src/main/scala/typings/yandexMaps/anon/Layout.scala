@@ -6,23 +6,21 @@ import typings.yandexMaps.yandexMapsStrings.selectable
 import typings.yandexMaps.yandexMapsStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  var layout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.native
+  var layout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.undefined
   
-  var selectOnClick: js.UndefOr[Boolean] = js.native
+  var selectOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var selectableLayout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.native
+  var selectableLayout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.undefined
   
-  var separatorLayout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.native
+  var separatorLayout: js.UndefOr[String | IClassConstructor[ISelectableControlLayout]] = js.undefined
   
-  var `type`: js.UndefOr[selectable | separator] = js.native
+  var `type`: js.UndefOr[selectable | separator] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Layout {
   

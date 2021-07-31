@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.cloudfront
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionDefaultCacheBehaviorForwardedValuesCookies extends StObject {
   
   /**
@@ -15,14 +13,14 @@ trait DistributionDefaultCacheBehaviorForwardedValuesCookies extends StObject {
     * specify `all`, `none` or `whitelist`. If `whitelist`, you must include the
     * subsequent `whitelistedNames`
     */
-  var forward: Input[String] = js.native
+  var forward: Input[String]
   
   /**
     * If you have specified `whitelist` to
     * `forward`, the whitelisted cookies that you want CloudFront to forward to
     * your origin.
     */
-  var whitelistedNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var whitelistedNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
 }
 object DistributionDefaultCacheBehaviorForwardedValuesCookies {
   

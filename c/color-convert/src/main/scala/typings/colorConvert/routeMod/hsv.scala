@@ -17,39 +17,37 @@ import typings.colorConvert.conversionsMod.RGB_
 import typings.colorConvert.conversionsMod.XYZ_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hsv extends StObject {
   
-  def ansi16(from: HSV_): ANSI16_ = js.native
+  def ansi16(from: HSV_): ANSI16_
   
-  def ansi256(from: HSV_): ANSI256_ = js.native
+  def ansi256(from: HSV_): ANSI256_
   
-  def apple(from: HSV_): APPLE_ = js.native
+  def apple(from: HSV_): APPLE_
   
-  def cmyk(from: HSV_): CMYK_ = js.native
+  def cmyk(from: HSV_): CMYK_
   
-  def gray(from: HSV_): GRAY_ = js.native
+  def gray(from: HSV_): GRAY_
   
-  def hcg(from: HSV_): HCG_ = js.native
+  def hcg(from: HSV_): HCG_
   
-  def hex(from: HSV_): HEX_ = js.native
+  def hex(from: HSV_): HEX_
   
-  def hsl(from: HSV_): HSL_ = js.native
+  def hsl(from: HSV_): HSL_
   
-  def hwb(from: HSV_): HWB_ = js.native
+  def hwb(from: HSV_): HWB_
   
-  def keyword(from: HSV_): KEYWORD_ = js.native
+  def keyword(from: HSV_): KEYWORD_
   
-  def lab(from: HSV_): LAB_ = js.native
+  def lab(from: HSV_): LAB_
   
-  def lch(from: HSV_): LCH_ = js.native
+  def lch(from: HSV_): LCH_
   
-  def rgb(from: HSV_): RGB_ = js.native
+  def rgb(from: HSV_): RGB_
   
-  def xyz(from: HSV_): XYZ_ = js.native
+  def xyz(from: HSV_): XYZ_
 }
 object hsv {
   

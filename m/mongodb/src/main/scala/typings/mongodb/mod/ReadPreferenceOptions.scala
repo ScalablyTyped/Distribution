@@ -3,18 +3,16 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadPreferenceOptions extends StObject {
   
-  var hedge: js.UndefOr[Enabled] = js.native
+  var hedge: js.UndefOr[Enabled] = js.undefined
   
   /**
     * Max Secondary Read Staleness in Seconds
     */
-  var maxStalenessSeconds: js.UndefOr[scala.Double] = js.native
+  var maxStalenessSeconds: js.UndefOr[scala.Double] = js.undefined
 }
 object ReadPreferenceOptions {
   

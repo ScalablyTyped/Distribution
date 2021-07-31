@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoCategorySnippet extends StObject {
   
-  var assignable: js.UndefOr[Boolean] = js.native
+  var assignable: js.UndefOr[Boolean] = js.undefined
   
   /** The YouTube channel that created the video category. */
-  var channelId: js.UndefOr[String] = js.native
+  var channelId: js.UndefOr[String] = js.undefined
   
   /** The video category's title. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object VideoCategorySnippet {
   

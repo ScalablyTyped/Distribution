@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,158 +22,159 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Document Object Model (DOM) Level 2 Core Specification
   * @since OOo 2.0
   */
-@js.native
-trait XNode extends XInterface {
+trait XNode
+  extends StObject
+     with XInterface {
   
   /** A NamedNodeMap containing the attributes of this node (if it is an Element) or null otherwise. */
-  val Attributes: XNamedNodeMap = js.native
+  val Attributes: XNamedNodeMap
   
   /** A NodeList that contains all children of this node. */
-  val ChildNodes: XNodeList = js.native
+  val ChildNodes: XNodeList
   
   /** The first child of this node. */
-  val FirstChild: XNode = js.native
+  val FirstChild: XNode
   
   /** The last child of this node. */
-  val LastChild: XNode = js.native
+  val LastChild: XNode
   
   /** Returns the local part of the qualified name of this node. */
-  val LocalName: String = js.native
+  val LocalName: String
   
   /** The namespace URI of this node, or null if it is unspecified. */
-  val NamespaceURI: String = js.native
+  val NamespaceURI: String
   
   /** The node immediately following this node. */
-  val NextSibling: XNode = js.native
+  val NextSibling: XNode
   
   /** The name of this node, depending on its type; see the table above. */
-  val NodeName: String = js.native
+  val NodeName: String
   
   /** A code representing the type of the underlying object, as defined above. */
-  val NodeType: typings.activexLibreoffice.com_.sun.star.xml.dom.NodeType = js.native
+  val NodeType: typings.activexLibreoffice.com_.sun.star.xml.dom.NodeType
   
   /**
     * The value of this node, depending on its type; see the table above.
     * @throws com::sun::star::xml::dom::DOMException  DOMSTRING_SIZE_ERR: Raised when it would return more characters than fit in a DOMString variable on the i
     */
-  var NodeValue: String = js.native
+  var NodeValue: String
   
   /** The Document object associated with this node. */
-  val OwnerDocument: XDocument = js.native
+  val OwnerDocument: XDocument
   
   /** The parent of this node. */
-  val ParentNode: XNode = js.native
+  val ParentNode: XNode
   
   /** The namespace prefix of this node, or null if it is unspecified. */
-  var Prefix: String = js.native
+  var Prefix: String
   
   /** The node immediately preceding this node. */
-  val PreviousSibling: XNode = js.native
+  val PreviousSibling: XNode
   
   /**
     * Adds the node newChild to the end of the list of children of this node.
     * @param newChild the new child node
     * @throws com::sun::star::xml::dom::DOMException  HIERARCHY_REQUEST_ERR: Raised if this node is of a type that does not allow children of the type of the n
     */
-  def appendChild(newChild: XNode): XNode = js.native
+  def appendChild(newChild: XNode): XNode
   
   /**
     * Returns a duplicate of this node, i.e., serves as a generic copy constructor for nodes.
     * @param deep `TRUE` : clone node together with any children ; `FALSE` : clone without children
     * @returns the cloned node
     */
-  def cloneNode(deep: Boolean): XNode = js.native
+  def cloneNode(deep: Boolean): XNode
   
   /** A NamedNodeMap containing the attributes of this node (if it is an Element) or null otherwise. */
-  def getAttributes(): XNamedNodeMap = js.native
+  def getAttributes(): XNamedNodeMap
   
   /** A NodeList that contains all children of this node. */
-  def getChildNodes(): XNodeList = js.native
+  def getChildNodes(): XNodeList
   
   /** The first child of this node. */
-  def getFirstChild(): XNode = js.native
+  def getFirstChild(): XNode
   
   /** The last child of this node. */
-  def getLastChild(): XNode = js.native
+  def getLastChild(): XNode
   
   /** Returns the local part of the qualified name of this node. */
-  def getLocalName(): String = js.native
+  def getLocalName(): String
   
   /** The namespace URI of this node, or null if it is unspecified. */
-  def getNamespaceURI(): String = js.native
+  def getNamespaceURI(): String
   
   /** The node immediately following this node. */
-  def getNextSibling(): XNode = js.native
+  def getNextSibling(): XNode
   
   /** The name of this node, depending on its type; see the table above. */
-  def getNodeName(): String = js.native
+  def getNodeName(): String
   
   /** A code representing the type of the underlying object, as defined above. */
-  def getNodeType(): typings.activexLibreoffice.com_.sun.star.xml.dom.NodeType = js.native
+  def getNodeType(): typings.activexLibreoffice.com_.sun.star.xml.dom.NodeType
   
   /**
     * The value of this node, depending on its type; see the table above.
     * @throws com::sun::star::xml::dom::DOMException  DOMSTRING_SIZE_ERR: Raised when it would return more characters than fit in a DOMString variable on the i
     */
-  def getNodeValue(): String = js.native
+  def getNodeValue(): String
   
   /** The Document object associated with this node. */
-  def getOwnerDocument(): XDocument = js.native
+  def getOwnerDocument(): XDocument
   
   /** The parent of this node. */
-  def getParentNode(): XNode = js.native
+  def getParentNode(): XNode
   
   /** The namespace prefix of this node, or null if it is unspecified. */
-  def getPrefix(): String = js.native
+  def getPrefix(): String
   
   /** The node immediately preceding this node. */
-  def getPreviousSibling(): XNode = js.native
+  def getPreviousSibling(): XNode
   
   /** Returns whether this node (if it is an element) has any attributes. */
-  def hasAttributes(): Boolean = js.native
+  def hasAttributes(): Boolean
   
   /** Returns whether this node has any children. */
-  def hasChildNodes(): Boolean = js.native
+  def hasChildNodes(): Boolean
   
   /**
     * Inserts the node newChild before the existing child node refChild.
     * @throws DOMException  HIERARCHY_REQUEST_ERR: Raised if this node is of a type that does not allow children of the type of the newChild node, or if the no
     */
-  def insertBefore(newChild: XNode, refChild: XNode): XNode = js.native
+  def insertBefore(newChild: XNode, refChild: XNode): XNode
   
   /** Tests whether the DOM implementation implements a specific feature and that feature is supported by this node. */
-  def isSupported(feature: String, ver: String): Boolean = js.native
+  def isSupported(feature: String, ver: String): Boolean
   
   /**
     * Puts all Text nodes in the full depth of the sub-tree underneath this Node, including attribute nodes, into a "normal" form where only structure
     * (e.g., elements, comments, processing instructions, CDATA sections, and entity references) separates Text nodes, i.e., there are neither adjacent Text
     * nodes nor empty Text nodes.
     */
-  def normalize(): Unit = js.native
+  def normalize(): Unit
   
   /**
     * Removes the child node indicated by oldChild from the list of children, and returns it.
     * @throws DOMException  NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.  NOT_FOUND_ERR: Raised if oldChild is not a child of this node.
     */
-  def removeChild(oldChild: XNode): XNode = js.native
+  def removeChild(oldChild: XNode): XNode
   
   /**
     * Replaces the child node oldChild with newChild in the list of children, and returns the oldChild node.
     * @throws DOMException  HIERARCHY_REQUEST_ERR: Raised if this node is of a type that does not allow children of the type of the newChild node, or if the no
     */
-  def replaceChild(newChild: XNode, oldChild: XNode): XNode = js.native
+  def replaceChild(newChild: XNode, oldChild: XNode): XNode
   
   /**
     * The value of this node, depending on its type; see the table above.
     * @throws DOMException  NO_MODIFICATION_ALLOWED_ERR: Raised when the node is readonly.  DOMSTRING_SIZE_ERR: Raised when it would return more characters tha
     */
-  def setNodeValue(nodeValue: String): Unit = js.native
+  def setNodeValue(nodeValue: String): Unit
   
   /**
     * The namespace prefix of this node, or null if it is unspecified.
     * @throws DOMException  INVALID_CHARACTER_ERR: Raised if the specified prefix contains an illegal character, per the XML 1.0 specification .  NO_MODIFICATI
     */
-  def setPrefix(prefix: String): Unit = js.native
+  def setPrefix(prefix: String): Unit
 }
 object XNode {
   

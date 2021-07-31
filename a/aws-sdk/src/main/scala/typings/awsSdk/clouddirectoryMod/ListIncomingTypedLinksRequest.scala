@@ -2,46 +2,44 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIncomingTypedLinksRequest extends StObject {
   
   /**
     * The consistency level to execute the request at.
     */
-  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.native
+  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the directory where you want to list the typed links.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * Provides range filters for multiple attributes. When providing ranges to typed link selection, any inexact ranges must be specified at the end. Any attributes that do not have a range specified are presumed to match the entire range.
     */
-  var FilterAttributeRanges: js.UndefOr[TypedLinkAttributeRangeList] = js.native
+  var FilterAttributeRanges: js.UndefOr[TypedLinkAttributeRangeList] = js.undefined
   
   /**
     * Filters are interpreted in the order of the attributes on the typed link facet, not the order in which they are supplied to any API calls.
     */
-  var FilterTypedLink: js.UndefOr[TypedLinkSchemaAndFacetName] = js.native
+  var FilterTypedLink: js.UndefOr[TypedLinkSchemaAndFacetName] = js.undefined
   
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Reference that identifies the object whose attributes will be listed.
     */
-  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference = js.native
+  var ObjectReference: typings.awsSdk.clouddirectoryMod.ObjectReference
 }
 object ListIncomingTypedLinksRequest {
   

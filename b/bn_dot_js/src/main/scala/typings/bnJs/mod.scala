@@ -10,14 +10,15 @@ import typings.node.Buffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bn.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BN {
+  class ^ protected ()
+    extends StObject
+       with BN {
     def this(number: String) = this()
     def this(number: js.Array[Double]) = this()
     def this(number: Double) = this()
@@ -42,68 +43,65 @@ object mod {
     def this(number: Uint8Array, base: Double) = this()
     def this(number: Uint8Array, base: hex) = this()
     def this(number: Uint8Array, endian: Endianness) = this()
-    def this(number: String, base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: String, base: Double, endian: Endianness) = this()
+    def this(number: String, base: Unit, endian: Endianness) = this()
     def this(number: String, base: hex, endian: Endianness) = this()
-    def this(number: js.Array[Double], base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: js.Array[Double], base: Double, endian: Endianness) = this()
+    def this(number: js.Array[Double], base: Unit, endian: Endianness) = this()
     def this(number: js.Array[Double], base: hex, endian: Endianness) = this()
-    def this(number: Double, base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: Double, base: Double, endian: Endianness) = this()
+    def this(number: Double, base: Unit, endian: Endianness) = this()
     def this(number: Double, base: hex, endian: Endianness) = this()
-    def this(number: BN, base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: BN, base: Double, endian: Endianness) = this()
+    def this(number: BN, base: Unit, endian: Endianness) = this()
     def this(number: BN, base: hex, endian: Endianness) = this()
-    def this(number: Buffer, base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: Buffer, base: Double, endian: Endianness) = this()
+    def this(number: Buffer, base: Unit, endian: Endianness) = this()
     def this(number: Buffer, base: hex, endian: Endianness) = this()
-    def this(number: Uint8Array, base: js.UndefOr[scala.Nothing], endian: Endianness) = this()
     def this(number: Uint8Array, base: Double, endian: Endianness) = this()
+    def this(number: Uint8Array, base: Unit, endian: Endianness) = this()
     def this(number: Uint8Array, base: hex, endian: Endianness) = this()
   }
+  @JSImport("bn.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @description returns true if the supplied object is a BN.js instance
     */
   /* static member */
-  @JSImport("bn.js", "isBN")
-  @js.native
-  def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = js.native
+  @scala.inline
+  def isBN(b: js.Any): /* is bn.js.bn.js.BN */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBN")(b.asInstanceOf[js.Any]).asInstanceOf[/* is bn.js.bn.js.BN */ Boolean]
   
   /**
     * @description returns the maximum of 2 BN instances.
     */
   /* static member */
-  @JSImport("bn.js", "max")
-  @js.native
-  def max(left: BN, right: BN): BN = js.native
+  @scala.inline
+  def max(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
   
   /**
     * @description returns the minimum of 2 BN instances.
     */
   /* static member */
-  @JSImport("bn.js", "min")
-  @js.native
-  def min(left: BN, right: BN): BN = js.native
+  @scala.inline
+  def min(left: BN, right: BN): BN = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[BN]
   
   /**
     * @description  create a reduction context  with the Montgomery trick.
     */
   /* static member */
-  @JSImport("bn.js", "mont")
-  @js.native
-  def mont(num: BN): ReductionContext = js.native
+  @scala.inline
+  def mont(num: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("mont")(num.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
   
   /**
     * @description  create a reduction context
     */
   /* static member */
-  @JSImport("bn.js", "red")
-  @js.native
-  def red(reductionContext: BN): ReductionContext = js.native
-  @JSImport("bn.js", "red")
-  @js.native
-  def red(reductionContext: IPrimeName): ReductionContext = js.native
+  @scala.inline
+  def red(reductionContext: BN): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
+  @scala.inline
+  def red(reductionContext: IPrimeName): ReductionContext = ^.asInstanceOf[js.Dynamic].applyDynamic("red")(reductionContext.asInstanceOf[js.Any]).asInstanceOf[ReductionContext]
   
   @js.native
   trait BN extends StObject {
@@ -458,7 +456,7 @@ object mod {
       * @description  convert to byte Array, and optionally zero pad to length, throwing if already exceeding
       */
     def toArray(): js.Array[Double] = js.native
-    def toArray(endian: js.UndefOr[scala.Nothing], length: Double): js.Array[Double] = js.native
+    def toArray(endian: Unit, length: Double): js.Array[Double] = js.native
     def toArray(endian: Endianness): js.Array[Double] = js.native
     def toArray(endian: Endianness, length: Double): js.Array[Double] = js.native
     
@@ -468,7 +466,7 @@ object mod {
     def toArrayLike(ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any): Buffer = js.native
     def toArrayLike(
       ArrayType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Buffer */ js.Any,
-      endian: js.UndefOr[scala.Nothing],
+      endian: Unit,
       length: Double
     ): Buffer = js.native
     def toArrayLike(
@@ -480,16 +478,16 @@ object mod {
       endian: Endianness,
       length: Double
     ): Buffer = js.native
-    def toArrayLike(ArrayType: js.Array[_]): js.Array[_] = js.native
-    def toArrayLike(ArrayType: js.Array[_], endian: js.UndefOr[scala.Nothing], length: Double): js.Array[_] = js.native
-    def toArrayLike(ArrayType: js.Array[_], endian: Endianness): js.Array[_] = js.native
-    def toArrayLike(ArrayType: js.Array[_], endian: Endianness, length: Double): js.Array[_] = js.native
+    def toArrayLike(ArrayType: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def toArrayLike(ArrayType: js.Array[js.Any], endian: Unit, length: Double): js.Array[js.Any] = js.native
+    def toArrayLike(ArrayType: js.Array[js.Any], endian: Endianness): js.Array[js.Any] = js.native
+    def toArrayLike(ArrayType: js.Array[js.Any], endian: Endianness, length: Double): js.Array[js.Any] = js.native
     
     /**
       * @description  convert to Node.js Buffer (if available). For compatibility with browserify and similar tools, use this instead: a.toArrayLike(Buffer, endian, length)
       */
     def toBuffer(): Buffer = js.native
-    def toBuffer(endian: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
+    def toBuffer(endian: Unit, length: Double): Buffer = js.native
     def toBuffer(endian: Endianness): Buffer = js.native
     def toBuffer(endian: Endianness, length: Double): Buffer = js.native
     
@@ -508,9 +506,9 @@ object mod {
       */
     def toRed(reductionContext: ReductionContext): RedBN = js.native
     
-    def toString(base: js.UndefOr[scala.Nothing], length: Double): String = js.native
     def toString(base: Double): String = js.native
     def toString(base: Double, length: Double): String = js.native
+    def toString(base: Unit, length: Double): String = js.native
     @JSName("toString")
     def toString_hex(base: hex): String = js.native
     @JSName("toString")
@@ -603,16 +601,15 @@ object mod {
     def p25519: typings.bnJs.bnJsStrings.p25519 = "p25519".asInstanceOf[typings.bnJs.bnJsStrings.p25519]
   }
   
-  @js.native
   trait MPrime extends StObject {
     
-    var k: BN = js.native
+    var k: BN
     
-    var n: Double = js.native
+    var n: Double
     
-    var name: String = js.native
+    var name: String
     
-    var p: BN = js.native
+    var p: BN
   }
   object MPrime {
     
@@ -644,7 +641,9 @@ object mod {
     * operation.
     */
   @js.native
-  trait RedBN extends BN {
+  trait RedBN
+    extends StObject
+       with BN {
     
     /**
       * @description Convert back a number using a reduction context
@@ -717,13 +716,13 @@ object mod {
     def redSub(b: BN): RedBN = js.native
   }
   
-  @js.native
   trait ReductionContext
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var m: Double = js.native
+    var m: Double
     
-    var prime: MPrime = js.native
+    var prime: MPrime
   }
   object ReductionContext {
     

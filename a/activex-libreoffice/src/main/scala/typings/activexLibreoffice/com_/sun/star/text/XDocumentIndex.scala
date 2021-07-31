@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.util.XRefreshable
   * @see com.sun.star.lang.XServiceInfo
   */
-@js.native
-trait XDocumentIndex extends XTextContent {
+trait XDocumentIndex
+  extends StObject
+     with XTextContent {
   
   /** returns the service name that was used to create this document index type. */
-  val ServiceName: String = js.native
+  val ServiceName: String
   
   /** returns the service name that was used to create this document index type. */
-  def getServiceName(): String = js.native
+  def getServiceName(): String
   
   /** initiates an update to the document index. */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object XDocumentIndex {
   

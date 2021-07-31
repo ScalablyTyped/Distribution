@@ -2,10 +2,10 @@ package typings.activexWord.global.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Word.AddIns")
 @js.native
 class AddIns protected ()
-  extends typings.activexWord.Word.AddIns
+  extends StObject
+     with typings.activexWord.Word.AddIns

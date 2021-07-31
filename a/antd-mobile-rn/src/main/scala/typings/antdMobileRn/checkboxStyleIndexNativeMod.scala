@@ -8,7 +8,6 @@ import typings.antdMobileRn.anon.MarginLeftNumber
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxStyleIndexNativeMod {
@@ -58,20 +57,19 @@ object checkboxStyleIndexNativeMod {
     def wrapper_=(x: AlignItemsFlexDirection): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ICheckboxStyle extends StObject {
     
-    var agreeItem: ViewStyle = js.native
+    var agreeItem: ViewStyle
     
-    var agreeItemCheckbox: ViewStyle = js.native
+    var agreeItemCheckbox: ViewStyle
     
-    var checkboxItemCheckbox: ViewStyle = js.native
+    var checkboxItemCheckbox: ViewStyle
     
-    var icon: ViewStyle = js.native
+    var icon: ViewStyle
     
-    var iconRight: ViewStyle = js.native
+    var iconRight: ViewStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object ICheckboxStyle {
     

@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object versionCommandMod {
@@ -21,8 +20,11 @@ object versionCommandMod {
   /* static members */
   object VersionCommand {
     
-    @JSImport("typeorm/commands/VersionCommand", "VersionCommand.executeCommand")
+    @JSImport("typeorm/commands/VersionCommand", "VersionCommand")
     @js.native
-    def executeCommand(command: String): js.Promise[String] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def executeCommand(command: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("executeCommand")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   }
 }

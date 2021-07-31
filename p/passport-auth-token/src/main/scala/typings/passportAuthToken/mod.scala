@@ -7,7 +7,6 @@ import typings.passportAuthToken.passportAuthTokenBooleans.`false`
 import typings.passportAuthToken.passportAuthTokenBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,22 +23,21 @@ object mod {
   trait Strategy
     extends typings.passportStrategy.mod.Strategy
   
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var caseInsensitive: js.UndefOr[Boolean] = js.native
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
-    var headerFields: js.UndefOr[js.Array[String]] = js.native
+    var headerFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[Boolean] = js.native
+    var params: js.UndefOr[Boolean] = js.undefined
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var tokenFields: js.UndefOr[js.Array[String]] = js.native
+    var tokenFields: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StrategyOptions {
     
@@ -102,28 +100,27 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsWithRequest extends StObject {
     
-    var caseInsensitive: js.UndefOr[Boolean] = js.native
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
-    var headerFields: js.UndefOr[js.Array[String]] = js.native
+    var headerFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var params: js.UndefOr[Boolean] = js.native
+    var params: js.UndefOr[Boolean] = js.undefined
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var tokenFields: js.UndefOr[js.Array[String]] = js.native
+    var tokenFields: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -200,10 +197,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object VerifyOptions {
     

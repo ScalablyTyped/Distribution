@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource(s) that are the subject of the event
   */
-@js.native
-trait MessageDefinitionFocus extends BackboneElement {
+trait MessageDefinitionFocus
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'max'.
     */
-  var _max: js.UndefOr[Element] = js.native
+  var _max: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'min'.
     */
-  var _min: js.UndefOr[Element] = js.native
+  var _min: js.UndefOr[Element] = js.undefined
   
   /**
     * Type of resource
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Maximum number of focuses of this type
     */
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum number of focuses of this type
     */
-  var min: js.UndefOr[unsignedInt] = js.native
+  var min: js.UndefOr[unsignedInt] = js.undefined
   
   /**
     * Profile that must be adhered to by focus
     */
-  var profile: js.UndefOr[Reference] = js.native
+  var profile: js.UndefOr[Reference] = js.undefined
 }
 object MessageDefinitionFocus {
   

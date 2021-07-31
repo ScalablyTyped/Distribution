@@ -4,19 +4,19 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MergeStrategy extends IEnum {
+trait MergeStrategy
+  extends StObject
+     with IEnum {
   
-  var Disallowed: MergeStrategySymbol = js.native
+  var Disallowed: MergeStrategySymbol
   
-  var OverwriteChanges: MergeStrategySymbol = js.native
+  var OverwriteChanges: MergeStrategySymbol
   
-  var PreserveChanges: MergeStrategySymbol = js.native
+  var PreserveChanges: MergeStrategySymbol
   
-  var SkipMerge: MergeStrategySymbol = js.native
+  var SkipMerge: MergeStrategySymbol
 }
 object MergeStrategy {
   

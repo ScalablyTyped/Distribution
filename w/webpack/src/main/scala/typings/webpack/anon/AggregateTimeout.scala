@@ -3,31 +3,29 @@ package typings.webpack.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateTimeout extends StObject {
   
   /**
   		 * Delay the rebuilt after the first change. Value is a time in ms.
   		 */
-  var aggregateTimeout: js.UndefOr[Double] = js.native
+  var aggregateTimeout: js.UndefOr[Double] = js.undefined
   
   /**
   		 * Ignore some files from watching
   		 */
-  var ignored: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var ignored: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   		 * Enable polling mode for watching
   		 */
-  var poll: js.UndefOr[Boolean | Double] = js.native
+  var poll: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
   		 * Stop watching when stdin stream has ended
   		 */
-  var stdin: js.UndefOr[Boolean] = js.native
+  var stdin: js.UndefOr[Boolean] = js.undefined
 }
 object AggregateTimeout {
   

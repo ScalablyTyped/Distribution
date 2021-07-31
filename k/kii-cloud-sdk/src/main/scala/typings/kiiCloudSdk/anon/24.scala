@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiServerCodeEntry
 import typings.kiiCloudSdk.KiiCloud.KiiServerCodeExecResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `24`[T] extends StObject {
   
-  def failure(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult, anErrorString: String): js.Any = js.native
+  def failure(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult, anErrorString: String): js.Any
   
-  def success(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult): js.Any = js.native
+  def success(entry: KiiServerCodeEntry, argument: T, execResult: KiiServerCodeExecResult): js.Any
 }
 object `24` {
   
@@ -26,7 +24,7 @@ object `24` {
   }
   
   @scala.inline
-  implicit class `24MutableBuilder`[Self <: `24`[_], T] (val x: Self with `24`[T]) extends AnyVal {
+  implicit class `24MutableBuilder`[Self <: `24`[?], T] (val x: Self & `24`[T]) extends AnyVal {
     
     @scala.inline
     def setFailure(value: (KiiServerCodeEntry, T, KiiServerCodeExecResult, String) => js.Any): Self = StObject.set(x, "failure", js.Any.fromFunction4(value))

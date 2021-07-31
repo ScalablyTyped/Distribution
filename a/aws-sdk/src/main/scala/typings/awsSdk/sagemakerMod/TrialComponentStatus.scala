@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialComponentStatus extends StObject {
   
   /**
     * If the component failed, a message describing why.
     */
-  var Message: js.UndefOr[TrialComponentStatusMessage] = js.native
+  var Message: js.UndefOr[TrialComponentStatusMessage] = js.undefined
   
   /**
     * The status of the trial component.
     */
-  var PrimaryStatus: js.UndefOr[TrialComponentPrimaryStatus] = js.native
+  var PrimaryStatus: js.UndefOr[TrialComponentPrimaryStatus] = js.undefined
 }
 object TrialComponentStatus {
   

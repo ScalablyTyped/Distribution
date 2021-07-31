@@ -2,17 +2,15 @@ package typings.sweValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Id {
     
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sex extends StObject {
     
-    var sex: String = js.native
+    var sex: String
     
-    var ssn: String = js.native
+    var ssn: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Sex {
     

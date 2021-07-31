@@ -2,14 +2,12 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the InlinePictureCollection object, for use in `inlinePictureCollection.set({ ... })`. */
-@js.native
 trait InlinePictureCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[InlinePictureData]] = js.native
+  var items: js.UndefOr[js.Array[InlinePictureData]] = js.undefined
 }
 object InlinePictureCollectionUpdateData {
   

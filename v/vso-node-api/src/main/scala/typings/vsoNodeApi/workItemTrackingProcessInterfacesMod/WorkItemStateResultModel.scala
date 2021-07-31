@@ -2,25 +2,23 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemStateResultModel extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var order: Double = js.native
+  var order: Double
   
-  var stateCategory: String = js.native
+  var stateCategory: String
   
-  var url: String = js.native
+  var url: String
 }
 object WorkItemStateResultModel {
   

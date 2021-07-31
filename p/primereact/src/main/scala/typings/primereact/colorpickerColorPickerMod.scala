@@ -5,7 +5,6 @@ import typings.primereact.tooltipOptionsMod.TooltipOptions
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorpickerColorPickerMod {
@@ -22,36 +21,35 @@ object colorpickerColorPickerMod {
     def this(props: ColorPickerProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ColorPickerProps extends StObject {
     
-    var appendTo: js.UndefOr[js.Any] = js.native
+    var appendTo: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultColor: js.UndefOr[String] = js.native
+    var defaultColor: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputId: js.UndefOr[String] = js.native
+    var inputId: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Any, /* target */ Id, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Any, /* target */ Id, Unit]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabindex: js.UndefOr[String] = js.native
+    var tabindex: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
-    var tooltipOptions: js.UndefOr[TooltipOptions] = js.native
+    var tooltipOptions: js.UndefOr[TooltipOptions] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ColorPickerProps {
     

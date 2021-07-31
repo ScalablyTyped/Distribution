@@ -20,7 +20,6 @@ import typings.vegaTypings.scaleMod.TimeIntervalStep
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleComponentMod {
@@ -43,54 +42,53 @@ object scaleComponentMod {
   type ScaleComponentIndex = Partial[Record[ScaleChannel, ScaleComponent]]
   
   /* Inlined std.Omit<vega-lite.vega-lite/build/src/vega.schema.VgScale, 'domain' | 'domainRaw' | 'reverse'> & {  domains :std.Array<vega-lite.vega-lite/build/src/vega.schema.VgNonUnionDomain>,   selectionExtent :vega-lite.vega-lite/build/src/selection.SelectionExtent | undefined,   reverse :boolean | vega.vega.SignalRef | undefined} */
-  @js.native
   trait ScaleComponentProps extends StObject {
     
-    var align: js.UndefOr[Double | SignalRef] = js.native
+    var align: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var base: js.UndefOr[Double | SignalRef] = js.native
+    var base: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var bins: js.UndefOr[ScaleBins] = js.native
+    var bins: js.UndefOr[ScaleBins] = js.undefined
     
-    var clamp: js.UndefOr[Boolean | SignalRef] = js.native
+    var clamp: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var constant: js.UndefOr[Double | SignalRef] = js.native
+    var constant: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.native
+    var domainImplicit: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var domainMax: js.UndefOr[Double | SignalRef] = js.native
+    var domainMax: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainMid: js.UndefOr[Double | SignalRef] = js.native
+    var domainMid: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domainMin: js.UndefOr[Double | SignalRef] = js.native
+    var domainMin: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var domains: js.Array[VgNonUnionDomain] = js.native
+    var domains: js.Array[VgNonUnionDomain]
     
-    var exponent: js.UndefOr[Double | SignalRef] = js.native
+    var exponent: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+    var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | SignalRef] = js.native
+    var nice: js.UndefOr[Boolean | Double | TimeInterval | TimeIntervalStep | SignalRef] = js.undefined
     
-    var padding: js.UndefOr[Double | SignalRef] = js.native
+    var padding: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var paddingInner: js.UndefOr[Double | SignalRef] = js.native
+    var paddingInner: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var paddingOuter: js.UndefOr[Double | SignalRef] = js.native
+    var paddingOuter: js.UndefOr[Double | SignalRef] = js.undefined
     
-    var range: js.UndefOr[RangeScheme | RangeBand | ScaleData] = js.native
+    var range: js.UndefOr[RangeScheme | RangeBand | ScaleData] = js.undefined
     
-    var reverse: js.UndefOr[Boolean | SignalRef] = js.native
+    var reverse: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var round: js.UndefOr[Boolean | SignalRef] = js.native
+    var round: js.UndefOr[Boolean | SignalRef] = js.undefined
     
-    var selectionExtent: js.UndefOr[SelectionExtent] = js.native
+    var selectionExtent: js.UndefOr[SelectionExtent] = js.undefined
     
-    var `type`: js.UndefOr[typings.vegaTypings.scaleMod.ScaleType] = js.native
+    var `type`: js.UndefOr[typings.vegaTypings.scaleMod.ScaleType] = js.undefined
     
-    var zero: js.UndefOr[Boolean | SignalRef] = js.native
+    var zero: js.UndefOr[Boolean | SignalRef] = js.undefined
   }
   object ScaleComponentProps {
     

@@ -5,33 +5,33 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XRowSet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * uses a row set as datasource.
   * @see XRowSetChangeBroadcaster
   */
-@js.native
-trait XRowSetSupplier extends XInterface {
+trait XRowSetSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * provides access to the data source.
     * @returns the {@link RowSet} object
     */
-  var RowSet: XRowSet = js.native
+  var RowSet: XRowSet
   
   /**
     * provides access to the data source.
     * @returns the {@link RowSet} object
     */
-  def getRowSet(): XRowSet = js.native
+  def getRowSet(): XRowSet
   
   /**
     * sets the data source.
     * @param xDataSource the {@link RowSet} object to set
     */
-  def setRowSet(xDataSource: XRowSet): Unit = js.native
+  def setRowSet(xDataSource: XRowSet): Unit
 }
 object XRowSetSupplier {
   

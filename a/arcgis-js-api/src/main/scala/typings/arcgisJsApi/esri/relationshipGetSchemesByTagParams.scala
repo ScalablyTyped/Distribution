@@ -13,67 +13,67 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipGetSchemesByTagParams extends Object {
+trait relationshipGetSchemesByTagParams
+  extends StObject
+     with Object {
   
   /**
     * The basemap to pair with the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * If you have a non-Esri basemap (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var basemapTheme: js.UndefOr[light | dark] = js.native
+  var basemapTheme: js.UndefOr[light | dark] = js.undefined
   
   /**
     * When provided, only schemes missing all the provided tags will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var excludedTags: js.UndefOr[js.Array[String]] = js.native
+  var excludedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The geometry type of the features to visualize.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch = js.native
+  var geometryType: point | multipoint | polyline | polygon | mesh | multipatch
   
   /**
     * When provided, only schemes containing all the matching tags will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var includedTags: js.UndefOr[js.Array[String]] = js.native
+  var includedTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Determines which set of primary and secondary color schemes to return.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var theme: js.UndefOr[default] = js.native
+  var theme: js.UndefOr[default] = js.undefined
   
   /**
     * The SceneView instance in which the scheme will be used.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[SceneView] = js.native
+  var view: js.UndefOr[SceneView] = js.undefined
   
   /**
     * Indicates if the size units of the scheme will be in meters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-relationship.html#getSchemesByTag)
     */
-  var worldScale: js.UndefOr[Boolean] = js.native
+  var worldScale: js.UndefOr[Boolean] = js.undefined
 }
 object relationshipGetSchemesByTagParams {
   

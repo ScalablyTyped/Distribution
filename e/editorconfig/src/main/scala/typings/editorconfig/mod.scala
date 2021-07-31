@@ -13,49 +13,42 @@ import typings.editorconfig.iniMod.SectionName
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("editorconfig/src", "parse")
+  @JSImport("editorconfig/src", JSImport.Namespace)
   @js.native
-  def parse(_filepath: String): js.Promise[KnownProps] = js.native
-  @JSImport("editorconfig/src", "parse")
-  @js.native
-  def parse(_filepath: String, _options: ParseOptions): js.Promise[KnownProps] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("editorconfig/src", "parseFromFiles")
-  @js.native
-  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]]): js.Promise[KnownProps] = js.native
-  @JSImport("editorconfig/src", "parseFromFiles")
-  @js.native
-  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]], options: ParseOptions): js.Promise[KnownProps] = js.native
+  @scala.inline
+  def parse(_filepath: String): js.Promise[KnownProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[KnownProps]]
+  @scala.inline
+  def parse(_filepath: String, _options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
   
-  @JSImport("editorconfig/src", "parseFromFilesSync")
-  @js.native
-  def parseFromFilesSync(filepath: String, files: js.Array[ECFile]): KnownProps = js.native
-  @JSImport("editorconfig/src", "parseFromFilesSync")
-  @js.native
-  def parseFromFilesSync(filepath: String, files: js.Array[ECFile], options: ParseOptions): KnownProps = js.native
+  @scala.inline
+  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]]): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
+  @scala.inline
+  def parseFromFiles(filepath: String, files: js.Promise[js.Array[ECFile]], options: ParseOptions): js.Promise[KnownProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFiles")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[KnownProps]]
   
-  @JSImport("editorconfig/src", "parseString")
-  @js.native
-  def parseString(data: String): ParseStringResult = js.native
+  @scala.inline
+  def parseFromFilesSync(filepath: String, files: js.Array[ECFile]): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
+  @scala.inline
+  def parseFromFilesSync(filepath: String, files: js.Array[ECFile], options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFromFilesSync")(filepath.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
   
-  @JSImport("editorconfig/src", "parseSync")
-  @js.native
-  def parseSync(_filepath: String): KnownProps = js.native
-  @JSImport("editorconfig/src", "parseSync")
-  @js.native
-  def parseSync(_filepath: String, _options: ParseOptions): KnownProps = js.native
+  @scala.inline
+  def parseString(data: String): ParseStringResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[ParseStringResult]
   
-  @js.native
+  @scala.inline
+  def parseSync(_filepath: String): KnownProps = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any]).asInstanceOf[KnownProps]
+  @scala.inline
+  def parseSync(_filepath: String, _options: ParseOptions): KnownProps = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSync")(_filepath.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[KnownProps]
+  
   trait ECFile extends StObject {
     
-    var contents: String | Buffer = js.native
+    var contents: String | Buffer
     
-    var name: String = js.native
+    var name: String
   }
   object ECFile {
     
@@ -76,12 +69,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FileConfig extends StObject {
     
-    var contents: ParseStringResult = js.native
+    var contents: ParseStringResult
     
-    var name: String = js.native
+    var name: String
   }
   object FileConfig {
     
@@ -105,22 +97,21 @@ object mod {
     }
   }
   
-  @js.native
   trait KnownProps extends StObject {
     
-    var charset: js.UndefOr[String | unset] = js.native
+    var charset: js.UndefOr[String | unset] = js.undefined
     
-    var end_of_line: js.UndefOr[lf | crlf | unset] = js.native
+    var end_of_line: js.UndefOr[lf | crlf | unset] = js.undefined
     
-    var indent_size: js.UndefOr[Double | tab | unset] = js.native
+    var indent_size: js.UndefOr[Double | tab | unset] = js.undefined
     
-    var indent_style: js.UndefOr[tab | space | unset] = js.native
+    var indent_style: js.UndefOr[tab | space | unset] = js.undefined
     
-    var insert_final_newline: js.UndefOr[`true` | `false` | unset] = js.native
+    var insert_final_newline: js.UndefOr[`true` | `false` | unset] = js.undefined
     
-    var tab_width: js.UndefOr[Double | unset] = js.native
+    var tab_width: js.UndefOr[Double | unset] = js.undefined
     
-    var trim_trailing_whitespace: js.UndefOr[`true` | `false` | unset] = js.native
+    var trim_trailing_whitespace: js.UndefOr[`true` | `false` | unset] = js.undefined
   }
   object KnownProps {
     
@@ -177,14 +168,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ParseOptions {
     

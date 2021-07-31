@@ -3,22 +3,22 @@ package typings.awsSdkClientKmsBrowser
 import typings.awsSdkClientKmsBrowser.importKeyMaterialExceptionsUnionMod.ImportKeyMaterialExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesIncorrectKeyMaterialExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IncorrectKeyMaterialExceptionDetails> * / any */ @js.native
-  trait IncorrectKeyMaterialException extends ImportKeyMaterialExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_IncorrectKeyMaterialExceptionDetails> * / any */ trait IncorrectKeyMaterialException
+    extends StObject
+       with ImportKeyMaterialExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.IncorrectKeyMaterialException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.IncorrectKeyMaterialException
   }
   object IncorrectKeyMaterialException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.IncorrectKeyMaterialException): IncorrectKeyMaterialException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): IncorrectKeyMaterialException = {
+      val __obj = js.Dynamic.literal(name = "IncorrectKeyMaterialException")
       __obj.asInstanceOf[IncorrectKeyMaterialException]
     }
     
@@ -30,13 +30,12 @@ object typesIncorrectKeyMaterialExceptionMod {
     }
   }
   
-  @js.native
   trait IncorrectKeyMaterialExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object IncorrectKeyMaterialExceptionDetails {
     

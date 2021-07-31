@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskInfo extends StObject {
   
   /**
     * A Boolean value indicating whether this disk is a system disk (has an operating system loaded on it).
     */
-  var isSystemDisk: js.UndefOr[Boolean] = js.native
+  var isSystemDisk: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The disk name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The disk path.
     */
-  var path: js.UndefOr[NonEmptyString] = js.native
+  var path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The size of the disk in GB (e.g., 32).
     */
-  var sizeInGb: js.UndefOr[integer] = js.native
+  var sizeInGb: js.UndefOr[integer] = js.undefined
 }
 object DiskInfo {
   

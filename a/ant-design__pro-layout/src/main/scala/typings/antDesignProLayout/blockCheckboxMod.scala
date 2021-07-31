@@ -5,7 +5,6 @@ import typings.antDesignProLayout.anon.Key
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockCheckboxMod extends Shortcut {
@@ -14,18 +13,17 @@ object blockCheckboxMod extends Shortcut {
   @js.native
   val default: FC[BlockCheckboxProps] = js.native
   
-  @js.native
   trait BlockCheckboxProps extends StObject {
     
-    var configType: String = js.native
+    var configType: String
     
-    var list: js.UndefOr[js.Array[Key]] = js.native
+    var list: js.UndefOr[js.Array[Key]] = js.undefined
     
-    def onChange(key: String): Unit = js.native
+    def onChange(key: String): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var value: String = js.native
+    var value: String
   }
   object BlockCheckboxProps {
     

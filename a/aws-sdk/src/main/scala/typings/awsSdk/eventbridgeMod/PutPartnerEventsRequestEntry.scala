@@ -2,36 +2,34 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPartnerEventsRequestEntry extends StObject {
   
   /**
     * A valid JSON string. There is no other schema imposed. The JSON string may contain fields and nested subobjects.
     */
-  var Detail: js.UndefOr[String] = js.native
+  var Detail: js.UndefOr[String] = js.undefined
   
   /**
     * A free-form string used to decide what fields to expect in the event detail.
     */
-  var DetailType: js.UndefOr[String] = js.native
+  var DetailType: js.UndefOr[String] = js.undefined
   
   /**
     * AWS resources, identified by Amazon Resource Name (ARN), which the event primarily concerns. Any number, including zero, may be present.
     */
-  var Resources: js.UndefOr[EventResourceList] = js.native
+  var Resources: js.UndefOr[EventResourceList] = js.undefined
   
   /**
     * The event source that is generating the evntry.
     */
-  var Source: js.UndefOr[EventSourceName] = js.native
+  var Source: js.UndefOr[EventSourceName] = js.undefined
   
   /**
     * The date and time of the event.
     */
-  var Time: js.UndefOr[EventTime] = js.native
+  var Time: js.UndefOr[EventTime] = js.undefined
 }
 object PutPartnerEventsRequestEntry {
   

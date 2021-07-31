@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApproximateReportedProgress extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ApproximateReportedProgress extends StObject {
     * the value should be 29 or 2 respectively. The sum of remaining_parallelism and consumed_parallelism should equal the total amount of parallelism in this work item. If specified,
     * must be finite.
     */
-  var consumedParallelism: js.UndefOr[ReportedParallelism] = js.native
+  var consumedParallelism: js.UndefOr[ReportedParallelism] = js.undefined
   
   /** Completion as fraction of the input consumed, from 0.0 (beginning, nothing consumed), to 1.0 (end of the input, entire input consumed). */
-  var fractionConsumed: js.UndefOr[Double] = js.native
+  var fractionConsumed: js.UndefOr[Double] = js.undefined
   
   /** A Position within the work to represent a progress. */
-  var position: js.UndefOr[Position] = js.native
+  var position: js.UndefOr[Position] = js.undefined
   
   /**
     * Total amount of parallelism in the input of this task that remains, (i.e. can be delegated to this task and any new tasks via dynamic splitting). Always at least 1 for non-finished
@@ -31,7 +29,7 @@ trait ApproximateReportedProgress extends StObject {
     * the last block in a block-compressed file, or reading or processing the last record in a perfectly splittable input, this value should be 1, because apart from the current task, no
     * additional remainder can be split off.
     */
-  var remainingParallelism: js.UndefOr[ReportedParallelism] = js.native
+  var remainingParallelism: js.UndefOr[ReportedParallelism] = js.undefined
 }
 object ApproximateReportedProgress {
   

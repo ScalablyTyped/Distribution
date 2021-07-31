@@ -30,7 +30,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,18 +40,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object mod {
   
   /* tslint:disable:no-unnecessary-generics unified-signatures */
-  @JSImport("bull", JSImport.Namespace)
-  @js.native
-  def apply[T](queueName: String): Queue[T] = js.native
-  @JSImport("bull", JSImport.Namespace)
-  @js.native
-  def apply[T](queueName: String, opts: QueueOptions): Queue[T] = js.native
-  @JSImport("bull", JSImport.Namespace)
-  @js.native
-  def apply[T](queueName: String, url: String): Queue[T] = js.native
-  @JSImport("bull", JSImport.Namespace)
-  @js.native
-  def apply[T](queueName: String, url: String, opts: QueueOptions): Queue[T] = js.native
+  @scala.inline
+  def apply[T](queueName: String): Queue[T] = ^.asInstanceOf[js.Dynamic].apply(queueName.asInstanceOf[js.Any]).asInstanceOf[Queue[T]]
+  @scala.inline
+  def apply[T](queueName: String, opts: QueueOptions): Queue[T] = (^.asInstanceOf[js.Dynamic].apply(queueName.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue[T]]
+  @scala.inline
+  def apply[T](queueName: String, url: String): Queue[T] = (^.asInstanceOf[js.Dynamic].apply(queueName.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Queue[T]]
+  @scala.inline
+  def apply[T](queueName: String, url: String, opts: QueueOptions): Queue[T] = (^.asInstanceOf[js.Dynamic].apply(queueName.asInstanceOf[js.Any], url.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue[T]]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("bull", JSImport.Namespace)
@@ -63,10 +58,12 @@ object mod {
     def this(queueName: String, url: String) = this()
     def this(queueName: String, url: String, opts: QueueOptions) = this()
   }
+  @JSImport("bull", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   type ActiveEventCallback[T] = js.Function2[/* job */ Job[T], /* jobPromise */ js.UndefOr[JobPromise], Unit]
   
-  @js.native
   trait AdvancedSettings extends StObject {
     
     /**
@@ -74,43 +71,43 @@ object mod {
       */
     var backoffStrategies: js.UndefOr[
         StringDictionary[js.Function2[/* attemptsMade */ Double, /* err */ Error, Double]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A timeout for when the queue is in `drained` state (empty waiting for jobs).
       * It is used when calling `queue.getNextJob()`, which will pass it to `.brpoplpush` on the Redis client.
       */
-    var drainDelay: js.UndefOr[Double] = js.native
+    var drainDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Poll interval for delayed jobs and added jobs
       */
-    var guardInterval: js.UndefOr[Double] = js.native
+    var guardInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * Key expiration time for job locks
       */
-    var lockDuration: js.UndefOr[Double] = js.native
+    var lockDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Interval in milliseconds on which to acquire the job lock.
       */
-    var lockRenewTime: js.UndefOr[Double] = js.native
+    var lockRenewTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Max amount of times a stalled job will be re-processed
       */
-    var maxStalledCount: js.UndefOr[Double] = js.native
+    var maxStalledCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Delay before processing next job in case of internal error
       */
-    var retryProcessDelay: js.UndefOr[Double] = js.native
+    var retryProcessDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * How often check for stalled jobs (use 0 for never checking)
       */
-    var stalledInterval: js.UndefOr[Double] = js.native
+    var stalledInterval: js.UndefOr[Double] = js.undefined
   }
   object AdvancedSettings {
     
@@ -173,18 +170,17 @@ object mod {
     }
   }
   
-  @js.native
   trait BackoffOptions extends StObject {
     
     /**
       * Backoff delay, in milliseconds
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Backoff type, which can be either `fixed` or `exponential`
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object BackoffOptions {
     
@@ -213,18 +209,19 @@ object mod {
   
   type CompletedEventCallback[T] = js.Function2[/* job */ Job[T], /* result */ js.Any, Unit]
   
-  @js.native
-  trait CronRepeatOptions extends RepeatOptions {
+  trait CronRepeatOptions
+    extends StObject
+       with RepeatOptions {
     
     /**
       * Cron pattern specifying when the job should execute
       */
-    var cron: String = js.native
+    var cron: String
     
     /**
       * Start date when the repeat job should start repeating (only with cron).
       */
-    var startDate: js.UndefOr[Date | String | Double] = js.native
+    var startDate: js.UndefOr[Date | String | Double] = js.undefined
   }
   object CronRepeatOptions {
     
@@ -254,13 +251,14 @@ object mod {
   
   type EventCallback = js.Function0[Unit]
   
-  @js.native
-  trait EveryRepeatOptions extends RepeatOptions {
+  trait EveryRepeatOptions
+    extends StObject
+       with RepeatOptions {
     
     /**
       * Repeat every millis (cron setting cannot be used together with this setting.)
       */
-    var every: Double = js.native
+    var every: Double
   }
   object EveryRepeatOptions {
     
@@ -305,7 +303,7 @@ object mod {
       * TODO: Add a watchdog to check if the job has finished periodically.
       * since pubsub does not give any guarantees.
       */
-    def finished(): js.Promise[_] = js.native
+    def finished(): js.Promise[js.Any] = js.native
     
     /**
       * When this job was completed (unix milliseconds)
@@ -367,27 +365,27 @@ object mod {
       *
       * @param row String with log data to be logged.
       */
-    def log(row: String): js.Promise[_] = js.native
+    def log(row: String): js.Promise[js.Any] = js.native
     
     /**
       * Moves a job to the `completed` queue. Pulls a job from 'waiting' to 'active'
       * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
       */
-    def moveToCompleted(): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: js.UndefOr[scala.Nothing], notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: js.UndefOr[scala.Nothing], ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: String): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: String, ignoreLock: js.UndefOr[scala.Nothing], notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: String, ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToCompleted(returnValue: String, ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+    def moveToCompleted(): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: String): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: String, ignoreLock: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: String, ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: String, ignoreLock: Unit, notFetch: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: Unit, ignoreLock: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: Unit, ignoreLock: Boolean, notFetch: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToCompleted(returnValue: Unit, ignoreLock: Unit, notFetch: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
     
     /**
       * Moves a job to the `failed` queue. Pulls a job from 'waiting' to 'active'
       * and returns a tuple containing the next jobs data and id. If no job is in the `waiting` queue, returns null.
       */
-    def moveToFailed(errorInfo: Message): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
-    def moveToFailed(errorInfo: Message, ignoreLock: Boolean): js.Promise[(js.Tuple2[_, JobId]) | Null] = js.native
+    def moveToFailed(errorInfo: Message): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
+    def moveToFailed(errorInfo: Message, ignoreLock: Boolean): js.Promise[(js.Tuple2[js.Any, JobId]) | Null] = js.native
     
     /**
       * The named processor name
@@ -465,18 +463,17 @@ object mod {
     def update(data: T): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait JobCounts extends StObject {
     
-    var active: Double = js.native
+    var active: Double
     
-    var completed: Double = js.native
+    var completed: Double
     
-    var delayed: Double = js.native
+    var delayed: Double
     
-    var failed: Double = js.native
+    var failed: Double
     
-    var waiting: Double = js.native
+    var waiting: Double
   }
   object JobCounts {
     
@@ -508,24 +505,23 @@ object mod {
   
   type JobId = Double | String
   
-  @js.native
   trait JobInformation extends StObject {
     
-    var cron: String = js.native
+    var cron: String
     
-    var endDate: js.UndefOr[Double] = js.native
+    var endDate: js.UndefOr[Double] = js.undefined
     
-    var every: Double = js.native
+    var every: Double
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var name: String = js.native
+    var name: String
     
-    var next: Double = js.native
+    var next: Double
     
-    var tz: js.UndefOr[String] = js.native
+    var tz: js.UndefOr[String] = js.undefined
   }
   object JobInformation {
     
@@ -573,24 +569,23 @@ object mod {
     }
   }
   
-  @js.native
   trait JobOptions extends StObject {
     
     /**
       * The total number of attempts to try the job until it completes
       */
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
     
     /**
       * Backoff setting for automatic retries if the job fails
       */
-    var backoff: js.UndefOr[Double | BackoffOptions] = js.native
+    var backoff: js.UndefOr[Double | BackoffOptions] = js.undefined
     
     /**
       * An amount of miliseconds to wait until this job can be processed.
       * Note that for accurate delays, both server and clients should have their clocks synchronized. [optional]
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Override the job ID - by default, the job ID is a unique
@@ -599,53 +594,53 @@ object mod {
       * jobId is unique. If you attempt to add a job with an id that
       * already exists, it will not be added.
       */
-    var jobId: js.UndefOr[JobId] = js.native
+    var jobId: js.UndefOr[JobId] = js.undefined
     
     /**
       * A boolean which, if true, adds the job to the right
       * of the queue instead of the left (default false)
       */
-    var lifo: js.UndefOr[Boolean] = js.native
+    var lifo: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents JSON data from being parsed.
       */
-    var preventParsingData: js.UndefOr[Boolean] = js.native
+    var preventParsingData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional priority value. ranges from 1 (highest priority) to MAX_INT  (lowest priority).
       * Note that using priorities has a slight impact on performance, so do not use it if not required
       */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /**
       * A boolean which, if true, removes the job when it successfully completes.
       * When a number, it specifies the amount of jobs to keep.
       * Default behavior is to keep the job in the failed set.
       */
-    var removeOnComplete: js.UndefOr[Boolean | Double] = js.native
+    var removeOnComplete: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * A boolean which, if true, removes the job when it fails after all attempts.
       * When a number, it specifies the amount of jobs to keep.
       * Default behavior is to keep the job in the completed set.
       */
-    var removeOnFail: js.UndefOr[Boolean | Double] = js.native
+    var removeOnFail: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Repeat job according to a cron specification
       */
-    var repeat: js.UndefOr[CronRepeatOptions | EveryRepeatOptions] = js.native
+    var repeat: js.UndefOr[CronRepeatOptions | EveryRepeatOptions] = js.undefined
     
     /**
       * Limits the amount of stack trace lines that will be recorded in the stacktrace.
       */
-    var stackTraceLimit: js.UndefOr[Double] = js.native
+    var stackTraceLimit: js.UndefOr[Double] = js.undefined
     
     /**
       *  The number of milliseconds after which the job should be fail with a timeout error
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object JobOptions {
     
@@ -732,13 +727,12 @@ object mod {
     }
   }
   
-  @js.native
   trait JobPromise extends StObject {
     
     /**
       * Abort this job
       */
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object JobPromise {
     
@@ -858,7 +852,7 @@ object mod {
       * @param limit Maximum amount of jobs to clean per call. If not provided will clean all matching jobs.
       */
     def clean(grace: Double): js.Promise[js.Array[Job[T]]] = js.native
-    def clean(grace: Double, status: js.UndefOr[scala.Nothing], limit: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def clean(grace: Double, status: Unit, limit: Double): js.Promise[js.Array[Job[T]]] = js.native
     def clean(grace: Double, status: JobStatusClean): js.Promise[js.Array[Job[T]]] = js.native
     def clean(grace: Double, status: JobStatusClean, limit: Double): js.Promise[js.Array[Job[T]]] = js.native
     
@@ -902,9 +896,9 @@ object mod {
       * Returns a promise that will return an array with the active jobs between start and end.
       */
     def getActive(): js.Promise[js.Array[Job[T]]] = js.native
-    def getActive(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getActive(start: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getActive(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getActive(start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of active jobs.
@@ -915,9 +909,9 @@ object mod {
       * Returns a promise that will return an array with the completed jobs between start and end.
       */
     def getCompleted(): js.Promise[js.Array[Job[T]]] = js.native
-    def getCompleted(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getCompleted(start: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getCompleted(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getCompleted(start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of completed jobs.
@@ -928,9 +922,9 @@ object mod {
       * Returns a promise that will return an array with the delayed jobs between start and end.
       */
     def getDelayed(): js.Promise[js.Array[Job[T]]] = js.native
-    def getDelayed(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getDelayed(start: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getDelayed(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getDelayed(start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of delayed jobs.
@@ -941,9 +935,9 @@ object mod {
       * Returns a promise that will return an array with the failed jobs between start and end.
       */
     def getFailed(): js.Promise[js.Array[Job[T]]] = js.native
-    def getFailed(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getFailed(start: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getFailed(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getFailed(start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of failed jobs.
@@ -972,27 +966,22 @@ object mod {
       * value is the total amount of logs, useful for implementing pagination.
       */
     def getJobLogs(jobId: JobId): js.Promise[Count] = js.native
-    def getJobLogs(jobId: JobId, start: js.UndefOr[scala.Nothing], end: Double): js.Promise[Count] = js.native
     def getJobLogs(jobId: JobId, start: Double): js.Promise[Count] = js.native
     def getJobLogs(jobId: JobId, start: Double, end: Double): js.Promise[Count] = js.native
+    def getJobLogs(jobId: JobId, start: Unit, end: Double): js.Promise[Count] = js.native
     
     /**
       * Returns a promise that will return an array of job instances of the given job statuses.
       * Optional parameters for range and ordering are provided.
       */
     def getJobs(types: js.Array[JobStatus]): js.Promise[js.Array[Job[T]]] = js.native
-    def getJobs(
-      types: js.Array[JobStatus],
-      start: js.UndefOr[scala.Nothing],
-      end: js.UndefOr[scala.Nothing],
-      asc: Boolean
-    ): js.Promise[js.Array[Job[T]]] = js.native
-    def getJobs(types: js.Array[JobStatus], start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
-    def getJobs(types: js.Array[JobStatus], start: js.UndefOr[scala.Nothing], end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
     def getJobs(types: js.Array[JobStatus], start: Double): js.Promise[js.Array[Job[T]]] = js.native
-    def getJobs(types: js.Array[JobStatus], start: Double, end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
     def getJobs(types: js.Array[JobStatus], start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getJobs(types: js.Array[JobStatus], start: Double, end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
+    def getJobs(types: js.Array[JobStatus], start: Double, end: Unit, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
+    def getJobs(types: js.Array[JobStatus], start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getJobs(types: js.Array[JobStatus], start: Unit, end: Double, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
+    def getJobs(types: js.Array[JobStatus], start: Unit, end: Unit, asc: Boolean): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of paused jobs.
@@ -1009,21 +998,21 @@ object mod {
       * index to limit the number of results. Start defaults to 0, end to -1 and asc to false.
       */
     def getRepeatableJobs(): js.Promise[js.Array[JobInformation]] = js.native
-    def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
-    def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[JobInformation]] = js.native
-    def getRepeatableJobs(start: js.UndefOr[scala.Nothing], end: Double, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
     def getRepeatableJobs(start: Double): js.Promise[js.Array[JobInformation]] = js.native
-    def getRepeatableJobs(start: Double, end: js.UndefOr[scala.Nothing], asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
     def getRepeatableJobs(start: Double, end: Double): js.Promise[js.Array[JobInformation]] = js.native
     def getRepeatableJobs(start: Double, end: Double, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
+    def getRepeatableJobs(start: Double, end: Unit, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
+    def getRepeatableJobs(start: Unit, end: Double): js.Promise[js.Array[JobInformation]] = js.native
+    def getRepeatableJobs(start: Unit, end: Double, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
+    def getRepeatableJobs(start: Unit, end: Unit, asc: Boolean): js.Promise[js.Array[JobInformation]] = js.native
     
     /**
       * Returns a promise that will return an array with the waiting jobs between start and end.
       */
     def getWaiting(): js.Promise[js.Array[Job[T]]] = js.native
-    def getWaiting(start: js.UndefOr[scala.Nothing], end: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getWaiting(start: Double): js.Promise[js.Array[Job[T]]] = js.native
     def getWaiting(start: Double, end: Double): js.Promise[js.Array[Job[T]]] = js.native
+    def getWaiting(start: Unit, end: Double): js.Promise[js.Array[Job[T]]] = js.native
     
     /**
       * Returns a promise that resolves with the quantity of waiting jobs.
@@ -1144,9 +1133,9 @@ object mod {
       * Pausing a queue that is already paused does nothing.
       */
     def pause(): js.Promise[Unit] = js.native
-    def pause(isLocal: js.UndefOr[scala.Nothing], doNotWaitActive: Boolean): js.Promise[Unit] = js.native
     def pause(isLocal: Boolean): js.Promise[Unit] = js.native
     def pause(isLocal: Boolean, doNotWaitActive: Boolean): js.Promise[Unit] = js.native
+    def pause(isLocal: Unit, doNotWaitActive: Boolean): js.Promise[Unit] = js.native
     
     def process(callback: String): js.Promise[Unit] = js.native
     /* tslint:disable:unified-signatures */
@@ -1249,12 +1238,12 @@ object mod {
       *
       * name: The name of the to be removed job
       */
-    def removeRepeatable(name: String, repeat: (CronRepeatOptions | EveryRepeatOptions) with typings.bull.anon.JobId): js.Promise[Unit] = js.native
+    def removeRepeatable(name: String, repeat: (CronRepeatOptions | EveryRepeatOptions) & typings.bull.anon.JobId): js.Promise[Unit] = js.native
     /**
       * Removes a given repeatable job. The RepeatOptions and JobId needs to be the same as the ones
       * used for the job when it was added.
       */
-    def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) with typings.bull.anon.JobId): js.Promise[Unit] = js.native
+    def removeRepeatable(repeat: (CronRepeatOptions | EveryRepeatOptions) & typings.bull.anon.JobId): js.Promise[Unit] = js.native
     
     /**
       * Removes a given repeatable job by key.
@@ -1277,7 +1266,7 @@ object mod {
     /**
       * Set clientName to Redis.client
       */
-    def setWorkerName(): js.Promise[_] = js.native
+    def setWorkerName(): js.Promise[js.Any] = js.native
     
     /**
       * Returns the queue specific key.
@@ -1290,7 +1279,6 @@ object mod {
     def whenCurrentJobsFinished(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait QueueOptions extends StObject {
     
     /**
@@ -1303,23 +1291,23 @@ object mod {
           /* redisOpts */ js.UndefOr[RedisOptions], 
           Redis | Cluster
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var defaultJobOptions: js.UndefOr[JobOptions] = js.native
+    var defaultJobOptions: js.UndefOr[JobOptions] = js.undefined
     
-    var limiter: js.UndefOr[RateLimiter] = js.native
+    var limiter: js.UndefOr[RateLimiter] = js.undefined
     
     /**
       * Prefix to use for all redis keys
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Options passed directly to the `ioredis` constructor
       */
-    var redis: js.UndefOr[RedisOptions | String] = js.native
+    var redis: js.UndefOr[RedisOptions | String] = js.undefined
     
-    var settings: js.UndefOr[AdvancedSettings] = js.native
+    var settings: js.UndefOr[AdvancedSettings] = js.undefined
   }
   object QueueOptions {
     
@@ -1372,20 +1360,19 @@ object mod {
     }
   }
   
-  @js.native
   trait RateLimiter extends StObject {
     
     /** When jobs get rate limited, they stay in the waiting queue and are not moved to the delayed queue */
-    var bounceBack: js.UndefOr[Boolean] = js.native
+    var bounceBack: js.UndefOr[Boolean] = js.undefined
     
     /** Per duration in milliseconds */
-    var duration: Double = js.native
+    var duration: Double
     
     /** Groups jobs with the specified key from the data object passed to the Queue#add ex. "network.handle" */
-    var groupKey: js.UndefOr[String] = js.native
+    var groupKey: js.UndefOr[String] = js.undefined
     
     /** Max numbers of jobs processed */
-    var max: Double = js.native
+    var max: Double
   }
   object RateLimiter {
     
@@ -1420,23 +1407,22 @@ object mod {
   
   type RemovedEventCallback[T] = js.Function1[/* job */ Job[T], Unit]
   
-  @js.native
   trait RepeatOptions extends StObject {
     
     /**
       * End date when the repeat job should stop repeating
       */
-    var endDate: js.UndefOr[Date | String | Double] = js.native
+    var endDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * Number of times the job should repeat at max.
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * Timezone
       */
-    var tz: js.UndefOr[String] = js.native
+    var tz: js.UndefOr[String] = js.undefined
   }
   object RepeatOptions {
     

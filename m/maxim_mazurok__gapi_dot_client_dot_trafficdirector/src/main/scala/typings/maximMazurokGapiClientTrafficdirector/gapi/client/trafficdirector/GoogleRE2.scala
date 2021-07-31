@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleRE2 extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleRE2 extends StObject {
     * value will fail to compile. In this case, the configured max program size can be increased or the regex can be simplified. If not specified, the default is 100. This field is
     * deprecated; regexp validation should be performed on the management server instead of being done by each individual client.
     */
-  var maxProgramSize: js.UndefOr[Double] = js.native
+  var maxProgramSize: js.UndefOr[Double] = js.undefined
 }
 object GoogleRE2 {
   

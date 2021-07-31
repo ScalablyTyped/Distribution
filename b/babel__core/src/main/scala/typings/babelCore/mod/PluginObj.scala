@@ -3,23 +3,21 @@ package typings.babelCore.mod
 import typings.babelTraverse.mod.Visitor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginObj[S] extends StObject {
   
-  var inherits: js.UndefOr[js.Any] = js.native
+  var inherits: js.UndefOr[js.Any] = js.undefined
   
-  var manipulateOptions: js.UndefOr[js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, Unit]] = js.native
+  var manipulateOptions: js.UndefOr[js.Function2[/* opts */ js.Any, /* parserOpts */ js.Any, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var post: js.UndefOr[js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]] = js.native
+  var post: js.UndefOr[js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]] = js.undefined
   
-  var pre: js.UndefOr[js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]] = js.native
+  var pre: js.UndefOr[js.ThisFunction1[/* this */ S, /* file */ BabelFile, Unit]] = js.undefined
   
-  var visitor: Visitor[S] = js.native
+  var visitor: Visitor[S]
 }
 object PluginObj {
   
@@ -30,7 +28,7 @@ object PluginObj {
   }
   
   @scala.inline
-  implicit class PluginObjMutableBuilder[Self <: PluginObj[_], S] (val x: Self with PluginObj[S]) extends AnyVal {
+  implicit class PluginObjMutableBuilder[Self <: PluginObj[?], S] (val x: Self & PluginObj[S]) extends AnyVal {
     
     @scala.inline
     def setInherits(value: js.Any): Self = StObject.set(x, "inherits", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import typings.std.AudioBuffer
 import typings.std.HTMLAudioElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,23 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param resource - If the Web Audio API is supported, pass an AudioBuffer object, otherwise
   an Audio object.
   */
-@js.native
 trait Sound extends StObject {
   
   /**
     * If the Web Audio API is not supported this contains the audio data.
     */
-  var audio: HTMLAudioElement = js.native
+  var audio: HTMLAudioElement
   
   /**
     * If the Web Audio API is supported this contains the audio data.
     */
-  var buffer: AudioBuffer = js.native
+  var buffer: AudioBuffer
   
   /**
     * Returns the duration of the sound. If the sound is not loaded it returns 0.
     */
-  var duration: Double = js.native
+  var duration: Double
 }
 object Sound {
   

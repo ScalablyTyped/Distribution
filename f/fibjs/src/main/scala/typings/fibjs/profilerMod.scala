@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 使用方法：,```JavaScript,var profiler = require('profiler');,```
   */
 object profilerMod {
+  
+  @JSImport("profiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("profiler", "Edge_ContextVariable")
   @js.native
@@ -96,32 +99,24 @@ object profilerMod {
   @js.native
   val NodeSynthetic: /* 9 */ Double = js.native
   
-  @JSImport("profiler", "diff")
-  @js.native
-  def diff(test: js.Function): js.Object = js.native
+  @scala.inline
+  def diff(test: js.Function): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(test.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("profiler", "loadSnapshot")
-  @js.native
-  def loadSnapshot(fname: String): ClassHeapSnapshot = js.native
+  @scala.inline
+  def loadSnapshot(fname: String): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("loadSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassHeapSnapshot]
   
-  @JSImport("profiler", "saveSnapshot")
-  @js.native
-  def saveSnapshot(fname: String): Unit = js.native
+  @scala.inline
+  def saveSnapshot(fname: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveSnapshot")(fname.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("profiler", "start")
-  @js.native
-  def start(fname: String): ClassTimer = js.native
-  @JSImport("profiler", "start")
-  @js.native
-  def start(fname: String, time: js.UndefOr[scala.Nothing], interval: Double): ClassTimer = js.native
-  @JSImport("profiler", "start")
-  @js.native
-  def start(fname: String, time: Double): ClassTimer = js.native
-  @JSImport("profiler", "start")
-  @js.native
-  def start(fname: String, time: Double, interval: Double): ClassTimer = js.native
+  @scala.inline
+  def start(fname: String): ClassTimer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any]).asInstanceOf[ClassTimer]
+  @scala.inline
+  def start(fname: String, time: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  @scala.inline
+  def start(fname: String, time: Double, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
+  @scala.inline
+  def start(fname: String, time: Unit, interval: Double): ClassTimer = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(fname.asInstanceOf[js.Any], time.asInstanceOf[js.Any], interval.asInstanceOf[js.Any])).asInstanceOf[ClassTimer]
   
-  @JSImport("profiler", "takeSnapshot")
-  @js.native
-  def takeSnapshot(): ClassHeapSnapshot = js.native
+  @scala.inline
+  def takeSnapshot(): ClassHeapSnapshot = ^.asInstanceOf[js.Dynamic].applyDynamic("takeSnapshot")().asInstanceOf[ClassHeapSnapshot]
 }

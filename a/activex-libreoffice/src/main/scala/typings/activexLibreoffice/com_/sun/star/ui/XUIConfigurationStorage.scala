@@ -5,27 +5,27 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * supplies functions to change or get information about the storage of a user interface configuration manager.
   * @since OOo 2.0
   */
-@js.native
-trait XUIConfigurationStorage extends XInterface {
+trait XUIConfigurationStorage
+  extends StObject
+     with XInterface {
   
   /**
     * checks if an instance has already a storage to load/store its data.
     * @returns `TRUE` if the instance has a storage otherwise `FALSE` .
     */
-  def hasStorage(): Boolean = js.native
+  def hasStorage(): Boolean
   
   /**
     * connects a storage to the user interface configuration manager which is used on subsequent calls of load() and store().
     * @param Storage all configuration data is loaded/stored from/into this storage. If the storage is in read/write mode load() and store() can be used other
     */
-  def setStorage(Storage: XStorage): Unit = js.native
+  def setStorage(Storage: XStorage): Unit
 }
 object XUIConfigurationStorage {
   

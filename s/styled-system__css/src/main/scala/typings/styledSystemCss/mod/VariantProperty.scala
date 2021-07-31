@@ -2,11 +2,11 @@ package typings.styledSystemCss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariantProperty extends _SystemStyleObject {
+trait VariantProperty
+  extends StObject
+     with _SystemStyleObject {
   
   /**
     * **`Variants`** can be useful for applying complex styles to a component based on a single prop.
@@ -29,7 +29,7 @@ trait VariantProperty extends _SystemStyleObject {
     *
     * @see https://styled-system.com/variants
     */
-  var variant: String = js.native
+  var variant: String
 }
 object VariantProperty {
   

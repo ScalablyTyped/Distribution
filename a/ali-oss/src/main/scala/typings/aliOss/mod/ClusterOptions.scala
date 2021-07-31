@@ -2,15 +2,13 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOptions extends StObject {
   
-  var clusters: js.Array[ClusterType] = js.native
+  var clusters: js.Array[ClusterType]
   
-  var schedule: js.UndefOr[String] = js.native
+  var schedule: js.UndefOr[String] = js.undefined
 }
 object ClusterOptions {
   

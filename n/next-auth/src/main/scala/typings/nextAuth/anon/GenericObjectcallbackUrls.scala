@@ -3,15 +3,14 @@ package typings.nextAuth.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined next-auth.next-auth/_utils.GenericObject & {  callbackUrl :string | undefined} */
-@js.native
 trait GenericObjectcallbackUrls
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var callbackUrl: js.UndefOr[String] = js.native
+  var callbackUrl: js.UndefOr[String] = js.undefined
 }
 object GenericObjectcallbackUrls {
   

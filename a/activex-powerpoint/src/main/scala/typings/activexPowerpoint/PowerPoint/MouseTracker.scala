@@ -2,18 +2,16 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseTracker extends StObject {
   
-  def EndTrack(X: Double, Y: Double): Unit = js.native
+  def EndTrack(X: Double, Y: Double): Unit
   
-  def OnTrack(X: Double, Y: Double): Unit = js.native
+  def OnTrack(X: Double, Y: Double): Unit
   
   @JSName("PowerPoint.MouseTracker_typekey")
-  var PowerPointDotMouseTracker_typekey: MouseTracker = js.native
+  var PowerPointDotMouseTracker_typekey: MouseTracker
 }
 object MouseTracker {
   

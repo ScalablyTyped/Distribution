@@ -8,7 +8,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,7 +28,7 @@ trait SES extends Service {
   ): Request[CloneReceiptRuleSetResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_SES: ConfigBase with ClientConfiguration = js.native
+  var config_SES: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a configuration set. Configuration sets enable you to publish email sending events. For information about using configuration sets, see the Amazon SES Developer Guide. You can execute this operation no more than once per second.

@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInvitationConfigurationResponse extends StObject {
   
   /**
     * The email ID of the organization or individual contact that the enrolled user can use. 
     */
-  var ContactEmail: js.UndefOr[Email] = js.native
+  var ContactEmail: js.UndefOr[Email] = js.undefined
   
   /**
     * The name of the organization sending the enrollment invite to a user.
     */
-  var OrganizationName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.OrganizationName] = js.native
+  var OrganizationName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.OrganizationName] = js.undefined
   
   /**
     * The list of private skill IDs that you want to recommend to the user to enable in the invitation.
     */
-  var PrivateSkillIds: js.UndefOr[ShortSkillIdList] = js.native
+  var PrivateSkillIds: js.UndefOr[ShortSkillIdList] = js.undefined
 }
 object GetInvitationConfigurationResponse {
   

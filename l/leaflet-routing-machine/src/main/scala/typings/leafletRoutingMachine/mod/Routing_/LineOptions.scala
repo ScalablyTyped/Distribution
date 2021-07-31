@@ -3,21 +3,19 @@ package typings.leafletRoutingMachine.mod.Routing_
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOptions extends StObject {
   
-  var addWaypoints: js.UndefOr[Boolean] = js.native
+  var addWaypoints: js.UndefOr[Boolean] = js.undefined
   
-  var extendToWaypoints: Boolean = js.native
+  var extendToWaypoints: Boolean
   
-  var missingRouteStyles: js.UndefOr[js.Array[PathOptions]] = js.native
+  var missingRouteStyles: js.UndefOr[js.Array[PathOptions]] = js.undefined
   
-  var missingRouteTolerance: Double = js.native
+  var missingRouteTolerance: Double
   
-  var styles: js.UndefOr[js.Array[PathOptions]] = js.native
+  var styles: js.UndefOr[js.Array[PathOptions]] = js.undefined
 }
 object LineOptions {
   

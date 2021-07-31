@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudshell/v1alpha1", "cloudshell_v1alpha1.Resource$Users$Environments")
@@ -32,7 +31,7 @@ class ResourceUsersEnvironments protected () extends StObject {
     */
   def authorize(): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def authorize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def authorize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(params: ParamsResourceUsersEnvironmentsAuthorize): GaxiosPromise[SchemaEmpty] = js.native
   def authorize(params: ParamsResourceUsersEnvironmentsAuthorize, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def authorize(
@@ -64,7 +63,7 @@ class ResourceUsersEnvironments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaEnvironment] = js.native
   def get(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def get(params: ParamsResourceUsersEnvironmentsGet): GaxiosPromise[SchemaEnvironment] = js.native
   def get(params: ParamsResourceUsersEnvironmentsGet, callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
   def get(
@@ -95,7 +94,7 @@ class ResourceUsersEnvironments protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(params: ParamsResourceUsersEnvironmentsPatch): GaxiosPromise[SchemaEnvironment] = js.native
   def patch(params: ParamsResourceUsersEnvironmentsPatch, callback: BodyResponseCallback[SchemaEnvironment]): Unit = js.native
   def patch(
@@ -132,7 +131,7 @@ class ResourceUsersEnvironments protected () extends StObject {
     */
   def start(): GaxiosPromise[SchemaOperation] = js.native
   def start(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def start(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def start(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceUsersEnvironmentsStart): GaxiosPromise[SchemaOperation] = js.native
   def start(params: ParamsResourceUsersEnvironmentsStart, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def start(

@@ -2,13 +2,11 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionInput extends StObject {
   
-  var pos: js.Tuple2[Double, Double] = js.native
+  var pos: js.Tuple2[Double, Double]
 }
 object PositionInput {
   

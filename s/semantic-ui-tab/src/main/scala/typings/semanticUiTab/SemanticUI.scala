@@ -106,7 +106,6 @@ import typings.semanticUiTab.semanticUiTabStrings.templates
 import typings.semanticUiTab.semanticUiTabStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -149,71 +148,68 @@ object SemanticUI {
       */
     def apply(behavior: `set state`, path: String): JQuery = js.native
     def apply(behavior: destroy): JQuery = js.native
-    def apply(behavior: setting, name: alwaysRefresh, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: alwaysRefresh, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: apiSettings, value: js.UndefOr[scala.Nothing]): ApiSettings = js.native
-    def apply(behavior: setting, name: auto, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: alwaysRefresh, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: apiSettings, value: Unit): ApiSettings = js.native
+    def apply(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
     def apply(behavior: setting, name: auto, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: cacheType, value: js.UndefOr[scala.Nothing]): response | DOM | html = js.native
+    def apply(behavior: setting, name: auto, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: cacheType, value: Unit): response | DOM | html = js.native
     def apply(behavior: setting, name: cacheType, value: DOM): JQuery = js.native
     def apply(behavior: setting, name: cacheType, value: html): JQuery = js.native
     def apply(behavior: setting, name: cacheType, value: response): JQuery = js.native
-    def apply(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: cache, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: childrenOnly, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: cache, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: childrenOnly, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
+    def apply(behavior: setting, name: childrenOnly, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
     def apply(behavior: setting, name: context, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: deactivate, value: js.UndefOr[scala.Nothing]): siblings | all = js.native
+    def apply(behavior: setting, name: deactivate, value: Unit): siblings | all = js.native
     def apply(behavior: setting, name: deactivate, value: all): JQuery = js.native
     def apply(behavior: setting, name: deactivate, value: siblings): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: evaluateScripts, value: js.UndefOr[scala.Nothing]): once | Boolean = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
     def apply(behavior: setting, name: evaluateScripts, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: evaluateScripts, value: Unit): once | Boolean = js.native
     def apply(behavior: setting, name: evaluateScripts, value: once): JQuery = js.native
-    def apply(behavior: setting, name: historyType, value: js.UndefOr[scala.Nothing]): hash | state = js.native
+    def apply(behavior: setting, name: historyType, value: Unit): hash | state = js.native
     def apply(behavior: setting, name: historyType, value: hash): JQuery = js.native
     def apply(behavior: setting, name: historyType, value: state): JQuery = js.native
-    def apply(behavior: setting, name: history, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: history, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: ignoreFirstLoad, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: history, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: ignoreFirstLoad, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: loadOnce, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: ignoreFirstLoad, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: loadOnce, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: maxDepth, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: loadOnce, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: maxDepth, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: maxDepth, value: Unit): Double = js.native
+    def apply(behavior: setting, name: metadata, value: Unit): MetadataSettings = js.native
+    def apply(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onFirstLoad, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
-        /* this */ JQuery, 
-        /* tabPath */ String, 
-        /* parameterArray */ js.Array[_], 
-        /* historyEvent */ js.Any, 
-        Unit
-      ] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(
       behavior: setting,
       name: onFirstLoad,
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
-          /* parameterArray */ js.Array[_], 
+          /* parameterArray */ js.Array[js.Any], 
           /* historyEvent */ js.Any, 
           Unit
         ]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onLoad, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
+    def apply(behavior: setting, name: onFirstLoad, value: Unit): js.ThisFunction3[
         /* this */ JQuery, 
         /* tabPath */ String, 
-        /* parameterArray */ js.Array[_], 
+        /* parameterArray */ js.Array[js.Any], 
         /* historyEvent */ js.Any, 
         Unit
       ] = js.native
@@ -223,35 +219,43 @@ object SemanticUI {
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
-          /* parameterArray */ js.Array[_], 
+          /* parameterArray */ js.Array[js.Any], 
           /* historyEvent */ js.Any, 
           Unit
         ]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onRequest, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
+    def apply(behavior: setting, name: onLoad, value: Unit): js.ThisFunction3[
+        /* this */ JQuery, 
+        /* tabPath */ String, 
+        /* parameterArray */ js.Array[js.Any], 
+        /* historyEvent */ js.Any, 
+        Unit
+      ] = js.native
     def apply(
       behavior: setting,
       name: onRequest,
       value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
+    def apply(behavior: setting, name: onRequest, value: Unit): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
     def apply(
       behavior: setting,
       name: onVisible,
       value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: path, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: onVisible, value: Unit): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
     def apply(behavior: setting, name: path, value: String): JQuery = js.native
+    def apply(behavior: setting, name: path, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: path, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
+    def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: templates, value: Unit): TemplatesSettings = js.native
     def apply(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: TabSettings): JQuery = js.native
     def apply(settings: TabSettings): JQuery = js.native
     
@@ -261,18 +265,17 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'active'
           */
-        var active: String = js.native
+        var active: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
       }
       object Impl {
         
@@ -293,49 +296,48 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplloading | PickImplactive) with PartialPickImplkeyofImplActive
+      type Param = (PickImplloading | PickImplactive) & PartialPickImplkeyofImplActive
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'You attempted to load content without API module'
           */
-        var api: String = js.native
+        var api: String
         
         /**
           * @default 'The method you called is not defined'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'Activated tab cannot be found for this context.'
           */
-        var missingTab: String = js.native
+        var missingTab: String
         
         /**
           * @default 'The tab you specified is missing a content url.'
           */
-        var noContent: String = js.native
+        var noContent: String
         
         /**
           * @default 'History enabled, but no path was specified'
           */
-        var path: String = js.native
+        var path: String
         
         /**
           * @default 'Max recursive depth reached'
           */
-        var recursion: String = js.native
+        var recursion: String
         
         /**
           * @default 'The state library has not been initialized'
           */
-        var state: String = js.native
+        var state: String
       }
       object Impl {
         
@@ -379,29 +381,28 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplapi | PickImplmethod | PickImplmissingTab | PickImplnoContent | PickImplpathPath | PickImplrecursion | PickImplstate) with PartialPickImplkeyofImplApi
+      type Param = (PickImplapi | PickImplmethod | PickImplmissingTab | PickImplnoContent | PickImplpathPath | PickImplrecursion | PickImplstate) & PartialPickImplkeyofImplApi
     }
     type ErrorSettings = typings.semanticUiTab.SemanticUI.Tab.ErrorSettings.Param
     
     object MetadataSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'loaded'
           */
-        var loaded: String = js.native
+        var loaded: String
         
         /**
           * @default 'promise'
           */
-        var promise: String = js.native
+        var promise: String
         
         /**
           * @default 'tab'
           */
-        var tab: String = js.native
+        var tab: String
       }
       object Impl {
         
@@ -425,24 +426,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpltab | PickImplloaded | PickImplpromise) with PartialPickImplkeyofImplLoaded
+      type Param = (PickImpltab | PickImplloaded | PickImplpromise) & PartialPickImplkeyofImplLoaded
     }
     type MetadataSettings = typings.semanticUiTab.SemanticUI.Tab.MetadataSettings.Param
     
     object SelectorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.ui:not(.menu)'
           */
-        var parent: String = js.native
+        var parent: String
         
         /**
           * @default '.ui.tab'
           */
-        var tabs: String = js.native
+        var tabs: String
       }
       object Impl {
         
@@ -463,32 +463,38 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImpltabs | PickImplparent) with PartialPickImplkeyofImplParent
+      type Param = (PickImpltabs | PickImplparent) & PartialPickImplkeyofImplParent
     }
     type SelectorSettings = typings.semanticUiTab.SemanticUI.Tab.SelectorSettings.Param
     
     /* Inlined semantic-ui-tab.SemanticUI.Tab.TemplatesSettings.Param */
-    @js.native
     trait TemplatesSettings extends StObject {
       
-      def determineTitle(tabArray: js.Array[_]): String = js.native
+      def determineTitle(tabArray: js.Array[js.Any]): String
       @JSName("determineTitle")
-      var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[_], String]) with (js.UndefOr[js.Function1[/* tabArray */ js.Array[_], String]]) = js.native
+      var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
     }
     object TemplatesSettings {
       
-      @js.native
+      @scala.inline
+      def apply(
+        determineTitle: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
+      ): TemplatesSettings = {
+        val __obj = js.Dynamic.literal(determineTitle = determineTitle.asInstanceOf[js.Any])
+        __obj.asInstanceOf[TemplatesSettings]
+      }
+      
       trait Impl extends StObject {
         
         /**
           * returns page title
           */
-        def determineTitle(tabArray: js.Array[_]): String = js.native
+        def determineTitle(tabArray: js.Array[js.Any]): String
       }
       object Impl {
         
         @scala.inline
-        def apply(determineTitle: js.Array[_] => String): Impl = {
+        def apply(determineTitle: js.Array[js.Any] => String): Impl = {
           val __obj = js.Dynamic.literal(determineTitle = js.Any.fromFunction1(determineTitle))
           __obj.asInstanceOf[Impl]
         }
@@ -497,30 +503,56 @@ object SemanticUI {
         implicit class ImplMutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setDetermineTitle(value: js.Array[_] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
+          def setDetermineTitle(value: js.Array[js.Any] => String): Self = StObject.set(x, "determineTitle", js.Any.fromFunction1(value))
         }
       }
       
       /* Inlined std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, 'determineTitle'> & std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.TemplatesSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        def determineTitle(tabArray: js.Array[_]): String = js.native
+        def determineTitle(tabArray: js.Array[js.Any]): String
         @JSName("determineTitle")
-        var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[_], String]) with (js.UndefOr[js.Function1[/* tabArray */ js.Array[_], String]]) = js.native
+        var determineTitle_Original: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
+      }
+      object Param {
+        
+        @scala.inline
+        def apply(
+          determineTitle: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
+        ): typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param = {
+          val __obj = js.Dynamic.literal(determineTitle = determineTitle.asInstanceOf[js.Any])
+          __obj.asInstanceOf[typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param]
+        }
+        
+        @scala.inline
+        implicit class ParamMutableBuilder[Self <: typings.semanticUiTab.SemanticUI.Tab.TemplatesSettings.Param] (val x: Self) extends AnyVal {
+          
+          @scala.inline
+          def setDetermineTitle(
+            value: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
+          ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
+        }
+      }
+      
+      @scala.inline
+      implicit class TemplatesSettingsMutableBuilder[Self <: TemplatesSettings] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setDetermineTitle(
+          value: (js.Function1[/* tabArray */ js.Array[js.Any], String]) & (js.UndefOr[js.Function1[/* tabArray */ js.Array[js.Any], String]])
+        ): Self = StObject.set(x, "determineTitle", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object TabSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * Tab should reload content every time it is opened
         */
-      var alwaysRefresh: Boolean = js.native
+      var alwaysRefresh: Boolean
       
       /**
         * Settings object for $.api call
@@ -528,7 +560,7 @@ object SemanticUI {
         * @default false
         * @see {@link http://semantic-ui.com/behaviors/api.html}
         */
-      var apiSettings: ApiSettings = js.native
+      var apiSettings: ApiSettings
       
       // region Tab Settings
       /**
@@ -536,14 +568,14 @@ object SemanticUI {
         *
         * @default false
         */
-      var auto: Boolean = js.native
+      var auto: Boolean
       
       /**
         * Tab should cache content after loading locally to avoid server trip on second load
         *
         * @default true
         */
-      var cache: Boolean = js.native
+      var cache: Boolean
       
       /**
         * Can be set to either response, DOM or html.
@@ -553,26 +585,26 @@ object SemanticUI {
         *
         * @default 'response'
         */
-      var cacheType: response | DOM | html = js.native
+      var cacheType: response | DOM | html
       
       /**
         * If enabled limits tabs to children of passed context
         *
         * @default false
         */
-      var childrenOnly: Boolean = js.native
+      var childrenOnly: Boolean
       
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Tabs are limited to those found inside this context
         *
         * @default false
         */
-      var context: `false` | String | JQuery = js.native
+      var context: `false` | String | JQuery
       
       /**
         * When set to siblings will only deactivate elements that are DOM siblings with the activated element.
@@ -581,16 +613,16 @@ object SemanticUI {
         * @default 'siblings'
         * @since 2.2
         */
-      var deactivate: siblings | all = js.native
+      var deactivate: siblings | all
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether inline scripts in tab HTML should be parsed on tab load.
@@ -599,14 +631,14 @@ object SemanticUI {
         *
         * @default 'once'
         */
-      var evaluateScripts: once | Boolean = js.native
+      var evaluateScripts: once | Boolean
       
       /**
         * Whether to record history events for tab changes
         *
         * @default false
         */
-      var history: Boolean = js.native
+      var history: Boolean
       
       /**
         * Can be set to hash or state.
@@ -616,14 +648,14 @@ object SemanticUI {
         * @default 'hash'
         * @see {@link https://developer.mozilla.org/en-US/docs/Web/Guide/API/DOM/Manipulating_the_browser_history}
         */
-      var historyType: hash | state = js.native
+      var historyType: hash | state
       
       /**
         * Do not load content remotely on first tab load. Useful when open tab is rendered on server.
         *
         * @default false
         */
-      var ignoreFirstLoad: Boolean = js.native
+      var ignoreFirstLoad: Boolean
       
       /**
         * When enabled only calls remote endpoint for tab data on first load and leaves the DOM undisturbed afterwards.
@@ -631,26 +663,26 @@ object SemanticUI {
         * @default false
         * @since 2.2.8
         */
-      var loadOnce: Boolean = js.native
+      var loadOnce: Boolean
       
       /**
         * Maximum amount of nested tabs allowed (avoids recursion)
         *
         * @default 25
         */
-      var maxDepth: Double = js.native
+      var maxDepth: Double
       
       /**
         * DOM metadata used by module
         */
-      var metadata: MetadataSettings = js.native
+      var metadata: MetadataSettings
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -658,63 +690,63 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // endregion
       // region Callbacks
       /**
         * Callback only the first time a tab is loaded
         */
-      def onFirstLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit = js.native
+      def onFirstLoad(tabPath: String, parameterArray: js.Array[js.Any], historyEvent: js.Any): Unit
       
       /**
         * Callback every time a tab is loaded
         */
-      def onLoad(tabPath: String, parameterArray: js.Array[_], historyEvent: js.Any): Unit = js.native
+      def onLoad(tabPath: String, parameterArray: js.Array[js.Any], historyEvent: js.Any): Unit
       
       /**
         * Called when a tab begins loading remote content
         */
-      def onRequest(tabPath: String): Unit = js.native
+      def onRequest(tabPath: String): Unit
       
       /**
         * Called after a tab becomes visible
         */
-      def onVisible(tabPath: String): Unit = js.native
+      def onVisible(tabPath: String): Unit
       
       /**
         * When using historyType state you must specify the base URL for all internal links.
         *
         * @default false
         */
-      var path: `false` | String = js.native
+      var path: `false` | String
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Selectors used by module
         */
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Functions used to return content
         */
-      var templates: TemplatesSettings = js.native
+      var templates: TemplatesSettings
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -740,8 +772,8 @@ object SemanticUI {
         metadata: MetadataSettings,
         name: String,
         namespace: String,
-        onFirstLoad: (String, js.Array[_], js.Any) => Unit,
-        onLoad: (String, js.Array[_], js.Any) => Unit,
+        onFirstLoad: (String, js.Array[js.Any], js.Any) => Unit,
+        onLoad: (String, js.Array[js.Any], js.Any) => Unit,
         onRequest: String => Unit,
         onVisible: String => Unit,
         path: `false` | String,
@@ -819,10 +851,10 @@ object SemanticUI {
         def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setOnFirstLoad(value: (String, js.Array[_], js.Any) => Unit): Self = StObject.set(x, "onFirstLoad", js.Any.fromFunction3(value))
+        def setOnFirstLoad(value: (String, js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "onFirstLoad", js.Any.fromFunction3(value))
         
         @scala.inline
-        def setOnLoad(value: (String, js.Array[_], js.Any) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction3(value))
+        def setOnLoad(value: (String, js.Array[js.Any], js.Any) => Unit): Self = StObject.set(x, "onLoad", js.Any.fromFunction3(value))
         
         @scala.inline
         def setOnRequest(value: String => Unit): Self = StObject.set(x, "onRequest", js.Any.fromFunction1(value))
@@ -850,7 +882,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplauto | PickImpldeactivate | PickImplhistory | PickImplignoreFirstLoad | PickImplevaluateScripts | PickImplalwaysRefresh | PickImplcacheType | PickImplcache | PickImplapiSettings | PickImplhistoryType | PickImplpath | PickImplcontext | PickImplchildrenOnly | PickImplmaxDepth | PickImplloadOnce | PickImplonFirstLoad | PickImplonLoad | PickImplonRequest | PickImplonVisible | PickImpltemplates | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplauto | PickImpldeactivate | PickImplhistory | PickImplignoreFirstLoad | PickImplevaluateScripts | PickImplalwaysRefresh | PickImplcacheType | PickImplcache | PickImplapiSettings | PickImplhistoryType | PickImplpath | PickImplcontext | PickImplchildrenOnly | PickImplmaxDepth | PickImplloadOnce | PickImplonFirstLoad | PickImplonLoad | PickImplonRequest | PickImplonVisible | PickImpltemplates | PickImplselector | PickImplmetadata | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/tab.html#/settings}

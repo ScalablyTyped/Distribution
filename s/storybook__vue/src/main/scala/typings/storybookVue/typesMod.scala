@@ -7,17 +7,15 @@ import typings.vue.optionsMod.DefaultMethods
 import typings.vue.optionsMod.DefaultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait IStorybookSection extends StObject {
     
-    var kind: String = js.native
+    var kind: String
     
-    var stories: js.Array[IStorybookStory] = js.native
+    var stories: js.Array[IStorybookStory]
   }
   object IStorybookSection {
     
@@ -41,12 +39,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IStorybookStory extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    def render(): js.Any = js.native
+    def render(): js.Any
   }
   object IStorybookStory {
     
@@ -67,12 +64,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ShowErrorArgs extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: String = js.native
+    var title: String
   }
   object ShowErrorArgs {
     

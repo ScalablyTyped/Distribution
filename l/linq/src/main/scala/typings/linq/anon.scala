@@ -3,15 +3,15 @@ package typings.linq
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Dictx[T] extends /* x */ NumberDictionary[T] {
+  trait Dictx[T]
+    extends StObject
+       with /* x */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Dictx {
     
@@ -22,17 +22,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictxMutableBuilder[Self <: Dictx[_], T] (val x: Self with Dictx[T]) extends AnyVal {
+    implicit class DictxMutableBuilder[Self <: Dictx[?], T] (val x: Self & Dictx[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DictxLength[TCollection] extends /* x */ NumberDictionary[TCollection] {
+  trait DictxLength[TCollection]
+    extends StObject
+       with /* x */ NumberDictionary[TCollection] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object DictxLength {
     
@@ -43,17 +44,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictxLengthMutableBuilder[Self <: DictxLength[_], TCollection] (val x: Self with DictxLength[TCollection]) extends AnyVal {
+    implicit class DictxLengthMutableBuilder[Self <: DictxLength[?], TCollection] (val x: Self & DictxLength[TCollection]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DictxNumberTInner[TInner] extends /* x */ NumberDictionary[TInner] {
+  trait DictxNumberTInner[TInner]
+    extends StObject
+       with /* x */ NumberDictionary[TInner] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object DictxNumberTInner {
     
@@ -64,17 +66,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictxNumberTInnerMutableBuilder[Self <: DictxNumberTInner[_], TInner] (val x: Self with DictxNumberTInner[TInner]) extends AnyVal {
+    implicit class DictxNumberTInnerMutableBuilder[Self <: DictxNumberTInner[?], TInner] (val x: Self & DictxNumberTInner[TInner]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DictxNumberTResult[TResult] extends /* x */ NumberDictionary[TResult] {
+  trait DictxNumberTResult[TResult]
+    extends StObject
+       with /* x */ NumberDictionary[TResult] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object DictxNumberTResult {
     
@@ -85,17 +88,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictxNumberTResultMutableBuilder[Self <: DictxNumberTResult[_], TResult] (val x: Self with DictxNumberTResult[TResult]) extends AnyVal {
+    implicit class DictxNumberTResultMutableBuilder[Self <: DictxNumberTResult[?], TResult] (val x: Self & DictxNumberTResult[TResult]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait DictxNumberU[U] extends /* x */ NumberDictionary[U] {
+  trait DictxNumberU[U]
+    extends StObject
+       with /* x */ NumberDictionary[U] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object DictxNumberU {
     
@@ -106,19 +110,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class DictxNumberUMutableBuilder[Self <: DictxNumberU[_], U] (val x: Self with DictxNumberU[U]) extends AnyVal {
+    implicit class DictxNumberUMutableBuilder[Self <: DictxNumberU[?], U] (val x: Self & DictxNumberU[U]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Key {
     
@@ -139,10 +142,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Length[TOther] extends /* x */ NumberDictionary[TOther] {
+  trait Length[TOther]
+    extends StObject
+       with /* x */ NumberDictionary[TOther] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object Length {
     
@@ -153,19 +157,18 @@ object anon {
     }
     
     @scala.inline
-    implicit class LengthMutableBuilder[Self <: Length[_], TOther] (val x: Self with Length[TOther]) extends AnyVal {
+    implicit class LengthMutableBuilder[Self <: Length[?], TOther] (val x: Self & Length[TOther]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Value[TKey, TValue] extends StObject {
     
-    var key: TKey = js.native
+    var key: TKey
     
-    var value: TValue = js.native
+    var value: TValue
   }
   object Value {
     
@@ -176,7 +179,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_, _], TKey, TValue] (val x: Self with (Value[TKey, TValue])) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?, ?], TKey, TValue] (val x: Self & (Value[TKey, TValue])) extends AnyVal {
       
       @scala.inline
       def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * image via:   FROM &lt;Basis.resource_url&gt; Or an equivalent reference,
   * e.g. a tag of the resource_url.
   */
-@js.native
 trait SchemaBasis extends StObject {
   
   /**
     * The fingerprint of the base image.
     */
-  var fingerprint: js.UndefOr[SchemaFingerprint] = js.native
+  var fingerprint: js.UndefOr[SchemaFingerprint] = js.undefined
   
   /**
     * The resource_url for the resource representing the basis of associated
     * occurrence images.
     */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaBasis {
   

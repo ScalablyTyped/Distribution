@@ -10,7 +10,6 @@ import typings.chrome.chrome.webRequest.WebResponseErrorEvent
 import typings.chrome.chrome.webRequest.WebResponseHeadersEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -33,12 +32,10 @@ object webRequest {
   @scala.inline
   def MAX_HANDLER_BEHAVIOR_CHANGED_CALLS_PER_10_MINUTES_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_HANDLER_BEHAVIOR_CHANGED_CALLS_PER_10_MINUTES")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.webRequest.handlerBehaviorChanged")
-  @js.native
-  def handlerBehaviorChanged(): Unit = js.native
-  @JSGlobal("chrome.webRequest.handlerBehaviorChanged")
-  @js.native
-  def handlerBehaviorChanged(callback: js.Function): Unit = js.native
+  @scala.inline
+  def handlerBehaviorChanged(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handlerBehaviorChanged")().asInstanceOf[Unit]
+  @scala.inline
+  def handlerBehaviorChanged(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("handlerBehaviorChanged")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.webRequest.onAuthRequired")
   @js.native

@@ -3,15 +3,14 @@ package typings.cytoscape.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeDataDefinition
-  extends ElementDataDefinition
+  extends StObject
+     with ElementDataDefinition
      with /* key */ StringDictionary[js.Any] {
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object NodeDataDefinition {
   

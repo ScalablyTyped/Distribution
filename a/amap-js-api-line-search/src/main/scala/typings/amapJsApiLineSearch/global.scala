@@ -3,7 +3,6 @@ package typings.amapJsApiLineSearch
 import typings.amapJsApiLineSearch.AMap.LineSearch.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,7 +16,8 @@ object global {
       * @param options 选项
       */
     class LineSearch ()
-      extends typings.amapJsApiLineSearch.AMap.LineSearch {
+      extends StObject
+         with typings.amapJsApiLineSearch.AMap.LineSearch {
       def this(options: Options) = this()
     }
   }

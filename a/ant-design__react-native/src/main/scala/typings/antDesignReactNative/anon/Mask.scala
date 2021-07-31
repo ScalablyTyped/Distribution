@@ -2,17 +2,15 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mask extends StObject {
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var mask: Boolean = js.native
+  var mask: Boolean
   
-  def onClose(): Unit = js.native
+  def onClose(): Unit
 }
 object Mask {
   

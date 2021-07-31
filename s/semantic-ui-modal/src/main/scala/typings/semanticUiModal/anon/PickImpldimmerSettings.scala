@@ -3,14 +3,12 @@ package typings.semanticUiModal.anon
 import typings.semanticUiDimmer.SemanticUI.DimmerSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-modal.SemanticUI.ModalSettings._Impl, 'dimmerSettings'> */
-@js.native
 trait PickImpldimmerSettings extends StObject {
   
-  var dimmerSettings: DimmerSettings = js.native
+  var dimmerSettings: DimmerSettings
 }
 object PickImpldimmerSettings {
   

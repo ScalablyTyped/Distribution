@@ -5,34 +5,34 @@ import typings.voximplantWebsdk.mod.UserStatuses
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched if chat room participant presence status was updated
   */
-@js.native
-trait ChatRoomPresenceUpdate extends VoxImplantIMEvent {
+trait ChatRoomPresenceUpdate
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * Optional presence message
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * Participant info
     */
-  var participant: ParticipantInfo = js.native
+  var participant: ParticipantInfo
   
   /**
     * Current presence status
     */
-  var presence: UserStatuses = js.native
+  var presence: UserStatuses
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomPresenceUpdate {
   

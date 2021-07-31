@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorActionDynamodbv2PutItem extends StObject {
   
   /**
     * The name of the DynamoDB table.
     */
-  var tableName: Input[String] = js.native
+  var tableName: Input[String]
 }
 object TopicRuleErrorActionDynamodbv2PutItem {
   

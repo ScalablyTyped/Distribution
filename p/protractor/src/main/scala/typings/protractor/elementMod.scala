@@ -1,6 +1,5 @@
 package typings.protractor
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.protractor.anon.TypeofBy
 import typings.protractor.browserMod.ElementHelper
 import typings.protractor.browserMod.ProtractorBrowser
@@ -9,7 +8,6 @@ import typings.seleniumWebdriver.mod.WebElement
 import typings.seleniumWebdriver.mod.WebElementPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
@@ -23,35 +21,35 @@ object elementMod {
   class ElementArrayFinder protected () extends WebdriverWebElement {
     def this(browser_ : ProtractorBrowser) = this()
     def this(browser_ : ProtractorBrowser, getWebElements: js.Function0[js.Promise[js.Array[WebElement]]]) = this()
-    def this(browser_ : ProtractorBrowser, getWebElements: js.UndefOr[scala.Nothing], locator_ : js.Any) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
       locator_ : js.Any
     ) = this()
-    def this(
-      browser_ : ProtractorBrowser,
-      getWebElements: js.UndefOr[scala.Nothing],
-      locator_ : js.UndefOr[scala.Nothing],
-      actionResults_ : js.Promise[_]
-    ) = this()
-    def this(
-      browser_ : ProtractorBrowser,
-      getWebElements: js.UndefOr[scala.Nothing],
-      locator_ : js.Any,
-      actionResults_ : js.Promise[_]
-    ) = this()
-    def this(
-      browser_ : ProtractorBrowser,
-      getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
-      locator_ : js.UndefOr[scala.Nothing],
-      actionResults_ : js.Promise[_]
-    ) = this()
+    def this(browser_ : ProtractorBrowser, getWebElements: Unit, locator_ : js.Any) = this()
     def this(
       browser_ : ProtractorBrowser,
       getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
       locator_ : js.Any,
-      actionResults_ : js.Promise[_]
+      actionResults_ : js.Promise[js.Any]
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: js.Function0[js.Promise[js.Array[WebElement]]],
+      locator_ : Unit,
+      actionResults_ : js.Promise[js.Any]
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: Unit,
+      locator_ : js.Any,
+      actionResults_ : js.Promise[js.Any]
+    ) = this()
+    def this(
+      browser_ : ProtractorBrowser,
+      getWebElements: Unit,
+      locator_ : Unit,
+      actionResults_ : js.Promise[js.Any]
     ) = this()
     
     /**
@@ -86,7 +84,7 @@ object elementMod {
     @JSName("$$")
     def DollarDollar(selector: String): ElementArrayFinder = js.native
     
-    var actionResults_ : js.Promise[_] = js.native
+    var actionResults_ : js.Promise[js.Any] = js.native
     
     /**
       * Calls to ElementArrayFinder may be chained to find an array of elements
@@ -231,7 +229,13 @@ object elementMod {
       *     function has been called on all the ElementFinders. The promise will
       *     resolve to null.
       */
-    def each(fn: js.Function2[/* elementFinder */ js.UndefOr[ElementFinder], /* index */ js.UndefOr[Double], _]): js.Promise[_] = js.native
+    def each(
+      fn: js.Function2[
+          /* elementFinder */ js.UndefOr[ElementFinder], 
+          /* index */ js.UndefOr[Double], 
+          js.Any
+        ]
+    ): js.Promise[js.Any] = js.native
     
     /**
       * Evaluates the input as if it were on the scope of the current underlying
@@ -466,7 +470,11 @@ object elementMod {
       *     of values returned by the map function.
       */
     def map[T](
-      mapFn: js.Function2[/* elementFinder */ js.UndefOr[ElementFinder], /* index */ js.UndefOr[Double], T | _]
+      mapFn: js.Function2[
+          /* elementFinder */ js.UndefOr[ElementFinder], 
+          /* index */ js.UndefOr[Double], 
+          T | js.Any
+        ]
     ): js.Promise[js.Array[T]] = js.native
     
     /**
@@ -511,7 +519,7 @@ object elementMod {
       * @returns {!webdriver.promise.Promise} A promise that resolves to the final
       *     value of the accumulator.
       */
-    def reduce(reduceFn: js.Function, initialValue: js.Any): js.Promise[_] = js.native
+    def reduce(reduceFn: js.Function, initialValue: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Retrieve the elements represented by the ElementArrayFinder. The input
@@ -544,20 +552,20 @@ object elementMod {
       *     an array of ElementFinders represented by the ElementArrayFinder.
       */
     def `then`[T](): js.Promise[T] = js.native
-    def `then`[T](fn: js.UndefOr[scala.Nothing], errorFn: js.Function1[/* error */ js.Any, _]): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
-          /* value */ js.Array[_ | ElementFinder], 
-          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
+          /* value */ js.Array[js.Any | ElementFinder], 
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ js.Any)
         ]
     ): js.Promise[T] = js.native
     def `then`[T](
       fn: js.Function1[
-          /* value */ js.Array[_ | ElementFinder], 
-          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ _)
+          /* value */ js.Array[js.Any | ElementFinder], 
+          T | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify wdpromise.IThenable<T> */ js.Any)
         ],
-      errorFn: js.Function1[/* error */ js.Any, _]
+      errorFn: js.Function1[/* error */ js.Any, js.Any]
     ): js.Promise[T] = js.native
+    def `then`[T](fn: Unit, errorFn: js.Function1[/* error */ js.Any, js.Any]): js.Promise[T] = js.native
     
     /**
       * Returns an ElementFinder representation of ElementArrayFinder. It ensures
@@ -729,8 +737,8 @@ object elementMod {
       * @returns {!webdriver.promise.Promise.<boolean>} A promise that will be
       *     resolved to whether the two WebElements are equal.
       */
-    def equals(element: ElementFinder): js.Promise[_] = js.native
-    def equals(element: WebElement): js.Promise[_] = js.native
+    def equals(element: ElementFinder): js.Promise[js.Any] = js.native
+    def equals(element: WebElement): js.Promise[js.Any] = js.native
     
     /**
       * Evaluates the input as if it were on the scope of the current element.
@@ -817,28 +825,38 @@ object elementMod {
     
     var `then`: js.UndefOr[
         js.Function2[
-          /* fn */ js.Function1[/* value */ js.Any, _], 
-          /* errorFn */ js.UndefOr[js.Function1[/* error */ js.Any, _]], 
-          js.Promise[_]
+          /* fn */ js.Function1[/* value */ js.Any, js.Any], 
+          /* errorFn */ js.UndefOr[js.Function1[/* error */ js.Any, js.Any]], 
+          js.Promise[js.Any]
         ]
       ] = js.native
   }
   /* static members */
   object ElementFinder {
     
-    @JSImport("protractor/built/element", "ElementFinder.fromWebElement_")
+    @JSImport("protractor/built/element", "ElementFinder")
     @js.native
-    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement): ElementFinder = js.native
-    @JSImport("protractor/built/element", "ElementFinder.fromWebElement_")
-    @js.native
-    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement, locator: Locator): ElementFinder = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
+    @scala.inline
+    def fromWebElement_(browser: ProtractorBrowser, webElem: WebElement, locator: Locator): ElementFinder = (^.asInstanceOf[js.Dynamic].applyDynamic("fromWebElement_")(browser.asInstanceOf[js.Any], webElem.asInstanceOf[js.Any], locator.asInstanceOf[js.Any])).asInstanceOf[ElementFinder]
   }
   
-  @JSImport("protractor/built/element", "WebdriverWebElement")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("protractor/built/element", "WebdriverWebElement")
   @js.native
-  class WebdriverWebElement ()
-    extends WebElement
-       with /* key */ StringDictionary[js.Any]
+  class WebdriverWebElement () extends WebElement
   
   @JSImport("protractor/built/element", "build$")
   @js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVTLDeviceTypeInput extends StObject {
   
   /**
     * The type of medium changer you want to select. Valid Values: STK-L700 | AWS-Gateway-VTL | IBM-03584L32-0402 
     */
-  var DeviceType: typings.awsSdk.storagegatewayMod.DeviceType = js.native
+  var DeviceType: typings.awsSdk.storagegatewayMod.DeviceType
   
   /**
     * The Amazon Resource Name (ARN) of the medium changer you want to select.
     */
-  var VTLDeviceARN: typings.awsSdk.storagegatewayMod.VTLDeviceARN = js.native
+  var VTLDeviceARN: typings.awsSdk.storagegatewayMod.VTLDeviceARN
 }
 object UpdateVTLDeviceTypeInput {
   

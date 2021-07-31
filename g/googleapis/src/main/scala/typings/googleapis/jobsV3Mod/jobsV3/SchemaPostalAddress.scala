@@ -2,7 +2,6 @@ package typings.googleapis.jobsV3Mod.jobsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * how to use this schema, please see:
   * https://support.google.com/business/answer/6397478
   */
-@js.native
 trait SchemaPostalAddress extends StObject {
   
   /**
@@ -41,7 +39,7 @@ trait SchemaPostalAddress extends StObject {
     * to handle completely unstructured addresses (as opposed to guessing which
     * parts of the address should be localities or administrative areas).
     */
-  var addressLines: js.UndefOr[js.Array[String]] = js.native
+  var addressLines: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Highest administrative subdivision which is used for postal
@@ -52,7 +50,7 @@ trait SchemaPostalAddress extends StObject {
     * administrative area in postal addresses. E.g. in Switzerland this should
     * be left unpopulated.
     */
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. BCP-47 language code of the contents of this address (if
@@ -65,7 +63,7 @@ trait SchemaPostalAddress extends StObject {
     * a possibly incorrect default).  Examples: &quot;zh-Hant&quot;,
     * &quot;ja&quot;, &quot;ja-Latn&quot;, &quot;en&quot;.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Generally refers to the city/town portion of the address.
@@ -73,12 +71,12 @@ trait SchemaPostalAddress extends StObject {
     * localities are not well defined or do not fit into this structure well,
     * leave locality empty and use address_lines.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the organization at the address.
     */
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Postal code of the address. Not all countries use or require
@@ -86,14 +84,14 @@ trait SchemaPostalAddress extends StObject {
     * additional validation with other parts of the address (e.g. state/zip
     * validation in the U.S.A.).
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The recipient at the address. This field may, under certain
     * circumstances, contain multiline information. For example, it might
     * contain &quot;care of&quot; information.
     */
-  var recipients: js.UndefOr[js.Array[String]] = js.native
+  var recipients: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. CLDR region code of the country/region of the address. This is
@@ -102,14 +100,14 @@ trait SchemaPostalAddress extends StObject {
     * http://www.unicode.org/cldr/charts/30/supplemental/territory_information.html
     * for details. Example: &quot;CH&quot; for Switzerland.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The schema revision of the `PostalAddress`. This must be set to 0, which
     * is the latest revision.  All new revisions **must** be backward
     * compatible with old revisions.
     */
-  var revision: js.UndefOr[Double] = js.native
+  var revision: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Additional, country-specific, sorting code. This is not used in
@@ -119,13 +117,13 @@ trait SchemaPostalAddress extends StObject {
     * code&quot; (Jamaica), &quot;delivery area indicator&quot; (Malawi) or
     * &quot;post office indicator&quot; (e.g. Côte d&#39;Ivoire).
     */
-  var sortingCode: js.UndefOr[String] = js.native
+  var sortingCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Sublocality of the address. For example, this can be
     * neighborhoods, boroughs, districts.
     */
-  var sublocality: js.UndefOr[String] = js.native
+  var sublocality: js.UndefOr[String] = js.undefined
 }
 object SchemaPostalAddress {
   

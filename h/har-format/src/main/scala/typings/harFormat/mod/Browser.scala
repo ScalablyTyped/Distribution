@@ -2,20 +2,18 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browser extends StObject {
   
   /** A comment provided by the user or the application. */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /** Name of the application/browser used to export the log. */
-  var name: String = js.native
+  var name: String
   
   /** Version of the application/browser used to export the log. */
-  var version: String = js.native
+  var version: String
 }
 object Browser {
   

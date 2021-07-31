@@ -9,7 +9,6 @@ import typings.mongodb.mod.ReadConcernLevel
 import typings.mongodb.mod.ReadPreferenceMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbStrings {
@@ -120,42 +119,58 @@ object mongodbStrings {
   def _id: _id = "_id".asInstanceOf[_id]
   
   @js.native
-  sealed trait all extends ProfilingLevel
+  sealed trait all
+    extends StObject
+       with ProfilingLevel
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait array extends BSONTypeAlias
+  sealed trait array
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait available extends ReadConcernLevel
+  sealed trait available
+    extends StObject
+       with ReadConcernLevel
   @scala.inline
   def available: available = "available".asInstanceOf[available]
   
   @js.native
-  sealed trait binData extends BSONTypeAlias
+  sealed trait binData
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def binData: binData = "binData".asInstanceOf[binData]
   
   @js.native
-  sealed trait bool extends BSONTypeAlias
+  sealed trait bool
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def bool: bool = "bool".asInstanceOf[bool]
   
   @js.native
-  sealed trait date extends BSONTypeAlias
+  sealed trait date
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait dbPointer extends BSONTypeAlias
+  sealed trait dbPointer
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def dbPointer: dbPointer = "dbPointer".asInstanceOf[dbPointer]
   
   @js.native
-  sealed trait decimal extends BSONTypeAlias
+  sealed trait decimal
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
@@ -165,22 +180,30 @@ object mongodbStrings {
   def default_ : default_ = "default".asInstanceOf[default_]
   
   @js.native
-  sealed trait delete extends ChangeEventTypes
+  sealed trait delete
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait double extends BSONTypeAlias
+  sealed trait double
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait drop extends ChangeEventTypes
+  sealed trait drop
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def drop: drop = "drop".asInstanceOf[drop]
   
   @js.native
-  sealed trait dropDatabase extends ChangeEventTypes
+  sealed trait dropDatabase
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def dropDatabase: dropDatabase = "dropDatabase".asInstanceOf[dropDatabase]
   
@@ -191,63 +214,86 @@ object mongodbStrings {
   
   @js.native
   sealed trait indexKey
-    extends MetaProjectionOperators
+    extends StObject
+       with MetaProjectionOperators
        with MetaSortOperators
   @scala.inline
   def indexKey: indexKey = "indexKey".asInstanceOf[indexKey]
   
   @js.native
-  sealed trait insert extends ChangeEventTypes
+  sealed trait insert
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait int extends BSONTypeAlias
+  sealed trait int
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait invalidate extends ChangeEventTypes
+  sealed trait invalidate
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def invalidate: invalidate = "invalidate".asInstanceOf[invalidate]
   
   @js.native
-  sealed trait javascript extends BSONTypeAlias
+  sealed trait javascript
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
   
   @js.native
-  sealed trait javascriptWithScope extends BSONTypeAlias
+  sealed trait javascriptWithScope
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def javascriptWithScope: javascriptWithScope = "javascriptWithScope".asInstanceOf[javascriptWithScope]
   
   @js.native
-  sealed trait linearizable extends ReadConcernLevel
+  sealed trait linearizable
+    extends StObject
+       with ReadConcernLevel
   @scala.inline
   def linearizable: linearizable = "linearizable".asInstanceOf[linearizable]
   
   @js.native
-  sealed trait local extends ReadConcernLevel
+  sealed trait local
+    extends StObject
+       with ReadConcernLevel
   @scala.inline
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait long extends BSONTypeAlias
+  sealed trait long
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def long: long = "long".asInstanceOf[long]
   
   @js.native
-  sealed trait majority extends ReadConcernLevel
+  sealed trait majority
+    extends StObject
+       with ReadConcernLevel
   @scala.inline
   def majority: majority = "majority".asInstanceOf[majority]
   
   @js.native
-  sealed trait maxKey extends BSONTypeAlias
+  sealed trait maxKey
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def maxKey: maxKey = "maxKey".asInstanceOf[maxKey]
   
   @js.native
-  sealed trait minKey extends BSONTypeAlias
+  sealed trait minKey
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def minKey: minKey = "minKey".asInstanceOf[minKey]
   
@@ -257,82 +303,114 @@ object mongodbStrings {
   def moderate: moderate = "moderate".asInstanceOf[moderate]
   
   @js.native
-  sealed trait nearest extends ReadPreferenceMode
+  sealed trait nearest
+    extends StObject
+       with ReadPreferenceMode
   @scala.inline
   def nearest: nearest = "nearest".asInstanceOf[nearest]
   
   @js.native
-  sealed trait `null` extends BSONTypeAlias
+  sealed trait `null`
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def `null`: `null` = "null".asInstanceOf[`null`]
   
   @js.native
-  sealed trait number extends BSONTypeAlias
+  sealed trait number
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends BSONTypeAlias
+  sealed trait `object`
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait objectId extends BSONTypeAlias
+  sealed trait objectId
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def objectId: objectId = "objectId".asInstanceOf[objectId]
   
   @js.native
-  sealed trait off extends ProfilingLevel
+  sealed trait off
+    extends StObject
+       with ProfilingLevel
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait primary extends ReadPreferenceMode
+  sealed trait primary
+    extends StObject
+       with ReadPreferenceMode
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait primaryPreferred extends ReadPreferenceMode
+  sealed trait primaryPreferred
+    extends StObject
+       with ReadPreferenceMode
   @scala.inline
   def primaryPreferred: primaryPreferred = "primaryPreferred".asInstanceOf[primaryPreferred]
   
   @js.native
-  sealed trait regex extends BSONTypeAlias
+  sealed trait regex
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def regex: regex = "regex".asInstanceOf[regex]
   
   @js.native
-  sealed trait rename extends ChangeEventTypes
+  sealed trait rename
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def rename: rename = "rename".asInstanceOf[rename]
   
   @js.native
-  sealed trait replace extends ChangeEventTypes
+  sealed trait replace
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait searchHighlights extends MetaProjectionOperators
+  sealed trait searchHighlights
+    extends StObject
+       with MetaProjectionOperators
   @scala.inline
   def searchHighlights: searchHighlights = "searchHighlights".asInstanceOf[searchHighlights]
   
   @js.native
-  sealed trait searchScore extends MetaProjectionOperators
+  sealed trait searchScore
+    extends StObject
+       with MetaProjectionOperators
   @scala.inline
   def searchScore: searchScore = "searchScore".asInstanceOf[searchScore]
   
   @js.native
-  sealed trait secondary extends ReadPreferenceMode
+  sealed trait secondary
+    extends StObject
+       with ReadPreferenceMode
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
-  sealed trait secondaryPreferred extends ReadPreferenceMode
+  sealed trait secondaryPreferred
+    extends StObject
+       with ReadPreferenceMode
   @scala.inline
   def secondaryPreferred: secondaryPreferred = "secondaryPreferred".asInstanceOf[secondaryPreferred]
   
   @js.native
-  sealed trait slow_only extends ProfilingLevel
+  sealed trait slow_only
+    extends StObject
+       with ProfilingLevel
   @scala.inline
   def slow_only: slow_only = "slow_only".asInstanceOf[slow_only]
   
@@ -342,7 +420,9 @@ object mongodbStrings {
   def snappy: snappy = "snappy".asInstanceOf[snappy]
   
   @js.native
-  sealed trait snapshot extends ReadConcernLevel
+  sealed trait snapshot
+    extends StObject
+       with ReadConcernLevel
   @scala.inline
   def snapshot: snapshot = "snapshot".asInstanceOf[snapshot]
   
@@ -352,34 +432,45 @@ object mongodbStrings {
   def strict: strict = "strict".asInstanceOf[strict]
   
   @js.native
-  sealed trait string extends BSONTypeAlias
+  sealed trait string
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait symbol extends BSONTypeAlias
+  sealed trait symbol
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
   sealed trait textScore
-    extends MetaProjectionOperators
+    extends StObject
+       with MetaProjectionOperators
        with MetaSortOperators
   @scala.inline
   def textScore: textScore = "textScore".asInstanceOf[textScore]
   
   @js.native
-  sealed trait timestamp extends BSONTypeAlias
+  sealed trait timestamp
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def timestamp: timestamp = "timestamp".asInstanceOf[timestamp]
   
   @js.native
-  sealed trait undefined extends BSONTypeAlias
+  sealed trait undefined
+    extends StObject
+       with BSONTypeAlias
   @scala.inline
   def undefined: undefined = "undefined".asInstanceOf[undefined]
   
   @js.native
-  sealed trait update extends ChangeEventTypes
+  sealed trait update
+    extends StObject
+       with ChangeEventTypes
   @scala.inline
   def update: update = "update".asInstanceOf[update]
   

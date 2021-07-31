@@ -2,23 +2,21 @@ package typings.clearbladejsServer.CbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerCreateOptions extends StObject {
   
-  var def_module: TriggerModule = js.native
+  var def_module: TriggerModule
   
-  var def_name: String = js.native
+  var def_name: String
   
-  var key_value_pairs: js.Array[KeyValuePair] = js.native
+  var key_value_pairs: js.Array[KeyValuePair]
   
-  var name: String = js.native
+  var name: String
   
-  var service_name: String = js.native
+  var service_name: String
   
-  var system_key: String = js.native
+  var system_key: String
 }
 object TriggerCreateOptions {
   

@@ -2,42 +2,40 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhenOptions extends StObject {
   
   /**
     * whether to stop applying further conditions if the condition is true.
     */
-  var break: js.UndefOr[Boolean] = js.native
+  var break: js.UndefOr[Boolean] = js.undefined
   
   /**
     * the required condition joi type.
     */
-  var is: js.UndefOr[SchemaLike] = js.native
+  var is: js.UndefOr[SchemaLike] = js.undefined
   
   /**
     * the negative version of `is` (`then` and `otherwise` have reverse
     * roles).
     */
-  var not: js.UndefOr[SchemaLike] = js.native
+  var not: js.UndefOr[SchemaLike] = js.undefined
   
   /**
     * the alternative schema type if the condition is false. Required if then or switch are missing.
     */
-  var otherwise: js.UndefOr[SchemaLike] = js.native
+  var otherwise: js.UndefOr[SchemaLike] = js.undefined
   
   /**
     * the list of cases. Required if then is missing.  Required if then or otherwise are missing.
     */
-  var switch: js.UndefOr[js.Array[SwitchCases | SwitchDefault]] = js.native
+  var switch: js.UndefOr[js.Array[SwitchCases | SwitchDefault]] = js.undefined
   
   /**
     * the alternative schema type if the condition is true. Required if otherwise or switch are missing.
     */
-  var `then`: js.UndefOr[SchemaLike] = js.native
+  var `then`: js.UndefOr[SchemaLike] = js.undefined
 }
 object WhenOptions {
   

@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReusableConfig extends StObject {
   
   /** Output only. The time at which this ReusableConfig was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. A human-readable description of scenarios these ReusableConfigValues may be compatible with. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. Labels with user-defined metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.ReusableConfig with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.ReusableConfig & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The resource path for this ReusableConfig in the format `projects/∗/locations/∗/reusableConfigs/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this ReusableConfig was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Required. The config values. */
-  var values: js.UndefOr[ReusableConfigValues] = js.native
+  var values: js.UndefOr[ReusableConfigValues] = js.undefined
 }
 object ReusableConfig {
   
@@ -58,7 +56,7 @@ object ReusableConfig {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.ReusableConfig with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPrivateca.maximMazurokGapiClientPrivatecaStrings.ReusableConfig & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

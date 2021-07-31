@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * BookmarkFieldItem...
   */
-@js.native
 trait IBookmarkFieldItem extends StObject {
   
   /**
@@ -21,42 +19,42 @@ trait IBookmarkFieldItem extends StObject {
     * associated with either Customer 1 or Customer 2 are selected.
     * This parameter is not returned if set to false.
     */
-  var qAndMode: Boolean = js.native
+  var qAndMode: Boolean
   
   /**
     * Name and type of the field
     */
-  var qDef: IFieldDefEx = js.native
+  var qDef: IFieldDefEx
   
   /**
     * List of excluded values.
     * Either the list of selected values or the list of excluded values is displayed.
     */
-  var qExcludedValues: js.Array[IFieldValue] = js.native
+  var qExcludedValues: js.Array[IFieldValue]
   
   /**
     * Indicates if the field is locked.
     * Default is false.
     */
-  var qLocked: Boolean = js.native
+  var qLocked: Boolean
   
   /**
     * If set to true, the field has always one selection (not 0 and not more than 1).
     * If another value is selected, the previous one is unselected.
     * The default value is false. This parameter is not returned if set to false.
     */
-  var qOneAndOnlyOne: Boolean = js.native
+  var qOneAndOnlyOne: Boolean
   
   /**
     * Information on the selections criteria
     */
-  var qSelectInfo: ISelectInfo = js.native
+  var qSelectInfo: ISelectInfo
   
   /**
     * List of the selected values
     * Either the list of selected values or the list of excluded values is displayed.
     */
-  var qValues: js.Array[IFieldValue] = js.native
+  var qValues: js.Array[IFieldValue]
 }
 object IBookmarkFieldItem {
   

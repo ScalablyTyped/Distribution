@@ -11,8 +11,8 @@ db.js is a wrapper for IndexedDB to make it easier to work against, making it lo
 | Full name          | db.js |
 | Keywords           | indexeddb |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 5823 |
+| # dependents       | 2 |
+| # downloads        | 9447 |
 | # stars            | 0 |
 
 ## Links

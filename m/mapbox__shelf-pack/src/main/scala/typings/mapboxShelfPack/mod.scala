@@ -2,21 +2,22 @@ package typings.mapboxShelfPack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@mapbox/shelf-pack", JSImport.Namespace)
   @js.native
-  class ^ () extends ShelfPack {
+  class ^ ()
+    extends StObject
+       with ShelfPack {
     def this(width: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], options: CreateOption) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double, options: CreateOption) = this()
-    def this(width: Double, height: js.UndefOr[scala.Nothing], options: CreateOption) = this()
+    def this(width: Unit, height: Double) = this()
     def this(width: Double, height: Double, options: CreateOption) = this()
+    def this(width: Double, height: Unit, options: CreateOption) = this()
+    def this(width: Unit, height: Double, options: CreateOption) = this()
+    def this(width: Unit, height: Unit, options: CreateOption) = this()
   }
   
   @JSImport("@mapbox/shelf-pack", "Bin")
@@ -24,8 +25,8 @@ object mod {
   class Bin protected () extends StObject {
     def this(id: ID, x: Double, y: Double, w: Double, h: Double) = this()
     def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double) = this()
-    def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: js.UndefOr[scala.Nothing], maxh: Double) = this()
     def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Double, maxh: Double) = this()
+    def this(id: ID, x: Double, y: Double, w: Double, h: Double, maxw: Unit, maxh: Double) = this()
     
     var h: Double = js.native
     
@@ -38,11 +39,10 @@ object mod {
     var y: Double = js.native
   }
   
-  @js.native
   trait CreateOption extends StObject {
     
     /// If true , the sprite will automatically grow
-    var autoResize: js.UndefOr[Boolean] = js.native
+    var autoResize: js.UndefOr[Boolean] = js.undefined
   }
   object CreateOption {
     
@@ -65,11 +65,10 @@ object mod {
   
   type ID = Double | String
   
-  @js.native
   trait PackOption extends StObject {
     
     /// If true , the supplied bin objects will be updated inplace with x and y properties
-    var inPlace: js.UndefOr[Boolean] = js.native
+    var inPlace: js.UndefOr[Boolean] = js.undefined
   }
   object PackOption {
     
@@ -90,10 +89,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var id: js.UndefOr[ID] = js.native
+    var id: js.UndefOr[ID] = js.undefined
   }
   object Request {
     
@@ -114,12 +112,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequestLong extends Request {
+  trait RequestLong
+    extends StObject
+       with Request {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object RequestLong {
     
@@ -140,12 +139,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait RequestShort extends Request {
+  trait RequestShort
+    extends StObject
+       with Request {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object RequestShort {
     

@@ -4,17 +4,16 @@ import org.scalablytyped.runtime.Shortcut
 import typings.pubsubJs.PubSubJS.Base
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("pubsub-js", JSImport.Namespace)
   @js.native
-  val ^ : Base = js.native
+  val ^ : js.Object & Base = js.native
   
-  type _To = Base
+  type _To = js.Object & Base
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Base = ^
+  override def _to: js.Object & Base = ^
 }

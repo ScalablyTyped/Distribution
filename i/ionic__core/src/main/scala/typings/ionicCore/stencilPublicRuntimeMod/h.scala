@@ -116,89 +116,68 @@ import typings.std.Node
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object h {
   
+  @scala.inline
+  def apply(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  @scala.inline
+  def apply(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].apply(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  
   @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
   @js.native
-  def apply(sel: js.Any): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: Null, children: VNode): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: Null, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: VNodeData): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: VNodeData, children: VNode): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, data: VNodeData, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: js.Any, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: Node): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h")
-  @js.native
-  def apply(sel: Node, data: VNodeData): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: Null, children: VNode): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: Null, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: VNodeData): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: VNodeData, children: VNode): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, data: VNodeData, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: js.Any, text: String): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: Node): VNode = js.native
-  @JSImport("@ionic/core/dist/types/stencil-public-runtime", "h.h")
-  @js.native
-  def h(sel: Node, data: VNodeData): VNode = js.native
+  val ^ : js.Any = js.native
+  @scala.inline
+  def h(sel: js.Any): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: Null, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: Null, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: Null, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: VNodeData, children: js.Array[js.UndefOr[VNode | Null]]): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: VNodeData, children: VNode): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, data: VNodeData, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: js.Any, text: String): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: Node): VNode = ^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any]).asInstanceOf[VNode]
+  @scala.inline
+  def h(sel: Node, data: VNodeData): VNode = (^.asInstanceOf[js.Dynamic].applyDynamic("h")(sel.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[VNode]
   
   object JSX {
     
-    @js.native
     trait IntrinsicElements
-      extends typings.ionicCore.stencilPublicRuntimeMod.LocalJSX.IntrinsicElements
+      extends StObject
+         with typings.ionicCore.stencilPublicRuntimeMod.LocalJSX.IntrinsicElements
          with typings.ionicCore.stencilPublicRuntimeMod.JSXBase.IntrinsicElements
          with /* tagName */ StringDictionary[js.Any]
     object IntrinsicElements {

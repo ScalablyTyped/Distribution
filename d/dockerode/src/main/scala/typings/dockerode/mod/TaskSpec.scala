@@ -1,11 +1,8 @@
 package typings.dockerode.mod
 
 import typings.dockerode.anon.ContainerID
-import typings.dockerode.dockerodeStrings.attachment
-import typings.dockerode.dockerodeStrings.plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -23,14 +20,14 @@ object TaskSpec {
   }
   
   @scala.inline
-  def NetworkAttachmentTaskSpec(NetworkAttachmentSpec: ContainerID, Runtime: attachment): typings.dockerode.mod.NetworkAttachmentTaskSpec = {
-    val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
+  def NetworkAttachmentTaskSpec(NetworkAttachmentSpec: ContainerID): typings.dockerode.mod.NetworkAttachmentTaskSpec = {
+    val __obj = js.Dynamic.literal(NetworkAttachmentSpec = NetworkAttachmentSpec.asInstanceOf[js.Any], Runtime = "attachment")
     __obj.asInstanceOf[typings.dockerode.mod.NetworkAttachmentTaskSpec]
   }
   
   @scala.inline
-  def PluginTaskSpec(PluginSpec: PluginSpec, Runtime: plugin): typings.dockerode.mod.PluginTaskSpec = {
-    val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = Runtime.asInstanceOf[js.Any])
+  def PluginTaskSpec(PluginSpec: PluginSpec): typings.dockerode.mod.PluginTaskSpec = {
+    val __obj = js.Dynamic.literal(PluginSpec = PluginSpec.asInstanceOf[js.Any], Runtime = "plugin")
     __obj.asInstanceOf[typings.dockerode.mod.PluginTaskSpec]
   }
 }

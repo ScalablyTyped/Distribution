@@ -2,22 +2,22 @@ package typings.globParent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glob-parent", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String): String = js.native
-  @JSImport("glob-parent", JSImport.Namespace)
-  @js.native
-  def apply(pattern: String, options: Options): String = js.native
+  @scala.inline
+  def apply(pattern: String): String = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(pattern: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("glob-parent", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var flipBackslashes: js.UndefOr[Boolean] = js.native
+    var flipBackslashes: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

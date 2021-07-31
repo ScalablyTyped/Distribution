@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message for a unique key indicating a record that contains a finding.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2RecordKey extends StObject {
   
-  var bigQueryKey: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryKey] = js.native
+  var bigQueryKey: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryKey] = js.undefined
   
-  var datastoreKey: js.UndefOr[SchemaGooglePrivacyDlpV2DatastoreKey] = js.native
+  var datastoreKey: js.UndefOr[SchemaGooglePrivacyDlpV2DatastoreKey] = js.undefined
   
   /**
     * Values of identifying columns in the given row. Order of values matches
     * the order of field identifiers specified in the scanning request.
     */
-  var idValues: js.UndefOr[js.Array[String]] = js.native
+  var idValues: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2RecordKey {
   

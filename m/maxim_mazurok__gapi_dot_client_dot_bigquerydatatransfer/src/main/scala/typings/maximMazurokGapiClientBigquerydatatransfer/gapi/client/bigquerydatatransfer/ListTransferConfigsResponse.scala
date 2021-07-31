@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTransferConfigsResponse extends StObject {
   
   /**
     * Output only. The next-pagination token. For multiple-page list results, this token can be used as the `ListTransferConfigsRequest.page_token` to request the next page of list
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Output only. The stored pipeline transfer configurations. */
-  var transferConfigs: js.UndefOr[js.Array[TransferConfig]] = js.native
+  var transferConfigs: js.UndefOr[js.Array[TransferConfig]] = js.undefined
 }
 object ListTransferConfigsResponse {
   

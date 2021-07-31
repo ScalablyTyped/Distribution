@@ -2,68 +2,66 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGTextPathElement extends StObject {
   
   @JSName("MSHTML.SVGTextPathElement_typekey")
-  var MSHTMLDotSVGTextPathElement_typekey: SVGTextPathElement = js.native
+  var MSHTMLDotSVGTextPathElement_typekey: SVGTextPathElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def getCharNumAtPosition(point: SVGPoint): Double = js.native
+  def getCharNumAtPosition(point: SVGPoint): Double
   
-  def getComputedTextLength(): Double = js.native
+  def getComputedTextLength(): Double
   
-  def getEndPositionOfChar(charnum: Double): SVGPoint = js.native
+  def getEndPositionOfChar(charnum: Double): SVGPoint
   
-  def getExtentOfChar(charnum: Double): SVGRect = js.native
+  def getExtentOfChar(charnum: Double): SVGRect
   
-  def getNumberOfChars(): Double = js.native
+  def getNumberOfChars(): Double
   
-  def getRotationOfChar(charnum: Double): Double = js.native
+  def getRotationOfChar(charnum: Double): Double
   
-  def getStartPositionOfChar(charnum: Double): SVGPoint = js.native
+  def getStartPositionOfChar(charnum: Double): SVGPoint
   
-  def getSubStringLength(charnum: Double, nchars: Double): Double = js.native
+  def getSubStringLength(charnum: Double, nchars: Double): Double
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  val href: SVGAnimatedString = js.native
+  val href: SVGAnimatedString
   
-  var lengthAdjust: SVGAnimatedEnumeration = js.native
+  var lengthAdjust: SVGAnimatedEnumeration
   
-  var method: SVGAnimatedEnumeration = js.native
+  var method: SVGAnimatedEnumeration
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  def selectSubString(charnum: Double, nchars: Double): Unit = js.native
+  def selectSubString(charnum: Double, nchars: Double): Unit
   
-  var spacing: SVGAnimatedEnumeration = js.native
+  var spacing: SVGAnimatedEnumeration
   
-  var startOffset: SVGAnimatedLength = js.native
+  var startOffset: SVGAnimatedLength
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  var textLength: SVGAnimatedLength = js.native
+  var textLength: SVGAnimatedLength
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
 }
 object SVGTextPathElement {
   

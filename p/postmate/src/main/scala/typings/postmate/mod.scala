@@ -5,14 +5,15 @@ import typings.std.HTMLIFrameElement
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("postmate", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Promise[ParentAPI] {
+  class ^ protected ()
+    extends StObject
+       with Promise[ParentAPI] {
     /**
       * Initializes a new instance of Postmate
       *
@@ -31,7 +32,9 @@ object mod {
     */
   @JSImport("postmate", "Model")
   @js.native
-  class Model protected () extends Promise[ChildAPI] {
+  class Model protected ()
+    extends StObject
+       with Promise[ChildAPI] {
     /**
       * Initializes a new instance of Model
       *
@@ -108,7 +111,7 @@ object mod {
       * @param key The string property to lookup in the child's model
       * @returns child model property value
       */
-    def get(key: String): js.Promise[_] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
     
     /**
       * Listen to a particular event from the child
@@ -124,33 +127,32 @@ object mod {
   /**
     * Options passed to the Postmate constructor
     */
-  @js.native
   trait PostmateOptions extends StObject {
     
     /**
       * An Array to add classes to the iFrame. Useful for styling
       */
-    var classListArray: js.UndefOr[js.Array[String]] = js.native
+    var classListArray: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An element to append the iFrame to. Default: document.body
       */
-    var container: js.UndefOr[HTMLElement | Null] = js.native
+    var container: js.UndefOr[HTMLElement | Null] = js.undefined
     
     /**
       * An object literal to represent the default values of the child's model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A name which is used for the name attribute of the created iFrame
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A URL to load in the iFrame. The origin of this URL will also be used for securing message transport
       */
-    var url: String = js.native
+    var url: String
   }
   object PostmateOptions {
     

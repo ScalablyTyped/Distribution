@@ -4,15 +4,13 @@ import typings.relayRuntime.connectionHandlerMod.ConnectionMetadata
 import typings.relayRuntime.readerNodeMod.ReaderRefetchMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Refetch extends StObject {
   
-  val connection: js.UndefOr[js.Array[ConnectionMetadata]] = js.native
+  val connection: js.UndefOr[js.Array[ConnectionMetadata]] = js.undefined
   
-  val refetch: ReaderRefetchMetadata = js.native
+  val refetch: ReaderRefetchMetadata
 }
 object Refetch {
   

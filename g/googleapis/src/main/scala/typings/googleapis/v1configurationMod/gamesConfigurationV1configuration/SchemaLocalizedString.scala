@@ -2,30 +2,28 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a localized string resource.
   */
-@js.native
 trait SchemaLocalizedString extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesConfiguration#localizedString.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The locale string.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The string value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaLocalizedString {
   

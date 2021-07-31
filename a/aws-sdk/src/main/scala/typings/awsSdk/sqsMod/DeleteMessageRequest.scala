@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMessageRequest extends StObject {
   
   /**
     * The URL of the Amazon SQS queue from which messages are deleted. Queue URLs and names are case-sensitive.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
   
   /**
     * The receipt handle associated with the message to delete.
     */
-  var ReceiptHandle: String = js.native
+  var ReceiptHandle: String
 }
 object DeleteMessageRequest {
   

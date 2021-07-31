@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonMatch extends StObject {
   
   /**
     * Information about the faces in the input collection that match the face of a person in the video.
     */
-  var FaceMatches: js.UndefOr[FaceMatchList] = js.native
+  var FaceMatches: js.UndefOr[FaceMatchList] = js.undefined
   
   /**
     * Information about the matched person.
     */
-  var Person: js.UndefOr[PersonDetail] = js.native
+  var Person: js.UndefOr[PersonDetail] = js.undefined
   
   /**
     * The time, in milliseconds from the beginning of the video, that the person was matched in the video.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object PersonMatch {
   

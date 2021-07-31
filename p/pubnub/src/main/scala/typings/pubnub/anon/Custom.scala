@@ -2,15 +2,13 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Custom extends StObject {
   
-  var custom: js.UndefOr[js.Object | Null] = js.native
+  var custom: js.UndefOr[js.Object | Null] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object Custom {
   

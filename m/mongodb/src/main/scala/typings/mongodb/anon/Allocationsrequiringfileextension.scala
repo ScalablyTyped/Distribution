@@ -2,31 +2,29 @@ package typings.mongodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allocationsrequiringfileextension extends StObject {
   
-  var `allocations requiring file extension`: Double = js.native
+  var `allocations requiring file extension`: Double
   
-  var `blocks allocated`: Double = js.native
+  var `blocks allocated`: Double
   
-  var `blocks freed`: Double = js.native
+  var `blocks freed`: Double
   
-  var `checkpoint size`: Double = js.native
+  var `checkpoint size`: Double
   
-  var `file allocation unit size`: Double = js.native
+  var `file allocation unit size`: Double
   
-  var `file bytes available for reuse`: Double = js.native
+  var `file bytes available for reuse`: Double
   
-  var `file magic number`: Double = js.native
+  var `file magic number`: Double
   
-  var `file major version number`: Double = js.native
+  var `file major version number`: Double
   
-  var `file size in bytes`: Double = js.native
+  var `file size in bytes`: Double
   
-  var `minor version number`: Double = js.native
+  var `minor version number`: Double
 }
 object Allocationsrequiringfileextension {
   

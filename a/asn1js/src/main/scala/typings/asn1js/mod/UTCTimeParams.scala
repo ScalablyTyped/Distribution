@@ -3,15 +3,15 @@ package typings.asn1js.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UTCTimeParams extends LocalSimpleLocalSimpleStringValueBlockParams {
+trait UTCTimeParams
+  extends StObject
+     with LocalSimpleLocalSimpleStringValueBlockParams {
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var valueDate: js.UndefOr[Date] = js.native
+  var valueDate: js.UndefOr[Date] = js.undefined
 }
 object UTCTimeParams {
   

@@ -2,59 +2,57 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // KlassOptions shared between date and time pickers
-@js.native
 trait KlassOptions extends StObject {
   
   // default 'picker__input'
-  var active: js.UndefOr[String] = js.native
+  var active: js.UndefOr[String] = js.undefined
   
   // default 'picker__wrap'
-  var box: js.UndefOr[String] = js.native
+  var box: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--today' or 'picker__list-item--now'
   // Clear button
-  var buttonClear: js.UndefOr[String] = js.native
+  var buttonClear: js.UndefOr[String] = js.undefined
   
   // default 'picker__box'
   // Day/Time states
-  var disabled: js.UndefOr[String] = js.native
+  var disabled: js.UndefOr[String] = js.undefined
   
   // default 'picker--opened'
-  var focused: js.UndefOr[String] = js.native
+  var focused: js.UndefOr[String] = js.undefined
   
   // default 'picker__holder'
   // The picker frame, wrapper, and box
-  var frame: js.UndefOr[String] = js.native
+  var frame: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--selected' or 'picker__list-item--selected'
-  var highlighted: js.UndefOr[String] = js.native
+  var highlighted: js.UndefOr[String] = js.undefined
   
   // default 'picker--focused'
   // The picker holder
-  var holder: js.UndefOr[String] = js.native
+  var holder: js.UndefOr[String] = js.undefined
   
   // The element states
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--highlighted' or 'picker__list-item--highlighted'
-  var now: js.UndefOr[String] = js.native
+  var now: js.UndefOr[String] = js.undefined
   
   // default 'picker' or 'picker picker--time'
-  var opened: js.UndefOr[String] = js.native
+  var opened: js.UndefOr[String] = js.undefined
   
   // default 'picker__input--active'
   // The root picker and states
-  var picker: js.UndefOr[String] = js.native
+  var picker: js.UndefOr[String] = js.undefined
   
   // default 'picker__day--disabled' or 'picker__list-item--disabled'
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
   // default 'picker__frame'
-  var wrap: js.UndefOr[String] = js.native
+  var wrap: js.UndefOr[String] = js.undefined
 }
 object KlassOptions {
   

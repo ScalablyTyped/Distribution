@@ -2,16 +2,14 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaStatefulPolicyPreservedDisk extends StObject {
   
   /**
     * Device name of the disk to be preserved
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
 }
 object SchemaStatefulPolicyPreservedDisk {
   

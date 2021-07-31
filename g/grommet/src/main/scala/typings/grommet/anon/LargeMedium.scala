@@ -3,20 +3,19 @@ package typings.grommet.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LargeMedium
-  extends /* x */ StringDictionary[js.UndefOr[String]] {
+  extends StObject
+     with /* x */ StringDictionary[js.UndefOr[String]] {
   
-  var large: js.UndefOr[String] = js.native
+  var large: js.UndefOr[String] = js.undefined
   
-  var medium: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.undefined
   
-  var small: js.UndefOr[String] = js.native
+  var small: js.UndefOr[String] = js.undefined
   
-  var xlarge: js.UndefOr[String] = js.native
+  var xlarge: js.UndefOr[String] = js.undefined
 }
 object LargeMedium {
   

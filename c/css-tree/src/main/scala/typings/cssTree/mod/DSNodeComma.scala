@@ -3,20 +3,20 @@ package typings.cssTree.mod
 import typings.cssTree.cssTreeStrings.Comma
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DSNodeComma extends DSNode {
+trait DSNodeComma
+  extends StObject
+     with DSNode {
   
-  var `type`: Comma = js.native
+  var `type`: Comma
 }
 object DSNodeComma {
   
   @scala.inline
-  def apply(`type`: Comma): DSNodeComma = {
+  def apply(): DSNodeComma = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Comma")
     __obj.asInstanceOf[DSNodeComma]
   }
   

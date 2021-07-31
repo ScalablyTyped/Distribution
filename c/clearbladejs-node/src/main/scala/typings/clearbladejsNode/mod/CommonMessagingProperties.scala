@@ -2,15 +2,13 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonMessagingProperties extends StObject {
   
-  var hosts: js.UndefOr[String] = js.native
+  var hosts: js.UndefOr[String] = js.undefined
   
-  var ports: js.UndefOr[String] = js.native
+  var ports: js.UndefOr[String] = js.undefined
 }
 object CommonMessagingProperties {
   

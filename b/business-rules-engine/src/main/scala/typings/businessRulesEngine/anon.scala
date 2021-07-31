@@ -2,55 +2,53 @@ package typings.businessRulesEngine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contains extends StObject {
     
-    var contains: String = js.native
+    var contains: String
     
-    var creditcard: String = js.native
+    var creditcard: String
     
-    var custom: String = js.native
+    var custom: String
     
-    var date: String = js.native
+    var date: String
     
-    var dateISO: String = js.native
+    var dateISO: String
     
-    var digits: String = js.native
+    var digits: String
     
-    var email: String = js.native
+    var email: String
     
-    var equalTo: String = js.native
+    var equalTo: String
     
-    var mask: String = js.native
+    var mask: String
     
-    var max: String = js.native
+    var max: String
     
-    var maxlength: String = js.native
+    var maxlength: String
     
-    var min: String = js.native
+    var min: String
     
-    var minlength: String = js.native
+    var minlength: String
     
-    var number: String = js.native
+    var number: String
     
-    var range: String = js.native
+    var range: String
     
-    var rangelength: String = js.native
+    var rangelength: String
     
-    var remote: String = js.native
+    var remote: String
     
-    var required: String = js.native
+    var required: String
     
-    var signedDigits: String = js.native
+    var signedDigits: String
     
-    var step: String = js.native
+    var step: String
     
-    var url: String = js.native
+    var url: String
   }
   object Contains {
     

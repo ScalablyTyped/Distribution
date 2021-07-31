@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies an interface which allows manipulation of groups of filters for the {@link FilePicker} service. */
-@js.native
-trait XFilterGroupManager extends XInterface {
+trait XFilterGroupManager
+  extends StObject
+     with XInterface {
   
   /**
     * Appends a group of filters to the current filter list.
@@ -24,7 +24,7 @@ trait XFilterGroupManager extends XInterface {
     * @see com.sun.star.ui.dialogs.FilePicker
     * @throws com::sun::star::lang::IllegalArgumentException if one or more filters in the given filter list already exist.
     */
-  def appendFilterGroup(sGroupTitle: String, aFilters: SeqEquiv[StringPair]): Unit = js.native
+  def appendFilterGroup(sGroupTitle: String, aFilters: SeqEquiv[StringPair]): Unit
 }
 object XFilterGroupManager {
   

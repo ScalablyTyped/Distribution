@@ -4,44 +4,44 @@ import typings.reactBeautifulDnd.reactBeautifulDndBooleans.`true`
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP_PENDING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent react-beautiful-dnd.react-beautiful-dnd.Omit<react-beautiful-dnd.react-beautiful-dnd.DraggingState, 'phase'> */
-@js.native
-trait DropPendingState extends State {
+trait DropPendingState
+  extends StObject
+     with State {
   
-  var afterCritical: LiftEffect = js.native
+  var afterCritical: LiftEffect
   
-  var critical: Critical = js.native
+  var critical: Critical
   
-  var current: DragPositions = js.native
+  var current: DragPositions
   
-  var dimensions: DimensionMap = js.native
+  var dimensions: DimensionMap
   
-  var forceShouldAnimate: js.UndefOr[Boolean] = js.native
+  var forceShouldAnimate: js.UndefOr[Boolean] = js.undefined
   
-  var impact: DragImpact = js.native
+  var impact: DragImpact
   
-  var initial: DragPositions = js.native
+  var initial: DragPositions
   
-  var isDragging: `true` = js.native
+  var isDragging: `true`
   
-  var isWaiting: Boolean = js.native
+  var isWaiting: Boolean
   
-  var isWindowScrollAllowed: Boolean = js.native
+  var isWindowScrollAllowed: Boolean
   
-  var movementMode: MovementMode = js.native
+  var movementMode: MovementMode
   
-  var onLiftImpact: DragImpact = js.native
+  var onLiftImpact: DragImpact
   
-  var phase: DROP_PENDING = js.native
+  var phase: DROP_PENDING
   
-  var reason: DropReason = js.native
+  var reason: DropReason
   
-  var scrollJumpRequest: js.UndefOr[Position] = js.native
+  var scrollJumpRequest: js.UndefOr[Position] = js.undefined
   
-  var viewport: Viewport = js.native
+  var viewport: Viewport
 }
 object DropPendingState {
   
@@ -53,16 +53,14 @@ object DropPendingState {
     dimensions: DimensionMap,
     impact: DragImpact,
     initial: DragPositions,
-    isDragging: `true`,
     isWaiting: Boolean,
     isWindowScrollAllowed: Boolean,
     movementMode: MovementMode,
     onLiftImpact: DragImpact,
-    phase: DROP_PENDING,
     reason: DropReason,
     viewport: Viewport
   ): DropPendingState = {
-    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = isDragging.asInstanceOf[js.Any], isWaiting = isWaiting.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(afterCritical = afterCritical.asInstanceOf[js.Any], critical = critical.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], impact = impact.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], isDragging = true, isWaiting = isWaiting.asInstanceOf[js.Any], isWindowScrollAllowed = isWindowScrollAllowed.asInstanceOf[js.Any], movementMode = movementMode.asInstanceOf[js.Any], onLiftImpact = onLiftImpact.asInstanceOf[js.Any], phase = "DROP_PENDING", reason = reason.asInstanceOf[js.Any], viewport = viewport.asInstanceOf[js.Any])
     __obj.asInstanceOf[DropPendingState]
   }
   

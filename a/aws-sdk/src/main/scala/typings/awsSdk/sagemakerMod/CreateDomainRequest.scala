@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDomainRequest extends StObject {
   
   /**
     * Specifies the VPC used for non-EFS traffic. The default value is PublicInternetOnly.    PublicInternetOnly - Non-EFS traffic is through a VPC managed by Amazon SageMaker, which allows direct internet access    VpcOnly - All Studio traffic is through the specified VPC and subnets  
     */
-  var AppNetworkAccessType: js.UndefOr[typings.awsSdk.sagemakerMod.AppNetworkAccessType] = js.native
+  var AppNetworkAccessType: js.UndefOr[typings.awsSdk.sagemakerMod.AppNetworkAccessType] = js.undefined
   
   /**
     * The mode of authentication that members use to access the domain.
     */
-  var AuthMode: typings.awsSdk.sagemakerMod.AuthMode = js.native
+  var AuthMode: typings.awsSdk.sagemakerMod.AuthMode
   
   /**
     * The default user settings.
     */
-  var DefaultUserSettings: UserSettings = js.native
+  var DefaultUserSettings: UserSettings
   
   /**
     * A name for the domain.
     */
-  var DomainName: typings.awsSdk.sagemakerMod.DomainName = js.native
+  var DomainName: typings.awsSdk.sagemakerMod.DomainName
   
   /**
     * This member is deprecated and replaced with KmsKeyId.
     */
-  var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.native
+  var HomeEfsFileSystemKmsKeyId: js.UndefOr[KmsKeyId] = js.undefined
   
   /**
     * SageMaker uses AWS KMS to encrypt the EFS volume attached to the domain with an AWS managed customer master key (CMK) by default. For more control, specify a customer managed CMK.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.sagemakerMod.KmsKeyId] = js.undefined
   
   /**
     * The VPC subnets that Studio uses for communication.
     */
-  var SubnetIds: Subnets = js.native
+  var SubnetIds: Subnets
   
   /**
     * Tags to associated with the Domain. Each tag consists of a key and an optional value. Tag keys must be unique per resource. Tags are searchable using the Search API.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the Amazon Virtual Private Cloud (VPC) that Studio uses for communication.
     */
-  var VpcId: typings.awsSdk.sagemakerMod.VpcId = js.native
+  var VpcId: typings.awsSdk.sagemakerMod.VpcId
 }
 object CreateDomainRequest {
   

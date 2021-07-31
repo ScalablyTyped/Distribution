@@ -2,15 +2,13 @@ package typings.nodeZendesk.mod.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collaborator extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Collaborator {
   

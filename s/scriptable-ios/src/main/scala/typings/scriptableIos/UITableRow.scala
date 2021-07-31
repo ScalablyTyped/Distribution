@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,9 +58,9 @@ trait UITableRow extends StObject {
     * @see https://docs.scriptable.app/uitablerow/#-addtext
     */
   def addText(): UITableCell = js.native
-  def addText(title: js.UndefOr[scala.Nothing], subtitle: String): UITableCell = js.native
   def addText(title: String): UITableCell = js.native
   def addText(title: String, subtitle: String): UITableCell = js.native
+  def addText(title: Unit, subtitle: String): UITableCell = js.native
   
   /**
     * _Background color._

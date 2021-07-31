@@ -20,18 +20,16 @@ import typings.luminoDisposable.mod.IDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
-  @js.native
   trait ISettingRegistry extends StObject {
     
     /**
       * The data connector used by the setting registry.
       */
-    val connector: IDataConnector[IPlugin, String, String, String] = js.native
+    val connector: IDataConnector[IPlugin, String, String, String]
     
     /**
       * Get an individual setting.
@@ -42,7 +40,7 @@ object tokensMod {
       *
       * @returns A promise that resolves when the setting is retrieved.
       */
-    def get(plugin: String, key: String): js.Promise[Composite] = js.native
+    def get(plugin: String, key: String): js.Promise[Composite]
     
     /**
       * Load a plugin's settings into the setting registry.
@@ -52,17 +50,17 @@ object tokensMod {
       * @returns A promise that resolves with a plugin settings object or rejects
       * if the plugin is not found.
       */
-    def load(plugin: String): js.Promise[ISettings] = js.native
+    def load(plugin: String): js.Promise[ISettings]
     
     /**
       * A signal that emits the name of a plugin when its settings change.
       */
-    val pluginChanged: ISignal[this.type, String] = js.native
+    val pluginChanged: ISignal[this.type, String]
     
     /**
       * The collection of setting registry plugins.
       */
-    val plugins: StringDictionary[js.UndefOr[IPlugin]] = js.native
+    val plugins: StringDictionary[js.UndefOr[IPlugin]]
     
     /**
       * Reload a plugin's settings into the registry even if they already exist.
@@ -72,7 +70,7 @@ object tokensMod {
       * @returns A promise that resolves with a plugin settings object or rejects
       * with a list of `ISchemaValidator.IError` objects if it fails.
       */
-    def reload(plugin: String): js.Promise[ISettings] = js.native
+    def reload(plugin: String): js.Promise[ISettings]
     
     /**
       * Remove a single setting in the registry.
@@ -83,12 +81,12 @@ object tokensMod {
       *
       * @returns A promise that resolves when the setting is removed.
       */
-    def remove(plugin: String, key: String): js.Promise[Unit] = js.native
+    def remove(plugin: String, key: String): js.Promise[Unit]
     
     /**
       * The schema of the setting registry.
       */
-    val schema: ISchema = js.native
+    val schema: ISchema
     
     /**
       * Set a single setting in the registry.
@@ -102,7 +100,7 @@ object tokensMod {
       * @returns A promise that resolves when the setting has been saved.
       *
       */
-    def set(plugin: String, key: String, value: PartialJSONValue): js.Promise[Unit] = js.native
+    def set(plugin: String, key: String, value: PartialJSONValue): js.Promise[Unit]
     
     /**
       * Register a plugin transform function to act on a specific plugin.
@@ -122,7 +120,7 @@ object tokensMod {
       * fetched from its connector. If a plugin wants to override, e.g. to update
       * its schema with dynamic defaults, a `fetch` transformation can be applied.
       */
-    def transform(plugin: String, transforms: phaseinPhaseTransform): IDisposable = js.native
+    def transform(plugin: String, transforms: phaseinPhaseTransform): IDisposable
     
     /**
       * Upload a plugin's settings.
@@ -133,12 +131,12 @@ object tokensMod {
       *
       * @returns A promise that resolves when the settings have been saved.
       */
-    def upload(plugin: String, raw: String): js.Promise[Unit] = js.native
+    def upload(plugin: String, raw: String): js.Promise[Unit]
     
     /**
       * The schema validator used by the setting registry.
       */
-    val validator: ISchemaValidator = js.native
+    val validator: ISchemaValidator
   }
   object ISettingRegistry extends Shortcut {
     
@@ -168,33 +166,34 @@ object tokensMod {
     /**
       * The settings for a specific plugin.
       */
-    @js.native
-    trait IPlugin extends PartialJSONObject {
+    trait IPlugin
+      extends StObject
+         with PartialJSONObject {
       
       /**
         * The collection of values for a specified plugin.
         */
-      var data: ISettingBundle = js.native
+      var data: ISettingBundle
       
       /**
         * The name of the plugin.
         */
-      var id: String = js.native
+      var id: String
       
       /**
         * The raw user settings data as a string containing JSON with comments.
         */
-      var raw: String = js.native
+      var raw: String
       
       /**
         * The JSON schema for the plugin.
         */
-      var schema: ISchema = js.native
+      var schema: ISchema
       
       /**
         * The published version of the NPM package containing the plugin.
         */
-      var version: String = js.native
+      var version: String
     }
     /**
       * A namespace for plugin functionality.
@@ -253,33 +252,34 @@ object tokensMod {
     /**
       * A minimal subset of the formal JSON Schema that describes a property.
       */
-    @js.native
-    trait IProperty extends PartialJSONObject {
+    trait IProperty
+      extends StObject
+         with PartialJSONObject {
       
       /**
         * The default value, if any.
         */
-      var default: js.UndefOr[PartialJSONValue] = js.native
+      var default: js.UndefOr[PartialJSONValue] = js.undefined
       
       /**
         * The schema description.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * The schema's child properties.
         */
-      var properties: js.UndefOr[StringDictionary[IProperty]] = js.native
+      var properties: js.UndefOr[StringDictionary[IProperty]] = js.undefined
       
       /**
         * The title of a property.
         */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
       /**
         * The type or types of the data.
         */
-      var `type`: js.UndefOr[Primitive | js.Array[Primitive]] = js.native
+      var `type`: js.UndefOr[Primitive | js.Array[Primitive]] = js.undefined
     }
     object IProperty {
       
@@ -334,8 +334,9 @@ object tokensMod {
       * A schema type that is a minimal subset of the formal JSON Schema along with
       * optional JupyterLab rendering hints.
       */
-    @js.native
-    trait ISchema extends IProperty {
+    trait ISchema
+      extends StObject
+         with IProperty {
       
       /**
         * Whether the schema is deprecated.
@@ -346,31 +347,31 @@ object tokensMod {
         * plugin's settings if it is set to `true`.
         */
       @JSName("jupyter.lab.setting-deprecated")
-      var `jupyterDotlabDotsetting-deprecated`: js.UndefOr[Boolean] = js.native
+      var `jupyterDotlabDotsetting-deprecated`: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The JupyterLab icon hint.
         */
       @JSName("jupyter.lab.setting-icon")
-      var `jupyterDotlabDotsetting-icon`: js.UndefOr[String] = js.native
+      var `jupyterDotlabDotsetting-icon`: js.UndefOr[String] = js.undefined
       
       /**
         * The JupyterLab icon class hint.
         */
       @JSName("jupyter.lab.setting-icon-class")
-      var `jupyterDotlabDotsetting-icon-class`: js.UndefOr[String] = js.native
+      var `jupyterDotlabDotsetting-icon-class`: js.UndefOr[String] = js.undefined
       
       /**
         * The JupyterLab icon label hint.
         */
       @JSName("jupyter.lab.setting-icon-label")
-      var `jupyterDotlabDotsetting-icon-label`: js.UndefOr[String] = js.native
+      var `jupyterDotlabDotsetting-icon-label`: js.UndefOr[String] = js.undefined
       
       /**
         * The JupyterLab shortcuts that are created by a plugin's schema.
         */
       @JSName("jupyter.lab.shortcuts")
-      var jupyterDotlabDotshortcuts: js.UndefOr[js.Array[IShortcut]] = js.native
+      var jupyterDotlabDotshortcuts: js.UndefOr[js.Array[IShortcut]] = js.undefined
       
       /**
         * A flag that indicates plugin should be transformed before being used by
@@ -385,20 +386,20 @@ object tokensMod {
         * out and reject.
         */
       @JSName("jupyter.lab.transform")
-      var jupyterDotlabDottransform: js.UndefOr[Boolean] = js.native
+      var jupyterDotlabDottransform: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The root schema is always an object.
         */
       @JSName("type")
-      var type_ISchema: `object` = js.native
+      var type_ISchema: `object`
     }
     object ISchema {
       
       @scala.inline
-      def apply(`type`: `object`): ISchema = {
+      def apply(): ISchema = {
         val __obj = js.Dynamic.literal()
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("object")
         __obj.asInstanceOf[ISchema]
       }
       
@@ -452,8 +453,9 @@ object tokensMod {
     /**
       * The setting values for a plugin.
       */
-    @js.native
-    trait ISettingBundle extends PartialJSONObject {
+    trait ISettingBundle
+      extends StObject
+         with PartialJSONObject {
       
       /**
         * A composite of the user setting values and the plugin schema defaults.
@@ -461,12 +463,12 @@ object tokensMod {
         * #### Notes
         * The `composite` values will always be a superset of the `user` values.
         */
-      var composite: PartialJSONObject = js.native
+      var composite: PartialJSONObject
       
       /**
         * The user setting values.
         */
-      var user: PartialJSONObject = js.native
+      var user: PartialJSONObject
     }
     object ISettingBundle {
       
@@ -530,8 +532,9 @@ object tokensMod {
     /**
       * An interface for manipulating the settings of a specific plugin.
       */
-    @js.native
-    trait ISettings extends IDisposable {
+    trait ISettings
+      extends StObject
+         with IDisposable {
       
       /**
         * Calculate the default value of a setting by iterating through the schema.
@@ -540,22 +543,22 @@ object tokensMod {
         *
         * @returns A calculated default JSON value for a specific setting.
         */
-      def default(key: String): js.UndefOr[PartialJSONValue] = js.native
+      def default(key: String): js.UndefOr[PartialJSONValue]
       
       /**
         * Return the defaults in a commented JSON format.
         */
-      def annotatedDefaults(): String = js.native
+      def annotatedDefaults(): String
       
       /**
         * A signal that emits when the plugin's settings have changed.
         */
-      val changed: ISignal[this.type, Unit] = js.native
+      val changed: ISignal[this.type, Unit]
       
       /**
         * The composite of user settings and extension defaults.
         */
-      val composite: ReadonlyPartialJSONObject = js.native
+      val composite: ReadonlyPartialJSONObject
       
       /**
         * Get an individual setting.
@@ -564,19 +567,19 @@ object tokensMod {
         *
         * @returns The setting value.
         */
-      def get(key: String): User = js.native
+      def get(key: String): User
       
       /**
         * The plugin's ID.
         */
-      val id: String = js.native
+      val id: String
       
-      val plugin: IPlugin = js.native
+      val plugin: IPlugin
       
       /**
         * The plugin settings raw text value.
         */
-      val raw: String = js.native
+      val raw: String
       
       /**
         * Remove a single setting.
@@ -588,17 +591,17 @@ object tokensMod {
         * #### Notes
         * This function is asynchronous because it writes to the setting registry.
         */
-      def remove(key: String): js.Promise[Unit] = js.native
+      def remove(key: String): js.Promise[Unit]
       
       /**
         * Save all of the plugin's user settings at once.
         */
-      def save(raw: String): js.Promise[Unit] = js.native
+      def save(raw: String): js.Promise[Unit]
       
       /**
         * The plugin's schema.
         */
-      val schema: ISchema = js.native
+      val schema: ISchema
       
       /**
         * Set a single setting.
@@ -612,12 +615,12 @@ object tokensMod {
         * #### Notes
         * This function is asynchronous because it writes to the setting registry.
         */
-      def set(key: String, value: PartialJSONValue): js.Promise[Unit] = js.native
+      def set(key: String, value: PartialJSONValue): js.Promise[Unit]
       
       /**
         * The user settings.
         */
-      val user: ReadonlyPartialJSONObject = js.native
+      val user: ReadonlyPartialJSONObject
       
       /**
         * Validates raw settings with comments.
@@ -626,12 +629,12 @@ object tokensMod {
         *
         * @returns A list of errors or `null` if valid.
         */
-      def validate(raw: String): js.Array[IError] | Null = js.native
+      def validate(raw: String): js.Array[IError] | Null
       
       /**
         * The published version of the NPM package containing these settings.
         */
-      val version: String = js.native
+      val version: String
     }
     object ISettings {
       
@@ -712,33 +715,34 @@ object tokensMod {
     /**
       * An interface describing a JupyterLab keyboard shortcut.
       */
-    @js.native
-    trait IShortcut extends PartialJSONObject {
+    trait IShortcut
+      extends StObject
+         with PartialJSONObject {
       
       /**
         * The optional arguments passed into the shortcut's command.
         */
-      var args: js.UndefOr[PartialJSONObject] = js.native
+      var args: js.UndefOr[PartialJSONObject] = js.undefined
       
       /**
         * The command invoked by the shortcut.
         */
-      var command: String = js.native
+      var command: String
       
       /**
         * Whether a keyboard shortcut is disabled. `False` by default.
         */
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The key combination of the shortcut.
         */
-      var keys: js.Array[String] = js.native
+      var keys: js.Array[String]
       
       /**
         * The CSS selector applicable to the shortcut.
         */
-      var selector: String = js.native
+      var selector: String
     }
     object IShortcut {
       

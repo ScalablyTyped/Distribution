@@ -2,31 +2,29 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationCoordinates extends StObject {
   
-  val accuracy: Double = js.native
+  val accuracy: Double
   
-  val altitude: Double | Null = js.native
+  val altitude: Double | Null
   
-  val altitudeAccuracy: Double | Null = js.native
+  val altitudeAccuracy: Double | Null
   
-  val heading: Double | Null = js.native
+  val heading: Double | Null
   
-  val latitude: Double = js.native
+  val latitude: Double
   
-  val longitude: Double = js.native
+  val longitude: Double
   
-  val speed: Double | Null = js.native
+  val speed: Double | Null
 }
 object GeolocationCoordinates {
   
   @scala.inline
   def apply(accuracy: Double, latitude: Double, longitude: Double): GeolocationCoordinates = {
-    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(accuracy = accuracy.asInstanceOf[js.Any], latitude = latitude.asInstanceOf[js.Any], longitude = longitude.asInstanceOf[js.Any], altitude = null, altitudeAccuracy = null, heading = null, speed = null)
     __obj.asInstanceOf[GeolocationCoordinates]
   }
   

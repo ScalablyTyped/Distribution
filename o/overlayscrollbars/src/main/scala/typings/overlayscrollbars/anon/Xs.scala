@@ -2,19 +2,17 @@ package typings.overlayscrollbars.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Xs extends StObject {
   
-  var x: Boolean = js.native
+  var x: Boolean
   
-  var xs: Boolean = js.native
+  var xs: Boolean
   
-  var y: Boolean = js.native
+  var y: Boolean
   
-  var ys: Boolean = js.native
+  var ys: Boolean
 }
 object Xs {
   

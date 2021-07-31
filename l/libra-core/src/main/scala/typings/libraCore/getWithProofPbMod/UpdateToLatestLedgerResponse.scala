@@ -11,7 +11,6 @@ import typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse")
@@ -19,12 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UpdateToLatestLedgerResponse () extends Message {
   
   def addResponseItems(): ResponseItem = js.native
-  def addResponseItems(value: js.UndefOr[scala.Nothing], index: Double): ResponseItem = js.native
+  def addResponseItems(value: Unit, index: Double): ResponseItem = js.native
   def addResponseItems(value: ResponseItem): ResponseItem = js.native
   def addResponseItems(value: ResponseItem, index: Double): ResponseItem = js.native
   
   def addValidatorChangeEvents(): ValidatorChangeEventWithProof = js.native
-  def addValidatorChangeEvents(value: js.UndefOr[scala.Nothing], index: Double): ValidatorChangeEventWithProof = js.native
+  def addValidatorChangeEvents(value: Unit, index: Double): ValidatorChangeEventWithProof = js.native
   def addValidatorChangeEvents(value: ValidatorChangeEventWithProof): ValidatorChangeEventWithProof = js.native
   def addValidatorChangeEvents(value: ValidatorChangeEventWithProof, index: Double): ValidatorChangeEventWithProof = js.native
   
@@ -56,13 +55,11 @@ object UpdateToLatestLedgerResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerResponse = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): UpdateToLatestLedgerResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UpdateToLatestLedgerResponse]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: UpdateToLatestLedgerResponse, reader: BinaryReader): UpdateToLatestLedgerResponse = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: UpdateToLatestLedgerResponse, reader: BinaryReader): UpdateToLatestLedgerResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UpdateToLatestLedgerResponse]
   
   @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse.extensions")
   @js.native
@@ -77,22 +74,19 @@ object UpdateToLatestLedgerResponse {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: UpdateToLatestLedgerResponse, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: UpdateToLatestLedgerResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/get_with_proof_pb", "UpdateToLatestLedgerResponse.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: UpdateToLatestLedgerResponse): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: UpdateToLatestLedgerResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var ledgerInfoWithSigs: js.UndefOr[typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures.AsObject] = js.native
+    var ledgerInfoWithSigs: js.UndefOr[typings.libraCore.ledgerInfoPbMod.LedgerInfoWithSignatures.AsObject] = js.undefined
     
-    var responseItemsList: js.Array[typings.libraCore.getWithProofPbMod.ResponseItem.AsObject] = js.native
+    var responseItemsList: js.Array[typings.libraCore.getWithProofPbMod.ResponseItem.AsObject]
     
-    var validatorChangeEventsList: js.Array[typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof.AsObject] = js.native
+    var validatorChangeEventsList: js.Array[typings.libraCore.validatorChangePbMod.ValidatorChangeEventWithProof.AsObject]
   }
   object AsObject {
     

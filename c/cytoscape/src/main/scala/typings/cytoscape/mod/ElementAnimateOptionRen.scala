@@ -2,14 +2,14 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElementAnimateOptionRen extends ElementAnimateOptionsBase {
+trait ElementAnimateOptionRen
+  extends StObject
+     with ElementAnimateOptionsBase {
   
   /** A rendered position to which the elements will be animated. */
-  var renderedPosition: js.UndefOr[Position] = js.native
+  var renderedPosition: js.UndefOr[Position] = js.undefined
 }
 object ElementAnimateOptionRen {
   

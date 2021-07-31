@@ -1,45 +1,57 @@
 package typings.webdriverio.webdriverioCoreMod.WebdriverIO
 
+import typings.node.Buffer
 import typings.std.Record
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Matches extends Request {
+trait Matches
+  extends StObject
+     with Request {
+  
   /**
     * body response of actual resource
     */
-  var body: js.Any = js.native
+  var body: String | Buffer | JsonCompatible
+  
+  /**
+    * HTTP response headers.
+    */
+  var responseHeaders: Record[String, String]
+  
+  /**
+    * HTTP response status code.
+    */
+  var statusCode: Double
 }
-
 object Matches {
+  
   @scala.inline
   def apply(
-    body: js.Any,
+    body: String | Buffer | JsonCompatible,
     headers: Record[String, String],
     initialPriority: ResourcePriority,
     method: String,
     referrerPolicy: ReferrerPolicy,
+    responseHeaders: Record[String, String],
+    statusCode: Double,
     url: String
   ): Matches = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], initialPriority = initialPriority.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], referrerPolicy = referrerPolicy.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], initialPriority = initialPriority.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], referrerPolicy = referrerPolicy.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
     __obj.asInstanceOf[Matches]
   }
-  @scala.inline
-  implicit class MatchesOps[Self <: Matches] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setBody(value: js.Any): Self = this.set("body", value.asInstanceOf[js.Any])
-  }
   
+  @scala.inline
+  implicit class MatchesMutableBuilder[Self <: Matches] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setBody(value: String | Buffer | JsonCompatible): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setResponseHeaders(value: Record[String, String]): Self = StObject.set(x, "responseHeaders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
+  }
 }
-

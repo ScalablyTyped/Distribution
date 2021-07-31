@@ -2,19 +2,17 @@ package typings.oauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessTokenHttpMethod extends StObject {
     
-    var accessTokenHttpMethod: String = js.native
+    var accessTokenHttpMethod: String
     
-    var followRedirects: Boolean = js.native
+    var followRedirects: Boolean
     
-    var requestTokenHttpMethod: String = js.native
+    var requestTokenHttpMethod: String
   }
   object AccessTokenHttpMethod {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Data {
     

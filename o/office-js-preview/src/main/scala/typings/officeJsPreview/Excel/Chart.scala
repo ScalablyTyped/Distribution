@@ -19,7 +19,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Rows
 import typings.officeJsPreview.officeJsPreviewStrings.Zero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,7 +29,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait Chart extends ClientObject {
+trait Chart
+  extends StObject
+     with ClientObject {
   
   /**
     * Activates the chart in the Excel UI.
@@ -110,37 +111,37 @@ trait Chart extends ClientObject {
     * @param fittingMode (Optional) The method used to scale the chart to the specified to the specified dimensions (if both height and width are set).
     */
   def getImage(): ClientResult[String] = js.native
-  def getImage(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fittingMode: ImageFittingMode): ClientResult[String] = js.native
-  def getImage(width: js.UndefOr[scala.Nothing], height: Double): ClientResult[String] = js.native
-  def getImage(width: js.UndefOr[scala.Nothing], height: Double, fittingMode: ImageFittingMode): ClientResult[String] = js.native
   def getImage(width: Double): ClientResult[String] = js.native
-  def getImage(width: Double, height: js.UndefOr[scala.Nothing], fittingMode: ImageFittingMode): ClientResult[String] = js.native
   def getImage(width: Double, height: Double): ClientResult[String] = js.native
   def getImage(width: Double, height: Double, fittingMode: ImageFittingMode): ClientResult[String] = js.native
-  @JSName("getImage")
-  def getImage_Fill(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fittingMode: Fill): ClientResult[String] = js.native
-  @JSName("getImage")
-  def getImage_Fill(width: js.UndefOr[scala.Nothing], height: Double, fittingMode: Fill): ClientResult[String] = js.native
-  @JSName("getImage")
-  def getImage_Fill(width: Double, height: js.UndefOr[scala.Nothing], fittingMode: Fill): ClientResult[String] = js.native
+  def getImage(width: Double, height: Unit, fittingMode: ImageFittingMode): ClientResult[String] = js.native
+  def getImage(width: Unit, height: Double): ClientResult[String] = js.native
+  def getImage(width: Unit, height: Double, fittingMode: ImageFittingMode): ClientResult[String] = js.native
+  def getImage(width: Unit, height: Unit, fittingMode: ImageFittingMode): ClientResult[String] = js.native
   @JSName("getImage")
   def getImage_Fill(width: Double, height: Double, fittingMode: Fill): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_Fit(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fittingMode: Fit): ClientResult[String] = js.native
+  def getImage_Fill(width: Double, height: Unit, fittingMode: Fill): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_Fit(width: js.UndefOr[scala.Nothing], height: Double, fittingMode: Fit): ClientResult[String] = js.native
+  def getImage_Fill(width: Unit, height: Double, fittingMode: Fill): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_Fit(width: Double, height: js.UndefOr[scala.Nothing], fittingMode: Fit): ClientResult[String] = js.native
+  def getImage_Fill(width: Unit, height: Unit, fittingMode: Fill): ClientResult[String] = js.native
   @JSName("getImage")
   def getImage_Fit(width: Double, height: Double, fittingMode: Fit): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_FitAndCenter(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], fittingMode: FitAndCenter): ClientResult[String] = js.native
+  def getImage_Fit(width: Double, height: Unit, fittingMode: Fit): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_FitAndCenter(width: js.UndefOr[scala.Nothing], height: Double, fittingMode: FitAndCenter): ClientResult[String] = js.native
+  def getImage_Fit(width: Unit, height: Double, fittingMode: Fit): ClientResult[String] = js.native
   @JSName("getImage")
-  def getImage_FitAndCenter(width: Double, height: js.UndefOr[scala.Nothing], fittingMode: FitAndCenter): ClientResult[String] = js.native
+  def getImage_Fit(width: Unit, height: Unit, fittingMode: Fit): ClientResult[String] = js.native
   @JSName("getImage")
   def getImage_FitAndCenter(width: Double, height: Double, fittingMode: FitAndCenter): ClientResult[String] = js.native
+  @JSName("getImage")
+  def getImage_FitAndCenter(width: Double, height: Unit, fittingMode: FitAndCenter): ClientResult[String] = js.native
+  @JSName("getImage")
+  def getImage_FitAndCenter(width: Unit, height: Double, fittingMode: FitAndCenter): ClientResult[String] = js.native
+  @JSName("getImage")
+  def getImage_FitAndCenter(width: Unit, height: Unit, fittingMode: FitAndCenter): ClientResult[String] = js.native
   
   /**
     *

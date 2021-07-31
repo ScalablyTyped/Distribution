@@ -3,13 +3,11 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Web.WebErrorStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebSocketErrorStatics extends StObject {
   
-  def getStatus(hresult: Double): WebErrorStatus = js.native
+  def getStatus(hresult: Double): WebErrorStatus
 }
 object IWebSocketErrorStatics {
   

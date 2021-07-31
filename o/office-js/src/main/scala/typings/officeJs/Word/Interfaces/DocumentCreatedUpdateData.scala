@@ -2,11 +2,9 @@ package typings.officeJs.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DocumentCreated object, for use in `documentCreated.set({ ... })`. */
-@js.native
 trait DocumentCreatedUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait DocumentCreatedUpdateData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var body: js.UndefOr[BodyUpdateData] = js.native
+  var body: js.UndefOr[BodyUpdateData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait DocumentCreatedUpdateData extends StObject {
     *
     * [Api set: WordApiHiddenDocument 1.3]
     */
-  var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.native
+  var properties: js.UndefOr[DocumentPropertiesUpdateData] = js.undefined
 }
 object DocumentCreatedUpdateData {
   

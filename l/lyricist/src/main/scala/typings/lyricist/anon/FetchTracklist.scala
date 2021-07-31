@@ -3,15 +3,13 @@ package typings.lyricist.anon
 import typings.lyricist.mod.LyricistTextFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchTracklist extends StObject {
   
-  var fetchTracklist: js.UndefOr[Boolean] = js.native
+  var fetchTracklist: js.UndefOr[Boolean] = js.undefined
   
-  var textFormat: js.UndefOr[LyricistTextFormat] = js.native
+  var textFormat: js.UndefOr[LyricistTextFormat] = js.undefined
 }
 object FetchTracklist {
   

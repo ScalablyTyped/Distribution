@@ -3,18 +3,16 @@ package typings.mangopay2NodejsSdk.anon
 import typings.mangopay2NodejsSdk.typesMod.DeepPartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<{  clientId :string,   apiVersion :string,  readonly id :string}> */
-@js.native
 trait DeepPartialclientIdstring extends StObject {
   
-  var apiVersion: js.UndefOr[DeepPartial[String]] = js.native
+  var apiVersion: js.UndefOr[DeepPartial[String]] = js.undefined
   
-  var clientId: js.UndefOr[DeepPartial[String]] = js.native
+  var clientId: js.UndefOr[DeepPartial[String]] = js.undefined
   
-  var id: js.UndefOr[DeepPartial[String]] = js.native
+  var id: js.UndefOr[DeepPartial[String]] = js.undefined
 }
 object DeepPartialclientIdstring {
   

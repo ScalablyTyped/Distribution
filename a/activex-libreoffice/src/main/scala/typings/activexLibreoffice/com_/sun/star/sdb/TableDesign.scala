@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,9 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XDispatchProviderInterceptor
   * @since OOo 1.1.2
   */
-@js.native
 trait TableDesign
-  extends XController
+  extends StObject
+     with XController
      with XInitialization
 object TableDesign {
   
@@ -43,7 +42,7 @@ object TableDesign {
     getFrame: () => XFrame,
     getModel: () => XModel,
     getViewData: () => js.Any,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

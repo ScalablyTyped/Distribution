@@ -2,21 +2,19 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetModule extends StObject {
   
-  def getModule(name: String): js.Any = js.native
+  def getModule(name: String): js.Any
   
-  def registerModule(name: String, fn: js.Function): Unit = js.native
+  def registerModule(name: String, fn: js.Function): Unit
   
-  def registerModuleAsSingleton(name: String, fn: js.Function): Unit = js.native
+  def registerModuleAsSingleton(name: String, fn: js.Function): Unit
   
-  def setConfig(newConfig: js.Object): Unit = js.native
+  def setConfig(newConfig: js.Object): Unit
   
-  def setPlaybackAdapters(newAdapters: js.Any): Unit = js.native
+  def setPlaybackAdapters(newAdapters: js.Any): Unit
 }
 object GetModule {
   

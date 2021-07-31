@@ -3,16 +3,17 @@ package typings.ethersprojectStrings
 import typings.ethersprojectBytes.mod.BytesLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bytes32Mod {
   
-  @JSImport("@ethersproject/strings/lib/bytes32", "formatBytes32String")
+  @JSImport("@ethersproject/strings/lib/bytes32", JSImport.Namespace)
   @js.native
-  def formatBytes32String(text: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/strings/lib/bytes32", "parseBytes32String")
-  @js.native
-  def parseBytes32String(bytes: BytesLike): String = js.native
+  @scala.inline
+  def formatBytes32String(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatBytes32String")(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def parseBytes32String(bytes: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseBytes32String")(bytes.asInstanceOf[js.Any]).asInstanceOf[String]
 }

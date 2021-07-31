@@ -6,45 +6,43 @@ import typings.nyaapi.nyaapiStrings.k
 import typings.nyaapi.nyaapiStrings.m
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchOptions extends StObject {
   
-  var c: js.UndefOr[Category] = js.native
+  var c: js.UndefOr[Category] = js.undefined
   
-  var dateType: js.UndefOr[String] = js.native
+  var dateType: js.UndefOr[String] = js.undefined
   
-  var fromDate: js.UndefOr[String] = js.native
+  var fromDate: js.UndefOr[String] = js.undefined
   
-  var fromID: js.UndefOr[String] = js.native
+  var fromID: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[js.Array[String]] = js.native
+  var lang: js.UndefOr[js.Array[String]] = js.undefined
   
-  var maxSize: js.UndefOr[String] = js.native
+  var maxSize: js.UndefOr[String] = js.undefined
   
-  var maxage: js.UndefOr[String] = js.native
+  var maxage: js.UndefOr[String] = js.undefined
   
-  var minSize: js.UndefOr[String] = js.native
+  var minSize: js.UndefOr[String] = js.undefined
   
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[Boolean] = js.native
+  var order: js.UndefOr[Boolean] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var s: js.UndefOr[String] = js.native
+  var s: js.UndefOr[String] = js.undefined
   
-  var sizeType: js.UndefOr[b | k | m | g] = js.native
+  var sizeType: js.UndefOr[b | k | m | g] = js.undefined
   
-  var sort: js.UndefOr[SortType] = js.native
+  var sort: js.UndefOr[SortType] = js.undefined
   
-  var term: js.UndefOr[String] = js.native
+  var term: js.UndefOr[String] = js.undefined
   
-  var toDate: js.UndefOr[String] = js.native
+  var toDate: js.UndefOr[String] = js.undefined
   
-  var userID: js.UndefOr[String] = js.native
+  var userID: js.UndefOr[String] = js.undefined
 }
 object SearchOptions {
   

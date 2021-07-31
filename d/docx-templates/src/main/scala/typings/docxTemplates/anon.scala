@@ -12,47 +12,45 @@ import typings.sax.mod.QualifiedAttribute
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Category extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var characters: js.UndefOr[Double] = js.native
+    var characters: js.UndefOr[Double] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var created: js.UndefOr[String] = js.native
+    var created: js.UndefOr[String] = js.undefined
     
-    var creator: js.UndefOr[String] = js.native
+    var creator: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var lastModifiedBy: js.UndefOr[String] = js.native
+    var lastModifiedBy: js.UndefOr[String] = js.undefined
     
-    var lastPrinted: js.UndefOr[String] = js.native
+    var lastPrinted: js.UndefOr[String] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var modified: js.UndefOr[String] = js.native
+    var modified: js.UndefOr[String] = js.undefined
     
-    var pages: js.UndefOr[Double] = js.native
+    var pages: js.UndefOr[Double] = js.undefined
     
-    var paragraphs: js.UndefOr[Double] = js.native
+    var paragraphs: js.UndefOr[Double] = js.undefined
     
-    var revision: js.UndefOr[String] = js.native
+    var revision: js.UndefOr[String] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var words: js.UndefOr[Double] = js.native
+    var words: js.UndefOr[Double] = js.undefined
   }
   object Category {
     
@@ -169,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CmdName extends StObject {
     
-    var cmdName: js.UndefOr[String] = js.native
+    var cmdName: js.UndefOr[String] = js.undefined
     
-    var cmdRest: String = js.native
+    var cmdRest: String
   }
   object CmdName {
     
@@ -198,12 +195,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Ctx extends StObject {
     
-    var ctx: js.Object = js.native
+    var ctx: js.Object
     
-    var sandbox: js.Object = js.native
+    var sandbox: js.Object
   }
   object Ctx {
     
@@ -224,14 +220,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictkey extends /* key */ StringDictionary[QualifiedAttribute | String] {
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[QualifiedAttribute | String] {
     
-    var ContentType: js.UndefOr[String] = js.native
+    var ContentType: js.UndefOr[String] = js.undefined
     
-    var Extension: js.UndefOr[String] = js.native
+    var Extension: js.UndefOr[String] = js.undefined
     
-    var PartName: js.UndefOr[String] = js.native
+    var PartName: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     
@@ -264,18 +261,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait Errors extends ReportOutput {
+  trait Errors
+    extends StObject
+       with ReportOutput {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var status: errors = js.native
+    var status: errors
   }
   object Errors {
     
     @scala.inline
-    def apply(errors: js.Array[Error], status: errors): Errors = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(errors: js.Array[Error]): Errors = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], status = "errors")
       __obj.asInstanceOf[Errors]
     }
     
@@ -293,30 +291,25 @@ object anon {
     }
   }
   
-  @js.native
-  trait Htmls extends ReportOutput {
+  trait Htmls
+    extends StObject
+       with ReportOutput {
     
-    var htmls: typings.docxTemplates.typesMod.Htmls = js.native
+    var htmls: typings.docxTemplates.typesMod.Htmls
     
-    var images: Images = js.native
+    var images: Images
     
-    var links: Links = js.native
+    var links: Links
     
-    var report: Node = js.native
+    var report: Node
     
-    var status: success = js.native
+    var status: success
   }
   object Htmls {
     
     @scala.inline
-    def apply(
-      htmls: typings.docxTemplates.typesMod.Htmls,
-      images: Images,
-      links: Links,
-      report: Node,
-      status: success
-    ): Htmls = {
-      val __obj = js.Dynamic.literal(htmls = htmls.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(htmls: typings.docxTemplates.typesMod.Htmls, images: Images, links: Links, report: Node): Htmls = {
+      val __obj = js.Dynamic.literal(htmls = htmls.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], links = links.asInstanceOf[js.Any], report = report.asInstanceOf[js.Any], status = "success")
       __obj.asInstanceOf[Htmls]
     }
     
@@ -340,12 +333,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ModifiedSandbox extends StObject {
     
-    var modifiedSandbox: js.Object = js.native
+    var modifiedSandbox: js.Object
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object ModifiedSandbox {
     
@@ -366,14 +358,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Wp extends StObject {
     
     @JSName("w:p")
-    var wColonp: BufferStatus = js.native
+    var wColonp: BufferStatus
     
     @JSName("w:tr")
-    var wColontr: BufferStatus = js.native
+    var wColontr: BufferStatus
   }
   object Wp {
     

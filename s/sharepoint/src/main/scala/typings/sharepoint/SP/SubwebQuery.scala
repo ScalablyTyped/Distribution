@@ -2,19 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubwebQuery extends ClientValueObject {
+trait SubwebQuery
+  extends StObject
+     with ClientValueObject {
   
-  def get_configurationFilter(): Double = js.native
+  def get_configurationFilter(): Double
   
-  def get_webTemplateFilter(): Double = js.native
+  def get_webTemplateFilter(): Double
   
-  def set_configurationFilter(value: Double): Unit = js.native
+  def set_configurationFilter(value: Double): Unit
   
-  def set_webTemplateFilter(value: Double): Unit = js.native
+  def set_webTemplateFilter(value: Double): Unit
 }
 object SubwebQuery {
   

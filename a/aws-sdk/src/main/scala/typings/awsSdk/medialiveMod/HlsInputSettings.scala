@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HlsInputSettings extends StObject {
   
   /**
     * When specified the HLS stream with the m3u8 BANDWIDTH that most closely matches this value will be chosen, otherwise the highest bandwidth stream in the m3u8 will be chosen.  The bitrate is specified in bits per second, as in an HLS manifest.
     */
-  var Bandwidth: js.UndefOr[integerMin0] = js.native
+  var Bandwidth: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * When specified, reading of the HLS input will begin this many buffer segments from the end (most recently written segment).  When not specified, the HLS input will begin with the first segment specified in the m3u8.
     */
-  var BufferSegments: js.UndefOr[integerMin0] = js.native
+  var BufferSegments: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * The number of consecutive times that attempts to read a manifest or segment must fail before the input is considered unavailable.
     */
-  var Retries: js.UndefOr[integerMin0] = js.native
+  var Retries: js.UndefOr[integerMin0] = js.undefined
   
   /**
     * The number of seconds between retries when an attempt to read a manifest or segment fails.
     */
-  var RetryInterval: js.UndefOr[integerMin0] = js.native
+  var RetryInterval: js.UndefOr[integerMin0] = js.undefined
 }
 object HlsInputSettings {
   

@@ -3,68 +3,66 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object budgets {
   
-  @js.native
   trait BudgetCostTypes extends StObject {
     
     /**
       * A boolean value whether to include credits in the cost budget. Defaults to `true`
       */
-    var includeCredit: js.UndefOr[Input[Boolean]] = js.native
+    var includeCredit: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether a budget includes discounts. Defaults to `true`
       */
-    var includeDiscount: js.UndefOr[Input[Boolean]] = js.native
+    var includeDiscount: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include other subscription costs in the cost budget. Defaults to `true`
       */
-    var includeOtherSubscription: js.UndefOr[Input[Boolean]] = js.native
+    var includeOtherSubscription: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include recurring costs in the cost budget. Defaults to `true`
       */
-    var includeRecurring: js.UndefOr[Input[Boolean]] = js.native
+    var includeRecurring: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include refunds in the cost budget. Defaults to `true`
       */
-    var includeRefund: js.UndefOr[Input[Boolean]] = js.native
+    var includeRefund: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include subscriptions in the cost budget. Defaults to `true`
       */
-    var includeSubscription: js.UndefOr[Input[Boolean]] = js.native
+    var includeSubscription: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include support costs in the cost budget. Defaults to `true`
       */
-    var includeSupport: js.UndefOr[Input[Boolean]] = js.native
+    var includeSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include tax in the cost budget. Defaults to `true`
       */
-    var includeTax: js.UndefOr[Input[Boolean]] = js.native
+    var includeTax: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to include upfront costs in the cost budget. Defaults to `true`
       */
-    var includeUpfront: js.UndefOr[Input[Boolean]] = js.native
+    var includeUpfront: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether a budget uses the amortized rate. Defaults to `false`
       */
-    var useAmortized: js.UndefOr[Input[Boolean]] = js.native
+    var useAmortized: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A boolean value whether to use blended costs in the cost budget. Defaults to `false`
       */
-    var useBlended: js.UndefOr[Input[Boolean]] = js.native
+    var useBlended: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object BudgetCostTypes {
     
@@ -145,38 +143,37 @@ object budgets {
     }
   }
   
-  @js.native
   trait BudgetNotification extends StObject {
     
     /**
       * (Required) Comparison operator to use to evaluate the condition. Can be `LESS_THAN`, `EQUAL_TO` or `GREATER_THAN`.
       */
-    var comparisonOperator: Input[String] = js.native
+    var comparisonOperator: Input[String]
     
     /**
       * (Required) What kind of budget value to notify on. Can be `ACTUAL` or `FORECASTED`
       */
-    var notificationType: Input[String] = js.native
+    var notificationType: Input[String]
     
     /**
       * (Optional) E-Mail addresses to notify. Either this or `subscriberSnsTopicArns` is required.
       */
-    var subscriberEmailAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var subscriberEmailAddresses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * (Optional) SNS topics to notify. Either this or `subscriberEmailAddresses` is required.
       */
-    var subscriberSnsTopicArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var subscriberSnsTopicArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * (Required) Threshold when the notification should be sent.
       */
-    var threshold: Input[Double] = js.native
+    var threshold: Input[Double]
     
     /**
       * (Required) What kind of threshold is defined. Can be `PERCENTAGE` OR `ABSOLUTE_VALUE`.
       */
-    var thresholdType: Input[String] = js.native
+    var thresholdType: Input[String]
   }
   object BudgetNotification {
     

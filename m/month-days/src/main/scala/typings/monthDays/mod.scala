@@ -2,7 +2,6 @@ package typings.monthDays
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,26 +15,27 @@ object mod {
   //=> 29
   ```
   */
-  @JSImport("month-days", JSImport.Namespace)
-  @js.native
-  def apply(): Double = js.native
-  @JSImport("month-days", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Double = js.native
+  @scala.inline
+  def apply(): Double = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Double]
+  @scala.inline
+  def apply(options: Options): Double = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Double]
   
+  @JSImport("month-days", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Note that the month is zero-index to be consistent with the native date methods.
     		@default (new Date()).getUTCMonth()
     		*/
-    val month: js.UndefOr[Double] = js.native
+    val month: js.UndefOr[Double] = js.undefined
     
     /**
     		@default (new Date).getUTCFullYear()
     		*/
-    val year: js.UndefOr[Double] = js.native
+    val year: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

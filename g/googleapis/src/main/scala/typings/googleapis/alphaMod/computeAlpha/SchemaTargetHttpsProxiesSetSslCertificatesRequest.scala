@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetHttpsProxiesSetSslCertificatesRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaTargetHttpsProxiesSetSslCertificatesRequest extends StObject {
     * TargetHttpsProxy resource. Currently exactly one SslCertificate resource
     * must be specified.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTargetHttpsProxiesSetSslCertificatesRequest {
   

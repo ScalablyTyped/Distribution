@@ -6,21 +6,19 @@ import typings.tryghostContentApi.anon.BrowseRead
 import typings.tryghostContentApi.anon.Read
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GhostAPI extends StObject {
   
-  var authors: Read = js.native
+  var authors: Read
   
-  var pages: Browse = js.native
+  var pages: Browse
   
-  var posts: Browse = js.native
+  var posts: Browse
   
-  var settings: BrowseBrowseFunction = js.native
+  var settings: BrowseBrowseFunction
   
-  var tags: BrowseRead = js.native
+  var tags: BrowseRead
 }
 object GhostAPI {
   

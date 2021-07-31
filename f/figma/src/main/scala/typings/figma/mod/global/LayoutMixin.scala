@@ -6,35 +6,33 @@ import typings.figma.figmaStrings.MIN
 import typings.figma.figmaStrings.STRETCH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutMixin extends StObject {
   
-  val absoluteTransform: Transform = js.native
+  val absoluteTransform: Transform
   
-  var constrainProportions: Boolean = js.native
+  var constrainProportions: Boolean
   
-  val height: Double = js.native
+  val height: Double
   
-  var layoutAlign: MIN | CENTER | MAX | STRETCH = js.native
+  var layoutAlign: MIN | CENTER | MAX | STRETCH
   
-  var relativeTransform: Transform = js.native
+  var relativeTransform: Transform
   
   // applicable only inside auto-layout frames
-  def resize(width: Double, height: Double): Unit = js.native
+  def resize(width: Double, height: Double): Unit
   
-  def resizeWithoutConstraints(width: Double, height: Double): Unit = js.native
+  def resizeWithoutConstraints(width: Double, height: Double): Unit
   
-  var rotation: Double = js.native
+  var rotation: Double
   
   // In degrees
-  val width: Double = js.native
+  val width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object LayoutMixin {
   

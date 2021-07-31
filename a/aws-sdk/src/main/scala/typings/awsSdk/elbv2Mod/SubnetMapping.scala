@@ -2,31 +2,29 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubnetMapping extends StObject {
   
   /**
     * [Network Load Balancers] The allocation ID of the Elastic IP address for an internet-facing load balancer.
     */
-  var AllocationId: js.UndefOr[typings.awsSdk.elbv2Mod.AllocationId] = js.native
+  var AllocationId: js.UndefOr[typings.awsSdk.elbv2Mod.AllocationId] = js.undefined
   
   /**
     * [Network Load Balancers] The IPv6 address.
     */
-  var IPv6Address: js.UndefOr[typings.awsSdk.elbv2Mod.IPv6Address] = js.native
+  var IPv6Address: js.UndefOr[typings.awsSdk.elbv2Mod.IPv6Address] = js.undefined
   
   /**
     * [Network Load Balancers] The private IPv4 address for an internal load balancer.
     */
-  var PrivateIPv4Address: js.UndefOr[typings.awsSdk.elbv2Mod.PrivateIPv4Address] = js.native
+  var PrivateIPv4Address: js.UndefOr[typings.awsSdk.elbv2Mod.PrivateIPv4Address] = js.undefined
   
   /**
     * The ID of the subnet.
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.elbv2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.elbv2Mod.SubnetId] = js.undefined
 }
 object SubnetMapping {
   

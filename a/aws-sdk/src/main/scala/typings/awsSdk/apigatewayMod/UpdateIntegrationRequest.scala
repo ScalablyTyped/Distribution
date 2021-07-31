@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIntegrationRequest extends StObject {
   
   /**
     * [Required] Represents an update integration request's HTTP method.
     */
-  var httpMethod: String = js.native
+  var httpMethod: String
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
     */
-  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.native
+  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
   
   /**
     * [Required] Represents an update integration request's resource identifier.
     */
-  var resourceId: String = js.native
+  var resourceId: String
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object UpdateIntegrationRequest {
   

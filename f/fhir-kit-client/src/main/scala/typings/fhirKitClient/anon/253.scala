@@ -4,27 +4,25 @@ import typings.fhirKitClient.fhirKitClientStrings.Library
 import typings.jsonPatch.mod.OpPatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `253` extends StObject {
   
-  var JSONPatch: js.Array[OpPatch] = js.native
+  var JSONPatch: js.Array[OpPatch]
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: Library = js.native
+  var resourceType: Library
 }
 object `253` {
   
   @scala.inline
-  def apply(JSONPatch: js.Array[OpPatch], id: String, resourceType: Library): `253` = {
-    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(JSONPatch: js.Array[OpPatch], id: String): `253` = {
+    val __obj = js.Dynamic.literal(JSONPatch = JSONPatch.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Library")
     __obj.asInstanceOf[`253`]
   }
   

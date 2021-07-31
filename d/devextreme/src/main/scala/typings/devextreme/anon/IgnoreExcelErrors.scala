@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreExcelErrors extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var ignoreExcelErrors: js.UndefOr[Boolean] = js.native
+  var ignoreExcelErrors: js.UndefOr[Boolean] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
 }
 object IgnoreExcelErrors {
   

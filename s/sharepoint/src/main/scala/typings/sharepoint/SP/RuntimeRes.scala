@@ -2,131 +2,129 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuntimeRes extends StObject {
   
-  var argumentExceptionMessage: String = js.native
+  var argumentExceptionMessage: String
   
-  var argumentNullExceptionMessage: String = js.native
+  var argumentNullExceptionMessage: String
   
-  var cC_AppIconAlt: String = js.native
+  var cC_AppIconAlt: String
   
-  var cC_AppWebUrlNotSet: String = js.native
+  var cC_AppWebUrlNotSet: String
   
-  var cC_ArrowImageAlt: String = js.native
+  var cC_ArrowImageAlt: String
   
-  var cC_BackToSite: String = js.native
+  var cC_BackToSite: String
   
-  var cC_ErrorGettingThemeInfo: String = js.native
+  var cC_ErrorGettingThemeInfo: String
   
-  var cC_HelpLinkToolTip: String = js.native
+  var cC_HelpLinkToolTip: String
   
-  var cC_HostSiteUrlNotSet: String = js.native
+  var cC_HostSiteUrlNotSet: String
   
-  var cC_InvalidArgument: String = js.native
+  var cC_InvalidArgument: String
   
-  var cC_InvalidJSON: String = js.native
+  var cC_InvalidJSON: String
   
-  var cC_InvalidOperation: String = js.native
+  var cC_InvalidOperation: String
   
-  var cC_PlaceHolderElementNotFound: String = js.native
+  var cC_PlaceHolderElementNotFound: String
   
-  var cC_RequiredScriptNotLoaded: String = js.native
+  var cC_RequiredScriptNotLoaded: String
   
-  var cC_SendFeedback: String = js.native
+  var cC_SendFeedback: String
   
-  var cC_SettingsLinkToolTip: String = js.native
+  var cC_SettingsLinkToolTip: String
   
-  var cC_TimeoutGettingThemeInfo: String = js.native
+  var cC_TimeoutGettingThemeInfo: String
   
-  var cC_Welcome: String = js.native
+  var cC_Welcome: String
   
-  var cannotFindContextWebServerRelativeUrl: String = js.native
+  var cannotFindContextWebServerRelativeUrl: String
   
-  var collectionHasNotBeenInitialized: String = js.native
+  var collectionHasNotBeenInitialized: String
   
-  var collectionModified: String = js.native
+  var collectionModified: String
   
-  var invalidUsageOfConditionalScope: String = js.native
+  var invalidUsageOfConditionalScope: String
   
-  var invalidUsageOfConditionalScopeNowAllowedAction: String = js.native
+  var invalidUsageOfConditionalScopeNowAllowedAction: String
   
-  var invalidUsageOfExceptionHandlingScope: String = js.native
+  var invalidUsageOfExceptionHandlingScope: String
   
-  var namedPropertyHasNotBeenInitialized: String = js.native
+  var namedPropertyHasNotBeenInitialized: String
   
-  var namedServerObjectIsNull: String = js.native
+  var namedServerObjectIsNull: String
   
-  var noObjectPathAssociatedWithObject: String = js.native
+  var noObjectPathAssociatedWithObject: String
   
-  var notSameClientContext: String = js.native
+  var notSameClientContext: String
   
-  var notSupportedQueryExpressionWithExpressionDetail: String = js.native
+  var notSupportedQueryExpressionWithExpressionDetail: String
   
-  var objectNameIdentity: String = js.native
+  var objectNameIdentity: String
   
-  var objectNameMethod: String = js.native
+  var objectNameMethod: String
   
-  var objectNameProperty: String = js.native
+  var objectNameProperty: String
   
-  var objectNameType: String = js.native
+  var objectNameType: String
   
-  var propertyHasNotBeenInitialized: String = js.native
+  var propertyHasNotBeenInitialized: String
   
-  var rE_BrowserBinaryDataNotSupported: String = js.native
+  var rE_BrowserBinaryDataNotSupported: String
   
-  var rE_BrowserNotSupported: String = js.native
+  var rE_BrowserNotSupported: String
   
-  var rE_CannotAccessSite: String = js.native
+  var rE_CannotAccessSite: String
   
-  var rE_CannotAccessSiteCancelled: String = js.native
+  var rE_CannotAccessSiteCancelled: String
   
-  var rE_CannotAccessSiteOpenWindowFailed: String = js.native
+  var rE_CannotAccessSiteOpenWindowFailed: String
   
-  var rE_DismissOpenWindowMessageLinkText: String = js.native
+  var rE_DismissOpenWindowMessageLinkText: String
   
-  var rE_DomainDoesNotMatch: String = js.native
+  var rE_DomainDoesNotMatch: String
   
-  var rE_FixitHelpMessage: String = js.native
+  var rE_FixitHelpMessage: String
   
-  var rE_InvalidArgumentOrField: String = js.native
+  var rE_InvalidArgumentOrField: String
   
-  var rE_InvalidOperation: String = js.native
+  var rE_InvalidOperation: String
   
-  var rE_NoTrustedOrigins: String = js.native
+  var rE_NoTrustedOrigins: String
   
-  var rE_OpenWindowButtonText: String = js.native
+  var rE_OpenWindowButtonText: String
   
-  var rE_OpenWindowMessage: String = js.native
+  var rE_OpenWindowMessage: String
   
-  var rE_RequestAbortedOrTimedout: String = js.native
+  var rE_RequestAbortedOrTimedout: String
   
-  var rE_RequestUnexpectedResponse: String = js.native
+  var rE_RequestUnexpectedResponse: String
   
-  var rE_RequestUnexpectedResponseWithContentTypeAndStatus: String = js.native
+  var rE_RequestUnexpectedResponseWithContentTypeAndStatus: String
   
-  var requestAbortedOrTimedOut: String = js.native
+  var requestAbortedOrTimedOut: String
   
-  var requestEmptyQueryName: String = js.native
+  var requestEmptyQueryName: String
   
-  var requestHasBeenExecuted: String = js.native
+  var requestHasBeenExecuted: String
   
-  var requestUnexpectedResponse: String = js.native
+  var requestUnexpectedResponse: String
   
-  var requestUnexpectedResponseWithContentTypeAndStatus: String = js.native
+  var requestUnexpectedResponseWithContentTypeAndStatus: String
   
-  var requestUnexpectedResponseWithStatus: String = js.native
+  var requestUnexpectedResponseWithStatus: String
   
-  var requestUnknownResponse: String = js.native
+  var requestUnknownResponse: String
   
-  var serverObjectIsNull: String = js.native
+  var serverObjectIsNull: String
   
-  var unknownError: String = js.native
+  var unknownError: String
   
-  var unknownResponseData: String = js.native
+  var unknownResponseData: String
 }
 object RuntimeRes {
   

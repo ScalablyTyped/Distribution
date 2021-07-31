@@ -3,15 +3,13 @@ package typings.vis.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Max extends StObject {
   
-  var max: Date = js.native
+  var max: Date
   
-  var min: Date = js.native
+  var min: Date
 }
 object Max {
   

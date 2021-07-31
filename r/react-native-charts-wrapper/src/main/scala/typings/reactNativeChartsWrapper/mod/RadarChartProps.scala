@@ -2,29 +2,29 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RadarChartProps extends PieRadarChartBase {
+trait RadarChartProps
+  extends StObject
+     with PieRadarChartBase {
   
-  var data: js.UndefOr[RadarData] = js.native
+  var data: js.UndefOr[RadarData] = js.undefined
   
-  var drawWeb: js.UndefOr[Boolean] = js.native
+  var drawWeb: js.UndefOr[Boolean] = js.undefined
   
-  var skipWebLineCount: js.UndefOr[Double] = js.native
+  var skipWebLineCount: js.UndefOr[Double] = js.undefined
   
-  var webAlpha: js.UndefOr[Double] = js.native
+  var webAlpha: js.UndefOr[Double] = js.undefined
   
-  var webColor: js.UndefOr[Color] = js.native
+  var webColor: js.UndefOr[Color] = js.undefined
   
-  var webColorInner: js.UndefOr[Color] = js.native
+  var webColorInner: js.UndefOr[Color] = js.undefined
   
-  var webLineWidth: js.UndefOr[Double] = js.native
+  var webLineWidth: js.UndefOr[Double] = js.undefined
   
-  var webLineWidthInner: js.UndefOr[Double] = js.native
+  var webLineWidthInner: js.UndefOr[Double] = js.undefined
   
-  var yAxis: js.UndefOr[typings.reactNativeChartsWrapper.mod.yAxis] = js.native
+  var yAxis: js.UndefOr[typings.reactNativeChartsWrapper.mod.yAxis] = js.undefined
 }
 object RadarChartProps {
   

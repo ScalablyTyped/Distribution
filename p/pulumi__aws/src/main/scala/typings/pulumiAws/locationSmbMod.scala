@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object locationSmbMod {
@@ -77,6 +76,10 @@ object locationSmbMod {
   /* static members */
   object LocationSmb {
     
+    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LocationSmb resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -86,70 +89,64 @@ object locationSmbMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LocationSmb = js.native
-    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LocationSmb = js.native
-    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocationSmbState): LocationSmb = js.native
-    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): LocationSmb = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocationSmbState): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocationSmbState, opts: CustomResourceOptions): LocationSmb = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocationSmb]
     
     /**
       * Returns true if the given object is an instance of LocationSmb.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/datasync/locationSmb", "LocationSmb.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/locationSmb.LocationSmb */ Boolean]
   }
   
-  @js.native
   trait LocationSmbArgs extends StObject {
     
     /**
       * A list of DataSync Agent ARNs with which this location will be associated.
       */
-    val agentArns: Input[js.Array[Input[String]]] = js.native
+    val agentArns: Input[js.Array[Input[String]]]
     
     /**
       * The name of the Windows domain the SMB server belongs to.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing mount options used by DataSync to access the SMB Server. Can be `AUTOMATIC`, `SMB2`, or `SMB3`.
       */
-    val mountOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]] = js.native
+    val mountOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]] = js.undefined
     
     /**
       * The password of the user who can mount the share and has file permissions in the SMB.
       */
-    val password: Input[String] = js.native
+    val password: Input[String]
     
     /**
       * Specifies the IP address or DNS name of the SMB server. The DataSync Agent(s) use this to mount the SMB share.
       */
-    val serverHostname: Input[String] = js.native
+    val serverHostname: Input[String]
     
     /**
       * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
       */
-    val subdirectory: Input[String] = js.native
+    val subdirectory: Input[String]
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user who can mount the share and has file and folder permissions in the SMB share.
       */
-    val user: Input[String] = js.native
+    val user: Input[String]
   }
   object LocationSmbArgs {
     
@@ -206,55 +203,54 @@ object locationSmbMod {
     }
   }
   
-  @js.native
   trait LocationSmbState extends StObject {
     
     /**
       * A list of DataSync Agent ARNs with which this location will be associated.
       */
-    val agentArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val agentArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the DataSync Location.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Windows domain the SMB server belongs to.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing mount options used by DataSync to access the SMB Server. Can be `AUTOMATIC`, `SMB2`, or `SMB3`.
       */
-    val mountOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]] = js.native
+    val mountOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.LocationSmbMountOptions]] = js.undefined
     
     /**
       * The password of the user who can mount the share and has file permissions in the SMB.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the IP address or DNS name of the SMB server. The DataSync Agent(s) use this to mount the SMB share.
       */
-    val serverHostname: js.UndefOr[Input[String]] = js.native
+    val serverHostname: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subdirectory to perform actions as source or destination. Should be exported by the NFS server.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The user who can mount the share and has file and folder permissions in the SMB share.
       */
-    val user: js.UndefOr[Input[String]] = js.native
+    val user: js.UndefOr[Input[String]] = js.undefined
   }
   object LocationSmbState {
     

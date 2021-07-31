@@ -2,25 +2,23 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `createTokenizationDictionary` operation. */
-@js.native
 trait CreateTokenizationDictionaryParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** An array of tokenization rules. Each rule contains, the original `text` string, component `tokens`, any alternate character set `readings`, and which `part_of_speech` the text is from. */
-  var tokenization_rules: js.UndefOr[js.Array[TokenDictRule]] = js.native
+  var tokenization_rules: js.UndefOr[js.Array[TokenDictRule]] = js.undefined
 }
 object CreateTokenizationDictionaryParams {
   

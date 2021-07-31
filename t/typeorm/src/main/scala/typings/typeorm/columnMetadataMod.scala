@@ -20,7 +20,6 @@ import typings.typeorm.typeormStrings.uuid
 import typings.typeorm.valueTransformerMod.ValueTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnMetadataMod {
@@ -113,7 +112,7 @@ object columnMetadataMod {
       * `postgres` and `mysql` store enum values as strings but we want to keep support
       * for numeric and heterogeneous based typescript enums, so we need (string|number)[]
       */
-    var enum: js.UndefOr[js.Array[String | Double]] = js.native
+    var `enum`: js.UndefOr[js.Array[String | Double]] = js.native
     
     /**
       * Exact name of enum

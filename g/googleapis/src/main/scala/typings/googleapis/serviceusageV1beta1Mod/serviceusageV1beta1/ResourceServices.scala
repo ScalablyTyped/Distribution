@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/serviceusage/v1beta1", "serviceusage_v1beta1.Resource$Services")
@@ -31,7 +30,7 @@ class ResourceServices protected () extends StObject {
     */
   def batchEnable(): GaxiosPromise[SchemaOperation] = js.native
   def batchEnable(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def batchEnable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def batchEnable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def batchEnable(params: ParamsResourceServicesBatchenable): GaxiosPromise[SchemaOperation] = js.native
   def batchEnable(params: ParamsResourceServicesBatchenable, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def batchEnable(
@@ -68,7 +67,7 @@ class ResourceServices protected () extends StObject {
     */
   def disable(): GaxiosPromise[SchemaOperation] = js.native
   def disable(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def disable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def disable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def disable(params: ParamsResourceServicesDisable): GaxiosPromise[SchemaOperation] = js.native
   def disable(params: ParamsResourceServicesDisable, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def disable(
@@ -99,7 +98,7 @@ class ResourceServices protected () extends StObject {
     */
   def enable(): GaxiosPromise[SchemaOperation] = js.native
   def enable(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def enable(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def enable(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def enable(params: ParamsResourceServicesEnable): GaxiosPromise[SchemaOperation] = js.native
   def enable(params: ParamsResourceServicesEnable, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def enable(
@@ -129,7 +128,7 @@ class ResourceServices protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaService] = js.native
   def get(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesGet): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceServicesGet, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(
@@ -167,7 +166,7 @@ class ResourceServices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(params: ParamsResourceServicesList): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(params: ParamsResourceServicesList, callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
   def list(

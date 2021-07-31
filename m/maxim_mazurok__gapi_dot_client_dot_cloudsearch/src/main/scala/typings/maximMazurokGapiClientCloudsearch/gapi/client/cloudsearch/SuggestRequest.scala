@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestRequest extends StObject {
   
   /**
     * The sources to use for suggestions. If not specified, the data sources are taken from the current search application. NOTE: Suggestions are supported only for third party data
     * sources and people (i.e. PredefinedSource.PERSON).
     */
-  var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.native
+  var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.undefined
   
   /** Partial query for which autocomplete suggestions will be shown. For example, if the query is "sea", then the server might return "season", "search", "seagull" and so on. */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /** Request options, such as the search application and user timezone. */
-  var requestOptions: js.UndefOr[RequestOptions] = js.native
+  var requestOptions: js.UndefOr[RequestOptions] = js.undefined
 }
 object SuggestRequest {
   

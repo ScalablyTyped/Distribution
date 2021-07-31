@@ -3,14 +3,12 @@ package typings.officeUiFabricReact.anon
 import typings.officeUiFabricReact.interfacesMod.IColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorRectangle/ColorRectangle.base.IColorRectangleState> */
-@js.native
 trait ReadonlyIColorRectangleSt extends StObject {
   
-  val color: IColor = js.native
+  val color: IColor
 }
 object ReadonlyIColorRectangleSt {
   

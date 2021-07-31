@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMemberAccountsResponse extends StObject {
   
   /**
     * An array of account IDs.
     */
-  var MemberAccounts: js.UndefOr[typings.awsSdk.fmsMod.MemberAccounts] = js.native
+  var MemberAccounts: js.UndefOr[typings.awsSdk.fmsMod.MemberAccounts] = js.undefined
   
   /**
     * If you have more member account IDs than the number that you specified for MaxResults in the request, the response includes a NextToken value. To list more IDs, submit another ListMemberAccounts request, and specify the NextToken value from the response in the NextToken value in the next request.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListMemberAccountsResponse {
   

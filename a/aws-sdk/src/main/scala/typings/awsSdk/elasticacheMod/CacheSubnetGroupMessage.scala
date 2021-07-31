@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheSubnetGroupMessage extends StObject {
   
   /**
     * A list of cache subnet groups. Each element in the list contains detailed information about one group.
     */
-  var CacheSubnetGroups: js.UndefOr[typings.awsSdk.elasticacheMod.CacheSubnetGroups] = js.native
+  var CacheSubnetGroups: js.UndefOr[typings.awsSdk.elasticacheMod.CacheSubnetGroups] = js.undefined
   
   /**
     * Provides an identifier to allow retrieval of paginated results.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object CacheSubnetGroupMessage {
   

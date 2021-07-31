@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldsContentProperties extends ContentProperties {
+trait FieldsContentProperties
+  extends StObject
+     with ContentProperties {
   
   /**
     * Array of [fieldInfos](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-FieldInfo.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-content-FieldsContent.html#fieldInfos)
     */
-  var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.native
+  var fieldInfos: js.UndefOr[js.Array[FieldInfoProperties]] = js.undefined
 }
 object FieldsContentProperties {
   

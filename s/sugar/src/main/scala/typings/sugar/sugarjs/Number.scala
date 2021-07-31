@@ -4,14 +4,207 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import typings.std.Intl.NumberFormatOptions
 import typings.sugar.sugarjs.Date.DateCreateOptions
+import typings.sugar.sugarjs.Object.ObjectMergeOptions
+import typings.sugar.sugarjs.Object.QueryStringOptions
+import typings.sugar.sugarjs.Object.mapFn
+import typings.sugar.sugarjs.Object.searchFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Number {
   
-  type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugar.sugarjs.Object.ChainableBase[RawValue]
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.sugar.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined add, add, addAll, addAll, average, average, average, clone, clone, count, count, defaults, defaults, every, every, exclude, exclude, filter, filter, find, find, forEach, get, get, has, has, intersect, invert, invert, isArguments, isArray, isBoolean, isDate, isEmpty, isEqual, isError, isFunction, isMap, isNumber, isObject, isRegExp, isSet, isString, keys, least, least, least, least, least, least, least, least, map, map, max, max, max, max, max, max, max, max, median, median, median, merge, merge, mergeAll, mergeAll, min, min, min, min, min, min, min, min, most, most, most, most, most, most, most, most, none, none, reduce, reduce, reject, reject, reject, reject, remove, remove, select, select, select, select, set, size, some, some, subtract, sum, sum, sum, tap, toQueryString, toQueryString, values */ @js.native
+  trait Chainable[RawValue]
+    extends StObject
+       with ChainableBase[RawValue] {
+    
+    def add[T](obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def add[T](obj: js.Object, options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def addAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def addAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def average[T, U](): SugarDefaultChainable[Double] = js.native
+    def average[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def average[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def clone(deep: Boolean): SugarDefaultChainable[js.Object] = js.native
+    
+    def count[T](search: T): SugarDefaultChainable[Double] = js.native
+    def count[T](search: searchFn[T]): SugarDefaultChainable[Double] = js.native
+    
+    def defaults[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def defaults[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def every[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def every[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def exclude[T](search: T): SugarDefaultChainable[js.Object] = js.native
+    def exclude[T](search: searchFn[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def filter[T](search: T): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def filter[T](search: searchFn[T]): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    
+    def find[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def find[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def forEach[T](
+      eachFn: js.Function3[
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ]
+    ): SugarDefaultChainable[js.Object] = js.native
+    
+    def get[T](key: java.lang.String): SugarDefaultChainable[T] = js.native
+    def get[T](key: java.lang.String, inherited: Boolean): SugarDefaultChainable[T] = js.native
+    
+    def has(key: java.lang.String): SugarDefaultChainable[Boolean] = js.native
+    def has(key: java.lang.String, inherited: Boolean): SugarDefaultChainable[Boolean] = js.native
+    
+    def intersect(obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    
+    def invert(): SugarDefaultChainable[js.Object] = js.native
+    def invert(multi: Boolean): SugarDefaultChainable[js.Object] = js.native
+    
+    def isArguments(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isArray(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isBoolean(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isDate(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isEmpty(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isEqual(obj: js.Object): SugarDefaultChainable[Boolean] = js.native
+    
+    def isError(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isFunction(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isMap(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isNumber(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isObject(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isRegExp(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isSet(): SugarDefaultChainable[Boolean] = js.native
+    
+    def isString(): SugarDefaultChainable[Boolean] = js.native
+    
+    def keys[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    
+    def least[T, U](): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def least[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def least[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def map[T, U](map: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def map[T, U](map: mapFn[T, U]): SugarDefaultChainable[js.Object] = js.native
+    
+    def max[T, U](): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def max[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def max[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def median[T, U](): SugarDefaultChainable[Double] = js.native
+    def median[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def median[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def merge[T](source: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def merge[T](source: js.Object, options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def mergeAll[T](sources: typings.sugar.Array[js.Object]): SugarDefaultChainable[js.Object] = js.native
+    def mergeAll[T](sources: typings.sugar.Array[js.Object], options: ObjectMergeOptions[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def min[T, U](): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def min[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def min[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def most[T, U](): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Boolean, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](all: Unit, map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    def most[T, U](map: java.lang.String): SugarDefaultChainable[T] = js.native
+    def most[T, U](map: mapFn[T, U]): SugarDefaultChainable[T] = js.native
+    
+    def none[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def none[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def reduce[T](
+      reduceFn: js.Function4[
+          /* acc */ T, 
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ]
+    ): SugarDefaultChainable[T] = js.native
+    def reduce[T](
+      reduceFn: js.Function4[
+          /* acc */ T, 
+          /* val */ T, 
+          /* key */ java.lang.String, 
+          /* obj */ js.Object, 
+          SugarDefaultChainable[Unit]
+        ],
+      init: js.Any
+    ): SugarDefaultChainable[T] = js.native
+    
+    def reject(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def reject(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def remove[T](search: T): SugarDefaultChainable[js.Object] = js.native
+    def remove[T](search: searchFn[T]): SugarDefaultChainable[js.Object] = js.native
+    
+    def select(find: java.lang.String): SugarDefaultChainable[js.Object] = js.native
+    def select(find: js.Object): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[js.Object] = js.native
+    def select(find: typings.sugar.RegExp): SugarDefaultChainable[js.Object] = js.native
+    
+    def set[T](key: java.lang.String, `val`: T): SugarDefaultChainable[js.Object] = js.native
+    
+    def size(): SugarDefaultChainable[Double] = js.native
+    
+    def some[T](search: T): SugarDefaultChainable[Boolean] = js.native
+    def some[T](search: searchFn[T]): SugarDefaultChainable[Boolean] = js.native
+    
+    def subtract(obj: js.Object): SugarDefaultChainable[js.Object] = js.native
+    
+    def sum[T, U](): SugarDefaultChainable[Double] = js.native
+    def sum[T, U](map: java.lang.String): SugarDefaultChainable[Double] = js.native
+    def sum[T, U](map: mapFn[T, U]): SugarDefaultChainable[Double] = js.native
+    
+    def tap(tapFn: js.Function1[/* obj */ js.Object, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[js.Object] = js.native
+    
+    def toQueryString[T, U](): SugarDefaultChainable[js.Object] = js.native
+    def toQueryString[T, U](options: QueryStringOptions[T, U]): SugarDefaultChainable[js.Object] = js.native
+    
+    def values[T](): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+  }
   
   @js.native
   trait ChainableBase[RawValue] extends StObject {
@@ -28,13 +221,13 @@ object Number {
     def atan(): SugarDefaultChainable[Double] = js.native
     
     def bytes(): SugarDefaultChainable[java.lang.String] = js.native
-    def bytes(precision: js.UndefOr[scala.Nothing], binary: js.UndefOr[scala.Nothing], units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
-    def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean): SugarDefaultChainable[java.lang.String] = js.native
-    def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def bytes(precision: Double): SugarDefaultChainable[java.lang.String] = js.native
-    def bytes(precision: Double, binary: js.UndefOr[scala.Nothing], units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def bytes(precision: Double, binary: Boolean): SugarDefaultChainable[java.lang.String] = js.native
     def bytes(precision: Double, binary: Boolean, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def bytes(precision: Double, binary: Unit, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def bytes(precision: Unit, binary: Boolean): SugarDefaultChainable[java.lang.String] = js.native
+    def bytes(precision: Unit, binary: Boolean, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def bytes(precision: Unit, binary: Unit, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     
     def cap(): SugarDefaultChainable[Double] = js.native
     def cap(max: Double): SugarDefaultChainable[Double] = js.native
@@ -45,9 +238,9 @@ object Number {
     def chr(): SugarDefaultChainable[java.lang.String] = js.native
     
     def clamp(): SugarDefaultChainable[Double] = js.native
-    def clamp(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[Double] = js.native
     def clamp(start: Double): SugarDefaultChainable[Double] = js.native
     def clamp(start: Double, end: Double): SugarDefaultChainable[Double] = js.native
+    def clamp(start: Unit, end: Double): SugarDefaultChainable[Double] = js.native
     
     def cos(): SugarDefaultChainable[Double] = js.native
     
@@ -96,15 +289,15 @@ object Number {
       num: Double,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def downto[T](
-      num: Double,
-      step: js.UndefOr[scala.Nothing],
-      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
-    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def downto[T](num: Double, step: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def downto[T](
       num: Double,
       step: Double,
+      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def downto[T](
+      num: Double,
+      step: Unit,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -174,9 +367,9 @@ object Number {
     def log(base: Double): SugarDefaultChainable[Double] = js.native
     
     def metric(): SugarDefaultChainable[java.lang.String] = js.native
-    def metric(precision: js.UndefOr[scala.Nothing], units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def metric(precision: Double): SugarDefaultChainable[java.lang.String] = js.native
     def metric(precision: Double, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
+    def metric(precision: Unit, units: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     
     def millisecond(): SugarDefaultChainable[Double] = js.native
     
@@ -301,13 +494,13 @@ object Number {
     def ordinalize(): SugarDefaultChainable[java.lang.String] = js.native
     
     def pad(): SugarDefaultChainable[java.lang.String] = js.native
-    def pad(place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): SugarDefaultChainable[java.lang.String] = js.native
-    def pad(place: js.UndefOr[scala.Nothing], sign: Boolean): SugarDefaultChainable[java.lang.String] = js.native
-    def pad(place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): SugarDefaultChainable[java.lang.String] = js.native
     def pad(place: Double): SugarDefaultChainable[java.lang.String] = js.native
-    def pad(place: Double, sign: js.UndefOr[scala.Nothing], base: Double): SugarDefaultChainable[java.lang.String] = js.native
     def pad(place: Double, sign: Boolean): SugarDefaultChainable[java.lang.String] = js.native
     def pad(place: Double, sign: Boolean, base: Double): SugarDefaultChainable[java.lang.String] = js.native
+    def pad(place: Double, sign: Unit, base: Double): SugarDefaultChainable[java.lang.String] = js.native
+    def pad(place: Unit, sign: Boolean): SugarDefaultChainable[java.lang.String] = js.native
+    def pad(place: Unit, sign: Boolean, base: Double): SugarDefaultChainable[java.lang.String] = js.native
+    def pad(place: Unit, sign: Unit, base: Double): SugarDefaultChainable[java.lang.String] = js.native
     
     def pow(): SugarDefaultChainable[Double] = js.native
     
@@ -362,7 +555,7 @@ object Number {
     
     def tan(): SugarDefaultChainable[Double] = js.native
     
-    def times[T](indexMapFn: js.Function1[/* i */ Double, SugarDefaultChainable[_]]): SugarDefaultChainable[T] = js.native
+    def times[T](indexMapFn: js.Function1[/* i */ Double, SugarDefaultChainable[js.Any]]): SugarDefaultChainable[T] = js.native
     
     def toExponential(): SugarDefaultChainable[java.lang.String] = js.native
     def toExponential(fractionDigits: Double): SugarDefaultChainable[java.lang.String] = js.native
@@ -370,9 +563,9 @@ object Number {
     def toFixed(): SugarDefaultChainable[java.lang.String] = js.native
     def toFixed(fractionDigits: Double): SugarDefaultChainable[java.lang.String] = js.native
     
-    def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: java.lang.String, options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
+    def toLocaleString(locales: Unit, options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: typings.sugar.Array[java.lang.String]): SugarDefaultChainable[java.lang.String] = js.native
     def toLocaleString(locales: typings.sugar.Array[java.lang.String], options: NumberFormatOptions): SugarDefaultChainable[java.lang.String] = js.native
     
@@ -386,15 +579,15 @@ object Number {
       num: Double,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
-    def upto[T](
-      num: Double,
-      step: js.UndefOr[scala.Nothing],
-      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
-    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def upto[T](num: Double, step: Double): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     def upto[T](
       num: Double,
       step: Double,
+      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
+    ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
+    def upto[T](
+      num: Double,
+      step: Unit,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, SugarDefaultChainable[Unit]]
     ): SugarDefaultChainable[typings.sugar.Array[T]] = js.native
     
@@ -481,7 +674,8 @@ object Number {
   
   @js.native
   trait Constructor
-    extends SugarNamespace
+    extends StObject
+       with SugarNamespace
        with Instantiable0[Chainable[Double]]
        with Instantiable1[/* raw */ Double, Chainable[Double]] {
     
@@ -500,18 +694,13 @@ object Number {
     def atan(instance: Double): Double = js.native
     
     def bytes(instance: Double): java.lang.String = js.native
-    def bytes(
-      instance: Double,
-      precision: js.UndefOr[scala.Nothing],
-      binary: js.UndefOr[scala.Nothing],
-      units: java.lang.String
-    ): java.lang.String = js.native
-    def bytes(instance: Double, precision: js.UndefOr[scala.Nothing], binary: Boolean): java.lang.String = js.native
-    def bytes(instance: Double, precision: js.UndefOr[scala.Nothing], binary: Boolean, units: java.lang.String): java.lang.String = js.native
     def bytes(instance: Double, precision: Double): java.lang.String = js.native
-    def bytes(instance: Double, precision: Double, binary: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
     def bytes(instance: Double, precision: Double, binary: Boolean): java.lang.String = js.native
     def bytes(instance: Double, precision: Double, binary: Boolean, units: java.lang.String): java.lang.String = js.native
+    def bytes(instance: Double, precision: Double, binary: Unit, units: java.lang.String): java.lang.String = js.native
+    def bytes(instance: Double, precision: Unit, binary: Boolean): java.lang.String = js.native
+    def bytes(instance: Double, precision: Unit, binary: Boolean, units: java.lang.String): java.lang.String = js.native
+    def bytes(instance: Double, precision: Unit, binary: Unit, units: java.lang.String): java.lang.String = js.native
     
     def cap(instance: Double): Double = js.native
     def cap(instance: Double, max: Double): Double = js.native
@@ -522,9 +711,9 @@ object Number {
     def chr(instance: Double): java.lang.String = js.native
     
     def clamp(instance: Double): Double = js.native
-    def clamp(instance: Double, start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
     def clamp(instance: Double, start: Double): Double = js.native
     def clamp(instance: Double, start: Double, end: Double): Double = js.native
+    def clamp(instance: Double, start: Unit, end: Double): Double = js.native
     
     def cos(instance: Double): Double = js.native
     
@@ -574,17 +763,17 @@ object Number {
       num: Double,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
     ): typings.sugar.Array[T] = js.native
-    def downto[T](
-      instance: Double,
-      num: Double,
-      step: js.UndefOr[scala.Nothing],
-      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
-    ): typings.sugar.Array[T] = js.native
     def downto[T](instance: Double, num: Double, step: Double): typings.sugar.Array[T] = js.native
     def downto[T](
       instance: Double,
       num: Double,
       step: Double,
+      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+    ): typings.sugar.Array[T] = js.native
+    def downto[T](
+      instance: Double,
+      num: Double,
+      step: Unit,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
     ): typings.sugar.Array[T] = js.native
     
@@ -656,9 +845,9 @@ object Number {
     def log(instance: Double, base: Double): Double = js.native
     
     def metric(instance: Double): java.lang.String = js.native
-    def metric(instance: Double, precision: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
     def metric(instance: Double, precision: Double): java.lang.String = js.native
     def metric(instance: Double, precision: Double, units: java.lang.String): java.lang.String = js.native
+    def metric(instance: Double, precision: Unit, units: java.lang.String): java.lang.String = js.native
     
     def millisecond(instance: Double): Double = js.native
     
@@ -783,25 +972,25 @@ object Number {
     def ordinalize(instance: Double): java.lang.String = js.native
     
     def pad(instance: Double): java.lang.String = js.native
-    def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
-    def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: Boolean): java.lang.String = js.native
-    def pad(instance: Double, place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): java.lang.String = js.native
     def pad(instance: Double, place: Double): java.lang.String = js.native
-    def pad(instance: Double, place: Double, sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
     def pad(instance: Double, place: Double, sign: Boolean): java.lang.String = js.native
     def pad(instance: Double, place: Double, sign: Boolean, base: Double): java.lang.String = js.native
+    def pad(instance: Double, place: Double, sign: Unit, base: Double): java.lang.String = js.native
+    def pad(instance: Double, place: Unit, sign: Boolean): java.lang.String = js.native
+    def pad(instance: Double, place: Unit, sign: Boolean, base: Double): java.lang.String = js.native
+    def pad(instance: Double, place: Unit, sign: Unit, base: Double): java.lang.String = js.native
     
     def pow(instance: Double): Double = js.native
     
     def random(): Double = js.native
-    def random(n1: js.UndefOr[scala.Nothing], n2: Double): Double = js.native
     def random(n1: Double): Double = js.native
     def random(n1: Double, n2: Double): Double = js.native
+    def random(n1: Unit, n2: Double): Double = js.native
     
     def range(): Range = js.native
-    def range(start: js.UndefOr[scala.Nothing], end: Double): Range = js.native
     def range(start: Double): Range = js.native
     def range(start: Double, end: Double): Range = js.native
+    def range(start: Unit, end: Double): Range = js.native
     
     def round(instance: Double): Double = js.native
     def round(instance: Double, precision: Double): Double = js.native
@@ -855,7 +1044,7 @@ object Number {
     
     def tan(instance: Double): Double = js.native
     
-    def times[T](instance: Double, indexMapFn: js.Function1[/* i */ Double, _]): T = js.native
+    def times[T](instance: Double, indexMapFn: js.Function1[/* i */ Double, js.Any]): T = js.native
     
     def toNumber(instance: Double): Double = js.native
     
@@ -865,17 +1054,17 @@ object Number {
       num: Double,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
     ): typings.sugar.Array[T] = js.native
-    def upto[T](
-      instance: Double,
-      num: Double,
-      step: js.UndefOr[scala.Nothing],
-      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
-    ): typings.sugar.Array[T] = js.native
     def upto[T](instance: Double, num: Double, step: Double): typings.sugar.Array[T] = js.native
     def upto[T](
       instance: Double,
       num: Double,
       step: Double,
+      everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
+    ): typings.sugar.Array[T] = js.native
+    def upto[T](
+      instance: Double,
+      num: Double,
+      step: Unit,
       everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
     ): typings.sugar.Array[T] = js.native
     
@@ -960,12 +1149,11 @@ object Number {
     def yearsFromNow(instance: Double): typings.sugar.Date = js.native
   }
   
-  @js.native
   trait NumberOptions extends StObject {
     
-    var decimal: java.lang.String = js.native
+    var decimal: java.lang.String
     
-    var thousands: java.lang.String = js.native
+    var thousands: java.lang.String
   }
   object NumberOptions {
     

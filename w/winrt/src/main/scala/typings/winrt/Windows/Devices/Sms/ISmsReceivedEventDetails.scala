@@ -2,15 +2,13 @@ package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISmsReceivedEventDetails extends StObject {
   
-  var deviceId: String = js.native
+  var deviceId: String
   
-  var messageIndex: Double = js.native
+  var messageIndex: Double
 }
 object ISmsReceivedEventDetails {
   

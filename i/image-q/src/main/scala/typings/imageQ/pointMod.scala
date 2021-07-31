@@ -3,7 +3,6 @@ package typings.imageQ
 import typings.imageQ.anon.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointMod {
@@ -39,16 +38,17 @@ object pointMod {
   /* static members */
   object Point {
     
-    @JSImport("image-q/dist/utils/point", "Point.createByQuadruplet")
+    @JSImport("image-q/dist/utils/point", "Point")
     @js.native
-    def createByQuadruplet(quadruplet: js.Array[Double]): Point = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("image-q/dist/utils/point", "Point.createByRGBA")
-    @js.native
-    def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): Point = js.native
+    @scala.inline
+    def createByQuadruplet(quadruplet: js.Array[Double]): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByQuadruplet")(quadruplet.asInstanceOf[js.Any]).asInstanceOf[Point]
     
-    @JSImport("image-q/dist/utils/point", "Point.createByUint32")
-    @js.native
-    def createByUint32(uint32: Double): Point = js.native
+    @scala.inline
+    def createByRGBA(red: Double, green: Double, blue: Double, alpha: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("createByRGBA")(red.asInstanceOf[js.Any], green.asInstanceOf[js.Any], blue.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Point]
+    
+    @scala.inline
+    def createByUint32(uint32: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("createByUint32")(uint32.asInstanceOf[js.Any]).asInstanceOf[Point]
   }
 }

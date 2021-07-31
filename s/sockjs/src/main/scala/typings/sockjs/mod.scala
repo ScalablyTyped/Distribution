@@ -9,27 +9,30 @@ import typings.sockjs.sockjsStrings.connection
 import typings.sockjs.sockjsStrings.data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sockjs", "createServer")
+  @JSImport("sockjs", JSImport.Namespace)
   @js.native
-  def createServer(): Server = js.native
-  @JSImport("sockjs", "createServer")
-  @js.native
-  def createServer(options: ServerOptions): Server = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: ServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
   
   @js.native
-  trait Connection extends ReadWriteStream {
+  trait Connection
+    extends StObject
+       with ReadWriteStream {
     
     var address: StringDictionary[Address] = js.native
     
     def close(): Boolean = js.native
-    def close(code: js.UndefOr[scala.Nothing], reason: String): Boolean = js.native
     def close(code: String): Boolean = js.native
     def close(code: String, reason: String): Boolean = js.native
+    def close(code: Unit, reason: String): Boolean = js.native
     
     def destroy(): Unit = js.native
     
@@ -41,7 +44,7 @@ object mod {
     @JSName("on")
     def on_close(event: close, listener: js.Function0[Unit]): this.type = js.native
     @JSName("on")
-    def on_data(event: data, listener: js.Function1[/* message */ String, _]): this.type = js.native
+    def on_data(event: data, listener: js.Function1[/* message */ String, js.Any]): this.type = js.native
     
     var pathname: String = js.native
     
@@ -59,34 +62,35 @@ object mod {
   }
   
   @js.native
-  trait Server extends EventEmitter {
+  trait Server
+    extends StObject
+       with EventEmitter {
     
     def installHandlers(server: typings.node.httpMod.Server): js.Any = js.native
     def installHandlers(server: typings.node.httpMod.Server, options: ServerOptions): js.Any = js.native
     
     def on(event: String, listener: js.Function): this.type = js.native
     @JSName("on")
-    def on_connection(event: connection, listener: js.Function1[/* conn */ Connection, _]): this.type = js.native
+    def on_connection(event: connection, listener: js.Function1[/* conn */ Connection, js.Any]): this.type = js.native
   }
   
-  @js.native
   trait ServerOptions extends StObject {
     
-    var disconnect_delay: js.UndefOr[Double] = js.native
+    var disconnect_delay: js.UndefOr[Double] = js.undefined
     
-    var heartbeat_delay: js.UndefOr[Double] = js.native
+    var heartbeat_delay: js.UndefOr[Double] = js.undefined
     
-    var jsessionid: js.UndefOr[js.Any] = js.native
+    var jsessionid: js.UndefOr[js.Any] = js.undefined
     
-    var log: js.UndefOr[js.Function2[/* severity */ String, /* message */ String, Unit]] = js.native
+    var log: js.UndefOr[js.Function2[/* severity */ String, /* message */ String, Unit]] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var response_limit: js.UndefOr[Double] = js.native
+    var response_limit: js.UndefOr[Double] = js.undefined
     
-    var sockjs_url: js.UndefOr[String] = js.native
+    var sockjs_url: js.UndefOr[String] = js.undefined
     
-    var websocket: js.UndefOr[Boolean] = js.native
+    var websocket: js.UndefOr[Boolean] = js.undefined
   }
   object ServerOptions {
     

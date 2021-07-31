@@ -64,79 +64,75 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxMod {
   
   @JSImport("grommet/components/Box", "Box")
   @js.native
-  val Box: FC[
-    BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Box: FC[BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
-  @js.native
   trait BoxProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var align: js.UndefOr[start | center | end | baseline | stretch] = js.native
+    var align: js.UndefOr[start | center | end | baseline | stretch] = js.undefined
     
-    var alignContent: js.UndefOr[AlignContentType] = js.native
+    var alignContent: js.UndefOr[AlignContentType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
     var animation: js.UndefOr[
         fadeIn | fadeOut | jiggle | pulse | rotateLeft | rotateRight | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay | (js.Array[
           fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut | Delay
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var as: js.UndefOr[PolymorphicType] = js.native
+    var as: js.UndefOr[PolymorphicType] = js.undefined
     
-    var background: js.UndefOr[BackgroundType] = js.native
+    var background: js.UndefOr[BackgroundType] = js.undefined
     
-    var basis: js.UndefOr[BasisType] = js.native
+    var basis: js.UndefOr[BasisType] = js.undefined
     
-    var border: js.UndefOr[BorderType] = js.native
+    var border: js.UndefOr[BorderType] = js.undefined
     
-    var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.native
+    var direction: js.UndefOr[row | column | `row-responsive` | `row-reverse` | `column-reverse`] = js.undefined
     
-    var elevation: js.UndefOr[ElevationType] = js.native
+    var elevation: js.UndefOr[ElevationType] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var flex: js.UndefOr[grow | shrink | Boolean | Grow] = js.native
+    var flex: js.UndefOr[grow | shrink | Boolean | Grow] = js.undefined
     
-    var focusIndicator: js.UndefOr[Boolean] = js.native
+    var focusIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var gap: js.UndefOr[GapType] = js.native
+    var gap: js.UndefOr[GapType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.native
+    var height: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
     
-    var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.native
+    var hoverIndicator: js.UndefOr[BackgroundType | Boolean] = js.undefined
     
-    var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.native
+    var justify: js.UndefOr[around | between | center | end | evenly | start | stretch] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.native
+    var overflow: js.UndefOr[auto | hidden | scroll | visible | Horizontal | String] = js.undefined
     
-    var pad: js.UndefOr[PadType] = js.native
+    var pad: js.UndefOr[PadType] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var round: js.UndefOr[RoundType] = js.native
+    var round: js.UndefOr[RoundType] = js.undefined
     
-    var tag: js.UndefOr[PolymorphicType] = js.native
+    var tag: js.UndefOr[PolymorphicType] = js.undefined
     
-    var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.native
+    var width: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | xxlarge | String | Max] = js.undefined
     
-    var wrap: js.UndefOr[Boolean | reverse] = js.native
+    var wrap: js.UndefOr[Boolean | reverse] = js.undefined
   }
   object BoxProps {
     
@@ -282,7 +278,7 @@ object boxMod {
       def setMarginUndefined: Self = StObject.set(x, "margin", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -331,5 +327,5 @@ object boxMod {
     }
   }
   
-  type BoxTypes = BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+  type BoxTypes = BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
 }

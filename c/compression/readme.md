@@ -11,8 +11,8 @@ Node.js compression middleware
 | Full name          | compression |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 3298 |
-| # downloads        | 367849799 |
+| # dependents       | 3498 |
+| # downloads        | 430781599 |
 | # stars            | 209 |
 
 ## Links

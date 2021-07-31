@@ -3,21 +3,19 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaseWorkItemResponse extends StObject {
   
   /** Untranslated bag-of-bytes WorkResponse for UnifiedWorker. */
   var unifiedWorkerResponse: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /** A list of the leased WorkItems. */
-  var workItems: js.UndefOr[js.Array[WorkItem]] = js.native
+  var workItems: js.UndefOr[js.Array[WorkItem]] = js.undefined
 }
 object LeaseWorkItemResponse {
   
@@ -34,7 +32,7 @@ object LeaseWorkItemResponse {
     def setUnifiedWorkerResponse(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerResponse", value.asInstanceOf[js.Any])
     
     @scala.inline

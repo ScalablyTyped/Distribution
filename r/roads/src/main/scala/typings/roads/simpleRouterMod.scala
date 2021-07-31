@@ -7,7 +7,6 @@ import typings.roads.roadMod.Context
 import typings.roads.roadMod.ResponseMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleRouterMod {
@@ -17,7 +16,9 @@ object simpleRouterMod {
   /**
     * @param {Road} [road] - The road that will receive the SimpleRouter middleware
     */
-  class default () extends SimpleRouter {
+  class default ()
+    extends StObject
+       with SimpleRouter {
     def this(road: typings.roads.roadMod.default) = this()
   }
   
@@ -30,16 +31,36 @@ object simpleRouterMod {
     js.Promise[typings.roads.responseMod.default]
   ]
   
-  @js.native
   trait RouteDetails extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var path: String = js.native
+    var path: String
     
-    def route(path: SimpleRouterURL, body: String, headers: StringDictionary[js.Any], next: ResponseMiddleware): js.Promise[typings.roads.responseMod.default] = js.native
+    def route(path: SimpleRouterURL, body: String, headers: StringDictionary[js.Any], next: ResponseMiddleware): js.Promise[typings.roads.responseMod.default]
     @JSName("route")
-    var route_Original: Route = js.native
+    var route_Original: Route
+  }
+  object RouteDetails {
+    
+    @scala.inline
+    def apply(method: String, path: String, route: Route): RouteDetails = {
+      val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RouteDetails]
+    }
+    
+    @scala.inline
+    implicit class RouteDetailsMutableBuilder[Self <: RouteDetails] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRoute(value: Route): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native
@@ -95,16 +116,17 @@ object simpleRouterMod {
     def applyMiddleware(road: typings.roads.roadMod.default): Unit = js.native
   }
   
-  @js.native
-  trait SimpleRouterURL extends UrlWithParsedQuery {
+  trait SimpleRouterURL
+    extends StObject
+       with UrlWithParsedQuery {
     
-    var args: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var args: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object SimpleRouterURL {
     
     @scala.inline
     def apply(href: String, query: ParsedUrlQuery): SimpleRouterURL = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, search = null, slashes = null)
       __obj.asInstanceOf[SimpleRouterURL]
     }
     

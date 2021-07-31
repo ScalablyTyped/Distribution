@@ -2,31 +2,29 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHostedConfigurationVersionsRequest extends StObject {
   
   /**
     * The application ID.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
   
   /**
     * The configuration profile ID.
     */
-  var ConfigurationProfileId: Id = js.native
+  var ConfigurationProfileId: Id
   
   /**
     * The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.appconfigMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.appconfigMod.MaxResults] = js.undefined
   
   /**
     * A token to start the list. Use this token to get the next set of results. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.appconfigMod.NextToken] = js.undefined
 }
 object ListHostedConfigurationVersionsRequest {
   

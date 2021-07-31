@@ -100,412 +100,413 @@ import typings.std.Event
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imgMod {
   
-  @JSImport("react-image/Img", JSImport.Default)
+  @JSImport("react-image/Img", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(
-    hasDecodeSrcLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps: ImgProps
-  ): Element | Null = js.native
+    hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps: ImgProps
+  ): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasDecodeSrcListLoaderUnloaderContainerLoaderContainerUnloaderContainerImgPromiseCrossoriginUseSuspenseImgProps.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
   
   /* Inlined std.Omit<react.react.DetailedHTMLProps<react.react.ImgHTMLAttributes<std.HTMLImageElement>, std.HTMLImageElement>, 'src'> & std.Omit<react-image.react-image/useImage.useImageProps, 'srcList'> & {  src :react-image.react-image/useImage.useImageProps['srcList'],   loader :react.react.<global>.JSX.Element | null | undefined,   unloader :react.react.<global>.JSX.Element | null | undefined,   decode :boolean | undefined,   crossorigin :string | undefined,   container :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined,   loaderContainer :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined,   unloaderContainer :(children : react.react.ReactNode): react.react.<global>.JSX.Element | undefined} */
-  @js.native
   trait ImgProps extends StObject {
     
-    var about: js.UndefOr[String] = js.native
+    var about: js.UndefOr[String] = js.undefined
     
-    var accessKey: js.UndefOr[String] = js.native
+    var accessKey: js.UndefOr[String] = js.undefined
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var `aria-activedescendant`: js.UndefOr[String] = js.native
+    var `aria-activedescendant`: js.UndefOr[String] = js.undefined
     
-    var `aria-atomic`: js.UndefOr[Boolean] = js.native
+    var `aria-atomic`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+    var `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
     
-    var `aria-busy`: js.UndefOr[Boolean] = js.native
+    var `aria-busy`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-colcount`: js.UndefOr[Double] = js.native
+    var `aria-colcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colindex`: js.UndefOr[Double] = js.native
+    var `aria-colindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-colspan`: js.UndefOr[Double] = js.native
+    var `aria-colspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-controls`: js.UndefOr[String] = js.native
+    var `aria-controls`: js.UndefOr[String] = js.undefined
     
-    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+    var `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
     
-    var `aria-describedby`: js.UndefOr[String] = js.native
+    var `aria-describedby`: js.UndefOr[String] = js.undefined
     
-    var `aria-details`: js.UndefOr[String] = js.native
+    var `aria-details`: js.UndefOr[String] = js.undefined
     
-    var `aria-disabled`: js.UndefOr[Boolean] = js.native
+    var `aria-disabled`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+    var `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
     
-    var `aria-errormessage`: js.UndefOr[String] = js.native
+    var `aria-errormessage`: js.UndefOr[String] = js.undefined
     
-    var `aria-expanded`: js.UndefOr[Boolean] = js.native
+    var `aria-expanded`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-flowto`: js.UndefOr[String] = js.native
+    var `aria-flowto`: js.UndefOr[String] = js.undefined
     
-    var `aria-grabbed`: js.UndefOr[Boolean] = js.native
+    var `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+    var `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
     
-    var `aria-hidden`: js.UndefOr[Boolean] = js.native
+    var `aria-hidden`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+    var `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
     
-    var `aria-keyshortcuts`: js.UndefOr[String] = js.native
+    var `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
     
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
-    var `aria-labelledby`: js.UndefOr[String] = js.native
+    var `aria-labelledby`: js.UndefOr[String] = js.undefined
     
-    var `aria-level`: js.UndefOr[Double] = js.native
+    var `aria-level`: js.UndefOr[Double] = js.undefined
     
-    var `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+    var `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
     
-    var `aria-modal`: js.UndefOr[Boolean] = js.native
+    var `aria-modal`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiline`: js.UndefOr[Boolean] = js.native
+    var `aria-multiline`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+    var `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+    var `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var `aria-owns`: js.UndefOr[String] = js.native
+    var `aria-owns`: js.UndefOr[String] = js.undefined
     
-    var `aria-placeholder`: js.UndefOr[String] = js.native
+    var `aria-placeholder`: js.UndefOr[String] = js.undefined
     
-    var `aria-posinset`: js.UndefOr[Double] = js.native
+    var `aria-posinset`: js.UndefOr[Double] = js.undefined
     
-    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+    var `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
     
-    var `aria-readonly`: js.UndefOr[Boolean] = js.native
+    var `aria-readonly`: js.UndefOr[Boolean] = js.undefined
     
     var `aria-relevant`: js.UndefOr[
         additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-      ] = js.native
+      ] = js.undefined
     
-    var `aria-required`: js.UndefOr[Boolean] = js.native
+    var `aria-required`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-roledescription`: js.UndefOr[String] = js.native
+    var `aria-roledescription`: js.UndefOr[String] = js.undefined
     
-    var `aria-rowcount`: js.UndefOr[Double] = js.native
+    var `aria-rowcount`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowindex`: js.UndefOr[Double] = js.native
+    var `aria-rowindex`: js.UndefOr[Double] = js.undefined
     
-    var `aria-rowspan`: js.UndefOr[Double] = js.native
+    var `aria-rowspan`: js.UndefOr[Double] = js.undefined
     
-    var `aria-selected`: js.UndefOr[Boolean] = js.native
+    var `aria-selected`: js.UndefOr[Boolean] = js.undefined
     
-    var `aria-setsize`: js.UndefOr[Double] = js.native
+    var `aria-setsize`: js.UndefOr[Double] = js.undefined
     
-    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+    var `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
     
-    var `aria-valuemax`: js.UndefOr[Double] = js.native
+    var `aria-valuemax`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuemin`: js.UndefOr[Double] = js.native
+    var `aria-valuemin`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuenow`: js.UndefOr[Double] = js.native
+    var `aria-valuenow`: js.UndefOr[Double] = js.undefined
     
-    var `aria-valuetext`: js.UndefOr[String] = js.native
+    var `aria-valuetext`: js.UndefOr[String] = js.undefined
     
-    var autoCapitalize: js.UndefOr[String] = js.native
+    var autoCapitalize: js.UndefOr[String] = js.undefined
     
-    var autoCorrect: js.UndefOr[String] = js.native
+    var autoCorrect: js.UndefOr[String] = js.undefined
     
-    var autoSave: js.UndefOr[String] = js.native
+    var autoSave: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.native
+    var container: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.undefined
     
-    var contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+    var contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
     
-    var contextMenu: js.UndefOr[String] = js.native
+    var contextMenu: js.UndefOr[String] = js.undefined
     
-    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.native
+    var crossOrigin: js.UndefOr[anonymous | `use-credentials` | _empty] = js.undefined
     
-    var crossorigin: js.UndefOr[String] = js.native
+    var crossorigin: js.UndefOr[String] = js.undefined
     
-    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+    var dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
     
-    var datatype: js.UndefOr[String] = js.native
+    var datatype: js.UndefOr[String] = js.undefined
     
-    var decode: js.UndefOr[Boolean] = js.native
+    var decode: js.UndefOr[Boolean] = js.undefined
     
-    var decoding: js.UndefOr[async | auto | sync] = js.native
+    var decoding: js.UndefOr[async | auto | sync] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Booleanish] = js.native
+    var draggable: js.UndefOr[Booleanish] = js.undefined
     
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var imgPromise: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Promise[Unit]]] = js.native
+    var imgPromise: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var inlist: js.UndefOr[js.Any] = js.native
+    var inlist: js.UndefOr[js.Any] = js.undefined
     
-    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+    var inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
     
-    var is: js.UndefOr[String] = js.native
+    var is: js.UndefOr[String] = js.undefined
     
-    var itemID: js.UndefOr[String] = js.native
+    var itemID: js.UndefOr[String] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var itemRef: js.UndefOr[String] = js.native
+    var itemRef: js.UndefOr[String] = js.undefined
     
-    var itemScope: js.UndefOr[Boolean] = js.native
+    var itemScope: js.UndefOr[Boolean] = js.undefined
     
-    var itemType: js.UndefOr[String] = js.native
+    var itemType: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[Key | Null] = js.native
+    var key: js.UndefOr[Key | Null] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var loader: js.UndefOr[Element | Null] = js.native
+    var loader: js.UndefOr[Element | Null] = js.undefined
     
-    var loaderContainer: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.native
+    var loaderContainer: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.undefined
     
-    var loading: js.UndefOr[eager | `lazy`] = js.native
+    var loading: js.UndefOr[eager | `lazy`] = js.undefined
     
-    var onAbort: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onAbort: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.native
+    var onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.undefined
     
-    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.native
+    var onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.undefined
     
-    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.native
+    var onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLImageElement]] = js.undefined
     
-    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onAuxClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onBeforeInput: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLImageElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onCanPlay: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onChange: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onChange: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.native
+    var onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.native
+    var onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.native
+    var onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLImageElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.native
+    var onCopy: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onCut: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.native
+    var onCut: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onDoubleClick: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDrag: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDrag: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragEnd: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragEnter: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragEnter: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragExit: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragExit: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragLeave: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragLeave: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragOver: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragOver: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDragStart: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDragStart: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDrop: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.native
+    var onDrop: js.UndefOr[DragEventHandler[HTMLImageElement]] = js.undefined
     
-    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onDurationChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onEmptied: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onEmptied: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onEncrypted: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onEnded: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onEnded: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onError: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onError: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLImageElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLImageElement]] = js.undefined
     
-    var onInput: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onInput: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onInvalid: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onInvalid: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.native
+    var onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onLoad: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onLoad: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onLoadStart: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onLoadedData: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseMove: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseOut: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseOver: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.native
+    var onPaste: js.UndefOr[ClipboardEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPause: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onPause: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPlay: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onPlay: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPlaying: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onPlaying: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerCancel: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerDown: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerEnter: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerLeave: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerMove: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerOut: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerOver: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.native
+    var onPointerUp: js.UndefOr[PointerEventHandler[HTMLImageElement]] = js.undefined
     
-    var onProgress: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onProgress: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onRateChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onRateChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onReset: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onReset: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onScroll: js.UndefOr[UIEventHandler[HTMLImageElement]] = js.native
+    var onScroll: js.UndefOr[UIEventHandler[HTMLImageElement]] = js.undefined
     
-    var onSeeked: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onSeeked: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onSeeking: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onSeeking: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onSelect: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onSelect: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onStalled: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onStalled: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onSubmit: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.native
+    var onSubmit: js.UndefOr[FormEventHandler[HTMLImageElement]] = js.undefined
     
-    var onSuspend: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onSuspend: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.native
+    var onTouchCancel: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.native
+    var onTouchEnd: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.native
+    var onTouchMove: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[HTMLImageElement]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLImageElement]] = js.native
+    var onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLImageElement]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onVolumeChange: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onWaiting: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.native
+    var onWaiting: js.UndefOr[ReactEventHandler[HTMLImageElement]] = js.undefined
     
-    var onWheel: js.UndefOr[WheelEventHandler[HTMLImageElement]] = js.native
+    var onWheel: js.UndefOr[WheelEventHandler[HTMLImageElement]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var radioGroup: js.UndefOr[String] = js.native
+    var radioGroup: js.UndefOr[String] = js.undefined
     
-    var ref: js.UndefOr[LegacyRef[HTMLImageElement]] = js.native
+    var ref: js.UndefOr[LegacyRef[HTMLImageElement]] = js.undefined
     
-    var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.native
+    var referrerPolicy: js.UndefOr[HTMLAttributeReferrerPolicy] = js.undefined
     
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
     
-    var results: js.UndefOr[Double] = js.native
+    var results: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var security: js.UndefOr[String] = js.native
+    var security: js.UndefOr[String] = js.undefined
     
-    var sizes: js.UndefOr[String] = js.native
+    var sizes: js.UndefOr[String] = js.undefined
     
-    var slot: js.UndefOr[String] = js.native
+    var slot: js.UndefOr[String] = js.undefined
     
-    var spellCheck: js.UndefOr[Booleanish] = js.native
+    var spellCheck: js.UndefOr[Booleanish] = js.undefined
     
-    var src: String | js.Array[String] = js.native
+    var src: String | js.Array[String]
     
-    var srcSet: js.UndefOr[String] = js.native
+    var srcSet: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+    var suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
     
-    var suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+    var suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var translate: js.UndefOr[yes | no] = js.native
+    var translate: js.UndefOr[yes | no] = js.undefined
     
-    var typeof: js.UndefOr[String] = js.native
+    var typeof: js.UndefOr[String] = js.undefined
     
-    var unloader: js.UndefOr[Element | Null] = js.native
+    var unloader: js.UndefOr[Element | Null] = js.undefined
     
-    var unloaderContainer: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.native
+    var unloaderContainer: js.UndefOr[js.Function1[/* children */ ReactNode, Element]] = js.undefined
     
-    var unselectable: js.UndefOr[on | off] = js.native
+    var unselectable: js.UndefOr[on | off] = js.undefined
     
-    var useMap: js.UndefOr[String] = js.native
+    var useMap: js.UndefOr[String] = js.undefined
     
-    var useSuspense: js.UndefOr[Boolean] = js.native
+    var useSuspense: js.UndefOr[Boolean] = js.undefined
     
-    var vocab: js.UndefOr[String] = js.native
+    var vocab: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object ImgProps {
     

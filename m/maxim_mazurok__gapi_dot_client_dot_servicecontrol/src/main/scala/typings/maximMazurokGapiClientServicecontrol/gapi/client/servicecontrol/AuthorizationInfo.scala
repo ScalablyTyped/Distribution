@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationInfo extends StObject {
   
   /** Whether or not authorization for `resource` and `permission` was granted. */
-  var granted: js.UndefOr[Boolean] = js.native
+  var granted: js.UndefOr[Boolean] = js.undefined
   
   /** The required IAM permission. */
-  var permission: js.UndefOr[String] = js.native
+  var permission: js.UndefOr[String] = js.undefined
   
   /** The resource being accessed, as a REST-style string. For example: bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * Resource attributes used in IAM condition evaluation. This field contains resource attributes like resource type and resource name. To get the whole view of the attributes used in
     * IAM condition evaluation, the user must also look into `AuditLog.request_metadata.request_attributes`.
     */
-  var resourceAttributes: js.UndefOr[Resource] = js.native
+  var resourceAttributes: js.UndefOr[Resource] = js.undefined
 }
 object AuthorizationInfo {
   

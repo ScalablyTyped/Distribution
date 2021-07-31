@@ -4,25 +4,23 @@ import typings.react.mod.DragEvent
 import typings.react.mod.DragEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableProvidedDragHandleProps extends StObject {
   
-  var `aria-describedby`: ElementId = js.native
+  var `aria-describedby`: ElementId
   
-  var `data-rbd-drag-handle-context-id`: ContextId = js.native
+  var `data-rbd-drag-handle-context-id`: ContextId
   
-  var `data-rbd-drag-handle-draggable-id`: DraggableId = js.native
+  var `data-rbd-drag-handle-draggable-id`: DraggableId
   
-  var draggable: Boolean = js.native
+  var draggable: Boolean
   
-  var onDragStart: DragEventHandler[_] = js.native
+  var onDragStart: DragEventHandler[js.Any]
   
-  var role: String = js.native
+  var role: String
   
-  var tabIndex: Double = js.native
+  var tabIndex: Double
 }
 object DraggableProvidedDragHandleProps {
   
@@ -32,7 +30,7 @@ object DraggableProvidedDragHandleProps {
     `data-rbd-drag-handle-context-id`: ContextId,
     `data-rbd-drag-handle-draggable-id`: DraggableId,
     draggable: Boolean,
-    onDragStart: DragEvent[_] => Unit,
+    onDragStart: DragEvent[js.Any] => Unit,
     role: String,
     tabIndex: Double
   ): DraggableProvidedDragHandleProps = {
@@ -59,7 +57,7 @@ object DraggableProvidedDragHandleProps {
     def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnDragStart(value: DragEvent[_] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    def setOnDragStart(value: DragEvent[js.Any] => Unit): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRole(value: String): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])

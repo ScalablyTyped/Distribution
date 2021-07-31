@@ -2,30 +2,28 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch accountstatuses response.
   */
-@js.native
 trait SchemaAccountstatusesCustomBatchResponseEntry extends StObject {
   
   /**
     * The requested account status. Defined if and only if the request was
     * successful.
     */
-  var accountStatus: js.UndefOr[SchemaAccountStatus] = js.native
+  var accountStatus: js.UndefOr[SchemaAccountStatus] = js.undefined
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors defined if and only if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
 }
 object SchemaAccountstatusesCustomBatchResponseEntry {
   

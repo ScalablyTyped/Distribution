@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XErrorQuery extends XInterface {
+trait XErrorQuery
+  extends StObject
+     with XInterface {
   
   /**
     * Returns whether this object has an error
     * @returns `boolean` indicating an error or not
     */
-  def hasError(): Boolean = js.native
+  def hasError(): Boolean
 }
 object XErrorQuery {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait ConditionalRangeBorderIndex extends StObject
 object ConditionalRangeBorderIndex extends StObject {
   
   @js.native
-  sealed trait edgeBottom extends ConditionalRangeBorderIndex
+  sealed trait edgeBottom
+    extends StObject
+       with ConditionalRangeBorderIndex
   
   @js.native
-  sealed trait edgeLeft extends ConditionalRangeBorderIndex
+  sealed trait edgeLeft
+    extends StObject
+       with ConditionalRangeBorderIndex
   
   @js.native
-  sealed trait edgeRight extends ConditionalRangeBorderIndex
+  sealed trait edgeRight
+    extends StObject
+       with ConditionalRangeBorderIndex
   
   @js.native
-  sealed trait edgeTop extends ConditionalRangeBorderIndex
+  sealed trait edgeTop
+    extends StObject
+       with ConditionalRangeBorderIndex
 }

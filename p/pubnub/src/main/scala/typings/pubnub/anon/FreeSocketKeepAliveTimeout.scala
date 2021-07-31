@@ -2,21 +2,19 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreeSocketKeepAliveTimeout extends StObject {
   
-  var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.native
+  var freeSocketKeepAliveTimeout: js.UndefOr[Double] = js.undefined
   
-  var keepAliveMsecs: js.UndefOr[Double] = js.native
+  var keepAliveMsecs: js.UndefOr[Double] = js.undefined
   
-  var maxFreeSockets: js.UndefOr[Double] = js.native
+  var maxFreeSockets: js.UndefOr[Double] = js.undefined
   
-  var maxSockets: js.UndefOr[Double] = js.native
+  var maxSockets: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object FreeSocketKeepAliveTimeout {
   

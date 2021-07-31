@@ -2,76 +2,74 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Solution extends StObject {
   
   /**
     * When performAutoML is true, specifies the best recipe found.
     */
-  var autoMLResult: js.UndefOr[AutoMLResult] = js.native
+  var autoMLResult: js.UndefOr[AutoMLResult] = js.undefined
   
   /**
     * The creation date and time (in Unix time) of the solution.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group that provides the training data.
     */
-  var datasetGroupArn: js.UndefOr[Arn] = js.native
+  var datasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The event type (for example, 'click' or 'like') that is used for training the model.
     */
-  var eventType: js.UndefOr[EventType] = js.native
+  var eventType: js.UndefOr[EventType] = js.undefined
   
   /**
     * The date and time (in Unix time) that the solution was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Describes the latest version of the solution, including the status and the ARN.
     */
-  var latestSolutionVersion: js.UndefOr[SolutionVersionSummary] = js.native
+  var latestSolutionVersion: js.UndefOr[SolutionVersionSummary] = js.undefined
   
   /**
     * The name of the solution.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * When true, Amazon Personalize performs a search for the best USER_PERSONALIZATION recipe from the list specified in the solution configuration (recipeArn must not be specified). When false (the default), Amazon Personalize uses recipeArn for training.
     */
-  var performAutoML: js.UndefOr[PerformAutoML] = js.native
+  var performAutoML: js.UndefOr[PerformAutoML] = js.undefined
   
   /**
     * Whether to perform hyperparameter optimization (HPO) on the chosen recipe. The default is false.
     */
-  var performHPO: js.UndefOr[PerformHPO] = js.native
+  var performHPO: js.UndefOr[PerformHPO] = js.undefined
   
   /**
     * The ARN of the recipe used to create the solution.
     */
-  var recipeArn: js.UndefOr[Arn] = js.native
+  var recipeArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ARN of the solution.
     */
-  var solutionArn: js.UndefOr[Arn] = js.native
+  var solutionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Describes the configuration properties for the solution.
     */
-  var solutionConfig: js.UndefOr[SolutionConfig] = js.native
+  var solutionConfig: js.UndefOr[SolutionConfig] = js.undefined
   
   /**
     * The status of the solution. A solution can be in one of the following states:   CREATE PENDING &gt; CREATE IN_PROGRESS &gt; ACTIVE -or- CREATE FAILED   DELETE PENDING &gt; DELETE IN_PROGRESS  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object Solution {
   

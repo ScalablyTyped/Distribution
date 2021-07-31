@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,42 +37,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *        return htmlOutput;
   *     }
   */
-@js.native
 trait Charts extends StObject {
   
-  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any = js.native
+  var ChartHiddenDimensionStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartHiddenDimensionStrategy */ js.Any
   
-  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any = js.native
+  var ChartMergeStrategy: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartMergeStrategy */ js.Any
   
-  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any = js.native
+  var ChartType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ChartType */ js.Any
   
-  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any = js.native
+  var ColumnType: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ColumnType */ js.Any
   
-  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any = js.native
+  var CurveStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CurveStyle */ js.Any
   
-  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any = js.native
+  var PointStyle: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PointStyle */ js.Any
   
-  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any = js.native
+  var Position: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Position */ js.Any
   
-  def newAreaChart(): AreaChartBuilder = js.native
+  def newAreaChart(): AreaChartBuilder
   
-  def newBarChart(): BarChartBuilder = js.native
+  def newBarChart(): BarChartBuilder
   
-  def newColumnChart(): ColumnChartBuilder = js.native
+  def newColumnChart(): ColumnChartBuilder
   
-  def newDataTable(): DataTableBuilder = js.native
+  def newDataTable(): DataTableBuilder
   
-  def newDataViewDefinition(): DataViewDefinitionBuilder = js.native
+  def newDataViewDefinition(): DataViewDefinitionBuilder
   
-  def newLineChart(): LineChartBuilder = js.native
+  def newLineChart(): LineChartBuilder
   
-  def newPieChart(): PieChartBuilder = js.native
+  def newPieChart(): PieChartBuilder
   
-  def newScatterChart(): ScatterChartBuilder = js.native
+  def newScatterChart(): ScatterChartBuilder
   
-  def newTableChart(): TableChartBuilder = js.native
+  def newTableChart(): TableChartBuilder
   
-  def newTextStyle(): TextStyleBuilder = js.native
+  def newTextStyle(): TextStyleBuilder
 }
 object Charts {
   

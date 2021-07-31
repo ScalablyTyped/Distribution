@@ -2,76 +2,62 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rtpproxy {
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_answer")
+  @JSGlobal("KSR.rtpproxy")
   @js.native
-  def rtpproxyAnswer(flags: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_answer0")
-  @js.native
-  def rtpproxyAnswer0(): Double = js.native
+  @scala.inline
+  def rtpproxyAnswer(flags: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_answer")(flags.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_answer_ip")
-  @js.native
-  def rtpproxyAnswerIp(flags: String, mip: String): Double = js.native
+  @scala.inline
+  def rtpproxyAnswer0(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_answer0")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_destroy")
-  @js.native
-  def rtpproxyDestroy(flags: String): Double = js.native
+  @scala.inline
+  def rtpproxyAnswerIp(flags: String, mip: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_answer_ip")(flags.asInstanceOf[js.Any], mip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_destroy0")
-  @js.native
-  def rtpproxyDestroy0(): Double = js.native
+  @scala.inline
+  def rtpproxyDestroy(flags: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_destroy")(flags.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_manage")
-  @js.native
-  def rtpproxyManage(flags: String): Double = js.native
+  @scala.inline
+  def rtpproxyDestroy0(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_destroy0")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_manage0")
-  @js.native
-  def rtpproxyManage0(): Double = js.native
+  @scala.inline
+  def rtpproxyManage(flags: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_manage")(flags.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_manage_ip")
-  @js.native
-  def rtpproxyManageIp(flags: String, mip: String): Double = js.native
+  @scala.inline
+  def rtpproxyManage0(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_manage0")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_offer")
-  @js.native
-  def rtpproxyOffer(flags: String): Double = js.native
+  @scala.inline
+  def rtpproxyManageIp(flags: String, mip: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_manage_ip")(flags.asInstanceOf[js.Any], mip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_offer0")
-  @js.native
-  def rtpproxyOffer0(): Double = js.native
+  @scala.inline
+  def rtpproxyOffer(flags: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_offer")(flags.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_offer_ip")
-  @js.native
-  def rtpproxyOfferIp(flags: String, mip: String): Double = js.native
+  @scala.inline
+  def rtpproxyOffer0(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_offer0")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_stop_stream2uac")
-  @js.native
-  def rtpproxyStopStream2uac(): Double = js.native
+  @scala.inline
+  def rtpproxyOfferIp(flags: String, mip: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_offer_ip")(flags.asInstanceOf[js.Any], mip.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_stop_stream2uas")
-  @js.native
-  def rtpproxyStopStream2uas(): Double = js.native
+  @scala.inline
+  def rtpproxyStopStream2uac(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_stop_stream2uac")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_stream2uac")
-  @js.native
-  def rtpproxyStream2uac(pname: String, count: Double): Double = js.native
+  @scala.inline
+  def rtpproxyStopStream2uas(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_stop_stream2uas")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.rtpproxy_stream2uas")
-  @js.native
-  def rtpproxyStream2uas(pname: String, count: Double): Double = js.native
+  @scala.inline
+  def rtpproxyStream2uac(pname: String, count: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_stream2uac")(pname.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.set_rtpproxy_set")
-  @js.native
-  def setRtpproxySet(rset: Double): Double = js.native
+  @scala.inline
+  def rtpproxyStream2uas(pname: String, count: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("rtpproxy_stream2uas")(pname.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtpproxy.start_recording")
-  @js.native
-  def startRecording(): Double = js.native
+  @scala.inline
+  def setRtpproxySet(rset: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("set_rtpproxy_set")(rset.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def startRecording(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("start_recording")().asInstanceOf[Double]
 }

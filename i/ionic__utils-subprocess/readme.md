@@ -12,7 +12,7 @@ Subprocess utils for NodeJS
 | Keywords           | - |
 | # releases         | 35 |
 | # dependents       | 3 |
-| # downloads        | 3497900 |
+| # downloads        | 3647833 |
 | # stars            | 0 |
 
 ## Links

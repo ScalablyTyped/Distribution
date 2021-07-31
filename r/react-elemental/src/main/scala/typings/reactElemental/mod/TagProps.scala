@@ -3,25 +3,23 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagProps extends StObject {
   
-  val backgroundColor: js.UndefOr[String] = js.native
+  val backgroundColor: js.UndefOr[String] = js.undefined
   
-  val dismissible: js.UndefOr[Boolean] = js.native
+  val dismissible: js.UndefOr[Boolean] = js.undefined
   
-  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val outlineColor: js.UndefOr[String] = js.native
+  val outlineColor: js.UndefOr[String] = js.undefined
   
-  val size: js.UndefOr[TagSize] = js.native
+  val size: js.UndefOr[TagSize] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val text: String = js.native
+  val text: String
 }
 object TagProps {
   

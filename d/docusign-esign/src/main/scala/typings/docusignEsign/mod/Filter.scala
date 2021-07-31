@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * When set to **true**, the current user needs to take action on the item.
     */
-  var actionRequired: js.UndefOr[String] = js.native
+  var actionRequired: js.UndefOr[String] = js.undefined
   
   /**
     * The number of days a sent envelope remains active before it expires.
     */
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
   /**
     * Filters for any combination of folder ids and folder types. The possible folder types are:
@@ -32,17 +30,17 @@ trait Filter extends StObject {
     * - `sentitems`
     * - `waiting_for_others`
     */
-  var folderIds: js.UndefOr[String] = js.native
+  var folderIds: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime of the beginning of a date range. If no value is provided, the default search is the previous 30 days.
     */
-  var fromDateTime: js.UndefOr[String] = js.native
+  var fromDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the item is a template.
     */
-  var isTemplate: js.UndefOr[String] = js.native
+  var isTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) The order in which to sort the results.
@@ -53,37 +51,37 @@ trait Filter extends StObject {
     * * `asc`: Ascending order.
     * * `desc`: Descending order.
     */
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
   /**
     * The field used to sort the results.
     *
     * Example: `Created`
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var searchTarget: js.UndefOr[String] = js.native
+  var searchTarget: js.UndefOr[String] = js.undefined
   
   /**
     * A free text search field for searching across the items in a folder. The search looks for the text that you enter in the recipient names and emails,
     * envelope custom fields, sender name, and subject.
     */
-  var searchText: js.UndefOr[String] = js.native
+  var searchText: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the envelope. By default, all statuses are returned.
     *
     * For details, see [Envelope Status Code Descriptions](https://developers.docusign.com/esign-rest-api/guides/status-and-error-codes#envelope-status-code-descriptions).
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime of the end of a date range. If no value is provided, the default search is to the current date.
     */
-  var toDateTime: js.UndefOr[String] = js.native
+  var toDateTime: js.UndefOr[String] = js.undefined
 }
 object Filter {
   

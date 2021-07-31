@@ -3,7 +3,6 @@ package typings.akuminaCore.mod.Digispace
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.SiteContext")
@@ -40,9 +39,8 @@ object SiteContext {
   
   /** @return Resolves with Language ID */
   /* static member */
-  @JSImport("akumina-core", "Digispace.SiteContext.GetSiteLocaleId")
-  @js.native
-  def GetSiteLocaleId(): JQueryDeferred[_] = js.native
+  @scala.inline
+  def GetSiteLocaleId(): JQueryDeferred[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("GetSiteLocaleId")().asInstanceOf[JQueryDeferred[js.Any]]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.IsDashBoardPage")
@@ -69,9 +67,8 @@ object SiteContext {
     * Check if in design mode.
     */
   /* static member */
-  @JSImport("akumina-core", "Digispace.SiteContext.IsInDesignMode")
-  @js.native
-  def IsInDesignMode(): String = js.native
+  @scala.inline
+  def IsInDesignMode(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IsInDesignMode")().asInstanceOf[String]
   
   /* static member */
   @JSImport("akumina-core", "Digispace.SiteContext.IsLoaderComplete")

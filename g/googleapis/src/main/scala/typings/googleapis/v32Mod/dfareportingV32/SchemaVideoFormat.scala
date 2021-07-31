@@ -2,40 +2,38 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about supported video formats.
   */
-@js.native
 trait SchemaVideoFormat extends StObject {
   
   /**
     * File type of the video format.
     */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the video format.
     */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#videoFormat&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The resolution of this video format.
     */
-  var resolution: js.UndefOr[SchemaSize] = js.native
+  var resolution: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The target bit rate of this video format.
     */
-  var targetBitRate: js.UndefOr[Double] = js.native
+  var targetBitRate: js.UndefOr[Double] = js.undefined
 }
 object SchemaVideoFormat {
   

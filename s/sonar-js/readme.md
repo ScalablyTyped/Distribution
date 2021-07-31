@@ -10,9 +10,9 @@ A tiny library for detecting when a browser is scrolled to the bottom of a web p
 | ------------------ | :-------------: |
 | Full name          | sonar-js |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 554 |
+| # downloads        | 567 |
 | # stars            | 0 |
 
 ## Links

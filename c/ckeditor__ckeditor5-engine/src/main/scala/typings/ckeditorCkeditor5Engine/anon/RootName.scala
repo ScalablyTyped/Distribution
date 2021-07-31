@@ -2,13 +2,11 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RootName extends StObject {
   
-  var rootName: js.UndefOr[String] = js.native
+  var rootName: js.UndefOr[String] = js.undefined
 }
 object RootName {
   

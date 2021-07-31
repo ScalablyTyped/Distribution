@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -14,8 +13,8 @@ object anon {
     
     def capitalize(text: String): String = js.native
     
-    def extend[T, U](target: T, source: U): T with U = js.native
-    def extend[T, U](target: T, source: U, recursive: Boolean): T with U = js.native
+    def extend[T, U](target: T, source: U): T & U = js.native
+    def extend[T, U](target: T, source: U, recursive: Boolean): T & U = js.native
     
     def floatEquals(a: Double, b: Double): Boolean = js.native
     

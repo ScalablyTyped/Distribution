@@ -4,7 +4,6 @@ import typings.watsonDeveloperCloud.mod.Options
 import typings.watsonDeveloperCloud.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,13 +47,13 @@ object AssistantV1 {
     object DigressIn extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn & String] = js.native
       
-      /* "does_not_return" */ val DOES_NOT_RETURN: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.DOES_NOT_RETURN with String = js.native
+      /* "does_not_return" */ val DOES_NOT_RETURN: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.DOES_NOT_RETURN & String = js.native
       
-      /* "not_available" */ val NOT_AVAILABLE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.NOT_AVAILABLE with String = js.native
+      /* "not_available" */ val NOT_AVAILABLE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.NOT_AVAILABLE & String = js.native
       
-      /* "returns" */ val RETURNS: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.RETURNS with String = js.native
+      /* "returns" */ val RETURNS: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressIn.RETURNS & String = js.native
     }
     
     /** Whether this dialog node can be returned to after a digression. */
@@ -63,15 +62,13 @@ object AssistantV1 {
     object DigressOut extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut with String
-          ] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut & String] = js.native
       
-      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL with String = js.native
+      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL & String = js.native
       
-      /* "allow_all_never_return" */ val ALLOW_ALL_NEVER_RETURN: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL_NEVER_RETURN with String = js.native
+      /* "allow_all_never_return" */ val ALLOW_ALL_NEVER_RETURN: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_ALL_NEVER_RETURN & String = js.native
       
-      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_RETURNING with String = js.native
+      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOut.ALLOW_RETURNING & String = js.native
     }
     
     /** Whether the user can digress to top-level nodes while filling out slots. */
@@ -81,14 +78,14 @@ object AssistantV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots with String
+            typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots & String
           ] = js.native
       
-      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_ALL with String = js.native
+      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_ALL & String = js.native
       
-      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING with String = js.native
+      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING & String = js.native
       
-      /* "not_allowed" */ val NOT_ALLOWED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED with String = js.native
+      /* "not_allowed" */ val NOT_ALLOWED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED & String = js.native
     }
     
     /** How an `event_handler` node is processed. */
@@ -97,25 +94,25 @@ object AssistantV1 {
     object EventName extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName & String] = js.native
       
-      /* "digression_return_prompt" */ val DIGRESSION_RETURN_PROMPT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.DIGRESSION_RETURN_PROMPT with String = js.native
+      /* "digression_return_prompt" */ val DIGRESSION_RETURN_PROMPT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.DIGRESSION_RETURN_PROMPT & String = js.native
       
-      /* "filled" */ val FILLED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FILLED with String = js.native
+      /* "filled" */ val FILLED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FILLED & String = js.native
       
-      /* "filled_multiple" */ val FILLED_MULTIPLE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FILLED_MULTIPLE with String = js.native
+      /* "filled_multiple" */ val FILLED_MULTIPLE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FILLED_MULTIPLE & String = js.native
       
-      /* "focus" */ val FOCUS: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FOCUS with String = js.native
+      /* "focus" */ val FOCUS: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.FOCUS & String = js.native
       
-      /* "generic" */ val GENERIC: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.GENERIC with String = js.native
+      /* "generic" */ val GENERIC: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.GENERIC & String = js.native
       
-      /* "input" */ val INPUT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.INPUT with String = js.native
+      /* "input" */ val INPUT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.INPUT & String = js.native
       
-      /* "nomatch" */ val NOMATCH: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.NOMATCH with String = js.native
+      /* "nomatch" */ val NOMATCH: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.NOMATCH & String = js.native
       
-      /* "nomatch_responses_depleted" */ val NOMATCH_RESPONSES_DEPLETED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.NOMATCH_RESPONSES_DEPLETED with String = js.native
+      /* "nomatch_responses_depleted" */ val NOMATCH_RESPONSES_DEPLETED: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.NOMATCH_RESPONSES_DEPLETED & String = js.native
       
-      /* "validate" */ val VALIDATE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.VALIDATE with String = js.native
+      /* "validate" */ val VALIDATE: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.EventName.VALIDATE & String = js.native
     }
     
     /** How the dialog node is processed. */
@@ -124,19 +121,19 @@ object AssistantV1 {
     object NodeType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType & String] = js.native
       
-      /* "event_handler" */ val EVENT_HANDLER: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.EVENT_HANDLER with String = js.native
+      /* "event_handler" */ val EVENT_HANDLER: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.EVENT_HANDLER & String = js.native
       
-      /* "folder" */ val FOLDER: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.FOLDER with String = js.native
+      /* "folder" */ val FOLDER: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.FOLDER & String = js.native
       
-      /* "frame" */ val FRAME: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.FRAME with String = js.native
+      /* "frame" */ val FRAME: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.FRAME & String = js.native
       
-      /* "response_condition" */ val RESPONSE_CONDITION: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.RESPONSE_CONDITION with String = js.native
+      /* "response_condition" */ val RESPONSE_CONDITION: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.RESPONSE_CONDITION & String = js.native
       
-      /* "slot" */ val SLOT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.SLOT with String = js.native
+      /* "slot" */ val SLOT: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.SLOT & String = js.native
       
-      /* "standard" */ val STANDARD: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.STANDARD with String = js.native
+      /* "standard" */ val STANDARD: typings.watsonDeveloperCloud.mod.CreateDialogNodeConstants.NodeType.STANDARD & String = js.native
     }
   }
   
@@ -149,11 +146,11 @@ object AssistantV1 {
     object ValueType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType & String] = js.native
       
-      /* "patterns" */ val PATTERNS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.PATTERNS with String = js.native
+      /* "patterns" */ val PATTERNS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.PATTERNS & String = js.native
       
-      /* "synonyms" */ val SYNONYMS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.SYNONYMS with String = js.native
+      /* "synonyms" */ val SYNONYMS: typings.watsonDeveloperCloud.mod.CreateValueConstants.ValueType.SYNONYMS & String = js.native
     }
   }
   
@@ -166,9 +163,9 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.GetWorkspaceConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.GetWorkspaceConstants.Sort & String] = js.native
       
-      /* "stable" */ val STABLE: typings.watsonDeveloperCloud.mod.GetWorkspaceConstants.Sort.STABLE with String = js.native
+      /* "stable" */ val STABLE: typings.watsonDeveloperCloud.mod.GetWorkspaceConstants.Sort.STABLE & String = js.native
     }
   }
   
@@ -181,11 +178,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort & String] = js.native
       
-      /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.TEXT with String = js.native
+      /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.TEXT & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListCounterexamplesConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -198,11 +195,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort & String] = js.native
       
-      /* "dialog_node" */ val DIALOG_NODE: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.DIALOG_NODE with String = js.native
+      /* "dialog_node" */ val DIALOG_NODE: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.DIALOG_NODE & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListDialogNodesConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -215,11 +212,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort & String] = js.native
       
-      /* "entity" */ val ENTITY: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.ENTITY with String = js.native
+      /* "entity" */ val ENTITY: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.ENTITY & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListEntitiesConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -232,11 +229,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort & String] = js.native
       
-      /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.TEXT with String = js.native
+      /* "text" */ val TEXT: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.TEXT & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListExamplesConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -249,11 +246,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort & String] = js.native
       
-      /* "intent" */ val INTENT: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.INTENT with String = js.native
+      /* "intent" */ val INTENT: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.INTENT & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -266,11 +263,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort & String] = js.native
       
-      /* "synonym" */ val SYNONYM: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.SYNONYM with String = js.native
+      /* "synonym" */ val SYNONYM: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.SYNONYM & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListSynonymsConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -283,11 +280,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort & String] = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort.UPDATED & String = js.native
       
-      /* "value" */ val VALUE: typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort.VALUE with String = js.native
+      /* "value" */ val VALUE: typings.watsonDeveloperCloud.mod.ListValuesConstants.Sort.VALUE & String = js.native
     }
   }
   
@@ -300,11 +297,11 @@ object AssistantV1 {
     object Sort extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort & String] = js.native
       
-      /* "name" */ val NAME: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.NAME with String = js.native
+      /* "name" */ val NAME: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.NAME & String = js.native
       
-      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.UPDATED with String = js.native
+      /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListWorkspacesConstants.Sort.UPDATED & String = js.native
     }
   }
   
@@ -324,13 +321,13 @@ object AssistantV1 {
     object DigressIn extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn & String] = js.native
       
-      /* "does_not_return" */ val DOES_NOT_RETURN: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.DOES_NOT_RETURN with String = js.native
+      /* "does_not_return" */ val DOES_NOT_RETURN: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.DOES_NOT_RETURN & String = js.native
       
-      /* "not_available" */ val NOT_AVAILABLE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.NOT_AVAILABLE with String = js.native
+      /* "not_available" */ val NOT_AVAILABLE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.NOT_AVAILABLE & String = js.native
       
-      /* "returns" */ val RETURNS: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.RETURNS with String = js.native
+      /* "returns" */ val RETURNS: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressIn.RETURNS & String = js.native
     }
     
     /** Whether this dialog node can be returned to after a digression. */
@@ -339,15 +336,13 @@ object AssistantV1 {
     object DigressOut extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut with String
-          ] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut & String] = js.native
       
-      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_ALL with String = js.native
+      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_ALL & String = js.native
       
-      /* "allow_all_never_return" */ val ALLOW_ALL_NEVER_RETURN: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_ALL_NEVER_RETURN with String = js.native
+      /* "allow_all_never_return" */ val ALLOW_ALL_NEVER_RETURN: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_ALL_NEVER_RETURN & String = js.native
       
-      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_RETURNING with String = js.native
+      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOut.ALLOW_RETURNING & String = js.native
     }
     
     /** Whether the user can digress to top-level nodes while filling out slots. */
@@ -357,14 +352,14 @@ object AssistantV1 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots with String
+            typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots & String
           ] = js.native
       
-      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.ALLOW_ALL with String = js.native
+      /* "allow_all" */ val ALLOW_ALL: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.ALLOW_ALL & String = js.native
       
-      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING with String = js.native
+      /* "allow_returning" */ val ALLOW_RETURNING: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.ALLOW_RETURNING & String = js.native
       
-      /* "not_allowed" */ val NOT_ALLOWED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED with String = js.native
+      /* "not_allowed" */ val NOT_ALLOWED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.DigressOutSlots.NOT_ALLOWED & String = js.native
     }
     
     /** How an `event_handler` node is processed. */
@@ -373,25 +368,25 @@ object AssistantV1 {
     object EventName extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName & String] = js.native
       
-      /* "digression_return_prompt" */ val DIGRESSION_RETURN_PROMPT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.DIGRESSION_RETURN_PROMPT with String = js.native
+      /* "digression_return_prompt" */ val DIGRESSION_RETURN_PROMPT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.DIGRESSION_RETURN_PROMPT & String = js.native
       
-      /* "filled" */ val FILLED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FILLED with String = js.native
+      /* "filled" */ val FILLED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FILLED & String = js.native
       
-      /* "filled_multiple" */ val FILLED_MULTIPLE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FILLED_MULTIPLE with String = js.native
+      /* "filled_multiple" */ val FILLED_MULTIPLE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FILLED_MULTIPLE & String = js.native
       
-      /* "focus" */ val FOCUS: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FOCUS with String = js.native
+      /* "focus" */ val FOCUS: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.FOCUS & String = js.native
       
-      /* "generic" */ val GENERIC: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.GENERIC with String = js.native
+      /* "generic" */ val GENERIC: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.GENERIC & String = js.native
       
-      /* "input" */ val INPUT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.INPUT with String = js.native
+      /* "input" */ val INPUT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.INPUT & String = js.native
       
-      /* "nomatch" */ val NOMATCH: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.NOMATCH with String = js.native
+      /* "nomatch" */ val NOMATCH: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.NOMATCH & String = js.native
       
-      /* "nomatch_responses_depleted" */ val NOMATCH_RESPONSES_DEPLETED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.NOMATCH_RESPONSES_DEPLETED with String = js.native
+      /* "nomatch_responses_depleted" */ val NOMATCH_RESPONSES_DEPLETED: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.NOMATCH_RESPONSES_DEPLETED & String = js.native
       
-      /* "validate" */ val VALIDATE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.VALIDATE with String = js.native
+      /* "validate" */ val VALIDATE: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.EventName.VALIDATE & String = js.native
     }
     
     /** How the dialog node is processed. */
@@ -400,19 +395,19 @@ object AssistantV1 {
     object NodeType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType & String] = js.native
       
-      /* "event_handler" */ val EVENT_HANDLER: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.EVENT_HANDLER with String = js.native
+      /* "event_handler" */ val EVENT_HANDLER: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.EVENT_HANDLER & String = js.native
       
-      /* "folder" */ val FOLDER: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.FOLDER with String = js.native
+      /* "folder" */ val FOLDER: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.FOLDER & String = js.native
       
-      /* "frame" */ val FRAME: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.FRAME with String = js.native
+      /* "frame" */ val FRAME: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.FRAME & String = js.native
       
-      /* "response_condition" */ val RESPONSE_CONDITION: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.RESPONSE_CONDITION with String = js.native
+      /* "response_condition" */ val RESPONSE_CONDITION: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.RESPONSE_CONDITION & String = js.native
       
-      /* "slot" */ val SLOT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.SLOT with String = js.native
+      /* "slot" */ val SLOT: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.SLOT & String = js.native
       
-      /* "standard" */ val STANDARD: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.STANDARD with String = js.native
+      /* "standard" */ val STANDARD: typings.watsonDeveloperCloud.mod.UpdateDialogNodeConstants.NodeType.STANDARD & String = js.native
     }
   }
   
@@ -425,11 +420,11 @@ object AssistantV1 {
     object ValueType extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType with String] = js.native
+      def apply(value: String): js.UndefOr[typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType & String] = js.native
       
-      /* "patterns" */ val PATTERNS: typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType.PATTERNS with String = js.native
+      /* "patterns" */ val PATTERNS: typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType.PATTERNS & String = js.native
       
-      /* "synonyms" */ val SYNONYMS: typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType.SYNONYMS with String = js.native
+      /* "synonyms" */ val SYNONYMS: typings.watsonDeveloperCloud.mod.UpdateValueConstants.ValueType.SYNONYMS & String = js.native
     }
   }
 }

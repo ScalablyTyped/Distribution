@@ -2,17 +2,17 @@ package typings.backbone.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddOptions extends Silenceable {
+trait AddOptions
+  extends StObject
+     with Silenceable {
   
-  var at: js.UndefOr[Double] = js.native
+  var at: js.UndefOr[Double] = js.undefined
   
-  var merge: js.UndefOr[Boolean] = js.native
+  var merge: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[Boolean] = js.native
+  var sort: js.UndefOr[Boolean] = js.undefined
 }
 object AddOptions {
   

@@ -3,13 +3,14 @@ package typings.expectJs
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Expect {
   
   @js.native
-  trait An extends Assertion {
+  trait An
+    extends StObject
+       with Assertion {
     
     /**
       * Assert typeof.
@@ -195,7 +196,9 @@ object Expect {
   }
   
   @js.native
-  trait Be extends Assertion {
+  trait Be
+    extends StObject
+       with Assertion {
     
     /**
       * Checks if the obj exactly equals another.
@@ -204,19 +207,25 @@ object Expect {
   }
   
   @js.native
-  trait Have extends Assertion {
+  trait Have
+    extends StObject
+       with Assertion {
     
     var own: Assertion = js.native
   }
   
   @js.native
-  trait Not extends NotBase {
+  trait Not
+    extends StObject
+       with NotBase {
     
     var to: ToBase = js.native
   }
   
   @js.native
-  trait NotBase extends Assertion {
+  trait NotBase
+    extends StObject
+       with Assertion {
     
     /**
       * Checks if the obj exactly equals another.
@@ -233,13 +242,17 @@ object Expect {
   }
   
   @js.native
-  trait Only extends Assertion {
+  trait Only
+    extends StObject
+       with Assertion {
     
     var have: Have = js.native
   }
   
   @js.native
-  trait Root extends Assertion {
+  trait Root
+    extends StObject
+       with Assertion {
     
     /**
       * Checks if the obj exactly equals another.
@@ -258,13 +271,17 @@ object Expect {
   }
   
   @js.native
-  trait To extends ToBase {
+  trait To
+    extends StObject
+       with ToBase {
     
     var not: NotBase = js.native
   }
   
   @js.native
-  trait ToBase extends Assertion {
+  trait ToBase
+    extends StObject
+       with Assertion {
     
     /**
       * Checks if the obj exactly equals another.

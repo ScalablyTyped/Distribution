@@ -2,78 +2,76 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // language/visitor.js
-@js.native
 trait QueryDocumentKeys extends StObject {
   
-  var Argument: js.Array[String] = js.native
+  var Argument: js.Array[String]
   
-  var BooleanValue: js.Array[Boolean] = js.native
+  var BooleanValue: js.Array[Boolean]
   
-  var Directive: js.Array[String] = js.native
+  var Directive: js.Array[String]
   
-  var Document: js.Array[String] = js.native
+  var Document: js.Array[String]
   
-  var EnumTypeDefinition: js.Array[String] = js.native
+  var EnumTypeDefinition: js.Array[String]
   
-  var EnumValue: js.Array[_] = js.native
+  var EnumValue: js.Array[js.Any]
   
-  var EnumValueDefinition: js.Array[String] = js.native
+  var EnumValueDefinition: js.Array[String]
   
-  var Field: js.Array[String] = js.native
+  var Field: js.Array[String]
   
-  var FieldDefinition: js.Array[String] = js.native
+  var FieldDefinition: js.Array[String]
   
-  var FloatValue: js.Array[Double] = js.native
+  var FloatValue: js.Array[Double]
   
-  var FragmentDefinition: js.Array[String] = js.native
+  var FragmentDefinition: js.Array[String]
   
-  var FragmentSpread: js.Array[String] = js.native
+  var FragmentSpread: js.Array[String]
   
-  var InlineFragment: js.Array[String] = js.native
+  var InlineFragment: js.Array[String]
   
-  var InputObjectTypeDefinition: js.Array[String] = js.native
+  var InputObjectTypeDefinition: js.Array[String]
   
-  var InputValueDefinition: js.Array[String] = js.native
+  var InputValueDefinition: js.Array[String]
   
-  var IntValue: js.Array[Double] = js.native
+  var IntValue: js.Array[Double]
   
-  var InterfaceTypeDefinition: js.Array[String] = js.native
+  var InterfaceTypeDefinition: js.Array[String]
   
-  var ListType: js.Array[String] = js.native
+  var ListType: js.Array[String]
   
-  var ListValue: js.Array[String] = js.native
+  var ListValue: js.Array[String]
   
-  var Name: js.Array[_] = js.native
+  var Name: js.Array[js.Any]
   
-  var NamedType: js.Array[String] = js.native
+  var NamedType: js.Array[String]
   
-  var NonNullType: js.Array[String] = js.native
+  var NonNullType: js.Array[String]
   
-  var ObjectField: js.Array[String] = js.native
+  var ObjectField: js.Array[String]
   
-  var ObjectTypeDefinition: js.Array[String] = js.native
+  var ObjectTypeDefinition: js.Array[String]
   
-  var ObjectValue: js.Array[String] = js.native
+  var ObjectValue: js.Array[String]
   
-  var OperationDefinition: js.Array[String] = js.native
+  var OperationDefinition: js.Array[String]
   
-  var ScalarTypeDefinition: js.Array[String] = js.native
+  var ScalarTypeDefinition: js.Array[String]
   
-  var SelectionSet: js.Array[String] = js.native
+  var SelectionSet: js.Array[String]
   
-  var StringValue: js.Array[String] = js.native
+  var StringValue: js.Array[String]
   
-  var TypeExtensionDefinition: js.Array[String] = js.native
+  var TypeExtensionDefinition: js.Array[String]
   
-  var UnionTypeDefinition: js.Array[String] = js.native
+  var UnionTypeDefinition: js.Array[String]
   
-  var Variable: js.Array[String] = js.native
+  var Variable: js.Array[String]
   
-  var VariableDefinition: js.Array[String] = js.native
+  var VariableDefinition: js.Array[String]
 }
 object QueryDocumentKeys {
   
@@ -84,7 +82,7 @@ object QueryDocumentKeys {
     Directive: js.Array[String],
     Document: js.Array[String],
     EnumTypeDefinition: js.Array[String],
-    EnumValue: js.Array[_],
+    EnumValue: js.Array[js.Any],
     EnumValueDefinition: js.Array[String],
     Field: js.Array[String],
     FieldDefinition: js.Array[String],
@@ -98,7 +96,7 @@ object QueryDocumentKeys {
     InterfaceTypeDefinition: js.Array[String],
     ListType: js.Array[String],
     ListValue: js.Array[String],
-    Name: js.Array[_],
+    Name: js.Array[js.Any],
     NamedType: js.Array[String],
     NonNullType: js.Array[String],
     ObjectField: js.Array[String],
@@ -151,7 +149,7 @@ object QueryDocumentKeys {
     def setEnumTypeDefinitionVarargs(value: String*): Self = StObject.set(x, "EnumTypeDefinition", js.Array(value :_*))
     
     @scala.inline
-    def setEnumValue(value: js.Array[_]): Self = StObject.set(x, "EnumValue", value.asInstanceOf[js.Any])
+    def setEnumValue(value: js.Array[js.Any]): Self = StObject.set(x, "EnumValue", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnumValueDefinition(value: js.Array[String]): Self = StObject.set(x, "EnumValueDefinition", value.asInstanceOf[js.Any])
@@ -235,7 +233,7 @@ object QueryDocumentKeys {
     def setListValueVarargs(value: String*): Self = StObject.set(x, "ListValue", js.Array(value :_*))
     
     @scala.inline
-    def setName(value: js.Array[_]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    def setName(value: js.Array[js.Any]): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setNameVarargs(value: js.Any*): Self = StObject.set(x, "Name", js.Array(value :_*))

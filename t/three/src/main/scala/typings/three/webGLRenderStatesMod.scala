@@ -8,7 +8,6 @@ import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLRenderStatesMod {
@@ -23,18 +22,17 @@ object webGLRenderStatesMod {
     def get(scene: Scene, camera: Camera): WebGLRenderState = js.native
   }
   
-  @js.native
   trait WebGLRenderState extends StObject {
     
-    def init(): Unit = js.native
+    def init(): Unit
     
-    def pushLight(light: Light): Unit = js.native
+    def pushLight(light: Light): Unit
     
-    def pushShadow(shadowLight: Light): Unit = js.native
+    def pushShadow(shadowLight: Light): Unit
     
-    def setupLights(camera: Camera): Unit = js.native
+    def setupLights(camera: Camera): Unit
     
-    var state: Lights = js.native
+    var state: Lights
   }
   object WebGLRenderState {
     

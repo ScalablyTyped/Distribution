@@ -5,7 +5,6 @@ import typings.cloneableReadable.anon.Clone
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,7 +13,7 @@ object mod extends Shortcut {
   @js.native
   val ^ : CloneableFn = js.native
   
-  type Cloneable[T /* <: Readable */] = T with Clone
+  type Cloneable[T /* <: Readable */] = T & Clone
   
   @js.native
   trait CloneableFn extends StObject {

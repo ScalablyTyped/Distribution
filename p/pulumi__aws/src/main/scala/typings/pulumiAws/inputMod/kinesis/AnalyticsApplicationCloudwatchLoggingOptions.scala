@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationCloudwatchLoggingOptions extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the CloudWatch Log Stream.
     */
-  var logStreamArn: Input[String] = js.native
+  var logStreamArn: Input[String]
   
   /**
     * The ARN of the IAM Role used to send application messages.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object AnalyticsApplicationCloudwatchLoggingOptions {
   

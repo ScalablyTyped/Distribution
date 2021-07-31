@@ -10,10 +10,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.videoHeight
 import typings.wechatMiniprogram.wechatMiniprogramStrings.videoWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Info extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait Info extends StObject {
     * -`videoWidth` 视频画面的宽度
     * -`videoHeight` 视频画面的高度
     */
-  var info: videoBitrate | audioBitrate | videoFPS | videoGOP | netSpeed | netJitter | videoWidth | videoHeight = js.native
+  var info: videoBitrate | audioBitrate | videoFPS | videoGOP | netSpeed | netJitter | videoWidth | videoHeight
 }
 object Info {
   

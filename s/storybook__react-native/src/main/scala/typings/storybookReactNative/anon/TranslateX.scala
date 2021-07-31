@@ -3,13 +3,11 @@ package typings.storybookReactNative.anon
 import typings.reactNative.mod.Animated.AnimatedInterpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslateX extends StObject {
   
-  var translateX: AnimatedInterpolation = js.native
+  var translateX: AnimatedInterpolation
 }
 object TranslateX {
   

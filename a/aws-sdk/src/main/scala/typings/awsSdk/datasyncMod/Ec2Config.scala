@@ -2,21 +2,19 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ec2Config extends StObject {
   
   /**
     * The Amazon Resource Names (ARNs) of the security groups that are configured for the Amazon EC2 resource.
     */
-  var SecurityGroupArns: Ec2SecurityGroupArnList = js.native
+  var SecurityGroupArns: Ec2SecurityGroupArnList
   
   /**
     * The ARN of the subnet and the security group that DataSync uses to access the target EFS file system.
     */
-  var SubnetArn: Ec2SubnetArn = js.native
+  var SubnetArn: Ec2SubnetArn
 }
 object Ec2Config {
   

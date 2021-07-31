@@ -12,28 +12,27 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.wei
 import typings.solidityParserAntlr.solidityParserAntlrStrings.years
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumberLiteral
-  extends PrimaryExpression
+  extends StObject
      with BaseASTNode
-     with AssemblyItem {
+     with AssemblyItem
+     with PrimaryExpression {
   
-  var number: String = js.native
+  var number: String
   
-  var subdenomination: Null | wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years = js.native
+  var subdenomination: Null | wei | szabo | finney | ether | seconds | minutes | hours | days | weeks | years
   
   @JSName("type")
-  var type_NumberLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral = js.native
+  var type_NumberLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral
 }
 object NumberLiteral {
   
   @scala.inline
-  def apply(number: String, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.NumberLiteral): NumberLiteral = {
-    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(number: String): NumberLiteral = {
+    val __obj = js.Dynamic.literal(number = number.asInstanceOf[js.Any], subdenomination = null)
+    __obj.updateDynamic("type")("NumberLiteral")
     __obj.asInstanceOf[NumberLiteral]
   }
   

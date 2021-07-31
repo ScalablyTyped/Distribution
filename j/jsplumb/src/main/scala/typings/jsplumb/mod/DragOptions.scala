@@ -2,23 +2,21 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragOptions extends StObject {
   
-  var containment: js.UndefOr[String] = js.native
+  var containment: js.UndefOr[String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.native
+  var start: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.undefined
   
-  var stop: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.native
+  var stop: js.UndefOr[js.Function1[/* params */ DragEventCallbackOptions, Unit]] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object DragOptions {
   

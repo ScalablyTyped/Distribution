@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive paint events. */
-@js.native
-trait XPaintListener extends XEventListener {
+trait XPaintListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a region of the window became invalid, e.g. when another window has been moved away. */
-  def windowPaint(e: PaintEvent): Unit = js.native
+  def windowPaint(e: PaintEvent): Unit
 }
 object XPaintListener {
   

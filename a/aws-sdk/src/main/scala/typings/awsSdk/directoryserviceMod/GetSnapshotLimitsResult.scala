@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnapshotLimitsResult extends StObject {
   
   /**
     * A SnapshotLimits object that contains the manual snapshot limits for the specified directory.
     */
-  var SnapshotLimits: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotLimits] = js.native
+  var SnapshotLimits: js.UndefOr[typings.awsSdk.directoryserviceMod.SnapshotLimits] = js.undefined
 }
 object GetSnapshotLimitsResult {
   

@@ -11,14 +11,13 @@ import typings.winrtUwp.winrtUwpStrings.itemfailed
 import typings.winrtUwp.winrtUwpStrings.itemopened
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a list of MediaPlaybackItem objects that can be played back. Provides methods for switching the currently playing item and enabling looping and shuffling. */
 @js.native
 trait MediaPlaybackList extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_currentitemchanged(
     `type`: currentitemchanged,
@@ -70,24 +69,24 @@ trait MediaPlaybackList extends StObject {
   def moveTo(itemIndex: Double): MediaPlaybackItem = js.native
   
   /** Occurs when the currently playing MediaPlaybackItem changes. */
-  def oncurrentitemchanged(ev: CurrentMediaPlaybackItemChangedEventArgs with WinRTEvent[MediaPlaybackList]): Unit = js.native
+  def oncurrentitemchanged(ev: CurrentMediaPlaybackItemChangedEventArgs & WinRTEvent[MediaPlaybackList]): Unit = js.native
   /** Occurs when the currently playing MediaPlaybackItem changes. */
   @JSName("oncurrentitemchanged")
   var oncurrentitemchanged_Original: TypedEventHandler[MediaPlaybackList, CurrentMediaPlaybackItemChangedEventArgs] = js.native
   
   /** Occurs when an error is encountered with a MediaPlaybackItem in the playback list. */
-  def onitemfailed(ev: MediaPlaybackItemFailedEventArgs with WinRTEvent[MediaPlaybackList]): Unit = js.native
+  def onitemfailed(ev: MediaPlaybackItemFailedEventArgs & WinRTEvent[MediaPlaybackList]): Unit = js.native
   /** Occurs when an error is encountered with a MediaPlaybackItem in the playback list. */
   @JSName("onitemfailed")
   var onitemfailed_Original: TypedEventHandler[MediaPlaybackList, MediaPlaybackItemFailedEventArgs] = js.native
   
   /** Occurs when a MediaPlaybackItem in the playback list is successfully opened. */
-  def onitemopened(ev: MediaPlaybackItemOpenedEventArgs with WinRTEvent[MediaPlaybackList]): Unit = js.native
+  def onitemopened(ev: MediaPlaybackItemOpenedEventArgs & WinRTEvent[MediaPlaybackList]): Unit = js.native
   /** Occurs when a MediaPlaybackItem in the playback list is successfully opened. */
   @JSName("onitemopened")
   var onitemopened_Original: TypedEventHandler[MediaPlaybackList, MediaPlaybackItemOpenedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_currentitemchanged(
     `type`: currentitemchanged,

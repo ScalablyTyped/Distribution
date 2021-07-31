@@ -7,24 +7,21 @@ import typings.roads.mod.Response
 import typings.roads.mod.Road
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object http2ServerMod {
   
   @JSImport("roads-server/types/http2Server", JSImport.Default)
   @js.native
-  class default protected () extends Server {
+  class default protected ()
+    extends StObject
+       with Server {
     /**
       * Constructs a new Server object that helps create Roads servers.
       *
       * @param {Road} road The Road that handles all the routes
       */
     def this(road: Road) = this()
-  }
-  
-  @js.native
-  trait Server extends StObject {
     
     /**
       * Start the http server. Accepts the same parameters as HttpServer.listen
@@ -32,7 +29,8 @@ object http2ServerMod {
       * @param {number} port
       * @param {string} hostname
       */
-    def listen(port: Double, hostname: String): Http2Server = js.native
+    /* CompleteClass */
+    override def listen(port: Double, hostname: String): Http2Server = js.native
     
     /**
       * Standard logic for turning each request into a road request, and communicating the response
@@ -41,12 +39,14 @@ object http2ServerMod {
       * @param {ServerHttp2Stream} stream
       * @param {object} headers
       */
-    /* protected */ def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit = js.native
     
     /**
       * This is the road object that will handle all requests
       * @type {Road}
       */
+    /* CompleteClass */
     var road: Road = js.native
     
     /**
@@ -55,14 +55,57 @@ object http2ServerMod {
       * @param {ServerHttp2Stream} stream
       * @param {Response} response
       */
-    /* protected */ def sendResponse(stream: ServerHttp2Stream, response: Response): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def sendResponse(stream: ServerHttp2Stream, response: Response): Unit = js.native
     
     /**
       * This is the node.js http2 server from the http2 library.
       * @todo  support HTTPS
       * @type HTTPServer
       */
+    /* CompleteClass */
     var server: Http2Server = js.native
+  }
+  
+  trait Server extends StObject {
+    
+    /**
+      * Start the http server. Accepts the same parameters as HttpServer.listen
+      *
+      * @param {number} port
+      * @param {string} hostname
+      */
+    def listen(port: Double, hostname: String): Http2Server
+    
+    /**
+      * Standard logic for turning each request into a road request, and communicating the response
+      * back to the client
+      *
+      * @param {ServerHttp2Stream} stream
+      * @param {object} headers
+      */
+    /* protected */ def onStream(stream: ServerHttp2Stream, headers: StringDictionary[js.Any]): Unit
+    
+    /**
+      * This is the road object that will handle all requests
+      * @type {Road}
+      */
+    var road: Road
+    
+    /**
+      * Helper function to write a roads Response object to an HTTPResponse object
+      *
+      * @param {ServerHttp2Stream} stream
+      * @param {Response} response
+      */
+    /* protected */ def sendResponse(stream: ServerHttp2Stream, response: Response): Unit
+    
+    /**
+      * This is the node.js http2 server from the http2 library.
+      * @todo  support HTTPS
+      * @type HTTPServer
+      */
+    var server: Http2Server
   }
   object Server {
     

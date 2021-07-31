@@ -2,7 +2,6 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionStateMod {
@@ -14,22 +13,30 @@ object subscriptionStateMod {
   object SubscriptionState extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SubscriptionState with String] = js.native
+    def apply(value: String): js.UndefOr[SubscriptionState & String] = js.native
     
     @js.native
-    sealed trait Initial extends SubscriptionState
-    /* "Initial" */ val Initial: typings.sipJs.subscriptionStateMod.SubscriptionState.Initial with String = js.native
+    sealed trait Initial
+      extends StObject
+         with SubscriptionState
+    /* "Initial" */ val Initial: typings.sipJs.subscriptionStateMod.SubscriptionState.Initial & String = js.native
     
     @js.native
-    sealed trait NotifyWait extends SubscriptionState
-    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionStateMod.SubscriptionState.NotifyWait with String = js.native
+    sealed trait NotifyWait
+      extends StObject
+         with SubscriptionState
+    /* "NotifyWait" */ val NotifyWait: typings.sipJs.subscriptionStateMod.SubscriptionState.NotifyWait & String = js.native
     
     @js.native
-    sealed trait Subscribed extends SubscriptionState
-    /* "Subscribed" */ val Subscribed: typings.sipJs.subscriptionStateMod.SubscriptionState.Subscribed with String = js.native
+    sealed trait Subscribed
+      extends StObject
+         with SubscriptionState
+    /* "Subscribed" */ val Subscribed: typings.sipJs.subscriptionStateMod.SubscriptionState.Subscribed & String = js.native
     
     @js.native
-    sealed trait Terminated extends SubscriptionState
-    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionStateMod.SubscriptionState.Terminated with String = js.native
+    sealed trait Terminated
+      extends StObject
+         with SubscriptionState
+    /* "Terminated" */ val Terminated: typings.sipJs.subscriptionStateMod.SubscriptionState.Terminated & String = js.native
   }
 }

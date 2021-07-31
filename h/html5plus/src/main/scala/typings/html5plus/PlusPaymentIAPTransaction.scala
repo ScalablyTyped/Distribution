@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
   */
-@js.native
 trait PlusPaymentIAPTransaction extends StObject {
   
   /**
@@ -19,21 +17,21 @@ trait PlusPaymentIAPTransaction extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var payment: js.UndefOr[String] = js.native
+  var payment: js.UndefOr[String] = js.undefined
   
   /**
     * 购买商品的交易日期
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var transactionDate: js.UndefOr[String] = js.native
+  var transactionDate: js.UndefOr[String] = js.undefined
   
   /**
     * 购买商品的交易订单标识
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var transactionIdentifier: js.UndefOr[String] = js.native
+  var transactionIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * 购买商品的交易收据
@@ -41,7 +39,7 @@ trait PlusPaymentIAPTransaction extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var transactionReceipt: js.UndefOr[String] = js.native
+  var transactionReceipt: js.UndefOr[String] = js.undefined
   
   /**
     * 购买商品的交易状态
@@ -49,7 +47,7 @@ trait PlusPaymentIAPTransaction extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/payment.html](http://www.html5plus.org/doc/zh_cn/payment.html)
     */
-  var transactionState: js.UndefOr[String] = js.native
+  var transactionState: js.UndefOr[String] = js.undefined
 }
 object PlusPaymentIAPTransaction {
   

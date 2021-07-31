@@ -2,57 +2,57 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxRatingControl control.
   */
-@js.native
-trait ASPxClientRatingControl extends ASPxClientControl {
+trait ASPxClientRatingControl
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns a value indicating whether the control's status is read-only.
     */
-  def GetReadOnly(): Boolean = js.native
+  def GetReadOnly(): Boolean
   
   /**
     * Gets the item tooltip title specified by the item index. A string that is the specified item tooltip title.
     * @param index An integer value specifying the item index.
     */
-  def GetTitle(index: Double): String = js.native
+  def GetTitle(index: Double): String
   
   /**
     * Returns the value of the ASPxRatingControl.
     */
-  def GetValue(): Double = js.native
+  def GetValue(): Double
   
   /**
     * Fires on the server after an item has been clicked.
     */
-  var ItemClick: ASPxClientEvent[ASPxClientRatingControlItemClickEventHandler[ASPxClientRatingControl]] = js.native
+  var ItemClick: ASPxClientEvent[ASPxClientRatingControlItemClickEventHandler[ASPxClientRatingControl]]
   
   /**
     * Occurs on the client side when the mouse cursor moves outside a rating control item.
     */
-  var ItemMouseOut: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]] = js.native
+  var ItemMouseOut: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]
   
   /**
     * Occurs on the client side when the mouse cursor is moved into a rating control item.
     */
-  var ItemMouseOver: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]] = js.native
+  var ItemMouseOver: ASPxClientEvent[ASPxClientRatingControlItemMouseEventHandler[ASPxClientRatingControl]]
   
   /**
     * Specifies whether the control's status is read-only.
     * @param value true to make the control read-only; otherwise, false.
     */
-  def SetReadOnly(value: Boolean): Unit = js.native
+  def SetReadOnly(value: Boolean): Unit
   
   /**
     * Modifies the value of the ASPxRatingControl on the client side.
     * @param value A decimal value representing the value of the control.
     */
-  def SetValue(value: Double): Unit = js.native
+  def SetValue(value: Double): Unit
 }
 object ASPxClientRatingControl {
   

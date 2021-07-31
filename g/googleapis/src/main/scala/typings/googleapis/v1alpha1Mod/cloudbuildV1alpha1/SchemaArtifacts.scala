@@ -2,14 +2,12 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Artifacts produced by a build that should be uploaded upon successful
   * completion of all build steps.
   */
-@js.native
 trait SchemaArtifacts extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaArtifacts extends StObject {
     * Build resource&#39;s results field.  If any of the images fail to be
     * pushed, the build is marked FAILURE.
     */
-  var images: js.UndefOr[js.Array[String]] = js.native
+  var images: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of objects to be uploaded to Cloud Storage upon successful
@@ -30,7 +28,7 @@ trait SchemaArtifacts extends StObject {
     * resource&#39;s results field.  If any objects fail to be pushed, the
     * build is marked FAILURE.
     */
-  var objects: js.UndefOr[SchemaArtifactObjects] = js.native
+  var objects: js.UndefOr[SchemaArtifactObjects] = js.undefined
 }
 object SchemaArtifacts {
   

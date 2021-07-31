@@ -12,7 +12,7 @@ Table components for Reactabular
 | Keywords           | react, reactjs, table, tables, reactabular |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 626746 |
+| # downloads        | 660787 |
 | # stars            | 0 |
 
 ## Links

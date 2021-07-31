@@ -11,10 +11,8 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.SVIDEO
 import typings.tizenCommonWeb.tizenCommonWebStrings.TV
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInfoVideoSourceInfo extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SystemInfoVideoSourceInfo extends StObject {
     *
     * If the source is "HDMI 2", the `number` is 2.
     */
-  val number: Double = js.native
+  val number: Double
   
   /**
     * Represents if there is a signal provided on the source.
@@ -31,12 +29,12 @@ trait SystemInfoVideoSourceInfo extends StObject {
     * If the value is ***true***, it means that there is signal provided. The value set to ***false*** means, that there is no signal.
     * By default getPropertyValue functions does not support this member, and will return object with `signal` value set to ***null***, it is supported only by TVWindow module. To get data about signal use `tizen.tvwindow.getSource()` or `tizen.tvwindow.setSource()`.
     */
-  val signal: js.UndefOr[Boolean] = js.native
+  val signal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Represents the type of the video input source.
     */
-  val `type`: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA = js.native
+  val `type`: SystemInfoVideoSourceType | TV | AV | SVIDEO | COMP | PC | HDMI | SCART | DVI | MEDIA
 }
 object SystemInfoVideoSourceInfo {
   

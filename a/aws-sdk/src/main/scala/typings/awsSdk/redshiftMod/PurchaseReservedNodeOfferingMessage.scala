@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedNodeOfferingMessage extends StObject {
   
   /**
     * The number of reserved nodes that you want to purchase. Default: 1 
     */
-  var NodeCount: js.UndefOr[IntegerOptional] = js.native
+  var NodeCount: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The unique identifier of the reserved node offering you want to purchase.
     */
-  var ReservedNodeOfferingId: String = js.native
+  var ReservedNodeOfferingId: String
 }
 object PurchaseReservedNodeOfferingMessage {
   

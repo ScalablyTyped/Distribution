@@ -2,17 +2,15 @@ package typings.wordpressBlocks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockStyle extends StObject {
   
-  val isDefault: js.UndefOr[Boolean] = js.native
+  val isDefault: js.UndefOr[Boolean] = js.undefined
   
-  val label: String = js.native
+  val label: String
   
-  val name: String = js.native
+  val name: String
 }
 object BlockStyle {
   

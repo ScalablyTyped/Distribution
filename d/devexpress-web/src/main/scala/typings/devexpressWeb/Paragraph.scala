@@ -2,49 +2,47 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a paragraph in the document.
   */
-@js.native
 trait Paragraph extends StObject {
   
   /**
     * Gets the paragraph's index.
     */
-  val index: Double = js.native
+  val index: Double
   
   /**
     * Gets the text buffer interval occupied by the current paragraph element.
     */
-  val interval: Interval = js.native
+  val interval: Interval
   
   /**
     * Gets the paragraph's character length.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * Gets the index of a list applied to the paragraph.
     */
-  val listIndex: Double = js.native
+  val listIndex: Double
   
   /**
     * Gets the index of the list level applied to the current paragraph in the numbering list.
     */
-  val listLevelIndex: Double = js.native
+  val listLevelIndex: Double
   
   /**
     * Gets the paragraph's start position in the document.
     */
-  val start: Double = js.native
+  val start: Double
   
   /**
     * Gets the name of the paragraph style applied to the current paragraph (see StyleBase.name).
     */
-  val styleName: String = js.native
+  val styleName: String
 }
 object Paragraph {
   

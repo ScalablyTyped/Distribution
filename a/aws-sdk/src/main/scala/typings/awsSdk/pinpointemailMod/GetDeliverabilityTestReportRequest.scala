@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeliverabilityTestReportRequest extends StObject {
   
   /**
     * A unique string that identifies the predictive inbox placement test.
     */
-  var ReportId: typings.awsSdk.pinpointemailMod.ReportId = js.native
+  var ReportId: typings.awsSdk.pinpointemailMod.ReportId
 }
 object GetDeliverabilityTestReportRequest {
   

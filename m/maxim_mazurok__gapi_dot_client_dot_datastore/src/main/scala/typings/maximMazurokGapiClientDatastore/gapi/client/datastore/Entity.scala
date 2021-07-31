@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   /**
     * The entity's key. An entity must have a key, unless otherwise documented (for example, an entity in `Value.entity_value` may have no key). An entity's kind is its key path's last
     * element's kind, or null if it has no key.
     */
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
   /**
     * The entity's properties. The map's keys are property names. A property name matching regex `__.*__` is reserved. A reserved property name is forbidden in certain documented
@@ -22,8 +20,8 @@ trait Entity extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.Value}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Entity {
   
@@ -46,7 +44,7 @@ object Entity {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.Value}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.Entity & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline

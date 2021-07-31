@@ -20,29 +20,27 @@ import typings.vegaTypings.legendMod.LegendType
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legendEncodeMod {
   
-  @JSImport("vega-lite/build/src/compile/legend/encode", "entries")
+  @JSImport("vega-lite/build/src/compile/legend/encode", JSImport.Namespace)
   @js.native
-  def entries(entriesSpec: js.Any, hasLegendCmpt: LegendEncodeParams): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/legend/encode", "getFirstConditionValue")
-  @js.native
-  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = js.native
-  @JSImport("vega-lite/build/src/compile/legend/encode", "getFirstConditionValue")
-  @js.native
-  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = js.native
+  @scala.inline
+  def entries(entriesSpec: js.Any, hasLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("entries")(entriesSpec.asInstanceOf[js.Any], hasLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("vega-lite/build/src/compile/legend/encode", "gradient")
-  @js.native
-  def gradient(gradientSpec: js.Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = js.native
+  @scala.inline
+  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")().asInstanceOf[V]
+  @scala.inline
+  def getFirstConditionValue[V /* <: (Value[ExprRef | SignalRef]) | Gradient */](channelDef: ColorDef[String] | ShapeDef[String]): V = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstConditionValue")(channelDef.asInstanceOf[js.Any]).asInstanceOf[V]
   
-  @JSImport("vega-lite/build/src/compile/legend/encode", "labels")
-  @js.native
-  def labels(specifiedlabelsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): js.Any = js.native
+  @scala.inline
+  def gradient(gradientSpec: js.Any, hasModelLegendTypeLegendCmpt: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("gradient")(gradientSpec.asInstanceOf[js.Any], hasModelLegendTypeLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
+  
+  @scala.inline
+  def labels(specifiedlabelsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmpt: LegendEncodeParams): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("labels")(specifiedlabelsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmpt.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* Inlined {[ part in keyof vega.vega.LegendEncode ]:? (spec : vega.vega.EncodeEntry, params : vega-lite.vega-lite/build/src/compile/legend/encode.LegendEncodeParams): vega.vega.EncodeEntry} */
   object legendEncodeRules {
@@ -124,29 +122,27 @@ object legendEncodeMod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("vega-lite/build/src/compile/legend/encode", "symbols")
-  @js.native
-  def symbols(symbolsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = js.native
+  @scala.inline
+  def symbols(symbolsSpec: js.Any, hasFieldOrDatumDefModelChannelLegendCmptLegendType: LegendEncodeParams): SymbolEncodeEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("symbols")(symbolsSpec.asInstanceOf[js.Any], hasFieldOrDatumDefModelChannelLegendCmptLegendType.asInstanceOf[js.Any])).asInstanceOf[SymbolEncodeEntry]
   
-  @js.native
   trait LegendEncodeParams extends StObject {
     
-    var channel: NonPositionScaleChannel = js.native
+    var channel: NonPositionScaleChannel
     
-    var fieldOrDatumDef: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]) = js.native
+    var fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
     
-    var legendCmpt: LegendComponent = js.native
+    var legendCmpt: LegendComponent
     
-    var legendType: LegendType = js.native
+    var legendType: LegendType
     
-    var model: UnitModel = js.native
+    var model: UnitModel
   }
   object LegendEncodeParams {
     
     @scala.inline
     def apply(
       channel: NonPositionScaleChannel,
-      fieldOrDatumDef: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
+      fieldOrDatumDef: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]),
       legendCmpt: LegendComponent,
       legendType: LegendType,
       model: UnitModel
@@ -163,7 +159,7 @@ object legendEncodeMod {
       
       @scala.inline
       def setFieldOrDatumDef(
-        value: (TypedFieldDef[String, _, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
+        value: (TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]) | (DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef])
       ): Self = StObject.set(x, "fieldOrDatumDef", value.asInstanceOf[js.Any])
       
       @scala.inline

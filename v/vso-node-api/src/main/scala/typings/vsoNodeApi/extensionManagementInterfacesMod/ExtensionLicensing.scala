@@ -2,16 +2,14 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionLicensing extends StObject {
   
   /**
     * A list of contributions which deviate from the default licensing behavior
     */
-  var overrides: js.Array[LicensingOverride] = js.native
+  var overrides: js.Array[LicensingOverride]
 }
 object ExtensionLicensing {
   

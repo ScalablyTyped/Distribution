@@ -6,35 +6,33 @@ import typings.mjmlReact.mjmlReactStrings.horizontal
 import typings.mjmlReact.mjmlReactStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlSocialProps extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var borderRadius: js.UndefOr[String | Double] = js.native
+  var borderRadius: js.UndefOr[String | Double] = js.undefined
   
-  var color: js.UndefOr[ColorProperty] = js.native
+  var color: js.UndefOr[ColorProperty] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[String | Double] = js.native
+  var fontSize: js.UndefOr[String | Double] = js.undefined
   
-  var iconHeight: js.UndefOr[String] = js.native
+  var iconHeight: js.UndefOr[String] = js.undefined
   
-  var iconSize: js.UndefOr[String] = js.native
+  var iconSize: js.UndefOr[String] = js.undefined
   
-  var innerPadding: js.UndefOr[String] = js.native
+  var innerPadding: js.UndefOr[String] = js.undefined
   
-  var lineHeight: js.UndefOr[String | Double] = js.native
+  var lineHeight: js.UndefOr[String | Double] = js.undefined
   
-  var mode: js.UndefOr[vertical | horizontal] = js.native
+  var mode: js.UndefOr[vertical | horizontal] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
 }
 object MjmlSocialProps {
   

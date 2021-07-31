@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapLayerDefaultsBubbleStyle extends StObject {
   
-  var fill: js.UndefOr[MapLayerDefaultsBubbleStyleFill] = js.native
+  var fill: js.UndefOr[MapLayerDefaultsBubbleStyleFill] = js.undefined
   
-  var stroke: js.UndefOr[MapLayerDefaultsBubbleStyleStroke] = js.native
+  var stroke: js.UndefOr[MapLayerDefaultsBubbleStyleStroke] = js.undefined
 }
 object MapLayerDefaultsBubbleStyle {
   

@@ -3,30 +3,28 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Tabs.TabsClassKey>> */
-@js.native
 trait PartialStyleRulesTabsClas extends StObject {
   
-  var centered: js.UndefOr[CSSProperties] = js.native
+  var centered: js.UndefOr[CSSProperties] = js.undefined
   
-  var fixed: js.UndefOr[CSSProperties] = js.native
+  var fixed: js.UndefOr[CSSProperties] = js.undefined
   
-  var flexContainer: js.UndefOr[CSSProperties] = js.native
+  var flexContainer: js.UndefOr[CSSProperties] = js.undefined
   
-  var indicator: js.UndefOr[CSSProperties] = js.native
+  var indicator: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var scrollButtons: js.UndefOr[CSSProperties] = js.native
+  var scrollButtons: js.UndefOr[CSSProperties] = js.undefined
   
-  var scrollButtonsAuto: js.UndefOr[CSSProperties] = js.native
+  var scrollButtonsAuto: js.UndefOr[CSSProperties] = js.undefined
   
-  var scrollable: js.UndefOr[CSSProperties] = js.native
+  var scrollable: js.UndefOr[CSSProperties] = js.undefined
   
-  var scroller: js.UndefOr[CSSProperties] = js.native
+  var scroller: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesTabsClas {
   

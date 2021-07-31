@@ -2,15 +2,13 @@ package typings.matrixAppserviceBridge.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content[T] extends StObject {
   
-  var content: T = js.native
+  var content: T
   
-  var ts: Double = js.native
+  var ts: Double
 }
 object Content {
   
@@ -21,7 +19,7 @@ object Content {
   }
   
   @scala.inline
-  implicit class ContentMutableBuilder[Self <: Content[_], T] (val x: Self with Content[T]) extends AnyVal {
+  implicit class ContentMutableBuilder[Self <: Content[?], T] (val x: Self & Content[T]) extends AnyVal {
     
     @scala.inline
     def setContent(value: T): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])

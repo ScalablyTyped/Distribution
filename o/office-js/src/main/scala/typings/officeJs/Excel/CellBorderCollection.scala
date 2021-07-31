@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellBorderCollection extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var bottom: js.UndefOr[CellBorder] = js.native
+  var bottom: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var diagonalDown: js.UndefOr[CellBorder] = js.native
+  var diagonalDown: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var diagonalUp: js.UndefOr[CellBorder] = js.native
+  var diagonalUp: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontal: js.UndefOr[CellBorder] = js.native
+  var horizontal: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var left: js.UndefOr[CellBorder] = js.native
+  var left: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var right: js.UndefOr[CellBorder] = js.native
+  var right: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var top: js.UndefOr[CellBorder] = js.native
+  var top: js.UndefOr[CellBorder] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait CellBorderCollection extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var vertical: js.UndefOr[CellBorder] = js.native
+  var vertical: js.UndefOr[CellBorder] = js.undefined
 }
 object CellBorderCollection {
   

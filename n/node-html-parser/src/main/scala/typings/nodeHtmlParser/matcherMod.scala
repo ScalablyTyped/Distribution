@@ -2,14 +2,15 @@ package typings.nodeHtmlParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matcherMod {
   
   @JSImport("node-html-parser/dist/matcher", JSImport.Default)
   @js.native
-  class default protected () extends Matcher {
+  class default protected ()
+    extends StObject
+       with Matcher {
     /**
       * Creates an instance of Matcher.
       * @param {string} selector

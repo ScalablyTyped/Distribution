@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ToolTipFreePosition class.
   */
-@js.native
-trait ASPxClientToolTipFreePosition extends ASPxClientToolTipPosition {
+trait ASPxClientToolTipFreePosition
+  extends StObject
+     with ASPxClientToolTipPosition {
   
   /**
     * Gets an object containing settings that define how a tooltip should be docked.
     */
-  var dockPosition: String = js.native
+  var dockPosition: String
   
   /**
     * Gets the horizontal offset of a tooltip.
     */
-  var offsetX: Double = js.native
+  var offsetX: Double
   
   /**
     * Gets the vertical offset of a tooltip.
     */
-  var offsetY: Double = js.native
+  var offsetY: Double
   
   /**
     * Gets the ID of a pane.
     */
-  var paneID: Double = js.native
+  var paneID: Double
 }
 object ASPxClientToolTipFreePosition {
   

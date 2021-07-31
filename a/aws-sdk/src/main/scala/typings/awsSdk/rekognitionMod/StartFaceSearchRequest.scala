@@ -2,41 +2,39 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFaceSearchRequest extends StObject {
   
   /**
     * Idempotent token used to identify the start request. If you use the same token with multiple StartFaceSearch requests, the same JobId is returned. Use ClientRequestToken to prevent the same job from being accidently started more than once. 
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.rekognitionMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.rekognitionMod.ClientRequestToken] = js.undefined
   
   /**
     * ID of the collection that contains the faces you want to search for.
     */
-  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId = js.native
+  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId
   
   /**
     * The minimum confidence in the person match to return. For example, don't return any matches where confidence in matches is less than 70%. The default value is 80%.
     */
-  var FaceMatchThreshold: js.UndefOr[Percent] = js.native
+  var FaceMatchThreshold: js.UndefOr[Percent] = js.undefined
   
   /**
     * An identifier you specify that's returned in the completion notification that's published to your Amazon Simple Notification Service topic. For example, you can use JobTag to group related jobs and identify them in the completion notification.
     */
-  var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.native
+  var JobTag: js.UndefOr[typings.awsSdk.rekognitionMod.JobTag] = js.undefined
   
   /**
     * The ARN of the Amazon SNS topic to which you want Amazon Rekognition Video to publish the completion status of the search. 
     */
-  var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.native
+  var NotificationChannel: js.UndefOr[typings.awsSdk.rekognitionMod.NotificationChannel] = js.undefined
   
   /**
     * The video you want to search. The video must be stored in an Amazon S3 bucket. 
     */
-  var Video: typings.awsSdk.rekognitionMod.Video = js.native
+  var Video: typings.awsSdk.rekognitionMod.Video
 }
 object StartFaceSearchRequest {
   

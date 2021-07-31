@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAttachedPoliciesRequest extends StObject {
   
   /**
     * The token to retrieve the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The maximum number of results to be returned per request.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
   /**
     * When true, recursively list attached policies.
     */
-  var recursive: js.UndefOr[Recursive] = js.native
+  var recursive: js.UndefOr[Recursive] = js.undefined
   
   /**
     * The group or principal for which the policies will be listed. Valid principals are CertificateArn (arn:aws:iot:region:accountId:cert/certificateId), thingGroupArn (arn:aws:iot:region:accountId:thinggroup/groupName) and CognitoId (region:id).
     */
-  var target: PolicyTarget = js.native
+  var target: PolicyTarget
 }
 object ListAttachedPoliciesRequest {
   

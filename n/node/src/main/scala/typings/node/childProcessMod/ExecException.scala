@@ -4,19 +4,19 @@ import typings.node.processMod.global.NodeJS.Signals
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExecException extends Error {
+trait ExecException
+  extends StObject
+     with Error {
   
-  var cmd: js.UndefOr[String] = js.native
+  var cmd: js.UndefOr[String] = js.undefined
   
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
-  var killed: js.UndefOr[Boolean] = js.native
+  var killed: js.UndefOr[Boolean] = js.undefined
   
-  var signal: js.UndefOr[Signals] = js.native
+  var signal: js.UndefOr[Signals] = js.undefined
 }
 object ExecException {
   

@@ -2,53 +2,51 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Effects extends StObject {
   
-  var buildingCost: Double = js.native
+  var buildingCost: Double
   
-  var click: Double = js.native
+  var click: Double
   
-  var cps: Double = js.native
+  var cps: Double
   
-  var cursorCps: Double = js.native
+  var cursorCps: Double
   
-  var goldenCookieDur: Double = js.native
+  var goldenCookieDur: Double
   
-  var goldenCookieEffDur: Double = js.native
+  var goldenCookieEffDur: Double
   
-  var goldenCookieFreq: Double = js.native
+  var goldenCookieFreq: Double
   
-  var goldenCookieGain: Double = js.native
+  var goldenCookieGain: Double
   
-  var grandmaCps: Double = js.native
+  var grandmaCps: Double
   
-  var itemDrops: Double = js.native
+  var itemDrops: Double
   
-  var milk: Double = js.native
+  var milk: Double
   
-  var reindeerDur: Double = js.native
+  var reindeerDur: Double
   
-  var reindeerFreq: Double = js.native
+  var reindeerFreq: Double
   
-  var reindeerGain: Double = js.native
+  var reindeerGain: Double
   
-  var upgradeCost: Double = js.native
+  var upgradeCost: Double
   
-  var wrathCookieDur: Double = js.native
+  var wrathCookieDur: Double
   
-  var wrathCookieEffDur: Double = js.native
+  var wrathCookieEffDur: Double
   
-  var wrathCookieFreq: Double = js.native
+  var wrathCookieFreq: Double
   
-  var wrathCookieGain: Double = js.native
+  var wrathCookieGain: Double
   
-  var wrinklerEat: Double = js.native
+  var wrinklerEat: Double
   
-  var wrinklerSpawn: Double = js.native
+  var wrinklerSpawn: Double
 }
 object Effects {
   

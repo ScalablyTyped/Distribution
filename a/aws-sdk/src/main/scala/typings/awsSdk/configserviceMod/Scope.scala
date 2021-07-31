@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scope extends StObject {
   
   /**
     * The ID of the only AWS resource that you want to trigger an evaluation for the rule. If you specify a resource ID, you must specify one resource type for ComplianceResourceTypes.
     */
-  var ComplianceResourceId: js.UndefOr[BaseResourceId] = js.native
+  var ComplianceResourceId: js.UndefOr[BaseResourceId] = js.undefined
   
   /**
     * The resource types of only those AWS resources that you want to trigger an evaluation for the rule. You can only specify one type if you also specify a resource ID for ComplianceResourceId.
     */
-  var ComplianceResourceTypes: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceResourceTypes] = js.native
+  var ComplianceResourceTypes: js.UndefOr[typings.awsSdk.configserviceMod.ComplianceResourceTypes] = js.undefined
   
   /**
     * The tag key that is applied to only those AWS resources that you want to trigger an evaluation for the rule.
     */
-  var TagKey: js.UndefOr[StringWithCharLimit128] = js.native
+  var TagKey: js.UndefOr[StringWithCharLimit128] = js.undefined
   
   /**
     * The tag value applied to only those AWS resources that you want to trigger an evaluation for the rule. If you specify a value for TagValue, you must also specify a value for TagKey.
     */
-  var TagValue: js.UndefOr[StringWithCharLimit256] = js.native
+  var TagValue: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object Scope {
   

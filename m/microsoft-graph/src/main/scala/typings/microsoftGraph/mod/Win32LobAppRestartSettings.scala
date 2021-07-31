@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Win32LobAppRestartSettings extends StObject {
   
   // The number of minutes before the restart time to display the countdown dialog for pending restarts.
-  var countdownDisplayBeforeRestartInMinutes: js.UndefOr[Double] = js.native
+  var countdownDisplayBeforeRestartInMinutes: js.UndefOr[Double] = js.undefined
   
   // The number of minutes to wait before restarting the device after an app installation.
-  var gracePeriodInMinutes: js.UndefOr[Double] = js.native
+  var gracePeriodInMinutes: js.UndefOr[Double] = js.undefined
   
   // The number of minutes to snooze the restart notification dialog when the snooze button is selected.
-  var restartNotificationSnoozeDurationInMinutes: js.UndefOr[NullableOption[Double]] = js.native
+  var restartNotificationSnoozeDurationInMinutes: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Win32LobAppRestartSettings {
   

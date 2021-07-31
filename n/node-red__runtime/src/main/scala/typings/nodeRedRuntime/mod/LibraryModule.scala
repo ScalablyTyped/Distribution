@@ -4,10 +4,8 @@ import typings.nodeRedRuntime.anon.Body
 import typings.nodeRedRuntime.anon.Library
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LibraryModule extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait LibraryModule extends StObject {
     * @param opts.path - the path of the entry
     * @param opts.req - the request to log (optional)
     */
-  def getEntry(opts: Library): js.Promise[String | js.Object] = js.native
+  def getEntry(opts: Library): js.Promise[String | js.Object]
   
   /**
     * Saves an entry to the library
@@ -30,7 +28,7 @@ trait LibraryModule extends StObject {
     * @param opts.body - the body of the entry
     * @param opts.req - the request to log (optional)
     */
-  def saveEntry(opts: Body): js.Promise[Unit] = js.native
+  def saveEntry(opts: Body): js.Promise[Unit]
 }
 object LibraryModule {
   

@@ -2,29 +2,27 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Friday extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var friday: scala.Double = js.native
+  var friday: scala.Double
   
-  var monday: scala.Double = js.native
+  var monday: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var saturday: scala.Double = js.native
+  var saturday: scala.Double
   
-  var sunday: scala.Double = js.native
+  var sunday: scala.Double
   
-  var thursday: scala.Double = js.native
+  var thursday: scala.Double
   
-  var tuesday: scala.Double = js.native
+  var tuesday: scala.Double
   
-  var wednesday: scala.Double = js.native
+  var wednesday: scala.Double
 }
 object Friday {
   

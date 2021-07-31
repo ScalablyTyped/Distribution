@@ -3,26 +3,24 @@ package typings.googleapis.pubsubV1beta2Mod.pubsubV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message data and its attributes. The message payload must not be empty;
   * it must contain either a non-empty data field, or at least one attribute.
   */
-@js.native
 trait SchemaPubsubMessage extends StObject {
   
   /**
     * Optional attributes for this message.
     */
-  var attributes: js.UndefOr[StringDictionary[String]] = js.native
+  var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The message payload. For JSON requests, the value of this field must be
     * [base64-encoded](https://tools.ietf.org/html/rfc4648).
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this message, assigned by the server when the message is published.
@@ -30,14 +28,14 @@ trait SchemaPubsubMessage extends StObject {
     * subscriber that receives a `PubsubMessage` via a `Pull` call or a push
     * delivery. It must not be populated by the publisher in a `Publish` call.
     */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the message was published, populated by the server when
     * it receives the `Publish` call. It must not be populated by the publisher
     * in a `Publish` call.
     */
-  var publishTime: js.UndefOr[String] = js.native
+  var publishTime: js.UndefOr[String] = js.undefined
 }
 object SchemaPubsubMessage {
   

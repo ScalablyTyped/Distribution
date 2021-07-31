@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialReferenceProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait SpatialReferenceProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#imageCoordinateSystem)
     */
-  var imageCoordinateSystem: js.UndefOr[js.Any] = js.native
+  var imageCoordinateSystem: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The well-known ID of a spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#wkid)
     */
-  var wkid: js.UndefOr[Double] = js.native
+  var wkid: js.UndefOr[Double] = js.undefined
   
   /**
     * The well-known text that defines a spatial reference.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-SpatialReference.html#wkt)
     */
-  var wkt: js.UndefOr[String] = js.native
+  var wkt: js.UndefOr[String] = js.undefined
 }
 object SpatialReferenceProperties {
   

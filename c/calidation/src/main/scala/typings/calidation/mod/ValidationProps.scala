@@ -3,19 +3,17 @@ package typings.calidation.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationProps[T /* <: js.Object */] extends StObject {
   
-  def children(context: ValidationContext[T]): ReactNode = js.native
+  def children(context: ValidationContext[T]): ReactNode
   
-  var config: FieldsConfig[T] = js.native
+  var config: FieldsConfig[T]
   
-  var initialValues: js.UndefOr[T] = js.native
+  var initialValues: js.UndefOr[T] = js.undefined
   
-  var transforms: js.UndefOr[Transforms[T]] = js.native
+  var transforms: js.UndefOr[Transforms[T]] = js.undefined
 }
 object ValidationProps {
   
@@ -26,7 +24,7 @@ object ValidationProps {
   }
   
   @scala.inline
-  implicit class ValidationPropsMutableBuilder[Self <: ValidationProps[_], T /* <: js.Object */] (val x: Self with ValidationProps[T]) extends AnyVal {
+  implicit class ValidationPropsMutableBuilder[Self <: ValidationProps[?], T /* <: js.Object */] (val x: Self & ValidationProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ValidationContext[T] => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

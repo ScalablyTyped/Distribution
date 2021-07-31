@@ -7,7 +7,6 @@ import typings.tuyaPanelKit.typesMod.NavigationContainerProps
 import typings.tuyaPanelKit.typesMod.NavigationContainerRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseNavigationContainerMod extends Shortcut {
@@ -23,10 +22,10 @@ object baseNavigationContainerMod extends Shortcut {
     */
   @JSImport("tuya-panel-kit/@react-navigation/core/BaseNavigationContainer", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]] = js.native
+  val default: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = js.native
   
-  type _To = ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]]
+  type _To = ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]]
   
   /* This means you don't have to write `default`, but can instead just say `baseNavigationContainerMod.foo` */
-  override def _to: ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]] = default
+  override def _to: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = default
 }

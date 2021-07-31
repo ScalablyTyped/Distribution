@@ -3,27 +3,27 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.ordered_list_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait OrderedListOpenToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait OrderedListOpenToken
+  extends StObject
+     with TagToken {
   
   /**
     * Ordered list marker value.
     */
-  var order: Double = js.native
+  var order: Double
   
   @JSName("type")
-  var type_OrderedListOpenToken: ordered_list_open = js.native
+  var type_OrderedListOpenToken: ordered_list_open
 }
 object OrderedListOpenToken {
   
   @scala.inline
-  def apply(level: Double, order: Double, `type`: ordered_list_open): OrderedListOpenToken = {
+  def apply(level: Double, order: Double): OrderedListOpenToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ordered_list_open")
     __obj.asInstanceOf[OrderedListOpenToken]
   }
   

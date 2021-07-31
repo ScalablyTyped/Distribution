@@ -4,19 +4,17 @@ import typings.googlepay.google.payments.api.ButtonOptions
 import typings.googlepay.google.payments.api.TransactionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait googlePayCreateOptions extends StObject {
   
-  var button: js.UndefOr[ButtonOptions] = js.native
+  var button: js.UndefOr[ButtonOptions] = js.undefined
   
-  var googlePayVersion: js.UndefOr[String] = js.native
+  var googlePayVersion: js.UndefOr[String] = js.undefined
   
-  var merchantId: String = js.native
+  var merchantId: String
   
-  var transactionInfo: TransactionInfo = js.native
+  var transactionInfo: TransactionInfo
 }
 object googlePayCreateOptions {
   

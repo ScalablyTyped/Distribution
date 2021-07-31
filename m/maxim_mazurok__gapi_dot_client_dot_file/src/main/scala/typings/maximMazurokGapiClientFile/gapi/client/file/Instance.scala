@@ -3,45 +3,43 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /** Output only. The time when the instance was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The description of the instance (2048 characters or less). */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Server-specified ETag for the instance resource to prevent simultaneous updates from overwriting each other. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** File system shares on the instance. For this version, only a single file share is supported. */
-  var fileShares: js.UndefOr[js.Array[FileShareConfig]] = js.native
+  var fileShares: js.UndefOr[js.Array[FileShareConfig]] = js.undefined
   
   /** Resource labels to represent user provided metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Instance with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Instance & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The resource name of the instance, in the format projects/{project}/locations/{location}/instances/{instance}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** VPC networks to which the instance is connected. For this version, only a single network is supported. */
-  var networks: js.UndefOr[js.Array[NetworkConfig]] = js.native
+  var networks: js.UndefOr[js.Array[NetworkConfig]] = js.undefined
   
   /** Output only. The instance state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Additional information about the instance state, if available. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /** The service tier of the instance. */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
 }
 object Instance {
   
@@ -85,7 +83,7 @@ object Instance {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Instance with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Instance & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

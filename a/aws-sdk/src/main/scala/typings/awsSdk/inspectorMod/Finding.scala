@@ -2,101 +2,99 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Finding extends StObject {
   
   /**
     * The ARN that specifies the finding.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * A collection of attributes of the host from which the finding is generated.
     */
-  var assetAttributes: js.UndefOr[AssetAttributes] = js.native
+  var assetAttributes: js.UndefOr[AssetAttributes] = js.undefined
   
   /**
     * The type of the host from which the finding is generated.
     */
-  var assetType: js.UndefOr[AssetType] = js.native
+  var assetType: js.UndefOr[AssetType] = js.undefined
   
   /**
     * The system-defined attributes for the finding.
     */
-  var attributes: AttributeList = js.native
+  var attributes: AttributeList
   
   /**
     * This data element is currently not used.
     */
-  var confidence: js.UndefOr[IocConfidence] = js.native
+  var confidence: js.UndefOr[IocConfidence] = js.undefined
   
   /**
     * The time when the finding was generated.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The description of the finding.
     */
-  var description: js.UndefOr[Text] = js.native
+  var description: js.UndefOr[Text] = js.undefined
   
   /**
     * The ID of the finding.
     */
-  var id: js.UndefOr[FindingId] = js.native
+  var id: js.UndefOr[FindingId] = js.undefined
   
   /**
     * This data element is currently not used.
     */
-  var indicatorOfCompromise: js.UndefOr[Bool] = js.native
+  var indicatorOfCompromise: js.UndefOr[Bool] = js.undefined
   
   /**
     * The numeric value of the finding severity.
     */
-  var numericSeverity: js.UndefOr[NumericSeverity] = js.native
+  var numericSeverity: js.UndefOr[NumericSeverity] = js.undefined
   
   /**
     * The recommendation for the finding.
     */
-  var recommendation: js.UndefOr[Text] = js.native
+  var recommendation: js.UndefOr[Text] = js.undefined
   
   /**
     * The schema version of this data type.
     */
-  var schemaVersion: js.UndefOr[NumericVersion] = js.native
+  var schemaVersion: js.UndefOr[NumericVersion] = js.undefined
   
   /**
     * The data element is set to "Inspector".
     */
-  var service: js.UndefOr[ServiceName] = js.native
+  var service: js.UndefOr[ServiceName] = js.undefined
   
   /**
     * This data type is used in the Finding data type.
     */
-  var serviceAttributes: js.UndefOr[InspectorServiceAttributes] = js.native
+  var serviceAttributes: js.UndefOr[InspectorServiceAttributes] = js.undefined
   
   /**
     * The finding severity. Values can be set to High, Medium, Low, and Informational.
     */
-  var severity: js.UndefOr[Severity] = js.native
+  var severity: js.UndefOr[Severity] = js.undefined
   
   /**
     * The name of the finding.
     */
-  var title: js.UndefOr[Text] = js.native
+  var title: js.UndefOr[Text] = js.undefined
   
   /**
     * The time when AddAttributesToFindings is called.
     */
-  var updatedAt: Timestamp = js.native
+  var updatedAt: Timestamp
   
   /**
     * The user-defined attributes that are assigned to the finding.
     */
-  var userAttributes: UserAttributeList = js.native
+  var userAttributes: UserAttributeList
 }
 object Finding {
   

@@ -2,26 +2,25 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_Comment: typings.cssTree.cssTreeStrings.Comment = js.native
+  var type_Comment: typings.cssTree.cssTreeStrings.Comment
   
-  var value: String = js.native
+  var value: String
 }
 object Comment {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.Comment, value: String): Comment = {
+  def apply(value: String): Comment = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Comment")
     __obj.asInstanceOf[Comment]
   }
   

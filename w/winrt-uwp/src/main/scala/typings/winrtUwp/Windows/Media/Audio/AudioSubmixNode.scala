@@ -6,7 +6,6 @@ import typings.winrtUwp.Windows.Media.Effects.IAudioEffectDefinition
 import typings.winrtUwp.Windows.Media.MediaProperties.AudioEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio submix node that mixes the output of one or more nodes into single output that can be connected to output nodes or other submix nodes. */

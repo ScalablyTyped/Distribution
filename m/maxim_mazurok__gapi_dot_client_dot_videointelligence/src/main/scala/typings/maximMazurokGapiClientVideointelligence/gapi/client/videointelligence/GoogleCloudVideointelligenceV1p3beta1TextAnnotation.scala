@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1p3beta1TextAnnotation extends StObject {
   
   /** All video segments where OCR detected text appears. */
-  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p3beta1TextSegment]] = js.native
+  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1p3beta1TextSegment]] = js.undefined
   
   /** The detected text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** Feature version. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudVideointelligenceV1p3beta1TextAnnotation {
   

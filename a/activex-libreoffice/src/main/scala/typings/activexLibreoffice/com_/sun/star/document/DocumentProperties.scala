@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,11 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDocumentPropertiesSupplier
   * @since OOo 3.0
   */
-@js.native
-trait DocumentProperties extends XDocumentProperties {
+trait DocumentProperties
+  extends StObject
+     with XDocumentProperties {
   
   /** constructs default-initialized instance */
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object DocumentProperties {
   

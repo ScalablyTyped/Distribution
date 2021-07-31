@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestFailure extends StObject {
   
   /** BackendService or BackendBucket returned by load balancer. */
-  var actualService: js.UndefOr[String] = js.native
+  var actualService: js.UndefOr[String] = js.undefined
   
   /** Expected BackendService or BackendBucket resource the given URL should be mapped to. */
-  var expectedService: js.UndefOr[String] = js.native
+  var expectedService: js.UndefOr[String] = js.undefined
   
   /** Host portion of the URL. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** Path portion including query parameters in the URL. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object TestFailure {
   

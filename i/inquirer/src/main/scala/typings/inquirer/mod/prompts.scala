@@ -14,7 +14,6 @@ import typings.rxjs.mod.Observable_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,14 +24,15 @@ object prompts {
   /**
     * Provides data about the failed state of a prompt.
     */
-  @js.native
-  trait FailedPromptStateData extends PromptStateData {
+  trait FailedPromptStateData
+    extends StObject
+       with PromptStateData {
     
     /**
       * @inheritdoc
       */
     @JSName("isValid")
-    var isValid_FailedPromptStateData: `false` | String = js.native
+    var isValid_FailedPromptStateData: `false` | String
   }
   object FailedPromptStateData {
     
@@ -53,7 +53,6 @@ object prompts {
   /**
     * Represents a prompt.
     */
-  @js.native
   trait PromptBase extends StObject {
     
     /**
@@ -62,17 +61,17 @@ object prompts {
       * @returns
       * The result of the prompt.
       */
-    def run(): js.Promise[_] = js.native
+    def run(): js.Promise[js.Any]
     
     /**
       * Gets or sets a string which represents the state of the prompt.
       */
-    var status: PromptState = js.native
+    var status: PromptState
   }
   object PromptBase {
     
     @scala.inline
-    def apply(run: () => js.Promise[_], status: PromptState): PromptBase = {
+    def apply(run: () => js.Promise[js.Any], status: PromptState): PromptBase = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction0(run), status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[PromptBase]
     }
@@ -81,7 +80,7 @@ object prompts {
     implicit class PromptBaseMutableBuilder[Self <: PromptBase] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRun(value: () => js.Promise[_]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
       @scala.inline
       def setStatus(value: PromptState): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
@@ -98,7 +97,8 @@ object prompts {
     */
   @js.native
   trait PromptConstructor
-    extends /**
+    extends StObject
+       with /**
     * Initializes a new instance of a prompt.
     *
     * @param question
@@ -118,18 +118,17 @@ object prompts {
     * @param T
     * The type of the answer.
     */
-  @js.native
   trait PromptEventPipes[T] extends StObject {
     
     /**
       * An object representing an error.
       */
-    var error: Observable_[FailedPromptStateData] = js.native
+    var error: Observable_[FailedPromptStateData]
     
     /**
       * A pypeline for succesful inputs.
       */
-    var success: Observable_[SuccessfulPromptStateData[T]] = js.native
+    var success: Observable_[SuccessfulPromptStateData[T]]
   }
   object PromptEventPipes {
     
@@ -140,7 +139,7 @@ object prompts {
     }
     
     @scala.inline
-    implicit class PromptEventPipesMutableBuilder[Self <: PromptEventPipes[_], T] (val x: Self with PromptEventPipes[T]) extends AnyVal {
+    implicit class PromptEventPipesMutableBuilder[Self <: PromptEventPipes[?], T] (val x: Self & PromptEventPipes[T]) extends AnyVal {
       
       @scala.inline
       def setError(value: Observable_[FailedPromptStateData]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
@@ -156,7 +155,7 @@ object prompts {
     * @template T
     * The type of the answers.
     */
-  type PromptOptions[T /* <: Question[Answers] */] = T with Choices
+  type PromptOptions[T /* <: Question[Answers] */] = T & Choices
   
   /**
     * Represents the state of a prompt.
@@ -166,13 +165,12 @@ object prompts {
   /**
     * Provides data about the state of a prompt.
     */
-  @js.native
   trait PromptStateData extends StObject {
     
     /**
       * Either a string which describes the error of the prompt or a boolean indicating whether the prompt-value is valid.
       */
-    var isValid: String | Boolean = js.native
+    var isValid: String | Boolean
   }
   object PromptStateData {
     
@@ -196,30 +194,31 @@ object prompts {
     * @param T
     * The type of the answer.
     */
-  @js.native
-  trait SuccessfulPromptStateData[T] extends PromptStateData {
+  trait SuccessfulPromptStateData[T]
+    extends StObject
+       with PromptStateData {
     
     /**
       * @inheritdoc
       */
     @JSName("isValid")
-    var isValid_SuccessfulPromptStateData: `true` = js.native
+    var isValid_SuccessfulPromptStateData: `true`
     
     /**
       * The value of the prompt.
       */
-    var value: T = js.native
+    var value: T
   }
   object SuccessfulPromptStateData {
     
     @scala.inline
-    def apply[T](isValid: `true`, value: T): SuccessfulPromptStateData[T] = {
-      val __obj = js.Dynamic.literal(isValid = isValid.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply[T](value: T): SuccessfulPromptStateData[T] = {
+      val __obj = js.Dynamic.literal(isValid = true, value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessfulPromptStateData[T]]
     }
     
     @scala.inline
-    implicit class SuccessfulPromptStateDataMutableBuilder[Self <: SuccessfulPromptStateData[_], T] (val x: Self with SuccessfulPromptStateData[T]) extends AnyVal {
+    implicit class SuccessfulPromptStateDataMutableBuilder[Self <: SuccessfulPromptStateData[?], T] (val x: Self & SuccessfulPromptStateData[T]) extends AnyVal {
       
       @scala.inline
       def setIsValid(value: `true`): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])

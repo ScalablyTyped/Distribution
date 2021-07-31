@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectProtectiveEquipmentRequest extends StObject {
   
   /**
     * The image in which you want to detect PPE on detected persons. The image can be passed as image bytes or you can reference an image stored in an Amazon S3 bucket. 
     */
-  var Image: typings.awsSdk.rekognitionMod.Image = js.native
+  var Image: typings.awsSdk.rekognitionMod.Image
   
   /**
     * An array of PPE types that you want to summarize.
     */
-  var SummarizationAttributes: js.UndefOr[ProtectiveEquipmentSummarizationAttributes] = js.native
+  var SummarizationAttributes: js.UndefOr[ProtectiveEquipmentSummarizationAttributes] = js.undefined
 }
 object DetectProtectiveEquipmentRequest {
   

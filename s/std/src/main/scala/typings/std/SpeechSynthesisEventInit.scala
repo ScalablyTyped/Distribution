@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpeechSynthesisEventInit extends EventInit {
+trait SpeechSynthesisEventInit
+  extends StObject
+     with EventInit {
   
-  var charIndex: js.UndefOr[Double] = js.native
+  var charIndex: js.UndefOr[Double] = js.undefined
   
-  var charLength: js.UndefOr[Double] = js.native
+  var charLength: js.UndefOr[Double] = js.undefined
   
-  var elapsedTime: js.UndefOr[Double] = js.native
+  var elapsedTime: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[java.lang.String] = js.native
+  var name: js.UndefOr[java.lang.String] = js.undefined
   
-  var utterance: SpeechSynthesisUtterance = js.native
+  var utterance: SpeechSynthesisUtterance
 }
 object SpeechSynthesisEventInit {
   

@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jobMod {
@@ -122,6 +121,10 @@ object jobMod {
   /* static members */
   object Job {
     
+    @JSImport("@pulumi/aws/glue/job", "Job")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Job resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -131,115 +134,109 @@ object jobMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/job", "Job.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Job = js.native
-    @JSImport("@pulumi/aws/glue/job", "Job.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Job = js.native
-    @JSImport("@pulumi/aws/glue/job", "Job.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobState): Job = js.native
-    @JSImport("@pulumi/aws/glue/job", "Job.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): Job = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Job]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobState): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Job]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: JobState, opts: CustomResourceOptions): Job = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Job]
     
     /**
       * Returns true if the given object is an instance of Job.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/job", "Job.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/job.Job */ Boolean]
   }
   
-  @js.native
   trait JobArgs extends StObject {
     
     /**
       * The command of the job. Defined below.
       */
-    val command: Input[typings.pulumiAws.inputMod.glue.JobCommand] = js.native
+    val command: Input[typings.pulumiAws.inputMod.glue.JobCommand]
     
     /**
       * The list of connections used for this job.
       */
-    val connections: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val connections: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the [Calling AWS Glue APIs in Python](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html) topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the [Special Parameters Used by AWS Glue](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html) topic in the developer guide.
       */
-    val defaultArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val defaultArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Description of the job.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Execution property of the job. Defined below.
       */
-    val executionProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]] = js.native
+    val executionProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]] = js.undefined
     
     /**
       * The version of glue to use, for example "1.0". For information about available versions, see the [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. `Required` when `pythonshell` is set, accept either `0.0625` or `1.0`. Use `numberOfWorkers` and `workerType` arguments instead with `glueVersion` `2.0` and above.
       */
-    val maxCapacity: js.UndefOr[Input[Double]] = js.native
+    val maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum number of times to retry this job if it fails.
       */
-    val maxRetries: js.UndefOr[Input[Double]] = js.native
+    val maxRetries: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this job. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Non-overridable arguments for this job, specified as name-value pairs.
       */
-    val nonOverridableArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val nonOverridableArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Notification property of the job. Defined below.
       */
-    val notificationProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]] = js.native
+    val notificationProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]] = js.undefined
     
     /**
       * The number of workers of a defined workerType that are allocated when a job runs.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the IAM role associated with this job.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * The name of the Security Configuration to be associated with the job.
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The job timeout in minutes. The default is 2880 minutes (48 hours).
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
   }
   object JobArgs {
     
@@ -353,98 +350,97 @@ object jobMod {
     }
   }
   
-  @js.native
   trait JobState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Glue Job
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The command of the job. Defined below.
       */
-    val command: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobCommand]] = js.native
+    val command: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobCommand]] = js.undefined
     
     /**
       * The list of connections used for this job.
       */
-    val connections: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val connections: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The map of default arguments for this job. You can specify arguments here that your own job-execution script consumes, as well as arguments that AWS Glue itself consumes. For information about how to specify and consume your own Job arguments, see the [Calling AWS Glue APIs in Python](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-calling.html) topic in the developer guide. For information about the key-value pairs that AWS Glue consumes to set up your job, see the [Special Parameters Used by AWS Glue](http://docs.aws.amazon.com/glue/latest/dg/aws-glue-programming-python-glue-arguments.html) topic in the developer guide.
       */
-    val defaultArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val defaultArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Description of the job.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Execution property of the job. Defined below.
       */
-    val executionProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]] = js.native
+    val executionProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobExecutionProperty]] = js.undefined
     
     /**
       * The version of glue to use, for example "1.0". For information about available versions, see the [AWS Glue Release Notes](https://docs.aws.amazon.com/glue/latest/dg/release-notes.html).
       */
-    val glueVersion: js.UndefOr[Input[String]] = js.native
+    val glueVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of AWS Glue data processing units (DPUs) that can be allocated when this job runs. `Required` when `pythonshell` is set, accept either `0.0625` or `1.0`. Use `numberOfWorkers` and `workerType` arguments instead with `glueVersion` `2.0` and above.
       */
-    val maxCapacity: js.UndefOr[Input[Double]] = js.native
+    val maxCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum number of times to retry this job if it fails.
       */
-    val maxRetries: js.UndefOr[Input[Double]] = js.native
+    val maxRetries: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name you assign to this job. It must be unique in your account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Non-overridable arguments for this job, specified as name-value pairs.
       */
-    val nonOverridableArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val nonOverridableArguments: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Notification property of the job. Defined below.
       */
-    val notificationProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]] = js.native
+    val notificationProperty: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.JobNotificationProperty]] = js.undefined
     
     /**
       * The number of workers of a defined workerType that are allocated when a job runs.
       */
-    val numberOfWorkers: js.UndefOr[Input[Double]] = js.native
+    val numberOfWorkers: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The ARN of the IAM role associated with this job.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Security Configuration to be associated with the job.
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The job timeout in minutes. The default is 2880 minutes (48 hours).
       */
-    val timeout: js.UndefOr[Input[Double]] = js.native
+    val timeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of predefined worker that is allocated when a job runs. Accepts a value of Standard, G.1X, or G.2X.
       */
-    val workerType: js.UndefOr[Input[String]] = js.native
+    val workerType: js.UndefOr[Input[String]] = js.undefined
   }
   object JobState {
     

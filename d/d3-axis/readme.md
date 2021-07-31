@@ -10,9 +10,9 @@ Displays automatic reference lines for scales.
 | ------------------ | :-------------: |
 | Full name          | d3-axis |
 | Keywords           | d3, d3-module, axis, scale, visualization |
-| # releases         | 4 |
-| # dependents       | 232 |
-| # downloads        | 34422944 |
+| # releases         | 3 |
+| # dependents       | 252 |
+| # downloads        | 41167600 |
 | # stars            | 0 |
 
 ## Links

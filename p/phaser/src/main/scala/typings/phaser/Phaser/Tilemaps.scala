@@ -33,7 +33,6 @@ import typings.phaser.integer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tilemaps {
@@ -51,7 +50,8 @@ object Tilemaps {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.phaser.Phaser.Types.Physics.Arcade._ArcadeColliderType because Already inherited */ @js.native
   trait DynamicTilemapLayer
-    extends GameObject
+    extends StObject
+       with GameObject
        with Alpha
        with BlendMode
        with ComputedSize
@@ -83,39 +83,19 @@ object Tilemaps {
       * @param height How many tiles tall from the `tileY` index the area will be. Default max height based on tileY.
       */
     def calculateFacesWithin(): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer): DynamicTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): DynamicTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     
@@ -149,50 +129,55 @@ object Tilemaps {
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
     
-    def createFromTiles(indexes: js.Array[_], replacements: js.Array[_], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: js.Array[js.Any], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Unit,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: js.Array[_], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
-      scene: Scene,
-      camera: Camera
+      scene: Scene
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: integer,
-      spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
-    def createFromTiles(
-      indexes: js.Array[_],
-      replacements: integer,
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
       scene: Scene,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: integer, replacements: js.Array[_], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: integer,
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: integer,
       spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Unit,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: integer, replacements: js.Array[_], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(
+      indexes: js.Array[js.Any],
+      replacements: integer,
+      spriteConfig: SpriteConfig,
+      scene: Scene,
+      camera: Camera
+    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: js.Array[js.Any], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
       indexes: integer,
-      replacements: js.Array[_],
+      replacements: js.Array[js.Any],
+      spriteConfig: SpriteConfig,
+      scene: Unit,
+      camera: Camera
+    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: js.Array[js.Any], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(
+      indexes: integer,
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
       scene: Scene,
       camera: Camera
@@ -212,13 +197,7 @@ object Tilemaps {
       * @param camera The Camera to use when determining the world XY Default main camera.
       */
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
-    def createFromTiles(
-      indexes: integer,
-      replacements: integer,
-      spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Unit, camera: Camera): js.Array[Sprite] = js.native
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Scene, camera: Camera): js.Array[Sprite] = js.native
     
@@ -263,7 +242,7 @@ object Tilemaps {
       * Used internally with the canvas render. This holds the tiles that are visible within the
       * camera.
       */
-    var culledTiles: js.Array[_] = js.native
+    var culledTiles: js.Array[js.Any] = js.native
     
     /**
       * Sets the tiles in the given rectangular area (in tile coordinates) of the layer with the
@@ -277,133 +256,74 @@ object Tilemaps {
       * @param recalculateFaces `true` if the faces data should be recalculated. Default true.
       */
     def fill(index: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: Unit, height: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: Unit, height: integer, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: integer, height: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      recalculateFaces: Boolean
-    ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
+      tileX: Unit,
+      tileY: Unit,
       width: integer,
       height: integer,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: integer, width: Unit, height: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
-      tileX: js.UndefOr[scala.Nothing],
+      tileX: Unit,
       tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
-      tileX: js.UndefOr[scala.Nothing],
+      tileX: Unit,
       tileY: integer,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
-      tileX: js.UndefOr[scala.Nothing],
+      tileX: Unit,
       tileY: integer,
       width: integer,
       height: integer,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
     def fill(index: integer, tileX: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: integer, tileY: Unit, width: Unit, height: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
       tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def fill(
-      index: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
+      tileY: Unit,
+      width: Unit,
       height: integer,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
       tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
+      tileY: Unit,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
       tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
+      tileY: Unit,
       width: integer,
       height: integer,
       recalculateFaces: Boolean
@@ -413,16 +333,16 @@ object Tilemaps {
       index: integer,
       tileX: integer,
       tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
-    def fill(index: integer, tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): DynamicTilemapLayer = js.native
+    def fill(index: integer, tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def fill(
       index: integer,
       tileX: integer,
       tileY: integer,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
@@ -432,7 +352,7 @@ object Tilemaps {
       tileX: integer,
       tileY: integer,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       recalculateFaces: Boolean
     ): DynamicTilemapLayer = js.native
     def fill(index: integer, tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
@@ -481,7 +401,7 @@ object Tilemaps {
       * bottom-right. Otherwise it scans from the top-left. Default false.
       */
     def findByIndex(index: integer): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean): Tile = js.native
     def findByIndex(index: integer, skip: integer): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean): Tile = js.native
     
@@ -545,9 +465,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def getTileAtWorldXY(worldX: Double, worldY: Double): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: js.UndefOr[scala.Nothing], camera: Camera): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera): Tile = js.native
     
     /**
       * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
@@ -558,145 +478,35 @@ object Tilemaps {
       * @param filteringOptions Optional filters to apply when getting the tiles.
       */
     def getTilesWithin(): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer, width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
     def getTilesWithin(
       tileX: integer,
@@ -714,19 +524,19 @@ object Tilemaps {
       * @param camera The Camera to use when factoring in which tiles to return. Default main camera.
       */
     def getTilesWithinShape(shape: Circle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Circle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Circle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Circle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Circle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Line, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Line, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Rectangle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Rectangle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Triangle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Triangle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     
@@ -745,7 +555,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(worldX: Double, worldY: Double, width: Double, height: Double, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
@@ -813,15 +623,9 @@ object Tilemaps {
     def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Boolean): Tile = js.native
     
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Boolean): Tile = js.native
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Boolean, camera: Camera): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera): Tile = js.native
     /**
       * Puts a tile at the given world coordinates (pixels) in the specified layer. You can pass in either
       * an index or a Tile object. If you pass in a Tile, all attributes will be copied over to the
@@ -834,15 +638,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Boolean): Tile = js.native
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Boolean, camera: Camera): Tile = js.native
+    def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera): Tile = js.native
     
     /**
       * Puts an array of tiles or a 2D array of tiles at the given tile coordinates in the specified
@@ -876,145 +674,35 @@ object Tilemaps {
       * @param indexes An array of indexes to randomly draw from during randomization.
       */
     def randomize(): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: Unit, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: Unit, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: integer, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: Unit, width: integer, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: Unit, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: Unit, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: integer, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: Unit, tileY: integer, width: integer, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
     def randomize(tileX: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: Unit, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: Unit, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: integer, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: Unit, width: integer, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
     def randomize(tileX: integer, tileY: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
-    def randomize(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: integer, width: Unit, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: integer, width: Unit, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
     def randomize(tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def randomize(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      indexes: js.Array[integer]
-    ): DynamicTilemapLayer = js.native
+    def randomize(tileX: integer, tileY: integer, width: integer, height: Unit, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
     def randomize(tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def randomize(tileX: integer, tileY: integer, width: integer, height: integer, indexes: js.Array[integer]): DynamicTilemapLayer = js.native
     
@@ -1027,14 +715,9 @@ object Tilemaps {
       * @param recalculateFaces `true` if the faces data should be recalculated. Default true.
       */
     def removeTileAt(tileX: integer, tileY: integer): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
     def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean): Tile = js.native
     def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean, recalculateFaces: Boolean): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Boolean): Tile = js.native
     
     /**
       * Removes the tile at the given world coordinates in the specified layer and updates the layer's
@@ -1046,34 +729,7 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def removeTileAtWorldXY(worldX: Double, worldY: Double): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera
-    ): Tile = js.native
     def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
     def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean, recalculateFaces: Boolean): Tile = js.native
     def removeTileAtWorldXY(
       worldX: Double,
@@ -1082,6 +738,10 @@ object Tilemaps {
       recalculateFaces: Boolean,
       camera: Camera
     ): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean, recalculateFaces: Unit, camera: Camera): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Boolean): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Boolean, camera: Camera): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Unit, camera: Camera): Tile = js.native
     
     /**
       * Draws a debug representation of the layer to the given Graphics. This is helpful when you want to
@@ -1105,74 +765,28 @@ object Tilemaps {
       * @param height How many tiles tall from the `tileY` index the area will be. Default max height based on tileY.
       */
     def replaceByIndex(findIndex: integer, newIndex: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
     def replaceByIndex(
       findIndex: integer,
       newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: js.UndefOr[scala.Nothing],
+      tileX: Unit,
       tileY: integer,
       width: integer,
       height: integer
     ): DynamicTilemapLayer = js.native
     def replaceByIndex(findIndex: integer, newIndex: integer, tileX: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def replaceByIndex(findIndex: integer, newIndex: integer, tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
     def replaceByIndex(
       findIndex: integer,
       newIndex: integer,
       tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer
-    ): DynamicTilemapLayer = js.native
-    def replaceByIndex(
-      findIndex: integer,
-      newIndex: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
+      tileY: Unit,
       width: integer,
       height: integer
     ): DynamicTilemapLayer = js.native
@@ -1182,7 +796,7 @@ object Tilemaps {
       newIndex: integer,
       tileX: integer,
       tileY: integer,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ): DynamicTilemapLayer = js.native
     def replaceByIndex(findIndex: integer, newIndex: integer, tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
@@ -1195,29 +809,14 @@ object Tilemaps {
       height: integer
     ): DynamicTilemapLayer = js.native
     
-    def setCollision(indexes: js.Array[_]): Tilemap = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): Tilemap = js.native
-    def setCollision(indexes: js.Array[_], collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      updateLayer: Boolean
-    ): Tilemap = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean): Tilemap = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): Tilemap = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any]): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Unit, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Unit, updateLayer: Boolean): Tilemap = js.native
     /**
       * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
       * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
@@ -1231,28 +830,13 @@ object Tilemaps {
       * false if no tiles have been placed for significant performance boost. Default true.
       */
     def setCollision(indexes: integer): Tilemap = js.native
-    def setCollision(
-      indexes: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): Tilemap = js.native
-    def setCollision(indexes: integer, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollision(
-      indexes: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      updateLayer: Boolean
-    ): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean): Tilemap = js.native
-    def setCollision(
-      indexes: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Unit, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Boolean, updateLayer: Boolean): Tilemap = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Unit, updateLayer: Boolean): Tilemap = js.native
     
     /**
       * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
@@ -1265,9 +849,9 @@ object Tilemaps {
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
       */
     def setCollisionBetween(start: integer, stop: integer): DynamicTilemapLayer = js.native
-    def setCollisionBetween(start: integer, stop: integer, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean): DynamicTilemapLayer = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     
     /**
       * Sets collision on all tiles in the given layer, except for tiles that have an index specified in
@@ -1278,9 +862,9 @@ object Tilemaps {
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
       */
     def setCollisionByExclusion(indexes: js.Array[integer]): DynamicTilemapLayer = js.native
-    def setCollisionByExclusion(indexes: js.Array[integer], collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean): DynamicTilemapLayer = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking tile properties. If a tile has a property
@@ -1295,9 +879,9 @@ object Tilemaps {
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
       */
     def setCollisionByProperty(properties: js.Object): DynamicTilemapLayer = js.native
-    def setCollisionByProperty(properties: js.Object, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean): DynamicTilemapLayer = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking each tiles collision group data
@@ -1308,9 +892,9 @@ object Tilemaps {
       * @param recalculateFaces Whether or not to recalculate the tile faces after the update. Default true.
       */
     def setCollisionFromCollisionGroup(): DynamicTilemapLayer = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     def setCollisionFromCollisionGroup(collides: Boolean): DynamicTilemapLayer = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean): DynamicTilemapLayer = js.native
     
     /**
       * When a Camera culls the tiles in this layer it does so using its view into the world, building up a
@@ -1322,7 +906,7 @@ object Tilemaps {
       * @param paddingY The amount of extra vertical tiles to add to the cull check padding. Default 1.
       */
     def setCullPadding(): this.type = js.native
-    def setCullPadding(paddingX: js.UndefOr[scala.Nothing], paddingY: integer): this.type = js.native
+    def setCullPadding(paddingX: Unit, paddingY: integer): this.type = js.native
     def setCullPadding(paddingX: integer): this.type = js.native
     def setCullPadding(paddingX: integer, paddingY: integer): this.type = js.native
     
@@ -1401,39 +985,19 @@ object Tilemaps {
       * @param height How many tiles tall from the `tileY` index the area will be. Default max height based on tileY.
       */
     def shuffle(): DynamicTilemapLayer = js.native
-    def shuffle(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def shuffle(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def shuffle(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def shuffle(tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def shuffle(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def shuffle(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def shuffle(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def shuffle(tileX: integer): DynamicTilemapLayer = js.native
-    def shuffle(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def shuffle(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def shuffle(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
     def shuffle(tileX: integer, tileY: integer): DynamicTilemapLayer = js.native
-    def shuffle(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): DynamicTilemapLayer = js.native
+    def shuffle(tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def shuffle(tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
     def shuffle(tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     
@@ -1458,74 +1022,19 @@ object Tilemaps {
       * @param height How many tiles tall from the `tileY` index the area will be. Default max height based on tileY.
       */
     def swapByIndex(tileA: integer, tileB: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer
-    ): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def swapByIndex(tileA: integer, tileB: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def swapByIndex(tileA: integer, tileB: integer, tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def swapByIndex(tileA: integer, tileB: integer, tileX: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
     def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: integer): DynamicTilemapLayer = js.native
-    def swapByIndex(
-      tileA: integer,
-      tileB: integer,
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
+    def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
     def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
     def swapByIndex(tileA: integer, tileB: integer, tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     
@@ -1548,7 +1057,7 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def tileToWorldXY(tileX: integer, tileY: integer): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: js.UndefOr[scala.Nothing], camera: Camera): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera): Vector2 = js.native
     
@@ -1606,145 +1115,35 @@ object Tilemaps {
       * { index: [0, 1], weight: 4 } if you wish to draw from multiple tile indexes.
       */
     def weightedRandomize(): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: js.UndefOr[scala.Nothing], tileY: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: Unit, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: Unit, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: integer, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: Unit, width: integer, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: Unit, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: Unit, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: integer, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: Unit, tileY: integer, width: integer, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
     def weightedRandomize(tileX: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: Unit, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: Unit, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: integer, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: integer, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: Unit, width: integer, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
     def weightedRandomize(tileX: integer, tileY: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
-    def weightedRandomize(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: integer, width: Unit, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: integer, width: Unit, height: integer): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: integer, width: Unit, height: integer, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
     def weightedRandomize(tileX: integer, tileY: integer, width: integer): DynamicTilemapLayer = js.native
-    def weightedRandomize(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      weightedIndexes: js.Array[js.Object]
-    ): DynamicTilemapLayer = js.native
+    def weightedRandomize(tileX: integer, tileY: integer, width: integer, height: Unit, weightedIndexes: js.Array[js.Object]): DynamicTilemapLayer = js.native
     def weightedRandomize(tileX: integer, tileY: integer, width: integer, height: integer): DynamicTilemapLayer = js.native
     def weightedRandomize(
       tileX: integer,
@@ -1762,9 +1161,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def worldToTileX(worldX: Double): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera): Double = js.native
     
     /**
       * Converts from world XY coordinates (pixels) to tile XY coordinates (tile units), factoring in the
@@ -1777,31 +1176,13 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def worldToTileXY(worldX: Double, worldY: Double): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
-    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], point: Vector2): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera
-    ): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Camera): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Camera): Vector2 = js.native
     
     /**
       * Converts from world Y coordinates (pixels) to tile Y coordinates (tile units), factoring in the
@@ -1811,9 +1192,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def worldToTileY(worldY: Double): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera): Double = js.native
   }
   
   /**
@@ -1821,7 +1202,6 @@ object Tilemaps {
     * 
     * Image Collections are normally created automatically when Tiled data is loaded.
     */
-  @js.native
   trait ImageCollection extends StObject {
     
     /**
@@ -1829,61 +1209,61 @@ object Tilemaps {
       * @param gid The gid of the image in the Image Collection.
       * @param image The the key of the image in the Image Collection and in the cache.
       */
-    def addImage(gid: integer, image: String): ImageCollection = js.native
+    def addImage(gid: integer, image: String): ImageCollection
     
     /**
       * Returns true if and only if this image collection contains the given image index.
       * @param imageIndex The image index to search for.
       */
-    def containsImageIndex(imageIndex: integer): Boolean = js.native
+    def containsImageIndex(imageIndex: integer): Boolean
     
     /**
       * The Tiled firstgid value.
       * This is the starting index of the first image index this Image Collection contains.
       */
-    var firstgid: integer = js.native
+    var firstgid: integer
     
     /**
       * The height of the tallest image (in pixels).
       */
-    val imageHeight: integer = js.native
+    val imageHeight: integer
     
     /**
       * The margin around the images in the collection (in pixels).
       * Use `setSpacing` to change.
       */
-    val imageMarge: integer = js.native
+    val imageMarge: integer
     
     /**
       * The spacing between each image in the collection (in pixels).
       * Use `setSpacing` to change.
       */
-    val imageSpacing: integer = js.native
+    val imageSpacing: integer
     
     /**
       * The width of the widest image (in pixels).
       */
-    val imageWidth: integer = js.native
+    val imageWidth: integer
     
     /**
       * The cached images that are a part of this collection.
       */
-    val images: js.Array[_] = js.native
+    val images: js.Array[js.Any]
     
     /**
       * The name of the Image Collection.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Image Collection-specific properties that are typically defined in the Tiled editor.
       */
-    var properties: js.Object = js.native
+    var properties: js.Object
     
     /**
       * The total number of images in the image collection.
       */
-    val total: integer = js.native
+    val total: integer
   }
   object ImageCollection {
     
@@ -1896,7 +1276,7 @@ object Tilemaps {
       imageMarge: integer,
       imageSpacing: integer,
       imageWidth: integer,
-      images: js.Array[_],
+      images: js.Array[js.Any],
       name: String,
       properties: js.Object,
       total: integer
@@ -1930,7 +1310,7 @@ object Tilemaps {
       def setImageWidth(value: integer): Self = StObject.set(x, "imageWidth", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
@@ -1951,108 +1331,107 @@ object Tilemaps {
     * etc. into this format. Tilemap, StaticTilemapLayer and DynamicTilemapLayer have a reference
     * to this data and use it to look up and perform operations on tiles.
     */
-  @js.native
   trait LayerData extends StObject {
     
     /**
       * The alpha value of the layer.
       */
-    var alpha: Double = js.native
+    var alpha: Double
     
     /**
       * The base tile height.
       */
-    var baseTileHeight: Double = js.native
+    var baseTileHeight: Double
     
     /**
       * The base tile width.
       */
-    var baseTileWidth: Double = js.native
+    var baseTileWidth: Double
     
     /**
       * An array of physics bodies.
       */
-    var bodies: js.Array[_] = js.native
+    var bodies: js.Array[js.Any]
     
     /**
       * An array of callbacks.
       */
-    var callbacks: js.Array[_] = js.native
+    var callbacks: js.Array[js.Any]
     
     /**
       * Tile Collision ID index map.
       */
-    var collideIndexes: js.Array[_] = js.native
+    var collideIndexes: js.Array[js.Any]
     
     /**
       * An array of the tile data indexes.
       */
-    var data: js.Array[js.Array[Tile]] = js.native
+    var data: js.Array[js.Array[Tile]]
     
     /**
       * The height of the layer in tiles.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The height in pixels of the entire layer.
       */
-    var heightInPixels: Double = js.native
+    var heightInPixels: Double
     
     /**
       * Tile ID index map.
       */
-    var indexes: js.Array[_] = js.native
+    var indexes: js.Array[js.Any]
     
     /**
       * The name of the layer, if specified in Tiled.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Layer specific properties (can be specified in Tiled)
       */
-    var properties: js.Array[js.Object] = js.native
+    var properties: js.Array[js.Object]
     
     /**
       * The pixel height of the tiles.
       */
-    var tileHeight: Double = js.native
+    var tileHeight: Double
     
     /**
       * The pixel width of the tiles.
       */
-    var tileWidth: Double = js.native
+    var tileWidth: Double
     
     /**
       * A reference to the Tilemap layer that owns this data.
       */
-    var tilemapLayer: DynamicTilemapLayer | StaticTilemapLayer = js.native
+    var tilemapLayer: DynamicTilemapLayer | StaticTilemapLayer
     
     /**
       * Is the layer visible or not?
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
     
     /**
       * The width of the layer in tiles.
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * The width in pixels of the entire layer.
       */
-    var widthInPixels: Double = js.native
+    var widthInPixels: Double
     
     /**
       * The x offset of where to draw from the top left.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y offset of where to draw from the top left.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object LayerData {
     
@@ -2061,13 +1440,13 @@ object Tilemaps {
       alpha: Double,
       baseTileHeight: Double,
       baseTileWidth: Double,
-      bodies: js.Array[_],
-      callbacks: js.Array[_],
-      collideIndexes: js.Array[_],
+      bodies: js.Array[js.Any],
+      callbacks: js.Array[js.Any],
+      collideIndexes: js.Array[js.Any],
       data: js.Array[js.Array[Tile]],
       height: Double,
       heightInPixels: Double,
-      indexes: js.Array[_],
+      indexes: js.Array[js.Any],
       name: String,
       properties: js.Array[js.Object],
       tileHeight: Double,
@@ -2096,19 +1475,19 @@ object Tilemaps {
       def setBaseTileWidth(value: Double): Self = StObject.set(x, "baseTileWidth", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBodies(value: js.Array[_]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
+      def setBodies(value: js.Array[js.Any]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBodiesVarargs(value: js.Any*): Self = StObject.set(x, "bodies", js.Array(value :_*))
       
       @scala.inline
-      def setCallbacks(value: js.Array[_]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
+      def setCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "callbacks", js.Array(value :_*))
       
       @scala.inline
-      def setCollideIndexes(value: js.Array[_]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
+      def setCollideIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "collideIndexes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCollideIndexesVarargs(value: js.Any*): Self = StObject.set(x, "collideIndexes", js.Array(value :_*))
@@ -2126,7 +1505,7 @@ object Tilemaps {
       def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIndexes(value: js.Array[_]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+      def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))
@@ -2171,68 +1550,67 @@ object Tilemaps {
     * format. A Tilemap object get a copy of this data and then unpacks the needed properties into
     * itself.
     */
-  @js.native
   trait MapData extends StObject {
     
     /**
       * An object of collision data. Must be created as physics object or will return undefined.
       */
-    var collision: js.Object = js.native
+    var collision: js.Object
     
     /**
       * The format of the map data.
       */
-    var format: integer = js.native
+    var format: integer
     
     /**
       * The height of the entire tilemap.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The height in pixels of the entire tilemap.
       */
-    var heightInPixels: Double = js.native
+    var heightInPixels: Double
     
     /**
       * The collection of images the map uses(specified in Tiled)
       */
-    var imageCollections: js.Array[_] = js.native
+    var imageCollections: js.Array[js.Any]
     
     /**
       * An array of Tiled Image Layers.
       */
-    var images: js.Array[_] = js.native
+    var images: js.Array[js.Any]
     
     /**
       * If the map is infinite or not.
       */
-    var infinite: Boolean = js.native
+    var infinite: Boolean
     
     /**
       * An array with all the layers configured to the MapData.
       */
-    var layers: js.Array[LayerData] | ObjectLayer = js.native
+    var layers: js.Array[LayerData] | ObjectLayer
     
     /**
       * The key in the Phaser cache that corresponds to the loaded tilemap data.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An object of Tiled Object Layers.
       */
-    var objects: js.Object = js.native
+    var objects: js.Object
     
     /**
       * The orientation of the map data (i.e. orthogonal, isometric, hexagonal), default 'orthogonal'.
       */
-    var orientation: String = js.native
+    var orientation: String
     
     /**
       * Map specific properties (can be specified in Tiled)
       */
-    var properties: js.Object = js.native
+    var properties: js.Object
     
     /**
       * Determines the draw order of tilemap. Default is right-down
@@ -2242,42 +1620,42 @@ object Tilemaps {
       * 2, or 'right-up'
       * 3, or 'left-up'
       */
-    var renderOrder: String = js.native
+    var renderOrder: String
     
     /**
       * The height of the tiles.
       */
-    var tileHeight: Double = js.native
+    var tileHeight: Double
     
     /**
       * The width of the tiles.
       */
-    var tileWidth: Double = js.native
+    var tileWidth: Double
     
     /**
       * An array of tile instances.
       */
-    var tiles: js.Array[_] = js.native
+    var tiles: js.Array[js.Any]
     
     /**
       * An array of Tilesets.
       */
-    var tilesets: js.Array[Tileset] = js.native
+    var tilesets: js.Array[Tileset]
     
     /**
       * The version of the map data (as specified in Tiled).
       */
-    var version: String = js.native
+    var version: String
     
     /**
       * The width of the entire tilemap.
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * The width in pixels of the entire tilemap.
       */
-    var widthInPixels: Double = js.native
+    var widthInPixels: Double
   }
   object MapData {
     
@@ -2287,8 +1665,8 @@ object Tilemaps {
       format: integer,
       height: Double,
       heightInPixels: Double,
-      imageCollections: js.Array[_],
-      images: js.Array[_],
+      imageCollections: js.Array[js.Any],
+      images: js.Array[js.Any],
       infinite: Boolean,
       layers: js.Array[LayerData] | ObjectLayer,
       name: String,
@@ -2298,7 +1676,7 @@ object Tilemaps {
       renderOrder: String,
       tileHeight: Double,
       tileWidth: Double,
-      tiles: js.Array[_],
+      tiles: js.Array[js.Any],
       tilesets: js.Array[Tileset],
       version: String,
       width: Double,
@@ -2324,13 +1702,13 @@ object Tilemaps {
       def setHeightInPixels(value: Double): Self = StObject.set(x, "heightInPixels", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setImageCollections(value: js.Array[_]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
+      def setImageCollections(value: js.Array[js.Any]): Self = StObject.set(x, "imageCollections", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImageCollectionsVarargs(value: js.Any*): Self = StObject.set(x, "imageCollections", js.Array(value :_*))
       
       @scala.inline
-      def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
@@ -2366,7 +1744,7 @@ object Tilemaps {
       def setTileWidth(value: Double): Self = StObject.set(x, "tileWidth", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTiles(value: js.Array[_]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
+      def setTiles(value: js.Array[js.Any]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTilesVarargs(value: js.Any*): Self = StObject.set(x, "tiles", js.Array(value :_*))
@@ -2396,13 +1774,12 @@ object Tilemaps {
     *    are ignored as well.
     *  - "draworder" is ignored.
     */
-  @js.native
   trait ObjectLayer extends StObject {
     
     /**
       * The name of the Object Layer.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array of all objects on this Object Layer.
@@ -2423,32 +1800,32 @@ object Tilemaps {
       * 
       * Rectangles and ellipses have a `rectangle` or `ellipse` property set to `true`.
       */
-    var objects: js.Array[TiledObject] = js.native
+    var objects: js.Array[TiledObject]
     
     /**
       * The opacity of the layer, between 0 and 1.
       */
-    var opacity: Double = js.native
+    var opacity: Double
     
     /**
       * The custom properties defined on the Object Layer, keyed by their name.
       */
-    var properties: js.Object = js.native
+    var properties: js.Object
     
     /**
       * The type of each custom property defined on the Object Layer, keyed by its name.
       */
-    var propertyTypes: js.Object = js.native
+    var propertyTypes: js.Object
     
     /**
       * The type of the layer, which should be `objectgroup`.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Whether the layer is shown (`true`) or hidden (`false`).
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ObjectLayer {
     
@@ -2508,7 +1885,8 @@ object Tilemaps {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.phaser.Phaser.Types.Physics.Arcade._ArcadeColliderType because Already inherited */ @js.native
   trait StaticTilemapLayer
-    extends GameObject
+    extends StObject
+       with GameObject
        with Alpha
        with BlendMode
        with ComputedSize
@@ -2540,86 +1918,71 @@ object Tilemaps {
       * @param height How many tiles tall from the `tileY` index the area will be. Default max height based on tileY.
       */
     def calculateFacesWithin(): StaticTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: Unit, tileY: integer, width: integer, height: integer): StaticTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: Unit, width: integer, height: integer): StaticTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer): StaticTilemapLayer = js.native
-    def calculateFacesWithin(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): StaticTilemapLayer = js.native
+    def calculateFacesWithin(tileX: integer, tileY: integer, width: Unit, height: integer): StaticTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer, width: integer): StaticTilemapLayer = js.native
     def calculateFacesWithin(tileX: integer, tileY: integer, width: integer, height: integer): StaticTilemapLayer = js.native
     
-    def createFromTiles(indexes: js.Array[_], replacements: js.Array[_], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: js.Array[js.Any], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Unit,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: js.Array[_], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
-      scene: Scene,
-      camera: Camera
+      scene: Scene
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: js.Array[_],
-      replacements: integer,
-      spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: js.Array[_], replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
-    def createFromTiles(
-      indexes: js.Array[_],
-      replacements: integer,
+      indexes: js.Array[js.Any],
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
       scene: Scene,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: integer, replacements: js.Array[_], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
-      indexes: integer,
-      replacements: js.Array[_],
+      indexes: js.Array[js.Any],
+      replacements: integer,
       spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
+      scene: Unit,
       camera: Camera
     ): js.Array[Sprite] = js.native
-    def createFromTiles(indexes: integer, replacements: js.Array[_], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: js.Array[js.Any], replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(
+      indexes: js.Array[js.Any],
+      replacements: integer,
+      spriteConfig: SpriteConfig,
+      scene: Scene,
+      camera: Camera
+    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: js.Array[js.Any], spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromTiles(
       indexes: integer,
-      replacements: js.Array[_],
+      replacements: js.Array[js.Any],
+      spriteConfig: SpriteConfig,
+      scene: Unit,
+      camera: Camera
+    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: js.Array[js.Any], spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
+    def createFromTiles(
+      indexes: integer,
+      replacements: js.Array[js.Any],
       spriteConfig: SpriteConfig,
       scene: Scene,
       camera: Camera
@@ -2639,13 +2002,7 @@ object Tilemaps {
       * @param camera The Camera to use when determining the world XY Default main camera.
       */
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
-    def createFromTiles(
-      indexes: integer,
-      replacements: integer,
-      spriteConfig: SpriteConfig,
-      scene: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): js.Array[Sprite] = js.native
+    def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Unit, camera: Camera): js.Array[Sprite] = js.native
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
     def createFromTiles(indexes: integer, replacements: integer, spriteConfig: SpriteConfig, scene: Scene, camera: Camera): js.Array[Sprite] = js.native
     
@@ -2696,7 +2053,7 @@ object Tilemaps {
       * Used internally by the Canvas renderer.
       * This holds the tiles that are visible within the camera in the last frame.
       */
-    var culledTiles: js.Array[_] = js.native
+    var culledTiles: js.Array[js.Any] = js.native
     
     /**
       * For each tile in the given rectangular area (in tile coordinates) of the layer, run the given
@@ -2734,7 +2091,7 @@ object Tilemaps {
       * bottom-right. Otherwise it scans from the top-left. Default false.
       */
     def findByIndex(index: integer): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean): Tile = js.native
     def findByIndex(index: integer, skip: integer): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean): Tile = js.native
     
@@ -2802,9 +2159,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def getTileAtWorldXY(worldX: Double, worldY: Double): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: js.UndefOr[scala.Nothing], camera: Camera): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera): Tile = js.native
     
     /**
       * Gets the tiles in the given rectangular area (in tile coordinates) of the layer.
@@ -2815,145 +2172,35 @@ object Tilemaps {
       * @param filteringOptions Optional filters to apply when getting the tiles.
       */
     def getTilesWithin(): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: js.UndefOr[scala.Nothing], width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: js.UndefOr[scala.Nothing], tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: js.UndefOr[scala.Nothing],
-      tileY: integer,
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: Unit, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: Unit, tileY: integer, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: js.UndefOr[scala.Nothing], width: integer, height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: js.UndefOr[scala.Nothing],
-      width: integer,
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: Unit, width: integer, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
-    def getTilesWithin(tileX: integer, tileY: integer, width: js.UndefOr[scala.Nothing], height: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: js.UndefOr[scala.Nothing],
-      height: integer,
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: integer): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: Unit, height: integer, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer, width: integer): js.Array[Tile] = js.native
-    def getTilesWithin(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: js.UndefOr[scala.Nothing],
-      filteringOptions: FilteringOptions
-    ): js.Array[Tile] = js.native
+    def getTilesWithin(tileX: integer, tileY: integer, width: integer, height: Unit, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithin(tileX: integer, tileY: integer, width: integer, height: integer): js.Array[Tile] = js.native
     def getTilesWithin(
       tileX: integer,
@@ -2971,19 +2218,19 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def getTilesWithinShape(shape: Circle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Circle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Circle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Circle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Circle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Line, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Line, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Line, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Rectangle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Rectangle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Rectangle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle): js.Array[Tile] = js.native
-    def getTilesWithinShape(shape: Triangle, filteringOptions: js.UndefOr[scala.Nothing], camera: Camera): js.Array[Tile] = js.native
+    def getTilesWithinShape(shape: Triangle, filteringOptions: Unit, camera: Camera): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
     def getTilesWithinShape(shape: Triangle, filteringOptions: FilteringOptions, camera: Camera): js.Array[Tile] = js.native
     
@@ -3002,7 +2249,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(worldX: Double, worldY: Double, width: Double, height: Double, filteringOptions: FilteringOptions): js.Array[Tile] = js.native
@@ -3064,29 +2311,14 @@ object Tilemaps {
       */
     def renderDebug(graphics: Graphics, styleConfig: StyleConfig): StaticTilemapLayer = js.native
     
-    def setCollision(indexes: js.Array[_]): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: js.Array[_],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
-    def setCollision(indexes: js.Array[_], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any]): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Boolean, recalculateFaces: Unit, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: js.Array[js.Any], collides: Unit, recalculateFaces: Unit, updateLayer: Boolean): StaticTilemapLayer = js.native
     /**
       * Sets collision on the given tile or tiles within a layer by index. You can pass in either a
       * single numeric index or an array of indexes: [2, 3, 15, 20]. The `collides` parameter controls if
@@ -3100,28 +2332,13 @@ object Tilemaps {
       * false if no tiles have been placed for significant performance boost. Default true.
       */
     def setCollision(indexes: integer): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
-    def setCollision(indexes: integer, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
     def setCollision(indexes: integer, collides: Boolean): StaticTilemapLayer = js.native
-    def setCollision(
-      indexes: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      updateLayer: Boolean
-    ): StaticTilemapLayer = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
     def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: integer, collides: Boolean, recalculateFaces: Unit, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Boolean, updateLayer: Boolean): StaticTilemapLayer = js.native
+    def setCollision(indexes: integer, collides: Unit, recalculateFaces: Unit, updateLayer: Boolean): StaticTilemapLayer = js.native
     
     /**
       * Sets collision on a range of tiles in a layer whose index is between the specified `start` and
@@ -3136,9 +2353,9 @@ object Tilemaps {
       * update. Default true.
       */
     def setCollisionBetween(start: integer, stop: integer): StaticTilemapLayer = js.native
-    def setCollisionBetween(start: integer, stop: integer, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean): StaticTilemapLayer = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
     
     /**
       * Sets collision on all tiles in the given layer, except for tiles that have an index specified in
@@ -3151,9 +2368,9 @@ object Tilemaps {
       * update. Default true.
       */
     def setCollisionByExclusion(indexes: js.Array[integer]): StaticTilemapLayer = js.native
-    def setCollisionByExclusion(indexes: js.Array[integer], collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean): StaticTilemapLayer = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking tile properties. If a tile has a property
@@ -3171,9 +2388,9 @@ object Tilemaps {
       * update. Default true.
       */
     def setCollisionByProperty(properties: js.Object): StaticTilemapLayer = js.native
-    def setCollisionByProperty(properties: js.Object, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean): StaticTilemapLayer = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking each tiles collision group data
@@ -3186,9 +2403,9 @@ object Tilemaps {
       * update. Default true.
       */
     def setCollisionFromCollisionGroup(): StaticTilemapLayer = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): StaticTilemapLayer = js.native
     def setCollisionFromCollisionGroup(collides: Boolean): StaticTilemapLayer = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean): StaticTilemapLayer = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean): StaticTilemapLayer = js.native
     
     /**
       * Canvas only.
@@ -3202,7 +2419,7 @@ object Tilemaps {
       * @param paddingY The amount of extra vertical tiles to add to the cull check padding. Default 1.
       */
     def setCullPadding(): this.type = js.native
-    def setCullPadding(paddingX: js.UndefOr[scala.Nothing], paddingY: integer): this.type = js.native
+    def setCullPadding(paddingX: Unit, paddingY: integer): this.type = js.native
     def setCullPadding(paddingX: integer): this.type = js.native
     def setCullPadding(paddingX: integer, paddingY: integer): this.type = js.native
     
@@ -3240,7 +2457,7 @@ object Tilemaps {
     def setSkipCull(): this.type = js.native
     def setSkipCull(value: Boolean): this.type = js.native
     
-    def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object): StaticTilemapLayer = js.native
+    def setTileIndexCallback(indexes: js.Array[js.Any], callback: js.Function, callbackContext: js.Object): StaticTilemapLayer = js.native
     /**
       * Sets a global collision callback for the given tile index within the layer. This will affect all
       * tiles on this layer that have the same index. If a callback is already set for the tile index it
@@ -3304,7 +2521,7 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the world values from the tile index. Default main camera.
       */
     def tileToWorldXY(tileX: integer, tileY: integer): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: js.UndefOr[scala.Nothing], camera: Camera): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera): Vector2 = js.native
     
@@ -3361,9 +2578,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values.] Default main camera.
       */
     def worldToTileX(worldX: Double): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera): Double = js.native
     
     /**
       * Converts from world XY coordinates (pixels) to tile XY coordinates (tile units), factoring in the
@@ -3377,31 +2594,13 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def worldToTileXY(worldX: Double, worldY: Double): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
-    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], point: Vector2): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera
-    ): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Camera): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Camera): Vector2 = js.native
     
     /**
       * Converts from world Y coordinates (pixels) to tile Y coordinates (tile units), factoring in the
@@ -3412,9 +2611,9 @@ object Tilemaps {
       * @param camera The Camera to use when calculating the tile index from the world values. Default main camera.
       */
     def worldToTileY(worldY: Double): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera): Double = js.native
   }
   
   /**
@@ -3424,7 +2623,8 @@ object Tilemaps {
     */
   @js.native
   trait Tile
-    extends Alpha
+    extends StObject
+       with Alpha
        with Flip
        with Visible {
     
@@ -3535,7 +2735,7 @@ object Tilemaps {
       * @param output Optional Rectangle object to store the results in.
       */
     def getBounds(): Rectangle | js.Object = js.native
-    def getBounds(camera: js.UndefOr[scala.Nothing], output: Rectangle): Rectangle | js.Object = js.native
+    def getBounds(camera: Unit, output: Rectangle): Rectangle | js.Object = js.native
     def getBounds(camera: Camera): Rectangle | js.Object = js.native
     def getBounds(camera: Camera, output: Rectangle): Rectangle | js.Object = js.native
     
@@ -3683,63 +2883,21 @@ object Tilemaps {
       * for this tile and its neighbors. Default true.
       */
     def setCollision(left: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: js.UndefOr[scala.Nothing],
-      up: js.UndefOr[scala.Nothing],
-      down: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: js.UndefOr[scala.Nothing], down: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: js.UndefOr[scala.Nothing],
-      up: js.UndefOr[scala.Nothing],
-      down: Boolean,
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: js.UndefOr[scala.Nothing],
-      up: Boolean,
-      down: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def setCollision(left: Boolean, right: js.UndefOr[scala.Nothing], up: Boolean, down: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: js.UndefOr[scala.Nothing],
-      up: Boolean,
-      down: Boolean,
-      recalculateFaces: Boolean
-    ): Tile = js.native
     def setCollision(left: Boolean, right: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: Boolean,
-      up: js.UndefOr[scala.Nothing],
-      down: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def setCollision(left: Boolean, right: Boolean, up: js.UndefOr[scala.Nothing], down: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: Boolean,
-      up: js.UndefOr[scala.Nothing],
-      down: Boolean,
-      recalculateFaces: Boolean
-    ): Tile = js.native
     def setCollision(left: Boolean, right: Boolean, up: Boolean): Tile = js.native
-    def setCollision(
-      left: Boolean,
-      right: Boolean,
-      up: Boolean,
-      down: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
     def setCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean): Tile = js.native
     def setCollision(left: Boolean, right: Boolean, up: Boolean, down: Boolean, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Boolean, up: Boolean, down: Unit, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Boolean, up: Unit, down: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Boolean, up: Unit, down: Boolean, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Boolean, up: Unit, down: Unit, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Boolean, down: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Boolean, down: Boolean, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Boolean, down: Unit, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Unit, down: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Unit, down: Boolean, recalculateFaces: Boolean): Tile = js.native
+    def setCollision(left: Boolean, right: Unit, up: Unit, down: Unit, recalculateFaces: Boolean): Tile = js.native
     
     /**
       * Set a callback to be called when this tile is hit by an object. The callback must true for
@@ -3948,46 +3106,6 @@ object Tilemaps {
       height: integer,
       destTileX: integer,
       destTileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def copy(
-      srcTileX: integer,
-      srcTileY: integer,
-      width: integer,
-      height: integer,
-      destTileX: integer,
-      destTileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def copy(
-      srcTileX: integer,
-      srcTileY: integer,
-      width: integer,
-      height: integer,
-      destTileX: integer,
-      destTileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def copy(
-      srcTileX: integer,
-      srcTileY: integer,
-      width: integer,
-      height: integer,
-      destTileX: integer,
-      destTileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
-    def copy(
-      srcTileX: integer,
-      srcTileY: integer,
-      width: integer,
-      height: integer,
-      destTileX: integer,
-      destTileY: integer,
       recalculateFaces: Boolean
     ): Tilemap = js.native
     def copy(
@@ -4030,6 +3148,46 @@ object Tilemaps {
       recalculateFaces: Boolean,
       layer: integer
     ): Tilemap = js.native
+    def copy(
+      srcTileX: integer,
+      srcTileY: integer,
+      width: integer,
+      height: integer,
+      destTileX: integer,
+      destTileY: integer,
+      recalculateFaces: Unit,
+      layer: String
+    ): Tilemap = js.native
+    def copy(
+      srcTileX: integer,
+      srcTileY: integer,
+      width: integer,
+      height: integer,
+      destTileX: integer,
+      destTileY: integer,
+      recalculateFaces: Unit,
+      layer: DynamicTilemapLayer
+    ): Tilemap = js.native
+    def copy(
+      srcTileX: integer,
+      srcTileY: integer,
+      width: integer,
+      height: integer,
+      destTileX: integer,
+      destTileY: integer,
+      recalculateFaces: Unit,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def copy(
+      srcTileX: integer,
+      srcTileY: integer,
+      width: integer,
+      height: integer,
+      destTileX: integer,
+      destTileY: integer,
+      recalculateFaces: Unit,
+      layer: integer
+    ): Tilemap = js.native
     
     /**
       * Creates a new and empty DynamicTilemapLayer. The currently selected layer in the map is set to this new layer.
@@ -4054,17 +3212,17 @@ object Tilemaps {
     ): DynamicTilemapLayer = js.native
     
     def createDynamicLayer(layerID: String, tileset: String): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: String, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: String, x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: String, x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: String, tileset: String, x: Unit, y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: js.Array[String | Tileset]): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: String, tileset: js.Array[String | Tileset], x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: js.Array[String | Tileset], x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: js.Array[String | Tileset], x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: String, tileset: js.Array[String | Tileset], x: Unit, y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: Tileset): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: String, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: Tileset, x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: String, tileset: Tileset, x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: String, tileset: Tileset, x: Unit, y: Double): DynamicTilemapLayer = js.native
     /**
       * Creates a new DynamicTilemapLayer that renders the LayerData associated with the given
       * `layerID`. The currently selected layer in the map is set to this new layer.
@@ -4081,17 +3239,17 @@ object Tilemaps {
       * @param y The y position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0. Default 0.
       */
     def createDynamicLayer(layerID: integer, tileset: String): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: integer, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: String, x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: String, x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: integer, tileset: String, x: Unit, y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: js.Array[String | Tileset]): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: integer, tileset: js.Array[String | Tileset], x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Unit, y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: Tileset): DynamicTilemapLayer = js.native
-    def createDynamicLayer(layerID: integer, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: Tileset, x: Double): DynamicTilemapLayer = js.native
     def createDynamicLayer(layerID: integer, tileset: Tileset, x: Double, y: Double): DynamicTilemapLayer = js.native
+    def createDynamicLayer(layerID: integer, tileset: Tileset, x: Unit, y: Double): DynamicTilemapLayer = js.native
     
     def createFromObjects(name: String, id: String, spriteConfig: SpriteConfig): js.Array[Sprite] = js.native
     def createFromObjects(name: String, id: String, spriteConfig: SpriteConfig, scene: Scene): js.Array[Sprite] = js.native
@@ -4129,8 +3287,8 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def createFromTiles(
-      indexes: integer | js.Array[_],
-      replacements: integer | js.Array[_],
+      indexes: integer | js.Array[js.Any],
+      replacements: integer | js.Array[js.Any],
       spriteConfig: SpriteConfig,
       scene: js.UndefOr[Scene],
       camera: js.UndefOr[Camera],
@@ -4138,17 +3296,17 @@ object Tilemaps {
     ): js.Array[Sprite] = js.native
     
     def createStaticLayer(layerID: String, tileset: String): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: String, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: String, x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: String, x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: String, tileset: String, x: Unit, y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: js.Array[String | Tileset]): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: String, tileset: js.Array[String | Tileset], x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: js.Array[String | Tileset], x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: js.Array[String | Tileset], x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: String, tileset: js.Array[String | Tileset], x: Unit, y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: Tileset): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: String, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: Tileset, x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: String, tileset: Tileset, x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: String, tileset: Tileset, x: Unit, y: Double): StaticTilemapLayer = js.native
     /**
       * Creates a new StaticTilemapLayer that renders the LayerData associated with the given
       * `layerID`. The currently selected layer in the map is set to this new layer.
@@ -4165,17 +3323,17 @@ object Tilemaps {
       * @param y The y position to place the layer in the world. If not specified, it will default to the layer offset from Tiled or 0. Default 0.
       */
     def createStaticLayer(layerID: integer, tileset: String): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: integer, tileset: String, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: String, x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: String, x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: integer, tileset: String, x: Unit, y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: js.Array[String | Tileset]): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: integer, tileset: js.Array[String | Tileset], x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: integer, tileset: js.Array[String | Tileset], x: Unit, y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: Tileset): StaticTilemapLayer = js.native
-    def createStaticLayer(layerID: integer, tileset: Tileset, x: js.UndefOr[scala.Nothing], y: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: Tileset, x: Double): StaticTilemapLayer = js.native
     def createStaticLayer(layerID: integer, tileset: Tileset, x: Double, y: Double): StaticTilemapLayer = js.native
+    def createStaticLayer(layerID: integer, tileset: Tileset, x: Unit, y: Double): StaticTilemapLayer = js.native
     
     /**
       * The index of the currently selected LayerData object.
@@ -4278,40 +3436,25 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def findByIndex(index: integer): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: js.UndefOr[scala.Nothing], layer: String): Tile = js.native
-    def findByIndex(
-      index: integer,
-      skip: js.UndefOr[scala.Nothing],
-      reverse: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def findByIndex(
-      index: integer,
-      skip: js.UndefOr[scala.Nothing],
-      reverse: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def findByIndex(
-      index: integer,
-      skip: js.UndefOr[scala.Nothing],
-      reverse: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean, layer: String): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean, layer: DynamicTilemapLayer): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean, layer: StaticTilemapLayer): Tile = js.native
-    def findByIndex(index: integer, skip: js.UndefOr[scala.Nothing], reverse: Boolean, layer: integer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean, layer: String): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean, layer: DynamicTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean, layer: StaticTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Boolean, layer: integer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Unit, layer: String): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: Unit, reverse: Unit, layer: integer): Tile = js.native
     def findByIndex(index: integer, skip: integer): Tile = js.native
-    def findByIndex(index: integer, skip: integer, reverse: js.UndefOr[scala.Nothing], layer: String): Tile = js.native
-    def findByIndex(index: integer, skip: integer, reverse: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Tile = js.native
-    def findByIndex(index: integer, skip: integer, reverse: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Tile = js.native
-    def findByIndex(index: integer, skip: integer, reverse: js.UndefOr[scala.Nothing], layer: integer): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: String): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: DynamicTilemapLayer): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: StaticTilemapLayer): Tile = js.native
     def findByIndex(index: integer, skip: integer, reverse: Boolean, layer: integer): Tile = js.native
+    def findByIndex(index: integer, skip: integer, reverse: Unit, layer: String): Tile = js.native
+    def findByIndex(index: integer, skip: integer, reverse: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: integer, reverse: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def findByIndex(index: integer, skip: integer, reverse: Unit, layer: integer): Tile = js.native
     
     def findObject(objectLayer: String, callback: TilemapFindCallback): GameObject = js.native
     def findObject(objectLayer: String, callback: TilemapFindCallback, context: js.Object): GameObject = js.native
@@ -4398,7 +3541,7 @@ object Tilemaps {
       * @param location The Tilemap array to search.
       * @param name The name of the array element to get.
       */
-    def getIndex(location: js.Array[_], name: String): Double = js.native
+    def getIndex(location: js.Array[js.Any], name: String): Double = js.native
     
     /**
       * Gets the LayerData from this.layers that is associated with `layer`, or null if an invalid
@@ -4455,15 +3598,15 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def getTileAt(tileX: integer, tileY: integer): Tile = js.native
-    def getTileAt(tileX: integer, tileY: integer, nonNull: js.UndefOr[scala.Nothing], layer: String): Tile = js.native
-    def getTileAt(tileX: integer, tileY: integer, nonNull: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Tile = js.native
-    def getTileAt(tileX: integer, tileY: integer, nonNull: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Tile = js.native
-    def getTileAt(tileX: integer, tileY: integer, nonNull: js.UndefOr[scala.Nothing], layer: integer): Tile = js.native
     def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean): Tile = js.native
     def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: String): Tile = js.native
     def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: DynamicTilemapLayer): Tile = js.native
     def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: StaticTilemapLayer): Tile = js.native
     def getTileAt(tileX: integer, tileY: integer, nonNull: Boolean, layer: integer): Tile = js.native
+    def getTileAt(tileX: integer, tileY: integer, nonNull: Unit, layer: String): Tile = js.native
+    def getTileAt(tileX: integer, tileY: integer, nonNull: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def getTileAt(tileX: integer, tileY: integer, nonNull: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def getTileAt(tileX: integer, tileY: integer, nonNull: Unit, layer: integer): Tile = js.native
     
     /**
       * Gets a tile at the given world coordinates from the given layer.
@@ -4475,79 +3618,25 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def getTileAtWorldXY(worldX: Double, worldY: Double): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: js.UndefOr[scala.Nothing], camera: Camera): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: js.UndefOr[scala.Nothing], camera: Camera, layer: String): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: js.UndefOr[scala.Nothing], camera: Camera, layer: integer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean): Tile = js.native
-    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: js.UndefOr[scala.Nothing], layer: String): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def getTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      nonNull: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Unit, layer: String): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Unit, layer: integer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: String): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: DynamicTilemapLayer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: StaticTilemapLayer): Tile = js.native
     def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Boolean, camera: Camera, layer: integer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Unit, layer: String): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Unit, layer: integer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera, layer: String): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera, layer: DynamicTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera, layer: StaticTilemapLayer): Tile = js.native
+    def getTileAtWorldXY(worldX: Double, worldY: Double, nonNull: Unit, camera: Camera, layer: integer): Tile = js.native
     
     /**
       * Return a list of all valid tilelayer names loaded in this Tilemap.
@@ -4606,8 +3695,8 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
+      camera: Unit,
       layer: String
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4615,8 +3704,8 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4624,8 +3713,8 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
+      camera: Unit,
       layer: StaticTilemapLayer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4633,8 +3722,8 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
+      camera: Unit,
       layer: integer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4642,7 +3731,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4650,7 +3739,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera,
       layer: String
     ): js.Array[Tile] = js.native
@@ -4659,7 +3748,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera,
       layer: DynamicTilemapLayer
     ): js.Array[Tile] = js.native
@@ -4668,7 +3757,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera,
       layer: StaticTilemapLayer
     ): js.Array[Tile] = js.native
@@ -4677,7 +3766,7 @@ object Tilemaps {
       worldY: Double,
       width: Double,
       height: Double,
-      filteringOptions: js.UndefOr[scala.Nothing],
+      filteringOptions: Unit,
       camera: Camera,
       layer: integer
     ): js.Array[Tile] = js.native
@@ -4688,7 +3777,7 @@ object Tilemaps {
       width: Double,
       height: Double,
       filteringOptions: FilteringOptions,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: String
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4697,7 +3786,7 @@ object Tilemaps {
       width: Double,
       height: Double,
       filteringOptions: FilteringOptions,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4706,7 +3795,7 @@ object Tilemaps {
       width: Double,
       height: Double,
       filteringOptions: FilteringOptions,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: StaticTilemapLayer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4715,7 +3804,7 @@ object Tilemaps {
       width: Double,
       height: Double,
       filteringOptions: FilteringOptions,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: integer
     ): js.Array[Tile] = js.native
     def getTilesWithinWorldXY(
@@ -4802,10 +3891,10 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def hasTileAtWorldXY(worldX: Double, worldY: Double): Boolean = js.native
-    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: js.UndefOr[scala.Nothing], layer: String): Boolean = js.native
-    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Boolean = js.native
-    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Boolean = js.native
-    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: js.UndefOr[scala.Nothing], layer: integer): Boolean = js.native
+    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Unit, layer: String): Boolean = js.native
+    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Unit, layer: DynamicTilemapLayer): Boolean = js.native
+    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Unit, layer: StaticTilemapLayer): Boolean = js.native
+    def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Unit, layer: integer): Boolean = js.native
     def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera): Boolean = js.native
     def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: String): Boolean = js.native
     def hasTileAtWorldXY(worldX: Double, worldY: Double, camera: Camera, layer: DynamicTilemapLayer): Boolean = js.native
@@ -4827,7 +3916,7 @@ object Tilemaps {
     /**
       * An array of Tiled Image Layers.
       */
-    var images: js.Array[_] = js.native
+    var images: js.Array[js.Any] = js.native
     
     /**
       * The LayerData object that is currently selected in the map. You can set this property using
@@ -4856,39 +3945,15 @@ object Tilemaps {
     var properties: js.Object = js.native
     
     def putTileAt(tile: Tile, tileX: integer, tileY: integer): Tile = js.native
-    def putTileAt(
-      tile: Tile,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def putTileAt(
-      tile: Tile,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAt(
-      tile: Tile,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAt(
-      tile: Tile,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
     def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Boolean): Tile = js.native
     def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: String): Tile = js.native
     def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tile = js.native
     def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tile = js.native
     def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: integer): Tile = js.native
+    def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: String): Tile = js.native
+    def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def putTileAt(tile: Tile, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: integer): Tile = js.native
     /**
       * Puts a tile at the given tile coordinates in the specified layer. You can pass in either an index
       * or a Tile object. If you pass in a Tile, all attributes will be copied over to the specified
@@ -4905,34 +3970,6 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def putTileAt(tile: integer, tileX: integer, tileY: integer): Tile = js.native
-    def putTileAt(
-      tile: integer,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def putTileAt(
-      tile: integer,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAt(
-      tile: integer,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAt(
-      tile: integer,
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
     def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Boolean): Tile = js.native
     def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: String): Tile = js.native
     def putTileAt(
@@ -4950,94 +3987,20 @@ object Tilemaps {
       layer: StaticTilemapLayer
     ): Tile = js.native
     def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Boolean, layer: integer): Tile = js.native
+    def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: String): Tile = js.native
+    def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tile = js.native
+    def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: StaticTilemapLayer): Tile = js.native
+    def putTileAt(tile: integer, tileX: integer, tileY: integer, recalculateFaces: Unit, layer: integer): Tile = js.native
     
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Tile = js.native
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Boolean): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Boolean, camera: Unit, layer: String): Tile = js.native
     def putTileAtWorldXY(
       tile: Tile,
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: Tile,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): Tile = js.native
     def putTileAtWorldXY(
@@ -5045,7 +4008,7 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: StaticTilemapLayer
     ): Tile = js.native
     def putTileAtWorldXY(
@@ -5053,7 +4016,7 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: integer
     ): Tile = js.native
     def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Boolean, camera: Camera): Tile = js.native
@@ -5089,6 +4052,43 @@ object Tilemaps {
       camera: Camera,
       layer: integer
     ): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Unit, layer: String): Tile = js.native
+    def putTileAtWorldXY(
+      tile: Tile,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: Tile,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Unit, layer: integer): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera, layer: String): Tile = js.native
+    def putTileAtWorldXY(
+      tile: Tile,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: Tile,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(tile: Tile, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera, layer: integer): Tile = js.native
     /**
       * Puts a tile at the given world coordinates (pixels) in the specified layer. You can pass in either
       * an index or a Tile object. If you pass in a Tile, all attributes will be copied over to the
@@ -5105,84 +4105,13 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def putTileAtWorldXY(
-      tile: integer,
-      worldX: Double,
-      worldY: Double,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Tile = js.native
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Boolean): Tile = js.native
     def putTileAtWorldXY(
       tile: integer,
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: String
     ): Tile = js.native
     def putTileAtWorldXY(
@@ -5190,7 +4119,7 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): Tile = js.native
     def putTileAtWorldXY(
@@ -5198,7 +4127,7 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: StaticTilemapLayer
     ): Tile = js.native
     def putTileAtWorldXY(
@@ -5206,7 +4135,7 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: integer
     ): Tile = js.native
     def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Boolean, camera: Camera): Tile = js.native
@@ -5242,6 +4171,64 @@ object Tilemaps {
       camera: Camera,
       layer: integer
     ): Tile = js.native
+    def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Unit, layer: String): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: integer
+    ): Tile = js.native
+    def putTileAtWorldXY(tile: integer, worldX: Double, worldY: Double, recalculateFaces: Unit, camera: Camera): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: String
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def putTileAtWorldXY(
+      tile: integer,
+      worldX: Double,
+      worldY: Double,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: integer
+    ): Tile = js.native
     
     /**
       * Puts an array of tiles or a 2D array of tiles at the given tile coordinates in the specified
@@ -5259,34 +4246,6 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def putTilesAt(tile: js.Array[(js.Array[Tile | integer]) | Tile | integer], tileX: integer, tileY: integer): Tilemap = js.native
-    def putTilesAt(
-      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def putTilesAt(
-      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def putTilesAt(
-      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def putTilesAt(
-      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
-      tileX: integer,
-      tileY: integer,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
     def putTilesAt(
       tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
       tileX: integer,
@@ -5319,6 +4278,34 @@ object Tilemaps {
       tileX: integer,
       tileY: integer,
       recalculateFaces: Boolean,
+      layer: integer
+    ): Tilemap = js.native
+    def putTilesAt(
+      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
+      tileX: integer,
+      tileY: integer,
+      recalculateFaces: Unit,
+      layer: String
+    ): Tilemap = js.native
+    def putTilesAt(
+      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
+      tileX: integer,
+      tileY: integer,
+      recalculateFaces: Unit,
+      layer: DynamicTilemapLayer
+    ): Tilemap = js.native
+    def putTilesAt(
+      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
+      tileX: integer,
+      tileY: integer,
+      recalculateFaces: Unit,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def putTilesAt(
+      tile: js.Array[(js.Array[Tile | integer]) | Tile | integer],
+      tileX: integer,
+      tileY: integer,
+      recalculateFaces: Unit,
       layer: integer
     ): Tilemap = js.native
     
@@ -5366,7 +4353,7 @@ object Tilemaps {
     def removeLayer(layer: integer): Tilemap = js.native
     
     def removeTile(tiles: js.Array[Tile]): js.Array[Tile] = js.native
-    def removeTile(tiles: js.Array[Tile], replaceIndex: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): js.Array[Tile] = js.native
+    def removeTile(tiles: js.Array[Tile], replaceIndex: Unit, recalculateFaces: Boolean): js.Array[Tile] = js.native
     def removeTile(tiles: js.Array[Tile], replaceIndex: integer): js.Array[Tile] = js.native
     def removeTile(tiles: js.Array[Tile], replaceIndex: integer, recalculateFaces: Boolean): js.Array[Tile] = js.native
     /**
@@ -5379,7 +4366,7 @@ object Tilemaps {
       * @param recalculateFaces `true` if the faces data should be recalculated. Default true.
       */
     def removeTile(tiles: Tile): js.Array[Tile] = js.native
-    def removeTile(tiles: Tile, replaceIndex: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): js.Array[Tile] = js.native
+    def removeTile(tiles: Tile, replaceIndex: Unit, recalculateFaces: Boolean): js.Array[Tile] = js.native
     def removeTile(tiles: Tile, replaceIndex: integer): js.Array[Tile] = js.native
     def removeTile(tiles: Tile, replaceIndex: integer, recalculateFaces: Boolean): js.Array[Tile] = js.native
     
@@ -5396,97 +4383,7 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def removeTileAt(tileX: integer, tileY: integer): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: String
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: integer
-    ): Tile = js.native
     def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAt(
-      tileX: integer,
-      tileY: integer,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
     def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean, recalculateFaces: Boolean): Tile = js.native
     def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean, recalculateFaces: Boolean, layer: String): Tile = js.native
     def removeTileAt(
@@ -5510,6 +4407,55 @@ object Tilemaps {
       recalculateFaces: Boolean,
       layer: integer
     ): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean, recalculateFaces: Unit, layer: String): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Boolean, recalculateFaces: Unit, layer: integer): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Boolean): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Boolean, layer: String): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Boolean, layer: integer): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Unit, layer: String): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(
+      tileX: integer,
+      tileY: integer,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAt(tileX: integer, tileY: integer, replaceWithNull: Unit, recalculateFaces: Unit, layer: integer): Tile = js.native
     
     /**
       * Removes the tile at the given world coordinates in the specified layer and updates the layer's
@@ -5525,233 +4471,14 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def removeTileAtWorldXY(worldX: Double, worldY: Double): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera,
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      camera: Camera,
-      layer: integer
-    ): Tile = js.native
     def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Tile = js.native
-    def removeTileAtWorldXY(
-      worldX: Double,
-      worldY: Double,
-      replaceWithNull: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Tile = js.native
     def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean, recalculateFaces: Boolean): Tile = js.native
     def removeTileAtWorldXY(
       worldX: Double,
       worldY: Double,
       replaceWithNull: Boolean,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: String
     ): Tile = js.native
     def removeTileAtWorldXY(
@@ -5759,7 +4486,7 @@ object Tilemaps {
       worldY: Double,
       replaceWithNull: Boolean,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): Tile = js.native
     def removeTileAtWorldXY(
@@ -5767,7 +4494,7 @@ object Tilemaps {
       worldY: Double,
       replaceWithNull: Boolean,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: StaticTilemapLayer
     ): Tile = js.native
     def removeTileAtWorldXY(
@@ -5775,7 +4502,7 @@ object Tilemaps {
       worldY: Double,
       replaceWithNull: Boolean,
       recalculateFaces: Boolean,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: integer
     ): Tile = js.native
     def removeTileAtWorldXY(
@@ -5814,6 +4541,202 @@ object Tilemaps {
       worldY: Double,
       replaceWithNull: Boolean,
       recalculateFaces: Boolean,
+      camera: Camera,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Boolean, recalculateFaces: Unit, camera: Camera): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Boolean,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Boolean): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Unit,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Unit,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Boolean, camera: Camera): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Camera,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Boolean,
+      camera: Camera,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Unit,
+      layer: integer
+    ): Tile = js.native
+    def removeTileAtWorldXY(worldX: Double, worldY: Double, replaceWithNull: Unit, recalculateFaces: Unit, camera: Camera): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: String
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Tile = js.native
+    def removeTileAtWorldXY(
+      worldX: Double,
+      worldY: Double,
+      replaceWithNull: Unit,
+      recalculateFaces: Unit,
       camera: Camera,
       layer: integer
     ): Tile = js.native
@@ -5908,7 +4831,7 @@ object Tilemaps {
       * @param updateLayer If true, updates the current tiles on the layer. Set to false if no tiles have been placed for significant performance boost. Default true.
       */
     def setCollision(
-      indexes: integer | js.Array[_],
+      indexes: integer | js.Array[js.Any],
       collides: js.UndefOr[Boolean],
       recalculateFaces: js.UndefOr[Boolean],
       layer: js.UndefOr[String | integer | DynamicTilemapLayer | StaticTilemapLayer],
@@ -5929,92 +4852,7 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def setCollisionBetween(start: integer, stop: integer): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
-    def setCollisionBetween(start: integer, stop: integer, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionBetween(
-      start: integer,
-      stop: integer,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
     def setCollisionBetween(
@@ -6032,6 +4870,43 @@ object Tilemaps {
       layer: StaticTilemapLayer
     ): Tilemap = js.native
     def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionBetween(
+      start: integer,
+      stop: integer,
+      collides: Boolean,
+      recalculateFaces: Unit,
+      layer: DynamicTilemapLayer
+    ): Tilemap = js.native
+    def setCollisionBetween(
+      start: integer,
+      stop: integer,
+      collides: Boolean,
+      recalculateFaces: Unit,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Boolean, recalculateFaces: Unit, layer: integer): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollisionBetween(
+      start: integer,
+      stop: integer,
+      collides: Unit,
+      recalculateFaces: Boolean,
+      layer: DynamicTilemapLayer
+    ): Tilemap = js.native
+    def setCollisionBetween(
+      start: integer,
+      stop: integer,
+      collides: Unit,
+      recalculateFaces: Boolean,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionBetween(start: integer, stop: integer, collides: Unit, recalculateFaces: Unit, layer: integer): Tilemap = js.native
     
     /**
       * Sets collision on all tiles in the given layer, except for tiles that have an index specified in
@@ -6045,80 +4920,7 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def setCollisionByExclusion(indexes: js.Array[integer]): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(indexes: js.Array[integer], collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByExclusion(
-      indexes: js.Array[integer],
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
     def setCollisionByExclusion(
@@ -6134,6 +4936,19 @@ object Tilemaps {
       layer: StaticTilemapLayer
     ): Tilemap = js.native
     def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Boolean, recalculateFaces: Unit, layer: integer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByExclusion(indexes: js.Array[integer], collides: Unit, recalculateFaces: Unit, layer: integer): Tilemap = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking tile properties. If a tile has a property
@@ -6151,85 +4966,25 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def setCollisionByProperty(properties: js.Object): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
-    def setCollisionByProperty(properties: js.Object, collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: Boolean,
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionByProperty(
-      properties: js.Object,
-      collides: Boolean,
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
     def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Boolean, recalculateFaces: Unit, layer: integer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionByProperty(properties: js.Object, collides: Unit, recalculateFaces: Unit, layer: integer): Tilemap = js.native
     
     /**
       * Sets collision on the tiles within a layer by checking each tile's collision group data
@@ -6243,33 +4998,25 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def setCollisionFromCollisionGroup(): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: js.UndefOr[scala.Nothing], layer: String): Tilemap = js.native
-    def setCollisionFromCollisionGroup(
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionFromCollisionGroup(
-      collides: js.UndefOr[scala.Nothing],
-      recalculateFaces: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: js.UndefOr[scala.Nothing], layer: integer): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean, layer: String): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: js.UndefOr[scala.Nothing], recalculateFaces: Boolean, layer: integer): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: js.UndefOr[scala.Nothing], layer: String): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Tilemap = js.native
-    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: js.UndefOr[scala.Nothing], layer: integer): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: String): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
     def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Boolean, recalculateFaces: Unit, layer: integer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean, layer: String): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Boolean, layer: integer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Unit, layer: String): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Unit, layer: DynamicTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Unit, layer: StaticTilemapLayer): Tilemap = js.native
+    def setCollisionFromCollisionGroup(collides: Unit, recalculateFaces: Unit, layer: integer): Tilemap = js.native
     
     /**
       * Sets the current layer to the LayerData associated with `layer`.
@@ -6325,16 +5072,21 @@ object Tilemaps {
       */
     def setRenderOrder(renderOrder: integer): this.type = js.native
     
-    def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object): Tilemap = js.native
-    def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object, layer: String): Tilemap = js.native
+    def setTileIndexCallback(indexes: js.Array[js.Any], callback: js.Function, callbackContext: js.Object): Tilemap = js.native
+    def setTileIndexCallback(indexes: js.Array[js.Any], callback: js.Function, callbackContext: js.Object, layer: String): Tilemap = js.native
     def setTileIndexCallback(
-      indexes: js.Array[_],
+      indexes: js.Array[js.Any],
       callback: js.Function,
       callbackContext: js.Object,
       layer: DynamicTilemapLayer
     ): Tilemap = js.native
-    def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object, layer: StaticTilemapLayer): Tilemap = js.native
-    def setTileIndexCallback(indexes: js.Array[_], callback: js.Function, callbackContext: js.Object, layer: integer): Tilemap = js.native
+    def setTileIndexCallback(
+      indexes: js.Array[js.Any],
+      callback: js.Function,
+      callbackContext: js.Object,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def setTileIndexCallback(indexes: js.Array[js.Any], callback: js.Function, callbackContext: js.Object, layer: integer): Tilemap = js.native
     /**
       * Sets a global collision callback for the given tile index within the layer. This will affect all
       * tiles on this layer that have the same index. If a callback is already set for the tile index it
@@ -6368,42 +5120,6 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def setTileLocationCallback(tileX: integer, tileY: integer, width: integer, height: integer, callback: js.Function): Tilemap = js.native
-    def setTileLocationCallback(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: integer,
-      callback: js.Function,
-      callbackContext: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Tilemap = js.native
-    def setTileLocationCallback(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: integer,
-      callback: js.Function,
-      callbackContext: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Tilemap = js.native
-    def setTileLocationCallback(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: integer,
-      callback: js.Function,
-      callbackContext: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Tilemap = js.native
-    def setTileLocationCallback(
-      tileX: integer,
-      tileY: integer,
-      width: integer,
-      height: integer,
-      callback: js.Function,
-      callbackContext: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Tilemap = js.native
     def setTileLocationCallback(
       tileX: integer,
       tileY: integer,
@@ -6446,6 +5162,42 @@ object Tilemaps {
       height: integer,
       callback: js.Function,
       callbackContext: js.Object,
+      layer: integer
+    ): Tilemap = js.native
+    def setTileLocationCallback(
+      tileX: integer,
+      tileY: integer,
+      width: integer,
+      height: integer,
+      callback: js.Function,
+      callbackContext: Unit,
+      layer: String
+    ): Tilemap = js.native
+    def setTileLocationCallback(
+      tileX: integer,
+      tileY: integer,
+      width: integer,
+      height: integer,
+      callback: js.Function,
+      callbackContext: Unit,
+      layer: DynamicTilemapLayer
+    ): Tilemap = js.native
+    def setTileLocationCallback(
+      tileX: integer,
+      tileY: integer,
+      width: integer,
+      height: integer,
+      callback: js.Function,
+      callbackContext: Unit,
+      layer: StaticTilemapLayer
+    ): Tilemap = js.native
+    def setTileLocationCallback(
+      tileX: integer,
+      tileY: integer,
+      width: integer,
+      height: integer,
+      callback: js.Function,
+      callbackContext: Unit,
       layer: integer
     ): Tilemap = js.native
     
@@ -6512,10 +5264,10 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def tileToWorldX(tileX: integer): Double = js.native
-    def tileToWorldX(tileX: integer, camera: js.UndefOr[scala.Nothing], layer: String): Double = js.native
-    def tileToWorldX(tileX: integer, camera: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Double = js.native
-    def tileToWorldX(tileX: integer, camera: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Double = js.native
-    def tileToWorldX(tileX: integer, camera: js.UndefOr[scala.Nothing], layer: integer): Double = js.native
+    def tileToWorldX(tileX: integer, camera: Unit, layer: String): Double = js.native
+    def tileToWorldX(tileX: integer, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def tileToWorldX(tileX: integer, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def tileToWorldX(tileX: integer, camera: Unit, layer: integer): Double = js.native
     def tileToWorldX(tileX: integer, camera: Camera): Double = js.native
     def tileToWorldX(tileX: integer, camera: Camera, layer: String): Double = js.native
     def tileToWorldX(tileX: integer, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
@@ -6535,68 +5287,20 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def tileToWorldXY(tileX: integer, tileY: integer): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: js.UndefOr[scala.Nothing], camera: Camera): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: js.UndefOr[scala.Nothing], camera: Camera, layer: String): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: js.UndefOr[scala.Nothing], camera: Camera, layer: integer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Unit, layer: String): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Unit, layer: DynamicTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Unit, layer: StaticTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Unit, layer: integer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera, layer: String): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera, layer: DynamicTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera, layer: StaticTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Unit, camera: Camera, layer: integer): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: js.UndefOr[scala.Nothing], layer: String): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(
-      tileX: integer,
-      tileY: integer,
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: js.UndefOr[scala.Nothing], layer: integer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Unit, layer: String): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Unit, layer: DynamicTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Unit, layer: StaticTilemapLayer): Vector2 = js.native
+    def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Unit, layer: integer): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera, layer: String): Vector2 = js.native
     def tileToWorldXY(tileX: integer, tileY: integer, point: Vector2, camera: Camera, layer: DynamicTilemapLayer): Vector2 = js.native
@@ -6614,10 +5318,10 @@ object Tilemaps {
       * to use. If not given the current layer is used.
       */
     def tileToWorldY(tileY: integer): Double = js.native
-    def tileToWorldY(tileY: integer, camera: js.UndefOr[scala.Nothing], layer: String): Double = js.native
-    def tileToWorldY(tileY: integer, camera: js.UndefOr[scala.Nothing], layer: DynamicTilemapLayer): Double = js.native
-    def tileToWorldY(tileY: integer, camera: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Double = js.native
-    def tileToWorldY(tileY: integer, camera: js.UndefOr[scala.Nothing], layer: integer): Double = js.native
+    def tileToWorldY(tileY: integer, camera: Unit, layer: String): Double = js.native
+    def tileToWorldY(tileY: integer, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def tileToWorldY(tileY: integer, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def tileToWorldY(tileY: integer, camera: Unit, layer: integer): Double = js.native
     def tileToWorldY(tileY: integer, camera: Camera): Double = js.native
     def tileToWorldY(tileY: integer, camera: Camera, layer: String): Double = js.native
     def tileToWorldY(tileY: integer, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
@@ -6697,50 +5401,25 @@ object Tilemaps {
       * to use. If not given the current layer is used.
       */
     def worldToTileX(worldX: Double): Double = js.native
-    def worldToTileX(
-      worldX: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Double = js.native
-    def worldToTileX(
-      worldX: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Double = js.native
-    def worldToTileX(
-      worldX: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Double = js.native
-    def worldToTileX(
-      worldX: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: String): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: DynamicTilemapLayer): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: StaticTilemapLayer): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: integer): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: String): Double = js.native
-    def worldToTileX(
-      worldX: Double,
-      snapToFloor: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Double = js.native
-    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: integer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Unit, layer: String): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Unit, layer: integer): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: String): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: StaticTilemapLayer): Double = js.native
     def worldToTileX(worldX: Double, snapToFloor: Boolean, camera: Camera, layer: integer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Unit, layer: String): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Unit, layer: integer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera, layer: String): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileX(worldX: Double, snapToFloor: Unit, camera: Camera, layer: integer): Double = js.native
     
     /**
       * Converts from world XY coordinates (pixels) to tile XY coordinates (tile units), factoring in the
@@ -6756,202 +5435,32 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def worldToTileXY(worldX: Double, worldY: Double): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Vector2 = js.native
-    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], point: Vector2): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera,
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera,
-      layer: DynamicTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera,
-      layer: StaticTilemapLayer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      point: Vector2,
-      camera: Camera,
-      layer: integer
-    ): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Unit, layer: String): Vector2 = js.native
     def worldToTileXY(
       worldX: Double,
       worldY: Double,
       snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      point: Unit,
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): Vector2 = js.native
     def worldToTileXY(
       worldX: Double,
       worldY: Double,
       snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
+      point: Unit,
+      camera: Unit,
       layer: StaticTilemapLayer
     ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Unit, layer: integer): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Camera, layer: String): Vector2 = js.native
     def worldToTileXY(
       worldX: Double,
       worldY: Double,
       snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
+      point: Unit,
       camera: Camera,
       layer: DynamicTilemapLayer
     ): Vector2 = js.native
@@ -6959,33 +5468,19 @@ object Tilemaps {
       worldX: Double,
       worldY: Double,
       snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
+      point: Unit,
       camera: Camera,
       layer: StaticTilemapLayer
     ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: js.UndefOr[scala.Nothing],
-      camera: Camera,
-      layer: integer
-    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Unit, camera: Camera, layer: integer): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2, camera: Unit, layer: String): Vector2 = js.native
     def worldToTileXY(
       worldX: Double,
       worldY: Double,
       snapToFloor: Boolean,
       point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: DynamicTilemapLayer
     ): Vector2 = js.native
     def worldToTileXY(
@@ -6993,17 +5488,10 @@ object Tilemaps {
       worldY: Double,
       snapToFloor: Boolean,
       point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
+      camera: Unit,
       layer: StaticTilemapLayer
     ): Vector2 = js.native
-    def worldToTileXY(
-      worldX: Double,
-      worldY: Double,
-      snapToFloor: Boolean,
-      point: Vector2,
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2, camera: Unit, layer: integer): Vector2 = js.native
     def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Boolean, point: Vector2, camera: Camera): Vector2 = js.native
     def worldToTileXY(
       worldX: Double,
@@ -7037,6 +5525,81 @@ object Tilemaps {
       camera: Camera,
       layer: integer
     ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Unit, layer: String): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Unit,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Unit,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Unit, layer: integer): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Camera, layer: String): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Unit,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Unit,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Unit, camera: Camera, layer: integer): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Unit, layer: String): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Vector2,
+      camera: Unit,
+      layer: DynamicTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Vector2,
+      camera: Unit,
+      layer: StaticTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Unit, layer: integer): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Camera): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Camera, layer: String): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Vector2,
+      camera: Camera,
+      layer: DynamicTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(
+      worldX: Double,
+      worldY: Double,
+      snapToFloor: Unit,
+      point: Vector2,
+      camera: Camera,
+      layer: StaticTilemapLayer
+    ): Vector2 = js.native
+    def worldToTileXY(worldX: Double, worldY: Double, snapToFloor: Unit, point: Vector2, camera: Camera, layer: integer): Vector2 = js.native
     
     /**
       * Converts from world Y coordinates (pixels) to tile Y coordinates (tile units), factoring in the
@@ -7049,50 +5612,25 @@ object Tilemaps {
       * @param layer The tile layer to use. If not given the current layer is used.
       */
     def worldToTileY(worldY: Double): Double = js.native
-    def worldToTileY(
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: String
-    ): Double = js.native
-    def worldToTileY(
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Double = js.native
-    def worldToTileY(
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: StaticTilemapLayer
-    ): Double = js.native
-    def worldToTileY(
-      worldY: Double,
-      snapToFloor: js.UndefOr[scala.Nothing],
-      camera: js.UndefOr[scala.Nothing],
-      layer: integer
-    ): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: String): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: DynamicTilemapLayer): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: StaticTilemapLayer): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: js.UndefOr[scala.Nothing], camera: Camera, layer: integer): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: String): Double = js.native
-    def worldToTileY(
-      worldY: Double,
-      snapToFloor: Boolean,
-      camera: js.UndefOr[scala.Nothing],
-      layer: DynamicTilemapLayer
-    ): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: StaticTilemapLayer): Double = js.native
-    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: js.UndefOr[scala.Nothing], layer: integer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Unit, layer: String): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Unit, layer: integer): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: String): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: StaticTilemapLayer): Double = js.native
     def worldToTileY(worldY: Double, snapToFloor: Boolean, camera: Camera, layer: integer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Unit, layer: String): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Unit, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Unit, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Unit, layer: integer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera, layer: String): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera, layer: DynamicTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera, layer: StaticTilemapLayer): Double = js.native
+    def worldToTileY(worldY: Double, snapToFloor: Unit, camera: Camera, layer: integer): Double = js.native
   }
   
   /**
@@ -7179,7 +5717,7 @@ object Tilemaps {
       * @param spacing The spacing between the tiles in the sheet (in pixels).
       */
     def setSpacing(): Tileset = js.native
-    def setSpacing(margin: js.UndefOr[scala.Nothing], spacing: integer): Tileset = js.native
+    def setSpacing(margin: Unit, spacing: integer): Tileset = js.native
     def setSpacing(margin: integer): Tileset = js.native
     def setSpacing(margin: integer, spacing: integer): Tileset = js.native
     
@@ -7189,7 +5727,7 @@ object Tilemaps {
       * @param tileHeight The height of a tile in pixels.
       */
     def setTileSize(): Tileset = js.native
-    def setTileSize(tileWidth: js.UndefOr[scala.Nothing], tileHeight: integer): Tileset = js.native
+    def setTileSize(tileWidth: Unit, tileHeight: integer): Tileset = js.native
     def setTileSize(tileWidth: integer): Tileset = js.native
     def setTileSize(tileWidth: integer, tileHeight: integer): Tileset = js.native
     

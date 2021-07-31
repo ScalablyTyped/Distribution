@@ -3,130 +3,128 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /** The API level of the Android platform version running on the device. */
-  var apiLevel: js.UndefOr[Double] = js.native
+  var apiLevel: js.UndefOr[Double] = js.undefined
   
   /** Reports for apps installed on the device. This information is only available when application_reports_enabled is true in the device's policy. */
-  var applicationReports: js.UndefOr[js.Array[ApplicationReport]] = js.native
+  var applicationReports: js.UndefOr[js.Array[ApplicationReport]] = js.undefined
   
   /** The name of the policy currently applied to the device. */
-  var appliedPolicyName: js.UndefOr[String] = js.native
+  var appliedPolicyName: js.UndefOr[String] = js.undefined
   
   /** The version of the policy currently applied to the device. */
-  var appliedPolicyVersion: js.UndefOr[String] = js.native
+  var appliedPolicyVersion: js.UndefOr[String] = js.undefined
   
   /** The state currently applied to the device. */
-  var appliedState: js.UndefOr[String] = js.native
+  var appliedState: js.UndefOr[String] = js.undefined
   
   /**
     * Information about Common Criteria Mode—security standards defined in the Common Criteria for Information Technology Security Evaluation (https://www.commoncriteriaportal.org/)
     * (CC).This information is only available if statusReportingSettings.commonCriteriaModeEnabled is true in the device's policy.
     */
-  var commonCriteriaModeInfo: js.UndefOr[CommonCriteriaModeInfo] = js.native
+  var commonCriteriaModeInfo: js.UndefOr[CommonCriteriaModeInfo] = js.undefined
   
   /** Device settings information. This information is only available if deviceSettingsEnabled is true in the device's policy. */
-  var deviceSettings: js.UndefOr[DeviceSettings] = js.native
+  var deviceSettings: js.UndefOr[DeviceSettings] = js.undefined
   
   /** If the device state is DISABLED, an optional message that is displayed on the device indicating the reason the device is disabled. This field can be modified by a patch request. */
-  var disabledReason: js.UndefOr[UserFacingMessage] = js.native
+  var disabledReason: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** Detailed information about displays on the device. This information is only available if displayInfoEnabled is true in the device's policy. */
-  var displays: js.UndefOr[js.Array[Display]] = js.native
+  var displays: js.UndefOr[js.Array[Display]] = js.undefined
   
   /** The time of device enrollment. */
-  var enrollmentTime: js.UndefOr[String] = js.native
+  var enrollmentTime: js.UndefOr[String] = js.undefined
   
   /** If the device was enrolled with an enrollment token with additional data provided, this field contains that data. */
-  var enrollmentTokenData: js.UndefOr[String] = js.native
+  var enrollmentTokenData: js.UndefOr[String] = js.undefined
   
   /** If the device was enrolled with an enrollment token, this field contains the name of the token. */
-  var enrollmentTokenName: js.UndefOr[String] = js.native
+  var enrollmentTokenName: js.UndefOr[String] = js.undefined
   
   /** Detailed information about the device hardware. */
-  var hardwareInfo: js.UndefOr[HardwareInfo] = js.native
+  var hardwareInfo: js.UndefOr[HardwareInfo] = js.undefined
   
   /** Hardware status samples in chronological order. This information is only available if hardwareStatusEnabled is true in the device's policy. */
-  var hardwareStatusSamples: js.UndefOr[js.Array[HardwareStatus]] = js.native
+  var hardwareStatusSamples: js.UndefOr[js.Array[HardwareStatus]] = js.undefined
   
   /** Deprecated. */
-  var lastPolicyComplianceReportTime: js.UndefOr[String] = js.native
+  var lastPolicyComplianceReportTime: js.UndefOr[String] = js.undefined
   
   /** The last time the device fetched its policy. */
-  var lastPolicySyncTime: js.UndefOr[String] = js.native
+  var lastPolicySyncTime: js.UndefOr[String] = js.undefined
   
   /** The last time the device sent a status report. */
-  var lastStatusReportTime: js.UndefOr[String] = js.native
+  var lastStatusReportTime: js.UndefOr[String] = js.undefined
   
   /** The type of management mode Android Device Policy takes on the device. This influences which policy settings are supported. */
-  var managementMode: js.UndefOr[String] = js.native
+  var managementMode: js.UndefOr[String] = js.undefined
   
   /** Events related to memory and storage measurements in chronological order. This information is only available if memoryInfoEnabled is true in the device's policy. */
-  var memoryEvents: js.UndefOr[js.Array[MemoryEvent]] = js.native
+  var memoryEvents: js.UndefOr[js.Array[MemoryEvent]] = js.undefined
   
   /** Memory information. This information is only available if memoryInfoEnabled is true in the device's policy. */
-  var memoryInfo: js.UndefOr[MemoryInfo] = js.native
+  var memoryInfo: js.UndefOr[MemoryInfo] = js.undefined
   
   /** The name of the device in the form enterprises/{enterpriseId}/devices/{deviceId}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Device network information. This information is only available if networkInfoEnabled is true in the device's policy. */
-  var networkInfo: js.UndefOr[NetworkInfo] = js.native
+  var networkInfo: js.UndefOr[NetworkInfo] = js.undefined
   
   /** Details about policy settings that the device is not compliant with. */
-  var nonComplianceDetails: js.UndefOr[js.Array[NonComplianceDetail]] = js.native
+  var nonComplianceDetails: js.UndefOr[js.Array[NonComplianceDetail]] = js.undefined
   
   /** Ownership of the managed device. */
-  var ownership: js.UndefOr[String] = js.native
+  var ownership: js.UndefOr[String] = js.undefined
   
   /** Whether the device is compliant with its policy. */
-  var policyCompliant: js.UndefOr[Boolean] = js.native
+  var policyCompliant: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the policy applied to the device, in the form enterprises/{enterpriseId}/policies/{policyId}. If not specified, the policy_name for the device's user is applied. This
     * field can be modified by a patch request. You can specify only the policyId when calling enterprises.devices.patch, as long as the policyId doesn’t contain any slashes. The rest of
     * the policy name is inferred.
     */
-  var policyName: js.UndefOr[String] = js.native
+  var policyName: js.UndefOr[String] = js.undefined
   
   /** Power management events on the device in chronological order. This information is only available if powerManagementEventsEnabled is true in the device's policy. */
-  var powerManagementEvents: js.UndefOr[js.Array[PowerManagementEvent]] = js.native
+  var powerManagementEvents: js.UndefOr[js.Array[PowerManagementEvent]] = js.undefined
   
   /**
     * If the same physical device has been enrolled multiple times, this field contains its previous device names. The serial number is used as the unique identifier to determine if the
     * same physical device has enrolled previously. The names are in chronological order.
     */
-  var previousDeviceNames: js.UndefOr[js.Array[String]] = js.native
+  var previousDeviceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Device's security posture value that reflects how secure the device is. */
-  var securityPosture: js.UndefOr[SecurityPosture] = js.native
+  var securityPosture: js.UndefOr[SecurityPosture] = js.undefined
   
   /** Detailed information about the device software. This information is only available if softwareInfoEnabled is true in the device's policy. */
-  var softwareInfo: js.UndefOr[SoftwareInfo] = js.native
+  var softwareInfo: js.UndefOr[SoftwareInfo] = js.undefined
   
   /**
     * The state to be applied to the device. This field can be modified by a patch request. Note that when calling enterprises.devices.patch, ACTIVE and DISABLED are the only allowable
     * values. To enter the device into a DELETED state, call enterprises.devices.delete.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Map of selected system properties name and value related to the device. This information is only available if systemPropertiesEnabled is true in the device's policy. */
   var systemProperties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The user who owns the device. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
   
   /** The resource name of the user that owns this device in the form enterprises/{enterpriseId}/users/{userId}. */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object Device {
   
@@ -350,7 +348,7 @@ object Device {
     def setSystemProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAndroidmanagement.maximMazurokGapiClientAndroidmanagementStrings.Device & TopLevel[js.Any]
     ): Self = StObject.set(x, "systemProperties", value.asInstanceOf[js.Any])
     
     @scala.inline

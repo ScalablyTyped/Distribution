@@ -3,14 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationMenuPanelMod {
   
   @JSImport("carbon-components/components/ui-shell/navigation-menu-panel", JSImport.Default)
   @js.native
-  class default () extends NavigationMenuPanel
+  class default ()
+    extends StObject
+       with NavigationMenuPanel {
+    
+    /* CompleteClass */
+    override def _changeState(state: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def createdByLauncher(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def shouldStateBeChanged(state: js.Any): Boolean = js.native
+  }
   /* static members */
   object default {
     
@@ -26,14 +37,13 @@ object navigationMenuPanelMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait NavigationMenuPanel extends StObject {
+  - Dropped any */ trait NavigationMenuPanel extends StObject {
     
-    def _changeState(state: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(state: js.Any, callback: js.Any): Unit
     
-    def createdByLauncher(event: js.Any): Unit = js.native
+    def createdByLauncher(event: js.Any): Unit
     
-    def shouldStateBeChanged(state: js.Any): Boolean = js.native
+    def shouldStateBeChanged(state: js.Any): Boolean
   }
   object NavigationMenuPanel {
     

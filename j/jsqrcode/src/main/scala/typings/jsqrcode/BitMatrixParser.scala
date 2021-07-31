@@ -2,25 +2,23 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BitMatrixParser extends StObject {
   
-  var bitMatrix: BitMatrix = js.native
+  var bitMatrix: BitMatrix
   
-  def copyBit(i: Double, j: Double, versionBits: Double): Double = js.native
+  def copyBit(i: Double, j: Double, versionBits: Double): Double
   
-  var parsedFormatInfo: FormatInformation = js.native
+  var parsedFormatInfo: FormatInformation
   
-  var parsedVersion: Version = js.native
+  var parsedVersion: Version
   
-  def readCodewords(): js.Array[Double] = js.native
+  def readCodewords(): js.Array[Double]
   
-  def readFormatInformation(): FormatInformation = js.native
+  def readFormatInformation(): FormatInformation
   
-  def readVersion(): Version = js.native
+  def readVersion(): Version
 }
 object BitMatrixParser {
   

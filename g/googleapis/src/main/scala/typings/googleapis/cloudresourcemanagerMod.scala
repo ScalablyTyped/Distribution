@@ -15,10 +15,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudresourcemanagerMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudresourcemanager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -151,9 +154,12 @@ object cloudresourcemanagerMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudresourcemanager", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudresourcemanager", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -197,28 +203,24 @@ object cloudresourcemanagerMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager(options: Options): Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Options): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Options): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Options): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager_v1(version: v1): Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager_v1beta1(version: v1beta1): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager_v2(version: v2): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = js.native
-  @JSImport("googleapis/build/src/apis/cloudresourcemanager", "cloudresourcemanager")
-  @js.native
-  def cloudresourcemanager_v2beta1(version: v2beta1): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = js.native
+  @scala.inline
+  def cloudresourcemanager(options: Options): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
+  @scala.inline
+  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Options): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
+  @scala.inline
+  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Options): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
+  @scala.inline
+  def cloudresourcemanager(options: typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Options): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
+  
+  @scala.inline
+  def cloudresourcemanager_v1(version: v1): Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudresourcemanager]
+  
+  @scala.inline
+  def cloudresourcemanager_v1beta1(version: v1beta1): typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1beta1.Cloudresourcemanager]
+  
+  @scala.inline
+  def cloudresourcemanager_v2(version: v2): typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2.Cloudresourcemanager]
+  
+  @scala.inline
+  def cloudresourcemanager_v2beta1(version: v2beta1): typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudresourcemanager")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudresourcemanagerV2beta1Mod.cloudresourcemanagerV2beta1.Cloudresourcemanager]
 }

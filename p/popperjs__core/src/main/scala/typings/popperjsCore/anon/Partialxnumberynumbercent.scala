@@ -2,18 +2,16 @@ package typings.popperjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  x :number,   y :number,   centerOffset :number}> */
-@js.native
 trait Partialxnumberynumbercent extends StObject {
   
-  var centerOffset: js.UndefOr[Double] = js.native
+  var centerOffset: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Partialxnumberynumbercent {
   

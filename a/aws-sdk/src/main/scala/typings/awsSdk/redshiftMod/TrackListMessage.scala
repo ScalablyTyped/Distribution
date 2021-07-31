@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackListMessage extends StObject {
   
   /**
     * A list of maintenance tracks output by the DescribeClusterTracks operation. 
     */
-  var MaintenanceTracks: js.UndefOr[TrackList] = js.native
+  var MaintenanceTracks: js.UndefOr[TrackList] = js.undefined
   
   /**
     * The starting point to return a set of response tracklist records. You can retrieve the next set of response records by providing the returned marker value in the Marker parameter and retrying the request.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object TrackListMessage {
   

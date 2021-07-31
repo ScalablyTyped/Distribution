@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDBLogFilesDetails extends StObject {
   
   /**
     * A POSIX timestamp when the last log entry was written.
     */
-  var LastWritten: js.UndefOr[Long] = js.native
+  var LastWritten: js.UndefOr[Long] = js.undefined
   
   /**
     * The name of the log file for the specified DB instance.
     */
-  var LogFileName: js.UndefOr[String] = js.native
+  var LogFileName: js.UndefOr[String] = js.undefined
   
   /**
     * The size, in bytes, of the log file for the specified DB instance.
     */
-  var Size: js.UndefOr[Long] = js.native
+  var Size: js.UndefOr[Long] = js.undefined
 }
 object DescribeDBLogFilesDetails {
   

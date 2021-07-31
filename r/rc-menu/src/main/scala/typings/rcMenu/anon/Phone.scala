@@ -2,17 +2,15 @@ package typings.rcMenu.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phone extends StObject {
   
-  var device: js.Any = js.native
+  var device: js.Any
   
-  var phone: js.Any = js.native
+  var phone: js.Any
   
-  var tablet: js.Any = js.native
+  var tablet: js.Any
 }
 object Phone {
   

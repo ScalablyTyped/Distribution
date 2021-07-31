@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,8 +33,8 @@ trait corePromise extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Promise.html#when)
     */
-  def when(): js.Promise[_] = js.native
-  def when(callback: js.UndefOr[scala.Nothing], errback: js.Function): js.Promise[_] = js.native
-  def when(callback: js.Function): js.Promise[_] = js.native
-  def when(callback: js.Function, errback: js.Function): js.Promise[_] = js.native
+  def when(): js.Promise[js.Any] = js.native
+  def when(callback: js.Function): js.Promise[js.Any] = js.native
+  def when(callback: js.Function, errback: js.Function): js.Promise[js.Any] = js.native
+  def when(callback: Unit, errback: js.Function): js.Promise[js.Any] = js.native
 }

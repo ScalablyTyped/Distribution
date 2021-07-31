@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNamedRangeResponse extends StObject {
   
   /** The ID of the created named range. */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
 }
 object CreateNamedRangeResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInputSecurityGroupRequest extends StObject {
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
   
   /**
     * List of IPv4 CIDR addresses to whitelist
     */
-  var WhitelistRules: js.UndefOr[listOfInputWhitelistRuleCidr] = js.native
+  var WhitelistRules: js.UndefOr[listOfInputWhitelistRuleCidr] = js.undefined
 }
 object CreateInputSecurityGroupRequest {
   

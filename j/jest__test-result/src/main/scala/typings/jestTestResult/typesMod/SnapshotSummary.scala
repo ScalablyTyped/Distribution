@@ -2,39 +2,37 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotSummary extends StObject {
   
-  var added: Double = js.native
+  var added: Double
   
-  var didUpdate: Boolean = js.native
+  var didUpdate: Boolean
   
-  var failure: Boolean = js.native
+  var failure: Boolean
   
-  var filesAdded: Double = js.native
+  var filesAdded: Double
   
-  var filesRemoved: Double = js.native
+  var filesRemoved: Double
   
-  var filesRemovedList: js.Array[String] = js.native
+  var filesRemovedList: js.Array[String]
   
-  var filesUnmatched: Double = js.native
+  var filesUnmatched: Double
   
-  var filesUpdated: Double = js.native
+  var filesUpdated: Double
   
-  var matched: Double = js.native
+  var matched: Double
   
-  var total: Double = js.native
+  var total: Double
   
-  var unchecked: Double = js.native
+  var unchecked: Double
   
-  var uncheckedKeysByFile: js.Array[UncheckedSnapshot] = js.native
+  var uncheckedKeysByFile: js.Array[UncheckedSnapshot]
   
-  var unmatched: Double = js.native
+  var unmatched: Double
   
-  var updated: Double = js.native
+  var updated: Double
 }
 object SnapshotSummary {
   

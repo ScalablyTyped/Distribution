@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseComposer extends StObject {
   
-  var aspect_ratio_finished: Boolean = js.native
+  var aspect_ratio_finished: Boolean
   
-  var nux_finished: Boolean = js.native
+  var nux_finished: Boolean
 }
 object IgtvBrowseFeedResponseComposer {
   

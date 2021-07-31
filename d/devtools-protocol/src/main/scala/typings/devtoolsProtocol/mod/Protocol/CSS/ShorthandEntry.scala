@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShorthandEntry extends StObject {
   
   /**
     * Whether the property has "!important" annotation (implies `false` if absent).
     */
-  var important: js.UndefOr[Boolean] = js.native
+  var important: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shorthand name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Shorthand value.
     */
-  var value: String = js.native
+  var value: String
 }
 object ShorthandEntry {
   

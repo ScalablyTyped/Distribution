@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.commandBarTypesMod.ICommandBarProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandBarBaseMod {
@@ -39,6 +38,18 @@ object commandBarBaseMod {
     var _overflowSet: js.Any = js.native
     
     var _resizeGroup: js.Any = js.native
+    
+    /**
+      * Sets focus to the active command in the list.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /**
+      * Remeasures the available space.
+      */
+    /* CompleteClass */
+    override def remeasure(): Unit = js.native
   }
   /* static members */
   object CommandBarBase {
@@ -54,33 +65,32 @@ object commandBarBaseMod {
     def defaultProps_=(x: ICommandBarProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ICommandBarData extends StObject {
     
     /**
       * Unique string used to cache the width of the command bar
       */
-    var cacheKey: String = js.native
+    var cacheKey: String
     
     /**
       * Items being rendered on the far side
       */
-    var farItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.native
+    var farItems: js.UndefOr[js.Array[ICommandBarItemProps]] = js.undefined
     
     /**
       * Length of original overflowItems to ensure that they are not moved into primary region on resize
       */
-    var minimumOverflowItems: Double = js.native
+    var minimumOverflowItems: Double
     
     /**
       * Items being rendered in the overflow
       */
-    var overflowItems: js.Array[ICommandBarItemProps] = js.native
+    var overflowItems: js.Array[ICommandBarItemProps]
     
     /**
       * Items being rendered in the primary region
       */
-    var primaryItems: js.Array[ICommandBarItemProps] = js.native
+    var primaryItems: js.Array[ICommandBarItemProps]
   }
   object ICommandBarData {
     

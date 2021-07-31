@@ -2,7 +2,6 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/audio-features?ids={ids}
   * https://developer.spotify.com/get-several-audio-features/
   */
-@js.native
 trait MultipleAudioFeaturesResponse extends StObject {
   
-  var audio_features: js.Array[AudioFeaturesObject] = js.native
+  var audio_features: js.Array[AudioFeaturesObject]
 }
 object MultipleAudioFeaturesResponse {
   

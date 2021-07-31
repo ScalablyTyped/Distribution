@@ -4,17 +4,17 @@ import typings.kendoUi.kendo.data.GanttTask
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GanttResizeEvent extends GanttEvent {
+trait GanttResizeEvent
+  extends StObject
+     with GanttEvent {
   
-  var end: js.UndefOr[Date] = js.native
+  var end: js.UndefOr[Date] = js.undefined
   
-  var start: js.UndefOr[Date] = js.native
+  var start: js.UndefOr[Date] = js.undefined
   
-  var task: js.UndefOr[GanttTask] = js.native
+  var task: js.UndefOr[GanttTask] = js.undefined
 }
 object GanttResizeEvent {
   

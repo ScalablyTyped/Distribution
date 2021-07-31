@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityManagerGetCredentialOptions extends Object {
+trait IdentityManagerGetCredentialOptions
+  extends StObject
+     with Object {
   
   /**
     * Error object returned by the server from a previous attempt to fetch the given URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
     */
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
   /**
     * If set to *false*, the user will not be shown a dialog before the OAuth popup window is opened.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
     */
-  var oAuthPopupConfirmation: js.UndefOr[Boolean] = js.native
+  var oAuthPopupConfirmation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Token used for a previous unsuccessful attempt to fetch the given URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-identity-IdentityManager.html#getCredential)
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object IdentityManagerGetCredentialOptions {
   

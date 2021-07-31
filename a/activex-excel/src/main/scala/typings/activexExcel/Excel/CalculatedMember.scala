@@ -2,44 +2,42 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalculatedMember extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DisplayFolder: String = js.native
+  val DisplayFolder: String
   
-  val Dynamic: Boolean = js.native
+  val Dynamic: Boolean
   
   @JSName("Excel.CalculatedMember_typekey")
-  var ExcelDotCalculatedMember_typekey: CalculatedMember = js.native
+  var ExcelDotCalculatedMember_typekey: CalculatedMember
   
-  var FlattenHierarchies: Boolean = js.native
+  var FlattenHierarchies: Boolean
   
-  val Formula: String = js.native
+  val Formula: String
   
-  var HierarchizeDistinct: Boolean = js.native
+  var HierarchizeDistinct: Boolean
   
-  val IsValid: Boolean = js.native
+  val IsValid: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SolveOrder: Double = js.native
+  val SolveOrder: Double
   
-  val SourceName: String = js.native
+  val SourceName: String
   
-  val Type: XlCalculatedMemberType = js.native
+  val Type: XlCalculatedMemberType
   
-  val _Default: String = js.native
+  val _Default: String
 }
 object CalculatedMember {
   

@@ -3,13 +3,11 @@ package typings.winrt.Windows.Globalization.DateTimeFormatting
 import typings.winrt.Windows.Foundation.Collections.IIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDateTimeFormatterFactory extends StObject {
   
-  def createDateTimeFormatter(formatTemplate: String): DateTimeFormatter = js.native
+  def createDateTimeFormatter(formatTemplate: String): DateTimeFormatter
   
   def createDateTimeFormatterContext(
     formatTemplate: String,
@@ -17,14 +15,14 @@ trait IDateTimeFormatterFactory extends StObject {
     geographicRegion: String,
     calendar: String,
     clock: String
-  ): DateTimeFormatter = js.native
+  ): DateTimeFormatter
   
   def createDateTimeFormatterDate(
     yearFormat: YearFormat,
     monthFormat: MonthFormat,
     dayFormat: DayFormat,
     dayOfWeekFormat: DayOfWeekFormat
-  ): DateTimeFormatter = js.native
+  ): DateTimeFormatter
   
   def createDateTimeFormatterDateTimeContext(
     yearFormat: YearFormat,
@@ -38,7 +36,7 @@ trait IDateTimeFormatterFactory extends StObject {
     geographicRegion: String,
     calendar: String,
     clock: String
-  ): DateTimeFormatter = js.native
+  ): DateTimeFormatter
   
   def createDateTimeFormatterDateTimeLanguages(
     yearFormat: YearFormat,
@@ -49,11 +47,11 @@ trait IDateTimeFormatterFactory extends StObject {
     minuteFormat: MinuteFormat,
     secondFormat: SecondFormat,
     languages: IIterable[String]
-  ): DateTimeFormatter = js.native
+  ): DateTimeFormatter
   
-  def createDateTimeFormatterLanguages(formatTemplate: String, languages: IIterable[String]): DateTimeFormatter = js.native
+  def createDateTimeFormatterLanguages(formatTemplate: String, languages: IIterable[String]): DateTimeFormatter
   
-  def createDateTimeFormatterTime(hourFormat: HourFormat, minuteFormat: MinuteFormat, secondFormat: SecondFormat): DateTimeFormatter = js.native
+  def createDateTimeFormatterTime(hourFormat: HourFormat, minuteFormat: MinuteFormat, secondFormat: SecondFormat): DateTimeFormatter
 }
 object IDateTimeFormatterFactory {
   

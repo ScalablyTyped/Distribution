@@ -1,27 +1,36 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/structure/Point", JSImport.Namespace)
-@js.native
-object pointMod extends js.Object {
+object pointMod {
+  
+  @JSImport("wonder.js/dist/es2015/structure/Point", "Point")
   @js.native
-  class Point () extends js.Object {
+  class Point () extends StObject {
     def this(x: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
+    
     var x: Double = js.native
+    
     var y: Double = js.native
   }
-  
   /* static members */
-  @js.native
-  object Point extends js.Object {
-    def create(): Point = js.native
-    def create(x: Double): Point = js.native
-    def create(x: Double, y: Double): Point = js.native
+  object Point {
+    
+    @JSImport("wonder.js/dist/es2015/structure/Point", "Point")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Point]
+    @scala.inline
+    def create(x: Double): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[Point]
+    @scala.inline
+    def create(x: Double, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
+    @scala.inline
+    def create(x: Unit, y: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Point]
   }
-  
 }
-

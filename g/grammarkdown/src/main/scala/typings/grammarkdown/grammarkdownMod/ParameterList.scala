@@ -6,23 +6,23 @@ import typings.grammarkdown.grammarkdownMod.SyntaxKind.OpenBracketToken
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.OpenParenToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "ParameterList")
 @js.native
 class ParameterList protected ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.ParameterList] {
+  extends StObject
+     with Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.ParameterList] {
   def this(openParenToken: Token[OpenParenToken | OpenBracketToken]) = this()
   def this(openParenToken: Token[OpenParenToken | OpenBracketToken], elements: js.Array[Parameter]) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
-    elements: js.UndefOr[scala.Nothing],
+    elements: js.Array[Parameter],
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()
   def this(
     openParenToken: Token[OpenParenToken | OpenBracketToken],
-    elements: js.Array[Parameter],
+    elements: Unit,
     closeParenToken: Token[CloseParenToken | CloseBracketToken]
   ) = this()
   
@@ -30,7 +30,13 @@ class ParameterList protected ()
   
   val elements: js.UndefOr[js.Array[Parameter]] = js.native
   
+  /* CompleteClass */
+  var end: Double = js.native
+  
   val openParenToken: Token[OpenParenToken | OpenBracketToken] = js.native
+  
+  /* CompleteClass */
+  var pos: Double = js.native
   
   def update(): ParameterList = js.native
   def update(elements: js.Array[Parameter]): ParameterList = js.native

@@ -2,13 +2,13 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.ColorFilter")
 @js.native
 class ColorFilter protected ()
-  extends typings.easeljs.createjs.ColorFilter {
+  extends StObject
+     with typings.easeljs.createjs.ColorFilter {
   def this(
     redMultiplier: js.UndefOr[Double],
     greenMultiplier: js.UndefOr[Double],

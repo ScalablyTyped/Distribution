@@ -2,41 +2,39 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsCurrencyOptions extends StObject {
   
-  var allow_decimal: js.UndefOr[Boolean] = js.native
+  var allow_decimal: js.UndefOr[Boolean] = js.undefined
   
-  var allow_negative_sign_placeholder: js.UndefOr[Boolean] = js.native
+  var allow_negative_sign_placeholder: js.UndefOr[Boolean] = js.undefined
   
-  var allow_negatives: js.UndefOr[Boolean] = js.native
+  var allow_negatives: js.UndefOr[Boolean] = js.undefined
   
-  var allow_space_after_digits: js.UndefOr[Boolean] = js.native
+  var allow_space_after_digits: js.UndefOr[Boolean] = js.undefined
   
-  var allow_space_after_symbol: js.UndefOr[Boolean] = js.native
+  var allow_space_after_symbol: js.UndefOr[Boolean] = js.undefined
   
-  var decimal_separator: js.UndefOr[String] = js.native
+  var decimal_separator: js.UndefOr[String] = js.undefined
   
-  var digits_after_decimal: js.UndefOr[js.Array[Double]] = js.native
+  var digits_after_decimal: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var negative_sign_after_digits: js.UndefOr[Boolean] = js.native
+  var negative_sign_after_digits: js.UndefOr[Boolean] = js.undefined
   
-  var negative_sign_before_digits: js.UndefOr[Boolean] = js.native
+  var negative_sign_before_digits: js.UndefOr[Boolean] = js.undefined
   
-  var parens_for_negatives: js.UndefOr[Boolean] = js.native
+  var parens_for_negatives: js.UndefOr[Boolean] = js.undefined
   
-  var require_decimal: js.UndefOr[Boolean] = js.native
+  var require_decimal: js.UndefOr[Boolean] = js.undefined
   
-  var require_symbol: js.UndefOr[Boolean] = js.native
+  var require_symbol: js.UndefOr[Boolean] = js.undefined
   
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
-  var symbol_after_digits: js.UndefOr[Boolean] = js.native
+  var symbol_after_digits: js.UndefOr[Boolean] = js.undefined
   
-  var thousands_separator: js.UndefOr[String] = js.native
+  var thousands_separator: js.UndefOr[String] = js.undefined
 }
 object IsCurrencyOptions {
   

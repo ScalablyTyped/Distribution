@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.CollectClassNamesFromSubtreeReq
 import typings.devtoolsProtocol.mod.Protocol.DOM.CollectClassNamesFromSubtreeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCollectClassNamesFromSubtreeResponse extends StObject {
   
-  var paramsType: js.Array[CollectClassNamesFromSubtreeRequest] = js.native
+  var paramsType: js.Array[CollectClassNamesFromSubtreeRequest]
   
-  var returnType: CollectClassNamesFromSubtreeResponse = js.native
+  var returnType: CollectClassNamesFromSubtreeResponse
 }
 object ReturnTypeCollectClassNamesFromSubtreeResponse {
   

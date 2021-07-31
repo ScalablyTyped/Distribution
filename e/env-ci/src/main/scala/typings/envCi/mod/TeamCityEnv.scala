@@ -1,37 +1,35 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.TeamCity
 import typings.envCi.envCiStrings.teamcity_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamCityEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: js.UndefOr[String] = js.native
+  var branch: js.UndefOr[String] = js.undefined
   
-  var build: String = js.native
+  var build: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var name: TeamCity = js.native
+  var name: TeamCity
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var service: teamcity_ = js.native
+  var service: teamcity_
   
-  var slug: String = js.native
+  var slug: String
 }
 object TeamCityEnv {
   
   @scala.inline
-  def apply(build: String, commit: String, isCi: `true`, name: TeamCity, service: teamcity_, slug: String): TeamCityEnv = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(build: String, commit: String, slug: String): TeamCityEnv = {
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "TeamCity", service = "teamcity", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[TeamCityEnv]
   }
   

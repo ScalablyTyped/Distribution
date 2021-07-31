@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSheetOptions extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ ActionSheetEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ ActionSheetEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ ActionSheetOpenEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ ActionSheetOpenEvent, Unit]] = js.undefined
   
-  var popup: js.UndefOr[ActionSheetPopup] = js.native
+  var popup: js.UndefOr[ActionSheetPopup] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ActionSheetOptions {
   

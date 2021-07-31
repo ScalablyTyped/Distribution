@@ -9,37 +9,35 @@ import typings.steamLogin.anon.Avatar
 import typings.steamLogin.anon.Large
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("steam-login", "authenticate")
+  @JSImport("steam-login", JSImport.Namespace)
   @js.native
-  def authenticate(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("steam-login", "enforceLogin")
-  @js.native
-  def enforceLogin(redirect: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def authenticate(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("steam-login", "middleware")
-  @js.native
-  def middleware(opts: MiddlewareOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def enforceLogin(redirect: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceLogin")(redirect.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("steam-login", "verify")
-  @js.native
-  def verify(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def middleware(opts: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(opts.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
+  @scala.inline
+  def verify(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   trait MiddlewareOptions extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var realm: String = js.native
+    var realm: String
     
-    var useSession: js.UndefOr[Boolean] = js.native
+    var useSession: js.UndefOr[Boolean] = js.undefined
     
-    var verify: String = js.native
+    var verify: String
   }
   object MiddlewareOptions {
     
@@ -75,27 +73,26 @@ object mod {
     
     var logout: js.UndefOr[
         js.Function0[
-          js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], js.Function0[Unit]]
+          js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], js.Function0[Unit]]
         ]
       ] = js.native
     
     var user: js.UndefOr[SteamUser] = js.native
   }
   
-  @js.native
   trait SteamUser extends StObject {
     
-    var _json: Avatar = js.native
+    var _json: Avatar
     
-    var avatar: Large = js.native
+    var avatar: Large
     
-    var name: String = js.native
+    var name: String
     
-    var profile: String = js.native
+    var profile: String
     
-    var steamid: String = js.native
+    var steamid: String
     
-    var username: String = js.native
+    var username: String
   }
   object SteamUser {
     

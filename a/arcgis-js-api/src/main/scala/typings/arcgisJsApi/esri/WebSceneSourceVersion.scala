@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebSceneSourceVersion extends Object {
+trait WebSceneSourceVersion
+  extends StObject
+     with Object {
   
   /**
     * The major version of the WebScene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#sourceVersion)
     */
-  var major: Double = js.native
+  var major: Double
   
   /**
     * The minor version of the WebScene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html#sourceVersion)
     */
-  var minor: Double = js.native
+  var minor: Double
 }
 object WebSceneSourceVersion {
   

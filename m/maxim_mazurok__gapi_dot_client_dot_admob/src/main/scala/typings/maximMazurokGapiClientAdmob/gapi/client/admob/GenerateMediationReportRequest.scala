@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdmob.gapi.client.admob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateMediationReportRequest extends StObject {
   
   /** Network report specification. */
-  var reportSpec: js.UndefOr[MediationReportSpec] = js.native
+  var reportSpec: js.UndefOr[MediationReportSpec] = js.undefined
 }
 object GenerateMediationReportRequest {
   

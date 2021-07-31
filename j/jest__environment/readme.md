@@ -9,9 +9,9 @@ Typings are for version 26.6.2
 | ------------------ | :-------------: |
 | Full name          | @jest/environment |
 | Keywords           | - |
-| # releases         | 39 |
-| # dependents       | 19 |
-| # downloads        | 331323321 |
+| # releases         | 42 |
+| # dependents       | 18 |
+| # downloads        | 399654124 |
 | # stars            | 0 |
 
 ## Links

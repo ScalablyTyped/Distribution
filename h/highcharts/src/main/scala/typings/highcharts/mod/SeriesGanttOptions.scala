@@ -3,50 +3,50 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.gantt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesGanttOptions extends PlotGanttOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesGanttOptions
+  extends StObject
+     with PlotGanttOptions {
   
   /**
     * (Gantt) Data for a Gantt series.
     */
-  var data: js.UndefOr[js.Array[GanttPointOptionsObject]] = js.native
+  var data: js.UndefOr[js.Array[GanttPointOptionsObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -54,14 +54,14 @@ trait SeriesGanttOptions extends PlotGanttOptions {
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | gantt = js.native
+  var `type`: String | gantt
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -69,7 +69,7 @@ trait SeriesGanttOptions extends PlotGanttOptions {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -77,7 +77,7 @@ trait SeriesGanttOptions extends PlotGanttOptions {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesGanttOptions {
   

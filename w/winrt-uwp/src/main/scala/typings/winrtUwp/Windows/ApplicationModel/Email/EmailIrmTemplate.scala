@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a template that can be used to create new EmailIrmInfo objects. */
-@js.native
 trait EmailIrmTemplate extends StObject {
   
   /** Gets or sets the description of the template. */
-  var description: String = js.native
+  var description: String
   
   /** Gets or sets the ID for the template. */
-  var id: String = js.native
+  var id: String
   
   /** Gets or sets the name for the template. */
-  var name: String = js.native
+  var name: String
 }
 object EmailIrmTemplate {
   

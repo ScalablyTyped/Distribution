@@ -21,21 +21,21 @@ import typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publishOptionsMod {
   
-  @JSImport("builder-util-runtime/out/publishOptions", "getS3LikeProviderBaseUrl")
+  @JSImport("builder-util-runtime/out/publishOptions", JSImport.Namespace)
   @js.native
-  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("builder-util-runtime/out/publishOptions", "githubUrl")
-  @js.native
-  def githubUrl(options: GithubOptions): String = js.native
-  @JSImport("builder-util-runtime/out/publishOptions", "githubUrl")
-  @js.native
-  def githubUrl(options: GithubOptions, defaultHost: String): String = js.native
+  @scala.inline
+  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def githubUrl(options: GithubOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def githubUrl(options: GithubOptions, defaultHost: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any], defaultHost.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
@@ -48,27 +48,28 @@ object publishOptionsMod {
   */
   type AllPublishOptions = _AllPublishOptions | String
   
-  @js.native
-  trait BaseS3Options extends PublishConfiguration {
+  trait BaseS3Options
+    extends StObject
+       with PublishConfiguration {
     
     /**
       * The ACL. Set to `null` to not [add](https://github.com/electron-userland/electron-builder/issues/1822).
       *
       * @default public-read
       */
-    val acl: js.UndefOr[`private` | `public-read` | Null] = js.native
+    val acl: js.UndefOr[`private` | `public-read` | Null] = js.undefined
     
     /**
       * The update channel.
       * @default latest
       */
-    var channel: js.UndefOr[String | Null] = js.native
+    var channel: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The directory path.
       * @default /
       */
-    val path: js.UndefOr[String | Null] = js.native
+    val path: js.UndefOr[String | Null] = js.undefined
   }
   object BaseS3Options {
     
@@ -110,57 +111,57 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait BintrayOptions
-    extends PublishConfiguration
+    extends StObject
+       with PublishConfiguration
        with _AllPublishOptions {
     
     /**
       * The Bintray package name.
       */
     @JSName("package")
-    val _package: js.UndefOr[String | Null] = js.native
+    val _package: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The Bintray component (Debian only).
       */
-    val component: js.UndefOr[String | Null] = js.native
+    val component: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The Bintray distribution (Debian only).
       * @default stable
       */
-    val distribution: js.UndefOr[String | Null] = js.native
+    val distribution: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The owner.
       */
-    val owner: js.UndefOr[String | Null] = js.native
+    val owner: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The provider. Must be `bintray`.
       */
     @JSName("provider")
-    val provider_BintrayOptions: bintray = js.native
+    val provider_BintrayOptions: bintray
     
     /**
       * The Bintray repository name.
       * @default generic
       */
-    val repo: js.UndefOr[String | Null] = js.native
+    val repo: js.UndefOr[String | Null] = js.undefined
     
-    val token: js.UndefOr[String | Null] = js.native
+    val token: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The Bintray user account. Used in cases where the owner is an organization.
       */
-    val user: js.UndefOr[String | Null] = js.native
+    val user: js.UndefOr[String | Null] = js.undefined
   }
   object BintrayOptions {
     
     @scala.inline
-    def apply(provider: bintray): BintrayOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): BintrayOptions = {
+      val __obj = js.Dynamic.literal(provider = "bintray")
       __obj.asInstanceOf[BintrayOptions]
     }
     
@@ -235,9 +236,9 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait CustomPublishOptions
-    extends PublishConfiguration
+    extends StObject
+       with PublishConfiguration
        with /* index */ StringDictionary[js.Any]
        with _AllPublishOptions
   object CustomPublishOptions {
@@ -249,38 +250,38 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait GenericServerOptions
-    extends PublishConfiguration
+    extends StObject
+       with PublishConfiguration
        with _AllPublishOptions {
     
     /**
       * The channel.
       * @default latest
       */
-    val channel: js.UndefOr[String | Null] = js.native
+    val channel: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The provider. Must be `generic`.
       */
     @JSName("provider")
-    val provider_GenericServerOptions: generic = js.native
+    val provider_GenericServerOptions: generic
     
     /**
       * The base url. e.g. `https://bucket_name.s3.amazonaws.com`.
       */
-    val url: String = js.native
+    val url: String
     
     /**
       * Whether to use multiple range requests for differential update. Defaults to `true` if `url` doesn't contain `s3.amazonaws.com`.
       */
-    val useMultipleRangeRequest: js.UndefOr[Boolean] = js.native
+    val useMultipleRangeRequest: js.UndefOr[Boolean] = js.undefined
   }
   object GenericServerOptions {
     
     @scala.inline
-    def apply(provider: generic, url: String): GenericServerOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def apply(url: String): GenericServerOptions = {
+      val __obj = js.Dynamic.literal(provider = "generic", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericServerOptions]
     }
     
@@ -310,38 +311,38 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait GithubOptions
-    extends PublishConfiguration
+    extends StObject
+       with PublishConfiguration
        with _AllPublishOptions {
     
     /**
       * The host (including the port if need).
       * @default github.com
       */
-    val host: js.UndefOr[String | Null] = js.native
+    val host: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The owner.
       */
-    val owner: js.UndefOr[String | Null] = js.native
+    val owner: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to use private github auto-update provider if `GH_TOKEN` environment variable is defined. See [Private GitHub Update Repo](/auto-update#private-github-update-repo).
       */
-    val `private`: js.UndefOr[Boolean | Null] = js.native
+    val `private`: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * The protocol. GitHub Publisher supports only `https`.
       * @default https
       */
-    val protocol: js.UndefOr[https | http | Null] = js.native
+    val protocol: js.UndefOr[https | http | Null] = js.undefined
     
     /**
       * The provider. Must be `github`.
       */
     @JSName("provider")
-    val provider_GithubOptions: github = js.native
+    val provider_GithubOptions: github
     
     /**
       * The type of release. By default `draft` release will be created.
@@ -349,29 +350,29 @@ object publishOptionsMod {
       * Also you can set release type using environment variable. If `EP_DRAFT`is set to `true` — `draft`, if `EP_PRE_RELEASE`is set to `true` — `prerelease`.
       * @default draft
       */
-    var releaseType: js.UndefOr[draft | prerelease | release | Null] = js.native
+    var releaseType: js.UndefOr[draft | prerelease | release | Null] = js.undefined
     
     /**
       * The repository name. [Detected automatically](#github-repository-and-bintray-package).
       */
-    val repo: js.UndefOr[String | Null] = js.native
+    val repo: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The access token to support auto-update from private github repositories. Never specify it in the configuration files. Only for [setFeedURL](/auto-update#appupdatersetfeedurloptions).
       */
-    val token: js.UndefOr[String | Null] = js.native
+    val token: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to use `v`-prefixed tag name.
       * @default true
       */
-    val vPrefixedTagName: js.UndefOr[Boolean] = js.native
+    val vPrefixedTagName: js.UndefOr[Boolean] = js.undefined
   }
   object GithubOptions {
     
     @scala.inline
-    def apply(provider: github): GithubOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): GithubOptions = {
+      val __obj = js.Dynamic.literal(provider = "github")
       __obj.asInstanceOf[GithubOptions]
     }
     
@@ -452,13 +453,12 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait PublishConfiguration extends StObject {
     
     /**
       * The provider.
       */
-    val provider: PublishProvider = js.native
+    val provider: PublishProvider
     
     /**
       * Whether to publish auto update info files.
@@ -468,24 +468,24 @@ object publishOptionsMod {
       *
       * @default true
       */
-    val publishAutoUpdate: js.UndefOr[Boolean] = js.native
+    val publishAutoUpdate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @private
       * win-only
       */
-    var publisherName: js.UndefOr[js.Array[String] | Null] = js.native
+    var publisherName: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * Any custom request headers
       */
-    val requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    val requestHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
     /**
       * @private
       * win-only
       */
-    val updaterCacheDirName: js.UndefOr[String | Null] = js.native
+    val updaterCacheDirName: js.UndefOr[String | Null] = js.undefined
   }
   object PublishConfiguration {
     
@@ -570,49 +570,49 @@ object publishOptionsMod {
     def spaces: typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces = "spaces".asInstanceOf[typings.builderUtilRuntime.builderUtilRuntimeStrings.spaces]
   }
   
-  @js.native
   trait S3Options
-    extends BaseS3Options
+    extends StObject
+       with BaseS3Options
        with _AllPublishOptions {
     
     /**
       * The bucket name.
       */
-    val bucket: String = js.native
+    val bucket: String
     
     /**
       * Server-side encryption algorithm to use for the object.
       */
-    val encryption: js.UndefOr[AES256 | awsColonkms | Null] = js.native
+    val encryption: js.UndefOr[AES256 | awsColonkms | Null] = js.undefined
     
     /**
       * The endpoint URI to send requests to. The default endpoint is built from the configured region.
       * The endpoint should be a string like `https://{service}.{region}.amazonaws.com`.
       */
-    val endpoint: js.UndefOr[String | Null] = js.native
+    val endpoint: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The provider. Must be `s3`.
       */
     @JSName("provider")
-    val provider_S3Options: s3 = js.native
+    val provider_S3Options: s3
     
     /**
       * The region. Is determined and set automatically when publishing.
       */
-    var region: js.UndefOr[String | Null] = js.native
+    var region: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The type of storage to use for the object.
       * @default STANDARD
       */
-    val storageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | Null] = js.native
+    val storageClass: js.UndefOr[STANDARD | REDUCED_REDUNDANCY | STANDARD_IA | Null] = js.undefined
   }
   object S3Options {
     
     @scala.inline
-    def apply(bucket: String, provider: s3): S3Options = {
-      val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    def apply(bucket: String): S3Options = {
+      val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = "s3")
       __obj.asInstanceOf[S3Options]
     }
     
@@ -663,32 +663,32 @@ object publishOptionsMod {
     }
   }
   
-  @js.native
   trait SpacesOptions
-    extends BaseS3Options
+    extends StObject
+       with BaseS3Options
        with _AllPublishOptions {
     
     /**
       * The space name.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The provider. Must be `spaces`.
       */
     @JSName("provider")
-    val provider_SpacesOptions: spaces = js.native
+    val provider_SpacesOptions: spaces
     
     /**
       * The region (e.g. `nyc3`).
       */
-    val region: String = js.native
+    val region: String
   }
   object SpacesOptions {
     
     @scala.inline
-    def apply(name: String, provider: spaces, region: String): SpacesOptions = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+    def apply(name: String, region: String): SpacesOptions = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = "spaces", region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[SpacesOptions]
     }
     
@@ -710,8 +710,8 @@ object publishOptionsMod {
   object _AllPublishOptions {
     
     @scala.inline
-    def BintrayOptions(provider: bintray): typings.builderUtilRuntime.publishOptionsMod.BintrayOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def BintrayOptions(): typings.builderUtilRuntime.publishOptionsMod.BintrayOptions = {
+      val __obj = js.Dynamic.literal(provider = "bintray")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.BintrayOptions]
     }
     
@@ -722,26 +722,26 @@ object publishOptionsMod {
     }
     
     @scala.inline
-    def GenericServerOptions(provider: generic, url: String): typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+    def GenericServerOptions(url: String): typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions = {
+      val __obj = js.Dynamic.literal(provider = "generic", url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.GenericServerOptions]
     }
     
     @scala.inline
-    def GithubOptions(provider: github): typings.builderUtilRuntime.publishOptionsMod.GithubOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def GithubOptions(): typings.builderUtilRuntime.publishOptionsMod.GithubOptions = {
+      val __obj = js.Dynamic.literal(provider = "github")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.GithubOptions]
     }
     
     @scala.inline
-    def S3Options(bucket: String, provider: s3): typings.builderUtilRuntime.publishOptionsMod.S3Options = {
-      val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    def S3Options(bucket: String): typings.builderUtilRuntime.publishOptionsMod.S3Options = {
+      val __obj = js.Dynamic.literal(bucket = bucket.asInstanceOf[js.Any], provider = "s3")
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.S3Options]
     }
     
     @scala.inline
-    def SpacesOptions(name: String, provider: spaces, region: String): typings.builderUtilRuntime.publishOptionsMod.SpacesOptions = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any])
+    def SpacesOptions(name: String, region: String): typings.builderUtilRuntime.publishOptionsMod.SpacesOptions = {
+      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], provider = "spaces", region = region.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.builderUtilRuntime.publishOptionsMod.SpacesOptions]
     }
   }

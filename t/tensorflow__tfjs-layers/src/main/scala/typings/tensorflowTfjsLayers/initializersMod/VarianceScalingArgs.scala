@@ -4,23 +4,21 @@ import typings.tensorflowTfjsLayers.initializerConfigMod.Distribution
 import typings.tensorflowTfjsLayers.initializerConfigMod.FanMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VarianceScalingArgs extends StObject {
   
   /** Probabilistic distribution of the values. */
-  var distribution: js.UndefOr[Distribution] = js.native
+  var distribution: js.UndefOr[Distribution] = js.undefined
   
   /** Fanning mode for inputs and outputs. */
-  var mode: js.UndefOr[FanMode] = js.native
+  var mode: js.UndefOr[FanMode] = js.undefined
   
   /** Scaling factor (positive float). */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /** Random number generator seed. */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
 }
 object VarianceScalingArgs {
   

@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterContentInit extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AfterContentInit extends StObject {
     * content.
     * It is invoked only once when the directive is instantiated.
     */
-  def ngAfterContentInit(): Unit = js.native
+  def ngAfterContentInit(): Unit
 }
 object AfterContentInit {
   

@@ -33,15 +33,14 @@ import typings.awsSdkClientCodecommitNode.updatePullRequestStatusExceptionsUnion
 import typings.awsSdkClientCodecommitNode.updateRepositoryDescriptionExceptionsUnionMod.UpdateRepositoryDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEncryptionIntegrityChecksFailedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionIntegrityChecksFailedExceptionDetails> * / any */ @js.native
-  trait EncryptionIntegrityChecksFailedException
-    extends BatchGetRepositoriesExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EncryptionIntegrityChecksFailedExceptionDetails> * / any */ trait EncryptionIntegrityChecksFailedException
+    extends StObject
+       with BatchGetRepositoriesExceptionsUnion
        with CreateBranchExceptionsUnion
        with CreatePullRequestExceptionsUnion
        with CreateRepositoryExceptionsUnion
@@ -73,15 +72,13 @@ object typesEncryptionIntegrityChecksFailedExceptionMod {
        with UpdatePullRequestStatusExceptionsUnion
        with UpdateRepositoryDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
   }
   object EncryptionIntegrityChecksFailedException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
-    ): EncryptionIntegrityChecksFailedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EncryptionIntegrityChecksFailedException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionIntegrityChecksFailedException")
       __obj.asInstanceOf[EncryptionIntegrityChecksFailedException]
     }
     
@@ -95,6 +92,5 @@ object typesEncryptionIntegrityChecksFailedExceptionMod {
     }
   }
   
-  @js.native
   trait EncryptionIntegrityChecksFailedExceptionDetails extends StObject
 }

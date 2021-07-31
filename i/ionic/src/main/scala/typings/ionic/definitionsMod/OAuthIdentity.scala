@@ -2,18 +2,16 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ A in ionic.ionic/definitions.AssociationType ]:? ionic.ionic/definitions.OAuthIdentityDetails} */
-@js.native
 trait OAuthIdentity extends StObject {
   
-  var bitbucket_cloud: js.UndefOr[OAuthIdentityDetails] = js.native
+  var bitbucket_cloud: js.UndefOr[OAuthIdentityDetails] = js.undefined
   
-  var bitbucket_server: js.UndefOr[OAuthIdentityDetails] = js.native
+  var bitbucket_server: js.UndefOr[OAuthIdentityDetails] = js.undefined
   
-  var github: js.UndefOr[OAuthIdentityDetails] = js.native
+  var github: js.UndefOr[OAuthIdentityDetails] = js.undefined
 }
 object OAuthIdentity {
   

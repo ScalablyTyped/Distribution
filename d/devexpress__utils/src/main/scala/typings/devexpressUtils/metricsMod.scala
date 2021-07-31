@@ -3,7 +3,6 @@ package typings.devexpressUtils
 import typings.devexpressUtils.interfacesMod.IPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricsMod {
@@ -14,12 +13,14 @@ object metricsMod {
   /* static members */
   object Metrics {
     
-    @JSImport("@devexpress/utils/lib/geometry/metrics", "Metrics.euclideanDistance")
+    @JSImport("@devexpress/utils/lib/geometry/metrics", "Metrics")
     @js.native
-    def euclideanDistance(a: IPoint, b: IPoint): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/geometry/metrics", "Metrics.manhattanDistance")
-    @js.native
-    def manhattanDistance(a: IPoint, b: IPoint): Double = js.native
+    @scala.inline
+    def euclideanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("euclideanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def manhattanDistance(a: IPoint, b: IPoint): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("manhattanDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

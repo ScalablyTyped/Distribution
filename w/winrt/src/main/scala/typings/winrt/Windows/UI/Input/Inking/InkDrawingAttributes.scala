@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Size
 import typings.winrt.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InkDrawingAttributes extends IInkDrawingAttributes
+trait InkDrawingAttributes
+  extends StObject
+     with IInkDrawingAttributes
 object InkDrawingAttributes {
   
   @scala.inline

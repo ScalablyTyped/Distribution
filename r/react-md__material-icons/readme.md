@@ -10,9 +10,9 @@ This package is just a simple wrapper for using material icons within react-md a
 | ------------------ | :-------------: |
 | Full name          | @react-md/material-icons |
 | Keywords           | react-md, material design, react, component, components, icons, svg icon, font icon, material design icons |
-| # releases         | 30 |
+| # releases         | 37 |
 | # dependents       | 1 |
-| # downloads        | 9159 |
+| # downloads        | 27619 |
 | # stars            | 0 |
 
 ## Links

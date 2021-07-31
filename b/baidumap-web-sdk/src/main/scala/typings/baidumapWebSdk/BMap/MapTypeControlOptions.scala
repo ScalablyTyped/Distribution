@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeControlOptions extends StObject {
   
-  var mapTypes: js.UndefOr[js.Array[MapType]] = js.native
+  var mapTypes: js.UndefOr[js.Array[MapType]] = js.undefined
   
-  var `type`: js.UndefOr[MapTypeControlType] = js.native
+  var `type`: js.UndefOr[MapTypeControlType] = js.undefined
 }
 object MapTypeControlOptions {
   

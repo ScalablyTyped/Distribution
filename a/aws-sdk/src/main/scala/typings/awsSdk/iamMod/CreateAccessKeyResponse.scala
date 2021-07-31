@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAccessKeyResponse extends StObject {
   
   /**
     * A structure with details about the access key.
     */
-  var AccessKey: typings.awsSdk.iamMod.AccessKey = js.native
+  var AccessKey: typings.awsSdk.iamMod.AccessKey
 }
 object CreateAccessKeyResponse {
   

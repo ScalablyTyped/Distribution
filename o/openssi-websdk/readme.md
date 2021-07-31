@@ -12,7 +12,7 @@ A SDK for issuing and verifying digital credentials through a cloud agent
 | Keywords           | - |
 | # releases         | 13 |
 | # dependents       | 0 |
-| # downloads        | 2594 |
+| # downloads        | 2118 |
 | # stars            | 0 |
 
 ## Links

@@ -5,7 +5,6 @@ import typings.playcanvas.anon.App
 import typings.playcanvas.anon.TypeofScriptType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param app - Application to attach registry to.
   */
 @js.native
-trait ScriptRegistry extends EventHandler {
+trait ScriptRegistry
+  extends StObject
+     with EventHandler {
   
   /**
     * Add {@link pc.ScriptType} to registry.
@@ -28,7 +29,7 @@ trait ScriptRegistry extends EventHandler {
     * @param script - Script Type that is created using {@link pc.createScript}.
     * @returns True if added for the first time or false if script already exists.
     */
-  def add(script: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
+  def add(script: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   
   /**
     * Get {@link pc.ScriptType} by name.
@@ -37,9 +38,9 @@ trait ScriptRegistry extends EventHandler {
     * @param name - Name of a {@link pc.ScriptType}.
     * @returns The Script Type if it exists in the registry or null otherwise.
     */
-  def get(name: String): TypeofScriptType with (Instantiable1[/* args */ App, ScriptType]) = js.native
+  def get(name: String): TypeofScriptType & (Instantiable1[/* args */ App, ScriptType]) = js.native
   
-  def has(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
+  def has(nameOrType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Check if a {@link pc.ScriptType} with the specified name is in the registry.
     * @example
@@ -60,9 +61,9 @@ trait ScriptRegistry extends EventHandler {
     * }));
     * @returns list of all {@link pc.ScriptType}s in registry.
     */
-  def list(): js.Array[TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])] = js.native
+  def list(): js.Array[TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])] = js.native
   
-  def remove(nameOrType: TypeofScriptType with (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
+  def remove(nameOrType: TypeofScriptType & (Instantiable1[/* args */ App, ScriptType])): Boolean = js.native
   /**
     * Remove {@link pc.ScriptType}.
     * @example

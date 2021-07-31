@@ -2,19 +2,17 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisteredCountryRecord extends StObject {
   
-  val geoname_id: Double = js.native
+  val geoname_id: Double
   
-  val is_in_european_union: js.UndefOr[Boolean] = js.native
+  val is_in_european_union: js.UndefOr[Boolean] = js.undefined
   
-  val iso_code: String = js.native
+  val iso_code: String
   
-  val names: Names = js.native
+  val names: Names
 }
 object RegisteredCountryRecord {
   

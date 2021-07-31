@@ -2,25 +2,23 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapSchedulerAppointmentDragInfo extends StObject {
   
-  val appointmentId: String = js.native
+  val appointmentId: String
   
-  val instance: js.Any = js.native
+  val instance: js.Any
   
-  val newInterval: BootstrapTimeInterval | Null = js.native
+  val newInterval: BootstrapTimeInterval | Null
   
-  val oldInterval: BootstrapTimeInterval | Null = js.native
+  val oldInterval: BootstrapTimeInterval | Null
 }
 object BootstrapSchedulerAppointmentDragInfo {
   
   @scala.inline
   def apply(appointmentId: String, instance: js.Any): BootstrapSchedulerAppointmentDragInfo = {
-    val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(appointmentId = appointmentId.asInstanceOf[js.Any], instance = instance.asInstanceOf[js.Any], newInterval = null, oldInterval = null)
     __obj.asInstanceOf[BootstrapSchedulerAppointmentDragInfo]
   }
   

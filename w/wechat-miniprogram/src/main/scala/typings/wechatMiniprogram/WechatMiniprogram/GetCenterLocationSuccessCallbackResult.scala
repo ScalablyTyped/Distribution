@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCenterLocationSuccessCallbackResult extends StObject {
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 纬度 */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** 经度 */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object GetCenterLocationSuccessCallbackResult {
   

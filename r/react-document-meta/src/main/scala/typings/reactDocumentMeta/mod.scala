@@ -3,7 +3,6 @@ package typings.reactDocumentMeta
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,14 +14,13 @@ object mod {
   
   type DocumentMeta = Component[DocumentMetaProps, js.Object, js.Any]
   
-  @js.native
   trait DocumentMetaProps extends StObject {
     
-    val canonical: js.UndefOr[String] = js.native
+    val canonical: js.UndefOr[String] = js.undefined
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
   }
   object DocumentMetaProps {
     

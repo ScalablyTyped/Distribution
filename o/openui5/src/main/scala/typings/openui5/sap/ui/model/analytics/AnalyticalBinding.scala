@@ -7,11 +7,12 @@ import typings.openui5.sap.ui.model.TreeBinding
 import typings.openui5.sap.ui.model.analytics.odata4analytics.QueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait AnalyticalBinding extends TreeBinding {
+trait AnalyticalBinding
+  extends StObject
+     with TreeBinding {
   
   /**
     * Sets filters for matching only a subset of the entities in the bound OData entity set.Invoking this
@@ -67,7 +68,7 @@ trait AnalyticalBinding extends TreeBinding {
     * Gets the names of the filterable properties in the bound OData entity set.
     * @returns names of properties that can be filtered.
     */
-  def getFilterablePropertyNames(): js.Array[_] = js.native
+  def getFilterablePropertyNames(): js.Array[js.Any] = js.native
   
   /**
     * Gets a printable name for a group.The printable name follows the pattern is
@@ -130,7 +131,7 @@ trait AnalyticalBinding extends TreeBinding {
     * an OData request is           pending to fetch them. In this case, if the parameter
     * numberOfExpandedLevels > 0, the array will be completely empty.
     */
-  def getNodeContexts(mParameters: js.Any): js.Array[_] = js.native
+  def getNodeContexts(mParameters: js.Any): js.Array[js.Any] = js.native
   
   /**
     * Gets the metadata of a property with a given name.
@@ -177,13 +178,13 @@ trait AnalyticalBinding extends TreeBinding {
     * an empty array if an OData request is pending to fetch requested contexts that are not yet locally
     * available.
     */
-  def getRootContexts(mParameters: js.Any): js.Array[_] = js.native
+  def getRootContexts(mParameters: js.Any): js.Array[js.Any] = js.native
   
   /**
     * Gets the names of the sortable properties in the bound OData entity set.
     * @returns names of properties that can be used for sorting the result entities.
     */
-  def getSortablePropertyNames(): js.Array[_] = js.native
+  def getSortablePropertyNames(): js.Array[js.Any] = js.native
   
   /**
     * Gets the total number of entities in the bound OData entity set.Counting takes place at the lowest
@@ -251,5 +252,5 @@ trait AnalyticalBinding extends TreeBinding {
     * @param aColumns an array with objects holding the analytical information for every column, from left
     * to right.
     */
-  def updateAnalyticalInfo(aColumns: js.Array[_]): Unit = js.native
+  def updateAnalyticalInfo(aColumns: js.Array[js.Any]): Unit = js.native
 }

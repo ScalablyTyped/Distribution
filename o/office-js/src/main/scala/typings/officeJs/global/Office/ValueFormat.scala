@@ -2,7 +2,6 @@ package typings.officeJs.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,9 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ValueFormat extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJs.Office.ValueFormat with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJs.Office.ValueFormat & Double] = js.native
   
-  /* 1 */ val Formatted: typings.officeJs.Office.ValueFormat.Formatted with Double = js.native
+  /* 1 */ val Formatted: typings.officeJs.Office.ValueFormat.Formatted & Double = js.native
   
-  /* 0 */ val Unformatted: typings.officeJs.Office.ValueFormat.Unformatted with Double = js.native
+  /* 0 */ val Unformatted: typings.officeJs.Office.ValueFormat.Unformatted & Double = js.native
 }

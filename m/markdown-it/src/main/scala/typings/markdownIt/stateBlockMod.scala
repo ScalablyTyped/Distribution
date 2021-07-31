@@ -5,15 +5,176 @@ import typings.markdownIt.libMod.MarkdownIt
 import typings.markdownIt.tokenMod.Nesting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateBlockMod {
   
   @JSImport("markdown-it/lib/rules_block/state_block", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StateBlock {
+  class ^ protected ()
+    extends StObject
+       with StateBlock {
     def this(src: String, md: MarkdownIt, env: js.Any, tokens: js.Array[typings.markdownIt.tokenMod.^]) = this()
+    
+    /* CompleteClass */
+    var Token: Instantiable3[
+        /* type */ String, 
+        /* tag */ String, 
+        /* nesting */ Nesting, 
+        typings.markdownIt.tokenMod.^
+      ] = js.native
+    
+    /**
+      * line begin offsets for fast jumps
+      */
+    /* CompleteClass */
+    var bMarks: js.Array[Double] = js.native
+    
+    // block parser variables
+    /**
+      * required block content indent (for example, if we are
+      * inside a list, it would be positioned after list marker)
+      */
+    /* CompleteClass */
+    var blkIndent: Double = js.native
+    
+    /**
+      * An amount of virtual spaces (tabs expanded) between beginning
+      * of each line (bMarks) and real beginning of that line.
+      *
+      * It exists only as a hack because blockquotes override bMarks
+      * losing information in the process.
+      *
+      * It's used only when expanding tabs, you can think about it as
+      * an initial tab length, e.g. bsCount=21 applied to string `\t123`
+      * means first tab should be expanded to 4-21%4 === 3 spaces.
+      */
+    /* CompleteClass */
+    var bsCount: js.Array[Double] = js.native
+    
+    /**
+      * indent of the current dd block (-1 if there isn't any)
+      */
+    /* CompleteClass */
+    var ddIndent: Double = js.native
+    
+    /**
+      * line end offsets for fast jumps
+      */
+    /* CompleteClass */
+    var eMarks: js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    var env: js.Any = js.native
+    
+    /**
+      * cut lines range from source.
+      */
+    /* CompleteClass */
+    override def getLines(begin: Double, end: Double, indent: Double, keepLastLF: Boolean): String = js.native
+    
+    /* CompleteClass */
+    override def isEmpty(line: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    var level: Double = js.native
+    
+    /**
+      * line index in src
+      */
+    /* CompleteClass */
+    var line: Double = js.native
+    
+    /**
+      * lines count
+      */
+    /* CompleteClass */
+    var lineMax: Double = js.native
+    
+    /**
+      * indent of the current list block (-1 if there isn't any)
+      */
+    /* CompleteClass */
+    var listIndent: Double = js.native
+    
+    /**
+      * link to parser instance
+      */
+    /* CompleteClass */
+    var md: MarkdownIt = js.native
+    
+    /**
+      * can be 'blockquote', 'list', 'root', 'paragraph' or 'reference'
+      * used in lists to determine if they interrupt a paragraph
+      */
+    /* CompleteClass */
+    var parentType: ParentType = js.native
+    
+    /**
+      * Push new token to "stream".
+      */
+    /* CompleteClass */
+    override def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^ = js.native
+    
+    /**
+      * renderer
+      */
+    /* CompleteClass */
+    var result: String = js.native
+    
+    /**
+      * indents for each line (tabs expanded)
+      */
+    /* CompleteClass */
+    var sCount: js.Array[Double] = js.native
+    
+    /**
+      * Skip char codes from given position
+      */
+    /* CompleteClass */
+    override def skipChars(pos: Double, code: Double): Double = js.native
+    
+    /**
+      * Skip char codes reverse from given position - 1
+      */
+    /* CompleteClass */
+    override def skipCharsBack(pos: Double, code: Double, min: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def skipEmptyLines(from: Double): Double = js.native
+    
+    /**
+      * Skip spaces from given position.
+      */
+    /* CompleteClass */
+    override def skipSpaces(pos: Double): Double = js.native
+    
+    /**
+      * Skip spaces from given position in reverse.
+      */
+    /* CompleteClass */
+    override def skipSpacesBack(pos: Double, min: Double): Double = js.native
+    
+    /* CompleteClass */
+    var src: String = js.native
+    
+    /**
+      * offsets of the first non-space characters (tabs not expanded)
+      */
+    /* CompleteClass */
+    var tShift: js.Array[Double] = js.native
+    
+    /**
+      * loose/tight mode for lists
+      */
+    /* CompleteClass */
+    var tight: Boolean = js.native
+    
+    //
+    // Internal state vartiables
+    //
+    /* CompleteClass */
+    var tokens: js.Array[typings.markdownIt.tokenMod.^] = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -42,7 +203,6 @@ object stateBlockMod {
     def root: typings.markdownIt.markdownItStrings.root = "root".asInstanceOf[typings.markdownIt.markdownItStrings.root]
   }
   
-  @js.native
   trait StateBlock extends StObject {
     
     var Token: Instantiable3[
@@ -50,19 +210,19 @@ object stateBlockMod {
         /* tag */ String, 
         /* nesting */ Nesting, 
         typings.markdownIt.tokenMod.^
-      ] = js.native
+      ]
     
     /**
       * line begin offsets for fast jumps
       */
-    var bMarks: js.Array[Double] = js.native
+    var bMarks: js.Array[Double]
     
     // block parser variables
     /**
       * required block content indent (for example, if we are
       * inside a list, it would be positioned after list marker)
       */
-    var blkIndent: Double = js.native
+    var blkIndent: Double
     
     /**
       * An amount of virtual spaces (tabs expanded) between beginning
@@ -75,108 +235,108 @@ object stateBlockMod {
       * an initial tab length, e.g. bsCount=21 applied to string `\t123`
       * means first tab should be expanded to 4-21%4 === 3 spaces.
       */
-    var bsCount: js.Array[Double] = js.native
+    var bsCount: js.Array[Double]
     
     /**
       * indent of the current dd block (-1 if there isn't any)
       */
-    var ddIndent: Double = js.native
+    var ddIndent: Double
     
     /**
       * line end offsets for fast jumps
       */
-    var eMarks: js.Array[Double] = js.native
+    var eMarks: js.Array[Double]
     
-    var env: js.Any = js.native
+    var env: js.Any
     
     /**
       * cut lines range from source.
       */
-    def getLines(begin: Double, end: Double, indent: Double, keepLastLF: Boolean): String = js.native
+    def getLines(begin: Double, end: Double, indent: Double, keepLastLF: Boolean): String
     
-    def isEmpty(line: Double): Boolean = js.native
+    def isEmpty(line: Double): Boolean
     
-    var level: Double = js.native
+    var level: Double
     
     /**
       * line index in src
       */
-    var line: Double = js.native
+    var line: Double
     
     /**
       * lines count
       */
-    var lineMax: Double = js.native
+    var lineMax: Double
     
     /**
       * indent of the current list block (-1 if there isn't any)
       */
-    var listIndent: Double = js.native
+    var listIndent: Double
     
     /**
       * link to parser instance
       */
-    var md: MarkdownIt = js.native
+    var md: MarkdownIt
     
     /**
       * can be 'blockquote', 'list', 'root', 'paragraph' or 'reference'
       * used in lists to determine if they interrupt a paragraph
       */
-    var parentType: ParentType = js.native
+    var parentType: ParentType
     
     /**
       * Push new token to "stream".
       */
-    def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^ = js.native
+    def push(`type`: String, tag: String, nesting: Nesting): typings.markdownIt.tokenMod.^
     
     /**
       * renderer
       */
-    var result: String = js.native
+    var result: String
     
     /**
       * indents for each line (tabs expanded)
       */
-    var sCount: js.Array[Double] = js.native
+    var sCount: js.Array[Double]
     
     /**
       * Skip char codes from given position
       */
-    def skipChars(pos: Double, code: Double): Double = js.native
+    def skipChars(pos: Double, code: Double): Double
     
     /**
       * Skip char codes reverse from given position - 1
       */
-    def skipCharsBack(pos: Double, code: Double, min: Double): Double = js.native
+    def skipCharsBack(pos: Double, code: Double, min: Double): Double
     
-    def skipEmptyLines(from: Double): Double = js.native
+    def skipEmptyLines(from: Double): Double
     
     /**
       * Skip spaces from given position.
       */
-    def skipSpaces(pos: Double): Double = js.native
+    def skipSpaces(pos: Double): Double
     
     /**
       * Skip spaces from given position in reverse.
       */
-    def skipSpacesBack(pos: Double, min: Double): Double = js.native
+    def skipSpacesBack(pos: Double, min: Double): Double
     
-    var src: String = js.native
+    var src: String
     
     /**
       * offsets of the first non-space characters (tabs not expanded)
       */
-    var tShift: js.Array[Double] = js.native
+    var tShift: js.Array[Double]
     
     /**
       * loose/tight mode for lists
       */
-    var tight: Boolean = js.native
+    var tight: Boolean
     
     //
     // Internal state vartiables
     //
-    var tokens: js.Array[typings.markdownIt.tokenMod.^] = js.native
+    var tokens: js.Array[typings.markdownIt.tokenMod.^]
   }
   object StateBlock {
     

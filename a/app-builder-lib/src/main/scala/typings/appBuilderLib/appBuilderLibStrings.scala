@@ -10,23 +10,28 @@ import typings.appBuilderLib.platformPackagerMod.IconFormat
 import typings.appBuilderLib.winOptionsMod.RequestedExecutionLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appBuilderLibStrings {
   
   @js.native
-  sealed trait `3rd Party Mac Developer Application` extends CertType
+  sealed trait `3rd Party Mac Developer Application`
+    extends StObject
+       with CertType
   @scala.inline
   def `3rd Party Mac Developer Application`: `3rd Party Mac Developer Application` = ("3rd Party Mac Developer Application").asInstanceOf[`3rd Party Mac Developer Application`]
   
   @js.native
-  sealed trait `3rd Party Mac Developer Installer` extends CertType
+  sealed trait `3rd Party Mac Developer Installer`
+    extends StObject
+       with CertType
   @scala.inline
   def `3rd Party Mac Developer Installer`: `3rd Party Mac Developer Installer` = ("3rd Party Mac Developer Installer").asInstanceOf[`3rd Party Mac Developer Installer`]
   
   @js.native
-  sealed trait `7z` extends MacOsTargetName
+  sealed trait `7z`
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def `7z`: `7z` = "7z".asInstanceOf[`7z`]
   
@@ -46,12 +51,16 @@ object appBuilderLibStrings {
   def Deflate: Deflate = "Deflate".asInstanceOf[Deflate]
   
   @js.native
-  sealed trait `Developer ID Application` extends CertType
+  sealed trait `Developer ID Application`
+    extends StObject
+       with CertType
   @scala.inline
   def `Developer ID Application`: `Developer ID Application` = ("Developer ID Application").asInstanceOf[`Developer ID Application`]
   
   @js.native
-  sealed trait `Developer ID Installer` extends CertType
+  sealed trait `Developer ID Installer`
+    extends StObject
+       with CertType
   @scala.inline
   def `Developer ID Installer`: `Developer ID Installer` = ("Developer ID Installer").asInstanceOf[`Developer ID Installer`]
   
@@ -66,7 +75,9 @@ object appBuilderLibStrings {
   def LZMA: LZMA = "LZMA".asInstanceOf[LZMA]
   
   @js.native
-  sealed trait `Mac Developer` extends CertType
+  sealed trait `Mac Developer`
+    extends StObject
+       with CertType
   @scala.inline
   def `Mac Developer`: `Mac Developer` = ("Mac Developer").asInstanceOf[`Mac Developer`]
   
@@ -126,7 +137,9 @@ object appBuilderLibStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait asInvoker extends RequestedExecutionLevel
+  sealed trait asInvoker
+    extends StObject
+       with RequestedExecutionLevel
   @scala.inline
   def asInvoker: asInvoker = "asInvoker".asInstanceOf[asInvoker]
   
@@ -136,17 +149,23 @@ object appBuilderLibStrings {
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait bottom extends BackgroundAlignment
+  sealed trait bottom
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomleft extends BackgroundAlignment
+  sealed trait bottomleft
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def bottomleft: bottomleft = "bottomleft".asInstanceOf[bottomleft]
   
   @js.native
-  sealed trait bottomright extends BackgroundAlignment
+  sealed trait bottomright
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def bottomright: bottomright = "bottomright".asInstanceOf[bottomright]
   
@@ -156,7 +175,9 @@ object appBuilderLibStrings {
   def bzip2: bzip2 = "bzip2".asInstanceOf[bzip2]
   
   @js.native
-  sealed trait center extends BackgroundAlignment
+  sealed trait center
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -166,12 +187,16 @@ object appBuilderLibStrings {
   def classic: classic = "classic".asInstanceOf[classic]
   
   @js.native
-  sealed trait darwin extends ElectronPlatformName
+  sealed trait darwin
+    extends StObject
+       with ElectronPlatformName
   @scala.inline
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait default_ extends MacOsTargetName
+  sealed trait default_
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def default_ : default_ = "default".asInstanceOf[default_]
   
@@ -191,7 +216,9 @@ object appBuilderLibStrings {
   def devmode: devmode = "devmode".asInstanceOf[devmode]
   
   @js.native
-  sealed trait dir extends MacOsTargetName
+  sealed trait dir
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   
@@ -201,7 +228,9 @@ object appBuilderLibStrings {
   def distribution: distribution = "distribution".asInstanceOf[distribution]
   
   @js.native
-  sealed trait dmg extends MacOsTargetName
+  sealed trait dmg
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def dmg: dmg = "dmg".asInstanceOf[dmg]
   
@@ -231,22 +260,30 @@ object appBuilderLibStrings {
   def highest: highest = "highest".asInstanceOf[highest]
   
   @js.native
-  sealed trait highestAvailable extends RequestedExecutionLevel
+  sealed trait highestAvailable
+    extends StObject
+       with RequestedExecutionLevel
   @scala.inline
   def highestAvailable: highestAvailable = "highestAvailable".asInstanceOf[highestAvailable]
   
   @js.native
-  sealed trait icns extends IconFormat
+  sealed trait icns
+    extends StObject
+       with IconFormat
   @scala.inline
   def icns: icns = "icns".asInstanceOf[icns]
   
   @js.native
-  sealed trait ico extends IconFormat
+  sealed trait ico
+    extends StObject
+       with IconFormat
   @scala.inline
   def ico: ico = "ico".asInstanceOf[ico]
   
   @js.native
-  sealed trait left extends BackgroundAlignment
+  sealed trait left
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -256,54 +293,73 @@ object appBuilderLibStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait linux extends ElectronPlatformName
+  sealed trait linux
+    extends StObject
+       with ElectronPlatformName
   @scala.inline
   def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
   sealed trait mas
-    extends ElectronPlatformName
+    extends StObject
+       with ElectronPlatformName
        with MacOsTargetName
   @scala.inline
   def mas: mas = "mas".asInstanceOf[mas]
   
   @js.native
-  sealed trait `mas-dev` extends MacOsTargetName
+  sealed trait `mas-dev`
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def `mas-dev`: `mas-dev` = "mas-dev".asInstanceOf[`mas-dev`]
   
   @js.native
-  sealed trait maximum extends CompressionLevel
+  sealed trait maximum
+    extends StObject
+       with CompressionLevel
   @scala.inline
   def maximum: maximum = "maximum".asInstanceOf[maximum]
   
   @js.native
-  sealed trait none_ extends BackgroundScaling
+  sealed trait none_
+    extends StObject
+       with BackgroundScaling
   @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
   
   @js.native
-  sealed trait normal extends CompressionLevel
+  sealed trait normal
+    extends StObject
+       with CompressionLevel
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait pkg extends MacOsTargetName
+  sealed trait pkg
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def pkg: pkg = "pkg".asInstanceOf[pkg]
   
   @js.native
-  sealed trait proportional extends BackgroundScaling
+  sealed trait proportional
+    extends StObject
+       with BackgroundScaling
   @scala.inline
   def proportional: proportional = "proportional".asInstanceOf[proportional]
   
   @js.native
-  sealed trait requireAdministrator extends RequestedExecutionLevel
+  sealed trait requireAdministrator
+    extends StObject
+       with RequestedExecutionLevel
   @scala.inline
   def requireAdministrator: requireAdministrator = "requireAdministrator".asInstanceOf[requireAdministrator]
   
   @js.native
-  sealed trait right extends BackgroundAlignment
+  sealed trait right
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -313,7 +369,9 @@ object appBuilderLibStrings {
   def running: running = "running".asInstanceOf[running]
   
   @js.native
-  sealed trait set extends IconFormat
+  sealed trait set
+    extends StObject
+       with IconFormat
   @scala.inline
   def set: set = "set".asInstanceOf[set]
   
@@ -338,7 +396,9 @@ object appBuilderLibStrings {
   def stopped: stopped = "stopped".asInstanceOf[stopped]
   
   @js.native
-  sealed trait store extends CompressionLevel
+  sealed trait store
+    extends StObject
+       with CompressionLevel
   @scala.inline
   def store: store = "store".asInstanceOf[store]
   
@@ -353,42 +413,58 @@ object appBuilderLibStrings {
   def suspended: suspended = "suspended".asInstanceOf[suspended]
   
   @js.native
-  sealed trait tarDotbz2 extends MacOsTargetName
+  sealed trait tarDotbz2
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def tarDotbz2: tarDotbz2 = "tar.bz2".asInstanceOf[tarDotbz2]
   
   @js.native
-  sealed trait tarDotgz extends MacOsTargetName
+  sealed trait tarDotgz
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def tarDotgz: tarDotgz = "tar.gz".asInstanceOf[tarDotgz]
   
   @js.native
-  sealed trait tarDotlz extends MacOsTargetName
+  sealed trait tarDotlz
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def tarDotlz: tarDotlz = "tar.lz".asInstanceOf[tarDotlz]
   
   @js.native
-  sealed trait tarDotxz extends MacOsTargetName
+  sealed trait tarDotxz
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def tarDotxz: tarDotxz = "tar.xz".asInstanceOf[tarDotxz]
   
   @js.native
-  sealed trait tofit extends BackgroundScaling
+  sealed trait tofit
+    extends StObject
+       with BackgroundScaling
   @scala.inline
   def tofit: tofit = "tofit".asInstanceOf[tofit]
   
   @js.native
-  sealed trait top extends BackgroundAlignment
+  sealed trait top
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topleft extends BackgroundAlignment
+  sealed trait topleft
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def topleft: topleft = "topleft".asInstanceOf[topleft]
   
   @js.native
-  sealed trait topright extends BackgroundAlignment
+  sealed trait topright
+    extends StObject
+       with BackgroundAlignment
   @scala.inline
   def topright: topright = "topright".asInstanceOf[topright]
   
@@ -418,7 +494,9 @@ object appBuilderLibStrings {
   def `win-10`: `win-10` = "win-10".asInstanceOf[`win-10`]
   
   @js.native
-  sealed trait win32 extends ElectronPlatformName
+  sealed trait win32
+    extends StObject
+       with ElectronPlatformName
   @scala.inline
   def win32: win32 = "win32".asInstanceOf[win32]
   
@@ -428,7 +506,9 @@ object appBuilderLibStrings {
   def xz: xz = "xz".asInstanceOf[xz]
   
   @js.native
-  sealed trait zip extends MacOsTargetName
+  sealed trait zip
+    extends StObject
+       with MacOsTargetName
   @scala.inline
   def zip: zip = "zip".asInstanceOf[zip]
 }

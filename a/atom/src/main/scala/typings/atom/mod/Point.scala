@@ -3,7 +3,6 @@ package typings.atom.mod
 import typings.atom.anon.ReadonlyPoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Point")
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Construct a Point object */
 class Point () extends StObject {
   def this(row: Double) = this()
-  def this(row: js.UndefOr[scala.Nothing], column: Double) = this()
   def this(row: Double, column: Double) = this()
+  def this(row: Unit, column: Double) = this()
   
   /** A zero-indexed number representing the column of the Point. */
   var column: Double = js.native
@@ -84,21 +83,22 @@ class Point () extends StObject {
 /* static members */
 object Point {
   
+  @JSImport("atom", "Point")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Construction
   /**
     *  Create a Point from an array containing two numbers representing the
     *  row and column.
     */
-  @JSImport("atom", "Point.fromObject")
-  @js.native
-  def fromObject(`object`: PointCompatible): Point = js.native
-  @JSImport("atom", "Point.fromObject")
-  @js.native
-  def fromObject(`object`: PointCompatible, copy: Boolean): Point = js.native
+  @scala.inline
+  def fromObject(`object`: PointCompatible): Point = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Point]
+  @scala.inline
+  def fromObject(`object`: PointCompatible, copy: Boolean): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Point]
   
   // Comparison
   /** Returns the given Point that is earlier in the buffer. */
-  @JSImport("atom", "Point.min")
-  @js.native
-  def min(point1: PointCompatible, point2: PointCompatible): Point = js.native
+  @scala.inline
+  def min(point1: PointCompatible, point2: PointCompatible): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[Point]
 }

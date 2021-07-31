@@ -15,39 +15,37 @@ import typings.octokitTypes.octokitTypesStrings.sources
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListForOrgEndpoint extends StObject {
   
   /**
     * Can be one of `asc` or `desc`. Default: when using `full_name`: `asc`, otherwise `desc`
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Can be one of `created`, `updated`, `pushed`, `full_name`.
     */
-  var sort: js.UndefOr[created | updated | pushed | full_name] = js.native
+  var sort: js.UndefOr[created | updated | pushed | full_name] = js.undefined
   
   /**
     * Specifies the types of repositories you want returned. Can be one of `all`, `public`, `private`, `forks`, `sources`, `member`, `internal`. Default: `all`. If your organization is associated with an enterprise account using GitHub Enterprise Cloud or GitHub Enterprise Server 2.20+, `type` can also be `internal`.
     */
-  var `type`: js.UndefOr[all | public | `private` | forks | sources | member | internal] = js.native
+  var `type`: js.UndefOr[all | public | `private` | forks | sources | member | internal] = js.undefined
 }
 object ReposListForOrgEndpoint {
   

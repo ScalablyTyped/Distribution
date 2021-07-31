@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines line style settings.
   */
-@js.native
-trait ASPxClientLineStyle extends ASPxClientWebChartElement {
+trait ASPxClientLineStyle
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the dash style used to paint the line.
     */
-  var dashStyle: String = js.native
+  var dashStyle: String
   
   /**
     * Returns the join style for the ends of consecutive lines.
     */
-  var lineJoin: String = js.native
+  var lineJoin: String
   
   /**
     * Gets the thickness that corresponds to the value of the current ASPxClientLineStyle object.
     */
-  var thickness: Double = js.native
+  var thickness: Double
 }
 object ASPxClientLineStyle {
   

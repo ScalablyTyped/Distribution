@@ -10,9 +10,9 @@ simple and useful animated radio button component for React Native
 | ------------------ | :-------------: |
 | Full name          | react-native-simple-radio-button |
 | Keywords           | react-component, react-native, ios, android, form, button, radio-button |
-| # releases         | 3 |
-| # dependents       | 11 |
-| # downloads        | 575361 |
+| # releases         | 2 |
+| # dependents       | 12 |
+| # downloads        | 585097 |
 | # stars            | 2 |
 
 ## Links

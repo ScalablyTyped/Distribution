@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DataValidationPrompt extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait DataValidationPrompt extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var message: String = js.native
+  var message: String
   
   /**
     *
@@ -28,7 +26,7 @@ trait DataValidationPrompt extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showPrompt: Boolean = js.native
+  var showPrompt: Boolean
   
   /**
     *
@@ -36,7 +34,7 @@ trait DataValidationPrompt extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var title: String = js.native
+  var title: String
 }
 object DataValidationPrompt {
   

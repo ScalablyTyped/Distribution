@@ -2,56 +2,54 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectMessageConfiguration extends StObject {
   
   /**
     * The default push notification message for the ADM (Amazon Device Messaging) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
-  var ADMMessage: js.UndefOr[typings.awsSdk.pinpointMod.ADMMessage] = js.native
+  var ADMMessage: js.UndefOr[typings.awsSdk.pinpointMod.ADMMessage] = js.undefined
   
   /**
     * The default push notification message for the APNs (Apple Push Notification service) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
-  var APNSMessage: js.UndefOr[typings.awsSdk.pinpointMod.APNSMessage] = js.native
+  var APNSMessage: js.UndefOr[typings.awsSdk.pinpointMod.APNSMessage] = js.undefined
   
   /**
     * The default push notification message for the Baidu (Baidu Cloud Push) channel. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
-  var BaiduMessage: js.UndefOr[typings.awsSdk.pinpointMod.BaiduMessage] = js.native
+  var BaiduMessage: js.UndefOr[typings.awsSdk.pinpointMod.BaiduMessage] = js.undefined
   
   /**
     * The default message for all channels.
     */
-  var DefaultMessage: js.UndefOr[typings.awsSdk.pinpointMod.DefaultMessage] = js.native
+  var DefaultMessage: js.UndefOr[typings.awsSdk.pinpointMod.DefaultMessage] = js.undefined
   
   /**
     * The default push notification message for all push notification channels.
     */
-  var DefaultPushNotificationMessage: js.UndefOr[typings.awsSdk.pinpointMod.DefaultPushNotificationMessage] = js.native
+  var DefaultPushNotificationMessage: js.UndefOr[typings.awsSdk.pinpointMod.DefaultPushNotificationMessage] = js.undefined
   
   /**
     * The default message for the email channel. This message overrides the default message (DefaultMessage).
     */
-  var EmailMessage: js.UndefOr[typings.awsSdk.pinpointMod.EmailMessage] = js.native
+  var EmailMessage: js.UndefOr[typings.awsSdk.pinpointMod.EmailMessage] = js.undefined
   
   /**
     * The default push notification message for the GCM channel, which is used to send notifications through the Firebase Cloud Messaging (FCM), formerly Google Cloud Messaging (GCM), service. This message overrides the default push notification message (DefaultPushNotificationMessage).
     */
-  var GCMMessage: js.UndefOr[typings.awsSdk.pinpointMod.GCMMessage] = js.native
+  var GCMMessage: js.UndefOr[typings.awsSdk.pinpointMod.GCMMessage] = js.undefined
   
   /**
     * The default message for the SMS channel. This message overrides the default message (DefaultMessage).
     */
-  var SMSMessage: js.UndefOr[typings.awsSdk.pinpointMod.SMSMessage] = js.native
+  var SMSMessage: js.UndefOr[typings.awsSdk.pinpointMod.SMSMessage] = js.undefined
   
   /**
     * The default message for the voice channel. This message overrides the default message (DefaultMessage).
     */
-  var VoiceMessage: js.UndefOr[typings.awsSdk.pinpointMod.VoiceMessage] = js.native
+  var VoiceMessage: js.UndefOr[typings.awsSdk.pinpointMod.VoiceMessage] = js.undefined
 }
 object DirectMessageConfiguration {
   

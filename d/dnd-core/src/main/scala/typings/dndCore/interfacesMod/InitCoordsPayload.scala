@@ -2,21 +2,19 @@ package typings.dndCore.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitCoordsPayload extends StObject {
   
-  var clientOffset: XYCoord | Null = js.native
+  var clientOffset: XYCoord | Null
   
-  var sourceClientOffset: XYCoord | Null = js.native
+  var sourceClientOffset: XYCoord | Null
 }
 object InitCoordsPayload {
   
   @scala.inline
   def apply(): InitCoordsPayload = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(clientOffset = null, sourceClientOffset = null)
     __obj.asInstanceOf[InitCoordsPayload]
   }
   

@@ -2,21 +2,21 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsZipAllMod {
   
-  @JSImport("rxjs/operators/zipAll", "zipAll")
+  @JSImport("rxjs/operators/zipAll", JSImport.Namespace)
   @js.native
-  def zipAll[T](): js.Any = js.native
-  @JSImport("rxjs/operators/zipAll", "zipAll")
-  @js.native
-  def zipAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = js.native
-  @JSImport("rxjs/operators/zipAll", "zipAll")
-  @js.native
-  def zipAll_TR[T, R](): js.Any = js.native
-  @JSImport("rxjs/operators/zipAll", "zipAll")
-  @js.native
-  def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def zipAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[js.Any]
+  @scala.inline
+  def zipAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def zipAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")().asInstanceOf[js.Any]
+  @scala.inline
+  def zipAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("zipAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

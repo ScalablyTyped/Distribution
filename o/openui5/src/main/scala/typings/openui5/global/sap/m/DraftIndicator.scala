@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.DraftIndicator")
 @js.native
 abstract class DraftIndicator protected ()
-  extends typings.openui5.sap.m.DraftIndicator {
+  extends StObject
+     with typings.openui5.sap.m.DraftIndicator {
   /**
     * Constructor for a new DraftIndicator.Accepts an object literal <code>mSettings</code> that defines
     * initialproperty values, aggregated and associated objects as well as event handlers.See {@link

@@ -10,47 +10,45 @@ import typings.javascriptTimeAgo.styleMod.FormatStyle
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("javascript-time-ago", JSImport.Namespace)
   @js.native
-  class ^ () extends TimeAgo {
+  class ^ ()
+    extends StObject
+       with TimeAgo {
     def this(locales: String) = this()
     def this(locales: js.Array[String]) = this()
   }
+  @JSImport("javascript-time-ago", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("javascript-time-ago", "addLocale")
-  @js.native
-  def addLocale(localeData: Locale): Unit = js.native
+  @scala.inline
+  def addLocale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addLocale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("javascript-time-ago", "getDefaultLocale")
-  @js.native
-  def getDefaultLocale(): String = js.native
+  @scala.inline
+  def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
   
   /* static member */
-  @JSImport("javascript-time-ago", "intlDateTimeFormatSupported")
-  @js.native
-  def intlDateTimeFormatSupported(): Boolean = js.native
+  @scala.inline
+  def intlDateTimeFormatSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupported")().asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("javascript-time-ago", "intlDateTimeFormatSupportedLocale")
-  @js.native
-  def intlDateTimeFormatSupportedLocale(locale: String): String | Unit = js.native
+  @scala.inline
+  def intlDateTimeFormatSupportedLocale(locale: String): String | Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("intlDateTimeFormatSupportedLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[String | Unit]
   
   /* static member */
-  @JSImport("javascript-time-ago", "locale")
-  @js.native
-  def locale(localeData: Locale): Unit = js.native
+  @scala.inline
+  def locale(localeData: Locale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(localeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("javascript-time-ago", "setDefaultLocale")
-  @js.native
-  def setDefaultLocale(locale: String): Unit = js.native
+  @scala.inline
+  def setDefaultLocale(locale: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(locale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   trait TimeAgo extends StObject {

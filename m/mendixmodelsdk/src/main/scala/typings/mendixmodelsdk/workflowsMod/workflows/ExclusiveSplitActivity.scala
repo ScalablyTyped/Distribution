@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,9 +72,8 @@ object ExclusiveSplitActivity {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.ExclusiveSplitActivity.create")
-  @js.native
-  def create(model: IModel): ExclusiveSplitActivity = js.native
+  @scala.inline
+  def create(model: IModel): ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExclusiveSplitActivity]
   
   /**
     * Creates and returns a new ExclusiveSplitActivity instance in the SDK and on the server.
@@ -86,9 +84,8 @@ object ExclusiveSplitActivity {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.ExclusiveSplitActivity.createIn")
-  @js.native
-  def createIn(container: Flow): ExclusiveSplitActivity = js.native
+  @scala.inline
+  def createIn(container: Flow): ExclusiveSplitActivity = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExclusiveSplitActivity]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.ExclusiveSplitActivity.structureTypeName")

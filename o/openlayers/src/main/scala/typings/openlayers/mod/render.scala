@@ -11,10 +11,13 @@ import typings.openlayers.mod.style.Style
 import typings.std.CanvasRenderingContext2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object render {
+  
+  @JSImport("openlayers", "render")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @param type Type.
@@ -36,24 +39,24 @@ object render {
       */
     def this(`type`: EventType) = this()
     def this(`type`: EventType, opt_vectorContext: VectorContext) = this()
-    def this(`type`: EventType, opt_vectorContext: js.UndefOr[scala.Nothing], opt_frameState: FrameState) = this()
+    def this(`type`: EventType, opt_vectorContext: Unit, opt_frameState: FrameState) = this()
     def this(`type`: EventType, opt_vectorContext: VectorContext, opt_frameState: FrameState) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
-      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
+      opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
       opt_frameState: FrameState,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
-      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D
     ) = this()
     def this(
@@ -64,51 +67,51 @@ object render {
     ) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
-      opt_frameState: js.UndefOr[scala.Nothing],
-      opt_context: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
+      opt_frameState: Unit,
+      opt_context: Unit,
       opt_glContext: js.Any
     ) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
-      opt_frameState: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
+      opt_frameState: Unit,
       opt_context: CanvasRenderingContext2D,
       opt_glContext: js.Any
     ) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
       opt_frameState: FrameState,
-      opt_context: js.UndefOr[scala.Nothing],
+      opt_context: Unit,
       opt_glContext: js.Any
     ) = this()
     def this(
       `type`: EventType,
-      opt_vectorContext: js.UndefOr[scala.Nothing],
+      opt_vectorContext: Unit,
       opt_frameState: FrameState,
-      opt_context: CanvasRenderingContext2D,
-      opt_glContext: js.Any
-    ) = this()
-    def this(
-      `type`: EventType,
-      opt_vectorContext: VectorContext,
-      opt_frameState: js.UndefOr[scala.Nothing],
-      opt_context: js.UndefOr[scala.Nothing],
-      opt_glContext: js.Any
-    ) = this()
-    def this(
-      `type`: EventType,
-      opt_vectorContext: VectorContext,
-      opt_frameState: js.UndefOr[scala.Nothing],
       opt_context: CanvasRenderingContext2D,
       opt_glContext: js.Any
     ) = this()
     def this(
       `type`: EventType,
       opt_vectorContext: VectorContext,
+      opt_frameState: Unit,
+      opt_context: Unit,
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
+      opt_frameState: Unit,
+      opt_context: CanvasRenderingContext2D,
+      opt_glContext: js.Any
+    ) = this()
+    def this(
+      `type`: EventType,
+      opt_vectorContext: VectorContext,
       opt_frameState: FrameState,
-      opt_context: js.UndefOr[scala.Nothing],
+      opt_context: Unit,
       opt_glContext: js.Any
     ) = this()
     def this(
@@ -339,12 +342,10 @@ object render {
     * @return Canvas Immediate.
     * @api
     */
-  @JSImport("openlayers", "render.toContext")
-  @js.native
-  def toContext(context: CanvasRenderingContext2D): Immediate = js.native
-  @JSImport("openlayers", "render.toContext")
-  @js.native
-  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = js.native
+  @scala.inline
+  def toContext(context: CanvasRenderingContext2D): Immediate = ^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any]).asInstanceOf[Immediate]
+  @scala.inline
+  def toContext(context: CanvasRenderingContext2D, opt_options: ToContextOptions): Immediate = (^.asInstanceOf[js.Dynamic].applyDynamic("toContext")(context.asInstanceOf[js.Any], opt_options.asInstanceOf[js.Any])).asInstanceOf[Immediate]
   
   type EventType = String
 }

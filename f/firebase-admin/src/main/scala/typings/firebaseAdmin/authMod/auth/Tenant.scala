@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAdmin.anon.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,38 +26,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * All other settings of a tenant will also be inherited. These will need to be managed
   * from the Cloud Console UI.
   */
-@js.native
 trait Tenant extends StObject {
   
   /**
     * The tenant display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The email sign in provider configuration.
     */
-  var emailSignInConfig: js.UndefOr[Enabled] = js.native
+  var emailSignInConfig: js.UndefOr[Enabled] = js.undefined
   
   /**
     * The multi-factor auth configuration on the current tenant.
     */
-  var multiFactorConfig: js.UndefOr[MultiFactorConfig] = js.native
+  var multiFactorConfig: js.UndefOr[MultiFactorConfig] = js.undefined
   
   /**
     * The tenant identifier.
     */
-  var tenantId: String = js.native
+  var tenantId: String
   
   /**
     * The map containing the test phone number / code pairs for the tenant.
     */
-  var testPhoneNumbers: js.UndefOr[StringDictionary[String]] = js.native
+  var testPhoneNumbers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * @return A JSON-serializable representation of this object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
 }
 object Tenant {
   

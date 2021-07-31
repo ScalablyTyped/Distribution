@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketWebsiteOutput extends StObject {
   
   /**
     * The object key name of the website error document to use for 4XX class errors.
     */
-  var ErrorDocument: js.UndefOr[typings.awsSdk.s3Mod.ErrorDocument] = js.native
+  var ErrorDocument: js.UndefOr[typings.awsSdk.s3Mod.ErrorDocument] = js.undefined
   
   /**
     * The name of the index document for the website (for example index.html).
     */
-  var IndexDocument: js.UndefOr[typings.awsSdk.s3Mod.IndexDocument] = js.native
+  var IndexDocument: js.UndefOr[typings.awsSdk.s3Mod.IndexDocument] = js.undefined
   
   /**
     * Specifies the redirect behavior of all requests to a website endpoint of an Amazon S3 bucket.
     */
-  var RedirectAllRequestsTo: js.UndefOr[typings.awsSdk.s3Mod.RedirectAllRequestsTo] = js.native
+  var RedirectAllRequestsTo: js.UndefOr[typings.awsSdk.s3Mod.RedirectAllRequestsTo] = js.undefined
   
   /**
     * Rules that define when a redirect is applied and the redirect behavior.
     */
-  var RoutingRules: js.UndefOr[typings.awsSdk.s3Mod.RoutingRules] = js.native
+  var RoutingRules: js.UndefOr[typings.awsSdk.s3Mod.RoutingRules] = js.undefined
 }
 object GetBucketWebsiteOutput {
   

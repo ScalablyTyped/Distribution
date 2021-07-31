@@ -2,7 +2,6 @@ package typings.mocha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object msMod {
@@ -13,16 +12,18 @@ object msMod {
     * @see {@link https://mochajs.org/api/module-milliseconds.html}
     * @see {@link https://mochajs.org/api/module-milliseconds.html#~parse}
     */
-  @JSImport("mocha/lib/ms", JSImport.Namespace)
-  @js.native
-  def apply(`val`: String): Double = js.native
+  @scala.inline
+  def apply(`val`: String): Double = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[Double]
   /**
     * Format for `ms`.
     *
     * @see {@link https://mochajs.org/api/module-milliseconds.html}
     * @see {@link https://mochajs.org/api/module-milliseconds.html#~format}
     */
+  @scala.inline
+  def apply(`val`: Double): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("mocha/lib/ms", JSImport.Namespace)
   @js.native
-  def apply(`val`: Double): String = js.native
+  val ^ : js.Any = js.native
 }

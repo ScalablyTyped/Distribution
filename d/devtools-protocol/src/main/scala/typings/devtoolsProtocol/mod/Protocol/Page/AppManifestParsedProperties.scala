@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppManifestParsedProperties extends StObject {
   
   /**
     * Computed scope value
     */
-  var scope: String = js.native
+  var scope: String
 }
 object AppManifestParsedProperties {
   

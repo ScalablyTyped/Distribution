@@ -6,10 +6,13 @@ import typings.firebaseDatabase.referenceMod.Reference
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersUtilMod {
+  
+  @JSImport("@firebase/database/dist/test/helpers/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/database/dist/test/helpers/util", "DATABASE_ADDRESS")
   @js.native
@@ -23,78 +26,58 @@ object helpersUtilMod {
   @js.native
   val TEST_PROJECT: js.Any = js.native
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "buildObjFromKey")
-  @js.native
-  def buildObjFromKey(key: js.Any): js.Object = js.native
+  @scala.inline
+  def buildObjFromKey(key: js.Any): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("buildObjFromKey")(key.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "canCreateExtraConnections")
-  @js.native
-  def canCreateExtraConnections(): Boolean = js.native
+  @scala.inline
+  def canCreateExtraConnections(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("canCreateExtraConnections")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "createTestApp")
-  @js.native
-  def createTestApp(): FirebaseApp = js.native
+  @scala.inline
+  def createTestApp(): FirebaseApp = ^.asInstanceOf[js.Dynamic].applyDynamic("createTestApp")().asInstanceOf[FirebaseApp]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getFreshRepo")
-  @js.native
-  def getFreshRepo(path: js.Any): js.Any = js.native
+  @scala.inline
+  def getFreshRepo(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFreshRepo")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getFreshRepoFromReference")
-  @js.native
-  def getFreshRepoFromReference(ref: js.Any): js.Any = js.native
+  @scala.inline
+  def getFreshRepoFromReference(ref: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFreshRepoFromReference")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getPath")
-  @js.native
-  def getPath(query: Query): String = js.native
+  @scala.inline
+  def getPath(query: Query): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPath")(query.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getQueryValue")
-  @js.native
-  def getQueryValue(query: Query): js.Promise[_] = js.native
+  @scala.inline
+  def getQueryValue(query: Query): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryValue")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRandomNode")
-  @js.native
-  def getRandomNode(): Reference | js.Array[Reference] = js.native
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRandomNode")
-  @js.native
-  def getRandomNode(numNodes: js.Any): Reference | js.Array[Reference] = js.native
+  @scala.inline
+  def getRandomNode(): Reference | js.Array[Reference] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomNode")().asInstanceOf[Reference | js.Array[Reference]]
+  @scala.inline
+  def getRandomNode(numNodes: js.Any): Reference | js.Array[Reference] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomNode")(numNodes.asInstanceOf[js.Any]).asInstanceOf[Reference | js.Array[Reference]]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRootNode")
-  @js.native
-  def getRootNode(): js.Any = js.native
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRootNode")
-  @js.native
-  def getRootNode(i: js.UndefOr[scala.Nothing], ref: String): js.Any = js.native
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRootNode")
-  @js.native
-  def getRootNode(i: Double): js.Any = js.native
-  @JSImport("@firebase/database/dist/test/helpers/util", "getRootNode")
-  @js.native
-  def getRootNode(i: Double, ref: String): js.Any = js.native
+  @scala.inline
+  def getRootNode(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootNode")().asInstanceOf[js.Any]
+  @scala.inline
+  def getRootNode(i: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootNode")(i.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getRootNode(i: Double, ref: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRootNode")(i.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getRootNode(i: Unit, ref: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getRootNode")(i.asInstanceOf[js.Any], ref.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getSnap")
-  @js.native
-  def getSnap(path: js.Any): js.Any = js.native
+  @scala.inline
+  def getSnap(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSnap")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "getVal")
-  @js.native
-  def getVal(path: js.Any): js.Any = js.native
+  @scala.inline
+  def getVal(path: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getVal")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "pause")
-  @js.native
-  def pause(milliseconds: Double): js.Promise[_] = js.native
+  @scala.inline
+  def pause(milliseconds: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "repoInfoForConnectionTest")
-  @js.native
-  def repoInfoForConnectionTest(): RepoInfo = js.native
+  @scala.inline
+  def repoInfoForConnectionTest(): RepoInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("repoInfoForConnectionTest")().asInstanceOf[RepoInfo]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "shuffle")
-  @js.native
-  def shuffle(arr: js.Any): Unit = js.native
-  @JSImport("@firebase/database/dist/test/helpers/util", "shuffle")
-  @js.native
-  def shuffle(arr: js.Any, randFn: js.Function0[Double]): Unit = js.native
+  @scala.inline
+  def shuffle(arr: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def shuffle(arr: js.Any, randFn: js.Function0[Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("shuffle")(arr.asInstanceOf[js.Any], randFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/test/helpers/util", "testRepoInfo")
-  @js.native
-  def testRepoInfo(url: js.Any): RepoInfo = js.native
+  @scala.inline
+  def testRepoInfo(url: js.Any): RepoInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("testRepoInfo")(url.asInstanceOf[js.Any]).asInstanceOf[RepoInfo]
 }

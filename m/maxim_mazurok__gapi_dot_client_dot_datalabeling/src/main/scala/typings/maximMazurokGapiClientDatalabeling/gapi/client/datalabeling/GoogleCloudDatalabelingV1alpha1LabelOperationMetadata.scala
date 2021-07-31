@@ -2,62 +2,60 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1alpha1LabelOperationMetadata extends StObject {
   
   /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
-  var annotatedDataset: js.UndefOr[String] = js.native
+  var annotatedDataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Timestamp when labeling request was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of dataset to be labeled. "projects/∗/datasets/ *" */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /** Details of label image bounding box operation. */
-  var imageBoundingBoxDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageBoundingBoxOperationMetadata] = js.native
+  var imageBoundingBoxDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageBoundingBoxOperationMetadata] = js.undefined
   
   /** Details of label image bounding poly operation. */
-  var imageBoundingPolyDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageBoundingPolyOperationMetadata] = js.native
+  var imageBoundingPolyDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageBoundingPolyOperationMetadata] = js.undefined
   
   /** Details of label image classification operation. */
-  var imageClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageClassificationOperationMetadata] = js.native
+  var imageClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageClassificationOperationMetadata] = js.undefined
   
   /** Details of label image oriented bounding box operation. */
-  var imageOrientedBoundingBoxDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageOrientedBoundingBoxOperationMetadata] = js.native
+  var imageOrientedBoundingBoxDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageOrientedBoundingBoxOperationMetadata] = js.undefined
   
   /** Details of label image polyline operation. */
-  var imagePolylineDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImagePolylineOperationMetadata] = js.native
+  var imagePolylineDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImagePolylineOperationMetadata] = js.undefined
   
   /** Details of label image segmentation operation. */
-  var imageSegmentationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata] = js.native
+  var imageSegmentationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelImageSegmentationOperationMetadata] = js.undefined
   
   /** Output only. Partial failures encountered. E.g. single files that couldn't be read. Status details field will contain standard GCP error details. */
-  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.native
+  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
   
   /** Output only. Progress of label operation. Range: [0, 100]. */
-  var progressPercent: js.UndefOr[Double] = js.native
+  var progressPercent: js.UndefOr[Double] = js.undefined
   
   /** Details of label text classification operation. */
-  var textClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelTextClassificationOperationMetadata] = js.native
+  var textClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelTextClassificationOperationMetadata] = js.undefined
   
   /** Details of label text entity extraction operation. */
-  var textEntityExtractionDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelTextEntityExtractionOperationMetadata] = js.native
+  var textEntityExtractionDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelTextEntityExtractionOperationMetadata] = js.undefined
   
   /** Details of label video classification operation. */
-  var videoClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoClassificationOperationMetadata] = js.native
+  var videoClassificationDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoClassificationOperationMetadata] = js.undefined
   
   /** Details of label video event operation. */
-  var videoEventDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoEventOperationMetadata] = js.native
+  var videoEventDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoEventOperationMetadata] = js.undefined
   
   /** Details of label video object detection operation. */
-  var videoObjectDetectionDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoObjectDetectionOperationMetadata] = js.native
+  var videoObjectDetectionDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoObjectDetectionOperationMetadata] = js.undefined
   
   /** Details of label video object tracking operation. */
-  var videoObjectTrackingDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoObjectTrackingOperationMetadata] = js.native
+  var videoObjectTrackingDetails: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelVideoObjectTrackingOperationMetadata] = js.undefined
 }
 object GoogleCloudDatalabelingV1alpha1LabelOperationMetadata {
   

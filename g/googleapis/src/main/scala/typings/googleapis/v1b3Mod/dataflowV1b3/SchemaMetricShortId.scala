@@ -2,26 +2,24 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metric short id is returned to the user alongside an offset into
   * ReportWorkItemStatusRequest
   */
-@js.native
 trait SchemaMetricShortId extends StObject {
   
   /**
     * The index of the corresponding metric in the ReportWorkItemStatusRequest.
     * Required.
     */
-  var metricIndex: js.UndefOr[Double] = js.native
+  var metricIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The service-generated short identifier for the metric.
     */
-  var shortId: js.UndefOr[String] = js.native
+  var shortId: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricShortId {
   

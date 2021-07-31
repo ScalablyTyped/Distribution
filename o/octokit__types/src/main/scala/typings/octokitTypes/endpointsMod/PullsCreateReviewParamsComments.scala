@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsCreateReviewParamsComments extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var path: String = js.native
+  var path: String
   
-  var position: Double = js.native
+  var position: Double
 }
 object PullsCreateReviewParamsComments {
   

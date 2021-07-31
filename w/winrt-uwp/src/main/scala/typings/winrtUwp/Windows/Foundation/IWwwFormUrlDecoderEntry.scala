@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a name-value pair in a URL query string. */
-@js.native
 trait IWwwFormUrlDecoderEntry extends StObject {
   
   /** Represents the name of a parameter in a URL query string. */
-  var name: String = js.native
+  var name: String
   
   /** Represents a named value in a URL query string. */
-  var value: String = js.native
+  var value: String
 }
 object IWwwFormUrlDecoderEntry {
   

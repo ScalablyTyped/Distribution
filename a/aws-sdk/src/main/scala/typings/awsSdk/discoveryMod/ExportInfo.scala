@@ -2,51 +2,49 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportInfo extends StObject {
   
   /**
     * A URL for an Amazon S3 bucket where you can review the exported data. The URL is displayed only if the export succeeded.
     */
-  var configurationsDownloadUrl: js.UndefOr[ConfigurationsDownloadUrl] = js.native
+  var configurationsDownloadUrl: js.UndefOr[ConfigurationsDownloadUrl] = js.undefined
   
   /**
     * A unique identifier used to query an export.
     */
-  var exportId: ConfigurationsExportId = js.native
+  var exportId: ConfigurationsExportId
   
   /**
     * The time that the data export was initiated.
     */
-  var exportRequestTime: ExportRequestTime = js.native
+  var exportRequestTime: ExportRequestTime
   
   /**
     * The status of the data export job.
     */
-  var exportStatus: ExportStatus = js.native
+  var exportStatus: ExportStatus
   
   /**
     * If true, the export of agent information exceeded the size limit for a single export and the exported data is incomplete for the requested time range. To address this, select a smaller time range for the export by using startDate and endDate.
     */
-  var isTruncated: js.UndefOr[Boolean] = js.native
+  var isTruncated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The endTime used in the StartExportTask request. If no endTime was requested, this result does not appear in ExportInfo.
     */
-  var requestedEndTime: js.UndefOr[TimeStamp] = js.native
+  var requestedEndTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * The value of startTime parameter in the StartExportTask request. If no startTime was requested, this result does not appear in ExportInfo.
     */
-  var requestedStartTime: js.UndefOr[TimeStamp] = js.native
+  var requestedStartTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * A status message provided for API callers.
     */
-  var statusMessage: ExportStatusMessage = js.native
+  var statusMessage: ExportStatusMessage
 }
 object ExportInfo {
   

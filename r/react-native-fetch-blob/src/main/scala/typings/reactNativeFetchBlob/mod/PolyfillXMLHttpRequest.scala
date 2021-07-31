@@ -4,11 +4,12 @@ import typings.reactNativeFetchBlob.reactNativeFetchBlobBooleans.`true`
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
+trait PolyfillXMLHttpRequest
+  extends StObject
+     with PolyfillXMLHttpRequestEventTarget {
   
   val DONE: Double = js.native
   
@@ -72,6 +73,10 @@ trait PolyfillXMLHttpRequest extends PolyfillXMLHttpRequestEventTarget {
 }
 object PolyfillXMLHttpRequest {
   
+  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.DONE")
   @js.native
   val DONE: Double = js.native
@@ -92,19 +97,16 @@ object PolyfillXMLHttpRequest {
   @js.native
   val UNSENT: Double = js.native
   
-  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.addBinaryContentType")
-  @js.native
-  def addBinaryContentType(substr: String): Unit = js.native
+  @scala.inline
+  def addBinaryContentType(substr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBinaryContentType")(substr.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.binaryContentTypes")
   @js.native
   val binaryContentTypes: js.Array[String] = js.native
   
-  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.removeBinaryContentType")
-  @js.native
-  def removeBinaryContentType(): Unit = js.native
+  @scala.inline
+  def removeBinaryContentType(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeBinaryContentType")().asInstanceOf[Unit]
   
-  @JSImport("react-native-fetch-blob", "PolyfillXMLHttpRequest.setLog")
-  @js.native
-  def setLog(level: Double): Unit = js.native
+  @scala.inline
+  def setLog(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLog")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

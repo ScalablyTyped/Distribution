@@ -2,27 +2,25 @@ package typings.vsoNodeApi.formInputInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputValidation extends StObject {
   
-  var dataType: InputDataType = js.native
+  var dataType: InputDataType
   
-  var isRequired: Boolean = js.native
+  var isRequired: Boolean
   
-  var maxLength: Double = js.native
+  var maxLength: Double
   
-  var maxValue: Double = js.native
+  var maxValue: Double
   
-  var minLength: Double = js.native
+  var minLength: Double
   
-  var minValue: Double = js.native
+  var minValue: Double
   
-  var pattern: String = js.native
+  var pattern: String
   
-  var patternMismatchErrorMessage: String = js.native
+  var patternMismatchErrorMessage: String
 }
 object InputValidation {
   

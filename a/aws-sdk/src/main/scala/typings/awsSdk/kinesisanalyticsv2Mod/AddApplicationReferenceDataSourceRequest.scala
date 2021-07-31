@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddApplicationReferenceDataSourceRequest extends StObject {
   
   /**
     * The name of an existing application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * The version of the application for which you are adding the reference data source. You can use the DescribeApplication operation to get the current application version. If the version specified is not the current version, the ConcurrentModificationException is returned.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
   
   /**
     * The reference data source can be an object in your Amazon S3 bucket. Kinesis Data Analytics reads the object and copies the data into the in-application table that is created. You provide an S3 bucket, object key name, and the resulting in-application table that is created. 
     */
-  var ReferenceDataSource: typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSource = js.native
+  var ReferenceDataSource: typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSource
 }
 object AddApplicationReferenceDataSourceRequest {
   

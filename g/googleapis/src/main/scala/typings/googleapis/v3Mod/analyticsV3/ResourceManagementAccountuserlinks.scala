@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Accountuserlinks")
@@ -31,7 +30,7 @@ class ResourceManagementAccountuserlinks protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementAccountuserlinksDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceManagementAccountuserlinksDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceManagementAccountuserlinks protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaEntityUserLink] = js.native
   def insert(callback: BodyResponseCallback[SchemaEntityUserLink]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityUserLink] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityUserLink] = js.native
   def insert(params: ParamsResourceManagementAccountuserlinksInsert): GaxiosPromise[SchemaEntityUserLink] = js.native
   def insert(
     params: ParamsResourceManagementAccountuserlinksInsert,
@@ -95,7 +94,7 @@ class ResourceManagementAccountuserlinks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaEntityUserLinks] = js.native
   def list(callback: BodyResponseCallback[SchemaEntityUserLinks]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityUserLinks] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityUserLinks] = js.native
   def list(params: ParamsResourceManagementAccountuserlinksList): GaxiosPromise[SchemaEntityUserLinks] = js.native
   def list(
     params: ParamsResourceManagementAccountuserlinksList,
@@ -129,7 +128,7 @@ class ResourceManagementAccountuserlinks protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaEntityUserLink] = js.native
   def update(callback: BodyResponseCallback[SchemaEntityUserLink]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEntityUserLink] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEntityUserLink] = js.native
   def update(params: ParamsResourceManagementAccountuserlinksUpdate): GaxiosPromise[SchemaEntityUserLink] = js.native
   def update(
     params: ParamsResourceManagementAccountuserlinksUpdate,

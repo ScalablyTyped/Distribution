@@ -5,7 +5,6 @@ import typings.ensureError.anon.Stack
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,30 +26,34 @@ object mod {
   //=> [NonError: 10]
   ```
   */
+  @scala.inline
+  def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]]]
+  
   @JSImport("ensure-error", JSImport.Namespace)
   @js.native
-  def apply[T](input: T): IfAny[T, ErrorWithStackError, NonError | ErrorWithStack[T]] = js.native
+  val ^ : js.Any = js.native
   
-  type ErrorWithStack[T] = T with Stack
+  type ErrorWithStack[T] = T & Stack
   
   // IfAny<T, ThenType, ElseType> resolves to ThenType if T is `any` and resolves to ElseType otherwise
   // https://stackoverflow.com/a/49928360/4135063
   type IfAny[T, ThenType, ElseType] = ElseType | ThenType
   
-  @js.native
-  trait NonError extends Error {
+  trait NonError
+    extends StObject
+       with Error {
     
     @JSName("name")
-    var name_NonError: typings.ensureError.ensureErrorStrings.NonError = js.native
+    var name_NonError: typings.ensureError.ensureErrorStrings.NonError
     
     @JSName("stack")
-    var stack_NonError: String = js.native
+    var stack_NonError: String
   }
   object NonError {
     
     @scala.inline
-    def apply(message: String, name: typings.ensureError.ensureErrorStrings.NonError, stack: String): NonError = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], stack = stack.asInstanceOf[js.Any])
+    def apply(message: String, stack: String): NonError = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "NonError", stack = stack.asInstanceOf[js.Any])
       __obj.asInstanceOf[NonError]
     }
     

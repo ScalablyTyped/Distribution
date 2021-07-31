@@ -2,30 +2,28 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a parent object. For example, a folder in Drive
   * is a parent for all files within it.
   */
-@js.native
 trait SchemaParent extends StObject {
   
   /**
     * The parent&#39;s ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this is the root folder.
     */
-  var isRoot: js.UndefOr[Boolean] = js.native
+  var isRoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The parent&#39;s title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaParent {
   

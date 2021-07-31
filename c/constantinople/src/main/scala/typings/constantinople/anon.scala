@@ -4,23 +4,21 @@ import typings.constantinople.constantinopleBooleans.`false`
 import typings.constantinople.constantinopleBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Constant extends StObject {
     
-    var constant: `true` = js.native
+    var constant: `true`
     
-    var result: js.Any = js.native
+    var result: js.Any
   }
   object Constant {
     
     @scala.inline
-    def apply(constant: `true`, result: js.Any): Constant = {
-      val __obj = js.Dynamic.literal(constant = constant.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    def apply(result: js.Any): Constant = {
+      val __obj = js.Dynamic.literal(constant = true, result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[Constant]
     }
     
@@ -35,18 +33,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var constant: `false` = js.native
+    var constant: `false`
     
-    var result: js.UndefOr[Unit] = js.native
+    var result: js.UndefOr[Unit] = js.undefined
   }
   object Result {
     
     @scala.inline
-    def apply(constant: `false`): Result = {
-      val __obj = js.Dynamic.literal(constant = constant.asInstanceOf[js.Any])
+    def apply(): Result = {
+      val __obj = js.Dynamic.literal(constant = false)
       __obj.asInstanceOf[Result]
     }
     

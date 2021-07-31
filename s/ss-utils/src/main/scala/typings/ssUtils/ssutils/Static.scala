@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -50,13 +49,13 @@ trait Static extends StObject {
   def parseResponseStatus(json: String, defaultMsg: String): js.Any = js.native
   
   def postJSON(url: String, data: String): js.Any = js.native
-  def postJSON(url: String, data: String, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   def postJSON(url: String, data: String, success: js.Function): js.Any = js.native
   def postJSON(url: String, data: String, success: js.Function, error: js.Function): js.Any = js.native
+  def postJSON(url: String, data: String, success: Unit, error: js.Function): js.Any = js.native
   def postJSON(url: String, data: js.Object): js.Any = js.native
-  def postJSON(url: String, data: js.Object, success: js.UndefOr[scala.Nothing], error: js.Function): js.Any = js.native
   def postJSON(url: String, data: js.Object, success: js.Function): js.Any = js.native
   def postJSON(url: String, data: js.Object, success: js.Function, error: js.Function): js.Any = js.native
+  def postJSON(url: String, data: js.Object, success: Unit, error: js.Function): js.Any = js.native
   
   def queryString(url: String): StringDictionary[String] = js.native
   
@@ -67,9 +66,9 @@ trait Static extends StObject {
   def splitOnLast(s: String, delimiter: String): js.Array[String] = js.native
   
   def subscribeToChannels(channels: js.Array[String]): js.Any = js.native
-  def subscribeToChannels(channels: js.Array[String], cb: js.UndefOr[scala.Nothing], cbError: js.Function): js.Any = js.native
   def subscribeToChannels(channels: js.Array[String], cb: js.Function1[/* user */ SSEUpdate, Unit]): js.Any = js.native
   def subscribeToChannels(channels: js.Array[String], cb: js.Function1[/* user */ SSEUpdate, Unit], cbError: js.Function): js.Any = js.native
+  def subscribeToChannels(channels: js.Array[String], cb: Unit, cbError: js.Function): js.Any = js.native
   
   def tfmt12(d: Date): String = js.native
   
@@ -78,16 +77,16 @@ trait Static extends StObject {
   def todfmt(s: String): String = js.native
   
   def unsubscribeFromChannels(channels: js.Array[String]): js.Any = js.native
-  def unsubscribeFromChannels(channels: js.Array[String], cb: js.UndefOr[scala.Nothing], cbError: js.Function): js.Any = js.native
   def unsubscribeFromChannels(channels: js.Array[String], cb: js.Function1[/* user */ SSEUpdate, Unit]): js.Any = js.native
   def unsubscribeFromChannels(channels: js.Array[String], cb: js.Function1[/* user */ SSEUpdate, Unit], cbError: js.Function): js.Any = js.native
+  def unsubscribeFromChannels(channels: js.Array[String], cb: Unit, cbError: js.Function): js.Any = js.native
   
   def updateChannels(channels: js.Array[String]): Unit = js.native
   
   def updateSubscriber(data: UpdateSubscriberOptions): js.Any = js.native
-  def updateSubscriber(data: UpdateSubscriberOptions, cb: js.UndefOr[scala.Nothing], cbError: js.Function): js.Any = js.native
   def updateSubscriber(data: UpdateSubscriberOptions, cb: js.Function1[/* user */ SSEUpdate, Unit]): js.Any = js.native
   def updateSubscriber(data: UpdateSubscriberOptions, cb: js.Function1[/* user */ SSEUpdate, Unit], cbError: js.Function): js.Any = js.native
+  def updateSubscriber(data: UpdateSubscriberOptions, cb: Unit, cbError: js.Function): js.Any = js.native
   
   var updateSubscriberUrl: String = js.native
   

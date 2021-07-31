@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPiiEntitiesDetectionJobResponse extends StObject {
   
   /**
     * The identifier generated for the job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.undefined
   
   /**
     * The status of the job.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.undefined
 }
 object StartPiiEntitiesDetectionJobResponse {
   

@@ -5,10 +5,8 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthRequiredEvent extends StObject {
   
   /**
@@ -16,27 +14,27 @@ trait AuthRequiredEvent extends StObject {
     * If this is set, client should respond with continueRequest that
     * contains AuthChallengeResponse.
     */
-  var authChallenge: AuthChallenge = js.native
+  var authChallenge: AuthChallenge
   
   /**
     * The id of the frame that initiated the request.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * The details of the request.
     */
-  var request: Request = js.native
+  var request: Request
   
   /**
     * Each request the page makes will have a unique id.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * How the requested resource will be used.
     */
-  var resourceType: ResourceType = js.native
+  var resourceType: ResourceType
 }
 object AuthRequiredEvent {
   

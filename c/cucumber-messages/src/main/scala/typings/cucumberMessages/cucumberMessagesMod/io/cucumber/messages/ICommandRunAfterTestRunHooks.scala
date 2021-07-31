@@ -2,15 +2,13 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a CommandRunAfterTestRunHooks. */
-@js.native
 trait ICommandRunAfterTestRunHooks extends StObject {
   
   /** CommandRunAfterTestRunHooks actionId */
-  var actionId: js.UndefOr[String | Null] = js.native
+  var actionId: js.UndefOr[String | Null] = js.undefined
 }
 object ICommandRunAfterTestRunHooks {
   

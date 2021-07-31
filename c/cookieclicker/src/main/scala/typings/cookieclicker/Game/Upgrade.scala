@@ -4,7 +4,6 @@ import typings.cookieclicker.cookieclickerStrings.upgrade
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -121,7 +120,7 @@ trait Upgrade extends StObject {
   var priceLumps: Double = js.native
   
   /** @deprecated */
-  var techUnlock: js.Array[js.UndefOr[scala.Nothing]] = js.native
+  var techUnlock: js.Array[Unit] = js.native
   
   var tier: String | Double = js.native
   

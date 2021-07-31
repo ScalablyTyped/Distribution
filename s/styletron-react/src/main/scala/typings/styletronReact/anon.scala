@@ -6,15 +6,13 @@ import typings.styletronReact.mod.StackInfo
 import typings.styletronStandard.mod.StandardEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    def children(styletronEngine: StandardEngine, debugEngine: DebugEngine, hydrating: Boolean): ReactNode = js.native
+    def children(styletronEngine: StandardEngine, debugEngine: DebugEngine, hydrating: Boolean): ReactNode
   }
   object Children {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
   }
   object ClassName {
     
@@ -53,10 +50,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Hydrating extends StObject {
     
-    var hydrating: Boolean = js.native
+    var hydrating: Boolean
   }
   object Hydrating {
     
@@ -74,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait StackIndex extends StObject {
     
-    var stackIndex: typings.styletronReact.mod.StackIndex = js.native
+    var stackIndex: typings.styletronReact.mod.StackIndex
     
-    var stackInfo: StackInfo = js.native
+    var stackInfo: StackInfo
   }
   object StackIndex {
     

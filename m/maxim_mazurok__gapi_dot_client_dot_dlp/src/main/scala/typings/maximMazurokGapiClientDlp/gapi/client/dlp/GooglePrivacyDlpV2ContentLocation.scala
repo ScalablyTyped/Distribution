@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ContentLocation extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait GooglePrivacyDlpV2ContentLocation extends StObject {
     * BigQuery tables: `{project_id}:{dataset_id}.{table_id}` * Cloud Storage files: `gs://{bucket}/{path}` * Datastore namespace: {namespace} Nested names could be absent if the embedded
     * object has no string identifier (for an example an image contained within a document).
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * Findings container modification timestamp, if applicable. For Google Cloud Storage contains last file modification timestamp. For BigQuery table contains last_modified_time
     * property. For Datastore - not populated.
     */
-  var containerTimestamp: js.UndefOr[String] = js.native
+  var containerTimestamp: js.UndefOr[String] = js.undefined
   
   /** Findings container version, if available ("generation" for Google Cloud Storage). */
-  var containerVersion: js.UndefOr[String] = js.native
+  var containerVersion: js.UndefOr[String] = js.undefined
   
   /** Location data for document files. */
-  var documentLocation: js.UndefOr[GooglePrivacyDlpV2DocumentLocation] = js.native
+  var documentLocation: js.UndefOr[GooglePrivacyDlpV2DocumentLocation] = js.undefined
   
   /** Location within an image's pixels. */
-  var imageLocation: js.UndefOr[GooglePrivacyDlpV2ImageLocation] = js.native
+  var imageLocation: js.UndefOr[GooglePrivacyDlpV2ImageLocation] = js.undefined
   
   /** Location within the metadata for inspected content. */
-  var metadataLocation: js.UndefOr[GooglePrivacyDlpV2MetadataLocation] = js.native
+  var metadataLocation: js.UndefOr[GooglePrivacyDlpV2MetadataLocation] = js.undefined
   
   /** Location within a row or record of a database table. */
-  var recordLocation: js.UndefOr[GooglePrivacyDlpV2RecordLocation] = js.native
+  var recordLocation: js.UndefOr[GooglePrivacyDlpV2RecordLocation] = js.undefined
 }
 object GooglePrivacyDlpV2ContentLocation {
   

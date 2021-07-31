@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about faces in the image. */
-@js.native
 trait ImageWithFaces extends StObject {
   
   /** Information about what might have caused a failure, such as an image that is too large. Not returned when there is no error. */
-  var error: js.UndefOr[ErrorInfo] = js.native
+  var error: js.UndefOr[ErrorInfo] = js.undefined
   
   /** Faces detected in the images. */
-  var faces: js.Array[Face] = js.native
+  var faces: js.Array[Face]
   
   /** Relative path of the image file if uploaded directly. Not returned when the image is passed by URL. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /** Fully resolved URL of the image after redirects are followed. Not returned when the image is uploaded. */
-  var resolved_url: js.UndefOr[String] = js.native
+  var resolved_url: js.UndefOr[String] = js.undefined
   
   /** Source of the image before any redirects. Not returned when the image is uploaded. */
-  var source_url: js.UndefOr[String] = js.native
+  var source_url: js.UndefOr[String] = js.undefined
 }
 object ImageWithFaces {
   

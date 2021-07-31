@@ -2,15 +2,13 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var XR: js.UndefOr[Constructor[typings.three.webXRMod.XR]] = js.native
+  var XR: js.UndefOr[Constructor[typings.three.webXRMod.XR]] = js.undefined
   
-  var XRSession: js.UndefOr[Constructor[typings.three.webXRMod.XRSession]] = js.native
+  var XRSession: js.UndefOr[Constructor[typings.three.webXRMod.XRSession]] = js.undefined
 }
 object Window {
   

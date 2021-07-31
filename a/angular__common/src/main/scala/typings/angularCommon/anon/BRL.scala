@@ -2,65 +2,63 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BRL extends StObject {
   
-  var AUD: js.Array[String] = js.native
+  var AUD: js.Array[String]
   
-  var BBD: js.Array[js.UndefOr[String]] = js.native
+  var BBD: js.Array[js.UndefOr[String]]
   
-  var BMD: js.Array[js.UndefOr[String]] = js.native
+  var BMD: js.Array[js.UndefOr[String]]
   
-  var BRL: js.Array[js.UndefOr[String]] = js.native
+  var BRL: js.Array[js.UndefOr[String]]
   
-  var BSD: js.Array[js.UndefOr[String]] = js.native
+  var BSD: js.Array[js.UndefOr[String]]
   
-  var BYN: js.Array[String] = js.native
+  var BYN: js.Array[String]
   
-  var BZD: js.Array[js.UndefOr[String]] = js.native
+  var BZD: js.Array[js.UndefOr[String]]
   
-  var CAD: js.Array[js.UndefOr[String]] = js.native
+  var CAD: js.Array[js.UndefOr[String]]
   
-  var CUC: js.Array[js.UndefOr[String]] = js.native
+  var CUC: js.Array[js.UndefOr[String]]
   
-  var CUP: js.Array[js.UndefOr[String]] = js.native
+  var CUP: js.Array[js.UndefOr[String]]
   
-  var DOP: js.Array[js.UndefOr[String]] = js.native
+  var DOP: js.Array[js.UndefOr[String]]
   
-  var FJD: js.Array[js.UndefOr[String]] = js.native
+  var FJD: js.Array[js.UndefOr[String]]
   
-  var FKP: js.Array[js.UndefOr[String]] = js.native
+  var FKP: js.Array[js.UndefOr[String]]
   
-  var GYD: js.Array[js.UndefOr[String]] = js.native
+  var GYD: js.Array[js.UndefOr[String]]
   
-  var ISK: js.Array[js.UndefOr[String]] = js.native
+  var ISK: js.Array[js.UndefOr[String]]
   
-  var JMD: js.Array[js.UndefOr[String]] = js.native
+  var JMD: js.Array[js.UndefOr[String]]
   
-  var KYD: js.Array[js.UndefOr[String]] = js.native
+  var KYD: js.Array[js.UndefOr[String]]
   
-  var LRD: js.Array[js.UndefOr[String]] = js.native
+  var LRD: js.Array[js.UndefOr[String]]
   
-  var MXN: js.Array[String] = js.native
+  var MXN: js.Array[String]
   
-  var NAD: js.Array[js.UndefOr[String]] = js.native
+  var NAD: js.Array[js.UndefOr[String]]
   
-  var NZD: js.Array[js.UndefOr[String]] = js.native
+  var NZD: js.Array[js.UndefOr[String]]
   
-  var RUB: js.Array[String] = js.native
+  var RUB: js.Array[String]
   
-  var SBD: js.Array[js.UndefOr[String]] = js.native
+  var SBD: js.Array[js.UndefOr[String]]
   
-  var SGD: js.Array[js.UndefOr[String]] = js.native
+  var SGD: js.Array[js.UndefOr[String]]
   
-  var TTD: js.Array[js.UndefOr[String]] = js.native
+  var TTD: js.Array[js.UndefOr[String]]
   
-  var UYU: js.Array[js.UndefOr[String]] = js.native
+  var UYU: js.Array[js.UndefOr[String]]
   
-  var XCD: js.Array[String] = js.native
+  var XCD: js.Array[String]
 }
 object BRL {
   

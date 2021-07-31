@@ -7,13 +7,14 @@ import typings.reactBeautifulDnd.mod.InOutAnimationMode
 import typings.reactBeautifulDnd.mod.MovementMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBeautifulDndStrings {
   
   @js.native
-  sealed trait CANCEL extends DropReason
+  sealed trait CANCEL
+    extends StObject
+       with DropReason
   @scala.inline
   def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   
@@ -33,7 +34,9 @@ object reactBeautifulDndStrings {
   def DRAGGING: DRAGGING = "DRAGGING".asInstanceOf[DRAGGING]
   
   @js.native
-  sealed trait DROP extends DropReason
+  sealed trait DROP
+    extends StObject
+       with DropReason
   @scala.inline
   def DROP: DROP = "DROP".asInstanceOf[DROP]
   
@@ -48,7 +51,9 @@ object reactBeautifulDndStrings {
   def DROP_PENDING: DROP_PENDING = "DROP_PENDING".asInstanceOf[DROP_PENDING]
   
   @js.native
-  sealed trait FLUID extends MovementMode
+  sealed trait FLUID
+    extends StObject
+       with MovementMode
   @scala.inline
   def FLUID: FLUID = "FLUID".asInstanceOf[FLUID]
   
@@ -63,7 +68,9 @@ object reactBeautifulDndStrings {
   def REORDER: REORDER = "REORDER".asInstanceOf[REORDER]
   
   @js.native
-  sealed trait SNAP extends MovementMode
+  sealed trait SNAP
+    extends StObject
+       with MovementMode
   @scala.inline
   def SNAP: SNAP = "SNAP".asInstanceOf[SNAP]
   
@@ -78,7 +85,9 @@ object reactBeautifulDndStrings {
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait close extends InOutAnimationMode
+  sealed trait close
+    extends StObject
+       with InOutAnimationMode
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
@@ -93,7 +102,9 @@ object reactBeautifulDndStrings {
   def height: height = "height".asInstanceOf[height]
   
   @js.native
-  sealed trait horizontal extends Direction
+  sealed trait horizontal
+    extends StObject
+       with Direction
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
@@ -103,12 +114,16 @@ object reactBeautifulDndStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait none extends InOutAnimationMode
+  sealed trait none
+    extends StObject
+       with InOutAnimationMode
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait open extends InOutAnimationMode
+  sealed trait open
+    extends StObject
+       with InOutAnimationMode
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   
@@ -118,7 +133,9 @@ object reactBeautifulDndStrings {
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait standard extends DroppableMode
+  sealed trait standard
+    extends StObject
+       with DroppableMode
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
@@ -128,12 +145,16 @@ object reactBeautifulDndStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait vertical extends Direction
+  sealed trait vertical
+    extends StObject
+       with Direction
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait virtual extends DroppableMode
+  sealed trait virtual
+    extends StObject
+       with DroppableMode
   @scala.inline
   def virtual: virtual = "virtual".asInstanceOf[virtual]
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * can handle framesets; the frames may be top frames only.
   * @see Desktop
   */
-@js.native
-trait XDesktop extends XInterface {
+trait XDesktop
+  extends StObject
+     with XInterface {
   
   /**
     * provides read access to collection of all currently loaded components inside the frame tree
@@ -27,7 +27,7 @@ trait XDesktop extends XInterface {
     * @returns the collection of all components
     * @see Components
     */
-  val Components: XEnumerationAccess = js.native
+  val Components: XEnumerationAccess
   
   /**
     * provides read access to the component inside the tree which has the UI focus
@@ -36,21 +36,21 @@ trait XDesktop extends XInterface {
     * @returns the component within the desktop environment which has the UI focus.
     * @see XDesktop.getCurrentFrame()
     */
-  val CurrentComponent: XComponent = js.native
+  val CurrentComponent: XComponent
   
   /**
     * provides read access to the frame which contains the current component
     * @returns the frame of the component which has the UI focus within this desktop environment
     * @see XDesktop.getCurrentComponent()
     */
-  val CurrentFrame: XFrame = js.native
+  val CurrentFrame: XFrame
   
   /**
     * registers an event listener to the desktop, which is called when the desktop is queried to terminate, and when it really terminates.
     * @param Listener listener for termination events
     * @see XDesktop.removeTerminateListener()
     */
-  def addTerminateListener(Listener: XTerminateListener): Unit = js.native
+  def addTerminateListener(Listener: XTerminateListener): Unit
   
   /**
     * provides read access to collection of all currently loaded components inside the frame tree
@@ -60,7 +60,7 @@ trait XDesktop extends XInterface {
     * @returns the collection of all components
     * @see Components
     */
-  def getComponents(): XEnumerationAccess = js.native
+  def getComponents(): XEnumerationAccess
   
   /**
     * provides read access to the component inside the tree which has the UI focus
@@ -69,21 +69,21 @@ trait XDesktop extends XInterface {
     * @returns the component within the desktop environment which has the UI focus.
     * @see XDesktop.getCurrentFrame()
     */
-  def getCurrentComponent(): XComponent = js.native
+  def getCurrentComponent(): XComponent
   
   /**
     * provides read access to the frame which contains the current component
     * @returns the frame of the component which has the UI focus within this desktop environment
     * @see XDesktop.getCurrentComponent()
     */
-  def getCurrentFrame(): XFrame = js.native
+  def getCurrentFrame(): XFrame
   
   /**
     * unregisters an event listener for termination events.
     * @param Listener listener which wish to be deregistered
     * @see XDesktop.addTerminateListener()
     */
-  def removeTerminateListener(Listener: XTerminateListener): Unit = js.native
+  def removeTerminateListener(Listener: XTerminateListener): Unit
   
   /**
     * tries to terminate the desktop.
@@ -96,7 +96,7 @@ trait XDesktop extends XInterface {
     * @see XTerminateListener
     * @see TerminationVetoException
     */
-  def terminate(): Boolean = js.native
+  def terminate(): Boolean
 }
 object XDesktop {
   

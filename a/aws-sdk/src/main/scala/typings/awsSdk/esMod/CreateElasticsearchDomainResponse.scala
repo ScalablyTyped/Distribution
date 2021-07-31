@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateElasticsearchDomainResponse extends StObject {
   
   /**
     * The status of the newly created Elasticsearch domain. 
     */
-  var DomainStatus: js.UndefOr[ElasticsearchDomainStatus] = js.native
+  var DomainStatus: js.UndefOr[ElasticsearchDomainStatus] = js.undefined
 }
 object CreateElasticsearchDomainResponse {
   

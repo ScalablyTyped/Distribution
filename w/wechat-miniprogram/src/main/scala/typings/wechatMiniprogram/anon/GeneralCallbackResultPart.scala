@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.WechatMiniprogram.GeneralCallbackResult & std.Partial<wechat-miniprogram.WechatMiniprogram.GetWeRunDataSuccessCallbackResult> */
-@js.native
 trait GeneralCallbackResultPart extends StObject {
   
-  var cloudID: js.UndefOr[String] = js.native
+  var cloudID: js.UndefOr[String] = js.undefined
   
-  var encryptedData: js.UndefOr[String] = js.native
+  var encryptedData: js.UndefOr[String] = js.undefined
   
-  var errMsg: String with js.UndefOr[String] = js.native
+  var errMsg: String & js.UndefOr[String]
   
-  var iv: js.UndefOr[String] = js.native
+  var iv: js.UndefOr[String] = js.undefined
 }
 object GeneralCallbackResultPart {
   
   @scala.inline
-  def apply(errMsg: String with js.UndefOr[String]): GeneralCallbackResultPart = {
+  def apply(errMsg: String & js.UndefOr[String]): GeneralCallbackResultPart = {
     val __obj = js.Dynamic.literal(errMsg = errMsg.asInstanceOf[js.Any])
     __obj.asInstanceOf[GeneralCallbackResultPart]
   }
@@ -41,7 +39,7 @@ object GeneralCallbackResultPart {
     def setEncryptedDataUndefined: Self = StObject.set(x, "encryptedData", js.undefined)
     
     @scala.inline
-    def setErrMsg(value: String with js.UndefOr[String]): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
+    def setErrMsg(value: String & js.UndefOr[String]): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIv(value: String): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])

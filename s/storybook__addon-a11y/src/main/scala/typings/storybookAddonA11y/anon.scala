@@ -5,19 +5,17 @@ import typings.react.mod.global.JSX.Element
 import typings.storybookAddonA11y.a11YPanelMod.RuleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BoxShadow extends StObject {
     
-    var boxShadow: String = js.native
+    var boxShadow: String
     
-    var outline: String = js.native
+    var outline: String
     
-    var outlineOffset: Double = js.native
+    var outlineOffset: Double
   }
   object BoxShadow {
     
@@ -41,16 +39,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Items extends StObject {
     
-    var items: js.Array[Result] = js.native
+    var items: js.Array[Result]
     
-    var label: Element = js.native
+    var label: Element
     
-    var panel: Element = js.native
+    var panel: Element
     
-    var `type`: RuleType = js.native
+    var `type`: RuleType
   }
   object Items {
     

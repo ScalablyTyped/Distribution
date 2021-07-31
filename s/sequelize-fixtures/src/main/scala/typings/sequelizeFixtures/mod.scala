@@ -5,7 +5,6 @@ import typings.sequelize.mod.Transaction
 import typings.sequelizeFixtures.mod.SequelizeFixtures.SequelizeFixturesStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,18 +15,17 @@ object mod extends Shortcut {
   
   object SequelizeFixtures {
     
-    @js.native
     trait Options extends StObject {
       
-      var encoding: js.UndefOr[String] = js.native
+      var encoding: js.UndefOr[String] = js.undefined
       
-      var log: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+      var log: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
       
-      var modifyFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+      var modifyFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
       
-      var transaction: js.UndefOr[Transaction] = js.native
+      var transaction: js.UndefOr[Transaction] = js.undefined
       
-      var transformFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, _]] = js.native
+      var transformFixtureDataFn: js.UndefOr[js.Function1[/* data */ js.Any, js.Any]] = js.undefined
     }
     object Options {
       
@@ -53,7 +51,7 @@ object mod extends Shortcut {
         def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
         
         @scala.inline
-        def setModifyFixtureDataFn(value: /* data */ js.Any => _): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
+        def setModifyFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "modifyFixtureDataFn", js.Any.fromFunction1(value))
         
         @scala.inline
         def setModifyFixtureDataFnUndefined: Self = StObject.set(x, "modifyFixtureDataFn", js.undefined)
@@ -65,7 +63,7 @@ object mod extends Shortcut {
         def setTransactionUndefined: Self = StObject.set(x, "transaction", js.undefined)
         
         @scala.inline
-        def setTransformFixtureDataFn(value: /* data */ js.Any => _): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
+        def setTransformFixtureDataFn(value: /* data */ js.Any => js.Any): Self = StObject.set(x, "transformFixtureDataFn", js.Any.fromFunction1(value))
         
         @scala.inline
         def setTransformFixtureDataFnUndefined: Self = StObject.set(x, "transformFixtureDataFn", js.undefined)
@@ -75,17 +73,17 @@ object mod extends Shortcut {
     @js.native
     trait SequelizeFixturesStatic extends StObject {
       
-      def loadFile(file: String, models: js.Any): js.Promise[_] = js.native
-      def loadFile(file: String, models: js.Any, options: Options): js.Promise[_] = js.native
+      def loadFile(file: String, models: js.Any): js.Promise[js.Any] = js.native
+      def loadFile(file: String, models: js.Any, options: Options): js.Promise[js.Any] = js.native
       
-      def loadFiles(files: js.Array[String], models: js.Any): js.Promise[_] = js.native
-      def loadFiles(files: js.Array[String], models: js.Any, options: Options): js.Promise[_] = js.native
+      def loadFiles(files: js.Array[String], models: js.Any): js.Promise[js.Any] = js.native
+      def loadFiles(files: js.Array[String], models: js.Any, options: Options): js.Promise[js.Any] = js.native
       
-      def loadFixture(fixture: js.Any, models: js.Any): js.Promise[_] = js.native
-      def loadFixture(fixture: js.Any, models: js.Any, options: Options): js.Promise[_] = js.native
+      def loadFixture(fixture: js.Any, models: js.Any): js.Promise[js.Any] = js.native
+      def loadFixture(fixture: js.Any, models: js.Any, options: Options): js.Promise[js.Any] = js.native
       
-      def loadFixtures(fixtures: js.Array[_], models: js.Any): js.Promise[_] = js.native
-      def loadFixtures(fixtures: js.Array[_], models: js.Any, options: Options): js.Promise[_] = js.native
+      def loadFixtures(fixtures: js.Array[js.Any], models: js.Any): js.Promise[js.Any] = js.native
+      def loadFixtures(fixtures: js.Array[js.Any], models: js.Any, options: Options): js.Promise[js.Any] = js.native
     }
   }
   

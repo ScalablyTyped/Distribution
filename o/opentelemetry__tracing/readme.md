@@ -10,9 +10,9 @@ OpenTelemetry Tracing
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/tracing |
 | Keywords           | opentelemetry, nodejs, tracing, profiling, metrics, stats |
-| # releases         | 41 |
-| # dependents       | 35 |
-| # downloads        | 1784426 |
+| # releases         | 54 |
+| # dependents       | 50 |
+| # downloads        | 5869056 |
 | # stars            | 0 |
 
 ## Links

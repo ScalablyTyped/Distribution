@@ -2,15 +2,13 @@ package typings.googleapis.webmastersV3Mod.webmastersV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaApiDimensionFilterGroup extends StObject {
   
-  var filters: js.UndefOr[js.Array[SchemaApiDimensionFilter]] = js.native
+  var filters: js.UndefOr[js.Array[SchemaApiDimensionFilter]] = js.undefined
   
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
 }
 object SchemaApiDimensionFilterGroup {
   

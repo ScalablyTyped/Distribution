@@ -4,25 +4,23 @@ import typings.evernote.mod.Types.ContactType
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var messagingPermit: js.UndefOr[String] = js.native
+  var messagingPermit: js.UndefOr[String] = js.undefined
   
-  var messagingPermitExpires: js.UndefOr[Timestamp] = js.native
+  var messagingPermitExpires: js.UndefOr[Timestamp] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var photoLastUpdated: js.UndefOr[Timestamp] = js.native
+  var photoLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[ContactType] = js.native
+  var `type`: js.UndefOr[ContactType] = js.undefined
 }
 object Id {
   

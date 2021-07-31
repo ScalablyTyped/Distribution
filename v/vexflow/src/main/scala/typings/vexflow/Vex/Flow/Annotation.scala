@@ -6,19 +6,19 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Annotation extends Modifier {
+trait Annotation
+  extends StObject
+     with Modifier {
   
-  def getJustification(): Justify = js.native
+  def getJustification(): Justify
   
-  def setFont(family: String, size: Double, weight: String): Annotation = js.native
+  def setFont(family: String, size: Double, weight: String): Annotation
   
-  def setJustification(justification: Justify): Annotation = js.native
+  def setJustification(justification: Justify): Annotation
   
-  def setVerticalJustification(just: VerticalJustify): Annotation = js.native
+  def setVerticalJustification(just: VerticalJustify): Annotation
 }
 object Annotation {
   
@@ -58,16 +58,24 @@ object Annotation {
   object Justify extends StObject {
     
     @js.native
-    sealed trait CENTER extends Justify
+    sealed trait CENTER
+      extends StObject
+         with Justify
     
     @js.native
-    sealed trait CENTER_STEM extends Justify
+    sealed trait CENTER_STEM
+      extends StObject
+         with Justify
     
     @js.native
-    sealed trait LEFT extends Justify
+    sealed trait LEFT
+      extends StObject
+         with Justify
     
     @js.native
-    sealed trait RIGHT extends Justify
+    sealed trait RIGHT
+      extends StObject
+         with Justify
   }
   
   @js.native
@@ -77,16 +85,24 @@ object Annotation {
   object VerticalJustify extends StObject {
     
     @js.native
-    sealed trait BOTTOM extends VerticalJustify
+    sealed trait BOTTOM
+      extends StObject
+         with VerticalJustify
     
     @js.native
-    sealed trait CENTER extends VerticalJustify
+    sealed trait CENTER
+      extends StObject
+         with VerticalJustify
     
     @js.native
-    sealed trait CENTER_STEM extends VerticalJustify
+    sealed trait CENTER_STEM
+      extends StObject
+         with VerticalJustify
     
     @js.native
-    sealed trait TOP extends VerticalJustify
+    sealed trait TOP
+      extends StObject
+         with VerticalJustify
   }
   
   @scala.inline

@@ -12,10 +12,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mqMod {
+  
+  @JSImport("@pulumi/aws/mq", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/mq", "Broker")
   @js.native
@@ -34,6 +37,10 @@ object mqMod {
   /* static members */
   object Broker {
     
+    @JSImport("@pulumi/aws/mq", "Broker")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Broker resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -43,26 +50,21 @@ object mqMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mq", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.brokerMod.Broker = js.native
-    @JSImport("@pulumi/aws/mq", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
-    @JSImport("@pulumi/aws/mq", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BrokerState): typings.pulumiAws.brokerMod.Broker = js.native
-    @JSImport("@pulumi/aws/mq", "Broker.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.brokerMod.Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.brokerMod.Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.brokerMod.Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BrokerState): typings.pulumiAws.brokerMod.Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.brokerMod.Broker]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BrokerState, opts: CustomResourceOptions): typings.pulumiAws.brokerMod.Broker = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.brokerMod.Broker]
     
     /**
       * Returns true if the given object is an instance of Broker.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mq", "Broker.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mq/broker.Broker */ Boolean]
   }
   
   @JSImport("@pulumi/aws/mq", "Configuration")
@@ -82,6 +84,10 @@ object mqMod {
   /* static members */
   object Configuration {
     
+    @JSImport("@pulumi/aws/mq", "Configuration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Configuration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -91,38 +97,29 @@ object mqMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mq", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.configurationMod.Configuration = js.native
-    @JSImport("@pulumi/aws/mq", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = js.native
-    @JSImport("@pulumi/aws/mq", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationState): typings.pulumiAws.configurationMod.Configuration = js.native
-    @JSImport("@pulumi/aws/mq", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.configurationMod.Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationMod.Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationMod.Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationState): typings.pulumiAws.configurationMod.Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationMod.Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): typings.pulumiAws.configurationMod.Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.configurationMod.Configuration]
     
     /**
       * Returns true if the given object is an instance of Configuration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mq", "Configuration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/configuration.Configuration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mq/configuration.Configuration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mq/configuration.Configuration */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/mq", "getBroker")
-  @js.native
-  def getBroker(): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq", "getBroker")
-  @js.native
-  def getBroker(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq", "getBroker")
-  @js.native
-  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = js.native
-  @JSImport("@pulumi/aws/mq", "getBroker")
-  @js.native
-  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = js.native
+  @scala.inline
+  def getBroker(): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")().asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: Unit, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: GetBrokerArgs): js.Promise[GetBrokerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetBrokerResult]]
+  @scala.inline
+  def getBroker(args: GetBrokerArgs, opts: InvokeOptions): js.Promise[GetBrokerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroker")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetBrokerResult]]
 }

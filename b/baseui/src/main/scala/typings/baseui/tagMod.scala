@@ -29,45 +29,43 @@ import typings.std.KeyboardEvent
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
   
-  @js.native
   trait KIND extends StObject {
     
-    var accent: typings.baseui.baseuiStrings.accent = js.native
+    var accent: typings.baseui.baseuiStrings.accent
     
-    var black: typings.baseui.baseuiStrings.black = js.native
+    var black: typings.baseui.baseuiStrings.black
     
-    var blue: typings.baseui.baseuiStrings.blue = js.native
+    var blue: typings.baseui.baseuiStrings.blue
     
-    var brown: typings.baseui.baseuiStrings.brown = js.native
+    var brown: typings.baseui.baseuiStrings.brown
     
-    var custom: custom_ = js.native
+    var custom: custom_
     
-    var green: typings.baseui.baseuiStrings.green = js.native
+    var green: typings.baseui.baseuiStrings.green
     
-    var negative: typings.baseui.baseuiStrings.negative = js.native
+    var negative: typings.baseui.baseuiStrings.negative
     
-    var neutral: typings.baseui.baseuiStrings.neutral = js.native
+    var neutral: typings.baseui.baseuiStrings.neutral
     
-    var orange: typings.baseui.baseuiStrings.orange = js.native
+    var orange: typings.baseui.baseuiStrings.orange
     
-    var positive: typings.baseui.baseuiStrings.positive = js.native
+    var positive: typings.baseui.baseuiStrings.positive
     
-    var primary: typings.baseui.baseuiStrings.primary = js.native
+    var primary: typings.baseui.baseuiStrings.primary
     
-    var purple: typings.baseui.baseuiStrings.purple = js.native
+    var purple: typings.baseui.baseuiStrings.purple
     
-    var red: typings.baseui.baseuiStrings.red = js.native
+    var red: typings.baseui.baseuiStrings.red
     
-    var warning: typings.baseui.baseuiStrings.warning = js.native
+    var warning: typings.baseui.baseuiStrings.warning
     
-    var white: typings.baseui.baseuiStrings.white = js.native
+    var white: typings.baseui.baseuiStrings.white
     
-    var yellow: typings.baseui.baseuiStrings.yellow = js.native
+    var yellow: typings.baseui.baseuiStrings.yellow
   }
   object KIND {
     
@@ -128,14 +126,13 @@ object tagMod {
     }
   }
   
-  @js.native
   trait SIZE extends StObject {
     
-    var large: large_ = js.native
+    var large: large_
     
-    var medium: medium_ = js.native
+    var medium: medium_
     
-    var small: small_ = js.native
+    var small: small_
   }
   object SIZE {
     
@@ -189,14 +186,13 @@ object tagMod {
     def handleKeyDown(event: KeyboardEvent): Unit = js.native
   }
   
-  @js.native
   trait VARIANT extends StObject {
     
-    var light: typings.baseui.baseuiStrings.light = js.native
+    var light: typings.baseui.baseuiStrings.light
     
-    var outlined: typings.baseui.baseuiStrings.outlined = js.native
+    var outlined: typings.baseui.baseuiStrings.outlined
     
-    var solid: typings.baseui.baseuiStrings.solid = js.native
+    var solid: typings.baseui.baseuiStrings.solid
   }
   object VARIANT {
     
@@ -218,24 +214,23 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagOverrides extends StObject {
     
     var Action: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ActionIcon: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Text: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object TagOverrides {
     
@@ -282,40 +277,39 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var closeable: js.UndefOr[Boolean] = js.native
+    var closeable: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var isFocused: js.UndefOr[Boolean] = js.native
+    var isFocused: js.UndefOr[Boolean] = js.undefined
     
-    var isHovered: js.UndefOr[Boolean] = js.native
+    var isHovered: js.UndefOr[Boolean] = js.undefined
     
     var kind: js.UndefOr[
         orange | custom_ | brown | purple | yellow | red | accent | white | primary | blue | neutral | positive | black | green | warning | negative
-      ] = js.native
+      ] = js.undefined
     
-    var onActionClick: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], _]] = js.native
+    var onActionClick: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], js.Any]] = js.undefined
     
-    var onActionKeyDown: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], _]] = js.native
+    var onActionKeyDown: js.UndefOr[js.Function2[/* e */ Event, /* children */ js.UndefOr[ReactNode], js.Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* event */ Event, _]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* event */ Event, js.Any]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Function1[/* event */ Event, _]] = js.native
+    var onKeyDown: js.UndefOr[js.Function1[/* event */ Event, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[TagOverrides] = js.native
+    var overrides: js.UndefOr[TagOverrides] = js.undefined
     
-    var size: js.UndefOr[small_ | medium_ | large_] = js.native
+    var size: js.UndefOr[small_ | medium_ | large_] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var variant: js.UndefOr[solid | light | outlined] = js.native
+    var variant: js.UndefOr[solid | light | outlined] = js.undefined
   }
   object TagProps {
     
@@ -373,25 +367,25 @@ object tagMod {
       def setKindUndefined: Self = StObject.set(x, "kind", js.undefined)
       
       @scala.inline
-      def setOnActionClick(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => _): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
+      def setOnActionClick(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionClick", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnActionClickUndefined: Self = StObject.set(x, "onActionClick", js.undefined)
       
       @scala.inline
-      def setOnActionKeyDown(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => _): Self = StObject.set(x, "onActionKeyDown", js.Any.fromFunction2(value))
+      def setOnActionKeyDown(value: (/* e */ Event, /* children */ js.UndefOr[ReactNode]) => js.Any): Self = StObject.set(x, "onActionKeyDown", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnActionKeyDownUndefined: Self = StObject.set(x, "onActionKeyDown", js.undefined)
       
       @scala.inline
-      def setOnClick(value: /* event */ Event => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: /* event */ Event => _): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
+      def setOnKeyDown(value: /* event */ Event => js.Any): Self = StObject.set(x, "onKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)

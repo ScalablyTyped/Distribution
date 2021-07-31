@@ -2,17 +2,15 @@ package typings.webpackBlocksDevServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.UndefOr[Boolean] = js.native
+    var errors: js.UndefOr[Boolean] = js.undefined
     
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object Errors {
     
@@ -39,10 +37,9 @@ object anon {
     }
   }
   
-  @js.native
   trait String extends StObject {
     
-    var string: js.Array[java.lang.String] = js.native
+    var string: js.Array[java.lang.String]
   }
   object String {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTableColumnRequest extends StObject {
   
   /**
     * The reference table cell location from which the column will be deleted. The column this cell spans will be deleted. If this is a merged cell that spans multiple columns, all
     * columns that the cell spans will be deleted. If no columns remain in the table after this deletion, the whole table is deleted.
     */
-  var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+  var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
 }
 object DeleteTableColumnRequest {
   

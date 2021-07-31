@@ -2,13 +2,13 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DebouncedMUIDataTableSearch extends MUIDataTableSearch {
+trait DebouncedMUIDataTableSearch
+  extends StObject
+     with MUIDataTableSearch {
   
-  var debounceWait: Double = js.native
+  var debounceWait: Double
 }
 object DebouncedMUIDataTableSearch {
   

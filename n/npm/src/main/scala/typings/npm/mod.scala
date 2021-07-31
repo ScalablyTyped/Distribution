@@ -12,7 +12,6 @@ import typings.std.NumberConstructor
 import typings.std.StringConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -419,62 +418,163 @@ object mod extends Shortcut {
       var xmas_Original: CommandFunction = js.native
     }
     
-    @js.native
     trait Config extends StObject {
       
-      def Conf(base: Config): Config = js.native
+      def Conf(base: Config): Config
       @JSName("Conf")
-      var Conf_Original: ConfigStatic = js.native
+      var Conf_Original: ConfigStatic
       
-      def add(data: js.Object, marker: js.Object): js.Any = js.native
+      def add(data: js.Object, marker: js.Object): js.Any
       
-      def addEnv(env: Dictionary[String]): js.Any = js.native
+      def addEnv(env: Dictionary[String]): js.Any
       
-      def addFile(file: String, name: String): Config = js.native
+      def addFile(file: String, name: String): Config
       
-      var defs: ConfigDefs = js.native
+      var defs: ConfigDefs
       
-      def findPrefix(prefix: String, cb: SimpleCallback[String]): Unit = js.native
+      def findPrefix(prefix: String, cb: SimpleCallback[String]): Unit
       
-      def get(setting: String): js.Any = js.native
+      def get(setting: String): js.Any
       
-      def getCredentialsByURI(uri: String): Credentials = js.native
+      def getCredentialsByURI(uri: String): Credentials
       
-      def loadCAFile(caFilePath: String, cb: ErrorCallback): Unit = js.native
+      def loadCAFile(caFilePath: String, cb: ErrorCallback): Unit
       
-      def loadExtras(cb: ErrorCallback): Unit = js.native
+      def loadExtras(cb: ErrorCallback): Unit
       
-      def loadPrefix(cb: ErrorCallback): Unit = js.native
+      def loadPrefix(cb: ErrorCallback): Unit
       
-      def loadUid(cb: SimpleCallback[String]): Unit = js.native
+      def loadUid(cb: SimpleCallback[String]): Unit
       
-      var loaded: Boolean = js.native
+      var loaded: Boolean
       
-      def parse(content: String, file: String): js.Any = js.native
+      def parse(content: String, file: String): js.Any
       
-      var root: js.UndefOr[Config] = js.native
+      var root: js.UndefOr[Config] = js.undefined
       
-      var rootConf: Config = js.native
+      var rootConf: Config
       
-      def save(where: String, cb: ErrorCallback): Config = js.native
+      def save(where: String, cb: ErrorCallback): Config
       
-      def set(setting: String, value: js.Any): Unit = js.native
+      def set(setting: String, value: js.Any): Unit
       
-      def setCredentialsByURI(uri: String, cred: Credentials): Unit = js.native
+      def setCredentialsByURI(uri: String, cred: Credentials): Unit
       
-      def setUser(cb: ErrorCallback): Unit = js.native
+      def setUser(cb: ErrorCallback): Unit
       
-      var sources: Dictionary[ConfigSource] = js.native
+      var sources: Dictionary[ConfigSource]
       
-      var usingBuiltin: Boolean = js.native
+      var usingBuiltin: Boolean
+    }
+    object Config {
+      
+      @scala.inline
+      def apply(
+        Conf: ConfigStatic,
+        add: (js.Object, js.Object) => js.Any,
+        addEnv: Dictionary[String] => js.Any,
+        addFile: (String, String) => Config,
+        defs: ConfigDefs,
+        findPrefix: (String, SimpleCallback[String]) => Unit,
+        get: String => js.Any,
+        getCredentialsByURI: String => Credentials,
+        loadCAFile: (String, ErrorCallback) => Unit,
+        loadExtras: ErrorCallback => Unit,
+        loadPrefix: ErrorCallback => Unit,
+        loadUid: SimpleCallback[String] => Unit,
+        loaded: Boolean,
+        parse: (String, String) => js.Any,
+        rootConf: Config,
+        save: (String, ErrorCallback) => Config,
+        set: (String, js.Any) => Unit,
+        setCredentialsByURI: (String, Credentials) => Unit,
+        setUser: ErrorCallback => Unit,
+        sources: Dictionary[ConfigSource],
+        usingBuiltin: Boolean
+      ): Config = {
+        val __obj = js.Dynamic.literal(Conf = Conf.asInstanceOf[js.Any], add = js.Any.fromFunction2(add), addEnv = js.Any.fromFunction1(addEnv), addFile = js.Any.fromFunction2(addFile), defs = defs.asInstanceOf[js.Any], findPrefix = js.Any.fromFunction2(findPrefix), get = js.Any.fromFunction1(get), getCredentialsByURI = js.Any.fromFunction1(getCredentialsByURI), loadCAFile = js.Any.fromFunction2(loadCAFile), loadExtras = js.Any.fromFunction1(loadExtras), loadPrefix = js.Any.fromFunction1(loadPrefix), loadUid = js.Any.fromFunction1(loadUid), loaded = loaded.asInstanceOf[js.Any], parse = js.Any.fromFunction2(parse), rootConf = rootConf.asInstanceOf[js.Any], save = js.Any.fromFunction2(save), set = js.Any.fromFunction2(set), setCredentialsByURI = js.Any.fromFunction2(setCredentialsByURI), setUser = js.Any.fromFunction1(setUser), sources = sources.asInstanceOf[js.Any], usingBuiltin = usingBuiltin.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Config]
+      }
+      
+      @scala.inline
+      implicit class ConfigMutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setAdd(value: (js.Object, js.Object) => js.Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setAddEnv(value: Dictionary[String] => js.Any): Self = StObject.set(x, "addEnv", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setAddFile(value: (String, String) => Config): Self = StObject.set(x, "addFile", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setConf(value: ConfigStatic): Self = StObject.set(x, "Conf", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDefs(value: ConfigDefs): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setFindPrefix(value: (String, SimpleCallback[String]) => Unit): Self = StObject.set(x, "findPrefix", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setGet(value: String => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setGetCredentialsByURI(value: String => Credentials): Self = StObject.set(x, "getCredentialsByURI", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setLoadCAFile(value: (String, ErrorCallback) => Unit): Self = StObject.set(x, "loadCAFile", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setLoadExtras(value: ErrorCallback => Unit): Self = StObject.set(x, "loadExtras", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setLoadPrefix(value: ErrorCallback => Unit): Self = StObject.set(x, "loadPrefix", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setLoadUid(value: SimpleCallback[String] => Unit): Self = StObject.set(x, "loadUid", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setLoaded(value: Boolean): Self = StObject.set(x, "loaded", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setParse(value: (String, String) => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setRoot(value: Config): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setRootConf(value: Config): Self = StObject.set(x, "rootConf", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setRootUndefined: Self = StObject.set(x, "root", js.undefined)
+        
+        @scala.inline
+        def setSave(value: (String, ErrorCallback) => Config): Self = StObject.set(x, "save", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setSet(value: (String, js.Any) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setSetCredentialsByURI(value: (String, Credentials) => Unit): Self = StObject.set(x, "setCredentialsByURI", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setSetUser(value: ErrorCallback => Unit): Self = StObject.set(x, "setUser", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setSources(value: Dictionary[ConfigSource]): Self = StObject.set(x, "sources", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUsingBuiltin(value: Boolean): Self = StObject.set(x, "usingBuiltin", value.asInstanceOf[js.Any])
+      }
     }
     
-    @js.native
     trait ConfigDefs extends StObject {
       
-      var defaults: ConfigOptions = js.native
+      var defaults: ConfigOptions
       
-      var types: ConfigTypes = js.native
+      var types: ConfigTypes
     }
     object ConfigDefs {
       
@@ -495,189 +595,188 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ConfigOptions extends StObject {
       
-      var _exit: js.UndefOr[Boolean] = js.native
+      var _exit: js.UndefOr[Boolean] = js.undefined
       
-      var `always-auth`: js.UndefOr[Boolean] = js.native
+      var `always-auth`: js.UndefOr[Boolean] = js.undefined
       
-      var `bin-links`: js.UndefOr[Boolean] = js.native
+      var `bin-links`: js.UndefOr[Boolean] = js.undefined
       
-      var browser: js.UndefOr[String] = js.native
+      var browser: js.UndefOr[String] = js.undefined
       
-      var ca: js.UndefOr[js.Any] = js.native
+      var ca: js.UndefOr[js.Any] = js.undefined
       
-      var cache: js.UndefOr[String] = js.native
+      var cache: js.UndefOr[String] = js.undefined
       
-      var `cache-lock-retries`: js.UndefOr[Double] = js.native
+      var `cache-lock-retries`: js.UndefOr[Double] = js.undefined
       
-      var `cache-lock-stale`: js.UndefOr[Double] = js.native
+      var `cache-lock-stale`: js.UndefOr[Double] = js.undefined
       
-      var `cache-lock-wait`: js.UndefOr[Double] = js.native
+      var `cache-lock-wait`: js.UndefOr[Double] = js.undefined
       
-      var `cache-max`: js.UndefOr[Double] = js.native
+      var `cache-max`: js.UndefOr[Double] = js.undefined
       
-      var `cache-min`: js.UndefOr[Double] = js.native
+      var `cache-min`: js.UndefOr[Double] = js.undefined
       
       // string | string[]
-      var cafile: js.UndefOr[String] = js.native
+      var cafile: js.UndefOr[String] = js.undefined
       
-      var cert: js.UndefOr[String] = js.native
+      var cert: js.UndefOr[String] = js.undefined
       
-      var color: js.UndefOr[js.Any] = js.native
+      var color: js.UndefOr[js.Any] = js.undefined
       
       // boolean | string ("always")
-      var depth: js.UndefOr[Double] = js.native
+      var depth: js.UndefOr[Double] = js.undefined
       
-      var description: js.UndefOr[Boolean] = js.native
+      var description: js.UndefOr[Boolean] = js.undefined
       
-      var dev: js.UndefOr[Boolean] = js.native
+      var dev: js.UndefOr[Boolean] = js.undefined
       
-      var editor: js.UndefOr[String] = js.native
+      var editor: js.UndefOr[String] = js.undefined
       
-      var `engine-strict`: js.UndefOr[Boolean] = js.native
+      var `engine-strict`: js.UndefOr[Boolean] = js.undefined
       
-      var `fetch-retries`: js.UndefOr[Double] = js.native
+      var `fetch-retries`: js.UndefOr[Double] = js.undefined
       
-      var `fetch-retry-factor`: js.UndefOr[Double] = js.native
+      var `fetch-retry-factor`: js.UndefOr[Double] = js.undefined
       
-      var `fetch-retry-maxtimeout`: js.UndefOr[Double] = js.native
+      var `fetch-retry-maxtimeout`: js.UndefOr[Double] = js.undefined
       
-      var `fetch-retry-mintimeout`: js.UndefOr[Double] = js.native
+      var `fetch-retry-mintimeout`: js.UndefOr[Double] = js.undefined
       
-      var force: js.UndefOr[Boolean] = js.native
+      var force: js.UndefOr[Boolean] = js.undefined
       
-      var git: js.UndefOr[String] = js.native
+      var git: js.UndefOr[String] = js.undefined
       
-      var `git-tag-version`: js.UndefOr[Boolean] = js.native
+      var `git-tag-version`: js.UndefOr[Boolean] = js.undefined
       
-      var global: js.UndefOr[Boolean] = js.native
+      var global: js.UndefOr[Boolean] = js.undefined
       
-      var globalconfig: js.UndefOr[String] = js.native
+      var globalconfig: js.UndefOr[String] = js.undefined
       
-      var group: js.UndefOr[js.Any] = js.native
+      var group: js.UndefOr[js.Any] = js.undefined
       
       // number | string
-      var heading: js.UndefOr[String] = js.native
+      var heading: js.UndefOr[String] = js.undefined
       
       // boolean | string
-      var `https-proxy`: js.UndefOr[String] = js.native
+      var `https-proxy`: js.UndefOr[String] = js.undefined
       
-      var `ignore-scripts`: js.UndefOr[Boolean] = js.native
+      var `ignore-scripts`: js.UndefOr[Boolean] = js.undefined
       
-      var `init-module`: js.UndefOr[String] = js.native
+      var `init-module`: js.UndefOr[String] = js.undefined
       
       @JSName("init.author.email")
-      var initDotauthorDotemail: js.UndefOr[String] = js.native
+      var initDotauthorDotemail: js.UndefOr[String] = js.undefined
       
       @JSName("init.author.name")
-      var initDotauthorDotname: js.UndefOr[String] = js.native
+      var initDotauthorDotname: js.UndefOr[String] = js.undefined
       
       @JSName("init.author.url")
-      var initDotauthorDoturl: js.UndefOr[String] = js.native
+      var initDotauthorDoturl: js.UndefOr[String] = js.undefined
       
       @JSName("init.license")
-      var initDotlicense: js.UndefOr[String] = js.native
+      var initDotlicense: js.UndefOr[String] = js.undefined
       
       @JSName("init.version")
-      var initDotversion: js.UndefOr[String] = js.native
+      var initDotversion: js.UndefOr[String] = js.undefined
       
-      var json: js.UndefOr[Boolean] = js.native
+      var json: js.UndefOr[Boolean] = js.undefined
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var link: js.UndefOr[Boolean] = js.native
+      var link: js.UndefOr[Boolean] = js.undefined
       
-      var `local-address`: js.UndefOr[String] = js.native
+      var `local-address`: js.UndefOr[String] = js.undefined
       
-      var loglevel: js.UndefOr[String] = js.native
+      var loglevel: js.UndefOr[String] = js.undefined
       
-      var logstream: js.UndefOr[ReadWriteStream] = js.native
+      var logstream: js.UndefOr[ReadWriteStream] = js.undefined
       
-      var long: js.UndefOr[Boolean] = js.native
+      var long: js.UndefOr[Boolean] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var `node-version`: js.UndefOr[String] = js.native
+      var `node-version`: js.UndefOr[String] = js.undefined
       
-      var npat: js.UndefOr[Boolean] = js.native
+      var npat: js.UndefOr[Boolean] = js.undefined
       
-      var `onload-script`: js.UndefOr[Boolean] = js.native
+      var `onload-script`: js.UndefOr[Boolean] = js.undefined
       
-      var optional: js.UndefOr[Boolean] = js.native
+      var optional: js.UndefOr[Boolean] = js.undefined
       
-      var parseable: js.UndefOr[Boolean] = js.native
+      var parseable: js.UndefOr[Boolean] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
-      var production: js.UndefOr[Boolean] = js.native
+      var production: js.UndefOr[Boolean] = js.undefined
       
-      var `proprietary-attribs`: js.UndefOr[Boolean] = js.native
+      var `proprietary-attribs`: js.UndefOr[Boolean] = js.undefined
       
-      var proxy: js.UndefOr[js.Any] = js.native
+      var proxy: js.UndefOr[js.Any] = js.undefined
       
-      var `rebuild-bundle`: js.UndefOr[Boolean] = js.native
+      var `rebuild-bundle`: js.UndefOr[Boolean] = js.undefined
       
-      var registry: js.UndefOr[String] = js.native
+      var registry: js.UndefOr[String] = js.undefined
       
-      var rollback: js.UndefOr[Boolean] = js.native
+      var rollback: js.UndefOr[Boolean] = js.undefined
       
-      var save: js.UndefOr[Boolean] = js.native
+      var save: js.UndefOr[Boolean] = js.undefined
       
-      var `save-bundle`: js.UndefOr[Boolean] = js.native
+      var `save-bundle`: js.UndefOr[Boolean] = js.undefined
       
-      var `save-dev`: js.UndefOr[Boolean] = js.native
+      var `save-dev`: js.UndefOr[Boolean] = js.undefined
       
-      var `save-exact`: js.UndefOr[Boolean] = js.native
+      var `save-exact`: js.UndefOr[Boolean] = js.undefined
       
-      var `save-optional`: js.UndefOr[Boolean] = js.native
+      var `save-optional`: js.UndefOr[Boolean] = js.undefined
       
-      var `save-prefix`: js.UndefOr[String] = js.native
+      var `save-prefix`: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
       
-      var searchexclude: js.UndefOr[String] = js.native
+      var searchexclude: js.UndefOr[String] = js.undefined
       
-      var searchopts: js.UndefOr[String] = js.native
+      var searchopts: js.UndefOr[String] = js.undefined
       
-      var searchsort: js.UndefOr[String] = js.native
+      var searchsort: js.UndefOr[String] = js.undefined
       
-      var shell: js.UndefOr[String] = js.native
+      var shell: js.UndefOr[String] = js.undefined
       
-      var shrinkwrap: js.UndefOr[Boolean] = js.native
+      var shrinkwrap: js.UndefOr[Boolean] = js.undefined
       
-      var `sign-git-tag`: js.UndefOr[Boolean] = js.native
+      var `sign-git-tag`: js.UndefOr[Boolean] = js.undefined
       
-      var spin: js.UndefOr[js.Any] = js.native
+      var spin: js.UndefOr[js.Any] = js.undefined
       
       // boolean | string ("always")
-      var `strict-ssl`: js.UndefOr[Boolean] = js.native
+      var `strict-ssl`: js.UndefOr[Boolean] = js.undefined
       
-      var tag: js.UndefOr[String] = js.native
+      var tag: js.UndefOr[String] = js.undefined
       
-      var tmp: js.UndefOr[String] = js.native
+      var tmp: js.UndefOr[String] = js.undefined
       
-      var umask: js.UndefOr[Double] = js.native
+      var umask: js.UndefOr[Double] = js.undefined
       
-      var unicode: js.UndefOr[Boolean] = js.native
+      var unicode: js.UndefOr[Boolean] = js.undefined
       
-      var `unsafe-perm`: js.UndefOr[Boolean] = js.native
+      var `unsafe-perm`: js.UndefOr[Boolean] = js.undefined
       
-      var usage: js.UndefOr[Boolean] = js.native
+      var usage: js.UndefOr[Boolean] = js.undefined
       
-      var user: js.UndefOr[js.Any] = js.native
+      var user: js.UndefOr[js.Any] = js.undefined
       
-      var `user-agent`: js.UndefOr[String] = js.native
+      var `user-agent`: js.UndefOr[String] = js.undefined
       
       // string | number
-      var userconfig: js.UndefOr[String] = js.native
+      var userconfig: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[Boolean] = js.native
+      var version: js.UndefOr[Boolean] = js.undefined
       
-      var versions: js.UndefOr[Boolean] = js.native
+      var versions: js.UndefOr[Boolean] = js.undefined
       
-      var viewer: js.UndefOr[String] = js.native
+      var viewer: js.UndefOr[String] = js.undefined
     }
     object ConfigOptions {
       
@@ -1202,122 +1301,121 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ConfigShorthands extends StObject {
       
-      var B: js.Array[_] = js.native
+      var B: js.Array[js.Any]
       
-      var C: js.Array[_] = js.native
+      var C: js.Array[js.Any]
       
-      var D: js.Array[_] = js.native
+      var D: js.Array[js.Any]
       
-      var E: js.Array[_] = js.native
+      var E: js.Array[js.Any]
       
-      var H: js.Array[_] = js.native
+      var H: js.Array[js.Any]
       
-      var N: js.Array[_] = js.native
+      var N: js.Array[js.Any]
       
-      var O: js.Array[_] = js.native
+      var O: js.Array[js.Any]
       
       @JSName("?")
-      var Questionmark: js.Array[_] = js.native
+      var Questionmark: js.Array[js.Any]
       
-      var S: js.Array[_] = js.native
+      var S: js.Array[js.Any]
       
-      var d: js.Array[_] = js.native
+      var d: js.Array[js.Any]
       
-      var dd: js.Array[_] = js.native
+      var dd: js.Array[js.Any]
       
-      var ddd: js.Array[_] = js.native
+      var ddd: js.Array[js.Any]
       
-      var desc: js.Array[_] = js.native
+      var desc: js.Array[js.Any]
       
-      var f: js.Array[_] = js.native
+      var f: js.Array[js.Any]
       
-      var g: js.Array[_] = js.native
+      var g: js.Array[js.Any]
       
-      var gangsta: js.Array[_] = js.native
+      var gangsta: js.Array[js.Any]
       
-      var gangster: js.Array[_] = js.native
+      var gangster: js.Array[js.Any]
       
-      var h: js.Array[_] = js.native
+      var h: js.Array[js.Any]
       
-      var help: js.Array[_] = js.native
+      var help: js.Array[js.Any]
       
-      var l: js.Array[_] = js.native
+      var l: js.Array[js.Any]
       
-      var local: js.Array[_] = js.native
+      var local: js.Array[js.Any]
       
-      var m: js.Array[_] = js.native
+      var m: js.Array[js.Any]
       
-      var n: js.Array[_] = js.native
+      var n: js.Array[js.Any]
       
-      var `no-desc`: js.Array[_] = js.native
+      var `no-desc`: js.Array[js.Any]
       
-      var `no-reg`: js.Array[_] = js.native
+      var `no-reg`: js.Array[js.Any]
       
-      var noreg: js.Array[_] = js.native
+      var noreg: js.Array[js.Any]
       
-      var p: js.Array[_] = js.native
+      var p: js.Array[js.Any]
       
-      var porcelain: js.Array[_] = js.native
+      var porcelain: js.Array[js.Any]
       
-      var q: js.Array[_] = js.native
+      var q: js.Array[js.Any]
       
-      var quiet: js.Array[_] = js.native
+      var quiet: js.Array[js.Any]
       
-      var reg: js.Array[_] = js.native
+      var reg: js.Array[js.Any]
       
-      var s: js.Array[_] = js.native
+      var s: js.Array[js.Any]
       
-      var silent: js.Array[_] = js.native
+      var silent: js.Array[js.Any]
       
-      var v: js.Array[_] = js.native
+      var v: js.Array[js.Any]
       
-      var verbose: js.Array[_] = js.native
+      var verbose: js.Array[js.Any]
       
-      var y: js.Array[_] = js.native
+      var y: js.Array[js.Any]
     }
     object ConfigShorthands {
       
       @scala.inline
       def apply(
-        B: js.Array[_],
-        C: js.Array[_],
-        D: js.Array[_],
-        E: js.Array[_],
-        H: js.Array[_],
-        N: js.Array[_],
-        O: js.Array[_],
-        Questionmark: js.Array[_],
-        S: js.Array[_],
-        d: js.Array[_],
-        dd: js.Array[_],
-        ddd: js.Array[_],
-        desc: js.Array[_],
-        f: js.Array[_],
-        g: js.Array[_],
-        gangsta: js.Array[_],
-        gangster: js.Array[_],
-        h: js.Array[_],
-        help: js.Array[_],
-        l: js.Array[_],
-        local: js.Array[_],
-        m: js.Array[_],
-        n: js.Array[_],
-        `no-desc`: js.Array[_],
-        `no-reg`: js.Array[_],
-        noreg: js.Array[_],
-        p: js.Array[_],
-        porcelain: js.Array[_],
-        q: js.Array[_],
-        quiet: js.Array[_],
-        reg: js.Array[_],
-        s: js.Array[_],
-        silent: js.Array[_],
-        v: js.Array[_],
-        verbose: js.Array[_],
-        y: js.Array[_]
+        B: js.Array[js.Any],
+        C: js.Array[js.Any],
+        D: js.Array[js.Any],
+        E: js.Array[js.Any],
+        H: js.Array[js.Any],
+        N: js.Array[js.Any],
+        O: js.Array[js.Any],
+        Questionmark: js.Array[js.Any],
+        S: js.Array[js.Any],
+        d: js.Array[js.Any],
+        dd: js.Array[js.Any],
+        ddd: js.Array[js.Any],
+        desc: js.Array[js.Any],
+        f: js.Array[js.Any],
+        g: js.Array[js.Any],
+        gangsta: js.Array[js.Any],
+        gangster: js.Array[js.Any],
+        h: js.Array[js.Any],
+        help: js.Array[js.Any],
+        l: js.Array[js.Any],
+        local: js.Array[js.Any],
+        m: js.Array[js.Any],
+        n: js.Array[js.Any],
+        `no-desc`: js.Array[js.Any],
+        `no-reg`: js.Array[js.Any],
+        noreg: js.Array[js.Any],
+        p: js.Array[js.Any],
+        porcelain: js.Array[js.Any],
+        q: js.Array[js.Any],
+        quiet: js.Array[js.Any],
+        reg: js.Array[js.Any],
+        s: js.Array[js.Any],
+        silent: js.Array[js.Any],
+        v: js.Array[js.Any],
+        verbose: js.Array[js.Any],
+        y: js.Array[js.Any]
       ): ConfigShorthands = {
         val __obj = js.Dynamic.literal(B = B.asInstanceOf[js.Any], C = C.asInstanceOf[js.Any], D = D.asInstanceOf[js.Any], E = E.asInstanceOf[js.Any], H = H.asInstanceOf[js.Any], N = N.asInstanceOf[js.Any], O = O.asInstanceOf[js.Any], S = S.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], dd = dd.asInstanceOf[js.Any], ddd = ddd.asInstanceOf[js.Any], desc = desc.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], gangsta = gangsta.asInstanceOf[js.Any], gangster = gangster.asInstanceOf[js.Any], h = h.asInstanceOf[js.Any], help = help.asInstanceOf[js.Any], l = l.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], n = n.asInstanceOf[js.Any], noreg = noreg.asInstanceOf[js.Any], p = p.asInstanceOf[js.Any], porcelain = porcelain.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any], quiet = quiet.asInstanceOf[js.Any], reg = reg.asInstanceOf[js.Any], s = s.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
         __obj.updateDynamic("?")(Questionmark.asInstanceOf[js.Any])
@@ -1330,205 +1428,204 @@ object mod extends Shortcut {
       implicit class ConfigShorthandsMutableBuilder[Self <: ConfigShorthands] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setB(value: js.Array[_]): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
+        def setB(value: js.Array[js.Any]): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setBVarargs(value: js.Any*): Self = StObject.set(x, "B", js.Array(value :_*))
         
         @scala.inline
-        def setC(value: js.Array[_]): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
+        def setC(value: js.Array[js.Any]): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setCVarargs(value: js.Any*): Self = StObject.set(x, "C", js.Array(value :_*))
         
         @scala.inline
-        def setD(value: js.Array[_]): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+        def setD(value: js.Array[js.Any]): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDVarargs(value: js.Any*): Self = StObject.set(x, "D", js.Array(value :_*))
         
         @scala.inline
-        def setDd(value: js.Array[_]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
+        def setDd(value: js.Array[js.Any]): Self = StObject.set(x, "dd", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDdVarargs(value: js.Any*): Self = StObject.set(x, "dd", js.Array(value :_*))
         
         @scala.inline
-        def setDdd(value: js.Array[_]): Self = StObject.set(x, "ddd", value.asInstanceOf[js.Any])
+        def setDdd(value: js.Array[js.Any]): Self = StObject.set(x, "ddd", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDddVarargs(value: js.Any*): Self = StObject.set(x, "ddd", js.Array(value :_*))
         
         @scala.inline
-        def setDesc(value: js.Array[_]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
+        def setDesc(value: js.Array[js.Any]): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setDescVarargs(value: js.Any*): Self = StObject.set(x, "desc", js.Array(value :_*))
         
         @scala.inline
-        def setE(value: js.Array[_]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
+        def setE(value: js.Array[js.Any]): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setEVarargs(value: js.Any*): Self = StObject.set(x, "E", js.Array(value :_*))
         
         @scala.inline
-        def setF(value: js.Array[_]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
+        def setF(value: js.Array[js.Any]): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setFVarargs(value: js.Any*): Self = StObject.set(x, "f", js.Array(value :_*))
         
         @scala.inline
-        def setG(value: js.Array[_]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+        def setG(value: js.Array[js.Any]): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setGVarargs(value: js.Any*): Self = StObject.set(x, "g", js.Array(value :_*))
         
         @scala.inline
-        def setGangsta(value: js.Array[_]): Self = StObject.set(x, "gangsta", value.asInstanceOf[js.Any])
+        def setGangsta(value: js.Array[js.Any]): Self = StObject.set(x, "gangsta", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setGangstaVarargs(value: js.Any*): Self = StObject.set(x, "gangsta", js.Array(value :_*))
         
         @scala.inline
-        def setGangster(value: js.Array[_]): Self = StObject.set(x, "gangster", value.asInstanceOf[js.Any])
+        def setGangster(value: js.Array[js.Any]): Self = StObject.set(x, "gangster", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setGangsterVarargs(value: js.Any*): Self = StObject.set(x, "gangster", js.Array(value :_*))
         
         @scala.inline
-        def setH(value: js.Array[_]): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
+        def setH(value: js.Array[js.Any]): Self = StObject.set(x, "H", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setHVarargs(value: js.Any*): Self = StObject.set(x, "H", js.Array(value :_*))
         
         @scala.inline
-        def setHelp(value: js.Array[_]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+        def setHelp(value: js.Array[js.Any]): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setHelpVarargs(value: js.Any*): Self = StObject.set(x, "help", js.Array(value :_*))
         
         @scala.inline
-        def setL(value: js.Array[_]): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
+        def setL(value: js.Array[js.Any]): Self = StObject.set(x, "l", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLVarargs(value: js.Any*): Self = StObject.set(x, "l", js.Array(value :_*))
         
         @scala.inline
-        def setLocal(value: js.Array[_]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
+        def setLocal(value: js.Array[js.Any]): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setLocalVarargs(value: js.Any*): Self = StObject.set(x, "local", js.Array(value :_*))
         
         @scala.inline
-        def setM(value: js.Array[_]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+        def setM(value: js.Array[js.Any]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMVarargs(value: js.Any*): Self = StObject.set(x, "m", js.Array(value :_*))
         
         @scala.inline
-        def setN(value: js.Array[_]): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+        def setN(value: js.Array[js.Any]): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setNVarargs(value: js.Any*): Self = StObject.set(x, "N", js.Array(value :_*))
         
         @scala.inline
-        def `setNo-desc`(value: js.Array[_]): Self = StObject.set(x, "no-desc", value.asInstanceOf[js.Any])
+        def `setNo-desc`(value: js.Array[js.Any]): Self = StObject.set(x, "no-desc", value.asInstanceOf[js.Any])
         
         @scala.inline
         def `setNo-descVarargs`(value: js.Any*): Self = StObject.set(x, "no-desc", js.Array(value :_*))
         
         @scala.inline
-        def `setNo-reg`(value: js.Array[_]): Self = StObject.set(x, "no-reg", value.asInstanceOf[js.Any])
+        def `setNo-reg`(value: js.Array[js.Any]): Self = StObject.set(x, "no-reg", value.asInstanceOf[js.Any])
         
         @scala.inline
         def `setNo-regVarargs`(value: js.Any*): Self = StObject.set(x, "no-reg", js.Array(value :_*))
         
         @scala.inline
-        def setNoreg(value: js.Array[_]): Self = StObject.set(x, "noreg", value.asInstanceOf[js.Any])
+        def setNoreg(value: js.Array[js.Any]): Self = StObject.set(x, "noreg", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setNoregVarargs(value: js.Any*): Self = StObject.set(x, "noreg", js.Array(value :_*))
         
         @scala.inline
-        def setO(value: js.Array[_]): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
+        def setO(value: js.Array[js.Any]): Self = StObject.set(x, "O", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setOVarargs(value: js.Any*): Self = StObject.set(x, "O", js.Array(value :_*))
         
         @scala.inline
-        def setP(value: js.Array[_]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
+        def setP(value: js.Array[js.Any]): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPVarargs(value: js.Any*): Self = StObject.set(x, "p", js.Array(value :_*))
         
         @scala.inline
-        def setPorcelain(value: js.Array[_]): Self = StObject.set(x, "porcelain", value.asInstanceOf[js.Any])
+        def setPorcelain(value: js.Array[js.Any]): Self = StObject.set(x, "porcelain", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPorcelainVarargs(value: js.Any*): Self = StObject.set(x, "porcelain", js.Array(value :_*))
         
         @scala.inline
-        def setQ(value: js.Array[_]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
+        def setQ(value: js.Array[js.Any]): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setQVarargs(value: js.Any*): Self = StObject.set(x, "q", js.Array(value :_*))
         
         @scala.inline
-        def setQuestionmark(value: js.Array[_]): Self = StObject.set(x, "?", value.asInstanceOf[js.Any])
+        def setQuestionmark(value: js.Array[js.Any]): Self = StObject.set(x, "?", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setQuestionmarkVarargs(value: js.Any*): Self = StObject.set(x, "?", js.Array(value :_*))
         
         @scala.inline
-        def setQuiet(value: js.Array[_]): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
+        def setQuiet(value: js.Array[js.Any]): Self = StObject.set(x, "quiet", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setQuietVarargs(value: js.Any*): Self = StObject.set(x, "quiet", js.Array(value :_*))
         
         @scala.inline
-        def setReg(value: js.Array[_]): Self = StObject.set(x, "reg", value.asInstanceOf[js.Any])
+        def setReg(value: js.Array[js.Any]): Self = StObject.set(x, "reg", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setRegVarargs(value: js.Any*): Self = StObject.set(x, "reg", js.Array(value :_*))
         
         @scala.inline
-        def setS(value: js.Array[_]): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
+        def setS(value: js.Array[js.Any]): Self = StObject.set(x, "S", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setSVarargs(value: js.Any*): Self = StObject.set(x, "S", js.Array(value :_*))
         
         @scala.inline
-        def setSilent(value: js.Array[_]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
+        def setSilent(value: js.Array[js.Any]): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setSilentVarargs(value: js.Any*): Self = StObject.set(x, "silent", js.Array(value :_*))
         
         @scala.inline
-        def setV(value: js.Array[_]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
+        def setV(value: js.Array[js.Any]): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setVVarargs(value: js.Any*): Self = StObject.set(x, "v", js.Array(value :_*))
         
         @scala.inline
-        def setVerbose(value: js.Array[_]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
+        def setVerbose(value: js.Array[js.Any]): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setVerboseVarargs(value: js.Any*): Self = StObject.set(x, "verbose", js.Array(value :_*))
         
         @scala.inline
-        def setY(value: js.Array[_]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
+        def setY(value: js.Array[js.Any]): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setYVarargs(value: js.Any*): Self = StObject.set(x, "y", js.Array(value :_*))
       }
     }
     
-    @js.native
     trait ConfigSource extends StObject {
       
-      var path: String = js.native
+      var path: String
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object ConfigSource {
       
@@ -1551,422 +1648,852 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait ConfigStatic extends Instantiable1[/* base */ Config, Config] {
+    trait ConfigStatic
+      extends StObject
+         with Instantiable1[/* base */ Config, Config] {
       
       def apply(base: Config): Config = js.native
     }
     
-    @js.native
     trait ConfigTypes extends StObject {
       
-      def _exit[T](): Boolean = js.native
-      def _exit[T](value: T): Boolean = js.native
+      def _exit[T](): Boolean
+      def _exit[T](value: T): Boolean
       @JSName("_exit")
-      var _exit_Original: BooleanConstructor = js.native
+      var _exit_Original: BooleanConstructor
       
-      def `always-auth`[T](): Boolean = js.native
-      def `always-auth`[T](value: T): Boolean = js.native
+      def `always-auth`[T](): Boolean
+      def `always-auth`[T](value: T): Boolean
       @JSName("always-auth")
-      var `always-auth_Original`: BooleanConstructor = js.native
+      var `always-auth_Original`: BooleanConstructor
       
-      def `bin-links`[T](): Boolean = js.native
-      def `bin-links`[T](value: T): Boolean = js.native
+      def `bin-links`[T](): Boolean
+      def `bin-links`[T](value: T): Boolean
       @JSName("bin-links")
-      var `bin-links_Original`: BooleanConstructor = js.native
+      var `bin-links_Original`: BooleanConstructor
       
-      var browser: js.Array[_] = js.native
+      var browser: js.Array[js.Any]
       
-      var ca: js.Array[_] = js.native
+      var ca: js.Array[js.Any]
       
-      def cache(): String = js.native
-      def cache(value: js.Any): String = js.native
+      def cache(): String
+      def cache(value: js.Any): String
       
-      def `cache-lock-retries`(): Double = js.native
-      def `cache-lock-retries`(value: js.Any): Double = js.native
+      def `cache-lock-retries`(): Double
+      def `cache-lock-retries`(value: js.Any): Double
       @JSName("cache-lock-retries")
-      var `cache-lock-retries_Original`: NumberConstructor = js.native
+      var `cache-lock-retries_Original`: NumberConstructor
       
-      def `cache-lock-stale`(): Double = js.native
-      def `cache-lock-stale`(value: js.Any): Double = js.native
+      def `cache-lock-stale`(): Double
+      def `cache-lock-stale`(value: js.Any): Double
       @JSName("cache-lock-stale")
-      var `cache-lock-stale_Original`: NumberConstructor = js.native
+      var `cache-lock-stale_Original`: NumberConstructor
       
-      def `cache-lock-wait`(): Double = js.native
-      def `cache-lock-wait`(value: js.Any): Double = js.native
+      def `cache-lock-wait`(): Double
+      def `cache-lock-wait`(value: js.Any): Double
       @JSName("cache-lock-wait")
-      var `cache-lock-wait_Original`: NumberConstructor = js.native
+      var `cache-lock-wait_Original`: NumberConstructor
       
-      def `cache-max`(): Double = js.native
-      def `cache-max`(value: js.Any): Double = js.native
+      def `cache-max`(): Double
+      def `cache-max`(value: js.Any): Double
       @JSName("cache-max")
-      var `cache-max_Original`: NumberConstructor = js.native
+      var `cache-max_Original`: NumberConstructor
       
-      def `cache-min`(): Double = js.native
-      def `cache-min`(value: js.Any): Double = js.native
+      def `cache-min`(): Double
+      def `cache-min`(value: js.Any): Double
       @JSName("cache-min")
-      var `cache-min_Original`: NumberConstructor = js.native
+      var `cache-min_Original`: NumberConstructor
       
       @JSName("cache")
-      var cache_Original: StringConstructor = js.native
+      var cache_Original: StringConstructor
       
-      def cafile(): String = js.native
-      def cafile(value: js.Any): String = js.native
+      def cafile(): String
+      def cafile(value: js.Any): String
       @JSName("cafile")
-      var cafile_Original: StringConstructor = js.native
+      var cafile_Original: StringConstructor
       
-      def cert(): String = js.native
-      def cert(value: js.Any): String = js.native
+      def cert(): String
+      def cert(value: js.Any): String
       @JSName("cert")
-      var cert_Original: StringConstructor = js.native
+      var cert_Original: StringConstructor
       
-      var color: js.Array[_] = js.native
+      var color: js.Array[js.Any]
       
-      def depth(): Double = js.native
-      def depth(value: js.Any): Double = js.native
+      def depth(): Double
+      def depth(value: js.Any): Double
       @JSName("depth")
-      var depth_Original: NumberConstructor = js.native
+      var depth_Original: NumberConstructor
       
-      def description[T](): Boolean = js.native
-      def description[T](value: T): Boolean = js.native
+      def description[T](): Boolean
+      def description[T](value: T): Boolean
       @JSName("description")
-      var description_Original: BooleanConstructor = js.native
+      var description_Original: BooleanConstructor
       
-      def dev[T](): Boolean = js.native
-      def dev[T](value: T): Boolean = js.native
+      def dev[T](): Boolean
+      def dev[T](value: T): Boolean
       @JSName("dev")
-      var dev_Original: BooleanConstructor = js.native
+      var dev_Original: BooleanConstructor
       
-      def editor(): String = js.native
-      def editor(value: js.Any): String = js.native
+      def editor(): String
+      def editor(value: js.Any): String
       @JSName("editor")
-      var editor_Original: StringConstructor = js.native
+      var editor_Original: StringConstructor
       
-      def `engine-strict`[T](): Boolean = js.native
-      def `engine-strict`[T](value: T): Boolean = js.native
+      def `engine-strict`[T](): Boolean
+      def `engine-strict`[T](value: T): Boolean
       @JSName("engine-strict")
-      var `engine-strict_Original`: BooleanConstructor = js.native
+      var `engine-strict_Original`: BooleanConstructor
       
-      def `fetch-retries`(): Double = js.native
-      def `fetch-retries`(value: js.Any): Double = js.native
+      def `fetch-retries`(): Double
+      def `fetch-retries`(value: js.Any): Double
       @JSName("fetch-retries")
-      var `fetch-retries_Original`: NumberConstructor = js.native
+      var `fetch-retries_Original`: NumberConstructor
       
-      def `fetch-retry-factor`(): Double = js.native
-      def `fetch-retry-factor`(value: js.Any): Double = js.native
+      def `fetch-retry-factor`(): Double
+      def `fetch-retry-factor`(value: js.Any): Double
       @JSName("fetch-retry-factor")
-      var `fetch-retry-factor_Original`: NumberConstructor = js.native
+      var `fetch-retry-factor_Original`: NumberConstructor
       
-      def `fetch-retry-maxtimeout`(): Double = js.native
-      def `fetch-retry-maxtimeout`(value: js.Any): Double = js.native
+      def `fetch-retry-maxtimeout`(): Double
+      def `fetch-retry-maxtimeout`(value: js.Any): Double
       @JSName("fetch-retry-maxtimeout")
-      var `fetch-retry-maxtimeout_Original`: NumberConstructor = js.native
+      var `fetch-retry-maxtimeout_Original`: NumberConstructor
       
-      def `fetch-retry-mintimeout`(): Double = js.native
-      def `fetch-retry-mintimeout`(value: js.Any): Double = js.native
+      def `fetch-retry-mintimeout`(): Double
+      def `fetch-retry-mintimeout`(value: js.Any): Double
       @JSName("fetch-retry-mintimeout")
-      var `fetch-retry-mintimeout_Original`: NumberConstructor = js.native
+      var `fetch-retry-mintimeout_Original`: NumberConstructor
       
-      def force[T](): Boolean = js.native
-      def force[T](value: T): Boolean = js.native
+      def force[T](): Boolean
+      def force[T](value: T): Boolean
       @JSName("force")
-      var force_Original: BooleanConstructor = js.native
+      var force_Original: BooleanConstructor
       
-      def git(): String = js.native
-      def git(value: js.Any): String = js.native
+      def git(): String
+      def git(value: js.Any): String
       
-      def `git-tag-version`[T](): Boolean = js.native
-      def `git-tag-version`[T](value: T): Boolean = js.native
+      def `git-tag-version`[T](): Boolean
+      def `git-tag-version`[T](value: T): Boolean
       @JSName("git-tag-version")
-      var `git-tag-version_Original`: BooleanConstructor = js.native
+      var `git-tag-version_Original`: BooleanConstructor
       
       @JSName("git")
-      var git_Original: StringConstructor = js.native
+      var git_Original: StringConstructor
       
-      def global[T](): Boolean = js.native
-      def global[T](value: T): Boolean = js.native
+      def global[T](): Boolean
+      def global[T](value: T): Boolean
       @JSName("global")
-      var global_Original: BooleanConstructor = js.native
+      var global_Original: BooleanConstructor
       
-      def globalconfig(): String = js.native
-      def globalconfig(value: js.Any): String = js.native
+      def globalconfig(): String
+      def globalconfig(value: js.Any): String
       @JSName("globalconfig")
-      var globalconfig_Original: StringConstructor = js.native
+      var globalconfig_Original: StringConstructor
       
-      var group: js.Array[_] = js.native
+      var group: js.Array[js.Any]
       
-      def heading(): String = js.native
-      def heading(value: js.Any): String = js.native
+      def heading(): String
+      def heading(value: js.Any): String
       @JSName("heading")
-      var heading_Original: StringConstructor = js.native
+      var heading_Original: StringConstructor
       
-      var `https-proxy`: js.Array[_] = js.native
+      var `https-proxy`: js.Array[js.Any]
       
-      def `ignore-scripts`[T](): Boolean = js.native
-      def `ignore-scripts`[T](value: T): Boolean = js.native
+      def `ignore-scripts`[T](): Boolean
+      def `ignore-scripts`[T](value: T): Boolean
       @JSName("ignore-scripts")
-      var `ignore-scripts_Original`: BooleanConstructor = js.native
+      var `ignore-scripts_Original`: BooleanConstructor
       
-      def `init-module`(): String = js.native
-      def `init-module`(value: js.Any): String = js.native
+      def `init-module`(): String
+      def `init-module`(value: js.Any): String
       @JSName("init-module")
-      var `init-module_Original`: StringConstructor = js.native
+      var `init-module_Original`: StringConstructor
       
       @JSName("init.author.email")
-      def initDotauthorDotemail(): String = js.native
+      def initDotauthorDotemail(): String
       @JSName("init.author.email")
-      def initDotauthorDotemail(value: js.Any): String = js.native
+      def initDotauthorDotemail(value: js.Any): String
       @JSName("init.author.email")
-      var initDotauthorDotemail_Original: StringConstructor = js.native
+      var initDotauthorDotemail_Original: StringConstructor
       
       @JSName("init.author.name")
-      def initDotauthorDotname(): String = js.native
+      def initDotauthorDotname(): String
       @JSName("init.author.name")
-      def initDotauthorDotname(value: js.Any): String = js.native
+      def initDotauthorDotname(value: js.Any): String
       @JSName("init.author.name")
-      var initDotauthorDotname_Original: StringConstructor = js.native
+      var initDotauthorDotname_Original: StringConstructor
       
       @JSName("init.author.url")
-      def initDotauthorDoturl(): String = js.native
+      def initDotauthorDoturl(): String
       @JSName("init.author.url")
-      def initDotauthorDoturl(value: js.Any): String = js.native
+      def initDotauthorDoturl(value: js.Any): String
       @JSName("init.author.url")
-      var initDotauthorDoturl_Original: StringConstructor = js.native
+      var initDotauthorDoturl_Original: StringConstructor
       
       @JSName("init.license")
-      def initDotlicense(): String = js.native
+      def initDotlicense(): String
       @JSName("init.license")
-      def initDotlicense(value: js.Any): String = js.native
+      def initDotlicense(value: js.Any): String
       @JSName("init.license")
-      var initDotlicense_Original: StringConstructor = js.native
+      var initDotlicense_Original: StringConstructor
       
       @JSName("init.version")
-      def initDotversion(): String = js.native
+      def initDotversion(): String
       @JSName("init.version")
-      def initDotversion(value: js.Any): String = js.native
+      def initDotversion(value: js.Any): String
       @JSName("init.version")
-      var initDotversion_Original: StringConstructor = js.native
+      var initDotversion_Original: StringConstructor
       
-      def json[T](): Boolean = js.native
-      def json[T](value: T): Boolean = js.native
+      def json[T](): Boolean
+      def json[T](value: T): Boolean
       @JSName("json")
-      var json_Original: BooleanConstructor = js.native
+      var json_Original: BooleanConstructor
       
-      var key: js.Array[_] = js.native
+      var key: js.Array[js.Any]
       
-      def link[T](): Boolean = js.native
-      def link[T](value: T): Boolean = js.native
+      def link[T](): Boolean
+      def link[T](value: T): Boolean
       @JSName("link")
-      var link_Original: BooleanConstructor = js.native
+      var link_Original: BooleanConstructor
       
-      def `local-address`(): String = js.native
-      def `local-address`(value: js.Any): String = js.native
+      def `local-address`(): String
+      def `local-address`(value: js.Any): String
       @JSName("local-address")
-      var `local-address_Original`: StringConstructor = js.native
+      var `local-address_Original`: StringConstructor
       
-      var loglevel: js.Array[_] = js.native
+      var loglevel: js.Array[js.Any]
       
-      var logstream: js.Any = js.native
+      var logstream: js.Any
       
       // typeof stream.Stream
-      def long[T](): Boolean = js.native
+      def long[T](): Boolean
       // typeof stream.Stream
-      def long[T](value: T): Boolean = js.native
+      def long[T](value: T): Boolean
       // typeof stream.Stream
       @JSName("long")
-      var long_Original: BooleanConstructor = js.native
+      var long_Original: BooleanConstructor
       
-      def message(): String = js.native
-      def message(value: js.Any): String = js.native
+      def message(): String
+      def message(value: js.Any): String
       @JSName("message")
-      var message_Original: StringConstructor = js.native
+      var message_Original: StringConstructor
       
-      var `node-version`: js.Array[_] = js.native
+      var `node-version`: js.Array[js.Any]
       
-      def npat[T](): Boolean = js.native
-      def npat[T](value: T): Boolean = js.native
+      def npat[T](): Boolean
+      def npat[T](value: T): Boolean
       @JSName("npat")
-      var npat_Original: BooleanConstructor = js.native
+      var npat_Original: BooleanConstructor
       
-      var `onload-script`: js.Array[_] = js.native
+      var `onload-script`: js.Array[js.Any]
       
-      def optional[T](): Boolean = js.native
-      def optional[T](value: T): Boolean = js.native
+      def optional[T](): Boolean
+      def optional[T](value: T): Boolean
       @JSName("optional")
-      var optional_Original: BooleanConstructor = js.native
+      var optional_Original: BooleanConstructor
       
-      def parseable[T](): Boolean = js.native
-      def parseable[T](value: T): Boolean = js.native
+      def parseable[T](): Boolean
+      def parseable[T](value: T): Boolean
       @JSName("parseable")
-      var parseable_Original: BooleanConstructor = js.native
+      var parseable_Original: BooleanConstructor
       
-      def prefix(): String = js.native
-      def prefix(value: js.Any): String = js.native
+      def prefix(): String
+      def prefix(value: js.Any): String
       @JSName("prefix")
-      var prefix_Original: StringConstructor = js.native
+      var prefix_Original: StringConstructor
       
-      def production[T](): Boolean = js.native
-      def production[T](value: T): Boolean = js.native
+      def production[T](): Boolean
+      def production[T](value: T): Boolean
       @JSName("production")
-      var production_Original: BooleanConstructor = js.native
+      var production_Original: BooleanConstructor
       
-      def `proprietary-attribs`[T](): Boolean = js.native
-      def `proprietary-attribs`[T](value: T): Boolean = js.native
+      def `proprietary-attribs`[T](): Boolean
+      def `proprietary-attribs`[T](value: T): Boolean
       @JSName("proprietary-attribs")
-      var `proprietary-attribs_Original`: BooleanConstructor = js.native
+      var `proprietary-attribs_Original`: BooleanConstructor
       
-      var proxy: js.Array[_] = js.native
+      var proxy: js.Array[js.Any]
       
-      var `rebuild-bundle`: Boolean = js.native
+      var `rebuild-bundle`: Boolean
       
-      var registry: js.Array[_] = js.native
+      var registry: js.Array[js.Any]
       
-      def rollback[T](): Boolean = js.native
-      def rollback[T](value: T): Boolean = js.native
+      def rollback[T](): Boolean
+      def rollback[T](value: T): Boolean
       @JSName("rollback")
-      var rollback_Original: BooleanConstructor = js.native
+      var rollback_Original: BooleanConstructor
       
-      def save[T](): Boolean = js.native
-      def save[T](value: T): Boolean = js.native
+      def save[T](): Boolean
+      def save[T](value: T): Boolean
       
-      def `save-bundle`[T](): Boolean = js.native
-      def `save-bundle`[T](value: T): Boolean = js.native
+      def `save-bundle`[T](): Boolean
+      def `save-bundle`[T](value: T): Boolean
       @JSName("save-bundle")
-      var `save-bundle_Original`: BooleanConstructor = js.native
+      var `save-bundle_Original`: BooleanConstructor
       
-      def `save-dev`[T](): Boolean = js.native
-      def `save-dev`[T](value: T): Boolean = js.native
+      def `save-dev`[T](): Boolean
+      def `save-dev`[T](value: T): Boolean
       @JSName("save-dev")
-      var `save-dev_Original`: BooleanConstructor = js.native
+      var `save-dev_Original`: BooleanConstructor
       
-      def `save-exact`[T](): Boolean = js.native
-      def `save-exact`[T](value: T): Boolean = js.native
+      def `save-exact`[T](): Boolean
+      def `save-exact`[T](value: T): Boolean
       @JSName("save-exact")
-      var `save-exact_Original`: BooleanConstructor = js.native
+      var `save-exact_Original`: BooleanConstructor
       
-      def `save-optional`[T](): Boolean = js.native
-      def `save-optional`[T](value: T): Boolean = js.native
+      def `save-optional`[T](): Boolean
+      def `save-optional`[T](value: T): Boolean
       @JSName("save-optional")
-      var `save-optional_Original`: BooleanConstructor = js.native
+      var `save-optional_Original`: BooleanConstructor
       
-      def `save-prefix`(): String = js.native
-      def `save-prefix`(value: js.Any): String = js.native
+      def `save-prefix`(): String
+      def `save-prefix`(value: js.Any): String
       @JSName("save-prefix")
-      var `save-prefix_Original`: StringConstructor = js.native
+      var `save-prefix_Original`: StringConstructor
       
       @JSName("save")
-      var save_Original: BooleanConstructor = js.native
+      var save_Original: BooleanConstructor
       
-      def scope(): String = js.native
-      def scope(value: js.Any): String = js.native
+      def scope(): String
+      def scope(value: js.Any): String
       @JSName("scope")
-      var scope_Original: StringConstructor = js.native
+      var scope_Original: StringConstructor
       
-      var searchexclude: js.Array[_] = js.native
+      var searchexclude: js.Array[js.Any]
       
-      def searchopts(): String = js.native
-      def searchopts(value: js.Any): String = js.native
+      def searchopts(): String
+      def searchopts(value: js.Any): String
       @JSName("searchopts")
-      var searchopts_Original: StringConstructor = js.native
+      var searchopts_Original: StringConstructor
       
-      var searchsort: js.Array[_] = js.native
+      var searchsort: js.Array[js.Any]
       
-      def shell(): String = js.native
-      def shell(value: js.Any): String = js.native
+      def shell(): String
+      def shell(value: js.Any): String
       @JSName("shell")
-      var shell_Original: StringConstructor = js.native
+      var shell_Original: StringConstructor
       
-      def shrinkwrap[T](): Boolean = js.native
-      def shrinkwrap[T](value: T): Boolean = js.native
+      def shrinkwrap[T](): Boolean
+      def shrinkwrap[T](value: T): Boolean
       @JSName("shrinkwrap")
-      var shrinkwrap_Original: BooleanConstructor = js.native
+      var shrinkwrap_Original: BooleanConstructor
       
-      def `sign-git-tag`[T](): Boolean = js.native
-      def `sign-git-tag`[T](value: T): Boolean = js.native
+      def `sign-git-tag`[T](): Boolean
+      def `sign-git-tag`[T](value: T): Boolean
       @JSName("sign-git-tag")
-      var `sign-git-tag_Original`: BooleanConstructor = js.native
+      var `sign-git-tag_Original`: BooleanConstructor
       
-      var spin: js.Array[_] = js.native
+      var spin: js.Array[js.Any]
       
-      def `strict-ssl`[T](): Boolean = js.native
-      def `strict-ssl`[T](value: T): Boolean = js.native
+      def `strict-ssl`[T](): Boolean
+      def `strict-ssl`[T](value: T): Boolean
       @JSName("strict-ssl")
-      var `strict-ssl_Original`: BooleanConstructor = js.native
+      var `strict-ssl_Original`: BooleanConstructor
       
-      def tag(): String = js.native
-      def tag(value: js.Any): String = js.native
+      def tag(): String
+      def tag(value: js.Any): String
       @JSName("tag")
-      var tag_Original: StringConstructor = js.native
+      var tag_Original: StringConstructor
       
-      def tmp(): String = js.native
-      def tmp(value: js.Any): String = js.native
+      def tmp(): String
+      def tmp(value: js.Any): String
       @JSName("tmp")
-      var tmp_Original: StringConstructor = js.native
+      var tmp_Original: StringConstructor
       
-      def umask(): Double = js.native
-      def umask(value: js.Any): Double = js.native
+      def umask(): Double
+      def umask(value: js.Any): Double
       @JSName("umask")
-      var umask_Original: NumberConstructor = js.native
+      var umask_Original: NumberConstructor
       
-      def unicode[T](): Boolean = js.native
-      def unicode[T](value: T): Boolean = js.native
+      def unicode[T](): Boolean
+      def unicode[T](value: T): Boolean
       @JSName("unicode")
-      var unicode_Original: BooleanConstructor = js.native
+      var unicode_Original: BooleanConstructor
       
-      def `unsafe-perm`[T](): Boolean = js.native
-      def `unsafe-perm`[T](value: T): Boolean = js.native
+      def `unsafe-perm`[T](): Boolean
+      def `unsafe-perm`[T](value: T): Boolean
       @JSName("unsafe-perm")
-      var `unsafe-perm_Original`: BooleanConstructor = js.native
+      var `unsafe-perm_Original`: BooleanConstructor
       
-      def usage[T](): Boolean = js.native
-      def usage[T](value: T): Boolean = js.native
+      def usage[T](): Boolean
+      def usage[T](value: T): Boolean
       @JSName("usage")
-      var usage_Original: BooleanConstructor = js.native
+      var usage_Original: BooleanConstructor
       
-      var user: js.Any = js.native
+      var user: js.Any
       
-      def `user-agent`(): String = js.native
-      def `user-agent`(value: js.Any): String = js.native
+      def `user-agent`(): String
+      def `user-agent`(value: js.Any): String
       @JSName("user-agent")
-      var `user-agent_Original`: StringConstructor = js.native
+      var `user-agent_Original`: StringConstructor
       
       // String | Number
-      def userconfig(): String = js.native
+      def userconfig(): String
       // String | Number
-      def userconfig(value: js.Any): String = js.native
+      def userconfig(value: js.Any): String
       // String | Number
       @JSName("userconfig")
-      var userconfig_Original: StringConstructor = js.native
+      var userconfig_Original: StringConstructor
       
-      def version[T](): Boolean = js.native
-      def version[T](value: T): Boolean = js.native
+      def version[T](): Boolean
+      def version[T](value: T): Boolean
       @JSName("version")
-      var version_Original: BooleanConstructor = js.native
+      var version_Original: BooleanConstructor
       
-      def versions[T](): Boolean = js.native
-      def versions[T](value: T): Boolean = js.native
+      def versions[T](): Boolean
+      def versions[T](value: T): Boolean
       @JSName("versions")
-      var versions_Original: BooleanConstructor = js.native
+      var versions_Original: BooleanConstructor
       
-      def viewer(): String = js.native
-      def viewer(value: js.Any): String = js.native
+      def viewer(): String
+      def viewer(value: js.Any): String
       @JSName("viewer")
-      var viewer_Original: StringConstructor = js.native
+      var viewer_Original: StringConstructor
+    }
+    object ConfigTypes {
+      
+      @scala.inline
+      def apply(
+        _exit: BooleanConstructor,
+        `always-auth`: BooleanConstructor,
+        `bin-links`: BooleanConstructor,
+        browser: js.Array[js.Any],
+        ca: js.Array[js.Any],
+        cache: StringConstructor,
+        `cache-lock-retries`: NumberConstructor,
+        `cache-lock-stale`: NumberConstructor,
+        `cache-lock-wait`: NumberConstructor,
+        `cache-max`: NumberConstructor,
+        `cache-min`: NumberConstructor,
+        cafile: StringConstructor,
+        cert: StringConstructor,
+        color: js.Array[js.Any],
+        depth: NumberConstructor,
+        description: BooleanConstructor,
+        dev: BooleanConstructor,
+        editor: StringConstructor,
+        `engine-strict`: BooleanConstructor,
+        `fetch-retries`: NumberConstructor,
+        `fetch-retry-factor`: NumberConstructor,
+        `fetch-retry-maxtimeout`: NumberConstructor,
+        `fetch-retry-mintimeout`: NumberConstructor,
+        force: BooleanConstructor,
+        git: StringConstructor,
+        `git-tag-version`: BooleanConstructor,
+        global: BooleanConstructor,
+        globalconfig: StringConstructor,
+        group: js.Array[js.Any],
+        heading: StringConstructor,
+        `https-proxy`: js.Array[js.Any],
+        `ignore-scripts`: BooleanConstructor,
+        `init-module`: StringConstructor,
+        initDotauthorDotemail: StringConstructor,
+        initDotauthorDotname: StringConstructor,
+        initDotauthorDoturl: StringConstructor,
+        initDotlicense: StringConstructor,
+        initDotversion: StringConstructor,
+        json: BooleanConstructor,
+        key: js.Array[js.Any],
+        link: BooleanConstructor,
+        `local-address`: StringConstructor,
+        loglevel: js.Array[js.Any],
+        logstream: js.Any,
+        long: BooleanConstructor,
+        message: StringConstructor,
+        `node-version`: js.Array[js.Any],
+        npat: BooleanConstructor,
+        `onload-script`: js.Array[js.Any],
+        optional: BooleanConstructor,
+        parseable: BooleanConstructor,
+        prefix: StringConstructor,
+        production: BooleanConstructor,
+        `proprietary-attribs`: BooleanConstructor,
+        proxy: js.Array[js.Any],
+        `rebuild-bundle`: Boolean,
+        registry: js.Array[js.Any],
+        rollback: BooleanConstructor,
+        save: BooleanConstructor,
+        `save-bundle`: BooleanConstructor,
+        `save-dev`: BooleanConstructor,
+        `save-exact`: BooleanConstructor,
+        `save-optional`: BooleanConstructor,
+        `save-prefix`: StringConstructor,
+        scope: StringConstructor,
+        searchexclude: js.Array[js.Any],
+        searchopts: StringConstructor,
+        searchsort: js.Array[js.Any],
+        shell: StringConstructor,
+        shrinkwrap: BooleanConstructor,
+        `sign-git-tag`: BooleanConstructor,
+        spin: js.Array[js.Any],
+        `strict-ssl`: BooleanConstructor,
+        tag: StringConstructor,
+        tmp: StringConstructor,
+        umask: NumberConstructor,
+        unicode: BooleanConstructor,
+        `unsafe-perm`: BooleanConstructor,
+        usage: BooleanConstructor,
+        user: js.Any,
+        `user-agent`: StringConstructor,
+        userconfig: StringConstructor,
+        version: BooleanConstructor,
+        versions: BooleanConstructor,
+        viewer: StringConstructor
+      ): ConfigTypes = {
+        val __obj = js.Dynamic.literal(_exit = _exit.asInstanceOf[js.Any], browser = browser.asInstanceOf[js.Any], ca = ca.asInstanceOf[js.Any], cache = cache.asInstanceOf[js.Any], cafile = cafile.asInstanceOf[js.Any], cert = cert.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], dev = dev.asInstanceOf[js.Any], editor = editor.asInstanceOf[js.Any], force = force.asInstanceOf[js.Any], git = git.asInstanceOf[js.Any], global = global.asInstanceOf[js.Any], globalconfig = globalconfig.asInstanceOf[js.Any], group = group.asInstanceOf[js.Any], heading = heading.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], link = link.asInstanceOf[js.Any], loglevel = loglevel.asInstanceOf[js.Any], logstream = logstream.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], npat = npat.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], parseable = parseable.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], production = production.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], registry = registry.asInstanceOf[js.Any], rollback = rollback.asInstanceOf[js.Any], save = save.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], searchexclude = searchexclude.asInstanceOf[js.Any], searchopts = searchopts.asInstanceOf[js.Any], searchsort = searchsort.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any], shrinkwrap = shrinkwrap.asInstanceOf[js.Any], spin = spin.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tmp = tmp.asInstanceOf[js.Any], umask = umask.asInstanceOf[js.Any], unicode = unicode.asInstanceOf[js.Any], usage = usage.asInstanceOf[js.Any], user = user.asInstanceOf[js.Any], userconfig = userconfig.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any], versions = versions.asInstanceOf[js.Any], viewer = viewer.asInstanceOf[js.Any])
+        __obj.updateDynamic("always-auth")(`always-auth`.asInstanceOf[js.Any])
+        __obj.updateDynamic("bin-links")(`bin-links`.asInstanceOf[js.Any])
+        __obj.updateDynamic("cache-lock-retries")(`cache-lock-retries`.asInstanceOf[js.Any])
+        __obj.updateDynamic("cache-lock-stale")(`cache-lock-stale`.asInstanceOf[js.Any])
+        __obj.updateDynamic("cache-lock-wait")(`cache-lock-wait`.asInstanceOf[js.Any])
+        __obj.updateDynamic("cache-max")(`cache-max`.asInstanceOf[js.Any])
+        __obj.updateDynamic("cache-min")(`cache-min`.asInstanceOf[js.Any])
+        __obj.updateDynamic("engine-strict")(`engine-strict`.asInstanceOf[js.Any])
+        __obj.updateDynamic("fetch-retries")(`fetch-retries`.asInstanceOf[js.Any])
+        __obj.updateDynamic("fetch-retry-factor")(`fetch-retry-factor`.asInstanceOf[js.Any])
+        __obj.updateDynamic("fetch-retry-maxtimeout")(`fetch-retry-maxtimeout`.asInstanceOf[js.Any])
+        __obj.updateDynamic("fetch-retry-mintimeout")(`fetch-retry-mintimeout`.asInstanceOf[js.Any])
+        __obj.updateDynamic("git-tag-version")(`git-tag-version`.asInstanceOf[js.Any])
+        __obj.updateDynamic("https-proxy")(`https-proxy`.asInstanceOf[js.Any])
+        __obj.updateDynamic("ignore-scripts")(`ignore-scripts`.asInstanceOf[js.Any])
+        __obj.updateDynamic("init-module")(`init-module`.asInstanceOf[js.Any])
+        __obj.updateDynamic("init.author.email")(initDotauthorDotemail.asInstanceOf[js.Any])
+        __obj.updateDynamic("init.author.name")(initDotauthorDotname.asInstanceOf[js.Any])
+        __obj.updateDynamic("init.author.url")(initDotauthorDoturl.asInstanceOf[js.Any])
+        __obj.updateDynamic("init.license")(initDotlicense.asInstanceOf[js.Any])
+        __obj.updateDynamic("init.version")(initDotversion.asInstanceOf[js.Any])
+        __obj.updateDynamic("local-address")(`local-address`.asInstanceOf[js.Any])
+        __obj.updateDynamic("node-version")(`node-version`.asInstanceOf[js.Any])
+        __obj.updateDynamic("onload-script")(`onload-script`.asInstanceOf[js.Any])
+        __obj.updateDynamic("proprietary-attribs")(`proprietary-attribs`.asInstanceOf[js.Any])
+        __obj.updateDynamic("rebuild-bundle")(`rebuild-bundle`.asInstanceOf[js.Any])
+        __obj.updateDynamic("save-bundle")(`save-bundle`.asInstanceOf[js.Any])
+        __obj.updateDynamic("save-dev")(`save-dev`.asInstanceOf[js.Any])
+        __obj.updateDynamic("save-exact")(`save-exact`.asInstanceOf[js.Any])
+        __obj.updateDynamic("save-optional")(`save-optional`.asInstanceOf[js.Any])
+        __obj.updateDynamic("save-prefix")(`save-prefix`.asInstanceOf[js.Any])
+        __obj.updateDynamic("sign-git-tag")(`sign-git-tag`.asInstanceOf[js.Any])
+        __obj.updateDynamic("strict-ssl")(`strict-ssl`.asInstanceOf[js.Any])
+        __obj.updateDynamic("unsafe-perm")(`unsafe-perm`.asInstanceOf[js.Any])
+        __obj.updateDynamic("user-agent")(`user-agent`.asInstanceOf[js.Any])
+        __obj.asInstanceOf[ConfigTypes]
+      }
+      
+      @scala.inline
+      implicit class ConfigTypesMutableBuilder[Self <: ConfigTypes] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def `setAlways-auth`(value: BooleanConstructor): Self = StObject.set(x, "always-auth", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setBin-links`(value: BooleanConstructor): Self = StObject.set(x, "bin-links", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setBrowser(value: js.Array[js.Any]): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setBrowserVarargs(value: js.Any*): Self = StObject.set(x, "browser", js.Array(value :_*))
+        
+        @scala.inline
+        def setCa(value: js.Array[js.Any]): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setCaVarargs(value: js.Any*): Self = StObject.set(x, "ca", js.Array(value :_*))
+        
+        @scala.inline
+        def setCache(value: StringConstructor): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setCache-lock-retries`(value: NumberConstructor): Self = StObject.set(x, "cache-lock-retries", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setCache-lock-stale`(value: NumberConstructor): Self = StObject.set(x, "cache-lock-stale", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setCache-lock-wait`(value: NumberConstructor): Self = StObject.set(x, "cache-lock-wait", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setCache-max`(value: NumberConstructor): Self = StObject.set(x, "cache-max", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setCache-min`(value: NumberConstructor): Self = StObject.set(x, "cache-min", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setCafile(value: StringConstructor): Self = StObject.set(x, "cafile", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setCert(value: StringConstructor): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setColor(value: js.Array[js.Any]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setColorVarargs(value: js.Any*): Self = StObject.set(x, "color", js.Array(value :_*))
+        
+        @scala.inline
+        def setDepth(value: NumberConstructor): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDescription(value: BooleanConstructor): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDev(value: BooleanConstructor): Self = StObject.set(x, "dev", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setEditor(value: StringConstructor): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setEngine-strict`(value: BooleanConstructor): Self = StObject.set(x, "engine-strict", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setFetch-retries`(value: NumberConstructor): Self = StObject.set(x, "fetch-retries", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setFetch-retry-factor`(value: NumberConstructor): Self = StObject.set(x, "fetch-retry-factor", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setFetch-retry-maxtimeout`(value: NumberConstructor): Self = StObject.set(x, "fetch-retry-maxtimeout", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setFetch-retry-mintimeout`(value: NumberConstructor): Self = StObject.set(x, "fetch-retry-mintimeout", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setForce(value: BooleanConstructor): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setGit(value: StringConstructor): Self = StObject.set(x, "git", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setGit-tag-version`(value: BooleanConstructor): Self = StObject.set(x, "git-tag-version", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setGlobal(value: BooleanConstructor): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setGlobalconfig(value: StringConstructor): Self = StObject.set(x, "globalconfig", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setGroup(value: js.Array[js.Any]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setGroupVarargs(value: js.Any*): Self = StObject.set(x, "group", js.Array(value :_*))
+        
+        @scala.inline
+        def setHeading(value: StringConstructor): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setHttps-proxy`(value: js.Array[js.Any]): Self = StObject.set(x, "https-proxy", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setHttps-proxyVarargs`(value: js.Any*): Self = StObject.set(x, "https-proxy", js.Array(value :_*))
+        
+        @scala.inline
+        def `setIgnore-scripts`(value: BooleanConstructor): Self = StObject.set(x, "ignore-scripts", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setInit-module`(value: StringConstructor): Self = StObject.set(x, "init-module", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setInitDotauthorDotemail(value: StringConstructor): Self = StObject.set(x, "init.author.email", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setInitDotauthorDotname(value: StringConstructor): Self = StObject.set(x, "init.author.name", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setInitDotauthorDoturl(value: StringConstructor): Self = StObject.set(x, "init.author.url", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setInitDotlicense(value: StringConstructor): Self = StObject.set(x, "init.license", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setInitDotversion(value: StringConstructor): Self = StObject.set(x, "init.version", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setJson(value: BooleanConstructor): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setKey(value: js.Array[js.Any]): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setKeyVarargs(value: js.Any*): Self = StObject.set(x, "key", js.Array(value :_*))
+        
+        @scala.inline
+        def setLink(value: BooleanConstructor): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setLocal-address`(value: StringConstructor): Self = StObject.set(x, "local-address", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setLoglevel(value: js.Array[js.Any]): Self = StObject.set(x, "loglevel", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setLoglevelVarargs(value: js.Any*): Self = StObject.set(x, "loglevel", js.Array(value :_*))
+        
+        @scala.inline
+        def setLogstream(value: js.Any): Self = StObject.set(x, "logstream", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setLong(value: BooleanConstructor): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setMessage(value: StringConstructor): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setNode-version`(value: js.Array[js.Any]): Self = StObject.set(x, "node-version", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setNode-versionVarargs`(value: js.Any*): Self = StObject.set(x, "node-version", js.Array(value :_*))
+        
+        @scala.inline
+        def setNpat(value: BooleanConstructor): Self = StObject.set(x, "npat", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setOnload-script`(value: js.Array[js.Any]): Self = StObject.set(x, "onload-script", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setOnload-scriptVarargs`(value: js.Any*): Self = StObject.set(x, "onload-script", js.Array(value :_*))
+        
+        @scala.inline
+        def setOptional(value: BooleanConstructor): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setParseable(value: BooleanConstructor): Self = StObject.set(x, "parseable", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setPrefix(value: StringConstructor): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setProduction(value: BooleanConstructor): Self = StObject.set(x, "production", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setProprietary-attribs`(value: BooleanConstructor): Self = StObject.set(x, "proprietary-attribs", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setProxy(value: js.Array[js.Any]): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setProxyVarargs(value: js.Any*): Self = StObject.set(x, "proxy", js.Array(value :_*))
+        
+        @scala.inline
+        def `setRebuild-bundle`(value: Boolean): Self = StObject.set(x, "rebuild-bundle", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setRegistry(value: js.Array[js.Any]): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setRegistryVarargs(value: js.Any*): Self = StObject.set(x, "registry", js.Array(value :_*))
+        
+        @scala.inline
+        def setRollback(value: BooleanConstructor): Self = StObject.set(x, "rollback", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSave(value: BooleanConstructor): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSave-bundle`(value: BooleanConstructor): Self = StObject.set(x, "save-bundle", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSave-dev`(value: BooleanConstructor): Self = StObject.set(x, "save-dev", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSave-exact`(value: BooleanConstructor): Self = StObject.set(x, "save-exact", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSave-optional`(value: BooleanConstructor): Self = StObject.set(x, "save-optional", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSave-prefix`(value: StringConstructor): Self = StObject.set(x, "save-prefix", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setScope(value: StringConstructor): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSearchexclude(value: js.Array[js.Any]): Self = StObject.set(x, "searchexclude", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSearchexcludeVarargs(value: js.Any*): Self = StObject.set(x, "searchexclude", js.Array(value :_*))
+        
+        @scala.inline
+        def setSearchopts(value: StringConstructor): Self = StObject.set(x, "searchopts", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSearchsort(value: js.Array[js.Any]): Self = StObject.set(x, "searchsort", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSearchsortVarargs(value: js.Any*): Self = StObject.set(x, "searchsort", js.Array(value :_*))
+        
+        @scala.inline
+        def setShell(value: StringConstructor): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setShrinkwrap(value: BooleanConstructor): Self = StObject.set(x, "shrinkwrap", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setSign-git-tag`(value: BooleanConstructor): Self = StObject.set(x, "sign-git-tag", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSpin(value: js.Array[js.Any]): Self = StObject.set(x, "spin", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSpinVarargs(value: js.Any*): Self = StObject.set(x, "spin", js.Array(value :_*))
+        
+        @scala.inline
+        def `setStrict-ssl`(value: BooleanConstructor): Self = StObject.set(x, "strict-ssl", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setTag(value: StringConstructor): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setTmp(value: StringConstructor): Self = StObject.set(x, "tmp", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUmask(value: NumberConstructor): Self = StObject.set(x, "umask", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUnicode(value: BooleanConstructor): Self = StObject.set(x, "unicode", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setUnsafe-perm`(value: BooleanConstructor): Self = StObject.set(x, "unsafe-perm", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUsage(value: BooleanConstructor): Self = StObject.set(x, "usage", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUser(value: js.Any): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def `setUser-agent`(value: StringConstructor): Self = StObject.set(x, "user-agent", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setUserconfig(value: StringConstructor): Self = StObject.set(x, "userconfig", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setVersion(value: BooleanConstructor): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setVersions(value: BooleanConstructor): Self = StObject.set(x, "versions", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setViewer(value: StringConstructor): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def set_exit(value: BooleanConstructor): Self = StObject.set(x, "_exit", value.asInstanceOf[js.Any])
+      }
     }
     
-    @js.native
     trait Credentials extends StObject {
       
-      var auth: js.UndefOr[String] = js.native
+      var auth: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
-      var scope: String = js.native
+      var scope: String
       
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object Credentials {
       
@@ -2020,16 +2547,15 @@ object mod extends Shortcut {
     
     type SimpleCallback[T] = js.Function2[/* err */ js.UndefOr[Error], /* result */ js.UndefOr[T], Unit]
     
-    @js.native
     trait Spinner extends StObject {
       
-      var int: String = js.native
+      var int: String
       
-      def start(): Unit = js.native
+      def start(): Unit
       
-      var started: Boolean = js.native
+      var started: Boolean
       
-      def stop(): Unit = js.native
+      def stop(): Unit
     }
     object Spinner {
       
@@ -2057,7 +2583,9 @@ object mod extends Shortcut {
     }
     
     @js.native
-    trait Static extends EventEmitter {
+    trait Static
+      extends StObject
+         with EventEmitter {
       
       var abbrevs: Dictionary[String] = js.native
       
@@ -2085,7 +2613,7 @@ object mod extends Shortcut {
       
       var prefix: String = js.native
       
-      var rollbacks: js.Array[_] = js.native
+      var rollbacks: js.Array[js.Any] = js.native
       
       var root: String = js.native
       

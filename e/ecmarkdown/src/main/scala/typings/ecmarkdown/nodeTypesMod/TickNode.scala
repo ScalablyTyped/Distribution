@@ -3,25 +3,24 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.tick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickNode
-  extends FormatNode
+  extends StObject
+     with FormatNode
      with Node {
   
-  var contents: js.Array[FragmentNode] = js.native
+  var contents: js.Array[FragmentNode]
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: tick = js.native
+  var name: tick
 }
 object TickNode {
   
   @scala.inline
-  def apply(contents: js.Array[FragmentNode], location: LocationRange, name: tick): TickNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: js.Array[FragmentNode], location: LocationRange): TickNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tick")
     __obj.asInstanceOf[TickNode]
   }
   

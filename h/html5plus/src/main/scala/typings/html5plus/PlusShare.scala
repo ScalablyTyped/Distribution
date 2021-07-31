@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -84,12 +83,12 @@ trait PlusShare extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def getServices(): Unit = js.native
-  def getServices(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getServices(successCB: js.Function1[/* result */ js.Array[this.type], Unit]): Unit = js.native
   def getServices(
     successCB: js.Function1[/* result */ js.Array[this.type], Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getServices(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 使用系统组件发送分享
@@ -99,27 +98,15 @@ trait PlusShare extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
   def sendWithSystem(): Unit = js.native
-  def sendWithSystem(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def sendWithSystem(msg: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
-  def sendWithSystem(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def sendWithSystem(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
+  def sendWithSystem(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendWithSystem(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage): Unit = js.native
-  def sendWithSystem(
-    msg: PlusShareShareMessage,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def sendWithSystem(msg: PlusShareShareMessage, successCB: js.Function0[Unit]): Unit = js.native
   def sendWithSystem(
     msg: PlusShareShareMessage,
     successCB: js.Function0[Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def sendWithSystem(msg: PlusShareShareMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDataSizeLimitsForTestRequest extends StObject {
   
   /**
     * Maximum per-resource size.
     */
-  var maxResourceSize: integer = js.native
+  var maxResourceSize: integer
   
   /**
     * Maximum total buffer size.
     */
-  var maxTotalSize: integer = js.native
+  var maxTotalSize: integer
 }
 object SetDataSizeLimitsForTestRequest {
   

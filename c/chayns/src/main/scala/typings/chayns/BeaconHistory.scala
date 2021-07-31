@@ -2,16 +2,14 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.getBeaconHistory()
-@js.native
 trait BeaconHistory extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object BeaconHistory {
   

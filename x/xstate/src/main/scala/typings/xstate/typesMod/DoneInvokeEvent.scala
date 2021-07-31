@@ -2,13 +2,13 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DoneInvokeEvent[TData] extends EventObject {
+trait DoneInvokeEvent[TData]
+  extends StObject
+     with EventObject {
   
-  var data: TData = js.native
+  var data: TData
 }
 object DoneInvokeEvent {
   
@@ -20,7 +20,7 @@ object DoneInvokeEvent {
   }
   
   @scala.inline
-  implicit class DoneInvokeEventMutableBuilder[Self <: DoneInvokeEvent[_], TData] (val x: Self with DoneInvokeEvent[TData]) extends AnyVal {
+  implicit class DoneInvokeEventMutableBuilder[Self <: DoneInvokeEvent[?], TData] (val x: Self & DoneInvokeEvent[TData]) extends AnyVal {
     
     @scala.inline
     def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

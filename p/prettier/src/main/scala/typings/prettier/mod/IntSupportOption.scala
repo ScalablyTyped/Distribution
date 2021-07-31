@@ -4,26 +4,25 @@ import typings.prettier.prettierBooleans.`false`
 import typings.prettier.prettierStrings.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntSupportOption
-  extends BaseSupportOption[int]
+  extends StObject
+     with BaseSupportOption[int]
      with _SupportOption {
   
-  var default: Double = js.native
+  var default: Double
   
-  var array: js.UndefOr[`false`] = js.native
+  var array: js.UndefOr[`false`] = js.undefined
   
-  var range: js.UndefOr[SupportOptionRange] = js.native
+  var range: js.UndefOr[SupportOptionRange] = js.undefined
 }
 object IntSupportOption {
   
   @scala.inline
-  def apply(category: String, default: Double, since: String, `type`: int): IntSupportOption = {
+  def apply(category: String, default: Double, since: String): IntSupportOption = {
     val __obj = js.Dynamic.literal(category = category.asInstanceOf[js.Any], default = default.asInstanceOf[js.Any], since = since.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("int")
     __obj.asInstanceOf[IntSupportOption]
   }
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Services.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object StorePurchaseStatus extends StObject {
   
   /** The current user has already purchased the specified app or add-on. */
   @js.native
-  sealed trait alreadyPurchased extends StorePurchaseStatus
+  sealed trait alreadyPurchased
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed because of a network connectivity error. */
   @js.native
-  sealed trait networkError extends StorePurchaseStatus
+  sealed trait networkError
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed. */
   @js.native
-  sealed trait notPurchased extends StorePurchaseStatus
+  sealed trait notPurchased
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request did not succeed because of a server error returned by the Windows Store. */
   @js.native
-  sealed trait serverError extends StorePurchaseStatus
+  sealed trait serverError
+    extends StObject
+       with StorePurchaseStatus
   
   /** The purchase request succeeded. */
   @js.native
-  sealed trait succeeded extends StorePurchaseStatus
+  sealed trait succeeded
+    extends StObject
+       with StorePurchaseStatus
 }

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlankScreen extends StObject {
   
   /** The screen id of the element */
-  var screenId: js.UndefOr[String] = js.native
+  var screenId: js.UndefOr[String] = js.undefined
 }
 object BlankScreen {
   

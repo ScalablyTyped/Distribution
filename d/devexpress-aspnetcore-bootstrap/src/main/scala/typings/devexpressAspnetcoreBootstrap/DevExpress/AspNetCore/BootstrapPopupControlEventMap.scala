@@ -2,33 +2,33 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapPopupControlEventMap extends ControlEventMap {
+trait BootstrapPopupControlEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var afterResizing: PopupWindowEventArgs = js.native
+  var afterResizing: PopupWindowEventArgs
   
-  var beforeResizing: PopupWindowEventArgs = js.native
+  var beforeResizing: PopupWindowEventArgs
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var closeUp: PopupWindowCloseUpEventArgs = js.native
+  var closeUp: PopupWindowCloseUpEventArgs
   
-  var closing: PopupWindowCancelEventArgs = js.native
+  var closing: PopupWindowCancelEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var pinnedChanged: PopupWindowPinnedChangedEventArgs = js.native
+  var pinnedChanged: PopupWindowPinnedChangedEventArgs
   
-  var popUp: PopupWindowEventArgs = js.native
+  var popUp: PopupWindowEventArgs
   
-  var resize: PopupWindowResizeEventArgs = js.native
+  var resize: PopupWindowResizeEventArgs
   
-  var shown: PopupWindowEventArgs = js.native
+  var shown: PopupWindowEventArgs
 }
 object BootstrapPopupControlEventMap {
   

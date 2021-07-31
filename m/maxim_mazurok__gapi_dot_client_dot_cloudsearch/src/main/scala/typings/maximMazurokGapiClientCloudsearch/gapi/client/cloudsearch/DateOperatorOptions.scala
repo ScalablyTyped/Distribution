@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateOperatorOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DateOperatorOptions extends StObject {
     * the property's name is *closeDate*, then queries like *closedafter:<value>* show results only where the value of the property named *closeDate* is later than *<value>*. The operator
     * name can only contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var greaterThanOperatorName: js.UndefOr[String] = js.native
+  var greaterThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the operator name required in the query in order to isolate the date property using the less-than operator. For example, if lessThanOperatorName is *closedbefore* and the
     * property's name is *closeDate*, then queries like *closedbefore:<value>* show results only where the value of the property named *closeDate* is earlier than *<value>*. The operator
     * name can only contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var lessThanOperatorName: js.UndefOr[String] = js.native
+  var lessThanOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the actual string required in the query in order to isolate the date property. For example, suppose an issue tracking schema object has a property named *closeDate* that
@@ -28,7 +26,7 @@ trait DateOperatorOptions extends StObject {
     * matches *<value>*. By contrast, a search that uses the same *<value>* without an operator returns all items where *<value>* matches the value of any String properties or text within
     * the content field for the indexed datasource. The operator name can only contain lowercase letters (a-z). The maximum length is 32 characters.
     */
-  var operatorName: js.UndefOr[String] = js.native
+  var operatorName: js.UndefOr[String] = js.undefined
 }
 object DateOperatorOptions {
   

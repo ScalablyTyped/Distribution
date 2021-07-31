@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.getCommentsForPullRequestExceptionsUni
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryNotAssociatedWithPullRequestExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryNotAssociatedWithPullRequestExceptionDetails> * / any */ @js.native
-  trait RepositoryNotAssociatedWithPullRequestException
-    extends GetCommentsForPullRequestExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryNotAssociatedWithPullRequestExceptionDetails> * / any */ trait RepositoryNotAssociatedWithPullRequestException
+    extends StObject
+       with GetCommentsForPullRequestExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNotAssociatedWithPullRequestException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNotAssociatedWithPullRequestException
   }
   object RepositoryNotAssociatedWithPullRequestException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNotAssociatedWithPullRequestException
-    ): RepositoryNotAssociatedWithPullRequestException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryNotAssociatedWithPullRequestException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryNotAssociatedWithPullRequestException")
       __obj.asInstanceOf[RepositoryNotAssociatedWithPullRequestException]
     }
     
@@ -37,6 +34,5 @@ object typesRepositoryNotAssociatedWithPullRequestExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryNotAssociatedWithPullRequestExceptionDetails extends StObject
 }

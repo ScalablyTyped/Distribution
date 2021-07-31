@@ -2,10 +2,8 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductsApproveRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaProductsApproveRequest extends StObject {
     * not include new permissions if the product was updated since the URL was
     * generated.
     */
-  var approvalUrlInfo: js.UndefOr[SchemaApprovalUrlInfo] = js.native
+  var approvalUrlInfo: js.UndefOr[SchemaApprovalUrlInfo] = js.undefined
   
   /**
     * Sets how new permission requests for the product are handled.
@@ -26,7 +24,7 @@ trait SchemaProductsApproveRequest extends StObject {
     * permissions added through updates will require manual reapproval. If not
     * specified, only the current set of permissions will be approved.
     */
-  var approvedPermissions: js.UndefOr[String] = js.native
+  var approvedPermissions: js.UndefOr[String] = js.undefined
 }
 object SchemaProductsApproveRequest {
   

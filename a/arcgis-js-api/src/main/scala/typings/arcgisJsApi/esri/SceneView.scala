@@ -9,12 +9,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.medium
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SceneView
-  extends View
+  extends StObject
+     with View
      with BreakpointsOwner {
   
   /**
@@ -71,8 +71,8 @@ trait SceneView
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#goTo)
     */
-  def goTo(target: GoToTarget3D): js.Promise[_] = js.native
-  def goTo(target: GoToTarget3D, options: GoToOptions3D): js.Promise[_] = js.native
+  def goTo(target: GoToTarget3D): js.Promise[js.Any] = js.native
+  def goTo(target: GoToTarget3D, options: GoToOptions3D): js.Promise[js.Any] = js.native
   
   /**
     * The view for the ground of the map.

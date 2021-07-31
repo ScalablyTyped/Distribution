@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalDevice extends StObject {
   
   /** Output only. Current configuration of the device as registered to the SAS. */
-  var activeConfig: js.UndefOr[SasPortalDeviceConfig] = js.native
+  var activeConfig: js.UndefOr[SasPortalDeviceConfig] = js.undefined
   
   /** Device parameters that can be overridden by both SAS Portal and SAS registration requests. */
-  var deviceMetadata: js.UndefOr[js.Any] = js.native
+  var deviceMetadata: js.UndefOr[js.Any] = js.undefined
   
   /** Device display name. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The FCC identifier of the device. */
-  var fccId: js.UndefOr[String] = js.native
+  var fccId: js.UndefOr[String] = js.undefined
   
   /** Output only. Grants held by the device. */
-  var grants: js.UndefOr[js.Array[SasPortalDeviceGrant]] = js.native
+  var grants: js.UndefOr[js.Array[SasPortalDeviceGrant]] = js.undefined
   
   /** Output only. The resource path name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Configuration of the device, as specified via SAS Portal API. */
-  var preloadedConfig: js.UndefOr[SasPortalDeviceConfig] = js.native
+  var preloadedConfig: js.UndefOr[SasPortalDeviceConfig] = js.undefined
   
   /** A serial number assigned to the device by the device manufacturer. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
   /** Output only. Device state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SasPortalDevice {
   

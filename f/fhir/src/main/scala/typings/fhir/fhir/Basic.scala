@@ -2,45 +2,45 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource for non-supported content
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait Basic extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait Basic
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.native
+  var _created: js.UndefOr[Element] = js.undefined
   
   /**
     * Who created
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Kind of Resource
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * When created
     */
-  var created: js.UndefOr[date] = js.native
+  var created: js.UndefOr[date] = js.undefined
   
   /**
     * Business identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Identifies the focus of this resource
     */
-  var subject: js.UndefOr[Reference] = js.native
+  var subject: js.UndefOr[Reference] = js.undefined
 }
 object Basic {
   

@@ -2,13 +2,11 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a merge conflict.
   */
-@js.native
 trait SchemaMergeConflict extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaMergeConflict extends StObject {
     * conflicting changes compared to the workspace. If this field is missing,
     * it means the workspace entity is deleted from the base version.
     */
-  var entityInBaseVersion: js.UndefOr[SchemaEntity] = js.native
+  var entityInBaseVersion: js.UndefOr[SchemaEntity] = js.undefined
   
   /**
     * The workspace entity that has conflicting changes compared to the base
     * version. If an entity is deleted in a workspace, it will still appear
     * with a deleted change status.
     */
-  var entityInWorkspace: js.UndefOr[SchemaEntity] = js.native
+  var entityInWorkspace: js.UndefOr[SchemaEntity] = js.undefined
 }
 object SchemaMergeConflict {
   

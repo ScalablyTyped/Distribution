@@ -2,20 +2,18 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 2. System (HW)
-@js.native
 trait RaspberryRevisionData extends StObject {
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var processor: String = js.native
+  var processor: String
   
-  var revision: String = js.native
+  var revision: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object RaspberryRevisionData {
   

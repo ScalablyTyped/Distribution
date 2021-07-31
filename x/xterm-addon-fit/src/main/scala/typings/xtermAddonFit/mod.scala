@@ -1,9 +1,9 @@
 package typings.xtermAddonFit
 
 import typings.xterm.mod.ITerminalAddon
+import typings.xterm.mod.Terminal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +13,18 @@ object mod {
   /**
     * Creates a new fit addon.
     */
-  class FitAddon () extends ITerminalAddon {
+  class FitAddon ()
+    extends StObject
+       with ITerminalAddon {
+    
+    /**
+      * This is called when the addon is activated.
+      */
+    /* CompleteClass */
+    override def activate(terminal: Terminal): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Resizes the terminal to the dimensions of its containing element.
@@ -26,18 +37,17 @@ object mod {
     def proposeDimensions(): ITerminalDimensions = js.native
   }
   
-  @js.native
   trait ITerminalDimensions extends StObject {
     
     /**
       * The number of columns in the terminal.
       */
-    var cols: Double = js.native
+    var cols: Double
     
     /**
       * The number of rows in the terminal.
       */
-    var rows: Double = js.native
+    var rows: Double
   }
   object ITerminalDimensions {
     

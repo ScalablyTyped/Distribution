@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glueConnectionMod {
@@ -70,6 +69,10 @@ object glueConnectionMod {
   /* static members */
   object Connection {
     
+    @JSImport("@pulumi/aws/glue/connection", "Connection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Connection resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -79,65 +82,59 @@ object glueConnectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Connection = js.native
-    @JSImport("@pulumi/aws/glue/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Connection = js.native
-    @JSImport("@pulumi/aws/glue/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState): Connection = js.native
-    @JSImport("@pulumi/aws/glue/connection", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Connection]
     
     /**
       * Returns true if the given object is an instance of Connection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/connection", "Connection.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/connection.Connection */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/connection.Connection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/connection.Connection */ Boolean]
   }
   
-  @js.native
   trait ConnectionArgs extends StObject {
     
     /**
       * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of key-value pairs used as parameters for this connection.
       */
-    val connectionProperties: Input[StringDictionary[Input[String]]] = js.native
+    val connectionProperties: Input[StringDictionary[Input[String]]]
     
     /**
       * The type of the connection. Supported are: `JDBC`, `MONGODB`, `KAFKA`, and `NETWORK`. Defaults to `JBDC`.
       */
-    val connectionType: js.UndefOr[Input[String]] = js.native
+    val connectionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the connection.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of criteria that can be used in selecting this connection.
       */
-    val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the connection.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
       */
-    val physicalConnectionRequirements: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ConnectionPhysicalConnectionRequirements]] = js.native
+    val physicalConnectionRequirements: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ConnectionPhysicalConnectionRequirements]] = js.undefined
   }
   object ConnectionArgs {
     
@@ -194,48 +191,47 @@ object glueConnectionMod {
     }
   }
   
-  @js.native
   trait ConnectionState extends StObject {
     
     /**
       * The ARN of the Glue Connection.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Data Catalog in which to create the connection. If none is supplied, the AWS account ID is used by default.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of key-value pairs used as parameters for this connection.
       */
-    val connectionProperties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val connectionProperties: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of the connection. Supported are: `JDBC`, `MONGODB`, `KAFKA`, and `NETWORK`. Defaults to `JBDC`.
       */
-    val connectionType: js.UndefOr[Input[String]] = js.native
+    val connectionType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the connection.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of criteria that can be used in selecting this connection.
       */
-    val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val matchCriterias: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the connection.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of physical connection requirements, such as VPC and SecurityGroup. Defined below.
       */
-    val physicalConnectionRequirements: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ConnectionPhysicalConnectionRequirements]] = js.native
+    val physicalConnectionRequirements: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.ConnectionPhysicalConnectionRequirements]] = js.undefined
   }
   object ConnectionState {
     

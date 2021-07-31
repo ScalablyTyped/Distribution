@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainNameRequest extends StObject {
   
   /**
     * [Required] The name of the DomainName resource to be changed.
     */
-  var domainName: String = js.native
+  var domainName: String
   
   /**
     * A list of update operations to be applied to the specified resource and in the order specified in this list.
     */
-  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.native
+  var patchOperations: js.UndefOr[ListOfPatchOperation] = js.undefined
 }
 object UpdateDomainNameRequest {
   

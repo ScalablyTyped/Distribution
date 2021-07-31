@@ -3,11 +3,12 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.Vex.Flow.TextNote.Justification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextNote extends Note {
+trait TextNote
+  extends StObject
+     with Note {
   
   def draw(): Unit = js.native
   
@@ -24,12 +25,18 @@ object TextNote {
   object Justification extends StObject {
     
     @js.native
-    sealed trait CENTER extends Justification
+    sealed trait CENTER
+      extends StObject
+         with Justification
     
     @js.native
-    sealed trait LEFT extends Justification
+    sealed trait LEFT
+      extends StObject
+         with Justification
     
     @js.native
-    sealed trait RIGHT extends Justification
+    sealed trait RIGHT
+      extends StObject
+         with Justification
   }
 }

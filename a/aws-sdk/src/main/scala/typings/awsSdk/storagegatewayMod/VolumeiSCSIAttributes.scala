@@ -2,36 +2,34 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeiSCSIAttributes extends StObject {
   
   /**
     * Indicates whether mutual CHAP is enabled for the iSCSI target.
     */
-  var ChapEnabled: js.UndefOr[scala.Boolean] = js.native
+  var ChapEnabled: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
     * The logical disk number.
     */
-  var LunNumber: js.UndefOr[PositiveIntObject] = js.native
+  var LunNumber: js.UndefOr[PositiveIntObject] = js.undefined
   
   /**
     * The network interface identifier.
     */
-  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.storagegatewayMod.NetworkInterfaceId] = js.native
+  var NetworkInterfaceId: js.UndefOr[typings.awsSdk.storagegatewayMod.NetworkInterfaceId] = js.undefined
   
   /**
     * The port used to communicate with iSCSI targets.
     */
-  var NetworkInterfacePort: js.UndefOr[integer] = js.native
+  var NetworkInterfacePort: js.UndefOr[integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the volume target.
     */
-  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.native
+  var TargetARN: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetARN] = js.undefined
 }
 object VolumeiSCSIAttributes {
   

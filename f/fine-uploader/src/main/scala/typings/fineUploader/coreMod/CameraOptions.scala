@@ -3,10 +3,8 @@ package typings.fineUploader.coreMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait CameraOptions extends StObject {
     *
     * @default `null`
     */
-  var button: js.UndefOr[HTMLElement] = js.native
+  var button: js.UndefOr[HTMLElement] = js.undefined
   
   /**
     * Enable or disable camera access on iOS (iPod, iPhone, and iPad) devices.
@@ -26,7 +24,7 @@ trait CameraOptions extends StObject {
     *
     * @default `false`
     */
-  var ios: js.UndefOr[Boolean] = js.native
+  var ios: js.UndefOr[Boolean] = js.undefined
 }
 object CameraOptions {
   

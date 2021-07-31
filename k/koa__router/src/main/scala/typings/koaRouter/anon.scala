@@ -20,7 +20,6 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -150,47 +149,7 @@ object anon {
       *
       * See: https://github.com/jshttp/http-assert
       */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], msg: String, opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
     def assert(value: js.Any, status: Double): Unit = js.native
-    /**
-      * Similar to .throw(), adds assertion.
-      *
-      *    this.assert(this.user, 401, 'Please login!');
-      *
-      * See: https://github.com/jshttp/http-assert
-      */
-    def assert(value: js.Any, status: Double, msg: js.UndefOr[scala.Nothing], opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -214,7 +173,47 @@ object anon {
       *
       * See: https://github.com/jshttp/http-assert
       */
+    def assert(value: js.Any, status: Double, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
     def assert(value: js.Any, status: Double, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: String, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, msg: Unit, opts: js.Object): Unit = js.native
+    /**
+      * Similar to .throw(), adds assertion.
+      *
+      *    this.assert(this.user, 401, 'Please login!');
+      *
+      * See: https://github.com/jshttp/http-assert
+      */
+    def assert(value: js.Any, status: Unit, opts: js.Object): Unit = js.native
     /**
       * Similar to .throw(), adds assertion.
       *
@@ -230,9 +229,9 @@ object anon {
       * Optionally specify the filename of the download and some options.
       */
     def attachment(): Unit = js.native
-    def attachment(filename: js.UndefOr[scala.Nothing], options: Options): Unit = js.native
     def attachment(filename: String): Unit = js.native
     def attachment(filename: String, options: Options): Unit = js.native
+    def attachment(filename: Unit, options: Options): Unit = js.native
     
     /**
       * Get/Set response body.
@@ -478,7 +477,7 @@ object anon {
     /**
       * the router instance
       */
-    var router: Router[_, js.Object] = js.native
+    var router: Router[js.Any, js.Object] = js.native
     
     /**
       * Get the search string. Same as the querystring
@@ -558,9 +557,9 @@ object anon {
       * See: https://github.com/jshttp/http-errors
       */
     def `throw`(message: String): scala.Nothing = js.native
-    def `throw`(message: String, code: js.UndefOr[scala.Nothing], properties: js.Object): scala.Nothing = js.native
     def `throw`(message: String, code: Double): scala.Nothing = js.native
     def `throw`(message: String, code: Double, properties: js.Object): scala.Nothing = js.native
+    def `throw`(message: String, code: Unit, properties: js.Object): scala.Nothing = js.native
     def `throw`(properties: (Double | String | js.Object)*): scala.Nothing = js.native
     def `throw`(status: Double): scala.Nothing = js.native
     

@@ -6,10 +6,13 @@ import typings.fluentuiDateTimeUtilities.dateFormattingTypesMod.IDateGridStrings
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateFormattingMod {
+  
+  @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", "DEFAULT_CALENDAR_STRINGS")
   @js.native
@@ -23,19 +26,15 @@ object dateFormattingMod {
   @js.native
   val DEFAULT_LOCALIZED_STRINGS: IDateGridStrings = js.native
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", "formatDay")
-  @js.native
-  def formatDay(date: Date): String = js.native
+  @scala.inline
+  def formatDay(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", "formatMonthDayYear")
-  @js.native
-  def formatMonthDayYear(date: Date, strings: IDateGridStrings): String = js.native
+  @scala.inline
+  def formatMonthDayYear(date: Date, strings: IDateGridStrings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthDayYear")(date.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", "formatMonthYear")
-  @js.native
-  def formatMonthYear(date: Date, strings: IDateGridStrings): String = js.native
+  @scala.inline
+  def formatMonthYear(date: Date, strings: IDateGridStrings): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthYear")(date.asInstanceOf[js.Any], strings.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@fluentui/date-time-utilities/lib/dateFormatting", "formatYear")
-  @js.native
-  def formatYear(date: Date): String = js.native
+  @scala.inline
+  def formatYear(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatYear")(date.asInstanceOf[js.Any]).asInstanceOf[String]
 }

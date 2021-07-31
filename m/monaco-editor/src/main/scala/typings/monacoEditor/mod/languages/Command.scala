@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
-  var arguments: js.UndefOr[js.Array[_]] = js.native
+  var arguments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var title: String = js.native
+  var title: String
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object Command {
   
@@ -28,7 +26,7 @@ object Command {
   implicit class CommandMutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArguments(value: js.Array[_]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+    def setArguments(value: js.Array[js.Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgumentsUndefined: Self = StObject.set(x, "arguments", js.undefined)

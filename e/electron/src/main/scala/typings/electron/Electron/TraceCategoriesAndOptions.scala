@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TraceCategoriesAndOptions extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/trace-categories-and-options
@@ -16,7 +14,7 @@ trait TraceCategoriesAndOptions extends StObject {
     * supported. Examples: `test_MyTest*`, `test_MyTest*,test_OtherStuff`,
     * `-excluded_category1,-excluded_category2`.
     */
-  var categoryFilter: String = js.native
+  var categoryFilter: String
   
   /**
     * Controls what kind of tracing is enabled, it is a comma-delimited sequence of
@@ -30,7 +28,7 @@ trait TraceCategoriesAndOptions extends StObject {
     * `record-until-full`, `enable_sampling` and `enable_systrace` set to `false`)
     * before options parsed from `traceOptions` are applied on it.
     */
-  var traceOptions: String = js.native
+  var traceOptions: String
 }
 object TraceCategoriesAndOptions {
   

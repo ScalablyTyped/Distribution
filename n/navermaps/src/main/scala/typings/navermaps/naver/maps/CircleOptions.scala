@@ -2,39 +2,37 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleOptions extends StObject {
   
-  var center: Coord | CoordLiteral = js.native
+  var center: Coord | CoordLiteral
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var map: js.UndefOr[Map] = js.native
+  var map: js.UndefOr[Map] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeLineCap: js.UndefOr[strokeLineCapType] = js.native
+  var strokeLineCap: js.UndefOr[strokeLineCapType] = js.undefined
   
-  var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.native
+  var strokeLineJoin: js.UndefOr[strokeLineJoinType] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeStyle: js.UndefOr[strokeStyleType] = js.native
+  var strokeStyle: js.UndefOr[strokeStyleType] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object CircleOptions {
   

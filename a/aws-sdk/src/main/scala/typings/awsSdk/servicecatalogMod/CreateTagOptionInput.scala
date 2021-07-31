@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTagOptionInput extends StObject {
   
   /**
     * The TagOption key.
     */
-  var Key: TagOptionKey = js.native
+  var Key: TagOptionKey
   
   /**
     * The TagOption value.
     */
-  var Value: TagOptionValue = js.native
+  var Value: TagOptionValue
 }
 object CreateTagOptionInput {
   

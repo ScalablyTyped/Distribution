@@ -4,7 +4,6 @@ import typings.wonka.anon.Tag
 import typings.wonka.wonkaNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wonkaTypesMod {
@@ -15,7 +14,7 @@ object wonkaTypesMod {
   
   type Operator[A, B] = js.Function1[/* source */ Source[A], Source[B]]
   
-  type Signal[A] = (Tag with (js.Array[js.Function1[/* talkback */ Talkback, Unit]])) | (typings.wonka.anon.`0` with js.Array[A]) | `0`
+  type Signal[A] = (Tag & (js.Array[js.Function1[/* talkback */ Talkback, Unit]])) | (typings.wonka.anon.`0` & js.Array[A]) | `0`
   
   type Sink[A] = js.Function1[/* signal */ Signal[A], Unit]
   

@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The images replacing the shapes are rectangular after being inserted into
   * the presentation and do not take on the forms of the shapes.
   */
-@js.native
 trait SchemaReplaceAllShapesWithImageRequest extends StObject {
   
   /**
     * If set, this request will replace all of the shapes that contain the
     * given text.
     */
-  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.native
+  var containsText: js.UndefOr[SchemaSubstringMatchCriteria] = js.undefined
   
   /**
     * The image replace method.  If you specify both a `replace_method` and an
@@ -26,7 +24,7 @@ trait SchemaReplaceAllShapesWithImageRequest extends StObject {
     * value for `replace_method`, then the specified `replace_method` value is
     * used.  If you do not specify either, then CENTER_INSIDE is used.
     */
-  var imageReplaceMethod: js.UndefOr[String] = js.native
+  var imageReplaceMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The image URL.  The image is fetched once at insertion time and a copy is
@@ -36,7 +34,7 @@ trait SchemaReplaceAllShapesWithImageRequest extends StObject {
     * itself is saved with the image, and exposed via the Image.source_url
     * field.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * If non-empty, limits the matches to page elements only on the given
@@ -44,7 +42,7 @@ trait SchemaReplaceAllShapesWithImageRequest extends StObject {
     * notes page or a notes master, or if a page with that object ID
     * doesn&#39;t exist in the presentation.
     */
-  var pageObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var pageObjectIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The replace method.  &lt;b&gt;Deprecated&lt;/b&gt;: use
@@ -52,7 +50,7 @@ trait SchemaReplaceAllShapesWithImageRequest extends StObject {
     * and an `image_replace_method`, the `image_replace_method` takes
     * precedence.
     */
-  var replaceMethod: js.UndefOr[String] = js.native
+  var replaceMethod: js.UndefOr[String] = js.undefined
 }
 object SchemaReplaceAllShapesWithImageRequest {
   

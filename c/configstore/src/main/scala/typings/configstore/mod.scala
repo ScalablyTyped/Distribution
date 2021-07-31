@@ -2,18 +2,19 @@ package typings.configstore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("configstore", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Configstore {
+  class ^ protected ()
+    extends StObject
+       with Configstore {
     def this(packageName: String) = this()
     def this(packageName: String, defaults: js.Any) = this()
-    def this(packageName: String, defaults: js.UndefOr[scala.Nothing], options: ConfigstoreOptions) = this()
     def this(packageName: String, defaults: js.Any, options: ConfigstoreOptions) = this()
+    def this(packageName: String, defaults: Unit, options: ConfigstoreOptions) = this()
   }
   
   @js.native
@@ -74,12 +75,11 @@ object mod {
     var size: Double = js.native
   }
   
-  @js.native
   trait ConfigstoreOptions extends StObject {
     
-    var configPath: js.UndefOr[String] = js.native
+    var configPath: js.UndefOr[String] = js.undefined
     
-    var globalConfigPath: js.UndefOr[Boolean] = js.native
+    var globalConfigPath: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigstoreOptions {
     

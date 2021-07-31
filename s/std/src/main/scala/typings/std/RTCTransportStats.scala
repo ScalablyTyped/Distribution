@@ -2,25 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCTransportStats extends RTCStats {
+trait RTCTransportStats
+  extends StObject
+     with RTCStats {
   
-  var activeConnection: js.UndefOr[scala.Boolean] = js.native
+  var activeConnection: js.UndefOr[scala.Boolean] = js.undefined
   
-  var bytesReceived: js.UndefOr[Double] = js.native
+  var bytesReceived: js.UndefOr[Double] = js.undefined
   
-  var bytesSent: js.UndefOr[Double] = js.native
+  var bytesSent: js.UndefOr[Double] = js.undefined
   
-  var localCertificateId: js.UndefOr[java.lang.String] = js.native
+  var localCertificateId: js.UndefOr[java.lang.String] = js.undefined
   
-  var remoteCertificateId: js.UndefOr[java.lang.String] = js.native
+  var remoteCertificateId: js.UndefOr[java.lang.String] = js.undefined
   
-  var rtcpTransportStatsId: js.UndefOr[java.lang.String] = js.native
+  var rtcpTransportStatsId: js.UndefOr[java.lang.String] = js.undefined
   
-  var selectedCandidatePairId: js.UndefOr[java.lang.String] = js.native
+  var selectedCandidatePairId: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCTransportStats {
   

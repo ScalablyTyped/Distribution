@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapClientFloatingActionButtonContextChangingEventArgs extends ASPxClientFloatingActionButtonContextChangingEventArgs {
+trait BootstrapClientFloatingActionButtonContextChangingEventArgs
+  extends StObject
+     with ASPxClientFloatingActionButtonContextChangingEventArgs {
   
   @JSName("action")
-  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction = js.native
+  var action_BootstrapClientFloatingActionButtonContextChangingEventArgs: BootstrapClientFABAction
 }
 object BootstrapClientFloatingActionButtonContextChangingEventArgs {
   

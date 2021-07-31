@@ -2,76 +2,74 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextTranslationJobProperties extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an AWS Identity Access and Management (IAM) role that granted Amazon Translate read access to the job's input data.
     */
-  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.native
+  var DataAccessRoleArn: js.UndefOr[IamRoleArn] = js.undefined
   
   /**
     * The time at which the translation job ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The input configuration properties that were specified when the job was requested.
     */
-  var InputDataConfig: js.UndefOr[typings.awsSdk.translateMod.InputDataConfig] = js.native
+  var InputDataConfig: js.UndefOr[typings.awsSdk.translateMod.InputDataConfig] = js.undefined
   
   /**
     * The number of documents successfully and unsuccessfully processed during the translation job.
     */
-  var JobDetails: js.UndefOr[typings.awsSdk.translateMod.JobDetails] = js.native
+  var JobDetails: js.UndefOr[typings.awsSdk.translateMod.JobDetails] = js.undefined
   
   /**
     * The ID of the translation job.
     */
-  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.translateMod.JobId] = js.undefined
   
   /**
     * The user-defined name of the translation job.
     */
-  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.translateMod.JobName] = js.undefined
   
   /**
     * The status of the translation job.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.translateMod.JobStatus] = js.undefined
   
   /**
     * An explanation of any errors that may have occured during the translation job.
     */
-  var Message: js.UndefOr[UnboundedLengthString] = js.native
+  var Message: js.UndefOr[UnboundedLengthString] = js.undefined
   
   /**
     * The output configuration properties that were specified when the job was requested.
     */
-  var OutputDataConfig: js.UndefOr[typings.awsSdk.translateMod.OutputDataConfig] = js.native
+  var OutputDataConfig: js.UndefOr[typings.awsSdk.translateMod.OutputDataConfig] = js.undefined
   
   /**
     * The language code of the language of the source text. The language must be a language supported by Amazon Translate.
     */
-  var SourceLanguageCode: js.UndefOr[LanguageCodeString] = js.native
+  var SourceLanguageCode: js.UndefOr[LanguageCodeString] = js.undefined
   
   /**
     * The time at which the translation job was submitted.
     */
-  var SubmittedTime: js.UndefOr[Timestamp] = js.native
+  var SubmittedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The language code of the language of the target text. The language must be a language supported by Amazon Translate.
     */
-  var TargetLanguageCodes: js.UndefOr[TargetLanguageCodeStringList] = js.native
+  var TargetLanguageCodes: js.UndefOr[TargetLanguageCodeStringList] = js.undefined
   
   /**
     * A list containing the names of the terminologies applied to a translation job. Only one terminology can be applied per StartTextTranslationJob request at this time.
     */
-  var TerminologyNames: js.UndefOr[ResourceNameList] = js.native
+  var TerminologyNames: js.UndefOr[ResourceNameList] = js.undefined
 }
 object TextTranslationJobProperties {
   

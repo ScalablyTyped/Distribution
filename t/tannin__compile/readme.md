@@ -10,9 +10,9 @@ Compiles an evaluating function for a C expression
 | ------------------ | :-------------: |
 | Full name          | @tannin/compile |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 4 |
 | # dependents       | 1 |
-| # downloads        | 731526 |
+| # downloads        | 1018909 |
 | # stars            | 0 |
 
 ## Links

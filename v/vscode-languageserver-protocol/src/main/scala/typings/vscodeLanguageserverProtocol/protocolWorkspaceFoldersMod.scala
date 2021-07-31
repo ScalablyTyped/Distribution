@@ -10,23 +10,26 @@ import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolNotificationType
 import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolWorkspaceFoldersMod {
   
   object DidChangeWorkspaceFoldersNotification {
     
-    type HandlerSignature = NotificationHandler[DidChangeWorkspaceFoldersParams]
-    
-    type MiddlewareSignature = js.Function2[/* params */ DidChangeWorkspaceFoldersParams, /* next */ HandlerSignature, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.workspaceFolders", "DidChangeWorkspaceFoldersNotification.type")
     @js.native
     val `type`: ProtocolNotificationType[DidChangeWorkspaceFoldersParams, Unit] = js.native
+    
+    type HandlerSignature = NotificationHandler[DidChangeWorkspaceFoldersParams]
+    
+    type MiddlewareSignature = js.Function2[/* params */ DidChangeWorkspaceFoldersParams, /* next */ HandlerSignature, Unit]
   }
   
   object WorkspaceFoldersRequest {
+    
+    @JSImport("vscode-languageserver-protocol/lib/protocol.workspaceFolders", "WorkspaceFoldersRequest.type")
+    @js.native
+    val `type`: ProtocolRequestType0[js.Array[WorkspaceFolder] | Null, scala.Nothing, Unit, Unit] = js.native
     
     type HandlerSignature = RequestHandler0[js.Array[WorkspaceFolder] | Null, Unit]
     
@@ -35,19 +38,14 @@ object protocolWorkspaceFoldersMod {
         /* next */ HandlerSignature, 
         HandlerResult[js.Array[WorkspaceFolder] | Null, Unit]
       ]
-    
-    @JSImport("vscode-languageserver-protocol/lib/protocol.workspaceFolders", "WorkspaceFoldersRequest.type")
-    @js.native
-    val `type`: ProtocolRequestType0[js.Array[WorkspaceFolder] | Null, scala.Nothing, Unit, Unit] = js.native
   }
   
-  @js.native
   trait DidChangeWorkspaceFoldersParams extends StObject {
     
     /**
       * The actual workspace folder change event.
       */
-    var event: WorkspaceFoldersChangeEvent = js.native
+    var event: WorkspaceFoldersChangeEvent
   }
   object DidChangeWorkspaceFoldersParams {
     
@@ -65,19 +63,18 @@ object protocolWorkspaceFoldersMod {
     }
   }
   
-  @js.native
   trait WorkspaceFolder extends StObject {
     
     /**
       * The name of the workspace folder. Used to refer to this
       * workspace folder in the user interface.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The associated URI for this workspace folder.
       */
-    var uri: String = js.native
+    var uri: String
   }
   object WorkspaceFolder {
     
@@ -98,18 +95,17 @@ object protocolWorkspaceFoldersMod {
     }
   }
   
-  @js.native
   trait WorkspaceFoldersChangeEvent extends StObject {
     
     /**
       * The array of added workspace folders
       */
-    var added: js.Array[WorkspaceFolder] = js.native
+    var added: js.Array[WorkspaceFolder]
     
     /**
       * The array of the removed workspace folders
       */
-    var removed: js.Array[WorkspaceFolder] = js.native
+    var removed: js.Array[WorkspaceFolder]
   }
   object WorkspaceFoldersChangeEvent {
     
@@ -136,13 +132,12 @@ object protocolWorkspaceFoldersMod {
     }
   }
   
-  @js.native
   trait WorkspaceFoldersClientCapabilities extends StObject {
     
     /**
       * The workspace client capabilities
       */
-    var workspace: js.UndefOr[WorkspaceFolders] = js.native
+    var workspace: js.UndefOr[WorkspaceFolders] = js.undefined
   }
   object WorkspaceFoldersClientCapabilities {
     
@@ -163,19 +158,18 @@ object protocolWorkspaceFoldersMod {
     }
   }
   
-  @js.native
   trait WorkspaceFoldersInitializeParams extends StObject {
     
     /**
       * The actual configured workspace folders.
       */
-    var workspaceFolders: js.Array[WorkspaceFolder] | Null = js.native
+    var workspaceFolders: js.Array[WorkspaceFolder] | Null
   }
   object WorkspaceFoldersInitializeParams {
     
     @scala.inline
     def apply(): WorkspaceFoldersInitializeParams = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(workspaceFolders = null)
       __obj.asInstanceOf[WorkspaceFoldersInitializeParams]
     }
     
@@ -193,13 +187,12 @@ object protocolWorkspaceFoldersMod {
     }
   }
   
-  @js.native
   trait WorkspaceFoldersServerCapabilities extends StObject {
     
     /**
       * The workspace server capabilities
       */
-    var workspace: js.UndefOr[`4`] = js.native
+    var workspace: js.UndefOr[`4`] = js.undefined
   }
   object WorkspaceFoldersServerCapabilities {
     

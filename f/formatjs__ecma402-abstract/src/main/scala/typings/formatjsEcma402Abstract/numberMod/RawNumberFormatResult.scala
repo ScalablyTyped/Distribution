@@ -2,17 +2,15 @@ package typings.formatjsEcma402Abstract.numberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawNumberFormatResult extends StObject {
   
-  var formattedString: String = js.native
+  var formattedString: String
   
-  var integerDigitsCount: Double = js.native
+  var integerDigitsCount: Double
   
-  var roundedNumber: Double = js.native
+  var roundedNumber: Double
 }
 object RawNumberFormatResult {
   

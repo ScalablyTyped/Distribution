@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Icon extends Control {
+trait Icon
+  extends StObject
+     with Control {
   
   /**
     * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -76,7 +77,7 @@ trait Icon extends Control {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>ariaLabelledBy</code>.
     */
-  def getAriaLabelledBy(): js.Array[_] = js.native
+  def getAriaLabelledBy(): js.Array[js.Any] = js.native
   
   /**
     * Gets current value of property <code>backgroundColor</code>.Background color of the Icon in normal
@@ -170,7 +171,7 @@ trait Icon extends Control {
     * Removes all the controls in the association named <code>ariaLabelledBy</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllAriaLabelledBy(): js.Array[_] = js.native
+  def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
   
   def removeAriaLabelledBy(vAriaLabelledBy: js.Any): js.Any = js.native
   /**

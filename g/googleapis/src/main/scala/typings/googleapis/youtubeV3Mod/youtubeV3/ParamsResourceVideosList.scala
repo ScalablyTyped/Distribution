@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceVideosList extends StandardParameters {
+trait ParamsResourceVideosList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The chart parameter identifies the chart that you want to retrieve.
     */
-  var chart: js.UndefOr[String] = js.native
+  var chart: js.UndefOr[String] = js.undefined
   
   /**
     * The hl parameter instructs the API to retrieve localized resource
@@ -32,26 +32,26 @@ trait ParamsResourceVideosList extends StandardParameters {
     * are not available, the snippet.localized object will contain resource
     * details in the resource's default language.
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
   /**
     * The id parameter specifies a comma-separated list of the YouTube video
     * ID(s) for the resource(s) that are being retrieved. In a video resource,
     * the id property specifies the video's ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * DEPRECATED
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The maxHeight parameter specifies a maximum height of the embedded
     * player. If maxWidth is provided, maxHeight may not be reached in order to
     * not violate the width request.
     */
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * The maxResults parameter specifies the maximum number of items that
@@ -59,20 +59,20 @@ trait ParamsResourceVideosList extends StandardParameters {
     * for use in conjunction with the myRating and chart parameters, but it is
     * not supported for use in conjunction with the id parameter.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The maxWidth parameter specifies a maximum width of the embedded player.
     * If maxHeight is provided, maxWidth may not be reached in order to not
     * violate the height request.
     */
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Set this parameter's value to like or dislike to instruct the API to only
     * return videos liked or disliked by the authenticated user.
     */
-  var myRating: js.UndefOr[String] = js.native
+  var myRating: js.UndefOr[String] = js.undefined
   
   /**
     * Note: This parameter is intended exclusively for YouTube content
@@ -86,7 +86,7 @@ trait ParamsResourceVideosList extends StandardParameters {
     * channel. The CMS account that the user authenticates with must be linked
     * to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * The pageToken parameter identifies a specific page in the result set that
@@ -96,7 +96,7 @@ trait ParamsResourceVideosList extends StandardParameters {
     * myRating and chart parameters, but it is not supported for use in
     * conjunction with the id parameter.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The part parameter specifies a comma-separated list of one or more video
@@ -107,7 +107,7 @@ trait ParamsResourceVideosList extends StandardParameters {
     * description, tags, and categoryId properties. As such, if you set
     * part=snippet, the API response will contain all of those properties.
     */
-  var part: js.UndefOr[String] = js.native
+  var part: js.UndefOr[String] = js.undefined
   
   /**
     * The regionCode parameter instructs the API to select a video chart
@@ -115,7 +115,7 @@ trait ParamsResourceVideosList extends StandardParameters {
     * conjunction with the chart parameter. The parameter value is an ISO
     * 3166-1 alpha-2 country code.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
   /**
     * The videoCategoryId parameter identifies the video category for which the
@@ -123,7 +123,7 @@ trait ParamsResourceVideosList extends StandardParameters {
     * with the chart parameter. By default, charts are not restricted to a
     * particular category.
     */
-  var videoCategoryId: js.UndefOr[String] = js.native
+  var videoCategoryId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceVideosList {
   

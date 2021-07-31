@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationSpec extends StObject {
   
   /** Template holds the latest specification for the Revision to be stamped out. */
-  var template: js.UndefOr[RevisionTemplate] = js.native
+  var template: js.UndefOr[RevisionTemplate] = js.undefined
 }
 object ConfigurationSpec {
   

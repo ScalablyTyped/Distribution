@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLunaClientRequest extends StObject {
   
   /**
     * The ARN of the client to delete.
     */
-  var ClientArn: typings.awsSdk.cloudhsmMod.ClientArn = js.native
+  var ClientArn: typings.awsSdk.cloudhsmMod.ClientArn
 }
 object DeleteLunaClientRequest {
   

@@ -10,9 +10,9 @@ shared, synchronous, independent state for javascript apps
 | ------------------ | :-------------: |
 | Full name          | atom |
 | Keywords           | shared, synchronous, independent, state |
-| # releases         | 8 |
+| # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 15401 |
+| # downloads        | 16427 |
 | # stars            | 0 |
 
 ## Links

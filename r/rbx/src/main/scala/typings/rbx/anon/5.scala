@@ -2,13 +2,11 @@ package typings.rbx.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `5` extends StObject {
   
-  var `data-tooltip`: js.UndefOr[String | Double] = js.native
+  var `data-tooltip`: js.UndefOr[String | Double] = js.undefined
 }
 object `5` {
   

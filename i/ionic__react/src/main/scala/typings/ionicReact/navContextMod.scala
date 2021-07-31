@@ -10,7 +10,6 @@ import typings.ionicReact.routeInfoMod.RouteInfo
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navContextMod {
@@ -34,11 +33,11 @@ object navContextMod {
     def getStackManager(): js.Any = js.native
     
     def goBack(): Unit = js.native
-    def goBack(route: js.UndefOr[scala.Nothing], animationBuilder: AnimationBuilder): Unit = js.native
     def goBack(route: String): Unit = js.native
     def goBack(route: String, animationBuilder: AnimationBuilder): Unit = js.native
-    def goBack(route: RouteInfo[_]): Unit = js.native
-    def goBack(route: RouteInfo[_], animationBuilder: AnimationBuilder): Unit = js.native
+    def goBack(route: Unit, animationBuilder: AnimationBuilder): Unit = js.native
+    def goBack(route: RouteInfo[js.Any]): Unit = js.native
+    def goBack(route: RouteInfo[js.Any], animationBuilder: AnimationBuilder): Unit = js.native
     
     def hasIonicRouter(): Boolean = js.native
     
@@ -54,8 +53,8 @@ object navContextMod {
     def resetTab(tab: String, originalHref: String): Unit = js.native
     def resetTab(tab: String, originalHref: String, originalRouteOptions: js.Any): Unit = js.native
     
-    var routeInfo: js.UndefOr[RouteInfo[_]] = js.native
+    var routeInfo: js.UndefOr[RouteInfo[js.Any]] = js.native
     
-    def setCurrentTab(tab: String, routeInfo: RouteInfo[_]): Unit = js.native
+    def setCurrentTab(tab: String, routeInfo: RouteInfo[js.Any]): Unit = js.native
   }
 }

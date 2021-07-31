@@ -6,7 +6,6 @@ import typings.xrm.Xrm.Collection.ItemCollection
 import typings.xrm.Xrm.ProcessFlow.ProcessManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,17 +44,17 @@ trait Data extends StObject {
     * @param save true to save the record, after the refresh.
     * @returns Returns an asynchronous promise.
     */
-  def refresh(save: Boolean): PromiseLike[js.UndefOr[scala.Nothing]] = js.native
+  def refresh(save: Boolean): PromiseLike[Unit] = js.native
   
   /**
     * Asynchronously saves the record.
     * @returns Returns an asynchronous promise.
     */
-  def save(): PromiseLike[js.UndefOr[scala.Nothing]] = js.native
+  def save(): PromiseLike[Unit] = js.native
   /**
     * Asynchronously saves the record  with the option to set callback functions to be executed after the save operation is completed.
     * @param saveOptions Options to control how appointment, recurring appointment, or service activity records are processed.
     * @returns Returns an asynchronous promise.
     */
-  def save(saveOptions: SaveOptions): PromiseLike[js.UndefOr[scala.Nothing]] = js.native
+  def save(saveOptions: SaveOptions): PromiseLike[Unit] = js.native
 }

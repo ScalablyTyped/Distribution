@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.FileManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofFileManager extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): FileManager = js.native
+  def extend(proto: js.Object): FileManager
   
   /* static member */
-  var fn: FileManager = js.native
+  var fn: FileManager
 }
 object TypeofFileManager {
   

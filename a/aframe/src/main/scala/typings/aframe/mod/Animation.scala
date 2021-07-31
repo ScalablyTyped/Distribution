@@ -11,34 +11,32 @@ import typings.aframe.aframeStrings.normal
 import typings.aframe.aframeStrings.reverse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var begin: String | Double = js.native
+  var begin: String | Double
   
-  var delay: Double = js.native
+  var delay: Double
   
-  var direction: alternate | alternateReverse | normal | reverse = js.native
+  var direction: alternate | alternateReverse | normal | reverse
   
-  var dur: Double = js.native
+  var dur: Double
   
-  def easing(): Unit = js.native
+  def easing(): Unit
   
-  var end: String = js.native
+  var end: String
   
-  var fill: backwards | both | forwards | none = js.native
+  var fill: backwards | both | forwards | none
   
-  var from: js.Any = js.native
+  var from: js.Any
   
   // TODO type
-  var repeat: Double | indefinite = js.native
+  var repeat: Double | indefinite
   
-  var to: Double = js.native
+  var to: Double
 }
 object Animation {
   

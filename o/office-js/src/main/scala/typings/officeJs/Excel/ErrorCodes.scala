@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,68 +11,112 @@ sealed trait ErrorCodes extends StObject
 object ErrorCodes extends StObject {
   
   @js.native
-  sealed trait accessDenied extends ErrorCodes
+  sealed trait accessDenied
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait apiNotFound extends ErrorCodes
+  sealed trait apiNotFound
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait conflict extends ErrorCodes
+  sealed trait conflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait filteredRangeConflict extends ErrorCodes
+  sealed trait filteredRangeConflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait generalException extends ErrorCodes
+  sealed trait generalException
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait inactiveWorkbook extends ErrorCodes
+  sealed trait inactiveWorkbook
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait insertDeleteConflict extends ErrorCodes
+  sealed trait insertDeleteConflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidArgument extends ErrorCodes
+  sealed trait invalidArgument
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidBinding extends ErrorCodes
+  sealed trait invalidBinding
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidOperation extends ErrorCodes
+  sealed trait invalidOperation
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidOperationInCellEditMode extends ErrorCodes
+  sealed trait invalidOperationInCellEditMode
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidReference extends ErrorCodes
+  sealed trait invalidReference
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait invalidSelection extends ErrorCodes
+  sealed trait invalidSelection
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait itemAlreadyExists extends ErrorCodes
+  sealed trait itemAlreadyExists
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait itemNotFound extends ErrorCodes
+  sealed trait itemNotFound
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait nonBlankCellOffSheet extends ErrorCodes
+  sealed trait nonBlankCellOffSheet
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait notImplemented extends ErrorCodes
+  sealed trait notImplemented
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait pivotTableRangeConflict extends ErrorCodes
+  sealed trait pivotTableRangeConflict
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait rangeExceedsLimit extends ErrorCodes
+  sealed trait rangeExceedsLimit
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait requestAborted extends ErrorCodes
+  sealed trait requestAborted
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait unsupportedOperation extends ErrorCodes
+  sealed trait unsupportedOperation
+    extends StObject
+       with ErrorCodes
   
   @js.native
-  sealed trait unsupportedSheet extends ErrorCodes
+  sealed trait unsupportedSheet
+    extends StObject
+       with ErrorCodes
 }

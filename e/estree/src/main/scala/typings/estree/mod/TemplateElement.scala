@@ -3,27 +3,26 @@ package typings.estree.mod
 import typings.estree.anon.Cooked
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateElement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var tail: Boolean = js.native
+  var tail: Boolean
   
   @JSName("type")
-  var type_TemplateElement: typings.estree.estreeStrings.TemplateElement = js.native
+  var type_TemplateElement: typings.estree.estreeStrings.TemplateElement
   
-  var value: Cooked = js.native
+  var value: Cooked
 }
 object TemplateElement {
   
   @scala.inline
-  def apply(tail: Boolean, `type`: typings.estree.estreeStrings.TemplateElement, value: Cooked): TemplateElement = {
+  def apply(tail: Boolean, value: Cooked): TemplateElement = {
     val __obj = js.Dynamic.literal(tail = tail.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TemplateElement")
     __obj.asInstanceOf[TemplateElement]
   }
   

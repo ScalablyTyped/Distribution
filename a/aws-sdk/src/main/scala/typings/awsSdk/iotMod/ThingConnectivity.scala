@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingConnectivity extends StObject {
   
   /**
     * True if the thing is connected to the AWS IoT service; false if it is not connected.
     */
-  var connected: js.UndefOr[Boolean] = js.native
+  var connected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The epoch time (in milliseconds) when the thing last connected or disconnected. If the thing has been disconnected for more than a few weeks, the time value might be missing.
     */
-  var timestamp: js.UndefOr[ConnectivityTimestamp] = js.native
+  var timestamp: js.UndefOr[ConnectivityTimestamp] = js.undefined
 }
 object ThingConnectivity {
   

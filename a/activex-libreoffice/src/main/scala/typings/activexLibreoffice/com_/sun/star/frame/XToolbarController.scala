@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,33 +16,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.XDispatchProvider
   * @since OOo 2.0
   */
-@js.native
-trait XToolbarController extends XInterface {
+trait XToolbarController
+  extends StObject
+     with XInterface {
   
   /** notifies a component that a single click has been made on the toolbar item. */
-  def click(): Unit = js.native
+  def click(): Unit
   
   /**
     * requests to create an item window which can be added to the toolbar.
     * @param Parent a {@link com.sun.star.awt.XWindow} which must be used as a parent for the requested item window.
     * @returns a {@link com.sun.star.awt.XWindow} which can be added to a toolbar. The reference must be empty if a component does not want to provide an item w
     */
-  def createItemWindow(Parent: XWindow): XWindow = js.native
+  def createItemWindow(Parent: XWindow): XWindow
   
   /**
     * requests to create a pop-up window for additional functions.
     * @returns a {@link com.sun.star.awt.XWindow} which provides additional functions to the user. The reference must be empty if component does not want to pro
     */
-  def createPopupWindow(): XWindow = js.native
+  def createPopupWindow(): XWindow
   
   /** notifies a component that a double click has been made on the toolbar item. */
-  def doubleClick(): Unit = js.native
+  def doubleClick(): Unit
   
   /**
     * provides a function to execute the command which is bound to the toolbar controller.
     * @param KeyModifier a combination of {@link com.sun.star.awt.KeyModifier} value that represent the current state of the modifier keys.  This function is
     */
-  def execute(KeyModifier: Double): Unit = js.native
+  def execute(KeyModifier: Double): Unit
 }
 object XToolbarController {
   

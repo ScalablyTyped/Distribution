@@ -3,38 +3,36 @@ package typings.bingmaps.Microsoft.Maps.Directions
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Waypoint extends StObject {
   
   /** Releases any resources associated with the waypoint. */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Gets the address associated with the waypoint.
     * @returns The address associated with the waypoint.
     */
-  def getAddress(): String = js.native
+  def getAddress(): String
   
   /**
     * Gets the location of the waypoint.
     * @returns The location of the waypoint.
     */
-  def getLocation(): Location = js.native
+  def getLocation(): Location
   
   /**
     * Gets a boolean value indicating whether the waypoint is a via point.
     * @returns A boolean value indicating whether the waypoint is a via point.
     */
-  def isViapoint(): Boolean = js.native
+  def isViapoint(): Boolean
   
   /**
     * Sets options for the waypoint. For these options to take effect, you must recalculate the route.
     * @param options Options used to define the Waypoint.
     */
-  def setOptions(options: IWaypointOptions): Unit = js.native
+  def setOptions(options: IWaypointOptions): Unit
 }
 object Waypoint {
   

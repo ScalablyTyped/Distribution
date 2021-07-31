@@ -2,31 +2,29 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location returns the location name, and if the location is recommended for
   * GKE cluster scheduling.
   */
-@js.native
 trait SchemaLocation extends StObject {
   
   /**
     * Contains the name of the resource requested. Specified in the format
     * &#39;projects/x/locations/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the location is recomended for GKE cluster scheduling.
     */
-  var recommended: js.UndefOr[Boolean] = js.native
+  var recommended: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains the type of location this Location is for. Regional or Zonal.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaLocation {
   

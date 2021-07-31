@@ -2,27 +2,25 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtyomGlobalEvents extends StObject {
   
-  var COMMAND_MATCHED: String = js.native
+  var COMMAND_MATCHED: String
   
-  var COMMAND_RECOGNITION_END: String = js.native
+  var COMMAND_RECOGNITION_END: String
   
-  var COMMAND_RECOGNITION_START: String = js.native
+  var COMMAND_RECOGNITION_START: String
   
-  var ERROR: String = js.native
+  var ERROR: String
   
-  var NOT_COMMAND_MATCHED: String = js.native
+  var NOT_COMMAND_MATCHED: String
   
-  var SPEECH_SYNTHESIS_END: String = js.native
+  var SPEECH_SYNTHESIS_END: String
   
-  var SPEECH_SYNTHESIS_START: String = js.native
+  var SPEECH_SYNTHESIS_START: String
   
-  var TEXT_RECOGNIZED: String = js.native
+  var TEXT_RECOGNIZED: String
 }
 object ArtyomGlobalEvents {
   

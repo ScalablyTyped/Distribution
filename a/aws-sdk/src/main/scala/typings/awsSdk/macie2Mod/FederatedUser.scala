@@ -2,36 +2,34 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FederatedUser extends StObject {
   
   /**
     * The AWS access key ID that identifies the credentials.
     */
-  var accessKeyId: js.UndefOr[string] = js.native
+  var accessKeyId: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the AWS account that owns the entity that was used to get the credentials.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the entity that was used to get the credentials.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the entity that was used to get the credentials.
     */
-  var principalId: js.UndefOr[string] = js.native
+  var principalId: js.UndefOr[string] = js.undefined
   
   /**
     * The details of the session that was created for the credentials, including the entity that issued the session.
     */
-  var sessionContext: js.UndefOr[SessionContext] = js.native
+  var sessionContext: js.UndefOr[SessionContext] = js.undefined
 }
 object FederatedUser {
   

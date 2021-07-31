@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetedManagedAppConfiguration extends ManagedAppConfiguration {
+trait TargetedManagedAppConfiguration
+  extends StObject
+     with ManagedAppConfiguration {
   
   // List of apps to which the policy is deployed.
-  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.native
+  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.undefined
   
   // Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.undefined
   
   // Count of apps to which the current policy is deployed.
-  var deployedAppCount: js.UndefOr[Double] = js.native
+  var deployedAppCount: js.UndefOr[Double] = js.undefined
   
   // Navigation property to deployment summary of the configuration.
-  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.native
+  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.undefined
   
   // Indicates if the policy is deployed to any inclusion groups or not.
-  var isAssigned: js.UndefOr[Boolean] = js.native
+  var isAssigned: js.UndefOr[Boolean] = js.undefined
 }
 object TargetedManagedAppConfiguration {
   

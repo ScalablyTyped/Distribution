@@ -6,25 +6,23 @@ import typings.chromeApps.chromeAppsStrings.minimized_
 import typings.chromeApps.chromeAppsStrings.normal_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FULLSCREEN extends StObject {
   
-  var FULLSCREEN: fullscreen_ = js.native
+  var FULLSCREEN: fullscreen_
   
-  var MAXIMIZED: maximized_ = js.native
+  var MAXIMIZED: maximized_
   
-  var MINIMIZED: minimized_ = js.native
+  var MINIMIZED: minimized_
   
-  var NORMAL: normal_ = js.native
+  var NORMAL: normal_
 }
 object FULLSCREEN {
   
   @scala.inline
-  def apply(FULLSCREEN: fullscreen_, MAXIMIZED: maximized_, MINIMIZED: minimized_, NORMAL: normal_): FULLSCREEN = {
-    val __obj = js.Dynamic.literal(FULLSCREEN = FULLSCREEN.asInstanceOf[js.Any], MAXIMIZED = MAXIMIZED.asInstanceOf[js.Any], MINIMIZED = MINIMIZED.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any])
+  def apply(): FULLSCREEN = {
+    val __obj = js.Dynamic.literal(FULLSCREEN = "fullscreen", MAXIMIZED = "maximized", MINIMIZED = "minimized", NORMAL = "normal")
     __obj.asInstanceOf[FULLSCREEN]
   }
   

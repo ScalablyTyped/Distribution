@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,15 +15,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.form.component.CommandButton
   * @see com.sun.star.form.control.CommandButton
   */
-@js.native
-trait XApproveActionListener extends XEventListener {
+trait XApproveActionListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when an action is performed.
     * @param aEvent A descriptor specifying the source of the event.
     * @returns `TRUE` when the action is permitted, otherwise `FALSE` .
     */
-  def approveAction(aEvent: EventObject): Boolean = js.native
+  def approveAction(aEvent: EventObject): Boolean
 }
 object XApproveActionListener {
   

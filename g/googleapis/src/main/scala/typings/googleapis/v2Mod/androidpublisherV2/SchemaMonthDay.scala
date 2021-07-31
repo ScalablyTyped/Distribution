@@ -2,22 +2,20 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaMonthDay extends StObject {
   
   /**
     * Day of a month, value in [1, 31] range. Valid range depends on the
     * specified month.
     */
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
   /**
     * Month of a year. e.g. 1 = JAN, 2 = FEB etc.
     */
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
 }
 object SchemaMonthDay {
   

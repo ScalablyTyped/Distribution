@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusCause extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait StatusCause extends StObject {
     * may appear more than once in an array of causes due to fields having multiple errors. Optional. Examples: "name" - the field "name" on the current resource "items[0].name" - the
     * field "name" on the first array entry in "items" +optional
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** A human-readable description of the cause of the error. This field may be presented as-is to a reader. +optional */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /** A machine-readable description of the cause of the error. If this value is empty there is no information available. +optional */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object StatusCause {
   

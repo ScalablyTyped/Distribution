@@ -2,23 +2,22 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Non-player structure. Spawns NPC Source Keepers that guards energy sources
   * and minerals in some rooms. This structure cannot be destroyed.
   */
-@js.native
 trait StructureKeeperLair
-  extends OwnedStructure[STRUCTURE_KEEPER_LAIR]
+  extends StObject
+     with OwnedStructure[STRUCTURE_KEEPER_LAIR]
      with AnyOwnedStructure
      with ConcreteStructure[js.Any] {
   
   /**
     * Time to spawning of the next Source Keeper.
     */
-  var ticksToSpawn: js.UndefOr[Double] = js.native
+  var ticksToSpawn: js.UndefOr[Double] = js.undefined
 }
 object StructureKeeperLair {
   

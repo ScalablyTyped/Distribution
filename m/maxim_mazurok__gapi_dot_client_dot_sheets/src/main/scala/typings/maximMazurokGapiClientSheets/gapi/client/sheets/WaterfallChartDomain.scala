@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaterfallChartDomain extends StObject {
   
   /** The data of the WaterfallChartDomain. */
-  var data: js.UndefOr[ChartData] = js.native
+  var data: js.UndefOr[ChartData] = js.undefined
   
   /** True to reverse the order of the domain values (horizontal axis). */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object WaterfallChartDomain {
   

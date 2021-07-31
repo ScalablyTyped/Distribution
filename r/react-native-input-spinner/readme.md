@@ -10,9 +10,9 @@ React native input with increase and decrease buttons
 | ------------------ | :-------------: |
 | Full name          | react-native-input-spinner |
 | Keywords           | react-native-component, react-component, react-native, android, ios, windows, reactnative, spinner, number, input, float, real, integer, decimal |
-| # releases         | 39 |
+| # releases         | 69 |
 | # dependents       | 0 |
-| # downloads        | 14839 |
+| # downloads        | 28705 |
 | # stars            | 0 |
 
 ## Links

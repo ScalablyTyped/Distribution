@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceCount extends StObject {
   
   /**
     * The number of resources.
     */
-  var count: js.UndefOr[Long] = js.native
+  var count: js.UndefOr[Long] = js.undefined
   
   /**
     * The resource type (for example, "AWS::EC2::Instance").
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object ResourceCount {
   

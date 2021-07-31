@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spreadsheet extends StObject {
   
   /** Output only. A list of data source refresh schedules. */
-  var dataSourceSchedules: js.UndefOr[js.Array[DataSourceRefreshSchedule]] = js.native
+  var dataSourceSchedules: js.UndefOr[js.Array[DataSourceRefreshSchedule]] = js.undefined
   
   /** A list of external data sources connected with the spreadsheet. */
-  var dataSources: js.UndefOr[js.Array[DataSource]] = js.native
+  var dataSources: js.UndefOr[js.Array[DataSource]] = js.undefined
   
   /** The developer metadata associated with a spreadsheet. */
-  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.native
+  var developerMetadata: js.UndefOr[js.Array[DeveloperMetadata]] = js.undefined
   
   /** The named ranges defined in a spreadsheet. */
-  var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.native
+  var namedRanges: js.UndefOr[js.Array[NamedRange]] = js.undefined
   
   /** Overall properties of a spreadsheet. */
-  var properties: js.UndefOr[SpreadsheetProperties] = js.native
+  var properties: js.UndefOr[SpreadsheetProperties] = js.undefined
   
   /** The sheets that are part of a spreadsheet. */
-  var sheets: js.UndefOr[js.Array[Sheet]] = js.native
+  var sheets: js.UndefOr[js.Array[Sheet]] = js.undefined
   
   /** The ID of the spreadsheet. This field is read-only. */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /** The url of the spreadsheet. This field is read-only. */
-  var spreadsheetUrl: js.UndefOr[String] = js.native
+  var spreadsheetUrl: js.UndefOr[String] = js.undefined
 }
 object Spreadsheet {
   

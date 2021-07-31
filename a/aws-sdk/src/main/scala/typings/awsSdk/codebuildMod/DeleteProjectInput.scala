@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProjectInput extends StObject {
   
   /**
     * The name of the build project.
     */
-  var name: NonEmptyString = js.native
+  var name: NonEmptyString
 }
 object DeleteProjectInput {
   

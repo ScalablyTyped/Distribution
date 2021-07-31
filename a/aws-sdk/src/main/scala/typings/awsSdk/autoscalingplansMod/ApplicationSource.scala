@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of a AWS CloudFormation stack.
     */
-  var CloudFormationStackARN: js.UndefOr[XmlString] = js.native
+  var CloudFormationStackARN: js.UndefOr[XmlString] = js.undefined
   
   /**
     * A set of tags (up to 50).
     */
-  var TagFilters: js.UndefOr[typings.awsSdk.autoscalingplansMod.TagFilters] = js.native
+  var TagFilters: js.UndefOr[typings.awsSdk.autoscalingplansMod.TagFilters] = js.undefined
 }
 object ApplicationSource {
   

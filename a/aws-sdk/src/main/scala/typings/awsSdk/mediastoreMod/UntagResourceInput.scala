@@ -2,21 +2,19 @@ package typings.awsSdk.mediastoreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the container.
     */
-  var Resource: ContainerARN = js.native
+  var Resource: ContainerARN
   
   /**
     * A comma-separated list of keys for tags that you want to remove from the container. For example, if your container has two tags (customer:CompanyA and priority:High) and you want to remove one of the tags (priority:High), you specify the key for the tag that you want to remove (priority).
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagResourceInput {
   

@@ -12,7 +12,7 @@ add magnet links and torrents to deluge
 | Keywords           | deluge, deluge-webui, torrent |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 784 |
+| # downloads        | 871 |
 | # stars            | 2 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackingOptions extends StObject {
   
   /**
     * The custom subdomain that will be used to redirect email recipients to the Amazon SES event tracking domain.
     */
-  var CustomRedirectDomain: js.UndefOr[typings.awsSdk.sesMod.CustomRedirectDomain] = js.native
+  var CustomRedirectDomain: js.UndefOr[typings.awsSdk.sesMod.CustomRedirectDomain] = js.undefined
 }
 object TrackingOptions {
   

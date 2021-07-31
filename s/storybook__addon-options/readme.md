@@ -10,9 +10,9 @@ Options addon for storybook
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-options |
 | Keywords           | addon, storybook |
-| # releases         | 413 |
-| # dependents       | 82 |
-| # downloads        | 8296234 |
+| # releases         | 345 |
+| # dependents       | 80 |
+| # downloads        | 7443648 |
 | # stars            | 0 |
 
 ## Links

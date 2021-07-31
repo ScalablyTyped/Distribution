@@ -3,11 +3,12 @@ package typings.nodeSql2.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Query[T] extends Queryable[T] {
+trait Query[T]
+  extends StObject
+     with Queryable[T] {
   
   def from(statement: String): Query[T] = js.native
   def from(table: TableNode): Query[T] = js.native

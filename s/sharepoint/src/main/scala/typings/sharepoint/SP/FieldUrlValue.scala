@@ -2,19 +2,19 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldUrlValue extends ClientValueObject {
+trait FieldUrlValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_description(value: String): Unit = js.native
+  def set_description(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
 }
 object FieldUrlValue {
   

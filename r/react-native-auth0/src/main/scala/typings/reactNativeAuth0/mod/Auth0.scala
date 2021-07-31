@@ -2,17 +2,15 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0 extends StObject {
   
-  var auth: Auth = js.native
+  var auth: Auth
   
-  def users(token: String): Users_ = js.native
+  def users(token: String): Users_
   
-  var webAuth: WebAuth = js.native
+  var webAuth: WebAuth
 }
 object Auth0 {
   

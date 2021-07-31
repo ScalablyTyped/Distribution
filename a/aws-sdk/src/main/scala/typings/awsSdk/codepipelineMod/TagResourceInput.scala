@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource you want to add tags to.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * The tags you want to modify or add to the resource.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object TagResourceInput {
   

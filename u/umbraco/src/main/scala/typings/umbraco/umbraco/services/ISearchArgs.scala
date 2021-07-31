@@ -2,16 +2,14 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Search args
   */
-@js.native
 trait ISearchArgs extends StObject {
   
-  var term: String = js.native
+  var term: String
 }
 object ISearchArgs {
   

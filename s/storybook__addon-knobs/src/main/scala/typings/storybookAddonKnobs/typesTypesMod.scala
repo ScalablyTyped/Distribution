@@ -2,19 +2,17 @@ package typings.storybookAddonKnobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTypesMod {
   
-  @js.native
   trait KnobControlConfig[T] extends StObject {
     
-    var defaultValue: js.UndefOr[T] = js.native
+    var defaultValue: js.UndefOr[T] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var value: T = js.native
+    var value: T
   }
   object KnobControlConfig {
     
@@ -25,7 +23,7 @@ object typesTypesMod {
     }
     
     @scala.inline
-    implicit class KnobControlConfigMutableBuilder[Self <: KnobControlConfig[_], T] (val x: Self with KnobControlConfig[T]) extends AnyVal {
+    implicit class KnobControlConfigMutableBuilder[Self <: KnobControlConfig[?], T] (val x: Self & KnobControlConfig[T]) extends AnyVal {
       
       @scala.inline
       def setDefaultValue(value: T): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -41,12 +39,11 @@ object typesTypesMod {
     }
   }
   
-  @js.native
   trait KnobControlProps[T] extends StObject {
     
-    var knob: KnobControlConfig[T] = js.native
+    var knob: KnobControlConfig[T]
     
-    def onChange(value: T): T = js.native
+    def onChange(value: T): T
   }
   object KnobControlProps {
     
@@ -57,7 +54,7 @@ object typesTypesMod {
     }
     
     @scala.inline
-    implicit class KnobControlPropsMutableBuilder[Self <: KnobControlProps[_], T] (val x: Self with KnobControlProps[T]) extends AnyVal {
+    implicit class KnobControlPropsMutableBuilder[Self <: KnobControlProps[?], T] (val x: Self & KnobControlProps[T]) extends AnyVal {
       
       @scala.inline
       def setKnob(value: KnobControlConfig[T]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])

@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewValue[T] extends StObject {
   
-  var newValue: T = js.native
+  var newValue: T
   
-  var oldValue: T = js.native
+  var oldValue: T
 }
 object NewValue {
   
@@ -21,7 +19,7 @@ object NewValue {
   }
   
   @scala.inline
-  implicit class NewValueMutableBuilder[Self <: NewValue[_], T] (val x: Self with NewValue[T]) extends AnyVal {
+  implicit class NewValueMutableBuilder[Self <: NewValue[?], T] (val x: Self & NewValue[T]) extends AnyVal {
     
     @scala.inline
     def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])

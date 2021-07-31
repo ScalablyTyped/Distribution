@@ -3,7 +3,6 @@ package typings.ibmMobilefirst.WL
 import typings.jquery.JQueryDeferred
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,7 +72,7 @@ trait LoggerObject extends StObject {
   /**
     * Send any logs collected up to this point to the IBM® Worklight® server.
     */
-  def send(): JQueryDeferred[_] = js.native
+  def send(): JQueryDeferred[js.Any] = js.native
   
   /**
     * @deprecated since version 6.2. Use WL.Logger.config instead. Sets options in native application layer (iOS and Android only)
@@ -84,7 +83,7 @@ trait LoggerObject extends StObject {
   /**
     * Shows the status (current configuration) of the logger.
     */
-  def status(): JQueryDeferred[_] = js.native
+  def status(): JQueryDeferred[js.Any] = js.native
   
   /**
     * Prints arguments to the console.
@@ -94,7 +93,7 @@ trait LoggerObject extends StObject {
   /**
     * Retrieves and applies any matching configuration profile from the IBM® Worklight® Server.
     */
-  def updateConfigFromServer(): JQueryDeferred[_] = js.native
+  def updateConfigFromServer(): JQueryDeferred[js.Any] = js.native
   
   /**
     * Prints arguments to the console.

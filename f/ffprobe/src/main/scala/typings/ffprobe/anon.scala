@@ -2,35 +2,33 @@ package typings.ffprobe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Attachedpic extends StObject {
     
-    var default: Double = js.native
+    var default: Double
     
-    var attached_pic: Double = js.native
+    var attached_pic: Double
     
-    var clean_effects: Double = js.native
+    var clean_effects: Double
     
-    var comment: Double = js.native
+    var comment: Double
     
-    var dub: Double = js.native
+    var dub: Double
     
-    var forced: Double = js.native
+    var forced: Double
     
-    var hearing_impaired: Double = js.native
+    var hearing_impaired: Double
     
-    var karaoke: Double = js.native
+    var karaoke: Double
     
-    var lyrics: Double = js.native
+    var lyrics: Double
     
-    var original: Double = js.native
+    var original: Double
     
-    var visual_impaired: Double = js.native
+    var visual_impaired: Double
   }
   object Attachedpic {
     
@@ -90,14 +88,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Creationtime extends StObject {
     
-    var creation_time: js.UndefOr[String] = js.native
+    var creation_time: js.UndefOr[String] = js.undefined
     
-    var handler_name: String = js.native
+    var handler_name: String
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
   }
   object Creationtime {
     

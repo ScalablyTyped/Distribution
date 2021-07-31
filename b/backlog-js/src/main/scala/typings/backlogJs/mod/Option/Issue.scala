@@ -3,7 +3,6 @@ package typings.backlogJs.mod.Option
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Issue {
@@ -15,39 +14,48 @@ object Issue {
   object ParentChildType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ParentChildType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ParentChildType & Double] = js.native
     
     @js.native
-    sealed trait All extends ParentChildType
-    /* 0 */ val All: typings.backlogJs.mod.Option.Issue.ParentChildType.All with Double = js.native
+    sealed trait All
+      extends StObject
+         with ParentChildType
+    /* 0 */ val All: typings.backlogJs.mod.Option.Issue.ParentChildType.All & Double = js.native
     
     @js.native
-    sealed trait Child extends ParentChildType
-    /* 2 */ val Child: typings.backlogJs.mod.Option.Issue.ParentChildType.Child with Double = js.native
+    sealed trait Child
+      extends StObject
+         with ParentChildType
+    /* 2 */ val Child: typings.backlogJs.mod.Option.Issue.ParentChildType.Child & Double = js.native
     
     @js.native
-    sealed trait NotChild extends ParentChildType
-    /* 1 */ val NotChild: typings.backlogJs.mod.Option.Issue.ParentChildType.NotChild with Double = js.native
+    sealed trait NotChild
+      extends StObject
+         with ParentChildType
+    /* 1 */ val NotChild: typings.backlogJs.mod.Option.Issue.ParentChildType.NotChild & Double = js.native
     
     @js.native
-    sealed trait NotChildNotParent extends ParentChildType
-    /* 3 */ val NotChildNotParent: typings.backlogJs.mod.Option.Issue.ParentChildType.NotChildNotParent with Double = js.native
+    sealed trait NotChildNotParent
+      extends StObject
+         with ParentChildType
+    /* 3 */ val NotChildNotParent: typings.backlogJs.mod.Option.Issue.ParentChildType.NotChildNotParent & Double = js.native
     
     @js.native
-    sealed trait Parent extends ParentChildType
-    /* 4 */ val Parent: typings.backlogJs.mod.Option.Issue.ParentChildType.Parent with Double = js.native
+    sealed trait Parent
+      extends StObject
+         with ParentChildType
+    /* 4 */ val Parent: typings.backlogJs.mod.Option.Issue.ParentChildType.Parent & Double = js.native
   }
   
-  @js.native
   trait GetIssueCommentsParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetIssueCommentsParams {
     
@@ -86,65 +94,65 @@ object Issue {
     }
   }
   
-  @js.native
   trait GetIssuesParams
-    extends /* customField_ */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customField_ */ StringDictionary[js.Any] {
     
-    var assigneeId: js.UndefOr[js.Array[Double]] = js.native
+    var assigneeId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var attachment: js.UndefOr[Boolean] = js.native
+    var attachment: js.UndefOr[Boolean] = js.undefined
     
-    var categoryId: js.UndefOr[js.Array[Double]] = js.native
+    var categoryId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var createdSince: js.UndefOr[String] = js.native
+    var createdSince: js.UndefOr[String] = js.undefined
     
-    var createdUntil: js.UndefOr[String] = js.native
+    var createdUntil: js.UndefOr[String] = js.undefined
     
-    var createdUserId: js.UndefOr[js.Array[Double]] = js.native
+    var createdUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var dueDateSince: js.UndefOr[String] = js.native
+    var dueDateSince: js.UndefOr[String] = js.undefined
     
-    var dueDateUntil: js.UndefOr[String] = js.native
+    var dueDateUntil: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[js.Array[Double]] = js.native
+    var id: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var issueTypeId: js.UndefOr[js.Array[Double]] = js.native
+    var issueTypeId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var milestoneId: js.UndefOr[js.Array[Double]] = js.native
+    var milestoneId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
     
-    var parentChild: js.UndefOr[ParentChildType] = js.native
+    var parentChild: js.UndefOr[ParentChildType] = js.undefined
     
-    var parentIssueId: js.UndefOr[js.Array[Double]] = js.native
+    var parentIssueId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var priorityId: js.UndefOr[js.Array[Double]] = js.native
+    var priorityId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var projectId: js.UndefOr[js.Array[Double]] = js.native
+    var projectId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var resolutionId: js.UndefOr[js.Array[Double]] = js.native
+    var resolutionId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var sharedFile: js.UndefOr[Boolean] = js.native
+    var sharedFile: js.UndefOr[Boolean] = js.undefined
     
-    var sort: js.UndefOr[SortKey] = js.native
+    var sort: js.UndefOr[SortKey] = js.undefined
     
-    var startDateSince: js.UndefOr[String] = js.native
+    var startDateSince: js.UndefOr[String] = js.undefined
     
-    var startDateUntil: js.UndefOr[String] = js.native
+    var startDateUntil: js.UndefOr[String] = js.undefined
     
-    var statusId: js.UndefOr[js.Array[Double]] = js.native
+    var statusId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var updatedSince: js.UndefOr[String] = js.native
+    var updatedSince: js.UndefOr[String] = js.undefined
     
-    var updatedUntil: js.UndefOr[String] = js.native
+    var updatedUntil: js.UndefOr[String] = js.undefined
     
-    var versionId: js.UndefOr[js.Array[Double]] = js.native
+    var versionId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object GetIssuesParams {
     
@@ -360,10 +368,9 @@ object Issue {
     }
   }
   
-  @js.native
   trait IssueCommentNotifications extends StObject {
     
-    var notifiedUserId: js.Array[Double] = js.native
+    var notifiedUserId: js.Array[Double]
   }
   object IssueCommentNotifications {
     
@@ -384,10 +391,9 @@ object Issue {
     }
   }
   
-  @js.native
   trait LinkIssueSharedFilesParams extends StObject {
     
-    var fileId: js.Array[Double] = js.native
+    var fileId: js.Array[Double]
   }
   object LinkIssueSharedFilesParams {
     
@@ -408,10 +414,9 @@ object Issue {
     }
   }
   
-  @js.native
   trait PatchIssueCommentParams extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object PatchIssueCommentParams {
     
@@ -429,45 +434,45 @@ object Issue {
     }
   }
   
-  @js.native
   trait PatchIssueParams
-    extends /* customField_ */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customField_ */ StringDictionary[js.Any] {
     
-    var actualHours: js.UndefOr[Double] = js.native
+    var actualHours: js.UndefOr[Double] = js.undefined
     
-    var assigneeId: js.UndefOr[Double] = js.native
+    var assigneeId: js.UndefOr[Double] = js.undefined
     
-    var attachmentId: js.UndefOr[js.Array[Double]] = js.native
+    var attachmentId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var categoryId: js.UndefOr[js.Array[Double]] = js.native
+    var categoryId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var dueDate: js.UndefOr[String] = js.native
+    var dueDate: js.UndefOr[String] = js.undefined
     
-    var estimatedHours: js.UndefOr[Double] = js.native
+    var estimatedHours: js.UndefOr[Double] = js.undefined
     
-    var issueTypeId: js.UndefOr[Double] = js.native
+    var issueTypeId: js.UndefOr[Double] = js.undefined
     
-    var milestoneId: js.UndefOr[js.Array[Double]] = js.native
+    var milestoneId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var parentIssueId: js.UndefOr[Double] = js.native
+    var parentIssueId: js.UndefOr[Double] = js.undefined
     
-    var priorityId: js.UndefOr[Double] = js.native
+    var priorityId: js.UndefOr[Double] = js.undefined
     
-    var resolutionId: js.UndefOr[Double] = js.native
+    var resolutionId: js.UndefOr[Double] = js.undefined
     
-    var startDate: js.UndefOr[String] = js.native
+    var startDate: js.UndefOr[String] = js.undefined
     
-    var statusId: js.UndefOr[Double] = js.native
+    var statusId: js.UndefOr[Double] = js.undefined
     
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
     
-    var versionId: js.UndefOr[js.Array[Double]] = js.native
+    var versionId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PatchIssueParams {
     
@@ -605,14 +610,13 @@ object Issue {
     }
   }
   
-  @js.native
   trait PostIssueCommentsParams extends StObject {
     
-    var attachmentId: js.UndefOr[js.Array[Double]] = js.native
+    var attachmentId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var content: String = js.native
+    var content: String
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PostIssueCommentsParams {
     
@@ -648,41 +652,41 @@ object Issue {
     }
   }
   
-  @js.native
   trait PostIssueParams
-    extends /* customField_ */ StringDictionary[js.Any] {
+    extends StObject
+       with /* customField_ */ StringDictionary[js.Any] {
     
-    var actualHours: js.UndefOr[Double] = js.native
+    var actualHours: js.UndefOr[Double] = js.undefined
     
-    var assigneeId: js.UndefOr[Double] = js.native
+    var assigneeId: js.UndefOr[Double] = js.undefined
     
-    var attachmentId: js.UndefOr[js.Array[Double]] = js.native
+    var attachmentId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var categoryId: js.UndefOr[js.Array[Double]] = js.native
+    var categoryId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var dueDate: js.UndefOr[String] = js.native
+    var dueDate: js.UndefOr[String] = js.undefined
     
-    var estimatedHours: js.UndefOr[Double] = js.native
+    var estimatedHours: js.UndefOr[Double] = js.undefined
     
-    var issueTypeId: Double = js.native
+    var issueTypeId: Double
     
-    var milestoneId: js.UndefOr[js.Array[Double]] = js.native
+    var milestoneId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var parentIssueId: js.UndefOr[Double] = js.native
+    var parentIssueId: js.UndefOr[Double] = js.undefined
     
-    var priorityId: Double = js.native
+    var priorityId: Double
     
-    var projectId: Double = js.native
+    var projectId: Double
     
-    var startDate: js.UndefOr[String] = js.native
+    var startDate: js.UndefOr[String] = js.undefined
     
-    var summary: String = js.native
+    var summary: String
     
-    var versionId: js.UndefOr[js.Array[Double]] = js.native
+    var versionId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PostIssueParams {
     

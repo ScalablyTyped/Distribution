@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsDynamoDbTableProjection extends StObject {
   
   /**
     * The nonkey attributes that are projected into the index. For each attribute, provide the attribute name.
     */
-  var NonKeyAttributes: js.UndefOr[StringList] = js.native
+  var NonKeyAttributes: js.UndefOr[StringList] = js.undefined
   
   /**
     * The types of attributes that are projected into the index.
     */
-  var ProjectionType: js.UndefOr[NonEmptyString] = js.native
+  var ProjectionType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsDynamoDbTableProjection {
   

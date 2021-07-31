@@ -2,27 +2,25 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUsersData extends StObject {
   
-  var connection: js.UndefOr[String] = js.native
+  var connection: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
-  var include_fields: js.UndefOr[Boolean] = js.native
+  var include_fields: js.UndefOr[Boolean] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var search_engine: js.UndefOr[String] = js.native
+  var search_engine: js.UndefOr[String] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
 }
 object GetUsersData {
   

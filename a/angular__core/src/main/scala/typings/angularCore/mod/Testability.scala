@@ -2,12 +2,13 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "Testability")
 @js.native
-class Testability protected () extends PublicTestability {
+class Testability protected ()
+  extends StObject
+     with PublicTestability {
   def this(_ngZone: NgZone) = this()
   
   var _callbacks: js.Any = js.native

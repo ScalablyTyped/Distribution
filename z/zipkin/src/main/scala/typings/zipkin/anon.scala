@@ -13,15 +13,13 @@ import typings.zipkin.mod.sampler.Sampler
 import typings.zipkin.zipkinStrings.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
   }
   object `0` {
     
@@ -42,26 +40,25 @@ object anon {
     }
   }
   
-  @js.native
   trait CtxImpl extends StObject {
     
-    var ctxImpl: Context[TraceId] = js.native
+    var ctxImpl: Context[TraceId]
     
-    var defaultTags: js.UndefOr[js.Object] = js.native
+    var defaultTags: js.UndefOr[js.Object] = js.undefined
     
-    var localEndpoint: js.UndefOr[Endpoint] = js.native
+    var localEndpoint: js.UndefOr[Endpoint] = js.undefined
     
-    var localServiceName: js.UndefOr[String] = js.native
+    var localServiceName: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[Console] = js.native
+    var log: js.UndefOr[Console] = js.undefined
     
-    var recorder: Recorder = js.native
+    var recorder: Recorder
     
-    var sampler: js.UndefOr[Sampler] = js.native
+    var sampler: js.UndefOr[Sampler] = js.undefined
     
-    var supportsJoin: js.UndefOr[Boolean] = js.native
+    var supportsJoin: js.UndefOr[Boolean] = js.undefined
     
-    var traceId128Bit: js.UndefOr[Boolean] = js.native
+    var traceId128Bit: js.UndefOr[Boolean] = js.undefined
   }
   object CtxImpl {
     
@@ -124,20 +121,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Debug extends StObject {
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var parentId: js.UndefOr[IOption[String]] = js.native
+    var parentId: js.UndefOr[IOption[String]] = js.undefined
     
-    var sampled: js.UndefOr[IOption[Boolean]] = js.native
+    var sampled: js.UndefOr[IOption[Boolean]] = js.undefined
     
-    var shared: js.UndefOr[Boolean] = js.native
+    var shared: js.UndefOr[Boolean] = js.undefined
     
-    var spanId: js.UndefOr[String] = js.native
+    var spanId: js.UndefOr[String] = js.undefined
     
-    var traceId: js.UndefOr[String] = js.native
+    var traceId: js.UndefOr[String] = js.undefined
   }
   object Debug {
     
@@ -188,35 +184,33 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers[H] extends StObject {
     
-    var headers: H with XB3Flags = js.native
+    var headers: H & XB3Flags
   }
   object Headers {
     
     @scala.inline
-    def apply[H](headers: H with XB3Flags): Headers[H] = {
+    def apply[H](headers: H & XB3Flags): Headers[H] = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any])
       __obj.asInstanceOf[Headers[H]]
     }
     
     @scala.inline
-    implicit class HeadersMutableBuilder[Self <: Headers[_], H] (val x: Self with Headers[H]) extends AnyVal {
+    implicit class HeadersMutableBuilder[Self <: Headers[?], H] (val x: Self & Headers[H]) extends AnyVal {
       
       @scala.inline
-      def setHeaders(value: H with XB3Flags): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: H & XB3Flags): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[InetAddress] = js.native
+    var host: js.UndefOr[InetAddress] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var serviceName: String = js.native
+    var serviceName: String
   }
   object Host {
     
@@ -246,12 +240,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HostPort extends StObject {
     
-    var host: js.UndefOr[InetAddress] = js.native
+    var host: js.UndefOr[InetAddress] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object HostPort {
     
@@ -278,14 +271,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Ipv4 extends StObject {
     
-    var ipv4: js.UndefOr[String] = js.native
+    var ipv4: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var serviceName: js.UndefOr[String] = js.native
+    var serviceName: js.UndefOr[String] = js.undefined
   }
   object Ipv4 {
     
@@ -318,12 +310,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Logger extends StObject {
     
-    var logger: typings.zipkin.mod.Logger = js.native
+    var logger: typings.zipkin.mod.Logger
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Logger {
     
@@ -347,12 +338,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var host: InetAddress = js.native
+    var host: InetAddress
     
-    var port: Double = js.native
+    var port: Double
   }
   object Port {
     
@@ -373,14 +363,13 @@ object anon {
     }
   }
   
-  @js.native
   trait RemoteServiceName extends StObject {
     
-    var remoteServiceName: js.UndefOr[String] = js.native
+    var remoteServiceName: js.UndefOr[String] = js.undefined
     
-    var serviceName: js.UndefOr[String] = js.native
+    var serviceName: js.UndefOr[String] = js.undefined
     
-    var tracer: Tracer = js.native
+    var tracer: Tracer
   }
   object RemoteServiceName {
     
@@ -410,18 +399,17 @@ object anon {
     }
   }
   
-  @js.native
   trait ServerTags extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var serverTags: js.UndefOr[StringDictionary[String]] = js.native
+    var serverTags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var serviceName: js.UndefOr[String] = js.native
+    var serviceName: js.UndefOr[String] = js.undefined
     
-    var tracer: Tracer = js.native
+    var tracer: Tracer
   }
   object ServerTags {
     
@@ -460,18 +448,17 @@ object anon {
     }
   }
   
-  @js.native
   trait XB3Flags extends StObject {
     
-    var `X-B3-Flags`: js.UndefOr[`1` | typings.zipkin.zipkinStrings.`0`] = js.native
+    var `X-B3-Flags`: js.UndefOr[`1` | typings.zipkin.zipkinStrings.`0`] = js.undefined
     
-    var `X-B3-ParentSpanId`: js.UndefOr[String] = js.native
+    var `X-B3-ParentSpanId`: js.UndefOr[String] = js.undefined
     
-    var `X-B3-Sampled`: js.UndefOr[`1` | typings.zipkin.zipkinStrings.`0`] = js.native
+    var `X-B3-Sampled`: js.UndefOr[`1` | typings.zipkin.zipkinStrings.`0`] = js.undefined
     
-    var `X-B3-SpanId`: String = js.native
+    var `X-B3-SpanId`: String
     
-    var `X-B3-TraceId`: String = js.native
+    var `X-B3-TraceId`: String
   }
   object XB3Flags {
     

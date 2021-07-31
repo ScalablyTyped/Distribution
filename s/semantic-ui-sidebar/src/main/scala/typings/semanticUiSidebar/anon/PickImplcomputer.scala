@@ -3,14 +3,12 @@ package typings.semanticUiSidebar.anon
 import typings.semanticUiSidebar.SemanticUI.Sidebar.DefaultTransitionSettings.ComputerSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.DefaultTransitionSettings._Impl, 'computer'> */
-@js.native
 trait PickImplcomputer extends StObject {
   
-  var computer: ComputerSettings = js.native
+  var computer: ComputerSettings
 }
 object PickImplcomputer {
   

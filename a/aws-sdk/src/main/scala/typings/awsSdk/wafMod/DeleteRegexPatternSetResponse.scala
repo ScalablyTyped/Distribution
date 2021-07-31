@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRegexPatternSetResponse extends StObject {
   
   /**
     * The ChangeToken that you used to submit the DeleteRegexPatternSet request. You can also use this value to query the status of the request. For more information, see GetChangeTokenStatus.
     */
-  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.native
+  var ChangeToken: js.UndefOr[typings.awsSdk.wafMod.ChangeToken] = js.undefined
 }
 object DeleteRegexPatternSetResponse {
   

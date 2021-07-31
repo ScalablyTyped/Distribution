@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIdentityInfo extends StObject {
   
   /**
     * The email address. If you are using SAML for identity management and include this parameter, an error is returned.
     */
-  var Email: js.UndefOr[typings.awsSdk.connectMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.connectMod.Email] = js.undefined
   
   /**
     * The first name. This is required if you are using Amazon Connect or SAML for identity management.
     */
-  var FirstName: js.UndefOr[AgentFirstName] = js.native
+  var FirstName: js.UndefOr[AgentFirstName] = js.undefined
   
   /**
     * The last name. This is required if you are using Amazon Connect or SAML for identity management.
     */
-  var LastName: js.UndefOr[AgentLastName] = js.native
+  var LastName: js.UndefOr[AgentLastName] = js.undefined
 }
 object UserIdentityInfo {
   

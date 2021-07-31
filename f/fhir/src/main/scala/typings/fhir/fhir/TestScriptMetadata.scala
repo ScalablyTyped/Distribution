@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Required capability that is assumed to function correctly on the FHIR server being tested
   */
-@js.native
-trait TestScriptMetadata extends BackboneElement {
+trait TestScriptMetadata
+  extends StObject
+     with BackboneElement {
   
   /**
     * Capabilities  that are assumed to function correctly on the FHIR server being tested
     */
-  var capability: js.Array[TestScriptMetadataCapability] = js.native
+  var capability: js.Array[TestScriptMetadataCapability]
   
   /**
     * Links to the FHIR specification
     */
-  var link: js.UndefOr[js.Array[TestScriptMetadataLink]] = js.native
+  var link: js.UndefOr[js.Array[TestScriptMetadataLink]] = js.undefined
 }
 object TestScriptMetadata {
   

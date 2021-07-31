@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an achievement definition object.
   */
-@js.native
 trait SchemaAchievementDefinition extends StObject {
   
   /**
@@ -16,27 +14,27 @@ trait SchemaAchievementDefinition extends StObject {
     * &quot;STANDARD&quot; - Achievement is either locked or unlocked.  -
     * &quot;INCREMENTAL&quot; - Achievement is incremental.
     */
-  var achievementType: js.UndefOr[String] = js.native
+  var achievementType: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the achievement.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Experience points which will be earned when unlocking this achievement.
     */
-  var experiencePoints: js.UndefOr[String] = js.native
+  var experiencePoints: js.UndefOr[String] = js.undefined
   
   /**
     * The total steps for an incremental achievement as a string.
     */
-  var formattedTotalSteps: js.UndefOr[String] = js.native
+  var formattedTotalSteps: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the achievement.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The initial state of the achievement. Possible values are:   -
@@ -44,45 +42,45 @@ trait SchemaAchievementDefinition extends StObject {
     * Achievement is revealed.  - &quot;UNLOCKED&quot; - Achievement is
     * unlocked.
     */
-  var initialState: js.UndefOr[String] = js.native
+  var initialState: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the revealed icon image being returned is a default
     * image, or is provided by the game.
     */
-  var isRevealedIconUrlDefault: js.UndefOr[Boolean] = js.native
+  var isRevealedIconUrlDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the unlocked icon image being returned is a default
     * image, or is game-provided.
     */
-  var isUnlockedIconUrlDefault: js.UndefOr[Boolean] = js.native
+  var isUnlockedIconUrlDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#achievementDefinition.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the achievement.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The image URL for the revealed achievement icon.
     */
-  var revealedIconUrl: js.UndefOr[String] = js.native
+  var revealedIconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The total steps for an incremental achievement.
     */
-  var totalSteps: js.UndefOr[Double] = js.native
+  var totalSteps: js.UndefOr[Double] = js.undefined
   
   /**
     * The image URL for the unlocked achievement icon.
     */
-  var unlockedIconUrl: js.UndefOr[String] = js.native
+  var unlockedIconUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaAchievementDefinition {
   

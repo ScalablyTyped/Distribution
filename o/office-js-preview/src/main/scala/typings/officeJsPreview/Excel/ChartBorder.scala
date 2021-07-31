@@ -19,7 +19,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.None
 import typings.officeJsPreview.officeJsPreviewStrings.RoundDot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,7 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait ChartBorder extends ClientObject {
+trait ChartBorder
+  extends StObject
+     with ClientObject {
   
   /**
     * Clear the border format of a chart element.

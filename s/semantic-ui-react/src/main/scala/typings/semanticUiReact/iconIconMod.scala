@@ -12,7 +12,6 @@ import typings.semanticUiReact.semanticUiReactStrings.horizontally
 import typings.semanticUiReact.semanticUiReactStrings.vertically
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconIconMod {
@@ -53,9 +52,9 @@ object iconIconMod {
     def `top right`: typings.semanticUiReact.semanticUiReactStrings.`top right` = ("top right").asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.`top right`]
   }
   
-  @js.native
   trait IconProps
-    extends StrictIconProps
+    extends StObject
+       with StrictIconProps
        with /* key */ StringDictionary[js.Any]
   object IconProps {
     
@@ -100,59 +99,58 @@ object iconIconMod {
     def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
   }
   
-  @js.native
   trait StrictIconProps extends StObject {
     
     /** Icon can have an aria hidden. */
-    var `aria-hidden`: js.UndefOr[String] = js.native
+    var `aria-hidden`: js.UndefOr[String] = js.undefined
     
     /** Icon can have an aria label. */
-    var `aria-label`: js.UndefOr[String] = js.native
+    var `aria-label`: js.UndefOr[String] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Formatted to appear bordered */
-    var bordered: js.UndefOr[Boolean] = js.native
+    var bordered: js.UndefOr[Boolean] = js.undefined
     
     /** Icon can formatted to appear circular. */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Color of the icon. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Icons can display a smaller corner icon. */
-    var corner: js.UndefOr[Boolean | IconCorner] = js.native
+    var corner: js.UndefOr[Boolean | IconCorner] = js.undefined
     
     /** Show that the icon is inactive. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Fitted, without space to left or right of Icon. */
-    var fitted: js.UndefOr[Boolean] = js.native
+    var fitted: js.UndefOr[Boolean] = js.undefined
     
     /** Icon can be flipped. */
-    var flipped: js.UndefOr[horizontally | vertically] = js.native
+    var flipped: js.UndefOr[horizontally | vertically] = js.undefined
     
     /** Formatted to have its colors inverted for contrast. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Icon can be formatted as a link. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /** Icon can be used as a simple loader. */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
     /** Name of the icon. */
-    var name: js.UndefOr[SemanticICONS] = js.native
+    var name: js.UndefOr[SemanticICONS] = js.undefined
     
     /** Icon can rotated. */
-    var rotated: js.UndefOr[clockwise | counterclockwise] = js.native
+    var rotated: js.UndefOr[clockwise | counterclockwise] = js.undefined
     
     /** Size of the icon. */
-    var size: js.UndefOr[IconSizeProp] = js.native
+    var size: js.UndefOr[IconSizeProp] = js.undefined
   }
   object StrictIconProps {
     

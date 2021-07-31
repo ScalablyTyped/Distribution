@@ -2,15 +2,13 @@ package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsResizable extends StObject {
   
-  var isResizable: Boolean = js.native
+  var isResizable: Boolean
   
-  var minSize: Double = js.native
+  var minSize: Double
 }
 object IsResizable {
   

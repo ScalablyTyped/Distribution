@@ -4,6 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTable
 import typings.sharepoint.Microsoft.SharePoint.Client.Search.Query.ResultTableCollection
 import typings.sharepoint.SP.ClientRuntimeContext
+import typings.sharepoint.Srch.CSRRefinementControl
+import typings.sharepoint.Srch.RefinementInfo
 import typings.sharepoint.Srch.RenderFunction
 import typings.sharepoint.sharepointStrings.Body
 import typings.sharepoint.sharepointStrings.Group
@@ -47,10 +49,10 @@ import typings.sharepoint.sharepointStrings._visualBestBet
 import typings.std.Date
 import typings.std.Element
 import typings.std.Event
+import typings.std.HTMLElement
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ------- Srch namespace -------
@@ -59,23 +61,984 @@ object Srch {
   @JSGlobal("Srch.ClientControl")
   @js.native
   class ClientControl protected ()
-    extends typings.sharepoint.Srch.ClientControl {
+    extends StObject
+       with typings.sharepoint.Srch.ClientControl {
     def this(elem: Element) = this()
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
   }
   object ClientControl {
     
+    @JSGlobal("Srch.ClientControl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** toggles visibility of children controls of the messageContainer */
     /* static member */
-    @JSGlobal("Srch.ClientControl.toggleMessageDetails")
-    @js.native
-    def toggleMessageDetails(messageContainer: Element): Unit = js.native
+    @scala.inline
+    def toggleMessageDetails(messageContainer: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleMessageDetails")(messageContainer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSGlobal("Srch.DataProvider")
   @js.native
   class DataProvider protected ()
-    extends typings.sharepoint.Srch.DataProvider {
+    extends StObject
+       with typings.sharepoint.Srch.DataProvider {
     def this(elem: Element) = this()
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryIssuing(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryStateChanged(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_resultReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /* CompleteClass */
+    override def displayControlMessages(): Unit = js.native
+    
+    /* CompleteClass */
+    override def displayControl_QueryReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getSortName(): String = js.native
+    
+    /* CompleteClass */
+    override def getSortRankName(): String = js.native
+    
+    /* CompleteClass */
+    override def get_active(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_availableSorts(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_batched(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_bypassResultTypes(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_clientType(): String = js.native
+    
+    /* CompleteClass */
+    override def get_collapseSpecification(): String = js.native
+    
+    /* CompleteClass */
+    override def get_contextualScopeUrl(): String = js.native
+    
+    /* CompleteClass */
+    override def get_currentQueryState(): js.Any = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_desiredSnippetLength(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_effectiveQueryLanguage(): js.Any = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def get_enableInterleaving(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_enableNicknames(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_enableOrderingHitHighlightedProperty(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_enablePhonetic(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_enableQueryRules(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_enableStemming(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_entityInfo(): js.Any = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_fallbackLanguage(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_fallbackRankingModelID(): String = js.native
+    
+    /* CompleteClass */
+    override def get_fallbackRefinementFilters(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_fallbackSort(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_hitHighlightedMultivaluePropertyLimit(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_hitHighlightedProperties(): js.Any = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /* CompleteClass */
+    override def get_initialQueryState(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_initialResult(): String = js.native
+    
+    /* CompleteClass */
+    override def get_initialResultObject(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_initialResultRef(): js.Any = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_maxPagesAfterCurrent(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_parentImpressionID(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_personalizedQuery(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_processBestBets(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_processPersonalFavorites(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_properties(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_queryCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_queryGroupName(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryPropertiesTemplateUrl(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryTemplate(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_rankRules(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_refinementInfo(): StringDictionary[js.Array[RefinementInfo]] = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /** Number of results displayed per page. 10 by default */
+    /* CompleteClass */
+    override def get_resultsPerPage(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_resultsUrl(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_rowCount(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_selectedProperties(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_selectedRefiners(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_sourceID(): String = js.native
+    
+    /* CompleteClass */
+    override def get_sourceLevel(): String = js.native
+    
+    /* CompleteClass */
+    override def get_sourceName(): String = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_summaryLength(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_totalRows(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_trimDuplicates(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_upScopeUrl(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_updateAjaxNavigate(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_userAction(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def issueQuery(): Unit = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processInitial(): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseEmptyResultReadyEvent(): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryIssuingEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryStateChangedEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseResultReadyEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_queryIssuing(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_resultReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def searchBox_BatchQueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def searchBox_BatchResultReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def searchBox_QueryReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_active(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_availableSorts(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_batched(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_bypassResultTypes(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_clientType(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_collapseSpecification(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_contextualScopeUrl(value: String): String = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_desiredSnippetLength(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_enableInterleaving(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_enableNicknames(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_enableOrderingHitHighlightedProperty(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_enablePhonetic(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_enableQueryRules(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_enableStemming(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_fallbackLanguage(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_fallbackRankingModelID(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_fallbackRefinementFilters(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_fallbackSort(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_hitHighlightedMultivaluePropertyLimit(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_hitHighlightedProperties(value: js.Any): js.Any = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_initialQueryState(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_initialResult(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_initialResultRef(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_maxPagesAfterCurrent(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_parentImpressionID(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_personalizedQuery(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_processBestBets(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_processPersonalFavorites(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_properties(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_queryCount(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_queryGroupName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_queryPropertiesTemplateUrl(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_queryTemplate(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_rankRules(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /** Number of results displayed per page. 10 by default */
+    /* CompleteClass */
+    override def set_resultsPerPage(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_resultsUrl(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_rowCount(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_selectedProperties(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_selectedRefiners(value: js.Any): js.Any = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_sourceID(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_sourceLevel(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_sourceName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_summaryLength(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_totalRows(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_trimDuplicates(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_updateAjaxNavigate(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_userAction(value: js.Any): js.Any = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
   }
   
   @JSGlobal("Srch.DateTimeKind")
@@ -83,48 +1046,428 @@ object Srch {
   object DateTimeKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.DateTimeKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.DateTimeKind & Double] = js.native
     
-    /* 2 */ val local: typings.sharepoint.Srch.DateTimeKind.local with Double = js.native
+    /* 2 */ val local: typings.sharepoint.Srch.DateTimeKind.local & Double = js.native
     
-    /* 0 */ val unspecified: typings.sharepoint.Srch.DateTimeKind.unspecified with Double = js.native
+    /* 0 */ val unspecified: typings.sharepoint.Srch.DateTimeKind.unspecified & Double = js.native
     
-    /* 1 */ val utc: typings.sharepoint.Srch.DateTimeKind.utc with Double = js.native
+    /* 1 */ val utc: typings.sharepoint.Srch.DateTimeKind.utc & Double = js.native
   }
   
   @JSGlobal("Srch.DisplayControl")
   @js.native
   class DisplayControl ()
-    extends typings.sharepoint.Srch.DisplayControl
+    extends StObject
+       with typings.sharepoint.Srch.DisplayControl {
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_currentResultTableCollection(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_dataProvider(): typings.sharepoint.Srch.DataProvider = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def get_emptyMessage(): String = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryGroupName(): String = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_renderedResult(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_shouldShowNoResultMessage(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processQueryIssuing(queryState: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processResultReady(resultTableCollection: js.Any): Unit = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryReadyEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def refresh(queryState: js.Any): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def render(): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_currentResultTableCollection(value: js.Any): js.Any = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_emptyMessage(value: String): String = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_queryGroupName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderedResult(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_shouldShowNoResultMessage(value: Boolean): Boolean = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
+  }
   
   @JSGlobal("Srch.EventType")
   @js.native
   object EventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.EventType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.EventType & Double] = js.native
     
-    /* 3 */ val batchQueryIssuing: typings.sharepoint.Srch.EventType.batchQueryIssuing with Double = js.native
+    /* 3 */ val batchQueryIssuing: typings.sharepoint.Srch.EventType.batchQueryIssuing & Double = js.native
     
-    /* 5 */ val batchResultReady: typings.sharepoint.Srch.EventType.batchResultReady with Double = js.native
+    /* 5 */ val batchResultReady: typings.sharepoint.Srch.EventType.batchResultReady & Double = js.native
     
-    /* 9 */ val load: typings.sharepoint.Srch.EventType.load with Double = js.native
+    /* 9 */ val load: typings.sharepoint.Srch.EventType.load & Double = js.native
     
-    /* 0 */ val none: typings.sharepoint.Srch.EventType.none with Double = js.native
+    /* 0 */ val none: typings.sharepoint.Srch.EventType.none & Double = js.native
     
-    /* 10 */ val postLoad: typings.sharepoint.Srch.EventType.postLoad with Double = js.native
+    /* 10 */ val postLoad: typings.sharepoint.Srch.EventType.postLoad & Double = js.native
     
-    /* 8 */ val preLoad: typings.sharepoint.Srch.EventType.preLoad with Double = js.native
+    /* 8 */ val preLoad: typings.sharepoint.Srch.EventType.preLoad & Double = js.native
     
-    /* 2 */ val queryIssuing: typings.sharepoint.Srch.EventType.queryIssuing with Double = js.native
+    /* 2 */ val queryIssuing: typings.sharepoint.Srch.EventType.queryIssuing & Double = js.native
     
-    /* 1 */ val queryReady: typings.sharepoint.Srch.EventType.queryReady with Double = js.native
+    /* 1 */ val queryReady: typings.sharepoint.Srch.EventType.queryReady & Double = js.native
     
-    /* 6 */ val queryStateChanged: typings.sharepoint.Srch.EventType.queryStateChanged with Double = js.native
+    /* 6 */ val queryStateChanged: typings.sharepoint.Srch.EventType.queryStateChanged & Double = js.native
     
-    /* 4 */ val resultReady: typings.sharepoint.Srch.EventType.resultReady with Double = js.native
+    /* 4 */ val resultReady: typings.sharepoint.Srch.EventType.resultReady & Double = js.native
     
-    /* 7 */ val resultRendered: typings.sharepoint.Srch.EventType.resultRendered with Double = js.native
+    /* 7 */ val resultRendered: typings.sharepoint.Srch.EventType.resultRendered & Double = js.native
   }
   
   @JSGlobal("Srch.MessageLevel")
@@ -132,111 +1475,603 @@ object Srch {
   object MessageLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.MessageLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.MessageLevel & Double] = js.native
     
-    /* 2 */ val error: typings.sharepoint.Srch.MessageLevel.error with Double = js.native
+    /* 2 */ val error: typings.sharepoint.Srch.MessageLevel.error & Double = js.native
     
-    /* 0 */ val information: typings.sharepoint.Srch.MessageLevel.information with Double = js.native
+    /* 0 */ val information: typings.sharepoint.Srch.MessageLevel.information & Double = js.native
     
-    /* 1 */ val warning: typings.sharepoint.Srch.MessageLevel.warning with Double = js.native
+    /* 1 */ val warning: typings.sharepoint.Srch.MessageLevel.warning & Double = js.native
   }
   
   @JSGlobal("Srch.Refinement")
   @js.native
   class Refinement protected ()
-    extends typings.sharepoint.Srch.Refinement {
+    extends StObject
+       with typings.sharepoint.Srch.Refinement {
     def this(elem: Element) = this()
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def addRefinementFilter(filterName: String, filterToken: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addRefinementFilters(refiners: js.Array[js.Any]): Unit = js.native
+    
+    /* CompleteClass */
+    override def addRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def addRefinementFiltersJSONWithOr(refinersJSON: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def addRefinementFiltersWithOp(refiners: js.Array[js.Any], op: String): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getCurrentRefinementCategory(refinementName: String): js.Any = js.native
+    
+    /** Gets refinement control with the specified propertyName */
+    /* CompleteClass */
+    override def getRefinementControl(refinerName: String): typings.sharepoint.Srch.RefinementControl = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_currentResultTableCollection(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_dataProvider(): typings.sharepoint.Srch.DataProvider = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def get_emptyMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_emptyRefinementMessageId(): String = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryGroupName(): String = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_renderedResult(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_selectedRefinementControls(): js.Array[typings.sharepoint.Srch.RefinementControl] = js.native
+    
+    /* CompleteClass */
+    override def get_shouldShowNoResultMessage(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_useManagedNavigationRefiners(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def hasAllRefinementFilters(filterName: String, filterTokens: js.Array[String]): Boolean = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasRefinementCategory(refinementName: String): Boolean = js.native
+    
+    /* CompleteClass */
+    override def hasRefinementFilter(filterName: String, filterToken: String): Boolean = js.native
+    
+    /** Returns true if selected refinement controls collection contains a control with the specified propertyName */
+    /* CompleteClass */
+    override def hasRefiner(refinerName: String): Boolean = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processQueryIssuing(queryState: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processResultReady(resultTableCollection: js.Any): Unit = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryReadyEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def refresh(queryState: js.Any): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeRefinementCategory(rcs: js.Any, filterName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeRefinementFilter(filterName: String, filterToken: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeRefinementFiltersJSON(refinersJSON: String): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def render(): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def replaceRefinementFilter(oldRefinementFilter: js.Any, newRefinementFilter: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_currentResultTableCollection(value: js.Any): js.Any = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_emptyMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_emptyRefinementMessageId(value: String): String = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_queryGroupName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderedResult(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_selectedRefinementControls(value: js.Array[typings.sharepoint.Srch.RefinementControl]): js.Array[typings.sharepoint.Srch.RefinementControl] = js.native
+    
+    /* CompleteClass */
+    override def set_shouldShowNoResultMessage(value: Boolean): Boolean = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_useManagedNavigationRefiners(value: Boolean): Boolean = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /** Replaces the refinement controls */
+    /* CompleteClass */
+    override def updateRefinementControls(newControls: js.Array[typings.sharepoint.Srch.RefinementControl]): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateRefinementFilters(
+      filterName: String,
+      filterTokens: js.Array[String],
+      op: String,
+      useKQL: Boolean,
+      tokenToDisplayValueMap: js.Any
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateRefiners(refiners: js.Array[js.Any], op: String, useKQL: Boolean, tokenToDisplayValueMap: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateRefinersJSON(refinersJSON: String): Unit = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
   }
   object Refinement {
     
-    /* static member */
-    @JSGlobal("Srch.Refinement.createRefinementTextbox")
+    @JSGlobal("Srch.Refinement")
     @js.native
-    def createRefinementTextbox(name: String): Element = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Srch.Refinement.ensureUserSpecifiedRefinerValueHasWhiteSpaceQuotes")
-    @js.native
-    def ensureUserSpecifiedRefinerValueHasWhiteSpaceQuotes(inputText: String): String = js.native
+    @scala.inline
+    def createRefinementTextbox(name: String): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createRefinementTextbox")(name.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    /* static member */
+    @scala.inline
+    def ensureUserSpecifiedRefinerValueHasWhiteSpaceQuotes(inputText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureUserSpecifiedRefinerValueHasWhiteSpaceQuotes")(inputText.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Gets expanded state of the specified filter from cookie */
     /* static member */
-    @JSGlobal("Srch.Refinement.getExpanded")
-    @js.native
-    def getExpanded(filterName: String): String = js.native
+    @scala.inline
+    def getExpanded(filterName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getExpanded")(filterName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.Refinement.getRefinementLocalizedTitle")
-    @js.native
-    def getRefinementLocalizedTitle(propertyName: String): String = js.native
+    @scala.inline
+    def getRefinementLocalizedTitle(propertyName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefinementLocalizedTitle")(propertyName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.Refinement.getRefinementTitle")
-    @js.native
-    def getRefinementTitle(currentRefinemntControl: typings.sharepoint.Srch.RefinementControl): String = js.native
+    @scala.inline
+    def getRefinementTitle(currentRefinemntControl: typings.sharepoint.Srch.RefinementControl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefinementTitle")(currentRefinemntControl.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.Refinement.multiRefinerSpecifyOtherFilterValue")
-    @js.native
+    @scala.inline
     def multiRefinerSpecifyOtherFilterValue(
       refinerName: String,
       clientControl: typings.sharepoint.Srch.Refinement,
       useContains: Boolean,
       useKQL: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("multiRefinerSpecifyOtherFilterValue")(refinerName.asInstanceOf[js.Any], clientControl.asInstanceOf[js.Any], useContains.asInstanceOf[js.Any], useKQL.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Save expanded state of the specified filter to cookie */
     /* static member */
-    @JSGlobal("Srch.Refinement.setExpanded")
-    @js.native
-    def setExpanded(filterName: String, value: String): Unit = js.native
+    @scala.inline
+    def setExpanded(filterName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExpanded")(filterName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.Refinement.submitMultiRefinement")
-    @js.native
-    def submitMultiRefinement(name: String, control: typings.sharepoint.Srch.Refinement, useContains: Boolean, useKQL: Boolean): Unit = js.native
+    @scala.inline
+    def submitMultiRefinement(name: String, control: typings.sharepoint.Srch.Refinement, useContains: Boolean, useKQL: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("submitMultiRefinement")(name.asInstanceOf[js.Any], control.asInstanceOf[js.Any], useContains.asInstanceOf[js.Any], useKQL.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSGlobal("Srch.RefinementControl")
   @js.native
   class RefinementControl protected ()
-    extends typings.sharepoint.Srch.RefinementControl {
+    extends StObject
+       with typings.sharepoint.Srch.RefinementControl {
     def this(propertyName: String, spec: String, renderTemplateId: String) = this()
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    /* CompleteClass */
+    var containerId: String = js.native
+    
+    /* CompleteClass */
+    var countDisplay: String = js.native
+    
+    /* CompleteClass */
+    var deepHits: Double = js.native
+    
+    /* CompleteClass */
+    var overrideDisplayName: String = js.native
+    
+    /* CompleteClass */
+    var propertyName: String = js.native
+    
+    /* CompleteClass */
+    var renderTemplateId: String = js.native
+    
+    /* CompleteClass */
+    var spec: String = js.native
+    
+    /* CompleteClass */
+    var useDefaultDateIntervals: Boolean = js.native
   }
   
   @JSGlobal("Srch.RefinementUtil")
   @js.native
   class RefinementUtil ()
-    extends typings.sharepoint.Srch.RefinementUtil
+    extends StObject
+       with typings.sharepoint.Srch.RefinementUtil
   object RefinementUtil {
     
-    /* static member */
-    @JSGlobal("Srch.RefinementUtil.peoplePickerApplyIdPrefix")
+    @JSGlobal("Srch.RefinementUtil")
     @js.native
-    def peoplePickerApplyIdPrefix(control: typings.sharepoint.Srch.ClientControl): String = js.native
-    @JSGlobal("Srch.RefinementUtil.peoplePickerApplyIdPrefix")
-    @js.native
-    def peoplePickerApplyIdPrefix(control: typings.sharepoint.Srch.RefinementControl): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Srch.RefinementUtil.peoplePickerPrep")
-    @js.native
+    @scala.inline
+    def peoplePickerApplyIdPrefix(control: typings.sharepoint.Srch.ClientControl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("peoplePickerApplyIdPrefix")(control.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def peoplePickerApplyIdPrefix(control: typings.sharepoint.Srch.RefinementControl): String = ^.asInstanceOf[js.Dynamic].applyDynamic("peoplePickerApplyIdPrefix")(control.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
     def peoplePickerPrep(
       id: String,
       refiner: typings.sharepoint.Srch.RefinementControl,
       clientControl: typings.sharepoint.Srch.Refinement
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("peoplePickerPrep")(id.asInstanceOf[js.Any], refiner.asInstanceOf[js.Any], clientControl.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.RefinementUtil.stringValueToEqualsToken")
-    @js.native
-    def stringValueToEqualsToken(x: String): String = js.native
+    @scala.inline
+    def stringValueToEqualsToken(x: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringValueToEqualsToken")(x.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSGlobal("Srch.Res")
   @js.native
   class Res ()
-    extends typings.sharepoint.Srch.Res
+    extends StObject
+       with typings.sharepoint.Srch.Res
   object Res {
     
     @JSGlobal("Srch.Res")
@@ -5319,56 +7154,1261 @@ object Srch {
   @JSGlobal("Srch.Result")
   @js.native
   class Result protected ()
-    extends typings.sharepoint.Srch.Result {
+    extends StObject
+       with typings.sharepoint.Srch.Result {
     def this(elem: Element) = this()
+    
+    /* CompleteClass */
+    override def activate(
+      prompt: String,
+      searchBoxId: String,
+      searchBoxDivId: String,
+      navButtonId: String,
+      suggestionsListId: String,
+      navListId: String,
+      searchBoxLinkId: String,
+      searchBoxProgressClass: String,
+      searchBoxPromptClass: String
+    ): Unit = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeQueryLanguage(queryLanguage: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeQueryTerm(queryTerm: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_advancedSearchPageAddress(): String = js.native
+    
+    /* CompleteClass */
+    override def get_advancedUrl(): String = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_currentPageNumber(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_currentResultTableCollection(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_currentTerm(): String = js.native
+    
+    /* CompleteClass */
+    override def get_dataProvider(): typings.sharepoint.Srch.DataProvider = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def get_emptyMessage(): String = js.native
+    
+    /* CompleteClass */
+    override def get_emptyRefinementMessageId(): String = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_groupTemplateId(): String = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /* CompleteClass */
+    override def get_initialPrompt(): String = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_itemBodyTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_itemTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_maxPagesAfterCurrent(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_maxPagesBeforeCurrent(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_pagingInfo(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_preloadedItemTemplateIds(): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def get_queryGroupName(): String = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_renderedResult(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_repositionLanguageDropDown(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_scrollToTopOnRedraw(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_selectedRefinementControls(): js.Array[CSRRefinementControl] = js.native
+    
+    /* CompleteClass */
+    override def get_shouldShowNoResultMessage(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showAdvancedLink(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showAlertMe(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showBestBets(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDefinitions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDidYouMean(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showLanguageOptions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showNavigation(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showPaging(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showPersonalFavorites(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showPreferencesLink(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showQuerySuggestions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showResultCount(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showResults(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showSortOptions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showUpScopeMessage(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showViewDuplicates(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_useSimplifiedQueryBuilder(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def handleClickOnCategoryLink(id: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def page(startAt: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processQueryIssuing(queryState: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processResultReady(resultTableCollection: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def processResultReady(resultTableCollection: ResultTableCollection): Unit = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryReadyEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseResultRenderedEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def refresh(queryState: js.Any): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_oneTimeResultRendered(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_resultRendered(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def render(): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def setAriaCollapsed(element: HTMLElement): Unit = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_advancedUrl(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_currentPageNumber(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_currentResultTableCollection(value: js.Any): js.Any = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_emptyMessage(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_groupTemplateId(value: String): String = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_itemBodyTemplateId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_itemTemplateId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_maxPagesAfterCurrent(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_maxPagesBeforeCurrent(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_preloadedItemTemplateIds(value: js.Array[String]): js.Array[String] = js.native
+    
+    /* CompleteClass */
+    override def set_queryGroupName(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderedResult(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_repositionLanguageDropDown(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_scrollToTopOnRedraw(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_shouldShowNoResultMessage(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showAdvancedLink(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showAlertMe(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showBestBets(value: Boolean): Boolean = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showDefinitions(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showDidYouMean(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showLanguageOptions(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showPaging(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showPersonalFavorites(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showPreferencesLink(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showResultCount(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showResults(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showSortOptions(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showUpScopeMessage(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showViewDuplicates(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_useSimplifiedQueryBuilder(value: Boolean): Boolean = js.native
+    
+    /** Returns true if the specified table has results and is enabled to be shown by this control */
+    /* CompleteClass */
+    override def shouldShowTable(resultTable: ResultTable): Boolean = js.native
+    
+    /* CompleteClass */
+    override def sort(sortName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def sortOrRank(sortRankName: String): Unit = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
+    
+    /* CompleteClass */
+    override def viewDuplicates(docId: Double): Unit = js.native
   }
   object Result {
     
-    /* static member */
-    @JSGlobal("Srch.Result.getSelectedPropertiesFromMappingDictionary")
+    @JSGlobal("Srch.Result")
     @js.native
-    def getSelectedPropertiesFromMappingDictionary(propMappings: js.Any): js.Array[_] = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Srch.Result.parsePropertyMappingWithSlotDisplayNames")
-    @js.native
-    def parsePropertyMappingWithSlotDisplayNames(mappings: js.Any): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def getSelectedPropertiesFromMappingDictionary(propMappings: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedPropertiesFromMappingDictionary")(propMappings.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /* static member */
-    @JSGlobal("Srch.Result.parsePropertyMappingsString")
-    @js.native
-    def parsePropertyMappingsString(mappings: js.Any): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def parsePropertyMappingWithSlotDisplayNames(mappings: js.Any): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePropertyMappingWithSlotDisplayNames")(mappings.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    
+    /* static member */
+    @scala.inline
+    def parsePropertyMappingsString(mappings: js.Any): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePropertyMappingsString")(mappings.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
   }
   
   @JSGlobal("Srch.ScriptApplicationManager")
   @js.native
   class ScriptApplicationManager ()
-    extends typings.sharepoint.Srch.ScriptApplicationManager
+    extends StObject
+       with typings.sharepoint.Srch.ScriptApplicationManager
   object ScriptApplicationManager {
     
-    /* static member */
-    @JSGlobal("Srch.ScriptApplicationManager.get_clientRuntimeContext")
+    @JSGlobal("Srch.ScriptApplicationManager")
     @js.native
-    def getClientRuntimeContext(): ClientRuntimeContext = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Srch.ScriptApplicationManager.get_current")
-    @js.native
-    def getCurrent(): typings.sharepoint.Srch.ScriptApplicationManager = js.native
+    @scala.inline
+    def getClientRuntimeContext(): ClientRuntimeContext = ^.asInstanceOf[js.Dynamic].applyDynamic("get_clientRuntimeContext")().asInstanceOf[ClientRuntimeContext]
+    
+    /* static member */
+    @scala.inline
+    def getCurrent(): typings.sharepoint.Srch.ScriptApplicationManager = ^.asInstanceOf[js.Dynamic].applyDynamic("get_current")().asInstanceOf[typings.sharepoint.Srch.ScriptApplicationManager]
   }
   
   /** Represents the search box control */
   @JSGlobal("Srch.SearchBox")
   @js.native
   class SearchBox protected ()
-    extends typings.sharepoint.Srch.SearchBox {
+    extends StObject
+       with typings.sharepoint.Srch.SearchBox {
     def this(elem: Element) = this()
+    
+    /* CompleteClass */
+    override def activate(
+      prompt: String,
+      searchBoxInputId: String,
+      searchBoxContainerId: String,
+      navigationButtonId: String,
+      suggestionsListId: String,
+      navigationListId: String,
+      searchBoxLinkId: String,
+      searchBoxProgressClass: String,
+      searchBoxPromptClass: String
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    override def activateDefaultNavigationBehavior(): Unit = js.native
+    
+    /* CompleteClass */
+    override def activateDefaultQuerySuggestionBehavior(): Unit = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Adds a CSS class to the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the addCssClass method to add a CSS class to a control. If the CSS class has already been added to the control, addCssClass makes no changes to the control.
+      * @param className
+      *          A string that contains the name of the CSS class to add.
+      */
+    /* CompleteClass */
+    override def addCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_batchQueryIssuing(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_batchResultReady(value: js.Any): Unit = js.native
+    
+    //#endregion
+    //#region Events
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def add_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def add_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def add_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var alternateRenderContext: js.Any = js.native
+    
+    /* CompleteClass */
+    var alternateRenderer: js.Any = js.native
+    
+    //#endregion
+    //#region Methods
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has begun.
+      */
+    /* CompleteClass */
+    override def beginUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def clickHandler(e: Event): js.Any = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_QueryStateChanged(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /**
+      * Raises the disposing event of the current Component and removes the component from the application.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Called by the create method to indicate that the process of setting properties of a component instance has finished.
+      * This method is called by the create method ($create).
+      * Sets the isUpdating property of the current Component object to false, calls the initialize method if it has not already been called, and then calls the updated method.
+      */
+    /* CompleteClass */
+    override def endUpdate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get_advancedSearchPageAddress(): String = js.native
+    
+    /* CompleteClass */
+    override def get_allowEmptySearch(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_alternateErrorMessage(): String = js.native
+    
+    /** Gets the search input placeholder text */
+    /* CompleteClass */
+    override def get_currentPrompt(): String = js.native
+    
+    /** Returns the current search term */
+    /* CompleteClass */
+    override def get_currentTerm(): String = js.native
+    
+    /** Returns true if control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def get_delayLoadTemplateScripts(): Boolean = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Control object is associated with.
+      * @return The DOM element that the current Control object is associated with.
+      */
+    /* CompleteClass */
+    override def get_element(): HTMLElement = js.native
+    
+    //#endregion
+    //#region Properties
+    /**
+      * Gets an EventHandlerList object that contains references to all the event handlers that are mapped to the current component's events.
+      * This member supports the client-script infrastructure and is not intended to be used directly from your code.
+      * @return
+      *      An EventHandlerList object that contains references to all the events and handlers for this component.
+      */
+    /* CompleteClass */
+    override def get_events(): js.Any = js.native
+    
+    /**
+      * Gets the ID of the current Component object.
+      * @return
+      *       The id
+      */
+    /* CompleteClass */
+    override def get_id(): String = js.native
+    
+    /* CompleteClass */
+    override def get_initialPrompt(): String = js.native
+    
+    /** returns true if control has already been loaded at least once */
+    /* CompleteClass */
+    override def get_isInitialLoad(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is initialized.
+      * @return
+      *      true if the current Component is initialized; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isInitialized(): Boolean = js.native
+    
+    /**
+      * Gets a value indicating whether the current Component object is updating.
+      * @return
+      *      true if the current Component object is updating; otherwise, false.
+      */
+    /* CompleteClass */
+    override def get_isUpdating(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_maintainQueryState(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_messages(): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def get_msBeforeShowingProgress(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_navigationButtonId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_navigationListId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_navigationNodes(): js.Any = js.native
+    
+    /** returns next unique identifier for nested controls */
+    /* CompleteClass */
+    override def get_nextUniqueId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_pageTitlePrefix(): String = js.native
+    
+    /* CompleteClass */
+    override def get_personalResultCount(): Double = js.native
+    
+    /** Gets the css class/classes of the placeholder text. Default is 'ms-srch-sb-prompt ms-helperText' */
+    /* CompleteClass */
+    override def get_promptCssClass(): String = js.native
+    
+    /* CompleteClass */
+    override def get_queryGroupNames(): js.Array[String] = js.native
+    
+    /** Gets the interval in milliseconds, if user is idle during this interval, suggestions retrieval will be initiated.
+      * Default value is 250.
+      */
+    /* CompleteClass */
+    override def get_querySuggestionCompletionInterval(): Double = js.native
+    
+    /** Gets number of suggestions to display. Default is 5. */
+    /* CompleteClass */
+    override def get_querySuggestionCount(): Double = js.native
+    
+    /** Gets minimum length of the search term for suggestions to be retrieved. Default is 2 letters. */
+    /* CompleteClass */
+    override def get_querySuggestionMinimumPrefixLength(): Double = js.native
+    
+    /* CompleteClass */
+    override def get_querySuggestionsSourceID(): String = js.native
+    
+    /** Gets the id of View display template that is used to render this control.
+      * Example: '~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchResults.js'
+      */
+    /* CompleteClass */
+    override def get_renderTemplateId(): String = js.native
+    
+    /** Gets the results page address, e.g. '~site/_layouts/15/osssearchresults.aspx?u={contexturl}' */
+    /* CompleteClass */
+    override def get_resultsPageAddress(): String = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxContainerElement(): Element = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxContainerId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxInputElement(): Element = js.native
+    
+    /** Gets the id of the search box input element */
+    /* CompleteClass */
+    override def get_searchBoxInputId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxLinkElement(): Element = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxLinkId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_searchBoxProgressClass(): String = js.native
+    
+    /* CompleteClass */
+    override def get_serverInitialRender(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_setFocusOnPageLoad(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showAdvancedLink(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showDataErrors(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showNavigation(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showPeopleNameSuggestions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showPreferencesLink(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_showQuerySuggestions(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_states(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get_suggestionsListId(): String = js.native
+    
+    /* CompleteClass */
+    override def get_tryInplaceQuery(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def get_updatePageTitle(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def hasMessages(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hidePrompt(): Unit = js.native
+    
+    /**
+      * Initializes the current Component object.
+      * The initialize method sets the isInitialized property of the current Component object to true. This function is called by the create method ($create) and overridden in derived classes to initialize the component.
+      */
+    /* CompleteClass */
+    override def initialize(): Unit = js.native
+    
+    /* CompleteClass */
+    override def invokeAlternateRender(callback: js.Any, container: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def invokeClientRenderer(node: js.Any, ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def loadRenderTemplateScripts(
+      scriptReferences: js.Any,
+      success: js.Any,
+      failure: js.Any,
+      timeout: js.Any,
+      loadStandAloneCustomScripts: js.Any
+    ): Boolean = js.native
+    
+    /* CompleteClass */
+    override def loadServerTemplateScripts(): Unit = js.native
+    
+    /* CompleteClass */
+    var loaded: Boolean = js.native
+    
+    /**
+      * Called when an event is raised by the raiseBubbleEvent method.
+      *
+      * The onBubbleEvent method returns false to make sure that unhandled events propagate (bubble) to the parent control.
+      * In derived classes, you should override the onBubbleEvent method and return true when events are handled to prevent the events from bubbling further.
+      * For an explanation of bubbling, see Sys.UI.Control raiseBubbleEvent Method.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      * @return
+      *      false in all cases.
+      */
+    /* CompleteClass */
+    override def onBubbleEvent(source: js.Any, args: js.Any): Boolean = js.native
+    
+    /* CompleteClass */
+    override def processDataErrorMessages(dataErrorsList: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def processDataProviderErrors(dataProviderToProcess: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def processRenderingErrorMessages(ctx: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def raiseBatchQueryIssuingEvent(arg: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseBatchResultReadyEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Calls the onBubbleEvent method of the parent control.
+      *
+      * When the raiseBubbleEvent method is called, the source object and args values are sent to the onBubbleEvent handler of the current control.
+      * If onBubbleEvent returns false, they are sent to the onBubbleEvent handler of the parent control.
+      * This process continues until an onBubbleEvent event handler returns true, which indicates that the event has been handled.
+      * Any event that bubbles to the Sys.Application instance without being handled is ignored.
+      *
+      * @param source
+      *          The object that triggered the event.
+      * @param args
+      *          The event arguments.
+      */
+    /* CompleteClass */
+    override def raiseBubbleEvent(source: js.Any, args: js.Any): Unit = js.native
+    
+    /**
+      * Raises the propertyChanged event for the specified property.
+      * @param propertyName
+      *               The name of the property that changed.
+      */
+    /* CompleteClass */
+    override def raisePropertyChanged(propertyName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def raiseQueryReadyEvent(arg: js.Any): Unit = js.native
+    
+    /**
+      * Removes a CSS class from the HTML Document Object Model (DOM) element that the control is attached to.
+      * Use the removeCssClass method to remove a CSS class from a control. If the CSS class has already been removed from the control, removeCssClass makes no changes to the control.
+      *
+      * @param className
+      *          A string that contains the name of the CSS class to remove.
+      */
+    /* CompleteClass */
+    override def removeCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_batchQueryIssuing(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_batchResultReady(value: js.Any): Unit = js.native
+    
+    /**
+      * Raised when the dispose method is called for a component.
+      */
+    /* CompleteClass */
+    override def remove_disposing(handler: js.Function): Unit = js.native
+    
+    /**
+      * Raised when the raisePropertyChanged method of the current Component object is called.
+      */
+    /* CompleteClass */
+    override def remove_propertyChanged(handler: js.Function): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove_queryReady(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def renderControl(listData: js.Any, dataProvider: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_Load(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PostLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def scriptApplication_PreLoad(sender: js.Any, e: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def search(term: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def serverTemplateScriptsCallback(): Unit = js.native
+    
+    /* CompleteClass */
+    var serverTemplateScriptsToLoad: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def setBorder(focused: Boolean): Unit = js.native
+    
+    /** show/hide the DOM element associated with control */
+    /* CompleteClass */
+    override def setControlElementVisibility(showElement: Boolean): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_advancedSearchPageAddress(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_allowEmptySearch(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_alternateErrorMessage(value: String): String = js.native
+    
+    /** Sets the search input placeholder text */
+    /* CompleteClass */
+    override def set_currentPrompt(value: String): String = js.native
+    
+    /** Sets the current search term.
+      * Does not update results or even re-render control automatically, only sets the value.
+      * You can call .renderControl() method to re-render control.
+      */
+    /* CompleteClass */
+    override def set_currentTerm(value: String): String = js.native
+    
+    /** If set to true, control will load scripts defined by the serverTemplateScriptsToLoad field after control load. True by default. */
+    /* CompleteClass */
+    override def set_delayLoadTemplateScripts(value: Boolean): Boolean = js.native
+    
+    /**
+      * Sets the ID of the current Component object.
+      * @param value A string that contains the ID of the component.
+      */
+    /* CompleteClass */
+    override def set_id(value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set_initialPrompt(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_maintainQueryState(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_messages(value: js.Array[js.Any]): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def set_msBeforeShowingProgress(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_navigationButtonId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_navigationListId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_navigationNodes(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_pageTitlePrefix(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_personalResultCount(value: Double): Double = js.native
+    
+    /** Sets the css class/classes of the placeholder text. Default is 'ms-srch-sb-prompt ms-helperText' */
+    /* CompleteClass */
+    override def set_promptCssClass(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_queryGroupNames(value: js.Any): js.Array[String] = js.native
+    
+    /** Sets the interval in milliseconds, if user is idle during this interval, suggestions retrieval will be initiated.
+      * Default value is 250.
+      */
+    /* CompleteClass */
+    override def set_querySuggestionCompletionInterval(value: Double): Double = js.native
+    
+    /** Sets number of suggestions to display. Default is 5. */
+    /* CompleteClass */
+    override def set_querySuggestionCount(value: Double): Double = js.native
+    
+    /** Sets minimum length of the search term for suggestions to be retrieved. Default is 2 letters. */
+    /* CompleteClass */
+    override def set_querySuggestionMinimumPrefixLength(value: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def set_querySuggestionsSourceID(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_renderTemplateId(value: String): String = js.native
+    
+    /** Sets the results page address, e.g. '~site/_layouts/15/osssearchresults.aspx?u={contexturl}'
+      * Parameter u is used for setting the url filter for the search, so that only results within
+      * e.g. specified site are returned. Omit this parameter if you want to search everywhere.
+      */
+    /* CompleteClass */
+    override def set_resultsPageAddress(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_searchBoxContainerId(value: String): String = js.native
+    
+    /** Sets the id of the search box input element */
+    /* CompleteClass */
+    override def set_searchBoxInputId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_searchBoxLinkId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_searchBoxProgressClass(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_serverInitialRender(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_setFocusOnPageLoad(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showAdvancedLink(value: Boolean): Boolean = js.native
+    
+    /** False by default. */
+    /* CompleteClass */
+    override def set_showDataErrors(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showNavigation(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showPeopleNameSuggestions(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showPreferencesLink(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_showQuerySuggestions(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_states(value: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def set_suggestionsListId(value: String): String = js.native
+    
+    /* CompleteClass */
+    override def set_tryInplaceQuery(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def set_updatePageTitle(value: Boolean): Boolean = js.native
+    
+    /* CompleteClass */
+    override def showPrompt(): Unit = js.native
+    
+    /**
+      * Toggles a CSS class of the HTML Document Object Model (DOM) element that the control is attached to.
+      * @param className
+      *          A string that contains the name of the CSS class to toggle.
+      */
+    /* CompleteClass */
+    override def toggleCssClass(className: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def updateDisplayControlWithNewMessages(): js.Any = js.native
+    
+    /**
+      * Called by the endUpdate method as a placeholder for additional logic in derived classes.
+      * Override the updated method in a derived class to add custom post-update logic.
+      */
+    /* CompleteClass */
+    override def updated(): Unit = js.native
   }
   
   @JSGlobal("Srch.U")
   @js.native
   class U ()
-    extends typings.sharepoint.Srch.U
+    extends StObject
+       with typings.sharepoint.Srch.U
   object U {
     
     @JSGlobal("Srch.U")
@@ -5378,7 +8418,8 @@ object Srch {
     @JSGlobal("Srch.U.Ids")
     @js.native
     class Ids ()
-      extends typings.sharepoint.Srch.U.Ids
+      extends StObject
+         with typings.sharepoint.Srch.U.Ids
     object Ids {
       
       @JSGlobal("Srch.U.Ids")
@@ -5533,24 +8574,36 @@ object Srch {
     object LoadScriptsProgress extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.U.LoadScriptsProgress with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.U.LoadScriptsProgress & Double] = js.native
       
-      /* 2 */ val failure: typings.sharepoint.Srch.U.LoadScriptsProgress.failure with Double = js.native
+      /* 2 */ val failure: typings.sharepoint.Srch.U.LoadScriptsProgress.failure & Double = js.native
       
-      /* 0 */ val loading: typings.sharepoint.Srch.U.LoadScriptsProgress.loading with Double = js.native
+      /* 0 */ val loading: typings.sharepoint.Srch.U.LoadScriptsProgress.loading & Double = js.native
       
-      /* 1 */ val success: typings.sharepoint.Srch.U.LoadScriptsProgress.success with Double = js.native
+      /* 1 */ val success: typings.sharepoint.Srch.U.LoadScriptsProgress.success & Double = js.native
     }
     
     @JSGlobal("Srch.U.LoadScriptsState")
     @js.native
     class LoadScriptsState ()
-      extends typings.sharepoint.Srch.U.LoadScriptsState
+      extends StObject
+         with typings.sharepoint.Srch.U.LoadScriptsState {
+      
+      /* CompleteClass */
+      var progress: Double = js.native
+      
+      /* CompleteClass */
+      var scriptsToLoad: js.Any = js.native
+      
+      /* CompleteClass */
+      var timeoutHandle: js.Any = js.native
+    }
     
     @JSGlobal("Srch.U.PropNames")
     @js.native
     class PropNames ()
-      extends typings.sharepoint.Srch.U.PropNames
+      extends StObject
+         with typings.sharepoint.Srch.U.PropNames
     object PropNames {
       
       @JSGlobal("Srch.U.PropNames")
@@ -5666,69 +8719,59 @@ object Srch {
     
     /** Same as $addHandler with safety checks */
     /* static member */
-    @JSGlobal("Srch.U.addHandler")
-    @js.native
+    @scala.inline
     def addHandler(
       element: Element,
       eventName: String,
       handler: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandler")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.addRenderContextCallback")
-    @js.native
+    @scala.inline
     def addRenderContextCallback(
       renderCtx: js.Any,
       callbackType: js.Any,
       callbackFunction: js.Any,
       enforceUnique: js.Any,
       templateFunction: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addRenderContextCallback")(renderCtx.asInstanceOf[js.Any], callbackType.asInstanceOf[js.Any], callbackFunction.asInstanceOf[js.Any], enforceUnique.asInstanceOf[js.Any], templateFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Uses SPAnimation to animate an element */
     /* static member */
-    @JSGlobal("Srch.U.animate")
-    @js.native
-    def animate(element: Element, animationID: js.Any, finishFunc: js.Any): Unit = js.native
+    @scala.inline
+    def animate(element: Element, animationID: js.Any, finishFunc: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animate")(element.asInstanceOf[js.Any], animationID.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.animateResults")
-    @js.native
-    def animateResults(result: typings.sharepoint.Srch.Result, userAction: js.Any): Unit = js.native
+    @scala.inline
+    def animateResults(result: typings.sharepoint.Srch.Result, userAction: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("animateResults")(result.asInstanceOf[js.Any], userAction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Safely pushes item to array (does nothing if the array is null or undefined) */
     /* static member */
-    @JSGlobal("Srch.U.appendArray")
-    @js.native
-    def appendArray(array: js.Array[_], item: js.Any): Unit = js.native
+    @scala.inline
+    def appendArray(array: js.Array[js.Any], item: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendArray")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.appendScriptsToLoad")
-    @js.native
-    def appendScriptsToLoad(scripts: js.Array[String], script: String): Unit = js.native
+    @scala.inline
+    def appendScriptsToLoad(scripts: js.Array[String], script: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendScriptsToLoad")(scripts.asInstanceOf[js.Any], script.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Appends specified parameter key and value string to the specified URL */
     /* static member */
-    @JSGlobal("Srch.U.appendUrlParameter")
-    @js.native
-    def appendUrlParameter(url: String, keyAndValue: String): String = js.native
+    @scala.inline
+    def appendUrlParameter(url: String, keyAndValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("appendUrlParameter")(url.asInstanceOf[js.Any], keyAndValue.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Prevents default event action and stops further propagation of the event in the DOM */
     /* static member */
-    @JSGlobal("Srch.U.cancelEvent")
-    @js.native
-    def cancelEvent(e: Event): Unit = js.native
+    @scala.inline
+    def cancelEvent(e: Event): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelEvent")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Prevents default event action or/and stops further propagation of the event in the DOM */
     /* static member */
-    @JSGlobal("Srch.U.cancelEventEx")
-    @js.native
-    def cancelEventEx(e: Event, preventDefault: Boolean, stopPropagation: Boolean): Unit = js.native
+    @scala.inline
+    def cancelEventEx(e: Event, preventDefault: Boolean, stopPropagation: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cancelEventEx")(e.asInstanceOf[js.Any], preventDefault.asInstanceOf[js.Any], stopPropagation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Returns HTML for collapsible refiner title */
     /* static member */
-    @JSGlobal("Srch.U.collapsibleRefinerTitle")
-    @js.native
+    @scala.inline
     def collapsibleRefinerTitle(
       propertyName: String,
       idPrefix: String,
@@ -5736,9 +8779,8 @@ object Srch {
       iconClass: String,
       customOnClick: String,
       isExpanded: String
-    ): String = js.native
-    @JSGlobal("Srch.U.collapsibleRefinerTitle")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("collapsibleRefinerTitle")(propertyName.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any], title.asInstanceOf[js.Any], iconClass.asInstanceOf[js.Any], customOnClick.asInstanceOf[js.Any], isExpanded.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def collapsibleRefinerTitle(
       propertyName: String,
       idPrefix: String,
@@ -5746,13 +8788,12 @@ object Srch {
       iconClass: String,
       customOnClick: Null,
       isExpanded: String
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("collapsibleRefinerTitle")(propertyName.asInstanceOf[js.Any], idPrefix.asInstanceOf[js.Any], title.asInstanceOf[js.Any], iconClass.asInstanceOf[js.Any], customOnClick.asInstanceOf[js.Any], isExpanded.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Concatenates two URL fragments and returns resulting URL */
     /* static member */
-    @JSGlobal("Srch.U.concatUrl")
-    @js.native
-    def concatUrl(firstPart: String, secondPart: String): String = js.native
+    @scala.inline
+    def concatUrl(firstPart: String, secondPart: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("concatUrl")(firstPart.asInstanceOf[js.Any], secondPart.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
     @JSGlobal("Srch.U.contentFixedWidthLength")
@@ -5763,299 +8804,246 @@ object Srch {
     
     /** Returns copy of the passed source dictionary */
     /* static member */
-    @JSGlobal("Srch.U.copyDictionary")
-    @js.native
-    def copyDictionary(source: StringDictionary[js.Any]): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def copyDictionary(source: StringDictionary[js.Any]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyDictionary")(source.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
     
     /** Copies the specified string to clipboard, if possible */
     /* static member */
-    @JSGlobal("Srch.U.copyLink")
-    @js.native
-    def copyLink(link: String): Unit = js.native
+    @scala.inline
+    def copyLink(link: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("copyLink")(link.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.createBehavior")
-    @js.native
-    def createBehavior(id: String, `type`: js.Any, properties: js.Any, targetElementId: String): js.Any = js.native
+    @scala.inline
+    def createBehavior(id: String, `type`: js.Any, properties: js.Any, targetElementId: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createBehavior")(id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], targetElementId.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("Srch.U.createErrorObjectWithExecContext")
-    @js.native
-    def createErrorObjectWithExecContext(messageText: js.Any, operationName: js.Any, templateFuncOrRenderCtx: js.Any): js.Any = js.native
+    @scala.inline
+    def createErrorObjectWithExecContext(messageText: js.Any, operationName: js.Any, templateFuncOrRenderCtx: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createErrorObjectWithExecContext")(messageText.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any], templateFuncOrRenderCtx.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("Srch.U.createFileIconAltText")
-    @js.native
-    def createFileIconAltText(container: Boolean, b: js.Any): String = js.native
+    @scala.inline
+    def createFileIconAltText(container: Boolean, b: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createFileIconAltText")(container.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.createXMLDocument")
-    @js.native
-    def createXMLDocument(xml: String): XMLDocument = js.native
+    @scala.inline
+    def createXMLDocument(xml: String): XMLDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("createXMLDocument")(xml.asInstanceOf[js.Any]).asInstanceOf[XMLDocument]
     
     /** Returns true if the value parameter is null or empty string */
     /* static member */
-    @JSGlobal("Srch.U.e")
-    @js.native
-    def e(value: String): Boolean = js.native
+    @scala.inline
+    def e(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("e")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Ensures that the given URL protocol value is allowed. Returns the specified URL value if the protocol is allowed; empty string otherwise. */
     /* static member */
-    @JSGlobal("Srch.U.ensureAllowedProtocol")
-    @js.native
-    def ensureAllowedProtocol(value: String): String = js.native
+    @scala.inline
+    def ensureAllowedProtocol(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureAllowedProtocol")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Adds the specified CSS class to element (if not there already) */
     /* static member */
-    @JSGlobal("Srch.U.ensureCSSClassNameExist")
-    @js.native
-    def ensureCSSClassNameExist(e: Element, className: String): Unit = js.native
+    @scala.inline
+    def ensureCSSClassNameExist(e: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureCSSClassNameExist")(e.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Removes the specified CSS class from the element */
     /* static member */
-    @JSGlobal("Srch.U.ensureCSSClassNameNotExist")
-    @js.native
-    def ensureCSSClassNameNotExist(e: Element, className: String): Unit = js.native
+    @scala.inline
+    def ensureCSSClassNameNotExist(e: Element, className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureCSSClassNameNotExist")(e.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Ensures that the given value is not null, undefined or empty; throws an exception otherwise. */
     /* static member */
-    @JSGlobal("Srch.U.ensureNotNullOrEmptyString")
-    @js.native
-    def ensureNotNullOrEmptyString(value: String, context: js.Any, methodName: String, paraName: String): Unit = js.native
+    @scala.inline
+    def ensureNotNullOrEmptyString(value: String, context: js.Any, methodName: String, paraName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNotNullOrEmptyString")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], paraName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Ensures that the given value is not null or undefined; throws an exception otherwise. */
     /* static member */
-    @JSGlobal("Srch.U.ensureNotNullOrUndefined")
-    @js.native
-    def ensureNotNullOrUndefined(value: js.Any, context: js.Any, methodName: String, paraName: String): Unit = js.native
+    @scala.inline
+    def ensureNotNullOrUndefined(value: js.Any, context: js.Any, methodName: String, paraName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureNotNullOrUndefined")(value.asInstanceOf[js.Any], context.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], paraName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.extractReplyTitleFromSummary")
-    @js.native
-    def extractReplyTitleFromSummary(hitHighlightedSummary: String, titleLength: Double): String = js.native
+    @scala.inline
+    def extractReplyTitleFromSummary(hitHighlightedSummary: String, titleLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("extractReplyTitleFromSummary")(hitHighlightedSummary.asInstanceOf[js.Any], titleLength.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.fillKeywordQuery")
-    @js.native
-    def fillKeywordQuery(query: js.Any, dp: js.Any): Unit = js.native
+    @scala.inline
+    def fillKeywordQuery(query: js.Any, dp: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillKeywordQuery")(query.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.findResultObjectFromDOM")
-    @js.native
-    def findResultObjectFromDOM(e: Element, `type`: String): js.Any = js.native
+    @scala.inline
+    def findResultObjectFromDOM(e: Element, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findResultObjectFromDOM")(e.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** Parses SharePoint array field value and returns array of strings */
     /* static member */
-    @JSGlobal("Srch.U.getArray")
-    @js.native
-    def getArray(value: String): js.Array[String] = js.native
+    @scala.inline
+    def getArray(value: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /** Gets calendar type according to the current regional settings */
     /* static member */
-    @JSGlobal("Srch.U.getCalendarType")
-    @js.native
-    def getCalendarType(): js.Any = js.native
+    @scala.inline
+    def getCalendarType(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCalendarType")().asInstanceOf[js.Any]
     
     /** Returns the ClientControl associated with specified DOM element */
     /* static member */
-    @JSGlobal("Srch.U.getClientComponent")
-    @js.native
-    def getClientComponent(e: Element): typings.sharepoint.Srch.ClientControl = js.native
+    @scala.inline
+    def getClientComponent(e: Element): typings.sharepoint.Srch.ClientControl = ^.asInstanceOf[js.Dynamic].applyDynamic("getClientComponent")(e.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.Srch.ClientControl]
     
     /** Gets cookie by name */
     /* static member */
-    @JSGlobal("Srch.U.getCookie")
-    @js.native
-    def getCookie(name: String): String = js.native
+    @scala.inline
+    def getCookie(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCookie")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getDeepLinks")
-    @js.native
-    def getDeepLinks(deeplinks: String, maxRows: Double): String = js.native
+    @scala.inline
+    def getDeepLinks(deeplinks: String, maxRows: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepLinks")(deeplinks.asInstanceOf[js.Any], maxRows.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Parses user display name out from SharePoint user field value */
     /* static member */
-    @JSGlobal("Srch.U.getDisplayNameFromAuthorField")
-    @js.native
-    def getDisplayNameFromAuthorField(authorField: String): String = js.native
+    @scala.inline
+    def getDisplayNameFromAuthorField(authorField: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayNameFromAuthorField")(authorField.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Safely gets field of an object (returns null if object is null or undefined) */
     /* static member */
-    @JSGlobal("Srch.U.getFieldOnObject")
-    @js.native
-    def getFieldOnObject(targetObject: js.Any, fieldName: String): js.Any = js.native
+    @scala.inline
+    def getFieldOnObject(targetObject: js.Any, fieldName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldOnObject")(targetObject.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** Returns URL to the folder.gif image */
     /* static member */
-    @JSGlobal("Srch.U.getFolderIconUrl")
-    @js.native
-    def getFolderIconUrl(): String = js.native
+    @scala.inline
+    def getFolderIconUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFolderIconUrl")().asInstanceOf[String]
     
     /** Returns formatted time string from seconds string, which contains a number that represents amount of seconds passed since 00:00:00 today */
     /* static member */
-    @JSGlobal("Srch.U.getFormattedTimeFromSeconds")
-    @js.native
-    def getFormattedTimeFromSeconds(secondsStr: String): String = js.native
+    @scala.inline
+    def getFormattedTimeFromSeconds(secondsStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormattedTimeFromSeconds")(secondsStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Converts file extension to a more friendly representation, e.g. 'doc' => 'file_Word' */
     /* static member */
-    @JSGlobal("Srch.U.getFriendlyNameForFileExtension")
-    @js.native
-    def getFriendlyNameForFileExtension(fileExtension: String): String = js.native
+    @scala.inline
+    def getFriendlyNameForFileExtension(fileExtension: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFriendlyNameForFileExtension")(fileExtension.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Returns human-friendly representation of the datetime value, e.g. "A few seconds ago"" */
     /* static member */
-    @JSGlobal("Srch.U.getFriendlyTimeInterval")
-    @js.native
-    def getFriendlyTimeInterval(dateTimeSince: Date, calendarType: Double): String = js.native
+    @scala.inline
+    def getFriendlyTimeInterval(dateTimeSince: Date, calendarType: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getFriendlyTimeInterval")(dateTimeSince.asInstanceOf[js.Any], calendarType.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns string that contains safe call to HP.Hide */
     /* static member */
-    @JSGlobal("Srch.U.getHideHoverPanelCallback")
-    @js.native
-    def getHideHoverPanelCallback(): String = js.native
+    @scala.inline
+    def getHideHoverPanelCallback(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHideHoverPanelCallback")().asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getHighlightedProperty")
-    @js.native
-    def getHighlightedProperty(key: String, result: js.Any, property: String): js.Any = js.native
+    @scala.inline
+    def getHighlightedProperty(key: String, result: js.Any, property: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHighlightedProperty")(key.asInstanceOf[js.Any], result.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** Returns the hostname of current page */
     /* static member */
-    @JSGlobal("Srch.U.getHostName")
-    @js.native
-    def getHostName(): String = js.native
+    @scala.inline
+    def getHostName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostName")().asInstanceOf[String]
     
     /** Returns URL to the html16.png image */
     /* static member */
-    @JSGlobal("Srch.U.getIconUrl")
-    @js.native
-    def getIconUrl(): String = js.native
+    @scala.inline
+    def getIconUrl(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconUrl")().asInstanceOf[String]
     
     /** Returns URL of the appropriate file image based on the file type identifier (see getFriendlyNameForFileExtension) */
     /* static member */
-    @JSGlobal("Srch.U.getIconUrlByFileExtension")
-    @js.native
-    def getIconUrlByFileExtension(item: String): String = js.native
-    @JSGlobal("Srch.U.getIconUrlByFileExtension")
-    @js.native
-    def getIconUrlByFileExtension(item: String, defaultIconPath: String): String = js.native
+    @scala.inline
+    def getIconUrlByFileExtension(item: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconUrlByFileExtension")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getIconUrlByFileExtension(item: String, defaultIconPath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getIconUrlByFileExtension")(item.asInstanceOf[js.Any], defaultIconPath.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getImageSourceWithRendition")
-    @js.native
-    def getImageSourceWithRendition(imageInfo: js.Any, width: Double, height: Double): String = js.native
+    @scala.inline
+    def getImageSourceWithRendition(imageInfo: js.Any, width: Double, height: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getImageSourceWithRendition")(imageInfo.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getMultipleHHXMLNodeValues")
-    @js.native
-    def getMultipleHHXMLNodeValues(xmlDoc: XMLDocument, nodeName: String, numItems: Double, rawDelimiter: String): String = js.native
+    @scala.inline
+    def getMultipleHHXMLNodeValues(xmlDoc: XMLDocument, nodeName: String, numItems: Double, rawDelimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleHHXMLNodeValues")(xmlDoc.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any], numItems.asInstanceOf[js.Any], rawDelimiter.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Safely gets field of an object or creates it if it is null or undefined */
     /* static member */
-    @JSGlobal("Srch.U.getOrCreateFieldOnObject")
-    @js.native
-    def getOrCreateFieldOnObject(targetObject: js.Any, fieldName: String, defaultValue: js.Any): js.Any = js.native
+    @scala.inline
+    def getOrCreateFieldOnObject(targetObject: js.Any, fieldName: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getOrCreateFieldOnObject")(targetObject.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** Returns specified by attributeName attribute of startingElement or of it's closest parent who has it */
     /* static member */
-    @JSGlobal("Srch.U.getParentAttributeByName")
-    @js.native
-    def getParentAttributeByName(startingElement: Element, attributeName: String): String = js.native
+    @scala.inline
+    def getParentAttributeByName(startingElement: Element, attributeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getParentAttributeByName")(startingElement.asInstanceOf[js.Any], attributeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns the closest to startingElement parent of the specified tag name */
     /* static member */
-    @JSGlobal("Srch.U.getParentElementByName")
-    @js.native
-    def getParentElementByName(startingElement: Element, tagName: String): Element = js.native
+    @scala.inline
+    def getParentElementByName(startingElement: Element, tagName: String): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("getParentElementByName")(startingElement.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /** Returns display template registered (can be either string or function) */
     /* static member */
-    @JSGlobal("Srch.U.getRenderTemplateByName")
-    @js.native
-    def getRenderTemplateByName(name: String, renderCtx: js.Any): String | RenderFunction = js.native
+    @scala.inline
+    def getRenderTemplateByName(name: String, renderCtx: js.Any): String | RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("getRenderTemplateByName")(name.asInstanceOf[js.Any], renderCtx.asInstanceOf[js.Any])).asInstanceOf[String | RenderFunction]
     
     /* static member */
-    @JSGlobal("Srch.U.getResultObject")
-    @js.native
-    def getResultObject(id: String): js.Any = js.native
+    @scala.inline
+    def getResultObject(id: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getResultObject")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /** Returns string that contains safe call to HP.Show, passing over the itemId, hpContainerId and templateUrl parameters, and supplying false for wide parameter. */
     /* static member */
-    @JSGlobal("Srch.U.getShowHoverPanelCallback")
-    @js.native
-    def getShowHoverPanelCallback(itemId: String, hpContainerId: String, templateUrl: String): String = js.native
+    @scala.inline
+    def getShowHoverPanelCallback(itemId: String, hpContainerId: String, templateUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getShowHoverPanelCallback")(itemId.asInstanceOf[js.Any], hpContainerId.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns string that contains safe call to HP.Show, passing over the itemId, hpContainerId and templateUrl parameters, and supplying true for wide parameter. */
     /* static member */
-    @JSGlobal("Srch.U.getShowHoverPanelCallbackWide")
-    @js.native
-    def getShowHoverPanelCallbackWide(itemId: String, hpContainerId: String, templateUrl: String): String = js.native
+    @scala.inline
+    def getShowHoverPanelCallbackWide(itemId: String, hpContainerId: String, templateUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getShowHoverPanelCallbackWide")(itemId.asInstanceOf[js.Any], hpContainerId.asInstanceOf[js.Any], templateUrl.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getSingleHHXMLNodeValue")
-    @js.native
-    def getSingleHHXMLNodeValue(xmlDoc: XMLDocument, nodeName: String): String = js.native
+    @scala.inline
+    def getSingleHHXMLNodeValue(xmlDoc: XMLDocument, nodeName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSingleHHXMLNodeValue")(xmlDoc.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Safely gets field of an object (returns empty string instead of null as "getFieldOnObject") */
     /* static member */
-    @JSGlobal("Srch.U.getStringFieldOnObject")
-    @js.native
-    def getStringFieldOnObject(targetObject: js.Any, fieldName: String): String = js.native
+    @scala.inline
+    def getStringFieldOnObject(targetObject: js.Any, fieldName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getStringFieldOnObject")(targetObject.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getTableOfType")
-    @js.native
-    def getTableOfType(tableCollection: ResultTableCollection, tableTypeName: String): ResultTable = js.native
+    @scala.inline
+    def getTableOfType(tableCollection: ResultTableCollection, tableTypeName: String): ResultTable = (^.asInstanceOf[js.Dynamic].applyDynamic("getTableOfType")(tableCollection.asInstanceOf[js.Any], tableTypeName.asInstanceOf[js.Any])).asInstanceOf[ResultTable]
     
     /** Gets a value from 'Properties' field object of the specified parent object */
     /* static member */
-    @JSGlobal("Srch.U.getTableProperty")
-    @js.native
-    def getTableProperty(parent: js.Any, propName: String): js.Any = js.native
+    @scala.inline
+    def getTableProperty(parent: js.Any, propName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTableProperty")(parent.asInstanceOf[js.Any], propName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /** Gets the URL of template based on display template function or the rendering context */
     /* static member */
-    @JSGlobal("Srch.U.getTemplateUrlFromFunctionOrRenderCtx")
-    @js.native
-    def getTemplateUrlFromFunctionOrRenderCtx(templateFunctionOrRenderCtx: js.Any): String = js.native
+    @scala.inline
+    def getTemplateUrlFromFunctionOrRenderCtx(templateFunctionOrRenderCtx: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTemplateUrlFromFunctionOrRenderCtx")(templateFunctionOrRenderCtx.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getTrimmedProcessedHHXMLString")
-    @js.native
-    def getTrimmedProcessedHHXMLString(value: String, cutOff: Double): String = js.native
+    @scala.inline
+    def getTrimmedProcessedHHXMLString(value: String, cutOff: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTrimmedProcessedHHXMLString")(value.asInstanceOf[js.Any], cutOff.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getTrimmedString")
-    @js.native
-    def getTrimmedString(value: String, cutOff: Double): String = js.native
+    @scala.inline
+    def getTrimmedString(value: String, cutOff: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTrimmedString")(value.asInstanceOf[js.Any], cutOff.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getUnEncodedMultiValuedResults")
-    @js.native
-    def getUnEncodedMultiValuedResults(multiValue: String, maxItems: Double, rawDelimiter: String): String = js.native
+    @scala.inline
+    def getUnEncodedMultiValuedResults(multiValue: String, maxItems: Double, rawDelimiter: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnEncodedMultiValuedResults")(multiValue.asInstanceOf[js.Any], maxItems.asInstanceOf[js.Any], rawDelimiter.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Parses username out from SharePoint user field value */
     /* static member */
-    @JSGlobal("Srch.U.getUsernameFromAuthorField")
-    @js.native
-    def getUsernameFromAuthorField(authorField: String): String = js.native
+    @scala.inline
+    def getUsernameFromAuthorField(authorField: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUsernameFromAuthorField")(authorField.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.getVideoImageWithFallbackSource")
-    @js.native
-    def getVideoImageWithFallbackSource(valueObject: js.Any, width: Double, height: Double): String = js.native
+    @scala.inline
+    def getVideoImageWithFallbackSource(valueObject: js.Any, width: Double, height: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getVideoImageWithFallbackSource")(valueObject.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns the #s4-workspace element or if not found, then the fallback element */
     /* static member */
-    @JSGlobal("Srch.U.getWorkspace")
-    @js.native
-    def getWorkspace(fallback: Element): Element = js.native
+    @scala.inline
+    def getWorkspace(fallback: Element): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkspace")(fallback.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /* static member */
-    @JSGlobal("Srch.U.hideElement")
-    @js.native
-    def hideElement(element: Element): Unit = js.native
+    @scala.inline
+    def hideElement(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("Srch.U.hitHighlightingCloseTag")
@@ -6072,182 +9060,150 @@ object Srch {
     def hitHighlightingOpenTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("hitHighlightingOpenTag")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Srch.U.htmlEncodeNonBase64ImageUrl")
-    @js.native
-    def htmlEncodeNonBase64ImageUrl(url: String): String = js.native
+    @scala.inline
+    def htmlEncodeNonBase64ImageUrl(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("htmlEncodeNonBase64ImageUrl")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.includeCSS")
-    @js.native
-    def includeCSS(templateLink: String, relativeLink: String): Unit = js.native
+    @scala.inline
+    def includeCSS(templateLink: String, relativeLink: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("includeCSS")(templateLink.asInstanceOf[js.Any], relativeLink.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.includeLanguageScript")
-    @js.native
-    def includeLanguageScript(templateLink: String, scriptLink: String): Unit = js.native
+    @scala.inline
+    def includeLanguageScript(templateLink: String, scriptLink: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("includeLanguageScript")(templateLink.asInstanceOf[js.Any], scriptLink.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.includeScript")
-    @js.native
-    def includeScript(templateLink: String, scriptLink: String): Unit = js.native
+    @scala.inline
+    def includeScript(templateLink: String, scriptLink: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("includeScript")(templateLink.asInstanceOf[js.Any], scriptLink.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Returns true if the obj parameter is array */
     /* static member */
-    @JSGlobal("Srch.U.isArray")
-    @js.native
-    def isArray(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isArray(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if specified by logoUrl image is one of default site logos */
     /* static member */
-    @JSGlobal("Srch.U.isDefaultSiteLogo")
-    @js.native
-    def isDefaultSiteLogo(logoUrl: String): Boolean = js.native
+    @scala.inline
+    def isDefaultSiteLogo(logoUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultSiteLogo")(logoUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if current page is osssearchresults.aspx */
     /* static member */
-    @JSGlobal("Srch.U.isDefaultSiteSearchPage")
-    @js.native
-    def isDefaultSiteSearchPage(): Boolean = js.native
+    @scala.inline
+    def isDefaultSiteSearchPage(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefaultSiteSearchPage")().asInstanceOf[Boolean]
     
     /** Returns true if the specified element is a descendant of the container element */
     /* static member */
-    @JSGlobal("Srch.U.isDescendant")
-    @js.native
-    def isDescendant(element: Element, container: Element): Boolean = js.native
+    @scala.inline
+    def isDescendant(element: Element, container: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDescendant")(element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Returns true if the keyCode is \n or \r */
     /* static member */
-    @JSGlobal("Srch.U.isEnterKey")
-    @js.native
-    def isEnterKey(keyCode: js.Any): Boolean = js.native
+    @scala.inline
+    def isEnterKey(keyCode: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnterKey")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isFirstPromotedBlock")
-    @js.native
-    def isFirstPromotedBlock(resultTable: ResultTable): Boolean = js.native
+    @scala.inline
+    def isFirstPromotedBlock(resultTable: ResultTable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstPromotedBlock")(resultTable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isFirstRankedBlock")
-    @js.native
-    def isFirstRankedBlock(resultTable: ResultTable): Boolean = js.native
+    @scala.inline
+    def isFirstRankedBlock(resultTable: ResultTable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstRankedBlock")(resultTable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if the specified item is found in the specified array (uses '===' for comparing) */
     /* static member */
-    @JSGlobal("Srch.U.isInArray")
-    @js.native
-    def isInArray(array: js.Array[_], item: js.Any): Boolean = js.native
+    @scala.inline
+    def isInArray(array: js.Array[js.Any], item: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInArray")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isIntentTable")
-    @js.native
-    def isIntentTable(resultTable: ResultTable): Boolean = js.native
+    @scala.inline
+    def isIntentTable(resultTable: ResultTable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntentTable")(resultTable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if current page is in edit mode */
     /* static member */
-    @JSGlobal("Srch.U.isPageInEditMode")
-    @js.native
-    def isPageInEditMode(): Boolean = js.native
+    @scala.inline
+    def isPageInEditMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPageInEditMode")().asInstanceOf[Boolean]
     
     /** Returns true if current page is displayed in the Minimal Download Strategy (MDS) mode */
     /* static member */
-    @JSGlobal("Srch.U.isPageInMdsMode")
-    @js.native
-    def isPageInMdsMode(): Boolean = js.native
+    @scala.inline
+    def isPageInMdsMode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPageInMdsMode")().asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isPagePartialLoad")
-    @js.native
-    def isPagePartialLoad(): Boolean = js.native
+    @scala.inline
+    def isPagePartialLoad(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPagePartialLoad")().asInstanceOf[Boolean]
     
     /** Returns true if the obj parameter is null, undefined, number or string */
     /* static member */
-    @JSGlobal("Srch.U.isPrimitive")
-    @js.native
-    def isPrimitive(obj: js.Any): Boolean = js.native
+    @scala.inline
+    def isPrimitive(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Indicates whether the specified protocol is allowed. */
     /* static member */
-    @JSGlobal("Srch.U.isProtocolAllowed")
-    @js.native
-    def isProtocolAllowed(value: String, allowRelativeUrl: Boolean): Boolean = js.native
+    @scala.inline
+    def isProtocolAllowed(value: String, allowRelativeUrl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isProtocolAllowed")(value.asInstanceOf[js.Any], allowRelativeUrl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Returns true if the current page uses right-to-left mode (RTL) */
     /* static member */
-    @JSGlobal("Srch.U.isRTL")
-    @js.native
-    def isRTL(): Boolean = js.native
+    @scala.inline
+    def isRTL(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRTL")().asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isSPFSKU")
-    @js.native
-    def isSPFSKU(): Boolean = js.native
+    @scala.inline
+    def isSPFSKU(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSPFSKU")().asInstanceOf[Boolean]
     
     /** Returns true if the specified URL belongs to the specified host name */
     /* static member */
-    @JSGlobal("Srch.U.isSameHost")
-    @js.native
-    def isSameHost(url: String, hostName: String): Boolean = js.native
+    @scala.inline
+    def isSameHost(url: String, hostName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameHost")(url.asInstanceOf[js.Any], hostName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isSubstrateTable")
-    @js.native
-    def isSubstrateTable(resultTable: js.Any): Boolean = js.native
+    @scala.inline
+    def isSubstrateTable(resultTable: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSubstrateTable")(resultTable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.isTableTypeof")
-    @js.native
-    def isTableTypeof(resultTable: js.Any, tableTypeName: String): Boolean = js.native
+    @scala.inline
+    def isTableTypeof(resultTable: js.Any, tableTypeName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTableTypeof")(resultTable.asInstanceOf[js.Any], tableTypeName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /** Returns true if the URL is a relative URL, but not a server-relative URL */
     /* static member */
-    @JSGlobal("Srch.U.isUrlPagelRelative")
-    @js.native
-    def isUrlPagelRelative(url: String): Boolean = js.native
+    @scala.inline
+    def isUrlPagelRelative(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlPagelRelative")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if the URL is a relative URL */
     /* static member */
-    @JSGlobal("Srch.U.isUrlRelative")
-    @js.native
-    def isUrlRelative(url: String): Boolean = js.native
+    @scala.inline
+    def isUrlRelative(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlRelative")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if the URL is a server-relative URL (i.e. starts with '/') */
     /* static member */
-    @JSGlobal("Srch.U.isUrlServerRelative")
-    @js.native
-    def isUrlServerRelative(url: String): Boolean = js.native
+    @scala.inline
+    def isUrlServerRelative(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlServerRelative")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Returns true if the fileExtension belongs to a webpage, e.g. 'ascx', 'aspx', 'html', 'php', etc.  */
     /* static member */
-    @JSGlobal("Srch.U.isWebPage")
-    @js.native
-    def isWebPage(fileExtension: String): Boolean = js.native
+    @scala.inline
+    def isWebPage(fileExtension: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebPage")(fileExtension.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /** Retrieves localized string with the specified id */
     /* static member */
-    @JSGlobal("Srch.U.loadResource")
-    @js.native
-    def loadResource(id: String): String = js.native
+    @scala.inline
+    def loadResource(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("loadResource")(id.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Retrieves localized string with the specified id */
     /* static member */
-    @JSGlobal("Srch.U.loadResourceForTemplate")
-    @js.native
-    def loadResourceForTemplate(id: String, templateFunc: js.Function1[/* ctx */ js.Any, String]): String = js.native
+    @scala.inline
+    def loadResourceForTemplate(id: String, templateFunc: js.Function1[/* ctx */ js.Any, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("loadResourceForTemplate")(id.asInstanceOf[js.Any], templateFunc.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.loadScripts")
-    @js.native
-    def loadScripts(scriptReferences: js.Array[String], success: js.Any, failure: js.Any, timeout: Double): Unit = js.native
+    @scala.inline
+    def loadScripts(scriptReferences: js.Array[String], success: js.Any, failure: js.Any, timeout: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadScripts")(scriptReferences.asInstanceOf[js.Any], success.asInstanceOf[js.Any], failure.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.logClick")
-    @js.native
-    def logClick(e: js.Any, clickType: js.Any): Unit = js.native
+    @scala.inline
+    def logClick(e: js.Any, clickType: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logClick")(e.asInstanceOf[js.Any], clickType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.logRenderingErrorMessageToContext")
-    @js.native
-    def logRenderingErrorMessageToContext(renderCtx: js.Any, messageText: js.Any, operationName: js.Any): Unit = js.native
+    @scala.inline
+    def logRenderingErrorMessageToContext(renderCtx: js.Any, messageText: js.Any, operationName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logRenderingErrorMessageToContext")(renderCtx.asInstanceOf[js.Any], messageText.asInstanceOf[js.Any], operationName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("Srch.U.maximumSocialMetadataValue")
@@ -6257,20 +9213,17 @@ object Srch {
     def maximumSocialMetadataValue_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maximumSocialMetadataValue")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Srch.U.modifyMediaDurationRefinementName")
-    @js.native
-    def modifyMediaDurationRefinementName(resultRow: js.Any): Unit = js.native
+    @scala.inline
+    def modifyMediaDurationRefinementName(resultRow: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("modifyMediaDurationRefinementName")(resultRow.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Returns true if the value parameter is null or undefined */
     /* static member */
-    @JSGlobal("Srch.U.n")
-    @js.native
-    def n(value: js.Any): Boolean = js.native
+    @scala.inline
+    def n(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("n")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.parseTypedRangeToken")
-    @js.native
-    def parseTypedRangeToken(rangeFilterToken: String, objToStoreFilterTokenType: js.Any): js.Any = js.native
+    @scala.inline
+    def parseTypedRangeToken(rangeFilterToken: String, objToStoreFilterTokenType: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTypedRangeToken")(rangeFilterToken.asInstanceOf[js.Any], objToStoreFilterTokenType.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
     @JSGlobal("Srch.U.pathTruncationLength")
@@ -6302,172 +9255,135 @@ object Srch {
     def personaControlRenderedThreshold_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("personaControlRenderedThreshold")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Srch.U.positionElement")
-    @js.native
-    def positionElement(element: Element, offset: String): Unit = js.native
+    @scala.inline
+    def positionElement(element: Element, offset: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("positionElement")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.processHHXML")
-    @js.native
-    def processHHXML(pre: String): String = js.native
+    @scala.inline
+    def processHHXML(pre: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("processHHXML")(pre.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.registerLoadedScripts")
-    @js.native
-    def registerLoadedScripts(scripts: js.Array[String]): Unit = js.native
+    @scala.inline
+    def registerLoadedScripts(scripts: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadedScripts")(scripts.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** Registers display template function in the system.
       *  @param name Identifier of the template. Usually template is registered twice: by URL and by name.
       *  @param template The display template. It can be either string, or function, that gets the CSR context object and returns HTML string
       */
     /* static member */
-    @JSGlobal("Srch.U.registerRenderTemplateByName")
-    @js.native
-    def registerRenderTemplateByName(name: String, templateFunction: String): Unit = js.native
-    @JSGlobal("Srch.U.registerRenderTemplateByName")
-    @js.native
-    def registerRenderTemplateByName(name: String, templateFunction: RenderFunction): Unit = js.native
+    @scala.inline
+    def registerRenderTemplateByName(name: String, templateFunction: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRenderTemplateByName")(name.asInstanceOf[js.Any], templateFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def registerRenderTemplateByName(name: String, templateFunction: RenderFunction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerRenderTemplateByName")(name.asInstanceOf[js.Any], templateFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Registers in system resources defined by the dictionary object */
     /* static member */
-    @JSGlobal("Srch.U.registerResourceDictionary")
-    @js.native
-    def registerResourceDictionary(locale: String, dict: StringDictionary[String]): Unit = js.native
+    @scala.inline
+    def registerResourceDictionary(locale: String, dict: StringDictionary[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResourceDictionary")(locale.asInstanceOf[js.Any], dict.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Removes the specified item from the specified array and returns array that has the deleted item */
     /* static member */
-    @JSGlobal("Srch.U.removeArray")
-    @js.native
-    def removeArray(array: js.Array[_], item: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def removeArray(array: js.Array[js.Any], item: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("removeArray")(array.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /** Same as $removeHandler with safety checks */
     /* static member */
-    @JSGlobal("Srch.U.removeHandler")
-    @js.native
+    @scala.inline
     def removeHandler(
       element: Element,
       eventName: String,
       handler: js.Function2[/* instance */ js.Any, /* eventArgs */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHandler")(element.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Renders datetime value in friendly format into element specified by targetElementID */
     /* static member */
-    @JSGlobal("Srch.U.renderFriendlyTimeIntervalString")
-    @js.native
-    def renderFriendlyTimeIntervalString(dateTimeSinceUTC: Date, targetElementID: String): Unit = js.native
-    @JSGlobal("Srch.U.renderFriendlyTimeIntervalString")
-    @js.native
-    def renderFriendlyTimeIntervalString(dateTimeSinceUTC: Date, targetElementID: String, calendarType: Double): Unit = js.native
+    @scala.inline
+    def renderFriendlyTimeIntervalString(dateTimeSinceUTC: Date, targetElementID: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFriendlyTimeIntervalString")(dateTimeSinceUTC.asInstanceOf[js.Any], targetElementID.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def renderFriendlyTimeIntervalString(dateTimeSinceUTC: Date, targetElementID: String, calendarType: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFriendlyTimeIntervalString")(dateTimeSinceUTC.asInstanceOf[js.Any], targetElementID.asInstanceOf[js.Any], calendarType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Replaces tokens {searchcenterurl}, {contexturl}, {resultsurl}, {defaultpageslistname}, {Locale} and others, and converts URL to server-relative */
     /* static member */
-    @JSGlobal("Srch.U.replaceUrlTokens")
-    @js.native
-    def replaceUrlTokens(url: String): String = js.native
+    @scala.inline
+    def replaceUrlTokens(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceUrlTokens")(url.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.resetElement")
-    @js.native
-    def resetElement(element: Element): Unit = js.native
+    @scala.inline
+    def resetElement(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("Srch.U.resolveRenderTemplate")
-    @js.native
-    def resolveRenderTemplate_Body(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Body): String | RenderFunction = js.native
-    @JSGlobal("Srch.U.resolveRenderTemplate")
-    @js.native
-    def resolveRenderTemplate_Group(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Group): String | RenderFunction = js.native
+    @scala.inline
+    def resolveRenderTemplate_Body(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Body): String | RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRenderTemplate")(renderCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String | RenderFunction]
+    
+    @scala.inline
+    def resolveRenderTemplate_Group(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Group): String | RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRenderTemplate")(renderCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String | RenderFunction]
+    
     /** Returns the CSR template that was previously registered using 'registerRenderTemplateByName' based on CSR template level */
     /* static member */
-    @JSGlobal("Srch.U.resolveRenderTemplate")
-    @js.native
-    def resolveRenderTemplate_Item(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Item): String | RenderFunction = js.native
-    @JSGlobal("Srch.U.resolveRenderTemplate")
-    @js.native
-    def resolveRenderTemplate_View(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: View): String | RenderFunction = js.native
+    @scala.inline
+    def resolveRenderTemplate_Item(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: Item): String | RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRenderTemplate")(renderCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String | RenderFunction]
+    
+    @scala.inline
+    def resolveRenderTemplate_View(renderCtx: js.Any, component: typings.sharepoint.Srch.ClientControl, level: View): String | RenderFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRenderTemplate")(renderCtx.asInstanceOf[js.Any], component.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String | RenderFunction]
     
     /* static member */
-    @JSGlobal("Srch.U.restorePath")
-    @js.native
-    def restorePath(el: Element, originalText: String, selectText: String): Unit = js.native
+    @scala.inline
+    def restorePath(el: Element, originalText: String, selectText: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restorePath")(el.asInstanceOf[js.Any], originalText.asInstanceOf[js.Any], selectText.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.restoreText")
-    @js.native
-    def restoreText(el: Element, originalText: String, selectText: String): Unit = js.native
+    @scala.inline
+    def restoreText(el: Element, originalText: String, selectText: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreText")(el.asInstanceOf[js.Any], originalText.asInstanceOf[js.Any], selectText.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.selectPath")
-    @js.native
-    def selectPath(text: String, el: Element): Unit = js.native
+    @scala.inline
+    def selectPath(text: String, el: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectPath")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.selectText")
-    @js.native
-    def selectText(text: String, el: Element): Unit = js.native
+    @scala.inline
+    def selectText(text: String, el: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("selectText")(text.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Adds cookie with specified parameters */
     /* static member */
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(
-      name: String,
-      value: String,
-      expires: js.UndefOr[scala.Nothing],
-      domain: js.UndefOr[scala.Nothing],
-      path: String
-    ): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: js.UndefOr[scala.Nothing], domain: String, path: String): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: Date): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: Date, domain: js.UndefOr[scala.Nothing], path: String): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: Date, domain: String): Unit = js.native
-    @JSGlobal("Srch.U.setCookie")
-    @js.native
-    def setCookie(name: String, value: String, expires: Date, domain: String, path: String): Unit = js.native
+    @scala.inline
+    def setCookie(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Unit, domain: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Unit, domain: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Unit, domain: Unit, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Date, domain: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Date, domain: String, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setCookie(name: String, value: String, expires: Date, domain: Unit, path: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCookie")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any], expires.asInstanceOf[js.Any], domain.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Safely sets field of an object (does nothing if either object or fieldName is null/empty); returns true if value was set */
     /* static member */
-    @JSGlobal("Srch.U.setFieldOnObject")
-    @js.native
-    def setFieldOnObject(targetObject: js.Any, fieldName: String, fieldValue: js.Any): Boolean = js.native
+    @scala.inline
+    def setFieldOnObject(targetObject: js.Any, fieldName: String, fieldValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setFieldOnObject")(targetObject.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], fieldValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.setItemRenderWrapper")
-    @js.native
-    def setItemRenderWrapper(renderCtx: js.Any, itemRenderWrapperFunction: js.Any, templateFunction: js.Any): js.Any = js.native
+    @scala.inline
+    def setItemRenderWrapper(renderCtx: js.Any, itemRenderWrapperFunction: js.Any, templateFunction: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setItemRenderWrapper")(renderCtx.asInstanceOf[js.Any], itemRenderWrapperFunction.asInstanceOf[js.Any], templateFunction.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("Srch.U.setPath")
-    @js.native
-    def setPath(e: Event, el: Element, text: String, originalText: String): Unit = js.native
+    @scala.inline
+    def setPath(e: Event, el: Element, text: String, originalText: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(e.asInstanceOf[js.Any], el.asInstanceOf[js.Any], text.asInstanceOf[js.Any], originalText.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.setResultObject")
-    @js.native
-    def setResultObject(id: String, resultObject: js.Any): js.Any = js.native
+    @scala.inline
+    def setResultObject(id: String, resultObject: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setResultObject")(id.asInstanceOf[js.Any], resultObject.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /* static member */
-    @JSGlobal("Srch.U.shouldAnimate")
-    @js.native
-    def shouldAnimate(dp: js.Any): Boolean = js.native
+    @scala.inline
+    def shouldAnimate(dp: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldAnimate")(dp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("Srch.U.showElement")
-    @js.native
-    def showElement(element: Element): Unit = js.native
+    @scala.inline
+    def showElement(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showElement")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
     @JSGlobal("Srch.U.summaryTruncationLength")
@@ -6508,79 +9424,65 @@ object Srch {
     
     /** Returns human-readable size in kilobytes/megabytes etc. (the captions are localized) */
     /* static member */
-    @JSGlobal("Srch.U.toFileSizeDisplay")
-    @js.native
-    def toFileSizeDisplay(numberOfBytes: Double, showDecimalPart: Boolean): String = js.native
+    @scala.inline
+    def toFileSizeDisplay(numberOfBytes: Double, showDecimalPart: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFileSizeDisplay")(numberOfBytes.asInstanceOf[js.Any], showDecimalPart.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns formatted date */
     /* static member */
-    @JSGlobal("Srch.U.toFormattedDate")
-    @js.native
-    def toFormattedDate(dateValue: Date): String = js.native
-    @JSGlobal("Srch.U.toFormattedDate")
-    @js.native
-    def toFormattedDate(dateValue: Date, dateTimeFormatId: String): String = js.native
+    @scala.inline
+    def toFormattedDate(dateValue: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFormattedDate")(dateValue.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toFormattedDate(dateValue: Date, dateTimeFormatId: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFormattedDate")(dateValue.asInstanceOf[js.Any], dateTimeFormatId.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Returns formatted number */
     /* static member */
-    @JSGlobal("Srch.U.toFormattedNumber")
-    @js.native
-    def toFormattedNumber(num: Double, defaultDecimalPlacesIfNotInt: Double): String = js.native
+    @scala.inline
+    def toFormattedNumber(num: Double, defaultDecimalPlacesIfNotInt: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toFormattedNumber")(num.asInstanceOf[js.Any], defaultDecimalPlacesIfNotInt.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** If number is more than 1000, rounds up three last digits, e.g. 72389 => '72,000+'. If number is more than 100000, returns '100,000+' */
     /* static member */
-    @JSGlobal("Srch.U.toFriendlyNumber")
-    @js.native
-    def toFriendlyNumber(num: Double): String = js.native
+    @scala.inline
+    def toFriendlyNumber(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toFriendlyNumber")(num.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.trace")
-    @js.native
-    def trace(c: typings.sharepoint.Srch.ClientControl, method: String, message: String): Unit = js.native
+    @scala.inline
+    def trace(c: typings.sharepoint.Srch.ClientControl, method: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(c.asInstanceOf[js.Any], method.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Srch.U.traceFormatted")
-    @js.native
-    def traceFormatted(c: typings.sharepoint.Srch.ClientControl, method: String, format: String, values: String*): Unit = js.native
+    @scala.inline
+    def traceFormatted(c: typings.sharepoint.Srch.ClientControl, method: String, format: String, values: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traceFormatted")(c.asInstanceOf[js.Any], method.asInstanceOf[js.Any], format.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Removes trailing spaces and also replaces double spaces inside string to single spaces */
     /* static member */
-    @JSGlobal("Srch.U.trimExtraSpaces")
-    @js.native
-    def trimExtraSpaces(value: String): String = js.native
+    @scala.inline
+    def trimExtraSpaces(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimExtraSpaces")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.trimTitle")
-    @js.native
-    def trimTitle(title: String, maximumLengthInChars: Double, numberOfTermsToUse: Double): String = js.native
+    @scala.inline
+    def trimTitle(title: String, maximumLengthInChars: Double, numberOfTermsToUse: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("trimTitle")(title.asInstanceOf[js.Any], maximumLengthInChars.asInstanceOf[js.Any], numberOfTermsToUse.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Truncates the string to specified maximum allowed amount of characters (if max amount is not exceeded - does nothing) */
     /* static member */
-    @JSGlobal("Srch.U.truncateEnd")
-    @js.native
-    def truncateEnd(original: String, maxChars: Double): String = js.native
+    @scala.inline
+    def truncateEnd(original: String, maxChars: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateEnd")(original.asInstanceOf[js.Any], maxChars.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.truncateHighlightedUrl")
-    @js.native
-    def truncateHighlightedUrl(url: String, maxChars: Double): String = js.native
+    @scala.inline
+    def truncateHighlightedUrl(url: String, maxChars: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateHighlightedUrl")(url.asInstanceOf[js.Any], maxChars.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSGlobal("Srch.U.truncateUrl")
-    @js.native
-    def truncateUrl(url: String, maxChars: Double): String = js.native
+    @scala.inline
+    def truncateUrl(url: String, maxChars: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateUrl")(url.asInstanceOf[js.Any], maxChars.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /** Adds ctag parameter to the URL and replaces URL tokens */
     /* static member */
-    @JSGlobal("Srch.U.urlTokenExpansion")
-    @js.native
-    def urlTokenExpansion(jsLink: String): String = js.native
+    @scala.inline
+    def urlTokenExpansion(jsLink: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlTokenExpansion")(jsLink.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /** Returns true if the value parameter is empty string */
     /* static member */
-    @JSGlobal("Srch.U.w")
-    @js.native
-    def w(value: js.Any): Boolean = js.native
+    @scala.inline
+    def w(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("w")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Srch.UserActionType")
@@ -6588,18 +9490,18 @@ object Srch {
   object UserActionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.UserActionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sharepoint.Srch.UserActionType & Double] = js.native
     
-    /* 5 */ val filterLanguage: typings.sharepoint.Srch.UserActionType.filterLanguage with Double = js.native
+    /* 5 */ val filterLanguage: typings.sharepoint.Srch.UserActionType.filterLanguage & Double = js.native
     
-    /* 1 */ val pageNext: typings.sharepoint.Srch.UserActionType.pageNext with Double = js.native
+    /* 1 */ val pageNext: typings.sharepoint.Srch.UserActionType.pageNext & Double = js.native
     
-    /* 2 */ val pagePrev: typings.sharepoint.Srch.UserActionType.pagePrev with Double = js.native
+    /* 2 */ val pagePrev: typings.sharepoint.Srch.UserActionType.pagePrev & Double = js.native
     
-    /* 3 */ val refine: typings.sharepoint.Srch.UserActionType.refine with Double = js.native
+    /* 3 */ val refine: typings.sharepoint.Srch.UserActionType.refine & Double = js.native
     
-    /* 0 */ val search: typings.sharepoint.Srch.UserActionType.search with Double = js.native
+    /* 0 */ val search: typings.sharepoint.Srch.UserActionType.search & Double = js.native
     
-    /* 4 */ val sort: typings.sharepoint.Srch.UserActionType.sort with Double = js.native
+    /* 4 */ val sort: typings.sharepoint.Srch.UserActionType.sort & Double = js.native
   }
 }

@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CpuTemperatureInfo extends StObject {
   
-  var cpuTemperatureInfo: js.UndefOr[js.Array[Label]] = js.native
+  var cpuTemperatureInfo: js.UndefOr[js.Array[Label]] = js.undefined
   
-  var cpuUtilizationPercentageInfo: js.UndefOr[js.Array[Double]] = js.native
+  var cpuUtilizationPercentageInfo: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var reportTime: js.UndefOr[String] = js.native
+  var reportTime: js.UndefOr[String] = js.undefined
 }
 object CpuTemperatureInfo {
   

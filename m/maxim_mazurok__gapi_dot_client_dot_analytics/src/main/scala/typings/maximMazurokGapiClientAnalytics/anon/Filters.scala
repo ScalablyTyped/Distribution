@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filters extends StObject {
   
   /** List of real time dimensions. */
-  var dimensions: js.UndefOr[String] = js.native
+  var dimensions: js.UndefOr[String] = js.undefined
   
   /** Comma-separated list of dimension or metric filters. */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /** Unique table ID. */
-  var ids: js.UndefOr[String] = js.native
+  var ids: js.UndefOr[String] = js.undefined
   
   /** Maximum results per page. */
-  var `max-results`: js.UndefOr[Double] = js.native
+  var `max-results`: js.UndefOr[Double] = js.undefined
   
   /** List of real time metrics. */
-  var metrics: js.UndefOr[js.Array[String]] = js.native
+  var metrics: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of dimensions or metrics based on which real time data is sorted. */
-  var sort: js.UndefOr[js.Array[String]] = js.native
+  var sort: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Filters {
   

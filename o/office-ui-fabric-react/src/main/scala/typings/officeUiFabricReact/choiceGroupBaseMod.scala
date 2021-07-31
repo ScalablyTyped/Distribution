@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.choiceGroupTypesMod.IChoiceGroupProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choiceGroupBaseMod {
@@ -42,19 +41,24 @@ object choiceGroupBaseMod {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MChoiceGroupBase(prevProps: IChoiceGroupProps, prevState: IChoiceGroupState): Unit = js.native
+    
+    /**
+      * Sets focus to the checked option or the first enabled option in the ChoiceGroup.
+      */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
   }
   
-  @js.native
   trait IChoiceGroupState extends StObject {
     
     /**
       * Current selected option, for **internal use only**.
       * External users should access `IChoiceGroup.checkedOption` instead.
       */
-    var keyChecked: js.UndefOr[String | Double] = js.native
+    var keyChecked: js.UndefOr[String | Double] = js.undefined
     
     /** Is set when the control has focus. */
-    var keyFocused: js.UndefOr[String | Double] = js.native
+    var keyFocused: js.UndefOr[String | Double] = js.undefined
   }
   object IChoiceGroupState {
     

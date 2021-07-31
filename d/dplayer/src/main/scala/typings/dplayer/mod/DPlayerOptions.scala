@@ -4,54 +4,53 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerOptions
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.native
+  var apiBackend: js.UndefOr[DPlayerAPIBackend] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var container: HTMLElement | Null = js.native
+  var container: HTMLElement | Null
   
-  var contextmenu: js.UndefOr[js.Array[DPlayerContextMenuItem]] = js.native
+  var contextmenu: js.UndefOr[js.Array[DPlayerContextMenuItem]] = js.undefined
   
-  var danmaku: js.UndefOr[DPlayerDanmaku] = js.native
+  var danmaku: js.UndefOr[DPlayerDanmaku] = js.undefined
   
-  var highlight: js.UndefOr[js.Array[DPlayerHighLightItem]] = js.native
+  var highlight: js.UndefOr[js.Array[DPlayerHighLightItem]] = js.undefined
   
-  var hotkey: js.UndefOr[Boolean] = js.native
+  var hotkey: js.UndefOr[Boolean] = js.undefined
   
-  var lang: js.UndefOr[Lang | String] = js.native
+  var lang: js.UndefOr[Lang | String] = js.undefined
   
-  var live: js.UndefOr[Boolean] = js.native
+  var live: js.UndefOr[Boolean] = js.undefined
   
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mutex: js.UndefOr[Boolean] = js.native
+  var mutex: js.UndefOr[Boolean] = js.undefined
   
-  var preload: js.UndefOr[Preload] = js.native
+  var preload: js.UndefOr[Preload] = js.undefined
   
-  var screenshot: js.UndefOr[Boolean] = js.native
+  var screenshot: js.UndefOr[Boolean] = js.undefined
   
-  var subtitle: js.UndefOr[DPlayerSubTitle] = js.native
+  var subtitle: js.UndefOr[DPlayerSubTitle] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var video: js.UndefOr[DPlayerVideo] = js.native
+  var video: js.UndefOr[DPlayerVideo] = js.undefined
   
-  var volume: js.UndefOr[Double] = js.native
+  var volume: js.UndefOr[Double] = js.undefined
 }
 object DPlayerOptions {
   
   @scala.inline
   def apply(): DPlayerOptions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(container = null)
     __obj.asInstanceOf[DPlayerOptions]
   }
   

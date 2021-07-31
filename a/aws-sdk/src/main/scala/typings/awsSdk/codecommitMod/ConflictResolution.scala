@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConflictResolution extends StObject {
   
   /**
     * Files to be deleted as part of the merge conflict resolution.
     */
-  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.native
+  var deleteFiles: js.UndefOr[DeleteFileEntries] = js.undefined
   
   /**
     * Files to have content replaced as part of the merge conflict resolution.
     */
-  var replaceContents: js.UndefOr[ReplaceContentEntries] = js.native
+  var replaceContents: js.UndefOr[ReplaceContentEntries] = js.undefined
   
   /**
     * File modes that are set as part of the merge conflict resolution.
     */
-  var setFileModes: js.UndefOr[SetFileModeEntries] = js.native
+  var setFileModes: js.UndefOr[SetFileModeEntries] = js.undefined
 }
 object ConflictResolution {
   

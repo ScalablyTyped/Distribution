@@ -2,21 +2,19 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var current: Double = js.native
+  var current: Double
   
-  var direction: String = js.native
+  var direction: String
   
-  var iconPrefix: String = js.native
+  var iconPrefix: String
   
-  var labelPlacement: String = js.native
+  var labelPlacement: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
 }
 object Direction {
   

@@ -2,22 +2,20 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseDonations extends StObject {
   
-  var donations: js.Array[_] = js.native
+  var donations: js.Array[js.Any]
   
-  var max_id: Null = js.native
+  var max_id: Null
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
 }
 object ListReelMediaViewerFeedResponseDonations {
   
   @scala.inline
-  def apply(donations: js.Array[_], max_id: Null, more_available: Boolean): ListReelMediaViewerFeedResponseDonations = {
+  def apply(donations: js.Array[js.Any], max_id: Null, more_available: Boolean): ListReelMediaViewerFeedResponseDonations = {
     val __obj = js.Dynamic.literal(donations = donations.asInstanceOf[js.Any], max_id = max_id.asInstanceOf[js.Any], more_available = more_available.asInstanceOf[js.Any])
     __obj.asInstanceOf[ListReelMediaViewerFeedResponseDonations]
   }
@@ -26,7 +24,7 @@ object ListReelMediaViewerFeedResponseDonations {
   implicit class ListReelMediaViewerFeedResponseDonationsMutableBuilder[Self <: ListReelMediaViewerFeedResponseDonations] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDonations(value: js.Array[_]): Self = StObject.set(x, "donations", value.asInstanceOf[js.Any])
+    def setDonations(value: js.Array[js.Any]): Self = StObject.set(x, "donations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDonationsVarargs(value: js.Any*): Self = StObject.set(x, "donations", js.Array(value :_*))

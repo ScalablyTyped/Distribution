@@ -10,9 +10,9 @@ The scrypt password-based key derivation function with sync and cancellable asyn
 | ------------------ | :-------------: |
 | Full name          | scrypt-js |
 | Keywords           | scrypt, pbkdf, password, async, asynchronous, stepwise |
-| # releases         | 4 |
-| # dependents       | 110 |
-| # downloads        | 6259340 |
+| # releases         | 3 |
+| # dependents       | 138 |
+| # downloads        | 8606760 |
 | # stars            | 1 |
 
 ## Links

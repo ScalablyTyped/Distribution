@@ -2,13 +2,11 @@ package typings.rdfLoaderCode
 
 import org.scalablytyped.runtime.Shortcut
 import typings.rdfJs.mod.NamedNode
-import typings.rdfLoaderCode.anon.Register
 import typings.rdfLoadersRegistry.mod.Loader
 import typings.std.Map
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argumentsMod extends Shortcut {
@@ -19,18 +17,21 @@ object argumentsMod extends Shortcut {
   
   type Arguments = js.Array[js.Any | (Record[String, js.Any])]
   
-  type ArgumentsLoader = (Loader[Arguments, Options]) with Register
-  
   @js.native
+  trait ArgumentsLoader extends Loader[Arguments, Options] {
+    
+    def register(registry: typings.rdfLoadersRegistry.mod.^): Unit = js.native
+  }
+  
   trait Options extends StObject {
     
-    var basePath: js.UndefOr[String] = js.native
+    var basePath: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var property: js.UndefOr[NamedNode[String]] = js.native
+    var property: js.UndefOr[NamedNode[String]] = js.undefined
     
-    var variables: js.UndefOr[Map[String, _]] = js.native
+    var variables: js.UndefOr[Map[String, js.Any]] = js.undefined
   }
   object Options {
     
@@ -62,7 +63,7 @@ object argumentsMod extends Shortcut {
       def setPropertyUndefined: Self = StObject.set(x, "property", js.undefined)
       
       @scala.inline
-      def setVariables(value: Map[String, _]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
+      def setVariables(value: Map[String, js.Any]): Self = StObject.set(x, "variables", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVariablesUndefined: Self = StObject.set(x, "variables", js.undefined)

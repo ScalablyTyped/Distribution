@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.container.ContainerEvent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * this event is broadcasted by a configuration manager whenever the state of user interface element has changed.
   * @since OOo 2.0
   */
-@js.native
-trait ConfigurationEvent extends ContainerEvent {
+trait ConfigurationEvent
+  extends StObject
+     with ContainerEvent {
   
   /** contains the resource URL of the user interface element or a configuration manager, which has been changed, inserted or replaced. */
-  var ResourceURL: String = js.native
+  var ResourceURL: String
   
   /** contains additional information about this configuration event. The type depends on the specific implementation. */
-  var aInfo: js.Any = js.native
+  var aInfo: js.Any
 }
 object ConfigurationEvent {
   

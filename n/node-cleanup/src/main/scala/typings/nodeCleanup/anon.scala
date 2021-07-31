@@ -2,17 +2,15 @@ package typings.nodeCleanup
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CtrlC extends StObject {
     
-    var ctrl_C: String = js.native
+    var ctrl_C: String
     
-    var uncaughtException: String = js.native
+    var uncaughtException: String
   }
   object CtrlC {
     

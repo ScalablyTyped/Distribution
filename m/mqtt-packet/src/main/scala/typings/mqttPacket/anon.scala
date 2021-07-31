@@ -4,47 +4,45 @@ import typings.mqttPacket.mod.QoS
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AssignedClientIdentifier extends StObject {
     
-    var assignedClientIdentifier: js.UndefOr[String] = js.native
+    var assignedClientIdentifier: js.UndefOr[String] = js.undefined
     
-    var authenticationData: js.UndefOr[Buffer] = js.native
+    var authenticationData: js.UndefOr[Buffer] = js.undefined
     
-    var authenticationMethod: js.UndefOr[String] = js.native
+    var authenticationMethod: js.UndefOr[String] = js.undefined
     
-    var maximumPacketSize: js.UndefOr[Double] = js.native
+    var maximumPacketSize: js.UndefOr[Double] = js.undefined
     
-    var maximumQoS: js.UndefOr[Double] = js.native
+    var maximumQoS: js.UndefOr[Double] = js.undefined
     
-    var reasonString: js.UndefOr[String] = js.native
+    var reasonString: js.UndefOr[String] = js.undefined
     
-    var receiveMaximum: js.UndefOr[Double] = js.native
+    var receiveMaximum: js.UndefOr[Double] = js.undefined
     
-    var responseInformation: js.UndefOr[String] = js.native
+    var responseInformation: js.UndefOr[String] = js.undefined
     
-    var retainAvailable: js.UndefOr[Boolean] = js.native
+    var retainAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var serverKeepAlive: js.UndefOr[Double] = js.native
+    var serverKeepAlive: js.UndefOr[Double] = js.undefined
     
-    var serverReference: js.UndefOr[String] = js.native
+    var serverReference: js.UndefOr[String] = js.undefined
     
-    var sessionExpiryInterval: js.UndefOr[Double] = js.native
+    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var sharedSubscriptionAvailable: js.UndefOr[Boolean] = js.native
+    var sharedSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var subscriptionIdentifiersAvailable: js.UndefOr[Boolean] = js.native
+    var subscriptionIdentifiersAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var topicAliasMaximum: js.UndefOr[Double] = js.native
+    var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
     
-    var wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.native
+    var wildcardSubscriptionAvailable: js.UndefOr[Boolean] = js.undefined
   }
   object AssignedClientIdentifier {
     
@@ -161,26 +159,25 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthenticationData extends StObject {
     
-    var authenticationData: js.UndefOr[Buffer] = js.native
+    var authenticationData: js.UndefOr[Buffer] = js.undefined
     
-    var authenticationMethod: js.UndefOr[String] = js.native
+    var authenticationMethod: js.UndefOr[String] = js.undefined
     
-    var maximumPacketSize: js.UndefOr[Double] = js.native
+    var maximumPacketSize: js.UndefOr[Double] = js.undefined
     
-    var receiveMaximum: js.UndefOr[Double] = js.native
+    var receiveMaximum: js.UndefOr[Double] = js.undefined
     
-    var requestProblemInformation: js.UndefOr[Boolean] = js.native
+    var requestProblemInformation: js.UndefOr[Boolean] = js.undefined
     
-    var requestResponseInformation: js.UndefOr[Boolean] = js.native
+    var requestResponseInformation: js.UndefOr[Boolean] = js.undefined
     
-    var sessionExpiryInterval: js.UndefOr[Double] = js.native
+    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var topicAliasMaximum: js.UndefOr[Double] = js.native
+    var topicAliasMaximum: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object AuthenticationData {
     
@@ -249,22 +246,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ContentType extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var correlationData: js.UndefOr[Buffer] = js.native
+    var correlationData: js.UndefOr[Buffer] = js.undefined
     
-    var messageExpiryInterval: js.UndefOr[Double] = js.native
+    var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Double] = js.native
+    var payloadFormatIndicator: js.UndefOr[Double] = js.undefined
     
-    var responseTopic: js.UndefOr[String] = js.native
+    var responseTopic: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
     
-    var willDelayInterval: js.UndefOr[Double] = js.native
+    var willDelayInterval: js.UndefOr[Double] = js.undefined
   }
   object ContentType {
     
@@ -321,24 +317,23 @@ object anon {
     }
   }
   
-  @js.native
   trait CorrelationData extends StObject {
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var correlationData: js.UndefOr[Buffer] = js.native
+    var correlationData: js.UndefOr[Buffer] = js.undefined
     
-    var messageExpiryInterval: js.UndefOr[Double] = js.native
+    var messageExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var payloadFormatIndicator: js.UndefOr[Boolean] = js.native
+    var payloadFormatIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var responseTopic: js.UndefOr[String] = js.native
+    var responseTopic: js.UndefOr[String] = js.undefined
     
-    var subscriptionIdentifier: js.UndefOr[Double] = js.native
+    var subscriptionIdentifier: js.UndefOr[Double] = js.undefined
     
-    var topicAlias: js.UndefOr[Double] = js.native
+    var topicAlias: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object CorrelationData {
     
@@ -401,18 +396,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var payload: Buffer = js.native
+    var payload: Buffer
     
-    var properties: js.UndefOr[ContentType] = js.native
+    var properties: js.UndefOr[ContentType] = js.undefined
     
-    var qos: js.UndefOr[QoS] = js.native
+    var qos: js.UndefOr[QoS] = js.undefined
     
-    var retain: js.UndefOr[Boolean] = js.native
+    var retain: js.UndefOr[Boolean] = js.undefined
     
-    var topic: String = js.native
+    var topic: String
   }
   object Payload {
     
@@ -451,12 +445,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ReasonString extends StObject {
     
-    var reasonString: js.UndefOr[String] = js.native
+    var reasonString: js.UndefOr[String] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object ReasonString {
     
@@ -483,16 +476,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ServerReference extends StObject {
     
-    var reasonString: js.UndefOr[String] = js.native
+    var reasonString: js.UndefOr[String] = js.undefined
     
-    var serverReference: js.UndefOr[String] = js.native
+    var serverReference: js.UndefOr[String] = js.undefined
     
-    var sessionExpiryInterval: js.UndefOr[Double] = js.native
+    var sessionExpiryInterval: js.UndefOr[Double] = js.undefined
     
-    var userProperties: js.UndefOr[js.Object] = js.native
+    var userProperties: js.UndefOr[js.Object] = js.undefined
   }
   object ServerReference {
     

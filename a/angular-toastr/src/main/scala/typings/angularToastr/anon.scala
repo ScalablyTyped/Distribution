@@ -2,21 +2,19 @@ package typings.angularToastr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var info: js.UndefOr[String] = js.native
+    var info: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[String] = js.native
+    var success: js.UndefOr[String] = js.undefined
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
   }
   object Error {
     
@@ -55,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Progressbar extends StObject {
     
-    var progressbar: js.UndefOr[String] = js.native
+    var progressbar: js.UndefOr[String] = js.undefined
     
-    var toast: js.UndefOr[String] = js.native
+    var toast: js.UndefOr[String] = js.undefined
   }
   object Progressbar {
     

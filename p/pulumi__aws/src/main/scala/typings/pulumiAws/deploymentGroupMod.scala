@@ -17,7 +17,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentGroupMod {
@@ -113,6 +112,10 @@ object deploymentGroupMod {
   /* static members */
   object DeploymentGroup {
     
+    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DeploymentGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -122,74 +125,68 @@ object deploymentGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DeploymentGroup = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DeploymentGroup = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentGroupState): DeploymentGroup = js.native
-    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DeploymentGroupState, opts: CustomResourceOptions): DeploymentGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentGroupState): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DeploymentGroupState, opts: CustomResourceOptions): DeploymentGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DeploymentGroup]
     
     /**
       * Returns true if the given object is an instance of DeploymentGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codedeploy/deploymentGroup", "DeploymentGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codedeploy/deploymentGroup.DeploymentGroup */ Boolean]
   }
   
-  @js.native
   trait DeploymentGroupArgs extends StObject {
     
     /**
       * Configuration block of alarms associated with the deployment group (documented below).
       */
-    val alarmConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]] = js.native
+    val alarmConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]] = js.undefined
     
     /**
       * The name of the application.
       */
-    val appName: Input[String] = js.native
+    val appName: Input[String]
     
     /**
       * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
       */
     val autoRollbackConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Autoscaling groups associated with the deployment group.
       */
-    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block of the blue/green deployment options for a deployment group (documented below).
       */
     val blueGreenDeploymentConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
       */
-    val deploymentConfigName: js.UndefOr[Input[String]] = js.native
+    val deploymentConfigName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the deployment group.
       */
-    val deploymentGroupName: Input[String] = js.native
+    val deploymentGroupName: Input[String]
     
     /**
       * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
       */
-    val deploymentStyle: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]] = js.native
+    val deploymentStyle: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]] = js.undefined
     
     /**
       * Tag filters associated with the deployment group. See the AWS docs for details.
@@ -198,24 +195,24 @@ object deploymentGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
       */
     val ec2TagSets: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block(s) of the ECS services for a deployment group (documented below).
       */
-    val ecsService: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]] = js.native
+    val ecsService: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]] = js.undefined
     
     /**
       * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
       */
-    val loadBalancerInfo: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]] = js.native
+    val loadBalancerInfo: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]] = js.undefined
     
     /**
       * On premise tag filters associated with the group. See the AWS docs for details.
@@ -226,12 +223,12 @@ object deploymentGroupMod {
             Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The service role ARN that allows deployments.
       */
-    val serviceRoleArn: Input[String] = js.native
+    val serviceRoleArn: Input[String]
     
     /**
       * Configuration block(s) of the triggers for the deployment group (documented below).
@@ -240,7 +237,7 @@ object deploymentGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DeploymentGroupArgs {
     
@@ -365,52 +362,51 @@ object deploymentGroupMod {
     }
   }
   
-  @js.native
   trait DeploymentGroupState extends StObject {
     
     /**
       * Configuration block of alarms associated with the deployment group (documented below).
       */
-    val alarmConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]] = js.native
+    val alarmConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAlarmConfiguration]] = js.undefined
     
     /**
       * The name of the application.
       */
-    val appName: js.UndefOr[Input[String]] = js.native
+    val appName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
       */
     val autoRollbackConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupAutoRollbackConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Autoscaling groups associated with the deployment group.
       */
-    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block of the blue/green deployment options for a deployment group (documented below).
       */
     val blueGreenDeploymentConfig: js.UndefOr[
         Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupBlueGreenDeploymentConfig]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
       */
-    val deploymentConfigName: js.UndefOr[Input[String]] = js.native
+    val deploymentConfigName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the deployment group.
       */
-    val deploymentGroupName: js.UndefOr[Input[String]] = js.native
+    val deploymentGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
       */
-    val deploymentStyle: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]] = js.native
+    val deploymentStyle: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupDeploymentStyle]] = js.undefined
     
     /**
       * Tag filters associated with the deployment group. See the AWS docs for details.
@@ -419,24 +415,24 @@ object deploymentGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagFilter]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.
       */
     val ec2TagSets: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEc2TagSet]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block(s) of the ECS services for a deployment group (documented below).
       */
-    val ecsService: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]] = js.native
+    val ecsService: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupEcsService]] = js.undefined
     
     /**
       * Single configuration block of the load balancer to use in a blue/green deployment (documented below).
       */
-    val loadBalancerInfo: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]] = js.native
+    val loadBalancerInfo: js.UndefOr[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupLoadBalancerInfo]] = js.undefined
     
     /**
       * On premise tag filters associated with the group. See the AWS docs for details.
@@ -447,12 +443,12 @@ object deploymentGroupMod {
             Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupOnPremisesInstanceTagFilter]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The service role ARN that allows deployments.
       */
-    val serviceRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block(s) of the triggers for the deployment group (documented below).
@@ -461,7 +457,7 @@ object deploymentGroupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.codedeploy.DeploymentGroupTriggerConfiguration]]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DeploymentGroupState {
     

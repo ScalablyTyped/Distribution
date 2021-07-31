@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object efsLocationMod {
@@ -58,6 +57,10 @@ object efsLocationMod {
   /* static members */
   object EfsLocation {
     
+    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EfsLocation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object efsLocationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EfsLocationState): EfsLocation = js.native
-    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): EfsLocation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EfsLocationState): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EfsLocationState, opts: CustomResourceOptions): EfsLocation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EfsLocation]
     
     /**
       * Returns true if the given object is an instance of EfsLocation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/datasync/efsLocation", "EfsLocation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/efsLocation.EfsLocation */ Boolean]
   }
   
-  @js.native
   trait EfsLocationArgs extends StObject {
     
     /**
       * Configuration block containing EC2 configurations for connecting to the EFS File System.
       */
-    val ec2Config: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config] = js.native
+    val ec2Config: Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]
     
     /**
       * Amazon Resource Name (ARN) of EFS File System.
       */
-    val efsFileSystemArn: Input[ARN] = js.native
+    val efsFileSystemArn: Input[ARN]
     
     /**
       * Subdirectory to perform actions as source or destination. Default `/`.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EfsLocationArgs {
     
@@ -137,35 +134,34 @@ object efsLocationMod {
     }
   }
   
-  @js.native
   trait EfsLocationState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the DataSync Location.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing EC2 configurations for connecting to the EFS File System.
       */
-    val ec2Config: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]] = js.native
+    val ec2Config: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.EfsLocationEc2Config]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of EFS File System.
       */
-    val efsFileSystemArn: js.UndefOr[Input[ARN]] = js.native
+    val efsFileSystemArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * Subdirectory to perform actions as source or destination. Default `/`.
       */
-    val subdirectory: js.UndefOr[Input[String]] = js.native
+    val subdirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Location.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val uri: js.UndefOr[Input[String]] = js.native
+    val uri: js.UndefOr[Input[String]] = js.undefined
   }
   object EfsLocationState {
     

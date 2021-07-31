@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcDhcpOptionsAssociationMod {
@@ -38,6 +37,10 @@ object vpcDhcpOptionsAssociationMod {
   /* static members */
   object VpcDhcpOptionsAssociation {
     
+    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcDhcpOptionsAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object vpcDhcpOptionsAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcDhcpOptionsAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcDhcpOptionsAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): VpcDhcpOptionsAssociation = js.native
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcDhcpOptionsAssociationState, opts: CustomResourceOptions): VpcDhcpOptionsAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcDhcpOptionsAssociation]
     
     /**
       * Returns true if the given object is an instance of VpcDhcpOptionsAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcDhcpOptionsAssociation", "VpcDhcpOptionsAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcDhcpOptionsAssociation.VpcDhcpOptionsAssociation */ Boolean]
   }
   
-  @js.native
   trait VpcDhcpOptionsAssociationArgs extends StObject {
     
     /**
       * The ID of the DHCP Options Set to associate to the VPC.
       */
-    val dhcpOptionsId: Input[String] = js.native
+    val dhcpOptionsId: Input[String]
     
     /**
       * The ID of the VPC to which we would like to associate a DHCP Options Set.
       */
-    val vpcId: Input[String] = js.native
+    val vpcId: Input[String]
   }
   object VpcDhcpOptionsAssociationArgs {
     
@@ -101,18 +98,17 @@ object vpcDhcpOptionsAssociationMod {
     }
   }
   
-  @js.native
   trait VpcDhcpOptionsAssociationState extends StObject {
     
     /**
       * The ID of the DHCP Options Set to associate to the VPC.
       */
-    val dhcpOptionsId: js.UndefOr[Input[String]] = js.native
+    val dhcpOptionsId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC to which we would like to associate a DHCP Options Set.
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcDhcpOptionsAssociationState {
     

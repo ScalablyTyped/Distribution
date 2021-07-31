@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsSchema extends StObject {
   
   /**
     * The Record Column mapping for the streaming source data element.
     * See Record Columns below for more details.
     */
-  var recordColumns: Input[js.Array[Input[AnalyticsApplicationInputsSchemaRecordColumn]]] = js.native
+  var recordColumns: Input[js.Array[Input[AnalyticsApplicationInputsSchemaRecordColumn]]]
   
   /**
     * The Encoding of the record in the streaming source.
     */
-  var recordEncoding: js.UndefOr[Input[String]] = js.native
+  var recordEncoding: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Record Format and mapping information to schematize a record.
     * See Record Format below for more details.
     */
-  var recordFormat: Input[AnalyticsApplicationInputsSchemaRecordFormat] = js.native
+  var recordFormat: Input[AnalyticsApplicationInputsSchemaRecordFormat]
 }
 object AnalyticsApplicationInputsSchema {
   

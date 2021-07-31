@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This exception is thrown to indicate that a type conversion can not be performed. */
-@js.native
-trait CannotConvertException extends Exception {
+trait CannotConvertException
+  extends StObject
+     with Exception {
   
   /** If the conversion of a method argument fails, this is the index of the value in the "IN" argument list. [optional] */
-  var ArgumentIndex: Double = js.native
+  var ArgumentIndex: Double
   
   /** This member contains the class of the type to which the value should be converted. */
-  var DestinationTypeClass: TypeClass = js.native
+  var DestinationTypeClass: TypeClass
   
   /** This member contains the reason that the conversion failed. Have a look at {@link FailReason} . */
-  var Reason: Double = js.native
+  var Reason: Double
 }
 object CannotConvertException {
   

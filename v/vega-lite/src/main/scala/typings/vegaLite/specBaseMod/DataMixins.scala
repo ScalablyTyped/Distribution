@@ -3,16 +3,14 @@ package typings.vegaLite.specBaseMod
 import typings.vegaLite.srcDataMod.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataMixins extends StObject {
   
   /**
     * An object describing the data source.
     */
-  var data: Data = js.native
+  var data: Data
 }
 object DataMixins {
   

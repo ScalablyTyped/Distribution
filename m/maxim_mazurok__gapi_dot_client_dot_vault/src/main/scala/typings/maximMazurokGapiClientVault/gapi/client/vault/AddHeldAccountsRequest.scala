@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddHeldAccountsRequest extends StObject {
   
   /** Account IDs to identify which accounts to add. Only account_ids or only emails should be specified, but not both. */
-  var accountIds: js.UndefOr[js.Array[String]] = js.native
+  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Emails to identify which accounts to add. Only emails or only account_ids should be specified, but not both. */
-  var emails: js.UndefOr[js.Array[String]] = js.native
+  var emails: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AddHeldAccountsRequest {
   

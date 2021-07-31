@@ -6,25 +6,23 @@ import typings.vexflow.anon.Firstxpx
 import typings.vexflow.anon.Lastindices
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaveTie extends StObject {
   
-  def draw(): Boolean = js.native
+  def draw(): Boolean
   
-  def isPartial(): Boolean = js.native
+  def isPartial(): Boolean
   
-  def renderText(first_x_px: Double, last_x_px: Double): Unit = js.native
+  def renderText(first_x_px: Double, last_x_px: Double): Unit
   
-  def renderTie(params: Firstxpx): Unit = js.native
+  def renderTie(params: Firstxpx): Unit
   
-  def setContext(context: IRenderContext): StaveTie = js.native
+  def setContext(context: IRenderContext): StaveTie
   
-  def setFont(font: Family): StaveTie = js.native
+  def setFont(font: Family): StaveTie
   
-  def setNotes(notes: Lastindices): StaveTie = js.native
+  def setNotes(notes: Lastindices): StaveTie
 }
 object StaveTie {
   

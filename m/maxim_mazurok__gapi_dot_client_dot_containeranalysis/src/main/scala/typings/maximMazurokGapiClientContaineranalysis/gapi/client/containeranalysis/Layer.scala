@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layer extends StObject {
   
   /** The recovered arguments to the Dockerfile directive. */
-  var arguments: js.UndefOr[String] = js.native
+  var arguments: js.UndefOr[String] = js.undefined
   
   /** Required. The recovered Dockerfile directive used to construct this layer. */
-  var directive: js.UndefOr[String] = js.native
+  var directive: js.UndefOr[String] = js.undefined
 }
 object Layer {
   

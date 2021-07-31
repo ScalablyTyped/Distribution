@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPublicAccessBlockRequest extends StObject {
   
   /**
     * The account ID for the AWS account whose PublicAccessBlock configuration you want to retrieve.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
 }
 object GetPublicAccessBlockRequest {
   

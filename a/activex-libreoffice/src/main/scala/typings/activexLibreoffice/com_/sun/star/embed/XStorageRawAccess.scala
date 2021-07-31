@@ -3,11 +3,9 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface represents main storage functionality. */
-@js.native
 trait XStorageRawAccess extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait XStorageRawAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def getPlainRawStreamElement(sStreamName: String): XInputStream = js.native
+  def getPlainRawStreamElement(sStreamName: String): XInputStream
   
   /**
     * allows to get a raw stream representing encrypted stream with header.
@@ -43,7 +41,7 @@ trait XStorageRawAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def getRawEncrStreamElement(sStreamName: String): XInputStream = js.native
+  def getRawEncrStreamElement(sStreamName: String): XInputStream
   
   /**
     * allows to insert a raw stream representing encrypted stream with header.
@@ -62,7 +60,7 @@ trait XStorageRawAccess extends StObject {
     * @throws com::sun::star::io::IOException in case of io errors during stream opening
     * @throws com::sun::star::embed::StorageWrappedTargetException wraps other exceptions
     */
-  def insertRawEncrStreamElement(sStreamName: String, xInStream: XInputStream): Unit = js.native
+  def insertRawEncrStreamElement(sStreamName: String, xInStream: XInputStream): Unit
 }
 object XStorageRawAccess {
   

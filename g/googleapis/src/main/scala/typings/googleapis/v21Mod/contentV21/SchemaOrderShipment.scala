@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderShipment extends StObject {
   
   /**
@@ -18,38 +16,38 @@ trait SchemaOrderShipment extends StObject {
     * &quot;uds&quot;    Acceptable values for FR are:   -
     * &quot;colissimo&quot;  - &quot;chronopost&quot;
     */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the shipment has been created, in ISO 8601 format.
     */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /**
     * Date on which the shipment has been delivered, in ISO 8601 format.
     * Present only if status is delivered
     */
-  var deliveryDate: js.UndefOr[String] = js.native
+  var deliveryDate: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the shipment.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The line items that are shipped.
     */
-  var lineItems: js.UndefOr[js.Array[SchemaOrderShipmentLineItemShipment]] = js.native
+  var lineItems: js.UndefOr[js.Array[SchemaOrderShipmentLineItemShipment]] = js.undefined
   
   /**
     * The status of the shipment.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The tracking ID for the shipment.
     */
-  var trackingId: js.UndefOr[String] = js.native
+  var trackingId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderShipment {
   

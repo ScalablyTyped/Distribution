@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePhotosList extends StandardParameters {
+trait ParamsResourcePhotosList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The filter expression. For example:
     * `placeId=ChIJj61dQgK6j4AR4GeTYWZsKWw`.  The only filter supported at the
     * moment is `placeId`.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
@@ -31,7 +31,7 @@ trait ParamsResourcePhotosList extends StandardParameters {
     * language_code is unspecified, the user's language preference for Google
     * services is used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of photos to return. `pageSize` must be non-negative.
@@ -40,19 +40,19 @@ trait ParamsResourcePhotosList extends StandardParameters {
     * `pageSize` if the number of photos that belong to the user is less than
     * `pageSize`.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The nextPageToken value returned from a previous ListPhotos request, if
     * any.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if a download URL for the photos bytes should be returned in
     * the Photos response.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePhotosList {
   

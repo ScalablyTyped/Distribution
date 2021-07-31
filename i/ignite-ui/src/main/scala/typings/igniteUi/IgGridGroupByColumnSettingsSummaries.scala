@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridGroupByColumnSettingsSummaries
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -25,7 +24,7 @@ trait IgGridGroupByColumnSettingsSummaries
     * "string" the name of the function as a string located in the global window object.
     * "function" which will be used for calculating the summary value.
     */
-  var customSummary: js.UndefOr[String | js.Function] = js.native
+  var customSummary: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * the summary function key
@@ -39,13 +38,13 @@ trait IgGridGroupByColumnSettingsSummaries
     * "count" count summary function
     * "custom" custom summary summary function
     */
-  var summaryFunction: js.UndefOr[String] = js.native
+  var summaryFunction: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the summary text that will be shown before the value
     *
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object IgGridGroupByColumnSettingsSummaries {
   

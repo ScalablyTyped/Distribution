@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentSecurityPolicyIssueDetails extends StObject {
   
   /**
     * The url not included in allowed sources.
     */
-  var blockedURL: js.UndefOr[String] = js.native
+  var blockedURL: js.UndefOr[String] = js.undefined
   
-  var contentSecurityPolicyViolationType: ContentSecurityPolicyViolationType = js.native
+  var contentSecurityPolicyViolationType: ContentSecurityPolicyViolationType
   
-  var frameAncestor: js.UndefOr[AffectedFrame] = js.native
+  var frameAncestor: js.UndefOr[AffectedFrame] = js.undefined
   
-  var isReportOnly: Boolean = js.native
+  var isReportOnly: Boolean
   
-  var sourceCodeLocation: js.UndefOr[SourceCodeLocation] = js.native
+  var sourceCodeLocation: js.UndefOr[SourceCodeLocation] = js.undefined
   
   /**
     * Specific directive that is violated, causing the CSP issue.
     */
-  var violatedDirective: String = js.native
+  var violatedDirective: String
   
-  var violatingNodeId: js.UndefOr[BackendNodeId] = js.native
+  var violatingNodeId: js.UndefOr[BackendNodeId] = js.undefined
 }
 object ContentSecurityPolicyIssueDetails {
   

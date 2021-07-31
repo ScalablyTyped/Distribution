@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
   /** If set, access is controlled only by bucket-level or above IAM policies. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The deadline for changing iamConfiguration.uniformBucketLevelAccess.enabled from true to false in RFC 3339  format. iamConfiguration.uniformBucketLevelAccess.enabled may be
     * changed from true to false until the locked time, after which the field is immutable.
     */
-  var lockedTime: js.UndefOr[String] = js.native
+  var lockedTime: js.UndefOr[String] = js.undefined
 }
 object Enabled {
   

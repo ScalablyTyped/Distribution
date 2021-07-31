@@ -3,36 +3,34 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a field that is an instant messaging (IM) address. */
-@js.native
 trait ContactInstantMessageField extends StObject {
   
   /** Gets the category for the contact data. */
-  var category: ContactFieldCategory = js.native
+  var category: ContactFieldCategory
   
   /** Gets the display text for the Uniform Resource Identifier (URI) that starts an instant message. */
-  var displayText: String = js.native
+  var displayText: String
   
   /** Gets the Uniform Resource Identifier (URI) that can start an instant message. */
-  var launchUri: Uri = js.native
+  var launchUri: Uri
   
   /** Gets the name of the field. */
-  var name: String = js.native
+  var name: String
   
   /** Gets the name of the service used for sending instant messages. */
-  var service: String = js.native
+  var service: String
   
   /** Gets the contact field type for the data. */
-  var `type`: ContactFieldType = js.native
+  var `type`: ContactFieldType
   
   /** Gets the user's name. */
-  var userName: String = js.native
+  var userName: String
   
   /** Gets the value of the contact data. */
-  var value: String = js.native
+  var value: String
 }
 object ContactInstantMessageField {
   

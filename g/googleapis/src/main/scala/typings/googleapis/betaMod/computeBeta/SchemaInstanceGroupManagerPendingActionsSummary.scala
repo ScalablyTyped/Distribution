@@ -2,35 +2,33 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupManagerPendingActionsSummary extends StObject {
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are pending to be created.
     */
-  var creating: js.UndefOr[Double] = js.native
+  var creating: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are pending to be deleted.
     */
-  var deleting: js.UndefOr[Double] = js.native
+  var deleting: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are pending to be recreated.
     */
-  var recreating: js.UndefOr[Double] = js.native
+  var recreating: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The number of instances in the managed instance group that
     * are pending to be restarted.
     */
-  var restarting: js.UndefOr[Double] = js.native
+  var restarting: js.UndefOr[Double] = js.undefined
 }
 object SchemaInstanceGroupManagerPendingActionsSummary {
   

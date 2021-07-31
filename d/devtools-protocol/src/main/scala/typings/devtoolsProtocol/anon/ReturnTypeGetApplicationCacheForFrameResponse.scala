@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.GetApplicationCach
 import typings.devtoolsProtocol.mod.Protocol.ApplicationCache.GetApplicationCacheForFrameResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetApplicationCacheForFrameResponse extends StObject {
   
-  var paramsType: js.Array[GetApplicationCacheForFrameRequest] = js.native
+  var paramsType: js.Array[GetApplicationCacheForFrameRequest]
   
-  var returnType: GetApplicationCacheForFrameResponse = js.native
+  var returnType: GetApplicationCacheForFrameResponse
 }
 object ReturnTypeGetApplicationCacheForFrameResponse {
   

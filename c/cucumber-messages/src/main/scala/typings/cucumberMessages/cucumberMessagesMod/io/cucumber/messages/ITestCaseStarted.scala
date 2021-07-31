@@ -3,33 +3,31 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.TestCaseStarted.IPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a TestCaseStarted. */
-@js.native
 trait ITestCaseStarted extends StObject {
   
   /**
     * The first attempt should have value 0, and for each retry the value
     * should increase by 1.
     */
-  var attempt: js.UndefOr[Double | Null] = js.native
+  var attempt: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Because a `TestCase` can be run multiple times (in case of a retry),
     * we use this field to group messages relating to the same attempt.
     */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /** TestCaseStarted platform */
-  var platform: js.UndefOr[IPlatform | Null] = js.native
+  var platform: js.UndefOr[IPlatform | Null] = js.undefined
   
   /** TestCaseStarted testCaseId */
-  var testCaseId: js.UndefOr[String | Null] = js.native
+  var testCaseId: js.UndefOr[String | Null] = js.undefined
   
   /** TestCaseStarted timestamp */
-  var timestamp: js.UndefOr[ITimestamp | Null] = js.native
+  var timestamp: js.UndefOr[ITimestamp | Null] = js.undefined
 }
 object ITestCaseStarted {
   

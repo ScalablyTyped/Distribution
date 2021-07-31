@@ -3,14 +3,27 @@ package typings.semanticUiCheckbox.anon
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.CheckboxSettings._Impl, 'onEnabled'> */
-@js.native
 trait PickImplonEnabled extends StObject {
   
-  def onEnabled(): Unit = js.native
+  def onEnabled(): Unit
   @JSName("onEnabled")
-  var onEnabled_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit] = js.native
+  var onEnabled_Original: js.ThisFunction0[/* this */ HTMLInputElement, Unit]
+}
+object PickImplonEnabled {
+  
+  @scala.inline
+  def apply(onEnabled: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): PickImplonEnabled = {
+    val __obj = js.Dynamic.literal(onEnabled = onEnabled.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PickImplonEnabled]
+  }
+  
+  @scala.inline
+  implicit class PickImplonEnabledMutableBuilder[Self <: PickImplonEnabled] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnEnabled(value: js.ThisFunction0[/* this */ HTMLInputElement, Unit]): Self = StObject.set(x, "onEnabled", value.asInstanceOf[js.Any])
+  }
 }

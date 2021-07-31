@@ -1,20 +1,22 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableNameTable", JSImport.Namespace)
-@js.native
-object variableNameTableMod extends js.Object {
-  @js.native
-  class VariableNameTable () extends js.Object
+object variableNameTableMod {
   
+  @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableNameTable", "VariableNameTable")
+  @js.native
+  class VariableNameTable () extends StObject
   /* static members */
-  @js.native
-  object VariableNameTable extends js.Object {
-    def getVariableName(name: String): String = js.native
+  object VariableNameTable {
+    
+    @JSImport("wonder.js/dist/es2015/renderer/shader/variable/VariableNameTable", "VariableNameTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getVariableName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
-  
 }
-

@@ -2,26 +2,24 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Info extends StObject {
   
   /**
     * Content Security Policy for the isolated world.
     */
-  var csp: js.UndefOr[String] = js.native
+  var csp: js.UndefOr[String] = js.undefined
   
   /**
     * Name for isolated world. Useful in devtools.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Security origin for the isolated world.
     */
-  var securityOrigin: js.UndefOr[String] = js.native
+  var securityOrigin: js.UndefOr[String] = js.undefined
 }
 object Info {
   

@@ -2,27 +2,27 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationControlProps extends BaseControlProps {
+trait NavigationControlProps
+  extends StObject
+     with BaseControlProps {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var compassLabel: js.UndefOr[String] = js.native
+  var compassLabel: js.UndefOr[String] = js.undefined
   
-  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.native
+  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
   
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
   
-  var showCompass: js.UndefOr[Boolean] = js.native
+  var showCompass: js.UndefOr[Boolean] = js.undefined
   
-  var showZoom: js.UndefOr[Boolean] = js.native
+  var showZoom: js.UndefOr[Boolean] = js.undefined
   
-  var zoomInLabel: js.UndefOr[String] = js.native
+  var zoomInLabel: js.UndefOr[String] = js.undefined
   
-  var zoomOutLabel: js.UndefOr[String] = js.native
+  var zoomOutLabel: js.UndefOr[String] = js.undefined
 }
 object NavigationControlProps {
   

@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** This field is deprecated. Use `labels` instead. Optionally provided by the caller when submitting the request that creates the operation. */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /** The time at which the job was submitted to the Genomics service. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The time at which the job stopped running. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Optional event messages that were generated during the job's execution. This also contains any warnings that were generated during import or export. */
-  var events: js.UndefOr[js.Array[OperationEvent]] = js.native
+  var events: js.UndefOr[js.Array[OperationEvent]] = js.undefined
   
   /** Optionally provided by the caller when submitting the request that creates the operation. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The Google Cloud Project in which the job is scoped. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The original request that started the operation. Note that this will be in current version of the API. If the operation was started with v1beta2 API and a GetOperation is performed
@@ -38,18 +36,18 @@ trait OperationMetadata extends StObject {
   var request: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Runtime metadata on this Operation. */
   var runtimeMetadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The time at which the job began to run. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {
   
@@ -93,7 +91,7 @@ object OperationMetadata {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -109,7 +107,7 @@ object OperationMetadata {
     def setRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -119,7 +117,7 @@ object OperationMetadata {
     def setRuntimeMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGenomics.maximMazurokGapiClientGenomicsStrings.OperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "runtimeMetadata", value.asInstanceOf[js.Any])
     
     @scala.inline

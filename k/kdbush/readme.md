@@ -10,9 +10,9 @@ A very fast static 2D index for points based on kd-tree.
 | ------------------ | :-------------: |
 | Full name          | kdbush |
 | Keywords           | index, points, kd-tree, data structures, algorithms, spatial, geometry |
-| # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 18220406 |
+| # releases         | 0 |
+| # dependents       | 51 |
+| # downloads        | 21744162 |
 | # stars            | 1 |
 
 ## Links

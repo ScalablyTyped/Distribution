@@ -62,24 +62,22 @@ import typings.std.Event
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<highcharts.highcharts.AnimationOptionsObject> */
-  @js.native
   trait PartialAnimationOptionsOb extends StObject {
     
-    var complete: js.UndefOr[js.Function] = js.native
+    var complete: js.UndefOr[js.Function] = js.undefined
     
-    var defer: js.UndefOr[Double] = js.native
+    var defer: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String | js.Function] = js.native
+    var easing: js.UndefOr[String | js.Function] = js.undefined
     
-    var step: js.UndefOr[js.Function] = js.native
+    var step: js.UndefOr[js.Function] = js.undefined
   }
   object PartialAnimationOptionsOb {
     
@@ -125,10 +123,9 @@ object anon {
   }
   
   /* Inlined std.Partial<highcharts.highcharts.AnnotationControlPointOptionsObject> */
-  @js.native
   trait PartialAnnotationControlP extends StObject {
     
-    var positioner: js.UndefOr[AnnotationControlPointPositionerFunction] = js.native
+    var positioner: js.UndefOr[AnnotationControlPointPositionerFunction] = js.undefined
   }
   object PartialAnnotationControlP {
     
@@ -150,46 +147,45 @@ object anon {
   }
   
   /* Inlined std.Partial<highcharts.highcharts.AnnotationsOptions> */
-  @js.native
   trait PartialAnnotationsOptions extends StObject {
     
-    var animation: js.UndefOr[Boolean | AnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.native
+    var animation: js.UndefOr[Boolean | AnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.undefined
     
-    var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.native
+    var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
     
-    var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.native
+    var crookedLine: js.UndefOr[AnnotationsCrookedLineOptions] = js.undefined
     
-    var draggable: js.UndefOr[AnnotationDraggableValue] = js.native
+    var draggable: js.UndefOr[AnnotationDraggableValue] = js.undefined
     
-    var elliottWave: js.UndefOr[AnnotationsElliottWaveOptions] = js.native
+    var elliottWave: js.UndefOr[AnnotationsElliottWaveOptions] = js.undefined
     
-    var events: js.UndefOr[AnnotationsEventsOptions] = js.native
+    var events: js.UndefOr[AnnotationsEventsOptions] = js.undefined
     
-    var fibonacci: js.UndefOr[AnnotationsFibonacciOptions] = js.native
+    var fibonacci: js.UndefOr[AnnotationsFibonacciOptions] = js.undefined
     
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
-    var infinityLine: js.UndefOr[AnnotationsInfinityLineOptions] = js.native
+    var infinityLine: js.UndefOr[AnnotationsInfinityLineOptions] = js.undefined
     
-    var labelOptions: js.UndefOr[AnnotationsLabelOptions] = js.native
+    var labelOptions: js.UndefOr[AnnotationsLabelOptions] = js.undefined
     
-    var labels: js.UndefOr[js.Array[AnnotationsLabelsOptions]] = js.native
+    var labels: js.UndefOr[js.Array[AnnotationsLabelsOptions]] = js.undefined
     
-    var measure: js.UndefOr[AnnotationsMeasureOptions] = js.native
+    var measure: js.UndefOr[AnnotationsMeasureOptions] = js.undefined
     
-    var pitchfork: js.UndefOr[AnnotationsPitchforkOptions] = js.native
+    var pitchfork: js.UndefOr[AnnotationsPitchforkOptions] = js.undefined
     
-    var shapeOptions: js.UndefOr[AnnotationsShapeOptions] = js.native
+    var shapeOptions: js.UndefOr[AnnotationsShapeOptions] = js.undefined
     
-    var shapes: js.UndefOr[js.Array[AnnotationsShapesOptions]] = js.native
+    var shapes: js.UndefOr[js.Array[AnnotationsShapesOptions]] = js.undefined
     
-    var tunnel: js.UndefOr[AnnotationsTunnelOptions] = js.native
+    var tunnel: js.UndefOr[AnnotationsTunnelOptions] = js.undefined
     
-    var verticalLine: js.UndefOr[AnnotationsVerticalLineOptions] = js.native
+    var verticalLine: js.UndefOr[AnnotationsVerticalLineOptions] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object PartialAnnotationsOptions {
     
@@ -325,7 +321,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofColor extends Instantiable1[/* input */ ColorType, Color_] {
+  trait TypeofColor
+    extends StObject
+       with Instantiable1[/* input */ ColorType, Color_] {
     
     /**
       * Creates a color instance out of a color string or object.
@@ -438,16 +436,16 @@ object anon {
     def animate(el: SVGElement, params: SVGAttributes): Unit = js.native
     def animate(el: SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
     
-    def arrayMax(data: js.Array[_]): Double = js.native
+    def arrayMax(data: js.Array[js.Any]): Double = js.native
     
-    def arrayMin(data: js.Array[_]): Double = js.native
+    def arrayMin(data: js.Array[js.Any]): Double = js.native
     
     def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+    def attr(elem: HTMLDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = js.native
+    def attr(elem: HTMLDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
@@ -455,11 +453,11 @@ object anon {
     def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+    def attr(elem: SVGDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = js.native
+    def attr(elem: SVGDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
@@ -484,66 +482,19 @@ object anon {
     def correctFloat(num: Double, prec: Double): Double = js.native
     
     def createElement(tag: String): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement
-    ): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: js.UndefOr[scala.Nothing], parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     
@@ -564,62 +515,52 @@ object anon {
     
     def discardElement(element: HTMLDOMElement): Unit = js.native
     
-    def each(arr: js.Array[_], fn: js.Function): Unit = js.native
-    def each(arr: js.Array[_], fn: js.Function, ctx: js.Any): Unit = js.native
+    def each(arr: js.Array[js.Any], fn: js.Function): Unit = js.native
+    def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Unit = js.native
     
-    def erase(arr: js.Array[_], item: js.Any): Unit = js.native
+    def erase(arr: js.Array[js.Any], item: js.Any): Unit = js.native
     
     def error(code: String): Unit = js.native
-    def error(
-      code: String,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: String, stop: Boolean): Unit = js.native
-    def error(code: String, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
     def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
     def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Unit, chart: Chart_): Unit = js.native
+    def error(code: String, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: Double): Unit = js.native
-    def error(
-      code: Double,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: Double, stop: Boolean): Unit = js.native
-    def error(code: Double, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
     def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
     def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Chart_): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
     
     def extend[T](a: T, b: js.Object): T = js.native
-    def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
+    def extend[T](a: Unit, b: js.Object): T = js.native
     
-    def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
+    def extendClass[T](parent: Class[T], members: Dictionary[js.Any]): Class[T] = js.native
     
     def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
     
     def fireEvent[T](el: T, `type`: String): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: js.Function): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any]): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any], defaultFunction: js.Function): Unit = js.native
     def fireEvent[T](
       el: T,
       `type`: String,
-      eventArguments: js.UndefOr[scala.Nothing],
+      eventArguments: Dictionary[js.Any],
       defaultFunction: EventCallbackFunction[T]
     ): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
     
-    def format(str: String, ctx: Record[String, _]): String = js.native
-    def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
+    def format(str: String, ctx: Record[String, js.Any]): String = js.native
+    def format(str: String, ctx: Record[String, js.Any], chart: Chart_): String = js.native
     
     def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
     def getDeferredAnimation(chart: Chart_, animation: Boolean, series: Series): Double = js.native
@@ -633,10 +574,10 @@ object anon {
     def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
     def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = js.native
     
-    def grep(arr: js.Array[_], callback: js.Function): js.Array[_] = js.native
+    def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = js.native
     
-    def inArray(item: js.Any, arr: js.Array[_]): Double = js.native
-    def inArray(item: js.Any, arr: js.Array[_], fromIndex: Double): Double = js.native
+    def inArray(item: js.Any, arr: js.Array[js.Any]): Double = js.native
+    def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: Double): Double = js.native
     
     def isArray(obj: js.Any): Boolean = js.native
     
@@ -654,92 +595,64 @@ object anon {
     
     def keys(obj: js.Any): js.Array[String] = js.native
     
-    def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
+    def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = js.native
     
     def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+    def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = js.native
     def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](extend: Boolean, a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+    def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = js.native
     
     def normalizeTickInterval(interval: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any]): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Double,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
     ): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Unit, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double, allowDecimals: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
+      multiples: Unit,
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean, hasTickAmount: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
     
     def numberFormat(number: Double, decimals: Double): String = js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
     def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
     def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
+    def numberFormat(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = js.native
     
     def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
     def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
@@ -747,70 +660,70 @@ object anon {
     def offset(el: Element): OffsetObject = js.native
     
     def pad(number: Double): String = js.native
-    def pad(number: Double, length: js.UndefOr[scala.Nothing], padder: String): String = js.native
     def pad(number: Double, length: Double): String = js.native
     def pad(number: Double, length: Double, padder: String): String = js.native
+    def pad(number: Double, length: Unit, padder: String): String = js.native
     
     def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
     
-    def reduce(arr: js.Array[_], fn: js.Function, initialValue: js.Any): js.Any = js.native
+    def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = js.native
     
     def relativeLength(value: RelativeSize, base: Double): Double = js.native
     def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
     
     def removeEvent[T](el: T): Unit = js.native
-    def removeEvent[T](el: T, `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: T, `type`: String): Unit = js.native
     def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+    def removeEvent[T](el: T, `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: Class[T]): Unit = js.native
-    def removeEvent[T](el: Class[T], `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
     def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+    def removeEvent[T](el: Class[T], `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
     
-    def seriesType(`type`: String, parent: String, options: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
+      options: Dictionary[js.Any],
+      props: Unit,
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any], props: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
+      options: Dictionary[js.Any],
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
     def seriesType(`type`: String, parent: String, options: SeriesOptionsType): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
+      props: Unit,
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
     
-    def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
     def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
+    def setAnimation(animation: Unit, chart: Chart_): Unit = js.native
     def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
     
     def setOptions(options: Options): Options = js.native
     
-    def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
+    def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Boolean = js.native
     
-    def splat(obj: js.Any): js.Array[_] = js.native
+    def splat(obj: js.Any): js.Array[js.Any] = js.native
     
-    def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
+    def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): Unit = js.native
     
     def stop(el: SVGElement): Unit = js.native
     def stop(el: SVGElement, prop: String): Unit = js.native
@@ -925,16 +838,16 @@ object anon {
     def animate(el: SVGElement, params: SVGAttributes): Unit = js.native
     def animate(el: SVGElement, params: SVGAttributes, opt: PartialAnimationOptionsOb): Unit = js.native
     
-    def arrayMax(data: js.Array[_]): Double = js.native
+    def arrayMax(data: js.Array[js.Any]): Double = js.native
     
-    def arrayMin(data: js.Array[_]): Double = js.native
+    def arrayMin(data: js.Array[js.Any]): Double = js.native
     
     def attr(elem: HTMLDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: HTMLDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+    def attr(elem: HTMLDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = js.native
+    def attr(elem: HTMLDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
@@ -942,11 +855,11 @@ object anon {
     def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: HTMLDOMElement, prop: SVGAttributes, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: String): js.UndefOr[String | Null] = js.native
-    def attr(elem: SVGDOMElement, prop: js.UndefOr[scala.Nothing], value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: String, value: Double): js.UndefOr[String | Null] = js.native
+    def attr(elem: SVGDOMElement, prop: Unit, value: String): js.UndefOr[String | Null] = js.native
+    def attr(elem: SVGDOMElement, prop: Unit, value: Double): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: String): js.UndefOr[String | Null] = js.native
     def attr(elem: SVGDOMElement, prop: HTMLAttributes, value: Double): js.UndefOr[String | Null] = js.native
@@ -971,66 +884,19 @@ object anon {
     def correctFloat(num: Double, prec: Double): Double = js.native
     
     def createElement(tag: String): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement
-    ): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: js.UndefOr[scala.Nothing], styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: js.UndefOr[scala.Nothing],
-      styles: CSSObject,
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: Unit, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
-    def createElement(tag: String, attribs: HTMLAttributes, styles: js.UndefOr[scala.Nothing], parent: HTMLDOMElement): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: js.UndefOr[scala.Nothing],
-      parent: HTMLDOMElement,
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: Unit, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject): HTMLDOMElement = js.native
-    def createElement(
-      tag: String,
-      attribs: HTMLAttributes,
-      styles: CSSObject,
-      parent: js.UndefOr[scala.Nothing],
-      nopad: Boolean
-    ): HTMLDOMElement = js.native
+    def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: Unit, nopad: Boolean): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement): HTMLDOMElement = js.native
     def createElement(tag: String, attribs: HTMLAttributes, styles: CSSObject, parent: HTMLDOMElement, nopad: Boolean): HTMLDOMElement = js.native
     
@@ -1051,62 +917,52 @@ object anon {
     
     def discardElement(element: HTMLDOMElement): Unit = js.native
     
-    def each(arr: js.Array[_], fn: js.Function): Unit = js.native
-    def each(arr: js.Array[_], fn: js.Function, ctx: js.Any): Unit = js.native
+    def each(arr: js.Array[js.Any], fn: js.Function): Unit = js.native
+    def each(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Unit = js.native
     
-    def erase(arr: js.Array[_], item: js.Any): Unit = js.native
+    def erase(arr: js.Array[js.Any], item: js.Any): Unit = js.native
     
     def error(code: String): Unit = js.native
-    def error(
-      code: String,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    def error(code: String, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: String, stop: Boolean): Unit = js.native
-    def error(code: String, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
     def error(code: String, stop: Boolean, chart: Chart_): Unit = js.native
     def error(code: String, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
+    def error(code: String, stop: Unit, chart: Chart_): Unit = js.native
+    def error(code: String, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: Double): Unit = js.native
-    def error(
-      code: Double,
-      stop: js.UndefOr[scala.Nothing],
-      chart: js.UndefOr[scala.Nothing],
-      params: Dictionary[String]
-    ): Unit = js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
-    def error(code: Double, stop: js.UndefOr[scala.Nothing], chart: Chart_, params: Dictionary[String]): Unit = js.native
     def error(code: Double, stop: Boolean): Unit = js.native
-    def error(code: Double, stop: Boolean, chart: js.UndefOr[scala.Nothing], params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Boolean, chart: Unit, params: Dictionary[String]): Unit = js.native
     def error(code: Double, stop: Boolean, chart: Chart_): Unit = js.native
     def error(code: Double, stop: Boolean, chart: Chart_, params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Unit, params: Dictionary[String]): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Chart_): Unit = js.native
+    def error(code: Double, stop: Unit, chart: Chart_, params: Dictionary[String]): Unit = js.native
     
     def extend[T](a: T, b: js.Object): T = js.native
-    def extend[T](a: js.UndefOr[scala.Nothing], b: js.Object): T = js.native
+    def extend[T](a: Unit, b: js.Object): T = js.native
     
-    def extendClass[T](parent: Class[T], members: Dictionary[_]): Class[T] = js.native
+    def extendClass[T](parent: Class[T], members: Dictionary[js.Any]): Class[T] = js.native
     
     def find[T](arr: js.Array[T], callback: js.Function): js.UndefOr[T] = js.native
     
     def fireEvent[T](el: T, `type`: String): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: js.UndefOr[scala.Nothing], defaultFunction: js.Function): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: js.Function): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Unit, defaultFunction: EventCallbackFunction[T]): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any]): Unit = js.native
+    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[js.Any], defaultFunction: js.Function): Unit = js.native
     def fireEvent[T](
       el: T,
       `type`: String,
-      eventArguments: js.UndefOr[scala.Nothing],
+      eventArguments: Dictionary[js.Any],
       defaultFunction: EventCallbackFunction[T]
     ): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_]): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: js.Function): Unit = js.native
-    def fireEvent[T](el: T, `type`: String, eventArguments: Dictionary[_], defaultFunction: EventCallbackFunction[T]): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: js.Function): Unit = js.native
     def fireEvent[T](el: T, `type`: String, eventArguments: Event, defaultFunction: EventCallbackFunction[T]): Unit = js.native
     
-    def format(str: String, ctx: Record[String, _]): String = js.native
-    def format(str: String, ctx: Record[String, _], chart: Chart_): String = js.native
+    def format(str: String, ctx: Record[String, js.Any]): String = js.native
+    def format(str: String, ctx: Record[String, js.Any], chart: Chart_): String = js.native
     
     def getDeferredAnimation(chart: Chart_, animation: Boolean): Double = js.native
     def getDeferredAnimation(chart: Chart_, animation: Boolean, series: Series): Double = js.native
@@ -1120,10 +976,10 @@ object anon {
     def getStyle(el: HTMLDOMElement, prop: String): Double | String = js.native
     def getStyle(el: HTMLDOMElement, prop: String, toInt: Boolean): Double | String = js.native
     
-    def grep(arr: js.Array[_], callback: js.Function): js.Array[_] = js.native
+    def grep(arr: js.Array[js.Any], callback: js.Function): js.Array[js.Any] = js.native
     
-    def inArray(item: js.Any, arr: js.Array[_]): Double = js.native
-    def inArray(item: js.Any, arr: js.Array[_], fromIndex: Double): Double = js.native
+    def inArray(item: js.Any, arr: js.Array[js.Any]): Double = js.native
+    def inArray(item: js.Any, arr: js.Array[js.Any], fromIndex: Double): Double = js.native
     
     def isArray(obj: js.Any): Boolean = js.native
     
@@ -1141,92 +997,64 @@ object anon {
     
     def keys(obj: js.Any): js.Array[String] = js.native
     
-    def map(arr: js.Array[_], fn: js.Function): js.Array[_] = js.native
+    def map(arr: js.Array[js.Any], fn: js.Function): js.Array[js.Any] = js.native
     
     def merge[T](a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+    def merge[T](a: Unit, n: js.UndefOr[js.Object]*): T = js.native
     def merge[T](extend: Boolean, a: T, n: js.UndefOr[js.Object]*): T = js.native
-    def merge[T](extend: Boolean, a: js.UndefOr[scala.Nothing], n: js.UndefOr[js.Object]*): T = js.native
+    def merge[T](extend: Boolean, a: Unit, n: js.UndefOr[js.Object]*): T = js.native
     
     def normalizeTickInterval(interval: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any]): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Double, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean,
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
-      hasTickAmount: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.UndefOr[scala.Nothing], magnitude: Double, allowDecimals: Boolean): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_]): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Double,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
     ): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: js.Array[js.Any], magnitude: Unit, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
-      allowDecimals: Boolean
-    ): Double = js.native
-    def normalizeTickInterval(
-      interval: Double,
-      multiples: js.Array[_],
-      magnitude: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
-      magnitude: Double,
-      allowDecimals: js.UndefOr[scala.Nothing],
+      multiples: js.Array[js.Any],
+      magnitude: Unit,
+      allowDecimals: Unit,
       hasTickAmount: Boolean
     ): Double = js.native
-    def normalizeTickInterval(interval: Double, multiples: js.Array[_], magnitude: Double, allowDecimals: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Boolean): Double = js.native
     def normalizeTickInterval(
       interval: Double,
-      multiples: js.Array[_],
+      multiples: Unit,
       magnitude: Double,
       allowDecimals: Boolean,
       hasTickAmount: Boolean
     ): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Double, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Boolean, hasTickAmount: Boolean): Double = js.native
+    def normalizeTickInterval(interval: Double, multiples: Unit, magnitude: Unit, allowDecimals: Unit, hasTickAmount: Boolean): Double = js.native
     
     def numberFormat(number: Double, decimals: Double): String = js.native
-    def numberFormat(number: Double, decimals: Double, decimalPoint: js.UndefOr[scala.Nothing], thousandsSep: String): String = js.native
     def numberFormat(number: Double, decimals: Double, decimalPoint: String): String = js.native
     def numberFormat(number: Double, decimals: Double, decimalPoint: String, thousandsSep: String): String = js.native
+    def numberFormat(number: Double, decimals: Double, decimalPoint: Unit, thousandsSep: String): String = js.native
     
     def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T]): Unit = js.native
     def objectEach[T](obj: js.Any, fn: ObjectEachCallbackFunction[T], ctx: T): Unit = js.native
@@ -1234,70 +1062,70 @@ object anon {
     def offset(el: Element): OffsetObject = js.native
     
     def pad(number: Double): String = js.native
-    def pad(number: Double, length: js.UndefOr[scala.Nothing], padder: String): String = js.native
     def pad(number: Double, length: Double): String = js.native
     def pad(number: Double, length: Double, padder: String): String = js.native
+    def pad(number: Double, length: Unit, padder: String): String = js.native
     
     def pick[T](items: (js.UndefOr[T | Null])*): T = js.native
     
-    def reduce(arr: js.Array[_], fn: js.Function, initialValue: js.Any): js.Any = js.native
+    def reduce(arr: js.Array[js.Any], fn: js.Function, initialValue: js.Any): js.Any = js.native
     
     def relativeLength(value: RelativeSize, base: Double): Double = js.native
     def relativeLength(value: RelativeSize, base: Double, offset: Double): Double = js.native
     
     def removeEvent[T](el: T): Unit = js.native
-    def removeEvent[T](el: T, `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: T, `type`: String): Unit = js.native
     def removeEvent[T](el: T, `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+    def removeEvent[T](el: T, `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: Class[T]): Unit = js.native
-    def removeEvent[T](el: Class[T], `type`: js.UndefOr[scala.Nothing], fn: EventCallbackFunction[T]): Unit = js.native
     def removeEvent[T](el: Class[T], `type`: String): Unit = js.native
     def removeEvent[T](el: Class[T], `type`: String, fn: EventCallbackFunction[T]): Unit = js.native
+    def removeEvent[T](el: Class[T], `type`: Unit, fn: EventCallbackFunction[T]): Unit = js.native
     
-    def seriesType(`type`: String, parent: String, options: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
+      options: Dictionary[js.Any],
+      props: Unit,
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: Dictionary[_], props: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: Dictionary[js.Any], props: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
-      options: Dictionary[_],
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
+      options: Dictionary[js.Any],
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
     def seriesType(`type`: String, parent: String, options: SeriesOptionsType): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: js.UndefOr[scala.Nothing],
-      pointProps: Dictionary[_]
+      props: Unit,
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
-    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[_]): Series = js.native
+    def seriesType(`type`: String, parent: String, options: SeriesOptionsType, props: Dictionary[js.Any]): Series = js.native
     def seriesType(
       `type`: String,
       parent: String,
       options: SeriesOptionsType,
-      props: Dictionary[_],
-      pointProps: Dictionary[_]
+      props: Dictionary[js.Any],
+      pointProps: Dictionary[js.Any]
     ): Series = js.native
     
-    def setAnimation(animation: js.UndefOr[scala.Nothing], chart: Chart_): Unit = js.native
     def setAnimation(animation: Boolean, chart: Chart_): Unit = js.native
+    def setAnimation(animation: Unit, chart: Chart_): Unit = js.native
     def setAnimation(animation: PartialAnimationOptionsOb, chart: Chart_): Unit = js.native
     
     def setOptions(options: Options): Options = js.native
     
-    def some(arr: js.Array[_], fn: js.Function, ctx: js.Any): Boolean = js.native
+    def some(arr: js.Array[js.Any], fn: js.Function, ctx: js.Any): Boolean = js.native
     
-    def splat(obj: js.Any): js.Array[_] = js.native
+    def splat(obj: js.Any): js.Array[js.Any] = js.native
     
-    def stableSort(arr: js.Array[_], sortFunction: js.Function): Unit = js.native
+    def stableSort(arr: js.Array[js.Any], sortFunction: js.Function): Unit = js.native
     
     def stop(el: SVGElement): Unit = js.native
     def stop(el: SVGElement, prop: String): Unit = js.native

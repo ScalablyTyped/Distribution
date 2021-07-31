@@ -2,46 +2,44 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFargateProfileRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[String] = js.native
+  var clientRequestToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Amazon EKS cluster to apply the Fargate profile to.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The name of the Fargate profile.
     */
-  var fargateProfileName: String = js.native
+  var fargateProfileName: String
   
   /**
     * The Amazon Resource Name (ARN) of the pod execution role to use for pods that match the selectors in the Fargate profile. The pod execution role allows Fargate infrastructure to register with your cluster as a node, and it provides read access to Amazon ECR image repositories. For more information, see Pod Execution Role in the Amazon EKS User Guide.
     */
-  var podExecutionRoleArn: String = js.native
+  var podExecutionRoleArn: String
   
   /**
     * The selectors to match for pods to use this Fargate profile. Each selector must have an associated namespace. Optionally, you can also specify labels for a namespace. You may specify up to five selectors in a Fargate profile.
     */
-  var selectors: js.UndefOr[FargateProfileSelectors] = js.native
+  var selectors: js.UndefOr[FargateProfileSelectors] = js.undefined
   
   /**
     * The IDs of subnets to launch your pods into. At this time, pods running on Fargate are not assigned public IP addresses, so only private subnets (with no direct route to an Internet Gateway) are accepted for this parameter.
     */
-  var subnets: js.UndefOr[StringList] = js.native
+  var subnets: js.UndefOr[StringList] = js.undefined
   
   /**
     * The metadata to apply to the Fargate profile to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Fargate profile tags do not propagate to any other resources associated with the Fargate profile, such as the pods that are scheduled with it.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateFargateProfileRequest {
   

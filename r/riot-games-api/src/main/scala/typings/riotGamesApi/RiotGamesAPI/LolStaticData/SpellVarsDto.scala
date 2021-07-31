@@ -2,21 +2,19 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpellVarsDto extends StObject {
   
-  var coeff: js.Array[Double] = js.native
+  var coeff: js.Array[Double]
   
-  var dyn: String = js.native
+  var dyn: String
   
-  var key: String = js.native
+  var key: String
   
-  var link: String = js.native
+  var link: String
   
-  var ranksWith: String = js.native
+  var ranksWith: String
 }
 object SpellVarsDto {
   

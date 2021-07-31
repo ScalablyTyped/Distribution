@@ -5,7 +5,6 @@ import typings.firebaseComponent.mod.Provider
 import typings.firebaseMessagingTypes.mod.FirebaseMessagingName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -29,12 +28,11 @@ object contextMod {
     var messaging: js.Any = js.native
   }
   
-  @js.native
   trait Context extends StObject {
     
-    var authToken: js.UndefOr[String] = js.native
+    var authToken: js.UndefOr[String] = js.undefined
     
-    var instanceIdToken: js.UndefOr[String] = js.native
+    var instanceIdToken: js.UndefOr[String] = js.undefined
   }
   object Context {
     

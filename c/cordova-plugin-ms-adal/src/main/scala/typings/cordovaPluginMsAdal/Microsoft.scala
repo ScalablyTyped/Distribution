@@ -3,7 +3,6 @@ package typings.cordovaPluginMsAdal
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Microsoft {
@@ -29,19 +28,19 @@ object Microsoft {
         * @returns {Promise} Promise either fulfilled with AuthenticationResult object or rejected with error
         */
       def acquireTokenAsync(resourceUrl: String, clientId: String, redirectUrl: String): PromiseAuthenticationResult = js.native
-      def acquireTokenAsync(
-        resourceUrl: String,
-        clientId: String,
-        redirectUrl: String,
-        userId: js.UndefOr[scala.Nothing],
-        extraQueryParameters: String
-      ): PromiseAuthenticationResult = js.native
       def acquireTokenAsync(resourceUrl: String, clientId: String, redirectUrl: String, userId: String): PromiseAuthenticationResult = js.native
       def acquireTokenAsync(
         resourceUrl: String,
         clientId: String,
         redirectUrl: String,
         userId: String,
+        extraQueryParameters: String
+      ): PromiseAuthenticationResult = js.native
+      def acquireTokenAsync(
+        resourceUrl: String,
+        clientId: String,
+        redirectUrl: String,
+        userId: Unit,
         extraQueryParameters: String
       ): PromiseAuthenticationResult = js.native
       
@@ -65,33 +64,32 @@ object Microsoft {
       var validateAuthority: Boolean = js.native
     }
     
-    @js.native
     trait AuthenticationResult extends StObject {
       
-      var accessToken: String = js.native
+      var accessToken: String
       
-      var accessTokenType: String = js.native
+      var accessTokenType: String
       
       /**
         * Creates authorization header for web requests.
         *
         * @returns {String} The authorization header.
         */
-      def createAuthorizationHeader(): String = js.native
+      def createAuthorizationHeader(): String
       
-      var expiresOn: Date = js.native
+      var expiresOn: Date
       
-      var idToken: String = js.native
+      var idToken: String
       
-      var isMultipleResourceRefreshToken: Boolean = js.native
+      var isMultipleResourceRefreshToken: Boolean
       
-      var status: String = js.native
+      var status: String
       
-      var statusCode: String = js.native
+      var statusCode: String
       
-      var tenantId: String = js.native
+      var tenantId: String
       
-      var userInfo: UserInfo = js.native
+      var userInfo: UserInfo
     }
     object AuthenticationResult {
       
@@ -150,41 +148,40 @@ object Microsoft {
     @js.native
     trait Promise extends StObject {
       
-      def `then`(doneCallBack: js.Function0[_]): js.Any = js.native
-      def `then`(doneCallBack: js.Function0[_], failCallBack: js.Function1[/* message */ String, _]): js.Any = js.native
+      def `then`(doneCallBack: js.Function0[js.Any]): js.Any = js.native
+      def `then`(doneCallBack: js.Function0[js.Any], failCallBack: js.Function1[/* message */ String, js.Any]): js.Any = js.native
     }
     
     @js.native
     trait PromiseAuthenticationContext extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationContext, _]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationContext, js.Any]): js.Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* context */ AuthenticationContext, _],
-        failCallBack: js.Function1[/* message */ String, _]
+        doneCallBack: js.Function1[/* context */ AuthenticationContext, js.Any],
+        failCallBack: js.Function1[/* message */ String, js.Any]
       ): js.Any = js.native
     }
     
     @js.native
     trait PromiseAuthenticationResult extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationResult, _]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* context */ AuthenticationResult, js.Any]): js.Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* context */ AuthenticationResult, _],
-        failCallBack: js.Function1[/* message */ String, _]
+        doneCallBack: js.Function1[/* context */ AuthenticationResult, js.Any],
+        failCallBack: js.Function1[/* message */ String, js.Any]
       ): js.Any = js.native
     }
     
     @js.native
     trait PromiseTokenCacheItems extends StObject {
       
-      def `then`(doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], _]): js.Any = js.native
+      def `then`(doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], js.Any]): js.Any = js.native
       def `then`(
-        doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], _],
-        failCallBack: js.Function1[/* message */ String, _]
+        doneCallBack: js.Function1[/* tokenCacheItems */ js.Array[TokenCacheItem], js.Any],
+        failCallBack: js.Function1[/* message */ String, js.Any]
       ): js.Any = js.native
     }
     
-    @js.native
     trait TokenCache extends StObject {
       
       /**
@@ -192,9 +189,9 @@ object Microsoft {
         *
         * @returns {Promise} Promise either fulfilled when operation is completed or rejected with error.
         */
-      def clear(): Promise = js.native
+      def clear(): Promise
       
-      var contextAuthority: String = js.native
+      var contextAuthority: String
       
       /**
         * Deletes cached item.
@@ -203,14 +200,14 @@ object Microsoft {
         *
         * @returns {Promise} Promise either fulfilled when operation is completed or rejected with error.
         */
-      def deleteItem(item: TokenCacheItem): Promise = js.native
+      def deleteItem(item: TokenCacheItem): Promise
       
       /**
         * Gets all cached items.
         *
         * @returns {Promise} Promise either fulfilled with array of cached items or rejected with error.
         */
-      def readItems(): PromiseTokenCacheItems = js.native
+      def readItems(): PromiseTokenCacheItems
     }
     object TokenCache {
       
@@ -242,26 +239,25 @@ object Microsoft {
       }
     }
     
-    @js.native
     trait TokenCacheItem extends StObject {
       
-      var accessToken: String = js.native
+      var accessToken: String
       
-      var authority: String = js.native
+      var authority: String
       
-      var clientId: String = js.native
+      var clientId: String
       
-      var displayableId: String = js.native
+      var displayableId: String
       
-      var expiresOn: Date = js.native
+      var expiresOn: Date
       
-      var isMultipleResourceRefreshToken: Boolean = js.native
+      var isMultipleResourceRefreshToken: Boolean
       
-      var resource: String = js.native
+      var resource: String
       
-      var tenantId: String = js.native
+      var tenantId: String
       
-      var userInfo: UserInfo = js.native
+      var userInfo: UserInfo
     }
     object TokenCacheItem {
       
@@ -313,24 +309,23 @@ object Microsoft {
       }
     }
     
-    @js.native
     trait UserInfo extends StObject {
       
-      var displayableId: String = js.native
+      var displayableId: String
       
-      var familyName: String = js.native
+      var familyName: String
       
-      var givenName: String = js.native
+      var givenName: String
       
-      var identityProvider: String = js.native
+      var identityProvider: String
       
-      var passwordChangeUrl: String = js.native
+      var passwordChangeUrl: String
       
-      var passwordExpiresOn: Date = js.native
+      var passwordExpiresOn: Date
       
-      var uniqueId: String = js.native
+      var uniqueId: String
       
-      var userId: String = js.native
+      var userId: String
     }
     object UserInfo {
       

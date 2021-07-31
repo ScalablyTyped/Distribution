@@ -23,11 +23,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.width
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SizeVariable extends VisualVariable {
+trait SizeVariable
+  extends StObject
+     with VisualVariable {
   
   /**
     * Only applicable when working in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).

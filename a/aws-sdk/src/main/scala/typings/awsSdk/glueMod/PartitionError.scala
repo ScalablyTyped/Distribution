@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionError extends StObject {
   
   /**
     * The details about the partition error.
     */
-  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.native
+  var ErrorDetail: js.UndefOr[typings.awsSdk.glueMod.ErrorDetail] = js.undefined
   
   /**
     * The values that define the partition.
     */
-  var PartitionValues: js.UndefOr[ValueStringList] = js.native
+  var PartitionValues: js.UndefOr[ValueStringList] = js.undefined
 }
 object PartitionError {
   

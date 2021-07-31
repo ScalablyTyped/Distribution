@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,95 +11,157 @@ sealed trait SocketErrorStatus extends StObject
 object SocketErrorStatus extends StObject {
   
   @js.native
-  sealed trait addressAlreadyInUse extends SocketErrorStatus
+  sealed trait addressAlreadyInUse
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait addressFamilyNotSupported extends SocketErrorStatus
+  sealed trait addressFamilyNotSupported
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait cannotAssignRequestedAddress extends SocketErrorStatus
+  sealed trait cannotAssignRequestedAddress
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateCommonNameIsIncorrect extends SocketErrorStatus
+  sealed trait certificateCommonNameIsIncorrect
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateExpired extends SocketErrorStatus
+  sealed trait certificateExpired
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateIsInvalid extends SocketErrorStatus
+  sealed trait certificateIsInvalid
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateNoRevocationCheck extends SocketErrorStatus
+  sealed trait certificateNoRevocationCheck
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateRevocationServerOffline extends SocketErrorStatus
+  sealed trait certificateRevocationServerOffline
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateRevoked extends SocketErrorStatus
+  sealed trait certificateRevoked
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateUntrustedRoot extends SocketErrorStatus
+  sealed trait certificateUntrustedRoot
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait certificateWrongUsage extends SocketErrorStatus
+  sealed trait certificateWrongUsage
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait classTypeNotFound extends SocketErrorStatus
+  sealed trait classTypeNotFound
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait connectionRefused extends SocketErrorStatus
+  sealed trait connectionRefused
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait connectionResetByPeer extends SocketErrorStatus
+  sealed trait connectionResetByPeer
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait connectionTimedOut extends SocketErrorStatus
+  sealed trait connectionTimedOut
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait hostIsDown extends SocketErrorStatus
+  sealed trait hostIsDown
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait hostNotFound extends SocketErrorStatus
+  sealed trait hostNotFound
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait httpInvalidServerResponse extends SocketErrorStatus
+  sealed trait httpInvalidServerResponse
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait messageTooLong extends SocketErrorStatus
+  sealed trait messageTooLong
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait networkDroppedConnectionOnReset extends SocketErrorStatus
+  sealed trait networkDroppedConnectionOnReset
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait networkIsDown extends SocketErrorStatus
+  sealed trait networkIsDown
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait networkIsUnreachable extends SocketErrorStatus
+  sealed trait networkIsUnreachable
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait noAddressesFound extends SocketErrorStatus
+  sealed trait noAddressesFound
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait noDataRecordOfRequestedType extends SocketErrorStatus
+  sealed trait noDataRecordOfRequestedType
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait nonAuthoritativeHostNotFound extends SocketErrorStatus
+  sealed trait nonAuthoritativeHostNotFound
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait operationAborted extends SocketErrorStatus
+  sealed trait operationAborted
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait socketTypeNotSupported extends SocketErrorStatus
+  sealed trait socketTypeNotSupported
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait softwareCausedConnectionAbort extends SocketErrorStatus
+  sealed trait softwareCausedConnectionAbort
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait tooManyOpenFiles extends SocketErrorStatus
+  sealed trait tooManyOpenFiles
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait unknown extends SocketErrorStatus
+  sealed trait unknown
+    extends StObject
+       with SocketErrorStatus
   
   @js.native
-  sealed trait unreachableHost extends SocketErrorStatus
+  sealed trait unreachableHost
+    extends StObject
+       with SocketErrorStatus
 }

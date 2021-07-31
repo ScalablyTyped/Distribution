@@ -2,25 +2,23 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for an Android permission and its grant state.
   */
-@js.native
 trait SchemaPermissionGrant extends StObject {
   
   /**
     * The Android permission or group, e.g. android.permission.READ_CALENDAR or
     * android.permission_group.CALENDAR.
     */
-  var permission: js.UndefOr[String] = js.native
+  var permission: js.UndefOr[String] = js.undefined
   
   /**
     * The policy for granting the permission.
     */
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
 }
 object SchemaPermissionGrant {
   

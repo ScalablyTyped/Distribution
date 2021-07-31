@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecGrpcRoute extends StObject {
   
   /**
     * The action to take if a match is determined.
     */
-  var action: Input[RouteSpecGrpcRouteAction] = js.native
+  var action: Input[RouteSpecGrpcRouteAction]
   
   /**
     * The criteria for determining an gRPC request match.
     */
-  var `match`: Input[RouteSpecGrpcRouteMatch] = js.native
+  var `match`: Input[RouteSpecGrpcRouteMatch]
   
   /**
     * The retry policy.
     */
-  var retryPolicy: js.UndefOr[Input[RouteSpecGrpcRouteRetryPolicy]] = js.native
+  var retryPolicy: js.UndefOr[Input[RouteSpecGrpcRouteRetryPolicy]] = js.undefined
   
   /**
     * The types of timeouts.
     */
-  var timeout: js.UndefOr[Input[RouteSpecGrpcRouteTimeout]] = js.native
+  var timeout: js.UndefOr[Input[RouteSpecGrpcRouteTimeout]] = js.undefined
 }
 object RouteSpecGrpcRoute {
   

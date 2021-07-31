@@ -2,23 +2,21 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLayerOptions extends StObject {
   
-  var databoxId: js.UndefOr[String] = js.native
+  var databoxId: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var geotableId: js.UndefOr[String] = js.native
+  var geotableId: js.UndefOr[String] = js.undefined
   
-  var pointDensityType: js.UndefOr[PointDensityType] = js.native
+  var pointDensityType: js.UndefOr[PointDensityType] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var tags: js.UndefOr[String] = js.native
+  var tags: js.UndefOr[String] = js.undefined
 }
 object CustomLayerOptions {
   

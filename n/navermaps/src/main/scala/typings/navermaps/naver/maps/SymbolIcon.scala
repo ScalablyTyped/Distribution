@@ -2,29 +2,27 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolIcon extends StObject {
   
-  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.native
+  var anchor: js.UndefOr[Point | PointLiteral | Position] = js.undefined
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
-  var path: SymbolPath | (js.Array[Point | PointLiteral]) = js.native
+  var path: SymbolPath | (js.Array[Point | PointLiteral])
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[SymbolStyle] = js.native
+  var style: js.UndefOr[SymbolStyle] = js.undefined
 }
 object SymbolIcon {
   

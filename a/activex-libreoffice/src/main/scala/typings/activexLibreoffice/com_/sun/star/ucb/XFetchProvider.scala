@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the possibility to get the contents of the columns of several rows of a {@link ContentResultSet} with a single function call. */
-@js.native
-trait XFetchProvider extends XInterface {
+trait XFetchProvider
+  extends StObject
+     with XInterface {
   
   /**
     * returns the contents of the columns of the indicated rows
@@ -18,7 +18,7 @@ trait XFetchProvider extends XInterface {
     * @param bDirection `TRUE` , if you want the rows to be read in the same order, as they are contained in the result set ( `TRUE` <-> forward step; `FALSE`
     * @returns {@link FetchResult.Rows} contains a sequence of anys. Each of these anys contains a sequence of anys.
     */
-  def fetch(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult = js.native
+  def fetch(nRowStartPosition: Double, nRowCount: Double, bDirection: Boolean): FetchResult
 }
 object XFetchProvider {
   

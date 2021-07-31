@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/container/v1", "container_v1.Resource$Projects$Locations")
@@ -34,7 +33,7 @@ class ResourceProjectsLocations protected () extends StObject {
     */
   def getServerConfig(): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(callback: BodyResponseCallback[SchemaServerConfig]): Unit = js.native
-  def getServerConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaServerConfig] = js.native
+  def getServerConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(params: ParamsResourceProjectsLocationsGetserverconfig): GaxiosPromise[SchemaServerConfig] = js.native
   def getServerConfig(
     params: ParamsResourceProjectsLocationsGetserverconfig,

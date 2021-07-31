@@ -3,21 +3,19 @@ package typings.qunit
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Actual extends StObject {
     
-    var actual: js.Any = js.native
+    var actual: js.Any
     
-    var expected: js.Any = js.native
+    var expected: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var result: Boolean = js.native
+    var result: Boolean
   }
   object Actual {
     
@@ -44,20 +42,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Failed extends StObject {
     
-    var failed: Double = js.native
+    var failed: Double
     
-    var module: String = js.native
+    var module: String
     
-    var name: String = js.native
+    var name: String
     
-    var passed: Double = js.native
+    var passed: Double
     
-    var runtime: Double = js.native
+    var runtime: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object Failed {
     
@@ -90,16 +87,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var tooltip: js.UndefOr[String] = js.native
+    var tooltip: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String] | StringDictionary[String]] = js.native
+    var value: js.UndefOr[String | js.Array[String] | StringDictionary[String]] = js.undefined
   }
   object Id {
     
@@ -141,12 +137,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxDepth extends StObject {
     
-    var maxDepth: Double = js.native
+    var maxDepth: Double
     
-    def parse(data: js.Any): String = js.native
+    def parse(data: js.Any): String
   }
   object MaxDepth {
     

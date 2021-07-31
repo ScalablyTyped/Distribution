@@ -2,13 +2,11 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fd extends StObject {
   
-  var fd: Double = js.native
+  var fd: Double
 }
 object Fd {
   

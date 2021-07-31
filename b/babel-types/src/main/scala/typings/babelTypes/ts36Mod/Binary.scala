@@ -4,7 +4,6 @@ import typings.babelTypes.babelTypesStrings.Ampersand
 import typings.babelTypes.babelTypesStrings.AmpersandAmpersand
 import typings.babelTypes.babelTypesStrings.Asterisk
 import typings.babelTypes.babelTypesStrings.AsteriskAsterisk
-import typings.babelTypes.babelTypesStrings.BinaryExpression
 import typings.babelTypes.babelTypesStrings.EqualssignEqualssign
 import typings.babelTypes.babelTypesStrings.EqualssignEqualssignEqualssign
 import typings.babelTypes.babelTypesStrings.ExclamationmarkEqualssign
@@ -16,7 +15,6 @@ import typings.babelTypes.babelTypesStrings.GreaterthansignGreaterthansignGreate
 import typings.babelTypes.babelTypesStrings.Lessthansign
 import typings.babelTypes.babelTypesStrings.LessthansignEqualssign
 import typings.babelTypes.babelTypesStrings.LessthansignLessthansign
-import typings.babelTypes.babelTypesStrings.LogicalExpression
 import typings.babelTypes.babelTypesStrings.Percentsign
 import typings.babelTypes.babelTypesStrings.Plussign
 import typings.babelTypes.babelTypesStrings.Slash
@@ -27,7 +25,6 @@ import typings.babelTypes.babelTypesStrings.in
 import typings.babelTypes.babelTypesStrings.instanceof
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -44,11 +41,10 @@ object Binary {
     loc: SourceLocation,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
     right: Expression,
-    start: Double,
-    `type`: BinaryExpression
+    start: Double
   ): typings.babelTypes.ts36Mod.BinaryExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BinaryExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BinaryExpression_]
   }
   
@@ -59,11 +55,10 @@ object Binary {
     loc: SourceLocation,
     operator: VerticallineVerticalline | AmpersandAmpersand,
     right: Expression,
-    start: Double,
-    `type`: LogicalExpression
+    start: Double
   ): typings.babelTypes.ts36Mod.LogicalExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], left = left.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.LogicalExpression_]
   }
 }

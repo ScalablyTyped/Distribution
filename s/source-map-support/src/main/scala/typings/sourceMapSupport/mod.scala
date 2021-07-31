@@ -7,56 +7,51 @@ import typings.sourceMapSupport.sourceMapSupportStrings.node
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("source-map-support", "getErrorSource")
+  @JSImport("source-map-support", JSImport.Namespace)
   @js.native
-  def getErrorSource(error: Error): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("source-map-support", "install")
-  @js.native
-  def install(): Unit = js.native
-  @JSImport("source-map-support", "install")
-  @js.native
-  def install(options: Options): Unit = js.native
+  @scala.inline
+  def getErrorSource(error: Error): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getErrorSource")(error.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("source-map-support", "mapSourcePosition")
-  @js.native
-  def mapSourcePosition(position: Position): Position = js.native
+  @scala.inline
+  def install(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")().asInstanceOf[Unit]
+  @scala.inline
+  def install(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("source-map-support", "resetRetrieveHandlers")
-  @js.native
-  def resetRetrieveHandlers(): Unit = js.native
+  @scala.inline
+  def mapSourcePosition(position: Position): Position = ^.asInstanceOf[js.Dynamic].applyDynamic("mapSourcePosition")(position.asInstanceOf[js.Any]).asInstanceOf[Position]
   
-  @JSImport("source-map-support", "retrieveSourceMap")
-  @js.native
-  def retrieveSourceMap(source: String): UrlAndMap | Null = js.native
+  @scala.inline
+  def resetRetrieveHandlers(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetRetrieveHandlers")().asInstanceOf[Unit]
   
-  @JSImport("source-map-support", "wrapCallSite")
-  @js.native
-  def wrapCallSite(frame: js.Any): js.Any = js.native
+  @scala.inline
+  def retrieveSourceMap(source: String): UrlAndMap | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("retrieveSourceMap")(source.asInstanceOf[js.Any]).asInstanceOf[UrlAndMap | Null]
   
-  @js.native
+  @scala.inline
+  def wrapCallSite(frame: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapCallSite")(frame.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait Options extends StObject {
     
-    var emptyCacheBetweenOperations: js.UndefOr[Boolean] = js.native
+    var emptyCacheBetweenOperations: js.UndefOr[Boolean] = js.undefined
     
-    var environment: js.UndefOr[auto | browser | node] = js.native
+    var environment: js.UndefOr[auto | browser | node] = js.undefined
     
-    var handleUncaughtExceptions: js.UndefOr[Boolean] = js.native
+    var handleUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
     
-    var hookRequire: js.UndefOr[Boolean] = js.native
+    var hookRequire: js.UndefOr[Boolean] = js.undefined
     
-    var overrideRetrieveFile: js.UndefOr[Boolean] = js.native
+    var overrideRetrieveFile: js.UndefOr[Boolean] = js.undefined
     
-    var overrideRetrieveSourceMap: js.UndefOr[Boolean] = js.native
+    var overrideRetrieveSourceMap: js.UndefOr[Boolean] = js.undefined
     
-    var retrieveFile: js.UndefOr[js.Function1[/* path */ String, String]] = js.native
+    var retrieveFile: js.UndefOr[js.Function1[/* path */ String, String]] = js.undefined
     
-    var retrieveSourceMap: js.UndefOr[js.Function1[/* source */ String, UrlAndMap | Null]] = js.native
+    var retrieveSourceMap: js.UndefOr[js.Function1[/* source */ String, UrlAndMap | Null]] = js.undefined
   }
   object Options {
     
@@ -119,14 +114,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var source: String = js.native
+    var source: String
   }
   object Position {
     
@@ -150,12 +144,11 @@ object mod {
     }
   }
   
-  @js.native
   trait UrlAndMap extends StObject {
     
-    var map: String | RawSourceMap = js.native
+    var map: String | RawSourceMap
     
-    var url: String = js.native
+    var url: String
   }
   object UrlAndMap {
     

@@ -2,24 +2,22 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about the document that raised the SelectionChanged event.
   */
-@js.native
 trait DocumentSelectionChangedEventArgs extends StObject {
   
   /**
     * Gets an {@link Office.Document} object that represents the document that raised the SelectionChanged event.
     */
-  var document: Document = js.native
+  var document: Document
   
   /**
     * Get an {@link Office.EventType} enumeration value that identifies the kind of event that was raised.
     */
-  var `type`: EventType = js.native
+  var `type`: EventType
 }
 object DocumentSelectionChangedEventArgs {
   

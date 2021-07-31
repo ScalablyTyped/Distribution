@@ -2,31 +2,29 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRecord extends StObject {
   
   /**
     * The properties of an experiment.
     */
-  var Experiment: js.UndefOr[typings.awsSdk.sagemakerMod.Experiment] = js.native
+  var Experiment: js.UndefOr[typings.awsSdk.sagemakerMod.Experiment] = js.undefined
   
   /**
     * The properties of a training job.
     */
-  var TrainingJob: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJob] = js.native
+  var TrainingJob: js.UndefOr[typings.awsSdk.sagemakerMod.TrainingJob] = js.undefined
   
   /**
     * The properties of a trial.
     */
-  var Trial: js.UndefOr[typings.awsSdk.sagemakerMod.Trial] = js.native
+  var Trial: js.UndefOr[typings.awsSdk.sagemakerMod.Trial] = js.undefined
   
   /**
     * The properties of a trial component.
     */
-  var TrialComponent: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponent] = js.native
+  var TrialComponent: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponent] = js.undefined
 }
 object SearchRecord {
   

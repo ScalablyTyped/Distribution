@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxFloatingActionButton object.
   */
 @js.native
-trait ASPxClientFloatingActionButton extends ASPxClientControl {
+trait ASPxClientFloatingActionButton
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs when the end user collapses the action group.

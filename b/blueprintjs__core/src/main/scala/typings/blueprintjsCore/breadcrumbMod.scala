@@ -5,7 +5,6 @@ import typings.blueprintjsCore.propsMod.ILinkProps
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbMod {
@@ -14,13 +13,13 @@ object breadcrumbMod {
   @js.native
   val Breadcrumb: FunctionComponent[IBreadcrumbProps] = js.native
   
-  @js.native
   trait IBreadcrumbProps
-    extends IActionProps
+    extends StObject
+       with IActionProps
        with ILinkProps {
     
     /** Whether this breadcrumb is the current breadcrumb. */
-    var current: js.UndefOr[Boolean] = js.native
+    var current: js.UndefOr[Boolean] = js.undefined
   }
   object IBreadcrumbProps {
     

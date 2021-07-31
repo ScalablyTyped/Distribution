@@ -8,18 +8,20 @@ import typings.expressServeStaticCore.mod.Query
 import typings.falcor.mod.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("falcor-express", "dataSourceRoute")
+  @JSImport("falcor-express", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def dataSourceRoute(
     getDataSource: js.Function2[
-      /* req */ Request_[ParamsDictionary, _, _, Query], 
-      /* res */ Response_[_], 
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+      /* res */ Response_[js.Any], 
       DataSource
     ]
-  ): Handler = js.native
+  ): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("dataSourceRoute")(getDataSource.asInstanceOf[js.Any]).asInstanceOf[Handler]
 }

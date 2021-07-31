@@ -3,66 +3,64 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteTableRoute extends StObject {
   
   /**
     * The CIDR block of the route.
     */
-  var cidrBlock: js.UndefOr[Input[String]] = js.native
+  var cidrBlock: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a VPC Egress Only Internet Gateway.
     */
-  var egressOnlyGatewayId: js.UndefOr[Input[String]] = js.native
+  var egressOnlyGatewayId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a VPC internet gateway or a virtual private gateway.
     */
-  var gatewayId: js.UndefOr[Input[String]] = js.native
+  var gatewayId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of an EC2 instance.
     */
-  var instanceId: js.UndefOr[Input[String]] = js.native
+  var instanceId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Ipv6 CIDR block of the route.
     */
-  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+  var ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a Outpost local gateway.
     */
-  var localGatewayId: js.UndefOr[Input[String]] = js.native
+  var localGatewayId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a VPC NAT gateway.
     */
-  var natGatewayId: js.UndefOr[Input[String]] = js.native
+  var natGatewayId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of an EC2 network interface.
     */
-  var networkInterfaceId: js.UndefOr[Input[String]] = js.native
+  var networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of an EC2 Transit Gateway.
     */
-  var transitGatewayId: js.UndefOr[Input[String]] = js.native
+  var transitGatewayId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a VPC Endpoint.
     */
-  var vpcEndpointId: js.UndefOr[Input[String]] = js.native
+  var vpcEndpointId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Identifier of a VPC peering connection.
     */
-  var vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
+  var vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
 }
 object RouteTableRoute {
   

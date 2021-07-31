@@ -5,13 +5,11 @@ import typings.react.mod.Validator
 import typings.reactVirtualized.esScrollSyncMod.ScrollSyncChildProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenValidator extends StObject {
   
-  var children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]] = js.native
+  var children: Validator[js.Function1[/* props */ ScrollSyncChildProps, ReactNode]]
 }
 object ChildrenValidator {
   

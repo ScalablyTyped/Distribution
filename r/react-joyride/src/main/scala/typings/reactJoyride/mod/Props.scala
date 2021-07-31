@@ -2,29 +2,29 @@ package typings.reactJoyride.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Props extends CommonProps {
+trait Props
+  extends StObject
+     with CommonProps {
   
-  var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* data */ CallBackProps, Unit]] = js.undefined
   
-  var continuous: js.UndefOr[Boolean] = js.native
+  var continuous: js.UndefOr[Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, _]] = js.native
+  var getHelpers: js.UndefOr[js.Function1[/* helpers */ StoreHelpers, js.Any]] = js.undefined
   
-  var run: js.UndefOr[Boolean] = js.native
+  var run: js.UndefOr[Boolean] = js.undefined
   
-  var scrollOffset: js.UndefOr[Double] = js.native
+  var scrollOffset: js.UndefOr[Double] = js.undefined
   
-  var scrollToFirstStep: js.UndefOr[Boolean] = js.native
+  var scrollToFirstStep: js.UndefOr[Boolean] = js.undefined
   
-  var stepIndex: js.UndefOr[Double] = js.native
+  var stepIndex: js.UndefOr[Double] = js.undefined
   
-  var steps: js.Array[Step] = js.native
+  var steps: js.Array[Step]
 }
 object Props {
   
@@ -56,7 +56,7 @@ object Props {
     def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
     
     @scala.inline
-    def setGetHelpers(value: /* helpers */ StoreHelpers => _): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
+    def setGetHelpers(value: /* helpers */ StoreHelpers => js.Any): Self = StObject.set(x, "getHelpers", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetHelpersUndefined: Self = StObject.set(x, "getHelpers", js.undefined)

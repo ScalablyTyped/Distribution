@@ -2,35 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AndroidMinimumOperatingSystem extends StObject {
   
   // Version 4.0 or later.
-  var v4_0: js.UndefOr[Boolean] = js.native
+  var v4_0: js.UndefOr[Boolean] = js.undefined
   
   // Version 4.0.3 or later.
-  var v4_0_3: js.UndefOr[Boolean] = js.native
+  var v4_0_3: js.UndefOr[Boolean] = js.undefined
   
   // Version 4.1 or later.
-  var v4_1: js.UndefOr[Boolean] = js.native
+  var v4_1: js.UndefOr[Boolean] = js.undefined
   
   // Version 4.2 or later.
-  var v4_2: js.UndefOr[Boolean] = js.native
+  var v4_2: js.UndefOr[Boolean] = js.undefined
   
   // Version 4.3 or later.
-  var v4_3: js.UndefOr[Boolean] = js.native
+  var v4_3: js.UndefOr[Boolean] = js.undefined
   
   // Version 4.4 or later.
-  var v4_4: js.UndefOr[Boolean] = js.native
+  var v4_4: js.UndefOr[Boolean] = js.undefined
   
   // Version 5.0 or later.
-  var v5_0: js.UndefOr[Boolean] = js.native
+  var v5_0: js.UndefOr[Boolean] = js.undefined
   
   // Version 5.1 or later.
-  var v5_1: js.UndefOr[Boolean] = js.native
+  var v5_1: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidMinimumOperatingSystem {
   

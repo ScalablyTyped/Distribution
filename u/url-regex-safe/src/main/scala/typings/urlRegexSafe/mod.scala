@@ -3,43 +3,43 @@ package typings.urlRegexSafe
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RegExp = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RegExp]
+  @scala.inline
+  def apply(options: Options): RegExp = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RegExp]
+  
   @JSImport("url-regex-safe", JSImport.Namespace)
   @js.native
-  def apply(): RegExp = js.native
-  @JSImport("url-regex-safe", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RegExp = js.native
+  val ^ : js.Any = js.native
   
   /* Inlined std.Partial<{  exact :boolean,   strict :boolean,   auth :boolean,   localhost :boolean,   parens :boolean,   apostrophes :boolean,   trailingPeriod :boolean,   ipv4 :boolean,   ipv6 :boolean,   tlds :std.Array<string>,   returnString :boolean}> */
-  @js.native
   trait Options extends StObject {
     
-    var apostrophes: js.UndefOr[Boolean] = js.native
+    var apostrophes: js.UndefOr[Boolean] = js.undefined
     
-    var auth: js.UndefOr[Boolean] = js.native
+    var auth: js.UndefOr[Boolean] = js.undefined
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var ipv4: js.UndefOr[Boolean] = js.native
+    var ipv4: js.UndefOr[Boolean] = js.undefined
     
-    var ipv6: js.UndefOr[Boolean] = js.native
+    var ipv6: js.UndefOr[Boolean] = js.undefined
     
-    var localhost: js.UndefOr[Boolean] = js.native
+    var localhost: js.UndefOr[Boolean] = js.undefined
     
-    var parens: js.UndefOr[Boolean] = js.native
+    var parens: js.UndefOr[Boolean] = js.undefined
     
-    var returnString: js.UndefOr[Boolean] = js.native
+    var returnString: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var tlds: js.UndefOr[js.Array[String]] = js.native
+    var tlds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var trailingPeriod: js.UndefOr[Boolean] = js.native
+    var trailingPeriod: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

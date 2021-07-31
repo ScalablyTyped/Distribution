@@ -3,26 +3,24 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpBody extends StObject {
   
   /** The HTTP Content-Type header value specifying the content type of the body. */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** The HTTP request/response body as raw binary. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /** Application specific response metadata. Must be set in the first response for streaming APIs. */
   var extensions: js.UndefOr[
     js.Array[
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody with TopLevel[js.Any]
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody & TopLevel[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object HttpBody {
   
@@ -52,7 +50,7 @@ object HttpBody {
       value: js.Array[
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
@@ -63,7 +61,7 @@ object HttpBody {
     def setExtensionsVarargs(
       value: (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody with TopLevel[js.Any])*
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.HttpBody & TopLevel[js.Any])*
     ): Self = StObject.set(x, "extensions", js.Array(value :_*))
   }
 }

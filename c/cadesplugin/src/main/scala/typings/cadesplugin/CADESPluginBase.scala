@@ -27,7 +27,6 @@ import typings.std.Error
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -59,7 +58,7 @@ trait CADESPluginBase
   
   val JSModuleVersion: String = js.native
   
-  def async_spawn[T](generatorFun: js.Function1[/* repeated */ js.Any, Iterator[T, _, js.UndefOr[scala.Nothing]]]): T = js.native
+  def async_spawn[T](generatorFun: js.Function1[/* repeated */ js.Any, Iterator[T, js.Any, Unit]]): T = js.native
   
   val current_log_level: Double = js.native
   
@@ -70,4 +69,12 @@ trait CADESPluginBase
   def set(obj: CADESPluginBase): Unit = js.native
   
   def set_log_level(level: ValuesOf[LogLevel]): Unit = js.native
+  
+  /* InferMemberOverrides */
+  override def `then`[B](
+    onFulfilled: js.Function1[scala.Nothing, B | js.Thenable[B]],
+    onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+  ): js.Promise[B] & js.Thenable[B] = js.native
+  /* InferMemberOverrides */
+  override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] & js.Thenable[B] = js.native
 }

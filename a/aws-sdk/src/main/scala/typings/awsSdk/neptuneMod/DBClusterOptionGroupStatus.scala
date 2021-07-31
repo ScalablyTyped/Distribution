@@ -2,21 +2,19 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterOptionGroupStatus extends StObject {
   
   /**
     * Specifies the name of the DB cluster option group.
     */
-  var DBClusterOptionGroupName: js.UndefOr[String] = js.native
+  var DBClusterOptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the status of the DB cluster option group.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object DBClusterOptionGroupStatus {
   

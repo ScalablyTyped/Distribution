@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersFilter extends StObject {
   
   /**
     * The name of the filter.
     */
-  var Key: ParametersFilterKey = js.native
+  var Key: ParametersFilterKey
   
   /**
     * The filter values.
     */
-  var Values: ParametersFilterValueList = js.native
+  var Values: ParametersFilterValueList
 }
 object ParametersFilter {
   

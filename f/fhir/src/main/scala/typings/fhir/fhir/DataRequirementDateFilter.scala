@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What dates/date ranges are expected
   */
-@js.native
-trait DataRequirementDateFilter extends Element {
+trait DataRequirementDateFilter
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.native
+  var _path: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'valueDateTime'.
     */
-  var _valueDateTime: js.UndefOr[Element] = js.native
+  var _valueDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * The date-valued attribute of the filter
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valueDateTime: js.UndefOr[dateTime] = js.native
+  var valueDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valueDuration: js.UndefOr[Duration] = js.native
+  var valueDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * The value of the filter, as a Period, DateTime, or Duration value
     */
-  var valuePeriod: js.UndefOr[Period] = js.native
+  var valuePeriod: js.UndefOr[Period] = js.undefined
 }
 object DataRequirementDateFilter {
   

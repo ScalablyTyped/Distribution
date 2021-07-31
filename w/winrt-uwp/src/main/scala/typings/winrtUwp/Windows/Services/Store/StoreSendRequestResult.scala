@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Web.Http.HttpStatusCode
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides response data for a request that is sent to the Windows Store. */
-@js.native
 trait StoreSendRequestResult extends StObject {
   
   /** Gets the error code for the request, if the operation encountered an error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
   
   /** Gets the HTTP status code for the request. */
-  var httpStatusCode: HttpStatusCode = js.native
+  var httpStatusCode: HttpStatusCode
   
   /** Gets the response data for the request. */
-  var response: String = js.native
+  var response: String
 }
 object StoreSendRequestResult {
   

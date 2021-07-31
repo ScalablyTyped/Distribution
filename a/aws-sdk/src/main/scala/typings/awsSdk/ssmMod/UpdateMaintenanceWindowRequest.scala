@@ -2,76 +2,74 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMaintenanceWindowRequest extends StObject {
   
   /**
     * Whether targets must be registered with the maintenance window before tasks can be defined for those targets.
     */
-  var AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.native
+  var AllowUnassociatedTargets: js.UndefOr[MaintenanceWindowAllowUnassociatedTargets] = js.undefined
   
   /**
     * The number of hours before the end of the maintenance window that Systems Manager stops scheduling new tasks for execution.
     */
-  var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.native
+  var Cutoff: js.UndefOr[MaintenanceWindowCutoff] = js.undefined
   
   /**
     * An optional description for the update request.
     */
-  var Description: js.UndefOr[MaintenanceWindowDescription] = js.native
+  var Description: js.UndefOr[MaintenanceWindowDescription] = js.undefined
   
   /**
     * The duration of the maintenance window in hours.
     */
-  var Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.native
+  var Duration: js.UndefOr[MaintenanceWindowDurationHours] = js.undefined
   
   /**
     * Whether the maintenance window is enabled.
     */
-  var Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.native
+  var Enabled: js.UndefOr[MaintenanceWindowEnabled] = js.undefined
   
   /**
     * The date and time, in ISO-8601 Extended format, for when you want the maintenance window to become inactive. EndDate allows you to set a date and time in the future when the maintenance window will no longer run.
     */
-  var EndDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.native
+  var EndDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   
   /**
     * The name of the maintenance window.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * If True, then all fields that are required by the CreateMaintenanceWindow action are also required for this API request. Optional fields that are not specified are set to null. 
     */
-  var Replace: js.UndefOr[Boolean] = js.native
+  var Replace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The schedule of the maintenance window in the form of a cron or rate expression.
     */
-  var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.native
+  var Schedule: js.UndefOr[MaintenanceWindowSchedule] = js.undefined
   
   /**
     * The number of days to wait after the date and time specified by a CRON expression before running the maintenance window. For example, the following cron expression schedules a maintenance window to run the third Tuesday of every month at 11:30 PM.  cron(0 30 23 ? * TUE#3 *)  If the schedule offset is 2, the maintenance window won't run until two days later.
     */
-  var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.native
+  var ScheduleOffset: js.UndefOr[MaintenanceWindowOffset] = js.undefined
   
   /**
     * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
-  var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.native
+  var ScheduleTimezone: js.UndefOr[MaintenanceWindowTimezone] = js.undefined
   
   /**
     * The time zone that the scheduled maintenance window executions are based on, in Internet Assigned Numbers Authority (IANA) format. For example: "America/Los_Angeles", "etc/UTC", or "Asia/Seoul". For more information, see the Time Zone Database on the IANA website.
     */
-  var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.native
+  var StartDate: js.UndefOr[MaintenanceWindowStringDateTime] = js.undefined
   
   /**
     * The ID of the maintenance window to update.
     */
-  var WindowId: MaintenanceWindowId = js.native
+  var WindowId: MaintenanceWindowId
 }
 object UpdateMaintenanceWindowRequest {
   

@@ -2,17 +2,15 @@ package typings.neatCsv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Header extends StObject {
     
-    var header: String = js.native
+    var header: String
     
-    var index: Double = js.native
+    var index: Double
   }
   object Header {
     
@@ -33,14 +31,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var header: String = js.native
+    var header: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Index {
     

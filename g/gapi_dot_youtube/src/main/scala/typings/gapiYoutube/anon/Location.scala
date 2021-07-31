@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The geolocation information associated with the video.
     */
-  var location: Elevation = js.native
+  var location: Elevation
   
   /**
     * The text description of the location where the video was recorded.
     */
-  var locationDescription: String = js.native
+  var locationDescription: String
   
   /**
     * The date and time when the video was recorded. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var recordingDate: String = js.native
+  var recordingDate: String
 }
 object Location {
   

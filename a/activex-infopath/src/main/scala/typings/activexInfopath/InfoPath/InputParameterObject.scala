@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputParameterObject extends StObject {
   
   @JSName("InfoPath.InputParameterObject_typekey")
-  var InfoPathDotInputParameterObject_typekey: InputParameterObject = js.native
+  var InfoPathDotInputParameterObject_typekey: InputParameterObject
   
-  val Name: String = js.native
+  val Name: String
   
-  val Value: String = js.native
+  val Value: String
 }
 object InputParameterObject {
   

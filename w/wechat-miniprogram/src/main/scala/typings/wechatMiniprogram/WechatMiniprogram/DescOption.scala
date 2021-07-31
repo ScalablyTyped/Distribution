@@ -2,21 +2,19 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 可选的字体描述符 */
-@js.native
 trait DescOption extends StObject {
   
   /** 字体样式，可选值为 normal / italic / oblique */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /** 设置小型大写字母的字体显示文本，可选值为 normal / small-caps / inherit */
-  var variant: js.UndefOr[String] = js.native
+  var variant: js.UndefOr[String] = js.undefined
   
   /** 字体粗细，可选值为 normal / bold / 100 / 200../ 900 */
-  var weight: js.UndefOr[String] = js.native
+  var weight: js.UndefOr[String] = js.undefined
 }
 object DescOption {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniqueProblem extends StObject {
   
   /**
     * A message about the unique problems' result.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * Information about the problems.
     */
-  var problems: js.UndefOr[Problems] = js.native
+  var problems: js.UndefOr[Problems] = js.undefined
 }
 object UniqueProblem {
   

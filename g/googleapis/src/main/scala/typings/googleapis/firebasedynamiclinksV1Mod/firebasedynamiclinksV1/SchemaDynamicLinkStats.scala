@@ -2,19 +2,17 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Analytics stats of a Dynamic Link for a given timeframe.
   */
-@js.native
 trait SchemaDynamicLinkStats extends StObject {
   
   /**
     * Dynamic Link event stats.
     */
-  var linkEventStats: js.UndefOr[js.Array[SchemaDynamicLinkEventStat]] = js.native
+  var linkEventStats: js.UndefOr[js.Array[SchemaDynamicLinkEventStat]] = js.undefined
 }
 object SchemaDynamicLinkStats {
   

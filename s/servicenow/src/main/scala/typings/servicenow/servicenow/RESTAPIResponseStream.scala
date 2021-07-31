@@ -2,15 +2,13 @@ package typings.servicenow.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RESTAPIResponseStream extends StObject {
   
-  def writeStream(stream: js.Object): Unit = js.native
+  def writeStream(stream: js.Object): Unit
   
-  def writeString(data: String): Unit = js.native
+  def writeString(data: String): Unit
 }
 object RESTAPIResponseStream {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateJobFlowsInput extends StObject {
   
   /**
     * A list of job flows to be shutdown.
     */
-  var JobFlowIds: XmlStringList = js.native
+  var JobFlowIds: XmlStringList
 }
 object TerminateJobFlowsInput {
   

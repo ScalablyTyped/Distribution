@@ -1,28 +1,26 @@
 package typings.swaggerSchemaOfficial.mod
 
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.application
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuth2ApplicationSecurity
-  extends BaseOAuthSecurity
+  extends StObject
+     with BaseOAuthSecurity
      with Security {
   
   @JSName("flow")
-  var flow_OAuth2ApplicationSecurity: application = js.native
+  var flow_OAuth2ApplicationSecurity: application
   
-  var tokenUrl: String = js.native
+  var tokenUrl: String
 }
 object OAuth2ApplicationSecurity {
   
   @scala.inline
-  def apply(flow: application, tokenUrl: String, `type`: oauth2): OAuth2ApplicationSecurity = {
-    val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(tokenUrl: String): OAuth2ApplicationSecurity = {
+    val __obj = js.Dynamic.literal(flow = "application", tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2ApplicationSecurity]
   }
   

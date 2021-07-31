@@ -2,37 +2,35 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSStyle extends StObject {
   
   /**
     * CSS properties in the style.
     */
-  var cssProperties: js.Array[CSSProperty] = js.native
+  var cssProperties: js.Array[CSSProperty]
   
   /**
     * Style declaration text (if available).
     */
-  var cssText: js.UndefOr[String] = js.native
+  var cssText: js.UndefOr[String] = js.undefined
   
   /**
     * Style declaration range in the enclosing stylesheet (if available).
     */
-  var range: js.UndefOr[SourceRange] = js.native
+  var range: js.UndefOr[SourceRange] = js.undefined
   
   /**
     * Computed values for all shorthands found in the style.
     */
-  var shorthandEntries: js.Array[ShorthandEntry] = js.native
+  var shorthandEntries: js.Array[ShorthandEntry]
   
   /**
     * The css style sheet identifier (absent for user agent stylesheet and user-specified
     * stylesheet rules) this rule came from.
     */
-  var styleSheetId: js.UndefOr[StyleSheetId] = js.native
+  var styleSheetId: js.UndefOr[StyleSheetId] = js.undefined
 }
 object CSSStyle {
   

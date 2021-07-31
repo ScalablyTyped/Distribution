@@ -2,7 +2,6 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,46 +19,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * in the absence of a `Policy` being defined or inherited for the resource in
   * question.
   */
-@js.native
 trait SchemaConstraint extends StObject {
   
   /**
     * Defines this constraint as being a BooleanConstraint.
     */
-  var booleanConstraint: js.UndefOr[SchemaBooleanConstraint] = js.native
+  var booleanConstraint: js.UndefOr[SchemaBooleanConstraint] = js.undefined
   
   /**
     * The evaluation behavior of this constraint in the absense of
     * &#39;Policy&#39;.
     */
-  var constraintDefault: js.UndefOr[String] = js.native
+  var constraintDefault: js.UndefOr[String] = js.undefined
   
   /**
     * Detailed description of what this `Constraint` controls as well as how
     * and where it is enforced.  Mutable.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The human readable name.  Mutable.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Defines this constraint as being a ListConstraint.
     */
-  var listConstraint: js.UndefOr[SchemaListConstraint] = js.native
+  var listConstraint: js.UndefOr[SchemaListConstraint] = js.undefined
   
   /**
     * Immutable value, required to globally be unique. For example,
     * `constraints/serviceuser.services`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Version of the `Constraint`. Default version is 0;
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaConstraint {
   

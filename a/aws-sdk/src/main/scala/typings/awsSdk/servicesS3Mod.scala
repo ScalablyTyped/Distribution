@@ -12,7 +12,6 @@ import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicesS3Mod {
@@ -59,7 +58,7 @@ object servicesS3Mod {
     def upload(params: PutObjectRequest, callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]): ManagedUpload = js.native
     def upload(
       params: PutObjectRequest,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* data */ SendData, Unit]
     ): ManagedUpload = js.native
     def upload(params: PutObjectRequest, options: ManagedUploadOptions): ManagedUpload = js.native

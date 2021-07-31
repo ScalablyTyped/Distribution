@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotDimensionHeader extends StObject {
   
   /** Values of multiple dimensions in a pivot. */
-  var dimensionValues: js.UndefOr[js.Array[DimensionValue]] = js.native
+  var dimensionValues: js.UndefOr[js.Array[DimensionValue]] = js.undefined
 }
 object PivotDimensionHeader {
   

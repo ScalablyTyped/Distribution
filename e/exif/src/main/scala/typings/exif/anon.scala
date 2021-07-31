@@ -3,83 +3,81 @@ package typings.exif
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApertureValue extends StObject {
     
-    var ApertureValue: js.UndefOr[Double] = js.native
+    var ApertureValue: js.UndefOr[Double] = js.undefined
     
-    var BrightnessValue: js.UndefOr[Double] = js.native
+    var BrightnessValue: js.UndefOr[Double] = js.undefined
     
-    var ColorSpace: js.UndefOr[Double] = js.native
+    var ColorSpace: js.UndefOr[Double] = js.undefined
     
-    var ComponentsConfiguration: js.UndefOr[Buffer] = js.native
+    var ComponentsConfiguration: js.UndefOr[Buffer] = js.undefined
     
-    var CompressedBitsPerPixel: js.UndefOr[Double] = js.native
+    var CompressedBitsPerPixel: js.UndefOr[Double] = js.undefined
     
-    var CreateDate: js.UndefOr[String] = js.native
+    var CreateDate: js.UndefOr[String] = js.undefined
     
-    var DateTimeOriginal: js.UndefOr[String] = js.native
+    var DateTimeOriginal: js.UndefOr[String] = js.undefined
     
-    var ExifImageHeight: js.UndefOr[Double] = js.native
+    var ExifImageHeight: js.UndefOr[Double] = js.undefined
     
-    var ExifImageWidth: js.UndefOr[Double] = js.native
+    var ExifImageWidth: js.UndefOr[Double] = js.undefined
     
-    var ExifVersion: js.UndefOr[Buffer] = js.native
+    var ExifVersion: js.UndefOr[Buffer] = js.undefined
     
-    var ExposureCompensation: js.UndefOr[Double] = js.native
+    var ExposureCompensation: js.UndefOr[Double] = js.undefined
     
-    var ExposureMode: js.UndefOr[Double] = js.native
+    var ExposureMode: js.UndefOr[Double] = js.undefined
     
-    var ExposureProgram: js.UndefOr[Double] = js.native
+    var ExposureProgram: js.UndefOr[Double] = js.undefined
     
-    var ExposureTime: js.UndefOr[Double] = js.native
+    var ExposureTime: js.UndefOr[Double] = js.undefined
     
-    var FNumber: js.UndefOr[Double] = js.native
+    var FNumber: js.UndefOr[Double] = js.undefined
     
-    var FileSource: js.UndefOr[Buffer] = js.native
+    var FileSource: js.UndefOr[Buffer] = js.undefined
     
-    var Flash: js.UndefOr[Double] = js.native
+    var Flash: js.UndefOr[Double] = js.undefined
     
-    var FlashpixVersion: js.UndefOr[Buffer] = js.native
+    var FlashpixVersion: js.UndefOr[Buffer] = js.undefined
     
-    var FocalLength: js.UndefOr[Double] = js.native
+    var FocalLength: js.UndefOr[Double] = js.undefined
     
-    var FocalLengthIn35mmFormat: js.UndefOr[Double] = js.native
+    var FocalLengthIn35mmFormat: js.UndefOr[Double] = js.undefined
     
-    var FocalPlaneResolutionUnit: js.UndefOr[Double] = js.native
+    var FocalPlaneResolutionUnit: js.UndefOr[Double] = js.undefined
     
-    var FocalPlaneXResolution: js.UndefOr[Double] = js.native
+    var FocalPlaneXResolution: js.UndefOr[Double] = js.undefined
     
-    var FocalPlaneYResolution: js.UndefOr[Double] = js.native
+    var FocalPlaneYResolution: js.UndefOr[Double] = js.undefined
     
-    var ISO: js.UndefOr[Double] = js.native
+    var ISO: js.UndefOr[Double] = js.undefined
     
-    var ImageUniqueID: js.UndefOr[String] = js.native
+    var ImageUniqueID: js.UndefOr[String] = js.undefined
     
-    var InteropOffset: js.UndefOr[Double] = js.native
+    var InteropOffset: js.UndefOr[Double] = js.undefined
     
-    var MakerNote: js.UndefOr[Buffer] = js.native
+    var MakerNote: js.UndefOr[Buffer] = js.undefined
     
-    var MaxApertureValue: js.UndefOr[Double] = js.native
+    var MaxApertureValue: js.UndefOr[Double] = js.undefined
     
-    var MeteringMode: js.UndefOr[Double] = js.native
+    var MeteringMode: js.UndefOr[Double] = js.undefined
     
-    var SceneCaptureType: js.UndefOr[Double] = js.native
+    var SceneCaptureType: js.UndefOr[Double] = js.undefined
     
-    var SceneType: js.UndefOr[Buffer] = js.native
+    var SceneType: js.UndefOr[Buffer] = js.undefined
     
-    var SensingMethod: js.UndefOr[Double] = js.native
+    var SensingMethod: js.UndefOr[Double] = js.undefined
     
-    var ShutterSpeedValue: js.UndefOr[Double] = js.native
+    var ShutterSpeedValue: js.UndefOr[Double] = js.undefined
     
-    var UserComment: js.UndefOr[Buffer] = js.native
+    var UserComment: js.UndefOr[Buffer] = js.undefined
     
-    var WhiteBalance: js.UndefOr[Double] = js.native
+    var WhiteBalance: js.UndefOr[Double] = js.undefined
   }
   object ApertureValue {
     
@@ -304,36 +302,35 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoBracketing extends StObject {
     
-    var AutoBracketing: js.UndefOr[Double] = js.native
+    var AutoBracketing: js.UndefOr[Double] = js.undefined
     
-    var BlurWarning: js.UndefOr[Double] = js.native
+    var BlurWarning: js.UndefOr[Double] = js.undefined
     
-    var ExposureWarning: js.UndefOr[Double] = js.native
+    var ExposureWarning: js.UndefOr[Double] = js.undefined
     
-    var FlashExposureComp: js.UndefOr[Double] = js.native
+    var FlashExposureComp: js.UndefOr[Double] = js.undefined
     
-    var FocusMode: js.UndefOr[Double] = js.native
+    var FocusMode: js.UndefOr[Double] = js.undefined
     
-    var FocusWarning: js.UndefOr[Double] = js.native
+    var FocusWarning: js.UndefOr[Double] = js.undefined
     
-    var FujiFlashMode: js.UndefOr[Double] = js.native
+    var FujiFlashMode: js.UndefOr[Double] = js.undefined
     
-    var Macro: js.UndefOr[Double] = js.native
+    var Macro: js.UndefOr[Double] = js.undefined
     
-    var Quality: js.UndefOr[String] = js.native
+    var Quality: js.UndefOr[String] = js.undefined
     
-    var Sharpness: js.UndefOr[Double] = js.native
+    var Sharpness: js.UndefOr[Double] = js.undefined
     
-    var SlowSync: js.UndefOr[Double] = js.native
+    var SlowSync: js.UndefOr[Double] = js.undefined
     
-    var Version: js.UndefOr[Buffer] = js.native
+    var Version: js.UndefOr[Buffer] = js.undefined
     
-    var WhiteBalance: js.UndefOr[Double] = js.native
+    var WhiteBalance: js.UndefOr[Double] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
   }
   object AutoBracketing {
     
@@ -432,24 +429,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Compression extends StObject {
     
-    var Compression: js.UndefOr[Double] = js.native
+    var Compression: js.UndefOr[Double] = js.undefined
     
-    var Orientation: js.UndefOr[Double] = js.native
+    var Orientation: js.UndefOr[Double] = js.undefined
     
-    var ResolutionUnit: js.UndefOr[Double] = js.native
+    var ResolutionUnit: js.UndefOr[Double] = js.undefined
     
-    var ThumbnailLength: js.UndefOr[Double] = js.native
+    var ThumbnailLength: js.UndefOr[Double] = js.undefined
     
-    var ThumbnailOffset: js.UndefOr[Double] = js.native
+    var ThumbnailOffset: js.UndefOr[Double] = js.undefined
     
-    var XResolution: js.UndefOr[Double] = js.native
+    var XResolution: js.UndefOr[Double] = js.undefined
     
-    var YCbCrPositioning: js.UndefOr[Double] = js.native
+    var YCbCrPositioning: js.UndefOr[Double] = js.undefined
     
-    var YResolution: js.UndefOr[Double] = js.native
+    var YResolution: js.UndefOr[Double] = js.undefined
   }
   object Compression {
     
@@ -512,34 +508,33 @@ object anon {
     }
   }
   
-  @js.native
   trait Copyright extends StObject {
     
-    var Copyright: js.UndefOr[String] = js.native
+    var Copyright: js.UndefOr[String] = js.undefined
     
-    var ExifOffset: js.UndefOr[Double] = js.native
+    var ExifOffset: js.UndefOr[Double] = js.undefined
     
-    var ImageHeight: js.UndefOr[Double] = js.native
+    var ImageHeight: js.UndefOr[Double] = js.undefined
     
-    var ImageWidth: js.UndefOr[Double] = js.native
+    var ImageWidth: js.UndefOr[Double] = js.undefined
     
-    var Make: js.UndefOr[String] = js.native
+    var Make: js.UndefOr[String] = js.undefined
     
-    var Model: js.UndefOr[String] = js.native
+    var Model: js.UndefOr[String] = js.undefined
     
-    var ModifyDate: js.UndefOr[String] = js.native
+    var ModifyDate: js.UndefOr[String] = js.undefined
     
-    var Orientation: js.UndefOr[Double] = js.native
+    var Orientation: js.UndefOr[Double] = js.undefined
     
-    var ResolutionUnit: js.UndefOr[Double] = js.native
+    var ResolutionUnit: js.UndefOr[Double] = js.undefined
     
-    var Software: js.UndefOr[String] = js.native
+    var Software: js.UndefOr[String] = js.undefined
     
-    var XResolution: js.UndefOr[Double] = js.native
+    var XResolution: js.UndefOr[Double] = js.undefined
     
-    var YCbCrPositioning: js.UndefOr[Double] = js.native
+    var YCbCrPositioning: js.UndefOr[Double] = js.undefined
     
-    var YResolution: js.UndefOr[Double] = js.native
+    var YResolution: js.UndefOr[Double] = js.undefined
   }
   object Copyright {
     
@@ -632,72 +627,71 @@ object anon {
     }
   }
   
-  @js.native
   trait GPSAltitude extends StObject {
     
-    var GPSAltitude: js.UndefOr[Double] = js.native
+    var GPSAltitude: js.UndefOr[Double] = js.undefined
     
-    var GPSAltitudeRef: js.UndefOr[Double] = js.native
+    var GPSAltitudeRef: js.UndefOr[Double] = js.undefined
     
-    var GPSAreaInformation: js.UndefOr[Buffer] = js.native
+    var GPSAreaInformation: js.UndefOr[Buffer] = js.undefined
     
-    var GPSDOP: js.UndefOr[Double] = js.native
+    var GPSDOP: js.UndefOr[Double] = js.undefined
     
-    var GPSDateStamp: js.UndefOr[String] = js.native
+    var GPSDateStamp: js.UndefOr[String] = js.undefined
     
-    var GPSDestBearing: js.UndefOr[Double] = js.native
+    var GPSDestBearing: js.UndefOr[Double] = js.undefined
     
-    var GPSDestBearingRef: js.UndefOr[String] = js.native
+    var GPSDestBearingRef: js.UndefOr[String] = js.undefined
     
-    var GPSDestDistance: js.UndefOr[Double] = js.native
+    var GPSDestDistance: js.UndefOr[Double] = js.undefined
     
-    var GPSDestDistanceRef: js.UndefOr[String] = js.native
+    var GPSDestDistanceRef: js.UndefOr[String] = js.undefined
     
-    var GPSDestLatitude: js.UndefOr[js.Array[Double]] = js.native
+    var GPSDestLatitude: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var GPSDestLatitudeRef: js.UndefOr[String] = js.native
+    var GPSDestLatitudeRef: js.UndefOr[String] = js.undefined
     
-    var GPSDestLongitude: js.UndefOr[js.Array[Double]] = js.native
+    var GPSDestLongitude: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var GPSDestLongitudeRef: js.UndefOr[String] = js.native
+    var GPSDestLongitudeRef: js.UndefOr[String] = js.undefined
     
-    var GPSDifferential: js.UndefOr[Double] = js.native
+    var GPSDifferential: js.UndefOr[Double] = js.undefined
     
-    var GPSHPositioningError: js.UndefOr[Double] = js.native
+    var GPSHPositioningError: js.UndefOr[Double] = js.undefined
     
-    var GPSImgDirection: js.UndefOr[Double] = js.native
+    var GPSImgDirection: js.UndefOr[Double] = js.undefined
     
-    var GPSImgDirectionRef: js.UndefOr[String] = js.native
+    var GPSImgDirectionRef: js.UndefOr[String] = js.undefined
     
-    var GPSLatitude: js.UndefOr[js.Array[Double]] = js.native
+    var GPSLatitude: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var GPSLatitudeRef: js.UndefOr[String] = js.native
+    var GPSLatitudeRef: js.UndefOr[String] = js.undefined
     
-    var GPSLongitude: js.UndefOr[js.Array[Double]] = js.native
+    var GPSLongitude: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var GPSLongitudeRef: js.UndefOr[String] = js.native
+    var GPSLongitudeRef: js.UndefOr[String] = js.undefined
     
-    var GPSMapDatum: js.UndefOr[String] = js.native
+    var GPSMapDatum: js.UndefOr[String] = js.undefined
     
-    var GPSMeasureMode: js.UndefOr[String] = js.native
+    var GPSMeasureMode: js.UndefOr[String] = js.undefined
     
-    var GPSProcessingMethod: js.UndefOr[Buffer] = js.native
+    var GPSProcessingMethod: js.UndefOr[Buffer] = js.undefined
     
-    var GPSSatellites: js.UndefOr[String] = js.native
+    var GPSSatellites: js.UndefOr[String] = js.undefined
     
-    var GPSSpeed: js.UndefOr[Double] = js.native
+    var GPSSpeed: js.UndefOr[Double] = js.undefined
     
-    var GPSSpeedRef: js.UndefOr[String] = js.native
+    var GPSSpeedRef: js.UndefOr[String] = js.undefined
     
-    var GPSStatus: js.UndefOr[String] = js.native
+    var GPSStatus: js.UndefOr[String] = js.undefined
     
-    var GPSTimeStamp: js.UndefOr[js.Array[Double]] = js.native
+    var GPSTimeStamp: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var GPSTrack: js.UndefOr[Double] = js.native
+    var GPSTrack: js.UndefOr[Double] = js.undefined
     
-    var GPSTrackRef: js.UndefOr[String] = js.native
+    var GPSTrackRef: js.UndefOr[String] = js.undefined
     
-    var GPSVersionId: js.UndefOr[js.Array[Double]] = js.native
+    var GPSVersionId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object GPSAltitude {
     
@@ -922,12 +916,11 @@ object anon {
     }
   }
   
-  @js.native
   trait InteropIndex extends StObject {
     
-    var InteropIndex: js.UndefOr[String] = js.native
+    var InteropIndex: js.UndefOr[String] = js.undefined
     
-    var InteropVersion: js.UndefOr[Buffer] = js.native
+    var InteropVersion: js.UndefOr[Buffer] = js.undefined
   }
   object InteropIndex {
     

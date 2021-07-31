@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountstatusesCustomBatchResponse extends StObject {
   
   /** The result of the execution of the batch requests. */
-  var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchResponseEntry]] = js.native
+  var entries: js.UndefOr[js.Array[AccountstatusesCustomBatchResponseEntry]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#accountstatusesCustomBatchResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AccountstatusesCustomBatchResponse {
   

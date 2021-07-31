@@ -3,27 +3,25 @@ package typings.spectacle.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFillHeight extends StObject {
   
-  var autoFillHeight: Boolean = js.native
+  var autoFillHeight: Boolean
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var highlightEnd: js.UndefOr[Double] = js.native
+  var highlightEnd: js.UndefOr[Double] = js.undefined
   
-  var highlightStart: js.UndefOr[Double] = js.native
+  var highlightStart: js.UndefOr[Double] = js.undefined
   
-  var indentSize: js.UndefOr[Double] = js.native
+  var indentSize: js.UndefOr[Double] = js.undefined
   
-  var language: String = js.native
+  var language: String
   
-  var theme: js.UndefOr[Plain] = js.native
+  var theme: js.UndefOr[Plain] = js.undefined
 }
 object AutoFillHeight {
   

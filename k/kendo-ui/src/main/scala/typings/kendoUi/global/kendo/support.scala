@@ -4,7 +4,6 @@ import typings.kendoUi.anon.AppMode
 import typings.kendoUi.anon.Edge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object support {
@@ -55,9 +54,8 @@ object support {
   @scala.inline
   def pointers_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("pointers")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("kendo.support.scrollbar")
-  @js.native
-  def scrollbar(): Double = js.native
+  @scala.inline
+  def scrollbar(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("scrollbar")().asInstanceOf[Double]
   
   @JSGlobal("kendo.support.touch")
   @js.native

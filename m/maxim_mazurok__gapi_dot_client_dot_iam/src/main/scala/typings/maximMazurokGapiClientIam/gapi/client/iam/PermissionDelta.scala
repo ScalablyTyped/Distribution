@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PermissionDelta extends StObject {
   
   /** Added permissions. */
-  var addedPermissions: js.UndefOr[js.Array[String]] = js.native
+  var addedPermissions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Removed permissions. */
-  var removedPermissions: js.UndefOr[js.Array[String]] = js.native
+  var removedPermissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PermissionDelta {
   

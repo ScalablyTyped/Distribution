@@ -3,13 +3,11 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a context.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2Context extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGoogleCloudDialogflowV2Context extends StObject {
     * immediately. Contexts expire automatically after 20 minutes if there are
     * no matching queries.
     */
-  var lifespanCount: js.UndefOr[Double] = js.native
+  var lifespanCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. The unique identifier of the context. Format:
@@ -27,7 +25,7 @@ trait SchemaGoogleCloudDialogflowV2Context extends StObject {
     * converted to lowercase, may only contain characters in [a-zA-Z0-9_-%] and
     * may be at most 250 bytes long.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of parameters associated with this context.
@@ -35,7 +33,7 @@ trait SchemaGoogleCloudDialogflowV2Context extends StObject {
     * doc](https://cloud.google.com/dialogflow-enterprise/docs/intents-actions-parameters)
     * for syntax.
     */
-  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var parameters: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2Context {
   

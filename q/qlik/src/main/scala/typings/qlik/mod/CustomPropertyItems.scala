@@ -4,25 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.qlik.qlikStrings.items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyItems
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var items: StringDictionary[CustomProperty] = js.native
+  var items: StringDictionary[CustomProperty]
   
   @JSName("type")
-  var type_CustomPropertyItems: items = js.native
+  var type_CustomPropertyItems: items
 }
 object CustomPropertyItems {
   
   @scala.inline
-  def apply(items: StringDictionary[CustomProperty], `type`: items): CustomPropertyItems = {
+  def apply(items: StringDictionary[CustomProperty]): CustomPropertyItems = {
     val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("items")
     __obj.asInstanceOf[CustomPropertyItems]
   }
   

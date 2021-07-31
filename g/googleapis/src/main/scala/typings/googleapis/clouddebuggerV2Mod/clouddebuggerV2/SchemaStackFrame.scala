@@ -2,36 +2,34 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a stack frame context.
   */
-@js.native
 trait SchemaStackFrame extends StObject {
   
   /**
     * Set of arguments passed to this function. Note that this might not be
     * populated for all stack frames.
     */
-  var arguments: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var arguments: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
   
   /**
     * Demangled function name at the call site.
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * Set of local variables at the stack frame location. Note that this might
     * not be populated for all stack frames.
     */
-  var locals: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var locals: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
   
   /**
     * Source location of the call site.
     */
-  var location: js.UndefOr[SchemaSourceLocation] = js.native
+  var location: js.UndefOr[SchemaSourceLocation] = js.undefined
 }
 object SchemaStackFrame {
   

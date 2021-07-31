@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceComplianceDeviceOverview extends Entity {
+trait DeviceComplianceDeviceOverview
+  extends StObject
+     with Entity {
   
   // Version of the policy for that overview
-  var configurationVersion: js.UndefOr[Double] = js.native
+  var configurationVersion: js.UndefOr[Double] = js.undefined
   
   // Number of error devices
-  var errorCount: js.UndefOr[Double] = js.native
+  var errorCount: js.UndefOr[Double] = js.undefined
   
   // Number of failed devices
-  var failedCount: js.UndefOr[Double] = js.native
+  var failedCount: js.UndefOr[Double] = js.undefined
   
   // Last update time
-  var lastUpdateDateTime: js.UndefOr[String] = js.native
+  var lastUpdateDateTime: js.UndefOr[String] = js.undefined
   
   // Number of not applicable devices
-  var notApplicableCount: js.UndefOr[Double] = js.native
+  var notApplicableCount: js.UndefOr[Double] = js.undefined
   
   // Number of pending devices
-  var pendingCount: js.UndefOr[Double] = js.native
+  var pendingCount: js.UndefOr[Double] = js.undefined
   
   // Number of succeeded devices
-  var successCount: js.UndefOr[Double] = js.native
+  var successCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceComplianceDeviceOverview {
   

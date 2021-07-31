@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeWorkspacesConnectionStatusRequest extends StObject {
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The identifiers of the WorkSpaces. You can specify up to 25 WorkSpaces.
     */
-  var WorkspaceIds: js.UndefOr[WorkspaceIdList] = js.native
+  var WorkspaceIds: js.UndefOr[WorkspaceIdList] = js.undefined
 }
 object DescribeWorkspacesConnectionStatusRequest {
   

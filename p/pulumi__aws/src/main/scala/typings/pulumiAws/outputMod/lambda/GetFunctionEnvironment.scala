@@ -3,13 +3,11 @@ package typings.pulumiAws.outputMod.lambda
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFunctionEnvironment extends StObject {
   
-  var variables: StringDictionary[String] = js.native
+  var variables: StringDictionary[String]
 }
 object GetFunctionEnvironment {
   

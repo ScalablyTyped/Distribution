@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveTime extends StObject {
   
-  var activeTime: js.UndefOr[Double] = js.native
+  var activeTime: js.UndefOr[Double] = js.undefined
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
 }
 object ActiveTime {
   

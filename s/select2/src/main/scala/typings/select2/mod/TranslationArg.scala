@@ -2,17 +2,15 @@ package typings.select2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TranslationArg extends StObject {
   
-  var input: String = js.native
+  var input: String
   
-  var maximum: Double = js.native
+  var maximum: Double
   
-  var minimum: Double = js.native
+  var minimum: Double
 }
 object TranslationArg {
   

@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMException extends StObject {
   
   @JSName("MSHTML.DOMException_typekey")
-  var MSHTMLDotDOMException_typekey: DOMException = js.native
+  var MSHTMLDotDOMException_typekey: DOMException
   
-  var code: Double = js.native
+  var code: Double
   
-  val message: String = js.native
+  val message: String
 }
 object DOMException {
   

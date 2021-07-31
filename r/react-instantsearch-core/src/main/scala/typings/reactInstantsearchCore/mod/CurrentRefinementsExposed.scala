@@ -2,20 +2,18 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentRefinementsExposed extends StObject {
   
   /** Pass true to also clear the search query */
-  var clearsQuery: js.UndefOr[Boolean] = js.native
+  var clearsQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Function to modify the items being displayed, e.g. for filtering or sorting them.
     * Takes an items as parameter and expects it back in return.
     */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object CurrentRefinementsExposed {
   
@@ -35,7 +33,7 @@ object CurrentRefinementsExposed {
     def setClearsQueryUndefined: Self = StObject.set(x, "clearsQuery", js.undefined)
     
     @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)

@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetectSentimentItemResult extends StObject {
   
   /**
     * The zero-based index of the document in the input list.
     */
-  var Index: js.UndefOr[Integer] = js.native
+  var Index: js.UndefOr[Integer] = js.undefined
   
   /**
     * The sentiment detected in the document.
     */
-  var Sentiment: js.UndefOr[SentimentType] = js.native
+  var Sentiment: js.UndefOr[SentimentType] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend has in the accuracy of its sentiment detection.
     */
-  var SentimentScore: js.UndefOr[typings.awsSdk.comprehendMod.SentimentScore] = js.native
+  var SentimentScore: js.UndefOr[typings.awsSdk.comprehendMod.SentimentScore] = js.undefined
 }
 object BatchDetectSentimentItemResult {
   

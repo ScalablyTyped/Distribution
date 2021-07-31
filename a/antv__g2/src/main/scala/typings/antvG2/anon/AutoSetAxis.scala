@@ -3,45 +3,43 @@ package typings.antvG2.anon
 import typings.antvG2.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoSetAxis extends StObject {
   
   /**
     * 自动设置坐标轴的文本，避免重复和遮挡
     */
-  var autoSetAxis: js.UndefOr[Boolean] = js.native
+  var autoSetAxis: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 列标题
     */
-  var colTitle: js.UndefOr[OffsetY | Null] = js.native
+  var colTitle: js.UndefOr[OffsetY | Null] = js.undefined
   
   /**
     * 创建每个分面中的视图
     * @param view 视图对象
     * @param facet 行列等信息，常见属性：data rows cols rowIndex colIndex rowField colField
     */
-  var eachView: js.UndefOr[js.Function2[/* view */ View, /* facet */ js.Any, Unit]] = js.native
+  var eachView: js.UndefOr[js.Function2[/* view */ View, /* facet */ js.Any, Unit]] = js.undefined
   
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * 每个 view 之间的间距
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * 行标题
     */
-  var rowTitle: js.UndefOr[OffsetX | Null] = js.native
+  var rowTitle: js.UndefOr[OffsetX | Null] = js.undefined
   
   /**
     * 显示标题
     */
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
 }
 object AutoSetAxis {
   

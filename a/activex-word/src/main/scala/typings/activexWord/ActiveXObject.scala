@@ -120,7 +120,6 @@ import typings.activexWord.anon.SelSelection
 import typings.activexWord.anon.SyncEventTypeMsoSyncEventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -476,7 +475,12 @@ trait ActiveXObject extends StObject {
   ): Unit = js.native
   
   @JSName("set")
-  def set_ActiveWritingStyle(obj: Document, propertyName: ActiveWritingStyle, parameterTypes: js.Array[_], newValue: String): Unit = js.native
+  def set_ActiveWritingStyle(
+    obj: Document,
+    propertyName: ActiveWritingStyle,
+    parameterTypes: js.Array[js.Any],
+    newValue: String
+  ): Unit = js.native
   @JSName("set")
   def set_Compatibility(
     obj: Document,

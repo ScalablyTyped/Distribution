@@ -10,9 +10,9 @@ Generate a changelog from git metadata
 | ------------------ | :-------------: |
 | Full name          | conventional-changelog |
 | Keywords           | conventional-changelog, conventional, changelog, log |
-| # releases         | 29 |
-| # dependents       | 165 |
-| # downloads        | 15878597 |
+| # releases         | 24 |
+| # dependents       | 196 |
+| # downloads        | 19087697 |
 | # stars            | 13 |
 
 ## Links

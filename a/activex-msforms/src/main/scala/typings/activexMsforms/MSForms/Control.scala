@@ -2,7 +2,6 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,108 +31,37 @@ trait Control extends StObject {
   var MSFormsDotControl_typekey: Control = js.native
   
   def Move(): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any
-  ): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: js.Any): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.UndefOr[scala.Nothing], Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.Any,
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.Any): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.UndefOr[scala.Nothing], Height: js.Any): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.Any): Unit = js.native
-  def Move(
-    Left: js.UndefOr[scala.Nothing],
-    Top: js.Any,
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: js.UndefOr[scala.Nothing], Top: js.Any, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
   def Move(Left: js.Any): Unit = js.native
-  def Move(
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.UndefOr[scala.Nothing], Height: js.Any): Unit = js.native
-  def Move(
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.Any,
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.Any): Unit = js.native
-  def Move(
-    Left: js.Any,
-    Top: js.UndefOr[scala.Nothing],
-    Width: js.Any,
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.Any, Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.UndefOr[scala.Nothing], Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
   def Move(Left: js.Any, Top: js.Any): Unit = js.native
-  def Move(
-    Left: js.Any,
-    Top: js.Any,
-    Width: js.UndefOr[scala.Nothing],
-    Height: js.UndefOr[scala.Nothing],
-    Layout: js.Any
-  ): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.UndefOr[scala.Nothing], Height: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.UndefOr[scala.Nothing], Height: js.Any, Layout: js.Any): Unit = js.native
   def Move(Left: js.Any, Top: js.Any, Width: js.Any): Unit = js.native
-  def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: js.UndefOr[scala.Nothing], Layout: js.Any): Unit = js.native
   def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
   def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: js.Any, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: js.Any, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: js.Any, Top: Unit, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: js.Any, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: js.Any, Height: Unit, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: js.Any, Layout: js.Any): Unit = js.native
+  def Move(Left: Unit, Top: Unit, Width: Unit, Height: Unit, Layout: js.Any): Unit = js.native
   
   var Name: String = js.native
   

@@ -5,32 +5,30 @@ import typings.esm.esmStrings.auto
 import typings.esm.esmStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<esm.esm.Options.Esm> */
-  @js.native
   trait PartialEsm extends StObject {
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var dedefault: js.UndefOr[Boolean] = js.native
+    var dedefault: js.UndefOr[Boolean] = js.undefined
     
-    var esModule: js.UndefOr[Boolean] = js.native
+    var esModule: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[Boolean] = js.native
+    var extensions: js.UndefOr[Boolean] = js.undefined
     
-    var mutableNamespace: js.UndefOr[Boolean] = js.native
+    var mutableNamespace: js.UndefOr[Boolean] = js.undefined
     
-    var namedExports: js.UndefOr[Boolean] = js.native
+    var namedExports: js.UndefOr[Boolean] = js.undefined
     
-    var paths: js.UndefOr[Boolean] = js.native
+    var paths: js.UndefOr[Boolean] = js.undefined
     
-    var topLevelReturn: js.UndefOr[Boolean] = js.native
+    var topLevelReturn: js.UndefOr[Boolean] = js.undefined
     
-    var vars: js.UndefOr[Boolean] = js.native
+    var vars: js.UndefOr[Boolean] = js.undefined
   }
   object PartialEsm {
     
@@ -100,20 +98,19 @@ object anon {
   }
   
   /* Inlined std.Partial<esm.esm.Options.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var await: js.UndefOr[Boolean] = js.native
+    var await: js.UndefOr[Boolean] = js.undefined
     
-    var cjs: js.UndefOr[Boolean | PartialEsm] = js.native
+    var cjs: js.UndefOr[Boolean | PartialEsm] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var mainFields: js.UndefOr[js.Array[String]] = js.native
+    var mainFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var mode: js.UndefOr[auto | all | strict] = js.native
+    var mode: js.UndefOr[auto | all | strict] = js.undefined
     
-    var wasm: js.UndefOr[Boolean] = js.native
+    var wasm: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     

@@ -2,17 +2,15 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionSendDtmfOptions extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+  var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
-  var interToneGap: Double = js.native
+  var interToneGap: Double
 }
 object SessionSendDtmfOptions {
   

@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptingParamDetails extends StObject {
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var scriptCompatibilityOption: String = js.native
+  var scriptCompatibilityOption: String
   
-  var targetDatabaseEngineEdition: String = js.native
+  var targetDatabaseEngineEdition: String
   
-  var targetDatabaseEngineType: String = js.native
+  var targetDatabaseEngineType: String
 }
 object ScriptingParamDetails {
   

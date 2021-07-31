@@ -2,68 +2,68 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Call extends Entity {
+trait Call
+  extends StObject
+     with Entity {
   
   /**
     * A unique identifier for all the participant calls in a conference or a unique identifier for two participant calls in a
     * P2P call. This needs to be copied over from Microsoft.Graph.Call.CallChainId.
     */
-  var callChainId: js.UndefOr[NullableOption[String]] = js.native
+  var callChainId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var callOptions: js.UndefOr[NullableOption[CallOptions]] = js.native
+  var callOptions: js.UndefOr[NullableOption[CallOptions]] = js.undefined
   
   // The routing information on how the call was retargeted. Read-only.
-  var callRoutes: js.UndefOr[NullableOption[js.Array[CallRoute]]] = js.native
+  var callRoutes: js.UndefOr[NullableOption[js.Array[CallRoute]]] = js.undefined
   
   // The callback URL on which callbacks will be delivered. Must be https.
-  var callbackUri: js.UndefOr[String] = js.native
+  var callbackUri: js.UndefOr[String] = js.undefined
   
   // The chat information. Required information for joining a meeting.
-  var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.native
+  var chatInfo: js.UndefOr[NullableOption[ChatInfo]] = js.undefined
   
   // The direction of the call. The possible value are incoming or outgoing. Read-only.
-  var direction: js.UndefOr[NullableOption[CallDirection]] = js.native
+  var direction: js.UndefOr[NullableOption[CallDirection]] = js.undefined
   
-  var incomingContext: js.UndefOr[NullableOption[IncomingContext]] = js.native
+  var incomingContext: js.UndefOr[NullableOption[IncomingContext]] = js.undefined
   
   // The media configuration. Required.
-  var mediaConfig: js.UndefOr[NullableOption[MediaConfig]] = js.native
+  var mediaConfig: js.UndefOr[NullableOption[MediaConfig]] = js.undefined
   
   // Read-only. The call media state.
-  var mediaState: js.UndefOr[NullableOption[CallMediaState]] = js.native
+  var mediaState: js.UndefOr[NullableOption[CallMediaState]] = js.undefined
   
   // The meeting information that's required for joining a meeting.
-  var meetingInfo: js.UndefOr[NullableOption[MeetingInfo]] = js.native
+  var meetingInfo: js.UndefOr[NullableOption[MeetingInfo]] = js.undefined
   
-  var myParticipantId: js.UndefOr[NullableOption[String]] = js.native
-  
-  // Read-only. Nullable.
-  var operations: js.UndefOr[NullableOption[js.Array[CommsOperation]]] = js.native
+  var myParticipantId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable.
-  var participants: js.UndefOr[NullableOption[js.Array[Participant]]] = js.native
+  var operations: js.UndefOr[NullableOption[js.Array[CommsOperation]]] = js.undefined
   
-  var requestedModalities: js.UndefOr[NullableOption[js.Array[Modality]]] = js.native
+  // Read-only. Nullable.
+  var participants: js.UndefOr[NullableOption[js.Array[Participant]]] = js.undefined
   
-  var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.native
+  var requestedModalities: js.UndefOr[NullableOption[js.Array[Modality]]] = js.undefined
   
-  var source: js.UndefOr[NullableOption[ParticipantInfo]] = js.native
+  var resultInfo: js.UndefOr[NullableOption[ResultInfo]] = js.undefined
   
-  var state: js.UndefOr[NullableOption[CallState]] = js.native
+  var source: js.UndefOr[NullableOption[ParticipantInfo]] = js.undefined
   
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var state: js.UndefOr[NullableOption[CallState]] = js.undefined
   
-  var targets: js.UndefOr[NullableOption[js.Array[InvitationParticipantInfo]]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var tenantId: js.UndefOr[NullableOption[String]] = js.native
+  var targets: js.UndefOr[NullableOption[js.Array[InvitationParticipantInfo]]] = js.undefined
   
-  var toneInfo: js.UndefOr[NullableOption[ToneInfo]] = js.native
+  var tenantId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var transcription: js.UndefOr[NullableOption[CallTranscriptionInfo]] = js.native
+  var toneInfo: js.UndefOr[NullableOption[ToneInfo]] = js.undefined
+  
+  var transcription: js.UndefOr[NullableOption[CallTranscriptionInfo]] = js.undefined
 }
 object Call {
   

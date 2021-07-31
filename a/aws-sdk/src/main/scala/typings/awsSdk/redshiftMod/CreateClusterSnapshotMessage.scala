@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateClusterSnapshotMessage extends StObject {
   
   /**
     * The cluster identifier for which you want a snapshot.
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
   
   /**
     * The number of days that a manual snapshot is retained. If the value is -1, the manual snapshot is retained indefinitely.  The value must be either -1 or an integer between 1 and 3,653. The default value is -1.
     */
-  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
+  var ManualSnapshotRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * A unique identifier for the snapshot that you are requesting. This identifier must be unique for all snapshots within the AWS account. Constraints:   Cannot be null, empty, or blank   Must contain from 1 to 255 alphanumeric characters or hyphens   First character must be a letter   Cannot end with a hyphen or contain two consecutive hyphens   Example: my-snapshot-id 
     */
-  var SnapshotIdentifier: String = js.native
+  var SnapshotIdentifier: String
   
   /**
     * A list of tag instances.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateClusterSnapshotMessage {
   

@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contract Legal Language
   */
-@js.native
-trait ContractLegal extends BackboneElement {
+trait ContractLegal
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contract Legal Text
     */
-  var contentAttachment: js.UndefOr[Attachment] = js.native
+  var contentAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
     * Contract Legal Text
     */
-  var contentReference: js.UndefOr[Reference] = js.native
+  var contentReference: js.UndefOr[Reference] = js.undefined
 }
 object ContractLegal {
   

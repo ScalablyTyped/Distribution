@@ -2,17 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var code: String = js.native
+  var code: String
   
-  var message: String = js.native
+  var message: String
 }
 object ValidationError {
   

@@ -2,23 +2,21 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bracketed extends StObject {
   
-  var bracketed: js.UndefOr[Boolean] = js.native
+  var bracketed: js.UndefOr[Boolean] = js.undefined
   
-  var location: js.UndefOr[Double] = js.native
+  var location: js.UndefOr[Double] = js.undefined
   
-  var notes_occupied: js.UndefOr[Double] = js.native
+  var notes_occupied: js.UndefOr[Double] = js.undefined
   
-  var num_notes: js.UndefOr[Double] = js.native
+  var num_notes: js.UndefOr[Double] = js.undefined
   
-  var ratioed: Boolean = js.native
+  var ratioed: Boolean
   
-  var y_offset: js.UndefOr[Double] = js.native
+  var y_offset: js.UndefOr[Double] = js.undefined
 }
 object Bracketed {
   

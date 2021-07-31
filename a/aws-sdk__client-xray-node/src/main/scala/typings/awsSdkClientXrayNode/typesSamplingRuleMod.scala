@@ -4,78 +4,76 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSamplingRuleMod {
   
-  @js.native
   trait SamplingRule extends StObject {
     
     /**
       * <p>Matches attributes derived from the request.</p>
       */
-    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.native
+    var Attributes: js.UndefOr[StringDictionary[String] | (Iterable[js.Tuple2[String, String]])] = js.undefined
     
     /**
       * <p>The percentage of matching requests to instrument, after the reservoir is exhausted.</p>
       */
-    var FixedRate: Double = js.native
+    var FixedRate: Double
     
     /**
       * <p>Matches the HTTP method of a request.</p>
       */
-    var HTTPMethod: String = js.native
+    var HTTPMethod: String
     
     /**
       * <p>Matches the hostname from a request URL.</p>
       */
-    var Host: String = js.native
+    var Host: String
     
     /**
       * <p>The priority of the sampling rule.</p>
       */
-    var Priority: Double = js.native
+    var Priority: Double
     
     /**
       * <p>A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.</p>
       */
-    var ReservoirSize: Double = js.native
+    var ReservoirSize: Double
     
     /**
       * <p>Matches the ARN of the AWS resource on which the service runs.</p>
       */
-    var ResourceARN: String = js.native
+    var ResourceARN: String
     
     /**
       * <p>The ARN of the sampling rule. Specify a rule by either name or ARN, but not both.</p>
       */
-    var RuleARN: js.UndefOr[String] = js.native
+    var RuleARN: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The name of the sampling rule. Specify a rule by either name or ARN, but not both.</p>
       */
-    var RuleName: js.UndefOr[String] = js.native
+    var RuleName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Matches the <code>name</code> that the service uses to identify itself in segments.</p>
       */
-    var ServiceName: String = js.native
+    var ServiceName: String
     
     /**
       * <p>Matches the <code>origin</code> that the service uses to identify its type in segments.</p>
       */
-    var ServiceType: String = js.native
+    var ServiceType: String
     
     /**
       * <p>Matches the path from a request URL.</p>
       */
-    var URLPath: String = js.native
+    var URLPath: String
     
     /**
       * <p>The version of the sampling rule format (<code>1</code>).</p>
       */
-    var Version: Double = js.native
+    var Version: Double
   }
   object SamplingRule {
     
@@ -149,14 +147,15 @@ object typesSamplingRuleMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSamplingRule extends SamplingRule {
+  trait UnmarshalledSamplingRule
+    extends StObject
+       with SamplingRule {
     
     /**
       * <p>Matches attributes derived from the request.</p>
       */
     @JSName("Attributes")
-    var Attributes_UnmarshalledSamplingRule: js.UndefOr[StringDictionary[String]] = js.native
+    var Attributes_UnmarshalledSamplingRule: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object UnmarshalledSamplingRule {
     

@@ -2,21 +2,19 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userStoryFeedResponseMod {
   
-  @js.native
   trait UserStoryFeedResponseCandidatesItem extends StObject {
     
-    var estimated_scans_sizes: js.UndefOr[js.Array[Double]] = js.native
+    var estimated_scans_sizes: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object UserStoryFeedResponseCandidatesItem {
     
@@ -49,26 +47,25 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseFriendshipStatus extends StObject {
     
-    var blocking: Boolean = js.native
+    var blocking: Boolean
     
-    var followed_by: Boolean = js.native
+    var followed_by: Boolean
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_restricted: Boolean = js.native
+    var is_restricted: Boolean
     
-    var muting: Boolean = js.native
+    var muting: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object UserStoryFeedResponseFriendshipStatus {
     
@@ -120,10 +117,9 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[UserStoryFeedResponseCandidatesItem] = js.native
+    var candidates: js.Array[UserStoryFeedResponseCandidatesItem]
   }
   object UserStoryFeedResponseImageVersions2 {
     
@@ -144,78 +140,77 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseItemsItem extends StObject {
     
-    var can_reply: Boolean = js.native
+    var can_reply: Boolean
     
-    var can_reshare: Boolean = js.native
+    var can_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var caption_position: Double = js.native
+    var caption_position: Double
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var device_timestamp: String | Double = js.native
+    var device_timestamp: String | Double
     
-    var expiring_at: Double = js.native
+    var expiring_at: Double
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_audio: js.UndefOr[Boolean] = js.native
+    var has_audio: js.UndefOr[Boolean] = js.undefined
     
-    var has_shared_to_fb: Double = js.native
+    var has_shared_to_fb: Double
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: UserStoryFeedResponseImageVersions2 = js.native
+    var image_versions2: UserStoryFeedResponseImageVersions2
     
-    var imported_taken_at: Double = js.native
+    var imported_taken_at: Double
     
-    var is_dash_eligible: js.UndefOr[Double] = js.native
+    var is_dash_eligible: js.UndefOr[Double] = js.undefined
     
-    var is_pride_media: Boolean = js.native
+    var is_pride_media: Boolean
     
-    var is_reel_media: Boolean = js.native
+    var is_reel_media: Boolean
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var number_of_qualities: js.UndefOr[Double] = js.native
+    var number_of_qualities: js.UndefOr[Double] = js.undefined
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var show_one_tap_fb_share_tooltip: Boolean = js.native
+    var show_one_tap_fb_share_tooltip: Boolean
     
-    var story_locations: js.UndefOr[js.Array[UserStoryFeedResponseStoryLocationsItem]] = js.native
+    var story_locations: js.UndefOr[js.Array[UserStoryFeedResponseStoryLocationsItem]] = js.undefined
     
-    var supports_reel_reactions: Boolean = js.native
+    var supports_reel_reactions: Boolean
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: UserStoryFeedResponseUser = js.native
+    var user: UserStoryFeedResponseUser
     
-    var video_codec: js.UndefOr[String] = js.native
+    var video_codec: js.UndefOr[String] = js.undefined
     
-    var video_dash_manifest: js.UndefOr[String] = js.native
+    var video_dash_manifest: js.UndefOr[String] = js.undefined
     
-    var video_duration: js.UndefOr[Double] = js.native
+    var video_duration: js.UndefOr[Double] = js.undefined
     
-    var video_versions: js.UndefOr[js.Array[UserStoryFeedResponseVideoVersionsItem]] = js.native
+    var video_versions: js.UndefOr[js.Array[UserStoryFeedResponseVideoVersionsItem]] = js.undefined
   }
   object UserStoryFeedResponseItemsItem {
     
@@ -393,26 +388,25 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var facebook_places_id: Double = js.native
+    var facebook_places_id: Double
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: String | Double = js.native
+    var lng: String | Double
     
-    var name: String = js.native
+    var name: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var short_name: String = js.native
+    var short_name: String
   }
   object UserStoryFeedResponseLocation {
     
@@ -464,34 +458,33 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseReel extends StObject {
     
-    var can_reply: Boolean = js.native
+    var can_reply: Boolean
     
-    var can_reshare: Boolean = js.native
+    var can_reshare: Boolean
     
-    var expiring_at: Double = js.native
+    var expiring_at: Double
     
-    var has_besties_media: Boolean = js.native
+    var has_besties_media: Boolean
     
-    var has_pride_media: Boolean = js.native
+    var has_pride_media: Boolean
     
-    var id: Double = js.native
+    var id: Double
     
-    var items: js.Array[UserStoryFeedResponseItemsItem] = js.native
+    var items: js.Array[UserStoryFeedResponseItemsItem]
     
-    var latest_reel_media: Double = js.native
+    var latest_reel_media: Double
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var prefetch_count: Double = js.native
+    var prefetch_count: Double
     
-    var reel_type: String = js.native
+    var reel_type: String
     
-    var seen: Double = js.native
+    var seen: Double
     
-    var user: UserStoryFeedResponseUser = js.native
+    var user: UserStoryFeedResponseUser
   }
   object UserStoryFeedResponseReel {
     
@@ -562,14 +555,13 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseRootObject extends StObject {
     
-    var broadcast: Null = js.native
+    var broadcast: Null
     
-    var reel: UserStoryFeedResponseReel = js.native
+    var reel: UserStoryFeedResponseReel
     
-    var status: String = js.native
+    var status: String
   }
   object UserStoryFeedResponseRootObject {
     
@@ -593,28 +585,27 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseStoryLocationsItem extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var is_hidden: Double = js.native
+    var is_hidden: Double
     
-    var is_pinned: Double = js.native
+    var is_pinned: Double
     
-    var is_sticker: Double = js.native
+    var is_sticker: Double
     
-    var location: UserStoryFeedResponseLocation = js.native
+    var location: UserStoryFeedResponseLocation
     
-    var rotation: Double | String = js.native
+    var rotation: Double | String
     
-    var width: String = js.native
+    var width: String
     
-    var x: String = js.native
+    var x: String
     
-    var y: String = js.native
+    var y: String
     
-    var z: Double = js.native
+    var z: Double
   }
   object UserStoryFeedResponseStoryLocationsItem {
     
@@ -670,30 +661,29 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseUser extends StObject {
     
-    var friendship_status: js.UndefOr[UserStoryFeedResponseFriendshipStatus] = js.native
+    var friendship_status: js.UndefOr[UserStoryFeedResponseFriendshipStatus] = js.undefined
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_favorite: js.UndefOr[Boolean] = js.native
+    var is_favorite: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: js.UndefOr[Boolean] = js.native
+    var is_unpublished: js.UndefOr[Boolean] = js.undefined
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object UserStoryFeedResponseUser {
     
@@ -761,18 +751,17 @@ object userStoryFeedResponseMod {
     }
   }
   
-  @js.native
   trait UserStoryFeedResponseVideoVersionsItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object UserStoryFeedResponseVideoVersionsItem {
     

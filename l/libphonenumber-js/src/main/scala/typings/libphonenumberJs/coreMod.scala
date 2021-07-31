@@ -13,22 +13,23 @@ import typings.libphonenumberJs.typesMod.NumberFoundLegacy
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod {
   
-  @JSImport("libphonenumber-js/core", JSImport.Default)
+  @JSImport("libphonenumber-js/core", JSImport.Namespace)
   @js.native
-  def default(text: String, defaultCountry: CountryCode, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
-  @JSImport("libphonenumber-js/core", JSImport.Default)
-  @js.native
-  def default(text: String, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(text: String, defaultCountry: CountryCode, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
+  @scala.inline
+  def default(text: String, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
   
   @JSImport("libphonenumber-js/core", "AsYouType")
   @js.native
   class AsYouType protected () extends StObject {
-    def this(defaultCountryCode: js.UndefOr[scala.Nothing], metadata: Metadata) = this()
+    def this(defaultCountryCode: Unit, metadata: Metadata) = this()
     def this(defaultCountryCode: DefaultCallingCode, metadata: Metadata) = this()
     def this(defaultCountryCode: CountryCode, metadata: Metadata) = this()
     
@@ -71,103 +72,75 @@ object coreMod {
     def next(): js.UndefOr[NumberFound] = js.native
   }
   
-  @JSImport("libphonenumber-js/core", "findNumbers")
-  @js.native
-  def findNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = js.native
-  @JSImport("libphonenumber-js/core", "findNumbers")
-  @js.native
-  def findNumbers(text: String, options: DefaultCountry, metadata: Metadata): js.Array[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "findNumbers")
-  @js.native
-  def findNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
+  @scala.inline
+  def findNumbers(text: String, metadata: Metadata): js.Array[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFoundLegacy]]
+  @scala.inline
+  def findNumbers(text: String, options: DefaultCountry, metadata: Metadata): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  @scala.inline
+  def findNumbers(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
   
-  @JSImport("libphonenumber-js/core", "findPhoneNumbersInText")
-  @js.native
-  def findPhoneNumbersInText(text: String, metadata: Metadata): js.Array[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "findPhoneNumbersInText")
-  @js.native
-  def findPhoneNumbersInText(text: String, options: `0`, metadata: Metadata): js.Array[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "findPhoneNumbersInText")
-  @js.native
-  def findPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = js.native
+  @scala.inline
+  def findPhoneNumbersInText(text: String, metadata: Metadata): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  @scala.inline
+  def findPhoneNumbersInText(text: String, options: `0`, metadata: Metadata): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
+  @scala.inline
+  def findPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): js.Array[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Array[NumberFound]]
   
-  @JSImport("libphonenumber-js/core", "formatIncompletePhoneNumber")
-  @js.native
-  def formatIncompletePhoneNumber(number: String, countryCode: CountryCode, metadata: Metadata): String = js.native
-  @JSImport("libphonenumber-js/core", "formatIncompletePhoneNumber")
-  @js.native
-  def formatIncompletePhoneNumber(number: String, metadata: Metadata): String = js.native
+  @scala.inline
+  def formatIncompletePhoneNumber(number: String, countryCode: CountryCode, metadata: Metadata): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatIncompletePhoneNumber")(number.asInstanceOf[js.Any], countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def formatIncompletePhoneNumber(number: String, metadata: Metadata): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatIncompletePhoneNumber")(number.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("libphonenumber-js/core", "getCountries")
-  @js.native
-  def getCountries(metadata: Metadata): js.Array[CountryCode] = js.native
+  @scala.inline
+  def getCountries(metadata: Metadata): js.Array[CountryCode] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountries")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Array[CountryCode]]
   
-  @JSImport("libphonenumber-js/core", "getCountryCallingCode")
-  @js.native
-  def getCountryCallingCode(countryCode: CountryCode, metadata: Metadata): CountryCallingCode = js.native
+  @scala.inline
+  def getCountryCallingCode(countryCode: CountryCode, metadata: Metadata): CountryCallingCode = (^.asInstanceOf[js.Dynamic].applyDynamic("getCountryCallingCode")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[CountryCallingCode]
   
-  @JSImport("libphonenumber-js/core", "getExampleNumber")
-  @js.native
-  def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
+  @scala.inline
+  def getExampleNumber(country: CountryCode, examples: countryinCountryCodeNatio, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExampleNumber")(country.asInstanceOf[js.Any], examples.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
   
-  @JSImport("libphonenumber-js/core", "getExtPrefix")
-  @js.native
-  def getExtPrefix(countryCode: CountryCode, metadata: Metadata): String = js.native
+  @scala.inline
+  def getExtPrefix(countryCode: CountryCode, metadata: Metadata): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getExtPrefix")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("libphonenumber-js/core", "isSupportedCountry")
-  @js.native
-  def isSupportedCountry(countryCode: CountryCode, metadata: Metadata): Boolean = js.native
+  @scala.inline
+  def isSupportedCountry(countryCode: CountryCode, metadata: Metadata): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedCountry")(countryCode.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("libphonenumber-js/core", "parseDigits")
-  @js.native
-  def parseDigits(character: String): String = js.native
+  @scala.inline
+  def parseDigits(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDigits")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("libphonenumber-js/core", "parseIncompletePhoneNumber")
-  @js.native
-  def parseIncompletePhoneNumber(text: String): String = js.native
+  @scala.inline
+  def parseIncompletePhoneNumber(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseIncompletePhoneNumber")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("libphonenumber-js/core", "parsePhoneNumber")
-  @js.native
-  def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
-  @JSImport("libphonenumber-js/core", "parsePhoneNumber")
-  @js.native
-  def parsePhoneNumber(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
+  @scala.inline
+  def parsePhoneNumber(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumber")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.libphonenumberJs.typesMod.PhoneNumber]
+  @scala.inline
+  def parsePhoneNumber(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumber")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.libphonenumberJs.typesMod.PhoneNumber]
   
-  @JSImport("libphonenumber-js/core", "parsePhoneNumberCharacter")
-  @js.native
-  def parsePhoneNumberCharacter(character: String): String = js.native
+  @scala.inline
+  def parsePhoneNumberCharacter(character: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberCharacter")(character.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("libphonenumber-js/core", "parsePhoneNumberFromString")
-  @js.native
-  def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
-  @JSImport("libphonenumber-js/core", "parsePhoneNumberFromString")
-  @js.native
-  def parsePhoneNumberFromString(text: String, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = js.native
+  @scala.inline
+  def parsePhoneNumberFromString(text: String, defaultCountry: CountryCode, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberFromString")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
+  @scala.inline
+  def parsePhoneNumberFromString(text: String, metadata: Metadata): js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber] = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberFromString")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[typings.libphonenumberJs.typesMod.PhoneNumber]]
   
-  @JSImport("libphonenumber-js/core", "parsePhoneNumberWithError")
-  @js.native
-  def parsePhoneNumberWithError(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
-  @JSImport("libphonenumber-js/core", "parsePhoneNumberWithError")
-  @js.native
-  def parsePhoneNumberWithError(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = js.native
+  @scala.inline
+  def parsePhoneNumberWithError(text: String, defaultCountry: CountryCode, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberWithError")(text.asInstanceOf[js.Any], defaultCountry.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.libphonenumberJs.typesMod.PhoneNumber]
+  @scala.inline
+  def parsePhoneNumberWithError(text: String, metadata: Metadata): typings.libphonenumberJs.typesMod.PhoneNumber = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePhoneNumberWithError")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[typings.libphonenumberJs.typesMod.PhoneNumber]
   
-  @JSImport("libphonenumber-js/core", "searchNumbers")
-  @js.native
-  def searchNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = js.native
-  @JSImport("libphonenumber-js/core", "searchNumbers")
-  @js.native
-  def searchNumbers(text: String, options: DefaultCountry, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "searchNumbers")
-  @js.native
-  def searchNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  @scala.inline
+  def searchNumbers(text: String, metadata: Metadata): IterableIterator[NumberFoundLegacy] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFoundLegacy]]
+  @scala.inline
+  def searchNumbers(text: String, options: DefaultCountry, metadata: Metadata): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  @scala.inline
+  def searchNumbers(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchNumbers")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
   
-  @JSImport("libphonenumber-js/core", "searchPhoneNumbersInText")
-  @js.native
-  def searchPhoneNumbersInText(text: String, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "searchPhoneNumbersInText")
-  @js.native
-  def searchPhoneNumbersInText(text: String, options: `0`, metadata: Metadata): IterableIterator[NumberFound] = js.native
-  @JSImport("libphonenumber-js/core", "searchPhoneNumbersInText")
-  @js.native
-  def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = js.native
+  @scala.inline
+  def searchPhoneNumbersInText(text: String, metadata: Metadata): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  @scala.inline
+  def searchPhoneNumbersInText(text: String, options: `0`, metadata: Metadata): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
+  @scala.inline
+  def searchPhoneNumbersInText(text: String, options: CountryCode, metadata: Metadata): IterableIterator[NumberFound] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchPhoneNumbersInText")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[IterableIterator[NumberFound]]
 }

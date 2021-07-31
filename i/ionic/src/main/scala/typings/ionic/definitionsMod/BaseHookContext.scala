@@ -4,17 +4,15 @@ import typings.ionic.anon.Dir
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseHookContext extends StObject {
   
-  var argv: js.Array[String] = js.native
+  var argv: js.Array[String]
   
-  var env: ProcessEnv = js.native
+  var env: ProcessEnv
   
-  var project: Dir = js.native
+  var project: Dir
 }
 object BaseHookContext {
   

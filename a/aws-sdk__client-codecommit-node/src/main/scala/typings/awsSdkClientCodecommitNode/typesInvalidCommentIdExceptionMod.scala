@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.Pos
 import typings.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidCommentIdExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommentIdExceptionDetails> * / any */ @js.native
-  trait InvalidCommentIdException
-    extends DeleteCommentContentExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidCommentIdExceptionDetails> * / any */ trait InvalidCommentIdException
+    extends StObject
+       with DeleteCommentContentExceptionsUnion
        with GetCommentExceptionsUnion
        with PostCommentReplyExceptionsUnion
        with UpdateCommentExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException
   }
   object InvalidCommentIdException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException
-    ): InvalidCommentIdException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidCommentIdException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCommentIdException")
       __obj.asInstanceOf[InvalidCommentIdException]
     }
     
@@ -41,6 +38,5 @@ object typesInvalidCommentIdExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidCommentIdExceptionDetails extends StObject
 }

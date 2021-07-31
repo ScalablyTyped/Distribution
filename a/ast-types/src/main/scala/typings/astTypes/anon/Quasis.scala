@@ -6,19 +6,17 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TemplateElementKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quasis extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var expressions: js.Array[ExpressionKind] = js.native
+  var expressions: js.Array[ExpressionKind]
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var quasis: js.Array[TemplateElementKind] = js.native
+  var quasis: js.Array[TemplateElementKind]
 }
 object Quasis {
   

@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgRadialMenuMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -24,22 +22,22 @@ trait IgRadialMenuMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Destroys the widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Exports visual data from the radial menu to aid in unit testing
     */
-  def exportVisualData(): Unit = js.native
+  def exportVisualData(): Unit
   
   /**
     * Forces any pending deferred work to render on the radial menu before continuing
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Gets or sets the value of a property for the item created with the specified key
@@ -48,12 +46,12 @@ trait IgRadialMenuMethods extends StObject {
     * @param key The name of the property/option
     * @param value The new value for the property or undefined to obtain the current value
     */
-  def itemOption(itemKey: String, key: String, value: js.Object): js.Object = js.native
+  def itemOption(itemKey: String, key: String, value: js.Object): js.Object
   
   /**
     * Notify the radial menu that style information used for rendering the menu may have been updated.
     */
-  def styleUpdated(): Unit = js.native
+  def styleUpdated(): Unit
 }
 object IgRadialMenuMethods {
   

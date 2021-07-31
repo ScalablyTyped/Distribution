@@ -2,13 +2,11 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorization extends StObject {
   
-  var authorization: String = js.native
+  var authorization: String
 }
 object Authorization {
   

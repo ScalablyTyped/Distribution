@@ -3,22 +3,22 @@ package typings.awsSdkClientGlacierNode
 import typings.awsSdkClientGlacierNode.initiateJobExceptionsUnionMod.InitiateJobExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInsufficientCapacityExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InsufficientCapacityExceptionDetails> * / any */ @js.native
-  trait InsufficientCapacityException extends InitiateJobExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InsufficientCapacityExceptionDetails> * / any */ trait InsufficientCapacityException
+    extends StObject
+       with InitiateJobExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InsufficientCapacityException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InsufficientCapacityException
   }
   object InsufficientCapacityException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InsufficientCapacityException): InsufficientCapacityException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InsufficientCapacityException = {
+      val __obj = js.Dynamic.literal(name = "InsufficientCapacityException")
       __obj.asInstanceOf[InsufficientCapacityException]
     }
     
@@ -32,23 +32,22 @@ object typesInsufficientCapacityExceptionMod {
     }
   }
   
-  @js.native
   trait InsufficientCapacityExceptionDetails extends StObject {
     
     /**
       * _string shape
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * _string shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * _string shape
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InsufficientCapacityExceptionDetails {
     

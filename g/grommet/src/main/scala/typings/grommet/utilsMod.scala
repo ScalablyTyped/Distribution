@@ -14,10 +14,13 @@ import typings.std.HTMLElement
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
+  
+  @JSImport("grommet/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("grommet/utils", "deepFreeze")
   @js.native
@@ -27,26 +30,20 @@ object utilsMod {
   @js.native
   val deepMerge: DeepMerge_ = js.native
   
-  @JSImport("grommet/utils", "isObject")
-  @js.native
-  def isObject(item: js.Any): Boolean = js.native
+  @scala.inline
+  def isObject(item: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(item.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("grommet/utils", "normalizeColor")
-  @js.native
-  def normalizeColor(color: String, theme: js.Object): String = js.native
-  @JSImport("grommet/utils", "normalizeColor")
-  @js.native
-  def normalizeColor(color: String, theme: js.Object, required: Boolean): String = js.native
-  @JSImport("grommet/utils", "normalizeColor")
-  @js.native
-  def normalizeColor(color: Dark, theme: js.Object): String = js.native
-  @JSImport("grommet/utils", "normalizeColor")
-  @js.native
-  def normalizeColor(color: Dark, theme: js.Object, required: Boolean): String = js.native
+  @scala.inline
+  def normalizeColor(color: String, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def normalizeColor(color: String, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def normalizeColor(color: Dark, theme: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def normalizeColor(color: Dark, theme: js.Object, required: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeColor")(color.asInstanceOf[js.Any], theme.asInstanceOf[js.Any], required.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("grommet/utils", "removeUndefined")
-  @js.native
-  def removeUndefined[T /* <: js.Object */](obj: T): NonUndefinedProps[T] = js.native
+  @scala.inline
+  def removeUndefined[T /* <: js.Object */](obj: T): NonUndefinedProps[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[NonUndefinedProps[T]]
   
   type A11yTitleType = String
   
@@ -147,7 +144,9 @@ object utilsMod {
     - typings.grommet.grommetStrings.all
     - typings.grommet.grommetStrings.between
   */
-  trait BoxSideType extends _BorderType
+  trait BoxSideType
+    extends StObject
+       with _BorderType
   object BoxSideType {
     
     @scala.inline
@@ -233,18 +232,17 @@ object utilsMod {
     def solid: typings.grommet.grommetStrings.solid = "solid".asInstanceOf[typings.grommet.grommetStrings.solid]
   }
   
-  @js.native
   trait BreakpointBorderSize extends StObject {
     
-    var large: js.UndefOr[String] = js.native
+    var large: js.UndefOr[String] = js.undefined
     
-    var medium: js.UndefOr[String] = js.native
+    var medium: js.UndefOr[String] = js.undefined
     
-    var small: js.UndefOr[String] = js.native
+    var small: js.UndefOr[String] = js.undefined
     
-    var xlarge: js.UndefOr[String] = js.native
+    var xlarge: js.UndefOr[String] = js.undefined
     
-    var xsmall: js.UndefOr[String] = js.native
+    var xsmall: js.UndefOr[String] = js.undefined
   }
   object BreakpointBorderSize {
     
@@ -289,24 +287,23 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait BreakpointEdgeSize extends StObject {
     
-    var hair: js.UndefOr[String] = js.native
+    var hair: js.UndefOr[String] = js.undefined
     
-    var large: js.UndefOr[String] = js.native
+    var large: js.UndefOr[String] = js.undefined
     
-    var medium: js.UndefOr[String] = js.native
+    var medium: js.UndefOr[String] = js.undefined
     
-    var none: js.UndefOr[String] = js.native
+    var none: js.UndefOr[String] = js.undefined
     
-    var small: js.UndefOr[String] = js.native
+    var small: js.UndefOr[String] = js.undefined
     
-    var xlarge: js.UndefOr[String] = js.native
+    var xlarge: js.UndefOr[String] = js.undefined
     
-    var xsmall: js.UndefOr[String] = js.native
+    var xsmall: js.UndefOr[String] = js.undefined
     
-    var xxsmall: js.UndefOr[String] = js.native
+    var xxsmall: js.UndefOr[String] = js.undefined
   }
   object BreakpointEdgeSize {
     
@@ -369,22 +366,21 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait BreakpointSize extends StObject {
     
-    var full: js.UndefOr[String] = js.native
+    var full: js.UndefOr[String] = js.undefined
     
-    var large: js.UndefOr[String] = js.native
+    var large: js.UndefOr[String] = js.undefined
     
-    var medium: js.UndefOr[String] = js.native
+    var medium: js.UndefOr[String] = js.undefined
     
-    var small: js.UndefOr[String] = js.native
+    var small: js.UndefOr[String] = js.undefined
     
-    var xlarge: js.UndefOr[String] = js.native
+    var xlarge: js.UndefOr[String] = js.undefined
     
-    var xsmall: js.UndefOr[String] = js.native
+    var xsmall: js.UndefOr[String] = js.undefined
     
-    var xxsmall: js.UndefOr[String] = js.native
+    var xxsmall: js.UndefOr[String] = js.undefined
   }
   object BreakpointSize {
     
@@ -448,12 +444,12 @@ object utilsMod {
   @js.native
   trait DeepMerge_ extends StObject {
     
-    def apply[T /* <: js.Object */, S /* <: js.Object */](target: T, source: S): T with S = js.native
+    def apply[T /* <: js.Object */, S /* <: js.Object */](target: T, source: S): T & S = js.native
   }
   
   type DeepReadonly[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in keyof T ]: T[K] extends object? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias grommet.grommet/utils.DeepReadonly<T[K]> * / object : T[K]}
-    */ typings.grommet.grommetStrings.DeepReadonly with TopLevel[js.Any]
+    */ typings.grommet.grommetStrings.DeepReadonly & TopLevel[js.Any]
   
   /* Rewritten from type alias, can be one of: 
     - typings.grommet.grommetStrings.xxsmall
@@ -464,7 +460,8 @@ object utilsMod {
     - typings.grommet.grommetStrings.xlarge
   */
   trait EdgeSizeType
-    extends _EdgeType
+    extends StObject
+       with _EdgeType
        with _GapType
   object EdgeSizeType {
     
@@ -562,7 +559,7 @@ object utilsMod {
   
   type NonUndefinedProps[T /* <: js.Object */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? grommet.grommet/utils.NonUndefined<T[K]>}
-    */ typings.grommet.grommetStrings.NonUndefinedProps with TopLevel[T]
+    */ typings.grommet.grommetStrings.NonUndefinedProps & TopLevel[T]
   
   type Omit[T, K] = Pick[T, Exclude[/* keyof T */ String, K]]
   

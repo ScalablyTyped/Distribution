@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountstatusesListResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#accountstatusesListResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The token for the retrieval of the next page of account statuses. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[js.Array[AccountStatus]] = js.native
+  var resources: js.UndefOr[js.Array[AccountStatus]] = js.undefined
 }
 object AccountstatusesListResponse {
   

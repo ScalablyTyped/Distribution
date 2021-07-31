@@ -2,15 +2,13 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  def copy(): Attachment = js.native
+  def copy(): Attachment
   
-  var name: String = js.native
+  var name: String
 }
 object Attachment {
   

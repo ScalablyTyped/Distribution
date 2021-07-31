@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SupportingWidgetDefaults extends Object {
+trait SupportingWidgetDefaults
+  extends StObject
+     with Object {
   
   /**
     * An object containing properties specific for customizing the [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var featureForm: js.UndefOr[SupportingWidgetDefaultsFeatureForm] = js.native
+  var featureForm: js.UndefOr[SupportingWidgetDefaultsFeatureForm] = js.undefined
   
   /**
     * An object containing properties specific for customizing the [FeatureTemplates](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var featureTemplates: js.UndefOr[SupportingWidgetDefaultsFeatureTemplates] = js.native
+  var featureTemplates: js.UndefOr[SupportingWidgetDefaultsFeatureTemplates] = js.undefined
   
   /**
     * An object containing properties specific for customizng the [Sketch](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html) widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#SupportingWidgetDefaults)
     */
-  var sketch: js.UndefOr[SupportingWidgetDefaultsSketch] = js.native
+  var sketch: js.UndefOr[SupportingWidgetDefaultsSketch] = js.undefined
 }
 object SupportingWidgetDefaults {
   

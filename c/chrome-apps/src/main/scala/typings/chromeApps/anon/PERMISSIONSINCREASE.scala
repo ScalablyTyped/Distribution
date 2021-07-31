@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.permissions_increase_
 import typings.chromeApps.chromeAppsStrings.unknown__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PERMISSIONSINCREASE extends StObject {
   
-  var PERMISSIONS_INCREASE: permissions_increase_ = js.native
+  var PERMISSIONS_INCREASE: permissions_increase_
   
-  var UNKNOWN: unknown__ = js.native
+  var UNKNOWN: unknown__
 }
 object PERMISSIONSINCREASE {
   
   @scala.inline
-  def apply(PERMISSIONS_INCREASE: permissions_increase_, UNKNOWN: unknown__): PERMISSIONSINCREASE = {
-    val __obj = js.Dynamic.literal(PERMISSIONS_INCREASE = PERMISSIONS_INCREASE.asInstanceOf[js.Any], UNKNOWN = UNKNOWN.asInstanceOf[js.Any])
+  def apply(): PERMISSIONSINCREASE = {
+    val __obj = js.Dynamic.literal(PERMISSIONS_INCREASE = "permissions_increase", UNKNOWN = "unknown")
     __obj.asInstanceOf[PERMISSIONSINCREASE]
   }
   

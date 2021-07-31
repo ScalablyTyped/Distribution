@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherExecuteWatch[T] extends Generic {
+trait WatcherExecuteWatch[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object WatcherExecuteWatch {
   
@@ -23,7 +23,7 @@ object WatcherExecuteWatch {
   }
   
   @scala.inline
-  implicit class WatcherExecuteWatchMutableBuilder[Self <: WatcherExecuteWatch[_], T] (val x: Self with WatcherExecuteWatch[T]) extends AnyVal {
+  implicit class WatcherExecuteWatchMutableBuilder[Self <: WatcherExecuteWatch[?], T] (val x: Self & WatcherExecuteWatch[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

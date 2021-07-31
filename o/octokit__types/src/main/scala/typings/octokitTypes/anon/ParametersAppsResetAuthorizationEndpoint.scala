@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.AppsResetAuthorizationResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsResetAuthorizationEndpoint extends StObject {
   
-  var parameters: AppsResetAuthorizationEndpoint = js.native
+  var parameters: AppsResetAuthorizationEndpoint
   
-  var request: AppsResetAuthorizationRequestOptions = js.native
+  var request: AppsResetAuthorizationRequestOptions
   
-  var response: OctokitResponse[AppsResetAuthorizationResponseData] = js.native
+  var response: OctokitResponse[AppsResetAuthorizationResponseData]
 }
 object ParametersAppsResetAuthorizationEndpoint {
   

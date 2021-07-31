@@ -2,21 +2,19 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsClassName[T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] extends StObject {
   
   /**
     * Render as a different element type
     */
-  var as: js.UndefOr[T] = js.native
+  var as: js.UndefOr[T] = js.undefined
   
   /**
     * `className` of the container.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
 }
 object AsClassName {
   
@@ -27,7 +25,7 @@ object AsClassName {
   }
   
   @scala.inline
-  implicit class AsClassNameMutableBuilder[Self <: AsClassName[_], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self with AsClassName[T]) extends AnyVal {
+  implicit class AsClassNameMutableBuilder[Self <: AsClassName[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any */] (val x: Self & AsClassName[T]) extends AnyVal {
     
     @scala.inline
     def setAs(value: T): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

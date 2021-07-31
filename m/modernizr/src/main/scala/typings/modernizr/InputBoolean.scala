@@ -2,31 +2,29 @@ package typings.modernizr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputBoolean extends StObject {
   
-  var autocomplete: Boolean = js.native
+  var autocomplete: Boolean
   
-  var autofocus: Boolean = js.native
+  var autofocus: Boolean
   
-  var list: Boolean = js.native
+  var list: Boolean
   
-  var max: Boolean = js.native
+  var max: Boolean
   
-  var min: Boolean = js.native
+  var min: Boolean
   
-  var multiple: Boolean = js.native
+  var multiple: Boolean
   
-  var pattern: Boolean = js.native
+  var pattern: Boolean
   
-  var placeholder: Boolean = js.native
+  var placeholder: Boolean
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var step: Boolean = js.native
+  var step: Boolean
 }
 object InputBoolean {
   

@@ -7,108 +7,82 @@ import typings.setCookieParser.anon.Optionsmaptrue
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
+  @scala.inline
+  def apply(input: String): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def apply(input: String, options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
   /**
     * Parses set-cookie headers into objects
     */
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String]): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Options): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: IncomingMessage): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: IncomingMessage, options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: IncomingMessage, options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", JSImport.Namespace)
-  @js.native
-  def apply(input: IncomingMessage, options: Options): js.Array[Cookie] | CookieMap = js.native
+  @scala.inline
+  def apply(input: String, options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def apply(input: String, options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def apply(input: js.Array[String]): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def apply(input: js.Array[String], options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def apply(input: js.Array[String], options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def apply(input: js.Array[String], options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def apply(input: IncomingMessage): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def apply(input: IncomingMessage, options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def apply(input: IncomingMessage, options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def apply(input: IncomingMessage, options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
   
-  @JSImport("set-cookie-parser", "parse")
+  @JSImport("set-cookie-parser", JSImport.Namespace)
   @js.native
-  def parse(input: String): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: String, options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: String, options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: String, options: Options): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: js.Array[String]): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: js.Array[String], options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: js.Array[String], options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: js.Array[String], options: Options): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: IncomingMessage): js.Array[Cookie] | CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: IncomingMessage, options: Optionsmapfalseundefined): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: IncomingMessage, options: Optionsmaptrue): CookieMap = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse(input: IncomingMessage, options: Options): js.Array[Cookie] | CookieMap = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(input: String): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def parse(input: String, options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def parse(input: String, options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def parse(input: String, options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def parse(input: js.Array[String]): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def parse(input: js.Array[String], options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def parse(input: js.Array[String], options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def parse(input: js.Array[String], options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def parse(input: IncomingMessage): js.Array[Cookie] | CookieMap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie] | CookieMap]
+  @scala.inline
+  def parse(input: IncomingMessage, options: Optionsmapfalseundefined): js.Array[Cookie] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def parse(input: IncomingMessage, options: Optionsmaptrue): CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CookieMap]
+  @scala.inline
+  def parse(input: IncomingMessage, options: Options): js.Array[Cookie] | CookieMap = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cookie] | CookieMap]
   
   /**
     * Parses a single set-cookie header value string.
     * Options default is `{decodeValues: true}`. Used under-the-hood by `parse()`
     */
-  @JSImport("set-cookie-parser", "parseString")
-  @js.native
-  def parseString(individualSetCookieHeader: String): Cookie = js.native
-  @JSImport("set-cookie-parser", "parseString")
-  @js.native
-  def parseString(individualSetCookieHeader: String, options: Options): Cookie = js.native
+  @scala.inline
+  def parseString(individualSetCookieHeader: String): Cookie = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(individualSetCookieHeader.asInstanceOf[js.Any]).asInstanceOf[Cookie]
+  @scala.inline
+  def parseString(individualSetCookieHeader: String, options: Options): Cookie = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(individualSetCookieHeader.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Cookie]
   
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse_Array(input: String): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse_Array(input: js.Array[String]): js.Array[Cookie] = js.native
-  @JSImport("set-cookie-parser", "parse")
-  @js.native
-  def parse_Array(input: IncomingMessage): js.Array[Cookie] = js.native
+  @scala.inline
+  def parse_Array(input: String): js.Array[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def parse_Array(input: js.Array[String]): js.Array[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie]]
+  @scala.inline
+  def parse_Array(input: IncomingMessage): js.Array[Cookie] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Cookie]]
   
   /**
     * Set-Cookie header field-values are sometimes comma joined in one string. This splits them without choking on commas
@@ -119,65 +93,61 @@ object mod {
     * Based on: https://github.com/google/j2objc/commit/16820fdbc8f76ca0c33472810ce0cb03d20efe25
     * Credits to: https://github.com/tomball for original and https://github.com/chrusart for JavaScript implementation
     */
-  @JSImport("set-cookie-parser", "splitCookiesString")
-  @js.native
-  def splitCookiesString(): js.Array[String] = js.native
-  @JSImport("set-cookie-parser", "splitCookiesString")
-  @js.native
-  def splitCookiesString(input: String): js.Array[String] = js.native
-  @JSImport("set-cookie-parser", "splitCookiesString")
-  @js.native
-  def splitCookiesString(input: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def splitCookiesString(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCookiesString")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def splitCookiesString(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCookiesString")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def splitCookiesString(input: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitCookiesString")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @js.native
   trait Cookie extends StObject {
     
     /**
       * domain for the cookie,
       * may begin with "." to indicate the named domain or any subdomain of it
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * absolute expiration date for the cookie
       */
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * indicates that this cookie should not be accessible to client-side JavaScript
       */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * relative max age of the cookie in seconds from when the client receives it (integer or undefined)
       * Note: when using with express's res.cookie() method, multiply maxAge by 1000 to convert to miliseconds
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
       * cookie name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * cookie path
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * indicates a cookie ought not to be sent along with cross-site requests
       */
-    var sameSite: js.UndefOr[String] = js.native
+    var sameSite: js.UndefOr[String] = js.undefined
     
     /**
       * indicates that this cookie should only be sent over HTTPs
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * cookie value
       */
-    var value: String = js.native
+    var value: String
   }
   object Cookie {
     
@@ -242,26 +212,25 @@ object mod {
   
   type CookieMap = StringDictionary[Cookie]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Calls dcodeURIComponent on each value
       * @default true
       */
-    var decodeValues: js.UndefOr[Boolean] = js.native
+    var decodeValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return an object instead of an array
       * @default false
       */
-    var map: js.UndefOr[Boolean] = js.native
+    var map: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress the warning that is loged when called on a request instead of a response
       * @default false
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

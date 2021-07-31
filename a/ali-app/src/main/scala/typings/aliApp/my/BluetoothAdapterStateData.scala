@@ -3,21 +3,21 @@ package typings.aliApp.my
 import typings.aliApp.aliAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BluetoothAdapterStateData extends ErrMsgResponse {
+trait BluetoothAdapterStateData
+  extends StObject
+     with ErrMsgResponse {
   
   /**
     * 蓝牙模块是否可用(需支持 BLE 并且蓝牙是打开状态)
     */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /**
     * 是否正在搜索设备
     */
-  var discovering: Boolean = js.native
+  var discovering: Boolean
 }
 object BluetoothAdapterStateData {
   

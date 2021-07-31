@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLaunchTemplateRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier you provide to ensure the idempotency of the request. For more information, see Ensuring Idempotency. Constraint: Maximum 128 ASCII characters.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The information for the launch template.
     */
-  var LaunchTemplateData: RequestLaunchTemplateData = js.native
+  var LaunchTemplateData: RequestLaunchTemplateData
   
   /**
     * A name for the launch template.
     */
-  var LaunchTemplateName: typings.awsSdk.ec2Mod.LaunchTemplateName = js.native
+  var LaunchTemplateName: typings.awsSdk.ec2Mod.LaunchTemplateName
   
   /**
     * The tags to apply to the launch template during creation.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * A description for the first version of the launch template.
     */
-  var VersionDescription: js.UndefOr[typings.awsSdk.ec2Mod.VersionDescription] = js.native
+  var VersionDescription: js.UndefOr[typings.awsSdk.ec2Mod.VersionDescription] = js.undefined
 }
 object CreateLaunchTemplateRequest {
   

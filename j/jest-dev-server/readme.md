@@ -10,9 +10,9 @@ Starts a server before your Jest tests and tears it down after.
 | ------------------ | :-------------: |
 | Full name          | jest-dev-server |
 | Keywords           | jest, jest-environment, server |
-| # releases         | 13 |
+| # releases         | 6 |
 | # dependents       | 5 |
-| # downloads        | 6184922 |
+| # downloads        | 7535125 |
 | # stars            | 0 |
 
 ## Links

@@ -6,39 +6,39 @@ import typings.awsSdkTypes.responseMod.ResponseMetadata
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetServiceGraphOutputMod {
   
-  @js.native
-  trait GetServiceGraphOutput extends OutputTypesUnion {
+  trait GetServiceGraphOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The end of the time frame for which the graph was generated.</p>
       */
-    var EndTime: js.UndefOr[Date] = js.native
+    var EndTime: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>Pagination token. Not used.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The services that have processed a traced request during the specified time frame.</p>
       */
-    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.native
+    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.undefined
     
     /**
       * <p>The start of the time frame for which the graph was generated.</p>
       */
-    var StartTime: js.UndefOr[Date] = js.native
+    var StartTime: js.UndefOr[Date] = js.undefined
   }
   object GetServiceGraphOutput {
     

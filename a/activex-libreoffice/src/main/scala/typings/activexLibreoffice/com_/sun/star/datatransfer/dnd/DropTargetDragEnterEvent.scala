@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It contains the {@link com.sun.star.datatransfer.DataFlavor} types supported by the transferable object of the current Drag and Drop operation.
   * @see com.sun.star.datatransfer.XTransferable
   */
-@js.native
-trait DropTargetDragEnterEvent extends DropTargetDragEvent {
+trait DropTargetDragEnterEvent
+  extends StObject
+     with DropTargetDragEvent {
   
   /** A sequence of supported {@link com.sun.star.datatransfer.DataFlavor} types. */
-  var SupportedDataFlavors: SafeArray[DataFlavor] = js.native
+  var SupportedDataFlavors: SafeArray[DataFlavor]
 }
 object DropTargetDragEnterEvent {
   

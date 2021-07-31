@@ -4,7 +4,6 @@ import typings.heremaps.H.map.ViewPort.Options
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.ViewPort")
 @js.native
 class ViewPort protected ()
-  extends typings.heremaps.H.map.ViewPort {
+  extends StObject
+     with typings.heremaps.H.map.ViewPort {
   /**
     * Constructor
     * @param element {Element} - html element were map will be rendered

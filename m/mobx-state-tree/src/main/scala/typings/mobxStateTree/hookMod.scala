@@ -2,7 +2,6 @@ package typings.mobxStateTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hookMod {
@@ -14,27 +13,37 @@ object hookMod {
   object Hook extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Hook with String] = js.native
+    def apply(value: String): js.UndefOr[Hook & String] = js.native
     
     @js.native
-    sealed trait afterAttach extends Hook
-    /* "afterAttach" */ val afterAttach: typings.mobxStateTree.hookMod.Hook.afterAttach with String = js.native
+    sealed trait afterAttach
+      extends StObject
+         with Hook
+    /* "afterAttach" */ val afterAttach: typings.mobxStateTree.hookMod.Hook.afterAttach & String = js.native
     
     @js.native
-    sealed trait afterCreate extends Hook
-    /* "afterCreate" */ val afterCreate: typings.mobxStateTree.hookMod.Hook.afterCreate with String = js.native
+    sealed trait afterCreate
+      extends StObject
+         with Hook
+    /* "afterCreate" */ val afterCreate: typings.mobxStateTree.hookMod.Hook.afterCreate & String = js.native
     
     @js.native
-    sealed trait afterCreationFinalization extends Hook
-    /* "afterCreationFinalization" */ val afterCreationFinalization: typings.mobxStateTree.hookMod.Hook.afterCreationFinalization with String = js.native
+    sealed trait afterCreationFinalization
+      extends StObject
+         with Hook
+    /* "afterCreationFinalization" */ val afterCreationFinalization: typings.mobxStateTree.hookMod.Hook.afterCreationFinalization & String = js.native
     
     @js.native
-    sealed trait beforeDestroy extends Hook
-    /* "beforeDestroy" */ val beforeDestroy: typings.mobxStateTree.hookMod.Hook.beforeDestroy with String = js.native
+    sealed trait beforeDestroy
+      extends StObject
+         with Hook
+    /* "beforeDestroy" */ val beforeDestroy: typings.mobxStateTree.hookMod.Hook.beforeDestroy & String = js.native
     
     @js.native
-    sealed trait beforeDetach extends Hook
-    /* "beforeDetach" */ val beforeDetach: typings.mobxStateTree.hookMod.Hook.beforeDetach with String = js.native
+    sealed trait beforeDetach
+      extends StObject
+         with Hook
+    /* "beforeDetach" */ val beforeDetach: typings.mobxStateTree.hookMod.Hook.beforeDetach & String = js.native
   }
   
   @js.native

@@ -3,15 +3,13 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.excelExporter.ExcelDataGridCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelCell extends StObject {
   
-  var excelCell: js.UndefOr[js.Any] = js.native
+  var excelCell: js.UndefOr[js.Any] = js.undefined
   
-  var gridCell: js.UndefOr[ExcelDataGridCell] = js.native
+  var gridCell: js.UndefOr[ExcelDataGridCell] = js.undefined
 }
 object ExcelCell {
   

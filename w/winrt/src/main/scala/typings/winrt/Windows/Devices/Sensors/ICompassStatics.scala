@@ -2,13 +2,11 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompassStatics extends StObject {
   
-  def getDefault(): Compass = js.native
+  def getDefault(): Compass
 }
 object ICompassStatics {
   

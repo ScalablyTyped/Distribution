@@ -11,17 +11,15 @@ import typings.twitchExt.twitchExtStrings.video
 import typings.twitchExt.twitchExtStrings.viewer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var version: String = js.native
+    var version: String
   }
   object Content {
     
@@ -42,18 +40,17 @@ object anon {
     }
   }
   
-  @js.native
   trait HostedChannelId extends StObject {
     
     /**
       * Numeric ID of the channel being hosted by the currently visible channel
       */
-    var hostedChannelId: String = js.native
+    var hostedChannelId: String
     
     /**
       * Numeric ID of the host channel
       */
-    var hostingChannelId: String = js.native
+    var hostingChannelId: String
   }
   object HostedChannelId {
     
@@ -75,42 +72,41 @@ object anon {
   }
   
   /* Inlined std.Partial<twitch-ext.Twitch.ext.Context> */
-  @js.native
   trait PartialContext extends StObject {
     
-    var arePlayerControlsVisible: js.UndefOr[Boolean] = js.native
+    var arePlayerControlsVisible: js.UndefOr[Boolean] = js.undefined
     
-    var bitrate: js.UndefOr[Double] = js.native
+    var bitrate: js.UndefOr[Double] = js.undefined
     
-    var bufferSize: js.UndefOr[Double] = js.native
+    var bufferSize: js.UndefOr[Double] = js.undefined
     
-    var displayResolution: js.UndefOr[String] = js.native
+    var displayResolution: js.UndefOr[String] = js.undefined
     
-    var game: js.UndefOr[String] = js.native
+    var game: js.UndefOr[String] = js.undefined
     
-    var hlsLatencyBroadcaster: js.UndefOr[Double] = js.native
+    var hlsLatencyBroadcaster: js.UndefOr[Double] = js.undefined
     
-    var hostingInfo: js.UndefOr[HostedChannelId] = js.native
+    var hostingInfo: js.UndefOr[HostedChannelId] = js.undefined
     
-    var isFullScreen: js.UndefOr[Boolean] = js.native
+    var isFullScreen: js.UndefOr[Boolean] = js.undefined
     
-    var isMuted: js.UndefOr[Boolean] = js.native
+    var isMuted: js.UndefOr[Boolean] = js.undefined
     
-    var isPaused: js.UndefOr[Boolean] = js.native
+    var isPaused: js.UndefOr[Boolean] = js.undefined
     
-    var isTheatreMode: js.UndefOr[Boolean] = js.native
+    var isTheatreMode: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[viewer | dashboard | config] = js.native
+    var mode: js.UndefOr[viewer | dashboard | config] = js.undefined
     
-    var playbackMode: js.UndefOr[video | audio | remote | `chat-only`] = js.native
+    var playbackMode: js.UndefOr[video | audio | remote | `chat-only`] = js.undefined
     
-    var theme: js.UndefOr[light | dark] = js.native
+    var theme: js.UndefOr[light | dark] = js.undefined
     
-    var videoResolution: js.UndefOr[String] = js.native
+    var videoResolution: js.UndefOr[String] = js.undefined
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object PartialContext {
     
@@ -227,12 +223,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

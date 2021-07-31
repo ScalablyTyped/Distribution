@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnStatisticsError extends StObject {
   
   /**
     * The ColumnStatistics of the column.
     */
-  var ColumnStatistics: js.UndefOr[typings.awsSdk.glueMod.ColumnStatistics] = js.native
+  var ColumnStatistics: js.UndefOr[typings.awsSdk.glueMod.ColumnStatistics] = js.undefined
   
   /**
     * An error message with the reason for the failure of an operation.
     */
-  var Error: js.UndefOr[ErrorDetail] = js.native
+  var Error: js.UndefOr[ErrorDetail] = js.undefined
 }
 object ColumnStatisticsError {
   

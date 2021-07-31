@@ -3,28 +3,28 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Update extends AST {
+trait Update
+  extends StObject
+     with AST {
   
-  var db: String | Null = js.native
+  var db: String | Null
   
-  var set: js.Array[SetList] = js.native
+  var set: js.Array[SetList]
   
-  var table: (js.Array[From | Dual]) | Null = js.native
+  var table: (js.Array[From | Dual]) | Null
   
-  var `type`: update = js.native
+  var `type`: update
   
-  var where: js.Any = js.native
+  var where: js.Any
 }
 object Update {
   
   @scala.inline
-  def apply(set: js.Array[SetList], `type`: update, where: js.Any): Update = {
-    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(set: js.Array[SetList], where: js.Any): Update = {
+    val __obj = js.Dynamic.literal(set = set.asInstanceOf[js.Any], where = where.asInstanceOf[js.Any], db = null, table = null)
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[Update]
   }
   

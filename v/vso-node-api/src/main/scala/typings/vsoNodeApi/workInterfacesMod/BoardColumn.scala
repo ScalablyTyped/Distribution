@@ -3,25 +3,23 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardColumn extends StObject {
   
-  var columnType: BoardColumnType = js.native
+  var columnType: BoardColumnType
   
-  var description: String = js.native
+  var description: String
   
-  var id: String = js.native
+  var id: String
   
-  var isSplit: Boolean = js.native
+  var isSplit: Boolean
   
-  var itemLimit: Double = js.native
+  var itemLimit: Double
   
-  var name: String = js.native
+  var name: String
   
-  var stateMappings: StringDictionary[String] = js.native
+  var stateMappings: StringDictionary[String]
 }
 object BoardColumn {
   

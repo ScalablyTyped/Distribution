@@ -11,27 +11,27 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RangeSelector extends Label {
+trait RangeSelector
+  extends StObject
+     with Label {
   
-  var activecolor: String = js.native
+  var activecolor: String
   
-  var borderwidth: Double = js.native
+  var borderwidth: Double
   
-  var buttons: js.Array[PartialRangeSelectorButto] = js.native
+  var buttons: js.Array[PartialRangeSelectorButto]
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var xanchor: auto | left | center | right = js.native
+  var xanchor: auto | left | center | right
   
-  var y: Double = js.native
+  var y: Double
   
-  var yanchor: auto | top | middle | bottom = js.native
+  var yanchor: auto | top | middle | bottom
 }
 object RangeSelector {
   

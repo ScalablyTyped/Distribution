@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JavascriptDialogClosedEvent extends StObject {
   
   /**
     * Whether dialog was confirmed.
     */
-  var result: Boolean = js.native
+  var result: Boolean
   
   /**
     * User input in case of prompt.
     */
-  var userInput: String = js.native
+  var userInput: String
 }
 object JavascriptDialogClosedEvent {
   

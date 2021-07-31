@@ -5,31 +5,29 @@ import typings.typeorm.metadataRelationMetadataMod.RelationMetadata
 import typings.typeorm.persistenceSubjectMod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object persistenceSubjectChangeMapMod {
   
-  @js.native
   trait SubjectChangeMap extends StObject {
     
     /**
       * Column that needs to be changed.
       * Either column, either relation must be set in the change.
       */
-    var column: js.UndefOr[ColumnMetadata] = js.native
+    var column: js.UndefOr[ColumnMetadata] = js.undefined
     
     /**
       * Relation that needs to be changed.
       * Either column, either relation must be set in the change.
       */
-    var relation: js.UndefOr[RelationMetadata] = js.native
+    var relation: js.UndefOr[RelationMetadata] = js.undefined
     
     /**
       * Value needs to be inserted into given column.
       * This value can also be another subject, when this column has a referenced column.
       */
-    var value: Subject | js.Any = js.native
+    var value: Subject | js.Any
   }
   object SubjectChangeMap {
     

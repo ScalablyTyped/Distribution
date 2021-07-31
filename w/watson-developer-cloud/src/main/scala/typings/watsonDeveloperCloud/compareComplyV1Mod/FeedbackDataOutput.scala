@@ -2,39 +2,37 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information returned from the `POST /v1/feedback` method. */
-@js.native
 trait FeedbackDataOutput extends StObject {
   
   /** Brief information about the input document. */
-  var document: js.UndefOr[ShortDoc] = js.native
+  var document: js.UndefOr[ShortDoc] = js.undefined
   
   /** A string identifying the user adding the feedback. The only permitted value is `element_classification`. */
-  var feedback_type: js.UndefOr[String] = js.native
+  var feedback_type: js.UndefOr[String] = js.undefined
   
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** An optional string identifying the model ID. The only permitted value is `contracts`. */
-  var model_id: js.UndefOr[String] = js.native
+  var model_id: js.UndefOr[String] = js.undefined
   
   /** An optional string identifying the version of the model used. */
-  var model_version: js.UndefOr[String] = js.native
+  var model_version: js.UndefOr[String] = js.undefined
   
   /** The original labeling from the input document, without the submitted feedback. */
-  var original_labels: js.UndefOr[OriginalLabelsOut] = js.native
+  var original_labels: js.UndefOr[OriginalLabelsOut] = js.undefined
   
   /** Pagination details, if required by the length of the output. */
-  var pagination: js.UndefOr[Pagination] = js.native
+  var pagination: js.UndefOr[Pagination] = js.undefined
   
   /** The text to which the feedback applies. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /** The updated labeling from the input document, accounting for the submitted feedback. */
-  var updated_labels: js.UndefOr[UpdatedLabelsOut] = js.native
+  var updated_labels: js.UndefOr[UpdatedLabelsOut] = js.undefined
 }
 object FeedbackDataOutput {
   

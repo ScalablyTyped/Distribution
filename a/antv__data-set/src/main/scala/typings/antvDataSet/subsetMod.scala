@@ -2,19 +2,17 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subsetMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var endRowIndex: js.UndefOr[Double] = js.native
+    var endRowIndex: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[js.Array[String]] = js.native
+    var fields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var startRowIndex: js.UndefOr[Double] = js.native
+    var startRowIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

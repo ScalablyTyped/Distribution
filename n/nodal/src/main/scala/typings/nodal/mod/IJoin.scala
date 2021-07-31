@@ -2,43 +2,41 @@ package typings.nodal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJoin extends StObject {
   
-  var cachedModel: js.UndefOr[Model] = js.native
+  var cachedModel: js.UndefOr[Model] = js.undefined
   
-  var columns: js.UndefOr[js.Array[String]] = js.native
+  var columns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var columnsObject: js.UndefOr[js.Object] = js.native
+  var columnsObject: js.UndefOr[js.Object] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var joinAlias: js.UndefOr[String] = js.native
+  var joinAlias: js.UndefOr[String] = js.undefined
   
-  var joinColumn: js.UndefOr[String] = js.native
+  var joinColumn: js.UndefOr[String] = js.undefined
   
-  var joinTable: String = js.native
+  var joinTable: String
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var multiFilter: js.UndefOr[js.Any] = js.native
+  var multiFilter: js.UndefOr[js.Any] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var orderBy: js.UndefOr[js.Any] = js.native
+  var orderBy: js.UndefOr[js.Any] = js.undefined
   
-  var prevAlias: js.UndefOr[String] = js.native
+  var prevAlias: js.UndefOr[String] = js.undefined
   
-  var prevColumn: js.UndefOr[String] = js.native
+  var prevColumn: js.UndefOr[String] = js.undefined
   
-  var prevTable: String = js.native
+  var prevTable: String
 }
 object IJoin {
   

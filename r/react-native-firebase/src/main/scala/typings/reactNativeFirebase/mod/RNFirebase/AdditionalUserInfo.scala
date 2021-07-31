@@ -2,19 +2,17 @@ package typings.reactNativeFirebase.mod.RNFirebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalUserInfo extends StObject {
   
-  var isNewUser: Boolean = js.native
+  var isNewUser: Boolean
   
-  var profile: js.UndefOr[js.Object] = js.native
+  var profile: js.UndefOr[js.Object] = js.undefined
   
-  var providerId: String = js.native
+  var providerId: String
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object AdditionalUserInfo {
   

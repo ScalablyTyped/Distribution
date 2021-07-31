@@ -11,8 +11,8 @@ A React component for choosing dates and date ranges.
 | Full name          | react-date-range |
 | Keywords           | react, date, range, datepicker, rangepicker |
 | # releases         | 6 |
-| # dependents       | 44 |
-| # downloads        | 2047397 |
+| # dependents       | 57 |
+| # downloads        | 2354142 |
 | # stars            | 1 |
 
 ## Links

@@ -33,164 +33,162 @@ import typings.reactNativeMaterialDropdown.reactNativeMaterialDropdownStrings.ye
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-native-material-dropdown.react-native-material-dropdown.DropDownProps> */
-  @js.native
   trait PartialDropDownProps extends StObject {
     
-    var absoluteRTLLayout: js.UndefOr[Boolean] = js.native
+    var absoluteRTLLayout: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
-    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityHint: js.UndefOr[String] = js.native
+    var accessibilityHint: js.UndefOr[String] = js.undefined
     
-    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
-    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
-    var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+    var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
     
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
-    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
-    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var baseColor: js.UndefOr[String] = js.native
+    var baseColor: js.UndefOr[String] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var data: js.UndefOr[js.Array[DropDownData]] = js.native
+    var data: js.UndefOr[js.Array[DropDownData]] = js.undefined
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var delayPressIn: js.UndefOr[Double] = js.native
+    var delayPressIn: js.UndefOr[Double] = js.undefined
     
-    var delayPressOut: js.UndefOr[Double] = js.native
+    var delayPressOut: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledItemColor: js.UndefOr[String] = js.native
+    var disabledItemColor: js.UndefOr[String] = js.undefined
     
-    var dropdownMargins: js.UndefOr[DropDownMargins] = js.native
+    var dropdownMargins: js.UndefOr[DropDownMargins] = js.undefined
     
-    var dropdownOffset: js.UndefOr[DropDownOffset] = js.native
+    var dropdownOffset: js.UndefOr[DropDownOffset] = js.undefined
     
-    var dropdownPosition: js.UndefOr[Double] = js.native
+    var dropdownPosition: js.UndefOr[Double] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hitSlop: js.UndefOr[DropDownInsets] = js.native
+    var hitSlop: js.UndefOr[DropDownInsets] = js.undefined
     
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
     
-    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemColor: js.UndefOr[String] = js.native
+    var itemColor: js.UndefOr[String] = js.undefined
     
-    var itemCount: js.UndefOr[Double] = js.native
+    var itemCount: js.UndefOr[Double] = js.undefined
     
-    var itemPadding: js.UndefOr[Double] = js.native
+    var itemPadding: js.UndefOr[Double] = js.undefined
     
-    var itemTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var itemTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var labelExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.native
+    var labelExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.undefined
     
-    var labelFontSize: js.UndefOr[Double] = js.native
+    var labelFontSize: js.UndefOr[Double] = js.undefined
     
-    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
     
-    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onChangeText: js.UndefOr[
         js.Function3[/* value */ String, /* index */ Double, /* data */ js.Array[DropDownData], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var pressRetentionOffset: js.UndefOr[Insets] = js.native
+    var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
     
-    var propsExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, Partial[this.type]]] = js.native
+    var propsExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, Partial[this.type]]] = js.undefined
     
-    var renderAccessory: js.UndefOr[js.Function0[Element]] = js.native
+    var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var renderBase: js.UndefOr[js.Function1[/* props */ RenderBaseProps, Element]] = js.native
+    var renderBase: js.UndefOr[js.Function1[/* props */ RenderBaseProps, Element]] = js.undefined
     
-    var rippleCentered: js.UndefOr[Boolean] = js.native
+    var rippleCentered: js.UndefOr[Boolean] = js.undefined
     
-    var rippleColor: js.UndefOr[String] = js.native
+    var rippleColor: js.UndefOr[String] = js.undefined
     
-    var rippleDuration: js.UndefOr[Double] = js.native
+    var rippleDuration: js.UndefOr[Double] = js.undefined
     
-    var rippleInsets: js.UndefOr[DropDownInsets] = js.native
+    var rippleInsets: js.UndefOr[DropDownInsets] = js.undefined
     
-    var rippleOpacity: js.UndefOr[Double] = js.native
+    var rippleOpacity: js.UndefOr[Double] = js.undefined
     
-    var rippleSequential: js.UndefOr[Boolean] = js.native
+    var rippleSequential: js.UndefOr[Boolean] = js.undefined
     
-    var selectedItemColor: js.UndefOr[String] = js.native
+    var selectedItemColor: js.UndefOr[String] = js.undefined
     
-    var shadeOpacity: js.UndefOr[Double] = js.native
+    var shadeOpacity: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var supportedOrientations: js.UndefOr[js.Array[String]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.native
+    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
     
-    var valueExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.native
+    var valueExtractor: js.UndefOr[js.Function2[/* item */ DropDownData, /* index */ Double, String]] = js.undefined
   }
   object PartialDropDownProps {
     
@@ -686,158 +684,157 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-material-dropdown.react-native-material-dropdown.DropDownProps> */
-  @js.native
   trait PartialDropDownPropsAbsoluteRTLLayout extends StObject {
     
-    var absoluteRTLLayout: js.UndefOr[Boolean] = js.native
+    var absoluteRTLLayout: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+    var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
     
-    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+    var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
     
-    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+    var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityHint: js.UndefOr[String] = js.native
+    var accessibilityHint: js.UndefOr[String] = js.undefined
     
-    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+    var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+    var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
     
-    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+    var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
     
-    var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+    var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
     
-    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+    var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
     
-    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+    var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
     
-    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+    var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var baseColor: js.UndefOr[String] = js.native
+    var baseColor: js.UndefOr[String] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var data: js.UndefOr[js.Array[DropDownData]] = js.native
+    var data: js.UndefOr[js.Array[DropDownData]] = js.undefined
     
-    var delayLongPress: js.UndefOr[Double] = js.native
+    var delayLongPress: js.UndefOr[Double] = js.undefined
     
-    var delayPressIn: js.UndefOr[Double] = js.native
+    var delayPressIn: js.UndefOr[Double] = js.undefined
     
-    var delayPressOut: js.UndefOr[Double] = js.native
+    var delayPressOut: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledItemColor: js.UndefOr[String] = js.native
+    var disabledItemColor: js.UndefOr[String] = js.undefined
     
-    var dropdownMargins: js.UndefOr[DropDownMargins] = js.native
+    var dropdownMargins: js.UndefOr[DropDownMargins] = js.undefined
     
-    var dropdownOffset: js.UndefOr[DropDownOffset] = js.native
+    var dropdownOffset: js.UndefOr[DropDownOffset] = js.undefined
     
-    var dropdownPosition: js.UndefOr[Double] = js.native
+    var dropdownPosition: js.UndefOr[Double] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+    var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hitSlop: js.UndefOr[DropDownInsets] = js.native
+    var hitSlop: js.UndefOr[DropDownInsets] = js.undefined
     
-    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+    var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
     
-    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var inputContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var itemColor: js.UndefOr[String] = js.native
+    var itemColor: js.UndefOr[String] = js.undefined
     
-    var itemCount: js.UndefOr[Double] = js.native
+    var itemCount: js.UndefOr[Double] = js.undefined
     
-    var itemPadding: js.UndefOr[Double] = js.native
+    var itemPadding: js.UndefOr[Double] = js.undefined
     
-    var itemTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var itemTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var labelExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.native
+    var labelExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.undefined
     
-    var labelFontSize: js.UndefOr[Double] = js.native
+    var labelFontSize: js.UndefOr[Double] = js.undefined
     
-    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var labelTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+    var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
     
-    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onChangeText: js.UndefOr[
         js.Function3[/* value */ String, /* index */ Double, /* data */ js.Array[this.type], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+    var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
     
-    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+    var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
     
-    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var pickerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var pressRetentionOffset: js.UndefOr[Insets] = js.native
+    var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
     
-    var propsExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, Partial[DropDownProps]]] = js.native
+    var propsExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, Partial[DropDownProps]]] = js.undefined
     
-    var renderAccessory: js.UndefOr[js.Function0[Element]] = js.native
+    var renderAccessory: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var renderBase: js.UndefOr[js.Function1[/* props */ RenderBaseProps, Element]] = js.native
+    var renderBase: js.UndefOr[js.Function1[/* props */ RenderBaseProps, Element]] = js.undefined
     
-    var rippleCentered: js.UndefOr[Boolean] = js.native
+    var rippleCentered: js.UndefOr[Boolean] = js.undefined
     
-    var rippleColor: js.UndefOr[String] = js.native
+    var rippleColor: js.UndefOr[String] = js.undefined
     
-    var rippleDuration: js.UndefOr[Double] = js.native
+    var rippleDuration: js.UndefOr[Double] = js.undefined
     
-    var rippleInsets: js.UndefOr[DropDownInsets] = js.native
+    var rippleInsets: js.UndefOr[DropDownInsets] = js.undefined
     
-    var rippleOpacity: js.UndefOr[Double] = js.native
+    var rippleOpacity: js.UndefOr[Double] = js.undefined
     
-    var rippleSequential: js.UndefOr[Boolean] = js.native
+    var rippleSequential: js.UndefOr[Boolean] = js.undefined
     
-    var selectedItemColor: js.UndefOr[String] = js.native
+    var selectedItemColor: js.UndefOr[String] = js.undefined
     
-    var shadeOpacity: js.UndefOr[Double] = js.native
+    var shadeOpacity: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var supportedOrientations: js.UndefOr[js.Array[String]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[String]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.native
+    var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
     
-    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+    var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
     
-    var valueExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.native
+    var valueExtractor: js.UndefOr[js.Function2[/* item */ this.type, /* index */ Double, String]] = js.undefined
   }
   object PartialDropDownPropsAbsoluteRTLLayout {
     

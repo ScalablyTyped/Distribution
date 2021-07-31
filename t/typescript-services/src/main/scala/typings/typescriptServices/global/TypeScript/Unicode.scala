@@ -2,13 +2,13 @@ package typings.typescriptServices.global.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Unicode")
 @js.native
 class Unicode ()
-  extends typings.typescriptServices.TypeScript.Unicode
+  extends StObject
+     with typings.typescriptServices.TypeScript.Unicode
 object Unicode {
   
   @JSGlobal("TypeScript.Unicode")
@@ -16,19 +16,16 @@ object Unicode {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("TypeScript.Unicode.isIdentifierPart")
-  @js.native
-  def isIdentifierPart(code: Double, languageVersion: typings.typescriptServices.TypeScript.LanguageVersion): Boolean = js.native
+  @scala.inline
+  def isIdentifierPart(code: Double, languageVersion: typings.typescriptServices.TypeScript.LanguageVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierPart")(code.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.Unicode.isIdentifierStart")
-  @js.native
-  def isIdentifierStart(code: Double, languageVersion: typings.typescriptServices.TypeScript.LanguageVersion): Boolean = js.native
+  @scala.inline
+  def isIdentifierStart(code: Double, languageVersion: typings.typescriptServices.TypeScript.LanguageVersion): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierStart")(code.asInstanceOf[js.Any], languageVersion.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.Unicode.lookupInUnicodeMap")
-  @js.native
-  def lookupInUnicodeMap(code: Double, map: js.Array[Double]): Boolean = js.native
+  @scala.inline
+  def lookupInUnicodeMap(code: Double, map: js.Array[Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupInUnicodeMap")(code.asInstanceOf[js.Any], map.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
   @JSGlobal("TypeScript.Unicode.unicodeES3IdentifierPart")

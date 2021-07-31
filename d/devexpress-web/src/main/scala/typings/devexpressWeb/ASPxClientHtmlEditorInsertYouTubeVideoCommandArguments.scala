@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.INSERTYOUTUBEVIDEO_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments extends ASPxClientHtmlEditorChangeMediaElementCommandArguments {
+trait ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   
   /**
     * Determines if the target YouTube video can be displayed in fullscreen mode.
     */
-  var allowFullscreen: Boolean = js.native
+  var allowFullscreen: Boolean
   
   /**
     * Determines if the privacy-enhanced mode is enabled for the target YouTube video.
     */
-  var enablePrivacyEnhancedMode: Boolean = js.native
+  var enablePrivacyEnhancedMode: Boolean
   
   /**
     * Determines if the player controls are displayed for the target YouTube video.
     */
-  var showPlayerControls: Boolean = js.native
+  var showPlayerControls: Boolean
   
   /**
     * Determines if suggested videos are shown after the target YouTube video finishes.
     */
-  var showRelatedVideos: Boolean = js.native
+  var showRelatedVideos: Boolean
   
   /**
     * Determines if the target YouTube video title and player actions (Watch later, Share) are shown.
     */
-  var showVideoInfo: Boolean = js.native
+  var showVideoInfo: Boolean
 }
 object ASPxClientHtmlEditorInsertYouTubeVideoCommandArguments {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptReservedNodeExchangeOutputMessage extends StObject {
   
   /**
     * 
     */
-  var ExchangedReservedNode: js.UndefOr[ReservedNode] = js.native
+  var ExchangedReservedNode: js.UndefOr[ReservedNode] = js.undefined
 }
 object AcceptReservedNodeExchangeOutputMessage {
   

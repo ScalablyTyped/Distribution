@@ -1,61 +1,61 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object notificationMod extends Shortcut {
+object notificationMod {
+  
+  @JSImport("antd/lib/notification", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("antd/lib/notification", JSImport.Default)
   @js.native
   val default: NotificationApi = js.native
   
-  @JSImport("antd/lib/notification", "getInstance")
-  @js.native
-  def getInstance(cacheKey: String): js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null] = js.native
+  @scala.inline
+  def getInstance(cacheKey: String): js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(cacheKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.rcNotification.notificationMod.NotificationInstance | Null]]
   
-  @js.native
   trait ArgsProps extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var btn: js.UndefOr[ReactNode] = js.native
+    var btn: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var description: js.UndefOr[ReactNode] = js.native
+    var description: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
-    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var message: ReactNode = js.native
+    var message: ReactNode
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placement: js.UndefOr[NotificationPlacement] = js.native
+    var placement: js.UndefOr[NotificationPlacement] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    val `type`: js.UndefOr[IconType] = js.native
+    val `type`: js.UndefOr[IconType] = js.undefined
   }
   object ArgsProps {
     
@@ -175,24 +175,23 @@ object notificationMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ConfigProps extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var placement: js.UndefOr[NotificationPlacement] = js.native
+    var placement: js.UndefOr[NotificationPlacement] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object ConfigProps {
     
@@ -277,18 +276,19 @@ object notificationMod extends Shortcut {
     def warning: typings.antd.antdStrings.warning = "warning".asInstanceOf[typings.antd.antdStrings.warning]
   }
   
-  @js.native
-  trait NotificationApi extends NotificationInstance {
+  trait NotificationApi
+    extends StObject
+       with NotificationInstance {
     
-    def close(key: String): Unit = js.native
+    def close(key: String): Unit
     
-    def config(options: ConfigProps): Unit = js.native
+    def config(options: ConfigProps): Unit
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def useNotification(): js.Tuple2[NotificationInstance, ReactElement] = js.native
+    def useNotification(): js.Tuple2[NotificationInstance, ReactElement]
     
-    def warn(args: ArgsProps): Unit = js.native
+    def warn(args: ArgsProps): Unit
   }
   object NotificationApi {
     
@@ -329,18 +329,17 @@ object notificationMod extends Shortcut {
     }
   }
   
-  @js.native
   trait NotificationInstance extends StObject {
     
-    def error(args: ArgsProps): Unit = js.native
+    def error(args: ArgsProps): Unit
     
-    def info(args: ArgsProps): Unit = js.native
+    def info(args: ArgsProps): Unit
     
-    def open(args: ArgsProps): Unit = js.native
+    def open(args: ArgsProps): Unit
     
-    def success(args: ArgsProps): Unit = js.native
+    def success(args: ArgsProps): Unit
     
-    def warning(args: ArgsProps): Unit = js.native
+    def warning(args: ArgsProps): Unit
   }
   object NotificationInstance {
     
@@ -397,9 +396,4 @@ object notificationMod extends Shortcut {
     @scala.inline
     def topRight: typings.antd.antdStrings.topRight = "topRight".asInstanceOf[typings.antd.antdStrings.topRight]
   }
-  
-  type _To = NotificationApi
-  
-  /* This means you don't have to write `default`, but can instead just say `notificationMod.foo` */
-  override def _to: NotificationApi = default
 }

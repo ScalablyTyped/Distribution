@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.GetScriptSourceRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetScriptSourceResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetScriptSourceResponse extends StObject {
   
-  var paramsType: js.Array[GetScriptSourceRequest] = js.native
+  var paramsType: js.Array[GetScriptSourceRequest]
   
-  var returnType: GetScriptSourceResponse = js.native
+  var returnType: GetScriptSourceResponse
 }
 object ReturnTypeGetScriptSourceResponse {
   

@@ -2,19 +2,17 @@ package typings.gulpModernizr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassPrefix extends StObject {
     
-    var classPrefix: String = js.native
+    var classPrefix: String
     
-    var enableClasses: Boolean = js.native
+    var enableClasses: Boolean
     
-    var enableJSClass: Boolean = js.native
+    var enableJSClass: Boolean
   }
   object ClassPrefix {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Src extends StObject {
     
-    var src: js.Array[String] = js.native
+    var src: js.Array[String]
   }
   object Src {
     

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePeopleGetbatchget extends StandardParameters {
+trait ParamsResourcePeopleGetbatchget
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * **Required.** A field mask to restrict which fields on each person are
@@ -27,7 +27,7 @@ trait ParamsResourcePeopleGetbatchget extends StandardParameters {
     * relations * relationshipInterests * relationshipStatuses * residences *
     * sipAddresses * skills * taglines * urls * userDefined
     */
-  var personFields: js.UndefOr[String] = js.native
+  var personFields: js.UndefOr[String] = js.undefined
   
   /**
     * **Required.** Comma-separated list of person fields to be included in the
@@ -35,7 +35,7 @@ trait ParamsResourcePeopleGetbatchget extends StandardParameters {
     * `person.names` or `person.photos`.
     */
   @JSName("requestMask.includeField")
-  var requestMaskDotincludeField: js.UndefOr[String] = js.native
+  var requestMaskDotincludeField: js.UndefOr[String] = js.undefined
   
   /**
     * The resource names of the people to provide information about.  - To get
@@ -46,7 +46,7 @@ trait ParamsResourcePeopleGetbatchget extends StandardParameters {
     * [`people.connections.list`](/people/api/rest/v1/people.connections/list).
     * You can include up to 50 resource names in one request.
     */
-  var resourceNames: js.UndefOr[js.Array[String]] = js.native
+  var resourceNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourcePeopleGetbatchget {
   

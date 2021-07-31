@@ -3,31 +3,29 @@ package typings.dav.mod
 import typings.dav.mod.transport.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCalendarObjectOptions extends StObject {
   
   /**
     * rfc 5545 VCALENDAR object.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * name for the calendar ics file.
     */
-  var filename: String = js.native
+  var filename: String
   
   /**
     * request sandbox.
     */
-  var sandbox: js.UndefOr[Sandbox] = js.native
+  var sandbox: js.UndefOr[Sandbox] = js.undefined
   
   /**
     * request sender.
     */
-  var xhr: js.UndefOr[Transport] = js.native
+  var xhr: js.UndefOr[Transport] = js.undefined
 }
 object CreateCalendarObjectOptions {
   

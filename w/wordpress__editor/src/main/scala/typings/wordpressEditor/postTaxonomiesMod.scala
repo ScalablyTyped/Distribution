@@ -9,7 +9,6 @@ import typings.wordpressEditor.postTaxonomiesMod.PostTaxonomies.Props
 import typings.wordpressEditor.wordpressEditorStrings.edit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postTaxonomiesMod {
@@ -28,12 +27,11 @@ object postTaxonomiesMod {
   
   object PostTaxonomies {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var taxonomyWrapper: js.UndefOr[js.Function2[/* content */ ReactNode, /* taxonomy */ Taxonomy[edit], Element]] = js.native
+      var taxonomyWrapper: js.UndefOr[js.Function2[/* content */ ReactNode, /* taxonomy */ Taxonomy[edit], Element]] = js.undefined
     }
     object Props {
       

@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServiceAccountResponseHashtagsImpressions extends StObject {
   
-  var account_hashtags: InsightsServiceAccountResponseAccountHashtags = js.native
+  var account_hashtags: InsightsServiceAccountResponseAccountHashtags
   
-  var organic: InsightsServiceAccountResponseOrganic = js.native
+  var organic: InsightsServiceAccountResponseOrganic
 }
 object InsightsServiceAccountResponseHashtagsImpressions {
   

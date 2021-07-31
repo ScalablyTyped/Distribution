@@ -2,26 +2,26 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebApiConnectedServiceDetails extends WebApiConnectedServiceRef {
+trait WebApiConnectedServiceDetails
+  extends StObject
+     with WebApiConnectedServiceRef {
   
   /**
     * Meta data for service connection
     */
-  var connectedServiceMetaData: WebApiConnectedService = js.native
+  var connectedServiceMetaData: WebApiConnectedService
   
   /**
     * Credential info
     */
-  var credentialsXml: String = js.native
+  var credentialsXml: String
   
   /**
     * Optional uri to connect directly to the service such as https://windows.azure.com
     */
-  var endPoint: String = js.native
+  var endPoint: String
 }
 object WebApiConnectedServiceDetails {
   

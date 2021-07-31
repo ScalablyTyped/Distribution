@@ -2,16 +2,14 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentPoolMaintenanceOptions extends StObject {
   
   /**
     * time to consider a System.DefaultWorkingDirectory is stale
     */
-  var workingDirectoryExpirationInDays: Double = js.native
+  var workingDirectoryExpirationInDays: Double
 }
 object TaskAgentPoolMaintenanceOptions {
   

@@ -5,19 +5,19 @@ import typings.typescript.mod.TypeChecker
 import typings.typescript.mod.TypeReferenceNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object moduleWithProvidersUtilMod {
   
-  @JSImport("@angular/core/schematics/migrations/module-with-providers/util", "createModuleWithProvidersType")
+  @JSImport("@angular/core/schematics/migrations/module-with-providers/util", JSImport.Namespace)
   @js.native
-  def createModuleWithProvidersType(`type`: String): TypeReferenceNode = js.native
-  @JSImport("@angular/core/schematics/migrations/module-with-providers/util", "createModuleWithProvidersType")
-  @js.native
-  def createModuleWithProvidersType(`type`: String, node: TypeReferenceNode): TypeReferenceNode = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/migrations/module-with-providers/util", "isModuleWithProvidersNotGeneric")
-  @js.native
-  def isModuleWithProvidersNotGeneric(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = js.native
+  @scala.inline
+  def createModuleWithProvidersType(`type`: String): TypeReferenceNode = ^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any]).asInstanceOf[TypeReferenceNode]
+  @scala.inline
+  def createModuleWithProvidersType(`type`: String, node: TypeReferenceNode): TypeReferenceNode = (^.asInstanceOf[js.Dynamic].applyDynamic("createModuleWithProvidersType")(`type`.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[TypeReferenceNode]
+  
+  @scala.inline
+  def isModuleWithProvidersNotGeneric(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isModuleWithProvidersNotGeneric")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.TypeReferenceNode */ Boolean]
 }

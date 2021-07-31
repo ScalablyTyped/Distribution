@@ -2,13 +2,11 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadBeginCallbackResult extends StObject {
   
-  var jobId: Double = js.native
+  var jobId: Double
 }
 object UploadBeginCallbackResult {
   

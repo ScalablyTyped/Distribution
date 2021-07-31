@@ -20,7 +20,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,7 +36,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GherkinDocument.
   * @param [properties] Properties to set
   */
-class GherkinDocument () extends IGherkinDocument {
+class GherkinDocument ()
+  extends StObject
+     with IGherkinDocument {
   def this(properties: IGherkinDocument) = this()
   
   /** GherkinDocument comments. */
@@ -59,6 +60,10 @@ class GherkinDocument () extends IGherkinDocument {
 }
 object GherkinDocument {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** A comment in a Gherkin document */
   @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment")
   @js.native
@@ -66,7 +71,9 @@ object GherkinDocument {
     * Constructs a new Comment.
     * @param [properties] Properties to set
     */
-  class Comment () extends IComment {
+  class Comment ()
+    extends StObject
+       with IComment {
     def this(properties: IComment) = this()
     
     /** Comment text. */
@@ -81,18 +88,20 @@ object GherkinDocument {
   }
   object Comment {
     
+    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Comment instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Comment instance
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.create")
-    @js.native
-    def create(): typings.std.Comment = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.create")
-    @js.native
-    def create(properties: IComment): typings.std.Comment = js.native
+    @scala.inline
+    def create(): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.std.Comment]
+    @scala.inline
+    def create(properties: IComment): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
     /**
       * Decodes a Comment message from the specified reader or buffer.
@@ -103,18 +112,14 @@ object GherkinDocument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decode")
-    @js.native
-    def decode(reader: Reader): typings.std.Comment = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.std.Comment = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.std.Comment = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.std.Comment = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.std.Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Comment]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.std.Comment = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.std.Comment]
     
     /**
       * Decodes a Comment message from the specified reader or buffer, length delimited.
@@ -124,12 +129,10 @@ object GherkinDocument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.std.Comment = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.std.Comment = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
     /**
       * Encodes the specified Comment message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Comment.verify|verify} messages.
@@ -138,12 +141,10 @@ object GherkinDocument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.encode")
-    @js.native
-    def encode(message: IComment): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.encode")
-    @js.native
-    def encode(message: IComment, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IComment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IComment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Comment message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Comment.verify|verify} messages.
@@ -152,12 +153,10 @@ object GherkinDocument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IComment): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IComment, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IComment): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IComment, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Comment message from a plain object. Also converts values to their respective internal types.
@@ -165,9 +164,8 @@ object GherkinDocument {
       * @returns Comment
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.std.Comment = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.std.Comment = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.std.Comment]
     
     /**
       * Creates a plain object from a Comment message. Also converts values to other types if specified.
@@ -176,12 +174,10 @@ object GherkinDocument {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.toObject")
-    @js.native
-    def toObject(message: typings.std.Comment): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.toObject")
-    @js.native
-    def toObject(message: typings.std.Comment, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: typings.std.Comment): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: typings.std.Comment, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Comment message.
@@ -189,9 +185,8 @@ object GherkinDocument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Comment.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** The top level node in the AST */
@@ -201,7 +196,9 @@ object GherkinDocument {
     * Constructs a new Feature.
     * @param [properties] Properties to set
     */
-  class Feature () extends IFeature {
+  class Feature ()
+    extends StObject
+       with IFeature {
     def this(properties: IFeature) = this()
     
     /** Feature children. */
@@ -236,6 +233,10 @@ object GherkinDocument {
   }
   object Feature {
     
+    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** Represents a Background. */
     @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background")
     @js.native
@@ -243,7 +244,9 @@ object GherkinDocument {
       * Constructs a new Background.
       * @param [properties] Properties to set
       */
-    class Background () extends IBackground {
+    class Background ()
+      extends StObject
+         with IBackground {
       def this(properties: IBackground) = this()
       
       /** Background description. */
@@ -270,18 +273,20 @@ object GherkinDocument {
     }
     object Background {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Background instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Background instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.create")
-      @js.native
-      def create(): Background = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.create")
-      @js.native
-      def create(properties: IBackground): Background = js.native
+      @scala.inline
+      def create(): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Background]
+      @scala.inline
+      def create(properties: IBackground): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Background]
       
       /**
         * Decodes a Background message from the specified reader or buffer.
@@ -292,18 +297,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decode")
-      @js.native
-      def decode(reader: Reader): Background = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Background = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decode")
-      @js.native
-      def decode(reader: Uint8Array): Background = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Background = js.native
+      @scala.inline
+      def decode(reader: Reader): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Background = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Background]
+      @scala.inline
+      def decode(reader: Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Background = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Background]
       
       /**
         * Decodes a Background message from the specified reader or buffer, length delimited.
@@ -313,12 +314,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Background = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Background = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Background]
       
       /**
         * Encodes the specified Background message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Background.verify|verify} messages.
@@ -327,12 +326,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.encode")
-      @js.native
-      def encode(message: IBackground): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.encode")
-      @js.native
-      def encode(message: IBackground, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IBackground): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IBackground, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Background message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Background.verify|verify} messages.
@@ -341,12 +338,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBackground): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IBackground, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IBackground): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IBackground, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Background message from a plain object. Also converts values to their respective internal types.
@@ -354,9 +349,8 @@ object GherkinDocument {
         * @returns Background
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Background = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Background = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Background]
       
       /**
         * Creates a plain object from a Background message. Also converts values to other types if specified.
@@ -365,12 +359,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.toObject")
-      @js.native
-      def toObject(message: Background): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.toObject")
-      @js.native
-      def toObject(message: Background, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Background): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Background, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Background message.
@@ -378,9 +370,8 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Background.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /** A child node of a `Feature` node */
@@ -390,7 +381,9 @@ object GherkinDocument {
       * Constructs a new FeatureChild.
       * @param [properties] Properties to set
       */
-    class FeatureChild () extends IFeatureChild {
+    class FeatureChild ()
+      extends StObject
+         with IFeatureChild {
       def this(properties: IFeatureChild) = this()
       
       /**
@@ -404,6 +397,10 @@ object GherkinDocument {
     }
     object FeatureChild {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** A `Rule` node */
       @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule")
       @js.native
@@ -411,7 +408,9 @@ object GherkinDocument {
         * Constructs a new Rule.
         * @param [properties] Properties to set
         */
-      class Rule () extends IRule {
+      class Rule ()
+        extends StObject
+           with IRule {
         def this(properties: IRule) = this()
         
         /** Rule children. */
@@ -438,18 +437,20 @@ object GherkinDocument {
       }
       object Rule {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new Rule instance using the specified properties.
           * @param [properties] Properties to set
           * @returns Rule instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.create")
-        @js.native
-        def create(): Rule = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.create")
-        @js.native
-        def create(properties: IRule): Rule = js.native
+        @scala.inline
+        def create(): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Rule]
+        @scala.inline
+        def create(properties: IRule): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
         /**
           * Decodes a Rule message from the specified reader or buffer.
@@ -460,18 +461,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decode")
-        @js.native
-        def decode(reader: Reader): Rule = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Rule = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decode")
-        @js.native
-        def decode(reader: Uint8Array): Rule = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Rule = js.native
+        @scala.inline
+        def decode(reader: Reader): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Rule]
+        @scala.inline
+        def decode(reader: Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Rule = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Rule]
         
         /**
           * Decodes a Rule message from the specified reader or buffer, length delimited.
@@ -481,12 +478,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Rule = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Rule = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
         /**
           * Encodes the specified Rule message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.verify|verify} messages.
@@ -495,12 +490,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.encode")
-        @js.native
-        def encode(message: IRule): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.encode")
-        @js.native
-        def encode(message: IRule, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Rule message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.verify|verify} messages.
@@ -509,12 +502,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRule): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRule, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRule): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRule, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a Rule message from a plain object. Also converts values to their respective internal types.
@@ -522,9 +513,8 @@ object GherkinDocument {
           * @returns Rule
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Rule = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Rule]
         
         /**
           * Creates a plain object from a Rule message. Also converts values to other types if specified.
@@ -533,12 +523,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.toObject")
-        @js.native
-        def toObject(message: Rule): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.toObject")
-        @js.native
-        def toObject(message: Rule, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Rule): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Rule, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a Rule message.
@@ -546,9 +534,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.Rule.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a RuleChild. */
@@ -558,7 +545,9 @@ object GherkinDocument {
         * Constructs a new RuleChild.
         * @param [properties] Properties to set
         */
-      class RuleChild () extends IRuleChild {
+      class RuleChild ()
+        extends StObject
+           with IRuleChild {
         def this(properties: IRuleChild) = this()
         
         /**
@@ -572,18 +561,20 @@ object GherkinDocument {
       }
       object RuleChild {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new RuleChild instance using the specified properties.
           * @param [properties] Properties to set
           * @returns RuleChild instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.create")
-        @js.native
-        def create(): RuleChild = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.create")
-        @js.native
-        def create(properties: IRuleChild): RuleChild = js.native
+        @scala.inline
+        def create(): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[RuleChild]
+        @scala.inline
+        def create(properties: IRuleChild): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
         /**
           * Decodes a RuleChild message from the specified reader or buffer.
@@ -594,18 +585,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decode")
-        @js.native
-        def decode(reader: Reader): RuleChild = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): RuleChild = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decode")
-        @js.native
-        def decode(reader: Uint8Array): RuleChild = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): RuleChild = js.native
+        @scala.inline
+        def decode(reader: Reader): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
+        @scala.inline
+        def decode(reader: Reader, length: Double): RuleChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuleChild]
+        @scala.inline
+        def decode(reader: Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): RuleChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[RuleChild]
         
         /**
           * Decodes a RuleChild message from the specified reader or buffer, length delimited.
@@ -615,12 +602,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): RuleChild = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): RuleChild = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
         /**
           * Encodes the specified RuleChild message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.verify|verify} messages.
@@ -629,12 +614,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.encode")
-        @js.native
-        def encode(message: IRuleChild): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.encode")
-        @js.native
-        def encode(message: IRuleChild, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IRuleChild): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IRuleChild, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified RuleChild message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.verify|verify} messages.
@@ -643,12 +626,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRuleChild): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IRuleChild, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IRuleChild): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IRuleChild, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a RuleChild message from a plain object. Also converts values to their respective internal types.
@@ -656,9 +637,8 @@ object GherkinDocument {
           * @returns RuleChild
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): RuleChild = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): RuleChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[RuleChild]
         
         /**
           * Creates a plain object from a RuleChild message. Also converts values to other types if specified.
@@ -667,12 +647,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.toObject")
-        @js.native
-        def toObject(message: RuleChild): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.toObject")
-        @js.native
-        def toObject(message: RuleChild, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: RuleChild): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: RuleChild, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a RuleChild message.
@@ -680,9 +658,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.RuleChild.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -691,12 +668,10 @@ object GherkinDocument {
         * @returns FeatureChild instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.create")
-      @js.native
-      def create(): FeatureChild = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.create")
-      @js.native
-      def create(properties: IFeatureChild): FeatureChild = js.native
+      @scala.inline
+      def create(): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[FeatureChild]
+      @scala.inline
+      def create(properties: IFeatureChild): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
       /**
         * Decodes a FeatureChild message from the specified reader or buffer.
@@ -707,18 +682,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decode")
-      @js.native
-      def decode(reader: Reader): FeatureChild = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): FeatureChild = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decode")
-      @js.native
-      def decode(reader: Uint8Array): FeatureChild = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): FeatureChild = js.native
+      @scala.inline
+      def decode(reader: Reader): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
+      @scala.inline
+      def decode(reader: Reader, length: Double): FeatureChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FeatureChild]
+      @scala.inline
+      def decode(reader: Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): FeatureChild = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[FeatureChild]
       
       /**
         * Decodes a FeatureChild message from the specified reader or buffer, length delimited.
@@ -728,12 +699,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): FeatureChild = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): FeatureChild = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
       /**
         * Encodes the specified FeatureChild message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.verify|verify} messages.
@@ -742,12 +711,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.encode")
-      @js.native
-      def encode(message: IFeatureChild): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.encode")
-      @js.native
-      def encode(message: IFeatureChild, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IFeatureChild): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IFeatureChild, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified FeatureChild message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.FeatureChild.verify|verify} messages.
@@ -756,12 +723,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFeatureChild): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IFeatureChild, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IFeatureChild): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IFeatureChild, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a FeatureChild message from a plain object. Also converts values to their respective internal types.
@@ -769,9 +734,8 @@ object GherkinDocument {
         * @returns FeatureChild
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): FeatureChild = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): FeatureChild = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[FeatureChild]
       
       /**
         * Creates a plain object from a FeatureChild message. Also converts values to other types if specified.
@@ -780,12 +744,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.toObject")
-      @js.native
-      def toObject(message: FeatureChild): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.toObject")
-      @js.native
-      def toObject(message: FeatureChild, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: FeatureChild): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: FeatureChild, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a FeatureChild message.
@@ -793,28 +755,26 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.FeatureChild.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a Rule. */
-      @js.native
       trait IRule extends StObject {
         
         /** Rule children */
-        var children: js.UndefOr[js.Array[IRuleChild] | Null] = js.native
+        var children: js.UndefOr[js.Array[IRuleChild] | Null] = js.undefined
         
         /** Rule description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** Rule keyword */
-        var keyword: js.UndefOr[String | Null] = js.native
+        var keyword: js.UndefOr[String | Null] = js.undefined
         
         /** Rule location */
-        var location: js.UndefOr[ILocation | Null] = js.native
+        var location: js.UndefOr[ILocation | Null] = js.undefined
         
         /** Rule name */
-        var name: js.UndefOr[String | Null] = js.native
+        var name: js.UndefOr[String | Null] = js.undefined
       }
       object IRule {
         
@@ -878,14 +838,13 @@ object GherkinDocument {
       }
       
       /** Properties of a RuleChild. */
-      @js.native
       trait IRuleChild extends StObject {
         
         /** RuleChild background */
-        var background: js.UndefOr[IBackground | Null] = js.native
+        var background: js.UndefOr[IBackground | Null] = js.undefined
         
         /** RuleChild scenario */
-        var scenario: js.UndefOr[IScenario | Null] = js.native
+        var scenario: js.UndefOr[IScenario | Null] = js.undefined
       }
       object IRuleChild {
         
@@ -926,7 +885,9 @@ object GherkinDocument {
       * Constructs a new Scenario.
       * @param [properties] Properties to set
       */
-    class Scenario () extends IScenario {
+    class Scenario ()
+      extends StObject
+         with IScenario {
       def this(properties: IScenario) = this()
       
       /** Scenario description. */
@@ -965,6 +926,10 @@ object GherkinDocument {
     }
     object Scenario {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents an Examples. */
       @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples")
       @js.native
@@ -972,7 +937,9 @@ object GherkinDocument {
         * Constructs a new Examples.
         * @param [properties] Properties to set
         */
-      class Examples () extends IExamples {
+      class Examples ()
+        extends StObject
+           with IExamples {
         def this(properties: IExamples) = this()
         
         /** Examples description. */
@@ -1003,18 +970,20 @@ object GherkinDocument {
       }
       object Examples {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new Examples instance using the specified properties.
           * @param [properties] Properties to set
           * @returns Examples instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.create")
-        @js.native
-        def create(): Examples = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.create")
-        @js.native
-        def create(properties: IExamples): Examples = js.native
+        @scala.inline
+        def create(): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Examples]
+        @scala.inline
+        def create(properties: IExamples): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
         /**
           * Decodes an Examples message from the specified reader or buffer.
@@ -1025,18 +994,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decode")
-        @js.native
-        def decode(reader: Reader): Examples = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): Examples = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decode")
-        @js.native
-        def decode(reader: Uint8Array): Examples = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): Examples = js.native
+        @scala.inline
+        def decode(reader: Reader): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
+        @scala.inline
+        def decode(reader: Reader, length: Double): Examples = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Examples]
+        @scala.inline
+        def decode(reader: Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): Examples = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Examples]
         
         /**
           * Decodes an Examples message from the specified reader or buffer, length delimited.
@@ -1046,12 +1011,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): Examples = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): Examples = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
         /**
           * Encodes the specified Examples message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.verify|verify} messages.
@@ -1060,12 +1023,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.encode")
-        @js.native
-        def encode(message: IExamples): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.encode")
-        @js.native
-        def encode(message: IExamples, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IExamples): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IExamples, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified Examples message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.verify|verify} messages.
@@ -1074,12 +1035,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IExamples): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IExamples, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IExamples): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IExamples, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates an Examples message from a plain object. Also converts values to their respective internal types.
@@ -1087,9 +1046,8 @@ object GherkinDocument {
           * @returns Examples
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): Examples = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): Examples = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Examples]
         
         /**
           * Creates a plain object from an Examples message. Also converts values to other types if specified.
@@ -1098,12 +1056,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.toObject")
-        @js.native
-        def toObject(message: Examples): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.toObject")
-        @js.native
-        def toObject(message: Examples, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: Examples): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: Examples, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies an Examples message.
@@ -1111,9 +1067,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.Examples.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1122,12 +1077,10 @@ object GherkinDocument {
         * @returns Scenario instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.create")
-      @js.native
-      def create(): Scenario = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.create")
-      @js.native
-      def create(properties: IScenario): Scenario = js.native
+      @scala.inline
+      def create(): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Scenario]
+      @scala.inline
+      def create(properties: IScenario): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
       /**
         * Decodes a Scenario message from the specified reader or buffer.
@@ -1138,18 +1091,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decode")
-      @js.native
-      def decode(reader: Reader): Scenario = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Scenario = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decode")
-      @js.native
-      def decode(reader: Uint8Array): Scenario = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Scenario = js.native
+      @scala.inline
+      def decode(reader: Reader): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Scenario = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Scenario]
+      @scala.inline
+      def decode(reader: Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Scenario = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Scenario]
       
       /**
         * Decodes a Scenario message from the specified reader or buffer, length delimited.
@@ -1159,12 +1108,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Scenario = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Scenario = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
       /**
         * Encodes the specified Scenario message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.verify|verify} messages.
@@ -1173,12 +1120,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.encode")
-      @js.native
-      def encode(message: IScenario): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.encode")
-      @js.native
-      def encode(message: IScenario, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IScenario): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IScenario, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Scenario message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Scenario.verify|verify} messages.
@@ -1187,12 +1132,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IScenario): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IScenario, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IScenario): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IScenario, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Scenario message from a plain object. Also converts values to their respective internal types.
@@ -1200,9 +1143,8 @@ object GherkinDocument {
         * @returns Scenario
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Scenario = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Scenario = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Scenario]
       
       /**
         * Creates a plain object from a Scenario message. Also converts values to other types if specified.
@@ -1211,12 +1153,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.toObject")
-      @js.native
-      def toObject(message: Scenario): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.toObject")
-      @js.native
-      def toObject(message: Scenario, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Scenario): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Scenario, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Scenario message.
@@ -1224,34 +1164,32 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Scenario.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of an Examples. */
-      @js.native
       trait IExamples extends StObject {
         
         /** Examples description */
-        var description: js.UndefOr[String | Null] = js.native
+        var description: js.UndefOr[String | Null] = js.undefined
         
         /** Examples keyword */
-        var keyword: js.UndefOr[String | Null] = js.native
+        var keyword: js.UndefOr[String | Null] = js.undefined
         
         /** Examples location */
-        var location: js.UndefOr[ILocation | Null] = js.native
+        var location: js.UndefOr[ILocation | Null] = js.undefined
         
         /** Examples name */
-        var name: js.UndefOr[String | Null] = js.native
+        var name: js.UndefOr[String | Null] = js.undefined
         
         /** Examples tableBody */
-        var tableBody: js.UndefOr[js.Array[ITableRow] | Null] = js.native
+        var tableBody: js.UndefOr[js.Array[ITableRow] | Null] = js.undefined
         
         /** Examples tableHeader */
-        var tableHeader: js.UndefOr[ITableRow | Null] = js.native
+        var tableHeader: js.UndefOr[ITableRow | Null] = js.undefined
         
         /** Examples tags */
-        var tags: js.UndefOr[js.Array[ITag] | Null] = js.native
+        var tags: js.UndefOr[js.Array[ITag] | Null] = js.undefined
       }
       object IExamples {
         
@@ -1343,7 +1281,9 @@ object GherkinDocument {
       * Constructs a new Step.
       * @param [properties] Properties to set
       */
-    class Step () extends IStep {
+    class Step ()
+      extends StObject
+         with IStep {
       def this(properties: IStep) = this()
       
       /** Step argument. */
@@ -1369,6 +1309,10 @@ object GherkinDocument {
     }
     object Step {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a DataTable. */
       @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable")
       @js.native
@@ -1376,7 +1320,9 @@ object GherkinDocument {
         * Constructs a new DataTable.
         * @param [properties] Properties to set
         */
-      class DataTable () extends IDataTable {
+      class DataTable ()
+        extends StObject
+           with IDataTable {
         def this(properties: IDataTable) = this()
         
         /** DataTable rows. */
@@ -1391,18 +1337,20 @@ object GherkinDocument {
       }
       object DataTable {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new DataTable instance using the specified properties.
           * @param [properties] Properties to set
           * @returns DataTable instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.create")
-        @js.native
-        def create(): DataTable = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.create")
-        @js.native
-        def create(properties: IDataTable): DataTable = js.native
+        @scala.inline
+        def create(): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DataTable]
+        @scala.inline
+        def create(properties: IDataTable): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
         /**
           * Decodes a DataTable message from the specified reader or buffer.
@@ -1413,18 +1361,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decode")
-        @js.native
-        def decode(reader: Reader): DataTable = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): DataTable = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decode")
-        @js.native
-        def decode(reader: Uint8Array): DataTable = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): DataTable = js.native
+        @scala.inline
+        def decode(reader: Reader): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
+        @scala.inline
+        def decode(reader: Reader, length: Double): DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DataTable]
+        @scala.inline
+        def decode(reader: Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): DataTable = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DataTable]
         
         /**
           * Decodes a DataTable message from the specified reader or buffer, length delimited.
@@ -1434,12 +1378,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): DataTable = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): DataTable = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
         /**
           * Encodes the specified DataTable message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.verify|verify} messages.
@@ -1448,12 +1390,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.encode")
-        @js.native
-        def encode(message: IDataTable): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.encode")
-        @js.native
-        def encode(message: IDataTable, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IDataTable): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IDataTable, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified DataTable message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.verify|verify} messages.
@@ -1462,12 +1402,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IDataTable): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IDataTable, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IDataTable): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IDataTable, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a DataTable message from a plain object. Also converts values to their respective internal types.
@@ -1475,9 +1413,8 @@ object GherkinDocument {
           * @returns DataTable
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): DataTable = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): DataTable = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DataTable]
         
         /**
           * Creates a plain object from a DataTable message. Also converts values to other types if specified.
@@ -1486,12 +1423,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.toObject")
-        @js.native
-        def toObject(message: DataTable): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.toObject")
-        @js.native
-        def toObject(message: DataTable, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: DataTable): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: DataTable, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a DataTable message.
@@ -1499,9 +1434,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DataTable.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /** Represents a DocString. */
@@ -1511,7 +1445,9 @@ object GherkinDocument {
         * Constructs a new DocString.
         * @param [properties] Properties to set
         */
-      class DocString () extends IDocString {
+      class DocString ()
+        extends StObject
+           with IDocString {
         def this(properties: IDocString) = this()
         
         /** DocString contentType. */
@@ -1534,18 +1470,20 @@ object GherkinDocument {
       }
       object DocString {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new DocString instance using the specified properties.
           * @param [properties] Properties to set
           * @returns DocString instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.create")
-        @js.native
-        def create(): DocString = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.create")
-        @js.native
-        def create(properties: IDocString): DocString = js.native
+        @scala.inline
+        def create(): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DocString]
+        @scala.inline
+        def create(properties: IDocString): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
         /**
           * Decodes a DocString message from the specified reader or buffer.
@@ -1556,18 +1494,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decode")
-        @js.native
-        def decode(reader: Reader): DocString = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): DocString = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decode")
-        @js.native
-        def decode(reader: Uint8Array): DocString = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): DocString = js.native
+        @scala.inline
+        def decode(reader: Reader): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
+        @scala.inline
+        def decode(reader: Reader, length: Double): DocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DocString]
+        @scala.inline
+        def decode(reader: Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): DocString = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DocString]
         
         /**
           * Decodes a DocString message from the specified reader or buffer, length delimited.
@@ -1577,12 +1511,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): DocString = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): DocString = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
         /**
           * Encodes the specified DocString message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DocString.verify|verify} messages.
@@ -1591,12 +1523,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.encode")
-        @js.native
-        def encode(message: IDocString): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.encode")
-        @js.native
-        def encode(message: IDocString, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: IDocString): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: IDocString, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified DocString message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.DocString.verify|verify} messages.
@@ -1605,12 +1535,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IDocString): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: IDocString, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: IDocString): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: IDocString, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a DocString message from a plain object. Also converts values to their respective internal types.
@@ -1618,9 +1546,8 @@ object GherkinDocument {
           * @returns DocString
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): DocString = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): DocString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DocString]
         
         /**
           * Creates a plain object from a DocString message. Also converts values to other types if specified.
@@ -1629,12 +1556,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.toObject")
-        @js.native
-        def toObject(message: DocString): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.toObject")
-        @js.native
-        def toObject(message: DocString, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: DocString): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: DocString, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a DocString message.
@@ -1642,9 +1567,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.DocString.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -1653,12 +1577,10 @@ object GherkinDocument {
         * @returns Step instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.create")
-      @js.native
-      def create(): Step = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.create")
-      @js.native
-      def create(properties: IStep): Step = js.native
+      @scala.inline
+      def create(): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Step]
+      @scala.inline
+      def create(properties: IStep): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Step]
       
       /**
         * Decodes a Step message from the specified reader or buffer.
@@ -1669,18 +1591,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decode")
-      @js.native
-      def decode(reader: Reader): Step = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Step = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decode")
-      @js.native
-      def decode(reader: Uint8Array): Step = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Step = js.native
+      @scala.inline
+      def decode(reader: Reader): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Step]
+      @scala.inline
+      def decode(reader: Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Step = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Step]
       
       /**
         * Decodes a Step message from the specified reader or buffer, length delimited.
@@ -1690,12 +1608,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Step = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Step = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Step]
       
       /**
         * Encodes the specified Step message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.verify|verify} messages.
@@ -1704,12 +1620,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.encode")
-      @js.native
-      def encode(message: IStep): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.encode")
-      @js.native
-      def encode(message: IStep, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: IStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: IStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Step message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Step.verify|verify} messages.
@@ -1718,12 +1632,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IStep): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: IStep, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: IStep): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: IStep, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Step message from a plain object. Also converts values to their respective internal types.
@@ -1731,9 +1643,8 @@ object GherkinDocument {
         * @returns Step
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Step = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Step = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Step]
       
       /**
         * Creates a plain object from a Step message. Also converts values to other types if specified.
@@ -1742,12 +1653,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.toObject")
-      @js.native
-      def toObject(message: Step): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.toObject")
-      @js.native
-      def toObject(message: Step, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Step): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Step, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Step message.
@@ -1755,19 +1664,17 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Step.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a DataTable. */
-      @js.native
       trait IDataTable extends StObject {
         
         /** DataTable location */
-        var location: js.UndefOr[ILocation | Null] = js.native
+        var location: js.UndefOr[ILocation | Null] = js.undefined
         
         /** DataTable rows */
-        var rows: js.UndefOr[js.Array[ITableRow] | Null] = js.native
+        var rows: js.UndefOr[js.Array[ITableRow] | Null] = js.undefined
       }
       object IDataTable {
         
@@ -1804,20 +1711,19 @@ object GherkinDocument {
       }
       
       /** Properties of a DocString. */
-      @js.native
       trait IDocString extends StObject {
         
         /** DocString content */
-        var content: js.UndefOr[String | Null] = js.native
+        var content: js.UndefOr[String | Null] = js.undefined
         
         /** DocString contentType */
-        var contentType: js.UndefOr[String | Null] = js.native
+        var contentType: js.UndefOr[String | Null] = js.undefined
         
         /** DocString delimiter */
-        var delimiter: js.UndefOr[String | Null] = js.native
+        var delimiter: js.UndefOr[String | Null] = js.undefined
         
         /** DocString location */
-        var location: js.UndefOr[ILocation | Null] = js.native
+        var location: js.UndefOr[ILocation | Null] = js.undefined
       }
       object IDocString {
         
@@ -1876,7 +1782,9 @@ object GherkinDocument {
       * Constructs a new TableRow.
       * @param [properties] Properties to set
       */
-    class TableRow () extends ITableRow {
+    class TableRow ()
+      extends StObject
+         with ITableRow {
       def this(properties: ITableRow) = this()
       
       /** TableRow cells. */
@@ -1895,6 +1803,10 @@ object GherkinDocument {
     }
     object TableRow {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Represents a TableCell. */
       @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell")
       @js.native
@@ -1902,7 +1814,9 @@ object GherkinDocument {
         * Constructs a new TableCell.
         * @param [properties] Properties to set
         */
-      class TableCell () extends ITableCell {
+      class TableCell ()
+        extends StObject
+           with ITableCell {
         def this(properties: ITableCell) = this()
         
         /**
@@ -1917,18 +1831,20 @@ object GherkinDocument {
       }
       object TableCell {
         
+        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell")
+        @js.native
+        val ^ : js.Any = js.native
+        
         /**
           * Creates a new TableCell instance using the specified properties.
           * @param [properties] Properties to set
           * @returns TableCell instance
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.create")
-        @js.native
-        def create(): TableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.create")
-        @js.native
-        def create(properties: ITableCell): TableCell = js.native
+        @scala.inline
+        def create(): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableCell]
+        @scala.inline
+        def create(properties: ITableCell): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
         /**
           * Decodes a TableCell message from the specified reader or buffer.
@@ -1939,18 +1855,14 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decode")
-        @js.native
-        def decode(reader: Reader): TableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decode")
-        @js.native
-        def decode(reader: Reader, length: Double): TableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decode")
-        @js.native
-        def decode(reader: Uint8Array): TableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decode")
-        @js.native
-        def decode(reader: Uint8Array, length: Double): TableCell = js.native
+        @scala.inline
+        def decode(reader: Reader): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
+        @scala.inline
+        def decode(reader: Reader, length: Double): TableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCell]
+        @scala.inline
+        def decode(reader: Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
+        @scala.inline
+        def decode(reader: Uint8Array, length: Double): TableCell = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableCell]
         
         /**
           * Decodes a TableCell message from the specified reader or buffer, length delimited.
@@ -1960,12 +1872,10 @@ object GherkinDocument {
           * @throws {$protobuf.util.ProtocolError} If required fields are missing
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Reader): TableCell = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.decodeDelimited")
-        @js.native
-        def decodeDelimited(reader: Uint8Array): TableCell = js.native
+        @scala.inline
+        def decodeDelimited(reader: Reader): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
+        @scala.inline
+        def decodeDelimited(reader: Uint8Array): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
         /**
           * Encodes the specified TableCell message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.verify|verify} messages.
@@ -1974,12 +1884,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.encode")
-        @js.native
-        def encode(message: ITableCell): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.encode")
-        @js.native
-        def encode(message: ITableCell, writer: Writer): Writer = js.native
+        @scala.inline
+        def encode(message: ITableCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encode(message: ITableCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Encodes the specified TableCell message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.verify|verify} messages.
@@ -1988,12 +1896,10 @@ object GherkinDocument {
           * @returns Writer
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: ITableCell): Writer = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.encodeDelimited")
-        @js.native
-        def encodeDelimited(message: ITableCell, writer: Writer): Writer = js.native
+        @scala.inline
+        def encodeDelimited(message: ITableCell): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+        @scala.inline
+        def encodeDelimited(message: ITableCell, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
         
         /**
           * Creates a TableCell message from a plain object. Also converts values to their respective internal types.
@@ -2001,9 +1907,8 @@ object GherkinDocument {
           * @returns TableCell
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.fromObject")
-        @js.native
-        def fromObject(`object`: StringDictionary[js.Any]): TableCell = js.native
+        @scala.inline
+        def fromObject(`object`: StringDictionary[js.Any]): TableCell = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableCell]
         
         /**
           * Creates a plain object from a TableCell message. Also converts values to other types if specified.
@@ -2012,12 +1917,10 @@ object GherkinDocument {
           * @returns Plain object
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.toObject")
-        @js.native
-        def toObject(message: TableCell): StringDictionary[js.Any] = js.native
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.toObject")
-        @js.native
-        def toObject(message: TableCell, options: IConversionOptions): StringDictionary[js.Any] = js.native
+        @scala.inline
+        def toObject(message: TableCell): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+        @scala.inline
+        def toObject(message: TableCell, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
         
         /**
           * Verifies a TableCell message.
@@ -2025,9 +1928,8 @@ object GherkinDocument {
           * @returns `null` if valid, otherwise the reason why it is not
           */
         /* static member */
-        @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.TableCell.verify")
-        @js.native
-        def verify(message: StringDictionary[js.Any]): String | Null = js.native
+        @scala.inline
+        def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       }
       
       /**
@@ -2036,12 +1938,10 @@ object GherkinDocument {
         * @returns TableRow instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.create")
-      @js.native
-      def create(): TableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.create")
-      @js.native
-      def create(properties: ITableRow): TableRow = js.native
+      @scala.inline
+      def create(): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[TableRow]
+      @scala.inline
+      def create(properties: ITableRow): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
       /**
         * Decodes a TableRow message from the specified reader or buffer.
@@ -2052,18 +1952,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decode")
-      @js.native
-      def decode(reader: Reader): TableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): TableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decode")
-      @js.native
-      def decode(reader: Uint8Array): TableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): TableRow = js.native
+      @scala.inline
+      def decode(reader: Reader): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
+      @scala.inline
+      def decode(reader: Reader, length: Double): TableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableRow]
+      @scala.inline
+      def decode(reader: Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): TableRow = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[TableRow]
       
       /**
         * Decodes a TableRow message from the specified reader or buffer, length delimited.
@@ -2073,12 +1969,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): TableRow = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): TableRow = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
       /**
         * Encodes the specified TableRow message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.verify|verify} messages.
@@ -2087,12 +1981,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.encode")
-      @js.native
-      def encode(message: ITableRow): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.encode")
-      @js.native
-      def encode(message: ITableRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITableRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITableRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified TableRow message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.TableRow.verify|verify} messages.
@@ -2101,12 +1993,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableRow): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITableRow, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITableRow): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITableRow, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a TableRow message from a plain object. Also converts values to their respective internal types.
@@ -2114,9 +2004,8 @@ object GherkinDocument {
         * @returns TableRow
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): TableRow = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): TableRow = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[TableRow]
       
       /**
         * Creates a plain object from a TableRow message. Also converts values to other types if specified.
@@ -2125,12 +2014,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.toObject")
-      @js.native
-      def toObject(message: TableRow): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.toObject")
-      @js.native
-      def toObject(message: TableRow, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: TableRow): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: TableRow, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a TableRow message.
@@ -2138,19 +2025,17 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.TableRow.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
       
       /** Properties of a TableCell. */
-      @js.native
       trait ITableCell extends StObject {
         
         /** TableCell location */
-        var location: js.UndefOr[ILocation | Null] = js.native
+        var location: js.UndefOr[ILocation | Null] = js.undefined
         
         /** TableCell value */
-        var value: js.UndefOr[String | Null] = js.native
+        var value: js.UndefOr[String | Null] = js.undefined
       }
       object ITableCell {
         
@@ -2191,7 +2076,9 @@ object GherkinDocument {
       * Constructs a new Tag.
       * @param [properties] Properties to set
       */
-    class Tag () extends ITag {
+    class Tag ()
+      extends StObject
+         with ITag {
       def this(properties: ITag) = this()
       
       /** Tag id. */
@@ -2210,18 +2097,20 @@ object GherkinDocument {
     }
     object Tag {
       
+      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Creates a new Tag instance using the specified properties.
         * @param [properties] Properties to set
         * @returns Tag instance
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.create")
-      @js.native
-      def create(): Tag = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.create")
-      @js.native
-      def create(properties: ITag): Tag = js.native
+      @scala.inline
+      def create(): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Tag]
+      @scala.inline
+      def create(properties: ITag): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
       /**
         * Decodes a Tag message from the specified reader or buffer.
@@ -2232,18 +2121,14 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decode")
-      @js.native
-      def decode(reader: Reader): Tag = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decode")
-      @js.native
-      def decode(reader: Reader, length: Double): Tag = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decode")
-      @js.native
-      def decode(reader: Uint8Array): Tag = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decode")
-      @js.native
-      def decode(reader: Uint8Array, length: Double): Tag = js.native
+      @scala.inline
+      def decode(reader: Reader): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
+      @scala.inline
+      def decode(reader: Reader, length: Double): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Tag]
+      @scala.inline
+      def decode(reader: Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
+      @scala.inline
+      def decode(reader: Uint8Array, length: Double): Tag = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Tag]
       
       /**
         * Decodes a Tag message from the specified reader or buffer, length delimited.
@@ -2253,12 +2138,10 @@ object GherkinDocument {
         * @throws {$protobuf.util.ProtocolError} If required fields are missing
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Reader): Tag = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.decodeDelimited")
-      @js.native
-      def decodeDelimited(reader: Uint8Array): Tag = js.native
+      @scala.inline
+      def decodeDelimited(reader: Reader): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
+      @scala.inline
+      def decodeDelimited(reader: Uint8Array): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
       /**
         * Encodes the specified Tag message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Tag.verify|verify} messages.
@@ -2267,12 +2150,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.encode")
-      @js.native
-      def encode(message: ITag): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.encode")
-      @js.native
-      def encode(message: ITag, writer: Writer): Writer = js.native
+      @scala.inline
+      def encode(message: ITag): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encode(message: ITag, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Encodes the specified Tag message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.Tag.verify|verify} messages.
@@ -2281,12 +2162,10 @@ object GherkinDocument {
         * @returns Writer
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITag): Writer = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.encodeDelimited")
-      @js.native
-      def encodeDelimited(message: ITag, writer: Writer): Writer = js.native
+      @scala.inline
+      def encodeDelimited(message: ITag): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+      @scala.inline
+      def encodeDelimited(message: ITag, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
       
       /**
         * Creates a Tag message from a plain object. Also converts values to their respective internal types.
@@ -2294,9 +2173,8 @@ object GherkinDocument {
         * @returns Tag
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.fromObject")
-      @js.native
-      def fromObject(`object`: StringDictionary[js.Any]): Tag = js.native
+      @scala.inline
+      def fromObject(`object`: StringDictionary[js.Any]): Tag = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Tag]
       
       /**
         * Creates a plain object from a Tag message. Also converts values to other types if specified.
@@ -2305,12 +2183,10 @@ object GherkinDocument {
         * @returns Plain object
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.toObject")
-      @js.native
-      def toObject(message: Tag): StringDictionary[js.Any] = js.native
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.toObject")
-      @js.native
-      def toObject(message: Tag, options: IConversionOptions): StringDictionary[js.Any] = js.native
+      @scala.inline
+      def toObject(message: Tag): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+      @scala.inline
+      def toObject(message: Tag, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
       
       /**
         * Verifies a Tag message.
@@ -2318,9 +2194,8 @@ object GherkinDocument {
         * @returns `null` if valid, otherwise the reason why it is not
         */
       /* static member */
-      @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.Tag.verify")
-      @js.native
-      def verify(message: StringDictionary[js.Any]): String | Null = js.native
+      @scala.inline
+      def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     }
     
     /**
@@ -2329,12 +2204,10 @@ object GherkinDocument {
       * @returns Feature instance
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.create")
-    @js.native
-    def create(): Feature = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.create")
-    @js.native
-    def create(properties: IFeature): Feature = js.native
+    @scala.inline
+    def create(): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Feature]
+    @scala.inline
+    def create(properties: IFeature): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
     /**
       * Decodes a Feature message from the specified reader or buffer.
@@ -2345,18 +2218,14 @@ object GherkinDocument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decode")
-    @js.native
-    def decode(reader: Reader): Feature = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Feature = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decode")
-    @js.native
-    def decode(reader: Uint8Array): Feature = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Feature = js.native
+    @scala.inline
+    def decode(reader: Reader): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Feature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Feature]
+    @scala.inline
+    def decode(reader: Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Feature = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Feature]
     
     /**
       * Decodes a Feature message from the specified reader or buffer, length delimited.
@@ -2366,12 +2235,10 @@ object GherkinDocument {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Feature = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Feature = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
     /**
       * Encodes the specified Feature message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.verify|verify} messages.
@@ -2380,12 +2247,10 @@ object GherkinDocument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.encode")
-    @js.native
-    def encode(message: IFeature): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.encode")
-    @js.native
-    def encode(message: IFeature, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IFeature): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IFeature, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Feature message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.Feature.verify|verify} messages.
@@ -2394,12 +2259,10 @@ object GherkinDocument {
       * @returns Writer
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFeature): Writer = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IFeature, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IFeature): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IFeature, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Feature message from a plain object. Also converts values to their respective internal types.
@@ -2407,9 +2270,8 @@ object GherkinDocument {
       * @returns Feature
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Feature = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Feature = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Feature]
     
     /**
       * Creates a plain object from a Feature message. Also converts values to other types if specified.
@@ -2418,12 +2280,10 @@ object GherkinDocument {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.toObject")
-    @js.native
-    def toObject(message: Feature): StringDictionary[js.Any] = js.native
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.toObject")
-    @js.native
-    def toObject(message: Feature, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Feature): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Feature, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Feature message.
@@ -2431,28 +2291,26 @@ object GherkinDocument {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.Feature.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
     
     /** Properties of a Background. */
-    @js.native
     trait IBackground extends StObject {
       
       /** Background description */
-      var description: js.UndefOr[String | Null] = js.native
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /** Background keyword */
-      var keyword: js.UndefOr[String | Null] = js.native
+      var keyword: js.UndefOr[String | Null] = js.undefined
       
       /** Background location */
-      var location: js.UndefOr[ILocation | Null] = js.native
+      var location: js.UndefOr[ILocation | Null] = js.undefined
       
       /** Background name */
-      var name: js.UndefOr[String | Null] = js.native
+      var name: js.UndefOr[String | Null] = js.undefined
       
       /** Background steps */
-      var steps: js.UndefOr[js.Array[IStep] | Null] = js.native
+      var steps: js.UndefOr[js.Array[IStep] | Null] = js.undefined
     }
     object IBackground {
       
@@ -2516,17 +2374,16 @@ object GherkinDocument {
     }
     
     /** Properties of a FeatureChild. */
-    @js.native
     trait IFeatureChild extends StObject {
       
       /** FeatureChild background */
-      var background: js.UndefOr[IBackground | Null] = js.native
+      var background: js.UndefOr[IBackground | Null] = js.undefined
       
       /** FeatureChild rule */
-      var rule: js.UndefOr[IRule | Null] = js.native
+      var rule: js.UndefOr[IRule | Null] = js.undefined
       
       /** FeatureChild scenario */
-      var scenario: js.UndefOr[IScenario | Null] = js.native
+      var scenario: js.UndefOr[IScenario | Null] = js.undefined
     }
     object IFeatureChild {
       
@@ -2569,32 +2426,31 @@ object GherkinDocument {
     }
     
     /** Properties of a Scenario. */
-    @js.native
     trait IScenario extends StObject {
       
       /** Scenario description */
-      var description: js.UndefOr[String | Null] = js.native
+      var description: js.UndefOr[String | Null] = js.undefined
       
       /** Scenario examples */
-      var examples: js.UndefOr[js.Array[IExamples] | Null] = js.native
+      var examples: js.UndefOr[js.Array[IExamples] | Null] = js.undefined
       
       /** Scenario id */
-      var id: js.UndefOr[String | Null] = js.native
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /** Scenario keyword */
-      var keyword: js.UndefOr[String | Null] = js.native
+      var keyword: js.UndefOr[String | Null] = js.undefined
       
       /** Scenario location */
-      var location: js.UndefOr[ILocation | Null] = js.native
+      var location: js.UndefOr[ILocation | Null] = js.undefined
       
       /** Scenario name */
-      var name: js.UndefOr[String | Null] = js.native
+      var name: js.UndefOr[String | Null] = js.undefined
       
       /** Scenario steps */
-      var steps: js.UndefOr[js.Array[IStep] | Null] = js.native
+      var steps: js.UndefOr[js.Array[IStep] | Null] = js.undefined
       
       /** Scenario tags */
-      var tags: js.UndefOr[js.Array[ITag] | Null] = js.native
+      var tags: js.UndefOr[js.Array[ITag] | Null] = js.undefined
     }
     object IScenario {
       
@@ -2691,26 +2547,25 @@ object GherkinDocument {
     }
     
     /** Properties of a Step. */
-    @js.native
     trait IStep extends StObject {
       
       /** Step dataTable */
-      var dataTable: js.UndefOr[IDataTable | Null] = js.native
+      var dataTable: js.UndefOr[IDataTable | Null] = js.undefined
       
       /** Step docString */
-      var docString: js.UndefOr[IDocString | Null] = js.native
+      var docString: js.UndefOr[IDocString | Null] = js.undefined
       
       /** Step id */
-      var id: js.UndefOr[String | Null] = js.native
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /** Step keyword */
-      var keyword: js.UndefOr[String | Null] = js.native
+      var keyword: js.UndefOr[String | Null] = js.undefined
       
       /** Step location */
-      var location: js.UndefOr[ILocation | Null] = js.native
+      var location: js.UndefOr[ILocation | Null] = js.undefined
       
       /** Step text */
-      var text: js.UndefOr[String | Null] = js.native
+      var text: js.UndefOr[String | Null] = js.undefined
     }
     object IStep {
       
@@ -2780,17 +2635,16 @@ object GherkinDocument {
     }
     
     /** Properties of a TableRow. */
-    @js.native
     trait ITableRow extends StObject {
       
       /** TableRow cells */
-      var cells: js.UndefOr[js.Array[ITableCell] | Null] = js.native
+      var cells: js.UndefOr[js.Array[ITableCell] | Null] = js.undefined
       
       /** TableRow id */
-      var id: js.UndefOr[String | Null] = js.native
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /** TableRow location */
-      var location: js.UndefOr[ILocation | Null] = js.native
+      var location: js.UndefOr[ILocation | Null] = js.undefined
     }
     object ITableRow {
       
@@ -2836,17 +2690,16 @@ object GherkinDocument {
     }
     
     /** Properties of a Tag. */
-    @js.native
     trait ITag extends StObject {
       
       /** Tag id */
-      var id: js.UndefOr[String | Null] = js.native
+      var id: js.UndefOr[String | Null] = js.undefined
       
       /** Tag location */
-      var location: js.UndefOr[ILocation | Null] = js.native
+      var location: js.UndefOr[ILocation | Null] = js.undefined
       
       /** Tag name */
-      var name: js.UndefOr[String | Null] = js.native
+      var name: js.UndefOr[String | Null] = js.undefined
     }
     object ITag {
       
@@ -2895,12 +2748,10 @@ object GherkinDocument {
     * @returns GherkinDocument instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.create")
-  @js.native
-  def create(): GherkinDocument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.create")
-  @js.native
-  def create(properties: IGherkinDocument): GherkinDocument = js.native
+  @scala.inline
+  def create(): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GherkinDocument]
+  @scala.inline
+  def create(properties: IGherkinDocument): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
   /**
     * Decodes a GherkinDocument message from the specified reader or buffer.
@@ -2911,18 +2762,14 @@ object GherkinDocument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decode")
-  @js.native
-  def decode(reader: Reader): GherkinDocument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GherkinDocument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decode")
-  @js.native
-  def decode(reader: Uint8Array): GherkinDocument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GherkinDocument = js.native
+  @scala.inline
+  def decode(reader: Reader): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GherkinDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GherkinDocument]
+  @scala.inline
+  def decode(reader: Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GherkinDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GherkinDocument]
   
   /**
     * Decodes a GherkinDocument message from the specified reader or buffer, length delimited.
@@ -2932,12 +2779,10 @@ object GherkinDocument {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GherkinDocument = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GherkinDocument = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
   /**
     * Encodes the specified GherkinDocument message. Does not implicitly {@link io.cucumber.messages.GherkinDocument.verify|verify} messages.
@@ -2946,12 +2791,10 @@ object GherkinDocument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.encode")
-  @js.native
-  def encode(message: IGherkinDocument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.encode")
-  @js.native
-  def encode(message: IGherkinDocument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGherkinDocument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGherkinDocument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GherkinDocument message, length delimited. Does not implicitly {@link io.cucumber.messages.GherkinDocument.verify|verify} messages.
@@ -2960,12 +2803,10 @@ object GherkinDocument {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGherkinDocument): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGherkinDocument, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGherkinDocument): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGherkinDocument, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GherkinDocument message from a plain object. Also converts values to their respective internal types.
@@ -2973,9 +2814,8 @@ object GherkinDocument {
     * @returns GherkinDocument
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GherkinDocument = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GherkinDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GherkinDocument]
   
   /**
     * Creates a plain object from a GherkinDocument message. Also converts values to other types if specified.
@@ -2984,12 +2824,10 @@ object GherkinDocument {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.toObject")
-  @js.native
-  def toObject(message: GherkinDocument): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.toObject")
-  @js.native
-  def toObject(message: GherkinDocument, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GherkinDocument): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GherkinDocument, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GherkinDocument message.
@@ -2997,19 +2835,17 @@ object GherkinDocument {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.GherkinDocument.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of a Comment. */
-  @js.native
   trait IComment extends StObject {
     
     /** Comment location */
-    var location: js.UndefOr[ILocation | Null] = js.native
+    var location: js.UndefOr[ILocation | Null] = js.undefined
     
     /** Comment text */
-    var text: js.UndefOr[String | Null] = js.native
+    var text: js.UndefOr[String | Null] = js.undefined
   }
   object IComment {
     
@@ -3043,29 +2879,28 @@ object GherkinDocument {
   }
   
   /** Properties of a Feature. */
-  @js.native
   trait IFeature extends StObject {
     
     /** Feature children */
-    var children: js.UndefOr[js.Array[IFeatureChild] | Null] = js.native
+    var children: js.UndefOr[js.Array[IFeatureChild] | Null] = js.undefined
     
     /** Feature description */
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
     /** Feature keyword */
-    var keyword: js.UndefOr[String | Null] = js.native
+    var keyword: js.UndefOr[String | Null] = js.undefined
     
     /** Feature language */
-    var language: js.UndefOr[String | Null] = js.native
+    var language: js.UndefOr[String | Null] = js.undefined
     
     /** Feature location */
-    var location: js.UndefOr[ILocation | Null] = js.native
+    var location: js.UndefOr[ILocation | Null] = js.undefined
     
     /** Feature name */
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
     
     /** Feature tags */
-    var tags: js.UndefOr[js.Array[ITag] | Null] = js.native
+    var tags: js.UndefOr[js.Array[ITag] | Null] = js.undefined
   }
   object IFeature {
     

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Triggered when the list of devices is updated after the initial enumeration is complete. */
-@js.native
 trait DeviceWatcherEvent extends StObject {
   
   /** Gets the information for the device associated with the DeviceWatcherEvent . */
-  var deviceInformation: DeviceInformation = js.native
+  var deviceInformation: DeviceInformation
   
   /** Gets updated information for a device updated by the DeviceWatcherEvent . */
-  var deviceInformationUpdate: DeviceInformationUpdate = js.native
+  var deviceInformationUpdate: DeviceInformationUpdate
   
   /** Gets the type for the device indicated by the DeviceWatcherEvent . */
-  var kind: DeviceWatcherEventKind = js.native
+  var kind: DeviceWatcherEventKind
 }
 object DeviceWatcherEvent {
   

@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackendServicesScopedList extends StObject {
   
   /** A list of BackendServices contained in this scope. */
-  var backendServices: js.UndefOr[js.Array[BackendService]] = js.native
+  var backendServices: js.UndefOr[js.Array[BackendService]] = js.undefined
   
   /** Informational warning which replaces the list of backend services when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object BackendServicesScopedList {
   

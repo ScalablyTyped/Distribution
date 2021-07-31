@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents settings for an AdvancedPhotoControl object. */
-@js.native
 trait AdvancedPhotoCaptureSettings extends StObject {
   
   /** Gets or sets the advanced capture mode for which an AdvancedPhotoControl will be configured. */
-  var mode: AdvancedPhotoMode = js.native
+  var mode: AdvancedPhotoMode
 }
 object AdvancedPhotoCaptureSettings {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChannelModeratedByAppInstanceUserResponse extends StObject {
   
   /**
     * The moderated channel.
     */
-  var Channel: js.UndefOr[ChannelModeratedByAppInstanceUserSummary] = js.native
+  var Channel: js.UndefOr[ChannelModeratedByAppInstanceUserSummary] = js.undefined
 }
 object DescribeChannelModeratedByAppInstanceUserResponse {
   

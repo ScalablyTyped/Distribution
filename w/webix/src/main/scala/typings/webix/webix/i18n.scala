@@ -2,75 +2,73 @@ package typings.webix.webix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait i18n extends StObject {
   
-  var calendar: js.Any = js.native
+  var calendar: js.Any
   
-  var controls: js.Any = js.native
+  var controls: js.Any
   
-  var dateFormat: String = js.native
+  var dateFormat: String
   
-  def dateFormatDate(date: String): js.Any = js.native
+  def dateFormatDate(date: String): js.Any
   
-  def dateFormatStr(date: js.Any): String = js.native
+  def dateFormatStr(date: js.Any): String
   
-  var decimalDelimiter: String = js.native
+  var decimalDelimiter: String
   
-  var decimalSize: Double = js.native
+  var decimalSize: Double
   
-  var fileSize: js.Array[_] = js.native
+  var fileSize: js.Array[js.Any]
   
-  var fullDateFormat: String = js.native
+  var fullDateFormat: String
   
-  def fullDateFormatDate(date: String): js.Any = js.native
+  def fullDateFormatDate(date: String): js.Any
   
-  def fullDateFormatStr(date: Date): String = js.native
+  def fullDateFormatStr(date: Date): String
   
-  var groupDelimiter: String = js.native
+  var groupDelimiter: String
   
-  var groupSize: Double = js.native
+  var groupSize: Double
   
-  def intFormat(num: Double): String = js.native
+  def intFormat(num: Double): String
   
-  var locales: js.Any = js.native
+  var locales: js.Any
   
-  var longDateFormat: String = js.native
+  var longDateFormat: String
   
-  def longDateFormatDate(date: String): js.Any = js.native
+  def longDateFormatDate(date: String): js.Any
   
-  def longDateFormatStr(date: js.Any): String = js.native
+  def longDateFormatStr(date: js.Any): String
   
-  def numberFormat(number: Double): String = js.native
+  def numberFormat(number: Double): String
   
-  var parseFormat: String = js.native
+  var parseFormat: String
   
-  def parseFormatDate(date: String): js.Any = js.native
+  def parseFormatDate(date: String): js.Any
   
-  def parseFormatStr(date: js.Any): String = js.native
+  def parseFormatStr(date: js.Any): String
   
-  var parseTimeFormat: String = js.native
+  var parseTimeFormat: String
   
-  def parseTimeFormatDate(date: String): js.Any = js.native
+  def parseTimeFormatDate(date: String): js.Any
   
-  def parseTimeFormatStr(date: js.Any): String = js.native
+  def parseTimeFormatStr(date: js.Any): String
   
-  var price: String = js.native
+  var price: String
   
-  def priceFormat(number: Double): String = js.native
+  def priceFormat(number: Double): String
   
-  var priceSettings: js.Any = js.native
+  var priceSettings: js.Any
   
-  def setLocale(name: String): Unit = js.native
+  def setLocale(name: String): Unit
   
-  var timeFormat: String = js.native
+  var timeFormat: String
   
-  def timeFormatDate(time: String): js.Any = js.native
+  def timeFormatDate(time: String): js.Any
   
-  def timeFormatStr(date: js.Any): String = js.native
+  def timeFormatStr(date: js.Any): String
 }
 object i18n {
   
@@ -83,7 +81,7 @@ object i18n {
     dateFormatStr: js.Any => String,
     decimalDelimiter: String,
     decimalSize: Double,
-    fileSize: js.Array[_],
+    fileSize: js.Array[js.Any],
     fullDateFormat: String,
     fullDateFormatDate: String => js.Any,
     fullDateFormatStr: Date => String,
@@ -138,7 +136,7 @@ object i18n {
     def setDecimalSize(value: Double): Self = StObject.set(x, "decimalSize", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFileSize(value: js.Array[_]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
+    def setFileSize(value: js.Array[js.Any]): Self = StObject.set(x, "fileSize", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFileSizeVarargs(value: js.Any*): Self = StObject.set(x, "fileSize", js.Array(value :_*))

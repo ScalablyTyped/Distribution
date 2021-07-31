@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A base class for all buttons.
   */
-@js.native
 trait Button extends StObject {
   
-  def setAuthorizationAction(action: AuthorizationAction): Button = js.native
+  def setAuthorizationAction(action: AuthorizationAction): Button
   
-  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Button = js.native
+  def setComposeAction(action: Action, composedEmailType: ComposedEmailType): Button
   
-  def setOnClickAction(action: Action): Button = js.native
+  def setOnClickAction(action: Action): Button
   
-  def setOnClickOpenLinkAction(action: Action): Button = js.native
+  def setOnClickOpenLinkAction(action: Action): Button
   
-  def setOpenLink(openLink: OpenLink): Button = js.native
+  def setOpenLink(openLink: OpenLink): Button
 }
 object Button {
   

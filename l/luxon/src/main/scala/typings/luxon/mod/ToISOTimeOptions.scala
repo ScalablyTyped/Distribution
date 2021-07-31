@@ -2,32 +2,30 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToISOTimeOptions extends StObject {
   
   /**
     * choose between the basic and extended format
     * @default 'extended'
     */
-  var format: js.UndefOr[ToISOFormat] = js.native
+  var format: js.UndefOr[ToISOFormat] = js.undefined
   
   /**
     * @default true
     */
-  var includeOffset: js.UndefOr[Boolean] = js.native
+  var includeOffset: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var suppressMilliseconds: js.UndefOr[Boolean] = js.native
+  var suppressMilliseconds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     */
-  var suppressSeconds: js.UndefOr[Boolean] = js.native
+  var suppressSeconds: js.UndefOr[Boolean] = js.undefined
 }
 object ToISOTimeOptions {
   

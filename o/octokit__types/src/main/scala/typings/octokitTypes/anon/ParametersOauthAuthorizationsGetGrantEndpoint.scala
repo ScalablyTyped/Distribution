@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.OauthAuthorizationsGetGrantResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersOauthAuthorizationsGetGrantEndpoint extends StObject {
   
-  var parameters: OauthAuthorizationsGetGrantEndpoint = js.native
+  var parameters: OauthAuthorizationsGetGrantEndpoint
   
-  var request: OauthAuthorizationsGetGrantRequestOptions = js.native
+  var request: OauthAuthorizationsGetGrantRequestOptions
   
-  var response: OctokitResponse[OauthAuthorizationsGetGrantResponseData] = js.native
+  var response: OctokitResponse[OauthAuthorizationsGetGrantResponseData]
 }
 object ParametersOauthAuthorizationsGetGrantEndpoint {
   

@@ -2,19 +2,17 @@ package typings.nodal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOptions extends StObject {
   
-  var as: String = js.native
+  var as: String
   
-  var multiple: Boolean = js.native
+  var multiple: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var via: String = js.native
+  var via: String
 }
 object IOptions {
   

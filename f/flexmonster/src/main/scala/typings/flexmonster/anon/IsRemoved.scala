@@ -2,15 +2,13 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsRemoved extends StObject {
   
-  var isRemoved: Boolean = js.native
+  var isRemoved: Boolean
   
-  var uniqueName: String = js.native
+  var uniqueName: String
 }
 object IsRemoved {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Featurization extends StObject {
   
   /**
     * The name of the schema attribute that specifies the data field to be featurized. Amazon Forecast supports the target field of the TARGET_TIME_SERIES and the RELATED_TIME_SERIES datasets. For example, for the RETAIL domain, the target is demand, and for the CUSTOM domain, the target is target_value. For more information, see howitworks-missing-values.
     */
-  var AttributeName: Name = js.native
+  var AttributeName: Name
   
   /**
     * An array of one FeaturizationMethod object that specifies the feature transformation method.
     */
-  var FeaturizationPipeline: js.UndefOr[typings.awsSdk.forecastserviceMod.FeaturizationPipeline] = js.native
+  var FeaturizationPipeline: js.UndefOr[typings.awsSdk.forecastserviceMod.FeaturizationPipeline] = js.undefined
 }
 object Featurization {
   

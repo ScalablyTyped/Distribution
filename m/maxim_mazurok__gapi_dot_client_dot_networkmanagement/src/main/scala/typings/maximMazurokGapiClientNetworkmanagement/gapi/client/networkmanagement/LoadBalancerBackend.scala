@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerBackend extends StObject {
   
   /** Name of a Compute Engine instance or network endpoint. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** A list of firewall rule URIs allowing probes from health check IP ranges. */
-  var healthCheckAllowingFirewallRules: js.UndefOr[js.Array[String]] = js.native
+  var healthCheckAllowingFirewallRules: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of firewall rule URIs blocking probes from health check IP ranges. */
-  var healthCheckBlockingFirewallRules: js.UndefOr[js.Array[String]] = js.native
+  var healthCheckBlockingFirewallRules: js.UndefOr[js.Array[String]] = js.undefined
   
   /** State of the health check firewall configuration. */
-  var healthCheckFirewallState: js.UndefOr[String] = js.native
+  var healthCheckFirewallState: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine instance or network endpoint. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object LoadBalancerBackend {
   

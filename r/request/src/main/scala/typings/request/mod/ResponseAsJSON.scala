@@ -2,19 +2,17 @@ package typings.request.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponseAsJSON extends StObject {
   
-  var body: js.Any = js.native
+  var body: js.Any
   
-  var headers: Headers = js.native
+  var headers: Headers
   
-  var request: RequestAsJSON = js.native
+  var request: RequestAsJSON
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object ResponseAsJSON {
   

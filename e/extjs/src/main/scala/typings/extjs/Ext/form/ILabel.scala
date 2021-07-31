@@ -3,18 +3,18 @@ package typings.extjs.Ext.form
 import typings.extjs.Ext.IComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILabel extends IComponent {
+trait ILabel
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (String) */
-  var forId: js.UndefOr[String] = js.native
+  var forId: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
   @JSName("html")
-  var html_ILabel: js.UndefOr[String] = js.native
+  var html_ILabel: js.UndefOr[String] = js.undefined
   
   /** [Method] Updates the label s innerHTML with the specified string
     * @param text String The new label text
@@ -23,10 +23,10 @@ trait ILabel extends IComponent {
     */
   var setText: js.UndefOr[
     js.Function2[/* text */ js.UndefOr[String], /* encode */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ILabel {
   

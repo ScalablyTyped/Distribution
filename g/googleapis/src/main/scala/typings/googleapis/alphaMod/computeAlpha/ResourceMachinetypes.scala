@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Machinetypes")
@@ -32,7 +31,7 @@ class ResourceMachinetypes protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaMachineTypeAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaMachineTypeAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMachineTypeAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMachineTypeAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceMachinetypesAggregatedlist): GaxiosPromise[SchemaMachineTypeAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceMachinetypesAggregatedlist,
@@ -69,7 +68,7 @@ class ResourceMachinetypes protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMachineType] = js.native
   def get(callback: BodyResponseCallback[SchemaMachineType]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMachineType] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMachineType] = js.native
   def get(params: ParamsResourceMachinetypesGet): GaxiosPromise[SchemaMachineType] = js.native
   def get(params: ParamsResourceMachinetypesGet, callback: BodyResponseCallback[SchemaMachineType]): Unit = js.native
   def get(
@@ -104,7 +103,7 @@ class ResourceMachinetypes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaMachineTypeList] = js.native
   def list(callback: BodyResponseCallback[SchemaMachineTypeList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMachineTypeList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMachineTypeList] = js.native
   def list(params: ParamsResourceMachinetypesList): GaxiosPromise[SchemaMachineTypeList] = js.native
   def list(params: ParamsResourceMachinetypesList, callback: BodyResponseCallback[SchemaMachineTypeList]): Unit = js.native
   def list(

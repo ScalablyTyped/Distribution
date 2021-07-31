@@ -13,33 +13,33 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a page number text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait PageNumber extends TextField_ {
+trait PageNumber
+  extends StObject
+     with TextField_ {
   
   /**
     * determines the type of the numbering.
     * @see com.sun.star.style.NumberingType
     */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
   
   /** determines an offset value to show a different page number. */
-  var Offset: Double = js.native
+  var Offset: Double
   
   /**
     * determines which page the field refers to.
     * @see com.sun.star.text.PageNumberType
     */
-  var SubType: PageNumberType = js.native
+  var SubType: PageNumberType
   
   /** if the user text string is set then it is displayed when the value of NumberingType is set to {@link com.sun.star.style.NumberingType.CHAR_SPECIAL} */
-  var UserText: String = js.native
+  var UserText: String
 }
 object PageNumber {
   

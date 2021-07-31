@@ -2,18 +2,18 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CitySearch extends EventBindable {
+trait CitySearch
+  extends StObject
+     with EventBindable {
   
   def getCityByIp(
     ip: String,
     callback: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def getLocalCity(callback: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]): Unit = js.native
+  def getLocalCity(callback: js.Function2[/* status */ String, /* result */ String | CitySearchResult, Unit]): Unit
 }
 object CitySearch {
   

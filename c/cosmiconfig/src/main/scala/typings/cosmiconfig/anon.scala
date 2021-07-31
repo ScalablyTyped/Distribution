@@ -3,7 +3,6 @@ package typings.cosmiconfig
 import typings.cosmiconfig.typesMod.CosmiconfigResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -38,14 +37,13 @@ object anon {
     def search(searchFrom: String): CosmiconfigResult = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: typings.cosmiconfig.typesMod.Config = js.native
+    var config: typings.cosmiconfig.typesMod.Config
     
-    var filepath: String = js.native
+    var filepath: String
     
-    var isEmpty: js.UndefOr[Boolean] = js.native
+    var isEmpty: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

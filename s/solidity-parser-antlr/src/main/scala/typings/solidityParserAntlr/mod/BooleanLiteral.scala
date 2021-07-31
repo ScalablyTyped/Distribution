@@ -2,25 +2,24 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooleanLiteral
-  extends PrimaryExpression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with PrimaryExpression {
   
   @JSName("type")
-  var type_BooleanLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral = js.native
+  var type_BooleanLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object BooleanLiteral {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.BooleanLiteral, value: Boolean): BooleanLiteral = {
+  def apply(value: Boolean): BooleanLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[BooleanLiteral]
   }
   

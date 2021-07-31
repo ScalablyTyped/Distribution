@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
-  var TagsModel: typings.awsSdk.pinpointMod.TagsModel = js.native
+  var TagsModel: typings.awsSdk.pinpointMod.TagsModel
 }
 object ListTagsForResourceResponse {
   

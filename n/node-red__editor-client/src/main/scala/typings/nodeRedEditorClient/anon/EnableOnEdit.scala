@@ -3,23 +3,21 @@ package typings.nodeRedEditorClient.anon
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableOnEdit extends StObject {
   
-  var enableOnEdit: js.UndefOr[Boolean] = js.native
+  var enableOnEdit: js.UndefOr[Boolean] = js.undefined
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var toolbar: js.UndefOr[HTMLElement] = js.native
+  var toolbar: js.UndefOr[HTMLElement] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object EnableOnEdit {
   

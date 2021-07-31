@@ -3,21 +3,20 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectPattern_
-  extends Node
+  extends StObject
+     with Node
      with LVal
      with Pattern {
   
-  var properties: js.Array[AssignmentProperty | RestProperty_] = js.native
+  var properties: js.Array[AssignmentProperty | RestProperty_]
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
   
   @JSName("type")
-  var type_ObjectPattern_ : ObjectPattern = js.native
+  var type_ObjectPattern_ : ObjectPattern
 }
 object ObjectPattern_ {
   
@@ -26,11 +25,10 @@ object ObjectPattern_ {
     end: Double,
     loc: SourceLocation,
     properties: js.Array[AssignmentProperty | RestProperty_],
-    start: Double,
-    `type`: ObjectPattern
+    start: Double
   ): ObjectPattern_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectPattern")
     __obj.asInstanceOf[ObjectPattern_]
   }
   

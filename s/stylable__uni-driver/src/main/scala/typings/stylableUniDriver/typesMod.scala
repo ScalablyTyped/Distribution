@@ -3,17 +3,15 @@ package typings.stylableUniDriver
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ElementRemoteApi extends StObject {
     
-    def attr(name: String): js.Promise[String | Null] = js.native
+    def attr(name: String): js.Promise[String | Null]
     
-    def hasClass(s: String): js.Promise[Boolean] = js.native
+    def hasClass(s: String): js.Promise[Boolean]
   }
   object ElementRemoteApi {
     
@@ -34,10 +32,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MinimalStylesheet extends StObject {
     
-    def cssStates(states: Record[String, StateValue]): String = js.native
+    def cssStates(states: Record[String, StateValue]): String
   }
   object MinimalStylesheet {
     

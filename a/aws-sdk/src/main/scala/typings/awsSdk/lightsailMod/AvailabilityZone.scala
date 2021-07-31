@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailabilityZone extends StObject {
   
   /**
     * The state of the Availability Zone.
     */
-  var state: js.UndefOr[NonEmptyString] = js.native
+  var state: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the Availability Zone. The format is us-east-2a (case-sensitive).
     */
-  var zoneName: js.UndefOr[NonEmptyString] = js.native
+  var zoneName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AvailabilityZone {
   

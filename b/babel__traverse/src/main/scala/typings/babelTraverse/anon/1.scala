@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.BreakStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var `type`: BreakStatement = js.native
+  var `type`: BreakStatement
 }
 object `1` {
   
   @scala.inline
-  def apply(`type`: BreakStatement): `1` = {
+  def apply(): `1` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BreakStatement")
     __obj.asInstanceOf[`1`]
   }
   

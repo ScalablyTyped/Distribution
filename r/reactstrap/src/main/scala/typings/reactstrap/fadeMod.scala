@@ -9,7 +9,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fadeMod {
@@ -21,38 +20,38 @@ object fadeMod {
   
   type Fade = Component[FadeProps, js.Object, js.Any]
   
-  @js.native
   trait FadeProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var baseClass: js.UndefOr[String] = js.native
+    var baseClass: js.UndefOr[String] = js.undefined
     
-    var baseClassIn: js.UndefOr[String] = js.native
+    var baseClassIn: js.UndefOr[String] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLeave: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
     
-    var transitionAppear: js.UndefOr[Boolean] = js.native
+    var transitionAppear: js.UndefOr[Boolean] = js.undefined
     
-    var transitionAppearTimeout: js.UndefOr[Double] = js.native
+    var transitionAppearTimeout: js.UndefOr[Double] = js.undefined
     
-    var transitionEnter: js.UndefOr[Boolean] = js.native
+    var transitionEnter: js.UndefOr[Boolean] = js.undefined
     
-    var transitionEnterTimeout: js.UndefOr[Double] = js.native
+    var transitionEnterTimeout: js.UndefOr[Double] = js.undefined
     
-    var transitionLeave: js.UndefOr[Boolean] = js.native
+    var transitionLeave: js.UndefOr[Boolean] = js.undefined
     
-    var transitionLeaveTimeout: js.UndefOr[Double] = js.native
+    var transitionLeaveTimeout: js.UndefOr[Double] = js.undefined
   }
   object FadeProps {
     
@@ -114,7 +113,7 @@ object fadeMod {
       def setOnLeaveUndefined: Self = StObject.set(x, "onLeave", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

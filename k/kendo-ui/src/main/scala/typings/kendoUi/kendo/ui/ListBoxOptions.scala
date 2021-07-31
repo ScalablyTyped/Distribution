@@ -3,55 +3,53 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxOptions extends StObject {
   
-  var add: js.UndefOr[js.Function1[/* e */ ListBoxAddEvent, Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* e */ ListBoxAddEvent, Unit]] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ ListBoxEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ListBoxEvent, Unit]] = js.undefined
   
-  var connectWith: js.UndefOr[String] = js.native
+  var connectWith: js.UndefOr[String] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ ListBoxEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ ListBoxEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataTextField: js.UndefOr[String] = js.native
+  var dataTextField: js.UndefOr[String] = js.undefined
   
-  var dataValueField: js.UndefOr[String] = js.native
+  var dataValueField: js.UndefOr[String] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ ListBoxDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ ListBoxDragEvent, Unit]] = js.undefined
   
-  var dragend: js.UndefOr[js.Function1[/* e */ ListBoxDragendEvent, Unit]] = js.native
+  var dragend: js.UndefOr[js.Function1[/* e */ ListBoxDragendEvent, Unit]] = js.undefined
   
-  var draggable: js.UndefOr[Boolean | ListBoxDraggable] = js.native
+  var draggable: js.UndefOr[Boolean | ListBoxDraggable] = js.undefined
   
-  var dragstart: js.UndefOr[js.Function1[/* e */ ListBoxDragstartEvent, Unit]] = js.native
+  var dragstart: js.UndefOr[js.Function1[/* e */ ListBoxDragstartEvent, Unit]] = js.undefined
   
-  var drop: js.UndefOr[js.Function1[/* e */ ListBoxDropEvent, Unit]] = js.native
+  var drop: js.UndefOr[js.Function1[/* e */ ListBoxDropEvent, Unit]] = js.undefined
   
-  var dropSources: js.UndefOr[js.Any] = js.native
+  var dropSources: js.UndefOr[js.Any] = js.undefined
   
-  var messages: js.UndefOr[ListBoxMessages] = js.native
+  var messages: js.UndefOr[ListBoxMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ ListBoxRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ ListBoxRemoveEvent, Unit]] = js.undefined
   
-  var reorder: js.UndefOr[js.Function1[/* e */ ListBoxReorderEvent, Unit]] = js.native
+  var reorder: js.UndefOr[js.Function1[/* e */ ListBoxReorderEvent, Unit]] = js.undefined
   
-  var selectable: js.UndefOr[String] = js.native
+  var selectable: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var toolbar: js.UndefOr[ListBoxToolbar] = js.native
+  var toolbar: js.UndefOr[ListBoxToolbar] = js.undefined
 }
 object ListBoxOptions {
   

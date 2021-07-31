@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zIndexMod extends Shortcut {
@@ -12,20 +11,19 @@ object zIndexMod extends Shortcut {
   @js.native
   val default: ZIndex = js.native
   
-  @js.native
   trait ZIndex extends StObject {
     
-    var appBar: Double = js.native
+    var appBar: Double
     
-    var drawer: Double = js.native
+    var drawer: Double
     
-    var mobileStepper: Double = js.native
+    var mobileStepper: Double
     
-    var modal: Double = js.native
+    var modal: Double
     
-    var snackbar: Double = js.native
+    var snackbar: Double
     
-    var tooltip: Double = js.native
+    var tooltip: Double
   }
   object ZIndex {
     
@@ -66,20 +64,19 @@ object zIndexMod extends Shortcut {
   }
   
   /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/zIndex.ZIndex> */
-  @js.native
   trait ZIndexOptions extends StObject {
     
-    var appBar: js.UndefOr[Double] = js.native
+    var appBar: js.UndefOr[Double] = js.undefined
     
-    var drawer: js.UndefOr[Double] = js.native
+    var drawer: js.UndefOr[Double] = js.undefined
     
-    var mobileStepper: js.UndefOr[Double] = js.native
+    var mobileStepper: js.UndefOr[Double] = js.undefined
     
-    var modal: js.UndefOr[Double] = js.native
+    var modal: js.UndefOr[Double] = js.undefined
     
-    var snackbar: js.UndefOr[Double] = js.native
+    var snackbar: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[Double] = js.native
+    var tooltip: js.UndefOr[Double] = js.undefined
   }
   object ZIndexOptions {
     

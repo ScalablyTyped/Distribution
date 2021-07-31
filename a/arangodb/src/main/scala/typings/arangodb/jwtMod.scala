@@ -5,33 +5,32 @@ import typings.arangodb.Foxx.SessionStorage
 import typings.arangodb.arangodbStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwtMod {
   
-  @JSImport("@arangodb/foxx/sessions/storages/jwt", JSImport.Namespace)
-  @js.native
-  def apply(options: String): SessionStorage = js.native
-  @JSImport("@arangodb/foxx/sessions/storages/jwt", JSImport.Namespace)
-  @js.native
-  def apply(options: SafeJwtStorageOptions): SessionStorage = js.native
-  @JSImport("@arangodb/foxx/sessions/storages/jwt", JSImport.Namespace)
-  @js.native
-  def apply(options: UnsafeJwtStorageOptions): SessionStorage = js.native
+  @scala.inline
+  def apply(options: String): SessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionStorage]
+  @scala.inline
+  def apply(options: SafeJwtStorageOptions): SessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionStorage]
+  @scala.inline
+  def apply(options: UnsafeJwtStorageOptions): SessionStorage = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[SessionStorage]
   
+  @JSImport("@arangodb/foxx/sessions/storages/jwt", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SafeJwtStorageOptions extends StObject {
     
-    var algorithm: js.UndefOr[JwtAlgorithm] = js.native
+    var algorithm: js.UndefOr[JwtAlgorithm] = js.undefined
     
-    var maxExp: js.UndefOr[Double] = js.native
+    var maxExp: js.UndefOr[Double] = js.undefined
     
-    var secret: String = js.native
+    var secret: String
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var verify: js.UndefOr[Boolean] = js.native
+    var verify: js.UndefOr[Boolean] = js.undefined
   }
   object SafeJwtStorageOptions {
     
@@ -73,22 +72,21 @@ object jwtMod {
     }
   }
   
-  @js.native
   trait UnsafeJwtStorageOptions extends StObject {
     
-    var algorithm: none = js.native
+    var algorithm: none
     
-    var maxExp: js.UndefOr[Double] = js.native
+    var maxExp: js.UndefOr[Double] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var verify: js.UndefOr[Boolean] = js.native
+    var verify: js.UndefOr[Boolean] = js.undefined
   }
   object UnsafeJwtStorageOptions {
     
     @scala.inline
-    def apply(algorithm: none): UnsafeJwtStorageOptions = {
-      val __obj = js.Dynamic.literal(algorithm = algorithm.asInstanceOf[js.Any])
+    def apply(): UnsafeJwtStorageOptions = {
+      val __obj = js.Dynamic.literal(algorithm = "none")
       __obj.asInstanceOf[UnsafeJwtStorageOptions]
     }
     

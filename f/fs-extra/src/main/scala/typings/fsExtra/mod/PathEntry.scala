@@ -2,15 +2,13 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathEntry extends StObject {
   
-  var path: String = js.native
+  var path: String
   
-  var stats: typings.node.fsMod.Stats = js.native
+  var stats: typings.node.fsMod.Stats
 }
 object PathEntry {
   

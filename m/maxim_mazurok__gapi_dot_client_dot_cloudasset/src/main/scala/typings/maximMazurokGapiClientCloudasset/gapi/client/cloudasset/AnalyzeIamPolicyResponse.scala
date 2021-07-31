@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzeIamPolicyResponse extends StObject {
   
   /** Represents whether all entries in the main_analysis and service_account_impersonation_analysis have been fully explored to answer the query in the request. */
-  var fullyExplored: js.UndefOr[Boolean] = js.native
+  var fullyExplored: js.UndefOr[Boolean] = js.undefined
   
   /** The main analysis that matches the original request. */
-  var mainAnalysis: js.UndefOr[IamPolicyAnalysis] = js.native
+  var mainAnalysis: js.UndefOr[IamPolicyAnalysis] = js.undefined
   
   /** The service account impersonation analysis if AnalyzeIamPolicyRequest.analyze_service_account_impersonation is enabled. */
-  var serviceAccountImpersonationAnalysis: js.UndefOr[js.Array[IamPolicyAnalysis]] = js.native
+  var serviceAccountImpersonationAnalysis: js.UndefOr[js.Array[IamPolicyAnalysis]] = js.undefined
 }
 object AnalyzeIamPolicyResponse {
   

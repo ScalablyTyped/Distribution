@@ -2,56 +2,54 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2ResourceDetails extends StObject {
   
   /**
     *  Hourly public On-Demand rate for the instance type.
     */
-  var HourlyOnDemandRate: js.UndefOr[GenericString] = js.native
+  var HourlyOnDemandRate: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The type of AWS instance.
     */
-  var InstanceType: js.UndefOr[GenericString] = js.native
+  var InstanceType: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Memory capacity of the AWS instance.
     */
-  var Memory: js.UndefOr[GenericString] = js.native
+  var Memory: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Network performance capacity of the AWS instance.
     */
-  var NetworkPerformance: js.UndefOr[GenericString] = js.native
+  var NetworkPerformance: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The platform of the AWS instance. The platform is the specific combination of operating system, license model, and software on an instance.
     */
-  var Platform: js.UndefOr[GenericString] = js.native
+  var Platform: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The AWS Region of the instance.
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The SKU of the product.
     */
-  var Sku: js.UndefOr[GenericString] = js.native
+  var Sku: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The disk storage of the AWS instance (not EBS storage).
     */
-  var Storage: js.UndefOr[GenericString] = js.native
+  var Storage: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  Number of VCPU cores in the AWS instance type.
     */
-  var Vcpu: js.UndefOr[GenericString] = js.native
+  var Vcpu: js.UndefOr[GenericString] = js.undefined
 }
 object EC2ResourceDetails {
   

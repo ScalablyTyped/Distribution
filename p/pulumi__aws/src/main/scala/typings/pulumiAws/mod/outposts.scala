@@ -14,68 +14,53 @@ import typings.pulumiAws.getSitesMod.GetSitesResult
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outposts {
   
-  @JSImport("@pulumi/aws", "outposts.getOutpost")
+  @JSImport("@pulumi/aws", "outposts")
   @js.native
-  def getOutpost(): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutpost")
-  @js.native
-  def getOutpost(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutpost")
-  @js.native
-  def getOutpost(args: GetOutpostArgs): js.Promise[GetOutpostResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutpost")
-  @js.native
-  def getOutpost(args: GetOutpostArgs, opts: InvokeOptions): js.Promise[GetOutpostResult] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@pulumi/aws", "outposts.getOutpostInstanceType")
-  @js.native
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutpostInstanceType")
-  @js.native
-  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = js.native
+  @scala.inline
+  def getOutpost(): js.Promise[GetOutpostResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")().asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: GetOutpostArgs): js.Promise[GetOutpostResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostResult]]
+  @scala.inline
+  def getOutpost(args: GetOutpostArgs, opts: InvokeOptions): js.Promise[GetOutpostResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpost")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostResult]]
   
-  @JSImport("@pulumi/aws", "outposts.getOutpostInstanceTypes")
-  @js.native
-  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs): js.Promise[GetOutpostInstanceTypesResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutpostInstanceTypes")
-  @js.native
-  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypesResult] = js.native
+  @scala.inline
+  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs): js.Promise[GetOutpostInstanceTypeResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
+  @scala.inline
+  def getOutpostInstanceType(args: GetOutpostInstanceTypeArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypeResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceType")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypeResult]]
   
-  @JSImport("@pulumi/aws", "outposts.getOutposts")
-  @js.native
-  def getOutposts(): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutposts")
-  @js.native
-  def getOutposts(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutposts")
-  @js.native
-  def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getOutposts")
-  @js.native
-  def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = js.native
+  @scala.inline
+  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs): js.Promise[GetOutpostInstanceTypesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceTypes")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostInstanceTypesResult]]
+  @scala.inline
+  def getOutpostInstanceTypes(args: GetOutpostInstanceTypesArgs, opts: InvokeOptions): js.Promise[GetOutpostInstanceTypesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutpostInstanceTypes")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostInstanceTypesResult]]
   
-  @JSImport("@pulumi/aws", "outposts.getSite")
-  @js.native
-  def getSite(): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getSite")
-  @js.native
-  def getSite(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getSite")
-  @js.native
-  def getSite(args: GetSiteArgs): js.Promise[GetSiteResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getSite")
-  @js.native
-  def getSite(args: GetSiteArgs, opts: InvokeOptions): js.Promise[GetSiteResult] = js.native
+  @scala.inline
+  def getOutposts(): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")().asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
   
-  @JSImport("@pulumi/aws", "outposts.getSites")
-  @js.native
-  def getSites(): js.Promise[GetSitesResult] = js.native
-  @JSImport("@pulumi/aws", "outposts.getSites")
-  @js.native
-  def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = js.native
+  @scala.inline
+  def getSite(): js.Promise[GetSiteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSite")().asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: Unit, opts: InvokeOptions): js.Promise[GetSiteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: GetSiteArgs): js.Promise[GetSiteResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSiteResult]]
+  @scala.inline
+  def getSite(args: GetSiteArgs, opts: InvokeOptions): js.Promise[GetSiteResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSite")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSiteResult]]
+  
+  @scala.inline
+  def getSites(): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")().asInstanceOf[js.Promise[GetSitesResult]]
+  @scala.inline
+  def getSites(opts: InvokeOptions): js.Promise[GetSitesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSites")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSitesResult]]
 }

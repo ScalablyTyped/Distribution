@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridResponsive
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -19,30 +18,30 @@ trait IgGridResponsive
     * forcing vertical rendering for the grid
     *
     */
-  var allowedColumnWidthPerType: js.UndefOr[IgGridResponsiveAllowedColumnWidthPerType] = js.native
+  var allowedColumnWidthPerType: js.UndefOr[IgGridResponsiveAllowedColumnWidthPerType] = js.undefined
   
   /**
     * A list of column settings that specifies how columns will react based on the environment the grid is run on.
     *
     */
-  var columnSettings: js.UndefOr[js.Array[IgGridResponsiveColumnSetting]] = js.native
+  var columnSettings: js.UndefOr[js.Array[IgGridResponsiveColumnSetting]] = js.undefined
   
   /**
     * Enable or disable the responsive vertical rendering for the grid.
     *
     */
-  var enableVerticalRendering: js.UndefOr[Boolean] = js.native
+  var enableVerticalRendering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If this option is set to true the widget will ensure the grid's width is always set to 100%.
     *
     */
-  var forceResponsiveGridWidth: js.UndefOr[Boolean] = js.native
+  var forceResponsiveGridWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The width of the properties column when vertical rendering is enabled
@@ -52,56 +51,56 @@ trait IgGridResponsive
     * "string" The width in a (%) string
     * "number" The width as a number in percents
     */
-  var propertiesColumnWidth: js.UndefOr[String | Double] = js.native
+  var propertiesColumnWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * If this option is set to true an igResponsiveContainer widget will be attached to the igGrid control which will notify the feature when changes in the width of the container occur.
     *
     */
-  var reactOnContainerWidthChanges: js.UndefOr[Boolean] = js.native
+  var reactOnContainerWidthChanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event fired after a hiding operation is executed on the collection of columns.
     */
-  var responsiveColumnHidden: js.UndefOr[ResponsiveColumnHiddenEvent] = js.native
+  var responsiveColumnHidden: js.UndefOr[ResponsiveColumnHiddenEvent] = js.undefined
   
   /**
     * Event fired before a hiding operation is executed on a collection of columns.
     */
-  var responsiveColumnHiding: js.UndefOr[ResponsiveColumnHidingEvent] = js.native
+  var responsiveColumnHiding: js.UndefOr[ResponsiveColumnHidingEvent] = js.undefined
   
   /**
     * Event fired before a showing operation is executed on a collection of columns.
     */
-  var responsiveColumnShowing: js.UndefOr[ResponsiveColumnShowingEvent] = js.native
+  var responsiveColumnShowing: js.UndefOr[ResponsiveColumnShowingEvent] = js.undefined
   
   /**
     * Event fired after a showing operation is executed on the collection of columns.
     */
-  var responsiveColumnShown: js.UndefOr[ResponsiveColumnShownEvent] = js.native
+  var responsiveColumnShown: js.UndefOr[ResponsiveColumnShownEvent] = js.undefined
   
   /**
     * Event which is fired when the widget detects an environment change.
     */
-  var responsiveModeChanged: js.UndefOr[ResponsiveModeChangedEvent] = js.native
+  var responsiveModeChanged: js.UndefOr[ResponsiveModeChangedEvent] = js.undefined
   
   /**
     * The recognized types of environments and their configuration.
     *
     */
-  var responsiveModes: js.UndefOr[js.Any] = js.native
+  var responsiveModes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The amount of pixels the window needs to resize with for the grid to respond.
     *
     */
-  var responsiveSensitivity: js.UndefOr[Double] = js.native
+  var responsiveSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a template to render a record with in a list-view style layout per mode.
     *
     */
-  var singleColumnTemplate: js.UndefOr[js.Any] = js.native
+  var singleColumnTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The width of the values column when vertical rendering is enabled
@@ -111,7 +110,7 @@ trait IgGridResponsive
     * "string" The width in a (%) string
     * "number" The width as a number in percents
     */
-  var valuesColumnWidth: js.UndefOr[String | Double] = js.native
+  var valuesColumnWidth: js.UndefOr[String | Double] = js.undefined
   
   /**
     * The window's width under which the grid will render its contents vertically.
@@ -122,7 +121,7 @@ trait IgGridResponsive
     * "number" The width as a number
     * "null" The grid will determine when to render this mode automatically.
     */
-  var windowWidthToRenderVertically: js.UndefOr[String | Double] = js.native
+  var windowWidthToRenderVertically: js.UndefOr[String | Double] = js.undefined
 }
 object IgGridResponsive {
   

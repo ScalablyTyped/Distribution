@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCourseWorkMaterialResponse extends StObject {
   
   /** Course work material items that match the request. */
-  var courseWorkMaterial: js.UndefOr[js.Array[CourseWorkMaterial]] = js.native
+  var courseWorkMaterial: js.UndefOr[js.Array[CourseWorkMaterial]] = js.undefined
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCourseWorkMaterialResponse {
   

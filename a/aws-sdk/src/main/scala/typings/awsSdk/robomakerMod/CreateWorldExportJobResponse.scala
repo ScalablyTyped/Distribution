@@ -2,48 +2,46 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorldExportJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world export job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world export job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The failure code of the world export job if it failed:  InternalServiceError  Internal service error.  LimitExceeded  The requested resource exceeds the maximum number allowed, or the number of concurrent stream requests exceeds the maximum number allowed.   ResourceNotFound  The specified resource could not be found.   RequestThrottled  The request was throttled.  InvalidInput  An input parameter in the request is not valid.  AllWorldGenerationFailed  All of the worlds in the world generation job failed. This can happen if your worldCount is greater than 50 or less than 1.    For more information about troubleshooting WorldForge, see Troubleshooting Simulation WorldForge. 
     */
-  var failureCode: js.UndefOr[WorldExportJobErrorCode] = js.native
+  var failureCode: js.UndefOr[WorldExportJobErrorCode] = js.undefined
   
   /**
     * The IAM role that the world export process uses to access the Amazon S3 bucket and put the export. 
     */
-  var iamRole: js.UndefOr[IamRole] = js.native
+  var iamRole: js.UndefOr[IamRole] = js.undefined
   
-  var outputLocation: js.UndefOr[OutputLocation] = js.native
+  var outputLocation: js.UndefOr[OutputLocation] = js.undefined
   
   /**
     * The status of the world export job.  Pending  The world export job request is pending.  Running  The world export job is running.   Completed  The world export job completed.   Failed  The world export job failed. See failureCode for more information.   Canceled  The world export job was cancelled.  Canceling  The world export job is being cancelled.  
     */
-  var status: js.UndefOr[WorldExportJobStatus] = js.native
+  var status: js.UndefOr[WorldExportJobStatus] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the world export job.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateWorldExportJobResponse {
   

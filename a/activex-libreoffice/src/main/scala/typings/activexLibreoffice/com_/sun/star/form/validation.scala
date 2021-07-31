@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validation {
@@ -44,7 +43,8 @@ object validation {
   - typings.activexLibreoffice.com_.sun.star.form.FormControlModel because Already inherited
   - typings.activexLibreoffice.com_.sun.star.form.binding.BindableControlModel because var conflicts: ClassId, DefaultControl, Height, Name, Parent, PositionX, PositionY, PropertyValues, Step, TabIndex, Tag, Width. Inlined  */ @js.native
   trait ValidatableBindableControlModel
-    extends ValidatableControlModel
+    extends StObject
+       with ValidatableControlModel
        with XBindableValue {
     
     /**
@@ -63,7 +63,8 @@ object validation {
     */
   @js.native
   trait ValidatableControlModel
-    extends FormControlModel
+    extends StObject
+       with FormControlModel
        with XValidatableFormComponent
        with XValidityConstraintListener {
     
@@ -76,14 +77,15 @@ object validation {
   }
   
   /** is the listener interface to be notified of changes of a {@link XValidatableFormComponent} */
-  @js.native
-  trait XFormComponentValidityListener extends XEventListener {
+  trait XFormComponentValidityListener
+    extends StObject
+       with XEventListener {
     
     /**
       * called when the validity and/or the value of the form component at which the listener is registered changed.
       * @param Source The member {@link com.sun.star.lang.EventObject.Source} represents the {@link XValidatableFormComponent} whose validity, value, or text ch
       */
-    def componentValidityChanged(Source: EventObject): Unit = js.native
+    def componentValidityChanged(Source: EventObject): Unit
   }
   object XFormComponentValidityListener {
     
@@ -111,14 +113,15 @@ object validation {
     * specifies support for validating a component
     * @see XValidator
     */
-  @js.native
-  trait XValidatable extends XInterface {
+  trait XValidatable
+    extends StObject
+       with XInterface {
     
     /** retrieves the external instance which is currently used to validate the component */
-    var Validator: XValidator = js.native
+    var Validator: XValidator
     
     /** retrieves the external instance which is currently used to validate the component */
-    def getValidator(): XValidator = js.native
+    def getValidator(): XValidator
     
     /**
       * sets an external instance which is able to validate the component
@@ -127,7 +130,7 @@ object validation {
       * @param Validator the new validator which is to be used by the component. May be `NULL` , in this case only the current validator is revoked.
       * @throws com::sun::star::util::VetoException if changing the validator is not allowed in the current component state
       */
-    def setValidator(Validator: XValidator): Unit = js.native
+    def setValidator(Validator: XValidator): Unit
   }
   object XValidatable {
     
@@ -172,8 +175,9 @@ object validation {
     * @see XValidatable
     * @see XValidator
     */
-  @js.native
-  trait XValidatableFormComponent extends XValidatable {
+  trait XValidatableFormComponent
+    extends StObject
+       with XValidatable {
     
     /**
       * retrieves the current value of the component.
@@ -185,7 +189,7 @@ object validation {
       *
       * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
       */
-    val CurrentValue: js.Any = js.native
+    val CurrentValue: js.Any
     
     /**
       * registers the given listener.
@@ -194,7 +198,7 @@ object validation {
       * changed.
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def addFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit = js.native
+    def addFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit
     
     /**
       * retrieves the current value of the component.
@@ -206,7 +210,7 @@ object validation {
       *
       * If no validator has been set ( {@link XValidatable.setValidator()} ), the value returned here is defined by the service implementing this interface.
       */
-    def getCurrentValue(): js.Any = js.native
+    def getCurrentValue(): js.Any
     
     /**
       * determines whether the current value of the component passed the validity test at the validator.
@@ -216,13 +220,13 @@ object validation {
       *
       * If no validator has been set ( {@link XValidatable.setValidator()} ), this method returns true.
       */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /**
       * registers the given listener.
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def removeFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit = js.native
+    def removeFormComponentValidityListener(Listener: XFormComponentValidityListener): Unit
   }
   object XValidatableFormComponent {
     
@@ -273,8 +277,9 @@ object validation {
     * itself. ;  To be notified about this, interested components should register as {@link XValidityConstraintListener} .
     * @see XValidatable
     */
-  @js.native
-  trait XValidator extends XInterface {
+  trait XValidator
+    extends StObject
+       with XInterface {
     
     /**
       * registers the given validity listener.
@@ -285,28 +290,28 @@ object validation {
       * @see XValidityConstraintListener
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def addValidityConstraintListener(Listener: XValidityConstraintListener): Unit = js.native
+    def addValidityConstraintListener(Listener: XValidityConstraintListener): Unit
     
     /**
       * retrieves a justification for the invalidity of the given value
       * @param Value the value which has been recognized as being invalid
       * @returns a human-readable string, which explains why the given value is considered invalid.
       */
-    def explainInvalid(Value: js.Any): String = js.native
+    def explainInvalid(Value: js.Any): String
     
     /**
       * determines whether the given value is valid
       * @param Value the value to check for validity
       * @returns `TRUE` if and only if the value is considered valid.
       */
-    def isValid(Value: js.Any): Boolean = js.native
+    def isValid(Value: js.Any): Boolean
     
     /**
       * revokes the given validity listener
       * @see XValidityConstraintListener
       * @throws com::sun::star::lang::NullPointerException if the given listener is `NULL`
       */
-    def removeValidityConstraintListener(Listener: XValidityConstraintListener): Unit = js.native
+    def removeValidityConstraintListener(Listener: XValidityConstraintListener): Unit
   }
   object XValidator {
     
@@ -342,14 +347,15 @@ object validation {
   }
   
   /** specifies an interface for listening for changes in the validity constraints represented by an {@link XValidator} . */
-  @js.native
-  trait XValidityConstraintListener extends XEventListener {
+  trait XValidityConstraintListener
+    extends StObject
+       with XEventListener {
     
     /**
       * called when the validity constraint represented by an {@link XValidator} , at which the listener is registered, changed.
       * @param Source The event source. The member {@link com.sun.star.lang.EventObject.Source} represents the validator component whose validity constraint changed.
       */
-    def validityConstraintChanged(Source: EventObject): Unit = js.native
+    def validityConstraintChanged(Source: EventObject): Unit
   }
   object XValidityConstraintListener {
     

@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Tooltip extends Widget_ {
+trait Tooltip
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -27,9 +28,9 @@ trait Tooltip extends Widget_ {
     * @returns {void}
     */
   def hide(): Unit = js.native
-  def hide(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit]): Unit = js.native
   def hide(effect: String): Unit = js.native
   def hide(effect: String, func: js.Function0[Unit]): Unit = js.native
+  def hide(effect: Unit, func: js.Function0[Unit]): Unit = js.native
   
   @JSName("model")
   var model_Tooltip: Model = js.native
@@ -41,13 +42,13 @@ trait Tooltip extends Widget_ {
     * @returns {void}
     */
   def show(): Unit = js.native
-  def show(effect: js.UndefOr[scala.Nothing], func: js.UndefOr[scala.Nothing], target: JQuery): Unit = js.native
-  def show(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit]): Unit = js.native
-  def show(effect: js.UndefOr[scala.Nothing], func: js.Function0[Unit], target: JQuery): Unit = js.native
   def show(effect: String): Unit = js.native
-  def show(effect: String, func: js.UndefOr[scala.Nothing], target: JQuery): Unit = js.native
   def show(effect: String, func: js.Function0[Unit]): Unit = js.native
   def show(effect: String, func: js.Function0[Unit], target: JQuery): Unit = js.native
+  def show(effect: String, func: Unit, target: JQuery): Unit = js.native
+  def show(effect: Unit, func: js.Function0[Unit]): Unit = js.native
+  def show(effect: Unit, func: js.Function0[Unit], target: JQuery): Unit = js.native
+  def show(effect: Unit, func: Unit, target: JQuery): Unit = js.native
 }
 object Tooltip {
   
@@ -59,23 +60,33 @@ object Tooltip {
     
     ///Sets the position related to (x,y) co-ordinates.
     @js.native
-    sealed trait Axis extends Associate
+    sealed trait Axis
+      extends StObject
+         with Associate
     
     ///Sets the position related to mouse, first entry to the target element.
     @js.native
-    sealed trait MouseEnter extends Associate
+    sealed trait MouseEnter
+      extends StObject
+         with Associate
     
     ///Sets the position related to mouse.
     @js.native
-    sealed trait MouseFollow extends Associate
+    sealed trait MouseFollow
+      extends StObject
+         with Associate
     
     ///Sets the position related to target element.
     @js.native
-    sealed trait Target extends Associate
+    sealed trait Target
+      extends StObject
+         with Associate
     
     ///Sets the position related to browser window.
     @js.native
-    sealed trait Window extends Associate
+    sealed trait Window
+      extends StObject
+         with Associate
   }
   
   @js.native
@@ -86,15 +97,21 @@ object Tooltip {
     
     ///Sets the delay for Tooltip close
     @js.native
-    sealed trait Auto extends CloseMode
+    sealed trait Auto
+      extends StObject
+         with CloseMode
     
     ///The Tooltip will be display normally.
     @js.native
-    sealed trait None extends CloseMode
+    sealed trait None
+      extends StObject
+         with CloseMode
     
     ///Enables close button in Tooltip.
     @js.native
-    sealed trait Sticky extends CloseMode
+    sealed trait Sticky
+      extends StObject
+         with CloseMode
   }
   
   @js.native
@@ -105,19 +122,27 @@ object Tooltip {
     
     ///Shift the Tooltip popup away from the edge of the window(collision side) that means adjacent position.
     @js.native
-    sealed trait Fit extends Collision
+    sealed trait Fit
+      extends StObject
+         with Collision
     
     ///Flips the Tooltip to the opposite side of the target, if collision is occurs.
     @js.native
-    sealed trait Flip extends Collision
+    sealed trait Flip
+      extends StObject
+         with Collision
     
     ///Ensure as much of the element is visible as possible to showcase.
     @js.native
-    sealed trait FlipFit extends Collision
+    sealed trait FlipFit
+      extends StObject
+         with Collision
     
     ///No collision detection is take place
     @js.native
-    sealed trait None extends Collision
+    sealed trait None
+      extends StObject
+         with Collision
   }
   
   @js.native
@@ -128,15 +153,21 @@ object Tooltip {
     
     ///The Tooltip to be shown when the target element is clicked.
     @js.native
-    sealed trait Click extends Trigger
+    sealed trait Click
+      extends StObject
+         with Trigger
     
     ///Enables the Tooltip when focus is set to target element.
     @js.native
-    sealed trait Focus extends Trigger
+    sealed trait Focus
+      extends StObject
+         with Trigger
     
     ///Enables the Tooltip when hover on the target element.
     @js.native
-    sealed trait Hover extends Trigger
+    sealed trait Hover
+      extends StObject
+         with Trigger
   }
   
   @js.native
@@ -147,29 +178,34 @@ object Tooltip {
     
     ///Fade the Tooltip in and out of visibility.
     @js.native
-    sealed trait Fade extends effect
+    sealed trait Fade
+      extends StObject
+         with effect
     
     ///No animation takes place when showing/hiding the Tooltip
     @js.native
-    sealed trait None extends effect
+    sealed trait None
+      extends StObject
+         with effect
     
     ///Sliding effect takes place when showing/hiding the Tooltip
     @js.native
-    sealed trait Slide extends effect
+    sealed trait Slide
+      extends StObject
+         with effect
   }
   
-  @js.native
   trait Animation extends StObject {
     
     /** Determines the type of effect.
       * @Default {ej.Tooltip.Effect.None}
       */
-    var effect: js.UndefOr[typings.ejWebAll.ej.Tooltip.effect | String] = js.native
+    var effect: js.UndefOr[typings.ejWebAll.ej.Tooltip.effect | String] = js.undefined
     
     /** Sets the animation speed in milliseconds.
       * @Default {4000}
       */
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object Animation {
     
@@ -196,24 +232,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait BeforeCloseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip's content
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** returns the tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeCloseEventArgs {
     
@@ -252,24 +287,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait BeforeOpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip's content
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeOpenEventArgs {
     
@@ -308,24 +342,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -364,24 +397,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait CloseEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip's content
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CloseEventArgs {
     
@@ -420,20 +452,19 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -466,20 +497,19 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -512,24 +542,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait HoverEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HoverEventArgs {
     
@@ -568,146 +597,145 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Tooltip control can be accessed through the keyboard shortcut keys.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the animation behavior in  Tooltip. It contains the following sub properties.
       */
-    var animation: js.UndefOr[typings.ejWebAll.ej.Tooltip.Animation] = js.native
+    var animation: js.UndefOr[typings.ejWebAll.ej.Tooltip.Animation] = js.undefined
     
     /** Sets the position related to target element, window, mouse or (x,y) co-ordinates.
       * @Default {ej.Tooltip.Associate.Target}
       */
-    var associate: js.UndefOr[Associate | String] = js.native
+    var associate: js.UndefOr[Associate | String] = js.undefined
     
     /** Specified the delay to hide Tooltip when closeMode is auto.
       * @Default {4000}
       */
-    var autoCloseTimeout: js.UndefOr[Double] = js.native
+    var autoCloseTimeout: js.UndefOr[Double] = js.undefined
     
     /** This event is triggered before the Tooltip widget get closed.
       */
-    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.native
+    var beforeClose: js.UndefOr[js.Function1[/* e */ BeforeCloseEventArgs, Unit]] = js.undefined
     
     /** This event is triggered before the Tooltip widget gets open.
       */
-    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.native
+    var beforeOpen: js.UndefOr[js.Function1[/* e */ BeforeOpenEventArgs, Unit]] = js.undefined
     
     /** Fires on clicking to the target element.
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** This event is triggered after the Tooltip widget is closed.
       */
-    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.native
+    var close: js.UndefOr[js.Function1[/* e */ CloseEventArgs, Unit]] = js.undefined
     
     /** Specifies the closing behavior of Tooltip popup.
       * @Default {ej.Tooltip.CloseMode.None}
       */
-    var closeMode: js.UndefOr[CloseMode | String] = js.native
+    var closeMode: js.UndefOr[CloseMode | String] = js.undefined
     
     /** Sets the Tooltip in alternate position when collision occurs.
       * @Default {ej.Tooltip.Collision.FlipFit}
       */
-    var collision: js.UndefOr[Collision | String] = js.native
+    var collision: js.UndefOr[Collision | String] = js.undefined
     
     /** Specified the selector for the container element.
       * @Default {body}
       */
-    var containment: js.UndefOr[String] = js.native
+    var containment: js.UndefOr[String] = js.undefined
     
     /** Specifies the text for Tooltip.
       * @Default {null}
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** This event is triggered after the Tooltip is created successfully.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for Tooltip for the customization.
       * @Default {null}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** This event is triggered after the Tooltip widget is destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Sets the Tooltip direction from right to left.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables the Tooltip.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the height of the Tooltip popup.
       * @Default {auto}
       */
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
     /** This event is triggered while hovering the target element, when tooltip positioning relates to target element.
       */
-    var hover: js.UndefOr[js.Function1[/* e */ HoverEventArgs, Unit]] = js.native
+    var hover: js.UndefOr[js.Function1[/* e */ HoverEventArgs, Unit]] = js.undefined
     
     /** Enables the arrow in Tooltip.
       * @Default {true}
       */
-    var isBalloon: js.UndefOr[Boolean] = js.native
+    var isBalloon: js.UndefOr[Boolean] = js.undefined
     
     /** This event is triggered after the Tooltip is opened.
       */
-    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.native
+    var open: js.UndefOr[js.Function1[/* e */ OpenEventArgs, Unit]] = js.undefined
     
     /** defines various attributes of the Tooltip position
       */
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
     /** Enables or disables rounded corner.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or disables shadow effect.
       * @Default {false}
       */
-    var showShadow: js.UndefOr[Boolean] = js.native
+    var showShadow: js.UndefOr[Boolean] = js.undefined
     
     /** Specified a selector for elements, within the container.
       * @Default {null}
       */
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
     /** defines Tooltip size and gap between tooltip against the target element.
       */
-    var tip: js.UndefOr[Tip] = js.native
+    var tip: js.UndefOr[Tip] = js.undefined
     
     /** The title text to be displayed in the Tooltip header.
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** This event is triggered while hover the target element, when the tooltip positioning is relates to the mouse.
       */
-    var tracking: js.UndefOr[js.Function1[/* e */ TrackingEventArgs, Unit]] = js.native
+    var tracking: js.UndefOr[js.Function1[/* e */ TrackingEventArgs, Unit]] = js.undefined
     
     /** Specified the event action to show case the Tooltip.
       * @Default {ej.Tooltip.Trigger.Hover}
       */
-    var trigger: js.UndefOr[Trigger | String] = js.native
+    var trigger: js.UndefOr[Trigger | String] = js.undefined
     
     /** Defines the width of the Tooltip popup.
       * @Default {auto}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     
@@ -902,24 +930,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait OpenEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the Tooltip's content
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OpenEventArgs {
     
@@ -958,16 +985,15 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
     /** Sets the arrow position again popup.
       */
-    var stem: js.UndefOr[PositionStem] = js.native
+    var stem: js.UndefOr[PositionStem] = js.undefined
     
     /** Sets the Tooltip position against target.
       */
-    var target: js.UndefOr[PositionTarget] = js.native
+    var target: js.UndefOr[PositionTarget] = js.undefined
   }
   object Position {
     
@@ -994,18 +1020,17 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait PositionStem extends StObject {
     
     /** Sets the arrow position again popup based on horizontal(x) value
       * @Default {center}
       */
-    var horizontal: js.UndefOr[String] = js.native
+    var horizontal: js.UndefOr[String] = js.undefined
     
     /** Sets the arrow position again popup based on vertical(y) value
       * @Default {bottom}
       */
-    var vertical: js.UndefOr[String] = js.native
+    var vertical: js.UndefOr[String] = js.undefined
   }
   object PositionStem {
     
@@ -1032,18 +1057,17 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait PositionTarget extends StObject {
     
     /** Sets the Tooltip position against target based on horizontal(x) value.
       * @Default {center}
       */
-    var horizontal: js.UndefOr[String | Double] = js.native
+    var horizontal: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the Tooltip position against target based on vertical(y) value.
       * @Default {top}
       */
-    var vertical: js.UndefOr[String | Double] = js.native
+    var vertical: js.UndefOr[String | Double] = js.undefined
   }
   object PositionTarget {
     
@@ -1070,16 +1094,15 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait Tip extends StObject {
     
     /** Sets gap between tooltip against the target element.
       */
-    var adjust: js.UndefOr[TipAdjust] = js.native
+    var adjust: js.UndefOr[TipAdjust] = js.undefined
     
     /** Sets the Tooltip size.
       */
-    var size: js.UndefOr[TipSize] = js.native
+    var size: js.UndefOr[TipSize] = js.undefined
   }
   object Tip {
     
@@ -1106,18 +1129,17 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait TipAdjust extends StObject {
     
     /** Sets horizontal gap between Tooltip and target element.
       * @Default {0}
       */
-    var xValue: js.UndefOr[Double] = js.native
+    var xValue: js.UndefOr[Double] = js.undefined
     
     /** Sets vertical gap between Tooltip and target element.
       * @Default {0}
       */
-    var yValue: js.UndefOr[Double] = js.native
+    var yValue: js.UndefOr[Double] = js.undefined
   }
   object TipAdjust {
     
@@ -1144,18 +1166,17 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait TipSize extends StObject {
     
     /** Sets the Tooltip height.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Sets the Tooltip width.
       * @Default {20}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object TipSize {
     
@@ -1182,24 +1203,23 @@ object Tooltip {
     }
   }
   
-  @js.native
   trait TrackingEventArgs extends StObject {
     
     /** its value is set as true,if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event object
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the Tooltip model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object TrackingEventArgs {
     

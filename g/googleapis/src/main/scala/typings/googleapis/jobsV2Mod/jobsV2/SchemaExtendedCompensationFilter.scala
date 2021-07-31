@@ -2,44 +2,42 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated. Always use CompensationFilter.  Input only.  Filter on job
   * compensation type and amount.
   */
-@js.native
 trait SchemaExtendedCompensationFilter extends StObject {
   
   /**
     * Optional.  Compensation range.
     */
-  var compensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.native
+  var compensationRange: js.UndefOr[SchemaExtendedCompensationInfoCompensationRange] = js.undefined
   
   /**
     * Required.  Specify desired `base compensation entry&#39;s`
     * ExtendedCompensationInfo.CompensationUnit.
     */
-  var compensationUnits: js.UndefOr[js.Array[String]] = js.native
+  var compensationUnits: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional.  Specify currency in 3-letter [ISO
     * 4217](https://www.iso.org/iso-4217-currency-codes.html) format. If
     * unspecified, jobs are returned regardless of currency.
     */
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.  Whether to include jobs whose compensation range is
     * unspecified.
     */
-  var includeJobWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.native
+  var includeJobWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  Type of filter.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaExtendedCompensationFilter {
   

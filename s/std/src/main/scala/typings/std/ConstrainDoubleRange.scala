@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConstrainDoubleRange extends DoubleRange {
+trait ConstrainDoubleRange
+  extends StObject
+     with DoubleRange {
   
-  var exact: js.UndefOr[Double] = js.native
+  var exact: js.UndefOr[Double] = js.undefined
   
-  var ideal: js.UndefOr[Double] = js.native
+  var ideal: js.UndefOr[Double] = js.undefined
 }
 object ConstrainDoubleRange {
   

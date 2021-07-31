@@ -2,55 +2,54 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAlongLineVariableSize
-  extends CIMMarkerPlacementAlongLine
+  extends StObject
+     with CIMMarkerPlacementAlongLine
      with CIMMarkerPlacementType {
   
   /**
     * The maximum random offset.
     */
-  var maxRandomOffset: js.UndefOr[Double] = js.native
+  var maxRandomOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The largest size of the marker to be placed on the line. The value is expressed as a ratio.
     */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The smallest size of the marker to be placed on the line. The value is expressed as a ratio.
     */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of different sizes of markers to be placed on the line.
     */
-  var numberOfSizes: js.UndefOr[Double] = js.native
+  var numberOfSizes: js.UndefOr[Double] = js.undefined
   
   /**
     * The starting value for generating a random number. This random number is used by the Randomization property to determine which size a marker will receive. This is only used if the VariationMethod is set to Random.
     */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementAlongLineVariableSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize = js.native
+  var type_CIMMarkerPlacementAlongLineVariableSize: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize
   
   /**
     * The order in which the change of size in the markers should occur.
     */
   var variationMethod: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof SizeVariationMethod * / any */ String
-  ] = js.native
+  ] = js.undefined
 }
 object CIMMarkerPlacementAlongLineVariableSize {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineVariableSize): CIMMarkerPlacementAlongLineVariableSize = {
+  def apply(): CIMMarkerPlacementAlongLineVariableSize = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAlongLineVariableSize")
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineVariableSize]
   }
   

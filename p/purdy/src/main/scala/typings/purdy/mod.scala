@@ -4,22 +4,22 @@ import typings.purdy.purdyStrings.left
 import typings.purdy.purdyStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(obj: js.Object, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("purdy", JSImport.Namespace)
   @js.native
-  def apply(obj: js.Object, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("purdy", "purdy")
-  @js.native
-  def purdy(options: Options): Instance = js.native
+  @scala.inline
+  def purdy(options: Options): Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("purdy")(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
-  @JSImport("purdy", "stringify")
-  @js.native
-  def stringify(obj: js.Object, options: Options): String = js.native
+  @scala.inline
+  def stringify(obj: js.Object, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @js.native
   trait Instance extends StObject {
@@ -31,26 +31,25 @@ object mod {
     def stringify(args: js.Any*): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var align: js.UndefOr[left | right] = js.native
+    var align: js.UndefOr[left | right] = js.undefined
     
-    var arrayIndex: js.UndefOr[Boolean] = js.native
+    var arrayIndex: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Double | Null] = js.native
+    var depth: js.UndefOr[Double | Null] = js.undefined
     
-    var indent: js.UndefOr[Double] = js.native
+    var indent: js.UndefOr[Double] = js.undefined
     
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[Boolean] = js.native
+    var path: js.UndefOr[Boolean] = js.undefined
     
-    var pathPrefix: js.UndefOr[String] = js.native
+    var pathPrefix: js.UndefOr[String] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var proto: js.UndefOr[Boolean] = js.native
+    var proto: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

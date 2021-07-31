@@ -12,20 +12,20 @@ import typings.reactNativeCommunityCliTypes.iosMod.IOSProjectParams
 import typings.reactNativeCommunityCliTypes.mod.PlatformConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictname extends /* name */ StringDictionary[PlatformConfig[_, _, _, _]] {
+trait Dictname
+  extends StObject
+     with /* name */ StringDictionary[PlatformConfig[js.Any, js.Any, js.Any, js.Any]] {
   
   var android: PlatformConfig[
     AndroidProjectConfig, 
     AndroidProjectParams, 
     AndroidDependencyConfig, 
     AndroidDependencyParams
-  ] = js.native
+  ]
   
-  var ios: PlatformConfig[IOSProjectConfig, IOSProjectParams, IOSDependencyConfig, IOSDependencyParams] = js.native
+  var ios: PlatformConfig[IOSProjectConfig, IOSProjectParams, IOSDependencyConfig, IOSDependencyParams]
 }
 object Dictname {
   

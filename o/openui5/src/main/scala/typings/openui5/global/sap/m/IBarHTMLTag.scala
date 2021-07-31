@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object IBarHTMLTag extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.IBarHTMLTag with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.IBarHTMLTag & Double] = js.native
   
-  /* 0 */ val Div: typings.openui5.sap.m.IBarHTMLTag.Div with Double = js.native
+  /* 0 */ val Div: typings.openui5.sap.m.IBarHTMLTag.Div & Double = js.native
   
-  /* 1 */ val Footer: typings.openui5.sap.m.IBarHTMLTag.Footer with Double = js.native
+  /* 1 */ val Footer: typings.openui5.sap.m.IBarHTMLTag.Footer & Double = js.native
   
-  /* 2 */ val Header: typings.openui5.sap.m.IBarHTMLTag.Header with Double = js.native
+  /* 2 */ val Header: typings.openui5.sap.m.IBarHTMLTag.Header & Double = js.native
 }

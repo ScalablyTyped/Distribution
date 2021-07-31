@@ -2,21 +2,19 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCasesResponse extends StObject {
   
   /**
     * The details for the cases that match the request.
     */
-  var cases: js.UndefOr[CaseList] = js.native
+  var cases: js.UndefOr[CaseList] = js.undefined
   
   /**
     * A resumption point for pagination.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeCasesResponse {
   

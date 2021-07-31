@@ -9,57 +9,52 @@ import typings.nextAuth.anon.reqNextApiRequestsecureCo
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwtMod {
   
-  @JSImport("next-auth/jwt", "decode")
+  @JSImport("next-auth/jwt", JSImport.Namespace)
   @js.native
-  def decode(): js.Promise[js.Object] = js.native
-  @JSImport("next-auth/jwt", "decode")
-  @js.native
-  def decode(args: JWTDecodeParamstokenstrin): js.Promise[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("next-auth/jwt", "encode")
-  @js.native
-  def encode(): js.Promise[String] = js.native
-  @JSImport("next-auth/jwt", "encode")
-  @js.native
-  def encode(args: JWTEncodeParams): js.Promise[String] = js.native
+  @scala.inline
+  def decode(): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")().asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def decode(args: JWTDecodeParamstokenstrin): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
-  @JSImport("next-auth/jwt", "getToken")
-  @js.native
-  def getToken(): js.Promise[String] = js.native
-  @JSImport("next-auth/jwt", "getToken")
-  @js.native
-  def getToken(args: CookieName): js.Promise[String] = js.native
-  @JSImport("next-auth/jwt", "getToken")
-  @js.native
-  def getToken(args: reqNextApiRequestsecureCo): js.Promise[js.Object] = js.native
+  @scala.inline
+  def encode(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def encode(args: JWTEncodeParams): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def getToken(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getToken(args: CookieName): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getToken(args: reqNextApiRequestsecureCo): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToken")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  
   trait JWTDecodeParams extends StObject {
     
-    var decryptionKey: js.UndefOr[String] = js.native
+    var decryptionKey: js.UndefOr[String] = js.undefined
     
-    var decryptionOptions: js.UndefOr[DecryptOptions] = js.native
+    var decryptionOptions: js.UndefOr[DecryptOptions] = js.undefined
     
-    var encryption: js.UndefOr[Boolean] = js.native
+    var encryption: js.UndefOr[Boolean] = js.undefined
     
-    var encryptionKey: js.UndefOr[String] = js.native
+    var encryptionKey: js.UndefOr[String] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var secret: String | Buffer = js.native
+    var secret: String | Buffer
     
-    var signingKey: js.UndefOr[String] = js.native
+    var signingKey: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var verificationKey: js.UndefOr[String] = js.native
+    var verificationKey: js.UndefOr[String] = js.undefined
     
-    var verificationOptions: js.UndefOr[VerifyOptions] = js.native
+    var verificationOptions: js.UndefOr[VerifyOptions] = js.undefined
   }
   object JWTDecodeParams {
     
@@ -131,24 +126,23 @@ object jwtMod {
     }
   }
   
-  @js.native
   trait JWTEncodeParams extends StObject {
     
-    var encryption: js.UndefOr[Boolean] = js.native
+    var encryption: js.UndefOr[Boolean] = js.undefined
     
-    var encryptionKey: js.UndefOr[String] = js.native
+    var encryptionKey: js.UndefOr[String] = js.undefined
     
-    var encryptionOptions: js.UndefOr[js.Object] = js.native
+    var encryptionOptions: js.UndefOr[js.Object] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var secret: String | Buffer = js.native
+    var secret: String | Buffer
     
-    var signingKey: js.UndefOr[String] = js.native
+    var signingKey: js.UndefOr[String] = js.undefined
     
-    var signingOptions: js.UndefOr[SignOptions] = js.native
+    var signingOptions: js.UndefOr[SignOptions] = js.undefined
     
-    var token: js.UndefOr[js.Object] = js.native
+    var token: js.UndefOr[js.Object] = js.undefined
   }
   object JWTEncodeParams {
     

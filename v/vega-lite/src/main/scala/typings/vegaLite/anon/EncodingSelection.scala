@@ -4,22 +4,22 @@ import typings.vegaLite.channelMod.SingleDefUnitChannel
 import typings.vegaLite.srcSelectionMod.SelectionExtent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EncodingSelection extends SelectionExtent {
+trait EncodingSelection
+  extends StObject
+     with SelectionExtent {
   
   /**
     * The encoding channel to extract selected values for, when a selection is [projected](https://vega.github.io/vega-lite/docs/project.html)
     * over multiple fields or encodings.
     */
-  var encoding: js.UndefOr[SingleDefUnitChannel] = js.native
+  var encoding: js.UndefOr[SingleDefUnitChannel] = js.undefined
   
   /**
     * The name of a selection.
     */
-  var selection: String = js.native
+  var selection: String
 }
 object EncodingSelection {
   

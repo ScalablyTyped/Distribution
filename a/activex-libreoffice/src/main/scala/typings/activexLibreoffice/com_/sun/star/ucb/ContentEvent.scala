@@ -4,19 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A structure for content events. */
-@js.native
-trait ContentEvent extends EventObject {
+trait ContentEvent
+  extends StObject
+     with EventObject {
   
   /**
     * The action.
     *
     * The value can be one of the {@link ContentAction} constants.
     */
-  var Action: Double = js.native
+  var Action: Double
   
   /**
     * The content to that the action is related (e.g., the content that was just physically destroyed, the content that was just inserted into a folder
@@ -26,7 +26,7 @@ trait ContentEvent extends EventObject {
     *
     * {{table here, see documentation}}
     */
-  var Content: XContent = js.native
+  var Content: XContent
   
   /**
     * A content identifier, which must be filled according to the action notified (e.g., the id of the folder content into which another content was
@@ -36,7 +36,7 @@ trait ContentEvent extends EventObject {
     *
     * {{table here, see documentation}}
     */
-  var Id: XContentIdentifier = js.native
+  var Id: XContentIdentifier
 }
 object ContentEvent {
   

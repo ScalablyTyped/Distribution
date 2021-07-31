@@ -103,7 +103,6 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navbarItemMod {
@@ -111,17 +110,17 @@ object navbarItemMod {
   /* Inlined {None <TAsComponent extends react.react.ElementType<any> = react.react.ElementType<any>>(props : {  as :TAsComponent | undefined} & std.Pick<rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainerProps, 'active' | 'hidden' | 'up' | 'overlay' | 'expanded' | 'italic' | 'relative' | 'tab' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'hoverable' | 'managed' | 'dropdown' | 'onClick'> & std.Pick<react.react.ComponentProps<TAsComponent>, std.Exclude<keyof react.react.ComponentProps<TAsComponent>, 'active' | 'hidden' | 'up' | 'overlay' | 'expanded' | 'italic' | 'relative' | 'tab' | 'tooltip' | 'as' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'hoverable' | 'managed' | 'dropdown' | 'onClick'>> & react.react.RefAttributes<TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent>): react.react.<global>.JSX.Element | null,   defaultProps :{  as :react.react.ElementType<any>} & std.Partial<std.Pick<rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainerProps, 'active' | 'hidden' | 'up' | 'overlay' | 'expanded' | 'italic' | 'relative' | 'tab' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'hoverable' | 'managed' | 'dropdown' | 'onClick'> & std.Pick<any, string | number | symbol>>,   displayName :string,   propTypes :react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}>,   Container :{  displayName :string, new (props : rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainerProps): rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainer}} & std.Pick<react.react.ForwardRefExoticComponent<react.react.ElementType<any>>, 'displayName' | '$$typeof'> */
   object NavbarItem {
     
-    @JSImport("rbx/components/navbar/navbar-item", "NavbarItem")
-    @js.native
-    def apply[TAsComponent /* <: ElementType[_] */](
-      props: `6`[TAsComponent] with PickNavbarItemContainerPrActive with (Pick[
+    @scala.inline
+    def apply[TAsComponent /* <: ElementType[js.Any] */](
+      props: `6`[TAsComponent] & PickNavbarItemContainerPrActive & (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
             active | hidden | up | overlay | expanded | italic | relative | tab | tooltip | as | className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly | hoverable | managed | dropdown | onClick
           ]
-        ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
-    ): Element | Null = js.native
+        ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
+    ): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    
     @JSImport("rbx/components/navbar/navbar-item", "NavbarItem")
     @js.native
     val ^ : js.Any = js.native
@@ -140,10 +139,10 @@ object navbarItemMod {
     
     @JSImport("rbx/components/navbar/navbar-item", "NavbarItem.defaultProps")
     @js.native
-    def defaultProps: AsElementType with (Partial[PickNavbarItemContainerPrActive with (Pick[_, String | Double | js.Symbol])]) = js.native
+    def defaultProps: AsElementType & (Partial[PickNavbarItemContainerPrActive & (Pick[js.Any, String | Double | js.Symbol])]) = js.native
     @scala.inline
     def defaultProps_=(
-      x: AsElementType with (Partial[PickNavbarItemContainerPrActive with (Pick[_, String | Double | js.Symbol])])
+      x: AsElementType & (Partial[PickNavbarItemContainerPrActive & (Pick[js.Any, String | Double | js.Symbol])])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
     @JSImport("rbx/components/navbar/navbar-item", "NavbarItem.displayName")
@@ -164,98 +163,97 @@ object navbarItemMod {
   }
   
   /* Inlined std.Omit<rbx.rbx/components/navbar/navbar-item-container.NavbarItemContainerProps, 'as' | 'innerRef'> */
-  @js.native
   trait NavbarItemProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
-    var dropdown: js.UndefOr[Boolean] = js.native
+    var dropdown: js.UndefOr[Boolean] = js.undefined
     
-    var expanded: js.UndefOr[Boolean] = js.native
+    var expanded: js.UndefOr[Boolean] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var hoverable: js.UndefOr[Boolean] = js.native
+    var hoverable: js.UndefOr[Boolean] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var managed: js.UndefOr[Boolean] = js.native
+    var managed: js.UndefOr[Boolean] = js.undefined
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[typings.std.Element]] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
     
-    var tab: js.UndefOr[Boolean] = js.native
+    var tab: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | typings.rbx.rbxNumbers.`6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
     
-    var tooltip: js.UndefOr[Double | String] = js.native
+    var tooltip: js.UndefOr[Double | String] = js.undefined
     
-    var tooltipActive: js.UndefOr[Boolean] = js.native
+    var tooltipActive: js.UndefOr[Boolean] = js.undefined
     
     var tooltipColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var tooltipMultiline: js.UndefOr[Boolean] = js.native
+    var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
     
-    var up: js.UndefOr[Boolean] = js.native
+    var up: js.UndefOr[Boolean] = js.undefined
   }
   object NavbarItemProps {
     

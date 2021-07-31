@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioChannelTaggingSettings extends StObject {
   
   /**
     * You can add a tag for this mono-channel audio track to mimic its placement in a multi-channel layout.  For example, if this track is the left surround channel, choose Left surround (LS).
     */
-  var ChannelTag: js.UndefOr[AudioChannelTag] = js.native
+  var ChannelTag: js.UndefOr[AudioChannelTag] = js.undefined
 }
 object AudioChannelTaggingSettings {
   

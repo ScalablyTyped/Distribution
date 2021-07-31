@@ -11,8 +11,8 @@ Screenshots with JavaScript
 | Full name          | html2canvas |
 | Keywords           | - |
 | # releases         | 9 |
-| # dependents       | 613 |
-| # downloads        | 15297126 |
+| # dependents       | 750 |
+| # downloads        | 21087915 |
 | # stars            | 17 |
 
 ## Links

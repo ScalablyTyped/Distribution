@@ -11,8 +11,8 @@ A lightweight Promise-returning helper for loading the Google Maps JavaScript AP
 | Full name          | load-google-maps-api |
 | Keywords           | api, google, google-maps, google-maps-api, loader, maps, promise |
 | # releases         | 5 |
-| # dependents       | 18 |
-| # downloads        | 1135392 |
+| # dependents       | 21 |
+| # downloads        | 1148289 |
 | # stars            | 1 |
 
 ## Links

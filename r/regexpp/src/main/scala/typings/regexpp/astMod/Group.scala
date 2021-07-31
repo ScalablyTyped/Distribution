@@ -2,22 +2,21 @@ package typings.regexpp.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group
-  extends BranchNode
+  extends StObject
      with NodeBase
+     with BranchNode
      with QuantifiableElement {
   
-  var alternatives: js.Array[Alternative] = js.native
+  var alternatives: js.Array[Alternative]
   
   @JSName("parent")
-  var parent_Group: Alternative | Quantifier = js.native
+  var parent_Group: Alternative | Quantifier
   
   @JSName("type")
-  var type_Group: typings.regexpp.regexppStrings.Group = js.native
+  var type_Group: typings.regexpp.regexppStrings.Group
 }
 object Group {
   
@@ -27,11 +26,10 @@ object Group {
     end: Double,
     parent: Alternative | Quantifier,
     raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.Group
+    start: Double
   ): Group = {
     val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Group")
     __obj.asInstanceOf[Group]
   }
   

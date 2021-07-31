@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemableDecorationInstanceRenderOptions extends StObject {
   
   /**
     * Defines the rendering options of the attachment that is inserted after the decorated text.
     */
-  var after: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.native
+  var after: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
   
   /**
     * Defines the rendering options of the attachment that is inserted before the decorated text.
     */
-  var before: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.native
+  var before: js.UndefOr[ThemableDecorationAttachmentRenderOptions] = js.undefined
 }
 object ThemableDecorationInstanceRenderOptions {
   

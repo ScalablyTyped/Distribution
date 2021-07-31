@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassifyTextRequest extends StObject {
   
   /** Required. Input document. */
-  var document: js.UndefOr[Document] = js.native
+  var document: js.UndefOr[Document] = js.undefined
 }
 object ClassifyTextRequest {
   

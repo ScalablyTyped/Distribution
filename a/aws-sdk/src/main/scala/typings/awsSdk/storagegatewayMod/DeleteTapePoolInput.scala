@@ -2,16 +2,14 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTapePoolInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom tape pool to delete.
     */
-  var PoolARN: typings.awsSdk.storagegatewayMod.PoolARN = js.native
+  var PoolARN: typings.awsSdk.storagegatewayMod.PoolARN
 }
 object DeleteTapePoolInput {
   

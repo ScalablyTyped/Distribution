@@ -2,25 +2,23 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Zone&#39;s boundaries.
   */
-@js.native
 trait SchemaZoneBoundary extends StObject {
   
   /**
     * The conditions that, when conjoined, make up the boundary.
     */
-  var condition: js.UndefOr[js.Array[SchemaCondition]] = js.native
+  var condition: js.UndefOr[js.Array[SchemaCondition]] = js.undefined
   
   /**
     * Custom evaluation trigger IDs. A zone will evaluate its boundary
     * conditions when any of the listed triggers are true.
     */
-  var customEvaluationTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var customEvaluationTriggerId: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaZoneBoundary {
   

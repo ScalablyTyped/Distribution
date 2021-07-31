@@ -13,46 +13,43 @@ import typings.linkifyjs.linkifyjsStrings.https
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("linkifyjs", "find")
+  @JSImport("linkifyjs", JSImport.Namespace)
   @js.native
-  def find(str: String): js.Array[FindResultHash] = js.native
-  @JSImport("linkifyjs", "find")
-  @js.native
-  def find(str: String, `type`: LinkEntityType): js.Array[FindResultHash] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("linkifyjs", "test")
-  @js.native
-  def test(str: String): Boolean = js.native
-  @JSImport("linkifyjs", "test")
-  @js.native
-  def test(str: String, `type`: LinkEntityType): Boolean = js.native
+  @scala.inline
+  def find(str: String): js.Array[FindResultHash] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[FindResultHash]]
+  @scala.inline
+  def find(str: String, `type`: LinkEntityType): js.Array[FindResultHash] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Array[FindResultHash]]
   
-  @JSImport("linkifyjs", "tokenize")
-  @js.native
-  def tokenize(str: String): js.Array[VArray] = js.native
+  @scala.inline
+  def test(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def test(str: String, `type`: LinkEntityType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(str.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def tokenize(str: String): js.Array[VArray] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[VArray]]
+  
   trait FindResultHash extends StObject {
     
     /**
       * Should be the value of this links `href` attribute.
       */
-    var href: String = js.native
+    var href: String
     
     /**
       * The type of entity found.
       */
-    var `type`: LinkEntityType = js.native
+    var `type`: LinkEntityType
     
     /**
       * The original entity substring.
       */
-    var value: String = js.native
+    var value: String
   }
   object FindResultHash {
     
@@ -99,7 +96,6 @@ object mod {
     def url: typings.linkifyjs.linkifyjsStrings.url = "url".asInstanceOf[typings.linkifyjs.linkifyjsStrings.url]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -113,7 +109,7 @@ object mod {
       */
     var attributes: js.UndefOr[
         (Record[String, String]) | (js.Function2[/* href */ String, /* type */ LinkEntityType, Record[String, String]]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * class attribute to use for newly created links.
@@ -126,7 +122,7 @@ object mod {
       */
     var className: js.UndefOr[
         String | PartialRecordLinkEntityTy | (js.Function2[/* href */ String, /* type */ LinkEntityType, String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Protocol that should be used in href attributes for URLs without a
@@ -134,7 +130,7 @@ object mod {
       *
       * @default 'http'
       */
-    var defaultProtocol: js.UndefOr[http | https | ftp | ftps | String] = js.native
+    var defaultProtocol: js.UndefOr[http | https | ftp | ftps | String] = js.undefined
     
     /**
       * Format the text displayed by a linkified entity. e.g., truncate a long URL.
@@ -146,7 +142,7 @@ object mod {
       */
     var format: js.UndefOr[
         (js.Function2[/* value */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Similar to format, except the result of this function will be used as the
@@ -162,14 +158,14 @@ object mod {
       */
     var formatHref: js.UndefOr[
         (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyEmail | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If `true`, \n line breaks will automatically be converted to `<br>` tags.
       *
       * @default false
       */
-    var nl2br: js.UndefOr[Boolean] = js.native
+    var nl2br: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The tag name to use for each link.
@@ -185,7 +181,7 @@ object mod {
       */
     var tagName: js.UndefOr[
         String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyHashtag
-      ] = js.native
+      ] = js.undefined
     
     /**
       * target attribute for generated link.
@@ -200,7 +196,7 @@ object mod {
       */
     var target: js.UndefOr[
         String | (js.Function2[/* href */ String, /* type */ LinkEntityType, String]) | PartialRecordLinkEntityTyMention
-      ] = js.native
+      ] = js.undefined
     
     /**
       * validate
@@ -221,7 +217,7 @@ object mod {
       */
     var validate: js.UndefOr[
         Boolean | (js.Function2[/* href */ String, /* type */ LinkEntityType, Boolean]) | PartialRecordLinkEntityTyUrl | Null
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

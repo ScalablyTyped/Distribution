@@ -2,31 +2,29 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateComplianceByConfigRule extends StObject {
   
   /**
     * The 12-digit account ID of the source account.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.configserviceMod.AccountId] = js.undefined
   
   /**
     * The source region from where the data is aggregated.
     */
-  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.native
+  var AwsRegion: js.UndefOr[typings.awsSdk.configserviceMod.AwsRegion] = js.undefined
   
   /**
     * Indicates whether an AWS resource or AWS Config rule is compliant and provides the number of contributors that affect the compliance.
     */
-  var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.native
+  var Compliance: js.UndefOr[typings.awsSdk.configserviceMod.Compliance] = js.undefined
   
   /**
     * The name of the AWS Config rule.
     */
-  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.native
+  var ConfigRuleName: js.UndefOr[typings.awsSdk.configserviceMod.ConfigRuleName] = js.undefined
 }
 object AggregateComplianceByConfigRule {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalConsumerMod {
@@ -30,12 +29,11 @@ object portalConsumerMod {
     def componentWillUnmount_MPortalConsumer(): Unit = js.native
   }
   
-  @js.native
   trait PortalConsumerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var manager: PortalMethods = js.native
+    var manager: PortalMethods
   }
   object PortalConsumerProps {
     

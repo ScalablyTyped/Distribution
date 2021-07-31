@@ -2,10 +2,10 @@ package typings.webix.global.webix.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("webix.ui.spacer")
 @js.native
 class spacer ()
-  extends typings.webix.webix.ui.spacer
+  extends StObject
+     with typings.webix.webix.ui.spacer

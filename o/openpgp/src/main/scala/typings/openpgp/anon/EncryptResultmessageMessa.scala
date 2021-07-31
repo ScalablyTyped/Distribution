@@ -2,16 +2,14 @@ package typings.openpgp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.EncryptResult & {  message :openpgp.openpgp.message.Message} */
-@js.native
 trait EncryptResultmessageMessa extends StObject {
   
-  var message: typings.openpgp.mod.message.Message = js.native
+  var message: typings.openpgp.mod.message.Message
   
-  var sessionKey: AeadAlgorithm = js.native
+  var sessionKey: AeadAlgorithm
 }
 object EncryptResultmessageMessa {
   

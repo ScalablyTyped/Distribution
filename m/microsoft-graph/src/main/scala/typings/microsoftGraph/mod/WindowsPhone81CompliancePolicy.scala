@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsPhone81CompliancePolicy extends DeviceCompliancePolicy {
+trait WindowsPhone81CompliancePolicy
+  extends StObject
+     with DeviceCompliancePolicy {
   
   // Maximum Windows Phone version.
-  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMaximumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Minimum Windows Phone version.
-  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osMinimumVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether or not to block syncing the calendar.
-  var passwordBlockSimple: js.UndefOr[Boolean] = js.native
+  var passwordBlockSimple: js.UndefOr[Boolean] = js.undefined
   
   // Number of days before the password expires.
-  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordExpirationDays: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of character sets required in the password.
-  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumCharacterSetCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minimum length of passwords.
-  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinimumLength: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Minutes of inactivity before a password is required.
-  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordMinutesOfInactivityBeforeLock: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Number of previous passwords to block. Valid values 0 to 24
-  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.native
+  var passwordPreviousPasswordBlockCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Whether or not to require a password.
-  var passwordRequired: js.UndefOr[Boolean] = js.native
+  var passwordRequired: js.UndefOr[Boolean] = js.undefined
   
   // The required password type. Possible values are: deviceDefault, alphanumeric, numeric.
-  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.native
+  var passwordRequiredType: js.UndefOr[RequiredPasswordType] = js.undefined
   
   // Require encryption on windows phone devices.
-  var storageRequireEncryption: js.UndefOr[Boolean] = js.native
+  var storageRequireEncryption: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsPhone81CompliancePolicy {
   

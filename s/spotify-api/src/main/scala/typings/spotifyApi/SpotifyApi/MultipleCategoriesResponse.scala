@@ -2,7 +2,6 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * GET /v1/browse/categories
   * https://developer.spotify.com/web-api/get-list-categories/
   */
-@js.native
 trait MultipleCategoriesResponse extends StObject {
   
-  var categories: PagingObject[CategoryObject] = js.native
+  var categories: PagingObject[CategoryObject]
 }
 object MultipleCategoriesResponse {
   

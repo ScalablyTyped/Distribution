@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservedInstancesListingsRequest extends StObject {
   
   /**
     * One or more filters.    reserved-instances-id - The ID of the Reserved Instances.    reserved-instances-listing-id - The ID of the Reserved Instances listing.    status - The status of the Reserved Instance listing (pending | active | cancelled | closed).    status-message - The reason for the status.  
     */
-  var Filters: js.UndefOr[FilterList] = js.native
+  var Filters: js.UndefOr[FilterList] = js.undefined
   
   /**
     * One or more Reserved Instance IDs.
     */
-  var ReservedInstancesId: js.UndefOr[ReservationId] = js.native
+  var ReservedInstancesId: js.UndefOr[ReservationId] = js.undefined
   
   /**
     * One or more Reserved Instance listing IDs.
     */
-  var ReservedInstancesListingId: js.UndefOr[typings.awsSdk.ec2Mod.ReservedInstancesListingId] = js.native
+  var ReservedInstancesListingId: js.UndefOr[typings.awsSdk.ec2Mod.ReservedInstancesListingId] = js.undefined
 }
 object DescribeReservedInstancesListingsRequest {
   

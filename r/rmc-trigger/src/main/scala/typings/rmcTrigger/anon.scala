@@ -3,35 +3,33 @@ package typings.rmcTrigger
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterPopupVisibleChange extends StObject {
     
-    var afterPopupVisibleChange: js.Function0[Unit] = js.native
+    var afterPopupVisibleChange: js.Function0[Unit]
     
-    var defaultPopupVisible: Boolean = js.native
+    var defaultPopupVisible: Boolean
     
-    var destroyPopupOnHide: Boolean = js.native
+    var destroyPopupOnHide: Boolean
     
-    var getDocument: js.Function0[Document] = js.native
+    var getDocument: js.Function0[Document]
     
-    var getPopupClassNameFromAlign: js.Function0[String] = js.native
+    var getPopupClassNameFromAlign: js.Function0[String]
     
-    var mask: Boolean = js.native
+    var mask: Boolean
     
-    var maskClosable: Boolean = js.native
+    var maskClosable: Boolean
     
-    var onPopupAlign: js.Function0[Unit] = js.native
+    var onPopupAlign: js.Function0[Unit]
     
-    var onPopupVisibleChange: js.Function0[Unit] = js.native
+    var onPopupVisibleChange: js.Function0[Unit]
     
-    var popupClassName: String = js.native
+    var popupClassName: String
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object AfterPopupVisibleChange {
     

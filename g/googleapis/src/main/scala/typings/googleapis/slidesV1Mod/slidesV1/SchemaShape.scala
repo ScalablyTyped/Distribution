@@ -2,14 +2,12 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A PageElement kind representing a generic shape that does not have a more
   * specific classification.
   */
-@js.native
 trait SchemaShape extends StObject {
   
   /**
@@ -18,22 +16,22 @@ trait SchemaShape extends StObject {
     * inherited properties can be resolved by looking at the parent placeholder
     * identified by the Placeholder.parent_object_id field.
     */
-  var placeholder: js.UndefOr[SchemaPlaceholder] = js.native
+  var placeholder: js.UndefOr[SchemaPlaceholder] = js.undefined
   
   /**
     * The properties of the shape.
     */
-  var shapeProperties: js.UndefOr[SchemaShapeProperties] = js.native
+  var shapeProperties: js.UndefOr[SchemaShapeProperties] = js.undefined
   
   /**
     * The type of the shape.
     */
-  var shapeType: js.UndefOr[String] = js.native
+  var shapeType: js.UndefOr[String] = js.undefined
   
   /**
     * The text content of the shape.
     */
-  var text: js.UndefOr[SchemaTextContent] = js.native
+  var text: js.UndefOr[SchemaTextContent] = js.undefined
 }
 object SchemaShape {
   

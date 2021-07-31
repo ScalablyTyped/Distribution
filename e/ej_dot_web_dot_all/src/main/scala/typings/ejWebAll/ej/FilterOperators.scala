@@ -2,7 +2,6 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait FilterOperators extends StObject
 object FilterOperators extends StObject {
   
   @js.native
-  sealed trait contains extends FilterOperators
+  sealed trait contains
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait endsWith extends FilterOperators
+  sealed trait endsWith
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait equal extends FilterOperators
+  sealed trait equal
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait greaterThan extends FilterOperators
+  sealed trait greaterThan
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait greaterThanOrEqual extends FilterOperators
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait lessThan extends FilterOperators
+  sealed trait lessThan
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait lessThanOrEqual extends FilterOperators
+  sealed trait lessThanOrEqual
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait notEqual extends FilterOperators
+  sealed trait notEqual
+    extends StObject
+       with FilterOperators
   
   @js.native
-  sealed trait startsWith extends FilterOperators
+  sealed trait startsWith
+    extends StObject
+       with FilterOperators
 }

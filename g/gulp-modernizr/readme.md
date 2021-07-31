@@ -10,9 +10,9 @@ Gulp wrapper for custom Modernizr builds
 | ------------------ | :-------------: |
 | Full name          | gulp-modernizr |
 | Keywords           | gulpplugin, gulp, modernizr, customizr |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 21 |
-| # downloads        | 271904 |
+| # downloads        | 259501 |
 | # stars            | 19 |
 
 ## Links

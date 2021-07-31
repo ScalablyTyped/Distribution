@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApplicationOutput extends StObject {
   
   /**
     * Information about the application.
     */
-  var application: js.UndefOr[ApplicationInfo] = js.native
+  var application: js.UndefOr[ApplicationInfo] = js.undefined
 }
 object GetApplicationOutput {
   

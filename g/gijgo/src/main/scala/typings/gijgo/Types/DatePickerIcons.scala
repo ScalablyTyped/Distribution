@@ -2,14 +2,12 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // DatePicker
-@js.native
 trait DatePickerIcons extends StObject {
   
-  var rightIcon: js.UndefOr[String] = js.native
+  var rightIcon: js.UndefOr[String] = js.undefined
 }
 object DatePickerIcons {
   

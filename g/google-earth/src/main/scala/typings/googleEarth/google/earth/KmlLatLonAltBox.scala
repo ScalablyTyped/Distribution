@@ -2,11 +2,11 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLatLonAltBox extends KmlLatLonBox {
+trait KmlLatLonAltBox
+  extends StObject
+     with KmlLatLonBox {
   
   /**
     * Specifies how the altitude property is interpreted.
@@ -19,17 +19,17 @@ trait KmlLatLonAltBox extends KmlLatLonBox {
     * * GEPlugin.ALTITUDE_CLAMP_TO_SEA_FLOOR
     * * GEPlugin.ALTITUDE_RELATIVE_TO_SEA_FLOOR
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   
   /**
     * Maximim altitude, specified in meters above sea level.
     */
-  def getMaxAltitude(): Double = js.native
+  def getMaxAltitude(): Double
   
   /**
     * Minimum altitude, specified in meters above sea level.
     */
-  def getMinAltitude(): Double = js.native
+  def getMinAltitude(): Double
   
   /**
     * Sets the north, south, east, west, rotation, minAltitude, maxAltitude, and altitudeMode of bounding box.
@@ -43,7 +43,7 @@ trait KmlLatLonAltBox extends KmlLatLonBox {
     minAltitude: Double,
     maxAltitude: Double,
     altitudeMode: KmlAltitudeModeEnum
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Specifies how the altitude property is interpreted.
@@ -56,17 +56,17 @@ trait KmlLatLonAltBox extends KmlLatLonBox {
     * * GEPlugin.ALTITUDE_CLAMP_TO_SEA_FLOOR
     * * GEPlugin.ALTITUDE_RELATIVE_TO_SEA_FLOOR
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Double = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Double
   
   /**
     * Maximim altitude, specified in meters above sea level.
     */
-  def setMaxAltitude(maxAltitude: Double): Unit = js.native
+  def setMaxAltitude(maxAltitude: Double): Unit
   
   /**
     * Minimum altitude, specified in meters above sea level.
     */
-  def setMinAltitude(minAltitude: Double): Unit = js.native
+  def setMinAltitude(minAltitude: Double): Unit
 }
 object KmlLatLonAltBox {
   

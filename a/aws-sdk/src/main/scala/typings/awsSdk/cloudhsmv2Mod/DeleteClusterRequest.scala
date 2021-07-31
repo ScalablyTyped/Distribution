@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterRequest extends StObject {
   
   /**
     * The identifier (ID) of the cluster that you are deleting. To find the cluster ID, use DescribeClusters.
     */
-  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId = js.native
+  var ClusterId: typings.awsSdk.cloudhsmv2Mod.ClusterId
 }
 object DeleteClusterRequest {
   

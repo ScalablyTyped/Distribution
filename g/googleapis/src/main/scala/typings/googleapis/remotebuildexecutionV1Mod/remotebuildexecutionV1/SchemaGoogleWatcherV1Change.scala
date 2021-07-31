@@ -3,34 +3,32 @@ package typings.googleapis.remotebuildexecutionV1Mod.remotebuildexecutionV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Change indicates the most recent state of an element.
   */
-@js.native
 trait SchemaGoogleWatcherV1Change extends StObject {
   
   /**
     * If true, this Change is followed by more Changes that are in the same
     * group as this Change.
     */
-  var continued: js.UndefOr[Boolean] = js.native
+  var continued: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The actual change data. This field is present only when `state() ==
     * EXISTS` or `state() == ERROR`. Please see google.protobuf.Any about how
     * to use the Any type.
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Name of the element, interpreted relative to the entity&#39;s actual
     * name. &quot;&quot; refers to the entity itself. The element name is a
     * valid UTF-8 string.
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * If present, provides a compact representation of all the messages that
@@ -39,12 +37,12 @@ trait SchemaGoogleWatcherV1Change extends StObject {
     * can be provided in the Request message, allowing the caller to resume the
     * stream watching at a specific point without fetching the initial state.
     */
-  var resumeMarker: js.UndefOr[String] = js.native
+  var resumeMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the `element`.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleWatcherV1Change {
   

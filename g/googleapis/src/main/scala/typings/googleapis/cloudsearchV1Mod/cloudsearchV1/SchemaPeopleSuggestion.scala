@@ -2,19 +2,17 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A people suggestion.
   */
-@js.native
 trait SchemaPeopleSuggestion extends StObject {
   
   /**
     * Suggested person. All fields of the person object might not be populated.
     */
-  var person: js.UndefOr[SchemaPerson] = js.native
+  var person: js.UndefOr[SchemaPerson] = js.undefined
 }
 object SchemaPeopleSuggestion {
   

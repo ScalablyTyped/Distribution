@@ -5,59 +5,57 @@ import typings.googleVisualization.googleVisualizationStrings.sameRow
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationChartOptions extends StObject {
   
-  var allValuesSuffix: js.UndefOr[String] = js.native
+  var allValuesSuffix: js.UndefOr[String] = js.undefined
   
-  var allowHtml: js.UndefOr[Boolean] = js.native
+  var allowHtml: js.UndefOr[Boolean] = js.undefined
   
-  var annotationsWidth: js.UndefOr[Double] = js.native
+  var annotationsWidth: js.UndefOr[Double] = js.undefined
   
-  var colors: js.UndefOr[js.Array[String]] = js.native
+  var colors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
-  var displayAnnotations: js.UndefOr[Boolean] = js.native
+  var displayAnnotations: js.UndefOr[Boolean] = js.undefined
   
-  var displayAnnotationsFilter: js.UndefOr[Boolean] = js.native
+  var displayAnnotationsFilter: js.UndefOr[Boolean] = js.undefined
   
-  var displayDateBarSeparator: js.UndefOr[Boolean] = js.native
+  var displayDateBarSeparator: js.UndefOr[Boolean] = js.undefined
   
-  var displayExactValues: js.UndefOr[Boolean] = js.native
+  var displayExactValues: js.UndefOr[Boolean] = js.undefined
   
-  var displayLegendDots: js.UndefOr[Boolean] = js.native
+  var displayLegendDots: js.UndefOr[Boolean] = js.undefined
   
-  var displayLegendValues: js.UndefOr[Boolean] = js.native
+  var displayLegendValues: js.UndefOr[Boolean] = js.undefined
   
-  var displayRangeSelector: js.UndefOr[Boolean] = js.native
+  var displayRangeSelector: js.UndefOr[Boolean] = js.undefined
   
-  var displayZoomButtons: js.UndefOr[Boolean] = js.native
+  var displayZoomButtons: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[Double] = js.native
+  var fill: js.UndefOr[Double] = js.undefined
   
-  var legendPosition: js.UndefOr[sameRow | newRow] = js.native
+  var legendPosition: js.UndefOr[sameRow | newRow] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var numberFormats: js.UndefOr[js.Any] = js.native
+  var numberFormats: js.UndefOr[js.Any] = js.undefined
   
-  var scaleColumns: js.UndefOr[js.Array[Double]] = js.native
+  var scaleColumns: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var scaleFormat: js.UndefOr[String] = js.native
+  var scaleFormat: js.UndefOr[String] = js.undefined
   
-  var scaleType: js.UndefOr[String] = js.native
+  var scaleType: js.UndefOr[String] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var zoomEndTime: js.UndefOr[Date] = js.native
+  var zoomEndTime: js.UndefOr[Date] = js.undefined
   
-  var zoomStartTime: js.UndefOr[Date] = js.native
+  var zoomStartTime: js.UndefOr[Date] = js.undefined
 }
 object AnnotationChartOptions {
   

@@ -5,7 +5,6 @@ import typings.xdomain.xdomainStrings.timeout
 import typings.xdomain.xdomainStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,11 +36,11 @@ trait IXDomain extends StObject {
     * @param handler
     */
   @JSName("on")
-  def on_log(event: log, handler: js.Function1[/* message */ js.UndefOr[String], _]): Unit = js.native
+  def on_log(event: log, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
   @JSName("on")
-  def on_timeout(event: timeout, handler: js.Function1[/* message */ js.UndefOr[String], _]): Unit = js.native
+  def on_timeout(event: timeout, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
   @JSName("on")
-  def on_warn(event: warn, handler: js.Function1[/* message */ js.UndefOr[String], _]): Unit = js.native
+  def on_warn(event: warn, handler: js.Function1[/* message */ js.UndefOr[String], js.Any]): Unit = js.native
   
   var origin: String = js.native
   

@@ -2,21 +2,19 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListConnectionsOutput extends StObject {
   
   /**
     * A list of connections and the details for each connection, such as status, owner, and provider type.
     */
-  var Connections: js.UndefOr[ConnectionList] = js.native
+  var Connections: js.UndefOr[ConnectionList] = js.undefined
   
   /**
     * A token that can be used in the next ListConnections call. To view all items in the list, continue to call this operation with each subsequent token until no more nextToken values are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codestarconnectionsMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codestarconnectionsMod.NextToken] = js.undefined
 }
 object ListConnectionsOutput {
   

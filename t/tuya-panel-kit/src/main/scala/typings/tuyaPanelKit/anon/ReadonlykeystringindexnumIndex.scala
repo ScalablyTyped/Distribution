@@ -3,26 +3,24 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  key :string,   index :number,   routeNames :std.Array<string>,   history :std.Array<unknown> | undefined,   routes :std.Array<std.Readonly<{  key :string,   name :string}> & std.Readonly<{  params :object | undefined}> & any>,   type :string,   stale :false}> */
-@js.native
 trait ReadonlykeystringindexnumIndex extends StObject {
   
-  val history: js.UndefOr[js.Array[_]] = js.native
+  val history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  val index: Double = js.native
+  val index: Double
   
-  val key: String = js.native
+  val key: String
   
-  val routeNames: js.Array[String] = js.native
+  val routeNames: js.Array[String]
   
-  val routes: js.Array[KeyName with `0` with js.Any] = js.native
+  val routes: js.Array[KeyName & `0` & js.Any]
   
-  val stale: `false` = js.native
+  val stale: `false`
   
-  val `type`: String = js.native
+  val `type`: String
 }
 object ReadonlykeystringindexnumIndex {
   
@@ -31,11 +29,10 @@ object ReadonlykeystringindexnumIndex {
     index: Double,
     key: String,
     routeNames: js.Array[String],
-    routes: js.Array[KeyName with `0` with js.Any],
-    stale: `false`,
+    routes: js.Array[KeyName & `0` & js.Any],
     `type`: String
   ): ReadonlykeystringindexnumIndex = {
-    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = stale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], routeNames = routeNames.asInstanceOf[js.Any], routes = routes.asInstanceOf[js.Any], stale = false)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReadonlykeystringindexnumIndex]
   }
@@ -44,7 +41,7 @@ object ReadonlykeystringindexnumIndex {
   implicit class ReadonlykeystringindexnumIndexMutableBuilder[Self <: ReadonlykeystringindexnumIndex] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)
@@ -65,10 +62,10 @@ object ReadonlykeystringindexnumIndex {
     def setRouteNamesVarargs(value: String*): Self = StObject.set(x, "routeNames", js.Array(value :_*))
     
     @scala.inline
-    def setRoutes(value: js.Array[KeyName with `0` with js.Any]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
+    def setRoutes(value: js.Array[KeyName & `0` & js.Any]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRoutesVarargs(value: (KeyName with `0` with js.Any)*): Self = StObject.set(x, "routes", js.Array(value :_*))
+    def setRoutesVarargs(value: (KeyName & `0` & js.Any)*): Self = StObject.set(x, "routes", js.Array(value :_*))
     
     @scala.inline
     def setStale(value: `false`): Self = StObject.set(x, "stale", value.asInstanceOf[js.Any])

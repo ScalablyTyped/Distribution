@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTablesResponse extends StObject {
   
   /** Set if not all tables could be returned in a single response. Pass this value to `page_token` in another request to get the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The tables present in the requested instance. */
-  var tables: js.UndefOr[js.Array[Table]] = js.native
+  var tables: js.UndefOr[js.Array[Table]] = js.undefined
 }
 object ListTablesResponse {
   

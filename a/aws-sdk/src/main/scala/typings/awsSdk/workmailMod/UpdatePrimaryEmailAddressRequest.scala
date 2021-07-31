@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePrimaryEmailAddressRequest extends StObject {
   
   /**
     * The value of the email to be updated as primary.
     */
-  var Email: EmailAddress = js.native
+  var Email: EmailAddress
   
   /**
     * The user, group, or resource to update.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The organization that contains the user, group, or resource to update.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object UpdatePrimaryEmailAddressRequest {
   

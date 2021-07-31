@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistryCredential extends StObject {
   
   /** A public key certificate used to verify the device credentials. */
-  var publicKeyCertificate: js.UndefOr[PublicKeyCertificate] = js.native
+  var publicKeyCertificate: js.UndefOr[PublicKeyCertificate] = js.undefined
 }
 object RegistryCredential {
   

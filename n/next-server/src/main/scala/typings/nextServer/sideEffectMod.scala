@@ -4,23 +4,24 @@ import typings.nextServer.anon.Instantiable
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sideEffectMod {
   
-  @JSImport("next-server/dist/lib/side-effect", JSImport.Default)
+  @JSImport("next-server/dist/lib/side-effect", JSImport.Namespace)
   @js.native
-  def default(): Instantiable = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Instantiable]
+  
   trait SideEffectProps extends StObject {
     
-    var handleStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.native
+    var handleStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.undefined
     
-    var inAmpMode: js.UndefOr[Boolean] = js.native
+    var inAmpMode: js.UndefOr[Boolean] = js.undefined
     
-    def reduceComponentsToState[T](components: js.Array[ReactElement], props: T): State = js.native
+    def reduceComponentsToState[T](components: js.Array[ReactElement], props: T): State
   }
   object SideEffectProps {
     

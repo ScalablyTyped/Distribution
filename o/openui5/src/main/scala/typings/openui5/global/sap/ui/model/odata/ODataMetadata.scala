@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.model.odata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.ODataMetadata")
 @js.native
 class ODataMetadata protected ()
-  extends typings.openui5.sap.ui.model.odata.ODataMetadata {
+  extends StObject
+     with typings.openui5.sap.ui.model.odata.ODataMetadata {
   /**
     * Constructor for a new ODataMetadata.
     * @param sMetadataURI needs the correct metadata uri including $metadata

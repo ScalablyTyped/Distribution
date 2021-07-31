@@ -4,28 +4,28 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.joinaggregate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JoinAggregateTransform extends _Transforms {
+trait JoinAggregateTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef | Null]) | SignalRef] = js.undefined
   
-  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.native
+  var fields: js.UndefOr[(js.Array[FieldRef | Null]) | SignalRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var ops: js.UndefOr[(js.Array[AggregateOp | SignalRef]) | SignalRef] = js.native
+  var ops: js.UndefOr[(js.Array[AggregateOp | SignalRef]) | SignalRef] = js.undefined
   
-  var `type`: joinaggregate = js.native
+  var `type`: joinaggregate
 }
 object JoinAggregateTransform {
   
   @scala.inline
-  def apply(`type`: joinaggregate): JoinAggregateTransform = {
+  def apply(): JoinAggregateTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("joinaggregate")
     __obj.asInstanceOf[JoinAggregateTransform]
   }
   

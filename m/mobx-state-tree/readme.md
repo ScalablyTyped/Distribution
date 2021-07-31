@@ -10,9 +10,9 @@ Opinionated, transactional, MobX powered state container
 | ------------------ | :-------------: |
 | Full name          | mobx-state-tree |
 | Keywords           | mobx, mobx-state-tree, promise, reactive, frp, functional-reactive-programming, state management |
-| # releases         | 20 |
-| # dependents       | 81 |
-| # downloads        | 1918361 |
+| # releases         | 18 |
+| # dependents       | 95 |
+| # downloads        | 2048719 |
 | # stars            | 3 |
 
 ## Links

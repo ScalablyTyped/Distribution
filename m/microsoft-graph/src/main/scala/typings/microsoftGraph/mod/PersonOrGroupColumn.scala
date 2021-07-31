@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonOrGroupColumn extends StObject {
   
   // Indicates whether multiple values can be selected from the source.
-  var allowMultipleSelection: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowMultipleSelection: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Whether to allow selection of people only, or people and groups. Must be one of peopleAndGroups or peopleOnly.
-  var chooseFromType: js.UndefOr[NullableOption[String]] = js.native
+  var chooseFromType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // How to display the information about the person or group chosen. See below.
-  var displayAs: js.UndefOr[NullableOption[String]] = js.native
+  var displayAs: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PersonOrGroupColumn {
   

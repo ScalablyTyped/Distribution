@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsInstancesDatabasesSessionsList extends StandardParameters {
+trait ParamsResourceProjectsInstancesDatabasesSessionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The database in which to list sessions.
     */
-  var database: js.UndefOr[String] = js.native
+  var database: js.UndefOr[String] = js.undefined
   
   /**
     * An expression for filtering the results of the request. Filter rules are
@@ -30,19 +30,19 @@ trait ParamsResourceProjectsInstancesDatabasesSessionsList extends StandardParam
     * `labels.env:dev` --> The session has the label "env" and the value of the
     * label contains the string "dev".
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Number of sessions to be returned in the response. If 0 or less, defaults
     * to the server's maximum allowed page size.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * If non-empty, `page_token` should contain a next_page_token from a
     * previous ListSessionsResponse.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsInstancesDatabasesSessionsList {
   

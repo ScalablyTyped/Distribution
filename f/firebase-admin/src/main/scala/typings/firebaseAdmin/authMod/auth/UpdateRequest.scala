@@ -2,55 +2,53 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface representing the properties to update on the provided user.
   */
-@js.native
 trait UpdateRequest extends StObject {
   
   /**
     * Whether or not the user is disabled: `true` for disabled;
     * `false` for enabled.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user's display name.
     */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user's primary email.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the user's primary email is verified.
     */
-  var emailVerified: js.UndefOr[Boolean] = js.native
+  var emailVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user's updated multi-factor related properties.
     */
-  var multiFactor: js.UndefOr[MultiFactorUpdateSettings] = js.native
+  var multiFactor: js.UndefOr[MultiFactorUpdateSettings] = js.undefined
   
   /**
     * The user's unhashed password.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The user's primary phone number.
     */
-  var phoneNumber: js.UndefOr[String | Null] = js.native
+  var phoneNumber: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The user's photo URL.
     */
-  var photoURL: js.UndefOr[String | Null] = js.native
+  var photoURL: js.UndefOr[String | Null] = js.undefined
 }
 object UpdateRequest {
   

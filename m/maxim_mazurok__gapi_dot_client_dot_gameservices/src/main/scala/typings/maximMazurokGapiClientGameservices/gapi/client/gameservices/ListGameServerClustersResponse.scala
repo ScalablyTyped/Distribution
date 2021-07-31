@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGameServerClustersResponse extends StObject {
   
   /** The list of game server clusters. */
-  var gameServerClusters: js.UndefOr[js.Array[GameServerCluster]] = js.native
+  var gameServerClusters: js.UndefOr[js.Array[GameServerCluster]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** List of locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListGameServerClustersResponse {
   

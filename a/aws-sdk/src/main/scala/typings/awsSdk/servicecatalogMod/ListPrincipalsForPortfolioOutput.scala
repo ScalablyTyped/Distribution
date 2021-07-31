@@ -2,21 +2,19 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPrincipalsForPortfolioOutput extends StObject {
   
   /**
     * The page token to use to retrieve the next set of results. If there are no additional results, this value is null.
     */
-  var NextPageToken: js.UndefOr[PageToken] = js.native
+  var NextPageToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * The IAM principals (users or roles) associated with the portfolio.
     */
-  var Principals: js.UndefOr[typings.awsSdk.servicecatalogMod.Principals] = js.native
+  var Principals: js.UndefOr[typings.awsSdk.servicecatalogMod.Principals] = js.undefined
 }
 object ListPrincipalsForPortfolioOutput {
   

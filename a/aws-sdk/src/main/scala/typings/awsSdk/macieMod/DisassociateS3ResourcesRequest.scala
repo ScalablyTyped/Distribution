@@ -2,21 +2,19 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateS3ResourcesRequest extends StObject {
   
   /**
     * The S3 resources (buckets or prefixes) that you want to remove from being monitored and classified by Amazon Macie Classic. 
     */
-  var associatedS3Resources: S3Resources = js.native
+  var associatedS3Resources: S3Resources
   
   /**
     * The ID of the Amazon Macie Classic member account whose resources you want to remove from being monitored by Amazon Macie Classic. 
     */
-  var memberAccountId: js.UndefOr[AWSAccountId] = js.native
+  var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
 }
 object DisassociateS3ResourcesRequest {
   

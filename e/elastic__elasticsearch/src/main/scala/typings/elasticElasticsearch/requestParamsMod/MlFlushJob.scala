@@ -2,25 +2,25 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlFlushJob[T] extends Generic {
+trait MlFlushJob[T]
+  extends StObject
+     with Generic {
   
-  var advance_time: js.UndefOr[String] = js.native
+  var advance_time: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var calc_interim: js.UndefOr[Boolean] = js.native
+  var calc_interim: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var job_id: String = js.native
+  var job_id: String
   
-  var skip_time: js.UndefOr[String] = js.native
+  var skip_time: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
 }
 object MlFlushJob {
   
@@ -31,7 +31,7 @@ object MlFlushJob {
   }
   
   @scala.inline
-  implicit class MlFlushJobMutableBuilder[Self <: MlFlushJob[_], T] (val x: Self with MlFlushJob[T]) extends AnyVal {
+  implicit class MlFlushJobMutableBuilder[Self <: MlFlushJob[?], T] (val x: Self & MlFlushJob[T]) extends AnyVal {
     
     @scala.inline
     def setAdvance_time(value: String): Self = StObject.set(x, "advance_time", value.asInstanceOf[js.Any])

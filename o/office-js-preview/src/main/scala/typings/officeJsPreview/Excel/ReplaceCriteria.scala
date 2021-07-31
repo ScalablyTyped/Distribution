@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait ReplaceCriteria extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ReplaceCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var completeMatch: js.UndefOr[Boolean] = js.native
+  var completeMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait ReplaceCriteria extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
 }
 object ReplaceCriteria {
   

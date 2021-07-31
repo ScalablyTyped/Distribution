@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var bookmark = doc.addBookmark(cursor);
   *     Logger.log(bookmark.getId());
   */
-@js.native
 trait Bookmark extends StObject {
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getPosition(): Position = js.native
+  def getPosition(): Position
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object Bookmark {
   

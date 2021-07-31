@@ -5,21 +5,20 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandDimsMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/expand_dims", "expandDims")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/expand_dims", JSImport.Namespace)
   @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/expand_dims", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/expand_dims", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/expand_dims", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
 }

@@ -6,14 +6,14 @@ import typings.agGrid.iCellEditorMod.ICellEditorParams
 import typings.agGrid.iCellRendererMod.ICellRendererFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iRichCellEditorParamsMod {
   
   @js.native
   trait IRichCellEditorParams
-    extends ICellEditorParams
+    extends StObject
+       with ICellEditorParams
        with ComponentHolder {
     
     var cellHeight: Double = js.native

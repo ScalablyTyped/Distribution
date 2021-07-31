@@ -14,10 +14,13 @@ import typings.reactCssThemr.reactCssThemrStrings.deeply
 import typings.reactCssThemr.reactCssThemrStrings.softly
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-css-themr", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-css-themr", "ThemeProvider")
   @js.native
@@ -31,140 +34,210 @@ object mod {
     def this(props: ThemeProviderProps, context: js.Any) = this()
   }
   
-  @JSImport("react-css-themr", "themeable")
-  @js.native
-  def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = js.native
+  @scala.inline
+  def themeable(themes: TReactCSSThemrTheme*): TReactCSSThemrTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("themeable")(themes.asInstanceOf[js.Any]).asInstanceOf[TReactCSSThemrTheme]
   
-  @JSImport("react-css-themr", "themr")
-  @js.native
+  @scala.inline
   def themr(identifier: String): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
-  def themr(identifier: String, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: String, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: String, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
+  def themr(identifier: String, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: js.Symbol): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
-  def themr(identifier: js.Symbol, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: js.Symbol, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: js.Symbol, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
+  def themr(identifier: js.Symbol, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: Double): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
-  def themr(identifier: Double, defaultTheme: js.UndefOr[scala.Nothing], options: IThemrOptions): js.Function1[
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: Double, defaultTheme: js.Object): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
-  @JSImport("react-css-themr", "themr")
-  @js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
   def themr(identifier: Double, defaultTheme: js.Object, options: IThemrOptions): js.Function1[
     /* component */ (Instantiable2[
       /* props */ js.UndefOr[js.Any], 
       /* context */ js.UndefOr[js.Any], 
       Component[js.Any, js.Any, js.Any]
-    ]) | SFC[_], 
-    ThemedComponentClass[js.Any with MapThemrProps[_], _]
-  ] = js.native
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
+  @scala.inline
+  def themr(identifier: Double, defaultTheme: Unit, options: IThemrOptions): js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("themr")(identifier.asInstanceOf[js.Any], defaultTheme.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ (Instantiable2[
+      /* props */ js.UndefOr[js.Any], 
+      /* context */ js.UndefOr[js.Any], 
+      Component[js.Any, js.Any, js.Any]
+    ]) | SFC[js.Any], 
+    ThemedComponentClass[js.Any & MapThemrProps[js.Any], js.Any]
+  ]]
   
-  @js.native
   trait IThemrOptions extends StObject {
     
     /** @default "deeply" */
-    var composeTheme: js.UndefOr[deeply | softly | `false`] = js.native
+    var composeTheme: js.UndefOr[deeply | softly | `false`] = js.undefined
     
     //currently there's no way to lift decorated component's generic type argument (P) to upper decorator
     //that's why just {}
-    var mapThemrProps: js.UndefOr[TMapThemrProps[js.Object]] = js.native
+    var mapThemrProps: js.UndefOr[TMapThemrProps[js.Object]] = js.undefined
   }
   object IThemrOptions {
     
@@ -184,17 +257,18 @@ object mod {
       def setComposeThemeUndefined: Self = StObject.set(x, "composeTheme", js.undefined)
       
       @scala.inline
-      def setMapThemrProps(value: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object with Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
+      def setMapThemrProps(value: (js.Object, /* theme */ TReactCSSThemrTheme) => js.Object & Theme): Self = StObject.set(x, "mapThemrProps", js.Any.fromFunction2(value))
       
       @scala.inline
       def setMapThemrPropsUndefined: Self = StObject.set(x, "mapThemrProps", js.undefined)
     }
   }
   
-  type TMapThemrProps[P] = js.Function2[/* ownProps */ P, /* theme */ TReactCSSThemrTheme, P with Theme]
+  type TMapThemrProps[P] = js.Function2[/* ownProps */ P, /* theme */ TReactCSSThemrTheme, P & Theme]
   
-  @js.native
-  trait TReactCSSThemrTheme extends /* key */ StringDictionary[String | TReactCSSThemrTheme]
+  trait TReactCSSThemrTheme
+    extends StObject
+       with /* key */ StringDictionary[String | TReactCSSThemrTheme]
   object TReactCSSThemrTheme {
     
     @scala.inline
@@ -204,12 +278,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ThemeProviderProps extends StObject {
     
-    var innerRef: js.UndefOr[js.Function] = js.native
+    var innerRef: js.UndefOr[js.Function] = js.undefined
     
-    var theme: TReactCSSThemrTheme = js.native
+    var theme: TReactCSSThemrTheme
   }
   object ThemeProviderProps {
     
@@ -237,6 +310,7 @@ object mod {
   
   @js.native
   trait ThemedComponentClass[P, S]
-    extends ComponentClass[P, ComponentState]
+    extends StObject
+       with ComponentClass[P, ComponentState]
        with Instantiable0[ThemedComponent[P, S]]
 }

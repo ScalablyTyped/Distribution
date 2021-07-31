@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketByActivity extends StObject {
   
   /** The default activity stream will be used if a specific activityDataSourceId is not specified. */
-  var activityDataSourceId: js.UndefOr[String] = js.native
+  var activityDataSourceId: js.UndefOr[String] = js.undefined
   
   /** Specifies that only activity segments of duration longer than minDurationMillis are considered and used as a container for aggregated data. */
-  var minDurationMillis: js.UndefOr[String] = js.native
+  var minDurationMillis: js.UndefOr[String] = js.undefined
 }
 object BucketByActivity {
   

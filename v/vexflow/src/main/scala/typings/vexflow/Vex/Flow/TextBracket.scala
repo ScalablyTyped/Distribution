@@ -5,7 +5,6 @@ import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.Family
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,9 +38,13 @@ object TextBracket {
   object Positions extends StObject {
     
     @js.native
-    sealed trait BOTTOM extends Positions
+    sealed trait BOTTOM
+      extends StObject
+         with Positions
     
     @js.native
-    sealed trait TOP extends Positions
+    sealed trait TOP
+      extends StObject
+         with Positions
   }
 }

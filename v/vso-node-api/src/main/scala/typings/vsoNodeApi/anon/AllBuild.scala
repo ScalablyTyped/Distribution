@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllBuild extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var build: scala.Double = js.native
+  var build: scala.Double
   
-  var release: scala.Double = js.native
+  var release: scala.Double
 }
 object AllBuild {
   

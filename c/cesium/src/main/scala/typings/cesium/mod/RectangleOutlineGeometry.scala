@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.Rotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "RectangleOutlineGeometry")
@@ -13,30 +12,27 @@ class RectangleOutlineGeometry protected () extends Packable {
 }
 object RectangleOutlineGeometry {
   
-  /* static member */
-  @JSImport("cesium", "RectangleOutlineGeometry.createGeometry")
+  @JSImport("cesium", "RectangleOutlineGeometry")
   @js.native
-  def createGeometry(rectangleGeometry: RectangleOutlineGeometry): Geometry = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "RectangleOutlineGeometry.pack")
-  @js.native
-  def pack(value: BoundingSphere, array: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("cesium", "RectangleOutlineGeometry.pack")
-  @js.native
-  def pack(value: BoundingSphere, array: js.Array[Double], startingIndex: Double): js.Array[Double] = js.native
+  @scala.inline
+  def createGeometry(rectangleGeometry: RectangleOutlineGeometry): Geometry = ^.asInstanceOf[js.Dynamic].applyDynamic("createGeometry")(rectangleGeometry.asInstanceOf[js.Any]).asInstanceOf[Geometry]
   
   /* static member */
-  @JSImport("cesium", "RectangleOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): RectangleOutlineGeometry = js.native
-  @JSImport("cesium", "RectangleOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: RectangleGeometry): RectangleOutlineGeometry = js.native
-  @JSImport("cesium", "RectangleOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): RectangleOutlineGeometry = js.native
-  @JSImport("cesium", "RectangleOutlineGeometry.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: RectangleGeometry): RectangleOutlineGeometry = js.native
+  @scala.inline
+  def pack(value: BoundingSphere, array: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def pack(value: BoundingSphere, array: js.Array[Double], startingIndex: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(value.asInstanceOf[js.Any], array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  /* static member */
+  @scala.inline
+  def unpack(array: js.Array[Double]): RectangleOutlineGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[RectangleOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): RectangleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[RectangleOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: RectangleGeometry): RectangleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[RectangleOutlineGeometry]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: RectangleGeometry): RectangleOutlineGeometry = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[RectangleOutlineGeometry]
 }

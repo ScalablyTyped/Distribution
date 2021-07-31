@@ -2,23 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindNodesInfo extends StObject {
   
-  var database: String = js.native
+  var database: String
   
-  var name: String = js.native
+  var name: String
   
-  var parentObjectNames: js.Array[String] = js.native
+  var parentObjectNames: js.Array[String]
   
-  var schema: String = js.native
+  var schema: String
   
-  var sessionId: String = js.native
+  var sessionId: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object FindNodesInfo {
   

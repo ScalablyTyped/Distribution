@@ -2,17 +2,15 @@ package typings.reactNativeAuth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogoutParams extends StObject {
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var federated: Boolean = js.native
+  var federated: Boolean
   
-  var returnTo: js.UndefOr[String] = js.native
+  var returnTo: js.UndefOr[String] = js.undefined
 }
 object LogoutParams {
   

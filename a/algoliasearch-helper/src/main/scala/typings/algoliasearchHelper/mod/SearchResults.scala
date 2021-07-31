@@ -13,7 +13,6 @@ import typings.algoliasearchHelper.mod.SearchResults.HierarchicalFacet
 import typings.algoliasearchHelper.mod.SearchResults.Refinement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -144,7 +143,7 @@ class SearchResults[T] protected () extends StObject {
     *  - `value` : the value of the facet highlighted (html)
     *  - `matchLevel`: full, partial or none depending on how the query terms match
     */
-  var hits: js.Array[T with ObjectID] = js.native
+  var hits: js.Array[T & ObjectID] = js.native
   
   /**
     * number of hits per page requested
@@ -213,18 +212,17 @@ class SearchResults[T] protected () extends StObject {
   /**
     * Contains the userData if they are set by a [query rule](https://www.algolia.com/doc/guides/query-rules/query-rules-overview/).
     */
-  var userData: js.Array[_] = js.native
+  var userData: js.Array[js.Any] = js.native
 }
 object SearchResults {
   
-  @js.native
   trait Facet extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var name: String = js.native
+    var name: String
     
-    var stats: js.UndefOr[Avg] = js.native
+    var stats: js.UndefOr[Avg] = js.undefined
   }
   object Facet {
     
@@ -251,16 +249,15 @@ object SearchResults {
     }
   }
   
-  @js.native
   trait FacetValue extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var isExcluded: Boolean = js.native
+    var isExcluded: Boolean
     
-    var isRefined: Boolean = js.native
+    var isRefined: Boolean
     
-    var name: String = js.native
+    var name: String
   }
   object FacetValue {
     
@@ -287,18 +284,17 @@ object SearchResults {
     }
   }
   
-  @js.native
   trait HierarchicalFacet extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var data: js.Array[HierarchicalFacet] = js.native
+    var data: js.Array[HierarchicalFacet]
     
-    var isRefined: Boolean = js.native
+    var isRefined: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
   }
   object HierarchicalFacet {
     
@@ -331,22 +327,21 @@ object SearchResults {
     }
   }
   
-  @js.native
   trait Refinement extends StObject {
     
-    var attributeName: String = js.native
+    var attributeName: String
     
-    var count: Double = js.native
+    var count: Double
     
-    var exhaustive: Boolean = js.native
+    var exhaustive: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var numericValue: Double = js.native
+    var numericValue: Double
     
-    var operator: String = js.native
+    var operator: String
     
-    var `type`: numeric | facet | exclude | disjunctive | hierarchical = js.native
+    var `type`: numeric | facet | exclude | disjunctive | hierarchical
   }
   object Refinement {
     

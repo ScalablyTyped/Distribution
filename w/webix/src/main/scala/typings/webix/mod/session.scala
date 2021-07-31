@@ -2,19 +2,17 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait session extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def get(name: String): js.Any = js.native
+  def get(name: String): js.Any
   
-  def put(name: String, value: js.Any): Unit = js.native
+  def put(name: String, value: js.Any): Unit
   
-  def remove(name: String): Unit = js.native
+  def remove(name: String): Unit
 }
 object session {
   

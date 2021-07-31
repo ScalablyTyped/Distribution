@@ -2,14 +2,12 @@ package typings.cordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // cordova/urlutil module
-@js.native
 trait UrlUtil extends StObject {
   
-  def makeAbsolute(url: String): String = js.native
+  def makeAbsolute(url: String): String
 }
 object UrlUtil {
   

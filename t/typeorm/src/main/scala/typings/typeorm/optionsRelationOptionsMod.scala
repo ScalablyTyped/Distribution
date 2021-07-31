@@ -10,12 +10,10 @@ import typings.typeorm.typesOnDeleteTypeMod.OnDeleteType
 import typings.typeorm.typesOnUpdateTypeMod.OnUpdateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsRelationOptionsMod {
   
-  @js.native
   trait RelationOptions extends StObject {
     
     /**
@@ -25,12 +23,12 @@ object optionsRelationOptionsMod {
       *
       * cascade: ["insert", "update", "remove", "soft-remove", "recover"] // include or exclude one of them
       */
-    var cascade: js.UndefOr[Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])] = js.native
+    var cascade: js.UndefOr[Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])] = js.undefined
     
     /**
       * Indicate if foreign key constraints can be deferred.
       */
-    var deferrable: js.UndefOr[DeferrableType] = js.native
+    var deferrable: js.UndefOr[DeferrableType] = js.undefined
     
     /**
       * Set this relation to be eager.
@@ -38,28 +36,28 @@ object optionsRelationOptionsMod {
       * Only using QueryBuilder prevents loading eager relations.
       * Eager flag cannot be set from both sides of relation - you can eager load only one side of the relationship.
       */
-    var eager: js.UndefOr[Boolean] = js.native
+    var eager: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set this relation to be lazy. Note: lazy relations are promises. When you call them they return promise
       * which resolve relation result then. If your property's type is Promise then this relation is set to lazy automatically.
       */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if relation column value can be nullable or not.
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database cascade action on delete.
       */
-    var onDelete: js.UndefOr[OnDeleteType] = js.native
+    var onDelete: js.UndefOr[OnDeleteType] = js.undefined
     
     /**
       * Database cascade action on update.
       */
-    var onUpdate: js.UndefOr[OnUpdateType] = js.native
+    var onUpdate: js.UndefOr[OnUpdateType] = js.undefined
     
     /**
       * Indicates if persistence is enabled for the relation.
@@ -67,13 +65,13 @@ object optionsRelationOptionsMod {
       * If its disabled you can only change a relation from inverse side of a relation or using relation query builder functionality.
       * This is useful for performance optimization since its disabling avoid multiple extra queries during entity save.
       */
-    var persistence: js.UndefOr[Boolean] = js.native
+    var persistence: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this relation will be a primary key.
       * Can be used only for many-to-one and owner one-to-one relations.
       */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
   }
   object RelationOptions {
     

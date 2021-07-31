@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersOutput extends StObject {
   
   /**
     * The list of clusters for the account based on the given filters.
     */
-  var Clusters: js.UndefOr[ClusterSummaryList] = js.native
+  var Clusters: js.UndefOr[ClusterSummaryList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
 }
 object ListClustersOutput {
   

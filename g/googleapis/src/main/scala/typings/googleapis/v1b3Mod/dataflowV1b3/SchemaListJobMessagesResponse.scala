@@ -2,29 +2,27 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a request to list job messages.
   */
-@js.native
 trait SchemaListJobMessagesResponse extends StObject {
   
   /**
     * Autoscaling events in ascending timestamp order.
     */
-  var autoscalingEvents: js.UndefOr[js.Array[SchemaAutoscalingEvent]] = js.native
+  var autoscalingEvents: js.UndefOr[js.Array[SchemaAutoscalingEvent]] = js.undefined
   
   /**
     * Messages in ascending timestamp order.
     */
-  var jobMessages: js.UndefOr[js.Array[SchemaJobMessage]] = js.native
+  var jobMessages: js.UndefOr[js.Array[SchemaJobMessage]] = js.undefined
   
   /**
     * The token to obtain the next page of results if there are more.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListJobMessagesResponse {
   

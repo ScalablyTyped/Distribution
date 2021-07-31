@@ -2,52 +2,29 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSInterfaceDeclaration
-  extends Node
+  extends StObject
+     with Node
      with Declaration
      with Statement {
   
-  var body: TSInterfaceBody = js.native
+  var body: TSInterfaceBody
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var `extends`: js.Array[TSExpressionWithTypeArguments] | Null = js.native
+  var `extends`: js.Array[TSExpressionWithTypeArguments] | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSInterfaceDeclaration: typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration = js.native
+  var type_TSInterfaceDeclaration: typings.babelTypes.babelTypesStrings.TSInterfaceDeclaration
 }
 object TSInterfaceDeclaration {
   
-  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
-  @js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    extends_ : js.UndefOr[scala.Nothing],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
-  @js.native
-  def apply(
-    id: Identifier_,
-    typeParameters: js.UndefOr[scala.Nothing],
-    extends_ : js.Array[TSExpressionWithTypeArguments],
-    body: TSInterfaceBody
-  ): TSInterfaceDeclaration = js.native
-  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
-  @js.native
-  def apply(id: Identifier_, typeParameters: js.UndefOr[scala.Nothing], extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
-  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
-  @js.native
-  def apply(id: Identifier_, typeParameters: Null, extends_ : js.UndefOr[scala.Nothing], body: TSInterfaceBody): TSInterfaceDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
   @js.native
   def apply(
@@ -61,12 +38,21 @@ object TSInterfaceDeclaration {
   def apply(id: Identifier_, typeParameters: Null, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
   @js.native
+  def apply(id: Identifier_, typeParameters: Null, extends_ : Unit, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
+  @js.native
   def apply(
     id: Identifier_,
-    typeParameters: TypeParameterDeclaration_,
-    extends_ : js.UndefOr[scala.Nothing],
+    typeParameters: Unit,
+    extends_ : js.Array[TSExpressionWithTypeArguments],
     body: TSInterfaceBody
   ): TSInterfaceDeclaration = js.native
+  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
+  @js.native
+  def apply(id: Identifier_, typeParameters: Unit, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
+  @js.native
+  def apply(id: Identifier_, typeParameters: Unit, extends_ : Unit, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
   @js.native
   def apply(
@@ -78,6 +64,9 @@ object TSInterfaceDeclaration {
   @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
   @js.native
   def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, extends_ : Null, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
+  @JSImport("babel-types/ts3.6", "TSInterfaceDeclaration")
+  @js.native
+  def apply(id: Identifier_, typeParameters: TypeParameterDeclaration_, extends_ : Unit, body: TSInterfaceBody): TSInterfaceDeclaration = js.native
   
   @scala.inline
   implicit class TSInterfaceDeclarationMutableBuilder[Self <: TSInterfaceDeclaration] (val x: Self) extends AnyVal {

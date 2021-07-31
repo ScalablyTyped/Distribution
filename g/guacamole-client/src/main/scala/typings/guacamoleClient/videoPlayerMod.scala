@@ -6,7 +6,6 @@ import typings.guacamoleClient.visibleLayerMod.VisibleLayer
 import typings.std.MimeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoPlayerMod {
@@ -26,6 +25,10 @@ object videoPlayerMod {
   /* static members */
   object VideoPlayer {
     
+    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns an instance of Guacamole.VideoPlayer providing support for the given
       * video format. If support for the given video format is not available, null
@@ -40,9 +43,8 @@ object videoPlayerMod {
       * reading from the given stream, or null if support for the given mimetype
       * is absent.
       */
-    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.getInstance")
-    @js.native
-    def getInstance(stream: InputStream, layer: VisibleLayer, mimetype: MimeType): VideoPlayer | Null = js.native
+    @scala.inline
+    def getInstance(stream: InputStream, layer: VisibleLayer, mimetype: MimeType): VideoPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[VideoPlayer | Null]
     
     /**
       * Returns a list of all mimetypes supported by any built-in
@@ -53,9 +55,8 @@ object videoPlayerMod {
       * @returns A list of all mimetypes supported by any built-in Guacamole.VideoPlayer,
       * excluding any parameters.
       */
-    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.getSupportedTypes")
-    @js.native
-    def getSupportedTypes(): js.Array[Mimetype] = js.native
+    @scala.inline
+    def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
     
     /**
       * Determines whether the given mimetype is supported by any built-in
@@ -64,8 +65,7 @@ object videoPlayerMod {
       * @param mimetype The mimetype to check.
       * @returns true if the given mimetype is supported by any built-in Guacamole.VideoPlayer, false otherwise.
       */
-    @JSImport("guacamole-client/lib/VideoPlayer", "VideoPlayer.isSupportedType")
-    @js.native
-    def isSupportedType(mimetype: MimeType): Boolean = js.native
+    @scala.inline
+    def isSupportedType(mimetype: MimeType): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedType")(mimetype.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

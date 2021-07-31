@@ -5,7 +5,6 @@ import typings.grunt.minimatch.IMinimatchOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object file {
@@ -218,18 +217,19 @@ object file {
   /**
     * These are valid for compact-format
     */
-  @js.native
-  trait IExpandedFilesConfig extends IFilesConfig {
+  trait IExpandedFilesConfig
+    extends StObject
+       with IFilesConfig {
     
     /**
       * Replace any existing extension with this value in generated {@link IExpandedFilesConfig.dest} paths.
       */
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
     /**
       * Remove all path parts from generated {@link IExpandedFilesConfig.dest} paths.
       */
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This function is called for each matched src file, (after extension renaming and flattening).
@@ -237,7 +237,7 @@ object file {
       * and this function must return a new dest value.
       * If the same dest is returned more than once, each src which used it will be added to an array of sources for it.
       */
-    var rename: js.UndefOr[js.Function] = js.native
+    var rename: js.UndefOr[js.Function] = js.undefined
   }
   object IExpandedFilesConfig {
     
@@ -273,10 +273,9 @@ object file {
   /**
     * {@link http://gruntjs.com/api/grunt.file#grunt.file.defaultencoding}
     */
-  @js.native
   trait IFileEncodedOption extends StObject {
     
-    var encoding: String = js.native
+    var encoding: String
   }
   object IFileEncodedOption {
     
@@ -297,18 +296,17 @@ object file {
   /**
     * @see {@link http://gruntjs.com/configuring-tasks#files-array-format}
     */
-  @js.native
   trait IFileMap extends StObject {
     
     /**
       * destination filename.
       */
-    var dest: String = js.native
+    var dest: String
     
     /**
       * source filenames.
       */
-    var src: js.Array[String] = js.native
+    var src: js.Array[String]
   }
   object IFileMap {
     
@@ -335,15 +333,16 @@ object file {
   /**
     * @see IFileWriteOptions
     */
-  @js.native
-  trait IFileWriteBufferOption extends IFileWriteOptions {
+  trait IFileWriteBufferOption
+    extends StObject
+       with IFileWriteOptions {
     
     /**
       * The source file contents and file path are passed into this function,
       * whose return value will be used as the destination file's contents. If
       * this function returns `false`, the file copy will be aborted.
       */
-    var process: js.UndefOr[js.Function1[/* buffer */ Buffer, Boolean]] = js.native
+    var process: js.UndefOr[js.Function1[/* buffer */ Buffer, Boolean]] = js.undefined
   }
   object IFileWriteBufferOption {
     
@@ -370,8 +369,9 @@ object file {
     * @see IFileWriteBufferOption
     * @see IFileWriteStringOption
     */
-  @js.native
-  trait IFileWriteOptions extends IFileEncodedOption {
+  trait IFileWriteOptions
+    extends StObject
+       with IFileEncodedOption {
     
     /**
       * These optional globbing patterns will be matched against the filepath
@@ -381,7 +381,7 @@ object file {
       */
     // noProcess?: string[]
     // noProcess?: boolean
-    var noProcess: js.UndefOr[js.Any] = js.native
+    var noProcess: js.UndefOr[js.Any] = js.undefined
   }
   object IFileWriteOptions {
     
@@ -405,8 +405,9 @@ object file {
   /**
     * @see IFileWriteOptions
     */
-  @js.native
-  trait IFileWriteStringOption extends IFileWriteOptions {
+  trait IFileWriteStringOption
+    extends StObject
+       with IFileWriteOptions {
     
     /**
       * The source file contents, source file path, and destination file path
@@ -428,7 +429,7 @@ object file {
       */
     var process: js.UndefOr[
         js.Function3[/* contents */ String, /* srcpath */ String, /* destpath */ String, String | Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object IFileWriteStringOption {
     
@@ -459,25 +460,26 @@ object file {
   /**
     * {@link http://gruntjs.com/configuring-tasks#files}
     */
-  @js.native
-  trait IFilesConfig extends IMinimatchOptions {
+  trait IFilesConfig
+    extends StObject
+       with IMinimatchOptions {
     
     /**
       * Patterns will be matched relative to this path, and all returned filepaths will
       * also be relative to this path.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Destination path prefix.
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * Process a dynamic src-dest file mapping,
       * @see {@link http://gruntjs.com/configuring-tasks#building-the-files-object-dynamically for more information.
       */
-    var expand: js.UndefOr[Boolean] = js.native
+    var expand: js.UndefOr[Boolean] = js.undefined
     
     // = false
     /**
@@ -497,12 +499,12 @@ object file {
       */
     // filter?: string
     // filter?: (src: string) => boolean
-    var filter: js.UndefOr[js.Any] = js.native
+    var filter: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Pattern(s) to match, relative to the {@link IExpandedFilesConfig.cwd}.
       */
-    var src: js.UndefOr[js.Array[String]] = js.native
+    var src: js.UndefOr[js.Array[String]] = js.undefined
   }
   object IFilesConfig {
     

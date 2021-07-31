@@ -4,7 +4,6 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTConvertMode
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTPDFCompressionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonPDFMod {
@@ -68,67 +67,66 @@ object addonPDFMod {
     var Write: typings.dwt.addonPDFMod.Write = js.native
   }
   
-  @js.native
   trait PDFWSetting extends StObject {
     
     /**
       * Specify the author.
       */
-    var author: String = js.native
+    var author: String
     
     /**
       * Specify the compression type.
       */
-    var compression: EnumDWTPDFCompressionType | Double = js.native
+    var compression: EnumDWTPDFCompressionType | Double
     
     /**
       * Specify the creation date.
       * Note that the argument should start with 'D:' like 'D:20181231'.
       */
-    var creationDate: String = js.native
+    var creationDate: String
     
     /**
       * Specify the creator.
       */
-    var creator: String = js.native
+    var creator: String
     
     /**
       * Specify the key words.
       */
-    var keyWords: String = js.native
+    var keyWords: String
     
     /**
       * Specify the modified date.
       * Note that the argument should start with 'D:' like 'D:20181231'.
       */
-    var modifiedDate: String = js.native
+    var modifiedDate: String
     
     /**
       * Specify the producer.
       */
-    var producer: String = js.native
+    var producer: String
     
     /**
       * Specify the quality of the images in the file.
       * The value ranges from 0 to 100.
       * Only valid when the {compression} is 'JPEG' or 'JPEG2000'.
       */
-    var quality: Double = js.native
+    var quality: Double
     
     /**
       * Specify the subject.
       */
-    var subject: String = js.native
+    var subject: String
     
     /**
       * Specify the title.
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * Specify the PDF version. For example, '1.5'.
       */
-    var version: String = js.native
+    var version: String
   }
   object PDFWSetting {
     
@@ -188,14 +186,13 @@ object addonPDFMod {
     }
   }
   
-  @js.native
   trait Write extends StObject {
     
     /**
       * Set up the PDF writing engine.
       * @param settings Configures how the PDF is generated.
       */
-    def Setup(settings: PDFWSetting): Unit = js.native
+    def Setup(settings: PDFWSetting): Unit
   }
   object Write {
     

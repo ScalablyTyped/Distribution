@@ -10,37 +10,35 @@ import typings.sdp.sdpStrings.tcp
 import typings.sdp.sdpStrings.udp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDPIceCandidate extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var component: rtp | rtcp | Double = js.native
+  var component: rtp | rtcp | Double
   
-  var foundation: String = js.native
+  var foundation: String
   
-  var ip: String = js.native
+  var ip: String
   
-  var port: Double = js.native
+  var port: Double
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var protocol: tcp | udp = js.native
+  var protocol: tcp | udp
   
-  var relatedAddress: js.UndefOr[String] = js.native
+  var relatedAddress: js.UndefOr[String] = js.undefined
   
-  var relatedPort: js.UndefOr[Double] = js.native
+  var relatedPort: js.UndefOr[Double] = js.undefined
   
-  var tcpType: js.UndefOr[String] = js.native
+  var tcpType: js.UndefOr[String] = js.undefined
   
-  var `type`: host | prflx | srflx | relay = js.native
+  var `type`: host | prflx | srflx | relay
   
-  var ufrag: js.UndefOr[String] = js.native
+  var ufrag: js.UndefOr[String] = js.undefined
   
-  var usernameFragment: js.UndefOr[String] = js.native
+  var usernameFragment: js.UndefOr[String] = js.undefined
 }
 object SDPIceCandidate {
   

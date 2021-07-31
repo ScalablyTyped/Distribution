@@ -2,27 +2,26 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Snapshot extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var m: SnapshotMeta | Null = js.native
+  var m: SnapshotMeta | Null
   
-  var `type`: String | Null = js.native
+  var `type`: String | Null
   
-  var v: Double = js.native
+  var v: Double
 }
 object Snapshot {
   
   @scala.inline
   def apply(id: String, v: Double): Snapshot = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any], m = null)
+    __obj.updateDynamic("type")(null)
     __obj.asInstanceOf[Snapshot]
   }
   

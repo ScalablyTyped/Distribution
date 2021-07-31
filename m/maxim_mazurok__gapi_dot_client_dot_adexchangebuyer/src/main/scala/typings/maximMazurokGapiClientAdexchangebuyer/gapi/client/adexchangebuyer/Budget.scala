@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Budget extends StObject {
   
   /** The id of the account. This is required for get and update requests. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The billing id to determine which adgroup to provide budget information for. This is required for get and update requests. */
-  var billingId: js.UndefOr[String] = js.native
+  var billingId: js.UndefOr[String] = js.undefined
   
   /** The daily budget amount in unit amount of the account currency to apply for the billingId provided. This is required for update requests. */
-  var budgetAmount: js.UndefOr[String] = js.native
+  var budgetAmount: js.UndefOr[String] = js.undefined
   
   /** The currency code for the buyer. This cannot be altered here. */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /** The unique id that describes this item. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of the resource, i.e. "adexchangebuyer#budget". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Budget {
   

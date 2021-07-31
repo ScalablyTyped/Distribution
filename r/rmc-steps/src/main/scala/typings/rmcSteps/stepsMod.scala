@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.rmcSteps.anon.Current
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
@@ -26,28 +25,27 @@ object stepsMod {
     def defaultProps_=(x: Current): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IStepsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var labelPlacement: js.UndefOr[String] = js.native
+    var labelPlacement: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var progressDot: js.UndefOr[Boolean | js.Function] = js.native
+    var progressDot: js.UndefOr[Boolean | js.Function] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object IStepsProps {
     

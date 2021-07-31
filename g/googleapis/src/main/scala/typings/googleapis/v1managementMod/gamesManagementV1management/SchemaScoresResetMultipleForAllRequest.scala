@@ -2,25 +2,23 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for multiple scores reset all request.
   */
-@js.native
 trait SchemaScoresResetMultipleForAllRequest extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesManagement#scoresResetMultipleForAllRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of leaderboards to reset.
     */
-  var leaderboard_ids: js.UndefOr[js.Array[String]] = js.native
+  var leaderboard_ids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaScoresResetMultipleForAllRequest {
   

@@ -7,7 +7,6 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textEncodeTransformMod {
@@ -15,26 +14,39 @@ object textEncodeTransformMod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("text-encode-transform", "TextDecoderStream")
   @js.native
-  class TextDecoderStreamCls () extends TextDecoderStream {
+  class TextDecoderStreamCls ()
+    extends StObject
+       with TextDecoderStream {
     def this(label: String) = this()
-    def this(label: js.UndefOr[scala.Nothing], options: TextDecoderOptions) = this()
     def this(label: String, options: TextDecoderOptions) = this()
-  }
-  
-  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
-  @JSImport("text-encode-transform", "TextEncoderStream")
-  @js.native
-  class TextEncoderStreamCls () extends TextEncoderStream
-  
-  type BufferSource = ArrayBufferView | ArrayBuffer
-  
-  @js.native
-  trait GenericTransformStream extends StObject {
+    def this(label: Unit, options: TextDecoderOptions) = this()
+    
+    /**
+      * Returns encoding's name, lowercased.
+      */
+    /* CompleteClass */
+    override val encoding: String = js.native
+    
+    /**
+      * Returns true if error mode is "fatal", and false otherwise.
+      */
+    /* CompleteClass */
+    override val fatal: Boolean = js.native
+    
+    /**
+      * Returns true if ignore BOM flag is set, and false otherwise.
+      */
+    /* CompleteClass */
+    override val ignoreBOM: Boolean = js.native
     
     /**
       * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
       */
-    val readable: ReadableStream[_] = js.native
+    /* CompleteClass */
+    override val readable: ReadableStream[js.Any] = js.native
+    /* CompleteClass */
+    @JSName("readable")
+    override val readable_TextDecoderStream: ReadableStream[String] = js.native
     
     /**
       * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
@@ -50,12 +62,85 @@ object textEncodeTransformMod {
       *
       * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
       */
-    val writable: WritableStream[_] = js.native
+    /* CompleteClass */
+    override val writable: WritableStream[js.Any] = js.native
+    /* CompleteClass */
+    @JSName("writable")
+    override val writable_TextDecoderStream: WritableStream[BufferSource] = js.native
+  }
+  
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("text-encode-transform", "TextEncoderStream")
+  @js.native
+  class TextEncoderStreamCls ()
+    extends StObject
+       with TextEncoderStream {
+    
+    /**
+      * Returns "utf-8".
+      */
+    /* CompleteClass */
+    override val encoding: String = js.native
+    
+    /**
+      * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
+      */
+    /* CompleteClass */
+    override val readable: ReadableStream[js.Any] = js.native
+    /* CompleteClass */
+    @JSName("readable")
+    override val readable_TextEncoderStream: ReadableStream[Uint8Array] = js.native
+    
+    /**
+      * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+      *
+      * Typically this will be used via the pipeThrough() method on a ReadableStream source.
+      *
+      * ```
+      * var decoder = new TextDecoderStream(encoding);
+      * byteReadable
+      *   .pipeThrough(decoder)
+      *   .pipeTo(textWritable);
+      * ```
+      *
+      * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
+      */
+    /* CompleteClass */
+    override val writable: WritableStream[js.Any] = js.native
+    /* CompleteClass */
+    @JSName("writable")
+    override val writable_TextEncoderStream: WritableStream[String] = js.native
+  }
+  
+  type BufferSource = ArrayBufferView | ArrayBuffer
+  
+  trait GenericTransformStream extends StObject {
+    
+    /**
+      * Returns a readable stream whose chunks are strings resulting from running encoding's decoder on the chunks written to writable.
+      */
+    val readable: ReadableStream[js.Any]
+    
+    /**
+      * Returns a writable stream which accepts [AllowShared] BufferSource chunks and runs them through encoding's decoder before making them available to readable.
+      *
+      * Typically this will be used via the pipeThrough() method on a ReadableStream source.
+      *
+      * ```
+      * var decoder = new TextDecoderStream(encoding);
+      * byteReadable
+      *   .pipeThrough(decoder)
+      *   .pipeTo(textWritable);
+      * ```
+      *
+      * If the error mode is "fatal" and encoding's decoder returns error, both readable and writable will be errored with a TypeError.
+      */
+    val writable: WritableStream[js.Any]
   }
   object GenericTransformStream {
     
     @scala.inline
-    def apply(readable: ReadableStream[_], writable: WritableStream[_]): GenericTransformStream = {
+    def apply(readable: ReadableStream[js.Any], writable: WritableStream[js.Any]): GenericTransformStream = {
       val __obj = js.Dynamic.literal(readable = readable.asInstanceOf[js.Any], writable = writable.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericTransformStream]
     }
@@ -64,30 +149,29 @@ object textEncodeTransformMod {
     implicit class GenericTransformStreamMutableBuilder[Self <: GenericTransformStream] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setReadable(value: ReadableStream[_]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
+      def setReadable(value: ReadableStream[js.Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWritable(value: WritableStream[_]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
+      def setWritable(value: WritableStream[js.Any]): Self = StObject.set(x, "writable", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TextDecoderCommon extends StObject {
     
     /**
       * Returns encoding's name, lowercased.
       */
-    val encoding: String = js.native
+    val encoding: String
     
     /**
       * Returns true if error mode is "fatal", and false otherwise.
       */
-    val fatal: Boolean = js.native
+    val fatal: Boolean
     
     /**
       * Returns true if ignore BOM flag is set, and false otherwise.
       */
-    val ignoreBOM: Boolean = js.native
+    val ignoreBOM: Boolean
   }
   object TextDecoderCommon {
     
@@ -111,12 +195,11 @@ object textEncodeTransformMod {
     }
   }
   
-  @js.native
   trait TextDecoderOptions extends StObject {
     
-    var fatal: js.UndefOr[Boolean] = js.native
+    var fatal: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreBOM: js.UndefOr[Boolean] = js.native
+    var ignoreBOM: js.UndefOr[Boolean] = js.undefined
   }
   object TextDecoderOptions {
     
@@ -143,16 +226,16 @@ object textEncodeTransformMod {
     }
   }
   
-  @js.native
   trait TextDecoderStream
-    extends GenericTransformStream
+    extends StObject
+       with GenericTransformStream
        with TextDecoderCommon {
     
     @JSName("readable")
-    val readable_TextDecoderStream: ReadableStream[String] = js.native
+    val readable_TextDecoderStream: ReadableStream[String]
     
     @JSName("writable")
-    val writable_TextDecoderStream: WritableStream[BufferSource] = js.native
+    val writable_TextDecoderStream: WritableStream[BufferSource]
   }
   object TextDecoderStream {
     
@@ -179,13 +262,12 @@ object textEncodeTransformMod {
     }
   }
   
-  @js.native
   trait TextEncoderCommon extends StObject {
     
     /**
       * Returns "utf-8".
       */
-    val encoding: String = js.native
+    val encoding: String
   }
   object TextEncoderCommon {
     
@@ -203,16 +285,16 @@ object textEncodeTransformMod {
     }
   }
   
-  @js.native
   trait TextEncoderStream
-    extends GenericTransformStream
+    extends StObject
+       with GenericTransformStream
        with TextEncoderCommon {
     
     @JSName("readable")
-    val readable_TextEncoderStream: ReadableStream[Uint8Array] = js.native
+    val readable_TextEncoderStream: ReadableStream[Uint8Array]
     
     @JSName("writable")
-    val writable_TextEncoderStream: WritableStream[String] = js.native
+    val writable_TextEncoderStream: WritableStream[String]
   }
   object TextEncoderStream {
     

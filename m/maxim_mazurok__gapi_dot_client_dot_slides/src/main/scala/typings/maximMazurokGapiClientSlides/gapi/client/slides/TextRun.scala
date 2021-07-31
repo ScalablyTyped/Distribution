@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRun extends StObject {
   
   /** The text of this run. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The styling applied to this run. */
-  var style: js.UndefOr[TextStyle] = js.native
+  var style: js.UndefOr[TextStyle] = js.undefined
 }
 object TextRun {
   

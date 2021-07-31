@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDicomStoresResponse extends StObject {
   
   /** The returned DICOM stores. Won't be more DICOM stores than the value of page_size in the request. */
-  var dicomStores: js.UndefOr[js.Array[DicomStore]] = js.native
+  var dicomStores: js.UndefOr[js.Array[DicomStore]] = js.undefined
   
   /** Token to retrieve the next page of results or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDicomStoresResponse {
   

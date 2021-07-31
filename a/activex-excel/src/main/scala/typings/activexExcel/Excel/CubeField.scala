@@ -2,20 +2,15 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CubeField extends StObject {
   
   def AddMemberPropertyField(Property: String): Unit = js.native
-  def AddMemberPropertyField(
-    Property: String,
-    PropertyOrder: js.UndefOr[scala.Nothing],
-    PropertyDisplayedIn: XlPropertyDisplayedIn
-  ): Unit = js.native
   def AddMemberPropertyField(Property: String, PropertyOrder: Double): Unit = js.native
   def AddMemberPropertyField(Property: String, PropertyOrder: Double, PropertyDisplayedIn: XlPropertyDisplayedIn): Unit = js.native
+  def AddMemberPropertyField(Property: String, PropertyOrder: Unit, PropertyDisplayedIn: XlPropertyDisplayedIn): Unit = js.native
   
   val AllItemsVisible: Boolean = js.native
   

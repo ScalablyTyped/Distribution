@@ -5,36 +5,36 @@ import typings.pulumiAws.inputMod.ec2.GetSubnetIdsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSubnetIdsMod {
   
-  @JSImport("@pulumi/aws/ec2/getSubnetIds", "getSubnetIds")
+  @JSImport("@pulumi/aws/ec2/getSubnetIds", JSImport.Namespace)
   @js.native
-  def getSubnetIds(args: GetSubnetIdsArgs): js.Promise[GetSubnetIdsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSubnetIds", "getSubnetIds")
-  @js.native
-  def getSubnetIds(args: GetSubnetIdsArgs, opts: InvokeOptions): js.Promise[GetSubnetIdsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSubnetIds(args: GetSubnetIdsArgs): js.Promise[GetSubnetIdsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubnetIds")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSubnetIdsResult]]
+  @scala.inline
+  def getSubnetIds(args: GetSubnetIdsArgs, opts: InvokeOptions): js.Promise[GetSubnetIdsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubnetIds")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSubnetIdsResult]]
+  
   trait GetSubnetIdsArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetSubnetIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSubnetIdsFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired subnets.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The VPC ID that you want to filter from.
       */
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetSubnetIdsArgs {
     
@@ -67,24 +67,23 @@ object getSubnetIdsMod {
     }
   }
   
-  @js.native
   trait GetSubnetIdsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSubnetIdsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSubnetIdsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A set of all the subnet ids found. This data source will fail if none are found.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetSubnetIdsResult {
     

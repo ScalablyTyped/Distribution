@@ -9,14 +9,19 @@ import typings.koa.mod.Middleware
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@emartech/cls-adapter", JSImport.Namespace)
   @js.native
-  class ^ () extends ContextFactory
+  class ^ ()
+    extends StObject
+       with ContextFactory {
+    
+    /* CompleteClass */
+    var _namespace: Namespace = js.native
+  }
   @JSImport("@emartech/cls-adapter", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -27,9 +32,9 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "addContextStorageToInput")
   @js.native
-  def addContextStorageToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object with RequestId]] = js.native
+  def addContextStorageToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]] = js.native
   @scala.inline
-  def addContextStorageToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object with RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addContextStorageToInput")(x.asInstanceOf[js.Any])
+  def addContextStorageToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addContextStorageToInput")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a function that extends the given object with the request identifier set on the current storage.
@@ -37,9 +42,9 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "addRequestIdToInput")
   @js.native
-  def addRequestIdToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object with RequestId]] = js.native
+  def addRequestIdToInput: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]] = js.native
   @scala.inline
-  def addRequestIdToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object with RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRequestIdToInput")(x.asInstanceOf[js.Any])
+  def addRequestIdToInput_=(x: js.Function0[js.Function1[/* input */ js.Object, js.Object & RequestId]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("addRequestIdToInput")(x.asInstanceOf[js.Any])
   
   /**
     * Creates (or returns existing namespace) with the namespace name 'session'
@@ -68,9 +73,9 @@ object mod {
   /* static member */
   @JSImport("@emartech/cls-adapter", "getContextStorage")
   @js.native
-  def getContextStorage: js.Function0[(Record[String, _]) with RequestId] = js.native
+  def getContextStorage: js.Function0[(Record[String, js.Any]) & RequestId] = js.native
   @scala.inline
-  def getContextStorage_=(x: js.Function0[(Record[String, _]) with RequestId]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getContextStorage")(x.asInstanceOf[js.Any])
+  def getContextStorage_=(x: js.Function0[(Record[String, js.Any]) & RequestId]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getContextStorage")(x.asInstanceOf[js.Any])
   
   /**
     * Returns a middleware function compatible with Express that stores (or generates if missing)
@@ -121,10 +126,9 @@ object mod {
   @scala.inline
   def setOnContext_=(x: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("setOnContext")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ContextFactory extends StObject {
     
-    var _namespace: Namespace = js.native
+    var _namespace: Namespace
   }
   object ContextFactory {
     

@@ -2,125 +2,125 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to perform some action on or in regards to an existing resource
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ProcessRequest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ProcessRequest
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'action'.
     */
-  var _action: js.UndefOr[Element] = js.native
+  var _action: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'created'.
     */
-  var _created: js.UndefOr[Element] = js.native
+  var _created: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'exclude'.
     */
-  var _exclude: js.UndefOr[js.Array[Element]] = js.native
+  var _exclude: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'include'.
     */
-  var _include: js.UndefOr[js.Array[Element]] = js.native
+  var _include: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'nullify'.
     */
-  var _nullify: js.UndefOr[Element] = js.native
+  var _nullify: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'reference'.
     */
-  var _reference: js.UndefOr[Element] = js.native
+  var _reference: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * cancel | poll | reprocess | status
     */
-  var action: js.UndefOr[code] = js.native
+  var action: js.UndefOr[code] = js.undefined
   
   /**
     * Creation date
     */
-  var created: js.UndefOr[dateTime] = js.native
+  var created: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Resource type(s) to exclude
     */
-  var exclude: js.UndefOr[js.Array[String]] = js.native
+  var exclude: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Business Identifier
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Resource type(s) to include
     */
-  var include: js.UndefOr[js.Array[String]] = js.native
+  var include: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Items to re-adjudicate
     */
-  var item: js.UndefOr[js.Array[ProcessRequestItem]] = js.native
+  var item: js.UndefOr[js.Array[ProcessRequestItem]] = js.undefined
   
   /**
     * Remove history
     */
-  var nullify: js.UndefOr[Boolean] = js.native
+  var nullify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Responsible organization
     */
-  var organization: js.UndefOr[Reference] = js.native
+  var organization: js.UndefOr[Reference] = js.undefined
   
   /**
     * Selection period
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Responsible practitioner
     */
-  var provider: js.UndefOr[Reference] = js.native
+  var provider: js.UndefOr[Reference] = js.undefined
   
   /**
     * Reference number/string
     */
-  var reference: js.UndefOr[String] = js.native
+  var reference: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to the Request resource
     */
-  var request: js.UndefOr[Reference] = js.native
+  var request: js.UndefOr[Reference] = js.undefined
   
   /**
     * Reference to the Response resource
     */
-  var response: js.UndefOr[Reference] = js.native
+  var response: js.UndefOr[Reference] = js.undefined
   
   /**
     * active | cancelled | draft | entered-in-error
     */
-  var status: js.UndefOr[code] = js.native
+  var status: js.UndefOr[code] = js.undefined
   
   /**
     * Party which is the target of the request
     */
-  var target: js.UndefOr[Reference] = js.native
+  var target: js.UndefOr[Reference] = js.undefined
 }
 object ProcessRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OidcMemberDefinition extends StObject {
   
   /**
     * A list of comma seperated strings that identifies user groups in your OIDC IdP. Each user group is made up of a group of private workers.
     */
-  var Groups: typings.awsSdk.sagemakerMod.Groups = js.native
+  var Groups: typings.awsSdk.sagemakerMod.Groups
 }
 object OidcMemberDefinition {
   

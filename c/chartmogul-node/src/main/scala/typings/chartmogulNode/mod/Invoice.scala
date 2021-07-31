@@ -4,56 +4,51 @@ import typings.chartmogulNode.commonMod.Cursor
 import typings.chartmogulNode.commonMod.CursorParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Invoice {
   
-  @JSImport("chartmogul-node", "Invoice.all")
+  @JSImport("chartmogul-node", "Invoice")
   @js.native
-  def all(config: Config): js.Promise[Invoices] = js.native
-  @JSImport("chartmogul-node", "Invoice.all")
-  @js.native
-  def all(config: Config, params: ListInvoicesParams): js.Promise[Invoices] = js.native
-  @JSImport("chartmogul-node", "Invoice.all")
-  @js.native
-  def all(config: Config, uuid: String): js.Promise[Invoices] = js.native
-  @JSImport("chartmogul-node", "Invoice.all")
-  @js.native
-  def all(config: Config, uuid: String, params: ListInvoicesParams): js.Promise[Invoices] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("chartmogul-node", "Invoice.create")
-  @js.native
-  def create(config: Config, uuid: String, data: typings.chartmogulNode.anon.Invoices): js.Promise[typings.chartmogulNode.mod.Invoice.Invoice] = js.native
+  @scala.inline
+  def all(config: Config): js.Promise[Invoices] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Invoices]]
+  @scala.inline
+  def all(config: Config, params: ListInvoicesParams): js.Promise[Invoices] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Invoices]]
+  @scala.inline
+  def all(config: Config, uuid: String): js.Promise[Invoices] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Invoices]]
+  @scala.inline
+  def all(config: Config, uuid: String, params: ListInvoicesParams): js.Promise[Invoices] = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Invoices]]
   
-  @JSImport("chartmogul-node", "Invoice.destroy")
-  @js.native
-  def destroy(config: Config, uuid: String): js.Promise[js.Object] = js.native
+  @scala.inline
+  def create(config: Config, uuid: String, data: typings.chartmogulNode.anon.Invoices): js.Promise[typings.chartmogulNode.mod.Invoice.Invoice] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Invoice.Invoice]]
   
-  @JSImport("chartmogul-node", "Invoice.retrieve")
-  @js.native
-  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Invoice.Invoice] = js.native
+  @scala.inline
+  def destroy(config: Config, uuid: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("destroy")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
-  @js.native
+  @scala.inline
+  def retrieve(config: Config, uuid: String): js.Promise[typings.chartmogulNode.mod.Invoice.Invoice] = (^.asInstanceOf[js.Dynamic].applyDynamic("retrieve")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Invoice.Invoice]]
+  
   trait Invoice extends StObject {
     
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
-    var customer_uuid: js.UndefOr[String] = js.native
+    var customer_uuid: js.UndefOr[String] = js.undefined
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var due_date: js.UndefOr[String] = js.native
+    var due_date: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var line_items: js.UndefOr[js.Array[LineItem]] = js.native
+    var line_items: js.UndefOr[js.Array[LineItem]] = js.undefined
     
-    var transactions: js.UndefOr[js.Array[typings.chartmogulNode.mod.Invoice.Transaction]] = js.native
+    var transactions: js.UndefOr[js.Array[typings.chartmogulNode.mod.Invoice.Transaction]] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object Invoice {
     
@@ -128,12 +123,13 @@ object Invoice {
     }
   }
   
-  @js.native
-  trait Invoices extends Cursor {
+  trait Invoices
+    extends StObject
+       with Cursor {
     
-    var customer_uuid: js.UndefOr[String] = js.native
+    var customer_uuid: js.UndefOr[String] = js.undefined
     
-    var invoices: js.Array[typings.chartmogulNode.mod.Invoice.Invoice] = js.native
+    var invoices: js.Array[typings.chartmogulNode.mod.Invoice.Invoice]
   }
   object Invoices {
     
@@ -160,44 +156,43 @@ object Invoice {
     }
   }
   
-  @js.native
   trait LineItem extends StObject {
     
-    var account_code: js.UndefOr[String] = js.native
+    var account_code: js.UndefOr[String] = js.undefined
     
-    var amount_in_cents: js.UndefOr[Double] = js.native
+    var amount_in_cents: js.UndefOr[Double] = js.undefined
     
-    var cancelled_at: js.UndefOr[String] = js.native
+    var cancelled_at: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var discount_amount_in_cents: js.UndefOr[Double] = js.native
+    var discount_amount_in_cents: js.UndefOr[Double] = js.undefined
     
-    var discount_code: js.UndefOr[String] = js.native
+    var discount_code: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var plan_uuid: js.UndefOr[String] = js.native
+    var plan_uuid: js.UndefOr[String] = js.undefined
     
-    var prorated: js.UndefOr[Boolean] = js.native
+    var prorated: js.UndefOr[Boolean] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var service_period_end: js.UndefOr[String] = js.native
+    var service_period_end: js.UndefOr[String] = js.undefined
     
-    var service_period_start: js.UndefOr[String] = js.native
+    var service_period_start: js.UndefOr[String] = js.undefined
     
-    var subscription_external_id: js.UndefOr[String] = js.native
+    var subscription_external_id: js.UndefOr[String] = js.undefined
     
-    var subscription_uuid: js.UndefOr[String] = js.native
+    var subscription_uuid: js.UndefOr[String] = js.undefined
     
-    var tax_amount_in_cents: js.UndefOr[Double] = js.native
+    var tax_amount_in_cents: js.UndefOr[Double] = js.undefined
     
-    var transaction_fees_in_cents: js.UndefOr[Double] = js.native
+    var transaction_fees_in_cents: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object LineItem {
     
@@ -320,14 +315,15 @@ object Invoice {
     }
   }
   
-  @js.native
-  trait ListInvoicesParams extends CursorParams {
+  trait ListInvoicesParams
+    extends StObject
+       with CursorParams {
     
-    var customer_uuid: js.UndefOr[String] = js.native
+    var customer_uuid: js.UndefOr[String] = js.undefined
     
-    var data_source_uuid: js.UndefOr[String] = js.native
+    var data_source_uuid: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
   }
   object ListInvoicesParams {
     
@@ -360,18 +356,17 @@ object Invoice {
     }
   }
   
-  @js.native
   trait Transaction extends StObject {
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var result: js.UndefOr[String] = js.native
+    var result: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object Transaction {
     

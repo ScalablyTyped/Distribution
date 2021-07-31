@@ -2,14 +2,12 @@ package typings.semanticUiTransition.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.Transition.ClassNameSettings._Impl, 'looping'> */
-@js.native
 trait PickImpllooping extends StObject {
   
-  var looping: String = js.native
+  var looping: String
 }
 object PickImpllooping {
   

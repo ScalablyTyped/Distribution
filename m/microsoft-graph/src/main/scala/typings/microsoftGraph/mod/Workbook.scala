@@ -2,32 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Workbook extends Entity {
+trait Workbook
+  extends StObject
+     with Entity {
   
-  var application: js.UndefOr[NullableOption[WorkbookApplication]] = js.native
+  var application: js.UndefOr[NullableOption[WorkbookApplication]] = js.undefined
   
-  var comments: js.UndefOr[NullableOption[js.Array[WorkbookComment]]] = js.native
+  var comments: js.UndefOr[NullableOption[js.Array[WorkbookComment]]] = js.undefined
   
-  var functions: js.UndefOr[NullableOption[WorkbookFunctions]] = js.native
+  var functions: js.UndefOr[NullableOption[WorkbookFunctions]] = js.undefined
   
   // Represents a collection of workbook scoped named items (named ranges and constants). Read-only.
-  var names: js.UndefOr[NullableOption[js.Array[WorkbookNamedItem]]] = js.native
+  var names: js.UndefOr[NullableOption[js.Array[WorkbookNamedItem]]] = js.undefined
   
   /**
     * The status of workbook operations. Getting an operation collection is not supported, but you can get the status of a
     * long-running operation if the Location header is returned in the response. Read-only.
     */
-  var operations: js.UndefOr[NullableOption[js.Array[WorkbookOperation]]] = js.native
+  var operations: js.UndefOr[NullableOption[js.Array[WorkbookOperation]]] = js.undefined
   
   // Represents a collection of tables associated with the workbook. Read-only.
-  var tables: js.UndefOr[NullableOption[js.Array[WorkbookTable]]] = js.native
+  var tables: js.UndefOr[NullableOption[js.Array[WorkbookTable]]] = js.undefined
   
   // Represents a collection of worksheets associated with the workbook. Read-only.
-  var worksheets: js.UndefOr[NullableOption[js.Array[WorkbookWorksheet]]] = js.native
+  var worksheets: js.UndefOr[NullableOption[js.Array[WorkbookWorksheet]]] = js.undefined
 }
 object Workbook {
   

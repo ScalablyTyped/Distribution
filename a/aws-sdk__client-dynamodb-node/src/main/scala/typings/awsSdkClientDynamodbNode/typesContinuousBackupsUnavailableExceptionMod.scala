@@ -4,26 +4,23 @@ import typings.awsSdkClientDynamodbNode.createBackupExceptionsUnionMod.CreateBac
 import typings.awsSdkClientDynamodbNode.updateContinuousBackupsExceptionsUnionMod.UpdateContinuousBackupsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesContinuousBackupsUnavailableExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ContinuousBackupsUnavailableExceptionDetails> * / any */ @js.native
-  trait ContinuousBackupsUnavailableException
-    extends CreateBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ContinuousBackupsUnavailableExceptionDetails> * / any */ trait ContinuousBackupsUnavailableException
+    extends StObject
+       with CreateBackupExceptionsUnion
        with UpdateContinuousBackupsExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ContinuousBackupsUnavailableException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ContinuousBackupsUnavailableException
   }
   object ContinuousBackupsUnavailableException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.ContinuousBackupsUnavailableException
-    ): ContinuousBackupsUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ContinuousBackupsUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "ContinuousBackupsUnavailableException")
       __obj.asInstanceOf[ContinuousBackupsUnavailableException]
     }
     
@@ -37,13 +34,12 @@ object typesContinuousBackupsUnavailableExceptionMod {
     }
   }
   
-  @js.native
   trait ContinuousBackupsUnavailableExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ContinuousBackupsUnavailableExceptionDetails {
     

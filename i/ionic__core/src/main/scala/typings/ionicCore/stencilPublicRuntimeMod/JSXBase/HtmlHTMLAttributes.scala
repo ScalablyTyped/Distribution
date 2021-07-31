@@ -2,13 +2,13 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HtmlHTMLAttributes[T] extends HTMLAttributes[T] {
+trait HtmlHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var manifest: js.UndefOr[String] = js.native
+  var manifest: js.UndefOr[String] = js.undefined
 }
 object HtmlHTMLAttributes {
   
@@ -19,7 +19,7 @@ object HtmlHTMLAttributes {
   }
   
   @scala.inline
-  implicit class HtmlHTMLAttributesMutableBuilder[Self <: HtmlHTMLAttributes[_], T] (val x: Self with HtmlHTMLAttributes[T]) extends AnyVal {
+  implicit class HtmlHTMLAttributesMutableBuilder[Self <: HtmlHTMLAttributes[?], T] (val x: Self & HtmlHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setManifest(value: String): Self = StObject.set(x, "manifest", value.asInstanceOf[js.Any])

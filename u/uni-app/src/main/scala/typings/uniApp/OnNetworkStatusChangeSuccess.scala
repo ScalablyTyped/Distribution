@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnNetworkStatusChangeSuccess extends StObject {
   
   /**
     * 当前是否有网络连接
     */
-  var isConnected: js.UndefOr[Double] = js.native
+  var isConnected: js.UndefOr[Double] = js.undefined
   
   /**
     * 网络类型
     */
-  var networkType: js.UndefOr[String] = js.native
+  var networkType: js.UndefOr[String] = js.undefined
 }
 object OnNetworkStatusChangeSuccess {
   

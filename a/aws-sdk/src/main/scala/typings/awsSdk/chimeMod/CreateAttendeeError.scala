@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAttendeeError extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[String] = js.native
+  var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Chime SDK external user ID. An idempotency token. Links the attendee to an identity managed by a builder application. If you create an attendee with the same external user id, the service returns the existing record.
     */
-  var ExternalUserId: js.UndefOr[ExternalUserIdType] = js.native
+  var ExternalUserId: js.UndefOr[ExternalUserIdType] = js.undefined
 }
 object CreateAttendeeError {
   

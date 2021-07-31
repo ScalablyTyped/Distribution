@@ -12,7 +12,7 @@ CLI util to show status of repos in a main folder.
 | Keywords           | cli, git, status |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 583 |
+| # downloads        | 642 |
 | # stars            | 0 |
 
 ## Links

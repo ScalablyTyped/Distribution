@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XCommandProcessor
   * @version 1.0
   */
-@js.native
-trait CommandFailedException extends Exception {
+trait CommandFailedException
+  extends StObject
+     with Exception {
   
   /** contains the exception that was passed to the {@link com.sun.star.task.XInteractionHandler} . */
-  var Reason: js.Any = js.native
+  var Reason: js.Any
 }
 object CommandFailedException {
   

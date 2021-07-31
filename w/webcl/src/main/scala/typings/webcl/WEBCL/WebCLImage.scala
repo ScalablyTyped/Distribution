@@ -2,14 +2,14 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.6.2
-@js.native
-trait WebCLImage extends WebCLMemoryObject {
+trait WebCLImage
+  extends StObject
+     with WebCLMemoryObject {
   
-  def getInfo(): WebCLImageDescriptor = js.native
+  def getInfo(): WebCLImageDescriptor
 }
 object WebCLImage {
   

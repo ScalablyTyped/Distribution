@@ -10,41 +10,39 @@ import typings.escpos.escposStrings.`@`
 import typings.escpos.escposStrings.p_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var `1`: Null = js.native
+  var `1`: Null
   
-  var `2`: Datalinkescape = js.native
+  var `2`: Datalinkescape
   
-  var `3`: Space = js.native
+  var `3`: Space
   
-  var `4`: `0` = js.native
+  var `4`: `0`
   
-  var `5`: `@` = js.native
+  var `5`: `@`
   
-  var `6`: P = js.native
+  var `6`: P
   
-  var `7`: Graveaccent = js.native
+  var `7`: Graveaccent
   
-  var `8`: p_ = js.native
+  var `8`: p_
 }
 object `2` {
   
   @scala.inline
-  def apply(`1`: Null, `2`: Datalinkescape, `3`: Space, `4`: `0`, `5`: `@`, `6`: P, `7`: Graveaccent, `8`: p_): `2` = {
+  def apply(): `2` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
-    __obj.updateDynamic("2")(`2`.asInstanceOf[js.Any])
-    __obj.updateDynamic("3")(`3`.asInstanceOf[js.Any])
-    __obj.updateDynamic("4")(`4`.asInstanceOf[js.Any])
-    __obj.updateDynamic("5")(`5`.asInstanceOf[js.Any])
-    __obj.updateDynamic("6")(`6`.asInstanceOf[js.Any])
-    __obj.updateDynamic("7")(`7`.asInstanceOf[js.Any])
-    __obj.updateDynamic("8")(`8`.asInstanceOf[js.Any])
+    __obj.updateDynamic("1")("\u0000")
+    __obj.updateDynamic("2")("\u0010")
+    __obj.updateDynamic("3")(" ")
+    __obj.updateDynamic("4")("0")
+    __obj.updateDynamic("5")("@")
+    __obj.updateDynamic("6")("P")
+    __obj.updateDynamic("7")("`")
+    __obj.updateDynamic("8")("p")
     __obj.asInstanceOf[`2`]
   }
   

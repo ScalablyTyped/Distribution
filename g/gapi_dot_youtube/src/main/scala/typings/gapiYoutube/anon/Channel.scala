@@ -2,31 +2,29 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /**
     * The channel object encapsulates branding properties of the channel page.
     */
-  var channel: DefaultTab = js.native
+  var channel: DefaultTab
   
   /**
     * The hints object encapsulates additional branding properties
     */
-  var hints: js.Array[Property] = js.native
+  var hints: js.Array[Property]
   
   /**
     * The image object encapsulates information about images that display on the channels channel page or video watch pages.
     */
-  var image: BackgroundImageUrl = js.native
+  var image: BackgroundImageUrl
   
   /**
     * The watch object encapsulates branding properties of the watch pages for the channels videos.
     */
-  var watch: BackgroundColor = js.native
+  var watch: BackgroundColor
 }
 object Channel {
   

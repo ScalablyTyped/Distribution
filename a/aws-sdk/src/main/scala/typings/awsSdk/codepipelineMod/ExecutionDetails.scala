@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionDetails extends StObject {
   
   /**
     * The system-generated unique ID of this action used to identify this job worker in any external systems, such as AWS CodeDeploy.
     */
-  var externalExecutionId: js.UndefOr[ExecutionId] = js.native
+  var externalExecutionId: js.UndefOr[ExecutionId] = js.undefined
   
   /**
     * The percentage of work completed on the action, represented on a scale of 0 to 100 percent.
     */
-  var percentComplete: js.UndefOr[Percentage] = js.native
+  var percentComplete: js.UndefOr[Percentage] = js.undefined
   
   /**
     * The summary of the current status of the actions.
     */
-  var summary: js.UndefOr[ExecutionSummary] = js.native
+  var summary: js.UndefOr[ExecutionSummary] = js.undefined
 }
 object ExecutionDetails {
   

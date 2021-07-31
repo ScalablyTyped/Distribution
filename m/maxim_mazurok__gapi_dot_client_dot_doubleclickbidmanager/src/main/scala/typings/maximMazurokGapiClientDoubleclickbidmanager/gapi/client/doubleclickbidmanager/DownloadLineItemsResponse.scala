@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadLineItemsResponse extends StObject {
   
   /** Retrieved line items in CSV format. For more information about file formats, see Entity Write File Format. */
-  var lineItems: js.UndefOr[String] = js.native
+  var lineItems: js.UndefOr[String] = js.undefined
 }
 object DownloadLineItemsResponse {
   

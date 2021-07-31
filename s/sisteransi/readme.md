@@ -11,8 +11,8 @@ ANSI escape codes for some terminal swag
 | Full name          | sisteransi |
 | Keywords           | ansi, escape codes, escape, terminal, style |
 | # releases         | 6 |
-| # dependents       | 25 |
-| # downloads        | 303108193 |
+| # dependents       | 49 |
+| # downloads        | 384751629 |
 | # stars            | 0 |
 
 ## Links

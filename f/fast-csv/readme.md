@@ -10,9 +10,9 @@ CSV parser and writer
 | ------------------ | :-------------: |
 | Full name          | fast-csv |
 | Keywords           | csv, parser, fast, writer, csv writer, CSV |
-| # releases         | 27 |
-| # dependents       | 297 |
-| # downloads        | 13094199 |
+| # releases         | 33 |
+| # dependents       | 313 |
+| # downloads        | 18490852 |
 | # stars            | 56 |
 
 ## Links

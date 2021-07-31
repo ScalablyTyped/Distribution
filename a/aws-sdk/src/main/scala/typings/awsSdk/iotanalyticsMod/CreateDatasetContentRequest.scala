@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetContentRequest extends StObject {
   
   /**
     * The name of the dataset.
     */
-  var datasetName: DatasetName = js.native
+  var datasetName: DatasetName
   
   /**
     * The version ID of the dataset content. To specify versionId for a dataset content, the dataset must use a DeltaTimer filter.
     */
-  var versionId: js.UndefOr[DatasetContentVersion] = js.native
+  var versionId: js.UndefOr[DatasetContentVersion] = js.undefined
 }
 object CreateDatasetContentRequest {
   

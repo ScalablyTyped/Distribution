@@ -2,25 +2,23 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for FirestoreAdmin.ListFields.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1ListFieldsResponse extends StObject {
   
   /**
     * The requested fields.
     */
-  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1Field]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1Field]] = js.undefined
   
   /**
     * A page token that may be used to request another page of results. If
     * blank, this is the last page.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1ListFieldsResponse {
   

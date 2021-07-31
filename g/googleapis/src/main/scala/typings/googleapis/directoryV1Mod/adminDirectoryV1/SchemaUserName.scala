@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for name of a user in Directory API.
   */
-@js.native
 trait SchemaUserName extends StObject {
   
   /**
     * Last Name
     */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /**
     * Full Name
     */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /**
     * First Name
     */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
 }
 object SchemaUserName {
   

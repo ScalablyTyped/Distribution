@@ -4,7 +4,6 @@ import typings.babelTypes.babelTypesStrings.Ampersand
 import typings.babelTypes.babelTypesStrings.AmpersandAmpersand
 import typings.babelTypes.babelTypesStrings.Asterisk
 import typings.babelTypes.babelTypesStrings.AsteriskAsterisk
-import typings.babelTypes.babelTypesStrings.BinaryExpression
 import typings.babelTypes.babelTypesStrings.EqualssignEqualssign
 import typings.babelTypes.babelTypesStrings.EqualssignEqualssignEqualssign
 import typings.babelTypes.babelTypesStrings.ExclamationmarkEqualssign
@@ -16,7 +15,6 @@ import typings.babelTypes.babelTypesStrings.GreaterthansignGreaterthansignGreate
 import typings.babelTypes.babelTypesStrings.Lessthansign
 import typings.babelTypes.babelTypesStrings.LessthansignEqualssign
 import typings.babelTypes.babelTypesStrings.LessthansignLessthansign
-import typings.babelTypes.babelTypesStrings.LogicalExpression
 import typings.babelTypes.babelTypesStrings.Percentsign
 import typings.babelTypes.babelTypesStrings.Plussign
 import typings.babelTypes.babelTypesStrings.QuestionmarkQuestionmark
@@ -28,25 +26,25 @@ import typings.babelTypes.babelTypesStrings.in
 import typings.babelTypes.babelTypesStrings.instanceof
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.babelTypes.indexTs37Mod.BinaryExpression_
   - typings.babelTypes.indexTs37Mod.LogicalExpression_
 */
-trait Binary extends _Node
+trait Binary
+  extends StObject
+     with _Node
 object Binary {
   
   @scala.inline
   def BinaryExpression_(
     left: Expression | PrivateName_,
     operator: Plussign | `-_` | Slash | Percentsign | Asterisk | AsteriskAsterisk | Ampersand | Verticalline | GreaterthansignGreaterthansign | GreaterthansignGreaterthansignGreaterthansign | LessthansignLessthansign | typings.babelTypes.babelTypesStrings.^ | EqualssignEqualssign | EqualssignEqualssignEqualssign | ExclamationmarkEqualssign | ExclamationmarkEqualssignEqualssign | in | instanceof | Greaterthansign | Lessthansign | GreaterthansignEqualssign | LessthansignEqualssign,
-    right: Expression,
-    `type`: BinaryExpression
+    right: Expression
   ): typings.babelTypes.indexTs37Mod.BinaryExpression_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("BinaryExpression")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.BinaryExpression_]
   }
   
@@ -54,11 +52,10 @@ object Binary {
   def LogicalExpression_(
     left: Expression,
     operator: VerticallineVerticalline | AmpersandAmpersand | QuestionmarkQuestionmark,
-    right: Expression,
-    `type`: LogicalExpression
+    right: Expression
   ): typings.babelTypes.indexTs37Mod.LogicalExpression_ = {
-    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("LogicalExpression")
     __obj.asInstanceOf[typings.babelTypes.indexTs37Mod.LogicalExpression_]
   }
 }

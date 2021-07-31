@@ -3,12 +3,12 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.treemap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesTreemapOptions extends PlotTreemapOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesTreemapOptions
+  extends StObject
+     with PlotTreemapOptions {
   
   /**
     * (Highcharts) An array of data points for the series. For the `treemap`
@@ -23,62 +23,62 @@ trait SeriesTreemapOptions extends PlotTreemapOptions {
     * number of data points exceeds the series' turboThreshold, this option is
     * not available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.native
+  var data: js.UndefOr[js.Array[Double | Null | PointOptionsObject]] = js.undefined
   
   /**
     * Not available
     */
-  var dataParser: js.UndefOr[scala.Nothing] = js.native
+  var dataParser: Unit
   
   /**
     * Not available
     */
-  var dataURL: js.UndefOr[scala.Nothing] = js.native
+  var dataURL: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Not available
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String | Unit]
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | treemap = js.native
+  var `type`: String | treemap
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -86,7 +86,7 @@ trait SeriesTreemapOptions extends PlotTreemapOptions {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -94,13 +94,13 @@ trait SeriesTreemapOptions extends PlotTreemapOptions {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesTreemapOptions {
   
   @scala.inline
-  def apply(`type`: String | treemap): SeriesTreemapOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(dataParser: Unit, dataURL: Unit, `type`: String | treemap): SeriesTreemapOptions = {
+    val __obj = js.Dynamic.literal(dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesTreemapOptions]
   }
@@ -110,6 +110,12 @@ object SeriesTreemapOptions {
     
     @scala.inline
     def setData(value: js.Array[Double | Null | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -151,7 +157,7 @@ object SeriesTreemapOptions {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setStack(value: Double | scala.Nothing | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+    def setStack(value: Double | String | Unit): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)

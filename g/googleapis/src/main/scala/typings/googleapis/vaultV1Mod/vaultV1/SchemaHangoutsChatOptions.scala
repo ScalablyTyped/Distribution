@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Hangouts chat search advanced options
   */
-@js.native
 trait SchemaHangoutsChatOptions extends StObject {
   
   /**
     * Set to true to include rooms.
     */
-  var includeRooms: js.UndefOr[Boolean] = js.native
+  var includeRooms: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaHangoutsChatOptions {
   

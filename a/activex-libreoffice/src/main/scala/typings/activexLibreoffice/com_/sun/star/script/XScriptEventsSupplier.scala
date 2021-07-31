@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gives access to an event container represented by an XNameContainer containing {@link ScriptEventDescriptor} instances. */
-@js.native
-trait XScriptEventsSupplier extends XInterface {
+trait XScriptEventsSupplier
+  extends StObject
+     with XInterface {
   
   /** Returns an XNameContainer containing instances of {@link ScriptEventDescriptor} */
-  val Events: XNameContainer = js.native
+  val Events: XNameContainer
   
   /** Returns an XNameContainer containing instances of {@link ScriptEventDescriptor} */
-  def getEvents(): XNameContainer = js.native
+  def getEvents(): XNameContainer
 }
 object XScriptEventsSupplier {
   

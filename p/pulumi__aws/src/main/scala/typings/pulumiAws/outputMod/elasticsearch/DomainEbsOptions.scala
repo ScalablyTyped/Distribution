@@ -2,32 +2,30 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainEbsOptions extends StObject {
   
   /**
     * Whether EBS volumes are attached to data nodes in the domain.
     */
-  var ebsEnabled: Boolean = js.native
+  var ebsEnabled: Boolean
   
   /**
     * The baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
     */
-  var iops: js.UndefOr[Double] = js.native
+  var iops: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of EBS volumes attached to data nodes (in GiB).
     * **Required** if `ebsEnabled` is set to `true`.
     */
-  var volumeSize: js.UndefOr[Double] = js.native
+  var volumeSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of EBS volumes attached to data nodes.
     */
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object DomainEbsOptions {
   

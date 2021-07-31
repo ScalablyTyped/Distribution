@@ -2,39 +2,37 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountIdentityVerificationWorkflow extends StObject {
   
   /**
     * Text describing the purpose of the Identity Verification workflow.
     */
-  var defaultDescription: js.UndefOr[String] = js.native
+  var defaultDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Identity Verification workflow.
     */
-  var defaultName: js.UndefOr[String] = js.native
+  var defaultName: js.UndefOr[String] = js.undefined
   
-  var inputOptions: js.UndefOr[js.Array[AccountIdentityInputOption]] = js.native
+  var inputOptions: js.UndefOr[js.Array[AccountIdentityInputOption]] = js.undefined
   
   /**
     * The signature provider associated with the Identity Verification workflow.
     */
-  var signatureProvider: js.UndefOr[AccountSignatureProvider] = js.native
+  var signatureProvider: js.UndefOr[AccountSignatureProvider] = js.undefined
   
   /**
     * Workflow unique ID</br>This is the ID you must specify when setting ID Verification in an envelope using the `identityVerification`
     * [core recipient parameter](https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipients#core-recipient-parameters)
     */
-  var workflowId: js.UndefOr[String] = js.native
+  var workflowId: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var workflowResourceKey: js.UndefOr[String] = js.native
+  var workflowResourceKey: js.UndefOr[String] = js.undefined
 }
 object AccountIdentityVerificationWorkflow {
   

@@ -3,17 +3,15 @@ package typings.ethersprojectAbi
 import typings.ethersprojectBignumber.bignumberMod.BigNumberish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
   }
   object Data {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var path: js.Array[String | Double] = js.native
+    var path: js.Array[String | Double]
   }
   object Error {
     
@@ -66,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Topics extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
   }
   object Topics {
     
@@ -95,12 +91,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var value: js.UndefOr[BigNumberish] = js.native
+    var value: js.UndefOr[BigNumberish] = js.undefined
   }
   object Value {
     

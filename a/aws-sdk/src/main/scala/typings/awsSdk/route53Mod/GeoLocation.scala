@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoLocation extends StObject {
   
   /**
     * The two-letter code for the continent. Amazon Route 53 supports the following continent codes:    AF: Africa    AN: Antarctica    AS: Asia    EU: Europe    OC: Oceania    NA: North America    SA: South America   Constraint: Specifying ContinentCode with either CountryCode or SubdivisionCode returns an InvalidInput error.
     */
-  var ContinentCode: js.UndefOr[GeoLocationContinentCode] = js.native
+  var ContinentCode: js.UndefOr[GeoLocationContinentCode] = js.undefined
   
   /**
     * For geolocation resource record sets, the two-letter code for a country. Amazon Route 53 uses the two-letter country codes that are specified in ISO standard 3166-1 alpha-2.
     */
-  var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.native
+  var CountryCode: js.UndefOr[GeoLocationCountryCode] = js.undefined
   
   /**
     * For geolocation resource record sets, the two-letter code for a state of the United States. Route 53 doesn't support any other values for SubdivisionCode. For a list of state abbreviations, see Appendix B: Two–Letter State and Possession Abbreviations on the United States Postal Service website.  If you specify subdivisioncode, you must also specify US for CountryCode. 
     */
-  var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.native
+  var SubdivisionCode: js.UndefOr[GeoLocationSubdivisionCode] = js.undefined
 }
 object GeoLocation {
   

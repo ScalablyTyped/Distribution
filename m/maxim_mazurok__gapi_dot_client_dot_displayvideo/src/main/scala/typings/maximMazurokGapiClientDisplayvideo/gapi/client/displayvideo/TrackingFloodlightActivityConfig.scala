@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrackingFloodlightActivityConfig extends StObject {
   
   /** Required. The ID of the Floodlight activity. */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /** Required. The number of days after an ad has been clicked in which a conversion may be counted. Must be between 0 and 90 inclusive. */
-  var postClickLookbackWindowDays: js.UndefOr[Double] = js.native
+  var postClickLookbackWindowDays: js.UndefOr[Double] = js.undefined
   
   /** Required. The number of days after an ad has been viewed in which a conversion may be counted. Must be between 0 and 90 inclusive. */
-  var postViewLookbackWindowDays: js.UndefOr[Double] = js.native
+  var postViewLookbackWindowDays: js.UndefOr[Double] = js.undefined
 }
 object TrackingFloodlightActivityConfig {
   

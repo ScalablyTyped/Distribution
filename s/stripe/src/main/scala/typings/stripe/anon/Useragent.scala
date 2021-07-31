@@ -2,17 +2,15 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Useragent extends StObject {
   
-  var date: js.UndefOr[Double] = js.native
+  var date: js.UndefOr[Double] = js.undefined
   
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
-  var user_agent: js.UndefOr[String] = js.native
+  var user_agent: js.UndefOr[String] = js.undefined
 }
 object Useragent {
   

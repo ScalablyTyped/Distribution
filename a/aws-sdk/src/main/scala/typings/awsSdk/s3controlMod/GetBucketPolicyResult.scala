@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBucketPolicyResult extends StObject {
   
   /**
     * The policy of the Outposts bucket.
     */
-  var Policy: js.UndefOr[typings.awsSdk.s3controlMod.Policy] = js.native
+  var Policy: js.UndefOr[typings.awsSdk.s3controlMod.Policy] = js.undefined
 }
 object GetBucketPolicyResult {
   

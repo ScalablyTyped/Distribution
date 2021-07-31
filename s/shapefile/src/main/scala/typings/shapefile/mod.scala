@@ -12,53 +12,49 @@ import typings.std.ReadableStream
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("shapefile", "open")
+  @JSImport("shapefile", JSImport.Namespace)
   @js.native
-  def open(shp: Openable): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = js.native
-  @JSImport("shapefile", "open")
-  @js.native
-  def open(shp: Openable, dbf: js.UndefOr[Openable], options: Options): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = js.native
-  @JSImport("shapefile", "open")
-  @js.native
-  def open(shp: Openable, dbf: Openable): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("shapefile", "openDbf")
-  @js.native
-  def openDbf(source: Openable): js.Promise[Source[GeoJsonProperties]] = js.native
-  @JSImport("shapefile", "openDbf")
-  @js.native
-  def openDbf(source: Openable, options: Options): js.Promise[Source[GeoJsonProperties]] = js.native
+  @scala.inline
+  def open(shp: Openable): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(shp.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Source[Feature[Geometry, GeoJsonProperties]]]]
+  @scala.inline
+  def open(shp: Openable, dbf: Unit, options: Options): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Source[Feature[Geometry, GeoJsonProperties]]]]
+  @scala.inline
+  def open(shp: Openable, dbf: Openable): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Source[Feature[Geometry, GeoJsonProperties]]]]
+  @scala.inline
+  def open(shp: Openable, dbf: Openable, options: Options): js.Promise[Source[Feature[Geometry, GeoJsonProperties]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Source[Feature[Geometry, GeoJsonProperties]]]]
   
-  @JSImport("shapefile", "openShp")
-  @js.native
-  def openShp(source: Openable): js.Promise[Source[GeometryObject]] = js.native
-  @JSImport("shapefile", "openShp")
-  @js.native
-  def openShp(source: Openable, options: Options): js.Promise[Source[GeometryObject]] = js.native
+  @scala.inline
+  def openDbf(source: Openable): js.Promise[Source[GeoJsonProperties]] = ^.asInstanceOf[js.Dynamic].applyDynamic("openDbf")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Source[GeoJsonProperties]]]
+  @scala.inline
+  def openDbf(source: Openable, options: Options): js.Promise[Source[GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("openDbf")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Source[GeoJsonProperties]]]
   
-  @JSImport("shapefile", "read")
-  @js.native
-  def read(shp: Openable): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = js.native
-  @JSImport("shapefile", "read")
-  @js.native
-  def read(shp: Openable, dbf: js.UndefOr[Openable], options: Options): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = js.native
-  @JSImport("shapefile", "read")
-  @js.native
-  def read(shp: Openable, dbf: Openable): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = js.native
+  @scala.inline
+  def openShp(source: Openable): js.Promise[Source[GeometryObject]] = ^.asInstanceOf[js.Dynamic].applyDynamic("openShp")(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Source[GeometryObject]]]
+  @scala.inline
+  def openShp(source: Openable, options: Options): js.Promise[Source[GeometryObject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("openShp")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Source[GeometryObject]]]
+  
+  @scala.inline
+  def read(shp: Openable): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any]).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
+  @scala.inline
+  def read(shp: Openable, dbf: Unit, options: Options): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
+  @scala.inline
+  def read(shp: Openable, dbf: Openable): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
+  @scala.inline
+  def read(shp: Openable, dbf: Openable, options: Options): js.Promise[FeatureCollection[Geometry, GeoJsonProperties]] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(shp.asInstanceOf[js.Any], dbf.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[FeatureCollection[Geometry, GeoJsonProperties]]]
   
   type Openable = String | ArrayBuffer | Uint8Array | Readable | ReadableStream[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -85,14 +81,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Source[RecordType] extends StObject {
     
-    var bbox: js.Array[Double] = js.native
+    var bbox: js.Array[Double]
     
-    def cancel(): js.Promise[Unit] = js.native
+    def cancel(): js.Promise[Unit]
     
-    def read(): js.Promise[Done[RecordType]] = js.native
+    def read(): js.Promise[Done[RecordType]]
   }
   object Source {
     
@@ -103,7 +98,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class SourceMutableBuilder[Self <: Source[_], RecordType] (val x: Self with Source[RecordType]) extends AnyVal {
+    implicit class SourceMutableBuilder[Self <: Source[?], RecordType] (val x: Self & Source[RecordType]) extends AnyVal {
       
       @scala.inline
       def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])

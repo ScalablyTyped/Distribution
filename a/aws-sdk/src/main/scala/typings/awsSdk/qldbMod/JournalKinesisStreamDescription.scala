@@ -2,66 +2,64 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JournalKinesisStreamDescription extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the QLDB journal stream.
     */
-  var Arn: js.UndefOr[typings.awsSdk.qldbMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.qldbMod.Arn] = js.undefined
   
   /**
     * The date and time, in epoch time format, when the QLDB journal stream was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The error message that describes the reason that a stream has a status of IMPAIRED or FAILED. This is not applicable to streams that have other status values.
     */
-  var ErrorCause: js.UndefOr[typings.awsSdk.qldbMod.ErrorCause] = js.native
+  var ErrorCause: js.UndefOr[typings.awsSdk.qldbMod.ErrorCause] = js.undefined
   
   /**
     * The exclusive date and time that specifies when the stream ends. If this parameter is blank, the stream runs indefinitely until you cancel it.
     */
-  var ExclusiveEndTime: js.UndefOr[Timestamp] = js.native
+  var ExclusiveEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The inclusive start date and time from which to start streaming journal data.
     */
-  var InclusiveStartTime: js.UndefOr[Timestamp] = js.native
+  var InclusiveStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The configuration settings of the Amazon Kinesis Data Streams destination for your QLDB journal stream.
     */
-  var KinesisConfiguration: typings.awsSdk.qldbMod.KinesisConfiguration = js.native
+  var KinesisConfiguration: typings.awsSdk.qldbMod.KinesisConfiguration
   
   /**
     * The name of the ledger.
     */
-  var LedgerName: typings.awsSdk.qldbMod.LedgerName = js.native
+  var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal stream to write data records to a Kinesis Data Streams resource.
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
   
   /**
     * The current state of the QLDB journal stream.
     */
-  var Status: StreamStatus = js.native
+  var Status: StreamStatus
   
   /**
     * The unique ID that QLDB assigns to each QLDB journal stream.
     */
-  var StreamId: UniqueId = js.native
+  var StreamId: UniqueId
   
   /**
     * The user-defined name of the QLDB journal stream.
     */
-  var StreamName: typings.awsSdk.qldbMod.StreamName = js.native
+  var StreamName: typings.awsSdk.qldbMod.StreamName
 }
 object JournalKinesisStreamDescription {
   

@@ -2,41 +2,39 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSavingsPlansRequest extends StObject {
   
   /**
     * The filters.
     */
-  var filters: js.UndefOr[SavingsPlanFilterList] = js.native
+  var filters: js.UndefOr[SavingsPlanFilterList] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve additional results, make another call with the returned token value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The Amazon Resource Names (ARN) of the Savings Plans.
     */
-  var savingsPlanArns: js.UndefOr[SavingsPlanArnList] = js.native
+  var savingsPlanArns: js.UndefOr[SavingsPlanArnList] = js.undefined
   
   /**
     * The IDs of the Savings Plans.
     */
-  var savingsPlanIds: js.UndefOr[SavingsPlanIdList] = js.native
+  var savingsPlanIds: js.UndefOr[SavingsPlanIdList] = js.undefined
   
   /**
     * The states.
     */
-  var states: js.UndefOr[SavingsPlanStateList] = js.native
+  var states: js.UndefOr[SavingsPlanStateList] = js.undefined
 }
 object DescribeSavingsPlansRequest {
   

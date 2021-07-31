@@ -2,15 +2,13 @@ package typings.luxon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IncludeConfig extends StObject {
     
-    var includeConfig: js.UndefOr[Boolean] = js.native
+    var includeConfig: js.UndefOr[Boolean] = js.undefined
   }
   object IncludeConfig {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Literal extends StObject {
     
-    var literal: Boolean = js.native
+    var literal: Boolean
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object Literal {
     
@@ -58,10 +55,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Separator extends StObject {
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object Separator {
     

@@ -2,68 +2,66 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveToNewOwnersRoot extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** A plain text custom message to include in the notification email. */
-  var emailMessage: js.UndefOr[String] = js.native
+  var emailMessage: js.UndefOr[String] = js.undefined
   
   /** Deprecated. See moveToNewOwnersRoot for details. */
-  var enforceSingleParent: js.UndefOr[Boolean] = js.native
+  var enforceSingleParent: js.UndefOr[Boolean] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** The ID of the file or shared drive. */
-  var fileId: String = js.native
+  var fileId: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter will only take effect if the item is not in a shared drive and the request is attempting to transfer the ownership of the item. If set to true, the item will be
     * moved to the new owner's My Drive root folder and all prior parents removed. If set to false, parents are not changed.
     */
-  var moveToNewOwnersRoot: js.UndefOr[Boolean] = js.native
+  var moveToNewOwnersRoot: js.UndefOr[Boolean] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to send a notification email when sharing to users or groups. This defaults to true for users and groups, and is not allowed for other requests. It must not be disabled
     * for ownership transfers.
     */
-  var sendNotificationEmail: js.UndefOr[Boolean] = js.native
+  var sendNotificationEmail: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the requesting application supports both My Drives and shared drives. */
-  var supportsAllDrives: js.UndefOr[Boolean] = js.native
+  var supportsAllDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated use supportsAllDrives instead. */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to transfer ownership to the specified user and downgrade the current owner to a writer. This parameter is required as an acknowledgement of the side effect. */
-  var transferOwnership: js.UndefOr[Boolean] = js.native
+  var transferOwnership: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Issue the request as a domain administrator; if set to true, then the requester will be granted access if the file ID parameter refers to a shared drive and the requester is an
     * administrator of the domain to which the shared drive belongs.
     */
-  var useDomainAdminAccess: js.UndefOr[Boolean] = js.native
+  var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
 }
 object MoveToNewOwnersRoot {
   

@@ -2,7 +2,6 @@ package typings.activexShell.Shell32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FileSearchBand Class */
@@ -23,14 +22,9 @@ trait FileSearchBand extends StObject {
   
   /** method SetSearchParameters */
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean): Unit = js.native
-  def SetSearchParameters(
-    pbstrSearchID: String,
-    bNavToResults: Boolean,
-    pvarScope: js.UndefOr[scala.Nothing],
-    pvarQueryFile: js.Any
-  ): Unit = js.native
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: js.Any): Unit = js.native
   def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: js.Any, pvarQueryFile: js.Any): Unit = js.native
+  def SetSearchParameters(pbstrSearchID: String, bNavToResults: Boolean, pvarScope: Unit, pvarQueryFile: js.Any): Unit = js.native
   
   @JSName("Shell32.FileSearchBand_typekey")
   var Shell32DotFileSearchBand_typekey: FileSearchBand = js.native

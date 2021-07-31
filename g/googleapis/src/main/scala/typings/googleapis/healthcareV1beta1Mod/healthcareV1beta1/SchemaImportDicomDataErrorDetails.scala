@@ -2,13 +2,11 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns the errors encountered during DICOM store import.
   */
-@js.native
 trait SchemaImportDicomDataErrorDetails extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaImportDicomDataErrorDetails extends StObject {
     * encountered in imports of individual resources (for example, a Cloud
     * Storage object).
     */
-  var sampleErrors: js.UndefOr[js.Array[SchemaErrorDetail]] = js.native
+  var sampleErrors: js.UndefOr[js.Array[SchemaErrorDetail]] = js.undefined
 }
 object SchemaImportDicomDataErrorDetails {
   

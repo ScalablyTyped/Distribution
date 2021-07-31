@@ -2,51 +2,49 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Poi extends StObject {
   
-  var adcode: String = js.native
+  var adcode: String
   
-  var address: String = js.native
+  var address: String
   
-  var adname: String = js.native
+  var adname: String
   
-  var citycode: String = js.native
+  var citycode: String
   
-  var cityname: String = js.native
+  var cityname: String
   
-  var discount: Boolean = js.native
+  var discount: Boolean
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var email: String = js.native
+  var email: String
   
-  var entr_location: LngLat = js.native
+  var entr_location: LngLat
   
-  var exit_location: LngLat = js.native
+  var exit_location: LngLat
   
-  var groupbuy: Boolean = js.native
+  var groupbuy: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var location: LngLat = js.native
+  var location: LngLat
   
-  var name: String = js.native
+  var name: String
   
-  var pcode: String = js.native
+  var pcode: String
   
-  var pname: String = js.native
+  var pname: String
   
-  var postcode: String = js.native
+  var postcode: String
   
-  var tel: String = js.native
+  var tel: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var website: String = js.native
+  var website: String
 }
 object Poi {
   

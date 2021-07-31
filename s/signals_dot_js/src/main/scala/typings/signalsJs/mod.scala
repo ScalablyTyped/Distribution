@@ -4,7 +4,6 @@ import typings.signalsJs.ioncesignalMod.IOnceSignal
 import typings.signalsJs.islotMod.ISlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,6 @@ object mod {
   @js.native
   class DeluxeSignal protected ()
     extends typings.signalsJs.deluxeSignalMod.DeluxeSignal {
-    def this(target: js.UndefOr[scala.Nothing], valueClasses: js.Any*) = this()
     /**
       * Creates a DeluxeSignal instance to dispatch events on behalf of a target object.
       * @param    target The object the signal is dispatching events on behalf of.
@@ -31,6 +29,7 @@ object mod {
       * but this constructor has logic to support super(valueClasses).
       */
     def this(target: js.Object, valueClasses: js.Any*) = this()
+    def this(target: Unit, valueClasses: js.Any*) = this()
   }
   
   @JSImport("signals.js", "GenericEvent")
@@ -160,8 +159,8 @@ object mod {
       */
     def this(listener: js.Function, signal: IOnceSignal) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean) = this()
-    def this(listener: js.Function, signal: IOnceSignal, once: js.UndefOr[scala.Nothing], priority: Double) = this()
     def this(listener: js.Function, signal: IOnceSignal, once: Boolean, priority: Double) = this()
+    def this(listener: js.Function, signal: IOnceSignal, once: Unit, priority: Double) = this()
   }
   
   @JSImport("signals.js", "SlotList")

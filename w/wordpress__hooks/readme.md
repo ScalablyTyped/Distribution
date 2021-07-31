@@ -11,12 +11,12 @@ WordPress hooks library.
 | Full name          | @wordpress/hooks |
 | Keywords           | wordpress, gutenberg, hooks |
 | # releases         | 14 |
-| # dependents       | 23 |
-| # downloads        | 865077 |
+| # dependents       | 27 |
+| # downloads        | 1094632 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/hooks/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/hooks/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fhooks)

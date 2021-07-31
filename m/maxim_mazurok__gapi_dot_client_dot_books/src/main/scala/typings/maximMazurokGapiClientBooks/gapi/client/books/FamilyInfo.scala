@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.maximMazurokGapiClientBooks.anon.AcquirePermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FamilyInfo extends StObject {
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Family membership info of the user that made the request. */
-  var membership: js.UndefOr[AcquirePermission] = js.native
+  var membership: js.UndefOr[AcquirePermission] = js.undefined
 }
 object FamilyInfo {
   

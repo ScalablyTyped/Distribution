@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartApplicationRequest extends StObject {
   
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * Identifies the run configuration (start parameters) of a Kinesis Data Analytics application.
     */
-  var RunConfiguration: typings.awsSdk.kinesisanalyticsv2Mod.RunConfiguration = js.native
+  var RunConfiguration: typings.awsSdk.kinesisanalyticsv2Mod.RunConfiguration
 }
 object StartApplicationRequest {
   

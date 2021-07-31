@@ -2,40 +2,38 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Statistics about a channel: number of subscribers, number of videos in the
   * channel, etc.
   */
-@js.native
 trait SchemaChannelStatistics extends StObject {
   
   /**
     * The number of comments for the channel.
     */
-  var commentCount: js.UndefOr[String] = js.native
+  var commentCount: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the number of subscribers is shown for this user.
     */
-  var hiddenSubscriberCount: js.UndefOr[Boolean] = js.native
+  var hiddenSubscriberCount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of subscribers that the channel has.
     */
-  var subscriberCount: js.UndefOr[String] = js.native
+  var subscriberCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of videos uploaded to the channel.
     */
-  var videoCount: js.UndefOr[String] = js.native
+  var videoCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times the channel has been viewed.
     */
-  var viewCount: js.UndefOr[String] = js.native
+  var viewCount: js.UndefOr[String] = js.undefined
 }
 object SchemaChannelStatistics {
   

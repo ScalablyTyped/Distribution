@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An application error.
   * @since OOo 1.1.2
   */
-@js.native
-trait InteractiveAppException extends ClassifiedInteractionRequest {
+trait InteractiveAppException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** The type of application error. */
-  var Code: Double = js.native
+  var Code: Double
 }
 object InteractiveAppException {
   

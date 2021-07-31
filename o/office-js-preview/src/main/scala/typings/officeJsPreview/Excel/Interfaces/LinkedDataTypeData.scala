@@ -8,11 +8,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `linkedDataType.toJSON()`. */
-@js.native
 trait LinkedDataTypeData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var dataProvider: js.UndefOr[String] = js.native
+  var dataProvider: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -32,7 +30,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var lastRefreshed: js.UndefOr[Date] = js.native
+  var lastRefreshed: js.UndefOr[Date] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var periodicRefreshInterval: js.UndefOr[Double] = js.native
+  var periodicRefreshInterval: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var refreshMode: js.UndefOr[LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic] = js.native
+  var refreshMode: js.UndefOr[LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var serviceId: js.UndefOr[Double] = js.native
+  var serviceId: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait LinkedDataTypeData extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var supportedRefreshModes: js.UndefOr[js.Array[LinkedDataTypeRefreshMode]] = js.native
+  var supportedRefreshModes: js.UndefOr[js.Array[LinkedDataTypeRefreshMode]] = js.undefined
 }
 object LinkedDataTypeData {
   

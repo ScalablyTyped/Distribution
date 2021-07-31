@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDocumentRepository
   * @since OOo 3.2
   */
-@js.native
 trait XRepository extends StObject {
   
   /**
@@ -30,13 +28,13 @@ trait XRepository extends StObject {
     * @returns a list containing the names of the graphs in the repository
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  val GraphNames: SafeArray[XURI] = js.native
+  val GraphNames: SafeArray[XURI]
   
   /**
     * creates a fresh unique blank node.
     * @returns a newly generated blank node which is unique in this repository
     */
-  def createBlankNode(): XBlankNode = js.native
+  def createBlankNode(): XBlankNode
   
   /**
     * creates a graph with the given name.
@@ -48,7 +46,7 @@ trait XRepository extends StObject {
     * @throws com::sun::star::container::ElementExistException if a graph with the given GraphName already exists
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def createGraph(GraphName: XURI): XNamedGraph = js.native
+  def createGraph(GraphName: XURI): XNamedGraph
   
   /**
     * destroys the graph with the given name, and removes it from the repository.
@@ -59,7 +57,7 @@ trait XRepository extends StObject {
     * @throws com::sun::star::container::NoSuchElementException if a graph with the given GraphName does not exist
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def destroyGraph(GraphName: XURI): Unit = js.native
+  def destroyGraph(GraphName: XURI): Unit
   
   /**
     * exports a named graph from the repository.
@@ -77,7 +75,7 @@ trait XRepository extends StObject {
     * @throws RepositoryException if an error occurs when accessing the repository.
     * @throws com::sun::star::io::IOException if an I/O error occurs.
     */
-  def exportGraph(Format: Double, OutStream: XOutputStream, GraphName: XURI, BaseURI: XURI): Unit = js.native
+  def exportGraph(Format: Double, OutStream: XOutputStream, GraphName: XURI, BaseURI: XURI): Unit
   
   /**
     * gets a graph by its name.
@@ -86,14 +84,14 @@ trait XRepository extends StObject {
     * @throws com::sun::star::lang::IllegalArgumentException if the given GraphName is invalid
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getGraph(GraphName: XURI): XNamedGraph = js.native
+  def getGraph(GraphName: XURI): XNamedGraph
   
   /**
     * gets the names of all the graphs in the repository.
     * @returns a list containing the names of the graphs in the repository
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getGraphNames(): SafeArray[XURI] = js.native
+  def getGraphNames(): SafeArray[XURI]
   
   /**
     * gets matching RDF statements from the repository.
@@ -107,7 +105,7 @@ trait XRepository extends StObject {
     * @see XNamedGraph.getStatements
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getStatements(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration = js.native
+  def getStatements(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration
   
   /**
     * imports a named graph into the repository.
@@ -128,7 +126,7 @@ trait XRepository extends StObject {
     * @throws RepositoryException if an error occurs when accessing the repository.
     * @throws com::sun::star::io::IOException if an I/O error occurs.
     */
-  def importGraph(Format: Double, InStream: XInputStream, GraphName: XURI, BaseURI: XURI): XNamedGraph = js.native
+  def importGraph(Format: Double, InStream: XInputStream, GraphName: XURI, BaseURI: XURI): XNamedGraph
   
   /**
     * executes a SPARQL "ASK" query.
@@ -139,7 +137,7 @@ trait XRepository extends StObject {
     * @throws QueryException if the query is malformed, or evaluation fails
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def queryAsk(Query: String): Boolean = js.native
+  def queryAsk(Query: String): Boolean
   
   /**
     * executes a SPARQL "CONSTRUCT" query.
@@ -151,7 +149,7 @@ trait XRepository extends StObject {
     * @throws QueryException if the query is malformed, or evaluation fails
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def queryConstruct(Query: String): XEnumeration = js.native
+  def queryConstruct(Query: String): XEnumeration
   
   /**
     * executes a SPARQL "SELECT" query.
@@ -164,7 +162,7 @@ trait XRepository extends StObject {
     * @throws QueryException if the query is malformed, or evaluation fails
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def querySelect(Query: String): XQuerySelectResult = js.native
+  def querySelect(Query: String): XQuerySelectResult
 }
 object XRepository {
   

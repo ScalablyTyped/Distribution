@@ -3,31 +3,29 @@ package typings.aliApp.anon
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceId extends StObject {
   
   /**
     * 蓝牙特征值的 uuid
     */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 蓝牙特征值对应 service 的 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /**
     * 特征值最新的16进制值
     */
-  var value: ArrayBuffer = js.native
+  var value: ArrayBuffer
 }
 object DeviceId {
   

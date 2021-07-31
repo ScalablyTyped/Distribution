@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringColumnStatisticsData extends StObject {
   
   /**
     * The average string length in the column.
     */
-  var AverageLength: NonNegativeDouble = js.native
+  var AverageLength: NonNegativeDouble
   
   /**
     * The size of the longest string in the column.
     */
-  var MaximumLength: NonNegativeLong = js.native
+  var MaximumLength: NonNegativeLong
   
   /**
     * The number of distinct values in a column.
     */
-  var NumberOfDistinctValues: NonNegativeLong = js.native
+  var NumberOfDistinctValues: NonNegativeLong
   
   /**
     * The number of null values in the column.
     */
-  var NumberOfNulls: NonNegativeLong = js.native
+  var NumberOfNulls: NonNegativeLong
 }
 object StringColumnStatisticsData {
   

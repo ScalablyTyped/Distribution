@@ -2,7 +2,6 @@ package typings.angularQSpread
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -19,7 +18,7 @@ object mod {
     def spread[TResult](successCallback: js.Function1[/* repeated */ js.Any, IPromise[TResult] | TResult]): IPromise[TResult] = js.native
     def spread[TResult](
       successCallback: js.Function1[/* repeated */ js.Any, IPromise[TResult] | TResult],
-      errorCallback: js.Function1[/* reason */ js.Any, _]
+      errorCallback: js.Function1[/* reason */ js.Any, js.Any]
     ): IPromise[TResult] = js.native
   }
 }

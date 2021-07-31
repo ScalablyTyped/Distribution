@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -43,22 +42,21 @@ object mod extends Shortcut {
   
   type Mods = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var classSeparator: js.UndefOr[String] = js.native
+    var classSeparator: js.UndefOr[String] = js.undefined
     
-    var elementSeparator: js.UndefOr[String] = js.native
+    var elementSeparator: js.UndefOr[String] = js.undefined
     
-    var isFullBoolValue: js.UndefOr[Boolean] = js.native
+    var isFullBoolValue: js.UndefOr[Boolean] = js.undefined
     
-    var isFullModifier: js.UndefOr[Boolean] = js.native
+    var isFullModifier: js.UndefOr[Boolean] = js.undefined
     
-    var modSeparator: js.UndefOr[String] = js.native
+    var modSeparator: js.UndefOr[String] = js.undefined
     
-    var modValueSeparator: js.UndefOr[String] = js.native
+    var modValueSeparator: js.UndefOr[String] = js.undefined
     
-    var tailSpace: js.UndefOr[String] = js.native
+    var tailSpace: js.UndefOr[String] = js.undefined
   }
   object Options {
     

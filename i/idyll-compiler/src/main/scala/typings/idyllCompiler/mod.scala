@@ -2,7 +2,6 @@ package typings.idyllCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,24 +15,23 @@ object mod {
     * Otherwise, compile returns the AST synchronously
     *
     */
+  @scala.inline
+  def apply(input: String): js.Promise[AST] | AST = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[AST] | AST]
+  @scala.inline
+  def apply(input: String, options: Unit, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  @scala.inline
+  def apply(input: String, options: Options): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  @scala.inline
+  def apply(input: String, options: Options, callback: js.Function0[Unit]): js.Promise[AST] | AST = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[AST] | AST]
+  
   @JSImport("idyll-compiler", JSImport.Namespace)
   @js.native
-  def apply(input: String): js.Promise[AST] | AST = js.native
-  @JSImport("idyll-compiler", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): js.Promise[AST] | AST = js.native
-  @JSImport("idyll-compiler", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Promise[AST] | AST = js.native
-  @JSImport("idyll-compiler", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options, callback: js.Function0[Unit]): js.Promise[AST] | AST = js.native
+  val ^ : js.Any = js.native
   
   type AST = js.Array[Node]
   
   type Node = TreeNode | String
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -41,17 +39,17 @@ object mod {
       * Otherwise, a promise is returned
       *
       */
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
     /**
       * compiler plugins
       * If provided, compiler always compiles asynchronously
       */
-    var postProcessors: js.UndefOr[js.Array[PostProcessor]] = js.native
+    var postProcessors: js.UndefOr[js.Array[PostProcessor]] = js.undefined
     
-    var smartquotes: js.UndefOr[Boolean] = js.native
+    var smartquotes: js.UndefOr[Boolean] = js.undefined
     
-    var spellcheck: js.UndefOr[Boolean] = js.native
+    var spellcheck: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -128,6 +126,5 @@ object mod {
   type RecursiveNode[T] = js.Tuple3[String, js.Array[Property], js.Array[T]]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped [string, std.Array<idyll-compiler.idyll-compiler.Property>, std.Array<idyll-compiler.idyll-compiler.Node>] */ @js.native
-  trait TreeNode extends StObject
+  - Dropped [string, std.Array<idyll-compiler.idyll-compiler.Property>, std.Array<idyll-compiler.idyll-compiler.Node>] */ trait TreeNode extends StObject
 }

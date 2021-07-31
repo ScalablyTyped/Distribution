@@ -2,59 +2,57 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeMapOptions extends StObject {
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var forceIFrame: js.UndefOr[Boolean] = js.native
+  var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var headerColor: js.UndefOr[String] = js.native
+  var headerColor: js.UndefOr[String] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.native
+  var headerHeight: js.UndefOr[Double] = js.undefined
   
-  var headerHighlightColor: js.UndefOr[String] = js.native
+  var headerHighlightColor: js.UndefOr[String] = js.undefined
   
-  var hintOpacity: js.UndefOr[Double] = js.native
+  var hintOpacity: js.UndefOr[Double] = js.undefined
   
-  var maxColor: js.UndefOr[String] = js.native
+  var maxColor: js.UndefOr[String] = js.undefined
   
-  var maxColorValue: js.UndefOr[Double] = js.native
+  var maxColorValue: js.UndefOr[Double] = js.undefined
   
-  var maxDepth: js.UndefOr[Double] = js.native
+  var maxDepth: js.UndefOr[Double] = js.undefined
   
-  var maxHighlightColor: js.UndefOr[String] = js.native
+  var maxHighlightColor: js.UndefOr[String] = js.undefined
   
-  var maxPostDepth: js.UndefOr[Double] = js.native
+  var maxPostDepth: js.UndefOr[Double] = js.undefined
   
-  var midColor: js.UndefOr[String] = js.native
+  var midColor: js.UndefOr[String] = js.undefined
   
-  var midHighlightColor: js.UndefOr[String] = js.native
+  var midHighlightColor: js.UndefOr[String] = js.undefined
   
-  var minColor: js.UndefOr[String] = js.native
+  var minColor: js.UndefOr[String] = js.undefined
   
-  var minColorValue: js.UndefOr[Double] = js.native
+  var minColorValue: js.UndefOr[Double] = js.undefined
   
-  var minHighlightColor: js.UndefOr[String] = js.native
+  var minHighlightColor: js.UndefOr[String] = js.undefined
   
-  var showScale: js.UndefOr[Boolean] = js.native
+  var showScale: js.UndefOr[Boolean] = js.undefined
   
-  var showTooltips: js.UndefOr[Boolean] = js.native
+  var showTooltips: js.UndefOr[Boolean] = js.undefined
   
-  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.native
+  var titleTextStyle: js.UndefOr[ChartTextStyle] = js.undefined
   
-  var useWeightedAverageForAggregation: js.UndefOr[Boolean] = js.native
+  var useWeightedAverageForAggregation: js.UndefOr[Boolean] = js.undefined
 }
 object TreeMapOptions {
   

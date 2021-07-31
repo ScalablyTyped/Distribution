@@ -6,7 +6,6 @@ import typings.winjs.WinJS.UI.Animation.IAnimationMethodResponse
 import typings.winjs.anon.Entrance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,24 +13,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 **/
 object Animation {
   
+  @JSImport("winjs", "UI.Animation")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Execute a continuum animation, scaling down the incoming page while scaling, rotating, and translating the incoming item.
     * @param page Single element to be scaled down that is the page root and contains the incoming item.
     * @param item Single element to be scaled, rotated, and translated into its final position on the page.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.continuumBackwardIn")
-  @js.native
-  def continuumBackwardIn(page: js.Any, item: js.Any): Promise[_] = js.native
+  @scala.inline
+  def continuumBackwardIn(page: js.Any, item: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("continuumBackwardIn")(page.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a continuum animation, scaling down the outgoing page while.
     * @param page Single element to be scaled down that is the page root.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.continuumBackwardOut")
-  @js.native
-  def continuumBackwardOut(page: js.Any): Promise[_] = js.native
+  @scala.inline
+  def continuumBackwardOut(page: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("continuumBackwardOut")(page.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a continuum animation, scaling up the incoming page while scaling, rotating, and translating the incoming item.
@@ -40,9 +41,8 @@ object Animation {
     * @param itemContent Content of the item that will be scaled and rotated as part of the continuum animation.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.continuumForwardIn")
-  @js.native
-  def continuumForwardIn(page: js.Any, itemRoot: js.Any, itemContent: js.Any): Promise[_] = js.native
+  @scala.inline
+  def continuumForwardIn(page: js.Any, itemRoot: js.Any, itemContent: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("continuumForwardIn")(page.asInstanceOf[js.Any], itemRoot.asInstanceOf[js.Any], itemContent.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a continuum animation, scaling down the outgoing page while scaling, rotating, and translating the outgoing item.
@@ -50,9 +50,8 @@ object Animation {
     * @param item Single element to be scaled, rotated, and translated away from the outgoing page.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.continuumForwardOut")
-  @js.native
-  def continuumForwardOut(page: js.Any, item: js.Any): Promise[_] = js.native
+  @scala.inline
+  def continuumForwardOut(page: js.Any, item: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("continuumForwardOut")(page.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   //#region Functions
   /**
@@ -61,9 +60,8 @@ object Animation {
     * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createAddToListAnimation")
-  @js.native
-  def createAddToListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createAddToListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddToListAnimation")(added.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that adds an item or items to a list of search results.
@@ -71,9 +69,8 @@ object Animation {
     * @param affected Element or elements affected by the added items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createAddToSearchListAnimation")
-  @js.native
-  def createAddToSearchListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createAddToSearchListAnimation(added: js.Any, affected: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createAddToSearchListAnimation")(added.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that collapses a list.
@@ -81,9 +78,8 @@ object Animation {
     * @param affected Element or elements affected by the hidden items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createCollapseAnimation")
-  @js.native
-  def createCollapseAnimation(hidden: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createCollapseAnimation(hidden: js.Any, affected: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createCollapseAnimation")(hidden.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that removes an item or items from a list.
@@ -91,9 +87,8 @@ object Animation {
     * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createDeleteFromListAnimation")
-  @js.native
-  def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createDeleteFromListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeleteFromListAnimation")(deleted.asInstanceOf[js.Any], remaining.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that removes an item or items from a list of search results.
@@ -101,9 +96,8 @@ object Animation {
     * @param remaining Element or elements affected by the removal of the deleted items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createDeleteFromSearchListAnimation")
-  @js.native
-  def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createDeleteFromSearchListAnimation(deleted: js.Any, remaining: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createDeleteFromSearchListAnimation")(deleted.asInstanceOf[js.Any], remaining.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that expands a list.
@@ -111,9 +105,8 @@ object Animation {
     * @param affected Element or elements affected by the newly revealed items. Typically, this is all other items displayed in the list.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createExpandAnimation")
-  @js.native
-  def createExpandAnimation(revealed: js.Any, affected: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createExpandAnimation(revealed: js.Any, affected: js.Any): IAnimationMethodResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("createExpandAnimation")(revealed.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an exit and entrance animation to play for a page navigation given the current and incoming pages'
@@ -123,27 +116,24 @@ object Animation {
     * @param movingBackwards Boolean value for whether the navigation is moving backwards.
     * @returns an object containing the exit and entrance animations to play based on the parameters given.
     **/
-  @JSImport("winjs", "UI.Animation.createPageNavigationAnimations")
-  @js.native
-  def createPageNavigationAnimations(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): Entrance = js.native
+  @scala.inline
+  def createPageNavigationAnimations(currentPreferredAnimation: String, nextPreferredAnimation: String, movingBackwards: Boolean): Entrance = (^.asInstanceOf[js.Dynamic].applyDynamic("createPageNavigationAnimations")(currentPreferredAnimation.asInstanceOf[js.Any], nextPreferredAnimation.asInstanceOf[js.Any], movingBackwards.asInstanceOf[js.Any])).asInstanceOf[Entrance]
   
   /**
     * Creates an object that performs a peek animation.
     * @param element Element or elements involved in the peek.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createPeekAnimation")
-  @js.native
-  def createPeekAnimation(element: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createPeekAnimation(element: js.Any): IAnimationMethodResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("createPeekAnimation")(element.asInstanceOf[js.Any]).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Creates an object that performs an animation that moves an item or items.
     * @param element Element or elements involved in the reposition.
     * @returns An object whose execute method is used to execute the animation. The execute method returns a Promise object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.createRepositionAnimation")
-  @js.native
-  def createRepositionAnimation(element: js.Any): IAnimationMethodResponse = js.native
+  @scala.inline
+  def createRepositionAnimation(element: js.Any): IAnimationMethodResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("createRepositionAnimation")(element.asInstanceOf[js.Any]).asInstanceOf[IAnimationMethodResponse]
   
   /**
     * Performs an animation that fades an item or items in, fading out existing items that occupy the same space.
@@ -151,9 +141,8 @@ object Animation {
     * @param outgoing Element or elements being replaced.
     * @returns An object that completes when the animation has finished.
     **/
-  @JSImport("winjs", "UI.Animation.crossFade")
-  @js.native
-  def crossFade(incoming: js.Any, outgoing: js.Any): Promise[_] = js.native
+  @scala.inline
+  def crossFade(incoming: js.Any, outgoing: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("crossFade")(incoming.asInstanceOf[js.Any], outgoing.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when a dragged object is moved such that dropping it in that position would move other items. The potentially affected items are animated out of the way to show where the object would be dropped.
@@ -161,21 +150,18 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.dragBetweenEnter")
-  @js.native
-  def dragBetweenEnter(target: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.dragBetweenEnter")
-  @js.native
-  def dragBetweenEnter(target: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def dragBetweenEnter(target: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragBetweenEnter")(target.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def dragBetweenEnter(target: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragBetweenEnter")(target.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when a dragged object is moved away from items that it had previously involved in a dragBetweenEnter animation. The affected objects are animated back to their original positions.
     * @param target Element or elements that the dragged object would no longer cause to be displaced, due to its moving away. This should be the same element or element collection passed as the target parameter in the dragBetweenEnter animation.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.dragBetweenLeave")
-  @js.native
-  def dragBetweenLeave(target: js.Any): Promise[_] = js.native
+  @scala.inline
+  def dragBetweenLeave(target: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragBetweenLeave")(target.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when the user finishes dragging an object.
@@ -184,18 +170,14 @@ object Animation {
     * @param affected Element or elements whose position the dropped object affects. Typically, this is all other items in a reorderable list. This should be the same element or element collection passed as the affected parameter in the dragSourceStart animation.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.dragSourceEnd")
-  @js.native
-  def dragSourceEnd(dragSource: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.dragSourceEnd")
-  @js.native
-  def dragSourceEnd(dragSource: js.Any, offset: js.UndefOr[scala.Nothing], affected: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.dragSourceEnd")
-  @js.native
-  def dragSourceEnd(dragSource: js.Any, offset: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.dragSourceEnd")
-  @js.native
-  def dragSourceEnd(dragSource: js.Any, offset: js.Any, affected: js.Any): Promise[_] = js.native
+  @scala.inline
+  def dragSourceEnd(dragSource: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceEnd")(dragSource.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def dragSourceEnd(dragSource: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceEnd")(dragSource.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def dragSourceEnd(dragSource: js.Any, offset: js.Any, affected: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceEnd")(dragSource.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def dragSourceEnd(dragSource: js.Any, offset: Unit, affected: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceEnd")(dragSource.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when the user begins to drag an object.
@@ -203,48 +185,42 @@ object Animation {
     * @param affected Element or elements whose position is affected by the movement of the dragged object. Typically, this is all other items in a reorderable list.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.dragSourceStart")
-  @js.native
-  def dragSourceStart(dragSource: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.dragSourceStart")
-  @js.native
-  def dragSourceStart(dragSource: js.Any, affected: js.Any): Promise[_] = js.native
+  @scala.inline
+  def dragSourceStart(dragSource: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceStart")(dragSource.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def dragSourceStart(dragSource: js.Any, affected: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("dragSourceStart")(dragSource.asInstanceOf[js.Any], affected.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute the incoming phase of the drill in animation, scaling up the incoming page while fading it in.
     * @param incomingPage Element to be scaled up and faded in.
     * @returns Promise object that completes when the animation is complete.
     **/
-  @JSImport("winjs", "UI.Animation.drillInIncoming")
-  @js.native
-  def drillInIncoming(incomingPage: HTMLElement): Promise[_] = js.native
+  @scala.inline
+  def drillInIncoming(incomingPage: HTMLElement): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("drillInIncoming")(incomingPage.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute the outgoing phase of the drill in animation, scaling up the outgoing page while fading it out.
     * @param incomingPage Element to be scaled up and faded out.
     * @returns Promise object that completes when the animation is complete.
     **/
-  @JSImport("winjs", "UI.Animation.drillInOutgoing")
-  @js.native
-  def drillInOutgoing(outgoingPage: HTMLElement): Promise[_] = js.native
+  @scala.inline
+  def drillInOutgoing(outgoingPage: HTMLElement): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("drillInOutgoing")(outgoingPage.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute the incoming phase of the drill out animation, scaling down the incoming page while fading it in.
     * @param incomingPage Element to be scaled up and faded in.
     * @returns Promise object that completes when the animation is complete.
     **/
-  @JSImport("winjs", "UI.Animation.drillOutIncoming")
-  @js.native
-  def drillOutIncoming(incomingPage: HTMLElement): Promise[_] = js.native
+  @scala.inline
+  def drillOutIncoming(incomingPage: HTMLElement): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("drillOutIncoming")(incomingPage.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute the outgoing phase of the drill out animation, scaling down the outgoing page while fading it out.
     * @param outgoingPage Element to be scaled down and faded out.
     * @returns Promise object that completes when the animation is complete.
     **/
-  @JSImport("winjs", "UI.Animation.drillOutOutgoing")
-  @js.native
-  def drillOutOutgoing(outgoingPage: HTMLElement): Promise[_] = js.native
+  @scala.inline
+  def drillOutOutgoing(outgoingPage: HTMLElement): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("drillOutOutgoing")(outgoingPage.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that displays one or more elements on a page.
@@ -253,18 +229,14 @@ object Animation {
     * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.enterContent")
-  @js.native
-  def enterContent(incoming: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.enterContent")
-  @js.native
-  def enterContent(incoming: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.enterContent")
-  @js.native
-  def enterContent(incoming: js.Any, offset: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.enterContent")
-  @js.native
-  def enterContent(incoming: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  @scala.inline
+  def enterContent(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enterContent")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def enterContent(incoming: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("enterContent")(incoming.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def enterContent(incoming: js.Any, offset: js.Any, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("enterContent")(incoming.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def enterContent(incoming: js.Any, offset: Unit, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("enterContent")(incoming.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that shows a new page of content, either when transitioning between pages in a running app or when displaying the first content in a newly launched app.
@@ -272,12 +244,10 @@ object Animation {
     * @param offset An initial offset where the element or elements begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.enterPage")
-  @js.native
-  def enterPage(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.enterPage")
-  @js.native
-  def enterPage(element: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def enterPage(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("enterPage")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def enterPage(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("enterPage")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that hides one or more elements on a page.
@@ -285,12 +255,10 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.exitContent")
-  @js.native
-  def exitContent(outgoing: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.exitContent")
-  @js.native
-  def exitContent(outgoing: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def exitContent(outgoing: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("exitContent")(outgoing.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def exitContent(outgoing: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("exitContent")(outgoing.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that dismisses the current page when transitioning between pages in an app.
@@ -298,30 +266,26 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.exitPage")
-  @js.native
-  def exitPage(outgoing: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.exitPage")
-  @js.native
-  def exitPage(outgoing: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def exitPage(outgoing: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("exitPage")(outgoing.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def exitPage(outgoing: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("exitPage")(outgoing.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that fades an item or set of items into view.
     * @param shown Element or elements being faded in.
     * @returns An object that completes when the animation has finished. Use this object when subsequent actions need this animation to finish before they take place.
     **/
-  @JSImport("winjs", "UI.Animation.fadeIn")
-  @js.native
-  def fadeIn(shown: js.Any): Promise[_] = js.native
+  @scala.inline
+  def fadeIn(shown: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeIn")(shown.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that fades an item or set of items out of view.
     * @param hidden Element or elements being faded out.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.fadeOut")
-  @js.native
-  def fadeOut(hidden: js.Any): Promise[_] = js.native
+  @scala.inline
+  def fadeOut(hidden: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fadeOut")(hidden.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that hides edge-based user interface (UI).
@@ -330,18 +294,14 @@ object Animation {
     * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.hideEdgeUI")
-  @js.native
-  def hideEdgeUI(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.hideEdgeUI")
-  @js.native
-  def hideEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.hideEdgeUI")
-  @js.native
-  def hideEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.hideEdgeUI")
-  @js.native
-  def hideEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  @scala.inline
+  def hideEdgeUI(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hideEdgeUI")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def hideEdgeUI(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("hideEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def hideEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("hideEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def hideEdgeUI(element: js.Any, offset: Unit, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("hideEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that hides a panel.
@@ -349,39 +309,34 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements end the animation just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.hidePanel")
-  @js.native
-  def hidePanel(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.hidePanel")
-  @js.native
-  def hidePanel(element: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def hidePanel(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hidePanel")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def hidePanel(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("hidePanel")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that removes pop-up user interface (UI).
     * @param element Element or elements that are being hidden.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.hidePopup")
-  @js.native
-  def hidePopup(element: js.Any): Promise[_] = js.native
+  @scala.inline
+  def hidePopup(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("hidePopup")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when a pointer is pressed on an object.
     * @param element Element or elements on which the pointer is pressed.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.pointerDown")
-  @js.native
-  def pointerDown(element: js.Any): Promise[_] = js.native
+  @scala.inline
+  def pointerDown(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerDown")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation when a pointer is released.
     * @param element Element or elements that the pointer was pressed on.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.pointerUp")
-  @js.native
-  def pointerUp(element: js.Any): Promise[_] = js.native
+  @scala.inline
+  def pointerUp(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerUp")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that slides a narrow, edge-based user interface (UI) into view.
@@ -390,18 +345,14 @@ object Animation {
     * @param options Optional. Set this value to { mechanism: "transition" } to play the animation using CSS transitions instead of the default CSS animations. In some cases this can result in improved performance.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.showEdgeUI")
-  @js.native
-  def showEdgeUI(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.showEdgeUI")
-  @js.native
-  def showEdgeUI(element: js.Any, offset: js.UndefOr[scala.Nothing], options: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.showEdgeUI")
-  @js.native
-  def showEdgeUI(element: js.Any, offset: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.showEdgeUI")
-  @js.native
-  def showEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[_] = js.native
+  @scala.inline
+  def showEdgeUI(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showEdgeUI")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def showEdgeUI(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def showEdgeUI(element: js.Any, offset: js.Any, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def showEdgeUI(element: js.Any, offset: Unit, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showEdgeUI")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that slides a large panel user interface (UI) into view.
@@ -409,12 +360,10 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.showPanel")
-  @js.native
-  def showPanel(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.showPanel")
-  @js.native
-  def showPanel(element: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def showPanel(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPanel")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def showPanel(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showPanel")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that displays a pop-up user interface (UI).
@@ -422,21 +371,18 @@ object Animation {
     * @param offset Initial offsets where the animated objects begin relative to their final position at the end of the animation. Offsets should be the chosen so that the elements begin the animation from just off-screen. Set this parameter to null to use the recommended default offset. Note When the element parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.showPopup")
-  @js.native
-  def showPopup(element: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.showPopup")
-  @js.native
-  def showPopup(element: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def showPopup(element: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(element.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def showPopup(element: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("showPopup")(element.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide down animation.
     * @param incoming Single element or collection of elements to animate sliding down.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideDown")
-  @js.native
-  def slideDown(incoming: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideDown(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("slideDown")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide in from right to left animation.
@@ -446,9 +392,8 @@ object Animation {
     * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideLeftIn")
-  @js.native
-  def slideLeftIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideLeftIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("slideLeftIn")(page.asInstanceOf[js.Any], first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide out from right to left animation.
@@ -458,9 +403,8 @@ object Animation {
     * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideLeftOut")
-  @js.native
-  def slideLeftOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideLeftOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("slideLeftOut")(page.asInstanceOf[js.Any], first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide in from left to right animation.
@@ -470,9 +414,8 @@ object Animation {
     * @param third Third element or collection of elements to animate sliding in, which will be offset slightly farther than the second.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideRightIn")
-  @js.native
-  def slideRightIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideRightIn(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("slideRightIn")(page.asInstanceOf[js.Any], first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide out from left to right animation.
@@ -482,18 +425,16 @@ object Animation {
     * @param third Third element or collection of elements to animate sliding out, which will be offset slightly farther than the second.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideRightOut")
-  @js.native
-  def slideRightOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideRightOut(page: js.Any, first: js.Any, second: js.Any, third: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("slideRightOut")(page.asInstanceOf[js.Any], first.asInstanceOf[js.Any], second.asInstanceOf[js.Any], third.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a slide up animation.
     * @param incoming Single element or collection of elements to animate sliding up.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.slideUp")
-  @js.native
-  def slideUp(incoming: js.Any): Promise[_] = js.native
+  @scala.inline
+  def slideUp(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("slideUp")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs a deselection animation in response to a swipe interaction.
@@ -501,9 +442,8 @@ object Animation {
     * @param selection Element or elements that represent the selection, typically a check mark.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.swipeDeselect")
-  @js.native
-  def swipeDeselect(deselected: js.Any, selection: js.Any): Promise[_] = js.native
+  @scala.inline
+  def swipeDeselect(deselected: js.Any, selection: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeDeselect")(deselected.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that reveals an item or items in response to a swipe interaction.
@@ -511,12 +451,10 @@ object Animation {
     * @param offset An initial offset where the animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.swipeReveal")
-  @js.native
-  def swipeReveal(target: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.swipeReveal")
-  @js.native
-  def swipeReveal(target: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def swipeReveal(target: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("swipeReveal")(target.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def swipeReveal(target: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeReveal")(target.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs a selection animation in response to a swipe interaction.
@@ -524,45 +462,40 @@ object Animation {
     * @param selection Element or elements that show that something is selected, typically a check mark.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.swipeSelect")
-  @js.native
-  def swipeSelect(selected: js.Any, selection: js.Any): Promise[_] = js.native
+  @scala.inline
+  def swipeSelect(selected: js.Any, selection: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeSelect")(selected.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a turnstile backward in animation.
     * @param incoming Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.turnstileBackwardIn")
-  @js.native
-  def turnstileBackwardIn(incoming: js.Any): Promise[_] = js.native
+  @scala.inline
+  def turnstileBackwardIn(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("turnstileBackwardIn")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a turnstile backward out animation.
     * @param outgoing Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.turnstileBackwardOut")
-  @js.native
-  def turnstileBackwardOut(outgoing: js.Any): Promise[_] = js.native
+  @scala.inline
+  def turnstileBackwardOut(outgoing: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("turnstileBackwardOut")(outgoing.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a turnstile forward in animation.
     * @param incoming Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.turnstileForwardIn")
-  @js.native
-  def turnstileForwardIn(incoming: js.Any): Promise[_] = js.native
+  @scala.inline
+  def turnstileForwardIn(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("turnstileForwardIn")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Execute a turnstile forward out animation.
     * @param outgoing Single element or collection of elements to animate.
     * @returns A Promise that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.turnstileForwardOut")
-  @js.native
-  def turnstileForwardOut(outgoing: js.Any): Promise[_] = js.native
+  @scala.inline
+  def turnstileForwardOut(outgoing: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("turnstileForwardOut")(outgoing.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
   
   /**
     * Performs an animation that updates a badge.
@@ -570,10 +503,8 @@ object Animation {
     * @param offset Initial offsets where incoming animated objects begin relative to their final position at the end of the animation. Set this parameter to null to use the recommended default offset. Note When the incoming parameter specifies an array of elements, the offset parameter can specify an offset array with each item specified for its corresponding element array item. If the array of offsets is smaller than the array of elements, the last offset is applied to all remaining elements.
     * @returns An object that completes when the animation is finished.
     **/
-  @JSImport("winjs", "UI.Animation.updateBadge")
-  @js.native
-  def updateBadge(incoming: js.Any): Promise[_] = js.native
-  @JSImport("winjs", "UI.Animation.updateBadge")
-  @js.native
-  def updateBadge(incoming: js.Any, offset: js.Any): Promise[_] = js.native
+  @scala.inline
+  def updateBadge(incoming: js.Any): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateBadge")(incoming.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def updateBadge(incoming: js.Any, offset: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateBadge")(incoming.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
 }

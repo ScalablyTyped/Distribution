@@ -2,27 +2,25 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockAuthOptions extends StObject {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var autoParseHash: js.UndefOr[Boolean] = js.native
+  var autoParseHash: js.UndefOr[Boolean] = js.undefined
   
-  var params: js.UndefOr[Auth0LockAuthParamsOptions] = js.native
+  var params: js.UndefOr[Auth0LockAuthParamsOptions] = js.undefined
   
-  var redirect: js.UndefOr[Boolean] = js.native
+  var redirect: js.UndefOr[Boolean] = js.undefined
   
-  var redirectUrl: js.UndefOr[String] = js.native
+  var redirectUrl: js.UndefOr[String] = js.undefined
   
-  var responseMode: js.UndefOr[String] = js.native
+  var responseMode: js.UndefOr[String] = js.undefined
   
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
-  var sso: js.UndefOr[Boolean] = js.native
+  var sso: js.UndefOr[Boolean] = js.undefined
 }
 object Auth0LockAuthOptions {
   

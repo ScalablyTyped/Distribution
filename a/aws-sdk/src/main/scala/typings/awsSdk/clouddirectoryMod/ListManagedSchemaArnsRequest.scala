@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListManagedSchemaArnsRequest extends StObject {
   
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * The response for ListManagedSchemaArns. When this parameter is used, all minor version ARNs for a major version are listed.
     */
-  var SchemaArn: js.UndefOr[Arn] = js.native
+  var SchemaArn: js.UndefOr[Arn] = js.undefined
 }
 object ListManagedSchemaArnsRequest {
   

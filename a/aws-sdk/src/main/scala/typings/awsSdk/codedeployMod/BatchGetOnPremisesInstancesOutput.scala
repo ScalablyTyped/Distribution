@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetOnPremisesInstancesOutput extends StObject {
   
   /**
     * Information about the on-premises instances.
     */
-  var instanceInfos: js.UndefOr[InstanceInfoList] = js.native
+  var instanceInfos: js.UndefOr[InstanceInfoList] = js.undefined
 }
 object BatchGetOnPremisesInstancesOutput {
   

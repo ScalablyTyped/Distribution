@@ -11,8 +11,8 @@ A React component to inline your SVGs.
 | Full name          | react-svg-inline |
 | Keywords           | react, svg, icon, inline |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 946708 |
+| # dependents       | 59 |
+| # downloads        | 987487 |
 | # stars            | 2 |
 
 ## Links

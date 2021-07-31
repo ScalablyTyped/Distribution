@@ -2,18 +2,16 @@ package typings.ionicAngular
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualUtilsMod {
   
-  @js.native
   trait VirtualContext extends StObject {
     
     @JSName("$implicit")
-    var $implicit: js.Any = js.native
+    var $implicit: js.Any
     
-    var index: Double = js.native
+    var index: Double
   }
   object VirtualContext {
     

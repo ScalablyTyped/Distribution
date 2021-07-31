@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticacheSecurityGroupMod {
@@ -44,6 +43,10 @@ object elasticacheSecurityGroupMod {
   /* static members */
   object SecurityGroup {
     
+    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SecurityGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,46 +56,40 @@ object elasticacheSecurityGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SecurityGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SecurityGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityGroupState): SecurityGroup = js.native
-    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SecurityGroupState, opts: CustomResourceOptions): SecurityGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SecurityGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SecurityGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SecurityGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityGroupState): SecurityGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SecurityGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SecurityGroupState, opts: CustomResourceOptions): SecurityGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SecurityGroup]
     
     /**
       * Returns true if the given object is an instance of SecurityGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticache/securityGroup", "SecurityGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/securityGroup.SecurityGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticache/securityGroup.SecurityGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticache/securityGroup.SecurityGroup */ Boolean]
   }
   
-  @js.native
   trait SecurityGroupArgs extends StObject {
     
     /**
       * description for the cache security group. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name for the cache security group. This value is stored as a lowercase string.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of EC2 security group names to be
       * authorized for ingress to the cache security group
       */
-    val securityGroupNames: Input[js.Array[Input[String]]] = js.native
+    val securityGroupNames: Input[js.Array[Input[String]]]
   }
   object SecurityGroupArgs {
     
@@ -125,24 +122,23 @@ object elasticacheSecurityGroupMod {
     }
   }
   
-  @js.native
   trait SecurityGroupState extends StObject {
     
     /**
       * description for the cache security group. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name for the cache security group. This value is stored as a lowercase string.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of EC2 security group names to be
       * authorized for ingress to the cache security group
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object SecurityGroupState {
     

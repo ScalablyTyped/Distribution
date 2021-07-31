@@ -2,17 +2,15 @@ package typings.firebaseFirestoreTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotMetadata extends StObject {
   
-  val fromCache: Boolean = js.native
+  val fromCache: Boolean
   
-  val hasPendingWrites: Boolean = js.native
+  val hasPendingWrites: Boolean
   
-  def isEqual(other: SnapshotMetadata): Boolean = js.native
+  def isEqual(other: SnapshotMetadata): Boolean
 }
 object SnapshotMetadata {
   

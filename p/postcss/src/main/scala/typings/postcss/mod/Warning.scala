@@ -2,40 +2,38 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a plugin warning. It can be created using Result#warn().
   */
-@js.native
 trait Warning extends StObject {
   
   /**
     * Column in the input file with this warning's source.
     */
-  var column: Double = js.native
+  var column: Double
   
   /**
     * The line in the input file with this warning's source.
     */
-  var line: Double = js.native
+  var line: Double
   
   /**
     * The CSS node that caused the warning.
     */
-  var node: Node = js.native
+  var node: Node
   
   /**
     * Contains the name of the plugin that created this warning. When you
     * call Result#warn(), it will fill this property automatically.
     */
-  var plugin: String = js.native
+  var plugin: String
   
   /**
     * Contains the warning message.
     */
-  var text: String = js.native
+  var text: String
 }
 object Warning {
   

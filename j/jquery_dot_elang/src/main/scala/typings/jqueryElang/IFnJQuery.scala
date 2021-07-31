@@ -4,10 +4,8 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFnJQuery extends StObject {
   
   def fnPlugin(
@@ -16,7 +14,7 @@ trait IFnJQuery extends StObject {
     command: String,
     pluginName: String,
     pluginDataAttribute: String
-  ): JQuery[HTMLElement] = js.native
+  ): JQuery[HTMLElement]
 }
 object IFnJQuery {
   

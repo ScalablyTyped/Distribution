@@ -4,13 +4,13 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcLabel extends TfvcLabelRef {
+trait TfvcLabel
+  extends StObject
+     with TfvcLabelRef {
   
-  var items: js.Array[TfvcItem] = js.native
+  var items: js.Array[TfvcItem]
 }
 object TfvcLabel {
   

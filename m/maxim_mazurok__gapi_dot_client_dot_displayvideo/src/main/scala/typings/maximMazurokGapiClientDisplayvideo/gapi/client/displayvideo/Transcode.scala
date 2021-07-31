@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transcode extends StObject {
   
   /** The bit rate for the audio stream of the transcoded video, or the bit rate for the transcoded audio, in kilobits per second. */
-  var audioBitRateKbps: js.UndefOr[String] = js.native
+  var audioBitRateKbps: js.UndefOr[String] = js.undefined
   
   /** The sample rate for the audio stream of the transcoded video, or the sample rate for the transcoded audio, in hertz. */
-  var audioSampleRateHz: js.UndefOr[String] = js.native
+  var audioSampleRateHz: js.UndefOr[String] = js.undefined
   
   /** The transcoding bit rate of the transcoded video, in kilobits per second. */
-  var bitRateKbps: js.UndefOr[String] = js.native
+  var bitRateKbps: js.UndefOr[String] = js.undefined
   
   /** The dimensions of the transcoded video. */
-  var dimensions: js.UndefOr[Dimensions] = js.native
+  var dimensions: js.UndefOr[Dimensions] = js.undefined
   
   /** The size of the transcoded file, in bytes. */
-  var fileSizeBytes: js.UndefOr[String] = js.native
+  var fileSizeBytes: js.UndefOr[String] = js.undefined
   
   /** The frame rate of the transcoded video, in frames per second. */
-  var frameRate: js.UndefOr[Double] = js.native
+  var frameRate: js.UndefOr[Double] = js.undefined
   
   /** The MIME type of the transcoded file. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** The name of the transcoded file. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Indicates if the transcoding was successful. */
-  var transcoded: js.UndefOr[Boolean] = js.native
+  var transcoded: js.UndefOr[Boolean] = js.undefined
 }
 object Transcode {
   

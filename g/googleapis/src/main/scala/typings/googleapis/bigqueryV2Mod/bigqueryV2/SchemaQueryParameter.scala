@@ -2,27 +2,25 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaQueryParameter extends StObject {
   
   /**
     * [Optional] If unset, this is a positional parameter. Otherwise, should be
     * unique within a query.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The type of this parameter.
     */
-  var parameterType: js.UndefOr[SchemaQueryParameterType] = js.native
+  var parameterType: js.UndefOr[SchemaQueryParameterType] = js.undefined
   
   /**
     * [Required] The value of this parameter.
     */
-  var parameterValue: js.UndefOr[SchemaQueryParameterValue] = js.native
+  var parameterValue: js.UndefOr[SchemaQueryParameterValue] = js.undefined
 }
 object SchemaQueryParameter {
   

@@ -3,22 +3,22 @@ package typings.trezorConnect.mod
 import typings.trezorConnect.trezorConnectStrings.opreturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpReturnOutput extends Output {
+trait OpReturnOutput
+  extends StObject
+     with Output {
   
-  var dataHex: String = js.native
+  var dataHex: String
   
-  var `type`: opreturn = js.native
+  var `type`: opreturn
 }
 object OpReturnOutput {
   
   @scala.inline
-  def apply(dataHex: String, `type`: opreturn): OpReturnOutput = {
+  def apply(dataHex: String): OpReturnOutput = {
     val __obj = js.Dynamic.literal(dataHex = dataHex.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("opreturn")
     __obj.asInstanceOf[OpReturnOutput]
   }
   

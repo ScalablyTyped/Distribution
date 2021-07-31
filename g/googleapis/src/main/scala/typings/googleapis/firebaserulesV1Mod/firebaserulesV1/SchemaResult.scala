@@ -2,25 +2,23 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Possible result values from the function mock invocation.
   */
-@js.native
 trait SchemaResult extends StObject {
   
   /**
     * The result is undefined, meaning the result could not be computed.
     */
-  var undefined: js.UndefOr[SchemaEmpty] = js.native
+  var undefined: js.UndefOr[SchemaEmpty] = js.undefined
   
   /**
     * The result is an actual value. The type of the value must match that of
     * the type declared by the service.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SchemaResult {
   

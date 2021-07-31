@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response when clearing a range of values in a spreadsheet.
   */
-@js.native
 trait SchemaClearValuesResponse extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaClearValuesResponse extends StObject {
     * will be the actual range  that was cleared, bounded to the sheet&#39;s
     * limits.)
     */
-  var clearedRange: js.UndefOr[String] = js.native
+  var clearedRange: js.UndefOr[String] = js.undefined
   
   /**
     * The spreadsheet the updates were applied to.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
 }
 object SchemaClearValuesResponse {
   

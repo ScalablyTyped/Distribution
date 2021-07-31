@@ -2,17 +2,15 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait valueChangeProps extends StObject {
   
-  var hour: Double = js.native
+  var hour: Double
   
-  var minute: Double = js.native
+  var minute: Double
   
-  var value: Double = js.native
+  var value: Double
 }
 object valueChangeProps {
   

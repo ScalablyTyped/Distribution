@@ -1,15 +1,73 @@
 package typings.phaser.global.spine
 
+import typings.phaser.spine.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.RegionAttachment")
 @js.native
 class RegionAttachment protected ()
-  extends typings.phaser.spine.RegionAttachment {
+  extends StObject
+     with typings.phaser.spine.RegionAttachment {
   def this(name: String) = this()
+  
+  /* CompleteClass */
+  var color: typings.phaser.spine.Color = js.native
+  
+  /* CompleteClass */
+  override def computeWorldVertices(bone: typings.phaser.spine.Bone, worldVertices: ArrayLike[Double], offset: Double, stride: Double): Unit = js.native
+  
+  /* CompleteClass */
+  override def copy(): typings.phaser.spine.Attachment = js.native
+  
+  /* CompleteClass */
+  var height: Double = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var offset: ArrayLike[Double] = js.native
+  
+  /* CompleteClass */
+  var path: String = js.native
+  
+  /* CompleteClass */
+  var region: typings.phaser.spine.TextureRegion = js.native
+  
+  /* CompleteClass */
+  var rendererObject: js.Any = js.native
+  
+  /* CompleteClass */
+  var rotation: Double = js.native
+  
+  /* CompleteClass */
+  var scaleX: Double = js.native
+  
+  /* CompleteClass */
+  var scaleY: Double = js.native
+  
+  /* CompleteClass */
+  override def setRegion(region: typings.phaser.spine.TextureRegion): Unit = js.native
+  
+  /* CompleteClass */
+  var tempColor: typings.phaser.spine.Color = js.native
+  
+  /* CompleteClass */
+  override def updateOffset(): Unit = js.native
+  
+  /* CompleteClass */
+  var uvs: ArrayLike[Double] = js.native
+  
+  /* CompleteClass */
+  var width: Double = js.native
+  
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /* CompleteClass */
+  var y: Double = js.native
 }
 object RegionAttachment {
   

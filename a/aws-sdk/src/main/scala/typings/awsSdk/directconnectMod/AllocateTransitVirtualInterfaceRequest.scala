@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocateTransitVirtualInterfaceRequest extends StObject {
   
   /**
     * The ID of the connection on which the transit virtual interface is provisioned.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * Information about the transit virtual interface.
     */
-  var newTransitVirtualInterfaceAllocation: NewTransitVirtualInterfaceAllocation = js.native
+  var newTransitVirtualInterfaceAllocation: NewTransitVirtualInterfaceAllocation
   
   /**
     * The ID of the AWS account that owns the transit virtual interface.
     */
-  var ownerAccount: OwnerAccount = js.native
+  var ownerAccount: OwnerAccount
 }
 object AllocateTransitVirtualInterfaceRequest {
   

@@ -10,9 +10,9 @@ DocuSign Node.js API client.
 | ------------------ | :-------------: |
 | Full name          | docusign-esign |
 | Keywords           | docusign, signature, esignature, esign, digital, electronic, transaction, document, certificate, DTM, PDF |
-| # releases         | 52 |
+| # releases         | 42 |
 | # dependents       | 4 |
-| # downloads        | 542722 |
+| # downloads        | 576939 |
 | # stars            | 2 |
 
 ## Links

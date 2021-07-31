@@ -2,19 +2,17 @@ package typings.modernizr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioBoolean extends StObject {
   
-  var m4a: String = js.native
+  var m4a: String
   
-  var mp3: String = js.native
+  var mp3: String
   
-  var ogg: String = js.native
+  var ogg: String
   
-  var wav: String = js.native
+  var wav: String
 }
 object AudioBoolean {
   

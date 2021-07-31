@@ -2,49 +2,49 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormatCodeSettings extends EditorSettings {
+trait FormatCodeSettings
+  extends StObject
+     with EditorSettings {
   
-  val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.native
+  val indentMultiLineObjectLiteralBeginningOnBlankLine: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterCommaDelimiter: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterConstructor: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterFunctionKeywordForAnonymousFunctions: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterKeywordsInControlFlowStatements: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingEmptyBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingEmptyBraces: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingNonemptyParenthesis: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterOpeningAndBeforeClosingTemplateStringBraces: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterSemicolonInForStatements: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterSemicolonInForStatements: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.native
+  val insertSpaceAfterTypeAssertion: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeAndAfterBinaryOperators: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeFunctionParenthesis: js.UndefOr[Boolean] = js.undefined
   
-  val insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.native
+  val insertSpaceBeforeTypeAnnotation: js.UndefOr[Boolean] = js.undefined
   
-  val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.native
+  val placeOpenBraceOnNewLineForControlBlocks: js.UndefOr[Boolean] = js.undefined
   
-  val placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.native
+  val placeOpenBraceOnNewLineForFunctions: js.UndefOr[Boolean] = js.undefined
   
-  val semicolons: js.UndefOr[SemicolonPreference] = js.native
+  val semicolons: js.UndefOr[SemicolonPreference] = js.undefined
 }
 object FormatCodeSettings {
   

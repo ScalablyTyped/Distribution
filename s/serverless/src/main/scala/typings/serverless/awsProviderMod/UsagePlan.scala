@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsagePlan extends StObject {
   
-  var quota: js.UndefOr[Quota] = js.native
+  var quota: js.UndefOr[Quota] = js.undefined
   
-  var throttle: js.UndefOr[Throttle] = js.native
+  var throttle: js.UndefOr[Throttle] = js.undefined
 }
 object UsagePlan {
   

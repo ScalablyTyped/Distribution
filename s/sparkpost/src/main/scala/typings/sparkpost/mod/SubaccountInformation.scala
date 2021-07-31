@@ -5,25 +5,23 @@ import typings.sparkpost.sparkpostStrings.suspended
 import typings.sparkpost.sparkpostStrings.terminated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubaccountInformation extends StObject {
   
-  var compliance_status: String = js.native
+  var compliance_status: String
   
   /** ID of subaccount */
-  var id: Double = js.native
+  var id: Double
   
   /** The ID of the default IP Pool assigned to this subaccount’s transmissions */
-  var ip_pool: js.UndefOr[String] = js.native
+  var ip_pool: js.UndefOr[String] = js.undefined
   
   /** User friendly identifier for a specific subaccount */
-  var name: String = js.native
+  var name: String
   
   /** Status of the account */
-  var status: active | suspended | terminated = js.native
+  var status: active | suspended | terminated
 }
 object SubaccountInformation {
   

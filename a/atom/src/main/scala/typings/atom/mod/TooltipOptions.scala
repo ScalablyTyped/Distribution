@@ -10,51 +10,49 @@ import typings.atom.atomStrings.top_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
   /** Apply a CSS fade transition to the tooltip. */
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
   /** Appends the tooltip to a specific element. */
-  var container: js.UndefOr[String | HTMLElement | `false`] = js.native
+  var container: js.UndefOr[String | HTMLElement | `false`] = js.undefined
   
   /**
     *  Delay showing and hiding the tooltip (ms) - does not apply to manual
     *  trigger type.
     */
-  var delay: js.UndefOr[Double | Hide] = js.native
+  var delay: js.UndefOr[Double | Hide] = js.undefined
   
   /** Allow HTML in the tooltip. */
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
   /** How to position the tooltip. */
-  var placement: js.UndefOr[top_ | bottom_ | left_ | right_ | auto] = js.native
+  var placement: js.UndefOr[top_ | bottom_ | left_ | right_ | auto] = js.undefined
   
   /**
     *  If a selector is provided, tooltip objects will be delegated to the
     *  specified targets.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
   /** Base HTML to use when creating the tooltip. */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /**
     *  Default title value if title attribute isn't present.
     *  If a function is given, it will be called with its this reference set to
     *  the element that the tooltip is attached to.
     */
-  var title: js.UndefOr[String | HTMLElement | js.Function0[String]] = js.native
+  var title: js.UndefOr[String | HTMLElement | js.Function0[String]] = js.undefined
   
   /**
     *  How tooltip is triggered - click | hover | focus | manual.
     *  You may pass multiple triggers; separate them with a space.
     */
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
 }
 object TooltipOptions {
   

@@ -3,20 +3,20 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.data.proxy.IServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDirectProxy extends IServer {
+trait IDirectProxy
+  extends StObject
+     with IServer {
   
   /** [Method] Generates a url based on a given Ext data Request object
     * @returns String The url
     */
   @JSName("buildUrl")
-  var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.native
+  var buildUrl_IDirectProxy: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (Function/String) */
-  var directFn: js.UndefOr[js.Any] = js.native
+  var directFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] In ServerProxy subclasses the create read update and destroy methods all pass through to doRequest
     * @param operation Object
@@ -31,43 +31,43 @@ trait IDirectProxy extends IServer {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns the value of directFn
     * @returns Function/String
     */
-  var getDirectFn: js.UndefOr[js.Function0[_]] = js.native
+  var getDirectFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of paramOrder
     * @returns String/String[]
     */
-  var getParamOrder: js.UndefOr[js.Function0[_]] = js.native
+  var getParamOrder: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of paramsAsHash
     * @returns Boolean
     */
-  var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.native
+  var paramOrder: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var paramsAsHash: js.UndefOr[Boolean] = js.native
+  var paramsAsHash: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the value of directFn
     * @param directFn Function/String The new value.
     */
-  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setDirectFn: js.UndefOr[js.Function1[/* directFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of paramOrder
     * @param paramOrder String/String[] The new value.
     */
-  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of paramsAsHash
     * @param paramsAsHash Boolean The new value.
     */
-  var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.native
+  var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 object IDirectProxy {
   
@@ -101,13 +101,13 @@ object IDirectProxy {
     def setDoRequestUndefined: Self = StObject.set(x, "doRequest", js.undefined)
     
     @scala.inline
-    def setGetDirectFn(value: () => _): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
+    def setGetDirectFn(value: () => js.Any): Self = StObject.set(x, "getDirectFn", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDirectFnUndefined: Self = StObject.set(x, "getDirectFn", js.undefined)
     
     @scala.inline
-    def setGetParamOrder(value: () => _): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+    def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)

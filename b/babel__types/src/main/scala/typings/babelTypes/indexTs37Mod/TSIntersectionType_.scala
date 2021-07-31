@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSIntersectionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSIntersectionType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSIntersectionType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
   @JSName("type")
-  var type_TSIntersectionType_ : TSIntersectionType = js.native
+  var type_TSIntersectionType_ : TSIntersectionType
   
-  var types: js.Array[TSType] = js.native
+  var types: js.Array[TSType]
 }
 object TSIntersectionType_ {
   
   @scala.inline
-  def apply(`type`: TSIntersectionType, types: js.Array[TSType]): TSIntersectionType_ = {
-    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(types: js.Array[TSType]): TSIntersectionType_ = {
+    val __obj = js.Dynamic.literal(types = types.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSIntersectionType")
     __obj.asInstanceOf[TSIntersectionType_]
   }
   

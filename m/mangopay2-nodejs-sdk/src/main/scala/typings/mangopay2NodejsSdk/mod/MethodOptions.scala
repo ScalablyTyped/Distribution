@@ -5,24 +5,22 @@ import typings.mangopay2NodejsSdk.anon.DeepPartialclientIdstring
 import typings.mangopay2NodejsSdk.anon.DeepPartialtimeoutnumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.RequestOptions> */
-@js.native
 trait MethodOptions extends StObject {
   
-  var data: js.UndefOr[WithToJson[js.Object] | String] = js.native
+  var data: js.UndefOr[WithToJson[js.Object] | String] = js.undefined
   
-  var headers: js.UndefOr[DeepPartialPartialHeaders] = js.native
+  var headers: js.UndefOr[DeepPartialPartialHeaders] = js.undefined
   
-  var parameters: js.UndefOr[FilterOptions with PaginationOptions] = js.native
+  var parameters: js.UndefOr[FilterOptions & PaginationOptions] = js.undefined
   
-  var path: js.UndefOr[DeepPartialclientIdstring] = js.native
+  var path: js.UndefOr[DeepPartialclientIdstring] = js.undefined
   
-  var requestConfig: js.UndefOr[DeepPartialtimeoutnumber] = js.native
+  var requestConfig: js.UndefOr[DeepPartialtimeoutnumber] = js.undefined
   
-  var responseConfig: js.UndefOr[DeepPartialtimeoutnumber] = js.native
+  var responseConfig: js.UndefOr[DeepPartialtimeoutnumber] = js.undefined
 }
 object MethodOptions {
   
@@ -48,7 +46,7 @@ object MethodOptions {
     def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
     
     @scala.inline
-    def setParameters(value: FilterOptions with PaginationOptions): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: FilterOptions & PaginationOptions): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

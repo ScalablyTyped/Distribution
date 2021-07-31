@@ -2,15 +2,13 @@ package typings.akamaiEdgeworkers.streamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadableStreamReadResult[T] extends StObject {
   
-  val done: Boolean = js.native
+  val done: Boolean
   
-  val value: T = js.native
+  val value: T
 }
 object ReadableStreamReadResult {
   
@@ -21,7 +19,7 @@ object ReadableStreamReadResult {
   }
   
   @scala.inline
-  implicit class ReadableStreamReadResultMutableBuilder[Self <: ReadableStreamReadResult[_], T] (val x: Self with ReadableStreamReadResult[T]) extends AnyVal {
+  implicit class ReadableStreamReadResultMutableBuilder[Self <: ReadableStreamReadResult[?], T] (val x: Self & ReadableStreamReadResult[T]) extends AnyVal {
     
     @scala.inline
     def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

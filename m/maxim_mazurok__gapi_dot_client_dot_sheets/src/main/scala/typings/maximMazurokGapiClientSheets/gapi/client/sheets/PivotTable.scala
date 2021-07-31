@@ -3,14 +3,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotTable extends StObject {
   
   /** Each column grouping in the pivot table. */
-  var columns: js.UndefOr[js.Array[PivotGroup]] = js.native
+  var columns: js.UndefOr[js.Array[PivotGroup]] = js.undefined
   
   /**
     * An optional mapping of filters per source column offset. The filters are applied before aggregating data into the pivot table. The map's key is the column offset of the source range
@@ -20,32 +18,32 @@ trait PivotTable extends StObject {
   var criteria: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The data execution status for data source pivot tables. */
-  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.native
+  var dataExecutionStatus: js.UndefOr[DataExecutionStatus] = js.undefined
   
   /** The ID of the data source the pivot table is reading data from. */
-  var dataSourceId: js.UndefOr[String] = js.native
+  var dataSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The filters applied to the source columns before aggregating data for the pivot table. Both criteria and filter_specs are populated in responses. If both fields are specified in an
     * update request, this field takes precedence.
     */
-  var filterSpecs: js.UndefOr[js.Array[PivotFilterSpec]] = js.native
+  var filterSpecs: js.UndefOr[js.Array[PivotFilterSpec]] = js.undefined
   
   /** Each row grouping in the pivot table. */
-  var rows: js.UndefOr[js.Array[PivotGroup]] = js.native
+  var rows: js.UndefOr[js.Array[PivotGroup]] = js.undefined
   
   /** The range the pivot table is reading data from. */
-  var source: js.UndefOr[GridRange] = js.native
+  var source: js.UndefOr[GridRange] = js.undefined
   
   /** Whether values should be listed horizontally (as columns) or vertically (as rows). */
-  var valueLayout: js.UndefOr[String] = js.native
+  var valueLayout: js.UndefOr[String] = js.undefined
   
   /** A list of values to include in the pivot table. */
-  var values: js.UndefOr[js.Array[PivotValue]] = js.native
+  var values: js.UndefOr[js.Array[PivotValue]] = js.undefined
 }
 object PivotTable {
   
@@ -71,7 +69,7 @@ object PivotTable {
     def setCriteria(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.sheets.gapi.client.sheets.PivotFilterCriteria}
-      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSheets.maximMazurokGapiClientSheetsStrings.PivotTable & TopLevel[js.Any]
     ): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     
     @scala.inline

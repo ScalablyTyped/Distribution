@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rtlrighttoleft extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Rtlrighttoleft extends StObject {
     * letely opaque. Note that values require the leading 0 before the decimal point. Use with "background-color" attribute. 0.3 | 0.4 |
     *  0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the rotation angle of the object. A positive value will turn it in a clockwise direction. A negative value will turn it in a
     * counterclockwise direction. -90 | 270 | 180 | ...
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g., "purple", "blue"), hexadecimal notation (e.g., "#FF0
@@ -27,190 +25,190 @@ trait Rtlrighttoleft extends StObject {
     * will, by default, create a horizontal gradient. For more complex gradients, use "gradient-colors" and "gradient-stops". "none" | "
     * transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a two-color background gradient. To be used with "background-color-2". "none" | "transparent" | "#f00" | "
     * #f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a two-color background gradient. To be used with "background-color-1". "none" | "transparent" | "#f00" |
     * "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction(s) in which the background image is being stretched. Works with "background-image". "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the "background-repeat" attribute is set to "no-repeat". "0 0" | "50 100" | "80% 60%" | .
     * ..
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. Works with "background-image". "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the border. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `border-alpha`: js.UndefOr[Double] = js.native
+  var `border-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the border color of the object, applicable on closed shapes. See the "line-color" attribute for closed shapes. "none" | "tran
     * sparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object, applicable on closed shapes. See the "line-width" attribute for closed shapes. 4 | "6px" | ..
     * .
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether or not the object will have a callout arrow. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows you to set the number of decimal places displayed for each value. 2 | 3 | 10 | ...
     */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows you to set the decimal mark displayed for each value. "." | "," | " " | ...
     */
-  var `decimals-separator`: js.UndefOr[String] = js.native
+  var `decimals-separator`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the object. 5 | "10px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a Y offset to apply to the object. 5 | "10px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to linear or radial. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font color of the object. Similar to the "color" attribute. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow"
     * | "rgb(100, 15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font family of the object. "Arial" | "Tahoma,Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font size of the object. 4 | "6px" | ...
     */
-  var `font-size`: js.UndefOr[String] = js.native
+  var `font-size`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font style of the object. Similar to the "italic" attribute. "none" | "italic"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the font weight of the object. Similar to the "bold" attribute. "normal" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the colors for a complex background gradient consisting of two or more colors. Use with the "gradient-stops" attribute. Works
     *  with output svg. "#f00 #0f0 #00f" | ...
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the gradient stops for a complex background gradient consisting of two or more colors. Use with the "gradient-colors" attribu
     * te. Works with output svg. "0.1 0.5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the style applied to lines and borders of the object. "solid" | "dotted" | "dashed" | "dashdot"
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the object. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a Y offset to apply when positioning the object. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the padding of the object. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies where the value boxes are placed in relation to the data points. Options by chart type: "in" | "out" | "auto" | "left" |
     *  "right" | "over" | ...
     */
-  var placement: js.UndefOr[js.Any] = js.native
+  var placement: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Renders text right-to-left. Default value is false. true | false | 1 | 0
     */
   @JSName("rtl (right-to-left)")
-  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.native
+  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether or not the object's shadow is visible. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the text. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comple
     * tely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `text-alpha`: js.UndefOr[Double] = js.native
+  var `text-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the character used to separate thousands. "," | "." | " " | ...
     */
-  var `thousands-separator`: js.UndefOr[String] = js.native
+  var `thousands-separator`: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies which value boxes are displayed. By default, all values in a series are displayed. You can also display the minimum, max
     * imum, first, last, and/or no values. "all" | "min" | "max" | "first" | "last" | none" | "min,max" | "first,last,min,max" | ...
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Rtlrighttoleft {
   

@@ -8,7 +8,6 @@ import typings.react.mod.NamedExoticComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxGroupMod extends Shortcut {
@@ -21,18 +20,17 @@ object checkboxGroupMod extends Shortcut {
   @js.native
   val GroupContext: Context[CheckboxGroupContext | Null] = js.native
   
-  @js.native
   trait AbstractCheckboxGroupProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[js.Array[CheckboxOptionType | String]] = js.native
+    var options: js.UndefOr[js.Array[CheckboxOptionType | String]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AbstractCheckboxGroupProps {
     
@@ -80,20 +78,19 @@ object checkboxGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait CheckboxGroupContext extends StObject {
     
-    def cancelValue(`val`: String): Unit = js.native
+    def cancelValue(`val`: String): Unit
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    def registerValue(`val`: String): Unit = js.native
+    def registerValue(`val`: String): Unit
     
-    var toggleOption: js.UndefOr[js.Function1[/* option */ CheckboxOptionType, Unit]] = js.native
+    var toggleOption: js.UndefOr[js.Function1[/* option */ CheckboxOptionType, Unit]] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object CheckboxGroupContext {
     
@@ -138,18 +135,19 @@ object checkboxGroupMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CheckboxGroupProps extends AbstractCheckboxGroupProps {
+  trait CheckboxGroupProps
+    extends StObject
+       with AbstractCheckboxGroupProps {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var defaultValue: js.UndefOr[js.Array[CheckboxValueType]] = js.native
+    var defaultValue: js.UndefOr[js.Array[CheckboxValueType]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* checkedValue */ js.Array[CheckboxValueType], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* checkedValue */ js.Array[CheckboxValueType], Unit]] = js.undefined
     
-    var value: js.UndefOr[js.Array[CheckboxValueType]] = js.native
+    var value: js.UndefOr[js.Array[CheckboxValueType]] = js.undefined
   }
   object CheckboxGroupProps {
     
@@ -200,18 +198,17 @@ object checkboxGroupMod extends Shortcut {
     }
   }
   
-  @js.native
   trait CheckboxOptionType extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var onChange: js.UndefOr[js.Function1[/* e */ CheckboxChangeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ CheckboxChangeEvent, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: CheckboxValueType = js.native
+    var value: CheckboxValueType
   }
   object CheckboxOptionType {
     

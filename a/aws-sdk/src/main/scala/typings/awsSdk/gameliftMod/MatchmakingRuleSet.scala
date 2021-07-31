@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchmakingRuleSet extends StObject {
   
   /**
     * The time stamp indicating when this data object was created. The format is a number expressed in Unix time as milliseconds (for example "1469498468.057").
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) that is assigned to a GameLift matchmaking rule set resource and uniquely identifies it. ARNs are unique across all Regions. In a GameLift rule set ARN, the resource ID matches the RuleSetName value.
     */
-  var RuleSetArn: js.UndefOr[MatchmakingRuleSetArn] = js.native
+  var RuleSetArn: js.UndefOr[MatchmakingRuleSetArn] = js.undefined
   
   /**
     * A collection of matchmaking rules, formatted as a JSON string. Comments are not allowed in JSON, but most elements support a description field.
     */
-  var RuleSetBody: typings.awsSdk.gameliftMod.RuleSetBody = js.native
+  var RuleSetBody: typings.awsSdk.gameliftMod.RuleSetBody
   
   /**
     * A unique identifier for a matchmaking rule set
     */
-  var RuleSetName: js.UndefOr[MatchmakingIdStringModel] = js.native
+  var RuleSetName: js.UndefOr[MatchmakingIdStringModel] = js.undefined
 }
 object MatchmakingRuleSet {
   

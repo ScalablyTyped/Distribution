@@ -28,128 +28,126 @@ import typings.std.ShadowRoot
 import typings.std.ShadowRootInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined petit-dom.petit-dom.PetitDom.Props<std.Element> */
-@js.native
 trait PropsElement extends StObject {
   
-  var ATTRIBUTE_NODE: js.UndefOr[Double] = js.native
+  var ATTRIBUTE_NODE: js.UndefOr[Double] = js.undefined
   
-  var CDATA_SECTION_NODE: js.UndefOr[Double] = js.native
+  var CDATA_SECTION_NODE: js.UndefOr[Double] = js.undefined
   
-  var COMMENT_NODE: js.UndefOr[Double] = js.native
+  var COMMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_FRAGMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_CONTAINED_BY: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_CONTAINS: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_DISCONNECTED: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_FOLLOWING: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_IMPLEMENTATION_SPECIFIC: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.native
+  var DOCUMENT_POSITION_PRECEDING: js.UndefOr[Double] = js.undefined
   
-  var DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.native
+  var DOCUMENT_TYPE_NODE: js.UndefOr[Double] = js.undefined
   
-  var ELEMENT_NODE: js.UndefOr[Double] = js.native
+  var ELEMENT_NODE: js.UndefOr[Double] = js.undefined
   
-  var ENTITY_NODE: js.UndefOr[Double] = js.native
+  var ENTITY_NODE: js.UndefOr[Double] = js.undefined
   
-  var ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.native
+  var ENTITY_REFERENCE_NODE: js.UndefOr[Double] = js.undefined
   
-  var NOTATION_NODE: js.UndefOr[Double] = js.native
+  var NOTATION_NODE: js.UndefOr[Double] = js.undefined
   
-  var PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.native
+  var PROCESSING_INSTRUCTION_NODE: js.UndefOr[Double] = js.undefined
   
-  var TEXT_NODE: js.UndefOr[Double] = js.native
+  var TEXT_NODE: js.UndefOr[Double] = js.undefined
   
   var addEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var after: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var after: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var animate: js.UndefOr[js.Function0[Animation]] = js.native
+  var animate: js.UndefOr[js.Function0[Animation]] = js.undefined
   
-  var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var append: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.native
+  var appendChild: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
   
-  var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.native
+  var assignedSlot: js.UndefOr[HTMLSlotElement | Null] = js.undefined
   
-  var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.native
+  var attachShadow: js.UndefOr[js.Function1[/* init */ ShadowRootInit, ShadowRoot]] = js.undefined
   
-  var attributes: js.UndefOr[NamedNodeMap] = js.native
+  var attributes: js.UndefOr[NamedNodeMap] = js.undefined
   
-  var baseURI: js.UndefOr[String] = js.native
+  var baseURI: js.UndefOr[String] = js.undefined
   
-  var before: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var before: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var childElementCount: js.UndefOr[Double] = js.native
+  var childElementCount: js.UndefOr[Double] = js.undefined
   
-  var childNodes: js.UndefOr[NodeListOf[ChildNode]] = js.native
+  var childNodes: js.UndefOr[NodeListOf[ChildNode]] = js.undefined
   
-  var children: js.UndefOr[HTMLCollection] = js.native
+  var children: js.UndefOr[HTMLCollection] = js.undefined
   
-  var classList: js.UndefOr[DOMTokenList] = js.native
+  var classList: js.UndefOr[DOMTokenList] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var clientHeight: js.UndefOr[Double] = js.native
+  var clientHeight: js.UndefOr[Double] = js.undefined
   
-  var clientLeft: js.UndefOr[Double] = js.native
+  var clientLeft: js.UndefOr[Double] = js.undefined
   
-  var clientTop: js.UndefOr[Double] = js.native
+  var clientTop: js.UndefOr[Double] = js.undefined
   
-  var clientWidth: js.UndefOr[Double] = js.native
+  var clientWidth: js.UndefOr[Double] = js.undefined
   
-  var cloneNode: js.UndefOr[js.Function0[Node]] = js.native
+  var cloneNode: js.UndefOr[js.Function0[Node]] = js.undefined
   
-  var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.native
+  var closest: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
   
-  var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.native
+  var compareDocumentPosition: js.UndefOr[js.Function1[/* other */ Node, Double]] = js.undefined
   
-  var contains: js.UndefOr[js.Function0[Boolean]] = js.native
+  var contains: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var content: js.UndefOr[Content | js.Array[Content]] = js.native
+  var content: js.UndefOr[Content | js.Array[Content]] = js.undefined
   
-  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event, Boolean]] = js.native
+  var dispatchEvent: js.UndefOr[js.Function1[/* event */ Event, Boolean]] = js.undefined
   
-  var firstChild: js.UndefOr[ChildNode | Null] = js.native
+  var firstChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var firstElementChild: js.UndefOr[Element | Null] = js.native
+  var firstElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  var getAnimations: js.UndefOr[js.Function0[js.Array[Animation]]] = js.native
+  var getAnimations: js.UndefOr[js.Function0[js.Array[Animation]]] = js.undefined
   
-  var getAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, String | Null]] = js.native
+  var getAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, String | Null]] = js.undefined
   
-  var getAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, String | Null]] = js.native
+  var getAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, String | Null]] = js.undefined
   
-  var getAttributeNames: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+  var getAttributeNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
   
-  var getAttributeNode: js.UndefOr[js.Function1[/* qualifiedName */ String, Attr | Null]] = js.native
+  var getAttributeNode: js.UndefOr[js.Function1[/* qualifiedName */ String, Attr | Null]] = js.undefined
   
-  var getAttributeNodeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Attr | Null]] = js.native
+  var getAttributeNodeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Attr | Null]] = js.undefined
   
-  var getBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.native
+  var getBoundingClientRect: js.UndefOr[js.Function0[DOMRect]] = js.undefined
   
-  var getClientRects: js.UndefOr[js.Function0[DOMRectList]] = js.native
+  var getClientRects: js.UndefOr[js.Function0[DOMRectList]] = js.undefined
   
-  var getElementsByClassName: js.UndefOr[js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]] = js.native
+  var getElementsByClassName: js.UndefOr[js.Function1[/* classNames */ String, HTMLCollectionOf[Element]]] = js.undefined
   
-  var getElementsByTagName: js.UndefOr[js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]] = js.native
+  var getElementsByTagName: js.UndefOr[js.Function1[a, HTMLCollectionOf[HTMLAnchorElement]]] = js.undefined
   
   var getElementsByTagNameNS: js.UndefOr[
     js.Function2[
@@ -157,163 +155,163 @@ trait PropsElement extends StObject {
       /* localName */ String, 
       HTMLCollectionOf[HTMLElement]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var getRootNode: js.UndefOr[js.Function0[Node]] = js.native
+  var getRootNode: js.UndefOr[js.Function0[Node]] = js.undefined
   
-  var hasAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.native
+  var hasAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.undefined
   
-  var hasAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Boolean]] = js.native
+  var hasAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Boolean]] = js.undefined
   
-  var hasAttributes: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasAttributes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasChildNodes: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var hasPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Boolean]] = js.native
+  var hasPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Boolean]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var innerHTML: js.UndefOr[String] = js.native
+  var innerHTML: js.UndefOr[String] = js.undefined
   
   var insertAdjacentElement: js.UndefOr[
     js.Function2[/* position */ InsertPosition, /* insertedElement */ Element, Element | Null]
-  ] = js.native
+  ] = js.undefined
   
-  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.native
+  var insertAdjacentHTML: js.UndefOr[js.Function2[/* where */ InsertPosition, /* html */ String, Unit]] = js.undefined
   
-  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.native
+  var insertAdjacentText: js.UndefOr[js.Function2[/* where */ InsertPosition, /* text */ String, Unit]] = js.undefined
   
-  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.native
+  var insertBefore: js.UndefOr[js.Function1[/* newChild */ Node, Node]] = js.undefined
   
-  var isConnected: js.UndefOr[Boolean] = js.native
+  var isConnected: js.UndefOr[Boolean] = js.undefined
   
-  var isDefaultNamespace: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDefaultNamespace: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isEqualNode: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isEqualNode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isSameNode: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isSameNode: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var lastChild: js.UndefOr[ChildNode | Null] = js.native
+  var lastChild: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var lastElementChild: js.UndefOr[Element | Null] = js.native
+  var lastElementChild: js.UndefOr[Element | Null] = js.undefined
   
-  var localName: js.UndefOr[String] = js.native
+  var localName: js.UndefOr[String] = js.undefined
   
-  var lookupNamespaceURI: js.UndefOr[js.Function0[String | Null]] = js.native
+  var lookupNamespaceURI: js.UndefOr[js.Function0[String | Null]] = js.undefined
   
-  var lookupPrefix: js.UndefOr[js.Function0[String | Null]] = js.native
+  var lookupPrefix: js.UndefOr[js.Function0[String | Null]] = js.undefined
   
-  var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.native
+  var matches: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
   
-  var msGetRegionContent: js.UndefOr[js.Function0[_]] = js.native
+  var msGetRegionContent: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var namespaceURI: js.UndefOr[String | Null] = js.native
+  var namespaceURI: js.UndefOr[String | Null] = js.undefined
   
-  var nextElementSibling: js.UndefOr[Element | Null] = js.native
+  var nextElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  var nextSibling: js.UndefOr[ChildNode | Null] = js.native
+  var nextSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var nodeName: js.UndefOr[String] = js.native
+  var nodeName: js.UndefOr[String] = js.undefined
   
-  var nodeType: js.UndefOr[Double] = js.native
+  var nodeType: js.UndefOr[Double] = js.undefined
   
-  var nodeValue: js.UndefOr[String | Null] = js.native
+  var nodeValue: js.UndefOr[String | Null] = js.undefined
   
-  var normalize: js.UndefOr[js.Function0[Unit]] = js.native
+  var normalize: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onfullscreenchange: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null] = js.native
+  var onfullscreenerror: js.UndefOr[(js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null] = js.undefined
   
-  var outerHTML: js.UndefOr[String] = js.native
+  var outerHTML: js.UndefOr[String] = js.undefined
   
-  var ownerDocument: js.UndefOr[Document] = js.native
+  var ownerDocument: js.UndefOr[Document] = js.undefined
   
-  var parentElement: js.UndefOr[HTMLElement | Null] = js.native
+  var parentElement: js.UndefOr[HTMLElement | Null] = js.undefined
   
-  var parentNode: js.UndefOr[(Node with ParentNode) | Null] = js.native
+  var parentNode: js.UndefOr[(Node & ParentNode) | Null] = js.undefined
   
-  var prefix: js.UndefOr[String | Null] = js.native
+  var prefix: js.UndefOr[String | Null] = js.undefined
   
-  var prepend: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var prepend: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var previousElementSibling: js.UndefOr[Element | Null] = js.native
+  var previousElementSibling: js.UndefOr[Element | Null] = js.undefined
   
-  var previousSibling: js.UndefOr[ChildNode | Null] = js.native
+  var previousSibling: js.UndefOr[ChildNode | Null] = js.undefined
   
-  var querySelector: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.native
+  var querySelector: js.UndefOr[js.Function1[a, HTMLAnchorElement | Null]] = js.undefined
   
-  var querySelectorAll: js.UndefOr[js.Function1[a, NodeListOf[HTMLAnchorElement]]] = js.native
+  var querySelectorAll: js.UndefOr[js.Function1[a, NodeListOf[HTMLAnchorElement]]] = js.undefined
   
-  var releasePointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.native
+  var releasePointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function0[Unit]] = js.native
+  var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var removeAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Unit]] = js.native
+  var removeAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Unit]] = js.undefined
   
-  var removeAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Unit]] = js.native
+  var removeAttributeNS: js.UndefOr[js.Function2[/* namespace */ String, /* localName */ String, Unit]] = js.undefined
   
-  var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.native
+  var removeAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr]] = js.undefined
   
-  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.native
+  var removeChild: js.UndefOr[js.Function1[/* oldChild */ Node, Node]] = js.undefined
   
   var removeEventListener: js.UndefOr[
     js.Function2[
       fullscreenchange, 
-      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, _], 
+      /* listener */ js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.native
+  var replaceChild: js.UndefOr[js.Function2[/* newChild */ Node, /* oldChild */ Node, Node]] = js.undefined
   
-  var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.native
+  var replaceWith: js.UndefOr[js.Function1[/* repeated */ Node | String, Unit]] = js.undefined
   
-  var requestFullscreen: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.native
+  var requestFullscreen: js.UndefOr[js.Function0[js.Promise[Unit]]] = js.undefined
   
-  var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.native
+  var requestPointerLock: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scroll: js.UndefOr[js.Function0[Unit]] = js.native
+  var scroll: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollBy: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollBy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollHeight: js.UndefOr[Double] = js.native
+  var scrollHeight: js.UndefOr[Double] = js.undefined
   
-  var scrollIntoView: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollIntoView: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
-  var scrollTo: js.UndefOr[js.Function0[Unit]] = js.native
+  var scrollTo: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
-  var scrollWidth: js.UndefOr[Double] = js.native
+  var scrollWidth: js.UndefOr[Double] = js.undefined
   
-  var setAttribute: js.UndefOr[js.Function2[/* qualifiedName */ String, /* value */ String, Unit]] = js.native
+  var setAttribute: js.UndefOr[js.Function2[/* qualifiedName */ String, /* value */ String, Unit]] = js.undefined
   
   var setAttributeNS: js.UndefOr[
     js.Function3[/* namespace */ String, /* qualifiedName */ String, /* value */ String, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var setAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.native
+  var setAttributeNode: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.undefined
   
-  var setAttributeNodeNS: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.native
+  var setAttributeNodeNS: js.UndefOr[js.Function1[/* attr */ Attr, Attr | Null]] = js.undefined
   
-  var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.native
+  var setPointerCapture: js.UndefOr[js.Function1[/* pointerId */ Double, Unit]] = js.undefined
   
-  var shadowRoot: js.UndefOr[ShadowRoot | Null] = js.native
+  var shadowRoot: js.UndefOr[ShadowRoot | Null] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
   
-  var textContent: js.UndefOr[String | Null] = js.native
+  var textContent: js.UndefOr[String | Null] = js.undefined
   
-  var toggleAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.native
+  var toggleAttribute: js.UndefOr[js.Function1[/* qualifiedName */ String, Boolean]] = js.undefined
   
-  var webkitMatchesSelector: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.native
+  var webkitMatchesSelector: js.UndefOr[js.Function1[/* selectors */ String, Boolean]] = js.undefined
 }
 object PropsElement {
   
@@ -334,7 +332,7 @@ object PropsElement {
     
     @scala.inline
     def setAddEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -805,7 +803,7 @@ object PropsElement {
     def setMatchesUndefined: Self = StObject.set(x, "matches", js.undefined)
     
     @scala.inline
-    def setMsGetRegionContent(value: () => _): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
+    def setMsGetRegionContent(value: () => js.Any): Self = StObject.set(x, "msGetRegionContent", js.Any.fromFunction0(value))
     
     @scala.inline
     def setMsGetRegionContentUndefined: Self = StObject.set(x, "msGetRegionContent", js.undefined)
@@ -871,7 +869,7 @@ object PropsElement {
     def setNormalizeUndefined: Self = StObject.set(x, "normalize", js.undefined)
     
     @scala.inline
-    def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
+    def setOnfullscreenchange(value: js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenchange", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenchangeNull: Self = StObject.set(x, "onfullscreenchange", null)
@@ -880,7 +878,7 @@ object PropsElement {
     def setOnfullscreenchangeUndefined: Self = StObject.set(x, "onfullscreenchange", js.undefined)
     
     @scala.inline
-    def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, _]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
+    def setOnfullscreenerror(value: js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]): Self = StObject.set(x, "onfullscreenerror", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnfullscreenerrorNull: Self = StObject.set(x, "onfullscreenerror", null)
@@ -916,7 +914,7 @@ object PropsElement {
     def setParentElementUndefined: Self = StObject.set(x, "parentElement", js.undefined)
     
     @scala.inline
-    def setParentNode(value: Node with ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
+    def setParentNode(value: Node & ParentNode): Self = StObject.set(x, "parentNode", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentNodeNull: Self = StObject.set(x, "parentNode", null)
@@ -1004,7 +1002,7 @@ object PropsElement {
     
     @scala.inline
     def setRemoveEventListener(
-      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, _]) => Unit
+      value: (fullscreenchange, /* listener */ js.ThisFunction1[PropsElement, /* ev */ Event, js.Any]) => Unit
     ): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction2(value))
     
     @scala.inline

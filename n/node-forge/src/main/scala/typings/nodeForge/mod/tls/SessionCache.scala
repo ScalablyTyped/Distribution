@@ -5,21 +5,19 @@ import typings.nodeForge.mod.Bytes
 import typings.nodeForge.mod.Hex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionCache extends StObject {
   
-  var cache: StringDictionary[Session] = js.native
+  var cache: StringDictionary[Session]
   
-  var capacity: Double = js.native
+  var capacity: Double
   
-  def getSession(sessionId: Bytes): Session = js.native
+  def getSession(sessionId: Bytes): Session
   
-  var order: js.Array[Hex] = js.native
+  var order: js.Array[Hex]
   
-  def setSession(sessionId: Bytes, session: Session): Unit = js.native
+  def setSession(sessionId: Bytes, session: Session): Unit
 }
 object SessionCache {
   

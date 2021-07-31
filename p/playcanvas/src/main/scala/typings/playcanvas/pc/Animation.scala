@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,36 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property name - Human-readable name of the animation.
   * @property duration - Duration of the animation in seconds.
   */
-@js.native
 trait Animation extends StObject {
   
   /**
     * Adds a node to the internal nodes array.
     * @param node - The node to add.
     */
-  def addNode(node: Node): Unit = js.native
+  def addNode(node: Node): Unit
   
   /**
     * Duration of the animation in seconds.
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Gets a {@link pc.Node} by name.
     * @param name - The name of the pc.Node.
     * @returns The pc.Node with the specified name.
     */
-  def getNode(name: String): Node = js.native
+  def getNode(name: String): Node
   
   /**
     * Human-readable name of the animation.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * A read-only property to get array of animation nodes.
     */
-  val nodes: js.Array[Node] = js.native
+  val nodes: js.Array[Node]
 }
 object Animation {
   

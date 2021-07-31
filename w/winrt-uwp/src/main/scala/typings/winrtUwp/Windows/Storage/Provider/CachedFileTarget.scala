@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Storage.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object CachedFileTarget extends StObject {
   
   /** Update the locally cached copy of the file. */
   @js.native
-  sealed trait local extends CachedFileTarget
+  sealed trait local
+    extends StObject
+       with CachedFileTarget
   
   /** Update the remote version of the file. */
   @js.native
-  sealed trait remote extends CachedFileTarget
+  sealed trait remote
+    extends StObject
+       with CachedFileTarget
 }

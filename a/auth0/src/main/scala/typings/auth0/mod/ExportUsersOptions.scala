@@ -2,19 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportUsersOptions extends StObject {
   
-  var connection_id: js.UndefOr[String] = js.native
+  var connection_id: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[js.Array[ExportUserField]] = js.native
+  var fields: js.UndefOr[js.Array[ExportUserField]] = js.undefined
   
-  var format: js.UndefOr[JobFormat] = js.native
+  var format: js.UndefOr[JobFormat] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
 }
 object ExportUsersOptions {
   

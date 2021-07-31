@@ -2,21 +2,21 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerProps extends DraggableControlProps {
+trait MarkerProps
+  extends StObject
+     with DraggableControlProps {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var latitude: Double = js.native
+  var latitude: Double
   
-  var longitude: Double = js.native
+  var longitude: Double
   
-  var offsetLeft: js.UndefOr[Double] = js.native
+  var offsetLeft: js.UndefOr[Double] = js.undefined
   
-  var offsetTop: js.UndefOr[Double] = js.native
+  var offsetTop: js.UndefOr[Double] = js.undefined
 }
 object MarkerProps {
   

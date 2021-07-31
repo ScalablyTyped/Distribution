@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatingSystemConfigurationManager extends StObject {
   
   /**
     * The name of the configuration manager, which is Chef.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The versions of the configuration manager that are supported by an operating system.
     */
-  var Version: js.UndefOr[String] = js.native
+  var Version: js.UndefOr[String] = js.undefined
 }
 object OperatingSystemConfigurationManager {
   

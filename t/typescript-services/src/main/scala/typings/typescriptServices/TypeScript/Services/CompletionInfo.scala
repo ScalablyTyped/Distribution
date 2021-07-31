@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionInfo extends StObject {
   
-  var entries: js.Array[CompletionEntry] = js.native
+  var entries: js.Array[CompletionEntry]
   
-  var isMemberCompletion: Boolean = js.native
+  var isMemberCompletion: Boolean
   
-  var maybeInaccurate: Boolean = js.native
+  var maybeInaccurate: Boolean
 }
 object CompletionInfo {
   

@@ -2,21 +2,21 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnterpriseProjectIntegration extends ProjectIntegration {
+trait EnterpriseProjectIntegration
+  extends StObject
+     with ProjectIntegration {
   
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
-  var keyId: js.UndefOr[Double] = js.native
+  var keyId: js.UndefOr[Double] = js.undefined
   
-  var orgId: js.UndefOr[String] = js.native
+  var orgId: js.UndefOr[String] = js.undefined
   
-  var productKey: js.UndefOr[String] = js.native
+  var productKey: js.UndefOr[String] = js.undefined
   
-  var registries: js.UndefOr[js.Array[String]] = js.native
+  var registries: js.UndefOr[js.Array[String]] = js.undefined
 }
 object EnterpriseProjectIntegration {
   

@@ -2,19 +2,17 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Executes a script to handle the request that matches the URL pattern.
   */
-@js.native
 trait SchemaScriptHandler extends StObject {
   
   /**
     * Path to the script from the application root directory.
     */
-  var scriptPath: js.UndefOr[String] = js.native
+  var scriptPath: js.UndefOr[String] = js.undefined
 }
 object SchemaScriptHandler {
   

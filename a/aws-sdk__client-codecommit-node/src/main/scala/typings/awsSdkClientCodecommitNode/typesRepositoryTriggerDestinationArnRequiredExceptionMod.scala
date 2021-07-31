@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.putRepositoryTriggersExceptionsUnionMo
 import typings.awsSdkClientCodecommitNode.testRepositoryTriggersExceptionsUnionMod.TestRepositoryTriggersExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRepositoryTriggerDestinationArnRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerDestinationArnRequiredExceptionDetails> * / any */ @js.native
-  trait RepositoryTriggerDestinationArnRequiredException
-    extends PutRepositoryTriggersExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RepositoryTriggerDestinationArnRequiredExceptionDetails> * / any */ trait RepositoryTriggerDestinationArnRequiredException
+    extends StObject
+       with PutRepositoryTriggersExceptionsUnion
        with TestRepositoryTriggersExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerDestinationArnRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerDestinationArnRequiredException
   }
   object RepositoryTriggerDestinationArnRequiredException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerDestinationArnRequiredException
-    ): RepositoryTriggerDestinationArnRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RepositoryTriggerDestinationArnRequiredException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryTriggerDestinationArnRequiredException")
       __obj.asInstanceOf[RepositoryTriggerDestinationArnRequiredException]
     }
     
@@ -37,6 +34,5 @@ object typesRepositoryTriggerDestinationArnRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait RepositoryTriggerDestinationArnRequiredExceptionDetails extends StObject
 }

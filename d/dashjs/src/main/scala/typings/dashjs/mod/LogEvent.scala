@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogEvent extends Event {
+trait LogEvent
+  extends StObject
+     with Event {
   
-  var message: String = js.native
+  var message: String
   
   @JSName("type")
-  var type_LogEvent: log = js.native
+  var type_LogEvent: log
 }
 object LogEvent {
   
   @scala.inline
-  def apply(message: String, `type`: log): LogEvent = {
+  def apply(message: String): LogEvent = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[LogEvent]
   }
   

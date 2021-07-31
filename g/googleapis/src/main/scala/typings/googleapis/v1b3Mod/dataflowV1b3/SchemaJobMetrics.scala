@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,18 +11,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * recent values of each metric; time-series data can be queried for them
   * (under the same metric names) from Cloud Monitoring.
   */
-@js.native
 trait SchemaJobMetrics extends StObject {
   
   /**
     * Timestamp as of which metric values are current.
     */
-  var metricTime: js.UndefOr[String] = js.native
+  var metricTime: js.UndefOr[String] = js.undefined
   
   /**
     * All metrics for this job.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetricUpdate]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetricUpdate]] = js.undefined
 }
 object SchemaJobMetrics {
   

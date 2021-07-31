@@ -3,23 +3,21 @@ package typings.auth0Js.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptchaTemplates extends StObject {
   
   /**
     * Template function receiving the challenge and returning an string
     */
-  var auth0: js.UndefOr[js.Function1[/* challenge */ Auth0Challenge, String]] = js.native
+  var auth0: js.UndefOr[js.Function1[/* challenge */ Auth0Challenge, String]] = js.undefined
   
-  def error(error: Error): String = js.native
+  def error(error: Error): String
   
   /**
     * Template function receiving the challenge and returning an string
     */
-  var recaptcha_v2: js.UndefOr[js.Function1[/* challenge */ Auth0Challenge, String]] = js.native
+  var recaptcha_v2: js.UndefOr[js.Function1[/* challenge */ Auth0Challenge, String]] = js.undefined
 }
 object CaptchaTemplates {
   

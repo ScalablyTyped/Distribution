@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPolicyMod {
   
-  @JSImport("@pulumi/aws/iam/getPolicy", "getPolicy")
+  @JSImport("@pulumi/aws/iam/getPolicy", JSImport.Namespace)
   @js.native
-  def getPolicy(args: GetPolicyArgs): js.Promise[GetPolicyResult] = js.native
-  @JSImport("@pulumi/aws/iam/getPolicy", "getPolicy")
-  @js.native
-  def getPolicy(args: GetPolicyArgs, opts: InvokeOptions): js.Promise[GetPolicyResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPolicy(args: GetPolicyArgs): js.Promise[GetPolicyResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPolicyResult]]
+  @scala.inline
+  def getPolicy(args: GetPolicyArgs, opts: InvokeOptions): js.Promise[GetPolicyResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPolicy")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPolicyResult]]
+  
   trait GetPolicyArgs extends StObject {
     
     /**
       * ARN of the IAM policy.
       */
-    val arn: String = js.native
+    val arn: String
   }
   object GetPolicyArgs {
     
@@ -39,38 +39,37 @@ object getPolicyMod {
     }
   }
   
-  @js.native
   trait GetPolicyResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the policy.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The description of the policy.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the IAM policy.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The path to the policy.
       */
-    val path: String = js.native
+    val path: String
     
     /**
       * The policy document of the policy.
       */
-    val policy: String = js.native
+    val policy: String
   }
   object GetPolicyResult {
     

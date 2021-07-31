@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Similarly to the k-map metric, we cannot compute δ-presence exactly without
   * knowing the attack dataset, so we use a statistical model instead.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig extends StObject {
   
   /**
@@ -19,20 +17,20 @@ trait SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig extends StObject {
     * used to tag a quasi-identifiers field must appear in exactly one field of
     * one auxiliary table.
     */
-  var auxiliaryTables: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StatisticalTable]] = js.native
+  var auxiliaryTables: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2StatisticalTable]] = js.undefined
   
   /**
     * Fields considered to be quasi-identifiers. No two fields can have the
     * same tag. [required]
     */
-  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2QuasiId]] = js.native
+  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2QuasiId]] = js.undefined
   
   /**
     * ISO 3166-1 alpha-2 region code to use in the statistical modeling.
     * Required if no column is tagged with a region-specific InfoType (like
     * US_ZIP_5) or a region code.
     */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DeltaPresenceEstimationConfig {
   

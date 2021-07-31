@@ -4,44 +4,42 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.intercomClient.intercomClientStrings.company
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Company.Company> */
-@js.native
 trait PartialCompany extends StObject {
   
-  var app_id: js.UndefOr[String] = js.native
+  var app_id: js.UndefOr[String] = js.undefined
   
-  var company_id: js.UndefOr[String] = js.native
+  var company_id: js.UndefOr[String] = js.undefined
   
-  var created_at: js.UndefOr[Double] = js.native
+  var created_at: js.UndefOr[Double] = js.undefined
   
-  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var custom_attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var industry: js.UndefOr[String] = js.native
+  var industry: js.UndefOr[String] = js.undefined
   
-  var monthly_spend: js.UndefOr[Double] = js.native
+  var monthly_spend: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var plan: js.UndefOr[String | Name] = js.native
+  var plan: js.UndefOr[String | Name] = js.undefined
   
-  var remote_created_at: js.UndefOr[Double] = js.native
+  var remote_created_at: js.UndefOr[Double] = js.undefined
   
-  var session_count: js.UndefOr[Double] = js.native
+  var session_count: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[company] = js.native
+  var `type`: js.UndefOr[company] = js.undefined
   
-  var updated_at: js.UndefOr[Double] = js.native
+  var updated_at: js.UndefOr[Double] = js.undefined
   
-  var user_count: js.UndefOr[Double] = js.native
+  var user_count: js.UndefOr[Double] = js.undefined
   
-  var website: js.UndefOr[String] = js.native
+  var website: js.UndefOr[String] = js.undefined
 }
 object PartialCompany {
   

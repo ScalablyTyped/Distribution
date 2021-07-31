@@ -2,46 +2,44 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBProxyTarget extends StObject {
   
   /**
     * The writer endpoint for the RDS DB instance or Aurora DB cluster.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The port that the RDS Proxy uses to connect to the target RDS DB instance or Aurora DB cluster.
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * The identifier representing the target. It can be the instance identifier for an RDS DB instance, or the cluster identifier for an Aurora DB cluster.
     */
-  var RdsResourceId: js.UndefOr[String] = js.native
+  var RdsResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the RDS DB instance or Aurora DB cluster.
     */
-  var TargetArn: js.UndefOr[String] = js.native
+  var TargetArn: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the connection health of the RDS Proxy target.
     */
-  var TargetHealth: js.UndefOr[typings.awsSdk.rdsMod.TargetHealth] = js.native
+  var TargetHealth: js.UndefOr[typings.awsSdk.rdsMod.TargetHealth] = js.undefined
   
   /**
     * The DB cluster identifier when the target represents an Aurora DB cluster. This field is blank when the target represents an RDS DB instance.
     */
-  var TrackedClusterId: js.UndefOr[String] = js.native
+  var TrackedClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the kind of database, such as an RDS DB instance or an Aurora DB cluster, that the target represents.
     */
-  var Type: js.UndefOr[TargetType] = js.native
+  var Type: js.UndefOr[TargetType] = js.undefined
 }
 object DBProxyTarget {
   

@@ -6,38 +6,38 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBucketsGet extends StandardParameters {
+trait ParamsResourceBucketsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of a bucket.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the return of the bucket metadata conditional on whether the
     * bucket's current metageneration matches the given value.
     */
-  var ifMetagenerationMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Makes the return of the bucket metadata conditional on whether the
     * bucket's current metageneration does not match the given value.
     */
-  var ifMetagenerationNotMatch: js.UndefOr[String] = js.native
+  var ifMetagenerationNotMatch: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBucketsGet {
   

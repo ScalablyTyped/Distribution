@@ -5,51 +5,46 @@ import typings.fastGlob.typesMod.Pattern
 import typings.fastGlob.typesMod.PatternsGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tasksMod {
   
-  @JSImport("fast-glob/out/managers/tasks", "convertPatternGroupToTask")
+  @JSImport("fast-glob/out/managers/tasks", JSImport.Namespace)
   @js.native
-  def convertPatternGroupToTask(base: String, positive: js.Array[Pattern], negative: js.Array[Pattern], dynamic: Boolean): Task = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fast-glob/out/managers/tasks", "convertPatternGroupsToTasks")
-  @js.native
-  def convertPatternGroupsToTasks(positive: PatternsGroup, negative: js.Array[Pattern], dynamic: Boolean): js.Array[Task] = js.native
+  @scala.inline
+  def convertPatternGroupToTask(base: String, positive: js.Array[Pattern], negative: js.Array[Pattern], dynamic: Boolean): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPatternGroupToTask")(base.asInstanceOf[js.Any], positive.asInstanceOf[js.Any], negative.asInstanceOf[js.Any], dynamic.asInstanceOf[js.Any])).asInstanceOf[Task]
   
-  @JSImport("fast-glob/out/managers/tasks", "convertPatternsToTasks")
-  @js.native
-  def convertPatternsToTasks(positive: js.Array[Pattern], negative: js.Array[Pattern], dynamic: Boolean): js.Array[Task] = js.native
+  @scala.inline
+  def convertPatternGroupsToTasks(positive: PatternsGroup, negative: js.Array[Pattern], dynamic: Boolean): js.Array[Task] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPatternGroupsToTasks")(positive.asInstanceOf[js.Any], negative.asInstanceOf[js.Any], dynamic.asInstanceOf[js.Any])).asInstanceOf[js.Array[Task]]
   
-  @JSImport("fast-glob/out/managers/tasks", "generate")
-  @js.native
-  def generate(patterns: js.Array[Pattern], settings: default): js.Array[Task] = js.native
+  @scala.inline
+  def convertPatternsToTasks(positive: js.Array[Pattern], negative: js.Array[Pattern], dynamic: Boolean): js.Array[Task] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPatternsToTasks")(positive.asInstanceOf[js.Any], negative.asInstanceOf[js.Any], dynamic.asInstanceOf[js.Any])).asInstanceOf[js.Array[Task]]
   
-  @JSImport("fast-glob/out/managers/tasks", "getNegativePatternsAsPositive")
-  @js.native
-  def getNegativePatternsAsPositive(patterns: js.Array[Pattern], ignore: js.Array[Pattern]): js.Array[Pattern] = js.native
+  @scala.inline
+  def generate(patterns: js.Array[Pattern], settings: default): js.Array[Task] = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(patterns.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Task]]
   
-  @JSImport("fast-glob/out/managers/tasks", "getPositivePatterns")
-  @js.native
-  def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+  @scala.inline
+  def getNegativePatternsAsPositive(patterns: js.Array[Pattern], ignore: js.Array[Pattern]): js.Array[Pattern] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNegativePatternsAsPositive")(patterns.asInstanceOf[js.Any], ignore.asInstanceOf[js.Any])).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/managers/tasks", "groupPatternsByBaseDirectory")
-  @js.native
-  def groupPatternsByBaseDirectory(patterns: js.Array[Pattern]): PatternsGroup = js.native
+  @scala.inline
+  def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositivePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
   
-  @js.native
+  @scala.inline
+  def groupPatternsByBaseDirectory(patterns: js.Array[Pattern]): PatternsGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("groupPatternsByBaseDirectory")(patterns.asInstanceOf[js.Any]).asInstanceOf[PatternsGroup]
+  
   trait Task extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var dynamic: Boolean = js.native
+    var dynamic: Boolean
     
-    var negative: js.Array[Pattern] = js.native
+    var negative: js.Array[Pattern]
     
-    var patterns: js.Array[Pattern] = js.native
+    var patterns: js.Array[Pattern]
     
-    var positive: js.Array[Pattern] = js.native
+    var positive: js.Array[Pattern]
   }
   object Task {
     

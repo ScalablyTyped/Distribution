@@ -2,38 +2,36 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionRepositoryMetadataArgsMod {
   
-  @js.native
   trait TransactionRepositoryMetadataArgs extends StObject {
     
     /**
       * Argument of generic Repository<T> class if it's not custom repository class.
       */
-    val entityType: js.UndefOr[js.Function] = js.native
+    val entityType: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Index of the parameter on which decorator is used.
       */
-    val index: Double = js.native
+    val index: Double
     
     /**
       * Method on which decorator is used.
       */
-    val methodName: String = js.native
+    val methodName: String
     
     /**
       * Type of the repository class (Repository, TreeRepository or MongoRepository) or custom repository class.
       */
-    val repositoryType: js.Function = js.native
+    val repositoryType: js.Function
     
     /**
       * Target class on which decorator is used.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object TransactionRepositoryMetadataArgs {
     

@@ -2,19 +2,17 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for `SendCommandToDevice`.
   */
-@js.native
 trait SchemaSendCommandToDeviceRequest extends StObject {
   
   /**
     * The command data to send to the device.
     */
-  var binaryData: js.UndefOr[String] = js.native
+  var binaryData: js.UndefOr[String] = js.undefined
   
   /**
     * Optional subfolder for the command. If empty, the command will be
@@ -24,7 +22,7 @@ trait SchemaSendCommandToDeviceRequest extends StObject {
     * 256 characters, and must not contain any MQTT wildcards (&quot;+&quot; or
     * &quot;#&quot;) or null characters.
     */
-  var subfolder: js.UndefOr[String] = js.native
+  var subfolder: js.UndefOr[String] = js.undefined
 }
 object SchemaSendCommandToDeviceRequest {
   

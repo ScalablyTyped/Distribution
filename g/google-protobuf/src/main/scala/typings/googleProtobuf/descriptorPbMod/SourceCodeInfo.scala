@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class SourceCodeInfo () extends Message {
   
   def addLocation(): Location = js.native
-  def addLocation(value: js.UndefOr[scala.Nothing], index: Double): Location = js.native
+  def addLocation(value: Unit, index: Double): Location = js.native
   def addLocation(value: Location): Location = js.native
   def addLocation(value: Location, index: Double): Location = js.native
   
@@ -89,13 +88,11 @@ object SourceCodeInfo {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): Location = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): Location = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[Location]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: Location, reader: BinaryReader): Location = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: Location, reader: BinaryReader): Location = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[Location]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.extensions")
     @js.native
@@ -110,26 +107,23 @@ object SourceCodeInfo {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: Location, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: Location, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.Location.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: Location): typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: Location): typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var leadingComments: js.UndefOr[String] = js.native
+      var leadingComments: js.UndefOr[String] = js.undefined
       
-      var leadingDetachedCommentsList: js.Array[String] = js.native
+      var leadingDetachedCommentsList: js.Array[String]
       
-      var pathList: js.Array[Double] = js.native
+      var pathList: js.Array[Double]
       
-      var spanList: js.Array[Double] = js.native
+      var spanList: js.Array[Double]
       
-      var trailingComments: js.UndefOr[String] = js.native
+      var trailingComments: js.UndefOr[String] = js.undefined
     }
     object AsObject {
       
@@ -179,13 +173,11 @@ object SourceCodeInfo {
     }
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): SourceCodeInfo = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): SourceCodeInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[SourceCodeInfo]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: SourceCodeInfo, reader: BinaryReader): SourceCodeInfo = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: SourceCodeInfo, reader: BinaryReader): SourceCodeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[SourceCodeInfo]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.extensions")
   @js.native
@@ -200,18 +192,15 @@ object SourceCodeInfo {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: SourceCodeInfo, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: SourceCodeInfo, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "SourceCodeInfo.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: SourceCodeInfo): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: SourceCodeInfo): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var locationList: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject] = js.native
+    var locationList: js.Array[typings.googleProtobuf.descriptorPbMod.SourceCodeInfo.Location.AsObject]
   }
   object AsObject {
     

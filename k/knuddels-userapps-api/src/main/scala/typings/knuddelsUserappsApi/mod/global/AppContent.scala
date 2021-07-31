@@ -3,7 +3,6 @@ package typings.knuddelsUserappsApi.mod.global
 import typings.knuddelsUserappsApi.mod.KnuddelsEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,41 +80,40 @@ class AppContent () extends StObject {
 }
 object AppContent {
   
+  @JSGlobal("AppContent")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_headerbarContent
   		 */
   /* static member */
-  @JSGlobal("AppContent.headerbarContent")
-  @js.native
-  def headerbarContent(htmlFile: HTMLFile, height: Double): AppContent = js.native
+  @scala.inline
+  def headerbarContent(htmlFile: HTMLFile, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("headerbarContent")(htmlFile.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_overlayContent
   		 */
   /* static member */
-  @JSGlobal("AppContent.overlayContent")
-  @js.native
-  def overlayContent(htmlFile: HTMLFile): AppContent = js.native
+  @scala.inline
+  def overlayContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_overlayContent
   		 */
   /* static member */
-  @JSGlobal("AppContent.overlayContent")
-  @js.native
-  def overlayContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = js.native
+  @scala.inline
+  def overlayContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("overlayContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
   
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_popupContent
   		 */
   /* static member */
-  @JSGlobal("AppContent.popupContent")
-  @js.native
-  def popupContent(htmlFile: HTMLFile): AppContent = js.native
+  @scala.inline
+  def popupContent(htmlFile: HTMLFile): AppContent = ^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any]).asInstanceOf[AppContent]
   /**
   		 * @see https://developer.knuddels.de/docs/classes/AppContent.html#method_popupContent
   		 */
   /* static member */
-  @JSGlobal("AppContent.popupContent")
-  @js.native
-  def popupContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = js.native
+  @scala.inline
+  def popupContent(htmlFile: HTMLFile, width: Double, height: Double): AppContent = (^.asInstanceOf[js.Dynamic].applyDynamic("popupContent")(htmlFile.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[AppContent]
 }

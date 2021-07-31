@@ -3,15 +3,13 @@ package typings.angularAnimations
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object `0` {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var params: StringDictionary[js.Any] = js.native
+    var params: StringDictionary[js.Any]
   }
   object Params {
     

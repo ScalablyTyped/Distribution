@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.iconTypesMod.IIconProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconBaseMod {
@@ -18,10 +17,9 @@ object iconBaseMod {
     var _onImageLoadingStateChange: js.Any = js.native
   }
   
-  @js.native
   trait IIconState extends StObject {
     
-    var imageLoadError: Boolean = js.native
+    var imageLoadError: Boolean
   }
   object IIconState {
     

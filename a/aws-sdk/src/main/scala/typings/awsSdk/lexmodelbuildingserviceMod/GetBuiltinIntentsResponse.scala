@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBuiltinIntentsResponse extends StObject {
   
   /**
     * An array of builtinIntentMetadata objects, one for each intent in the response.
     */
-  var intents: js.UndefOr[BuiltinIntentMetadataList] = js.native
+  var intents: js.UndefOr[BuiltinIntentMetadataList] = js.undefined
   
   /**
     * A pagination token that fetches the next page of intents. If the response to this API call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of intents, specify the pagination token in the next request.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetBuiltinIntentsResponse {
   

@@ -2,7 +2,6 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The navbar is returned as a list of top-level items, each of which has a list of child items.
   * Child items always have an empty array for their `childItems`.
   */
-@js.native
 trait NavigationBarItem extends StObject {
   
-  var bolded: Boolean = js.native
+  var bolded: Boolean
   
-  var childItems: js.Array[NavigationBarItem] = js.native
+  var childItems: js.Array[NavigationBarItem]
   
-  var grayed: Boolean = js.native
+  var grayed: Boolean
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var spans: js.Array[TextSpan] = js.native
+  var spans: js.Array[TextSpan]
   
-  var text: java.lang.String = js.native
+  var text: java.lang.String
 }
 object NavigationBarItem {
   

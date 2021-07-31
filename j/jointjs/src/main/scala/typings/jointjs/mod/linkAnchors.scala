@@ -7,7 +7,6 @@ import typings.jointjs.jointjsStrings.connectionRatio
 import typings.jointjs.mod.anchors.GenericAnchor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkAnchors {
@@ -40,10 +39,9 @@ object linkAnchors {
   @scala.inline
   def connectionRatio_=(x: GenericAnchor[connectionRatio]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectionRatio")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ConnectionClosestAnchorArguments extends StObject {
     
-    var fixedAt: js.UndefOr[Double | String] = js.native
+    var fixedAt: js.UndefOr[Double | String] = js.undefined
   }
   object ConnectionClosestAnchorArguments {
     
@@ -64,10 +62,9 @@ object linkAnchors {
     }
   }
   
-  @js.native
   trait ConnectionLengthAnchorArguments extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object ConnectionLengthAnchorArguments {
     
@@ -88,12 +85,11 @@ object linkAnchors {
     }
   }
   
-  @js.native
   trait ConnectionPerpendicularAnchorArguments extends StObject {
     
-    var fallbackAt: js.UndefOr[Double | String] = js.native
+    var fallbackAt: js.UndefOr[Double | String] = js.undefined
     
-    var fixedAt: js.UndefOr[Double | String] = js.native
+    var fixedAt: js.UndefOr[Double | String] = js.undefined
   }
   object ConnectionPerpendicularAnchorArguments {
     
@@ -120,10 +116,9 @@ object linkAnchors {
     }
   }
   
-  @js.native
   trait ConnectionRatioAnchorArguments extends StObject {
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
   }
   object ConnectionRatioAnchorArguments {
     

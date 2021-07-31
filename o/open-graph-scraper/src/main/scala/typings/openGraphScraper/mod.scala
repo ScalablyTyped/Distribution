@@ -8,16 +8,13 @@ import typings.openGraphScraper.openGraphScraperBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("open-graph-scraper", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[SuccessResult | ErrorResult] = js.native
-  @JSImport("open-graph-scraper", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(options: Options): js.Promise[SuccessResult | ErrorResult] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SuccessResult | ErrorResult]]
+  @scala.inline
   def apply(
     options: Options,
     callback: js.Function3[
@@ -26,20 +23,23 @@ object mod {
       /* response */ PassThrough, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("open-graph-scraper", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ErrorResult extends StObject {
     
-    var error: `true` = js.native
+    var error: `true`
     
-    var result: Error = js.native
+    var result: Error
   }
   object ErrorResult {
     
     @scala.inline
-    def apply(error: `true`, result: Error): ErrorResult = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    def apply(result: Error): ErrorResult = {
+      val __obj = js.Dynamic.literal(error = true, result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[ErrorResult]
     }
     
@@ -54,56 +54,55 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** By default, OGS will only send back the first image/video it finds (default: `false`). */
-    var allMedia: js.UndefOr[Boolean] = js.native
+    var allMedia: js.UndefOr[Boolean] = js.undefined
     
     /** Pass in an array of sites you don't want `og`s to run on. */
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set the accept-encoding to `gzip/deflate` (default: `true`). */
-    var decompress: js.UndefOr[Boolean] = js.native
+    var decompress: js.UndefOr[Boolean] = js.undefined
     
     /** Setting this to `null` might help with running `og`s on non english websites (default: `utf8`). */
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
     /** Defines if redirect responses should be followed automatically (default: `true`). */
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
     /** An object containing request headers. Useful for setting the user-agent. */
-    var headers: js.UndefOr[Record[String, String]] = js.native
+    var headers: js.UndefOr[Record[String, String]] = js.undefined
     
     /** You can pass in an HTML string to run `og`s on it (use without `options.url`). */
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
     /** Max number of redirects `og`s will follow (default: `10`). */
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
     /** Fetch other images if no open graph ones are found (default: `true`). */
-    var ogImageFallback: js.UndefOr[Boolean] = js.native
+    var ogImageFallback: js.UndefOr[Boolean] = js.undefined
     
     /** Only fetch open graph info and don't fall back on anything else (default: `false`). */
-    var onlyGetOpenGraphInfo: js.UndefOr[Boolean] = js.native
+    var onlyGetOpenGraphInfo: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the peekSize for the request (default: `1024`). */
-    var peekSize: js.UndefOr[Double] = js.native
+    var peekSize: js.UndefOr[Double] = js.undefined
     
     /** Number of times `og`s will retry the request (default: `2`). */
-    var retry: js.UndefOr[Double] = js.native
+    var retry: js.UndefOr[Double] = js.undefined
     
     /** Runs charset and icons on the request payload (default: `false`). */
-    var runChar: js.UndefOr[Boolean] = js.native
+    var runChar: js.UndefOr[Boolean] = js.undefined
     
     /** Timeout of the request in ms (default: `2000`). */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** URL of the site. */
-    var url: String = js.native
+    var url: String
     
     /** Returns the charset in the `og`s payload (default: `false`). */
-    var withCharset: js.UndefOr[Boolean] = js.native
+    var withCharset: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -217,20 +216,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SuccessResult extends StObject {
     
-    var error: `false` = js.native
+    var error: `false`
     
-    var response: PassThrough = js.native
+    var response: PassThrough
     
-    var result: OgDescription = js.native
+    var result: OgDescription
   }
   object SuccessResult {
     
     @scala.inline
-    def apply(error: `false`, response: PassThrough, result: OgDescription): SuccessResult = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+    def apply(response: PassThrough, result: OgDescription): SuccessResult = {
+      val __obj = js.Dynamic.literal(error = false, response = response.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
       __obj.asInstanceOf[SuccessResult]
     }
     

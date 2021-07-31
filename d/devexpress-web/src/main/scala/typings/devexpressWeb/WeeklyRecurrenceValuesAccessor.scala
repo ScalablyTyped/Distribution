@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object providing access to an ASPxClientWeeklyRecurrenceControl's editor values.
   */
-@js.native
-trait WeeklyRecurrenceValuesAccessor extends DefaultRecurrenceRuleValuesAccessor
+trait WeeklyRecurrenceValuesAccessor
+  extends StObject
+     with DefaultRecurrenceRuleValuesAccessor
 object WeeklyRecurrenceValuesAccessor {
   
   @scala.inline

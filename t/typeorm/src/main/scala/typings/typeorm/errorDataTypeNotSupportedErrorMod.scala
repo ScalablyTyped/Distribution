@@ -6,15 +6,22 @@ import typings.typeorm.typesColumnTypesMod.ColumnType
 import typings.typeorm.typesDatabaseTypeMod.DatabaseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorDataTypeNotSupportedErrorMod {
   
   @JSImport("typeorm/error/DataTypeNotSupportedError", "DataTypeNotSupportedError")
   @js.native
-  class DataTypeNotSupportedError protected () extends Error {
+  class DataTypeNotSupportedError protected ()
+    extends StObject
+       with Error {
     def this(column: ColumnMetadata, dataType: ColumnType) = this()
     def this(column: ColumnMetadata, dataType: ColumnType, database: DatabaseType) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
 }

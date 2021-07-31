@@ -2,26 +2,24 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Application extends StObject {
   
   /**
     * The description of the application.
     */
-  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.appconfigMod.Description] = js.undefined
   
   /**
     * The application ID.
     */
-  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.appconfigMod.Id] = js.undefined
   
   /**
     * The application name.
     */
-  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.appconfigMod.Name] = js.undefined
 }
 object Application {
   

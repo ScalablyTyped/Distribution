@@ -2,26 +2,24 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultsGroupsForRelease extends StObject {
   
   /**
     * The group by results
     */
-  var fields: js.Array[FieldDetailsForTestResults] = js.native
+  var fields: js.Array[FieldDetailsForTestResults]
   
   /**
     * Release Environment Id for which groupby result is fetched.
     */
-  var releaseEnvId: Double = js.native
+  var releaseEnvId: Double
   
   /**
     * ReleaseId for which groupby result is fetched.
     */
-  var releaseId: Double = js.native
+  var releaseId: Double
 }
 object TestResultsGroupsForRelease {
   

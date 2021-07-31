@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AssociationScore...
   */
-@js.native
 trait IAssociationScore extends StObject {
   
   /**
     * Association information about the field FieldName1 defined in qFieldPairName.
     */
-  var qField1Scores: IFieldScores = js.native
+  var qField1Scores: IFieldScores
   
   /**
     * Association information about the field FieldName2 defined in qFieldPairName.
     */
-  var qField2Scores: IFieldScores = js.native
+  var qField2Scores: IFieldScores
   
   /**
     * Pair of fields.
@@ -29,7 +27,7 @@ trait IAssociationScore extends StObject {
     * <FieldName2> is a field in the table 2 (defined in qTable2)
     * If the field is a synthetic key, the name of the field is preceded by [Synthetic key]:.
     */
-  var qFieldPairName: String = js.native
+  var qFieldPairName: String
   
   /**
     * Flag used to interpret calculated scores.
@@ -46,7 +44,7 @@ trait IAssociationScore extends StObject {
     * The number of rows of the field FieldName1 is zero, and the number of distinct values
     * of the field FieldName2 is zero, then qScoreSummary is -18.
     */
-  var qScoreSummary: Double = js.native
+  var qScoreSummary: Double
 }
 object IAssociationScore {
   

@@ -3,7 +3,6 @@ package typings.rxDom.mod
 import typings.rx.Rx.Comparer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -20,5 +19,5 @@ class RecordedCls protected ()
     * @param {Function} comparer An optional comparer.
     */
   def this(time: Double, value: js.Any) = this()
-  def this(time: Double, value: js.Any, equalityComparer: Comparer[_, Boolean]) = this()
+  def this(time: Double, value: js.Any, equalityComparer: Comparer[js.Any, Boolean]) = this()
 }

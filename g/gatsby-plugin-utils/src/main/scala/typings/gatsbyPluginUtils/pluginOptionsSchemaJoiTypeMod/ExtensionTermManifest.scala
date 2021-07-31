@@ -3,13 +3,11 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 import typings.gatsbyPluginUtils.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionTermManifest extends StObject {
   
-  var mapped: From = js.native
+  var mapped: From
 }
 object ExtensionTermManifest {
   

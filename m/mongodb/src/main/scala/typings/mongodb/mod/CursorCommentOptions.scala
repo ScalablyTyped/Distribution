@@ -2,21 +2,19 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CursorCommentOptions extends StObject {
   
-  var hint: js.UndefOr[String] = js.native
+  var hint: js.UndefOr[String] = js.undefined
   
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
-  var maxTimeMS: js.UndefOr[scala.Double] = js.native
+  var maxTimeMS: js.UndefOr[scala.Double] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var skip: js.UndefOr[scala.Double] = js.native
+  var skip: js.UndefOr[scala.Double] = js.undefined
 }
 object CursorCommentOptions {
   

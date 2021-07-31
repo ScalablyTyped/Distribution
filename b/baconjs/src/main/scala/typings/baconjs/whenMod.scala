@@ -7,30 +7,28 @@ import typings.baconjs.observableMod.default
 import typings.baconjs.sourceMod.Source
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whenMod {
   
-  @JSImport("baconjs/types/when", JSImport.Default)
+  @JSImport("baconjs/types/when", JSImport.Namespace)
   @js.native
-  def default[O](patterns: Pattern[O]*): EventStream[O] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/when", "extractRawPatterns")
-  @js.native
-  def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = js.native
+  @scala.inline
+  def default[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
   
-  @JSImport("baconjs/types/when", "when")
-  @js.native
-  def when[O](patterns: Pattern[O]*): EventStream[O] = js.native
+  @scala.inline
+  def extractRawPatterns[O](patterns: js.Array[Pattern[O]]): js.Array[RawPattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("extractRawPatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[RawPattern]]
   
-  @JSImport("baconjs/types/when", "whenP")
-  @js.native
-  def whenP[O](patterns: Pattern[O]*): Property[O] = js.native
+  @scala.inline
+  def when[O](patterns: Pattern[O]*): EventStream[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(patterns.asInstanceOf[js.Any]).asInstanceOf[EventStream[O]]
   
-  @JSImport("baconjs/types/when", "when_")
-  @js.native
-  def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = js.native
+  @scala.inline
+  def whenP[O](patterns: Pattern[O]*): Property[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("whenP")(patterns.asInstanceOf[js.Any]).asInstanceOf[Property[O]]
+  
+  @scala.inline
+  def when_[O](ctor: ObservableConstructor, patterns: js.Array[Pattern[O]]): default[O] = (^.asInstanceOf[js.Dynamic].applyDynamic("when_")(ctor.asInstanceOf[js.Any], patterns.asInstanceOf[js.Any])).asInstanceOf[default[O]]
   
   type AnyFunction = js.Function
   

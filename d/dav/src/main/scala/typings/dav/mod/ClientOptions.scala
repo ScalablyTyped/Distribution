@@ -2,16 +2,14 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientOptions extends StObject {
   
   /**
     * root url to resolve relative request urls with.
     */
-  var baseUrl: String = js.native
+  var baseUrl: String
 }
 object ClientOptions {
   

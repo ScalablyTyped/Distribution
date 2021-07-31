@@ -3,33 +3,31 @@ package typings.reactInspector.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeViewProps extends StObject {
   
   /**
     * Not required prop because we also allow undefined value.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An integer specifying to which level the tree should be initially expanded.
     */
-  var expandLevel: js.UndefOr[Double] = js.native
+  var expandLevel: js.UndefOr[Double] = js.undefined
   
   /**
     * An array containing all the paths that should be expanded when the component is initialized, or a string of just one path.
     */
-  var expandPaths: js.UndefOr[String | js.Array[String]] = js.native
+  var expandPaths: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Provide a custom nodeRenderer.
     */
-  var nodeRenderer: js.UndefOr[InspectorNodeRenderer] = js.native
+  var nodeRenderer: js.UndefOr[InspectorNodeRenderer] = js.undefined
 }
 object TreeViewProps {
   

@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeQuery extends AST {
+trait TypeQuery
+  extends StObject
+     with AST {
   
-  var name: AST = js.native
+  var name: AST
   
-  def structuralEquals(ast: TypeQuery, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: TypeQuery, includingPosition: Boolean): Boolean
 }
 object TypeQuery {
   

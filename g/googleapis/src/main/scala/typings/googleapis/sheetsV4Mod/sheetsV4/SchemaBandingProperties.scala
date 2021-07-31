@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,20 +16,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * priority over the column header in the top left cell, but the column header
   * takes priority over the first row color if the row header is not set.
   */
-@js.native
 trait SchemaBandingProperties extends StObject {
   
   /**
     * The first color that is alternating. (Required)
     */
-  var firstBandColor: js.UndefOr[SchemaColor] = js.native
+  var firstBandColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The color of the last row or column. If this field is not set, the last
     * row or column will be filled with either first_band_color or
     * second_band_color, depending on the color of the previous row or column.
     */
-  var footerColor: js.UndefOr[SchemaColor] = js.native
+  var footerColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The color of the first row or column. If this field is set, the first row
@@ -40,12 +38,12 @@ trait SchemaBandingProperties extends StObject {
     * first_band_color and the colors will proceed to alternate as they
     * normally would.
     */
-  var headerColor: js.UndefOr[SchemaColor] = js.native
+  var headerColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The second color that is alternating. (Required)
     */
-  var secondBandColor: js.UndefOr[SchemaColor] = js.native
+  var secondBandColor: js.UndefOr[SchemaColor] = js.undefined
 }
 object SchemaBandingProperties {
   

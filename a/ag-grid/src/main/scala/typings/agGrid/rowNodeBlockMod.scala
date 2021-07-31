@@ -9,7 +9,6 @@ import typings.agGrid.rowRendererMod.RowRenderer
 import typings.agGrid.utilsMod.NumberSequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowNodeBlockMod {
@@ -76,7 +75,7 @@ object rowNodeBlockMod {
     
     /* protected */ def pageLoadFailed(): Unit = js.native
     
-    /* protected */ def pageLoaded(version: Double, rows: js.Array[_], lastRow: Double): Unit = js.native
+    /* protected */ def pageLoaded(version: Double, rows: js.Array[js.Any], lastRow: Double): Unit = js.native
     
     /* private */ def populateWithRowData(rows: js.Any): js.Any = js.native
     
@@ -140,14 +139,15 @@ object rowNodeBlockMod {
     def STATE_LOADING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("STATE_LOADING")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait LoadCompleteEvent extends AgEvent {
+  trait LoadCompleteEvent
+    extends StObject
+       with AgEvent {
     
-    var lastRow: Double = js.native
+    var lastRow: Double
     
-    var page: RowNodeBlock = js.native
+    var page: RowNodeBlock
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object LoadCompleteEvent {
     
@@ -172,12 +172,11 @@ object rowNodeBlockMod {
     }
   }
   
-  @js.native
   trait RowNodeBlockBeans extends StObject {
     
-    var context: Context = js.native
+    var context: Context
     
-    var rowRenderer: RowRenderer = js.native
+    var rowRenderer: RowRenderer
   }
   object RowNodeBlockBeans {
     

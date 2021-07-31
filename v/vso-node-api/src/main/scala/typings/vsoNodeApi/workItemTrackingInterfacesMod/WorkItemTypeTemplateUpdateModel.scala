@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeTemplateUpdateModel extends StObject {
   
   /**
     * Describes the type of the action for the update request.
     */
-  var actionType: ProvisioningActionType = js.native
+  var actionType: ProvisioningActionType
   
   /**
     * Methodology to which the template belongs, eg. Agile, Scrum, CMMI.
     */
-  var methodology: String = js.native
+  var methodology: String
   
   /**
     * String representation of the work item type template.
     */
-  var template: String = js.native
+  var template: String
   
   /**
     * The type of the template described in the request body.
     */
-  var templateType: TemplateType = js.native
+  var templateType: TemplateType
 }
 object WorkItemTypeTemplateUpdateModel {
   

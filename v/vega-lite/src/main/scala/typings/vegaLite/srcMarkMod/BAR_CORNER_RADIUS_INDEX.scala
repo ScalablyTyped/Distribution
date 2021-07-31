@@ -6,7 +6,6 @@ import typings.vegaLite.vegaLiteStrings.cornerRadiusTopLeft
 import typings.vegaLite.vegaLiteStrings.cornerRadiusTopRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Record<vega.vega.Orientation, std.Array<'cornerRadiusTopLeft' | 'cornerRadiusTopRight' | 'cornerRadiusBottomLeft' | 'cornerRadiusBottomRight'>>> */

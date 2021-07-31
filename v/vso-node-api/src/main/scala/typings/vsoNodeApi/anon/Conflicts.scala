@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conflicts extends StObject {
   
-  var conflicts: scala.Double = js.native
+  var conflicts: scala.Double
   
-  var failure: scala.Double = js.native
+  var failure: scala.Double
   
-  var notSet: scala.Double = js.native
+  var notSet: scala.Double
   
-  var queued: scala.Double = js.native
+  var queued: scala.Double
   
-  var rejectedByPolicy: scala.Double = js.native
+  var rejectedByPolicy: scala.Double
   
-  var succeeded: scala.Double = js.native
+  var succeeded: scala.Double
 }
 object Conflicts {
   

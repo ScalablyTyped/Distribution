@@ -2,21 +2,19 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLexiconOutput extends StObject {
   
   /**
     * Lexicon object that provides name and the string content of the lexicon. 
     */
-  var Lexicon: js.UndefOr[typings.awsSdk.pollyMod.Lexicon] = js.native
+  var Lexicon: js.UndefOr[typings.awsSdk.pollyMod.Lexicon] = js.undefined
   
   /**
     * Metadata of the lexicon, including phonetic alphabetic used, language code, lexicon ARN, number of lexemes defined in the lexicon, and size of lexicon in bytes.
     */
-  var LexiconAttributes: js.UndefOr[typings.awsSdk.pollyMod.LexiconAttributes] = js.native
+  var LexiconAttributes: js.UndefOr[typings.awsSdk.pollyMod.LexiconAttributes] = js.undefined
 }
 object GetLexiconOutput {
   

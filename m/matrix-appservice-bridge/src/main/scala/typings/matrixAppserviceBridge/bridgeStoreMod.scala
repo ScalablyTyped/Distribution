@@ -4,7 +4,6 @@ import typings.nedb.mod.^
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bridgeStoreMod {
@@ -12,7 +11,7 @@ object bridgeStoreMod {
   @JSImport("matrix-appservice-bridge/lib/components/bridge-store", "BridgeStore")
   @js.native
   class BridgeStore protected () extends StObject {
-    def this(db: ^[_]) = this()
+    def this(db: ^[js.Any]) = this()
     
     /**
       * Convenience method to convert a document to something.
@@ -23,7 +22,7 @@ object bridgeStoreMod {
       */
     def convertTo[T, O](func: js.Function1[/* input */ T, O]): js.Function1[/* doc */ T, O] = js.native
     
-    val db: ^[_] = js.native
+    val db: ^[js.Any] = js.native
     
     var dbFind: js.Any = js.native
     
@@ -43,12 +42,12 @@ object bridgeStoreMod {
     /**
       * INSERT a multiple documents.
       */
-    def insert(objects: js.Any): js.Promise[js.Array[_]] = js.native
+    def insert(objects: js.Any): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * INSERT IF NOT EXISTS a single document
       */
-    def insertIfNotExists(query: Query, insertObj: Record[String, _]): js.Promise[Unit] = js.native
+    def insertIfNotExists(query: Query, insertObj: Record[String, js.Any]): js.Promise[Unit] = js.native
     
     /**
       * SELECT a number of documents.
@@ -78,7 +77,7 @@ object bridgeStoreMod {
       * UPDATE a single document. If the document already exists, this will NOT update
       * it.
       */
-    def update(query: Query, updateVals: Record[String, _]): js.Promise[Double] = js.native
+    def update(query: Query, updateVals: Record[String, js.Any]): js.Promise[Double] = js.native
     
     /**
       * UPSERT a single document

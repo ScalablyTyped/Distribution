@@ -6,10 +6,13 @@ import typings.pulumiPulumi.outputMod.Output_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceMod {
+  
+  @JSImport("@pulumi/pulumi/resource", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/pulumi/resource", "ComponentResource")
   @js.native
@@ -29,23 +32,11 @@ object resourceMod {
       */
     def this(`type`: String, name: String) = this()
     def this(`type`: String, name: String, args: Inputs) = this()
-    def this(`type`: String, name: String, args: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
+    def this(`type`: String, name: String, args: Unit, opts: ComponentResourceOptions) = this()
     def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions) = this()
-    def this(
-      `type`: String,
-      name: String,
-      args: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      remote: Boolean
-    ) = this()
-    def this(
-      `type`: String,
-      name: String,
-      args: js.UndefOr[scala.Nothing],
-      opts: ComponentResourceOptions,
-      remote: Boolean
-    ) = this()
-    def this(`type`: String, name: String, args: Inputs, opts: js.UndefOr[scala.Nothing], remote: Boolean) = this()
+    def this(`type`: String, name: String, args: Unit, opts: Unit, remote: Boolean) = this()
+    def this(`type`: String, name: String, args: Unit, opts: ComponentResourceOptions, remote: Boolean) = this()
+    def this(`type`: String, name: String, args: Inputs, opts: Unit, remote: Boolean) = this()
     def this(`type`: String, name: String, args: Inputs, opts: ComponentResourceOptions, remote: Boolean) = this()
     
     /**
@@ -77,13 +68,16 @@ object resourceMod {
   /* static members */
   object ComponentResource {
     
+    @JSImport("@pulumi/pulumi/resource", "ComponentResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/pulumi/resource", "ComponentResource.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.ComponentResource<any> */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/resource", "CustomResource")
@@ -105,23 +99,11 @@ object resourceMod {
       */
     def this(t: String, name: String) = this()
     def this(t: String, name: String, props: Inputs) = this()
-    def this(t: String, name: String, props: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(t: String, name: String, props: Unit, opts: CustomResourceOptions) = this()
     def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions) = this()
-    def this(
-      t: String,
-      name: String,
-      props: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      dependency: Boolean
-    ) = this()
-    def this(
-      t: String,
-      name: String,
-      props: js.UndefOr[scala.Nothing],
-      opts: CustomResourceOptions,
-      dependency: Boolean
-    ) = this()
-    def this(t: String, name: String, props: Inputs, opts: js.UndefOr[scala.Nothing], dependency: Boolean) = this()
+    def this(t: String, name: String, props: Unit, opts: Unit, dependency: Boolean) = this()
+    def this(t: String, name: String, props: Unit, opts: CustomResourceOptions, dependency: Boolean) = this()
+    def this(t: String, name: String, props: Inputs, opts: Unit, dependency: Boolean) = this()
     def this(t: String, name: String, props: Inputs, opts: CustomResourceOptions, dependency: Boolean) = this()
     
     /**
@@ -133,13 +115,16 @@ object resourceMod {
   /* static members */
   object CustomResource {
     
+    @JSImport("@pulumi/pulumi/resource", "CustomResource")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns true if the given object is an instance of CustomResource.  This is designed to work even when
       * multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/pulumi/resource", "CustomResource.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.CustomResource */ Boolean]
   }
   
   @JSImport("@pulumi/pulumi/resource", "DependencyProviderResource")
@@ -168,34 +153,24 @@ object resourceMod {
       */
     def this(pkg: String, name: String) = this()
     def this(pkg: String, name: String, props: Inputs) = this()
-    def this(pkg: String, name: String, props: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
+    def this(pkg: String, name: String, props: Unit, opts: ResourceOptions) = this()
     def this(pkg: String, name: String, props: Inputs, opts: ResourceOptions) = this()
-    def this(
-      pkg: String,
-      name: String,
-      props: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      dependency: Boolean
-    ) = this()
-    def this(
-      pkg: String,
-      name: String,
-      props: js.UndefOr[scala.Nothing],
-      opts: ResourceOptions,
-      dependency: Boolean
-    ) = this()
-    def this(pkg: String, name: String, props: Inputs, opts: js.UndefOr[scala.Nothing], dependency: Boolean) = this()
+    def this(pkg: String, name: String, props: Unit, opts: Unit, dependency: Boolean) = this()
+    def this(pkg: String, name: String, props: Unit, opts: ResourceOptions, dependency: Boolean) = this()
+    def this(pkg: String, name: String, props: Inputs, opts: Unit, dependency: Boolean) = this()
     def this(pkg: String, name: String, props: Inputs, opts: ResourceOptions, dependency: Boolean) = this()
   }
   /* static members */
   object ProviderResource {
     
-    @JSImport("@pulumi/pulumi/resource", "ProviderResource.register")
+    @JSImport("@pulumi/pulumi/resource", "ProviderResource")
     @js.native
-    def register(): js.Promise[js.UndefOr[String]] = js.native
-    @JSImport("@pulumi/pulumi/resource", "ProviderResource.register")
-    @js.native
-    def register(provider: ProviderResource): js.Promise[js.UndefOr[String]] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def register(): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[js.Promise[js.UndefOr[String]]]
+    @scala.inline
+    def register(provider: ProviderResource): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(provider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   }
   
   @JSImport("@pulumi/pulumi/resource", "Resource")
@@ -217,48 +192,18 @@ object resourceMod {
       */
     def this(t: String, name: String, custom: Boolean) = this()
     def this(t: String, name: String, custom: Boolean, props: Inputs) = this()
-    def this(t: String, name: String, custom: Boolean, props: js.UndefOr[scala.Nothing], opts: ResourceOptions) = this()
+    def this(t: String, name: String, custom: Boolean, props: Unit, opts: ResourceOptions) = this()
     def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions) = this()
-    def this(
-      t: String,
-      name: String,
-      custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      remote: Boolean
-    ) = this()
-    def this(
-      t: String,
-      name: String,
-      custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
-      opts: ResourceOptions,
-      remote: Boolean
-    ) = this()
-    def this(
-      t: String,
-      name: String,
-      custom: Boolean,
-      props: Inputs,
-      opts: js.UndefOr[scala.Nothing],
-      remote: Boolean
-    ) = this()
+    def this(t: String, name: String, custom: Boolean, props: Unit, opts: Unit, remote: Boolean) = this()
+    def this(t: String, name: String, custom: Boolean, props: Unit, opts: ResourceOptions, remote: Boolean) = this()
+    def this(t: String, name: String, custom: Boolean, props: Inputs, opts: Unit, remote: Boolean) = this()
     def this(t: String, name: String, custom: Boolean, props: Inputs, opts: ResourceOptions, remote: Boolean) = this()
     def this(
       t: String,
       name: String,
       custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
-      remote: js.UndefOr[scala.Nothing],
-      dependency: Boolean
-    ) = this()
-    def this(
-      t: String,
-      name: String,
-      custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
-      opts: js.UndefOr[scala.Nothing],
+      props: Unit,
+      opts: Unit,
       remote: Boolean,
       dependency: Boolean
     ) = this()
@@ -266,16 +211,16 @@ object resourceMod {
       t: String,
       name: String,
       custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
-      opts: ResourceOptions,
-      remote: js.UndefOr[scala.Nothing],
+      props: Unit,
+      opts: Unit,
+      remote: Unit,
       dependency: Boolean
     ) = this()
     def this(
       t: String,
       name: String,
       custom: Boolean,
-      props: js.UndefOr[scala.Nothing],
+      props: Unit,
       opts: ResourceOptions,
       remote: Boolean,
       dependency: Boolean
@@ -284,9 +229,9 @@ object resourceMod {
       t: String,
       name: String,
       custom: Boolean,
-      props: Inputs,
-      opts: js.UndefOr[scala.Nothing],
-      remote: js.UndefOr[scala.Nothing],
+      props: Unit,
+      opts: ResourceOptions,
+      remote: Unit,
       dependency: Boolean
     ) = this()
     def this(
@@ -294,7 +239,7 @@ object resourceMod {
       name: String,
       custom: Boolean,
       props: Inputs,
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       remote: Boolean,
       dependency: Boolean
     ) = this()
@@ -303,8 +248,8 @@ object resourceMod {
       name: String,
       custom: Boolean,
       props: Inputs,
-      opts: ResourceOptions,
-      remote: js.UndefOr[scala.Nothing],
+      opts: Unit,
+      remote: Unit,
       dependency: Boolean
     ) = this()
     def this(
@@ -314,6 +259,15 @@ object resourceMod {
       props: Inputs,
       opts: ResourceOptions,
       remote: Boolean,
+      dependency: Boolean
+    ) = this()
+    def this(
+      t: String,
+      name: String,
+      custom: Boolean,
+      props: Inputs,
+      opts: ResourceOptions,
+      remote: Unit,
       dependency: Boolean
     ) = this()
     
@@ -328,106 +282,77 @@ object resourceMod {
   /* static members */
   object Resource {
     
-    @JSImport("@pulumi/pulumi/resource", "Resource.isInstance")
+    @JSImport("@pulumi/pulumi/resource", "Resource")
     @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/pulumi.@pulumi/pulumi/resource.Resource */ Boolean]
   }
   
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String]): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(
-    name: Input[String],
-    `type`: Input[String],
-    parent: js.UndefOr[Input[URN]],
-    project: js.UndefOr[scala.Nothing],
-    stack: String
-  ): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String], parent: js.UndefOr[Input[URN]], project: String): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(
-    name: Input[String],
-    `type`: Input[String],
-    parent: js.UndefOr[Input[URN]],
-    project: String,
-    stack: String
-  ): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(
-    name: Input[String],
-    `type`: Input[String],
-    parent: Resource,
-    project: js.UndefOr[scala.Nothing],
-    stack: String
-  ): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String): Output_[String] = js.native
-  @JSImport("@pulumi/pulumi/resource", "createUrn")
-  @js.native
-  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String, stack: String): Output_[String] = js.native
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Unit, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN]): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Input[URN], project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Resource): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: String, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
+  @scala.inline
+  def createUrn(name: Input[String], `type`: Input[String], parent: Resource, project: Unit, stack: String): Output_[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("createUrn")(name.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], project.asInstanceOf[js.Any], stack.asInstanceOf[js.Any])).asInstanceOf[Output_[String]]
   
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(): CustomResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: ComponentResourceOptions): ComponentResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: CustomResourceOptions): CustomResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: js.UndefOr[scala.Nothing], opts2: ResourceOptions): ResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: ResourceOptions): ResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = js.native
-  @JSImport("@pulumi/pulumi/resource", "mergeOptions")
-  @js.native
-  def mergeOptions_ResourceOptions(): ResourceOptions = js.native
+  @scala.inline
+  def mergeOptions(): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[CustomResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: Unit, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: Unit, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: Unit, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: ComponentResourceOptions): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ComponentResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: ComponentResourceOptions, opts2: ComponentResourceOptions): ComponentResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ComponentResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: CustomResourceOptions): CustomResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[CustomResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: CustomResourceOptions, opts2: CustomResourceOptions): CustomResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[CustomResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: ResourceOptions): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any]).asInstanceOf[ResourceOptions]
+  @scala.inline
+  def mergeOptions(opts1: ResourceOptions, opts2: ResourceOptions): ResourceOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")(opts1.asInstanceOf[js.Any], opts2.asInstanceOf[js.Any])).asInstanceOf[ResourceOptions]
+  
+  @scala.inline
+  def mergeOptions_ComponentResourceOptions(): ComponentResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ComponentResourceOptions]
+  
+  @scala.inline
+  def mergeOptions_ResourceOptions(): ResourceOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeOptions")().asInstanceOf[ResourceOptions]
   
   @JSImport("@pulumi/pulumi/resource", "rootStackResource")
   @js.native
   val rootStackResource: Resource = js.native
   
-  @js.native
   trait Alias extends StObject {
     
     /**
       * The previous name of the resource.  If not provided, the current name of the resource is
       * used.
       */
-    var name: js.UndefOr[Input[String]] = js.native
+    var name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The previous parent of the resource.  If not provided (i.e. `{ name: "foo" }`), the current
@@ -436,22 +361,22 @@ object resourceMod {
       *
       * To specify no original parent, use `{ parent: pulumi.rootStackResource }`.
       */
-    var parent: js.UndefOr[Resource | Input[URN]] = js.native
+    var parent: js.UndefOr[Resource | Input[URN]] = js.undefined
     
     /**
       * The previous project of the resource. If not provided, defaults to `pulumi.getProject()`.
       */
-    var project: js.UndefOr[Input[String]] = js.native
+    var project: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The previous stack of the resource.  If not provided, defaults to `pulumi.getStack()`.
       */
-    var stack: js.UndefOr[Input[String]] = js.native
+    var stack: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The previous type of the resource.  If not provided, the current type of the resource is used.
       */
-    var `type`: js.UndefOr[Input[String]] = js.native
+    var `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object Alias {
     
@@ -496,8 +421,9 @@ object resourceMod {
     }
   }
   
-  @js.native
-  trait ComponentResourceOptions extends ResourceOptions {
+  trait ComponentResourceOptions
+    extends StObject
+       with ResourceOptions {
     
     /**
       * An optional set of providers to use for child resources. Either keyed by package name (e.g.
@@ -508,7 +434,7 @@ object resourceMod {
       *
       * Note: do not provide both [provider] and [providers];
       */
-    var providers: js.UndefOr[(Record[String, ProviderResource]) | js.Array[ProviderResource]] = js.native
+    var providers: js.UndefOr[(Record[String, ProviderResource]) | js.Array[ProviderResource]] = js.undefined
   }
   object ComponentResourceOptions {
     
@@ -532,21 +458,22 @@ object resourceMod {
     }
   }
   
-  @js.native
-  trait CustomResourceOptions extends ResourceOptions {
+  trait CustomResourceOptions
+    extends StObject
+       with ResourceOptions {
     
     /**
       * The names of outputs for this resource that should be treated as secrets. This augments the list that
       * the resource provider and pulumi engine already determine based on inputs to your resource. It can be used
       * to mark certain ouputs as a secrets on a per resource basis.
       */
-    var additionalSecretOutputs: js.UndefOr[js.Array[String]] = js.native
+    var additionalSecretOutputs: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * When set to true, deleteBeforeReplace indicates that this resource should be deleted before its replacement
       * is created when replacement is necessary.
       */
-    var deleteBeforeReplace: js.UndefOr[Boolean] = js.native
+    var deleteBeforeReplace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When provided with a resource ID, import indicates that this resource's provider should import its state from
@@ -554,7 +481,7 @@ object resourceMod {
       * current state. Once a resource has been imported, the import property must be removed from the resource's
       * options.
       */
-    var `import`: js.UndefOr[ID] = js.native
+    var `import`: js.UndefOr[ID] = js.undefined
   }
   object CustomResourceOptions {
     
@@ -590,23 +517,22 @@ object resourceMod {
     }
   }
   
-  @js.native
   trait CustomTimeouts extends StObject {
     
     /**
       * The optional create timeout represented as a string e.g. 5m, 40s, 1d.
       */
-    var create: js.UndefOr[String] = js.native
+    var create: js.UndefOr[String] = js.undefined
     
     /**
       * The optional delete timeout represented as a string e.g. 5m, 40s, 1d.
       */
-    var delete: js.UndefOr[String] = js.native
+    var delete: js.UndefOr[String] = js.undefined
     
     /**
       * The optional update timeout represented as a string e.g. 5m, 40s, 1d.
       */
-    var update: js.UndefOr[String] = js.native
+    var update: js.UndefOr[String] = js.undefined
   }
   object CustomTimeouts {
     
@@ -641,43 +567,42 @@ object resourceMod {
   
   type ID = String
   
-  @js.native
   trait ResourceOptions extends StObject {
     
     /**
       * An optional list of aliases to treat this resource as matching.
       */
-    var aliases: js.UndefOr[js.Array[Input[URN | Alias]]] = js.native
+    var aliases: js.UndefOr[js.Array[Input[URN | Alias]]] = js.undefined
     
     /**
       * An optional customTimeouts configuration block.
       */
-    var customTimeouts: js.UndefOr[CustomTimeouts] = js.native
+    var customTimeouts: js.UndefOr[CustomTimeouts] = js.undefined
     
     /**
       * An optional additional explicit dependencies on other resources.
       */
-    var dependsOn: js.UndefOr[Input[js.Array[Input[Resource]] | Resource]] = js.native
+    var dependsOn: js.UndefOr[Input[js.Array[Input[Resource]] | Resource]] = js.undefined
     
     /**
       * An optional existing ID to load, rather than create.
       */
-    var id: js.UndefOr[Input[ID]] = js.native
+    var id: js.UndefOr[Input[ID]] = js.undefined
     
     /**
       * Ignore changes to any of the specified properties.
       */
-    var ignoreChanges: js.UndefOr[js.Array[String]] = js.native
+    var ignoreChanges: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An optional parent resource to which this resource belongs.
       */
-    var parent: js.UndefOr[Resource] = js.native
+    var parent: js.UndefOr[Resource] = js.undefined
     
     /**
       * When set to true, protect ensures this resource cannot be deleted.
       */
-    var protect: js.UndefOr[Boolean] = js.native
+    var protect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional provider to use for this resource's CRUD operations. If no provider is supplied,
@@ -686,21 +611,21 @@ object resourceMod {
       *
       * If this is a [ComponentResourceOptions] do not provide both [provider] and [providers]
       */
-    var provider: js.UndefOr[ProviderResource] = js.native
+    var provider: js.UndefOr[ProviderResource] = js.undefined
     
     /**
       * Optional list of transformations to apply to this resource during construction. The
       * transformations are applied in order, and are applied prior to transformation applied to
       * parents walking from the resource up to the stack.
       */
-    var transformations: js.UndefOr[js.Array[ResourceTransformation]] = js.native
+    var transformations: js.UndefOr[js.Array[ResourceTransformation]] = js.undefined
     
     /**
       * An optional version, corresponding to the version of the provider plugin that should be used when operating on
       * this resource. This version overrides the version information inferred from the current package and should
       * rarely be used.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ResourceOptions {
     
@@ -789,33 +714,32 @@ object resourceMod {
   
   type ResourceTransformation = js.Function1[/* args */ ResourceTransformationArgs, js.UndefOr[ResourceTransformationResult]]
   
-  @js.native
   trait ResourceTransformationArgs extends StObject {
     
     /**
       * The name of the Resource.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The original resource options passed to the Resource constructor.
       */
-    var opts: ResourceOptions = js.native
+    var opts: ResourceOptions
     
     /**
       * The original properties passed to the Resource constructor.
       */
-    var props: Inputs = js.native
+    var props: Inputs
     
     /**
       * The Resource instance that is being transformed.
       */
-    var resource: Resource = js.native
+    var resource: Resource
     
     /**
       * The type of the Resource.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ResourceTransformationArgs {
     
@@ -846,18 +770,17 @@ object resourceMod {
     }
   }
   
-  @js.native
   trait ResourceTransformationResult extends StObject {
     
     /**
       * The new resource options to use in place of the original `opts`
       */
-    var opts: ResourceOptions = js.native
+    var opts: ResourceOptions
     
     /**
       * The new properties to use in place of the original `props`
       */
-    var props: Inputs = js.native
+    var props: Inputs
   }
   object ResourceTransformationResult {
     

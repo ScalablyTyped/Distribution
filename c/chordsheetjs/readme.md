@@ -12,7 +12,7 @@ A JavaScript library for parsing and formatting chord sheets
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 5601 |
+| # downloads        | 5764 |
 | # stars            | 0 |
 
 ## Links

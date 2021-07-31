@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChannelResponse extends StObject {
   
   /**
     * An object that contains information about the channel.
     */
-  var channel: js.UndefOr[Channel] = js.native
+  var channel: js.UndefOr[Channel] = js.undefined
   
   /**
     * Statistics about the channel. Included if the includeStatistics parameter is set to true in the request.
     */
-  var statistics: js.UndefOr[ChannelStatistics] = js.native
+  var statistics: js.UndefOr[ChannelStatistics] = js.undefined
 }
 object DescribeChannelResponse {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NFSFileShareDefaults extends StObject {
   
   /**
     * The Unix directory mode in the form "nnnn". For example, 0666 represents the default access mode for all directories inside the file share. The default value is 0777.
     */
-  var DirectoryMode: js.UndefOr[PermissionMode] = js.native
+  var DirectoryMode: js.UndefOr[PermissionMode] = js.undefined
   
   /**
     * The Unix file mode in the form "nnnn". For example, 0666 represents the default file mode inside the file share. The default value is 0666.
     */
-  var FileMode: js.UndefOr[PermissionMode] = js.native
+  var FileMode: js.UndefOr[PermissionMode] = js.undefined
   
   /**
     * The default group ID for the file share (unless the files have another group ID specified). The default value is nfsnobody.
     */
-  var GroupId: js.UndefOr[PermissionId] = js.native
+  var GroupId: js.UndefOr[PermissionId] = js.undefined
   
   /**
     * The default owner ID for files in the file share (unless the files have another owner ID specified). The default value is nfsnobody.
     */
-  var OwnerId: js.UndefOr[PermissionId] = js.native
+  var OwnerId: js.UndefOr[PermissionId] = js.undefined
 }
 object NFSFileShareDefaults {
   

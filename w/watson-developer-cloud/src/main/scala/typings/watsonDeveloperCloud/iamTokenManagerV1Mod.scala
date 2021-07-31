@@ -4,7 +4,6 @@ import typings.ibmCloudSdkCore.mod.IamTokenManagerV1
 import typings.ibmCloudSdkCore.v1Mod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamTokenManagerV1Mod {

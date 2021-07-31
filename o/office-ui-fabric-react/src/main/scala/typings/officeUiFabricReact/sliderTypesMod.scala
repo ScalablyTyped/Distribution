@@ -14,17 +14,15 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderTypesMod {
   
-  @js.native
   trait ISlider extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ISlider {
     
@@ -48,126 +46,127 @@ object sliderTypesMod {
     }
   }
   
-  @js.native
-  trait ISliderProps extends ClassAttributes[SliderBase] {
+  trait ISliderProps
+    extends StObject
+       with ClassAttributes[SliderBase] {
     
     /**
       * A description of the Slider for the benefit of screen readers.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * A text description of the Slider number value for the benefit of screen readers.
       * This should be used when the Slider number value is not accurately represented by a number.
       */
-    var ariaValueText: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
+    var ariaValueText: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
     
     /**
       * Optional mixin for additional props on the thumb button within the slider.
       */
-    var buttonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.native
+    var buttonProps: js.UndefOr[HTMLAttributes[HTMLButtonElement]] = js.undefined
     
     /**
       * Optional className to attach to the slider root element.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the ISlider interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ISlider]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ISlider]] = js.undefined
     
     /**
       * The initial value of the Slider. Use this if you intend for the Slider to be an uncontrolled component.
       * This value is mutually exclusive to value. Use one or the other.
       */
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional flag to render the Slider as disabled.
       * @defaultvalue false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Description label of the Slider
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * The max value of the Slider
       * @defaultvalue 10
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The min value of the Slider
       * @defaultvalue 0
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback when the value has been changed
       */
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
     /**
       * Callback on mouse up or touch end
       */
     var onChanged: js.UndefOr[
         js.Function2[/* event */ MouseEvent | TouchEvent | KeyboardEvent, /* value */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Optional flag to attach the origin of slider to zero. Helpful when the range include negatives.
       * @defaultvalue false
       */
-    var originFromZero: js.UndefOr[Boolean] = js.native
+    var originFromZero: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the value on the right of the Slider.
       * @defaultvalue true
       */
-    var showValue: js.UndefOr[Boolean] = js.native
+    var showValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional flag to decide that thumb will snap to closest value while moving the slider
       * @defaultvalue false
       */
-    var snapToStep: js.UndefOr[Boolean] = js.native
+    var snapToStep: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The difference between the two adjacent values of the Slider
       * @defaultvalue 1
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ISliderStyleProps, ISliderStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * The initial value of the Slider. Use this if you intend to pass in a new value as a result of onChange events.
       * This value is mutually exclusive to defaultValue. Use one or the other.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /**
       * Optional function to format the slider value.
       */
-    var valueFormat: js.UndefOr[js.Function1[/* value */ Double, String]] = js.native
+    var valueFormat: js.UndefOr[js.Function1[/* value */ Double, String]] = js.undefined
     
     /**
       * Optional flag to render the slider vertically. Defaults to rendering horizontal.
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ISliderProps {
     
@@ -315,22 +314,21 @@ object sliderTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Slider/Slider.types.ISliderProps, 'className' | 'disabled' | 'vertical'> & {  showTransitions :boolean | undefined,   showValue :boolean | undefined,   titleLabelClassName :string | undefined} */
-  @js.native
   trait ISliderStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var showTransitions: js.UndefOr[Boolean] = js.native
+    var showTransitions: js.UndefOr[Boolean] = js.undefined
     
-    var showValue: js.UndefOr[Boolean] = js.native
+    var showValue: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var titleLabelClassName: js.UndefOr[String] = js.native
+    var titleLabelClassName: js.UndefOr[String] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ISliderStyleProps {
     
@@ -384,63 +382,62 @@ object sliderTypesMod {
     }
   }
   
-  @js.native
   trait ISliderStyles extends StObject {
     
     /**
       * Style set for active portion of the line.
       */
-    var activeSection: IStyle = js.native
+    var activeSection: IStyle
     
     /**
       * Style set for the container of the slider.
       */
-    var container: IStyle = js.native
+    var container: IStyle
     
     /**
       * Style set for inactive portion of the line.
       */
-    var inactiveSection: IStyle = js.native
+    var inactiveSection: IStyle
     
     /**
       * Style set for element that contains all the lines.
       */
-    var line: IStyle = js.native
+    var line: IStyle
     
     /**
       * Style set for both active and inactive sections of the line.
       */
-    var lineContainer: IStyle = js.native
+    var lineContainer: IStyle
     
     /**
       * Style set for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Style set for the actual box containting interactive elements of the slider.
       */
-    var slideBox: IStyle = js.native
+    var slideBox: IStyle
     
     /**
       * Style set for thumb of the slider.
       */
-    var thumb: IStyle = js.native
+    var thumb: IStyle
     
     /**
       * Style set for the title label above the slider.
       */
-    var titleLabel: IStyle = js.native
+    var titleLabel: IStyle
     
     /**
       * Style set for value label on right/below of the slider.
       */
-    var valueLabel: IStyle = js.native
+    var valueLabel: IStyle
     
     /**
       * Style set for tick on 0 on number line. This element only shows up when originFromZero prop is true.
       */
-    var zeroTick: IStyle = js.native
+    var zeroTick: IStyle
   }
   object ISliderStyles {
     

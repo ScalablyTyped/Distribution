@@ -4,11 +4,12 @@ import typings.std.DataTransfer
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Clipboard extends EventTarget {
+trait Clipboard
+  extends StObject
+     with EventTarget {
   
   def read(): js.Promise[DataTransfer] = js.native
   

@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a certificate store for an app. */
-@js.native
 trait CertificateStore extends StObject {
   
   /**
     * Adds a certificate to the certificate store.
     * @param certificate The certificate to add to the certificate store.
     */
-  def add(certificate: Certificate): Unit = js.native
+  def add(certificate: Certificate): Unit
   
   /**
     * Deletes a certificate from the certificate store.
     * @param certificate The certificate to delete from the certificate store.
     */
-  def delete(certificate: Certificate): Unit = js.native
+  def delete(certificate: Certificate): Unit
   
   /** Gets the name of the certificate store. */
-  var name: String = js.native
+  var name: String
 }
 object CertificateStore {
   

@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDiskTypesScopedList extends StObject {
   
   /**
     * [Output Only] A list of disk types contained in this scope.
     */
-  var diskTypes: js.UndefOr[js.Array[SchemaDiskType]] = js.native
+  var diskTypes: js.UndefOr[js.Array[SchemaDiskType]] = js.undefined
   
   /**
     * [Output Only] Informational warning which replaces the list of disk types
     * when the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaDiskTypesScopedList {
   

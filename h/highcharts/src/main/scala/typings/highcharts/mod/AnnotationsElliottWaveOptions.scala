@@ -2,32 +2,30 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsElliottWaveOptions extends StObject {
   
-  var controlPointOptions: js.UndefOr[AnnotationsElliottWaveControlPointOptions] = js.native
+  var controlPointOptions: js.UndefOr[AnnotationsElliottWaveControlPointOptions] = js.undefined
   
   /**
     * (Highstock) Options for annotation's labels. Each label inherits options
     * from the labelOptions object. An option from the labelOptions can be
     * overwritten by config for a specific label.
     */
-  var labelOptions: js.UndefOr[AnnotationsElliottWaveLabelOptions] = js.native
+  var labelOptions: js.UndefOr[AnnotationsElliottWaveLabelOptions] = js.undefined
   
   /**
     * (Highstock) Options for annotation's shapes. Each shape inherits options
     * from the shapeOptions object. An option from the shapeOptions can be
     * overwritten by config for a specific shape.
     */
-  var shapeOptions: js.UndefOr[AnnotationsElliottWaveShapeOptions] = js.native
+  var shapeOptions: js.UndefOr[AnnotationsElliottWaveShapeOptions] = js.undefined
   
   /**
     * (Highstock) Additional options for an annotation with the type.
     */
-  var typeOptions: js.UndefOr[AnnotationsElliottWaveTypeOptions] = js.native
+  var typeOptions: js.UndefOr[AnnotationsElliottWaveTypeOptions] = js.undefined
 }
 object AnnotationsElliottWaveOptions {
   

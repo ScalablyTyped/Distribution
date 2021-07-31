@@ -2,98 +2,96 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGatewayInformationOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that is used to monitor events in the gateway.
     */
-  var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.native
+  var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.undefined
   
   /**
     * Date after which this gateway will not receive software updates for new features and bug fixes.
     */
-  var DeprecationDate: js.UndefOr[typings.awsSdk.storagegatewayMod.DeprecationDate] = js.native
+  var DeprecationDate: js.UndefOr[typings.awsSdk.storagegatewayMod.DeprecationDate] = js.undefined
   
   /**
     * The ID of the Amazon EC2 instance that was used to launch the gateway.
     */
-  var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.native
+  var Ec2InstanceId: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceId] = js.undefined
   
   /**
     * The AWS Region where the Amazon EC2 instance is located.
     */
-  var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.native
+  var Ec2InstanceRegion: js.UndefOr[typings.awsSdk.storagegatewayMod.Ec2InstanceRegion] = js.undefined
   
   /**
     * The type of endpoint for your gateway. Valid Values: STANDARD | FIPS 
     */
-  var EndpointType: js.UndefOr[typings.awsSdk.storagegatewayMod.EndpointType] = js.native
+  var EndpointType: js.UndefOr[typings.awsSdk.storagegatewayMod.EndpointType] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
   
   /**
     * The unique identifier assigned to your gateway during activation. This ID becomes part of the gateway Amazon Resource Name (ARN), which you use as input for other operations.
     */
-  var GatewayId: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayId] = js.native
+  var GatewayId: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayId] = js.undefined
   
   /**
     * The name you configured for your gateway.
     */
-  var GatewayName: js.UndefOr[String] = js.native
+  var GatewayName: js.UndefOr[String] = js.undefined
   
   /**
     * A NetworkInterface array that contains descriptions of the gateway network interfaces.
     */
-  var GatewayNetworkInterfaces: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayNetworkInterfaces] = js.native
+  var GatewayNetworkInterfaces: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayNetworkInterfaces] = js.undefined
   
   /**
     * A value that indicates the operating state of the gateway.
     */
-  var GatewayState: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayState] = js.native
+  var GatewayState: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayState] = js.undefined
   
   /**
     * A value that indicates the time zone configured for the gateway.
     */
-  var GatewayTimezone: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayTimezone] = js.native
+  var GatewayTimezone: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayTimezone] = js.undefined
   
   /**
     * The type of the gateway.
     */
-  var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.native
+  var GatewayType: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayType] = js.undefined
   
   /**
     * The type of hypervisor environment used by the host.
     */
-  var HostEnvironment: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironment] = js.native
+  var HostEnvironment: js.UndefOr[typings.awsSdk.storagegatewayMod.HostEnvironment] = js.undefined
   
   /**
     * The date on which the last software update was applied to the gateway. If the gateway has never been updated, this field does not return a value in the response.
     */
-  var LastSoftwareUpdate: js.UndefOr[typings.awsSdk.storagegatewayMod.LastSoftwareUpdate] = js.native
+  var LastSoftwareUpdate: js.UndefOr[typings.awsSdk.storagegatewayMod.LastSoftwareUpdate] = js.undefined
   
   /**
     * The date on which an update to the gateway is available. This date is in the time zone of the gateway. If the gateway is not available for an update this field is not returned in the response.
     */
-  var NextUpdateAvailabilityDate: js.UndefOr[typings.awsSdk.storagegatewayMod.NextUpdateAvailabilityDate] = js.native
+  var NextUpdateAvailabilityDate: js.UndefOr[typings.awsSdk.storagegatewayMod.NextUpdateAvailabilityDate] = js.undefined
   
   /**
     * Date after which this gateway will not receive software updates for new features.
     */
-  var SoftwareUpdatesEndDate: js.UndefOr[typings.awsSdk.storagegatewayMod.SoftwareUpdatesEndDate] = js.native
+  var SoftwareUpdatesEndDate: js.UndefOr[typings.awsSdk.storagegatewayMod.SoftwareUpdatesEndDate] = js.undefined
   
   /**
     * A list of up to 50 tags assigned to the gateway, sorted alphabetically by key name. Each tag is a key-value pair. For a gateway with more than 10 tags assigned, you can view all tags using the ListTagsForResource API operation.
     */
-  var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.storagegatewayMod.Tags] = js.undefined
   
   /**
     * The configuration settings for the virtual private cloud (VPC) endpoint for your gateway.
     */
-  var VPCEndpoint: js.UndefOr[String] = js.native
+  var VPCEndpoint: js.UndefOr[String] = js.undefined
 }
 object DescribeGatewayInformationOutput {
   

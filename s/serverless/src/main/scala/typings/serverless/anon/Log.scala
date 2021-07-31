@@ -2,13 +2,11 @@ package typings.serverless.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
-  def log(message: String): Null = js.native
+  def log(message: String): Null
 }
 object Log {
   

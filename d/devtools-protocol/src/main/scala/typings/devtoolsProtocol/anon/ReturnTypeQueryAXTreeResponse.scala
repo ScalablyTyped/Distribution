@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeRequest
 import typings.devtoolsProtocol.mod.Protocol.Accessibility.QueryAXTreeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeQueryAXTreeResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[QueryAXTreeRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[QueryAXTreeRequest]]
   
-  var returnType: QueryAXTreeResponse = js.native
+  var returnType: QueryAXTreeResponse
 }
 object ReturnTypeQueryAXTreeResponse {
   

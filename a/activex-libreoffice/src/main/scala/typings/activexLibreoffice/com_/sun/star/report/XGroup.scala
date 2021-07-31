@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,65 +18,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XReportDefinition
   * @see XGroups
   */
-@js.native
 trait XGroup
-  extends XChild
+  extends StObject
+     with XChild
      with XPropertySet
      with XComponent
      with XFunctionsSupplier {
   
   /** Defines either a column name or an expression. */
-  var Expression: String = js.native
+  var Expression: String
   
   /**
     * returns the group footer.
     * @see XSection
     * @throws com::sun::star::container::NoSuchElementException If the group has the footer disabled.
     */
-  var Footer: XSection = js.native
+  var Footer: XSection
   
   /** Defines if a group has a footer. */
-  var FooterOn: Boolean = js.native
+  var FooterOn: Boolean
   
   /** Defines an interval value that rows are grouped by. */
-  var GroupInterval: Double = js.native
+  var GroupInterval: Double
   
   /**
     * Specifies how to group data.
     * @see GroupOn
     */
-  var GroupOn: Double = js.native
+  var GroupOn: Double
   
   /**
     * Specifies the parent of the group.
     * @see XChild
     */
-  var Groups: XGroups = js.native
+  var Groups: XGroups
   
   /**
     * returns the group header.
     * @see XSection
     * @throws com::sun::star::container::NoSuchElementException If the group has the header disabled.
     */
-  var Header: XSection = js.native
+  var Header: XSection
   
   /** Defines if a group has a header. */
-  var HeaderOn: Boolean = js.native
+  var HeaderOn: Boolean
   
   /**
     * Specifies if a group header, detail, and footer section is printed on the same page.
     * @see KeepTogether
     */
-  var KeepTogether: Double = js.native
+  var KeepTogether: Double
   
   /** Specifies that the group header should always be printed on a new page and the reset of the page number to zero. */
-  var ResetPageNumber: Boolean = js.native
+  var ResetPageNumber: Boolean
   
   /** Defines if the group is sorted ascending or descending. The default is `TRUE` . */
-  var SortAscending: Boolean = js.native
+  var SortAscending: Boolean
   
   /** Specifies that the group header should always be printed on a new column. */
-  var StartNewColumn: Boolean = js.native
+  var StartNewColumn: Boolean
 }
 object XGroup {
   

@@ -2,46 +2,44 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapContextTranslateMarkerOptions extends StObject {
   
   /**
     * 动画结束回调函数
     */
-  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  var animationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 移动过程中是否自动旋转marker
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 指定marker移动到的目标点
     */
-  var destination: js.UndefOr[LocationObject] = js.native
+  var destination: js.UndefOr[LocationObject] = js.undefined
   
   /**
     * 动画持续时长，默认值1000ms，平移与旋转分别计算
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 指定marker
     */
-  var markerId: js.UndefOr[Double] = js.native
+  var markerId: js.UndefOr[Double] = js.undefined
   
   /**
     * marker的旋转角度
     */
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
 }
 object MapContextTranslateMarkerOptions {
   

@@ -2,91 +2,89 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the container.
     */
-  var containerArn: js.UndefOr[String] = js.native
+  var containerArn: js.UndefOr[String] = js.undefined
   
   /**
     * The number of CPU units set for the container. The value will be 0 if no value was specified in the container definition when the task definition was registered.
     */
-  var cpu: js.UndefOr[String] = js.native
+  var cpu: js.UndefOr[String] = js.undefined
   
   /**
     * The exit code returned from the container.
     */
-  var exitCode: js.UndefOr[BoxedInteger] = js.native
+  var exitCode: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * The IDs of each GPU assigned to the container.
     */
-  var gpuIds: js.UndefOr[GpuIds] = js.native
+  var gpuIds: js.UndefOr[GpuIds] = js.undefined
   
   /**
     * The health status of the container. If health checks are not configured for this container in its task definition, then it reports the health status as UNKNOWN.
     */
-  var healthStatus: js.UndefOr[HealthStatus] = js.native
+  var healthStatus: js.UndefOr[HealthStatus] = js.undefined
   
   /**
     * The image used for the container.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The container image manifest digest.  The imageDigest is only returned if the container is using an image hosted in Amazon ECR, otherwise it is omitted. 
     */
-  var imageDigest: js.UndefOr[String] = js.native
+  var imageDigest: js.UndefOr[String] = js.undefined
   
   /**
     * The last known status of the container.
     */
-  var lastStatus: js.UndefOr[String] = js.native
+  var lastStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The hard limit (in MiB) of memory set for the container.
     */
-  var memory: js.UndefOr[String] = js.native
+  var memory: js.UndefOr[String] = js.undefined
   
   /**
     * The soft limit (in MiB) of memory set for the container.
     */
-  var memoryReservation: js.UndefOr[String] = js.native
+  var memoryReservation: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the container.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The network bindings associated with the container.
     */
-  var networkBindings: js.UndefOr[NetworkBindings] = js.native
+  var networkBindings: js.UndefOr[NetworkBindings] = js.undefined
   
   /**
     * The network interfaces associated with the container.
     */
-  var networkInterfaces: js.UndefOr[NetworkInterfaces] = js.native
+  var networkInterfaces: js.UndefOr[NetworkInterfaces] = js.undefined
   
   /**
     * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Docker container.
     */
-  var runtimeId: js.UndefOr[String] = js.native
+  var runtimeId: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the task.
     */
-  var taskArn: js.UndefOr[String] = js.native
+  var taskArn: js.UndefOr[String] = js.undefined
 }
 object Container {
   

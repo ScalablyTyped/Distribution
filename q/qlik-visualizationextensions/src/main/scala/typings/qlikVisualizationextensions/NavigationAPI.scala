@@ -4,7 +4,6 @@ import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.an
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.edit_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NavigationAPI {
@@ -14,30 +13,29 @@ object NavigationAPI {
     * within a Qlik Sense app, and is meant to be used in visualization extensions
     * and will not work in Mashup scenarios.
     */
-  @js.native
   trait INavigation extends StObject {
     
     /**
       * Used for edit mode.
       */
-    var analysis: analysis_ = js.native
+    var analysis: analysis_
     
     /**
       * Used for analysis mode.
       */
-    var edit: edit_ = js.native
+    var edit: edit_
     
     /**
       * Gets the current sheet ID.
       * @return - A navigation result object.
       */
-    def getCurrentSheetId(): NavigationResult = js.native
+    def getCurrentSheetId(): NavigationResult
     
     /**
       * Gets the current mode.
       * @return - The current mode as a string.
       */
-    def getMode(): String = js.native
+    def getMode(): String
     
     /**
       * Navigate to a given sheet in the current app.
@@ -45,7 +43,7 @@ object NavigationAPI {
       * @param sheetId - Set the sheet ID to navigate to.
       * @return - A navigation result object.
       */
-    def gotoSheet(sheetId: String): NavigationResult = js.native
+    def gotoSheet(sheetId: String): NavigationResult
     
     /**
       * Navigate to a given story in the current app.
@@ -53,7 +51,7 @@ object NavigationAPI {
       * @param storyId - Set the story ID to navigate to.
       * @return - A navigation result object.
       */
-    def gotoStory(storyId: String): NavigationResult = js.native
+    def gotoStory(storyId: String): NavigationResult
     
     /**
       * Checks if a given mode is allowed.
@@ -61,7 +59,7 @@ object NavigationAPI {
       * or one of the constants: qlik.navigation.EDIT   |   qlik.navigation.ANALYSIS
       * @return - A Boolean value (true or false).
       */
-    def isModeAllowed(mode: NavigationModeType): Boolean = js.native
+    def isModeAllowed(mode: NavigationModeType): Boolean
     
     /**
       * Go to the next sheet in the current app.
@@ -69,7 +67,7 @@ object NavigationAPI {
       * The method will return before the actual navigation takes place.
       * @return - A navigation result object.
       */
-    def nextSheet(): NavigationResult = js.native
+    def nextSheet(): NavigationResult
     
     /**
       * Jumps to the previous sheet in the current app.
@@ -77,7 +75,7 @@ object NavigationAPI {
       * The method will return before the actual navigation takes place
       * @return - A navigation result object.
       */
-    def prevSheet(): NavigationResult = js.native
+    def prevSheet(): NavigationResult
     
     /**
       * Sets the current working mode of Qlik Sense.
@@ -85,7 +83,7 @@ object NavigationAPI {
       * or one of the constants: qlik.navigation.EDIT   |   qlik.navigation.ANALYSIS
       * @return - A navigation result object.
       */
-    def setMode(mode: String): NavigationResult = js.native
+    def setMode(mode: String): NavigationResult
     
     /**
       * Switches the working mode of Qlik Sense.
@@ -93,14 +91,12 @@ object NavigationAPI {
       * or one of the constants: qlik.navigation.EDIT   |   qlik.navigation.ANALYSIS
       * @return - A navigation result object.
       */
-    def switchMode(mode: NavigationModeType): NavigationResult = js.native
+    def switchMode(mode: NavigationModeType): NavigationResult
   }
   object INavigation {
     
     @scala.inline
     def apply(
-      analysis: analysis_,
-      edit: edit_,
       getCurrentSheetId: () => NavigationResult,
       getMode: () => String,
       gotoSheet: String => NavigationResult,
@@ -111,7 +107,7 @@ object NavigationAPI {
       setMode: String => NavigationResult,
       switchMode: NavigationModeType => NavigationResult
     ): INavigation = {
-      val __obj = js.Dynamic.literal(analysis = analysis.asInstanceOf[js.Any], edit = edit.asInstanceOf[js.Any], getCurrentSheetId = js.Any.fromFunction0(getCurrentSheetId), getMode = js.Any.fromFunction0(getMode), gotoSheet = js.Any.fromFunction1(gotoSheet), gotoStory = js.Any.fromFunction1(gotoStory), isModeAllowed = js.Any.fromFunction1(isModeAllowed), nextSheet = js.Any.fromFunction0(nextSheet), prevSheet = js.Any.fromFunction0(prevSheet), setMode = js.Any.fromFunction1(setMode), switchMode = js.Any.fromFunction1(switchMode))
+      val __obj = js.Dynamic.literal(analysis = "analysis", edit = "edit", getCurrentSheetId = js.Any.fromFunction0(getCurrentSheetId), getMode = js.Any.fromFunction0(getMode), gotoSheet = js.Any.fromFunction1(gotoSheet), gotoStory = js.Any.fromFunction1(gotoStory), isModeAllowed = js.Any.fromFunction1(isModeAllowed), nextSheet = js.Any.fromFunction0(nextSheet), prevSheet = js.Any.fromFunction0(prevSheet), setMode = js.Any.fromFunction1(setMode), switchMode = js.Any.fromFunction1(switchMode))
       __obj.asInstanceOf[INavigation]
     }
     
@@ -188,38 +184,37 @@ object NavigationAPI {
   /**
     * The navigation result object.
     */
-  @js.native
   trait NavigationResult extends StObject {
     
     /**
       * Error code. Can be: NOSUCHSHEET   |   NOCURRENTSHEET   |   NOSUCHSTORY
       */
-    var error: NavigationErrorType = js.native
+    var error: NavigationErrorType
     
     /**
       * Error message, for example 'No current sheet'.
       */
-    var errorMsg: String = js.native
+    var errorMsg: String
     
     /**
       * The new mode.
       */
-    var mode: String = js.native
+    var mode: String
     
     /**
       * The new sheet ID.
       */
-    var sheetId: String = js.native
+    var sheetId: String
     
     /**
       * The new story ID.
       */
-    var storyId: String = js.native
+    var storyId: String
     
     /**
       * Returns true if successful.
       */
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object NavigationResult {
     

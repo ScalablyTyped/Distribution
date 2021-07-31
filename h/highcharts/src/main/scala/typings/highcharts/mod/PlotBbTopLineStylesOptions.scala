@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotBbTopLineStylesOptions extends StObject {
   
   /**
     * (Highstock) Color of the line. If not set, it's inherited from
     * plotOptions.bb.color.
     */
-  var lineColor: js.UndefOr[ColorString] = js.native
+  var lineColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Highstock) Pixel width of the line.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
 }
 object PlotBbTopLineStylesOptions {
   

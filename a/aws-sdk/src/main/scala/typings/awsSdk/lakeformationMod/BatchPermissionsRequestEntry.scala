@@ -2,36 +2,34 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchPermissionsRequestEntry extends StObject {
   
   /**
     * A unique identifier for the batch permissions request entry.
     */
-  var Id: Identifier = js.native
+  var Id: Identifier
   
   /**
     * The permissions to be granted.
     */
-  var Permissions: js.UndefOr[PermissionList] = js.native
+  var Permissions: js.UndefOr[PermissionList] = js.undefined
   
   /**
     * Indicates if the option to pass permissions is granted.
     */
-  var PermissionsWithGrantOption: js.UndefOr[PermissionList] = js.native
+  var PermissionsWithGrantOption: js.UndefOr[PermissionList] = js.undefined
   
   /**
     * The principal to be granted a permission.
     */
-  var Principal: js.UndefOr[DataLakePrincipal] = js.native
+  var Principal: js.UndefOr[DataLakePrincipal] = js.undefined
   
   /**
     * The resource to which the principal is to be granted a permission.
     */
-  var Resource: js.UndefOr[typings.awsSdk.lakeformationMod.Resource] = js.native
+  var Resource: js.UndefOr[typings.awsSdk.lakeformationMod.Resource] = js.undefined
 }
 object BatchPermissionsRequestEntry {
   

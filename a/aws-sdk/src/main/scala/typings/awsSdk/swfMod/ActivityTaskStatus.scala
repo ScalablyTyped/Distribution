@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTaskStatus extends StObject {
   
   /**
     * Set to true if cancellation of the task is requested.
     */
-  var cancelRequested: Canceled = js.native
+  var cancelRequested: Canceled
 }
 object ActivityTaskStatus {
   

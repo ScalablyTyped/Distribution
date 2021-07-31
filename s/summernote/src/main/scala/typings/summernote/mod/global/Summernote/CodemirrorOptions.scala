@@ -2,19 +2,17 @@ package typings.summernote.mod.global.Summernote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodemirrorOptions extends StObject {
   
-  var htmlNode: js.UndefOr[Boolean] = js.native
+  var htmlNode: js.UndefOr[Boolean] = js.undefined
   
-  var lineNumbers: js.UndefOr[Boolean] = js.native
+  var lineNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object CodemirrorOptions {
   

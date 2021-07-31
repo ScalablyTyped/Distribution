@@ -10,9 +10,9 @@ QR code component for Vue.js.
 | ------------------ | :-------------: |
 | Full name          | @chenfengyuan/vue-qrcode |
 | Keywords           | qrcode, QR code, 2d bar code, vue-component, html, css, javascript, front-end, web |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 410159 |
+| # releases         | 3 |
+| # dependents       | 13 |
+| # downloads        | 525526 |
 | # stars            | 0 |
 
 ## Links

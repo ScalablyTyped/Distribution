@@ -4,7 +4,6 @@ import typings.jsdevtoolsFilePathFilter.anon.PartialFiltersFilterCrite
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -29,14 +28,17 @@ object typesMod {
   
   type FilterCriterion = Boolean | String | RegExp | FilterFunction
   
-  type FilterFunction = js.Function1[/* repeated */ js.Any, js.Any]
-  
   @js.native
+  trait FilterFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
+  
   trait Filters[T] extends StObject {
     
-    var exclude: T = js.native
+    var exclude: T
     
-    var include: T = js.native
+    var include: T
   }
   object Filters {
     
@@ -47,7 +49,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class FiltersMutableBuilder[Self <: Filters[_], T] (val x: Self with Filters[T]) extends AnyVal {
+    implicit class FiltersMutableBuilder[Self <: Filters[?], T] (val x: Self & Filters[T]) extends AnyVal {
       
       @scala.inline
       def setExclude(value: T): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
@@ -57,9 +59,12 @@ object typesMod {
     }
   }
   
-  type MapFunction = js.Function1[/* repeated */ js.Any, String]
-  
   @js.native
+  trait MapFunction extends StObject {
+    
+    def apply(args: js.Any*): String = js.native
+  }
+  
   trait Options extends StObject {
     
     /**
@@ -68,7 +73,7 @@ object typesMod {
       *
       * Defaults to a function that returns the first argument as a string.
       */
-    var map: js.UndefOr[MapFunction] = js.native
+    var map: js.UndefOr[MapFunction] = js.undefined
     
     /**
       * The path separator. This allows you to filter paths from
@@ -76,7 +81,7 @@ object typesMod {
       *
       * Defaults to the default path separtor for the host OS.
       */
-    var sep: js.UndefOr[String] = js.native
+    var sep: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -90,7 +95,7 @@ object typesMod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMap(value: /* repeated */ js.Any => String): Self = StObject.set(x, "map", js.Any.fromFunction1(value))
+      def setMap(value: MapFunction): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMapUndefined: Self = StObject.set(x, "map", js.undefined)

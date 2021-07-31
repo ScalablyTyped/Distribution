@@ -11,19 +11,17 @@ import typings.plotlyJs.plotlyJsStrings.todate
 import typings.plotlyJs.plotlyJsStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSelectorButton extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var label: String = js.native
+  var label: String
   
-  var step: second | minute | hour | day | month | year | all = js.native
+  var step: second | minute | hour | day | month | year | all
   
-  var stepmode: backward | todate = js.native
+  var stepmode: backward | todate
 }
 object RangeSelectorButton {
   

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the FinancialIndicatorPoint class.
   */
-@js.native
-trait ASPxClientFinancialIndicatorPoint extends ASPxClientWebChartElement {
+trait ASPxClientFinancialIndicatorPoint
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the argument of the financial indicator's point.
     */
-  var argument: js.Any = js.native
+  var argument: js.Any
   
   /**
     * Gets the financial indicator that owns the current financial indicator point.
     */
-  var financialIndicator: ASPxClientFinancialIndicator = js.native
+  var financialIndicator: ASPxClientFinancialIndicator
   
   /**
     * Gets a value, indicating how the value of a financial indicator's point is obtained.
     */
-  var valueLevel: String = js.native
+  var valueLevel: String
 }
 object ASPxClientFinancialIndicatorPoint {
   

@@ -3,23 +3,23 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.BookmarkList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericBookmarkListNxInfo width extend NxInfo
   */
-@js.native
-trait IGenericBookmarkListNxInfo extends INxInfo {
+trait IGenericBookmarkListNxInfo
+  extends StObject
+     with INxInfo {
   
   @JSName("qType")
-  var qType_IGenericBookmarkListNxInfo: BookmarkList = js.native
+  var qType_IGenericBookmarkListNxInfo: BookmarkList
 }
 object IGenericBookmarkListNxInfo {
   
   @scala.inline
-  def apply(qType: BookmarkList): IGenericBookmarkListNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+  def apply(): IGenericBookmarkListNxInfo = {
+    val __obj = js.Dynamic.literal(qType = "BookmarkList")
     __obj.asInstanceOf[IGenericBookmarkListNxInfo]
   }
   

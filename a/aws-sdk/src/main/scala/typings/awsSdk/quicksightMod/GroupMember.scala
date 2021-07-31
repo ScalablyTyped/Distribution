@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupMember extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the group member (user).
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The name of the group member (user).
     */
-  var MemberName: js.UndefOr[GroupMemberName] = js.native
+  var MemberName: js.UndefOr[GroupMemberName] = js.undefined
 }
 object GroupMember {
   

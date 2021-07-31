@@ -2,37 +2,35 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `queryEntities` operation. */
-@js.native
 trait QueryEntitiesParams extends StObject {
   
   /** The ID of the collection. */
-  var collection_id: String = js.native
+  var collection_id: String
   
   /** Entity text to provide context for the queried entity and rank based on that association. For example, if you wanted to query the city of London in England your query would look for `London` with the context of `England`. */
-  var context: js.UndefOr[QueryEntitiesContext] = js.native
+  var context: js.UndefOr[QueryEntitiesContext] = js.undefined
   
   /** The number of results to return. The default is `10`. The maximum is `1000`. */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /** A text string that appears within the entity text field. */
-  var entity: js.UndefOr[QueryEntitiesEntity] = js.native
+  var entity: js.UndefOr[QueryEntitiesEntity] = js.undefined
   
   /** The ID of the environment. */
-  var environment_id: String = js.native
+  var environment_id: String
   
   /** The number of evidence items to return for each result. The default is `0`. The maximum number of evidence items per query is 10,000. */
-  var evidence_count: js.UndefOr[Double] = js.native
+  var evidence_count: js.UndefOr[Double] = js.undefined
   
   /** The entity query feature to perform. Supported features are `disambiguate` and `similar_entities`. */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object QueryEntitiesParams {
   

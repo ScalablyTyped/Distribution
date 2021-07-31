@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsEntityItem extends StObject {
   
   /**
     * The time OpsItem data was captured.
     */
-  var CaptureTime: js.UndefOr[OpsEntityItemCaptureTime] = js.native
+  var CaptureTime: js.UndefOr[OpsEntityItemCaptureTime] = js.undefined
   
   /**
     * The detailed data content for an OpsItem summaries result item.
     */
-  var Content: js.UndefOr[OpsEntityItemEntryList] = js.native
+  var Content: js.UndefOr[OpsEntityItemEntryList] = js.undefined
 }
 object OpsEntityItem {
   

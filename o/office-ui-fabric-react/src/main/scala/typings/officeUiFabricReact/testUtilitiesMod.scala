@@ -7,47 +7,44 @@ import typings.reactDom.testUtilsMod.SyntheticEventData
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilitiesMod {
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "delay")
+  @JSImport("office-ui-fabric-react/lib/common/testUtilities", JSImport.Namespace)
   @js.native
-  def delay(millisecond: Double): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "expectMissing")
-  @js.native
-  def expectMissing(wrapper: ReactWrapper[_, _, Component[js.Object, js.Object, _]], className: String): Unit = js.native
+  @scala.inline
+  def delay(millisecond: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(millisecond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "expectNodes")
-  @js.native
-  def expectNodes(wrapper: ReactWrapper[_, _, Component[js.Object, js.Object, _]], className: String, n: Double): Unit = js.native
+  @scala.inline
+  def expectMissing(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectMissing")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "expectOne")
-  @js.native
-  def expectOne(wrapper: ReactWrapper[_, _, Component[js.Object, js.Object, _]], className: String): Unit = js.native
+  @scala.inline
+  def expectNodes(
+    wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]],
+    className: String,
+    n: Double
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectNodes")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "findNodes")
-  @js.native
-  def findNodes(wrapper: ReactWrapper[_, _, Component[js.Object, js.Object, _]], className: String): ReactWrapper[_, _, Component[js.Object, js.Object, _]] = js.native
+  @scala.inline
+  def expectOne(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("expectOne")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "flushPromises")
-  @js.native
-  def flushPromises(): js.Promise[Unit] = js.native
+  @scala.inline
+  def findNodes(wrapper: ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]], className: String): ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]] = (^.asInstanceOf[js.Dynamic].applyDynamic("findNodes")(wrapper.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[ReactWrapper[js.Any, js.Any, Component[js.Object, js.Object, js.Any]]]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "mockEvent")
-  @js.native
-  def mockEvent(): SyntheticEventData = js.native
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "mockEvent")
-  @js.native
-  def mockEvent(targetValue: String): SyntheticEventData = js.native
+  @scala.inline
+  def flushPromises(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("flushPromises")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "mountAttached")
-  @js.native
-  def mountAttached[C /* <: Component[js.Object, js.Object, _] */, P, S](element: ReactElement): ReactWrapper[P, S, C] = js.native
+  @scala.inline
+  def mockEvent(): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")().asInstanceOf[SyntheticEventData]
+  @scala.inline
+  def mockEvent(targetValue: String): SyntheticEventData = ^.asInstanceOf[js.Dynamic].applyDynamic("mockEvent")(targetValue.asInstanceOf[js.Any]).asInstanceOf[SyntheticEventData]
   
-  @JSImport("office-ui-fabric-react/lib/common/testUtilities", "renderIntoDocument")
-  @js.native
-  def renderIntoDocument(element: ReactElement): HTMLElement = js.native
+  @scala.inline
+  def mountAttached[C /* <: Component[js.Object, js.Object, js.Any] */, P, S](element: ReactElement): ReactWrapper[P, S, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("mountAttached")(element.asInstanceOf[js.Any]).asInstanceOf[ReactWrapper[P, S, C]]
+  
+  @scala.inline
+  def renderIntoDocument(element: ReactElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("renderIntoDocument")(element.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRunResult extends StObject {
   
   /**
     * The run to get results from.
     */
-  var run: js.UndefOr[Run] = js.native
+  var run: js.UndefOr[Run] = js.undefined
 }
 object GetRunResult {
   

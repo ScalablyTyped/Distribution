@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.ssm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentAttachmentsSource extends StObject {
   
   /**
     * The key describing the location of an attachment to a document. Valid key types include: `SourceUrl` and `S3FileUrl`
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The name of the document attachment file
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The value describing the location of an attachment to a document
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object DocumentAttachmentsSource {
   

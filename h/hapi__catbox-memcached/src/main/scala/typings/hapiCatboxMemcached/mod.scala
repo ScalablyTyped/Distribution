@@ -7,21 +7,65 @@ import typings.hapiCatbox.mod.ClientOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@hapi/catbox-memcached", JSImport.Namespace)
   @js.native
-  class ^[T] () extends CatboxMemcached[T] {
+  class ^[T] ()
+    extends StObject
+       with CatboxMemcached[T] {
     def this(options: Options) = this()
+    
+    /**
+      * drop(key) - remove an item from cache where:
+      *  * key - a cache key object (see [ICacheKey]).
+      */
+    /* CompleteClass */
+    override def drop(key: CacheKey): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def generateKey(key: CacheKey): String = js.native
+    
+    /**
+      * get(key, callback) - retrieve an item from the cache engine if found where:
+      *  * key - a cache key object (see [ICacheKey]).
+      */
+    /* CompleteClass */
+    override def get(key: CacheKey): js.Promise[Null | CachedObject[T]] = js.native
+    
+    /** isReady() - returns true if cache engine determines itself as ready, false if it is not ready. */
+    /* CompleteClass */
+    override def isReady(): Boolean = js.native
+    
+    /**
+      * set(key, value, ttl) - store an item in the cache for a specified length of time, where:
+      *  * key - a cache key object (see [ICacheKey]).
+      *  * value - the string or object value to be stored.
+      *  * ttl - a time-to-live value in milliseconds after which the item is automatically removed from the cache (or is marked invalid).
+      */
+    /* CompleteClass */
+    override def set(key: CacheKey, value: T, ttl: Double): js.Promise[Unit] = js.native
+    
+    /** start() - creates a connection to the cache server. Must be called before any other method is available. */
+    /* CompleteClass */
+    override def start(): js.Promise[Unit] = js.native
+    
+    /** stop() - terminates the connection to the cache server. */
+    /* CompleteClass */
+    override def stop(): Unit = js.native
+    
+    /** validateSegmentName(segment) - returns null if the segment name is valid (see below), otherwise should return an instance of Error with an appropriate message. */
+    /* CompleteClass */
+    override def validateSegmentName(segment: String): Null | Error = js.native
   }
   
-  @js.native
-  trait CatboxMemcached[T] extends ClientApi[T] {
+  trait CatboxMemcached[T]
+    extends StObject
+       with ClientApi[T] {
     
-    def generateKey(key: CacheKey): String = js.native
+    def generateKey(key: CacheKey): String
   }
   object CatboxMemcached {
     
@@ -41,25 +85,26 @@ object mod {
     }
     
     @scala.inline
-    implicit class CatboxMemcachedMutableBuilder[Self <: CatboxMemcached[_], T] (val x: Self with CatboxMemcached[T]) extends AnyVal {
+    implicit class CatboxMemcachedMutableBuilder[Self <: CatboxMemcached[?], T] (val x: Self & CatboxMemcached[T]) extends AnyVal {
       
       @scala.inline
       def setGenerateKey(value: CacheKey => String): Self = StObject.set(x, "generateKey", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
-  trait Options extends ClientOptions {
+  trait Options
+    extends StObject
+       with ClientOptions {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var idle: js.UndefOr[Double] = js.native
+    var idle: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

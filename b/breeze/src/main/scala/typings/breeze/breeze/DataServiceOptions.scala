@@ -2,23 +2,21 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataServiceOptions extends StObject {
   
-  var adapterName: js.UndefOr[String] = js.native
+  var adapterName: js.UndefOr[String] = js.undefined
   
-  var hasServerMetadata: js.UndefOr[Boolean] = js.native
+  var hasServerMetadata: js.UndefOr[Boolean] = js.undefined
   
-  var jsonResultsAdapter: js.UndefOr[JsonResultsAdapter] = js.native
+  var jsonResultsAdapter: js.UndefOr[JsonResultsAdapter] = js.undefined
   
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
-  var uriBuilderName: js.UndefOr[String] = js.native
+  var uriBuilderName: js.UndefOr[String] = js.undefined
   
-  var useJsonp: js.UndefOr[Boolean] = js.native
+  var useJsonp: js.UndefOr[Boolean] = js.undefined
 }
 object DataServiceOptions {
   

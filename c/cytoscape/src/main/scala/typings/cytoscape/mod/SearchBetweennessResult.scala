@@ -2,22 +2,20 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.betweennessCentrality
   */
-@js.native
 trait SearchBetweennessResult extends StObject {
   
   /** returns the betweenness centrality of the specified node */
-  def betweenness(node: NodeSingular): Double = js.native
+  def betweenness(node: NodeSingular): Double
   
-  def betweennessNormalised(node: NodeSingular): Double = js.native
+  def betweennessNormalised(node: NodeSingular): Double
   
   /** returns the normalised betweenness centrality of the specified node */
-  def betweennessNormalized(node: NodeSingular): Double = js.native
+  def betweennessNormalized(node: NodeSingular): Double
 }
 object SearchBetweennessResult {
   

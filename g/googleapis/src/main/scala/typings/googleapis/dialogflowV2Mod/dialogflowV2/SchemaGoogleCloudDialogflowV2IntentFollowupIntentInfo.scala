@@ -2,26 +2,24 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single followup intent in the chain.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo extends StObject {
   
   /**
     * The unique identifier of the followup intent. Format:
     * `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent ID&gt;`.
     */
-  var followupIntentName: js.UndefOr[String] = js.native
+  var followupIntentName: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the followup intent&#39;s parent. Format:
     * `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent ID&gt;`.
     */
-  var parentFollowupIntentName: js.UndefOr[String] = js.native
+  var parentFollowupIntentName: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo {
   

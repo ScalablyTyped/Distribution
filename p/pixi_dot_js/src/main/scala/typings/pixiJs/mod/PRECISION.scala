@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,11 +21,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PRECISION extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.PRECISION with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.PRECISION & Double] = js.native
   
-  /* 2 */ val HIGH: typings.pixiJs.PIXI.PRECISION.HIGH with Double = js.native
+  /* 2 */ val HIGH: typings.pixiJs.PIXI.PRECISION.HIGH & Double = js.native
   
-  /* 0 */ val LOW: typings.pixiJs.PIXI.PRECISION.LOW with Double = js.native
+  /* 0 */ val LOW: typings.pixiJs.PIXI.PRECISION.LOW & Double = js.native
   
-  /* 1 */ val MEDIUM: typings.pixiJs.PIXI.PRECISION.MEDIUM with Double = js.native
+  /* 1 */ val MEDIUM: typings.pixiJs.PIXI.PRECISION.MEDIUM & Double = js.native
 }

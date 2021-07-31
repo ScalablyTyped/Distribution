@@ -3,27 +3,25 @@ package typings.viewporter
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewporter extends StObject {
   
-  var ACTIVE: Boolean = js.native
+  var ACTIVE: Boolean
   
-  var READY: Boolean = js.native
+  var READY: Boolean
   
-  def change(callback: EventListener): Unit = js.native
+  def change(callback: EventListener): Unit
   
-  var forceDetection: Boolean = js.native
+  var forceDetection: Boolean
   
-  def isLandscape(): Boolean = js.native
+  def isLandscape(): Boolean
   
-  var preventPageScroll: Boolean = js.native
+  var preventPageScroll: Boolean
   
-  def ready(callback: EventListener): Unit = js.native
+  def ready(callback: EventListener): Unit
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object Viewporter {
   

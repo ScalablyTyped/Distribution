@@ -5,7 +5,6 @@ import typings.reactWaypoint.mod.Waypoint.WaypointProps
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,41 +51,40 @@ object mod {
     @scala.inline
     def invisible_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("invisible")(x.asInstanceOf[js.Any])
     
-    @js.native
     trait CallbackArgs extends StObject {
       
       /*
         * The position that the waypoint has at the moment.
         * One of Waypoint.below, Waypoint.above, Waypoint.inside, and Waypoint.invisible.
         */
-      var currentPosition: String = js.native
+      var currentPosition: String
       
       /*
         * The native scroll event that triggered the callback.
         * May be missing if the callback wasn't triggered as the result of a scroll
         */
-      var event: js.UndefOr[Event] = js.native
+      var event: js.UndefOr[Event] = js.undefined
       
       /*
         * The position that the waypoint had before.
         * One of Waypoint.below, Waypoint.above, Waypoint.inside, and Waypoint.invisible.
         */
-      var previousPosition: String = js.native
+      var previousPosition: String
       
       /*
         * The distance from the bottom of the scrollable ancestor to the viewport top.
         */
-      var viewportBottom: Double = js.native
+      var viewportBottom: Double
       
       /*
         * The distance from the scrollable ancestor to the viewport top.
         */
-      var viewportTop: Double = js.native
+      var viewportTop: Double
       
       /*
         * The waypoint's distance to the top of the viewport.
         */
-      var waypointTop: Double = js.native
+      var waypointTop: Double
     }
     object CallbackArgs {
       
@@ -128,48 +126,47 @@ object mod {
       }
     }
     
-    @js.native
     trait WaypointProps extends StObject {
       
       /**
         * `bottomOffset` is like `topOffset`, but for the bottom of the container.
         */
-      var bottomOffset: js.UndefOr[String | Double] = js.native
+      var bottomOffset: js.UndefOr[String | Double] = js.undefined
       
       /**
         * Use this prop to get debug information in the console log. This slows
         * things down significantly, so it should only be used during development.
         */
-      var debug: js.UndefOr[Boolean] = js.native
+      var debug: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If the onEnter/onLeave events are to be fired on rapid scrolling.
         * This has no effect on onPositionChange -- it will fire anyway.
         */
-      var fireOnRapidScroll: js.UndefOr[Boolean] = js.native
+      var fireOnRapidScroll: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to activate on horizontal scrolling instead of vertical
         */
-      var horizontal: js.UndefOr[Boolean] = js.native
+      var horizontal: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Function called when waypoint enters viewport
         * @param {CallbackArgs} args
         */
-      var onEnter: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.native
+      var onEnter: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.undefined
       
       /**
         * Function called when waypoint leaves viewport
         * @param {CallbackArgs} args
         */
-      var onLeave: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.native
+      var onLeave: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.undefined
       
       /**
         * Function called when waypoint position changes
         * @param {CallbackArgs} args
         */
-      var onPositionChange: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.native
+      var onPositionChange: js.UndefOr[js.Function1[/* args */ CallbackArgs, Unit]] = js.undefined
       
       /**
         * A custom ancestor to determine if the target is visible in it.
@@ -177,7 +174,7 @@ object mod {
         * ancestor to be the container. For example, when your target is in a div
         * that has overflow auto but you are detecting onEnter based on the window.
         */
-      var scrollableAncestor: js.UndefOr[js.Any] = js.native
+      var scrollableAncestor: js.UndefOr[js.Any] = js.undefined
       
       /**
         * `topOffset` can either be a number, in which case its a distance from the
@@ -188,7 +185,7 @@ object mod {
         * then the waypoint will be triggered when it has been scrolled 20px beyond
         * the top of the containing element.
         */
-      var topOffset: js.UndefOr[String | Double] = js.native
+      var topOffset: js.UndefOr[String | Double] = js.undefined
     }
     object WaypointProps {
       

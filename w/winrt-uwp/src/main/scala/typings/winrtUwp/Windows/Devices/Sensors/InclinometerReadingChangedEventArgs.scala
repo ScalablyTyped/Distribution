@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the inclinometer reading–changed event. */
-@js.native
 trait InclinometerReadingChangedEventArgs extends StObject {
   
   /** Gets the current inclinometer reading. */
-  var reading: InclinometerReading = js.native
+  var reading: InclinometerReading
 }
 object InclinometerReadingChangedEventArgs {
   

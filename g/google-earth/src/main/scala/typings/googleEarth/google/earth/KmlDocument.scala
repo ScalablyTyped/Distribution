@@ -2,21 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlDocument extends KmlContainer {
+trait KmlDocument
+  extends StObject
+     with KmlContainer {
   
   /**
     * Returns a list of elements using a particular style URL.
     */
-  def getElementsByStyleUrl(styleUrl: String): KmlObjectList[KmlObject] = js.native
+  def getElementsByStyleUrl(styleUrl: String): KmlObjectList[KmlObject]
   
   /**
     * Returns an array containing the style selectors present in the KML document.
     */
-  def getStyleSelectors(): GEStyleSelectorContainer = js.native
+  def getStyleSelectors(): GEStyleSelectorContainer
 }
 object KmlDocument {
   

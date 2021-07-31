@@ -2,33 +2,31 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BWP extends StObject {
   
-  var BDT: js.Array[js.UndefOr[String]] = js.native
+  var BDT: js.Array[js.UndefOr[String]]
   
-  var BWP: js.Array[scala.Nothing] = js.native
+  var BWP: js.Array[scala.Nothing]
   
-  var HKD: js.Array[String] = js.native
+  var HKD: js.Array[String]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var KRW: js.Array[js.UndefOr[String]] = js.native
+  var KRW: js.Array[js.UndefOr[String]]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TWD: js.Array[String] = js.native
+  var TWD: js.Array[String]
   
-  var USD: js.Array[String] = js.native
+  var USD: js.Array[String]
   
-  var XXX: js.Array[scala.Nothing] = js.native
+  var XXX: js.Array[scala.Nothing]
   
-  var ZAR: js.Array[scala.Nothing] = js.native
+  var ZAR: js.Array[scala.Nothing]
   
-  var ZMW: js.Array[scala.Nothing] = js.native
+  var ZMW: js.Array[scala.Nothing]
 }
 object BWP {
   

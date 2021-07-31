@@ -7,11 +7,12 @@ import typings.ionicReact.stackContextMod.StackContextState
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofPageManager extends Instantiable1[/* props */ PageManagerProps, default] {
+trait TypeofPageManager
+  extends StObject
+     with Instantiable1[/* props */ PageManagerProps, default] {
   
   def contextType: Context[StackContextState] = js.native
 }

@@ -2,13 +2,11 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for google.bigtable.admin.v2.BigtableTableAdmin.CreateTable
   */
-@js.native
 trait SchemaCreateTableRequest extends StObject {
   
   /**
@@ -27,18 +25,18 @@ trait SchemaCreateTableRequest extends StObject {
     * other)      =&gt; {&quot;customer_2&quot;}.`     - Tablet 5 `[other, )
     * =&gt; {&quot;other&quot;, &quot;zz&quot;}.`
     */
-  var initialSplits: js.UndefOr[js.Array[SchemaSplit]] = js.native
+  var initialSplits: js.UndefOr[js.Array[SchemaSplit]] = js.undefined
   
   /**
     * The Table to create.
     */
-  var table: js.UndefOr[SchemaTable] = js.native
+  var table: js.UndefOr[SchemaTable] = js.undefined
   
   /**
     * The name by which the new table should be referred to within the parent
     * instance, e.g., `foobar` rather than `&lt;parent&gt;/tables/foobar`.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateTableRequest {
   

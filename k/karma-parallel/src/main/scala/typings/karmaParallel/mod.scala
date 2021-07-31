@@ -6,20 +6,18 @@ import typings.karmaParallel.karmaParallelStrings.custom
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Options for this plugin
       * see {@link https://github.com/joeljeske/karma-parallel#options}
       */
-    var parallelOptions: js.UndefOr[ParallelOptions] = js.native
+    var parallelOptions: js.UndefOr[ParallelOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -40,7 +38,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ParallelOptions extends StObject {
     
     /**
@@ -49,28 +46,28 @@ object mod {
       *  It is also useful for some programmatic reporters such as junit reporters that need to operate on a single set of test outputs and not once for each shard.
       * Set to null to disable aggregated reporting
       */
-    var aggregatedReporterTest: js.UndefOr[(js.Function1[/* reporter */ js.Object, Boolean]) | RegExp | Null] = js.native
+    var aggregatedReporterTest: js.UndefOr[(js.Function1[/* reporter */ js.Object, Boolean]) | RegExp | Null] = js.undefined
     
     /**
       * Custom function that will determine if a describe block should run in the current executor.
       * It is a function that is serialized and re-constructed on each executor.
       * The function will be called for every top level describe block and should return true if the describe block should run for a the current executor
       */
-    var customShardStrategy: js.UndefOr[js.Function1[/* options */ ShardStrategOptions, Boolean]] = js.native
+    var customShardStrategy: js.UndefOr[js.Function1[/* options */ ShardStrategOptions, Boolean]] = js.undefined
     
     /**
       * The number of browser instances to use to test.
       * If you test on multiple types of browsers, this spin up the number of executors for each browser type
       * @default cpu_cores-1
       */
-    var executors: js.UndefOr[Double] = js.native
+    var executors: js.UndefOr[Double] = js.undefined
     
     /**
       * This plugin works by overriding the test suite describe() function.
       * When it encounters a describe, it must decide if it will skip the tests inside of it, or not
       * @default 'round-robin'
       */
-    var shardStrategy: js.UndefOr[`round-robin` | `description-length` | custom] = js.native
+    var shardStrategy: js.UndefOr[`round-robin` | `description-length` | custom] = js.undefined
   }
   object ParallelOptions {
     
@@ -115,23 +112,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ShardStrategOptions extends StObject {
     
     /**
       * the string passed to the describe block (useful for gaining context of the current description)
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * the total number of executors
       */
-    val executors: Double = js.native
+    val executors: Double
     
     /**
       * the 0-based index of the current executor
       */
-    val shardIndex: Double = js.native
+    val shardIndex: Double
   }
   object ShardStrategOptions {
     

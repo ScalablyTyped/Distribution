@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorImageBrowserSchemaModelFields extends StObject {
   
-  var name: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsName] = js.native
+  var name: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsName] = js.undefined
   
-  var size: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsSize] = js.native
+  var size: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsSize] = js.undefined
   
-  var `type`: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsType] = js.native
+  var `type`: js.UndefOr[String | EditorImageBrowserSchemaModelFieldsType] = js.undefined
 }
 object EditorImageBrowserSchemaModelFields {
   

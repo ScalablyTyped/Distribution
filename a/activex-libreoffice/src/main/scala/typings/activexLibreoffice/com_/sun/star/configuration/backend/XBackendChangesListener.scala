@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives notification from backend broadcaster objects.
   * @see XBackendChangesNotifier
   */
-@js.native
-trait XBackendChangesListener extends XEventListener {
+trait XBackendChangesListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when component data in backend source changes
     * @param Event Event indicating the component data change
     */
-  def componentDataChanged(Event: ComponentChangeEvent): Unit = js.native
+  def componentDataChanged(Event: ComponentChangeEvent): Unit
 }
 object XBackendChangesListener {
   

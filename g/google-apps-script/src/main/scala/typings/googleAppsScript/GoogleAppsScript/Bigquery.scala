@@ -63,189 +63,187 @@ import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.UserDefinedFun
 import typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema.ViewDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bigquery extends StObject {
   
-  var Datasets: js.UndefOr[DatasetsCollection] = js.native
+  var Datasets: js.UndefOr[DatasetsCollection] = js.undefined
   
-  var Jobs: js.UndefOr[JobsCollection] = js.native
+  var Jobs: js.UndefOr[JobsCollection] = js.undefined
   
-  var Projects: js.UndefOr[ProjectsCollection] = js.native
+  var Projects: js.UndefOr[ProjectsCollection] = js.undefined
   
-  var Tabledata: js.UndefOr[TabledataCollection] = js.native
+  var Tabledata: js.UndefOr[TabledataCollection] = js.undefined
   
-  var Tables: js.UndefOr[TablesCollection] = js.native
+  var Tables: js.UndefOr[TablesCollection] = js.undefined
   
   // Create a new instance of BigQueryModelTraining
-  def newBigQueryModelTraining(): BigQueryModelTraining = js.native
+  def newBigQueryModelTraining(): BigQueryModelTraining
   
   // Create a new instance of BigtableColumn
-  def newBigtableColumn(): BigtableColumn = js.native
+  def newBigtableColumn(): BigtableColumn
   
   // Create a new instance of BigtableColumnFamily
-  def newBigtableColumnFamily(): BigtableColumnFamily = js.native
+  def newBigtableColumnFamily(): BigtableColumnFamily
   
   // Create a new instance of BigtableOptions
-  def newBigtableOptions(): BigtableOptions = js.native
+  def newBigtableOptions(): BigtableOptions
   
   // Create a new instance of BqmlIterationResult
-  def newBqmlIterationResult(): BqmlIterationResult = js.native
+  def newBqmlIterationResult(): BqmlIterationResult
   
   // Create a new instance of BqmlTrainingRun
-  def newBqmlTrainingRun(): BqmlTrainingRun = js.native
+  def newBqmlTrainingRun(): BqmlTrainingRun
   
   // Create a new instance of BqmlTrainingRunTrainingOptions
-  def newBqmlTrainingRunTrainingOptions(): BqmlTrainingRunTrainingOptions = js.native
+  def newBqmlTrainingRunTrainingOptions(): BqmlTrainingRunTrainingOptions
   
   // Create a new instance of Clustering
-  def newClustering(): Clustering = js.native
+  def newClustering(): Clustering
   
   // Create a new instance of CsvOptions
-  def newCsvOptions(): CsvOptions = js.native
+  def newCsvOptions(): CsvOptions
   
   // Create a new instance of Dataset
-  def newDataset(): Dataset = js.native
+  def newDataset(): Dataset
   
   // Create a new instance of DatasetAccess
-  def newDatasetAccess(): DatasetAccess = js.native
+  def newDatasetAccess(): DatasetAccess
   
   // Create a new instance of DatasetReference
-  def newDatasetReference(): DatasetReference = js.native
+  def newDatasetReference(): DatasetReference
   
   // Create a new instance of DestinationTableProperties
-  def newDestinationTableProperties(): DestinationTableProperties = js.native
+  def newDestinationTableProperties(): DestinationTableProperties
   
   // Create a new instance of EncryptionConfiguration
-  def newEncryptionConfiguration(): EncryptionConfiguration = js.native
+  def newEncryptionConfiguration(): EncryptionConfiguration
   
   // Create a new instance of ErrorProto
-  def newErrorProto(): ErrorProto = js.native
+  def newErrorProto(): ErrorProto
   
   // Create a new instance of ExplainQueryStage
-  def newExplainQueryStage(): ExplainQueryStage = js.native
+  def newExplainQueryStage(): ExplainQueryStage
   
   // Create a new instance of ExplainQueryStep
-  def newExplainQueryStep(): ExplainQueryStep = js.native
+  def newExplainQueryStep(): ExplainQueryStep
   
   // Create a new instance of ExternalDataConfiguration
-  def newExternalDataConfiguration(): ExternalDataConfiguration = js.native
+  def newExternalDataConfiguration(): ExternalDataConfiguration
   
   // Create a new instance of GoogleSheetsOptions
-  def newGoogleSheetsOptions(): GoogleSheetsOptions = js.native
+  def newGoogleSheetsOptions(): GoogleSheetsOptions
   
   // Create a new instance of Job
-  def newJob(): Job = js.native
+  def newJob(): Job
   
   // Create a new instance of JobConfiguration
-  def newJobConfiguration(): JobConfiguration = js.native
+  def newJobConfiguration(): JobConfiguration
   
   // Create a new instance of JobConfigurationExtract
-  def newJobConfigurationExtract(): JobConfigurationExtract = js.native
+  def newJobConfigurationExtract(): JobConfigurationExtract
   
   // Create a new instance of JobConfigurationLoad
-  def newJobConfigurationLoad(): JobConfigurationLoad = js.native
+  def newJobConfigurationLoad(): JobConfigurationLoad
   
   // Create a new instance of JobConfigurationQuery
-  def newJobConfigurationQuery(): JobConfigurationQuery = js.native
+  def newJobConfigurationQuery(): JobConfigurationQuery
   
   // Create a new instance of JobConfigurationTableCopy
-  def newJobConfigurationTableCopy(): JobConfigurationTableCopy = js.native
+  def newJobConfigurationTableCopy(): JobConfigurationTableCopy
   
   // Create a new instance of JobReference
-  def newJobReference(): JobReference = js.native
+  def newJobReference(): JobReference
   
   // Create a new instance of JobStatistics
-  def newJobStatistics(): JobStatistics = js.native
+  def newJobStatistics(): JobStatistics
   
   // Create a new instance of JobStatistics2
-  def newJobStatistics2(): JobStatistics2 = js.native
+  def newJobStatistics2(): JobStatistics2
   
   // Create a new instance of JobStatistics2ReservationUsage
-  def newJobStatistics2ReservationUsage(): JobStatistics2ReservationUsage = js.native
+  def newJobStatistics2ReservationUsage(): JobStatistics2ReservationUsage
   
   // Create a new instance of JobStatistics3
-  def newJobStatistics3(): JobStatistics3 = js.native
+  def newJobStatistics3(): JobStatistics3
   
   // Create a new instance of JobStatistics4
-  def newJobStatistics4(): JobStatistics4 = js.native
+  def newJobStatistics4(): JobStatistics4
   
   // Create a new instance of JobStatisticsReservationUsage
-  def newJobStatisticsReservationUsage(): JobStatisticsReservationUsage = js.native
+  def newJobStatisticsReservationUsage(): JobStatisticsReservationUsage
   
   // Create a new instance of JobStatus
-  def newJobStatus(): JobStatus = js.native
+  def newJobStatus(): JobStatus
   
   // Create a new instance of MaterializedViewDefinition
-  def newMaterializedViewDefinition(): MaterializedViewDefinition = js.native
+  def newMaterializedViewDefinition(): MaterializedViewDefinition
   
   // Create a new instance of ModelDefinition
-  def newModelDefinition(): ModelDefinition = js.native
+  def newModelDefinition(): ModelDefinition
   
   // Create a new instance of ModelDefinitionModelOptions
-  def newModelDefinitionModelOptions(): ModelDefinitionModelOptions = js.native
+  def newModelDefinitionModelOptions(): ModelDefinitionModelOptions
   
   // Create a new instance of QueryParameter
-  def newQueryParameter(): QueryParameter = js.native
+  def newQueryParameter(): QueryParameter
   
   // Create a new instance of QueryParameterType
-  def newQueryParameterType(): QueryParameterType = js.native
+  def newQueryParameterType(): QueryParameterType
   
   // Create a new instance of QueryParameterTypeStructTypes
-  def newQueryParameterTypeStructTypes(): QueryParameterTypeStructTypes = js.native
+  def newQueryParameterTypeStructTypes(): QueryParameterTypeStructTypes
   
   // Create a new instance of QueryParameterValue
-  def newQueryParameterValue(): QueryParameterValue = js.native
+  def newQueryParameterValue(): QueryParameterValue
   
   // Create a new instance of QueryRequest
-  def newQueryRequest(): QueryRequest = js.native
+  def newQueryRequest(): QueryRequest
   
   // Create a new instance of QueryTimelineSample
-  def newQueryTimelineSample(): QueryTimelineSample = js.native
+  def newQueryTimelineSample(): QueryTimelineSample
   
   // Create a new instance of RangePartitioning
-  def newRangePartitioning(): RangePartitioning = js.native
+  def newRangePartitioning(): RangePartitioning
   
   // Create a new instance of RangePartitioningRange
-  def newRangePartitioningRange(): RangePartitioningRange = js.native
+  def newRangePartitioningRange(): RangePartitioningRange
   
   // Create a new instance of RoutineReference
-  def newRoutineReference(): RoutineReference = js.native
+  def newRoutineReference(): RoutineReference
   
   // Create a new instance of Streamingbuffer
-  def newStreamingbuffer(): Streamingbuffer = js.native
+  def newStreamingbuffer(): Streamingbuffer
   
   // Create a new instance of Table
-  def newTable(): Table = js.native
+  def newTable(): Table
   
   // Create a new instance of TableDataInsertAllRequest
-  def newTableDataInsertAllRequest(): TableDataInsertAllRequest = js.native
+  def newTableDataInsertAllRequest(): TableDataInsertAllRequest
   
   // Create a new instance of TableDataInsertAllRequestRows
-  def newTableDataInsertAllRequestRows(): TableDataInsertAllRequestRows = js.native
+  def newTableDataInsertAllRequestRows(): TableDataInsertAllRequestRows
   
   // Create a new instance of TableFieldSchema
-  def newTableFieldSchema(): TableFieldSchema = js.native
+  def newTableFieldSchema(): TableFieldSchema
   
   // Create a new instance of TableFieldSchemaCategories
-  def newTableFieldSchemaCategories(): TableFieldSchemaCategories = js.native
+  def newTableFieldSchemaCategories(): TableFieldSchemaCategories
   
   // Create a new instance of TableReference
-  def newTableReference(): TableReference = js.native
+  def newTableReference(): TableReference
   
   // Create a new instance of TableSchema
-  def newTableSchema(): TableSchema = js.native
+  def newTableSchema(): TableSchema
   
   // Create a new instance of TimePartitioning
-  def newTimePartitioning(): TimePartitioning = js.native
+  def newTimePartitioning(): TimePartitioning
   
   // Create a new instance of UserDefinedFunctionResource
-  def newUserDefinedFunctionResource(): UserDefinedFunctionResource = js.native
+  def newUserDefinedFunctionResource(): UserDefinedFunctionResource
   
   // Create a new instance of ViewDefinition
-  def newViewDefinition(): ViewDefinition = js.native
+  def newViewDefinition(): ViewDefinition
 }
 object Bigquery {
   

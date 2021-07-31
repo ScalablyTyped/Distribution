@@ -2,13 +2,11 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Octaveshift extends StObject {
   
-  var octave_shift: js.UndefOr[Double] = js.native
+  var octave_shift: js.UndefOr[Double] = js.undefined
 }
 object Octaveshift {
   

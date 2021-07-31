@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hl7V2Store extends StObject {
   
   /**
@@ -17,20 +15,20 @@ trait Hl7V2Store extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Resource name of the HL7v2 store, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7v2_store_id}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of notification configs. Each configuration uses a filter to determine whether to publish a message (both Ingest & Create) on the corresponding notification destination. Only
     * the message name is sent as part of the notification. Supplied by the client.
     */
-  var notificationConfigs: js.UndefOr[js.Array[Hl7V2NotificationConfig]] = js.native
+  var notificationConfigs: js.UndefOr[js.Array[Hl7V2NotificationConfig]] = js.undefined
   
   /** The configuration for the parser. It determines how the server parses the messages. */
-  var parserConfig: js.UndefOr[ParserConfig] = js.native
+  var parserConfig: js.UndefOr[ParserConfig] = js.undefined
   
   /**
     * Determines whether to reject duplicate messages. A duplicate message is a message with the same raw bytes as a message that has already been ingested/created in this HL7v2 store.
@@ -38,7 +36,7 @@ trait Hl7V2Store extends StObject {
     * previously. Note that only one resource is created in the store. When this field is set to true, CreateMessage/IngestMessage requests with a duplicate message will be rejected by
     * the store, and IngestMessageErrorDetail returns a NACK message upon rejection.
     */
-  var rejectDuplicateMessage: js.UndefOr[Boolean] = js.native
+  var rejectDuplicateMessage: js.UndefOr[Boolean] = js.undefined
 }
 object Hl7V2Store {
   
@@ -55,7 +53,7 @@ object Hl7V2Store {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Hl7V2Store & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

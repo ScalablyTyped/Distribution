@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLoadBalancerInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the load balancer.
     */
-  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn = js.native
+  var LoadBalancerArn: typings.awsSdk.elbv2Mod.LoadBalancerArn
 }
 object DeleteLoadBalancerInput {
   

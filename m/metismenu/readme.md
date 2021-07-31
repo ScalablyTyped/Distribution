@@ -10,9 +10,9 @@ A jQuery menu plugin
 | ------------------ | :-------------: |
 | Full name          | metismenu |
 | Keywords           | accordion, bootstrap, jquery, menu, metis, metisMenu, toggle, twbs, twitter |
-| # releases         | 8 |
-| # dependents       | 14 |
-| # downloads        | 1036484 |
+| # releases         | 4 |
+| # dependents       | 16 |
+| # downloads        | 1251667 |
 | # stars            | 2 |
 
 ## Links

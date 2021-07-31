@@ -3,25 +3,23 @@ package typings.rollup.anon
 import typings.rollup.mod.InternalModuleFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomResolution extends StObject {
   
-  var customResolution: String | Null = js.native
+  var customResolution: String | Null
   
-  var format: InternalModuleFormat = js.native
+  var format: InternalModuleFormat
   
-  var moduleId: String = js.native
+  var moduleId: String
   
-  var targetModuleId: String | Null = js.native
+  var targetModuleId: String | Null
 }
 object CustomResolution {
   
   @scala.inline
   def apply(format: InternalModuleFormat, moduleId: String): CustomResolution = {
-    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], customResolution = null, targetModuleId = null)
     __obj.asInstanceOf[CustomResolution]
   }
   

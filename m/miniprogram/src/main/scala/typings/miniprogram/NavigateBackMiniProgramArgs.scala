@@ -2,17 +2,17 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigateBackMiniProgramArgs extends AsyncCallback[Unit] {
+trait NavigateBackMiniProgramArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * The extra data that needs to be returned to the target Mini Program,
     *  and the target Mini Program can get it in `App.onLaunch()` or `App.onShow()`.
     */
-  var extraData: js.Any = js.native
+  var extraData: js.Any
 }
 object NavigateBackMiniProgramArgs {
   

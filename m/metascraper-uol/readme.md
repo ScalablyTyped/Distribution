@@ -10,13 +10,15 @@ metascraper integration for website under Universo Online group
 | ------------------ | :-------------: |
 | Full name          | metascraper-uol |
 | Keywords           | metascraper, online, universo, uol |
-| # releases         | 84 |
+| # releases         | 112 |
 | # dependents       | 1 |
-| # downloads        | 13082 |
+| # downloads        | 15286 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://nicedoc.io/microlinkhq/metascraper/packages/metascraper-uol)
+- [Bugs](https://github.com/microlinkhq/metascraper/issues)
+- [Repository](https://github.com/microlinkhq/metascraper)
 - [Npm](https://www.npmjs.com/package/metascraper-uol)
     
 

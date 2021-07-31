@@ -10,7 +10,6 @@ import typings.websocket.websocketStrings.requestRejected
 import typings.websocket.websocketStrings.requestResolved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("websocket", "request")
@@ -36,17 +35,13 @@ class request protected () extends EventEmitter {
     * @param [acceptedProtocol] case-insensitive value that was requested by the client
     */
   def accept(): connection = js.native
-  def accept(
-    acceptedProtocol: js.UndefOr[scala.Nothing],
-    allowedOrigin: js.UndefOr[scala.Nothing],
-    cookies: js.Array[ICookie]
-  ): connection = js.native
-  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String): connection = js.native
-  def accept(acceptedProtocol: js.UndefOr[scala.Nothing], allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String): connection = js.native
-  def accept(acceptedProtocol: String, allowedOrigin: js.UndefOr[scala.Nothing], cookies: js.Array[ICookie]): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String): connection = js.native
   def accept(acceptedProtocol: String, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
+  def accept(acceptedProtocol: String, allowedOrigin: Unit, cookies: js.Array[ICookie]): connection = js.native
+  def accept(acceptedProtocol: Unit, allowedOrigin: String): connection = js.native
+  def accept(acceptedProtocol: Unit, allowedOrigin: String, cookies: js.Array[ICookie]): connection = js.native
+  def accept(acceptedProtocol: Unit, allowedOrigin: Unit, cookies: js.Array[ICookie]): connection = js.native
   
   @JSName("addListener")
   def addListener_requestAccepted(event: requestAccepted, cb: js.Function1[/* connection */ connection, Unit]): this.type = js.native
@@ -97,13 +92,13 @@ class request protected () extends EventEmitter {
     * Optional extra http headers can be added via Object key/values on extraHeaders.
     */
   def reject(): Unit = js.native
-  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Unit = js.native
-  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
-  def reject(httpStatus: js.UndefOr[scala.Nothing], reason: String, extraHeaders: js.Object): Unit = js.native
   def reject(httpStatus: Double): Unit = js.native
-  def reject(httpStatus: Double, reason: js.UndefOr[scala.Nothing], extraHeaders: js.Object): Unit = js.native
   def reject(httpStatus: Double, reason: String): Unit = js.native
   def reject(httpStatus: Double, reason: String, extraHeaders: js.Object): Unit = js.native
+  def reject(httpStatus: Double, reason: Unit, extraHeaders: js.Object): Unit = js.native
+  def reject(httpStatus: Unit, reason: String): Unit = js.native
+  def reject(httpStatus: Unit, reason: String, extraHeaders: js.Object): Unit = js.native
+  def reject(httpStatus: Unit, reason: Unit, extraHeaders: js.Object): Unit = js.native
   
   /**
     * Client's IP. If an `X-Forwarded-For` header is present, the value will be taken
@@ -114,7 +109,7 @@ class request protected () extends EventEmitter {
   var remoteAddresses: js.Array[String] = js.native
   
   /** An array containing a list of extensions requested by the client */
-  var requestedExtensions: js.Array[_] = js.native
+  var requestedExtensions: js.Array[js.Any] = js.native
   
   /**
     * List of strings that indicate the subprotocols the client would like to speak.

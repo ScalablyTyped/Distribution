@@ -2,21 +2,20 @@ package typings.wordpressUrl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addQueryArgsMod {
   
-  @JSImport("@wordpress/url/build-types/add-query-args", "addQueryArgs")
+  @JSImport("@wordpress/url/build-types/add-query-args", JSImport.Namespace)
   @js.native
-  def addQueryArgs(): String = js.native
-  @JSImport("@wordpress/url/build-types/add-query-args", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: js.UndefOr[scala.Nothing], args: js.Object): String = js.native
-  @JSImport("@wordpress/url/build-types/add-query-args", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: String): String = js.native
-  @JSImport("@wordpress/url/build-types/add-query-args", "addQueryArgs")
-  @js.native
-  def addQueryArgs(url: String, args: js.Object): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def addQueryArgs(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")().asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: String, args: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def addQueryArgs(url: Unit, args: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryArgs")(url.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
 }

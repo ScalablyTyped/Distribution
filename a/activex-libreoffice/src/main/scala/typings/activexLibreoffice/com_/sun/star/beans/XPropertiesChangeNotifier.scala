@@ -5,21 +5,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a notifier for changed property values
   * @see XPropertiesChangeListener
   */
-@js.native
-trait XPropertiesChangeNotifier extends XInterface {
+trait XPropertiesChangeNotifier
+  extends StObject
+     with XInterface {
   
   /** adds an {@link XPropertiesChangeListener} to the specified properties with the specified names. */
-  def addPropertiesChangeListener(PropertyNames: SeqEquiv[String], Listener: XPropertiesChangeListener): Unit = js.native
+  def addPropertiesChangeListener(PropertyNames: SeqEquiv[String], Listener: XPropertiesChangeListener): Unit
   
   /** removes an {@link XPropertiesChangeListener} from the listener list. */
-  def removePropertiesChangeListener(PropertyNames: SeqEquiv[String], Listener: XPropertiesChangeListener): Unit = js.native
+  def removePropertiesChangeListener(PropertyNames: SeqEquiv[String], Listener: XPropertiesChangeListener): Unit
 }
 object XPropertiesChangeNotifier {
   

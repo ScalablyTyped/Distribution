@@ -24,7 +24,6 @@ import typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.Sem
 import typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokensRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Proposed {
@@ -87,28 +86,28 @@ object Proposed {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
-        typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers with String
+        typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers & String
       ] = js.native
     
-    /* "abstract" */ val `abstract`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.`abstract` with String = js.native
+    /* "abstract" */ val `abstract`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.`abstract` & String = js.native
     
-    /* "async" */ val async: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.async with String = js.native
+    /* "async" */ val async: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.async & String = js.native
     
-    /* "declaration" */ val declaration: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.declaration with String = js.native
+    /* "declaration" */ val declaration: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.declaration & String = js.native
     
-    /* "definition" */ val definition: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.definition with String = js.native
+    /* "definition" */ val definition: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.definition & String = js.native
     
-    /* "deprecated" */ val deprecated: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.deprecated with String = js.native
+    /* "deprecated" */ val deprecated: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.deprecated & String = js.native
     
-    /* "documentation" */ val documentation: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.documentation with String = js.native
+    /* "documentation" */ val documentation: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.documentation & String = js.native
     
-    /* "readonly" */ val readonly: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.readonly with String = js.native
+    /* "readonly" */ val readonly: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.readonly & String = js.native
     
-    /* "reference" */ val reference: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.reference with String = js.native
+    /* "reference" */ val reference: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.reference & String = js.native
     
-    /* "static" */ val static: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.static with String = js.native
+    /* "static" */ val static: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.static & String = js.native
     
-    /* "volatile" */ val volatile: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.volatile with String = js.native
+    /* "volatile" */ val volatile: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenModifiers.volatile & String = js.native
   }
   
   /* was `typeof st.SemanticTokenTypes` */
@@ -118,56 +117,59 @@ object Proposed {
     
     @JSBracketAccess
     def apply(value: String): js.UndefOr[
-        typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes with String
+        typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes & String
       ] = js.native
     
-    /* "class" */ val `class`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`class` with String = js.native
+    /* "class" */ val `class`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`class` & String = js.native
     
-    /* "comment" */ val comment: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.comment with String = js.native
+    /* "comment" */ val comment: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.comment & String = js.native
     
-    /* "enum" */ val enum: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.enum with String = js.native
+    /* "enum" */ val `enum`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`enum` & String = js.native
     
-    /* "function" */ val function: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.function with String = js.native
+    /* "function" */ val function: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.function & String = js.native
     
-    /* "interface" */ val interface: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.interface with String = js.native
+    /* "interface" */ val interface: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.interface & String = js.native
     
-    /* "keyword" */ val keyword: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.keyword with String = js.native
+    /* "keyword" */ val keyword: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.keyword & String = js.native
     
-    /* "label" */ val label: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.label with String = js.native
+    /* "label" */ val label: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.label & String = js.native
     
-    /* "macro" */ val `macro`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`macro` with String = js.native
+    /* "macro" */ val `macro`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`macro` & String = js.native
     
-    /* "member" */ val member: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.member with String = js.native
+    /* "member" */ val member: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.member & String = js.native
     
-    /* "namespace" */ val namespace: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.namespace with String = js.native
+    /* "namespace" */ val namespace: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.namespace & String = js.native
     
-    /* "number" */ val number: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.number with String = js.native
+    /* "number" */ val number: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.number & String = js.native
     
-    /* "operator" */ val operator: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.operator with String = js.native
+    /* "operator" */ val operator: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.operator & String = js.native
     
-    /* "parameter" */ val parameter: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.parameter with String = js.native
+    /* "parameter" */ val parameter: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.parameter & String = js.native
     
-    /* "property" */ val property: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.property with String = js.native
+    /* "property" */ val property: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.property & String = js.native
     
-    /* "regexp" */ val regexp: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.regexp with String = js.native
+    /* "regexp" */ val regexp: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.regexp & String = js.native
     
-    /* "string" */ val string: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.string with String = js.native
+    /* "string" */ val string: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.string & String = js.native
     
-    /* "struct" */ val struct: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.struct with String = js.native
+    /* "struct" */ val struct: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.struct & String = js.native
     
-    /* "type" */ val `type`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`type` with String = js.native
+    /* "type" */ val `type`: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.`type` & String = js.native
     
-    /* "typeParameter" */ val typeParameter: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.typeParameter with String = js.native
+    /* "typeParameter" */ val typeParameter: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.typeParameter & String = js.native
     
-    /* "variable" */ val variable: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.variable with String = js.native
+    /* "variable" */ val variable: typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod.SemanticTokenTypes.variable & String = js.native
   }
   
   /* was `typeof st.SemanticTokens` */
   object SemanticTokens {
     
-    @JSImport("vscode-languageclient", "Proposed.SemanticTokens.is")
+    @JSImport("vscode-languageclient", "Proposed.SemanticTokens")
     @js.native
-    def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def is(value: js.Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/protocol.sematicTokens.proposed.SemanticTokens */ Boolean]
   }
   
   object SemanticTokensEditsRequest {

@@ -2,19 +2,17 @@ package typings.remarkable.libMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserInline extends StObject {
   
-  def parse(str: String, options: Options, env: Env, tokens: js.Array[Token]): Unit = js.native
+  def parse(str: String, options: Options, env: Env, tokens: js.Array[Token]): Unit
   
-  def skipToken(state: StateInline): Unit = js.native
+  def skipToken(state: StateInline): Unit
   
-  def tokenize(state: StateInline): Unit = js.native
+  def tokenize(state: StateInline): Unit
   
-  def validateLink(url: String): Boolean = js.native
+  def validateLink(url: String): Boolean
 }
 object ParserInline {
   

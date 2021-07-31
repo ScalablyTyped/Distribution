@@ -3,31 +3,29 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Bulk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReindexResponseBase extends StObject {
   
-  var batches: Double = js.native
+  var batches: Double
   
-  var deleted: Double = js.native
+  var deleted: Double
   
-  var noops: Double = js.native
+  var noops: Double
   
-  var requests_per_second: Double = js.native
+  var requests_per_second: Double
   
-  var retries: Bulk = js.native
+  var retries: Bulk
   
-  var throttled_millis: Double = js.native
+  var throttled_millis: Double
   
-  var throttled_until_millis: Double = js.native
+  var throttled_until_millis: Double
   
-  var total: Double = js.native
+  var total: Double
   
-  var updated: Double = js.native
+  var updated: Double
   
-  var version_conflicts: Double = js.native
+  var version_conflicts: Double
 }
 object ReindexResponseBase {
   

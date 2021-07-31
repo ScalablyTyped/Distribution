@@ -3,7 +3,6 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaLite.srcDataMod.SphereGenerator
   - typings.vegaLite.srcDataMod.GraticuleGenerator
 */
-trait Generator extends Data
+trait Generator
+  extends StObject
+     with Data
 object Generator {
   
   @scala.inline

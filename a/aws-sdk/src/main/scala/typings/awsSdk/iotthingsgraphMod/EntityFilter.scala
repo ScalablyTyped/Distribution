@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityFilter extends StObject {
   
   /**
     * The name of the entity search filter field. REFERENCED_ENTITY_ID filters on entities that are used by the entity in the result set. For example, you can filter on the ID of a property that is used in a state.
     */
-  var name: js.UndefOr[EntityFilterName] = js.native
+  var name: js.UndefOr[EntityFilterName] = js.undefined
   
   /**
     * An array of string values for the search filter field. Multiple values function as AND criteria in the search.
     */
-  var value: js.UndefOr[EntityFilterValues] = js.native
+  var value: js.UndefOr[EntityFilterValues] = js.undefined
 }
 object EntityFilter {
   

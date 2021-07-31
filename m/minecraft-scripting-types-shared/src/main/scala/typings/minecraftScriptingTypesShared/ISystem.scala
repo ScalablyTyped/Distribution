@@ -2,11 +2,12 @@ package typings.minecraftScriptingTypesShared
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISystem[TSystem] extends ISystemBase {
+trait ISystem[TSystem]
+  extends StObject
+     with ISystemBase {
   
   /**
     * This is the first method that gets called immediately after the system is registered. It will run as soon as the script loads at world start.

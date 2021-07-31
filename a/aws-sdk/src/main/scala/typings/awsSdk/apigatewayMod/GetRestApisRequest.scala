@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRestApisRequest extends StObject {
   
   /**
     * The maximum number of returned results per page. The default value is 25 and the maximum value is 500.
     */
-  var limit: js.UndefOr[NullableInteger] = js.native
+  var limit: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The current pagination position in the paged result set.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
 }
 object GetRestApisRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVPCEConfigurationRequest extends StObject {
   
   /**
     * The DNS name of the service running in your VPC that you want Device Farm to test.
     */
-  var serviceDnsName: ServiceDnsName = js.native
+  var serviceDnsName: ServiceDnsName
   
   /**
     * An optional description that provides details about your VPC endpoint configuration.
     */
-  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.native
+  var vpceConfigurationDescription: js.UndefOr[VPCEConfigurationDescription] = js.undefined
   
   /**
     * The friendly name you give to your VPC endpoint configuration, to manage your configurations more easily.
     */
-  var vpceConfigurationName: VPCEConfigurationName = js.native
+  var vpceConfigurationName: VPCEConfigurationName
   
   /**
     * The name of the VPC endpoint service running in your AWS account that you want Device Farm to test.
     */
-  var vpceServiceName: VPCEServiceName = js.native
+  var vpceServiceName: VPCEServiceName
 }
 object CreateVPCEConfigurationRequest {
   

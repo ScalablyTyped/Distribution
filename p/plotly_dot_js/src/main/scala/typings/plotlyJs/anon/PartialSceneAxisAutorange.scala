@@ -56,132 +56,130 @@ import typings.plotlyJs.plotlyJsStrings.trace
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.SceneAxis> */
-@js.native
 trait PartialSceneAxisAutorange extends StObject {
   
-  var autorange: js.UndefOr[`true` | `false` | reversed] = js.native
+  var autorange: js.UndefOr[`true` | `false` | reversed] = js.undefined
   
-  var backgroundcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var backgroundcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var calendar: js.UndefOr[Calendar] = js.native
+  var calendar: js.UndefOr[Calendar] = js.undefined
   
-  var categoryarray: js.UndefOr[js.Array[_]] = js.native
+  var categoryarray: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   var categoryorder: js.UndefOr[
     trace | (`category ascending`) | (`category descending`) | array | (`total ascending`) | (`total descending`) | (`min ascending`) | (`min descending`) | (`max ascending`) | (`max descending`) | (`sum ascending`) | (`sum descending`) | (`mean ascending`) | (`mean descending`) | (`median ascending`) | (`median descending`)
-  ] = js.native
+  ] = js.undefined
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var dividercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var dividercolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var dividerwidth: js.UndefOr[Double] = js.native
+  var dividerwidth: js.UndefOr[Double] = js.undefined
   
-  var dtick: js.UndefOr[DTickValue] = js.native
+  var dtick: js.UndefOr[DTickValue] = js.undefined
   
-  var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.native
+  var exponentformat: js.UndefOr[none | e_ | E | power | SI | B] = js.undefined
   
-  var fixedrange: js.UndefOr[Boolean] = js.native
+  var fixedrange: js.UndefOr[Boolean] = js.undefined
   
-  var gridcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var gridcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var gridwidth: js.UndefOr[Double] = js.native
+  var gridwidth: js.UndefOr[Double] = js.undefined
   
-  var hoverformat: js.UndefOr[String] = js.native
+  var hoverformat: js.UndefOr[String] = js.undefined
   
-  var linecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var linecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var linewidth: js.UndefOr[Double] = js.native
+  var linewidth: js.UndefOr[Double] = js.undefined
   
-  var mirror: js.UndefOr[`true` | ticks | `false` | all | allticks] = js.native
+  var mirror: js.UndefOr[`true` | ticks | `false` | all | allticks] = js.undefined
   
-  var nticks: js.UndefOr[Double] = js.native
+  var nticks: js.UndefOr[Double] = js.undefined
   
-  var range: js.UndefOr[js.Array[_]] = js.native
+  var range: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var rangemode: js.UndefOr[normal | tozero | nonnegative] = js.native
+  var rangemode: js.UndefOr[normal | tozero | nonnegative] = js.undefined
   
-  var separatethousands: js.UndefOr[Boolean] = js.native
+  var separatethousands: js.UndefOr[Boolean] = js.undefined
   
-  var showaxeslabels: js.UndefOr[Boolean] = js.native
+  var showaxeslabels: js.UndefOr[Boolean] = js.undefined
   
-  var showbackground: js.UndefOr[Boolean] = js.native
+  var showbackground: js.UndefOr[Boolean] = js.undefined
   
-  var showdividers: js.UndefOr[Boolean] = js.native
+  var showdividers: js.UndefOr[Boolean] = js.undefined
   
-  var showexponent: js.UndefOr[all | first | last | none] = js.native
+  var showexponent: js.UndefOr[all | first | last | none] = js.undefined
   
-  var showgrid: js.UndefOr[Boolean] = js.native
+  var showgrid: js.UndefOr[Boolean] = js.undefined
   
-  var showline: js.UndefOr[Boolean] = js.native
+  var showline: js.UndefOr[Boolean] = js.undefined
   
-  var showspikes: js.UndefOr[Boolean] = js.native
+  var showspikes: js.UndefOr[Boolean] = js.undefined
   
-  var showticklabels: js.UndefOr[Boolean] = js.native
+  var showticklabels: js.UndefOr[Boolean] = js.undefined
   
-  var showtickprefix: js.UndefOr[all | first | last | none] = js.native
+  var showtickprefix: js.UndefOr[all | first | last | none] = js.undefined
   
-  var showticksuffix: js.UndefOr[all | first | last | none] = js.native
+  var showticksuffix: js.UndefOr[all | first | last | none] = js.undefined
   
-  var spikecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var spikecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var spikedash: js.UndefOr[String] = js.native
+  var spikedash: js.UndefOr[String] = js.undefined
   
   var spikemode: js.UndefOr[
     toaxis | across | marker | toaxisPlussignacross | toaxisPlussignacrossPlussignmarker | acrossPlussignmarker | toaxisPlussignmarker
-  ] = js.native
+  ] = js.undefined
   
-  var spikesides: js.UndefOr[Boolean] = js.native
+  var spikesides: js.UndefOr[Boolean] = js.undefined
   
-  var spikesnap: js.UndefOr[data | cursor | (`hovered data`)] = js.native
+  var spikesnap: js.UndefOr[data | cursor | (`hovered data`)] = js.undefined
   
-  var spikethickness: js.UndefOr[Double] = js.native
+  var spikethickness: js.UndefOr[Double] = js.undefined
   
-  var tick0: js.UndefOr[Double | String] = js.native
+  var tick0: js.UndefOr[Double | String] = js.undefined
   
-  var tickangle: js.UndefOr[Double] = js.native
+  var tickangle: js.UndefOr[Double] = js.undefined
   
-  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var tickcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var tickfont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var tickfont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
-  var tickformat: js.UndefOr[String] = js.native
+  var tickformat: js.UndefOr[String] = js.undefined
   
-  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.native
+  var tickformatstops: js.UndefOr[js.Array[Partial[TickFormatStop]]] = js.undefined
   
-  var ticklen: js.UndefOr[Double] = js.native
+  var ticklen: js.UndefOr[Double] = js.undefined
   
-  var tickmode: js.UndefOr[auto | linear | array] = js.native
+  var tickmode: js.UndefOr[auto | linear | array] = js.undefined
   
-  var tickprefix: js.UndefOr[String] = js.native
+  var tickprefix: js.UndefOr[String] = js.undefined
   
-  var ticks: js.UndefOr[outside | inside | _empty] = js.native
+  var ticks: js.UndefOr[outside | inside | _empty] = js.undefined
   
-  var ticksuffix: js.UndefOr[String] = js.native
+  var ticksuffix: js.UndefOr[String] = js.undefined
   
-  var ticktext: js.UndefOr[js.Array[String]] = js.native
+  var ticktext: js.UndefOr[js.Array[String]] = js.undefined
   
-  var tickvals: js.UndefOr[js.Array[_]] = js.native
+  var tickvals: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var tickwidth: js.UndefOr[Double] = js.native
+  var tickwidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String | Partial[DataTitle]] = js.native
+  var title: js.UndefOr[String | Partial[DataTitle]] = js.undefined
   
-  var titlefont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var titlefont: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
-  var `type`: js.UndefOr[AxisType] = js.native
+  var `type`: js.UndefOr[AxisType] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var zeroline: js.UndefOr[Boolean] = js.native
+  var zeroline: js.UndefOr[Boolean] = js.undefined
   
-  var zerolinecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var zerolinecolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var zerolinewidth: js.UndefOr[Double] = js.native
+  var zerolinewidth: js.UndefOr[Double] = js.undefined
 }
 object PartialSceneAxisAutorange {
   
@@ -216,7 +214,7 @@ object PartialSceneAxisAutorange {
     def setCalendarUndefined: Self = StObject.set(x, "calendar", js.undefined)
     
     @scala.inline
-    def setCategoryarray(value: js.Array[_]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
+    def setCategoryarray(value: js.Array[js.Any]): Self = StObject.set(x, "categoryarray", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCategoryarrayUndefined: Self = StObject.set(x, "categoryarray", js.undefined)
@@ -323,7 +321,7 @@ object PartialSceneAxisAutorange {
     def setNticksUndefined: Self = StObject.set(x, "nticks", js.undefined)
     
     @scala.inline
-    def setRange(value: js.Array[_]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
+    def setRange(value: js.Array[js.Any]): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRangeUndefined: Self = StObject.set(x, "range", js.undefined)
@@ -526,7 +524,7 @@ object PartialSceneAxisAutorange {
     def setTicktextVarargs(value: String*): Self = StObject.set(x, "ticktext", js.Array(value :_*))
     
     @scala.inline
-    def setTickvals(value: js.Array[_]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
+    def setTickvals(value: js.Array[js.Any]): Self = StObject.set(x, "tickvals", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTickvalsUndefined: Self = StObject.set(x, "tickvals", js.undefined)

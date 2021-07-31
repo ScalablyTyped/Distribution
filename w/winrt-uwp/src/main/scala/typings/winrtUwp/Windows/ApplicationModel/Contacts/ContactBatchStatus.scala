@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ContactBatchStatus extends StObject {
   
   /** There was a server error. */
   @js.native
-  sealed trait serverSearchSyncManagerError extends ContactBatchStatus
+  sealed trait serverSearchSyncManagerError
+    extends StObject
+       with ContactBatchStatus
   
   /** There was an unknown error. */
   @js.native
-  sealed trait serverSearchUnknownError extends ContactBatchStatus
+  sealed trait serverSearchUnknownError
+    extends StObject
+       with ContactBatchStatus
   
   /** Success */
   @js.native
-  sealed trait success extends ContactBatchStatus
+  sealed trait success
+    extends StObject
+       with ContactBatchStatus
 }

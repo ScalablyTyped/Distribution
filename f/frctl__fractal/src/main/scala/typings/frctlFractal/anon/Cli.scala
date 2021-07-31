@@ -2,15 +2,13 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cli extends StObject {
   
-  var cli: String = js.native
+  var cli: String
   
-  var local: String = js.native
+  var local: String
 }
 object Cli {
   

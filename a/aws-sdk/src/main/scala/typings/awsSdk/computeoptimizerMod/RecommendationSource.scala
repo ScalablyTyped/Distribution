@@ -2,21 +2,19 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendationSource extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the recommendation source.
     */
-  var recommendationSourceArn: js.UndefOr[RecommendationSourceArn] = js.native
+  var recommendationSourceArn: js.UndefOr[RecommendationSourceArn] = js.undefined
   
   /**
     * The resource type of the recommendation source.
     */
-  var recommendationSourceType: js.UndefOr[RecommendationSourceType] = js.native
+  var recommendationSourceType: js.UndefOr[RecommendationSourceType] = js.undefined
 }
 object RecommendationSource {
   

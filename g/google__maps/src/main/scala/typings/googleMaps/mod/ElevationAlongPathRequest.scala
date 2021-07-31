@@ -2,23 +2,21 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElevationAlongPathRequest extends StObject {
   
   /**
     * defines a path on the earth for which to return elevation data.
     * This parameter defines a set of two or more ordered {latitude,longitude} pairs defining a path along the surface of the earth.
     */
-  var path: js.Array[LatLng] | String = js.native
+  var path: js.Array[LatLng] | String
   
   /**
     * specifies the number of sample points along a path for which to return elevation data.
     * The samples parameter divides the given path into an ordered set of equidistant points along the path.
     */
-  var samples: Double = js.native
+  var samples: Double
 }
 object ElevationAlongPathRequest {
   

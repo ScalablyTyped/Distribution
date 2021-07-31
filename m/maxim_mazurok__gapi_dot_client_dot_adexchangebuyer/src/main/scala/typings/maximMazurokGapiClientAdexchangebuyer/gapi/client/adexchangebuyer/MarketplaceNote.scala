@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarketplaceNote extends StObject {
   
   /** The role of the person (buyer/seller) creating the note. (readonly) */
-  var creatorRole: js.UndefOr[String] = js.native
+  var creatorRole: js.UndefOr[String] = js.undefined
   
   /** Notes can optionally be associated with a deal. (readonly, except on create) */
-  var dealId: js.UndefOr[String] = js.native
+  var dealId: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "adexchangebuyer#marketplaceNote". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The actual note to attach. (readonly, except on create) */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /** The unique id for the note. (readonly) */
-  var noteId: js.UndefOr[String] = js.native
+  var noteId: js.UndefOr[String] = js.undefined
   
   /** The proposalId that a note is attached to. (readonly) */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
   
   /** If the note is associated with a proposal revision number, then store that here. (readonly, except on create) */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
   
   /** The timestamp (ms since epoch) that this note was created. (readonly) */
-  var timestampMs: js.UndefOr[String] = js.native
+  var timestampMs: js.UndefOr[String] = js.undefined
 }
 object MarketplaceNote {
   

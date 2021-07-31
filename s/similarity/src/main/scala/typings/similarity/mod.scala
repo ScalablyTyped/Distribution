@@ -2,25 +2,25 @@ package typings.similarity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("similarity", JSImport.Namespace)
-  @js.native
-  def apply(left: String, right: String): Double = js.native
-  @JSImport("similarity", JSImport.Namespace)
-  @js.native
-  def apply(left: String, right: String, options: Options): Double = js.native
+  @scala.inline
+  def apply(left: String, right: String): Double = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def apply(left: String, right: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].apply(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @JSImport("similarity", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * treat casing differences as differences
       */
-    var sensitive: js.UndefOr[Boolean] = js.native
+    var sensitive: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

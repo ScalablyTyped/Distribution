@@ -2,17 +2,15 @@ package typings.jqueryLeanmodal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryLeanModalOption extends StObject {
   
-  var closeButton: js.UndefOr[String] = js.native
+  var closeButton: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[Double] = js.native
+  var overlay: js.UndefOr[Double] = js.undefined
   
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
 }
 object JQueryLeanModalOption {
   

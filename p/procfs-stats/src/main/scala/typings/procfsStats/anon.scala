@@ -2,15 +2,13 @@ package typings.procfsStats
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Discardedpackets extends StObject {
     
-    var `Discarded packets`: String = js.native
+    var `Discarded packets`: String
   }
   object Discardedpackets {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Missed extends StObject {
     
-    var Missed: String = js.native
+    var Missed: String
   }
   object Missed {
     
@@ -50,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Quality extends StObject {
     
-    var Quality: String = js.native
+    var Quality: String
   }
   object Quality {
     
@@ -71,12 +67,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Receive extends StObject {
     
-    var Receive: String = js.native
+    var Receive: String
     
-    var Transmit: String = js.native
+    var Transmit: String
   }
   object Receive {
     
@@ -97,10 +92,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ReceiveString extends StObject {
     
-    var Receive: String = js.native
+    var Receive: String
   }
   object ReceiveString {
     
@@ -118,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Transmit extends StObject {
     
-    var Transmit: String = js.native
+    var Transmit: String
   }
   object Transmit {
     

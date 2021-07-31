@@ -19,7 +19,6 @@ import typings.node.fsMod.Stats
 import typings.rimraf.rimrafStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -72,12 +71,12 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
+      options: Null,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: Null,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(

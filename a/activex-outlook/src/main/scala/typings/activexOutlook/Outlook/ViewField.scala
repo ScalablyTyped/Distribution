@@ -2,26 +2,24 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewField extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ColumnFormat: typings.activexOutlook.Outlook.ColumnFormat = js.native
+  val ColumnFormat: typings.activexOutlook.Outlook.ColumnFormat
   
   @JSName("Outlook.ViewField_typekey")
-  var OutlookDotViewField_typekey: ViewField = js.native
+  var OutlookDotViewField_typekey: ViewField
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val ViewXMLSchemaName: String = js.native
+  val ViewXMLSchemaName: String
 }
 object ViewField {
   

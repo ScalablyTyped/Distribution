@@ -3,24 +3,31 @@ package typings.ansiFragments
 import typings.ansiFragments.ifragmentMod.IFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod {
   
+  @JSImport("ansi-fragments/build/fragments/Color", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ansi-fragments/build/fragments/Color", "Color")
   @js.native
-  class Color_ protected () extends IFragment {
+  class Color_ protected ()
+    extends StObject
+       with IFragment {
     def this(ansiColor: AnsiColor, children: js.Array[String | IFragment]) = this()
+    
+    /* CompleteClass */
+    override def build(): String = js.native
     
     val children: js.Any = js.native
     
     val color: js.Any = js.native
   }
   
-  @JSImport("ansi-fragments/build/fragments/Color", "color")
-  @js.native
-  def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = js.native
+  @scala.inline
+  def color(ansiColor: AnsiColor, children: (String | IFragment)*): Color_ = (^.asInstanceOf[js.Dynamic].applyDynamic("color")(ansiColor.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[Color_]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ansiFragments.ansiFragmentsStrings.black

@@ -2,26 +2,24 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetReceiptRulePositionRequest extends StObject {
   
   /**
     * The name of the receipt rule after which to place the specified receipt rule.
     */
-  var After: js.UndefOr[ReceiptRuleName] = js.native
+  var After: js.UndefOr[ReceiptRuleName] = js.undefined
   
   /**
     * The name of the receipt rule to reposition.
     */
-  var RuleName: ReceiptRuleName = js.native
+  var RuleName: ReceiptRuleName
   
   /**
     * The name of the receipt rule set that contains the receipt rule to reposition.
     */
-  var RuleSetName: ReceiptRuleSetName = js.native
+  var RuleSetName: ReceiptRuleSetName
 }
 object SetReceiptRulePositionRequest {
   

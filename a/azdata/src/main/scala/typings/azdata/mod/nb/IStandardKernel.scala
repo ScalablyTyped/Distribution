@@ -2,17 +2,15 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStandardKernel extends StObject {
   
-  val connectionProviderIds: js.Array[String] = js.native
+  val connectionProviderIds: js.Array[String]
   
-  val displayName: String = js.native
+  val displayName: String
   
-  val name: String = js.native
+  val name: String
 }
 object IStandardKernel {
   

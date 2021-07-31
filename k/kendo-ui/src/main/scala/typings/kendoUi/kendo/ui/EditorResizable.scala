@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorResizable extends StObject {
   
-  var content: js.UndefOr[Boolean] = js.native
+  var content: js.UndefOr[Boolean] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var toolbar: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[Boolean] = js.undefined
 }
 object EditorResizable {
   

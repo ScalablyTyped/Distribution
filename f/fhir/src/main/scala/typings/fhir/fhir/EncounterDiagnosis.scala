@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The list of diagnosis relevant to this encounter
   */
-@js.native
-trait EncounterDiagnosis extends BackboneElement {
+trait EncounterDiagnosis
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'rank'.
     */
-  var _rank: js.UndefOr[Element] = js.native
+  var _rank: js.UndefOr[Element] = js.undefined
   
   /**
     * Reason the encounter takes place (resource)
     */
-  var condition: Reference = js.native
+  var condition: Reference
   
   /**
     * Ranking of the diagnosis (for each role type)
     */
-  var rank: js.UndefOr[positiveInt] = js.native
+  var rank: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Role that this diagnosis has within the encounter (e.g. admission, billing, discharge …)
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 object EncounterDiagnosis {
   

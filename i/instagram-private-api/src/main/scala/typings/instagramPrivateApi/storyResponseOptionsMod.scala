@@ -2,17 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storyResponseOptionsMod {
   
-  @js.native
-  trait StoryMusicQuestionResponse extends StoryResponseOptions {
+  trait StoryMusicQuestionResponse
+    extends StObject
+       with StoryResponseOptions {
     
-    var audio_asset_id: String = js.native
+    var audio_asset_id: String
     
-    var music_browse_session_id: js.UndefOr[String] = js.native
+    var music_browse_session_id: js.UndefOr[String] = js.undefined
   }
   object StoryMusicQuestionResponse {
     
@@ -36,12 +36,11 @@ object storyResponseOptionsMod {
     }
   }
   
-  @js.native
   trait StoryResponseOptions extends StObject {
     
-    var client_context: js.UndefOr[String] = js.native
+    var client_context: js.UndefOr[String] = js.undefined
     
-    var mutation_token: js.UndefOr[String] = js.native
+    var mutation_token: js.UndefOr[String] = js.undefined
   }
   object StoryResponseOptions {
     
@@ -68,10 +67,11 @@ object storyResponseOptionsMod {
     }
   }
   
-  @js.native
-  trait StoryTextQuestionResponse extends StoryResponseOptions {
+  trait StoryTextQuestionResponse
+    extends StObject
+       with StoryResponseOptions {
     
-    var response: String = js.native
+    var response: String
   }
   object StoryTextQuestionResponse {
     

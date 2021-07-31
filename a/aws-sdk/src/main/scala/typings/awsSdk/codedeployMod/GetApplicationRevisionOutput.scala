@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApplicationRevisionOutput extends StObject {
   
   /**
     * The name of the application that corresponds to the revision.
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.native
+  var applicationName: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * Additional information about the revision, including type and location.
     */
-  var revision: js.UndefOr[RevisionLocation] = js.native
+  var revision: js.UndefOr[RevisionLocation] = js.undefined
   
   /**
     * General information about the revision.
     */
-  var revisionInfo: js.UndefOr[GenericRevisionInfo] = js.native
+  var revisionInfo: js.UndefOr[GenericRevisionInfo] = js.undefined
 }
 object GetApplicationRevisionOutput {
   

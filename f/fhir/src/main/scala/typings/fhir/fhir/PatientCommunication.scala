@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Languages which may be used to communicate with the patient about their health
   */
-@js.native
-trait PatientCommunication extends BackboneElement {
+trait PatientCommunication
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'preferred'.
     */
-  var _preferred: js.UndefOr[Element] = js.native
+  var _preferred: js.UndefOr[Element] = js.undefined
   
   /**
     * The language which can be used to communicate with the patient about their health
     */
-  var language: CodeableConcept = js.native
+  var language: CodeableConcept
   
   /**
     * Language preference indicator
     */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
 }
 object PatientCommunication {
   

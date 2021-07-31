@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeNameAndValue extends StObject {
   
   /**
     * The attribute name of the typed link.
     */
-  var AttributeName: typings.awsSdk.clouddirectoryMod.AttributeName = js.native
+  var AttributeName: typings.awsSdk.clouddirectoryMod.AttributeName
   
   /**
     * The value for the typed link.
     */
-  var Value: TypedAttributeValue = js.native
+  var Value: TypedAttributeValue
 }
 object AttributeNameAndValue {
   

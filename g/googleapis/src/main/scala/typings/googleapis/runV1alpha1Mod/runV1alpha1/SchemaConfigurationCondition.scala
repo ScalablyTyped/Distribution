@@ -2,37 +2,35 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ConfigurationCondition defines a readiness condition for a Configuration.
   */
-@js.native
 trait SchemaConfigurationCondition extends StObject {
   
   /**
     * Last time the condition transitioned from one status to another.
     * +optional
     */
-  var lastTransitionTime: js.UndefOr[String] = js.native
+  var lastTransitionTime: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable message indicating details about last transition.
     * +optional
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * One-word CamelCase reason for the condition&#39;s last transition.
     * +optional
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * Status of the condition, one of True, False, Unknown.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * ConfigurationConditionType is used to communicate the status of the
@@ -40,7 +38,7 @@ trait SchemaConfigurationCondition extends StObject {
     * https://github.com/knative/serving/blob/master/docs/spec/errors.md#error-conditions-and-reporting
     * Types include:&quot;Ready&quot;
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaConfigurationCondition {
   

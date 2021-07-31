@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentFollowupIntentInfo extends StObject {
   
   /** The unique identifier of the followup intent. Format: `projects//agent/intents/`. */
-  var followupIntentName: js.UndefOr[String] = js.native
+  var followupIntentName: js.UndefOr[String] = js.undefined
   
   /** The unique identifier of the followup intent's parent. Format: `projects//agent/intents/`. */
-  var parentFollowupIntentName: js.UndefOr[String] = js.native
+  var parentFollowupIntentName: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentFollowupIntentInfo {
   

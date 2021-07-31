@@ -2,20 +2,18 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description of which voice to use for speech synthesis.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams extends StObject {
   
   /**
     * Optional. The name of the voice. If not set, the service will choose a
     * voice based on the other parameters such as language_code and gender.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The preferred gender of the voice. If not set, the service will
@@ -25,7 +23,7 @@ trait SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams extends StObject {
     * substitute a voice with a different gender rather than failing the
     * request.
     */
-  var ssmlGender: js.UndefOr[String] = js.native
+  var ssmlGender: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1VoiceSelectionParams {
   

@@ -14,7 +14,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollablePaneTypesMod {
@@ -48,14 +47,13 @@ object scrollablePaneTypesMod {
     def auto_=(x: auto): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("auto")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IScrollablePane extends StObject {
     
     /** Triggers a layout update for the pane. */
-    def forceLayoutUpdate(): Unit = js.native
+    def forceLayoutUpdate(): Unit
     
     /** Gets the current scroll position of the scrollable pane */
-    def getScrollPosition(): Double = js.native
+    def getScrollPosition(): Double
   }
   object IScrollablePane {
     
@@ -76,10 +74,9 @@ object scrollablePaneTypesMod {
     }
   }
   
-  @js.native
   trait IScrollablePaneContext extends StObject {
     
-    var scrollablePane: js.UndefOr[AddSticky] = js.native
+    var scrollablePane: js.UndefOr[AddSticky] = js.undefined
   }
   object IScrollablePaneContext {
     
@@ -100,31 +97,32 @@ object scrollablePaneTypesMod {
     }
   }
   
-  @js.native
-  trait IScrollablePaneProps extends HTMLAttributes[HTMLElement | ScrollablePaneBase] {
+  trait IScrollablePaneProps
+    extends StObject
+       with HTMLAttributes[HTMLElement | ScrollablePaneBase] {
     
     /**
       * Optional callback to access the IScrollablePane interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IScrollablePane]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IScrollablePane]] = js.undefined
     
     /**
       * Sets the initial scroll position of the ScrollablePane
       */
-    var initialScrollPosition: js.UndefOr[Double] = js.native
+    var initialScrollPosition: js.UndefOr[Double] = js.undefined
     
-    var scrollbarVisibility: js.UndefOr[ScrollbarVisibility] = js.native
+    var scrollbarVisibility: js.UndefOr[ScrollbarVisibility] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IScrollablePaneStyleProps, IScrollablePaneStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IScrollablePaneStyleProps, IScrollablePaneStyles]] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IScrollablePaneProps {
     
@@ -175,20 +173,19 @@ object scrollablePaneTypesMod {
     }
   }
   
-  @js.native
   trait IScrollablePaneStyleProps extends StObject {
     
     /**
       * Accept custom classNames
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var scrollbarVisibility: js.UndefOr[ScrollbarVisibility] = js.native
+    var scrollbarVisibility: js.UndefOr[ScrollbarVisibility] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IScrollablePaneStyleProps {
     
@@ -218,33 +215,32 @@ object scrollablePaneTypesMod {
     }
   }
   
-  @js.native
   trait IScrollablePaneStyles extends StObject {
     
     /**
       * Style set for the contentContainer element.
       */
-    var contentContainer: IStyle = js.native
+    var contentContainer: IStyle
     
     /**
       * Style set for the root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
     
     /**
       * Style set for the stickyAbove element.
       */
-    var stickyAbove: IStyle = js.native
+    var stickyAbove: IStyle
     
     /**
       * Style set for the stickyBelow element.
       */
-    var stickyBelow: IStyle = js.native
+    var stickyBelow: IStyle
     
     /**
       * Style set for the stickyBelowItems element.
       */
-    var stickyBelowItems: IStyle = js.native
+    var stickyBelowItems: IStyle
   }
   object IScrollablePaneStyles {
     

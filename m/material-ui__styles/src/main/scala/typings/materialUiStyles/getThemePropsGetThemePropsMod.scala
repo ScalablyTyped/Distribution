@@ -4,23 +4,24 @@ import org.scalablytyped.runtime.TopLevel
 import typings.materialUiStyles.anon.NameProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getThemePropsGetThemePropsMod {
   
-  @JSImport("@material-ui/styles/getThemeProps/getThemeProps", JSImport.Default)
+  @JSImport("@material-ui/styles/getThemeProps/getThemeProps", JSImport.Namespace)
   @js.native
-  def default[Theme /* <: ThemeWithProps[_] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props with (ThemedProps[Theme, Name]) = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[Theme /* <: ThemeWithProps[js.Any] */, Props, Name /* <: /* keyof any */ String */](params: NameProps[Props, Name, Theme]): Props & (ThemedProps[Theme, Name]) = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(params.asInstanceOf[js.Any]).asInstanceOf[Props & (ThemedProps[Theme, Name])]
+  
   trait ThemeWithProps[Components] extends StObject {
     
     var props: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Components ]: std.Partial<Components[K]>}
-      */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps with TopLevel[Components]
-      ] = js.native
+      */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps & TopLevel[Components]
+      ] = js.undefined
   }
   object ThemeWithProps {
     
@@ -31,13 +32,13 @@ object getThemePropsGetThemePropsMod {
     }
     
     @scala.inline
-    implicit class ThemeWithPropsMutableBuilder[Self <: ThemeWithProps[_], Components] (val x: Self with ThemeWithProps[Components]) extends AnyVal {
+    implicit class ThemeWithPropsMutableBuilder[Self <: ThemeWithProps[?], Components] (val x: Self & ThemeWithProps[Components]) extends AnyVal {
       
       @scala.inline
       def setProps(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof Components ]: std.Partial<Components[K]>}
-        */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps with TopLevel[Components]
+        */ typings.materialUiStyles.materialUiStylesStrings.ThemeWithProps & TopLevel[Components]
       ): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline

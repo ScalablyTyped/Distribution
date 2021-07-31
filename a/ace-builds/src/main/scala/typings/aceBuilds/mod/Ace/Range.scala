@@ -2,63 +2,61 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Range extends StObject {
   
-  def clipRows(firstRow: Double, lastRow: Double): Range = js.native
+  def clipRows(firstRow: Double, lastRow: Double): Range
   
-  def collapseRows(): Range = js.native
+  def collapseRows(): Range
   
-  def compare(row: Double, column: Double): Double = js.native
+  def compare(row: Double, column: Double): Double
   
-  def compareEnd(row: Double, column: Double): Double = js.native
+  def compareEnd(row: Double, column: Double): Double
   
-  def compareInside(row: Double, column: Double): Double = js.native
+  def compareInside(row: Double, column: Double): Double
   
-  def comparePoint(p: Point): Double = js.native
+  def comparePoint(p: Point): Double
   
-  def compareRange(range: Range): Double = js.native
+  def compareRange(range: Range): Double
   
-  def compareStart(row: Double, column: Double): Double = js.native
+  def compareStart(row: Double, column: Double): Double
   
-  def contains(row: Double, column: Double): Boolean = js.native
+  def contains(row: Double, column: Double): Boolean
   
-  def containsRange(range: Range): Boolean = js.native
+  def containsRange(range: Range): Boolean
   
-  var end: Point = js.native
+  var end: Point
   
-  def extend(row: Double, column: Double): Range = js.native
+  def extend(row: Double, column: Double): Range
   
-  def inside(row: Double, column: Double): Boolean = js.native
+  def inside(row: Double, column: Double): Boolean
   
-  def insideEnd(row: Double, column: Double): Boolean = js.native
+  def insideEnd(row: Double, column: Double): Boolean
   
-  def insideStart(row: Double, column: Double): Boolean = js.native
+  def insideStart(row: Double, column: Double): Boolean
   
-  def intersects(range: Range): Boolean = js.native
+  def intersects(range: Range): Boolean
   
-  def isEmpty(): Boolean = js.native
+  def isEmpty(): Boolean
   
-  def isEnd(row: Double, column: Double): Boolean = js.native
+  def isEnd(row: Double, column: Double): Boolean
   
-  def isEqual(range: Range): Boolean = js.native
+  def isEqual(range: Range): Boolean
   
-  def isMultiLine(): Boolean = js.native
+  def isMultiLine(): Boolean
   
-  def isStart(row: Double, column: Double): Boolean = js.native
+  def isStart(row: Double, column: Double): Boolean
   
-  def moveBy(row: Double, column: Double): Unit = js.native
+  def moveBy(row: Double, column: Double): Unit
   
-  def setEnd(row: Double, column: Double): Unit = js.native
+  def setEnd(row: Double, column: Double): Unit
   
-  def setStart(row: Double, column: Double): Unit = js.native
+  def setStart(row: Double, column: Double): Unit
   
-  var start: Point = js.native
+  var start: Point
   
-  def toScreenRange(session: EditSession): Range = js.native
+  def toScreenRange(session: EditSession): Range
 }
 object Range {
   

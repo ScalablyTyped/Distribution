@@ -5,10 +5,13 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/smithy-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/smithy-client", "Client")
   @js.native
@@ -29,9 +32,12 @@ object mod {
   /* static members */
   object LazyJsonString {
     
-    @JSImport("@aws-sdk/smithy-client", "LazyJsonString.fromObject")
+    @JSImport("@aws-sdk/smithy-client", "LazyJsonString")
     @js.native
-    def fromObject(`object`: js.Any): typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromObject(`object`: js.Any): typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.awsSdkSmithyClient.lazyJsonMod.LazyJsonString]
   }
   
   @JSImport("@aws-sdk/smithy-client", "SENSITIVE_STRING")
@@ -46,27 +52,23 @@ object mod {
   @JSImport("@aws-sdk/smithy-client", "StringWrapper")
   @js.native
   class StringWrapperCls protected ()
-    extends typings.std.String {
+    extends StObject
+       with typings.std.String {
     def this(arg: js.Any) = this()
   }
   
-  @JSImport("@aws-sdk/smithy-client", "dateToUtcString")
-  @js.native
-  def dateToUtcString(date: Date): String = js.native
+  @scala.inline
+  def dateToUtcString(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dateToUtcString")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@aws-sdk/smithy-client", "extendedEncodeURIComponent")
-  @js.native
-  def extendedEncodeURIComponent(str: String): String = js.native
+  @scala.inline
+  def extendedEncodeURIComponent(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extendedEncodeURIComponent")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@aws-sdk/smithy-client", "getArrayIfSingleItem")
-  @js.native
-  def getArrayIfSingleItem[T](mayBeArray: T): T | js.Array[T] = js.native
+  @scala.inline
+  def getArrayIfSingleItem[T](mayBeArray: T): T | js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayIfSingleItem")(mayBeArray.asInstanceOf[js.Any]).asInstanceOf[T | js.Array[T]]
   
-  @JSImport("@aws-sdk/smithy-client", "getValueFromTextNode")
-  @js.native
-  def getValueFromTextNode(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def getValueFromTextNode(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValueFromTextNode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@aws-sdk/smithy-client", "splitEvery")
-  @js.native
-  def splitEvery(value: String, delimiter: String, numDelimiters: Double): js.Array[String] = js.native
+  @scala.inline
+  def splitEvery(value: String, delimiter: String, numDelimiters: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("splitEvery")(value.asInstanceOf[js.Any], delimiter.asInstanceOf[js.Any], numDelimiters.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
 }

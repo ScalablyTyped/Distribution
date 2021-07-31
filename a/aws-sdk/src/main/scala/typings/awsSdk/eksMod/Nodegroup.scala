@@ -2,111 +2,109 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nodegroup extends StObject {
   
   /**
     * If the node group was deployed using a launch template with a custom AMI, then this is CUSTOM. For node groups that weren't deployed using a launch template, this is the AMI type that was specified in the node group configuration.
     */
-  var amiType: js.UndefOr[AMITypes] = js.native
+  var amiType: js.UndefOr[AMITypes] = js.undefined
   
   /**
     * The name of the cluster that the managed node group resides in.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * The Unix epoch timestamp in seconds for when the managed node group was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the node group wasn't deployed with a launch template, then this is the disk size in the node group configuration. If the node group was deployed with a launch template, then this is null.
     */
-  var diskSize: js.UndefOr[BoxedInteger] = js.native
+  var diskSize: js.UndefOr[BoxedInteger] = js.undefined
   
   /**
     * The health status of the node group. If there are issues with your node group's health, they are listed here.
     */
-  var health: js.UndefOr[NodegroupHealth] = js.native
+  var health: js.UndefOr[NodegroupHealth] = js.undefined
   
   /**
     * If the node group wasn't deployed with a launch template, then this is the instance type that is associated with the node group. If the node group was deployed with a launch template, then this is null.
     */
-  var instanceTypes: js.UndefOr[StringList] = js.native
+  var instanceTypes: js.UndefOr[StringList] = js.undefined
   
   /**
     * The Kubernetes labels applied to the nodes in the node group.  Only labels that are applied with the Amazon EKS API are shown here. There may be other Kubernetes labels applied to the nodes in this group. 
     */
-  var labels: js.UndefOr[labelsMap] = js.native
+  var labels: js.UndefOr[labelsMap] = js.undefined
   
   /**
     * If a launch template was used to create the node group, then this is the launch template that was used.
     */
-  var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.native
+  var launchTemplate: js.UndefOr[LaunchTemplateSpecification] = js.undefined
   
   /**
     * The Unix epoch timestamp in seconds for when the managed node group was last modified.
     */
-  var modifiedAt: js.UndefOr[Timestamp] = js.native
+  var modifiedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The IAM role associated with your node group. The Amazon EKS worker node kubelet daemon makes calls to AWS APIs on your behalf. Worker nodes receive permissions for these API calls through an IAM instance profile and associated policies.
     */
-  var nodeRole: js.UndefOr[String] = js.native
+  var nodeRole: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) associated with the managed node group.
     */
-  var nodegroupArn: js.UndefOr[String] = js.native
+  var nodegroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name associated with an Amazon EKS managed node group.
     */
-  var nodegroupName: js.UndefOr[String] = js.native
+  var nodegroupName: js.UndefOr[String] = js.undefined
   
   /**
     * If the node group was deployed using a launch template with a custom AMI, then this is the AMI ID that was specified in the launch template. For node groups that weren't deployed using a launch template, this is the version of the Amazon EKS-optimized AMI that the node group was deployed with.
     */
-  var releaseVersion: js.UndefOr[String] = js.native
+  var releaseVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If the node group wasn't deployed with a launch template, then this is the remote access configuration that is associated with the node group. If the node group was deployed with a launch template, then this is null.
     */
-  var remoteAccess: js.UndefOr[RemoteAccessConfig] = js.native
+  var remoteAccess: js.UndefOr[RemoteAccessConfig] = js.undefined
   
   /**
     * The resources associated with the node group, such as Auto Scaling groups and security groups for remote access.
     */
-  var resources: js.UndefOr[NodegroupResources] = js.native
+  var resources: js.UndefOr[NodegroupResources] = js.undefined
   
   /**
     * The scaling configuration details for the Auto Scaling group that is associated with your node group.
     */
-  var scalingConfig: js.UndefOr[NodegroupScalingConfig] = js.native
+  var scalingConfig: js.UndefOr[NodegroupScalingConfig] = js.undefined
   
   /**
     * The current status of the managed node group.
     */
-  var status: js.UndefOr[NodegroupStatus] = js.native
+  var status: js.UndefOr[NodegroupStatus] = js.undefined
   
   /**
     * The subnets that were specified for the Auto Scaling group that is associated with your node group.
     */
-  var subnets: js.UndefOr[StringList] = js.native
+  var subnets: js.UndefOr[StringList] = js.undefined
   
   /**
     * The metadata applied to the node group to assist with categorization and organization. Each tag consists of a key and an optional value, both of which you define. Node group tags do not propagate to any other resources associated with the node group, such as the Amazon EC2 instances or subnets. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The Kubernetes version of the managed node group.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object Nodegroup {
   

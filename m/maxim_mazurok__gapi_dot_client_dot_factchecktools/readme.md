@@ -10,9 +10,9 @@ TypeScript typings for Fact Check Tools API v1alpha1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.factchecktools |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 56 |
 | # dependents       | 1 |
-| # downloads        | 172 |
+| # downloads        | 3938 |
 | # stars            | 0 |
 
 ## Links

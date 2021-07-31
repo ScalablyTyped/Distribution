@@ -4,7 +4,6 @@ import typings.typescriptCollections.utilMod.ICompareFunction
 import typings.typescriptCollections.utilMod.ILoopFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heapMod {
@@ -54,30 +53,31 @@ object heapMod {
     * zero, or a positive integer as the first argument is less than, equal to,
     * or greater than the second.
     */
-  class default[T] () extends Heap[T] {
+  class default[T] ()
+    extends StObject
+       with Heap[T] {
     def this(compareFunction: ICompareFunction[T]) = this()
-  }
-  
-  @js.native
-  trait Heap[T] extends StObject {
     
     /**
       * Adds the given element into the heap.
       * @param {*} element the element.
       * @return true if the element was added or fals if it is undefined.
       */
-    def add(element: T): Boolean = js.native
+    /* CompleteClass */
+    override def add(element: T): Boolean = js.native
     
     /**
       * Removes all of the elements from this heap.
       */
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
     /**
       * Function used to compare elements.
       * @type {function(Object,Object):number}
       * @private
       */
+    /* CompleteClass */
     var compare: js.Any = js.native
     
     /**
@@ -86,13 +86,15 @@ object heapMod {
       * @return {boolean} true if this Heap contains the specified element, false
       * otherwise.
       */
-    def contains(element: T): Boolean = js.native
+    /* CompleteClass */
+    override def contains(element: T): Boolean = js.native
     
     /**
       * Array used to store the elements of the heap.
       * @type {Array.<Object>}
       * @private
       */
+    /* CompleteClass */
     var data: js.Any = js.native
     
     /**
@@ -102,14 +104,16 @@ object heapMod {
       * invoked with one argument: the element value, to break the iteration you can
       * optionally return false.
       */
-    def forEach(callback: ILoopFunction[T]): Unit = js.native
+    /* CompleteClass */
+    override def forEach(callback: ILoopFunction[T]): Unit = js.native
     
     /**
       * Checks if this heap is empty.
       * @return {boolean} true if and only if this heap contains no items; false
       * otherwise.
       */
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
     /**
       * Returns the index of the left child of the node at the given index.
@@ -118,7 +122,8 @@ object heapMod {
       * @return {number} The index of the left child.
       * @private
       */
-    /* private */ def leftChildIndex(nodeIndex: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def leftChildIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Returns the index of the smaller child node (if it exists).
@@ -128,7 +133,8 @@ object heapMod {
       * exists.
       * @private
       */
-    /* private */ def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any = js.native
     
     /**
       * Returns the index of the parent of the node at the given index.
@@ -136,21 +142,24 @@ object heapMod {
       * @return {number} The index of the parent.
       * @private
       */
-    /* private */ def parentIndex(nodeIndex: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def parentIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Retrieves but does not remove the root element of this heap.
       * @return {*} The value at the root of the heap. Returns undefined if the
       * heap is empty.
       */
-    def peek(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def peek(): js.UndefOr[T] = js.native
     
     /**
       * Retrieves and removes the root element of this heap.
       * @return {*} The value removed from the root of the heap. Returns
       * undefined if the heap is empty.
       */
-    def removeRoot(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def removeRoot(): js.UndefOr[T] = js.native
     
     /**
       * Returns the index of the right child of the node at the given index.
@@ -159,27 +168,154 @@ object heapMod {
       * @return {number} The index of the right child.
       * @private
       */
-    /* private */ def rightChildIndex(nodeIndex: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def rightChildIndex(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Moves the node at the given index down to its proper place in the heap.
       * @param {number} nodeIndex The index of the node to move down.
       * @private
       */
-    /* private */ def siftDown(nodeIndex: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def siftDown(nodeIndex: js.Any): js.Any = js.native
     
     /**
       * Moves the node at the given index up to its proper place in the heap.
       * @param {number} index The index of the node to move up.
       * @private
       */
-    /* private */ def siftUp(index: js.Any): js.Any = js.native
+    /* CompleteClass */
+    /* private */ override def siftUp(index: js.Any): js.Any = js.native
     
     /**
       * Returns the number of elements in this heap.
       * @return {number} the number of elements in this heap.
       */
-    def size(): Double = js.native
+    /* CompleteClass */
+    override def size(): Double = js.native
+  }
+  
+  trait Heap[T] extends StObject {
+    
+    /**
+      * Adds the given element into the heap.
+      * @param {*} element the element.
+      * @return true if the element was added or fals if it is undefined.
+      */
+    def add(element: T): Boolean
+    
+    /**
+      * Removes all of the elements from this heap.
+      */
+    def clear(): Unit
+    
+    /**
+      * Function used to compare elements.
+      * @type {function(Object,Object):number}
+      * @private
+      */
+    var compare: js.Any
+    
+    /**
+      * Returns true if this heap contains the specified element.
+      * @param {Object} element element to search for.
+      * @return {boolean} true if this Heap contains the specified element, false
+      * otherwise.
+      */
+    def contains(element: T): Boolean
+    
+    /**
+      * Array used to store the elements of the heap.
+      * @type {Array.<Object>}
+      * @private
+      */
+    var data: js.Any
+    
+    /**
+      * Executes the provided function once for each element present in this heap in
+      * no particular order.
+      * @param {function(Object):*} callback function to execute, it is
+      * invoked with one argument: the element value, to break the iteration you can
+      * optionally return false.
+      */
+    def forEach(callback: ILoopFunction[T]): Unit
+    
+    /**
+      * Checks if this heap is empty.
+      * @return {boolean} true if and only if this heap contains no items; false
+      * otherwise.
+      */
+    def isEmpty(): Boolean
+    
+    /**
+      * Returns the index of the left child of the node at the given index.
+      * @param {number} nodeIndex The index of the node to get the left child
+      * for.
+      * @return {number} The index of the left child.
+      * @private
+      */
+    /* private */ def leftChildIndex(nodeIndex: js.Any): js.Any
+    
+    /**
+      * Returns the index of the smaller child node (if it exists).
+      * @param {number} leftChild left child index.
+      * @param {number} rightChild right child index.
+      * @return {number} the index with the minimum value or -1 if it doesn't
+      * exists.
+      * @private
+      */
+    /* private */ def minIndex(leftChild: js.Any, rightChild: js.Any): js.Any
+    
+    /**
+      * Returns the index of the parent of the node at the given index.
+      * @param {number} nodeIndex The index of the node to get the parent for.
+      * @return {number} The index of the parent.
+      * @private
+      */
+    /* private */ def parentIndex(nodeIndex: js.Any): js.Any
+    
+    /**
+      * Retrieves but does not remove the root element of this heap.
+      * @return {*} The value at the root of the heap. Returns undefined if the
+      * heap is empty.
+      */
+    def peek(): js.UndefOr[T]
+    
+    /**
+      * Retrieves and removes the root element of this heap.
+      * @return {*} The value removed from the root of the heap. Returns
+      * undefined if the heap is empty.
+      */
+    def removeRoot(): js.UndefOr[T]
+    
+    /**
+      * Returns the index of the right child of the node at the given index.
+      * @param {number} nodeIndex The index of the node to get the right child
+      * for.
+      * @return {number} The index of the right child.
+      * @private
+      */
+    /* private */ def rightChildIndex(nodeIndex: js.Any): js.Any
+    
+    /**
+      * Moves the node at the given index down to its proper place in the heap.
+      * @param {number} nodeIndex The index of the node to move down.
+      * @private
+      */
+    /* private */ def siftDown(nodeIndex: js.Any): js.Any
+    
+    /**
+      * Moves the node at the given index up to its proper place in the heap.
+      * @param {number} index The index of the node to move up.
+      * @private
+      */
+    /* private */ def siftUp(index: js.Any): js.Any
+    
+    /**
+      * Returns the number of elements in this heap.
+      * @return {number} the number of elements in this heap.
+      */
+    def size(): Double
   }
   object Heap {
     
@@ -207,7 +343,7 @@ object heapMod {
     }
     
     @scala.inline
-    implicit class HeapMutableBuilder[Self <: Heap[_], T] (val x: Self with Heap[T]) extends AnyVal {
+    implicit class HeapMutableBuilder[Self <: Heap[?], T] (val x: Self & Heap[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))

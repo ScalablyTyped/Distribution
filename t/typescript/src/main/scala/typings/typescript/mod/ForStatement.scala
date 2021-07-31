@@ -2,12 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ForStatement
-  extends IterationStatement
+  extends StObject
+     with IterationStatement
      with HasInitializer {
   
   val condition: js.UndefOr[Expression] = js.native

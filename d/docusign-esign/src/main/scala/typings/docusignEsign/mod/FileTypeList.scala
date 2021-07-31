@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileTypeList extends StObject {
   
   /**
     * A collection of file types.
     */
-  var fileTypes: js.UndefOr[js.Array[FileType]] = js.native
+  var fileTypes: js.UndefOr[js.Array[FileType]] = js.undefined
 }
 object FileTypeList {
   

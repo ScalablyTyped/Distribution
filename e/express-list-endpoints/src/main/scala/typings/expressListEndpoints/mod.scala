@@ -3,21 +3,22 @@ package typings.expressListEndpoints
 import typings.express.mod.Express
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(app: Express): js.Array[Endpoint] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[js.Array[Endpoint]]
+  
   @JSImport("express-list-endpoints", JSImport.Namespace)
   @js.native
-  def apply(app: Express): js.Array[Endpoint] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Endpoint extends StObject {
     
-    var methods: js.Array[String] = js.native
+    var methods: js.Array[String]
     
-    var path: String = js.native
+    var path: String
   }
   object Endpoint {
     

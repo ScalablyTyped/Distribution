@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialCreationOptions extends StObject {
   
-  var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.native
+  var publicKey: js.UndefOr[PublicKeyCredentialCreationOptions] = js.undefined
   
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object CredentialCreationOptions {
   

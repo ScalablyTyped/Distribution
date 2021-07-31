@@ -3,21 +3,19 @@ package typings.meshblu.Meshblu
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
-  def authenticate(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def authenticate(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def bufferedSocketEmit(): Unit = js.native
+  def bufferedSocketEmit(): Unit
   
-  def claimdevice(data: Device, fn: js.Function1[/* result */ Device, Unit]): Connection = js.native
+  def claimdevice(data: Device, fn: js.Function1[/* result */ Device, Unit]): Connection
   
-  def close(fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def close(fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def connect(): Unit = js.native
+  def connect(): Unit
   
   /**
     * Send a meshblu data message.
@@ -25,7 +23,7 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def data(data: DataInput, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def data(data: DataInput, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Find a Meshblu device.
@@ -33,7 +31,7 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def device(data: Device, fn: js.Function1[/* result */ DeviceResponse, Unit]): Connection = js.native
+  def device(data: Device, fn: js.Function1[/* result */ DeviceResponse, Unit]): Connection
   
   /**
     * Find Meshblu devices.
@@ -41,9 +39,9 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def devices(data: Color, fn: js.Function1[/* result */ js.Array[DeviceResponse], Unit]): Connection = js.native
+  def devices(data: Color, fn: js.Function1[/* result */ js.Array[DeviceResponse], Unit]): Connection
   
-  def directText(data: js.Any): Connection = js.native
+  def directText(data: js.Any): Connection
   
   /**
     * @param uuid
@@ -58,18 +56,18 @@ trait Connection extends StObject {
     message: js.Any,
     options: ConnectionOptions,
     fn: js.Function1[/* result */ js.Any, Unit]
-  ): Connection = js.native
+  ): Connection
   
-  def events(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def events(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Generate a new session token for a device.
     * @param data
     * @param fn The callback to be called. It should take one parameter, result.
     */
-  def generateAndStoreToken(data: Device, fn: js.Function1[/* result */ ConnectionOptions, Unit]): Unit = js.native
+  def generateAndStoreToken(data: Device, fn: js.Function1[/* result */ ConnectionOptions, Unit]): Unit
   
-  def generateKeyPair(): KeyPair = js.native
+  def generateKeyPair(): KeyPair
   
   /**
     *
@@ -78,7 +76,7 @@ trait Connection extends StObject {
     *     which will be null if there was no problem, and one parameter, publicKey,
     *     of type NodeRSA.
     */
-  def getPublicKey(uuid: String, fn: js.Function2[/* err */ Error, /* publicKey */ js.Any, Unit]): Unit = js.native
+  def getPublicKey(uuid: String, fn: js.Function2[/* err */ Error, /* publicKey */ js.Any, Unit]): Unit
   
   /**
     * Get a meshblu data for a device.
@@ -86,15 +84,15 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def getdata(data: GetDataInput, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def getdata(data: GetDataInput, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Authenticate with Meshblu.
     * @returns This Connection.
     */
-  def identify(): Connection = js.native
+  def identify(): Connection
   
-  def localdevices(fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def localdevices(fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Send a meshblu message.
@@ -103,13 +101,13 @@ trait Connection extends StObject {
     *     which is an object containing a property "error".
     * @returns This Connection.
     */
-  def message(payload: MessagePayload, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def message(payload: MessagePayload, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def mydevices(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def mydevices(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def parseUrl(serverUrl: String, port: String): String = js.native
+  def parseUrl(serverUrl: String, port: String): String
   
-  def reconnect(): Unit = js.native
+  def reconnect(): Unit
   
   /**
     * Register a new device record.
@@ -117,32 +115,32 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def register(data: RegisterData, fn: js.Function1[/* result */ RegisterResponse, Unit]): Connection = js.native
+  def register(data: RegisterData, fn: js.Function1[/* result */ RegisterResponse, Unit]): Connection
   
-  def resetToken(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def resetToken(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Unit
   
   /**
     * Remove a session token from a device.
     * @param data
     * @param fn The callback to be called. It should take one parameter, result.
     */
-  def revokeToken(data: ConnectionOptions, fn: js.Function1[/* result */ Device, Unit]): Unit = js.native
+  def revokeToken(data: ConnectionOptions, fn: js.Function1[/* result */ Device, Unit]): Unit
   
   /*
     * Lack of documentation about these api functions.
     */
-  def send(text: String): Connection = js.native
+  def send(text: String): Connection
   
-  def setPrivateKey(privateKey: String): Unit = js.native
+  def setPrivateKey(privateKey: String): Unit
   
-  def setup(): Connection = js.native
+  def setup(): Connection
   
   /**
     * @param data {string|number|object|array|Buffer} - data for signing.
     */
-  def sign(data: js.Any): String = js.native
+  def sign(data: js.Any): String
   
-  def status(data: js.Any): Connection = js.native
+  def status(data: js.Any): Connection
   
   /**
     * Returns device messages as they are sent and received.
@@ -150,13 +148,13 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def subscribe(data: SubscribeData, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def subscribe(data: SubscribeData, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def subscribeText(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def subscribeText(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def textBroadcast(data: js.Any): Connection = js.native
+  def textBroadcast(data: js.Any): Connection
   
-  def unclaimeddevices(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def unclaimeddevices(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Removes a device record.
@@ -164,7 +162,7 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def unregister(data: Device, fn: js.Function1[/* result */ Device, Unit]): Connection = js.native
+  def unregister(data: Device, fn: js.Function1[/* result */ Device, Unit]): Connection
   
   /**
     * Cancels device subscription.
@@ -172,9 +170,9 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def unsubscribe(data: UnsubscribeData, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def unsubscribe(data: UnsubscribeData, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
-  def unsubscribeText(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection = js.native
+  def unsubscribeText(data: js.Any, fn: js.Function1[/* result */ js.Any, Unit]): Connection
   
   /**
     * Update a device record.
@@ -182,14 +180,14 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def update(data: UpdateData, fn: js.Function1[/* result */ UpdateSuccess, Unit]): Connection = js.native
+  def update(data: UpdateData, fn: js.Function1[/* result */ UpdateSuccess, Unit]): Connection
   
   /**
     * @param message {string|number|object|array|Buffer} - signed data.
     * @param signature
     * @returns {*}
     */
-  def verify(message: js.Any, signature: js.Any): js.Any = js.native
+  def verify(message: js.Any, signature: js.Any): js.Any
   
   /**
     * Get my device info.
@@ -197,7 +195,7 @@ trait Connection extends StObject {
     * @param fn The callback to be called. It should take one parameter, result.
     * @returns This Connection.
     */
-  def whoami(data: js.Any, fn: js.Function1[/* result */ DeviceResponse, Unit]): Connection = js.native
+  def whoami(data: js.Any, fn: js.Function1[/* result */ DeviceResponse, Unit]): Connection
 }
 object Connection {
   

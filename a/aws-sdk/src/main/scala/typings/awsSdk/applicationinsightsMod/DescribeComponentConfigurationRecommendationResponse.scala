@@ -2,16 +2,14 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComponentConfigurationRecommendationResponse extends StObject {
   
   /**
     * The recommended configuration settings of the component. The value is the escaped JSON of the configuration.
     */
-  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.native
+  var ComponentConfiguration: js.UndefOr[typings.awsSdk.applicationinsightsMod.ComponentConfiguration] = js.undefined
 }
 object DescribeComponentConfigurationRecommendationResponse {
   

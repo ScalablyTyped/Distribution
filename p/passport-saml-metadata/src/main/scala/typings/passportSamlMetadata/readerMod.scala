@@ -5,7 +5,6 @@ import typings.passportSamlMetadata.anon.CamelCase
 import typings.passportSamlMetadata.anon.PartialMetadataConstructo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readerMod {
@@ -33,12 +32,11 @@ object readerMod {
     def signingCerts: js.Array[String] = js.native
   }
   
-  @js.native
   trait MetadataConstructorOptions extends StObject {
     
-    var authnRequestBinding: String = js.native
+    var authnRequestBinding: String
     
-    var throwExceptions: Boolean = js.native
+    var throwExceptions: Boolean
   }
   object MetadataConstructorOptions {
     

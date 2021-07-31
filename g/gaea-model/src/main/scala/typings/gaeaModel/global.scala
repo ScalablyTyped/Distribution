@@ -2,7 +2,6 @@ package typings.gaeaModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -12,6 +11,7 @@ object global {
     @JSGlobal("FitGaea._")
     @js.native
     class _underscore ()
-      extends typings.gaeaModel.FitGaea._underscore
+      extends StObject
+         with typings.gaeaModel.FitGaea._underscore
   }
 }

@@ -6,16 +6,14 @@ import typings.uniApp.uniAppStrings.push
 import typings.uniApp.uniAppStrings.share
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProviderRes extends StObject {
   
   /**
     * 得到的服务供应商
     */
-  var provider: js.UndefOr[js.Array[_]] = js.native
+  var provider: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 服务类型
@@ -24,7 +22,7 @@ trait GetProviderRes extends StObject {
     * - payment: 支付
     * - push: 推送
     */
-  var service: js.UndefOr[oauth | share | payment | push] = js.native
+  var service: js.UndefOr[oauth | share | payment | push] = js.undefined
 }
 object GetProviderRes {
   
@@ -38,7 +36,7 @@ object GetProviderRes {
   implicit class GetProviderResMutableBuilder[Self <: GetProviderRes] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setProvider(value: js.Array[_]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
+    def setProvider(value: js.Array[js.Any]): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProviderUndefined: Self = StObject.set(x, "provider", js.undefined)

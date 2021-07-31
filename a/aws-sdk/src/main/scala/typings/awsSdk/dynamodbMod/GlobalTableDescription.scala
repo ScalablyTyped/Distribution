@@ -2,36 +2,34 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalTableDescription extends StObject {
   
   /**
     * The creation time of the global table.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The unique identifier of the global table.
     */
-  var GlobalTableArn: js.UndefOr[GlobalTableArnString] = js.native
+  var GlobalTableArn: js.UndefOr[GlobalTableArnString] = js.undefined
   
   /**
     * The global table name.
     */
-  var GlobalTableName: js.UndefOr[TableName] = js.native
+  var GlobalTableName: js.UndefOr[TableName] = js.undefined
   
   /**
     * The current state of the global table:    CREATING - The global table is being created.    UPDATING - The global table is being updated.    DELETING - The global table is being deleted.    ACTIVE - The global table is ready for use.  
     */
-  var GlobalTableStatus: js.UndefOr[typings.awsSdk.dynamodbMod.GlobalTableStatus] = js.native
+  var GlobalTableStatus: js.UndefOr[typings.awsSdk.dynamodbMod.GlobalTableStatus] = js.undefined
   
   /**
     * The Regions where the global table has replicas.
     */
-  var ReplicationGroup: js.UndefOr[ReplicaDescriptionList] = js.native
+  var ReplicationGroup: js.UndefOr[ReplicaDescriptionList] = js.undefined
 }
 object GlobalTableDescription {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The administrator who created the channel.
     */
-  var CreatedBy: js.UndefOr[Identity] = js.native
+  var CreatedBy: js.UndefOr[Identity] = js.undefined
   
   /**
     * The time at which the administrator created the channel.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which a member sent the last message in a session.
     */
-  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastMessageTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The time at which a channel was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The metadata of the channel.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The mode of the channel.
     */
-  var Mode: js.UndefOr[ChannelMode] = js.native
+  var Mode: js.UndefOr[ChannelMode] = js.undefined
   
   /**
     * The name of the channel.
     */
-  var Name: js.UndefOr[NonEmptyResourceName] = js.native
+  var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
   
   /**
     * The channel's privacy setting, PUBLIC or HIDDEN.
     */
-  var Privacy: js.UndefOr[ChannelPrivacy] = js.native
+  var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
 }
 object Channel {
   

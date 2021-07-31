@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationPosition extends StObject {
   
-  val coords: GeolocationCoordinates = js.native
+  val coords: GeolocationCoordinates
   
-  val timestamp: Double = js.native
+  val timestamp: Double
 }
 object GeolocationPosition {
   

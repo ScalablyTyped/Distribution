@@ -2,29 +2,27 @@ package typings.spotifyWebApiJs.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Context Object
   * [](https://developer.spotify.com/web-api/object-model/#context-object)
   */
-@js.native
 trait ContextObject extends StObject {
   
-  var external_urls: ExternalUrlObject | Null = js.native
+  var external_urls: ExternalUrlObject | Null
   
-  var href: String | Null = js.native
+  var href: String | Null
   
-  var `type`: ContextObjectType = js.native
+  var `type`: ContextObjectType
   
-  var uri: String = js.native
+  var uri: String
 }
 object ContextObject {
   
   @scala.inline
   def apply(`type`: ContextObjectType, uri: String): ContextObject = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], external_urls = null, href = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ContextObject]
   }

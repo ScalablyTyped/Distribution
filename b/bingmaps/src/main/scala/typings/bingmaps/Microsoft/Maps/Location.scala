@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /** The location north or south of the equator from +90 to -90 */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /** The location east or west of the prime meridian +180 to -180 */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object Location {
   

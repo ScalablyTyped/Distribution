@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongRunningRecognizeResponse extends StObject {
   
   /** Sequential list of transcription results corresponding to sequential portions of audio. */
-  var results: js.UndefOr[js.Array[SpeechRecognitionResult]] = js.native
+  var results: js.UndefOr[js.Array[SpeechRecognitionResult]] = js.undefined
 }
 object LongRunningRecognizeResponse {
   

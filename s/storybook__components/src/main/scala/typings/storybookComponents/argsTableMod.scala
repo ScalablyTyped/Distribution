@@ -12,10 +12,13 @@ import typings.storybookComponents.tabbedArgsTableMod.TabbedArgsTableProps
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argsTableMod {
+  
+  @JSImport("@storybook/components/dist/blocks/ArgsTable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components/dist/blocks/ArgsTable", "ArgsTable")
   @js.native
@@ -26,16 +29,15 @@ object argsTableMod {
   object ArgsTableError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError & String] = js.native
     
-    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED with String = js.native
+    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED & String = js.native
     
-    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT with String = js.native
+    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT & String = js.native
   }
   
-  @JSImport("@storybook/components/dist/blocks/ArgsTable", "NoControlsWarning")
-  @js.native
-  def NoControlsWarning(): Element = js.native
+  @scala.inline
+  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   @JSImport("@storybook/components/dist/blocks/ArgsTable", "TabbedArgsTable")
   @js.native

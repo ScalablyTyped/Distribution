@@ -2,15 +2,13 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handled[T] extends StObject {
   
-  var handled: Boolean = js.native
+  var handled: Boolean
   
-  var result: T = js.native
+  var result: T
 }
 object Handled {
   
@@ -21,7 +19,7 @@ object Handled {
   }
   
   @scala.inline
-  implicit class HandledMutableBuilder[Self <: Handled[_], T] (val x: Self with Handled[T]) extends AnyVal {
+  implicit class HandledMutableBuilder[Self <: Handled[?], T] (val x: Self & Handled[T]) extends AnyVal {
     
     @scala.inline
     def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])

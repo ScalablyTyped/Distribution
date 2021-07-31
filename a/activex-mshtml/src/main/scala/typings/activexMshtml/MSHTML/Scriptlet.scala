@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scriptlet extends StObject {
   
-  def AboutBox(): Unit = js.native
+  def AboutBox(): Unit
   
   @JSName("MSHTML.Scriptlet_typekey")
-  var MSHTMLDotScriptlet_typekey: Scriptlet = js.native
+  var MSHTMLDotScriptlet_typekey: Scriptlet
   
-  var Scrollbar: Boolean = js.native
+  var Scrollbar: Boolean
   
-  var embed: Boolean = js.native
+  var embed: Boolean
   
-  val event: js.Any = js.native
+  val event: js.Any
   
-  val readyState: Double = js.native
+  val readyState: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Scriptlet {
   

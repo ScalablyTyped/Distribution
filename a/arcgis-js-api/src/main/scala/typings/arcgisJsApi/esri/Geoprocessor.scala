@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Geoprocessor extends Task {
+trait Geoprocessor
+  extends StObject
+     with Task {
   
   /**
     * Cancels an asynchronous geoprocessing job.
@@ -29,8 +30,8 @@ trait Geoprocessor extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Geoprocessor.html#execute)
     */
-  def execute(params: js.Any): js.Promise[_] = js.native
-  def execute(params: js.Any, requestOptions: js.Any): js.Promise[_] = js.native
+  def execute(params: js.Any): js.Promise[js.Any] = js.native
+  def execute(params: js.Any, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Sends a request to the GP Task to get the task result identified by `jobId` and `resultName`.

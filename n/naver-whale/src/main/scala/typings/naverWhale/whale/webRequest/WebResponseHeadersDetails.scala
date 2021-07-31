@@ -2,17 +2,16 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebResponseHeadersDetails
-  extends typings.chrome.chrome.webRequest.WebResponseDetails {
+  extends StObject
+     with typings.chrome.chrome.webRequest.WebResponseDetails {
   
-  var method: String = js.native
+  var method: String
   
   /** Optional. The HTTP response headers that have been received with this response. */
-  var responseHeaders: js.UndefOr[js.Array[typings.chrome.chrome.webRequest.HttpHeader]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[typings.chrome.chrome.webRequest.HttpHeader]] = js.undefined
 }
 object WebResponseHeadersDetails {
   

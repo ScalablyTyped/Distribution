@@ -9,10 +9,10 @@ Most modern mobile touch slider and framework with hardware accelerated transiti
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | swiper |
-| Keywords           | swiper, swipe, slider, touch, ios, mobile, cordova, phonegap, app, framework, framework7, carousel, gallery, plugin, react, slideshow |
-| # releases         | 54 |
-| # dependents       | 484 |
-| # downloads        | 14034545 |
+| Keywords           | swiper, swipe, slider, touch, ios, mobile, cordova, phonegap, app, framework, framework7, carousel, gallery, plugin, react, vue, angular, svelte, slideshow |
+| # releases         | 69 |
+| # dependents       | 607 |
+| # downloads        | 18150750 |
 | # stars            | 33 |
 
 ## Links

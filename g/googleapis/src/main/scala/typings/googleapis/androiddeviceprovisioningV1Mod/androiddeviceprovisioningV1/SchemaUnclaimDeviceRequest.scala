@@ -2,29 +2,27 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message to unclaim a device.
   */
-@js.native
 trait SchemaUnclaimDeviceRequest extends StObject {
   
   /**
     * The device ID returned by `ClaimDevice`.
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The device identifier you used when you claimed this device.
     */
-  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
   /**
     * Required. The section type of the device&#39;s provisioning record.
     */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object SchemaUnclaimDeviceRequest {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -84,7 +83,7 @@ trait PlusMapsMarker extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setBubble(): Unit = js.native
-  def setBubble(buuble: js.UndefOr[scala.Nothing], pop: Boolean): Unit = js.native
+  def setBubble(buuble: Unit, pop: Boolean): Unit = js.native
   def setBubble(buuble: PlusMapsBubble): Unit = js.native
   def setBubble(buuble: PlusMapsBubble, pop: Boolean): Unit = js.native
   
@@ -116,7 +115,7 @@ trait PlusMapsMarker extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def setIcons(): Unit = js.native
-  def setIcons(icons: js.Array[_]): Unit = js.native
+  def setIcons(icons: js.Array[js.Any]): Unit = js.native
   
   /**
     * 设置标点上显示的文本标注

@@ -4,78 +4,68 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
   
-  /* Inlined std.Error & {  code :string,   message :string,   retryable :boolean | undefined,   statusCode :number | undefined,   time :std.Date,   hostname :string | undefined,   region :string | undefined,   retryDelay :number | undefined,   requestId :string | undefined,   extendedRequestId :string | undefined,   cfId :string | undefined,   originalError :std.Error | undefined} */
-  @js.native
-  trait AWSError extends StObject {
+  trait AWSError
+    extends StObject
+       with Error {
     
     /**
       * CloudFront request ID associated with the response.
       */
-    var cfId: js.UndefOr[String] = js.native
+    var cfId: js.UndefOr[String] = js.undefined
     
     /**
       * A unique short code representing the error that was emitted.
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * Second request ID associated with the response from S3.
       */
-    var extendedRequestId: js.UndefOr[String] = js.native
+    var extendedRequestId: js.UndefOr[String] = js.undefined
     
     /**
       * Set when a networking error occurs to easily identify the endpoint of the request.
       */
-    var hostname: js.UndefOr[String] = js.native
-    
-    /**
-      * A longer human readable error message.
-      */
-    var message: String = js.native
-    
-    var name: String = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /**
       * The original error which caused this Error
       */
-    var originalError: js.UndefOr[Error] = js.native
+    var originalError: js.UndefOr[Error] = js.undefined
     
     /**
       * Set when a networking error occurs to easily identify the region of the request.
       */
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
     /**
       * The unique request ID associated with the response.
       */
-    var requestId: js.UndefOr[String] = js.native
+    var requestId: js.UndefOr[String] = js.undefined
     
     /**
       * Amount of time (in seconds) that the request waited before being resent.
       */
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the error message is retryable.
       */
-    var retryable: js.UndefOr[Boolean] = js.native
-    
-    var stack: js.UndefOr[String] = js.native
+    var retryable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In the case of a request that reached the service, this value contains the response status code.
       */
-    var statusCode: js.UndefOr[Double] = js.native
+    var statusCode: js.UndefOr[Double] = js.undefined
     
     /**
       * The date time object when the error occurred.
       */
-    var time: Date = js.native
+    var time: Date
   }
   object AWSError {
     
@@ -110,12 +100,6 @@ object errorMod {
       def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
       @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setOriginalError(value: Error): Self = StObject.set(x, "originalError", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -144,12 +128,6 @@ object errorMod {
       
       @scala.inline
       def setRetryableUndefined: Self = StObject.set(x, "retryable", js.undefined)
-      
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
       
       @scala.inline
       def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])

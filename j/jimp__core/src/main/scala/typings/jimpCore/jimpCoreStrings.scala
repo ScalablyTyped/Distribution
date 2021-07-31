@@ -4,35 +4,43 @@ import typings.jimpCore.etcMod.ChangeName
 import typings.jimpCore.etcMod.ListenableName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jimpCoreStrings {
   
   @js.native
-  sealed trait any extends ListenableName
+  sealed trait any
+    extends StObject
+       with ListenableName
   @scala.inline
   def any: any = "any".asInstanceOf[any]
   
   @js.native
   sealed trait background
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def background: background = "background".asInstanceOf[background]
   
   @js.native
-  sealed trait `before-change` extends ListenableName
+  sealed trait `before-change`
+    extends StObject
+       with ListenableName
   @scala.inline
   def `before-change`: `before-change` = "before-change".asInstanceOf[`before-change`]
   
   @js.native
-  sealed trait `before-clone` extends ListenableName
+  sealed trait `before-clone`
+    extends StObject
+       with ListenableName
   @scala.inline
   def `before-clone`: `before-clone` = "before-clone".asInstanceOf[`before-clone`]
   
   @js.native
-  sealed trait changed extends ListenableName
+  sealed trait changed
+    extends StObject
+       with ListenableName
   @scala.inline
   def changed: changed = "changed".asInstanceOf[changed]
   
@@ -45,7 +53,9 @@ object jimpCoreStrings {
   sealed trait clone extends StObject
   
   @js.native
-  sealed trait cloned extends ListenableName
+  sealed trait cloned
+    extends StObject
+       with ListenableName
   @scala.inline
   def cloned: cloned = "cloned".asInstanceOf[cloned]
   
@@ -61,19 +71,23 @@ object jimpCoreStrings {
   
   @js.native
   sealed trait crop
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def crop: crop = "crop".asInstanceOf[crop]
   
   @js.native
-  sealed trait initialized extends ListenableName
+  sealed trait initialized
+    extends StObject
+       with ListenableName
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
   
   @js.native
   sealed trait scan
-    extends ChangeName
+    extends StObject
+       with ChangeName
        with ListenableName
   @scala.inline
   def scan: scan = "scan".asInstanceOf[scan]

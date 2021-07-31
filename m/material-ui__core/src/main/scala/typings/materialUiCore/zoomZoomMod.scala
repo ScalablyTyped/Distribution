@@ -6,7 +6,6 @@ import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomZoomMod extends Shortcut {
@@ -15,10 +14,11 @@ object zoomZoomMod extends Shortcut {
   @js.native
   val default: ComponentType[ZoomProps] = js.native
   
-  @js.native
-  trait ZoomProps extends TransitionProps {
+  trait ZoomProps
+    extends StObject
+       with TransitionProps {
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object ZoomProps {
     

@@ -7,10 +7,13 @@ import typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timezoneDisplayFormatMod {
+  
+  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneDisplayFormat", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.blueprintjsTimezone.blueprintjsTimezoneStrings.offset
@@ -54,7 +57,6 @@ object timezoneDisplayFormatMod {
     def OFFSET_=(x: offset): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("OFFSET")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components/timezone-picker/timezoneDisplayFormat", "formatTimezone")
-  @js.native
-  def formatTimezone(timezone: String, date: Date, displayFormat: TimezoneDisplayFormat): js.UndefOr[String] = js.native
+  @scala.inline
+  def formatTimezone(timezone: String, date: Date, displayFormat: TimezoneDisplayFormat): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTimezone")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any], displayFormat.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
 }

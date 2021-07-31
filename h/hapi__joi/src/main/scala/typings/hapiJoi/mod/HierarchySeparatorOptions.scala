@@ -3,10 +3,8 @@ package typings.hapiJoi.mod
 import typings.hapiJoi.hapiJoiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchySeparatorOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HierarchySeparatorOptions extends StObject {
     *
     * @default '.'
     */
-  var separator: js.UndefOr[String | `false`] = js.native
+  var separator: js.UndefOr[String | `false`] = js.undefined
 }
 object HierarchySeparatorOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemInstanceFilter extends StObject {
   
   /**
     * The name of the search filter field.
     */
-  var name: js.UndefOr[SystemInstanceFilterName] = js.native
+  var name: js.UndefOr[SystemInstanceFilterName] = js.undefined
   
   /**
     * An array of string values for the search filter field. Multiple values function as AND criteria in the search. 
     */
-  var value: js.UndefOr[SystemInstanceFilterValues] = js.native
+  var value: js.UndefOr[SystemInstanceFilterValues] = js.undefined
 }
 object SystemInstanceFilter {
   

@@ -6,22 +6,20 @@ import typings.itLengthPrefixed.mod.LengthEncoderFunction
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<it-length-prefixed.it-length-prefixed.DecoderOptions<bl.bl.^>> */
-  @js.native
   trait PartialDecoderOptions extends StObject {
     
-    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.native
+    var lengthDecoder: js.UndefOr[LengthDecoderFunction] = js.undefined
     
-    var maxDataLength: js.UndefOr[Double] = js.native
+    var maxDataLength: js.UndefOr[Double] = js.undefined
     
-    var maxLengthLength: js.UndefOr[Double] = js.native
+    var maxLengthLength: js.UndefOr[Double] = js.undefined
     
-    var onData: js.UndefOr[js.Function1[/* data */ ^ | Buffer, ^]] = js.native
+    var onData: js.UndefOr[js.Function1[/* data */ ^ | Buffer, ^]] = js.undefined
   }
   object PartialDecoderOptions {
     
@@ -61,10 +59,9 @@ object anon {
   }
   
   /* Inlined std.Partial<{  lengthEncoder :it-length-prefixed.it-length-prefixed.LengthEncoderFunction}> */
-  @js.native
   trait PartiallengthEncoderLengt extends StObject {
     
-    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.native
+    var lengthEncoder: js.UndefOr[LengthEncoderFunction] = js.undefined
   }
   object PartiallengthEncoderLengt {
     

@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.view.PaperOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,9 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * {{program example here, see documentation}}
   */
-@js.native
 trait GenericDrawPage
-  extends XShapes
+  extends StObject
+     with XShapes
      with XShapeGrouper
      with XShapeCombiner
      with XShapeBinder
@@ -31,46 +30,46 @@ trait GenericDrawPage
      with XPropertySet {
   
   /** This is the border at the bottom. */
-  var BorderBottom: Double = js.native
+  var BorderBottom: Double
   
   /** This is the border at the left. */
-  var BorderLeft: Double = js.native
+  var BorderLeft: Double
   
   /** This is the border at the right. */
-  var BorderRight: Double = js.native
+  var BorderRight: Double
   
   /** This is the border at the top. */
-  var BorderTop: Double = js.native
+  var BorderTop: Double
   
   /** This is the height. */
-  var Height: Double = js.native
+  var Height: Double
   
   /**
     * this property is true if the averaged background filling colors luminance is belove an application specified threshold value. This can be used to
     * determine the actual value of an auto color.
     */
-  var IsBackgroundDark: Boolean = js.native
+  var IsBackgroundDark: Boolean
   
   /**
     * this index access defines a navigation order for the top level shapes inside this page. By default this is equal to the index access of the slide
     * itself, making the z-order the default navigation order for top level shapes.
     */
-  var NavigationOrder: XIndexAccess = js.native
+  var NavigationOrder: XIndexAccess
   
   /** This is the number of this page, starting with 1. */
-  var Number: Double = js.native
+  var Number: Double
   
   /** This is the orientation of this page. */
-  var Orientation: PaperOrientation = js.native
+  var Orientation: PaperOrientation
   
   /**
     * this property stores xml attributes. They will be saved to and restored from automatic styles inside xml files.
     * @see com.sun.star.xml.AttributeContainer
     */
-  var UserDefinedAttributes: XNameContainer = js.native
+  var UserDefinedAttributes: XNameContainer
   
   /** This is the width. */
-  var Width: Double = js.native
+  var Width: Double
 }
 object GenericDrawPage {
   

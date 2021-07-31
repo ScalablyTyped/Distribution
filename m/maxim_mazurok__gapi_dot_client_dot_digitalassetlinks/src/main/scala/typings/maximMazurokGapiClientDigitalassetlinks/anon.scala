@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDigitalassetlinks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /**
       * Query string for the relation. We identify relations with strings of the format `/`, where `` must be one of a set of pre-defined purpose categories, and `` is a free-form
@@ -44,7 +42,7 @@ object anon {
       * list of supported relations. For a query to match an asset link, both the query's and the asset link's relation strings must match exactly. Example: A query with relation
       * `delegate_permission/common.handle_all_urls` matches an asset link with relation `delegate_permission/common.handle_all_urls`.
       */
-    var relation: js.UndefOr[String] = js.native
+    var relation: js.UndefOr[String] = js.undefined
     
     /**
       * The uppercase SHA-265 fingerprint of the certificate. From the PEM certificate, it can be acquired like this: $ keytool -printcert -file $CERTFILE | grep SHA256: SHA256:
@@ -55,11 +53,11 @@ object anon {
       * colons).
       */
     @JSName("source.androidApp.certificate.sha256Fingerprint")
-    var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+    var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
     
     /** Android App assets are naturally identified by their Java package name. For example, the Google Maps app uses the package name `com.google.android.apps.maps`. REQUIRED */
     @JSName("source.androidApp.packageName")
-    var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+    var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
     
     /**
       * Web assets are identified by a URL that contains only the scheme, hostname and port parts. The format is http[s]://[:] Hostnames must be fully qualified: they must end in a
@@ -71,7 +69,7 @@ object anon {
       * REQUIRED
       */
     @JSName("source.web.site")
-    var sourceDotwebDotsite: js.UndefOr[String] = js.native
+    var sourceDotwebDotsite: js.UndefOr[String] = js.undefined
     
     /**
       * The uppercase SHA-265 fingerprint of the certificate. From the PEM certificate, it can be acquired like this: $ keytool -printcert -file $CERTFILE | grep SHA256: SHA256:
@@ -82,11 +80,11 @@ object anon {
       * colons).
       */
     @JSName("target.androidApp.certificate.sha256Fingerprint")
-    var targetDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+    var targetDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
     
     /** Android App assets are naturally identified by their Java package name. For example, the Google Maps app uses the package name `com.google.android.apps.maps`. REQUIRED */
     @JSName("target.androidApp.packageName")
-    var targetDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+    var targetDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
     
     /**
       * Web assets are identified by a URL that contains only the scheme, hostname and port parts. The format is http[s]://[:] Hostnames must be fully qualified: they must end in a
@@ -98,13 +96,13 @@ object anon {
       * REQUIRED
       */
     @JSName("target.web.site")
-    var targetDotwebDotsite: js.UndefOr[String] = js.native
+    var targetDotwebDotsite: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -227,43 +225,42 @@ object anon {
     }
   }
   
-  @js.native
   trait Alt extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /**
       * Use only associations that match the specified relation. See the [`Statement`](#Statement) message for a detailed definition of relation strings. For a query to match a
       * statement, one of the following must be true: * both the query's and the statement's relation strings match exactly, or * the query's relation string is empty or missing.
       * Example: A query with relation `delegate_permission/common.handle_all_urls` matches an asset link with relation `delegate_permission/common.handle_all_urls`.
       */
-    var relation: js.UndefOr[String] = js.native
+    var relation: js.UndefOr[String] = js.undefined
     
     /**
       * The uppercase SHA-265 fingerprint of the certificate. From the PEM certificate, it can be acquired like this: $ keytool -printcert -file $CERTFILE | grep SHA256: SHA256:
@@ -274,11 +271,11 @@ object anon {
       * colons).
       */
     @JSName("source.androidApp.certificate.sha256Fingerprint")
-    var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.native
+    var sourceDotandroidAppDotcertificateDotsha256Fingerprint: js.UndefOr[String] = js.undefined
     
     /** Android App assets are naturally identified by their Java package name. For example, the Google Maps app uses the package name `com.google.android.apps.maps`. REQUIRED */
     @JSName("source.androidApp.packageName")
-    var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.native
+    var sourceDotandroidAppDotpackageName: js.UndefOr[String] = js.undefined
     
     /**
       * Web assets are identified by a URL that contains only the scheme, hostname and port parts. The format is http[s]://[:] Hostnames must be fully qualified: they must end in a
@@ -290,13 +287,13 @@ object anon {
       * REQUIRED
       */
     @JSName("source.web.site")
-    var sourceDotwebDotsite: js.UndefOr[String] = js.native
+    var sourceDotwebDotsite: js.UndefOr[String] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Alt {
     

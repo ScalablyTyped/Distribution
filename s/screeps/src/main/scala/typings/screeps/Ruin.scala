@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,34 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     <li>Decay: 500 ticks except some special cases</li>
   * </ul>
   */
-@js.native
-trait Ruin extends RoomObject {
+trait Ruin
+  extends StObject
+     with RoomObject {
   
   /**
     * Time of destruction.
     */
-  var destroyTime: Double = js.native
+  var destroyTime: Double
   
   /**
     * A unique object identificator.
     * You can use {@link Game.getObjectById} method to retrieve an object instance by its id.
     */
-  var id: Id[this.type] = js.native
+  var id: Id[this.type]
   
   /**
     * An object with the ruin contents.
     */
-  var store: StoreDefinitionUnlimited = js.native
+  var store: StoreDefinitionUnlimited
   
   /**
     * An object containing the destroyed structure.
     */
-  var structure: AnyStructure = js.native
+  var structure: AnyStructure
   
   /**
     * The amount of game ticks before this ruin decays.
     */
-  var ticksToDecay: Double = js.native
+  var ticksToDecay: Double
 }
 object Ruin {
   

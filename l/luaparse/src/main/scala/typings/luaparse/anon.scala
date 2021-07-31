@@ -10,17 +10,15 @@ import typings.luaparse.luaparseStrings.`5Dot2`
 import typings.luaparse.luaparseStrings.`5Dot3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object Column {
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Column = js.native
+    var end: Column
     
-    var start: Column = js.native
+    var start: Column
   }
   object End {
     
@@ -68,31 +65,30 @@ object anon {
   }
   
   /* Inlined std.Partial<luaparse.luaparse.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
-    var extendedIdentifiers: js.UndefOr[`false`] = js.native
+    var extendedIdentifiers: js.UndefOr[`false`] = js.undefined
     
-    var locations: js.UndefOr[Boolean] = js.native
+    var locations: js.UndefOr[Boolean] = js.undefined
     
-    var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.native
+    var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.undefined
     
-    var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
     
-    var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.native
+    var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.undefined
     
-    var ranges: js.UndefOr[Boolean] = js.native
+    var ranges: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[Boolean] = js.native
+    var scope: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FPartialOptions: js.UndefOr[Boolean] = js.native
+    var wait_FPartialOptions: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     
@@ -174,36 +170,35 @@ object anon {
   }
   
   /* Inlined std.Partial<luaparse.luaparse.Options> & {  wait :true} */
-  @js.native
   trait PartialOptionswaittrue extends StObject {
     
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
-    var extendedIdentifiers: js.UndefOr[`false`] = js.native
+    var extendedIdentifiers: js.UndefOr[`false`] = js.undefined
     
-    var locations: js.UndefOr[Boolean] = js.native
+    var locations: js.UndefOr[Boolean] = js.undefined
     
-    var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.native
+    var luaVersion: js.UndefOr[`5Dot1` | `5Dot2` | `5Dot3` | LuaJIT] = js.undefined
     
-    var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.native
+    var onCreateNode: js.UndefOr[js.Function1[/* node */ Node, Unit]] = js.undefined
     
-    var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCreateScope: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDestroyScope: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.native
+    var onLocalDeclaration: js.UndefOr[js.Function1[/* identifier */ Identifier, Unit]] = js.undefined
     
-    var ranges: js.UndefOr[Boolean] = js.native
+    var ranges: js.UndefOr[Boolean] = js.undefined
     
-    var scope: js.UndefOr[Boolean] = js.native
+    var scope: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] with `true` = js.native
+    var wait_FPartialOptionswaittrue: js.UndefOr[Boolean] & `true`
   }
   object PartialOptionswaittrue {
     
     @scala.inline
-    def apply(wait_ : js.UndefOr[Boolean] with `true`): PartialOptionswaittrue = {
+    def apply(wait_ : js.UndefOr[Boolean] & `true`): PartialOptionswaittrue = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("wait")(wait_.asInstanceOf[js.Any])
       __obj.asInstanceOf[PartialOptionswaittrue]
@@ -273,7 +268,7 @@ object anon {
       def setScopeUndefined: Self = StObject.set(x, "scope", js.undefined)
       
       @scala.inline
-      def setWait_(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
+      def setWait_(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "wait", value.asInstanceOf[js.Any])
     }
   }
 }

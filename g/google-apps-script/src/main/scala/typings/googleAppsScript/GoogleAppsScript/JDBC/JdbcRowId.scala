@@ -3,17 +3,15 @@ package typings.googleAppsScript.GoogleAppsScript.JDBC
 import typings.googleAppsScript.GoogleAppsScript.Byte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A JDBC RowId. For documentation of this class, see java.sql.RowId
   * .
   */
-@js.native
 trait JdbcRowId extends StObject {
   
-  def getBytes(): js.Array[Byte] = js.native
+  def getBytes(): js.Array[Byte]
 }
 object JdbcRowId {
   

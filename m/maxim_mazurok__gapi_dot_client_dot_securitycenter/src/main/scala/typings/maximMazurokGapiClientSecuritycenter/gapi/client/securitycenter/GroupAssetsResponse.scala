@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupAssetsResponse extends StObject {
   
   /**
     * Group results. There exists an element for each existing unique combination of property/values. The element contains a count for the number of times those specific property/values
     * appear.
     */
-  var groupByResults: js.UndefOr[js.Array[GroupResult]] = js.native
+  var groupByResults: js.UndefOr[js.Array[GroupResult]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Time used for executing the groupBy request. */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /** The total number of results matching the query. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object GroupAssetsResponse {
   

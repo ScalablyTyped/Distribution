@@ -8,15 +8,15 @@ import typings.backblazeB2.backblazeB2Strings.stream
 import typings.backblazeB2.backblazeB2Strings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DownloadFileOpts extends CommonArgs {
+trait DownloadFileOpts
+  extends StObject
+     with CommonArgs {
   
-  var onDownloadProgress: js.UndefOr[UploadProgressFn | Null] = js.native
+  var onDownloadProgress: js.UndefOr[UploadProgressFn | Null] = js.undefined
   
-  var responseType: arraybuffer | blob | document | json | text | stream = js.native
+  var responseType: arraybuffer | blob | document | json | text | stream
 }
 object DownloadFileOpts {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDataRepositoryTasksResponse extends StObject {
   
   /**
     * The collection of data repository task descriptions returned.
     */
-  var DataRepositoryTasks: js.UndefOr[typings.awsSdk.fsxMod.DataRepositoryTasks] = js.native
+  var DataRepositoryTasks: js.UndefOr[typings.awsSdk.fsxMod.DataRepositoryTasks] = js.undefined
   
-  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
 }
 object DescribeDataRepositoryTasksResponse {
   

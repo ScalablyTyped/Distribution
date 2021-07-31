@@ -12,7 +12,7 @@ Rational approximation with bounded denominator
 | Keywords           | math, fraction, rational, approximation |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 27484160 |
+| # downloads        | 39260101 |
 | # stars            | 0 |
 
 ## Links

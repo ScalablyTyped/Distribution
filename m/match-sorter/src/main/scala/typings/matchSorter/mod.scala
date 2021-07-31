@@ -14,7 +14,6 @@ import typings.matchSorter.matchSorterNumbers.`6`
 import typings.matchSorter.matchSorterNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,12 +27,14 @@ object mod {
       * @param options - Some options to configure the sorter
       * @return the new sorted array
       */
+    @scala.inline
+    def apply[T](items: js.Array[T], value: String): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def apply[T](items: js.Array[T], value: String, options: Options[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].apply(items.asInstanceOf[js.Any], value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    
     @JSImport("match-sorter", "matchSorter")
     @js.native
-    def apply[T](items: js.Array[T], value: String): js.Array[T] = js.native
-    @JSImport("match-sorter", "matchSorter")
-    @js.native
-    def apply[T](items: js.Array[T], value: String, options: Options[T]): js.Array[T] = js.native
+    val ^ : js.Any = js.native
     
     object rankings {
       
@@ -71,18 +72,17 @@ object mod {
     }
   }
   
-  type ExtendedKeyOptions[T] = Key[T] with (MinRanking | MaxRanking | Threshold)
+  type ExtendedKeyOptions[T] = Key[T] & (MinRanking | MaxRanking | Threshold)
   
   type KeyOptions[T] = String | (js.Function1[/* item */ T, String | js.Array[String]])
   
-  @js.native
   trait Options[T] extends StObject {
     
-    var keepDiacritics: js.UndefOr[Boolean] = js.native
+    var keepDiacritics: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]] = js.native
+    var keys: js.UndefOr[js.Array[KeyOptions[T] | ExtendedKeyOptions[T]]] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -93,7 +93,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setKeepDiacritics(value: Boolean): Self = StObject.set(x, "keepDiacritics", value.asInstanceOf[js.Any])

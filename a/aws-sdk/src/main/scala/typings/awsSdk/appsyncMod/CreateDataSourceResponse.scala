@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDataSourceResponse extends StObject {
   
   /**
     * The DataSource object.
     */
-  var dataSource: js.UndefOr[DataSource] = js.native
+  var dataSource: js.UndefOr[DataSource] = js.undefined
 }
 object CreateDataSourceResponse {
   

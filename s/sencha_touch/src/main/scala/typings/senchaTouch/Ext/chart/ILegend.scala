@@ -4,95 +4,95 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.dataview.IDataView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILegend extends IDataView {
+trait ILegend
+  extends StObject
+     with IDataView {
   
   /** [Method] Returns the value of disableSelection
     * @returns Boolean
     */
   @JSName("getDisableSelection")
-  var getDisableSelection_ILegend: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getDisableSelection_ILegend: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of horizontalHeight
     * @returns Number
     */
-  var getHorizontalHeight: js.UndefOr[js.Function0[Double]] = js.native
+  var getHorizontalHeight: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of inline
     * @returns Boolean
     */
   @JSName("getInline")
-  var getInline_ILegend: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getInline_ILegend: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of itemTpl
     * @returns Array
     */
   @JSName("getItemTpl")
-  var getItemTpl_ILegend: js.UndefOr[js.Function0[Array]] = js.native
+  var getItemTpl_ILegend: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of padding
     * @returns Number
     */
   @JSName("getPadding")
-  var getPadding_ILegend: js.UndefOr[js.Function0[Double]] = js.native
+  var getPadding_ILegend: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of toggleable
     * @returns Boolean
     */
-  var getToggleable: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getToggleable: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of verticalWidth
     * @returns Number
     */
-  var getVerticalWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getVerticalWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Config Option] (String) */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of disableSelection
     * @param disableSelection Boolean The new value.
     */
   @JSName("setDisableSelection")
-  var setDisableSelection_ILegend: js.UndefOr[js.Function1[/* disableSelection */ js.UndefOr[Boolean], Unit]] = js.native
+  var setDisableSelection_ILegend: js.UndefOr[js.Function1[/* disableSelection */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of horizontalHeight
     * @param horizontalHeight Number The new value.
     */
-  var setHorizontalHeight: js.UndefOr[js.Function1[/* horizontalHeight */ js.UndefOr[Double], Unit]] = js.native
+  var setHorizontalHeight: js.UndefOr[js.Function1[/* horizontalHeight */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of inline
     * @param inline Boolean The new value.
     */
   @JSName("setInline")
-  var setInline_ILegend: js.UndefOr[js.Function1[/* inline */ js.UndefOr[Boolean], Unit]] = js.native
+  var setInline_ILegend: js.UndefOr[js.Function1[/* inline */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of itemTpl
     * @param itemTpl Array The new value.
     */
   @JSName("setItemTpl")
-  var setItemTpl_ILegend: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[Array], Unit]] = js.native
+  var setItemTpl_ILegend: js.UndefOr[js.Function1[/* itemTpl */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of padding
     * @param padding Number The new value.
     */
   @JSName("setPadding")
-  var setPadding_ILegend: js.UndefOr[js.Function1[/* padding */ js.UndefOr[Double], Unit]] = js.native
+  var setPadding_ILegend: js.UndefOr[js.Function1[/* padding */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of toggleable
     * @param toggleable Boolean The new value.
     */
-  var setToggleable: js.UndefOr[js.Function1[/* toggleable */ js.UndefOr[Boolean], Unit]] = js.native
+  var setToggleable: js.UndefOr[js.Function1[/* toggleable */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of verticalWidth
     * @param verticalWidth Number The new value.
     */
-  var setVerticalWidth: js.UndefOr[js.Function1[/* verticalWidth */ js.UndefOr[Double], Unit]] = js.native
+  var setVerticalWidth: js.UndefOr[js.Function1[/* verticalWidth */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var toggleable: js.UndefOr[Boolean] = js.native
+  var toggleable: js.UndefOr[Boolean] = js.undefined
 }
 object ILegend {
   

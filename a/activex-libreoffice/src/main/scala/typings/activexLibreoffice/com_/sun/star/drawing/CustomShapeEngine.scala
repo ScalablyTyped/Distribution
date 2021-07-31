@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a {@link CustomShape} */
-@js.native
 trait CustomShapeEngine
-  extends XInitialization
+  extends StObject
+     with XInitialization
      with XCustomShapeEngine
 object CustomShapeEngine {
   
@@ -26,7 +25,7 @@ object CustomShapeEngine {
     getInteraction: () => SafeArray[XCustomShapeHandle],
     getLineGeometry: () => PolyPolygonBezierCoords,
     getTextBounds: () => Rectangle,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     render: () => XShape

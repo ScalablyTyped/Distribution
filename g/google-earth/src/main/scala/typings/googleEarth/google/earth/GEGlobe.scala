@@ -2,22 +2,22 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GEGlobe extends KmlObject {
+trait GEGlobe
+  extends StObject
+     with KmlObject {
   
   /**
     * The top-level features currently in the Earth instance.
     */
-  def getFeatures(): GEFeatureContainer = js.native
+  def getFeatures(): GEFeatureContainer
   
   /**
     * Returns the altitude for a given location on the globe.
     * If the altitude data for the location has not yet been loaded, the return value is 0.
     */
-  def getGroundAltitude(lat: Double, lon: Double): Double = js.native
+  def getGroundAltitude(lat: Double, lon: Double): Double
 }
 object GEGlobe {
   

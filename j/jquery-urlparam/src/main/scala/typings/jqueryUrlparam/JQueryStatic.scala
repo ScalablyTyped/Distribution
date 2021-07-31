@@ -2,13 +2,11 @@ package typings.jqueryUrlparam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  def urlParam(variable: String): String = js.native
+  def urlParam(variable: String): String
 }
 object JQueryStatic {
   

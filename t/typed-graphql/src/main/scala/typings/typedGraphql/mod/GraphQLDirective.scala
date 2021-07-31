@@ -2,24 +2,22 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // type/directives.js
-@js.native
 trait GraphQLDirective extends StObject {
   
-  var args: js.Array[GraphQLArgument] = js.native
+  var args: js.Array[GraphQLArgument]
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var onField: Boolean = js.native
+  var onField: Boolean
   
-  var onFragment: Boolean = js.native
+  var onFragment: Boolean
   
-  var onOperation: Boolean = js.native
+  var onOperation: Boolean
 }
 object GraphQLDirective {
   

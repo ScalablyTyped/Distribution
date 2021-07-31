@@ -2,13 +2,11 @@ package typings.storybookReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddonSelected extends StObject {
   
-  var addonSelected: String = js.native
+  var addonSelected: String
 }
 object AddonSelected {
   

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Returned by {@link XLocaleData.getForbiddenCharacters()} and used with {@link XForbiddenCharacters} methods.
   */
-@js.native
 trait ForbiddenCharacters extends StObject {
   
-  var beginLine: String = js.native
+  var beginLine: String
   
-  var endLine: String = js.native
+  var endLine: String
 }
 object ForbiddenCharacters {
   

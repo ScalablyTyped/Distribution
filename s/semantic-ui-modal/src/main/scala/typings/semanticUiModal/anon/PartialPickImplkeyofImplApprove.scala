@@ -2,18 +2,16 @@ package typings.semanticUiModal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl, keyof semantic-ui-modal.SemanticUI.Modal.SelectorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplApprove extends StObject {
   
-  var approve: js.UndefOr[String] = js.native
+  var approve: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var deny: js.UndefOr[String] = js.native
+  var deny: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplApprove {
   

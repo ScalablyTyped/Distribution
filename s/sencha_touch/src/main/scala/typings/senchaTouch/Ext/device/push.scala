@@ -3,27 +3,27 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object push {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Property] (Number) */
-    var ALERT: js.UndefOr[Double] = js.native
+    var ALERT: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var BADGE: js.UndefOr[Double] = js.native
+    var BADGE: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var SOUND: js.UndefOr[Double] = js.native
+    var SOUND: js.UndefOr[Double] = js.undefined
     
     /** [Method] Registers a push notification
       * @param config Object The configuration for to pass when registering this push notification service.
       */
-    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var register: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -62,12 +62,13 @@ object push {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract {
+  trait ICordova
+    extends StObject
+       with IAbstract {
     
     /** [Method] Registers a push notification  */
     @JSName("register")
-    var register_ICordova: js.UndefOr[js.Function0[Unit]] = js.native
+    var register_ICordova: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ICordova {
     
@@ -88,12 +89,13 @@ object push {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract {
+  trait ISencha
+    extends StObject
+       with IAbstract {
     
     /** [Method] Registers a push notification  */
     @JSName("register")
-    var register_ISencha: js.UndefOr[js.Function0[Unit]] = js.native
+    var register_ISencha: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISencha {
     

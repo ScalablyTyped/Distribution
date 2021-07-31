@@ -13,21 +13,19 @@ import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.track
 import typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Spotify {
   
-  type AddListenerFn = (js.Function2[/* event */ ready | not_ready, /* cb */ PlaybackInstanceListener, Unit]) with (js.Function2[player_state_changed, /* cb */ PlaybackStateListener, Unit]) with (js.Function2[/* event */ ErrorTypes, /* cb */ ErrorListener, Unit])
+  type AddListenerFn = (js.Function2[/* event */ ready | not_ready, /* cb */ PlaybackInstanceListener, Unit]) & (js.Function2[player_state_changed, /* cb */ PlaybackStateListener, Unit]) & (js.Function2[/* event */ ErrorTypes, /* cb */ ErrorListener, Unit])
   
-  @js.native
   trait Album extends StObject {
     
-    var images: js.Array[Image] = js.native
+    var images: js.Array[Image]
     
-    var name: String = js.native
+    var name: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Album {
     
@@ -54,12 +52,11 @@ object Spotify {
     }
   }
   
-  @js.native
   trait Artist extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Artist {
     
@@ -80,10 +77,9 @@ object Spotify {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Error {
     
@@ -125,14 +121,13 @@ object Spotify {
     def playback_error: typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error = "playback_error".asInstanceOf[typings.spotifyWebPlaybackSdk.spotifyWebPlaybackSdkStrings.playback_error]
   }
   
-  @js.native
   trait Image extends StObject {
     
-    var height: js.UndefOr[Double | Null] = js.native
+    var height: js.UndefOr[Double | Null] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var width: js.UndefOr[Double | Null] = js.native
+    var width: js.UndefOr[Double | Null] = js.undefined
   }
   object Image {
     
@@ -168,18 +163,17 @@ object Spotify {
     }
   }
   
-  @js.native
   trait PlaybackContext extends StObject {
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
     
-    var uri: String | Null = js.native
+    var uri: String | Null
   }
   object PlaybackContext {
     
     @scala.inline
     def apply(metadata: js.Any): PlaybackContext = {
-      val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(metadata = metadata.asInstanceOf[js.Any], uri = null)
       __obj.asInstanceOf[PlaybackContext]
     }
     
@@ -197,22 +191,21 @@ object Spotify {
     }
   }
   
-  @js.native
   trait PlaybackDisallows extends StObject {
     
-    var pausing: Boolean = js.native
+    var pausing: Boolean
     
-    var peeking_next: Boolean = js.native
+    var peeking_next: Boolean
     
-    var peeking_prev: Boolean = js.native
+    var peeking_prev: Boolean
     
-    var resuming: Boolean = js.native
+    var resuming: Boolean
     
-    var seeking: Boolean = js.native
+    var seeking: Boolean
     
-    var skipping_next: Boolean = js.native
+    var skipping_next: Boolean
     
-    var skipping_prev: Boolean = js.native
+    var skipping_prev: Boolean
   }
   object PlaybackDisallows {
     
@@ -258,22 +251,21 @@ object Spotify {
   
   type PlaybackInstanceListener = js.Function1[/* inst */ WebPlaybackInstance, Unit]
   
-  @js.native
   trait PlaybackRestrictions extends StObject {
     
-    var disallow_pausing_reasons: js.Array[String] = js.native
+    var disallow_pausing_reasons: js.Array[String]
     
-    var disallow_peeking_next_reasons: js.Array[String] = js.native
+    var disallow_peeking_next_reasons: js.Array[String]
     
-    var disallow_peeking_prev_reasons: js.Array[String] = js.native
+    var disallow_peeking_prev_reasons: js.Array[String]
     
-    var disallow_resuming_reasons: js.Array[String] = js.native
+    var disallow_resuming_reasons: js.Array[String]
     
-    var disallow_seeking_reasons: js.Array[String] = js.native
+    var disallow_seeking_reasons: js.Array[String]
     
-    var disallow_skipping_next_reasons: js.Array[String] = js.native
+    var disallow_skipping_next_reasons: js.Array[String]
     
-    var disallow_skipping_prev_reasons: js.Array[String] = js.native
+    var disallow_skipping_prev_reasons: js.Array[String]
   }
   object PlaybackRestrictions {
     
@@ -338,31 +330,30 @@ object Spotify {
     }
   }
   
-  @js.native
   trait PlaybackState extends StObject {
     
-    var context: PlaybackContext = js.native
+    var context: PlaybackContext
     
-    var disallows: PlaybackDisallows = js.native
+    var disallows: PlaybackDisallows
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var paused: Boolean = js.native
+    var paused: Boolean
     
-    var position: Double = js.native
+    var position: Double
     
     /**
       * 0: NO_REPEAT
       * 1: ONCE_REPEAT
       * 2: FULL_REPEAT
       */
-    var repeat_mode: `0` | `1` | `2` = js.native
+    var repeat_mode: `0` | `1` | `2`
     
-    var restrictions: PlaybackRestrictions = js.native
+    var restrictions: PlaybackRestrictions
     
-    var shuffle: Boolean = js.native
+    var shuffle: Boolean
     
-    var track_window: PlaybackTrackWindow = js.native
+    var track_window: PlaybackTrackWindow
   }
   object PlaybackState {
     
@@ -416,14 +407,13 @@ object Spotify {
   
   type PlaybackStateListener = js.Function1[/* s */ PlaybackState, Unit]
   
-  @js.native
   trait PlaybackTrackWindow extends StObject {
     
-    var current_track: Track = js.native
+    var current_track: Track
     
-    var next_tracks: js.Array[Track] = js.native
+    var next_tracks: js.Array[Track]
     
-    var previous_tracks: js.Array[Track] = js.native
+    var previous_tracks: js.Array[Track]
   }
   object PlaybackTrackWindow {
     
@@ -456,14 +446,13 @@ object Spotify {
   /* was `typeof SpotifyPlayer` */
   type Player = SpotifyPlayer
   
-  @js.native
   trait PlayerInit extends StObject {
     
-    def getOAuthToken(cb: js.Function1[/* token */ String, Unit]): Unit = js.native
+    def getOAuthToken(cb: js.Function1[/* token */ String, Unit]): Unit
     
-    var name: String = js.native
+    var name: String
     
-    var volume: js.UndefOr[Double] = js.native
+    var volume: js.UndefOr[Double] = js.undefined
   }
   object PlayerInit {
     
@@ -553,24 +542,23 @@ object Spotify {
     def togglePlay(): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Track extends StObject {
     
-    var album: Album = js.native
+    var album: Album
     
-    var artists: js.Array[Artist] = js.native
+    var artists: js.Array[Artist]
     
-    var id: String | Null = js.native
+    var id: String | Null
     
-    var is_playable: Boolean = js.native
+    var is_playable: Boolean
     
-    var media_type: audio | video = js.native
+    var media_type: audio | video
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: track | episode | ad = js.native
+    var `type`: track | episode | ad
     
-    var uri: String = js.native
+    var uri: String
   }
   object Track {
     
@@ -584,7 +572,7 @@ object Spotify {
       `type`: track | episode | ad,
       uri: String
     ): Track = {
-      val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], is_playable = is_playable.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(album = album.asInstanceOf[js.Any], artists = artists.asInstanceOf[js.Any], is_playable = is_playable.asInstanceOf[js.Any], media_type = media_type.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], id = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Track]
     }
@@ -624,10 +612,9 @@ object Spotify {
     }
   }
   
-  @js.native
   trait WebPlaybackInstance extends StObject {
     
-    var device_id: String = js.native
+    var device_id: String
   }
   object WebPlaybackInstance {
     

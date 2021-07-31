@@ -2,16 +2,15 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScreenBrightnessOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 屏幕亮度值，范围 0~1，0 最暗，1 最亮 */
   @JSName("success")
-  def success_MGetScreenBrightnessOptions(value: Double): Unit = js.native
+  def success_MGetScreenBrightnessOptions(value: Double): Unit
 }
 object GetScreenBrightnessOptions {
   

@@ -2,21 +2,19 @@ package typings.utm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Easting extends StObject {
     
-    var easting: Double = js.native
+    var easting: Double
     
-    var northing: Double = js.native
+    var northing: Double
     
-    var zoneLetter: String = js.native
+    var zoneLetter: String
     
-    var zoneNum: Double = js.native
+    var zoneNum: Double
   }
   object Easting {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Latitude extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Latitude {
     

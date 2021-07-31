@@ -7,19 +7,19 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP_INSIDE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait xAxis extends Axis {
+trait xAxis
+  extends StObject
+     with Axis {
   
-  var avoidFirstLastClipping: js.UndefOr[Boolean] = js.native
+  var avoidFirstLastClipping: js.UndefOr[Boolean] = js.undefined
   
-  var labelRotationAngle: js.UndefOr[Double] = js.native
+  var labelRotationAngle: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE] = js.native
+  var position: js.UndefOr[TOP | BOTTOM | BOTH_SIDED | TOP_INSIDE | BOTTOM_INSIDE] = js.undefined
   
-  var yOffset: js.UndefOr[Double] = js.native
+  var yOffset: js.UndefOr[Double] = js.undefined
 }
 object xAxis {
   

@@ -2,78 +2,78 @@ package typings.a2hsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("a2hs.js", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("a2hs.js", JSImport.Namespace)
-  @js.native
-  def apply(settings: Settings): Unit = js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(settings: Settings): Unit = ^.asInstanceOf[js.Dynamic].apply(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
+  @JSImport("a2hs.js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Settings extends StObject {
     
     /**
       * Background color for container
       * @default '#f9f9f9'
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Brand for default `htmlContent`
       * @default ''
       */
-    var brandName: js.UndefOr[String] = js.native
+    var brandName: js.UndefOr[String] = js.undefined
     
     /**
       * Font color for content in container
       * @default '#5d5d5d'
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Font family for content in container
       * @default '-apple-system, sans-serif'
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * Font size for content in container
       * @default '0.9rem'
       */
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
     /**
       * Content for container with HTML
       */
-    var htmlContent: js.UndefOr[String] = js.native
+    var htmlContent: js.UndefOr[String] = js.undefined
     
     /**
       * Logo for container
       */
-    var logoImage: js.UndefOr[String] = js.native
+    var logoImage: js.UndefOr[String] = js.undefined
     
     /**
       * Padding for container
       * @default '10px'
       */
-    var padding: js.UndefOr[String] = js.native
+    var padding: js.UndefOr[String] = js.undefined
     
     /**
       * Shadow color for top of container
       * @default '#e9e9e9'
       */
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
     
     /**
       * Shadow size for top of container
       * @default '10px'
       */
-    var shadowSize: js.UndefOr[String] = js.native
+    var shadowSize: js.UndefOr[String] = js.undefined
   }
   object Settings {
     

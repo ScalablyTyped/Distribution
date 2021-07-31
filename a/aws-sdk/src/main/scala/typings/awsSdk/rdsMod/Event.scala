@@ -2,41 +2,39 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * Specifies the date and time of the event.
     */
-  var Date: js.UndefOr[TStamp] = js.native
+  var Date: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Specifies the category for the event.
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * Provides the text of this event.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the event.
     */
-  var SourceArn: js.UndefOr[String] = js.native
+  var SourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the identifier for the source of the event.
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the source type for this event.
     */
-  var SourceType: js.UndefOr[typings.awsSdk.rdsMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.rdsMod.SourceType] = js.undefined
 }
 object Event {
   

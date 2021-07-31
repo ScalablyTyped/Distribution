@@ -12,7 +12,7 @@ Process utils for NodeJS
 | Keywords           | - |
 | # releases         | 30 |
 | # dependents       | 3 |
-| # downloads        | 3495420 |
+| # downloads        | 3652823 |
 | # stars            | 0 |
 
 ## Links

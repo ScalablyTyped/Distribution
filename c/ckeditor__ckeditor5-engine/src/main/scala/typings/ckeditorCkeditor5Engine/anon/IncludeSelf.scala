@@ -2,15 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeSelf extends StObject {
   
-  var includeSelf: Boolean = js.native
+  var includeSelf: Boolean
   
-  var parentFirst: Boolean = js.native
+  var parentFirst: Boolean
 }
 object IncludeSelf {
   

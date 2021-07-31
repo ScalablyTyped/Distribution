@@ -2,11 +2,12 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NotificationListItem extends NotificationListBase {
+trait NotificationListItem
+  extends StObject
+     with NotificationListBase {
   
   /**
     * Gets current value of property <code>description</code>.Determines the description of the

@@ -14,7 +14,6 @@ import typings.jquery.jqueryStrings.resolved
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-empty-interface
@@ -42,10 +41,20 @@ trait JQueryXHR extends StObject {
     */
   def always(
     alwaysCallback: TypeOrArray[
-      CallbackBase[_ | jqXHR[_], SuccessTextStatus | ErrorTextStatus, jqXHR[_] | String, scala.Nothing]
+      CallbackBase[
+        js.Any | jqXHR[js.Any], 
+        SuccessTextStatus | ErrorTextStatus, 
+        jqXHR[js.Any] | String, 
+        scala.Nothing
+      ]
     ],
     alwaysCallbacks: (TypeOrArray[
-      CallbackBase[_ | jqXHR[_], SuccessTextStatus | ErrorTextStatus, jqXHR[_] | String, scala.Nothing]
+      CallbackBase[
+        js.Any | jqXHR[js.Any], 
+        SuccessTextStatus | ErrorTextStatus, 
+        jqXHR[js.Any] | String, 
+        scala.Nothing
+      ]
     ])*
   ): this.type = js.native
   
@@ -69,7 +78,7 @@ trait JQueryXHR extends StObject {
   def `catch`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](): PromiseBase[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF] = js.native
   def `catch`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -138,8 +147,8 @@ trait JQueryXHR extends StObject {
   ```
     */
   def done(
-    doneCallback: TypeOrArray[CallbackBase[_, SuccessTextStatus, jqXHR[_], scala.Nothing]],
-    doneCallbacks: (TypeOrArray[CallbackBase[_, SuccessTextStatus, jqXHR[_], scala.Nothing]])*
+    doneCallback: TypeOrArray[CallbackBase[js.Any, SuccessTextStatus, jqXHR[js.Any], scala.Nothing]],
+    doneCallbacks: (TypeOrArray[CallbackBase[js.Any, SuccessTextStatus, jqXHR[js.Any], scala.Nothing]])*
   ): this.type = js.native
   
   /**
@@ -160,8 +169,8 @@ trait JQueryXHR extends StObject {
   ```
     */
   def fail(
-    failCallback: TypeOrArray[CallbackBase[jqXHR[_], ErrorTextStatus, String, scala.Nothing]],
-    failCallbacks: (TypeOrArray[CallbackBase[jqXHR[_], ErrorTextStatus, String, scala.Nothing]])*
+    failCallback: TypeOrArray[CallbackBase[jqXHR[js.Any], ErrorTextStatus, String, scala.Nothing]],
+    failCallbacks: (TypeOrArray[CallbackBase[jqXHR[js.Any], ErrorTextStatus, String, scala.Nothing]])*
   ): this.type = js.native
   
   def getAllResponseHeaders(): String = js.native
@@ -243,7 +252,7 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ]
@@ -288,7 +297,7 @@ trait JQueryXHR extends StObject {
   def pipe[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -359,12 +368,12 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -425,7 +434,7 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
@@ -491,7 +500,7 @@ trait JQueryXHR extends StObject {
   def pipe[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -573,12 +582,12 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -693,7 +702,7 @@ trait JQueryXHR extends StObject {
   );
   ```
     */
-  def promise[TTarget /* <: js.Object */](target: TTarget): this.type with TTarget = js.native
+  def promise[TTarget /* <: js.Object */](target: TTarget): this.type & TTarget = js.native
   
   var readyState: Double = js.native
   
@@ -716,7 +725,7 @@ trait JQueryXHR extends StObject {
   
   var status: Double = js.native
   
-  def statusCode(map: StatusCodeCallbacks[_]): Unit = js.native
+  def statusCode(map: StatusCodeCallbacks[js.Any]): Unit = js.native
   
   var statusText: String = js.native
   
@@ -796,7 +805,7 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ]
@@ -835,7 +844,7 @@ trait JQueryXHR extends StObject {
   def `then`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -931,12 +940,12 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -1012,7 +1021,7 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
@@ -1072,7 +1081,7 @@ trait JQueryXHR extends StObject {
   def `then`[ARF, AJF, ANF, BRF, BJF, BNF, CRF, CJF, CNF, RRF, RJF, RNF, ARP, AJP, ANP, BRP, BJP, BNP, CRP, CJP, CNP, RRP, RJP, RNP](
     doneFilter: Null,
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 
@@ -1180,12 +1189,12 @@ trait JQueryXHR extends StObject {
     doneFilter: js.Function4[
       /* t */ js.Any, 
       /* u */ SuccessTextStatus, 
-      /* v */ jqXHR[_], 
+      /* v */ jqXHR[js.Any], 
       /* repeated */ scala.Nothing, 
       (PromiseBase[ARD, AJD, AND, BRD, BJD, BND, CRD, CJD, CND, RRD, RJD, RND]) | Thenable[ARD] | ARD
     ],
     failFilter: js.Function4[
-      /* t */ jqXHR[_], 
+      /* t */ jqXHR[js.Any], 
       /* u */ ErrorTextStatus, 
       /* v */ String, 
       /* repeated */ scala.Nothing, 

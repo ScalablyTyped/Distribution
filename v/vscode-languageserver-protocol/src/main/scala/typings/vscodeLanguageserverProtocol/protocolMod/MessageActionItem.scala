@@ -2,16 +2,14 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageActionItem extends StObject {
   
   /**
     * A short title like 'Retry', 'Open Log' etc.
     */
-  var title: String = js.native
+  var title: String
 }
 object MessageActionItem {
   

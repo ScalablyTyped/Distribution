@@ -21,7 +21,6 @@ import typings.std.TouchEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -144,20 +143,19 @@ object Cropper {
     def zoom: typings.cropperjs.cropperjsStrings.zoom = "zoom".asInstanceOf[typings.cropperjs.cropperjsStrings.zoom]
   }
   
-  @js.native
   trait CanvasData extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var naturalHeight: Double = js.native
+    var naturalHeight: Double
     
-    var naturalWidth: Double = js.native
+    var naturalWidth: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object CanvasData {
     
@@ -197,12 +195,11 @@ object Cropper {
     }
   }
   
-  @js.native
   trait ContainerData extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ContainerData {
     
@@ -223,16 +220,15 @@ object Cropper {
     }
   }
   
-  @js.native
   trait CropBoxData extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object CropBoxData {
     
@@ -261,7 +257,8 @@ object Cropper {
   
   @js.native
   trait CropEndEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_CropEndEvent: CropEventData = js.native
@@ -269,18 +266,18 @@ object Cropper {
   
   @js.native
   trait CropEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_CropEvent: Data = js.native
   }
   
-  @js.native
   trait CropEventData extends StObject {
     
-    var action: Action = js.native
+    var action: Action
     
-    var originalEvent: PointerEvent | MouseEvent | TouchEvent = js.native
+    var originalEvent: PointerEvent | MouseEvent | TouchEvent
   }
   object CropEventData {
     
@@ -303,7 +300,8 @@ object Cropper {
   
   @js.native
   trait CropMoveEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_CropMoveEvent: CropEventData = js.native
@@ -311,28 +309,28 @@ object Cropper {
   
   @js.native
   trait CropStartEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_CropStartEvent: CropEventData = js.native
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var rotate: Double = js.native
+    var rotate: Double
     
-    var scaleX: Double = js.native
+    var scaleX: Double
     
-    var scaleY: Double = js.native
+    var scaleY: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Data {
     
@@ -394,26 +392,25 @@ object Cropper {
     def none: typings.cropperjs.cropperjsStrings.none = "none".asInstanceOf[typings.cropperjs.cropperjsStrings.none]
   }
   
-  @js.native
   trait GetCroppedCanvasOptions extends StObject {
     
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var imageSmoothingQuality: js.UndefOr[ImageSmoothingQuality] = js.native
+    var imageSmoothingQuality: js.UndefOr[ImageSmoothingQuality] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GetCroppedCanvasOptions {
     
@@ -482,28 +479,27 @@ object Cropper {
     }
   }
   
-  @js.native
   trait ImageData extends StObject {
     
-    var aspectRatio: Double = js.native
+    var aspectRatio: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var naturalHeight: Double = js.native
+    var naturalHeight: Double
     
-    var naturalWidth: Double = js.native
+    var naturalWidth: Double
     
-    var rotate: Double = js.native
+    var rotate: Double
     
-    var scaleX: Double = js.native
+    var scaleX: Double
     
-    var scaleY: Double = js.native
+    var scaleY: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImageData {
     
@@ -577,86 +573,85 @@ object Cropper {
     def medium: typings.cropperjs.cropperjsStrings.medium = "medium".asInstanceOf[typings.cropperjs.cropperjsStrings.medium]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
-    var autoCrop: js.UndefOr[Boolean] = js.native
+    var autoCrop: js.UndefOr[Boolean] = js.undefined
     
-    var autoCropArea: js.UndefOr[Double] = js.native
+    var autoCropArea: js.UndefOr[Double] = js.undefined
     
-    var background: js.UndefOr[Boolean] = js.native
+    var background: js.UndefOr[Boolean] = js.undefined
     
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
-    var checkCrossOrigin: js.UndefOr[Boolean] = js.native
+    var checkCrossOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var checkOrientation: js.UndefOr[Boolean] = js.native
+    var checkOrientation: js.UndefOr[Boolean] = js.undefined
     
-    var crop: js.UndefOr[js.Function1[/* event */ CropEvent, Unit]] = js.native
+    var crop: js.UndefOr[js.Function1[/* event */ CropEvent, Unit]] = js.undefined
     
-    var cropBoxMovable: js.UndefOr[Boolean] = js.native
+    var cropBoxMovable: js.UndefOr[Boolean] = js.undefined
     
-    var cropBoxResizable: js.UndefOr[Boolean] = js.native
+    var cropBoxResizable: js.UndefOr[Boolean] = js.undefined
     
-    var cropend: js.UndefOr[js.Function1[/* event */ CropEndEvent, Unit]] = js.native
+    var cropend: js.UndefOr[js.Function1[/* event */ CropEndEvent, Unit]] = js.undefined
     
-    var cropmove: js.UndefOr[js.Function1[/* event */ CropMoveEvent, Unit]] = js.native
+    var cropmove: js.UndefOr[js.Function1[/* event */ CropMoveEvent, Unit]] = js.undefined
     
-    var cropstart: js.UndefOr[js.Function1[/* event */ CropStartEvent, Unit]] = js.native
+    var cropstart: js.UndefOr[js.Function1[/* event */ CropStartEvent, Unit]] = js.undefined
     
-    var data: js.UndefOr[Data] = js.native
+    var data: js.UndefOr[Data] = js.undefined
     
-    var dragMode: js.UndefOr[DragMode] = js.native
+    var dragMode: js.UndefOr[DragMode] = js.undefined
     
-    var guides: js.UndefOr[Boolean] = js.native
+    var guides: js.UndefOr[Boolean] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
-    var initialAspectRatio: js.UndefOr[Double] = js.native
+    var initialAspectRatio: js.UndefOr[Double] = js.undefined
     
-    var minCanvasHeight: js.UndefOr[Double] = js.native
+    var minCanvasHeight: js.UndefOr[Double] = js.undefined
     
-    var minCanvasWidth: js.UndefOr[Double] = js.native
+    var minCanvasWidth: js.UndefOr[Double] = js.undefined
     
-    var minContainerHeight: js.UndefOr[Double] = js.native
+    var minContainerHeight: js.UndefOr[Double] = js.undefined
     
-    var minContainerWidth: js.UndefOr[Double] = js.native
+    var minContainerWidth: js.UndefOr[Double] = js.undefined
     
-    var minCropBoxHeight: js.UndefOr[Double] = js.native
+    var minCropBoxHeight: js.UndefOr[Double] = js.undefined
     
-    var minCropBoxWidth: js.UndefOr[Double] = js.native
+    var minCropBoxWidth: js.UndefOr[Double] = js.undefined
     
-    var modal: js.UndefOr[Boolean] = js.native
+    var modal: js.UndefOr[Boolean] = js.undefined
     
-    var movable: js.UndefOr[Boolean] = js.native
+    var movable: js.UndefOr[Boolean] = js.undefined
     
-    var preview: js.UndefOr[Element | js.Array[Element] | NodeList | String] = js.native
+    var preview: js.UndefOr[Element | js.Array[Element] | NodeList | String] = js.undefined
     
-    var ready: js.UndefOr[js.Function1[/* event */ ReadyEvent, Unit]] = js.native
+    var ready: js.UndefOr[js.Function1[/* event */ ReadyEvent, Unit]] = js.undefined
     
-    var responsive: js.UndefOr[Boolean] = js.native
+    var responsive: js.UndefOr[Boolean] = js.undefined
     
-    var restore: js.UndefOr[Boolean] = js.native
+    var restore: js.UndefOr[Boolean] = js.undefined
     
-    var rotatable: js.UndefOr[Boolean] = js.native
+    var rotatable: js.UndefOr[Boolean] = js.undefined
     
-    var scalable: js.UndefOr[Boolean] = js.native
+    var scalable: js.UndefOr[Boolean] = js.undefined
     
-    var toggleDragModeOnDblclick: js.UndefOr[Boolean] = js.native
+    var toggleDragModeOnDblclick: js.UndefOr[Boolean] = js.undefined
     
-    var viewMode: js.UndefOr[ViewMode] = js.native
+    var viewMode: js.UndefOr[ViewMode] = js.undefined
     
-    var wheelZoomRatio: js.UndefOr[Double] = js.native
+    var wheelZoomRatio: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent, Unit]] = js.native
+    var zoom: js.UndefOr[js.Function1[/* event */ ZoomEvent, Unit]] = js.undefined
     
-    var zoomOnTouch: js.UndefOr[Boolean] = js.native
+    var zoomOnTouch: js.UndefOr[Boolean] = js.undefined
     
-    var zoomOnWheel: js.UndefOr[Boolean] = js.native
+    var zoomOnWheel: js.UndefOr[Boolean] = js.undefined
     
-    var zoomable: js.UndefOr[Boolean] = js.native
+    var zoomable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -910,16 +905,15 @@ object Cropper {
   
   type ReadyEvent = CustomEvent[js.Any]
   
-  @js.native
   trait SetCanvasDataOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SetCanvasDataOptions {
     
@@ -958,16 +952,15 @@ object Cropper {
     }
   }
   
-  @js.native
   trait SetCropBoxDataOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object SetCropBoxDataOptions {
     
@@ -1006,22 +999,21 @@ object Cropper {
     }
   }
   
-  @js.native
   trait SetDataOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var scaleX: js.UndefOr[Double] = js.native
+    var scaleX: js.UndefOr[Double] = js.undefined
     
-    var scaleY: js.UndefOr[Double] = js.native
+    var scaleY: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object SetDataOptions {
     
@@ -1102,20 +1094,20 @@ object Cropper {
   
   @js.native
   trait ZoomEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_ZoomEvent: ZoomEventData = js.native
   }
   
-  @js.native
   trait ZoomEventData extends StObject {
     
-    var oldRatio: Double = js.native
+    var oldRatio: Double
     
-    var originalEvent: WheelEvent | PointerEvent | TouchEvent = js.native
+    var originalEvent: WheelEvent | PointerEvent | TouchEvent
     
-    var ratio: Double = js.native
+    var ratio: Double
   }
   object ZoomEventData {
     

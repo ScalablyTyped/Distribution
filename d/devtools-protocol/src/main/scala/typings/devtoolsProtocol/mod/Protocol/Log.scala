@@ -30,18 +30,16 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.StackTrace
 import typings.devtoolsProtocol.mod.Protocol.Runtime.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Log {
   
-  @js.native
   trait EntryAddedEvent extends StObject {
     
     /**
       * The entry.
       */
-    var entry: LogEntry = js.native
+    var entry: LogEntry
   }
   object EntryAddedEvent {
     
@@ -59,58 +57,57 @@ object Log {
     }
   }
   
-  @js.native
   trait LogEntry extends StObject {
     
     /**
       * Call arguments.
       */
-    var args: js.UndefOr[js.Array[RemoteObject]] = js.native
+    var args: js.UndefOr[js.Array[RemoteObject]] = js.undefined
     
     /**
       * Log entry severity. (LogEntryLevel enum)
       */
-    var level: verbose | info | warning | error = js.native
+    var level: verbose | info | warning | error
     
     /**
       * Line number in the resource.
       */
-    var lineNumber: js.UndefOr[integer] = js.native
+    var lineNumber: js.UndefOr[integer] = js.undefined
     
     /**
       * Identifier of the network request associated with this entry.
       */
-    var networkRequestId: js.UndefOr[RequestId] = js.native
+    var networkRequestId: js.UndefOr[RequestId] = js.undefined
     
     /**
       * Log entry source. (LogEntrySource enum)
       */
-    var source: xml | javascript_ | network | storage | appcache | rendering | security | deprecation | worker_ | violation | intervention | recommendation | other_ = js.native
+    var source: xml | javascript_ | network | storage | appcache | rendering | security | deprecation | worker_ | violation | intervention | recommendation | other_
     
     /**
       * JavaScript stack trace.
       */
-    var stackTrace: js.UndefOr[StackTrace] = js.native
+    var stackTrace: js.UndefOr[StackTrace] = js.undefined
     
     /**
       * Logged text.
       */
-    var text: String = js.native
+    var text: String
     
     /**
       * Timestamp when this entry was added.
       */
-    var timestamp: Timestamp = js.native
+    var timestamp: Timestamp
     
     /**
       * URL of the resource if known.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * Identifier of the worker associated with this entry.
       */
-    var workerId: js.UndefOr[String] = js.native
+    var workerId: js.UndefOr[String] = js.undefined
   }
   object LogEntry {
     
@@ -263,13 +260,12 @@ object Log {
     def XML: xml = "xml".asInstanceOf[xml]
   }
   
-  @js.native
   trait StartViolationsReportRequest extends StObject {
     
     /**
       * Configuration for violations.
       */
-    var config: js.Array[ViolationSetting] = js.native
+    var config: js.Array[ViolationSetting]
   }
   object StartViolationsReportRequest {
     
@@ -290,18 +286,17 @@ object Log {
     }
   }
   
-  @js.native
   trait ViolationSetting extends StObject {
     
     /**
       * Violation type. (ViolationSettingName enum)
       */
-    var name: longTask | longLayout | blockedEvent | blockedParser | discouragedAPIUse | handler | recurringHandler = js.native
+    var name: longTask | longLayout | blockedEvent | blockedParser | discouragedAPIUse | handler | recurringHandler
     
     /**
       * Time threshold to trigger upon.
       */
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object ViolationSetting {
     

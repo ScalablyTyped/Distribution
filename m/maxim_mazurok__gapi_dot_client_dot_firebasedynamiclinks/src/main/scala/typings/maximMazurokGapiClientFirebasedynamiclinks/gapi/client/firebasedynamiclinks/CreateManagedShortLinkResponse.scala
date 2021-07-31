@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateManagedShortLinkResponse extends StObject {
   
   /** Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz */
-  var managedShortLink: js.UndefOr[ManagedShortLink] = js.native
+  var managedShortLink: js.UndefOr[ManagedShortLink] = js.undefined
   
   /** Preview link to show the link flow chart. (debug info.) */
-  var previewLink: js.UndefOr[String] = js.native
+  var previewLink: js.UndefOr[String] = js.undefined
   
   /** Information about potential warnings on link creation. */
-  var warning: js.UndefOr[js.Array[DynamicLinkWarning]] = js.native
+  var warning: js.UndefOr[js.Array[DynamicLinkWarning]] = js.undefined
 }
 object CreateManagedShortLinkResponse {
   

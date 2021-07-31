@@ -2,34 +2,32 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Templates extends StObject {
   
   // TODO: determine appropriate context type and purpose of this template
-  var Body: js.UndefOr[RenderCallback | String] = js.native
+  var Body: js.UndefOr[RenderCallback | String] = js.undefined
   
   /** Defines templates for fields rendering. The field is specified by it's internal name. */
-  var Fields: js.UndefOr[FieldTemplates] = js.native
+  var Fields: js.UndefOr[FieldTemplates] = js.undefined
   
   /** Defines template for rendering list view footer.
     Can be either string or SingleTemplateCallback */
-  var Footer: js.UndefOr[SingleTemplateCallback | String] = js.native
+  var Footer: js.UndefOr[SingleTemplateCallback | String] = js.undefined
   
   // TODO: determine appropriate context type and purpose of this template
   /** Defines templates for rendering groups (aggregations). */
-  var Group: js.UndefOr[GroupCallback | String] = js.native
+  var Group: js.UndefOr[GroupCallback | String] = js.undefined
   
   /** Defines template for rendering list view header.
     Can be either string or SingleTemplateCallback */
-  var Header: js.UndefOr[SingleTemplateCallback | String] = js.native
+  var Header: js.UndefOr[SingleTemplateCallback | String] = js.undefined
   
   /** Defines templates for list items rendering. */
-  var Item: js.UndefOr[ItemCallback | String] = js.native
+  var Item: js.UndefOr[ItemCallback | String] = js.undefined
   
-  var View: js.UndefOr[RenderCallback | String] = js.native
+  var View: js.UndefOr[RenderCallback | String] = js.undefined
 }
 object Templates {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRxNormInferenceJobsRequest extends StObject {
   
   /**
     * Filters the jobs that are returned. You can filter jobs based on their names, status, or the date and time that they were submitted. You can only set one filter at a time.
     */
-  var Filter: js.UndefOr[ComprehendMedicalAsyncJobFilter] = js.native
+  var Filter: js.UndefOr[ComprehendMedicalAsyncJobFilter] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var MaxResults: js.UndefOr[MaxResultsInteger] = js.native
+  var MaxResults: js.UndefOr[MaxResultsInteger] = js.undefined
   
   /**
     * Identifies the next page of results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListRxNormInferenceJobsRequest {
   

@@ -6,22 +6,20 @@ import typings.vegaLite.channeldefMod.TypedFieldDef
 import typings.vegaLite.vegaLiteStrings.binned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelFieldDef extends StObject {
   
-  var channel: NonPositionChannel = js.native
+  var channel: NonPositionChannel
   
-  var fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null] = js.native
+  var fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
 }
 object ChannelFieldDef {
   
   @scala.inline
   def apply(
     channel: NonPositionChannel,
-    fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
   ): ChannelFieldDef = {
     val __obj = js.Dynamic.literal(channel = channel.asInstanceOf[js.Any], fieldDef = fieldDef.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChannelFieldDef]
@@ -34,6 +32,6 @@ object ChannelFieldDef {
     def setChannel(value: NonPositionChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setFieldDef(value: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
   }
 }

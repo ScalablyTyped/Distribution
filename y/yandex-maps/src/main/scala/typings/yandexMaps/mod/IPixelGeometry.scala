@@ -2,19 +2,19 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPixelGeometry extends IBaseGeometry {
+trait IPixelGeometry
+  extends StObject
+     with IBaseGeometry {
   
-  def equals(geometry: IPixelGeometry): Boolean = js.native
+  def equals(geometry: IPixelGeometry): Boolean
   
-  def getMetaData(): js.Object = js.native
+  def getMetaData(): js.Object
   
-  def scale(factor: Double): IPixelGeometry = js.native
+  def scale(factor: Double): IPixelGeometry
   
-  def shift(offset: js.Array[Double]): IPixelGeometry = js.native
+  def shift(offset: js.Array[Double]): IPixelGeometry
 }
 object IPixelGeometry {
   

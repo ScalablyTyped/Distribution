@@ -1,7 +1,5 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreatePolicyFn
-import typings.nodePgMigrate.anon.ReverseRenamePolicyFn
 import typings.nodePgMigrate.generalTypesMod.IfExistsOption
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.nodePgMigrateStrings.ALL
@@ -11,7 +9,6 @@ import typings.nodePgMigrate.nodePgMigrateStrings.SELECT
 import typings.nodePgMigrate.nodePgMigrateStrings.UPDATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policiesTypesMod {
@@ -23,21 +20,38 @@ object policiesTypesMod {
     String | js.Array[String]
   ]
   
-  type CreatePolicy = CreatePolicyFn with ReverseCreatePolicyFn
+  @js.native
+  trait CreatePolicy extends CreatePolicyFn {
+    
+    def reverse(tableName: Name, policyName: String): String | js.Array[String] = js.native
+    def reverse(tableName: Name, policyName: String, options: CreatePolicyOptions & IfExistsOption): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreatePolicyFn = js.native
+  }
   
   type CreatePolicyFn = js.Function3[
     /* tableName */ Name, 
     /* policyName */ String, 
-    /* options */ js.UndefOr[CreatePolicyOptions with IfExistsOption], 
+    /* options */ js.UndefOr[CreatePolicyOptions & IfExistsOption], 
     String | js.Array[String]
   ]
   
-  type CreatePolicyOptions = CreatePolicyOptionsEn with PolicyOptions
+  trait CreatePolicyOptions
+    extends StObject
+       with CreatePolicyOptionsEn
+       with PolicyOptions
+  object CreatePolicyOptions {
+    
+    @scala.inline
+    def apply(): CreatePolicyOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[CreatePolicyOptions]
+    }
+  }
   
-  @js.native
   trait CreatePolicyOptionsEn extends StObject {
     
-    var command: js.UndefOr[ALL | SELECT | INSERT | UPDATE | DELETE] = js.native
+    var command: js.UndefOr[ALL | SELECT | INSERT | UPDATE | DELETE] = js.undefined
   }
   object CreatePolicyOptionsEn {
     
@@ -65,14 +79,13 @@ object policiesTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait PolicyOptions extends StObject {
     
-    var check: js.UndefOr[String] = js.native
+    var check: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String | js.Array[String]] = js.native
+    var role: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var using: js.UndefOr[String] = js.native
+    var `using`: js.UndefOr[String] = js.undefined
   }
   object PolicyOptions {
     
@@ -108,7 +121,13 @@ object policiesTypesMod {
     }
   }
   
-  type RenamePolicy = RenamePolicyFn with ReverseRenamePolicyFn
+  @js.native
+  trait RenamePolicy extends RenamePolicyFn {
+    
+    def reverse(tableName: Name, policyName: String, newPolicyName: String): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenamePolicyFn = js.native
+  }
   
   type RenamePolicyFn = js.Function3[
     /* tableName */ Name, 

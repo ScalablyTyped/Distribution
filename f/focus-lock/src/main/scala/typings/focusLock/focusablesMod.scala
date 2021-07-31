@@ -3,25 +3,26 @@ package typings.focusLock
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusablesMod {
   
-  @JSImport("focus-lock/dist/es5/focusables", "getFocusabledIn")
+  @JSImport("focus-lock/dist/es5/focusables", JSImport.Namespace)
   @js.native
-  def getFocusabledIn(topNode: HTMLElement): js.Array[FocusableIn] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getFocusabledIn(topNode: HTMLElement): js.Array[FocusableIn] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusabledIn")(topNode.asInstanceOf[js.Any]).asInstanceOf[js.Array[FocusableIn]]
+  
   trait FocusableIn extends StObject {
     
-    var guard: Boolean = js.native
+    var guard: Boolean
     
-    var index: Double = js.native
+    var index: Double
     
-    var lockItem: Boolean = js.native
+    var lockItem: Boolean
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
   }
   object FocusableIn {
     

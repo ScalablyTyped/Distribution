@@ -3,7 +3,6 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.clusterer.Hint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -11,11 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @JSImport("yandex-maps", "Clusterer")
 @js.native
 class Clusterer_ ()
-  extends IChild[IControlParent]
+  extends StObject
+     with IChild[IControlParent]
      with IParentOnMap {
   def this(options: IClustererOptions) = this()
   
   var balloon: typings.yandexMaps.mod.clusterer.Balloon = js.native
+  
+  /* CompleteClass */
+  var events: IEventManager[js.Object] = js.native
+  
+  /* CompleteClass */
+  override def getMap(): Map_ = js.native
   
   //     balloonopen:
   var hint: Hint = js.native

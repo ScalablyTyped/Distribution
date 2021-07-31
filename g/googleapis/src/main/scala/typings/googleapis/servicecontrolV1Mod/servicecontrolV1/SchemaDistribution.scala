@@ -2,7 +2,6 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * samples, used to compute variance   - a histogram of the values of the
   * sample points
   */
-@js.native
 trait SchemaDistribution extends StObject {
   
   /**
@@ -26,50 +24,50 @@ trait SchemaDistribution extends StObject {
     * samples in the overflow bucket. See the comments of `bucket_option` below
     * for more details.  Any suffix of trailing zeros may be omitted.
     */
-  var bucketCounts: js.UndefOr[js.Array[String]] = js.native
+  var bucketCounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The total number of samples in the distribution. Must be &gt;= 0.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * Buckets with arbitrary user-provided width.
     */
-  var explicitBuckets: js.UndefOr[SchemaExplicitBuckets] = js.native
+  var explicitBuckets: js.UndefOr[SchemaExplicitBuckets] = js.undefined
   
   /**
     * Buckets with exponentially growing width.
     */
-  var exponentialBuckets: js.UndefOr[SchemaExponentialBuckets] = js.native
+  var exponentialBuckets: js.UndefOr[SchemaExponentialBuckets] = js.undefined
   
   /**
     * Buckets with constant width.
     */
-  var linearBuckets: js.UndefOr[SchemaLinearBuckets] = js.native
+  var linearBuckets: js.UndefOr[SchemaLinearBuckets] = js.undefined
   
   /**
     * The maximum of the population of values. Ignored if `count` is zero.
     */
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
   /**
     * The arithmetic mean of the samples in the distribution. If `count` is
     * zero then this field must be zero.
     */
-  var mean: js.UndefOr[Double] = js.native
+  var mean: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum of the population of values. Ignored if `count` is zero.
     */
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
   
   /**
     * The sum of squared deviations from the mean:   Sum[i=1..count]((x_i -
     * mean)^2) where each x_i is a sample values. If `count` is zero then this
     * field must be zero, otherwise validation of the request fails.
     */
-  var sumOfSquaredDeviation: js.UndefOr[Double] = js.native
+  var sumOfSquaredDeviation: js.UndefOr[Double] = js.undefined
 }
 object SchemaDistribution {
   

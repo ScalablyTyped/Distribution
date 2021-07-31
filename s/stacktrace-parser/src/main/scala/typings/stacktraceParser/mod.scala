@@ -4,33 +4,34 @@ import typings.stacktraceParser.stacktraceParserStrings.LessthansignunknownGreat
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("stacktrace-parser", "parse")
+  @JSImport("stacktrace-parser", JSImport.Namespace)
   @js.native
-  def parse(stackString: String): js.Array[StackFrame] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(stackString: String): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(stackString.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  
   trait StackFrame extends StObject {
     
-    var arguments: js.Array[String] = js.native
+    var arguments: js.Array[String]
     
-    var column: Double | Null = js.native
+    var column: Double | Null
     
-    var file: String | Null = js.native
+    var file: String | Null
     
-    var lineNumber: Double | Null = js.native
+    var lineNumber: Double | Null
     
-    var methodName: LiteralUnion[LessthansignunknownGreaterthansign, String] = js.native
+    var methodName: LiteralUnion[LessthansignunknownGreaterthansign, String]
   }
   object StackFrame {
     
     @scala.inline
     def apply(arguments: js.Array[String], methodName: LiteralUnion[LessthansignunknownGreaterthansign, String]): StackFrame = {
-      val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], methodName = methodName.asInstanceOf[js.Any], column = null, file = null, lineNumber = null)
       __obj.asInstanceOf[StackFrame]
     }
     

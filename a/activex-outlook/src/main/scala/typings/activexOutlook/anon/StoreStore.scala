@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoreStore extends StObject {
   
-  val Store: typings.activexOutlook.Outlook.Store = js.native
+  val Store: typings.activexOutlook.Outlook.Store
 }
 object StoreStore {
   

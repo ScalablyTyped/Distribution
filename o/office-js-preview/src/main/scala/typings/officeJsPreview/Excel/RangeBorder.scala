@@ -28,7 +28,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Thick
 import typings.officeJsPreview.officeJsPreviewStrings.Thin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,7 +37,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait RangeBorder extends ClientObject {
+trait RangeBorder
+  extends StObject
+     with ClientObject {
   
   /**
     *

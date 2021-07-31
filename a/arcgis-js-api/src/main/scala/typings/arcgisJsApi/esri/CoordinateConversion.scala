@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.capture
 import typings.arcgisJsApi.arcgisJsApiStrings.live
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CoordinateConversion
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
   
   /**

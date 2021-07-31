@@ -4,7 +4,6 @@ import typings.reactNativeElements.mod.SocialMediaType
 import typings.reactNativeElements.mod._IconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeElementsStrings {
@@ -55,12 +54,16 @@ object reactNativeElementsStrings {
   def android: android = "android".asInstanceOf[android]
   
   @js.native
-  sealed trait angellist extends SocialMediaType
+  sealed trait angellist
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def angellist: angellist = "angellist".asInstanceOf[angellist]
   
   @js.native
-  sealed trait antdesign extends _IconType
+  sealed trait antdesign
+    extends StObject
+       with _IconType
   @scala.inline
   def antdesign: antdesign = "antdesign".asInstanceOf[antdesign]
   
@@ -150,7 +153,9 @@ object reactNativeElementsStrings {
   def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait codepen extends SocialMediaType
+  sealed trait codepen
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def codepen: codepen = "codepen".asInstanceOf[codepen]
   
@@ -185,7 +190,9 @@ object reactNativeElementsStrings {
   def emailAddress: emailAddress = "emailAddress".asInstanceOf[emailAddress]
   
   @js.native
-  sealed trait entypo extends _IconType
+  sealed trait entypo
+    extends StObject
+       with _IconType
   @scala.inline
   def entypo: entypo = "entypo".asInstanceOf[entypo]
   
@@ -195,12 +202,16 @@ object reactNativeElementsStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait evilicon extends _IconType
+  sealed trait evilicon
+    extends StObject
+       with _IconType
   @scala.inline
   def evilicon: evilicon = "evilicon".asInstanceOf[evilicon]
   
   @js.native
-  sealed trait facebook extends SocialMediaType
+  sealed trait facebook
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def facebook: facebook = "facebook".asInstanceOf[facebook]
   
@@ -215,17 +226,23 @@ object reactNativeElementsStrings {
   def familyName: familyName = "familyName".asInstanceOf[familyName]
   
   @js.native
-  sealed trait flickr extends SocialMediaType
+  sealed trait flickr
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def flickr: flickr = "flickr".asInstanceOf[flickr]
   
   @js.native
-  sealed trait `font-awesome` extends _IconType
+  sealed trait `font-awesome`
+    extends StObject
+       with _IconType
   @scala.inline
   def `font-awesome`: `font-awesome` = "font-awesome".asInstanceOf[`font-awesome`]
   
   @js.native
-  sealed trait `font-awesome-5` extends _IconType
+  sealed trait `font-awesome-5`
+    extends StObject
+       with _IconType
   @scala.inline
   def `font-awesome-5`: `font-awesome-5` = "font-awesome-5".asInstanceOf[`font-awesome-5`]
   
@@ -235,12 +252,16 @@ object reactNativeElementsStrings {
   def formSheet: formSheet = "formSheet".asInstanceOf[formSheet]
   
   @js.native
-  sealed trait foundation extends _IconType
+  sealed trait foundation
+    extends StObject
+       with _IconType
   @scala.inline
   def foundation: foundation = "foundation".asInstanceOf[foundation]
   
   @js.native
-  sealed trait foursquare extends SocialMediaType
+  sealed trait foursquare
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def foursquare: foursquare = "foursquare".asInstanceOf[foursquare]
   
@@ -255,17 +276,23 @@ object reactNativeElementsStrings {
   def fullStreetAddress: fullStreetAddress = "fullStreetAddress".asInstanceOf[fullStreetAddress]
   
   @js.native
-  sealed trait github extends SocialMediaType
+  sealed trait github
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def github: github = "github".asInstanceOf[github]
   
   @js.native
-  sealed trait `github-alt` extends SocialMediaType
+  sealed trait `github-alt`
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def `github-alt`: `github-alt` = "github-alt".asInstanceOf[`github-alt`]
   
   @js.native
-  sealed trait gitlab extends SocialMediaType
+  sealed trait gitlab
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def gitlab: gitlab = "gitlab".asInstanceOf[gitlab]
   
@@ -275,12 +302,16 @@ object reactNativeElementsStrings {
   def givenName: givenName = "givenName".asInstanceOf[givenName]
   
   @js.native
-  sealed trait google extends SocialMediaType
+  sealed trait google
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def google: google = "google".asInstanceOf[google]
   
   @js.native
-  sealed trait `google-plus-official` extends SocialMediaType
+  sealed trait `google-plus-official`
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def `google-plus-official`: `google-plus-official` = "google-plus-official".asInstanceOf[`google-plus-official`]
   
@@ -305,12 +336,16 @@ object reactNativeElementsStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait instagram extends SocialMediaType
+  sealed trait instagram
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def instagram: instagram = "instagram".asInstanceOf[instagram]
   
   @js.native
-  sealed trait ionicon extends _IconType
+  sealed trait ionicon
+    extends StObject
+       with _IconType
   @scala.inline
   def ionicon: ionicon = "ionicon".asInstanceOf[ionicon]
   
@@ -360,7 +395,9 @@ object reactNativeElementsStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait linkedin extends SocialMediaType
+  sealed trait linkedin
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def linkedin: linkedin = "linkedin".asInstanceOf[linkedin]
   
@@ -370,17 +407,23 @@ object reactNativeElementsStrings {
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait material extends _IconType
+  sealed trait material
+    extends StObject
+       with _IconType
   @scala.inline
   def material: material = "material".asInstanceOf[material]
   
   @js.native
-  sealed trait `material-community` extends _IconType
+  sealed trait `material-community`
+    extends StObject
+       with _IconType
   @scala.inline
   def `material-community`: `material-community` = "material-community".asInstanceOf[`material-community`]
   
   @js.native
-  sealed trait medium extends SocialMediaType
+  sealed trait medium
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -445,7 +488,9 @@ object reactNativeElementsStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait octicon extends _IconType
+  sealed trait octicon
+    extends StObject
+       with _IconType
   @scala.inline
   def octicon: octicon = "octicon".asInstanceOf[octicon]
   
@@ -490,7 +535,9 @@ object reactNativeElementsStrings {
   def phoneNumber: phoneNumber = "phoneNumber".asInstanceOf[phoneNumber]
   
   @js.native
-  sealed trait pinterest extends SocialMediaType
+  sealed trait pinterest
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def pinterest: pinterest = "pinterest".asInstanceOf[pinterest]
   
@@ -525,7 +572,9 @@ object reactNativeElementsStrings {
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait quora extends SocialMediaType
+  sealed trait quora
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def quora: quora = "quora".asInstanceOf[quora]
   
@@ -575,7 +624,9 @@ object reactNativeElementsStrings {
   def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait `simple-line-icon` extends _IconType
+  sealed trait `simple-line-icon`
+    extends StObject
+       with _IconType
   @scala.inline
   def `simple-line-icon`: `simple-line-icon` = "simple-line-icon".asInstanceOf[`simple-line-icon`]
   
@@ -595,7 +646,9 @@ object reactNativeElementsStrings {
   def solid: solid = "solid".asInstanceOf[solid]
   
   @js.native
-  sealed trait soundcloud extends SocialMediaType
+  sealed trait soundcloud
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def soundcloud: soundcloud = "soundcloud".asInstanceOf[soundcloud]
   
@@ -625,7 +678,9 @@ object reactNativeElementsStrings {
   def streetAddressLine2: streetAddressLine2 = "streetAddressLine2".asInstanceOf[streetAddressLine2]
   
   @js.native
-  sealed trait stumbleupon extends SocialMediaType
+  sealed trait stumbleupon
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def stumbleupon: stumbleupon = "stumbleupon".asInstanceOf[stumbleupon]
   
@@ -670,17 +725,23 @@ object reactNativeElementsStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait tumblr extends SocialMediaType
+  sealed trait tumblr
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def tumblr: tumblr = "tumblr".asInstanceOf[tumblr]
   
   @js.native
-  sealed trait twitch extends SocialMediaType
+  sealed trait twitch
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def twitch: twitch = "twitch".asInstanceOf[twitch]
   
   @js.native
-  sealed trait twitter extends SocialMediaType
+  sealed trait twitter
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def twitter: twitter = "twitter".asInstanceOf[twitter]
   
@@ -705,12 +766,16 @@ object reactNativeElementsStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait vimeo extends SocialMediaType
+  sealed trait vimeo
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def vimeo: vimeo = "vimeo".asInstanceOf[vimeo]
   
   @js.native
-  sealed trait vk extends SocialMediaType
+  sealed trait vk
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def vk: vk = "vk".asInstanceOf[vk]
   
@@ -720,7 +785,9 @@ object reactNativeElementsStrings {
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait weibo extends SocialMediaType
+  sealed trait weibo
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def weibo: weibo = "weibo".asInstanceOf[weibo]
   
@@ -730,7 +797,9 @@ object reactNativeElementsStrings {
   def `while-editing`: `while-editing` = "while-editing".asInstanceOf[`while-editing`]
   
   @js.native
-  sealed trait wordpress extends SocialMediaType
+  sealed trait wordpress
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def wordpress: wordpress = "wordpress".asInstanceOf[wordpress]
   
@@ -755,12 +824,16 @@ object reactNativeElementsStrings {
   def yesExcludeDescendants: yesExcludeDescendants = "yesExcludeDescendants".asInstanceOf[yesExcludeDescendants]
   
   @js.native
-  sealed trait youtube extends SocialMediaType
+  sealed trait youtube
+    extends StObject
+       with SocialMediaType
   @scala.inline
   def youtube: youtube = "youtube".asInstanceOf[youtube]
   
   @js.native
-  sealed trait zocial extends _IconType
+  sealed trait zocial
+    extends StObject
+       with _IconType
   @scala.inline
   def zocial: zocial = "zocial".asInstanceOf[zocial]
 }

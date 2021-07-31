@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSnapshotAttributeResult extends StObject {
   
   /**
     * The users and groups that have the permissions for creating volumes from the snapshot.
     */
-  var CreateVolumePermissions: js.UndefOr[CreateVolumePermissionList] = js.native
+  var CreateVolumePermissions: js.UndefOr[CreateVolumePermissionList] = js.undefined
   
   /**
     * The product codes.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * The ID of the EBS snapshot.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
 }
 object DescribeSnapshotAttributeResult {
   

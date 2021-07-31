@@ -2,7 +2,6 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,10 @@ class N1qlQuery () extends StObject {
 }
 object N1qlQuery {
   
+  @JSImport("couchbase", "N1qlQuery")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Consistency extends StObject
   /**
@@ -27,28 +30,34 @@ object N1qlQuery {
   object Consistency extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Consistency with Double] = js.native
+    def apply(value: Double): js.UndefOr[Consistency & Double] = js.native
     
     /**
       *     This is the default (for single-statement requests).
       */
     @js.native
-    sealed trait NOT_BOUND extends Consistency
-    /* 0 */ val NOT_BOUND: typings.couchbase.mod.N1qlQuery.Consistency.NOT_BOUND with Double = js.native
+    sealed trait NOT_BOUND
+      extends StObject
+         with Consistency
+    /* 0 */ val NOT_BOUND: typings.couchbase.mod.N1qlQuery.Consistency.NOT_BOUND & Double = js.native
     
     /**
       * This implements strong consistency per request.
       */
     @js.native
-    sealed trait REQUEST_PLUS extends Consistency
-    /* 1 */ val REQUEST_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.REQUEST_PLUS with Double = js.native
+    sealed trait REQUEST_PLUS
+      extends StObject
+         with Consistency
+    /* 1 */ val REQUEST_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.REQUEST_PLUS & Double = js.native
     
     /**
       * This implements strong consistency per statement.
       */
     @js.native
-    sealed trait STATEMENT_PLUS extends Consistency
-    /* 2 */ val STATEMENT_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.STATEMENT_PLUS with Double = js.native
+    sealed trait STATEMENT_PLUS
+      extends StObject
+         with Consistency
+    /* 2 */ val STATEMENT_PLUS: typings.couchbase.mod.N1qlQuery.Consistency.STATEMENT_PLUS & Double = js.native
   }
   
   /**
@@ -56,7 +65,6 @@ object N1qlQuery {
     * @param str
     */
   /* static member */
-  @JSImport("couchbase", "N1qlQuery.fromString")
-  @js.native
-  def fromString(str: String): N1qlStringQuery = js.native
+  @scala.inline
+  def fromString(str: String): N1qlStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[N1qlStringQuery]
 }

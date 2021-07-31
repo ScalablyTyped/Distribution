@@ -4,10 +4,8 @@ import typings.vis.visStrings.Array
 import typings.vis.visStrings.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSelectionOptions[T] extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait DataSelectionOptions[T] extends StObject {
     * When fields is defined, only the properties whose name is specified
     * in fields will be included in the returned items.
     */
-  var fields: js.UndefOr[js.Array[String] | js.Any] = js.native
+  var fields: js.UndefOr[js.Array[String] | js.Any] = js.undefined
   
   /**
     * Items can be filtered on specific properties by providing a filter function.
@@ -27,12 +25,12 @@ trait DataSelectionOptions[T] extends StObject {
     * All items for which the filter function returns true will be emitted.
     * See section Data Filtering.
     */
-  var filter: js.UndefOr[js.Function1[/* item */ T, Boolean]] = js.native
+  var filter: js.UndefOr[js.Function1[/* item */ T, Boolean]] = js.undefined
   
   /**
     * Order the items by a field name or custom sort function.
     */
-  var order: js.UndefOr[String | (js.Function2[/* a */ T, /* b */ T, Double])] = js.native
+  var order: js.UndefOr[String | (js.Function2[/* a */ T, /* b */ T, Double])] = js.undefined
   
   /**
     * Determine the type of output of the get function.
@@ -40,7 +38,7 @@ trait DataSelectionOptions[T] extends StObject {
     * The default returnType is an Array.
     * The Object type will return a JSON object with the ID's as keys.
     */
-  var returnType: js.UndefOr[Array | Object] = js.native
+  var returnType: js.UndefOr[Array | Object] = js.undefined
   
   /**
     * An object containing field names as key, and data types as value.
@@ -49,7 +47,7 @@ trait DataSelectionOptions[T] extends StObject {
     * This can be used for example to convert ISO strings containing a date to a JavaScript Date object,
     * or convert strings to numbers or vice versa. The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
 }
 object DataSelectionOptions {
   
@@ -60,7 +58,7 @@ object DataSelectionOptions {
   }
   
   @scala.inline
-  implicit class DataSelectionOptionsMutableBuilder[Self <: DataSelectionOptions[_], T] (val x: Self with DataSelectionOptions[T]) extends AnyVal {
+  implicit class DataSelectionOptionsMutableBuilder[Self <: DataSelectionOptions[?], T] (val x: Self & DataSelectionOptions[T]) extends AnyVal {
     
     @scala.inline
     def setFields(value: js.Array[String] | js.Any): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])

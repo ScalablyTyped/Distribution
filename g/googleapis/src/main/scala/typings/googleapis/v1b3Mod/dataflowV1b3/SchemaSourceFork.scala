@@ -2,34 +2,32 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DEPRECATED in favor of DynamicSourceSplit.
   */
-@js.native
 trait SchemaSourceFork extends StObject {
   
   /**
     * DEPRECATED
     */
-  var primary: js.UndefOr[SchemaSourceSplitShard] = js.native
+  var primary: js.UndefOr[SchemaSourceSplitShard] = js.undefined
   
   /**
     * DEPRECATED
     */
-  var primarySource: js.UndefOr[SchemaDerivedSource] = js.native
+  var primarySource: js.UndefOr[SchemaDerivedSource] = js.undefined
   
   /**
     * DEPRECATED
     */
-  var residual: js.UndefOr[SchemaSourceSplitShard] = js.native
+  var residual: js.UndefOr[SchemaSourceSplitShard] = js.undefined
   
   /**
     * DEPRECATED
     */
-  var residualSource: js.UndefOr[SchemaDerivedSource] = js.native
+  var residualSource: js.UndefOr[SchemaDerivedSource] = js.undefined
 }
 object SchemaSourceFork {
   

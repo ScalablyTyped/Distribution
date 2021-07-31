@@ -2,10 +2,8 @@ package typings.naverWhale.whale.contentSettings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearDetails extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ClearDetails extends StObject {
     * * regular: setting for regular profile (which is inherited by the incognito profile if not overridden elsewhere),
     * * incognito_session_only: setting for incognito profile that can only be set during an incognito session and is deleted when the incognito session ends (overrides regular settings).
     */
-  var scope: js.UndefOr[typings.chrome.chrome.contentSettings.ScopeEnum] = js.native
+  var scope: js.UndefOr[typings.chrome.chrome.contentSettings.ScopeEnum] = js.undefined
 }
 object ClearDetails {
   

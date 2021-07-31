@@ -2,13 +2,11 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorProfile extends StObject {
   
-  var dummy: Double = js.native
+  var dummy: Double
 }
 object ColorProfile {
   

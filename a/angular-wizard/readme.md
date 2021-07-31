@@ -12,7 +12,7 @@ Easy to use Wizard library for Angular JS
 | Keywords           | angular, client, browser, wizard, form, steps |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 133507 |
+| # downloads        | 145842 |
 | # stars            | 1 |
 
 ## Links

@@ -2,51 +2,99 @@ package typings.denque
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("denque", JSImport.Namespace)
   @js.native
-  class ^[T] () extends Denque[T] {
+  class ^[T] ()
+    extends StObject
+       with Denque[T] {
     def this(array: js.Array[T]) = this()
-  }
-  
-  @js.native
-  trait Denque[T] extends StObject {
     
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
-    def get(index: Double): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def get(index: Double): js.UndefOr[T] = js.native
     
-    def isEmpty(): Boolean = js.native
+    /* CompleteClass */
+    override def isEmpty(): Boolean = js.native
     
+    /* CompleteClass */
     var length: Double = js.native
     
-    def peekAt(index: Double): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def peekAt(index: Double): js.UndefOr[T] = js.native
     
-    def peekBack(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def peekBack(): js.UndefOr[T] = js.native
     
-    def peekFront(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def peekFront(): js.UndefOr[T] = js.native
     
-    def pop(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def pop(): js.UndefOr[T] = js.native
     
-    def push(item: T): Double = js.native
+    /* CompleteClass */
+    override def push(item: T): Double = js.native
     
-    def remove(index: Double, count: Double): js.Array[T] = js.native
+    /* CompleteClass */
+    override def remove(index: Double, count: Double): js.Array[T] = js.native
     
-    def removeBack(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def removeBack(): js.UndefOr[T] = js.native
     
-    def removeOne(index: Double): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def removeOne(index: Double): js.UndefOr[T] = js.native
     
-    def shift(): js.UndefOr[T] = js.native
+    /* CompleteClass */
+    override def shift(): js.UndefOr[T] = js.native
     
-    def splice(index: Double, count: Double, item: T*): js.UndefOr[js.Array[T]] = js.native
+    /* CompleteClass */
+    override def splice(index: Double, count: Double, item: T*): js.UndefOr[js.Array[T]] = js.native
     
-    def toArray(): js.Array[T] = js.native
+    /* CompleteClass */
+    override def toArray(): js.Array[T] = js.native
     
-    def unshift(item: T): Double = js.native
+    /* CompleteClass */
+    override def unshift(item: T): Double = js.native
+  }
+  
+  trait Denque[T] extends StObject {
+    
+    def clear(): Unit
+    
+    def get(index: Double): js.UndefOr[T]
+    
+    def isEmpty(): Boolean
+    
+    var length: Double
+    
+    def peekAt(index: Double): js.UndefOr[T]
+    
+    def peekBack(): js.UndefOr[T]
+    
+    def peekFront(): js.UndefOr[T]
+    
+    def pop(): js.UndefOr[T]
+    
+    def push(item: T): Double
+    
+    def remove(index: Double, count: Double): js.Array[T]
+    
+    def removeBack(): js.UndefOr[T]
+    
+    def removeOne(index: Double): js.UndefOr[T]
+    
+    def shift(): js.UndefOr[T]
+    
+    def splice(index: Double, count: Double, item: T*): js.UndefOr[js.Array[T]]
+    
+    def toArray(): js.Array[T]
+    
+    def unshift(item: T): Double
   }
   object Denque {
     
@@ -74,7 +122,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DenqueMutableBuilder[Self <: Denque[_], T] (val x: Self with Denque[T]) extends AnyVal {
+    implicit class DenqueMutableBuilder[Self <: Denque[?], T] (val x: Self & Denque[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

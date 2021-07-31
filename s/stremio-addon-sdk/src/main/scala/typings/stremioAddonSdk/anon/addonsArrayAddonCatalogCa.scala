@@ -3,30 +3,28 @@ package typings.stremioAddonSdk.anon
 import typings.stremioAddonSdk.mod.AddonCatalog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  addons :std.Array<stremio-addon-sdk.stremio-addon-sdk.AddonCatalog>} & stremio-addon-sdk.stremio-addon-sdk.Cache */
-@js.native
 trait addonsArrayAddonCatalogCa extends StObject {
   
-  var addons: js.Array[AddonCatalog] = js.native
+  var addons: js.Array[AddonCatalog]
   
   /**
     * (in seconds) sets the Cache-Control header to max-age=$cacheMaxAge
     * and overwrites the global cache time set in serveHTTP options.
     */
-  var cacheMaxAge: js.UndefOr[Double] = js.native
+  var cacheMaxAge: js.UndefOr[Double] = js.undefined
   
   /**
     * (in seconds) sets the Cache-Control header to stale-if-error=$staleError.
     */
-  var staleError: js.UndefOr[Double] = js.native
+  var staleError: js.UndefOr[Double] = js.undefined
   
   /**
     * (in seconds) sets the Cache-Control header to stale-while-revalidate=$staleRevalidate.
     */
-  var staleRevalidate: js.UndefOr[Double] = js.native
+  var staleRevalidate: js.UndefOr[Double] = js.undefined
 }
 object addonsArrayAddonCatalogCa {
   

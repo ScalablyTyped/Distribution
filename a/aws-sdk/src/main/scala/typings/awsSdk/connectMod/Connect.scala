@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -99,7 +98,7 @@ trait Connect extends Service {
   ): Request[AssociateSecurityKeyResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Connect: ConfigBase with ClientConfiguration = js.native
+  var config_Connect: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a contact flow for the specified Amazon Connect instance. You can also create and update contact flows using the Amazon Connect Flow language.

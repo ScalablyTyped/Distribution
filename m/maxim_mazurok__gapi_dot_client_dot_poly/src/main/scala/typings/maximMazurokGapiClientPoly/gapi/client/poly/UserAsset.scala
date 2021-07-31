@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPoly.gapi.client.poly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAsset extends StObject {
   
   /** An Asset. */
-  var asset: js.UndefOr[Asset] = js.native
+  var asset: js.UndefOr[Asset] = js.undefined
 }
 object UserAsset {
   

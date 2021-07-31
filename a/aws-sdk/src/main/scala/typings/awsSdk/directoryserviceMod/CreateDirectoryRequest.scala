@@ -2,46 +2,44 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDirectoryRequest extends StObject {
   
   /**
     * A description for the directory.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * The fully qualified name for the directory, such as corp.example.com.
     */
-  var Name: DirectoryName = js.native
+  var Name: DirectoryName
   
   /**
     * The password for the directory administrator. The directory creation process creates a directory administrator account with the user name Administrator and this password. If you need to change the password for the administrator account, you can use the ResetUserPassword API call. The regex pattern for this string is made up of the following conditions:   Length (?=^.{8,64}$) – Must be between 8 and 64 characters   AND any 3 of the following password complexity rules required by Active Directory:   Numbers and upper case and lowercase (?=.*\d)(?=.*[A-Z])(?=.*[a-z])   Numbers and special characters and lower case (?=.*\d)(?=.*[^A-Za-z0-9\s])(?=.*[a-z])   Special characters and upper case and lower case (?=.*[^A-Za-z0-9\s])(?=.*[A-Z])(?=.*[a-z])   Numbers and upper case and special characters (?=.*\d)(?=.*[A-Z])(?=.*[^A-Za-z0-9\s])   For additional information about how Active Directory passwords are enforced, see Password must meet complexity requirements on the Microsoft website.
     */
-  var Password: typings.awsSdk.directoryserviceMod.Password = js.native
+  var Password: typings.awsSdk.directoryserviceMod.Password
   
   /**
     * The NetBIOS name of the directory, such as CORP.
     */
-  var ShortName: js.UndefOr[DirectoryShortName] = js.native
+  var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
   /**
     * The size of the directory.
     */
-  var Size: DirectorySize = js.native
+  var Size: DirectorySize
   
   /**
     * The tags to be assigned to the Simple AD directory.
     */
-  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.undefined
   
   /**
     * A DirectoryVpcSettings object that contains additional information for the operation.
     */
-  var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.native
+  var VpcSettings: js.UndefOr[DirectoryVpcSettings] = js.undefined
 }
 object CreateDirectoryRequest {
   

@@ -2,17 +2,15 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelCartesianPoint extends StObject {
   
   /** The x coordinate of the point. */
-  var x: Double = js.native
+  var x: Double
   
   /** The y coordinate of the point. */
-  var y: Double = js.native
+  var y: Double
 }
 object RaphaelCartesianPoint {
   

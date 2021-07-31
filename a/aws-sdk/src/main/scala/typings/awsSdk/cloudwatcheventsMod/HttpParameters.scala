@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpParameters extends StObject {
   
   /**
     * The headers that need to be sent as part of request invoking the API Gateway REST API.
     */
-  var HeaderParameters: js.UndefOr[HeaderParametersMap] = js.native
+  var HeaderParameters: js.UndefOr[HeaderParametersMap] = js.undefined
   
   /**
     * The path parameter values to be used to populate API Gateway REST API path wildcards ("*").
     */
-  var PathParameterValues: js.UndefOr[PathParameterList] = js.native
+  var PathParameterValues: js.UndefOr[PathParameterList] = js.undefined
   
   /**
     * The query string keys/values that need to be sent as part of request invoking the API Gateway REST API.
     */
-  var QueryStringParameters: js.UndefOr[QueryStringParametersMap] = js.native
+  var QueryStringParameters: js.UndefOr[QueryStringParametersMap] = js.undefined
 }
 object HttpParameters {
   

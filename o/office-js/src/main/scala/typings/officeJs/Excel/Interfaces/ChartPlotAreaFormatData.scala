@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartPlotAreaFormat.toJSON()`. */
-@js.native
 trait ChartPlotAreaFormatData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ChartPlotAreaFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var border: js.UndefOr[ChartBorderData] = js.native
+  var border: js.UndefOr[ChartBorderData] = js.undefined
 }
 object ChartPlotAreaFormatData {
   

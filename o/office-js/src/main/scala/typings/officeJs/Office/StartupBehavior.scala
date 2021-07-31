@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,11 +18,15 @@ object StartupBehavior extends StObject {
     * Load the add-in but do not show UI.
     */
   @js.native
-  sealed trait load extends StartupBehavior
+  sealed trait load
+    extends StObject
+       with StartupBehavior
   
   /**
     * The add-in does not load until opened by the user.
     */
   @js.native
-  sealed trait none extends StartupBehavior
+  sealed trait none
+    extends StObject
+       with StartupBehavior
 }

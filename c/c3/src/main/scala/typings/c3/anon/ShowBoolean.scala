@@ -2,13 +2,11 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowBoolean extends StObject {
   
-  var show: Boolean = js.native
+  var show: Boolean
 }
 object ShowBoolean {
   

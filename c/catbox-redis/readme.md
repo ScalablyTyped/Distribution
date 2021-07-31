@@ -10,9 +10,9 @@ Redis adapter for catbox
 | ------------------ | :-------------: |
 | Full name          | catbox-redis |
 | Keywords           | cache, catbox, redis |
-| # releases         | 5 |
+| # releases         | 1 |
 | # dependents       | 21 |
-| # downloads        | 284957 |
+| # downloads        | 274924 |
 | # stars            | 3 |
 
 ## Links

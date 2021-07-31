@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceParameters extends StObject {
   
-  var password: js.UndefOr[java.lang.String] = js.native
+  var password: js.UndefOr[java.lang.String] = js.undefined
   
-  var usernameFragment: js.UndefOr[java.lang.String] = js.native
+  var usernameFragment: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCIceParameters {
   

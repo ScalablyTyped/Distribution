@@ -9,25 +9,23 @@ import typings.sipJs.notificationMod.Notification
 import typings.sipJs.referralMod.Referral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionDelegateMod {
   
-  @js.native
   trait SessionDelegate extends StObject {
     
     /**
       * Called upon receiving an incoming in dialog BYE request.
       * @param bye - The bye.
       */
-    var onBye: js.UndefOr[js.Function1[/* bye */ Bye, Unit]] = js.native
+    var onBye: js.UndefOr[js.Function1[/* bye */ Bye, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog INFO request.
       * @param info - The info.
       */
-    var onInfo: js.UndefOr[js.Function1[/* info */ Info, Unit]] = js.native
+    var onInfo: js.UndefOr[js.Function1[/* info */ Info, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog INVITE request.
@@ -40,13 +38,13 @@ object sessionDelegateMod {
           /* statusCode */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog MESSAGE request.
       * @param message - The message.
       */
-    var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.native
+    var onMessage: js.UndefOr[js.Function1[/* message */ Message, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog NOTIFY request.
@@ -56,13 +54,13 @@ object sessionDelegateMod {
       *
       * @param notification - The notification.
       */
-    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.native
+    var onNotify: js.UndefOr[js.Function1[/* notification */ Notification, Unit]] = js.undefined
     
     /**
       * Called upon receiving an incoming in dialog REFER request.
       * @param referral - The referral.
       */
-    var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.native
+    var onRefer: js.UndefOr[js.Function1[/* referral */ Referral, Unit]] = js.undefined
     
     /**
       * Called upon creating a SessionDescriptionHandler.
@@ -95,7 +93,7 @@ object sessionDelegateMod {
           /* provisional */ Boolean, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SessionDelegate {
     

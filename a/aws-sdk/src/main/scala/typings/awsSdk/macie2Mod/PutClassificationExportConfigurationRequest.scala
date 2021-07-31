@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutClassificationExportConfigurationRequest extends StObject {
   
   /**
     * The location to store data classification results in, and the encryption settings to use when storing results in that location.
     */
-  var configuration: ClassificationExportConfiguration = js.native
+  var configuration: ClassificationExportConfiguration
 }
 object PutClassificationExportConfigurationRequest {
   

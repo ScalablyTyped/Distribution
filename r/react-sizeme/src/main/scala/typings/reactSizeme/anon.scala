@@ -2,23 +2,21 @@ package typings.reactSizeme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    val height: Double | Null = js.native
+    val height: Double | Null
     
-    val width: Double | Null = js.native
+    val width: Double | Null
   }
   object Height {
     
     @scala.inline
     def apply(): Height = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(height = null, width = null)
       __obj.asInstanceOf[Height]
     }
     

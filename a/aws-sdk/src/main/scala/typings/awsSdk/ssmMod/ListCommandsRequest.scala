@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCommandsRequest extends StObject {
   
   /**
     * (Optional) If provided, lists only the specified command.
     */
-  var CommandId: js.UndefOr[typings.awsSdk.ssmMod.CommandId] = js.native
+  var CommandId: js.UndefOr[typings.awsSdk.ssmMod.CommandId] = js.undefined
   
   /**
     * (Optional) One or more filters. Use a filter to return a more specific list of results. 
     */
-  var Filters: js.UndefOr[CommandFilterList] = js.native
+  var Filters: js.UndefOr[CommandFilterList] = js.undefined
   
   /**
     * (Optional) Lists commands issued against this instance ID.  You can't specify an instance ID in the same command that you specify Status = Pending. This is because the command has not reached the instance yet. 
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.ssmMod.InstanceId] = js.undefined
   
   /**
     * (Optional) The maximum number of items to return for this call. The call also returns a token that you can specify in a subsequent call to get the next set of results.
     */
-  var MaxResults: js.UndefOr[CommandMaxResults] = js.native
+  var MaxResults: js.UndefOr[CommandMaxResults] = js.undefined
   
   /**
     * (Optional) The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object ListCommandsRequest {
   

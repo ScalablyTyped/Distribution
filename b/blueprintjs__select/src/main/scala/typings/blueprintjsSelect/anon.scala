@@ -39,17 +39,15 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var resetOnQuery: Boolean = js.native
+    var resetOnQuery: Boolean
   }
   object Disabled {
     
@@ -70,12 +68,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Fill extends StObject {
     
-    var fill: Boolean = js.native
+    var fill: Boolean
     
-    var placeholder: String = js.native
+    var placeholder: String
   }
   object Fill {
     
@@ -97,48 +94,47 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core.IOverlayProps> */
-  @js.native
   trait PartialIOverlayProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backdropClassName: js.UndefOr[String] = js.native
+    var backdropClassName: js.UndefOr[String] = js.undefined
     
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
-    var canOutsideClickClose: js.UndefOr[Boolean] = js.native
+    var canOutsideClickClose: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
     
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var portalClassName: js.UndefOr[String] = js.native
+    var portalClassName: js.UndefOr[String] = js.undefined
     
-    var portalContainer: js.UndefOr[HTMLElement] = js.native
+    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIOverlayProps {
     
@@ -274,54 +270,53 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core.IPopoverProps> */
-  @js.native
   trait PartialIPopoverProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var boundary: js.UndefOr[Boundary] = js.native
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
-    var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
-    var captureDismiss: js.UndefOr[Boolean] = js.native
+    var captureDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String | Element] = js.native
+    var content: js.UndefOr[String | Element] = js.undefined
     
-    var defaultIsOpen: js.UndefOr[Boolean] = js.native
+    var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var hoverCloseDelay: js.UndefOr[Double] = js.native
+    var hoverCloseDelay: js.UndefOr[Double] = js.undefined
     
-    var hoverOpenDelay: js.UndefOr[Double] = js.native
+    var hoverOpenDelay: js.UndefOr[Double] = js.undefined
     
-    var inheritDarkTheme: js.UndefOr[Boolean] = js.native
+    var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
     
-    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.native
+    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[Modifiers] = js.native
+    var modifiers: js.UndefOr[Modifiers] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     var onInteraction: js.UndefOr[
         js.Function2[
@@ -329,41 +324,41 @@ object anon {
           /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var openOnTargetFocus: js.UndefOr[Boolean] = js.native
+    var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
     
-    var popoverClassName: js.UndefOr[String] = js.native
+    var popoverClassName: js.UndefOr[String] = js.undefined
     
-    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.native
+    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
     
-    var portalClassName: js.UndefOr[String] = js.native
+    var portalClassName: js.UndefOr[String] = js.undefined
     
-    var portalContainer: js.UndefOr[HTMLElement] = js.native
+    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var position: js.UndefOr[PopoverPosition] = js.native
+    var position: js.UndefOr[PopoverPosition] = js.undefined
     
-    var target: js.UndefOr[String | Element] = js.native
+    var target: js.UndefOr[String | Element] = js.undefined
     
-    var targetClassName: js.UndefOr[String] = js.native
+    var targetClassName: js.UndefOr[String] = js.undefined
     
-    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialIPopoverProps {
     
@@ -615,18 +610,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/select.@blueprintjs/select/lib/esm/components/select/suggest.ISuggestProps<any>> */
-  @js.native
   trait PartialISuggestPropsany extends StObject {
     
-    var activeItem: js.UndefOr[js.Any | ICreateNewItem | Null] = js.native
+    var activeItem: js.UndefOr[js.Any | ICreateNewItem | Null] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeOnSelect: js.UndefOr[Boolean] = js.native
+    var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, _]] = js.native
+    var createNewItemFromQuery: js.UndefOr[js.Function1[/* query */ String, js.Any]] = js.undefined
     
-    var createNewItemPosition: js.UndefOr[first | last] = js.native
+    var createNewItemPosition: js.UndefOr[first | last] = js.undefined
     
     var createNewItemRenderer: js.UndefOr[
         js.Function3[
@@ -635,67 +629,67 @@ object anon {
           /* handleClick */ MouseEventHandler[HTMLElement], 
           js.UndefOr[Element]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var defaultSelectedItem: js.UndefOr[js.Any] = js.native
+    var defaultSelectedItem: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var initialContent: js.UndefOr[ReactNode | Null] = js.native
+    var initialContent: js.UndefOr[ReactNode | Null] = js.undefined
     
-    var inputProps: js.UndefOr[IInputGroupProps with HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[IInputGroupProps & HTMLInputProps] = js.undefined
     
-    var inputValueRenderer: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.native
+    var inputValueRenderer: js.UndefOr[js.Function1[/* item */ js.Any, String]] = js.undefined
     
     var itemDisabled: js.UndefOr[
         (/* keyof any */ String) | (js.Function2[/* item */ js.Any, /* index */ Double, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var itemListPredicate: js.UndefOr[ItemListPredicate[_]] = js.native
+    var itemListPredicate: js.UndefOr[ItemListPredicate[js.Any]] = js.undefined
     
-    var itemListRenderer: js.UndefOr[ItemListRenderer[_]] = js.native
+    var itemListRenderer: js.UndefOr[ItemListRenderer[js.Any]] = js.undefined
     
-    var itemPredicate: js.UndefOr[ItemPredicate[_]] = js.native
+    var itemPredicate: js.UndefOr[ItemPredicate[js.Any]] = js.undefined
     
-    var itemRenderer: js.UndefOr[ItemRenderer[_]] = js.native
+    var itemRenderer: js.UndefOr[ItemRenderer[js.Any]] = js.undefined
     
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var itemsEqual: js.UndefOr[ItemsEqualProp[_]] = js.native
+    var itemsEqual: js.UndefOr[ItemsEqualProp[js.Any]] = js.undefined
     
-    var noResults: js.UndefOr[ReactNode] = js.native
+    var noResults: js.UndefOr[ReactNode] = js.undefined
     
     var onActiveItemChange: js.UndefOr[
         js.Function2[/* activeItem */ js.Any | Null, /* isCreateNewItem */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onItemSelect: js.UndefOr[
         js.Function2[/* item */ js.Any, /* event */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onItemsPaste: js.UndefOr[js.Function1[/* items */ js.Array[_], Unit]] = js.native
+    var onItemsPaste: js.UndefOr[js.Function1[/* items */ js.Array[js.Any], Unit]] = js.undefined
     
     var onQueryChange: js.UndefOr[
         js.Function2[/* query */ String, /* event */ js.UndefOr[ChangeEvent[HTMLInputElement]], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var openOnKeyDown: js.UndefOr[Boolean] = js.native
+    var openOnKeyDown: js.UndefOr[Boolean] = js.undefined
     
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.undefined
     
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
-    var resetOnClose: js.UndefOr[Boolean] = js.native
+    var resetOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var resetOnQuery: js.UndefOr[Boolean] = js.native
+    var resetOnQuery: js.UndefOr[Boolean] = js.undefined
     
-    var resetOnSelect: js.UndefOr[Boolean] = js.native
+    var resetOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var scrollToActiveItem: js.UndefOr[Boolean] = js.native
+    var scrollToActiveItem: js.UndefOr[Boolean] = js.undefined
     
-    var selectedItem: js.UndefOr[js.Any | Null] = js.native
+    var selectedItem: js.UndefOr[js.Any | Null] = js.undefined
   }
   object PartialISuggestPropsany {
     
@@ -730,7 +724,7 @@ object anon {
       def setCloseOnSelectUndefined: Self = StObject.set(x, "closeOnSelect", js.undefined)
       
       @scala.inline
-      def setCreateNewItemFromQuery(value: /* query */ String => _): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
+      def setCreateNewItemFromQuery(value: /* query */ String => js.Any): Self = StObject.set(x, "createNewItemFromQuery", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCreateNewItemFromQueryUndefined: Self = StObject.set(x, "createNewItemFromQuery", js.undefined)
@@ -777,7 +771,7 @@ object anon {
       def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)
       
       @scala.inline
-      def setInputProps(value: IInputGroupProps with HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      def setInputProps(value: IInputGroupProps & HTMLInputProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
@@ -798,39 +792,39 @@ object anon {
       def setItemDisabledUndefined: Self = StObject.set(x, "itemDisabled", js.undefined)
       
       @scala.inline
-      def setItemListPredicate(value: (/* query */ String, /* items */ js.Array[_]) => js.Array[_]): Self = StObject.set(x, "itemListPredicate", js.Any.fromFunction2(value))
+      def setItemListPredicate(value: (/* query */ String, /* items */ js.Array[js.Any]) => js.Array[js.Any]): Self = StObject.set(x, "itemListPredicate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setItemListPredicateUndefined: Self = StObject.set(x, "itemListPredicate", js.undefined)
       
       @scala.inline
-      def setItemListRenderer(value: /* itemListProps */ IItemListRendererProps[_] => Element | Null): Self = StObject.set(x, "itemListRenderer", js.Any.fromFunction1(value))
+      def setItemListRenderer(value: /* itemListProps */ IItemListRendererProps[js.Any] => Element | Null): Self = StObject.set(x, "itemListRenderer", js.Any.fromFunction1(value))
       
       @scala.inline
       def setItemListRendererUndefined: Self = StObject.set(x, "itemListRenderer", js.undefined)
       
       @scala.inline
       def setItemPredicate(
-        value: (/* query */ String, _, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean
+        value: (/* query */ String, js.Any, /* index */ js.UndefOr[Double], /* exactMatch */ js.UndefOr[Boolean]) => Boolean
       ): Self = StObject.set(x, "itemPredicate", js.Any.fromFunction4(value))
       
       @scala.inline
       def setItemPredicateUndefined: Self = StObject.set(x, "itemPredicate", js.undefined)
       
       @scala.inline
-      def setItemRenderer(value: (_, /* itemProps */ IItemRendererProps) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
+      def setItemRenderer(value: (js.Any, /* itemProps */ IItemRendererProps) => Element | Null): Self = StObject.set(x, "itemRenderer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setItemRendererUndefined: Self = StObject.set(x, "itemRenderer", js.undefined)
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemsEqual(value: ItemsEqualProp[_]): Self = StObject.set(x, "itemsEqual", value.asInstanceOf[js.Any])
+      def setItemsEqual(value: ItemsEqualProp[js.Any]): Self = StObject.set(x, "itemsEqual", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setItemsEqualFunction2(value: (_, _) => Boolean): Self = StObject.set(x, "itemsEqual", js.Any.fromFunction2(value))
+      def setItemsEqualFunction2(value: (js.Any, js.Any) => Boolean): Self = StObject.set(x, "itemsEqual", js.Any.fromFunction2(value))
       
       @scala.inline
       def setItemsEqualUndefined: Self = StObject.set(x, "itemsEqual", js.undefined)
@@ -860,7 +854,7 @@ object anon {
       def setOnItemSelectUndefined: Self = StObject.set(x, "onItemSelect", js.undefined)
       
       @scala.inline
-      def setOnItemsPaste(value: /* items */ js.Array[_] => Unit): Self = StObject.set(x, "onItemsPaste", js.Any.fromFunction1(value))
+      def setOnItemsPaste(value: /* items */ js.Array[js.Any] => Unit): Self = StObject.set(x, "onItemsPaste", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnItemsPasteUndefined: Self = StObject.set(x, "onItemsPaste", js.undefined)
@@ -878,7 +872,7 @@ object anon {
       def setOpenOnKeyDownUndefined: Self = StObject.set(x, "openOnKeyDown", js.undefined)
       
       @scala.inline
-      def setPopoverProps(value: PartialIPopoverProps with js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      def setPopoverProps(value: PartialIPopoverProps & js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
@@ -925,58 +919,57 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core.ITagInputProps> */
-  @js.native
   trait PartialITagInputProps extends StObject {
     
-    var addOnBlur: js.UndefOr[Boolean] = js.native
+    var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
-    var addOnPaste: js.UndefOr[Boolean] = js.native
+    var addOnPaste: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[HTMLInputProps] = js.undefined
     
-    var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
-    var intent: js.UndefOr[Intent] = js.native
+    var intent: js.UndefOr[Intent] = js.undefined
     
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
-    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.native
+    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     var onAdd: js.UndefOr[
         js.Function2[/* values */ js.Array[String], /* method */ TagInputAddMethod, Boolean | Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.undefined
     
-    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     var onKeyDown: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onKeyUp: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var rightElement: js.UndefOr[Element] = js.native
+    var rightElement: js.UndefOr[Element] = js.undefined
     
-    var separator: js.UndefOr[String | RegExp | `false`] = js.native
+    var separator: js.UndefOr[String | RegExp | `false`] = js.undefined
     
-    var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.native
+    var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.undefined
     
-    var values: js.UndefOr[js.Array[ReactNode]] = js.native
+    var values: js.UndefOr[js.Array[ReactNode]] = js.undefined
   }
   object PartialITagInputProps {
     
@@ -1133,10 +1126,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  children :react.react.ReactNode | undefined}> */
-  @js.native
   trait ReadonlychildrenReactNode extends StObject {
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
   }
   object ReadonlychildrenReactNode {
     

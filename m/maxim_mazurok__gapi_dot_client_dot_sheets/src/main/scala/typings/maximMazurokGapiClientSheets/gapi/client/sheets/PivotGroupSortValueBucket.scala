@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGroupSortValueBucket extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait PivotGroupSortValueBucket extends StObject {
     * value corresponds to a value within the first column group, and the second value corresponds to a value in the second column group. If no values are listed, this would indicate that
     * the row should be sorted according to the "Grand Total" over the column groups. If a single value is listed, this would correspond to using the "Total" of that bucket.
     */
-  var buckets: js.UndefOr[js.Array[ExtendedValue]] = js.native
+  var buckets: js.UndefOr[js.Array[ExtendedValue]] = js.undefined
   
   /** The offset in the PivotTable.values list which the values in this grouping should be sorted by. */
-  var valuesIndex: js.UndefOr[Double] = js.native
+  var valuesIndex: js.UndefOr[Double] = js.undefined
 }
 object PivotGroupSortValueBucket {
   

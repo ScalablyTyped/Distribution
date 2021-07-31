@@ -2,10 +2,8 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateAuthUrlOpts extends StObject {
   
   /**
@@ -18,20 +16,20 @@ trait GenerateAuthUrlOpts extends StObject {
     * first time that your application exchanges an authorization code for
     * tokens.
     */
-  var access_type: js.UndefOr[String] = js.native
+  var access_type: js.UndefOr[String] = js.undefined
   
   /**
     * The client ID for your application. The value passed into the constructor
     * will be used if not provided. You can find this value in the API Console.
     */
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
   /**
     * Recommended. Specifies an encoded 'code_verifier' that will be used as a
     * server-side challenge during authorization code exchange. This parameter
     * must be used with the 'code_challenge' parameter described above.
     */
-  var code_challenge: js.UndefOr[String] = js.native
+  var code_challenge: js.UndefOr[String] = js.undefined
   
   /**
     * Recommended. Specifies what method was used to encode a 'code_verifier'
@@ -41,7 +39,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * that includes a 'code_challenge'. The only supported values for this
     * parameter are "S256" or "plain".
     */
-  var code_challenge_method: js.UndefOr[CodeChallengeMethod] = js.native
+  var code_challenge_method: js.UndefOr[CodeChallengeMethod] = js.undefined
   
   /**
     * The hd (hosted domain) parameter streamlines the login process for G Suite
@@ -55,7 +53,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * (e.g. mycolledge.edu). Unlike the request parameter, the ID token claim is
     * contained within a security token from Google, so the value can be trusted.
     */
-  var hd: js.UndefOr[String] = js.native
+  var hd: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Enables applications to use incremental authorization to request
@@ -64,7 +62,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * will also cover any scopes to which the user previously granted the
     * application access. See the incremental authorization section for examples.
     */
-  var include_granted_scopes: js.UndefOr[Boolean] = js.native
+  var include_granted_scopes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. If your application knows which user is trying to authenticate,
@@ -74,7 +72,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * appropriate multi-login session. Set the parameter value to an email
     * address or sub identifier, which is equivalent to the user's Google ID.
     */
-  var login_hint: js.UndefOr[String] = js.native
+  var login_hint: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A space-delimited, case-sensitive list of prompts to present the
@@ -86,7 +84,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * 'consent' - 	Prompt the user for consent.
     * 'select_account' - Prompt the user to select an account.
     */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
   /**
     * Determines where the API server redirects the user after the user
@@ -95,12 +93,12 @@ trait GenerateAuthUrlOpts extends StObject {
     * the http or https scheme, case, and trailing slash ('/') must all match.
     * The value passed into the constructor will be used if not provided.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
   /**
     * The 'response_type' will always be set to 'CODE'.
     */
-  var response_type: js.UndefOr[String] = js.native
+  var response_type: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A space-delimited list of scopes that identify the resources that
@@ -117,7 +115,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * users to more easily understand why your application needs the access it is
     * requesting.
     */
-  var scope: js.UndefOr[js.Array[String] | String] = js.native
+  var scope: js.UndefOr[js.Array[String] | String] = js.undefined
   
   /**
     * Recommended. Specifies any string value that your application uses to
@@ -136,7 +134,7 @@ trait GenerateAuthUrlOpts extends StObject {
     * against attacks such as cross-site request forgery. See the OpenID Connect
     * documentation for an example of how to create and confirm a state token.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object GenerateAuthUrlOpts {
   

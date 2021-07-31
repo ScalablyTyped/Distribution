@@ -3,15 +3,13 @@ package typings.babelTypes.anon
 import typings.babelTypes.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Push extends StObject {
   
-  def buildUndefinedNode(): Node = js.native
+  def buildUndefinedNode(): Node
   
-  def push(value: Init): Unit = js.native
+  def push(value: Init): Unit
 }
 object Push {
   

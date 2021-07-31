@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the USB control transfer, the type of control request, whether the data is sent from or to the host, and the recipient of the request in the device. */
-@js.native
 trait UsbControlRequestType extends StObject {
   
   /** Gets or sets the bmRequestType value as a byte. */
-  var asByte: Double = js.native
+  var asByte: Double
   
   /** Gets or sets the type of USB control transfer: standard, class, or vendor. */
-  var controlTransferType: UsbControlTransferType = js.native
+  var controlTransferType: UsbControlTransferType
   
   /** Gets or sets the direction of the USB control transfer. */
-  var direction: UsbTransferDirection = js.native
+  var direction: UsbTransferDirection
   
   /** Gets or sets the recipient of the USB control transfer. */
-  var recipient: UsbControlRecipient = js.native
+  var recipient: UsbControlRecipient
 }
 object UsbControlRequestType {
   

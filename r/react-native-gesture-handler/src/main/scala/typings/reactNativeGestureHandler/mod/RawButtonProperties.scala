@@ -2,17 +2,17 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RawButtonProperties extends NativeViewGestureHandlerProperties {
+trait RawButtonProperties
+  extends StObject
+     with NativeViewGestureHandlerProperties {
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object RawButtonProperties {
   

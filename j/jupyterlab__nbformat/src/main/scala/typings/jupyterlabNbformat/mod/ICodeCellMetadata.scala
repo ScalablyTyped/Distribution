@@ -4,28 +4,28 @@ import typings.jupyterlabNbformat.anon.PartialICodeCellJupyterMe
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ @js.native
-trait ICodeCellMetadata extends IBaseCellMetadata {
+- typings.jupyterlabNbformat.mod.ICellMetadata because Already inherited */ trait ICodeCellMetadata
+  extends StObject
+     with IBaseCellMetadata {
   
   /**
     * Whether the cell is collapsed/expanded.
     */
-  var collapsed: Boolean = js.native
+  var collapsed: Boolean
   
   /**
     * The Jupyter metadata namespace
     */
   @JSName("jupyter")
-  var jupyter_ICodeCellMetadata: PartialICodeCellJupyterMe = js.native
+  var jupyter_ICodeCellMetadata: PartialICodeCellJupyterMe
   
   /**
     * Whether the cell's output is scrolled, unscrolled, or autoscrolled.
     */
-  var scrolled: Boolean | auto = js.native
+  var scrolled: Boolean | auto
 }
 object ICodeCellMetadata {
   

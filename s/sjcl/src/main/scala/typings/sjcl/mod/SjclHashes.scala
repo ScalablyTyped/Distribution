@@ -2,19 +2,17 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclHashes extends StObject {
   
-  var ripemd160: SjclHashStatic = js.native
+  var ripemd160: SjclHashStatic
   
-  var sha1: SjclHashStatic = js.native
+  var sha1: SjclHashStatic
   
-  var sha256: SjclHashStatic = js.native
+  var sha256: SjclHashStatic
   
-  var sha512: SjclHashStatic = js.native
+  var sha512: SjclHashStatic
 }
 object SjclHashes {
   

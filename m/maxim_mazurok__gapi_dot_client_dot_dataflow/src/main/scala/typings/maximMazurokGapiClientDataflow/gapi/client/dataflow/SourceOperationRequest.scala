@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceOperationRequest extends StObject {
   
   /** Information about a request to get metadata about a source. */
-  var getMetadata: js.UndefOr[SourceGetMetadataRequest] = js.native
+  var getMetadata: js.UndefOr[SourceGetMetadataRequest] = js.undefined
   
   /** User-provided name of the Read instruction for this source. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** System-defined name for the Read instruction for this source in the original workflow graph. */
-  var originalName: js.UndefOr[String] = js.native
+  var originalName: js.UndefOr[String] = js.undefined
   
   /** Information about a request to split a source. */
-  var split: js.UndefOr[SourceSplitRequest] = js.native
+  var split: js.UndefOr[SourceSplitRequest] = js.undefined
   
   /** System-defined name of the stage containing the source operation. Unique across the workflow. */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /** System-defined name of the Read instruction for this source. Unique across the workflow. */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
 }
 object SourceOperationRequest {
   

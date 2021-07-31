@@ -4,21 +4,19 @@ import typings.breeze.breeze.EntityError
 import typings.breeze.breeze.HttpResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityErrors extends StObject {
   
-  var entityErrors: js.Array[EntityError] = js.native
+  var entityErrors: js.Array[EntityError]
   
-  var httpResponse: HttpResponse = js.native
+  var httpResponse: HttpResponse
   
-  var message: String = js.native
+  var message: String
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
   
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object EntityErrors {
   

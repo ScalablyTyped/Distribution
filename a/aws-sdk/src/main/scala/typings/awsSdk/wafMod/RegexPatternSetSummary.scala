@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexPatternSetSummary extends StObject {
   
   /**
     * A friendly name or description of the RegexPatternSet. You can't change Name after you create a RegexPatternSet.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * The RegexPatternSetId for a RegexPatternSet. You use RegexPatternSetId to get information about a RegexPatternSet, update a RegexPatternSet, remove a RegexPatternSet from a RegexMatchSet, and delete a RegexPatternSet from AWS WAF.  RegexPatternSetId is returned by CreateRegexPatternSet and by ListRegexPatternSets.
     */
-  var RegexPatternSetId: ResourceId = js.native
+  var RegexPatternSetId: ResourceId
 }
 object RegexPatternSetSummary {
   

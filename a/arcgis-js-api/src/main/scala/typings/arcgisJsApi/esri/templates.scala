@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html)
   */
-@js.native
 trait templates extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait templates extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-templates.html#getTemplates)
     */
-  def getTemplates(params: templatesGetTemplatesParams): js.Promise[Templates_] = js.native
+  def getTemplates(params: templatesGetTemplatesParams): js.Promise[Templates_]
 }
 object templates {
   

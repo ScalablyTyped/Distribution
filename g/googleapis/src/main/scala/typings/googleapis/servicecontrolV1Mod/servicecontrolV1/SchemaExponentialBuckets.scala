@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describing buckets with exponentially growing width.
   */
-@js.native
 trait SchemaExponentialBuckets extends StObject {
   
   /**
@@ -16,21 +14,21 @@ trait SchemaExponentialBuckets extends StObject {
     * growth_factor^(i-1), scale * growth_factor^i) where i ranges from 1 to
     * num_finite_buckets inclusive. Must be larger than 1.0.
     */
-  var growthFactor: js.UndefOr[Double] = js.native
+  var growthFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of finite buckets. With the underflow and overflow buckets,
     * the total number of buckets is `num_finite_buckets` + 2. See comments on
     * `bucket_options` for details.
     */
-  var numFiniteBuckets: js.UndefOr[Double] = js.native
+  var numFiniteBuckets: js.UndefOr[Double] = js.undefined
   
   /**
     * The i&#39;th exponential bucket covers the interval   [scale *
     * growth_factor^(i-1), scale * growth_factor^i) where i ranges from 1 to
     * num_finite_buckets inclusive. Must be &gt; 0.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object SchemaExponentialBuckets {
   

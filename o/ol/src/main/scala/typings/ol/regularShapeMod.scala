@@ -5,7 +5,6 @@ import typings.std.CanvasLineCap
 import typings.std.CanvasLineJoin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regularShapeMod {
@@ -16,28 +15,27 @@ object regularShapeMod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var displacement: js.UndefOr[js.Array[Double]] = js.native
+    var displacement: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var fill: js.UndefOr[typings.ol.fillMod.default] = js.native
+    var fill: js.UndefOr[typings.ol.fillMod.default] = js.undefined
     
-    var points: Double = js.native
+    var points: Double
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var radius1: js.UndefOr[Double] = js.native
+    var radius1: js.UndefOr[Double] = js.undefined
     
-    var radius2: js.UndefOr[Double] = js.native
+    var radius2: js.UndefOr[Double] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.native
+    var stroke: js.UndefOr[typings.ol.strokeMod.default] = js.undefined
   }
   object Options {
     
@@ -153,24 +151,23 @@ object regularShapeMod {
     /* protected */ def render(): Unit = js.native
   }
   
-  @js.native
   trait RenderOptions extends StObject {
     
-    var lineCap: CanvasLineCap = js.native
+    var lineCap: CanvasLineCap
     
-    var lineDash: js.Array[Double] = js.native
+    var lineDash: js.Array[Double]
     
-    var lineDashOffset: Double = js.native
+    var lineDashOffset: Double
     
-    var lineJoin: CanvasLineJoin = js.native
+    var lineJoin: CanvasLineJoin
     
-    var miterLimit: Double = js.native
+    var miterLimit: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var strokeStyle: js.UndefOr[ColorLike] = js.native
+    var strokeStyle: js.UndefOr[ColorLike] = js.undefined
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
   }
   object RenderOptions {
     

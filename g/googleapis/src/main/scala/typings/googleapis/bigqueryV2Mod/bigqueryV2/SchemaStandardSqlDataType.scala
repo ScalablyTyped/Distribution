@@ -2,7 +2,6 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,24 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * type={type_kind=&quot;ARRAY&quot;, array_element_type=&quot;DATE&quot;}}
   * ]}}
   */
-@js.native
 trait SchemaStandardSqlDataType extends StObject {
   
   /**
     * The type of the array&#39;s elements, if type_kind = &quot;ARRAY&quot;.
     */
-  var arrayElementType: js.UndefOr[SchemaStandardSqlDataType] = js.native
+  var arrayElementType: js.UndefOr[SchemaStandardSqlDataType] = js.undefined
   
   /**
     * The fields of this struct, in order, if type_kind = &quot;STRUCT&quot;.
     */
-  var structType: js.UndefOr[SchemaStandardSqlStructType] = js.native
+  var structType: js.UndefOr[SchemaStandardSqlStructType] = js.undefined
   
   /**
     * Required. The top level type of this field. Can be any standard SQL data
     * type (e.g., &quot;INT64&quot;, &quot;DATE&quot;, &quot;ARRAY&quot;).
     */
-  var typeKind: js.UndefOr[String] = js.native
+  var typeKind: js.UndefOr[String] = js.undefined
 }
 object SchemaStandardSqlDataType {
   

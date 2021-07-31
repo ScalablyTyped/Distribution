@@ -2,14 +2,12 @@ package typings.knockoutDeferredUpdates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Computed
-@js.native
 trait KnockoutComputedStatic extends StObject {
   
-  var deferUpdates: Boolean = js.native
+  var deferUpdates: Boolean
 }
 object KnockoutComputedStatic {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceRequest extends StObject {
   
   /**
     * The ID of the service that you want to get settings for.
     */
-  var Id: ResourceId = js.native
+  var Id: ResourceId
 }
 object GetServiceRequest {
   

@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LockInformation extends StObject {
   
   /**
@@ -13,43 +11,43 @@ trait LockInformation extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The number of seconds to lock the envelope for editing.  This value must be greater than `0` seconds.
     */
-  var lockDurationInSeconds: js.UndefOr[String] = js.native
+  var lockDurationInSeconds: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier provided to the owner of the lock. You must use this token with subsequent calls to prove ownership of the lock.
     */
-  var lockToken: js.UndefOr[String] = js.native
+  var lockToken: js.UndefOr[String] = js.undefined
   
   /**
     * The type of lock.  Currently `edit` is the only supported type.
     */
-  var lockType: js.UndefOr[String] = js.native
+  var lockType: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable name of the application that is locking the envelope or template. This value displays to the user in error messages when lock conflicts occur.
     */
-  var lockedByApp: js.UndefOr[String] = js.native
+  var lockedByApp: js.UndefOr[String] = js.undefined
   
   /**
     * A complex type containing information about the user that has the envelope or template locked.
     */
-  var lockedByUser: js.UndefOr[UserInfo] = js.native
+  var lockedByUser: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The date and time that the lock expires.
     */
-  var lockedUntilDateTime: js.UndefOr[String] = js.native
+  var lockedUntilDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, a scratchpad is used to edit information.
     *
     */
-  var useScratchPad: js.UndefOr[String] = js.native
+  var useScratchPad: js.UndefOr[String] = js.undefined
 }
 object LockInformation {
   

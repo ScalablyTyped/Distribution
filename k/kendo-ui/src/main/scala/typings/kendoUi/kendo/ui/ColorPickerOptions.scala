@@ -2,41 +2,39 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPickerOptions extends StObject {
   
-  var buttons: js.UndefOr[Boolean] = js.native
+  var buttons: js.UndefOr[Boolean] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ ColorPickerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ColorPickerChangeEvent, Unit]] = js.undefined
   
-  var clearButton: js.UndefOr[Boolean] = js.native
+  var clearButton: js.UndefOr[Boolean] = js.undefined
   
-  var close: js.UndefOr[js.Function1[/* e */ ColorPickerEvent, Unit]] = js.native
+  var close: js.UndefOr[js.Function1[/* e */ ColorPickerEvent, Unit]] = js.undefined
   
-  var columns: js.UndefOr[Double] = js.native
+  var columns: js.UndefOr[Double] = js.undefined
   
-  var messages: js.UndefOr[ColorPickerMessages] = js.native
+  var messages: js.UndefOr[ColorPickerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Boolean] = js.native
+  var opacity: js.UndefOr[Boolean] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ ColorPickerEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ ColorPickerEvent, Unit]] = js.undefined
   
-  var palette: js.UndefOr[String | js.Any] = js.native
+  var palette: js.UndefOr[String | js.Any] = js.undefined
   
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ ColorPickerSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ ColorPickerSelectEvent, Unit]] = js.undefined
   
-  var tileSize: js.UndefOr[ColorPickerTileSize] = js.native
+  var tileSize: js.UndefOr[ColorPickerTileSize] = js.undefined
   
-  var toolIcon: js.UndefOr[String] = js.native
+  var toolIcon: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ColorPickerOptions {
   

@@ -4,7 +4,6 @@ import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.Options
 import typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,30 +48,30 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.AR with String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.AR & String = js.native
       
-      /* "de" */ val DE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.DE with String = js.native
+      /* "de" */ val DE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.DE & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.EN with String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ES with String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ES & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.FR with String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.FR & String = js.native
       
-      /* "it" */ val IT: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.IT with String = js.native
+      /* "it" */ val IT: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.IT & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.JA with String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.KO with String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.KO & String = js.native
       
-      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR with String = js.native
+      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.PT_BR & String = js.native
       
-      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN with String = js.native
+      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_CN & String = js.native
       
-      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW with String = js.native
+      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.AcceptLanguage.ZH_TW & String = js.native
     }
     
     /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
@@ -82,12 +81,12 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage & String
           ] = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.EN with String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.EN & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.FR with String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneChatConstants.ContentLanguage.FR & String = js.native
     }
   }
   
@@ -101,30 +100,30 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage & String
           ] = js.native
       
-      /* "ar" */ val AR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.AR with String = js.native
+      /* "ar" */ val AR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.AR & String = js.native
       
-      /* "de" */ val DE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.DE with String = js.native
+      /* "de" */ val DE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.DE & String = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.EN with String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.EN & String = js.native
       
-      /* "es" */ val ES: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ES with String = js.native
+      /* "es" */ val ES: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ES & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.FR with String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.FR & String = js.native
       
-      /* "it" */ val IT: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.IT with String = js.native
+      /* "it" */ val IT: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.IT & String = js.native
       
-      /* "ja" */ val JA: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.JA with String = js.native
+      /* "ja" */ val JA: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.JA & String = js.native
       
-      /* "ko" */ val KO: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.KO with String = js.native
+      /* "ko" */ val KO: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.KO & String = js.native
       
-      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.PT_BR with String = js.native
+      /* "pt-br" */ val PT_BR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.PT_BR & String = js.native
       
-      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ZH_CN with String = js.native
+      /* "zh-cn" */ val ZH_CN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ZH_CN & String = js.native
       
-      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ZH_TW with String = js.native
+      /* "zh-tw" */ val ZH_TW: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.AcceptLanguage.ZH_TW & String = js.native
     }
     
     /** The language of the input text for the request: English or French. Regional variants are treated as their parent language; for example, `en-US` is interpreted as `en`. The input content must match the specified language. Do not submit content that contains both languages. You can use different languages for **Content-Language** and **Accept-Language**. * **`2017-09-21`:** Accepts `en` or `fr`. * **`2016-05-19`:** Accepts only `en`. */
@@ -134,12 +133,12 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage & String
           ] = js.native
       
-      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage.EN with String = js.native
+      /* "en" */ val EN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage.EN & String = js.native
       
-      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage.FR with String = js.native
+      /* "fr" */ val FR: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentLanguage.FR & String = js.native
     }
     
     /** The type of the input. A character encoding can be specified by including a `charset` parameter. For example, 'text/plain;charset=utf-8'. */
@@ -149,14 +148,14 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType & String
           ] = js.native
       
-      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.APPLICATION_JSON with String = js.native
+      /* "application/json" */ val APPLICATION_JSON: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.APPLICATION_JSON & String = js.native
       
-      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.TEXT_HTML with String = js.native
+      /* "text/html" */ val TEXT_HTML: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.TEXT_HTML & String = js.native
       
-      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.TEXT_PLAIN with String = js.native
+      /* "text/plain" */ val TEXT_PLAIN: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.ContentType.TEXT_PLAIN & String = js.native
     }
     
     /** **`2017-09-21`:** Deprecated. The service continues to accept the parameter for backward-compatibility, but the parameter no longer affects the response. **`2016-05-19`:** A comma-separated list of tones for which the service is to return its analysis of the input; the indicated tones apply both to the full document and to individual sentences of the document. You can specify one or more of the valid values. Omit the parameter to request results for all three tones. */
@@ -166,14 +165,14 @@ object ToneAnalyzerV3 {
       
       @JSBracketAccess
       def apply(value: String): js.UndefOr[
-            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones with String
+            typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones & String
           ] = js.native
       
-      /* "emotion" */ val EMOTION: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.EMOTION with String = js.native
+      /* "emotion" */ val EMOTION: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.EMOTION & String = js.native
       
-      /* "language" */ val LANGUAGE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.LANGUAGE with String = js.native
+      /* "language" */ val LANGUAGE: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.LANGUAGE & String = js.native
       
-      /* "social" */ val SOCIAL: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.SOCIAL with String = js.native
+      /* "social" */ val SOCIAL: typings.watsonDeveloperCloud.toneAnalyzerV3GeneratedMod.ToneConstants.Tones.SOCIAL & String = js.native
     }
   }
   

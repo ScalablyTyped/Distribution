@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerAnimation extends StObject {
   
-  var close: js.UndefOr[TimePickerAnimationClose] = js.native
+  var close: js.UndefOr[TimePickerAnimationClose] = js.undefined
   
-  var open: js.UndefOr[TimePickerAnimationOpen] = js.native
+  var open: js.UndefOr[TimePickerAnimationOpen] = js.undefined
 }
 object TimePickerAnimation {
   

@@ -2,14 +2,12 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access control list information for the item. For more information see
   * https://developers.google.com/cloud-search/docs/guides/index-your-data#acls
   */
-@js.native
 trait SchemaItemAcl extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaItemAcl extends StObject {
     * field. Also, when the inheritAclFrom field is set, this field should be
     * set to a valid AclInheritanceType.
     */
-  var aclInheritanceType: js.UndefOr[String] = js.native
+  var aclInheritanceType: js.UndefOr[String] = js.undefined
   
   /**
     * List of principals who are explicitly denied access to the item in search
@@ -26,7 +24,7 @@ trait SchemaItemAcl extends StObject {
     * readers to handle exceptions and override the list allowed readers. The
     * maximum number of elements is 100.
     */
-  var deniedReaders: js.UndefOr[js.Array[SchemaPrincipal]] = js.native
+  var deniedReaders: js.UndefOr[js.Array[SchemaPrincipal]] = js.undefined
   
   /**
     * Name of the item to inherit the Access Permission List (ACL) from. Note:
@@ -40,7 +38,7 @@ trait SchemaItemAcl extends StObject {
     * the containerName field. The maximum length for this field is 1536
     * characters.
     */
-  var inheritAclFrom: js.UndefOr[String] = js.native
+  var inheritAclFrom: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. List of owners for the item. This field has no bearing on
@@ -48,7 +46,7 @@ trait SchemaItemAcl extends StObject {
     * boosts items where the querying user is an owner. The maximum number of
     * elements is 5.
     */
-  var owners: js.UndefOr[js.Array[SchemaPrincipal]] = js.native
+  var owners: js.UndefOr[js.Array[SchemaPrincipal]] = js.undefined
   
   /**
     * List of principals who are allowed to see the item in search results.
@@ -56,7 +54,7 @@ trait SchemaItemAcl extends StObject {
     * not intended to be visible, such as virtual containers. The maximum
     * number of elements is 1000.
     */
-  var readers: js.UndefOr[js.Array[SchemaPrincipal]] = js.native
+  var readers: js.UndefOr[js.Array[SchemaPrincipal]] = js.undefined
 }
 object SchemaItemAcl {
   

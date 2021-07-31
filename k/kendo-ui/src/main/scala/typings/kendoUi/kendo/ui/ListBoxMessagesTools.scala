@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxMessagesTools extends StObject {
   
-  var moveDown: js.UndefOr[String] = js.native
+  var moveDown: js.UndefOr[String] = js.undefined
   
-  var moveUp: js.UndefOr[String] = js.native
+  var moveUp: js.UndefOr[String] = js.undefined
   
-  var remove: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.undefined
   
-  var transferAllFrom: js.UndefOr[String] = js.native
+  var transferAllFrom: js.UndefOr[String] = js.undefined
   
-  var transferAllTo: js.UndefOr[String] = js.native
+  var transferAllTo: js.UndefOr[String] = js.undefined
   
-  var transferFrom: js.UndefOr[String] = js.native
+  var transferFrom: js.UndefOr[String] = js.undefined
   
-  var transferTo: js.UndefOr[String] = js.native
+  var transferTo: js.UndefOr[String] = js.undefined
 }
 object ListBoxMessagesTools {
   

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextEventTypeMod {
@@ -12,11 +11,11 @@ object contextEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ContextEventType with String] = js.native
+    def apply(value: String): js.UndefOr[ContextEventType & String] = js.native
     
-    /* "webglcontextlost" */ val LOST: typings.ol.contextEventTypeMod.ContextEventType.LOST with String = js.native
+    /* "webglcontextlost" */ val LOST: typings.ol.contextEventTypeMod.ContextEventType.LOST & String = js.native
     
-    /* "webglcontextrestored" */ val RESTORED: typings.ol.contextEventTypeMod.ContextEventType.RESTORED with String = js.native
+    /* "webglcontextrestored" */ val RESTORED: typings.ol.contextEventTypeMod.ContextEventType.RESTORED & String = js.native
   }
   
   @js.native
@@ -26,9 +25,13 @@ object contextEventTypeMod {
   object ContextEventType extends StObject {
     
     @js.native
-    sealed trait LOST extends ContextEventType
+    sealed trait LOST
+      extends StObject
+         with ContextEventType
     
     @js.native
-    sealed trait RESTORED extends ContextEventType
+    sealed trait RESTORED
+      extends StObject
+         with ContextEventType
   }
 }

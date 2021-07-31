@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick extends StObject {
   
   /** A form action will be triggered by this onclick if specified. */
-  var action: js.UndefOr[FormAction] = js.native
+  var action: js.UndefOr[FormAction] = js.undefined
   
   /** This onclick triggers an open link action if specified. */
-  var openLink: js.UndefOr[OpenLink] = js.native
+  var openLink: js.UndefOr[OpenLink] = js.undefined
 }
 object OnClick {
   

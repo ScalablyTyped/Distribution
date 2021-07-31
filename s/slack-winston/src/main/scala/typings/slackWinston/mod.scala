@@ -3,7 +3,6 @@ package typings.slackWinston
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,46 +31,45 @@ object mod {
     
     var level: js.UndefOr[String] = js.native
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.native
     
     var silent: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait SlackTransportOptions extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var close: js.UndefOr[js.Function0[Unit]] = js.native
+    var close: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var domain: String = js.native
+    var domain: String
     
     // from winston-transport TransportStreamOptions
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var handleExceptions: js.UndefOr[Boolean] = js.native
+    var handleExceptions: js.UndefOr[Boolean] = js.undefined
     
-    var icon_emoji: js.UndefOr[String] = js.native
+    var icon_emoji: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var log: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
     
-    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], _]] = js.native
+    var logv: js.UndefOr[js.Function2[/* info */ js.Any, /* next */ js.Function0[Unit], js.Any]] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var queueDelay: js.UndefOr[Double] = js.native
+    var queueDelay: js.UndefOr[Double] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var token: String = js.native
+    var token: String
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var webhook_url: String = js.native
+    var webhook_url: String
   }
   object SlackTransportOptions {
     
@@ -121,13 +119,13 @@ object mod {
       def setLevelUndefined: Self = StObject.set(x, "level", js.undefined)
       
       @scala.inline
-      def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
+      def setLog(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
       
       @scala.inline
-      def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => _): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
+      def setLogv(value: (/* info */ js.Any, /* next */ js.Function0[Unit]) => js.Any): Self = StObject.set(x, "logv", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogvUndefined: Self = StObject.set(x, "logv", js.undefined)
@@ -164,13 +162,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TransformableInfo
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var level: String = js.native
+    var level: String
     
-    var message: String = js.native
+    var message: String
   }
   object TransformableInfo {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1", "remotebuildexecution_v1.Resource$Media")
@@ -31,7 +30,7 @@ class ResourceMedia protected () extends StObject {
     */
   def download(): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def download(callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]): Unit = js.native
-  def download(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
+  def download(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def download(params: ParamsResourceMediaDownload): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def download(params: ParamsResourceMediaDownload, callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]): Unit = js.native
   def download(
@@ -65,7 +64,7 @@ class ResourceMedia protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def upload(callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def upload(params: ParamsResourceMediaUpload): GaxiosPromise[SchemaGoogleBytestreamMedia] = js.native
   def upload(params: ParamsResourceMediaUpload, callback: BodyResponseCallback[SchemaGoogleBytestreamMedia]): Unit = js.native
   def upload(

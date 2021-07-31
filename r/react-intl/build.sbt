@@ -1,23 +1,21 @@
 organization := "org.scalablytyped"
 name := "react-intl"
-version := "5.10.4-1c26f5"
-scalaVersion := "2.13.3"
+version := "5.10.4-e15f0d"
+scalaVersion := "3.0.1"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(
-  "com.olvind" %%% "scalablytyped-runtime" % "2.4.0",
-  "org.scalablytyped" %%% "csstype" % "2.6.14-b4f267",
-  "org.scalablytyped" %%% "formatjs__ecma402-abstract" % "1.5.0-0e86ba",
-  "org.scalablytyped" %%% "formatjs__intl" % "1.4.8-47cfd2",
-  "org.scalablytyped" %%% "formatjs__intl-displaynames" % "4.0.0-fd8ee2",
-  "org.scalablytyped" %%% "formatjs__intl-listformat" % "5.0.0-95a2d9",
-  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "8.0.0-f812bd",
-  "org.scalablytyped" %%% "intl-messageformat" % "9.3.19-7556a8",
-  "org.scalablytyped" %%% "intl-messageformat-parser" % "6.0.17-da8411",
-  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-7dc507",
-  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-9253ae",
-  "org.scalablytyped" %%% "std" % "4.1-40053c")
+  "com.olvind" %%% "scalablytyped-runtime" % "2.4.2",
+  "org.scalablytyped" %%% "csstype" % "2.6.14-b8d190",
+  "org.scalablytyped" %%% "formatjs__ecma402-abstract" % "1.5.0-b1c558",
+  "org.scalablytyped" %%% "formatjs__intl" % "1.4.8-9fa006",
+  "org.scalablytyped" %%% "formatjs__intl-displaynames" % "4.0.0-614df9",
+  "org.scalablytyped" %%% "formatjs__intl-listformat" % "5.0.0-ef33a2",
+  "org.scalablytyped" %%% "formatjs__intl-relativetimeformat" % "8.0.0-e9c176",
+  "org.scalablytyped" %%% "intl-messageformat" % "9.3.19-ba646b",
+  "org.scalablytyped" %%% "intl-messageformat-parser" % "6.0.17-6bafb7",
+  "org.scalablytyped" %%% "prop-types" % "15.7-dt-20200515Z-a12f9a",
+  "org.scalablytyped" %%% "react" % "17.0-dt-20201121Z-c80121",
+  "org.scalablytyped" %%% "std" % "4.1-044efb")
 publishArtifact in packageDoc := false
-scalacOptions ++= List("-encoding", "utf-8", "-feature", "-g:notailcalls", "-language:implicitConversions", "-language:higherKinds", "-language:existentials")
+scalacOptions ++= List("-encoding", "utf-8", "-feature", "-language:implicitConversions", "-language:higherKinds", "-language:existentials", "-no-indent")
 licenses += ("MIT", url("http://opensource.org/licenses/MIT"))
-bintrayRepository := "ScalablyTyped"
-resolvers += Resolver.bintrayRepo("oyvindberg", "ScalablyTyped")

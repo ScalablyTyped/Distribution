@@ -4,19 +4,17 @@ import typings.wordpressComponents.queryControlsMod.QueryControls.Order
 import typings.wordpressComponents.queryControlsMod.QueryControls.OrderBy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnOrderByChange extends StObject {
   
-  def onOrderByChange(orderBy: OrderBy): Unit = js.native
+  def onOrderByChange(orderBy: OrderBy): Unit
   
-  def onOrderChange(order: Order): Unit = js.native
+  def onOrderChange(order: Order): Unit
   
-  var order: Order = js.native
+  var order: Order
   
-  var orderBy: OrderBy = js.native
+  var orderBy: OrderBy
 }
 object OnOrderByChange {
   

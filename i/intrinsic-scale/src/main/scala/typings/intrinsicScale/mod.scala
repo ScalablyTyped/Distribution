@@ -2,29 +2,29 @@ package typings.intrinsicScale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("intrinsic-scale", "contain")
+  @JSImport("intrinsic-scale", JSImport.Namespace)
   @js.native
-  def contain(parentWidth: Double, parentHeight: Double, childWidth: Double, childHeight: Double): IntrinsicScale = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("intrinsic-scale", "cover")
-  @js.native
-  def cover(parentWidth: Double, parentHeight: Double, childWidth: Double, childHeight: Double): IntrinsicScale = js.native
+  @scala.inline
+  def contain(parentWidth: Double, parentHeight: Double, childWidth: Double, childHeight: Double): IntrinsicScale = (^.asInstanceOf[js.Dynamic].applyDynamic("contain")(parentWidth.asInstanceOf[js.Any], parentHeight.asInstanceOf[js.Any], childWidth.asInstanceOf[js.Any], childHeight.asInstanceOf[js.Any])).asInstanceOf[IntrinsicScale]
   
-  @js.native
+  @scala.inline
+  def cover(parentWidth: Double, parentHeight: Double, childWidth: Double, childHeight: Double): IntrinsicScale = (^.asInstanceOf[js.Dynamic].applyDynamic("cover")(parentWidth.asInstanceOf[js.Any], parentHeight.asInstanceOf[js.Any], childWidth.asInstanceOf[js.Any], childHeight.asInstanceOf[js.Any])).asInstanceOf[IntrinsicScale]
+  
   trait IntrinsicScale extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IntrinsicScale {
     

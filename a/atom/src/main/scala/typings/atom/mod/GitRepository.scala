@@ -8,7 +8,6 @@ import typings.atom.anon.RefreshOnWindowFocus
 import typings.atom.atomStrings.git
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "GitRepository")
@@ -159,12 +158,14 @@ class GitRepository protected () extends StObject {
 /* static members */
 object GitRepository {
   
+  @JSImport("atom", "GitRepository")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Construction
   /** Creates a new GitRepository instance. */
-  @JSImport("atom", "GitRepository.open")
-  @js.native
-  def open(path: String): GitRepository = js.native
-  @JSImport("atom", "GitRepository.open")
-  @js.native
-  def open(path: String, options: RefreshOnWindowFocus): GitRepository = js.native
+  @scala.inline
+  def open(path: String): GitRepository = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[GitRepository]
+  @scala.inline
+  def open(path: String, options: RefreshOnWindowFocus): GitRepository = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GitRepository]
 }

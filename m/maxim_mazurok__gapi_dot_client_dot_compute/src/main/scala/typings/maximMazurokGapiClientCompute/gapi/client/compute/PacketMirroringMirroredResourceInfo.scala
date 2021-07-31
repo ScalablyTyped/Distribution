@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PacketMirroringMirroredResourceInfo extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait PacketMirroringMirroredResourceInfo extends StObject {
     *
     * You may specify a maximum of 50 Instances.
     */
-  var instances: js.UndefOr[js.Array[PacketMirroringMirroredResourceInfoInstanceInfo]] = js.native
+  var instances: js.UndefOr[js.Array[PacketMirroringMirroredResourceInfoInstanceInfo]] = js.undefined
   
   /**
     * A set of subnetworks for which traffic from/to all VM instances will be mirrored. They must live in the same region as this packetMirroring.
     *
     * You may specify a maximum of 5 subnetworks.
     */
-  var subnetworks: js.UndefOr[js.Array[PacketMirroringMirroredResourceInfoSubnetInfo]] = js.native
+  var subnetworks: js.UndefOr[js.Array[PacketMirroringMirroredResourceInfoSubnetInfo]] = js.undefined
   
   /** A set of mirrored tags. Traffic from/to all VM instances that have one or more of these tags will be mirrored. */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PacketMirroringMirroredResourceInfo {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,7 +11,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jotform-css.js", JSImport.Default)
   @js.native
-  class default () extends CssJs_
+  class default ()
+    extends StObject
+       with CssJs_
   @JSImport("jotform-css.js", JSImport.Default)
   @js.native
   val default: CssJsConstructor = js.native
@@ -20,7 +21,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jotform-css.js", "cssjs")
   @js.native
-  class cssjs () extends CssJs_
+  class cssjs ()
+    extends StObject
+       with CssJs_
   @JSImport("jotform-css.js", "cssjs")
   @js.native
   val cssjs: CssJsConstructor = js.native
@@ -30,14 +33,18 @@ object mod extends Shortcut {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("cssjs")
     @js.native
-    class cssjs () extends CssJs_
+    class cssjs ()
+      extends StObject
+         with CssJs_
     @JSGlobal("cssjs")
     @js.native
     val cssjs: CssJsConstructor = js.native
   }
   
   @js.native
-  trait CssJsConstructor extends Instantiable0[CssJs_]
+  trait CssJsConstructor
+    extends StObject
+       with Instantiable0[CssJs_]
   
   @js.native
   trait CssJs_ extends StObject {
@@ -127,7 +134,7 @@ object mod extends Shortcut {
       * @param rules, css directive string eg color:white; font-size:18px;
       * @returns an array of objects containing ruleName:ruleValue pairs
       */
-    def parseRules(rules: String): js.Array[_] = js.native
+    def parseRules(rules: String): js.Array[js.Any] = js.native
     
     /**
       * @param css the original css string to be stripped out of comments

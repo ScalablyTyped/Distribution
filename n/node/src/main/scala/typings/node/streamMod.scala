@@ -24,7 +24,6 @@ import typings.std.Error
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object streamMod {
@@ -32,6 +31,9 @@ object streamMod {
   @JSImport("stream", JSImport.Namespace)
   @js.native
   class ^ () extends internal
+  @JSImport("stream", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // Note: Duplex extends both Readable and Writable.
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -83,7 +85,7 @@ object streamMod {
     def end(cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -152,11 +154,7 @@ object streamMod {
     
     def write(chunk: js.Any): Boolean = js.native
     def write(chunk: js.Any, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
-    def write(
-      chunk: js.Any,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(chunk: js.Any, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
@@ -325,22 +323,22 @@ object streamMod {
   }
   object Readable {
     
-    @JSImport("stream", "Readable.from")
+    @JSImport("stream", "Readable")
     @js.native
-    def from(iterable: AsyncIterable[_]): Readable = js.native
-    @JSImport("stream", "Readable.from")
-    @js.native
-    def from(iterable: AsyncIterable[_], options: ReadableOptions): Readable = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def from(iterable: AsyncIterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def from(iterable: AsyncIterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
     /**
       * A utility method for creating Readable Streams out of iterators.
       */
     /* static member */
-    @JSImport("stream", "Readable.from")
-    @js.native
-    def from(iterable: Iterable[_]): Readable = js.native
-    @JSImport("stream", "Readable.from")
-    @js.native
-    def from(iterable: Iterable[_], options: ReadableOptions): Readable = js.native
+    @scala.inline
+    def from(iterable: Iterable[js.Any]): Readable = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any]).asInstanceOf[Readable]
+    @scala.inline
+    def from(iterable: Iterable[js.Any], options: ReadableOptions): Readable = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(iterable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Readable]
   }
   
   @JSImport("stream", "Stream")
@@ -526,100 +524,82 @@ object streamMod {
     ): Boolean = js.native
   }
   
-  @JSImport("stream", "finished")
-  @js.native
-  def finished(stream: ReadWriteStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = js.native
-  @JSImport("stream", "finished")
-  @js.native
+  @scala.inline
+  def finished(stream: ReadWriteStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def finished(
     stream: ReadWriteStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
-  ): js.Function0[Unit] = js.native
-  @JSImport("stream", "finished")
-  @js.native
-  def finished(stream: ReadableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = js.native
-  @JSImport("stream", "finished")
-  @js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def finished(stream: ReadableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def finished(
     stream: ReadableStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
-  ): js.Function0[Unit] = js.native
-  @JSImport("stream", "finished")
-  @js.native
-  def finished(stream: WritableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = js.native
-  @JSImport("stream", "finished")
-  @js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def finished(stream: WritableStream, callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
   def finished(
     stream: WritableStream,
     options: FinishedOptions,
     callback: js.Function1[/* err */ js.UndefOr[ErrnoException | Null], Unit]
-  ): js.Function0[Unit] = js.native
+  ): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("finished")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("stream", "pipeline")
-  @js.native
+  @scala.inline
   def pipeline(
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     streams: (ReadWriteStream | WritableStream | (js.Function1[/* err */ ErrnoException | Null, Unit]))*
-  ): WritableStream = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  @scala.inline
   def pipeline(
     stream1: ReadableStream,
     stream2: WritableStream,
     streams: (ReadWriteStream | WritableStream | (js.Function1[/* err */ ErrnoException | Null, Unit]))*
-  ): WritableStream = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
-  def pipeline(streams: js.Array[ReadableStream | WritableStream | ReadWriteStream]): WritableStream = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], streams.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  @scala.inline
+  def pipeline(streams: js.Array[ReadableStream | WritableStream | ReadWriteStream]): WritableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[js.Any]).asInstanceOf[WritableStream]
+  @scala.inline
   def pipeline(
     streams: js.Array[ReadableStream | WritableStream | ReadWriteStream],
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): WritableStream = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: T): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): WritableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(streams.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WritableStream]
+  @scala.inline
+  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: T, callback: js.Function1[/* err */ ErrnoException | Null, Unit]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: T,
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
-  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: ReadWriteStream, stream4: T): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pipeline[T /* <: WritableStream */](stream1: ReadableStream, stream2: ReadWriteStream, stream3: ReadWriteStream, stream4: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: ReadWriteStream,
     stream4: T,
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
     stream3: ReadWriteStream,
     stream4: ReadWriteStream,
     stream5: T
-  ): T = js.native
-  @JSImport("stream", "pipeline")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any], stream5.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def pipeline[T /* <: WritableStream */](
     stream1: ReadableStream,
     stream2: ReadWriteStream,
@@ -627,17 +607,18 @@ object streamMod {
     stream4: ReadWriteStream,
     stream5: T,
     callback: js.Function1[/* err */ ErrnoException | Null, Unit]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pipeline")(stream1.asInstanceOf[js.Any], stream2.asInstanceOf[js.Any], stream3.asInstanceOf[js.Any], stream4.asInstanceOf[js.Any], stream5.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.node.streamMod.WritableOptions because var conflicts: autoDestroy, destroy, highWaterMark, objectMode. Inlined decodeStrings, defaultEncoding, emitClose, write, writev, `final` */ @js.native
-  trait DuplexOptions extends ReadableOptions {
+  - typings.node.streamMod.WritableOptions because var conflicts: autoDestroy, destroy, highWaterMark, objectMode. Inlined decodeStrings, defaultEncoding, emitClose, write, writev, `final` */ trait DuplexOptions
+    extends StObject
+       with ReadableOptions {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+    var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
     
     @JSName("destroy")
     var destroy_DuplexOptions: js.UndefOr[
@@ -647,9 +628,9 @@ object streamMod {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var emitClose: js.UndefOr[Boolean] = js.native
+    var emitClose: js.UndefOr[Boolean] = js.undefined
     
     var `final`: js.UndefOr[
         js.ThisFunction1[
@@ -657,20 +638,20 @@ object streamMod {
           /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("read")
-    var read_DuplexOptions: js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]] = js.native
+    var read_DuplexOptions: js.UndefOr[js.ThisFunction1[/* this */ Duplex, /* size */ Double, Unit]] = js.undefined
     
-    var readableHighWaterMark: js.UndefOr[Double] = js.native
+    var readableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var readableObjectMode: js.UndefOr[Boolean] = js.native
+    var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
-    var writableCorked: js.UndefOr[Double] = js.native
+    var writableCorked: js.UndefOr[Double] = js.undefined
     
-    var writableHighWaterMark: js.UndefOr[Double] = js.native
+    var writableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var writableObjectMode: js.UndefOr[Boolean] = js.native
+    var writableObjectMode: js.UndefOr[Boolean] = js.undefined
     
     var write: js.UndefOr[
         js.ThisFunction3[
@@ -680,7 +661,7 @@ object streamMod {
           /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var writev: js.UndefOr[
         js.ThisFunction2[
@@ -689,7 +670,7 @@ object streamMod {
           /* callback */ js.Function1[js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DuplexOptions {
     
@@ -816,14 +797,13 @@ object streamMod {
     }
   }
   
-  @js.native
   trait FinishedOptions extends StObject {
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object FinishedOptions {
     
@@ -856,16 +836,15 @@ object streamMod {
     }
   }
   
-  @js.native
   trait Pipe extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def hasRef(): Boolean = js.native
+    def hasRef(): Boolean
     
-    def ref(): Unit = js.native
+    def ref(): Unit
     
-    def unref(): Unit = js.native
+    def unref(): Unit
   }
   object Pipe {
     
@@ -892,10 +871,9 @@ object streamMod {
     }
   }
   
-  @js.native
   trait ReadableOptions extends StObject {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -904,15 +882,15 @@ object streamMod {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.undefined
   }
   object ReadableOptions {
     
@@ -972,8 +950,9 @@ object streamMod {
   
   type TransformCallback = js.Function2[/* error */ js.UndefOr[Error | Null], /* data */ js.UndefOr[js.Any], Unit]
   
-  @js.native
-  trait TransformOptions extends DuplexOptions {
+  trait TransformOptions
+    extends StObject
+       with DuplexOptions {
     
     @JSName("destroy")
     var destroy_TransformOptions: js.UndefOr[
@@ -983,7 +962,7 @@ object streamMod {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("final")
     var final_TransformOptions: js.UndefOr[
@@ -992,12 +971,12 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.native
+    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.undefined
     
     @JSName("read")
-    var read_TransformOptions: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.native
+    var read_TransformOptions: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.undefined
     
     var transform: js.UndefOr[
         js.ThisFunction3[
@@ -1007,7 +986,7 @@ object streamMod {
           /* callback */ TransformCallback, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("write")
     var write_TransformOptions: js.UndefOr[
@@ -1018,7 +997,7 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("writev")
     var writev_TransformOptions: js.UndefOr[
@@ -1028,7 +1007,7 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object TransformOptions {
     
@@ -1121,14 +1100,13 @@ object streamMod {
     }
   }
   
-  @js.native
   trait WritableOptions extends StObject {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+    var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -1137,9 +1115,9 @@ object streamMod {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var emitClose: js.UndefOr[Boolean] = js.native
+    var emitClose: js.UndefOr[Boolean] = js.undefined
     
     var `final`: js.UndefOr[
         js.ThisFunction1[
@@ -1147,11 +1125,11 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
     var write: js.UndefOr[
         js.ThisFunction3[
@@ -1161,7 +1139,7 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var writev: js.UndefOr[
         js.ThisFunction2[
@@ -1170,7 +1148,7 @@ object streamMod {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object WritableOptions {
     

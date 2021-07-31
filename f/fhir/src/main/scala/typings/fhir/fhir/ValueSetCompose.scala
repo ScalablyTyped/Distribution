@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of the content of the value set (CLD)
   */
-@js.native
-trait ValueSetCompose extends BackboneElement {
+trait ValueSetCompose
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'inactive'.
     */
-  var _inactive: js.UndefOr[Element] = js.native
+  var _inactive: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'lockedDate'.
     */
-  var _lockedDate: js.UndefOr[Element] = js.native
+  var _lockedDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Explicitly exclude codes from a code system or other value sets
     */
-  var exclude: js.UndefOr[js.Array[ValueSetComposeInclude]] = js.native
+  var exclude: js.UndefOr[js.Array[ValueSetComposeInclude]] = js.undefined
   
   /**
     * Whether inactive codes are in the value set
     */
-  var inactive: js.UndefOr[Boolean] = js.native
+  var inactive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Include one or more codes from a code system or other value set(s)
     */
-  var include: js.Array[ValueSetComposeInclude] = js.native
+  var include: js.Array[ValueSetComposeInclude]
   
   /**
     * Fixed date for version-less references (transitive)
     */
-  var lockedDate: js.UndefOr[date] = js.native
+  var lockedDate: js.UndefOr[date] = js.undefined
 }
 object ValueSetCompose {
   

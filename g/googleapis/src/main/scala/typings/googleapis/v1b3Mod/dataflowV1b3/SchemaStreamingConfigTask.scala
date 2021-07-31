@@ -3,43 +3,41 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A task that carries configuration information for streaming computations.
   */
-@js.native
 trait SchemaStreamingConfigTask extends StObject {
   
   /**
     * Maximum size for work item commit supported windmill storage layer.
     */
-  var maxWorkItemCommitBytes: js.UndefOr[String] = js.native
+  var maxWorkItemCommitBytes: js.UndefOr[String] = js.undefined
   
   /**
     * Set of computation configuration information.
     */
-  var streamingComputationConfigs: js.UndefOr[js.Array[SchemaStreamingComputationConfig]] = js.native
+  var streamingComputationConfigs: js.UndefOr[js.Array[SchemaStreamingComputationConfig]] = js.undefined
   
   /**
     * Map from user step names to state families.
     */
-  var userStepToStateFamilyNameMap: js.UndefOr[StringDictionary[String]] = js.native
+  var userStepToStateFamilyNameMap: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * If present, the worker must use this endpoint to communicate with
     * Windmill Service dispatchers, otherwise the worker must continue to use
     * whatever endpoint it had been using.
     */
-  var windmillServiceEndpoint: js.UndefOr[String] = js.native
+  var windmillServiceEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * If present, the worker must use this port to communicate with Windmill
     * Service dispatchers. Only applicable when windmill_service_endpoint is
     * specified.
     */
-  var windmillServicePort: js.UndefOr[String] = js.native
+  var windmillServicePort: js.UndefOr[String] = js.undefined
 }
 object SchemaStreamingConfigTask {
   

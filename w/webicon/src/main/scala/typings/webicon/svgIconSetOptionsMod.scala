@@ -4,7 +4,6 @@ import typings.webicon.iconSetOptionsMod.IconSetOptions
 import typings.webicon.webiconBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgIconSetOptionsMod {
@@ -12,11 +11,12 @@ object svgIconSetOptionsMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.webicon.iconMod.Icon because Already inherited
   - typings.webicon.downloadableMod.Downloadable because Already inherited
-  - typings.webicon.storeableMod.Storeable because var conflicts: iconIdParser, uri, url. Inlined preloadable, iconIdResolver */ @js.native
-  trait SvgIconSetOptions extends IconSetOptions {
+  - typings.webicon.storeableMod.Storeable because var conflicts: iconIdParser, uri, url. Inlined preloadable, iconIdResolver */ trait SvgIconSetOptions
+    extends StObject
+       with IconSetOptions {
     
     @JSName("cumulative")
-    var cumulative_SvgIconSetOptions: js.UndefOr[`false`] = js.native
+    var cumulative_SvgIconSetOptions: js.UndefOr[`false`] = js.undefined
     
     /**
       * Resolves the id of the underlying source.
@@ -27,12 +27,12 @@ object svgIconSetOptionsMod {
       * @return
       * The resolved id of the source.
       */
-    var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.native
+    var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.undefined
     
     /**
       * A value indicating whether the source is preloadable.
       */
-    var preloadable: js.UndefOr[Boolean] = js.native
+    var preloadable: js.UndefOr[Boolean] = js.undefined
   }
   object SvgIconSetOptions {
     

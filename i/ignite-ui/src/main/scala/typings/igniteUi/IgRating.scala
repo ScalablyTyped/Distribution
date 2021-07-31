@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgRating
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -28,7 +27,7 @@ trait IgRating
     * will customize selected and hover states for first 3 votes with classes h# and s#.
     *
     */
-  var cssVotes: js.UndefOr[js.Any] = js.native
+  var cssVotes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets if igRating can have focus. Change of that option is not supported after igRating was created.
@@ -36,25 +35,25 @@ trait IgRating
     * Value false: cannot get focus.
     *
     */
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fired before hover value is changed.
     * If the application returns false, then the action is canceled and the value remains unchanged.
     */
-  var hoverChange: js.UndefOr[HoverChangeEvent] = js.native
+  var hoverChange: js.UndefOr[HoverChangeEvent] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets precision. Precision of value and valueHover.
@@ -65,7 +64,7 @@ trait IgRating
     * "half" Value is rounded to the half of vote.
     * "whole" Value is rounded to the number of votes.
     */
-  var precision: js.UndefOr[String] = js.native
+  var precision: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets part of vote-size, which is considered as zero value.
@@ -74,13 +73,13 @@ trait IgRating
     * Same is applied for mouseover as well.
     *
     */
-  var precisionZeroVote: js.UndefOr[Double] = js.native
+  var precisionZeroVote: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Gets/Sets number of decimal places used to round value and value-hover.
@@ -91,7 +90,7 @@ trait IgRating
     * If it is larger than 15, then 15 is used.
     *
     */
-  var roundedDecimalPlaces: js.UndefOr[Double] = js.native
+  var roundedDecimalPlaces: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the direction of selected and hovered votes. Change of that option is not supported after igRating was created.
@@ -99,7 +98,7 @@ trait IgRating
     * Value false: from right to left or from bottom to left.
     *
     */
-  var swapDirection: js.UndefOr[Boolean] = js.native
+  var swapDirection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets selector for css classes.
@@ -107,20 +106,20 @@ trait IgRating
     * Application should provide css classes for all members defined in the css options with "theme" selector.
     *
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets object which contains options supported by igValidator.
     * Note that for onblur validation depends on the [focusable](ui.igrating#options:focusable) option.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.native
+  var validatorOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets value (selected votes or percent). If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the value is used as number of selected votes or as a percent of the votes.
     *
     */
-  var value: js.UndefOr[Double | String] = js.native
+  var value: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Gets/Sets percent or vote number to measure value and value-hover.
@@ -128,44 +127,44 @@ trait IgRating
     * Value false: value is measured in number of voted (from 0 to voteCount)
     *
     */
-  var valueAsPercent: js.UndefOr[Boolean] = js.native
+  var valueAsPercent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Fired before (selected) value is changed.
     * If the application returns false, then the action is canceled and the value remains unchanged.
     */
-  var valueChange: js.UndefOr[ValueChangeEvent] = js.native
+  var valueChange: js.UndefOr[ValueChangeEvent] = js.undefined
   
   /**
     * Gets/Sets value-hover (hovered votes or percent of hovered votes). The default is same as value. If the value is of type string, it should be suitable for parsing to number. According to [valueAsPercent](ui.igrating#options:valueAsPercent) options the valueHover is used as number of hovered votes or as a percent of the hovered votes.
     *
     */
-  var valueHover: js.UndefOr[Double | String] = js.native
+  var valueHover: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Gets a vertical or horizontal orientation for the votes.
     * Change of that option is not supported after igRating was created.
     *
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets number of votes.
     *
     */
-  var voteCount: js.UndefOr[Double] = js.native
+  var voteCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets custom height of a vote in pixels. In case of 0 the run time style value is used.
     *
     */
-  var voteHeight: js.UndefOr[Double] = js.native
+  var voteHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets custom width of a vote in pixels. In case of 0 the run time style value is used.
     *
     */
-  var voteWidth: js.UndefOr[Double] = js.native
+  var voteWidth: js.UndefOr[Double] = js.undefined
 }
 object IgRating {
   

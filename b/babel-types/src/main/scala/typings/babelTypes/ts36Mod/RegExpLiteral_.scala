@@ -3,28 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.RegExpLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegExpLiteral_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with Literal {
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var pattern: String = js.native
+  var pattern: String
   
   @JSName("type")
-  var type_RegExpLiteral_ : RegExpLiteral = js.native
+  var type_RegExpLiteral_ : RegExpLiteral
 }
 object RegExpLiteral_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, pattern: String, start: Double, `type`: RegExpLiteral): RegExpLiteral_ = {
+  def apply(end: Double, loc: SourceLocation, pattern: String, start: Double): RegExpLiteral_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RegExpLiteral")
     __obj.asInstanceOf[RegExpLiteral_]
   }
   

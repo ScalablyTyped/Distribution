@@ -3,50 +3,50 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IField extends IBase {
+trait IField
+  extends StObject
+     with IBase {
   
   /** [Config Option] (Function) */
-  var convert: js.UndefOr[js.Any] = js.native
+  var convert: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var dateReadFormat: js.UndefOr[String] = js.native
+  var dateReadFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var dateWriteFormat: js.UndefOr[String] = js.native
+  var dateWriteFormat: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object) */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Number) */
-  var mapping: js.UndefOr[js.Any] = js.native
+  var mapping: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var persist: js.UndefOr[Boolean] = js.native
+  var persist: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var serialize: js.UndefOr[js.Any] = js.native
+  var serialize: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var sortDir: js.UndefOr[String] = js.native
+  var sortDir: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Function/String) */
-  var sortType: js.UndefOr[js.Any] = js.native
+  var sortType: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String/Object) */
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var useNull: js.UndefOr[Boolean] = js.native
+  var useNull: js.UndefOr[Boolean] = js.undefined
 }
 object IField {
   

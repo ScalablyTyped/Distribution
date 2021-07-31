@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,12 +44,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @publicApi
   */
-@js.native
 trait InjectionToken[T] extends StObject {
   
-  var _desc: String = js.native
+  var _desc: String
   
-  val ɵprov: js.UndefOr[scala.Nothing] = js.native
+  val ɵprov: js.UndefOr[scala.Nothing] = js.undefined
 }
 object InjectionToken {
   
@@ -61,7 +59,7 @@ object InjectionToken {
   }
   
   @scala.inline
-  implicit class InjectionTokenMutableBuilder[Self <: InjectionToken[_], T] (val x: Self with InjectionToken[T]) extends AnyVal {
+  implicit class InjectionTokenMutableBuilder[Self <: InjectionToken[?], T] (val x: Self & InjectionToken[T]) extends AnyVal {
     
     @scala.inline
     def set_desc(value: String): Self = StObject.set(x, "_desc", value.asInstanceOf[js.Any])

@@ -3,19 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListEditorOptions extends StObject {
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
   
-  var values: js.UndefOr[js.Array[_]] = js.native
+  var values: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object TreeListEditorOptions {
   
@@ -47,7 +45,7 @@ object TreeListEditorOptions {
     def setModelUndefined: Self = StObject.set(x, "model", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

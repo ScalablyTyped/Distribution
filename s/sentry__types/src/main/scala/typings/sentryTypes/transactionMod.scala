@@ -12,7 +12,6 @@ import typings.sentryTypes.spanMod.SpanContext
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
@@ -21,29 +20,30 @@ object transactionMod {
   
   type Measurements = Record[String, Value]
   
-  @js.native
-  trait SamplingContext extends CustomSamplingContext {
+  trait SamplingContext
+    extends StObject
+       with CustomSamplingContext {
     
     /**
       * Object representing the URL of the current page or worker script. Passed by default in a browser or service worker
       * context.
       */
-    var location: js.UndefOr[WorkerLocation] = js.native
+    var location: js.UndefOr[WorkerLocation] = js.undefined
     
     /**
       * Sampling decision from the parent transaction, if any.
       */
-    var parentSampled: js.UndefOr[Boolean] = js.native
+    var parentSampled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Object representing the incoming request to a node server. Passed by default when using the TracingHandler.
       */
-    var request: js.UndefOr[ExtractedNodeRequestData] = js.native
+    var request: js.UndefOr[ExtractedNodeRequestData] = js.undefined
     
     /**
       * Context data with which transaction being sampled was created
       */
-    var transactionContext: TransactionContext = js.native
+    var transactionContext: TransactionContext
   }
   object SamplingContext {
     
@@ -80,14 +80,13 @@ object transactionMod {
   }
   
   /* Inlined std.Pick<@sentry/types.@sentry/types/dist/transaction.TransactionContext, 'traceId' | 'parentSpanId' | 'parentSampled'> */
-  @js.native
   trait TraceparentData extends StObject {
     
-    var parentSampled: js.UndefOr[Boolean] = js.native
+    var parentSampled: js.UndefOr[Boolean] = js.undefined
     
-    var parentSpanId: js.UndefOr[String] = js.native
+    var parentSpanId: js.UndefOr[String] = js.undefined
     
-    var traceId: js.UndefOr[String] = js.native
+    var traceId: js.UndefOr[String] = js.undefined
   }
   object TraceparentData {
     
@@ -123,7 +122,9 @@ object transactionMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.sentryTypes.spanMod.SpanContext because Already inherited
   - typings.sentryTypes.spanMod.Span because var conflicts: data, description, endTimestamp, op, parentSpanId, sampled, spanId, startTimestamp, status, tags, traceId. Inlined transaction, finish, finish, setTag, setData, setStatus, setHttpStatus, child, child, startChild, startChild, isSuccess, toTraceparent, getTraceContext, toJSON */ @js.native
-  trait Transaction extends TransactionContext {
+  trait Transaction
+    extends StObject
+       with TransactionContext {
     
     /**
       * Use {@link startChild}
@@ -228,18 +229,19 @@ object transactionMod {
     var transaction: js.UndefOr[Transaction] = js.native
   }
   
-  @js.native
-  trait TransactionContext extends SpanContext {
+  trait TransactionContext
+    extends StObject
+       with SpanContext {
     
     /**
       * Human-readable identifier for the transaction
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * If this transaction has a parent, the parent's sampling decision
       */
-    var parentSampled: js.UndefOr[Boolean] = js.native
+    var parentSampled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, sets the end timestamp of the transaction to the highest timestamp of child spans, trimming
@@ -247,7 +249,7 @@ object transactionMod {
       * accounted for in child spans, like what happens in the idle transaction Tracing integration, where we finish the
       * transaction after a given "idle time" and we don't want this "idle time" to be part of the transaction.
       */
-    var trimEnd: js.UndefOr[Boolean] = js.native
+    var trimEnd: js.UndefOr[Boolean] = js.undefined
   }
   object TransactionContext {
     

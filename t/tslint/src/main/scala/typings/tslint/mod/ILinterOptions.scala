@@ -3,21 +3,19 @@ package typings.tslint.mod
 import typings.tslint.formatterMod.FormatterConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILinterOptions extends StObject {
   
-  var fix: Boolean = js.native
+  var fix: Boolean
   
-  var formatter: js.UndefOr[String | FormatterConstructor] = js.native
+  var formatter: js.UndefOr[String | FormatterConstructor] = js.undefined
   
-  var formattersDirectory: js.UndefOr[String] = js.native
+  var formattersDirectory: js.UndefOr[String] = js.undefined
   
-  var quiet: js.UndefOr[Boolean] = js.native
+  var quiet: js.UndefOr[Boolean] = js.undefined
   
-  var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.native
+  var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object ILinterOptions {
   

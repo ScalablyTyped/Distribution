@@ -5,7 +5,6 @@ import typings.heremaps.H.geo.MultiPoint
 import typings.heremaps.H.map.DomMarker.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.DomMarker")
 @js.native
 class DomMarker protected ()
-  extends typings.heremaps.H.map.AbstractMarker {
+  extends StObject
+     with typings.heremaps.H.map.AbstractMarker {
   /**
     * Constructor
     * @param position {H.geo.IPoint | H.geo.MultiPoint}

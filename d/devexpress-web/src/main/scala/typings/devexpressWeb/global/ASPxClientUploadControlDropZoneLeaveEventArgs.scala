@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientUploadControlDropZoneLeaveEventArgs")
 @js.native
 class ASPxClientUploadControlDropZoneLeaveEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientUploadControlDropZoneLeaveEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientUploadControlDropZoneLeaveEventArgs {
   /**
     * Initializes a new instance of the ASPxClientUploadControlDropZoneLeaveEventArgs object.
     * @param dropZone An object that is a drop zone related to the processed event.
     */
   def this(dropZone: js.Any) = this()
+  
+  /**
+    * Gets a drop zone object related to the processed event.
+    */
+  /* CompleteClass */
+  var dropZone: js.Any = js.native
 }

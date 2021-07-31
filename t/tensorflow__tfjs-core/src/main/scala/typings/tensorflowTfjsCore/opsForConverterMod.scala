@@ -65,219 +65,141 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.symmetric
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opsForConverterMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "OP_SCOPE_SUFFIX")
   @js.native
   val OP_SCOPE_SUFFIX: /* "__op" */ String = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "abs")
-  @js.native
-  def abs[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "abs")
-  @js.native
-  def abs[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def abs[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("abs")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "acos")
-  @js.native
-  def acos[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "acos")
-  @js.native
-  def acos[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def acos[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("acos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "acosh")
-  @js.native
-  def acosh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "acosh")
-  @js.native
-  def acosh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def acosh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "add")
-  @js.native
-  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "add")
-  @js.native
-  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "add")
-  @js.native
-  def add[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "add")
-  @js.native
-  def add[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def add[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def add[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def add[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "addN")
-  @js.native
-  def addN[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = js.native
+  @scala.inline
+  def addN[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("addN")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "addStrict")
-  @js.native
-  def addStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def addStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("addStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "all")
-  @js.native
-  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def all[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("all")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "any")
-  @js.native
-  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def any[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMax")
-  @js.native
-  def argMax[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMax")
-  @js.native
-  def argMax[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMax")
-  @js.native
-  def argMax[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMax")
-  @js.native
-  def argMax[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def argMax[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def argMax[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def argMax[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def argMax[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMax")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMin")
-  @js.native
-  def argMin[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMin")
-  @js.native
-  def argMin[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMin")
-  @js.native
-  def argMin[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "argMin")
-  @js.native
-  def argMin[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def argMin[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def argMin[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def argMin[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def argMin[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("argMin")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "asin")
-  @js.native
-  def asin[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "asin")
-  @js.native
-  def asin[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def asin[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("asin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "asinh")
-  @js.native
-  def asinh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "asinh")
-  @js.native
-  def asinh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def asinh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan")
-  @js.native
-  def atan[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan")
-  @js.native
-  def atan[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def atan[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan2")
-  @js.native
-  def atan2[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan2")
-  @js.native
-  def atan2[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan2")
-  @js.native
-  def atan2[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atan2")
-  @js.native
-  def atan2[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def atan2[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def atan2[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def atan2[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def atan2[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("atan2")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atanh")
-  @js.native
-  def atanh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "atanh")
-  @js.native
-  def atanh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def atanh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "avgPool")
-  @js.native
+  @scala.inline
   def avgPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "avgPool3d")
-  @js.native
+  @scala.inline
   def avgPool3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
@@ -286,7 +208,7 @@ object opsForConverterMod {
     dimRoundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[NDHWC | NCDHW],
     dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("avgPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "basicLSTMCell")
   @js.native
@@ -300,8 +222,7 @@ object opsForConverterMod {
     js.Tuple2[Tensor2D, Tensor2D]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "batchNorm")
-  @js.native
+  @scala.inline
   def batchNorm[R /* <: Rank */](
     x: Tensor[R] | TensorLike,
     mean: Tensor[R] | Tensor1D | TensorLike,
@@ -309,7 +230,7 @@ object opsForConverterMod {
     offset: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
     scale: js.UndefOr[Tensor[R] | Tensor1D | TensorLike],
     varianceEpsilon: js.UndefOr[Double]
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("batchNorm")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], variance.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], scale.asInstanceOf[js.Any], varianceEpsilon.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "batchNorm2d")
   @js.native
@@ -347,12 +268,8 @@ object opsForConverterMod {
     Tensor4D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "batchToSpaceND")
-  @js.native
-  def batchToSpaceND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "batchToSpaceND")
-  @js.native
-  def batchToSpaceND[T /* <: Tensor[Rank] */](x: TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = js.native
+  @scala.inline
+  def batchToSpaceND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], crops: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("batchToSpaceND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], crops.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "booleanMaskAsync")
   @js.native
@@ -363,165 +280,125 @@ object opsForConverterMod {
     js.Promise[Tensor[Rank]]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "broadcastTo")
-  @js.native
+  @scala.inline
   def broadcastTo[R /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "broadcastTo")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def broadcastTo[R /* <: Rank */](
     x: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("broadcastTo")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  @scala.inline
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): TensorBuffer[R, float32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, float32] = ^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any]).asInstanceOf[TensorBuffer[R, float32]]
+  @scala.inline
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     values: js.Array[String]
-  ): TensorBuffer[R, string] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, string]]
+  @scala.inline
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     values: Float32Array
-  ): TensorBuffer[R, float32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
+  @scala.inline
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     values: Int32Array
-  ): TensorBuffer[R, int32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, int32]]
+  @scala.inline
   def buffer[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     values: Uint8Array
-  ): TensorBuffer[R, bool] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, bool]]
+  
+  @scala.inline
   def buffer_bool[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: bool
-  ): TensorBuffer[R, bool] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, bool]]
+  @scala.inline
   def buffer_bool[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: bool,
     values: Uint8Array
-  ): TensorBuffer[R, bool] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, bool] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, bool]]
+  
+  @scala.inline
   def buffer_complex64[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: complex64
-  ): TensorBuffer[R, complex64] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, complex64] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, complex64]]
+  @scala.inline
   def buffer_complex64[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: complex64,
     values: Float32Array
-  ): TensorBuffer[R, complex64] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, complex64] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, complex64]]
+  
+  @scala.inline
   def buffer_float32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: float32
-  ): TensorBuffer[R, float32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
+  @scala.inline
   def buffer_float32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: float32,
     values: Float32Array
-  ): TensorBuffer[R, float32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, float32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, float32]]
+  
+  @scala.inline
   def buffer_int32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32
-  ): TensorBuffer[R, int32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, int32]]
+  @scala.inline
   def buffer_int32[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: int32,
     values: Int32Array
-  ): TensorBuffer[R, int32] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, int32] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, int32]]
+  
+  @scala.inline
   def buffer_string[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: string
-  ): TensorBuffer[R, string] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "buffer")
-  @js.native
+  ): TensorBuffer[R, string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, string]]
+  @scala.inline
   def buffer_string[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: string,
     values: js.Array[String]
-  ): TensorBuffer[R, string] = js.native
+  ): TensorBuffer[R, string] = (^.asInstanceOf[js.Dynamic].applyDynamic("buffer")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[TensorBuffer[R, string]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cast")
-  @js.native
-  def cast[T /* <: Tensor[Rank] */](x: T, dtype: DataType): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cast")
-  @js.native
-  def cast[T /* <: Tensor[Rank] */](x: TensorLike, dtype: DataType): T = js.native
+  @scala.inline
+  def cast[T /* <: Tensor[Rank] */](x: T | TensorLike, dtype: DataType): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cast")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ceil")
-  @js.native
-  def ceil[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ceil")
-  @js.native
-  def ceil[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def ceil[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ceil")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "clipByValue")
-  @js.native
-  def clipByValue[T /* <: Tensor[Rank] */](x: T, clipValueMin: Double, clipValueMax: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "clipByValue")
-  @js.native
-  def clipByValue[T /* <: Tensor[Rank] */](x: TensorLike, clipValueMin: Double, clipValueMax: Double): T = js.native
+  @scala.inline
+  def clipByValue[T /* <: Tensor[Rank] */](x: T | TensorLike, clipValueMin: Double, clipValueMax: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("clipByValue")(x.asInstanceOf[js.Any], clipValueMin.asInstanceOf[js.Any], clipValueMax.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "clone")
-  @js.native
-  def clone_[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "clone")
-  @js.native
-  def clone_[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def clone_[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "complex")
-  @js.native
-  def complex[T /* <: Tensor[Rank] */](real: T, imag: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "complex")
-  @js.native
-  def complex[T /* <: Tensor[Rank] */](real: T, imag: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "complex")
-  @js.native
-  def complex[T /* <: Tensor[Rank] */](real: TensorLike, imag: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "complex")
-  @js.native
-  def complex[T /* <: Tensor[Rank] */](real: TensorLike, imag: TensorLike): T = js.native
+  @scala.inline
+  def complex[T /* <: Tensor[Rank] */](real: T | TensorLike, imag: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("complex")(real.asInstanceOf[js.Any], imag.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "concat")
-  @js.native
-  def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "concat")
-  @js.native
-  def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike], axis: Double): T = js.native
+  @scala.inline
+  def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def concat[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("concat")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "concat1d")
   @js.native
@@ -539,8 +416,7 @@ object opsForConverterMod {
   @js.native
   val concat4d: js.Function2[/* tensors */ js.Array[Tensor4D | TensorLike], /* axis */ Double, Tensor4D] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv1d")
-  @js.native
+  @scala.inline
   def conv1d[T /* <: Tensor2D | Tensor3D */](
     x: T | TensorLike,
     filter: Tensor3D | TensorLike,
@@ -549,10 +425,9 @@ object opsForConverterMod {
     dataFormat: js.UndefOr[NWC | NCW],
     dilation: js.UndefOr[Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv1d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], stride.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv2d")
-  @js.native
+  @scala.inline
   def conv2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
@@ -561,10 +436,9 @@ object opsForConverterMod {
     dataFormat: js.UndefOr[NHWC | NCHW],
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv2dTranspose")
-  @js.native
+  @scala.inline
   def conv2dTranspose[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
@@ -572,10 +446,9 @@ object opsForConverterMod {
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv2dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3d")
-  @js.native
+  @scala.inline
   def conv3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filter: Tensor5D | TensorLike,
@@ -583,373 +456,178 @@ object opsForConverterMod {
     pad: valid_ | same_,
     dataFormat: js.UndefOr[NDHWC | NCDHW],
     dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: Tensor5D,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple4[Double, Double, Double, Double],
     strides: Double,
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: js.Tuple3[Double, Double, Double],
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: T,
+    x: T | TensorLike,
     filter: TensorLike,
     outputShape: js.Tuple5[Double, Double, Double, Double, Double],
     strides: Double,
     pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: Tensor5D,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple4[Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: js.Tuple3[Double, Double, Double],
-    pad: valid_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: same_
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "conv3dTranspose")
-  @js.native
-  def conv3dTranspose[T /* <: Tensor4D | Tensor5D */](
-    x: TensorLike,
-    filter: TensorLike,
-    outputShape: js.Tuple5[Double, Double, Double, Double, Double],
-    strides: Double,
-    pad: valid_
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("conv3dTranspose")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cos")
-  @js.native
-  def cos[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cos")
-  @js.native
-  def cos[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def cos[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cos")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cosh")
-  @js.native
-  def cosh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cosh")
-  @js.native
-  def cosh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def cosh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cosineWindow")
-  @js.native
-  def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = js.native
+  @scala.inline
+  def cosineWindow(windowLength: Double, a: Double, b: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineWindow")(windowLength.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](
-    x: Tensor[Rank],
-    axis: js.UndefOr[scala.Nothing],
-    exclusive: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], exclusive: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], exclusive: Boolean, reverse: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: js.UndefOr[scala.Nothing], reverse: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean, reverse: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](
-    x: TensorLike,
-    axis: js.UndefOr[scala.Nothing],
-    exclusive: js.UndefOr[scala.Nothing],
-    reverse: Boolean
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], exclusive: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], exclusive: Boolean, reverse: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: js.UndefOr[scala.Nothing], reverse: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "cumsum")
-  @js.native
-  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = js.native
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Boolean, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def cumsum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, exclusive: Unit, reverse: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("cumsum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any], reverse.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "depthToSpace")
   @js.native
@@ -960,8 +638,7 @@ object opsForConverterMod {
     Tensor4D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "depthwiseConv2d")
-  @js.native
+  @scala.inline
   def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor4D | TensorLike,
@@ -970,14 +647,13 @@ object opsForConverterMod {
     dataFormat: js.UndefOr[NHWC | NCHW],
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "diag")
   @js.native
   val diag: js.Function1[/* x */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "dilation2d")
-  @js.native
+  @scala.inline
   def dilation2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filter: Tensor3D | TensorLike,
@@ -985,46 +661,28 @@ object opsForConverterMod {
     pad: valid_ | same_,
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dataFormat: js.UndefOr[NHWC]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("dilation2d")(x.asInstanceOf[js.Any], filter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "div")
-  @js.native
-  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "div")
-  @js.native
-  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "div")
-  @js.native
-  def div[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "div")
-  @js.native
-  def div[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def div[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def div[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def div[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divNoNan")
-  @js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divNoNan")
-  @js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divNoNan")
-  @js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divNoNan")
-  @js.native
-  def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def divNoNan[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def divNoNan[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divNoNan")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "divStrict")
-  @js.native
-  def divStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def divStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("divStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "dot")
   @js.native
@@ -1040,76 +698,41 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "elu")
-  @js.native
-  def elu[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "elu")
-  @js.native
-  def elu[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def elu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("elu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "enclosingPowerOfTwo")
-  @js.native
-  def enclosingPowerOfTwo(value: Double): Double = js.native
+  @scala.inline
+  def enclosingPowerOfTwo(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("enclosingPowerOfTwo")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equal")
-  @js.native
-  def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equal")
-  @js.native
-  def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equal")
-  @js.native
-  def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equal")
-  @js.native
-  def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def equal[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def equal[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equalStrict")
-  @js.native
-  def equalStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equalStrict")
-  @js.native
-  def equalStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equalStrict")
-  @js.native
-  def equalStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "equalStrict")
-  @js.native
-  def equalStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def equalStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("equalStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "erf")
-  @js.native
-  def erf[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "erf")
-  @js.native
-  def erf[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def erf[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("erf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "exp")
-  @js.native
-  def exp[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "exp")
-  @js.native
-  def exp[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def exp[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("exp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expandDims")
-  @js.native
-  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def expandDims[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("expandDims")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expm1")
-  @js.native
-  def expm1[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "expm1")
-  @js.native
-  def expm1[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def expm1[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "eye")
   @js.native
@@ -1127,19 +750,17 @@ object opsForConverterMod {
   @js.native
   val fft: js.Function1[/* input */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fill")
-  @js.native
+  @scala.inline
   def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fill")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: String,
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   /**
     * Creates a `tf.Tensor` filled with a scalar value.
     *
@@ -1154,83 +775,58 @@ object opsForConverterMod {
     *
     * @doc {heading: 'Tensors', subheading: 'Creation'}
     */
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fill")
-  @js.native
+  @scala.inline
   def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fill")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def fill[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     value: Double,
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(shape.asInstanceOf[js.Any], value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floor")
-  @js.native
-  def floor[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floor")
-  @js.native
-  def floor[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def floor[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("floor")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floorDiv")
-  @js.native
-  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floorDiv")
-  @js.native
-  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floorDiv")
-  @js.native
-  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "floorDiv")
-  @js.native
-  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def floorDiv[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def floorDiv[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("floorDiv")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   object fused {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused.conv2d")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def conv2d[T /* <: Tensor3D | Tensor4D */](
       hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Activation[T]
-    ): T = js.native
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("conv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused.depthwiseConv2d")
-    @js.native
+    @scala.inline
     def depthwiseConv2d[T /* <: Tensor3D | Tensor4D */](
       hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights: Bias[T]
-    ): T = js.native
+    ): T = ^.asInstanceOf[js.Dynamic].applyDynamic("depthwiseConv2d")(hasXFilterStridesPadDataFormatDilationsDimRoundingModeBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "fused.matMul")
-    @js.native
-    def matMul[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = js.native
+    @scala.inline
+    def matMul[T /* <: Tensor[Rank] */](hasABTransposeATransposeBBiasActivationPreluActivationWeights: A[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(hasABTransposeATransposeBBiasActivationPreluActivationWeights.asInstanceOf[js.Any]).asInstanceOf[T]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: T, indices: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: T, indices: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: T, indices: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: T, indices: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: TensorLike, indices: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: TensorLike, indices: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: TensorLike, indices: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gather")
-  @js.native
-  def gather[T /* <: Tensor[Rank] */](x: TensorLike, indices: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def gather[T /* <: Tensor[Rank] */](x: T | TensorLike, indices: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("gather")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "gatherND")
   @js.native
@@ -1240,73 +836,44 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greater")
-  @js.native
-  def greater[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greater")
-  @js.native
-  def greater[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greater")
-  @js.native
-  def greater[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greater")
-  @js.native
-  def greater[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def greater[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greater[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greater[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greater[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greater")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqual")
-  @js.native
-  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqual")
-  @js.native
-  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqual")
-  @js.native
-  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqual")
-  @js.native
-  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greaterEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def greaterEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqualStrict")
-  @js.native
-  def greaterEqualStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqualStrict")
-  @js.native
-  def greaterEqualStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqualStrict")
-  @js.native
-  def greaterEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterEqualStrict")
-  @js.native
-  def greaterEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def greaterEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterStrict")
-  @js.native
-  def greaterStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterStrict")
-  @js.native
-  def greaterStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterStrict")
-  @js.native
-  def greaterStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "greaterStrict")
-  @js.native
-  def greaterStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def greaterStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ifft")
   @js.native
   val ifft: js.Function1[/* input */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "imag")
-  @js.native
-  def imag[T /* <: Tensor[Rank] */](input: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "imag")
-  @js.native
-  def imag[T /* <: Tensor[Rank] */](input: TensorLike): T = js.native
+  @scala.inline
+  def imag[T /* <: Tensor[Rank] */](input: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("imag")(input.asInstanceOf[js.Any]).asInstanceOf[T]
   
   object image {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.cropAndResize")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def cropAndResize(
       image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1320,42 +887,32 @@ object opsForConverterMod {
       cropSize: js.Tuple2[Double, Double],
       method: js.UndefOr[nearest | bilinear],
       extrapolationValue: js.UndefOr[Double]
-    ): Tensor[R4] = js.native
+    ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("cropAndResize")(image.asInstanceOf[js.Any], boxes.asInstanceOf[js.Any], boxInd.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], method.asInstanceOf[js.Any], extrapolationValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: String): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Boolean): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Double): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Float32Array): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Int32Array): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Uint8Array): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
-    def flipLeftRight(image: Tensor[R4]): Tensor[R4] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.flipLeftRight")
-    @js.native
+    @scala.inline
+    def flipLeftRight(image: String): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Boolean): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Double): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Float32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Int32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Uint8Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
+    def flipLeftRight(image: Tensor[R4]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+    @scala.inline
     def flipLeftRight(
       image: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ]
-    ): Tensor[R4] = js.native
+    ): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppression")
-    @js.native
+    @scala.inline
     def nonMaxSuppression(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1366,10 +923,9 @@ object opsForConverterMod {
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double]
-    ): Tensor[R1] = js.native
+    ): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppression")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppressionAsync")
-    @js.native
+    @scala.inline
     def nonMaxSuppressionAsync(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1380,10 +936,9 @@ object opsForConverterMod {
       maxOutputSize: Double,
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double]
-    ): js.Promise[Tensor[R1]] = js.native
+    ): js.Promise[Tensor[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tensor[R1]]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppressionPadded")
-    @js.native
+    @scala.inline
     def nonMaxSuppressionPadded(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1395,10 +950,9 @@ object opsForConverterMod {
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
       padToMaxOutputSize: js.UndefOr[Boolean]
-    ): NamedTensorMap = js.native
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPadded")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppressionPaddedAsync")
-    @js.native
+    @scala.inline
     def nonMaxSuppressionPaddedAsync(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1410,10 +964,9 @@ object opsForConverterMod {
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
       padToMaxOutputSize: js.UndefOr[Boolean]
-    ): js.Promise[NamedTensorMap] = js.native
+    ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPaddedAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppressionWithScore")
-    @js.native
+    @scala.inline
     def nonMaxSuppressionWithScore(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1425,10 +978,9 @@ object opsForConverterMod {
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
       softNmsSigma: js.UndefOr[Double]
-    ): NamedTensorMap = js.native
+    ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionWithScore")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.nonMaxSuppressionWithScoreAsync")
-    @js.native
+    @scala.inline
     def nonMaxSuppressionWithScoreAsync(
       boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1440,142 +992,105 @@ object opsForConverterMod {
       iouThreshold: js.UndefOr[Double],
       scoreThreshold: js.UndefOr[Double],
       softNmsSigma: js.UndefOr[Double]
-    ): js.Promise[NamedTensorMap] = js.native
+    ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionWithScoreAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
-    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def resizeBilinear[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ],
       size: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeBilinear")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def resizeBilinear[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ],
       size: js.Tuple2[Double, Double],
       alignCorners: Boolean
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
-    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: T, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ],
       size: js.Tuple2[Double, Double]
-    ): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.resizeNearestNeighbor")
-    @js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
       images: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ],
       size: js.Tuple2[Double, Double],
       alignCorners: Boolean
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "image.rotateWithOffset")
-    @js.native
+    @scala.inline
     def rotateWithOffset(
       image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -1583,450 +1098,210 @@ object opsForConverterMod {
       radians: Double,
       fillValue: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])],
       center: js.UndefOr[Double | (js.Tuple2[Double, Double])]
-    ): Tensor[R4] = js.native
+    ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateWithOffset")(image.asInstanceOf[js.Any], radians.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T, targets: U): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T, targets: U, k: Double): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T, targets: TensorLike): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T, targets: TensorLike, k: Double): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: TensorLike, targets: U): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: TensorLike, targets: U, k: Double): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: TensorLike, targets: TensorLike): js.Promise[U] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "inTopKAsync")
-  @js.native
-  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: TensorLike, targets: TensorLike, k: Double): js.Promise[U] = js.native
+  @scala.inline
+  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T | TensorLike, targets: TensorLike | U): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
+  @scala.inline
+  def inTopKAsync[T /* <: Tensor[Rank] */, U /* <: Tensor[Rank] */](predictions: T | TensorLike, targets: TensorLike | U, k: Double): js.Promise[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("inTopKAsync")(predictions.asInstanceOf[js.Any], targets.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[js.Promise[U]]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "irfft")
   @js.native
   val irfft: js.Function1[/* input */ Tensor[Rank], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isFinite")
-  @js.native
-  def isFinite[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isFinite")
-  @js.native
-  def isFinite[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def isFinite[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isInf")
-  @js.native
-  def isInf[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isInf")
-  @js.native
-  def isInf[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def isInf[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isInf")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isNaN")
-  @js.native
-  def isNaN[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "isNaN")
-  @js.native
-  def isNaN[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def isNaN[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "leakyRelu")
-  @js.native
-  def leakyRelu[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "leakyRelu")
-  @js.native
-  def leakyRelu[T /* <: Tensor[Rank] */](x: T, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "leakyRelu")
-  @js.native
-  def leakyRelu[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "leakyRelu")
-  @js.native
-  def leakyRelu[T /* <: Tensor[Rank] */](x: TensorLike, alpha: Double): T = js.native
+  @scala.inline
+  def leakyRelu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def leakyRelu[T /* <: Tensor[Rank] */](x: T | TensorLike, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("leakyRelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "less")
-  @js.native
-  def less[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "less")
-  @js.native
-  def less[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "less")
-  @js.native
-  def less[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "less")
-  @js.native
-  def less[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def less[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def less[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def less[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def less[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("less")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqual")
-  @js.native
-  def lessEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqual")
-  @js.native
-  def lessEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqual")
-  @js.native
-  def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqual")
-  @js.native
-  def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def lessEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def lessEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def lessEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqualStrict")
-  @js.native
-  def lessEqualStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqualStrict")
-  @js.native
-  def lessEqualStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqualStrict")
-  @js.native
-  def lessEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessEqualStrict")
-  @js.native
-  def lessEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def lessEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessStrict")
-  @js.native
-  def lessStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessStrict")
-  @js.native
-  def lessStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessStrict")
-  @js.native
-  def lessStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "lessStrict")
-  @js.native
-  def lessStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def lessStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("lessStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   object linalg {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg")
     @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: T, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: String, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: js.Array[Uint8Array], numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: Boolean, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: Double, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: Float32Array, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: Int32Array, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
-    def bandPart[T /* <: Tensor[Rank] */](a: Uint8Array, numLower: Double, numUpper: Double): T = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.bandPart")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: T, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: String, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: js.Array[Uint8Array], numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: Boolean, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: Double, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: Float32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: Int32Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def bandPart[T /* <: Tensor[Rank] */](a: Uint8Array, numLower: Double, numUpper: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
     def bandPart[T /* <: Tensor[Rank] */](
       a: RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
         ],
       numLower: Double,
       numUpper: Double
-    ): T = js.native
+    ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("bandPart")(a.asInstanceOf[js.Any], numLower.asInstanceOf[js.Any], numUpper.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.gramSchmidt")
-    @js.native
-    def gramSchmidt(xs: js.Array[Tensor[R1]]): Tensor[R2] | js.Array[Tensor[R1]] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.gramSchmidt")
-    @js.native
-    def gramSchmidt(xs: Tensor[R2]): Tensor[R2] | js.Array[Tensor[R1]] = js.native
+    @scala.inline
+    def gramSchmidt(xs: js.Array[Tensor[R1]]): Tensor[R2] | js.Array[Tensor[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor[R2] | js.Array[Tensor[R1]]]
+    @scala.inline
+    def gramSchmidt(xs: Tensor[R2]): Tensor[R2] | js.Array[Tensor[R1]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gramSchmidt")(xs.asInstanceOf[js.Any]).asInstanceOf[Tensor[R2] | js.Array[Tensor[R1]]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.qr")
-    @js.native
-    def qr(x: Tensor[Rank]): js.Tuple2[Tensor[Rank], Tensor[Rank]] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linalg.qr")
-    @js.native
-    def qr(x: Tensor[Rank], fullMatrices: Boolean): js.Tuple2[Tensor[Rank], Tensor[Rank]] = js.native
+    @scala.inline
+    def qr(x: Tensor[Rank]): js.Tuple2[Tensor[Rank], Tensor[Rank]] = ^.asInstanceOf[js.Dynamic].applyDynamic("qr")(x.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Tensor[Rank], Tensor[Rank]]]
+    @scala.inline
+    def qr(x: Tensor[Rank], fullMatrices: Boolean): js.Tuple2[Tensor[Rank], Tensor[Rank]] = (^.asInstanceOf[js.Dynamic].applyDynamic("qr")(x.asInstanceOf[js.Any], fullMatrices.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Tensor[Rank], Tensor[Rank]]]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "linspace")
-  @js.native
-  def linspace(start: Double, stop: Double, num: Double): Tensor1D = js.native
+  @scala.inline
+  def linspace(start: Double, stop: Double, num: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("linspace")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], num.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: T,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: js.UndefOr[scala.Nothing], bias: js.UndefOr[scala.Nothing], alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: T,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: js.UndefOr[scala.Nothing], bias: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: T,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double, beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: T,
-    depthRadius: Double,
-    bias: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double, beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: Double, alpha: js.UndefOr[scala.Nothing], beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: Double, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T, depthRadius: Double, bias: Double, alpha: Double, beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: TensorLike,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: TensorLike,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: TensorLike,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: js.UndefOr[scala.Nothing],
-    alpha: Double,
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: js.UndefOr[scala.Nothing], bias: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: TensorLike,
-    depthRadius: js.UndefOr[scala.Nothing],
-    bias: Double,
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: js.UndefOr[scala.Nothing], bias: Double, alpha: Double, beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](
-    x: TensorLike,
-    depthRadius: Double,
-    bias: js.UndefOr[scala.Nothing],
-    alpha: js.UndefOr[scala.Nothing],
-    beta: Double
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: js.UndefOr[scala.Nothing], alpha: Double, beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: js.UndefOr[scala.Nothing], beta: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "localResponseNormalization")
-  @js.native
-  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: TensorLike, depthRadius: Double, bias: Double, alpha: Double, beta: Double): T = js.native
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Double, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Double, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Double, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Unit, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Unit, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Double, bias: Unit, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Double, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Double, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Double, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Unit, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Unit, alpha: Double, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def localResponseNormalization[T /* <: Tensor3D | Tensor4D */](x: T | TensorLike, depthRadius: Unit, bias: Unit, alpha: Unit, beta: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("localResponseNormalization")(x.asInstanceOf[js.Any], depthRadius.asInstanceOf[js.Any], bias.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "log")
-  @js.native
-  def log[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "log")
-  @js.native
-  def log[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def log[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "log1p")
-  @js.native
-  def log1p[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "log1p")
-  @js.native
-  def log1p[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def log1p[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSigmoid")
-  @js.native
-  def logSigmoid[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSigmoid")
-  @js.native
-  def logSigmoid[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def logSigmoid[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSoftmax")
-  @js.native
-  def logSoftmax[T /* <: Tensor[Rank] */](logits: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSoftmax")
-  @js.native
-  def logSoftmax[T /* <: Tensor[Rank] */](logits: T, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSoftmax")
-  @js.native
-  def logSoftmax[T /* <: Tensor[Rank] */](logits: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSoftmax")
-  @js.native
-  def logSoftmax[T /* <: Tensor[Rank] */](logits: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def logSoftmax[T /* <: Tensor[Rank] */](logits: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def logSoftmax[T /* <: Tensor[Rank] */](logits: T | TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSoftmax")(logits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logSumExp")
-  @js.native
-  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logSumExp[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logSumExp")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalAnd")
-  @js.native
-  def logicalAnd[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalAnd")
-  @js.native
-  def logicalAnd[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalAnd")
-  @js.native
-  def logicalAnd[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalAnd")
-  @js.native
-  def logicalAnd[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def logicalAnd[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalAnd[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalAnd[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalAnd[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalAnd")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalNot")
-  @js.native
-  def logicalNot[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalNot")
-  @js.native
-  def logicalNot[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def logicalNot[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("logicalNot")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalOr")
-  @js.native
-  def logicalOr[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalOr")
-  @js.native
-  def logicalOr[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalOr")
-  @js.native
-  def logicalOr[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalOr")
-  @js.native
-  def logicalOr[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def logicalOr[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalOr[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalOr[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalOr[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalOr")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalXor")
-  @js.native
-  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalXor")
-  @js.native
-  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalXor")
-  @js.native
-  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "logicalXor")
-  @js.native
-  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalXor[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def logicalXor[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("logicalXor")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   object losses {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.absoluteDifference")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def absoluteDifference[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2040,10 +1315,9 @@ object opsForConverterMod {
           ]) | js.Array[Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDifference")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.computeWeightedLoss")
-    @js.native
+    @scala.inline
     def computeWeightedLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       losses: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2054,10 +1328,9 @@ object opsForConverterMod {
           ]) | js.Array[Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("computeWeightedLoss")(losses.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.cosineDistance")
-    @js.native
+    @scala.inline
     def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2072,10 +1345,9 @@ object opsForConverterMod {
           ]) | js.Array[Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.hingeLoss")
-    @js.native
+    @scala.inline
     def hingeLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2089,10 +1361,9 @@ object opsForConverterMod {
           ]) | js.Array[Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("hingeLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.huberLoss")
-    @js.native
+    @scala.inline
     def huberLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2107,10 +1378,9 @@ object opsForConverterMod {
         ],
       delta: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("huberLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.logLoss")
-    @js.native
+    @scala.inline
     def logLoss[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2125,10 +1395,9 @@ object opsForConverterMod {
         ],
       epsilon: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("logLoss")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.meanSquaredError")
-    @js.native
+    @scala.inline
     def meanSquaredError[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       labels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2142,10 +1411,9 @@ object opsForConverterMod {
           ]) | js.Array[Uint8Array] | Tensor[Rank]
         ],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("meanSquaredError")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.sigmoidCrossEntropy")
-    @js.native
+    @scala.inline
     def sigmoidCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       multiClassLabels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2160,10 +1428,9 @@ object opsForConverterMod {
         ],
       labelSmoothing: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("sigmoidCrossEntropy")(multiClassLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "losses.softmaxCrossEntropy")
-    @js.native
+    @scala.inline
     def softmaxCrossEntropy[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
       onehotLabels: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
           js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -2178,107 +1445,77 @@ object opsForConverterMod {
         ],
       labelSmoothing: js.UndefOr[Double],
       reduction: js.UndefOr[Reduction]
-    ): O = js.native
+    ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("softmaxCrossEntropy")(onehotLabels.asInstanceOf[js.Any], logits.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], labelSmoothing.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Boolean, transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: Boolean, transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: js.UndefOr[scala.Nothing], transposeB: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "matMul")
-  @js.native
-  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = js.native
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Boolean, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank], transposeA: Unit, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike, transposeA: Unit, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: Boolean, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank], transposeA: Unit, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Boolean, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def matMul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike, transposeA: Unit, transposeB: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("matMul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], transposeA.asInstanceOf[js.Any], transposeB.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "max")
-  @js.native
-  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def max[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPool")
-  @js.native
+  @scala.inline
   def maxPool[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     filterSize: (js.Tuple2[Double, Double]) | Double,
     strides: (js.Tuple2[Double, Double]) | Double,
     pad: valid_ | same_ | Double,
     dimRoundingMode: js.UndefOr[floor | round | ceil]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPool3d")
-  @js.native
+  @scala.inline
   def maxPool3d[T /* <: Tensor4D | Tensor5D */](
     x: T | TensorLike,
     filterSize: (js.Tuple3[Double, Double, Double]) | Double,
@@ -2287,440 +1524,216 @@ object opsForConverterMod {
     dimRoundingMode: js.UndefOr[floor | round | ceil],
     dataFormat: js.UndefOr[NDHWC | NCDHW],
     dilations: js.UndefOr[(js.Tuple3[Double, Double, Double]) | Double]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPool3d")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dimRoundingMode.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: js.Tuple2[Double, Double], pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: Double,
-    pad: Double,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: Double,
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: js.Tuple2[Double, Double],
-    strides: Double,
-    pad: valid_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: Double,
-    strides: js.Tuple2[Double, Double],
-    pad: Double,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: Double,
-    strides: js.Tuple2[Double, Double],
-    pad: same_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: T,
-    filterSize: Double,
-    strides: js.Tuple2[Double, Double],
-    pad: valid_,
-    includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: same_, includeBatchInIndex: Boolean): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T, filterSize: Double, strides: Double, pad: valid_, includeBatchInIndex: Boolean): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: Double
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: Double,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: same_
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: same_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: valid_
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: js.Tuple2[Double, Double],
     pad: valid_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: Double,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: same_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: js.Tuple2[Double, Double], strides: Double, pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: js.Tuple2[Double, Double],
     strides: Double,
     pad: valid_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: Double,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: same_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: js.Tuple2[Double, Double], pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
   def maxPoolWithArgmax[T /* <: Tensor4D */](
-    x: TensorLike,
+    x: T | TensorLike,
     filterSize: Double,
     strides: js.Tuple2[Double, Double],
     pad: valid_,
     includeBatchInIndex: Boolean
-  ): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: same_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: same_, includeBatchInIndex: Boolean): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid_): NamedTensorMap = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maxPoolWithArgmax")
-  @js.native
-  def maxPoolWithArgmax[T /* <: Tensor4D */](x: TensorLike, filterSize: Double, strides: Double, pad: valid_, includeBatchInIndex: Boolean): NamedTensorMap = js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: Double, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: same_, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: valid_): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
+  @scala.inline
+  def maxPoolWithArgmax[T /* <: Tensor4D */](x: T | TensorLike, filterSize: Double, strides: Double, pad: valid_, includeBatchInIndex: Boolean): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("maxPoolWithArgmax")(x.asInstanceOf[js.Any], filterSize.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], includeBatchInIndex.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximum")
-  @js.native
-  def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximum")
-  @js.native
-  def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximum")
-  @js.native
-  def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximum")
-  @js.native
-  def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def maximum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def maximum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "maximumStrict")
-  @js.native
-  def maximumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def maximumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maximumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mean")
-  @js.native
-  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mean[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mean")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "min")
-  @js.native
-  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def min[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimum")
-  @js.native
-  def minimum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimum")
-  @js.native
-  def minimum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimum")
-  @js.native
-  def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimum")
-  @js.native
-  def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def minimum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def minimum[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def minimum[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "minimumStrict")
-  @js.native
-  def minimumStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def minimumStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minimumStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mirrorPad")
-  @js.native
-  def mirrorPad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mirrorPad")
-  @js.native
-  def mirrorPad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mirrorPad")
-  @js.native
-  def mirrorPad[T /* <: Tensor[Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mirrorPad")
-  @js.native
-  def mirrorPad[T /* <: Tensor[Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = js.native
+  @scala.inline
+  def mirrorPad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: reflect): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mirrorPad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], mode: symmetric): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mod")
-  @js.native
-  def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mod")
-  @js.native
-  def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mod")
-  @js.native
-  def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mod")
-  @js.native
-  def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mod[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mod[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "modStrict")
-  @js.native
-  def modStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def modStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("modStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "moments")
   @js.native
@@ -2731,176 +1744,42 @@ object opsForConverterMod {
     Mean
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Double, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: T, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Double, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: T, x: TensorLike, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Double, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: T, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Double, step: Scalar, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: js.UndefOr[scala.Nothing], zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Double, zeroDebias: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Scalar): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "movingAverage")
-  @js.native
-  def movingAverage[T /* <: Tensor[Rank] */](v: TensorLike, x: TensorLike, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = js.native
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Double, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Unit, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Double, step: Scalar, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Double, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Unit, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Scalar): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def movingAverage[T /* <: Tensor[Rank] */](v: T | TensorLike, x: T | TensorLike, decay: Scalar, step: Scalar, zeroDebias: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("movingAverage")(v.asInstanceOf[js.Any], x.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], step.asInstanceOf[js.Any], zeroDebias.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mul")
-  @js.native
-  def mul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mul")
-  @js.native
-  def mul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mul")
-  @js.native
-  def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mul")
-  @js.native
-  def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def mul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mul[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def mul[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mul")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "mulStrict")
-  @js.native
-  def mulStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def mulStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mulStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "multiRNNCell")
   @js.native
@@ -2922,12 +1801,8 @@ object opsForConverterMod {
     Tensor1D | Tensor2D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "neg")
-  @js.native
-  def neg[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "neg")
-  @js.native
-  def neg[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def neg[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "norm")
   @js.native
@@ -2939,31 +1814,17 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqual")
-  @js.native
-  def notEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqual")
-  @js.native
-  def notEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqual")
-  @js.native
-  def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqual")
-  @js.native
-  def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def notEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def notEqual[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def notEqual[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqualStrict")
-  @js.native
-  def notEqualStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqualStrict")
-  @js.native
-  def notEqualStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqualStrict")
-  @js.native
-  def notEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "notEqualStrict")
-  @js.native
-  def notEqualStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def notEqualStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqualStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "oneHot")
   @js.native
@@ -2975,45 +1836,30 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ones")
-  @js.native
+  @scala.inline
   def ones[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "ones")
-  @js.native
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def ones[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "onesLike")
-  @js.native
-  def onesLike[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "onesLike")
-  @js.native
-  def onesLike[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def onesLike[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("onesLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "op")
-  @js.native
-  def op[T /* <: js.Function */](f: StringDictionary[T]): T = js.native
+  @scala.inline
+  def op[T /* <: js.Function */](f: StringDictionary[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("op")(f.asInstanceOf[js.Any]).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "outerProduct")
   @js.native
   val outerProduct: js.Function2[/* v1 */ Tensor1D | TensorLike, /* v2 */ Tensor1D | TensorLike, Tensor2D] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pad")
-  @js.native
-  def pad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pad")
-  @js.native
-  def pad[T /* <: Tensor[Rank] */](x: T, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pad")
-  @js.native
-  def pad[T /* <: Tensor[Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pad")
-  @js.native
-  def pad[T /* <: Tensor[Rank] */](x: TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = js.native
+  @scala.inline
+  def pad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pad[T /* <: Tensor[Rank] */](x: T | TensorLike, paddings: js.Array[js.Tuple2[Double, Double]], constantValue: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pad")(x.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any], constantValue.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pad1d")
   @js.native
@@ -3056,8 +1902,7 @@ object opsForConverterMod {
     Tensor4D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pool")
-  @js.native
+  @scala.inline
   def pool[T /* <: Tensor3D | Tensor4D */](
     input: T | TensorLike,
     windowShape: (js.Tuple2[Double, Double]) | Double,
@@ -3065,674 +1910,549 @@ object opsForConverterMod {
     pad: valid_ | same_ | Double,
     dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     strides: js.UndefOr[(js.Tuple2[Double, Double]) | Double]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pool")(input.asInstanceOf[js.Any], windowShape.asInstanceOf[js.Any], poolingType.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilations.asInstanceOf[js.Any], strides.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pow")
-  @js.native
-  def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pow")
-  @js.native
-  def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pow")
-  @js.native
-  def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "pow")
-  @js.native
-  def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: TensorLike): T = js.native
+  @scala.inline
+  def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pow[T /* <: Tensor[Rank] */](base: Tensor[Rank], exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def pow[T /* <: Tensor[Rank] */](base: TensorLike, exp: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("pow")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "powStrict")
-  @js.native
-  def powStrict[T /* <: Tensor[Rank] */](base: T, exp: Tensor[Rank]): T = js.native
+  @scala.inline
+  def powStrict[T /* <: Tensor[Rank] */](base: T, exp: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("powStrict")(base.asInstanceOf[js.Any], exp.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prelu")
-  @js.native
-  def prelu[T /* <: Tensor[Rank] */](x: T, alpha: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prelu")
-  @js.native
-  def prelu[T /* <: Tensor[Rank] */](x: T, alpha: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prelu")
-  @js.native
-  def prelu[T /* <: Tensor[Rank] */](x: TensorLike, alpha: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prelu")
-  @js.native
-  def prelu[T /* <: Tensor[Rank] */](x: TensorLike, alpha: TensorLike): T = js.native
+  @scala.inline
+  def prelu[T /* <: Tensor[Rank] */](x: T | TensorLike, alpha: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prelu")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "print")
-  @js.native
-  def print[T /* <: Tensor[Rank] */](x: T): Unit = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "print")
-  @js.native
-  def print[T /* <: Tensor[Rank] */](x: T, verbose: Boolean): Unit = js.native
+  @scala.inline
+  def print[T /* <: Tensor[Rank] */](x: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def print[T /* <: Tensor[Rank] */](x: T, verbose: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("print")(x.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "prod")
-  @js.native
-  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def prod[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("prod")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "rand")
-  @js.native
+  @scala.inline
   def rand[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     randFunction: js.Function0[Double]
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "rand")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def rand[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     randFunction: js.Function0[Double],
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("rand")(shape.asInstanceOf[js.Any], randFunction.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
-  def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
-  def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: js.UndefOr[scala.Nothing],
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
-  def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: js.UndefOr[scala.Nothing],
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
-  def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: js.UndefOr[scala.Nothing],
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
-  def randomGamma[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    alpha: Double,
-    beta: js.UndefOr[scala.Nothing],
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
     dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
     dtype: float32,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
     dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomGamma")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomGamma[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     alpha: Double,
     beta: Double,
     dtype: int32,
     seed: Double
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomGamma[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    alpha: Double,
+    beta: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomGamma[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    alpha: Double,
+    beta: Unit,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomGamma[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    alpha: Double,
+    beta: Unit,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomGamma[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    alpha: Double,
+    beta: Unit,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomGamma[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    alpha: Double,
+    beta: Unit,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomGamma")(shape.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
-  def randomNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: int32,
     seed: Double
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType,
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double,
-    dtype: js.UndefOr[scala.Nothing],
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double,
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double,
-    dtype: DataType
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double,
-    dtype: DataType,
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: js.UndefOr[scala.Nothing],
-    maxval: Double,
-    dtype: DataType,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: Double,
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: Double,
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: Double,
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: Double,
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType,
-    seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
-  def randomUniform[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    minval: Double,
-    maxval: js.UndefOr[scala.Nothing],
-    dtype: DataType,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double,
     dtype: DataType
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double,
     dtype: DataType,
     seed: String
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "randomUniform")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def randomUniform[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     minval: Double,
     maxval: Double,
     dtype: DataType,
     seed: Double
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Unit,
+    dtype: Unit,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Unit,
+    dtype: DataType
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Unit,
+    dtype: DataType,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Double,
+    maxval: Unit,
+    dtype: DataType,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double,
+    dtype: Unit,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double,
+    dtype: DataType
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double,
+    dtype: DataType,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Double,
+    dtype: DataType,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Unit,
+    dtype: Unit,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Unit,
+    dtype: DataType
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Unit,
+    dtype: DataType,
+    seed: String
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def randomUniform[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    minval: Unit,
+    maxval: Unit,
+    dtype: DataType,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("randomUniform")(shape.asInstanceOf[js.Any], minval.asInstanceOf[js.Any], maxval.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range(start: Double, stop: Double): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range(start: Double, stop: Double, step: Double): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range_float32(start: Double, stop: Double, step: js.UndefOr[scala.Nothing], dtype: float32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range_float32(start: Double, stop: Double, step: Double, dtype: float32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range_int32(start: Double, stop: Double, step: js.UndefOr[scala.Nothing], dtype: int32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "range")
-  @js.native
-  def range_int32(start: Double, stop: Double, step: Double, dtype: int32): Tensor1D = js.native
+  @scala.inline
+  def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "real")
-  @js.native
-  def real[T /* <: Tensor[Rank] */](input: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "real")
-  @js.native
-  def real[T /* <: Tensor[Rank] */](input: TensorLike): T = js.native
+  @scala.inline
+  def range_float32(start: Double, stop: Double, step: Double, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range_float32(start: Double, stop: Double, step: Unit, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reciprocal")
-  @js.native
-  def reciprocal[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reciprocal")
-  @js.native
-  def reciprocal[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def range_int32(start: Double, stop: Double, step: Double, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range_int32(start: Double, stop: Double, step: Unit, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "relu")
-  @js.native
-  def relu[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "relu")
-  @js.native
-  def relu[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def real[T /* <: Tensor[Rank] */](input: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("real")(input.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "relu6")
-  @js.native
-  def relu6[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "relu6")
-  @js.native
-  def relu6[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def reciprocal[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("reciprocal")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reshape")
-  @js.native
+  @scala.inline
+  def relu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @scala.inline
+  def relu6[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("relu6")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @scala.inline
   def reshape[R /* <: Rank */](
     x: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reshape")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def reshape[R /* <: Rank */](
     x: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("reshape")(x.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: T, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse")
-  @js.native
-  def reverse[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def reverse[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "reverse1d")
   @js.native
@@ -3766,83 +2486,58 @@ object opsForConverterMod {
   @js.native
   val rfft: js.Function2[/* input */ Tensor[Rank], /* fftLength */ js.UndefOr[Double], Tensor[Rank]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "round")
-  @js.native
-  def round[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "round")
-  @js.native
-  def round[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def round[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "rsqrt")
-  @js.native
-  def rsqrt[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "rsqrt")
-  @js.native
-  def rsqrt[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def rsqrt[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("rsqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: String): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: String, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Boolean): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Boolean, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Double): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Double, dtype: DataType): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Uint8Array): Scalar = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scalar")
-  @js.native
-  def scalar(value: Uint8Array, dtype: DataType): Scalar = js.native
+  @scala.inline
+  def scalar(value: String): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: String, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Boolean): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Boolean, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Double): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Double, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Uint8Array): Scalar = ^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any]).asInstanceOf[Scalar]
+  @scala.inline
+  def scalar(value: Uint8Array, dtype: DataType): Scalar = (^.asInstanceOf[js.Dynamic].applyDynamic("scalar")(value.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Scalar]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scatterND")
-  @js.native
+  @scala.inline
   def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
     updates: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scatterND")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def scatterND[R /* <: Rank */](
     indices: Tensor[Rank],
     updates: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scatterND")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def scatterND[R /* <: Rank */](
     indices: TensorLike,
     updates: Tensor[Rank],
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "scatterND")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def scatterND[R /* <: Rank */](
     indices: TensorLike,
     updates: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("scatterND")(indices.asInstanceOf[js.Any], updates.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "selu")
-  @js.native
-  def selu[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "selu")
-  @js.native
-  def selu[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def selu[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("selu")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "separableConv2d")
-  @js.native
+  @scala.inline
   def separableConv2d[T /* <: Tensor3D | Tensor4D */](
     x: T | TensorLike,
     depthwiseFilter: Tensor4D | TensorLike,
@@ -3851,7 +2546,7 @@ object opsForConverterMod {
     pad: valid_ | same_,
     dilation: js.UndefOr[(js.Tuple2[Double, Double]) | Double],
     dataFormat: js.UndefOr[NHWC | NCHW]
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("separableConv2d")(x.asInstanceOf[js.Any], depthwiseFilter.asInstanceOf[js.Any], pointwiseFilter.asInstanceOf[js.Any], strides.asInstanceOf[js.Any], pad.asInstanceOf[js.Any], dilation.asInstanceOf[js.Any], dataFormat.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "setdiff1dAsync")
   @js.native
@@ -3861,125 +2556,73 @@ object opsForConverterMod {
     js.Promise[js.Tuple2[Tensor[Rank], Tensor[Rank]]]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sigmoid")
-  @js.native
-  def sigmoid[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sigmoid")
-  @js.native
-  def sigmoid[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def sigmoid[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sigmoid")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sign")
-  @js.native
-  def sign[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sign")
-  @js.native
-  def sign[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def sign[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
   object signal {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.frame")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal")
     @js.native
-    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.frame")
-    @js.native
-    def frame(
-      signal: Tensor[R1],
-      frameLength: Double,
-      frameStep: Double,
-      padEnd: js.UndefOr[scala.Nothing],
-      padValue: Double
-    ): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.frame")
-    @js.native
-    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.frame")
-    @js.native
-    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean, padValue: Double): Tensor[Rank] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.hammingWindow")
-    @js.native
-    def hammingWindow(windowLength: Double): Tensor[R1] = js.native
+    @scala.inline
+    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Boolean, padValue: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def frame(signal: Tensor[R1], frameLength: Double, frameStep: Double, padEnd: Unit, padValue: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("frame")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], padEnd.asInstanceOf[js.Any], padValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.hannWindow")
-    @js.native
-    def hannWindow(windowLength: Double): Tensor[R1] = js.native
+    @scala.inline
+    def hammingWindow(windowLength: Double): Tensor[R1] = ^.asInstanceOf[js.Dynamic].applyDynamic("hammingWindow")(windowLength.asInstanceOf[js.Any]).asInstanceOf[Tensor[R1]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.stft")
-    @js.native
-    def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.stft")
-    @js.native
-    def stft(
-      signal: Tensor[R1],
-      frameLength: Double,
-      frameStep: Double,
-      fftLength: js.UndefOr[scala.Nothing],
-      windowFn: js.Function1[/* length */ Double, Tensor[R1]]
-    ): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.stft")
-    @js.native
-    def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double, fftLength: Double): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "signal.stft")
-    @js.native
+    @scala.inline
+    def hannWindow(windowLength: Double): Tensor[R1] = ^.asInstanceOf[js.Dynamic].applyDynamic("hannWindow")(windowLength.asInstanceOf[js.Any]).asInstanceOf[Tensor[R1]]
+    
+    @scala.inline
+    def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def stft(signal: Tensor[R1], frameLength: Double, frameStep: Double, fftLength: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
     def stft(
       signal: Tensor[R1],
       frameLength: Double,
       frameStep: Double,
       fftLength: Double,
       windowFn: js.Function1[/* length */ Double, Tensor[R1]]
-    ): Tensor[Rank] = js.native
+    ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any], windowFn.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def stft(
+      signal: Tensor[R1],
+      frameLength: Double,
+      frameStep: Double,
+      fftLength: Unit,
+      windowFn: js.Function1[/* length */ Double, Tensor[R1]]
+    ): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stft")(signal.asInstanceOf[js.Any], frameLength.asInstanceOf[js.Any], frameStep.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any], windowFn.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sin")
-  @js.native
-  def sin[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sin")
-  @js.native
-  def sin[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def sin[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sin")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sinh")
-  @js.native
-  def sinh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sinh")
-  @js.native
-  def sinh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def sinh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: js.Array[Double], size: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: js.Array[Double], size: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: Double, size: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T, begin: Double, size: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: js.Array[Double], size: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: js.Array[Double], size: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: Double, size: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice")
-  @js.native
-  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: TensorLike, begin: Double, size: Double): T = js.native
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double], size: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: js.Array[Double], size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double, size: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def slice[R /* <: Rank */, T /* <: Tensor[R] */](x: T | TensorLike, begin: Double, size: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(x.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "slice1d")
   @js.native
@@ -4012,245 +2655,172 @@ object opsForConverterMod {
     Tensor4D
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softmax")
-  @js.native
-  def softmax[T /* <: Tensor[Rank] */](logits: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softmax")
-  @js.native
-  def softmax[T /* <: Tensor[Rank] */](logits: T, dim: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softmax")
-  @js.native
-  def softmax[T /* <: Tensor[Rank] */](logits: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softmax")
-  @js.native
-  def softmax[T /* <: Tensor[Rank] */](logits: TensorLike, dim: Double): T = js.native
+  @scala.inline
+  def softmax[T /* <: Tensor[Rank] */](logits: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def softmax[T /* <: Tensor[Rank] */](logits: T | TensorLike, dim: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("softmax")(logits.asInstanceOf[js.Any], dim.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softplus")
-  @js.native
-  def softplus[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "softplus")
-  @js.native
-  def softplus[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def softplus[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("softplus")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spaceToBatchND")
-  @js.native
-  def spaceToBatchND[T /* <: Tensor[Rank] */](x: T, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spaceToBatchND")
-  @js.native
-  def spaceToBatchND[T /* <: Tensor[Rank] */](x: TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = js.native
+  @scala.inline
+  def spaceToBatchND[T /* <: Tensor[Rank] */](x: T | TensorLike, blockShape: js.Array[Double], paddings: js.Array[js.Array[Double]]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("spaceToBatchND")(x.asInstanceOf[js.Any], blockShape.asInstanceOf[js.Any], paddings.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: Tensor[Rank],
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: Tensor[Rank],
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: Scalar
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sparseToDense")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def sparseToDense[R /* <: Rank */](
     sparseIndices: TensorLike,
     sparseValues: TensorLike,
     outputShape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     defaultValue: ScalarLike
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("sparseToDense")(sparseIndices.asInstanceOf[js.Any], sparseValues.asInstanceOf[js.Any], outputShape.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
   object spectral {
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral.fft")
+    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral")
     @js.native
-    def fft(input: Tensor[Rank]): Tensor[Rank] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral.ifft")
-    @js.native
-    def ifft(input: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def fft(input: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("fft")(input.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral.irfft")
-    @js.native
-    def irfft(input: Tensor[Rank]): Tensor[Rank] = js.native
+    @scala.inline
+    def ifft(input: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("ifft")(input.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
     
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral.rfft")
-    @js.native
-    def rfft(input: Tensor[Rank]): Tensor[Rank] = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "spectral.rfft")
-    @js.native
-    def rfft(input: Tensor[Rank], fftLength: Double): Tensor[Rank] = js.native
+    @scala.inline
+    def irfft(input: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("irfft")(input.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+    
+    @scala.inline
+    def rfft(input: Tensor[Rank]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("rfft")(input.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+    @scala.inline
+    def rfft(input: Tensor[Rank], fftLength: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("rfft")(input.asInstanceOf[js.Any], fftLength.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: js.Array[Double]): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: js.Array[Double], axis: Double): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: Double): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: Double, axis: Double): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double]): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double], axis: Double): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: Double): js.Array[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "split")
-  @js.native
-  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: Double, axis: Double): js.Array[T] = js.native
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: js.Array[Double], axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: Tensor[Rank], numOrSizeSplits: Double, axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: js.Array[Double], axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def split[T /* <: Tensor[Rank] */](x: TensorLike, numOrSizeSplits: Double, axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], numOrSizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sqrt")
-  @js.native
-  def sqrt[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sqrt")
-  @js.native
-  def sqrt[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def sqrt[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sqrt")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "square")
-  @js.native
-  def square[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "square")
-  @js.native
-  def square[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def square[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("square")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifference")
-  @js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifference")
-  @js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifference")
-  @js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifference")
-  @js.native
-  def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def squaredDifference[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def squaredDifference[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifference")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squaredDifferenceStrict")
-  @js.native
-  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def squaredDifferenceStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squaredDifferenceStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squeeze")
-  @js.native
-  def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squeeze")
-  @js.native
-  def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squeeze")
-  @js.native
-  def squeeze[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "squeeze")
-  @js.native
-  def squeeze[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
+  @scala.inline
+  def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def squeeze[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def squeeze[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def squeeze[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("squeeze")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "stack")
-  @js.native
-  def stack[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "stack")
-  @js.native
-  def stack[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike], axis: Double): Tensor[Rank] = js.native
+  @scala.inline
+  def stack[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike]): Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any]).asInstanceOf[Tensor[Rank]]
+  @scala.inline
+  def stack[T /* <: Tensor[Rank] */](tensors: js.Array[T | TensorLike], axis: Double): Tensor[Rank] = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(tensors.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "step")
-  @js.native
-  def step[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "step")
-  @js.native
-  def step[T /* <: Tensor[Rank] */](x: T, alpha: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "step")
-  @js.native
-  def step[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "step")
-  @js.native
-  def step[T /* <: Tensor[Rank] */](x: TensorLike, alpha: Double): T = js.native
+  @scala.inline
+  def step[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def step[T /* <: Tensor[Rank] */](x: T | TensorLike, alpha: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("step")(x.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "stridedSlice")
   @js.native
@@ -4267,447 +2837,319 @@ object opsForConverterMod {
     Tensor[Rank]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sub")
-  @js.native
-  def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sub")
-  @js.native
-  def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sub")
-  @js.native
-  def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sub")
-  @js.native
-  def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sub[T /* <: Tensor[Rank] */](a: Tensor[Rank], b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: Tensor[Rank]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sub[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "subStrict")
-  @js.native
-  def subStrict[T /* <: Tensor[Rank] */](a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def subStrict[T /* <: Tensor[Rank] */](a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("subStrict")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.UndefOr[scala.Nothing], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "sum")
-  @js.native
-  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = js.native
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: Tensor[Rank], axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: js.Array[Double], keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def sum[T /* <: Tensor[Rank] */](x: TensorLike, axis: Unit, keepDims: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sum")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], keepDims.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tan")
-  @js.native
-  def tan[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tan")
-  @js.native
-  def tan[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def tan[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tan")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tanh")
-  @js.native
-  def tanh[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tanh")
-  @js.native
-  def tanh[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def tanh[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor")
-  @js.native
-  def tensor[R /* <: Rank */](values: TensorLike): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor")
-  @js.native
-  def tensor[R /* <: Rank */](values: TensorLike, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor")
-  @js.native
+  @scala.inline
+  def tensor[R /* <: Rank */](values: TensorLike): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def tensor[R /* <: Rank */](
     values: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def tensor[R /* <: Rank */](
     values: TensorLike,
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def tensor[R /* <: Rank */](values: TensorLike, shape: Unit, dtype: DataType): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor1d")
-  @js.native
-  def tensor1d(values: TensorLike1D): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor1d")
-  @js.native
-  def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = js.native
+  @scala.inline
+  def tensor1d(values: TensorLike1D): Tensor1D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor1D]
+  @scala.inline
+  def tensor1d(values: TensorLike1D, dtype: DataType): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor1d")(values.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor2d")
-  @js.native
-  def tensor2d(values: TensorLike2D): Tensor2D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor2d")
-  @js.native
-  def tensor2d(values: TensorLike2D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor2D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor2d")
-  @js.native
-  def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double]): Tensor2D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor2d")
-  @js.native
-  def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double], dtype: DataType): Tensor2D = js.native
+  @scala.inline
+  def tensor2d(values: TensorLike2D): Tensor2D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor2D]
+  @scala.inline
+  def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double]): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  @scala.inline
+  def tensor2d(values: TensorLike2D, shape: js.Tuple2[Double, Double], dtype: DataType): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
+  @scala.inline
+  def tensor2d(values: TensorLike2D, shape: Unit, dtype: DataType): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor2d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double]): Tensor3D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor3d")
-  @js.native
-  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double], dtype: DataType): Tensor3D = js.native
+  @scala.inline
+  def tensor3d(values: TensorLike3D): Tensor3D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double]): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: js.Tuple3[Double, Double, Double], dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
+  @scala.inline
+  def tensor3d(values: TensorLike3D, shape: Unit, dtype: DataType): Tensor3D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor3d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor3D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor4d")
-  @js.native
-  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = js.native
+  @scala.inline
+  def tensor4d(values: TensorLike4D): Tensor4D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double]): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: js.Tuple4[Double, Double, Double, Double], dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
+  @scala.inline
+  def tensor4d(values: TensorLike4D, shape: Unit, dtype: DataType): Tensor4D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor4d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor4D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor5d")
-  @js.native
-  def tensor5d(values: TensorLike5D): Tensor5D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor5d")
-  @js.native
-  def tensor5d(values: TensorLike5D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor5D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor5d")
-  @js.native
-  def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double]): Tensor5D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor5d")
-  @js.native
-  def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double], dtype: DataType): Tensor5D = js.native
+  @scala.inline
+  def tensor5d(values: TensorLike5D): Tensor5D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor5D]
+  @scala.inline
+  def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double]): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
+  @scala.inline
+  def tensor5d(values: TensorLike5D, shape: js.Tuple5[Double, Double, Double, Double, Double], dtype: DataType): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
+  @scala.inline
+  def tensor5d(values: TensorLike5D, shape: Unit, dtype: DataType): Tensor5D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor5d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor5D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor6d")
-  @js.native
-  def tensor6d(values: TensorLike6D): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor6d")
-  @js.native
-  def tensor6d(values: TensorLike6D, shape: js.UndefOr[scala.Nothing], dtype: DataType): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor6d")
-  @js.native
-  def tensor6d(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tensor6d")
-  @js.native
+  @scala.inline
+  def tensor6d(values: TensorLike6D): Tensor6D = ^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any]).asInstanceOf[Tensor6D]
+  @scala.inline
+  def tensor6d(values: TensorLike6D, shape: js.Tuple6[Double, Double, Double, Double, Double, Double]): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+  @scala.inline
   def tensor6d(
     values: TensorLike6D,
     shape: js.Tuple6[Double, Double, Double, Double, Double, Double],
     dtype: DataType
-  ): Tensor6D = js.native
+  ): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
+  @scala.inline
+  def tensor6d(values: TensorLike6D, shape: Unit, dtype: DataType): Tensor6D = (^.asInstanceOf[js.Dynamic].applyDynamic("tensor6d")(values.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor6D]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tile")
-  @js.native
-  def tile[T /* <: Tensor[Rank] */](x: T, reps: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "tile")
-  @js.native
-  def tile[T /* <: Tensor[Rank] */](x: TensorLike, reps: js.Array[Double]): T = js.native
+  @scala.inline
+  def tile[T /* <: Tensor[Rank] */](x: T | TensorLike, reps: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(x.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: T): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: T, k: js.UndefOr[scala.Nothing], sorted: Boolean): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: T, k: Double): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: T, k: Double, sorted: Boolean): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: TensorLike): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: TensorLike, k: js.UndefOr[scala.Nothing], sorted: Boolean): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: TensorLike, k: Double): Indices[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "topk")
-  @js.native
-  def topk[T /* <: Tensor[Rank] */](x: TensorLike, k: Double, sorted: Boolean): Indices[T] = js.native
+  @scala.inline
+  def topk[T /* <: Tensor[Rank] */](x: T | TensorLike): Indices[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any]).asInstanceOf[Indices[T]]
+  @scala.inline
+  def topk[T /* <: Tensor[Rank] */](x: T | TensorLike, k: Double): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
+  @scala.inline
+  def topk[T /* <: Tensor[Rank] */](x: T | TensorLike, k: Double, sorted: Boolean): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
+  @scala.inline
+  def topk[T /* <: Tensor[Rank] */](x: T | TensorLike, k: Unit, sorted: Boolean): Indices[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topk")(x.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[Indices[T]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "transpose")
-  @js.native
-  def transpose[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "transpose")
-  @js.native
-  def transpose[T /* <: Tensor[Rank] */](x: T, perm: js.Array[Double]): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "transpose")
-  @js.native
-  def transpose[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "transpose")
-  @js.native
-  def transpose[T /* <: Tensor[Rank] */](x: TensorLike, perm: js.Array[Double]): T = js.native
+  @scala.inline
+  def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def transpose[T /* <: Tensor[Rank] */](x: T | TensorLike, perm: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("transpose")(x.asInstanceOf[js.Any], perm.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: js.UndefOr[scala.Nothing],
-    stdDev: Double,
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: js.UndefOr[scala.Nothing],
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: float32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
-  def truncatedNormal[R /* <: Rank */](
-    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
-    mean: Double,
-    stdDev: js.UndefOr[scala.Nothing],
-    dtype: int32,
-    seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
-    dtype: js.UndefOr[scala.Nothing],
+    dtype: Unit,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: float32,
     seed: Double
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: int32
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "truncatedNormal")
-  @js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
   def truncatedNormal[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     mean: Double,
     stdDev: Double,
     dtype: int32,
     seed: Double
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Double,
+    stdDev: Unit,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Double,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: Unit,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: float32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: float32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: int32
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
+  @scala.inline
+  def truncatedNormal[R /* <: Rank */](
+    shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
+    mean: Unit,
+    stdDev: Unit,
+    dtype: int32,
+    seed: Double
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncatedNormal")(shape.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], stdDev.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: T): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: T, axis: Double): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: TensorLike): Values[T] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unique")
-  @js.native
-  def unique[T /* <: Tensor[Rank] */](x: TensorLike, axis: Double): Values[T] = js.native
+  @scala.inline
+  def unique[T /* <: Tensor[Rank] */](x: T | TensorLike): Values[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any]).asInstanceOf[Values[T]]
+  @scala.inline
+  def unique[T /* <: Tensor[Rank] */](x: T | TensorLike, axis: Double): Values[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unique")(x.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[Values[T]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: Tensor1D, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T, segmentIds: TensorLike, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: TensorLike, segmentIds: Tensor1D, numSegments: Double): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unsortedSegmentSum")
-  @js.native
-  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: TensorLike, segmentIds: TensorLike, numSegments: Double): T = js.native
+  @scala.inline
+  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T | TensorLike, segmentIds: Tensor1D, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def unsortedSegmentSum[T /* <: Tensor[Rank] */](x: T | TensorLike, segmentIds: TensorLike, numSegments: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unsortedSegmentSum")(x.asInstanceOf[js.Any], segmentIds.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "unstack")
   @js.native
@@ -4717,81 +3159,42 @@ object opsForConverterMod {
     js.Array[Tensor[Rank]]
   ] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R]): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](
-    initialValue: Tensor[R],
-    trainable: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    dtype: DataType
-  ): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: js.UndefOr[scala.Nothing], name: String): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: js.UndefOr[scala.Nothing], name: String, dtype: DataType): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: js.UndefOr[scala.Nothing], dtype: DataType): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String): Variable[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "variable")
-  @js.native
-  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String, dtype: DataType): Variable[R] = js.native
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R]): Variable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any]).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: String, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Boolean, name: Unit, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Unit, name: String): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Unit, name: String, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
+  @scala.inline
+  def variable[R /* <: Rank */](initialValue: Tensor[R], trainable: Unit, name: Unit, dtype: DataType): Variable[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("variable")(initialValue.asInstanceOf[js.Any], trainable.asInstanceOf[js.Any], name.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Variable[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], a: TensorLike, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: TensorLike, a: T, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: TensorLike, a: T, b: TensorLike): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: TensorLike, a: TensorLike, b: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "where")
-  @js.native
-  def where[T /* <: Tensor[Rank] */](condition: TensorLike, a: TensorLike, b: TensorLike): T = js.native
+  @scala.inline
+  def where[T /* <: Tensor[Rank] */](condition: Tensor[Rank], a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def where[T /* <: Tensor[Rank] */](condition: TensorLike, a: T | TensorLike, b: T | TensorLike): T = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(condition.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "whereAsync")
   @js.native
   val whereAsync: js.Function1[/* condition */ Tensor[Rank] | TensorLike, js.Promise[Tensor2D]] = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "zeros")
-  @js.native
+  @scala.inline
   def zeros[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any
-  ): Tensor[R] = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "zeros")
-  @js.native
+  ): Tensor[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[Tensor[R]]
+  @scala.inline
   def zeros[R /* <: Rank */](
     shape: /* import warning: importer.ImportType#apply Failed type conversion: @tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/types.ShapeMap[R] */ js.Any,
     dtype: DataType
-  ): Tensor[R] = js.native
+  ): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "zerosLike")
-  @js.native
-  def zerosLike[T /* <: Tensor[Rank] */](x: T): T = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/ops_for_converter", "zerosLike")
-  @js.native
-  def zerosLike[T /* <: Tensor[Rank] */](x: TensorLike): T = js.native
+  @scala.inline
+  def zerosLike[T /* <: Tensor[Rank] */](x: T | TensorLike): T = ^.asInstanceOf[js.Dynamic].applyDynamic("zerosLike")(x.asInstanceOf[js.Any]).asInstanceOf[T]
 }

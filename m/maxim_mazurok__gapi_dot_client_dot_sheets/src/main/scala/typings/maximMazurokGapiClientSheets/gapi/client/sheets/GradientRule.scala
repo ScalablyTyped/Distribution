@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradientRule extends StObject {
   
   /** The final interpolation point. */
-  var maxpoint: js.UndefOr[InterpolationPoint] = js.native
+  var maxpoint: js.UndefOr[InterpolationPoint] = js.undefined
   
   /** An optional midway interpolation point. */
-  var midpoint: js.UndefOr[InterpolationPoint] = js.native
+  var midpoint: js.UndefOr[InterpolationPoint] = js.undefined
   
   /** The starting interpolation point. */
-  var minpoint: js.UndefOr[InterpolationPoint] = js.native
+  var minpoint: js.UndefOr[InterpolationPoint] = js.undefined
 }
 object GradientRule {
   

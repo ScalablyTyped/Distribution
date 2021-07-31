@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONSupport extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait JSONSupport extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
     */
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object JSONSupport {
   

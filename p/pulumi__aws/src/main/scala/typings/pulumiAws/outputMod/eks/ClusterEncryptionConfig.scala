@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.eks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterEncryptionConfig extends StObject {
   
   /**
     * Configuration block with provider for encryption. Detailed below.
     */
-  var provider: ClusterEncryptionConfigProvider = js.native
+  var provider: ClusterEncryptionConfigProvider
   
   /**
     * List of strings with resources to be encrypted. Valid values: `secrets`
     */
-  var resources: js.Array[String] = js.native
+  var resources: js.Array[String]
 }
 object ClusterEncryptionConfig {
   

@@ -5,14 +5,15 @@ import typings.fuseJs.anon.Score
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fuse.js", JSImport.Namespace)
   @js.native
-  class ^[T, O /* <: FuseOptions[T] */] protected () extends Fuse[T, O] {
+  class ^[T, O /* <: FuseOptions[T] */] protected ()
+    extends StObject
+       with Fuse[T, O] {
     def this(list: js.Array[T]) = this()
     def this(list: js.Array[T], options: O) = this()
   }
@@ -26,56 +27,55 @@ object mod {
     R, /** include score (boolean) */
     S, /** include matches (boolean) */
     M](pattern: String): js.Array[
-        (FuseResultWithMatches[R] with FuseResultWithScore[R]) | FuseResultWithMatches[R] | FuseResultWithScore[R] | R
+        (FuseResultWithMatches[R] & FuseResultWithScore[R]) | FuseResultWithMatches[R] | FuseResultWithScore[R] | R
       ] = js.native
     def search[/** Type of item of return */
     R, /** include score (boolean) */
     S, /** include matches (boolean) */
     M](pattern: String, opts: SearchOpts): js.Array[
-        (FuseResultWithMatches[R] with FuseResultWithScore[R]) | FuseResultWithMatches[R] | FuseResultWithScore[R] | R
+        (FuseResultWithMatches[R] & FuseResultWithScore[R]) | FuseResultWithMatches[R] | FuseResultWithScore[R] | R
       ] = js.native
     
     def setCollection(list: js.Array[T]): js.Array[T] = js.native
   }
   
-  @js.native
   trait FuseOptions[T] extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
-    var findAllMatches: js.UndefOr[Boolean] = js.native
+    var findAllMatches: js.UndefOr[Boolean] = js.undefined
     
-    var getFn: js.UndefOr[js.Function2[/* obj */ js.Any, /* path */ String, _]] = js.native
+    var getFn: js.UndefOr[js.Function2[/* obj */ js.Any, /* path */ String, js.Any]] = js.undefined
     
-    var id: js.UndefOr[/* keyof T */ String] = js.native
+    var id: js.UndefOr[/* keyof T */ String] = js.undefined
     
-    var includeMatches: js.UndefOr[Boolean] = js.native
+    var includeMatches: js.UndefOr[Boolean] = js.undefined
     
-    var includeScore: js.UndefOr[Boolean] = js.native
+    var includeScore: js.UndefOr[Boolean] = js.undefined
     
-    var keys: js.UndefOr[js.Array[Name[T] | (/* keyof T */ String)]] = js.native
+    var keys: js.UndefOr[js.Array[Name[T] | (/* keyof T */ String)]] = js.undefined
     
-    var location: js.UndefOr[Double] = js.native
+    var location: js.UndefOr[Double] = js.undefined
     
-    var matchAllTokens: js.UndefOr[Boolean] = js.native
+    var matchAllTokens: js.UndefOr[Boolean] = js.undefined
     
-    var maxPatternLength: js.UndefOr[Double] = js.native
+    var maxPatternLength: js.UndefOr[Double] = js.undefined
     
-    var minMatchCharLength: js.UndefOr[Double] = js.native
+    var minMatchCharLength: js.UndefOr[Double] = js.undefined
     
-    var shouldSort: js.UndefOr[Boolean] = js.native
+    var shouldSort: js.UndefOr[Boolean] = js.undefined
     
-    var sortFn: js.UndefOr[js.Function2[/* a */ Score, /* b */ Score, Double]] = js.native
+    var sortFn: js.UndefOr[js.Function2[/* a */ Score, /* b */ Score, Double]] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var tokenSeparator: js.UndefOr[RegExp] = js.native
+    var tokenSeparator: js.UndefOr[RegExp] = js.undefined
     
-    var tokenize: js.UndefOr[Boolean] = js.native
+    var tokenize: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object FuseOptions {
     
@@ -86,7 +86,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FuseOptionsMutableBuilder[Self <: FuseOptions[_], T] (val x: Self with FuseOptions[T]) extends AnyVal {
+    implicit class FuseOptionsMutableBuilder[Self <: FuseOptions[?], T] (val x: Self & FuseOptions[T]) extends AnyVal {
       
       @scala.inline
       def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
@@ -107,7 +107,7 @@ object mod {
       def setFindAllMatchesUndefined: Self = StObject.set(x, "findAllMatches", js.undefined)
       
       @scala.inline
-      def setGetFn(value: (/* obj */ js.Any, /* path */ String) => _): Self = StObject.set(x, "getFn", js.Any.fromFunction2(value))
+      def setGetFn(value: (/* obj */ js.Any, /* path */ String) => js.Any): Self = StObject.set(x, "getFn", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetFnUndefined: Self = StObject.set(x, "getFn", js.undefined)
@@ -201,12 +201,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FuseResultWithMatches[T] extends StObject {
     
-    var item: T = js.native
+    var item: T
     
-    var matches: js.Any = js.native
+    var matches: js.Any
   }
   object FuseResultWithMatches {
     
@@ -217,7 +216,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FuseResultWithMatchesMutableBuilder[Self <: FuseResultWithMatches[_], T] (val x: Self with FuseResultWithMatches[T]) extends AnyVal {
+    implicit class FuseResultWithMatchesMutableBuilder[Self <: FuseResultWithMatches[?], T] (val x: Self & FuseResultWithMatches[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -227,12 +226,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FuseResultWithScore[T] extends StObject {
     
-    var item: T = js.native
+    var item: T
     
-    var score: Double = js.native
+    var score: Double
   }
   object FuseResultWithScore {
     
@@ -243,7 +241,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FuseResultWithScoreMutableBuilder[Self <: FuseResultWithScore[_], T] (val x: Self with FuseResultWithScore[T]) extends AnyVal {
+    implicit class FuseResultWithScoreMutableBuilder[Self <: FuseResultWithScore[?], T] (val x: Self & FuseResultWithScore[T]) extends AnyVal {
       
       @scala.inline
       def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
@@ -253,10 +251,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SearchOpts extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object SearchOpts {
     

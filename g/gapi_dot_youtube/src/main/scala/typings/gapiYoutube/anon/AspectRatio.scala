@@ -2,51 +2,49 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AspectRatio extends StObject {
   
   /**
     * The video contents display aspect ratio, which specifies the aspect ratio in which the video should be displayed.
     */
-  var aspectRatio: Double = js.native
+  var aspectRatio: Double
   
   /**
     * The video streams bitrate, in bits per second.
     */
-  var bitrateBps: Double = js.native
+  var bitrateBps: Double
   
   /**
     * The video codec that the stream uses.
     */
-  var codec: String = js.native
+  var codec: String
   
   /**
     * The video streams frame rate, in frames per second.
     */
-  var frameRateFps: Double = js.native
+  var frameRateFps: Double
   
   /**
     * The encoded video contents height in pixels.
     */
-  var heightPixels: Double = js.native
+  var heightPixels: Double
   
   /**
     * The amount that YouTube needs to rotate the original source content to properly display the video.
     */
-  var rotation: String = js.native
+  var rotation: String
   
   /**
     * A value that uniquely identifies a video vendor. Typically, the value is a four-letter vendor code.
     */
-  var vender: String = js.native
+  var vender: String
   
   /**
     * The encoded video contents width in pixels.
     */
-  var widthPixels: Double = js.native
+  var widthPixels: Double
 }
 object AspectRatio {
   

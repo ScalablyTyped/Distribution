@@ -2,21 +2,19 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryAutocompletePrediction extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var matched_substrings: js.Array[PredictionSubstring] = js.native
+  var matched_substrings: js.Array[PredictionSubstring]
   
-  var place_id: String = js.native
+  var place_id: String
   
-  var terms: js.Array[PredictionTerm] = js.native
+  var terms: js.Array[PredictionTerm]
 }
 object QueryAutocompletePrediction {
   

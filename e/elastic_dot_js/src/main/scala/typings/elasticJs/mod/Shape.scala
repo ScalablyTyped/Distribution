@@ -2,16 +2,17 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "Shape")
 @js.native
-class Shape protected () extends Geo {
+class Shape protected ()
+  extends StObject
+     with Geo {
   /*
     Defines a shape
     */
-  def this(`type`: String, coords: js.Array[_]) = this()
+  def this(`type`: String, coords: js.Array[js.Any]) = this()
   
   /*
     The type of ejs object.  For internal use only.
@@ -23,7 +24,7 @@ class Shape protected () extends Geo {
     are not validated in this api.  Please see GeoJSON and ElasticSearch
     documentation for correct coordinate definitions.
     */
-  def coordinates(c: js.Array[_]): Shape = js.native
+  def coordinates(c: js.Array[js.Any]): Shape = js.native
   
   /*
     Sets the radius for parsing a circle Shape.

@@ -3,14 +3,12 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the contents of the original request that was passed to the
   * `[Streaming]DetectIntent` call.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends StObject {
   
   /**
@@ -24,19 +22,19 @@ trait SchemaGoogleCloudDialogflowV2beta1OriginalDetectIntentRequest extends StOb
     * with the caller ID in [E.164 format](https://en.wikipedia.org/wiki/E.164)
     * for Enterprise Edition agents.
     */
-  var payload: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var payload: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The source of this request, e.g., `google`, `facebook`, `slack`. It is
     * set by Dialogflow-owned servers.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The version of the protocol used for this request. This field
     * is AoG-specific.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1OriginalDetectIntentRequest {
   

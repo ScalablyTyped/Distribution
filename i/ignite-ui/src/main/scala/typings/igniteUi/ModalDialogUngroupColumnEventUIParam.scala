@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalDialogUngroupColumnEventUIParam extends StObject {
   
   /**
     * Gets a reference to the current groupedColumns.
     */
-  var groupedColumns: js.UndefOr[js.Array[_]] = js.native
+  var groupedColumns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the key of the column to be grouped.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Get a reference to the current layout object, if any.
     */
-  var layout: js.UndefOr[js.Any] = js.native
+  var layout: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ModalDialogUngroupColumnEventUIParam {
   
@@ -40,7 +38,7 @@ object ModalDialogUngroupColumnEventUIParam {
   implicit class ModalDialogUngroupColumnEventUIParamMutableBuilder[Self <: ModalDialogUngroupColumnEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGroupedColumns(value: js.Array[_]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
+    def setGroupedColumns(value: js.Array[js.Any]): Self = StObject.set(x, "groupedColumns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupedColumnsUndefined: Self = StObject.set(x, "groupedColumns", js.undefined)

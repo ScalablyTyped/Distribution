@@ -4,23 +4,21 @@ import typings.minappEnv.Array
 import typings.minappEnv.InternalSymbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseLogicCommand extends StObject {
   
-  def _setFieldName(fieldName: String): DatabaseLogicCommand = js.native
+  def _setFieldName(fieldName: String): DatabaseLogicCommand
   
-  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
+  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
   
-  var fieldName: String | InternalSymbol = js.native
+  var fieldName: String | InternalSymbol
   
-  var operands: Array[_] = js.native
+  var operands: Array[js.Any]
   
-  var operator: LOGIC_COMMANDS_LITERAL | String = js.native
+  var operator: LOGIC_COMMANDS_LITERAL | String
   
-  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
+  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
 }
 object DatabaseLogicCommand {
   
@@ -29,7 +27,7 @@ object DatabaseLogicCommand {
     _setFieldName: String => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     fieldName: String | InternalSymbol,
-    operands: Array[_],
+    operands: Array[js.Any],
     operator: LOGIC_COMMANDS_LITERAL | String,
     or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand
   ): DatabaseLogicCommand = {
@@ -47,7 +45,7 @@ object DatabaseLogicCommand {
     def setFieldName(value: String | InternalSymbol): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOperands(value: Array[_]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
+    def setOperands(value: Array[js.Any]): Self = StObject.set(x, "operands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOperator(value: LOGIC_COMMANDS_LITERAL | String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Seller extends StObject {
   
   /** The unique ID for the seller. The seller fills in this field. The seller account ID is then available to buyer in the product. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Optional sub-account ID for the seller. */
-  var subAccountId: js.UndefOr[String] = js.native
+  var subAccountId: js.UndefOr[String] = js.undefined
 }
 object Seller {
   

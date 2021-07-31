@@ -9,23 +9,24 @@ import typings.vue.vueMod.VueConstructor
 import typings.vueRx.anon.Msg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("vue-rx", JSImport.Default)
+  @JSImport("vue-rx", JSImport.Namespace)
   @js.native
-  def default(V: VueConstructor[Vue]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(V: VueConstructor[Vue]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Observables = Record[String, Observable_[js.Any]]
   
-  @js.native
   trait WatchObservable[T] extends StObject {
     
-    var newValue: T = js.native
+    var newValue: T
     
-    var oldValue: T = js.native
+    var oldValue: T
   }
   object WatchObservable {
     
@@ -36,7 +37,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class WatchObservableMutableBuilder[Self <: WatchObservable[_], T] (val x: Self with WatchObservable[T]) extends AnyVal {
+    implicit class WatchObservableMutableBuilder[Self <: WatchObservable[?], T] (val x: Self & WatchObservable[T]) extends AnyVal {
       
       @scala.inline
       def setNewValue(value: T): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
@@ -48,14 +49,13 @@ object mod {
   
   object vueTypesOptionsAugmentingMod {
     
-    @js.native
     trait ComponentOptions[V /* <: Vue */] extends StObject {
       
-      var domStreams: js.UndefOr[js.Array[String]] = js.native
+      var domStreams: js.UndefOr[js.Array[String]] = js.undefined
       
-      var observableMethods: js.UndefOr[js.Array[String] | (Record[String, String])] = js.native
+      var observableMethods: js.UndefOr[js.Array[String] | (Record[String, String])] = js.undefined
       
-      var subscriptions: js.UndefOr[Observables | (js.ThisFunction0[/* this */ V, Observables])] = js.native
+      var subscriptions: js.UndefOr[Observables | (js.ThisFunction0[/* this */ V, Observables])] = js.undefined
     }
     object ComponentOptions {
       
@@ -66,7 +66,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[_], V /* <: Vue */] (val x: Self with ComponentOptions[V]) extends AnyVal {
+      implicit class ComponentOptionsMutableBuilder[Self <: ComponentOptions[?], V /* <: Vue */] (val x: Self & ComponentOptions[V]) extends AnyVal {
         
         @scala.inline
         def setDomStreams(value: js.Array[String]): Self = StObject.set(x, "domStreams", value.asInstanceOf[js.Any])
@@ -101,7 +101,7 @@ object mod {
     trait Vue extends StObject {
       
       @JSName("$createObservableMethod")
-      def $createObservableMethod(methodName: String): Observable_[_] = js.native
+      def $createObservableMethod(methodName: String): Observable_[js.Any] = js.native
       
       @JSName("$eventToObservable")
       def $eventToObservable(event: String): Observable_[Msg] = js.native
@@ -120,13 +120,6 @@ object mod {
       def $subscribeTo[T](
         observable: Observable_[T],
         next: js.Function1[/* t */ T, Unit],
-        error: js.UndefOr[scala.Nothing],
-        complete: js.Function0[Unit]
-      ): Unit = js.native
-      @JSName("$subscribeTo")
-      def $subscribeTo[T](
-        observable: Observable_[T],
-        next: js.Function1[/* t */ T, Unit],
         error: js.Function1[/* e */ js.Any, Unit]
       ): Unit = js.native
       @JSName("$subscribeTo")
@@ -136,11 +129,18 @@ object mod {
         error: js.Function1[/* e */ js.Any, Unit],
         complete: js.Function0[Unit]
       ): Unit = js.native
+      @JSName("$subscribeTo")
+      def $subscribeTo[T](
+        observable: Observable_[T],
+        next: js.Function1[/* t */ T, Unit],
+        error: Unit,
+        complete: js.Function0[Unit]
+      ): Unit = js.native
       
       @JSName("$watchAsObservable")
-      def $watchAsObservable(expr: String): Observable_[WatchObservable[_]] = js.native
+      def $watchAsObservable(expr: String): Observable_[WatchObservable[js.Any]] = js.native
       @JSName("$watchAsObservable")
-      def $watchAsObservable(expr: String, options: WatchOptions): Observable_[WatchObservable[_]] = js.native
+      def $watchAsObservable(expr: String, options: WatchOptions): Observable_[WatchObservable[js.Any]] = js.native
       @JSName("$watchAsObservable")
       def $watchAsObservable[T](fn: js.ThisFunction0[/* this */ this.type, T]): Observable_[WatchObservable[T]] = js.native
       @JSName("$watchAsObservable")

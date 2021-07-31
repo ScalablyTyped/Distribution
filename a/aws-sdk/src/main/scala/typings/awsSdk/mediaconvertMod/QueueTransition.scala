@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueTransition extends StObject {
   
   /**
     * The queue that the job was on after the transition.
     */
-  var DestinationQueue: js.UndefOr[string] = js.native
+  var DestinationQueue: js.UndefOr[string] = js.undefined
   
   /**
     * The queue that the job was on before the transition.
     */
-  var SourceQueue: js.UndefOr[string] = js.native
+  var SourceQueue: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in Unix epoch format, that the job moved from the source queue to the destination queue.
     */
-  var Timestamp: js.UndefOr[timestampUnix] = js.native
+  var Timestamp: js.UndefOr[timestampUnix] = js.undefined
 }
 object QueueTransition {
   

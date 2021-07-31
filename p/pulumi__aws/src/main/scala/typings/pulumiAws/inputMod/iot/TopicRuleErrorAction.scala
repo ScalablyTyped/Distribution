@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleErrorAction extends StObject {
   
-  var cloudwatchAlarm: js.UndefOr[Input[TopicRuleErrorActionCloudwatchAlarm]] = js.native
+  var cloudwatchAlarm: js.UndefOr[Input[TopicRuleErrorActionCloudwatchAlarm]] = js.undefined
   
-  var cloudwatchMetric: js.UndefOr[Input[TopicRuleErrorActionCloudwatchMetric]] = js.native
+  var cloudwatchMetric: js.UndefOr[Input[TopicRuleErrorActionCloudwatchMetric]] = js.undefined
   
-  var dynamodb: js.UndefOr[Input[TopicRuleErrorActionDynamodb]] = js.native
+  var dynamodb: js.UndefOr[Input[TopicRuleErrorActionDynamodb]] = js.undefined
   
-  var dynamodbv2: js.UndefOr[Input[TopicRuleErrorActionDynamodbv2]] = js.native
+  var dynamodbv2: js.UndefOr[Input[TopicRuleErrorActionDynamodbv2]] = js.undefined
   
-  var elasticsearch: js.UndefOr[Input[TopicRuleErrorActionElasticsearch]] = js.native
+  var elasticsearch: js.UndefOr[Input[TopicRuleErrorActionElasticsearch]] = js.undefined
   
-  var firehose: js.UndefOr[Input[TopicRuleErrorActionFirehose]] = js.native
+  var firehose: js.UndefOr[Input[TopicRuleErrorActionFirehose]] = js.undefined
   
-  var iotAnalytics: js.UndefOr[Input[TopicRuleErrorActionIotAnalytics]] = js.native
+  var iotAnalytics: js.UndefOr[Input[TopicRuleErrorActionIotAnalytics]] = js.undefined
   
-  var iotEvents: js.UndefOr[Input[TopicRuleErrorActionIotEvents]] = js.native
+  var iotEvents: js.UndefOr[Input[TopicRuleErrorActionIotEvents]] = js.undefined
   
-  var kinesis: js.UndefOr[Input[TopicRuleErrorActionKinesis]] = js.native
+  var kinesis: js.UndefOr[Input[TopicRuleErrorActionKinesis]] = js.undefined
   
-  var lambda: js.UndefOr[Input[TopicRuleErrorActionLambda]] = js.native
+  var lambda: js.UndefOr[Input[TopicRuleErrorActionLambda]] = js.undefined
   
-  var republish: js.UndefOr[Input[TopicRuleErrorActionRepublish]] = js.native
+  var republish: js.UndefOr[Input[TopicRuleErrorActionRepublish]] = js.undefined
   
-  var s3: js.UndefOr[Input[TopicRuleErrorActionS3]] = js.native
+  var s3: js.UndefOr[Input[TopicRuleErrorActionS3]] = js.undefined
   
-  var sns: js.UndefOr[Input[TopicRuleErrorActionSns]] = js.native
+  var sns: js.UndefOr[Input[TopicRuleErrorActionSns]] = js.undefined
   
-  var sqs: js.UndefOr[Input[TopicRuleErrorActionSqs]] = js.native
+  var sqs: js.UndefOr[Input[TopicRuleErrorActionSqs]] = js.undefined
   
-  var stepFunctions: js.UndefOr[Input[TopicRuleErrorActionStepFunctions]] = js.native
+  var stepFunctions: js.UndefOr[Input[TopicRuleErrorActionStepFunctions]] = js.undefined
 }
 object TopicRuleErrorAction {
   

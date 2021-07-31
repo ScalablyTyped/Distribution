@@ -2,17 +2,15 @@ package typings.pulumiPulumi.automationStackMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviewResult extends StObject {
   
-  var stderr: String = js.native
+  var stderr: String
   
-  var stdout: String = js.native
+  var stdout: String
   
-  var summary: UpdateSummary = js.native
+  var summary: UpdateSummary
 }
 object PreviewResult {
   

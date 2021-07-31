@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,20 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DrawingDocument
   * @see LayerManager
   */
-@js.native
-trait Layer extends XPropertySet {
+trait Layer
+  extends StObject
+     with XPropertySet {
   
   /** If a {@link Layer} is locked, the objects in this {@link Layer} cannot be edited in the user interface. */
-  var IsLocked: Boolean = js.native
+  var IsLocked: Boolean
   
   /** If a {@link Layer} is not printable, the objects in this {@link Layer} are not printed. */
-  var IsPrintable: Boolean = js.native
+  var IsPrintable: Boolean
   
   /** If a {@link Layer} is not visible, the objects in this {@link Layer} are not shown in the user interface. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** The name of a {@link Layer} is used to identify the {@link Layer} in the user interface. */
-  var Name: String = js.native
+  var Name: String
 }
 object Layer {
   

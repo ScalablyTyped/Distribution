@@ -4,15 +4,15 @@
 Typings are for version 3.1
 
 ## Library description:
-[![Build Status](https://travis-ci.org/socketio/socket.io-emitter.svg?branch=master)](https://travis-ci.org/socketio/socket.io-emitter) [![NPM version](https://badge.fury.io/js/socket.io-emitter.svg)](http://badge.fury.io/js/socket.io-emitter)
+[![Build Status](https://github.com/socketio/socket.io-emitter/workflows/CI/badge.svg)](https://github.com/socketio/socket.io-emitter/actions) [![NPM version](https://badge.fury.io/js/socket.io-emitter.svg)](http://badge.fury.io/js/socket.io-emitter)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | socket.io-emitter |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 22 |
-| # downloads        | 782473 |
+| # releases         | 3 |
+| # dependents       | 24 |
+| # downloads        | 877855 |
 | # stars            | 7 |
 
 ## Links

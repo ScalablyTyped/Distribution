@@ -2,13 +2,11 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A backup for an [`CustomDocument`](#CustomDocument).
   */
-@js.native
 trait CustomDocumentBackup extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait CustomDocumentBackup extends StObject {
     * This is called by VS Code when it is clear the current backup is no longer needed, such as when a new backup
     * is made or when the file is saved.
     */
-  def delete(): Unit = js.native
+  def delete(): Unit
   
   /**
     * Unique identifier for the backup.
     *
     * This id is passed back to your extension in `openCustomDocument` when opening a custom editor from a backup.
     */
-  val id: String = js.native
+  val id: String
 }
 object CustomDocumentBackup {
   

@@ -3,36 +3,34 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationSubscriptionCreateParameters extends StObject {
   
   /**
     * Channel for delivering notifications triggered by the new subscription.
     */
-  var channel: ISubscriptionChannel = js.native
+  var channel: ISubscriptionChannel
   
   /**
     * Brief description for the new subscription. Typically describes filter criteria which helps identity the subscription.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Matching criteria for the new subscription. ExpressionFilter
     */
-  var filter: ISubscriptionFilter = js.native
+  var filter: ISubscriptionFilter
   
   /**
     * The container in which events must be published from in order to be matched by the new subscription. If not specified, defaults to the current host (typically an account or project collection). For example, a subscription scoped to project A will not produce notifications for events published from project B.
     */
-  var scope: SubscriptionScope = js.native
+  var scope: SubscriptionScope
   
   /**
     * User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
     */
-  var subscriber: IdentityRef = js.native
+  var subscriber: IdentityRef
 }
 object NotificationSubscriptionCreateParameters {
   

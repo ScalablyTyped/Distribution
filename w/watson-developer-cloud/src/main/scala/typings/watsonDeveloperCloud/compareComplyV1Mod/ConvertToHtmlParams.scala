@@ -7,31 +7,29 @@ import typings.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.Fi
 import typings.watsonDeveloperCloud.compareComplyV1Mod.ConvertToHtmlConstants.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * request interfaces
   ************************/
 /** Parameters for the `convertToHtml` operation. */
-@js.native
 trait ConvertToHtmlParams extends StObject {
   
   /** The document to convert. */
-  var file: ReadableStream | FileObject | Buffer = js.native
+  var file: ReadableStream | FileObject | Buffer
   
   /** The content type of file. */
-  var file_content_type: js.UndefOr[FileContentType | String] = js.native
+  var file_content_type: js.UndefOr[FileContentType | String] = js.undefined
   
   /** The filename for file. */
-  var filename: String = js.native
+  var filename: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
-  var model: js.UndefOr[Model | String] = js.native
+  var model: js.UndefOr[Model | String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object ConvertToHtmlParams {
   

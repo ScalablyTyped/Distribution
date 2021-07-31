@@ -3,7 +3,6 @@ package typings.reactTransitionGroup
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod extends Shortcut {
@@ -12,10 +11,9 @@ object configMod extends Shortcut {
   @js.native
   val default: Config = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
   }
   object Config {
     

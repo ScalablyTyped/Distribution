@@ -9,7 +9,6 @@ import typings.react.mod.WeakValidationMap
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -69,9 +68,8 @@ object YellowBox {
   @scala.inline
   def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[js.Any, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
   
-  @JSImport("react-native", "YellowBox.ignoreWarnings")
-  @js.native
-  def ignoreWarnings(warnings: js.Array[String]): Unit = js.native
+  @scala.inline
+  def ignoreWarnings(warnings: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ignoreWarnings")(warnings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("react-native", "YellowBox.propTypes")
   @js.native

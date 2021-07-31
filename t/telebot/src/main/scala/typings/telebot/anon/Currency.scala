@@ -2,37 +2,35 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currency extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var description: String = js.native
+  var description: String
   
-  var isFlexible: js.UndefOr[Boolean] = js.native
+  var isFlexible: js.UndefOr[Boolean] = js.undefined
   
-  var need: js.UndefOr[Email] = js.native
+  var need: js.UndefOr[Email] = js.undefined
   
-  var notification: js.UndefOr[Boolean] = js.native
+  var notification: js.UndefOr[Boolean] = js.undefined
   
-  var payload: String = js.native
+  var payload: String
   
-  var photo: js.UndefOr[Url] = js.native
+  var photo: js.UndefOr[Url] = js.undefined
   
-  var prices: js.Array[_] = js.native
+  var prices: js.Array[js.Any]
   
-  var providerToken: String = js.native
+  var providerToken: String
   
-  var replyMarkup: js.UndefOr[js.Any] = js.native
+  var replyMarkup: js.UndefOr[js.Any] = js.undefined
   
-  var replyToMessage: js.UndefOr[Double] = js.native
+  var replyToMessage: js.UndefOr[Double] = js.undefined
   
-  var startParameter: String = js.native
+  var startParameter: String
   
-  var title: String = js.native
+  var title: String
 }
 object Currency {
   
@@ -41,7 +39,7 @@ object Currency {
     currency: String,
     description: String,
     payload: String,
-    prices: js.Array[_],
+    prices: js.Array[js.Any],
     providerToken: String,
     startParameter: String,
     title: String
@@ -87,7 +85,7 @@ object Currency {
     def setPhotoUndefined: Self = StObject.set(x, "photo", js.undefined)
     
     @scala.inline
-    def setPrices(value: js.Array[_]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
+    def setPrices(value: js.Array[js.Any]): Self = StObject.set(x, "prices", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPricesVarargs(value: js.Any*): Self = StObject.set(x, "prices", js.Array(value :_*))

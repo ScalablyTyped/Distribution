@@ -2,15 +2,13 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Projection extends StObject {
   
-  def lngLatToPoint(lngLat: Point): Pixel = js.native
+  def lngLatToPoint(lngLat: Point): Pixel
   
-  def pointToLngLat(point: Pixel): Point = js.native
+  def pointToLngLat(point: Pixel): Point
 }
 object Projection {
   

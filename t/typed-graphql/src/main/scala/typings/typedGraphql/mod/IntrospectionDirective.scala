@@ -2,19 +2,17 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrospectionDirective extends StObject {
   
-  var args: js.Array[IntrospectionInputValue] = js.native
+  var args: js.Array[IntrospectionInputValue]
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var locations: js.Array[DirectiveLocationEnum] = js.native
+  var locations: js.Array[DirectiveLocationEnum]
   
-  var name: String = js.native
+  var name: String
 }
 object IntrospectionDirective {
   

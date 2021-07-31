@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationPositionError extends StObject {
   
-  val PERMISSION_DENIED: Double = js.native
+  val PERMISSION_DENIED: Double
   
-  val POSITION_UNAVAILABLE: Double = js.native
+  val POSITION_UNAVAILABLE: Double
   
-  val TIMEOUT: Double = js.native
+  val TIMEOUT: Double
   
-  val code: Double = js.native
+  val code: Double
   
-  val message: java.lang.String = js.native
+  val message: java.lang.String
 }
 object GeolocationPositionError {
   

@@ -3,34 +3,29 @@ package typings.isbinaryfile
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("isbinaryfile", "isBinaryFile")
+  @JSImport("isbinaryfile", JSImport.Namespace)
   @js.native
-  def isBinaryFile(file: String): js.Promise[Boolean] = js.native
-  @JSImport("isbinaryfile", "isBinaryFile")
-  @js.native
-  def isBinaryFile(file: String, size: Double): js.Promise[Boolean] = js.native
-  @JSImport("isbinaryfile", "isBinaryFile")
-  @js.native
-  def isBinaryFile(file: Buffer): js.Promise[Boolean] = js.native
-  @JSImport("isbinaryfile", "isBinaryFile")
-  @js.native
-  def isBinaryFile(file: Buffer, size: Double): js.Promise[Boolean] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("isbinaryfile", "isBinaryFileSync")
-  @js.native
-  def isBinaryFileSync(file: String): Boolean = js.native
-  @JSImport("isbinaryfile", "isBinaryFileSync")
-  @js.native
-  def isBinaryFileSync(file: String, size: Double): Boolean = js.native
-  @JSImport("isbinaryfile", "isBinaryFileSync")
-  @js.native
-  def isBinaryFileSync(file: Buffer): Boolean = js.native
-  @JSImport("isbinaryfile", "isBinaryFileSync")
-  @js.native
-  def isBinaryFileSync(file: Buffer, size: Double): Boolean = js.native
+  @scala.inline
+  def isBinaryFile(file: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def isBinaryFile(file: String, size: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFile")(file.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def isBinaryFile(file: Buffer): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFile")(file.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def isBinaryFile(file: Buffer, size: Double): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFile")(file.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+  
+  @scala.inline
+  def isBinaryFileSync(file: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinaryFileSync(file: String, size: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFileSync")(file.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinaryFileSync(file: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFileSync")(file.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isBinaryFileSync(file: Buffer, size: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBinaryFileSync")(file.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

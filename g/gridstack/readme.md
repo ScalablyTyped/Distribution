@@ -10,9 +10,9 @@ TypeScript/Javascript lib for dashboard layout and creation, no external depende
 | ------------------ | :-------------: |
 | Full name          | gridstack |
 | Keywords           | Typescript, gridstack.js, grid, gridster, layout, responsive, dashboard, resize, drag&drop, widgets, Angular, React, JavaScript |
-| # releases         | 21 |
-| # dependents       | 13 |
-| # downloads        | 993066 |
+| # releases         | 33 |
+| # dependents       | 20 |
+| # downloads        | 1338090 |
 | # stars            | 1 |
 
 ## Links

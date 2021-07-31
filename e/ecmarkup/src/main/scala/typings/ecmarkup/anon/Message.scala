@@ -4,24 +4,24 @@ import typings.ecmarkup.ecmarkupStrings.global
 import typings.ecmarkup.specMod.Warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Message extends Warning {
+trait Message
+  extends StObject
+     with Warning {
   
-  var message: String = js.native
+  var message: String
   
-  var ruleId: String = js.native
+  var ruleId: String
   
-  var `type`: global = js.native
+  var `type`: global
 }
 object Message {
   
   @scala.inline
-  def apply(message: String, ruleId: String, `type`: global): Message = {
+  def apply(message: String, ruleId: String): Message = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], ruleId = ruleId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("global")
     __obj.asInstanceOf[Message]
   }
   

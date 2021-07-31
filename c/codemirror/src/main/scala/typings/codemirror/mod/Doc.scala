@@ -5,11 +5,11 @@ import typings.codemirror.anon.Bias
 import typings.codemirror.anon.InsertLeft
 import typings.codemirror.anon.Redo
 import typings.codemirror.anon.SharedHist
+import typings.codemirror.mod.^
 import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,7 +32,7 @@ trait Doc extends StObject {
   def clearHistory(): Unit = js.native
   
   /** Create an identical copy of the given doc. When copyHistory is true , the history will also be copied.Can not be called directly on an editor. */
-  def copy(copyHistory: Boolean): typings.codemirror.mod.Doc = js.native
+  def copy(copyHistory: Boolean): Doc = js.native
   
   /** Iterate over the whole document, and call f for each line, passing the line handle.
     This is a faster way to visit a range of line handlers than calling getLineHandle for each of them.
@@ -100,11 +100,11 @@ trait Doc extends StObject {
     *          or can be left off to default to the start of the document
     *  `caseFold`: This is only relevant when matching a string. IT will cause the search to be case-insenstive */
   def getSearchCursor(query: String): SearchCursor = js.native
-  def getSearchCursor(query: String, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
+  def getSearchCursor(query: String, start: Unit, caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: String, start: Position): SearchCursor = js.native
   def getSearchCursor(query: String, start: Position, caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: RegExp): SearchCursor = js.native
-  def getSearchCursor(query: RegExp, start: js.UndefOr[scala.Nothing], caseFold: Boolean): SearchCursor = js.native
+  def getSearchCursor(query: RegExp, start: Unit, caseFold: Boolean): SearchCursor = js.native
   def getSearchCursor(query: RegExp, start: Position): SearchCursor = js.native
   def getSearchCursor(query: RegExp, start: Position, caseFold: Boolean): SearchCursor = js.native
   
@@ -144,7 +144,7 @@ trait Doc extends StObject {
   def lineSeparator(): String = js.native
   
   /** Create a new document that's linked to the target document. Linked documents will stay in sync (changes to one are also applied to the other) until unlinked. */
-  def linkedDoc(options: SharedHist): typings.codemirror.mod.Doc = js.native
+  def linkedDoc(options: SharedHist): Doc = js.native
   
   /** Retrieves a list of all current selections. These will always be sorted, and never overlap (overlapping selections are merged).
     Each object in the array contains anchor and head properties referring to {line, ch} objects. */
@@ -178,11 +178,11 @@ trait Doc extends StObject {
   /** Replace the part of the document between from and to with the given string.
     from and to must be {line, ch} objects. to can be left off to simply insert the string at position from. */
   def replaceRange(replacement: String, from: Position): Unit = js.native
-  def replaceRange(replacement: String, from: Position, to: js.UndefOr[scala.Nothing], origin: String): Unit = js.native
+  def replaceRange(replacement: String, from: Position, to: Unit, origin: String): Unit = js.native
   def replaceRange(replacement: String, from: Position, to: Position): Unit = js.native
   def replaceRange(replacement: String, from: Position, to: Position, origin: String): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position): Unit = js.native
-  def replaceRange(replacement: js.Array[String], from: Position, to: js.UndefOr[scala.Nothing], origin: String): Unit = js.native
+  def replaceRange(replacement: js.Array[String], from: Position, to: Unit, origin: String): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position, to: Position): Unit = js.native
   def replaceRange(replacement: js.Array[String], from: Position, to: Position, origin: String): Unit = js.native
   
@@ -198,16 +198,16 @@ trait Doc extends StObject {
   def setBookmark(pos: Position, options: InsertLeft): TextMarker = js.native
   
   def setCursor(pos: Double): Unit = js.native
-  def setCursor(pos: Double, ch: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setCursor(pos: Double, ch: Double): Unit = js.native
   def setCursor(pos: Double, ch: Double, options: Bias): Unit = js.native
+  def setCursor(pos: Double, ch: Unit, options: Bias): Unit = js.native
   /** Set the cursor position. You can either pass a single {line, ch} object, or the line and the character as two separate parameters.
     Will replace all selections with a single, empty selection at the given position.
     The supported options are the same as for setSelection */
   def setCursor(pos: Position): Unit = js.native
-  def setCursor(pos: Position, ch: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setCursor(pos: Position, ch: Double): Unit = js.native
   def setCursor(pos: Position, ch: Double, options: Bias): Unit = js.native
+  def setCursor(pos: Position, ch: Unit, options: Bias): Unit = js.native
   
   /** Sets or clears the 'extending' flag , which acts similar to the shift key,
     in that it will cause cursor movement and calls to extendSelection to leave the selection anchor in place. */
@@ -222,7 +222,7 @@ trait Doc extends StObject {
   
   /** Set a single selection range. anchor and head should be {line, ch} objects. head defaults to anchor when not given. */
   def setSelection(anchor: Position): Unit = js.native
-  def setSelection(anchor: Position, head: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
+  def setSelection(anchor: Position, head: Unit, options: Bias): Unit = js.native
   def setSelection(anchor: Position, head: Position): Unit = js.native
   def setSelection(anchor: Position, head: Position, options: Bias): Unit = js.native
   
@@ -231,9 +231,9 @@ trait Doc extends StObject {
     the previous selection, or set to the last range if the previous selection had less ranges than the new one.
     Supports the same options as setSelection. */
   def setSelections(ranges: js.Array[Anchor]): Unit = js.native
-  def setSelections(ranges: js.Array[Anchor], primary: js.UndefOr[scala.Nothing], options: Bias): Unit = js.native
   def setSelections(ranges: js.Array[Anchor], primary: Double): Unit = js.native
   def setSelections(ranges: js.Array[Anchor], primary: Double, options: Bias): Unit = js.native
+  def setSelections(ranges: js.Array[Anchor], primary: Unit, options: Bias): Unit = js.native
   
   /** Set the editor content. */
   def setValue(content: String): Unit = js.native
@@ -249,5 +249,10 @@ trait Doc extends StObject {
   
   /** Break the link between two documents. After calling this , changes will no longer propagate between the documents,
     and, if they had a shared history, the history will become separate. */
-  def unlinkDoc(doc: typings.codemirror.mod.Doc): Unit = js.native
+  def unlinkDoc(doc: Doc): Unit = js.native
+}
+object Doc {
+  
+  @scala.inline
+  def apply: DocConstructor = ^.asInstanceOf[js.Dynamic].selectDynamic("Doc").asInstanceOf[DocConstructor]
 }

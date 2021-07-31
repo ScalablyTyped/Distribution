@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.SelectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
@@ -19,33 +18,34 @@ object tabsMod {
   trait Tabs
     extends Component[TabsProps, js.Object, js.Any]
   
-  @js.native
-  trait TabsProps extends HTMLProps[Tabs] {
+  trait TabsProps
+    extends StObject
+       with HTMLProps[Tabs] {
     
-    var activeKey: js.UndefOr[js.Any] = js.native
+    var activeKey: js.UndefOr[js.Any] = js.undefined
     
-    var animation: js.UndefOr[Boolean] = js.native
+    var animation: js.UndefOr[Boolean] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[js.Any] = js.native
+    var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
     
-    var justified: js.UndefOr[Boolean] = js.native
+    var justified: js.UndefOr[Boolean] = js.undefined
     
     // TODO: Add more specific type
-    var mountOnEnter: js.UndefOr[Boolean] = js.native
+    var mountOnEnter: js.UndefOr[Boolean] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_TabsProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_TabsProps: js.UndefOr[SelectCallback] = js.undefined
     
-    var paneWidth: js.UndefOr[js.Any] = js.native
+    var paneWidth: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add more specific type
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var tabWidth: js.UndefOr[js.Any] = js.native
+    var tabWidth: js.UndefOr[js.Any] = js.undefined
     
-    var unmountOnExit: js.UndefOr[Boolean] = js.native
+    var unmountOnExit: js.UndefOr[Boolean] = js.undefined
   }
   object TabsProps {
     

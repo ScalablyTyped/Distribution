@@ -2,17 +2,17 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FCMNotificationPayload extends BaseNotificationPayload {
+trait FCMNotificationPayload
+  extends StObject
+     with BaseNotificationPayload {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var isSilent: Boolean = js.native
+  var isSilent: Boolean
   
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object FCMNotificationPayload {
   

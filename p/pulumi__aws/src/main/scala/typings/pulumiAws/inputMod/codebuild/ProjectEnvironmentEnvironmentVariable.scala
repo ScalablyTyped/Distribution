@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectEnvironmentEnvironmentVariable extends StObject {
   
   /**
     * The environment variable's name or key.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * The type of environment variable. Valid values: `PARAMETER_STORE`, `PLAINTEXT`, and `SECRETS_MANAGER`.
     */
-  var `type`: js.UndefOr[Input[String]] = js.native
+  var `type`: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The environment variable's value.
     */
-  var value: Input[String] = js.native
+  var value: Input[String]
 }
 object ProjectEnvironmentEnvironmentVariable {
   

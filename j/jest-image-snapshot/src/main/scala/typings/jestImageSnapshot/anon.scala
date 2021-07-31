@@ -8,21 +8,19 @@ import typings.jestImageSnapshot.jestImageSnapshotStrings.original
 import typings.jestImageSnapshot.jestImageSnapshotStrings.weber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Counter extends StObject {
     
-    var counter: Double = js.native
+    var counter: Double
     
-    var currentTestName: String = js.native
+    var currentTestName: String
     
-    var defaultIdentifier: String = js.native
+    var defaultIdentifier: String
     
-    var testPath: String = js.native
+    var testPath: String
   }
   object Counter {
     
@@ -49,12 +47,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    def message(): String = js.native
+    def message(): String
     
-    var pass: Boolean = js.native
+    var pass: Boolean
   }
   object Message {
     
@@ -76,24 +73,23 @@ object anon {
   }
   
   /* Inlined std.Partial<ssim.js.ssim.js.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var bitDepth: js.UndefOr[Double] = js.native
+    var bitDepth: js.UndefOr[Double] = js.undefined
     
-    var downsample: js.UndefOr[original | fast | `false`] = js.native
+    var downsample: js.UndefOr[original | fast | `false`] = js.undefined
     
-    var k1: js.UndefOr[Double] = js.native
+    var k1: js.UndefOr[Double] = js.undefined
     
-    var k2: js.UndefOr[Double] = js.native
+    var k2: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var rgb2grayVersion: js.UndefOr[original | integer] = js.native
+    var rgb2grayVersion: js.UndefOr[original | integer] = js.undefined
     
-    var ssim: js.UndefOr[fast | original | bezkrovny | weber] = js.native
+    var ssim: js.UndefOr[fast | original | bezkrovny | weber] = js.undefined
     
-    var windowSize: js.UndefOr[Double] = js.native
+    var windowSize: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     

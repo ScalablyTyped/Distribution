@@ -5,13 +5,15 @@ import typings.stylefire.typesMod.ResolvedState
 import typings.stylefire.typesMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buildStylesMod {
   
-  @JSImport("stylefire/lib/css/build-styles", "buildStyleProperty")
+  @JSImport("stylefire/lib/css/build-styles", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def buildStyleProperty(
     state: State,
     enableHardwareAcceleration: js.UndefOr[Boolean],
@@ -21,12 +23,10 @@ object buildStylesMod {
     transformKeys: js.UndefOr[js.Array[String]],
     isDashCase: js.UndefOr[Boolean],
     allowTransformNone: js.UndefOr[Boolean]
-  ): ResolvedState = js.native
+  ): ResolvedState = (^.asInstanceOf[js.Dynamic].applyDynamic("buildStyleProperty")(state.asInstanceOf[js.Any], enableHardwareAcceleration.asInstanceOf[js.Any], styles.asInstanceOf[js.Any], transform.asInstanceOf[js.Any], transformOrigin.asInstanceOf[js.Any], transformKeys.asInstanceOf[js.Any], isDashCase.asInstanceOf[js.Any], allowTransformNone.asInstanceOf[js.Any])).asInstanceOf[ResolvedState]
   
-  @JSImport("stylefire/lib/css/build-styles", "createStyleBuilder")
-  @js.native
-  def createStyleBuilder(): js.Function1[/* state */ State, ResolvedState] = js.native
-  @JSImport("stylefire/lib/css/build-styles", "createStyleBuilder")
-  @js.native
-  def createStyleBuilder(hasEnableHardwareAccelerationIsDashCaseAllowTransformNone: AllowTransformNone): js.Function1[/* state */ State, ResolvedState] = js.native
+  @scala.inline
+  def createStyleBuilder(): js.Function1[/* state */ State, ResolvedState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleBuilder")().asInstanceOf[js.Function1[/* state */ State, ResolvedState]]
+  @scala.inline
+  def createStyleBuilder(hasEnableHardwareAccelerationIsDashCaseAllowTransformNone: AllowTransformNone): js.Function1[/* state */ State, ResolvedState] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStyleBuilder")(hasEnableHardwareAccelerationIsDashCaseAllowTransformNone.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* state */ State, ResolvedState]]
 }

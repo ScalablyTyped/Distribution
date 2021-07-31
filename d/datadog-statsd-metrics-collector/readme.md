@@ -10,9 +10,9 @@ Collect, rollup, and batch Datadog statsd metrics
 | ------------------ | :-------------: |
 | Full name          | datadog-statsd-metrics-collector |
 | Keywords           | datadog, statsd, collector, batch |
-| # releases         | 5 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6574 |
+| # downloads        | 5742 |
 | # stars            | 0 |
 
 ## Links

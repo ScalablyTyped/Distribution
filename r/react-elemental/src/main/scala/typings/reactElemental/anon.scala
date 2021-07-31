@@ -3,17 +3,15 @@ package typings.reactElemental
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bold extends StObject {
     
-    val bold: js.UndefOr[String] = js.native
+    val bold: js.UndefOr[String] = js.undefined
     
-    val regular: js.UndefOr[String] = js.native
+    val regular: js.UndefOr[String] = js.undefined
   }
   object Bold {
     
@@ -40,14 +38,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    val disabled: js.UndefOr[Boolean] = js.native
+    val disabled: js.UndefOr[Boolean] = js.undefined
     
-    val label: String | ReactNode = js.native
+    val label: String | ReactNode
     
-    val value: String = js.native
+    val value: String
   }
   object Disabled {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    val label: String = js.native
+    val label: String
     
-    val value: String = js.native
+    val value: String
   }
   object Label {
     
@@ -103,12 +99,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LabelValue extends StObject {
     
-    val label: String | ReactNode = js.native
+    val label: String | ReactNode
     
-    val value: String = js.native
+    val value: String
   }
   object LabelValue {
     
@@ -132,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Primary extends StObject {
     
-    val primary: js.UndefOr[Bold] = js.native
+    val primary: js.UndefOr[Bold] = js.undefined
     
-    val secondary: js.UndefOr[Bold] = js.native
+    val secondary: js.UndefOr[Bold] = js.undefined
   }
   object Primary {
     
@@ -164,14 +158,13 @@ object anon {
     }
   }
   
-  @js.native
   trait PrimaryDark extends StObject {
     
-    val primary: js.UndefOr[String] = js.native
+    val primary: js.UndefOr[String] = js.undefined
     
-    val primaryDark: js.UndefOr[String] = js.native
+    val primaryDark: js.UndefOr[String] = js.undefined
     
-    val primaryLight: js.UndefOr[String] = js.native
+    val primaryLight: js.UndefOr[String] = js.undefined
   }
   object PrimaryDark {
     
@@ -204,12 +197,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Regular extends StObject {
     
-    var bold: js.UndefOr[String] = js.native
+    var bold: js.UndefOr[String] = js.undefined
     
-    var regular: js.UndefOr[String] = js.native
+    var regular: js.UndefOr[String] = js.undefined
   }
   object Regular {
     
@@ -236,12 +228,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    val label: js.Any = js.native
+    val label: js.Any
     
-    val value: String = js.native
+    val value: String
   }
   object Value {
     

@@ -3,22 +3,22 @@ package typings.trezorConnect.mod
 import typings.trezorConnect.trezorConnectStrings.`send-max`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendMaxOutput extends Output {
+trait SendMaxOutput
+  extends StObject
+     with Output {
   
-  var address: String = js.native
+  var address: String
   
-  var `type`: `send-max` = js.native
+  var `type`: `send-max`
 }
 object SendMaxOutput {
   
   @scala.inline
-  def apply(address: String, `type`: `send-max`): SendMaxOutput = {
+  def apply(address: String): SendMaxOutput = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("send-max")
     __obj.asInstanceOf[SendMaxOutput]
   }
   

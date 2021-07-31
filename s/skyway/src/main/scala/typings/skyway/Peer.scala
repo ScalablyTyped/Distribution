@@ -9,14 +9,13 @@ import typings.skyway.skywayStrings.open
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Peer extends StObject {
   
   def call(peerId: String): js.UndefOr[MediaConnection] = js.native
-  def call(peerId: String, stream: js.UndefOr[scala.Nothing], options: CallOptions): js.UndefOr[MediaConnection] = js.native
+  def call(peerId: String, stream: Unit, options: CallOptions): js.UndefOr[MediaConnection] = js.native
   def call(peerId: String, stream: MediaStream): js.UndefOr[MediaConnection] = js.native
   def call(peerId: String, stream: MediaStream, options: CallOptions): js.UndefOr[MediaConnection] = js.native
   
@@ -25,9 +24,9 @@ trait Peer extends StObject {
   
   var connections: js.Any = js.native
   
-  def destroy(): js.UndefOr[scala.Nothing] = js.native
+  def destroy(): Unit = js.native
   
-  def disconnect(): js.UndefOr[scala.Nothing] = js.native
+  def disconnect(): Unit = js.native
   
   var id: String = js.native
   
@@ -54,5 +53,5 @@ trait Peer extends StObject {
   
   var rooms: js.Any = js.native
   
-  def updateCredential(newCredential: Credential): js.UndefOr[scala.Nothing] = js.native
+  def updateCredential(newCredential: Credential): Unit = js.native
 }

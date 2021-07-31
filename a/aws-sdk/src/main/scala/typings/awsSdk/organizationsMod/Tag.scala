@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The key identifier, or name, of the tag.
     */
-  var Key: TagKey = js.native
+  var Key: TagKey
   
   /**
     * The string value that's associated with the key of the tag. You can set the value of a tag to an empty string, but you can't set the value of a tag to null.
     */
-  var Value: TagValue = js.native
+  var Value: TagValue
 }
 object Tag {
   

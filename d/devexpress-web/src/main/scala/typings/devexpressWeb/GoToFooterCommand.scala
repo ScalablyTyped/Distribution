@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to navigate to the page footer from the page header in the header/footer editing mode.
   */
-@js.native
-trait GoToFooterCommand extends CommandWithSimpleStateBase {
+trait GoToFooterCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the GoToFooterCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object GoToFooterCommand {
   

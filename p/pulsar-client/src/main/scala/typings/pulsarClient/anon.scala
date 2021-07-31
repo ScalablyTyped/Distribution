@@ -2,17 +2,15 @@ package typings.pulsarClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CertificatePath extends StObject {
     
-    var certificatePath: String = js.native
+    var certificatePath: String
     
-    var privateKeyPath: String = js.native
+    var privateKeyPath: String
   }
   object CertificatePath {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var token: String = js.native
+    var token: String
   }
   object Token {
     

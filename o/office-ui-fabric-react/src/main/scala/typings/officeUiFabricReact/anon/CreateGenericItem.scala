@@ -7,7 +7,6 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,5 +17,5 @@ trait CreateGenericItem extends StObject {
   def onRenderItem(props: IPeoplePickerItemSelectedProps): Element = js.native
   
   def onRenderSuggestionsItem(personaProps: IPersonaProps): Element = js.native
-  def onRenderSuggestionsItem(personaProps: IPersonaProps, suggestionsProps: IBasePickerSuggestionsProps[_]): Element = js.native
+  def onRenderSuggestionsItem(personaProps: IPersonaProps, suggestionsProps: IBasePickerSuggestionsProps[js.Any]): Element = js.native
 }

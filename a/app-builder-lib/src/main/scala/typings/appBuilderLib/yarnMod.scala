@@ -6,28 +6,27 @@ import typings.lazyVal.mod.Lazy
 import typings.node.processMod.global.NodeJS.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yarnMod {
   
-  @JSImport("app-builder-lib/out/util/yarn", "getGypEnv")
+  @JSImport("app-builder-lib/out/util/yarn", JSImport.Namespace)
   @js.native
-  def getGypEnv(frameworkInfo: DesktopFrameworkInfo, platform: Platform, arch: String, buildFromSource: Boolean): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/yarn", "installOrRebuild")
-  @js.native
-  def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions): js.Promise[Unit] = js.native
-  @JSImport("app-builder-lib/out/util/yarn", "installOrRebuild")
-  @js.native
-  def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions, forceInstall: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def getGypEnv(frameworkInfo: DesktopFrameworkInfo, platform: Platform, arch: String, buildFromSource: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getGypEnv")(frameworkInfo.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], arch.asInstanceOf[js.Any], buildFromSource.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("installOrRebuild")(config.asInstanceOf[js.Any], appDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def installOrRebuild(config: Configuration, appDir: String, options: RebuildOptions, forceInstall: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("installOrRebuild")(config.asInstanceOf[js.Any], appDir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], forceInstall.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait DesktopFrameworkInfo extends StObject {
     
-    var useCustomDist: Boolean = js.native
+    var useCustomDist: Boolean
     
-    var version: String = js.native
+    var version: String
   }
   object DesktopFrameworkInfo {
     
@@ -48,20 +47,19 @@ object yarnMod {
     }
   }
   
-  @js.native
   trait RebuildOptions extends StObject {
     
-    var additionalArgs: js.UndefOr[js.Array[String] | Null] = js.native
+    var additionalArgs: js.UndefOr[js.Array[String] | Null] = js.undefined
     
-    var arch: js.UndefOr[String] = js.native
+    var arch: js.UndefOr[String] = js.undefined
     
-    var buildFromSource: js.UndefOr[Boolean] = js.native
+    var buildFromSource: js.UndefOr[Boolean] = js.undefined
     
-    var frameworkInfo: DesktopFrameworkInfo = js.native
+    var frameworkInfo: DesktopFrameworkInfo
     
-    var platform: js.UndefOr[Platform] = js.native
+    var platform: js.UndefOr[Platform] = js.undefined
     
-    var productionDeps: js.UndefOr[Lazy[js.Array[NodeModuleDirInfo]]] = js.native
+    var productionDeps: js.UndefOr[Lazy[js.Array[NodeModuleDirInfo]]] = js.undefined
   }
   object RebuildOptions {
     

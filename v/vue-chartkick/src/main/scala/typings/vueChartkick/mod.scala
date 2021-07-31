@@ -2,10 +2,11 @@ package typings.vueChartkick
 
 import org.scalablytyped.runtime.Shortcut
 import typings.vue.pluginMod.PluginObject
+import typings.vue.vueMod.Vue
+import typings.vue.vueMod.VueConstructor
 import typings.vueChartkick.anon.Adapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,12 +15,35 @@ object mod extends Shortcut {
   @js.native
   val default: VueChartkickPlugin = js.native
   
-  @js.native
-  trait VueChartkickPlugin extends PluginObject[Adapter] {
+  trait VueChartkickPlugin
+    extends StObject
+       with PluginObject[Adapter] {
     
-    def addAdapter(library: js.Any): Unit = js.native
+    def addAdapter(library: js.Any): Unit
     
-    var version: String = js.native
+    var version: String
+  }
+  object VueChartkickPlugin {
+    
+    @scala.inline
+    def apply(
+      addAdapter: js.Any => Unit,
+      install: (/* Vue */ VueConstructor[Vue], /* options */ js.UndefOr[Adapter]) => Unit,
+      version: String
+    ): VueChartkickPlugin = {
+      val __obj = js.Dynamic.literal(addAdapter = js.Any.fromFunction1(addAdapter), install = js.Any.fromFunction2(install), version = version.asInstanceOf[js.Any])
+      __obj.asInstanceOf[VueChartkickPlugin]
+    }
+    
+    @scala.inline
+    implicit class VueChartkickPluginMutableBuilder[Self <: VueChartkickPlugin] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAddAdapter(value: js.Any => Unit): Self = StObject.set(x, "addAdapter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
+    }
   }
   
   type _To = VueChartkickPlugin

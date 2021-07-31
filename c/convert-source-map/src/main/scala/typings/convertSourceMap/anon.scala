@@ -2,15 +2,13 @@ package typings.convertSourceMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Multiline extends StObject {
     
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
   }
   object Multiline {
     

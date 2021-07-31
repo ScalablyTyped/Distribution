@@ -134,7 +134,6 @@ import typings.react.mod.global.JSX.IntrinsicElements
 import typings.react.mod.global.JSX.LibraryManagedAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsxNamespaceMod {
@@ -154,358 +153,357 @@ object jsxNamespaceMod {
     type IntrinsicClassAttributes[T] = ReactJSXIntrinsicClassAttributes[T]
     
     /* Inlined {[ K in keyof @emotion/react.@emotion/react/types/jsx-namespace.ReactJSXIntrinsicElements ]: @emotion/react.@emotion/react/types/jsx-namespace.ReactJSXIntrinsicElements[K] & {  css :@emotion/serialize.@emotion/serialize.Interpolation<@emotion/react.@emotion/react.Theme> | undefined}} */
-    @js.native
     trait IntrinsicElements extends StObject {
       
-      var a: DetailedHTMLPropsAnchorHT = js.native
+      var a: DetailedHTMLPropsAnchorHT
       
-      var abbr: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var abbr: DetailedHTMLPropsHTMLAttrAbout
       
-      var address: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var address: DetailedHTMLPropsHTMLAttrAbout
       
-      var animate: SVGPropsSVGElementcssInte = js.native
+      var animate: SVGPropsSVGElementcssInte
       
-      var animateMotion: SVGPropsSVGElementcssInte = js.native
+      var animateMotion: SVGPropsSVGElementcssInte
       
-      var animateTransform: SVGPropsSVGElementcssInte = js.native
+      var animateTransform: SVGPropsSVGElementcssInte
       
-      var area: DetailedHTMLPropsAreaHTML = js.native
+      var area: DetailedHTMLPropsAreaHTML
       
-      var article: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var article: DetailedHTMLPropsHTMLAttrAbout
       
-      var aside: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var aside: DetailedHTMLPropsHTMLAttrAbout
       
-      var audio: DetailedHTMLPropsAudioHTM = js.native
+      var audio: DetailedHTMLPropsAudioHTM
       
-      var b: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var b: DetailedHTMLPropsHTMLAttrAbout
       
-      var base: DetailedHTMLPropsBaseHTML = js.native
+      var base: DetailedHTMLPropsBaseHTML
       
-      var bdi: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var bdi: DetailedHTMLPropsHTMLAttrAbout
       
-      var bdo: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var bdo: DetailedHTMLPropsHTMLAttrAbout
       
-      var big: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var big: DetailedHTMLPropsHTMLAttrAbout
       
-      var blockquote: DetailedHTMLPropsBlockquo = js.native
+      var blockquote: DetailedHTMLPropsBlockquo
       
-      var body: DetailedHTMLPropsHTMLAttrAriacolspan = js.native
+      var body: DetailedHTMLPropsHTMLAttrAriacolspan
       
-      var br: DetailedHTMLPropsHTMLAttrAriadisabled = js.native
+      var br: DetailedHTMLPropsHTMLAttrAriadisabled
       
-      var button: DetailedHTMLPropsButtonHT = js.native
+      var button: DetailedHTMLPropsButtonHT
       
-      var canvas: DetailedHTMLPropsCanvasHT = js.native
+      var canvas: DetailedHTMLPropsCanvasHT
       
-      var caption: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var caption: DetailedHTMLPropsHTMLAttrAbout
       
-      var circle: SVGPropsSVGCircleElementc = js.native
+      var circle: SVGPropsSVGCircleElementc
       
-      var cite: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var cite: DetailedHTMLPropsHTMLAttrAbout
       
-      var clipPath: SVGPropsSVGClipPathElemen = js.native
+      var clipPath: SVGPropsSVGClipPathElemen
       
-      var code: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var code: DetailedHTMLPropsHTMLAttrAbout
       
-      var col: DetailedHTMLPropsColHTMLA = js.native
+      var col: DetailedHTMLPropsColHTMLA
       
-      var colgroup: DetailedHTMLPropsColgroup = js.native
+      var colgroup: DetailedHTMLPropsColgroup
       
-      var data: DetailedHTMLPropsDataHTML = js.native
+      var data: DetailedHTMLPropsDataHTML
       
-      var datalist: DetailedHTMLPropsHTMLAttrAriacolindex = js.native
+      var datalist: DetailedHTMLPropsHTMLAttrAriacolindex
       
-      var dd: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var dd: DetailedHTMLPropsHTMLAttrAbout
       
-      var defs: SVGPropsSVGDefsElementcss = js.native
+      var defs: SVGPropsSVGDefsElementcss
       
-      var del: DetailedHTMLPropsDelHTMLA = js.native
+      var del: DetailedHTMLPropsDelHTMLA
       
-      var desc: SVGPropsSVGDescElementcss = js.native
+      var desc: SVGPropsSVGDescElementcss
       
-      var details: DetailedHTMLPropsDetailsH = js.native
+      var details: DetailedHTMLPropsDetailsH
       
-      var dfn: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var dfn: DetailedHTMLPropsHTMLAttrAbout
       
-      var dialog: DetailedHTMLPropsDialogHT = js.native
+      var dialog: DetailedHTMLPropsDialogHT
       
-      var div: DetailedHTMLPropsHTMLAttrAriaatomic = js.native
+      var div: DetailedHTMLPropsHTMLAttrAriaatomic
       
-      var dl: DetailedHTMLPropsHTMLAttrAriadescribedby = js.native
+      var dl: DetailedHTMLPropsHTMLAttrAriadescribedby
       
-      var dt: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var dt: DetailedHTMLPropsHTMLAttrAbout
       
-      var ellipse: SVGPropsSVGEllipseElement = js.native
+      var ellipse: SVGPropsSVGEllipseElement
       
-      var em: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var em: DetailedHTMLPropsHTMLAttrAbout
       
-      var embed: DetailedHTMLPropsEmbedHTM = js.native
+      var embed: DetailedHTMLPropsEmbedHTM
       
-      var feBlend: SVGPropsSVGFEBlendElement = js.native
+      var feBlend: SVGPropsSVGFEBlendElement
       
-      var feColorMatrix: SVGPropsSVGFEColorMatrixE = js.native
+      var feColorMatrix: SVGPropsSVGFEColorMatrixE
       
-      var feComponentTransfer: SVGPropsSVGFEComponentTra = js.native
+      var feComponentTransfer: SVGPropsSVGFEComponentTra
       
-      var feComposite: SVGPropsSVGFECompositeEle = js.native
+      var feComposite: SVGPropsSVGFECompositeEle
       
-      var feConvolveMatrix: SVGPropsSVGFEConvolveMatr = js.native
+      var feConvolveMatrix: SVGPropsSVGFEConvolveMatr
       
-      var feDiffuseLighting: SVGPropsSVGFEDiffuseLight = js.native
+      var feDiffuseLighting: SVGPropsSVGFEDiffuseLight
       
-      var feDisplacementMap: SVGPropsSVGFEDisplacement = js.native
+      var feDisplacementMap: SVGPropsSVGFEDisplacement
       
-      var feDistantLight: SVGPropsSVGFEDistantLight = js.native
+      var feDistantLight: SVGPropsSVGFEDistantLight
       
-      var feDropShadow: SVGPropsSVGFEDropShadowEl = js.native
+      var feDropShadow: SVGPropsSVGFEDropShadowEl
       
-      var feFlood: SVGPropsSVGFEFloodElement = js.native
+      var feFlood: SVGPropsSVGFEFloodElement
       
-      var feFuncA: SVGPropsSVGFEFuncAElement = js.native
+      var feFuncA: SVGPropsSVGFEFuncAElement
       
-      var feFuncB: SVGPropsSVGFEFuncBElement = js.native
+      var feFuncB: SVGPropsSVGFEFuncBElement
       
-      var feFuncG: SVGPropsSVGFEFuncGElement = js.native
+      var feFuncG: SVGPropsSVGFEFuncGElement
       
-      var feFuncR: SVGPropsSVGFEFuncRElement = js.native
+      var feFuncR: SVGPropsSVGFEFuncRElement
       
-      var feGaussianBlur: SVGPropsSVGFEGaussianBlur = js.native
+      var feGaussianBlur: SVGPropsSVGFEGaussianBlur
       
-      var feImage: SVGPropsSVGFEImageElement = js.native
+      var feImage: SVGPropsSVGFEImageElement
       
-      var feMerge: SVGPropsSVGFEMergeElement = js.native
+      var feMerge: SVGPropsSVGFEMergeElement
       
-      var feMergeNode: SVGPropsSVGFEMergeNodeEle = js.native
+      var feMergeNode: SVGPropsSVGFEMergeNodeEle
       
-      var feMorphology: SVGPropsSVGFEMorphologyEl = js.native
+      var feMorphology: SVGPropsSVGFEMorphologyEl
       
-      var feOffset: SVGPropsSVGFEOffsetElemen = js.native
+      var feOffset: SVGPropsSVGFEOffsetElemen
       
-      var fePointLight: SVGPropsSVGFEPointLightEl = js.native
+      var fePointLight: SVGPropsSVGFEPointLightEl
       
-      var feSpecularLighting: SVGPropsSVGFESpecularLigh = js.native
+      var feSpecularLighting: SVGPropsSVGFESpecularLigh
       
-      var feSpotLight: SVGPropsSVGFESpotLightEle = js.native
+      var feSpotLight: SVGPropsSVGFESpotLightEle
       
-      var feTile: SVGPropsSVGFETileElementc = js.native
+      var feTile: SVGPropsSVGFETileElementc
       
-      var feTurbulence: SVGPropsSVGFETurbulenceEl = js.native
+      var feTurbulence: SVGPropsSVGFETurbulenceEl
       
-      var fieldset: DetailedHTMLPropsFieldset = js.native
+      var fieldset: DetailedHTMLPropsFieldset
       
-      var figcaption: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var figcaption: DetailedHTMLPropsHTMLAttrAbout
       
-      var figure: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var figure: DetailedHTMLPropsHTMLAttrAbout
       
-      var filter: SVGPropsSVGFilterElementc = js.native
+      var filter: SVGPropsSVGFilterElementc
       
-      var footer: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var footer: DetailedHTMLPropsHTMLAttrAbout
       
-      var foreignObject: SVGPropsSVGForeignObjectE = js.native
+      var foreignObject: SVGPropsSVGForeignObjectE
       
-      var form: DetailedHTMLPropsFormHTML = js.native
+      var form: DetailedHTMLPropsFormHTML
       
-      var g: SVGPropsSVGGElementcssInt = js.native
+      var g: SVGPropsSVGGElementcssInt
       
-      var h1: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h1: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var h2: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h2: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var h3: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h3: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var h4: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h4: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var h5: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h5: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var h6: DetailedHTMLPropsHTMLAttrAriachecked = js.native
+      var h6: DetailedHTMLPropsHTMLAttrAriachecked
       
-      var head: DetailedHTMLPropsHTMLAttrAriacolcount = js.native
+      var head: DetailedHTMLPropsHTMLAttrAriacolcount
       
-      var header: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var header: DetailedHTMLPropsHTMLAttrAbout
       
-      var hgroup: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var hgroup: DetailedHTMLPropsHTMLAttrAbout
       
-      var hr: DetailedHTMLPropsHTMLAttrAriadetails = js.native
+      var hr: DetailedHTMLPropsHTMLAttrAriadetails
       
-      var html: DetailedHTMLPropsHtmlHTML = js.native
+      var html: DetailedHTMLPropsHtmlHTML
       
-      var i: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var i: DetailedHTMLPropsHTMLAttrAbout
       
-      var iframe: DetailedHTMLPropsIframeHT = js.native
+      var iframe: DetailedHTMLPropsIframeHT
       
-      var image: SVGPropsSVGImageElementcs = js.native
+      var image: SVGPropsSVGImageElementcs
       
-      var img: DetailedHTMLPropsImgHTMLA = js.native
+      var img: DetailedHTMLPropsImgHTMLA
       
-      var input: DetailedHTMLPropsInputHTM = js.native
+      var input: DetailedHTMLPropsInputHTM
       
-      var ins: DetailedHTMLPropsInsHTMLA = js.native
+      var ins: DetailedHTMLPropsInsHTMLA
       
-      var kbd: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var kbd: DetailedHTMLPropsHTMLAttrAbout
       
-      var keygen: DetailedHTMLPropsKeygenHT = js.native
+      var keygen: DetailedHTMLPropsKeygenHT
       
-      var label: DetailedHTMLPropsLabelHTM = js.native
+      var label: DetailedHTMLPropsLabelHTM
       
-      var legend: DetailedHTMLPropsHTMLAttrAriabusy = js.native
+      var legend: DetailedHTMLPropsHTMLAttrAriabusy
       
-      var li: DetailedHTMLPropsLiHTMLAt = js.native
+      var li: DetailedHTMLPropsLiHTMLAt
       
-      var line: SVGPropsSVGLineElementcss = js.native
+      var line: SVGPropsSVGLineElementcss
       
-      var linearGradient: SVGPropsSVGLinearGradient = js.native
+      var linearGradient: SVGPropsSVGLinearGradient
       
-      var link: DetailedHTMLPropsLinkHTML = js.native
+      var link: DetailedHTMLPropsLinkHTML
       
-      var main: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var main: DetailedHTMLPropsHTMLAttrAbout
       
-      var map: DetailedHTMLPropsMapHTMLA = js.native
+      var map: DetailedHTMLPropsMapHTMLA
       
-      var mark: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var mark: DetailedHTMLPropsHTMLAttrAbout
       
-      var marker: SVGPropsSVGMarkerElementc = js.native
+      var marker: SVGPropsSVGMarkerElementc
       
-      var mask: SVGPropsSVGMaskElementcss = js.native
+      var mask: SVGPropsSVGMaskElementcss
       
-      var menu: DetailedHTMLPropsMenuHTML = js.native
+      var menu: DetailedHTMLPropsMenuHTML
       
-      var menuitem: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var menuitem: DetailedHTMLPropsHTMLAttrAbout
       
-      var meta: DetailedHTMLPropsMetaHTML = js.native
+      var meta: DetailedHTMLPropsMetaHTML
       
-      var metadata: SVGPropsSVGMetadataElemen = js.native
+      var metadata: SVGPropsSVGMetadataElemen
       
-      var meter: DetailedHTMLPropsMeterHTM = js.native
+      var meter: DetailedHTMLPropsMeterHTM
       
-      var mpath: SVGPropsSVGElementcssInte = js.native
+      var mpath: SVGPropsSVGElementcssInte
       
-      var nav: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var nav: DetailedHTMLPropsHTMLAttrAbout
       
-      var noindex: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var noindex: DetailedHTMLPropsHTMLAttrAbout
       
-      var noscript: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var noscript: DetailedHTMLPropsHTMLAttrAbout
       
-      var `object`: DetailedHTMLPropsObjectHT = js.native
+      var `object`: DetailedHTMLPropsObjectHT
       
-      var ol: DetailedHTMLPropsOlHTMLAt = js.native
+      var ol: DetailedHTMLPropsOlHTMLAt
       
-      var optgroup: DetailedHTMLPropsOptgroup = js.native
+      var optgroup: DetailedHTMLPropsOptgroup
       
-      var option: DetailedHTMLPropsOptionHT = js.native
+      var option: DetailedHTMLPropsOptionHT
       
-      var output: DetailedHTMLPropsOutputHT = js.native
+      var output: DetailedHTMLPropsOutputHT
       
-      var p: DetailedHTMLPropsHTMLAttrAriaerrormessage = js.native
+      var p: DetailedHTMLPropsHTMLAttrAriaerrormessage
       
-      var param: DetailedHTMLPropsParamHTM = js.native
+      var param: DetailedHTMLPropsParamHTM
       
-      var path: SVGPropsSVGPathElementcss = js.native
+      var path: SVGPropsSVGPathElementcss
       
-      var pattern: SVGPropsSVGPatternElement = js.native
+      var pattern: SVGPropsSVGPatternElement
       
-      var picture: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var picture: DetailedHTMLPropsHTMLAttrAbout
       
-      var polygon: SVGPropsSVGPolygonElement = js.native
+      var polygon: SVGPropsSVGPolygonElement
       
-      var polyline: SVGPropsSVGPolylineElemen = js.native
+      var polyline: SVGPropsSVGPolylineElemen
       
-      var pre: DetailedHTMLPropsHTMLAttrAriaautocomplete = js.native
+      var pre: DetailedHTMLPropsHTMLAttrAriaautocomplete
       
-      var progress: DetailedHTMLPropsProgress = js.native
+      var progress: DetailedHTMLPropsProgress
       
-      var q: DetailedHTMLPropsQuoteHTM = js.native
+      var q: DetailedHTMLPropsQuoteHTM
       
-      var radialGradient: SVGPropsSVGRadialGradient = js.native
+      var radialGradient: SVGPropsSVGRadialGradient
       
-      var rect: SVGPropsSVGRectElementcss = js.native
+      var rect: SVGPropsSVGRectElementcss
       
-      var rp: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var rp: DetailedHTMLPropsHTMLAttrAbout
       
-      var rt: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var rt: DetailedHTMLPropsHTMLAttrAbout
       
-      var ruby: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var ruby: DetailedHTMLPropsHTMLAttrAbout
       
-      var s: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var s: DetailedHTMLPropsHTMLAttrAbout
       
-      var samp: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var samp: DetailedHTMLPropsHTMLAttrAbout
       
-      var script: DetailedHTMLPropsScriptHT = js.native
+      var script: DetailedHTMLPropsScriptHT
       
-      var section: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var section: DetailedHTMLPropsHTMLAttrAbout
       
-      var select: DetailedHTMLPropsSelectHT = js.native
+      var select: DetailedHTMLPropsSelectHT
       
-      var slot: DetailedHTMLPropsSlotHTML = js.native
+      var slot: DetailedHTMLPropsSlotHTML
       
-      var small: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var small: DetailedHTMLPropsHTMLAttrAbout
       
-      var source: DetailedHTMLPropsSourceHT = js.native
+      var source: DetailedHTMLPropsSourceHT
       
-      var span: DetailedHTMLPropsHTMLAttrAriacurrent = js.native
+      var span: DetailedHTMLPropsHTMLAttrAriacurrent
       
-      var stop: SVGPropsSVGStopElementcss = js.native
+      var stop: SVGPropsSVGStopElementcss
       
-      var strong: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var strong: DetailedHTMLPropsHTMLAttrAbout
       
-      var style: DetailedHTMLPropsStyleHTM = js.native
+      var style: DetailedHTMLPropsStyleHTM
       
-      var sub: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var sub: DetailedHTMLPropsHTMLAttrAbout
       
-      var summary: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var summary: DetailedHTMLPropsHTMLAttrAbout
       
-      var sup: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var sup: DetailedHTMLPropsHTMLAttrAbout
       
-      var svg: SVGPropsSVGSVGElementcssI = js.native
+      var svg: SVGPropsSVGSVGElementcssI
       
-      var switch: SVGPropsSVGSwitchElementc = js.native
+      var switch: SVGPropsSVGSwitchElementc
       
-      var symbol: SVGPropsSVGSymbolElementc = js.native
+      var symbol: SVGPropsSVGSymbolElementc
       
-      var table: DetailedHTMLPropsTableHTM = js.native
+      var table: DetailedHTMLPropsTableHTM
       
-      var tbody: DetailedHTMLPropsHTMLAttr = js.native
+      var tbody: DetailedHTMLPropsHTMLAttr
       
-      var td: DetailedHTMLPropsTdHTMLAt = js.native
+      var td: DetailedHTMLPropsTdHTMLAt
       
-      var template: DetailedHTMLPropsHTMLAttrAriacontrols = js.native
+      var template: DetailedHTMLPropsHTMLAttrAriacontrols
       
-      var text: SVGPropsSVGTextElementcss = js.native
+      var text: SVGPropsSVGTextElementcss
       
-      var textPath: SVGPropsSVGTextPathElemen = js.native
+      var textPath: SVGPropsSVGTextPathElemen
       
-      var textarea: DetailedHTMLPropsTextarea = js.native
+      var textarea: DetailedHTMLPropsTextarea
       
-      var tfoot: DetailedHTMLPropsHTMLAttr = js.native
+      var tfoot: DetailedHTMLPropsHTMLAttr
       
-      var th: DetailedHTMLPropsThHTMLAt = js.native
+      var th: DetailedHTMLPropsThHTMLAt
       
-      var thead: DetailedHTMLPropsHTMLAttr = js.native
+      var thead: DetailedHTMLPropsHTMLAttr
       
-      var time: DetailedHTMLPropsTimeHTML = js.native
+      var time: DetailedHTMLPropsTimeHTML
       
-      var title: DetailedHTMLPropsHTMLAttrAccessKey = js.native
+      var title: DetailedHTMLPropsHTMLAttrAccessKey
       
-      var tr: DetailedHTMLPropsHTMLAttrAriaactivedescendant = js.native
+      var tr: DetailedHTMLPropsHTMLAttrAriaactivedescendant
       
-      var track: DetailedHTMLPropsTrackHTM = js.native
+      var track: DetailedHTMLPropsTrackHTM
       
-      var tspan: SVGPropsSVGTSpanElementcs = js.native
+      var tspan: SVGPropsSVGTSpanElementcs
       
-      var u: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var u: DetailedHTMLPropsHTMLAttrAbout
       
-      var ul: DetailedHTMLPropsHTMLAttrAriadropeffect = js.native
+      var ul: DetailedHTMLPropsHTMLAttrAriadropeffect
       
-      var use: SVGPropsSVGUseElementcssI = js.native
+      var use: SVGPropsSVGUseElementcssI
       
-      var `var`: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var `var`: DetailedHTMLPropsHTMLAttrAbout
       
-      var video: DetailedHTMLPropsVideoHTM = js.native
+      var video: DetailedHTMLPropsVideoHTM
       
-      var view: SVGPropsSVGViewElementcss = js.native
+      var view: SVGPropsSVGViewElementcss
       
-      var wbr: DetailedHTMLPropsHTMLAttrAbout = js.native
+      var wbr: DetailedHTMLPropsHTMLAttrAbout
       
-      var webview: DetailedHTMLPropsWebViewH = js.native
+      var webview: DetailedHTMLPropsWebViewH
     }
     object IntrinsicElements {
       
@@ -1223,7 +1221,7 @@ object jsxNamespaceMod {
       }
     }
     
-    type LibraryManagedAttributes[C, P] = WithConditionalCSSProp[P] with (ReactJSXLibraryManagedAttributes[C, P])
+    type LibraryManagedAttributes[C, P] = WithConditionalCSSProp[P] & (ReactJSXLibraryManagedAttributes[C, P])
   }
   
   // unpack all here to avoid infinite self-referencing when defining our own JSX namespace
@@ -1243,5 +1241,5 @@ object jsxNamespaceMod {
   
   type ReactJSXLibraryManagedAttributes[C, P] = LibraryManagedAttributes[C, P]
   
-  type WithConditionalCSSProp[P] = P | (P with Css)
+  type WithConditionalCSSProp[P] = P | (P & Css)
 }

@@ -2,71 +2,69 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventsMessage extends StObject {
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to include only those associated with this application.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     *  If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur up to, but not including, the EndTime. 
     */
-  var EndTime: js.UndefOr[TimeFilterEnd] = js.native
+  var EndTime: js.UndefOr[TimeFilterEnd] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this environment.
     */
-  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.native
+  var EnvironmentId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentId] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this environment.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * Specifies the maximum number of events that can be returned, beginning with the most recent event.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.MaxRecords] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.MaxRecords] = js.undefined
   
   /**
     * Pagination token. If specified, the events return the next batch of results.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The ARN of a custom platform version. If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this custom platform version.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the described events to include only those associated with this request ID.
     */
-  var RequestId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RequestId] = js.native
+  var RequestId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RequestId] = js.undefined
   
   /**
     * If specified, limits the events returned from this call to include only those with the specified severity or higher.
     */
-  var Severity: js.UndefOr[EventSeverity] = js.native
+  var Severity: js.UndefOr[EventSeverity] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that occur on or after this time.
     */
-  var StartTime: js.UndefOr[TimeFilterStart] = js.native
+  var StartTime: js.UndefOr[TimeFilterStart] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those that are associated with this environment configuration.
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
   
   /**
     * If specified, AWS Elastic Beanstalk restricts the returned descriptions to those associated with this application version.
     */
-  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.native
+  var VersionLabel: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.VersionLabel] = js.undefined
 }
 object DescribeEventsMessage {
   

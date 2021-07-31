@@ -13,7 +13,6 @@ import typings.semanticUiReact.accordionContentMod.AccordionContentProps
 import typings.semanticUiReact.accordionTitleMod.AccordionTitleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionAccordionMod {
@@ -63,7 +62,9 @@ object accordionAccordionMod {
   }
   
   @js.native
-  trait AccordionComponent extends ComponentClass[AccordionProps, ComponentState] {
+  trait AccordionComponent
+    extends StObject
+       with ComponentClass[AccordionProps, ComponentState] {
     
     var Accordion: ComponentClass[AccordionAccordionProps, ComponentState] = js.native
     
@@ -74,9 +75,9 @@ object accordionAccordionMod {
     var Title: ComponentClass[AccordionTitleProps, ComponentState] = js.native
   }
   
-  @js.native
   trait AccordionProps
-    extends StrictAccordionProps
+    extends StObject
+       with StrictAccordionProps
        with /* key */ StringDictionary[js.Any]
   object AccordionProps {
     
@@ -87,17 +88,18 @@ object accordionAccordionMod {
     }
   }
   
-  @js.native
-  trait StrictAccordionProps extends StrictAccordionAccordionProps {
+  trait StrictAccordionProps
+    extends StObject
+       with StrictAccordionAccordionProps {
     
     /** Format to take up the width of its container. */
-    var fluid: js.UndefOr[Boolean] = js.native
+    var fluid: js.UndefOr[Boolean] = js.undefined
     
     /** Format for dark backgrounds. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Adds some basic styling to accordion panels. */
-    var styled: js.UndefOr[Boolean] = js.native
+    var styled: js.UndefOr[Boolean] = js.undefined
   }
   object StrictAccordionProps {
     

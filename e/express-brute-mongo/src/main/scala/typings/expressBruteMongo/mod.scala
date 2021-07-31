@@ -4,7 +4,6 @@ import typings.mongodb.mod.Collection
 import typings.mongodb.mod.DefaultSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
     */
   @JSImport("express-brute-mongo", JSImport.Namespace)
   @js.native
-  class ^ protected () extends MongoStore {
+  class ^ protected ()
+    extends StObject
+       with MongoStore {
     def this(getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[DefaultSchema], Unit], Unit]) = this()
     def this(
       getCollection: js.Function1[/* collection */ js.Function1[/* c */ Collection[DefaultSchema], Unit], Unit],
@@ -25,6 +26,5 @@ object mod {
   /**
     * @summary MongoDB store adapter.
     */
-  @js.native
   trait MongoStore extends StObject
 }

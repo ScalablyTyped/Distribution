@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IotSiteWiseAction extends StObject {
   
   /**
     * A list of asset property value entries.
     */
-  var putAssetPropertyValueEntries: PutAssetPropertyValueEntryList = js.native
+  var putAssetPropertyValueEntries: PutAssetPropertyValueEntryList
   
   /**
     * The ARN of the role that grants AWS IoT permission to send an asset property value to AWS IoTSiteWise. ("Action": "iotsitewise:BatchPutAssetPropertyValue"). The trust policy can restrict access to specific asset hierarchy paths.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
 }
 object IotSiteWiseAction {
   

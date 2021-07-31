@@ -5,32 +5,31 @@ import typings.pdfmake.pdfmakeStrings.round
 import typings.pdfmake.pdfmakeStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasLine
-  extends CanvasLineElement
+  extends StObject
+     with CanvasLineElement
      with CanvasElement {
   
-  var lineCap: js.UndefOr[round | square] = js.native
+  var lineCap: js.UndefOr[round | square] = js.undefined
   
-  var `type`: line = js.native
+  var `type`: line
   
-  var x1: Double = js.native
+  var x1: Double
   
-  var x2: Double = js.native
+  var x2: Double
   
-  var y1: Double = js.native
+  var y1: Double
   
-  var y2: Double = js.native
+  var y2: Double
 }
 object CanvasLine {
   
   @scala.inline
-  def apply(`type`: line, x1: Double, x2: Double, y1: Double, y2: Double): CanvasLine = {
+  def apply(x1: Double, x2: Double, y1: Double, y2: Double): CanvasLine = {
     val __obj = js.Dynamic.literal(x1 = x1.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y1 = y1.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("line")
     __obj.asInstanceOf[CanvasLine]
   }
   

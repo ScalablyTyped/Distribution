@@ -2,15 +2,13 @@ package typings.protobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnumOptions extends StObject {
   
-  var allowAlias: js.UndefOr[Boolean] = js.native
+  var allowAlias: js.UndefOr[Boolean] = js.undefined
   
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
 }
 object IEnumOptions {
   

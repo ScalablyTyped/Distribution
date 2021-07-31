@@ -2,11 +2,9 @@ package typings.ebml.mod
 
 import typings.ebml.ebmlStrings.f
 import typings.ebml.ebmlStrings.i
-import typings.ebml.ebmlStrings.s
 import typings.ebml.ebmlStrings.u
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -33,9 +31,9 @@ object EBMLTagSchema {
   }
   
   @scala.inline
-  def EBMLStringValueTagSchema(description: String, level: Double, name: String, `type`: s): typings.ebml.mod.EBMLStringValueTagSchema = {
+  def EBMLStringValueTagSchema(description: String, level: Double, name: String): typings.ebml.mod.EBMLStringValueTagSchema = {
     val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("s")
     __obj.asInstanceOf[typings.ebml.mod.EBMLStringValueTagSchema]
   }
   

@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.opsworks
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationSslConfiguration extends StObject {
   
   /**
     * The contents of the certificate's domain.crt file.
     */
-  var certificate: Input[String] = js.native
+  var certificate: Input[String]
   
   /**
     * Can be used to specify an intermediate certificate authority key or client authentication.
     */
-  var chain: js.UndefOr[Input[String]] = js.native
+  var chain: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The private key; the contents of the certificate's domain.key file.
     */
-  var privateKey: Input[String] = js.native
+  var privateKey: Input[String]
 }
 object ApplicationSslConfiguration {
   

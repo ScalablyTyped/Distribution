@@ -94,47 +94,47 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetScriptLexicalStructureWalker extends PositionTrackingWalker {
+trait GetScriptLexicalStructureWalker
+  extends StObject
+     with PositionTrackingWalker {
   
-  /* private */ def addAdditionalSpan(node: js.Any, key: js.Any): js.Any = js.native
+  /* private */ def addAdditionalSpan(node: js.Any, key: js.Any): js.Any
   
-  /* private */ def collectItems(items: js.Any, scope: js.Any): js.Any = js.native
+  /* private */ def collectItems(items: js.Any, scope: js.Any): js.Any
   
-  /* private */ def createItem(node: js.Any, modifiers: js.Any, kind: js.Any, name: js.Any): js.Any = js.native
+  /* private */ def createItem(node: js.Any, modifiers: js.Any, kind: js.Any, name: js.Any): js.Any
   
-  /* private */ def createScope(): js.Any = js.native
+  /* private */ def createScope(): js.Any
   
-  var currentInterfaceDeclaration: js.Any = js.native
+  var currentInterfaceDeclaration: js.Any
   
-  var currentMemberVariableDeclaration: js.Any = js.native
+  var currentMemberVariableDeclaration: js.Any
   
-  var currentScope: js.Any = js.native
+  var currentScope: js.Any
   
-  var currentVariableStatement: js.Any = js.native
+  var currentVariableStatement: js.Any
   
-  var fileName: js.Any = js.native
+  var fileName: js.Any
   
-  /* private */ def getKindModifiers(modifiers: js.Any): js.Any = js.native
+  /* private */ def getKindModifiers(modifiers: js.Any): js.Any
   
-  /* private */ def getModuleNames(node: js.Any): js.Any = js.native
+  /* private */ def getModuleNames(node: js.Any): js.Any
   
-  /* private */ def getModuleNamesHelper(name: js.Any, result: js.Any): js.Any = js.native
+  /* private */ def getModuleNamesHelper(name: js.Any, result: js.Any): js.Any
   
-  var kindStack: js.Any = js.native
+  var kindStack: js.Any
   
-  var nameStack: js.Any = js.native
+  var nameStack: js.Any
   
-  var parentScopes: js.Any = js.native
+  var parentScopes: js.Any
   
-  /* private */ def popScope(): js.Any = js.native
+  /* private */ def popScope(): js.Any
   
-  /* private */ def pushNewContainerScope(containerName: js.Any, kind: js.Any): js.Any = js.native
+  /* private */ def pushNewContainerScope(containerName: js.Any, kind: js.Any): js.Any
   
-  /* private */ def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any = js.native
+  /* private */ def visitModuleDeclarationWorker(node: js.Any, names: js.Any, nameIndex: js.Any): js.Any
 }
 object GetScriptLexicalStructureWalker {
   

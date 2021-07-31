@@ -3,27 +3,25 @@ package typings.fsExtraPromiseEs6
 import typings.fsExtraPromiseEs6.mod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoClose extends StObject {
     
-    var autoClose: js.UndefOr[Boolean] = js.native
+    var autoClose: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object AutoClose {
     
@@ -80,12 +78,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Curr extends StObject {
     
-    var curr: Stats = js.native
+    var curr: Stats
     
-    var prev: Stats = js.native
+    var prev: Stats
   }
   object Curr {
     
@@ -106,16 +103,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[String] = js.native
+    var flags: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object Encoding {
     
@@ -154,12 +150,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Interval extends StObject {
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object Interval {
     
@@ -186,10 +181,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Persistent extends StObject {
     
-    var persistent: js.UndefOr[Boolean] = js.native
+    var persistent: js.UndefOr[Boolean] = js.undefined
   }
   object Persistent {
     

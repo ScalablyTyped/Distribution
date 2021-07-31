@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameCaptureOutputSettings extends StObject {
   
   /**
     * Required if the output group contains more than one output. This modifier forms part of the output file name.
     */
-  var NameModifier: js.UndefOr[string] = js.native
+  var NameModifier: js.UndefOr[string] = js.undefined
 }
 object FrameCaptureOutputSettings {
   

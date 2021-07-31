@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZendeskSourceProperties extends StObject {
   
   /**
     *  The object specified in the Zendesk flow source. 
     */
-  var `object`: Object = js.native
+  var `object`: Object
 }
 object ZendeskSourceProperties {
   

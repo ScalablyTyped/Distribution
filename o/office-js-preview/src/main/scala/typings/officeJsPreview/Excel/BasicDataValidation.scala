@@ -10,7 +10,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.NotBetween
 import typings.officeJsPreview.officeJsPreviewStrings.NotEqualTo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait BasicDataValidation extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait BasicDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula1: String | Double | Range = js.native
+  var formula1: String | Double | Range
   
   /**
     *
@@ -41,7 +39,7 @@ trait BasicDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula2: js.UndefOr[String | Double | Range] = js.native
+  var formula2: js.UndefOr[String | Double | Range] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait BasicDataValidation extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var operator: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo = js.native
+  var operator: DataValidationOperator | Between | NotBetween | EqualTo | NotEqualTo | GreaterThan | LessThan | GreaterThanOrEqualTo | LessThanOrEqualTo
 }
 object BasicDataValidation {
   

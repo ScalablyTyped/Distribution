@@ -6,50 +6,45 @@ import typings.formSerialize.formSerializeBooleans.`true`
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply(form: HTMLFormElement): String = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply(form: HTMLFormElement, options: `false`): String = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply(form: HTMLFormElement, options: `true`): ResultHash = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply(form: HTMLFormElement, options: OptionsHash): ResultHash = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply(form: HTMLFormElement, options: OptionsString): String = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply[Result](form: HTMLFormElement, options: Boolean): Result = js.native
-  @JSImport("form-serialize", JSImport.Namespace)
-  @js.native
-  def apply[Result](form: HTMLFormElement, options: Options[Result]): Result = js.native
+  @scala.inline
+  def apply(form: HTMLFormElement): String = ^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(form: HTMLFormElement, options: `false`): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(form: HTMLFormElement, options: `true`): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
+  @scala.inline
+  def apply(form: HTMLFormElement, options: OptionsHash): ResultHash = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ResultHash]
+  @scala.inline
+  def apply(form: HTMLFormElement, options: OptionsString): String = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply[Result](form: HTMLFormElement, options: Boolean): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
+  @scala.inline
+  def apply[Result](form: HTMLFormElement, options: Options[Result]): Result = (^.asInstanceOf[js.Dynamic].apply(form.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
   
+  @JSImport("form-serialize", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options[Result] extends StObject {
     
     /** If true serialize disabled fields. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** If true serialize empty fields */
-    var empty: js.UndefOr[Boolean] = js.native
+    var empty: js.UndefOr[Boolean] = js.undefined
     
     /** Configure the output type. If true, the output will be a js object. */
-    var hash: js.UndefOr[Boolean] = js.native
+    var hash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional serializer function to override the default one. The function takes 3 arguments (result, key,
       * value) and should return new result hash and url encoded str serializers are provided with this module
       */
-    var serializer: js.UndefOr[js.Function3[/* result */ Result, /* key */ String, /* value */ String, Result]] = js.native
+    var serializer: js.UndefOr[js.Function3[/* result */ Result, /* key */ String, /* value */ String, Result]] = js.undefined
   }
   object Options {
     
@@ -60,7 +55,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], Result] (val x: Self with Options[Result]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], Result] (val x: Self & Options[Result]) extends AnyVal {
       
       @scala.inline
       def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
@@ -88,17 +83,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsHash extends Options[ResultHash] {
+  trait OptionsHash
+    extends StObject
+       with Options[ResultHash] {
     
     @JSName("hash")
-    var hash_OptionsHash: `true` = js.native
+    var hash_OptionsHash: `true`
   }
   object OptionsHash {
     
     @scala.inline
-    def apply(hash: `true`): OptionsHash = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
+    def apply(): OptionsHash = {
+      val __obj = js.Dynamic.literal(hash = true)
       __obj.asInstanceOf[OptionsHash]
     }
     
@@ -110,17 +106,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsString extends Options[String] {
+  trait OptionsString
+    extends StObject
+       with Options[String] {
     
     @JSName("hash")
-    var hash_OptionsString: `false` = js.native
+    var hash_OptionsString: `false`
   }
   object OptionsString {
     
     @scala.inline
-    def apply(hash: `false`): OptionsString = {
-      val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any])
+    def apply(): OptionsString = {
+      val __obj = js.Dynamic.literal(hash = false)
       __obj.asInstanceOf[OptionsString]
     }
     
@@ -132,9 +129,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultHash
-    extends /* key */ StringDictionary[String | js.Array[String] | ResultHash]
+    extends StObject
+       with /* key */ StringDictionary[String | js.Array[String] | ResultHash]
   object ResultHash {
     
     @scala.inline

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignupInfo extends StObject {
   
   /** An opaque token that will be required, along with the Enterprise Token, for obtaining the enterprise resource from CompleteSignup. */
-  var completionToken: js.UndefOr[String] = js.native
+  var completionToken: js.UndefOr[String] = js.undefined
   
   /** Deprecated. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** A URL under which the Admin can sign up for an enterprise. The page pointed to cannot be rendered in an iframe. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SignupInfo {
   

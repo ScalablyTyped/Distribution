@@ -2,22 +2,20 @@ package typings.firefoxWebextBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Contentscripts extends StObject {
   
   /** The Content Security Policy used for content scripts. */
-  var content_scripts: js.UndefOr[String] = js.native
+  var content_scripts: js.UndefOr[String] = js.undefined
   
   /** The Content Security Policy used for extension pages. */
-  var extension_pages: js.UndefOr[String] = js.native
+  var extension_pages: js.UndefOr[String] = js.undefined
   
   /**
     * An alias for content_scripts to support Chrome compatibility. Content Security Policy implementations may differ between Firefox and Chrome. If both isolated_world and content_scripts exist, the value from content_scripts will be used.
     */
-  var isolated_world: js.UndefOr[String] = js.native
+  var isolated_world: js.UndefOr[String] = js.undefined
 }
 object Contentscripts {
   

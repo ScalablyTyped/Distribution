@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GanttTogglePlannedTasks extends GanttEvent {
+trait GanttTogglePlannedTasks
+  extends StObject
+     with GanttEvent {
   
-  var showPlannedTasks: js.UndefOr[Boolean] = js.native
+  var showPlannedTasks: js.UndefOr[Boolean] = js.undefined
 }
 object GanttTogglePlannedTasks {
   

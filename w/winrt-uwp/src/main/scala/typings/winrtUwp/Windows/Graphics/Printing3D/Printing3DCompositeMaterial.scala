@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a composite material that's defined by a mixture of base materials. */
-@js.native
 trait Printing3DCompositeMaterial extends StObject {
   
   /** Gets the mixture of base materials used in the composite material. Each mixture is defined by listing the proportion of the overall mixture for each base material (values between 0 and 1). */
-  var values: IVector[Double] = js.native
+  var values: IVector[Double]
 }
 object Printing3DCompositeMaterial {
   

@@ -2,23 +2,21 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElevationResponse extends StObject {
   
   /**
     * When the status code is other than `OK`, there may be an additional `error_message` field within the Elevation response object.
     * This field contains more detailed information about the reasons behind the given status code.
     */
-  var error_message: String = js.native
+  var error_message: String
   
   /** An Elevation results array. */
-  var results: js.Array[ElevationResult] = js.native
+  var results: js.Array[ElevationResult]
   
   /** An Elevation status code. */
-  var status: ElevationResponseStatus = js.native
+  var status: ElevationResponseStatus
 }
 object ElevationResponse {
   

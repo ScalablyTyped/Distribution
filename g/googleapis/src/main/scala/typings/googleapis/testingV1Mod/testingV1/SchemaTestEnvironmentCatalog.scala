@@ -2,34 +2,32 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of a test environment.
   */
-@js.native
 trait SchemaTestEnvironmentCatalog extends StObject {
   
   /**
     * Supported Android devices.
     */
-  var androidDeviceCatalog: js.UndefOr[SchemaAndroidDeviceCatalog] = js.native
+  var androidDeviceCatalog: js.UndefOr[SchemaAndroidDeviceCatalog] = js.undefined
   
   /**
     * Supported iOS devices.
     */
-  var iosDeviceCatalog: js.UndefOr[SchemaIosDeviceCatalog] = js.native
+  var iosDeviceCatalog: js.UndefOr[SchemaIosDeviceCatalog] = js.undefined
   
   /**
     * Supported network configurations.
     */
-  var networkConfigurationCatalog: js.UndefOr[SchemaNetworkConfigurationCatalog] = js.native
+  var networkConfigurationCatalog: js.UndefOr[SchemaNetworkConfigurationCatalog] = js.undefined
   
   /**
     * The software test environment provided by TestExecutionService.
     */
-  var softwareCatalog: js.UndefOr[SchemaProvidedSoftwareCatalog] = js.native
+  var softwareCatalog: js.UndefOr[SchemaProvidedSoftwareCatalog] = js.undefined
 }
 object SchemaTestEnvironmentCatalog {
   

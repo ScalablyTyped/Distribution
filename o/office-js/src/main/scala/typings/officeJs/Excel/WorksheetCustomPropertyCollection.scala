@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.12]
   */
 @js.native
-trait WorksheetCustomPropertyCollection extends ClientObject {
+trait WorksheetCustomPropertyCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new custom property that maps to the provided key. This overwrites existing custom properties with that key.
@@ -68,7 +69,7 @@ trait WorksheetCustomPropertyCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): WorksheetCustomPropertyCollection = js.native
-  def load(options: WorksheetCustomPropertyCollectionLoadOptions with CollectionLoadOptions): WorksheetCustomPropertyCollection = js.native
+  def load(options: WorksheetCustomPropertyCollectionLoadOptions & CollectionLoadOptions): WorksheetCustomPropertyCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): WorksheetCustomPropertyCollection = js.native
   def load(propertyNames: String): WorksheetCustomPropertyCollection = js.native
   def load(propertyNames: js.Array[String]): WorksheetCustomPropertyCollection = js.native

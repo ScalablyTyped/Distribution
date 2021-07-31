@@ -3,32 +3,30 @@ package typings.actionsOnGoogle.v2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersLineItemUpdate extends StObject {
   
   /**
     * Update to the line item extension. Type must match the item's
     * existing extension type.
     */
-  var extension: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var `extension`: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
   /**
     * New line item-level state.
     */
-  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.native
+  var orderState: js.UndefOr[GoogleActionsV2OrdersOrderState] = js.undefined
   
   /**
     * New price for the line item.
     */
-  var price: js.UndefOr[GoogleActionsV2OrdersPrice] = js.native
+  var price: js.UndefOr[GoogleActionsV2OrdersPrice] = js.undefined
   
   /**
     * Reason for the change. Required for price changes.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2OrdersLineItemUpdate {
   
@@ -42,7 +40,7 @@ object GoogleActionsV2OrdersLineItemUpdate {
   implicit class GoogleActionsV2OrdersLineItemUpdateMutableBuilder[Self <: GoogleActionsV2OrdersLineItemUpdate] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtension(value: ApiClientObjectMap[_]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
+    def setExtension(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionUndefined: Self = StObject.set(x, "extension", js.undefined)

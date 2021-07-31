@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoMatchConstraint extends StObject {
   
   /**
     * The type of geographical area you want AWS WAF to search for. Currently Country is the only valid value.
     */
-  var Type: GeoMatchConstraintType = js.native
+  var Type: GeoMatchConstraintType
   
   /**
     * The country that you want AWS WAF to search for.
     */
-  var Value: GeoMatchConstraintValue = js.native
+  var Value: GeoMatchConstraintValue
 }
 object GeoMatchConstraint {
   

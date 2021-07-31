@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposSetAdminBranchProtectionResponseDa
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposSetAdminBranchProtectionEndpoint extends StObject {
   
-  var parameters: ReposSetAdminBranchProtectionEndpoint = js.native
+  var parameters: ReposSetAdminBranchProtectionEndpoint
   
-  var request: ReposSetAdminBranchProtectionRequestOptions = js.native
+  var request: ReposSetAdminBranchProtectionRequestOptions
   
-  var response: OctokitResponse[ReposSetAdminBranchProtectionResponseData] = js.native
+  var response: OctokitResponse[ReposSetAdminBranchProtectionResponseData]
 }
 object ParametersReposSetAdminBranchProtectionEndpoint {
   

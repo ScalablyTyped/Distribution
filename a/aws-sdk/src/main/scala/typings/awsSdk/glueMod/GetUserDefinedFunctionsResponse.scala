@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserDefinedFunctionsResponse extends StObject {
   
   /**
     * A continuation token, if the list of functions returned does not include the last requested function.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of requested function definitions.
     */
-  var UserDefinedFunctions: js.UndefOr[UserDefinedFunctionList] = js.native
+  var UserDefinedFunctions: js.UndefOr[UserDefinedFunctionList] = js.undefined
 }
 object GetUserDefinedFunctionsResponse {
   

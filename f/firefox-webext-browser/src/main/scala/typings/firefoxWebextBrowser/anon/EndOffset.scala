@@ -2,21 +2,19 @@ package typings.firefoxWebextBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndOffset extends StObject {
   
-  var endOffset: Double = js.native
+  var endOffset: Double
   
-  var endTextNodePos: Double = js.native
+  var endTextNodePos: Double
   
-  var framePos: Double = js.native
+  var framePos: Double
   
-  var startOffset: Double = js.native
+  var startOffset: Double
   
-  var startTextNodePos: Double = js.native
+  var startTextNodePos: Double
 }
 object EndOffset {
   

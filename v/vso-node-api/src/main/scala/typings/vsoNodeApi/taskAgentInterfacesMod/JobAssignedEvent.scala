@@ -2,13 +2,13 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JobAssignedEvent extends JobEvent {
+trait JobAssignedEvent
+  extends StObject
+     with JobEvent {
   
-  var request: TaskAgentJobRequest = js.native
+  var request: TaskAgentJobRequest
 }
 object JobAssignedEvent {
   

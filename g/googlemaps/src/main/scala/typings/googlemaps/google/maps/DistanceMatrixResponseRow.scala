@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link DistanceMatrixResponseElement}s, one for each corresponding destination address.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseRow Maps JavaScript API}
   */
-@js.native
 trait DistanceMatrixResponseRow extends StObject {
   
   /**
     * The row's elements, corresponding to the destination addresses.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseRow.elements Maps JavaScript API}
     */
-  var elements: js.Array[DistanceMatrixResponseElement] = js.native
+  var elements: js.Array[DistanceMatrixResponseElement]
 }
 object DistanceMatrixResponseRow {
   

@@ -2,85 +2,83 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Requirements for the password used to unlock a device.
   */
-@js.native
 trait SchemaPasswordRequirements extends StObject {
   
   /**
     * Number of incorrect device-unlock passwords that can be entered before a
     * device is wiped. A value of 0 means there is no restriction.
     */
-  var maximumFailedPasswordsForWipe: js.UndefOr[Double] = js.native
+  var maximumFailedPasswordsForWipe: js.UndefOr[Double] = js.undefined
   
   /**
     * Password expiration timeout.
     */
-  var passwordExpirationTimeout: js.UndefOr[String] = js.native
+  var passwordExpirationTimeout: js.UndefOr[String] = js.undefined
   
   /**
     * The length of the password history. After setting this field, the user
     * won&#39;t be able to enter a new password that is the same as any
     * password in the history. A value of 0 means there is no restriction.
     */
-  var passwordHistoryLength: js.UndefOr[Double] = js.native
+  var passwordHistoryLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum allowed password length. A value of 0 means there is no
     * restriction. Only enforced when password_quality is NUMERIC,
     * NUMERIC_COMPLEX, ALPHABETIC, ALPHANUMERIC, or COMPLEX.
     */
-  var passwordMinimumLength: js.UndefOr[Double] = js.native
+  var passwordMinimumLength: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of letters required in the password. Only enforced when
     * password_quality is COMPLEX.
     */
-  var passwordMinimumLetters: js.UndefOr[Double] = js.native
+  var passwordMinimumLetters: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of lower case letters required in the password. Only
     * enforced when password_quality is COMPLEX.
     */
-  var passwordMinimumLowerCase: js.UndefOr[Double] = js.native
+  var passwordMinimumLowerCase: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of non-letter characters (numerical digits or symbols)
     * required in the password. Only enforced when password_quality is COMPLEX.
     */
-  var passwordMinimumNonLetter: js.UndefOr[Double] = js.native
+  var passwordMinimumNonLetter: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of numerical digits required in the password. Only
     * enforced when password_quality is COMPLEX.
     */
-  var passwordMinimumNumeric: js.UndefOr[Double] = js.native
+  var passwordMinimumNumeric: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of symbols required in the password. Only enforced when
     * password_quality is COMPLEX.
     */
-  var passwordMinimumSymbols: js.UndefOr[Double] = js.native
+  var passwordMinimumSymbols: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of upper case letters required in the password. Only
     * enforced when password_quality is COMPLEX.
     */
-  var passwordMinimumUpperCase: js.UndefOr[Double] = js.native
+  var passwordMinimumUpperCase: js.UndefOr[Double] = js.undefined
   
   /**
     * The required password quality.
     */
-  var passwordQuality: js.UndefOr[String] = js.native
+  var passwordQuality: js.UndefOr[String] = js.undefined
   
   /**
     * The scope that the password requirement applies to.
     */
-  var passwordScope: js.UndefOr[String] = js.native
+  var passwordScope: js.UndefOr[String] = js.undefined
 }
 object SchemaPasswordRequirements {
   

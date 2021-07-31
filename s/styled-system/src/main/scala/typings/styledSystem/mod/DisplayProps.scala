@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait DisplayProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObje
     */
   var display: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object DisplayProps {
   
@@ -31,12 +29,12 @@ object DisplayProps {
   }
   
   @scala.inline
-  implicit class DisplayPropsMutableBuilder[Self <: DisplayProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with DisplayProps[ThemeType]) extends AnyVal {
+  implicit class DisplayPropsMutableBuilder[Self <: DisplayProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & DisplayProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setDisplay(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
@@ -48,6 +46,8 @@ object DisplayProps {
     def setDisplayUndefined: Self = StObject.set(x, "display", js.undefined)
     
     @scala.inline
-    def setDisplayVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "display", js.Array(value :_*))
+    def setDisplayVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Display */ js.Any) | Null)*
+    ): Self = StObject.set(x, "display", js.Array(value :_*))
   }
 }

@@ -4,15 +4,16 @@ import typings.domAccessibilityApi.accessibleNameAndDescriptionMod.ComputeTextAl
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accessibleDescriptionMod {
   
-  @JSImport("dom-accessibility-api/dist/accessible-description", "computeAccessibleDescription")
+  @JSImport("dom-accessibility-api/dist/accessible-description", JSImport.Namespace)
   @js.native
-  def computeAccessibleDescription(root: Element): String = js.native
-  @JSImport("dom-accessibility-api/dist/accessible-description", "computeAccessibleDescription")
-  @js.native
-  def computeAccessibleDescription(root: Element, options: ComputeTextAlternativeOptions): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def computeAccessibleDescription(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleDescription")(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeAccessibleDescription(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeAccessibleDescription")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
 }

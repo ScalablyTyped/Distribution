@@ -8,35 +8,33 @@ import typings.baseui.baseuiStrings.full
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined baseui.baseui/modal.SharedStylePropsArg & {  children :react.react.ReactNode} */
-@js.native
 trait SharedStylePropsArgchildrAnimate extends StObject {
   
   @JSName("$animate")
-  var $animate: js.UndefOr[Boolean] = js.native
+  var $animate: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$closeable")
-  var $closeable: js.UndefOr[Boolean] = js.native
+  var $closeable: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isOpen")
-  var $isOpen: js.UndefOr[Boolean] = js.native
+  var $isOpen: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$isVisible")
-  var $isVisible: js.UndefOr[Boolean] = js.native
+  var $isVisible: js.UndefOr[Boolean] = js.undefined
   
   @JSName("$role")
-  var $role: js.UndefOr[dialog | alertdialog] = js.native
+  var $role: js.UndefOr[dialog | alertdialog] = js.undefined
   
   @JSName("$size")
-  var $size: js.UndefOr[default_ | full | auto] = js.native
+  var $size: js.UndefOr[default_ | full | auto] = js.undefined
   
   @JSName("$unstable_ModalBackdropScroll")
-  var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.native
+  var $unstable_ModalBackdropScroll: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] with ReactNode = js.native
+  var children: js.UndefOr[ReactNode] & ReactNode
 }
 object SharedStylePropsArgchildrAnimate {
   
@@ -92,7 +90,7 @@ object SharedStylePropsArgchildrAnimate {
     def set$unstable_ModalBackdropScrollUndefined: Self = StObject.set(x, "$unstable_ModalBackdropScroll", js.undefined)
     
     @scala.inline
-    def setChildren(value: js.UndefOr[ReactNode] with ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+    def setChildren(value: js.UndefOr[ReactNode] & ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)

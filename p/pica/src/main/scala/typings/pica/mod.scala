@@ -9,7 +9,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,12 +16,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pica", JSImport.Namespace)
   @js.native
-  class ^ () extends Pica {
+  class ^ ()
+    extends StObject
+       with Pica {
     def this(config: PicaOptions) = this()
   }
   @JSImport("pica", JSImport.Namespace)
   @js.native
-  val ^ : PicaStatic = js.native
+  val ^ : js.Object & PicaStatic = js.native
   
   @js.native
   trait Pica extends StObject {
@@ -57,24 +58,23 @@ object mod extends Shortcut {
     def toBlob(canvas: HTMLCanvasElement, mimeType: String, quality: Double): js.Promise[Blob] = js.native
   }
   
-  @js.native
   trait PicaOptions extends StObject {
     
     // max webworkers pool size. Default is autodetected CPU count, but not more than 4.
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
     // list of features to use.
     // Default is [ 'js', 'wasm', 'ww' ]. Can be [ 'js', 'wasm', 'cib', 'ww' ] or [ 'all' ].
     // Note, resize via createImageBitmap() ('cib') disabled by default due problems with quality.
-    var features: js.UndefOr[js.Array[String]] = js.native
+    var features: js.UndefOr[js.Array[String]] = js.undefined
     
     // cache timeout, ms. Webworkers create is not fast.
     // This option allow reuse webworkers effectively. Default 2000.
-    var idle: js.UndefOr[Double] = js.native
+    var idle: js.UndefOr[Double] = js.undefined
     
     // tile width/height.
     // Images are processed by regions, to restrict peak memory use. Default 1024.
-    var tile: js.UndefOr[Double] = js.native
+    var tile: js.UndefOr[Double] = js.undefined
   }
   object PicaOptions {
     
@@ -116,42 +116,41 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PicaResizeBufferOptions extends StObject {
     
     // use alpha channel. Default = false.
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
     // Optional. Output buffer to write data, if you don't wish pica to create new one.
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     // src image height.
-    var height: Double = js.native
+    var height: Double
     
     // 0..3. Default = 3 (lanczos, win=3).
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     // Uint8Array with source data.
-    var src: js.Array[Double] = js.native
+    var src: js.Array[Double]
     
     // output height, >=0, in pixels.
-    var toHeigh: Double = js.native
+    var toHeigh: Double
     
     // output width, >=0, in pixels.
-    var toWidth: Double = js.native
+    var toWidth: Double
     
     // >=0, in percents. Default = 0 (off). Usually between 50 to 100 is good.
-    var unsharpAmount: js.UndefOr[Double] = js.native
+    var unsharpAmount: js.UndefOr[Double] = js.undefined
     
     // 0.5..2.0. Radius of Gaussian blur.
     // If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
-    var unsharpRadius: js.UndefOr[Double] = js.native
+    var unsharpRadius: js.UndefOr[Double] = js.undefined
     
     // 0..255. Default = 0. Threshold for applying unsharp mask.
-    var unsharpThreshold: js.UndefOr[Double] = js.native
+    var unsharpThreshold: js.UndefOr[Double] = js.undefined
     
     // src image width.
-    var width: Double = js.native
+    var width: Double
   }
   object PicaResizeBufferOptions {
     
@@ -220,27 +219,26 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PicaResizeOptions extends StObject {
     
     // use alpha channel. Default = false.
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
     // Promise instance. If defined, current operation will be terminated on rejection.
-    var cancelToken: js.UndefOr[js.Promise[_]] = js.native
+    var cancelToken: js.UndefOr[js.Promise[js.Any]] = js.undefined
     
     // 0..3. Default = 3 (lanczos, win=3).
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     // >=0, in percents. Default = 0 (off). Usually between 50 to 100 is good.
-    var unsharpAmount: js.UndefOr[Double] = js.native
+    var unsharpAmount: js.UndefOr[Double] = js.undefined
     
     //  0.5..2.0. By default it's not set. Radius of Gaussian blur.
     // If it is less than 0.5, Unsharp Mask is off. Big values are clamped to 2.0.
-    var unsharpRadius: js.UndefOr[Double] = js.native
+    var unsharpRadius: js.UndefOr[Double] = js.undefined
     
     // 0..255. Default = 0. Threshold for applying unsharp mask.
-    var unsharpThreshold: js.UndefOr[Double] = js.native
+    var unsharpThreshold: js.UndefOr[Double] = js.undefined
   }
   object PicaResizeOptions {
     
@@ -260,7 +258,7 @@ object mod extends Shortcut {
       def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
       
       @scala.inline
-      def setCancelToken(value: js.Promise[_]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
+      def setCancelToken(value: js.Promise[js.Any]): Self = StObject.set(x, "cancelToken", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCancelTokenUndefined: Self = StObject.set(x, "cancelToken", js.undefined)
@@ -293,15 +291,16 @@ object mod extends Shortcut {
   
   @js.native
   trait PicaStatic
-    extends Instantiable0[Pica]
+    extends StObject
+       with Instantiable0[Pica]
        with Instantiable1[/* config */ PicaOptions, Pica] {
     
     def apply(): Pica = js.native
     def apply(config: PicaOptions): Pica = js.native
   }
   
-  type _To = PicaStatic
+  type _To = js.Object & PicaStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: PicaStatic = ^
+  override def _to: js.Object & PicaStatic = ^
 }

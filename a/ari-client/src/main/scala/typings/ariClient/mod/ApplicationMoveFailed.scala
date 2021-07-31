@@ -3,26 +3,26 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplicationMoveFailed extends Event {
+trait ApplicationMoveFailed
+  extends StObject
+     with Event {
   
   /**
     * Arguments to the application.
     */
-  var args: String | js.Array[String] = js.native
+  var args: String | js.Array[String]
   
   /**
     * Channel.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * Destination.
     */
-  var destination: String = js.native
+  var destination: String
 }
 object ApplicationMoveFailed {
   

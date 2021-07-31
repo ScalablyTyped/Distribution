@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * used to look up AttestationAuthorities in security sensitive contexts, such
   * as when looking up Attestations to verify.
   */
-@js.native
 trait SchemaAttestationAuthorityHint extends StObject {
   
   /**
     * The human readable name of this Attestation Authority, for example
     * &quot;qa&quot;.
     */
-  var humanReadableName: js.UndefOr[String] = js.native
+  var humanReadableName: js.UndefOr[String] = js.undefined
 }
 object SchemaAttestationAuthorityHint {
   

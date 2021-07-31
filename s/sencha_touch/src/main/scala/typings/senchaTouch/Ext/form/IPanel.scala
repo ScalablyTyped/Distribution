@@ -5,95 +5,94 @@ import typings.senchaTouch.Ext.data.IModel
 import typings.senchaTouch.Ext.dom.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanel
-  extends typings.senchaTouch.Ext.IPanel {
+  extends StObject
+     with typings.senchaTouch.Ext.IPanel {
   
   /** [Config Option] (Object) */
-  var api: js.UndefOr[js.Any] = js.native
+  var api: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.native
+  var baseParams: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] A convenient method to disable all fields in this form
     * @param newDisabled Object
     * @returns Ext.form.Panel This form.
     */
-  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.native
+  var doSetDisabled: js.UndefOr[js.Function1[/* newDisabled */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var enableSubmissionForm: js.UndefOr[Boolean] = js.native
+  var enableSubmissionForm: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var enctype: js.UndefOr[js.Any] = js.native
+  var enctype: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of api
     * @returns Object
     */
-  var getApi: js.UndefOr[js.Function0[_]] = js.native
+  var getApi: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of baseParams
     * @returns Object
     */
-  var getBaseParams: js.UndefOr[js.Function0[_]] = js.native
+  var getBaseParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of enableSubmissionForm
     * @returns Boolean
     */
-  var getEnableSubmissionForm: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getEnableSubmissionForm: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of enctype
     * @returns Object
     */
-  var getEnctype: js.UndefOr[js.Function0[_]] = js.native
+  var getEnctype: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of method
     * @returns String
     */
-  var getMethod: js.UndefOr[js.Function0[String]] = js.native
+  var getMethod: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of multipartDetection
     * @returns Boolean
     */
-  var getMultipartDetection: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getMultipartDetection: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of paramOrder
     * @returns String/String[]
     */
-  var getParamOrder: js.UndefOr[js.Function0[_]] = js.native
+  var getParamOrder: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of paramsAsHash
     * @returns Boolean
     */
-  var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getParamsAsHash: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of standardSubmit
     * @returns Boolean
     */
-  var getStandardSubmit: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getStandardSubmit: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of submitOnAction
     * @returns Object
     */
-  var getSubmitOnAction: js.UndefOr[js.Function0[_]] = js.native
+  var getSubmitOnAction: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of timeout
     * @returns Number
     */
-  var getTimeout: js.UndefOr[js.Function0[Double]] = js.native
+  var getTimeout: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of trackResetOnLoad
     * @returns Boolean
     */
-  var getTrackResetOnLoad: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getTrackResetOnLoad: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of url
     * @returns String
     */
-  var getUrl: js.UndefOr[js.Function0[String]] = js.native
+  var getUrl: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns an object containing the value of each field in the form keyed to the field s name
     * @param enabled Boolean true to return only enabled fields.
@@ -101,119 +100,119 @@ trait IPanel
     * @returns Object Object mapping field name to its value.
     */
   var getValues: js.UndefOr[
-    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], _]
-  ] = js.native
+    js.Function2[/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean], js.Any]
+  ] = js.undefined
   
   /** [Method] Hides a previously shown wait mask See showMask
     * @returns Ext.form.Panel this
     */
-  var hideMask: js.UndefOr[js.Function0[this.type]] = js.native
+  var hideMask: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Performs an Ajax or Ext Direct call to load values for this form
     * @param options Object The configuration when loading this form. The following are the configurations when loading via Ajax only:
     * @returns Ext.data.Connection The request object.
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.native
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
   
   /** [Method] Loads matching fields from a model instance into this form
     * @param record Ext.data.Model The model instance.
     * @returns Ext.form.Panel This form.
     */
-  var loadModel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.native
+  var loadModel: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
   
   /** [Method] Loads matching fields from a model instance into this form
     * @param record Ext.data.Model The model instance.
     * @returns Ext.form.Panel This form.
     */
-  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.native
+  var loadRecord: js.UndefOr[js.Function1[/* record */ js.UndefOr[IModel], this.type]] = js.undefined
   
   /** [Config Option] (String) */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var multipartDetection: js.UndefOr[Boolean] = js.native
+  var multipartDetection: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var paramOrder: js.UndefOr[js.Any] = js.native
+  var paramOrder: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var paramsAsHash: js.UndefOr[Boolean] = js.native
+  var paramsAsHash: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Resets all fields in the form back to their original values
     * @returns Ext.form.Panel This form.
     */
-  var reset: js.UndefOr[js.Function0[this.type]] = js.native
+  var reset: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Sets the value of api
     * @param api Object The new value.
     */
-  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.native
+  var setApi: js.UndefOr[js.Function1[/* api */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of baseParams
     * @param baseParams Object The new value.
     */
-  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.native
+  var setBaseParams: js.UndefOr[js.Function1[/* baseParams */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of enableSubmissionForm
     * @param enableSubmissionForm Boolean The new value.
     */
-  var setEnableSubmissionForm: js.UndefOr[js.Function1[/* enableSubmissionForm */ js.UndefOr[Boolean], Unit]] = js.native
+  var setEnableSubmissionForm: js.UndefOr[js.Function1[/* enableSubmissionForm */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of enctype
     * @param enctype Object The new value.
     */
-  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[js.Any], Unit]] = js.native
+  var setEnctype: js.UndefOr[js.Function1[/* enctype */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of method
     * @param method String The new value.
     */
-  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.native
+  var setMethod: js.UndefOr[js.Function1[/* method */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of multipartDetection
     * @param multipartDetection Boolean The new value.
     */
-  var setMultipartDetection: js.UndefOr[js.Function1[/* multipartDetection */ js.UndefOr[Boolean], Unit]] = js.native
+  var setMultipartDetection: js.UndefOr[js.Function1[/* multipartDetection */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of paramOrder
     * @param paramOrder String/String[] The new value.
     */
-  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.native
+  var setParamOrder: js.UndefOr[js.Function1[/* paramOrder */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of paramsAsHash
     * @param paramsAsHash Boolean The new value.
     */
-  var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.native
+  var setParamsAsHash: js.UndefOr[js.Function1[/* paramsAsHash */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of standardSubmit
     * @param standardSubmit Boolean The new value.
     */
-  var setStandardSubmit: js.UndefOr[js.Function1[/* standardSubmit */ js.UndefOr[Boolean], Unit]] = js.native
+  var setStandardSubmit: js.UndefOr[js.Function1[/* standardSubmit */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of submitOnAction
     * @param submitOnAction Object The new value.
     */
-  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSubmitOnAction: js.UndefOr[js.Function1[/* submitOnAction */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of timeout
     * @param timeout Number The new value.
     */
-  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.native
+  var setTimeout: js.UndefOr[js.Function1[/* timeout */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of trackResetOnLoad
     * @param trackResetOnLoad Boolean The new value.
     */
-  var setTrackResetOnLoad: js.UndefOr[js.Function1[/* trackResetOnLoad */ js.UndefOr[Boolean], Unit]] = js.native
+  var setTrackResetOnLoad: js.UndefOr[js.Function1[/* trackResetOnLoad */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of url
     * @param url String The new value.
     */
-  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.native
+  var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the values of form fields in bulk
     * @param values Object field name => value mapping object.
     * @returns Ext.form.Panel This form.
     */
-  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], this.type]] = js.native
+  var setValues: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] Shows a generic custom mask over a designated Element
     * @param cfg String/Object Either a string message or a configuration object supporting the following options: {  message : 'Please Wait',  cls : 'form-mask' }
@@ -222,34 +221,34 @@ trait IPanel
     */
   var showMask: js.UndefOr[
     js.Function2[/* cfg */ js.UndefOr[js.Any], /* target */ js.UndefOr[js.Any], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var standardSubmit: js.UndefOr[Boolean] = js.native
+  var standardSubmit: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Performs a Ajax based submission of form values if standardSubmit is false or otherwise executes a standard HTML Fo
     * @param options Object The configuration when submitting this form. The following are the configurations when submitting via Ajax only:
     * @returns Ext.data.Connection The request object if the standardSubmit config is false. If the standardSubmit config is true, then the return value is undefined.
     */
-  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.native
+  var submit: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], IConnection]] = js.undefined
   
   /** [Config Option] (Object) */
-  var submitOnAction: js.UndefOr[js.Any] = js.native
+  var submitOnAction: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var trackResetOnLoad: js.UndefOr[Boolean] = js.native
+  var trackResetOnLoad: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.dom.Element) */
-  var waitMsgTarget: js.UndefOr[IElement] = js.native
+  var waitMsgTarget: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Ext.XTemplate/String/String[]) */
-  var waitTpl: js.UndefOr[js.Any] = js.native
+  var waitTpl: js.UndefOr[js.Any] = js.undefined
 }
 object IPanel {
   
@@ -293,13 +292,13 @@ object IPanel {
     def setEnctypeUndefined: Self = StObject.set(x, "enctype", js.undefined)
     
     @scala.inline
-    def setGetApi(value: () => _): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
+    def setGetApi(value: () => js.Any): Self = StObject.set(x, "getApi", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetApiUndefined: Self = StObject.set(x, "getApi", js.undefined)
     
     @scala.inline
-    def setGetBaseParams(value: () => _): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
+    def setGetBaseParams(value: () => js.Any): Self = StObject.set(x, "getBaseParams", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBaseParamsUndefined: Self = StObject.set(x, "getBaseParams", js.undefined)
@@ -311,7 +310,7 @@ object IPanel {
     def setGetEnableSubmissionFormUndefined: Self = StObject.set(x, "getEnableSubmissionForm", js.undefined)
     
     @scala.inline
-    def setGetEnctype(value: () => _): Self = StObject.set(x, "getEnctype", js.Any.fromFunction0(value))
+    def setGetEnctype(value: () => js.Any): Self = StObject.set(x, "getEnctype", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetEnctypeUndefined: Self = StObject.set(x, "getEnctype", js.undefined)
@@ -329,7 +328,7 @@ object IPanel {
     def setGetMultipartDetectionUndefined: Self = StObject.set(x, "getMultipartDetection", js.undefined)
     
     @scala.inline
-    def setGetParamOrder(value: () => _): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
+    def setGetParamOrder(value: () => js.Any): Self = StObject.set(x, "getParamOrder", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetParamOrderUndefined: Self = StObject.set(x, "getParamOrder", js.undefined)
@@ -347,7 +346,7 @@ object IPanel {
     def setGetStandardSubmitUndefined: Self = StObject.set(x, "getStandardSubmit", js.undefined)
     
     @scala.inline
-    def setGetSubmitOnAction(value: () => _): Self = StObject.set(x, "getSubmitOnAction", js.Any.fromFunction0(value))
+    def setGetSubmitOnAction(value: () => js.Any): Self = StObject.set(x, "getSubmitOnAction", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSubmitOnActionUndefined: Self = StObject.set(x, "getSubmitOnAction", js.undefined)
@@ -371,7 +370,7 @@ object IPanel {
     def setGetUrlUndefined: Self = StObject.set(x, "getUrl", js.undefined)
     
     @scala.inline
-    def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => _): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
+    def setGetValues(value: (/* enabled */ js.UndefOr[Boolean], /* all */ js.UndefOr[Boolean]) => js.Any): Self = StObject.set(x, "getValues", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetValuesUndefined: Self = StObject.set(x, "getValues", js.undefined)

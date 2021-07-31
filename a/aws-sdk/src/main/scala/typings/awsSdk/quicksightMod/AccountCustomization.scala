@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountCustomization extends StObject {
   
   /**
     * The default theme for this QuickSight subscription.
     */
-  var DefaultTheme: js.UndefOr[Arn] = js.native
+  var DefaultTheme: js.UndefOr[Arn] = js.undefined
 }
 object AccountCustomization {
   

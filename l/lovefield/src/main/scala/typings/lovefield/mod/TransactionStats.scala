@@ -2,21 +2,19 @@ package typings.lovefield.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionStats extends StObject {
   
-  def changedTableCount(): Double = js.native
+  def changedTableCount(): Double
   
-  def deletedRowCount(): Double = js.native
+  def deletedRowCount(): Double
   
-  def insertedRowCount(): Double = js.native
+  def insertedRowCount(): Double
   
-  def success(): Boolean = js.native
+  def success(): Boolean
   
-  def updatedRowCount(): Double = js.native
+  def updatedRowCount(): Double
 }
 object TransactionStats {
   

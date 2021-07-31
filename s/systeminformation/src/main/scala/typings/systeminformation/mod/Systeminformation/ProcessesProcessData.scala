@@ -2,47 +2,45 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessesProcessData extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var mem_rss: Double = js.native
+  var mem_rss: Double
   
-  var mem_vsz: Double = js.native
+  var mem_vsz: Double
   
-  var name: String = js.native
+  var name: String
   
-  var nice: Double = js.native
+  var nice: Double
   
-  var params: String = js.native
+  var params: String
   
-  var parentPid: Double = js.native
+  var parentPid: Double
   
-  var path: String = js.native
+  var path: String
   
-  var pcpu: Double = js.native
+  var pcpu: Double
   
-  var pcpus: Double = js.native
+  var pcpus: Double
   
-  var pcpuu: Double = js.native
+  var pcpuu: Double
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var pmem: Double = js.native
+  var pmem: Double
   
-  var priority: Double = js.native
+  var priority: Double
   
-  var started: String = js.native
+  var started: String
   
-  var state: String = js.native
+  var state: String
   
-  var tty: String = js.native
+  var tty: String
   
-  var user: String = js.native
+  var user: String
 }
 object ProcessesProcessData {
   

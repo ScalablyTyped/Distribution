@@ -4,16 +4,16 @@
 Typings are for version v3.10.x
 
 ## Library description:
-Fast & forgiving HTML/XML/RSS parser
+Fast & forgiving HTML/XML parser
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | htmlparser2 |
 | Keywords           | html, parser, streams, xml, dom, rss, feed, atom |
-| # releases         | 5 |
-| # dependents       | 1127 |
-| # downloads        | 473290164 |
-| # stars            | 91 |
+| # releases         | 7 |
+| # dependents       | 1175 |
+| # downloads        | 550251689 |
+| # stars            | 92 |
 
 ## Links
 - [Homepage](https://github.com/fb55/htmlparser2#readme)

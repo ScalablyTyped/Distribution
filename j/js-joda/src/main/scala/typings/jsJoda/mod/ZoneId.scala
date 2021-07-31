@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "ZoneId")
@@ -38,27 +37,22 @@ object ZoneId {
   def UTC_=(x: ZoneId): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("UTC")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "ZoneId.from")
-  @js.native
-  def from(temporal: TemporalAccessor): ZoneId = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
   
   /* static member */
-  @JSImport("js-joda", "ZoneId.getAvailableZoneIds")
-  @js.native
-  def getAvailableZoneIds(): js.Array[String] = js.native
+  @scala.inline
+  def getAvailableZoneIds(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAvailableZoneIds")().asInstanceOf[js.Array[String]]
   
   /* static member */
-  @JSImport("js-joda", "ZoneId.of")
-  @js.native
-  def of(zoneId: String): ZoneId = js.native
+  @scala.inline
+  def of(zoneId: String): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(zoneId.asInstanceOf[js.Any]).asInstanceOf[ZoneId]
   
   /* static member */
-  @JSImport("js-joda", "ZoneId.ofOffset")
-  @js.native
-  def ofOffset(prefix: String, offset: ZoneOffset): ZoneId = js.native
+  @scala.inline
+  def ofOffset(prefix: String, offset: ZoneOffset): ZoneId = (^.asInstanceOf[js.Dynamic].applyDynamic("ofOffset")(prefix.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[ZoneId]
   
   /* static member */
-  @JSImport("js-joda", "ZoneId.systemDefault")
-  @js.native
-  def systemDefault(): ZoneId = js.native
+  @scala.inline
+  def systemDefault(): ZoneId = ^.asInstanceOf[js.Dynamic].applyDynamic("systemDefault")().asInstanceOf[ZoneId]
 }

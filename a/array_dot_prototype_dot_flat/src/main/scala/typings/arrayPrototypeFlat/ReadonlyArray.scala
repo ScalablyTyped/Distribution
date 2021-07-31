@@ -7,7 +7,6 @@ import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`3`
 import typings.arrayPrototypeFlat.arrayPrototypeFlatNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,8 +18,8 @@ trait ReadonlyArray[T] extends StObject {
     *
     * @param depth The maximum recursion depth
     */
-  def flat(): Array[_] = js.native
-  def flat(depth: Double): Array[_] = js.native
+  def flat(): Array[js.Any] = js.native
+  def flat(depth: Double): Array[js.Any] = js.native
   /**
     * Returns a new array with all sub-array elements concatenated into it recursively up to the
     * specified depth.

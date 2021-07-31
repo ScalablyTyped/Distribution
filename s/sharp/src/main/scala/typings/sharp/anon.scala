@@ -5,21 +5,19 @@ import typings.sharp.sharpBooleans.`false`
 import typings.sharp.sharpBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var resolveWithObject: `true` = js.native
+    var resolveWithObject: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(resolveWithObject: `true`): `0` = {
-      val __obj = js.Dynamic.literal(resolveWithObject = resolveWithObject.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(resolveWithObject = true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -31,14 +29,13 @@ object anon {
     }
   }
   
-  @js.native
   trait B extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object B {
     
@@ -62,14 +59,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Brightness extends StObject {
     
-    var brightness: js.UndefOr[Double] = js.native
+    var brightness: js.UndefOr[Double] = js.undefined
     
-    var hue: js.UndefOr[Double] = js.native
+    var hue: js.UndefOr[Double] = js.undefined
     
-    var saturation: js.UndefOr[Double] = js.native
+    var saturation: js.UndefOr[Double] = js.undefined
   }
   object Brightness {
     
@@ -102,14 +98,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Buffer extends StObject {
     
-    var buffer: Boolean = js.native
+    var buffer: Boolean
     
-    var file: Boolean = js.native
+    var file: Boolean
     
-    var stream: Boolean = js.native
+    var stream: Boolean
   }
   object Buffer {
     
@@ -133,10 +128,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Create extends StObject {
     
-    var create: typings.sharp.mod.Create = js.native
+    var create: typings.sharp.mod.Create
   }
   object Create {
     
@@ -154,14 +148,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Current extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var high: Double = js.native
+    var high: Double
     
-    var max: Double = js.native
+    var max: Double
   }
   object Current {
     
@@ -185,12 +178,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var data: typings.node.Buffer = js.native
+    var data: typings.node.Buffer
     
-    var info: OutputInfo = js.native
+    var info: OutputInfo
   }
   object Data {
     
@@ -211,12 +203,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var current: Double = js.native
+    var current: Double
     
-    var max: Double = js.native
+    var max: Double
   }
   object Max {
     
@@ -237,10 +228,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Raw extends StObject {
     
-    var raw: typings.sharp.mod.Raw = js.native
+    var raw: typings.sharp.mod.Raw
   }
   object Raw {
     
@@ -258,16 +248,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ResolveWithObject extends StObject {
     
-    var resolveWithObject: `false` = js.native
+    var resolveWithObject: `false`
   }
   object ResolveWithObject {
     
     @scala.inline
-    def apply(resolveWithObject: `false`): ResolveWithObject = {
-      val __obj = js.Dynamic.literal(resolveWithObject = resolveWithObject.asInstanceOf[js.Any])
+    def apply(): ResolveWithObject = {
+      val __obj = js.Dynamic.literal(resolveWithObject = false)
       __obj.asInstanceOf[ResolveWithObject]
     }
     

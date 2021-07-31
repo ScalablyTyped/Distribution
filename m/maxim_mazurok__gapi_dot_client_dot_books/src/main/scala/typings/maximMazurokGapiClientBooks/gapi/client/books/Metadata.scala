@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 import typings.maximMazurokGapiClientBooks.anon.Downloadurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /** A list of offline dictionary metadata. */
-  var items: js.UndefOr[js.Array[Downloadurl]] = js.native
+  var items: js.UndefOr[js.Array[Downloadurl]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

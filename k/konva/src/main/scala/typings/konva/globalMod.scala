@@ -3,10 +3,13 @@ package typings.konva
 import typings.konva.anon.Browser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalMod {
+  
+  @JSImport("konva/types/Global", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Konva {
     
@@ -62,9 +65,8 @@ object globalMod {
     @scala.inline
     def enableTrace_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("enableTrace")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Global", "Konva.getAngle")
-    @js.native
-    def getAngle(angle: js.Any): js.Any = js.native
+    @scala.inline
+    def getAngle(angle: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAngle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     @JSImport("konva/types/Global", "Konva._global")
     @js.native
@@ -85,9 +87,8 @@ object globalMod {
     @scala.inline
     def inDblClickWindow_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inDblClickWindow")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Global", "Konva._injectGlobal")
-    @js.native
-    def injectGlobal(Konva: js.Any): Unit = js.native
+    @scala.inline
+    def injectGlobal(Konva: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_injectGlobal")(Konva.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("konva/types/Global", "Konva.isBrowser")
     @js.native
@@ -95,13 +96,11 @@ object globalMod {
     @scala.inline
     def isBrowser_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isBrowser")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Global", "Konva.isDragReady")
-    @js.native
-    def isDragReady(): Boolean = js.native
+    @scala.inline
+    def isDragReady(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragReady")().asInstanceOf[Boolean]
     
-    @JSImport("konva/types/Global", "Konva.isDragging")
-    @js.native
-    def isDragging(): js.Any = js.native
+    @scala.inline
+    def isDragging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isDragging")().asInstanceOf[js.Any]
     
     @JSImport("konva/types/Global", "Konva.isUnminified")
     @js.native
@@ -115,9 +114,8 @@ object globalMod {
     @scala.inline
     def listenClickTap_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("listenClickTap")(x.asInstanceOf[js.Any])
     
-    @JSImport("konva/types/Global", "Konva._parseUA")
-    @js.native
-    def parseUA(userAgent: js.Any): Browser = js.native
+    @scala.inline
+    def parseUA(userAgent: js.Any): Browser = ^.asInstanceOf[js.Dynamic].applyDynamic("_parseUA")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Browser]
     
     @JSImport("konva/types/Global", "Konva.pixelRatio")
     @js.native
@@ -149,11 +147,9 @@ object globalMod {
   @js.native
   val glob: js.Any = js.native
   
-  @JSImport("konva/types/Global", "_parseUA")
-  @js.native
-  def parseUA(userAgent: js.Any): Browser = js.native
+  @scala.inline
+  def parseUA(userAgent: js.Any): Browser = ^.asInstanceOf[js.Dynamic].applyDynamic("_parseUA")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Browser]
   
-  @JSImport("konva/types/Global", "_registerNode")
-  @js.native
-  def registerNode(NodeClass: js.Any): Unit = js.native
+  @scala.inline
+  def registerNode(NodeClass: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_registerNode")(NodeClass.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

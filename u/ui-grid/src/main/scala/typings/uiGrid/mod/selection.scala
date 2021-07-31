@@ -4,12 +4,10 @@ import typings.angular.mod.IAngularEvent
 import typings.uiGrid.anon.RowSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selection {
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -18,33 +16,33 @@ object selection {
       * GridOptions.showGridFooter must also be set to true.
       * @default true
       */
-    var enableFooterTotalSelected: js.UndefOr[Boolean] = js.native
+    var enableFooterTotalSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable selection by clicking anywhere on the row.
       * Defaults to false if enableRowHeaderSelection is true, otherwise defaults to false.
       */
-    var enableFullRowSelection: js.UndefOr[Boolean] = js.native
+    var enableFullRowSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable a row header to be used for selection
       * Defaults to true
       * @default true
       */
-    var enableRowHeaderSelection: js.UndefOr[Boolean] = js.native
+    var enableRowHeaderSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable row selection for entire grid.
       * Defaults to true
       */
-    var enableRowSelection: js.UndefOr[Boolean] = js.native
+    var enableRowSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable the select all checkbox at the top of the selectionRowHeader
       * Defaults to true
       * @default true
       */
-    var enableSelectAll: js.UndefOr[Boolean] = js.native
+    var enableSelectAll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If selected rows are changed in bulk, either via the API or via the selectAll checkbox,
@@ -53,27 +51,27 @@ object selection {
       * Defaults to true
       * @default true
       */
-    var enableSelectionBatchEvent: js.UndefOr[Boolean] = js.native
+    var enableSelectionBatchEvent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Makes it possible to specify a method that evaluates for each row and sets its "enableSelection"
       * property.
       */
-    var isRowSelectable: js.UndefOr[js.Function1[/* row */ typings.uiGrid.mod.selection.IGridRow, Boolean]] = js.native
+    var isRowSelectable: js.UndefOr[js.Function1[/* row */ typings.uiGrid.mod.selection.IGridRow, Boolean]] = js.undefined
     
     /**
       * Enable multiple row selection only when using the ctrlKey or shiftKey. Requires multiSelect to be true.
       * Defaults to false
       * @default false
       */
-    var modifierKeysToMultiSelect: js.UndefOr[Boolean] = js.native
+    var modifierKeysToMultiSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable multiple row selection for entire grid
       * Defaults to true
       * @default true
       */
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent a row from being unselected.
@@ -83,14 +81,14 @@ object selection {
       * Defaults to false
       * @default false
       */
-    var noUnselect: js.UndefOr[Boolean] = js.native
+    var noUnselect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * can be used to set a custom width for the row header selection column
       * Defaults to 30px
       * @default 30
       */
-    var selectionRowHeaderWidth: js.UndefOr[Double] = js.native
+    var selectionRowHeaderWidth: js.UndefOr[Double] = js.undefined
   }
   object IGridOptions {
     
@@ -171,7 +169,6 @@ object selection {
     }
   }
   
-  @js.native
   trait IGridRow extends StObject {
     
     /**
@@ -181,7 +178,7 @@ object selection {
       * Defaults to true
       * @default true
       */
-    var enableSelection: js.UndefOr[Boolean] = js.native
+    var enableSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Selected state of row.
@@ -192,14 +189,14 @@ object selection {
       * @readonly
       * @default false
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets the isSelected property and updates the selectedCount
       * Changes to isSelected state should only be made via this function
       * @param selected Value to set
       */
-    def setSelected(selected: Boolean): Unit = js.native
+    def setSelected(selected: Boolean): Unit
   }
   object IGridRow {
     

@@ -2,51 +2,49 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The script project resource.
   */
-@js.native
 trait SchemaProject extends StObject {
   
   /**
     * When the script was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * User who originally created the script.
     */
-  var creator: js.UndefOr[SchemaGoogleAppsScriptTypeUser] = js.native
+  var creator: js.UndefOr[SchemaGoogleAppsScriptTypeUser] = js.undefined
   
   /**
     * User who last modified the script.
     */
-  var lastModifyUser: js.UndefOr[SchemaGoogleAppsScriptTypeUser] = js.native
+  var lastModifyUser: js.UndefOr[SchemaGoogleAppsScriptTypeUser] = js.undefined
   
   /**
     * The parent&#39;s Drive ID that the script will be attached to. This is
     * usually the ID of a Google Document or Google Sheet. This filed is
     * optional, and if not set, a stand-alone script will be created.
     */
-  var parentId: js.UndefOr[String] = js.native
+  var parentId: js.UndefOr[String] = js.undefined
   
   /**
     * The script project&#39;s Drive ID.
     */
-  var scriptId: js.UndefOr[String] = js.native
+  var scriptId: js.UndefOr[String] = js.undefined
   
   /**
     * The title for the project.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * When the script was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaProject {
   

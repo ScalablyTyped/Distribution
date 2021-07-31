@@ -3,7 +3,6 @@ package typings.autolinker
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMatchValidatorMod {
@@ -86,13 +85,11 @@ object urlMatchValidatorMod {
       *   processed, or `false` if the match is invalid and/or should just not be
       *   processed.
       */
-    @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", "UrlMatchValidator.isValid")
-    @js.native
-    def isValid(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
+    @scala.inline
+    def isValid(urlMatch: String, protocolUrlMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(urlMatch.asInstanceOf[js.Any], protocolUrlMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", "UrlMatchValidator.isValidIpAddress")
-    @js.native
-    def isValidIpAddress(uriSchemeMatch: String): Boolean = js.native
+    @scala.inline
+    def isValidIpAddress(uriSchemeMatch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidIpAddress")(uriSchemeMatch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Determines if the URI scheme is a valid scheme to be autolinked. Returns
@@ -103,9 +100,8 @@ object urlMatchValidatorMod {
       *   match. Ex: 'http://yahoo.com' or 'mailto:a@a.com'.
       * @return {Boolean} `true` if the scheme is a valid one, `false` otherwise.
       */
-    @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", "UrlMatchValidator.isValidUriScheme")
-    @js.native
-    def isValidUriScheme(uriSchemeMatch: String): Boolean = js.native
+    @scala.inline
+    def isValidUriScheme(uriSchemeMatch: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidUriScheme")(uriSchemeMatch.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Regex to find the URI scheme, such as 'mailto:'.
@@ -140,9 +136,8 @@ object urlMatchValidatorMod {
       * @return {Boolean} `true` if the URL match does not have a full protocol, or
       * at least one word character in it, `false` otherwise.
       */
-    @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", "UrlMatchValidator.urlMatchDoesNotHaveAtLeastOneWordChar")
-    @js.native
-    def urlMatchDoesNotHaveAtLeastOneWordChar(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
+    @scala.inline
+    def urlMatchDoesNotHaveAtLeastOneWordChar(urlMatch: String, protocolUrlMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatchDoesNotHaveAtLeastOneWordChar")(urlMatch.asInstanceOf[js.Any], protocolUrlMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Determines if a URL match does not have either:
@@ -165,8 +160,7 @@ object urlMatchValidatorMod {
       * @return {Boolean} `true` if the URL match does not have a full protocol,
       *   or at least one dot ('.') in a non-full-protocol match.
       */
-    @JSImport("autolinker/dist/commonjs/matcher/url-match-validator", "UrlMatchValidator.urlMatchDoesNotHaveProtocolOrDot")
-    @js.native
-    def urlMatchDoesNotHaveProtocolOrDot(urlMatch: String, protocolUrlMatch: String): Boolean = js.native
+    @scala.inline
+    def urlMatchDoesNotHaveProtocolOrDot(urlMatch: String, protocolUrlMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatchDoesNotHaveProtocolOrDot")(urlMatch.asInstanceOf[js.Any], protocolUrlMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

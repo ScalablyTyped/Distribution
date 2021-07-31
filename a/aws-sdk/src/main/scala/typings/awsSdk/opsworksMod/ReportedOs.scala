@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportedOs extends StObject {
   
   /**
     * The operating system family.
     */
-  var Family: js.UndefOr[String] = js.native
+  var Family: js.UndefOr[String] = js.undefined
   
   /**
     * The operating system name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The operating system version.
     */
-  var Version: js.UndefOr[String] = js.native
+  var Version: js.UndefOr[String] = js.undefined
 }
 object ReportedOs {
   

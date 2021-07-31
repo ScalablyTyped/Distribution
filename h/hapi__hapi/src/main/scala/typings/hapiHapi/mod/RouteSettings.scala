@@ -2,13 +2,13 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RouteSettings extends CommonRouteProperties {
+trait RouteSettings
+  extends StObject
+     with CommonRouteProperties {
   
-  var auth: js.UndefOr[AuthSettings] = js.native
+  var auth: js.UndefOr[AuthSettings] = js.undefined
 }
 object RouteSettings {
   

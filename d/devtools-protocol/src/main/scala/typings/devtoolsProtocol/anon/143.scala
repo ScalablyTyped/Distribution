@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Page.HandleJavaScriptDialogRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `143` extends StObject {
   
-  var paramsType: js.Array[HandleJavaScriptDialogRequest] = js.native
+  var paramsType: js.Array[HandleJavaScriptDialogRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `143` {
   

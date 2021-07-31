@@ -5,117 +5,115 @@ import typings.kendoUi.kendo.data.GanttDependencyDataSource
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttOptions extends StObject {
   
-  var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* e */ GanttAddEvent, Unit]] = js.undefined
   
-  var assignments: js.UndefOr[GanttAssignments] = js.native
+  var assignments: js.UndefOr[GanttAssignments] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ GanttCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ GanttCancelEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ GanttChangeEvent, Unit]] = js.undefined
   
-  var columnMenu: js.UndefOr[Boolean | js.Any] = js.native
+  var columnMenu: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.native
+  var columnResize: js.UndefOr[js.Function1[/* e */ GanttColumnResizeEvent, Unit]] = js.undefined
   
-  var columnResizeHandleWidth: js.UndefOr[Double] = js.native
+  var columnResizeHandleWidth: js.UndefOr[Double] = js.undefined
   
-  var columns: js.UndefOr[js.Array[GanttColumn]] = js.native
+  var columns: js.UndefOr[js.Array[GanttColumn]] = js.undefined
   
-  var currentTimeMarker: js.UndefOr[Boolean | GanttCurrentTimeMarker] = js.native
+  var currentTimeMarker: js.UndefOr[Boolean | GanttCurrentTimeMarker] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ GanttDataBindingEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ GanttDataBindingEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ GanttDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | GanttDataSource] = js.undefined
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.native
+  var dependencies: js.UndefOr[js.Any | GanttDependencyDataSource] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ GanttEditEvent, Unit]] = js.undefined
   
-  var editable: js.UndefOr[Boolean | GanttEditable] = js.native
+  var editable: js.UndefOr[Boolean | GanttEditable] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | js.Any] = js.native
+  var filterable: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hourSpan: js.UndefOr[Double] = js.native
+  var hourSpan: js.UndefOr[Double] = js.undefined
   
-  var listWidth: js.UndefOr[String | Double] = js.native
+  var listWidth: js.UndefOr[String | Double] = js.undefined
   
-  var messages: js.UndefOr[GanttMessages] = js.native
+  var messages: js.UndefOr[GanttMessages] = js.undefined
   
-  var move: js.UndefOr[js.Function1[/* e */ GanttMoveEvent, Unit]] = js.native
+  var move: js.UndefOr[js.Function1[/* e */ GanttMoveEvent, Unit]] = js.undefined
   
-  var moveEnd: js.UndefOr[js.Function1[/* e */ GanttMoveEndEvent, Unit]] = js.native
+  var moveEnd: js.UndefOr[js.Function1[/* e */ GanttMoveEndEvent, Unit]] = js.undefined
   
-  var moveStart: js.UndefOr[js.Function1[/* e */ GanttMoveStartEvent, Unit]] = js.native
+  var moveStart: js.UndefOr[js.Function1[/* e */ GanttMoveStartEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var navigatable: js.UndefOr[Boolean] = js.native
+  var navigatable: js.UndefOr[Boolean] = js.undefined
   
-  var navigate: js.UndefOr[js.Function1[/* e */ GanttNavigateEvent, Unit]] = js.native
+  var navigate: js.UndefOr[js.Function1[/* e */ GanttNavigateEvent, Unit]] = js.undefined
   
-  var pdf: js.UndefOr[GanttPdf] = js.native
+  var pdf: js.UndefOr[GanttPdf] = js.undefined
   
-  var pdfExport: js.UndefOr[js.Function1[/* e */ GanttPdfExportEvent, Unit]] = js.native
+  var pdfExport: js.UndefOr[js.Function1[/* e */ GanttPdfExportEvent, Unit]] = js.undefined
   
-  var range: js.UndefOr[GanttRange] = js.native
+  var range: js.UndefOr[GanttRange] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ GanttRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ GanttRemoveEvent, Unit]] = js.undefined
   
-  var reorderable: js.UndefOr[Boolean] = js.native
+  var reorderable: js.UndefOr[Boolean] = js.undefined
   
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* e */ GanttResizeEvent, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* e */ GanttResizeEvent, Unit]] = js.undefined
   
-  var resizeEnd: js.UndefOr[js.Function1[/* e */ GanttResizeEndEvent, Unit]] = js.native
+  var resizeEnd: js.UndefOr[js.Function1[/* e */ GanttResizeEndEvent, Unit]] = js.undefined
   
-  var resizeStart: js.UndefOr[js.Function1[/* e */ GanttResizeStartEvent, Unit]] = js.native
+  var resizeStart: js.UndefOr[js.Function1[/* e */ GanttResizeStartEvent, Unit]] = js.undefined
   
-  var resources: js.UndefOr[GanttResources] = js.native
+  var resources: js.UndefOr[GanttResources] = js.undefined
   
-  var rowHeight: js.UndefOr[Double | String] = js.native
+  var rowHeight: js.UndefOr[Double | String] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ GanttSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ GanttSaveEvent, Unit]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var showWorkDays: js.UndefOr[Boolean] = js.native
+  var showWorkDays: js.UndefOr[Boolean] = js.undefined
   
-  var showWorkHours: js.UndefOr[Boolean] = js.native
+  var showWorkHours: js.UndefOr[Boolean] = js.undefined
   
-  var snap: js.UndefOr[Boolean] = js.native
+  var snap: js.UndefOr[Boolean] = js.undefined
   
-  var taskTemplate: js.UndefOr[String | js.Function] = js.native
+  var taskTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var togglePlannedTasks: js.UndefOr[js.Function1[/* e */ GanttTogglePlannedTasks, Unit]] = js.native
+  var togglePlannedTasks: js.UndefOr[js.Function1[/* e */ GanttTogglePlannedTasks, Unit]] = js.undefined
   
-  var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.native
+  var toolbar: js.UndefOr[js.Array[GanttToolbarItem]] = js.undefined
   
-  var tooltip: js.UndefOr[GanttTooltip] = js.native
+  var tooltip: js.UndefOr[GanttTooltip] = js.undefined
   
-  var views: js.UndefOr[js.Array[GanttView]] = js.native
+  var views: js.UndefOr[js.Array[GanttView]] = js.undefined
   
-  var workDayEnd: js.UndefOr[Date] = js.native
+  var workDayEnd: js.UndefOr[Date] = js.undefined
   
-  var workDayStart: js.UndefOr[Date] = js.native
+  var workDayStart: js.UndefOr[Date] = js.undefined
   
-  var workWeekEnd: js.UndefOr[Double] = js.native
+  var workWeekEnd: js.UndefOr[Double] = js.undefined
   
-  var workWeekStart: js.UndefOr[Double] = js.native
+  var workWeekStart: js.UndefOr[Double] = js.undefined
 }
 object GanttOptions {
   

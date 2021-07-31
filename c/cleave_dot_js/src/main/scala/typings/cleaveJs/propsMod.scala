@@ -9,21 +9,20 @@ import typings.std.EventTarget
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propsMod {
   
-  @js.native
   trait ChangeEvent[T]
-    extends typings.react.mod.ChangeEvent[T]
+    extends StObject
+       with typings.react.mod.ChangeEvent[T]
   object ChangeEvent {
     
     @scala.inline
     def apply[T](
       bubbles: Boolean,
       cancelable: Boolean,
-      currentTarget: EventTarget with T,
+      currentTarget: EventTarget & T,
       defaultPrevented: Boolean,
       eventPhase: Double,
       isDefaultPrevented: () => Boolean,
@@ -33,7 +32,7 @@ object propsMod {
       persist: () => Unit,
       preventDefault: () => Unit,
       stopPropagation: () => Unit,
-      target: EventTarget with T,
+      target: EventTarget & T,
       timeStamp: Double,
       `type`: String
     ): ChangeEvent[T] = {
@@ -47,17 +46,18 @@ object propsMod {
   
   type InitHandler = js.Function1[/* owner */ ReactInstance, Unit]
   
-  @js.native
-  trait Props extends InputHTMLAttributes[HTMLInputElement] {
+  trait Props
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
-    var htmlRef: js.UndefOr[js.Function1[/* i */ js.Any, Unit]] = js.native
+    var htmlRef: js.UndefOr[js.Function1[/* i */ js.Any, Unit]] = js.undefined
     
     @JSName("onChange")
-    var onChange_Props: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.native
+    var onChange_Props: js.UndefOr[ChangeEventHandler[HTMLInputElement]] = js.undefined
     
-    var onInit: js.UndefOr[InitHandler] = js.native
+    var onInit: js.UndefOr[InitHandler] = js.undefined
     
-    var options: CleaveOptions = js.native
+    var options: CleaveOptions
   }
   object Props {
     

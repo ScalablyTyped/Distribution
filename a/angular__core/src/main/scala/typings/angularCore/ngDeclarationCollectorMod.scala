@@ -7,10 +7,13 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngDeclarationCollectorMod {
+  
+  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "NgDeclarationCollector")
   @js.native
@@ -40,25 +43,19 @@ object ngDeclarationCollectorMod {
     def visitNode(node: Node): Unit = js.native
   }
   
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "getNgClassDecorators")
-  @js.native
-  def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = js.native
+  @scala.inline
+  def getNgClassDecorators(node: ClassDeclaration, typeChecker: TypeChecker): js.Array[NgDecorator] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNgClassDecorators")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.Array[NgDecorator]]
   
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasDirectiveDecorator")
-  @js.native
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasDirectiveDecorator")
-  @js.native
-  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
+  @scala.inline
+  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasDirectiveDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasDirectiveDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasInjectableDecorator")
-  @js.native
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasInjectableDecorator")
-  @js.native
-  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = js.native
+  @scala.inline
+  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasInjectableDecorator(node: ClassDeclaration, typeChecker: TypeChecker, ngDecorators: js.Array[NgDecorator]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasInjectableDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any], ngDecorators.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/core/schematics/migrations/undecorated-classes-with-di/ng_declaration_collector", "hasNgDeclarationDecorator")
-  @js.native
-  def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = js.native
+  @scala.inline
+  def hasNgDeclarationDecorator(node: ClassDeclaration, typeChecker: TypeChecker): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasNgDeclarationDecorator")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

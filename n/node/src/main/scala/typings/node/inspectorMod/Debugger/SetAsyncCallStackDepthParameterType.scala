@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetAsyncCallStackDepthParameterType extends StObject {
   
   /**
     * Maximum depth of async call stacks. Setting to <code>0</code> will effectively disable collecting async call stacks (default).
     */
-  var maxDepth: Double = js.native
+  var maxDepth: Double
 }
 object SetAsyncCallStackDepthParameterType {
   

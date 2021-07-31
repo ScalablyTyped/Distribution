@@ -7,34 +7,34 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait _InitializeParams extends WorkDoneProgressParams {
+trait _InitializeParams
+  extends StObject
+     with WorkDoneProgressParams {
   
   /**
     * The capabilities provided by the client (editor or tool)
     */
-  var capabilities: ClientCapabilities = js.native
+  var capabilities: ClientCapabilities
   
   /**
     * Information about the client
     *
     * @since 3.15.0
     */
-  var clientInfo: js.UndefOr[Name] = js.native
+  var clientInfo: js.UndefOr[Name] = js.undefined
   
   /**
     * User provided initialization options.
     */
-  var initializationOptions: js.UndefOr[js.Any] = js.native
+  var initializationOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The process Id of the parent process that started
     * the server.
     */
-  var processId: Double | Null = js.native
+  var processId: Double | Null
   
   /**
     * The rootPath of the workspace. Is null
@@ -42,7 +42,7 @@ trait _InitializeParams extends WorkDoneProgressParams {
     *
     * @deprecated in favour of rootUri.
     */
-  var rootPath: js.UndefOr[String | Null] = js.native
+  var rootPath: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The rootUri of the workspace. Is null if no
@@ -51,18 +51,18 @@ trait _InitializeParams extends WorkDoneProgressParams {
     *
     * @deprecated in favour of workspaceFolders.
     */
-  var rootUri: DocumentUri | Null = js.native
+  var rootUri: DocumentUri | Null
   
   /**
     * The initial trace setting. If omitted trace is disabled ('off').
     */
-  var trace: js.UndefOr[off | messages | verbose] = js.native
+  var trace: js.UndefOr[off | messages | verbose] = js.undefined
 }
 object _InitializeParams {
   
   @scala.inline
   def apply(capabilities: ClientCapabilities): _InitializeParams = {
-    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(capabilities = capabilities.asInstanceOf[js.Any], processId = null, rootUri = null)
     __obj.asInstanceOf[_InitializeParams]
   }
   

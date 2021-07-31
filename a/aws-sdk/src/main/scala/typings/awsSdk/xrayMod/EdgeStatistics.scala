@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdgeStatistics extends StObject {
   
   /**
     * Information about requests that failed with a 4xx Client Error status code.
     */
-  var ErrorStatistics: js.UndefOr[typings.awsSdk.xrayMod.ErrorStatistics] = js.native
+  var ErrorStatistics: js.UndefOr[typings.awsSdk.xrayMod.ErrorStatistics] = js.undefined
   
   /**
     * Information about requests that failed with a 5xx Server Error status code.
     */
-  var FaultStatistics: js.UndefOr[typings.awsSdk.xrayMod.FaultStatistics] = js.native
+  var FaultStatistics: js.UndefOr[typings.awsSdk.xrayMod.FaultStatistics] = js.undefined
   
   /**
     * The number of requests that completed with a 2xx Success status code.
     */
-  var OkCount: js.UndefOr[NullableLong] = js.native
+  var OkCount: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The total number of completed requests.
     */
-  var TotalCount: js.UndefOr[NullableLong] = js.native
+  var TotalCount: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The aggregate response time of completed requests.
     */
-  var TotalResponseTime: js.UndefOr[NullableDouble] = js.native
+  var TotalResponseTime: js.UndefOr[NullableDouble] = js.undefined
 }
 object EdgeStatistics {
   

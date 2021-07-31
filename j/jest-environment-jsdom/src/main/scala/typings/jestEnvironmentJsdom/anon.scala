@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -61,9 +60,9 @@ object anon {
     val eventPhase: Double = js.native
     
     def initEvent(`type`: String): Unit = js.native
-    def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
     
     /**
       * Returns true if event was dispatched by the user agent, and false otherwise.
@@ -106,10 +105,9 @@ object anon {
     val `type`: String = js.native
   }
   
-  @js.native
   trait StackTraceLimit extends StObject {
     
-    var stackTraceLimit: Double = js.native
+    var stackTraceLimit: Double
   }
   object StackTraceLimit {
     

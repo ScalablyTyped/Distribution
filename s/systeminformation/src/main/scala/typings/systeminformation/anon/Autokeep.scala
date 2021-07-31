@@ -2,27 +2,25 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Autokeep extends StObject {
   
-  var auto_keep: Boolean = js.native
+  var auto_keep: Boolean
   
-  var error_rate: Boolean = js.native
+  var error_rate: Boolean
   
-  var event_count: Boolean = js.native
+  var event_count: Boolean
   
-  var performance: Boolean = js.native
+  var performance: Boolean
   
-  var prefailure: Boolean = js.native
+  var prefailure: Boolean
   
-  var string: java.lang.String = js.native
+  var string: java.lang.String
   
-  var updated_online: Boolean = js.native
+  var updated_online: Boolean
   
-  var value: Double = js.native
+  var value: Double
 }
 object Autokeep {
   

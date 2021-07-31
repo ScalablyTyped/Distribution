@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewBatchEditEndEditingEventArgs extends CancelEventArgs {
+trait CardViewBatchEditEndEditingEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val cardValues: js.Any = js.native
+  val cardValues: js.Any
   
-  val visibleIndex: Double = js.native
+  val visibleIndex: Double
 }
 object CardViewBatchEditEndEditingEventArgs {
   

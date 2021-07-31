@@ -2,48 +2,46 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlserverSqlServerConnectionCredentialsOptionsMod {
   
-  @js.native
   trait SqlServerConnectionCredentialsOptions extends StObject {
     
     /**
       * Database name to connect to.
       */
-    val database: js.UndefOr[String] = js.native
+    val database: js.UndefOr[String] = js.undefined
     
     /**
       * Once you set domain, driver will connect to SQL Server using domain login.
       */
-    val domain: js.UndefOr[String] = js.native
+    val domain: js.UndefOr[String] = js.undefined
     
     /**
       * Database host.
       */
-    val host: js.UndefOr[String] = js.native
+    val host: js.UndefOr[String] = js.undefined
     
     /**
       * Database password.
       */
-    val password: js.UndefOr[String] = js.native
+    val password: js.UndefOr[String] = js.undefined
     
     /**
       * Database host port.
       */
-    val port: js.UndefOr[Double] = js.native
+    val port: js.UndefOr[Double] = js.undefined
     
     /**
       * Connection url where perform connection to.
       */
-    val url: js.UndefOr[String] = js.native
+    val url: js.UndefOr[String] = js.undefined
     
     /**
       * Database username.
       */
-    val username: js.UndefOr[String] = js.native
+    val username: js.UndefOr[String] = js.undefined
   }
   object SqlServerConnectionCredentialsOptions {
     

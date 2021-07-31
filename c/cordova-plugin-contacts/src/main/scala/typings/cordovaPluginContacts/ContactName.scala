@@ -2,30 +2,28 @@ package typings.cordovaPluginContacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains different kinds of information about a Contact object's name. */
-@js.native
 trait ContactName extends StObject {
   
   /** The contact's family name. */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /** The complete name of the contact. */
-  var formatted: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.undefined
   
   /** The contact's given name. */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
   /** The contact's prefix (example Mr. or Dr.) */
-  var honorificPrefix: js.UndefOr[String] = js.native
+  var honorificPrefix: js.UndefOr[String] = js.undefined
   
   /** The contact's suffix (example Esq.). */
-  var honorificSuffix: js.UndefOr[String] = js.native
+  var honorificSuffix: js.UndefOr[String] = js.undefined
   
   /** The contact's middle name. */
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
 }
 object ContactName {
   

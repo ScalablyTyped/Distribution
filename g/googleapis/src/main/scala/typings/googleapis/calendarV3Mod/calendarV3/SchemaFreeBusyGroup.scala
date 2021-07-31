@@ -2,21 +2,19 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFreeBusyGroup extends StObject {
   
   /**
     * List of calendars&#39; identifiers within a group.
     */
-  var calendars: js.UndefOr[js.Array[String]] = js.native
+  var calendars: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional error(s) (if computation for the group failed).
     */
-  var errors: js.UndefOr[js.Array[SchemaError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaError]] = js.undefined
 }
 object SchemaFreeBusyGroup {
   

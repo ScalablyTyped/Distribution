@@ -3,12 +3,13 @@ package typings.elasticJs.mod
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "WildcardQuery")
 @js.native
-class WildcardQuery protected () extends Query {
+class WildcardQuery protected ()
+  extends StObject
+     with Query {
   /*
     A Query that matches documents containing a wildcard. This may be
     combined with other wildcards with a BooleanQuery.

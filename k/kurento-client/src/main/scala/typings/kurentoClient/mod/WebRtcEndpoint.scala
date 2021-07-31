@@ -17,11 +17,12 @@ import typings.kurentoClient.kurentoClientStrings.OnIceCandidate
 import typings.std.RTCIceCandidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WebRtcEndpoint extends BaseRtpEndpoint {
+trait WebRtcEndpoint
+  extends StObject
+     with BaseRtpEndpoint {
   
   def addIceCandidate(candidate: RTCIceCandidate): js.Promise[Unit] = js.native
   def addIceCandidate(candidate: RTCIceCandidate, callback: Callback[Unit]): js.Promise[Unit] = js.native
@@ -41,8 +42,8 @@ trait WebRtcEndpoint extends BaseRtpEndpoint {
   def gatherCandidates(): js.Promise[Unit] = js.native
   def gatherCandidates(callback: Callback[Unit]): js.Promise[Unit] = js.native
   
-  def getICECandidatePairs(): js.Promise[_] = js.native
-  def getICECandidatePairs(callback: Callback[_]): js.Promise[_] = js.native
+  def getICECandidatePairs(): js.Promise[js.Any] = js.native
+  def getICECandidatePairs(callback: Callback[js.Any]): js.Promise[js.Any] = js.native
   
   def getIceConnectionState(): js.Promise[IceConnection] = js.native
   def getIceConnectionState(callback: Callback[IceConnection]): js.Promise[IceConnection] = js.native

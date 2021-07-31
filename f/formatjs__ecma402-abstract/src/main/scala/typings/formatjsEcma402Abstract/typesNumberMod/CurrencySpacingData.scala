@@ -2,15 +2,13 @@ package typings.formatjsEcma402Abstract.typesNumberMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencySpacingData extends StObject {
   
-  var afterInsertBetween: String = js.native
+  var afterInsertBetween: String
   
-  var beforeInsertBetween: String = js.native
+  var beforeInsertBetween: String
 }
 object CurrencySpacingData {
   

@@ -3,15 +3,13 @@ package typings.openapiTypes.mod.OpenAPIV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscriminatorObject extends StObject {
   
-  var mapping: js.UndefOr[StringDictionary[String]] = js.native
+  var mapping: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var propertyName: String = js.native
+  var propertyName: String
 }
 object DiscriminatorObject {
   

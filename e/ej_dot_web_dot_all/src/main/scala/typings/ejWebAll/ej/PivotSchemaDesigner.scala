@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotSchemaDesigner extends Widget_ {
+trait PivotSchemaDesigner
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -33,31 +34,36 @@ object PivotSchemaDesigner {
     
     ///To set the layout as same in the Excel.
     @js.native
-    sealed trait Excel extends Layouts
+    sealed trait Excel
+      extends StObject
+         with Layouts
     
     ///To set normal layout for Field List.
     @js.native
-    sealed trait Normal extends Layouts
+    sealed trait Normal
+      extends StObject
+         with Layouts
     
     ///To set layout with the axes one above the other.
     @js.native
-    sealed trait OneByOne extends Layouts
+    sealed trait OneByOne
+      extends StObject
+         with Layouts
   }
   
-  @js.native
   trait AfterServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotSchemaDesigner control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotSchemaDesigner control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -90,20 +96,19 @@ object PivotSchemaDesigner {
     }
   }
   
-  @js.native
   trait BeforeServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotSchemaDesigner control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotSchemaDesigner control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -136,24 +141,23 @@ object PivotSchemaDesigner {
     }
   }
   
-  @js.native
   trait DragMoveEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the HTML element of the dragged field from PivotSchemaDesigner.
       */
-    var dragTarget: js.UndefOr[js.Any] = js.native
+    var dragTarget: js.UndefOr[js.Any] = js.undefined
     
     /** return the JSON details of the dragged field.
       */
-    var draggedElementData: js.UndefOr[js.Any] = js.native
+    var draggedElementData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the PivotSchemaDesigner model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
   }
   object DragMoveEventArgs {
     
@@ -192,12 +196,11 @@ object PivotSchemaDesigner {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the HTML element of PivotSchemaDesigner control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -218,90 +221,89 @@ object PivotSchemaDesigner {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when it reaches client-side after any AJAX request.
       */
-    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.native
+    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Triggers before any AJAX request is passed from PivotSchemaDesigner to service methods.
       */
-    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.native
+    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Specifies the CSS class to PivotSchemaDesigner to achieve custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object utilized to pass additional information between client-end and service-end.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when we start dragging any field from PivotSchemaDesigner.
       */
-    var dragMove: js.UndefOr[js.Function1[/* e */ DragMoveEventArgs, Unit]] = js.native
+    var dragMove: js.UndefOr[js.Function1[/* e */ DragMoveEventArgs, Unit]] = js.undefined
     
     /** Allows the user to enable/disable drag and drop operations within the PivotTable Field List.
       * @Default {true}
       */
-    var enableDragDrop: js.UndefOr[Boolean] = js.native
+    var enableDragDrop: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view PivotTable Field List from right to left.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** For ASP.NET and MVC Wrapper, PivotSchemaDesigner will be initialized and rendered empty initially. Once the connected pivot control widget is rendered completely,
       * PivotSchemaDesigner will just be populated with data source by setting this property to â€œtrueâ€.
       * @Default {false}
       */
-    var enableWrapper: js.UndefOr[Boolean] = js.native
+    var enableWrapper: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the height for PivotSchemaDesigner.
       * @Default {â€œâ€}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Sets the layout for PivotSchemaDesigner.
       * @Default {ej.PivotSchemaDesigner.Layouts.Excel}
       */
-    var layout: js.UndefOr[Layouts | String] = js.native
+    var layout: js.UndefOr[Layouts | String] = js.undefined
     
     /** Triggers when PivotSchemaDesigner loading is initiated.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows the user to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the visibility of OLAP elements in PivotTable Field List. This is only applicable for OLAP datasource.
       * @Default {null}
       */
-    var olap: js.UndefOr[Olap] = js.native
+    var olap: js.UndefOr[Olap] = js.undefined
     
     /** Sets the Pivot control bound with this PivotSchemaDesigner.
       * @Default {null}
       */
-    var pivotControl: js.UndefOr[js.Any] = js.native
+    var pivotControl: js.UndefOr[js.Any] = js.undefined
     
     /** Allows the user to set custom name for the methods at service-end, communicated during AJAX post.
       * @Default {{}}
       */
-    var serviceMethods: js.UndefOr[js.Any] = js.native
+    var serviceMethods: js.UndefOr[js.Any] = js.undefined
     
     /** Connects the service using the specified URL for any server updates.
       * @Default {â€œâ€}
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Sets the width for PivotSchemaDesigner.
       * @Default {â€œâ€}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -418,18 +420,17 @@ object PivotSchemaDesigner {
     }
   }
   
-  @js.native
   trait Olap extends StObject {
     
     /** Allows the user to view the KPI elements in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
       * @Default {false}
       */
-    var showKPI: js.UndefOr[Boolean] = js.native
+    var showKPI: js.UndefOr[Boolean] = js.undefined
     
     /** Allows the user to view the named sets in tree-view inside PivotTable Field List. This is only applicable for OLAP datasource.
       * @Default {false}
       */
-    var showNamedSets: js.UndefOr[Boolean] = js.native
+    var showNamedSets: js.UndefOr[Boolean] = js.undefined
   }
   object Olap {
     

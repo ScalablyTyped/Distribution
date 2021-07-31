@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.DialProtocol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object DialAppStopResult extends StObject {
   
   /** An error occurred while attempting to retrieve the state. */
   @js.native
-  sealed trait networkFailure extends DialAppStopResult
+  sealed trait networkFailure
+    extends StObject
+       with DialAppStopResult
   
   /** The app cannot be stopped because the operation isn't supported. */
   @js.native
-  sealed trait operationNotSupported extends DialAppStopResult
+  sealed trait operationNotSupported
+    extends StObject
+       with DialAppStopResult
   
   /** The app failed to stop. */
   @js.native
-  sealed trait stopFailed extends DialAppStopResult
+  sealed trait stopFailed
+    extends StObject
+       with DialAppStopResult
   
   /** The app is successfully stopped. */
   @js.native
-  sealed trait stopped extends DialAppStopResult
+  sealed trait stopped
+    extends StObject
+       with DialAppStopResult
 }

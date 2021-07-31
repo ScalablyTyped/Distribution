@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,20 +15,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type class of this type is com::sun::star::uno::TypeClass::SINGLETON.
   * @since OOo 1.1.2
   */
-@js.native
-trait XSingletonTypeDescription extends XTypeDescription {
+trait XSingletonTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the service associated with the singleton.
     * @returns the reflection of the service associated with the singleton, for an obsolete, service-based singleton; for an interface-based singleton, `NULL` i
     */
-  val Service: XServiceTypeDescription = js.native
+  val Service: XServiceTypeDescription
   
   /**
     * Returns the service associated with the singleton.
     * @returns the reflection of the service associated with the singleton, for an obsolete, service-based singleton; for an interface-based singleton, `NULL` i
     */
-  def getService(): XServiceTypeDescription = js.native
+  def getService(): XServiceTypeDescription
 }
 object XSingletonTypeDescription {
   

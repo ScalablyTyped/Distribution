@@ -2,20 +2,20 @@ package typings.chrome.chrome.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebResponseCacheDetails extends WebResponseHeadersDetails {
+trait WebResponseCacheDetails
+  extends StObject
+     with WebResponseHeadersDetails {
   
   /** Indicates if this response was fetched from disk cache. */
-  var fromCache: Boolean = js.native
+  var fromCache: Boolean
   
   /**
     * Optional.
     * The server IP address that the request was actually sent to. Note that it may be a literal IPv6 address.
     */
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
 }
 object WebResponseCacheDetails {
   

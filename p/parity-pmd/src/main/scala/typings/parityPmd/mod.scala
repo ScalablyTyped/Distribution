@@ -3,37 +3,37 @@ package typings.parityPmd
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parity-pmd", "format")
+  @JSImport("parity-pmd", JSImport.Namespace)
   @js.native
-  def format(message: PMDMessage): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("parity-pmd", "parse")
-  @js.native
-  def parse(buffer: Buffer): PMDMessage = js.native
+  @scala.inline
+  def format(message: PMDMessage): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @js.native
+  @scala.inline
+  def parse(buffer: Buffer): PMDMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(buffer.asInstanceOf[js.Any]).asInstanceOf[PMDMessage]
+  
   trait PMDMessage extends StObject {
     
-    var instrument: js.UndefOr[String] = js.native
+    var instrument: js.UndefOr[String] = js.undefined
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var orderNumber: js.UndefOr[Double] = js.native
+    var orderNumber: js.UndefOr[Double] = js.undefined
     
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var side: js.UndefOr[String] = js.native
+    var side: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object PMDMessage {
     

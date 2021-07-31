@@ -2,19 +2,17 @@ package typings.reactNativeForm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CallbackProp extends StObject {
     
-    var callbackProp: String = js.native
+    var callbackProp: String
     
-    var controlled: Boolean = js.native
+    var controlled: Boolean
     
-    var valueProp: String = js.native
+    var valueProp: String
   }
   object CallbackProp {
     

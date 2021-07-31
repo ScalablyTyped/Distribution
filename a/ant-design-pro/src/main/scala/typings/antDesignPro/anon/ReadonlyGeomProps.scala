@@ -7,59 +7,60 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.GeomProps> */
-@js.native
 trait ReadonlyGeomProps extends StObject {
   
-  val active: js.UndefOr[Boolean] = js.native
+  val active: js.UndefOr[Boolean] = js.undefined
   
-  val adjust: js.UndefOr[String | (js.Array[DodgeBy | String])] = js.native
+  val adjust: js.UndefOr[String | (js.Array[DodgeBy | String])] = js.undefined
   
-  val animate: js.UndefOr[js.Any] = js.native
+  val animate: js.UndefOr[js.Any] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
   val color: js.UndefOr[
-    String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String]) | String])
-  ] = js.native
+    String | (js.Tuple2[
+      String, 
+      js.Array[String] | (js.Function1[/* d */ js.UndefOr[js.Any], String]) | String
+    ])
+  ] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val line: js.UndefOr[typings.antvG2.mod.Styles.line | Boolean] = js.native
+  val line: js.UndefOr[typings.antvG2.mod.Styles.line | Boolean] = js.undefined
   
   val opacity: js.UndefOr[
-    String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[_], Double]])
-  ] = js.native
+    String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[js.Any], Double]])
+  ] = js.undefined
   
-  val position: js.UndefOr[String] = js.native
+  val position: js.UndefOr[String] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val select: js.UndefOr[Boolean | (js.Tuple2[Boolean, _])] = js.native
+  val select: js.UndefOr[Boolean | (js.Tuple2[Boolean, js.Any])] = js.undefined
   
-  val selected: js.UndefOr[Boolean] = js.native
+  val selected: js.UndefOr[Boolean] = js.undefined
   
   val shape: js.UndefOr[
-    String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String])])
-  ] = js.native
+    String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[js.Any], String])])
+  ] = js.undefined
   
   val size: js.UndefOr[
     Double | String | (js.Tuple2[
       String, 
-      (js.Function1[/* d */ js.UndefOr[_], Double]) | (js.Tuple2[Double, Double])
+      (js.Function1[/* d */ js.UndefOr[js.Any], Double]) | (js.Tuple2[Double, Double])
     ])
-  ] = js.native
+  ] = js.undefined
   
-  val style: js.UndefOr[js.Object | (js.Tuple2[String, js.Object])] = js.native
+  val style: js.UndefOr[js.Object | (js.Tuple2[String, js.Object])] = js.undefined
   
   val tooltip: js.UndefOr[
-    Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ _, typings.bizcharts.anon.Name]])
-  ] = js.native
+    Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ js.Any, typings.bizcharts.anon.Name]])
+  ] = js.undefined
   
-  val `type`: js.UndefOr[GeomType] = js.native
+  val `type`: js.UndefOr[GeomType] = js.undefined
 }
 object ReadonlyGeomProps {
   
@@ -101,7 +102,10 @@ object ReadonlyGeomProps {
     
     @scala.inline
     def setColor(
-      value: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String]) | String])
+      value: String | (js.Tuple2[
+          String, 
+          js.Array[String] | (js.Function1[/* d */ js.UndefOr[js.Any], String]) | String
+        ])
     ): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -120,7 +124,7 @@ object ReadonlyGeomProps {
     def setLineUndefined: Self = StObject.set(x, "line", js.undefined)
     
     @scala.inline
-    def setOpacity(value: String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[_], Double]])): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
+    def setOpacity(value: String | Double | (js.Tuple2[String, js.Function1[/* d */ js.UndefOr[js.Any], Double]])): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
@@ -132,10 +136,10 @@ object ReadonlyGeomProps {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)
@@ -144,7 +148,7 @@ object ReadonlyGeomProps {
     def setRefUndefined: Self = StObject.set(x, "ref", js.undefined)
     
     @scala.inline
-    def setSelect(value: Boolean | (js.Tuple2[Boolean, _])): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
+    def setSelect(value: Boolean | (js.Tuple2[Boolean, js.Any])): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectUndefined: Self = StObject.set(x, "select", js.undefined)
@@ -157,7 +161,7 @@ object ReadonlyGeomProps {
     
     @scala.inline
     def setShape(
-      value: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[_], String])])
+      value: String | (js.Tuple2[String, js.Array[String] | (js.Function1[/* d */ js.UndefOr[js.Any], String])])
     ): Self = StObject.set(x, "shape", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -167,7 +171,7 @@ object ReadonlyGeomProps {
     def setSize(
       value: Double | String | (js.Tuple2[
           String, 
-          (js.Function1[/* d */ js.UndefOr[_], Double]) | (js.Tuple2[Double, Double])
+          (js.Function1[/* d */ js.UndefOr[js.Any], Double]) | (js.Tuple2[Double, Double])
         ])
     ): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     
@@ -182,7 +186,7 @@ object ReadonlyGeomProps {
     
     @scala.inline
     def setTooltip(
-      value: Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ _, typings.bizcharts.anon.Name]])
+      value: Boolean | String | (js.Tuple2[String, js.Function1[/* repeated */ js.Any, typings.bizcharts.anon.Name]])
     ): Self = StObject.set(x, "tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline

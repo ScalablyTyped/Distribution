@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CcrForgetFollower[T] extends Generic {
+trait CcrForgetFollower[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var index: String = js.native
+  var index: String
 }
 object CcrForgetFollower {
   
@@ -21,7 +21,7 @@ object CcrForgetFollower {
   }
   
   @scala.inline
-  implicit class CcrForgetFollowerMutableBuilder[Self <: CcrForgetFollower[_], T] (val x: Self with CcrForgetFollower[T]) extends AnyVal {
+  implicit class CcrForgetFollowerMutableBuilder[Self <: CcrForgetFollower[?], T] (val x: Self & CcrForgetFollower[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

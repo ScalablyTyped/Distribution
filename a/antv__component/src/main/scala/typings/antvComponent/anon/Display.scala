@@ -2,15 +2,13 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
-  var display: Boolean = js.native
+  var display: Boolean
   
-  var style: Fill = js.native
+  var style: Fill
 }
 object Display {
   

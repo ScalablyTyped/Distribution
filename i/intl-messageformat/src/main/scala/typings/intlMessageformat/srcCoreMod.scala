@@ -11,7 +11,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcCoreMod {
@@ -25,59 +24,23 @@ object srcCoreMod {
     def this(message: String, locales: js.Array[String]) = this()
     def this(message: js.Array[MessageFormatElement], locales: String) = this()
     def this(message: js.Array[MessageFormatElement], locales: js.Array[String]) = this()
-    def this(message: String, locales: js.UndefOr[scala.Nothing], overrideFormats: PartialFormats) = this()
     def this(message: String, locales: String, overrideFormats: PartialFormats) = this()
     def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats) = this()
-    def this(
-      message: js.Array[MessageFormatElement],
-      locales: js.UndefOr[scala.Nothing],
-      overrideFormats: PartialFormats
-    ) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormats) = this()
     def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: PartialFormats) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
       overrideFormats: PartialFormats
     ) = this()
-    def this(
-      message: String,
-      locales: js.UndefOr[scala.Nothing],
-      overrideFormats: js.UndefOr[scala.Nothing],
-      opts: Options
-    ) = this()
-    def this(
-      message: String,
-      locales: js.UndefOr[scala.Nothing],
-      overrideFormats: PartialFormats,
-      opts: Options
-    ) = this()
-    def this(message: String, locales: String, overrideFormats: js.UndefOr[scala.Nothing], opts: Options) = this()
+    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: PartialFormats) = this()
+    def this(message: String, locales: String, overrideFormats: Unit, opts: Options) = this()
     def this(message: String, locales: String, overrideFormats: PartialFormats, opts: Options) = this()
-    def this(
-      message: String,
-      locales: js.Array[String],
-      overrideFormats: js.UndefOr[scala.Nothing],
-      opts: Options
-    ) = this()
+    def this(message: String, locales: js.Array[String], overrideFormats: Unit, opts: Options) = this()
     def this(message: String, locales: js.Array[String], overrideFormats: PartialFormats, opts: Options) = this()
-    def this(
-      message: js.Array[MessageFormatElement],
-      locales: js.UndefOr[scala.Nothing],
-      overrideFormats: js.UndefOr[scala.Nothing],
-      opts: Options
-    ) = this()
-    def this(
-      message: js.Array[MessageFormatElement],
-      locales: js.UndefOr[scala.Nothing],
-      overrideFormats: PartialFormats,
-      opts: Options
-    ) = this()
-    def this(
-      message: js.Array[MessageFormatElement],
-      locales: String,
-      overrideFormats: js.UndefOr[scala.Nothing],
-      opts: Options
-    ) = this()
+    def this(message: String, locales: Unit, overrideFormats: Unit, opts: Options) = this()
+    def this(message: String, locales: Unit, overrideFormats: PartialFormats, opts: Options) = this()
+    def this(message: js.Array[MessageFormatElement], locales: String, overrideFormats: Unit, opts: Options) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: String,
@@ -87,12 +50,19 @@ object srcCoreMod {
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
-      overrideFormats: js.UndefOr[scala.Nothing],
+      overrideFormats: Unit,
       opts: Options
     ) = this()
     def this(
       message: js.Array[MessageFormatElement],
       locales: js.Array[String],
+      overrideFormats: PartialFormats,
+      opts: Options
+    ) = this()
+    def this(message: js.Array[MessageFormatElement], locales: Unit, overrideFormats: Unit, opts: Options) = this()
+    def this(
+      message: js.Array[MessageFormatElement],
+      locales: Unit,
       overrideFormats: PartialFormats,
       opts: Options
     ) = this()
@@ -159,10 +129,9 @@ object srcCoreMod {
     def memoizedDefaultLocale_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("memoizedDefaultLocale")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var formatters: js.UndefOr[Formatters] = js.native
+    var formatters: js.UndefOr[Formatters] = js.undefined
     
     /**
       * Whether to treat HTML/XML tags as string literal
@@ -170,7 +139,7 @@ object srcCoreMod {
       * When this is false we only allow simple tags without
       * any attributes
       */
-    var ignoreTag: js.UndefOr[Boolean] = js.native
+    var ignoreTag: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

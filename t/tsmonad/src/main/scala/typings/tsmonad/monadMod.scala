@@ -2,26 +2,26 @@ package typings.tsmonad
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monadMod {
   
-  @JSImport("tsmonad/lib/src/monad", "eq")
+  @JSImport("tsmonad/lib/src/monad", JSImport.Namespace)
   @js.native
-  def eq_(a: js.Any, b: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def eq_(a: js.Any, b: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("eq")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   trait Eq[T] extends StObject
   
-  @js.native
   trait Functor[T] extends StObject {
     
-    def fmap[U](f: js.Function1[/* t */ T, U]): Functor[U] = js.native
+    def fmap[U](f: js.Function1[/* t */ T, U]): Functor[U]
     
-    def lift[U](f: js.Function1[/* t */ T, U]): Functor[U] = js.native
+    def lift[U](f: js.Function1[/* t */ T, U]): Functor[U]
     
-    def map[U](f: js.Function1[/* t */ T, U]): Functor[U] = js.native
+    def map[U](f: js.Function1[/* t */ T, U]): Functor[U]
   }
   object Functor {
     
@@ -36,7 +36,7 @@ object monadMod {
     }
     
     @scala.inline
-    implicit class FunctorMutableBuilder[Self <: Functor[_], T] (val x: Self with Functor[T]) extends AnyVal {
+    implicit class FunctorMutableBuilder[Self <: Functor[?], T] (val x: Self & Functor[T]) extends AnyVal {
       
       @scala.inline
       def setFmap(value: js.Function1[/* t */ T, js.Any] => Functor[js.Any]): Self = StObject.set(x, "fmap", js.Any.fromFunction1(value))
@@ -49,16 +49,15 @@ object monadMod {
     }
   }
   
-  @js.native
   trait Monad[T] extends StObject {
     
-    def bind[U](f: js.Function1[/* t */ T, Monad[U]]): Monad[U] = js.native
+    def bind[U](f: js.Function1[/* t */ T, Monad[U]]): Monad[U]
     
-    def chain[U](f: js.Function1[/* t */ T, Monad[U]]): Monad[U] = js.native
+    def chain[U](f: js.Function1[/* t */ T, Monad[U]]): Monad[U]
     
-    def of[U](t: U): Monad[U] = js.native
+    def of[U](t: U): Monad[U]
     
-    def unit[U](t: U): Monad[U] = js.native
+    def unit[U](t: U): Monad[U]
   }
   object Monad {
     
@@ -74,7 +73,7 @@ object monadMod {
     }
     
     @scala.inline
-    implicit class MonadMutableBuilder[Self <: Monad[_], T] (val x: Self with Monad[T]) extends AnyVal {
+    implicit class MonadMutableBuilder[Self <: Monad[?], T] (val x: Self & Monad[T]) extends AnyVal {
       
       @scala.inline
       def setBind(value: js.Function1[/* t */ T, Monad[js.Any]] => Monad[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))

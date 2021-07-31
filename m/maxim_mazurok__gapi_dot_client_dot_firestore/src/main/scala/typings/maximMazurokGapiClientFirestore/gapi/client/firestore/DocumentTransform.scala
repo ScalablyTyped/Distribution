@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentTransform extends StObject {
   
   /** The name of the document to transform. */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /** The list of transformations to apply to the fields of the document, in order. This must not be empty. */
-  var fieldTransforms: js.UndefOr[js.Array[FieldTransform]] = js.native
+  var fieldTransforms: js.UndefOr[js.Array[FieldTransform]] = js.undefined
 }
 object DocumentTransform {
   

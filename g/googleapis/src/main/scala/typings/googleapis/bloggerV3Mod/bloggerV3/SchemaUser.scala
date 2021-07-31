@@ -4,56 +4,54 @@ import typings.googleapis.anon.Country
 import typings.googleapis.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUser extends StObject {
   
   /**
     * Profile summary information.
     */
-  var about: js.UndefOr[String] = js.native
+  var about: js.UndefOr[String] = js.undefined
   
   /**
     * The container of blogs for this user.
     */
-  var blogs: js.UndefOr[`1`] = js.native
+  var blogs: js.UndefOr[`1`] = js.undefined
   
   /**
     * The timestamp of when this profile was created, in seconds since epoch.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The display name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for this User.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of this entity. Always blogger#user
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * This user&#39;s locale
     */
-  var locale: js.UndefOr[Country] = js.native
+  var locale: js.UndefOr[Country] = js.undefined
   
   /**
     * The API REST URL to fetch this resource from.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s profile page.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaUser {
   

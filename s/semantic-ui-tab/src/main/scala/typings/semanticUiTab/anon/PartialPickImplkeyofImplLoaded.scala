@@ -2,18 +2,16 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-tab.SemanticUI.Tab.MetadataSettings._Impl, keyof semantic-ui-tab.SemanticUI.Tab.MetadataSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplLoaded extends StObject {
   
-  var loaded: js.UndefOr[String] = js.native
+  var loaded: js.UndefOr[String] = js.undefined
   
-  var promise: js.UndefOr[String] = js.native
+  var promise: js.UndefOr[String] = js.undefined
   
-  var tab: js.UndefOr[String] = js.native
+  var tab: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplLoaded {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsCloudidentityDevicesV1WipeDeviceResponse extends StObject {
   
   /** Resultant Device object for the action. Note that asset tags will not be returned in the device object. */
-  var device: js.UndefOr[GoogleAppsCloudidentityDevicesV1Device] = js.native
+  var device: js.UndefOr[GoogleAppsCloudidentityDevicesV1Device] = js.undefined
 }
 object GoogleAppsCloudidentityDevicesV1WipeDeviceResponse {
   

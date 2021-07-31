@@ -13,16 +13,16 @@ import typings.browserfs.zipFSMod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofZipFS
-  extends Instantiable1[(/* input */ Buffer) | (/* input */ ZipTOC), default]
+  extends StObject
+     with Instantiable1[(/* input */ Buffer) | (/* input */ ZipTOC), default]
      with Instantiable2[(/* input */ Buffer) | (/* input */ ZipTOC), /* name */ String, default]
      with Instantiable3[
       (/* input */ Buffer) | (/* input */ ZipTOC), 
-      js.UndefOr[/* name */ String], 
+      (/* name */ String) | (/* name */ Unit), 
       /* deprecateMsg */ Boolean, 
       default
     ] {

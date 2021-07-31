@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceIpConfig extends StObject {
   
   /**
     * A list of one to ten Classless Inter-Domain Routing (CIDR) values. Maximum: Ten CIDR values  The following Length Constraints apply to individual CIDR values in the CIDR value list. 
     */
-  var Cidrs: typings.awsSdk.sagemakerMod.Cidrs = js.native
+  var Cidrs: typings.awsSdk.sagemakerMod.Cidrs
 }
 object SourceIpConfig {
   

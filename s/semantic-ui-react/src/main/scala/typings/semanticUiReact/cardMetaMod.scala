@@ -10,7 +10,6 @@ import typings.semanticUiReact.semanticUiReactStrings.left
 import typings.semanticUiReact.semanticUiReactStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMetaMod extends Shortcut {
@@ -19,9 +18,9 @@ object cardMetaMod extends Shortcut {
   @js.native
   val default: StatelessComponent[CardMetaProps] = js.native
   
-  @js.native
   trait CardMetaProps
-    extends StrictCardMetaProps
+    extends StObject
+       with StrictCardMetaProps
        with /* key */ StringDictionary[js.Any]
   object CardMetaProps {
     
@@ -32,23 +31,22 @@ object cardMetaMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCardMetaProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A card meta can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
   }
   object StrictCardMetaProps {
     

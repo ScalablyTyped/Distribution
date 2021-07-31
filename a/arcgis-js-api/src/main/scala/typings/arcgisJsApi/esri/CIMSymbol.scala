@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.cim
 import typings.arcgisJsApi.esri.CIM.CIMSymbolReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CIMSymbol extends Symbol {
+trait CIMSymbol
+  extends StObject
+     with Symbol {
   
   /**
     * The JSON payload of the [CIMSymbolReference](https://github.com/Esri/cim-spec/blob/master/docs/v2/CIMRenderers.md#CIMSymbolReference).

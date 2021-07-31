@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotVennClusterLayoutAlgorithmOptions extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait PlotVennClusterLayoutAlgorithmOptions extends StObject {
     * be inside the cluster. The distance is either a number defining pixels or
     * a percentage defining a percentage of the plot area width.
     */
-  var distance: js.UndefOr[Double | String] = js.native
+  var distance: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highmaps) When `type` is set to the `grid`, `gridSize` is a
     * size of a grid square element either as a number defining pixels, or a
     * percentage defining a percentage of the plot area width.
     */
-  var gridSize: js.UndefOr[Double | String] = js.native
+  var gridSize: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highmaps) When `type` is set to `kmeans`, `iterations` are
     * the number of iterations that this algorithm will be repeated to find
     * clusters positions.
     */
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) When `type` is set to `undefined` and there are
@@ -36,7 +34,7 @@ trait PlotVennClusterLayoutAlgorithmOptions extends StObject {
     * to find clusters, otherwise `kmeans`. It ensures good performance on
     * large datasets and better clusters arrangement after the zoom.
     */
-  var kmeansThreshold: js.UndefOr[Double] = js.native
+  var kmeansThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highmaps) Type of the algorithm used to combine points into
@@ -85,7 +83,7 @@ trait PlotVennClusterLayoutAlgorithmOptions extends StObject {
     * fewer points than set in `cluster.minimumClusterSize` it won't be
     * combined into a cluster.
     */
-  var `type`: js.UndefOr[String | js.Function] = js.native
+  var `type`: js.UndefOr[String | js.Function] = js.undefined
 }
 object PlotVennClusterLayoutAlgorithmOptions {
   

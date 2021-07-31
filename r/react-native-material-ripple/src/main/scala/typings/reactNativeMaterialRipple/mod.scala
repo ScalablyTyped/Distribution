@@ -7,7 +7,6 @@ import typings.reactNativeMaterialRipple.anon.AnimatedPropsViewProps
 import typings.reactNativeMaterialRipple.anon.Disabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,5 +18,5 @@ object mod {
   
   type Ripple = Component[RippleProps, js.Object, js.Any]
   
-  type RippleProps = TouchableWithoutFeedbackProps with Children with AnimatedPropsViewProps with Disabled
+  type RippleProps = TouchableWithoutFeedbackProps & Children & AnimatedPropsViewProps & Disabled
 }

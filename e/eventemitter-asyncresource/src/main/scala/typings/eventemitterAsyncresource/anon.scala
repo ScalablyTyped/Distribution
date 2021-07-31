@@ -9,14 +9,14 @@ import typings.node.asyncHooksMod.AsyncResource
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable0[EventEmitter]
+    extends StObject
+       with Instantiable0[EventEmitter]
        with Instantiable1[
           /* import warning: importer.ImportType#apply Failed type conversion: infer T */ /* options */ js.Any, 
           EventEmitter
@@ -24,17 +24,17 @@ object anon {
   
   @js.native
   trait InstantiableAsyncResource
-    extends Instantiable1[/* name */ String, AsyncResource]
+    extends StObject
+       with Instantiable1[/* name */ String, AsyncResource]
        with Instantiable2[
           /* name */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: infer T */ /* options */ js.Any, 
           AsyncResource
         ]
   
-  @js.native
   trait Name extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -64,8 +64,8 @@ object anon {
       * @param type An optional name to associate with the underlying `AsyncResource`.
       */
     /* static member */
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func): Func with typings.node.anon.AsyncResource = js.native
-    def bind[Func /* <: js.Function1[/* repeated */ js.Any, _] */](fn: Func, `type`: String): Func with typings.node.anon.AsyncResource = js.native
+    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func): Func & typings.node.anon.AsyncResource = js.native
+    def bind[Func /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: Func, `type`: String): Func & typings.node.anon.AsyncResource = js.native
   }
   
   @js.native
@@ -94,7 +94,8 @@ object anon {
   
   @js.native
   trait TypeofEventEmitterAsyncRe
-    extends Instantiable0[EventEmitterAsyncResource]
+    extends StObject
+       with Instantiable0[EventEmitterAsyncResource]
        with Instantiable1[(/* options */ Options) | (/* options */ String), EventEmitterAsyncResource] {
     
     def EventEmitterAsyncResource: /* import warning: importer.ImportType#apply Failed type conversion: typeof EventEmitterAsyncResource */ js.Any = js.native

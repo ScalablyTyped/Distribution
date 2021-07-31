@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionAlgorithm extends StObject {
   
   /** The encryption algorithm. */
-  var encryptionAlgorithm: js.UndefOr[String] = js.native
+  var encryptionAlgorithm: js.UndefOr[String] = js.undefined
   
   /** SHA256 hash value of the encryption key. */
-  var keySha256: js.UndefOr[String] = js.native
+  var keySha256: js.UndefOr[String] = js.undefined
 }
 object EncryptionAlgorithm {
   

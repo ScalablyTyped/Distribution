@@ -3,27 +3,28 @@ package typings.ink
 import typings.ink.domMod.DOMElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object measureElementMod {
   
-  @JSImport("ink/build/measure-element", JSImport.Default)
+  @JSImport("ink/build/measure-element", JSImport.Namespace)
   @js.native
-  def default(node: DOMElement): Output = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(node: DOMElement): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Output]
+  
   trait Output extends StObject {
     
     /**
       * Element height.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Element width.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object Output {
     

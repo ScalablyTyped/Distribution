@@ -4,27 +4,25 @@ import typings.octokitTypes.anon.Billingcycle
 import typings.octokitTypes.anon.Effectivedate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsGetSubscriptionPlanForAccountStubbedResponseData extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var login: String = js.native
+  var login: String
   
-  var marketplace_pending_change: Effectivedate = js.native
+  var marketplace_pending_change: Effectivedate
   
-  var marketplace_purchase: Billingcycle = js.native
+  var marketplace_purchase: Billingcycle
   
-  var organization_billing_email: String = js.native
+  var organization_billing_email: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object AppsGetSubscriptionPlanForAccountStubbedResponseData {
   

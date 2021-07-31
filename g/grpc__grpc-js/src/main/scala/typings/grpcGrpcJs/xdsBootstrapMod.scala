@@ -3,21 +3,22 @@ package typings.grpcGrpcJs
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xdsBootstrapMod {
   
-  @JSImport("@grpc/grpc-js/build/src/xds-bootstrap", "loadBootstrapInfo")
+  @JSImport("@grpc/grpc-js/build/src/xds-bootstrap", JSImport.Namespace)
   @js.native
-  def loadBootstrapInfo(): js.Promise[BootstrapInfo] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def loadBootstrapInfo(): js.Promise[BootstrapInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadBootstrapInfo")().asInstanceOf[js.Promise[BootstrapInfo]]
+  
   trait BootstrapInfo extends StObject {
     
-    var node: Node = js.native
+    var node: Node
     
-    var xdsServers: js.Array[XdsServerConfig] = js.native
+    var xdsServers: js.Array[XdsServerConfig]
   }
   object BootstrapInfo {
     
@@ -41,12 +42,11 @@ object xdsBootstrapMod {
     }
   }
   
-  @js.native
   trait ChannelCredsConfig extends StObject {
     
-    var config: js.UndefOr[js.Object] = js.native
+    var config: js.UndefOr[js.Object] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ChannelCredsConfig {
     
@@ -71,12 +71,11 @@ object xdsBootstrapMod {
     }
   }
   
-  @js.native
   trait XdsServerConfig extends StObject {
     
-    var channelCreds: js.Array[ChannelCredsConfig] = js.native
+    var channelCreds: js.Array[ChannelCredsConfig]
     
-    var serverUri: String = js.native
+    var serverUri: String
   }
   object XdsServerConfig {
     

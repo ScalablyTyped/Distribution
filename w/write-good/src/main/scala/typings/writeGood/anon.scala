@@ -2,17 +2,15 @@ package typings.writeGood
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Explanation extends StObject {
     
-    var explanation: String = js.native
+    var explanation: String
     
-    var fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any = js.native
+    var fn: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof WriteGood */ js.Any
   }
   object Explanation {
     

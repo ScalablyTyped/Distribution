@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThemeRequest extends StObject {
   
   /**
     * The alias of the theme that you want to describe. If you name a specific alias, you describe the version that the alias points to. You can specify the latest version of the theme by providing the keyword $LATEST in the AliasName parameter. The keyword $PUBLISHED doesn't apply to themes.
     */
-  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.native
+  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.undefined
   
   /**
     * The ID of the AWS account that contains the theme that you're describing.
     */
-  var AwsAccountId: AwsAndAccountId = js.native
+  var AwsAccountId: AwsAndAccountId
   
   /**
     * The ID for the theme.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
   
   /**
     * The version number for the version to describe. If a VersionNumber parameter value isn't provided, the latest version of the theme is described.
     */
-  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.native
+  var VersionNumber: js.UndefOr[typings.awsSdk.quicksightMod.VersionNumber] = js.undefined
 }
 object DescribeThemeRequest {
   

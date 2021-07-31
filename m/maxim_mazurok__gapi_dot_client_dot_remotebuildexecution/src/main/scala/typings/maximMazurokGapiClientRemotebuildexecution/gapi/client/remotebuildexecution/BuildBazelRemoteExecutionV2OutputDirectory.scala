@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBazelRemoteExecutionV2OutputDirectory extends StObject {
   
   /**
     * The full path of the directory relative to the working directory. The path separator is a forward slash `/`. Since this is a relative path, it MUST NOT begin with a leading forward
     * slash. The empty string value is allowed, and it denotes the entire working directory.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** The digest of the encoded Tree proto containing the directory's contents. */
-  var treeDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.native
+  var treeDigest: js.UndefOr[BuildBazelRemoteExecutionV2Digest] = js.undefined
 }
 object BuildBazelRemoteExecutionV2OutputDirectory {
   

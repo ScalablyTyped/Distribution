@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyIndividualStudentsOptions extends StObject {
   
   /** IDs of students to be added as having access to this coursework/announcement. */
-  var addStudentIds: js.UndefOr[js.Array[String]] = js.native
+  var addStudentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** IDs of students to be removed from having access to this coursework/announcement. */
-  var removeStudentIds: js.UndefOr[js.Array[String]] = js.native
+  var removeStudentIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyIndividualStudentsOptions {
   

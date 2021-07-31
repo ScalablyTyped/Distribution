@@ -5,7 +5,6 @@ import typings.compareVersions.compareVersionsNumbers.`0`
 import typings.compareVersions.compareVersionsNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,12 @@ object mod {
     * @param secondVersion - Second version to compare
     * @returns Numeric value compatible with the [Array.sort(fn) interface](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort#Parameters).
     */
+  @scala.inline
+  def apply(firstVersion: String, secondVersion: String): `1` | `0` | `-1` = (^.asInstanceOf[js.Dynamic].apply(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any])).asInstanceOf[`1` | `0` | `-1`]
+  
   @JSImport("compare-versions", JSImport.Namespace)
   @js.native
-  def apply(firstVersion: String, secondVersion: String): `1` | `0` | `-1` = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Compare [semver](https://semver.org/) version strings using the specified operator.
@@ -38,9 +40,8 @@ object mod {
     * compareVersions.compare('10.1.1', '10.2.2', '>='); // return false
     * ```
     */
-  @JSImport("compare-versions", "compare")
-  @js.native
-  def compare(firstVersion: String, secondVersion: String, operator: CompareOperator): Boolean = js.native
+  @scala.inline
+  def compare(firstVersion: String, secondVersion: String, operator: CompareOperator): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compare")(firstVersion.asInstanceOf[js.Any], secondVersion.asInstanceOf[js.Any], operator.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Validate [semver](https://semver.org/) version strings.
@@ -55,9 +56,8 @@ object mod {
     * compareVersions.validate('foo'); // return false
     * ```
     */
-  @JSImport("compare-versions", "validate")
-  @js.native
-  def validate(version: String): Boolean = js.native
+  @scala.inline
+  def validate(version: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(version.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Allowed arithmetic operators

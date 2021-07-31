@@ -3,21 +3,19 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemTypeStateInfo extends StObject {
   
   /**
     * State name to state category map
     */
-  var states: StringDictionary[String] = js.native
+  var states: StringDictionary[String]
   
   /**
     * Work Item type name
     */
-  var workItemTypeName: String = js.native
+  var workItemTypeName: String
 }
 object WorkItemTypeStateInfo {
   

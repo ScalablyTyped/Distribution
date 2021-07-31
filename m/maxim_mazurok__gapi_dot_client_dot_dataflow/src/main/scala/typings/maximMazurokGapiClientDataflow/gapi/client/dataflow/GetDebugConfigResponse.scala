@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDebugConfigResponse extends StObject {
   
   /** The encoded debug configuration for the requested component. */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
 }
 object GetDebugConfigResponse {
   

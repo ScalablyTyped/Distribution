@@ -6,7 +6,6 @@ import typings.firefoxWebextBrowser.browser.omnibox.OnInputEnteredDisposition
 import typings.firefoxWebextBrowser.browser.omnibox.SuggestResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Not allowed in: Content scripts, Devtools pages
   */
 object omnibox {
+  
+  @JSGlobal("browser.omnibox")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** User has ended the keyword input session without accepting the input. */
   @JSGlobal("browser.omnibox.onInputCancelled")
@@ -57,7 +60,6 @@ object omnibox {
     * Sets the description and styling for the default suggestion. The default suggestion is the text that is displayed in the first suggestion row underneath the URL bar.
     * @param suggestion A partial SuggestResult object, without the 'content' parameter.
     */
-  @JSGlobal("browser.omnibox.setDefaultSuggestion")
-  @js.native
-  def setDefaultSuggestion(suggestion: DefaultSuggestResult): Unit = js.native
+  @scala.inline
+  def setDefaultSuggestion(suggestion: DefaultSuggestResult): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSuggestion")(suggestion.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

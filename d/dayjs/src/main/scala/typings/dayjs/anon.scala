@@ -2,19 +2,17 @@ package typings.dayjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object Format {
     
@@ -48,28 +46,27 @@ object anon {
   }
   
   /* Inlined std.Partial<dayjs.ILocale> */
-  @js.native
   trait PartialILocale extends StObject {
     
-    var formats: js.UndefOr[PartialLTstringLTSstringL] = js.native
+    var formats: js.UndefOr[PartialLTstringLTSstringL] = js.undefined
     
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
-    var monthsShort: js.UndefOr[js.Array[String]] = js.native
+    var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.native
+    var ordinal: js.UndefOr[js.Function1[/* n */ Double, Double | String]] = js.undefined
     
-    var relativeTime: js.UndefOr[Partialfuturestringpastst] = js.native
+    var relativeTime: js.UndefOr[Partialfuturestringpastst] = js.undefined
     
-    var weekStart: js.UndefOr[Double] = js.native
+    var weekStart: js.UndefOr[Double] = js.undefined
     
-    var weekdays: js.UndefOr[js.Array[String]] = js.native
+    var weekdays: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdaysMin: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysMin: js.UndefOr[js.Array[String]] = js.undefined
     
-    var weekdaysShort: js.UndefOr[js.Array[String]] = js.native
+    var weekdaysShort: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialILocale {
     
@@ -160,20 +157,19 @@ object anon {
   }
   
   /* Inlined std.Partial<{  LT :string,   LTS :string,   L :string,   LL :string,   LLL :string,   LLLL :string}> */
-  @js.native
   trait PartialLTstringLTSstringL extends StObject {
     
-    var L: js.UndefOr[String] = js.native
+    var L: js.UndefOr[String] = js.undefined
     
-    var LL: js.UndefOr[String] = js.native
+    var LL: js.UndefOr[String] = js.undefined
     
-    var LLL: js.UndefOr[String] = js.native
+    var LLL: js.UndefOr[String] = js.undefined
     
-    var LLLL: js.UndefOr[String] = js.native
+    var LLLL: js.UndefOr[String] = js.undefined
     
-    var LT: js.UndefOr[String] = js.native
+    var LT: js.UndefOr[String] = js.undefined
     
-    var LTS: js.UndefOr[String] = js.native
+    var LTS: js.UndefOr[String] = js.undefined
   }
   object PartialLTstringLTSstringL {
     
@@ -225,34 +221,33 @@ object anon {
   }
   
   /* Inlined std.Partial<{  future :string,   past :string,   s :string,   m :string,   mm :string,   h :string,   hh :string,   d :string,   dd :string,   M :string,   MM :string,   y :string,   yy :string}> */
-  @js.native
   trait Partialfuturestringpastst extends StObject {
     
-    var M: js.UndefOr[String] = js.native
+    var M: js.UndefOr[String] = js.undefined
     
-    var MM: js.UndefOr[String] = js.native
+    var MM: js.UndefOr[String] = js.undefined
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var dd: js.UndefOr[String] = js.native
+    var dd: js.UndefOr[String] = js.undefined
     
-    var future: js.UndefOr[String] = js.native
+    var future: js.UndefOr[String] = js.undefined
     
-    var h: js.UndefOr[String] = js.native
+    var h: js.UndefOr[String] = js.undefined
     
-    var hh: js.UndefOr[String] = js.native
+    var hh: js.UndefOr[String] = js.undefined
     
-    var m: js.UndefOr[String] = js.native
+    var m: js.UndefOr[String] = js.undefined
     
-    var mm: js.UndefOr[String] = js.native
+    var mm: js.UndefOr[String] = js.undefined
     
-    var past: js.UndefOr[String] = js.native
+    var past: js.UndefOr[String] = js.undefined
     
-    var s: js.UndefOr[String] = js.native
+    var s: js.UndefOr[String] = js.undefined
     
-    var y: js.UndefOr[String] = js.native
+    var y: js.UndefOr[String] = js.undefined
     
-    var yy: js.UndefOr[String] = js.native
+    var yy: js.UndefOr[String] = js.undefined
   }
   object Partialfuturestringpastst {
     

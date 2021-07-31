@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.ApiSettings._Impl, 'loadingDuration'> */
-@js.native
 trait PickImplloadingDuration extends StObject {
   
-  var loadingDuration: Double = js.native
+  var loadingDuration: Double
 }
 object PickImplloadingDuration {
   

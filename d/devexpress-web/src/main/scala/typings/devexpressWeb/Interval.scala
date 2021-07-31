@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a document's interval.
   */
-@js.native
 trait Interval extends StObject {
   
   /**
     * Gets the interval's character length.
     */
-  var length: Double = js.native
+  var length: Double
   
   /**
     * Gets the interval's start position in the document.
     */
-  var start: Double = js.native
+  var start: Double
 }
 object Interval {
   

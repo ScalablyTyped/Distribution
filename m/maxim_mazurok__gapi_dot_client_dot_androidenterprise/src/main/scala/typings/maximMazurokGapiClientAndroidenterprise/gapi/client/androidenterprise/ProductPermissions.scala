@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductPermissions extends StObject {
   
   /** The permissions required by the app. */
-  var permission: js.UndefOr[js.Array[ProductPermission]] = js.native
+  var permission: js.UndefOr[js.Array[ProductPermission]] = js.undefined
   
   /** The ID of the app that the permissions relate to, e.g. "app:com.google.android.gm". */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object ProductPermissions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTemplateVersionTagRequest extends StObject {
   
   /** The flag that indicates if the request is only for remove tag from TemplateVersion. */
-  var removeOnly: js.UndefOr[Boolean] = js.native
+  var removeOnly: js.UndefOr[Boolean] = js.undefined
   
   /** The tag for update. */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
 }
 object ModifyTemplateVersionTagRequest {
   

@@ -17,27 +17,26 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meta {
   
   /** identifies a {@link XFormulaParser} which allows to retrieve the meta data of all supported functions. */
-  @js.native
   trait XFormulaParser
-    extends XComponent
+    extends StObject
+       with XComponent
        with typings.activexLibreoffice.com_.sun.star.sheet.XFormulaParser
        with XPropertySet {
     
     /** return the mapper for op codes. */
-    var FormulaOpCodeMapper: XFormulaOpCodeMapper = js.native
+    var FormulaOpCodeMapper: XFormulaOpCodeMapper
     
     /**
       * The complete mapping of Names to OpCodes.
       *
       * Names and symbols not defined here lead to a parser/print error.
       */
-    var OpCodeMap: SafeArray[FormulaOpCodeMapEntry] = js.native
+    var OpCodeMap: SafeArray[FormulaOpCodeMapEntry]
   }
   object XFormulaParser {
     
@@ -78,22 +77,22 @@ object meta {
   }
   
   /** identifies a {@link XFunctionCategory} which allows to retrieve the meta data of all supported functions. */
-  @js.native
   trait XFunctionCategory
-    extends XIndexAccess
-       with XPropertySet {
+    extends StObject
+       with XPropertySet
+       with XIndexAccess {
     
     /** returns the localized category's name. */
-    var Name: String = js.native
+    var Name: String
     
     /** specifies the category number. */
-    var Number: Double = js.native
+    var Number: Double
     
     /**
       * same as getByIndex.
       * @see com.sun.star.container.XIndexAccess
       */
-    def getFunction(position: Double): XFunctionDescription = js.native
+    def getFunction(position: Double): XFunctionDescription
   }
   object XFunctionCategory {
     
@@ -139,25 +138,26 @@ object meta {
   }
   
   /** identifies a {@link XFunctionDescription} which allows to retrieve the meta data of all supported functions. */
-  @js.native
-  trait XFunctionDescription extends XPropertySet {
+  trait XFunctionDescription
+    extends StObject
+       with XPropertySet {
     
     /** returns a sequence of localized descriptions of the function's arguments (in the order specified by the function). */
-    var Arguments: SafeArray[FunctionArgument] = js.native
+    var Arguments: SafeArray[FunctionArgument]
     
     /** specifies the category number. */
-    var Category: XFunctionCategory = js.native
+    var Category: XFunctionCategory
     
     /** returns a localized description of the function. */
-    var Description: String = js.native
+    var Description: String
     
     /** returns the localized function's name. */
-    var Name: String = js.native
+    var Name: String
     
     /** returns the signature of the function. */
-    var Signature: String = js.native
+    var Signature: String
     
-    def createFormula(arguments: SeqEquiv[String]): String = js.native
+    def createFormula(arguments: SeqEquiv[String]): String
   }
   object XFunctionDescription {
     
@@ -209,23 +209,23 @@ object meta {
   }
   
   /** identifies a {@link XFunctionManager} which allows to retrieve the meta data of all supported functions. */
-  @js.native
   trait XFunctionManager
-    extends XIndexAccess
-       with XComponent {
+    extends StObject
+       with XComponent
+       with XIndexAccess {
     
     /**
       * same as getByIndex.
       * @param position The position.
       * @see com.sun.star.container.XIndexAccess
       */
-    def getCategory(position: Double): XFunctionCategory = js.native
+    def getCategory(position: Double): XFunctionCategory
     
     /**
       * get the function description by name
       * @param name the name of the function
       */
-    def getFunctionByName(name: String): XFunctionDescription = js.native
+    def getFunctionByName(name: String): XFunctionDescription
   }
   object XFunctionManager {
     

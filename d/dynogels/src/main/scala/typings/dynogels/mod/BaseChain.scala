@@ -2,31 +2,29 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseChain[T] extends StObject {
   
-  def beginsWith(value: js.Any): T = js.native
+  def beginsWith(value: js.Any): T
   
-  def between(value1: js.Any, value2: js.Any): T = js.native
+  def between(value1: js.Any, value2: js.Any): T
   
-  def eq(value: js.Any): T = js.native
+  def eq(value: js.Any): T
   
-  def equals(value: js.Any): T = js.native
+  def equals(value: js.Any): T
   
-  def exists(): T = js.native
+  def exists(): T
   
-  def gt(value: js.Any): T = js.native
+  def gt(value: js.Any): T
   
-  def gte(value: js.Any): T = js.native
+  def gte(value: js.Any): T
   
-  def lt(value: js.Any): T = js.native
+  def lt(value: js.Any): T
   
-  def lte(value: js.Any): T = js.native
+  def lte(value: js.Any): T
   
-  def `null`(): T = js.native
+  def `null`(): T
 }
 object BaseChain {
   
@@ -51,7 +49,7 @@ object BaseChain {
   }
   
   @scala.inline
-  implicit class BaseChainMutableBuilder[Self <: BaseChain[_], T] (val x: Self with BaseChain[T]) extends AnyVal {
+  implicit class BaseChainMutableBuilder[Self <: BaseChain[?], T] (val x: Self & BaseChain[T]) extends AnyVal {
     
     @scala.inline
     def setBeginsWith(value: js.Any => T): Self = StObject.set(x, "beginsWith", js.Any.fromFunction1(value))

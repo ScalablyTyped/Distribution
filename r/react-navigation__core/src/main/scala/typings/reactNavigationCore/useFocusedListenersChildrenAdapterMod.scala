@@ -5,21 +5,22 @@ import typings.reactNavigationCore.typesMod.NavigationHelpers
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusedListenersChildrenAdapterMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useFocusedListenersChildrenAdapter", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useFocusedListenersChildrenAdapter", JSImport.Namespace)
   @js.native
-  def default(hasNavigationFocusedListeners: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasNavigationFocusedListeners: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationFocusedListeners.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var focusedListeners: js.Array[FocusedNavigationListener] = js.native
+    var focusedListeners: js.Array[FocusedNavigationListener]
     
-    var navigation: NavigationHelpers[ParamListBase, js.Object] = js.native
+    var navigation: NavigationHelpers[ParamListBase, js.Object]
   }
   object Options {
     

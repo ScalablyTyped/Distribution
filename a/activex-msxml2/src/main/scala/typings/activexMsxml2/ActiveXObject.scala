@@ -6,7 +6,6 @@ import typings.activexMsxml2.activexMsxml2Strings.ondataavailable
 import typings.activexMsxml2.activexMsxml2Strings.onreadystatechange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

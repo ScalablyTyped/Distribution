@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePipelineInput extends StObject {
   
   /**
     * Represents the structure of actions and stages to be performed in the pipeline. 
     */
-  var pipeline: PipelineDeclaration = js.native
+  var pipeline: PipelineDeclaration
   
   /**
     * The tags for the pipeline.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreatePipelineInput {
   

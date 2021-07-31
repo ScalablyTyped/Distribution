@@ -2,31 +2,29 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Compute Engine network accessConfig. Identical to the accessConfig on
   * corresponding Compute Engine resource.
   */
-@js.native
 trait SchemaAccessConfig extends StObject {
   
   /**
     * Name of this access configuration.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * An external IP address associated with this instance.
     */
-  var natIp: js.UndefOr[String] = js.native
+  var natIp: js.UndefOr[String] = js.undefined
   
   /**
     * Type of this access configuration file. Currently only ONE_TO_ONE_NAT is
     * supported.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAccessConfig {
   

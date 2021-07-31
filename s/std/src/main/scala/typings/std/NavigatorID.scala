@@ -2,29 +2,27 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorID extends StObject {
   
-  val appCodeName: java.lang.String = js.native
+  val appCodeName: java.lang.String
   
-  val appName: java.lang.String = js.native
+  val appName: java.lang.String
   
-  val appVersion: java.lang.String = js.native
+  val appVersion: java.lang.String
   
-  val platform: java.lang.String = js.native
+  val platform: java.lang.String
   
-  val product: java.lang.String = js.native
+  val product: java.lang.String
   
-  val productSub: java.lang.String = js.native
+  val productSub: java.lang.String
   
-  val userAgent: java.lang.String = js.native
+  val userAgent: java.lang.String
   
-  val vendor: java.lang.String = js.native
+  val vendor: java.lang.String
   
-  val vendorSub: java.lang.String = js.native
+  val vendorSub: java.lang.String
 }
 object NavigatorID {
   

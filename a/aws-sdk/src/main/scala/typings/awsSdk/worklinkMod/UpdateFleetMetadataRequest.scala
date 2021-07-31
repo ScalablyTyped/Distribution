@@ -2,26 +2,24 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFleetMetadataRequest extends StObject {
   
   /**
     * The fleet name to display. The existing DisplayName is unset if null is passed.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * The ARN of the fleet.
     */
-  var FleetArn: typings.awsSdk.worklinkMod.FleetArn = js.native
+  var FleetArn: typings.awsSdk.worklinkMod.FleetArn
   
   /**
     * The option to optimize for better performance by routing traffic through the closest AWS Region to users, which may be outside of your home Region.
     */
-  var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.native
+  var OptimizeForEndUserLocation: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateFleetMetadataRequest {
   

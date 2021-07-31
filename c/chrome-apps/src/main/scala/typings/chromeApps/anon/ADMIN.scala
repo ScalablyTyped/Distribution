@@ -7,27 +7,25 @@ import typings.chromeApps.chromeAppsStrings.other_
 import typings.chromeApps.chromeAppsStrings.sideload_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ADMIN extends StObject {
   
-  var ADMIN: admin_ = js.native
+  var ADMIN: admin_
   
-  var DEVELOPMENT: development_ = js.native
+  var DEVELOPMENT: development_
   
-  var NORMAL: normal_ = js.native
+  var NORMAL: normal_
   
-  var OTHER: other_ = js.native
+  var OTHER: other_
   
-  var SIDELOAD: sideload_ = js.native
+  var SIDELOAD: sideload_
 }
 object ADMIN {
   
   @scala.inline
-  def apply(ADMIN: admin_, DEVELOPMENT: development_, NORMAL: normal_, OTHER: other_, SIDELOAD: sideload_): ADMIN = {
-    val __obj = js.Dynamic.literal(ADMIN = ADMIN.asInstanceOf[js.Any], DEVELOPMENT = DEVELOPMENT.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], OTHER = OTHER.asInstanceOf[js.Any], SIDELOAD = SIDELOAD.asInstanceOf[js.Any])
+  def apply(): ADMIN = {
+    val __obj = js.Dynamic.literal(ADMIN = "admin", DEVELOPMENT = "development", NORMAL = "normal", OTHER = "other", SIDELOAD = "sideload")
     __obj.asInstanceOf[ADMIN]
   }
   

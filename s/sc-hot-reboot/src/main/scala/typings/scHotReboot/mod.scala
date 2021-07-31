@@ -1,18 +1,18 @@
 package typings.scHotReboot
 
 import typings.chokidar.mod.WatchOptions
-import typings.socketcluster.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sc-hot-reboot", "attach")
+  @JSImport("sc-hot-reboot", JSImport.Namespace)
   @js.native
-  def attach(scMasterInstance: ^): Unit = js.native
-  @JSImport("sc-hot-reboot", "attach")
-  @js.native
-  def attach(scMasterInstance: ^, options: WatchOptions): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def attach(scMasterInstance: typings.socketcluster.mod.^): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def attach(scMasterInstance: typings.socketcluster.mod.^, options: WatchOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(scMasterInstance.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Retrieves and sets properties used for fetching a PlayReady-ND license. */
-@js.native
 trait NDLicenseFetchDescriptor extends StObject {
   
   /** Gets the content identifer. */
-  var contentID: Double = js.native
+  var contentID: Double
   
   /** Gets the type of the content identifier. */
-  var contentIDType: NDContentIDType = js.native
+  var contentIDType: NDContentIDType
   
   /** Gets or sets custom data for a license fetch challenge. */
-  var licenseFetchChallengeCustomData: INDCustomData = js.native
+  var licenseFetchChallengeCustomData: INDCustomData
 }
 object NDLicenseFetchDescriptor {
   

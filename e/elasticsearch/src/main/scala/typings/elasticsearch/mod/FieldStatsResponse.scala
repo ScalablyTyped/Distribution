@@ -3,17 +3,15 @@ package typings.elasticsearch.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldStatsResponse extends StObject {
   
-  var _shards: ShardsResponse = js.native
+  var _shards: ShardsResponse
   
-  var conflicts: js.UndefOr[StringDictionary[String]] = js.native
+  var conflicts: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var indices: StringDictionary[FieldStatsResponseIndex] = js.native
+  var indices: StringDictionary[FieldStatsResponseIndex]
 }
 object FieldStatsResponse {
   

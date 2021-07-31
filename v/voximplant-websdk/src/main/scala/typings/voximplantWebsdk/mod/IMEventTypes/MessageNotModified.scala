@@ -3,29 +3,29 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched if error happened during instant message modification
   */
-@js.native
-trait MessageNotModified extends VoxImplantIMEvent {
+trait MessageNotModified
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    Message new content
     */
-  var code: Double = js.native
+  var code: Double
   
   /**
     *    Message id
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     *    User id (of the user to whom the message was sent)
     */
-  var to: String = js.native
+  var to: String
 }
 object MessageNotModified {
   

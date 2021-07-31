@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rotJs.anon.PartialOptionsCorridorLength
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diggerMod {
@@ -66,18 +65,17 @@ object diggerMod {
     var _walls: StringDictionary[Double] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var corridorLength: js.Tuple2[Double, Double] = js.native
+    var corridorLength: js.Tuple2[Double, Double]
     
-    var dugPercentage: Double = js.native
+    var dugPercentage: Double
     
-    var roomHeight: js.Tuple2[Double, Double] = js.native
+    var roomHeight: js.Tuple2[Double, Double]
     
-    var roomWidth: js.Tuple2[Double, Double] = js.native
+    var roomWidth: js.Tuple2[Double, Double]
     
-    var timeLimit: Double = js.native
+    var timeLimit: Double
   }
   object Options {
     

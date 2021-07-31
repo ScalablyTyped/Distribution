@@ -2,14 +2,15 @@ package typings.mendixmodelsdk.pagesMod.pages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * See: {@link https://docs.mendix.com/refguide/layout relevant section in reference guide}
   */
 @js.native
-trait ILayout extends IFormBase {
+trait ILayout
+  extends StObject
+     with IFormBase {
   
   /**
     * This property is required and cannot be set to null.

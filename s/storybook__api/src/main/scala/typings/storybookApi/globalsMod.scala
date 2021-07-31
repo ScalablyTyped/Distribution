@@ -4,7 +4,6 @@ import typings.storybookApi.mod.Args
 import typings.storybookApi.mod.ModuleFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalsMod {
@@ -13,10 +12,9 @@ object globalsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def updateGlobals(newGlobals: Args): Unit = js.native
+    def updateGlobals(newGlobals: Args): Unit
   }
   object SubAPI {
     
@@ -34,10 +32,9 @@ object globalsMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var globals: Args = js.native
+    var globals: Args
   }
   object SubState {
     

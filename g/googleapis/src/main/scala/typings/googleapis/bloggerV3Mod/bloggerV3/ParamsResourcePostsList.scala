@@ -6,74 +6,74 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePostsList extends StandardParameters {
+trait ParamsResourcePostsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of the blog to fetch posts from.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * Latest post date to fetch, a date-time with RFC 3339 formatting.
     */
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the body content of posts is included (default: true). This
     * should be set to false when the post bodies are not required, to help
     * minimize traffic.
     */
-  var fetchBodies: js.UndefOr[Boolean] = js.native
+  var fetchBodies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether image URL metadata for each post is included.
     */
-  var fetchImages: js.UndefOr[Boolean] = js.native
+  var fetchImages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comma-separated list of labels to search for.
     */
-  var labels: js.UndefOr[String] = js.native
+  var labels: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of posts to fetch.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Sort search results
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token if the request is paged.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Earliest post date to fetch, a date-time with RFC 3339 formatting.
     */
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /**
     * Statuses to include in the results.
     */
-  var status: js.UndefOr[js.Array[String]] = js.native
+  var status: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Access level with which to view the returned result. Note that some
     * fields require escalated access.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePostsList {
   

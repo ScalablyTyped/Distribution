@@ -4,18 +4,19 @@ import typings.esFeatureDetection.anon.RecordES2015BuiltinsES201
 import typings.esFeatureDetection.anon.RecordES2015SyntaxES2016S
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("es-feature-detection", "builtins")
+  @JSImport("es-feature-detection", JSImport.Namespace)
   @js.native
-  def builtins(): RecordES2015BuiltinsES201 = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("es-feature-detection", "syntax")
-  @js.native
-  def syntax(): RecordES2015SyntaxES2016S = js.native
+  @scala.inline
+  def builtins(): RecordES2015BuiltinsES201 = ^.asInstanceOf[js.Dynamic].applyDynamic("builtins")().asInstanceOf[RecordES2015BuiltinsES201]
+  
+  @scala.inline
+  def syntax(): RecordES2015SyntaxES2016S = ^.asInstanceOf[js.Dynamic].applyDynamic("syntax")().asInstanceOf[RecordES2015SyntaxES2016S]
   
   /* Rewritten from type alias, can be one of: 
     - typings.esFeatureDetection.esFeatureDetectionStrings.__all

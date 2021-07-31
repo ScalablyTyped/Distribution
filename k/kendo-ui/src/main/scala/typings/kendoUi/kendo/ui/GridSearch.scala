@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridSearch extends StObject {
   
-  var fields: js.UndefOr[js.Any] = js.native
+  var fields: js.UndefOr[js.Any] = js.undefined
 }
 object GridSearch {
   

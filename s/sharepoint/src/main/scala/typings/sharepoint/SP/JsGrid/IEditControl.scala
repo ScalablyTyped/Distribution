@@ -4,43 +4,41 @@ import typings.microsoftAjax.Sys.UI.DomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditControl extends StObject {
   
-  def BindToCell(cellContext: IEditControlCellContext): Unit = js.native
+  def BindToCell(cellContext: IEditControlCellContext): Unit
   
-  def Dispose(): Unit = js.native
+  def Dispose(): Unit
   
-  var Focus: js.UndefOr[js.Function1[/* eventInfo */ DomEvent, Unit]] = js.native
+  var Focus: js.UndefOr[js.Function1[/* eventInfo */ DomEvent, Unit]] = js.undefined
   
-  var GetCellContext: js.UndefOr[js.Function0[IEditControlCellContext]] = js.native
+  var GetCellContext: js.UndefOr[js.Function0[IEditControlCellContext]] = js.undefined
   
-  var GetInputElement: js.UndefOr[js.Function0[HTMLElement]] = js.native
+  var GetInputElement: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
   
-  var GetOriginalValue: js.UndefOr[js.Function0[IValue]] = js.native
+  var GetOriginalValue: js.UndefOr[js.Function0[IValue]] = js.undefined
   
-  var IsCurrentlyUsingGridTextInputElement: js.UndefOr[js.Function0[Boolean]] = js.native
+  var IsCurrentlyUsingGridTextInputElement: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  def OnBeginEdit(eventInfo: DomEvent): Unit = js.native
+  def OnBeginEdit(eventInfo: DomEvent): Unit
   
-  var OnCellMove: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnCellMove: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  def OnEndEdit(): Unit = js.native
+  def OnEndEdit(): Unit
   
-  var OnValueChanged: js.UndefOr[js.Function1[/* newValue */ IValue, Unit]] = js.native
+  var OnValueChanged: js.UndefOr[js.Function1[/* newValue */ IValue, Unit]] = js.undefined
   
-  var SetSize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.native
+  var SetSize: js.UndefOr[js.Function2[/* width */ Double, /* height */ Double, Unit]] = js.undefined
   
-  var SetValue: js.UndefOr[js.Function1[/* value */ IValue, Unit]] = js.native
+  var SetValue: js.UndefOr[js.Function1[/* value */ IValue, Unit]] = js.undefined
   
-  var SupportedReadMode: js.UndefOr[EditActorReadType] = js.native
+  var SupportedReadMode: js.UndefOr[EditActorReadType] = js.undefined
   
-  var SupportedWriteMode: js.UndefOr[EditActorWriteType] = js.native
+  var SupportedWriteMode: js.UndefOr[EditActorWriteType] = js.undefined
   
-  def Unbind(): Unit = js.native
+  def Unbind(): Unit
 }
 object IEditControl {
   

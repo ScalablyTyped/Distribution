@@ -2,29 +2,27 @@ package typings.vueRouter.routerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
-  var fullPath: String = js.native
+  var fullPath: String
   
-  var hash: String = js.native
+  var hash: String
   
-  var matched: js.Array[RouteRecord] = js.native
+  var matched: js.Array[RouteRecord]
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
-  var params: Dictionary[String] = js.native
+  var params: Dictionary[String]
   
-  var path: String = js.native
+  var path: String
   
-  var query: Dictionary[String | (js.Array[String | Null])] = js.native
+  var query: Dictionary[String | (js.Array[String | Null])]
   
-  var redirectedFrom: js.UndefOr[String] = js.native
+  var redirectedFrom: js.UndefOr[String] = js.undefined
 }
 object Route {
   

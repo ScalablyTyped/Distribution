@@ -5,7 +5,6 @@ import typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1.Optio
 import typings.googleapis.googleapisStrings.v1beta1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

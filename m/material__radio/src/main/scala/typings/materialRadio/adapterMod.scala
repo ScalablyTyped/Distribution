@@ -2,19 +2,17 @@ package typings.materialRadio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCRadioAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
-    def setNativeControlDisabled(disabled: Boolean): Unit = js.native
+    def setNativeControlDisabled(disabled: Boolean): Unit
   }
   object MDCRadioAdapter {
     

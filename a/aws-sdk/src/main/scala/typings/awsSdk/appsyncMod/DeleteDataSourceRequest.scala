@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDataSourceRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The name of the data source.
     */
-  var name: ResourceName = js.native
+  var name: ResourceName
 }
 object DeleteDataSourceRequest {
   

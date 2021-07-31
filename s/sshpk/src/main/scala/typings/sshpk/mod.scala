@@ -5,14 +5,18 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sshpk", JSImport.Namespace)
   @js.native
-  class ^ () extends SshPK
+  class ^ ()
+    extends StObject
+       with SshPK
+  @JSImport("sshpk", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sshpk", "Algo")
   @js.native
@@ -71,14 +75,12 @@ object mod {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("sshpk", "Certificate.create")
-    @js.native
-    def create(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey, options: js.Any): Certificate = js.native
+    @scala.inline
+    def create(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], issuerKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /* static member */
-    @JSImport("sshpk", "Certificate.createSelfSigned")
-    @js.native
-    def createSelfSigned(subjectOrSubjects: String, key: Key, options: js.Any): Certificate = js.native
+    @scala.inline
+    def createSelfSigned(subjectOrSubjects: String, key: Key, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelfSigned")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /* static member */
     @JSImport("sshpk", "Certificate.formats")
@@ -88,26 +90,30 @@ object mod {
     def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("sshpk", "Certificate.isCertificate")
-    @js.native
-    def isCertificate(data: String, ver: String): Boolean = js.native
-    @JSImport("sshpk", "Certificate.isCertificate")
-    @js.native
-    def isCertificate(data: Buffer, ver: String): Boolean = js.native
+    @scala.inline
+    def isCertificate(data: String, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(data.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isCertificate(data: Buffer, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(data.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("sshpk", "Certificate.parse")
-    @js.native
-    def parse(data: String, format: String, options: js.Any): Certificate = js.native
-    @JSImport("sshpk", "Certificate.parse")
-    @js.native
-    def parse(data: Buffer, format: String, options: js.Any): Certificate = js.native
+    @scala.inline
+    def parse(data: String, format: String, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def parse(data: Buffer, format: String, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
   }
   
   @JSImport("sshpk", "CertificateParseError")
   @js.native
-  class CertificateParseError protected () extends Error {
+  class CertificateParseError protected ()
+    extends StObject
+       with Error {
     def this(name: String, format: String, innerErr: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "Curve")
@@ -193,16 +199,27 @@ object mod {
   }
   object Fingerprint {
     
-    /* static member */
-    @JSImport("sshpk", "Fingerprint.parse")
+    @JSImport("sshpk", "Fingerprint")
     @js.native
-    def parse(fp: String, options: js.Any): Fingerprint = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def parse(fp: String, options: js.Any): Fingerprint = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(fp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fingerprint]
   }
   
   @JSImport("sshpk", "FingerprintFormatError")
   @js.native
-  class FingerprintFormatError protected () extends Error {
+  class FingerprintFormatError protected ()
+    extends StObject
+       with Error {
     def this(fp: Fingerprint, format: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "Format")
@@ -263,47 +280,51 @@ object mod {
   }
   object Identity {
     
-    /* static member */
-    @JSImport("sshpk", "Identity.forEmail")
+    @JSImport("sshpk", "Identity")
     @js.native
-    def forEmail(email: String): Identity = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("sshpk", "Identity.forHost")
-    @js.native
-    def forHost(hostname: String): Identity = js.native
+    @scala.inline
+    def forEmail(email: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("forEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Identity]
     
     /* static member */
-    @JSImport("sshpk", "Identity.forUser")
-    @js.native
-    def forUser(uid: String): Identity = js.native
-    
-    @JSImport("sshpk", "Identity.isIdentity")
-    @js.native
-    def isIdentity(dn: String, ver: String): Boolean = js.native
-    /* static member */
-    @JSImport("sshpk", "Identity.isIdentity")
-    @js.native
-    def isIdentity(dn: Buffer, ver: String): Boolean = js.native
-    
-    @JSImport("sshpk", "Identity.parseAsn1")
-    @js.native
-    def parseAsn1(dn: String, top: String): Identity = js.native
-    /* static member */
-    @JSImport("sshpk", "Identity.parseAsn1")
-    @js.native
-    def parseAsn1(dn: Buffer, top: String): Identity = js.native
+    @scala.inline
+    def forHost(hostname: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("forHost")(hostname.asInstanceOf[js.Any]).asInstanceOf[Identity]
     
     /* static member */
-    @JSImport("sshpk", "Identity.parseDN")
-    @js.native
-    def parseDN(dn: String): Identity = js.native
+    @scala.inline
+    def forUser(uid: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("forUser")(uid.asInstanceOf[js.Any]).asInstanceOf[Identity]
+    
+    @scala.inline
+    def isIdentity(dn: String, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentity")(dn.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    /* static member */
+    @scala.inline
+    def isIdentity(dn: Buffer, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentity")(dn.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def parseAsn1(dn: String, top: String): Identity = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAsn1")(dn.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Identity]
+    /* static member */
+    @scala.inline
+    def parseAsn1(dn: Buffer, top: String): Identity = (^.asInstanceOf[js.Dynamic].applyDynamic("parseAsn1")(dn.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[Identity]
+    
+    /* static member */
+    @scala.inline
+    def parseDN(dn: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDN")(dn.asInstanceOf[js.Any]).asInstanceOf[Identity]
   }
   
   @JSImport("sshpk", "InvalidAlgorithmError")
   @js.native
-  class InvalidAlgorithmError protected () extends Error {
+  class InvalidAlgorithmError protected ()
+    extends StObject
+       with Error {
     def this(algo: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "Key")
@@ -357,32 +378,44 @@ object mod {
     def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("sshpk", "Key.isKey")
-    @js.native
-    def isKey(obj: String, ver: String): Boolean = js.native
-    @JSImport("sshpk", "Key.isKey")
-    @js.native
-    def isKey(obj: Buffer, ver: String): Boolean = js.native
+    @scala.inline
+    def isKey(obj: String, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(obj.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isKey(obj: Buffer, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isKey")(obj.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("sshpk", "Key.parse")
-    @js.native
-    def parse(data: String, format: String, options: js.Any): Key = js.native
-    @JSImport("sshpk", "Key.parse")
-    @js.native
-    def parse(data: Buffer, format: String, options: js.Any): Key = js.native
+    @scala.inline
+    def parse(data: String, format: String, options: js.Any): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Key]
+    @scala.inline
+    def parse(data: Buffer, format: String, options: js.Any): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Key]
   }
   
   @JSImport("sshpk", "KeyEncryptedError")
   @js.native
-  class KeyEncryptedError protected () extends Error {
+  class KeyEncryptedError protected ()
+    extends StObject
+       with Error {
     def this(name: String, format: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "KeyParseError")
   @js.native
-  class KeyParseError protected () extends Error {
+  class KeyParseError protected ()
+    extends StObject
+       with Error {
     def this(name: String, format: String, innerErr: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "OpenSllKeyDeriv")
@@ -438,20 +471,16 @@ object mod {
     def formats_=(x: Formats): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("formats")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSImport("sshpk", "PrivateKey.isPrivateKey")
-    @js.native
-    def isPrivateKey(data: String, ver: String): Boolean = js.native
-    @JSImport("sshpk", "PrivateKey.isPrivateKey")
-    @js.native
-    def isPrivateKey(data: Buffer, ver: String): Boolean = js.native
+    @scala.inline
+    def isPrivateKey(data: String, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPrivateKey")(data.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isPrivateKey(data: Buffer, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isPrivateKey")(data.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /* static member */
-    @JSImport("sshpk", "PrivateKey.parse")
-    @js.native
-    def parse(data: String, format: String, options: js.Any): PrivateKey = js.native
-    @JSImport("sshpk", "PrivateKey.parse")
-    @js.native
-    def parse(data: Buffer, format: String, options: js.Any): PrivateKey = js.native
+    @scala.inline
+    def parse(data: String, format: String, options: js.Any): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
+    @scala.inline
+    def parse(data: Buffer, format: String, options: js.Any): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
   }
   
   @JSImport("sshpk", "SSHBuffer")
@@ -516,27 +545,35 @@ object mod {
   }
   object Signature {
     
-    /* static member */
-    @JSImport("sshpk", "Signature.isSignature")
+    @JSImport("sshpk", "Signature")
     @js.native
-    def isSignature(obj: String, ver: String): Boolean = js.native
-    @JSImport("sshpk", "Signature.isSignature")
-    @js.native
-    def isSignature(obj: Buffer, ver: String): Boolean = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("sshpk", "Signature.parse")
-    @js.native
-    def parse(data: String, `type`: String, format: String): Signature = js.native
-    @JSImport("sshpk", "Signature.parse")
-    @js.native
-    def parse(data: Buffer, `type`: String, format: String): Signature = js.native
+    @scala.inline
+    def isSignature(obj: String, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignature")(obj.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isSignature(obj: Buffer, ver: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSignature")(obj.asInstanceOf[js.Any], ver.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    /* static member */
+    @scala.inline
+    def parse(data: String, `type`: String, format: String): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Signature]
+    @scala.inline
+    def parse(data: Buffer, `type`: String, format: String): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Signature]
   }
   
   @JSImport("sshpk", "SignatureParseError")
   @js.native
-  class SignatureParseError protected () extends Error {
+  class SignatureParseError protected ()
+    extends StObject
+       with Error {
     def this(`type`: String, format: String, innerErr: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sshpk", "Signer")
@@ -581,9 +618,8 @@ object mod {
     var n: js.Any = js.native
   }
   
-  @JSImport("sshpk", "addRSAMissing")
-  @js.native
-  def addRSAMissing(key: PrivateKey): Unit = js.native
+  @scala.inline
+  def addRSAMissing(key: PrivateKey): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addRSAMissing")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sshpk", "algInfo")
   @js.native
@@ -628,35 +664,27 @@ object mod {
     var privInfo: algPrivInfo = js.native
   }
   
-  @JSImport("sshpk", "assertCompatible")
-  @js.native
-  def assertCompatible(obj: js.Any, klass: js.Any, needVer: String, name: String): Unit = js.native
+  @scala.inline
+  def assertCompatible(obj: js.Any, klass: js.Any, needVer: String, name: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assertCompatible")(obj.asInstanceOf[js.Any], klass.asInstanceOf[js.Any], needVer.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("sshpk", "bufferSplit")
-  @js.native
-  def bufferSplit(buf: Buffer, chr: String): js.Array[Buffer] = js.native
+  @scala.inline
+  def bufferSplit(buf: Buffer, chr: String): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferSplit")(buf.asInstanceOf[js.Any], chr.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
-  @JSImport("sshpk", "calculateDSAPublic")
-  @js.native
-  def calculateDSAPublic(g: Buffer, p: Buffer, x: Buffer): Buffer = js.native
+  @scala.inline
+  def calculateDSAPublic(g: Buffer, p: Buffer, x: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateDSAPublic")(g.asInstanceOf[js.Any], p.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("sshpk", "countZeros")
-  @js.native
-  def countZeros(buf: Buffer): Double = js.native
+  @scala.inline
+  def countZeros(buf: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countZeros")(buf.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("sshpk", "createCertificate")
-  @js.native
-  def createCertificate(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey): Certificate = js.native
-  @JSImport("sshpk", "createCertificate")
-  @js.native
-  def createCertificate(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey, options: js.Any): Certificate = js.native
+  @scala.inline
+  def createCertificate(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], issuerKey.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+  @scala.inline
+  def createCertificate(subjectOrSubjects: String, key: Key, issuer: String, issuerKey: PrivateKey, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("createCertificate")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], issuerKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
   
-  @JSImport("sshpk", "createSelfSignedCertificate")
-  @js.native
-  def createSelfSignedCertificate(subjectOrSubjects: String, key: Key): Certificate = js.native
-  @JSImport("sshpk", "createSelfSignedCertificate")
-  @js.native
-  def createSelfSignedCertificate(subjectOrSubjects: String, key: Key, options: js.Any): Certificate = js.native
+  @scala.inline
+  def createSelfSignedCertificate(subjectOrSubjects: String, key: Key): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelfSignedCertificate")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+  @scala.inline
+  def createSelfSignedCertificate(subjectOrSubjects: String, key: Key, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("createSelfSignedCertificate")(subjectOrSubjects.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
   
   @JSImport("sshpk", "curves")
   @js.native
@@ -669,9 +697,8 @@ object mod {
     var nistp512: Curve = js.native
   }
   
-  @JSImport("sshpk", "ecNormalize")
-  @js.native
-  def ecNormalize(buf: Buffer, addZero: Boolean): Buffer = js.native
+  @scala.inline
+  def ecNormalize(buf: Buffer, addZero: Boolean): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ecNormalize")(buf.asInstanceOf[js.Any], addZero.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("sshpk", "hashAlgs")
   @js.native
@@ -688,91 +715,66 @@ object mod {
     var sha512: Boolean = js.native
   }
   
-  @JSImport("sshpk", "identityForEmail")
-  @js.native
-  def identityForEmail(email: String): Identity = js.native
+  @scala.inline
+  def identityForEmail(email: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("identityForEmail")(email.asInstanceOf[js.Any]).asInstanceOf[Identity]
   
-  @JSImport("sshpk", "identityForHost")
-  @js.native
-  def identityForHost(hostname: String): Identity = js.native
+  @scala.inline
+  def identityForHost(hostname: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("identityForHost")(hostname.asInstanceOf[js.Any]).asInstanceOf[Identity]
   
-  @JSImport("sshpk", "identityForUser")
-  @js.native
-  def identityForUser(uid: String): Identity = js.native
+  @scala.inline
+  def identityForUser(uid: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("identityForUser")(uid.asInstanceOf[js.Any]).asInstanceOf[Identity]
   
-  @JSImport("sshpk", "identityFromDN")
-  @js.native
-  def identityFromDN(dn: String): Identity = js.native
+  @scala.inline
+  def identityFromDN(dn: String): Identity = ^.asInstanceOf[js.Dynamic].applyDynamic("identityFromDN")(dn.asInstanceOf[js.Any]).asInstanceOf[Identity]
   
-  @JSImport("sshpk", "isCompatible")
-  @js.native
-  def isCompatible(obj: js.Any, klass: js.Any, needVer: String): Boolean = js.native
+  @scala.inline
+  def isCompatible(obj: js.Any, klass: js.Any, needVer: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompatible")(obj.asInstanceOf[js.Any], klass.asInstanceOf[js.Any], needVer.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("sshpk", "mpNormalize")
-  @js.native
-  def mpNormalize(buf: Buffer): Buffer = js.native
+  @scala.inline
+  def mpNormalize(buf: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("mpNormalize")(buf.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("sshpk", "opensshCipherInfo")
-  @js.native
-  def opensshCipherInfo(cipber: String): OpensshCipherInfo_ = js.native
+  @scala.inline
+  def opensshCipherInfo(cipber: String): OpensshCipherInfo_ = ^.asInstanceOf[js.Dynamic].applyDynamic("opensshCipherInfo")(cipber.asInstanceOf[js.Any]).asInstanceOf[OpensshCipherInfo_]
   
-  @JSImport("sshpk", "opensslKeyDeriv")
-  @js.native
-  def opensslKeyDeriv(cipher: String, salt: String, passphrase: String, count: Double): OpenSllKeyDeriv = js.native
+  @scala.inline
+  def opensslKeyDeriv(cipher: String, salt: String, passphrase: String, count: Double): OpenSllKeyDeriv = (^.asInstanceOf[js.Dynamic].applyDynamic("opensslKeyDeriv")(cipher.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[OpenSllKeyDeriv]
   
-  @JSImport("sshpk", "parseCertificate")
-  @js.native
-  def parseCertificate(data: String, format: String): Certificate = js.native
-  @JSImport("sshpk", "parseCertificate")
-  @js.native
-  def parseCertificate(data: String, format: String, options: js.Any): Certificate = js.native
-  @JSImport("sshpk", "parseCertificate")
-  @js.native
-  def parseCertificate(data: Buffer, format: String): Certificate = js.native
-  @JSImport("sshpk", "parseCertificate")
-  @js.native
-  def parseCertificate(data: Buffer, format: String, options: js.Any): Certificate = js.native
+  @scala.inline
+  def parseCertificate(data: String, format: String): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCertificate")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+  @scala.inline
+  def parseCertificate(data: String, format: String, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCertificate")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+  @scala.inline
+  def parseCertificate(data: Buffer, format: String): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCertificate")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+  @scala.inline
+  def parseCertificate(data: Buffer, format: String, options: js.Any): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCertificate")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Certificate]
   
-  @JSImport("sshpk", "parseFingerprint")
-  @js.native
-  def parseFingerprint(fp: String): Fingerprint = js.native
-  @JSImport("sshpk", "parseFingerprint")
-  @js.native
-  def parseFingerprint(fp: String, options: js.Any): Fingerprint = js.native
+  @scala.inline
+  def parseFingerprint(fp: String): Fingerprint = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFingerprint")(fp.asInstanceOf[js.Any]).asInstanceOf[Fingerprint]
+  @scala.inline
+  def parseFingerprint(fp: String, options: js.Any): Fingerprint = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFingerprint")(fp.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Fingerprint]
   
-  @JSImport("sshpk", "parseKey")
-  @js.native
-  def parseKey(data: String, format: String): Key = js.native
-  @JSImport("sshpk", "parseKey")
-  @js.native
-  def parseKey(data: String, format: String, options: js.Any): Key = js.native
-  @JSImport("sshpk", "parseKey")
-  @js.native
-  def parseKey(data: Buffer, format: String): Key = js.native
-  @JSImport("sshpk", "parseKey")
-  @js.native
-  def parseKey(data: Buffer, format: String, options: js.Any): Key = js.native
+  @scala.inline
+  def parseKey(data: String, format: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Key]
+  @scala.inline
+  def parseKey(data: String, format: String, options: js.Any): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Key]
+  @scala.inline
+  def parseKey(data: Buffer, format: String): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Key]
+  @scala.inline
+  def parseKey(data: Buffer, format: String, options: js.Any): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Key]
   
-  @JSImport("sshpk", "parsePrivateKey")
-  @js.native
-  def parsePrivateKey(data: String, format: String): PrivateKey = js.native
-  @JSImport("sshpk", "parsePrivateKey")
-  @js.native
-  def parsePrivateKey(data: String, format: String, options: js.Any): PrivateKey = js.native
-  @JSImport("sshpk", "parsePrivateKey")
-  @js.native
-  def parsePrivateKey(data: Buffer, format: String): PrivateKey = js.native
-  @JSImport("sshpk", "parsePrivateKey")
-  @js.native
-  def parsePrivateKey(data: Buffer, format: String, options: js.Any): PrivateKey = js.native
+  @scala.inline
+  def parsePrivateKey(data: String, format: String): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePrivateKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
+  @scala.inline
+  def parsePrivateKey(data: String, format: String, options: js.Any): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePrivateKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
+  @scala.inline
+  def parsePrivateKey(data: Buffer, format: String): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePrivateKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
+  @scala.inline
+  def parsePrivateKey(data: Buffer, format: String, options: js.Any): PrivateKey = (^.asInstanceOf[js.Dynamic].applyDynamic("parsePrivateKey")(data.asInstanceOf[js.Any], format.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PrivateKey]
   
-  @JSImport("sshpk", "parseSignature")
-  @js.native
-  def parseSignature(data: String, `type`: String, format: String): Signature = js.native
-  @JSImport("sshpk", "parseSignature")
-  @js.native
-  def parseSignature(data: Buffer, `type`: String, format: String): Signature = js.native
+  @scala.inline
+  def parseSignature(data: String, `type`: String, format: String): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSignature")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Signature]
+  @scala.inline
+  def parseSignature(data: Buffer, `type`: String, format: String): Signature = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSignature")(data.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Signature]
   
-  @js.native
   trait SshPK extends StObject
 }

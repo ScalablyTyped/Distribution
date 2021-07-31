@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a collection of forms. */
-@js.native
-trait XFormsSupplier extends XInterface {
+trait XFormsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * accesses the forms.
@@ -18,7 +18,7 @@ trait XFormsSupplier extends XInterface {
     * {{program example here, see documentation}}
     * @returns the container of all the top-level forms belonging to the component.
     */
-  val Forms: XNameContainer = js.native
+  val Forms: XNameContainer
   
   /**
     * accesses the forms.
@@ -26,7 +26,7 @@ trait XFormsSupplier extends XInterface {
     * {{program example here, see documentation}}
     * @returns the container of all the top-level forms belonging to the component.
     */
-  def getForms(): XNameContainer = js.native
+  def getForms(): XNameContainer
 }
 object XFormsSupplier {
   

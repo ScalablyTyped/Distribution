@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOpenIdTokenForDeveloperIdentityResponse extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.undefined
   
   /**
     * An OpenID token.
     */
-  var Token: js.UndefOr[OIDCToken] = js.native
+  var Token: js.UndefOr[OIDCToken] = js.undefined
 }
 object GetOpenIdTokenForDeveloperIdentityResponse {
   

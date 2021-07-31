@@ -15,10 +15,13 @@ import typings.std.HTMLScriptElement
 import typings.std.HTMLStyleElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-helmet-with-visor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-helmet-with-visor", JSImport.Default)
   @js.native
@@ -43,17 +46,14 @@ object mod {
     @scala.inline
     def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-helmet-with-visor", "default.peek")
-    @js.native
-    def peek(): HelmetData = js.native
+    @scala.inline
+    def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
     
-    @JSImport("react-helmet-with-visor", "default.renderStatic")
-    @js.native
-    def renderStatic(): HelmetData = js.native
+    @scala.inline
+    def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
     
-    @JSImport("react-helmet-with-visor", "default.rewind")
-    @js.native
-    def rewind(): HelmetData = js.native
+    @scala.inline
+    def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
   }
   
   @JSImport("react-helmet-with-visor", "Helmet")
@@ -80,17 +80,14 @@ object mod {
     @scala.inline
     def canUseDOM_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("canUseDOM")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-helmet-with-visor", "Helmet.peek")
-    @js.native
-    def peek(): HelmetData = js.native
+    @scala.inline
+    def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
     
-    @JSImport("react-helmet-with-visor", "Helmet.renderStatic")
-    @js.native
-    def renderStatic(): HelmetData = js.native
+    @scala.inline
+    def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
     
-    @JSImport("react-helmet-with-visor", "Helmet.rewind")
-    @js.native
-    def rewind(): HelmetData = js.native
+    @scala.inline
+    def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
   }
   
   @JSImport("react-helmet-with-visor", "HelmetsOpenedVisor")
@@ -109,44 +106,40 @@ object mod {
   @js.native
   val canUseDOM: Boolean = js.native
   
-  @JSImport("react-helmet-with-visor", "peek")
-  @js.native
-  def peek(): HelmetData = js.native
+  @scala.inline
+  def peek(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("peek")().asInstanceOf[HelmetData]
   
-  @JSImport("react-helmet-with-visor", "renderStatic")
-  @js.native
-  def renderStatic(): HelmetData = js.native
+  @scala.inline
+  def renderStatic(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("renderStatic")().asInstanceOf[HelmetData]
   
-  @JSImport("react-helmet-with-visor", "rewind")
-  @js.native
-  def rewind(): HelmetData = js.native
+  @scala.inline
+  def rewind(): HelmetData = ^.asInstanceOf[js.Dynamic].applyDynamic("rewind")().asInstanceOf[HelmetData]
   
-  type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) with OtherElementAttributes
+  type BodyProps = (DetailedHTMLProps[HTMLAttributes[HTMLBodyElement], HTMLBodyElement]) & OtherElementAttributes
   
-  @js.native
   trait HelmetData extends StObject {
     
-    var base: HelmetDatum = js.native
+    var base: HelmetDatum
     
-    var bodyAttributes: HelmetHTMLBodyDatum = js.native
+    var bodyAttributes: HelmetHTMLBodyDatum
     
-    var htmlAttributes: HelmetHTMLElementDatum = js.native
+    var htmlAttributes: HelmetHTMLElementDatum
     
-    var link: HelmetDatum = js.native
+    var link: HelmetDatum
     
-    var meta: HelmetDatum = js.native
+    var meta: HelmetDatum
     
-    var noscript: HelmetDatum = js.native
+    var noscript: HelmetDatum
     
-    var openedVisor: HelmetDatum = js.native
+    var openedVisor: HelmetDatum
     
-    var script: HelmetDatum = js.native
+    var script: HelmetDatum
     
-    var style: HelmetDatum = js.native
+    var style: HelmetDatum
     
-    var title: HelmetDatum = js.native
+    var title: HelmetDatum
     
-    var titleAttributes: HelmetDatum = js.native
+    var titleAttributes: HelmetDatum
   }
   object HelmetData {
     
@@ -206,15 +199,14 @@ object mod {
     }
   }
   
-  @js.native
   trait HelmetDatum extends StObject {
     
-    def toComponent(): Component[_, js.Object, _] = js.native
+    def toComponent(): Component[js.Any, js.Object, js.Any]
   }
   object HelmetDatum {
     
     @scala.inline
-    def apply(toComponent: () => Component[_, js.Object, _]): HelmetDatum = {
+    def apply(toComponent: () => Component[js.Any, js.Object, js.Any]): HelmetDatum = {
       val __obj = js.Dynamic.literal(toComponent = js.Any.fromFunction0(toComponent))
       __obj.asInstanceOf[HelmetDatum]
     }
@@ -223,14 +215,13 @@ object mod {
     implicit class HelmetDatumMutableBuilder[Self <: HelmetDatum] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setToComponent(value: () => Component[_, js.Object, _]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
+      def setToComponent(value: () => Component[js.Any, js.Object, js.Any]): Self = StObject.set(x, "toComponent", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait HelmetHTMLBodyDatum extends StObject {
     
-    def toComponent(): HTMLAttributes[HTMLBodyElement] = js.native
+    def toComponent(): HTMLAttributes[HTMLBodyElement]
   }
   object HelmetHTMLBodyDatum {
     
@@ -248,10 +239,9 @@ object mod {
     }
   }
   
-  @js.native
   trait HelmetHTMLElementDatum extends StObject {
     
-    def toComponent(): HTMLAttributes[HTMLHtmlElement] = js.native
+    def toComponent(): HTMLAttributes[HTMLHtmlElement]
   }
   object HelmetHTMLElementDatum {
     
@@ -269,42 +259,41 @@ object mod {
     }
   }
   
-  @js.native
   trait HelmetProps extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var base: js.UndefOr[js.Any] = js.native
+    var base: js.UndefOr[js.Any] = js.undefined
     
-    var bodyAttributes: js.UndefOr[BodyProps] = js.native
+    var bodyAttributes: js.UndefOr[BodyProps] = js.undefined
     
-    var defaultTitle: js.UndefOr[String] = js.native
+    var defaultTitle: js.UndefOr[String] = js.undefined
     
-    var defer: js.UndefOr[Boolean] = js.native
+    var defer: js.UndefOr[Boolean] = js.undefined
     
-    var encodeSpecialCharacters: js.UndefOr[Boolean] = js.native
+    var encodeSpecialCharacters: js.UndefOr[Boolean] = js.undefined
     
-    var htmlAttributes: js.UndefOr[HtmlProps] = js.native
+    var htmlAttributes: js.UndefOr[HtmlProps] = js.undefined
     
-    var link: js.UndefOr[js.Array[LinkProps]] = js.native
+    var link: js.UndefOr[js.Array[LinkProps]] = js.undefined
     
-    var meta: js.UndefOr[js.Array[MetaProps]] = js.native
+    var meta: js.UndefOr[js.Array[MetaProps]] = js.undefined
     
-    var noscript: js.UndefOr[js.Array[_]] = js.native
+    var noscript: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     var onChangeClientState: js.UndefOr[
         js.Function3[/* newState */ js.Any, /* addedTags */ HelmetTags, /* removedTags */ HelmetTags, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var script: js.UndefOr[js.Array[_]] = js.native
+    var script: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var style: js.UndefOr[js.Array[_]] = js.native
+    var style: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleAttributes: js.UndefOr[js.Object] = js.native
+    var titleAttributes: js.UndefOr[js.Object] = js.undefined
     
-    var titleTemplate: js.UndefOr[String] = js.native
+    var titleTemplate: js.UndefOr[String] = js.undefined
   }
   object HelmetProps {
     
@@ -378,7 +367,7 @@ object mod {
       def setMetaVarargs(value: MetaProps*): Self = StObject.set(x, "meta", js.Array(value :_*))
       
       @scala.inline
-      def setNoscript(value: js.Array[_]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
+      def setNoscript(value: js.Array[js.Any]): Self = StObject.set(x, "noscript", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNoscriptUndefined: Self = StObject.set(x, "noscript", js.undefined)
@@ -393,7 +382,7 @@ object mod {
       def setOnChangeClientStateUndefined: Self = StObject.set(x, "onChangeClientState", js.undefined)
       
       @scala.inline
-      def setScript(value: js.Array[_]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
+      def setScript(value: js.Array[js.Any]): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScriptUndefined: Self = StObject.set(x, "script", js.undefined)
@@ -402,7 +391,7 @@ object mod {
       def setScriptVarargs(value: js.Any*): Self = StObject.set(x, "script", js.Array(value :_*))
       
       @scala.inline
-      def setStyle(value: js.Array[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      def setStyle(value: js.Array[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
@@ -430,32 +419,31 @@ object mod {
     }
   }
   
-  @js.native
   trait HelmetTags extends StObject {
     
-    var baseTag: js.Array[_] = js.native
+    var baseTag: js.Array[js.Any]
     
-    var linkTags: js.Array[HTMLLinkElement] = js.native
+    var linkTags: js.Array[HTMLLinkElement]
     
-    var metaTags: js.Array[HTMLMetaElement] = js.native
+    var metaTags: js.Array[HTMLMetaElement]
     
-    var noscriptTags: js.Array[_] = js.native
+    var noscriptTags: js.Array[js.Any]
     
-    var openedVisorTags: js.Array[_] = js.native
+    var openedVisorTags: js.Array[js.Any]
     
-    var scriptTags: js.Array[HTMLScriptElement] = js.native
+    var scriptTags: js.Array[HTMLScriptElement]
     
-    var styleTags: js.Array[HTMLStyleElement] = js.native
+    var styleTags: js.Array[HTMLStyleElement]
   }
   object HelmetTags {
     
     @scala.inline
     def apply(
-      baseTag: js.Array[_],
+      baseTag: js.Array[js.Any],
       linkTags: js.Array[HTMLLinkElement],
       metaTags: js.Array[HTMLMetaElement],
-      noscriptTags: js.Array[_],
-      openedVisorTags: js.Array[_],
+      noscriptTags: js.Array[js.Any],
+      openedVisorTags: js.Array[js.Any],
       scriptTags: js.Array[HTMLScriptElement],
       styleTags: js.Array[HTMLStyleElement]
     ): HelmetTags = {
@@ -467,7 +455,7 @@ object mod {
     implicit class HelmetTagsMutableBuilder[Self <: HelmetTags] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBaseTag(value: js.Array[_]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
+      def setBaseTag(value: js.Array[js.Any]): Self = StObject.set(x, "baseTag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBaseTagVarargs(value: js.Any*): Self = StObject.set(x, "baseTag", js.Array(value :_*))
@@ -485,13 +473,13 @@ object mod {
       def setMetaTagsVarargs(value: HTMLMetaElement*): Self = StObject.set(x, "metaTags", js.Array(value :_*))
       
       @scala.inline
-      def setNoscriptTags(value: js.Array[_]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
+      def setNoscriptTags(value: js.Array[js.Any]): Self = StObject.set(x, "noscriptTags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNoscriptTagsVarargs(value: js.Any*): Self = StObject.set(x, "noscriptTags", js.Array(value :_*))
       
       @scala.inline
-      def setOpenedVisorTags(value: js.Array[_]): Self = StObject.set(x, "openedVisorTags", value.asInstanceOf[js.Any])
+      def setOpenedVisorTags(value: js.Array[js.Any]): Self = StObject.set(x, "openedVisorTags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOpenedVisorTagsVarargs(value: js.Any*): Self = StObject.set(x, "openedVisorTags", js.Array(value :_*))
@@ -510,7 +498,7 @@ object mod {
     }
   }
   
-  type HtmlProps = (DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]) with OtherElementAttributes
+  type HtmlProps = (DetailedHTMLProps[HtmlHTMLAttributes[HTMLHtmlElement], HTMLHtmlElement]) & OtherElementAttributes
   
   type LinkProps = DetailedHTMLProps[LinkHTMLAttributes[HTMLLinkElement], HTMLLinkElement]
   

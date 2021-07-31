@@ -2,17 +2,15 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCounts extends StObject {
   
-  var errorCount: Double = js.native
+  var errorCount: Double
   
-  var errorPercentage: Double = js.native
+  var errorPercentage: Double
   
-  var totalCount: Double = js.native
+  var totalCount: Double
 }
 object HealthCounts {
   

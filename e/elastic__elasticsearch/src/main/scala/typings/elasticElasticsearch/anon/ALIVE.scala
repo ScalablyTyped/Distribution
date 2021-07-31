@@ -2,15 +2,13 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ALIVE extends StObject {
   
-  var ALIVE: String = js.native
+  var ALIVE: String
   
-  var DEAD: String = js.native
+  var DEAD: String
 }
 object ALIVE {
   

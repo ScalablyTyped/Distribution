@@ -10,9 +10,9 @@ Auto-resizing Input Component for React
 | ------------------ | :-------------: |
 | Full name          | react-input-autosize |
 | Keywords           | react, react-component, input, autosize |
-| # releases         | 2 |
-| # dependents       | 265 |
-| # downloads        | 94865705 |
+| # releases         | 3 |
+| # dependents       | 285 |
+| # downloads        | 110430498 |
 | # stars            | 4 |
 
 ## Links

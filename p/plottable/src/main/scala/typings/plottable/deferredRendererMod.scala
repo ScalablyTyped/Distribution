@@ -3,7 +3,6 @@ package typings.plottable
 import typings.plottable.scalesMod.ITransformableScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deferredRendererMod {
@@ -31,14 +30,14 @@ object deferredRendererMod {
     def resetTransforms(): Unit = js.native
     
     def setDomains(): Unit = js.native
-    def setDomains(scaleX: js.UndefOr[scala.Nothing], scaleY: ITransformableScale): Unit = js.native
+    def setDomains(scaleX: Unit, scaleY: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale): Unit = js.native
     def setDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
     
     var timeoutToken: js.Any = js.native
     
     def updateDomains(): Unit = js.native
-    def updateDomains(scaleX: js.UndefOr[scala.Nothing], scaleY: ITransformableScale): Unit = js.native
+    def updateDomains(scaleX: Unit, scaleY: ITransformableScale): Unit = js.native
     def updateDomains(scaleX: ITransformableScale): Unit = js.native
     def updateDomains(scaleX: ITransformableScale, scaleY: ITransformableScale): Unit = js.native
   }

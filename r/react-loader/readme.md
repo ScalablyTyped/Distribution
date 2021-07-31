@@ -12,7 +12,7 @@ React component that displays a spinner via spin.js until your component is load
 | Keywords           | react, component, react-component, loader, spinner, spin, spinjs, spin.js |
 | # releases         | 3 |
 | # dependents       | 39 |
-| # downloads        | 1081512 |
+| # downloads        | 1010647 |
 | # stars            | 4 |
 
 ## Links

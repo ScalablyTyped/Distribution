@@ -2,13 +2,11 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SjclOCB2ProgressiveProcessor extends StObject {
   
-  def process(data: BitArray_): BitArray_ = js.native
+  def process(data: BitArray_): BitArray_
 }
 object SjclOCB2ProgressiveProcessor {
   

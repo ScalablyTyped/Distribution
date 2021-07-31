@@ -2,50 +2,86 @@ package typings.popupWindow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("popup-window", JSImport.Namespace)
   @js.native
-  class ^ () extends PopupWindow {
+  class ^ ()
+    extends StObject
+       with PopupWindow {
     def this(url: String) = this()
-    def this(url: js.UndefOr[scala.Nothing], config: PopupWindowConfig) = this()
     def this(url: String, config: PopupWindowConfig) = this()
+    def this(url: Unit, config: PopupWindowConfig) = this()
+    
+    /**
+      * Accepts a callback - the callback is called when the window is closed.
+      */
+    /* CompleteClass */
+    override def blocked(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    
+    /**
+      * Close the browser window.
+      */
+    /* CompleteClass */
+    override def close(): PopupWindow = js.native
+    
+    /**
+      * Accepts a callback - the callback is called when the window is blocked from opening.
+      */
+    /* CompleteClass */
+    override def closed(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    
+    /* CompleteClass */
+    override val name: String = js.native
+    
+    /**
+      * Open a new browser window.
+      */
+    /* CompleteClass */
+    override def open(): PopupWindow = js.native
+    
+    /**
+      * Accepts a callback - the callback is called when the window is opened.
+      */
+    /* CompleteClass */
+    override def opened(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    
+    /* CompleteClass */
+    override val url: String = js.native
   }
   
-  @js.native
   trait PopupWindow extends StObject {
     
     /**
       * Accepts a callback - the callback is called when the window is closed.
       */
-    def blocked(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    def blocked(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow
     
     /**
       * Close the browser window.
       */
-    def close(): PopupWindow = js.native
+    def close(): PopupWindow
     
     /**
       * Accepts a callback - the callback is called when the window is blocked from opening.
       */
-    def closed(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    def closed(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow
     
-    val name: String = js.native
+    val name: String
     
     /**
       * Open a new browser window.
       */
-    def open(): PopupWindow = js.native
+    def open(): PopupWindow
     
     /**
       * Accepts a callback - the callback is called when the window is opened.
       */
-    def opened(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow = js.native
+    def opened(callback: js.Function1[/* win */ this.type, Unit]): PopupWindow
     
-    val url: String = js.native
+    val url: String
   }
   object PopupWindow {
     
@@ -89,30 +125,29 @@ object mod {
     }
   }
   
-  @js.native
   trait PopupWindowConfig extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[Boolean] = js.native
+    var location: js.UndefOr[Boolean] = js.undefined
     
-    var menubar: js.UndefOr[Boolean] = js.native
+    var menubar: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var scrollbars: js.UndefOr[Boolean] = js.native
+    var scrollbars: js.UndefOr[Boolean] = js.undefined
     
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
-    var toolbar: js.UndefOr[Boolean] = js.native
+    var toolbar: js.UndefOr[Boolean] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PopupWindowConfig {
     

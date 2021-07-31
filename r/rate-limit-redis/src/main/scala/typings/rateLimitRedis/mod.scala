@@ -6,29 +6,41 @@ import typings.ioredis.mod.Redis
 import typings.redis.mod.RedisClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("rate-limit-redis", JSImport.Namespace)
   @js.native
-  class ^ () extends RedisStore {
+  class ^ ()
+    extends StObject
+       with RedisStore {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def decrement(key: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def incr(key: String, cb: StoreIncrementCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetAll(): Unit = js.native
+    
+    /* CompleteClass */
+    override def resetKey(key: String): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var client: js.UndefOr[RedisClient | Redis] = js.native
+    var client: js.UndefOr[RedisClient | Redis] = js.undefined
     
-    var expiry: js.UndefOr[Double] = js.native
+    var expiry: js.UndefOr[Double] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var redisURL: js.UndefOr[String] = js.native
+    var redisURL: js.UndefOr[String] = js.undefined
     
-    var resetExpiryOnChange: js.UndefOr[Boolean] = js.native
+    var resetExpiryOnChange: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -73,8 +85,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait RedisStore extends Store
+  trait RedisStore
+    extends StObject
+       with Store
   object RedisStore {
     
     @scala.inline

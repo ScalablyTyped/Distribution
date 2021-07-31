@@ -2,15 +2,13 @@ package typings.assertionError
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ShowDiff extends StObject {
     
-    var showDiff: Boolean = js.native
+    var showDiff: Boolean
   }
   object ShowDiff {
     

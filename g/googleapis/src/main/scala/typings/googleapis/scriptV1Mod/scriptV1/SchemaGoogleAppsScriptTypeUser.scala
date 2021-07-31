@@ -2,34 +2,32 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A simple user profile resource.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeUser extends StObject {
   
   /**
     * The user&#39;s domain.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s identifying email address.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s photo.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeUser {
   

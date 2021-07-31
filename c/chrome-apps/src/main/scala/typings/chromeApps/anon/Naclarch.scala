@@ -13,10 +13,8 @@ import typings.chromeApps.chromeAppsStrings.mips_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Naclarch extends StObject {
   
   var nacl_arch: ToStringLiteral[
@@ -26,9 +24,9 @@ trait Naclarch extends StObject {
       /* keyof chrome-apps.anon.ARM */ typings.chromeApps.chromeAppsStrings.ARM | X86_32 | X86_64 | MIPS | MIPS64, 
       mips64_ | arm_ | `x86-64` | `x86-32` | mips_
     ]
-  ] = js.native
+  ]
   
-  var sub_package_path: String = js.native
+  var sub_package_path: String
 }
 object Naclarch {
   

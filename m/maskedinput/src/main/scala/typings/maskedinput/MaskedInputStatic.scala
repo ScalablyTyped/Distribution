@@ -2,17 +2,15 @@ package typings.maskedinput
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskedInputStatic extends StObject {
   
-  var defaults: MaskedInputDefaults = js.native
+  var defaults: MaskedInputDefaults
   
-  def format(value: String, options: MaskedInputStaticDefaults): Boolean = js.native
+  def format(value: String, options: MaskedInputStaticDefaults): Boolean
   
-  def isValid(value: String, options: MaskedInputStaticDefaults): Boolean = js.native
+  def isValid(value: String, options: MaskedInputStaticDefaults): Boolean
 }
 object MaskedInputStatic {
   

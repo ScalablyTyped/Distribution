@@ -2,25 +2,23 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Io extends StObject {
   
-  var cancelled_write_bytes: String = js.native
+  var cancelled_write_bytes: String
   
-  var rchar: String = js.native
+  var rchar: String
   
-  var read_bytes: String = js.native
+  var read_bytes: String
   
-  var syscr: String = js.native
+  var syscr: String
   
-  var syscw: String = js.native
+  var syscw: String
   
-  var wchar: String = js.native
+  var wchar: String
   
-  var write_bytes: String = js.native
+  var write_bytes: String
 }
 object Io {
   

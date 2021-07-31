@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * handles string representations of property values.
   * @see
   */
-@js.native
 trait XStringRepresentation extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait XStringRepresentation extends StObject {
     * @returns The converted string representation of the property value.
     * @see XPropertyHandler.convertToControlValue()
     */
-  def convertToControlValue(PropertyValue: js.Any): String = js.native
+  def convertToControlValue(PropertyValue: js.Any): String
   
   /**
     * converts a string into an any with the type defined by the target type.
@@ -27,7 +25,7 @@ trait XStringRepresentation extends StObject {
     * @param ControlValueType The target type of the conversion.
     * @see XPropertyHandler.convertToPropertyValue()
     */
-  def convertToPropertyValue(ControlValue: String, ControlValueType: `type`): js.Any = js.native
+  def convertToPropertyValue(ControlValue: String, ControlValueType: `type`): js.Any
 }
 object XStringRepresentation {
   

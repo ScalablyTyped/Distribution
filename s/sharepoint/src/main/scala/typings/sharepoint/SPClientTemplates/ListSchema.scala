@@ -2,13 +2,11 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSchema extends StObject {
   
-  var Field: js.Array[FieldSchema] = js.native
+  var Field: js.Array[FieldSchema]
 }
 object ListSchema {
   

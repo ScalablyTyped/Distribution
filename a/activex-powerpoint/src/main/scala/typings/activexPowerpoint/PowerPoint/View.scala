@@ -3,7 +3,6 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,147 +60,37 @@ trait View extends StObject {
     * @param Office.MsoTriState [Collate=-99]
     */
   def PrintOut(): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: js.UndefOr[scala.Nothing], To: Double, PrintToFile: String, Copies: Double): Unit = js.native
-  def PrintOut(
-    From: js.UndefOr[scala.Nothing],
-    To: Double,
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double
-  ): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: js.UndefOr[scala.Nothing], PrintToFile: String, Copies: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: js.UndefOr[scala.Nothing],
-    PrintToFile: String,
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
-  def PrintOut(From: Double, To: Double, PrintToFile: js.UndefOr[scala.Nothing], Copies: Double): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: js.UndefOr[scala.Nothing],
-    Copies: Double,
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String): Unit = js.native
-  def PrintOut(
-    From: Double,
-    To: Double,
-    PrintToFile: String,
-    Copies: js.UndefOr[scala.Nothing],
-    Collate: MsoTriState
-  ): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double): Unit = js.native
   def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Double, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Double, To: Unit, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Double, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: String, Copies: Unit, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Double): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Double, Collate: MsoTriState): Unit = js.native
+  def PrintOut(From: Unit, To: Unit, PrintToFile: Unit, Copies: Unit, Collate: MsoTriState): Unit = js.native
   
   var Slide: js.Any = js.native
   

@@ -9,39 +9,29 @@ import typings.cadesplugin.cadespluginNumbers.`5`
 import typings.cadesplugin.cadespluginNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CAPICOM_HASH_ALGORITHM extends StObject {
   
-  val CAPICOM_HASH_ALGORITHM_MD2: `1` = js.native
+  val CAPICOM_HASH_ALGORITHM_MD2: `1`
   
-  val CAPICOM_HASH_ALGORITHM_MD4: `2` = js.native
+  val CAPICOM_HASH_ALGORITHM_MD4: `2`
   
-  val CAPICOM_HASH_ALGORITHM_MD5: `3` = js.native
+  val CAPICOM_HASH_ALGORITHM_MD5: `3`
   
-  val CAPICOM_HASH_ALGORITHM_SHA1: `0` = js.native
+  val CAPICOM_HASH_ALGORITHM_SHA1: `0`
   
-  val CAPICOM_HASH_ALGORITHM_SHA_256: `4` = js.native
+  val CAPICOM_HASH_ALGORITHM_SHA_256: `4`
   
-  val CAPICOM_HASH_ALGORITHM_SHA_384: `5` = js.native
+  val CAPICOM_HASH_ALGORITHM_SHA_384: `5`
   
-  val CAPICOM_HASH_ALGORITHM_SHA_512: `6` = js.native
+  val CAPICOM_HASH_ALGORITHM_SHA_512: `6`
 }
 object CAPICOM_HASH_ALGORITHM {
   
   @scala.inline
-  def apply(
-    CAPICOM_HASH_ALGORITHM_MD2: `1`,
-    CAPICOM_HASH_ALGORITHM_MD4: `2`,
-    CAPICOM_HASH_ALGORITHM_MD5: `3`,
-    CAPICOM_HASH_ALGORITHM_SHA1: `0`,
-    CAPICOM_HASH_ALGORITHM_SHA_256: `4`,
-    CAPICOM_HASH_ALGORITHM_SHA_384: `5`,
-    CAPICOM_HASH_ALGORITHM_SHA_512: `6`
-  ): CAPICOM_HASH_ALGORITHM = {
-    val __obj = js.Dynamic.literal(CAPICOM_HASH_ALGORITHM_MD2 = CAPICOM_HASH_ALGORITHM_MD2.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_MD4 = CAPICOM_HASH_ALGORITHM_MD4.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_MD5 = CAPICOM_HASH_ALGORITHM_MD5.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_SHA1 = CAPICOM_HASH_ALGORITHM_SHA1.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_SHA_256 = CAPICOM_HASH_ALGORITHM_SHA_256.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_SHA_384 = CAPICOM_HASH_ALGORITHM_SHA_384.asInstanceOf[js.Any], CAPICOM_HASH_ALGORITHM_SHA_512 = CAPICOM_HASH_ALGORITHM_SHA_512.asInstanceOf[js.Any])
+  def apply(): CAPICOM_HASH_ALGORITHM = {
+    val __obj = js.Dynamic.literal(CAPICOM_HASH_ALGORITHM_MD2 = 1, CAPICOM_HASH_ALGORITHM_MD4 = 2, CAPICOM_HASH_ALGORITHM_MD5 = 3, CAPICOM_HASH_ALGORITHM_SHA1 = 0, CAPICOM_HASH_ALGORITHM_SHA_256 = 4, CAPICOM_HASH_ALGORITHM_SHA_384 = 5, CAPICOM_HASH_ALGORITHM_SHA_512 = 6)
     __obj.asInstanceOf[CAPICOM_HASH_ALGORITHM]
   }
   

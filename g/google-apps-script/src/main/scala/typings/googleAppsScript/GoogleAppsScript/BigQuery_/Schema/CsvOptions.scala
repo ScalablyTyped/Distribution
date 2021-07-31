@@ -2,23 +2,21 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CsvOptions extends StObject {
   
-  var allowJaggedRows: js.UndefOr[Boolean] = js.native
+  var allowJaggedRows: js.UndefOr[Boolean] = js.undefined
   
-  var allowQuotedNewlines: js.UndefOr[Boolean] = js.native
+  var allowQuotedNewlines: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var fieldDelimiter: js.UndefOr[String] = js.native
+  var fieldDelimiter: js.UndefOr[String] = js.undefined
   
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
-  var skipLeadingRows: js.UndefOr[String] = js.native
+  var skipLeadingRows: js.UndefOr[String] = js.undefined
 }
 object CsvOptions {
   

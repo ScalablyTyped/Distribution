@@ -4,7 +4,6 @@ import typings.ndnJs.blobMod.Blob
 import typings.ndnJs.nameMod.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signatureMod {
@@ -56,15 +55,19 @@ object signatureMod {
   object KeyLocatorType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[KeyLocatorType with Double] = js.native
+    def apply(value: Double): js.UndefOr[KeyLocatorType & Double] = js.native
     
     @js.native
-    sealed trait KEYNAME extends KeyLocatorType
-    /* 1 */ val KEYNAME: typings.ndnJs.signatureMod.KeyLocatorType.KEYNAME with Double = js.native
+    sealed trait KEYNAME
+      extends StObject
+         with KeyLocatorType
+    /* 1 */ val KEYNAME: typings.ndnJs.signatureMod.KeyLocatorType.KEYNAME & Double = js.native
     
     @js.native
-    sealed trait KEY_LOCATOR_DIGEST extends KeyLocatorType
-    /* 2 */ val KEY_LOCATOR_DIGEST: typings.ndnJs.signatureMod.KeyLocatorType.KEY_LOCATOR_DIGEST with Double = js.native
+    sealed trait KEY_LOCATOR_DIGEST
+      extends StObject
+         with KeyLocatorType
+    /* 2 */ val KEY_LOCATOR_DIGEST: typings.ndnJs.signatureMod.KeyLocatorType.KEY_LOCATOR_DIGEST & Double = js.native
   }
   
   @JSImport("ndn-js/signature", "Sha256WithEcdsaSignature")

@@ -3,27 +3,25 @@ package typings.reactOnsenui.anon
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checked extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var defaultChecked: js.UndefOr[Boolean] = js.native
+  var defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* e */ Event, Unit]] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Checked {
   

@@ -2,21 +2,21 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartLegendItemClickEvent extends ChartEvent {
+trait ChartLegendItemClickEvent
+  extends StObject
+     with ChartEvent {
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var pointIndex: js.UndefOr[Double] = js.native
+  var pointIndex: js.UndefOr[Double] = js.undefined
   
-  var series: js.UndefOr[js.Any] = js.native
+  var series: js.UndefOr[js.Any] = js.undefined
   
-  var seriesIndex: js.UndefOr[Double] = js.native
+  var seriesIndex: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ChartLegendItemClickEvent {
   

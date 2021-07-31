@@ -2,14 +2,12 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationViewTransferContext extends StObject {
   
   /* unmapped type */
-  var viewId: js.Any = js.native
+  var viewId: js.Any
 }
 object ApplicationViewTransferContext {
   

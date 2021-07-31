@@ -5,7 +5,6 @@ import typings.grammarkdown.typesMod.Position
 import typings.grammarkdown.typesMod.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lineOffsetMapMod {

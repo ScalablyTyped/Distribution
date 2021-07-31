@@ -11,7 +11,6 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
@@ -31,28 +30,27 @@ object Display {
     * Default fragment and vertex source is used if not provided in the constructor, setting-up a basic shader,
     * suitable for debug rendering.
     */
-  @js.native
   trait BaseShader extends StObject {
     
     /**
       * The source code, as a string, of the fragment shader being used.
       */
-    var fragmentSrc: String = js.native
+    var fragmentSrc: String
     
     /**
       * The key of this shader, unique within the shader cache of this Phaser game instance.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The default uniforms for this shader.
       */
-    var uniforms: js.Any = js.native
+    var uniforms: js.Any
     
     /**
       * The source code, as a string, of the vertex shader being used.
       */
-    var vertexSrc: String = js.native
+    var vertexSrc: String
   }
   object BaseShader {
     
@@ -186,7 +184,7 @@ object Display {
       * @param max The maximum random color value. Between 0 and 255. Default 255.
       */
     def random(): Color = js.native
-    def random(min: js.UndefOr[scala.Nothing], max: integer): Color = js.native
+    def random(min: Unit, max: integer): Color = js.native
     def random(min: integer): Color = js.native
     def random(min: integer, max: integer): Color = js.native
     
@@ -196,7 +194,7 @@ object Display {
       * @param max The maximum random color value. Between 0 and 255. Default 255.
       */
     def randomGray(): Color = js.native
-    def randomGray(min: js.UndefOr[scala.Nothing], max: integer): Color = js.native
+    def randomGray(min: Unit, max: integer): Color = js.native
     def randomGray(min: integer): Color = js.native
     def randomGray(min: integer, max: integer): Color = js.native
     
@@ -261,7 +259,7 @@ object Display {
       * @param updateHSV Update the HSV values after setting the RGB values? Default true.
       */
     def setTo(red: integer, green: integer, blue: integer): Color = js.native
-    def setTo(red: integer, green: integer, blue: integer, alpha: js.UndefOr[scala.Nothing], updateHSV: Boolean): Color = js.native
+    def setTo(red: integer, green: integer, blue: integer, alpha: Unit, updateHSV: Boolean): Color = js.native
     def setTo(red: integer, green: integer, blue: integer, alpha: integer): Color = js.native
     def setTo(red: integer, green: integer, blue: integer, alpha: integer, updateHSV: Boolean): Color = js.native
     

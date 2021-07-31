@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -50,9 +49,9 @@ trait PlusIoFile extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
   def slice(): PlusIoFile = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): PlusIoFile = js.native
   def slice(start: Double): PlusIoFile = js.native
   def slice(start: Double, end: Double): PlusIoFile = js.native
+  def slice(start: Unit, end: Double): PlusIoFile = js.native
   
   /**
     * 文件数据对象MIME类型

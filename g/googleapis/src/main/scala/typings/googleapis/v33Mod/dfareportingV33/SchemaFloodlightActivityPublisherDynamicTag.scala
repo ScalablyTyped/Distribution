@@ -2,47 +2,45 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Publisher Dynamic Tag
   */
-@js.native
 trait SchemaFloodlightActivityPublisherDynamicTag extends StObject {
   
   /**
     * Whether this tag is applicable only for click-throughs.
     */
-  var clickThrough: js.UndefOr[Boolean] = js.native
+  var clickThrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Directory site ID of this dynamic tag. This is a write-only field that
     * can be used as an alternative to the siteId field. When this resource is
     * retrieved, only the siteId field will be populated.
     */
-  var directorySiteId: js.UndefOr[String] = js.native
+  var directorySiteId: js.UndefOr[String] = js.undefined
   
   /**
     * Dynamic floodlight tag.
     */
-  var dynamicTag: js.UndefOr[SchemaFloodlightActivityDynamicTag] = js.native
+  var dynamicTag: js.UndefOr[SchemaFloodlightActivityDynamicTag] = js.undefined
   
   /**
     * Site ID of this dynamic tag.
     */
-  var siteId: js.UndefOr[String] = js.native
+  var siteId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the site. This is a read-only,
     * auto-generated field.
     */
-  var siteIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var siteIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Whether this tag is applicable only for view-throughs.
     */
-  var viewThrough: js.UndefOr[Boolean] = js.native
+  var viewThrough: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaFloodlightActivityPublisherDynamicTag {
   

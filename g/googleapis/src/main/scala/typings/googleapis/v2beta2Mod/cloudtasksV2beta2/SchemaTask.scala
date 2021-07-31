@@ -2,13 +2,11 @@ package typings.googleapis.v2beta2Mod.cloudtasksV2beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A unit of scheduled work.
   */
-@js.native
 trait SchemaTask extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaTask extends StObject {
     * only if app_engine_http_target is set on the queue.  An App Engine task
     * is a task that has AppEngineHttpRequest set.
     */
-  var appEngineHttpRequest: js.UndefOr[SchemaAppEngineHttpRequest] = js.native
+  var appEngineHttpRequest: js.UndefOr[SchemaAppEngineHttpRequest] = js.undefined
   
   /**
     * Output only. The time that the task was created.  `create_time` will be
     * truncated to the nearest second.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optionally caller-specified in CreateTask.  The task name.  The task name
@@ -40,13 +38,13 @@ trait SchemaTask extends StObject {
     * letters ([A-Za-z]), numbers ([0-9]),   hyphens (-), or underscores (_).
     * The maximum length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * LeaseTasks to process the task. Can be set only if pull_target is set on
     * the queue.  A pull task is a task that has PullMessage set.
     */
-  var pullMessage: js.UndefOr[SchemaPullMessage] = js.native
+  var pullMessage: js.UndefOr[SchemaPullMessage] = js.undefined
   
   /**
     * The time when the task is scheduled to be attempted.  For App Engine
@@ -57,18 +55,18 @@ trait SchemaTask extends StObject {
     * lease_duration.  `schedule_time` will be truncated to the nearest
     * microsecond.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The task status.
     */
-  var status: js.UndefOr[SchemaTaskStatus] = js.native
+  var status: js.UndefOr[SchemaTaskStatus] = js.undefined
   
   /**
     * Output only. The view specifies which subset of the Task has been
     * returned.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object SchemaTask {
   

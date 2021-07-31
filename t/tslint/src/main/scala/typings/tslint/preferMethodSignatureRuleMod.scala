@@ -6,7 +6,6 @@ import typings.tslint.ruleMod.IRuleMetadata
 import typings.typescript.mod.PropertySignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preferMethodSignatureRuleMod {
@@ -29,9 +28,8 @@ object preferMethodSignatureRuleMod {
     @scala.inline
     def FAILURE_STRING_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("FAILURE_STRING")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/preferMethodSignatureRule", "Rule.METH_SIGN_STRING")
-    @js.native
-    def METH_SIGN_STRING(ps: PropertySignature): String = js.native
+    @scala.inline
+    def METH_SIGN_STRING(ps: PropertySignature): String = ^.asInstanceOf[js.Dynamic].applyDynamic("METH_SIGN_STRING")(ps.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/preferMethodSignatureRule", "Rule.metadata")
     @js.native

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GamesAchievementIncrement extends StObject {
   
   /** Uniquely identifies the type of this resource. Value is always the fixed string `games#GamesAchievementIncrement`. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The requestId associated with an increment to an achievement. */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** The number of steps to be incremented. */
-  var steps: js.UndefOr[Double] = js.native
+  var steps: js.UndefOr[Double] = js.undefined
 }
 object GamesAchievementIncrement {
   

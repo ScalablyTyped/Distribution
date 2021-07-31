@@ -6,17 +6,15 @@ import typings.jointjs.mod.dia.Cell.Attributes
 import typings.jointjs.mod.dia.Graph.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellModel extends StObject {
   
   var cellModel: js.UndefOr[
-    TypeofCell with (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
-  ] = js.native
+    TypeofCell & (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
+  ] = js.undefined
   
-  var cellNamespace: js.UndefOr[js.Any] = js.native
+  var cellNamespace: js.UndefOr[js.Any] = js.undefined
 }
 object CellModel {
   
@@ -31,7 +29,7 @@ object CellModel {
     
     @scala.inline
     def setCellModel(
-      value: TypeofCell with (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
+      value: TypeofCell & (Instantiable2[/* attributes */ js.UndefOr[Attributes], /* opt */ js.UndefOr[Options], Cell])
     ): Self = StObject.set(x, "cellModel", value.asInstanceOf[js.Any])
     
     @scala.inline

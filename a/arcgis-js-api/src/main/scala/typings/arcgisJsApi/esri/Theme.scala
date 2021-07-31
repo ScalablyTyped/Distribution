@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Theme extends Object {
+trait Theme
+  extends StObject
+     with Object {
   
   /**
     * The Esri basemaps that pair well with the given theme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
     */
-  var basemaps: js.Array[String] = js.native
+  var basemaps: js.Array[String]
   
   /**
     * Text describing the theme in the UI.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The label identifying the theme in UI elements.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The name of the theme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#Theme)
     */
-  var name: String = js.native
+  var name: String
 }
 object Theme {
   

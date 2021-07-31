@@ -4,63 +4,63 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DisplayControl extends ClientControl {
+trait DisplayControl
+  extends StObject
+     with ClientControl {
   
-  def add_oneTimeResultRendered(value: js.Any): Unit = js.native
+  def add_oneTimeResultRendered(value: js.Any): Unit
   
-  def add_queryReady(value: js.Any): Unit = js.native
+  def add_queryReady(value: js.Any): Unit
   
-  def add_resultRendered(value: js.Any): Unit = js.native
+  def add_resultRendered(value: js.Any): Unit
   
-  def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit = js.native
+  def dataProvider_QueryIssuing(sender: js.Any, e: js.Any): Unit
   
-  def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit = js.native
+  def dataProvider_ResultReady(sender: js.Any, e: js.Any): Unit
   
-  def get_currentResultTableCollection(): js.Any = js.native
+  def get_currentResultTableCollection(): js.Any
   
-  def get_dataProvider(): DataProvider = js.native
+  def get_dataProvider(): DataProvider
   
-  def get_emptyMessage(): String = js.native
+  def get_emptyMessage(): String
   
-  def get_queryGroupName(): String = js.native
+  def get_queryGroupName(): String
   
-  def get_renderedResult(): Boolean = js.native
+  def get_renderedResult(): Boolean
   
-  def get_shouldShowNoResultMessage(): Boolean = js.native
+  def get_shouldShowNoResultMessage(): Boolean
   
-  def processQueryIssuing(queryState: js.Any): Unit = js.native
+  def processQueryIssuing(queryState: js.Any): Unit
   
-  def processResultReady(resultTableCollection: js.Any): Unit = js.native
+  def processResultReady(resultTableCollection: js.Any): Unit
   
-  def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit = js.native
+  def raiseOneTimeResultRenderedEvent(arg: js.Any): Unit
   
-  def raiseQueryReadyEvent(arg: js.Any): Unit = js.native
+  def raiseQueryReadyEvent(arg: js.Any): Unit
   
-  def raiseResultRenderedEvent(arg: js.Any): Unit = js.native
+  def raiseResultRenderedEvent(arg: js.Any): Unit
   
-  def refresh(queryState: js.Any): Unit = js.native
+  def refresh(queryState: js.Any): Unit
   
-  def remove_oneTimeResultRendered(value: js.Any): Unit = js.native
+  def remove_oneTimeResultRendered(value: js.Any): Unit
   
-  def remove_queryReady(value: js.Any): Unit = js.native
+  def remove_queryReady(value: js.Any): Unit
   
-  def remove_resultRendered(value: js.Any): Unit = js.native
+  def remove_resultRendered(value: js.Any): Unit
   
-  def render(): Unit = js.native
+  def render(): Unit
   
-  def set_currentResultTableCollection(value: js.Any): js.Any = js.native
+  def set_currentResultTableCollection(value: js.Any): js.Any
   
-  def set_emptyMessage(value: String): String = js.native
+  def set_emptyMessage(value: String): String
   
-  def set_queryGroupName(value: String): String = js.native
+  def set_queryGroupName(value: String): String
   
-  def set_renderedResult(value: Boolean): Boolean = js.native
+  def set_renderedResult(value: Boolean): Boolean
   
-  def set_shouldShowNoResultMessage(value: Boolean): Boolean = js.native
+  def set_shouldShowNoResultMessage(value: Boolean): Boolean
 }
 object DisplayControl {
   
@@ -91,7 +91,7 @@ object DisplayControl {
     get_isInitialLoad: () => Boolean,
     get_isInitialized: () => Boolean,
     get_isUpdating: () => Boolean,
-    get_messages: () => js.Array[_],
+    get_messages: () => js.Array[js.Any],
     get_nextUniqueId: () => String,
     get_queryGroupName: () => String,
     get_renderTemplateId: () => String,
@@ -130,14 +130,14 @@ object DisplayControl {
     scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
     scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[_],
+    serverTemplateScriptsToLoad: js.Array[js.Any],
     setControlElementVisibility: Boolean => js.Any,
     set_alternateErrorMessage: String => String,
     set_currentResultTableCollection: js.Any => js.Any,
     set_delayLoadTemplateScripts: Boolean => Boolean,
     set_emptyMessage: String => String,
     set_id: String => Unit,
-    set_messages: js.Array[_] => js.Array[_],
+    set_messages: js.Array[js.Any] => js.Array[js.Any],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,
     set_renderedResult: Boolean => Boolean,

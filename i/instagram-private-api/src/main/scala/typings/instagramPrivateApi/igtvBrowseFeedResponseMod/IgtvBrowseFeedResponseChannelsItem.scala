@@ -2,33 +2,31 @@ package typings.instagramPrivateApi.igtvBrowseFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgtvBrowseFeedResponseChannelsItem extends StObject {
   
-  var approx_total_videos: Null = js.native
+  var approx_total_videos: Null
   
-  var cover_photo_url: Null = js.native
+  var cover_photo_url: Null
   
-  var description: Null = js.native
+  var description: Null
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[_] = js.native
+  var items: js.Array[js.Any]
   
-  var max_id: Null = js.native
+  var max_id: Null
   
-  var more_available: Boolean = js.native
+  var more_available: Boolean
   
-  var seen_state: IgtvBrowseFeedResponseSeenState = js.native
+  var seen_state: IgtvBrowseFeedResponseSeenState
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var user_dict: Null = js.native
+  var user_dict: Null
 }
 object IgtvBrowseFeedResponseChannelsItem {
   
@@ -38,7 +36,7 @@ object IgtvBrowseFeedResponseChannelsItem {
     cover_photo_url: Null,
     description: Null,
     id: String,
-    items: js.Array[_],
+    items: js.Array[js.Any],
     max_id: Null,
     more_available: Boolean,
     seen_state: IgtvBrowseFeedResponseSeenState,
@@ -67,7 +65,7 @@ object IgtvBrowseFeedResponseChannelsItem {
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))

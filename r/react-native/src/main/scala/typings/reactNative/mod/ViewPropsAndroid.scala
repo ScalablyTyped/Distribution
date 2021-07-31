@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewPropsAndroid extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait ViewPropsAndroid extends StObject {
     * may be automatically removed from the native hierarchy as an optimization.
     * Set this property to false to disable this optimization and ensure that this View exists in the native view hierarchy.
     */
-  var collapsable: js.UndefOr[Boolean] = js.native
+  var collapsable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this `View` should be focusable with a non-touch input device, eg. receive focus with a hardware keyboard.
     */
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this view needs to rendered offscreen and composited with an alpha in order to preserve 100% correct colors and blending behavior.
@@ -34,7 +32,7 @@ trait ViewPropsAndroid extends StObject {
     * If that property is enabled, this View will be rendered off-screen once,
     * saved in a hardware texture, and then composited onto the screen with an alpha each frame without having to switch rendering targets on the GPU.
     */
-  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this view should render itself (and all of its children) into a single hardware texture on the GPU.
@@ -43,7 +41,7 @@ trait ViewPropsAndroid extends StObject {
     * in those cases, the view doesn't have to be redrawn and display lists don't need to be re-executed. The texture can just be
     * re-used and re-composited with different parameters. The downside is that this can use up limited video memory, so this prop should be set back to false at the end of the interaction/animation.
     */
-  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
 }
 object ViewPropsAndroid {
   

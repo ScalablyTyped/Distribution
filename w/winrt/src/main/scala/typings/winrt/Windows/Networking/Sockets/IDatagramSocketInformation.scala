@@ -3,19 +3,17 @@ package typings.winrt.Windows.Networking.Sockets
 import typings.winrt.Windows.Networking.HostName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDatagramSocketInformation extends StObject {
   
-  var localAddress: HostName = js.native
+  var localAddress: HostName
   
-  var localPort: String = js.native
+  var localPort: String
   
-  var remoteAddress: HostName = js.native
+  var remoteAddress: HostName
   
-  var remotePort: String = js.native
+  var remotePort: String
 }
 object IDatagramSocketInformation {
   

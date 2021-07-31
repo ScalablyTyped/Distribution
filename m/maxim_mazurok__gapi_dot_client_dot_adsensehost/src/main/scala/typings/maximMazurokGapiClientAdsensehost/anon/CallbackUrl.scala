@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientAdsensehost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackUrl extends StObject {
   
   /** Data format for the response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** The URL to redirect the user to once association is completed. It receives a token parameter that can then be used to retrieve the associated account. */
-  var callbackUrl: js.UndefOr[String] = js.native
+  var callbackUrl: js.UndefOr[String] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Products to associate with the user. */
-  var productCode: String | js.Array[String] = js.native
+  var productCode: String | js.Array[String]
   
   /** An opaque string that represents a user for quota purposes. Must not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Deprecated. Please use quotaUser instead. */
-  var userIp: js.UndefOr[String] = js.native
+  var userIp: js.UndefOr[String] = js.undefined
   
   /** The preferred locale of the user. */
-  var userLocale: js.UndefOr[String] = js.native
+  var userLocale: js.UndefOr[String] = js.undefined
   
   /** The locale of the user's hosted website. */
-  var websiteLocale: js.UndefOr[String] = js.native
+  var websiteLocale: js.UndefOr[String] = js.undefined
   
   /** The URL of the user's hosted website. */
-  var websiteUrl: String = js.native
+  var websiteUrl: String
 }
 object CallbackUrl {
   

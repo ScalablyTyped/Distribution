@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EqlGet extends Generic {
+trait EqlGet
+  extends StObject
+     with Generic {
   
-  var id: String = js.native
+  var id: String
   
-  var keep_alive: js.UndefOr[String] = js.native
+  var keep_alive: js.UndefOr[String] = js.undefined
   
-  var wait_for_completion_timeout: js.UndefOr[String] = js.native
+  var wait_for_completion_timeout: js.UndefOr[String] = js.undefined
 }
 object EqlGet {
   

@@ -3,159 +3,117 @@ package typings.paypalRestSdk.mod
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object payment {
   
-  @JSImport("paypal-rest-sdk", "payment.create")
+  @JSImport("paypal-rest-sdk", "payment")
   @js.native
-  def create(data: Payment_, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.create")
-  @js.native
-  def create(data: Payment_, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.create")
-  @js.native
-  def create(data: Payment_, config: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.create")
-  @js.native
-  def create(data: Payment_, config: CallbackFunction[PaymentResponse], cb: CallbackFunction[PaymentResponse]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("paypal-rest-sdk", "payment.execute")
-  @js.native
-  def execute(id: String, data: ExecuteRequest, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.execute")
-  @js.native
-  def execute(id: String, data: ExecuteRequest, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.execute")
-  @js.native
-  def execute(id: String, data: ExecuteRequest, config: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.execute")
-  @js.native
+  @scala.inline
+  def create(data: Payment_, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(data: Payment_, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(data: Payment_, config: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(data: Payment_, config: CallbackFunction[PaymentResponse], cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def execute(id: String, data: ExecuteRequest, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def execute(id: String, data: ExecuteRequest, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def execute(id: String, data: ExecuteRequest, config: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def execute(
     id: String,
     data: ExecuteRequest,
     config: CallbackFunction[PaymentResponse],
     cb: CallbackFunction[PaymentResponse]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("execute")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("paypal-rest-sdk", "payment.get")
-  @js.native
-  def get(id: String, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.get")
-  @js.native
-  def get(id: String, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.get")
-  @js.native
-  def get(id: String, config: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.get")
-  @js.native
-  def get(id: String, config: CallbackFunction[PaymentResponse], cb: CallbackFunction[PaymentResponse]): Unit = js.native
+  @scala.inline
+  def get(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, config: RequestOptions, cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, config: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, config: CallbackFunction[PaymentResponse], cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions, config: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: RequestOptions, config: CallbackFunction[ListResponse], cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(
-    data: CallbackFunction[ListResponse],
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[ListResponse]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: CallbackFunction[ListResponse], config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: CallbackFunction[ListResponse], config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: CallbackFunction[ListResponse], config: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
+  @scala.inline
+  def list(data: RequestOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: RequestOptions, config: Unit, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: RequestOptions, config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: RequestOptions, config: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: RequestOptions, config: CallbackFunction[ListResponse], cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: CallbackFunction[ListResponse]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: CallbackFunction[ListResponse], config: Unit, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: CallbackFunction[ListResponse], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: CallbackFunction[ListResponse], config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: CallbackFunction[ListResponse], config: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def list(
     data: CallbackFunction[ListResponse],
     config: CallbackFunction[ListResponse],
     cb: CallbackFunction[ListResponse]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters, config: js.UndefOr[scala.Nothing], cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters, config: CallbackFunction[ListResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.list")
-  @js.native
-  def list(data: QueryParameters, config: CallbackFunction[ListResponse], cb: CallbackFunction[ListResponse]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters, config: Unit, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters, config: RequestOptions, cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters, config: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def list(data: QueryParameters, config: CallbackFunction[ListResponse], cb: CallbackFunction[ListResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
-  def update(id: String, data: js.Array[UpdateRequest]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
-  def update(
-    id: String,
-    data: js.Array[UpdateRequest],
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[PaymentResponse]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
-  def update(id: String, data: js.Array[UpdateRequest], config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
+  @scala.inline
+  def update(id: String, data: js.Array[UpdateRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: String, data: js.Array[UpdateRequest], config: Unit, cb: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: String, data: js.Array[UpdateRequest], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def update(
     id: String,
     data: js.Array[UpdateRequest],
     config: RequestOptions,
     cb: CallbackFunction[PaymentResponse]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
-  def update(id: String, data: js.Array[UpdateRequest], config: CallbackFunction[PaymentResponse]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "payment.update")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: String, data: js.Array[UpdateRequest], config: CallbackFunction[PaymentResponse]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def update(
     id: String,
     data: js.Array[UpdateRequest],
     config: CallbackFunction[PaymentResponse],
     cb: CallbackFunction[PaymentResponse]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait AuthorizationResponse
-    extends AuthorizationResource
+    extends StObject
+       with AuthorizationResource
        with Response {
     
     /* InferMemberOverrides */
-    override val create_time: js.UndefOr[String] = js.native
+    override val create_time: js.UndefOr[String] = js.undefined
   }
   object AuthorizationResponse {
     
@@ -176,13 +134,13 @@ object payment {
     }
   }
   
-  @js.native
   trait CaptureResponse
-    extends CaptureResource
+    extends StObject
+       with CaptureResource
        with Response {
     
     /* InferMemberOverrides */
-    override val create_time: js.UndefOr[String] = js.native
+    override val create_time: js.UndefOr[String] = js.undefined
   }
   object CaptureResponse {
     
@@ -203,10 +161,9 @@ object payment {
     }
   }
   
-  @js.native
   trait ExecuteRequest extends StObject {
     
-    var payer_id: String = js.native
+    var payer_id: String
   }
   object ExecuteRequest {
     
@@ -224,15 +181,16 @@ object payment {
     }
   }
   
-  @js.native
-  trait ListResponse extends Response {
+  trait ListResponse
+    extends StObject
+       with Response {
     
     @JSName("count")
-    var count_ListResponse: Double = js.native
+    var count_ListResponse: Double
     
-    var next_id: String = js.native
+    var next_id: String
     
-    var payments: js.Array[Payment_] = js.native
+    var payments: js.Array[Payment_]
   }
   object ListResponse {
     
@@ -259,13 +217,13 @@ object payment {
     }
   }
   
-  @js.native
   trait RefundResponse
-    extends RefundResource
+    extends StObject
+       with RefundResource
        with Response {
     
     /* InferMemberOverrides */
-    override val create_time: js.UndefOr[String] = js.native
+    override val create_time: js.UndefOr[String] = js.undefined
   }
   object RefundResponse {
     
@@ -286,13 +244,13 @@ object payment {
     }
   }
   
-  @js.native
   trait SaleResponse
-    extends SaleResource
+    extends StObject
+       with SaleResource
        with Response {
     
     /* InferMemberOverrides */
-    override val create_time: js.UndefOr[String] = js.native
+    override val create_time: js.UndefOr[String] = js.undefined
   }
   object SaleResponse {
     

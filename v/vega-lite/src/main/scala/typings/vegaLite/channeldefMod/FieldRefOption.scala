@@ -8,32 +8,30 @@ import typings.vegaLite.vegaLiteStrings.parent
 import typings.vegaLite.vegaLiteStrings.range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldRefOption extends StObject {
   
   /** Append suffix to the field ref for bin (default='start') */
-  var binSuffix: js.UndefOr[end | range | mid] = js.native
+  var binSuffix: js.UndefOr[end | range | mid] = js.undefined
   
   /** Wrap the field with datum, parent, or datum.datum (e.g., datum['...'] for Vega Expression */
-  var expr: js.UndefOr[datum | parent | datumDotdatum] = js.native
+  var expr: js.UndefOr[datum | parent | datumDotdatum] = js.undefined
   
   /**
     * Use the field name for `as` in a transform.
     * We will not escape nested accesses because Vega transform outputs cannot be nested.
     */
-  var forAs: js.UndefOr[Boolean] = js.native
+  var forAs: js.UndefOr[Boolean] = js.undefined
   
   /** Exclude bin, aggregate, timeUnit */
-  var nofn: js.UndefOr[Boolean] = js.native
+  var nofn: js.UndefOr[Boolean] = js.undefined
   
   /** Prepend fn with custom function prefix */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /** Append suffix to the field ref (general) */
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
 }
 object FieldRefOption {
   

@@ -2,19 +2,17 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpContext extends StObject {
   
-  val activeSignatureHelp: js.UndefOr[SignatureHelp] = js.native
+  val activeSignatureHelp: js.UndefOr[SignatureHelp] = js.undefined
   
-  val isRetrigger: Boolean = js.native
+  val isRetrigger: Boolean
   
-  val triggerCharacter: js.UndefOr[String] = js.native
+  val triggerCharacter: js.UndefOr[String] = js.undefined
   
-  val triggerKind: SignatureHelpTriggerKind = js.native
+  val triggerKind: SignatureHelpTriggerKind
 }
 object SignatureHelpContext {
   

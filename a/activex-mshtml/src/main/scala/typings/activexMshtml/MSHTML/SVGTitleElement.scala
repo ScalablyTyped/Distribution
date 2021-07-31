@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGTitleElement extends StObject {
   
   @JSName("MSHTML.SVGTitleElement_typekey")
-  var MSHTMLDotSVGTitleElement_typekey: SVGTitleElement = js.native
+  var MSHTMLDotSVGTitleElement_typekey: SVGTitleElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
 }
 object SVGTitleElement {
   

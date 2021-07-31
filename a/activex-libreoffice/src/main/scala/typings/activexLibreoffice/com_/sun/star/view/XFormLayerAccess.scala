@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.form.XForm
 import typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the form layer elements in a view
   * @since OOo 2.3
   */
-@js.native
-trait XFormLayerAccess extends XControlAccess {
+trait XFormLayerAccess
+  extends StObject
+     with XControlAccess {
   
   /**
     * returns the {@link com.sun.star.form.FormController} instance which operates on a given form.
@@ -27,7 +27,7 @@ trait XFormLayerAccess extends XControlAccess {
     * @see com.sun.star.form.runtime.FormController
     * @see com.sun.star.form.runtime.FormOperations
     */
-  def getFormController(Form: XForm): XFormController = js.native
+  def getFormController(Form: XForm): XFormController
   
   /**
     * determines whether the view's form layer is currently in design or alive mode
@@ -35,7 +35,7 @@ trait XFormLayerAccess extends XControlAccess {
     * **Note** : This is a convenience method. In the user interface, the design mode is coupled with the `.uno:SwitchControlDesignMode` feature (see {@link
     * com.sun.star.frame.XDispatchProvider} ), and asking for the current mode is the same as asking for the state of this feature.
     */
-  def isFormDesignMode(): Boolean = js.native
+  def isFormDesignMode(): Boolean
   
   /**
     * determines whether the view's form layer is currently in design or alive mode
@@ -43,7 +43,7 @@ trait XFormLayerAccess extends XControlAccess {
     * **Note** : This is a convenience method. In the user interface, the design mode is coupled with the `.uno:SwitchControlDesignMode` feature (see {@link
     * com.sun.star.frame.XDispatchProvider} ), and changing the current mode is the same as dispatching this feature URL.
     */
-  def setFormDesignMode(DesignMode: Boolean): Unit = js.native
+  def setFormDesignMode(DesignMode: Boolean): Unit
 }
 object XFormLayerAccess {
   

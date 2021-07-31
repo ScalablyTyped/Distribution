@@ -3,53 +3,51 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventType extends StObject {
   
-  var category: NotificationEventTypeCategory = js.native
+  var category: NotificationEventTypeCategory
   
   /**
     * Gets or sets the color representing this event type. Example: rgb(128,245,211) or #fafafa
     */
-  var color: String = js.native
+  var color: String
   
-  var customSubscriptionsAllowed: Boolean = js.native
+  var customSubscriptionsAllowed: Boolean
   
-  var eventPublisher: NotificationEventPublisher = js.native
+  var eventPublisher: NotificationEventPublisher
   
-  var fields: StringDictionary[NotificationEventField] = js.native
+  var fields: StringDictionary[NotificationEventField]
   
-  var hasInitiator: Boolean = js.native
+  var hasInitiator: Boolean
   
   /**
     * Gets or sets the icon representing this event type. Can be a URL or a CSS class. Example: css://some-css-class
     */
-  var icon: String = js.native
+  var icon: String
   
   /**
     * Gets or sets the unique identifier of this event definition.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Gets or sets the name of this event definition.
     */
-  var name: String = js.native
+  var name: String
   
-  var roles: js.Array[NotificationEventRole] = js.native
+  var roles: js.Array[NotificationEventRole]
   
   /**
     * Gets or sets the scopes that this event type supports
     */
-  var supportedScopes: js.Array[String] = js.native
+  var supportedScopes: js.Array[String]
   
   /**
     * Gets or sets the rest end point to get this event type details (fields, fields types)
     */
-  var url: String = js.native
+  var url: String
 }
 object NotificationEventType {
   

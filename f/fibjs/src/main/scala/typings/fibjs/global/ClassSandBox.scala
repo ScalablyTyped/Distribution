@@ -2,7 +2,6 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Class_SandBox")
 @js.native
 class ClassSandBox protected ()
-  extends typings.fibjs.ClassSandBox {
+  extends StObject
+     with typings.fibjs.ClassSandBox {
   /**
     * 
     * @brief 构造一个新的安全沙箱对象，并初始化基础模块

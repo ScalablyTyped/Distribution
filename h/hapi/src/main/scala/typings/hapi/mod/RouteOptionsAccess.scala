@@ -6,10 +6,8 @@ import typings.hapi.hapiStrings.optional
 import typings.hapi.hapiStrings.required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteOptionsAccess extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait RouteOptionsAccess extends StObject {
     * must include at least one of scope or entity.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccess)
     */
-  var access: js.UndefOr[RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]] = js.native
+  var access: js.UndefOr[RouteOptionsAccessObject | js.Array[RouteOptionsAccessObject]] = js.undefined
   
   /**
     * Default value: 'any'.
@@ -29,7 +27,7 @@ trait RouteOptionsAccess extends StObject {
     * strategy.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessentity)
     */
-  var entity: js.UndefOr[RouteOptionsAccessEntity] = js.native
+  var entity: js.UndefOr[RouteOptionsAccessEntity] = js.undefined
   
   /**
     * Default value: 'required'.
@@ -39,7 +37,7 @@ trait RouteOptionsAccess extends StObject {
     * * 'try' - similar to 'optional', any request credentials are attempted authentication, but if the credentials are invalid, the request proceeds regardless of the authentication error.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthmode)
     */
-  var mode: js.UndefOr[required | optional | `try`] = js.native
+  var mode: js.UndefOr[required | optional | `try`] = js.undefined
   
   /**
     * Default value: false, unless the scheme requires payload authentication.
@@ -50,7 +48,7 @@ trait RouteOptionsAccess extends StObject {
     * * 'optional' - payload authentication performed only when the client includes payload authentication information (e.g. hash attribute in Hawk).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthpayload)
     */
-  var payload: js.UndefOr[`false` | required | optional] = js.native
+  var payload: js.UndefOr[`false` | required | optional] = js.undefined
   
   /**
     * Default value: false (no scope requirements).
@@ -60,21 +58,21 @@ trait RouteOptionsAccess extends StObject {
     * properties on the request object (query, params, payload, and credentials) to populate a dynamic scope by using the '{' and '}' characters around the property name, such as 'user-{params.id}'.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthaccessscope)
     */
-  var scope: js.UndefOr[RouteOptionsAccessScope] = js.native
+  var scope: js.UndefOr[RouteOptionsAccessScope] = js.undefined
   
   /**
     * Default value: the default strategy set via server.auth.default().
     * An array of string strategy names in the order they should be attempted. Cannot be used together with strategy.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthstrategies)
     */
-  var strategies: js.UndefOr[js.Array[String]] = js.native
+  var strategies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Default value: the default strategy set via server.auth.default().
     * A string strategy names. Cannot be used together with strategies.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsauthstrategy)
     */
-  var strategy: js.UndefOr[String] = js.native
+  var strategy: js.UndefOr[String] = js.undefined
 }
 object RouteOptionsAccess {
   

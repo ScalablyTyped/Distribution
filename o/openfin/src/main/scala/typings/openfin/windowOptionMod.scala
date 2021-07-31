@@ -25,21 +25,19 @@ import typings.openfin.shapesMod.Hotkey
 import typings.openfin.shapesMod.RGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowOptionMod {
   
-  @js.native
   trait Accelerator extends StObject {
     
-    var devtools: js.UndefOr[Boolean] = js.native
+    var devtools: js.UndefOr[Boolean] = js.undefined
     
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
     
-    var reloadIgnoringCache: js.UndefOr[Boolean] = js.native
+    var reloadIgnoringCache: js.UndefOr[Boolean] = js.undefined
     
-    var zoom: js.UndefOr[Boolean] = js.native
+    var zoom: js.UndefOr[Boolean] = js.undefined
   }
   object Accelerator {
     
@@ -78,10 +76,9 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait Api extends StObject {
     
-    var iframe: js.UndefOr[CrossOriginInjection] = js.native
+    var iframe: js.UndefOr[CrossOriginInjection] = js.undefined
   }
   object Api {
     
@@ -102,12 +99,11 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait ContentNavigation extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ContentNavigation {
     
@@ -140,12 +136,11 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait ContentRedirect extends StObject {
     
-    var blacklist: js.UndefOr[js.Array[String]] = js.native
+    var blacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ContentRedirect {
     
@@ -178,12 +173,11 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait CornerRounding extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CornerRounding {
     
@@ -210,17 +204,16 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait CustomRequestHeaders extends StObject {
     
-    var headers: js.Array[_] = js.native
+    var headers: js.Array[js.Any]
     
-    var urlPatterns: js.Array[String] = js.native
+    var urlPatterns: js.Array[String]
   }
   object CustomRequestHeaders {
     
     @scala.inline
-    def apply(headers: js.Array[_], urlPatterns: js.Array[String]): CustomRequestHeaders = {
+    def apply(headers: js.Array[js.Any], urlPatterns: js.Array[String]): CustomRequestHeaders = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], urlPatterns = urlPatterns.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomRequestHeaders]
     }
@@ -229,7 +222,7 @@ object windowOptionMod {
     implicit class CustomRequestHeadersMutableBuilder[Self <: CustomRequestHeaders] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHeaders(value: js.Array[_]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.Array[js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersVarargs(value: js.Any*): Self = StObject.set(x, "headers", js.Array(value :_*))
@@ -242,14 +235,13 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait ResizeRegion extends StObject {
     
-    var bottomRightCorner: js.UndefOr[Double] = js.native
+    var bottomRightCorner: js.UndefOr[Double] = js.undefined
     
-    var sides: js.UndefOr[Bottom] = js.native
+    var sides: js.UndefOr[Bottom] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object ResizeRegion {
     
@@ -282,102 +274,101 @@ object windowOptionMod {
     }
   }
   
-  @js.native
   trait WindowOption extends StObject {
     
-    var accelerator: js.UndefOr[Accelerator] = js.native
+    var accelerator: js.UndefOr[Accelerator] = js.undefined
     
-    var alphaMask: js.UndefOr[RGB] = js.native
+    var alphaMask: js.UndefOr[RGB] = js.undefined
     
-    var alwaysOnTop: js.UndefOr[Boolean] = js.native
+    var alwaysOnTop: js.UndefOr[Boolean] = js.undefined
     
-    var api: js.UndefOr[Api] = js.native
+    var api: js.UndefOr[Api] = js.undefined
     
-    var applicationIcon: js.UndefOr[String] = js.native
+    var applicationIcon: js.UndefOr[String] = js.undefined
     
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
     
-    var autoShow: js.UndefOr[Boolean] = js.native
+    var autoShow: js.UndefOr[Boolean] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var contentNavigation: js.UndefOr[ContentNavigation] = js.native
+    var contentNavigation: js.UndefOr[ContentNavigation] = js.undefined
     
-    var contentRedirect: js.UndefOr[ContentRedirect] = js.native
+    var contentRedirect: js.UndefOr[ContentRedirect] = js.undefined
     
-    var contextMenu: js.UndefOr[Boolean] = js.native
+    var contextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
-    var cornerRounding: js.UndefOr[CornerRounding] = js.native
+    var cornerRounding: js.UndefOr[CornerRounding] = js.undefined
     
-    var customContext: js.UndefOr[js.Any] = js.native
+    var customContext: js.UndefOr[js.Any] = js.undefined
     
-    var customData: js.UndefOr[js.Any] = js.native
+    var customData: js.UndefOr[js.Any] = js.undefined
     
-    var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.native
+    var customRequestHeaders: js.UndefOr[js.Array[CustomRequestHeaders]] = js.undefined
     
-    var defaultCentered: js.UndefOr[Boolean] = js.native
+    var defaultCentered: js.UndefOr[Boolean] = js.undefined
     
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
-    var defaultLeft: js.UndefOr[Double] = js.native
+    var defaultLeft: js.UndefOr[Double] = js.undefined
     
-    var defaultTop: js.UndefOr[Double] = js.native
+    var defaultTop: js.UndefOr[Double] = js.undefined
     
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
-    var frame: js.UndefOr[Boolean] = js.native
+    var frame: js.UndefOr[Boolean] = js.undefined
     
-    var hideOnClose: js.UndefOr[Boolean] = js.native
+    var hideOnClose: js.UndefOr[Boolean] = js.undefined
     
-    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.native
+    var hotkeys: js.UndefOr[js.Array[Hotkey]] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[Config] = js.native
+    var layout: js.UndefOr[Config] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var maximizable: js.UndefOr[Boolean] = js.native
+    var maximizable: js.UndefOr[Boolean] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var minimizable: js.UndefOr[Boolean] = js.native
+    var minimizable: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var preloadScripts: js.UndefOr[js.Array[DownloadPreloadOption]] = js.native
+    var preloadScripts: js.UndefOr[js.Array[DownloadPreloadOption]] = js.undefined
     
-    var resizable: js.UndefOr[Boolean] = js.native
+    var resizable: js.UndefOr[Boolean] = js.undefined
     
-    var resizeRegion: js.UndefOr[ResizeRegion] = js.native
+    var resizeRegion: js.UndefOr[ResizeRegion] = js.undefined
     
-    var saveWindowState: js.UndefOr[Boolean] = js.native
+    var saveWindowState: js.UndefOr[Boolean] = js.undefined
     
-    var shadow: js.UndefOr[Boolean] = js.native
+    var shadow: js.UndefOr[Boolean] = js.undefined
     
-    var showBackgroundImages: js.UndefOr[Boolean] = js.native
+    var showBackgroundImages: js.UndefOr[Boolean] = js.undefined
     
-    var showTaskbarIcon: js.UndefOr[Boolean] = js.native
+    var showTaskbarIcon: js.UndefOr[Boolean] = js.undefined
     
-    var smallWindow: js.UndefOr[Boolean] = js.native
+    var smallWindow: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var taskbarIconGroup: js.UndefOr[String] = js.native
+    var taskbarIconGroup: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
     
-    var waitForPageLoad: js.UndefOr[Boolean] = js.native
+    var waitForPageLoad: js.UndefOr[Boolean] = js.undefined
   }
   object WindowOption {
     
@@ -684,102 +675,101 @@ object windowOptionMod {
   }
   
   /* Inlined {[ key in keyof openfin.openfin/_v2/api/window/windowOption.WindowOption ]: {  oldVal :openfin.openfin/_v2/api/window/windowOption.WindowOption[key],   newVal :openfin.openfin/_v2/api/window/windowOption.WindowOption[key]}} */
-  @js.native
   trait WindowOptionDiff extends StObject {
     
-    var accelerator: js.UndefOr[`12`] = js.native
+    var accelerator: js.UndefOr[`12`] = js.undefined
     
-    var alphaMask: js.UndefOr[`5`] = js.native
+    var alphaMask: js.UndefOr[`5`] = js.undefined
     
-    var alwaysOnTop: js.UndefOr[NewValOldVal] = js.native
+    var alwaysOnTop: js.UndefOr[NewValOldVal] = js.undefined
     
-    var api: js.UndefOr[`7`] = js.native
+    var api: js.UndefOr[`7`] = js.undefined
     
-    var applicationIcon: js.UndefOr[`2`] = js.native
+    var applicationIcon: js.UndefOr[`2`] = js.undefined
     
-    var aspectRatio: js.UndefOr[NewVal] = js.native
+    var aspectRatio: js.UndefOr[NewVal] = js.undefined
     
-    var autoShow: js.UndefOr[NewValOldVal] = js.native
+    var autoShow: js.UndefOr[NewValOldVal] = js.undefined
     
-    var backgroundColor: js.UndefOr[`2`] = js.native
+    var backgroundColor: js.UndefOr[`2`] = js.undefined
     
-    var contentNavigation: js.UndefOr[`8`] = js.native
+    var contentNavigation: js.UndefOr[`8`] = js.undefined
     
-    var contentRedirect: js.UndefOr[`4`] = js.native
+    var contentRedirect: js.UndefOr[`4`] = js.undefined
     
-    var contextMenu: js.UndefOr[NewValOldVal] = js.native
+    var contextMenu: js.UndefOr[NewValOldVal] = js.undefined
     
-    var contextMenuSettings: js.UndefOr[`9`] = js.native
+    var contextMenuSettings: js.UndefOr[`9`] = js.undefined
     
-    var cornerRounding: js.UndefOr[`0`] = js.native
+    var cornerRounding: js.UndefOr[`0`] = js.undefined
     
-    var customContext: js.UndefOr[`1`] = js.native
+    var customContext: js.UndefOr[`1`] = js.undefined
     
-    var customData: js.UndefOr[`1`] = js.native
+    var customData: js.UndefOr[`1`] = js.undefined
     
-    var customRequestHeaders: js.UndefOr[`6`] = js.native
+    var customRequestHeaders: js.UndefOr[`6`] = js.undefined
     
-    var defaultCentered: js.UndefOr[NewValOldVal] = js.native
+    var defaultCentered: js.UndefOr[NewValOldVal] = js.undefined
     
-    var defaultHeight: js.UndefOr[NewVal] = js.native
+    var defaultHeight: js.UndefOr[NewVal] = js.undefined
     
-    var defaultLeft: js.UndefOr[NewVal] = js.native
+    var defaultLeft: js.UndefOr[NewVal] = js.undefined
     
-    var defaultTop: js.UndefOr[NewVal] = js.native
+    var defaultTop: js.UndefOr[NewVal] = js.undefined
     
-    var defaultWidth: js.UndefOr[NewVal] = js.native
+    var defaultWidth: js.UndefOr[NewVal] = js.undefined
     
-    var frame: js.UndefOr[NewValOldVal] = js.native
+    var frame: js.UndefOr[NewValOldVal] = js.undefined
     
-    var hideOnClose: js.UndefOr[NewValOldVal] = js.native
+    var hideOnClose: js.UndefOr[NewValOldVal] = js.undefined
     
-    var hotkeys: js.UndefOr[OldVal] = js.native
+    var hotkeys: js.UndefOr[OldVal] = js.undefined
     
-    var icon: js.UndefOr[`2`] = js.native
+    var icon: js.UndefOr[`2`] = js.undefined
     
-    var layout: js.UndefOr[`3`] = js.native
+    var layout: js.UndefOr[`3`] = js.undefined
     
-    var maxHeight: js.UndefOr[NewVal] = js.native
+    var maxHeight: js.UndefOr[NewVal] = js.undefined
     
-    var maxWidth: js.UndefOr[NewVal] = js.native
+    var maxWidth: js.UndefOr[NewVal] = js.undefined
     
-    var maximizable: js.UndefOr[NewValOldVal] = js.native
+    var maximizable: js.UndefOr[NewValOldVal] = js.undefined
     
-    var minHeight: js.UndefOr[NewVal] = js.native
+    var minHeight: js.UndefOr[NewVal] = js.undefined
     
-    var minWidth: js.UndefOr[NewVal] = js.native
+    var minWidth: js.UndefOr[NewVal] = js.undefined
     
-    var minimizable: js.UndefOr[NewValOldVal] = js.native
+    var minimizable: js.UndefOr[NewValOldVal] = js.undefined
     
-    var name: js.UndefOr[`2`] = js.native
+    var name: js.UndefOr[`2`] = js.undefined
     
-    var opacity: js.UndefOr[NewVal] = js.native
+    var opacity: js.UndefOr[NewVal] = js.undefined
     
-    var preloadScripts: js.UndefOr[`10`] = js.native
+    var preloadScripts: js.UndefOr[`10`] = js.undefined
     
-    var resizable: js.UndefOr[NewValOldVal] = js.native
+    var resizable: js.UndefOr[NewValOldVal] = js.undefined
     
-    var resizeRegion: js.UndefOr[`11`] = js.native
+    var resizeRegion: js.UndefOr[`11`] = js.undefined
     
-    var saveWindowState: js.UndefOr[NewValOldVal] = js.native
+    var saveWindowState: js.UndefOr[NewValOldVal] = js.undefined
     
-    var shadow: js.UndefOr[NewValOldVal] = js.native
+    var shadow: js.UndefOr[NewValOldVal] = js.undefined
     
-    var showBackgroundImages: js.UndefOr[NewValOldVal] = js.native
+    var showBackgroundImages: js.UndefOr[NewValOldVal] = js.undefined
     
-    var showTaskbarIcon: js.UndefOr[NewValOldVal] = js.native
+    var showTaskbarIcon: js.UndefOr[NewValOldVal] = js.undefined
     
-    var smallWindow: js.UndefOr[NewValOldVal] = js.native
+    var smallWindow: js.UndefOr[NewValOldVal] = js.undefined
     
-    var state: js.UndefOr[`2`] = js.native
+    var state: js.UndefOr[`2`] = js.undefined
     
-    var taskbarIconGroup: js.UndefOr[`2`] = js.native
+    var taskbarIconGroup: js.UndefOr[`2`] = js.undefined
     
-    var url: js.UndefOr[`2`] = js.native
+    var url: js.UndefOr[`2`] = js.undefined
     
-    var uuid: js.UndefOr[`2`] = js.native
+    var uuid: js.UndefOr[`2`] = js.undefined
     
-    var waitForPageLoad: js.UndefOr[NewValOldVal] = js.native
+    var waitForPageLoad: js.UndefOr[NewValOldVal] = js.undefined
   }
   object WindowOptionDiff {
     

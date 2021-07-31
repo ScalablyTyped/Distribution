@@ -2,14 +2,12 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl, 'missingURL'> */
-@js.native
 trait PickImplmissingURL extends StObject {
   
-  var missingURL: String = js.native
+  var missingURL: String
 }
 object PickImplmissingURL {
   

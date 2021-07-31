@@ -2,15 +2,13 @@ package typings.reactMdl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Html extends StObject {
     
-    var __html: String = js.native
+    var __html: String
   }
   object Html {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Recursive extends StObject {
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object Recursive {
     

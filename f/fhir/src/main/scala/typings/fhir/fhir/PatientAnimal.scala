@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This patient is known to be an animal (non-human)
   */
-@js.native
-trait PatientAnimal extends BackboneElement {
+trait PatientAnimal
+  extends StObject
+     with BackboneElement {
   
   /**
     * E.g. Poodle, Angus
     */
-  var breed: js.UndefOr[CodeableConcept] = js.native
+  var breed: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * E.g. Neutered, Intact
     */
-  var genderStatus: js.UndefOr[CodeableConcept] = js.native
+  var genderStatus: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * E.g. Dog, Cow
     */
-  var species: CodeableConcept = js.native
+  var species: CodeableConcept
 }
 object PatientAnimal {
   

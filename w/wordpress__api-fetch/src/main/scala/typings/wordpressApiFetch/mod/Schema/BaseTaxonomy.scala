@@ -7,31 +7,31 @@ import typings.wordpressApiFetch.anon.Dictk
 import typings.wordpressApiFetch.anon.Public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseTaxonomy[T /* <: Context */] extends BaseResponse {
+trait BaseTaxonomy[T /* <: Context */]
+  extends StObject
+     with BaseResponse {
   
-  var capabilities: Assignterms = js.native
+  var capabilities: Assignterms
   
-  var description: String = js.native
+  var description: String
   
-  var hierarchical: Boolean = js.native
+  var hierarchical: Boolean
   
-  var labels: Addnewitem = js.native
+  var labels: Addnewitem
   
-  var name: String = js.native
+  var name: String
   
-  var rest_base: String = js.native
+  var rest_base: String
   
-  var show_cloud: Boolean = js.native
+  var show_cloud: Boolean
   
-  var slug: String = js.native
+  var slug: String
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
   
-  var visibility: Public = js.native
+  var visibility: Public
 }
 object BaseTaxonomy {
   
@@ -54,7 +54,7 @@ object BaseTaxonomy {
   }
   
   @scala.inline
-  implicit class BaseTaxonomyMutableBuilder[Self <: BaseTaxonomy[_], T /* <: Context */] (val x: Self with BaseTaxonomy[T]) extends AnyVal {
+  implicit class BaseTaxonomyMutableBuilder[Self <: BaseTaxonomy[?], T /* <: Context */] (val x: Self & BaseTaxonomy[T]) extends AnyVal {
     
     @scala.inline
     def setCapabilities(value: Assignterms): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])

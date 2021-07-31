@@ -2,36 +2,34 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * The compression algorithm used to compress the output text of the job.
     */
-  var CompressionFormat: js.UndefOr[typings.awsSdk.databrewMod.CompressionFormat] = js.native
+  var CompressionFormat: js.UndefOr[typings.awsSdk.databrewMod.CompressionFormat] = js.undefined
   
   /**
     * The data format of the output of the job.
     */
-  var Format: js.UndefOr[OutputFormat] = js.native
+  var Format: js.UndefOr[OutputFormat] = js.undefined
   
   /**
     * The location in Amazon S3 where the job writes its output.
     */
-  var Location: S3Location = js.native
+  var Location: S3Location
   
   /**
     * A value that, if true, means that any data in the location specified for output is overwritten with new output.
     */
-  var Overwrite: js.UndefOr[OverwriteOutput] = js.native
+  var Overwrite: js.UndefOr[OverwriteOutput] = js.undefined
   
   /**
     * The names of one or more partition columns for the output of the job.
     */
-  var PartitionColumns: js.UndefOr[ColumnNameList] = js.native
+  var PartitionColumns: js.UndefOr[ColumnNameList] = js.undefined
 }
 object Output {
   

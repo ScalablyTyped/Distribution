@@ -3,7 +3,6 @@ package typings.iitc
 import typings.iitc.anon.SelectedPortalGuid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object smartphoneMod {
@@ -19,28 +18,22 @@ object smartphoneMod {
       * browsers - e.g. android phone/tablet. let's allow it for all, but
       * no promises it'll work right)
       */
-    @JSGlobal("isSmartphone")
-    @js.native
-    def isSmartphone(): Boolean = js.native
+    @scala.inline
+    def isSmartphone(): Boolean = js.Dynamic.global.applyDynamic("isSmartphone")().asInstanceOf[Boolean]
     
-    @JSGlobal("runOnSmartphonesAfterBoot")
-    @js.native
-    def runOnSmartphonesAfterBoot(): Unit = js.native
+    @scala.inline
+    def runOnSmartphonesAfterBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesAfterBoot")().asInstanceOf[Unit]
     
-    @JSGlobal("runOnSmartphonesBeforeBoot")
-    @js.native
-    def runOnSmartphonesBeforeBoot(): Unit = js.native
+    @scala.inline
+    def runOnSmartphonesBeforeBoot(): Unit = js.Dynamic.global.applyDynamic("runOnSmartphonesBeforeBoot")().asInstanceOf[Unit]
     
-    @JSGlobal("setAndroidPermalink")
-    @js.native
-    def setAndroidPermalink(): Unit = js.native
+    @scala.inline
+    def setAndroidPermalink(): Unit = js.Dynamic.global.applyDynamic("setAndroidPermalink")().asInstanceOf[Unit]
     
-    @JSGlobal("smartphoneInfo")
-    @js.native
-    def smartphoneInfo(data: SelectedPortalGuid): Unit = js.native
+    @scala.inline
+    def smartphoneInfo(data: SelectedPortalGuid): Unit = js.Dynamic.global.applyDynamic("smartphoneInfo")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("useAndroidPanes")
-    @js.native
-    def useAndroidPanes(): Unit = js.native
+    @scala.inline
+    def useAndroidPanes(): Unit = js.Dynamic.global.applyDynamic("useAndroidPanes")().asInstanceOf[Unit]
   }
 }

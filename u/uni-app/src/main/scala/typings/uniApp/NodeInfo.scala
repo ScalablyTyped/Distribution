@@ -2,66 +2,64 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeInfo extends StObject {
   
   /**
     * 节点的下边界坐标
     */
-  var bottom: js.UndefOr[Double] = js.native
+  var bottom: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点对应的 Context 对象
     */
-  var context: js.UndefOr[MapContext | CanvasContext | VideoContext | EditorContext] = js.native
+  var context: js.UndefOr[MapContext | CanvasContext | VideoContext | EditorContext] = js.undefined
   
   /**
     * 节点的dataset
     */
-  var dataset: js.UndefOr[js.Any] = js.native
+  var dataset: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 节点的高度
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的ID
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 节点的左边界坐标
     */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的右边界坐标
     */
-  var right: js.UndefOr[Double] = js.native
+  var right: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的水平滚动位置
     */
-  var scrollLeft: js.UndefOr[Double] = js.native
+  var scrollLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的垂直滚动位置
     */
-  var scrollTop: js.UndefOr[Double] = js.native
+  var scrollTop: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的上边界坐标
     */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /**
     * 节点的宽度
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object NodeInfo {
   

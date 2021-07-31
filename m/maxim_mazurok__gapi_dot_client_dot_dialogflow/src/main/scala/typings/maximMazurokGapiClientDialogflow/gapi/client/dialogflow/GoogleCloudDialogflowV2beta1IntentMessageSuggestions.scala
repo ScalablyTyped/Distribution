@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageSuggestions extends StObject {
   
   /** Required. The list of suggested replies. */
-  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageSuggestion]] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageSuggestions {
   

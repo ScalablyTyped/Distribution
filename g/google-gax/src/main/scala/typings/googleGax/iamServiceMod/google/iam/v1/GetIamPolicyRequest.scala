@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GetIamPolicyRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetIamPolicyRequest.
   * @param [properties] Properties to set
   */
-class GetIamPolicyRequest () extends IGetIamPolicyRequest {
+class GetIamPolicyRequest ()
+  extends StObject
+     with IGetIamPolicyRequest {
   def this(properties: IGetIamPolicyRequest) = this()
   
   /** GetIamPolicyRequest resource. */
@@ -32,18 +33,20 @@ class GetIamPolicyRequest () extends IGetIamPolicyRequest {
 }
 object GetIamPolicyRequest {
   
+  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GetIamPolicyRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GetIamPolicyRequest instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.create")
-  @js.native
-  def create(): GetIamPolicyRequest = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.create")
-  @js.native
-  def create(properties: IGetIamPolicyRequest): GetIamPolicyRequest = js.native
+  @scala.inline
+  def create(): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetIamPolicyRequest]
+  @scala.inline
+  def create(properties: IGetIamPolicyRequest): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
   
   /**
     * Decodes a GetIamPolicyRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GetIamPolicyRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decode")
-  @js.native
-  def decode(reader: Reader): GetIamPolicyRequest = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GetIamPolicyRequest = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GetIamPolicyRequest = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GetIamPolicyRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetIamPolicyRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GetIamPolicyRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetIamPolicyRequest]
   
   /**
     * Decodes a GetIamPolicyRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GetIamPolicyRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GetIamPolicyRequest = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GetIamPolicyRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
   
   /**
     * Encodes the specified GetIamPolicyRequest message. Does not implicitly {@link google.iam.v1.GetIamPolicyRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object GetIamPolicyRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.encode")
-  @js.native
-  def encode(message: IGetIamPolicyRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.encode")
-  @js.native
-  def encode(message: IGetIamPolicyRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetIamPolicyRequest message, length delimited. Does not implicitly {@link google.iam.v1.GetIamPolicyRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object GetIamPolicyRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetIamPolicyRequest): Writer = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetIamPolicyRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGetIamPolicyRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGetIamPolicyRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetIamPolicyRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GetIamPolicyRequest {
     * @returns GetIamPolicyRequest
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GetIamPolicyRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GetIamPolicyRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetIamPolicyRequest]
   
   /**
     * Creates a plain object from a GetIamPolicyRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GetIamPolicyRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.toObject")
-  @js.native
-  def toObject(message: GetIamPolicyRequest): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.toObject")
-  @js.native
-  def toObject(message: GetIamPolicyRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GetIamPolicyRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GetIamPolicyRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetIamPolicyRequest message.
@@ -140,7 +130,6 @@ object GetIamPolicyRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/iam_service", "google.iam.v1.GetIamPolicyRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

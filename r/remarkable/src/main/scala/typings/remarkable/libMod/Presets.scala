@@ -3,15 +3,13 @@ package typings.remarkable.libMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Presets extends StObject {
   
-  var components: StringDictionary[typings.remarkable.anon.Rules] = js.native
+  var components: StringDictionary[typings.remarkable.anon.Rules]
   
-  var options: Options = js.native
+  var options: Options
 }
 object Presets {
   

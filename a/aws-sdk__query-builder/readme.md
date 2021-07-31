@@ -10,9 +10,9 @@ A marshaller for the body portion of AWS's Query(EC2) protocols
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/query-builder |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 39 |
-| # downloads        | 40579 |
+| # releases         | 7 |
+| # dependents       | 0 |
+| # downloads        | 65941 |
 | # stars            | 0 |
 
 ## Links

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DomainDnsCnameRecord extends DomainDnsRecord {
+trait DomainDnsCnameRecord
+  extends StObject
+     with DomainDnsRecord {
   
   // The canonical name of the CNAME record. Used to configure the CNAME record at the DNS host.
-  var canonicalName: js.UndefOr[NullableOption[String]] = js.native
+  var canonicalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DomainDnsCnameRecord {
   

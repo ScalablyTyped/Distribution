@@ -2,7 +2,6 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,7 +9,7 @@ trait Callback extends StObject {
   
   def apply(code: String): CallbackObject = js.native
   def apply(fn: js.Function): CallbackObject = js.native
-  def apply(fns: js.Array[_ | js.Function]): CallbackObject = js.native
+  def apply(fns: js.Array[js.Any | js.Function]): CallbackObject = js.native
   def apply(obj: js.Any): CallbackObject = js.native
   
   /*Waits for the specified time (given in milliseconds) and then performs the callback. It returns the Callback
@@ -29,7 +28,7 @@ trait Callback extends StObject {
     * callback that will execute when all the ones returned by the hooks have been completed. Otherwise,
     * MathJax.Callback.ExecuteHooks() returns null.
     */
-  def ExecuteHooks(hooks: js.Array[_], data: js.Array[_], reset: Boolean): CallbackObject = js.native
+  def ExecuteHooks(hooks: js.Array[js.Any], data: js.Array[js.Any], reset: Boolean): CallbackObject = js.native
   
   /*Creates a prioritized list of hooks that are called in order based on their priority (low priority numbers are
     * handled first). This is meant to replace MathJax.Callback.ExecuteHooks() and is used internally for signal

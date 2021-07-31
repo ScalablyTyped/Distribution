@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientGames.gapi.client.games
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotCoverImageResource extends StObject {
   
   /**
@@ -13,26 +11,26 @@ trait SnapshotCoverImageResource extends StObject {
     * two identical blobs coming from two different uploads will have the same content hash. It's extremely likely, though not guaranteed, that if two content hashes are equal, the images
     * are identical.
     */
-  var contentHash: js.UndefOr[String] = js.native
+  var contentHash: js.UndefOr[String] = js.undefined
   
   /** Output only. A URL the client can use to download the image. May vary across requests, and only guaranteed to be valid for a short time after it is returned. */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
   
   /** Output only. The height of the image in pixels. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** Output only. The MIME type of the image. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the image resource. It's guaranteed that if two IDs are equal then the contents are equal as well. It's not guaranteed that two identical blobs coming from separate
     * uploads have the same ID. The resource ID can only be used within the application, user and resource type it was originally returned for. For example, it's not possible to use
     * SnapshotDataResource's resource ID as the resource_id of a SnapshotCoverImageResource, even if the blob is a valid image file.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /** Output only. The width of the image in pixels. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SnapshotCoverImageResource {
   

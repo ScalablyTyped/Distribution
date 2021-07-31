@@ -6,7 +6,6 @@ import typings.kiiCloudSdk.anon.`2`
 import typings.kiiCloudSdk.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiThing")
 @js.native
 class KiiThing ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiThing
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiThing
 object KiiThing {
+  
+  @JSGlobal("KiiCloud.KiiThing")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Load thing with thing id given by Kii Cloud.
@@ -63,12 +67,10 @@ object KiiThing {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiThing.loadWithThingID")
-  @js.native
-  def loadWithThingID(thingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
-  @JSGlobal("KiiCloud.KiiThing.loadWithThingID")
-  @js.native
-  def loadWithThingID(thingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  @scala.inline
+  def loadWithThingID(thingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadWithThingID")(thingID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
+  @scala.inline
+  def loadWithThingID(thingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWithThingID")(thingID.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
   
   /**
     * Load thing with given vendor thing id.
@@ -113,12 +115,10 @@ object KiiThing {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiThing.loadWithVendorThingID")
-  @js.native
-  def loadWithVendorThingID(vendorThingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
-  @JSGlobal("KiiCloud.KiiThing.loadWithVendorThingID")
-  @js.native
-  def loadWithVendorThingID(vendorThingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  @scala.inline
+  def loadWithVendorThingID(vendorThingID: String): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadWithVendorThingID")(vendorThingID.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
+  @scala.inline
+  def loadWithVendorThingID(vendorThingID: String, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadWithVendorThingID")(vendorThingID.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
   
   /**
     * Register thing in KiiCloud.<br>
@@ -197,19 +197,15 @@ object KiiThing {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiThing.register")
-  @js.native
-  def register(fields: KiiThingFields): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
-  @JSGlobal("KiiCloud.KiiThing.register")
-  @js.native
-  def register(fields: KiiThingFields, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = js.native
+  @scala.inline
+  def register(fields: KiiThingFields): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(fields.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
+  @scala.inline
+  def register(fields: KiiThingFields, callbacks: `1`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing] = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(fields.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiThing]]
   
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithThingID")
-  @js.native
-  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithThingID")
-  @js.native
-  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
+  @scala.inline
+  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithThingID")(thingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
+  @scala.inline
+  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithThingID")(thingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -261,19 +257,15 @@ object KiiThing {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithThingID")
-  @js.native
-  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithThingID")
-  @js.native
-  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @scala.inline
+  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithThingID")(thingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  @scala.inline
+  def registerOwnerWithThingID(thingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithThingID")(thingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
   
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithVendorThingID")
-  @js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithVendorThingID")
-  @js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = js.native
+  @scala.inline
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithVendorThingID")(vendorThingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
+  @scala.inline
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiGroup, callbacks: `3`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithVendorThingID")(vendorThingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiGroup]]
   /**
     * Register user/group as owner of specified thing.
     * <br>Need user login before execute this API.
@@ -324,10 +316,8 @@ object KiiThing {
     *     );
     */
   /* static member */
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithVendorThingID")
-  @js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
-  @JSGlobal("KiiCloud.KiiThing.registerOwnerWithVendorThingID")
-  @js.native
-  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = js.native
+  @scala.inline
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithVendorThingID")(vendorThingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
+  @scala.inline
+  def registerOwnerWithVendorThingID(vendorThingID: String, owner: typings.kiiCloudSdk.KiiCloud.KiiUser, callbacks: `2`): js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerOwnerWithVendorThingID")(vendorThingID.asInstanceOf[js.Any], owner.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.kiiCloudSdk.KiiCloud.KiiUser]]
 }

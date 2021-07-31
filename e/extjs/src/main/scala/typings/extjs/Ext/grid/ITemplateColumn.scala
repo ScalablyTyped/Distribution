@@ -2,12 +2,11 @@ package typings.extjs.Ext.grid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITemplateColumn
-  extends typings.extjs.Ext.grid.column.IColumn {
+  extends StObject
+     with typings.extjs.Ext.grid.column.IColumn {
   
   /** [Method] When defined this will take precedence over the renderer config
     * @param value Object
@@ -22,7 +21,7 @@ trait ITemplateColumn
       /* record */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ITemplateColumn {
   

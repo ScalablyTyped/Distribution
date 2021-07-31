@@ -2,29 +2,27 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a user facing message for a particular data transfer run.
   */
-@js.native
 trait SchemaTransferMessage extends StObject {
   
   /**
     * Message text.
     */
-  var messageText: js.UndefOr[String] = js.native
+  var messageText: js.UndefOr[String] = js.undefined
   
   /**
     * Time when message was logged.
     */
-  var messageTime: js.UndefOr[String] = js.native
+  var messageTime: js.UndefOr[String] = js.undefined
   
   /**
     * Message severity.
     */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
 }
 object SchemaTransferMessage {
   

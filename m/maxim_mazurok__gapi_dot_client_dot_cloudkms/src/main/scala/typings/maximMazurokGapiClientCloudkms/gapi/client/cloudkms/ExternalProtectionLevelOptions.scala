@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalProtectionLevelOptions extends StObject {
   
   /** The URI for an external resource that this CryptoKeyVersion represents. */
-  var externalKeyUri: js.UndefOr[String] = js.native
+  var externalKeyUri: js.UndefOr[String] = js.undefined
 }
 object ExternalProtectionLevelOptions {
   

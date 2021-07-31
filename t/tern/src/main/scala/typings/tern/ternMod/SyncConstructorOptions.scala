@@ -3,14 +3,12 @@ package typings.tern.ternMod
 import typings.tern.ternBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncConstructorOptions extends StObject {
   
   /** Indicates whether `getFile` is asynchronous. Default is `false`. */
-  var async: js.UndefOr[`false`] = js.native
+  var async: js.UndefOr[`false`] = js.undefined
   
   /**
     * Provides a way for the server to try and fetch the content of files.
@@ -18,7 +16,7 @@ trait SyncConstructorOptions extends StObject {
     * a function that takes a `filename` and a `callback`, and calls the callback with an optional `error` as the first argument,
     * and the `content` string (if no error) as the second.
     */
-  var getFile: js.UndefOr[js.Function1[/* filename */ String, String]] = js.native
+  var getFile: js.UndefOr[js.Function1[/* filename */ String, String]] = js.undefined
 }
 object SyncConstructorOptions {
   

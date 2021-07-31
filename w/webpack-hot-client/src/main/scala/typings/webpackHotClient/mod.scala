@@ -10,17 +10,19 @@ import typings.webpackHotClient.webpackHotClientStrings.trace
 import typings.webpackHotClient.webpackHotClientStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-hot-client", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.MultiCompiler */ js.Any,
     options: Options
-  ): Client = js.native
+  ): Client = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Client]
+  
+  @JSImport("webpack-hot-client", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Client extends StObject {
@@ -36,46 +38,45 @@ object mod {
     var server: WebSocketServer = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Automatically configure every entry */
-    var allEntries: js.UndefOr[Boolean] = js.native
+    var allEntries: js.UndefOr[Boolean] = js.undefined
     
     /** Auto configure the given webpack config with the hot configuration */
-    var autoConfigure: js.UndefOr[Boolean] = js.native
+    var autoConfigure: js.UndefOr[Boolean] = js.undefined
     
     /** Enable hot module reloading */
-    var hmr: js.UndefOr[Boolean] = js.native
+    var hmr: js.UndefOr[Boolean] = js.undefined
     
     /** Host that the WebSocket listens on */
-    var host: js.UndefOr[WebpackHotHost | String] = js.native
+    var host: js.UndefOr[WebpackHotHost | String] = js.undefined
     
     /** Enable HTTPS */
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
     /** Level of information for webpack-hot-client to output */
-    var logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.native
+    var logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.undefined
     
     /** Prepend timestamp to each log line */
-    var logTime: js.UndefOr[Boolean] = js.native
+    var logTime: js.UndefOr[Boolean] = js.undefined
     
     /** Port that the WebSocket listens on */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** Reload the page if a patch cannot be applied by webpack */
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
     
     /** Server instance for webpack-hot-client to connect to */
-    var server: js.UndefOr[Server] = js.native
+    var server: js.UndefOr[Server] = js.undefined
     
     /** Webpack stats configuration */
     var stats: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Options.Stats */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Webpack compile target */
-    var validTargets: js.UndefOr[js.Array[String]] = js.native
+    var validTargets: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -180,14 +181,13 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait WebpackHotHost extends StObject {
     
     /** Client hostname that is used in the browser by WebSockets */
-    var client: String = js.native
+    var client: String
     
     /** Server hostname */
-    var server: String = js.native
+    var server: String
   }
   object WebpackHotHost {
     

@@ -3,27 +3,28 @@ package typings.d3Voronoi
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-voronoi", "voronoi")
+  @JSImport("d3-voronoi", JSImport.Namespace)
   @js.native
-  def voronoi[T](): VoronoiLayout[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def voronoi[T](): VoronoiLayout[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("voronoi")().asInstanceOf[VoronoiLayout[T]]
+  
   trait VoronoiCell[T] extends StObject {
     
     /**
       * An array of indexes into diagram.edges representing the cell’s polygon.
       */
-    var halfedges: js.Array[Double] = js.native
+    var halfedges: js.Array[Double]
     
     /**
       * The Voronoi Site of the cell’s associated input point.
       */
-    var site: VoronoiSite[T] = js.native
+    var site: VoronoiSite[T]
   }
   object VoronoiCell {
     
@@ -34,7 +35,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class VoronoiCellMutableBuilder[Self <: VoronoiCell[_], T] (val x: Self with VoronoiCell[T]) extends AnyVal {
+    implicit class VoronoiCellMutableBuilder[Self <: VoronoiCell[?], T] (val x: Self & VoronoiCell[T]) extends AnyVal {
       
       @scala.inline
       def setHalfedges(value: js.Array[Double]): Self = StObject.set(x, "halfedges", value.asInstanceOf[js.Any])
@@ -103,7 +104,9 @@ object mod {
   }
   
   @js.native
-  trait VoronoiEdge[T] extends VoronoiPointPair {
+  trait VoronoiEdge[T]
+    extends StObject
+       with VoronoiPointPair {
     
     /**
       * The Voronoi site on the left side of the edge.
@@ -222,18 +225,17 @@ object mod {
     def y(y: js.Function1[/* d */ T, Double]): this.type = js.native
   }
   
-  @js.native
   trait VoronoiLink[T] extends StObject {
     
     /**
       * The source node, an element in data.
       */
-    var source: T = js.native
+    var source: T
     
     /**
       * The target node, an element in data.
       */
-    var target: T = js.native
+    var target: T
   }
   object VoronoiLink {
     
@@ -244,7 +246,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class VoronoiLinkMutableBuilder[Self <: VoronoiLink[_], T] (val x: Self with VoronoiLink[T]) extends AnyVal {
+    implicit class VoronoiLinkMutableBuilder[Self <: VoronoiLink[?], T] (val x: Self & VoronoiLink[T]) extends AnyVal {
       
       @scala.inline
       def setSource(value: T): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
@@ -255,7 +257,9 @@ object mod {
   }
   
   @js.native
-  trait VoronoiPoint extends Array[Double] {
+  trait VoronoiPoint
+    extends StObject
+       with Array[Double] {
     
     var `0`: Double = js.native
     
@@ -264,7 +268,8 @@ object mod {
   
   @js.native
   trait VoronoiPointPair
-    extends Array[js.Tuple2[Double, Double]] {
+    extends StObject
+       with Array[js.Tuple2[Double, Double]] {
     
     var `0`: js.Tuple2[Double, Double] = js.native
     
@@ -273,7 +278,8 @@ object mod {
   
   @js.native
   trait VoronoiPolygon[T]
-    extends Array[js.Tuple2[Double, Double]] {
+    extends StObject
+       with Array[js.Tuple2[Double, Double]] {
     
     /**
       * The input data corresponding to this Voronoi polygon.
@@ -282,7 +288,9 @@ object mod {
   }
   
   @js.native
-  trait VoronoiSite[T] extends VoronoiPoint {
+  trait VoronoiSite[T]
+    extends StObject
+       with VoronoiPoint {
     
     /**
       * The input data corresponding to this site.

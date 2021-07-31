@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerFormsFormDataResponse extends StObject {
   
   /**
     * An array containing PowerForm data.
     */
-  var envelopes: js.UndefOr[js.Array[PowerFormFormDataEnvelope]] = js.native
+  var envelopes: js.UndefOr[js.Array[PowerFormFormDataEnvelope]] = js.undefined
 }
 object PowerFormsFormDataResponse {
   

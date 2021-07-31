@@ -2,13 +2,11 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildSuggestersResponse extends StObject {
   
-  var FieldNames: js.UndefOr[FieldNameList] = js.native
+  var FieldNames: js.UndefOr[FieldNameList] = js.undefined
 }
 object BuildSuggestersResponse {
   

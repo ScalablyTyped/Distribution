@@ -4,28 +4,29 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.meteor.anon.Attachments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emailMod {
   
   object Email {
     
-    @JSImport("meteor/email", "Email.send")
+    @JSImport("meteor/email", "Email")
     @js.native
-    def send(options: Attachments): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def send(options: Attachments): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait MailComposer extends StObject {
     
-    def addHeader(name: String, value: String): Unit = js.native
+    def addHeader(name: String, value: String): Unit
     
-    def pipe(stream: js.Any): Unit = js.native
+    def pipe(stream: js.Any): Unit
     
-    def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
+    def setMessageOption(from: String, to: String, body: String, html: String): Unit
     
-    def streamMessage(): Unit = js.native
+    def streamMessage(): Unit
   }
   object MailComposer {
     
@@ -54,22 +55,34 @@ object emailMod {
   @JSImport("meteor/email", "MailComposer")
   @js.native
   class MailComposerCls protected ()
-    extends typings.meteor.emailMod.MailComposer {
+    extends StObject
+       with typings.meteor.emailMod.MailComposer {
     def this(options: typings.meteor.emailMod.MailComposerOptions) = this()
+    
+    /* CompleteClass */
+    override def addHeader(name: String, value: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def pipe(stream: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def setMessageOption(from: String, to: String, body: String, html: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def streamMessage(): Unit = js.native
   }
   
-  @js.native
   trait MailComposerOptions extends StObject {
     
-    var charset: String = js.native
+    var charset: String
     
-    var encoding: String = js.native
+    var encoding: String
     
-    var escapeSMTP: Boolean = js.native
+    var escapeSMTP: Boolean
     
-    var forceEmbeddedImages: Boolean = js.native
+    var forceEmbeddedImages: Boolean
     
-    var keepBcc: Boolean = js.native
+    var keepBcc: Boolean
   }
   object MailComposerOptions {
     
@@ -107,7 +120,8 @@ object emailMod {
   
   @js.native
   trait MailComposerStatic
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           /* options */ typings.meteor.emailMod.MailComposerOptions, 
           typings.meteor.emailMod.MailComposer
         ]

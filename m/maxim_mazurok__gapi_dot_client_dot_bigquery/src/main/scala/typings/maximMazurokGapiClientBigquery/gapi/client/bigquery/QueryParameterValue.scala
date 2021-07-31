@@ -3,24 +3,22 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryParameterValue extends StObject {
   
   /** [Optional] The array values, if this is an array type. */
-  var arrayValues: js.UndefOr[js.Array[QueryParameterValue]] = js.native
+  var arrayValues: js.UndefOr[js.Array[QueryParameterValue]] = js.undefined
   
   /** [Optional] The struct field values, in order of the struct type's declaration. */
   var structValues: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.QueryParameterValue}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[js.Any]
+  ] = js.undefined
   
   /** [Optional] The value of this value, if a simple scalar type. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object QueryParameterValue {
   
@@ -46,7 +44,7 @@ object QueryParameterValue {
     def setStructValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigquery.gapi.client.bigquery.QueryParameterValue}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.QueryParameterValue & TopLevel[js.Any]
     ): Self = StObject.set(x, "structValues", value.asInstanceOf[js.Any])
     
     @scala.inline

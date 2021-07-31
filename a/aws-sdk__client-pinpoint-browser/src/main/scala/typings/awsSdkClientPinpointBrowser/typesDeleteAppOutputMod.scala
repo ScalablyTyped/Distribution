@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesApplicationResponseMod.Unmarshal
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteAppOutputMod {
   
-  @js.native
-  trait DeleteAppOutput extends OutputTypesUnion {
+  trait DeleteAppOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Application Response.
       */
-    var ApplicationResponse: UnmarshalledApplicationResponse = js.native
+    var ApplicationResponse: UnmarshalledApplicationResponse
   }
   object DeleteAppOutput {
     

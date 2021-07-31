@@ -4,7 +4,6 @@ import typings.playcanvas.pc.callbacks.FilterAsset
 import typings.playcanvas.pc.callbacks.LoadAsset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param loader - The ResourceLoader used to load the asset files.
   */
 @js.native
-trait AssetRegistry extends EventHandler {
+trait AssetRegistry
+  extends StObject
+     with EventHandler {
   
   /**
     * Add an asset to the registry.

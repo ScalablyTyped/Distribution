@@ -2,15 +2,15 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILabel extends IComponent {
+trait ILabel
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (String) */
   @JSName("html")
-  var html_ILabel: js.UndefOr[java.lang.String] = js.native
+  var html_ILabel: js.UndefOr[java.lang.String] = js.undefined
 }
 object ILabel {
   

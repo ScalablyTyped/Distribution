@@ -2,13 +2,11 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The CreateTimeSeries request.
   */
-@js.native
 trait SchemaCreateTimeSeriesRequest extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaCreateTimeSeriesRequest extends StObject {
     * the metric and the monitored resource.The maximum number of TimeSeries
     * objects per Create request is 200.
     */
-  var timeSeries: js.UndefOr[js.Array[SchemaTimeSeries]] = js.native
+  var timeSeries: js.UndefOr[js.Array[SchemaTimeSeries]] = js.undefined
 }
 object SchemaCreateTimeSeriesRequest {
   

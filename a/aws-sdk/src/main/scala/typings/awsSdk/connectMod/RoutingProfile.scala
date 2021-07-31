@@ -2,51 +2,49 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoutingProfile extends StObject {
   
   /**
     * The identifier of the default outbound queue for this routing profile.
     */
-  var DefaultOutboundQueueId: js.UndefOr[QueueId] = js.native
+  var DefaultOutboundQueueId: js.UndefOr[QueueId] = js.undefined
   
   /**
     * The description of the routing profile.
     */
-  var Description: js.UndefOr[RoutingProfileDescription] = js.native
+  var Description: js.UndefOr[RoutingProfileDescription] = js.undefined
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.connectMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.connectMod.InstanceId] = js.undefined
   
   /**
     * The channels agents can handle in the Contact Control Panel (CCP) for this routing profile.
     */
-  var MediaConcurrencies: js.UndefOr[typings.awsSdk.connectMod.MediaConcurrencies] = js.native
+  var MediaConcurrencies: js.UndefOr[typings.awsSdk.connectMod.MediaConcurrencies] = js.undefined
   
   /**
     * The name of the routing profile.
     */
-  var Name: js.UndefOr[RoutingProfileName] = js.native
+  var Name: js.UndefOr[RoutingProfileName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the routing profile.
     */
-  var RoutingProfileArn: js.UndefOr[ARN] = js.native
+  var RoutingProfileArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the routing profile.
     */
-  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.native
+  var RoutingProfileId: js.UndefOr[typings.awsSdk.connectMod.RoutingProfileId] = js.undefined
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object RoutingProfile {
   

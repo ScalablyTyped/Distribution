@@ -2,6 +2,8 @@ package typings.grpcGrpcJs
 
 import typings.grpcGrpcJs.callStreamMod.StatusObject
 import typings.grpcGrpcJs.clientInterceptorsMod.InterceptingCallInterface
+import typings.grpcGrpcJs.constantsMod.Status
+import typings.grpcGrpcJs.eventsMod.EmitterAugmentation1
 import typings.grpcGrpcJs.grpcGrpcJsStrings.close
 import typings.grpcGrpcJs.grpcGrpcJsStrings.data
 import typings.grpcGrpcJs.grpcGrpcJsStrings.drain
@@ -34,10 +36,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object callMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/call", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.grpcGrpcJs.callMod.ClientDuplexStream because var conflicts: _writev, destroyed, readable. Inlined serialize, call, cancel, getPeer, addListener_metadata, emit_metadata, on_metadata, once_metadata, prependListener_metadata, prependOnceListener_metadata, removeListener_metadata, addListener_status, emit_status, on_status, once_status, prependListener_status, prependOnceListener_status, removeListener_status, deserialize */ @JSImport("@grpc/grpc-js/build/src/call", "ClientDuplexStreamImpl")
@@ -150,81 +155,28 @@ object callMod {
   
   @JSImport("@grpc/grpc-js/build/src/call", "ClientUnaryCallImpl")
   @js.native
-  class ClientUnaryCallImpl ()
-    extends EventEmitter
-       with ClientUnaryCall {
+  class ClientUnaryCallImpl () extends SurfaceCall {
     
-    /* InferMemberOverrides */
-    override def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
+    /* CompleteClass */
+    override def addListener(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def emit(event: String, args: js.Any*): Boolean = js.native
-    /* InferMemberOverrides */
-    override def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
+    /* CompleteClass */
+    override def emit(event: metadata | status, arg1: Metadata | StatusObject): Boolean = js.native
     
-    /* InferMemberOverrides */
-    override def eventNames(): js.Array[String | js.Symbol] = js.native
+    /* CompleteClass */
+    override def on(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def getMaxListeners(): Double = js.native
+    /* CompleteClass */
+    override def once(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def listenerCount(event: String): Double = js.native
-    /* InferMemberOverrides */
-    override def listenerCount(event: js.Symbol): Double = js.native
+    /* CompleteClass */
+    override def prependListener(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def listeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def listeners(event: js.Symbol): js.Array[js.Function] = js.native
+    /* CompleteClass */
+    override def prependOnceListener(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
     
-    /* InferMemberOverrides */
-    override def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    /* InferMemberOverrides */
-    override def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def rawListeners(event: String): js.Array[js.Function] = js.native
-    /* InferMemberOverrides */
-    override def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    /* InferMemberOverrides */
-    override def removeAllListeners(): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: String): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    /* InferMemberOverrides */
-    override def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    /* InferMemberOverrides */
-    override def setMaxListeners(n: Double): this.type = js.native
+    /* CompleteClass */
+    override def removeListener(event: metadata | status, listener: js.Function1[Metadata | StatusObject, Unit]): this.type = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -281,9 +233,8 @@ object callMod {
     def serialize(value: RequestType): Buffer = js.native
   }
   
-  @JSImport("@grpc/grpc-js/build/src/call", "callErrorFromStatus")
-  @js.native
-  def callErrorFromStatus(status: StatusObject): ServiceError = js.native
+  @scala.inline
+  def callErrorFromStatus(status: StatusObject): ServiceError = ^.asInstanceOf[js.Dynamic].applyDynamic("callErrorFromStatus")(status.asInstanceOf[js.Any]).asInstanceOf[ServiceError]
   
   /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientWritableStream<RequestType> & @grpc/grpc-js.@grpc/grpc-js/build/src/call.ClientReadableStream<ResponseType> */
   @js.native
@@ -296,8 +247,7 @@ object callMod {
     
     def _read(size: Double): Unit = js.native
     
-    def _write(chunk: RequestType, encoding: String, callback: js.Function): Unit = js.native
-    def _write(chunk: js.Any with RequestType, encoding: String, callback: js.Function): Unit = js.native
+    def _write(chunk: (js.Any & RequestType) | RequestType, encoding: String, callback: js.Function): Unit = js.native
     def _write(
       chunk: js.Any,
       encoding: BufferEncoding,
@@ -397,16 +347,12 @@ object callMod {
     
     def end(): Unit = js.native
     def end(cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: RequestType): Unit = js.native
-    def end(chunk: RequestType, cb: js.Function): Unit = js.native
-    def end(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
-    def end(chunk: RequestType, encoding: js.Any): Unit = js.native
-    def end(chunk: RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.Any): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
-    def end(chunk: (js.Any with RequestType) | js.Any): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: Unit, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
@@ -414,7 +360,7 @@ object callMod {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -566,9 +512,9 @@ object callMod {
     def read(): js.Any = js.native
     def read(size: Double): js.Any = js.native
     @JSName("read")
-    def read_Intersection(): js.Any with ResponseType = js.native
+    def read_Intersection(): js.Any & ResponseType = js.native
     @JSName("read")
-    def read_Intersection(size: Double): js.Any with ResponseType = js.native
+    def read_Intersection(size: Double): js.Any & ResponseType = js.native
     @JSName("read")
     def read_ResponseType(): ResponseType = js.native
     @JSName("read")
@@ -668,30 +614,23 @@ object callMod {
     def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(buffer: Uint8Array): Boolean = js.native
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-    def write(chunk: RequestType): Boolean = js.native
     def write(chunk: RequestType, cb: js.Function): Boolean = js.native
-    def write(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
-    def write(chunk: RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any, cb: js.Function): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.Any): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
-    def write(chunk: (js.Any with RequestType) | js.Any): Boolean = js.native
-    def write(
-      chunk: (js.Any with RequestType) | js.Any,
-      cb: (js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) | WriteCallback
-    ): Boolean = js.native
+    def write(chunk: RequestType, encoding: Unit, cb: js.Function): Boolean = js.native
+    def write(chunk: js.Any & RequestType, cb: WriteCallback): Boolean = js.native
+    def write(chunk: js.Any & RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
+    def write(chunk: js.Any & RequestType, encoding: Unit, cb: WriteCallback): Boolean = js.native
+    def write(chunk: (js.Any & RequestType) | RequestType): Boolean = js.native
+    def write(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any): Boolean = js.native
+    def write(chunk: js.Any): Boolean = js.native
+    def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
@@ -887,9 +826,9 @@ object callMod {
     def read(): js.Any = js.native
     def read(size: Double): js.Any = js.native
     @JSName("read")
-    def read_Intersection(): js.Any with ResponseType = js.native
+    def read_Intersection(): js.Any & ResponseType = js.native
     @JSName("read")
-    def read_Intersection(size: Double): js.Any with ResponseType = js.native
+    def read_Intersection(size: Double): js.Any & ResponseType = js.native
     @JSName("read")
     def read_ResponseType(): ResponseType = js.native
     @JSName("read")
@@ -957,88 +896,7 @@ object callMod {
     def wrap(oldStream: ReadableStream): this.type = js.native
   }
   
-  /* Inlined @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall */
-  @js.native
-  trait ClientUnaryCall extends StObject {
-    
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    var call: js.UndefOr[InterceptingCallInterface] = js.native
-    
-    def cancel(): Unit = js.native
-    
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
-    @JSName("emit")
-    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
-    def getPeer(): String = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("on")
-    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("once")
-    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
-  }
+  type ClientUnaryCall = SurfaceCall
   
   /* Inlined {serialize (value : RequestType): node.Buffer} & @grpc/grpc-js.@grpc/grpc-js/build/src/call.SurfaceCall & @grpc/grpc-js.@grpc/grpc-js/build/src/object-stream.ObjectWritable<RequestType> */
   @js.native
@@ -1049,8 +907,7 @@ object callMod {
     
     def _final(callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     
-    def _write(chunk: RequestType, encoding: String, callback: js.Function): Unit = js.native
-    def _write(chunk: js.Any with RequestType, encoding: String, callback: js.Function): Unit = js.native
+    def _write(chunk: (js.Any & RequestType) | RequestType, encoding: String, callback: js.Function): Unit = js.native
     def _write(
       chunk: js.Any,
       encoding: BufferEncoding,
@@ -1126,16 +983,12 @@ object callMod {
     
     def end(): Unit = js.native
     def end(cb: js.Function0[Unit]): Unit = js.native
-    def end(chunk: RequestType): Unit = js.native
-    def end(chunk: RequestType, cb: js.Function): Unit = js.native
-    def end(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
-    def end(chunk: RequestType, encoding: js.Any): Unit = js.native
-    def end(chunk: RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.Any): Unit = js.native
-    def end(chunk: js.Any with RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
-    def end(chunk: (js.Any with RequestType) | js.Any): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, cb: js.Function): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any, cb: js.Function): Unit = js.native
+    def end(chunk: (js.Any & RequestType) | RequestType, encoding: Unit, cb: js.Function): Unit = js.native
+    def end(chunk: js.Any): Unit = js.native
     def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
     def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
@@ -1143,7 +996,7 @@ object callMod {
     def end(data: String, cb: js.Function0[Unit]): Unit = js.native
     def end(data: Uint8Array): Unit = js.native
     def end(data: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: String, encoding: BufferEncoding): Unit = js.native
     def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -1295,116 +1148,49 @@ object callMod {
     def write(buffer: String, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(buffer: Uint8Array): Boolean = js.native
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-    def write(chunk: RequestType): Boolean = js.native
     def write(chunk: RequestType, cb: js.Function): Boolean = js.native
-    def write(chunk: RequestType, encoding: js.UndefOr[scala.Nothing], cb: js.Function): Boolean = js.native
-    def write(chunk: RequestType, encoding: js.Any): Boolean = js.native
     def write(chunk: RequestType, encoding: js.Any, cb: js.Function): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.UndefOr[scala.Nothing], cb: WriteCallback): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.Any): Boolean = js.native
-    def write(chunk: js.Any with RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
-    def write(chunk: (js.Any with RequestType) | js.Any): Boolean = js.native
-    def write(
-      chunk: (js.Any with RequestType) | js.Any,
-      cb: (js.Function1[/* error */ js.UndefOr[Error | Null], Unit]) | WriteCallback
-    ): Boolean = js.native
+    def write(chunk: RequestType, encoding: Unit, cb: js.Function): Boolean = js.native
+    def write(chunk: js.Any & RequestType, cb: WriteCallback): Boolean = js.native
+    def write(chunk: js.Any & RequestType, encoding: js.Any, cb: WriteCallback): Boolean = js.native
+    def write(chunk: js.Any & RequestType, encoding: Unit, cb: WriteCallback): Boolean = js.native
+    def write(chunk: (js.Any & RequestType) | RequestType): Boolean = js.native
+    def write(chunk: (js.Any & RequestType) | RequestType, encoding: js.Any): Boolean = js.native
+    def write(chunk: js.Any): Boolean = js.native
+    def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
     def write(
       chunk: js.Any,
       encoding: BufferEncoding,
       cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
     ): Boolean = js.native
-    def write(
-      str: String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]
-    ): Boolean = js.native
+    def write(str: String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
     def write(str: String, encoding: BufferEncoding): Boolean = js.native
     def write(str: String, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   }
   
-  type ServiceError = StatusObject with Error
-  
-  /* Inlined {  call :@grpc/grpc-js.@grpc/grpc-js/build/src/client-interceptors.InterceptingCallInterface | undefined, cancel (): void, getPeer (): string} & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'metadata', @grpc/grpc-js.@grpc/grpc-js/build/src/metadata.Metadata> & @grpc/grpc-js.@grpc/grpc-js/build/src/events.EmitterAugmentation1<'status', @grpc/grpc-js.@grpc/grpc-js/build/src/call-stream.StatusObject> & node.events.EventEmitter */
-  @js.native
-  trait SurfaceCall extends StObject {
+  trait ServiceError
+    extends StObject
+       with StatusObject
+       with Error
+  object ServiceError {
     
-    def addListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def addListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("addListener")
-    def addListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
+    @scala.inline
+    def apply(code: Status, details: String, message: String, metadata: Metadata, name: String): ServiceError = {
+      val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ServiceError]
+    }
+  }
+  
+  @js.native
+  trait SurfaceCall
+    extends EventEmitter
+       with EmitterAugmentation1[metadata | status, Metadata | StatusObject] {
     
     var call: js.UndefOr[InterceptingCallInterface] = js.native
     
     def cancel(): Unit = js.native
     
-    def emit(event: String, args: js.Any*): Boolean = js.native
-    def emit(event: js.Symbol, args: js.Any*): Boolean = js.native
-    @JSName("emit")
-    def emit_metadata(event: metadata, arg1: Metadata): Boolean = js.native
-    @JSName("emit")
-    def emit_status(event: status, arg1: StatusObject): Boolean = js.native
-    
-    def eventNames(): js.Array[String | js.Symbol] = js.native
-    
-    def getMaxListeners(): Double = js.native
-    
     def getPeer(): String = js.native
-    
-    def listenerCount(event: String): Double = js.native
-    def listenerCount(event: js.Symbol): Double = js.native
-    
-    def listeners(event: String): js.Array[js.Function] = js.native
-    def listeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def off(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def off(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    
-    def on(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def on(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("on")
-    def on_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("on")
-    def on_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def once(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def once(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("once")
-    def once_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("once")
-    def once_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    // Added in Node 6...
-    def prependListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependListener")
-    def prependListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def prependOnceListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def prependOnceListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("prependOnceListener")
-    def prependOnceListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def rawListeners(event: String): js.Array[js.Function] = js.native
-    def rawListeners(event: js.Symbol): js.Array[js.Function] = js.native
-    
-    def removeAllListeners(): this.type = js.native
-    def removeAllListeners(event: String): this.type = js.native
-    def removeAllListeners(event: js.Symbol): this.type = js.native
-    
-    def removeListener(event: String, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    def removeListener(event: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_metadata(event: metadata, listener: js.Function1[/* arg1 */ Metadata, Unit]): this.type = js.native
-    @JSName("removeListener")
-    def removeListener_status(event: status, listener: js.Function1[/* arg1 */ StatusObject, Unit]): this.type = js.native
-    
-    def setMaxListeners(n: Double): this.type = js.native
   }
 }

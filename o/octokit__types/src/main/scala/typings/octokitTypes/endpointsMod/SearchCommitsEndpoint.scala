@@ -1,59 +1,54 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`18`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.`author-date`
 import typings.octokitTypes.octokitTypesStrings.`committer-date`
 import typings.octokitTypes.octokitTypesStrings.asc
+import typings.octokitTypes.octokitTypesStrings.cloak
 import typings.octokitTypes.octokitTypesStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  q :string,   sort :'author-date' | 'committer-date' | undefined,   order :'desc' | 'asc' | undefined,   per_page :number | undefined,   page :number | undefined} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'cloak'> */
-@js.native
-trait SearchCommitsEndpoint extends StObject {
-  
-  var mediaType: `18` = js.native
+trait SearchCommitsEndpoint
+  extends StObject
+     with RequiredPreview[cloak] {
   
   /**
     * Determines whether the first search result returned is the highest number of matches (`desc`) or lowest number of matches (`asc`). This parameter is ignored unless you provide `sort`.
     */
-  var order: js.UndefOr[desc | asc] = js.native
+  var order: js.UndefOr[desc | asc] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * The query contains one or more search keywords and qualifiers. Qualifiers allow you to limit your search to specific areas of GitHub. The REST API supports the same qualifiers as GitHub.com. To learn more about the format of the query, see [Constructing a search query](https://developer.github.com/v3/search/#constructing-a-search-query). See "[Searching commits](https://docs.github.com/articles/searching-commits/)" for a detailed list of qualifiers.
     */
-  var q: String = js.native
+  var q: String
   
   /**
     * Sorts the results of your query by `author-date` or `committer-date`. Default: [best match](https://developer.github.com/v3/search/#ranking-search-results)
     */
-  var sort: js.UndefOr[`author-date` | `committer-date`] = js.native
+  var sort: js.UndefOr[`author-date` | `committer-date`] = js.undefined
 }
 object SearchCommitsEndpoint {
   
   @scala.inline
-  def apply(mediaType: `18`, q: String): SearchCommitsEndpoint = {
+  def apply(mediaType: `0`[cloak], q: String): SearchCommitsEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], q = q.asInstanceOf[js.Any])
     __obj.asInstanceOf[SearchCommitsEndpoint]
   }
   
   @scala.inline
   implicit class SearchCommitsEndpointMutableBuilder[Self <: SearchCommitsEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `18`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle between the multilevel list style and normal text.
   */
-@js.native
-trait ToggleMultilevelListCommand extends CommandWithBooleanStateBase {
+trait ToggleMultilevelListCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleMultilevelListCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleMultilevelListCommand {
   

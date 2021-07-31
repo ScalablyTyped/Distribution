@@ -2,38 +2,36 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureSetup extends StObject {
   
-  var AdditionalXml: String = js.native
+  var AdditionalXml: String
   
-  var AllowComments: Boolean = js.native
+  var AllowComments: Boolean
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Id: String = js.native
+  val Id: String
   
   @JSName("Office.SignatureSetup_typekey")
-  var OfficeDotSignatureSetup_typekey: SignatureSetup = js.native
+  var OfficeDotSignatureSetup_typekey: SignatureSetup
   
-  val ReadOnly: Boolean = js.native
+  val ReadOnly: Boolean
   
-  var ShowSignDate: Boolean = js.native
+  var ShowSignDate: Boolean
   
-  val SignatureProvider: String = js.native
+  val SignatureProvider: String
   
-  var SigningInstructions: String = js.native
+  var SigningInstructions: String
   
-  var SuggestedSigner: String = js.native
+  var SuggestedSigner: String
   
-  var SuggestedSignerEmail: String = js.native
+  var SuggestedSignerEmail: String
   
-  var SuggestedSignerLine2: String = js.native
+  var SuggestedSignerLine2: String
 }
 object SignatureSetup {
   

@@ -2,10 +2,8 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTokenOptions extends StObject {
   
   /**
@@ -13,11 +11,11 @@ trait GetTokenOptions extends StObject {
     * will be used if not provided. Must match any client_id option passed to
     * a corresponding call to generateAuthUrl.
     */
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
-  var code: String = js.native
+  var code: String
   
-  var codeVerifier: js.UndefOr[String] = js.native
+  var codeVerifier: js.UndefOr[String] = js.undefined
   
   /**
     * Determines where the API server redirects the user after the user
@@ -25,7 +23,7 @@ trait GetTokenOptions extends StObject {
     * will be used if not provided. Must match any redirect_uri option passed to
     * a corresponding call to generateAuthUrl.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
 }
 object GetTokenOptions {
   

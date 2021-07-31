@@ -4,14 +4,14 @@ import typings.std.GLenum
 import typings.std.GLint64
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
 @JSGlobal("WebGL2RenderingContext")
 @js.native
 class WebGL2RenderingContext ()
-  extends typings.std.WebGL2RenderingContext
+  extends StObject
+     with typings.std.WebGL2RenderingContext
 object WebGL2RenderingContext {
   
   @JSGlobal("WebGL2RenderingContext.ACTIVE_ATTRIBUTES")

@@ -2,29 +2,27 @@ package typings.nodeForge.mod.pki
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Attribute members to search on; any one hit will return the attribute
   */
-@js.native
 trait GetAttributeOpts extends StObject {
   
   /**
     * Long name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Short name
     */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
   /**
     * OID
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GetAttributeOpts {
   

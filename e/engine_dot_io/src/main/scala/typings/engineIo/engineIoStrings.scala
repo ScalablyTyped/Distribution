@@ -3,7 +3,6 @@ package typings.engineIo
 import typings.engineIo.mod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object engineIoStrings {
@@ -69,7 +68,9 @@ object engineIoStrings {
   def packetCreate: packetCreate = "packetCreate".asInstanceOf[packetCreate]
   
   @js.native
-  sealed trait polling extends Transport
+  sealed trait polling
+    extends StObject
+       with Transport
   @scala.inline
   def polling: polling = "polling".asInstanceOf[polling]
   
@@ -79,7 +80,9 @@ object engineIoStrings {
   def uws: uws = "uws".asInstanceOf[uws]
   
   @js.native
-  sealed trait websocket extends Transport
+  sealed trait websocket
+    extends StObject
+       with Transport
   @scala.inline
   def websocket: websocket = "websocket".asInstanceOf[websocket]
   

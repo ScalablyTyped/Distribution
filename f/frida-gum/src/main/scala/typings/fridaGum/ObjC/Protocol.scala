@@ -5,34 +5,34 @@ import typings.fridaGum.NativePointer
 import typings.fridaGum.ObjectWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Dynamically generated language binding for any Objective-C protocol.
   */
-@js.native
-trait Protocol extends ObjectWrapper {
+trait Protocol
+  extends StObject
+     with ObjectWrapper {
   
   /**
     * Methods declared by this protocol.
     */
-  var methods: StringDictionary[ProtocolMethodDescription] = js.native
+  var methods: StringDictionary[ProtocolMethodDescription]
   
   /**
     * Name visible to the Objective-C runtime.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Properties declared by this protocol.
     */
-  var properties: StringDictionary[ProtocolPropertyAttributes] = js.native
+  var properties: StringDictionary[ProtocolPropertyAttributes]
   
   /**
     * Protocols that this protocol conforms to.
     */
-  var protocols: StringDictionary[Protocol] = js.native
+  var protocols: StringDictionary[Protocol]
 }
 object Protocol {
   

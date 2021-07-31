@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosRuntimeConfiguration extends StObject {
   
   /** The set of available locales. */
-  var locales: js.UndefOr[js.Array[Locale]] = js.native
+  var locales: js.UndefOr[js.Array[Locale]] = js.undefined
   
   /** The set of available orientations. */
-  var orientations: js.UndefOr[js.Array[Orientation]] = js.native
+  var orientations: js.UndefOr[js.Array[Orientation]] = js.undefined
 }
 object IosRuntimeConfiguration {
   

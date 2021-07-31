@@ -2,13 +2,11 @@ package typings.safariExtensionContent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafariContentExtension extends StObject {
   
-  var baseURI: String = js.native
+  var baseURI: String
 }
 object SafariContentExtension {
   

@@ -3,22 +3,22 @@ package typings.reactMdForm.typesMod
 import typings.reactMdForm.reactMdFormStrings.setValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderSetValueAction extends SliderAction {
+trait SliderSetValueAction
+  extends StObject
+     with SliderAction {
   
-  var `type`: setValue = js.native
+  var `type`: setValue
   
-  var value: Double = js.native
+  var value: Double
 }
 object SliderSetValueAction {
   
   @scala.inline
-  def apply(`type`: setValue, value: Double): SliderSetValueAction = {
+  def apply(value: Double): SliderSetValueAction = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("setValue")
     __obj.asInstanceOf[SliderSetValueAction]
   }
   

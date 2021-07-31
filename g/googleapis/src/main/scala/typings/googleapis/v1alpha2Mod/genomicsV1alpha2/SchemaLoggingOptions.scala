@@ -2,13 +2,11 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The logging options for the pipeline run.
   */
-@js.native
 trait SchemaLoggingOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaLoggingOptions extends StObject {
     * not overwritten. Stdout and stderr logs from the run are also generated
     * and output as `-stdout.log` and `-stderr.log`.
     */
-  var gcsPath: js.UndefOr[String] = js.native
+  var gcsPath: js.UndefOr[String] = js.undefined
 }
 object SchemaLoggingOptions {
   

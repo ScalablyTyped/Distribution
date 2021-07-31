@@ -5,17 +5,15 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`object`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NullableAllOptionalObjectSchema[Properties /* <: Record[String, AnySchema] */] extends StObject {
   
-  var additionalProperties: js.UndefOr[Boolean] = js.native
+  var additionalProperties: js.UndefOr[Boolean] = js.undefined
   
-  var properties: Properties = js.native
+  var properties: Properties
   
-  var `type`: js.Array[`object` | `null`] = js.native
+  var `type`: js.Array[`object` | `null`]
 }
 object NullableAllOptionalObjectSchema {
   
@@ -27,7 +25,7 @@ object NullableAllOptionalObjectSchema {
   }
   
   @scala.inline
-  implicit class NullableAllOptionalObjectSchemaMutableBuilder[Self <: NullableAllOptionalObjectSchema[_], Properties /* <: Record[String, AnySchema] */] (val x: Self with NullableAllOptionalObjectSchema[Properties]) extends AnyVal {
+  implicit class NullableAllOptionalObjectSchemaMutableBuilder[Self <: NullableAllOptionalObjectSchema[?], Properties /* <: Record[String, AnySchema] */] (val x: Self & NullableAllOptionalObjectSchema[Properties]) extends AnyVal {
     
     @scala.inline
     def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])

@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MQ extends Service {
   
   @JSName("config")
-  var config_MQ: ConfigBase with ClientConfiguration = js.native
+  var config_MQ: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a broker. Note: This API is asynchronous.

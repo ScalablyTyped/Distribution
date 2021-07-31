@@ -6,7 +6,6 @@ import typings.leaflet.leafletBooleans.`false`
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Control")
@@ -34,6 +33,10 @@ class Control_ () extends Class {
 /* static members */
 object Control_ {
   
+  @JSImport("leaflet", "Control")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("leaflet", "Control.Attribution")
   @js.native
   class Attribution () extends Control_ {
@@ -55,11 +58,11 @@ object Control_ {
   @js.native
   class Layers () extends Control_ {
     def this(baseLayers: LayersObject) = this()
-    def this(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject) = this()
+    def this(baseLayers: Unit, overlays: LayersObject) = this()
     def this(baseLayers: LayersObject, overlays: LayersObject) = this()
-    def this(baseLayers: js.UndefOr[scala.Nothing], overlays: js.UndefOr[scala.Nothing], options: LayersOptions) = this()
-    def this(baseLayers: js.UndefOr[scala.Nothing], overlays: LayersObject, options: LayersOptions) = this()
-    def this(baseLayers: LayersObject, overlays: js.UndefOr[scala.Nothing], options: LayersOptions) = this()
+    def this(baseLayers: Unit, overlays: Unit, options: LayersOptions) = this()
+    def this(baseLayers: Unit, overlays: LayersObject, options: LayersOptions) = this()
+    def this(baseLayers: LayersObject, overlays: Unit, options: LayersOptions) = this()
     def this(baseLayers: LayersObject, overlays: LayersObject, options: LayersOptions) = this()
     
     def addBaseLayer(layer: Layer, name: String): this.type = js.native
@@ -94,14 +97,14 @@ object Control_ {
     var options_Zoom: typings.leaflet.mod.Control_.ZoomOptions = js.native
   }
   
-  @JSImport("leaflet", "Control.extend")
-  @js.native
-  def extend[T /* <: js.Object */](props: T): InstantiableT[T] with typings.leaflet.anon.Attribution = js.native
+  @scala.inline
+  def extend[T /* <: js.Object */](props: T): InstantiableT[T] & typings.leaflet.anon.Attribution = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(props.asInstanceOf[js.Any]).asInstanceOf[InstantiableT[T] & typings.leaflet.anon.Attribution]
   
-  @js.native
-  trait AttributionOptions extends ControlOptions {
+  trait AttributionOptions
+    extends StObject
+       with ControlOptions {
     
-    var prefix: js.UndefOr[String | Boolean] = js.native
+    var prefix: js.UndefOr[String | Boolean] = js.undefined
   }
   object AttributionOptions {
     
@@ -124,14 +127,15 @@ object Control_ {
   
   type LayersObject = StringDictionary[Layer]
   
-  @js.native
-  trait LayersOptions extends ControlOptions {
+  trait LayersOptions
+    extends StObject
+       with ControlOptions {
     
-    var autoZIndex: js.UndefOr[Boolean] = js.native
+    var autoZIndex: js.UndefOr[Boolean] = js.undefined
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var hideSingleBase: js.UndefOr[Boolean] = js.native
+    var hideSingleBase: js.UndefOr[Boolean] = js.undefined
   }
   object LayersOptions {
     
@@ -164,16 +168,17 @@ object Control_ {
     }
   }
   
-  @js.native
-  trait ScaleOptions extends ControlOptions {
+  trait ScaleOptions
+    extends StObject
+       with ControlOptions {
     
-    var imperial: js.UndefOr[Boolean] = js.native
+    var imperial: js.UndefOr[Boolean] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var metric: js.UndefOr[Boolean] = js.native
+    var metric: js.UndefOr[Boolean] = js.undefined
     
-    var updateWhenIdle: js.UndefOr[Boolean] = js.native
+    var updateWhenIdle: js.UndefOr[Boolean] = js.undefined
   }
   object ScaleOptions {
     
@@ -212,16 +217,17 @@ object Control_ {
     }
   }
   
-  @js.native
-  trait ZoomOptions extends ControlOptions {
+  trait ZoomOptions
+    extends StObject
+       with ControlOptions {
     
-    var zoomInText: js.UndefOr[String] = js.native
+    var zoomInText: js.UndefOr[String] = js.undefined
     
-    var zoomInTitle: js.UndefOr[String] = js.native
+    var zoomInTitle: js.UndefOr[String] = js.undefined
     
-    var zoomOutText: js.UndefOr[String] = js.native
+    var zoomOutText: js.UndefOr[String] = js.undefined
     
-    var zoomOutTitle: js.UndefOr[String] = js.native
+    var zoomOutTitle: js.UndefOr[String] = js.undefined
   }
   object ZoomOptions {
     

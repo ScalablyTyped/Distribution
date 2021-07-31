@@ -3,10 +3,13 @@ package typings.zipkin.mod
 import typings.zipkin.mod.option.IOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sampler {
+  
+  @JSImport("zipkin", "sampler")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("zipkin", "sampler.CountingSampler")
   @js.native
@@ -22,11 +25,9 @@ object sampler {
     def shouldSample(traceId: TraceId): IOption[Boolean] = js.native
   }
   
-  @JSImport("zipkin", "sampler.alwaysSample")
-  @js.native
-  def alwaysSample(traceId: TraceId): Boolean = js.native
+  @scala.inline
+  def alwaysSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("alwaysSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("zipkin", "sampler.neverSample")
-  @js.native
-  def neverSample(traceId: TraceId): Boolean = js.native
+  @scala.inline
+  def neverSample(traceId: TraceId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("neverSample")(traceId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

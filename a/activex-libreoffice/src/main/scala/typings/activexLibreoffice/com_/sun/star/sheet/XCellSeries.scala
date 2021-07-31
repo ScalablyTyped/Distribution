@@ -4,22 +4,22 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to fill out a cell range automatically with values based on a start value, step count and fill mode.
   * @see com.sun.star.sheet.SheetCellRange
   */
-@js.native
-trait XCellSeries extends XInterface {
+trait XCellSeries
+  extends StObject
+     with XInterface {
   
   /**
     * fills all cells in the range in a way that is specified by the first cell(s) in the range.
     * @param nFillDirection specifies the direction to fill the rows/columns of the range.
     * @param nSourceCount contains the number of cells in each row/column used to constitute the fill algorithm.
     */
-  def fillAuto(nFillDirection: FillDirection, nSourceCount: Double): Unit = js.native
+  def fillAuto(nFillDirection: FillDirection, nSourceCount: Double): Unit
   
   /**
     * fills all cells in the range based on the specified settings.
@@ -35,7 +35,7 @@ trait XCellSeries extends XInterface {
     nFillDateMode: FillDateMode,
     fStep: Double,
     fEndValue: Double
-  ): Unit = js.native
+  ): Unit
 }
 object XCellSeries {
   

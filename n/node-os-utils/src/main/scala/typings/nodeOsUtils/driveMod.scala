@@ -2,23 +2,33 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object driveMod {
   
   @JSImport("node-os-utils/lib/drive", JSImport.Default)
   @js.native
-  class default () extends Drive
+  class default ()
+    extends StObject
+       with Drive {
+    
+    /* CompleteClass */
+    override def free(diskName: String): js.Promise[DriveFreeInfo] = js.native
+    
+    /* CompleteClass */
+    override def info(diskName: String): js.Promise[DriveInfo] = js.native
+    
+    /* CompleteClass */
+    override def used(diskName: String): js.Promise[DriveUsedInfo] = js.native
+  }
   
-  @js.native
   trait Drive extends StObject {
     
-    def free(diskName: String): js.Promise[DriveFreeInfo] = js.native
+    def free(diskName: String): js.Promise[DriveFreeInfo]
     
-    def info(diskName: String): js.Promise[DriveInfo] = js.native
+    def info(diskName: String): js.Promise[DriveInfo]
     
-    def used(diskName: String): js.Promise[DriveUsedInfo] = js.native
+    def used(diskName: String): js.Promise[DriveUsedInfo]
   }
   object Drive {
     
@@ -46,14 +56,13 @@ object driveMod {
     }
   }
   
-  @js.native
   trait DriveFreeInfo extends StObject {
     
-    var freeGb: Double = js.native
+    var freeGb: Double
     
-    var freePercentage: Double = js.native
+    var freePercentage: Double
     
-    var totalGb: Double = js.native
+    var totalGb: Double
   }
   object DriveFreeInfo {
     
@@ -78,12 +87,13 @@ object driveMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nodeOsUtils.driveMod.DriveUsedInfo because var conflicts: totalGb. Inlined usedGb, usedPercentage */ @js.native
-  trait DriveInfo extends DriveFreeInfo {
+  - typings.nodeOsUtils.driveMod.DriveUsedInfo because var conflicts: totalGb. Inlined usedGb, usedPercentage */ trait DriveInfo
+    extends StObject
+       with DriveFreeInfo {
     
-    var usedGb: Double = js.native
+    var usedGb: Double
     
-    var usedPercentage: Double = js.native
+    var usedPercentage: Double
   }
   object DriveInfo {
     
@@ -104,14 +114,13 @@ object driveMod {
     }
   }
   
-  @js.native
   trait DriveUsedInfo extends StObject {
     
-    var totalGb: Double = js.native
+    var totalGb: Double
     
-    var usedGb: Double = js.native
+    var usedGb: Double
     
-    var usedPercentage: Double = js.native
+    var usedPercentage: Double
   }
   object DriveUsedInfo {
     

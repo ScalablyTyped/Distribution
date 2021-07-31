@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderror
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimedCount extends StObject {
   
   /** Approximate number of occurrences in the given time period. */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /** End of the time period to which `count` refers (excluded). */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Start of the time period to which `count` refers (included). */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object TimedCount {
   

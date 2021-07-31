@@ -2,13 +2,11 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderBoolean extends StObject {
   
-  var header: Boolean = js.native
+  var header: Boolean
 }
 object HeaderBoolean {
   

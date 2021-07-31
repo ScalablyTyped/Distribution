@@ -12,7 +12,6 @@ import typings.ssh2.ssh2Strings.listening
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2", "Server")
@@ -75,23 +74,19 @@ class Server protected () extends EventEmitter {
     * @param callback An optional callback to add to the `listening` event of the server.
     */
   def listen(handle: typings.node.netMod.Server): this.type = js.native
-  def listen(
-    handle: typings.node.netMod.Server,
-    backlog: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): this.type = js.native
   def listen(handle: typings.node.netMod.Server, backlog: Double): this.type = js.native
   def listen(handle: typings.node.netMod.Server, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(handle: typings.node.netMod.Server, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: typings.node.netMod.Server, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket): this.type = js.native
-  def listen(handle: Socket, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket, backlog: Double): this.type = js.native
   def listen(handle: Socket, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(handle: Socket, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Socket, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd): this.type = js.native
-  def listen(handle: Fd, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd, backlog: Double): this.type = js.native
   def listen(handle: Fd, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(handle: Fd, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
   def listen(handle: Fd, callback: js.Function0[Unit]): this.type = js.native
   /**
     * This will cause the server to accept connections using the specified options.
@@ -113,9 +108,9 @@ class Server protected () extends EventEmitter {
     * @param callback An optional callback to add to the `listening` event of the server.
     */
   def listen(path: String): this.type = js.native
-  def listen(path: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(path: String, backlog: Double): this.type = js.native
   def listen(path: String, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(path: String, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
   def listen(path: String, callback: js.Function0[Unit]): this.type = js.native
   /**
     * Begin accepting connections on the specified port and hostname.
@@ -135,20 +130,15 @@ class Server protected () extends EventEmitter {
   def listen(port: Double, backlog: Double): this.type = js.native
   def listen(port: Double, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, callback: js.Function0[Unit]): this.type = js.native
-  def listen(
-    port: Double,
-    hostname: js.UndefOr[scala.Nothing],
-    backlog: js.UndefOr[scala.Nothing],
-    callback: js.Function0[Unit]
-  ): this.type = js.native
-  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function0[Unit]): this.type = js.native
-  def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String): this.type = js.native
-  def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double): this.type = js.native
   def listen(port: Double, hostname: String, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(port: Double, hostname: String, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
   def listen(port: Double, hostname: String, callback: js.Function0[Unit]): this.type = js.native
+  def listen(port: Double, hostname: Unit, backlog: Double): this.type = js.native
+  def listen(port: Double, hostname: Unit, backlog: Double, callback: js.Function0[Unit]): this.type = js.native
+  def listen(port: Double, hostname: Unit, backlog: Unit, callback: js.Function0[Unit]): this.type = js.native
+  def listen(port: Double, hostname: Unit, callback: js.Function0[Unit]): this.type = js.native
   
   def on(event: String, listener: js.Function): this.type = js.native
   def on(event: js.Symbol, listener: js.Function): this.type = js.native
@@ -219,13 +209,11 @@ object Server {
     * @param config Server configuration properties.
     * @param connectionListener if supplied, is added as a connection listener.
     */
-  @JSImport("ssh2", "Server.createServer")
-  @js.native
-  def createServer(config: ServerConfig): Server = js.native
-  @JSImport("ssh2", "Server.createServer")
-  @js.native
+  @scala.inline
+  def createServer(config: ServerConfig): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(config.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
   def createServer(
     config: ServerConfig,
     connectionListener: js.Function2[/* client */ Connection, /* info */ ClientInfo, Unit]
-  ): Server = js.native
+  ): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(config.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
 }

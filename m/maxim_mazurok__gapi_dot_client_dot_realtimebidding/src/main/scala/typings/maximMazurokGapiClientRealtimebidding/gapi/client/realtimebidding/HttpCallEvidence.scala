@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpCallEvidence extends StObject {
   
   /** URLs of HTTP calls made by the creative. */
-  var urls: js.UndefOr[js.Array[String]] = js.native
+  var urls: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HttpCallEvidence {
   

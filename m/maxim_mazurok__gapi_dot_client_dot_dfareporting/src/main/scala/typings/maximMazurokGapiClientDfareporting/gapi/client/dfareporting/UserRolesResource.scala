@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientDfareporting.anon.AltCallbackFieldsKeyOauth
 import typings.maximMazurokGapiClientDfareporting.anon.Callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,26 +2,24 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
   /**
     * 推荐单元 id
     */
-  var adUnitId: String = js.native
+  var adUnitId: String
   
   /**
     * 游戏icon的数量，请注意，正式版下面渲染出来的icon数量会小于等于count，请注册做好样式兼容
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * 数组的每一项可以针对对应的icon设置位置和样式等信息，style的每一项称为styleItem
     */
-  var style: js.Array[AppNameHidden] = js.native
+  var style: js.Array[AppNameHidden]
 }
 object Count {
   

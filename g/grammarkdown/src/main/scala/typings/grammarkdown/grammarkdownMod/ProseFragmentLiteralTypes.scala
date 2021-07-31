@@ -6,20 +6,18 @@ import typings.grammarkdown.grammarkdownNumbers.`51`
 import typings.grammarkdown.grammarkdownNumbers.`52`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ P in grammarkdown.grammarkdown/dist/grammarkdown.ProseFragmentLiteralKind ]: grammarkdown.grammarkdown/dist/grammarkdown.ProseFragmentLiteral<P>} */
-@js.native
 trait ProseFragmentLiteralTypes extends StObject {
   
-  var `49`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`49`] = js.native
+  var `49`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`49`]
   
-  var `50`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`50`] = js.native
+  var `50`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`50`]
   
-  var `51`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`51`] = js.native
+  var `51`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`51`]
   
-  var `52`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`52`] = js.native
+  var `52`: ProseFragmentLiteral[typings.grammarkdown.grammarkdownNumbers.`52`]
 }
 object ProseFragmentLiteralTypes {
   

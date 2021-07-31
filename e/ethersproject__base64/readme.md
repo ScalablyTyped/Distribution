@@ -10,9 +10,9 @@ Base64 coder.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/base64 |
 | Keywords           | Ethereum, ethers |
-| # releases         | 24 |
+| # releases         | 27 |
 | # dependents       | 9 |
-| # downloads        | 660980 |
+| # downloads        | 1595330 |
 | # stars            | 0 |
 
 ## Links

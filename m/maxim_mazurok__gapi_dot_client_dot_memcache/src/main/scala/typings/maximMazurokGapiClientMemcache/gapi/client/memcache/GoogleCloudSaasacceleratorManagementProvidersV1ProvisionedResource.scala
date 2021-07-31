@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource extends
     * compute API documentation (https://cloud.google.com/compute/docs/reference/rest/v1/), prefixed with 'compute-', for example: 'compute-instance', 'compute-disk',
     * 'compute-autoscaler'.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /** URL identifying the resource, e.g. "https://www.googleapis.com/compute/v1/projects/...)". */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1ProvisionedResource {
   

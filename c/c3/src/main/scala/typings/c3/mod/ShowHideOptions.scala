@@ -2,14 +2,12 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowHideOptions extends StObject {
   
   /** Controls whether the legend will be shown or hidden along with the data. */
-  var withLegend: js.UndefOr[Boolean] = js.native
+  var withLegend: js.UndefOr[Boolean] = js.undefined
 }
 object ShowHideOptions {
   

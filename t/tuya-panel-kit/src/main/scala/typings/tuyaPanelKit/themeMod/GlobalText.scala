@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalText extends StObject {
   
-  var dark: String = js.native
+  var dark: String
   
-  var light: String = js.native
+  var light: String
 }
 object GlobalText {
   

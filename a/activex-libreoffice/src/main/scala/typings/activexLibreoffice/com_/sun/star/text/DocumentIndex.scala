@@ -10,48 +10,48 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of content indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait DocumentIndex extends BaseIndex {
+trait DocumentIndex
+  extends StObject
+     with BaseIndex {
   
   /** contains all index marks that are related to this index. */
-  var DocumentIndexMarks: SafeArray[XDocumentIndexMark] = js.native
+  var DocumentIndexMarks: SafeArray[XDocumentIndexMark]
   
   /** determines if the similarity of index entries is checked case sensitively. */
-  var IsCaseSensitive: Boolean = js.native
+  var IsCaseSensitive: Boolean
   
   /** contains the locale of the index. */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** determines the name of the character style that is applied to the number of a page where main index entry is located. */
-  var MainEntryCharacterStyleName: String = js.native
+  var MainEntryCharacterStyleName: String
   
   /** contains the name of the sort algorithm that is used to sort the entries. */
-  var SortAlgorithm: String = js.native
+  var SortAlgorithm: String
   
   /** determines if alphabetical separators are generated. */
-  var UseAlphabeticalSeparators: Boolean = js.native
+  var UseAlphabeticalSeparators: Boolean
   
   /** determines if same entries on different pages are combined into one index entry. */
-  var UseCombinedEntries: Boolean = js.native
+  var UseCombinedEntries: Boolean
   
   /** determines if following page numbers are displayed using a dash. */
-  var UseDash: Boolean = js.native
+  var UseDash: Boolean
   
   /** determines if a index entry is generated for each primary/secondary key. */
-  var UseKeyAsEntry: Boolean = js.native
+  var UseKeyAsEntry: Boolean
   
   /** determines if following page numbers are displayed using a "pp.". */
-  var UsePP: Boolean = js.native
+  var UsePP: Boolean
   
   /** determines if all entries start with a capital letter. */
-  var UseUpperCase: Boolean = js.native
+  var UseUpperCase: Boolean
 }
 object DocumentIndex {
   

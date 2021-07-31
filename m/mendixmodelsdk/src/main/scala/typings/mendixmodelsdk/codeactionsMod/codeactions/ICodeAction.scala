@@ -4,11 +4,12 @@ import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.projectsMod.projects.IDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ICodeAction extends IDocument {
+trait ICodeAction
+  extends StObject
+     with IDocument {
   
   /**
     * In version 7.21.0: introduced

@@ -2,41 +2,39 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSavingsPlanRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The hourly commitment, in USD. This is a value between 0.001 and 1 million. You cannot specify more than three digits after the decimal point.
     */
-  var commitment: Amount = js.native
+  var commitment: Amount
   
   /**
     * The time at which to purchase the Savings Plan, in UTC format (YYYY-MM-DDTHH:MM:SSZ).
     */
-  var purchaseTime: js.UndefOr[DateTime] = js.native
+  var purchaseTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The ID of the offering.
     */
-  var savingsPlanOfferingId: SavingsPlanOfferingId = js.native
+  var savingsPlanOfferingId: SavingsPlanOfferingId
   
   /**
     * One or more tags.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The up-front payment amount. This is a whole number between 50 and 99 percent of the total value of the Savings Plan. This parameter is supported only if the payment option is Partial Upfront.
     */
-  var upfrontPaymentAmount: js.UndefOr[Amount] = js.native
+  var upfrontPaymentAmount: js.UndefOr[Amount] = js.undefined
 }
 object CreateSavingsPlanRequest {
   

@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.global.Function
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
 // Attributes
 // see http://docs.angularjs.org/api/ng/type/$compile.directive.Attributes
 ///////////////////////////////////////////////////////////////////////////
-@js.native
 trait IAttributes
-  extends /**
+  extends StObject
+     with /**
   * Indexer which should return ng.INgModelController for most properties but cannot because of "All named properties must be assignable to string indexer type" constraint - see https://github.com/Microsoft/TypeScript/issues/272
   */
 /* name */ StringDictionary[js.Any] {
@@ -24,14 +23,14 @@ trait IAttributes
     * for the class addition.
     */
   @JSName("$addClass")
-  def $addClass(classVal: String): Unit = js.native
+  def $addClass(classVal: String): Unit
   
   /**
     * A map of DOM element attribute names to the normalized name. This is needed
     * to do reverse lookup from normalized name back to actual name.
     */
   @JSName("$attr")
-  var $attr: js.Object = js.native
+  var $attr: js.Object
   
   /**
     * Converts an attribute name (e.g. dash/colon/underscore-delimited string, optionally prefixed with x- or data-) to its normalized, camelCase form.
@@ -41,7 +40,7 @@ trait IAttributes
     * For further information check out the guide on @see https://docs.angularjs.org/guide/directive#matching-directives
     */
   @JSName("$normalize")
-  def $normalize(name: String): String = js.native
+  def $normalize(name: String): String
   
   /**
     * Observes an interpolated attribute.
@@ -50,7 +49,7 @@ trait IAttributes
     * interpolated value changes.
     */
   @JSName("$observe")
-  def $observe[T](name: String, fn: js.Function1[/* value */ js.UndefOr[T], _]): Function = js.native
+  def $observe[T](name: String, fn: js.Function1[/* value */ js.UndefOr[T], js.Any]): Function
   
   /**
     * Removes the CSS class value specified by the classVal parameter from the
@@ -58,20 +57,20 @@ trait IAttributes
     * the class removal.
     */
   @JSName("$removeClass")
-  def $removeClass(classVal: String): Unit = js.native
+  def $removeClass(classVal: String): Unit
   
   /**
     * Set DOM element attribute value.
     */
   @JSName("$set")
-  def $set(key: String, value: js.Any): Unit = js.native
+  def $set(key: String, value: js.Any): Unit
   
   /**
     * Adds and removes the appropriate CSS class values to the element based on the difference between
     * the new and old CSS class values (specified as newClasses and oldClasses).
     */
   @JSName("$updateClass")
-  def $updateClass(newClasses: String, oldClasses: String): Unit = js.native
+  def $updateClass(newClasses: String, oldClasses: String): Unit
 }
 object IAttributes {
   
@@ -80,7 +79,7 @@ object IAttributes {
     $addClass: String => Unit,
     $attr: js.Object,
     $normalize: String => String,
-    $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], _]) => Function,
+    $observe: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function,
     $removeClass: String => Unit,
     $set: (String, js.Any) => Unit,
     $updateClass: (String, String) => Unit
@@ -102,7 +101,7 @@ object IAttributes {
     def set$normalize(value: String => String): Self = StObject.set(x, "$normalize", js.Any.fromFunction1(value))
     
     @scala.inline
-    def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], _]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
+    def set$observe(value: (String, js.Function1[/* value */ js.UndefOr[js.Any], js.Any]) => Function): Self = StObject.set(x, "$observe", js.Any.fromFunction2(value))
     
     @scala.inline
     def set$removeClass(value: String => Unit): Self = StObject.set(x, "$removeClass", js.Any.fromFunction1(value))

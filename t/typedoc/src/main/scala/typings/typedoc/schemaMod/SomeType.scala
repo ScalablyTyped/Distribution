@@ -5,7 +5,6 @@ import typings.typedoc.typedocStrings.readonly
 import typings.typedoc.typedocStrings.unique
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -26,7 +25,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.typedoc.schemaMod.UnknownType
 */
 trait SomeType
-  extends __ModelToObject[js.Any]
+  extends StObject
+     with __ModelToObject[js.Any]
 object SomeType {
   
   @scala.inline

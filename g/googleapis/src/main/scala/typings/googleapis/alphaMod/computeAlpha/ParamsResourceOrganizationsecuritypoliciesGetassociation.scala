@@ -5,26 +5,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsecuritypoliciesGetassociation extends StandardParameters {
+trait ParamsResourceOrganizationsecuritypoliciesGetassociation
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The name of the association to get from the security policy.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the security policy to which the queried rule belongs.
     */
-  var securityPolicy: js.UndefOr[String] = js.native
+  var securityPolicy: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsecuritypoliciesGetassociation {
   

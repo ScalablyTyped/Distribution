@@ -4,47 +4,45 @@ import typings.muiDatatables.anon.Data
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableToolbar extends StObject {
   
-  var classes: js.UndefOr[js.Object] = js.native
+  var classes: js.UndefOr[js.Object] = js.undefined
   
-  var columnOrder: js.UndefOr[js.Array[Double]] = js.native
+  var columnOrder: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var columns: js.Array[MUIDataTableColumnDef] = js.native
+  var columns: js.Array[MUIDataTableColumnDef]
   
-  var data: js.UndefOr[js.Array[MUIDataTableData]] = js.native
+  var data: js.UndefOr[js.Array[MUIDataTableData]] = js.undefined
   
-  var displayData: js.UndefOr[DisplayData] = js.native
+  var displayData: js.UndefOr[DisplayData] = js.undefined
   
-  var filterData: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var filterData: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
   
-  var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var filterList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
-  var filterUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var filterUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var resetFilters: js.UndefOr[js.Function0[_]] = js.native
+  var resetFilters: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var searchClose: js.UndefOr[js.Function0[_]] = js.native
+  var searchClose: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var searchText: js.UndefOr[ReactNode] = js.native
+  var searchText: js.UndefOr[ReactNode] = js.undefined
   
-  var searchTextUpdate: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var searchTextUpdate: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var setTableActions: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var setTableActions: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var tableRef: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var tableRef: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
   
-  var title: js.UndefOr[ReactNode] = js.native
+  var title: js.UndefOr[ReactNode] = js.undefined
   
-  var toggleViewColumn: js.UndefOr[js.Function1[/* a */ js.Any, _]] = js.native
+  var toggleViewColumn: js.UndefOr[js.Function1[/* a */ js.Any, js.Any]] = js.undefined
   
-  var updateFilterByType: js.UndefOr[js.Function1[/* args */ js.Any, _]] = js.native
+  var updateFilterByType: js.UndefOr[js.Function1[/* args */ js.Any, js.Any]] = js.undefined
 }
 object MUIDataTableToolbar {
   
@@ -97,7 +95,7 @@ object MUIDataTableToolbar {
     def setDisplayDataVarargs(value: Data*): Self = StObject.set(x, "displayData", js.Array(value :_*))
     
     @scala.inline
-    def setFilterData(value: js.Array[js.Array[_]]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
+    def setFilterData(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "filterData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterDataUndefined: Self = StObject.set(x, "filterData", js.undefined)
@@ -115,7 +113,7 @@ object MUIDataTableToolbar {
     def setFilterListVarargs(value: js.Array[String]*): Self = StObject.set(x, "filterList", js.Array(value :_*))
     
     @scala.inline
-    def setFilterUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "filterUpdate", js.Any.fromFunction1(value))
+    def setFilterUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "filterUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFilterUpdateUndefined: Self = StObject.set(x, "filterUpdate", js.undefined)
@@ -127,13 +125,13 @@ object MUIDataTableToolbar {
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
     
     @scala.inline
-    def setResetFilters(value: () => _): Self = StObject.set(x, "resetFilters", js.Any.fromFunction0(value))
+    def setResetFilters(value: () => js.Any): Self = StObject.set(x, "resetFilters", js.Any.fromFunction0(value))
     
     @scala.inline
     def setResetFiltersUndefined: Self = StObject.set(x, "resetFilters", js.undefined)
     
     @scala.inline
-    def setSearchClose(value: () => _): Self = StObject.set(x, "searchClose", js.Any.fromFunction0(value))
+    def setSearchClose(value: () => js.Any): Self = StObject.set(x, "searchClose", js.Any.fromFunction0(value))
     
     @scala.inline
     def setSearchCloseUndefined: Self = StObject.set(x, "searchClose", js.undefined)
@@ -145,19 +143,19 @@ object MUIDataTableToolbar {
     def setSearchTextUndefined: Self = StObject.set(x, "searchText", js.undefined)
     
     @scala.inline
-    def setSearchTextUpdate(value: /* args */ js.Any => _): Self = StObject.set(x, "searchTextUpdate", js.Any.fromFunction1(value))
+    def setSearchTextUpdate(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "searchTextUpdate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSearchTextUpdateUndefined: Self = StObject.set(x, "searchTextUpdate", js.undefined)
     
     @scala.inline
-    def setSetTableActions(value: /* args */ js.Any => _): Self = StObject.set(x, "setTableActions", js.Any.fromFunction1(value))
+    def setSetTableActions(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "setTableActions", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSetTableActionsUndefined: Self = StObject.set(x, "setTableActions", js.undefined)
     
     @scala.inline
-    def setTableRef(value: /* args */ js.Any => _): Self = StObject.set(x, "tableRef", js.Any.fromFunction1(value))
+    def setTableRef(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "tableRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTableRefUndefined: Self = StObject.set(x, "tableRef", js.undefined)
@@ -169,13 +167,13 @@ object MUIDataTableToolbar {
     def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setToggleViewColumn(value: /* a */ js.Any => _): Self = StObject.set(x, "toggleViewColumn", js.Any.fromFunction1(value))
+    def setToggleViewColumn(value: /* a */ js.Any => js.Any): Self = StObject.set(x, "toggleViewColumn", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToggleViewColumnUndefined: Self = StObject.set(x, "toggleViewColumn", js.undefined)
     
     @scala.inline
-    def setUpdateFilterByType(value: /* args */ js.Any => _): Self = StObject.set(x, "updateFilterByType", js.Any.fromFunction1(value))
+    def setUpdateFilterByType(value: /* args */ js.Any => js.Any): Self = StObject.set(x, "updateFilterByType", js.Any.fromFunction1(value))
     
     @scala.inline
     def setUpdateFilterByTypeUndefined: Self = StObject.set(x, "updateFilterByType", js.undefined)

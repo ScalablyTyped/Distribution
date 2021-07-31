@@ -2,29 +2,27 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThrottleOptions extends StObject {
   
-  var burst: js.UndefOr[Double] = js.native
+  var burst: js.UndefOr[Double] = js.undefined
   
-  var ip: js.UndefOr[Boolean] = js.native
+  var ip: js.UndefOr[Boolean] = js.undefined
   
-  var maxKeys: js.UndefOr[Double] = js.native
+  var maxKeys: js.UndefOr[Double] = js.undefined
   
-  var overrides: js.UndefOr[js.Any] = js.native
+  var overrides: js.UndefOr[js.Any] = js.undefined
   
-  var rate: js.UndefOr[Double] = js.native
+  var rate: js.UndefOr[Double] = js.undefined
   
-  var setHeaders: js.UndefOr[Boolean] = js.native
+  var setHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var tokensTable: js.UndefOr[js.Any] = js.native
+  var tokensTable: js.UndefOr[js.Any] = js.undefined
   
-  var username: js.UndefOr[Boolean] = js.native
+  var username: js.UndefOr[Boolean] = js.undefined
   
-  var xff: js.UndefOr[Boolean] = js.native
+  var xff: js.UndefOr[Boolean] = js.undefined
 }
 object ThrottleOptions {
   

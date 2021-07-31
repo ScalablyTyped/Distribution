@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProvisioningTemplateRequest extends StObject {
   
   /**
     * The ID of the default provisioning template version.
     */
-  var defaultVersionId: js.UndefOr[TemplateVersionId] = js.native
+  var defaultVersionId: js.UndefOr[TemplateVersionId] = js.undefined
   
   /**
     * The description of the fleet provisioning template.
     */
-  var description: js.UndefOr[TemplateDescription] = js.native
+  var description: js.UndefOr[TemplateDescription] = js.undefined
   
   /**
     * True to enable the fleet provisioning template, otherwise false.
     */
-  var enabled: js.UndefOr[Enabled] = js.native
+  var enabled: js.UndefOr[Enabled] = js.undefined
   
   /**
     * Updates the pre-provisioning hook template.
     */
-  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.native
+  var preProvisioningHook: js.UndefOr[ProvisioningHook] = js.undefined
   
   /**
     * The ARN of the role associated with the provisioning template. This IoT role grants permission to provision a device.
     */
-  var provisioningRoleArn: js.UndefOr[RoleArn] = js.native
+  var provisioningRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * Removes pre-provisioning hook template.
     */
-  var removePreProvisioningHook: js.UndefOr[RemoveHook] = js.native
+  var removePreProvisioningHook: js.UndefOr[RemoveHook] = js.undefined
   
   /**
     * The name of the fleet provisioning template.
     */
-  var templateName: TemplateName = js.native
+  var templateName: TemplateName
 }
 object UpdateProvisioningTemplateRequest {
   

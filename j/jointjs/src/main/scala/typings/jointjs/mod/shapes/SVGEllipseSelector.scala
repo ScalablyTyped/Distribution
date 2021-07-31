@@ -4,13 +4,13 @@ import typings.jointjs.mod.attributes.SVGEllipseAttributes
 import typings.jointjs.mod.dia.Cell.Selectors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGEllipseSelector extends Selectors {
+trait SVGEllipseSelector
+  extends StObject
+     with Selectors {
   
-  var ellipse: js.UndefOr[SVGEllipseAttributes] = js.native
+  var ellipse: js.UndefOr[SVGEllipseAttributes] = js.undefined
 }
 object SVGEllipseSelector {
   

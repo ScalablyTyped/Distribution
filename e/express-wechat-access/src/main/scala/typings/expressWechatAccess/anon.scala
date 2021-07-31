@@ -2,23 +2,21 @@ package typings.expressWechatAccess
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessTokenUrl extends StObject {
     
-    var accessTokenUrl: js.UndefOr[String] = js.native
+    var accessTokenUrl: js.UndefOr[String] = js.undefined
     
-    var appId: String = js.native
+    var appId: String
     
-    var appSecret: String = js.native
+    var appSecret: String
     
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
-    var ticketUrl: js.UndefOr[String] = js.native
+    var ticketUrl: js.UndefOr[String] = js.undefined
   }
   object AccessTokenUrl {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdsensehost.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupOption extends StObject {
   
   /** The backup option to be used in instances where no ad is available. */
-  var backupOption: js.UndefOr[Color] = js.native
+  var backupOption: js.UndefOr[Color] = js.undefined
   
   /** Size of this ad unit. Size values are in the form SIZE_{width}_{height}. */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /** Type of this ad unit. Possible values are TEXT, TEXT_IMAGE, IMAGE and LINK. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object BackupOption {
   

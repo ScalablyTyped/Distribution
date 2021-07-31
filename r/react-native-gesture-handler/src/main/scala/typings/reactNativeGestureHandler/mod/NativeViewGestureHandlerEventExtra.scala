@@ -2,13 +2,11 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NativeViewGestureHandlerEventExtra extends StObject {
   
-  var pointerInside: Boolean = js.native
+  var pointerInside: Boolean
 }
 object NativeViewGestureHandlerEventExtra {
   

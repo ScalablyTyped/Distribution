@@ -11,7 +11,6 @@ import typings.unist.mod.Point
 import typings.unist.mod.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,7 +18,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("vfile-message", JSImport.Namespace)
   @js.native
-  class ^ protected () extends VFileMessage {
+  class ^ protected ()
+    extends StObject
+       with VFileMessage {
     /**
       * Constructor of a message for `reason` at `position` from `origin`.
       * When an error is passed in as `reason`, copies the `stack`.
@@ -36,29 +37,32 @@ object mod extends Shortcut {
     def this(reason: Error, position: Node) = this()
     def this(reason: Error, position: Point) = this()
     def this(reason: Error, position: Position) = this()
-    def this(reason: String, position: js.UndefOr[scala.Nothing], origin: String) = this()
+    def this(reason: String, position: Unit, origin: String) = this()
     def this(reason: String, position: Node, origin: String) = this()
     def this(reason: String, position: Point, origin: String) = this()
     def this(reason: String, position: Position, origin: String) = this()
-    def this(reason: Error, position: js.UndefOr[scala.Nothing], origin: String) = this()
+    def this(reason: Error, position: Unit, origin: String) = this()
     def this(reason: Error, position: Node, origin: String) = this()
     def this(reason: Error, position: Point, origin: String) = this()
     def this(reason: Error, position: Position, origin: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   @JSImport("vfile-message", JSImport.Namespace)
   @js.native
-  val ^ : VFileMessage = js.native
+  val ^ : js.Object & VFileMessage = js.native
   
   /**
     * Create a virtual message.
     */
   @js.native
   trait VFileMessage
-    extends Error
-       with /**
-    * It’s OK to store custom data directly on the VMessage, some of those are handled by utilities.
-    */
-  /* key */ StringDictionary[js.Any]
+    extends StObject
+       with Error
        with /**
     * Constructor of a message for `reason` at `position` from `origin`.
     * When an error is passed in as `reason`, copies the `stack`.
@@ -68,6 +72,10 @@ object mod extends Shortcut {
     * @param origin Place in code the message originates from (`string`, optional).
     */
   Instantiable1[(/* reason */ Error) | (/* reason */ String), VFileMessage]
+       with /**
+    * It’s OK to store custom data directly on the VMessage, some of those are handled by utilities.
+    */
+  /* key */ StringDictionary[js.Any]
        with Instantiable2[
           (/* reason */ Error) | (/* reason */ String), 
           (/* position */ Node) | (/* position */ Point) | (/* position */ Position), 
@@ -75,7 +83,7 @@ object mod extends Shortcut {
         ]
        with Instantiable3[
           (/* reason */ Error) | (/* reason */ String), 
-          js.UndefOr[(/* position */ Node) | (/* position */ Point) | (/* position */ Position)], 
+          (/* position */ Node) | (/* position */ Point) | (/* position */ Position) | (/* position */ Unit), 
           /* origin */ String, 
           VFileMessage
         ] {
@@ -89,7 +97,7 @@ object mod extends Shortcut {
       * @param origin Place in code the message originates from (`string`, optional).
       */
     def apply(reason: String): VFileMessage = js.native
-    def apply(reason: String, position: js.UndefOr[scala.Nothing], origin: String): VFileMessage = js.native
+    def apply(reason: String, position: Unit, origin: String): VFileMessage = js.native
     def apply(reason: String, position: Node): VFileMessage = js.native
     def apply(reason: String, position: Node, origin: String): VFileMessage = js.native
     def apply(reason: String, position: Point): VFileMessage = js.native
@@ -97,7 +105,7 @@ object mod extends Shortcut {
     def apply(reason: String, position: Position): VFileMessage = js.native
     def apply(reason: String, position: Position, origin: String): VFileMessage = js.native
     def apply(reason: Error): VFileMessage = js.native
-    def apply(reason: Error, position: js.UndefOr[scala.Nothing], origin: String): VFileMessage = js.native
+    def apply(reason: Error, position: Unit, origin: String): VFileMessage = js.native
     def apply(reason: Error, position: Node): VFileMessage = js.native
     def apply(reason: Error, position: Node, origin: String): VFileMessage = js.native
     def apply(reason: Error, position: Point): VFileMessage = js.native
@@ -157,8 +165,8 @@ object mod extends Shortcut {
     var url: js.UndefOr[String] = js.native
   }
   
-  type _To = VFileMessage
+  type _To = js.Object & VFileMessage
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: VFileMessage = ^
+  override def _to: js.Object & VFileMessage = ^
 }

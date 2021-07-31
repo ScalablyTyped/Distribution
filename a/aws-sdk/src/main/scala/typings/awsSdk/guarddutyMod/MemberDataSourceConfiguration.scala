@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberDataSourceConfiguration extends StObject {
   
   /**
     * The account ID for the member account.
     */
-  var AccountId: typings.awsSdk.guarddutyMod.AccountId = js.native
+  var AccountId: typings.awsSdk.guarddutyMod.AccountId
   
   /**
     * Contains information on the status of data sources for the account.
     */
-  var DataSources: DataSourceConfigurationsResult = js.native
+  var DataSources: DataSourceConfigurationsResult
 }
 object MemberDataSourceConfiguration {
   

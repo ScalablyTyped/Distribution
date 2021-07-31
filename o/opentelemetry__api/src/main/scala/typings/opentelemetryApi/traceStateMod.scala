@@ -2,12 +2,10 @@ package typings.opentelemetryApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object traceStateMod {
   
-  @js.native
   trait TraceState extends StObject {
     
     /**
@@ -18,7 +16,7 @@ object traceStateMod {
       * @returns the value to which the specified key is mapped, or `undefined` if
       *     this map contains no mapping for the key.
       */
-    def get(key: String): js.UndefOr[String] = js.native
+    def get(key: String): js.UndefOr[String]
     
     /**
       * Serializes the TraceState to a `list` as defined below. The `list` is a
@@ -29,7 +27,7 @@ object traceStateMod {
       *
       * @returns the serialized string.
       */
-    def serialize(): String = js.native
+    def serialize(): String
     
     /**
       * Adds or updates the TraceState that has the given `key` if it is
@@ -39,14 +37,14 @@ object traceStateMod {
       * @param key key of the TraceState entry.
       * @param value value of the TraceState entry.
       */
-    def set(key: String, value: String): Unit = js.native
+    def set(key: String, value: String): Unit
     
     /**
       * Removes the TraceState Entry that has the given `key` if it is present.
       *
       * @param key the key for the TraceState Entry to be removed.
       */
-    def unset(key: String): Unit = js.native
+    def unset(key: String): Unit
   }
   object TraceState {
     

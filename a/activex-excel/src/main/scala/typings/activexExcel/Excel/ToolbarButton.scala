@@ -2,58 +2,56 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarButton extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val BuiltIn: Boolean = js.native
+  val BuiltIn: Boolean
   
-  var BuiltInFace: Boolean = js.native
+  var BuiltInFace: Boolean
   
-  def Copy(Toolbar: Toolbar, Before: Double): Unit = js.native
+  def Copy(Toolbar: Toolbar, Before: Double): Unit
   
-  def CopyFace(): Unit = js.native
+  def CopyFace(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def Edit(): Unit = js.native
+  def Edit(): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Excel.ToolbarButton_typekey")
-  var ExcelDotToolbarButton_typekey: ToolbarButton = js.native
+  var ExcelDotToolbarButton_typekey: ToolbarButton
   
-  var HelpContextID: Double = js.native
+  var HelpContextID: Double
   
-  var HelpFile: String = js.native
+  var HelpFile: String
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val IsGap: Boolean = js.native
+  val IsGap: Boolean
   
-  def Move(Toolbar: Toolbar, Before: Double): Unit = js.native
+  def Move(Toolbar: Toolbar, Before: Double): Unit
   
-  var Name: String = js.native
+  var Name: String
   
-  var OnAction: String = js.native
+  var OnAction: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def PasteFace(): Unit = js.native
+  def PasteFace(): Unit
   
-  var Pushed: Boolean = js.native
+  var Pushed: Boolean
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  var StatusBar: String = js.native
+  var StatusBar: String
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object ToolbarButton {
   

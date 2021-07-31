@@ -26,14 +26,15 @@ import typings.std.Pick
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
   @JSImport("@elastic/elasticsearch/lib/Helpers", JSImport.Default)
   @js.native
-  class default () extends Helpers
+  class default ()
+    extends StObject
+       with Helpers
   
   /* Rewritten from type alias, can be one of: 
     - typings.elasticElasticsearch.helpersMod.IndexAction
@@ -51,71 +52,70 @@ object helpersMod {
   }
   
   /* Inlined parent @elastic/elasticsearch.@elastic/elasticsearch/lib/Helpers.Omit<@elastic/elasticsearch.@elastic/elasticsearch/api/requestParams.Bulk<@elastic/elasticsearch.@elastic/elasticsearch/lib/Transport.RequestNDBody<std.Array<std.Record<string, any>>>>, 'body'> */
-  @js.native
   trait BulkHelperOptions[TDocument] extends StObject {
     
-    var _source: js.UndefOr[String | js.Array[String]] = js.native
+    var _source: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+    var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+    var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+    var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+    var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var datasource: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, _, js.UndefOr[scala.Nothing]]) = js.native
+    var datasource: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, js.Any, Unit])
     
-    var error_trace: js.UndefOr[Boolean] = js.native
+    var error_trace: js.UndefOr[Boolean] = js.undefined
     
-    var filter_path: js.UndefOr[String | js.Array[String]] = js.native
+    var filter_path: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var flushBytes: js.UndefOr[Double] = js.native
+    var flushBytes: js.UndefOr[Double] = js.undefined
     
-    var flushInterval: js.UndefOr[Double] = js.native
+    var flushInterval: js.UndefOr[Double] = js.undefined
     
-    var human: js.UndefOr[Boolean] = js.native
+    var human: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    def onDocument(doc: TDocument): Action = js.native
+    def onDocument(doc: TDocument): Action
     
-    var onDrop: js.UndefOr[js.Function1[/* doc */ OnDropDocument[TDocument], Unit]] = js.native
+    var onDrop: js.UndefOr[js.Function1[/* doc */ OnDropDocument[TDocument], Unit]] = js.undefined
     
-    var pipeline: js.UndefOr[String] = js.native
+    var pipeline: js.UndefOr[String] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var refresh: js.UndefOr[wait_for | Boolean] = js.native
+    var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
     
-    var refreshOnCompletion: js.UndefOr[Boolean | String] = js.native
+    var refreshOnCompletion: js.UndefOr[Boolean | String] = js.undefined
     
-    var require_alias: js.UndefOr[Boolean] = js.native
+    var require_alias: js.UndefOr[Boolean] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var routing: js.UndefOr[String] = js.native
+    var routing: js.UndefOr[String] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[String] = js.native
+    var timeout: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     @JSName("wait")
-    var wait_FBulkHelperOptions: js.UndefOr[Double] = js.native
+    var wait_FBulkHelperOptions: js.UndefOr[Double] = js.undefined
     
-    var wait_for_active_shards: js.UndefOr[String] = js.native
+    var wait_for_active_shards: js.UndefOr[String] = js.undefined
   }
   object BulkHelperOptions {
     
     @scala.inline
     def apply[TDocument](
-      datasource: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, _, js.UndefOr[scala.Nothing]]),
+      datasource: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, js.Any, Unit]),
       onDocument: TDocument => Action
     ): BulkHelperOptions[TDocument] = {
       val __obj = js.Dynamic.literal(datasource = datasource.asInstanceOf[js.Any], onDocument = js.Any.fromFunction1(onDocument))
@@ -123,7 +123,7 @@ object helpersMod {
     }
     
     @scala.inline
-    implicit class BulkHelperOptionsMutableBuilder[Self <: BulkHelperOptions[_], TDocument] (val x: Self with BulkHelperOptions[TDocument]) extends AnyVal {
+    implicit class BulkHelperOptionsMutableBuilder[Self <: BulkHelperOptions[?], TDocument] (val x: Self & BulkHelperOptions[TDocument]) extends AnyVal {
       
       @scala.inline
       def setConcurrency(value: Double): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
@@ -132,9 +132,7 @@ object helpersMod {
       def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
       @scala.inline
-      def setDatasource(
-        value: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, _, js.UndefOr[scala.Nothing]])
-      ): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
+      def setDatasource(value: js.Array[TDocument] | Buffer | Readable | (AsyncIterator[TDocument, js.Any, Unit])): Self = StObject.set(x, "datasource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDatasourceVarargs(value: TDocument*): Self = StObject.set(x, "datasource", js.Array(value :_*))
@@ -312,22 +310,21 @@ object helpersMod {
     }
   }
   
-  @js.native
   trait BulkStats extends StObject {
     
-    var aborted: Boolean = js.native
+    var aborted: Boolean
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var failed: Double = js.native
+    var failed: Double
     
-    var retry: Double = js.native
+    var retry: Double
     
-    var successful: Double = js.native
+    var successful: Double
     
-    var time: Double = js.native
+    var time: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object BulkStats {
     
@@ -371,10 +368,11 @@ object helpersMod {
     }
   }
   
-  @js.native
-  trait CreateAction extends _Action {
+  trait CreateAction
+    extends StObject
+       with _Action {
     
-    var create: Dictkey = js.native
+    var create: Dictkey
   }
   object CreateAction {
     
@@ -392,10 +390,11 @@ object helpersMod {
     }
   }
   
-  @js.native
-  trait DeleteAction extends _Action {
+  trait DeleteAction
+    extends StObject
+       with _Action {
     
-    var delete: Dictkey = js.native
+    var delete: Dictkey
   }
   object DeleteAction {
     
@@ -421,20 +420,21 @@ object helpersMod {
     def msearch(): MsearchHelper = js.native
     def msearch(options: MsearchHelperOptions): MsearchHelper = js.native
     
-    def scrollDocuments[TDocument, TRequestBody /* <: RequestBody[Record[String, _]] */](params: Search[TRequestBody]): AsyncIterable[TDocument] = js.native
-    def scrollDocuments[TDocument, TRequestBody /* <: RequestBody[Record[String, _]] */](params: Search[TRequestBody], options: TransportRequestOptions): AsyncIterable[TDocument] = js.native
+    def scrollDocuments[TDocument, TRequestBody /* <: RequestBody[Record[String, js.Any]] */](params: Search[TRequestBody]): AsyncIterable[TDocument] = js.native
+    def scrollDocuments[TDocument, TRequestBody /* <: RequestBody[Record[String, js.Any]] */](params: Search[TRequestBody], options: TransportRequestOptions): AsyncIterable[TDocument] = js.native
     
-    def scrollSearch[TDocument, TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: Search[TRequestBody]): AsyncIterable[ScrollSearchResponse[TDocument, TResponse, TContext]] = js.native
-    def scrollSearch[TDocument, TResponse, TRequestBody /* <: RequestBody[Record[String, _]] */, TContext](params: Search[TRequestBody], options: TransportRequestOptions): AsyncIterable[ScrollSearchResponse[TDocument, TResponse, TContext]] = js.native
+    def scrollSearch[TDocument, TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: Search[TRequestBody]): AsyncIterable[ScrollSearchResponse[TDocument, TResponse, TContext]] = js.native
+    def scrollSearch[TDocument, TResponse, TRequestBody /* <: RequestBody[Record[String, js.Any]] */, TContext](params: Search[TRequestBody], options: TransportRequestOptions): AsyncIterable[ScrollSearchResponse[TDocument, TResponse, TContext]] = js.native
     
-    def search[TDocument, TRequestBody /* <: RequestBody[Record[String, _]] */](params: Search[TRequestBody]): js.Promise[js.Array[TDocument]] = js.native
-    def search[TDocument, TRequestBody /* <: RequestBody[Record[String, _]] */](params: Search[TRequestBody], options: TransportRequestOptions): js.Promise[js.Array[TDocument]] = js.native
+    def search[TDocument, TRequestBody /* <: RequestBody[Record[String, js.Any]] */](params: Search[TRequestBody]): js.Promise[js.Array[TDocument]] = js.native
+    def search[TDocument, TRequestBody /* <: RequestBody[Record[String, js.Any]] */](params: Search[TRequestBody], options: TransportRequestOptions): js.Promise[js.Array[TDocument]] = js.native
   }
   
-  @js.native
-  trait IndexAction extends _Action {
+  trait IndexAction
+    extends StObject
+       with _Action {
     
-    var index: Dictkey = js.native
+    var index: Dictkey
   }
   object IndexAction {
     
@@ -464,59 +464,58 @@ object helpersMod {
     def search[TResponse, TContext](header: OmitSearchRequestBodyReco, body: Readable, callback: callbackFn[TResponse, TContext]): Unit = js.native
     def search[TResponse, TRequestBody /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.elasticElasticsearch.elasticElasticsearchStrings.MsearchHelper with TopLevel[js.Any] */, TContext](header: OmitSearchRequestBodyReco, body: TRequestBody): js.Promise[ApiResponse[TResponse, TContext]] = js.native
+      */ typings.elasticElasticsearch.elasticElasticsearchStrings.MsearchHelper & TopLevel[js.Any] */, TContext](header: OmitSearchRequestBodyReco, body: TRequestBody): js.Promise[ApiResponse[TResponse, TContext]] = js.native
     def search[TResponse, TRequestBody /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.elasticElasticsearch.elasticElasticsearchStrings.MsearchHelper with TopLevel[js.Any] */, TContext](header: OmitSearchRequestBodyReco, body: TRequestBody, callback: callbackFn[TResponse, TContext]): Unit = js.native
+      */ typings.elasticElasticsearch.elasticElasticsearchStrings.MsearchHelper & TopLevel[js.Any] */, TContext](header: OmitSearchRequestBodyReco, body: TRequestBody, callback: callbackFn[TResponse, TContext]): Unit = js.native
     
     def stop(): Unit = js.native
     def stop(error: Error): Unit = js.native
   }
   
   /* Inlined parent @elastic/elasticsearch.@elastic/elasticsearch/lib/Helpers.Omit<@elastic/elasticsearch.@elastic/elasticsearch/api/requestParams.Msearch<@elastic/elasticsearch.@elastic/elasticsearch/lib/Transport.RequestNDBody<std.Array<std.Record<string, any>>>>, 'body'> */
-  @js.native
   trait MsearchHelperOptions extends StObject {
     
-    var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.native
+    var ccs_minimize_roundtrips: js.UndefOr[Boolean] = js.undefined
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var error_trace: js.UndefOr[Boolean] = js.native
+    var error_trace: js.UndefOr[Boolean] = js.undefined
     
-    var filter_path: js.UndefOr[String | js.Array[String]] = js.native
+    var filter_path: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var flushInterval: js.UndefOr[Double] = js.native
+    var flushInterval: js.UndefOr[Double] = js.undefined
     
-    var human: js.UndefOr[Boolean] = js.native
+    var human: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[String | js.Array[String]] = js.native
+    var index: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var max_concurrent_searches: js.UndefOr[Double] = js.native
+    var max_concurrent_searches: js.UndefOr[Double] = js.undefined
     
-    var max_concurrent_shard_requests: js.UndefOr[Double] = js.native
+    var max_concurrent_shard_requests: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var operations: js.UndefOr[Double] = js.native
+    var operations: js.UndefOr[Double] = js.undefined
     
-    var pre_filter_shard_size: js.UndefOr[Double] = js.native
+    var pre_filter_shard_size: js.UndefOr[Double] = js.undefined
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var rest_total_hits_as_int: js.UndefOr[Boolean] = js.native
+    var rest_total_hits_as_int: js.UndefOr[Boolean] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+    var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var typed_keys: js.UndefOr[Boolean] = js.native
+    var typed_keys: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FMsearchHelperOptions: js.UndefOr[Double] = js.native
+    var wait_FMsearchHelperOptions: js.UndefOr[Double] = js.undefined
   }
   object MsearchHelperOptions {
     
@@ -662,16 +661,15 @@ object helpersMod {
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  @js.native
   trait OnDropDocument[TDocument] extends StObject {
     
-    var document: TDocument = js.native
+    var document: TDocument
     
-    var error: Causedby = js.native
+    var error: Causedby
     
-    var retried: Boolean = js.native
+    var retried: Boolean
     
-    var status: Double = js.native
+    var status: Double
   }
   object OnDropDocument {
     
@@ -682,7 +680,7 @@ object helpersMod {
     }
     
     @scala.inline
-    implicit class OnDropDocumentMutableBuilder[Self <: OnDropDocument[_], TDocument] (val x: Self with OnDropDocument[TDocument]) extends AnyVal {
+    implicit class OnDropDocumentMutableBuilder[Self <: OnDropDocument[?], TDocument] (val x: Self & OnDropDocument[TDocument]) extends AnyVal {
       
       @scala.inline
       def setDocument(value: TDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
@@ -698,12 +696,13 @@ object helpersMod {
     }
   }
   
-  @js.native
-  trait ScrollSearchResponse[TDocument, TResponse, TContext] extends RequestEvent[TResponse, TContext] {
+  trait ScrollSearchResponse[TDocument, TResponse, TContext]
+    extends StObject
+       with RequestEvent[TResponse, TContext] {
     
-    def clear(): js.Promise[Unit] = js.native
+    def clear(): js.Promise[Unit]
     
-    var documents: js.Array[TDocument] = js.native
+    var documents: js.Array[TDocument]
   }
   object ScrollSearchResponse {
     
@@ -714,12 +713,12 @@ object helpersMod {
       documents: js.Array[TDocument],
       meta: Aborted[TContext]
     ): ScrollSearchResponse[TDocument, TResponse, TContext] = {
-      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), documents = documents.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], clear = js.Any.fromFunction0(clear), documents = documents.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], headers = null, statusCode = null, warnings = null)
       __obj.asInstanceOf[ScrollSearchResponse[TDocument, TResponse, TContext]]
     }
     
     @scala.inline
-    implicit class ScrollSearchResponseMutableBuilder[Self <: ScrollSearchResponse[_, _, _], TDocument, TResponse, TContext] (val x: Self with (ScrollSearchResponse[TDocument, TResponse, TContext])) extends AnyVal {
+    implicit class ScrollSearchResponseMutableBuilder[Self <: ScrollSearchResponse[?, ?, ?], TDocument, TResponse, TContext] (val x: Self & (ScrollSearchResponse[TDocument, TResponse, TContext])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -734,10 +733,9 @@ object helpersMod {
   
   type UpdateAction = js.Tuple2[UpdateActionOperation, Record[String, js.Any]]
   
-  @js.native
   trait UpdateActionOperation extends StObject {
     
-    var update: Dictkey = js.native
+    var update: Dictkey
   }
   object UpdateActionOperation {
     

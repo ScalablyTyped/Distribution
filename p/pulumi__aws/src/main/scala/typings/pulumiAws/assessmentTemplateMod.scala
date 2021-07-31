@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assessmentTemplateMod {
@@ -59,6 +58,10 @@ object assessmentTemplateMod {
   /* static members */
   object AssessmentTemplate {
     
+    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AssessmentTemplate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -68,55 +71,49 @@ object assessmentTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AssessmentTemplate = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AssessmentTemplate = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState): AssessmentTemplate = js.native
-    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): AssessmentTemplate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssessmentTemplateState): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AssessmentTemplateState, opts: CustomResourceOptions): AssessmentTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AssessmentTemplate]
     
     /**
       * Returns true if the given object is an instance of AssessmentTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/inspector/assessmentTemplate", "AssessmentTemplate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/inspector/assessmentTemplate.AssessmentTemplate */ Boolean]
   }
   
-  @js.native
   trait AssessmentTemplateArgs extends StObject {
     
     /**
       * The duration of the inspector run.
       */
-    val duration: Input[Double] = js.native
+    val duration: Input[Double]
     
     /**
       * The name of the assessment template.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The rules to be used during the run.
       */
-    val rulesPackageArns: Input[js.Array[Input[String]]] = js.native
+    val rulesPackageArns: Input[js.Array[Input[String]]]
     
     /**
       * Key-value map of tags for the Inspector assessment template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The assessment target ARN to attach the template to.
       */
-    val targetArn: Input[String] = js.native
+    val targetArn: Input[String]
   }
   object AssessmentTemplateArgs {
     
@@ -159,38 +156,37 @@ object assessmentTemplateMod {
     }
   }
   
-  @js.native
   trait AssessmentTemplateState extends StObject {
     
     /**
       * The template assessment ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The duration of the inspector run.
       */
-    val duration: js.UndefOr[Input[Double]] = js.native
+    val duration: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of the assessment template.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The rules to be used during the run.
       */
-    val rulesPackageArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val rulesPackageArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of tags for the Inspector assessment template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The assessment target ARN to attach the template to.
       */
-    val targetArn: js.UndefOr[Input[String]] = js.native
+    val targetArn: js.UndefOr[Input[String]] = js.undefined
   }
   object AssessmentTemplateState {
     

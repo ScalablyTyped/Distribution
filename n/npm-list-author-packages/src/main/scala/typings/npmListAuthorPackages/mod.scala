@@ -7,35 +7,35 @@ import typings.npmListAuthorPackages.npmListAuthorPackagesStrings.https
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("npm-list-author-packages", JSImport.Namespace)
   @js.native
-  def apply(opts: Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("npm-list-author-packages", "factory")
-  @js.native
-  def factory(opts: Options, callback: Callback): js.Function0[Unit] = js.native
+  @scala.inline
+  def factory(opts: Options, callback: Callback): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
   type Callback = js.Function2[/* error */ Error | Null, /* data */ js.Array[String], Unit]
   
-  @js.native
   trait Options extends StObject {
     
     /** registry port. Default: 443 (HTTPS) or 80 (HTTP). */
-    var port: js.UndefOr[`443` | `80`] = js.native
+    var port: js.UndefOr[`443` | `80`] = js.undefined
     
     /** registry protocol. Default: 'https'. */
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
     /** registry. Default: 'registry.npmjs.org'. */
-    var registry: js.UndefOr[String] = js.native
+    var registry: js.UndefOr[String] = js.undefined
     
     /** author username (required). */
-    var username: String = js.native
+    var username: String
   }
   object Options {
     

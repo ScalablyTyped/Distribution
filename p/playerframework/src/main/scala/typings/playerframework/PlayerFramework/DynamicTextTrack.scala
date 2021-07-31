@@ -2,19 +2,17 @@ package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicTextTrack extends StObject {
   
-  def augmentPayload(payload: js.Any, startTime: Double, endTime: Double): Unit = js.native
+  def augmentPayload(payload: js.Any, startTime: Double, endTime: Double): Unit
   
-  var label: String = js.native
+  var label: String
   
-  var language: String = js.native
+  var language: String
   
-  var stream: js.Any = js.native
+  var stream: js.Any
 }
 object DynamicTextTrack {
   

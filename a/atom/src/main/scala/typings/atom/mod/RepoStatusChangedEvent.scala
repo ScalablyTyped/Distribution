@@ -2,19 +2,17 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepoStatusChangedEvent extends StObject {
   
-  var path: String = js.native
+  var path: String
   
   /**
     *  This value can be passed to ::isStatusModified or ::isStatusNew to get more
     *  information.
     */
-  var pathStatus: Double = js.native
+  var pathStatus: Double
 }
 object RepoStatusChangedEvent {
   

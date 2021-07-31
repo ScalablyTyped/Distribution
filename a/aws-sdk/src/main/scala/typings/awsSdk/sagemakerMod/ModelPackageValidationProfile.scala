@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPackageValidationProfile extends StObject {
   
   /**
     * The name of the profile for the model package.
     */
-  var ProfileName: EntityName = js.native
+  var ProfileName: EntityName
   
   /**
     * The TransformJobDefinition object that describes the transform job used for the validation of the model package.
     */
-  var TransformJobDefinition: typings.awsSdk.sagemakerMod.TransformJobDefinition = js.native
+  var TransformJobDefinition: typings.awsSdk.sagemakerMod.TransformJobDefinition
 }
 object ModelPackageValidationProfile {
   

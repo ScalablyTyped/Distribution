@@ -6,7 +6,6 @@ import typings.mobx.internalMod.Reaction_
 import typings.mobx.mobxStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalstateMod {
@@ -63,7 +62,7 @@ object globalstateMod {
     /**
       * Globally attached error handlers that react specifically to errors in reactions
       */
-    var globalReactionErrorHandlers: js.Array[js.Function2[/* error */ _, /* derivation */ IDerivation, Unit]] = js.native
+    var globalReactionErrorHandlers: js.Array[js.Function2[/* error */ js.Any, /* derivation */ IDerivation, Unit]] = js.native
     
     /**
       * Are we in a batch block? (and how many of them)
@@ -113,7 +112,7 @@ object globalstateMod {
     /**
       * Spy callbacks
       */
-    var spyListeners: js.Array[js.Function1[/* change */ _, Unit]] = js.native
+    var spyListeners: js.Array[js.Function1[/* change */ js.Any, Unit]] = js.native
     
     var suppressReactionErrors: Boolean = js.native
     
@@ -133,13 +132,11 @@ object globalstateMod {
     var version: Double = js.native
   }
   
-  @JSImport("mobx/lib/core/globalstate", "getGlobal")
-  @js.native
-  def getGlobal(): js.Any = js.native
+  @scala.inline
+  def getGlobal(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobal")().asInstanceOf[js.Any]
   
-  @JSImport("mobx/lib/core/globalstate", "getGlobalState")
-  @js.native
-  def getGlobalState(): js.Any = js.native
+  @scala.inline
+  def getGlobalState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalState")().asInstanceOf[js.Any]
   
   @JSImport("mobx/lib/core/globalstate", "globalState")
   @js.native
@@ -147,13 +144,11 @@ object globalstateMod {
   @scala.inline
   def globalState_=(x: MobXGlobals): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalState")(x.asInstanceOf[js.Any])
   
-  @JSImport("mobx/lib/core/globalstate", "isolateGlobalState")
-  @js.native
-  def isolateGlobalState(): Unit = js.native
+  @scala.inline
+  def isolateGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isolateGlobalState")().asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/globalstate", "resetGlobalState")
-  @js.native
-  def resetGlobalState(): Unit = js.native
+  @scala.inline
+  def resetGlobalState(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalState")().asInstanceOf[Unit]
   
   type IUNCHANGED = js.Object
 }

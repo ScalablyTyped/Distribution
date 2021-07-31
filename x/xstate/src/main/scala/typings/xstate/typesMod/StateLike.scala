@@ -2,19 +2,17 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateLike[TContext] extends StObject {
   
-  var _event: typings.xstate.typesMod.SCXML.Event[EventObject] = js.native
+  var _event: typings.xstate.typesMod.SCXML.Event[EventObject]
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var event: EventObject = js.native
+  var event: EventObject
   
-  var value: StateValue = js.native
+  var value: StateValue
 }
 object StateLike {
   
@@ -30,7 +28,7 @@ object StateLike {
   }
   
   @scala.inline
-  implicit class StateLikeMutableBuilder[Self <: StateLike[_], TContext] (val x: Self with StateLike[TContext]) extends AnyVal {
+  implicit class StateLikeMutableBuilder[Self <: StateLike[?], TContext] (val x: Self & StateLike[TContext]) extends AnyVal {
     
     @scala.inline
     def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

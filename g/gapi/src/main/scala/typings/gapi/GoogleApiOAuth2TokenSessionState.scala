@@ -3,13 +3,11 @@ package typings.gapi
 import typings.gapi.anon.Authuser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiOAuth2TokenSessionState extends StObject {
   
-  var extraQueryParams: Authuser = js.native
+  var extraQueryParams: Authuser
 }
 object GoogleApiOAuth2TokenSessionState {
   

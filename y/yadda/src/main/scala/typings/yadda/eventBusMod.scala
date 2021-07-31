@@ -9,10 +9,13 @@ import typings.yadda.yaddaStrings.__ON_SCENARIO__
 import typings.yadda.yaddaStrings.__ON_STEP__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventBusMod {
+  
+  @JSImport("yadda/lib/EventBus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("yadda/lib/EventBus", "EventBus")
   @js.native
@@ -81,22 +84,20 @@ object eventBusMod {
   @js.native
   val ON_STEP: __ON_STEP__ = js.native
   
-  @JSImport("yadda/lib/EventBus", "instance")
-  @js.native
-  def instance(): EventBus = js.native
+  @scala.inline
+  def instance(): EventBus = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[EventBus]
   
-  @js.native
   trait DefineEvent extends StObject {
     
-    var data: DefineEventData = js.native
+    var data: DefineEventData
     
-    var name: __ON_DEFINE__ = js.native
+    var name: __ON_DEFINE__
   }
   object DefineEvent {
     
     @scala.inline
-    def apply(data: DefineEventData, name: __ON_DEFINE__): DefineEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(data: DefineEventData): DefineEvent = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_DEFINE__")
       __obj.asInstanceOf[DefineEvent]
     }
     
@@ -111,12 +112,11 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait DefineEventData extends StObject {
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var signature: String = js.native
+    var signature: String
   }
   object DefineEventData {
     
@@ -137,18 +137,17 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait ExecuteEvent extends StObject {
     
-    var data: ExecuteEventData = js.native
+    var data: ExecuteEventData
     
-    var name: __ON_EXECUTE__ = js.native
+    var name: __ON_EXECUTE__
   }
   object ExecuteEvent {
     
     @scala.inline
-    def apply(data: ExecuteEventData, name: __ON_EXECUTE__): ExecuteEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(data: ExecuteEventData): ExecuteEvent = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_EXECUTE__")
       __obj.asInstanceOf[ExecuteEvent]
     }
     
@@ -163,16 +162,15 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait ExecuteEventData extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var ctx: Properties = js.native
+    var ctx: Properties
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var step: String = js.native
+    var step: String
   }
   object ExecuteEventData {
     
@@ -202,18 +200,17 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait ScenarioEvent extends StObject {
     
-    var data: ScenarioEventData = js.native
+    var data: ScenarioEventData
     
-    var name: __ON_SCENARIO__ = js.native
+    var name: __ON_SCENARIO__
   }
   object ScenarioEvent {
     
     @scala.inline
-    def apply(data: ScenarioEventData, name: __ON_SCENARIO__): ScenarioEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(data: ScenarioEventData): ScenarioEvent = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_SCENARIO__")
       __obj.asInstanceOf[ScenarioEvent]
     }
     
@@ -228,12 +225,11 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait ScenarioEventData extends StObject {
     
-    var ctx: Properties = js.native
+    var ctx: Properties
     
-    var scenario: js.Array[String] = js.native
+    var scenario: js.Array[String]
   }
   object ScenarioEventData {
     
@@ -257,18 +253,17 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait StepEvent extends StObject {
     
-    var data: StepEventData = js.native
+    var data: StepEventData
     
-    var name: __ON_STEP__ = js.native
+    var name: __ON_STEP__
   }
   object StepEvent {
     
     @scala.inline
-    def apply(data: StepEventData, name: __ON_STEP__): StepEvent = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(data: StepEventData): StepEvent = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "__ON_STEP__")
       __obj.asInstanceOf[StepEvent]
     }
     
@@ -283,12 +278,11 @@ object eventBusMod {
     }
   }
   
-  @js.native
   trait StepEventData extends StObject {
     
-    var ctx: Properties = js.native
+    var ctx: Properties
     
-    var step: String = js.native
+    var step: String
   }
   object StepEventData {
     

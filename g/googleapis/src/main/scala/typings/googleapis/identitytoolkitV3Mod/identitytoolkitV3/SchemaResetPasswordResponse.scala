@@ -2,35 +2,33 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response of resetting the password.
   */
-@js.native
 trait SchemaResetPasswordResponse extends StObject {
   
   /**
     * The user&#39;s email. If the out-of-band code is for email recovery, the
     * user&#39;s original email.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#ResetPasswordResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * If the out-of-band code is for email recovery, the user&#39;s new email.
     */
-  var newEmail: js.UndefOr[String] = js.native
+  var newEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The request type.
     */
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
 }
 object SchemaResetPasswordResponse {
   

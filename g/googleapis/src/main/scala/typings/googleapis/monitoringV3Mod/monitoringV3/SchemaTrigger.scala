@@ -2,27 +2,25 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies how many time series must fail a predicate to trigger a
   * condition. If not specified, then a {count: 1} trigger is used.
   */
-@js.native
 trait SchemaTrigger extends StObject {
   
   /**
     * The absolute number of time series that must fail the predicate for the
     * condition to be triggered.
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * The percentage of time series that must fail the predicate for the
     * condition to be triggered.
     */
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
 }
 object SchemaTrigger {
   

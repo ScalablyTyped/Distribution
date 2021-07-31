@@ -4,29 +4,27 @@ import typings.agGrid.rowNodeMod.RowNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSource extends StObject {
   
-  var column: js.UndefOr[typings.agGrid.columnMod.Column] = js.native
+  var column: js.UndefOr[typings.agGrid.columnMod.Column] = js.undefined
   
-  var ePopup: HTMLElement = js.native
+  var ePopup: HTMLElement
   
-  var eventSource: HTMLElement = js.native
+  var eventSource: HTMLElement
   
-  var keepWithinBounds: js.UndefOr[Boolean] = js.native
+  var keepWithinBounds: js.UndefOr[Boolean] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var nudgeX: js.UndefOr[Double] = js.native
+  var nudgeX: js.UndefOr[Double] = js.undefined
   
-  var nudgeY: js.UndefOr[Double] = js.native
+  var nudgeY: js.UndefOr[Double] = js.undefined
   
-  var rowNode: js.UndefOr[RowNode] = js.native
+  var rowNode: js.UndefOr[RowNode] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object EventSource {
   

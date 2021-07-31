@@ -8,7 +8,6 @@ import typings.std.Date
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("baseui/datepicker", "Calendar")
@@ -59,7 +58,7 @@ class Calendar protected ()
   
   def renderQuickSelect(): ReactNode = js.native
   
-  def renderTimeSelect(value: Date, onChange: js.Function1[/* args */ js.Any, _]): ReactNode = js.native
+  def renderTimeSelect(value: Date, onChange: js.Function1[/* args */ js.Any, js.Any]): ReactNode = js.native
   
   def setHighlightedDate(date: Date): Unit = js.native
 }

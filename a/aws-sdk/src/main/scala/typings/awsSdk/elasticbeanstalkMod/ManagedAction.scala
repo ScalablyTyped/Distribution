@@ -2,36 +2,34 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedAction extends StObject {
   
   /**
     * A description of the managed action.
     */
-  var ActionDescription: js.UndefOr[String] = js.native
+  var ActionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the managed action.
     */
-  var ActionId: js.UndefOr[String] = js.native
+  var ActionId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of managed action.
     */
-  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.native
+  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.undefined
   
   /**
     * The status of the managed action. If the action is Scheduled, you can apply it immediately with ApplyEnvironmentManagedAction.
     */
-  var Status: js.UndefOr[ActionStatus] = js.native
+  var Status: js.UndefOr[ActionStatus] = js.undefined
   
   /**
     * The start time of the maintenance window in which the managed action will execute.
     */
-  var WindowStartTime: js.UndefOr[Timestamp] = js.native
+  var WindowStartTime: js.UndefOr[Timestamp] = js.undefined
 }
 object ManagedAction {
   

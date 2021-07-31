@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CombinedAudienceTargetingSetting extends StObject {
   
   /** Required. Combined audience id of combined audience targeting setting. This id is combined_audience_id. */
-  var combinedAudienceId: js.UndefOr[String] = js.native
+  var combinedAudienceId: js.UndefOr[String] = js.undefined
 }
 object CombinedAudienceTargetingSetting {
   

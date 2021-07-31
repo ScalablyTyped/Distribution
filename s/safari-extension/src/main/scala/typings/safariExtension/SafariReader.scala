@@ -2,11 +2,12 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariReader extends SafariEventTarget {
+trait SafariReader
+  extends StObject
+     with SafariEventTarget {
   
   var available: Boolean = js.native
   

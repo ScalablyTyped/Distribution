@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.footnote_open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait FootnoteOpenToken extends FootnoteGenericToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait FootnoteOpenToken
+  extends StObject
+     with FootnoteGenericToken {
   
   @JSName("type")
-  var type_FootnoteOpenToken: footnote_open = js.native
+  var type_FootnoteOpenToken: footnote_open
 }
 object FootnoteOpenToken {
   
   @scala.inline
-  def apply(id: Double, level: Double, `type`: footnote_open): FootnoteOpenToken = {
+  def apply(id: Double, level: Double): FootnoteOpenToken = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote_open")
     __obj.asInstanceOf[FootnoteOpenToken]
   }
   

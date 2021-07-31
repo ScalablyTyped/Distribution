@@ -3,50 +3,48 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ComboBox/ComboBox.types.IComboBoxStyles> */
-@js.native
 trait PartialIComboBoxStyles extends StObject {
   
-  var callout: js.UndefOr[IStyle] = js.native
+  var callout: js.UndefOr[IStyle] = js.undefined
   
-  var container: js.UndefOr[IStyle] = js.native
+  var container: js.UndefOr[IStyle] = js.undefined
   
-  var divider: js.UndefOr[IStyle] = js.native
+  var divider: js.UndefOr[IStyle] = js.undefined
   
-  var errorMessage: js.UndefOr[IStyle] = js.native
+  var errorMessage: js.UndefOr[IStyle] = js.undefined
   
-  var header: js.UndefOr[IStyle] = js.native
+  var header: js.UndefOr[IStyle] = js.undefined
   
-  var input: js.UndefOr[IStyle] = js.native
+  var input: js.UndefOr[IStyle] = js.undefined
   
-  var inputDisabled: js.UndefOr[IStyle] = js.native
+  var inputDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var label: js.UndefOr[IStyle] = js.native
+  var label: js.UndefOr[IStyle] = js.undefined
   
-  var labelDisabled: js.UndefOr[IStyle] = js.native
+  var labelDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var optionsContainer: js.UndefOr[IStyle] = js.native
+  var optionsContainer: js.UndefOr[IStyle] = js.undefined
   
-  var optionsContainerWrapper: js.UndefOr[IStyle] = js.native
+  var optionsContainerWrapper: js.UndefOr[IStyle] = js.undefined
   
-  var root: js.UndefOr[IStyle] = js.native
+  var root: js.UndefOr[IStyle] = js.undefined
   
-  var rootDisabled: js.UndefOr[IStyle] = js.native
+  var rootDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var rootDisallowFreeForm: js.UndefOr[IStyle] = js.native
+  var rootDisallowFreeForm: js.UndefOr[IStyle] = js.undefined
   
-  var rootError: js.UndefOr[IStyle] = js.native
+  var rootError: js.UndefOr[IStyle] = js.undefined
   
-  var rootFocused: js.UndefOr[IStyle] = js.native
+  var rootFocused: js.UndefOr[IStyle] = js.undefined
   
-  var rootHovered: js.UndefOr[IStyle] = js.native
+  var rootHovered: js.UndefOr[IStyle] = js.undefined
   
-  var rootPressed: js.UndefOr[IStyle] = js.native
+  var rootPressed: js.UndefOr[IStyle] = js.undefined
   
-  var screenReaderText: js.UndefOr[IStyle] = js.native
+  var screenReaderText: js.UndefOr[IStyle] = js.undefined
 }
 object PartialIComboBoxStyles {
   

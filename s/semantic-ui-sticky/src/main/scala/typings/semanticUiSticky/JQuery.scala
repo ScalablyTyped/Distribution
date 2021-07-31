@@ -32,72 +32,83 @@ import typings.semanticUiSticky.semanticUiStickyStrings.silent
 import typings.semanticUiSticky.semanticUiStickyStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def sticky(): JQuery = js.native
-  def sticky(behavior: setting, name: bottomOffset, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def sticky(behavior: setting, name: bottomOffset, value: Double): JQuery = js.native
-  def sticky(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  def sticky(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
-  def sticky(behavior: setting, name: context, value: String): JQuery = js.native
-  def sticky(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def sticky(behavior: setting, name: context, value: `false`): JQuery = js.native
-  def sticky(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  def sticky(behavior: setting, name: jitter, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def sticky(behavior: setting, name: jitter, value: Double): JQuery = js.native
-  def sticky(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sticky(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def sticky(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def sticky(behavior: setting, name: name, value: String): JQuery = js.native
-  def sticky(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def sticky(behavior: setting, name: offset, value: Double): JQuery = js.native
-  def sticky(behavior: setting, name: onBottom, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onBottom, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: onReposition, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onReposition, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: onScroll, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onScroll, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: onStick, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onStick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: onTop, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onTop, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: onUnstick, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
-  def sticky(behavior: setting, name: onUnstick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-  def sticky(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: pushing, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: pushing, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: scrollContext, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
-  def sticky(behavior: setting, name: scrollContext, value: String): JQuery = js.native
-  def sticky(behavior: setting, name: scrollContext, value: JQuery): JQuery = js.native
-  def sticky(behavior: setting, name: setSize, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: setSize, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def sticky(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def sticky(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def sticky(settings: StickySettings): JQuery = js.native
+  def sticky(): JQuery
+  def sticky(behavior: setting, name: bottomOffset, value: Double): JQuery
+  def sticky(behavior: setting, name: bottomOffset, value: Unit): Double
+  def sticky(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def sticky(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def sticky(behavior: setting, name: context, value: String): JQuery
+  def sticky(behavior: setting, name: context, value: Unit): `false` | String | JQuery
+  def sticky(behavior: setting, name: context, value: JQuery): JQuery
+  def sticky(behavior: setting, name: context, value: `false`): JQuery
+  def sticky(behavior: setting, name: debug, value: Boolean): JQuery
+  def sticky(behavior: setting, name: debug, value: Unit): Boolean
+  def sticky(behavior: setting, name: error, value: Unit): ErrorSettings
+  def sticky(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def sticky(behavior: setting, name: jitter, value: Double): JQuery
+  def sticky(behavior: setting, name: jitter, value: Unit): Double
+  def sticky(behavior: setting, name: namespace, value: String): JQuery
+  def sticky(behavior: setting, name: namespace, value: Unit): String
+  def sticky(behavior: setting, name: name, value: String): JQuery
+  def sticky(behavior: setting, name: name, value: Unit): String
+  def sticky(behavior: setting, name: observeChanges, value: Boolean): JQuery
+  def sticky(behavior: setting, name: observeChanges, value: Unit): Boolean
+  def sticky(behavior: setting, name: offset, value: Double): JQuery
+  def sticky(behavior: setting, name: offset, value: Unit): Double
+  def sticky(behavior: setting, name: onBottom, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onBottom, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: onReposition, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onReposition, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: onScroll, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onScroll, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: onStick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onStick, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: onTop, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onTop, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: onUnstick, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery
+  def sticky(behavior: setting, name: onUnstick, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit]
+  def sticky(behavior: setting, name: performance, value: Boolean): JQuery
+  def sticky(behavior: setting, name: performance, value: Unit): Boolean
+  def sticky(behavior: setting, name: pushing, value: Boolean): JQuery
+  def sticky(behavior: setting, name: pushing, value: Unit): Boolean
+  def sticky(behavior: setting, name: scrollContext, value: String): JQuery
+  def sticky(behavior: setting, name: scrollContext, value: Unit): String | JQuery
+  def sticky(behavior: setting, name: scrollContext, value: JQuery): JQuery
+  def sticky(behavior: setting, name: setSize, value: Boolean): JQuery
+  def sticky(behavior: setting, name: setSize, value: Unit): Boolean
+  def sticky(behavior: setting, name: silent, value: Boolean): JQuery
+  def sticky(behavior: setting, name: silent, value: Unit): Boolean
+  def sticky(behavior: setting, name: verbose, value: Boolean): JQuery
+  def sticky(behavior: setting, name: verbose, value: Unit): Boolean
+  def sticky(settings: StickySettings): JQuery
   @JSName("sticky")
-  def sticky_ClassNameSettings(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+  var sticky_Original: Sticky
   @JSName("sticky")
-  def sticky_ErrorSettings(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  @JSName("sticky")
-  var sticky_Original: Sticky = js.native
-  @JSName("sticky")
-  def sticky_destroy(behavior: destroy): JQuery = js.native
+  def sticky_destroy(behavior: destroy): JQuery
   /**
     * recalculates offsets
     */
   @JSName("sticky")
-  def sticky_refresh(behavior: refresh): JQuery = js.native
+  def sticky_refresh(behavior: refresh): JQuery
   @JSName("sticky")
-  def sticky_setting(behavior: setting, value: StickySettings): JQuery = js.native
+  def sticky_setting(behavior: setting, value: StickySettings): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(sticky: Sticky): JQuery = {
+    val __obj = js.Dynamic.literal(sticky = sticky.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSticky(value: Sticky): Self = StObject.set(x, "sticky", value.asInstanceOf[js.Any])
+  }
 }

@@ -2,31 +2,29 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionEvaluationSettings extends StObject {
   
   /**
     * Indicates whether subscription evaluation before saving is enabled or not
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Time interval to check on subscription evaluation job in seconds
     */
-  var interval: Double = js.native
+  var interval: Double
   
   /**
     * Threshold on the number of notifications for considering a subscription too noisy
     */
-  var threshold: Double = js.native
+  var threshold: Double
   
   /**
     * Time out for the subscription evaluation check in seconds
     */
-  var timeOut: Double = js.native
+  var timeOut: Double
 }
 object SubscriptionEvaluationSettings {
   

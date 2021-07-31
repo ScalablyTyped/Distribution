@@ -3,10 +3,8 @@ package typings.reactNativeCommunityCliTypes.anon
 import typings.reactNativeCommunityCliTypes.iosMod.IOSScriptPhase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PodspecPath extends StObject {
   
   /**
@@ -16,9 +14,9 @@ trait PodspecPath extends StObject {
     *
     * @todo Log a warning when this is used.
     */
-  var podspecPath: String = js.native
+  var podspecPath: String
   
-  var scriptPhases: js.UndefOr[js.Array[IOSScriptPhase]] = js.native
+  var scriptPhases: js.UndefOr[js.Array[IOSScriptPhase]] = js.undefined
 }
 object PodspecPath {
   

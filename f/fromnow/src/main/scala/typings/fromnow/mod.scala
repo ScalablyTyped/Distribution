@@ -3,30 +3,30 @@ package typings.fromnow
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("fromnow", JSImport.Default)
+  @JSImport("fromnow", JSImport.Namespace)
   @js.native
-  def default(date: DateOkay): String = js.native
-  @JSImport("fromnow", JSImport.Default)
-  @js.native
-  def default(date: DateOkay, opts: Options): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(date: DateOkay): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(date: DateOkay, opts: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(date.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type DateOkay = Date | String | Double
   
-  @js.native
   trait Options extends StObject {
     
-    var and: js.UndefOr[Boolean] = js.native
+    var and: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var suffix: js.UndefOr[Boolean] = js.native
+    var suffix: js.UndefOr[Boolean] = js.undefined
     
-    var zero: js.UndefOr[Boolean] = js.native
+    var zero: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

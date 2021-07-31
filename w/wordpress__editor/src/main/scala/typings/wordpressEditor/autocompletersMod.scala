@@ -6,7 +6,6 @@ import typings.wordpressComponents.autocompleteMod.Autocomplete.Completer
 import typings.wordpressEditor.wordpressEditorStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autocompletersMod {

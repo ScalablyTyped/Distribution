@@ -2,18 +2,16 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapSchedulerAppointmentOperation extends StObject {
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
   
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
-  val instance: js.Any = js.native
+  val instance: js.Any
 }
 object BootstrapSchedulerAppointmentOperation {
   

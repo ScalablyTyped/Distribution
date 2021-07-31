@@ -8,7 +8,6 @@ import typings.node.streamMod.WritableOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketMod {
@@ -47,9 +46,9 @@ object socketMod {
     def hasFinishedOutput(): Boolean = js.native
     
     def sendFrame(command: String): Writable = js.native
-    def sendFrame(command: String, headers: js.UndefOr[scala.Nothing], streamOptions: WritableOptions): Writable = js.native
     def sendFrame(command: String, headers: js.Any): Writable = js.native
     def sendFrame(command: String, headers: js.Any, streamOptions: WritableOptions): Writable = js.native
+    def sendFrame(command: String, headers: Unit, streamOptions: WritableOptions): Writable = js.native
     
     def setCommandHandler(command: String, handler: commandHandler): Unit = js.native
     
@@ -62,14 +61,15 @@ object socketMod {
     def setVersion(version: String): Unit = js.native
   }
   
-  @js.native
-  trait SocketError extends Error {
+  trait SocketError
+    extends StObject
+       with Error {
     
-    def isApplicationError(): Boolean = js.native
+    def isApplicationError(): Boolean
     
-    def isProtocolError(): Boolean = js.native
+    def isProtocolError(): Boolean
     
-    def isTransportError(): Boolean = js.native
+    def isTransportError(): Boolean
   }
   object SocketError {
     
@@ -99,22 +99,21 @@ object socketMod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var commandHandlers: js.UndefOr[CommandHandlers] = js.native
+    var commandHandlers: js.UndefOr[CommandHandlers] = js.undefined
     
-    var heartbeat: js.UndefOr[Heartbeat] = js.native
+    var heartbeat: js.UndefOr[Heartbeat] = js.undefined
     
-    var heartbeatDelayMargin: js.UndefOr[Double] = js.native
+    var heartbeatDelayMargin: js.UndefOr[Double] = js.undefined
     
-    var heartbeatOutputMargin: js.UndefOr[Double] = js.native
+    var heartbeatOutputMargin: js.UndefOr[Double] = js.undefined
     
-    var outgoingFrameStream: js.UndefOr[typings.stompit.outgoingFrameStreamMod.^] = js.native
+    var outgoingFrameStream: js.UndefOr[typings.stompit.outgoingFrameStreamMod.^] = js.undefined
     
-    var resetDisconnect: js.UndefOr[Boolean] = js.native
+    var resetDisconnect: js.UndefOr[Boolean] = js.undefined
     
-    var unknownCommand: js.UndefOr[js.Function0[Unit]] = js.native
+    var unknownCommand: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SocketOptions {
     

@@ -4,21 +4,19 @@ import typings.wegameApi.anon.ErrMsg
 import typings.wegameApi.anon.SavedFilePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavefileParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
   
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ SavedFilePath, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ SavedFilePath, Unit]] = js.undefined
   
-  var tempFilePath: String = js.native
+  var tempFilePath: String
 }
 object SavefileParams {
   

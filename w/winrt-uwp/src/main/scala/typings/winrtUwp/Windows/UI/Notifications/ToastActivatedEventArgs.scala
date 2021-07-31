@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.UI.Notifications
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Exposes a method that retrieves the arguments associated with a toast action initiated by the user. This lets the app tell which action was taken when multiple actions were exposed. */
-@js.native
 trait ToastActivatedEventArgs extends StObject {
   
   /** Gets the arguments associated with a toast action initiated by the user. This arguments string was included in the toast's XML payload. */
-  var arguments: String = js.native
+  var arguments: String
 }
 object ToastActivatedEventArgs {
   

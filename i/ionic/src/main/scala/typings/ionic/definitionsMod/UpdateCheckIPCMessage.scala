@@ -3,20 +3,20 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.`update-check`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateCheckIPCMessage extends IPCMessage {
+trait UpdateCheckIPCMessage
+  extends StObject
+     with IPCMessage {
   
-  var `type`: `update-check` = js.native
+  var `type`: `update-check`
 }
 object UpdateCheckIPCMessage {
   
   @scala.inline
-  def apply(`type`: `update-check`): UpdateCheckIPCMessage = {
+  def apply(): UpdateCheckIPCMessage = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("update-check")
     __obj.asInstanceOf[UpdateCheckIPCMessage]
   }
   

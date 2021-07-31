@@ -3,61 +3,59 @@ package typings.rmcDialog
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idialogproptypesMod {
   
-  @js.native
   trait IDialogPropTypes extends StObject {
     
-    var afterClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var animation: js.UndefOr[js.Any] = js.native
+    var animation: js.UndefOr[js.Any] = js.undefined
     
-    var bodyStyle: js.UndefOr[js.Object] = js.native
+    var bodyStyle: js.UndefOr[js.Object] = js.undefined
     
-    var children: js.UndefOr[js.Any] = js.native
+    var children: js.UndefOr[js.Any] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[js.Any] = js.native
+    var maskAnimation: js.UndefOr[js.Any] = js.undefined
     
-    var maskClosable: js.UndefOr[Boolean] = js.native
+    var maskClosable: js.UndefOr[Boolean] = js.undefined
     
-    var maskProps: js.UndefOr[js.Any] = js.native
+    var maskProps: js.UndefOr[js.Any] = js.undefined
     
-    var maskStyle: js.UndefOr[js.Object] = js.native
+    var maskStyle: js.UndefOr[js.Object] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var onAnimateLeave: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimateLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ js.Any, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var wrapClassName: js.UndefOr[String] = js.native
+    var wrapClassName: js.UndefOr[String] = js.undefined
     
-    var wrapProps: js.UndefOr[js.Any] = js.native
+    var wrapProps: js.UndefOr[js.Any] = js.undefined
     
-    var wrapStyle: js.UndefOr[js.Object] = js.native
+    var wrapStyle: js.UndefOr[js.Object] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object IDialogPropTypes {
     

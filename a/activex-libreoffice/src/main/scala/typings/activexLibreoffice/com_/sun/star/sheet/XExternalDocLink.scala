@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.ExternalDocLink
   * @since OOo 3.1
   */
-@js.native
 trait XExternalDocLink
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XIndexAccess
      with XEnumerationAccess {
   
@@ -34,7 +33,7 @@ trait XExternalDocLink
     * @see com.sun.star.sheet.FormulaToken
     * @see com.sun.star.sheet.ExternalReference
     */
-  var TokenIndex: Double = js.native
+  var TokenIndex: Double
   
   /**
     * This method adds a new sheet cache instance to the external document link for a specified sheet name. If a sheet cache instance already exists for the
@@ -45,7 +44,7 @@ trait XExternalDocLink
     * @param DynamicCache specify whether or not the cache can grow when non-cached regions are queried. If `TRUE` , querying a non-cached cell in this sheet
     * @returns {@link com.sun.star.sheet.XExternalSheetCache} sheet cache instance
     */
-  def addSheetCache(aSheetName: String, DynamicCache: Boolean): XExternalSheetCache = js.native
+  def addSheetCache(aSheetName: String, DynamicCache: Boolean): XExternalSheetCache
 }
 object XExternalDocLink {
   

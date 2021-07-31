@@ -3,25 +3,23 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlLayerOptions extends StObject {
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[Map[Element]] = js.native
+  var map: js.UndefOr[Map[Element]] = js.undefined
   
-  var preserveViewport: js.UndefOr[Boolean] = js.native
+  var preserveViewport: js.UndefOr[Boolean] = js.undefined
   
-  var screenOverlays: js.UndefOr[Boolean] = js.native
+  var screenOverlays: js.UndefOr[Boolean] = js.undefined
   
-  var suppressInfoWindows: js.UndefOr[Boolean] = js.native
+  var suppressInfoWindows: js.UndefOr[Boolean] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object KmlLayerOptions {
   

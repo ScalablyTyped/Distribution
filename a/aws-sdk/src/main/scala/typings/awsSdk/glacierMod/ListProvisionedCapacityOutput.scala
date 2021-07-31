@@ -2,16 +2,14 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProvisionedCapacityOutput extends StObject {
   
   /**
     * The response body contains the following JSON fields.
     */
-  var ProvisionedCapacityList: js.UndefOr[typings.awsSdk.glacierMod.ProvisionedCapacityList] = js.native
+  var ProvisionedCapacityList: js.UndefOr[typings.awsSdk.glacierMod.ProvisionedCapacityList] = js.undefined
 }
 object ListProvisionedCapacityOutput {
   

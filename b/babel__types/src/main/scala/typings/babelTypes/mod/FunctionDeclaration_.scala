@@ -3,14 +3,13 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.FunctionDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait FunctionDeclaration_
-  extends BlockParent
+- typings.babelTypes.mod._Node because Already inherited */ trait FunctionDeclaration_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Declaration
      with Function
      with FunctionParent
@@ -18,24 +17,24 @@ trait FunctionDeclaration_
      with Scopable
      with Statement {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var id: Identifier_ | Null = js.native
+  var id: Identifier_ | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_] = js.native
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   
-  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
-  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_FunctionDeclaration_ : FunctionDeclaration = js.native
+  var type_FunctionDeclaration_ : FunctionDeclaration
 }
 object FunctionDeclaration_ {
   
@@ -44,11 +43,10 @@ object FunctionDeclaration_ {
     async: Boolean,
     body: BlockStatement_,
     generator: Boolean,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: FunctionDeclaration
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   ): FunctionDeclaration_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], declare = null, end = null, id = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[FunctionDeclaration_]
   }
   

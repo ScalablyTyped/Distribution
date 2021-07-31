@@ -10,9 +10,9 @@ Core Storybook Components
 | ------------------ | :-------------: |
 | Full name          | @storybook/theming |
 | Keywords           | storybook |
-| # releases         | 519 |
-| # dependents       | 130 |
-| # downloads        | 102612378 |
+| # releases         | 557 |
+| # dependents       | 150 |
+| # downloads        | 124192452 |
 | # stars            | 0 |
 
 ## Links

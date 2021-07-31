@@ -5,38 +5,36 @@ import typings.mobx.reactionMod.IReactionDisposer
 import typings.mobx.utilsMod.Lambda
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whenMod {
   
-  @JSImport("mobx/lib/api/when", "when")
+  @JSImport("mobx/lib/api/when", JSImport.Namespace)
   @js.native
-  def when(predicate: js.Function0[Boolean]): Promisevoidcancelvoid = js.native
-  @JSImport("mobx/lib/api/when", "when")
-  @js.native
-  def when(predicate: js.Function0[Boolean], effect: Lambda): IReactionDisposer = js.native
-  @JSImport("mobx/lib/api/when", "when")
-  @js.native
-  def when(predicate: js.Function0[Boolean], effect: Lambda, opts: IWhenOptions): IReactionDisposer = js.native
-  @JSImport("mobx/lib/api/when", "when")
-  @js.native
-  def when(predicate: js.Function0[Boolean], opts: IWhenOptions): Promisevoidcancelvoid = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def when(predicate: js.Function0[Boolean]): Promisevoidcancelvoid = ^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any]).asInstanceOf[Promisevoidcancelvoid]
+  @scala.inline
+  def when(predicate: js.Function0[Boolean], effect: Lambda): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any], effect.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
+  @scala.inline
+  def when(predicate: js.Function0[Boolean], effect: Lambda, opts: IWhenOptions): IReactionDisposer = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any], effect.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IReactionDisposer]
+  @scala.inline
+  def when(predicate: js.Function0[Boolean], opts: IWhenOptions): Promisevoidcancelvoid = (^.asInstanceOf[js.Dynamic].applyDynamic("when")(predicate.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Promisevoidcancelvoid]
+  
   trait IWhenOptions extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ js.Any, Unit]] = js.undefined
     
     /**
       * Experimental.
       * Warns if the view doesn't track observables
       */
-    var requiresObservable: js.UndefOr[Boolean] = js.native
+    var requiresObservable: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object IWhenOptions {
     

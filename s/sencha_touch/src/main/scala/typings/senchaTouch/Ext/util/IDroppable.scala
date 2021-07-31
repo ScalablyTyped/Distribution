@@ -2,51 +2,50 @@ package typings.senchaTouch.Ext.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDroppable
-  extends typings.senchaTouch.Ext.mixin.IObservable {
+  extends StObject
+     with typings.senchaTouch.Ext.mixin.IObservable {
   
   /** [Config Option] (String) */
-  var activeCls: js.UndefOr[String] = js.native
+  var activeCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var baseCls: js.UndefOr[String] = js.native
+  var baseCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Disable the Droppable target  */
-  var disable: js.UndefOr[js.Function0[Unit]] = js.native
+  var disable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Enable the Droppable target  */
-  var enable: js.UndefOr[js.Function0[Unit]] = js.native
+  var enable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns the value of baseCls
     * @returns String
     */
-  var getBaseCls: js.UndefOr[js.Function0[String]] = js.native
+  var getBaseCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Config Option] (String) */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var hoverCls: js.UndefOr[String] = js.native
+  var hoverCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var invalidCls: js.UndefOr[String] = js.native
+  var invalidCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Method to determine whether this Component is currently disabled
     * @returns Boolean the disabled state of this Component.
     */
-  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDisabled: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Method to determine whether this Droppable is currently monitoring drag operations of Draggables
     * @returns Boolean the monitoring state of this Droppable
     */
-  var isMonitoring: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isMonitoring: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -60,15 +59,15 @@ trait IDroppable
       /* events */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.mixin.IObservable
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the value of baseCls
     * @param baseCls String The new value.
     */
-  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[String], Unit]] = js.native
+  var setBaseCls: js.UndefOr[js.Function1[/* baseCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var validDropMode: js.UndefOr[String] = js.native
+  var validDropMode: js.UndefOr[String] = js.undefined
 }
 object IDroppable {
   

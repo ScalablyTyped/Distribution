@@ -2,23 +2,21 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateJobOutput extends StObject {
   
-  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.native
+  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.undefined
   
-  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.importexportMod.JobId] = js.undefined
   
-  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.native
+  var JobType: js.UndefOr[typings.awsSdk.importexportMod.JobType] = js.undefined
   
-  var Signature: js.UndefOr[typings.awsSdk.importexportMod.Signature] = js.native
+  var Signature: js.UndefOr[typings.awsSdk.importexportMod.Signature] = js.undefined
   
-  var SignatureFileContents: js.UndefOr[typings.awsSdk.importexportMod.SignatureFileContents] = js.native
+  var SignatureFileContents: js.UndefOr[typings.awsSdk.importexportMod.SignatureFileContents] = js.undefined
   
-  var WarningMessage: js.UndefOr[typings.awsSdk.importexportMod.WarningMessage] = js.native
+  var WarningMessage: js.UndefOr[typings.awsSdk.importexportMod.WarningMessage] = js.undefined
 }
 object CreateJobOutput {
   

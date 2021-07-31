@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object AppViewBackButtonVisibility extends StObject {
   
   /** The back button is not shown and space is not reserved for it in the layout. */
   @js.native
-  sealed trait collapsed extends AppViewBackButtonVisibility
+  sealed trait collapsed
+    extends StObject
+       with AppViewBackButtonVisibility
   
   /** The back button is shown. */
   @js.native
-  sealed trait visible extends AppViewBackButtonVisibility
+  sealed trait visible
+    extends StObject
+       with AppViewBackButtonVisibility
 }

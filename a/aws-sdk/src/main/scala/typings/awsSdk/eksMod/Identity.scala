@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
   /**
     * The OpenID Connect identity provider information for the cluster.
     */
-  var oidc: js.UndefOr[OIDC] = js.native
+  var oidc: js.UndefOr[OIDC] = js.undefined
 }
 object Identity {
   

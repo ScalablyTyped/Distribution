@@ -15,48 +15,46 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGrantListEntryMod {
   
-  @js.native
   trait GrantListEntry extends StObject {
     
     /**
       * <p>A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows.</p>
       */
-    var Constraints: js.UndefOr[GrantConstraints] = js.native
+    var Constraints: js.UndefOr[GrantConstraints] = js.undefined
     
     /**
       * <p>The date and time when the grant was created.</p>
       */
-    var CreationDate: js.UndefOr[Date | String | Double] = js.native
+    var CreationDate: js.UndefOr[Date | String | Double] = js.undefined
     
     /**
       * <p>The unique identifier for the grant.</p>
       */
-    var GrantId: js.UndefOr[String] = js.native
+    var GrantId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The principal that receives the grant's permissions.</p>
       */
-    var GranteePrincipal: js.UndefOr[String] = js.native
+    var GranteePrincipal: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The AWS account under which the grant was issued.</p>
       */
-    var IssuingAccount: js.UndefOr[String] = js.native
+    var IssuingAccount: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The unique identifier for the customer master key (CMK) to which the grant applies.</p>
       */
-    var KeyId: js.UndefOr[String] = js.native
+    var KeyId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The friendly name that identifies the grant. If a name was provided in the <a>CreateGrant</a> request, that name is returned. Otherwise this value is null.</p>
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The list of operations permitted by the grant.</p>
@@ -67,12 +65,12 @@ object typesGrantListEntryMod {
         ]) | (Iterable[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>The principal that can retire the grant.</p>
       */
-    var RetiringPrincipal: js.UndefOr[String] = js.native
+    var RetiringPrincipal: js.UndefOr[String] = js.undefined
   }
   object GrantListEntry {
     
@@ -152,20 +150,21 @@ object typesGrantListEntryMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGrantListEntry extends GrantListEntry {
+  trait UnmarshalledGrantListEntry
+    extends StObject
+       with GrantListEntry {
     
     /**
       * <p>A list of key-value pairs that must be present in the encryption context of certain subsequent operations that the grant allows.</p>
       */
     @JSName("Constraints")
-    var Constraints_UnmarshalledGrantListEntry: js.UndefOr[UnmarshalledGrantConstraints] = js.native
+    var Constraints_UnmarshalledGrantListEntry: js.UndefOr[UnmarshalledGrantConstraints] = js.undefined
     
     /**
       * <p>The date and time when the grant was created.</p>
       */
     @JSName("CreationDate")
-    var CreationDate_UnmarshalledGrantListEntry: js.UndefOr[Date] = js.native
+    var CreationDate_UnmarshalledGrantListEntry: js.UndefOr[Date] = js.undefined
     
     /**
       * <p>The list of operations permitted by the grant.</p>
@@ -175,7 +174,7 @@ object typesGrantListEntryMod {
         js.Array[
           Decrypt | Encrypt | GenerateDataKey | GenerateDataKeyWithoutPlaintext | ReEncryptFrom | ReEncryptTo | CreateGrant | RetireGrant | DescribeKey | String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object UnmarshalledGrantListEntry {
     

@@ -2,15 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoNotResetEntireContent extends StObject {
   
-  var doNotResetEntireContent: Boolean = js.native
+  var doNotResetEntireContent: Boolean
   
-  var leaveUnmerged: Boolean = js.native
+  var leaveUnmerged: Boolean
 }
 object DoNotResetEntireContent {
   

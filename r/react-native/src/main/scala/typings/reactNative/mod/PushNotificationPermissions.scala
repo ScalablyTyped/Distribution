@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushNotificationPermissions extends StObject {
   
-  var alert: js.UndefOr[Boolean] = js.native
+  var alert: js.UndefOr[Boolean] = js.undefined
   
-  var badge: js.UndefOr[Boolean] = js.native
+  var badge: js.UndefOr[Boolean] = js.undefined
   
-  var sound: js.UndefOr[Boolean] = js.native
+  var sound: js.UndefOr[Boolean] = js.undefined
 }
 object PushNotificationPermissions {
   

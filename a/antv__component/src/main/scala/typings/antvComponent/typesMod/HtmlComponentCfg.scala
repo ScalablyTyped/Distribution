@@ -3,27 +3,27 @@ package typings.antvComponent.typesMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HtmlComponentCfg extends ComponentCfg {
+trait HtmlComponentCfg
+  extends StObject
+     with ComponentCfg {
   
   /**
     * 组件的 DOM 容器
     * @type {HTMLElement|string}
     */
-  var container: js.UndefOr[HTMLElement | String] = js.native
+  var container: js.UndefOr[HTMLElement | String] = js.undefined
   
   /**
     * 内部 DOM 的样式
     */
-  var domStyles: js.UndefOr[LooseObject] = js.native
+  var domStyles: js.UndefOr[LooseObject] = js.undefined
   
   /**
     * 组件的父容器
     */
-  var parent: js.UndefOr[HTMLElement | String] = js.native
+  var parent: js.UndefOr[HTMLElement | String] = js.undefined
 }
 object HtmlComponentCfg {
   

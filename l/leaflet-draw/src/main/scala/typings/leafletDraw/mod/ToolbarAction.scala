@@ -2,19 +2,17 @@ package typings.leafletDraw.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarAction extends StObject {
   
-  def callback(): Unit = js.native
+  def callback(): Unit
   
-  var context: js.Object = js.native
+  var context: js.Object
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
 }
 object ToolbarAction {
   

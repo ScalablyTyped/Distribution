@@ -5,41 +5,39 @@ import typings.vexflow.anon.End
 import typings.vexflow.anon.FillStyle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beam extends StObject {
   
-  def applyStemExtensions(): Unit = js.native
+  def applyStemExtensions(): Unit
   
-  def breakSecondaryAt(indices: js.Array[Double]): Beam = js.native
+  def breakSecondaryAt(indices: js.Array[Double]): Beam
   
-  def calculateSlope(): Unit = js.native
+  def calculateSlope(): Unit
   
-  def calculateStemDirection(notes: Note): Double = js.native
+  def calculateStemDirection(notes: Note): Double
   
-  def draw(): Boolean = js.native
+  def draw(): Boolean
   
-  def drawBeamLines(): Unit = js.native
+  def drawBeamLines(): Unit
   
-  def drawStems(): Unit = js.native
+  def drawStems(): Unit
   
-  def getBeamCount(): Double = js.native
+  def getBeamCount(): Double
   
-  def getBeamLines(duration: String): js.Array[End] = js.native
+  def getBeamLines(duration: String): js.Array[End]
   
-  def getNotes(): js.Array[StemmableNote] = js.native
+  def getNotes(): js.Array[StemmableNote]
   
-  def getSlopeY(): Double = js.native
+  def getSlopeY(): Double
   
-  def postFormat(): Beam = js.native
+  def postFormat(): Beam
   
-  def preFormat(): Beam = js.native
+  def preFormat(): Beam
   
-  def setContext(context: IRenderContext): Beam = js.native
+  def setContext(context: IRenderContext): Beam
   
-  def setStyle(style: FillStyle_): Beam = js.native
+  def setStyle(style: FillStyle_): Beam
 }
 object Beam {
   

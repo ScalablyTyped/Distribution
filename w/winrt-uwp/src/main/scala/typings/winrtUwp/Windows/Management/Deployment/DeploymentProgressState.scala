@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object DeploymentProgressState extends StObject {
   
   /** The deployment request is being processed. */
   @js.native
-  sealed trait processing extends DeploymentProgressState
+  sealed trait processing
+    extends StObject
+       with DeploymentProgressState
   
   /** The deployment request is queued. */
   @js.native
-  sealed trait queued extends DeploymentProgressState
+  sealed trait queued
+    extends StObject
+       with DeploymentProgressState
 }

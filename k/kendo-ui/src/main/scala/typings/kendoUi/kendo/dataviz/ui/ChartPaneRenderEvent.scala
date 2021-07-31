@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartPaneRenderEvent extends ChartEvent {
+trait ChartPaneRenderEvent
+  extends StObject
+     with ChartEvent {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pane: js.UndefOr[typings.kendoUi.kendo.dataviz.ChartPane] = js.native
+  var pane: js.UndefOr[typings.kendoUi.kendo.dataviz.ChartPane] = js.undefined
 }
 object ChartPaneRenderEvent {
   

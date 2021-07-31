@@ -4,7 +4,6 @@ import typings.angularCompiler.astMod.BindingType
 import typings.angularCompiler.coreMod.SecurityContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "BoundElementProperty")
@@ -52,7 +51,7 @@ class BoundElementProperty protected ()
     value: typings.angularCompiler.astMod.ASTWithSource,
     unit: String,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: js.UndefOr[scala.Nothing],
+    keySpan: Unit,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -72,7 +71,7 @@ class BoundElementProperty protected ()
     value: typings.angularCompiler.astMod.ASTWithSource,
     unit: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
-    keySpan: js.UndefOr[scala.Nothing],
+    keySpan: Unit,
     valueSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(

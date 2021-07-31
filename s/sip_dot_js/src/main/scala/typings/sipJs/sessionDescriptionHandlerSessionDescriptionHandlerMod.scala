@@ -17,7 +17,6 @@ import typings.std.RTCSessionDescription
 import typings.std.RTCSessionDescriptionInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sessionDescriptionHandlerSessionDescriptionHandlerMod {
@@ -25,7 +24,8 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
   @JSImport("sip.js/lib/platform/web/session-description-handler/session-description-handler", "SessionDescriptionHandler")
   @js.native
   class SessionDescriptionHandler protected ()
-    extends typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler {
+    extends StObject
+       with typings.sipJs.apiSessionDescriptionHandlerMod.SessionDescriptionHandler {
     /**
       * Constructor
       * @param logger - A logger
@@ -238,9 +238,9 @@ object sessionDescriptionHandlerSessionDescriptionHandlerMod {
       * @param timeout - Milliseconds after which waiting times out. No timeout if 0.
       */
     /* protected */ def waitForIceGatheringComplete(): js.Promise[Unit] = js.native
-    /* protected */ def waitForIceGatheringComplete(restart: js.UndefOr[scala.Nothing], timeout: Double): js.Promise[Unit] = js.native
     /* protected */ def waitForIceGatheringComplete(restart: Boolean): js.Promise[Unit] = js.native
     /* protected */ def waitForIceGatheringComplete(restart: Boolean, timeout: Double): js.Promise[Unit] = js.native
+    /* protected */ def waitForIceGatheringComplete(restart: Unit, timeout: Double): js.Promise[Unit] = js.native
   }
   /* static members */
   object SessionDescriptionHandler {

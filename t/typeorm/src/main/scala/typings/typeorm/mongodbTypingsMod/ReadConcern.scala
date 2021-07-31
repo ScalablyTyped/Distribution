@@ -2,13 +2,11 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadConcern extends StObject {
   
-  var level: js.UndefOr[ReadConcernLevel] = js.native
+  var level: js.UndefOr[ReadConcernLevel] = js.undefined
 }
 object ReadConcern {
   

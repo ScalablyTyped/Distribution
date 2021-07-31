@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseNamesReque
 import typings.devtoolsProtocol.mod.Protocol.IndexedDB.RequestDatabaseNamesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRequestDatabaseNamesResponse extends StObject {
   
-  var paramsType: js.Array[RequestDatabaseNamesRequest] = js.native
+  var paramsType: js.Array[RequestDatabaseNamesRequest]
   
-  var returnType: RequestDatabaseNamesResponse = js.native
+  var returnType: RequestDatabaseNamesResponse
 }
 object ReturnTypeRequestDatabaseNamesResponse {
   

@@ -7,12 +7,12 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.webSocketConnectionMod.WebSocketConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofWebSocketConnection
-  extends Instantiable2[
+  extends StObject
+     with Instantiable2[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
       WebSocketConnection
@@ -26,15 +26,15 @@ trait TypeofWebSocketConnection
      with Instantiable4[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
-      js.UndefOr[/* applicationId */ String], 
+      (/* applicationId */ String) | (/* applicationId */ Unit), 
       /* transportSessionId */ String, 
       WebSocketConnection
     ]
      with Instantiable5[
       /* connId */ String, 
       /* repoInfo */ typings.firebaseDatabase.repoInfoMod.RepoInfo, 
-      js.UndefOr[/* applicationId */ String], 
-      js.UndefOr[/* transportSessionId */ String], 
+      (/* applicationId */ String) | (/* applicationId */ Unit), 
+      (/* transportSessionId */ String) | (/* transportSessionId */ Unit), 
       /* lastSessionId */ String, 
       WebSocketConnection
     ] {

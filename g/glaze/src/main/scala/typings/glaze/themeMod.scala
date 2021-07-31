@@ -18,22 +18,23 @@ import typings.std.NonNullable
 import typings.treat.typesMod.ThemeRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeMod {
   
-  @JSImport("glaze/dist-types/theme", "createTheme")
+  @JSImport("glaze/dist-types/theme", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) with StaticTheme
-  ): RuntimeTheme = js.native
-  @JSImport("glaze/dist-types/theme", "createTheme")
-  @js.native
+    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme
+  ): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any]).asInstanceOf[RuntimeTheme]
+  @scala.inline
   def createTheme(
-    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) with StaticTheme,
+    tokens: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ThemeOrAny */ js.Any) & StaticTheme,
     localDebugName: String
-  ): RuntimeTheme = js.native
+  ): RuntimeTheme = (^.asInstanceOf[js.Dynamic].applyDynamic("createTheme")(tokens.asInstanceOf[js.Any], localDebugName.asInstanceOf[js.Any])).asInstanceOf[RuntimeTheme]
   
   object defaultTokens {
     
@@ -58,14 +59,13 @@ object themeMod {
     val shorthands: Inset = js.native
   }
   
-  @js.native
   trait CommonTheme extends StObject {
     
-    var aliases: StringDictionary[hack | Tokens[shorthands]] = js.native
+    var aliases: StringDictionary[hack | Tokens[shorthands]]
     
-    var breakpoints: js.Array[Double] = js.native
+    var breakpoints: js.Array[Double]
     
-    var shorthands: StringDictionary[js.Array[hack]] = js.native
+    var shorthands: StringDictionary[js.Array[hack]]
   }
   object CommonTheme {
     
@@ -96,10 +96,11 @@ object themeMod {
     }
   }
   
-  @js.native
-  trait RuntimeTheme extends CommonTheme {
+  trait RuntimeTheme
+    extends StObject
+       with CommonTheme {
     
-    var ref: ThemeRef = js.native
+    var ref: ThemeRef
   }
   object RuntimeTheme {
     
@@ -128,12 +129,13 @@ object themeMod {
     ]
   ]
   
-  @js.native
-  trait StaticTheme extends CommonTheme {
+  trait StaticTheme
+    extends StObject
+       with CommonTheme {
     
-    var matchers: propertyinkeyofCSSPropert = js.native
+    var matchers: propertyinkeyofCSSPropert
     
-    var scales: BorderWidth = js.native
+    var scales: BorderWidth
   }
   object StaticTheme {
     

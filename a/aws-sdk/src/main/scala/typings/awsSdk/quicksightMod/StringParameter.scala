@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringParameter extends StObject {
   
   /**
     * A display name for a string parameter.
     */
-  var Name: NonEmptyString = js.native
+  var Name: NonEmptyString
   
   /**
     * The values of a string parameter.
     */
-  var Values: StringList = js.native
+  var Values: StringList
 }
 object StringParameter {
   

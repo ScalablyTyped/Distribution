@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sagemaker {
   
-  @js.native
   trait CodeRepositoryGitConfig extends StObject {
     
-    var branch: js.UndefOr[Input[String]] = js.native
+    var branch: js.UndefOr[Input[String]] = js.undefined
     
-    var repositoryUrl: Input[String] = js.native
+    var repositoryUrl: Input[String]
     
-    var secretArn: js.UndefOr[Input[String]] = js.native
+    var secretArn: js.UndefOr[Input[String]] = js.undefined
   }
   object CodeRepositoryGitConfig {
     
@@ -46,38 +44,37 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait EndpointConfigurationDataCaptureConfig extends StObject {
     
     /**
       * The content type headers to capture. Fields are documented below.
       */
-    var captureContentTypeHeader: js.UndefOr[Input[EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader]] = js.native
+    var captureContentTypeHeader: js.UndefOr[Input[EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader]] = js.undefined
     
     /**
       * Specifies what data to capture. Fields are documented below.
       */
-    var captureOptions: Input[js.Array[Input[EndpointConfigurationDataCaptureConfigCaptureOption]]] = js.native
+    var captureOptions: Input[js.Array[Input[EndpointConfigurationDataCaptureConfigCaptureOption]]]
     
     /**
       * The URL for S3 location where the captured data is stored.
       */
-    var destinationS3Uri: Input[String] = js.native
+    var destinationS3Uri: Input[String]
     
     /**
       * Flag to enable data capture. Defaults to `false`.
       */
-    var enableCapture: js.UndefOr[Input[Boolean]] = js.native
+    var enableCapture: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Portion of data to capture. Should be between 0 and 100.
       */
-    var initialSamplingPercentage: Input[Double] = js.native
+    var initialSamplingPercentage: Input[Double]
     
     /**
       * Amazon Resource Name (ARN) of a AWS Key Management Service key that Amazon SageMaker uses to encrypt the captured data on Amazon S3.
       */
-    var kmsKeyId: js.UndefOr[Input[String]] = js.native
+    var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointConfigurationDataCaptureConfig {
     
@@ -126,18 +123,17 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader extends StObject {
     
     /**
       * The CSV content type headers to capture.
       */
-    var csvContentTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var csvContentTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The JSON content type headers to capture.
       */
-    var jsonContentTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var jsonContentTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object EndpointConfigurationDataCaptureConfigCaptureContentTypeHeader {
     
@@ -170,13 +166,12 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait EndpointConfigurationDataCaptureConfigCaptureOption extends StObject {
     
     /**
       * Specifies the data to be captured. Should be one of `Input` or `Output`.
       */
-    var captureMode: Input[String] = js.native
+    var captureMode: Input[String]
   }
   object EndpointConfigurationDataCaptureConfigCaptureOption {
     
@@ -194,38 +189,37 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait EndpointConfigurationProductionVariant extends StObject {
     
     /**
       * The size of the Elastic Inference (EI) instance to use for the production variant.
       */
-    var acceleratorType: js.UndefOr[Input[String]] = js.native
+    var acceleratorType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Initial number of instances used for auto-scaling.
       */
-    var initialInstanceCount: Input[Double] = js.native
+    var initialInstanceCount: Input[Double]
     
     /**
       * Determines initial traffic distribution among all of the models that you specify in the endpoint configuration. If unspecified, it defaults to 1.0.
       */
-    var initialVariantWeight: js.UndefOr[Input[Double]] = js.native
+    var initialVariantWeight: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of instance to start.
       */
-    var instanceType: Input[String] = js.native
+    var instanceType: Input[String]
     
     /**
       * The name of the model to use.
       */
-    var modelName: Input[String] = js.native
+    var modelName: Input[String]
     
     /**
       * The name of the variant. If omitted, this provider will assign a random, unique name.
       */
-    var variantName: js.UndefOr[Input[String]] = js.native
+    var variantName: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointConfigurationProductionVariant {
     
@@ -267,39 +261,38 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait ModelContainer extends StObject {
     
     /**
       * The DNS host name for the container.
       */
-    var containerHostname: js.UndefOr[Input[String]] = js.native
+    var containerHostname: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Environment variables for the Docker container.
       * A list of key value pairs.
       */
-    var environment: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var environment: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The registry path where the inference code image is stored in Amazon ECR.
       */
-    var image: Input[String] = js.native
+    var image: Input[String]
     
     /**
       * Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see [Using a Private Docker Registry for Real-Time Inference Containers](https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-containers-inference-private.html). see Image Config.
       */
-    var imageConfig: js.UndefOr[Input[ModelContainerImageConfig]] = js.native
+    var imageConfig: js.UndefOr[Input[ModelContainerImageConfig]] = js.undefined
     
     /**
       * The container hosts value `SingleModel/MultiModel`. The default value is `SingleModel`.
       */
-    var mode: js.UndefOr[Input[String]] = js.native
+    var mode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL for the S3 location where model artifacts are stored.
       */
-    var modelDataUrl: js.UndefOr[Input[String]] = js.native
+    var modelDataUrl: js.UndefOr[Input[String]] = js.undefined
   }
   object ModelContainer {
     
@@ -347,13 +340,12 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait ModelContainerImageConfig extends StObject {
     
     /**
       * Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: `Platform` and `Vpc`.
       */
-    var repositoryAccessMode: Input[String] = js.native
+    var repositoryAccessMode: Input[String]
   }
   object ModelContainerImageConfig {
     
@@ -371,39 +363,38 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait ModelPrimaryContainer extends StObject {
     
     /**
       * The DNS host name for the container.
       */
-    var containerHostname: js.UndefOr[Input[String]] = js.native
+    var containerHostname: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Environment variables for the Docker container.
       * A list of key value pairs.
       */
-    var environment: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var environment: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The registry path where the inference code image is stored in Amazon ECR.
       */
-    var image: Input[String] = js.native
+    var image: Input[String]
     
     /**
       * Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). For more information see [Using a Private Docker Registry for Real-Time Inference Containers](https://docs.aws.amazon.com/sagemaker/latest/dg/your-algorithms-containers-inference-private.html). see Image Config.
       */
-    var imageConfig: js.UndefOr[Input[ModelPrimaryContainerImageConfig]] = js.native
+    var imageConfig: js.UndefOr[Input[ModelPrimaryContainerImageConfig]] = js.undefined
     
     /**
       * The container hosts value `SingleModel/MultiModel`. The default value is `SingleModel`.
       */
-    var mode: js.UndefOr[Input[String]] = js.native
+    var mode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL for the S3 location where model artifacts are stored.
       */
-    var modelDataUrl: js.UndefOr[Input[String]] = js.native
+    var modelDataUrl: js.UndefOr[Input[String]] = js.undefined
   }
   object ModelPrimaryContainer {
     
@@ -451,13 +442,12 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait ModelPrimaryContainerImageConfig extends StObject {
     
     /**
       * Specifies whether the model container is in Amazon ECR or a private Docker registry accessible from your Amazon Virtual Private Cloud (VPC). Allowed values are: `Platform` and `Vpc`.
       */
-    var repositoryAccessMode: Input[String] = js.native
+    var repositoryAccessMode: Input[String]
   }
   object ModelPrimaryContainerImageConfig {
     
@@ -475,12 +465,11 @@ object sagemaker {
     }
   }
   
-  @js.native
   trait ModelVpcConfig extends StObject {
     
-    var securityGroupIds: Input[js.Array[Input[String]]] = js.native
+    var securityGroupIds: Input[js.Array[Input[String]]]
     
-    var subnets: Input[js.Array[Input[String]]] = js.native
+    var subnets: Input[js.Array[Input[String]]]
   }
   object ModelVpcConfig {
     

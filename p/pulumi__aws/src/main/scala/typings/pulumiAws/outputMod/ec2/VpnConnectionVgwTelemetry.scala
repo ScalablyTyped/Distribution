@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnectionVgwTelemetry extends StObject {
   
-  var acceptedRouteCount: Double = js.native
+  var acceptedRouteCount: Double
   
-  var lastStatusChange: String = js.native
+  var lastStatusChange: String
   
-  var outsideIpAddress: String = js.native
+  var outsideIpAddress: String
   
-  var status: String = js.native
+  var status: String
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object VpnConnectionVgwTelemetry {
   

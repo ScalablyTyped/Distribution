@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1LabelVideoRequest extends StObject {
   
   /** Required. Basic human annotation config. */
-  var basicConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] = js.native
+  var basicConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1HumanAnnotationConfig] = js.undefined
   
   /** Configuration for video event task. One of video_classification_config, object_detection_config, object_tracking_config and event_config is required. */
-  var eventConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EventConfig] = js.native
+  var eventConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1EventConfig] = js.undefined
   
   /** Required. The type of video labeling task. */
-  var feature: js.UndefOr[String] = js.native
+  var feature: js.UndefOr[String] = js.undefined
   
   /** Configuration for video object detection task. One of video_classification_config, object_detection_config, object_tracking_config and event_config is required. */
-  var objectDetectionConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ObjectDetectionConfig] = js.native
+  var objectDetectionConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ObjectDetectionConfig] = js.undefined
   
   /** Configuration for video object tracking task. One of video_classification_config, object_detection_config, object_tracking_config and event_config is required. */
-  var objectTrackingConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ObjectTrackingConfig] = js.native
+  var objectTrackingConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1ObjectTrackingConfig] = js.undefined
   
   /** Configuration for video classification task. One of video_classification_config, object_detection_config, object_tracking_config and event_config is required. */
-  var videoClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoClassificationConfig] = js.native
+  var videoClassificationConfig: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoClassificationConfig] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1LabelVideoRequest {
   

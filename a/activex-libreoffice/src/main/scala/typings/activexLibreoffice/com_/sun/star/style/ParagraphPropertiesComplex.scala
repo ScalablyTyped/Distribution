@@ -2,15 +2,13 @@ package typings.activexLibreoffice.com_.sun.star.style
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains settings for the style of paragraphs with complex text layout. */
-@js.native
 trait ParagraphPropertiesComplex extends StObject {
   
   /** contains the writing direction, as represented by the {@link com.sun.star.text.WritingMode2} constants */
-  var WritingMode: Double = js.native
+  var WritingMode: Double
 }
 object ParagraphPropertiesComplex {
   

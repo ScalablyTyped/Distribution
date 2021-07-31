@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.pdfkit.PDFKit.PDFData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataMod extends Shortcut {
@@ -12,8 +11,10 @@ object dataMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("pdfkit/js/data", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PDFData {
-    def this(data: js.Array[_]) = this()
+  class ^ protected ()
+    extends StObject
+       with PDFData {
+    def this(data: js.Array[js.Any]) = this()
   }
   @JSImport("pdfkit/js/data", JSImport.Namespace)
   @js.native

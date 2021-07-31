@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,52 +11,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object notifications {
   
-  @js.native
   trait CreateNotificationOptions extends StObject {
     
     /** A URL to the app icon mask. */
-    var appIconMaskUrl: js.UndefOr[String] = js.native
+    var appIconMaskUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Text and icons for up to two notification action buttons.
       * @deprecated Unsupported on Firefox at this time.
       */
-    var buttons: js.UndefOr[js.Array[CreateNotificationOptionsButtons]] = js.native
+    var buttons: js.UndefOr[js.Array[CreateNotificationOptionsButtons]] = js.undefined
     
     /** Alternate notification content with a lower-weight font. */
-    var contextMessage: js.UndefOr[String] = js.native
+    var contextMessage: js.UndefOr[String] = js.undefined
     
     /** A timestamp associated with the notification, in milliseconds past the epoch. */
-    var eventTime: js.UndefOr[Double] = js.native
+    var eventTime: js.UndefOr[Double] = js.undefined
     
     /** A URL to the sender's avatar, app icon, or a thumbnail for image notifications. */
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
     /** A URL to the image thumbnail for image-type notifications. */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to show UI indicating that the app will visibly respond to clicks on the body of a notification.
       */
-    var isClickable: js.UndefOr[Boolean] = js.native
+    var isClickable: js.UndefOr[Boolean] = js.undefined
     
     /** Items for multi-item notifications. */
-    var items: js.UndefOr[js.Array[NotificationItem]] = js.native
+    var items: js.UndefOr[js.Array[NotificationItem]] = js.undefined
     
     /** Main notification content. */
-    var message: String = js.native
+    var message: String
     
     /** Priority ranges from -2 to 2\. -2 is lowest priority. 2 is highest. Zero is default. */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** Current progress ranges from 0 to 100. */
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
     /** Title of the notification (e.g. sender name for email). */
-    var title: String = js.native
+    var title: String
     
     /** Which type of notification to display. */
-    var `type`: TemplateType = js.native
+    var `type`: TemplateType
   }
   object CreateNotificationOptions {
     
@@ -148,12 +146,11 @@ object notifications {
     }
   }
   
-  @js.native
   trait CreateNotificationOptionsButtons extends StObject {
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object CreateNotificationOptionsButtons {
     
@@ -177,14 +174,13 @@ object notifications {
     }
   }
   
-  @js.native
   trait NotificationItem extends StObject {
     
     /** Additional details about this item. */
-    var message: String = js.native
+    var message: String
     
     /** Title of one item of a list notification. */
-    var title: String = js.native
+    var title: String
   }
   object NotificationItem {
     
@@ -242,52 +238,51 @@ object notifications {
     def progress: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress = "progress".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.progress]
   }
   
-  @js.native
   trait UpdateNotificationOptions extends StObject {
     
     /** A URL to the app icon mask. */
-    var appIconMaskUrl: js.UndefOr[String] = js.native
+    var appIconMaskUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Text and icons for up to two notification action buttons.
       * @deprecated Unsupported on Firefox at this time.
       */
-    var buttons: js.UndefOr[js.Array[UpdateNotificationOptionsButtons]] = js.native
+    var buttons: js.UndefOr[js.Array[UpdateNotificationOptionsButtons]] = js.undefined
     
     /** Alternate notification content with a lower-weight font. */
-    var contextMessage: js.UndefOr[String] = js.native
+    var contextMessage: js.UndefOr[String] = js.undefined
     
     /** A timestamp associated with the notification, in milliseconds past the epoch. */
-    var eventTime: js.UndefOr[Double] = js.native
+    var eventTime: js.UndefOr[Double] = js.undefined
     
     /** A URL to the sender's avatar, app icon, or a thumbnail for image notifications. */
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
     /** A URL to the image thumbnail for image-type notifications. */
-    var imageUrl: js.UndefOr[String] = js.native
+    var imageUrl: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to show UI indicating that the app will visibly respond to clicks on the body of a notification.
       */
-    var isClickable: js.UndefOr[Boolean] = js.native
+    var isClickable: js.UndefOr[Boolean] = js.undefined
     
     /** Items for multi-item notifications. */
-    var items: js.UndefOr[js.Array[NotificationItem]] = js.native
+    var items: js.UndefOr[js.Array[NotificationItem]] = js.undefined
     
     /** Main notification content. */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /** Priority ranges from -2 to 2\. -2 is lowest priority. 2 is highest. Zero is default. */
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
     /** Current progress ranges from 0 to 100. */
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
     /** Title of the notification (e.g. sender name for email). */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Which type of notification to display. */
-    var `type`: js.UndefOr[TemplateType] = js.native
+    var `type`: js.UndefOr[TemplateType] = js.undefined
   }
   object UpdateNotificationOptions {
     
@@ -386,12 +381,11 @@ object notifications {
     }
   }
   
-  @js.native
   trait UpdateNotificationOptionsButtons extends StObject {
     
-    var iconUrl: js.UndefOr[String] = js.native
+    var iconUrl: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object UpdateNotificationOptionsButtons {
     

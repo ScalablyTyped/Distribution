@@ -2,34 +2,32 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A material attached to a course as part of a material set.
   */
-@js.native
 trait SchemaCourseMaterial extends StObject {
   
   /**
     * Google Drive file attachment.
     */
-  var driveFile: js.UndefOr[SchemaDriveFile] = js.native
+  var driveFile: js.UndefOr[SchemaDriveFile] = js.undefined
   
   /**
     * Google Forms attachment.
     */
-  var form: js.UndefOr[SchemaForm] = js.native
+  var form: js.UndefOr[SchemaForm] = js.undefined
   
   /**
     * Link atatchment.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * Youtube video attachment.
     */
-  var youTubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.native
+  var youTubeVideo: js.UndefOr[SchemaYouTubeVideo] = js.undefined
 }
 object SchemaCourseMaterial {
   

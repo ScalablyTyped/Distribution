@@ -2,24 +2,22 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the client which invoked the test.
   */
-@js.native
 trait SchemaClientInfo extends StObject {
   
   /**
     * The list of detailed information about client.
     */
-  var clientInfoDetails: js.UndefOr[js.Array[SchemaClientInfoDetail]] = js.native
+  var clientInfoDetails: js.UndefOr[js.Array[SchemaClientInfoDetail]] = js.undefined
   
   /**
     * Required. Client name, such as gcloud.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaClientInfo {
   

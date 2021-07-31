@@ -2,10 +2,8 @@ package typings.joi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataUriOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DataUriOptions extends StObject {
     *
     * @default true
     */
-  var paddingRequired: js.UndefOr[Boolean] = js.native
+  var paddingRequired: js.UndefOr[Boolean] = js.undefined
 }
 object DataUriOptions {
   

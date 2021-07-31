@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait BigQueryParameterType extends StObject
 object BigQueryParameterType extends StObject {
   
   @js.native
-  sealed trait BOOL extends BigQueryParameterType
+  sealed trait BOOL
+    extends StObject
+       with BigQueryParameterType
   
   @js.native
-  sealed trait FLOAT64 extends BigQueryParameterType
+  sealed trait FLOAT64
+    extends StObject
+       with BigQueryParameterType
   
   @js.native
-  sealed trait INT64 extends BigQueryParameterType
+  sealed trait INT64
+    extends StObject
+       with BigQueryParameterType
   
   @js.native
-  sealed trait STRING extends BigQueryParameterType
+  sealed trait STRING
+    extends StObject
+       with BigQueryParameterType
 }

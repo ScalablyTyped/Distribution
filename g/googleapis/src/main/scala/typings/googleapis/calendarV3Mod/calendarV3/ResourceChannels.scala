@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/calendar/v3", "calendar_v3.Resource$Channels")
@@ -30,7 +29,7 @@ class ResourceChannels protected () extends StObject {
     */
   def stop(): GaxiosPromise[Unit] = js.native
   def stop(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def stop(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceChannelsStop): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceChannelsStop, callback: BodyResponseCallback[Unit]): Unit = js.native
   def stop(

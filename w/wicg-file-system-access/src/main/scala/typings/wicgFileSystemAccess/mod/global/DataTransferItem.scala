@@ -2,13 +2,11 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataTransferItem extends StObject {
   
-  def getAsFileSystemHandle(): js.Promise[FileSystemHandle | Null] = js.native
+  def getAsFileSystemHandle(): js.Promise[FileSystemHandle | Null]
 }
 object DataTransferItem {
   

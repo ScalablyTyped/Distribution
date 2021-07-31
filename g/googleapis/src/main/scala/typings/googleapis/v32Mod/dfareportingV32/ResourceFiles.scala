@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Files")
@@ -32,7 +31,7 @@ class ResourceFiles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFile] = js.native
   def get(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def get(
@@ -62,7 +61,7 @@ class ResourceFiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaFileList] = js.native
   def list(callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFileList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceFilesList): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceFilesList, callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
   def list(

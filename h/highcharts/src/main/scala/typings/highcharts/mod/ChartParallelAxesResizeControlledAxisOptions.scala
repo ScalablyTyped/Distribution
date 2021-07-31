@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartParallelAxesResizeControlledAxisOptions extends StObject {
   
   /**
     * (Highstock) Array of axes that should move out of the way of resizing
     * being done for the current axis. If not set, the next axis will be used.
     */
-  var next: js.UndefOr[js.Array[Double | String]] = js.native
+  var next: js.UndefOr[js.Array[Double | String]] = js.undefined
   
   /**
     * (Highstock) Array of axes that should move with the current axis while
     * resizing.
     */
-  var prev: js.UndefOr[js.Array[Double | String]] = js.native
+  var prev: js.UndefOr[js.Array[Double | String]] = js.undefined
 }
 object ChartParallelAxesResizeControlledAxisOptions {
   

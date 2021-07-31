@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorConcurrentHardware extends StObject {
   
-  val hardwareConcurrency: Double = js.native
+  val hardwareConcurrency: Double
 }
 object NavigatorConcurrentHardware {
   

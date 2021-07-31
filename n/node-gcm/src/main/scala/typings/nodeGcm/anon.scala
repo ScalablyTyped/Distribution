@@ -2,19 +2,17 @@ package typings.nodeGcm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var message_id: js.UndefOr[String] = js.native
+    var message_id: js.UndefOr[String] = js.undefined
     
-    var registration_id: js.UndefOr[String] = js.native
+    var registration_id: js.UndefOr[String] = js.undefined
   }
   object Error {
     

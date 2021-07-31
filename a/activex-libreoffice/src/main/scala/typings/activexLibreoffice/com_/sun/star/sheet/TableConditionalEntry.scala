@@ -4,16 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a single condition in a conditional format.
   * @see com.sun.star.sheet.TableConditionalFormat
   */
-@js.native
 trait TableConditionalEntry
-  extends XSheetCondition
+  extends StObject
+     with XSheetCondition
      with XSheetConditionalEntry
 object TableConditionalEntry {
   

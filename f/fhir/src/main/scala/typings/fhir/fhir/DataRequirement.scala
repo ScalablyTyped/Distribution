@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a required data item
   */
-@js.native
-trait DataRequirement extends Element {
+trait DataRequirement
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'mustSupport'.
     */
-  var _mustSupport: js.UndefOr[js.Array[Element]] = js.native
+  var _mustSupport: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'profile'.
     */
-  var _profile: js.UndefOr[js.Array[Element]] = js.native
+  var _profile: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * What codes are expected
     */
-  var codeFilter: js.UndefOr[js.Array[DataRequirementCodeFilter]] = js.native
+  var codeFilter: js.UndefOr[js.Array[DataRequirementCodeFilter]] = js.undefined
   
   /**
     * What dates/date ranges are expected
     */
-  var dateFilter: js.UndefOr[js.Array[DataRequirementDateFilter]] = js.native
+  var dateFilter: js.UndefOr[js.Array[DataRequirementDateFilter]] = js.undefined
   
   /**
     * Indicates that specific structure elements are referenced by the knowledge module
     */
-  var mustSupport: js.UndefOr[js.Array[String]] = js.native
+  var mustSupport: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The profile of the required data
     */
-  var profile: js.UndefOr[js.Array[uri]] = js.native
+  var profile: js.UndefOr[js.Array[uri]] = js.undefined
   
   /**
     * The type of the required data
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object DataRequirement {
   

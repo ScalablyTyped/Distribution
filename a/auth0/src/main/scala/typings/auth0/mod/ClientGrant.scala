@@ -2,23 +2,21 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<auth0.auth0.CreateClientGrant> & {  id :string | undefined} */
-@js.native
 trait ClientGrant extends StObject {
   
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
-  var client_id: js.UndefOr[String] = js.native
+  var client_id: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the client grant.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[js.Array[String]] = js.native
+  var scope: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ClientGrant {
   

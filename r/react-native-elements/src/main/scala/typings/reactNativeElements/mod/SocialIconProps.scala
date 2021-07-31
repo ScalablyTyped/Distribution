@@ -7,10 +7,8 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialIconProps extends StObject {
   
   /**
@@ -18,110 +16,110 @@ trait SocialIconProps extends StObject {
     *
     * @default TouchableHighlight
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Creates button
     *
     * @default false
     */
-  var button: js.UndefOr[Boolean] = js.native
+  var button: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable button
     *
     * @default false
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify different font family
     *
     * @default System font bold (iOS), Sans Serif Black (android)
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Specify text styling
     */
-  var fontStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var fontStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Specify font weight of title if set as a button with a title
     *
     * @default bold (ios), black(android)
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * Icon color
     */
-  var iconColor: js.UndefOr[String] = js.native
+  var iconColor: js.UndefOr[String] = js.undefined
   
   /**
     * Icon size
     *
     * @default 24
     */
-  var iconSize: js.UndefOr[Double] = js.native
+  var iconSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Extra styling for icon component
     */
-  var iconStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var iconStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Reverses icon color scheme, setting background to white and icon to primary color
     *
     * @default false
     */
-  var light: js.UndefOr[Boolean] = js.native
+  var light: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows loading indicator
     *
     * @default false
     */
-  var loading: js.UndefOr[Boolean] = js.native
+  var loading: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default none	function	onLongPress method
     */
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * onPress method
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Adds a drop shadow, set to false to remove
     *
     * @default true
     */
-  var raised: js.UndefOr[Boolean] = js.native
+  var raised: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Button styling
     */
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Title if made into a button
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Social media type
     */
-  var `type`: SocialMediaType = js.native
+  var `type`: SocialMediaType
   
   /**
     * Specify underlayColor for TouchableHighlight
     *
     * @default 'white' if `light` prop is true, otherwise defaults to icon color.
     */
-  var underlayColor: js.UndefOr[String] = js.native
+  var underlayColor: js.UndefOr[String] = js.undefined
 }
 object SocialIconProps {
   

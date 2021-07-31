@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackgroundFetchDataOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[GetBackgroundFetchDataCompleteCallback] = js.native
+  var complete: js.UndefOr[GetBackgroundFetchDataCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[GetBackgroundFetchDataFailCallback] = js.native
+  var fail: js.UndefOr[GetBackgroundFetchDataFailCallback] = js.undefined
   
   /** 取值为 periodic */
-  var fetchType: String = js.native
+  var fetchType: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[GetBackgroundFetchDataSuccessCallback] = js.native
+  var success: js.UndefOr[GetBackgroundFetchDataSuccessCallback] = js.undefined
 }
 object GetBackgroundFetchDataOption {
   

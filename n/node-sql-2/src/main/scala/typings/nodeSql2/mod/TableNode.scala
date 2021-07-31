@@ -2,15 +2,13 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableNode extends StObject {
   
-  def join(table: TableNode): JoinTableNode = js.native
+  def join(table: TableNode): JoinTableNode
   
-  def leftJoin(table: TableNode): JoinTableNode = js.native
+  def leftJoin(table: TableNode): JoinTableNode
 }
 object TableNode {
   

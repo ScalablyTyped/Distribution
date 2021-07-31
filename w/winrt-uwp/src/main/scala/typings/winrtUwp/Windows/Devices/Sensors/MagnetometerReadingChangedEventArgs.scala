@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the magnetometer reading–changed event. */
-@js.native
 trait MagnetometerReadingChangedEventArgs extends StObject {
   
   /** Gets the current magnetometer reading. */
-  var reading: MagnetometerReading = js.native
+  var reading: MagnetometerReading
 }
 object MagnetometerReadingChangedEventArgs {
   

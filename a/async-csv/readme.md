@@ -10,9 +10,9 @@ ES7 async-await wrapper for the csv package.
 | ------------------ | :-------------: |
 | Full name          | async-csv |
 | Keywords           | csv, async, es7, csv-parser, csv-stringify, await-csv, async-csv-formatter, save-csv-to-file |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 625385 |
+| # releases         | 9 |
+| # dependents       | 5 |
+| # downloads        | 994432 |
 | # stars            | 0 |
 
 ## Links

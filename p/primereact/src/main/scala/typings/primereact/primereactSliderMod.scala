@@ -3,7 +3,6 @@ package typings.primereact
 import typings.primereact.sliderMod.SliderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object primereactSliderMod {

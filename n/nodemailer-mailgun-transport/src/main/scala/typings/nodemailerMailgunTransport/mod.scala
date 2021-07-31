@@ -1,27 +1,51 @@
 package typings.nodemailerMailgunTransport
 
+import typings.nodemailer.mod.SentMessageInfo
 import typings.nodemailer.mod.Transport
+import typings.nodemailer.nodemailerBooleans.`true`
+import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): MailgunTransport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[MailgunTransport]
+  
   @JSImport("nodemailer-mailgun-transport", JSImport.Namespace)
   @js.native
-  def apply(options: Options): MailgunTransport = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("nodemailer-mailgun-transport", "MailgunTransport")
   @js.native
-  class MailgunTransport () extends Transport
+  class MailgunTransport ()
+    extends StObject
+       with Transport {
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    override def send(
+      mail: typings.nodemailer.mailMessageMod.^,
+      callback: js.Function2[/* err */ Error | Null, /* info */ SentMessageInfo, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var verify: (js.UndefOr[
+        js.Function1[/* callback */ js.Function2[/* err */ Error | Null, `true`, Unit], Unit]
+      ]) & js.UndefOr[js.Function0[js.Promise[`true`]]] = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
+  }
   
-  @js.native
   trait AliasAuthOptions extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
   }
   object AliasAuthOptions {
     
@@ -45,12 +69,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthOptions extends StObject {
     
-    var api_key: String = js.native
+    var api_key: String
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
   }
   object AuthOptions {
     
@@ -78,18 +101,17 @@ object mod {
   
   type MailOptions = typings.nodemailer.mailerMod.Options
   
-  @js.native
   trait Options extends StObject {
     
-    var auth: AuthOptions | AliasAuthOptions = js.native
+    var auth: AuthOptions | AliasAuthOptions
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[String | Boolean] = js.native
+    var proxy: js.UndefOr[String | Boolean] = js.undefined
   }
   object Options {
     

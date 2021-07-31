@@ -2,14 +2,12 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/test-utils/createRender.RenderOptions> */
-@js.native
 trait PartialRenderOptions extends StObject {
   
-  var render: js.UndefOr[Fn0] = js.native
+  var render: js.UndefOr[Fn0] = js.undefined
 }
 object PartialRenderOptions {
   

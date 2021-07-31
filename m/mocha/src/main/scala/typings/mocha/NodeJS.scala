@@ -3,7 +3,6 @@ package typings.mocha
 import typings.mocha.Mocha.MochaGlobals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeJS {
@@ -12,7 +11,6 @@ object NodeJS {
   // Required by Mocha.Runnable, Mocha.Runner, and Mocha.Suite.
   // NOTE: Mocha *must not* have a direct dependency on @types/node.
   // tslint:disable-next-line no-empty-interface
-  @js.native
   trait EventEmitter extends StObject
   
   // Augments NodeJS's `global` object when node.d.ts is loaded

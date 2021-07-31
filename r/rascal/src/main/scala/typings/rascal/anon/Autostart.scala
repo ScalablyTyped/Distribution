@@ -2,23 +2,21 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Autostart extends StObject {
   
-  var autostart: Boolean = js.native
+  var autostart: Boolean
   
-  var evictionRunIntervalMillis: Double = js.native
+  var evictionRunIntervalMillis: Double
   
-  var idleTimeoutMillis: Double = js.native
+  var idleTimeoutMillis: Double
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var testOnBorrow: Boolean = js.native
+  var testOnBorrow: Boolean
 }
 object Autostart {
   

@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the numeral system identifiers for the supported numeral systems, as static properties. */
 @JSGlobal("Windows.Globalization.NumeralSystemIdentifiers")
 @js.native
 abstract class NumeralSystemIdentifiers ()
-  extends typings.winrtUwp.Windows.Globalization.NumeralSystemIdentifiers
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.NumeralSystemIdentifiers
 object NumeralSystemIdentifiers {
   
   @JSGlobal("Windows.Globalization.NumeralSystemIdentifiers")

@@ -3,34 +3,34 @@ package typings.auth0.mod
 import typings.auth0.auth0Strings.users_export
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExportUsersJob extends Job {
+trait ExportUsersJob
+  extends StObject
+     with Job {
   
-  var connection_id: js.UndefOr[String] = js.native
+  var connection_id: js.UndefOr[String] = js.undefined
   
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
-  var fields: js.UndefOr[js.Array[ExportUserField]] = js.native
+  var fields: js.UndefOr[js.Array[ExportUserField]] = js.undefined
   
-  var format: js.UndefOr[JobFormat] = js.native
+  var format: js.UndefOr[JobFormat] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var status: JobStatus = js.native
+  var status: JobStatus
   
-  var `type`: users_export = js.native
+  var `type`: users_export
 }
 object ExportUsersJob {
   
   @scala.inline
-  def apply(id: String, status: JobStatus, `type`: users_export): ExportUsersJob = {
+  def apply(id: String, status: JobStatus): ExportUsersJob = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("users_export")
     __obj.asInstanceOf[ExportUsersJob]
   }
   

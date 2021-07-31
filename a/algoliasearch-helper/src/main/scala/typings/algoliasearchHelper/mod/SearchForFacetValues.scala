@@ -2,21 +2,19 @@ package typings.algoliasearchHelper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SearchForFacetValues {
   
-  @js.native
   trait Hit extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var highlighted: String = js.native
+    var highlighted: String
     
-    var isRefined: Boolean = js.native
+    var isRefined: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object Hit {
     
@@ -43,12 +41,11 @@ object SearchForFacetValues {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var facetHits: js.Array[Hit] = js.native
+    var facetHits: js.Array[Hit]
     
-    var processingTimeMS: Double = js.native
+    var processingTimeMS: Double
   }
   object Result {
     

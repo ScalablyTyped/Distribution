@@ -2,21 +2,19 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Input extends StObject {
   
-  var address_n: js.Array[Double] = js.native
+  var address_n: js.Array[Double]
   
-  var amount: String = js.native
+  var amount: String
   
-  var prev_hash: String = js.native
+  var prev_hash: String
   
-  var prev_index: Double = js.native
+  var prev_index: Double
   
-  var script_type: String = js.native
+  var script_type: String
 }
 object Input {
   

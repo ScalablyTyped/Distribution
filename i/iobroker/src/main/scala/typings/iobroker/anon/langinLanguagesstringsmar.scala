@@ -2,38 +2,36 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ lang in iobroker.iobroker/objects.<global>.ioBroker.Languages ]:? string} & {  smartType :string | null | undefined,   byOn :string | null | undefined} */
-@js.native
 trait langinLanguagesstringsmar extends StObject {
   
   /** Which value to set when the ON command is issued */
-  var byOn: js.UndefOr[String | Null] = js.native
+  var byOn: js.UndefOr[String | Null] = js.undefined
   
-  var de: js.UndefOr[String] = js.native
+  var de: js.UndefOr[String] = js.undefined
   
-  var en: js.UndefOr[String] = js.native
+  var en: js.UndefOr[String] = js.undefined
   
-  var es: js.UndefOr[String] = js.native
+  var es: js.UndefOr[String] = js.undefined
   
-  var fr: js.UndefOr[String] = js.native
+  var fr: js.UndefOr[String] = js.undefined
   
-  var it: js.UndefOr[String] = js.native
+  var it: js.UndefOr[String] = js.undefined
   
-  var nl: js.UndefOr[String] = js.native
+  var nl: js.UndefOr[String] = js.undefined
   
-  var pl: js.UndefOr[String] = js.native
+  var pl: js.UndefOr[String] = js.undefined
   
-  var pt: js.UndefOr[String] = js.native
+  var pt: js.UndefOr[String] = js.undefined
   
-  var ru: js.UndefOr[String] = js.native
+  var ru: js.UndefOr[String] = js.undefined
   
   /** Which kind of device this is */
-  var smartType: js.UndefOr[String | Null] = js.native
+  var smartType: js.UndefOr[String | Null] = js.undefined
   
-  var `zh-cn`: js.UndefOr[String] = js.native
+  var `zh-cn`: js.UndefOr[String] = js.undefined
 }
 object langinLanguagesstringsmar {
   

@@ -7,25 +7,24 @@ import typings.acmeClient.acmeClientStrings.processing
 import typings.acmeClient.acmeClientStrings.valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpChallenge
-  extends ChallengeAbstract
+  extends StObject
+     with ChallengeAbstract
      with Challenge {
   
-  var token: String = js.native
+  var token: String
   
   @JSName("type")
-  var type_HttpChallenge: `http-01` = js.native
+  var type_HttpChallenge: `http-01`
 }
 object HttpChallenge {
   
   @scala.inline
-  def apply(status: pending | processing | valid | invalid, token: String, `type`: `http-01`, url: String): HttpChallenge = {
+  def apply(status: pending | processing | valid | invalid, token: String, url: String): HttpChallenge = {
     val __obj = js.Dynamic.literal(status = status.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("http-01")
     __obj.asInstanceOf[HttpChallenge]
   }
   

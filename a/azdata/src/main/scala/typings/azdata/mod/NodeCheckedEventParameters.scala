@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeCheckedEventParameters[T] extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var element: T = js.native
+  var element: T
 }
 object NodeCheckedEventParameters {
   
@@ -21,7 +19,7 @@ object NodeCheckedEventParameters {
   }
   
   @scala.inline
-  implicit class NodeCheckedEventParametersMutableBuilder[Self <: NodeCheckedEventParameters[_], T] (val x: Self with NodeCheckedEventParameters[T]) extends AnyVal {
+  implicit class NodeCheckedEventParametersMutableBuilder[Self <: NodeCheckedEventParameters[?], T] (val x: Self & NodeCheckedEventParameters[T]) extends AnyVal {
     
     @scala.inline
     def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,20 +18,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * "ExampleObject.defaultMethod( Param1 ... ParamN )"
   */
-@js.native
-trait XDefaultMethod extends XInterface {
+trait XDefaultMethod
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the name of the default method
     * @returns The `string` name of default method
     */
-  val DefaultMethodName: String = js.native
+  val DefaultMethodName: String
   
   /**
     * Returns the name of the default method
     * @returns The `string` name of default method
     */
-  def getDefaultMethodName(): String = js.native
+  def getDefaultMethodName(): String
 }
 object XDefaultMethod {
   

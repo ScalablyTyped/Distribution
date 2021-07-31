@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InforNexusConnectorProfileProperties extends StObject {
   
   /**
     *  The location of the Infor Nexus resource. 
     */
-  var instanceUrl: InstanceUrl = js.native
+  var instanceUrl: InstanceUrl
 }
 object InforNexusConnectorProfileProperties {
   

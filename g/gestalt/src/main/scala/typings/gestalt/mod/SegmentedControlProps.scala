@@ -6,21 +6,19 @@ import typings.gestalt.gestaltStrings.md
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentedControlProps extends StObject {
   
-  var items: js.Array[ReactNode] = js.native
+  var items: js.Array[ReactNode]
   
-  def onChange(args: ActiveIndex): Unit = js.native
+  def onChange(args: ActiveIndex): Unit
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var selectedItemIndex: Double = js.native
+  var selectedItemIndex: Double
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
 }
 object SegmentedControlProps {
   

@@ -2,56 +2,54 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Observer[T] extends StObject {
   
   /**
     *  Hides the identity of an observer.
     * @returns An observer that hides the identity of the specified observer.
     */
-  def asObserver(): Observer[T] = js.native
+  def asObserver(): Observer[T]
   
   /**
     *  Checks access to the observer for grammar violations. This includes checking for multiple OnError or OnCompleted calls, as well as reentrancy in any of the observer methods.
     *  If a violation is detected, an Error is thrown from the offending observer method call.
     * @returns An observer that checks callbacks invocations against the observer grammar and, if the checks pass, forwards those to the specified observer.
     */
-  def checked(): CheckedObserver[T] = js.native
+  def checked(): CheckedObserver[T]
   
-  def makeSafe(disposable: IDisposable): Observer[T] = js.native
+  def makeSafe(disposable: IDisposable): Observer[T]
   
   /**
     * Schedules the invocation of observer methods on the given scheduler.
     * @param {Scheduler} scheduler Scheduler to schedule observer messages on.
     * @returns {Observer} Observer whose messages are scheduled on the given scheduler.
     */
-  def notifyOn(scheduler: IScheduler): Observer[T] = js.native
+  def notifyOn(scheduler: IScheduler): Observer[T]
   
   /**
     * Notifies the observer of the end of the sequence.
     */
-  def onCompleted(): Unit = js.native
+  def onCompleted(): Unit
   
   /**
     * Notifies the observer that an exception has occurred.
     * @param {Any} error The error that has occurred.
     */
-  def onError(exception: js.Any): Unit = js.native
+  def onError(exception: js.Any): Unit
   
   /**
     * Notifies the observer of a new element in the sequence.
     * @param {Any} value Next element in the sequence.
     */
-  def onNext(value: T): Unit = js.native
+  def onNext(value: T): Unit
   
   /**
     *  Creates a notification callback from an observer.
     * @returns The action that forwards its input notification to the underlying observer.
     */
-  def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
+  def toNotifier(): js.Function1[/* notification */ Notification[T], Unit]
 }
 object Observer {
   
@@ -71,7 +69,7 @@ object Observer {
   }
   
   @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+  implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     @scala.inline
     def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))

@@ -6,21 +6,20 @@ import typings.googleGax.descriptorMod.Descriptor
 import typings.googleGax.gaxMod.CallSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createApiCallMod {
   
-  @JSImport("google-gax/build/src/createApiCall", "createApiCall")
+  @JSImport("google-gax/build/src/createApiCall", JSImport.Namespace)
   @js.native
-  def createApiCall(func: js.Promise[GRPCCall], settings: CallSettings): GaxCall = js.native
-  @JSImport("google-gax/build/src/createApiCall", "createApiCall")
-  @js.native
-  def createApiCall(func: js.Promise[GRPCCall], settings: CallSettings, descriptor: Descriptor): GaxCall = js.native
-  @JSImport("google-gax/build/src/createApiCall", "createApiCall")
-  @js.native
-  def createApiCall(func: GRPCCall, settings: CallSettings): GaxCall = js.native
-  @JSImport("google-gax/build/src/createApiCall", "createApiCall")
-  @js.native
-  def createApiCall(func: GRPCCall, settings: CallSettings, descriptor: Descriptor): GaxCall = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createApiCall(func: js.Promise[GRPCCall], settings: CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+  @scala.inline
+  def createApiCall(func: js.Promise[GRPCCall], settings: CallSettings, descriptor: Descriptor): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+  @scala.inline
+  def createApiCall(func: GRPCCall, settings: CallSettings): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
+  @scala.inline
+  def createApiCall(func: GRPCCall, settings: CallSettings, descriptor: Descriptor): GaxCall = (^.asInstanceOf[js.Dynamic].applyDynamic("createApiCall")(func.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], descriptor.asInstanceOf[js.Any])).asInstanceOf[GaxCall]
 }

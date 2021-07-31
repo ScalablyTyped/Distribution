@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A rule consists of a sequence of RuleTerms describing the objects to which the rule should be applied, the {@link RuleAction} which should be used on
   * the matching objects, and a parameter.
   */
-@js.native
 trait Rule extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait Rule extends StObject {
     *
     * The value can be one of the {@link RuleAction} constants.
     */
-  var Action: Double = js.native
+  var Action: Double
   
   /**
     * Some RuleActions require a parameter.
     *
     * {{table here, see documentation}}
     */
-  var Parameter: String = js.native
+  var Parameter: String
   
   /** the rule terms describing the objects to which the rule should be applied. */
-  var Terms: SafeArray[RuleTerm] = js.native
+  var Terms: SafeArray[RuleTerm]
 }
 object Rule {
   

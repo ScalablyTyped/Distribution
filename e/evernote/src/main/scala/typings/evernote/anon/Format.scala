@@ -4,23 +4,21 @@ import typings.evernote.mod.Types.QueryFormat
 import typings.evernote.mod.Types.SavedSearchScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var format: js.UndefOr[QueryFormat] = js.native
+  var format: js.UndefOr[QueryFormat] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[SavedSearchScope] = js.native
+  var scope: js.UndefOr[SavedSearchScope] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
 }
 object Format {
   

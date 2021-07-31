@@ -12,7 +12,7 @@ A highly configurable, re-usable library built on d3.js for creating clear, attr
 | Keywords           | d3, piecharts, charts, graphs |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 108914 |
+| # downloads        | 108044 |
 | # stars            | 0 |
 
 ## Links

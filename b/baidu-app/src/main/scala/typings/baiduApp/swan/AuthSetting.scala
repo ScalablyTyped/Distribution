@@ -2,38 +2,36 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSetting extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("scope.address")
-  var scopeDotaddress: String = js.native
+  var scopeDotaddress: String
   
   @JSName("scope.invoiceTitle")
-  var scopeDotinvoiceTitle: String = js.native
+  var scopeDotinvoiceTitle: String
   
   @JSName("scope.record")
-  var scopeDotrecord: String = js.native
+  var scopeDotrecord: String
   
   @JSName("scope.userInfo")
-  var scopeDotuserInfo: String = js.native
+  var scopeDotuserInfo: String
   
   @JSName("scope.userLocation")
-  var scopeDotuserLocation: String = js.native
+  var scopeDotuserLocation: String
   
   @JSName("scope.werun")
-  var scopeDotwerun: String = js.native
+  var scopeDotwerun: String
   
   @JSName("scope.writePhotosAlbum")
-  var scopeDotwritePhotosAlbum: String = js.native
+  var scopeDotwritePhotosAlbum: String
   
-  var success: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ ErrMsgResponse, Unit]] = js.undefined
 }
 object AuthSetting {
   

@@ -2,35 +2,33 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutAction extends StObject {
   
-  def getDisabledToolTip(): String = js.native
+  def getDisabledToolTip(): String
   
-  def getIsDisabledCallback(action: CalloutAction): Boolean = js.native
+  def getIsDisabledCallback(action: CalloutAction): Boolean
   
-  def getIsMenu(): Boolean = js.native
+  def getIsMenu(): Boolean
   
-  def getIsVisibleCallback(action: CalloutAction): Boolean = js.native
+  def getIsVisibleCallback(action: CalloutAction): Boolean
   
-  def getMenuEntries(): js.Array[CalloutActionMenuEntry] = js.native
+  def getMenuEntries(): js.Array[CalloutActionMenuEntry]
   
-  def getOnClickCallback(event: js.Any, action: CalloutAction): js.Any = js.native
+  def getOnClickCallback(event: js.Any, action: CalloutAction): js.Any
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def getToolTop(): String = js.native
+  def getToolTop(): String
   
-  def isEnabled(): Boolean = js.native
+  def isEnabled(): Boolean
   
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
-  def render(): Unit = js.native
+  def render(): Unit
   
-  def set(options: CalloutActionOptions): Unit = js.native
+  def set(options: CalloutActionOptions): Unit
 }
 object CalloutAction {
   

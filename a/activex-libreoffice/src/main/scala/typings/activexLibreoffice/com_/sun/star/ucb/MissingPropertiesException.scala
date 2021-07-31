@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,11 +16,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Content
   * @version 1.0
   */
-@js.native
-trait MissingPropertiesException extends Exception {
+trait MissingPropertiesException
+  extends StObject
+     with Exception {
   
   /** contains the names of the missing properties. */
-  var Properties: SafeArray[String] = js.native
+  var Properties: SafeArray[String]
 }
 object MissingPropertiesException {
   

@@ -3,22 +3,22 @@ package typings.nodeSqlParser.typesMod
 import typings.nodeSqlParser.nodeSqlParserStrings.use
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Use extends AST {
+trait Use
+  extends StObject
+     with AST {
   
-  var db: String = js.native
+  var db: String
   
-  var `type`: use = js.native
+  var `type`: use
 }
 object Use {
   
   @scala.inline
-  def apply(db: String, `type`: use): Use = {
+  def apply(db: String): Use = {
     val __obj = js.Dynamic.literal(db = db.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("use")
     __obj.asInstanceOf[Use]
   }
   

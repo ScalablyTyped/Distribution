@@ -3,19 +3,17 @@ package typings.antdMobile.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: Element = js.native
+  var icon: Element
   
-  var mode: String = js.native
+  var mode: String
   
-  def onClick(): Unit = js.native
+  def onClick(): Unit
   
-  var prefixCls: String = js.native
+  var prefixCls: String
 }
 object Icon {
   

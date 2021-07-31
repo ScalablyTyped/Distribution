@@ -4,15 +4,15 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListViewRemoveEvent extends ListViewEvent {
+trait ListViewRemoveEvent
+  extends StObject
+     with ListViewEvent {
   
-  var item: js.UndefOr[JQuery] = js.native
+  var item: js.UndefOr[JQuery] = js.undefined
   
-  var model: js.UndefOr[Model] = js.native
+  var model: js.UndefOr[Model] = js.undefined
 }
 object ListViewRemoveEvent {
   

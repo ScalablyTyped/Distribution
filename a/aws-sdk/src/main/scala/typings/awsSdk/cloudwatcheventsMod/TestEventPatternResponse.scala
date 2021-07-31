@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestEventPatternResponse extends StObject {
   
   /**
     * Indicates whether the event matches the event pattern.
     */
-  var Result: js.UndefOr[Boolean] = js.native
+  var Result: js.UndefOr[Boolean] = js.undefined
 }
 object TestEventPatternResponse {
   

@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridColumnReorderEvent extends GridEvent {
+trait GridColumnReorderEvent
+  extends StObject
+     with GridEvent {
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var newIndex: js.UndefOr[Double] = js.native
+  var newIndex: js.UndefOr[Double] = js.undefined
   
-  var oldIndex: js.UndefOr[Double] = js.native
+  var oldIndex: js.UndefOr[Double] = js.undefined
 }
 object GridColumnReorderEvent {
   

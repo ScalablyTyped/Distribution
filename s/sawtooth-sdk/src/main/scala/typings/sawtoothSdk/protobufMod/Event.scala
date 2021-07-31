@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.Event.IAttribute
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "Event")
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Event.
   * @param [properties] Properties to set
   */
-class Event () extends IEvent {
+class Event ()
+  extends StObject
+     with IEvent {
   def this(properties: IEvent) = this()
   
   /** Event attributes. */
@@ -41,6 +42,10 @@ class Event () extends IEvent {
 /* static members */
 object Event {
   
+  @JSImport("sawtooth-sdk/protobuf", "Event")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an Attribute. */
   @JSImport("sawtooth-sdk/protobuf", "Event.Attribute")
   @js.native
@@ -48,7 +53,9 @@ object Event {
     * Constructs a new Attribute.
     * @param [properties] Properties to set
     */
-  class Attribute () extends IAttribute {
+  class Attribute ()
+    extends StObject
+       with IAttribute {
     def this(properties: IAttribute) = this()
     
     /** Attribute key. */
@@ -67,18 +74,20 @@ object Event {
   }
   object Attribute {
     
+    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Attribute instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Attribute instance
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.create")
-    @js.native
-    def create(): Attribute = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.create")
-    @js.native
-    def create(properties: IAttribute): Attribute = js.native
+    @scala.inline
+    def create(): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Attribute]
+    @scala.inline
+    def create(properties: IAttribute): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
     /**
       * Decodes an Attribute message from the specified reader or buffer.
@@ -89,18 +98,14 @@ object Event {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decode")
-    @js.native
-    def decode(reader: Reader): Attribute = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Attribute = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decode")
-    @js.native
-    def decode(reader: Uint8Array): Attribute = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Attribute = js.native
+    @scala.inline
+    def decode(reader: Reader): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Attribute]
+    @scala.inline
+    def decode(reader: Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Attribute = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Attribute]
     
     /**
       * Decodes an Attribute message from the specified reader or buffer, length delimited.
@@ -110,12 +115,10 @@ object Event {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Attribute = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Attribute = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
     /**
       * Encodes the specified Attribute message. Does not implicitly {@link Event.Attribute.verify|verify} messages.
@@ -124,12 +127,10 @@ object Event {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.encode")
-    @js.native
-    def encode(message: IAttribute): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.encode")
-    @js.native
-    def encode(message: IAttribute, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IAttribute): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IAttribute, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Attribute message, length delimited. Does not implicitly {@link Event.Attribute.verify|verify} messages.
@@ -138,12 +139,10 @@ object Event {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IAttribute): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IAttribute, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IAttribute): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IAttribute, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Attribute message from a plain object. Also converts values to their respective internal types.
@@ -151,9 +150,8 @@ object Event {
       * @returns Attribute
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Attribute = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Attribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Attribute]
     
     /**
       * Creates a plain object from an Attribute message. Also converts values to other types if specified.
@@ -162,12 +160,10 @@ object Event {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.toObject")
-    @js.native
-    def toObject(message: Attribute): StringDictionary[js.Any] = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.toObject")
-    @js.native
-    def toObject(message: Attribute, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Attribute): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Attribute, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Attribute message.
@@ -175,9 +171,8 @@ object Event {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Event.Attribute.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -185,12 +180,10 @@ object Event {
     * @param [properties] Properties to set
     * @returns Event instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.create")
-  @js.native
-  def create(): Event = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.create")
-  @js.native
-  def create(properties: IEvent): Event = js.native
+  @scala.inline
+  def create(): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Event]
+  @scala.inline
+  def create(properties: IEvent): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /**
     * Decodes an Event message from the specified reader or buffer.
@@ -200,18 +193,14 @@ object Event {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.decode")
-  @js.native
-  def decode(reader: Reader): Event = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Event = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.decode")
-  @js.native
-  def decode(reader: Uint8Array): Event = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Event = js.native
+  @scala.inline
+  def decode(reader: Reader): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Event]
+  @scala.inline
+  def decode(reader: Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Event = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Event]
   
   /**
     * Decodes an Event message from the specified reader or buffer, length delimited.
@@ -220,12 +209,10 @@ object Event {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Event = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Event = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /**
     * Encodes the specified Event message. Does not implicitly {@link Event.verify|verify} messages.
@@ -233,12 +220,10 @@ object Event {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.encode")
-  @js.native
-  def encode(message: IEvent): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.encode")
-  @js.native
-  def encode(message: IEvent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEvent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEvent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Event message, length delimited. Does not implicitly {@link Event.verify|verify} messages.
@@ -246,21 +231,18 @@ object Event {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEvent): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEvent, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEvent): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEvent, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Event message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Event
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Event = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Event = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Event]
   
   /**
     * Creates a plain object from an Event message. Also converts values to other types if specified.
@@ -268,31 +250,27 @@ object Event {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.toObject")
-  @js.native
-  def toObject(message: Event): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Event.toObject")
-  @js.native
-  def toObject(message: Event, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Event): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Event, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Event message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "Event.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Attribute. */
-  @js.native
   trait IAttribute extends StObject {
     
     /** Attribute key */
-    var key: js.UndefOr[String | Null] = js.native
+    var key: js.UndefOr[String | Null] = js.undefined
     
     /** Attribute value */
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object IAttribute {
     

@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,16 +10,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
 trait BaseChoiceMap[T /* <: Answers */] extends StObject {
   
-  var Choice: typings.inquirer.choiceMod.^[T] = js.native
+  var Choice: typings.inquirer.choiceMod.^[T]
   
-  var ChoiceOptions: typings.inquirer.mod.ChoiceOptions[T] = js.native
+  var ChoiceOptions: typings.inquirer.mod.ChoiceOptions[T]
   
-  var Separator: typings.inquirer.separatorMod.^ = js.native
+  var Separator: typings.inquirer.separatorMod.^
   
-  var SeparatorOptions: typings.inquirer.mod.SeparatorOptions = js.native
+  var SeparatorOptions: typings.inquirer.mod.SeparatorOptions
 }
 object BaseChoiceMap {
   
@@ -36,7 +34,7 @@ object BaseChoiceMap {
   }
   
   @scala.inline
-  implicit class BaseChoiceMapMutableBuilder[Self <: BaseChoiceMap[_], T /* <: Answers */] (val x: Self with BaseChoiceMap[T]) extends AnyVal {
+  implicit class BaseChoiceMapMutableBuilder[Self <: BaseChoiceMap[?], T /* <: Answers */] (val x: Self & BaseChoiceMap[T]) extends AnyVal {
     
     @scala.inline
     def setChoice(value: typings.inquirer.choiceMod.^[T]): Self = StObject.set(x, "Choice", value.asInstanceOf[js.Any])

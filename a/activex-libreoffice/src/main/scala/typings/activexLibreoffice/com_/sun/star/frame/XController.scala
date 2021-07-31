@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,70 +13,71 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.awt.XWindow
   * @see XModel
   */
-@js.native
-trait XController extends XComponent {
+trait XController
+  extends StObject
+     with XComponent {
   
   /**
     * provides access to owner frame of this controller
     * @returns the frame containing this controller.
     */
-  val Frame: XFrame = js.native
+  val Frame: XFrame
   
   /**
     * provides access to currently attached model
     * @returns the currently attached model.
     */
-  val Model: XModel = js.native
+  val Model: XModel
   
   /**
     * provides access to current view status
     * @returns set of data that can be used to restore the current view status at later time by using {@link XController.restoreViewData()}
     */
-  val ViewData: js.Any = js.native
+  val ViewData: js.Any
   
   /**
     * is called to attach the controller with its managing frame.
     * @param Frame the new owner frame of this controller
     */
-  def attachFrame(Frame: XFrame): Unit = js.native
+  def attachFrame(Frame: XFrame): Unit
   
   /**
     * is called to attach the controller to a new model.
     * @param Model the new model for this controller
     * @returns `TRUE` if attach was successfully ; `FALSE` otherwise
     */
-  def attachModel(Model: XModel): Boolean = js.native
+  def attachModel(Model: XModel): Boolean
   
   /**
     * provides access to owner frame of this controller
     * @returns the frame containing this controller.
     */
-  def getFrame(): XFrame = js.native
+  def getFrame(): XFrame
   
   /**
     * provides access to currently attached model
     * @returns the currently attached model.
     */
-  def getModel(): XModel = js.native
+  def getModel(): XModel
   
   /**
     * provides access to current view status
     * @returns set of data that can be used to restore the current view status at later time by using {@link XController.restoreViewData()}
     */
-  def getViewData(): js.Any = js.native
+  def getViewData(): js.Any
   
   /**
     * restores the view status using the data gotten from a previous call to {@link XController.getViewData()} .
     * @param Data set of data to restore it
     */
-  def restoreViewData(Data: js.Any): Unit = js.native
+  def restoreViewData(Data: js.Any): Unit
   
   /**
     * is called to prepare the controller for closing the view
     * @param Suspend `TRUE` force the controller to suspend its work `FALSE` try to reactivate the controller
     * @returns `TRUE` if request was accepted and of course successfully finished ; `FALSE` otherwise
     */
-  def suspend(Suspend: Boolean): Boolean = js.native
+  def suspend(Suspend: Boolean): Boolean
 }
 object XController {
   

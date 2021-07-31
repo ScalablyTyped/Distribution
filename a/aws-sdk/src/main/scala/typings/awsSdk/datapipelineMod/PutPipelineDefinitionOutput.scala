@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutPipelineDefinitionOutput extends StObject {
   
   /**
     * Indicates whether there were validation errors, and the pipeline definition is stored but cannot be activated until you correct the pipeline and call PutPipelineDefinition to commit the corrected pipeline.
     */
-  var errored: Boolean = js.native
+  var errored: Boolean
   
   /**
     * The validation errors that are associated with the objects defined in pipelineObjects.
     */
-  var validationErrors: js.UndefOr[ValidationErrors] = js.native
+  var validationErrors: js.UndefOr[ValidationErrors] = js.undefined
   
   /**
     * The validation warnings that are associated with the objects defined in pipelineObjects.
     */
-  var validationWarnings: js.UndefOr[ValidationWarnings] = js.native
+  var validationWarnings: js.UndefOr[ValidationWarnings] = js.undefined
 }
 object PutPipelineDefinitionOutput {
   

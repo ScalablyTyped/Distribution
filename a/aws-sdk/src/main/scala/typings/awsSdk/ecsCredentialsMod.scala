@@ -4,7 +4,6 @@ import typings.awsSdk.anon.Timeout
 import typings.awsSdk.remoteCredentialsMod.RemoteCredentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecsCredentialsMod {
@@ -19,12 +18,11 @@ object ecsCredentialsMod {
     def this(options: ECSCredentialsOptions) = this()
   }
   
-  @js.native
   trait ECSCredentialsOptions extends StObject {
     
-    var httpOptions: js.UndefOr[Timeout] = js.native
+    var httpOptions: js.UndefOr[Timeout] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
   }
   object ECSCredentialsOptions {
     

@@ -2,15 +2,13 @@ package typings.cordovaPluginFileTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A FileTransferError object is passed to an error callback when an error occurs. */
-@js.native
 trait FileTransferError extends StObject {
   
   /* Response body. This attribute is only available when a response is received from the HTTP connection. */
-  var body: String = js.native
+  var body: String
   
   /**
     * One of the predefined error codes listed below.
@@ -20,19 +18,19 @@ trait FileTransferError extends StObject {
     *     FileTransferError.ABORT_ERR
     *     FileTransferError.NOT_MODIFIED_ERR
     */
-  var code: Double = js.native
+  var code: Double
   
   /* Exception that is thrown by native code */
-  var exception: js.Any = js.native
+  var exception: js.Any
   
   /** HTTP status code. This attribute is only available when a response code is received from the HTTP connection. */
-  var http_status: Double = js.native
+  var http_status: Double
   
   /** URL to the source. */
-  var source: String = js.native
+  var source: String
   
   /** URL to the target. */
-  var target: String = js.native
+  var target: String
 }
 object FileTransferError {
   

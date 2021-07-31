@@ -3,7 +3,6 @@ package typings.playcanvas.mod
 import typings.playcanvas.anon.Atlas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,7 +36,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Sprite")
 @js.native
 class Sprite protected ()
-  extends typings.playcanvas.pc.Sprite {
+  extends StObject
+     with typings.playcanvas.pc.Sprite {
   def this(device: typings.playcanvas.pc.GraphicsDevice) = this()
   def this(device: typings.playcanvas.pc.GraphicsDevice, options: Atlas) = this()
 }

@@ -6,23 +6,21 @@ import typings.rockset.rocksetStrings.ERROR
 import typings.rockset.rocksetStrings.REPLACED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentStatus extends StObject {
   
   // collection name
-  var _collection: js.UndefOr[String] = js.native
+  var _collection: js.UndefOr[String] = js.undefined
   
   // unique document ID
-  var _id: js.UndefOr[String] = js.native
+  var _id: js.UndefOr[String] = js.undefined
   
   // error message, if any
-  var error: js.UndefOr[ErrorModel] = js.native
+  var error: js.UndefOr[ErrorModel] = js.undefined
   
   // status, one of ADDED, REPLACED, DELETED, ERROR
-  var status: js.UndefOr[ADDED | REPLACED | DELETED | ERROR] = js.native
+  var status: js.UndefOr[ADDED | REPLACED | DELETED | ERROR] = js.undefined
 }
 object DocumentStatus {
   

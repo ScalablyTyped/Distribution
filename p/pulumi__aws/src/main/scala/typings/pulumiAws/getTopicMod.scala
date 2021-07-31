@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getTopicMod {
   
-  @JSImport("@pulumi/aws/sns/getTopic", "getTopic")
+  @JSImport("@pulumi/aws/sns/getTopic", JSImport.Namespace)
   @js.native
-  def getTopic(args: GetTopicArgs): js.Promise[GetTopicResult] = js.native
-  @JSImport("@pulumi/aws/sns/getTopic", "getTopic")
-  @js.native
-  def getTopic(args: GetTopicArgs, opts: InvokeOptions): js.Promise[GetTopicResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getTopic(args: GetTopicArgs): js.Promise[GetTopicResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTopicResult]]
+  @scala.inline
+  def getTopic(args: GetTopicArgs, opts: InvokeOptions): js.Promise[GetTopicResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTopic")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTopicResult]]
+  
   trait GetTopicArgs extends StObject {
     
     /**
       * The friendly name of the topic to match.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetTopicArgs {
     
@@ -39,20 +39,19 @@ object getTopicMod {
     }
   }
   
-  @js.native
   trait GetTopicResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the found topic, suitable for referencing in other resources that support SNS topics.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetTopicResult {
     

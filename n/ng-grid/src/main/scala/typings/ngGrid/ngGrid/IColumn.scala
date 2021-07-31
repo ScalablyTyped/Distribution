@@ -2,95 +2,93 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumn extends StObject {
   
-  var aggLabelFilter: js.Any = js.native
+  var aggLabelFilter: js.Any
   
-  var cellClass: String = js.native
+  var cellClass: String
   
-  var cellEditableCondition: js.Any = js.native
+  var cellEditableCondition: js.Any
   
-  var cellFilter: js.Any = js.native
+  var cellFilter: js.Any
   
-  var cellTemplate: String = js.native
+  var cellTemplate: String
   
-  var colDef: IColumnDef = js.native
+  var colDef: IColumnDef
   
-  def copy(): IColumn = js.native
+  def copy(): IColumn
   
-  var cursor: String = js.native
+  var cursor: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var enableCellEdit: Boolean = js.native
+  var enableCellEdit: Boolean
   
-  var field: String = js.native
+  var field: String
   
-  def gripClick(): js.Any = js.native
+  def gripClick(): js.Any
   
-  def gripOnMouseDown(event: js.Any): js.Any = js.native
+  def gripOnMouseDown(event: js.Any): js.Any
   
-  def gripOnMouseUp(event: js.Any): Unit = js.native
+  def gripOnMouseUp(event: js.Any): Unit
   
-  var groupIndex: Double = js.native
+  var groupIndex: Double
   
-  var groupable: Boolean = js.native
+  var groupable: Boolean
   
-  def groupedByClass(): String = js.native
+  def groupedByClass(): String
   
-  var headerCellTemplate: String = js.native
+  var headerCellTemplate: String
   
-  var headerClass: String = js.native
+  var headerClass: String
   
-  var headerRowHeight: Double = js.native
+  var headerRowHeight: Double
   
-  var index: Double = js.native
+  var index: Double
   
-  var isAggCol: Boolean = js.native
+  var isAggCol: Boolean
   
-  var isGroupedBy: Boolean = js.native
+  var isGroupedBy: Boolean
   
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
-  var minWidth: Double = js.native
+  var minWidth: Double
   
-  def noSortVisible(): Boolean = js.native
+  def noSortVisible(): Boolean
   
-  def onMouseMove(event: js.Any): Unit = js.native
+  def onMouseMove(event: js.Any): Unit
   
-  var originalIndex: Double = js.native
+  var originalIndex: Double
   
-  var pinnable: Boolean = js.native
+  var pinnable: Boolean
   
-  var pinned: Boolean = js.native
+  var pinned: Boolean
   
-  var resizable: Boolean = js.native
+  var resizable: Boolean
   
-  def setVars(fromCol: IColumn): Unit = js.native
+  def setVars(fromCol: IColumn): Unit
   
-  def showSortButtonDown(): Boolean = js.native
+  def showSortButtonDown(): Boolean
   
-  def showSortButtonUp(): Boolean = js.native
+  def showSortButtonUp(): Boolean
   
-  def sort(event: js.Any): Boolean = js.native
+  def sort(event: js.Any): Boolean
   
-  var sortDirection: String = js.native
+  var sortDirection: String
   
-  var sortPriority: Double = js.native
+  var sortPriority: Double
   
-  var sortable: Boolean = js.native
+  var sortable: Boolean
   
-  var sortingAlgorithm: js.Function = js.native
+  var sortingAlgorithm: js.Function
   
-  def toggleVisible(): Unit = js.native
+  def toggleVisible(): Unit
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object IColumn {
   

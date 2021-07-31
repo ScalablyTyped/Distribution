@@ -10,7 +10,6 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -91,13 +90,13 @@ trait VertexIteratorAccessor extends StObject {
     * @param [d] - The fourth component value (if applicable).
     */
   def set(a: Double): Unit = js.native
-  def set(a: Double, b: js.UndefOr[scala.Nothing], c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
-  def set(a: Double, b: js.UndefOr[scala.Nothing], c: Double): Unit = js.native
-  def set(a: Double, b: js.UndefOr[scala.Nothing], c: Double, d: Double): Unit = js.native
   def set(a: Double, b: Double): Unit = js.native
-  def set(a: Double, b: Double, c: js.UndefOr[scala.Nothing], d: Double): Unit = js.native
   def set(a: Double, b: Double, c: Double): Unit = js.native
   def set(a: Double, b: Double, c: Double, d: Double): Unit = js.native
+  def set(a: Double, b: Double, c: Unit, d: Double): Unit = js.native
+  def set(a: Double, b: Unit, c: Double): Unit = js.native
+  def set(a: Double, b: Unit, c: Double, d: Double): Unit = js.native
+  def set(a: Double, b: Unit, c: Unit, d: Double): Unit = js.native
   
   /**
     * Write attribute components from an input array.

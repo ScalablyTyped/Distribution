@@ -27,7 +27,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Time
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,21 +34,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDataProvider
   * @see DataProvider
   */
-@js.native
 trait XDatabaseDataProvider
-  extends XRowSet
+  extends StObject
      with XDataProvider
      with XRangeXMLConversion
      with XInitialization
      with XComponent
      with XPropertySet
-     with XParameters {
+     with XParameters
+     with XRowSet {
   
   /** specifies the active connection which is used to create the resulting report. */
-  var ActiveConnection: XConnection = js.native
+  var ActiveConnection: XConnection
   
   /** indicates whether the filter should be applied or not, default is `FALSE` . */
-  var ApplyFilter: Boolean = js.native
+  var ApplyFilter: Boolean
   
   /**
     * is the command which should be executed, the type of command depends on the CommandType.
@@ -60,7 +59,7 @@ trait XDatabaseDataProvider
     * switching it to `FALSE` , you can pass backend-specific SQL statements, which are not standard SQL, to your database.
     * @see com.sun.star.sdb.CommandType
     */
-  var Command: String = js.native
+  var Command: String
   
   /**
     * specifies the type of the command to be executed to retrieve a result set.
@@ -70,10 +69,10 @@ trait XDatabaseDataProvider
     * This property is only meaningful together with the {@link Command} property, thus either **both** or **none** of them are present.
     * @see com.sun.star.sdb.CommandType
     */
-  var CommandType: Double = js.native
+  var CommandType: Double
   
   /** is the name of the data source to use, this could be a named data source or the URL of a data access component. */
-  var DataSourceName: String = js.native
+  var DataSourceName: String
   
   /**
     * is used for subreports and contains the names of the columns of the subreport which are related to the master fields of the parent report.
@@ -89,7 +88,7 @@ trait XDatabaseDataProvider
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var DetailFields: SafeArray[String] = js.native
+  var DetailFields: SafeArray[String]
   
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
@@ -100,7 +99,7 @@ trait XDatabaseDataProvider
     * This property is usually present together with the {@link Command} and {@link CommandType} properties, and is evaluated if and only if {@link
     * CommandType} equals CommandType::COMMAND.
     */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
   
   /**
     * specifies an additional filter to optionally use.
@@ -114,13 +113,13 @@ trait XDatabaseDataProvider
     * @see com.sun.star.sdb.RowSet
     * @see ResultSet
     */
-  var Filter: String = js.native
+  var Filter: String
   
   /** additional group by for the row set */
-  var GroupBy: String = js.native
+  var GroupBy: String
   
   /** additional having clause for the row set */
-  var HavingClause: String = js.native
+  var HavingClause: String
   
   /**
     * is used for subreports and contains the names of columns of the parent report.
@@ -130,17 +129,17 @@ trait XDatabaseDataProvider
     *
     * If the report is no sub report (e.g. its parent is not a report itself), this property is not evaluated.
     */
-  var MasterFields: SafeArray[String] = js.native
+  var MasterFields: SafeArray[String]
   
   /** is a additional sort order definition for a row set. */
-  var Order: String = js.native
+  var Order: String
   
   /**
     * specifies the maximal count of rows which should be fetched.
     *
     * A value of zero implies that no limit exists.
     */
-  var RowLimit: Double = js.native
+  var RowLimit: Double
 }
 object XDatabaseDataProvider {
   
@@ -188,7 +187,7 @@ object XDatabaseDataProvider {
     getRangeSelection: () => XRangeSelection,
     getRow: () => Double,
     getStatement: () => XInterface,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     isAfterLast: () => Boolean,
     isBeforeFirst: () => Boolean,
     isFirst: () => Boolean,

@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the settings for a frame in a variable photo sequence. */
-@js.native
 trait FrameController extends StObject {
   
   /** Gets the exposure compensation settings for a frame in a variable photo sequence. */
-  var exposureCompensationControl: FrameExposureCompensationControl = js.native
+  var exposureCompensationControl: FrameExposureCompensationControl
   
   /** Gets the exposure settings for a frame in a variable photo sequence. */
-  var exposureControl: FrameExposureControl = js.native
+  var exposureControl: FrameExposureControl
   
   /** Gets the flash settings for a frame in a variable photo sequence. */
-  var flashControl: FrameFlashControl = js.native
+  var flashControl: FrameFlashControl
   
   /** Gets the focus settings for a frame in a variable photo sequence. */
-  var focusControl: FrameFocusControl = js.native
+  var focusControl: FrameFocusControl
   
   /** Gets the ISO speed settings for a frame in a variable photo sequence. */
-  var isoSpeedControl: FrameIsoSpeedControl = js.native
+  var isoSpeedControl: FrameIsoSpeedControl
   
   /** Gets or sets whether photo confirmation is enabled for a frame in a variable photo sequence. */
-  var photoConfirmationEnabled: Boolean = js.native
+  var photoConfirmationEnabled: Boolean
 }
 object FrameController {
   

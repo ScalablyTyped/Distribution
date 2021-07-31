@@ -10,9 +10,9 @@ Traverse JSON Schema passing each schema object to callback
 | ------------------ | :-------------: |
 | Full name          | json-schema-traverse |
 | Keywords           | JSON-Schema, traverse, iterate |
-| # releases         | 0 |
-| # dependents       | 108 |
-| # downloads        | 906111153 |
+| # releases         | 3 |
+| # dependents       | 142 |
+| # downloads        | 998411547 |
 | # stars            | 0 |
 
 ## Links

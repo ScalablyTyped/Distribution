@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGroupValueMetadata extends StObject {
   
   /** True if the data corresponding to the value is collapsed. */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /** The calculated value the metadata corresponds to. (Note that formulaValue is not valid, because the values will be calculated.) */
-  var value: js.UndefOr[ExtendedValue] = js.native
+  var value: js.UndefOr[ExtendedValue] = js.undefined
 }
 object PivotGroupValueMetadata {
   

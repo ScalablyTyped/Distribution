@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Scroller extends Widget_ {
+trait Scroller
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -58,20 +59,19 @@ trait Scroller extends Widget_ {
 }
 object Scroller {
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -104,16 +104,15 @@ object Scroller {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -140,110 +139,109 @@ object Scroller {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the swipe scrolling speed(in millisecond).
       * @Default {600}
       */
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Set true to hides the scrollbar, when mouseout the content area.
       * @Default {false}
       */
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height and width of button in the scrollbar.
       * @Default {18}
       */
-    var buttonSize: js.UndefOr[Double] = js.native
+    var buttonSize: js.UndefOr[Double] = js.undefined
     
     /** Fires when Scroller control is created.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Fires when Scroller control is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Save current model value to browser cookies for state maintenance. While refresh the page Rating control values are retained.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Indicates the Right to Left direction to scroller
       * @Default {undefined}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Enables or Disable the touch Scroll
       * @Default {true}
       */
-    var enableTouchScroll: js.UndefOr[Boolean] = js.native
+    var enableTouchScroll: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies to enable or disable the scroller
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of Scroll panel and scrollbars.
       * @Default {250}
       */
-    var height: js.UndefOr[Double | String] = js.native
+    var height: js.UndefOr[Double | String] = js.undefined
     
     /** The Scroller content and scrollbars move left with given value.
       * @Default {0}
       */
-    var scrollLeft: js.UndefOr[Double] = js.native
+    var scrollLeft: js.UndefOr[Double] = js.undefined
     
     /** While press on the arrow key the scrollbar position added to the given pixel value.
       * @Default {57}
       */
-    var scrollOneStepBy: js.UndefOr[Double] = js.native
+    var scrollOneStepBy: js.UndefOr[Double] = js.undefined
     
     /** The Scroller content and scrollbars move to top position with specified value.
       * @Default {0}
       */
-    var scrollTop: js.UndefOr[Double] = js.native
+    var scrollTop: js.UndefOr[Double] = js.undefined
     
     /** If the scrollbar has vertical it set as width, else it will set as height of the handler.
       * @Default {18}
       */
-    var scrollerSize: js.UndefOr[Double] = js.native
+    var scrollerSize: js.UndefOr[Double] = js.undefined
     
     /** Indicates the target area to which scroller have to appear.
       * @Default {null}
       */
-    var targetPane: js.UndefOr[String] = js.native
+    var targetPane: js.UndefOr[String] = js.undefined
     
     /** Fires when a thumb point is removed from the touch surface.
       */
-    var thumbEnd: js.UndefOr[js.Function1[/* e */ ThumbEndEventArgs, Unit]] = js.native
+    var thumbEnd: js.UndefOr[js.Function1[/* e */ ThumbEndEventArgs, Unit]] = js.undefined
     
     /** Fires when a thumb point is moved along the touch surface.
       */
-    var thumbMove: js.UndefOr[js.Function1[/* e */ ThumbMoveEventArgs, Unit]] = js.native
+    var thumbMove: js.UndefOr[js.Function1[/* e */ ThumbMoveEventArgs, Unit]] = js.undefined
     
     /** Fires when a thumb point is placed on the touch surface.
       */
-    var thumbStart: js.UndefOr[js.Function1[/* e */ ThumbStartEventArgs, Unit]] = js.native
+    var thumbStart: js.UndefOr[js.Function1[/* e */ ThumbStartEventArgs, Unit]] = js.undefined
     
     /** It fires whenever the mouse wheel is rotated either in upwards or downwards.
       */
-    var wheelMove: js.UndefOr[js.Function1[/* e */ WheelMoveEventArgs, Unit]] = js.native
+    var wheelMove: js.UndefOr[js.Function1[/* e */ WheelMoveEventArgs, Unit]] = js.undefined
     
     /** It will fire when mouse trackball has been start to wheel.
       */
-    var wheelStart: js.UndefOr[js.Function1[/* e */ WheelStartEventArgs, Unit]] = js.native
+    var wheelStart: js.UndefOr[js.Function1[/* e */ WheelStartEventArgs, Unit]] = js.undefined
     
     /** It will fire when mouse trackball has been stop to wheel.
       */
-    var wheelStop: js.UndefOr[js.Function1[/* e */ WheelStopEventArgs, Unit]] = js.native
+    var wheelStop: js.UndefOr[js.Function1[/* e */ WheelStopEventArgs, Unit]] = js.undefined
     
     /** Specifies the width of Scroll panel and scrollbars.
       * @Default {0}
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object Model {
     
@@ -390,28 +388,27 @@ object Scroller {
     }
   }
   
-  @js.native
   trait ThumbEndEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.native
+    var scrollData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ThumbEndEventArgs {
     
@@ -456,28 +453,27 @@ object Scroller {
     }
   }
   
-  @js.native
   trait ThumbMoveEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.native
+    var scrollData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ThumbMoveEventArgs {
     
@@ -522,28 +518,27 @@ object Scroller {
     }
   }
   
-  @js.native
   trait ThumbStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.native
+    var scrollData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ThumbStartEventArgs {
     
@@ -588,20 +583,19 @@ object Scroller {
     }
   }
   
-  @js.native
   trait WheelMoveEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
   }
   object WheelMoveEventArgs {
     
@@ -634,28 +628,27 @@ object Scroller {
     }
   }
   
-  @js.native
   trait WheelStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current data related to the event.
       */
-    var scrollData: js.UndefOr[js.Any] = js.native
+    var scrollData: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WheelStartEventArgs {
     
@@ -700,24 +693,23 @@ object Scroller {
     }
   }
   
-  @js.native
   trait WheelStopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the scroller model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the original event name and its event properties of the current event.
       */
-    var originalEvent: js.UndefOr[js.Any] = js.native
+    var originalEvent: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WheelStopEventArgs {
     

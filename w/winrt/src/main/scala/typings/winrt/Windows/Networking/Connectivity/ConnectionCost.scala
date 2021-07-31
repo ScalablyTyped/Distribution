@@ -2,11 +2,11 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionCost extends IConnectionCost
+trait ConnectionCost
+  extends StObject
+     with IConnectionCost
 object ConnectionCost {
   
   @scala.inline

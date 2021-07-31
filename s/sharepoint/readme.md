@@ -12,7 +12,7 @@ SharePoint client for Node.js
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 3998 |
+| # downloads        | 4213 |
 | # stars            | 0 |
 
 ## Links

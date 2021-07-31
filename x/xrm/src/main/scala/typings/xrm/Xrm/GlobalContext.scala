@@ -6,7 +6,6 @@ import typings.xrm.xrmStrings.MaxChildIncidentNumber
 import typings.xrm.xrmStrings.MaxIncidentMergeNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

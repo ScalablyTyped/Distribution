@@ -3,12 +3,13 @@ package typings.vueI18n.mod
 import typings.vue.pluginMod.PluginFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vue-i18n", JSImport.Default)
 @js.native
-class default () extends VueI18n {
+class default ()
+  extends StObject
+     with VueI18n {
   def this(options: typings.vueI18n.mod.VueI18n.I18nOptions) = this()
 }
 object default {

@@ -7,22 +7,20 @@ import typings.minappEnv.minappEnvStrings.pdf417
 import typings.minappEnv.minappEnvStrings.qrCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanCodeOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ScanCodeCompleteCallback] = js.native
+  var complete: js.UndefOr[ScanCodeCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ScanCodeFailCallback] = js.native
+  var fail: js.UndefOr[ScanCodeFailCallback] = js.undefined
   
   /** 是否只能从相机扫码，不允许从相册选择图片
     *
     * 最低基础库： `1.2.0` */
-  var onlyFromCamera: js.UndefOr[Boolean] = js.native
+  var onlyFromCamera: js.UndefOr[Boolean] = js.undefined
   
   /** 扫码类型
     *
@@ -33,10 +31,10 @@ trait ScanCodeOption extends StObject {
     * - 'pdf417': PDF417 条码;
     *
     * 最低基础库： `1.7.0` */
-  var scanType: js.UndefOr[Array[barCode | qrCode | datamatrix | pdf417]] = js.native
+  var scanType: js.UndefOr[Array[barCode | qrCode | datamatrix | pdf417]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ScanCodeSuccessCallback] = js.native
+  var success: js.UndefOr[ScanCodeSuccessCallback] = js.undefined
 }
 object ScanCodeOption {
   

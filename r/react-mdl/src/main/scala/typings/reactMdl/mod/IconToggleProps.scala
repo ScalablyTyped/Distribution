@@ -3,16 +3,15 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconToggleProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with RippleComponent {
   
   @JSName("name")
-  var name_IconToggleProps: String = js.native
+  var name_IconToggleProps: String
 }
 object IconToggleProps {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSplitterPanel
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,37 +16,37 @@ trait IgSplitterPanel
     * Gets whether the panel is initially collapsed
     *
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets whether the panel can be collapsed
     *
     */
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the maximum size that the panel can have
     *
     */
-  var max: js.UndefOr[String | Double] = js.native
+  var max: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets the minimum size that the panel can have
     *
     */
-  var min: js.UndefOr[String | Double] = js.native
+  var min: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets whether the panel can be resized
     *
     */
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the size of the panel
     *
     */
-  var size: js.UndefOr[String | Double] = js.native
+  var size: js.UndefOr[String | Double] = js.undefined
 }
 object IgSplitterPanel {
   

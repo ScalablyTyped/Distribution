@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,11 +17,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link com.sun.star.sdb.RowSet} services
   * @deprecated Deprecated
   */
-@js.native
-trait XRestoreListener extends XEventListener {
+trait XRestoreListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a modified record has been restored */
-  def restored(aEvent: EventObject): Unit = js.native
+  def restored(aEvent: EventObject): Unit
 }
 object XRestoreListener {
   

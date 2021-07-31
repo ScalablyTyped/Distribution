@@ -2,18 +2,16 @@ package typings.node.inspectorMod.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueToLocationParameterType extends StObject {
   
   /**
     * Location to continue to.
     */
-  var location: Location = js.native
+  var location: Location
   
-  var targetCallFrames: js.UndefOr[String] = js.native
+  var targetCallFrames: js.UndefOr[String] = js.undefined
 }
 object ContinueToLocationParameterType {
   

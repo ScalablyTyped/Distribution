@@ -2,15 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitQueryBranchStatsCriteria extends StObject {
   
-  var baseCommit: GitVersionDescriptor = js.native
+  var baseCommit: GitVersionDescriptor
   
-  var targetCommits: js.Array[GitVersionDescriptor] = js.native
+  var targetCommits: js.Array[GitVersionDescriptor]
 }
 object GitQueryBranchStatsCriteria {
   

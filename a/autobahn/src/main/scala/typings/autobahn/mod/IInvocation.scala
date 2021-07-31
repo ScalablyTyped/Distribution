@@ -2,17 +2,15 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInvocation extends StObject {
   
-  var caller: js.UndefOr[Double] = js.native
+  var caller: js.UndefOr[Double] = js.undefined
   
-  var procedure: String = js.native
+  var procedure: String
   
-  var progress: js.UndefOr[js.Function2[/* args */ js.Array[_], /* kwargs */ js.Any, Unit]] = js.native
+  var progress: js.UndefOr[js.Function2[/* args */ js.Array[js.Any], /* kwargs */ js.Any, Unit]] = js.undefined
 }
 object IInvocation {
   
@@ -35,7 +33,7 @@ object IInvocation {
     def setProcedure(value: String): Self = StObject.set(x, "procedure", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProgress(value: (/* args */ js.Array[_], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
+    def setProgress(value: (/* args */ js.Array[js.Any], /* kwargs */ js.Any) => Unit): Self = StObject.set(x, "progress", js.Any.fromFunction2(value))
     
     @scala.inline
     def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)

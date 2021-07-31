@@ -3,15 +3,13 @@ package typings.winrt.Windows.Devices.Sms
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISmsTextMessageStatics extends StObject {
   
-  def fromBinaryData(format: SmsDataFormat, value: Uint8Array): SmsTextMessage = js.native
+  def fromBinaryData(format: SmsDataFormat, value: Uint8Array): SmsTextMessage
   
-  def fromBinaryMessage(binaryMessage: SmsBinaryMessage): SmsTextMessage = js.native
+  def fromBinaryMessage(binaryMessage: SmsBinaryMessage): SmsTextMessage
 }
 object ISmsTextMessageStatics {
   

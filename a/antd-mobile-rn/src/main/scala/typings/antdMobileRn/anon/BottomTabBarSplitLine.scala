@@ -3,17 +3,15 @@ package typings.antdMobileRn.anon
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomTabBarSplitLine extends StObject {
   
-  var bottomTabBarSplitLine: ViewStyle = js.native
+  var bottomTabBarSplitLine: ViewStyle
   
-  var container: ViewStyle = js.native
+  var container: ViewStyle
   
-  var topTabBarSplitLine: ViewStyle = js.native
+  var topTabBarSplitLine: ViewStyle
 }
 object BottomTabBarSplitLine {
   

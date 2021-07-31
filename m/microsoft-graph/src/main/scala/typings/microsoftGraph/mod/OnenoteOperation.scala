@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnenoteOperation extends Operation {
+trait OnenoteOperation
+  extends StObject
+     with Operation {
   
   // The error returned by the operation.
-  var error: js.UndefOr[NullableOption[OnenoteOperationError]] = js.native
+  var error: js.UndefOr[NullableOption[OnenoteOperationError]] = js.undefined
   
   // The operation percent complete if the operation is still in running status
-  var percentComplete: js.UndefOr[NullableOption[String]] = js.native
+  var percentComplete: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The resource id.
-  var resourceId: js.UndefOr[NullableOption[String]] = js.native
+  var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The resource URI for the object. For example, the resource URI for a copied page or section.
-  var resourceLocation: js.UndefOr[NullableOption[String]] = js.native
+  var resourceLocation: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object OnenoteOperation {
   

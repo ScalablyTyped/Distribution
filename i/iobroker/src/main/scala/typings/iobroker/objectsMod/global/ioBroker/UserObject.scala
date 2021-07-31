@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.user
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_UserObject: UserCommon = js.native
+  var common_UserObject: UserCommon
   
   @JSName("type")
-  var type_UserObject: user = js.native
+  var type_UserObject: user
 }
 object UserObject {
   
   @scala.inline
-  def apply(_id: String, common: UserCommon, native: Record[String, _], `type`: user): UserObject = {
+  def apply(_id: String, common: UserCommon, native: Record[String, js.Any]): UserObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("user")
     __obj.asInstanceOf[UserObject]
   }
   

@@ -5,17 +5,17 @@ import typings.xregexp.mod.MatchRecursiveValueNames
 import typings.xregexp.mod.UnicodeCharacterRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Astral extends FeatureOptions {
+  trait Astral
+    extends StObject
+       with FeatureOptions {
     
-    var astral: js.UndefOr[Boolean] = js.native
+    var astral: js.UndefOr[Boolean] = js.undefined
     
-    var namespacing: js.UndefOr[Boolean] = js.native
+    var namespacing: js.UndefOr[Boolean] = js.undefined
   }
   object Astral {
     
@@ -43,13 +43,14 @@ object anon {
   }
   
   /* Inlined xregexp.xregexp.PickRequired<xregexp.xregexp.UnicodeCharacterRangeBase, 'astral'> */
-  @js.native
-  trait PickRequiredUnicodeCharac extends UnicodeCharacterRange {
+  trait PickRequiredUnicodeCharac
+    extends StObject
+       with UnicodeCharacterRange {
     
     /**
       * An alternate name for the character range.
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -58,7 +59,7 @@ object anon {
       * When this is present, it is used in combination with `bmp` in astral mode.
       * This can additionally use character classes and alternation, and should use surrogate pairs to represent astral code points.
       */
-    var astral: js.UndefOr[String] with String = js.native
+    var astral: js.UndefOr[String] & String
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -66,27 +67,27 @@ object anon {
       * When `astral` is not present, this is used BMP and astral modes.
       * When this is present, it is used in BMP mode and in combination with `astral` in astral mode.
       */
-    var bmp: js.UndefOr[String] = js.native
+    var bmp: js.UndefOr[String] = js.undefined
     
     /**
       * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
       */
-    var inverseOf: js.UndefOr[String] = js.native
+    var inverseOf: js.UndefOr[String] = js.undefined
     
     /**
       * This is needed when a token matches orphan high surrogates *and* uses surrogate pairs to match astral code points.
       */
-    var isBmpLast: js.UndefOr[Boolean] = js.native
+    var isBmpLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the character range.
       */
-    var name: String = js.native
+    var name: String
   }
   object PickRequiredUnicodeCharac {
     
     @scala.inline
-    def apply(astral: js.UndefOr[String] with String, name: String): PickRequiredUnicodeCharac = {
+    def apply(astral: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharac = {
       val __obj = js.Dynamic.literal(astral = astral.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharac]
     }
@@ -101,7 +102,7 @@ object anon {
       def setAliasUndefined: Self = StObject.set(x, "alias", js.undefined)
       
       @scala.inline
-      def setAstral(value: js.UndefOr[String] with String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
+      def setAstral(value: js.UndefOr[String] & String): Self = StObject.set(x, "astral", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBmp(value: String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
@@ -127,13 +128,14 @@ object anon {
   }
   
   /* Inlined xregexp.xregexp.PickRequired<xregexp.xregexp.UnicodeCharacterRangeBase, 'bmp'> */
-  @js.native
-  trait PickRequiredUnicodeCharacAlias extends UnicodeCharacterRange {
+  trait PickRequiredUnicodeCharacAlias
+    extends StObject
+       with UnicodeCharacterRange {
     
     /**
       * An alternate name for the character range.
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -142,7 +144,7 @@ object anon {
       * When this is present, it is used in combination with `bmp` in astral mode.
       * This can additionally use character classes and alternation, and should use surrogate pairs to represent astral code points.
       */
-    var astral: js.UndefOr[String] = js.native
+    var astral: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -150,27 +152,27 @@ object anon {
       * When `astral` is not present, this is used BMP and astral modes.
       * When this is present, it is used in BMP mode and in combination with `astral` in astral mode.
       */
-    var bmp: js.UndefOr[String] with String = js.native
+    var bmp: js.UndefOr[String] & String
     
     /**
       * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
       */
-    var inverseOf: js.UndefOr[String] = js.native
+    var inverseOf: js.UndefOr[String] = js.undefined
     
     /**
       * This is needed when a token matches orphan high surrogates *and* uses surrogate pairs to match astral code points.
       */
-    var isBmpLast: js.UndefOr[Boolean] = js.native
+    var isBmpLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the character range.
       */
-    var name: String = js.native
+    var name: String
   }
   object PickRequiredUnicodeCharacAlias {
     
     @scala.inline
-    def apply(bmp: js.UndefOr[String] with String, name: String): PickRequiredUnicodeCharacAlias = {
+    def apply(bmp: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAlias = {
       val __obj = js.Dynamic.literal(bmp = bmp.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAlias]
     }
@@ -191,7 +193,7 @@ object anon {
       def setAstralUndefined: Self = StObject.set(x, "astral", js.undefined)
       
       @scala.inline
-      def setBmp(value: js.UndefOr[String] with String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
+      def setBmp(value: js.UndefOr[String] & String): Self = StObject.set(x, "bmp", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInverseOf(value: String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
@@ -211,13 +213,14 @@ object anon {
   }
   
   /* Inlined xregexp.xregexp.PickRequired<xregexp.xregexp.UnicodeCharacterRangeBase, 'inverseOf'> */
-  @js.native
-  trait PickRequiredUnicodeCharacAstral extends UnicodeCharacterRange {
+  trait PickRequiredUnicodeCharacAstral
+    extends StObject
+       with UnicodeCharacterRange {
     
     /**
       * An alternate name for the character range.
       */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -226,7 +229,7 @@ object anon {
       * When this is present, it is used in combination with `bmp` in astral mode.
       * This can additionally use character classes and alternation, and should use surrogate pairs to represent astral code points.
       */
-    var astral: js.UndefOr[String] = js.native
+    var astral: js.UndefOr[String] = js.undefined
     
     /**
       * A combination of literal characters and `\xHH` or `\\uHHHH` escape sequences, with hyphens to create ranges.
@@ -234,27 +237,27 @@ object anon {
       * When `astral` is not present, this is used BMP and astral modes.
       * When this is present, it is used in BMP mode and in combination with `astral` in astral mode.
       */
-    var bmp: js.UndefOr[String] = js.native
+    var bmp: js.UndefOr[String] = js.undefined
     
     /**
       * Can be used to avoid duplicating character data if a Unicode token is defined as the exact inverse of another token.
       */
-    var inverseOf: js.UndefOr[String] with String = js.native
+    var inverseOf: js.UndefOr[String] & String
     
     /**
       * This is needed when a token matches orphan high surrogates *and* uses surrogate pairs to match astral code points.
       */
-    var isBmpLast: js.UndefOr[Boolean] = js.native
+    var isBmpLast: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the character range.
       */
-    var name: String = js.native
+    var name: String
   }
   object PickRequiredUnicodeCharacAstral {
     
     @scala.inline
-    def apply(inverseOf: js.UndefOr[String] with String, name: String): PickRequiredUnicodeCharacAstral = {
+    def apply(inverseOf: js.UndefOr[String] & String, name: String): PickRequiredUnicodeCharacAstral = {
       val __obj = js.Dynamic.literal(inverseOf = inverseOf.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickRequiredUnicodeCharacAstral]
     }
@@ -281,7 +284,7 @@ object anon {
       def setBmpUndefined: Self = StObject.set(x, "bmp", js.undefined)
       
       @scala.inline
-      def setInverseOf(value: js.UndefOr[String] with String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
+      def setInverseOf(value: js.UndefOr[String] & String): Self = StObject.set(x, "inverseOf", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIsBmpLast(value: Boolean): Self = StObject.set(x, "isBmpLast", value.asInstanceOf[js.Any])
@@ -295,10 +298,9 @@ object anon {
   }
   
   /* Inlined std.Required<std.Pick<xregexp.xregexp.MatchRecursiveOptions, 'valueNames'>> */
-  @js.native
   trait RequiredPickMatchRecursiv extends StObject {
     
-    var valueNames: MatchRecursiveValueNames = js.native
+    var valueNames: MatchRecursiveValueNames
   }
   object RequiredPickMatchRecursiv {
     

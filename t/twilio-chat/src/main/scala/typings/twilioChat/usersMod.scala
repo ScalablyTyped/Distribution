@@ -9,7 +9,6 @@ import typings.twilioChat.userdescriptorMod.UserDescriptor
 import typings.twilioSync.mod.SyncClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersMod {
@@ -65,14 +64,13 @@ object usersMod {
     var userDescriptorsPromise: js.Any = js.native
   }
   
-  @js.native
   trait UsersServices extends StObject {
     
-    var network: Network = js.native
+    var network: Network
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
   }
   object UsersServices {
     

@@ -14,7 +14,6 @@ import typings.stripe.mod.coupons.ICoupon
 import typings.stripe.mod.coupons.ICouponCreationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Coupons")

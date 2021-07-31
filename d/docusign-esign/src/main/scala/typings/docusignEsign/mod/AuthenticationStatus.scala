@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationStatus extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var accessCodeResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var accessCodeResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of an age verification check. It returns:
@@ -26,22 +24,22 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var ageVerifyResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var ageVerifyResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var anySocialIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var anySocialIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var facebookResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var facebookResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var googleResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var googleResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of an ID lookup authentication check. It returns:
@@ -51,7 +49,7 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var idLookupResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var idLookupResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of the user's answers to ID challenge questions. It returns:
@@ -61,24 +59,24 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var idQuestionsResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var idQuestionsResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of an [Identity Verification][IDV] workflow.
     *
     * [IDV]: /esign/restapi/Accounts/IdentityVerifications/
     */
-  var identityVerificationResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var identityVerificationResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var linkedinResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var linkedinResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var liveIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var liveIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of an Office of Foreign Asset Control (OFAC) check. It returns:
@@ -88,12 +86,12 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var ofacResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var ofacResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var openIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var openIDResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of the user's attempt to authenticate by using two-factor authentication (2FA) through phone messaging. It returns:
@@ -103,7 +101,7 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var phoneAuthResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var phoneAuthResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of a Student Authentication Network (STAN) authentication check. It returns:
@@ -113,7 +111,7 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var sTANPinResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var sTANPinResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Success/failure result of authentication using sign-in with a Salesforce account. It returns:
@@ -123,27 +121,27 @@ trait AuthenticationStatus extends StObject {
     * - `FailureDescription`: A string containing the details about a failed authentication.
     * - `VendorFailureStatusCode`: A string containing the vendor's status code for a failed authentication.
     */
-  var salesforceResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var salesforceResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of the user's attempt to authenticate by using a signature provider.
     */
-  var signatureProviderResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var signatureProviderResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * The result of the user's attempt to authenticate by using two-factor authentication (2FA) through SMS messaging on a mobile phone.
     */
-  var smsAuthResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var smsAuthResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var twitterResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var twitterResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
   
   /**
     * Deprecated.
     */
-  var yahooResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.native
+  var yahooResult: js.UndefOr[/* Information about the result of an event. */ EventResult] = js.undefined
 }
 object AuthenticationStatus {
   

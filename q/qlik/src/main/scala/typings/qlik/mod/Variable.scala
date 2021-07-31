@@ -3,13 +3,11 @@ package typings.qlik.mod
 import typings.qlik.anon.QIsNum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Variable extends StObject {
   
-  var qContent: QIsNum = js.native
+  var qContent: QIsNum
 }
 object Variable {
   

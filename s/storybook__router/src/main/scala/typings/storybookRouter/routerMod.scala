@@ -11,16 +11,15 @@ import typings.storybookRouter.anon.ReadonlyLocationProviderP
 import typings.storybookRouter.utilsMod.StoryData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
   
   object Link {
     
-    @JSImport("@storybook/router/dist/router", "Link")
-    @js.native
-    def apply(hasToChildrenRest: QueryLinkProps): Element = js.native
+    @scala.inline
+    def apply(hasToChildrenRest: QueryLinkProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasToChildrenRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router/dist/router", "Link")
     @js.native
     val ^ : js.Any = js.native
@@ -34,9 +33,9 @@ object routerMod {
   
   object Location {
     
-    @JSImport("@storybook/router/dist/router", "Location")
-    @js.native
-    def apply(hasChildren: QueryLocationProps): Element = js.native
+    @scala.inline
+    def apply(hasChildren: QueryLocationProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router/dist/router", "Location")
     @js.native
     val ^ : js.Any = js.native
@@ -63,9 +62,9 @@ object routerMod {
   
   object Match {
     
-    @JSImport("@storybook/router/dist/router", "Match")
-    @js.native
-    def apply(hasChildrenPathStartsWith: QueryMatchProps): Element = js.native
+    @scala.inline
+    def apply(hasChildrenTargetPathStartsWith: QueryMatchProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasChildrenTargetPathStartsWith.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router/dist/router", "Match")
     @js.native
     val ^ : js.Any = js.native
@@ -79,9 +78,9 @@ object routerMod {
   
   object Route {
     
-    @JSImport("@storybook/router/dist/router", "Route")
-    @js.native
-    def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = js.native
+    @scala.inline
+    def apply(hasPathChildrenStartsWithHideOnly: RouteProps): Element = ^.asInstanceOf[js.Dynamic].apply(hasPathChildrenStartsWithHideOnly.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@storybook/router/dist/router", "Route")
     @js.native
     val ^ : js.Any = js.native
@@ -97,16 +96,16 @@ object routerMod {
   @js.native
   val navigate: NavigateFn = js.native
   
-  @js.native
   trait MatchingData extends StObject {
     
-    var `match`: Null | Path = js.native
+    var `match`: Null | Path
   }
   object MatchingData {
     
     @scala.inline
     def apply(): MatchingData = {
       val __obj = js.Dynamic.literal()
+      __obj.updateDynamic("match")(null)
       __obj.asInstanceOf[MatchingData]
     }
     
@@ -121,10 +120,11 @@ object routerMod {
     }
   }
   
-  @js.native
-  trait Other extends StoryData {
+  trait Other
+    extends StObject
+       with StoryData {
     
-    var path: String = js.native
+    var path: String
   }
   object Other {
     
@@ -142,12 +142,11 @@ object routerMod {
     }
   }
   
-  @js.native
   trait QueryLinkProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var to: String = js.native
+    var to: String
   }
   object QueryLinkProps {
     
@@ -171,10 +170,9 @@ object routerMod {
     }
   }
   
-  @js.native
   trait QueryLocationProps extends StObject {
     
-    def children(renderData: RenderData): ReactNode = js.native
+    def children(renderData: RenderData): ReactNode
   }
   object QueryLocationProps {
     
@@ -192,14 +190,13 @@ object routerMod {
     }
   }
   
-  @js.native
   trait QueryMatchProps extends StObject {
     
-    def children(matchingData: MatchingData): ReactNode = js.native
+    def children(matchingData: MatchingData): ReactNode
     
-    var path: String = js.native
+    var path: String
     
-    var startsWith: Boolean = js.native
+    var startsWith: Boolean
   }
   object QueryMatchProps {
     
@@ -224,20 +221,19 @@ object routerMod {
   }
   
   /* Inlined std.Pick<@reach/router.@reach/router.LocationContext, 'location'> & std.Partial<std.Pick<@reach/router.@reach/router.LocationContext, 'navigate'>> & @storybook/router.@storybook/router/dist/router.Other */
-  @js.native
   trait RenderData extends StObject {
     
-    var location: WindowLocation[LocationState] = js.native
+    var location: WindowLocation[LocationState]
     
-    var navigate: js.UndefOr[NavigateFn] = js.native
+    var navigate: js.UndefOr[NavigateFn] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
     
-    var storyId: js.UndefOr[String] = js.native
+    var storyId: js.UndefOr[String] = js.undefined
     
-    var viewMode: js.UndefOr[String] = js.native
+    var viewMode: js.UndefOr[String] = js.undefined
   }
   object RenderData {
     
@@ -282,16 +278,15 @@ object routerMod {
     }
   }
   
-  @js.native
   trait RouteProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var hideOnly: js.UndefOr[Boolean] = js.native
+    var hideOnly: js.UndefOr[Boolean] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var startsWith: js.UndefOr[Boolean] = js.native
+    var startsWith: js.UndefOr[Boolean] = js.undefined
   }
   object RouteProps {
     

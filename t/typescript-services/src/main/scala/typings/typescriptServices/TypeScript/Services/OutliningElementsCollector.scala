@@ -94,17 +94,17 @@ import typings.typescriptServices.TypeScript.WhileStatementSyntax
 import typings.typescriptServices.TypeScript.WithStatementSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutliningElementsCollector extends DepthLimitedWalker {
+trait OutliningElementsCollector
+  extends StObject
+     with DepthLimitedWalker {
   
-  /* private */ def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any = js.native
+  /* private */ def addOutlineRange(node: js.Any, startElement: js.Any, endElement: js.Any): js.Any
   
-  var elements: js.Any = js.native
+  var elements: js.Any
   
-  var inObjectLiteralExpression: js.Any = js.native
+  var inObjectLiteralExpression: js.Any
 }
 object OutliningElementsCollector {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelTopicDetails extends StObject {
   
   /** A list of Wikipedia URLs that describe the channel's content. */
-  var topicCategories: js.UndefOr[js.Array[String]] = js.native
+  var topicCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of Freebase topic IDs associated with the channel. You can retrieve information about each topic using the Freebase Topic API. */
-  var topicIds: js.UndefOr[js.Array[String]] = js.native
+  var topicIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ChannelTopicDetails {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeDeliveryDetailsType extends StObject {
   
   /**
     * The attribute name.
     */
-  var AttributeName: js.UndefOr[AttributeNameType] = js.native
+  var AttributeName: js.UndefOr[AttributeNameType] = js.undefined
   
   /**
     * The delivery medium (email message or phone number).
     */
-  var DeliveryMedium: js.UndefOr[DeliveryMediumType] = js.native
+  var DeliveryMedium: js.UndefOr[DeliveryMediumType] = js.undefined
   
   /**
     * The destination for the code delivery details.
     */
-  var Destination: js.UndefOr[StringType] = js.native
+  var Destination: js.UndefOr[StringType] = js.undefined
 }
 object CodeDeliveryDetailsType {
   

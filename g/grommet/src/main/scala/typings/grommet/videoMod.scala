@@ -20,7 +20,6 @@ import typings.react.mod.VideoHTMLAttributes
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videoMod {
@@ -30,19 +29,19 @@ object videoMod {
   @js.native
   class Video protected ()
     extends Component[
-          VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+          VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+    def this(props: VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ])) = this()
     def this(
-      props: VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+      props: VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
             DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
             controls
           ]),
@@ -52,35 +51,34 @@ object videoMod {
   @JSImport("grommet/components/Video", "Video")
   @js.native
   val Video: ComponentClass[
-    VideoProps with (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) with (Omit[
+    VideoProps & (DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement]) & (Omit[
       DetailedHTMLProps[VideoHTMLAttributes[HTMLVideoElement], HTMLVideoElement], 
       controls
     ]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait VideoProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var controls: js.UndefOr[`false` | over | below] = js.native
+    var controls: js.UndefOr[`false` | over | below] = js.undefined
     
-    var fit: js.UndefOr[cover | contain] = js.native
+    var fit: js.UndefOr[cover | contain] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var messages: js.UndefOr[FullScreen] = js.native
+    var messages: js.UndefOr[FullScreen] = js.undefined
     
-    var mute: js.UndefOr[Boolean] = js.native
+    var mute: js.UndefOr[Boolean] = js.undefined
   }
   object VideoProps {
     

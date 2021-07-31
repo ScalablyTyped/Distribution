@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,6 +38,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Prepare")
 @js.native
 class Prepare protected ()
-  extends typings.pixiJs.PIXI.Prepare {
+  extends StObject
+     with typings.pixiJs.PIXI.Prepare {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
 }

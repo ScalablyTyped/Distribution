@@ -3,13 +3,11 @@ package typings.reactBootstrapTableNext.anon
 import typings.reactBootstrapTableNext.mod.PaginationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var options: js.UndefOr[PaginationOptions] = js.native
+  var options: js.UndefOr[PaginationOptions] = js.undefined
 }
 object `0` {
   

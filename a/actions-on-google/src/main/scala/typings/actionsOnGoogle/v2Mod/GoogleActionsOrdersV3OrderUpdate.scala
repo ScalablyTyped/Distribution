@@ -2,18 +2,16 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3OrderUpdate extends StObject {
   
-  var order: js.UndefOr[GoogleActionsOrdersV3Order] = js.native
+  var order: js.UndefOr[GoogleActionsOrdersV3Order] = js.undefined
   
   /**
     * Reason for the change/update.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: Use OrderUpdate.update_mask instead.
@@ -25,7 +23,7 @@ trait GoogleActionsOrdersV3OrderUpdate extends StObject {
     * using update_mask as it is more generic, extensible and can be used for all
     * verticals.
     */
-  var `type`: js.UndefOr[GoogleActionsOrdersV3OrderUpdateType] = js.native
+  var `type`: js.UndefOr[GoogleActionsOrdersV3OrderUpdateType] = js.undefined
   
   /**
     * Note: There are following consideration/recommendations for following
@@ -35,14 +33,14 @@ trait GoogleActionsOrdersV3OrderUpdate extends StObject {
     * 2. order.create_time, order.google_order_id and order.merchant_order_id
     * will be ignored if provided as part of the update_mask.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, displays a notification to the user with the specified
     * title and text. Specifying a notification is a suggestion to
     * notify and is not guaranteed to result in a notification.
     */
-  var userNotification: js.UndefOr[GoogleActionsOrdersV3OrderUpdateUserNotification] = js.native
+  var userNotification: js.UndefOr[GoogleActionsOrdersV3OrderUpdateUserNotification] = js.undefined
 }
 object GoogleActionsOrdersV3OrderUpdate {
   

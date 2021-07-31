@@ -2,14 +2,12 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigStyle extends StObject {
   
   /** A fallback scale object for when there isn't one defined in the `theme` object. */
-  var defaultScale: js.UndefOr[Scale] = js.native
+  var defaultScale: js.UndefOr[Scale] = js.undefined
   
   /**
     * An array of multiple properties (e.g. `['marginLeft', 'marginRight']`) to which this style's value will be
@@ -19,18 +17,18 @@ trait ConfigStyle extends StObject {
     js.Array[
       /* keyof csstype.csstype.Properties<string | 0> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 776 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The CSS property to use in the returned style object (overridden by `properties` if present). */
   var property: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 777 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /** A string referencing a key in the `theme` object. */
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
   
   /** A function to transform the raw value based on the scale. */
-  var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], _]] = js.native
+  var transform: js.UndefOr[js.Function2[/* value */ js.Any, /* scale */ js.UndefOr[Scale], js.Any]] = js.undefined
 }
 object ConfigStyle {
   
@@ -80,7 +78,7 @@ object ConfigStyle {
     def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => _): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
+    def setTransform(value: (/* value */ js.Any, /* scale */ js.UndefOr[Scale]) => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)

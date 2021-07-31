@@ -4,15 +4,13 @@ import typings.reactNavigationCore.typesMod.EventMapBase
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] extends StObject {
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: EventName = js.native
+  var `type`: EventName
 }
 object Type {
   
@@ -24,7 +22,7 @@ object Type {
   }
   
   @scala.inline
-  implicit class TypeMutableBuilder[Self <: Type[_, _], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] (val x: Self with (Type[EventName, EventMap])) extends AnyVal {
+  implicit class TypeMutableBuilder[Self <: Type[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] (val x: Self & (Type[EventName, EventMap])) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

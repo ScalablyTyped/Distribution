@@ -2,10 +2,8 @@ package typings.stremioAddonSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaLink extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait MetaLink extends StObject {
     * Some recommended categories are: actor, director, writer,
     * while the following categories are reserved and should not be used: imdb, share, similar.
     */
-  var category: String = js.native
+  var category: String
   
   /**
     * Human readable name for the link.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * An external URL or Meta Link.
     */
-  var url: String = js.native
+  var url: String
 }
 object MetaLink {
   

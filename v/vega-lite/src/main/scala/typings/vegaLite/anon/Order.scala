@@ -14,15 +14,13 @@ import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size = js.native
+  var encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
   
-  var order: String = js.native
+  var order: String
 }
 object Order {
   

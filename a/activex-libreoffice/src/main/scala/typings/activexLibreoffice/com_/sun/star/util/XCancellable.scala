@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is supported by objects which represent a job.
   */
-@js.native
-trait XCancellable extends XInterface {
+trait XCancellable
+  extends StObject
+     with XInterface {
   
   /** cancels the current job of the object. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
 }
 object XCancellable {
   

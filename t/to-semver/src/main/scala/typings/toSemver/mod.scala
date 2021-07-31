@@ -2,7 +2,6 @@ package typings.toSemver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,27 +24,28 @@ object mod {
   // ]
   ```
   */
-  @JSImport("to-semver", JSImport.Namespace)
-  @js.native
-  def apply(versions: js.Array[String]): js.Array[String] = js.native
-  @JSImport("to-semver", JSImport.Namespace)
-  @js.native
-  def apply(versions: js.Array[String], options: Options): js.Array[String] = js.native
+  @scala.inline
+  def apply(versions: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(versions.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(versions: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(versions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
+  @JSImport("to-semver", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Clean versions. For example `v1.3.0` → `1.3.0`.
     		@default true
     		*/
-    val clean: js.UndefOr[Boolean] = js.native
+    val clean: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Include prereleases, like `1.2.3-alpha.3`.
     		@default true
     		*/
-    val includePrereleases: js.UndefOr[Boolean] = js.native
+    val includePrereleases: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

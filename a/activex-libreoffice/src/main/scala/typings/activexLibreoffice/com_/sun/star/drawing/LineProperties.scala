@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,64 +10,63 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The properties for line ends and line starts are only supported by shapes with open line ends.
   */
-@js.native
 trait LineProperties extends StObject {
   
   /** This property defines the rendering of ends of thick lines */
-  var LineCap: typings.activexLibreoffice.com_.sun.star.drawing.LineCap = js.native
+  var LineCap: typings.activexLibreoffice.com_.sun.star.drawing.LineCap
   
   /** This property contains the line color. */
-  var LineColor: Color = js.native
+  var LineColor: Color
   
   /** This property contains the dash of the line. */
-  var LineDash: typings.activexLibreoffice.com_.sun.star.drawing.LineDash = js.native
+  var LineDash: typings.activexLibreoffice.com_.sun.star.drawing.LineDash
   
   /** This property contains the name of the dash of the line. */
-  var LineDashName: String = js.native
+  var LineDashName: String
   
   /** This property contains the line end in the form of a poly polygon Bezier. */
-  var LineEnd: PolyPolygonBezierCoords = js.native
+  var LineEnd: PolyPolygonBezierCoords
   
   /** If this property is `TRUE` , the line will end in the center of the polygon. */
-  var LineEndCenter: Boolean = js.native
+  var LineEndCenter: Boolean
   
   /**
     * This property contains the name of the line end poly polygon Bezier.
     *
     * If this string is empty, no line end polygon is rendered.
     */
-  var LineEndName: String = js.native
+  var LineEndName: String
   
   /** This property contains the width of the line end polygon. */
-  var LineEndWidth: Double = js.native
+  var LineEndWidth: Double
   
   /** This property defines the rendering of joints between thick lines */
-  var LineJoint: typings.activexLibreoffice.com_.sun.star.drawing.LineJoint = js.native
+  var LineJoint: typings.activexLibreoffice.com_.sun.star.drawing.LineJoint
   
   /** This property contains the line start in the form of a poly polygon Bezier. */
-  var LineStart: PolyPolygonBezierCoords = js.native
+  var LineStart: PolyPolygonBezierCoords
   
   /** If this property is `TRUE` , the line will start from the center of the polygon. */
-  var LineStartCenter: Boolean = js.native
+  var LineStartCenter: Boolean
   
   /**
     * This property contains the name of the line start poly polygon Bezier.
     *
     * If this string is empty, no line start polygon is rendered.
     */
-  var LineStartName: String = js.native
+  var LineStartName: String
   
   /** This property contains the width of the line start polygon. */
-  var LineStartWidth: Double = js.native
+  var LineStartWidth: Double
   
   /** This property contains the type of the line. */
-  var LineStyle: typings.activexLibreoffice.com_.sun.star.drawing.LineStyle = js.native
+  var LineStyle: typings.activexLibreoffice.com_.sun.star.drawing.LineStyle
   
   /** This property contains the extent of transparency. */
-  var LineTransparence: Double = js.native
+  var LineTransparence: Double
   
   /** This property contains the width of the line in 1/100th mm. */
-  var LineWidth: Double = js.native
+  var LineWidth: Double
 }
 object LineProperties {
   

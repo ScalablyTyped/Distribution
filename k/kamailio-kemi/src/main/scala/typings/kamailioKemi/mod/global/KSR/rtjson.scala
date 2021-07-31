@@ -2,24 +2,23 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rtjson {
   
-  @JSGlobal("KSR.rtjson.init_routes")
+  @JSGlobal("KSR.rtjson")
   @js.native
-  def initRoutes(rdoc: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.rtjson.next_route")
-  @js.native
-  def nextRoute(): Double = js.native
+  @scala.inline
+  def initRoutes(rdoc: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("init_routes")(rdoc.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtjson.push_routes")
-  @js.native
-  def pushRoutes(): Double = js.native
+  @scala.inline
+  def nextRoute(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("next_route")().asInstanceOf[Double]
   
-  @JSGlobal("KSR.rtjson.update_branch")
-  @js.native
-  def updateBranch(): Double = js.native
+  @scala.inline
+  def pushRoutes(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push_routes")().asInstanceOf[Double]
+  
+  @scala.inline
+  def updateBranch(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("update_branch")().asInstanceOf[Double]
 }

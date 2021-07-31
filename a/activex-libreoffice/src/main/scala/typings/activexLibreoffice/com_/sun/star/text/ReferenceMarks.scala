@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the reference marks in a document. */
-@js.native
 trait ReferenceMarks
-  extends XIndexAccess
+  extends StObject
+     with XIndexAccess
      with XNameAccess
 object ReferenceMarks {
   

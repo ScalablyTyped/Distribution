@@ -9,7 +9,6 @@ import typings.isMyJsonValid.anon.`4`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,8 +67,8 @@ trait Factory extends StObject {
   ] = js.native
   def apply(schema: StringSchema): Validator[StringSchema, TypeFromSchema[StringSchema]] = js.native
   def apply(schema: StringSchema, options: js.Any): Validator[StringSchema, TypeFromSchema[StringSchema]] = js.native
-  def apply[Schema /* <: EnumSchema[_] */](schema: Schema): Validator[Schema, TypeFromSchema[Schema]] = js.native
-  def apply[Schema /* <: EnumSchema[_] */](schema: Schema, options: js.Any): Validator[Schema, TypeFromSchema[Schema]] = js.native
+  def apply[Schema /* <: EnumSchema[js.Any] */](schema: Schema): Validator[Schema, TypeFromSchema[Schema]] = js.native
+  def apply[Schema /* <: EnumSchema[js.Any] */](schema: Schema, options: js.Any): Validator[Schema, TypeFromSchema[Schema]] = js.native
   /* One of plain schema */
   def apply[Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */](schema: `2`[Schema1, Schema2]): Validator[`2`[Schema1, Schema2], TypeFromSchema[Schema1 | Schema2]] = js.native
   def apply[Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */](schema: `2`[Schema1, Schema2], options: js.Any): Validator[`2`[Schema1, Schema2], TypeFromSchema[Schema1 | Schema2]] = js.native
@@ -175,8 +174,8 @@ trait Factory extends StObject {
   ] = js.native
   def createFilter(schema: StringSchema): Filter[StringSchema, TypeFromSchema[StringSchema]] = js.native
   def createFilter(schema: StringSchema, options: js.Any): Filter[StringSchema, TypeFromSchema[StringSchema]] = js.native
-  def createFilter[Schema /* <: EnumSchema[_] */](schema: Schema): Filter[Schema, TypeFromSchema[Schema]] = js.native
-  def createFilter[Schema /* <: EnumSchema[_] */](schema: Schema, options: js.Any): Filter[Schema, TypeFromSchema[Schema]] = js.native
+  def createFilter[Schema /* <: EnumSchema[js.Any] */](schema: Schema): Filter[Schema, TypeFromSchema[Schema]] = js.native
+  def createFilter[Schema /* <: EnumSchema[js.Any] */](schema: Schema, options: js.Any): Filter[Schema, TypeFromSchema[Schema]] = js.native
   def createFilter[Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */](schema: `2`[Schema1, Schema2]): Filter[`2`[Schema1, Schema2], TypeFromSchema[Schema1 | Schema2]] = js.native
   def createFilter[Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */](schema: `2`[Schema1, Schema2], options: js.Any): Filter[`2`[Schema1, Schema2], TypeFromSchema[Schema1 | Schema2]] = js.native
   def createFilter[Schema1 /* <: AnySchema */, Schema2 /* <: AnySchema */, Schema3 /* <: AnySchema */](schema: `3`[Schema1, Schema2, Schema3]): Filter[`3`[Schema1, Schema2, Schema3], TypeFromSchema[Schema1 | Schema2 | Schema3]] = js.native

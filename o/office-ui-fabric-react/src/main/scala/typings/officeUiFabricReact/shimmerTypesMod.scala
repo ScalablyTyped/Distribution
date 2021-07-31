@@ -13,7 +13,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimmerTypesMod {
@@ -25,28 +24,34 @@ object shimmerTypesMod {
   object ShimmerElementType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ShimmerElementType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ShimmerElementType & Double] = js.native
     
     /**
       * Circle element type
       */
     @js.native
-    sealed trait circle extends ShimmerElementType
-    /* 2 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.circle with Double = js.native
+    sealed trait circle
+      extends StObject
+         with ShimmerElementType
+    /* 2 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.circle & Double = js.native
     
     /**
       * Gap element type
       */
     @js.native
-    sealed trait gap extends ShimmerElementType
-    /* 3 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.gap with Double = js.native
+    sealed trait gap
+      extends StObject
+         with ShimmerElementType
+    /* 3 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.gap & Double = js.native
     
     /**
       * Line element type
       */
     @js.native
-    sealed trait line extends ShimmerElementType
-    /* 1 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.line with Double = js.native
+    sealed trait line
+      extends StObject
+         with ShimmerElementType
+    /* 1 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementType.line & Double = js.native
   }
   
   @js.native
@@ -56,32 +61,39 @@ object shimmerTypesMod {
   object ShimmerElementsDefaultHeights extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ShimmerElementsDefaultHeights with Double] = js.native
+    def apply(value: Double): js.UndefOr[ShimmerElementsDefaultHeights & Double] = js.native
     
     /**
       * Default height of the circle element when not provided by user: 24px
       */
     @js.native
-    sealed trait circle extends ShimmerElementsDefaultHeights
-    /* 24 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.circle with Double = js.native
+    sealed trait circle
+      extends StObject
+         with ShimmerElementsDefaultHeights
+    /* 24 */ val circle: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.circle & Double = js.native
     
     /**
       * Default height of the gap element when not provided by user: 16px
       */
     @js.native
-    sealed trait gap extends ShimmerElementsDefaultHeights
-    /* 16 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.gap with Double = js.native
+    sealed trait gap
+      extends StObject
+         with ShimmerElementsDefaultHeights
+    /* 16 */ val gap: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.gap & Double = js.native
     
     /**
       * Default height of the line element when not provided by user: 16px
       */
     @js.native
-    sealed trait line extends ShimmerElementsDefaultHeights
-    /* 16 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.line with Double = js.native
+    sealed trait line
+      extends StObject
+         with ShimmerElementsDefaultHeights
+    /* 16 */ val line: typings.officeUiFabricReact.shimmerTypesMod.ShimmerElementsDefaultHeights.line & Double = js.native
   }
   
-  @js.native
-  trait ICircle extends IShimmerElement
+  trait ICircle
+    extends StObject
+       with IShimmerElement
   object ICircle {
     
     @scala.inline
@@ -92,8 +104,9 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
-  trait IGap extends IShimmerElement
+  trait IGap
+    extends StObject
+       with IShimmerElement
   object IGap {
     
     @scala.inline
@@ -104,8 +117,9 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
-  trait ILine extends IShimmerElement
+  trait ILine
+    extends StObject
+       with IShimmerElement
   object ILine {
     
     @scala.inline
@@ -116,10 +130,8 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
   trait IShimmer extends StObject
   
-  @js.native
   trait IShimmerColors extends StObject {
     
     /**
@@ -127,19 +139,19 @@ object shimmerTypesMod {
       * rounded corners).
       * @defaultvalue theme.palette.white
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the main background color which is the color you see when the wave is not animating.
       * @defaultvalue theme.palette.neutralLight
       */
-    var shimmer: js.UndefOr[String] = js.native
+    var shimmer: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the tip color of the shimmer wave which gradually gets from and to `shimmer` color.
       * @defaultvalue theme.palette.neutralLighter
       */
-    var shimmerWave: js.UndefOr[String] = js.native
+    var shimmerWave: js.UndefOr[String] = js.undefined
   }
   object IShimmerColors {
     
@@ -172,32 +184,31 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerElement extends StObject {
     
     /**
       * Sets the height of the element (ICircle, ILine, IGap) in pixels.
       * Read more details for each specific element.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Represents the possible type of the shimmer elements: Gap, Circle, Line.
       * Required for every element you intend to use.
       */
-    var `type`: ShimmerElementType = js.native
+    var `type`: ShimmerElementType
     
     /**
       * Sets vertical alignment of the element (ICircle, ILine).
       * @defaultvalue center
       */
-    var verticalAlign: js.UndefOr[top | center | bottom] = js.native
+    var verticalAlign: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * Sets the width value of the element (ILine, IGap) in pixels.
       * Read more details for each specific element.
       */
-    var width: js.UndefOr[Double | String] = js.native
+    var width: js.UndefOr[Double | String] = js.undefined
   }
   object IShimmerElement {
     
@@ -234,49 +245,50 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
-  trait IShimmerProps extends AllHTMLAttributes[HTMLElement] {
+  trait IShimmerProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Localized string of the status label for screen reader
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated No longer used.
       */
-    var componentRef: js.UndefOr[IRefObject[IShimmer]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IShimmer]] = js.undefined
     
     /**
       * Custom elements when necessary to build complex placeholder skeletons.
       */
-    var customElementsGroup: js.UndefOr[ReactNode] = js.native
+    var customElementsGroup: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Controls when the shimmer is swapped with actual data through an animated transition.
       * @defaultvalue false
       */
-    var isDataLoaded: js.UndefOr[Boolean] = js.native
+    var isDataLoaded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines an object with possible colors to pass for Shimmer customization used on different backgrounds.
       */
-    var shimmerColors: js.UndefOr[IShimmerColors] = js.native
+    var shimmerColors: js.UndefOr[IShimmerColors] = js.undefined
     
     /**
       * Elements to render in one line of the Shimmer.
       */
-    var shimmerElements: js.UndefOr[js.Array[IShimmerElement]] = js.native
+    var shimmerElements: js.UndefOr[js.Array[IShimmerElement]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IShimmerStyleProps, IShimmerStyles]] = js.undefined
     
     /**
       * Theme provided by High-Order Component.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IShimmerProps {
     
@@ -348,26 +360,25 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerStyleProps extends StObject {
     
     /** Optional CSS class name for the component attached to the root stylable area. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Boolean flag to trigger fadeIn/fadeOut transition animation when content is loaded. */
-    var isDataLoaded: js.UndefOr[Boolean] = js.native
+    var isDataLoaded: js.UndefOr[Boolean] = js.undefined
     
     /** Color to be used as the main background color of Shimmer when not animating. */
-    var shimmerColor: js.UndefOr[String] = js.native
+    var shimmerColor: js.UndefOr[String] = js.undefined
     
     /** Tip color of the shimmer wave which gradually gets from and to `shimmerColor`. */
-    var shimmerWaveColor: js.UndefOr[String] = js.native
+    var shimmerWaveColor: js.UndefOr[String] = js.undefined
     
     /** Theme provided by High-Order Component. */
-    var theme: ITheme = js.native
+    var theme: ITheme
     
     /** Interval in milliseconds for the adeIn/fadeOut transition animation. */
-    var transitionAnimationInterval: js.UndefOr[Double] = js.native
+    var transitionAnimationInterval: js.UndefOr[Double] = js.undefined
   }
   object IShimmerStyleProps {
     
@@ -415,23 +426,22 @@ object shimmerTypesMod {
     }
   }
   
-  @js.native
   trait IShimmerStyles extends StObject {
     
     /** Refers to wrapper element of the children only. */
-    var dataWrapper: js.UndefOr[IStyle] = js.native
+    var dataWrapper: js.UndefOr[IStyle] = js.undefined
     
     /** Refers to the root wrapper element. */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /** Styles for the hidden helper element to aid with screen readers. */
-    var screenReaderText: js.UndefOr[IStyle] = js.native
+    var screenReaderText: js.UndefOr[IStyle] = js.undefined
     
     /** Refers to gradient element of the shimmer animation only. */
-    var shimmerGradient: js.UndefOr[IStyle] = js.native
+    var shimmerGradient: js.UndefOr[IStyle] = js.undefined
     
     /** Refers to wrapper element of the shimmer only. */
-    var shimmerWrapper: js.UndefOr[IStyle] = js.native
+    var shimmerWrapper: js.UndefOr[IStyle] = js.undefined
   }
   object IShimmerStyles {
     

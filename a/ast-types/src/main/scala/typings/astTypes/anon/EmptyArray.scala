@@ -2,23 +2,21 @@ package typings.astTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmptyArray extends StObject {
   
-  def emptyArray(): js.Array[scala.Nothing] = js.native
+  def emptyArray(): js.Array[scala.Nothing]
   
-  def `false`(): Boolean = js.native
+  def `false`(): Boolean
   
-  def `null`(): Null = js.native
+  def `null`(): Null
   
-  def `true`(): Boolean = js.native
+  def `true`(): Boolean
   
-  def undefined(): Unit = js.native
+  def undefined(): Unit
   
-  def `use strict`(): String = js.native
+  def `use strict`(): String
 }
 object EmptyArray {
   

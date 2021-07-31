@@ -2,20 +2,18 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The positioning of a PositionedObject. The positioned object is positioned
   * relative to the beginning of the Paragraph it is tethered to.
   */
-@js.native
 trait SchemaPositionedObjectPositioning extends StObject {
   
   /**
     * The layout of this positioned object.
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * The offset of the left edge of the positioned object relative to the
@@ -23,7 +21,7 @@ trait SchemaPositionedObjectPositioning extends StObject {
     * the object can depend on other content in the document and the
     * document&#39;s styling.
     */
-  var leftOffset: js.UndefOr[SchemaDimension] = js.native
+  var leftOffset: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The offset of the top edge of the positioned object relative to the
@@ -31,7 +29,7 @@ trait SchemaPositionedObjectPositioning extends StObject {
     * the object can depend on other content in the document and the
     * document&#39;s styling.
     */
-  var topOffset: js.UndefOr[SchemaDimension] = js.native
+  var topOffset: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaPositionedObjectPositioning {
   

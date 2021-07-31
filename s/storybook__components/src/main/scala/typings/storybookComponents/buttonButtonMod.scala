@@ -10,7 +10,6 @@ import typings.std.HTMLButtonElement
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonButtonMod {
@@ -27,30 +26,29 @@ object buttonButtonMod {
     ]
   ] = js.native
   
-  @js.native
   trait ButtonProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var containsIcon: js.UndefOr[Boolean] = js.native
+    var containsIcon: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var gray: js.UndefOr[Boolean] = js.native
+    var gray: js.UndefOr[Boolean] = js.undefined
     
-    var inForm: js.UndefOr[Boolean] = js.native
+    var inForm: js.UndefOr[Boolean] = js.undefined
     
-    var isLink: js.UndefOr[Boolean] = js.native
+    var isLink: js.UndefOr[Boolean] = js.undefined
     
-    var outline: js.UndefOr[Boolean] = js.native
+    var outline: js.UndefOr[Boolean] = js.undefined
     
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
-    var secondary: js.UndefOr[Boolean] = js.native
+    var secondary: js.UndefOr[Boolean] = js.undefined
     
-    var small: js.UndefOr[Boolean] = js.native
+    var small: js.UndefOr[Boolean] = js.undefined
     
-    var tertiary: js.UndefOr[Boolean] = js.native
+    var tertiary: js.UndefOr[Boolean] = js.undefined
   }
   object ButtonProps {
     

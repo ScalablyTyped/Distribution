@@ -10,9 +10,9 @@ A Light–weight CSS Preprocessor
 | ------------------ | :-------------: |
 | Full name          | stylis |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 133 |
-| # downloads        | 95997057 |
+| # releases         | 7 |
+| # dependents       | 163 |
+| # downloads        | 106643912 |
 | # stars            | 1 |
 
 ## Links

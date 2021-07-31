@@ -2,7 +2,6 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: This struct is deprecated.
   */
-@js.native
 trait IMediaList extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait IMediaList extends StObject {
     * <installation_directory>\Qlik\Sense\Repository\Content\Default
     * The default installation directory is ProgramData.
     */
-  var qItems: js.Array[IMediaListItem] = js.native
+  var qItems: js.Array[IMediaListItem]
 }
 object IMediaList {
   

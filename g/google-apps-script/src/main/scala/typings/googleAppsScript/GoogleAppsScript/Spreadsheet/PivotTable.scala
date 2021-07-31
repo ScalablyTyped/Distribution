@@ -3,40 +3,38 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify pivot tables.
   */
-@js.native
 trait PivotTable extends StObject {
   
-  def addCalculatedPivotValue(name: String, formula: String): PivotValue = js.native
+  def addCalculatedPivotValue(name: String, formula: String): PivotValue
   
-  def addColumnGroup(sourceDataColumn: Integer): PivotGroup = js.native
+  def addColumnGroup(sourceDataColumn: Integer): PivotGroup
   
-  def addFilter(sourceDataColumn: Integer, filterCriteria: FilterCriteria): PivotFilter = js.native
+  def addFilter(sourceDataColumn: Integer, filterCriteria: FilterCriteria): PivotFilter
   
-  def addPivotValue(sourceDataColumn: Integer, summarizeFunction: PivotTableSummarizeFunction): PivotValue = js.native
+  def addPivotValue(sourceDataColumn: Integer, summarizeFunction: PivotTableSummarizeFunction): PivotValue
   
-  def addRowGroup(sourceDataColumn: Integer): PivotGroup = js.native
+  def addRowGroup(sourceDataColumn: Integer): PivotGroup
   
-  def getAnchorCell(): Range = js.native
+  def getAnchorCell(): Range
   
-  def getColumnGroups(): js.Array[PivotGroup] = js.native
+  def getColumnGroups(): js.Array[PivotGroup]
   
-  def getFilters(): js.Array[PivotFilter] = js.native
+  def getFilters(): js.Array[PivotFilter]
   
-  def getPivotValues(): js.Array[PivotValue] = js.native
+  def getPivotValues(): js.Array[PivotValue]
   
-  def getRowGroups(): js.Array[PivotGroup] = js.native
+  def getRowGroups(): js.Array[PivotGroup]
   
-  def getValuesDisplayOrientation(): Dimension = js.native
+  def getValuesDisplayOrientation(): Dimension
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setValuesDisplayOrientation(dimension: Dimension): PivotTable = js.native
+  def setValuesDisplayOrientation(dimension: Dimension): PivotTable
 }
 object PivotTable {
   

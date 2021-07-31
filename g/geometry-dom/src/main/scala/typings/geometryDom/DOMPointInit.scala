@@ -2,31 +2,29 @@ package typings.geometryDom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMPointInit extends StObject {
   
   /**
     * w coordinate: 1
     */
-  var w: js.UndefOr[Double] = js.native
+  var w: js.UndefOr[Double] = js.undefined
   
   /**
     * x coordinate: 0
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * y coordinate: 0
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * z coordinate: 0
     */
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object DOMPointInit {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateConfigReportResponse extends StObject {
   
   /** list of ChangeReport, each corresponding to comparison between two service configurations. */
-  var changeReports: js.UndefOr[js.Array[ChangeReport]] = js.native
+  var changeReports: js.UndefOr[js.Array[ChangeReport]] = js.undefined
   
   /** Errors / Linter warnings associated with the service definition this report belongs to. */
-  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.native
+  var diagnostics: js.UndefOr[js.Array[Diagnostic]] = js.undefined
   
   /** ID of the service configuration this report belongs to. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Name of the service this report belongs to. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object GenerateConfigReportResponse {
   

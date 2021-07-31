@@ -21,92 +21,90 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.pop_
 import typings.tuyaPanelKit.tuyaPanelKitStrings.push_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationOptions> */
-@js.native
 trait PartialStackNavigationOpt extends StObject {
   
-  var animationEnabled: js.UndefOr[Boolean] = js.native
+  var animationEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var animationTypeForReplace: js.UndefOr[push_ | pop_] = js.native
+  var animationTypeForReplace: js.UndefOr[push_ | pop_] = js.undefined
   
-  var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.native
+  var cardOverlay: js.UndefOr[js.Function1[/* props */ StyleWithAnimatedValue, ReactNode]] = js.undefined
   
-  var cardOverlayEnabled: js.UndefOr[Boolean] = js.native
+  var cardOverlayEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var cardShadowEnabled: js.UndefOr[Boolean] = js.native
+  var cardShadowEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var cardStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var cardStyleInterpolator: js.UndefOr[StackCardStyleInterpolator] = js.native
+  var cardStyleInterpolator: js.UndefOr[StackCardStyleInterpolator] = js.undefined
   
-  var detachPreviousScreen: js.UndefOr[Boolean] = js.native
+  var detachPreviousScreen: js.UndefOr[Boolean] = js.undefined
   
-  var gestureDirection: js.UndefOr[GestureDirection] = js.native
+  var gestureDirection: js.UndefOr[GestureDirection] = js.undefined
   
-  var gestureEnabled: js.UndefOr[Boolean] = js.native
+  var gestureEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var gestureResponseDistance: js.UndefOr[Horizontal] = js.native
+  var gestureResponseDistance: js.UndefOr[Horizontal] = js.undefined
   
-  var gestureVelocityImpact: js.UndefOr[Double] = js.native
+  var gestureVelocityImpact: js.UndefOr[Double] = js.undefined
   
-  var header: js.UndefOr[js.Function1[/* props */ StackHeaderProps, ReactNode]] = js.native
+  var header: js.UndefOr[js.Function1[/* props */ StackHeaderProps, ReactNode]] = js.undefined
   
-  var headerBackAccessibilityLabel: js.UndefOr[String] = js.native
+  var headerBackAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var headerBackAllowFontScaling: js.UndefOr[Boolean] = js.native
+  var headerBackAllowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.native
+  var headerBackImage: js.UndefOr[js.Function1[/* props */ TintColorString, ReactNode]] = js.undefined
   
-  var headerBackTitle: js.UndefOr[String] = js.native
+  var headerBackTitle: js.UndefOr[String] = js.undefined
   
-  var headerBackTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var headerBackTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var headerBackTitleVisible: js.UndefOr[Boolean] = js.native
+  var headerBackTitleVisible: js.UndefOr[Boolean] = js.undefined
   
-  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.native
+  var headerBackground: js.UndefOr[js.Function1[/* props */ Style, ReactNode]] = js.undefined
   
-  var headerLeft: js.UndefOr[js.Function1[/* props */ StackHeaderLeftButtonProps, ReactNode]] = js.native
+  var headerLeft: js.UndefOr[js.Function1[/* props */ StackHeaderLeftButtonProps, ReactNode]] = js.undefined
   
-  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerLeftContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
-  var headerPressColorAndroid: js.UndefOr[String] = js.native
+  var headerPressColorAndroid: js.UndefOr[String] = js.undefined
   
-  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.native
+  var headerRight: js.UndefOr[js.Function1[/* props */ TintColor, ReactNode]] = js.undefined
   
-  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerRightContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
-  var headerShown: js.UndefOr[Boolean] = js.native
+  var headerShown: js.UndefOr[Boolean] = js.undefined
   
-  var headerStatusBarHeight: js.UndefOr[Double] = js.native
+  var headerStatusBarHeight: js.UndefOr[Double] = js.undefined
   
-  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
-  var headerStyleInterpolator: js.UndefOr[StackHeaderStyleInterpolator] = js.native
+  var headerStyleInterpolator: js.UndefOr[StackHeaderStyleInterpolator] = js.undefined
   
-  var headerTintColor: js.UndefOr[String] = js.native
+  var headerTintColor: js.UndefOr[String] = js.undefined
   
-  var headerTitle: js.UndefOr[String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])] = js.native
+  var headerTitle: js.UndefOr[String | (js.Function1[/* props */ StackHeaderTitleProps, ReactNode])] = js.undefined
   
-  var headerTitleAlign: js.UndefOr[left | center] = js.native
+  var headerTitleAlign: js.UndefOr[left | center] = js.undefined
   
-  var headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.native
+  var headerTitleAllowFontScaling: js.UndefOr[Boolean] = js.undefined
   
-  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.native
+  var headerTitleContainerStyle: js.UndefOr[WithAnimatedValue[StyleProp[ViewStyle]]] = js.undefined
   
-  var headerTitleStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.native
+  var headerTitleStyle: js.UndefOr[WithAnimatedValue[StyleProp[TextStyle]]] = js.undefined
   
-  var headerTransparent: js.UndefOr[Boolean] = js.native
+  var headerTransparent: js.UndefOr[Boolean] = js.undefined
   
-  var headerTruncatedBackTitle: js.UndefOr[String] = js.native
+  var headerTruncatedBackTitle: js.UndefOr[String] = js.undefined
   
-  var safeAreaInsets: js.UndefOr[Bottom] = js.native
+  var safeAreaInsets: js.UndefOr[Bottom] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var transitionSpec: js.UndefOr[Close] = js.native
+  var transitionSpec: js.UndefOr[Close] = js.undefined
 }
 object PartialStackNavigationOpt {
   

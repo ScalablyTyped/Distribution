@@ -2,15 +2,13 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistrictSearchResult extends StObject {
   
-  var districtList: js.Array[District] = js.native
+  var districtList: js.Array[District]
   
-  var info: String = js.native
+  var info: String
 }
 object DistrictSearchResult {
   

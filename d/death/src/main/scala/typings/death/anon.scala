@@ -4,29 +4,27 @@ import typings.death.deathBooleans.`false`
 import typings.death.deathBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Debug extends StObject {
     
-    var SIGINT: js.UndefOr[Boolean] = js.native
+    var SIGINT: js.UndefOr[Boolean] = js.undefined
     
-    var SIGQUIT: js.UndefOr[Boolean] = js.native
+    var SIGQUIT: js.UndefOr[Boolean] = js.undefined
     
-    var SIGTERM: js.UndefOr[Boolean] = js.native
+    var SIGTERM: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var uncaughtException: `true` = js.native
+    var uncaughtException: `true`
   }
   object Debug {
     
     @scala.inline
-    def apply(uncaughtException: `true`): Debug = {
-      val __obj = js.Dynamic.literal(uncaughtException = uncaughtException.asInstanceOf[js.Any])
+    def apply(): Debug = {
+      val __obj = js.Dynamic.literal(uncaughtException = true)
       __obj.asInstanceOf[Debug]
     }
     
@@ -62,18 +60,17 @@ object anon {
     }
   }
   
-  @js.native
   trait SIGINT extends StObject {
     
-    var SIGINT: js.UndefOr[Boolean] = js.native
+    var SIGINT: js.UndefOr[Boolean] = js.undefined
     
-    var SIGQUIT: js.UndefOr[Boolean] = js.native
+    var SIGQUIT: js.UndefOr[Boolean] = js.undefined
     
-    var SIGTERM: js.UndefOr[Boolean] = js.native
+    var SIGTERM: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var uncaughtException: js.UndefOr[`false`] = js.native
+    var uncaughtException: js.UndefOr[`false`] = js.undefined
   }
   object SIGINT {
     

@@ -12,10 +12,13 @@ import typings.uglifyJs.uglifyJsStrings.strict
 import typings.uglifyJs.uglifyJsStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("uglify-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait InlineFunctions extends StObject
@@ -24,23 +27,31 @@ object mod {
   object InlineFunctions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[InlineFunctions with Double] = js.native
+    def apply(value: Double): js.UndefOr[InlineFunctions & Double] = js.native
     
     @js.native
-    sealed trait Disabled extends InlineFunctions
-    /* 0 */ val Disabled: typings.uglifyJs.mod.InlineFunctions.Disabled with Double = js.native
+    sealed trait Disabled
+      extends StObject
+         with InlineFunctions
+    /* 0 */ val Disabled: typings.uglifyJs.mod.InlineFunctions.Disabled & Double = js.native
     
     @js.native
-    sealed trait SimpleFunctions extends InlineFunctions
-    /* 1 */ val SimpleFunctions: typings.uglifyJs.mod.InlineFunctions.SimpleFunctions with Double = js.native
+    sealed trait SimpleFunctions
+      extends StObject
+         with InlineFunctions
+    /* 1 */ val SimpleFunctions: typings.uglifyJs.mod.InlineFunctions.SimpleFunctions & Double = js.native
     
     @js.native
-    sealed trait WithArguments extends InlineFunctions
-    /* 2 */ val WithArguments: typings.uglifyJs.mod.InlineFunctions.WithArguments with Double = js.native
+    sealed trait WithArguments
+      extends StObject
+         with InlineFunctions
+    /* 2 */ val WithArguments: typings.uglifyJs.mod.InlineFunctions.WithArguments & Double = js.native
     
     @js.native
-    sealed trait WithArgumentsAndVariables extends InlineFunctions
-    /* 3 */ val WithArgumentsAndVariables: typings.uglifyJs.mod.InlineFunctions.WithArgumentsAndVariables with Double = js.native
+    sealed trait WithArgumentsAndVariables
+      extends StObject
+         with InlineFunctions
+    /* 3 */ val WithArgumentsAndVariables: typings.uglifyJs.mod.InlineFunctions.WithArgumentsAndVariables & Double = js.native
   }
   
   @js.native
@@ -50,94 +61,95 @@ object mod {
   object OutputQuoteStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OutputQuoteStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[OutputQuoteStyle & Double] = js.native
     
     @js.native
-    sealed trait AlwaysDouble extends OutputQuoteStyle
-    /* 2 */ val AlwaysDouble: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysDouble with Double = js.native
+    sealed trait AlwaysDouble
+      extends StObject
+         with OutputQuoteStyle
+    /* 2 */ val AlwaysDouble: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysDouble & Double = js.native
     
     @js.native
-    sealed trait AlwaysOriginal extends OutputQuoteStyle
-    /* 3 */ val AlwaysOriginal: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysOriginal with Double = js.native
+    sealed trait AlwaysOriginal
+      extends StObject
+         with OutputQuoteStyle
+    /* 3 */ val AlwaysOriginal: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysOriginal & Double = js.native
     
     @js.native
-    sealed trait AlwaysSingle extends OutputQuoteStyle
-    /* 1 */ val AlwaysSingle: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysSingle with Double = js.native
+    sealed trait AlwaysSingle
+      extends StObject
+         with OutputQuoteStyle
+    /* 1 */ val AlwaysSingle: typings.uglifyJs.mod.OutputQuoteStyle.AlwaysSingle & Double = js.native
     
     @js.native
-    sealed trait PreferDouble extends OutputQuoteStyle
-    /* 0 */ val PreferDouble: typings.uglifyJs.mod.OutputQuoteStyle.PreferDouble with Double = js.native
+    sealed trait PreferDouble
+      extends StObject
+         with OutputQuoteStyle
+    /* 0 */ val PreferDouble: typings.uglifyJs.mod.OutputQuoteStyle.PreferDouble & Double = js.native
   }
   
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: String): MinifyOutput = js.native
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: String, options: MinifyOptions): MinifyOutput = js.native
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: js.Array[String]): MinifyOutput = js.native
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: js.Array[String], options: MinifyOptions): MinifyOutput = js.native
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: StringDictionary[String]): MinifyOutput = js.native
-  @JSImport("uglify-js", "minify")
-  @js.native
-  def minify(files: StringDictionary[String], options: MinifyOptions): MinifyOutput = js.native
+  @scala.inline
+  def minify(files: String): MinifyOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[MinifyOutput]
+  @scala.inline
+  def minify(files: String, options: MinifyOptions): MinifyOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MinifyOutput]
+  @scala.inline
+  def minify(files: js.Array[String]): MinifyOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[MinifyOutput]
+  @scala.inline
+  def minify(files: js.Array[String], options: MinifyOptions): MinifyOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MinifyOutput]
+  @scala.inline
+  def minify(files: StringDictionary[String]): MinifyOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any]).asInstanceOf[MinifyOutput]
+  @scala.inline
+  def minify(files: StringDictionary[String], options: MinifyOptions): MinifyOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("minify")(files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MinifyOutput]
   
-  @js.native
   trait CompressOptions extends StObject {
     
     /**
       * Replace `arguments[index]` with function parameter name whenever possible.
       * @default true
       */
-    var arguments: js.UndefOr[Boolean] = js.native
+    var arguments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Apply optimizations to assignment expressions
       * @default ture
       */
-    var assignments: js.UndefOr[Boolean] = js.native
+    var assignments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Various optimizations for boolean context, for example `!!a ? b : c → a ? b : c`
       * @default true
       */
-    var booleans: js.UndefOr[Boolean] = js.native
+    var booleans: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Collapse single-use non-constant variables, side effects permitting.
       * @default true
       */
-    var collapse_vars: js.UndefOr[Boolean] = js.native
+    var collapse_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Apply certain optimizations to binary nodes, e.g. `!(a <= b) → a > b,` attempts to negate binary nodes, e.g. `a = !b && !c && !d && !e → a=!(b||c||d||e)` etc
       * @default true
       */
-    var comparisons: js.UndefOr[Boolean] = js.native
+    var comparisons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Apply optimizations for `if-s` and conditional expressions.
       * @default true
       */
-    var conditionals: js.UndefOr[Boolean] = js.native
+    var conditionals: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove unreachable code
       * @default true
       */
-    var dead_code: js.UndefOr[Boolean] = js.native
+    var dead_code: js.UndefOr[Boolean] = js.undefined
     
     /**
       * remove redundant or non-standard directives
       * @default true
       */
-    var directives: js.UndefOr[Boolean] = js.native
+    var directives: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass `true` to discard calls to console.* functions.
@@ -145,42 +157,42 @@ object mod {
       * arguments after dropping the function call then use `pure_funcs` instead.
       * @default true
       */
-    var drop_console: js.UndefOr[Boolean] = js.native
+    var drop_console: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove `debugger;` statements
       * @default true
       */
-    var drop_debugger: js.UndefOr[Boolean] = js.native
+    var drop_debugger: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Attempt to evaluate constant expressions
       * @default true
       */
-    var evaluate: js.UndefOr[Boolean] = js.native
+    var evaluate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass `true` to preserve completion values from terminal statements without `return`, e.g. in bookmarklets.
       * @default false
       */
-    var expression: js.UndefOr[Boolean] = js.native
+    var expression: js.UndefOr[Boolean] = js.undefined
     
     /**
       * convert declarations from varto function whenever possible
       * @default true
       */
-    var functions: js.UndefOr[Boolean] = js.native
+    var functions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default {}
       */
-    var global_defs: js.UndefOr[js.Object] = js.native
+    var global_defs: js.UndefOr[js.Object] = js.undefined
     
     /**
       * hoist function declarations
       * @default false
       */
-    var hoist_funs: js.UndefOr[Boolean] = js.native
+    var hoist_funs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hoist properties from constant object and array literals into regular variables subject to a set of constraints.
@@ -188,19 +200,19 @@ object mod {
       * the compress option passes set to 2 or higher, and the compress option toplevel enabled.
       * @default true
       */
-    var hoist_props: js.UndefOr[Boolean] = js.native
+    var hoist_props: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hoist var declarations (this is `false` by default because it seems to increase the size of the output in general)
       * @default false
       */
-    var hoist_vars: js.UndefOr[Boolean] = js.native
+    var hoist_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optimizations for if/return and if/continue
       * @default true
       */
-    var if_return: js.UndefOr[Boolean] = js.native
+    var if_return: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Inline calls to function with simple/return statement
@@ -212,58 +224,58 @@ object mod {
       * - true -- same as `WithArgumentsAndVariables`
       * @default true
       */
-    var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.native
+    var `inline`: js.UndefOr[Boolean | InlineFunctions] = js.undefined
     
     /**
       * join consecutive `var` statements
       * @default true
       */
-    var join_vars: js.UndefOr[Boolean] = js.native
+    var join_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents the compressor from discarding unused function arguments.
       * You need this for code which relies on `Function.length`
       * @default 'strict'
       */
-    var keep_fargs: js.UndefOr[strict | Boolean] = js.native
+    var keep_fargs: js.UndefOr[strict | Boolean] = js.undefined
     
     /**
       * Pass true to prevent the compressor from discarding function names.
       * Useful for code relying on `Function.prototype.name`.
       * @default false
       */
-    var keep_fnames: js.UndefOr[Boolean] = js.native
+    var keep_fnames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass true to prevent Infinity from being compressed into `1/0`, which may cause performance issues on `Chrome`
       * @default false
       */
-    var keep_infinity: js.UndefOr[Boolean] = js.native
+    var keep_infinity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optimizations for `do`, `while` and `for` loops when we can statically determine the condition.
       * @default true
       */
-    var loops: js.UndefOr[Boolean] = js.native
+    var loops: js.UndefOr[Boolean] = js.undefined
     
     /**
       * combine and reuse variables.
       * @default true
       */
-    var merge_vars: js.UndefOr[Boolean] = js.native
+    var merge_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * negate `Immediately-Called Function Expressions` where the return value is discarded,
       * to avoid the parens that the code generator would insert.
       * @default true
       */
-    var negate_iife: js.UndefOr[Boolean] = js.native
+    var negate_iife: js.UndefOr[Boolean] = js.undefined
     
     /**
       * compact duplicate keys in object literals
       * @default true
       */
-    var objects: js.UndefOr[Boolean] = js.native
+    var objects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of times to run compress.
@@ -271,13 +283,13 @@ object mod {
       * Keep in mind more passes will take more time.
       * @default 1
       */
-    var passes: js.UndefOr[Double] = js.native
+    var passes: js.UndefOr[Double] = js.undefined
     
     /**
       * Rewrite property access using the dot notation, for example `foo["bar"]` to `foo.bar`
       * @default true
       */
-    var properties: js.UndefOr[Boolean] = js.native
+    var properties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of names and UglifyJS will assume that those functions do not produce side effects.
@@ -289,7 +301,7 @@ object mod {
       * implementation adds some overhead (compression will be slower).
       * @default null
       */
-    var pure_funcs: js.UndefOr[js.Array[String] | Null] = js.native
+    var pure_funcs: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * If you pass true for this, UglifyJS will assume that object property access
@@ -298,7 +310,7 @@ object mod {
       * i.e. not null or undefine
       * @default 'strict'
       */
-    var pure_getters: js.UndefOr[Boolean | strict] = js.native
+    var pure_getters: js.UndefOr[Boolean | strict] = js.undefined
     
     /**
       * Allows single-use functions to be inlined as function expressions when permissible allowing further optimization.
@@ -306,13 +318,13 @@ object mod {
       * this option is disabled. Does not negatively impact other major browsers.
       * @default true
       */
-    var reduce_funcs: js.UndefOr[Boolean] = js.native
+    var reduce_funcs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Improve optimization on variables assigned with and used as constant values.
       * @default true
       */
-    var reduce_vars: js.UndefOr[Boolean] = js.native
+    var reduce_vars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * join consecutive simple statements using the comma operator.
@@ -325,104 +337,104 @@ object mod {
       * a value of 20 or less is recommended
       * @default true
       */
-    var sequences: js.UndefOr[Boolean] = js.native
+    var sequences: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass false to disable potentially dropping functions marked as "pure".
       * @default true
       */
-    var side_effects: js.UndefOr[Boolean] = js.native
+    var side_effects: js.UndefOr[Boolean] = js.undefined
     
     /**
       * compact string concatenations
       * @default true
       */
-    var strings: js.UndefOr[Boolean] = js.native
+    var strings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * De-duplicate and remove unreachable `switch` branches.
       * @default true
       */
-    var switches: js.UndefOr[Boolean] = js.native
+    var switches: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent specific toplevel functions and variables from unused removal
       * (can be array, comma-separated, RegExp or function. Implies toplevel)
       * @default null
       */
-    var top_retain: js.UndefOr[Boolean | Null] = js.native
+    var top_retain: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Drop unreferenced functions ("funcs") and/or variables ("vars") in the top level scope (false by default,
       * true to drop both unreferenced functions and variables)
       * @default false
       */
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Transforms typeof foo == "undefined" into foo === void 0.
       * Note: recommend to set this value to false for IE10 and earlier versions due to known issues
       * @default true
       */
-    var typeofs: js.UndefOr[Boolean] = js.native
+    var typeofs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * apply "unsafe" transformations (discussion below)
       * @default false
       */
-    var unsafe: js.UndefOr[Boolean] = js.native
+    var unsafe: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Compress and mangle `Function(args, code)` when both args and code are string literals.
       * @default false
       */
-    var unsafe_Function: js.UndefOr[Boolean] = js.native
+    var unsafe_Function: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Compress expressions like a `<= b` assuming none of the operands can be (coerced to) `NaN`.
       * @default false
       */
-    var unsafe_comps: js.UndefOr[Boolean] = js.native
+    var unsafe_comps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optimize numerical expressions like `2 * x * 3` into `6 * x`,
       * which may give imprecise floating point results.
       * @default false
       */
-    var unsafe_math: js.UndefOr[Boolean] = js.native
+    var unsafe_math: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optimize expressions like `Array.prototype.slice.call(a)` into `[].slice.call(a)`
       * @default false
       */
-    var unsafe_proto: js.UndefOr[Boolean] = js.native
+    var unsafe_proto: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable substitutions of variables with `RegExp` values the same way as if they are constants.
       * @default false
       */
-    var unsafe_regexp: js.UndefOr[Boolean] = js.native
+    var unsafe_regexp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * substitute void 0 if there is a variable named undefined in scope
       * (variable name will be mangled, typically reduced to a single character)
       * @default false
       */
-    var unsafe_undefined: js.UndefOr[Boolean] = js.native
+    var unsafe_undefined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * drop unreferenced functions and variables
       * (simple direct variable assignments do not count as references unless set to "keep_assign")
       * @default true
       */
-    var unused: js.UndefOr[Boolean] = js.native
+    var unused: js.UndefOr[Boolean] = js.undefined
     
     /**
       * convert block-scoped declaractions into `var`
       * whenever safe to do so
       * @default true
       */
-    var varify: js.UndefOr[Boolean] = js.native
+    var varify: js.UndefOr[Boolean] = js.undefined
   }
   object CompressOptions {
     
@@ -740,22 +752,21 @@ object mod {
     }
   }
   
-  @js.native
   trait MangleOptions extends StObject {
     
     /** Pass true to mangle names visible in scopes where `eval` or with are used. */
-    var eval: js.UndefOr[Boolean] = js.native
+    var eval: js.UndefOr[Boolean] = js.undefined
     
     /** Pass true to not mangle function names. Useful for code relying on `Function.prototype.name`. */
-    var keep_fnames: js.UndefOr[Boolean] = js.native
+    var keep_fnames: js.UndefOr[Boolean] = js.undefined
     
-    var properties: js.UndefOr[Boolean | ManglePropertiesOptions] = js.native
+    var properties: js.UndefOr[Boolean | ManglePropertiesOptions] = js.undefined
     
     /** Pass an array of identifiers that should be excluded from mangling. Example: `["foo", "bar"]`. */
-    var reserved: js.UndefOr[js.Array[String]] = js.native
+    var reserved: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Pass true to mangle names declared in the top level scope. */
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
   }
   object MangleOptions {
     
@@ -803,23 +814,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ManglePropertiesOptions extends StObject {
     
     /** Use true to allow the mangling of builtin DOM properties. Not recommended to override this setting. */
-    var builtins: js.UndefOr[Boolean] = js.native
+    var builtins: js.UndefOr[Boolean] = js.undefined
     
     /** Mangle names with the original name still present. Pass an empty string "" to enable, or a non-empty string to set the debug suffix. */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** Only mangle unquoted property names */
-    var keep_quoted: js.UndefOr[Boolean] = js.native
+    var keep_quoted: js.UndefOr[Boolean] = js.undefined
     
     /** Pass a RegExp literal to only mangle property names matching the regular expression. */
-    var regex: js.UndefOr[RegExp] = js.native
+    var regex: js.UndefOr[RegExp] = js.undefined
     
     /** Do not mangle property names listed in the reserved array */
-    var reserved: js.UndefOr[js.Array[String]] = js.native
+    var reserved: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ManglePropertiesOptions {
     
@@ -867,7 +877,6 @@ object mod {
     }
   }
   
-  @js.native
   trait MinifyOptions extends StObject {
     
     /**
@@ -875,27 +884,27 @@ object mod {
       * Pass an object to specify custom compress options.
       * @default {}
       */
-    var compress: js.UndefOr[`false` | CompressOptions] = js.native
+    var compress: js.UndefOr[`false` | CompressOptions] = js.undefined
     
     /**
       * Set to true to support IE8
       * @default false
       */
-    var ie8: js.UndefOr[Boolean] = js.native
+    var ie8: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass true to prevent discarding or mangling of function names.
       * Useful for code relying on Function.prototype.name.
       * @default false
       */
-    var keep_fnames: js.UndefOr[Boolean] = js.native
+    var keep_fnames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass `false` to skip mangling names,
       * or pass an object to specify mangle options (see below).
       * @default true
       */
-    var mangle: js.UndefOr[Boolean | MangleOptions] = js.native
+    var mangle: js.UndefOr[Boolean | MangleOptions] = js.undefined
     
     /**
       * Pass an empty object {} or a previously used nameCache object
@@ -903,38 +912,38 @@ object mod {
       * Note: this is a read/write property. `minify()` will read the name cache state of this object
       * and update it during minification so that it may be reused or externally persisted by the user
       */
-    var nameCache: js.UndefOr[js.Object] = js.native
+    var nameCache: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Pass an object if you wish to specify additional output options.
       * The defaults are optimized for best compression
       */
-    var output: js.UndefOr[OutputOptions] = js.native
+    var output: js.UndefOr[OutputOptions] = js.undefined
     
     /**
       * Pass an object if you wish to specify some additional parse options.
       */
-    var parse: js.UndefOr[ParseOptions] = js.native
+    var parse: js.UndefOr[ParseOptions] = js.undefined
     
     /**
       * Pass an object if you wish to specify source map options.
       * @default false
       */
-    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.native
+    var sourceMap: js.UndefOr[Boolean | SourceMapOptions] = js.undefined
     
     /**
       * Set to `true` if you wish to enable top level variable and function name mangling
       * and to drop unused variables and functions.
       * @default false
       */
-    var toplevel: js.UndefOr[Boolean] = js.native
+    var toplevel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pass `true` to return compressor warnings in result.warnings.
       * Use the value `verbose` for more detailed warnings.
       * @default false
       */
-    var warnings: js.UndefOr[Boolean | verbose] = js.native
+    var warnings: js.UndefOr[Boolean | verbose] = js.undefined
   }
   object MinifyOptions {
     
@@ -1009,16 +1018,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MinifyOutput extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var map: String = js.native
+    var map: String
     
-    var warnings: js.UndefOr[js.Array[String]] = js.native
+    var warnings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object MinifyOutput {
     
@@ -1054,44 +1062,43 @@ object mod {
     }
   }
   
-  @js.native
   trait OutputOptions extends StObject {
     
-    var ascii_only: js.UndefOr[Boolean] = js.native
+    var ascii_only: js.UndefOr[Boolean] = js.undefined
     
-    var beautify: js.UndefOr[Boolean] = js.native
+    var beautify: js.UndefOr[Boolean] = js.undefined
     
-    var braces: js.UndefOr[Boolean] = js.native
+    var braces: js.UndefOr[Boolean] = js.undefined
     
-    var comments: js.UndefOr[Boolean | all | some | RegExp] = js.native
+    var comments: js.UndefOr[Boolean | all | some | RegExp] = js.undefined
     
-    var indent_level: js.UndefOr[Double] = js.native
+    var indent_level: js.UndefOr[Double] = js.undefined
     
-    var indent_start: js.UndefOr[Boolean] = js.native
+    var indent_start: js.UndefOr[Boolean] = js.undefined
     
-    var inline_script: js.UndefOr[Boolean] = js.native
+    var inline_script: js.UndefOr[Boolean] = js.undefined
     
-    var keep_quoted_props: js.UndefOr[Boolean] = js.native
+    var keep_quoted_props: js.UndefOr[Boolean] = js.undefined
     
-    var max_line_len: js.UndefOr[Boolean | Double] = js.native
+    var max_line_len: js.UndefOr[Boolean | Double] = js.undefined
     
-    var preamble: js.UndefOr[String] = js.native
+    var preamble: js.UndefOr[String] = js.undefined
     
-    var preserve_line: js.UndefOr[Boolean] = js.native
+    var preserve_line: js.UndefOr[Boolean] = js.undefined
     
-    var quote_keys: js.UndefOr[Boolean] = js.native
+    var quote_keys: js.UndefOr[Boolean] = js.undefined
     
-    var quote_style: js.UndefOr[OutputQuoteStyle] = js.native
+    var quote_style: js.UndefOr[OutputQuoteStyle] = js.undefined
     
-    var semicolons: js.UndefOr[Boolean] = js.native
+    var semicolons: js.UndefOr[Boolean] = js.undefined
     
-    var shebang: js.UndefOr[Boolean] = js.native
+    var shebang: js.UndefOr[Boolean] = js.undefined
     
-    var webkit: js.UndefOr[Boolean] = js.native
+    var webkit: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var wrap_iife: js.UndefOr[Boolean] = js.native
+    var wrap_iife: js.UndefOr[Boolean] = js.undefined
   }
   object OutputOptions {
     
@@ -1214,23 +1221,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * Support top level `return` statements
       * @default false
       */
-    var bare_returns: js.UndefOr[Boolean] = js.native
+    var bare_returns: js.UndefOr[Boolean] = js.undefined
     
     /** @default true */
-    var html5_comments: js.UndefOr[Boolean] = js.native
+    var html5_comments: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Support `#!command` as the first line
       * @default true
       */
-    var shebang: js.UndefOr[Boolean] = js.native
+    var shebang: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     
@@ -1263,24 +1269,23 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceMapOptions extends StObject {
     
-    var content: js.UndefOr[RawSourceMap | `inline`] = js.native
+    var content: js.UndefOr[RawSourceMap | `inline`] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var includeSources: js.UndefOr[Boolean] = js.native
+    var includeSources: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Include symbol names in the source map
       * @default true
       */
-    var names: js.UndefOr[Boolean] = js.native
+    var names: js.UndefOr[Boolean] = js.undefined
     
-    var root: js.UndefOr[String] = js.native
+    var root: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String | `inline`] = js.native
+    var url: js.UndefOr[String | `inline`] = js.undefined
   }
   object SourceMapOptions {
     

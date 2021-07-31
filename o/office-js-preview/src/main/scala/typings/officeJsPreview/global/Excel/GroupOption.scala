@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object GroupOption extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.GroupOption with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.GroupOption & String] = js.native
   
-  /* "ByColumns" */ val byColumns: typings.officeJsPreview.Excel.GroupOption.byColumns with String = js.native
+  /* "ByColumns" */ val byColumns: typings.officeJsPreview.Excel.GroupOption.byColumns & String = js.native
   
-  /* "ByRows" */ val byRows: typings.officeJsPreview.Excel.GroupOption.byRows with String = js.native
+  /* "ByRows" */ val byRows: typings.officeJsPreview.Excel.GroupOption.byRows & String = js.native
 }

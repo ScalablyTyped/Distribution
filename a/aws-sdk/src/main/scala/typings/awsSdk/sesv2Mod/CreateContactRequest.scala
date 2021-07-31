@@ -2,36 +2,34 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateContactRequest extends StObject {
   
   /**
     * The attribute data attached to a contact.
     */
-  var AttributesData: js.UndefOr[typings.awsSdk.sesv2Mod.AttributesData] = js.native
+  var AttributesData: js.UndefOr[typings.awsSdk.sesv2Mod.AttributesData] = js.undefined
   
   /**
     * The name of the contact list to which the contact should be added.
     */
-  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName = js.native
+  var ContactListName: typings.awsSdk.sesv2Mod.ContactListName
   
   /**
     * The contact's email address.
     */
-  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress
   
   /**
     * The contact's preferences for being opted-in to or opted-out of topics.
     */
-  var TopicPreferences: js.UndefOr[TopicPreferenceList] = js.native
+  var TopicPreferences: js.UndefOr[TopicPreferenceList] = js.undefined
   
   /**
     * A boolean value status noting if the contact is unsubscribed from all contact list topics.
     */
-  var UnsubscribeAll: js.UndefOr[typings.awsSdk.sesv2Mod.UnsubscribeAll] = js.native
+  var UnsubscribeAll: js.UndefOr[typings.awsSdk.sesv2Mod.UnsubscribeAll] = js.undefined
 }
 object CreateContactRequest {
   

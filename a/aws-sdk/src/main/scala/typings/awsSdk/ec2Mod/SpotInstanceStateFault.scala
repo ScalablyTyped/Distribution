@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotInstanceStateFault extends StObject {
   
   /**
     * The reason code for the Spot Instance state change.
     */
-  var Code: js.UndefOr[String] = js.native
+  var Code: js.UndefOr[String] = js.undefined
   
   /**
     * The message for the Spot Instance state change.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object SpotInstanceStateFault {
   

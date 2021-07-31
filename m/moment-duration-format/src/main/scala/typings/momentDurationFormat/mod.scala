@@ -11,14 +11,16 @@ import typings.momentDurationFormat.momentDurationFormatStrings.ss_
 import typings.momentDurationFormat.momentDurationFormatStrings.sss_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(_moment: FnCall): Unit = ^.asInstanceOf[js.Dynamic].apply(_moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("moment-duration-format", JSImport.Namespace)
   @js.native
-  def apply(_moment: FnCall): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* augmented module */
   object momentAugmentingMod {
@@ -30,44 +32,43 @@ object mod {
       val fn: Duration_ = js.native
     }
     
-    @js.native
     trait DurationFormatSettings extends StObject {
       
-      var decimalSeparator: js.UndefOr[String] = js.native
+      var decimalSeparator: js.UndefOr[String] = js.undefined
       
-      var forceLength: js.UndefOr[Boolean] = js.native
+      var forceLength: js.UndefOr[Boolean] = js.undefined
       
-      var grouping: js.UndefOr[js.Array[Double]] = js.native
+      var grouping: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var groupingSeparator: js.UndefOr[String] = js.native
+      var groupingSeparator: js.UndefOr[String] = js.undefined
       
-      var largest: js.UndefOr[Double] = js.native
+      var largest: js.UndefOr[Double] = js.undefined
       
-      var maxValue: js.UndefOr[Double] = js.native
+      var maxValue: js.UndefOr[Double] = js.undefined
       
-      var minValue: js.UndefOr[Double] = js.native
+      var minValue: js.UndefOr[Double] = js.undefined
       
-      var precision: js.UndefOr[Double] = js.native
+      var precision: js.UndefOr[Double] = js.undefined
       
-      var stopTrim: js.UndefOr[String] = js.native
+      var stopTrim: js.UndefOr[String] = js.undefined
       
-      var template: js.UndefOr[String | TemplateFunction] = js.native
+      var template: js.UndefOr[String | TemplateFunction] = js.undefined
       
-      var trim: js.UndefOr[`false` | UnitOfTrimV1 | UnitOfTrim | String | (js.Array[UnitOfTrim | String])] = js.native
+      var trim: js.UndefOr[`false` | UnitOfTrimV1 | UnitOfTrim | String | (js.Array[UnitOfTrim | String])] = js.undefined
       
-      var trunc: js.UndefOr[`true`] = js.native
+      var trunc: js.UndefOr[`true`] = js.undefined
       
-      var useGrouping: js.UndefOr[Boolean] = js.native
+      var useGrouping: js.UndefOr[Boolean] = js.undefined
       
-      var useLeftUnits: js.UndefOr[Boolean] = js.native
+      var useLeftUnits: js.UndefOr[Boolean] = js.undefined
       
-      var usePlural: js.UndefOr[Boolean] = js.native
+      var usePlural: js.UndefOr[Boolean] = js.undefined
       
-      var useSignificantDigits: js.UndefOr[`true`] = js.native
+      var useSignificantDigits: js.UndefOr[`true`] = js.undefined
       
-      var useToLocaleString: js.UndefOr[Boolean] = js.native
+      var useToLocaleString: js.UndefOr[Boolean] = js.undefined
       
-      var userLocale: js.UndefOr[String] = js.native
+      var userLocale: js.UndefOr[String] = js.undefined
     }
     object DurationFormatSettings {
       
@@ -197,56 +198,55 @@ object mod {
     }
     
     /* Inlined {[ duration in moment-duration-format.moment-duration-format.moment.DurationToken ]: string} */
-    @js.native
     trait DurationLabelDef extends StObject {
       
-      var M: String = js.native
+      var M: String
       
-      var MM: String = js.native
+      var MM: String
       
-      var MMM: String = js.native
+      var MMM: String
       
-      var S: String = js.native
+      var S: String
       
-      var SS: String = js.native
+      var SS: String
       
-      var SSS: String = js.native
+      var SSS: String
       
-      var d: String = js.native
+      var d: String
       
-      var dd: String = js.native
+      var dd: String
       
-      var ddd: String = js.native
+      var ddd: String
       
-      var h: String = js.native
+      var h: String
       
-      var hh: String = js.native
+      var hh: String
       
-      var hhh: String = js.native
+      var hhh: String
       
-      var m: String = js.native
+      var m: String
       
-      var mm: String = js.native
+      var mm: String
       
-      var mmm: String = js.native
+      var mmm: String
       
-      var s: String = js.native
+      var s: String
       
-      var ss: String = js.native
+      var ss: String
       
-      var sss: String = js.native
+      var sss: String
       
-      var w: String = js.native
+      var w: String
       
-      var ww: String = js.native
+      var ww: String
       
-      var www: String = js.native
+      var www: String
       
-      var y: String = js.native
+      var y: String
       
-      var yy: String = js.native
+      var yy: String
       
-      var yyy: String = js.native
+      var yyy: String
     }
     object DurationLabelDef {
       
@@ -358,12 +358,11 @@ object mod {
       def standard: typings.momentDurationFormat.momentDurationFormatStrings.standard = "standard".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.standard]
     }
     
-    @js.native
     trait DurationLabelTypeDef extends StObject {
       
-      var string: String = js.native
+      var string: String
       
-      var `type`: DurationLabelType = js.native
+      var `type`: DurationLabelType
     }
     object DurationLabelTypeDef {
       
@@ -404,14 +403,13 @@ object mod {
     }
     
     /* Inlined {[ template in moment-duration-format.moment-duration-format.moment.DurationTemplate ]: string} */
-    @js.native
     trait DurationTimeDef extends StObject {
       
-      var HM: String = js.native
+      var HM: String
       
-      var HMS: String = js.native
+      var HMS: String
       
-      var MS: String = js.native
+      var MS: String
     }
     object DurationTimeDef {
       
@@ -537,21 +535,35 @@ object mod {
       def yyy: typings.momentDurationFormat.momentDurationFormatStrings.yyy = "yyy".asInstanceOf[typings.momentDurationFormat.momentDurationFormatStrings.yyy]
     }
     
-    @js.native
     trait Duration_ extends StObject {
       
-      def format(): String = js.native
-      def format(settings: DurationFormatSettings): String = js.native
-      def format(template: String): String = js.native
-      def format(template: String, precision: Double): String = js.native
-      def format(template: String, precision: Double, settings: DurationFormatSettings): String = js.native
-      def format(template: String, settings: DurationFormatSettings): String = js.native
-      def format(template: TemplateFunction): String = js.native
-      def format(template: TemplateFunction, precision: Double): String = js.native
-      def format(template: TemplateFunction, precision: Double, settings: DurationFormatSettings): String = js.native
-      def format(template: TemplateFunction, settings: DurationFormatSettings): String = js.native
+      def format(): String
+      def format(settings: DurationFormatSettings): String
+      def format(template: String): String
+      def format(template: String, precision: Double): String
+      def format(template: String, precision: Double, settings: DurationFormatSettings): String
+      def format(template: String, settings: DurationFormatSettings): String
+      def format(template: TemplateFunction): String
+      def format(template: TemplateFunction, precision: Double): String
+      def format(template: TemplateFunction, precision: Double, settings: DurationFormatSettings): String
+      def format(template: TemplateFunction, settings: DurationFormatSettings): String
       @JSName("format")
-      var format_Original: Format = js.native
+      var format_Original: Format
+    }
+    object Duration_ {
+      
+      @scala.inline
+      def apply(format: Format): Duration_ = {
+        val __obj = js.Dynamic.literal(format = format.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Duration_]
+      }
+      
+      @scala.inline
+      implicit class Duration_MutableBuilder[Self <: Duration_] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setFormat(value: Format): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
+      }
     }
     
     @js.native
@@ -571,22 +583,21 @@ object mod {
       var defaults: DurationFormatSettings = js.native
     }
     
-    @js.native
     trait LocaleSpecification extends StObject {
       
-      var durationLabelTypes: js.UndefOr[js.Array[DurationLabelTypeDef]] = js.native
+      var durationLabelTypes: js.UndefOr[js.Array[DurationLabelTypeDef]] = js.undefined
       
-      var durationLabelsLong: js.UndefOr[DurationLabelDef] = js.native
+      var durationLabelsLong: js.UndefOr[DurationLabelDef] = js.undefined
       
-      var durationLabelsShort: js.UndefOr[DurationLabelDef] = js.native
+      var durationLabelsShort: js.UndefOr[DurationLabelDef] = js.undefined
       
-      var durationLabelsStandard: js.UndefOr[DurationLabelDef] = js.native
+      var durationLabelsStandard: js.UndefOr[DurationLabelDef] = js.undefined
       
       var durationPluralKey: js.UndefOr[
             js.Function3[/* token */ String, /* integerValue */ Double, /* decimalValue */ Double, String]
-          ] = js.native
+          ] = js.undefined
       
-      var durationTimeTemplates: js.UndefOr[DurationTimeDef] = js.native
+      var durationTimeTemplates: js.UndefOr[DurationTimeDef] = js.undefined
     }
     object LocaleSpecification {
       

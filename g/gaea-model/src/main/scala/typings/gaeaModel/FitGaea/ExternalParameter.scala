@@ -2,22 +2,20 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalParameter extends StObject {
   
   /**
     * 名称
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * 类型
     * number string boolean
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ExternalParameter {
   

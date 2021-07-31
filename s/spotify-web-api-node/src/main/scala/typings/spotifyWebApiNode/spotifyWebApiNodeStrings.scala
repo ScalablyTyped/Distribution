@@ -3,18 +3,21 @@ package typings.spotifyWebApiNode
 import typings.spotifyWebApiNode.mod.SearchType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotifyWebApiNodeStrings {
   
   @js.native
-  sealed trait album extends SearchType
+  sealed trait album
+    extends StObject
+       with SearchType
   @scala.inline
   def album: album = "album".asInstanceOf[album]
   
   @js.native
-  sealed trait artist extends SearchType
+  sealed trait artist
+    extends StObject
+       with SearchType
   @scala.inline
   def artist: artist = "artist".asInstanceOf[artist]
   
@@ -44,7 +47,9 @@ object spotifyWebApiNodeStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait playlist extends SearchType
+  sealed trait playlist
+    extends StObject
+       with SearchType
   @scala.inline
   def playlist: playlist = "playlist".asInstanceOf[playlist]
   
@@ -54,7 +59,9 @@ object spotifyWebApiNodeStrings {
   def short_term: short_term = "short_term".asInstanceOf[short_term]
   
   @js.native
-  sealed trait track extends SearchType
+  sealed trait track
+    extends StObject
+       with SearchType
   @scala.inline
   def track: track = "track".asInstanceOf[track]
 }

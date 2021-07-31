@@ -2,19 +2,17 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for the `ListBrokers()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends StObject {
   
   /**
     * The list of brokers in the container.
     */
-  var brokers: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]] = js.native
+  var brokers: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1beta1Broker]] = js.undefined
   
   /**
     * This token allows you to get the next page of results for list requests.
@@ -23,7 +21,7 @@ trait SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse extends StObject 
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1ListBrokersResponse {
   

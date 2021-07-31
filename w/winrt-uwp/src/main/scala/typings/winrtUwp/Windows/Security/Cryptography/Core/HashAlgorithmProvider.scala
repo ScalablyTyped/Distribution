@@ -3,31 +3,29 @@ package typings.winrtUwp.Windows.Security.Cryptography.Core
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a cryptographic hash provider. For more information about hashes, see MACs, hashes, and signatures. */
-@js.native
 trait HashAlgorithmProvider extends StObject {
   
   /** Gets the name of the open hash algorithm. */
-  var algorithmName: String = js.native
+  var algorithmName: String
   
   /**
     * Creates a reusable CryptographicHash object.
     * @return Reusable hash object.
     */
-  def createHash(): CryptographicHash = js.native
+  def createHash(): CryptographicHash
   
   /**
     * Hashes binary data.
     * @param data Data to be hashed.
     * @return Hashed data.
     */
-  def hashData(data: IBuffer): IBuffer = js.native
+  def hashData(data: IBuffer): IBuffer
   
   /** Gets the length, in bytes, of the hash. */
-  var hashLength: Double = js.native
+  var hashLength: Double
 }
 object HashAlgorithmProvider {
   

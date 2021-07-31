@@ -3,14 +3,12 @@ package typings.jqueryJoyride
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object global {
     
-    @js.native
     trait JQuery extends StObject {
       
       /**
@@ -22,7 +20,7 @@ object mod {
         * joyride function
         * @return {Joyride} Joyride instance.
         */
-      def joyride(): JQuery = js.native
+      def joyride(): JQuery
       /**
         * Function with method name and params
         * @method
@@ -34,7 +32,7 @@ object mod {
         * joyride function
         * @return {Joyride} Joyride instance.
         */
-      def joyride(methodName: String, params: js.Any*): JQuery = js.native
+      def joyride(methodName: String, params: js.Any*): JQuery
       /**
         * Function with options
         * @method
@@ -45,13 +43,28 @@ object mod {
         * joyride function
         * @return {Joyride} Joyride instance.
         */
-      def joyride(options: JoyrideOptions): JQuery = js.native
+      def joyride(options: JoyrideOptions): JQuery
       /**
         * joyride function
         * @return {Joyride} Joyride instance.
         */
       @JSName("joyride")
-      var joyride_Original: Joyride = js.native
+      var joyride_Original: Joyride
+    }
+    object JQuery {
+      
+      @scala.inline
+      def apply(joyride: Joyride): JQuery = {
+        val __obj = js.Dynamic.literal(joyride = joyride.asInstanceOf[js.Any])
+        __obj.asInstanceOf[JQuery]
+      }
+      
+      @scala.inline
+      implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setJoyride(value: Joyride): Self = StObject.set(x, "joyride", value.asInstanceOf[js.Any])
+      }
     }
     
     @js.native
@@ -80,80 +93,79 @@ object mod {
       def apply(options: JoyrideOptions): JQuery = js.native
     }
     
-    @js.native
     trait JoyrideOptions extends StObject {
       
       /**
         * true or false - false tour starts when restart called
         * @member {boolean}
         */
-      var autoStart: js.UndefOr[Boolean] = js.native
+      var autoStart: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Will this cookie be attached to a domain, ie. '.notableapp.com'
         * @member {any}
         */
-      var cookieDomain: js.UndefOr[js.Any] = js.native
+      var cookieDomain: js.UndefOr[js.Any] = js.undefined
       
       /**
         * true/false for whether cookies are used
         * @member {boolean}
         */
-      var cookieMonster: js.UndefOr[Boolean] = js.native
+      var cookieMonster: js.UndefOr[Boolean] = js.undefined
       
       /**
         * choose your own cookie name
         * member {string}
         */
-      var cookieName: js.UndefOr[String] = js.native
+      var cookieName: js.UndefOr[String] = js.undefined
       
       /**
         * Set to '/' if you want the cookie for the whole website
         * @member {any}
         */
-      var cookiePath: js.UndefOr[js.Any] = js.native
+      var cookiePath: js.UndefOr[js.Any] = js.undefined
       
       /**
         *  Whether to expose the elements at each step in the tour (requires modal:true)
         * @member {boolean}
         */
-      var expose: js.UndefOr[Boolean] = js.native
+      var expose: js.UndefOr[Boolean] = js.undefined
       
       /**
         * true or false to control whether localstorage is used
         * @member {boolean}
         */
-      var localStorage: js.UndefOr[Boolean] = js.native
+      var localStorage: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Keyname in localstorage
         @member {string}
         */
-      var localStorageKey: js.UndefOr[String] = js.native
+      var localStorageKey: js.UndefOr[String] = js.undefined
       
       /**
         * Whether to cover page with modal during the tour
         * @member {boolean}
         */
-      var modal: js.UndefOr[Boolean] = js.native
+      var modal: js.UndefOr[Boolean] = js.undefined
       
       /**
         * true/false for next button visibility
         * @member {boolean}
         */
-      var nextButton: js.UndefOr[Boolean] = js.native
+      var nextButton: js.UndefOr[Boolean] = js.undefined
       
       /**
         * override on a per tooltip bases
         * @member {any}
         */
-      var nubPosition: js.UndefOr[js.Any] = js.native
+      var nubPosition: js.UndefOr[js.Any] = js.undefined
       
       /**
         * array of indexes where to pause the tour after
         * @member {any[]}
         */
-      var pauseAfter: js.UndefOr[js.Array[_]] = js.native
+      var pauseAfter: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * A method to call after an element has been exposed
@@ -164,7 +176,7 @@ object mod {
         */
       var postExposeCallback: js.UndefOr[
             js.Function3[/* index */ Double, /* nextTip */ JQuery, /* el */ js.UndefOr[JQuery], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * a method to call once the tour closes
@@ -175,7 +187,7 @@ object mod {
         */
       var postRideCallback: js.UndefOr[
             js.Function3[/* index */ Double, /* currentTip */ JQuery, /* isAborted */ js.UndefOr[Boolean], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * A method to call after each step
@@ -186,7 +198,7 @@ object mod {
         */
       var postStepCallback: js.UndefOr[
             js.Function3[/* index */ Double, /* currentTip */ JQuery, /* isAborted */ js.UndefOr[Boolean], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * A method to call before the tour starts (passed index, tip, and cloned exposed element)
@@ -197,7 +209,7 @@ object mod {
         */
       var preRideCallback: js.UndefOr[
             js.Function3[/* index */ Double, /* currentTip */ JQuery, /* el */ js.UndefOr[JQuery], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * A method to call before each step
@@ -208,73 +220,73 @@ object mod {
         */
       var preStepCallback: js.UndefOr[
             js.Function3[/* index */ Double, /* nextTip */ JQuery, /* el */ js.UndefOr[JQuery], Unit]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * whether to scroll to tips
         * @member {boolean}
         */
-      var scroll: js.UndefOr[Boolean] = js.native
+      var scroll: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Page scrolling speed in ms
         * @member {number}
         */
-      var scrollSpeed: js.UndefOr[Double] = js.native
+      var scrollSpeed: js.UndefOr[Double] = js.undefined
       
       /**
         * the index of the tooltip you want to start on (index of the li)
         * @member {number}
         */
-      var startOffset: js.UndefOr[Double] = js.native
+      var startOffset: js.UndefOr[Double] = js.undefined
       
       /**
         * true/false to start timer on first click
         * @member {boolean}
         */
-      var startTimerOnClick: js.UndefOr[Boolean] = js.native
+      var startTimerOnClick: js.UndefOr[Boolean] = js.undefined
       
       /**
         * HTML segments for tip layout
         * @member {JoyrideTemplate}
         */
-      var template: js.UndefOr[JoyrideTemplate] = js.native
+      var template: js.UndefOr[JoyrideTemplate] = js.undefined
       
       /**
         * 0 = off, all other numbers = time(ms)
         * @member {number}
         */
-      var timer: js.UndefOr[Double] = js.native
+      var timer: js.UndefOr[Double] = js.undefined
       
       /**
         * 'pop' or 'fade' in each tip
         * @member {string}
         */
-      var tipAnimation: js.UndefOr[String] = js.native
+      var tipAnimation: js.UndefOr[String] = js.undefined
       
       /**
         * if 'fade'- speed in ms of transition
         * @member {number}
         */
-      var tipAnimationFadeSpeed: js.UndefOr[Double] = js.native
+      var tipAnimationFadeSpeed: js.UndefOr[Double] = js.undefined
       
       /**
         * Where the tip be attached if not inline
         * @member {HTMLElement}
         */
-      var tipContainer: js.UndefOr[HTMLElement] = js.native
+      var tipContainer: js.UndefOr[HTMLElement] = js.undefined
       
       /**
         * 'top' or 'bottom' in relation to parent
         * @member {string}
         */
-      var tipLocation: js.UndefOr[String] = js.native
+      var tipLocation: js.UndefOr[String] = js.undefined
       
       /**
         * Version
         * @member {string}
         */
-      var version: js.UndefOr[String] = js.native
+      var version: js.UndefOr[String] = js.undefined
     }
     object JoyrideOptions {
       
@@ -354,7 +366,7 @@ object mod {
         def setNubPositionUndefined: Self = StObject.set(x, "nubPosition", js.undefined)
         
         @scala.inline
-        def setPauseAfter(value: js.Array[_]): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
+        def setPauseAfter(value: js.Array[js.Any]): Self = StObject.set(x, "pauseAfter", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setPauseAfterUndefined: Self = StObject.set(x, "pauseAfter", js.undefined)
@@ -463,50 +475,49 @@ object mod {
     /**
       * HTML segments for tip layout
       */
-    @js.native
     trait JoyrideTemplate extends StObject {
       
       /**
         * Button template
         * @member {string}
         */
-      var button: js.UndefOr[String] = js.native
+      var button: js.UndefOr[String] = js.undefined
       
       /**
         * Exposed Cover template
         * @member {string}
         */
-      var exposeCover: js.UndefOr[String] = js.native
+      var exposeCover: js.UndefOr[String] = js.undefined
       
       /**
         * Link template
         * @member {string}
         */
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
       /**
         * Modal template
         * @member {string}
         */
-      var modal: js.UndefOr[String] = js.native
+      var modal: js.UndefOr[String] = js.undefined
       
       /**
         * Timer template
         * @member {string}
         */
-      var timer: js.UndefOr[String] = js.native
+      var timer: js.UndefOr[String] = js.undefined
       
       /**
         * Tip template
         * @member {string}
         */
-      var tip: js.UndefOr[String] = js.native
+      var tip: js.UndefOr[String] = js.undefined
       
       /**
         * Wrapper template
         * @member {string}
         */
-      var wrapper: js.UndefOr[String] = js.native
+      var wrapper: js.UndefOr[String] = js.undefined
     }
     object JoyrideTemplate {
       

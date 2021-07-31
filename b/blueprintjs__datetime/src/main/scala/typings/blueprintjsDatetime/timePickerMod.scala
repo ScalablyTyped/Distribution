@@ -12,7 +12,6 @@ import typings.std.Date
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timePickerMod {
@@ -22,7 +21,7 @@ object timePickerMod {
   class TimePicker ()
     extends Component[ITimePickerProps, ITimePickerState, js.Any] {
     def this(props: ITimePickerProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: ITimePickerProps, context: js.Any) = this()
     
     @JSName("componentDidUpdate")
@@ -115,26 +114,27 @@ object timePickerMod {
     def SECOND_=(x: second): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SECOND")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ITimePickerProps extends IProps {
+  trait ITimePickerProps
+    extends StObject
+       with IProps {
     
     /**
       * Whether to focus the first input when it opens initially.
       * @default false
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial time the `TimePicker` will display.
       * This should not be set if `value` is set.
       */
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
     /**
       * Whether the time picker is non-interactive.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The latest time the user can select. The year, month, and day parts of the `Date` object are ignored.
@@ -143,7 +143,7 @@ object timePickerMod {
       * This is useful, for example, to express a time range that extends before and after midnight.
       * If the `maxTime` and `minTime` are equal, then the valid time range is constrained to only that one value.
       */
-    var maxTime: js.UndefOr[Date] = js.native
+    var maxTime: js.UndefOr[Date] = js.undefined
     
     /**
       * The earliest time the user can select. The year, month, and day parts of the `Date` object are ignored.
@@ -152,70 +152,70 @@ object timePickerMod {
       * This is useful, for example, to express a time range that extends before and after midnight.
       * If the `maxTime` and `minTime` are equal, then the valid time range is constrained to only that one value.
       */
-    var minTime: js.UndefOr[Date] = js.native
+    var minTime: js.UndefOr[Date] = js.undefined
     
     /**
       * Callback invoked on blur event emitted by specific time unit input
       */
     var onBlur: js.UndefOr[
         js.Function2[/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked when the user changes the time.
       */
-    var onChange: js.UndefOr[js.Function1[/* newTime */ Date, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* newTime */ Date, Unit]] = js.undefined
     
     /**
       * Callback invoked on focus event emitted by specific time unit input
       */
     var onFocus: js.UndefOr[
         js.Function2[/* event */ FocusEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked on keydown event emitted by specific time unit input
       */
     var onKeyDown: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked on keyup event emitted by specific time unit input
       */
     var onKeyUp: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLInputElement], /* unit */ TimeUnit, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The precision of time the user can set.
       * @default TimePrecision.MINUTE
       */
-    var precision: js.UndefOr[TimePrecision] = js.native
+    var precision: js.UndefOr[TimePrecision] = js.undefined
     
     /**
       * Whether all the text in each input should be selected on focus.
       * @default false
       */
-    var selectAllOnFocus: js.UndefOr[Boolean] = js.native
+    var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show arrows buttons for changing the time.
       * @default false
       */
-    var showArrowButtons: js.UndefOr[Boolean] = js.native
+    var showArrowButtons: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to use a 12 hour format with an AM/PM dropdown.
       * @default false
       */
-    var useAmPm: js.UndefOr[Boolean] = js.native
+    var useAmPm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The currently set time.
       * If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[Date | Null] = js.undefined
   }
   object ITimePickerProps {
     
@@ -323,20 +323,19 @@ object timePickerMod {
     }
   }
   
-  @js.native
   trait ITimePickerState extends StObject {
     
-    var hourText: js.UndefOr[String] = js.native
+    var hourText: js.UndefOr[String] = js.undefined
     
-    var isPm: js.UndefOr[Boolean] = js.native
+    var isPm: js.UndefOr[Boolean] = js.undefined
     
-    var millisecondText: js.UndefOr[String] = js.native
+    var millisecondText: js.UndefOr[String] = js.undefined
     
-    var minuteText: js.UndefOr[String] = js.native
+    var minuteText: js.UndefOr[String] = js.undefined
     
-    var secondText: js.UndefOr[String] = js.native
+    var secondText: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date] = js.native
+    var value: js.UndefOr[Date] = js.undefined
   }
   object ITimePickerState {
     

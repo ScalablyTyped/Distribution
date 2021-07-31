@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateFilter extends StObject {
   
   /**
     * A date range for the date filter.
     */
-  var DateRange: js.UndefOr[typings.awsSdk.securityhubMod.DateRange] = js.native
+  var DateRange: js.UndefOr[typings.awsSdk.securityhubMod.DateRange] = js.undefined
   
   /**
     * An end date for the date filter.
     */
-  var End: js.UndefOr[NonEmptyString] = js.native
+  var End: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A start date for the date filter.
     */
-  var Start: js.UndefOr[NonEmptyString] = js.native
+  var Start: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DateFilter {
   

@@ -6,32 +6,32 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa2-cors", JSImport.Namespace)
-  @js.native
-  def apply(): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa2-cors", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(options: Options): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa2-cors", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowMethods: js.UndefOr[js.Array[String]] = js.native
+    var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var credentials: js.UndefOr[Boolean] = js.native
+    var credentials: js.UndefOr[Boolean] = js.undefined
     
-    var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+    var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var origin: js.UndefOr[String | (js.Function1[/* ctx */ Context, Boolean | String])] = js.native
+    var origin: js.UndefOr[String | (js.Function1[/* ctx */ Context, Boolean | String])] = js.undefined
   }
   object Options {
     

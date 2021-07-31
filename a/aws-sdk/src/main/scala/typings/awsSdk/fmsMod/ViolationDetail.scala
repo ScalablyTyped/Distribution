@@ -2,46 +2,44 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViolationDetail extends StObject {
   
   /**
     * The AWS account that the violation details were requested for.
     */
-  var MemberAccount: AWSAccountId = js.native
+  var MemberAccount: AWSAccountId
   
   /**
     * The ID of the AWS Firewall Manager policy that the violation details were requested for.
     */
-  var PolicyId: typings.awsSdk.fmsMod.PolicyId = js.native
+  var PolicyId: typings.awsSdk.fmsMod.PolicyId
   
   /**
     * Brief description for the requested resource.
     */
-  var ResourceDescription: js.UndefOr[LengthBoundedString] = js.native
+  var ResourceDescription: js.UndefOr[LengthBoundedString] = js.undefined
   
   /**
     * The resource ID that the violation details were requested for.
     */
-  var ResourceId: typings.awsSdk.fmsMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.fmsMod.ResourceId
   
   /**
     * The ResourceTag objects associated with the resource.
     */
-  var ResourceTags: js.UndefOr[TagList] = js.native
+  var ResourceTags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The resource type that the violation details were requested for.
     */
-  var ResourceType: typings.awsSdk.fmsMod.ResourceType = js.native
+  var ResourceType: typings.awsSdk.fmsMod.ResourceType
   
   /**
     * List of violations for the requested resource.
     */
-  var ResourceViolations: typings.awsSdk.fmsMod.ResourceViolations = js.native
+  var ResourceViolations: typings.awsSdk.fmsMod.ResourceViolations
 }
 object ViolationDetail {
   

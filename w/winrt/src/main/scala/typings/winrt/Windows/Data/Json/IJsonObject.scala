@@ -2,25 +2,25 @@ package typings.winrt.Windows.Data.Json
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IJsonObject extends IJsonValue {
+trait IJsonObject
+  extends StObject
+     with IJsonValue {
   
-  def getNamedArray(name: String): JsonArray = js.native
+  def getNamedArray(name: String): JsonArray
   
-  def getNamedBoolean(name: String): Boolean = js.native
+  def getNamedBoolean(name: String): Boolean
   
-  def getNamedNumber(name: String): Double = js.native
+  def getNamedNumber(name: String): Double
   
-  def getNamedObject(name: String): JsonObject = js.native
+  def getNamedObject(name: String): JsonObject
   
-  def getNamedString(name: String): String = js.native
+  def getNamedString(name: String): String
   
-  def getNamedValue(name: String): JsonValue = js.native
+  def getNamedValue(name: String): JsonValue
   
-  def setNamedValue(name: String, value: IJsonValue): Unit = js.native
+  def setNamedValue(name: String, value: IJsonValue): Unit
 }
 object IJsonObject {
   

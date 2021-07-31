@@ -10,7 +10,6 @@ import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import typings.uirouterCore.viewInterfaceMod.ViewContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewViewMod {
@@ -47,14 +46,14 @@ object viewViewMod {
       *
       * @return {Array} Returns an array of fully-qualified view names.
       */
-    def active(): js.Array[_] = js.native
+    def active(): js.Array[js.Any] = js.native
     
     /**
       * Returns the list of views currently available on the page, by fully-qualified name.
       *
       * @return {Array} Returns an array of fully-qualified view names.
       */
-    def available(): js.Array[_] = js.native
+    def available(): js.Array[js.Any] = js.native
     
     def createViewConfig(path: js.Array[PathNode], decl: ViewDeclaration): js.Array[ViewConfig] = js.native
     
@@ -91,6 +90,10 @@ object viewViewMod {
   }
   /* static members */
   object ViewService {
+    
+    @JSImport("@uirouter/core/lib/view/view", "ViewService")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given a ui-view and a ViewConfig, determines if they "match".
@@ -149,9 +152,8 @@ object viewViewMod {
       *
       * @internal
       */
-    @JSImport("@uirouter/core/lib/view/view", "ViewService.matches")
-    @js.native
-    def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = js.native
+    @scala.inline
+    def matches(uiViewsByFqn: TypedMap[ActiveUIView], uiView: ActiveUIView): js.Function1[/* viewConfig */ ViewConfig, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("matches")(uiViewsByFqn.asInstanceOf[js.Any], uiView.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* viewConfig */ ViewConfig, Boolean]]
     
     /**
       * Normalizes a view's name from a state.views configuration block.
@@ -164,12 +166,10 @@ object viewViewMod {
       *
       * @returns the normalized uiViewName and uiViewContextAnchor that the view targets
       */
-    @JSImport("@uirouter/core/lib/view/view", "ViewService.normalizeUIViewTarget")
-    @js.native
-    def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = js.native
-    @JSImport("@uirouter/core/lib/view/view", "ViewService.normalizeUIViewTarget")
-    @js.native
-    def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = js.native
+    @scala.inline
+    def normalizeUIViewTarget(context: ViewContext): UiViewContextAnchor = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any]).asInstanceOf[UiViewContextAnchor]
+    @scala.inline
+    def normalizeUIViewTarget(context: ViewContext, rawViewName: String): UiViewContextAnchor = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeUIViewTarget")(context.asInstanceOf[js.Any], rawViewName.asInstanceOf[js.Any])).asInstanceOf[UiViewContextAnchor]
   }
   
   type ViewConfigFactory = js.Function2[
@@ -198,12 +198,11 @@ object viewViewMod {
   
   type ViewSyncListener = js.Function1[/* viewTuples */ js.Array[ViewTuple], Unit]
   
-  @js.native
   trait ViewTuple extends StObject {
     
-    var uiView: ActiveUIView = js.native
+    var uiView: ActiveUIView
     
-    var viewConfig: ViewConfig = js.native
+    var viewConfig: ViewConfig
   }
   object ViewTuple {
     

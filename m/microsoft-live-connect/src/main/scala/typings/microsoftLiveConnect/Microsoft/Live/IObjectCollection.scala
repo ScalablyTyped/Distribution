@@ -2,20 +2,18 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains a collection of one type of object.
   */
-@js.native
 trait IObjectCollection[T] extends StObject {
   
   /**
     * An array container for objects when a collection of objects is
     * returned.
     */
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
 }
 object IObjectCollection {
   
@@ -26,7 +24,7 @@ object IObjectCollection {
   }
   
   @scala.inline
-  implicit class IObjectCollectionMutableBuilder[Self <: IObjectCollection[_], T] (val x: Self with IObjectCollection[T]) extends AnyVal {
+  implicit class IObjectCollectionMutableBuilder[Self <: IObjectCollection[?], T] (val x: Self & IObjectCollection[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

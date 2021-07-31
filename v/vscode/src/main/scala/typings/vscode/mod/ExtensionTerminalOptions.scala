@@ -2,22 +2,20 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionTerminalOptions extends StObject {
   
   /**
     * A human-readable string which will be used to represent the terminal in the UI.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * An implementation of [Pseudoterminal](#Pseudoterminal) that allows an extension to
     * control a terminal.
     */
-  var pty: Pseudoterminal = js.native
+  var pty: Pseudoterminal
 }
 object ExtensionTerminalOptions {
   

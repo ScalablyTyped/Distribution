@@ -10,89 +10,87 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValue extends StObject {
   
-  def getBoolean(): Boolean = js.native
+  def getBoolean(): Boolean
   
-  def getBooleanArray(): js.Array[Boolean] = js.native
+  def getBooleanArray(): js.Array[Boolean]
   
-  def getChar16(): String = js.native
+  def getChar16(): String
   
-  def getChar16Array(): js.Array[String] = js.native
+  def getChar16Array(): js.Array[String]
   
-  def getDateTime(): Date = js.native
+  def getDateTime(): Date
   
-  def getDateTimeArray(): js.Array[Date] = js.native
+  def getDateTimeArray(): js.Array[Date]
   
-  def getDouble(): Double = js.native
+  def getDouble(): Double
   
-  def getDoubleArray(): Float64Array = js.native
+  def getDoubleArray(): Float64Array
   
-  def getGuid(): String = js.native
+  def getGuid(): String
   
-  def getGuidArray(): js.Array[String] = js.native
+  def getGuidArray(): js.Array[String]
   
-  def getInspectableArray(): js.Array[_] = js.native
+  def getInspectableArray(): js.Array[js.Any]
   
-  def getInt16(): Double = js.native
+  def getInt16(): Double
   
-  def getInt16Array(): Int16Array = js.native
+  def getInt16Array(): Int16Array
   
-  def getInt32(): Double = js.native
+  def getInt32(): Double
   
-  def getInt32Array(): Int32Array = js.native
+  def getInt32Array(): Int32Array
   
-  def getInt64(): Double = js.native
+  def getInt64(): Double
   
-  def getInt64Array(): js.Array[Double] = js.native
+  def getInt64Array(): js.Array[Double]
   
-  def getPoint(): Point = js.native
+  def getPoint(): Point
   
-  def getPointArray(): js.Array[Point] = js.native
+  def getPointArray(): js.Array[Point]
   
-  def getRect(): Rect = js.native
+  def getRect(): Rect
   
-  def getRectArray(): js.Array[Rect] = js.native
+  def getRectArray(): js.Array[Rect]
   
-  def getSingle(): Double = js.native
+  def getSingle(): Double
   
-  def getSingleArray(): Float32Array = js.native
+  def getSingleArray(): Float32Array
   
-  def getSize(): Size = js.native
+  def getSize(): Size
   
-  def getSizeArray(): js.Array[Size] = js.native
+  def getSizeArray(): js.Array[Size]
   
-  def getString(): String = js.native
+  def getString(): String
   
-  def getStringArray(): js.Array[String] = js.native
+  def getStringArray(): js.Array[String]
   
-  def getTimeSpan(): Double = js.native
+  def getTimeSpan(): Double
   
-  def getTimeSpanArray(): js.Array[Double] = js.native
+  def getTimeSpanArray(): js.Array[Double]
   
-  def getUInt16(): Double = js.native
+  def getUInt16(): Double
   
-  def getUInt16Array(): Uint16Array = js.native
+  def getUInt16Array(): Uint16Array
   
-  def getUInt32(): Double = js.native
+  def getUInt32(): Double
   
-  def getUInt32Array(): Uint32Array = js.native
+  def getUInt32Array(): Uint32Array
   
-  def getUInt64(): Double = js.native
+  def getUInt64(): Double
   
-  def getUInt64Array(): js.Array[Double] = js.native
+  def getUInt64Array(): js.Array[Double]
   
-  def getUInt8(): Double = js.native
+  def getUInt8(): Double
   
-  def getUInt8Array(): Uint8Array = js.native
+  def getUInt8Array(): Uint8Array
   
-  var isNumericScalar: Boolean = js.native
+  var isNumericScalar: Boolean
   
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
 }
 object IPropertyValue {
   
@@ -108,7 +106,7 @@ object IPropertyValue {
     getDoubleArray: () => Float64Array,
     getGuid: () => String,
     getGuidArray: () => js.Array[String],
-    getInspectableArray: () => js.Array[_],
+    getInspectableArray: () => js.Array[js.Any],
     getInt16: () => Double,
     getInt16Array: () => Int16Array,
     getInt32: () => Double,
@@ -177,7 +175,7 @@ object IPropertyValue {
     def setGetGuidArray(value: () => js.Array[String]): Self = StObject.set(x, "getGuidArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInspectableArray(value: () => js.Array[_]): Self = StObject.set(x, "getInspectableArray", js.Any.fromFunction0(value))
+    def setGetInspectableArray(value: () => js.Array[js.Any]): Self = StObject.set(x, "getInspectableArray", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetInt16(value: () => Double): Self = StObject.set(x, "getInt16", js.Any.fromFunction0(value))

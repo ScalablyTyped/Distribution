@@ -4,17 +4,15 @@ import typings.reactNativeFs.mod.DownloadResult
 import typings.reactNativeFs.mod.UploadResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait JobId extends StObject {
     
-    var jobId: Double = js.native
+    var jobId: Double
     
-    var promise: js.Promise[DownloadResult] = js.native
+    var promise: js.Promise[DownloadResult]
   }
   object JobId {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Promise extends StObject {
     
-    var jobId: Double = js.native
+    var jobId: Double
     
-    var promise: js.Promise[UploadResult] = js.native
+    var promise: js.Promise[UploadResult]
   }
   object Promise {
     

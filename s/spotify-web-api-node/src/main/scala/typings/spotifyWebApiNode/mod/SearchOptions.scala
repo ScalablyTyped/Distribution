@@ -3,13 +3,13 @@ package typings.spotifyWebApiNode.mod
 import typings.spotifyWebApiNode.spotifyWebApiNodeStrings.audio
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchOptions extends PaginationMarketOptions {
+trait SearchOptions
+  extends StObject
+     with PaginationMarketOptions {
   
-  var include_external: js.UndefOr[audio] = js.native
+  var include_external: js.UndefOr[audio] = js.undefined
 }
 object SearchOptions {
   

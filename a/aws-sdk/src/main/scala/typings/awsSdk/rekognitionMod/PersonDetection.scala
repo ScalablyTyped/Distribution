@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersonDetection extends StObject {
   
   /**
     * Details about a person whose path was tracked in a video.
     */
-  var Person: js.UndefOr[PersonDetail] = js.native
+  var Person: js.UndefOr[PersonDetail] = js.undefined
   
   /**
     * The time, in milliseconds from the start of the video, that the person's path was tracked.
     */
-  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.native
+  var Timestamp: js.UndefOr[typings.awsSdk.rekognitionMod.Timestamp] = js.undefined
 }
 object PersonDetection {
   

@@ -3,17 +3,15 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.IdentiferNameHashTable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionSession extends StObject {
   
-  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails] = js.native
+  var entries: IdentiferNameHashTable[CachedCompletionEntryDetails]
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var position: Double = js.native
+  var position: Double
 }
 object CompletionSession {
   

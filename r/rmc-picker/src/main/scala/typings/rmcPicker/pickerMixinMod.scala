@@ -4,23 +4,24 @@ import typings.react.mod.ReactNode
 import typings.rmcPicker.anon.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMixinMod {
   
-  @JSImport("rmc-picker/lib/PickerMixin", JSImport.Default)
+  @JSImport("rmc-picker/lib/PickerMixin", JSImport.Namespace)
   @js.native
-  def default(ComposedComponent: js.Any): Item = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(ComposedComponent: js.Any): Item = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ComposedComponent.asInstanceOf[js.Any]).asInstanceOf[Item]
+  
   trait IItemProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object IItemProps {
     

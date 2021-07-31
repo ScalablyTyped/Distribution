@@ -7,14 +7,16 @@ import typings.swiz.mod.struct.IField
 import typings.swiz.mod.struct.IObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("swiz", "Chain")
+  @JSImport("swiz", JSImport.Namespace)
   @js.native
-  def Chain_(): IChain = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Chain_(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("Chain")().asInstanceOf[IChain]
   
   @JSImport("swiz", "Cidr")
   @js.native
@@ -32,15 +34,19 @@ object mod {
   object SERIALIZATION extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SERIALIZATION with Double] = js.native
+    def apply(value: Double): js.UndefOr[SERIALIZATION & Double] = js.native
     
     @js.native
-    sealed trait SERIALIZATION_JSON extends SERIALIZATION
-    /* 0 */ val SERIALIZATION_JSON: typings.swiz.mod.SERIALIZATION.SERIALIZATION_JSON with Double = js.native
+    sealed trait SERIALIZATION_JSON
+      extends StObject
+         with SERIALIZATION
+    /* 0 */ val SERIALIZATION_JSON: typings.swiz.mod.SERIALIZATION.SERIALIZATION_JSON & Double = js.native
     
     @js.native
-    sealed trait SERIALIZATION_XML extends SERIALIZATION
-    /* 1 */ val SERIALIZATION_XML: typings.swiz.mod.SERIALIZATION.SERIALIZATION_XML with Double = js.native
+    sealed trait SERIALIZATION_XML
+      extends StObject
+         with SERIALIZATION
+    /* 1 */ val SERIALIZATION_XML: typings.swiz.mod.SERIALIZATION.SERIALIZATION_XML & Double = js.native
   }
   
   @JSImport("swiz", "Swiz")
@@ -73,7 +79,7 @@ object mod {
     
     def serializeForPagination(
       mode: SERIALIZATION,
-      array: js.Array[_],
+      array: js.Array[js.Any],
       metadata: js.Any,
       callback: js.Function2[/* err */ js.Any, /* result */ String, Unit]
     ): Unit = js.native
@@ -125,64 +131,59 @@ object mod {
     def setSchema(schema: IValveSchema): Valve = js.native
   }
   
-  @JSImport("swiz", "chain")
-  @js.native
-  def chain(): IChain = js.native
+  @scala.inline
+  def chain(): IChain = ^.asInstanceOf[js.Dynamic].applyDynamic("chain")().asInstanceOf[IChain]
   
-  @JSImport("swiz", "defToValve")
-  @js.native
-  def defToValve(`def`: js.Array[IObj]): js.Array[IValveSchema] = js.native
+  @scala.inline
+  def defToValve(`def`: js.Array[IObj]): js.Array[IValveSchema] = ^.asInstanceOf[js.Dynamic].applyDynamic("defToValve")(`def`.asInstanceOf[js.Any]).asInstanceOf[js.Array[IValveSchema]]
   
-  @JSImport("swiz", "stripSerializerTypes")
-  @js.native
-  def stripSerializerTypes(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def stripSerializerTypes(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("stripSerializerTypes")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object struct {
     
-    @JSImport("swiz", "struct.Field")
+    @JSImport("swiz", "struct")
     @js.native
-    def Field(name: String): IField = js.native
-    @JSImport("swiz", "struct.Field")
-    @js.native
-    def Field(name: String, options: IFieldOptions): IField = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("swiz", "struct.Obj")
-    @js.native
-    def Obj(name: String): IObj = js.native
-    @JSImport("swiz", "struct.Obj")
-    @js.native
-    def Obj(name: String, options: IObjOptions): IObj = js.native
+    @scala.inline
+    def Field(name: String): IField = ^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any]).asInstanceOf[IField]
+    @scala.inline
+    def Field(name: String, options: IFieldOptions): IField = (^.asInstanceOf[js.Dynamic].applyDynamic("Field")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IField]
     
-    @JSImport("swiz", "struct.coerce")
-    @js.native
-    def coerce(value: js.Any, coerceTo: String): js.Any = js.native
+    @scala.inline
+    def Obj(name: String): IObj = ^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any]).asInstanceOf[IObj]
+    @scala.inline
+    def Obj(name: String, options: IObjOptions): IObj = (^.asInstanceOf[js.Dynamic].applyDynamic("Obj")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[IObj]
     
-    @js.native
+    @scala.inline
+    def coerce(value: js.Any, coerceTo: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(value.asInstanceOf[js.Any], coerceTo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     trait IField extends StObject {
       
-      var attribute: Boolean = js.native
+      var attribute: Boolean
       
-      var coerceTo: js.Any = js.native
+      var coerceTo: js.Any
       
-      var desc: js.UndefOr[String] = js.native
+      var desc: js.UndefOr[String] = js.undefined
       
-      var enumerated: Boolean = js.native
+      var enumerated: Boolean
       
-      var filterFrom: js.Array[String] = js.native
+      var filterFrom: js.Array[String]
       
-      var ignorePublic: Boolean = js.native
+      var ignorePublic: Boolean
       
-      var name: String = js.native
+      var name: String
       
-      var options: IFieldOptions = js.native
+      var options: IFieldOptions
       
-      var plural: String = js.native
+      var plural: String
       
-      var singular: String = js.native
+      var singular: String
       
-      var src: String = js.native
+      var src: String
       
-      var `val`: js.UndefOr[IChain] = js.native
+      var `val`: js.UndefOr[IChain] = js.undefined
     }
     object IField {
       
@@ -253,28 +254,27 @@ object mod {
       }
     }
     
-    @js.native
     trait IFieldOptions extends StObject {
       
-      var attribute: js.UndefOr[Boolean] = js.native
+      var attribute: js.UndefOr[Boolean] = js.undefined
       
-      var coerceTo: js.UndefOr[String] = js.native
+      var coerceTo: js.UndefOr[String] = js.undefined
       
-      var desc: js.UndefOr[String] = js.native
+      var desc: js.UndefOr[String] = js.undefined
       
-      var enumerated: js.UndefOr[js.Any] = js.native
+      var enumerated: js.UndefOr[js.Any] = js.undefined
       
-      var filterFrom: js.UndefOr[js.Array[String]] = js.native
+      var filterFrom: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ignorePublic: js.UndefOr[Boolean] = js.native
+      var ignorePublic: js.UndefOr[Boolean] = js.undefined
       
-      var plural: js.UndefOr[String] = js.native
+      var plural: js.UndefOr[String] = js.undefined
       
-      var singular: js.UndefOr[String] = js.native
+      var singular: js.UndefOr[String] = js.undefined
       
-      var src: js.UndefOr[String] = js.native
+      var src: js.UndefOr[String] = js.undefined
       
-      var `val`: js.UndefOr[IChain] = js.native
+      var `val`: js.UndefOr[IChain] = js.undefined
     }
     object IFieldOptions {
       
@@ -352,18 +352,17 @@ object mod {
       }
     }
     
-    @js.native
     trait IObj extends StObject {
       
-      var fields: js.Array[IField] = js.native
+      var fields: js.Array[IField]
       
-      var name: String = js.native
+      var name: String
       
-      var options: IObjOptions = js.native
+      var options: IObjOptions
       
-      var plural: String = js.native
+      var plural: String
       
-      var singular: String = js.native
+      var singular: String
     }
     object IObj {
       
@@ -396,14 +395,13 @@ object mod {
       }
     }
     
-    @js.native
     trait IObjOptions extends StObject {
       
-      var fields: js.UndefOr[js.Array[IField]] = js.native
+      var fields: js.UndefOr[js.Array[IField]] = js.undefined
       
-      var plural: js.UndefOr[String] = js.native
+      var plural: js.UndefOr[String] = js.undefined
       
-      var singular: js.UndefOr[String] = js.native
+      var singular: js.UndefOr[String] = js.undefined
     }
     object IObjOptions {
       
@@ -441,7 +439,9 @@ object mod {
   }
   
   @js.native
-  trait IChain extends IValveSchemaMember {
+  trait IChain
+    extends StObject
+       with IValveSchemaMember {
     
     def contains(arg: js.Any): IChain = js.native
     
@@ -465,7 +465,7 @@ object mod {
     
     def immutable(): IChain = js.native
     
-    def inArray(array: js.Array[_]): IChain = js.native
+    def inArray(array: js.Array[js.Any]): IChain = js.native
     
     def is(pattern: String): IChain = js.native
     def is(pattern: String, modifiers: String): IChain = js.native
@@ -537,8 +537,8 @@ object mod {
     
     def notIPBlacklisted(): IChain = js.native
     
-    def notIn(values: js.Array[_]): IChain = js.native
-    def notIn(values: js.Array[_], caseSensitive: Boolean): IChain = js.native
+    def notIn(values: js.Array[js.Any]): IChain = js.native
+    def notIn(values: js.Array[js.Any], caseSensitive: Boolean): IChain = js.native
     
     def notNull(): IChain = js.native
     
@@ -579,10 +579,9 @@ object mod {
     def xss(is_image: Boolean): IChain = js.native
   }
   
-  @js.native
   trait ICheckOptions extends StObject {
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ICheckOptions {
     
@@ -603,10 +602,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ISerializable extends StObject {
     
-    def getSerializerType(): String = js.native
+    def getSerializerType(): String
   }
   object ISerializable {
     
@@ -624,14 +622,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ISwizOptions extends StObject {
     
-    var `for`: js.UndefOr[String] = js.native
+    var `for`: js.UndefOr[String] = js.undefined
     
-    var stripNulls: js.UndefOr[Boolean] = js.native
+    var stripNulls: js.UndefOr[Boolean] = js.undefined
     
-    var stripSerializerType: js.UndefOr[Boolean] = js.native
+    var stripSerializerType: js.UndefOr[Boolean] = js.undefined
   }
   object ISwizOptions {
     
@@ -664,14 +661,13 @@ object mod {
     }
   }
   
-  @js.native
   trait IValidator extends StObject {
     
-    def func(value: js.Any, baton: js.Any, callback: js.Function): Unit = js.native
+    def func(value: js.Any, baton: js.Any, callback: js.Function): Unit
     
-    var help: String = js.native
+    var help: String
     
-    var name: String = js.native
+    var name: String
   }
   object IValidator {
     
@@ -697,12 +693,11 @@ object mod {
   
   type IValveSchema = StringDictionary[IValveSchemaMember]
   
-  @js.native
   trait IValveSchemaMember extends StObject
   
-  @js.native
   trait IValveSchemaMemberArray
-    extends IValveSchemaMember
+    extends StObject
+       with IValveSchemaMember
        with /* index */ StringDictionary[IValveSchemaMember]
   object IValveSchemaMemberArray {
     

@@ -2,15 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorUtils extends StObject {
   
-  def getGlobalHandler(): ErrorHandlerCallback = js.native
+  def getGlobalHandler(): ErrorHandlerCallback
   
-  def setGlobalHandler(callback: ErrorHandlerCallback): Unit = js.native
+  def setGlobalHandler(callback: ErrorHandlerCallback): Unit
 }
 object ErrorUtils {
   

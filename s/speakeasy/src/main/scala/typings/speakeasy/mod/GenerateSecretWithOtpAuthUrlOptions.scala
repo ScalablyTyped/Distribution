@@ -3,24 +3,24 @@ package typings.speakeasy.mod
 import typings.speakeasy.speakeasyBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GenerateSecretWithOtpAuthUrlOptions extends GenerateSecretOptions {
+trait GenerateSecretWithOtpAuthUrlOptions
+  extends StObject
+     with GenerateSecretOptions {
   
   /**
     * Whether to output a Google Authenticator-compatible otpauth:// URL
     * (only returns otpauth:// URL, no QR code), defaults to false
     */
   @JSName("otpauth_url")
-  var otpauth_url_GenerateSecretWithOtpAuthUrlOptions: `true` = js.native
+  var otpauth_url_GenerateSecretWithOtpAuthUrlOptions: `true`
 }
 object GenerateSecretWithOtpAuthUrlOptions {
   
   @scala.inline
-  def apply(otpauth_url: `true`): GenerateSecretWithOtpAuthUrlOptions = {
-    val __obj = js.Dynamic.literal(otpauth_url = otpauth_url.asInstanceOf[js.Any])
+  def apply(): GenerateSecretWithOtpAuthUrlOptions = {
+    val __obj = js.Dynamic.literal(otpauth_url = true)
     __obj.asInstanceOf[GenerateSecretWithOtpAuthUrlOptions]
   }
   

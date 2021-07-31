@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("pc.ScriptHandler")
 @js.native
-class ScriptHandler protected () extends ResourceHandler {
+class ScriptHandler protected ()
+  extends StObject
+     with ResourceHandler {
   def this(app: typings.playcanvas.pc.Application) = this()
 }

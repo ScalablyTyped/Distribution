@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayPolicy extends StObject {
   
   /** Specifies cloud audit logging configuration for this policy. */
-  var auditConfigs: js.UndefOr[js.Array[ApigatewayAuditConfig]] = js.native
+  var auditConfigs: js.UndefOr[js.Array[ApigatewayAuditConfig]] = js.undefined
   
   /**
     * Associates a list of `members` to a `role`. Optionally, may specify a `condition` that determines how and when the `bindings` are applied. Each of the `bindings` must contain at
     * least one member.
     */
-  var bindings: js.UndefOr[js.Array[ApigatewayBinding]] = js.native
+  var bindings: js.UndefOr[js.Array[ApigatewayBinding]] = js.undefined
   
   /**
     * `etag` is used for optimistic concurrency control as a way to help prevent simultaneous updates of a policy from overwriting each other. It is strongly suggested that systems make
@@ -24,7 +22,7 @@ trait ApigatewayPolicy extends StObject {
     * Conditions, you must include the `etag` field whenever you call `setIamPolicy`. If you omit this field, then IAM allows you to overwrite a version `3` policy with a version `1`
     * policy, and all of the conditions in the version `3` policy are lost.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the format of the policy. Valid values are `0`, `1`, and `3`. Requests that specify an invalid value are rejected. Any operation that affects conditional role bindings
@@ -34,7 +32,7 @@ trait ApigatewayPolicy extends StObject {
     * policy, and all of the conditions in the version `3` policy are lost. If a policy does not include any conditions, operations on that policy may specify any valid version or leave
     * the field unset. To learn which resources support conditions in their IAM policies, see the [IAM documentation](https://cloud.google.com/iam/help/conditions/resource-policies).
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object ApigatewayPolicy {
   

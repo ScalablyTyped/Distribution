@@ -2,10 +2,8 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProrate extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait SchemaProrate extends StObject {
     * currency. Targeted countries have their prices set automatically based on
     * the default_price.
     */
-  var defaultPrice: js.UndefOr[SchemaPrice] = js.native
+  var defaultPrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Defines the first day on which the price takes effect.
     */
-  var start: js.UndefOr[SchemaMonthDay] = js.native
+  var start: js.UndefOr[SchemaMonthDay] = js.undefined
 }
 object SchemaProrate {
   

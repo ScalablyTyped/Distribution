@@ -2,27 +2,25 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellHeight extends StObject {
   
-  var cellHeight: js.UndefOr[Double] = js.native
+  var cellHeight: js.UndefOr[Double] = js.undefined
   
-  var cellMargin: js.UndefOr[Double] = js.native
+  var cellMargin: js.UndefOr[Double] = js.undefined
   
-  var cellPerRow: js.UndefOr[Double] = js.native
+  var cellPerRow: js.UndefOr[Double] = js.undefined
   
-  var cellWidth: js.UndefOr[Double] = js.native
+  var cellWidth: js.UndefOr[Double] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var palette: js.UndefOr[js.Array[js.Any]] = js.native
+  var palette: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object CellHeight {
   

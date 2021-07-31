@@ -2,21 +2,19 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Notification extends StObject {
   
-  var notification: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'][0] */ js.Any = js.native
+  var notification: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@storybook/api.@storybook/api/dist/modules/notifications.Notification>[0] */ js.Any
   
-  def onDismissNotification(id: String): Unit = js.native
+  def onDismissNotification(id: String): Unit
 }
 object Notification {
   
   @scala.inline
   def apply(
-    notification: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'][0] */ js.Any,
+    notification: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@storybook/api.@storybook/api/dist/modules/notifications.Notification>[0] */ js.Any,
     onDismissNotification: String => Unit
   ): Notification = {
     val __obj = js.Dynamic.literal(notification = notification.asInstanceOf[js.Any], onDismissNotification = js.Any.fromFunction1(onDismissNotification))
@@ -28,7 +26,7 @@ object Notification {
     
     @scala.inline
     def setNotification(
-      value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['notifications'][0] */ js.Any
+      value: /* import warning: importer.ImportType#apply Failed type conversion: std.Array<@storybook/api.@storybook/api/dist/modules/notifications.Notification>[0] */ js.Any
     ): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     
     @scala.inline

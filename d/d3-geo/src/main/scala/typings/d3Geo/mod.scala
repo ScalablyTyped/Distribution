@@ -13,343 +13,262 @@ import typings.geojson.mod.MultiLineString
 import typings.geojson.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-geo", "geoAlbers")
+  @JSImport("d3-geo", JSImport.Namespace)
   @js.native
-  def geoAlbers(): GeoConicProjection = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-geo", "geoAlbersUsa")
-  @js.native
-  def geoAlbersUsa(): GeoProjection_ = js.native
+  @scala.inline
+  def geoAlbers(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbers")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("d3-geo", "geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
-  @JSImport("d3-geo", "geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
-  @JSImport("d3-geo", "geoArea")
-  @js.native
-  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
-  @JSImport("d3-geo", "geoArea")
-  @js.native
-  def geoArea(`object`: GeoGeometryObjects): Double = js.native
+  @scala.inline
+  def geoAlbersUsa(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAlbersUsa")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoAzimuthalEqualArea")
-  @js.native
-  def geoAzimuthalEqualArea(): GeoProjection_ = js.native
+  @scala.inline
+  def geoArea(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoArea(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoArea")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("d3-geo", "geoAzimuthalEqualAreaRaw")
-  @js.native
-  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoAzimuthalEqualArea(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualArea")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoAzimuthalEquidistant")
-  @js.native
-  def geoAzimuthalEquidistant(): GeoProjection_ = js.native
+  @scala.inline
+  def geoAzimuthalEqualAreaRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEqualAreaRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoAzimuthalEquidistantRaw")
-  @js.native
-  def geoAzimuthalEquidistantRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoAzimuthalEquidistant(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistant")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-geo", "geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-geo", "geoBounds")
-  @js.native
-  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
-  @JSImport("d3-geo", "geoBounds")
-  @js.native
-  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def geoAzimuthalEquidistantRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoAzimuthalEquidistantRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = js.native
-  @JSImport("d3-geo", "geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = js.native
-  @JSImport("d3-geo", "geoCentroid")
-  @js.native
-  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = js.native
-  @JSImport("d3-geo", "geoCentroid")
-  @js.native
-  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def geoBounds(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
+  @scala.inline
+  def geoBounds(`object`: GeoGeometryObjects): js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoBounds")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Tuple2[Double, Double], js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-geo", "geoCircle")
-  @js.native
-  def geoCircle(): GeoCircleGenerator[_, _] = js.native
-  @JSImport("d3-geo", "geoCircle")
-  @js.native
-  def geoCircle_Datum[Datum](): GeoCircleGenerator[_, Datum] = js.native
-  @JSImport("d3-geo", "geoCircle")
-  @js.native
-  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = js.native
+  @scala.inline
+  def geoCentroid(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
+  @scala.inline
+  def geoCentroid(`object`: GeoGeometryObjects): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCentroid")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("d3-geo", "geoClipAntimeridian")
-  @js.native
-  def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = js.native
+  @scala.inline
+  def geoCircle(): GeoCircleGenerator[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, js.Any]]
   
-  @JSImport("d3-geo", "geoClipCircle")
-  @js.native
-  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+  @scala.inline
+  def geoCircle_Datum[Datum](): GeoCircleGenerator[js.Any, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[js.Any, Datum]]
   
-  @JSImport("d3-geo", "geoClipRectangle")
-  @js.native
-  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = js.native
+  @scala.inline
+  def geoCircle_ThisDatum[This, Datum](): GeoCircleGenerator[This, Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoCircle")().asInstanceOf[GeoCircleGenerator[This, Datum]]
   
-  @JSImport("d3-geo", "geoConicConformal")
-  @js.native
-  def geoConicConformal(): GeoConicProjection = js.native
+  @scala.inline
+  def geoClipAntimeridian(stream: GeoStream_): GeoStream_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipAntimeridian")(stream.asInstanceOf[js.Any]).asInstanceOf[GeoStream_]
   
-  @JSImport("d3-geo", "geoConicConformalRaw")
-  @js.native
-  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoClipCircle(angle: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoClipCircle")(angle.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @JSImport("d3-geo", "geoConicEqualArea")
-  @js.native
-  def geoConicEqualArea(): GeoConicProjection = js.native
+  @scala.inline
+  def geoClipRectangle(x0: Double, y0: Double, x1: Double, y1: Double): js.Function1[/* stream */ GeoStream_, GeoStream_] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoClipRectangle")(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* stream */ GeoStream_, GeoStream_]]
   
-  @JSImport("d3-geo", "geoConicEqualAreaRaw")
-  @js.native
-  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoConicConformal(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformal")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("d3-geo", "geoConicEquidistant")
-  @js.native
-  def geoConicEquidistant(): GeoConicProjection = js.native
+  @scala.inline
+  def geoConicConformalRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicConformalRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoConicEquidistantRaw")
-  @js.native
-  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = js.native
+  @scala.inline
+  def geoConicEqualArea(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualArea")().asInstanceOf[GeoConicProjection]
   
-  @JSImport("d3-geo", "geoContains")
-  @js.native
+  @scala.inline
+  def geoConicEqualAreaRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEqualAreaRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  
+  @scala.inline
+  def geoConicEquidistant(): GeoConicProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistant")().asInstanceOf[GeoConicProjection]
+  
+  @scala.inline
+  def geoConicEquidistantRaw(phi0: Double, phi1: Double): GeoRawProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("geoConicEquidistantRaw")(phi0.asInstanceOf[js.Any], phi1.asInstanceOf[js.Any])).asInstanceOf[GeoRawProjection]
+  
+  @scala.inline
   def geoContains(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     point: js.Tuple2[Double, Double]
-  ): Boolean = js.native
-  @JSImport("d3-geo", "geoContains")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def geoContains(
     `object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties],
     point: js.Tuple2[Double, Double]
-  ): Boolean = js.native
-  @JSImport("d3-geo", "geoContains")
-  @js.native
-  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = js.native
-  @JSImport("d3-geo", "geoContains")
-  @js.native
-  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def geoContains(`object`: ExtendedGeometryCollection[GeoGeometryObjects], point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def geoContains(`object`: GeoGeometryObjects, point: js.Tuple2[Double, Double]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("geoContains")(`object`.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("d3-geo", "geoDistance")
-  @js.native
-  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = js.native
+  @scala.inline
+  def geoDistance(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("d3-geo", "geoEqualEarth")
-  @js.native
-  def geoEqualEarth(): GeoProjection_ = js.native
+  @scala.inline
+  def geoEqualEarth(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarth")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoEqualEarthRaw")
-  @js.native
-  def geoEqualEarthRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoEqualEarthRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEqualEarthRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoEquirectangular")
-  @js.native
-  def geoEquirectangular(): GeoProjection_ = js.native
+  @scala.inline
+  def geoEquirectangular(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangular")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoEquirectangularRaw")
-  @js.native
-  def geoEquirectangularRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoEquirectangularRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoEquirectangularRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoGnomonic")
-  @js.native
-  def geoGnomonic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoGnomonic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonic")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoGnomonicRaw")
-  @js.native
-  def geoGnomonicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoGnomonicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGnomonicRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoGraticule")
-  @js.native
-  def geoGraticule(): GeoGraticuleGenerator = js.native
+  @scala.inline
+  def geoGraticule(): GeoGraticuleGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule")().asInstanceOf[GeoGraticuleGenerator]
   
-  @JSImport("d3-geo", "geoGraticule10")
-  @js.native
-  def geoGraticule10(): MultiLineString = js.native
+  @scala.inline
+  def geoGraticule10(): MultiLineString = ^.asInstanceOf[js.Dynamic].applyDynamic("geoGraticule10")().asInstanceOf[MultiLineString]
   
-  @JSImport("d3-geo", "geoIdentity")
-  @js.native
-  def geoIdentity(): GeoIdentityTransform = js.native
+  @scala.inline
+  def geoIdentity(): GeoIdentityTransform = ^.asInstanceOf[js.Dynamic].applyDynamic("geoIdentity")().asInstanceOf[GeoIdentityTransform]
   
-  @JSImport("d3-geo", "geoInterpolate")
-  @js.native
-  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = js.native
+  @scala.inline
+  def geoInterpolate(a: js.Tuple2[Double, Double], b: js.Tuple2[Double, Double]): js.Function1[/* t */ Double, js.Tuple2[Double, Double]] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoInterpolate")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, js.Tuple2[Double, Double]]]
   
-  @JSImport("d3-geo", "geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = js.native
-  @JSImport("d3-geo", "geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = js.native
-  @JSImport("d3-geo", "geoLength")
-  @js.native
-  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = js.native
-  @JSImport("d3-geo", "geoLength")
-  @js.native
-  def geoLength(`object`: GeoGeometryObjects): Double = js.native
+  @scala.inline
+  def geoLength(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: ExtendedGeometryCollection[GeoGeometryObjects]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def geoLength(`object`: GeoGeometryObjects): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("geoLength")(`object`.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("d3-geo", "geoMercator")
-  @js.native
-  def geoMercator(): GeoProjection_ = js.native
+  @scala.inline
+  def geoMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercator")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoMercatorRaw")
-  @js.native
-  def geoMercatorRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoMercatorRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoNaturalEarth1")
-  @js.native
-  def geoNaturalEarth1(): GeoProjection_ = js.native
+  @scala.inline
+  def geoNaturalEarth1(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoNaturalEarth1Raw")
-  @js.native
-  def geoNaturalEarth1Raw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoNaturalEarth1Raw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoNaturalEarth1Raw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoOrthographic")
-  @js.native
-  def geoOrthographic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoOrthographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographic")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoOrthographicRaw")
-  @js.native
-  def geoOrthographicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoOrthographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoOrthographicRaw")().asInstanceOf[GeoRawProjection]
   
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: Null, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: GeoProjection_): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: GeoStreamWrapper): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[_, GeoPermissibleObjects] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[_, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: js.UndefOr[scala.Nothing], context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = js.native
-  @JSImport("d3-geo", "geoPath")
-  @js.native
-  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = js.native
+  @scala.inline
+  def geoPath(): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: Null, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: Unit, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoProjection_): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoStreamWrapper): GeoPath_[js.Any, GeoPermissibleObjects] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
+  @scala.inline
+  def geoPath(projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, GeoPermissibleObjects] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, GeoPermissibleObjects]]
   
-  @JSImport("d3-geo", "geoProjection")
-  @js.native
-  def geoProjection(project: GeoRawProjection): GeoProjection_ = js.native
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[js.Any, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[js.Any, DatumObject]]
+  @scala.inline
+  def geoPath_DatumObject_GeoPermissibleObjects[DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[js.Any, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[js.Any, DatumObject]]
   
-  @JSImport("d3-geo", "geoProjectionMutator")
-  @js.native
-  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = js.native
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")().asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Null, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: Unit, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoProjection_, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper): GeoPath_[This, DatumObject] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any]).asInstanceOf[GeoPath_[This, DatumObject]]
+  @scala.inline
+  def geoPath_ThisDatumObject_GeoPermissibleObjects[This, DatumObject /* <: GeoPermissibleObjects */](projection: GeoStreamWrapper, context: GeoContext): GeoPath_[This, DatumObject] = (^.asInstanceOf[js.Dynamic].applyDynamic("geoPath")(projection.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[GeoPath_[This, DatumObject]]
   
-  @JSImport("d3-geo", "geoRotation")
-  @js.native
-  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = js.native
-  @JSImport("d3-geo", "geoRotation")
-  @js.native
-  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = js.native
+  @scala.inline
+  def geoProjection(project: GeoRawProjection): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjection")(project.asInstanceOf[js.Any]).asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoStereographic")
-  @js.native
-  def geoStereographic(): GeoProjection_ = js.native
+  @scala.inline
+  def geoProjectionMutator(factory: js.Function1[/* repeated */ js.Any, GeoRawProjection]): js.Function0[GeoProjection_] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoProjectionMutator")(factory.asInstanceOf[js.Any]).asInstanceOf[js.Function0[GeoProjection_]]
   
-  @JSImport("d3-geo", "geoStereographicRaw")
-  @js.native
-  def geoStereographicRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoRotation(angles: js.Tuple2[Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
+  @scala.inline
+  def geoRotation(angles: js.Tuple3[Double, Double, Double]): GeoRotation_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoRotation")(angles.asInstanceOf[js.Any]).asInstanceOf[GeoRotation_]
   
-  @JSImport("d3-geo", "geoStream")
-  @js.native
+  @scala.inline
+  def geoStereographic(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographic")().asInstanceOf[GeoProjection_]
+  
+  @scala.inline
+  def geoStereographicRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoStereographicRaw")().asInstanceOf[GeoRawProjection]
+  
+  @scala.inline
   def geoStream(
     `object`: ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]],
     stream: GeoStream_
-  ): Unit = js.native
-  @JSImport("d3-geo", "geoStream")
-  @js.native
-  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = js.native
-  @JSImport("d3-geo", "geoStream")
-  @js.native
-  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = js.native
-  @JSImport("d3-geo", "geoStream")
-  @js.native
-  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: ExtendedGeometryCollection[GeoGeometryObjects], stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def geoStream(`object`: GeoGeometryObjects, stream: GeoStream_): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("geoStream")(`object`.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("d3-geo", "geoTransform")
-  @js.native
-  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = js.native
+  @scala.inline
+  def geoTransform[T /* <: GeoTransformPrototype */](methods: T): `0`[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransform")(methods.asInstanceOf[js.Any]).asInstanceOf[`0`[T]]
   
-  @JSImport("d3-geo", "geoTransverseMercator")
-  @js.native
-  def geoTransverseMercator(): GeoProjection_ = js.native
+  @scala.inline
+  def geoTransverseMercator(): GeoProjection_ = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercator")().asInstanceOf[GeoProjection_]
   
-  @JSImport("d3-geo", "geoTransverseMercatorRaw")
-  @js.native
-  def geoTransverseMercatorRaw(): GeoRawProjection = js.native
+  @scala.inline
+  def geoTransverseMercatorRaw(): GeoRawProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("geoTransverseMercatorRaw")().asInstanceOf[GeoRawProjection]
   
-  @js.native
-  trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */] extends GeoJsonObject {
+  trait ExtendedFeature[GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */]
+    extends StObject
+       with GeoJsonObject {
     
-    var geometry: GeometryType = js.native
+    var geometry: GeometryType
     
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
-    var properties: Properties = js.native
+    var properties: Properties
   }
   object ExtendedFeature {
     
@@ -361,7 +280,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExtendedFeatureMutableBuilder[Self <: ExtendedFeature[_, _], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */] (val x: Self with (ExtendedFeature[GeometryType, Properties])) extends AnyVal {
+    implicit class ExtendedFeatureMutableBuilder[Self <: ExtendedFeature[?, ?], GeometryType /* <: GeoGeometryObjects | Null */, Properties /* <: GeoJsonProperties */] (val x: Self & (ExtendedFeature[GeometryType, Properties])) extends AnyVal {
       
       @scala.inline
       def setGeometry(value: GeometryType): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
@@ -377,10 +296,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ExtendedFeatureCollection[FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */] extends GeoJsonObject {
+  trait ExtendedFeatureCollection[FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */]
+    extends StObject
+       with GeoJsonObject {
     
-    var features: js.Array[FeatureType] = js.native
+    var features: js.Array[FeatureType]
   }
   object ExtendedFeatureCollection {
     
@@ -392,7 +312,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExtendedFeatureCollectionMutableBuilder[Self <: ExtendedFeatureCollection[_], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */] (val x: Self with ExtendedFeatureCollection[FeatureType]) extends AnyVal {
+    implicit class ExtendedFeatureCollectionMutableBuilder[Self <: ExtendedFeatureCollection[?], FeatureType /* <: ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties] */] (val x: Self & ExtendedFeatureCollection[FeatureType]) extends AnyVal {
       
       @scala.inline
       def setFeatures(value: js.Array[FeatureType]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
@@ -402,16 +322,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ExtendedGeometryCollection[GeometryType /* <: GeoGeometryObjects */] extends StObject {
     
-    var bbox: js.UndefOr[js.Array[Double]] = js.native
+    var bbox: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var crs: js.UndefOr[Properties] = js.native
+    var crs: js.UndefOr[Properties] = js.undefined
     
-    var geometries: js.Array[GeometryType] = js.native
+    var geometries: js.Array[GeometryType]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ExtendedGeometryCollection {
     
@@ -423,7 +342,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ExtendedGeometryCollectionMutableBuilder[Self <: ExtendedGeometryCollection[_], GeometryType /* <: GeoGeometryObjects */] (val x: Self with ExtendedGeometryCollection[GeometryType]) extends AnyVal {
+    implicit class ExtendedGeometryCollectionMutableBuilder[Self <: ExtendedGeometryCollection[?], GeometryType /* <: GeoGeometryObjects */] (val x: Self & ExtendedGeometryCollection[GeometryType]) extends AnyVal {
       
       @scala.inline
       def setBbox(value: js.Array[Double]): Self = StObject.set(x, "bbox", value.asInstanceOf[js.Any])
@@ -459,7 +378,7 @@ object mod {
       * with the current center, radius and precision. Any arguments are passed to the accessors.
       */
     def apply(d: Datum, args: js.Any*): Polygon = js.native
-    def apply(d: js.UndefOr[scala.Nothing], args: js.Any*): Polygon = js.native
+    def apply(d: Unit, args: js.Any*): Polygon = js.native
     
     /**
       * Returns the current center accessor, which defaults to a function returning [0, 0].
@@ -525,7 +444,9 @@ object mod {
   }
   
   @js.native
-  trait GeoConicProjection extends GeoProjection_ {
+  trait GeoConicProjection
+    extends StObject
+       with GeoProjection_ {
     
     /**
       * Return the standard parallels for the conic projection in degrees.
@@ -686,7 +607,9 @@ object mod {
   type GeoIdentityTranform = GeoIdentityTransform
   
   @js.native
-  trait GeoIdentityTransform extends GeoStreamWrapper {
+  trait GeoIdentityTransform
+    extends StObject
+       with GeoStreamWrapper {
     
     /**
       * Returns a new array [x, y] (typically in pixels) representing the projected point of the given point.
@@ -1069,7 +992,9 @@ object mod {
   type GeoPermissibleObjects = GeoGeometryObjects | ExtendedGeometryCollection[GeoGeometryObjects] | (ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]) | (ExtendedFeatureCollection[ExtendedFeature[GeoGeometryObjects | Null, GeoJsonProperties]])
   
   @js.native
-  trait GeoProjection_ extends GeoStreamWrapper {
+  trait GeoProjection_
+    extends StObject
+       with GeoStreamWrapper {
     
     /**
       * Returns a new array [x, y] (typically in pixels) representing the projected point of the given point.
@@ -1466,20 +1391,19 @@ object mod {
     def invert(point: js.Tuple2[Double, Double]): js.Tuple2[Double, Double] = js.native
   }
   
-  @js.native
   trait GeoSphere extends StObject {
     
     /**
       * Sphere geometry type
       */
-    var `type`: Sphere = js.native
+    var `type`: Sphere
   }
   object GeoSphere {
     
     @scala.inline
-    def apply(`type`: Sphere): GeoSphere = {
+    def apply(): GeoSphere = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Sphere")
       __obj.asInstanceOf[GeoSphere]
     }
     
@@ -1491,7 +1415,6 @@ object mod {
     }
   }
   
-  @js.native
   trait GeoStreamWrapper extends StObject {
     
     /**
@@ -1501,7 +1424,7 @@ object mod {
       *
       * @param stream An input stream
       */
-    def stream(stream: GeoStream_): GeoStream_ = js.native
+    def stream(stream: GeoStream_): GeoStream_
   }
   object GeoStreamWrapper {
     
@@ -1562,20 +1485,19 @@ object mod {
     var sphere: js.UndefOr[js.Function0[Unit]] = js.native
   }
   
-  @js.native
   trait GeoTransformPrototype extends StObject {
     
     /**
       * Indicates the end of a line or ring. Within a polygon, indicates the end of a ring.
       * Unlike GeoJSON, the redundant closing coordinate of a ring is not indicated via point, and instead is implied via lineEnd within a polygon.
       */
-    var lineEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type with Stream, Unit]] = js.native
+    var lineEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type & Stream, Unit]] = js.undefined
     
     /**
       * Indicates the start of a line or ring. Within a polygon, indicates the start of a ring. The first ring of a polygon is the exterior ring, and is typically clockwise.
       * Any subsequent rings indicate holes in the polygon, and are typically counterclockwise.
       */
-    var lineStart: js.UndefOr[js.ThisFunction0[/* this */ this.type with Stream, Unit]] = js.native
+    var lineStart: js.UndefOr[js.ThisFunction0[/* this */ this.type & Stream, Unit]] = js.undefined
     
     /**
       * Indicates a point with the specified coordinates x and y (and optionally z). The coordinate system is unspecified and implementation-dependent;
@@ -1588,28 +1510,28 @@ object mod {
       */
     var point: js.UndefOr[
         js.ThisFunction3[
-          /* this */ this.type with Stream, 
+          /* this */ this.type & Stream, 
           /* x */ Double, 
           /* y */ Double, 
           /* z */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Indicates the end of a polygon.
       */
-    var polygonEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type with Stream, Unit]] = js.native
+    var polygonEnd: js.UndefOr[js.ThisFunction0[/* this */ this.type & Stream, Unit]] = js.undefined
     
     /**
       * Indicates the start of a polygon. The first line of a polygon indicates the exterior ring, and any subsequent lines indicate interior holes.
       */
-    var polygonStart: js.UndefOr[js.ThisFunction0[/* this */ this.type with Stream, Unit]] = js.native
+    var polygonStart: js.UndefOr[js.ThisFunction0[/* this */ this.type & Stream, Unit]] = js.undefined
     
     /**
       * Indicates the sphere (the globe; the unit sphere centered at ⟨0,0,0⟩).
       */
-    var sphere: js.UndefOr[js.ThisFunction0[/* this */ this.type with Stream, Unit]] = js.native
+    var sphere: js.UndefOr[js.ThisFunction0[/* this */ this.type & Stream, Unit]] = js.undefined
   }
   object GeoTransformPrototype {
     
@@ -1623,13 +1545,13 @@ object mod {
     implicit class GeoTransformPrototypeMutableBuilder[Self <: GeoTransformPrototype] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setLineEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype with Stream, Unit]): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
+      def setLineEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineEnd", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLineEndUndefined: Self = StObject.set(x, "lineEnd", js.undefined)
       
       @scala.inline
-      def setLineStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype with Stream, Unit]): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
+      def setLineStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "lineStart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLineStartUndefined: Self = StObject.set(x, "lineStart", js.undefined)
@@ -1637,7 +1559,7 @@ object mod {
       @scala.inline
       def setPoint(
         value: js.ThisFunction3[
-              /* this */ GeoTransformPrototype with Stream, 
+              /* this */ GeoTransformPrototype & Stream, 
               /* x */ Double, 
               /* y */ Double, 
               /* z */ js.UndefOr[Double], 
@@ -1649,19 +1571,19 @@ object mod {
       def setPointUndefined: Self = StObject.set(x, "point", js.undefined)
       
       @scala.inline
-      def setPolygonEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype with Stream, Unit]): Self = StObject.set(x, "polygonEnd", value.asInstanceOf[js.Any])
+      def setPolygonEnd(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonEnd", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPolygonEndUndefined: Self = StObject.set(x, "polygonEnd", js.undefined)
       
       @scala.inline
-      def setPolygonStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype with Stream, Unit]): Self = StObject.set(x, "polygonStart", value.asInstanceOf[js.Any])
+      def setPolygonStart(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "polygonStart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPolygonStartUndefined: Self = StObject.set(x, "polygonStart", js.undefined)
       
       @scala.inline
-      def setSphere(value: js.ThisFunction0[/* this */ GeoTransformPrototype with Stream, Unit]): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
+      def setSphere(value: js.ThisFunction0[/* this */ GeoTransformPrototype & Stream, Unit]): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSphereUndefined: Self = StObject.set(x, "sphere", js.undefined)

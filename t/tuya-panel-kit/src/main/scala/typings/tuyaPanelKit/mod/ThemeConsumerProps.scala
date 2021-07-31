@@ -4,15 +4,13 @@ import typings.react.mod.ReactNode
 import typings.tuyaPanelKit.themeMod.GlobalTheme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeConsumerProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var theme: js.UndefOr[GlobalTheme] = js.native
+  var theme: js.UndefOr[GlobalTheme] = js.undefined
 }
 object ThemeConsumerProps {
   

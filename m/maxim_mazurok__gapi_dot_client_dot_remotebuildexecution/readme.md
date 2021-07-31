@@ -10,9 +10,9 @@ TypeScript typings for Remote Build Execution API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.remotebuildexecution |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 50 |
+| # downloads        | 1081 |
 | # stars            | 0 |
 
 ## Links

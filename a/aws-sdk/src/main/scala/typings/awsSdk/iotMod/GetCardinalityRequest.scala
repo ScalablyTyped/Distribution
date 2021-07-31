@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCardinalityRequest extends StObject {
   
   /**
     * The field to aggregate.
     */
-  var aggregationField: js.UndefOr[AggregationField] = js.native
+  var aggregationField: js.UndefOr[AggregationField] = js.undefined
   
   /**
     * The name of the index to search.
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The search query.
     */
-  var queryString: QueryString = js.native
+  var queryString: QueryString
   
   /**
     * The query version.
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
 }
 object GetCardinalityRequest {
   

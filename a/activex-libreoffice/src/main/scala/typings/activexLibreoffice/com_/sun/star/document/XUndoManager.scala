@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XLockable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,36 +41,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * an undo action, or to enter or leave an Undo context, will be silently ignored.
   * @since OOo 3.4
   */
-@js.native
 trait XUndoManager
-  extends XChild
-     with XLockable {
+  extends StObject
+     with XLockable
+     with XChild {
   
   /**
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  val AllRedoActionTitles: SafeArray[String] = js.native
+  val AllRedoActionTitles: SafeArray[String]
   
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  val AllUndoActionTitles: SafeArray[String] = js.native
+  val AllUndoActionTitles: SafeArray[String]
   
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the Redo stack is currently empty
     */
-  val CurrentRedoActionTitle: String = js.native
+  val CurrentRedoActionTitle: String
   
   /**
     * returns the title of the top-most action on the undo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the undo stack is currently empty
     */
-  val CurrentUndoActionTitle: String = js.native
+  val CurrentUndoActionTitle: String
   
   /**
     * adds the given undo action to the undo stack.
@@ -86,10 +85,10 @@ trait XUndoManager
     * immediately be disposed, if applicable.
     * @throws com::sun::star::lang::IllegalArgumentException if the given undo action is `NULL` .
     */
-  def addUndoAction(iAction: XUndoAction): Unit = js.native
+  def addUndoAction(iAction: XUndoAction): Unit
   
   /** adds a listener to be notified of changes in the Undo/Redo stacks. */
-  def addUndoManagerListener(iListener: XUndoManagerListener): Unit = js.native
+  def addUndoManagerListener(iListener: XUndoManagerListener): Unit
   
   /**
     * clears the undo and the redo stack.
@@ -98,7 +97,7 @@ trait XUndoManager
     * disposed.
     * @throws UndoContextNotClosedException if the method is invoked while an undo context is still open
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * clears the redo stack.
@@ -106,7 +105,7 @@ trait XUndoManager
     * All actions will be removed from the Redo stack. Actions which implement the {@link com.sun.star.lang.XComponent} interface will be disposed.
     * @throws UndoContextNotClosedException if the method is invoked while an undo context is still open
     */
-  def clearRedo(): Unit = js.native
+  def clearRedo(): Unit
   
   /**
     * enters a new undo context, creating a hidden undo action.
@@ -131,7 +130,7 @@ trait XUndoManager
     * @see leaveUndoContext
     * @throws EmptyUndoStackException if the undo stack is currently empty, in which case it is impossible to push a hidden undo action onto it.
     */
-  def enterHiddenUndoContext(): Unit = js.native
+  def enterHiddenUndoContext(): Unit
   
   /**
     * enters a new undo context.
@@ -147,45 +146,45 @@ trait XUndoManager
     * {@link leaveUndoContext()} inbetween.
     * @see leaveUndoContext
     */
-  def enterUndoContext(iTitle: String): Unit = js.native
+  def enterUndoContext(iTitle: String): Unit
   
   /**
     * returns the titles of all actions currently on the Redo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  def getAllRedoActionTitles(): SafeArray[String] = js.native
+  def getAllRedoActionTitles(): SafeArray[String]
   
   /**
     * returns the titles of all actions currently on the undo stack, from top to bottom
     * @see XUndoAction.Title
     */
-  def getAllUndoActionTitles(): SafeArray[String] = js.native
+  def getAllUndoActionTitles(): SafeArray[String]
   
   /**
     * returns the title of the top-most action on the Redo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the Redo stack is currently empty
     */
-  def getCurrentRedoActionTitle(): String = js.native
+  def getCurrentRedoActionTitle(): String
   
   /**
     * returns the title of the top-most action on the undo stack
     * @see XUndoAction.Title
     * @throws EmptyUndoStackException when the undo stack is currently empty
     */
-  def getCurrentUndoActionTitle(): String = js.native
+  def getCurrentUndoActionTitle(): String
   
   /**
     * determines whether {@link redo()} can reasonably be expected to succeed.
     * @returns `FALSE` if and only if the redo stack is currently empty, or there is an open and not-yet-closed undo context.
     */
-  def isRedoPossible(): Boolean = js.native
+  def isRedoPossible(): Boolean
   
   /**
     * determines whether {@link undo()} can reasonably be expected to succeed.
     * @returns `FALSE` if and only if the undo stack is currently empty, or there is an open and not-yet-closed undo context.
     */
-  def isUndoPossible(): Boolean = js.native
+  def isUndoPossible(): Boolean
   
   /**
     * leaves the undo context previously opened via {@link enterUndoContext()} respectively {@link enterHiddenUndoContext()} .
@@ -199,7 +198,7 @@ trait XUndoManager
     * @see enterHiddenUndoContext
     * @throws com::sun::star::util::InvalidStateException if no undo context is currently open.
     */
-  def leaveUndoContext(): Unit = js.native
+  def leaveUndoContext(): Unit
   
   /**
     * replays the action on the document which has most recently been undone
@@ -211,10 +210,10 @@ trait XUndoManager
     * @throws UndoContextNotClosedException if there currently is an open undo context
     * @throws UndoFailedException if the invocation of {@link XUndoAction.redo()} raised this exception. In this case, the redo stack of the undo manager will
     */
-  def redo(): Unit = js.native
+  def redo(): Unit
   
   /** removes a previously added listener */
-  def removeUndoManagerListener(iListener: XUndoManagerListener): Unit = js.native
+  def removeUndoManagerListener(iListener: XUndoManagerListener): Unit
   
   /**
     * resets the Undo manager
@@ -225,7 +224,7 @@ trait XUndoManager
     * XUndoManagerListener.allActionsCleared()} , {@link XUndoManagerListener.leftContext()} , etc., notifications. Instead, listeners will be notified of
     * the reset by calling their {@link XUndoManagerListener.resetAll()} method.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * reverts the most recent action on the document.
@@ -238,7 +237,7 @@ trait XUndoManager
     * @throws UndoContextNotClosedException if there currently is an open undo context
     * @throws UndoFailedException if the invocation of {@link XUndoAction.undo()} raised this exception. In this case, the undo stack of the undo manager will
     */
-  def undo(): Unit = js.native
+  def undo(): Unit
 }
 object XUndoManager {
   

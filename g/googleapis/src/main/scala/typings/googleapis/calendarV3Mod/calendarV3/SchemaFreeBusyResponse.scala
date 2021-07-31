@@ -3,36 +3,34 @@ package typings.googleapis.calendarV3Mod.calendarV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFreeBusyResponse extends StObject {
   
   /**
     * List of free/busy information for calendars.
     */
-  var calendars: js.UndefOr[StringDictionary[SchemaFreeBusyCalendar]] = js.native
+  var calendars: js.UndefOr[StringDictionary[SchemaFreeBusyCalendar]] = js.undefined
   
   /**
     * Expansion of groups.
     */
-  var groups: js.UndefOr[StringDictionary[SchemaFreeBusyGroup]] = js.native
+  var groups: js.UndefOr[StringDictionary[SchemaFreeBusyGroup]] = js.undefined
   
   /**
     * Type of the resource (&quot;calendar#freeBusy&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The end of the interval.
     */
-  var timeMax: js.UndefOr[String] = js.native
+  var timeMax: js.UndefOr[String] = js.undefined
   
   /**
     * The start of the interval.
     */
-  var timeMin: js.UndefOr[String] = js.native
+  var timeMin: js.UndefOr[String] = js.undefined
 }
 object SchemaFreeBusyResponse {
   

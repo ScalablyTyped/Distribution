@@ -2,16 +2,14 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Channel Metadata
-@js.native
 trait ChannelMetadataFields extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
 }
 object ChannelMetadataFields {
   

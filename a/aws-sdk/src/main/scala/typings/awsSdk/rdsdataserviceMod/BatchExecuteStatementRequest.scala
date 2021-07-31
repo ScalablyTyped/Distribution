@@ -2,46 +2,44 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchExecuteStatementRequest extends StObject {
   
   /**
     * The name of the database.
     */
-  var database: js.UndefOr[DbName] = js.native
+  var database: js.UndefOr[DbName] = js.undefined
   
   /**
     * The parameter set for the batch operation. The SQL statement is executed as many times as the number of parameter sets provided. To execute a SQL statement with no parameters, use one of the following options:   Specify one or more empty parameter sets.   Use the ExecuteStatement operation instead of the BatchExecuteStatement operation.    Array parameters are not supported. 
     */
-  var parameterSets: js.UndefOr[SqlParameterSets] = js.native
+  var parameterSets: js.UndefOr[SqlParameterSets] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Aurora Serverless DB cluster.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The name of the database schema.
     */
-  var schema: js.UndefOr[DbName] = js.native
+  var schema: js.UndefOr[DbName] = js.undefined
   
   /**
     * The name or ARN of the secret that enables access to the DB cluster.
     */
-  var secretArn: Arn = js.native
+  var secretArn: Arn
   
   /**
     * The SQL statement to run.
     */
-  var sql: SqlStatement = js.native
+  var sql: SqlStatement
   
   /**
     * The identifier of a transaction that was started by using the BeginTransaction operation. Specify the transaction ID of the transaction that you want to include the SQL statement in. If the SQL statement is not part of a transaction, don't set this parameter.
     */
-  var transactionId: js.UndefOr[Id] = js.native
+  var transactionId: js.UndefOr[Id] = js.undefined
 }
 object BatchExecuteStatementRequest {
   

@@ -9,7 +9,6 @@ import typings.sawtoothSdk.protobufMod.IClientStatusGetResponse
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse")
@@ -25,6 +24,10 @@ class ClientStatusGetResponse ()
 /* static members */
 object ClientStatusGetResponse {
   
+  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents a Peer. */
   @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer")
   @js.native
@@ -38,18 +41,20 @@ object ClientStatusGetResponse {
   }
   object Peer {
     
+    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Peer instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Peer instance
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.create")
-    @js.native
-    def create(): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.create")
-    @js.native
-    def create(properties: IPeer): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
+    @scala.inline
+    def create(): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
+    @scala.inline
+    def create(properties: IPeer): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
     
     /**
       * Decodes a Peer message from the specified reader or buffer.
@@ -60,18 +65,14 @@ object ClientStatusGetResponse {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decode")
-    @js.native
-    def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decode")
-    @js.native
-    def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
+    @scala.inline
+    def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
+    @scala.inline
+    def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
+    @scala.inline
+    def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
     
     /**
       * Decodes a Peer message from the specified reader or buffer, length delimited.
@@ -81,12 +82,10 @@ object ClientStatusGetResponse {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
     
     /**
       * Encodes the specified Peer message. Does not implicitly {@link ClientStatusGetResponse.Peer.verify|verify} messages.
@@ -95,12 +94,10 @@ object ClientStatusGetResponse {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.encode")
-    @js.native
-    def encode(message: IPeer): Writer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.encode")
-    @js.native
-    def encode(message: IPeer, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IPeer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IPeer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Peer message, length delimited. Does not implicitly {@link ClientStatusGetResponse.Peer.verify|verify} messages.
@@ -109,12 +106,10 @@ object ClientStatusGetResponse {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPeer): Writer = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IPeer, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IPeer): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IPeer, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates a Peer message from a plain object. Also converts values to their respective internal types.
@@ -122,9 +117,8 @@ object ClientStatusGetResponse {
       * @returns Peer
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer]
     
     /**
       * Creates a plain object from a Peer message. Also converts values to other types if specified.
@@ -133,12 +127,10 @@ object ClientStatusGetResponse {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.toObject")
-    @js.native
-    def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer): StringDictionary[js.Any] = js.native
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.toObject")
-    @js.native
-    def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Peer, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies a Peer message.
@@ -146,9 +138,8 @@ object ClientStatusGetResponse {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.Peer.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /** Status enum. */
@@ -157,13 +148,13 @@ object ClientStatusGetResponse {
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status & Double] = js.native
     
-    /* 2 */ val ERROR: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.ERROR with Double = js.native
+    /* 2 */ val ERROR: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.ERROR & Double = js.native
     
-    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.OK with Double = js.native
+    /* 1 */ val OK: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.OK & Double = js.native
     
-    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.STATUS_UNSET with Double = js.native
+    /* 0 */ val STATUS_UNSET: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse.Status.STATUS_UNSET & Double = js.native
   }
   
   /**
@@ -171,12 +162,10 @@ object ClientStatusGetResponse {
     * @param [properties] Properties to set
     * @returns ClientStatusGetResponse instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.create")
-  @js.native
-  def create(properties: IClientStatusGetResponse): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
+  @scala.inline
+  def create(properties: IClientStatusGetResponse): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
   
   /**
     * Decodes a ClientStatusGetResponse message from the specified reader or buffer.
@@ -186,18 +175,14 @@ object ClientStatusGetResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
   
   /**
     * Decodes a ClientStatusGetResponse message from the specified reader or buffer, length delimited.
@@ -206,12 +191,10 @@ object ClientStatusGetResponse {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
   
   /**
     * Encodes the specified ClientStatusGetResponse message. Does not implicitly {@link ClientStatusGetResponse.verify|verify} messages.
@@ -219,12 +202,10 @@ object ClientStatusGetResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.encode")
-  @js.native
-  def encode(message: IClientStatusGetResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.encode")
-  @js.native
-  def encode(message: IClientStatusGetResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientStatusGetResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientStatusGetResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientStatusGetResponse message, length delimited. Does not implicitly {@link ClientStatusGetResponse.verify|verify} messages.
@@ -232,21 +213,18 @@ object ClientStatusGetResponse {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientStatusGetResponse): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientStatusGetResponse, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientStatusGetResponse): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientStatusGetResponse, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientStatusGetResponse message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientStatusGetResponse
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ClientStatusGetResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ClientStatusGetResponse]
   
   /**
     * Creates a plain object from a ClientStatusGetResponse message. Also converts values to other types if specified.
@@ -254,19 +232,16 @@ object ClientStatusGetResponse {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ClientStatusGetResponse, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientStatusGetResponse message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ClientStatusGetResponse.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetExtConfigRes extends StObject {
   
   /**
     * 调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 第三方平台自定义的数据
     */
-  var extConfig: js.UndefOr[js.Any] = js.native
+  var extConfig: js.UndefOr[js.Any] = js.undefined
 }
 object GetExtConfigRes {
   

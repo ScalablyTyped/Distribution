@@ -14,85 +14,85 @@ import typings.csstype.mod.TextTransformProperty
 import typings.reactInspector.reactInspectorNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InspectorThemeDefinition extends InspectorTheme {
+trait InspectorThemeDefinition
+  extends StObject
+     with InspectorTheme {
   
-  var ARROW_ANIMATION_DURATION: String = js.native
+  var ARROW_ANIMATION_DURATION: String
   
-  var ARROW_COLOR: js.UndefOr[ColorProperty] = js.native
+  var ARROW_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var ARROW_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.native
+  var ARROW_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.undefined
   
-  var ARROW_MARGIN_RIGHT: js.UndefOr[MarginRightProperty[String | `0`]] = js.native
+  var ARROW_MARGIN_RIGHT: js.UndefOr[MarginRightProperty[String | `0`]] = js.undefined
   
-  var BASE_BACKGROUND_COLOR: js.UndefOr[BackgroundColorProperty] = js.native
+  var BASE_BACKGROUND_COLOR: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var BASE_COLOR: js.UndefOr[ColorProperty] = js.native
+  var BASE_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var BASE_FONT_FAMILY: js.UndefOr[FontFamilyProperty] = js.native
+  var BASE_FONT_FAMILY: js.UndefOr[FontFamilyProperty] = js.undefined
   
-  var BASE_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.native
+  var BASE_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.undefined
   
-  var BASE_LINE_HEIGHT: js.UndefOr[LineHeightProperty[String | `0`]] = js.native
+  var BASE_LINE_HEIGHT: js.UndefOr[LineHeightProperty[String | `0`]] = js.undefined
   
-  var HTML_ATTRIBUTE_NAME_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_ATTRIBUTE_NAME_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var HTML_ATTRIBUTE_VALUE_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_ATTRIBUTE_VALUE_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var HTML_COMMENT_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_COMMENT_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var HTML_DOCTYPE_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_DOCTYPE_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var HTML_TAGNAME_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_TAGNAME_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var HTML_TAGNAME_TEXT_TRANSFORM: js.UndefOr[TextTransformProperty] = js.native
+  var HTML_TAGNAME_TEXT_TRANSFORM: js.UndefOr[TextTransformProperty] = js.undefined
   
-  var HTML_TAG_COLOR: js.UndefOr[ColorProperty] = js.native
+  var HTML_TAG_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_NAME_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_NAME_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_PREVIEW_ARRAY_MAX_PROPERTIES: Double = js.native
+  var OBJECT_PREVIEW_ARRAY_MAX_PROPERTIES: Double
   
-  var OBJECT_PREVIEW_OBJECT_MAX_PROPERTIES: Double = js.native
+  var OBJECT_PREVIEW_OBJECT_MAX_PROPERTIES: Double
   
-  var OBJECT_VALUE_BOOLEAN_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_BOOLEAN_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_FUNCTION_PREFIX_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_FUNCTION_PREFIX_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_NULL_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_NULL_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_NUMBER_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_NUMBER_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_REGEXP_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_REGEXP_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_STRING_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_STRING_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_SYMBOL_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_SYMBOL_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var OBJECT_VALUE_UNDEFINED_COLOR: js.UndefOr[ColorProperty] = js.native
+  var OBJECT_VALUE_UNDEFINED_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var TABLE_BORDER_COLOR: js.UndefOr[BorderColorProperty] = js.native
+  var TABLE_BORDER_COLOR: js.UndefOr[BorderColorProperty] = js.undefined
   
-  var TABLE_DATA_BACKGROUND_IMAGE: js.UndefOr[BackgroundImageProperty] = js.native
+  var TABLE_DATA_BACKGROUND_IMAGE: js.UndefOr[BackgroundImageProperty] = js.undefined
   
-  var TABLE_DATA_BACKGROUND_SIZE: js.UndefOr[BackgroundSizeProperty[String | `0`]] = js.native
+  var TABLE_DATA_BACKGROUND_SIZE: js.UndefOr[BackgroundSizeProperty[String | `0`]] = js.undefined
   
-  var TABLE_SORT_ICON_COLOR: js.UndefOr[ColorProperty] = js.native
+  var TABLE_SORT_ICON_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var TABLE_TH_BACKGROUND_COLOR: js.UndefOr[BackgroundColorProperty] = js.native
+  var TABLE_TH_BACKGROUND_COLOR: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var TABLE_TH_HOVER_COLOR: js.UndefOr[ColorProperty] = js.native
+  var TABLE_TH_HOVER_COLOR: js.UndefOr[ColorProperty] = js.undefined
   
-  var TREENODE_FONT_FAMILY: js.UndefOr[FontFamilyProperty] = js.native
+  var TREENODE_FONT_FAMILY: js.UndefOr[FontFamilyProperty] = js.undefined
   
-  var TREENODE_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.native
+  var TREENODE_FONT_SIZE: js.UndefOr[FontSizeProperty[String | `0`]] = js.undefined
   
-  var TREENODE_LINE_HEIGHT: js.UndefOr[LineHeightProperty[String | `0`]] = js.native
+  var TREENODE_LINE_HEIGHT: js.UndefOr[LineHeightProperty[String | `0`]] = js.undefined
   
-  var TREENODE_PADDING_LEFT: js.UndefOr[PaddingLeftProperty[String | `0`]] = js.native
+  var TREENODE_PADDING_LEFT: js.UndefOr[PaddingLeftProperty[String | `0`]] = js.undefined
 }
 object InspectorThemeDefinition {
   

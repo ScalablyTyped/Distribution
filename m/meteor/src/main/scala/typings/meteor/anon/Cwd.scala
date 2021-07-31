@@ -2,21 +2,19 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cwd extends StObject {
   
-  var cwd: js.UndefOr[js.Object] = js.native
+  var cwd: js.UndefOr[js.Object] = js.undefined
   
-  var destination: js.UndefOr[js.Any] = js.native
+  var destination: js.UndefOr[js.Any] = js.undefined
   
-  var env: js.UndefOr[js.Object] = js.native
+  var env: js.UndefOr[js.Object] = js.undefined
   
-  var stdio: js.UndefOr[js.Array[_] | String] = js.native
+  var stdio: js.UndefOr[js.Array[js.Any] | String] = js.undefined
   
-  var waitForClose: js.UndefOr[String] = js.native
+  var waitForClose: js.UndefOr[String] = js.undefined
 }
 object Cwd {
   
@@ -48,7 +46,7 @@ object Cwd {
     def setEnvUndefined: Self = StObject.set(x, "env", js.undefined)
     
     @scala.inline
-    def setStdio(value: js.Array[_] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
+    def setStdio(value: js.Array[js.Any] | String): Self = StObject.set(x, "stdio", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStdioUndefined: Self = StObject.set(x, "stdio", js.undefined)

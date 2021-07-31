@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3outpostsEndpointMod {
@@ -64,6 +63,10 @@ object s3outpostsEndpointMod {
   /* static members */
   object Endpoint {
     
+    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Endpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -73,45 +76,39 @@ object s3outpostsEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Endpoint = js.native
-    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
-    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
-    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3outposts/endpoint", "Endpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3outposts/endpoint.Endpoint */ Boolean]
   }
   
-  @js.native
   trait EndpointArgs extends StObject {
     
     /**
       * Identifier of the Outpost to contain this endpoint.
       */
-    val outpostId: Input[String] = js.native
+    val outpostId: Input[String]
     
     /**
       * Identifier of the EC2 Security Group.
       */
-    val securityGroupId: Input[String] = js.native
+    val securityGroupId: Input[String]
     
     /**
       * Identifier of the EC2 Subnet.
       */
-    val subnetId: Input[String] = js.native
+    val subnetId: Input[String]
   }
   object EndpointArgs {
     
@@ -135,45 +132,44 @@ object s3outpostsEndpointMod {
     }
   }
   
-  @js.native
   trait EndpointState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the endpoint.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * VPC CIDR block of the endpoint.
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * UTC creation time in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8).
       */
-    val creationTime: js.UndefOr[Input[String]] = js.native
+    val creationTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Set of nested attributes for associated Elastic Network Interfaces (ENIs).
       */
     val networkInterfaces: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.s3outposts.EndpointNetworkInterface]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Identifier of the Outpost to contain this endpoint.
       */
-    val outpostId: js.UndefOr[Input[String]] = js.native
+    val outpostId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the EC2 Security Group.
       */
-    val securityGroupId: js.UndefOr[Input[String]] = js.native
+    val securityGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the EC2 Subnet.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointState {
     

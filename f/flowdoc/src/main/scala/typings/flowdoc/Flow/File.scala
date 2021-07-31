@@ -2,17 +2,15 @@ package typings.flowdoc.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var document: Document = js.native
+  var document: Document
   
-  var schemaVersion: SchemaVersion = js.native
+  var schemaVersion: SchemaVersion
   
-  var settings: Settings = js.native
+  var settings: Settings
 }
 object File {
   

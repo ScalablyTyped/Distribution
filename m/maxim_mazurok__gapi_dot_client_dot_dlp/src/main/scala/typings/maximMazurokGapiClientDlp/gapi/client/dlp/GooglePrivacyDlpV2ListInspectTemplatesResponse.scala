@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2ListInspectTemplatesResponse extends StObject {
   
   /** List of inspectTemplates, up to page_size in ListInspectTemplatesRequest. */
-  var inspectTemplates: js.UndefOr[js.Array[GooglePrivacyDlpV2InspectTemplate]] = js.native
+  var inspectTemplates: js.UndefOr[js.Array[GooglePrivacyDlpV2InspectTemplate]] = js.undefined
   
   /** If the next page is available then the next page token to be used in following ListInspectTemplates request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2ListInspectTemplatesResponse {
   

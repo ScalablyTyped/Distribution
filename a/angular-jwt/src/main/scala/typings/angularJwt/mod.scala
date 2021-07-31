@@ -3,7 +3,6 @@ package typings.angularJwt
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,16 +10,15 @@ object mod {
   
   object jwt {
     
-    @js.native
     trait IAuthManagerServiceProvider extends StObject {
       
-      def authenticate(): Unit = js.native
+      def authenticate(): Unit
       
-      def checkAuthOnRefresh(): Unit = js.native
+      def checkAuthOnRefresh(): Unit
       
-      def redirectWhenUnauthenticated(): Unit = js.native
+      def redirectWhenUnauthenticated(): Unit
       
-      def unauthenticate(): Unit = js.native
+      def unauthenticate(): Unit
     }
     object IAuthManagerServiceProvider {
       
@@ -63,10 +61,9 @@ object mod {
       def isTokenExpired(token: js.Any, offsetSeconds: Double): Boolean = js.native
     }
     
-    @js.native
     trait IJwtInterceptor extends StObject {
       
-      def tokenGetter(params: js.Any*): String = js.native
+      def tokenGetter(params: js.Any*): String
     }
     object IJwtInterceptor {
       
@@ -84,24 +81,23 @@ object mod {
       }
     }
     
-    @js.native
     trait JwtToken extends StObject {
       
-      var aud: js.UndefOr[String] = js.native
+      var aud: js.UndefOr[String] = js.undefined
       
-      var exp: js.UndefOr[Double] = js.native
+      var exp: js.UndefOr[Double] = js.undefined
       
-      var iat: js.UndefOr[Double] = js.native
+      var iat: js.UndefOr[Double] = js.undefined
       
-      var iss: js.UndefOr[String] = js.native
+      var iss: js.UndefOr[String] = js.undefined
       
-      var jti: js.UndefOr[String] = js.native
+      var jti: js.UndefOr[String] = js.undefined
       
-      var nbf: js.UndefOr[Double] = js.native
+      var nbf: js.UndefOr[Double] = js.undefined
       
-      var sub: js.UndefOr[String] = js.native
+      var sub: js.UndefOr[String] = js.undefined
       
-      var unique_name: js.UndefOr[String] = js.native
+      var unique_name: js.UndefOr[String] = js.undefined
     }
     object JwtToken {
       

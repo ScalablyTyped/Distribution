@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rootErrorBoundaryWebMod {
@@ -18,15 +17,17 @@ object rootErrorBoundaryWebMod {
   /* static members */
   object default {
     
-    @JSImport("expo/build/launch/RootErrorBoundary.web", "default.getDerivedStateFromError")
+    @JSImport("expo/build/launch/RootErrorBoundary.web", JSImport.Default)
     @js.native
-    def getDerivedStateFromError(error: js.Any): ErrorAny = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromError(error: js.Any): ErrorAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromError")(error.asInstanceOf[js.Any]).asInstanceOf[ErrorAny]
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object Props {
     
@@ -55,16 +56,15 @@ object rootErrorBoundaryWebMod {
     var state_RootErrorBoundary: ErrorNull = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
-    var error: Error | Null = js.native
+    var error: Error | Null
   }
   object State {
     
     @scala.inline
     def apply(): State = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(error = null)
       __obj.asInstanceOf[State]
     }
     

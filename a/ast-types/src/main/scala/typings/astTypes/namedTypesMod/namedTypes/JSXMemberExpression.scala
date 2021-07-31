@@ -12,32 +12,31 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.MemberExpression, 'type' | 'object' | 'property' | 'computed'> */
-@js.native
 trait JSXMemberExpression
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with ChainElementKind
      with ExpressionKind
      with MemberExpressionKind
      with NodeKind
      with PrintableKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `object`: JSXIdentifierKind | JSXMemberExpressionKind = js.native
+  var `object`: JSXIdentifierKind | JSXMemberExpressionKind
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
-  var property: JSXIdentifierKind = js.native
+  var property: JSXIdentifierKind
   
-  var `type`: typings.astTypes.astTypesStrings.JSXMemberExpression = js.native
+  var `type`: typings.astTypes.astTypesStrings.JSXMemberExpression
 }
 object JSXMemberExpression {
   

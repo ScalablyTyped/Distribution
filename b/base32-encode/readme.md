@@ -11,8 +11,8 @@ Base32 encoder with support for multiple variants.
 | Full name          | base32-encode |
 | Keywords           | base32 encode, base32 encoder, base32, base32hex, crockford, encoder, rfc3548, rfc4648 |
 | # releases         | 2 |
-| # dependents       | 30 |
-| # downloads        | 1418204 |
+| # dependents       | 43 |
+| # downloads        | 1462931 |
 | # stars            | 0 |
 
 ## Links

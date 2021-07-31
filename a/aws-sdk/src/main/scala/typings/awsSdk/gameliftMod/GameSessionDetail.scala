@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameSessionDetail extends StObject {
   
   /**
     * Object that describes a game session.
     */
-  var GameSession: js.UndefOr[typings.awsSdk.gameliftMod.GameSession] = js.native
+  var GameSession: js.UndefOr[typings.awsSdk.gameliftMod.GameSession] = js.undefined
   
   /**
     * Current status of protection for the game session.    NoProtection -- The game session can be terminated during a scale-down event.    FullProtection -- If the game session is in an ACTIVE status, it cannot be terminated during a scale-down event.  
     */
-  var ProtectionPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ProtectionPolicy] = js.native
+  var ProtectionPolicy: js.UndefOr[typings.awsSdk.gameliftMod.ProtectionPolicy] = js.undefined
 }
 object GameSessionDetail {
   

@@ -2,20 +2,18 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Button extends StObject {
   
-  var button: js.UndefOr[Close] = js.native
+  var button: js.UndefOr[Close] = js.undefined
   
-  var items: js.UndefOr[js.Array[Fontcolor]] = js.native
+  var items: js.UndefOr[js.Array[Fontcolor]] = js.undefined
   
   /**
     * To set the visibility of the object. true | false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object Button {
   

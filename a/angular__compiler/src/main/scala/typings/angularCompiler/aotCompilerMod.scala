@@ -26,10 +26,13 @@ import typings.angularCompiler.viewCompilerViewCompilerMod.ViewCompiler
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aotCompilerMod {
+  
+  @JSImport("@angular/compiler/src/aot/compiler", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/aot/compiler", "AotCompiler")
   @js.native
@@ -145,9 +148,9 @@ object aotCompilerMod {
     def findGeneratedFileNames(fileName: String): js.Array[String] = js.native
     
     def listLazyRoutes(): js.Array[LazyRoute] = js.native
-    def listLazyRoutes(entryRoute: js.UndefOr[scala.Nothing], analyzedModules: NgAnalyzedModules): js.Array[LazyRoute] = js.native
     def listLazyRoutes(entryRoute: String): js.Array[LazyRoute] = js.native
     def listLazyRoutes(entryRoute: String, analyzedModules: NgAnalyzedModules): js.Array[LazyRoute] = js.native
+    def listLazyRoutes(entryRoute: Unit, analyzedModules: NgAnalyzedModules): js.Array[LazyRoute] = js.native
     
     def loadFilesAsync(fileNames: js.Array[String], tsFiles: js.Array[String]): js.Promise[AnalyzedInjectables] = js.native
     
@@ -156,50 +159,44 @@ object aotCompilerMod {
     val reflector: StaticReflector = js.native
   }
   
-  @JSImport("@angular/compiler/src/aot/compiler", "analyzeAndValidateNgModules")
-  @js.native
+  @scala.inline
   def analyzeAndValidateNgModules(
     fileNames: js.Array[String],
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver
-  ): NgAnalyzedModules = js.native
+  ): NgAnalyzedModules = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeAndValidateNgModules")(fileNames.asInstanceOf[js.Any], host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedModules]
   
-  @JSImport("@angular/compiler/src/aot/compiler", "analyzeFile")
-  @js.native
+  @scala.inline
   def analyzeFile(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver,
     fileName: String
-  ): NgAnalyzedFile = js.native
+  ): NgAnalyzedFile = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeFile")(host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedFile]
   
-  @JSImport("@angular/compiler/src/aot/compiler", "analyzeFileForInjectables")
-  @js.native
+  @scala.inline
   def analyzeFileForInjectables(
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver,
     fileName: String
-  ): NgAnalyzedFileWithInjectables = js.native
+  ): NgAnalyzedFileWithInjectables = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeFileForInjectables")(host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedFileWithInjectables]
   
-  @JSImport("@angular/compiler/src/aot/compiler", "analyzeNgModules")
-  @js.native
+  @scala.inline
   def analyzeNgModules(
     fileNames: js.Array[String],
     host: NgAnalyzeModulesHost,
     staticSymbolResolver: StaticSymbolResolver,
     metadataResolver: CompileMetadataResolver
-  ): NgAnalyzedModules = js.native
+  ): NgAnalyzedModules = (^.asInstanceOf[js.Dynamic].applyDynamic("analyzeNgModules")(fileNames.asInstanceOf[js.Any], host.asInstanceOf[js.Any], staticSymbolResolver.asInstanceOf[js.Any], metadataResolver.asInstanceOf[js.Any])).asInstanceOf[NgAnalyzedModules]
   
-  @JSImport("@angular/compiler/src/aot/compiler", "mergeAnalyzedFiles")
-  @js.native
-  def mergeAnalyzedFiles(analyzedFiles: js.Array[NgAnalyzedFile]): NgAnalyzedModules = js.native
+  @scala.inline
+  def mergeAnalyzedFiles(analyzedFiles: js.Array[NgAnalyzedFile]): NgAnalyzedModules = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeAnalyzedFiles")(analyzedFiles.asInstanceOf[js.Any]).asInstanceOf[NgAnalyzedModules]
   
-  @js.native
   trait NgAnalyzeModulesHost extends StObject {
     
-    def isSourceFile(filePath: String): Boolean = js.native
+    def isSourceFile(filePath: String): Boolean
   }
   object NgAnalyzeModulesHost {
     
@@ -217,22 +214,21 @@ object aotCompilerMod {
     }
   }
   
-  @js.native
   trait NgAnalyzedFile extends StObject {
     
-    var abstractDirectives: js.Array[StaticSymbol] = js.native
+    var abstractDirectives: js.Array[StaticSymbol]
     
-    var directives: js.Array[StaticSymbol] = js.native
+    var directives: js.Array[StaticSymbol]
     
-    var exportsNonSourceFiles: Boolean = js.native
+    var exportsNonSourceFiles: Boolean
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var injectables: js.Array[CompileInjectableMetadata] = js.native
+    var injectables: js.Array[CompileInjectableMetadata]
     
-    var ngModules: js.Array[CompileNgModuleMetadata] = js.native
+    var ngModules: js.Array[CompileNgModuleMetadata]
     
-    var pipes: js.Array[StaticSymbol] = js.native
+    var pipes: js.Array[StaticSymbol]
   }
   object NgAnalyzedFile {
     
@@ -291,14 +287,13 @@ object aotCompilerMod {
     }
   }
   
-  @js.native
   trait NgAnalyzedFileWithInjectables extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var injectables: js.Array[CompileInjectableMetadata] = js.native
+    var injectables: js.Array[CompileInjectableMetadata]
     
-    var shallowModules: js.Array[CompileShallowModuleMetadata] = js.native
+    var shallowModules: js.Array[CompileShallowModuleMetadata]
   }
   object NgAnalyzedFileWithInjectables {
     
@@ -332,16 +327,15 @@ object aotCompilerMod {
     }
   }
   
-  @js.native
   trait NgAnalyzedModules extends StObject {
     
-    var files: js.Array[NgAnalyzedFile] = js.native
+    var files: js.Array[NgAnalyzedFile]
     
-    var ngModuleByPipeOrDirective: Map[StaticSymbol, CompileNgModuleMetadata] = js.native
+    var ngModuleByPipeOrDirective: Map[StaticSymbol, CompileNgModuleMetadata]
     
-    var ngModules: js.Array[CompileNgModuleMetadata] = js.native
+    var ngModules: js.Array[CompileNgModuleMetadata]
     
-    var symbolsMissingModule: js.UndefOr[js.Array[StaticSymbol]] = js.native
+    var symbolsMissingModule: js.UndefOr[js.Array[StaticSymbol]] = js.undefined
   }
   object NgAnalyzedModules {
     

@@ -10,9 +10,9 @@ Memoize/cache function results
 | ------------------ | :-------------: |
 | Full name          | memoizee |
 | Keywords           | memoize, memoizer, cache, memoization, memo, memcached, hashing., storage, caching, memory, gc, weak, garbage, collector, async |
-| # releases         | 0 |
-| # dependents       | 346 |
-| # downloads        | 84758145 |
+| # releases         | 2 |
+| # dependents       | 367 |
+| # downloads        | 99670200 |
 | # stars            | 28 |
 
 ## Links

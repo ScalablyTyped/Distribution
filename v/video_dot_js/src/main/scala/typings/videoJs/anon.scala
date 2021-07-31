@@ -45,27 +45,25 @@ import typings.videoJs.videoJsStrings.spacer_
 import typings.videoJs.videoJsStrings.timeTooltip_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait All extends StObject {
     
-    var DEFAULT: String = js.native
+    var DEFAULT: String
     
-    var all: String = js.native
+    var all: String
     
-    var debug: String = js.native
+    var debug: String
     
-    var error: String = js.native
+    var error: String
     
-    var info: String = js.native
+    var info: String
     
-    var off: String = js.native
+    var off: String
     
-    var warn: String = js.native
+    var warn: String
   }
   object All {
     
@@ -111,7 +109,8 @@ object anon {
   
   @js.native
   trait BASEPLUGINNAME
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * Sub-classes should call `super` to ensure plugins are properly initialized.
@@ -181,7 +180,7 @@ object anon {
       * @return Whether or not a plugin is a basic plugin.
       */
     def isBasic(plugin: String): Boolean = js.native
-    def isBasic(plugin: js.Function0[_]): Boolean = js.native
+    def isBasic(plugin: js.Function0[js.Any]): Boolean = js.native
     
     def registerPlugin[T /* <: /* import warning: importer.ImportType#apply Failed type conversion: typeof Plugin */ js.Any */](name: String, plugin: T): js.Function0[T] = js.native
     /**
@@ -213,7 +212,7 @@ object anon {
       *
       * @return
       */
-    def apply(): js.Array[_] = js.native
+    def apply(): js.Array[js.Any] = js.native
     
     /**
       * Clears the internal history tracking, but does not prevent further history
@@ -234,7 +233,8 @@ object anon {
   
   @js.native
   trait CanPlaySource
-    extends /**
+    extends StObject
+       with /**
     * Create an instance of this Tech.
     *
     * @param [options]
@@ -245,7 +245,7 @@ object anon {
     */
   Instantiable0[Tech]
        with Instantiable1[/* options */ js.Any, Tech]
-       with Instantiable2[js.UndefOr[/* options */ js.Any], /* ready */ ReadyCallback, Tech] {
+       with Instantiable2[(/* options */ js.Any) | (/* options */ Unit), /* ready */ ReadyCallback, Tech] {
     
     /**
       * Check if the tech can support the given source
@@ -317,16 +317,15 @@ object anon {
     def withSourceHandlers(tech: /* import warning: importer.ImportType#apply Failed type conversion: typeof Tech */ js.Any): Unit = js.native
   }
   
-  @js.native
   trait Children extends StObject {
     
     var children: js.UndefOr[
         js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias video.js.video.js.videojs.Child */ js.Object
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Children {
     
@@ -361,7 +360,8 @@ object anon {
   
   @js.native
   trait GetComponent
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -382,7 +382,7 @@ object anon {
        with Instantiable2[/* player */ Player, /* options */ ComponentOptions, Component]
        with Instantiable3[
           /* player */ Player, 
-          js.UndefOr[/* options */ ComponentOptions], 
+          (/* options */ ComponentOptions) | (/* options */ Unit), 
           /* ready */ ReadyCallback, 
           Component
         ] {
@@ -469,7 +469,8 @@ object anon {
   
   @js.native
   trait GetTagSettings
-    extends /**
+    extends StObject
+       with /**
     * An instance of the `Player` class is created when any of the Video.js setup methods
     * are used to initialize a video.
     *
@@ -494,7 +495,8 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -512,7 +514,8 @@ object anon {
   
   @js.native
   trait InstantiableClickableComponent
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -530,7 +533,8 @@ object anon {
   
   @js.native
   trait InstantiableMenu
-    extends /**
+    extends StObject
+       with /**
     * Create an instance of this class.
     *
     * @param player
@@ -545,7 +549,8 @@ object anon {
   
   @js.native
   trait InstantiableMenuButton
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -563,7 +568,8 @@ object anon {
   
   @js.native
   trait InstantiableMenuItem
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of the this class.
     *
     * @param player
@@ -582,7 +588,8 @@ object anon {
   
   @js.native
   trait InstantiableModalDialog
-    extends /**
+    extends StObject
+       with /**
     * Create an instance of this class.
     *
     * @param player
@@ -600,7 +607,8 @@ object anon {
   
   @js.native
   trait InstantiableMouseTimeDisplay
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -618,7 +626,8 @@ object anon {
   
   @js.native
   trait InstantiableSpacer
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -638,14 +647,15 @@ object anon {
         ]
        with Instantiable3[
           /* player */ Player, 
-          js.UndefOr[/* options */ ComponentOptions], 
+          (/* options */ ComponentOptions) | (/* options */ Unit), 
           /* ready */ ReadyCallback, 
           typings.videoJs.mod.videojs.Spacer
         ]
   
   @js.native
   trait InstantiableTextTrackMenuItem
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -659,7 +669,8 @@ object anon {
   
   @js.native
   trait InstantiableTimeToolTip
-    extends /**
+    extends StObject
+       with /**
     * Creates an instance of this class.
     *
     * @param player
@@ -672,14 +683,22 @@ object anon {
        with Instantiable2[/* player */ Player, /* options */ ComponentOptions, TimeToolTip]
   
   @js.native
-  trait TypeofComponent extends GetComponent
+  trait TypeofComponent
+    extends StObject
+       with GetComponent
   
   @js.native
-  trait TypeofPlayer extends GetTagSettings
+  trait TypeofPlayer
+    extends StObject
+       with GetTagSettings
   
   @js.native
-  trait TypeofPlugin extends BASEPLUGINNAME
+  trait TypeofPlugin
+    extends StObject
+       with BASEPLUGINNAME
   
   @js.native
-  trait TypeofTech extends CanPlaySource
+  trait TypeofTech
+    extends StObject
+       with CanPlaySource
 }

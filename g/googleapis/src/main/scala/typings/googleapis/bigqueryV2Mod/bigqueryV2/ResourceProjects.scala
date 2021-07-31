@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigquery/v2", "bigquery_v2.Resource$Projects")
@@ -84,7 +83,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getServiceAccount(): GaxiosPromise[SchemaGetServiceAccountResponse] = js.native
   def getServiceAccount(callback: BodyResponseCallback[SchemaGetServiceAccountResponse]): Unit = js.native
-  def getServiceAccount(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetServiceAccountResponse] = js.native
+  def getServiceAccount(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetServiceAccountResponse] = js.native
   def getServiceAccount(params: ParamsResourceProjectsGetserviceaccount): GaxiosPromise[SchemaGetServiceAccountResponse] = js.native
   def getServiceAccount(
     params: ParamsResourceProjectsGetserviceaccount,
@@ -180,7 +179,7 @@ class ResourceProjects protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaProjectList] = js.native
   def list(callback: BodyResponseCallback[SchemaProjectList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProjectList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProjectList] = js.native
   def list(params: ParamsResourceProjectsList): GaxiosPromise[SchemaProjectList] = js.native
   def list(params: ParamsResourceProjectsList, callback: BodyResponseCallback[SchemaProjectList]): Unit = js.native
   def list(

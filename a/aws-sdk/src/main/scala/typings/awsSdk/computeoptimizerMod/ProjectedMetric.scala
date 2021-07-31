@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectedMetric extends StObject {
   
   /**
     * The name of the projected utilization metric.
     */
-  var name: js.UndefOr[MetricName] = js.native
+  var name: js.UndefOr[MetricName] = js.undefined
   
   /**
     * The time stamps of the projected utilization metric.
     */
-  var timestamps: js.UndefOr[Timestamps] = js.native
+  var timestamps: js.UndefOr[Timestamps] = js.undefined
   
   /**
     * The values of the projected utilization metrics.
     */
-  var values: js.UndefOr[MetricValues] = js.native
+  var values: js.UndefOr[MetricValues] = js.undefined
 }
 object ProjectedMetric {
   

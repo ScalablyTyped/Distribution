@@ -4,7 +4,6 @@ import typings.blueprintjsCore.commonMod.AbstractPureComponent2
 import typings.blueprintjsCore.resizeObserverTypesMod.IResizeEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeSensorMod {
@@ -52,7 +51,6 @@ object resizeSensorMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IResizeSensorProps extends StObject {
     
     /**
@@ -65,7 +63,7 @@ object resizeSensorMod {
       * not also cause the child element to resize.
       * @default false
       */
-    var observeParents: js.UndefOr[Boolean] = js.native
+    var observeParents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback invoked when the wrapped element resizes.
@@ -77,7 +75,7 @@ object resizeSensorMod {
       * Note that this method is called _asynchronously_ after a resize is
       * detected and typically it will be called no more than once per frame.
       */
-    def onResize(entries: js.Array[IResizeEntry]): Unit = js.native
+    def onResize(entries: js.Array[IResizeEntry]): Unit
   }
   object IResizeSensorProps {
     

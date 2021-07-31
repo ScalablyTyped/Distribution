@@ -2,22 +2,22 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GradientColorObject extends _ColorType {
+trait GradientColorObject
+  extends StObject
+     with _ColorType {
   
   /**
     * Holds an object that defines the start position and the end position
     * relative to the shape.
     */
-  var linearGradient: js.UndefOr[LinearGradientColorObject] = js.native
+  var linearGradient: js.UndefOr[LinearGradientColorObject] = js.undefined
   
   /**
     * Holds an object that defines the center position and the radius.
     */
-  var radialGradient: js.UndefOr[RadialGradientColorObject] = js.native
+  var radialGradient: js.UndefOr[RadialGradientColorObject] = js.undefined
   
   /**
     * The first item in each tuple is the position in the gradient, where 0 is
@@ -25,7 +25,7 @@ trait GradientColorObject extends _ColorType {
     * stops can be applied. The second item is the color for each stop. This
     * color can also be given in the rgba format.
     */
-  var stops: js.Array[GradientColorStopObject] = js.native
+  var stops: js.Array[GradientColorStopObject]
 }
 object GradientColorObject {
   

@@ -3,7 +3,6 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,18 +21,18 @@ trait IgTreeGridMethods extends StObject {
   /**
     * Returns all data fixed rows recursively, not only the immediate ones(in ColumnFixing scenario - only when there is at least one fixed column)
     */
-  def allFixedRows(): js.Array[_] = js.native
+  def allFixedRows(): js.Array[js.Any] = js.native
   
   /**
     * Returns all data rows recursively, not only the immediate ones(when there is at least one fixed column returns rows only in the UNFIXED table)
     */
-  def allRows(): js.Array[_] = js.native
+  def allRows(): js.Array[js.Any] = js.native
   
   /**
     * Returns a list of all transaction objects that are either pending, or have been committed in the data source.
     * That is a wrapper for this.dataSource.allTransactions().
     */
-  def allTransactions(): js.Array[_] = js.native
+  def allTransactions(): js.Array[js.Any] = js.native
   
   /**
     * Auto resize columns that have property width set to "*" so content to be auto-fitted(not shrinked/cutted). Auto-resizing is applied ONLY for visible columns
@@ -73,12 +72,12 @@ trait IgTreeGridMethods extends StObject {
   /**
     * Gets all children's elements of the current grid, recursively
     */
-  def children(): js.Array[_] = js.native
+  def children(): js.Array[js.Any] = js.native
   
   /**
     * Gets all children of the current grid, recursively
     */
-  def childrenWidgets(): js.Array[_] = js.native
+  def childrenWidgets(): js.Array[js.Any] = js.native
   
   /**
     * Collapses a parent row by specified row or row identifier
@@ -190,7 +189,7 @@ trait IgTreeGridMethods extends StObject {
   /**
     * Returns a list of all fixed TR elements holding data in the grid(in ColumnFixing scenario - only when there is at least one fixed column)
     */
-  def fixedRows(): js.Array[_] = js.native
+  def fixedRows(): js.Array[js.Any] = js.native
   
   /**
     * Returns the fixed table - contains fixed columns(in ColumnFixing scenario). If there aren't fixed columns returns the grid table
@@ -313,12 +312,12 @@ trait IgTreeGridMethods extends StObject {
   /**
     * Gets all immediate children's elements of the current grid
     */
-  def immediateChildren(): js.Array[_] = js.native
+  def immediateChildren(): js.Array[js.Any] = js.native
   
   /**
     * Gets all immediate children of the current grid
     */
-  def immediateChildrenWidgets(): js.Array[_] = js.native
+  def immediateChildrenWidgets(): js.Array[js.Any] = js.native
   
   /**
     * Returns whether the column with identifier colKey is fixed
@@ -345,44 +344,26 @@ trait IgTreeGridMethods extends StObject {
     * @param callback Specifies a custom function to be called when the column is moved.
     */
   def moveColumn(column: js.Object, target: js.Object): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
-  def moveColumn(column: js.Object, target: js.Object, after: js.UndefOr[scala.Nothing], inDom: Boolean): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: js.UndefOr[scala.Nothing],
-    inDom: Boolean,
-    callback: js.Function
-  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean): Unit = js.native
-  def moveColumn(
-    column: js.Object,
-    target: js.Object,
-    after: Boolean,
-    inDom: js.UndefOr[scala.Nothing],
-    callback: js.Function
-  ): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean): Unit = js.native
   def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Boolean, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Boolean, inDom: Unit, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Boolean): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Boolean, callback: js.Function): Unit = js.native
+  def moveColumn(column: js.Object, target: js.Object, after: Unit, inDom: Unit, callback: js.Function): Unit = js.native
   
   /**
     * Returns a list of all transaction objects that are pending to be committed or rolled back to the data source.
     * That is a wrapper for this.dataSource.pendingTransactions().
     */
-  def pendingTransactions(): js.Array[_] = js.native
+  def pendingTransactions(): js.Array[js.Any] = js.native
   
   /**
     * When called the method re-renders the whole grid(also rebinds to the data source) and renders the cols object
     *
     * @param cols an array of column objects
     */
-  def renderMultiColumnHeader(cols: js.Array[_]): Unit = js.native
+  def renderMultiColumnHeader(cols: js.Array[js.Any]): Unit = js.native
   
   /**
     * Adds a new row (TR) to the grid as a child of a specific row, by taking a data row object. Assumes the record will have the primary key.
@@ -412,10 +393,10 @@ trait IgTreeGridMethods extends StObject {
     * @param rowId If specified, will only rollback the transactions with that row id.
     * @param updateUI Whether to update the UI or not.
     */
-  def rollback(): js.Array[_] = js.native
-  def rollback(rowId: js.UndefOr[scala.Nothing], updateUI: Boolean): js.Array[_] = js.native
-  def rollback(rowId: js.Object): js.Array[_] = js.native
-  def rollback(rowId: js.Object, updateUI: Boolean): js.Array[_] = js.native
+  def rollback(): js.Array[js.Any] = js.native
+  def rollback(rowId: js.Object): js.Array[js.Any] = js.native
+  def rollback(rowId: js.Object, updateUI: Boolean): js.Array[js.Any] = js.native
+  def rollback(rowId: Unit, updateUI: Boolean): js.Array[js.Any] = js.native
   
   /**
     * Returns the row (TR element) at the specified index. jQuery selectors aren't used for performance reasons
@@ -436,7 +417,7 @@ trait IgTreeGridMethods extends StObject {
   /**
     * Returns a list of all TR elements holding data in the grid(when there is at least one fixed column returns rows only in the UNFIXED table)
     */
-  def rows(): js.Array[_] = js.native
+  def rows(): js.Array[js.Any] = js.native
   
   /**
     * Invokes an AJAX request to the updateUrl option (if specified) and passes the serialized transaction log (a serialized JSON string) as part of the POST request.
@@ -461,7 +442,7 @@ trait IgTreeGridMethods extends StObject {
     * Returns an array of selected cells in arbitrary order where every objects has the format { element: , row: , index: , rowIndex: , columnKey: } .
     * If multiple selection is disabled the function will return null.
     */
-  def selectedCells(): js.Array[_] = js.native
+  def selectedCells(): js.Array[js.Any] = js.native
   
   /**
     * Returns the currently selected row that has the format { element: , index: }, if any.
@@ -473,7 +454,7 @@ trait IgTreeGridMethods extends StObject {
     * Returns an array of selected rows in arbitrary order where every object has the format { element: , index: } .
     * If multiple selection is disabled the function will return null.
     */
-  def selectedRows(): js.Array[_] = js.native
+  def selectedRows(): js.Array[js.Any] = js.native
   
   /**
     * Sets a new template for a column after initialization and renders the grid if not explicitly disabled. This method will replace any existing explicitly set row template and will build one anew from the column ones.
@@ -502,7 +483,7 @@ trait IgTreeGridMethods extends StObject {
     * @param values array of values to be set on unbound values
     * @param removeOldValues if true removes current unbound values(if any) for the specified column and apply the new ones specified in parameter values. Otherwise merge current values with the specified in parameter values
     */
-  def setUnboundValues(key: String, values: js.Array[_], removeOldValues: js.Object): Unit = js.native
+  def setUnboundValues(key: String, values: js.Array[js.Any], removeOldValues: js.Object): Unit = js.native
   
   /**
     * Shows a hidden column. If the column is not hidden the method does nothing.

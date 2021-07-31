@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRoomSkillParameterRequest extends StObject {
   
   /**
     * The ARN of the room associated with the room skill parameter. Required.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The updated room skill parameter. Required.
     */
-  var RoomSkillParameter: typings.awsSdk.alexaforbusinessMod.RoomSkillParameter = js.native
+  var RoomSkillParameter: typings.awsSdk.alexaforbusinessMod.RoomSkillParameter
   
   /**
     * The ARN of the skill associated with the room skill parameter. Required.
     */
-  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId = js.native
+  var SkillId: typings.awsSdk.alexaforbusinessMod.SkillId
 }
 object PutRoomSkillParameterRequest {
   

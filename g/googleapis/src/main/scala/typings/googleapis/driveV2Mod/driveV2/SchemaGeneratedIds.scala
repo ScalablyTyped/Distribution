@@ -2,29 +2,27 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of generated IDs which can be provided in insert requests
   */
-@js.native
 trait SchemaGeneratedIds extends StObject {
   
   /**
     * The IDs generated for the requesting user in the specified space.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * This is always drive#generatedIds
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The type of file that can be created with these IDs.
     */
-  var space: js.UndefOr[String] = js.native
+  var space: js.UndefOr[String] = js.undefined
 }
 object SchemaGeneratedIds {
   

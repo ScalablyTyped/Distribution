@@ -2,15 +2,13 @@ package typings.reactDataGrid.AdazzleReactDataGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionParams[T] extends StObject {
   
-  var row: T = js.native
+  var row: T
   
-  var rowIdx: Double = js.native
+  var rowIdx: Double
 }
 object SelectionParams {
   
@@ -21,7 +19,7 @@ object SelectionParams {
   }
   
   @scala.inline
-  implicit class SelectionParamsMutableBuilder[Self <: SelectionParams[_], T] (val x: Self with SelectionParams[T]) extends AnyVal {
+  implicit class SelectionParamsMutableBuilder[Self <: SelectionParams[?], T] (val x: Self & SelectionParams[T]) extends AnyVal {
     
     @scala.inline
     def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])

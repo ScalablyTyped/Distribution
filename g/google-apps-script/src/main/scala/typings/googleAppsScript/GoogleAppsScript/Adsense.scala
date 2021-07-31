@@ -30,31 +30,29 @@ import typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.SavedReports
 import typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.UrlChannels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adsense extends StObject {
   
-  var Accounts: js.UndefOr[AccountsCollection] = js.native
+  var Accounts: js.UndefOr[AccountsCollection] = js.undefined
   
-  var Adclients: js.UndefOr[AdclientsCollection] = js.native
+  var Adclients: js.UndefOr[AdclientsCollection] = js.undefined
   
-  var Adunits: js.UndefOr[AdunitsCollection] = js.native
+  var Adunits: js.UndefOr[AdunitsCollection] = js.undefined
   
-  var Alerts: js.UndefOr[AlertsCollection] = js.native
+  var Alerts: js.UndefOr[AlertsCollection] = js.undefined
   
-  var Customchannels: js.UndefOr[CustomchannelsCollection] = js.native
+  var Customchannels: js.UndefOr[CustomchannelsCollection] = js.undefined
   
-  var Metadata: js.UndefOr[MetadataCollection] = js.native
+  var Metadata: js.UndefOr[MetadataCollection] = js.undefined
   
-  var Payments: js.UndefOr[PaymentsCollection] = js.native
+  var Payments: js.UndefOr[PaymentsCollection] = js.undefined
   
-  var Reports: js.UndefOr[ReportsCollection] = js.native
+  var Reports: js.UndefOr[ReportsCollection] = js.undefined
   
-  var Savedadstyles: js.UndefOr[SavedadstylesCollection] = js.native
+  var Savedadstyles: js.UndefOr[SavedadstylesCollection] = js.undefined
   
-  var Urlchannels: js.UndefOr[UrlchannelsCollection] = js.native
+  var Urlchannels: js.UndefOr[UrlchannelsCollection] = js.undefined
 }
 object Adsense {
   
@@ -215,11 +213,10 @@ object Adsense {
         def list(accountId: String, adClientId: String, optionalArgs: js.Object): CustomChannels = js.native
       }
       
-      @js.native
       trait PaymentsCollection extends StObject {
         
         // List the payments for the specified AdSense account.
-        def list(accountId: String): Payments = js.native
+        def list(accountId: String): Payments
       }
       object PaymentsCollection {
         
@@ -415,11 +412,10 @@ object Adsense {
     
     object Metadata {
       
-      @js.native
       trait DimensionsCollection extends StObject {
         
         // List the metadata for the dimensions available to this AdSense account.
-        def list(): typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata = js.native
+        def list(): typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata
       }
       object DimensionsCollection {
         
@@ -437,11 +433,10 @@ object Adsense {
         }
       }
       
-      @js.native
       trait MetricsCollection extends StObject {
         
         // List the metadata for the metrics available to this AdSense account.
-        def list(): typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata = js.native
+        def list(): typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata
       }
       object MetricsCollection {
         
@@ -460,12 +455,11 @@ object Adsense {
       }
     }
     
-    @js.native
     trait MetadataCollection extends StObject {
       
-      var Dimensions: js.UndefOr[DimensionsCollection] = js.native
+      var Dimensions: js.UndefOr[DimensionsCollection] = js.undefined
       
-      var Metrics: js.UndefOr[MetricsCollection] = js.native
+      var Metrics: js.UndefOr[MetricsCollection] = js.undefined
     }
     object MetadataCollection {
       
@@ -492,11 +486,10 @@ object Adsense {
       }
     }
     
-    @js.native
     trait PaymentsCollection extends StObject {
       
       // List the payments for this AdSense account.
-      def list(): Payments = js.native
+      def list(): Payments
     }
     object PaymentsCollection {
       
@@ -568,22 +561,21 @@ object Adsense {
   
   object Schema {
     
-    @js.native
     trait Account extends StObject {
       
-      var creation_time: js.UndefOr[String] = js.native
+      var creation_time: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var premium: js.UndefOr[Boolean] = js.native
+      var premium: js.UndefOr[Boolean] = js.undefined
       
-      var subAccounts: js.UndefOr[js.Array[Account]] = js.native
+      var subAccounts: js.UndefOr[js.Array[Account]] = js.undefined
       
-      var timezone: js.UndefOr[String] = js.native
+      var timezone: js.UndefOr[String] = js.undefined
     }
     object Account {
       
@@ -643,16 +635,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Accounts extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Account]] = js.native
+      var items: js.UndefOr[js.Array[Account]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Accounts {
       
@@ -694,18 +685,17 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdClient extends StObject {
       
-      var arcOptIn: js.UndefOr[Boolean] = js.native
+      var arcOptIn: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var productCode: js.UndefOr[String] = js.native
+      var productCode: js.UndefOr[String] = js.undefined
       
-      var supportsReporting: js.UndefOr[Boolean] = js.native
+      var supportsReporting: js.UndefOr[Boolean] = js.undefined
     }
     object AdClient {
       
@@ -750,16 +740,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdClients extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[AdClient]] = js.native
+      var items: js.UndefOr[js.Array[AdClient]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdClients {
       
@@ -801,16 +790,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdCode extends StObject {
       
-      var adCode: js.UndefOr[String] = js.native
+      var adCode: js.UndefOr[String] = js.undefined
       
-      var ampBody: js.UndefOr[String] = js.native
+      var ampBody: js.UndefOr[String] = js.undefined
       
-      var ampHead: js.UndefOr[String] = js.native
+      var ampHead: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AdCode {
       
@@ -849,16 +837,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdStyle extends StObject {
       
-      var colors: js.UndefOr[AdStyleColors] = js.native
+      var colors: js.UndefOr[AdStyleColors] = js.undefined
       
-      var corners: js.UndefOr[String] = js.native
+      var corners: js.UndefOr[String] = js.undefined
       
-      var font: js.UndefOr[AdStyleFont] = js.native
+      var font: js.UndefOr[AdStyleFont] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AdStyle {
       
@@ -897,18 +884,17 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdStyleColors extends StObject {
       
-      var background: js.UndefOr[String] = js.native
+      var background: js.UndefOr[String] = js.undefined
       
-      var border: js.UndefOr[String] = js.native
+      var border: js.UndefOr[String] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object AdStyleColors {
       
@@ -953,12 +939,11 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdStyleFont extends StObject {
       
-      var family: js.UndefOr[String] = js.native
+      var family: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
     }
     object AdStyleFont {
       
@@ -985,28 +970,27 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnit extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var contentAdsSettings: js.UndefOr[AdUnitContentAdsSettings] = js.native
+      var contentAdsSettings: js.UndefOr[AdUnitContentAdsSettings] = js.undefined
       
-      var customStyle: js.UndefOr[AdStyle] = js.native
+      var customStyle: js.UndefOr[AdStyle] = js.undefined
       
-      var feedAdsSettings: js.UndefOr[AdUnitFeedAdsSettings] = js.native
+      var feedAdsSettings: js.UndefOr[AdUnitFeedAdsSettings] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mobileContentAdsSettings: js.UndefOr[AdUnitMobileContentAdsSettings] = js.native
+      var mobileContentAdsSettings: js.UndefOr[AdUnitMobileContentAdsSettings] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var savedStyleId: js.UndefOr[String] = js.native
+      var savedStyleId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object AdUnit {
       
@@ -1081,14 +1065,13 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnitContentAdsSettings extends StObject {
       
-      var backupOption: js.UndefOr[AdUnitContentAdsSettingsBackupOption] = js.native
+      var backupOption: js.UndefOr[AdUnitContentAdsSettingsBackupOption] = js.undefined
       
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AdUnitContentAdsSettings {
       
@@ -1121,14 +1104,13 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnitContentAdsSettingsBackupOption extends StObject {
       
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object AdUnitContentAdsSettingsBackupOption {
       
@@ -1161,16 +1143,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnitFeedAdsSettings extends StObject {
       
-      var adPosition: js.UndefOr[String] = js.native
+      var adPosition: js.UndefOr[String] = js.undefined
       
-      var frequency: js.UndefOr[Double] = js.native
+      var frequency: js.UndefOr[Double] = js.undefined
       
-      var minimumWordCount: js.UndefOr[Double] = js.native
+      var minimumWordCount: js.UndefOr[Double] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AdUnitFeedAdsSettings {
       
@@ -1209,16 +1190,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnitMobileContentAdsSettings extends StObject {
       
-      var markupLanguage: js.UndefOr[String] = js.native
+      var markupLanguage: js.UndefOr[String] = js.undefined
       
-      var scriptingLanguage: js.UndefOr[String] = js.native
+      var scriptingLanguage: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AdUnitMobileContentAdsSettings {
       
@@ -1257,16 +1237,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdUnits extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[AdUnit]] = js.native
+      var items: js.UndefOr[js.Array[AdUnit]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object AdUnits {
       
@@ -1308,26 +1287,25 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdsenseReportsGenerateResponse extends StObject {
       
-      var averages: js.UndefOr[js.Array[String]] = js.native
+      var averages: js.UndefOr[js.Array[String]] = js.undefined
       
-      var endDate: js.UndefOr[String] = js.native
+      var endDate: js.UndefOr[String] = js.undefined
       
-      var headers: js.UndefOr[js.Array[AdsenseReportsGenerateResponseHeaders]] = js.native
+      var headers: js.UndefOr[js.Array[AdsenseReportsGenerateResponseHeaders]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+      var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
       
-      var startDate: js.UndefOr[String] = js.native
+      var startDate: js.UndefOr[String] = js.undefined
       
-      var totalMatchedRows: js.UndefOr[String] = js.native
+      var totalMatchedRows: js.UndefOr[String] = js.undefined
       
-      var totals: js.UndefOr[js.Array[String]] = js.native
+      var totals: js.UndefOr[js.Array[String]] = js.undefined
       
-      var warnings: js.UndefOr[js.Array[String]] = js.native
+      var warnings: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AdsenseReportsGenerateResponse {
       
@@ -1411,14 +1389,13 @@ object Adsense {
       }
     }
     
-    @js.native
     trait AdsenseReportsGenerateResponseHeaders extends StObject {
       
-      var currency: js.UndefOr[String] = js.native
+      var currency: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AdsenseReportsGenerateResponseHeaders {
       
@@ -1451,20 +1428,19 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Alert extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isDismissible: js.UndefOr[Boolean] = js.native
+      var isDismissible: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var severity: js.UndefOr[String] = js.native
+      var severity: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Alert {
       
@@ -1515,12 +1491,11 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Alerts extends StObject {
       
-      var items: js.UndefOr[js.Array[Alert]] = js.native
+      var items: js.UndefOr[js.Array[Alert]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Alerts {
       
@@ -1550,18 +1525,17 @@ object Adsense {
       }
     }
     
-    @js.native
     trait CustomChannel extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var targetingInfo: js.UndefOr[CustomChannelTargetingInfo] = js.native
+      var targetingInfo: js.UndefOr[CustomChannelTargetingInfo] = js.undefined
     }
     object CustomChannel {
       
@@ -1606,16 +1580,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait CustomChannelTargetingInfo extends StObject {
       
-      var adsAppearOn: js.UndefOr[String] = js.native
+      var adsAppearOn: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var location: js.UndefOr[String] = js.native
+      var location: js.UndefOr[String] = js.undefined
       
-      var siteLanguage: js.UndefOr[String] = js.native
+      var siteLanguage: js.UndefOr[String] = js.undefined
     }
     object CustomChannelTargetingInfo {
       
@@ -1654,16 +1627,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait CustomChannels extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[CustomChannel]] = js.native
+      var items: js.UndefOr[js.Array[CustomChannel]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object CustomChannels {
       
@@ -1705,12 +1677,11 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Metadata extends StObject {
       
-      var items: js.UndefOr[js.Array[ReportingMetadataEntry]] = js.native
+      var items: js.UndefOr[js.Array[ReportingMetadataEntry]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Metadata {
       
@@ -1740,18 +1711,17 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Payment extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var paymentAmount: js.UndefOr[String] = js.native
+      var paymentAmount: js.UndefOr[String] = js.undefined
       
-      var paymentAmountCurrencyCode: js.UndefOr[String] = js.native
+      var paymentAmountCurrencyCode: js.UndefOr[String] = js.undefined
       
-      var paymentDate: js.UndefOr[String] = js.native
+      var paymentDate: js.UndefOr[String] = js.undefined
     }
     object Payment {
       
@@ -1796,12 +1766,11 @@ object Adsense {
       }
     }
     
-    @js.native
     trait Payments extends StObject {
       
-      var items: js.UndefOr[js.Array[Payment]] = js.native
+      var items: js.UndefOr[js.Array[Payment]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object Payments {
       
@@ -1831,22 +1800,21 @@ object Adsense {
       }
     }
     
-    @js.native
     trait ReportingMetadataEntry extends StObject {
       
-      var compatibleDimensions: js.UndefOr[js.Array[String]] = js.native
+      var compatibleDimensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var compatibleMetrics: js.UndefOr[js.Array[String]] = js.native
+      var compatibleMetrics: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var requiredDimensions: js.UndefOr[js.Array[String]] = js.native
+      var requiredDimensions: js.UndefOr[js.Array[String]] = js.undefined
       
-      var requiredMetrics: js.UndefOr[js.Array[String]] = js.native
+      var requiredMetrics: js.UndefOr[js.Array[String]] = js.undefined
       
-      var supportedProducts: js.UndefOr[js.Array[String]] = js.native
+      var supportedProducts: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ReportingMetadataEntry {
       
@@ -1918,16 +1886,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait SavedAdStyle extends StObject {
       
-      var adStyle: js.UndefOr[AdStyle] = js.native
+      var adStyle: js.UndefOr[AdStyle] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object SavedAdStyle {
       
@@ -1966,16 +1933,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait SavedAdStyles extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[SavedAdStyle]] = js.native
+      var items: js.UndefOr[js.Array[SavedAdStyle]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object SavedAdStyles {
       
@@ -2017,14 +1983,13 @@ object Adsense {
       }
     }
     
-    @js.native
     trait SavedReport extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object SavedReport {
       
@@ -2057,16 +2022,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait SavedReports extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[SavedReport]] = js.native
+      var items: js.UndefOr[js.Array[SavedReport]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object SavedReports {
       
@@ -2108,14 +2072,13 @@ object Adsense {
       }
     }
     
-    @js.native
     trait UrlChannel extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var urlPattern: js.UndefOr[String] = js.native
+      var urlPattern: js.UndefOr[String] = js.undefined
     }
     object UrlChannel {
       
@@ -2148,16 +2111,15 @@ object Adsense {
       }
     }
     
-    @js.native
     trait UrlChannels extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[UrlChannel]] = js.native
+      var items: js.UndefOr[js.Array[UrlChannel]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object UrlChannels {
       

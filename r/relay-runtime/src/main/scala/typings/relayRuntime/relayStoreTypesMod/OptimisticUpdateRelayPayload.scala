@@ -2,17 +2,17 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OptimisticUpdateRelayPayload extends OptimisticUpdate {
+trait OptimisticUpdateRelayPayload
+  extends StObject
+     with OptimisticUpdate {
   
-  val operation: OperationDescriptor = js.native
+  val operation: OperationDescriptor
   
-  val payload: RelayResponsePayload = js.native
+  val payload: RelayResponsePayload
   
-  val updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.native
+  val updater: js.UndefOr[SelectorStoreUpdater[js.Object] | Null] = js.undefined
 }
 object OptimisticUpdateRelayPayload {
   

@@ -3,29 +3,29 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when new participant joined the chat room
   */
-@js.native
-trait ChatRoomNewParticipant extends VoxImplantIMEvent {
+trait ChatRoomNewParticipant
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * User display name
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * User id
     */
-  var participant: String = js.native
+  var participant: String
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
 }
 object ChatRoomNewParticipant {
   

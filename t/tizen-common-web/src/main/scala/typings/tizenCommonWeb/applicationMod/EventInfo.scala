@@ -2,10 +2,8 @@ package typings.tizenCommonWeb.applicationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventInfo extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait EventInfo extends StObject {
     *
     * System events do not require an application identifier to be specified. If one is specified, the event will be interpreted as an user event.
     */
-  var appId: ApplicationId = js.native
+  var appId: ApplicationId
   
   /**
     * Name which describes the event.
@@ -23,7 +21,7 @@ trait EventInfo extends StObject {
     * Must only contain the ASCII characters "[A-Z][a-z][0-9]_" and may not begin with a digit.
     * Must be at least 1 byte in length and not exceed the maximum name length of 127 bytes.
     */
-  var name: String = js.native
+  var name: String
 }
 object EventInfo {
   

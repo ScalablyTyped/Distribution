@@ -2,7 +2,6 @@ package typings.typeorm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm", "ReadPreference")
@@ -66,7 +65,6 @@ object ReadPreference {
   /**
     * Validate if a mode is legal.
     */
-  @JSImport("typeorm", "ReadPreference.isValid")
-  @js.native
-  def isValid(mode: String): Boolean = js.native
+  @scala.inline
+  def isValid(mode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(mode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

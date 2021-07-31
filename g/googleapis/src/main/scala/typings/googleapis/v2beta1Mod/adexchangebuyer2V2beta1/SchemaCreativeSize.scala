@@ -2,13 +2,11 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the size of the creative.
   */
-@js.native
 trait SchemaCreativeSize extends StObject {
   
   /**
@@ -17,36 +15,36 @@ trait SchemaCreativeSize extends StObject {
     * AllowedFormatType.AUDIO then the publisher only allows an audio ad
     * (without any video).
     */
-  var allowedFormats: js.UndefOr[js.Array[String]] = js.native
+  var allowedFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For video creatives specifies the sizes of companion ads (if present).
     * Companion sizes may be filled in only when creative_size_type = VIDEO
     */
-  var companionSizes: js.UndefOr[js.Array[SchemaSize]] = js.native
+  var companionSizes: js.UndefOr[js.Array[SchemaSize]] = js.undefined
   
   /**
     * The creative size type.
     */
-  var creativeSizeType: js.UndefOr[String] = js.native
+  var creativeSizeType: js.UndefOr[String] = js.undefined
   
   /**
     * The native template for this creative. It will have a value only if
     * creative_size_type = CreativeSizeType.NATIVE. @OutputOnly
     */
-  var nativeTemplate: js.UndefOr[String] = js.native
+  var nativeTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * For regular or video creative size type, specifies the size of the
     * creative
     */
-  var size: js.UndefOr[SchemaSize] = js.native
+  var size: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The type of skippable ad for this creative. It will have a value only if
     * creative_size_type = CreativeSizeType.VIDEO.
     */
-  var skippableAdType: js.UndefOr[String] = js.native
+  var skippableAdType: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeSize {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceGroupsListInstancesRequest extends StObject {
   
   /**
     * A filter for the state of the instances in the instance group. Valid options are ALL or RUNNING. If you do not specify this parameter the list includes all instances regardless of
     * their state.
     */
-  var instanceState: js.UndefOr[String] = js.native
+  var instanceState: js.UndefOr[String] = js.undefined
 }
 object InstanceGroupsListInstancesRequest {
   

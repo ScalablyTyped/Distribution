@@ -4,7 +4,6 @@ import typings.node.processMod.global.NodeJS.Process
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,53 +14,59 @@ object mod {
   
   object default {
     
-    @JSImport("ts-invariant", JSImport.Default)
-    @js.native
-    def apply(condition: js.Any): Unit = js.native
-    @JSImport("ts-invariant", JSImport.Default)
-    @js.native
-    def apply(condition: js.Any, message: String): Unit = js.native
-    @JSImport("ts-invariant", JSImport.Default)
-    @js.native
-    def apply(condition: js.Any, message: Double): Unit = js.native
+    @scala.inline
+    def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ts-invariant", "default.error")
+    @JSImport("ts-invariant", JSImport.Default)
     @js.native
-    def error(args: js.Any*): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ts-invariant", "default.warn")
-    @js.native
-    def warn(args: js.Any*): Unit = js.native
+    @scala.inline
+    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("ts-invariant", "InvariantError")
   @js.native
-  class InvariantError () extends Error {
+  class InvariantError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     def this(message: Double) = this()
     
     var framesToPop: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   object invariant {
     
-    @JSImport("ts-invariant", "invariant")
-    @js.native
-    def apply(condition: js.Any): Unit = js.native
-    @JSImport("ts-invariant", "invariant")
-    @js.native
-    def apply(condition: js.Any, message: String): Unit = js.native
-    @JSImport("ts-invariant", "invariant")
-    @js.native
-    def apply(condition: js.Any, message: Double): Unit = js.native
+    @scala.inline
+    def apply(condition: js.Any): Unit = ^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def apply(condition: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def apply(condition: js.Any, message: Double): Unit = (^.asInstanceOf[js.Dynamic].apply(condition.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ts-invariant", "invariant.error")
+    @JSImport("ts-invariant", "invariant")
     @js.native
-    def error(args: js.Any*): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ts-invariant", "invariant.warn")
-    @js.native
-    def warn(args: js.Any*): Unit = js.native
+    @scala.inline
+    def error(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def warn(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("ts-invariant", "process")

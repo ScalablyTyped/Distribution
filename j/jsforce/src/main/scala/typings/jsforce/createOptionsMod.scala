@@ -5,85 +5,85 @@ import typings.jsforce.salesforceObjectOptionsMod.SObjectOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createOptionsMod {
   
-  @js.native
-  trait SObjectCreateOptions extends SObjectOptions {
+  trait SObjectCreateOptions
+    extends StObject
+       with SObjectOptions {
     
-    var AccountSource: js.UndefOr[String] = js.native
+    var AccountSource: js.UndefOr[String] = js.undefined
     
-    var BillingCity: js.UndefOr[String] = js.native
+    var BillingCity: js.UndefOr[String] = js.undefined
     
-    var BillingCountry: js.UndefOr[String] = js.native
+    var BillingCountry: js.UndefOr[String] = js.undefined
     
-    var BillingLatitude: js.UndefOr[Double] = js.native
+    var BillingLatitude: js.UndefOr[Double] = js.undefined
     
-    var BillingLongitude: js.UndefOr[Double] = js.native
+    var BillingLongitude: js.UndefOr[Double] = js.undefined
     
-    var BillingPostalCode: js.UndefOr[String] = js.native
+    var BillingPostalCode: js.UndefOr[String] = js.undefined
     
-    var BillingState: js.UndefOr[String] = js.native
+    var BillingState: js.UndefOr[String] = js.undefined
     
-    var BillingStreet: js.UndefOr[String] = js.native
+    var BillingStreet: js.UndefOr[String] = js.undefined
     
-    var CreatedById: js.UndefOr[SalesforceId] = js.native
+    var CreatedById: js.UndefOr[SalesforceId] = js.undefined
     
-    var CreatedDate: js.UndefOr[Date] = js.native
+    var CreatedDate: js.UndefOr[Date] = js.undefined
     
-    var Description: js.UndefOr[String] = js.native
+    var Description: js.UndefOr[String] = js.undefined
     
-    var Industry: js.UndefOr[String] = js.native
+    var Industry: js.UndefOr[String] = js.undefined
     
-    var IsDeleted: js.UndefOr[Boolean] = js.native
+    var IsDeleted: js.UndefOr[Boolean] = js.undefined
     
-    var Jigsaw: js.UndefOr[String] = js.native
+    var Jigsaw: js.UndefOr[String] = js.undefined
     
-    var JigsawCompanyId: js.UndefOr[String] = js.native
+    var JigsawCompanyId: js.UndefOr[String] = js.undefined
     
-    var LastActivityDate: js.UndefOr[Date] = js.native
+    var LastActivityDate: js.UndefOr[Date] = js.undefined
     
-    var LastModifiedById: js.UndefOr[SalesforceId] = js.native
+    var LastModifiedById: js.UndefOr[SalesforceId] = js.undefined
     
-    var LastModifiedDate: js.UndefOr[Date] = js.native
+    var LastModifiedDate: js.UndefOr[Date] = js.undefined
     
-    var LastReferencedDate: js.UndefOr[Date] = js.native
+    var LastReferencedDate: js.UndefOr[Date] = js.undefined
     
-    var LastViewedDate: js.UndefOr[Date] = js.native
+    var LastViewedDate: js.UndefOr[Date] = js.undefined
     
-    var MasterRecordId: js.UndefOr[SalesforceId] = js.native
+    var MasterRecordId: js.UndefOr[SalesforceId] = js.undefined
     
-    var NumberOfEmployees: js.UndefOr[Double] = js.native
+    var NumberOfEmployees: js.UndefOr[Double] = js.undefined
     
-    var OwnerId: js.UndefOr[SalesforceId] = js.native
+    var OwnerId: js.UndefOr[SalesforceId] = js.undefined
     
-    var ParentId: js.UndefOr[SalesforceId] = js.native
+    var ParentId: js.UndefOr[SalesforceId] = js.undefined
     
-    var Phone: js.UndefOr[String] = js.native
+    var Phone: js.UndefOr[String] = js.undefined
     
-    var ShippingCity: js.UndefOr[String] = js.native
+    var ShippingCity: js.UndefOr[String] = js.undefined
     
-    var ShippingCountry: js.UndefOr[String] = js.native
+    var ShippingCountry: js.UndefOr[String] = js.undefined
     
-    var ShippingLatitude: js.UndefOr[Double] = js.native
+    var ShippingLatitude: js.UndefOr[Double] = js.undefined
     
-    var ShippingLongitude: js.UndefOr[Double] = js.native
+    var ShippingLongitude: js.UndefOr[Double] = js.undefined
     
-    var ShippingPostalCode: js.UndefOr[String] = js.native
+    var ShippingPostalCode: js.UndefOr[String] = js.undefined
     
-    var ShippingState: js.UndefOr[String] = js.native
+    var ShippingState: js.UndefOr[String] = js.undefined
     
-    var ShippingStreet: js.UndefOr[String] = js.native
+    var ShippingStreet: js.UndefOr[String] = js.undefined
     
-    var SicDesc: js.UndefOr[String] = js.native
+    var SicDesc: js.UndefOr[String] = js.undefined
     
-    var SystemModstamp: js.UndefOr[Date] = js.native
+    var SystemModstamp: js.UndefOr[Date] = js.undefined
     
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
-    var Website: js.UndefOr[String] = js.native
+    var Website: js.UndefOr[String] = js.undefined
   }
   object SObjectCreateOptions {
     

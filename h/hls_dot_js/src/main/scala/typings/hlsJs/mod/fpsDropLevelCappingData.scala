@@ -2,15 +2,13 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait fpsDropLevelCappingData extends StObject {
   
-  var droppedLevel: Level = js.native
+  var droppedLevel: Level
   
-  var level: Level = js.native
+  var level: Level
 }
 object fpsDropLevelCappingData {
   

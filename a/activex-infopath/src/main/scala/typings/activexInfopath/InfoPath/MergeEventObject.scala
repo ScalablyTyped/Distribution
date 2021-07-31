@@ -3,26 +3,24 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergeEventObject extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val DOM: IXMLDOMDocument = js.native
+  val DOM: IXMLDOMDocument
   
   @JSName("InfoPath.MergeEventObject_typekey")
-  var InfoPathDotMergeEventObject_typekey: MergeEventObject = js.native
+  var InfoPathDotMergeEventObject_typekey: MergeEventObject
   
-  var ReturnStatus: Boolean = js.native
+  var ReturnStatus: Boolean
   
-  var RollBack: Boolean = js.native
+  var RollBack: Boolean
   
-  val XDocument: _XDocument = js.native
+  val XDocument: _XDocument
   
-  val index: Double = js.native
+  val index: Double
 }
 object MergeEventObject {
   

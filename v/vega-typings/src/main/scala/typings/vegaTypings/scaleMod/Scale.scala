@@ -1,21 +1,10 @@
 package typings.vegaTypings.scaleMod
 
 import typings.vegaTypings.signalMod.SignalRef
-import typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`
-import typings.vegaTypings.vegaTypingsStrings.band
-import typings.vegaTypings.vegaTypingsStrings.identity
-import typings.vegaTypings.vegaTypingsStrings.log
-import typings.vegaTypings.vegaTypingsStrings.ordinal
-import typings.vegaTypings.vegaTypingsStrings.point
-import typings.vegaTypings.vegaTypingsStrings.pow
-import typings.vegaTypings.vegaTypingsStrings.sequential
-import typings.vegaTypings.vegaTypingsStrings.sqrt
-import typings.vegaTypings.vegaTypingsStrings.symlog
 import typings.vegaTypings.vegaTypingsStrings.time
 import typings.vegaTypings.vegaTypingsStrings.utc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -39,23 +28,23 @@ trait Scale extends StObject
 object Scale {
   
   @scala.inline
-  def BandScale(name: String, `type`: band): typings.vegaTypings.scaleMod.BandScale = {
+  def BandScale(name: String): typings.vegaTypings.scaleMod.BandScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("band")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.BandScale]
   }
   
   @scala.inline
-  def BinOrdinalScale(name: String, `type`: `bin-ordinal`): typings.vegaTypings.scaleMod.BinOrdinalScale = {
+  def BinOrdinalScale(name: String): typings.vegaTypings.scaleMod.BinOrdinalScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bin-ordinal")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.BinOrdinalScale]
   }
   
   @scala.inline
-  def IdentityScale(name: String, `type`: identity): typings.vegaTypings.scaleMod.IdentityScale = {
+  def IdentityScale(name: String): typings.vegaTypings.scaleMod.IdentityScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("identity")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.IdentityScale]
   }
   
@@ -66,30 +55,30 @@ object Scale {
   }
   
   @scala.inline
-  def LogScale(name: String, `type`: log): typings.vegaTypings.scaleMod.LogScale = {
+  def LogScale(name: String): typings.vegaTypings.scaleMod.LogScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("log")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.LogScale]
   }
   
   @scala.inline
-  def OrdinalScale(name: String, `type`: ordinal): typings.vegaTypings.scaleMod.OrdinalScale = {
+  def OrdinalScale(name: String): typings.vegaTypings.scaleMod.OrdinalScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ordinal")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.OrdinalScale]
   }
   
   @scala.inline
-  def PointScale(name: String, `type`: point): typings.vegaTypings.scaleMod.PointScale = {
+  def PointScale(name: String): typings.vegaTypings.scaleMod.PointScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("point")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.PointScale]
   }
   
   @scala.inline
-  def PowScale(exponent: Double | SignalRef, name: String, `type`: pow): typings.vegaTypings.scaleMod.PowScale = {
+  def PowScale(exponent: Double | SignalRef, name: String): typings.vegaTypings.scaleMod.PowScale = {
     val __obj = js.Dynamic.literal(exponent = exponent.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pow")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.PowScale]
   }
   
@@ -106,23 +95,23 @@ object Scale {
   }
   
   @scala.inline
-  def SequentialScale(name: String, `type`: sequential): typings.vegaTypings.scaleMod.SequentialScale = {
+  def SequentialScale(name: String): typings.vegaTypings.scaleMod.SequentialScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sequential")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.SequentialScale]
   }
   
   @scala.inline
-  def SqrtScale(name: String, `type`: sqrt): typings.vegaTypings.scaleMod.SqrtScale = {
+  def SqrtScale(name: String): typings.vegaTypings.scaleMod.SqrtScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sqrt")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.SqrtScale]
   }
   
   @scala.inline
-  def SymLogScale(name: String, `type`: symlog): typings.vegaTypings.scaleMod.SymLogScale = {
+  def SymLogScale(name: String): typings.vegaTypings.scaleMod.SymLogScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("symlog")
     __obj.asInstanceOf[typings.vegaTypings.scaleMod.SymLogScale]
   }
   

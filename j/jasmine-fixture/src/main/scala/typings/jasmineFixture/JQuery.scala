@@ -2,17 +2,15 @@ package typings.jasmineFixture
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
   /**
     * Affixes the given jquery selectors into the element and will be removed after each spec
     * @param selector The JQuery selector to be added to the dom
     */
-  def affix(selector: String): JQuery = js.native
+  def affix(selector: String): JQuery
 }
 object JQuery {
   

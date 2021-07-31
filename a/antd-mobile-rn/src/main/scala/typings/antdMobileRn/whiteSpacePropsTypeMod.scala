@@ -7,15 +7,13 @@ import typings.antdMobileRn.antdMobileRnStrings.xl
 import typings.antdMobileRn.antdMobileRnStrings.xs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object whiteSpacePropsTypeMod {
   
-  @js.native
   trait WhiteSpacePropsType extends StObject {
     
-    var size: js.UndefOr[xs | sm | md | lg | xl] = js.native
+    var size: js.UndefOr[xs | sm | md | lg | xl] = js.undefined
   }
   object WhiteSpacePropsType {
     

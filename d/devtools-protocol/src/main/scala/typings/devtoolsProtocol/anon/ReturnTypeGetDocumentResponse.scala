@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetDocumentRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetDocumentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetDocumentResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetDocumentRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetDocumentRequest]]
   
-  var returnType: GetDocumentResponse = js.native
+  var returnType: GetDocumentResponse
 }
 object ReturnTypeGetDocumentResponse {
   

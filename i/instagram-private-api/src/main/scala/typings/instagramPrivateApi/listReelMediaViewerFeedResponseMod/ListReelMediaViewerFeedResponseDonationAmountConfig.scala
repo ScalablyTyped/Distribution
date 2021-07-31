@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseDonationAmountConfig extends StObject {
   
-  var default_selected_donation_value: Double = js.native
+  var default_selected_donation_value: Double
   
-  var donation_amount_selector_values: js.Array[Double] = js.native
+  var donation_amount_selector_values: js.Array[Double]
   
-  var maximum_donation_amount: Double = js.native
+  var maximum_donation_amount: Double
   
-  var minimum_donation_amount: Double = js.native
+  var minimum_donation_amount: Double
   
-  var user_currency: String = js.native
+  var user_currency: String
 }
 object ListReelMediaViewerFeedResponseDonationAmountConfig {
   

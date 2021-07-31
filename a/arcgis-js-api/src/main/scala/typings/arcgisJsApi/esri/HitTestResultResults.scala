@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HitTestResultResults extends Object {
+trait HitTestResultResults
+  extends StObject
+     with Object {
   
   /**
     * A graphic representing a feature in the view that intersects the input screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult)
     */
-  var graphic: Graphic = js.native
+  var graphic: Graphic
   
   /**
     * The point geometry in the spatial reference of the view corresponding with the input screen coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html#HitTestResult)
     */
-  var mapPoint: Point = js.native
+  var mapPoint: Point
 }
 object HitTestResultResults {
   

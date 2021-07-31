@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderreturnsRefundOperation extends StObject {
   
   /**
     * If true, the item will be fully refunded. Allowed only when payment_type is FOP. Merchant can choose this refund option to indicate the full remaining amount of corresponding object
     * to be refunded to the customer via FOP.
     */
-  var fullRefund: js.UndefOr[Boolean] = js.native
+  var fullRefund: js.UndefOr[Boolean] = js.undefined
   
   /** If this is set, the item will be partially refunded. Merchant can choose this refund option to specify the customized amount that to be refunded to the customer. */
-  var partialRefund: js.UndefOr[OrderreturnsPartialRefund] = js.native
+  var partialRefund: js.UndefOr[OrderreturnsPartialRefund] = js.undefined
   
   /** The payment way of issuing refund. Default value is ORIGINAL_FOP if not set. */
-  var paymentType: js.UndefOr[String] = js.native
+  var paymentType: js.UndefOr[String] = js.undefined
   
   /** The explanation of the reason. */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
   
   /** Code of the refund reason. */
-  var returnRefundReason: js.UndefOr[String] = js.native
+  var returnRefundReason: js.UndefOr[String] = js.undefined
 }
 object OrderreturnsRefundOperation {
   

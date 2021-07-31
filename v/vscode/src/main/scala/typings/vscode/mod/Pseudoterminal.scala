@@ -2,7 +2,6 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -118,14 +117,14 @@ trait Pseudoterminal extends StObject {
     * writeEmitter.fire('\x1b[10;20H*');
     * ```
     */
-  def onDidWrite(listener: js.Function1[/* e */ String, _]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, js.Any]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, js.Any], thisArgs: js.Any): Disposable = js.native
   def onDidWrite(
-    listener: js.Function1[/* e */ String, _],
-    thisArgs: js.UndefOr[scala.Nothing],
+    listener: js.Function1[/* e */ String, js.Any],
+    thisArgs: js.Any,
     disposables: js.Array[Disposable]
   ): Disposable = js.native
-  def onDidWrite(listener: js.Function1[/* e */ String, _], thisArgs: js.Any): Disposable = js.native
-  def onDidWrite(listener: js.Function1[/* e */ String, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onDidWrite(listener: js.Function1[/* e */ String, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * An event that when fired will write data to the terminal. Unlike
     * [Terminal.sendText](#Terminal.sendText) which sends text to the underlying child

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateSoftwareTokenRequest extends StObject {
   
   /**
     * The access token.
     */
-  var AccessToken: js.UndefOr[TokenModelType] = js.native
+  var AccessToken: js.UndefOr[TokenModelType] = js.undefined
   
   /**
     * The session which should be passed both ways in challenge-response calls to the service. This allows authentication of the user as part of the MFA setup process.
     */
-  var Session: js.UndefOr[SessionType] = js.native
+  var Session: js.UndefOr[SessionType] = js.undefined
 }
 object AssociateSoftwareTokenRequest {
   

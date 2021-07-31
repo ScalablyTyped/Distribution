@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1SpeechContext extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GoogleCloudVideointelligenceV1SpeechContext extends StObject {
     * specific words and phrases, for example, if specific commands are typically spoken by the user. This can also be used to add additional words to the vocabulary of the recognizer.
     * See [usage limits](https://cloud.google.com/speech/limits#content).
     */
-  var phrases: js.UndefOr[js.Array[String]] = js.native
+  var phrases: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1SpeechContext {
   

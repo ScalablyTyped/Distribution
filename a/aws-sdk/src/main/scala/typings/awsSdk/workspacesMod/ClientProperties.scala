@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientProperties extends StObject {
   
   /**
     * Specifies whether users can cache their credentials on the Amazon WorkSpaces client. When enabled, users can choose to reconnect to their WorkSpaces without re-entering their credentials. 
     */
-  var ReconnectEnabled: js.UndefOr[ReconnectEnum] = js.native
+  var ReconnectEnabled: js.UndefOr[ReconnectEnum] = js.undefined
 }
 object ClientProperties {
   

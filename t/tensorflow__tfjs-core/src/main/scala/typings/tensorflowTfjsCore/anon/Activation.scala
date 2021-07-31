@@ -16,31 +16,29 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Activation[T /* <: Tensor3D | Tensor4D */] extends StObject {
   
-  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.native
+  var activation: js.UndefOr[typings.tensorflowTfjsCore.fusedTypesMod.Activation] = js.undefined
   
-  var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.native
+  var bias: js.UndefOr[Tensor[Rank] | TensorLike] = js.undefined
   
-  var dataFormat: js.UndefOr[NHWC | NCHW] = js.native
+  var dataFormat: js.UndefOr[NHWC | NCHW] = js.undefined
   
-  var dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double] = js.native
+  var dilations: js.UndefOr[(js.Tuple2[Double, Double]) | Double] = js.undefined
   
-  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.native
+  var dimRoundingMode: js.UndefOr[floor | round | ceil] = js.undefined
   
-  var filter: Tensor4D | TensorLike = js.native
+  var filter: Tensor4D | TensorLike
   
-  var pad: valid_ | same_ | Double | ExplicitPadding = js.native
+  var pad: valid_ | same_ | Double | ExplicitPadding
   
-  var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.native
+  var preluActivationWeights: js.UndefOr[Tensor[Rank]] = js.undefined
   
-  var strides: (js.Tuple2[Double, Double]) | Double = js.native
+  var strides: (js.Tuple2[Double, Double]) | Double
   
-  var x: T | TensorLike = js.native
+  var x: T | TensorLike
 }
 object Activation {
   
@@ -56,7 +54,7 @@ object Activation {
   }
   
   @scala.inline
-  implicit class ActivationMutableBuilder[Self <: Activation[_], T /* <: Tensor3D | Tensor4D */] (val x: Self with Activation[T]) extends AnyVal {
+  implicit class ActivationMutableBuilder[Self <: Activation[?], T /* <: Tensor3D | Tensor4D */] (val x: Self & Activation[T]) extends AnyVal {
     
     @scala.inline
     def setActivation(value: typings.tensorflowTfjsCore.fusedTypesMod.Activation): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])

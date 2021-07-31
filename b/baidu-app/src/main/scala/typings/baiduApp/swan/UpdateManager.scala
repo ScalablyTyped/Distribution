@@ -4,21 +4,19 @@ import typings.baiduApp.anon.Confirm
 import typings.baiduApp.anon.HasUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 更新
-@js.native
 trait UpdateManager extends StObject {
   
-  def applyUpdate(): Unit = js.native
+  def applyUpdate(): Unit
   
-  def onCheckForUpdate(callback: js.Function1[/* res */ HasUpdate, Unit]): Unit = js.native
+  def onCheckForUpdate(callback: js.Function1[/* res */ HasUpdate, Unit]): Unit
   
-  def onUpdateFailed(callback: js.Function1[/* res */ js.Any, Unit]): Unit = js.native
+  def onUpdateFailed(callback: js.Function1[/* res */ js.Any, Unit]): Unit
   
-  def onUpdateReady(callback: js.Function1[/* res */ Confirm, Unit]): Unit = js.native
+  def onUpdateReady(callback: js.Function1[/* res */ Confirm, Unit]): Unit
 }
 object UpdateManager {
   

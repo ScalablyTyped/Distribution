@@ -4,38 +4,35 @@ import typings.d3Geo.mod.GeoStream_
 import typings.d3Geo.mod.GeoTransformPrototype
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[T /* <: GeoTransformPrototype */] extends StObject {
     
-    def stream(s: GeoStream_): T with GeoStream_ = js.native
+    def stream(s: GeoStream_): T & GeoStream_
   }
   object `0` {
     
     @scala.inline
-    def apply[T /* <: GeoTransformPrototype */](stream: GeoStream_ => T with GeoStream_): `0`[T] = {
+    def apply[T /* <: GeoTransformPrototype */](stream: GeoStream_ => T & GeoStream_): `0`[T] = {
       val __obj = js.Dynamic.literal(stream = js.Any.fromFunction1(stream))
       __obj.asInstanceOf[`0`[T]]
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], T /* <: GeoTransformPrototype */] (val x: Self with `0`[T]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], T /* <: GeoTransformPrototype */] (val x: Self & `0`[T]) extends AnyVal {
       
       @scala.inline
-      def setStream(value: GeoStream_ => T with GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
+      def setStream(value: GeoStream_ => T & GeoStream_): Self = StObject.set(x, "stream", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Properties extends StObject {
     
-    var properties: js.Any = js.native
+    var properties: js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Properties {
     
@@ -57,10 +54,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var stream: GeoStream_ = js.native
+    var stream: GeoStream_
   }
   object Stream {
     

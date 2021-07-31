@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientNotebooks.gapi.client.notebooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLocationsResponse extends StObject {
   
   /** A list of locations that matches the specified filter in the request. */
-  var locations: js.UndefOr[js.Array[Location]] = js.native
+  var locations: js.UndefOr[js.Array[Location]] = js.undefined
   
   /** The standard List next-page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListLocationsResponse {
   

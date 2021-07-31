@@ -2,22 +2,23 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the JQuery deferred, part of callbacks
   */
 @js.native
-trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
+trait JQueryDeferred[T]
+  extends StObject
+     with JQueryGenericPromise[T] {
   
   def always(
-    alwaysCallback1: js.UndefOr[scala.Nothing],
-    alwaysCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    alwaysCallback1: js.Array[JQueryPromiseCallback[js.Any]],
+    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   def always(
-    alwaysCallback1: js.Array[JQueryPromiseCallback[_]],
-    alwaysCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    alwaysCallback1: Unit,
+    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   /**
     * Add handlers to be called when the Deferred object is either resolved or rejected.
@@ -26,16 +27,16 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param alwaysCallbacks2 Optional additional functions, or arrays of functions, that are called when the Deferred is resolved or rejected.
     */
   def always(
-    alwaysCallback1: JQueryPromiseCallback[_],
-    alwaysCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    alwaysCallback1: JQueryPromiseCallback[js.Any],
+    alwaysCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   
   def done(
-    doneCallback1: js.UndefOr[scala.Nothing],
+    doneCallback1: js.Array[JQueryPromiseCallback[T]],
     doneCallbackN: (JQueryPromiseCallback[T] | js.Array[JQueryPromiseCallback[T]])*
   ): JQueryDeferred[T] = js.native
   def done(
-    doneCallback1: js.Array[JQueryPromiseCallback[T]],
+    doneCallback1: Unit,
     doneCallbackN: (JQueryPromiseCallback[T] | js.Array[JQueryPromiseCallback[T]])*
   ): JQueryDeferred[T] = js.native
   /**
@@ -50,12 +51,12 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
   ): JQueryDeferred[T] = js.native
   
   def fail(
-    failCallback1: js.UndefOr[scala.Nothing],
-    failCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    failCallback1: js.Array[JQueryPromiseCallback[js.Any]],
+    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   def fail(
-    failCallback1: js.Array[JQueryPromiseCallback[_]],
-    failCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    failCallback1: Unit,
+    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   /**
     * Add handlers to be called when the Deferred object is rejected.
@@ -64,19 +65,18 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param failCallbacks2 Optional additional functions, or arrays of functions, that are called when the Deferred is rejected.
     */
   def fail(
-    failCallback1: JQueryPromiseCallback[_],
-    failCallbacksN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    failCallback1: JQueryPromiseCallback[js.Any],
+    failCallbacksN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   
-  def notify(value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
   /**
     * Call the progressCallbacks on a Deferred object with the given args.
     * 
     * @param args Optional arguments that are passed to the progressCallbacks.
     */
   def notify(value: js.Any, args: js.Any*): JQueryDeferred[T] = js.native
+  def notify(value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
-  def notifyWith(context: js.Any, value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
   /**
     * Call the progressCallbacks on a Deferred object with the given context and args.
     * 
@@ -84,40 +84,37 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param args Optional arguments that are passed to the progressCallbacks.
     */
   def notifyWith(context: js.Any, value: js.Any, args: js.Any*): JQueryDeferred[T] = js.native
+  def notifyWith(context: js.Any, value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
   // Deprecated - given no typings
-  def pipe(): JQueryPromise[_] = js.native
+  def pipe(): JQueryPromise[js.Any] = js.native
+  def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
+  def pipe(doneFilter: js.Function1[/* x */ js.Any, js.Any], failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
   def pipe(
-    doneFilter: js.UndefOr[scala.Nothing],
-    failFilter: js.UndefOr[scala.Nothing],
-    progressFilter: js.Function1[/* x */ js.Any, _]
-  ): JQueryPromise[_] = js.native
-  def pipe(doneFilter: js.UndefOr[scala.Nothing], failFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise[_] = js.native
+    doneFilter: js.Function1[/* x */ js.Any, js.Any],
+    failFilter: js.Function1[/* x */ js.Any, js.Any],
+    progressFilter: js.Function1[/* x */ js.Any, js.Any]
+  ): JQueryPromise[js.Any] = js.native
   def pipe(
-    doneFilter: js.UndefOr[scala.Nothing],
-    failFilter: js.Function1[/* x */ js.Any, _],
-    progressFilter: js.Function1[/* x */ js.Any, _]
-  ): JQueryPromise[_] = js.native
-  def pipe(doneFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise[_] = js.native
+    doneFilter: js.Function1[/* x */ js.Any, js.Any],
+    failFilter: Unit,
+    progressFilter: js.Function1[/* x */ js.Any, js.Any]
+  ): JQueryPromise[js.Any] = js.native
+  def pipe(doneFilter: Unit, failFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
   def pipe(
-    doneFilter: js.Function1[/* x */ js.Any, _],
-    failFilter: js.UndefOr[scala.Nothing],
-    progressFilter: js.Function1[/* x */ js.Any, _]
-  ): JQueryPromise[_] = js.native
-  def pipe(doneFilter: js.Function1[/* x */ js.Any, _], failFilter: js.Function1[/* x */ js.Any, _]): JQueryPromise[_] = js.native
-  def pipe(
-    doneFilter: js.Function1[/* x */ js.Any, _],
-    failFilter: js.Function1[/* x */ js.Any, _],
-    progressFilter: js.Function1[/* x */ js.Any, _]
-  ): JQueryPromise[_] = js.native
+    doneFilter: Unit,
+    failFilter: js.Function1[/* x */ js.Any, js.Any],
+    progressFilter: js.Function1[/* x */ js.Any, js.Any]
+  ): JQueryPromise[js.Any] = js.native
+  def pipe(doneFilter: Unit, failFilter: Unit, progressFilter: js.Function1[/* x */ js.Any, js.Any]): JQueryPromise[js.Any] = js.native
   
   def progress(
-    progressCallback1: js.UndefOr[scala.Nothing],
-    progressCallbackN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    progressCallback1: js.Array[JQueryPromiseCallback[js.Any]],
+    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   def progress(
-    progressCallback1: js.Array[JQueryPromiseCallback[_]],
-    progressCallbackN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    progressCallback1: Unit,
+    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   /**
     * Add handlers to be called when the Deferred object generates progress notifications.
@@ -125,8 +122,8 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param progressCallbacks A function, or array of functions, to be called when the Deferred generates progress notifications.
     */
   def progress(
-    progressCallback1: JQueryPromiseCallback[_],
-    progressCallbackN: (JQueryPromiseCallback[_] | js.Array[JQueryPromiseCallback[_]])*
+    progressCallback1: JQueryPromiseCallback[js.Any],
+    progressCallbackN: (JQueryPromiseCallback[js.Any] | js.Array[JQueryPromiseCallback[js.Any]])*
   ): JQueryDeferred[T] = js.native
   
   /**
@@ -137,15 +134,14 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
   def promise(): JQueryPromise[T] = js.native
   def promise(target: js.Any): JQueryPromise[T] = js.native
   
-  def reject(value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
   /**
     * Reject a Deferred object and call any failCallbacks with the given args.
     * 
     * @param args Optional arguments that are passed to the failCallbacks.
     */
   def reject(value: js.Any, args: js.Any*): JQueryDeferred[T] = js.native
+  def reject(value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
-  def rejectWith(context: js.Any, value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
   /**
     * Reject a Deferred object and call any failCallbacks with the given context and args.
     * 
@@ -153,6 +149,7 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param args An optional array of arguments that are passed to the failCallbacks.
     */
   def rejectWith(context: js.Any, value: js.Any, args: js.Any*): JQueryDeferred[T] = js.native
+  def rejectWith(context: js.Any, value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
   /**
     * Resolve a Deferred object and call any doneCallbacks with the given args.
@@ -161,7 +158,7 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param args Optional subsequent arguments that are passed to the doneCallbacks.
     */
   def resolve(value: T, args: js.Any*): JQueryDeferred[T] = js.native
-  def resolve(value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
+  def resolve(value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
   /**
     * Resolve a Deferred object and call any doneCallbacks with the given context and args.
@@ -170,7 +167,7 @@ trait JQueryDeferred[T] extends JQueryGenericPromise[T] {
     * @param args An optional array of arguments that are passed to the doneCallbacks.
     */
   def resolveWith(context: js.Any, value: T, args: js.Any*): JQueryDeferred[T] = js.native
-  def resolveWith(context: js.Any, value: js.UndefOr[scala.Nothing], args: js.Any*): JQueryDeferred[T] = js.native
+  def resolveWith(context: js.Any, value: Unit, args: js.Any*): JQueryDeferred[T] = js.native
   
   /**
     * Determine the current state of a Deferred object.

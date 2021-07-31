@@ -2,14 +2,14 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigateBackOptions extends CommonCallbackOptions {
+trait NavigateBackOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   //  返回的页面数，如果 delta 大于现有页面数，则返回到首页。
-  var delta: Double = js.native
+  var delta: Double
 }
 object NavigateBackOptions {
   

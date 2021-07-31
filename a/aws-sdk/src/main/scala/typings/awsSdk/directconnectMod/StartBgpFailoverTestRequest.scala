@@ -2,26 +2,24 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartBgpFailoverTestRequest extends StObject {
   
   /**
     * The BGP peers to place in the DOWN state.
     */
-  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.native
+  var bgpPeers: js.UndefOr[BGPPeerIdList] = js.undefined
   
   /**
     * The time in minutes that the virtual interface failover test will last. Maximum value: 180 minutes (3 hours). Default: 180 minutes (3 hours).
     */
-  var testDurationInMinutes: js.UndefOr[TestDuration] = js.native
+  var testDurationInMinutes: js.UndefOr[TestDuration] = js.undefined
   
   /**
     * The ID of the virtual interface you want to test.
     */
-  var virtualInterfaceId: VirtualInterfaceId = js.native
+  var virtualInterfaceId: VirtualInterfaceId
 }
 object StartBgpFailoverTestRequest {
   

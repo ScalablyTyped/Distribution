@@ -3,15 +3,13 @@ package typings.monacoEditor.mod.editor
 import typings.monacoEditor.mod.IMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorMouseEvent extends StObject {
   
-  val event: IMouseEvent = js.native
+  val event: IMouseEvent
   
-  val target: IMouseTarget = js.native
+  val target: IMouseTarget
 }
 object IEditorMouseEvent {
   

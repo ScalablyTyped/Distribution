@@ -7,7 +7,6 @@ import typings.angularToastr.anon.Error
 import typings.angularToastr.anon.Progressbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,20 +32,19 @@ object mod {
     
     object toastr {
       
-      @js.native
       trait IToast extends StObject {
         
-        var el: IAugmentedJQuery = js.native
+        var el: IAugmentedJQuery
         
-        var iconClass: String = js.native
+        var iconClass: String
         
-        var isOpened: Boolean = js.native
+        var isOpened: Boolean
         
-        var open: IPromise[_] = js.native
+        var open: IPromise[js.Any]
         
-        var scope: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope = js.native
+        var scope: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope
         
-        var toastId: Double = js.native
+        var toastId: Double
       }
       object IToast {
         
@@ -55,7 +53,7 @@ object mod {
           el: IAugmentedJQuery,
           iconClass: String,
           isOpened: Boolean,
-          open: IPromise[_],
+          open: IPromise[js.Any],
           scope: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope,
           toastId: Double
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = {
@@ -76,7 +74,7 @@ object mod {
           def setIsOpened(value: Boolean): Self = StObject.set(x, "isOpened", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setOpen(value: IPromise[_]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
+          def setOpen(value: IPromise[js.Any]): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setScope(value: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
@@ -86,20 +84,19 @@ object mod {
         }
       }
       
-      @js.native
       trait IToastBaseConfig extends StObject {
         
-        var allowHtml: js.UndefOr[Boolean] = js.native
+        var allowHtml: js.UndefOr[Boolean] = js.undefined
         
-        var closeButton: js.UndefOr[Boolean] = js.native
+        var closeButton: js.UndefOr[Boolean] = js.undefined
         
-        var closeHtml: js.UndefOr[String] = js.native
+        var closeHtml: js.UndefOr[String] = js.undefined
         
-        var extendedTimeOut: js.UndefOr[Double] = js.native
+        var extendedTimeOut: js.UndefOr[Double] = js.undefined
         
-        var extraData: js.UndefOr[js.Any] = js.native
+        var extraData: js.UndefOr[js.Any] = js.undefined
         
-        var messageClass: js.UndefOr[String] = js.native
+        var messageClass: js.UndefOr[String] = js.undefined
         
         var onHidden: js.UndefOr[
                 js.Function2[
@@ -107,27 +104,27 @@ object mod {
                   /* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast, 
                   Unit
                 ]
-              ] = js.native
+              ] = js.undefined
         
         var onShown: js.UndefOr[
                 js.Function1[/* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast, Unit]
-              ] = js.native
+              ] = js.undefined
         
         var onTap: js.UndefOr[
                 js.Function1[/* toast */ typings.angularToastr.mod.angularAugmentingMod.toastr.IToast, Unit]
-              ] = js.native
+              ] = js.undefined
         
-        var progressBar: js.UndefOr[Boolean] = js.native
+        var progressBar: js.UndefOr[Boolean] = js.undefined
         
-        var tapToDismiss: js.UndefOr[Boolean] = js.native
+        var tapToDismiss: js.UndefOr[Boolean] = js.undefined
         
-        var templates: js.UndefOr[Progressbar] = js.native
+        var templates: js.UndefOr[Progressbar] = js.undefined
         
-        var timeOut: js.UndefOr[Double] = js.native
+        var timeOut: js.UndefOr[Double] = js.undefined
         
-        var titleClass: js.UndefOr[String] = js.native
+        var titleClass: js.UndefOr[String] = js.undefined
         
-        var toastClass: js.UndefOr[String] = js.native
+        var toastClass: js.UndefOr[String] = js.undefined
       }
       object IToastBaseConfig {
         
@@ -234,11 +231,11 @@ object mod {
         }
       }
       
-      @js.native
       trait IToastConfig
-        extends typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig {
+        extends StObject
+           with typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig {
         
-        var iconClasses: js.UndefOr[Error] = js.native
+        var iconClasses: js.UndefOr[Error] = js.undefined
       }
       object IToastConfig {
         
@@ -259,24 +256,23 @@ object mod {
         }
       }
       
-      @js.native
       trait IToastContainerConfig extends StObject {
         
-        var autoDismiss: js.UndefOr[Boolean] = js.native
+        var autoDismiss: js.UndefOr[Boolean] = js.undefined
         
-        var containerId: js.UndefOr[String] = js.native
+        var containerId: js.UndefOr[String] = js.undefined
         
-        var maxOpened: js.UndefOr[Double] = js.native
+        var maxOpened: js.UndefOr[Double] = js.undefined
         
-        var newestOnTop: js.UndefOr[Boolean] = js.native
+        var newestOnTop: js.UndefOr[Boolean] = js.undefined
         
-        var positionClass: js.UndefOr[String] = js.native
+        var positionClass: js.UndefOr[String] = js.undefined
         
-        var preventDuplicates: js.UndefOr[Boolean] = js.native
+        var preventDuplicates: js.UndefOr[Boolean] = js.undefined
         
-        var preventOpenDuplicates: js.UndefOr[Boolean] = js.native
+        var preventOpenDuplicates: js.UndefOr[Boolean] = js.undefined
         
-        var target: js.UndefOr[String] = js.native
+        var target: js.UndefOr[String] = js.undefined
       }
       object IToastContainerConfig {
         
@@ -339,13 +335,13 @@ object mod {
         }
       }
       
-      @js.native
       trait IToastOptions
-        extends typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig {
+        extends StObject
+           with typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig {
         
-        var iconClass: js.UndefOr[String] = js.native
+        var iconClass: js.UndefOr[String] = js.undefined
         
-        var target: js.UndefOr[String] = js.native
+        var target: js.UndefOr[String] = js.undefined
       }
       object IToastOptions {
         
@@ -373,7 +369,9 @@ object mod {
       }
       
       @js.native
-      trait IToastScope extends IRootScopeService {
+      trait IToastScope
+        extends StObject
+           with IRootScopeService {
         
         var message: String = js.native
         
@@ -386,10 +384,10 @@ object mod {
         var toastType: String = js.native
       }
       
-      @js.native
       trait IToastrConfig
-        extends typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig
+        extends StObject
            with typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig
+           with typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig
       object IToastrConfig {
         
         @scala.inline
@@ -423,15 +421,15 @@ object mod {
           * @param {IToastOptions} options Override default toast options
           */
         def error(message: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
-        def error(
-          message: String,
-          title: js.UndefOr[scala.Nothing],
-          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
-        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def error(message: String, title: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def error(
           message: String,
           title: String,
+          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
+        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
+        def error(
+          message: String,
+          title: Unit,
           options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         
@@ -443,15 +441,15 @@ object mod {
           * @param {IToastOptions} options Override default toast options
           */
         def info(message: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
-        def info(
-          message: String,
-          title: js.UndefOr[scala.Nothing],
-          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
-        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def info(message: String, title: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def info(
           message: String,
           title: String,
+          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
+        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
+        def info(
+          message: String,
+          title: Unit,
           options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         
@@ -463,15 +461,15 @@ object mod {
           * @param {IToastOptions} options Override default toast options
           */
         def success(message: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
-        def success(
-          message: String,
-          title: js.UndefOr[scala.Nothing],
-          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
-        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def success(message: String, title: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def success(
           message: String,
           title: String,
+          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
+        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
+        def success(
+          message: String,
+          title: Unit,
           options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         
@@ -483,15 +481,15 @@ object mod {
           * @param {IToastOptions} options Override default toast options
           */
         def warning(message: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
-        def warning(
-          message: String,
-          title: js.UndefOr[scala.Nothing],
-          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
-        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def warning(message: String, title: String): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
         def warning(
           message: String,
           title: String,
+          options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
+        ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
+        def warning(
+          message: String,
+          title: Unit,
           options: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions
         ): typings.angularToastr.mod.angularAugmentingMod.toastr.IToast = js.native
       }

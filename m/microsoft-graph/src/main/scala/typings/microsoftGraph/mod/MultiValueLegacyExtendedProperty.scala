@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiValueLegacyExtendedProperty extends Entity {
+trait MultiValueLegacyExtendedProperty
+  extends StObject
+     with Entity {
   
   // A collection of property values.
-  var value: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var value: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object MultiValueLegacyExtendedProperty {
   

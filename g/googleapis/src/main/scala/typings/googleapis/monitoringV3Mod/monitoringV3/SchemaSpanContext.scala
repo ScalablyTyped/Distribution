@@ -2,7 +2,6 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * google.api.Distribution values during aggregation.It contains the name of a
   * span with format:  projects/PROJECT_ID/traces/TRACE_ID/spans/SPAN_ID
   */
-@js.native
 trait SchemaSpanContext extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaSpanContext extends StObject {
     * for a span within a trace; it is a 16-character hexadecimal encoding of
     * an 8-byte array.
     */
-  var spanName: js.UndefOr[String] = js.native
+  var spanName: js.UndefOr[String] = js.undefined
 }
 object SchemaSpanContext {
   

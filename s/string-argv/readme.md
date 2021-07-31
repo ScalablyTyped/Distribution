@@ -11,8 +11,8 @@ string-argv parses a string into an argument array to mimic process.argv. This i
 | Full name          | string-argv |
 | Keywords           | argv |
 | # releases         | 6 |
-| # dependents       | 111 |
-| # downloads        | 109611485 |
+| # dependents       | 119 |
+| # downloads        | 144773758 |
 | # stars            | 3 |
 
 ## Links

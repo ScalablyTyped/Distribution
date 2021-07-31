@@ -3,25 +3,29 @@ package typings.browserfs
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inodeMod {
   
   @JSImport("browserfs/dist/node/generic/inode", JSImport.Default)
   @js.native
-  class default protected () extends Inode {
+  class default protected ()
+    extends StObject
+       with Inode {
     def this(id: String, size: Double, mode: Double, atime: Double, mtime: Double, ctime: Double) = this()
   }
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/generic/inode", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Converts the buffer into an Inode.
       */
-    @JSImport("browserfs/dist/node/generic/inode", "default.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): Inode = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): Inode = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Inode]
   }
   
   @js.native

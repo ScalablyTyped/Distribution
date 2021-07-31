@@ -2,30 +2,28 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlookBarPane extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Contents: OutlookBarStorage = js.native
+  val Contents: OutlookBarStorage
   
-  var CurrentGroup: OutlookBarGroup = js.native
+  var CurrentGroup: OutlookBarGroup
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.OutlookBarPane_typekey")
-  var OutlookDotOutlookBarPane_typekey: OutlookBarPane = js.native
+  var OutlookDotOutlookBarPane_typekey: OutlookBarPane
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object OutlookBarPane {
   

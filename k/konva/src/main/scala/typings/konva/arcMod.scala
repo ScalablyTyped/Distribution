@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcMod {
@@ -46,16 +45,17 @@ object arcMod {
     def setWidth(width: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait ArcConfig extends ShapeConfig {
+  trait ArcConfig
+    extends StObject
+       with ShapeConfig {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var clockwise: js.UndefOr[Boolean] = js.native
+    var clockwise: js.UndefOr[Boolean] = js.undefined
     
-    var innerRadius: Double = js.native
+    var innerRadius: Double
     
-    var outerRadius: Double = js.native
+    var outerRadius: Double
   }
   object ArcConfig {
     

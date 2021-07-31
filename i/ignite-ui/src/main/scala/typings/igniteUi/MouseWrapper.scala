@@ -4,29 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseWrapper
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var capture: js.UndefOr[CaptureEvent] = js.native
+  var capture: js.UndefOr[CaptureEvent] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var drag: js.UndefOr[DragEvent] = js.native
+  var drag: js.UndefOr[DragEvent] = js.undefined
   
-  var start: js.UndefOr[StartEvent] = js.native
+  var start: js.UndefOr[StartEvent] = js.undefined
   
-  var stop: js.UndefOr[StopEvent] = js.native
+  var stop: js.UndefOr[StopEvent] = js.undefined
 }
 object MouseWrapper {
   

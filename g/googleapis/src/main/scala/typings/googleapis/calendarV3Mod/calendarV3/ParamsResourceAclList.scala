@@ -6,42 +6,42 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAclList extends StandardParameters {
+trait ParamsResourceAclList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Calendar identifier. To retrieve calendar IDs call the calendarList.list
     * method. If you want to access the primary calendar of the currently
     * logged in user, use the "primary" keyword.
     */
-  var calendarId: js.UndefOr[String] = js.native
+  var calendarId: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of entries returned on one result page. By default the
     * value is 100 entries. The page size can never be larger than 250 entries.
     * Optional.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Token specifying which result page to return. Optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to include deleted ACLs in the result. Deleted ACLs are
     * represented by role equal to "none". Deleted ACLs will always be included
     * if syncToken is provided. Optional. The default is False.
     */
-  var showDeleted: js.UndefOr[Boolean] = js.native
+  var showDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Token obtained from the nextSyncToken field returned on the last page of
@@ -54,7 +54,7 @@ trait ParamsResourceAclList extends StandardParameters {
     * without any syncToken. Learn more about incremental synchronization.
     * Optional. The default is to return all entries.
     */
-  var syncToken: js.UndefOr[String] = js.native
+  var syncToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAclList {
   

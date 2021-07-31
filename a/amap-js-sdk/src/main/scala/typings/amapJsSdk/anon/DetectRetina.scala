@@ -2,29 +2,27 @@ package typings.amapJsSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectRetina extends StObject {
   
-  var detectRetina: js.UndefOr[Boolean] = js.native
+  var detectRetina: js.UndefOr[Boolean] = js.undefined
   
-  var errorUrl: js.UndefOr[String] = js.native
+  var errorUrl: js.UndefOr[String] = js.undefined
   
-  var getTileUrl: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, String]] = js.native
+  var getTileUrl: js.UndefOr[js.Function3[/* x */ Double, /* y */ Double, /* z */ Double, String]] = js.undefined
   
-  var map: typings.amapJsSdk.AMap.Map = js.native
+  var map: typings.amapJsSdk.AMap.Map
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var tileUrl: js.UndefOr[String] = js.native
+  var tileUrl: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
-  var zooms: js.UndefOr[js.Array[Double]] = js.native
+  var zooms: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object DetectRetina {
   

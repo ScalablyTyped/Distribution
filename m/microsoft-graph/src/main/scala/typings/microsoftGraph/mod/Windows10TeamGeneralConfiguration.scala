@@ -2,84 +2,84 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10TeamGeneralConfiguration extends DeviceConfiguration {
+trait Windows10TeamGeneralConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Indicates whether or not to Block Azure Operational Insights.
-  var azureOperationalInsightsBlockTelemetry: js.UndefOr[Boolean] = js.native
+  var azureOperationalInsightsBlockTelemetry: js.UndefOr[Boolean] = js.undefined
   
   // The Azure Operational Insights workspace id.
-  var azureOperationalInsightsWorkspaceId: js.UndefOr[NullableOption[String]] = js.native
+  var azureOperationalInsightsWorkspaceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The Azure Operational Insights Workspace key.
-  var azureOperationalInsightsWorkspaceKey: js.UndefOr[NullableOption[String]] = js.native
+  var azureOperationalInsightsWorkspaceKey: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies whether to automatically launch the Connect app whenever a projection is initiated.
-  var connectAppBlockAutoLaunch: js.UndefOr[Boolean] = js.native
+  var connectAppBlockAutoLaunch: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether or not to Block setting a maintenance window for device updates.
-  var maintenanceWindowBlocked: js.UndefOr[Boolean] = js.native
+  var maintenanceWindowBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Maintenance window duration for device updates. Valid values 0 to 5
-  var maintenanceWindowDurationInHours: js.UndefOr[NullableOption[Double]] = js.native
+  var maintenanceWindowDurationInHours: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Maintenance window start time for device updates.
-  var maintenanceWindowStartTime: js.UndefOr[NullableOption[String]] = js.native
+  var maintenanceWindowStartTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to Block wireless projection.
-  var miracastBlocked: js.UndefOr[Boolean] = js.native
+  var miracastBlocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The channel. Possible values are: userDefined, one, two, three, four, five, six, seven, eight, nine, ten, eleven,
     * thirtySix, forty, fortyFour, fortyEight, oneHundredFortyNine, oneHundredFiftyThree, oneHundredFiftySeven,
     * oneHundredSixtyOne, oneHundredSixtyFive.
     */
-  var miracastChannel: js.UndefOr[MiracastChannel] = js.native
+  var miracastChannel: js.UndefOr[MiracastChannel] = js.undefined
   
   // Indicates whether or not to require a pin for wireless projection.
-  var miracastRequirePin: js.UndefOr[Boolean] = js.native
+  var miracastRequirePin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether to disable the 'My meetings and files' feature in the Start menu, which shows the signed-in user's
     * meetings and files from Office 365.
     */
-  var settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.native
+  var settingsBlockMyMeetingsAndFiles: js.UndefOr[Boolean] = js.undefined
   
   // Specifies whether to allow the ability to resume a session when the session times out.
-  var settingsBlockSessionResume: js.UndefOr[Boolean] = js.native
+  var settingsBlockSessionResume: js.UndefOr[Boolean] = js.undefined
   
   // Specifies whether to disable auto-populating of the sign-in dialog with invitees from scheduled meetings.
-  var settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.native
+  var settingsBlockSigninSuggestions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the default volume value for a new session. Permitted values are 0-100. The default is 45. Valid values 0 to
     * 100
     */
-  var settingsDefaultVolume: js.UndefOr[NullableOption[Double]] = js.native
+  var settingsDefaultVolume: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Specifies the number of minutes until the Hub screen turns off.
-  var settingsScreenTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.native
+  var settingsScreenTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Specifies the number of minutes until the session times out.
-  var settingsSessionTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.native
+  var settingsSessionTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Specifies the number of minutes until the Hub enters sleep mode.
-  var settingsSleepTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.native
+  var settingsSleepTimeoutInMinutes: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The welcome screen background image URL. The URL must use the HTTPS protocol and return a PNG image.
-  var welcomeScreenBackgroundImageUrl: js.UndefOr[NullableOption[String]] = js.native
+  var welcomeScreenBackgroundImageUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether or not to Block the welcome screen from waking up automatically when someone enters the room.
-  var welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.native
+  var welcomeScreenBlockAutomaticWakeUp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The welcome screen meeting information shown. Possible values are: userDefined, showOrganizerAndTimeOnly,
     * showOrganizerAndTimeAndSubject.
     */
-  var welcomeScreenMeetingInformation: js.UndefOr[WelcomeScreenMeetingInformation] = js.native
+  var welcomeScreenMeetingInformation: js.UndefOr[WelcomeScreenMeetingInformation] = js.undefined
 }
 object Windows10TeamGeneralConfiguration {
   

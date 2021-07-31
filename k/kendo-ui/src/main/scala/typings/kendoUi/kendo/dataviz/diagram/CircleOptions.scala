@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircleOptions extends StObject {
   
-  var center: js.UndefOr[js.Any] = js.native
+  var center: js.UndefOr[js.Any] = js.undefined
   
-  var fill: js.UndefOr[String | CircleFill] = js.native
+  var fill: js.UndefOr[String | CircleFill] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
-  var stroke: js.UndefOr[CircleStroke] = js.native
+  var stroke: js.UndefOr[CircleStroke] = js.undefined
 }
 object CircleOptions {
   

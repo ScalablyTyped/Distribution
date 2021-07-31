@@ -3,11 +3,12 @@ package typings.azureArmResource.resourceModelsMod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagsListResult extends Array[TagDetails] {
+trait TagsListResult
+  extends StObject
+     with Array[TagDetails] {
   
   /**
     * The URL to use for getting the next set of results.

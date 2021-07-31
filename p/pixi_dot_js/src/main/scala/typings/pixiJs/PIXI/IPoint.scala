@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @extends PIXI.IPointData
   */
 @js.native
-trait IPoint extends IPointData {
+trait IPoint
+  extends StObject
+     with IPointData {
   
   /**
     * Copies x and y from the given point
@@ -52,7 +53,7 @@ trait IPoint extends IPointData {
     * @param {number} [y=x] - position of the point on the y axis
     */
   def set(): Unit = js.native
-  def set(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def set(x: Double): Unit = js.native
   def set(x: Double, y: Double): Unit = js.native
+  def set(x: Unit, y: Double): Unit = js.native
 }

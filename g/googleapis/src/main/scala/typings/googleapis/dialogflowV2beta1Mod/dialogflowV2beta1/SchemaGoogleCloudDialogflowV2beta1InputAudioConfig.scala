@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instructs the speech recognizer how to process the audio content.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
   
   /**
     * Required. Audio encoding of the audio content to process.
     */
-  var audioEncoding: js.UndefOr[String] = js.native
+  var audioEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The language of the supplied audio. Dialogflow does not do
@@ -23,7 +21,7 @@ trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
     * for a list of the currently supported language codes. Note that queries
     * in the same session do not necessarily need to specify the same language.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Which Speech model to select for the given request. Select the
@@ -36,7 +34,7 @@ trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
     * documentation](https://cloud.google.com/speech-to-text/docs/basics#select-model)
     * for more details.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of phrase hints which are used to boost accuracy
@@ -44,7 +42,7 @@ trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
     * documentation](https://cloud.google.com/speech-to-text/docs/basics#phrase-hints)
     * for more details.
     */
-  var phraseHints: js.UndefOr[js.Array[String]] = js.native
+  var phraseHints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. Sample rate (in Hertz) of the audio content sent in the query.
@@ -52,7 +50,7 @@ trait SchemaGoogleCloudDialogflowV2beta1InputAudioConfig extends StObject {
     * documentation](https://cloud.google.com/speech-to-text/docs/basics) for
     * more details.
     */
-  var sampleRateHertz: js.UndefOr[Double] = js.native
+  var sampleRateHertz: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1InputAudioConfig {
   

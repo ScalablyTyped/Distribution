@@ -2,14 +2,14 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcofferoptions
-@js.native
-trait RTCOfferOptions extends RTCOfferAnswerOptions {
+trait RTCOfferOptions
+  extends StObject
+     with RTCOfferAnswerOptions {
   
-  var iceRestart: js.UndefOr[Boolean] = js.native
+  var iceRestart: js.UndefOr[Boolean] = js.undefined
 }
 object RTCOfferOptions {
   

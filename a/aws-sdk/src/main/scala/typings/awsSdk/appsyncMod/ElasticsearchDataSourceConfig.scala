@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchDataSourceConfig extends StObject {
   
   /**
     * The AWS Region.
     */
-  var awsRegion: String = js.native
+  var awsRegion: String
   
   /**
     * The endpoint.
     */
-  var endpoint: String = js.native
+  var endpoint: String
 }
 object ElasticsearchDataSourceConfig {
   

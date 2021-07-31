@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteChannelMessageRequest extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The ID of the message being deleted.
     */
-  var MessageId: typings.awsSdk.chimeMod.MessageId = js.native
+  var MessageId: typings.awsSdk.chimeMod.MessageId
 }
 object DeleteChannelMessageRequest {
   

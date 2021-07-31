@@ -2,15 +2,13 @@ package typings.amapJsApiGeocoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Info extends StObject {
     
-    var info: String = js.native
+    var info: String
   }
   object Info {
     

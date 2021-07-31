@@ -5,7 +5,6 @@ import typings.cytoscape.mod.Ext
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,31 +23,30 @@ object mod {
       def edgehandles(options: EdgeHandlesOptions): EdgeHandlesApi = js.native
     }
     
-    @js.native
     trait EdgeHandlesApi extends StObject {
       
       // turn off draw mode
-      def destroy(): Unit = js.native
+      def destroy(): Unit
       
       // remove the handle node from the graph
-      def disable(): Unit = js.native
+      def disable(): Unit
       
       // turn on draw mode (the entire node body acts like the handle)
-      def disableDrawMode(): Unit = js.native
+      def disableDrawMode(): Unit
       
       // disables edgehandles behaviour
-      def enable(): Unit = js.native
+      def enable(): Unit
       
       // enables edgehandles behaviour
-      def enableDrawMode(): Unit = js.native
+      def enableDrawMode(): Unit
       
       // manually completes or cancels the gesture
-      def hide(): Unit = js.native
+      def hide(): Unit
       
-      def start(sourceNode: String): Unit = js.native
+      def start(sourceNode: String): Unit
       
       // manually start the gesture (as if the handle were already held)
-      def stop(): Unit = js.native
+      def stop(): Unit
     }
     object EdgeHandlesApi {
       
@@ -96,11 +94,10 @@ object mod {
       }
     }
     
-    @js.native
     trait EdgeHandlesOptions extends StObject {
       
       // fired when edgehandles interaction is stopped (either complete with added edges or incomplete)
-      var cancel: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* cancelledTargets */ js.Any, Unit]] = js.native
+      var cancel: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* cancelledTargets */ js.Any, Unit]] = js.undefined
       
       // fired when edgehandles interaction starts (drag on handle)
       var complete: js.UndefOr[
@@ -110,63 +107,65 @@ object mod {
               /* addedEles */ EdgeCollection, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       // set events:no to edges during draws, prevents mouseouts on compounds
-      var disableBrowserGestures: js.UndefOr[Boolean] = js.native
+      var disableBrowserGestures: js.UndefOr[Boolean] = js.undefined
       
       // fired when draw mode enabled
-      var drawoff: js.UndefOr[js.Function0[Unit]] = js.native
+      var drawoff: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       // fired when preview is hidden
-      var drawon: js.UndefOr[js.Function0[Unit]] = js.native
+      var drawon: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       var edgeParams: js.UndefOr[
-            js.Function3[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double, _]
-          ] = js.native
+            js.Function3[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double, js.Any]
+          ] = js.undefined
       
       // whether to show the handle in draw mode
       // can return 'flat' for flat edges between nodes or 'node' for intermediate node between them, returning null/undefined means an edge can't be added between the two nodes
       var edgeType: js.UndefOr[
             js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, js.UndefOr[String]]
-          ] = js.native
+          ] = js.undefined
       
-      var ghostEdgeParams: js.UndefOr[js.Function0[_]] = js.native
+      var ghostEdgeParams: js.UndefOr[js.Function0[js.Any]] = js.undefined
       
       // sets the position of the handle in the format of "X-AXIS Y-AXIS" such as "left top", "middle top"
-      var handleInDrawMode: js.UndefOr[Boolean] = js.native
+      var handleInDrawMode: js.UndefOr[Boolean] = js.undefined
       
       // time spent hovering over a target node before it is considered selected
-      var handleNodes: js.UndefOr[String] = js.native
+      var handleNodes: js.UndefOr[String] = js.undefined
       
       // during an edge drawing gesture, disable browser gestures such as two-finger trackpad swipe and pinch-to-zoom
-      var handlePosition: js.UndefOr[js.Function1[/* node */ NodeSingular, String]] = js.native
+      var handlePosition: js.UndefOr[js.Function1[/* node */ NodeSingular, String]] = js.undefined
       
       // fired when handle is shown
-      var hide: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.native
+      var hide: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.undefined
       
       // whether to show added edges preview before releasing selection
-      var hoverDelay: js.UndefOr[Double] = js.native
+      var hoverDelay: js.UndefOr[Double] = js.undefined
       
       // fired when a target is hovered
-      var hoverout: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, Unit]] = js.native
+      var hoverout: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, Unit]] = js.undefined
       
       // fired when edgehandles are cancelled (incomplete gesture)
-      var hoverover: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, Unit]] = js.native
+      var hoverover: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, Unit]] = js.undefined
       
-      var loopAllowed: js.UndefOr[js.Function1[/* node */ NodeSingular, Boolean]] = js.native
+      var loopAllowed: js.UndefOr[js.Function1[/* node */ NodeSingular, Boolean]] = js.undefined
       
       // the number of times per second (Hz) that snap checks done (lower is less expensive)
-      var noEdgeEventsInDraw: js.UndefOr[Boolean] = js.native
+      var noEdgeEventsInDraw: js.UndefOr[Boolean] = js.undefined
       
       // for the specified node, return whether edges from itself to itself are allowed
-      var nodeLoopOffset: js.UndefOr[Double] = js.native
+      var nodeLoopOffset: js.UndefOr[Double] = js.undefined
       
       // offset for edgeType: 'node' loops
       // for edges between the specified source and target, return element object to be passed to cy.add() for intermediary node
-      var nodeParams: js.UndefOr[js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, _]] = js.native
+      var nodeParams: js.UndefOr[
+            js.Function2[/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, js.Any]
+          ] = js.undefined
       
-      var preview: js.UndefOr[Boolean] = js.native
+      var preview: js.UndefOr[Boolean] = js.undefined
       
       // fired when preview is shown
       var previewoff: js.UndefOr[
@@ -176,7 +175,7 @@ object mod {
               /* previewEles */ EdgeCollection, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       // fired when a target isn't hovered anymore
       var previewon: js.UndefOr[
@@ -186,25 +185,25 @@ object mod {
               /* previewEles */ EdgeCollection, 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       // return element object to be passed to cy.add() for the ghost edge
-      var show: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.native
+      var show: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.undefined
       
       // selector/filter function for whether edges can be made from a given node
-      var snap: js.UndefOr[Boolean] = js.native
+      var snap: js.UndefOr[Boolean] = js.undefined
       
       // the target node must be less than or equal to this many pixels away from the cursor/finger
-      var snapFrequency: js.UndefOr[Double] = js.native
+      var snapFrequency: js.UndefOr[Double] = js.undefined
       
       // when enabled, the edge can be drawn by just moving close to a target node
-      var snapThreshold: js.UndefOr[Double] = js.native
+      var snapThreshold: js.UndefOr[Double] = js.undefined
       
       // fired when the handle is hidden
-      var start: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.native
+      var start: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.undefined
       
       // fired when edgehandles is done and elements are added
-      var stop: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.native
+      var stop: js.UndefOr[js.Function1[/* sourceNode */ NodeSingular, Unit]] = js.undefined
     }
     object EdgeHandlesOptions {
       
@@ -250,7 +249,7 @@ object mod {
         def setDrawonUndefined: Self = StObject.set(x, "drawon", js.undefined)
         
         @scala.inline
-        def setEdgeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double) => _): Self = StObject.set(x, "edgeParams", js.Any.fromFunction3(value))
+        def setEdgeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular, /* i */ Double) => js.Any): Self = StObject.set(x, "edgeParams", js.Any.fromFunction3(value))
         
         @scala.inline
         def setEdgeParamsUndefined: Self = StObject.set(x, "edgeParams", js.undefined)
@@ -262,7 +261,7 @@ object mod {
         def setEdgeTypeUndefined: Self = StObject.set(x, "edgeType", js.undefined)
         
         @scala.inline
-        def setGhostEdgeParams(value: () => _): Self = StObject.set(x, "ghostEdgeParams", js.Any.fromFunction0(value))
+        def setGhostEdgeParams(value: () => js.Any): Self = StObject.set(x, "ghostEdgeParams", js.Any.fromFunction0(value))
         
         @scala.inline
         def setGhostEdgeParamsUndefined: Self = StObject.set(x, "ghostEdgeParams", js.undefined)
@@ -328,7 +327,7 @@ object mod {
         def setNodeLoopOffsetUndefined: Self = StObject.set(x, "nodeLoopOffset", js.undefined)
         
         @scala.inline
-        def setNodeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => _): Self = StObject.set(x, "nodeParams", js.Any.fromFunction2(value))
+        def setNodeParams(value: (/* sourceNode */ NodeSingular, /* targetNode */ NodeSingular) => js.Any): Self = StObject.set(x, "nodeParams", js.Any.fromFunction2(value))
         
         @scala.inline
         def setNodeParamsUndefined: Self = StObject.set(x, "nodeParams", js.undefined)

@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasKitInitOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CanvasKitInitOptions extends StObject {
     * the blob of WASM code). The correct url prefix should be applied.
     * @param file - the name of the file that is about to be loaded.
     */
-  def locateFile(file: String): String = js.native
+  def locateFile(file: String): String
 }
 object CanvasKitInitOptions {
   

@@ -2,32 +2,30 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an event period time range.
   */
-@js.native
 trait SchemaEventPeriodRange extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#eventPeriodRange.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The time when this update period ends, in millis, since 1970 UTC (Unix
     * Epoch).
     */
-  var periodEndMillis: js.UndefOr[String] = js.native
+  var periodEndMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The time when this update period begins, in millis, since 1970 UTC (Unix
     * Epoch).
     */
-  var periodStartMillis: js.UndefOr[String] = js.native
+  var periodStartMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaEventPeriodRange {
   

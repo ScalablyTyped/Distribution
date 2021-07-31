@@ -2,13 +2,11 @@ package typings.webix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeysNavigation extends StObject {
   
-  def moveSelection(direction: String): Unit = js.native
+  def moveSelection(direction: String): Unit
 }
 object KeysNavigation {
   

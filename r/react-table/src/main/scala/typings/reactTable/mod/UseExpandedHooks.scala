@@ -3,15 +3,13 @@ package typings.reactTable.mod
 import typings.reactTable.anon.PartialTableCommonProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseExpandedHooks[D /* <: js.Object */] extends StObject {
   
-  var getToggleAllRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]] = js.native
+  var getToggleAllRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
   
-  var getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]] = js.native
+  var getToggleRowsExpandedProps: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]
 }
 object UseExpandedHooks {
   
@@ -25,7 +23,7 @@ object UseExpandedHooks {
   }
   
   @scala.inline
-  implicit class UseExpandedHooksMutableBuilder[Self <: UseExpandedHooks[_], D /* <: js.Object */] (val x: Self with UseExpandedHooks[D]) extends AnyVal {
+  implicit class UseExpandedHooksMutableBuilder[Self <: UseExpandedHooks[?], D /* <: js.Object */] (val x: Self & UseExpandedHooks[D]) extends AnyVal {
     
     @scala.inline
     def setGetToggleAllRowsExpandedProps(value: js.Array[PropGetter[D, TableCommonProps, scala.Nothing, PartialTableCommonProps]]): Self = StObject.set(x, "getToggleAllRowsExpandedProps", value.asInstanceOf[js.Any])

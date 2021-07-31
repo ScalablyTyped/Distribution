@@ -2,14 +2,16 @@ package typings.formatjsEcma402Abstract
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isSanctionedSimpleUnitIdentifierMod {
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", "IsSanctionedSimpleUnitIdentifier")
+  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", JSImport.Namespace)
   @js.native
-  def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def IsSanctionedSimpleUnitIdentifier(unitIdentifier: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsSanctionedSimpleUnitIdentifier")(unitIdentifier.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", "SANCTIONED_UNITS")
   @js.native
@@ -19,7 +21,6 @@ object isSanctionedSimpleUnitIdentifierMod {
   @js.native
   val SIMPLE_UNITS: js.Array[String] = js.native
   
-  @JSImport("@formatjs/ecma402-abstract/lib/IsSanctionedSimpleUnitIdentifier", "removeUnitNamespace")
-  @js.native
-  def removeUnitNamespace(unit: String): String = js.native
+  @scala.inline
+  def removeUnitNamespace(unit: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeUnitNamespace")(unit.asInstanceOf[js.Any]).asInstanceOf[String]
 }

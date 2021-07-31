@@ -2,23 +2,21 @@ package typings.awsSdkClientKmsBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTagMod {
   
-  @js.native
   trait Tag extends StObject {
     
     /**
       * <p>The key of the tag.</p>
       */
-    var TagKey: String = js.native
+    var TagKey: String
     
     /**
       * <p>The value of the tag.</p>
       */
-    var TagValue: String = js.native
+    var TagValue: String
   }
   object Tag {
     

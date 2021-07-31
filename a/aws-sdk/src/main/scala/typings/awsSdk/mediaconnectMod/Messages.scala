@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Messages extends StObject {
   
   /**
     * A list of errors that might have been generated from processes on this flow.
     */
-  var Errors: listOfString = js.native
+  var Errors: listOfString
 }
 object Messages {
   

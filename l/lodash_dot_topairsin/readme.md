@@ -12,7 +12,7 @@ The lodash method `_.toPairsIn` exported as a module.
 | Keywords           | lodash-modularized, topairsin |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 68654 |
+| # downloads        | 53210 |
 | # stars            | 0 |
 
 ## Links

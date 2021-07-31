@@ -2,7 +2,6 @@ package typings.chrome.chrome
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,14 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object documentScan {
   
-  @js.native
   trait DocumentScanCallbackArg extends StObject {
     
     /** The data image URLs in a form that can be passed as the "src" value to an image tag. */
-    var dataUrls: js.Array[String] = js.native
+    var dataUrls: js.Array[String]
     
     /** The MIME type of dataUrls. */
-    var mimeType: String = js.native
+    var mimeType: String
   }
   object DocumentScanCallbackArg {
     
@@ -47,14 +45,13 @@ object documentScan {
     }
   }
   
-  @js.native
   trait DocumentScanOptions extends StObject {
     
     /** Optional. The number of scanned images allowed (defaults to 1).  */
-    var maxImages: js.UndefOr[Double] = js.native
+    var maxImages: js.UndefOr[Double] = js.undefined
     
     /** Optional. The MIME types that are accepted by the caller.  */
-    var mimeTypes: js.UndefOr[js.Array[String]] = js.native
+    var mimeTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DocumentScanOptions {
     

@@ -4,27 +4,25 @@ import typings.ltijs.anon.LineItem
 import typings.ltijs.platformMod.PlatformInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object idTokenMod {
   
-  @js.native
   trait IdToken extends StObject {
     
-    var endpoint: LineItem = js.native
+    var endpoint: LineItem
     
-    var iss: String = js.native
+    var iss: String
     
-    var issuerCode: String = js.native
+    var issuerCode: String
     
-    var platformInfo: PlatformInfo = js.native
+    var platformInfo: PlatformInfo
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
     
-    var user: String = js.native
+    var user: String
     
-    var userInfo: UserInfo = js.native
+    var userInfo: UserInfo
   }
   object IdToken {
     
@@ -71,16 +69,15 @@ object idTokenMod {
     }
   }
   
-  @js.native
   trait UserInfo extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var family_name: String = js.native
+    var family_name: String
     
-    var given_name: String = js.native
+    var given_name: String
     
-    var name: String = js.native
+    var name: String
   }
   object UserInfo {
     

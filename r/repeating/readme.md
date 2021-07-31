@@ -11,8 +11,8 @@ Repeat a string - fast
 | Full name          | repeating |
 | Keywords           | repeat, string, repeating, str, text, fill, pad |
 | # releases         | 0 |
-| # dependents       | 119 |
-| # downloads        | 393181346 |
+| # dependents       | 140 |
+| # downloads        | 423279103 |
 | # stars            | 2 |
 
 ## Links

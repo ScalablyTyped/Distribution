@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.twilioNotifications.connectorMod.ChannelType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -111,12 +110,11 @@ object clientMod {
     def disconnecting: typings.twilioNotifications.twilioNotificationsStrings.disconnecting = "disconnecting".asInstanceOf[typings.twilioNotifications.twilioNotificationsStrings.disconnecting]
   }
   
-  @js.native
   trait PushNotification extends StObject {
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var payload: js.Any = js.native
+    var payload: js.Any
   }
   object PushNotification {
     

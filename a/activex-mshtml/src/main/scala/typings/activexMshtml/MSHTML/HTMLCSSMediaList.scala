@@ -2,24 +2,22 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLCSSMediaList extends StObject {
   
   @JSName("MSHTML.HTMLCSSMediaList_typekey")
-  var MSHTMLDotHTMLCSSMediaList_typekey: HTMLCSSMediaList = js.native
+  var MSHTMLDotHTMLCSSMediaList_typekey: HTMLCSSMediaList
   
-  def appendMedium(bstrMedium: String): Unit = js.native
+  def appendMedium(bstrMedium: String): Unit
   
-  def deleteMedium(bstrMedium: String): Unit = js.native
+  def deleteMedium(bstrMedium: String): Unit
   
-  def item(index: Double): String = js.native
+  def item(index: Double): String
   
-  val length: Double = js.native
+  val length: Double
   
-  var mediaText: String = js.native
+  var mediaText: String
 }
 object HTMLCSSMediaList {
   

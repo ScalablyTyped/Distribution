@@ -5,7 +5,6 @@ import typings.three.extrudeBufferGeometryMod.ExtrudeBufferGeometry
 import typings.three.fontMod.Font
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textBufferGeometryMod {
@@ -18,26 +17,25 @@ object textBufferGeometryMod {
     var parameters: BevelEnabled = js.native
   }
   
-  @js.native
   trait TextGeometryParameters extends StObject {
     
-    var bevelEnabled: js.UndefOr[Boolean] = js.native
+    var bevelEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var bevelOffset: js.UndefOr[Double] = js.native
+    var bevelOffset: js.UndefOr[Double] = js.undefined
     
-    var bevelSegments: js.UndefOr[Double] = js.native
+    var bevelSegments: js.UndefOr[Double] = js.undefined
     
-    var bevelSize: js.UndefOr[Double] = js.native
+    var bevelSize: js.UndefOr[Double] = js.undefined
     
-    var bevelThickness: js.UndefOr[Double] = js.native
+    var bevelThickness: js.UndefOr[Double] = js.undefined
     
-    var curveSegments: js.UndefOr[Double] = js.native
+    var curveSegments: js.UndefOr[Double] = js.undefined
     
-    var font: Font = js.native
+    var font: Font
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object TextGeometryParameters {
     

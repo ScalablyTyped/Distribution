@@ -3,29 +3,27 @@ package typings.readableStream.mod
 import typings.safeBuffer.mod.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferList[D /* <: Buffer */] extends StObject {
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def concat(n: Double): D = js.native
+  def concat(n: Double): D
   
-  var head: Entry[D] = js.native
+  var head: Entry[D]
   
-  def join(s: js.Any): String = js.native
+  def join(s: js.Any): String
   
-  var length: Double = js.native
+  var length: Double
   
-  def push(v: D): Unit = js.native
+  def push(v: D): Unit
   
-  def shift(): D = js.native
+  def shift(): D
   
-  var tail: Entry[D] = js.native
+  var tail: Entry[D]
   
-  def unshift(v: D): Unit = js.native
+  def unshift(v: D): Unit
 }
 object BufferList {
   
@@ -46,7 +44,7 @@ object BufferList {
   }
   
   @scala.inline
-  implicit class BufferListMutableBuilder[Self <: BufferList[_], D /* <: Buffer */] (val x: Self with BufferList[D]) extends AnyVal {
+  implicit class BufferListMutableBuilder[Self <: BufferList[?], D /* <: Buffer */] (val x: Self & BufferList[D]) extends AnyVal {
     
     @scala.inline
     def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

@@ -13,7 +13,6 @@ import typings.mariasql.mariasqlStrings.row
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,51 +20,54 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("mariasql", JSImport.Namespace)
   @js.native
-  class ^ () extends MariaClient
+  class ^ ()
+    extends StObject
+       with MariaClient
   @JSImport("mariasql", JSImport.Namespace)
   @js.native
   val ^ : Client = js.native
   
   @js.native
-  trait Client extends Instantiable0[MariaClient] {
+  trait Client
+    extends StObject
+       with Instantiable0[MariaClient] {
     
     def apply(): MariaClient = js.native
   }
   
-  @js.native
   trait ClientConfig extends StObject {
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var connTimeout: js.UndefOr[Double] = js.native
+    var connTimeout: js.UndefOr[Double] = js.undefined
     
-    var db: js.UndefOr[String] = js.native
+    var db: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var keepQueries: js.UndefOr[Boolean] = js.native
+    var keepQueries: js.UndefOr[Boolean] = js.undefined
     
-    var local_infile: js.UndefOr[Boolean] = js.native
+    var local_infile: js.UndefOr[Boolean] = js.undefined
     
-    var multiStatements: js.UndefOr[Boolean] = js.native
+    var multiStatements: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var pingInterval: js.UndefOr[Double] = js.native
+    var pingInterval: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var read_default_group: js.UndefOr[String] = js.native
+    var read_default_group: js.UndefOr[String] = js.undefined
     
-    var secureAuth: js.UndefOr[Boolean] = js.native
+    var secureAuth: js.UndefOr[Boolean] = js.undefined
     
-    var ssl: js.UndefOr[js.Any] = js.native
+    var ssl: js.UndefOr[js.Any] = js.undefined
     
-    var unixSocket: js.UndefOr[String] = js.native
+    var unixSocket: js.UndefOr[String] = js.undefined
     
-    var user: String = js.native
+    var user: String
   }
   object ClientConfig {
     
@@ -209,9 +211,9 @@ object mod extends Shortcut {
     def prepare(query: String): MariaPreparedQuery = js.native
     
     def query(q: String): MariaQuery = js.native
-    def query(q: String, placeHolders: js.UndefOr[scala.Nothing], useArray: Boolean): MariaQuery = js.native
-    def query(q: String, placeHolders: js.Array[_]): MariaQuery = js.native
-    def query(q: String, placeHolders: js.Array[_], useArray: Boolean): MariaQuery = js.native
+    def query(q: String, placeHolders: js.Array[js.Any]): MariaQuery = js.native
+    def query(q: String, placeHolders: js.Array[js.Any], useArray: Boolean): MariaQuery = js.native
+    def query(q: String, placeHolders: Unit, useArray: Boolean): MariaQuery = js.native
     def query(q: String, placeHolders: Dictionary): MariaQuery = js.native
     def query(q: String, placeHolders: Dictionary, useArray: Boolean): MariaQuery = js.native
     def query(q: String, useArray: Boolean): MariaQuery = js.native
@@ -219,14 +221,13 @@ object mod extends Shortcut {
     var threadId: String = js.native
   }
   
-  @js.native
   trait MariaInfo extends StObject {
     
-    var affectedRows: Double = js.native
+    var affectedRows: Double
     
-    var insertId: Double = js.native
+    var insertId: Double
     
-    var numRows: Double = js.native
+    var numRows: Double
   }
   object MariaInfo {
     
@@ -253,7 +254,7 @@ object mod extends Shortcut {
   @js.native
   trait MariaPreparedQuery extends StObject {
     
-    def apply(values: js.Array[_]): String = js.native
+    def apply(values: js.Array[js.Any]): String = js.native
     def apply(values: Dictionary): String = js.native
   }
   

@@ -4,59 +4,57 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.dark
 import typings.reactNativeNavigation.reactNativeNavigationStrings.light
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsStatusBar extends StObject {
   
   /**
     * Animate StatusBar style changes.
     * #### (iOS specific)
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the background color of the status bar
     * #### (Android specific)
     */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Blur content beneath the StatusBar.
     * #### (iOS specific)
     */
-  var blur: js.UndefOr[Boolean] = js.native
+  var blur: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Draw screen behind the status bar
     * #### (Android specific)
     */
-  var drawBehind: js.UndefOr[Boolean] = js.native
+  var drawBehind: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Automatically hide the StatusBar when the TopBar hides.
     * #### (iOS specific)
     */
-  var hideWithTopBar: js.UndefOr[Boolean] = js.native
+  var hideWithTopBar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the text color of the status bar
     * @default 'light'
     */
-  var style: js.UndefOr[light | dark] = js.native
+  var style: js.UndefOr[light | dark] = js.undefined
   
   /**
     * Allows the StatusBar to be translucent (blurred)
     * #### (Android specific)
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the status bar visibility
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsStatusBar {
   

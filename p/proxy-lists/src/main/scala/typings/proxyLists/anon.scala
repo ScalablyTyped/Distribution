@@ -8,34 +8,32 @@ import typings.proxyLists.proxyListsStrings.strict
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<proxy-lists.proxy-lists.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var anonymityLevels: js.UndefOr[js.Array[AnonymityLevel]] = js.native
+    var anonymityLevels: js.UndefOr[js.Array[AnonymityLevel]] = js.undefined
     
-    var countries: js.UndefOr[js.Array[String]] = js.native
+    var countries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var countriesBlackList: js.UndefOr[js.Array[String]] = js.native
+    var countriesBlackList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var defaultRequestOptions: js.UndefOr[CoreOptions] = js.native
+    var defaultRequestOptions: js.UndefOr[CoreOptions] = js.undefined
     
-    var filterMode: js.UndefOr[strict | loose] = js.native
+    var filterMode: js.UndefOr[strict | loose] = js.undefined
     
-    var ipTypes: js.UndefOr[js.Array[IPType]] = js.native
+    var ipTypes: js.UndefOr[js.Array[IPType]] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+    var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
     
-    var series: js.UndefOr[Boolean] = js.native
+    var series: js.UndefOr[Boolean] = js.undefined
     
-    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesBlackList: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.native
+    var sourcesWhiteList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialOptions {
     

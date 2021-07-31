@@ -10,7 +10,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,22 +18,23 @@ object mod {
   @js.native
   class MDCRipple protected ()
     extends typings.materialRipple.componentMod.MDCRipple {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialRipple.foundationMod.MDCRippleFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCRipple {
     
-    @JSImport("@material/ripple", "MDCRipple.attachTo")
+    @JSImport("@material/ripple", "MDCRipple")
     @js.native
-    def attachTo(root: Element): typings.materialRipple.componentMod.MDCRipple = js.native
-    @JSImport("@material/ripple", "MDCRipple.attachTo")
-    @js.native
-    def attachTo(root: Element, opts: MDCRippleAttachOpts): typings.materialRipple.componentMod.MDCRipple = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@material/ripple", "MDCRipple.createAdapter")
-    @js.native
-    def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = js.native
+    @scala.inline
+    def attachTo(root: Element): typings.materialRipple.componentMod.MDCRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
+    @scala.inline
+    def attachTo(root: Element, opts: MDCRippleAttachOpts): typings.materialRipple.componentMod.MDCRipple = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.materialRipple.componentMod.MDCRipple]
+    
+    @scala.inline
+    def createAdapter(instance: MDCRippleCapableSurface): MDCRippleAdapter = ^.asInstanceOf[js.Dynamic].applyDynamic("createAdapter")(instance.asInstanceOf[js.Any]).asInstanceOf[MDCRippleAdapter]
   }
   
   @JSImport("@material/ripple", "MDCRippleFoundation")
@@ -163,18 +163,18 @@ object mod {
   
   object util {
     
-    @JSImport("@material/ripple", "util.getNormalizedEventCoords")
+    @JSImport("@material/ripple", "util")
     @js.native
-    def getNormalizedEventCoords(evt: js.UndefOr[scala.Nothing], pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = js.native
-    @JSImport("@material/ripple", "util.getNormalizedEventCoords")
-    @js.native
-    def getNormalizedEventCoords(evt: Event, pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@material/ripple", "util.supportsCssVariables")
-    @js.native
-    def supportsCssVariables(windowObj: /* globalThis */ js.Any): Boolean = js.native
-    @JSImport("@material/ripple", "util.supportsCssVariables")
-    @js.native
-    def supportsCssVariables(windowObj: /* globalThis */ js.Any, forceRefresh: Boolean): Boolean = js.native
+    @scala.inline
+    def getNormalizedEventCoords(evt: Unit, pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
+    @scala.inline
+    def getNormalizedEventCoords(evt: Event, pageOffset: MDCRipplePoint, clientRect: ClientRect): MDCRipplePoint = (^.asInstanceOf[js.Dynamic].applyDynamic("getNormalizedEventCoords")(evt.asInstanceOf[js.Any], pageOffset.asInstanceOf[js.Any], clientRect.asInstanceOf[js.Any])).asInstanceOf[MDCRipplePoint]
+    
+    @scala.inline
+    def supportsCssVariables(windowObj: /* globalThis */ js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def supportsCssVariables(windowObj: /* globalThis */ js.Any, forceRefresh: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("supportsCssVariables")(windowObj.asInstanceOf[js.Any], forceRefresh.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
 }

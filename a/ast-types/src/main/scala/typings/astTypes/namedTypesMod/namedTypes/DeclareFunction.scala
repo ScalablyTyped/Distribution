@@ -10,26 +10,25 @@ import typings.astTypes.kindsMod.StatementKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Statement, 'type'> */
-@js.native
 trait DeclareFunction
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.native
+  var predicate: js.UndefOr[FlowPredicateKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.DeclareFunction = js.native
+  var `type`: typings.astTypes.astTypesStrings.DeclareFunction
 }
 object DeclareFunction {
   

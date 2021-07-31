@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Database
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,12 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Options
   */
-@js.native
 trait ReplicationOptions extends StObject {
   
-  var read: js.UndefOr[js.Array[Database]] = js.native
+  var read: js.UndefOr[js.Array[Database]] = js.undefined
   
-  var write: js.UndefOr[Database] = js.native
+  var write: js.UndefOr[Database] = js.undefined
 }
 object ReplicationOptions {
   

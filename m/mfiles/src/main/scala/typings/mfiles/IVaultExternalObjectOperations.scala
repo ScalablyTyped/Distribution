@@ -3,10 +3,8 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFACLEnforcingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultExternalObjectOperations extends StObject {
   
   def PromoteObject(
@@ -14,7 +12,7 @@ trait IVaultExternalObjectOperations extends StObject {
     PropertyValues: IPropertyValues,
     ACLEnforcingMode: MFACLEnforcingMode,
     pACLProvidedCBN: IAccessControlList
-  ): IObjectVersionAndProperties = js.native
+  ): IObjectVersionAndProperties
 }
 object IVaultExternalObjectOperations {
   

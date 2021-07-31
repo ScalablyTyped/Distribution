@@ -2,27 +2,25 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuilderProgramHost extends StObject {
   
   /**
     * If provided this would be used this hash instead of actual file shape text for detecting changes
     */
-  var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.native
+  var createHash: js.UndefOr[js.Function1[/* data */ java.lang.String, java.lang.String]] = js.undefined
   
   /**
     * return true if file names are treated with case sensitivity
     */
-  def useCaseSensitiveFileNames(): Boolean = js.native
+  def useCaseSensitiveFileNames(): Boolean
   
   /**
     * When emit or emitNextAffectedFile are called without writeFile,
     * this callback if present would be used to write files
     */
-  var writeFile: js.UndefOr[WriteFileCallback] = js.native
+  var writeFile: js.UndefOr[WriteFileCallback] = js.undefined
 }
 object BuilderProgramHost {
   

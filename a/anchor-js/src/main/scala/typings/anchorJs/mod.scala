@@ -8,7 +8,6 @@ import typings.anchorJs.mod.anchorjs.AnchorOptions
 import typings.anchorJs.mod.anchorjs.AnchorStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,12 +15,14 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("anchor-js", JSImport.Namespace)
   @js.native
-  class ^ () extends Anchor {
+  class ^ ()
+    extends StObject
+       with Anchor {
     def this(options: AnchorOptions) = this()
   }
   @JSImport("anchor-js", JSImport.Namespace)
   @js.native
-  val ^ : AnchorStatic = js.native
+  val ^ : js.Object & AnchorStatic = js.native
   
   object global {
     
@@ -30,10 +31,10 @@ object mod extends Shortcut {
     val anchors: Anchor = js.native
   }
   
-  type _To = AnchorStatic
+  type _To = js.Object & AnchorStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: AnchorStatic = ^
+  override def _to: js.Object & AnchorStatic = ^
   
   object anchorjs {
     
@@ -51,24 +52,23 @@ object mod extends Shortcut {
       def removeAll(): Unit = js.native
     }
     
-    @js.native
     trait AnchorOptions extends StObject {
       
-      var ariaLabel: js.UndefOr[String] = js.native
+      var ariaLabel: js.UndefOr[String] = js.undefined
       
-      var base: js.UndefOr[String] = js.native
+      var base: js.UndefOr[String] = js.undefined
       
-      var `class`: js.UndefOr[String] = js.native
+      var `class`: js.UndefOr[String] = js.undefined
       
-      var icon: js.UndefOr[String] = js.native
+      var icon: js.UndefOr[String] = js.undefined
       
-      var placement: js.UndefOr[AnchorPlacement] = js.native
+      var placement: js.UndefOr[AnchorPlacement] = js.undefined
       
-      var titleText: js.UndefOr[String] = js.native
+      var titleText: js.UndefOr[String] = js.undefined
       
-      var truncate: js.UndefOr[Double] = js.native
+      var truncate: js.UndefOr[Double] = js.undefined
       
-      var visible: js.UndefOr[AnchorVisibility] = js.native
+      var visible: js.UndefOr[AnchorVisibility] = js.undefined
     }
     object AnchorOptions {
       
@@ -147,7 +147,8 @@ object mod extends Shortcut {
     
     @js.native
     trait AnchorStatic
-      extends Instantiable0[Anchor]
+      extends StObject
+         with Instantiable0[Anchor]
          with Instantiable1[/* options */ AnchorOptions, Anchor]
     
     /* Rewritten from type alias, can be one of: 

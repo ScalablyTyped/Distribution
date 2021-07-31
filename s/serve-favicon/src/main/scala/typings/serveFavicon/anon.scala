@@ -2,19 +2,17 @@ package typings.serveFavicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MaxAge extends StObject {
     
     /**
       * The cache-control max-age directive in ms, defaulting to 1 day.
       * This can also be a string accepted by the `ms` module.
       */
-    var maxAge: js.UndefOr[Double | String] = js.native
+    var maxAge: js.UndefOr[Double | String] = js.undefined
   }
   object MaxAge {
     

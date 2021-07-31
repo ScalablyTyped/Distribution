@@ -2,22 +2,20 @@ package typings.juiCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mozilla extends StObject {
     
     /** Mozilla 브라우저 체크 */
-    var mozilla: Boolean = js.native
+    var mozilla: Boolean
     
     /** IE 브라우저 체크 */
-    var msie: Boolean = js.native
+    var msie: Boolean
     
     /** Webkit 브라우저 체크 */
-    var webkit: Boolean = js.native
+    var webkit: Boolean
   }
   object Mozilla {
     

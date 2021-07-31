@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableOrganizationAdminAccountRequest extends StObject {
   
   /**
     * The AWS account ID for the account to designate as the delegated Amazon Macie administrator account for the organization.
     */
-  var adminAccountId: string = js.native
+  var adminAccountId: string
   
   /**
     * A unique, case-sensitive token that you provide to ensure the idempotency of the request.
     */
-  var clientToken: js.UndefOr[string] = js.native
+  var clientToken: js.UndefOr[string] = js.undefined
 }
 object EnableOrganizationAdminAccountRequest {
   

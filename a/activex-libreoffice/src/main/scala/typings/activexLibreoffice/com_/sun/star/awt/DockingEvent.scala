@@ -4,27 +4,27 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a docking event. */
-@js.native
-trait DockingEvent extends EventObject {
+trait DockingEvent
+  extends StObject
+     with EventObject {
   
   /** specifies the current mouse position in frame coordinates */
-  var MousePos: Point = js.native
+  var MousePos: Point
   
   /** specifies the current tracking rectangle */
-  var TrackingRectangle: Rectangle = js.native
+  var TrackingRectangle: Rectangle
   
   /**
     * specifies if the docking procedure is interactive which means that the user is currently dragging the window to a new position if this member is
     * `FALSE` the window will be docked or undocked immediately using the returned tracking rectangle
     */
-  var bInteractive: Boolean = js.native
+  var bInteractive: Boolean
   
   /** specifies if the layout should be adjusted immediately */
-  var bLiveMode: Boolean = js.native
+  var bLiveMode: Boolean
 }
 object DockingEvent {
   

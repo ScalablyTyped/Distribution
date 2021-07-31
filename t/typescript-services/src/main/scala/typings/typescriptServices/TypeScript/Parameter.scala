@@ -2,23 +2,23 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Parameter extends AST {
+trait Parameter
+  extends StObject
+     with AST {
   
-  var dotDotDotToken: ASTSpan = js.native
+  var dotDotDotToken: ASTSpan
   
-  var equalsValueClause: EqualsValueClause = js.native
+  var equalsValueClause: EqualsValueClause
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  var questionToken: ASTSpan = js.native
+  var questionToken: ASTSpan
   
-  var typeAnnotation: TypeAnnotation = js.native
+  var typeAnnotation: TypeAnnotation
 }
 object Parameter {
   

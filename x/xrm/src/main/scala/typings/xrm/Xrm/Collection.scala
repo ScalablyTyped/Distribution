@@ -3,7 +3,6 @@ package typings.xrm.Xrm
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -98,5 +97,9 @@ object Collection {
     * Defines item collections that are index-able by string
     * @param Generic type parameter.
     */
-  type StringIndexableItemCollection[T] = Dictionary[T] with ItemCollection[T]
+  @js.native
+  trait StringIndexableItemCollection[T]
+    extends StObject
+       with Dictionary[T]
+       with ItemCollection[T]
 }

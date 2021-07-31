@@ -2,41 +2,39 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMembersInput extends StObject {
   
   /**
     * An optional Boolean value. If provided, the request is limited either to members that the current AWS account owns (true) or that other AWS accounts own (false). If omitted, all members are listed.
     */
-  var IsOwned: js.UndefOr[typings.awsSdk.managedblockchainMod.IsOwned] = js.native
+  var IsOwned: js.UndefOr[typings.awsSdk.managedblockchainMod.IsOwned] = js.undefined
   
   /**
     * The maximum number of members to return in the request.
     */
-  var MaxResults: js.UndefOr[MemberListMaxResults] = js.native
+  var MaxResults: js.UndefOr[MemberListMaxResults] = js.undefined
   
   /**
     * The optional name of the member to list.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the network for which to list members.
     */
-  var NetworkId: ResourceIdString = js.native
+  var NetworkId: ResourceIdString
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * An optional status specifier. If provided, only members currently in this status are listed.
     */
-  var Status: js.UndefOr[MemberStatus] = js.native
+  var Status: js.UndefOr[MemberStatus] = js.undefined
 }
 object ListMembersInput {
   

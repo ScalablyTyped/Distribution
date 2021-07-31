@@ -2,33 +2,31 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailSettings extends StObject {
   
-  def getBcc(): Bcc = js.native
+  def getBcc(): Bcc
   
-  def getBypassListManagement(): BypassListManagement = js.native
+  def getBypassListManagement(): BypassListManagement
   
-  def getFooter(): Footer = js.native
+  def getFooter(): Footer
   
-  def getSandBoxMode(): SandBoxMode = js.native
+  def getSandBoxMode(): SandBoxMode
   
-  def getSpamCheck(): SpamCheck = js.native
+  def getSpamCheck(): SpamCheck
   
-  def setBcc(bcc: Bcc): Unit = js.native
+  def setBcc(bcc: Bcc): Unit
   
-  def setBypassListManagement(bypassListManagement: BypassListManagement): Unit = js.native
+  def setBypassListManagement(bypassListManagement: BypassListManagement): Unit
   
-  def setFooter(footer: Footer): Unit = js.native
+  def setFooter(footer: Footer): Unit
   
-  def setSandBoxMode(sandBoxMode: SandBoxMode): Unit = js.native
+  def setSandBoxMode(sandBoxMode: SandBoxMode): Unit
   
-  def setSpamCheck(spamCheck: SpamCheck): Unit = js.native
+  def setSpamCheck(spamCheck: SpamCheck): Unit
   
-  def toJSON(): typings.sendgrid.anon.Bcc = js.native
+  def toJSON(): typings.sendgrid.anon.Bcc
 }
 object MailSettings {
   

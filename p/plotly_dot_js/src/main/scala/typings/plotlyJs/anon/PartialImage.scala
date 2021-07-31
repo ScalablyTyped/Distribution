@@ -16,38 +16,36 @@ import typings.plotlyJs.plotlyJsStrings.stretch
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Image> */
-@js.native
 trait PartialImage extends StObject {
   
-  var layer: js.UndefOr[above | below] = js.native
+  var layer: js.UndefOr[above | below] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var sizex: js.UndefOr[Double] = js.native
+  var sizex: js.UndefOr[Double] = js.undefined
   
-  var sizey: js.UndefOr[Double] = js.native
+  var sizey: js.UndefOr[Double] = js.undefined
   
-  var sizing: js.UndefOr[fill | contain | stretch] = js.native
+  var sizing: js.UndefOr[fill | contain | stretch] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var x: js.UndefOr[Double | String] = js.native
+  var x: js.UndefOr[Double | String] = js.undefined
   
-  var xanchor: js.UndefOr[left | center | right] = js.native
+  var xanchor: js.UndefOr[left | center | right] = js.undefined
   
-  var xref: js.UndefOr[paper | XAxisName] = js.native
+  var xref: js.UndefOr[paper | XAxisName] = js.undefined
   
-  var y: js.UndefOr[Double | String] = js.native
+  var y: js.UndefOr[Double | String] = js.undefined
   
-  var yanchor: js.UndefOr[top | middle | bottom] = js.native
+  var yanchor: js.UndefOr[top | middle | bottom] = js.undefined
   
-  var yref: js.UndefOr[paper | YAxisName] = js.native
+  var yref: js.UndefOr[paper | YAxisName] = js.undefined
 }
 object PartialImage {
   

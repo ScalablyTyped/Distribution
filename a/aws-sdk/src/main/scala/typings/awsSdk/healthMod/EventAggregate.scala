@@ -2,21 +2,19 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventAggregate extends StObject {
   
   /**
     * The issue type for the associated count.
     */
-  var aggregateValue: js.UndefOr[typings.awsSdk.healthMod.aggregateValue] = js.native
+  var aggregateValue: js.UndefOr[typings.awsSdk.healthMod.aggregateValue] = js.undefined
   
   /**
     * The number of events of the associated issue type.
     */
-  var count: js.UndefOr[typings.awsSdk.healthMod.count] = js.native
+  var count: js.UndefOr[typings.awsSdk.healthMod.count] = js.undefined
 }
 object EventAggregate {
   

@@ -2,14 +2,15 @@ package typings.eventKit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("event-kit", "CompositeDisposable")
   @js.native
-  class CompositeDisposable protected () extends DisposableLike {
+  class CompositeDisposable protected ()
+    extends StObject
+       with DisposableLike {
     /** Construct an instance, optionally with one or more disposables. */
     def this(disposables: DisposableLike*) = this()
     
@@ -29,6 +30,9 @@ object mod {
     /** Alias to CompositeDisposable::remove. */
     def delete(disposable: DisposableLike): Unit = js.native
     
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
     var disposed: Boolean = js.native
     
     /** Remove a previously added disposable. */
@@ -38,30 +42,43 @@ object mod {
   @JSImport("event-kit", "Disposable")
   @js.native
   /** Construct a Disposable. */
-  class Disposable () extends DisposableLike {
+  class Disposable ()
+    extends StObject
+       with DisposableLike {
     def this(disposableAction: js.Function0[Unit]) = this()
     
     /** A callback which will be called within dispose(). */
     var disposalAction: js.UndefOr[js.Function0[Unit]] = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     var disposed: Boolean = js.native
   }
   /* static members */
   object Disposable {
     
-    /** Ensure that Object correctly implements the Disposable contract. */
-    @JSImport("event-kit", "Disposable.isDisposable")
+    @JSImport("event-kit", "Disposable")
     @js.native
-    def isDisposable(`object`: js.Object): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    /** Ensure that Object correctly implements the Disposable contract. */
+    @scala.inline
+    def isDisposable(`object`: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(`object`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("event-kit", "Emitter")
   @js.native
   /** Construct an emitter. */
-  class Emitter[OptionalEmissions, RequiredEmissions] () extends DisposableLike {
+  class Emitter[OptionalEmissions, RequiredEmissions] ()
+    extends StObject
+       with DisposableLike {
     
     /** Clear out any existing subscribers. */
     def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     var disposed: Boolean = js.native
     
@@ -125,10 +142,9 @@ object mod {
     ): Disposable = js.native
   }
   
-  @js.native
   trait DisposableLike extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object DisposableLike {
     

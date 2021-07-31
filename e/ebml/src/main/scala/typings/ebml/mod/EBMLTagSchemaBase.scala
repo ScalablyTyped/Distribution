@@ -6,41 +6,41 @@ import typings.ebml.ebmlStrings.`2 - lzo1x`
 import typings.ebml.ebmlStrings.informational_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EBMLTagSchemaBase extends EBMLTagSchema {
+trait EBMLTagSchemaBase
+  extends StObject
+     with EBMLTagSchema {
   
-  var cppname: js.UndefOr[String] = js.native
+  var cppname: js.UndefOr[String] = js.undefined
   
-  var del: js.UndefOr[(js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)] = js.native
+  var del: js.UndefOr[(js.Tuple2[`1 - bzlibComma`, `2 - lzo1x`]) | (`1 - bzlibComma`) | (`2 - lzo1x`)] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var divx: js.UndefOr[Boolean] = js.native
+  var divx: js.UndefOr[Boolean] = js.undefined
   
-  var i: js.UndefOr[String] = js.native
+  var i: js.UndefOr[String] = js.undefined
   
-  var level: Double = js.native
+  var level: Double
   
-  var mandatory: js.UndefOr[Boolean] = js.native
+  var mandatory: js.UndefOr[Boolean] = js.undefined
   
-  var maxver: js.UndefOr[String] = js.native
+  var maxver: js.UndefOr[String] = js.undefined
   
-  var minver: js.UndefOr[Double] = js.native
+  var minver: js.UndefOr[Double] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var recursive: js.UndefOr[Boolean] = js.native
+  var recursive: js.UndefOr[Boolean] = js.undefined
   
-  var strong: js.UndefOr[informational_ | Informational] = js.native
+  var strong: js.UndefOr[informational_ | Informational] = js.undefined
   
-  var `type`: TagType = js.native
+  var `type`: TagType
   
-  var webm: js.UndefOr[Boolean] = js.native
+  var webm: js.UndefOr[Boolean] = js.undefined
 }
 object EBMLTagSchemaBase {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gatewayRouteMod {
@@ -80,6 +79,10 @@ object gatewayRouteMod {
   /* static members */
   object GatewayRoute {
     
+    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GatewayRoute resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,60 +92,54 @@ object gatewayRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayRouteState): GatewayRoute = js.native
-    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): GatewayRoute = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayRouteState): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayRouteState, opts: CustomResourceOptions): GatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GatewayRoute]
     
     /**
       * Returns true if the given object is an instance of GatewayRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appmesh/gatewayRoute", "GatewayRoute.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appmesh/gatewayRoute.GatewayRoute */ Boolean]
   }
   
-  @js.native
   trait GatewayRouteArgs extends StObject {
     
     /**
       * The name of the service mesh in which to create the gateway route. Must be between 1 and 255 characters in length.
       */
-    val meshName: Input[String] = js.native
+    val meshName: Input[String]
     
     /**
       * The AWS account ID of the service mesh's owner. Defaults to the account ID the [AWS provider](https://www.terraform.io/docs/providers/aws/index.html) is currently connected to.
       */
-    val meshOwner: js.UndefOr[Input[String]] = js.native
+    val meshOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to use for the gateway route. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The gateway route specification to apply.
       */
-    val spec: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec] = js.native
+    val spec: Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the [virtual gateway](https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html) to associate the gateway route with. Must be between 1 and 255 characters in length.
       */
-    val virtualGatewayName: Input[String] = js.native
+    val virtualGatewayName: Input[String]
   }
   object GatewayRouteArgs {
     
@@ -188,58 +185,57 @@ object gatewayRouteMod {
     }
   }
   
-  @js.native
   trait GatewayRouteState extends StObject {
     
     /**
       * The ARN of the gateway route.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The creation date of the gateway route.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last update date of the gateway route.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the service mesh in which to create the gateway route. Must be between 1 and 255 characters in length.
       */
-    val meshName: js.UndefOr[Input[String]] = js.native
+    val meshName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID of the service mesh's owner. Defaults to the account ID the [AWS provider](https://www.terraform.io/docs/providers/aws/index.html) is currently connected to.
       */
-    val meshOwner: js.UndefOr[Input[String]] = js.native
+    val meshOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name to use for the gateway route. Must be between 1 and 255 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The resource owner's AWS account ID.
       */
-    val resourceOwner: js.UndefOr[Input[String]] = js.native
+    val resourceOwner: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The gateway route specification to apply.
       */
-    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]] = js.native
+    val spec: js.UndefOr[Input[typings.pulumiAws.inputMod.appmesh.GatewayRouteSpec]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the [virtual gateway](https://www.terraform.io/docs/providers/aws/r/appmesh_virtual_gateway.html) to associate the gateway route with. Must be between 1 and 255 characters in length.
       */
-    val virtualGatewayName: js.UndefOr[Input[String]] = js.native
+    val virtualGatewayName: js.UndefOr[Input[String]] = js.undefined
   }
   object GatewayRouteState {
     

@@ -2,31 +2,29 @@ package typings.handlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileOptions extends StObject {
   
-  var assumeObjects: js.UndefOr[Boolean] = js.native
+  var assumeObjects: js.UndefOr[Boolean] = js.undefined
   
-  var compat: js.UndefOr[Boolean] = js.native
+  var compat: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[Boolean] = js.native
+  var data: js.UndefOr[Boolean] = js.undefined
   
-  var explicitPartialContext: js.UndefOr[Boolean] = js.native
+  var explicitPartialContext: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreStandalone: js.UndefOr[Boolean] = js.native
+  var ignoreStandalone: js.UndefOr[Boolean] = js.undefined
   
-  var knownHelpers: js.UndefOr[KnownHelpers] = js.native
+  var knownHelpers: js.UndefOr[KnownHelpers] = js.undefined
   
-  var knownHelpersOnly: js.UndefOr[Boolean] = js.native
+  var knownHelpersOnly: js.UndefOr[Boolean] = js.undefined
   
-  var noEscape: js.UndefOr[Boolean] = js.native
+  var noEscape: js.UndefOr[Boolean] = js.undefined
   
-  var preventIndent: js.UndefOr[Boolean] = js.native
+  var preventIndent: js.UndefOr[Boolean] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
 }
 object CompileOptions {
   

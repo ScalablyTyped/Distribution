@@ -3,23 +3,21 @@ package typings.stylus.mod.Stylus
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderOptions extends StObject {
   
-  var Evaluator: js.UndefOr[Instantiable0[typings.stylus.mod.Stylus.Evaluator]] = js.native
+  var Evaluator: js.UndefOr[Instantiable0[typings.stylus.mod.Stylus.Evaluator]] = js.undefined
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var functions: js.UndefOr[Dictionary[_]] = js.native
+  var functions: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
-  var globals: js.UndefOr[Dictionary[_]] = js.native
+  var globals: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
-  var imports: js.UndefOr[js.Array[String]] = js.native
+  var imports: js.UndefOr[js.Array[String]] = js.undefined
   
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RenderOptions {
   
@@ -45,13 +43,13 @@ object RenderOptions {
     def setFilenameUndefined: Self = StObject.set(x, "filename", js.undefined)
     
     @scala.inline
-    def setFunctions(value: Dictionary[_]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+    def setFunctions(value: Dictionary[js.Any]): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFunctionsUndefined: Self = StObject.set(x, "functions", js.undefined)
     
     @scala.inline
-    def setGlobals(value: Dictionary[_]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
+    def setGlobals(value: Dictionary[js.Any]): Self = StObject.set(x, "globals", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGlobalsUndefined: Self = StObject.set(x, "globals", js.undefined)

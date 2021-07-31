@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesPieDataLabelsOptionsObject extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * of each half (left & right) touches the nearest vertical edge of the plot
     * area.
     */
-  var alignTo: js.UndefOr[String] = js.native
+  var alignTo: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the initial
@@ -33,31 +31,31 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     */
   var animation: js.UndefOr[
     Boolean | PlotFunnelDataLabelsAnimationOptions | PlotItemDataLabelsAnimationOptions | PlotPieDataLabelsAnimationOptions | PlotPyramidDataLabelsAnimationOptions | PlotVariablepieDataLabelsAnimationOptions | PartialAnimationOptionsOb
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
     * for the data label.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border color for the data
     * label. Defaults to `undefined`.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border radius in pixels for
     * the data label.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The border width in pixels for
     * the data label.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A class name for the data label.
@@ -66,7 +64,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * color class name is added so that we can give the labels a contrast text
     * shadow.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text color for the data
@@ -77,7 +75,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * further increase the contrast. This can be overridden by setting the
     * `text-outline` style to `none` in the `dataLabels.style` option.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The color of the line connecting the data label to the pie
@@ -86,14 +84,14 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * In styled mode, the connector stroke is given in the
     * `.highcharts-data-label-connector` class.
     */
-  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var connectorColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) The distance from the data label to the connector. Note that
     * data labels also have a default `padding`, so in order for the connector
     * to touch the text, the `padding` must also be 0.
     */
-  var connectorPadding: js.UndefOr[Double] = js.native
+  var connectorPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Specifies the method that is used to generate the connector
@@ -120,7 +118,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * The function has to return an SVG path definition in array form (see the
     * example).
     */
-  var connectorShape: js.UndefOr[String | js.Function] = js.native
+  var connectorShape: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * (Highcharts) The width of the line connecting the data label to the pie
@@ -129,21 +127,21 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * In styled mode, the connector stroke width is given in the
     * `.highcharts-data-label-connector` class.
     */
-  var connectorWidth: js.UndefOr[Double] = js.native
+  var connectorWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Works only if `connectorShape` is `'crookedLine'`. It
     * defines how far from the vertical plot edge the coonnector path should be
     * crooked.
     */
-  var crookDistance: js.UndefOr[String] = js.native
+  var crookDistance: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to hide data labels that
     * are outside the plot area. By default, the data label is moved inside the
     * plot area according to the overflow option.
     */
-  var crop: js.UndefOr[Boolean] = js.native
+  var crop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to defer displaying the data
@@ -151,7 +149,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * `false` renders the data label immediately. If set to `true` inherits the
     * defer time set in plotOptions.series.animation.
     */
-  var defer: js.UndefOr[Boolean] = js.native
+  var defer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The distance of the data label from the pie's edge. Negative
@@ -159,13 +157,13 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * as a percentage of pie's radius. Connectors are only shown for data
     * labels outside the pie.
     */
-  var distance: js.UndefOr[Double | String] = js.native
+  var distance: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the data
     * labels.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A declarative filter to control
@@ -175,27 +173,27 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * For programmatic control, use the `formatter` instead, and return
     * `undefined` to disable a single data label.
     */
-  var filter: js.UndefOr[DataLabelsFilterOptionsObject] = js.native
+  var filter: js.UndefOr[DataLabelsFilterOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A format string for the data
     * label. Available variables are the same as for `formatter`.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function to
     * format the data label. Note that if a `format` is defined, the format
     * takes precedence and the formatter is ignored.
     */
-  var formatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.native
+  var formatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Format for points with the value
     * of null. Works analogously to format. `nullFormat` can be applied only to
     * series which support displaying null points.
     */
-  var nullFormat: js.UndefOr[Boolean | String] = js.native
+  var nullFormat: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback JavaScript function
@@ -203,7 +201,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * analogously to formatter. `nullPointFormatter` can be applied only to
     * series which support displaying null points.
     */
-  var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.native
+  var nullFormatter: js.UndefOr[DataLabelsFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How to handle data labels that
@@ -212,26 +210,26 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * inside the bar. To display data labels outside the plot area, set `crop`
     * to `false` and `overflow` to `"allow"`.
     */
-  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.native
+  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When either the `borderWidth` or
     * the `backgroundColor` is set, this is the padding within the box.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Aligns data labels relative to
     * points. If `center` alignment is not possible, it defaults to `right`.
     */
-  var position: js.UndefOr[AlignValue] = js.native
+  var position: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Text rotation in degrees. Note
     * that due to a more complex structure, backgrounds, borders and padding
     * will be lost on a rotated data label.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The shadow of the box. Works
@@ -239,20 +237,20 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * an object configuration containing `color`, `offsetX`, `offsetY`,
     * `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
     * the border around the label. Symbols are predefined functions on the
     * Renderer object.
     */
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Whether to render the connector as a soft arc or a line with
     * sharp break. Works only if `connectorShape` equals to `fixedOffset`.
     */
-  var softConnector: js.UndefOr[Boolean] = js.native
+  var softConnector: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Styles for the label. The
@@ -276,7 +274,7 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * `ellipsis`, which will keep the text on one line plus it will break
     * inside long words.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for a label text which
@@ -286,13 +284,13 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * **Note:** Only SVG-based renderer supports this option. Setting `useHTML`
     * to true will disable this option.
     */
-  var textPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.native
+  var textPath: js.UndefOr[DataLabelsTextPathOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to use HTML to render
     * the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The vertical alignment of a data
@@ -300,26 +298,26 @@ trait SeriesPieDataLabelsOptionsObject extends StObject {
     * depends on the data, for instance in a column chart, the label is above
     * positive values and below negative values.
     */
-  var verticalAlign: js.UndefOr[String | VerticalAlignValue | Null] = js.native
+  var verticalAlign: js.UndefOr[String | VerticalAlignValue | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The x position offset of the
     * label relative to the point in pixels.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The y position offset of the
     * label relative to the point in pixels.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the data labels.
     * The default Z index puts it above the series. Use a Z index of 2 to
     * display it behind the series.
     */
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object SeriesPieDataLabelsOptionsObject {
   

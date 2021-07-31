@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An array of values, each being the `id` value of a column header that is applicable to the current cell. */
-@js.native
 trait ColumnHeaderIds extends StObject {
   
   /** The `id` value of a column header. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object ColumnHeaderIds {
   

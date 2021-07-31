@@ -2,35 +2,33 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputContext extends StObject {
   
   /**
     * Whether the text field wants auto-complete.
     * @since Chrome 40.
     */
-  var autoComplete: Boolean = js.native
+  var autoComplete: Boolean
   
   /**
     * Whether the text field wants auto-correct.
     * @since Chrome 40.
     */
-  var autoCorrect: Boolean = js.native
+  var autoCorrect: Boolean
   
   /** This is used to specify targets of text field operations. This ID becomes invalid as soon as onBlur is called. */
-  var contextID: Double = js.native
+  var contextID: Double
   
   /**
     * Whether the text field wants spell-check.
     * @since Chrome 40.
     */
-  var spellCheck: Boolean = js.native
+  var spellCheck: Boolean
   
   /** Type of value this text field edits, (Text, Number, URL, etc) */
-  var `type`: String = js.native
+  var `type`: String
 }
 object InputContext {
   

@@ -28,7 +28,6 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SymbolKind {

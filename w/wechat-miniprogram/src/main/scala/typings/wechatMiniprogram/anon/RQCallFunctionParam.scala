@@ -4,20 +4,18 @@ import typings.wechatMiniprogram.ICloud.CallFunctionData
 import typings.wechatMiniprogram.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.RQ<wechat-miniprogram.ICloud.CallFunctionParam> */
-@js.native
 trait RQCallFunctionParam extends StObject {
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var data: js.UndefOr[CallFunctionData] = js.native
+  var data: js.UndefOr[CallFunctionData] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var slow: js.UndefOr[Boolean] = js.native
+  var slow: js.UndefOr[Boolean] = js.undefined
 }
 object RQCallFunctionParam {
   

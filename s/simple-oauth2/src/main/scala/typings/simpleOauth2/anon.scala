@@ -6,12 +6,10 @@ import typings.simpleOauth2.simpleOauth2Strings.header
 import typings.simpleOauth2.simpleOauth2Strings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AuthorizationMethod extends StObject {
     
     /**
@@ -19,10 +17,10 @@ object anon {
       * If set to body, the bodyFormat option will be used to format the credentials.
       * Defaults to header
       */
-    var authorizationMethod: js.UndefOr[header | body] = js.native
+    var authorizationMethod: js.UndefOr[header | body] = js.undefined
     
     /** Format of data sent in the request body. Defaults to form. */
-    var bodyFormat: js.UndefOr[json | form] = js.native
+    var bodyFormat: js.UndefOr[json | form] = js.undefined
   }
   object AuthorizationMethod {
     
@@ -49,23 +47,22 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthorizeHost extends StObject {
     
     /** String used to set the host to request an "authorization code". Default to the value set on auth.tokenHost. */
-    var authorizeHost: js.UndefOr[String] = js.native
+    var authorizeHost: js.UndefOr[String] = js.undefined
     
     /** String path to request an authorization code. Default to /oauth/authorize. */
-    var authorizePath: js.UndefOr[String] = js.native
+    var authorizePath: js.UndefOr[String] = js.undefined
     
     /** String path to revoke an access token. Default to /oauth/revoke. */
-    var revokePath: js.UndefOr[String] = js.native
+    var revokePath: js.UndefOr[String] = js.undefined
     
     /** String used to set the host to request the tokens to. Required. */
-    var tokenHost: String = js.native
+    var tokenHost: String
     
     /** String path to request an access token. Default to /oauth/token. */
-    var tokenPath: js.UndefOr[String] = js.native
+    var tokenPath: js.UndefOr[String] = js.undefined
   }
   object AuthorizeHost {
     
@@ -107,20 +104,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Id[ClientIdName /* <: String */] extends StObject {
     
     /** Service registered client id. Required. */
-    var id: String = js.native
+    var id: String
     
     /** Parameter name used to send the client id. Default to client_id. */
-    var idParamName: js.UndefOr[ClientIdName] = js.native
+    var idParamName: js.UndefOr[ClientIdName] = js.undefined
     
     /** Service registered client secret. Required. */
-    var secret: String = js.native
+    var secret: String
     
     /** Parameter name used to send the client secret. Default to client_secret. */
-    var secretParamName: js.UndefOr[String] = js.native
+    var secretParamName: js.UndefOr[String] = js.undefined
   }
   object Id {
     
@@ -131,7 +127,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class IdMutableBuilder[Self <: Id[_], ClientIdName /* <: String */] (val x: Self with Id[ClientIdName]) extends AnyVal {
+    implicit class IdMutableBuilder[Self <: Id[?], ClientIdName /* <: String */] (val x: Self & Id[ClientIdName]) extends AnyVal {
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -153,14 +149,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Redirecturi extends StObject {
     
-    var redirect_uri: js.UndefOr[String] = js.native
+    var redirect_uri: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Redirecturi {
     

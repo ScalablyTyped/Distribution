@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents advanced event settings. */
-@js.native
 trait LoggingOptions extends StObject {
   
   /** Gets or sets the unique identifier associated with an activity. */
-  var activityId: String = js.native
+  var activityId: String
   
   /** Gets or sets the keyword value that represents the different categories that an event belongs to. */
-  var keywords: Double = js.native
+  var keywords: Double
   
   /** Gets or sets the operation code value for an event. */
-  var opcode: LoggingOpcode = js.native
+  var opcode: LoggingOpcode
   
   /** Gets or sets a value that uniquely identifies the parent activity to which this activity is related. */
-  var relatedActivityId: String = js.native
+  var relatedActivityId: String
   
   /** Gets or sets the user-defined metadata value attached to an event. */
-  var tags: Double = js.native
+  var tags: Double
   
   /** Gets or sets the user-defined value that identifies a larger unit of work within an application or component. */
-  var task: Double = js.native
+  var task: Double
 }
 object LoggingOptions {
   

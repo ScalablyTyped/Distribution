@@ -4,10 +4,13 @@ import typings.appBuilderLib.appBuilderLibStrings.always
 import typings.appBuilderLib.winPackagerMod.WinPackager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonWindowsInstallerConfigurationMod {
+  
+  @JSImport("app-builder-lib/out/options/CommonWindowsInstallerConfiguration", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait DesktopShortcutCreationPolicy extends StObject
@@ -16,64 +19,68 @@ object commonWindowsInstallerConfigurationMod {
   object DesktopShortcutCreationPolicy extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DesktopShortcutCreationPolicy with Double] = js.native
+    def apply(value: Double): js.UndefOr[DesktopShortcutCreationPolicy & Double] = js.native
     
     @js.native
-    sealed trait ALWAYS extends DesktopShortcutCreationPolicy
-    /* 1 */ val ALWAYS: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.ALWAYS with Double = js.native
+    sealed trait ALWAYS
+      extends StObject
+         with DesktopShortcutCreationPolicy
+    /* 1 */ val ALWAYS: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.ALWAYS & Double = js.native
     
     @js.native
-    sealed trait FRESH_INSTALL extends DesktopShortcutCreationPolicy
-    /* 0 */ val FRESH_INSTALL: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.FRESH_INSTALL with Double = js.native
+    sealed trait FRESH_INSTALL
+      extends StObject
+         with DesktopShortcutCreationPolicy
+    /* 0 */ val FRESH_INSTALL: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.FRESH_INSTALL & Double = js.native
     
     @js.native
-    sealed trait NEVER extends DesktopShortcutCreationPolicy
-    /* 2 */ val NEVER: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.NEVER with Double = js.native
+    sealed trait NEVER
+      extends StObject
+         with DesktopShortcutCreationPolicy
+    /* 2 */ val NEVER: typings.appBuilderLib.commonWindowsInstallerConfigurationMod.DesktopShortcutCreationPolicy.NEVER & Double = js.native
   }
   
-  @JSImport("app-builder-lib/out/options/CommonWindowsInstallerConfiguration", "getEffectiveOptions")
-  @js.native
-  def getEffectiveOptions(options: CommonWindowsInstallerConfiguration, packager: WinPackager): FinalCommonWindowsInstallerOptions = js.native
+  @scala.inline
+  def getEffectiveOptions(options: CommonWindowsInstallerConfiguration, packager: WinPackager): FinalCommonWindowsInstallerOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("getEffectiveOptions")(options.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[FinalCommonWindowsInstallerOptions]
   
-  @js.native
   trait CommonWindowsInstallerConfiguration extends StObject {
     
     /**
       * Whether to create desktop shortcut. Set to `always` if to recreate also on reinstall (even if removed by user).
       * @default true
       */
-    val createDesktopShortcut: js.UndefOr[Boolean | always] = js.native
+    val createDesktopShortcut: js.UndefOr[Boolean | always] = js.undefined
     
     /**
       * Whether to create start menu shortcut.
       * @default true
       */
-    val createStartMenuShortcut: js.UndefOr[Boolean] = js.native
+    val createStartMenuShortcut: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to create submenu for start menu shortcut and program files directory. If `true`, company name will be used. Or string value.
       * @default false
       */
-    val menuCategory: js.UndefOr[Boolean | String] = js.native
+    val menuCategory: js.UndefOr[Boolean | String] = js.undefined
     
-    val oneClick: js.UndefOr[Boolean] = js.native
+    val oneClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to install per all users (per-machine).
       * @default false
       */
-    val perMachine: js.UndefOr[Boolean] = js.native
+    val perMachine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to run the installed application after finish. For assisted installer corresponding checkbox will be removed.
       * @default true
       */
-    val runAfterFinish: js.UndefOr[Boolean] = js.native
+    val runAfterFinish: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name that will be used for all shortcuts. Defaults to the application name.
       */
-    val shortcutName: js.UndefOr[String | Null] = js.native
+    val shortcutName: js.UndefOr[String | Null] = js.undefined
   }
   object CommonWindowsInstallerConfiguration {
     
@@ -133,20 +140,19 @@ object commonWindowsInstallerConfigurationMod {
     }
   }
   
-  @js.native
   trait FinalCommonWindowsInstallerOptions extends StObject {
     
-    var isAssisted: Boolean = js.native
+    var isAssisted: Boolean
     
-    var isCreateDesktopShortcut: DesktopShortcutCreationPolicy = js.native
+    var isCreateDesktopShortcut: DesktopShortcutCreationPolicy
     
-    var isCreateStartMenuShortcut: Boolean = js.native
+    var isCreateStartMenuShortcut: Boolean
     
-    var isPerMachine: Boolean = js.native
+    var isPerMachine: Boolean
     
-    var menuCategory: String | Null = js.native
+    var menuCategory: String | Null
     
-    var shortcutName: String = js.native
+    var shortcutName: String
   }
   object FinalCommonWindowsInstallerOptions {
     
@@ -158,7 +164,7 @@ object commonWindowsInstallerConfigurationMod {
       isPerMachine: Boolean,
       shortcutName: String
     ): FinalCommonWindowsInstallerOptions = {
-      val __obj = js.Dynamic.literal(isAssisted = isAssisted.asInstanceOf[js.Any], isCreateDesktopShortcut = isCreateDesktopShortcut.asInstanceOf[js.Any], isCreateStartMenuShortcut = isCreateStartMenuShortcut.asInstanceOf[js.Any], isPerMachine = isPerMachine.asInstanceOf[js.Any], shortcutName = shortcutName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isAssisted = isAssisted.asInstanceOf[js.Any], isCreateDesktopShortcut = isCreateDesktopShortcut.asInstanceOf[js.Any], isCreateStartMenuShortcut = isCreateStartMenuShortcut.asInstanceOf[js.Any], isPerMachine = isPerMachine.asInstanceOf[js.Any], shortcutName = shortcutName.asInstanceOf[js.Any], menuCategory = null)
       __obj.asInstanceOf[FinalCommonWindowsInstallerOptions]
     }
     

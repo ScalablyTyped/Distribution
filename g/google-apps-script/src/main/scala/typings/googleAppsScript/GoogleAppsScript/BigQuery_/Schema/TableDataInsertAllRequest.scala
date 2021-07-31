@@ -2,21 +2,19 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableDataInsertAllRequest extends StObject {
   
-  var ignoreUnknownValues: js.UndefOr[Boolean] = js.native
+  var ignoreUnknownValues: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[js.Array[TableDataInsertAllRequestRows]] = js.native
+  var rows: js.UndefOr[js.Array[TableDataInsertAllRequestRows]] = js.undefined
   
-  var skipInvalidRows: js.UndefOr[Boolean] = js.native
+  var skipInvalidRows: js.UndefOr[Boolean] = js.undefined
   
-  var templateSuffix: js.UndefOr[String] = js.native
+  var templateSuffix: js.UndefOr[String] = js.undefined
 }
 object TableDataInsertAllRequest {
   

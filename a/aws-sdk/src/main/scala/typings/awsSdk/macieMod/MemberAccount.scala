@@ -2,16 +2,14 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberAccount extends StObject {
   
   /**
     * The AWS account ID of the Amazon Macie Classic member account.
     */
-  var accountId: js.UndefOr[AWSAccountId] = js.native
+  var accountId: js.UndefOr[AWSAccountId] = js.undefined
 }
 object MemberAccount {
   

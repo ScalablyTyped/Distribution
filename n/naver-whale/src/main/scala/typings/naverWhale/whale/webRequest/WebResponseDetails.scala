@@ -2,21 +2,20 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebResponseDetails
-  extends typings.chrome.chrome.webRequest.ResourceRequest {
+  extends StObject
+     with typings.chrome.chrome.webRequest.ResourceRequest {
   
   /**
     * Standard HTTP status code returned by the server.
     * @since Chrome 43.
     */
-  var statusCode: Double = js.native
+  var statusCode: Double
   
   /** HTTP status line of the response or the 'HTTP/0.9 200 OK' string for HTTP/0.9 responses (i.e., responses that lack a status line). */
-  var statusLine: String = js.native
+  var statusLine: String
 }
 object WebResponseDetails {
   

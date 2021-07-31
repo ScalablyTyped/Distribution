@@ -2,48 +2,46 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Relevant information for the image from the Internet.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1WebDetection extends StObject {
   
   /**
     * The service&#39;s best guess as to the topic of the request image.
     * Inferred from similar images on the open web.
     */
-  var bestGuessLabels: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebLabel]] = js.native
+  var bestGuessLabels: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebLabel]] = js.undefined
   
   /**
     * Fully matching images from the Internet. Can include resized copies of
     * the query image.
     */
-  var fullMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.native
+  var fullMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.undefined
   
   /**
     * Web pages containing the matching images from the Internet.
     */
-  var pagesWithMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebPage]] = js.native
+  var pagesWithMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebPage]] = js.undefined
   
   /**
     * Partial matching images from the Internet. Those images are similar
     * enough to share some key-point features. For example an original image
     * will likely have partial matching for its crops.
     */
-  var partialMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.native
+  var partialMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.undefined
   
   /**
     * The visually similar image results.
     */
-  var visuallySimilarImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.native
+  var visuallySimilarImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebImage]] = js.undefined
   
   /**
     * Deduced entities from similar images on the Internet.
     */
-  var webEntities: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebEntity]] = js.native
+  var webEntities: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1WebDetectionWebEntity]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1WebDetection {
   

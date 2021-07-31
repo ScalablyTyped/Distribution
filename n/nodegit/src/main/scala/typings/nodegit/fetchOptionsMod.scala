@@ -5,7 +5,6 @@ import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchOptionsMod {
@@ -13,7 +12,8 @@ object fetchOptionsMod {
   @JSImport("nodegit/fetch-options", "FetchOptions")
   @js.native
   class FetchOptions ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     var callbacks: js.UndefOr[RemoteCallbacks] = js.native
     

@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecutionSummaryForThing extends StObject {
   
   /**
     * Contains a subset of information about a job execution.
     */
-  var jobExecutionSummary: js.UndefOr[JobExecutionSummary] = js.native
+  var jobExecutionSummary: js.UndefOr[JobExecutionSummary] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
 }
 object JobExecutionSummaryForThing {
   

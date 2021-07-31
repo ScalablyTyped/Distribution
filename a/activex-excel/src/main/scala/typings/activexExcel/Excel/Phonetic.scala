@@ -2,30 +2,28 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Phonetic extends StObject {
   
-  var Alignment: Double = js.native
+  var Alignment: Double
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var CharacterType: Double = js.native
+  var CharacterType: Double
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Phonetic_typekey")
-  var ExcelDotPhonetic_typekey: Phonetic = js.native
+  var ExcelDotPhonetic_typekey: Phonetic
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Text: String = js.native
+  var Text: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object Phonetic {
   

@@ -5,16 +5,17 @@ import typings.react.mod.KeyboardEventHandler
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTabFocusWrapMod {
   
-  @JSImport("@react-md/utils/types/wia-aria/useTabFocusWrap", "useTabFocusWrap")
+  @JSImport("@react-md/utils/types/wia-aria/useTabFocusWrap", JSImport.Namespace)
   @js.native
-  def useTabFocusWrap[E /* <: HTMLElement */](hasDisabledDisableFocusCacheOnKeyDown: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useTabFocusWrap[E /* <: HTMLElement */](hasDisabledDisableFocusCacheOnKeyDown: Options[E]): js.UndefOr[KeyboardEventHandler[E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTabFocusWrap")(hasDisabledDisableFocusCacheOnKeyDown.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[KeyboardEventHandler[E]]]
+  
   trait Options[E /* <: HTMLElement */] extends StObject {
     
     /**
@@ -22,17 +23,17 @@ object useTabFocusWrapMod {
       * first tab key press. This should only be set to `true` if you have a lot of
       * dynamic content whin your element and the first and last elements change.
       */
-    var disableFocusCache: js.UndefOr[Boolean] = js.native
+    var disableFocusCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the focus wrap behavior should be disabled.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional keydown event handler to merge with the focus wrap behavior.
       */
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[E]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[E]] = js.undefined
   }
   object Options {
     
@@ -43,7 +44,7 @@ object useTabFocusWrapMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], E /* <: HTMLElement */] (val x: Self with Options[E]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], E /* <: HTMLElement */] (val x: Self & Options[E]) extends AnyVal {
       
       @scala.inline
       def setDisableFocusCache(value: Boolean): Self = StObject.set(x, "disableFocusCache", value.asInstanceOf[js.Any])

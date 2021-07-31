@@ -3,15 +3,13 @@ package typings.jqueryValidationUnobtrusive
 import typings.jqueryValidationUnobtrusive.MicrosoftJQueryUnobtrusiveValidation.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryValidation {
   
-  @js.native
   trait ValidatorStatic extends StObject {
     
-    var unobtrusive: Validator = js.native
+    var unobtrusive: Validator
   }
   object ValidatorStatic {
     

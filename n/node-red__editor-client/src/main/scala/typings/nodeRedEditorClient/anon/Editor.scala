@@ -2,25 +2,23 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Editor extends StObject {
   
-  var editor: typings.ace.AceAjax.Editor | GetText = js.native
+  var editor: typings.ace.AceAjax.Editor | GetText
   
-  var elementPrefix: js.UndefOr[String] = js.native
+  var elementPrefix: js.UndefOr[String] = js.undefined
   
-  var ext: js.UndefOr[String] = js.native
+  var ext: js.UndefOr[String] = js.undefined
   
-  var fields: js.Array[String] = js.native
+  var fields: js.Array[String]
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Editor {
   

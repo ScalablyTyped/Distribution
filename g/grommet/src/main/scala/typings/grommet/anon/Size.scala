@@ -5,17 +5,17 @@ import typings.grommet.listMod.SizeType
 import typings.grommet.listMod._BorderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Size extends _BorderType {
+trait Size
+  extends StObject
+     with _BorderType {
   
-  var color: js.UndefOr[String | Dark] = js.native
+  var color: js.UndefOr[String | Dark] = js.undefined
   
-  var side: js.UndefOr[SideType] = js.native
+  var side: js.UndefOr[SideType] = js.undefined
   
-  var size: js.UndefOr[SizeType] = js.native
+  var size: js.UndefOr[SizeType] = js.undefined
 }
 object Size {
   

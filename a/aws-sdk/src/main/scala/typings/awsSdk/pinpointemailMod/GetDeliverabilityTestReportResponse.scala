@@ -2,36 +2,34 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeliverabilityTestReportResponse extends StObject {
   
   /**
     * An object that contains the results of the predictive inbox placement test.
     */
-  var DeliverabilityTestReport: typings.awsSdk.pinpointemailMod.DeliverabilityTestReport = js.native
+  var DeliverabilityTestReport: typings.awsSdk.pinpointemailMod.DeliverabilityTestReport
   
   /**
     * An object that describes how the test email was handled by several email providers, including Gmail, Hotmail, Yahoo, AOL, and others.
     */
-  var IspPlacements: typings.awsSdk.pinpointemailMod.IspPlacements = js.native
+  var IspPlacements: typings.awsSdk.pinpointemailMod.IspPlacements
   
   /**
     * An object that contains the message that you sent when you performed this predictive inbox placement test.
     */
-  var Message: js.UndefOr[MessageContent] = js.native
+  var Message: js.UndefOr[MessageContent] = js.undefined
   
   /**
     * An object that specifies how many test messages that were sent during the predictive inbox placement test were delivered to recipients' inboxes, how many were sent to recipients' spam folders, and how many weren't delivered.
     */
-  var OverallPlacement: PlacementStatistics = js.native
+  var OverallPlacement: PlacementStatistics
   
   /**
     * An array of objects that define the tags (keys and values) that are associated with the predictive inbox placement test.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object GetDeliverabilityTestReportResponse {
   

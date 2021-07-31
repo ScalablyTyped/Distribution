@@ -2,21 +2,19 @@ package typings.microsoftSdkSoap.mod.global.Sdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEntityView extends StObject {
   
-  var attributes: AttributeCollection = js.native
+  var attributes: AttributeCollection
   
-  var entityState: EntityState = js.native
+  var entityState: EntityState
   
-  var id: java.lang.String = js.native
+  var id: java.lang.String
   
-  var logicalName: java.lang.String = js.native
+  var logicalName: java.lang.String
   
-  var relatedEntities: RelatedEntityCollection = js.native
+  var relatedEntities: RelatedEntityCollection
 }
 object IEntityView {
   

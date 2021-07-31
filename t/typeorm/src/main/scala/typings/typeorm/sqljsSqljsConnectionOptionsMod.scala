@@ -6,32 +6,31 @@ import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
 import typings.typeorm.typeormStrings.sqljs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqljsSqljsConnectionOptionsMod {
   
-  @js.native
   trait SqljsConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with ConnectionOptions {
     
     /**
       * Enables the autoSave mechanism which either saves to location
       * or calls autoSaveCallback every time a change to the database is made.
       */
-    val autoSave: js.UndefOr[Boolean] = js.native
+    val autoSave: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function that gets called on every change instead of the internal autoSave function.
       * autoSave has to be enabled for this to work.
       */
-    val autoSaveCallback: js.UndefOr[js.Function] = js.native
+    val autoSaveCallback: js.UndefOr[js.Function] = js.undefined
     
     /**
       * A Uint8Array that gets imported when the connection is opened.
       */
-    val database: js.UndefOr[Uint8Array] = js.native
+    val database: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * File path (Node.js) or local storage key (browser) to load and save database from.
@@ -39,31 +38,31 @@ object sqljsSqljsConnectionOptionsMod {
       * and can be saved manually via the SqljsEntityManager. If autoSave is enabled,
       * location is used to automatically save the database.
       */
-    val location: js.UndefOr[String] = js.native
+    val location: js.UndefOr[String] = js.undefined
     
     /**
       * Config that's used to initialize sql.js.
       */
-    val sqlJsConfig: js.UndefOr[js.Any] = js.native
+    val sqlJsConfig: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_SqljsConnectionOptions: sqljs = js.native
+    val type_SqljsConnectionOptions: sqljs
     
     /**
       * Enables the usage of the localforage library to save & load the database asynchronously from the
       * indexedDB instead of using the synchron local storage methods in a browser environment.
       */
-    val useLocalForage: js.UndefOr[Boolean] = js.native
+    val useLocalForage: js.UndefOr[Boolean] = js.undefined
   }
   object SqljsConnectionOptions {
     
     @scala.inline
-    def apply(`type`: sqljs): SqljsConnectionOptions = {
+    def apply(): SqljsConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("sqljs")
       __obj.asInstanceOf[SqljsConnectionOptions]
     }
     

@@ -2,13 +2,11 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Tag Settings
   */
-@js.native
 trait SchemaTagSetting extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaTagSetting extends StObject {
     * Keys and values must not contain commas. For example, id=2;color=red is a
     * valid value for this field.
     */
-  var additionalKeyValues: js.UndefOr[String] = js.native
+  var additionalKeyValues: js.UndefOr[String] = js.undefined
   
   /**
     * Whether static landing page URLs should be included in the tags. This
     * setting applies only to placements.
     */
-  var includeClickThroughUrls: js.UndefOr[Boolean] = js.native
+  var includeClickThroughUrls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether click-tracking string should be included in the tags.
     */
-  var includeClickTracking: js.UndefOr[Boolean] = js.native
+  var includeClickTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Option specifying how keywords are embedded in ad tags. This setting can
@@ -36,7 +34,7 @@ trait SchemaTagSetting extends StObject {
     * tags for this site. Publishers can then add keywords to those
     * placeholders.
     */
-  var keywordOption: js.UndefOr[String] = js.native
+  var keywordOption: js.UndefOr[String] = js.undefined
 }
 object SchemaTagSetting {
   

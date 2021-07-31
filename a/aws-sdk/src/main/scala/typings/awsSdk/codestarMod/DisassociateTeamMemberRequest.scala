@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateTeamMemberRequest extends StObject {
   
   /**
     * The ID of the AWS CodeStar project from which you want to remove a team member.
     */
-  var projectId: ProjectId = js.native
+  var projectId: ProjectId
   
   /**
     * The Amazon Resource Name (ARN) of the IAM user or group whom you want to remove from the project.
     */
-  var userArn: UserArn = js.native
+  var userArn: UserArn
 }
 object DisassociateTeamMemberRequest {
   

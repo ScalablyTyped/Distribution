@@ -3,7 +3,6 @@ package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,46 +11,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://github.com/openservicebrokerapi/servicebroker/blob/master/_spec.md
   * Though due to Google Specifics it has additional optional fields.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1alpha1Service extends StObject {
   
   /**
     * Specifies whether instances of the service can be bound to applications.
     * Required.
     */
-  var bindable: js.UndefOr[Boolean] = js.native
+  var bindable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the service provides an endpoint to get service bindings.
     */
-  var binding_retrievable: js.UndefOr[Boolean] = js.native
+  var binding_retrievable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Information to activate Dashboard SSO feature.
     */
-  var dashboard_client: js.UndefOr[SchemaGoogleCloudServicebrokerV1alpha1DashboardClient] = js.native
+  var dashboard_client: js.UndefOr[SchemaGoogleCloudServicebrokerV1alpha1DashboardClient] = js.undefined
   
   /**
     * Textual description of the service. Required.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * ID is a globally unique identifier used to uniquely identify the service.
     * ID is an opaque string.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the service provides an endpoint to get service instances.
     */
-  var instance_retrievable: js.UndefOr[Boolean] = js.native
+  var instance_retrievable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of metadata for a service offering. Metadata is an arbitrary JSON
     * object.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * User friendly service name. Name must match [a-z0-9]+ regexp. The name
@@ -59,23 +57,23 @@ trait SchemaGoogleCloudServicebrokerV1alpha1Service extends StObject {
     * (&quot;This must be globally unique within a platform marketplace&quot;).
     * Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the service supports upgrade/downgrade for some plans.
     */
-  var plan_updateable: js.UndefOr[Boolean] = js.native
+  var plan_updateable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of plans for this service. At least one plan is required.
     */
-  var plans: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Plan]] = js.native
+  var plans: js.UndefOr[js.Array[SchemaGoogleCloudServicebrokerV1alpha1Plan]] = js.undefined
   
   /**
     * Tags provide a flexible mechanism to expose a classification, attribute,
     * or base technology of a service.
     */
-  var tags: js.UndefOr[js.Array[String]] = js.native
+  var tags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1alpha1Service {
   

@@ -2,11 +2,11 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryMultiLabeableProps extends VictoryLabableProps {
+trait VictoryMultiLabeableProps
+  extends StObject
+     with VictoryLabableProps {
   
   /**
     * The labels prop defines labels that will appear above each bar in your chart.
@@ -16,7 +16,7 @@ trait VictoryMultiLabeableProps extends VictoryLabableProps {
     * like data={[{x: 1, y: 1, label: "first"}]}.
     * @example ["spring", "summer", "fall", "winter"], (datum) => datum.title
     */
-  var labels: js.UndefOr[js.Array[String] | (js.Function1[/* data */ js.Any, String])] = js.native
+  var labels: js.UndefOr[js.Array[String] | (js.Function1[/* data */ js.Any, String])] = js.undefined
 }
 object VictoryMultiLabeableProps {
   

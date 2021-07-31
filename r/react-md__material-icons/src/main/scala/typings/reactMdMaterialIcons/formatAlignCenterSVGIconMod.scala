@@ -6,12 +6,11 @@ import typings.reactMdIcon.svgiconMod.SVGIconProps
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatAlignCenterSVGIconMod {
   
   @JSImport("@react-md/material-icons/types/FormatAlignCenterSVGIcon", "FormatAlignCenterSVGIcon")
   @js.native
-  val FormatAlignCenterSVGIcon: ForwardRefExoticComponent[SVGIconProps with RefAttributes[SVGSVGElement]] = js.native
+  val FormatAlignCenterSVGIcon: ForwardRefExoticComponent[SVGIconProps & RefAttributes[SVGSVGElement]] = js.native
 }

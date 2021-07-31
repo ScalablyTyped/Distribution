@@ -5,7 +5,6 @@ import typings.std.EventTarget
 import typings.std.ProgressEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,14 +44,6 @@ trait FileTransfer extends StObject {
     target: String,
     successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileTransferError, Unit],
-    trustAllHosts: js.UndefOr[scala.Nothing],
-    options: FileDownloadOptions
-  ): Unit = js.native
-  def download(
-    source: String,
-    target: String,
-    successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
-    errorCallback: js.Function1[/* error */ FileTransferError, Unit],
     trustAllHosts: Boolean
   ): Unit = js.native
   def download(
@@ -61,6 +52,14 @@ trait FileTransfer extends StObject {
     successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
     errorCallback: js.Function1[/* error */ FileTransferError, Unit],
     trustAllHosts: Boolean,
+    options: FileDownloadOptions
+  ): Unit = js.native
+  def download(
+    source: String,
+    target: String,
+    successCallback: js.Function1[/* fileEntry */ FileEntry, Unit],
+    errorCallback: js.Function1[/* error */ FileTransferError, Unit],
+    trustAllHosts: Unit,
     options: FileDownloadOptions
   ): Unit = js.native
   
@@ -91,7 +90,7 @@ trait FileTransfer extends StObject {
     server: String,
     successCallback: js.Function1[/* result */ FileUploadResult, Unit],
     errorCallback: js.Function1[/* error */ FileTransferError, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     trustAllHosts: Boolean
   ): Unit = js.native
   def upload(

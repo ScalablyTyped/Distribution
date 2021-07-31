@@ -4,7 +4,6 @@ import typings.postmanCollection.anon.Encode
 import typings.postmanCollection.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -44,22 +43,17 @@ object QueryParam {
   @scala.inline
   def _postman_propertyIndexKey_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_postman_propertyIndexKey")(x.asInstanceOf[js.Any])
   
-  @JSImport("postman-collection", "QueryParam.parse")
-  @js.native
-  def parse(query: String): js.Array[QueryParamDefinition] = js.native
+  @scala.inline
+  def parse(query: String): js.Array[QueryParamDefinition] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[js.Array[QueryParamDefinition]]
   
-  @JSImport("postman-collection", "QueryParam.parseSingle")
-  @js.native
-  def parseSingle(param: String, idx: Double, all: js.Array[String]): QueryParamDefinition = js.native
+  @scala.inline
+  def parseSingle(param: String, idx: Double, all: js.Array[String]): QueryParamDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSingle")(param.asInstanceOf[js.Any], idx.asInstanceOf[js.Any], all.asInstanceOf[js.Any])).asInstanceOf[QueryParamDefinition]
   
-  @JSImport("postman-collection", "QueryParam.unparse")
-  @js.native
-  def unparse(params: js.Array[QueryParamDefinition]): String = js.native
-  @JSImport("postman-collection", "QueryParam.unparse")
-  @js.native
-  def unparse(params: js.Array[QueryParamDefinition], options: Encode): String = js.native
+  @scala.inline
+  def unparse(params: js.Array[QueryParamDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def unparse(params: js.Array[QueryParamDefinition], options: Encode): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("postman-collection", "QueryParam.unparseSingle")
-  @js.native
-  def unparseSingle(obj: QueryParamDefinition, encode: Boolean): String = js.native
+  @scala.inline
+  def unparseSingle(obj: QueryParamDefinition, encode: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseSingle")(obj.asInstanceOf[js.Any], encode.asInstanceOf[js.Any])).asInstanceOf[String]
 }

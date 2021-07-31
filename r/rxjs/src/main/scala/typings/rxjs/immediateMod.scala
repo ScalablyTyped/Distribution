@@ -2,26 +2,30 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object immediateMod {
   
   object Immediate {
     
-    @JSImport("rxjs/internal/util/Immediate", "Immediate.clearImmediate")
+    @JSImport("rxjs/internal/util/Immediate", "Immediate")
     @js.native
-    def clearImmediate(handle: Double): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rxjs/internal/util/Immediate", "Immediate.setImmediate")
-    @js.native
-    def setImmediate(cb: js.Function0[Unit]): Double = js.native
+    @scala.inline
+    def clearImmediate(handle: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearImmediate")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setImmediate(cb: js.Function0[Unit]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("setImmediate")(cb.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   object TestTools {
     
-    @JSImport("rxjs/internal/util/Immediate", "TestTools.pending")
+    @JSImport("rxjs/internal/util/Immediate", "TestTools")
     @js.native
-    def pending(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def pending(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("pending")().asInstanceOf[Double]
   }
 }

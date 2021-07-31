@@ -2,39 +2,37 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeUpdateSummary extends StObject {
   
   /**
     * An object that describes the status of the bulk send envelopes.
     */
-  var bulkEnvelopeStatus: js.UndefOr[BulkEnvelopeStatus] = js.native
+  var bulkEnvelopeStatus: js.UndefOr[BulkEnvelopeStatus] = js.undefined
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   var listCustomFieldUpdateResults: js.UndefOr[
     js.Array[
       /* This object represents a list custom field from which envelope creators and senders can select custom data. */ ListCustomField
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Provides lock information about an envelope that a user has locked.
     */
-  var lockInformation: js.UndefOr[/* This section provides information about envelope locks. */ EnvelopeLocks] = js.native
+  var lockInformation: js.UndefOr[/* This section provides information about envelope locks. */ EnvelopeLocks] = js.undefined
   
   /**
     * Shows the current purge state for the envelope. The possible values are:
@@ -48,7 +46,7 @@ trait EnvelopeUpdateSummary extends StObject {
     *
     *
     */
-  var purgeState: js.UndefOr[String] = js.native
+  var purgeState: js.UndefOr[String] = js.undefined
   
   /**
     * An array of `recipientUpdateResults` objects that contain details about the recipients.
@@ -57,15 +55,15 @@ trait EnvelopeUpdateSummary extends StObject {
     js.Array[
       /* The recipient details that are returned after you update the recipient. */ RecipientUpdateResponse
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var tabUpdateResults: js.UndefOr[EnvelopeRecipientTabs] = js.native
+  var tabUpdateResults: js.UndefOr[EnvelopeRecipientTabs] = js.undefined
   
   var textCustomFieldUpdateResults: js.UndefOr[
     js.Array[
       /* This object represents a free text custom field where envelope creators and senders can enter custom data. */ TextCustomField
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object EnvelopeUpdateSummary {
   

@@ -2,7 +2,6 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait TemplateType extends StObject
 object TemplateType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[TemplateType with Double] = js.native
+  def apply(value: Double): js.UndefOr[TemplateType & Double] = js.native
   
   @js.native
-  sealed trait GlobalWorkflow extends TemplateType
-  /* 1 */ val GlobalWorkflow: typings.vsoNodeApi.workItemTrackingInterfacesMod.TemplateType.GlobalWorkflow with Double = js.native
+  sealed trait GlobalWorkflow
+    extends StObject
+       with TemplateType
+  /* 1 */ val GlobalWorkflow: typings.vsoNodeApi.workItemTrackingInterfacesMod.TemplateType.GlobalWorkflow & Double = js.native
   
   @js.native
-  sealed trait WorkItemType extends TemplateType
-  /* 0 */ val WorkItemType: typings.vsoNodeApi.workItemTrackingInterfacesMod.TemplateType.WorkItemType with Double = js.native
+  sealed trait WorkItemType
+    extends StObject
+       with TemplateType
+  /* 0 */ val WorkItemType: typings.vsoNodeApi.workItemTrackingInterfacesMod.TemplateType.WorkItemType & Double = js.native
 }

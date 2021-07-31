@@ -3,21 +3,21 @@ package typings.vegaLite.transformMod
 import typings.vegaLite.channeldefMod.FieldName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AggregateTransform extends Transform {
+trait AggregateTransform
+  extends StObject
+     with Transform {
   
   /**
     * Array of objects that define fields to aggregate.
     */
-  var aggregate: js.Array[AggregatedFieldDef] = js.native
+  var aggregate: js.Array[AggregatedFieldDef]
   
   /**
     * The data fields to group by. If not specified, a single group containing all data objects will be used.
     */
-  var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+  var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
 }
 object AggregateTransform {
   

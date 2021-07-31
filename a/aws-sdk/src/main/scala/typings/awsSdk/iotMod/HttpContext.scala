@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpContext extends StObject {
   
   /**
     * The header keys and values in an HTTP authorization request.
     */
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
   /**
     * The query string keys and values in an HTTP authorization request.
     */
-  var queryString: js.UndefOr[HttpQueryString] = js.native
+  var queryString: js.UndefOr[HttpQueryString] = js.undefined
 }
 object HttpContext {
   

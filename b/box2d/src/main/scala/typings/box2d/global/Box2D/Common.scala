@@ -2,7 +2,6 @@ package typings.box2d.global.Box2D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Common {
@@ -15,9 +14,110 @@ object Common {
       * Empty constructor
       **/
     class b2Mat22 ()
-      extends typings.box2d.Box2D.Common.Math.b2Mat22
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Mat22 {
+      
+      /**
+        * Sets all internal matrix values to absolute values.
+        **/
+      /* CompleteClass */
+      override def Abs(): Unit = js.native
+      
+      /**
+        * Adds the two 2x2 matricies together and stores the result in this matrix.
+        * @param m 2x2 matrix to add.
+        **/
+      /* CompleteClass */
+      override def AddM(m: typings.box2d.Box2D.Common.Math.b2Mat22): Unit = js.native
+      
+      /**
+        * Creates a copy of the matrix.
+        * @return Copy of this 2x2 matrix.
+        **/
+      /* CompleteClass */
+      override def Copy(): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      
+      /**
+        * Gets the rotation matrix angle.
+        * R(theta) = [ cos(theta)  -sin(theta) ]
+        *            [ sin(theta)   cos(theta) ]
+        * @return The rotation matrix angle (theta).
+        **/
+      /* CompleteClass */
+      override def GetAngle(): Double = js.native
+      
+      /**
+        * Compute the inverse of this matrix, such that inv(A) A = identity.
+        * @param out Inverse matrix.
+        * @return Inverse matrix.
+        **/
+      /* CompleteClass */
+      override def GetInverse(out: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      
+      /**
+        * Sets the 2x2 rotation matrix from the given angle.
+        * R(theta) = [ cos(theta)  -sin(theta) ]
+        *            [ sin(theta)   cos(theta) ]
+        * @param angle Matrix angle (theta).
+        **/
+      /* CompleteClass */
+      override def Set(angle: Double): Unit = js.native
+      
+      /**
+        * Sets the 2x2 matrix to identity.
+        **/
+      /* CompleteClass */
+      override def SetIdentity(): Unit = js.native
+      
+      /**
+        * Sets the 2x2 matrix from a 2x2 matrix.
+        * @param m 2x2 matrix values.
+        **/
+      /* CompleteClass */
+      override def SetM(m: typings.box2d.Box2D.Common.Math.b2Mat22): Unit = js.native
+      
+      /**
+        * Sets the 2x2 matrix from 2 column vectors.
+        * @param c1 Column 1 vector.
+        * @param c2 Column 2 vector.
+        **/
+      /* CompleteClass */
+      override def SetVV(c1: typings.box2d.Box2D.Common.Math.b2Vec2, c2: typings.box2d.Box2D.Common.Math.b2Vec2): Unit = js.native
+      
+      /**
+        * Sets the 2x2 matrix to all zeros.
+        **/
+      /* CompleteClass */
+      override def SetZero(): Unit = js.native
+      
+      /**
+        * TODO, has something to do with the determinant
+        * @param out Solved vector
+        * @param bX
+        * @param bY
+        * @return Solved vector
+        **/
+      /* CompleteClass */
+      override def Solve(out: typings.box2d.Box2D.Common.Math.b2Vec2, bX: Double, bY: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * Column 1
+        **/
+      /* CompleteClass */
+      var col1: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * Column 2
+        **/
+      /* CompleteClass */
+      var col2: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+    }
     /* static members */
     object b2Mat22 {
+      
+      @JSGlobal("Box2D.Common.Math.b2Mat22")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a rotation 2x2 matrix from the given angle.
@@ -26,9 +126,8 @@ object Common {
         * @param angle Matrix angle (theta).
         * @return 2x2 matrix.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Mat22.FromAngle")
-      @js.native
-      def FromAngle(angle: Double): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def FromAngle(angle: Double): typings.box2d.Box2D.Common.Math.b2Mat22 = ^.asInstanceOf[js.Dynamic].applyDynamic("FromAngle")(angle.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
       
       /**
         * Creates a 2x2 matrix from two columns.
@@ -36,15 +135,15 @@ object Common {
         * @param c2 Column 2 vector.
         * @return 2x2 matrix.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Mat22.FromVV")
-      @js.native
-      def FromVV(c1: typings.box2d.Box2D.Common.Math.b2Vec2, c2: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def FromVV(c1: typings.box2d.Box2D.Common.Math.b2Vec2, c2: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Mat22 = (^.asInstanceOf[js.Dynamic].applyDynamic("FromVV")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
     }
     
     @JSGlobal("Box2D.Common.Math.b2Mat33")
     @js.native
     class b2Mat33 protected ()
-      extends typings.box2d.Box2D.Common.Math.b2Mat33 {
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Mat33 {
       /**
         * Constructor
         * @param c1 Column 1
@@ -56,12 +155,98 @@ object Common {
         c2: typings.box2d.Box2D.Common.Math.b2Vec3,
         c3: typings.box2d.Box2D.Common.Math.b2Vec3
       ) = this()
+      
+      /**
+        * Adds the two 3x3 matricies together and stores the result in this matrix.
+        * @param m 3x3 matrix to add.
+        **/
+      /* CompleteClass */
+      override def AddM(m: typings.box2d.Box2D.Common.Math.b2Mat33): Unit = js.native
+      
+      /**
+        * Creates a copy of the matrix.
+        * @return Copy of this 3x3 matrix.
+        **/
+      /* CompleteClass */
+      override def Copy(): typings.box2d.Box2D.Common.Math.b2Mat33 = js.native
+      
+      /**
+        * Sets the 3x3 matrix to identity.
+        **/
+      /* CompleteClass */
+      override def SetIdentity(): Unit = js.native
+      
+      /**
+        * Sets the 3x3 matrix from a 3x3 matrix.
+        * @param m 3x3 matrix values.
+        **/
+      /* CompleteClass */
+      override def SetM(m: typings.box2d.Box2D.Common.Math.b2Mat33): Unit = js.native
+      
+      /**
+        * Sets the 3x3 matrix from 3 column vectors.
+        * @param c1 Column 1 vector.
+        * @param c2 Column 2 vector.
+        * @param c3 Column 2 vector.
+        **/
+      /* CompleteClass */
+      override def SetVVV(
+        c1: typings.box2d.Box2D.Common.Math.b2Vec3,
+        c2: typings.box2d.Box2D.Common.Math.b2Vec3,
+        c3: typings.box2d.Box2D.Common.Math.b2Vec3
+      ): Unit = js.native
+      
+      /**
+        * Sets the 3x3 matrix to all zeros.
+        **/
+      /* CompleteClass */
+      override def SetZero(): Unit = js.native
+      
+      /**
+        * TODO, has something to do with the determinant
+        * @param out Solved vector
+        * @param bX
+        * @param bY
+        * @return Solved vector
+        **/
+      /* CompleteClass */
+      override def Solve22(out: typings.box2d.Box2D.Common.Math.b2Vec2, bX: Double, bY: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * TODO, has something to do with the determinant
+        * @param out Solved vector
+        * @param bX
+        * @param bY
+        * @param bZ
+        * @return Solved vector
+        **/
+      /* CompleteClass */
+      override def Solve33(out: typings.box2d.Box2D.Common.Math.b2Vec3, bX: Double, bY: Double, bZ: Double): typings.box2d.Box2D.Common.Math.b2Vec3 = js.native
+      
+      /**
+        * Column 1
+        **/
+      /* CompleteClass */
+      var col1: typings.box2d.Box2D.Common.Math.b2Vec3 = js.native
+      
+      /**
+        * Column 2
+        **/
+      /* CompleteClass */
+      var col2: typings.box2d.Box2D.Common.Math.b2Vec3 = js.native
+      
+      /**
+        * Column 3
+        **/
+      /* CompleteClass */
+      var col3: typings.box2d.Box2D.Common.Math.b2Vec3 = js.native
     }
     
     @JSGlobal("Box2D.Common.Math.b2Math")
     @js.native
     class b2Math ()
-      extends typings.box2d.Box2D.Common.Math.b2Math
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Math
     /* static members */
     object b2Math {
       
@@ -74,27 +259,24 @@ object Common {
         * @param a Number to ABS.
         * @return Absolute value of a.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Abs")
-      @js.native
-      def Abs(a: Double): Double = js.native
+      @scala.inline
+      def Abs(a: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Abs")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Creates an ABS matrix.
         * @param A Matrix to ABS all values.
         * @return Matrix with all positive values.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.AbsM")
-      @js.native
-      def AbsM(A: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def AbsM(A: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsM")(A.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
       
       /**
         * Creates an ABS vector.
         * @param a Vector to ABS all values.
         * @return Vector with all positive values.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.AbsV")
-      @js.native
-      def AbsV(a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def AbsV(a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = ^.asInstanceOf[js.Dynamic].applyDynamic("AbsV")(a.asInstanceOf[js.Any]).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -102,9 +284,8 @@ object Common {
         * @param B
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.AddMM")
-      @js.native
-      def AddMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def AddMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = (^.asInstanceOf[js.Dynamic].applyDynamic("AddMM")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
       
       /**
         * Adds two vectors.
@@ -112,9 +293,8 @@ object Common {
         * @param b Second vector.
         * @return a + b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.AddVV")
-      @js.native
-      def AddVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def AddVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("AddVV")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Clamp a number to the range of low to high.
@@ -123,9 +303,8 @@ object Common {
         * @param high High range.
         * @return Number a clamped to range of low to high.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Clamp")
-      @js.native
-      def Clamp(a: Double, low: Double, high: Double): Double = js.native
+      @scala.inline
+      def Clamp(a: Double, low: Double, high: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Clamp")(a.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Clamps a vector to the range of low to high.
@@ -134,13 +313,12 @@ object Common {
         * @param high High range.
         * @return Vector a clamped to range of low to high.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.ClampV")
-      @js.native
+      @scala.inline
       def ClampV(
         a: typings.box2d.Box2D.Common.Math.b2Vec2,
         low: typings.box2d.Box2D.Common.Math.b2Vec2,
         high: typings.box2d.Box2D.Common.Math.b2Vec2
-      ): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      ): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("ClampV")(a.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Cross product of s and vector 2.
@@ -148,9 +326,8 @@ object Common {
         * @param a Vector 2 to use in cross product.
         * @return Cross product of s and a.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.CrossFV")
-      @js.native
-      def CrossFV(s: Double, a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def CrossFV(s: Double, a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CrossFV")(s.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Cross product of vector 2 and s.
@@ -158,9 +335,8 @@ object Common {
         * @param s s value.
         * @return Cross product of a and s.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.CrossVF")
-      @js.native
-      def CrossVF(a: typings.box2d.Box2D.Common.Math.b2Vec2, s: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def CrossVF(a: typings.box2d.Box2D.Common.Math.b2Vec2, s: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("CrossVF")(a.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Cross product of two vector 2s.
@@ -168,9 +344,8 @@ object Common {
         * @param b Vector 2 to use in cross product.
         * @return Cross product of a and b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.CrossVV")
-      @js.native
-      def CrossVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = js.native
+      @scala.inline
+      def CrossVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("CrossVV")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Calculates the distance between two vectors.
@@ -178,9 +353,8 @@ object Common {
         * @param b Second vector.
         * @return Distance between a and b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Distance")
-      @js.native
-      def Distance(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = js.native
+      @scala.inline
+      def Distance(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Distance")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Calculates the squared distance between two vectors.
@@ -188,9 +362,8 @@ object Common {
         * @param b Second vector.
         * @return dist^2 between a and b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.DistanceSquared")
-      @js.native
-      def DistanceSquared(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = js.native
+      @scala.inline
+      def DistanceSquared(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DistanceSquared")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Dot product of two vector 2s.
@@ -198,27 +371,24 @@ object Common {
         * @param b Vector 2 to use in dot product.
         * @return Dot product of a and b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Dot")
-      @js.native
-      def Dot(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = js.native
+      @scala.inline
+      def Dot(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Dot")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Check if a number is a power of 2.
         * @param x Number to check if it is a power of 2.
         * @return True if x is a power of 2, otherwise false.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.IsPowerOfTwo")
-      @js.native
-      def IsPowerOfTwo(x: Double): Boolean = js.native
+      @scala.inline
+      def IsPowerOfTwo(x: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPowerOfTwo")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Determines if a number is valid.  A number is valid if it is finite.
         * @param x Number to check for validity.
         * @return True if x is valid, otherwise false.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.IsValid")
-      @js.native
-      def IsValid(x: Double): Boolean = js.native
+      @scala.inline
+      def IsValid(x: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsValid")(x.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
       /**
         * Determines the max number.
@@ -226,9 +396,8 @@ object Common {
         * @param b Second number.
         * @return a or b depending on which is the maximum.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Max")
-      @js.native
-      def Max(a: Double, b: Double): Double = js.native
+      @scala.inline
+      def Max(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Max")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Determines the max vector.
@@ -236,9 +405,8 @@ object Common {
         * @param b Second vector.
         * @return a or b depending on which is the maximum.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MaxV")
-      @js.native
-      def MaxV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MaxV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MaxV")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Determines the minimum number.
@@ -246,9 +414,8 @@ object Common {
         * @param b Second number.
         * @return a or b depending on which is the minimum.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Min")
-      @js.native
-      def Min(a: Double, b: Double): Double = js.native
+      @scala.inline
+      def Min(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("Min")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Determines the minimum vector.
@@ -256,9 +423,8 @@ object Common {
         * @param b Second vector.
         * @return a or b depending on which is the minimum.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MinV")
-      @js.native
-      def MinV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MinV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MinV")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -266,9 +432,8 @@ object Common {
         * @param a
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulFV")
-      @js.native
-      def MulFV(s: Double, a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MulFV(s: Double, a: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulFV")(s.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -276,9 +441,8 @@ object Common {
         * @param B
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulMM")
-      @js.native
-      def MulMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def MulMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulMM")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
       
       /**
         * Multiply matrix and vector.
@@ -286,9 +450,8 @@ object Common {
         * @param v Vector.
         * @return Result.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulMV")
-      @js.native
-      def MulMV(A: typings.box2d.Box2D.Common.Math.b2Mat22, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MulMV(A: typings.box2d.Box2D.Common.Math.b2Mat22, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulMV")(A.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -296,9 +459,8 @@ object Common {
         * @param B
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulTMM")
-      @js.native
-      def MulTMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      @scala.inline
+      def MulTMM(A: typings.box2d.Box2D.Common.Math.b2Mat22, B: typings.box2d.Box2D.Common.Math.b2Mat22): typings.box2d.Box2D.Common.Math.b2Mat22 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulTMM")(A.asInstanceOf[js.Any], B.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Mat22]
       
       /**
         *
@@ -306,9 +468,8 @@ object Common {
         * @param v
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulTMV")
-      @js.native
-      def MulTMV(A: typings.box2d.Box2D.Common.Math.b2Mat22, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MulTMV(A: typings.box2d.Box2D.Common.Math.b2Mat22, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulTMV")(A.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -316,9 +477,8 @@ object Common {
         * @param v
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulX")
-      @js.native
-      def MulX(T: typings.box2d.Box2D.Common.Math.b2Transform, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MulX(T: typings.box2d.Box2D.Common.Math.b2Transform, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulX")(T.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         *
@@ -326,26 +486,23 @@ object Common {
         * @param v
         * @return
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.MulXT")
-      @js.native
-      def MulXT(T: typings.box2d.Box2D.Common.Math.b2Transform, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def MulXT(T: typings.box2d.Box2D.Common.Math.b2Transform, v: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("MulXT")(T.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Calculates the next power of 2 after the given number.
         * @param x Number to start search for the next power of 2.
         * @return The next number that is a power of 2.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.NextPowerOfTwo")
-      @js.native
-      def NextPowerOfTwo(x: Double): Double = js.native
+      @scala.inline
+      def NextPowerOfTwo(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("NextPowerOfTwo")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
       
       /**
         * Generates a random number.
         * @param return Random number.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Random")
-      @js.native
-      def Random(): Double = js.native
+      @scala.inline
+      def Random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("Random")().asInstanceOf[Double]
       
       /**
         * Returns a random number between lo and hi.
@@ -353,9 +510,8 @@ object Common {
         * @param hi Highest random number.
         * @return Number between lo and hi.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.RandomRange")
-      @js.native
-      def RandomRange(lo: Double, hi: Double): Double = js.native
+      @scala.inline
+      def RandomRange(lo: Double, hi: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("RandomRange")(lo.asInstanceOf[js.Any], hi.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Subtracts two vectors.
@@ -363,18 +519,16 @@ object Common {
         * @param b Second vector.
         * @return a - b.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.SubtractVV")
-      @js.native
-      def SubtractVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def SubtractVV(a: typings.box2d.Box2D.Common.Math.b2Vec2, b: typings.box2d.Box2D.Common.Math.b2Vec2): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("SubtractVV")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
       
       /**
         * Swaps a and b objects.
         * @param a a -> b.
         * @param b b -> a.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Math.Swap")
-      @js.native
-      def Swap(a: js.Any, b: js.Any): Unit = js.native
+      @scala.inline
+      def Swap(a: js.Any, b: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Swap")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Global instance of a 2x2 identity matrix.  Use as read-only.
@@ -407,18 +561,125 @@ object Common {
     @JSGlobal("Box2D.Common.Math.b2Sweep")
     @js.native
     class b2Sweep ()
-      extends typings.box2d.Box2D.Common.Math.b2Sweep
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Sweep {
+      
+      /**
+        * Advance the sweep forward, yielding a new initial state.
+        * @t The new initial time.
+        **/
+      /* CompleteClass */
+      override def Advance(t: Double): Unit = js.native
+      
+      /**
+        * Creates a copy of the sweep.
+        **/
+      /* CompleteClass */
+      override def Copy(): typings.box2d.Box2D.Common.Math.b2Sweep = js.native
+      
+      /**
+        * Get the interpolated transform at a specific time.
+        * @param xf Transform at specified time, this is an out parameter.
+        * @param alpha Is a factor in [0,1], where 0 indicates t0.
+        **/
+      /* CompleteClass */
+      override def GetTransform(xf: typings.box2d.Box2D.Common.Math.b2Transform, alpha: Double): Unit = js.native
+      
+      /**
+        * Sets the sweep from a sweep.
+        * @param other Sweep values to copy from.
+        **/
+      /* CompleteClass */
+      override def Set(other: typings.box2d.Box2D.Common.Math.b2Sweep): Unit = js.native
+      
+      /**
+        * World angle.
+        **/
+      /* CompleteClass */
+      var a: Double = js.native
+      
+      /**
+        * World angle.
+        **/
+      /* CompleteClass */
+      var a0: Double = js.native
+      
+      /**
+        * Center world position.
+        **/
+      /* CompleteClass */
+      var c: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * Center world position.
+        **/
+      /* CompleteClass */
+      var c0: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * Local center of mass position.
+        **/
+      /* CompleteClass */
+      var localCenter: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      
+      /**
+        * Time interval = [t0,1], where t0 is in [0,1].
+        **/
+      /* CompleteClass */
+      var t0: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+    }
     
     @JSGlobal("Box2D.Common.Math.b2Transform")
     @js.native
     class b2Transform protected ()
-      extends typings.box2d.Box2D.Common.Math.b2Transform {
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Transform {
       /**
         * The default constructor does nothing (for performance).
         * @param pos Position
         * @param r Rotation
         **/
       def this(pos: typings.box2d.Box2D.Common.Math.b2Vec2, r: typings.box2d.Box2D.Common.Math.b2Mat22) = this()
+      
+      /**
+        * Calculate the angle that the rotation matrix represents.
+        * @return Rotation matrix angle.
+        **/
+      /* CompleteClass */
+      override def GetAngle(): Double = js.native
+      
+      /**
+        * Initialize using a position vector and rotation matrix.
+        * @param pos Position
+        * @param r Rotation
+        **/
+      /* CompleteClass */
+      override def Initialize(pos: typings.box2d.Box2D.Common.Math.b2Vec2, r: typings.box2d.Box2D.Common.Math.b2Mat22): Unit = js.native
+      
+      /**
+        * Transform rotation.
+        **/
+      /* CompleteClass */
+      var R: typings.box2d.Box2D.Common.Math.b2Mat22 = js.native
+      
+      /**
+        * Sets the transfrom from a transfrom.
+        * @param x Transform to copy values from.
+        **/
+      /* CompleteClass */
+      override def Set(x: typings.box2d.Box2D.Common.Math.b2Transform): Unit = js.native
+      
+      /**
+        * Set this to the identity transform.
+        **/
+      /* CompleteClass */
+      override def SetIdentity(): Unit = js.native
+      
+      /**
+        * Transform position.
+        **/
+      /* CompleteClass */
+      var position: typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
     }
     
     @JSGlobal("Box2D.Common.Math.b2Vec2")
@@ -429,22 +690,26 @@ object Common {
       * @param y y value, default = 0.
       **/
     class b2Vec2 ()
-      extends typings.box2d.Box2D.Common.Math.b2Vec2 {
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Vec2 {
       def this(x: Double) = this()
-      def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
       def this(x: Double, y: Double) = this()
+      def this(x: Unit, y: Double) = this()
     }
     /* static members */
     object b2Vec2 {
+      
+      @JSGlobal("Box2D.Common.Math.b2Vec2")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Creates a new vector 2 from the given values.
         * @param x x value.
         * @param y y value.
         **/
-      @JSGlobal("Box2D.Common.Math.b2Vec2.Make")
-      @js.native
-      def Make(x: Double, y: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = js.native
+      @scala.inline
+      def Make(x: Double, y: Double): typings.box2d.Box2D.Common.Math.b2Vec2 = (^.asInstanceOf[js.Dynamic].applyDynamic("Make")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.box2d.Box2D.Common.Math.b2Vec2]
     }
     
     @JSGlobal("Box2D.Common.Math.b2Vec3")
@@ -456,21 +721,23 @@ object Common {
       * @param z z value, default = 0.
       **/
     class b2Vec3 ()
-      extends typings.box2d.Box2D.Common.Math.b2Vec3 {
+      extends StObject
+         with typings.box2d.Box2D.Common.Math.b2Vec3 {
       def this(x: Double) = this()
-      def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
       def this(x: Double, y: Double) = this()
-      def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-      def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-      def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+      def this(x: Unit, y: Double) = this()
       def this(x: Double, y: Double, z: Double) = this()
+      def this(x: Double, y: Unit, z: Double) = this()
+      def this(x: Unit, y: Double, z: Double) = this()
+      def this(x: Unit, y: Unit, z: Double) = this()
     }
   }
   
   @JSGlobal("Box2D.Common.b2Color")
   @js.native
   class b2Color protected ()
-    extends typings.box2d.Box2D.Common.b2Color {
+    extends StObject
+       with typings.box2d.Box2D.Common.b2Color {
     /**
       * Constructor
       * @param rr Red value
@@ -478,12 +745,46 @@ object Common {
       * @param bb Blue value
       **/
     def this(rr: Double, gg: Double, bb: Double) = this()
+    
+    /**
+      * Sets the Color to new RGB values.
+      * @param rr Red value
+      * @param gg Green value
+      * @param bb Blue value
+      **/
+    /* CompleteClass */
+    override def Set(rr: Double, gg: Double, bb: Double): Unit = js.native
+    
+    /**
+      * Blue
+      **/
+    /* CompleteClass */
+    var b: Double = js.native
+    
+    /**
+      * RGB color as hex.
+      **/
+    /* CompleteClass */
+    var color: Double = js.native
+    
+    /**
+      * Green
+      **/
+    /* CompleteClass */
+    var g: Double = js.native
+    
+    /**
+      * Red
+      **/
+    /* CompleteClass */
+    var r: Double = js.native
   }
   
   @JSGlobal("Box2D.Common.b2Settings")
   @js.native
   class b2Settings ()
-    extends typings.box2d.Box2D.Common.b2Settings
+    extends StObject
+       with typings.box2d.Box2D.Common.b2Settings
   /* static members */
   object b2Settings {
     
@@ -513,9 +814,8 @@ object Common {
       * b2Assert is used internally to handle assertions. By default, calls are commented out to save performance, so they serve more as documentation than anything else.
       * @param a Asset an expression is true.
       **/
-    @JSGlobal("Box2D.Common.b2Settings.b2Assert")
-    @js.native
-    def b2Assert(a: Boolean): Unit = js.native
+    @scala.inline
+    def b2Assert(a: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("b2Assert")(a.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Friction mixing law. Feel free to customize this.
@@ -525,9 +825,8 @@ object Common {
       * @param friction2 Friction 2 to mix.
       * @return The two frictions mixed as one value.
       **/
-    @JSGlobal("Box2D.Common.b2Settings.b2MixFriction")
-    @js.native
-    def b2MixFriction(friction1: Double, friction2: Double): Double = js.native
+    @scala.inline
+    def b2MixFriction(friction1: Double, friction2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("b2MixFriction")(friction1.asInstanceOf[js.Any], friction2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Restitution mixing law. Feel free to customize this.  Restitution is used to make objects bounce.
@@ -537,9 +836,8 @@ object Common {
       * @param restitution2 Restitution 2 to mix.
       * @return The two restitutions mixed as one value.
       **/
-    @JSGlobal("Box2D.Common.b2Settings.b2MixRestitution")
-    @js.native
-    def b2MixRestitution(restitution1: Double, restitution2: Double): Double = js.native
+    @scala.inline
+    def b2MixRestitution(restitution1: Double, restitution2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("b2MixRestitution")(restitution1.asInstanceOf[js.Any], restitution2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * This is used to fatten AABBs in the dynamic tree. This allows proxies to move by a small amount without triggering a tree adjustment. This is in meters.

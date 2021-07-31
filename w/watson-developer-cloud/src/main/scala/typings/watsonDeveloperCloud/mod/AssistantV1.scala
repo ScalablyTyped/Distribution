@@ -3,7 +3,6 @@ package typings.watsonDeveloperCloud.mod
 import typings.ibmCloudSdkCore.mod.BaseService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,8 +32,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createCounterexample(params: CreateCounterexampleParams): js.Promise[_] | Unit = js.native
-  def createCounterexample(params: CreateCounterexampleParams, callback: Callback[Counterexample]): js.Promise[_] | Unit = js.native
+  def createCounterexample(params: CreateCounterexampleParams): js.Promise[js.Any] | Unit = js.native
+  def createCounterexample(params: CreateCounterexampleParams, callback: Callback[Counterexample]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * dialogNodes
@@ -84,8 +83,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createDialogNode(params: CreateDialogNodeParams): js.Promise[_] | Unit = js.native
-  def createDialogNode(params: CreateDialogNodeParams, callback: Callback[DialogNode]): js.Promise[_] | Unit = js.native
+  def createDialogNode(params: CreateDialogNodeParams): js.Promise[js.Any] | Unit = js.native
+  def createDialogNode(params: CreateDialogNodeParams, callback: Callback[DialogNode]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * entities
@@ -114,8 +113,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createEntity(params: CreateEntityParams): js.Promise[_] | Unit = js.native
-  def createEntity(params: CreateEntityParams, callback: Callback[Entity]): js.Promise[_] | Unit = js.native
+  def createEntity(params: CreateEntityParams): js.Promise[js.Any] | Unit = js.native
+  def createEntity(params: CreateEntityParams, callback: Callback[Entity]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * examples
@@ -140,8 +139,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createExample(params: CreateExampleParams): js.Promise[_] | Unit = js.native
-  def createExample(params: CreateExampleParams, callback: Callback[Example]): js.Promise[_] | Unit = js.native
+  def createExample(params: CreateExampleParams): js.Promise[js.Any] | Unit = js.native
+  def createExample(params: CreateExampleParams, callback: Callback[Example]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * intents
@@ -166,8 +165,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createIntent(params: CreateIntentParams): js.Promise[_] | Unit = js.native
-  def createIntent(params: CreateIntentParams, callback: Callback[Intent]): js.Promise[_] | Unit = js.native
+  def createIntent(params: CreateIntentParams): js.Promise[js.Any] | Unit = js.native
+  def createIntent(params: CreateIntentParams, callback: Callback[Intent]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * synonyms
@@ -191,8 +190,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createSynonym(params: CreateSynonymParams): js.Promise[_] | Unit = js.native
-  def createSynonym(params: CreateSynonymParams, callback: Callback[Synonym]): js.Promise[_] | Unit = js.native
+  def createSynonym(params: CreateSynonymParams): js.Promise[js.Any] | Unit = js.native
+  def createSynonym(params: CreateSynonymParams, callback: Callback[Synonym]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * values
@@ -228,8 +227,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createValue(params: CreateValueParams): js.Promise[_] | Unit = js.native
-  def createValue(params: CreateValueParams, callback: Callback[Value]): js.Promise[_] | Unit = js.native
+  def createValue(params: CreateValueParams): js.Promise[js.Any] | Unit = js.native
+  def createValue(params: CreateValueParams, callback: Callback[Value]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * workspaces
@@ -262,10 +261,10 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def createWorkspace(): js.Promise[_] | Unit = js.native
-  def createWorkspace(params: js.UndefOr[scala.Nothing], callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
-  def createWorkspace(params: CreateWorkspaceParams): js.Promise[_] | Unit = js.native
-  def createWorkspace(params: CreateWorkspaceParams, callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
+  def createWorkspace(): js.Promise[js.Any] | Unit = js.native
+  def createWorkspace(params: Unit, callback: Callback[Workspace]): js.Promise[js.Any] | Unit = js.native
+  def createWorkspace(params: CreateWorkspaceParams): js.Promise[js.Any] | Unit = js.native
+  def createWorkspace(params: CreateWorkspaceParams, callback: Callback[Workspace]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete counterexample.
@@ -281,8 +280,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteCounterexample(params: DeleteCounterexampleParams): js.Promise[_] | Unit = js.native
-  def deleteCounterexample(params: DeleteCounterexampleParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteCounterexample(params: DeleteCounterexampleParams): js.Promise[js.Any] | Unit = js.native
+  def deleteCounterexample(params: DeleteCounterexampleParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete dialog node.
@@ -298,8 +297,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteDialogNode(params: DeleteDialogNodeParams): js.Promise[_] | Unit = js.native
-  def deleteDialogNode(params: DeleteDialogNodeParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteDialogNode(params: DeleteDialogNodeParams): js.Promise[js.Any] | Unit = js.native
+  def deleteDialogNode(params: DeleteDialogNodeParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete entity.
@@ -315,8 +314,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteEntity(params: DeleteEntityParams): js.Promise[_] | Unit = js.native
-  def deleteEntity(params: DeleteEntityParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteEntity(params: DeleteEntityParams): js.Promise[js.Any] | Unit = js.native
+  def deleteEntity(params: DeleteEntityParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete user input example.
@@ -333,8 +332,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteExample(params: DeleteExampleParams): js.Promise[_] | Unit = js.native
-  def deleteExample(params: DeleteExampleParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteExample(params: DeleteExampleParams): js.Promise[js.Any] | Unit = js.native
+  def deleteExample(params: DeleteExampleParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete intent.
@@ -350,8 +349,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteIntent(params: DeleteIntentParams): js.Promise[_] | Unit = js.native
-  def deleteIntent(params: DeleteIntentParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteIntent(params: DeleteIntentParams): js.Promise[js.Any] | Unit = js.native
+  def deleteIntent(params: DeleteIntentParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete entity value synonym.
@@ -369,8 +368,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteSynonym(params: DeleteSynonymParams): js.Promise[_] | Unit = js.native
-  def deleteSynonym(params: DeleteSynonymParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteSynonym(params: DeleteSynonymParams): js.Promise[js.Any] | Unit = js.native
+  def deleteSynonym(params: DeleteSynonymParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * userData
@@ -391,8 +390,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteUserData(params: DeleteUserDataParams): js.Promise[_] | Unit = js.native
-  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams): js.Promise[js.Any] | Unit = js.native
+  def deleteUserData(params: DeleteUserDataParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete entity value.
@@ -409,8 +408,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteValue(params: DeleteValueParams): js.Promise[_] | Unit = js.native
-  def deleteValue(params: DeleteValueParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteValue(params: DeleteValueParams): js.Promise[js.Any] | Unit = js.native
+  def deleteValue(params: DeleteValueParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Delete workspace.
@@ -425,8 +424,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def deleteWorkspace(params: DeleteWorkspaceParams): js.Promise[_] | Unit = js.native
-  def deleteWorkspace(params: DeleteWorkspaceParams, callback: Callback[Empty]): js.Promise[_] | Unit = js.native
+  def deleteWorkspace(params: DeleteWorkspaceParams): js.Promise[js.Any] | Unit = js.native
+  def deleteWorkspace(params: DeleteWorkspaceParams, callback: Callback[Empty]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get counterexample.
@@ -444,8 +443,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getCounterexample(params: GetCounterexampleParams): js.Promise[_] | Unit = js.native
-  def getCounterexample(params: GetCounterexampleParams, callback: Callback[Counterexample]): js.Promise[_] | Unit = js.native
+  def getCounterexample(params: GetCounterexampleParams): js.Promise[js.Any] | Unit = js.native
+  def getCounterexample(params: GetCounterexampleParams, callback: Callback[Counterexample]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get dialog node.
@@ -463,8 +462,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getDialogNode(params: GetDialogNodeParams): js.Promise[_] | Unit = js.native
-  def getDialogNode(params: GetDialogNodeParams, callback: Callback[DialogNode]): js.Promise[_] | Unit = js.native
+  def getDialogNode(params: GetDialogNodeParams): js.Promise[js.Any] | Unit = js.native
+  def getDialogNode(params: GetDialogNodeParams, callback: Callback[DialogNode]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get entity.
@@ -486,8 +485,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getEntity(params: GetEntityParams): js.Promise[_] | Unit = js.native
-  def getEntity(params: GetEntityParams, callback: Callback[Entity]): js.Promise[_] | Unit = js.native
+  def getEntity(params: GetEntityParams): js.Promise[js.Any] | Unit = js.native
+  def getEntity(params: GetEntityParams, callback: Callback[Entity]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get user input example.
@@ -506,8 +505,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getExample(params: GetExampleParams): js.Promise[_] | Unit = js.native
-  def getExample(params: GetExampleParams, callback: Callback[Example]): js.Promise[_] | Unit = js.native
+  def getExample(params: GetExampleParams): js.Promise[js.Any] | Unit = js.native
+  def getExample(params: GetExampleParams, callback: Callback[Example]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get intent.
@@ -529,8 +528,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getIntent(params: GetIntentParams): js.Promise[_] | Unit = js.native
-  def getIntent(params: GetIntentParams, callback: Callback[Intent]): js.Promise[_] | Unit = js.native
+  def getIntent(params: GetIntentParams): js.Promise[js.Any] | Unit = js.native
+  def getIntent(params: GetIntentParams, callback: Callback[Intent]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get entity value synonym.
@@ -550,8 +549,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getSynonym(params: GetSynonymParams): js.Promise[_] | Unit = js.native
-  def getSynonym(params: GetSynonymParams, callback: Callback[Synonym]): js.Promise[_] | Unit = js.native
+  def getSynonym(params: GetSynonymParams): js.Promise[js.Any] | Unit = js.native
+  def getSynonym(params: GetSynonymParams, callback: Callback[Synonym]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get entity value.
@@ -573,8 +572,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getValue(params: GetValueParams): js.Promise[_] | Unit = js.native
-  def getValue(params: GetValueParams, callback: Callback[Value]): js.Promise[_] | Unit = js.native
+  def getValue(params: GetValueParams): js.Promise[js.Any] | Unit = js.native
+  def getValue(params: GetValueParams, callback: Callback[Value]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Get information about a workspace.
@@ -598,8 +597,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def getWorkspace(params: GetWorkspaceParams): js.Promise[_] | Unit = js.native
-  def getWorkspace(params: GetWorkspaceParams, callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
+  def getWorkspace(params: GetWorkspaceParams): js.Promise[js.Any] | Unit = js.native
+  def getWorkspace(params: GetWorkspaceParams, callback: Callback[Workspace]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * logs
@@ -625,8 +624,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listAllLogs(params: ListAllLogsParams): js.Promise[_] | Unit = js.native
-  def listAllLogs(params: ListAllLogsParams, callback: Callback[LogCollection]): js.Promise[_] | Unit = js.native
+  def listAllLogs(params: ListAllLogsParams): js.Promise[js.Any] | Unit = js.native
+  def listAllLogs(params: ListAllLogsParams, callback: Callback[LogCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List counterexamples.
@@ -648,8 +647,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listCounterexamples(params: ListCounterexamplesParams): js.Promise[_] | Unit = js.native
-  def listCounterexamples(params: ListCounterexamplesParams, callback: Callback[CounterexampleCollection]): js.Promise[_] | Unit = js.native
+  def listCounterexamples(params: ListCounterexamplesParams): js.Promise[js.Any] | Unit = js.native
+  def listCounterexamples(params: ListCounterexamplesParams, callback: Callback[CounterexampleCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List dialog nodes.
@@ -671,8 +670,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listDialogNodes(params: ListDialogNodesParams): js.Promise[_] | Unit = js.native
-  def listDialogNodes(params: ListDialogNodesParams, callback: Callback[DialogNodeCollection]): js.Promise[_] | Unit = js.native
+  def listDialogNodes(params: ListDialogNodesParams): js.Promise[js.Any] | Unit = js.native
+  def listDialogNodes(params: ListDialogNodesParams, callback: Callback[DialogNodeCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List entities.
@@ -698,8 +697,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listEntities(params: ListEntitiesParams): js.Promise[_] | Unit = js.native
-  def listEntities(params: ListEntitiesParams, callback: Callback[EntityCollection]): js.Promise[_] | Unit = js.native
+  def listEntities(params: ListEntitiesParams): js.Promise[js.Any] | Unit = js.native
+  def listEntities(params: ListEntitiesParams, callback: Callback[EntityCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List user input examples.
@@ -722,8 +721,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listExamples(params: ListExamplesParams): js.Promise[_] | Unit = js.native
-  def listExamples(params: ListExamplesParams, callback: Callback[ExampleCollection]): js.Promise[_] | Unit = js.native
+  def listExamples(params: ListExamplesParams): js.Promise[js.Any] | Unit = js.native
+  def listExamples(params: ListExamplesParams, callback: Callback[ExampleCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List intents.
@@ -749,8 +748,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listIntents(params: ListIntentsParams): js.Promise[_] | Unit = js.native
-  def listIntents(params: ListIntentsParams, callback: Callback[IntentCollection]): js.Promise[_] | Unit = js.native
+  def listIntents(params: ListIntentsParams): js.Promise[js.Any] | Unit = js.native
+  def listIntents(params: ListIntentsParams, callback: Callback[IntentCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List log events in a workspace.
@@ -773,8 +772,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listLogs(params: ListLogsParams): js.Promise[_] | Unit = js.native
-  def listLogs(params: ListLogsParams, callback: Callback[LogCollection]): js.Promise[_] | Unit = js.native
+  def listLogs(params: ListLogsParams): js.Promise[js.Any] | Unit = js.native
+  def listLogs(params: ListLogsParams, callback: Callback[LogCollection]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * mentions
@@ -799,8 +798,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listMentions(params: ListMentionsParams): js.Promise[_] | Unit = js.native
-  def listMentions(params: ListMentionsParams, callback: Callback[EntityMentionCollection]): js.Promise[_] | Unit = js.native
+  def listMentions(params: ListMentionsParams): js.Promise[js.Any] | Unit = js.native
+  def listMentions(params: ListMentionsParams, callback: Callback[EntityMentionCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List entity value synonyms.
@@ -824,8 +823,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listSynonyms(params: ListSynonymsParams): js.Promise[_] | Unit = js.native
-  def listSynonyms(params: ListSynonymsParams, callback: Callback[SynonymCollection]): js.Promise[_] | Unit = js.native
+  def listSynonyms(params: ListSynonymsParams): js.Promise[js.Any] | Unit = js.native
+  def listSynonyms(params: ListSynonymsParams, callback: Callback[SynonymCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List entity values.
@@ -851,8 +850,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listValues(params: ListValuesParams): js.Promise[_] | Unit = js.native
-  def listValues(params: ListValuesParams, callback: Callback[ValueCollection]): js.Promise[_] | Unit = js.native
+  def listValues(params: ListValuesParams): js.Promise[js.Any] | Unit = js.native
+  def listValues(params: ListValuesParams, callback: Callback[ValueCollection]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * List workspaces.
@@ -873,10 +872,10 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def listWorkspaces(): js.Promise[_] | Unit = js.native
-  def listWorkspaces(params: js.UndefOr[scala.Nothing], callback: Callback[WorkspaceCollection]): js.Promise[_] | Unit = js.native
-  def listWorkspaces(params: ListWorkspacesParams): js.Promise[_] | Unit = js.native
-  def listWorkspaces(params: ListWorkspacesParams, callback: Callback[WorkspaceCollection]): js.Promise[_] | Unit = js.native
+  def listWorkspaces(): js.Promise[js.Any] | Unit = js.native
+  def listWorkspaces(params: Unit, callback: Callback[WorkspaceCollection]): js.Promise[js.Any] | Unit = js.native
+  def listWorkspaces(params: ListWorkspacesParams): js.Promise[js.Any] | Unit = js.native
+  def listWorkspaces(params: ListWorkspacesParams, callback: Callback[WorkspaceCollection]): js.Promise[js.Any] | Unit = js.native
   
   /*************************
     * message
@@ -907,8 +906,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def message(params: MessageParams): js.Promise[_] | Unit = js.native
-  def message(params: MessageParams, callback: Callback[MessageResponse]): js.Promise[_] | Unit = js.native
+  def message(params: MessageParams): js.Promise[js.Any] | Unit = js.native
+  def message(params: MessageParams, callback: Callback[MessageResponse]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update counterexample.
@@ -929,8 +928,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateCounterexample(params: UpdateCounterexampleParams): js.Promise[_] | Unit = js.native
-  def updateCounterexample(params: UpdateCounterexampleParams, callback: Callback[Counterexample]): js.Promise[_] | Unit = js.native
+  def updateCounterexample(params: UpdateCounterexampleParams): js.Promise[js.Any] | Unit = js.native
+  def updateCounterexample(params: UpdateCounterexampleParams, callback: Callback[Counterexample]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update dialog node.
@@ -979,8 +978,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateDialogNode(params: UpdateDialogNodeParams): js.Promise[_] | Unit = js.native
-  def updateDialogNode(params: UpdateDialogNodeParams, callback: Callback[DialogNode]): js.Promise[_] | Unit = js.native
+  def updateDialogNode(params: UpdateDialogNodeParams): js.Promise[js.Any] | Unit = js.native
+  def updateDialogNode(params: UpdateDialogNodeParams, callback: Callback[DialogNode]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update entity.
@@ -1007,8 +1006,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateEntity(params: UpdateEntityParams): js.Promise[_] | Unit = js.native
-  def updateEntity(params: UpdateEntityParams, callback: Callback[Entity]): js.Promise[_] | Unit = js.native
+  def updateEntity(params: UpdateEntityParams): js.Promise[js.Any] | Unit = js.native
+  def updateEntity(params: UpdateEntityParams, callback: Callback[Entity]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update user input example.
@@ -1031,8 +1030,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateExample(params: UpdateExampleParams): js.Promise[_] | Unit = js.native
-  def updateExample(params: UpdateExampleParams, callback: Callback[Example]): js.Promise[_] | Unit = js.native
+  def updateExample(params: UpdateExampleParams): js.Promise[js.Any] | Unit = js.native
+  def updateExample(params: UpdateExampleParams, callback: Callback[Example]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update intent.
@@ -1057,8 +1056,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateIntent(params: UpdateIntentParams): js.Promise[_] | Unit = js.native
-  def updateIntent(params: UpdateIntentParams, callback: Callback[Intent]): js.Promise[_] | Unit = js.native
+  def updateIntent(params: UpdateIntentParams): js.Promise[js.Any] | Unit = js.native
+  def updateIntent(params: UpdateIntentParams, callback: Callback[Intent]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update entity value synonym.
@@ -1081,8 +1080,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateSynonym(params: UpdateSynonymParams): js.Promise[_] | Unit = js.native
-  def updateSynonym(params: UpdateSynonymParams, callback: Callback[Synonym]): js.Promise[_] | Unit = js.native
+  def updateSynonym(params: UpdateSynonymParams): js.Promise[js.Any] | Unit = js.native
+  def updateSynonym(params: UpdateSynonymParams, callback: Callback[Synonym]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update entity value.
@@ -1117,8 +1116,8 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateValue(params: UpdateValueParams): js.Promise[_] | Unit = js.native
-  def updateValue(params: UpdateValueParams, callback: Callback[Value]): js.Promise[_] | Unit = js.native
+  def updateValue(params: UpdateValueParams): js.Promise[js.Any] | Unit = js.native
+  def updateValue(params: UpdateValueParams, callback: Callback[Value]): js.Promise[js.Any] | Unit = js.native
   
   /**
     * Update workspace.
@@ -1156,6 +1155,6 @@ trait AssistantV1 extends BaseService {
     * @param {Function} [callback] - The callback that handles the response.
     * @returns {Promise<any>|void}
     */
-  def updateWorkspace(params: UpdateWorkspaceParams): js.Promise[_] | Unit = js.native
-  def updateWorkspace(params: UpdateWorkspaceParams, callback: Callback[Workspace]): js.Promise[_] | Unit = js.native
+  def updateWorkspace(params: UpdateWorkspaceParams): js.Promise[js.Any] | Unit = js.native
+  def updateWorkspace(params: UpdateWorkspaceParams, callback: Callback[Workspace]): js.Promise[js.Any] | Unit = js.native
 }

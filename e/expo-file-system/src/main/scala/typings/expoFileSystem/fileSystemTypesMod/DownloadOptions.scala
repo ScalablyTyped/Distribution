@@ -3,19 +3,17 @@ package typings.expoFileSystem.fileSystemTypesMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadOptions extends StObject {
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[Record[String, String]] = js.native
+  var headers: js.UndefOr[Record[String, String]] = js.undefined
   
-  var md5: js.UndefOr[Boolean] = js.native
+  var md5: js.UndefOr[Boolean] = js.undefined
   
-  var sessionType: js.UndefOr[FileSystemSessionType] = js.native
+  var sessionType: js.UndefOr[FileSystemSessionType] = js.undefined
 }
 object DownloadOptions {
   

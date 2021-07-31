@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGatewayResponsesRequest extends StObject {
   
   /**
     * The maximum number of returned results per page. The default value is 25 and the maximum value is 500. The GatewayResponses collection does not support pagination and the limit does not apply here.
     */
-  var limit: js.UndefOr[NullableInteger] = js.native
+  var limit: js.UndefOr[NullableInteger] = js.undefined
   
   /**
     * The current pagination position in the paged result set. The GatewayResponse collection does not support pagination and the position does not apply here.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object GetGatewayResponsesRequest {
   

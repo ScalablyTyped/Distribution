@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("lie", JSImport.Default)
   @js.native
-  class defaultCls[T] protected () extends Promise[T] {
+  class defaultCls[T] protected ()
+    extends StObject
+       with Promise[T] {
     /**
       * Creates a new Promise.
       * @param executor A callback used to initialize the promise. This callback is passed two arguments:
@@ -62,21 +63,19 @@ object mod extends Shortcut {
       * @returns A Promise for the completion of which ever callback is executed.
       */
     def `then`[TResult1, TResult2](): Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): Promise[TResult1 | TResult2] = js.native
   }
   
   @js.native
   trait PromiseConstructor
-    extends /**
+    extends StObject
+       with /**
     * Creates a new Promise.
     * @param executor A callback used to initialize the promise. This callback is passed two arguments:
     * a resolve callback used resolve the promise with a value or the result of another promise,

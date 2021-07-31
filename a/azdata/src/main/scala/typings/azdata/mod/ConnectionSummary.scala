@@ -2,26 +2,24 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionSummary extends StObject {
   
   /**
     * database name
     */
-  var databaseName: String = js.native
+  var databaseName: String
   
   /**
     * server name
     */
-  var serverName: String = js.native
+  var serverName: String
   
   /**
     * user name
     */
-  var userName: String = js.native
+  var userName: String
 }
 object ConnectionSummary {
   

@@ -2,7 +2,6 @@ package typings.officeJs.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,15 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object PivotFilterType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJs.Excel.PivotFilterType with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJs.Excel.PivotFilterType & String] = js.native
   
-  /* "Date" */ val date: typings.officeJs.Excel.PivotFilterType.date with String = js.native
+  /* "Date" */ val date: typings.officeJs.Excel.PivotFilterType.date & String = js.native
   
-  /* "Label" */ val label: typings.officeJs.Excel.PivotFilterType.label with String = js.native
+  /* "Label" */ val label: typings.officeJs.Excel.PivotFilterType.label & String = js.native
   
-  /* "Manual" */ val manual: typings.officeJs.Excel.PivotFilterType.manual with String = js.native
+  /* "Manual" */ val manual: typings.officeJs.Excel.PivotFilterType.manual & String = js.native
   
-  /* "Unknown" */ val unknown: typings.officeJs.Excel.PivotFilterType.unknown with String = js.native
+  /* "Unknown" */ val unknown: typings.officeJs.Excel.PivotFilterType.unknown & String = js.native
   
-  /* "Value" */ val value: typings.officeJs.Excel.PivotFilterType.value with String = js.native
+  /* "Value" */ val value: typings.officeJs.Excel.PivotFilterType.value & String = js.native
 }

@@ -77,7 +77,6 @@ import typings.std.SVGGElement
 import typings.std.SVGMatrix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.Paper")
@@ -144,10 +143,10 @@ class Paper protected () extends View[Graph] {
   def drawGrid(opt: js.Array[GridOptions]): this.type = js.native
   def drawGrid(opt: GridOptions): this.type = js.native
   
-  /* protected */ def dumpView(view: View[_]): Double = js.native
-  /* protected */ def dumpView(view: View[_], opt: StringDictionary[js.Any]): Double = js.native
+  /* protected */ def dumpView(view: View[js.Any]): Double = js.native
+  /* protected */ def dumpView(view: View[js.Any], opt: StringDictionary[js.Any]): Double = js.native
   
-  /* protected */ def dumpViewUpdate(view: View[_]): Double = js.native
+  /* protected */ def dumpViewUpdate(view: View[js.Any]): Double = js.native
   
   def dumpViews(): Unit = js.native
   def dumpViews(opt: BatchSize): Unit = js.native
@@ -167,41 +166,21 @@ class Paper protected () extends View[Graph] {
   def findViewsInArea(rect: BBox, opt: Strict): js.Array[ElementView] = js.native
   
   def fitToContent(): Rect = js.native
-  def fitToContent(
-    gridWidth: js.UndefOr[scala.Nothing],
-    gridHeight: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    opt: js.Any
-  ): Rect = js.native
-  def fitToContent(gridWidth: js.UndefOr[scala.Nothing], gridHeight: js.UndefOr[scala.Nothing], padding: Double): Rect = js.native
-  def fitToContent(
-    gridWidth: js.UndefOr[scala.Nothing],
-    gridHeight: js.UndefOr[scala.Nothing],
-    padding: Double,
-    opt: js.Any
-  ): Rect = js.native
-  def fitToContent(gridWidth: js.UndefOr[scala.Nothing], gridHeight: Double): Rect = js.native
-  def fitToContent(
-    gridWidth: js.UndefOr[scala.Nothing],
-    gridHeight: Double,
-    padding: js.UndefOr[scala.Nothing],
-    opt: js.Any
-  ): Rect = js.native
-  def fitToContent(gridWidth: js.UndefOr[scala.Nothing], gridHeight: Double, padding: Double): Rect = js.native
-  def fitToContent(gridWidth: js.UndefOr[scala.Nothing], gridHeight: Double, padding: Double, opt: js.Any): Rect = js.native
   def fitToContent(gridWidth: Double): Rect = js.native
-  def fitToContent(
-    gridWidth: Double,
-    gridHeight: js.UndefOr[scala.Nothing],
-    padding: js.UndefOr[scala.Nothing],
-    opt: js.Any
-  ): Rect = js.native
-  def fitToContent(gridWidth: Double, gridHeight: js.UndefOr[scala.Nothing], padding: Double): Rect = js.native
-  def fitToContent(gridWidth: Double, gridHeight: js.UndefOr[scala.Nothing], padding: Double, opt: js.Any): Rect = js.native
   def fitToContent(gridWidth: Double, gridHeight: Double): Rect = js.native
-  def fitToContent(gridWidth: Double, gridHeight: Double, padding: js.UndefOr[scala.Nothing], opt: js.Any): Rect = js.native
   def fitToContent(gridWidth: Double, gridHeight: Double, padding: Double): Rect = js.native
   def fitToContent(gridWidth: Double, gridHeight: Double, padding: Double, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Double, gridHeight: Double, padding: Unit, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Double, gridHeight: Unit, padding: Double): Rect = js.native
+  def fitToContent(gridWidth: Double, gridHeight: Unit, padding: Double, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Double, gridHeight: Unit, padding: Unit, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Double): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Double, padding: Double): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Double, padding: Double, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Double, padding: Unit, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Unit, padding: Double): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Unit, padding: Double, opt: js.Any): Rect = js.native
+  def fitToContent(gridWidth: Unit, gridHeight: Unit, padding: Unit, opt: js.Any): Rect = js.native
   def fitToContent(opt: FitToContentOptions): Rect = js.native
   
   // rendering
@@ -330,9 +309,9 @@ class Paper protected () extends View[Graph] {
   
   /* protected */ def pointerup(evt: Event): Unit = js.native
   
-  /* protected */ def registerMountedView(view: View[_]): Double = js.native
+  /* protected */ def registerMountedView(view: View[js.Any]): Double = js.native
   
-  /* protected */ def registerUnmountedView(view: View[_]): Double = js.native
+  /* protected */ def registerUnmountedView(view: View[js.Any]): Double = js.native
   
   // tools
   def removeTools(): this.type = js.native
@@ -345,8 +324,8 @@ class Paper protected () extends View[Graph] {
   
   /* protected */ def renderView(cell: Cell): CellView = js.native
   
-  def requestViewUpdate(view: View[_], flag: Double, priority: Double): Unit = js.native
-  def requestViewUpdate(view: View[_], flag: Double, priority: Double, opt: StringDictionary[js.Any]): Unit = js.native
+  def requestViewUpdate(view: View[js.Any], flag: Double, priority: Double): Unit = js.native
+  def requestViewUpdate(view: View[js.Any], flag: Double, priority: Double, opt: StringDictionary[js.Any]): Unit = js.native
   
   def requireView[T /* <: ElementView | LinkView */](model: String): T = js.native
   def requireView[T /* <: ElementView | LinkView */](model: String, opt: typings.jointjs.mod.dia.Cell.Options): T = js.native
@@ -356,26 +335,26 @@ class Paper protected () extends View[Graph] {
   def requireView[T /* <: ElementView | LinkView */](model: Cell, opt: typings.jointjs.mod.dia.Cell.Options): T = js.native
   
   /* protected */ def resetViews(): Unit = js.native
-  /* protected */ def resetViews(cells: js.UndefOr[scala.Nothing], opt: StringDictionary[js.Any]): Unit = js.native
   /* protected */ def resetViews(cells: js.Array[Cell]): Unit = js.native
   /* protected */ def resetViews(cells: js.Array[Cell], opt: StringDictionary[js.Any]): Unit = js.native
+  /* protected */ def resetViews(cells: Unit, opt: StringDictionary[js.Any]): Unit = js.native
   
   def scale(): Scale = js.native
   def scale(sx: Double): this.type = js.native
-  def scale(sx: Double, sy: js.UndefOr[scala.Nothing], ox: js.UndefOr[scala.Nothing], oy: Double): this.type = js.native
-  def scale(sx: Double, sy: js.UndefOr[scala.Nothing], ox: Double): this.type = js.native
-  def scale(sx: Double, sy: js.UndefOr[scala.Nothing], ox: Double, oy: Double): this.type = js.native
   def scale(sx: Double, sy: Double): this.type = js.native
-  def scale(sx: Double, sy: Double, ox: js.UndefOr[scala.Nothing], oy: Double): this.type = js.native
   def scale(sx: Double, sy: Double, ox: Double): this.type = js.native
   def scale(sx: Double, sy: Double, ox: Double, oy: Double): this.type = js.native
+  def scale(sx: Double, sy: Double, ox: Unit, oy: Double): this.type = js.native
+  def scale(sx: Double, sy: Unit, ox: Double): this.type = js.native
+  def scale(sx: Double, sy: Unit, ox: Double, oy: Double): this.type = js.native
+  def scale(sx: Double, sy: Unit, ox: Unit, oy: Double): this.type = js.native
   
   def scaleContentToFit(): Unit = js.native
   def scaleContentToFit(opt: ScaleContentOptions): Unit = js.native
   
   // protected
-  /* protected */ def scheduleViewUpdate(view: View[_], flag: Double, priority: Double): Unit = js.native
-  /* protected */ def scheduleViewUpdate(view: View[_], flag: Double, priority: Double, opt: StringDictionary[js.Any]): Unit = js.native
+  /* protected */ def scheduleViewUpdate(view: View[js.Any], flag: Double, priority: Double): Unit = js.native
+  /* protected */ def scheduleViewUpdate(view: View[js.Any], flag: Double, priority: Double, opt: StringDictionary[js.Any]): Unit = js.native
   
   def setDimensions(width: Dimension, height: Dimension): Unit = js.native
   
@@ -411,8 +390,8 @@ class Paper protected () extends View[Graph] {
   
   /* protected */ def updateBackgroundImage(opt: Position): Unit = js.native
   
-  /* protected */ def updateView(view: View[_], flag: Double): Double = js.native
-  /* protected */ def updateView(view: View[_], flag: Double, opt: StringDictionary[js.Any]): Double = js.native
+  /* protected */ def updateView(view: View[js.Any], flag: Double): Double = js.native
+  /* protected */ def updateView(view: View[js.Any], flag: Double, opt: StringDictionary[js.Any]): Double = js.native
   
   def updateViews(): Batches = js.native
   def updateViews(opt: Progress): Batches = js.native
@@ -434,41 +413,46 @@ object Paper {
   object sorting extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[sorting with String] = js.native
+    def apply(value: String): js.UndefOr[sorting & String] = js.native
     
     @js.native
-    sealed trait APPROX extends sorting
-    /* "sorting-approximate" */ val APPROX: typings.jointjs.mod.dia.Paper.sorting.APPROX with String = js.native
+    sealed trait APPROX
+      extends StObject
+         with sorting
+    /* "sorting-approximate" */ val APPROX: typings.jointjs.mod.dia.Paper.sorting.APPROX & String = js.native
     
     @js.native
-    sealed trait EXACT extends sorting
-    /* "sorting-exact" */ val EXACT: typings.jointjs.mod.dia.Paper.sorting.EXACT with String = js.native
+    sealed trait EXACT
+      extends StObject
+         with sorting
+    /* "sorting-exact" */ val EXACT: typings.jointjs.mod.dia.Paper.sorting.EXACT & String = js.native
     
     @js.native
-    sealed trait NONE extends sorting
-    /* "sorting-none" */ val NONE: typings.jointjs.mod.dia.Paper.sorting.NONE with String = js.native
+    sealed trait NONE
+      extends StObject
+         with sorting
+    /* "sorting-none" */ val NONE: typings.jointjs.mod.dia.Paper.sorting.NONE & String = js.native
   }
   
   type AfterRenderCallback = js.Function3[/* stats */ UpdateStats, /* opt */ StringDictionary[js.Any], /* paper */ Paper, Unit]
   
-  @js.native
   trait BackgroundOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[Point | String] = js.native
+    var position: js.UndefOr[Point | String] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var repeat: js.UndefOr[String] = js.native
+    var repeat: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Size | String] = js.native
+    var size: js.UndefOr[Size | String] = js.undefined
     
-    var waterMarkAngle: js.UndefOr[Double] = js.native
+    var waterMarkAngle: js.UndefOr[Double] = js.undefined
   }
   object BackgroundOptions {
     
@@ -535,28 +519,27 @@ object Paper {
   
   type Dimension = Double | String | Null
   
-  @js.native
   trait FitToContentOptions extends StObject {
     
-    var allowNewOrigin: js.UndefOr[negative | positive | any] = js.native
+    var allowNewOrigin: js.UndefOr[negative | positive | any] = js.undefined
     
-    var contentArea: js.UndefOr[BBox] = js.native
+    var contentArea: js.UndefOr[BBox] = js.undefined
     
-    var gridHeight: js.UndefOr[Double] = js.native
+    var gridHeight: js.UndefOr[Double] = js.undefined
     
-    var gridWidth: js.UndefOr[Double] = js.native
+    var gridWidth: js.UndefOr[Double] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    var useModelGeometry: js.UndefOr[Boolean] = js.native
+    var useModelGeometry: js.UndefOr[Boolean] = js.undefined
   }
   object FitToContentOptions {
     
@@ -631,10 +614,9 @@ object Paper {
     }
   }
   
-  @js.native
   trait FreezeOptions extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object FreezeOptions {
     
@@ -655,14 +637,13 @@ object Paper {
     }
   }
   
-  @js.native
   trait GradientOptions extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var stops: js.Array[Color] = js.native
+    var stops: js.Array[Color]
     
-    var `type`: linearGradient | radialGradient = js.native
+    var `type`: linearGradient | radialGradient
   }
   object GradientOptions {
     
@@ -693,16 +674,15 @@ object Paper {
     }
   }
   
-  @js.native
   trait GridOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[StringDictionary[_]] | StringDictionary[js.Any]] = js.native
+    var args: js.UndefOr[js.Array[StringDictionary[js.Any]] | StringDictionary[js.Any]] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[dot | fixedDot | mesh | doubleMesh] = js.native
+    var name: js.UndefOr[dot | fixedDot | mesh | doubleMesh] = js.undefined
     
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
   }
   object GridOptions {
     
@@ -716,7 +696,7 @@ object Paper {
     implicit class GridOptionsMutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[StringDictionary[_]] | StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[StringDictionary[js.Any]] | StringDictionary[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -744,120 +724,123 @@ object Paper {
     }
   }
   
-  @js.native
-  trait Options extends ViewOptions[Graph] {
+  trait Options
+    extends StObject
+       with ViewOptions[Graph] {
     
-    var afterRender: js.UndefOr[AfterRenderCallback] = js.native
+    var afterRender: js.UndefOr[AfterRenderCallback] = js.undefined
     
-    var allowLink: js.UndefOr[(js.Function2[/* linkView */ LinkView, /* paper */ Paper, Boolean]) | Null] = js.native
+    var allowLink: js.UndefOr[(js.Function2[/* linkView */ LinkView, /* paper */ Paper, Boolean]) | Null] = js.undefined
     
-    var anchorNamespace: js.UndefOr[js.Any] = js.native
+    var anchorNamespace: js.UndefOr[js.Any] = js.undefined
     
     // rendering
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var background: js.UndefOr[BackgroundOptions] = js.native
+    var background: js.UndefOr[BackgroundOptions] = js.undefined
     
-    var beforeRender: js.UndefOr[BeforeRenderCallback] = js.native
+    var beforeRender: js.UndefOr[BeforeRenderCallback] = js.undefined
     
     // default views, models & attributes
-    var cellViewNamespace: js.UndefOr[js.Any] = js.native
+    var cellViewNamespace: js.UndefOr[js.Any] = js.undefined
     
-    var clickThreshold: js.UndefOr[Double] = js.native
+    var clickThreshold: js.UndefOr[Double] = js.undefined
     
-    var connectionPointNamespace: js.UndefOr[js.Any] = js.native
+    var connectionPointNamespace: js.UndefOr[js.Any] = js.undefined
     
     // connecting
-    var connectionStrategy: js.UndefOr[ConnectionStrategy] = js.native
+    var connectionStrategy: js.UndefOr[ConnectionStrategy] = js.undefined
     
-    var defaultAnchor: js.UndefOr[AnchorJSON | Anchor] = js.native
+    var defaultAnchor: js.UndefOr[AnchorJSON | Anchor] = js.undefined
     
     var defaultConnectionPoint: js.UndefOr[
         ConnectionPointJSON | ConnectionPoint | (js.Function1[/* repeated */ js.Any, ConnectionPoint])
-      ] = js.native
+      ] = js.undefined
     
-    var defaultConnector: js.UndefOr[Connector | ConnectorJSON] = js.native
+    var defaultConnector: js.UndefOr[Connector | ConnectorJSON] = js.undefined
     
-    var defaultLink: js.UndefOr[(js.Function2[/* cellView */ CellView, /* magnet */ SVGElement, Link]) | Link] = js.native
+    var defaultLink: js.UndefOr[(js.Function2[/* cellView */ CellView, /* magnet */ SVGElement, Link]) | Link] = js.undefined
     
-    var defaultLinkAnchor: js.UndefOr[AnchorJSON | Anchor] = js.native
+    var defaultLinkAnchor: js.UndefOr[AnchorJSON | Anchor] = js.undefined
     
-    var defaultRouter: js.UndefOr[Router | RouterJSON] = js.native
+    var defaultRouter: js.UndefOr[Router | RouterJSON] = js.undefined
     
-    var drawGrid: js.UndefOr[Boolean | GridOptions | js.Array[GridOptions]] = js.native
+    var drawGrid: js.UndefOr[Boolean | GridOptions | js.Array[GridOptions]] = js.undefined
     
     // views
     var elementView: js.UndefOr[
         Instantiable0[ElementView] | (js.Function1[/* element */ Element, Instantiable0[ElementView]])
-      ] = js.native
+      ] = js.undefined
     
     // embedding
-    var embeddingMode: js.UndefOr[Boolean] = js.native
+    var embeddingMode: js.UndefOr[Boolean] = js.undefined
     
-    var findParentBy: js.UndefOr[bbox | center | origin | corner | topRight | bottomLeft] = js.native
+    var findParentBy: js.UndefOr[bbox | center | origin | corner | topRight | bottomLeft] = js.undefined
     
-    var frozen: js.UndefOr[Boolean] = js.native
+    var frozen: js.UndefOr[Boolean] = js.undefined
     
     // interactions
-    var gridSize: js.UndefOr[Double] = js.native
+    var gridSize: js.UndefOr[Double] = js.undefined
     
     // events
-    var guard: js.UndefOr[js.Function2[/* evt */ Event, /* view */ CellView, Boolean]] = js.native
+    var guard: js.UndefOr[js.Function2[/* evt */ Event, /* view */ CellView, Boolean]] = js.undefined
     
-    var height: js.UndefOr[Dimension] = js.native
+    var height: js.UndefOr[Dimension] = js.undefined
     
-    var highlighterNamespace: js.UndefOr[js.Any] = js.native
+    var highlighterNamespace: js.UndefOr[js.Any] = js.undefined
     
-    var highlighting: js.UndefOr[StringDictionary[HighlighterJSON]] = js.native
+    var highlighting: js.UndefOr[StringDictionary[HighlighterJSON]] = js.undefined
     
     var interactive: js.UndefOr[
         (js.Function2[/* cellView */ CellView, /* event */ String, Boolean | InteractivityOptions]) | Boolean | InteractivityOptions
-      ] = js.native
+      ] = js.undefined
     
-    var linkAnchorNamespace: js.UndefOr[js.Any] = js.native
+    var linkAnchorNamespace: js.UndefOr[js.Any] = js.undefined
     
-    var linkConnectionPoint: js.UndefOr[GetConnectionPoint] = js.native
+    var linkConnectionPoint: js.UndefOr[GetConnectionPoint] = js.undefined
     
-    var linkPinning: js.UndefOr[Boolean] = js.native
+    var linkPinning: js.UndefOr[Boolean] = js.undefined
     
     var linkView: js.UndefOr[
         Instantiable0[LinkView] | (js.Function1[/* link */ Link, Instantiable0[LinkView]])
-      ] = js.native
+      ] = js.undefined
     
-    var magnetThreshold: js.UndefOr[Double | String] = js.native
+    var magnetThreshold: js.UndefOr[Double | String] = js.undefined
     
-    var markAvailable: js.UndefOr[Boolean] = js.native
+    var markAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var moveThreshold: js.UndefOr[Double] = js.native
+    var moveThreshold: js.UndefOr[Double] = js.undefined
     
-    var multiLinks: js.UndefOr[Boolean] = js.native
+    var multiLinks: js.UndefOr[Boolean] = js.undefined
     
-    var onViewPostponed: js.UndefOr[js.Function3[/* view */ View[_], /* flag */ Double, /* paper */ Paper, Boolean]] = js.native
+    var onViewPostponed: js.UndefOr[
+        js.Function3[/* view */ View[js.Any], /* flag */ Double, /* paper */ Paper, Boolean]
+      ] = js.undefined
     
     var onViewUpdate: js.UndefOr[
         js.Function5[
-          /* view */ View[_], 
+          /* view */ View[js.Any], 
           /* flag */ Double, 
           /* priority */ Double, 
           /* opt */ StringDictionary[js.Any], 
           /* paper */ Paper, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var origin: js.UndefOr[Point] = js.native
+    var origin: js.UndefOr[Point] = js.undefined
     
-    var perpendicularLinks: js.UndefOr[Boolean] = js.native
+    var perpendicularLinks: js.UndefOr[Boolean] = js.undefined
     
-    var preventContextMenu: js.UndefOr[Boolean] = js.native
+    var preventContextMenu: js.UndefOr[Boolean] = js.undefined
     
-    var preventDefaultBlankAction: js.UndefOr[Boolean] = js.native
+    var preventDefaultBlankAction: js.UndefOr[Boolean] = js.undefined
     
-    var restrictTranslate: js.UndefOr[(js.Function1[/* elementView */ ElementView, BBox]) | Boolean] = js.native
+    var restrictTranslate: js.UndefOr[(js.Function1[/* elementView */ ElementView, BBox]) | Boolean] = js.undefined
     
-    var snapLinks: js.UndefOr[Boolean | Radius] = js.native
+    var snapLinks: js.UndefOr[Boolean | Radius] = js.undefined
     
-    var sorting: js.UndefOr[typings.jointjs.mod.dia.Paper.sorting] = js.native
+    var sorting: js.UndefOr[typings.jointjs.mod.dia.Paper.sorting] = js.undefined
     
     var validateConnection: js.UndefOr[
         js.Function6[
@@ -869,19 +852,19 @@ object Paper {
           /* linkView */ LinkView, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var validateEmbedding: js.UndefOr[js.Function2[/* childView */ ElementView, /* parentView */ ElementView, Boolean]] = js.native
+    var validateEmbedding: js.UndefOr[js.Function2[/* childView */ ElementView, /* parentView */ ElementView, Boolean]] = js.undefined
     
     // validations
     var validateMagnet: js.UndefOr[
         js.Function3[/* cellView */ CellView, /* magnet */ SVGElement, /* evt */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
-    var viewport: js.UndefOr[ViewportCallback | Null] = js.native
+    var viewport: js.UndefOr[ViewportCallback | Null] = js.undefined
     
     // appearance
-    var width: js.UndefOr[Dimension] = js.native
+    var width: js.UndefOr[Dimension] = js.undefined
   }
   object Options {
     
@@ -1164,14 +1147,14 @@ object Paper {
       def setMultiLinksUndefined: Self = StObject.set(x, "multiLinks", js.undefined)
       
       @scala.inline
-      def setOnViewPostponed(value: (/* view */ View[_], /* flag */ Double, /* paper */ Paper) => Boolean): Self = StObject.set(x, "onViewPostponed", js.Any.fromFunction3(value))
+      def setOnViewPostponed(value: (/* view */ View[js.Any], /* flag */ Double, /* paper */ Paper) => Boolean): Self = StObject.set(x, "onViewPostponed", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnViewPostponedUndefined: Self = StObject.set(x, "onViewPostponed", js.undefined)
       
       @scala.inline
       def setOnViewUpdate(
-        value: (/* view */ View[_], /* flag */ Double, /* priority */ Double, /* opt */ StringDictionary[js.Any], /* paper */ Paper) => Unit
+        value: (/* view */ View[js.Any], /* flag */ Double, /* priority */ Double, /* opt */ StringDictionary[js.Any], /* paper */ Paper) => Unit
       ): Self = StObject.set(x, "onViewUpdate", js.Any.fromFunction5(value))
       
       @scala.inline
@@ -1271,32 +1254,31 @@ object Paper {
     Unit
   ]
   
-  @js.native
   trait ScaleContentOptions extends StObject {
     
-    var contentArea: js.UndefOr[BBox] = js.native
+    var contentArea: js.UndefOr[BBox] = js.undefined
     
-    var fittingBBox: js.UndefOr[BBox] = js.native
+    var fittingBBox: js.UndefOr[BBox] = js.undefined
     
-    var maxScale: js.UndefOr[Double] = js.native
+    var maxScale: js.UndefOr[Double] = js.undefined
     
-    var maxScaleX: js.UndefOr[Double] = js.native
+    var maxScaleX: js.UndefOr[Double] = js.undefined
     
-    var maxScaleY: js.UndefOr[Double] = js.native
+    var maxScaleY: js.UndefOr[Double] = js.undefined
     
-    var minScale: js.UndefOr[Double] = js.native
+    var minScale: js.UndefOr[Double] = js.undefined
     
-    var minScaleX: js.UndefOr[Double] = js.native
+    var minScaleX: js.UndefOr[Double] = js.undefined
     
-    var minScaleY: js.UndefOr[Double] = js.native
+    var minScaleY: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Padding] = js.native
+    var padding: js.UndefOr[Padding] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[Boolean] = js.native
+    var preserveAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var scaleGrid: js.UndefOr[Double] = js.native
+    var scaleGrid: js.UndefOr[Double] = js.undefined
     
-    var useModelGeometry: js.UndefOr[Boolean] = js.native
+    var useModelGeometry: js.UndefOr[Boolean] = js.undefined
   }
   object ScaleContentOptions {
     
@@ -1383,24 +1365,23 @@ object Paper {
     }
   }
   
-  @js.native
   trait UnfreezeOptions extends StObject {
     
-    var afterRender: js.UndefOr[AfterRenderCallback] = js.native
+    var afterRender: js.UndefOr[AfterRenderCallback] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var beforeRender: js.UndefOr[BeforeRenderCallback] = js.native
+    var beforeRender: js.UndefOr[BeforeRenderCallback] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var mountBatchSize: js.UndefOr[Double] = js.native
+    var mountBatchSize: js.UndefOr[Double] = js.undefined
     
-    var progress: js.UndefOr[ProgressCallback] = js.native
+    var progress: js.UndefOr[ProgressCallback] = js.undefined
     
-    var unmountBatchSize: js.UndefOr[Double] = js.native
+    var unmountBatchSize: js.UndefOr[Double] = js.undefined
     
-    var viewport: js.UndefOr[ViewportCallback] = js.native
+    var viewport: js.UndefOr[ViewportCallback] = js.undefined
   }
   object UnfreezeOptions {
     
@@ -1465,22 +1446,21 @@ object Paper {
     }
   }
   
-  @js.native
   trait UpdateStats extends StObject {
     
-    var batches: js.UndefOr[Double] = js.native
+    var batches: js.UndefOr[Double] = js.undefined
     
-    var empty: js.UndefOr[Boolean] = js.native
+    var empty: js.UndefOr[Boolean] = js.undefined
     
-    var mounted: js.UndefOr[Double] = js.native
+    var mounted: js.UndefOr[Double] = js.undefined
     
-    var postponed: js.UndefOr[Double] = js.native
+    var postponed: js.UndefOr[Double] = js.undefined
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var unmounted: js.UndefOr[Double] = js.native
+    var unmounted: js.UndefOr[Double] = js.undefined
     
-    var updated: Double = js.native
+    var updated: Double
   }
   object UpdateStats {
     

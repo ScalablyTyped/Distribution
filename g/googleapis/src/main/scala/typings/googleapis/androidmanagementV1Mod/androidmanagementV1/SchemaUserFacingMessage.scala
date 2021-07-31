@@ -3,14 +3,12 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a user-facing message with locale info. The maximum message length
   * is 4096 characters.
   */
-@js.native
 trait SchemaUserFacingMessage extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaUserFacingMessage extends StObject {
     * user&#39;s locale doesn&#39;t match with any of the localized messages. A
     * default message must be provided if any localized messages are provided.
     */
-  var defaultMessage: js.UndefOr[String] = js.native
+  var defaultMessage: js.UndefOr[String] = js.undefined
   
   /**
     * A map containing &lt;locale, message&gt; pairs, where locale is a
@@ -26,7 +24,7 @@ trait SchemaUserFacingMessage extends StObject {
     * (https://www.w3.org/International/articles/language-tags/) code, such as
     * en-US, es-ES, or fr.
     */
-  var localizedMessages: js.UndefOr[StringDictionary[String]] = js.native
+  var localizedMessages: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaUserFacingMessage {
   

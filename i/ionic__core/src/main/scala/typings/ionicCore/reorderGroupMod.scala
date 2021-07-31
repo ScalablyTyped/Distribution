@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reorderGroupMod {
   
   @JSImport("@ionic/core/dist/types/components/reorder-group/reorder-group", "ReorderGroup")
   @js.native
-  class ReorderGroup () extends ComponentInterface {
+  class ReorderGroup ()
+    extends StObject
+       with ComponentInterface {
     
     var autoscroll: js.Any = js.native
     
@@ -37,9 +38,9 @@ object reorderGroupMod {
       * @param listOrReorder A list of items to be sorted and returned in the new order or a
       * boolean of whether or not the reorder should reposition the item.
       */
-    def complete(): js.Promise[_] = js.native
-    def complete(listOrReorder: js.Array[_]): js.Promise[_] = js.native
-    def complete(listOrReorder: Boolean): js.Promise[_] = js.native
+    def complete(): js.Promise[js.Any] = js.native
+    def complete(listOrReorder: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def complete(listOrReorder: Boolean): js.Promise[js.Any] = js.native
     
     var completeSync: js.Any = js.native
     

@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MissingAggregation")
 @js.native
-class MissingAggregation protected () extends Aggregation {
+class MissingAggregation protected ()
+  extends StObject
+     with Aggregation {
   /*
     Defines a bucket of all documents that are missing a field value.
     */

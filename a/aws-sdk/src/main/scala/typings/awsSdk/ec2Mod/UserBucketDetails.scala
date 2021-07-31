@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserBucketDetails extends StObject {
   
   /**
     * The Amazon S3 bucket from which the disk image was created.
     */
-  var S3Bucket: js.UndefOr[String] = js.native
+  var S3Bucket: js.UndefOr[String] = js.undefined
   
   /**
     * The file name of the disk image.
     */
-  var S3Key: js.UndefOr[String] = js.native
+  var S3Key: js.UndefOr[String] = js.undefined
 }
 object UserBucketDetails {
   

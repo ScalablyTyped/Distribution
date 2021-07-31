@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,32 +19,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * range of this document.
   * @see com.sun.star.sheet.CellAreaLinks
   */
-@js.native
 trait CellAreaLink
-  extends XAreaLink
+  extends StObject
+     with XAreaLink
      with XRefreshable
      with XPropertySet {
   
   /** specifies the name of the filter used to load the source document. */
-  var Filter: String = js.native
+  var Filter: String
   
   /** specifies the filter options needed to load the source document. */
-  var FilterOptions: String = js.native
+  var FilterOptions: String
   
   /**
     * specifies the delay time between two refresh actions in seconds.
     * @deprecated Deprecated
     */
-  var RefreshDelay: Double = js.native
+  var RefreshDelay: Double
   
   /**
     * specifies the time between two refresh actions in seconds.
     * @since OOo 2.0
     */
-  var RefreshPeriod: Double = js.native
+  var RefreshPeriod: Double
   
   /** specifies the URL of the source document. */
-  var Url: String = js.native
+  var Url: String
 }
 object CellAreaLink {
   

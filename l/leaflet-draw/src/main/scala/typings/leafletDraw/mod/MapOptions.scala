@@ -2,17 +2,15 @@ package typings.leafletDraw.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var drawControl: js.UndefOr[Boolean] = js.native
+  var drawControl: js.UndefOr[Boolean] = js.undefined
   
-  var drawControlTooltips: js.UndefOr[Boolean] = js.native
+  var drawControlTooltips: js.UndefOr[Boolean] = js.undefined
   
-  var touchExtend: js.UndefOr[Boolean] = js.native
+  var touchExtend: js.UndefOr[Boolean] = js.undefined
 }
 object MapOptions {
   

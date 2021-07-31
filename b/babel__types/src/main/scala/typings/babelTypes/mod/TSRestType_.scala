@@ -3,26 +3,25 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSRestType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSRestType_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSRestType_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var typeAnnotation: TSType = js.native
+  var typeAnnotation: TSType
   
   @JSName("type")
-  var type_TSRestType_ : TSRestType = js.native
+  var type_TSRestType_ : TSRestType
 }
 object TSRestType_ {
   
   @scala.inline
-  def apply(`type`: TSRestType, typeAnnotation: TSType): TSRestType_ = {
-    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(typeAnnotation: TSType): TSRestType_ = {
+    val __obj = js.Dynamic.literal(typeAnnotation = typeAnnotation.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSRestType")
     __obj.asInstanceOf[TSRestType_]
   }
   

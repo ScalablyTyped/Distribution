@@ -2,16 +2,14 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlackMetadata extends StObject {
   
   /**
     *  The desired authorization scope for the Slack account. 
     */
-  var oAuthScopes: js.UndefOr[OAuthScopeList] = js.native
+  var oAuthScopes: js.UndefOr[OAuthScopeList] = js.undefined
 }
 object SlackMetadata {
   

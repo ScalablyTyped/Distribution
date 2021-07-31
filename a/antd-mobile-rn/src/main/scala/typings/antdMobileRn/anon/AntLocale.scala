@@ -3,13 +3,11 @@ package typings.antdMobileRn.anon
 import typings.propTypes.mod.Requireable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AntLocale extends StObject {
   
-  var antLocale: Requireable[js.Object] = js.native
+  var antLocale: Requireable[js.Object]
 }
 object AntLocale {
   

@@ -2,39 +2,37 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectSalesforceField extends StObject {
   
-  var dsAttribute: js.UndefOr[String] = js.native
+  var dsAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * A URL that links to the information in the DocuSign field.
     */
-  var dsLink: js.UndefOr[String] = js.native
+  var dsLink: js.UndefOr[String] = js.undefined
   
-  var dsNode: js.UndefOr[String] = js.native
+  var dsNode: js.UndefOr[String] = js.undefined
   
   /**
     * A unique ID for the Salesforce object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var sfField: js.UndefOr[String] = js.native
+  var sfField: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Salesforce field.
     */
-  var sfFieldName: js.UndefOr[String] = js.native
+  var sfFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Salesforce folder.
     */
-  var sfFolder: js.UndefOr[String] = js.native
+  var sfFolder: js.UndefOr[String] = js.undefined
   
-  var sfLockedValue: js.UndefOr[String] = js.native
+  var sfLockedValue: js.UndefOr[String] = js.undefined
 }
 object ConnectSalesforceField {
   

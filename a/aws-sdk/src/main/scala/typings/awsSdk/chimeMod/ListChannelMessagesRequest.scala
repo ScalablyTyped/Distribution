@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelMessagesRequest extends StObject {
   
   /**
     * The ARN of the channel.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
   
   /**
     * The maximum number of messages that you want returned.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.chimeMod.MaxResults] = js.undefined
   
   /**
     * The token passed by previous API calls until all requested messages are returned.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
   
   /**
     * The final or ending time stamp for your requested messages.
     */
-  var NotAfter: js.UndefOr[Timestamp] = js.native
+  var NotAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The initial or starting time stamp for your requested messages. 
     */
-  var NotBefore: js.UndefOr[Timestamp] = js.native
+  var NotBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The order in which you want messages sorted. Default is Descending, based on time created.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.chimeMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.chimeMod.SortOrder] = js.undefined
 }
 object ListChannelMessagesRequest {
   

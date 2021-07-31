@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteMatchHeader extends StObject {
   
   /**
     * If `true`, the match is on the opposite of the `match` method and value. Default is `false`.
     */
-  var invert: js.UndefOr[Input[Boolean]] = js.native
+  var invert: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The method and value to match the header value sent with a request. Specify one match method.
     */
-  var `match`: js.UndefOr[Input[RouteSpecHttp2RouteMatchHeaderMatch]] = js.native
+  var `match`: js.UndefOr[Input[RouteSpecHttp2RouteMatchHeaderMatch]] = js.undefined
   
   /**
     * A name for the HTTP header in the client request that will be matched on.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object RouteSpecHttp2RouteMatchHeader {
   

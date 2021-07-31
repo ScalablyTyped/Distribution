@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XSessionManagerListener2 extends XSessionManagerListener {
+trait XSessionManagerListener2
+  extends StObject
+     with XSessionManagerListener {
   
   /**
     * doQuit gets called when the session manager has decided the application should quit. Under these circumstances bringing up further UI will usually be
     * impossible and must be avoided.
     */
-  def doQuit(): Unit = js.native
+  def doQuit(): Unit
 }
 object XSessionManagerListener2 {
   

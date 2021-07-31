@@ -2,26 +2,26 @@ package typings.fmWebsync.fm.websync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait disconnectConfig extends baseRequestConfig {
+trait disconnectConfig
+  extends StObject
+     with baseRequestConfig {
   
   /**
     * The callback to invoke after onSuccess or onFailure. See disconnectCompleteArgs for callback argument details.
     */
-  var onComplete: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.undefined
   
   /**
     * The callback to invoke if the disconnect fails. See disconnectFailureArgs for callback argument details.
     */
-  var onFailure: js.UndefOr[js.Function1[/* args */ baseFailureArgs, Unit]] = js.native
+  var onFailure: js.UndefOr[js.Function1[/* args */ baseFailureArgs, Unit]] = js.undefined
   
   /**
     * The callback to invoke if the disconnect succeeds. See disconnectSuccessArgs for callback argument details.
     */
-  var onSuccess: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.native
+  var onSuccess: js.UndefOr[js.Function1[/* args */ baseResponseArgs, Unit]] = js.undefined
 }
 object disconnectConfig {
   

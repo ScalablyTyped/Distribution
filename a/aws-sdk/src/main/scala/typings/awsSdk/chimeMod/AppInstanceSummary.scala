@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppInstanceSummary extends StObject {
   
   /**
     * The app instance ARN.
     */
-  var AppInstanceArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The metadata of the app instance summary.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The name of the app instance summary.
     */
-  var Name: js.UndefOr[NonEmptyResourceName] = js.native
+  var Name: js.UndefOr[NonEmptyResourceName] = js.undefined
 }
 object AppInstanceSummary {
   

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Trace extends StObject {
   
   /**
     * Derived from the source and destination endpoints definition, and validated by the data plane model. If there are multiple traces starting from different source locations, then the
     * endpoint_info may be different between traces.
     */
-  var endpointInfo: js.UndefOr[EndpointInfo] = js.native
+  var endpointInfo: js.UndefOr[EndpointInfo] = js.undefined
   
   /**
     * A trace of a test contains multiple steps from the initial state to the final state (delivered, dropped, forwarded, or aborted). The steps are ordered by the processing sequence
     * within the simulated network state machine. It is critical to preserve the order of the steps and avoid reordering or sorting them.
     */
-  var steps: js.UndefOr[js.Array[Step]] = js.native
+  var steps: js.UndefOr[js.Array[Step]] = js.undefined
 }
 object Trace {
   

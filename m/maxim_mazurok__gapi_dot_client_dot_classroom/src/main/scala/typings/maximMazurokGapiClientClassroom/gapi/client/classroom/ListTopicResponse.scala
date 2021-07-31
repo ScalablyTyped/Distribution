@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicResponse extends StObject {
   
   /** Token identifying the next page of results to return. If empty, no further results are available. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Topic items that match the request. */
-  var topic: js.UndefOr[js.Array[Topic]] = js.native
+  var topic: js.UndefOr[js.Array[Topic]] = js.undefined
 }
 object ListTopicResponse {
   

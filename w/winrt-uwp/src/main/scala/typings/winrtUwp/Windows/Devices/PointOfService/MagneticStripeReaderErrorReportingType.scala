@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object MagneticStripeReaderErrorReportingType extends StObject {
   
   /** Report errors at the card level. */
   @js.native
-  sealed trait cardLevel extends MagneticStripeReaderErrorReportingType
+  sealed trait cardLevel
+    extends StObject
+       with MagneticStripeReaderErrorReportingType
   
   /** Report errors at the track level. */
   @js.native
-  sealed trait trackLevel extends MagneticStripeReaderErrorReportingType
+  sealed trait trackLevel
+    extends StObject
+       with MagneticStripeReaderErrorReportingType
 }

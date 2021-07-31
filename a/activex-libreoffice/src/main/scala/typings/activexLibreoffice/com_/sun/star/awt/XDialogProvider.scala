@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides dialogs implementing the {@link com.sun.star.awt.XDialog} interface. */
-@js.native
-trait XDialogProvider extends XInterface {
+trait XDialogProvider
+  extends StObject
+     with XInterface {
   
   /**
     * creates a dialog for the given URL.
@@ -17,7 +17,7 @@ trait XDialogProvider extends XInterface {
     * @returns a dialog implementing the {@link com.sun.star.awt.XDialog} interface.
     * @throws com::sun::star::lang::IllegalArgumentException if no dialog for the given URL is found or if the URL is invalid.
     */
-  def createDialog(URL: String): XDialog = js.native
+  def createDialog(URL: String): XDialog
 }
 object XDialogProvider {
   

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBootstrapBrokersResponse extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait GetBootstrapBrokersResponse extends StObject {
     A string containing one or more hostname:port pairs.
     
     */
-  var BootstrapBrokerString: js.UndefOr[string] = js.native
+  var BootstrapBrokerString: js.UndefOr[string] = js.undefined
   
   /**
     * 
     A string containing one or more DNS names (or IP) and Sasl Scram port pairs.
     
     */
-  var BootstrapBrokerStringSaslScram: js.UndefOr[string] = js.native
+  var BootstrapBrokerStringSaslScram: js.UndefOr[string] = js.undefined
   
   /**
     * 
     A string containing one or more DNS names (or IP) and TLS port pairs.
     
     */
-  var BootstrapBrokerStringTls: js.UndefOr[string] = js.native
+  var BootstrapBrokerStringTls: js.UndefOr[string] = js.undefined
 }
 object GetBootstrapBrokersResponse {
   

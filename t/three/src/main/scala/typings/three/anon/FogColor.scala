@@ -3,19 +3,17 @@ package typings.three.anon
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FogColor extends StObject {
   
-  var fogColor: IUniform = js.native
+  var fogColor: IUniform
   
-  var fogDensity: IUniform = js.native
+  var fogDensity: IUniform
   
-  var fogFar: IUniform = js.native
+  var fogFar: IUniform
   
-  var fogNear: IUniform = js.native
+  var fogNear: IUniform
 }
 object FogColor {
   

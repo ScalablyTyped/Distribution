@@ -3,22 +3,22 @@ package typings.sequelize.mod
 import typings.sequelize.sequelizeStrings.unique_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AddUniqueConstraintOptions extends AddConstraintOptions {
+trait AddUniqueConstraintOptions
+  extends StObject
+     with AddConstraintOptions {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: unique_ = js.native
+  var `type`: unique_
 }
 object AddUniqueConstraintOptions {
   
   @scala.inline
-  def apply(`type`: unique_): AddUniqueConstraintOptions = {
+  def apply(): AddUniqueConstraintOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("unique")
     __obj.asInstanceOf[AddUniqueConstraintOptions]
   }
   

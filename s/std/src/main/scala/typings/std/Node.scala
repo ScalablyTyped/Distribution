@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Node is an interface from which a number of DOM API object types inherit. It allows those types to be treated similarly; for example, inheriting the same set of methods, or being tested in the same way. */
 @js.native
-trait Node extends EventTarget {
+trait Node
+  extends StObject
+     with EventTarget {
   
   val ATTRIBUTE_NODE: Double = js.native
   
@@ -198,7 +199,7 @@ trait Node extends EventTarget {
   /**
     * Returns the parent.
     */
-  val parentNode: (Node with ParentNode) | Null = js.native
+  val parentNode: (Node & ParentNode) | Null = js.native
   
   /**
     * Returns the previous sibling.

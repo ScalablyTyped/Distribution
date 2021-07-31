@@ -2,10 +2,10 @@ package typings.storybookUi
 
 import typings.react.mod.FunctionComponent
 import typings.std.Error
+import typings.storybookApi.refsMod.Refs
 import typings.storybookApi.storiesMod.StoriesHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarMod {
@@ -14,36 +14,30 @@ object sidebarMod {
   @js.native
   val Sidebar: FunctionComponent[SidebarProps] = js.native
   
-  @js.native
   trait SidebarProps extends StObject {
     
-    var enableShortcuts: js.UndefOr[Boolean] = js.native
+    var enableShortcuts: js.UndefOr[Boolean] = js.undefined
     
-    var menu: js.Array[_] = js.native
+    var menu: js.Array[js.Any]
     
-    var menuHighlighted: js.UndefOr[Boolean] = js.native
+    var menuHighlighted: js.UndefOr[Boolean] = js.undefined
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
     
-    var refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any = js.native
+    var refs: Refs
     
-    var stories: StoriesHash = js.native
+    var stories: StoriesHash
     
-    var storiesConfigured: Boolean = js.native
+    var storiesConfigured: Boolean
     
-    var storiesFailed: js.UndefOr[Error] = js.native
+    var storiesFailed: js.UndefOr[Error] = js.undefined
     
-    var storyId: js.UndefOr[String] = js.native
+    var storyId: js.UndefOr[String] = js.undefined
   }
   object SidebarProps {
     
     @scala.inline
-    def apply(
-      menu: js.Array[_],
-      refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any,
-      stories: StoriesHash,
-      storiesConfigured: Boolean
-    ): SidebarProps = {
+    def apply(menu: js.Array[js.Any], refs: Refs, stories: StoriesHash, storiesConfigured: Boolean): SidebarProps = {
       val __obj = js.Dynamic.literal(menu = menu.asInstanceOf[js.Any], refs = refs.asInstanceOf[js.Any], stories = stories.asInstanceOf[js.Any], storiesConfigured = storiesConfigured.asInstanceOf[js.Any])
       __obj.asInstanceOf[SidebarProps]
     }
@@ -58,7 +52,7 @@ object sidebarMod {
       def setEnableShortcutsUndefined: Self = StObject.set(x, "enableShortcuts", js.undefined)
       
       @scala.inline
-      def setMenu(value: js.Array[_]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
+      def setMenu(value: js.Array[js.Any]): Self = StObject.set(x, "menu", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuHighlighted(value: Boolean): Self = StObject.set(x, "menuHighlighted", value.asInstanceOf[js.Any])
@@ -76,9 +70,7 @@ object sidebarMod {
       def setRefIdUndefined: Self = StObject.set(x, "refId", js.undefined)
       
       @scala.inline
-      def setRefs(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any
-      ): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStories(value: StoriesHash): Self = StObject.set(x, "stories", value.asInstanceOf[js.Any])

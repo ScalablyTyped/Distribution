@@ -3,19 +3,20 @@ package typings.reactNativeCommunityCliServerApi
 import typings.connect.mod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openStackFrameInEditorMiddlewareMod {
   
-  @JSImport("@react-native-community/cli-server-api/build/openStackFrameInEditorMiddleware", JSImport.Default)
+  @JSImport("@react-native-community/cli-server-api/build/openStackFrameInEditorMiddleware", JSImport.Namespace)
   @js.native
-  def default(options: Options): Server = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(options: Options): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  
   trait Options extends StObject {
     
-    var watchFolders: js.Array[String] = js.native
+    var watchFolders: js.Array[String]
   }
   object Options {
     

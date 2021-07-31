@@ -11,7 +11,6 @@ import typings.reduxForm.reduxFormStrings.onSubmit
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod {
@@ -39,12 +38,11 @@ object formMod {
     def this(props: FormProps[FormData, P, ErrorType], context: js.Any) = this()
   }
   
-  type FormProps[FormData, P, ErrorType] = (Omit[FormHTMLAttributes[HTMLFormElement], onSubmit]) with (FormSubmitProp[FormData, P, ErrorType])
+  type FormProps[FormData, P, ErrorType] = (Omit[FormHTMLAttributes[HTMLFormElement], onSubmit]) & (FormSubmitProp[FormData, P, ErrorType])
   
-  @js.native
   trait FormSubmitProp[FormData, P, ErrorType] extends StObject {
     
-    var onSubmit: js.UndefOr[FormSubmitHandler[FormData, P, ErrorType]] = js.native
+    var onSubmit: js.UndefOr[FormSubmitHandler[FormData, P, ErrorType]] = js.undefined
   }
   object FormSubmitProp {
     
@@ -55,7 +53,7 @@ object formMod {
     }
     
     @scala.inline
-    implicit class FormSubmitPropMutableBuilder[Self <: FormSubmitProp[_, _, _], FormData, P, ErrorType] (val x: Self with (FormSubmitProp[FormData, P, ErrorType])) extends AnyVal {
+    implicit class FormSubmitPropMutableBuilder[Self <: FormSubmitProp[?, ?, ?], FormData, P, ErrorType] (val x: Self & (FormSubmitProp[FormData, P, ErrorType])) extends AnyVal {
       
       @scala.inline
       def setOnSubmit(

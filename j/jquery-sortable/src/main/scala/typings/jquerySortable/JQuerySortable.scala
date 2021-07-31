@@ -6,29 +6,27 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQuerySortable {
   
-  @js.native
   trait Container extends StObject {
     
-    var el: JQuery = js.native
+    var el: JQuery
     
-    var group: ContainerGroup = js.native
+    var group: ContainerGroup
     
-    var handle: String = js.native
+    var handle: String
     
-    var itemDimensions: js.Array[Dimensions] = js.native
+    var itemDimensions: js.Array[Dimensions]
     
-    var items: js.Array[HTMLElement] = js.native
+    var items: js.Array[HTMLElement]
     
-    var options: Options = js.native
+    var options: Options
     
-    var rootGroup: ContainerGroup = js.native
+    var rootGroup: ContainerGroup
     
-    var target: JQuery = js.native
+    var target: JQuery
   }
   object Container {
     
@@ -82,49 +80,48 @@ object JQuerySortable {
     }
   }
   
-  @js.native
   trait ContainerGroup extends StObject {
     
     @JSName("$document")
-    var $document: JQuery = js.native
+    var $document: JQuery
     
-    var containerDimensions: js.Array[Dimensions] = js.native
+    var containerDimensions: js.Array[Dimensions]
     
-    var containers: js.Array[Container] = js.native
+    var containers: js.Array[Container]
     
-    var delayMet: Boolean = js.native
+    var delayMet: Boolean
     
-    var dragInitDone: Boolean = js.native
+    var dragInitDone: Boolean
     
-    var dragProxy: js.Any = js.native
+    var dragProxy: js.Any
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
-    var dropProxy: js.Any = js.native
+    var dropProxy: js.Any
     
-    var item: JQuery = js.native
+    var item: JQuery
     
-    var itemContainer: Container = js.native
+    var itemContainer: Container
     
-    var lastAppendedItem: JQuery = js.native
+    var lastAppendedItem: JQuery
     
-    var lastPointer: Position = js.native
+    var lastPointer: Position
     
-    var lastRelativePointer: Position = js.native
+    var lastRelativePointer: Position
     
-    var offsetParent: JQuery = js.native
+    var offsetParent: JQuery
     
-    var options: Options = js.native
+    var options: Options
     
-    var placeholder: JQuery = js.native
+    var placeholder: JQuery
     
-    var pointer: Position = js.native
+    var pointer: Position
     
-    var relativePointer: Position = js.native
+    var relativePointer: Position
     
-    var sameResultBox: Bottom = js.native
+    var sameResultBox: Bottom
     
-    var scrollProxy: js.Any = js.native
+    var scrollProxy: js.Any
   }
   object ContainerGroup {
     
@@ -226,18 +223,17 @@ object JQuerySortable {
     }
   }
   
-  @js.native
   trait ContainerOptions extends StObject {
     
-    var drag: js.UndefOr[Boolean] = js.native
+    var drag: js.UndefOr[Boolean] = js.undefined
     
-    var drop: js.UndefOr[Boolean] = js.native
+    var drop: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[String] = js.native
+    var exclude: js.UndefOr[String] = js.undefined
     
-    var nested: js.UndefOr[Boolean] = js.native
+    var nested: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ContainerOptions {
     
@@ -294,7 +290,6 @@ object JQuerySortable {
     Unit
   ]
   
-  @js.native
   trait GroupOptions extends StObject {
     
     var afterMove: js.UndefOr[
@@ -304,41 +299,41 @@ object JQuerySortable {
           /* $closestItemOrContainer */ JQuery, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var containerPath: js.UndefOr[String] = js.native
+    var containerPath: js.UndefOr[String] = js.undefined
     
-    var containerSelector: js.UndefOr[String] = js.native
+    var containerSelector: js.UndefOr[String] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var isValidTarget: js.UndefOr[js.Function2[/* $item */ JQuery, /* container */ Container, Boolean]] = js.native
+    var isValidTarget: js.UndefOr[js.Function2[/* $item */ JQuery, /* container */ Container, Boolean]] = js.undefined
     
-    var itemPath: js.UndefOr[String] = js.native
+    var itemPath: js.UndefOr[String] = js.undefined
     
-    var itemSelector: js.UndefOr[String] = js.native
+    var itemSelector: js.UndefOr[String] = js.undefined
     
-    var onCancel: js.UndefOr[OnCancelHandler] = js.native
+    var onCancel: js.UndefOr[OnCancelHandler] = js.undefined
     
-    var onDrag: js.UndefOr[OnDragEventHandler] = js.native
+    var onDrag: js.UndefOr[OnDragEventHandler] = js.undefined
     
-    var onDragStart: js.UndefOr[GenericEventHandler] = js.native
+    var onDragStart: js.UndefOr[GenericEventHandler] = js.undefined
     
-    var onDrop: js.UndefOr[GenericEventHandler] = js.native
+    var onDrop: js.UndefOr[GenericEventHandler] = js.undefined
     
-    var onMousedown: js.UndefOr[OnMousedownHandler] = js.native
+    var onMousedown: js.UndefOr[OnMousedownHandler] = js.undefined
     
-    var placeholder: js.UndefOr[JQuery | js.Array[_] | Element | String] = js.native
+    var placeholder: js.UndefOr[JQuery | js.Array[js.Any] | Element | String] = js.undefined
     
-    var pullPlaceholder: js.UndefOr[Boolean] = js.native
+    var pullPlaceholder: js.UndefOr[Boolean] = js.undefined
     
-    var serialize: js.UndefOr[SerializeFunc] = js.native
+    var serialize: js.UndefOr[SerializeFunc] = js.undefined
     
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object GroupOptions {
     
@@ -458,7 +453,7 @@ object JQuerySortable {
       def setOnMousedownUndefined: Self = StObject.set(x, "onMousedown", js.undefined)
       
       @scala.inline
-      def setPlaceholder(value: JQuery | js.Array[_] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
+      def setPlaceholder(value: JQuery | js.Array[js.Any] | Element | String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
@@ -515,12 +510,12 @@ object JQuerySortable {
     Unit
   ]
   
-  @js.native
   trait Options
-    extends GroupOptions
+    extends StObject
+       with GroupOptions
        with ContainerOptions {
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -541,12 +536,11 @@ object JQuerySortable {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Position {
     

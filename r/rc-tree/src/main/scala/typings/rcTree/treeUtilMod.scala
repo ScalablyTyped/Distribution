@@ -16,129 +16,111 @@ import typings.react.mod.ReactNode
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeUtilMod {
   
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
+  @JSImport("rc-tree/es/utils/treeUtil", JSImport.Namespace)
   @js.native
-  def convertDataToEntities(dataNodes: js.Array[DataNode]): KeyEntities = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def convertDataToEntities(dataNodes: js.Array[DataNode]): KeyEntities = ^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any]).asInstanceOf[KeyEntities]
+  @scala.inline
   def convertDataToEntities(
     dataNodes: js.Array[DataNode],
-    hasInitWrapperProcessEntityOnProcessFinished: js.UndefOr[scala.Nothing],
+    hasInitWrapperProcessEntityOnProcessFinished: Unit,
     externalGetKey: String
-  ): KeyEntities = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
-  @js.native
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  @scala.inline
   def convertDataToEntities(
     dataNodes: js.Array[DataNode],
-    hasInitWrapperProcessEntityOnProcessFinished: js.UndefOr[scala.Nothing],
+    hasInitWrapperProcessEntityOnProcessFinished: Unit,
     externalGetKey: GetKey[DataNode]
-  ): KeyEntities = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
-  @js.native
-  def convertDataToEntities(dataNodes: js.Array[DataNode], hasInitWrapperProcessEntityOnProcessFinished: InitWrapper): KeyEntities = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
-  @js.native
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  @scala.inline
+  def convertDataToEntities(dataNodes: js.Array[DataNode], hasInitWrapperProcessEntityOnProcessFinished: InitWrapper): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  @scala.inline
   def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: InitWrapper,
     externalGetKey: String
-  ): KeyEntities = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "convertDataToEntities")
-  @js.native
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
+  @scala.inline
   def convertDataToEntities(
     dataNodes: js.Array[DataNode],
     hasInitWrapperProcessEntityOnProcessFinished: InitWrapper,
     externalGetKey: GetKey[DataNode]
-  ): KeyEntities = js.native
+  ): KeyEntities = (^.asInstanceOf[js.Dynamic].applyDynamic("convertDataToEntities")(dataNodes.asInstanceOf[js.Any], hasInitWrapperProcessEntityOnProcessFinished.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[KeyEntities]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "convertNodePropsToEventData")
-  @js.native
-  def convertNodePropsToEventData(props: TreeNodeProps): EventDataNode = js.native
+  @scala.inline
+  def convertNodePropsToEventData(props: TreeNodeProps): EventDataNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNodePropsToEventData")(props.asInstanceOf[js.Any]).asInstanceOf[EventDataNode]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "convertTreeToData")
-  @js.native
-  def convertTreeToData(rootNodes: ReactNode): js.Array[DataNode] = js.native
+  @scala.inline
+  def convertTreeToData(rootNodes: ReactNode): js.Array[DataNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTreeToData")(rootNodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[DataNode]]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData(): js.Array[FlattenNode] = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData(treeNodeList: js.UndefOr[scala.Nothing], expandedKeys: js.Array[Key]): js.Array[FlattenNode] = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData(treeNodeList: js.Array[DataNode]): js.Array[FlattenNode] = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData(treeNodeList: js.Array[DataNode], expandedKeys: js.Array[Key]): js.Array[FlattenNode] = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData_true(treeNodeList: js.UndefOr[scala.Nothing], expandedKeys: `true`): js.Array[FlattenNode] = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "flattenTreeData")
-  @js.native
-  def flattenTreeData_true(treeNodeList: js.Array[DataNode], expandedKeys: `true`): js.Array[FlattenNode] = js.native
+  @scala.inline
+  def flattenTreeData(): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")().asInstanceOf[js.Array[FlattenNode]]
+  @scala.inline
+  def flattenTreeData(treeNodeList: js.Array[DataNode]): js.Array[FlattenNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlattenNode]]
+  @scala.inline
+  def flattenTreeData(treeNodeList: js.Array[DataNode], expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  @scala.inline
+  def flattenTreeData(treeNodeList: Unit, expandedKeys: js.Array[Key]): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "getKey")
-  @js.native
-  def getKey(key: Key, pos: String): String | Double = js.native
+  @scala.inline
+  def flattenTreeData_true(treeNodeList: js.Array[DataNode], expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
+  @scala.inline
+  def flattenTreeData_true(treeNodeList: Unit, expandedKeys: `true`): js.Array[FlattenNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenTreeData")(treeNodeList.asInstanceOf[js.Any], expandedKeys.asInstanceOf[js.Any])).asInstanceOf[js.Array[FlattenNode]]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "getTreeNodeProps")
-  @js.native
+  @scala.inline
+  def getKey(key: Key, pos: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(key.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[String | Double]
+  
+  @scala.inline
   def getTreeNodeProps(
     key: Key,
     hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities: TreeNodeRequiredProps
-  ): DragOver = js.native
+  ): DragOver = (^.asInstanceOf[js.Dynamic].applyDynamic("getTreeNodeProps")(key.asInstanceOf[js.Any], hasExpandedKeysSelectedKeysLoadedKeysLoadingKeysCheckedKeysHalfCheckedKeysDragOverNodeKeyDropPositionKeyEntities.asInstanceOf[js.Any])).asInstanceOf[DragOver]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "traverseDataNodes")
-  @js.native
-  def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "traverseDataNodes")
-  @js.native
+  @scala.inline
+  def traverseDataNodes(dataNodes: js.Array[DataNode], callback: js.Function1[/* data */ Index, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def traverseDataNodes(
     dataNodes: js.Array[DataNode],
     callback: js.Function1[/* data */ Index, Unit],
     externalGetKey: String
-  ): Unit = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "traverseDataNodes")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def traverseDataNodes(
     dataNodes: js.Array[DataNode],
     callback: js.Function1[/* data */ Index, Unit],
     externalGetKey: GetKey[DataNode]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDataNodes")(dataNodes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], externalGetKey.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-tree/es/utils/treeUtil", "warningWithoutKey")
-  @js.native
-  def warningWithoutKey(): Unit = js.native
-  @JSImport("rc-tree/es/utils/treeUtil", "warningWithoutKey")
-  @js.native
-  def warningWithoutKey(treeData: js.Array[DataNode]): Unit = js.native
+  @scala.inline
+  def warningWithoutKey(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")().asInstanceOf[Unit]
+  @scala.inline
+  def warningWithoutKey(treeData: js.Array[DataNode]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warningWithoutKey")(treeData.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait TreeNodeRequiredProps extends StObject {
     
-    var checkedKeys: js.Array[Key] = js.native
+    var checkedKeys: js.Array[Key]
     
-    var dragOverNodeKey: Key = js.native
+    var dragOverNodeKey: Key
     
-    var dropPosition: Double = js.native
+    var dropPosition: Double
     
-    var expandedKeys: js.Array[Key] = js.native
+    var expandedKeys: js.Array[Key]
     
-    var halfCheckedKeys: js.Array[Key] = js.native
+    var halfCheckedKeys: js.Array[Key]
     
-    var keyEntities: Record[Key, DataEntity] = js.native
+    var keyEntities: Record[Key, DataEntity]
     
-    var loadedKeys: js.Array[Key] = js.native
+    var loadedKeys: js.Array[Key]
     
-    var loadingKeys: js.Array[Key] = js.native
+    var loadingKeys: js.Array[Key]
     
-    var selectedKeys: js.Array[Key] = js.native
+    var selectedKeys: js.Array[Key]
   }
   object TreeNodeRequiredProps {
     
@@ -208,12 +190,11 @@ object treeUtilMod {
     }
   }
   
-  @js.native
   trait Wrapper extends StObject {
     
-    var keyEntities: Record[Key, DataEntity] = js.native
+    var keyEntities: Record[Key, DataEntity]
     
-    var posEntities: Record[String, DataEntity] = js.native
+    var posEntities: Record[String, DataEntity]
   }
   object Wrapper {
     

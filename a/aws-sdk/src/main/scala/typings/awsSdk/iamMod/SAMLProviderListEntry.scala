@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAMLProviderListEntry extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SAML provider.
     */
-  var Arn: js.UndefOr[arnType] = js.native
+  var Arn: js.UndefOr[arnType] = js.undefined
   
   /**
     * The date and time when the SAML provider was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * The expiration date and time for the SAML provider.
     */
-  var ValidUntil: js.UndefOr[dateType] = js.native
+  var ValidUntil: js.UndefOr[dateType] = js.undefined
 }
 object SAMLProviderListEntry {
   

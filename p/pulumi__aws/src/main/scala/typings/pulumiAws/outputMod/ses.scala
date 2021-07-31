@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ses {
   
-  @js.native
   trait EventDestinationCloudwatchDestination extends StObject {
     
     /**
       * The default value for the event
       */
-    var defaultValue: String = js.native
+    var defaultValue: String
     
     /**
       * The name for the dimension
       */
-    var dimensionName: String = js.native
+    var dimensionName: String
     
     /**
       * The source for the value. It can be either `"messageTag"` or `"emailHeader"`
       */
-    var valueSource: String = js.native
+    var valueSource: String
   }
   object EventDestinationCloudwatchDestination {
     
@@ -47,18 +45,17 @@ object ses {
     }
   }
   
-  @js.native
   trait EventDestinationKinesisDestination extends StObject {
     
     /**
       * The ARN of the role that has permissions to access the Kinesis Stream
       */
-    var roleArn: String = js.native
+    var roleArn: String
     
     /**
       * The ARN of the Kinesis Stream
       */
-    var streamArn: String = js.native
+    var streamArn: String
   }
   object EventDestinationKinesisDestination {
     
@@ -79,13 +76,12 @@ object ses {
     }
   }
   
-  @js.native
   trait EventDestinationSnsDestination extends StObject {
     
     /**
       * The ARN of the SNS topic
       */
-    var topicArn: String = js.native
+    var topicArn: String
   }
   object EventDestinationSnsDestination {
     
@@ -103,23 +99,22 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleAddHeaderAction extends StObject {
     
     /**
       * The name of the header to add
       */
-    var headerName: String = js.native
+    var headerName: String
     
     /**
       * The value of the header to add
       */
-    var headerValue: String = js.native
+    var headerValue: String
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
   }
   object ReceiptRuleAddHeaderAction {
     
@@ -143,38 +138,37 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleBounceAction extends StObject {
     
     /**
       * The message to send
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The email address of the sender
       */
-    var sender: String = js.native
+    var sender: String
     
     /**
       * The RFC 5321 SMTP reply code
       */
-    var smtpReplyCode: String = js.native
+    var smtpReplyCode: String
     
     /**
       * The RFC 3463 SMTP enhanced status code
       */
-    var statusCode: js.UndefOr[String] = js.native
+    var statusCode: js.UndefOr[String] = js.undefined
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: js.UndefOr[String] = js.native
+    var topicArn: js.UndefOr[String] = js.undefined
   }
   object ReceiptRuleBounceAction {
     
@@ -213,28 +207,27 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleLambdaAction extends StObject {
     
     /**
       * The ARN of the Lambda function to invoke
       */
-    var functionArn: String = js.native
+    var functionArn: String
     
     /**
       * Event or RequestResponse
       */
-    var invocationType: String = js.native
+    var invocationType: String
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: js.UndefOr[String] = js.native
+    var topicArn: js.UndefOr[String] = js.undefined
   }
   object ReceiptRuleLambdaAction {
     
@@ -264,33 +257,32 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleS3Action extends StObject {
     
     /**
       * The name of the S3 bucket
       */
-    var bucketName: String = js.native
+    var bucketName: String
     
     /**
       * The ARN of the KMS key
       */
-    var kmsKeyArn: js.UndefOr[String] = js.native
+    var kmsKeyArn: js.UndefOr[String] = js.undefined
     
     /**
       * The key prefix of the S3 bucket
       */
-    var objectKeyPrefix: js.UndefOr[String] = js.native
+    var objectKeyPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: js.UndefOr[String] = js.native
+    var topicArn: js.UndefOr[String] = js.undefined
   }
   object ReceiptRuleS3Action {
     
@@ -329,18 +321,17 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleSnsAction extends StObject {
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: String = js.native
+    var topicArn: String
   }
   object ReceiptRuleSnsAction {
     
@@ -361,23 +352,22 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleStopAction extends StObject {
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The scope to apply
       */
-    var scope: String = js.native
+    var scope: String
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: js.UndefOr[String] = js.native
+    var topicArn: js.UndefOr[String] = js.undefined
   }
   object ReceiptRuleStopAction {
     
@@ -404,23 +394,22 @@ object ses {
     }
   }
   
-  @js.native
   trait ReceiptRuleWorkmailAction extends StObject {
     
     /**
       * The ARN of the WorkMail organization
       */
-    var organizationArn: String = js.native
+    var organizationArn: String
     
     /**
       * The position of the action in the receipt rule
       */
-    var position: Double = js.native
+    var position: Double
     
     /**
       * The ARN of an SNS topic to notify
       */
-    var topicArn: js.UndefOr[String] = js.native
+    var topicArn: js.UndefOr[String] = js.undefined
   }
   object ReceiptRuleWorkmailAction {
     

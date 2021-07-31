@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMappingMod {
@@ -48,6 +47,10 @@ object apiMappingMod {
   /* static members */
   object ApiMapping {
     
+    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ApiMapping resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object apiMappingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ApiMapping = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApiMapping = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiMappingState): ApiMapping = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiMappingState, opts: CustomResourceOptions): ApiMapping = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiMappingState): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiMappingState, opts: CustomResourceOptions): ApiMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiMapping]
     
     /**
       * Returns true if the given object is an instance of ApiMapping.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/apiMapping", "ApiMapping.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/apiMapping.ApiMapping */ Boolean]
   }
   
-  @js.native
   trait ApiMappingArgs extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The [API mapping key](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-mapping-template-reference.html).
       */
-    val apiMappingKey: js.UndefOr[Input[String]] = js.native
+    val apiMappingKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain name. Use the `aws.apigatewayv2.DomainName` resource to configure a domain name.
       */
-    val domainName: Input[String] = js.native
+    val domainName: Input[String]
     
     /**
       * The API stage. Use the `aws.apigatewayv2.Stage` resource to configure an API stage.
       */
-    val stage: Input[String] = js.native
+    val stage: Input[String]
   }
   object ApiMappingArgs {
     
@@ -130,28 +127,27 @@ object apiMappingMod {
     }
   }
   
-  @js.native
   trait ApiMappingState extends StObject {
     
     /**
       * The API identifier.
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [API mapping key](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-mapping-template-reference.html).
       */
-    val apiMappingKey: js.UndefOr[Input[String]] = js.native
+    val apiMappingKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The domain name. Use the `aws.apigatewayv2.DomainName` resource to configure a domain name.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API stage. Use the `aws.apigatewayv2.Stage` resource to configure an API stage.
       */
-    val stage: js.UndefOr[Input[String]] = js.native
+    val stage: js.UndefOr[Input[String]] = js.undefined
   }
   object ApiMappingState {
     

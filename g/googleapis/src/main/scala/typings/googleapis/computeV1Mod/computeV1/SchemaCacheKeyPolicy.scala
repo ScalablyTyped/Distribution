@@ -2,25 +2,23 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message containing what to include in the cache key for a request for Cloud
   * CDN.
   */
-@js.native
 trait SchemaCacheKeyPolicy extends StObject {
   
   /**
     * If true, requests to different hosts will be cached separately.
     */
-  var includeHost: js.UndefOr[Boolean] = js.native
+  var includeHost: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, http and https requests will be cached separately.
     */
-  var includeProtocol: js.UndefOr[Boolean] = js.native
+  var includeProtocol: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, include query string parameters in the cache key according to
@@ -28,7 +26,7 @@ trait SchemaCacheKeyPolicy extends StObject {
     * entire query string will be included. If false, the query string will be
     * excluded from the cache key entirely.
     */
-  var includeQueryString: js.UndefOr[Boolean] = js.native
+  var includeQueryString: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Names of query string parameters to exclude in cache keys. All other
@@ -36,7 +34,7 @@ trait SchemaCacheKeyPolicy extends StObject {
     * query_string_blacklist, not both. &#39;&amp;&#39; and &#39;=&#39; will be
     * percent encoded and not treated as delimiters.
     */
-  var queryStringBlacklist: js.UndefOr[js.Array[String]] = js.native
+  var queryStringBlacklist: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Names of query string parameters to include in cache keys. All other
@@ -44,7 +42,7 @@ trait SchemaCacheKeyPolicy extends StObject {
     * query_string_blacklist, not both. &#39;&amp;&#39; and &#39;=&#39; will be
     * percent encoded and not treated as delimiters.
     */
-  var queryStringWhitelist: js.UndefOr[js.Array[String]] = js.native
+  var queryStringWhitelist: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCacheKeyPolicy {
   

@@ -5,14 +5,15 @@ import typings.vorpal.anon.Call
 import typings.vorpal.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("vorpal", JSImport.Namespace)
   @js.native
-  class ^ () extends Vorpal
+  class ^ ()
+    extends StObject
+       with Vorpal
   
   @JSImport("vorpal", "Catch")
   @js.native
@@ -96,11 +97,11 @@ object mod {
   
   type Action = js.Function1[/* args */ Args, js.Promise[Unit]]
   
-  @js.native
   trait Args
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var options: StringDictionary[js.Any] = js.native
+    var options: StringDictionary[js.Any]
   }
   object Args {
     
@@ -161,7 +162,7 @@ object mod {
     
     var ui: UI = js.native
     
-    def use(extension: Extension): this.type = js.native
+    def use(`extension`: Extension): this.type = js.native
     
     def version(version: String): this.type = js.native
   }

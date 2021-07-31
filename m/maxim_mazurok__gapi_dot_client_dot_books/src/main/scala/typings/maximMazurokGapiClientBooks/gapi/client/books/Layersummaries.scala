@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layersummaries extends StObject {
   
   /** A list of layer summary items. */
-  var items: js.UndefOr[js.Array[Layersummary]] = js.native
+  var items: js.UndefOr[js.Array[Layersummary]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The total number of layer summaries found. */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object Layersummaries {
   

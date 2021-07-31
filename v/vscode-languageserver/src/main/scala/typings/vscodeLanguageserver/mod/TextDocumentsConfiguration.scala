@@ -3,15 +3,13 @@ package typings.vscodeLanguageserver.mod
 import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentContentChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDocumentsConfiguration[T] extends StObject {
   
-  def create(uri: String, languageId: String, version: Double, content: String): T = js.native
+  def create(uri: String, languageId: String, version: Double, content: String): T
   
-  def update(document: T, changes: js.Array[TextDocumentContentChangeEvent], version: Double): T = js.native
+  def update(document: T, changes: js.Array[TextDocumentContentChangeEvent], version: Double): T
 }
 object TextDocumentsConfiguration {
   
@@ -25,7 +23,7 @@ object TextDocumentsConfiguration {
   }
   
   @scala.inline
-  implicit class TextDocumentsConfigurationMutableBuilder[Self <: TextDocumentsConfiguration[_], T] (val x: Self with TextDocumentsConfiguration[T]) extends AnyVal {
+  implicit class TextDocumentsConfigurationMutableBuilder[Self <: TextDocumentsConfiguration[?], T] (val x: Self & TextDocumentsConfiguration[T]) extends AnyVal {
     
     @scala.inline
     def setCreate(value: (String, String, Double, String) => T): Self = StObject.set(x, "create", js.Any.fromFunction4(value))

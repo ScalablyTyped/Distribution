@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait RangeFontLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var size: js.UndefOr[Boolean] = js.native
+  var size: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var subscript: js.UndefOr[Boolean] = js.native
+  var subscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -88,7 +86,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var superscript: js.UndefOr[Boolean] = js.native
+  var superscript: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Boolean] = js.native
+  var tintAndShade: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait RangeFontLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
 }
 object RangeFontLoadOptions {
   

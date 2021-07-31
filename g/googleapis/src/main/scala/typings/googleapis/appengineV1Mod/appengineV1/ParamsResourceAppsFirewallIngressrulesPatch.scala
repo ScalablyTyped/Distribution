@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAppsFirewallIngressrulesPatch extends StandardParameters {
+trait ParamsResourceAppsFirewallIngressrulesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Part of `name`. Name of the Firewall resource to update. Example:
     * apps/myapp/firewall/ingressRules/100.
     */
-  var appsId: js.UndefOr[String] = js.native
+  var appsId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Part of `name`. See documentation of `appsId`.
     */
-  var ingressRulesId: js.UndefOr[String] = js.native
+  var ingressRulesId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaFirewallRule] = js.native
+  var requestBody: js.UndefOr[SchemaFirewallRule] = js.undefined
   
   /**
     * Standard field mask for the set of fields to be updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAppsFirewallIngressrulesPatch {
   

@@ -5,7 +5,6 @@ import typings.openidClient.mod.ResponseType
 import typings.openidClient.mod._TokenTypeHint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openidClientStrings {
@@ -46,7 +45,9 @@ object openidClientStrings {
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
   @js.native
-  sealed trait access_token extends _TokenTypeHint
+  sealed trait access_token
+    extends StObject
+       with _TokenTypeHint
   @scala.inline
   def access_token: access_token = "access_token".asInstanceOf[access_token]
   
@@ -56,37 +57,51 @@ object openidClientStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait client_secret_basic extends ClientAuthMethod
+  sealed trait client_secret_basic
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def client_secret_basic: client_secret_basic = "client_secret_basic".asInstanceOf[client_secret_basic]
   
   @js.native
-  sealed trait client_secret_jwt extends ClientAuthMethod
+  sealed trait client_secret_jwt
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def client_secret_jwt: client_secret_jwt = "client_secret_jwt".asInstanceOf[client_secret_jwt]
   
   @js.native
-  sealed trait client_secret_post extends ClientAuthMethod
+  sealed trait client_secret_post
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def client_secret_post: client_secret_post = "client_secret_post".asInstanceOf[client_secret_post]
   
   @js.native
-  sealed trait code extends ResponseType
+  sealed trait code
+    extends StObject
+       with ResponseType
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait `code id_token` extends ResponseType
+  sealed trait `code id_token`
+    extends StObject
+       with ResponseType
   @scala.inline
   def `code id_token`: `code id_token` = ("code id_token").asInstanceOf[`code id_token`]
   
   @js.native
-  sealed trait `code id_token token` extends ResponseType
+  sealed trait `code id_token token`
+    extends StObject
+       with ResponseType
   @scala.inline
   def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   
   @js.native
-  sealed trait `code token` extends ResponseType
+  sealed trait `code token`
+    extends StObject
+       with ResponseType
   @scala.inline
   def `code token`: `code token` = ("code token").asInstanceOf[`code token`]
   
@@ -96,24 +111,31 @@ object openidClientStrings {
   def header: header = "header".asInstanceOf[header]
   
   @js.native
-  sealed trait id_token extends ResponseType
+  sealed trait id_token
+    extends StObject
+       with ResponseType
   @scala.inline
   def id_token: id_token = "id_token".asInstanceOf[id_token]
   
   @js.native
-  sealed trait `id_token token` extends ResponseType
+  sealed trait `id_token token`
+    extends StObject
+       with ResponseType
   @scala.inline
   def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
   sealed trait none
-    extends ClientAuthMethod
+    extends StObject
+       with ClientAuthMethod
        with ResponseType
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait private_key_jwt extends ClientAuthMethod
+  sealed trait private_key_jwt
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def private_key_jwt: private_key_jwt = "private_key_jwt".asInstanceOf[private_key_jwt]
   
@@ -123,17 +145,23 @@ object openidClientStrings {
   def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait refresh_token extends _TokenTypeHint
+  sealed trait refresh_token
+    extends StObject
+       with _TokenTypeHint
   @scala.inline
   def refresh_token: refresh_token = "refresh_token".asInstanceOf[refresh_token]
   
   @js.native
-  sealed trait self_signed_tls_client_auth extends ClientAuthMethod
+  sealed trait self_signed_tls_client_auth
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def self_signed_tls_client_auth: self_signed_tls_client_auth = "self_signed_tls_client_auth".asInstanceOf[self_signed_tls_client_auth]
   
   @js.native
-  sealed trait tls_client_auth extends ClientAuthMethod
+  sealed trait tls_client_auth
+    extends StObject
+       with ClientAuthMethod
   @scala.inline
   def tls_client_auth: tls_client_auth = "tls_client_auth".asInstanceOf[tls_client_auth]
 }

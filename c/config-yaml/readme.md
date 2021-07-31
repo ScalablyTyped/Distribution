@@ -12,7 +12,7 @@ YAML configuration for NodeJS
 | Keywords           | - |
 | # releases         | 6 |
 | # dependents       | 9 |
-| # downloads        | 44835 |
+| # downloads        | 17806 |
 | # stars            | 0 |
 
 ## Links

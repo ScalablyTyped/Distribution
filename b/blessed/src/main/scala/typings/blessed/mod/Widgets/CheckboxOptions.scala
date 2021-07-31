@@ -2,22 +2,22 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckboxOptions extends BoxOptions {
+trait CheckboxOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * whether the element is checked or not.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * enable mouse support.
     */
   @JSName("mouse")
-  var mouse_CheckboxOptions: js.UndefOr[Boolean] = js.native
+  var mouse_CheckboxOptions: js.UndefOr[Boolean] = js.undefined
 }
 object CheckboxOptions {
   

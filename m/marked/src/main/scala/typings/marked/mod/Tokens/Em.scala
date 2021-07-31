@@ -4,24 +4,24 @@ import typings.marked.markedStrings.em
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Em extends Token {
+trait Em
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: em = js.native
+  var `type`: em
 }
 object Em {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: em): Em = {
+  def apply(raw: String, text: String): Em = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("em")
     __obj.asInstanceOf[Em]
   }
   

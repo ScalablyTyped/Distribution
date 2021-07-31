@@ -2,31 +2,29 @@ package typings.devtoolsProtocol.mod.Protocol.Security
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VisibleSecurityState extends StObject {
   
   /**
     * Security state details about the page certificate.
     */
-  var certificateSecurityState: js.UndefOr[CertificateSecurityState] = js.native
+  var certificateSecurityState: js.UndefOr[CertificateSecurityState] = js.undefined
   
   /**
     * The type of Safety Tip triggered on the page. Note that this field will be set even if the Safety Tip UI was not actually shown.
     */
-  var safetyTipInfo: js.UndefOr[SafetyTipInfo] = js.native
+  var safetyTipInfo: js.UndefOr[SafetyTipInfo] = js.undefined
   
   /**
     * The security level of the page.
     */
-  var securityState: SecurityState = js.native
+  var securityState: SecurityState
   
   /**
     * Array of security state issues ids.
     */
-  var securityStateIssueIds: js.Array[String] = js.native
+  var securityStateIssueIds: js.Array[String]
 }
 object VisibleSecurityState {
   

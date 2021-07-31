@@ -4,24 +4,24 @@ import typings.zchatBrowser.mod.EventData
 import typings.zchatBrowser.zchatBrowserStrings.chatDotqueue_position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Nick extends EventData {
+trait Nick
+  extends StObject
+     with EventData {
   
-  var nick: String = js.native
+  var nick: String
   
-  var queue_position: Double = js.native
+  var queue_position: Double
   
-  var `type`: chatDotqueue_position = js.native
+  var `type`: chatDotqueue_position
 }
 object Nick {
   
   @scala.inline
-  def apply(nick: String, queue_position: Double, `type`: chatDotqueue_position): Nick = {
+  def apply(nick: String, queue_position: Double): Nick = {
     val __obj = js.Dynamic.literal(nick = nick.asInstanceOf[js.Any], queue_position = queue_position.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("chat.queue_position")
     __obj.asInstanceOf[Nick]
   }
   

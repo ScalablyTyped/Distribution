@@ -20,7 +20,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("memfs/lib/volume", "Volume")
@@ -82,14 +81,14 @@ class Volume () extends StObject {
   
   def createLink(): Link = js.native
   def createLink(parent: Link, name: String): Link = js.native
-  def createLink(parent: Link, name: String, isDirectory: js.UndefOr[scala.Nothing], perm: Double): Link = js.native
   def createLink(parent: Link, name: String, isDirectory: Boolean): Link = js.native
   def createLink(parent: Link, name: String, isDirectory: Boolean, perm: Double): Link = js.native
+  def createLink(parent: Link, name: String, isDirectory: Unit, perm: Double): Link = js.native
   
   def createNode(): Node = js.native
-  def createNode(isDirectory: js.UndefOr[scala.Nothing], perm: Double): Node = js.native
   def createNode(isDirectory: Boolean): Node = js.native
   def createNode(isDirectory: Boolean, perm: Double): Node = js.native
+  def createNode(isDirectory: Unit, perm: Double): Node = js.native
   
   def createReadStream(path: PathLike): IReadStream = js.native
   def createReadStream(path: PathLike, options: String): IReadStream = js.native
@@ -405,14 +404,17 @@ class Volume () extends StObject {
   def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
   
   def toJSON(): DirectoryJSON = js.native
-  def toJSON(paths: js.UndefOr[PathLike], json: js.UndefOr[scala.Nothing], isRelative: Boolean): DirectoryJSON = js.native
-  def toJSON(paths: js.UndefOr[PathLike], json: js.Object): DirectoryJSON = js.native
-  def toJSON(paths: js.UndefOr[PathLike], json: js.Object, isRelative: Boolean): DirectoryJSON = js.native
   def toJSON(paths: js.Array[PathLike]): DirectoryJSON = js.native
-  def toJSON(paths: js.Array[PathLike], json: js.UndefOr[scala.Nothing], isRelative: Boolean): DirectoryJSON = js.native
   def toJSON(paths: js.Array[PathLike], json: js.Object): DirectoryJSON = js.native
   def toJSON(paths: js.Array[PathLike], json: js.Object, isRelative: Boolean): DirectoryJSON = js.native
+  def toJSON(paths: js.Array[PathLike], json: Unit, isRelative: Boolean): DirectoryJSON = js.native
+  def toJSON(paths: Unit, json: js.Object): DirectoryJSON = js.native
+  def toJSON(paths: Unit, json: js.Object, isRelative: Boolean): DirectoryJSON = js.native
+  def toJSON(paths: Unit, json: Unit, isRelative: Boolean): DirectoryJSON = js.native
   def toJSON(paths: PathLike): DirectoryJSON = js.native
+  def toJSON(paths: PathLike, json: js.Object): DirectoryJSON = js.native
+  def toJSON(paths: PathLike, json: js.Object, isRelative: Boolean): DirectoryJSON = js.native
+  def toJSON(paths: PathLike, json: Unit, isRelative: Boolean): DirectoryJSON = js.native
   
   def truncate(id: TFileId, callback: TCallback[Unit]): js.Any = js.native
   def truncate(id: TFileId, len: Double, callback: TCallback[Unit]): js.Any = js.native
@@ -441,15 +443,15 @@ class Volume () extends StObject {
   def utimesSync(path: PathLike, atime: TTime, mtime: TTime): Unit = js.native
   
   def watch(path: PathLike): FSWatcher = js.native
-  def watch(
-    path: PathLike,
-    options: js.UndefOr[scala.Nothing],
-    listener: js.Function2[/* eventType */ String, /* filename */ String, Unit]
-  ): FSWatcher = js.native
   def watch(path: PathLike, options: String): FSWatcher = js.native
   def watch(
     path: PathLike,
     options: String,
+    listener: js.Function2[/* eventType */ String, /* filename */ String, Unit]
+  ): FSWatcher = js.native
+  def watch(
+    path: PathLike,
+    options: Unit,
     listener: js.Function2[/* eventType */ String, /* filename */ String, Unit]
   ): FSWatcher = js.native
   def watch(path: PathLike, options: IWatchOptions): FSWatcher = js.native
@@ -532,49 +534,25 @@ class Volume () extends StObject {
   def writeFileSync(id: TFileId, data: TData, options: IWriteFileOptions): Unit = js.native
   
   def writeSync(fd: Double, buffer: Buffer): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: Buffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  def writeSync(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  def writeSync(fd: Double, buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: Buffer, offset: Double): Double = js.native
-  def writeSync(fd: Double, buffer: Buffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): Double = js.native
   def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Buffer, offset: Double, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Buffer, offset: Unit, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Buffer, offset: Unit, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Buffer, offset: Unit, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, buffer: Uint8Array): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  def writeSync(fd: Double, buffer: Uint8Array, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): Double = js.native
   def writeSync(fd: Double, buffer: Uint8Array, offset: Double): Double = js.native
-  def writeSync(
-    fd: Double,
-    buffer: Uint8Array,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
   def writeSync(fd: Double, buffer: Uint8Array, offset: Double, length: Double): Double = js.native
   def writeSync(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Uint8Array, offset: Double, length: Unit, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Uint8Array, offset: Unit, length: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Uint8Array, offset: Unit, length: Double, position: Double): Double = js.native
+  def writeSync(fd: Double, buffer: Uint8Array, offset: Unit, length: Unit, position: Double): Double = js.native
   def writeSync(fd: Double, str: String): Double = js.native
-  def writeSync(fd: Double, str: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
   def writeSync(fd: Double, str: String, position: Double): Double = js.native
   def writeSync(fd: Double, str: String, position: Double, encoding: BufferEncoding): Double = js.native
+  def writeSync(fd: Double, str: String, position: Unit, encoding: BufferEncoding): Double = js.native
 }
 /* static members */
 object Volume {
@@ -596,17 +574,13 @@ object Volume {
   @scala.inline
   def fd_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fd")(x.asInstanceOf[js.Any])
   
-  @JSImport("memfs/lib/volume", "Volume.fromJSON")
-  @js.native
-  def fromJSON(json: DirectoryJSON): Volume = js.native
-  @JSImport("memfs/lib/volume", "Volume.fromJSON")
-  @js.native
-  def fromJSON(json: DirectoryJSON, cwd: String): Volume = js.native
+  @scala.inline
+  def fromJSON(json: DirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
+  @scala.inline
+  def fromJSON(json: DirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
   
-  @JSImport("memfs/lib/volume", "Volume.fromNestedJSON")
-  @js.native
-  def fromNestedJSON(json: NestedDirectoryJSON): Volume = js.native
-  @JSImport("memfs/lib/volume", "Volume.fromNestedJSON")
-  @js.native
-  def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): Volume = js.native
+  @scala.inline
+  def fromNestedJSON(json: NestedDirectoryJSON): Volume = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any]).asInstanceOf[Volume]
+  @scala.inline
+  def fromNestedJSON(json: NestedDirectoryJSON, cwd: String): Volume = (^.asInstanceOf[js.Dynamic].applyDynamic("fromNestedJSON")(json.asInstanceOf[js.Any], cwd.asInstanceOf[js.Any])).asInstanceOf[Volume]
 }

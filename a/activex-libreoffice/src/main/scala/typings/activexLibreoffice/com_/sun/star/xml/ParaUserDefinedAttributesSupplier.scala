@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.xml
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * component).
   * @since OOo 2.0.4
   */
-@js.native
 trait ParaUserDefinedAttributesSupplier extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ParaUserDefinedAttributesSupplier extends StObject {
     *
     * The {@link com.sun.star.container.XNameContainer} supports the service {@link AttributeContainer} .
     */
-  var ParaUserDefinedAttributes: XNameContainer = js.native
+  var ParaUserDefinedAttributes: XNameContainer
 }
 object ParaUserDefinedAttributesSupplier {
   

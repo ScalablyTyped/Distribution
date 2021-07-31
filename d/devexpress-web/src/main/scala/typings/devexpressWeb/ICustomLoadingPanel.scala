@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines custom loading panel members.
   */
-@js.native
 trait ICustomLoadingPanel extends StObject {
   
   /**
     * Hides the loading panel.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Shows the loading panel.
     */
-  def show(): Unit = js.native
+  def show(): Unit
   
   /**
     * Specifies whether the panel is visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ICustomLoadingPanel {
   

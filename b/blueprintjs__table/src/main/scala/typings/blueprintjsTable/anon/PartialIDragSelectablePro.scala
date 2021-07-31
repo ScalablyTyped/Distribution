@@ -8,22 +8,20 @@ import typings.std.KeyboardEvent
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/table.@blueprintjs/table/lib/esm/interactions/selectable.IDragSelectableProps> */
-@js.native
 trait PartialIDragSelectablePro extends StObject {
   
-  var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.native
+  var disabled: js.UndefOr[Boolean | (js.Function1[/* event */ MouseEvent, Boolean])] = js.undefined
   
-  var enableMultipleSelection: js.UndefOr[Boolean] = js.native
+  var enableMultipleSelection: js.UndefOr[Boolean] = js.undefined
   
-  var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.native
+  var focusedCell: js.UndefOr[IFocusedCellCoordinates] = js.undefined
   
-  var ignoredSelectors: js.UndefOr[js.Array[String]] = js.native
+  var ignoredSelectors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var locateClick: js.UndefOr[js.Function1[/* event */ MouseEvent, IRegion]] = js.native
+  var locateClick: js.UndefOr[js.Function1[/* event */ MouseEvent, IRegion]] = js.undefined
   
   var locateDrag: js.UndefOr[
     js.Function3[
@@ -32,17 +30,17 @@ trait PartialIDragSelectablePro extends StObject {
       /* returnEndOnly */ js.UndefOr[Boolean], 
       IRegion
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.native
+  var onFocusedCell: js.UndefOr[js.Function1[/* focusedCell */ IFocusedCellCoordinates, Unit]] = js.undefined
   
-  var onSelection: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.native
+  var onSelection: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.undefined
   
-  var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.native
+  var onSelectionEnd: js.UndefOr[js.Function1[/* regions */ js.Array[IRegion], Unit]] = js.undefined
   
-  var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.native
+  var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.undefined
   
-  var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.native
+  var selectedRegions: js.UndefOr[js.Array[IRegion]] = js.undefined
 }
 object PartialIDragSelectablePro {
   

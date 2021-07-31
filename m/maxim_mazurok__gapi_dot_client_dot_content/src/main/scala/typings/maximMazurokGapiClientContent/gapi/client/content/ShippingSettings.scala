@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingSettings extends StObject {
   
   /** The ID of the account to which these account shipping settings belong. Ignored upon update, always present in get request responses. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** A list of postal code groups that can be referred to in `services`. Optional. */
-  var postalCodeGroups: js.UndefOr[js.Array[PostalCodeGroup]] = js.native
+  var postalCodeGroups: js.UndefOr[js.Array[PostalCodeGroup]] = js.undefined
   
   /** The target account's list of services. Optional. */
-  var services: js.UndefOr[js.Array[Service]] = js.native
+  var services: js.UndefOr[js.Array[Service]] = js.undefined
 }
 object ShippingSettings {
   

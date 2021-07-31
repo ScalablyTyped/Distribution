@@ -2,46 +2,46 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkAnimatedImage extends EmbindObject[SkAnimatedImage] {
+trait SkAnimatedImage
+  extends StObject
+     with EmbindObject[SkAnimatedImage] {
   
   /**
     * Decodes the next frame. Returns -1 when the animation is on the last frame.
     */
-  def decodeNextFrame(): Double = js.native
+  def decodeNextFrame(): Double
   
   /**
     * Return the total number of frames in the animation.
     */
-  def getFrameCount(): Double = js.native
+  def getFrameCount(): Double
   
   /**
     * Return the repetition count for this animation.
     */
-  def getRepetitionCount(): Double = js.native
+  def getRepetitionCount(): Double
   
   /**
     * Returns the possibly scaled height of the image.
     */
-  def height(): Double = js.native
+  def height(): Double
   
   /**
     * Returns a still image of the current frame or null if there is no current frame.
     */
-  def makeImageAtCurrentFrame(): SkImage | Null = js.native
+  def makeImageAtCurrentFrame(): SkImage | Null
   
   /**
     * Reset the animation to the beginning.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
   
   /**
     * Returns the possibly scaled width of the image.
     */
-  def width(): Double = js.native
+  def width(): Double
 }
 object SkAnimatedImage {
   

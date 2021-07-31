@@ -3,17 +3,15 @@ package typings.highcharts.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Accessibility options for the
     * exporting menu. Requires the Accessibility module.
     */
-  var accessibility: js.UndefOr[ExportingAccessibilityOptions] = js.native
+  var accessibility: js.UndefOr[ExportingAccessibilityOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Experimental setting to allow
@@ -27,7 +25,7 @@ trait ExportingOptions extends StObject {
     * This also applies to downloaded SVG that you want to open in a desktop
     * client.
     */
-  var allowHTML: js.UndefOr[Boolean] = js.native
+  var allowHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the export related
@@ -35,7 +33,7 @@ trait ExportingOptions extends StObject {
     * here, custom buttons can be added. See navigation.buttonOptions for
     * general options.
     */
-  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]] = js.native
+  var buttons: js.UndefOr[ExportingButtonsOptions | Dictionary[ExportingButtonsOptionsObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Additional chart options to be
@@ -46,7 +44,7 @@ trait ExportingOptions extends StObject {
     * readability of the exported chart, or to add a printer-friendly color
     * scheme to exported PDFs.
     */
-  var chartOptions: js.UndefOr[Options] = js.native
+  var chartOptions: js.UndefOr[Options] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for exporting data to
@@ -62,14 +60,14 @@ trait ExportingOptions extends StObject {
     * The workaround for this is to use a third party XLSX converter, as
     * demonstrated in the sample below.
     */
-  var csv: js.UndefOr[ExportingCsvOptions] = js.native
+  var csv: js.UndefOr[ExportingCsvOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to enable the exporting
     * module. Disabling the module will hide the context button, but API
     * methods will still be available.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Function to call if the
@@ -78,7 +76,7 @@ trait ExportingOptions extends StObject {
     * thrown instead. Receives two parameters, the exporting options, and the
     * error from the module.
     */
-  var error: js.UndefOr[ExportingErrorCallbackFunction] = js.native
+  var error: js.UndefOr[ExportingErrorCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether or not to fall back to
@@ -90,13 +88,13 @@ trait ExportingOptions extends StObject {
     * recommended to define the exporting.error handler if disabling fallback,
     * in order to notify users in case export fails.
     */
-  var fallbackToExportServer: js.UndefOr[Boolean] = js.native
+  var fallbackToExportServer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The filename, without extension,
     * to use for the exported chart.
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An object containing additional
@@ -105,7 +103,7 @@ trait ExportingOptions extends StObject {
     * received in another frame, or a custom `enctype` or `encoding` can be
     * set.
     */
-  var formAttributes: js.UndefOr[HTMLAttributes] = js.native
+  var formAttributes: js.UndefOr[HTMLAttributes] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Path where Highcharts will look
@@ -114,7 +112,7 @@ trait ExportingOptions extends StObject {
     * RGBColor.js, jsPDF and svg2pdf.js, required for client side export in
     * certain browsers.
     */
-  var libURL: js.UndefOr[String] = js.native
+  var libURL: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An object consisting of
@@ -132,7 +130,7 @@ trait ExportingOptions extends StObject {
     * Custom text for the "exitFullScreen" can be set only in lang options (it
     * is not a separate button).
     */
-  var menuItemDefinitions: js.UndefOr[Dictionary[ExportingMenuObject]] = js.native
+  var menuItemDefinitions: js.UndefOr[Dictionary[ExportingMenuObject]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) When printing the chart from the
@@ -141,7 +139,7 @@ trait ExportingOptions extends StObject {
     * width makes the chart fit into typical paper format. Note that this does
     * not affect the chart when printing the web page as a whole.
     */
-  var printMaxWidth: js.UndefOr[Double] = js.native
+  var printMaxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Defines the scale or zoom factor
@@ -150,18 +148,18 @@ trait ExportingOptions extends StObject {
     * in print. The default scale of 2 makes this chart export to a 1200px PNG
     * or JPG.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Show a HTML table below the
     * chart with the chart's current data.
     */
-  var showTable: js.UndefOr[Boolean] = js.native
+  var showTable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Analogous to sourceWidth.
     */
-  var sourceHeight: js.UndefOr[Double] = js.native
+  var sourceHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The width of the original chart
@@ -169,13 +167,13 @@ trait ExportingOptions extends StObject {
     * set on the container. The width exported raster image is then multiplied
     * by scale.
     */
-  var sourceWidth: js.UndefOr[Double] = js.native
+  var sourceWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Caption for the data table. Same
     * as chart title by default. Set to `false` to disable.
     */
-  var tableCaption: js.UndefOr[Boolean | String] = js.native
+  var tableCaption: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Default MIME type for exporting
@@ -183,27 +181,27 @@ trait ExportingOptions extends StObject {
     * Possible values are `image/png`, `image/jpeg`, `application/pdf` and
     * `image/svg+xml`.
     */
-  var `type`: js.UndefOr[ExportingMimeTypeValue] = js.native
+  var `type`: js.UndefOr[ExportingMimeTypeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for the server module
     * converting the SVG string to an image format. By default this points to
     * Highchart's free web service.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Use multi level headers in data
     * table. If csv.columnHeaderFormatter is defined, it has to return objects
     * in order for multi level headers to work.
     */
-  var useMultiLevelHeaders: js.UndefOr[Boolean] = js.native
+  var useMultiLevelHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) If using multi level table
     * headers, use rowspans for headers that have only one level.
     */
-  var useRowspanHeaders: js.UndefOr[Boolean] = js.native
+  var useRowspanHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of charts
@@ -211,7 +209,7 @@ trait ExportingOptions extends StObject {
     * a function of the chart.width or exporting.sourceWidth and the
     * exporting.scale.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ExportingOptions {
   

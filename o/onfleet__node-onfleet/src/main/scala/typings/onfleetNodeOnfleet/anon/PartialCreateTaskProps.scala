@@ -8,48 +8,46 @@ import typings.onfleetNodeOnfleet.tasksMod.TaskAutoAssign
 import typings.onfleetNodeOnfleet.tasksMod.TaskCompletionRequirements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Tasks.CreateTaskProps> */
-@js.native
 trait PartialCreateTaskProps extends StObject {
   
-  var autoAssign: js.UndefOr[TaskAutoAssign] = js.native
+  var autoAssign: js.UndefOr[TaskAutoAssign] = js.undefined
   
-  var barcodes: js.UndefOr[js.Array[Barcode]] = js.native
+  var barcodes: js.UndefOr[js.Array[Barcode]] = js.undefined
   
-  var capacity: js.UndefOr[Double] = js.native
+  var capacity: js.UndefOr[Double] = js.undefined
   
-  var completeAfter: js.UndefOr[Double] = js.native
+  var completeAfter: js.UndefOr[Double] = js.undefined
   
-  var completeBefore: js.UndefOr[Double] = js.native
+  var completeBefore: js.UndefOr[Double] = js.undefined
   
-  var dependencies: js.UndefOr[js.Array[String]] = js.native
+  var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var destination: js.UndefOr[String | CreateDestinationProps] = js.native
+  var destination: js.UndefOr[String | CreateDestinationProps] = js.undefined
   
-  var executor: js.UndefOr[String] = js.native
+  var executor: js.UndefOr[String] = js.undefined
   
-  var merchant: js.UndefOr[String] = js.native
+  var merchant: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.native
+  var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.undefined
   
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
-  var pickupTask: js.UndefOr[Boolean] = js.native
+  var pickupTask: js.UndefOr[Boolean] = js.undefined
   
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
-  var recipientName: js.UndefOr[String] = js.native
+  var recipientName: js.UndefOr[String] = js.undefined
   
-  var recipientNotes: js.UndefOr[String] = js.native
+  var recipientNotes: js.UndefOr[String] = js.undefined
   
-  var recipientSkipSMSNotifications: js.UndefOr[Boolean] = js.native
+  var recipientSkipSMSNotifications: js.UndefOr[Boolean] = js.undefined
   
-  var recipients: js.UndefOr[js.Array[CreateRecipientProps | String]] = js.native
+  var recipients: js.UndefOr[js.Array[CreateRecipientProps | String]] = js.undefined
   
-  var requirements: js.UndefOr[TaskCompletionRequirements] = js.native
+  var requirements: js.UndefOr[TaskCompletionRequirements] = js.undefined
 }
 object PartialCreateTaskProps {
   

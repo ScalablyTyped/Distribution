@@ -6,51 +6,50 @@ import typings.miniprogram.OnPullDownRefresh
 import typings.miniprogram.OnTabItemTap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  data :any | undefined,   onLoad :(query : any | undefined): void | undefined,   onShow :miniprogram.EmptyFn | undefined,   onReady :miniprogram.EmptyFn | undefined,   onHide :miniprogram.EmptyFn | undefined,   onUnload :miniprogram.EmptyFn | undefined,   onTitleClick :miniprogram.EmptyFn | undefined,   onPullDownRefresh :miniprogram.OnPullDownRefresh | undefined,   onPullIntercept :miniprogram.EmptyFn | undefined,   onReachBottom :miniprogram.EmptyFn | undefined,   onShareAppMessage :(opts : any): void | undefined,   onOptionMenuClick :miniprogram.EmptyFn | undefined,   onPopMenuClick :miniprogram.EmptyFn | undefined,   onTabItemTap :miniprogram.OnTabItemTap | undefined,   onPageScroll :(opts : {  scrollTop :number}): void | undefined,   events :{  onBack :miniprogram.EmptyFn | undefined,   onKeyboardHeight :miniprogram.EmptyFn | undefined,   onOptionMenuClick :miniprogram.EmptyFn | undefined,   onPopMenuClick :miniprogram.EmptyFn | undefined,   onPullIntercept :miniprogram.EmptyFn | undefined,   onPullDownRefresh :miniprogram.OnPullDownRefresh | undefined,   onTitleClick :miniprogram.EmptyFn | undefined,   onTabItemTap :miniprogram.OnTabItemTap | undefined,   beforeTabItemTap :miniprogram.EmptyFn | undefined,   onResize :(opts : {  size :{  windowWidth :number,   windowHeight :number}}): void | undefined} | undefined, [key: string] : any} & std.ThisType<{ readonly data :any,  readonly route :string, setData (data : any, cb : miniprogram.EmptyFn | undefined): void, $spliceData (data : any, cb : miniprogram.EmptyFn | undefined): void, $batchedUpdates (cb : miniprogram.EmptyFn): void, [key: string] : any}> */
-@js.native
 trait dataanyundefinedonLoadque
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var events: js.UndefOr[BeforeTabItemTap] = js.native
+  var events: js.UndefOr[BeforeTabItemTap] = js.undefined
   
-  var onHide: js.UndefOr[EmptyFn] = js.native
+  var onHide: js.UndefOr[EmptyFn] = js.undefined
   
   /**
     * Page loading
     */
-  var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[js.Any], Unit]] = js.native
+  var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var onOptionMenuClick: js.UndefOr[EmptyFn] = js.native
+  var onOptionMenuClick: js.UndefOr[EmptyFn] = js.undefined
   
-  var onPageScroll: js.UndefOr[js.Function1[/* opts */ ScrollTop, Unit]] = js.native
+  var onPageScroll: js.UndefOr[js.Function1[/* opts */ ScrollTop, Unit]] = js.undefined
   
-  var onPopMenuClick: js.UndefOr[EmptyFn] = js.native
+  var onPopMenuClick: js.UndefOr[EmptyFn] = js.undefined
   
-  var onPullDownRefresh: js.UndefOr[OnPullDownRefresh] = js.native
+  var onPullDownRefresh: js.UndefOr[OnPullDownRefresh] = js.undefined
   
-  var onPullIntercept: js.UndefOr[EmptyFn] = js.native
+  var onPullIntercept: js.UndefOr[EmptyFn] = js.undefined
   
-  var onReachBottom: js.UndefOr[EmptyFn] = js.native
+  var onReachBottom: js.UndefOr[EmptyFn] = js.undefined
   
   /**
     * Page loading complete
     */
-  var onReady: js.UndefOr[EmptyFn] = js.native
+  var onReady: js.UndefOr[EmptyFn] = js.undefined
   
-  var onShareAppMessage: js.UndefOr[js.Function1[/* opts */ js.Any, Unit]] = js.native
+  var onShareAppMessage: js.UndefOr[js.Function1[/* opts */ js.Any, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[EmptyFn] = js.native
+  var onShow: js.UndefOr[EmptyFn] = js.undefined
   
-  var onTabItemTap: js.UndefOr[OnTabItemTap] = js.native
+  var onTabItemTap: js.UndefOr[OnTabItemTap] = js.undefined
   
-  var onTitleClick: js.UndefOr[EmptyFn] = js.native
+  var onTitleClick: js.UndefOr[EmptyFn] = js.undefined
   
-  var onUnload: js.UndefOr[EmptyFn] = js.native
+  var onUnload: js.UndefOr[EmptyFn] = js.undefined
 }
 object dataanyundefinedonLoadque {
   

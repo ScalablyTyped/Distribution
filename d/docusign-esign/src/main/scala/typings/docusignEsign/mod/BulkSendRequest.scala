@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkSendRequest extends StObject {
   
   /**
     * The GUID of the envelope or template that you want to send in bulk.
     */
-  var envelopeOrTemplateId: js.UndefOr[String] = js.native
+  var envelopeOrTemplateId: js.UndefOr[String] = js.undefined
 }
 object BulkSendRequest {
   

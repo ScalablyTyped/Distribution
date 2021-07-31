@@ -4,17 +4,17 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleGridCfg extends GridBaseCfg {
+trait CircleGridCfg
+  extends StObject
+     with GridBaseCfg {
   
   /**
     * 中心点
     * @type {Point}
     */
-  var center: Point = js.native
+  var center: Point
 }
 object CircleGridCfg {
   

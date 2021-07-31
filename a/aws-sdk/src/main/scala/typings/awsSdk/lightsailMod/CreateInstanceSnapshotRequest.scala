@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceSnapshotRequest extends StObject {
   
   /**
     * The Lightsail instance on which to base your snapshot.
     */
-  var instanceName: ResourceName = js.native
+  var instanceName: ResourceName
   
   /**
     * The name for your new snapshot.
     */
-  var instanceSnapshotName: ResourceName = js.native
+  var instanceSnapshotName: ResourceName
   
   /**
     * The tag keys and optional values to add to the resource during create. Use the TagResource action to tag a resource after it's created.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateInstanceSnapshotRequest {
   

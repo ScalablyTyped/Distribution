@@ -5,15 +5,40 @@ import typings.carbonComponents.anon.NewValue
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sliderMod {
   
   @JSImport("carbon-components/components/slider/slider", JSImport.Default)
   @js.native
-  class default protected () extends Slider {
+  class default protected ()
+    extends StObject
+       with Slider {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _calcValue(evt: js.Any): NewValue = js.native
+    
+    /* CompleteClass */
+    override def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _updateInput(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _updatePosition(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getInputProps(): Max = js.native
+    
+    /* CompleteClass */
+    override def setValue(value: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def stepDown(): Unit = js.native
+    
+    /* CompleteClass */
+    override def stepUp(): Unit = js.native
   }
   object default {
     
@@ -30,24 +55,23 @@ object sliderMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Slider extends StObject {
+  - Dropped any */ trait Slider extends StObject {
     
-    def _calcValue(evt: js.Any): NewValue = js.native
+    def _calcValue(evt: js.Any): NewValue
     
-    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
     
-    def _updateInput(): Unit = js.native
+    def _updateInput(): Unit
     
-    def _updatePosition(evt: js.Any): Unit = js.native
+    def _updatePosition(evt: js.Any): Unit
     
-    def getInputProps(): Max = js.native
+    def getInputProps(): Max
     
-    def setValue(value: js.Any): Unit = js.native
+    def setValue(value: js.Any): Unit
     
-    def stepDown(): Unit = js.native
+    def stepDown(): Unit
     
-    def stepUp(): Unit = js.native
+    def stepUp(): Unit
   }
   object Slider {
     

@@ -2,17 +2,15 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBucketBySession extends StObject {
   
   /**
     * Specifies that only sessions of duration longer than minDurationMillis
     * are considered and used as a container for aggregated data.
     */
-  var minDurationMillis: js.UndefOr[String] = js.native
+  var minDurationMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaBucketBySession {
   

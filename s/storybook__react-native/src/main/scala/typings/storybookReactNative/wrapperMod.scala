@@ -5,7 +5,6 @@ import typings.storybookAddons.distMod.Collection
 import typings.storybookReactNative.anon.AddonSelected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrapperMod {
@@ -27,12 +26,11 @@ object wrapperMod {
     def defaultProps_=(x: AddonSelected): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var addonSelected: String = js.native
+    var addonSelected: String
     
-    var panels: Collection = js.native
+    var panels: Collection
   }
   object Props {
     

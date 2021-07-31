@@ -2,31 +2,29 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataRepositoryTaskStatus extends StObject {
   
   /**
     * A running total of the number of files that the task failed to process.
     */
-  var FailedCount: js.UndefOr[typings.awsSdk.fsxMod.FailedCount] = js.native
+  var FailedCount: js.UndefOr[typings.awsSdk.fsxMod.FailedCount] = js.undefined
   
   /**
     * The time at which the task status was last updated.
     */
-  var LastUpdatedTime: js.UndefOr[typings.awsSdk.fsxMod.LastUpdatedTime] = js.native
+  var LastUpdatedTime: js.UndefOr[typings.awsSdk.fsxMod.LastUpdatedTime] = js.undefined
   
   /**
     * A running total of the number of files that the task has successfully processed.
     */
-  var SucceededCount: js.UndefOr[typings.awsSdk.fsxMod.SucceededCount] = js.native
+  var SucceededCount: js.UndefOr[typings.awsSdk.fsxMod.SucceededCount] = js.undefined
   
   /**
     * The total number of files that the task will process. While a task is executing, the sum of SucceededCount plus FailedCount may not equal TotalCount. When the task is complete, TotalCount equals the sum of SucceededCount plus FailedCount.
     */
-  var TotalCount: js.UndefOr[typings.awsSdk.fsxMod.TotalCount] = js.native
+  var TotalCount: js.UndefOr[typings.awsSdk.fsxMod.TotalCount] = js.undefined
 }
 object DataRepositoryTaskStatus {
   

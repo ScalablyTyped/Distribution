@@ -15,7 +15,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.RightToLeft
 import typings.officeJsPreview.officeJsPreviewStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesFormat extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var borders: js.UndefOr[CellBorderCollection] = js.native
+  var borders: js.UndefOr[CellBorderCollection] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[CellPropertiesFill] = js.native
+  var fill: js.UndefOr[CellPropertiesFill] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var font: js.UndefOr[CellPropertiesFont] = js.native
+  var font: js.UndefOr[CellPropertiesFont] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait CellPropertiesFormat extends StObject {
     */
   var horizontalAlignment: js.UndefOr[
     HorizontalAlignment | General | Left | Center | Right | Fill | Justify | CenterAcrossSelection | Distributed
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var indentLevel: js.UndefOr[Double] = js.native
+  var indentLevel: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var protection: js.UndefOr[CellPropertiesProtection] = js.native
+  var protection: js.UndefOr[CellPropertiesProtection] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.native
+  var readingOrder: js.UndefOr[ReadingOrder | Context | LeftToRight | RightToLeft] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var textOrientation: js.UndefOr[Double] = js.native
+  var textOrientation: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -115,7 +113,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useStandardHeight: js.UndefOr[Boolean] = js.native
+  var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -123,7 +121,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useStandardWidth: js.UndefOr[Boolean] = js.native
+  var useStandardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -131,7 +129,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Top | Center | Bottom | Justify | Distributed] = js.undefined
   
   /**
     *
@@ -139,7 +137,7 @@ trait CellPropertiesFormat extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object CellPropertiesFormat {
   

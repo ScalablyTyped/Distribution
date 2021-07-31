@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The actions to be performed.
     */
-  var actions: js.UndefOr[Actions] = js.native
+  var actions: js.UndefOr[Actions] = js.undefined
   
   /**
     * Optional. The Boolean expression that, when TRUE, causes the actions to be performed. If not present, the actions are performed (=TRUE). If the expression result is not a Boolean value, the actions are not performed (=FALSE).
     */
-  var condition: js.UndefOr[Condition] = js.native
+  var condition: js.UndefOr[Condition] = js.undefined
   
   /**
     * The name of the event.
     */
-  var eventName: EventName = js.native
+  var eventName: EventName
 }
 object Event {
   

@@ -6,7 +6,6 @@ import typings.std.Parameters
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,17 +17,17 @@ object mod extends Shortcut {
   @js.native
   trait Co extends StObject {
     
-    def apply[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
+    def apply[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
     
-    def default[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
+    def default[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
     
-    def co[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](
+    def co[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](
       fn: F,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<F> is not an array type */ args: Parameters[F]
     ): js.Promise[ExtractType[ReturnType[F]]] = js.native
@@ -38,7 +37,7 @@ object mod extends Shortcut {
     @JSName("default")
     var default_Original: Co = js.native
     
-    def wrap[F /* <: js.Function1[/* repeated */ js.Any, Iterator[_, _, js.UndefOr[scala.Nothing]]] */](fn: F): js.Function1[/* args */ Parameters[F], js.Promise[ExtractType[ReturnType[F]]]] = js.native
+    def wrap[F /* <: js.Function1[/* repeated */ js.Any, Iterator[js.Any, js.Any, Unit]] */](fn: F): js.Function1[/* args */ Parameters[F], js.Promise[ExtractType[ReturnType[F]]]] = js.native
   }
   
   type ExtractType[T] = js.Any

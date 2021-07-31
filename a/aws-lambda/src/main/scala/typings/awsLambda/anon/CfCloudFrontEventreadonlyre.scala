@@ -2,13 +2,11 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CfCloudFrontEventreadonlyre extends StObject {
   
-  var cf: CloudFrontEventreadonlyre = js.native
+  var cf: CloudFrontEventreadonlyre
 }
 object CfCloudFrontEventreadonlyre {
   

@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.base.Interface
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait UIArea extends ManagedObject {
+trait UIArea
+  extends StObject
+     with ManagedObject {
   
   /**
     * Adds some content to the aggregation <code>content</code>.

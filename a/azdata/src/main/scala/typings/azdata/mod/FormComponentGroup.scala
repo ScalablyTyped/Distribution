@@ -3,21 +3,19 @@ package typings.azdata.mod
 import typings.azdata.anon.FormComponentlayoutFormIt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormComponentGroup extends StObject {
   
   /**
     * The form components to display in the group along with optional layouts for each item
     */
-  var components: js.Array[FormComponentlayoutFormIt] = js.native
+  var components: js.Array[FormComponentlayoutFormIt]
   
   /**
     * The title of the group, displayed above its components
     */
-  var title: String = js.native
+  var title: String
 }
 object FormComponentGroup {
   

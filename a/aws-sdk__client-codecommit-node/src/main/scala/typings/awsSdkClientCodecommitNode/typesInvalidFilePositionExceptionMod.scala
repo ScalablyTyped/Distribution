@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidFilePositionExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidFilePositionExceptionDetails> * / any */ @js.native
-  trait InvalidFilePositionException
-    extends PostCommentForComparedCommitExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidFilePositionExceptionDetails> * / any */ trait InvalidFilePositionException
+    extends StObject
+       with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFilePositionException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFilePositionException
   }
   object InvalidFilePositionException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFilePositionException
-    ): InvalidFilePositionException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidFilePositionException = {
+      val __obj = js.Dynamic.literal(name = "InvalidFilePositionException")
       __obj.asInstanceOf[InvalidFilePositionException]
     }
     
@@ -37,6 +34,5 @@ object typesInvalidFilePositionExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidFilePositionExceptionDetails extends StObject
 }

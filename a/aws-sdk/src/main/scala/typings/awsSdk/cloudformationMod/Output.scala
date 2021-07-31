@@ -2,31 +2,29 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * User defined description associated with the output.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * The name of the export associated with the output.
     */
-  var ExportName: js.UndefOr[typings.awsSdk.cloudformationMod.ExportName] = js.native
+  var ExportName: js.UndefOr[typings.awsSdk.cloudformationMod.ExportName] = js.undefined
   
   /**
     * The key associated with the output.
     */
-  var OutputKey: js.UndefOr[typings.awsSdk.cloudformationMod.OutputKey] = js.native
+  var OutputKey: js.UndefOr[typings.awsSdk.cloudformationMod.OutputKey] = js.undefined
   
   /**
     * The value associated with the output.
     */
-  var OutputValue: js.UndefOr[typings.awsSdk.cloudformationMod.OutputValue] = js.native
+  var OutputValue: js.UndefOr[typings.awsSdk.cloudformationMod.OutputValue] = js.undefined
 }
 object Output {
   

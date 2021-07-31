@@ -17,7 +17,6 @@ import typings.reactSvgInline.reactSvgInlineStrings.title
 import typings.reactSvgInline.reactSvgInlineStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,42 +31,41 @@ object mod extends Shortcut {
   }
   @JSImport("react-svg-inline", JSImport.Namespace)
   @js.native
-  val ^ : SVGInline = js.native
+  val ^ : js.Object & SVGInline = js.native
   
   type SVGInline = ComponentClass[SVGInlineProps, ComponentState]
   
-  @js.native
   trait SVGInlineProps extends StObject {
     
-    var accessibilityDesc: js.UndefOr[String] = js.native
+    var accessibilityDesc: js.UndefOr[String] = js.undefined
     
-    var accessibilityLabel: js.UndefOr[String] = js.native
+    var accessibilityLabel: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classSuffix: js.UndefOr[String] = js.native
+    var classSuffix: js.UndefOr[String] = js.undefined
     
     var cleanup: js.UndefOr[
         Boolean | (js.Array[
           title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup
         ])
-      ] = js.native
+      ] = js.undefined
     
     var cleanupExceptions: js.UndefOr[
         js.Array[
           title | desc | comment | defs | width | height | fill | sketchMSShapeGroup | sketchMSPage | sketchMSLayerGroup
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var component: js.UndefOr[ReactNode] = js.native
+    var component: js.UndefOr[ReactNode] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var svg: String = js.native
+    var svg: String
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SVGInlineProps {
     
@@ -163,8 +161,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = SVGInline
+  type _To = js.Object & SVGInline
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: SVGInline = ^
+  override def _to: js.Object & SVGInline = ^
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartOfSpeechTag extends StObject {
   
   /**
     * The confidence that Amazon Comprehend has that the part of speech was correctly identified.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
   
   /**
     * Identifies the part of speech that the token represents.
     */
-  var Tag: js.UndefOr[PartOfSpeechTagType] = js.native
+  var Tag: js.UndefOr[PartOfSpeechTagType] = js.undefined
 }
 object PartOfSpeechTag {
   

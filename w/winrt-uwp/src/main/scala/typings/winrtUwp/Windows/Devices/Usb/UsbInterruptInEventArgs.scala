@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Devices.Usb
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the object that is passed as a parameter to the event handler for the DataReceived event. */
-@js.native
 trait UsbInterruptInEventArgs extends StObject {
   
   /** Gets data from the interrupt IN endpoint. */
-  var interruptData: IBuffer = js.native
+  var interruptData: IBuffer
 }
 object UsbInterruptInEventArgs {
   

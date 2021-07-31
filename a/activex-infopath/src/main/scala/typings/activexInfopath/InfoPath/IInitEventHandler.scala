@@ -2,16 +2,14 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInitEventHandler extends StObject {
   
   @JSName("InfoPath.IInitEventHandler_typekey")
-  var InfoPathDotIInitEventHandler_typekey: IInitEventHandler = js.native
+  var InfoPathDotIInitEventHandler_typekey: IInitEventHandler
   
-  def InitEventHandler(punkSender: js.Any, pDocument: _XDocument, pROMode: XdReadOnlyViewMode): Unit = js.native
+  def InitEventHandler(punkSender: js.Any, pDocument: _XDocument, pROMode: XdReadOnlyViewMode): Unit
 }
 object IInitEventHandler {
   

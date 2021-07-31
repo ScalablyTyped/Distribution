@@ -4,20 +4,18 @@ import typings.chayns.chayns.dialog.dateType
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.dialog.date()
-@js.native
 trait DialogDateConfig extends StObject {
   
-  var dateType: typings.chayns.chayns.dialog.dateType = js.native
+  var dateType: typings.chayns.chayns.dialog.dateType
   
-  var maxDate: js.UndefOr[Date] = js.native
+  var maxDate: js.UndefOr[Date] = js.undefined
   
-  var minDate: js.UndefOr[Date] = js.native
+  var minDate: js.UndefOr[Date] = js.undefined
   
-  var preSelect: js.UndefOr[Date] = js.native
+  var preSelect: js.UndefOr[Date] = js.undefined
 }
 object DialogDateConfig {
   

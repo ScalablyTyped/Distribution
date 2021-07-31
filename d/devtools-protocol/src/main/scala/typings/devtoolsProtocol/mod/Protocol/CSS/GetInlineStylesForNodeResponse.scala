@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInlineStylesForNodeResponse extends StObject {
   
   /**
     * Attribute-defined element style (e.g. resulting from "width=20 height=100%").
     */
-  var attributesStyle: js.UndefOr[CSSStyle] = js.native
+  var attributesStyle: js.UndefOr[CSSStyle] = js.undefined
   
   /**
     * Inline style for the specified DOM node.
     */
-  var inlineStyle: js.UndefOr[CSSStyle] = js.native
+  var inlineStyle: js.UndefOr[CSSStyle] = js.undefined
 }
 object GetInlineStylesForNodeResponse {
   

@@ -3,17 +3,15 @@ package typings.ejWebAll.anon
 import typings.ejWebAll.ej.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofQuery extends StObject {
   
   /* static member */
-  def extend(prototype: js.Any): Query = js.native
+  def extend(prototype: js.Any): Query
   
   /* static member */
-  var fn: Query = js.native
+  var fn: Query
 }
 object TypeofQuery {
   

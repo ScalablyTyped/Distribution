@@ -10,44 +10,43 @@ import typings.babelTypes.babelTypesStrings.public
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSDeclareMethod_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var `abstract`: Boolean | Null = js.native
+  var `abstract`: Boolean | Null
   
-  var access: public | `private` | `protected` | Null = js.native
+  var access: public | `private` | `protected` | Null
   
-  var accessibility: public | `private` | `protected` | Null = js.native
+  var accessibility: public | `private` | `protected` | Null
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression = js.native
+  var key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression
   
-  var kind: get | set | method | constructor = js.native
+  var kind: get | set | method | constructor
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_] = js.native
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   
-  var returnType: TSTypeAnnotation_ | Noop_ | Null = js.native
+  var returnType: TSTypeAnnotation_ | Noop_ | Null
   
-  var static: Boolean = js.native
+  var static: Boolean
   
-  var typeParameters: TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_TSDeclareMethod_ : TSDeclareMethod = js.native
+  var type_TSDeclareMethod_ : TSDeclareMethod
 }
 object TSDeclareMethod_ {
   
@@ -59,11 +58,11 @@ object TSDeclareMethod_ {
     key: Identifier_ | StringLiteral_ | NumericLiteral_ | Expression,
     kind: get | set | method | constructor,
     params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    static: Boolean,
-    `type`: TSDeclareMethod
+    static: Boolean
   ): TSDeclareMethod_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], access = null, accessibility = null, decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, optional = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("TSDeclareMethod")
+    __obj.updateDynamic("abstract")(null)
     __obj.asInstanceOf[TSDeclareMethod_]
   }
   

@@ -10,9 +10,9 @@ TypeScript typings for Manufacturer Center API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.manufacturers |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 38 |
+| # releases         | 12 |
+| # dependents       | 1 |
+| # downloads        | 1114 |
 | # stars            | 0 |
 
 ## Links

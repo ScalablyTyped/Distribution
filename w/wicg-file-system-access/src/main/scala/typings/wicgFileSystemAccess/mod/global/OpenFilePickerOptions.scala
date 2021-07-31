@@ -2,13 +2,13 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenFilePickerOptions extends FilePickerOptions {
+trait OpenFilePickerOptions
+  extends StObject
+     with FilePickerOptions {
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
 }
 object OpenFilePickerOptions {
   

@@ -2,21 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeferredPermissionRequest extends StObject {
   
-  def allow(): Unit = js.native
+  def allow(): Unit
   
-  def deny(): Unit = js.native
+  def deny(): Unit
   
-  val id: Double = js.native
+  val id: Double
   
-  val `type`: MSWebViewPermissionType = js.native
+  val `type`: MSWebViewPermissionType
   
-  val uri: java.lang.String = js.native
+  val uri: java.lang.String
 }
 object DeferredPermissionRequest {
   

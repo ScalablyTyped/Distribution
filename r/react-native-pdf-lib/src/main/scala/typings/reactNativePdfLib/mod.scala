@@ -2,16 +2,18 @@ package typings.reactNativePdfLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("react-native-pdf-lib", "default.getDocumentsDirectory")
+    @JSImport("react-native-pdf-lib", JSImport.Default)
     @js.native
-    def getDocumentsDirectory(): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDocumentsDirectory(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentsDirectory")().asInstanceOf[String]
   }
   
   @JSImport("react-native-pdf-lib", "PDFDocument")
@@ -26,9 +28,12 @@ object mod {
   /* static members */
   object PDFDocument {
     
-    @JSImport("react-native-pdf-lib", "PDFDocument.create")
+    @JSImport("react-native-pdf-lib", "PDFDocument")
     @js.native
-    def create(path: String): PDFDocument = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(path: String): PDFDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(path.asInstanceOf[js.Any]).asInstanceOf[PDFDocument]
   }
   
   @JSImport("react-native-pdf-lib", "PDFPage")
@@ -50,21 +55,23 @@ object mod {
   /* static members */
   object PDFPage {
     
-    @JSImport("react-native-pdf-lib", "PDFPage.create")
+    @JSImport("react-native-pdf-lib", "PDFPage")
     @js.native
-    def create(): PDFPage = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): PDFPage = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[PDFPage]
   }
   
-  @js.native
   trait ImageDrawingOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ImageDrawingOptions {
     
@@ -103,18 +110,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RectangleDrawingOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object RectangleDrawingOptions {
     
@@ -159,12 +165,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SetMediaBoxOptions extends StObject {
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object SetMediaBoxOptions {
     
@@ -191,18 +196,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TextDrawingOptions extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontName: js.UndefOr[String] = js.native
+    var fontName: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object TextDrawingOptions {
     

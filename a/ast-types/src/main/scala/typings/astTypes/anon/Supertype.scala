@@ -7,29 +7,27 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Supertype extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var impltype: FlowTypeKind | Null = js.native
+  var impltype: FlowTypeKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var supertype: FlowTypeKind | Null = js.native
+  var supertype: FlowTypeKind | Null
   
-  var typeParameters: TypeParameterDeclarationKind | Null = js.native
+  var typeParameters: TypeParameterDeclarationKind | Null
 }
 object Supertype {
   
   @scala.inline
   def apply(id: IdentifierKind): Supertype = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], impltype = null, supertype = null, typeParameters = null)
     __obj.asInstanceOf[Supertype]
   }
   

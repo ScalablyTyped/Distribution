@@ -2,58 +2,56 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  def Copy(): Unit = js.native
+  def Copy(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Cut(): Unit = js.native
+  def Cut(): Unit
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var HeightRule: WdFrameSizeRule = js.native
+  var HeightRule: WdFrameSizeRule
   
-  var HorizontalDistanceFromText: Double = js.native
+  var HorizontalDistanceFromText: Double
   
-  var HorizontalPosition: Double = js.native
+  var HorizontalPosition: Double
   
-  var LockAnchor: Boolean = js.native
+  var LockAnchor: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  var RelativeHorizontalPosition: WdRelativeHorizontalPosition = js.native
+  var RelativeHorizontalPosition: WdRelativeHorizontalPosition
   
-  var RelativeVerticalPosition: WdRelativeVerticalPosition = js.native
+  var RelativeVerticalPosition: WdRelativeVerticalPosition
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Shading: typings.activexWord.Word.Shading = js.native
+  val Shading: typings.activexWord.Word.Shading
   
-  var TextWrap: Boolean = js.native
+  var TextWrap: Boolean
   
-  var VerticalDistanceFromText: Double = js.native
+  var VerticalDistanceFromText: Double
   
-  var VerticalPosition: Double = js.native
+  var VerticalPosition: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
-  var WidthRule: WdFrameSizeRule = js.native
+  var WidthRule: WdFrameSizeRule
   
   @JSName("Word.Frame_typekey")
-  var WordDotFrame_typekey: Frame = js.native
+  var WordDotFrame_typekey: Frame
 }
 object Frame {
   

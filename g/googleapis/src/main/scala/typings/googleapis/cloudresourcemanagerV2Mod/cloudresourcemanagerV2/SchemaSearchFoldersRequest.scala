@@ -2,26 +2,24 @@ package typings.googleapis.cloudresourcemanagerV2Mod.cloudresourcemanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for searching folders.
   */
-@js.native
 trait SchemaSearchFoldersRequest extends StObject {
   
   /**
     * The maximum number of folders to return in the response. This field is
     * optional.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A pagination token returned from a previous call to `SearchFolders` that
     * indicates from where search should continue. This field is optional.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Search criteria used to select the Folders to return. If no search
@@ -40,7 +38,7 @@ trait SchemaSearchFoldersRequest extends StObject {
     * String\\&quot;|Folders whose display name includes both &quot;Test&quot;
     * and &quot;String&quot;.|
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchFoldersRequest {
   

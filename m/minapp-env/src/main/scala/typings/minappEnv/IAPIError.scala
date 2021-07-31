@@ -2,7 +2,6 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////
@@ -11,10 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Common interfaces and types
   */
-@js.native
-trait IAPIError extends IAPICompleteParam {
+trait IAPIError
+  extends StObject
+     with IAPICompleteParam {
   
-  var errMsg: java.lang.String = js.native
+  var errMsg: java.lang.String
 }
 object IAPIError {
   

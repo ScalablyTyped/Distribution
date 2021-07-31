@@ -2,13 +2,11 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config for SHOT_CHANGE_DETECTION.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p3beta1ShotChangeDetectionConfig extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGoogleCloudVideointelligenceV1p3beta1ShotChangeDetectionConfig exten
     * &quot;builtin/stable&quot; (the default if unset) and
     * &quot;builtin/latest&quot;.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p3beta1ShotChangeDetectionConfig {
   

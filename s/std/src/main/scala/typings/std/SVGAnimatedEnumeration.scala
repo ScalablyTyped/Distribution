@@ -2,16 +2,14 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used for attributes whose value must be a constant from a particular enumeration and which can be animated. */
-@js.native
 trait SVGAnimatedEnumeration extends StObject {
   
-  val animVal: Double = js.native
+  val animVal: Double
   
-  var baseVal: Double = js.native
+  var baseVal: Double
 }
 object SVGAnimatedEnumeration {
   

@@ -2,15 +2,13 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReminderNotifyEmail extends StObject {
   
-  var reminderNotifyEmail: js.UndefOr[Boolean] = js.native
+  var reminderNotifyEmail: js.UndefOr[Boolean] = js.undefined
   
-  var reminderNotifyInApp: js.UndefOr[Boolean] = js.native
+  var reminderNotifyInApp: js.UndefOr[Boolean] = js.undefined
 }
 object ReminderNotifyEmail {
   

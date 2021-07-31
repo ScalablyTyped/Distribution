@@ -5,74 +5,74 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupOpenOptions extends Object {
+trait PopupOpenOptions
+  extends StObject
+     with Object {
   
   /**
     * **Since:** 4.5    When `true`, indicates that only the popup header will display.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the the [content](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#content) of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var content: js.UndefOr[String | HTMLElement | Widget_] = js.native
+  var content: js.UndefOr[String | HTMLElement | Widget_] = js.undefined
   
   /**
     * **Since:** 4.5    This property enables multiple features in a popup to display in a list rather than displaying the first selected feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var featureMenuOpen: js.UndefOr[Boolean] = js.native
+  var featureMenuOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the popup's [features](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#features), which populate the title and content of the popup based on each graphic's [PopupTemplate](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var features: js.UndefOr[js.Array[Graphic]] = js.native
+  var features: js.UndefOr[js.Array[Graphic]] = js.undefined
   
   /**
     * When `true`, indicates the popup should fetch the content of this feature and display it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var fetchFeatures: js.UndefOr[Boolean] = js.native
+  var fetchFeatures: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the popup's [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location), which is the geometry used to position the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var location: js.UndefOr[Geometry_] = js.native
+  var location: js.UndefOr[Geometry_] = js.undefined
   
   /**
     * Sets pending [promises](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#promises) on the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var promises: js.UndefOr[js.Array[js.Promise[_]]] = js.native
+  var promises: js.UndefOr[js.Array[js.Promise[js.Any]]] = js.undefined
   
   /**
     * Sets the [title](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#title) of the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * When `true` indicates the popup should update its [location](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#location) for each paginated feature based on the [selected feature's](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#selectedFeature) geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#open)
     */
-  var updateLocationEnabled: js.UndefOr[Boolean] = js.native
+  var updateLocationEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object PopupOpenOptions {
   
@@ -129,7 +129,7 @@ object PopupOpenOptions {
     def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setPromises(value: js.Array[js.Promise[_]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
+    def setPromises(value: js.Array[js.Promise[js.Any]]): Self = StObject.set(x, "promises", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPromisesUndefined: Self = StObject.set(x, "promises", js.undefined)

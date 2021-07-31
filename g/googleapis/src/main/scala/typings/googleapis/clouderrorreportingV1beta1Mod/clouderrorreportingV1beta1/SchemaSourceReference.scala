@@ -2,27 +2,25 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a particular snapshot of the source tree used to build and
   * deploy an application.
   */
-@js.native
 trait SchemaSourceReference extends StObject {
   
   /**
     * Optional. A URI string identifying the repository. Example:
     * &quot;https://github.com/GoogleCloudPlatform/kubernetes.git&quot;
     */
-  var repository: js.UndefOr[String] = js.native
+  var repository: js.UndefOr[String] = js.undefined
   
   /**
     * The canonical and persistent identifier of the deployed revision. Example
     * (git): &quot;0035781c50ec7aa23385dc841529ce8a4b70db1b&quot;
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceReference {
   

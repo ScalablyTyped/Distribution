@@ -11,8 +11,8 @@ Connect querystring middleware
 | Full name          | qs-middleware |
 | Keywords           | connect, querystring |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 73052 |
+| # dependents       | 5 |
+| # downloads        | 79814 |
 | # stars            | 0 |
 
 ## Links

@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesOptions extends StObject {
   
   /**
@@ -13,33 +11,33 @@ trait SeriesOptions extends StObject {
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -47,7 +45,7 @@ trait SeriesOptions extends StObject {
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The type of series, for example
@@ -55,7 +53,7 @@ trait SeriesOptions extends StObject {
     * chart.type, so unless the chart is a combination of series types, there
     * is no need to set it on the series level.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -63,7 +61,7 @@ trait SeriesOptions extends StObject {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -71,12 +69,12 @@ trait SeriesOptions extends StObject {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) Define the visual z index of the series.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object SeriesOptions {
   

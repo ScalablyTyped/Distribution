@@ -2,29 +2,27 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The allowed types for [VALUE] in a `[KEY]:[VALUE]` attribute.
   */
-@js.native
 trait SchemaAttributeValue extends StObject {
   
   /**
     * A Boolean value represented by `true` or `false`.
     */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A 64-bit signed integer.
     */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /**
     * A string up to 256 bytes long.
     */
-  var stringValue: js.UndefOr[SchemaTruncatableString] = js.native
+  var stringValue: js.UndefOr[SchemaTruncatableString] = js.undefined
 }
 object SchemaAttributeValue {
   

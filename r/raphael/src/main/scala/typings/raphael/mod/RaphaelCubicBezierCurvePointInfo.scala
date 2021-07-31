@@ -2,31 +2,31 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RaphaelCubicBezierCurvePointInfo extends RaphaelCartesianCurvePoint {
+trait RaphaelCubicBezierCurvePointInfo
+  extends StObject
+     with RaphaelCartesianCurvePoint {
   
   /**
     * The end point of the cubic bezier curve.
     */
-  var end: RaphaelCartesianPoint = js.native
+  var end: RaphaelCartesianPoint
   
   /**
     * The left anchor point of the cubic bezier curve.
     */
-  var m: RaphaelCartesianPoint = js.native
+  var m: RaphaelCartesianPoint
   
   /**
     * The right anchor point of the cubic bezier curve.
     */
-  var n: RaphaelCartesianPoint = js.native
+  var n: RaphaelCartesianPoint
   
   /**
     * The start point of the cubic bezier curve.
     */
-  var start: RaphaelCartesianPoint = js.native
+  var start: RaphaelCartesianPoint
 }
 object RaphaelCubicBezierCurvePointInfo {
   

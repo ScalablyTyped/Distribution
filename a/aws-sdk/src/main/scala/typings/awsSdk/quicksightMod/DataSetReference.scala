@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSetReference extends StObject {
   
   /**
     * Dataset Amazon Resource Name (ARN).
     */
-  var DataSetArn: Arn = js.native
+  var DataSetArn: Arn
   
   /**
     * Dataset placeholder.
     */
-  var DataSetPlaceholder: NonEmptyString = js.native
+  var DataSetPlaceholder: NonEmptyString
 }
 object DataSetReference {
   

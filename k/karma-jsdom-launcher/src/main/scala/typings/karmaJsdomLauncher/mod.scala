@@ -2,19 +2,17 @@ package typings.karmaJsdomLauncher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Launcher for jsdom configuration
       */
-    var jsdomLauncher: js.UndefOr[JsdomLauncherOptions] = js.native
+    var jsdomLauncher: js.UndefOr[JsdomLauncherOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -35,14 +33,13 @@ object mod {
     }
   }
   
-  @js.native
   trait JsdomLauncherOptions extends StObject {
     
     /**
       * You can pass options directly to jsdom as shown below.
       * See jsdom's own documentation for all supported options.
       */
-    var jsdom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any = js.native
+    var jsdom: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jsdom.ConstructorOptions */ js.Any
   }
   object JsdomLauncherOptions {
     

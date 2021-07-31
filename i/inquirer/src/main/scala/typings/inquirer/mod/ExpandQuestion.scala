@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ExpandQuestion[T /* <: Answers */] extends ListQuestionOptionsBase[T, ExpandChoiceMap[T]] {
+trait ExpandQuestion[T /* <: Answers */]
+  extends StObject
+     with ListQuestionOptionsBase[T, ExpandChoiceMap[T]] {
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_ExpandQuestion: expand = js.native
+  var type_ExpandQuestion: expand
 }
 object ExpandQuestion {
   
   @scala.inline
-  def apply[T /* <: Answers */](`type`: expand): ExpandQuestion[T] = {
+  def apply[T /* <: Answers */](): ExpandQuestion[T] = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("expand")
     __obj.asInstanceOf[ExpandQuestion[T]]
   }
   
   @scala.inline
-  implicit class ExpandQuestionMutableBuilder[Self <: ExpandQuestion[_], T /* <: Answers */] (val x: Self with ExpandQuestion[T]) extends AnyVal {
+  implicit class ExpandQuestionMutableBuilder[Self <: ExpandQuestion[?], T /* <: Answers */] (val x: Self & ExpandQuestion[T]) extends AnyVal {
     
     @scala.inline
     def setType(value: expand): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

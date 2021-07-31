@@ -2,15 +2,13 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationsButton extends StObject {
   
-  var counterLabel: String = js.native
+  var counterLabel: String
   
-  var notificationsButton: String = js.native
+  var notificationsButton: String
 }
 object NotificationsButton {
   

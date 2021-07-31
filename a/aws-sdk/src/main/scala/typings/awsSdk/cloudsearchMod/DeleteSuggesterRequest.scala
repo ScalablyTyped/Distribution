@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSuggesterRequest extends StObject {
   
-  var DomainName: typings.awsSdk.cloudsearchMod.DomainName = js.native
+  var DomainName: typings.awsSdk.cloudsearchMod.DomainName
   
   /**
     * Specifies the name of the suggester you want to delete.
     */
-  var SuggesterName: StandardName = js.native
+  var SuggesterName: StandardName
 }
 object DeleteSuggesterRequest {
   

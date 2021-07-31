@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeBindings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgTreeBindings
     * Gets the next layer of bindings in a recursive fashion.
     *
     */
-  var bindings: js.UndefOr[IgTreeBindingsBindings] = js.native
+  var bindings: js.UndefOr[IgTreeBindingsBindings] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would hold the node's
@@ -25,57 +24,57 @@ trait IgTreeBindings
     * checked|partially checked|unchecked states being respectively "on|partial|off".
     *
     */
-  var checkedKey: js.UndefOr[String] = js.native
+  var checkedKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property that holds the child data of the current layer node.
     *
     */
-  var childDataProperty: js.UndefOr[String] = js.native
+  var childDataProperty: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the child data node. Used in client-only binding directly to XML.
     *
     */
-  var childDataXPath: js.UndefOr[String] = js.native
+  var childDataXPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would hold the node`s
     * expanded state. The expanded state is represented by a boolean.
     *
     */
-  var expandedKey: js.UndefOr[String] = js.native
+  var expandedKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would be used as a URL for the node image.
     *
     */
-  var imageUrlKey: js.UndefOr[String] = js.native
+  var imageUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the image URL attribute/node. Used in client-only binding directly to XML.
     *
     */
-  var imageUrlXPath: js.UndefOr[String] = js.native
+  var imageUrlXPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would be used as an href attribute for the node anchor.
     *
     */
-  var navigateUrlKey: js.UndefOr[String] = js.native
+  var navigateUrlKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the navigate URL attribute/node. Used in client-only binding directly to XML.
     *
     */
-  var navigateUrlXPath: js.UndefOr[String] = js.native
+  var navigateUrlXPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the node content template for the current layer of bindings. The igTree utilizes igTemplating
     * for generating node content templates. A good example of how to setup templating can be found here http://www.infragistics.com/community/blogs/marina_stoyanova/archive/2014/06/17/how-to-use-templates-to-style-the-different-nodes-of-the-ignite-ui-tree-control.aspx
     *
     */
-  var nodeContentTemplate: js.UndefOr[String] = js.native
+  var nodeContentTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which is the primary key attribute
@@ -83,44 +82,44 @@ trait IgTreeBindings
     * would be generated using primary keys instead of indices.
     *
     */
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the root data node. Used in client-only binding directly to XML.
     *
     */
-  var searchFieldXPath: js.UndefOr[String] = js.native
+  var searchFieldXPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would be used as a target
     * attribute for the node anchor.
     *
     */
-  var targetKey: js.UndefOr[String] = js.native
+  var targetKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would be the node text.
     *
     */
-  var textKey: js.UndefOr[String] = js.native
+  var textKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the text attribute/node. Used in client-only binding directly to XML.
     *
     */
-  var textXPath: js.UndefOr[String] = js.native
+  var textXPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the data source property the value of which would be the node value.
     *
     */
-  var valueKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the XPath to the value attribute/node. Used in client-only binding directly to XML.
     *
     */
-  var valueXPath: js.UndefOr[String] = js.native
+  var valueXPath: js.UndefOr[String] = js.undefined
 }
 object IgTreeBindings {
   

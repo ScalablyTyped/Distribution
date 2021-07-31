@@ -4,15 +4,13 @@ import typings.johnnyFive.johnnyFiveStrings.NC
 import typings.johnnyFive.johnnyFiveStrings.NO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchOption extends StObject {
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var `type`: js.UndefOr[NO | NC] = js.native
+  var `type`: js.UndefOr[NO | NC] = js.undefined
 }
 object SwitchOption {
   

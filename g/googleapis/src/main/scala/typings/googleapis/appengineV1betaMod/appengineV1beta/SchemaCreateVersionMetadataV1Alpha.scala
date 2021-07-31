@@ -2,21 +2,19 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for the given google.longrunning.Operation during a
   * google.appengine.v1alpha.CreateVersionRequest.
   */
-@js.native
 trait SchemaCreateVersionMetadataV1Alpha extends StObject {
   
   /**
     * The Cloud Build ID if one was created as part of the version create.
     * @OutputOnly
     */
-  var cloudBuildId: js.UndefOr[String] = js.native
+  var cloudBuildId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateVersionMetadataV1Alpha {
   

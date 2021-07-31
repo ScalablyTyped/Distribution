@@ -5,23 +5,21 @@ import typings.babelTypes.indexTs37Mod.Expression
 import typings.babelTypes.indexTs37Mod.LVal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: LVal = js.native
+  var id: LVal
   
-  var init: js.UndefOr[Expression] = js.native
+  var init: js.UndefOr[Expression] = js.undefined
   
-  var kind: `var` = js.native
+  var kind: `var`
 }
 object Id {
   
   @scala.inline
-  def apply(id: LVal, kind: `var`): Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any])
+  def apply(id: LVal): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], kind = "var")
     __obj.asInstanceOf[Id]
   }
   

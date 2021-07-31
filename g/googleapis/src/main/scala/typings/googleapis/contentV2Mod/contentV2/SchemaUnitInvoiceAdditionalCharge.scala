@@ -2,26 +2,24 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUnitInvoiceAdditionalCharge extends StObject {
   
   /**
     * [required] Amount of the additional charge.
     */
-  var additionalChargeAmount: js.UndefOr[SchemaAmount] = js.native
+  var additionalChargeAmount: js.UndefOr[SchemaAmount] = js.undefined
   
   /**
     * Deprecated.
     */
-  var additionalChargePromotions: js.UndefOr[js.Array[SchemaPromotion]] = js.native
+  var additionalChargePromotions: js.UndefOr[js.Array[SchemaPromotion]] = js.undefined
   
   /**
     * [required] Type of the additional charge.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUnitInvoiceAdditionalCharge {
   

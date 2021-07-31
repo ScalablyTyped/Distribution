@@ -3,59 +3,57 @@ package typings.winrt.Windows.UI.Input
 import typings.winrt.Windows.Foundation.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerPointProperties extends StObject {
   
-  var contactRect: Rect = js.native
+  var contactRect: Rect
   
-  var contactRectRaw: Rect = js.native
+  var contactRectRaw: Rect
   
-  def getUsageValue(usagePage: Double, usageId: Double): Double = js.native
+  def getUsageValue(usagePage: Double, usageId: Double): Double
   
-  def hasUsage(usagePage: Double, usageId: Double): Boolean = js.native
+  def hasUsage(usagePage: Double, usageId: Double): Boolean
   
-  var isBarrelButtonPressed: Boolean = js.native
+  var isBarrelButtonPressed: Boolean
   
-  var isCanceled: Boolean = js.native
+  var isCanceled: Boolean
   
-  var isEraser: Boolean = js.native
+  var isEraser: Boolean
   
-  var isHorizontalMouseWheel: Boolean = js.native
+  var isHorizontalMouseWheel: Boolean
   
-  var isInRange: Boolean = js.native
+  var isInRange: Boolean
   
-  var isInverted: Boolean = js.native
+  var isInverted: Boolean
   
-  var isLeftButtonPressed: Boolean = js.native
+  var isLeftButtonPressed: Boolean
   
-  var isMiddleButtonPressed: Boolean = js.native
+  var isMiddleButtonPressed: Boolean
   
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
-  var isRightButtonPressed: Boolean = js.native
+  var isRightButtonPressed: Boolean
   
-  var isXButton1Pressed: Boolean = js.native
+  var isXButton1Pressed: Boolean
   
-  var isXButton2Pressed: Boolean = js.native
+  var isXButton2Pressed: Boolean
   
-  var mouseWheelDelta: Double = js.native
+  var mouseWheelDelta: Double
   
-  var orientation: Double = js.native
+  var orientation: Double
   
-  var pointerUpdateKind: PointerUpdateKind = js.native
+  var pointerUpdateKind: PointerUpdateKind
   
-  var pressure: Double = js.native
+  var pressure: Double
   
-  var touchConfidence: Boolean = js.native
+  var touchConfidence: Boolean
   
-  var twist: Double = js.native
+  var twist: Double
   
-  var xTilt: Double = js.native
+  var xTilt: Double
   
-  var yTilt: Double = js.native
+  var yTilt: Double
 }
 object IPointerPointProperties {
   

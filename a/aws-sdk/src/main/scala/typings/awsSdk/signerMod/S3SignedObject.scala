@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SignedObject extends StObject {
   
   /**
     * Name of the S3 bucket.
     */
-  var bucketName: js.UndefOr[BucketName] = js.native
+  var bucketName: js.UndefOr[BucketName] = js.undefined
   
   /**
     * Key name that uniquely identifies a signed code image in your bucket.
     */
-  var key: js.UndefOr[typings.awsSdk.signerMod.key] = js.native
+  var key: js.UndefOr[typings.awsSdk.signerMod.key] = js.undefined
 }
 object S3SignedObject {
   

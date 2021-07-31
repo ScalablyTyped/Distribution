@@ -19,7 +19,6 @@ import typings.three.threeStrings.mediump
 import typings.three.webGLRendererMod.WebGLRenderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialMod {
@@ -347,86 +346,85 @@ object materialMod {
     var visible: Boolean = js.native
   }
   
-  @js.native
   trait MaterialParameters extends StObject {
     
-    var alphaTest: js.UndefOr[Double] = js.native
+    var alphaTest: js.UndefOr[Double] = js.undefined
     
-    var blendDst: js.UndefOr[BlendingDstFactor] = js.native
+    var blendDst: js.UndefOr[BlendingDstFactor] = js.undefined
     
-    var blendDstAlpha: js.UndefOr[Double] = js.native
+    var blendDstAlpha: js.UndefOr[Double] = js.undefined
     
-    var blendEquation: js.UndefOr[BlendingEquation] = js.native
+    var blendEquation: js.UndefOr[BlendingEquation] = js.undefined
     
-    var blendEquationAlpha: js.UndefOr[Double] = js.native
+    var blendEquationAlpha: js.UndefOr[Double] = js.undefined
     
-    var blendSrc: js.UndefOr[BlendingSrcFactor | BlendingDstFactor] = js.native
+    var blendSrc: js.UndefOr[BlendingSrcFactor | BlendingDstFactor] = js.undefined
     
-    var blendSrcAlpha: js.UndefOr[Double] = js.native
+    var blendSrcAlpha: js.UndefOr[Double] = js.undefined
     
-    var blending: js.UndefOr[Blending] = js.native
+    var blending: js.UndefOr[Blending] = js.undefined
     
-    var clipIntersection: js.UndefOr[Boolean] = js.native
+    var clipIntersection: js.UndefOr[Boolean] = js.undefined
     
-    var clipShadows: js.UndefOr[Boolean] = js.native
+    var clipShadows: js.UndefOr[Boolean] = js.undefined
     
-    var clippingPlanes: js.UndefOr[js.Array[Plane]] = js.native
+    var clippingPlanes: js.UndefOr[js.Array[Plane]] = js.undefined
     
-    var colorWrite: js.UndefOr[Boolean] = js.native
+    var colorWrite: js.UndefOr[Boolean] = js.undefined
     
-    var defines: js.UndefOr[js.Any] = js.native
+    var defines: js.UndefOr[js.Any] = js.undefined
     
-    var depthFunc: js.UndefOr[DepthModes] = js.native
+    var depthFunc: js.UndefOr[DepthModes] = js.undefined
     
-    var depthTest: js.UndefOr[Boolean] = js.native
+    var depthTest: js.UndefOr[Boolean] = js.undefined
     
-    var depthWrite: js.UndefOr[Boolean] = js.native
+    var depthWrite: js.UndefOr[Boolean] = js.undefined
     
-    var dithering: js.UndefOr[Boolean] = js.native
+    var dithering: js.UndefOr[Boolean] = js.undefined
     
-    var flatShading: js.UndefOr[Boolean] = js.native
+    var flatShading: js.UndefOr[Boolean] = js.undefined
     
-    var fog: js.UndefOr[Boolean] = js.native
+    var fog: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var polygonOffset: js.UndefOr[Boolean] = js.native
+    var polygonOffset: js.UndefOr[Boolean] = js.undefined
     
-    var polygonOffsetFactor: js.UndefOr[Double] = js.native
+    var polygonOffsetFactor: js.UndefOr[Double] = js.undefined
     
-    var polygonOffsetUnits: js.UndefOr[Double] = js.native
+    var polygonOffsetUnits: js.UndefOr[Double] = js.undefined
     
-    var precision: js.UndefOr[highp | mediump | lowp | Null] = js.native
+    var precision: js.UndefOr[highp | mediump | lowp | Null] = js.undefined
     
-    var premultipliedAlpha: js.UndefOr[Boolean] = js.native
+    var premultipliedAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var shadowSide: js.UndefOr[Side] = js.native
+    var shadowSide: js.UndefOr[Side] = js.undefined
     
-    var side: js.UndefOr[Side] = js.native
+    var side: js.UndefOr[Side] = js.undefined
     
-    var stencilFail: js.UndefOr[StencilOp] = js.native
+    var stencilFail: js.UndefOr[StencilOp] = js.undefined
     
-    var stencilFunc: js.UndefOr[StencilFunc] = js.native
+    var stencilFunc: js.UndefOr[StencilFunc] = js.undefined
     
-    var stencilMask: js.UndefOr[Double] = js.native
+    var stencilMask: js.UndefOr[Double] = js.undefined
     
-    var stencilRef: js.UndefOr[Double] = js.native
+    var stencilRef: js.UndefOr[Double] = js.undefined
     
-    var stencilWrite: js.UndefOr[Boolean] = js.native
+    var stencilWrite: js.UndefOr[Boolean] = js.undefined
     
-    var stencilZFail: js.UndefOr[StencilOp] = js.native
+    var stencilZFail: js.UndefOr[StencilOp] = js.undefined
     
-    var stencilZPass: js.UndefOr[StencilOp] = js.native
+    var stencilZPass: js.UndefOr[StencilOp] = js.undefined
     
-    var toneMapped: js.UndefOr[Boolean] = js.native
+    var toneMapped: js.UndefOr[Boolean] = js.undefined
     
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
     
-    var vertexColors: js.UndefOr[Boolean] = js.native
+    var vertexColors: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object MaterialParameters {
     

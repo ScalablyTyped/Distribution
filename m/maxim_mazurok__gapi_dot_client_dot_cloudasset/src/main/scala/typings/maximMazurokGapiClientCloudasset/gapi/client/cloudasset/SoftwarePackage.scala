@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SoftwarePackage extends StObject {
   
   /** Details of an APT package. For details about the apt package manager, see https://wiki.debian.org/Apt. */
-  var aptPackage: js.UndefOr[VersionedPackage] = js.native
+  var aptPackage: js.UndefOr[VersionedPackage] = js.undefined
   
   /** Details of a COS package. */
-  var cosPackage: js.UndefOr[VersionedPackage] = js.native
+  var cosPackage: js.UndefOr[VersionedPackage] = js.undefined
   
   /** Details of a Googet package. For details about the googet package manager, see https://github.com/google/googet. */
-  var googetPackage: js.UndefOr[VersionedPackage] = js.native
+  var googetPackage: js.UndefOr[VersionedPackage] = js.undefined
   
   /**
     * Details of a Windows Quick Fix engineering package. See https://docs.microsoft.com/en-us/windows/win32/cimwin32prov/win32-quickfixengineering for info in Windows Quick Fix
     * Engineering.
     */
-  var qfePackage: js.UndefOr[WindowsQuickFixEngineeringPackage] = js.native
+  var qfePackage: js.UndefOr[WindowsQuickFixEngineeringPackage] = js.undefined
   
   /** Details of a Windows Update package. See https://docs.microsoft.com/en-us/windows/win32/api/_wua/ for information about Windows Update. */
-  var wuaPackage: js.UndefOr[WindowsUpdatePackage] = js.native
+  var wuaPackage: js.UndefOr[WindowsUpdatePackage] = js.undefined
   
   /** Yum package info. For details about the yum package manager, see https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/6/html/deployment_guide/ch-yum. */
-  var yumPackage: js.UndefOr[VersionedPackage] = js.native
+  var yumPackage: js.UndefOr[VersionedPackage] = js.undefined
   
   /** Details of a Zypper package. For details about the Zypper package manager, see https://en.opensuse.org/SDB:Zypper_manual. */
-  var zypperPackage: js.UndefOr[VersionedPackage] = js.native
+  var zypperPackage: js.UndefOr[VersionedPackage] = js.undefined
   
   /** Details of a Zypper patch. For details about the Zypper package manager, see https://en.opensuse.org/SDB:Zypper_manual. */
-  var zypperPatch: js.UndefOr[ZypperPatch] = js.native
+  var zypperPatch: js.UndefOr[ZypperPatch] = js.undefined
 }
 object SoftwarePackage {
   

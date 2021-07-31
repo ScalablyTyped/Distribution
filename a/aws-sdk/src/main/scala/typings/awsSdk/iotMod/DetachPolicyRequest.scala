@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetachPolicyRequest extends StObject {
   
   /**
     * The policy to detach.
     */
-  var policyName: PolicyName = js.native
+  var policyName: PolicyName
   
   /**
     * The target from which the policy will be detached.
     */
-  var target: PolicyTarget = js.native
+  var target: PolicyTarget
 }
 object DetachPolicyRequest {
   

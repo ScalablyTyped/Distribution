@@ -2,46 +2,44 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the account. For more information about ARNs in Organizations, see ARN Formats Supported by Organizations in the AWS Organizations User Guide.
     */
-  var Arn: js.UndefOr[AccountArn] = js.native
+  var Arn: js.UndefOr[AccountArn] = js.undefined
   
   /**
     * The email address associated with the AWS account. The regex pattern for this parameter is a string of characters that represents a standard internet email address.
     */
-  var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.native
+  var Email: js.UndefOr[typings.awsSdk.organizationsMod.Email] = js.undefined
   
   /**
     * The unique identifier (ID) of the account. The regex pattern for an account ID string requires exactly 12 digits.
     */
-  var Id: js.UndefOr[AccountId] = js.native
+  var Id: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The method by which the account joined the organization.
     */
-  var JoinedMethod: js.UndefOr[AccountJoinedMethod] = js.native
+  var JoinedMethod: js.UndefOr[AccountJoinedMethod] = js.undefined
   
   /**
     * The date the account became a part of the organization.
     */
-  var JoinedTimestamp: js.UndefOr[Timestamp] = js.native
+  var JoinedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The friendly name of the account. The regex pattern that is used to validate this parameter is a string of any of the characters in the ASCII character range.
     */
-  var Name: js.UndefOr[AccountName] = js.native
+  var Name: js.UndefOr[AccountName] = js.undefined
   
   /**
     * The status of the account in the organization.
     */
-  var Status: js.UndefOr[AccountStatus] = js.native
+  var Status: js.UndefOr[AccountStatus] = js.undefined
 }
 object Account {
   

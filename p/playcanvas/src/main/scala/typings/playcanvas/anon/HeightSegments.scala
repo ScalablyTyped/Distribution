@@ -3,19 +3,17 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.Vec3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightSegments extends StObject {
   
-  var halfExtents: js.UndefOr[Vec3] = js.native
+  var halfExtents: js.UndefOr[Vec3] = js.undefined
   
-  var heightSegments: js.UndefOr[Double] = js.native
+  var heightSegments: js.UndefOr[Double] = js.undefined
   
-  var lengthSegments: js.UndefOr[Double] = js.native
+  var lengthSegments: js.UndefOr[Double] = js.undefined
   
-  var widthSegments: js.UndefOr[Double] = js.native
+  var widthSegments: js.UndefOr[Double] = js.undefined
 }
 object HeightSegments {
   

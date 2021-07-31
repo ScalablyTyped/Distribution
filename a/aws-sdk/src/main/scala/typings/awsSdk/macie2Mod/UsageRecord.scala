@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageRecord extends StObject {
   
   /**
     * The unique identifier for the AWS account that the data applies to.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the free trial started for the account.
     */
-  var freeTrialStartDate: js.UndefOr[timestampIso8601] = js.native
+  var freeTrialStartDate: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * An array of objects that contains usage data and quotas for the account. Each object contains the data for a specific usage metric and the corresponding quota.
     */
-  var usage: js.UndefOr[listOfUsageByAccount] = js.native
+  var usage: js.UndefOr[listOfUsageByAccount] = js.undefined
 }
 object UsageRecord {
   

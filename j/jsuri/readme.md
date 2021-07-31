@@ -11,8 +11,8 @@ Uri and query string manipulation
 | Full name          | jsuri |
 | Keywords           | uri, url, query, path |
 | # releases         | 0 |
-| # dependents       | 42 |
-| # downloads        | 2181104 |
+| # dependents       | 43 |
+| # downloads        | 2763037 |
 | # stars            | 2 |
 
 ## Links

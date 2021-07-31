@@ -19,10 +19,8 @@ import typings.googleMaps.googleMapsStrings.types
 import typings.googleMaps.googleMapsStrings.vicinity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindPlaceRequest extends StObject {
   
   /**
@@ -34,25 +32,25 @@ trait FindPlaceRequest extends StObject {
     js.Array[
       icon | geometry | plus_code | name | opening_hours | photos | place_id | scope | alt_ids | price_level | rating | types | vicinity | formatted_address | permanently_closed
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** The text input specifying which place to search for (for example, a name, address, or phone number). */
-  var input: String = js.native
+  var input: String
   
   /** The type of input. This can be one of either `textquery` or `phonenumber`. */
-  var inputtype: textquery | phonenumber = js.native
+  var inputtype: textquery | phonenumber
   
   /**
     * The language code, indicating in which language the results should be returned, if possible.
     * Searches are also biased to the selected language; results in the selected language may be given a higher ranking
     */
-  var language: js.UndefOr[Language] = js.native
+  var language: js.UndefOr[Language] = js.undefined
   
   /**
     * Prefer results in a specified area, by specifying either a radius plus lat/lng, or two lat/lng pairs representing
     * the points of a rectangle. If this parameter is not specified, the API uses IP address biasing by default.
     */
-  var locationbias: js.UndefOr[String] = js.native
+  var locationbias: js.UndefOr[String] = js.undefined
 }
 object FindPlaceRequest {
   

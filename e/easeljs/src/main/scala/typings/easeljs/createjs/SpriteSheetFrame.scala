@@ -3,16 +3,14 @@ package typings.easeljs.createjs
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // what is returned from SpriteSheet.getFrame(number)
-@js.native
 trait SpriteSheetFrame extends StObject {
   
-  var image: HTMLImageElement = js.native
+  var image: HTMLImageElement
   
-  var rect: Rectangle = js.native
+  var rect: Rectangle
 }
 object SpriteSheetFrame {
   

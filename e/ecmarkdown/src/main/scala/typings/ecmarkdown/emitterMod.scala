@@ -17,7 +17,6 @@ import typings.ecmarkdown.nodeTypesMod.UnorderedListItemNode
 import typings.ecmarkdown.nodeTypesMod.UnorderedListNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emitterMod {
@@ -66,11 +65,13 @@ object emitterMod {
   /* static members */
   object Emitter {
     
-    @JSImport("ecmarkdown/dist/emitter", "Emitter.emit")
+    @JSImport("ecmarkdown/dist/emitter", "Emitter")
     @js.native
-    def emit(node: js.Array[Node]): String = js.native
-    @JSImport("ecmarkdown/dist/emitter", "Emitter.emit")
-    @js.native
-    def emit(node: Node): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def emit(node: js.Array[Node]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def emit(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("emit")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

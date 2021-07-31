@@ -16,7 +16,6 @@ import typings.baseui.listMod.ArtworkSizesT
 import typings.baseui.phoneInputMod.StateChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseuiStrings {
@@ -107,7 +106,9 @@ object baseuiStrings {
   def AS: AS = "AS".asInstanceOf[AS]
   
   @js.native
-  sealed trait ASC extends _SortDirectionsT
+  sealed trait ASC
+    extends StObject
+       with _SortDirectionsT
   @scala.inline
   def ASC: ASC = "ASC".asInstanceOf[ASC]
   
@@ -672,7 +673,9 @@ object baseuiStrings {
   def DEFAULT: DEFAULT = "DEFAULT".asInstanceOf[DEFAULT]
   
   @js.native
-  sealed trait DESC extends _SortDirectionsT
+  sealed trait DESC
+    extends StObject
+       with _SortDirectionsT
   @scala.inline
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   
@@ -1307,7 +1310,9 @@ object baseuiStrings {
   def LA: LA = "LA".asInstanceOf[LA]
   
   @js.native
-  sealed trait LARGE extends ArtworkSizesT
+  sealed trait LARGE
+    extends StObject
+       with ArtworkSizesT
   @scala.inline
   def LARGE: LARGE = "LARGE".asInstanceOf[LARGE]
   
@@ -1427,7 +1432,9 @@ object baseuiStrings {
   def ME: ME = "ME".asInstanceOf[ME]
   
   @js.native
-  sealed trait MEDIUM extends ArtworkSizesT
+  sealed trait MEDIUM
+    extends StObject
+       with ArtworkSizesT
   @scala.inline
   def MEDIUM: MEDIUM = "MEDIUM".asInstanceOf[MEDIUM]
   
@@ -3152,7 +3159,9 @@ object baseuiStrings {
   def SM: SM = "SM".asInstanceOf[SM]
   
   @js.native
-  sealed trait SMALL extends ArtworkSizesT
+  sealed trait SMALL
+    extends StObject
+       with ArtworkSizesT
   @scala.inline
   def SMALL: SMALL = "SMALL".asInstanceOf[SMALL]
   
@@ -3742,7 +3751,9 @@ object baseuiStrings {
   def abbr: abbr = "abbr".asInstanceOf[abbr]
   
   @js.native
-  sealed trait absolute extends Position
+  sealed trait absolute
+    extends StObject
+       with Position
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   
@@ -3803,7 +3814,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait auto
-    extends AlignSelf
+    extends StObject
+       with AlignSelf
        with JustifyItems
        with JustifySelf
        with Overflow
@@ -3827,7 +3839,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait baseline
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyItems
@@ -3856,12 +3869,16 @@ object baseuiStrings {
   def black: black = "black".asInstanceOf[black]
   
   @js.native
-  sealed trait block extends Display
+  sealed trait block
+    extends StObject
+       with Display
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait `block flow` extends Display
+  sealed trait `block flow`
+    extends StObject
+       with Display
   @scala.inline
   def `block flow`: `block flow` = ("block flow").asInstanceOf[`block flow`]
   
@@ -3927,7 +3944,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait center
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -4003,18 +4021,23 @@ object baseuiStrings {
   
   @js.native
   sealed trait column
-    extends FlexDirection
+    extends StObject
+       with FlexDirection
        with GridAutoFlow
   @scala.inline
   def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait `column dense` extends GridAutoFlow
+  sealed trait `column dense`
+    extends StObject
+       with GridAutoFlow
   @scala.inline
   def `column dense`: `column dense` = ("column dense").asInstanceOf[`column dense`]
   
   @js.native
-  sealed trait `column-reverse` extends FlexDirection
+  sealed trait `column-reverse`
+    extends StObject
+       with FlexDirection
   @scala.inline
   def `column-reverse`: `column-reverse` = "column-reverse".asInstanceOf[`column-reverse`]
   
@@ -4024,12 +4047,16 @@ object baseuiStrings {
   def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
-  sealed trait contents extends Display
+  sealed trait contents
+    extends StObject
+       with Display
   @scala.inline
   def contents: contents = "contents".asInstanceOf[contents]
   
   @js.native
-  sealed trait countryChange extends StateChange
+  sealed trait countryChange
+    extends StObject
+       with StateChange
   @scala.inline
   def countryChange: countryChange = "countryChange".asInstanceOf[countryChange]
   
@@ -4069,7 +4096,9 @@ object baseuiStrings {
   def del: del = "del".asInstanceOf[del]
   
   @js.native
-  sealed trait dense extends GridAutoFlow
+  sealed trait dense
+    extends StObject
+       with GridAutoFlow
   @scala.inline
   def dense: dense = "dense".asInstanceOf[dense]
   
@@ -4125,7 +4154,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait end
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -4296,7 +4326,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `first baseline`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyItems
@@ -4305,23 +4336,30 @@ object baseuiStrings {
   def `first baseline`: `first baseline` = ("first baseline").asInstanceOf[`first baseline`]
   
   @js.native
-  sealed trait fixed extends Position
+  sealed trait fixed
+    extends StObject
+       with Position
   @scala.inline
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait flex extends Display
+  sealed trait flex
+    extends StObject
+       with Display
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
-  sealed trait `flex run-in` extends Display
+  sealed trait `flex run-in`
+    extends StObject
+       with Display
   @scala.inline
   def `flex run-in`: `flex run-in` = ("flex run-in").asInstanceOf[`flex run-in`]
   
   @js.native
   sealed trait `flex-end`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -4332,7 +4370,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `flex-start`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -4342,17 +4381,23 @@ object baseuiStrings {
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait flow extends Display
+  sealed trait flow
+    extends StObject
+       with Display
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
-  sealed trait `flow list-item block` extends Display
+  sealed trait `flow list-item block`
+    extends StObject
+       with Display
   @scala.inline
   def `flow list-item block`: `flow list-item block` = ("flow list-item block").asInstanceOf[`flow list-item block`]
   
   @js.native
-  sealed trait `flow-root` extends Display
+  sealed trait `flow-root`
+    extends StObject
+       with Display
   @scala.inline
   def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   
@@ -4392,7 +4437,9 @@ object baseuiStrings {
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait grid extends Display
+  sealed trait grid
+    extends StObject
+       with Display
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
@@ -4442,7 +4489,9 @@ object baseuiStrings {
   def hgroup: hgroup = "hgroup".asInstanceOf[hgroup]
   
   @js.native
-  sealed trait hidden extends Overflow
+  sealed trait hidden
+    extends StObject
+       with Overflow
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -4493,7 +4542,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait inherit
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with Display
@@ -4508,7 +4558,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait initial
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with Display
@@ -4522,32 +4573,44 @@ object baseuiStrings {
   def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait `inline` extends Display
+  sealed trait `inline`
+    extends StObject
+       with Display
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait `inline table` extends Display
+  sealed trait `inline table`
+    extends StObject
+       with Display
   @scala.inline
   def `inline table`: `inline table` = ("inline table").asInstanceOf[`inline table`]
   
   @js.native
-  sealed trait `inline-block` extends Display
+  sealed trait `inline-block`
+    extends StObject
+       with Display
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   
   @js.native
-  sealed trait `inline-flex` extends Display
+  sealed trait `inline-flex`
+    extends StObject
+       with Display
   @scala.inline
   def `inline-flex`: `inline-flex` = "inline-flex".asInstanceOf[`inline-flex`]
   
   @js.native
-  sealed trait `inline-grid` extends Display
+  sealed trait `inline-grid`
+    extends StObject
+       with Display
   @scala.inline
   def `inline-grid`: `inline-grid` = "inline-grid".asInstanceOf[`inline-grid`]
   
   @js.native
-  sealed trait `inline-table` extends Display
+  sealed trait `inline-table`
+    extends StObject
+       with Display
   @scala.inline
   def `inline-table`: `inline-table` = "inline-table".asInstanceOf[`inline-table`]
   
@@ -4583,7 +4646,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `last baseline`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyItems
@@ -4593,7 +4657,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait left
-    extends JustifyContent
+    extends StObject
+       with JustifyContent
        with JustifyItems
        with JustifySelf
   @scala.inline
@@ -4610,17 +4675,23 @@ object baseuiStrings {
   def leftTop: leftTop = "leftTop".asInstanceOf[leftTop]
   
   @js.native
-  sealed trait `legacy center` extends JustifyItems
+  sealed trait `legacy center`
+    extends StObject
+       with JustifyItems
   @scala.inline
   def `legacy center`: `legacy center` = ("legacy center").asInstanceOf[`legacy center`]
   
   @js.native
-  sealed trait `legacy left` extends JustifyItems
+  sealed trait `legacy left`
+    extends StObject
+       with JustifyItems
   @scala.inline
   def `legacy left`: `legacy left` = ("legacy left").asInstanceOf[`legacy left`]
   
   @js.native
-  sealed trait `legacy right` extends JustifyItems
+  sealed trait `legacy right`
+    extends StObject
+       with JustifyItems
   @scala.inline
   def `legacy right`: `legacy right` = ("legacy right").asInstanceOf[`legacy right`]
   
@@ -4655,37 +4726,51 @@ object baseuiStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait `list-item` extends Display
+  sealed trait `list-item`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   
   @js.native
-  sealed trait `list-item block` extends Display
+  sealed trait `list-item block`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item block`: `list-item block` = ("list-item block").asInstanceOf[`list-item block`]
   
   @js.native
-  sealed trait `list-item block flow` extends Display
+  sealed trait `list-item block flow`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item block flow`: `list-item block flow` = ("list-item block flow").asInstanceOf[`list-item block flow`]
   
   @js.native
-  sealed trait `list-item block flow-root` extends Display
+  sealed trait `list-item block flow-root`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item block flow-root`: `list-item block flow-root` = ("list-item block flow-root").asInstanceOf[`list-item block flow-root`]
   
   @js.native
-  sealed trait `list-item flow` extends Display
+  sealed trait `list-item flow`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item flow`: `list-item flow` = ("list-item flow").asInstanceOf[`list-item flow`]
   
   @js.native
-  sealed trait `list-item flow-root` extends Display
+  sealed trait `list-item flow-root`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item flow-root`: `list-item flow-root` = ("list-item flow-root").asInstanceOf[`list-item flow-root`]
   
   @js.native
-  sealed trait `list-item inline` extends Display
+  sealed trait `list-item inline`
+    extends StObject
+       with Display
   @scala.inline
   def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   
@@ -4815,13 +4900,16 @@ object baseuiStrings {
   def noindex: noindex = "noindex".asInstanceOf[noindex]
   
   @js.native
-  sealed trait none extends Display
+  sealed trait none
+    extends StObject
+       with Display
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait normal
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyItems
@@ -4965,7 +5053,9 @@ object baseuiStrings {
   def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait relative extends Position
+  sealed trait relative
+    extends StObject
+       with Position
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   
@@ -4981,7 +5071,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait right
-    extends JustifyContent
+    extends StObject
+       with JustifyContent
        with JustifyItems
        with JustifySelf
   @scala.inline
@@ -5004,18 +5095,23 @@ object baseuiStrings {
   
   @js.native
   sealed trait row
-    extends FlexDirection
+    extends StObject
+       with FlexDirection
        with GridAutoFlow
   @scala.inline
   def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait `row dense` extends GridAutoFlow
+  sealed trait `row dense`
+    extends StObject
+       with GridAutoFlow
   @scala.inline
   def `row dense`: `row dense` = ("row dense").asInstanceOf[`row dense`]
   
   @js.native
-  sealed trait `row-reverse` extends FlexDirection
+  sealed trait `row-reverse`
+    extends StObject
+       with FlexDirection
   @scala.inline
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
@@ -5030,32 +5126,44 @@ object baseuiStrings {
   def rt: rt = "rt".asInstanceOf[rt]
   
   @js.native
-  sealed trait ruby extends Display
+  sealed trait ruby
+    extends StObject
+       with Display
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
-  sealed trait `ruby-base` extends Display
+  sealed trait `ruby-base`
+    extends StObject
+       with Display
   @scala.inline
   def `ruby-base`: `ruby-base` = "ruby-base".asInstanceOf[`ruby-base`]
   
   @js.native
-  sealed trait `ruby-base-container` extends Display
+  sealed trait `ruby-base-container`
+    extends StObject
+       with Display
   @scala.inline
   def `ruby-base-container`: `ruby-base-container` = "ruby-base-container".asInstanceOf[`ruby-base-container`]
   
   @js.native
-  sealed trait `ruby-text` extends Display
+  sealed trait `ruby-text`
+    extends StObject
+       with Display
   @scala.inline
   def `ruby-text`: `ruby-text` = "ruby-text".asInstanceOf[`ruby-text`]
   
   @js.native
-  sealed trait `ruby-text-container` extends Display
+  sealed trait `ruby-text-container`
+    extends StObject
+       with Display
   @scala.inline
   def `ruby-text-container`: `ruby-text-container` = "ruby-text-container".asInstanceOf[`ruby-text-container`]
   
   @js.native
-  sealed trait `run-in` extends Display
+  sealed trait `run-in`
+    extends StObject
+       with Display
   @scala.inline
   def `run-in`: `run-in` = "run-in".asInstanceOf[`run-in`]
   
@@ -5066,7 +5174,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `safe center`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -5086,17 +5195,23 @@ object baseuiStrings {
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait scroll extends Overflow
+  sealed trait scroll
+    extends StObject
+       with Overflow
   @scala.inline
   def scroll: scroll = "scroll".asInstanceOf[scroll]
   
   @js.native
-  sealed trait scrollX extends Overflow
+  sealed trait scrollX
+    extends StObject
+       with Overflow
   @scala.inline
   def scrollX: scrollX = "scrollX".asInstanceOf[scrollX]
   
   @js.native
-  sealed trait scrollY extends Overflow
+  sealed trait scrollY
+    extends StObject
+       with Overflow
   @scala.inline
   def scrollY: scrollY = "scrollY".asInstanceOf[scrollY]
   
@@ -5122,7 +5237,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `self-end`
-    extends AlignItems
+    extends StObject
+       with AlignItems
        with AlignSelf
        with JustifyItems
        with JustifySelf
@@ -5131,7 +5247,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `self-start`
-    extends AlignItems
+    extends StObject
+       with AlignItems
        with AlignSelf
        with JustifyItems
        with JustifySelf
@@ -5160,21 +5277,24 @@ object baseuiStrings {
   
   @js.native
   sealed trait `space-around`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with JustifyContent
   @scala.inline
   def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   
   @js.native
   sealed trait `space-between`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with JustifyContent
   @scala.inline
   def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
   sealed trait `space-evenly`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with JustifyContent
   @scala.inline
   def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
@@ -5191,7 +5311,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait start
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -5201,12 +5322,16 @@ object baseuiStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait static extends Position
+  sealed trait static
+    extends StObject
+       with Position
   @scala.inline
   def static: static = "static".asInstanceOf[static]
   
   @js.native
-  sealed trait sticky extends Position
+  sealed trait sticky
+    extends StObject
+       with Position
   @scala.inline
   def sticky: sticky = "sticky".asInstanceOf[sticky]
   
@@ -5217,7 +5342,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait stretch
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -5272,47 +5398,65 @@ object baseuiStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait table extends Display
+  sealed trait table
+    extends StObject
+       with Display
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
   @js.native
-  sealed trait `table-caption` extends Display
+  sealed trait `table-caption`
+    extends StObject
+       with Display
   @scala.inline
   def `table-caption`: `table-caption` = "table-caption".asInstanceOf[`table-caption`]
   
   @js.native
-  sealed trait `table-cell` extends Display
+  sealed trait `table-cell`
+    extends StObject
+       with Display
   @scala.inline
   def `table-cell`: `table-cell` = "table-cell".asInstanceOf[`table-cell`]
   
   @js.native
-  sealed trait `table-column` extends Display
+  sealed trait `table-column`
+    extends StObject
+       with Display
   @scala.inline
   def `table-column`: `table-column` = "table-column".asInstanceOf[`table-column`]
   
   @js.native
-  sealed trait `table-column-group` extends Display
+  sealed trait `table-column-group`
+    extends StObject
+       with Display
   @scala.inline
   def `table-column-group`: `table-column-group` = "table-column-group".asInstanceOf[`table-column-group`]
   
   @js.native
-  sealed trait `table-footer-group` extends Display
+  sealed trait `table-footer-group`
+    extends StObject
+       with Display
   @scala.inline
   def `table-footer-group`: `table-footer-group` = "table-footer-group".asInstanceOf[`table-footer-group`]
   
   @js.native
-  sealed trait `table-header-group` extends Display
+  sealed trait `table-header-group`
+    extends StObject
+       with Display
   @scala.inline
   def `table-header-group`: `table-header-group` = "table-header-group".asInstanceOf[`table-header-group`]
   
   @js.native
-  sealed trait `table-row` extends Display
+  sealed trait `table-row`
+    extends StObject
+       with Display
   @scala.inline
   def `table-row`: `table-row` = "table-row".asInstanceOf[`table-row`]
   
   @js.native
-  sealed trait `table-row-group` extends Display
+  sealed trait `table-row-group`
+    extends StObject
+       with Display
   @scala.inline
   def `table-row-group`: `table-row-group` = "table-row-group".asInstanceOf[`table-row-group`]
   
@@ -5342,7 +5486,9 @@ object baseuiStrings {
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait textChange extends StateChange
+  sealed trait textChange
+    extends StObject
+       with StateChange
   @scala.inline
   def textChange: textChange = "textChange".asInstanceOf[textChange]
   
@@ -5443,7 +5589,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait `unsafe center`
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with JustifyContent
@@ -5454,7 +5601,8 @@ object baseuiStrings {
   
   @js.native
   sealed trait unset
-    extends AlignContent
+    extends StObject
+       with AlignContent
        with AlignItems
        with AlignSelf
        with Display
@@ -5498,7 +5646,9 @@ object baseuiStrings {
   def view: view = "view".asInstanceOf[view]
   
   @js.native
-  sealed trait visible extends Overflow
+  sealed trait visible
+    extends StObject
+       with Overflow
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   

@@ -2,21 +2,19 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInvoiceSummary extends StObject {
   
   /**
     * Summary of the total amounts of the additional charges.
     */
-  var additionalChargeSummaries: js.UndefOr[js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]] = js.native
+  var additionalChargeSummaries: js.UndefOr[js.Array[SchemaInvoiceSummaryAdditionalChargeSummary]] = js.undefined
   
   /**
     * [required] Total price for the product.
     */
-  var productTotal: js.UndefOr[SchemaAmount] = js.native
+  var productTotal: js.UndefOr[SchemaAmount] = js.undefined
 }
 object SchemaInvoiceSummary {
   

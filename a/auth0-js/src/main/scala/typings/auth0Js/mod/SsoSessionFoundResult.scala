@@ -4,23 +4,23 @@ import typings.auth0Js.anon.Name
 import typings.auth0Js.auth0JsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SsoSessionFoundResult extends SsoDataResult {
+trait SsoSessionFoundResult
+  extends StObject
+     with SsoDataResult {
   
-  var lastUsedClientID: String = js.native
+  var lastUsedClientID: String
   
-  var lastUsedConnection: Name = js.native
+  var lastUsedConnection: Name
   
-  var lastUsedUserID: String = js.native
+  var lastUsedUserID: String
   
-  var lastUsedUsername: String = js.native
+  var lastUsedUsername: String
   
-  var sessionClients: js.Array[String] = js.native
+  var sessionClients: js.Array[String]
   
-  var sso: `true` = js.native
+  var sso: `true`
 }
 object SsoSessionFoundResult {
   
@@ -30,10 +30,9 @@ object SsoSessionFoundResult {
     lastUsedConnection: Name,
     lastUsedUserID: String,
     lastUsedUsername: String,
-    sessionClients: js.Array[String],
-    sso: `true`
+    sessionClients: js.Array[String]
   ): SsoSessionFoundResult = {
-    val __obj = js.Dynamic.literal(lastUsedClientID = lastUsedClientID.asInstanceOf[js.Any], lastUsedConnection = lastUsedConnection.asInstanceOf[js.Any], lastUsedUserID = lastUsedUserID.asInstanceOf[js.Any], lastUsedUsername = lastUsedUsername.asInstanceOf[js.Any], sessionClients = sessionClients.asInstanceOf[js.Any], sso = sso.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(lastUsedClientID = lastUsedClientID.asInstanceOf[js.Any], lastUsedConnection = lastUsedConnection.asInstanceOf[js.Any], lastUsedUserID = lastUsedUserID.asInstanceOf[js.Any], lastUsedUsername = lastUsedUsername.asInstanceOf[js.Any], sessionClients = sessionClients.asInstanceOf[js.Any], sso = true)
     __obj.asInstanceOf[SsoSessionFoundResult]
   }
   

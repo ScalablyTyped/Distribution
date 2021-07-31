@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Role extends StObject {
   
   /** The current deleted state of the role. This field is read only. It will be ignored in calls to CreateRole and UpdateRole. */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. A human-readable description for the role. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Used to perform a consistent read-modify-write. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The names of the permissions this role grants when bound in an IAM policy. */
-  var includedPermissions: js.UndefOr[js.Array[String]] = js.native
+  var includedPermissions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the role. When Role is used in CreateRole, the role name must not be set. When Role is used in output and other input such as UpdateRole, the role name is the complete
     * path, e.g., roles/logging.viewer for predefined roles and organizations/{ORGANIZATION_ID}/roles/logging.viewer for custom roles.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The current launch stage of the role. If the `ALPHA` launch stage has been selected for a role, the `stage` field will not be included in the returned definition for the role. */
-  var stage: js.UndefOr[String] = js.native
+  var stage: js.UndefOr[String] = js.undefined
   
   /** Optional. A human-readable title for the role. Typically this is limited to 100 UTF-8 bytes. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Role {
   

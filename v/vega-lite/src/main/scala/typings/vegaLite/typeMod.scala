@@ -14,33 +14,35 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeMod {
   
-  @JSImport("vega-lite/build/src/compile/scale/type", "scaleType")
+  @JSImport("vega-lite/build/src/compile/scale/type", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def scaleType(
     specifiedScale: Scale[ExprRef | SignalRef],
     channel: Channel,
     fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef],
     mark: Mark
-  ): ScaleType = js.native
-  @JSImport("vega-lite/build/src/compile/scale/type", "scaleType")
-  @js.native
+  ): ScaleType = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleType")(specifiedScale.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[ScaleType]
+  
+  @scala.inline
   def scaleType_binned(
     specifiedScale: Scale[ExprRef | SignalRef],
     channel: Channel,
-    fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     mark: Mark
-  ): ScaleType = js.native
+  ): ScaleType = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleType")(specifiedScale.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], mark.asInstanceOf[js.Any])).asInstanceOf[ScaleType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.continuous
     - typings.vegaLite.vegaLiteStrings.discrete
     - typings.vegaLite.vegaLiteStrings.flexible
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type RangeType = js.UndefOr[_RangeType]
   

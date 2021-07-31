@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,34 +13,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param index - Index of a finger
   * @param hand - Hand that finger relates to
   */
-@js.native
 trait XrFinger extends StObject {
   
   /**
     * Hand that finger relates to
     */
-  var hand: XrHand = js.native
+  var hand: XrHand
   
   /**
     * Index of a finger, numeration is: thumb, index, middle, ring, little
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * List of joints that relates to this finger, starting from joint closest to wrist all the way to the tip of a finger
     */
-  var joints: js.Array[XrJoint] = js.native
+  var joints: js.Array[XrJoint]
   
   /**
     * Tip of a finger, or null if not available
     */
-  var tip: XrJoint | Null = js.native
+  var tip: XrJoint | Null
 }
 object XrFinger {
   
   @scala.inline
   def apply(hand: XrHand, index: Double, joints: js.Array[XrJoint]): XrFinger = {
-    val __obj = js.Dynamic.literal(hand = hand.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], joints = joints.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hand = hand.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], joints = joints.asInstanceOf[js.Any], tip = null)
     __obj.asInstanceOf[XrFinger]
   }
   

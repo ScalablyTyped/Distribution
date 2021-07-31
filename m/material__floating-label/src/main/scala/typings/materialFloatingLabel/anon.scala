@@ -4,21 +4,19 @@ import typings.materialBase.typesMod.EventType
 import typings.materialBase.typesMod.SpecificEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LABELFLOATABOVE extends StObject {
     
-    var LABEL_FLOAT_ABOVE: String = js.native
+    var LABEL_FLOAT_ABOVE: String
     
-    var LABEL_REQUIRED: String = js.native
+    var LABEL_REQUIRED: String
     
-    var LABEL_SHAKE: String = js.native
+    var LABEL_SHAKE: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object LABELFLOATABOVE {
     
@@ -46,22 +44,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/floating-label.@material/floating-label/adapter.MDCFloatingLabelAdapter> */
-  @js.native
   trait PartialMDCFloatingLabelAd extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
     var deregisterInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var getWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
     var registerInteractionHandler: js.UndefOr[
         js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   }
   object PartialMDCFloatingLabelAd {
     

@@ -13,87 +13,87 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.proceed
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeleteByQuery[T] extends Generic {
+trait DeleteByQuery[T]
+  extends StObject
+     with Generic {
   
-  var _source: js.UndefOr[String | js.Array[String]] = js.native
+  var _source: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_exclude: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_excludes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_include: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_include: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var _source_includes: js.UndefOr[String | js.Array[String]] = js.native
+  var _source_includes: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var analyze_wildcard: js.UndefOr[Boolean] = js.native
+  var analyze_wildcard: js.UndefOr[Boolean] = js.undefined
   
-  var analyzer: js.UndefOr[String] = js.native
+  var analyzer: js.UndefOr[String] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var conflicts: js.UndefOr[abort | proceed] = js.native
+  var conflicts: js.UndefOr[abort | proceed] = js.undefined
   
-  var default_operator: js.UndefOr[AND | OR] = js.native
+  var default_operator: js.UndefOr[AND | OR] = js.undefined
   
-  var df: js.UndefOr[String] = js.native
+  var df: js.UndefOr[String] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: String | js.Array[String] = js.native
+  var index: String | js.Array[String]
   
-  var lenient: js.UndefOr[Boolean] = js.native
+  var lenient: js.UndefOr[Boolean] = js.undefined
   
-  var max_docs: js.UndefOr[Double] = js.native
+  var max_docs: js.UndefOr[Double] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var request_cache: js.UndefOr[Boolean] = js.native
+  var request_cache: js.UndefOr[Boolean] = js.undefined
   
-  var requests_per_second: js.UndefOr[Double] = js.native
+  var requests_per_second: js.UndefOr[Double] = js.undefined
   
-  var routing: js.UndefOr[String | js.Array[String]] = js.native
+  var routing: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var scroll: js.UndefOr[String] = js.native
+  var scroll: js.UndefOr[String] = js.undefined
   
-  var scroll_size: js.UndefOr[Double] = js.native
+  var scroll_size: js.UndefOr[Double] = js.undefined
   
-  var search_timeout: js.UndefOr[String] = js.native
+  var search_timeout: js.UndefOr[String] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var slices: js.UndefOr[Double | String] = js.native
+  var slices: js.UndefOr[Double | String] = js.undefined
   
-  var sort: js.UndefOr[String | js.Array[String]] = js.native
+  var sort: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var stats: js.UndefOr[String | js.Array[String]] = js.native
+  var stats: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var terminate_after: js.UndefOr[Double] = js.native
+  var terminate_after: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var version: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[Boolean] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
   
-  var wait_for_completion: js.UndefOr[Boolean] = js.native
+  var wait_for_completion: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteByQuery {
   
@@ -104,7 +104,7 @@ object DeleteByQuery {
   }
   
   @scala.inline
-  implicit class DeleteByQueryMutableBuilder[Self <: DeleteByQuery[_], T] (val x: Self with DeleteByQuery[T]) extends AnyVal {
+  implicit class DeleteByQueryMutableBuilder[Self <: DeleteByQuery[?], T] (val x: Self & DeleteByQuery[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

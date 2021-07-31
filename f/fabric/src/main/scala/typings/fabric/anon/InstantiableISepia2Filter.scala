@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.ISepia2Filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableISepia2Filter
-  extends Instantiable0[ISepia2Filter]
+  extends StObject
+     with Instantiable0[ISepia2Filter]
      with Instantiable1[/* options */ js.Any, ISepia2Filter] {
   
   /**

@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to a VCL window implementation. */
-@js.native
-trait XWindowSupplier extends XInterface {
+trait XWindowSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * allows to get access to a VCL window implementation.
     * @returns VCL window implementation
     */
-  val Window: XWindow = js.native
+  val Window: XWindow
   
   /**
     * allows to get access to a VCL window implementation.
     * @returns VCL window implementation
     */
-  def getWindow(): XWindow = js.native
+  def getWindow(): XWindow
 }
 object XWindowSupplier {
   

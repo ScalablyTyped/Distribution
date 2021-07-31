@@ -2,17 +2,15 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IneligibleCard extends StObject {
   
-  var IneligibleCard: String = js.native
+  var IneligibleCard: String
   
-  var InsufficientPoints: String = js.native
+  var InsufficientPoints: String
   
-  var Success: String = js.native
+  var Success: String
 }
 object IneligibleCard {
   

@@ -2,26 +2,26 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextStreamWriter extends TextStreamBase {
+trait TextStreamWriter
+  extends StObject
+     with TextStreamBase {
   
   /**
     * Sends a string to an output stream.
     */
-  def Write(s: java.lang.String): Unit = js.native
+  def Write(s: java.lang.String): Unit
   
   /**
     * Sends a specified number of blank lines (newline characters) to an output stream.
     */
-  def WriteBlankLines(intLines: Double): Unit = js.native
+  def WriteBlankLines(intLines: Double): Unit
   
   /**
     * Sends a string followed by a newline character to an output stream.
     */
-  def WriteLine(s: java.lang.String): Unit = js.native
+  def WriteLine(s: java.lang.String): Unit
 }
 object TextStreamWriter {
   

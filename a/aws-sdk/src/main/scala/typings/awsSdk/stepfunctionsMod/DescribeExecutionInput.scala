@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExecutionInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the execution to describe.
     */
-  var executionArn: Arn = js.native
+  var executionArn: Arn
 }
 object DescribeExecutionInput {
   

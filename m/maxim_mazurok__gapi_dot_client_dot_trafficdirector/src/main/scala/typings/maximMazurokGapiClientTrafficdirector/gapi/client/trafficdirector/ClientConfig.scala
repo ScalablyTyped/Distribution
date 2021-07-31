@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientConfig extends StObject {
   
   /** Node for a particular client. */
-  var node: js.UndefOr[Node] = js.native
+  var node: js.UndefOr[Node] = js.undefined
   
-  var xdsConfig: js.UndefOr[js.Array[PerXdsConfig]] = js.native
+  var xdsConfig: js.UndefOr[js.Array[PerXdsConfig]] = js.undefined
 }
 object ClientConfig {
   

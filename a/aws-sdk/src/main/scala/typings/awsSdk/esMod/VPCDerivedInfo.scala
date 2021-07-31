@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VPCDerivedInfo extends StObject {
   
   /**
     * The availability zones for the Elasticsearch domain. Exists only if the domain was created with VPCOptions.
     */
-  var AvailabilityZones: js.UndefOr[StringList] = js.native
+  var AvailabilityZones: js.UndefOr[StringList] = js.undefined
   
   /**
     * Specifies the security groups for VPC endpoint.
     */
-  var SecurityGroupIds: js.UndefOr[StringList] = js.native
+  var SecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * Specifies the subnets for VPC endpoint.
     */
-  var SubnetIds: js.UndefOr[StringList] = js.native
+  var SubnetIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * The VPC Id for the Elasticsearch domain. Exists only if the domain was created with VPCOptions.
     */
-  var VPCId: js.UndefOr[String] = js.native
+  var VPCId: js.UndefOr[String] = js.undefined
 }
 object VPCDerivedInfo {
   

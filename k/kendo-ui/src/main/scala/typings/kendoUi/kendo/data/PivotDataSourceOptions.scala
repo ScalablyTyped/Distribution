@@ -2,23 +2,23 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PivotDataSourceOptions extends DataSourceOptions {
+trait PivotDataSourceOptions
+  extends StObject
+     with DataSourceOptions {
   
-  var columns: js.UndefOr[js.Array[PivotDataSourceAxisOptions | String]] = js.native
+  var columns: js.UndefOr[js.Array[PivotDataSourceAxisOptions | String]] = js.undefined
   
-  var measures: js.UndefOr[js.Array[String] | PivotDataSourceMeasureOptions] = js.native
+  var measures: js.UndefOr[js.Array[String] | PivotDataSourceMeasureOptions] = js.undefined
   
-  var rows: js.UndefOr[js.Array[PivotDataSourceAxisOptions | String]] = js.native
+  var rows: js.UndefOr[js.Array[PivotDataSourceAxisOptions | String]] = js.undefined
   
   @JSName("schema")
-  var schema_PivotDataSourceOptions: js.UndefOr[PivotSchema] = js.native
+  var schema_PivotDataSourceOptions: js.UndefOr[PivotSchema] = js.undefined
   
   @JSName("transport")
-  var transport_PivotDataSourceOptions: js.UndefOr[PivotTransport] = js.native
+  var transport_PivotDataSourceOptions: js.UndefOr[PivotTransport] = js.undefined
 }
 object PivotDataSourceOptions {
   

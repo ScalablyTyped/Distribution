@@ -2,7 +2,6 @@ package typings.inquirer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ListChoiceOptions[T /* <: Answers */] extends ChoiceOptions[T] {
+trait ListChoiceOptions[T /* <: Answers */]
+  extends StObject
+     with ChoiceOptions[T] {
   
   /**
     * A value indicating whether the choice is disabled.
     */
-  var disabled: js.UndefOr[DynamicQuestionProperty[Boolean | String, T]] = js.native
+  var disabled: js.UndefOr[DynamicQuestionProperty[Boolean | String, T]] = js.undefined
 }
 object ListChoiceOptions {
   
@@ -28,7 +28,7 @@ object ListChoiceOptions {
   }
   
   @scala.inline
-  implicit class ListChoiceOptionsMutableBuilder[Self <: ListChoiceOptions[_], T /* <: Answers */] (val x: Self with ListChoiceOptions[T]) extends AnyVal {
+  implicit class ListChoiceOptionsMutableBuilder[Self <: ListChoiceOptions[?], T /* <: Answers */] (val x: Self & ListChoiceOptions[T]) extends AnyVal {
     
     @scala.inline
     def setDisabled(value: DynamicQuestionProperty[Boolean | String, T]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

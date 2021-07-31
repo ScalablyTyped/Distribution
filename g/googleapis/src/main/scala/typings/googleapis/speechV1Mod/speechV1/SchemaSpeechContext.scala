@@ -2,14 +2,12 @@ package typings.googleapis.speechV1Mod.speechV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides &quot;hints&quot; to the speech recognizer to favor specific words
   * and phrases in the results.
   */
-@js.native
 trait SchemaSpeechContext extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaSpeechContext extends StObject {
     * vocabulary of the recognizer. See [usage
     * limits](/speech-to-text/quotas#content).
     */
-  var phrases: js.UndefOr[js.Array[String]] = js.native
+  var phrases: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSpeechContext {
   

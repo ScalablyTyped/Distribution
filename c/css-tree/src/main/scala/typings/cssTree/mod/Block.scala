@@ -2,25 +2,24 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Block
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode {
   
-  var children: List[CssNode] = js.native
+  var children: List[CssNode]
   
   @JSName("type")
-  var type_Block: typings.cssTree.cssTreeStrings.Block = js.native
+  var type_Block: typings.cssTree.cssTreeStrings.Block
 }
 object Block {
   
   @scala.inline
-  def apply(children: List[CssNode], `type`: typings.cssTree.cssTreeStrings.Block): Block = {
+  def apply(children: List[CssNode]): Block = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Block")
     __obj.asInstanceOf[Block]
   }
   

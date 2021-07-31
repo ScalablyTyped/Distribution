@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterServiceProvider extends StObject {
   
   /**
     * The name of the virtual router that is acting as a service provider.
     */
-  var virtualRouterName: ResourceName = js.native
+  var virtualRouterName: ResourceName
 }
 object VirtualRouterServiceProvider {
   

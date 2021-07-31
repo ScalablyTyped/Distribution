@@ -2,26 +2,24 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /**
     * The name of the data source.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The S3 bucket where the data files are located.
     */
-  var s3Bucket: js.UndefOr[S3Bucket] = js.native
+  var s3Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The list of S3 keys identifying the data source files.
     */
-  var s3Keys: js.UndefOr[S3KeyOutputs] = js.native
+  var s3Keys: js.UndefOr[S3KeyOutputs] = js.undefined
 }
 object DataSource {
   

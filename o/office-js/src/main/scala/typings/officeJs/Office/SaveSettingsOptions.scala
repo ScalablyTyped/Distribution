@@ -2,24 +2,22 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for saving settings.
   */
-@js.native
 trait SaveSettingsOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.native
+  var asyncContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates whether the setting will be replaced if stale.
     */
-  var overwriteIfStale: js.UndefOr[Boolean] = js.native
+  var overwriteIfStale: js.UndefOr[Boolean] = js.undefined
 }
 object SaveSettingsOptions {
   

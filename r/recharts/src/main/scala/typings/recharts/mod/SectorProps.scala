@@ -22,191 +22,189 @@ import typings.recharts.rechartsStrings.optimizeQuality
 import typings.recharts.rechartsStrings.optimizeSpeed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent recharts.recharts.EventAttributes */
 /* Inlined parent std.Partial<recharts.recharts.PresentationAttributes<number, number>> */
-@js.native
 trait SectorProps extends StObject {
   
-  var alignmentBaseline: js.UndefOr[String] = js.native
+  var alignmentBaseline: js.UndefOr[String] = js.undefined
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var baselineShift: js.UndefOr[String] = js.native
+  var baselineShift: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var clip: js.UndefOr[String] = js.native
+  var clip: js.UndefOr[String] = js.undefined
   
-  var clipPath: js.UndefOr[String] = js.native
+  var clipPath: js.UndefOr[String] = js.undefined
   
-  var clipRule: js.UndefOr[String] = js.native
+  var clipRule: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colorInterpolation: js.UndefOr[String] = js.native
+  var colorInterpolation: js.UndefOr[String] = js.undefined
   
-  var colorInterpolationFilters: js.UndefOr[String] = js.native
+  var colorInterpolationFilters: js.UndefOr[String] = js.undefined
   
-  var colorProfile: js.UndefOr[String] = js.native
+  var colorProfile: js.UndefOr[String] = js.undefined
   
-  var colorRendering: js.UndefOr[String] = js.native
+  var colorRendering: js.UndefOr[String] = js.undefined
   
-  var cornerRadius: js.UndefOr[Double | String] = js.native
+  var cornerRadius: js.UndefOr[Double | String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var cx: js.UndefOr[Double] = js.native
+  var cx: js.UndefOr[Double] = js.undefined
   
-  var cy: js.UndefOr[Double] = js.native
+  var cy: js.UndefOr[Double] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var dominantBaseline: js.UndefOr[String] = js.native
+  var dominantBaseline: js.UndefOr[String] = js.undefined
   
-  var dx: js.UndefOr[Double] = js.native
+  var dx: js.UndefOr[Double] = js.undefined
   
-  var dy: js.UndefOr[Double] = js.native
+  var dy: js.UndefOr[Double] = js.undefined
   
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double | String] = js.native
+  var fillOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var fillRule: js.UndefOr[String] = js.native
+  var fillRule: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var floodColor: js.UndefOr[String] = js.native
+  var floodColor: js.UndefOr[String] = js.undefined
   
-  var floodOpacity: js.UndefOr[String] = js.native
+  var floodOpacity: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double | String] = js.native
+  var fontSize: js.UndefOr[Double | String] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+  var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
   
-  var fontStretch: js.UndefOr[String] = js.native
+  var fontStretch: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
-  ] = js.native
+  ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.native
+  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.native
+  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
   
-  var innerRadius: js.UndefOr[Double] = js.native
+  var innerRadius: js.UndefOr[Double] = js.undefined
   
-  var kerning: js.UndefOr[Double | String] = js.native
+  var kerning: js.UndefOr[Double | String] = js.undefined
   
-  var letterSpacing: js.UndefOr[String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.undefined
   
-  var lightingColor: js.UndefOr[String] = js.native
+  var lightingColor: js.UndefOr[String] = js.undefined
   
-  var markerEnd: js.UndefOr[String] = js.native
+  var markerEnd: js.UndefOr[String] = js.undefined
   
-  var markerMid: js.UndefOr[String] = js.native
+  var markerMid: js.UndefOr[String] = js.undefined
   
-  var markerStart: js.UndefOr[String] = js.native
+  var markerStart: js.UndefOr[String] = js.undefined
   
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[RechartsFunction] = js.native
+  var onClick: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseDown: js.UndefOr[RechartsFunction] = js.native
+  var onMouseDown: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseEnter: js.UndefOr[RechartsFunction] = js.native
+  var onMouseEnter: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseLeave: js.UndefOr[RechartsFunction] = js.native
+  var onMouseLeave: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseMove: js.UndefOr[RechartsFunction] = js.native
+  var onMouseMove: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseOut: js.UndefOr[RechartsFunction] = js.native
+  var onMouseOut: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseOver: js.UndefOr[RechartsFunction] = js.native
+  var onMouseOver: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onMouseUp: js.UndefOr[RechartsFunction] = js.native
+  var onMouseUp: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onTouchCancel: js.UndefOr[RechartsFunction] = js.native
+  var onTouchCancel: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onTouchEnd: js.UndefOr[RechartsFunction] = js.native
+  var onTouchEnd: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onTouchMove: js.UndefOr[RechartsFunction] = js.native
+  var onTouchMove: js.UndefOr[RechartsFunction] = js.undefined
   
-  var onTouchStart: js.UndefOr[RechartsFunction] = js.native
+  var onTouchStart: js.UndefOr[RechartsFunction] = js.undefined
   
-  var opacity: js.UndefOr[Double | String] = js.native
+  var opacity: js.UndefOr[Double | String] = js.undefined
   
-  var outerRadius: js.UndefOr[Double] = js.native
+  var outerRadius: js.UndefOr[Double] = js.undefined
   
-  var overflow: js.UndefOr[String] = js.native
+  var overflow: js.UndefOr[String] = js.undefined
   
-  var pointerEvents: js.UndefOr[String] = js.native
+  var pointerEvents: js.UndefOr[String] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.native
+  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var stopColor: js.UndefOr[String] = js.native
+  var stopColor: js.UndefOr[String] = js.undefined
   
-  var stopOpacity: js.UndefOr[Double | String] = js.native
+  var stopOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var stroke: js.UndefOr[Double | String] = js.native
+  var stroke: js.UndefOr[Double | String] = js.undefined
   
-  var strokeDasharray: js.UndefOr[String] = js.native
+  var strokeDasharray: js.UndefOr[String] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[Double | String] = js.native
+  var strokeDashoffset: js.UndefOr[Double | String] = js.undefined
   
-  var strokeLinecap: js.UndefOr[String] = js.native
+  var strokeLinecap: js.UndefOr[String] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[String] = js.native
+  var strokeLinejoin: js.UndefOr[String] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+  var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double | String] = js.native
+  var strokeOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double | String] = js.native
+  var strokeWidth: js.UndefOr[Double | String] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var textAnchor: js.UndefOr[String] = js.native
+  var textAnchor: js.UndefOr[String] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
-  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.native
+  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var unicodeBidi: js.UndefOr[String] = js.native
+  var unicodeBidi: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wordSpacing: js.UndefOr[Double | String] = js.native
+  var wordSpacing: js.UndefOr[Double | String] = js.undefined
   
-  var writingMode: js.UndefOr[String] = js.native
+  var writingMode: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object SectorProps {
   
@@ -504,73 +502,73 @@ object SectorProps {
     def setMaskUndefined: Self = StObject.set(x, "mask", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: RechartsFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
     
     @scala.inline
-    def setOnMouseDown(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseDown", js.Any.fromFunction1(value))
+    def setOnMouseDown(value: RechartsFunction): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
     
     @scala.inline
-    def setOnMouseEnter(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseEnter", js.Any.fromFunction1(value))
+    def setOnMouseEnter(value: RechartsFunction): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
     
     @scala.inline
-    def setOnMouseLeave(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseLeave", js.Any.fromFunction1(value))
+    def setOnMouseLeave(value: RechartsFunction): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: RechartsFunction): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
     
     @scala.inline
-    def setOnMouseOut(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseOut", js.Any.fromFunction1(value))
+    def setOnMouseOut(value: RechartsFunction): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
     
     @scala.inline
-    def setOnMouseOver(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseOver", js.Any.fromFunction1(value))
+    def setOnMouseOver(value: RechartsFunction): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
     
     @scala.inline
-    def setOnMouseUp(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onMouseUp", js.Any.fromFunction1(value))
+    def setOnMouseUp(value: RechartsFunction): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
     
     @scala.inline
-    def setOnTouchCancel(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTouchCancel", js.Any.fromFunction1(value))
+    def setOnTouchCancel(value: RechartsFunction): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
     
     @scala.inline
-    def setOnTouchEnd(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTouchEnd", js.Any.fromFunction1(value))
+    def setOnTouchEnd(value: RechartsFunction): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
     
     @scala.inline
-    def setOnTouchMove(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTouchMove", js.Any.fromFunction1(value))
+    def setOnTouchMove(value: RechartsFunction): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
     
     @scala.inline
-    def setOnTouchStart(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onTouchStart", js.Any.fromFunction1(value))
+    def setOnTouchStart(value: RechartsFunction): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)

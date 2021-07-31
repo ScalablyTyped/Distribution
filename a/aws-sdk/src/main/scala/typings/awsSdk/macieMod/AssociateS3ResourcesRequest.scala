@@ -2,21 +2,19 @@ package typings.awsSdk.macieMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateS3ResourcesRequest extends StObject {
   
   /**
     * The ID of the Amazon Macie Classic member account whose resources you want to associate with Macie Classic. 
     */
-  var memberAccountId: js.UndefOr[AWSAccountId] = js.native
+  var memberAccountId: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * The S3 resources that you want to associate with Amazon Macie Classic for monitoring and data classification. 
     */
-  var s3Resources: S3ResourcesClassification = js.native
+  var s3Resources: S3ResourcesClassification
 }
 object AssociateS3ResourcesRequest {
   

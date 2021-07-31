@@ -2,7 +2,6 @@ package typings.parseFilepath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,72 +11,74 @@ object mod {
     *
     * @param filepath
     */
+  @scala.inline
+  def apply(filepath: String): ParsedPath = ^.asInstanceOf[js.Dynamic].apply(filepath.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  
   @JSImport("parse-filepath", JSImport.Namespace)
   @js.native
-  def apply(filepath: String): ParsedPath = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ParsedPath extends StObject {
     
     /**
       * fully resolved, absolute filepath
       */
-    var absolute: String = js.native
+    var absolute: String
     
     /**
       * The file name including extension (if any) such as `'index.html'`
       */
-    var base: String = js.native
+    var base: String
     
     /**
       * alias for `base`
       */
-    var basename: String = js.native
+    var basename: String
     
     /**
       * The full directory path such as `'/home/user/dir'` or `'c:\path\dir'`
       */
-    var dir: String = js.native
+    var dir: String
     
     /**
       * alias for `dir`
       */
-    var dirname: String = js.native
+    var dirname: String
     
     /**
       * The file extension (if any) such as `'.html'`
       */
-    var ext: String = js.native
+    var ext: String
     
     /**
       * alias for `ext`
       */
-    var extname: String = js.native
+    var extname: String
     
     /**
       * `true` if the given path is absolute
       */
-    var isAbsolute: Boolean = js.native
+    var isAbsolute: Boolean
     
     /**
       * The file name without extension (if any) such as `'index'`
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * the original filepath
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * The root of the path such as `'/'` or `'c:\'`
       */
-    var root: String = js.native
+    var root: String
     
     /**
       * alias for `name`
       */
-    var stem: String = js.native
+    var stem: String
   }
   object ParsedPath {
     

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.UpdatableLayer Service describes a layer and accepts a changed layer..
   * @since OOo 1.1.2
   */
-@js.native
 trait LayerUpdateMerger
-  extends XUpdateHandler
+  extends StObject
+     with XUpdateHandler
      with XInitialization
 object LayerUpdateMerger {
   
@@ -32,7 +31,7 @@ object LayerUpdateMerger {
     endNode: () => Unit,
     endProperty: () => Unit,
     endUpdate: () => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     modifyNode: (String, Double, Double, Boolean) => Unit,
     modifyProperty: (String, Double, Double, `type`) => Unit,
     queryInterface: `type` => js.Any,

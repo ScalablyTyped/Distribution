@@ -2,21 +2,19 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IThemeGrayScalePalette extends StObject {
   
-  var `1`: String = js.native
+  var `1`: String
   
-  var `2`: String = js.native
+  var `2`: String
   
-  var `3`: String = js.native
+  var `3`: String
   
-  var `4`: String = js.native
+  var `4`: String
   
-  var name: String = js.native
+  var name: String
 }
 object IThemeGrayScalePalette {
   

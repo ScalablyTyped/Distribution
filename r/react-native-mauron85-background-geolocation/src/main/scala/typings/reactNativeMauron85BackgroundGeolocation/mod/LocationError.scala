@@ -2,10 +2,8 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationError extends StObject {
   
   /**
@@ -16,10 +14,10 @@ trait LocationError extends StObject {
     *  2. LOCATION_UNAVAILABLE
     *  3. TIMEOUT
     */
-  var code: LocationErrorCode = js.native
+  var code: LocationErrorCode
   
   /** Message describing the details of the error */
-  var message: String = js.native
+  var message: String
 }
 object LocationError {
   

@@ -49,7 +49,6 @@ import typings.ionicAngular.ionicAngularStrings.toastEnter
 import typings.ionicAngular.ionicAngularStrings.toastLeave
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {

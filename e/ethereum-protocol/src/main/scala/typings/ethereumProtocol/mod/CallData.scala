@@ -2,13 +2,13 @@ package typings.ethereumProtocol.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallData extends CallTxDataBase {
+trait CallData
+  extends StObject
+     with CallTxDataBase {
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
 }
 object CallData {
   

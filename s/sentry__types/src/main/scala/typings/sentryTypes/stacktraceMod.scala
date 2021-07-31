@@ -3,17 +3,15 @@ package typings.sentryTypes
 import typings.sentryTypes.stackframeMod.StackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stacktraceMod {
   
-  @js.native
   trait Stacktrace extends StObject {
     
-    var frames: js.UndefOr[js.Array[StackFrame]] = js.native
+    var frames: js.UndefOr[js.Array[StackFrame]] = js.undefined
     
-    var frames_omitted: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var frames_omitted: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Stacktrace {
     

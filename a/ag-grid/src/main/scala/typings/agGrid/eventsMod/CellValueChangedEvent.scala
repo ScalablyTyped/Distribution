@@ -7,15 +7,15 @@ import typings.agGrid.gridApiMod.GridApi
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellValueChangedEvent extends CellEvent {
+trait CellValueChangedEvent
+  extends StObject
+     with CellEvent {
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var oldValue: js.Any = js.native
+  var oldValue: js.Any
 }
 object CellValueChangedEvent {
   

@@ -10,9 +10,9 @@ TypeScript typings for Playable Locations API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.playablelocations |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 46 |
 | # dependents       | 1 |
-| # downloads        | 115 |
+| # downloads        | 3169 |
 | # stars            | 0 |
 
 ## Links

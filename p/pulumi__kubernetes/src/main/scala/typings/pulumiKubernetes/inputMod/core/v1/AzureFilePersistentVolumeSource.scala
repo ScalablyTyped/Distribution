@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AzureFile represents an Azure File Service mount on the host and bind mount to the pod.
   */
-@js.native
 trait AzureFilePersistentVolumeSource extends StObject {
   
   /**
     * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: js.UndefOr[Input[Boolean]] = js.native
+  var readOnly: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * the name of secret that contains Azure Storage Account Name and Key
     */
-  var secretName: Input[String] = js.native
+  var secretName: Input[String]
   
   /**
     * the namespace of the secret that contains Azure Storage Account Name and Key default is the same as the Pod
     */
-  var secretNamespace: js.UndefOr[Input[String]] = js.native
+  var secretNamespace: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Share Name
     */
-  var shareName: Input[String] = js.native
+  var shareName: Input[String]
 }
 object AzureFilePersistentVolumeSource {
   

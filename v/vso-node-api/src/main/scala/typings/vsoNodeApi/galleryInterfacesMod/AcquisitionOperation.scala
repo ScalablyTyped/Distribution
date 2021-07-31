@@ -2,26 +2,24 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcquisitionOperation extends StObject {
   
   /**
     * State of the the AcquisitionOperation for the current user
     */
-  var operationState: AcquisitionOperationState = js.native
+  var operationState: AcquisitionOperationState
   
   /**
     * AcquisitionOperationType: install, request, buy, etc...
     */
-  var operationType: AcquisitionOperationType = js.native
+  var operationType: AcquisitionOperationType
   
   /**
     * Optional reason to justify current state. Typically used with Disallow state.
     */
-  var reason: String = js.native
+  var reason: String
 }
 object AcquisitionOperation {
   

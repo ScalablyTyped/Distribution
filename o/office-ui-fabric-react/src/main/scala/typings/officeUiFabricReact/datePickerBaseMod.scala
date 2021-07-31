@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerBaseMod {
@@ -70,6 +69,14 @@ object datePickerBaseMod {
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDatePickerBase(prevProps: IDatePickerProps, prevState: IDatePickerState): Unit = js.native
+    
+    /** Sets focus to the text field */
+    /* CompleteClass */
+    override def focus(): Unit = js.native
+    
+    /** Reset the state of the picker to the default */
+    /* CompleteClass */
+    override def reset(): Unit = js.native
   }
   /* static members */
   object DatePickerBase {
@@ -85,16 +92,15 @@ object datePickerBaseMod {
     def defaultProps_=(x: IDatePickerProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDatePickerState extends StObject {
     
-    var errorMessage: js.UndefOr[String] = js.native
+    var errorMessage: js.UndefOr[String] = js.undefined
     
-    var formattedDate: js.UndefOr[String] = js.native
+    var formattedDate: js.UndefOr[String] = js.undefined
     
-    var isDatePickerShown: js.UndefOr[Boolean] = js.native
+    var isDatePickerShown: js.UndefOr[Boolean] = js.undefined
     
-    var selectedDate: js.UndefOr[Date] = js.native
+    var selectedDate: js.UndefOr[Date] = js.undefined
   }
   object IDatePickerState {
     

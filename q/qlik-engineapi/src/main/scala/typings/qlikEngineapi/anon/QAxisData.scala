@@ -4,15 +4,13 @@ import typings.qlikEngineapi.EngineAPI.INxAxisData
 import typings.qlikEngineapi.EngineAPI.INxDataPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QAxisData extends StObject {
   
-  var qAxisData: js.Array[INxAxisData] = js.native
+  var qAxisData: js.Array[INxAxisData]
   
-  var qDataPages: js.Array[INxDataPage] = js.native
+  var qDataPages: js.Array[INxDataPage]
 }
 object QAxisData {
   

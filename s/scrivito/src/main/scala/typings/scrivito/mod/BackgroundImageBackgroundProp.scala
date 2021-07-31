@@ -2,13 +2,11 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundImageBackgroundProp extends StObject {
   
-  var background: CSSImageStyleBackgroundProps | js.Array[CSSImageStyleBackgroundProps] = js.native
+  var background: CSSImageStyleBackgroundProps | js.Array[CSSImageStyleBackgroundProps]
 }
 object BackgroundImageBackgroundProp {
   

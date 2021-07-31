@@ -3,32 +3,29 @@ package typings.kendoUi.global.kendo
 import typings.kendoUi.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object effects {
   
-  @JSGlobal("kendo.effects.box")
+  @JSGlobal("kendo.effects")
   @js.native
-  def box(element: HTMLElement): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("kendo.effects.disable")
-  @js.native
-  def disable(): Unit = js.native
+  @scala.inline
+  def box(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("box")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSGlobal("kendo.effects.enable")
-  @js.native
-  def enable(): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @JSGlobal("kendo.effects.fillScale")
-  @js.native
-  def fillScale(firstElement: HTMLElement, secondElement: HTMLElement): Double = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
-  @JSGlobal("kendo.effects.fitScale")
-  @js.native
-  def fitScale(firstElement: HTMLElement, secondElement: HTMLElement): Double = js.native
+  @scala.inline
+  def fillScale(firstElement: HTMLElement, secondElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fillScale")(firstElement.asInstanceOf[js.Any], secondElement.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("kendo.effects.transformOrigin")
-  @js.native
-  def transformOrigin(firstElement: HTMLElement, secondElement: HTMLElement): js.Any = js.native
+  @scala.inline
+  def fitScale(firstElement: HTMLElement, secondElement: HTMLElement): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fitScale")(firstElement.asInstanceOf[js.Any], secondElement.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def transformOrigin(firstElement: HTMLElement, secondElement: HTMLElement): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformOrigin")(firstElement.asInstanceOf[js.Any], secondElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

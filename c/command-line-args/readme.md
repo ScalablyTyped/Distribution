@@ -11,8 +11,8 @@ A mature, feature-complete library to parse command-line options.
 | Full name          | command-line-args |
 | Keywords           | argv, parse, argument, args, option, options, parser, parsing, cli, command, line |
 | # releases         | 3 |
-| # dependents       | 1586 |
-| # downloads        | 21431137 |
+| # dependents       | 1677 |
+| # downloads        | 24744118 |
 | # stars            | 49 |
 
 ## Links

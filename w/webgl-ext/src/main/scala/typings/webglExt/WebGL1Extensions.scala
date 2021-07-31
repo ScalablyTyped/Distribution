@@ -16,7 +16,6 @@ import typings.webglExt.webglExtStrings.WEBKIT_WEBGL_depth_texture
 import typings.webglExt.webglExtStrings.WEBKIT_WEBGL_lose_context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

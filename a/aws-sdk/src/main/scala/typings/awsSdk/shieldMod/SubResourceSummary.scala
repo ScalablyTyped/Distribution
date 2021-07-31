@@ -2,31 +2,29 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubResourceSummary extends StObject {
   
   /**
     * The list of attack types and associated counters.
     */
-  var AttackVectors: js.UndefOr[SummarizedAttackVectorList] = js.native
+  var AttackVectors: js.UndefOr[SummarizedAttackVectorList] = js.undefined
   
   /**
     * The counters that describe the details of the attack.
     */
-  var Counters: js.UndefOr[SummarizedCounterList] = js.native
+  var Counters: js.UndefOr[SummarizedCounterList] = js.undefined
   
   /**
     * The unique identifier (ID) of the SubResource.
     */
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
   /**
     * The SubResource type.
     */
-  var Type: js.UndefOr[SubResourceType] = js.native
+  var Type: js.UndefOr[SubResourceType] = js.undefined
 }
 object SubResourceSummary {
   

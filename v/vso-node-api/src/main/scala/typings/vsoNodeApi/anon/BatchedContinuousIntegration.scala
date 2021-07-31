@@ -2,27 +2,25 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchedContinuousIntegration extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var batchedContinuousIntegration: scala.Double = js.native
+  var batchedContinuousIntegration: scala.Double
   
-  var batchedGatedCheckIn: scala.Double = js.native
+  var batchedGatedCheckIn: scala.Double
   
-  var continuousIntegration: scala.Double = js.native
+  var continuousIntegration: scala.Double
   
-  var gatedCheckIn: scala.Double = js.native
+  var gatedCheckIn: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var pullRequest: scala.Double = js.native
+  var pullRequest: scala.Double
   
-  var schedule: scala.Double = js.native
+  var schedule: scala.Double
 }
 object BatchedContinuousIntegration {
   

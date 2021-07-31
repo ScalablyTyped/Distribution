@@ -3,7 +3,6 @@ package typings.xrm.Xrm.Controls
 import typings.std.HTMLObjectElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,29 +11,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated The Silverlight WebResource is deprecated on the web client, and is not supported on the new Unified Interface in v9.
   * Instead of silverlight, use custom controls created using the HTML web resources with HTML5 to create UI components to visualize and interact with data.
   */
-@js.native
-trait SilverlightControl extends Control {
+trait SilverlightControl
+  extends StObject
+     with Control {
   
   /**
     * Gets the query string value passed to Silverlight.
     * @returns The data.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def getData(): String = js.native
+  def getData(): String
   
   /**
     * Gets the DOM element containing the control.
     * @returns The container object.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def getObject(): HTMLObjectElement = js.native
+  def getObject(): HTMLObjectElement
   
   /**
     * Sets the query string value passed to Silverlight.
     * @param data The data.
     * @remarks Unavailable for Microsoft Dynamics CRM for tablets.
     */
-  def setData(data: String): Unit = js.native
+  def setData(data: String): Unit
 }
 object SilverlightControl {
   

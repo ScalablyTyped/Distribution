@@ -2,15 +2,13 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaBase[D /* <: js.Object */] extends StObject {
   
-  var instance: TableInstance[D] = js.native
+  var instance: TableInstance[D]
   
-  var userProps: js.Any = js.native
+  var userProps: js.Any
 }
 object MetaBase {
   
@@ -21,7 +19,7 @@ object MetaBase {
   }
   
   @scala.inline
-  implicit class MetaBaseMutableBuilder[Self <: MetaBase[_], D /* <: js.Object */] (val x: Self with MetaBase[D]) extends AnyVal {
+  implicit class MetaBaseMutableBuilder[Self <: MetaBase[?], D /* <: js.Object */] (val x: Self & MetaBase[D]) extends AnyVal {
     
     @scala.inline
     def setInstance(value: TableInstance[D]): Self = StObject.set(x, "instance", value.asInstanceOf[js.Any])

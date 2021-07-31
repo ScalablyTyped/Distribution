@@ -7,7 +7,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pricingMod {
@@ -17,19 +16,20 @@ object pricingMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends Pricing {
+  class ^ ()
+    extends StObject
+       with Pricing {
     def this(options: ClientConfiguration) = this()
   }
   
   type AttributeNameList = js.Array[String]
   
-  @js.native
   trait AttributeValue extends StObject {
     
     /**
       * The specific value of an attributeName.
       */
-    var Value: js.UndefOr[String] = js.native
+    var Value: js.UndefOr[String] = js.undefined
   }
   object AttributeValue {
     
@@ -52,18 +52,16 @@ object pricingMod {
   
   type AttributeValueList = js.Array[AttributeValue]
   
-  @js.native
   trait Blob extends StObject
   
   type BoxedInteger = Double
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.pricingMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.pricingMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -84,30 +82,32 @@ object pricingMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
-  
   @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
+  
   trait DescribeServicesRequest extends StObject {
     
     /**
       * The format version that you want the response to be in. Valid values are: aws_v1 
       */
-    var FormatVersion: js.UndefOr[String] = js.native
+    var FormatVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of results that you want returned in the response.
       */
-    var MaxResults: js.UndefOr[BoxedInteger] = js.native
+    var MaxResults: js.UndefOr[BoxedInteger] = js.undefined
     
     /**
       * The pagination token that indicates the next set of results that you want to retrieve.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * The code for the service whose information you want to retrieve, such as AmazonEC2. You can use the ServiceCode to filter the results in a GetProducts call. To retrieve a list of all services, leave this blank.
       */
-    var ServiceCode: js.UndefOr[String] = js.native
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   object DescribeServicesRequest {
     
@@ -146,23 +146,22 @@ object pricingMod {
     }
   }
   
-  @js.native
   trait DescribeServicesResponse extends StObject {
     
     /**
       * The format version of the response. For example, aws_v1.
       */
-    var FormatVersion: js.UndefOr[String] = js.native
+    var FormatVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The pagination token for the next set of retreivable results.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * The service metadata for the service or services in the response.
       */
-    var Services: js.UndefOr[ServiceList] = js.native
+    var Services: js.UndefOr[ServiceList] = js.undefined
   }
   object DescribeServicesResponse {
     
@@ -198,23 +197,22 @@ object pricingMod {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
     /**
       * The product metadata field that you want to filter on. You can filter by just the service code to see all products for a specific service, filter by just the attribute name to see a specific attribute for multiple services, or use both a service code and an attribute name to retrieve only products that match both fields. Valid values include: ServiceCode, and all attribute names For example, you can filter by the AmazonEC2 service code and the volumeType attribute name to get the prices for only Amazon EC2 volumes.
       */
-    var Field: String = js.native
+    var Field: String
     
     /**
       * The type of filter that you want to use. Valid values are: TERM_MATCH. TERM_MATCH returns only products that match both the given filter field and the given value.
       */
-    var Type: FilterType = js.native
+    var Type: FilterType
     
     /**
       * The service code or attribute value that you want to filter by. If you are filtering by service code this is the actual service code, such as AmazonEC2. If you are filtering by attribute name, this is the attribute value that you want the returned products to match, such as a Provisioned IOPS volume.
       */
-    var Value: String = js.native
+    var Value: String
   }
   object Filter {
     
@@ -242,28 +240,27 @@ object pricingMod {
   
   type Filters = js.Array[Filter]
   
-  @js.native
   trait GetAttributeValuesRequest extends StObject {
     
     /**
       * The name of the attribute that you want to retrieve the values for, such as volumeType.
       */
-    var AttributeName: String = js.native
+    var AttributeName: String
     
     /**
       * The maximum number of results to return in response.
       */
-    var MaxResults: js.UndefOr[BoxedInteger] = js.native
+    var MaxResults: js.UndefOr[BoxedInteger] = js.undefined
     
     /**
       * The pagination token that indicates the next set of results that you want to retrieve.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * The service code for the service whose attributes you want to retrieve. For example, if you want the retrieve an EC2 attribute, use AmazonEC2.
       */
-    var ServiceCode: String = js.native
+    var ServiceCode: String
   }
   object GetAttributeValuesRequest {
     
@@ -296,18 +293,17 @@ object pricingMod {
     }
   }
   
-  @js.native
   trait GetAttributeValuesResponse extends StObject {
     
     /**
       * The list of values for an attribute. For example, Throughput Optimized HDD and Provisioned IOPS are two available values for the AmazonEC2 volumeType.
       */
-    var AttributeValues: js.UndefOr[AttributeValueList] = js.native
+    var AttributeValues: js.UndefOr[AttributeValueList] = js.undefined
     
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
   }
   object GetAttributeValuesResponse {
     
@@ -337,33 +333,32 @@ object pricingMod {
     }
   }
   
-  @js.native
   trait GetProductsRequest extends StObject {
     
     /**
       * The list of filters that limit the returned products. only products that match all filters are returned.
       */
-    var Filters: js.UndefOr[typings.awsSdk.pricingMod.Filters] = js.native
+    var Filters: js.UndefOr[typings.awsSdk.pricingMod.Filters] = js.undefined
     
     /**
       * The format version that you want the response to be in. Valid values are: aws_v1 
       */
-    var FormatVersion: js.UndefOr[String] = js.native
+    var FormatVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The maximum number of results to return in the response.
       */
-    var MaxResults: js.UndefOr[BoxedInteger] = js.native
+    var MaxResults: js.UndefOr[BoxedInteger] = js.undefined
     
     /**
       * The pagination token that indicates the next set of results that you want to retrieve.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * The code for the service whose products you want to retrieve. 
       */
-    var ServiceCode: js.UndefOr[String] = js.native
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   object GetProductsRequest {
     
@@ -411,23 +406,22 @@ object pricingMod {
     }
   }
   
-  @js.native
   trait GetProductsResponse extends StObject {
     
     /**
       * The format version of the response. For example, aws_v1.
       */
-    var FormatVersion: js.UndefOr[String] = js.native
+    var FormatVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The pagination token that indicates the next set of results to retrieve.
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * The list of products that match your filters. The list contains both the product metadata and the price information.
       */
-    var PriceList: js.UndefOr[typings.awsSdk.pricingMod.PriceList] = js.native
+    var PriceList: js.UndefOr[typings.awsSdk.pricingMod.PriceList] = js.undefined
   }
   object GetProductsResponse {
     
@@ -468,9 +462,11 @@ object pricingMod {
   type PriceListItemJSON = java.lang.String
   
   @js.native
-  trait Pricing extends Service {
+  trait Pricing
+    extends StObject
+       with Service {
     
-    var config: ConfigBase with ClientConfiguration = js.native
+    var config: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Returns the metadata for one service or a list of the metadata for all services. Use this without a service code to get the service codes for all services. Use it with a service code, such as AmazonEC2, to get information specific to that service, such as the attribute names available for that service. For example, some of the attribute names available for EC2 are volumeType, maxIopsVolume, operation, locationType, and instanceCapacity10xlarge.
@@ -515,18 +511,17 @@ object pricingMod {
     ): Request[GetProductsResponse, AWSError] = js.native
   }
   
-  @js.native
   trait Service extends StObject {
     
     /**
       * The attributes that are available for this service.
       */
-    var AttributeNames: js.UndefOr[AttributeNameList] = js.native
+    var AttributeNames: js.UndefOr[AttributeNameList] = js.undefined
     
     /**
       * The code for the AWS service.
       */
-    var ServiceCode: js.UndefOr[String] = js.native
+    var ServiceCode: js.UndefOr[String] = js.undefined
   }
   object Service {
     

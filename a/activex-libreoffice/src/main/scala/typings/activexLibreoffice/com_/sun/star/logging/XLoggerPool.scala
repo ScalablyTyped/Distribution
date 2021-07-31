@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * implements a pool for named {@link XLogger} instances
   * @since OOo 2.3
   */
-@js.native
 trait XLoggerPool extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait XLoggerPool extends StObject {
     *
     * Calling this method is equivalent to calling `getNamedLogger( "org.openoffice.logging.DefaultLogger" )` .
     */
-  val DefaultLogger: XLogger = js.native
+  val DefaultLogger: XLogger
   
   /**
     * retrieves a logger with the default name "org.openoffice.logging.DefaultLogger".
     *
     * Calling this method is equivalent to calling `getNamedLogger( "org.openoffice.logging.DefaultLogger" )` .
     */
-  def getDefaultLogger(): XLogger = js.native
+  def getDefaultLogger(): XLogger
   
   /**
     * retrieves a logger with the given name
@@ -34,7 +32,7 @@ trait XLoggerPool extends StObject {
     * Newly created logger instances are initialized via configuration. See the configuration module `/org.openoffice.Office.Logging` for an explanation of
     * the initialization pattern.
     */
-  def getNamedLogger(Name: String): XLogger = js.native
+  def getNamedLogger(Name: String): XLogger
 }
 object XLoggerPool {
   

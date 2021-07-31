@@ -6,29 +6,27 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHotspotAuthenticationContext extends StObject {
   
-  def abortAuthentication(markAsManual: Boolean): Unit = js.native
+  def abortAuthentication(markAsManual: Boolean): Unit
   
-  var authenticationUrl: Uri = js.native
+  var authenticationUrl: Uri
   
-  def issueCredentials(userName: String, password: String, extraParameters: String, markAsManualConnectOnFailure: Boolean): Unit = js.native
+  def issueCredentials(userName: String, password: String, extraParameters: String, markAsManualConnectOnFailure: Boolean): Unit
   
-  var networkAdapter: NetworkAdapter = js.native
+  var networkAdapter: NetworkAdapter
   
-  var redirectMessageUrl: Uri = js.native
+  var redirectMessageUrl: Uri
   
-  var redirectMessageXml: XmlDocument = js.native
+  var redirectMessageXml: XmlDocument
   
-  def skipAuthentication(): Unit = js.native
+  def skipAuthentication(): Unit
   
-  def triggerAttentionRequired(packageRelativeApplicationId: String, applicationParameters: String): Unit = js.native
+  def triggerAttentionRequired(packageRelativeApplicationId: String, applicationParameters: String): Unit
   
-  var wirelessNetworkId: Uint8Array = js.native
+  var wirelessNetworkId: Uint8Array
 }
 object IHotspotAuthenticationContext {
   

@@ -7,23 +7,23 @@ import typings.grommet.utilsMod.ColorType
 import typings.grommet.utilsMod._BorderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Error extends _BorderType {
+trait Error
+  extends StObject
+     with _BorderType {
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var error: js.UndefOr[`3`] = js.native
+  var error: js.UndefOr[`3`] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var side: js.UndefOr[BoxSideType] = js.native
+  var side: js.UndefOr[BoxSideType] = js.undefined
   
-  var size: js.UndefOr[BoxSizeType] = js.native
+  var size: js.UndefOr[BoxSizeType] = js.undefined
   
-  var style: js.UndefOr[BoxStyleType] = js.native
+  var style: js.UndefOr[BoxStyleType] = js.undefined
 }
 object Error {
   

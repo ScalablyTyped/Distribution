@@ -3,16 +3,14 @@ package typings.node.inspectorMod.Debugger
 import typings.node.inspectorMod.Runtime.StackTraceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PauseOnAsyncCallParameterType extends StObject {
   
   /**
     * Debugger will pause when async call with given stack trace is started.
     */
-  var parentStackTraceId: StackTraceId = js.native
+  var parentStackTraceId: StackTraceId
 }
 object PauseOnAsyncCallParameterType {
   

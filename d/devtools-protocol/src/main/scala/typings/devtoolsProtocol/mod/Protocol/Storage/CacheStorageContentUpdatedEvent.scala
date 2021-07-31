@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheStorageContentUpdatedEvent extends StObject {
   
   /**
     * Name of cache in origin.
     */
-  var cacheName: String = js.native
+  var cacheName: String
   
   /**
     * Origin to update.
     */
-  var origin: String = js.native
+  var origin: String
 }
 object CacheStorageContentUpdatedEvent {
   

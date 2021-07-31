@@ -6,24 +6,23 @@ import typings.nodegit.remoteCallbacksMod.RemoteCallbacks
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pushOptionsMod {
   
-  @js.native
   trait PushOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var callbacks: js.UndefOr[RemoteCallbacks] = js.native
+    var callbacks: js.UndefOr[RemoteCallbacks] = js.undefined
     
-    var customHeaders: js.UndefOr[Strarray | String | js.Array[String]] = js.native
+    var customHeaders: js.UndefOr[Strarray | String | js.Array[String]] = js.undefined
     
-    var pbParallelism: js.UndefOr[Double] = js.native
+    var pbParallelism: js.UndefOr[Double] = js.undefined
     
-    var proxyOpts: js.UndefOr[ProxyOptions] = js.native
+    var proxyOpts: js.UndefOr[ProxyOptions] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object PushOptions {
     

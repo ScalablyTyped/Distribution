@@ -4,17 +4,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.same_
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.valid_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvgPoolBackpropAttrs extends StObject {
   
-  var filterSize: (js.Tuple2[Double, Double]) | Double = js.native
+  var filterSize: (js.Tuple2[Double, Double]) | Double
   
-  var pad: valid_ | same_ | Double = js.native
+  var pad: valid_ | same_ | Double
   
-  var strides: (js.Tuple2[Double, Double]) | Double = js.native
+  var strides: (js.Tuple2[Double, Double]) | Double
 }
 object AvgPoolBackpropAttrs {
   

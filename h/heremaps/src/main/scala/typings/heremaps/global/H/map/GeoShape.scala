@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.Spatial.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.GeoShape")
 @js.native
 class GeoShape protected ()
-  extends typings.heremaps.H.map.GeoShape {
+  extends StObject
+     with typings.heremaps.H.map.GeoShape {
   /**
     * Constructor
     * @param isClosed {boolean} - Indicates whether this geographical shape is closed (a polygon)

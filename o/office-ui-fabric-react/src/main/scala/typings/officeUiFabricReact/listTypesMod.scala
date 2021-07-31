@@ -17,7 +17,6 @@ import typings.uifabricUtilities.irectangleMod.IRectangle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listTypesMod {
@@ -104,51 +103,50 @@ object listTypesMod {
       *  Note: The scrollToMode requires the measureItem callback is provided to function.
       */
     def scrollToIndex(index: Double): Unit = js.native
-    def scrollToIndex(index: Double, measureItem: js.UndefOr[scala.Nothing], scrollToMode: ScrollToMode): Unit = js.native
     def scrollToIndex(index: Double, measureItem: js.Function1[/* itemIndex */ Double, Double]): Unit = js.native
     def scrollToIndex(
       index: Double,
       measureItem: js.Function1[/* itemIndex */ Double, Double],
       scrollToMode: ScrollToMode
     ): Unit = js.native
+    def scrollToIndex(index: Double, measureItem: Unit, scrollToMode: ScrollToMode): Unit = js.native
   }
   
-  @js.native
   trait IListOnRenderRootProps[T] extends StObject {
     
     /**
       * Props to apply to the list root element.
       */
-    var divProps: HTMLAttributes[HTMLDivElement] = js.native
+    var divProps: HTMLAttributes[HTMLDivElement]
     
     /**
       * The active pages to be rendered into the list.
       * These will have been rendered using `onRenderPage`.
       */
-    var pages: js.Array[IPage[T]] = js.native
+    var pages: js.Array[IPage[T]]
     
     /**
       * The ref to be applied to the list root.
       * The `List` uses this element to track scroll position and sizing.
       */
-    var rootRef: Ref[HTMLDivElement] = js.native
+    var rootRef: Ref[HTMLDivElement]
     
     /**
       * The content to be rendered as the list surface element.
       * This will have been rendered using `onRenderSurface`.
       */
-    var surfaceElement: Element | Null = js.native
+    var surfaceElement: Element | Null
   }
   object IListOnRenderRootProps {
     
     @scala.inline
     def apply[T](divProps: HTMLAttributes[HTMLDivElement], pages: js.Array[IPage[T]]): IListOnRenderRootProps[T] = {
-      val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], rootRef = null, surfaceElement = null)
       __obj.asInstanceOf[IListOnRenderRootProps[T]]
     }
     
     @scala.inline
-    implicit class IListOnRenderRootPropsMutableBuilder[Self <: IListOnRenderRootProps[_], T] (val x: Self with IListOnRenderRootProps[T]) extends AnyVal {
+    implicit class IListOnRenderRootPropsMutableBuilder[Self <: IListOnRenderRootProps[?], T] (val x: Self & IListOnRenderRootProps[T]) extends AnyVal {
       
       @scala.inline
       def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
@@ -176,30 +174,29 @@ object listTypesMod {
     }
   }
   
-  @js.native
   trait IListOnRenderSurfaceProps[T] extends StObject {
     
     /**
       * Props to apply to the list surface element.
       */
-    var divProps: HTMLAttributes[HTMLDivElement] = js.native
+    var divProps: HTMLAttributes[HTMLDivElement]
     
     /**
       * The content to be rendered representing all active pages.
       */
-    var pageElements: js.Array[Element] = js.native
+    var pageElements: js.Array[Element]
     
     /**
       * The active pages to be rendered into the list.
       * These will have been rendered using `onRenderPage`.
       */
-    var pages: js.Array[IPage[T]] = js.native
+    var pages: js.Array[IPage[T]]
     
     /**
       * A ref to be applied to the surface element.
       * The `List` uses this element to track content size and focus.
       */
-    var surfaceRef: Ref[HTMLDivElement] = js.native
+    var surfaceRef: Ref[HTMLDivElement]
   }
   object IListOnRenderSurfaceProps {
     
@@ -209,12 +206,12 @@ object listTypesMod {
       pageElements: js.Array[Element],
       pages: js.Array[IPage[T]]
     ): IListOnRenderSurfaceProps[T] = {
-      val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pageElements = pageElements.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(divProps = divProps.asInstanceOf[js.Any], pageElements = pageElements.asInstanceOf[js.Any], pages = pages.asInstanceOf[js.Any], surfaceRef = null)
       __obj.asInstanceOf[IListOnRenderSurfaceProps[T]]
     }
     
     @scala.inline
-    implicit class IListOnRenderSurfacePropsMutableBuilder[Self <: IListOnRenderSurfaceProps[_], T] (val x: Self with IListOnRenderSurfaceProps[T]) extends AnyVal {
+    implicit class IListOnRenderSurfacePropsMutableBuilder[Self <: IListOnRenderSurfaceProps[?], T] (val x: Self & IListOnRenderSurfaceProps[T]) extends AnyVal {
       
       @scala.inline
       def setDivProps(value: HTMLAttributes[HTMLDivElement]): Self = StObject.set(x, "divProps", value.asInstanceOf[js.Any])
@@ -242,14 +239,15 @@ object listTypesMod {
     }
   }
   
-  @js.native
-  trait IListProps[T] extends HTMLAttributes[List[T] | HTMLDivElement] {
+  trait IListProps[T]
+    extends StObject
+       with HTMLAttributes[List[T] | HTMLDivElement] {
     
     /**
       * Optional callback to access the IList interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IList]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IList]] = js.undefined
     
     /**
       * Method called by the list to get how many items to render per page from specified index.
@@ -257,10 +255,10 @@ object listTypesMod {
       */
     var getItemCountForPage: js.UndefOr[
         js.Function2[/* itemIndex */ js.UndefOr[Double], /* visibleRect */ js.UndefOr[IRectangle], Double]
-      ] = js.native
+      ] = js.undefined
     
     /** Optional callback to get the item key, to be used on render. */
-    var getKey: js.UndefOr[js.Function2[/* item */ T, /* index */ js.UndefOr[Double], String]] = js.native
+    var getKey: js.UndefOr[js.Function2[/* item */ T, /* index */ js.UndefOr[Double], String]] = js.undefined
     
     /**
       * Method called by the list to get the pixel height for a given page. By default, we measure the first
@@ -276,7 +274,7 @@ object listTypesMod {
           /* itemCount */ js.UndefOr[Double], 
           Double
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called by the list to get the specification for a page.
@@ -290,28 +288,28 @@ object listTypesMod {
           /* visibleRect */ js.UndefOr[IRectangle], 
           IPageSpecification
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Method called by the list to derive the page style object. For spacer pages, the list will derive
       * the height and passed in heights will be ignored.
       */
-    var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], _]] = js.native
+    var getPageStyle: js.UndefOr[js.Function1[/* page */ IPage[T], js.Any]] = js.undefined
     
     /**
       * Whether to disable scroll state updates. This causes the isScrolling arg in onRenderCell to always be undefined.
       * This is a performance optimization to let List skip a render cycle by not updating its scrolling state.
       */
-    var ignoreScrollingState: js.UndefOr[Boolean] = js.native
+    var ignoreScrollingState: js.UndefOr[Boolean] = js.undefined
     
     /** Items to render. */
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
     
     /** Optional callback for monitoring when a page is added. */
-    var onPageAdded: js.UndefOr[js.Function1[/* page */ IPage[T], Unit]] = js.native
+    var onPageAdded: js.UndefOr[js.Function1[/* page */ IPage[T], Unit]] = js.undefined
     
     /** Optional callback for monitoring when a page is removed. */
-    var onPageRemoved: js.UndefOr[js.Function1[/* page */ IPage[T], Unit]] = js.native
+    var onPageRemoved: js.UndefOr[js.Function1[/* page */ IPage[T], Unit]] = js.undefined
     
     /**
       * Optional callback invoked when List rendering completed.
@@ -321,7 +319,7 @@ object listTypesMod {
       * To track individual page Add / Remove use onPageAdded / onPageRemoved instead.
       * @param pages - The current array of pages in the List.
       */
-    var onPagesUpdated: js.UndefOr[js.Function1[/* pages */ js.Array[IPage[T]], Unit]] = js.native
+    var onPagesUpdated: js.UndefOr[js.Function1[/* pages */ js.Array[IPage[T]], Unit]] = js.undefined
     
     /**
       * Method to call when trying to render an item.
@@ -337,26 +335,26 @@ object listTypesMod {
           /* isScrolling */ js.UndefOr[Boolean], 
           ReactNode
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the List will render a page.
       * Override this to control how cells are rendered within a page.
       */
-    var onRenderPage: js.UndefOr[IRenderFunction[IPageProps[T]]] = js.native
+    var onRenderPage: js.UndefOr[IRenderFunction[IPageProps[T]]] = js.undefined
     
     /**
       * Render override for the element at the root of the `List`.
       * Use this to apply some final attributes or structure to the content
       * each time the list is updated with new active pages or items.
       */
-    var onRenderRoot: js.UndefOr[IRenderFunction[IListOnRenderRootProps[T]]] = js.native
+    var onRenderRoot: js.UndefOr[IRenderFunction[IListOnRenderRootProps[T]]] = js.undefined
     
     /**
       * Render override for the element representing the surface of the `List`.
       * Use this to alter the structure of the rendered content if necessary on each update.
       */
-    var onRenderSurface: js.UndefOr[IRenderFunction[IListOnRenderSurfaceProps[T]]] = js.native
+    var onRenderSurface: js.UndefOr[IRenderFunction[IListOnRenderSurfaceProps[T]]] = js.undefined
     
     /**
       * Optional callback to determine whether the list should be rendered in full, or virtualized.
@@ -365,37 +363,37 @@ object listTypesMod {
       * smaller lists.
       * The default implementation will virtualize when this callback is not provided.
       */
-    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[T], Boolean]] = js.native
+    var onShouldVirtualize: js.UndefOr[js.Function1[/* props */ IListProps[T], Boolean]] = js.undefined
     
     /** Number of items to render. Defaults to items.length. */
-    var renderCount: js.UndefOr[Double] = js.native
+    var renderCount: js.UndefOr[Double] = js.undefined
     
     /**
       * In addition to the visible window, how many windowHeights should we render ahead.
       * @defaultvalue 2
       */
-    var renderedWindowsAhead: js.UndefOr[Double] = js.native
+    var renderedWindowsAhead: js.UndefOr[Double] = js.undefined
     
     /**
       * In addition to the visible window, how many windowHeights should we render behind.
       * @defaultvalue 2
       */
-    var renderedWindowsBehind: js.UndefOr[Double] = js.native
+    var renderedWindowsBehind: js.UndefOr[Double] = js.undefined
     
     /** Index in items array to start rendering from. Defaults to 0. */
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean value to enable render page caching. This is an experimental performance optimization
       * that is off by default.
       * @defaultvalue false
       */
-    var usePageCache: js.UndefOr[Boolean] = js.native
+    var usePageCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An object which can be passed in as a fresh instance to 'force update' the list.
       */
-    var version: js.UndefOr[js.Object] = js.native
+    var version: js.UndefOr[js.Object] = js.undefined
   }
   object IListProps {
     
@@ -406,7 +404,7 @@ object listTypesMod {
     }
     
     @scala.inline
-    implicit class IListPropsMutableBuilder[Self <: IListProps[_], T] (val x: Self with IListProps[T]) extends AnyVal {
+    implicit class IListPropsMutableBuilder[Self <: IListProps[?], T] (val x: Self & IListProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponentRef(value: IRefObject[IList]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
@@ -446,7 +444,7 @@ object listTypesMod {
       def setGetPageSpecificationUndefined: Self = StObject.set(x, "getPageSpecification", js.undefined)
       
       @scala.inline
-      def setGetPageStyle(value: /* page */ IPage[T] => _): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
+      def setGetPageStyle(value: /* page */ IPage[T] => js.Any): Self = StObject.set(x, "getPageStyle", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetPageStyleUndefined: Self = StObject.set(x, "getPageStyle", js.undefined)
@@ -562,28 +560,27 @@ object listTypesMod {
     }
   }
   
-  @js.native
   trait IPage[T] extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var isSpacer: js.UndefOr[Boolean] = js.native
+    var isSpacer: js.UndefOr[Boolean] = js.undefined
     
-    var isVisible: js.UndefOr[Boolean] = js.native
+    var isVisible: js.UndefOr[Boolean] = js.undefined
     
-    var itemCount: Double = js.native
+    var itemCount: Double
     
-    var items: js.UndefOr[js.Array[T]] = js.native
+    var items: js.UndefOr[js.Array[T]] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var startIndex: Double = js.native
+    var startIndex: Double
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var top: Double = js.native
+    var top: Double
   }
   object IPage {
     
@@ -601,7 +598,7 @@ object listTypesMod {
     }
     
     @scala.inline
-    implicit class IPageMutableBuilder[Self <: IPage[_], T] (val x: Self with IPage[T]) extends AnyVal {
+    implicit class IPageMutableBuilder[Self <: IPage[?], T] (val x: Self & IPage[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: js.Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -650,15 +647,15 @@ object listTypesMod {
     }
   }
   
-  @js.native
   trait IPageProps[T]
-    extends HTMLAttributes[HTMLDivElement]
+    extends StObject
+       with HTMLAttributes[HTMLDivElement]
        with ClassAttributes[HTMLDivElement] {
     
     /**
       * The allocation data for the page.
       */
-    var page: IPage[T] = js.native
+    var page: IPage[T]
   }
   object IPageProps {
     
@@ -669,35 +666,34 @@ object listTypesMod {
     }
     
     @scala.inline
-    implicit class IPagePropsMutableBuilder[Self <: IPageProps[_], T] (val x: Self with IPageProps[T]) extends AnyVal {
+    implicit class IPagePropsMutableBuilder[Self <: IPageProps[?], T] (val x: Self & IPageProps[T]) extends AnyVal {
       
       @scala.inline
       def setPage(value: IPage[T]): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IPageSpecification extends StObject {
     
     /**
       * Data to pass through to the page when rendering.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The estimated pixel height of the page.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of items to allocate to the page.
       */
-    var itemCount: js.UndefOr[Double] = js.native
+    var itemCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The key to use when creating the page.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object IPageSpecification {
     

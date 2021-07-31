@@ -2,20 +2,18 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the contents of InfoWindow templates.
   */
-@js.native
 trait SchemaTemplate extends StObject {
   
   /**
     * List of columns from which the template is to be automatically
     * constructed. Only one of body or automaticColumns can be specified.
     */
-  var automaticColumnNames: js.UndefOr[js.Array[String]] = js.native
+  var automaticColumnNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Body of the template. It contains HTML with {column_name} to insert
@@ -23,30 +21,30 @@ trait SchemaTemplate extends StObject {
     * tags, e.g., script. Only one of body or automaticColumns can be
     * specified.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Type name: a template for the info window contents. The template can
     * either include an HTML body or a list of columns from which the template
     * is computed automatically.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Optional name assigned to a template.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the table for which the template is defined.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the template, unique within the context of a particular
     * table.
     */
-  var templateId: js.UndefOr[Double] = js.native
+  var templateId: js.UndefOr[Double] = js.undefined
 }
 object SchemaTemplate {
   

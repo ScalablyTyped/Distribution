@@ -2,81 +2,79 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePatchBaselineResult extends StObject {
   
   /**
     * A set of rules used to include patches in the baseline.
     */
-  var ApprovalRules: js.UndefOr[PatchRuleGroup] = js.native
+  var ApprovalRules: js.UndefOr[PatchRuleGroup] = js.undefined
   
   /**
     * A list of explicitly approved patches for the baseline.
     */
-  var ApprovedPatches: js.UndefOr[PatchIdList] = js.native
+  var ApprovedPatches: js.UndefOr[PatchIdList] = js.undefined
   
   /**
     * The compliance severity level assigned to the patch baseline after the update completed.
     */
-  var ApprovedPatchesComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.native
+  var ApprovedPatchesComplianceLevel: js.UndefOr[PatchComplianceLevel] = js.undefined
   
   /**
     * Indicates whether the list of approved patches includes non-security updates that should be applied to the instances. The default value is 'false'. Applies to Linux instances only.
     */
-  var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.native
+  var ApprovedPatchesEnableNonSecurity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the deleted patch baseline.
     */
-  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.native
+  var BaselineId: js.UndefOr[typings.awsSdk.ssmMod.BaselineId] = js.undefined
   
   /**
     * The date when the patch baseline was created.
     */
-  var CreatedDate: js.UndefOr[DateTime] = js.native
+  var CreatedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A description of the Patch Baseline.
     */
-  var Description: js.UndefOr[BaselineDescription] = js.native
+  var Description: js.UndefOr[BaselineDescription] = js.undefined
   
   /**
     * A set of global filters used to exclude patches from the baseline.
     */
-  var GlobalFilters: js.UndefOr[PatchFilterGroup] = js.native
+  var GlobalFilters: js.UndefOr[PatchFilterGroup] = js.undefined
   
   /**
     * The date when the patch baseline was last modified.
     */
-  var ModifiedDate: js.UndefOr[DateTime] = js.native
+  var ModifiedDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the patch baseline.
     */
-  var Name: js.UndefOr[BaselineName] = js.native
+  var Name: js.UndefOr[BaselineName] = js.undefined
   
   /**
     * The operating system rule used by the updated patch baseline.
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.undefined
   
   /**
     * A list of explicitly rejected patches for the baseline.
     */
-  var RejectedPatches: js.UndefOr[PatchIdList] = js.native
+  var RejectedPatches: js.UndefOr[PatchIdList] = js.undefined
   
   /**
     * The action specified to take on patches included in the RejectedPatches list. A patch can be allowed only if it is a dependency of another package, or blocked entirely along with packages that include it as a dependency.
     */
-  var RejectedPatchesAction: js.UndefOr[PatchAction] = js.native
+  var RejectedPatchesAction: js.UndefOr[PatchAction] = js.undefined
   
   /**
     * Information about the patches to use to update the instances, including target operating systems and source repositories. Applies to Linux instances only.
     */
-  var Sources: js.UndefOr[PatchSourceList] = js.native
+  var Sources: js.UndefOr[PatchSourceList] = js.undefined
 }
 object UpdatePatchBaselineResult {
   

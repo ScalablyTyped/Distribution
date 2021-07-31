@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientServiceusage.gapi.client.serviceusage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchEnableServicesRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait BatchEnableServicesRequest extends StObject {
     * shared with the user enabling the service. A single request can enable a maximum of 20 services at a time. If more than 20 services are specified, the request will fail, and no
     * state changes will occur.
     */
-  var serviceIds: js.UndefOr[js.Array[String]] = js.native
+  var serviceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BatchEnableServicesRequest {
   

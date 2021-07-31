@@ -2,41 +2,39 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvalidationList extends StObject {
   
   /**
     * A flag that indicates whether more invalidation batch requests remain to be listed. If your results were truncated, you can make a follow-up pagination request using the Marker request parameter to retrieve more invalidation batches in the list.
     */
-  var IsTruncated: Boolean = js.native
+  var IsTruncated: Boolean
   
   /**
     * A complex type that contains one InvalidationSummary element for each invalidation batch created by the current AWS account.
     */
-  var Items: js.UndefOr[InvalidationSummaryList] = js.native
+  var Items: js.UndefOr[InvalidationSummaryList] = js.undefined
   
   /**
     * The value that you provided for the Marker request parameter.
     */
-  var Marker: String = js.native
+  var Marker: String
   
   /**
     * The value that you provided for the MaxItems request parameter.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * If IsTruncated is true, this element is present and contains the value that you can use for the Marker request parameter to continue listing your invalidation batches where they left off.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The number of invalidation batches that were created by the current AWS account. 
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object InvalidationList {
   

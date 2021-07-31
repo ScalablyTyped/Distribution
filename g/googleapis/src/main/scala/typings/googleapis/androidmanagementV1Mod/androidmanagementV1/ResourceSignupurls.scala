@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidmanagement/v1", "androidmanagement_v1.Resource$Signupurls")
@@ -31,7 +30,7 @@ class ResourceSignupurls protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(callback: BodyResponseCallback[SchemaSignupUrl]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSignupUrl] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(params: ParamsResourceSignupurlsCreate): GaxiosPromise[SchemaSignupUrl] = js.native
   def create(params: ParamsResourceSignupurlsCreate, callback: BodyResponseCallback[SchemaSignupUrl]): Unit = js.native
   def create(

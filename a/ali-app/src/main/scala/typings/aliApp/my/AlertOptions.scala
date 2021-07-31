@@ -2,23 +2,22 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 交互反馈 https://docs.alipay.com/mini/api/ui-feedback
-@js.native
 trait AlertOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 按钮文字，默认确定 */
-  var buttonText: String = js.native
+  var buttonText: String
   
   /** alert框的内容 */
-  var content: String = js.native
+  var content: String
   
   /** alert框的标题 */
-  var title: String = js.native
+  var title: String
 }
 object AlertOptions {
   

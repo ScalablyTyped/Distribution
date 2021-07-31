@@ -2,24 +2,22 @@ package typings.artyomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtyomCommand extends StObject {
   
-  var action: js.Function = js.native
+  var action: js.Function
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var indexes: js.Array[_] = js.native
+  var indexes: js.Array[js.Any]
   
-  var smart: js.UndefOr[Boolean] = js.native
+  var smart: js.UndefOr[Boolean] = js.undefined
 }
 object ArtyomCommand {
   
   @scala.inline
-  def apply(action: js.Function, indexes: js.Array[_]): ArtyomCommand = {
+  def apply(action: js.Function, indexes: js.Array[js.Any]): ArtyomCommand = {
     val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], indexes = indexes.asInstanceOf[js.Any])
     __obj.asInstanceOf[ArtyomCommand]
   }
@@ -37,7 +35,7 @@ object ArtyomCommand {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setIndexes(value: js.Array[_]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
+    def setIndexes(value: js.Array[js.Any]): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIndexesVarargs(value: js.Any*): Self = StObject.set(x, "indexes", js.Array(value :_*))

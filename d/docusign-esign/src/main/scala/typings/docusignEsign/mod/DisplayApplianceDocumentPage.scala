@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayApplianceDocumentPage extends StObject {
   
-  var docPageCountTotal: js.UndefOr[Double] = js.native
+  var docPageCountTotal: js.UndefOr[Double] = js.undefined
   
-  var documentId: js.UndefOr[/*Integer that identifies the document in the envelope.*/ String] = js.native
+  var documentId: js.UndefOr[/*Integer that identifies the document in the envelope.*/ String] = js.undefined
   
-  var documentName: js.UndefOr[String] = js.native
+  var documentName: js.UndefOr[String] = js.undefined
   
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
-  var height72DPI: js.UndefOr[Double] = js.native
+  var height72DPI: js.UndefOr[Double] = js.undefined
   
-  var isAttachmentType: js.UndefOr[Boolean] = js.native
+  var isAttachmentType: js.UndefOr[Boolean] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var pageId: js.UndefOr[/*The unique id of the page.*/ String] = js.native
+  var pageId: js.UndefOr[/*The unique id of the page.*/ String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width72DPI: js.UndefOr[Double] = js.native
+  var width72DPI: js.UndefOr[Double] = js.undefined
 }
 object DisplayApplianceDocumentPage {
   

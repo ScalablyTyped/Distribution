@@ -32,94 +32,92 @@ import typings.dateIoCore.dateIoCoreStrings.year
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait DateIOFormats[TLibFormatToken] extends StObject {
     
     /** Day format string @example "1" */
-    var dayOfMonth: TLibFormatToken = js.native
+    var dayOfMonth: TLibFormatToken
     
     /** Localized full date @example "Jan 1, 2019" */
-    var fullDate: TLibFormatToken = js.native
+    var fullDate: TLibFormatToken
     
     /** Date & time format string with localized time @example "Jan 1, 2018 11:44 PM" */
-    var fullDateTime: TLibFormatToken = js.native
+    var fullDateTime: TLibFormatToken
     
     /** Not localized date & Time format 12h @example "Jan 1, 2018 11:44 PM" */
-    var fullDateTime12h: TLibFormatToken = js.native
+    var fullDateTime12h: TLibFormatToken
     
     /** Not localized date & Time format 24h @example "Jan 1, 2018 23:44" */
-    var fullDateTime24h: TLibFormatToken = js.native
+    var fullDateTime24h: TLibFormatToken
     
     /** Partially localized full date with weekday, useful for text-to-speech accessibility @example "Tuesday, January 1, 2019" */
-    var fullDateWithWeekday: TLibFormatToken = js.native
+    var fullDateWithWeekday: TLibFormatToken
     
     /** Full time localized format string @example "11:44 PM" for US, "23:44" for Europe */
-    var fullTime: TLibFormatToken = js.native
+    var fullTime: TLibFormatToken
     
     /** Not localized full time format string @example "11:44 PM" */
-    var fullTime12h: TLibFormatToken = js.native
+    var fullTime12h: TLibFormatToken
     
     /** Not localized full time format string @example "23:44" */
-    var fullTime24h: TLibFormatToken = js.native
+    var fullTime24h: TLibFormatToken
     
     /** Hours format string @example "11" */
-    var hours12h: TLibFormatToken = js.native
+    var hours12h: TLibFormatToken
     
     /** Hours format string @example "23" */
-    var hours24h: TLibFormatToken = js.native
+    var hours24h: TLibFormatToken
     
     /** Localized keyboard input friendly date format @example "02/13/2020 */
-    var keyboardDate: TLibFormatToken = js.native
+    var keyboardDate: TLibFormatToken
     
     /** Localized keyboard input friendly date/time format @example "02/13/2020 23:44" */
-    var keyboardDateTime: TLibFormatToken = js.native
+    var keyboardDateTime: TLibFormatToken
     
     /** Partially localized keyboard input friendly date/time 12h format @example "02/13/2020 11:44 PM" */
-    var keyboardDateTime12h: TLibFormatToken = js.native
+    var keyboardDateTime12h: TLibFormatToken
     
     /** Partially localized keyboard input friendly date/time 24h format @example "02/13/2020 23:44" */
-    var keyboardDateTime24h: TLibFormatToken = js.native
+    var keyboardDateTime24h: TLibFormatToken
     
     /** Minutes format string @example "44" */
-    var minutes: TLibFormatToken = js.native
+    var minutes: TLibFormatToken
     
     /** Month format string @example "January" */
-    var month: TLibFormatToken = js.native
+    var month: TLibFormatToken
     
     /** Month with date format string @example "January 1" */
-    var monthAndDate: TLibFormatToken = js.native
+    var monthAndDate: TLibFormatToken
     
     /** Short month format string @example "January 2018" */
-    var monthAndYear: TLibFormatToken = js.native
+    var monthAndYear: TLibFormatToken
     
     /** Short month format string @example "Jan" */
-    var monthShort: TLibFormatToken = js.native
+    var monthShort: TLibFormatToken
     
     /** Date format string with month and day of month @example "1 January" */
-    var normalDate: TLibFormatToken = js.native
+    var normalDate: TLibFormatToken
     
     /** Date format string with weekday, month and day of month @example "Wed, Jan 1" */
-    var normalDateWithWeekday: TLibFormatToken = js.native
+    var normalDateWithWeekday: TLibFormatToken
     
     /** Seconds format string @example "00" */
-    var seconds: TLibFormatToken = js.native
+    var seconds: TLibFormatToken
     
     /** Shorter day format @example "Jan 1" */
-    var shortDate: TLibFormatToken = js.native
+    var shortDate: TLibFormatToken
     
     /** Weekday format string @example "Wednesday" */
-    var weekday: TLibFormatToken = js.native
+    var weekday: TLibFormatToken
     
     /** Short weekday format string @example "Wed" */
-    var weekdayShort: TLibFormatToken = js.native
+    var weekdayShort: TLibFormatToken
     
     /** Year format string @example "2019" */
-    var year: TLibFormatToken = js.native
+    var year: TLibFormatToken
   }
   object DateIOFormats {
     
@@ -158,7 +156,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DateIOFormatsMutableBuilder[Self <: DateIOFormats[_], TLibFormatToken] (val x: Self with DateIOFormats[TLibFormatToken]) extends AnyVal {
+    implicit class DateIOFormatsMutableBuilder[Self <: DateIOFormats[?], TLibFormatToken] (val x: Self & DateIOFormats[TLibFormatToken]) extends AnyVal {
       
       @scala.inline
       def setDayOfMonth(value: TLibFormatToken): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
@@ -279,7 +277,7 @@ object mod {
     
     def formatNumber(numberToFormat: String): String = js.native
     
-    var formats: DateIOFormats[_] = js.native
+    var formats: DateIOFormats[js.Any] = js.native
     
     def getCurrentLocaleCode(): String = js.native
     

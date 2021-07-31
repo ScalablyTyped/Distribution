@@ -5,39 +5,38 @@ import typings.antvG2.antvG2Strings.default
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HtmlTooltipConfig
-  extends CommonTooltipConfig
+  extends StObject
+     with CommonTooltipConfig
      with TooltipConfig {
   
-  var containerTpl: js.UndefOr[String] = js.native
+  var containerTpl: js.UndefOr[String] = js.undefined
   
-  var enterable: js.UndefOr[Boolean] = js.native
+  var enterable: js.UndefOr[Boolean] = js.undefined
   
-  var `g2-tooltip`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `g2-tooltip-list`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip-list`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `g2-tooltip-list-item`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip-list-item`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `g2-tooltip-marker`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip-marker`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `g2-tooltip-title`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip-title`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var `g2-tooltip-value`: js.UndefOr[Record[String, _]] = js.native
+  var `g2-tooltip-value`: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var htmlContent: js.UndefOr[js.Function2[/* title */ String, /* items */ js.Array[TooltipItem], String]] = js.native
+  var htmlContent: js.UndefOr[js.Function2[/* title */ String, /* items */ js.Array[TooltipItem], String]] = js.undefined
   
-  var itemTpl: js.UndefOr[String] = js.native
+  var itemTpl: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_HtmlTooltipConfig: js.UndefOr[default] = js.native
+  var type_HtmlTooltipConfig: js.UndefOr[default] = js.undefined
   
   @JSName("useHtml")
-  var useHtml_HtmlTooltipConfig: js.UndefOr[`true`] = js.native
+  var useHtml_HtmlTooltipConfig: js.UndefOr[`true`] = js.undefined
 }
 object HtmlTooltipConfig {
   
@@ -63,13 +62,13 @@ object HtmlTooltipConfig {
     def setEnterableUndefined: Self = StObject.set(x, "enterable", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
+    def `setG2-tooltip`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setG2-tooltip-list`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip-list", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-list`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def `setG2-tooltip-list-item`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip-list-item", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-list-item`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-list-item", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setG2-tooltip-list-itemUndefined`: Self = StObject.set(x, "g2-tooltip-list-item", js.undefined)
@@ -78,19 +77,19 @@ object HtmlTooltipConfig {
     def `setG2-tooltip-listUndefined`: Self = StObject.set(x, "g2-tooltip-list", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-marker`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip-marker", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-marker`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-marker", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setG2-tooltip-markerUndefined`: Self = StObject.set(x, "g2-tooltip-marker", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-title`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip-title", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-title`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-title", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setG2-tooltip-titleUndefined`: Self = StObject.set(x, "g2-tooltip-title", js.undefined)
     
     @scala.inline
-    def `setG2-tooltip-value`(value: Record[String, _]): Self = StObject.set(x, "g2-tooltip-value", value.asInstanceOf[js.Any])
+    def `setG2-tooltip-value`(value: Record[String, js.Any]): Self = StObject.set(x, "g2-tooltip-value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def `setG2-tooltip-valueUndefined`: Self = StObject.set(x, "g2-tooltip-value", js.undefined)

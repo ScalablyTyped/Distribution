@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverMod {
@@ -20,29 +19,28 @@ object popoverMod {
     extends Component[PopoverProps, js.Object, js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>[P]} */ @js.native
-  trait PopoverProps extends StObject {
+  - Dropped {[ P in {[ P in keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover> ]: P} & {[ P in 'title' ]: never} & {[x: string] : never, [x: number] : never}[keyof react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>] ]: react.react.HTMLProps<react-bootstrap.react-bootstrap/lib/Popover.Popover>[P]} */ trait PopoverProps extends StObject {
     
     // Optional
-    var arrowOffsetLeft: js.UndefOr[Double | String] = js.native
+    var arrowOffsetLeft: js.UndefOr[Double | String] = js.undefined
     
-    var arrowOffsetTop: js.UndefOr[Double | String] = js.native
+    var arrowOffsetTop: js.UndefOr[Double | String] = js.undefined
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var positionLeft: js.UndefOr[Double | String] = js.native
-    
-    // String support added since v0.30.0
-    var positionTop: js.UndefOr[Double | String] = js.native
+    var positionLeft: js.UndefOr[Double | String] = js.undefined
     
     // String support added since v0.30.0
-    var title: js.UndefOr[ReactNode] = js.native
+    var positionTop: js.UndefOr[Double | String] = js.undefined
+    
+    // String support added since v0.30.0
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object PopoverProps {
     

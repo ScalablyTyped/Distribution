@@ -2,33 +2,31 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApsAlert extends StObject {
   
-  var actionLocKey: js.UndefOr[String] = js.native
+  var actionLocKey: js.UndefOr[String] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var launchImage: js.UndefOr[String] = js.native
+  var launchImage: js.UndefOr[String] = js.undefined
   
-  var locArgs: js.UndefOr[js.Array[String]] = js.native
+  var locArgs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var locKey: js.UndefOr[String] = js.native
+  var locKey: js.UndefOr[String] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var subtitleLocArgs: js.UndefOr[js.Array[String]] = js.native
+  var subtitleLocArgs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var subtitleLocKey: js.UndefOr[String] = js.native
+  var subtitleLocKey: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleLocArgs: js.UndefOr[js.Array[String]] = js.native
+  var titleLocArgs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var titleLocKey: js.UndefOr[String] = js.native
+  var titleLocKey: js.UndefOr[String] = js.undefined
 }
 object ApsAlert {
   

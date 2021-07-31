@@ -3,35 +3,54 @@ package typings.expoConfigureSplashScreen
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateManagerMod {
   
   @JSImport("@expo/configure-splash-screen/build/utils/StateManager", JSImport.Default)
   @js.native
-  class default[StateType, AppliedActionResultType, ActionName /* <: String */] protected () extends StateManager[StateType, AppliedActionResultType, ActionName] {
+  class default[StateType, AppliedActionResultType, ActionName /* <: String */] protected ()
+    extends StObject
+       with StateManager[StateType, AppliedActionResultType, ActionName] {
     def this(state: StateType) = this()
+    
+    /* CompleteClass */
+    var appliedActions: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in ActionName ]: AppliedActionResultType}
+      */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def applyAction[NewActionName /* <: String */](
+      action: js.Function2[
+          StateType, 
+          /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ K in ActionName ]: AppliedActionResultType}
+      */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any], 
+          js.Tuple3[StateType, NewActionName, AppliedActionResultType]
+        ]
+    ): StateManager[StateType, AppliedActionResultType, ActionName | NewActionName] = js.native
+    
+    /* CompleteClass */
+    var state: StateType = js.native
   }
   
-  @js.native
   trait StateManager[StateType, AppliedActionResultType, ActionName /* <: String */] extends StObject {
     
     var appliedActions: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in ActionName ]: AppliedActionResultType}
-      */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any] = js.native
+      */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any]
     
     def applyAction[NewActionName /* <: String */](
       action: js.Function2[
           /* content */ StateType, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in ActionName ]: AppliedActionResultType}
-      */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any], 
+      */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any], 
           js.Tuple3[StateType, NewActionName, AppliedActionResultType]
         ]
-    ): StateManager[StateType, AppliedActionResultType, ActionName | NewActionName] = js.native
+    ): StateManager[StateType, AppliedActionResultType, ActionName | NewActionName]
     
-    var state: StateType = js.native
+    var state: StateType
   }
   object StateManager {
     
@@ -39,12 +58,12 @@ object stateManagerMod {
     def apply[StateType, AppliedActionResultType, ActionName /* <: String */](
       appliedActions: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in ActionName ]: AppliedActionResultType}
-      */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any],
+      */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any],
       applyAction: js.Function2[
           /* content */ StateType, 
           /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in ActionName ]: AppliedActionResultType}
-      */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any], 
+      */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any], 
           js.Tuple3[StateType, js.Any, AppliedActionResultType]
         ] => StateManager[StateType, AppliedActionResultType, ActionName | js.Any],
       state: StateType
@@ -54,13 +73,13 @@ object stateManagerMod {
     }
     
     @scala.inline
-    implicit class StateManagerMutableBuilder[Self <: StateManager[_, _, _], StateType, AppliedActionResultType, ActionName /* <: String */] (val x: Self with (StateManager[StateType, AppliedActionResultType, ActionName])) extends AnyVal {
+    implicit class StateManagerMutableBuilder[Self <: StateManager[?, ?, ?], StateType, AppliedActionResultType, ActionName /* <: String */] (val x: Self & (StateManager[StateType, AppliedActionResultType, ActionName])) extends AnyVal {
       
       @scala.inline
       def setAppliedActions(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in ActionName ]: AppliedActionResultType}
-        */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any]
+        */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any]
       ): Self = StObject.set(x, "appliedActions", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -69,7 +88,7 @@ object stateManagerMod {
               /* content */ StateType, 
               /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in ActionName ]: AppliedActionResultType}
-        */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager with TopLevel[js.Any], 
+        */ /* actions */ typings.expoConfigureSplashScreen.expoConfigureSplashScreenStrings.StateManager & TopLevel[js.Any], 
               js.Tuple3[StateType, js.Any, AppliedActionResultType]
             ] => StateManager[StateType, AppliedActionResultType, ActionName | js.Any]
       ): Self = StObject.set(x, "applyAction", js.Any.fromFunction1(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalysisSourceTemplate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the source template of an analysis.
     */
-  var Arn: typings.awsSdk.quicksightMod.Arn = js.native
+  var Arn: typings.awsSdk.quicksightMod.Arn
   
   /**
     * The dataset references of the source template of an analysis.
     */
-  var DataSetReferences: DataSetReferenceList = js.native
+  var DataSetReferences: DataSetReferenceList
 }
 object AnalysisSourceTemplate {
   

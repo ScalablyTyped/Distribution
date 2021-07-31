@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.TabIndex
 import typings.blueprintjsCore.hotkeysTypesMod.IHotkeysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Hotkeys")

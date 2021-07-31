@@ -2,16 +2,14 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterResponse extends StObject {
   
   /**
     * The full description of the cluster to delete.
     */
-  var cluster: js.UndefOr[Cluster] = js.native
+  var cluster: js.UndefOr[Cluster] = js.undefined
 }
 object DeleteClusterResponse {
   

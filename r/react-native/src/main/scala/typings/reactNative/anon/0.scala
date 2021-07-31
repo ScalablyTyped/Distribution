@@ -2,13 +2,11 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var animated: js.UndefOr[Boolean | Null] = js.native
+  var animated: js.UndefOr[Boolean | Null] = js.undefined
 }
 object `0` {
   

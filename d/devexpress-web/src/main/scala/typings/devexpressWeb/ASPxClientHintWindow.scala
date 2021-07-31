@@ -2,13 +2,11 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxHint's window.
   */
-@js.native
 trait ASPxClientHintWindow extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait ASPxClientHintWindow extends StObject {
     * @param html An object that specifies the hint content.
     * @param options An  object that specifies the hint's options.
     */
-  def SetContent(html: js.Any, options: ASPxClientHintOptions): Unit = js.native
+  def SetContent(html: js.Any, options: ASPxClientHintOptions): Unit
   
   /**
     * Set the hint's loading animation
     */
-  def SetContentLoading(): Unit = js.native
+  def SetContentLoading(): Unit
   
   /**
     * Forces the ASPxClientHint's window to recalculate its position.
     */
-  def UpdatePosition(): Unit = js.native
+  def UpdatePosition(): Unit
 }
 object ASPxClientHintWindow {
   

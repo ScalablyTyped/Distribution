@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartHCEOption extends StObject {
   
   /** 需要注册到系统的 AID 列表 */
-  var aid_list: js.Array[String] = js.native
+  var aid_list: js.Array[String]
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[StartHCECompleteCallback] = js.native
+  var complete: js.UndefOr[StartHCECompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[StartHCEFailCallback] = js.native
+  var fail: js.UndefOr[StartHCEFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[StartHCESuccessCallback] = js.native
+  var success: js.UndefOr[StartHCESuccessCallback] = js.undefined
 }
 object StartHCEOption {
   

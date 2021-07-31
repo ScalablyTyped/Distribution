@@ -3,23 +3,21 @@ package typings.actionsOnGoogle.apiV2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2WebhookResponse extends StObject {
   
-  var followupEventInput: js.UndefOr[GoogleCloudDialogflowV2EventInput] = js.native
+  var followupEventInput: js.UndefOr[GoogleCloudDialogflowV2EventInput] = js.undefined
   
-  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
-  var fulfillmentText: js.UndefOr[String] = js.native
+  var fulfillmentText: js.UndefOr[String] = js.undefined
   
-  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.undefined
   
-  var payload: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var payload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2WebhookResponse {
   
@@ -63,7 +61,7 @@ object GoogleCloudDialogflowV2WebhookResponse {
     def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
-    def setPayload(value: ApiClientObjectMap[_]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

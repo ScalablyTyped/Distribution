@@ -2,21 +2,19 @@ package typings.octokitPluginPaginateRest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Done extends StObject {
   
-  var done: Boolean = js.native
+  var done: Boolean
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
 }
 object Done {
   
   @scala.inline
-  def apply(done: Boolean): Done = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+  def apply(done: Boolean, value: Unit): Done = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Done]
   }
   
@@ -25,5 +23,8 @@ object Done {
     
     @scala.inline
     def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateAddressResult extends StObject {
   
   /**
     * [EC2-VPC] The ID that represents the association of the Elastic IP address with an instance.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
 }
 object AssociateAddressResult {
   

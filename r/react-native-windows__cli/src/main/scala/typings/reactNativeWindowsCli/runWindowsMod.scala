@@ -4,14 +4,16 @@ import typings.reactNativeCommunityCliTypes.mod.Command
 import typings.reactNativeWindowsCli.reactNativeWindowsCliBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runWindowsMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/runWindows", "getAnonymizedProjectName")
+  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/runWindows", JSImport.Namespace)
   @js.native
-  def getAnonymizedProjectName(projectRoot: String): js.Promise[String | Null] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getAnonymizedProjectName(projectRoot: String): js.Promise[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnonymizedProjectName")(projectRoot.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String | Null]]
   
   @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/runWindows", "runWindowsCommand")
   @js.native

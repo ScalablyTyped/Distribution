@@ -3,36 +3,34 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GLSLFileConfig extends StObject {
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Text Cache.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The type of shader. Either `fragment` for a fragment shader, or `vertex` for a vertex shader. This is ignored if you load a shader bundle.
     */
-  var shaderType: js.UndefOr[String] = js.native
+  var shaderType: js.UndefOr[String] = js.undefined
   
   /**
     * The absolute or relative URL to load the file from.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object GLSLFileConfig {
   

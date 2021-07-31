@@ -3,13 +3,11 @@ package typings.awsLambda.anon
 import typings.awsLambda.apiGatewayAuthorizerMod.PrincipalValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotPrincipal extends StObject {
   
-  var NotPrincipal: PrincipalValue = js.native
+  var NotPrincipal: PrincipalValue
 }
 object NotPrincipal {
   

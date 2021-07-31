@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionRunAsConfig extends StObject {
   
   /**
     * The group ID whose permissions are used to run a Lambda function.
     */
-  var Gid: js.UndefOr[integer] = js.native
+  var Gid: js.UndefOr[integer] = js.undefined
   
   /**
     * The user ID whose permissions are used to run a Lambda function.
     */
-  var Uid: js.UndefOr[integer] = js.native
+  var Uid: js.UndefOr[integer] = js.undefined
 }
 object FunctionRunAsConfig {
   

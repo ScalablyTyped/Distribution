@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an ExtensionRangeOptions. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ExtensionRangeOptions.
   * @param [properties] Properties to set
   */
-class ExtensionRangeOptions () extends IExtensionRangeOptions {
+class ExtensionRangeOptions ()
+  extends StObject
+     with IExtensionRangeOptions {
   def this(properties: IExtensionRangeOptions) = this()
   
   /**
@@ -32,18 +33,20 @@ class ExtensionRangeOptions () extends IExtensionRangeOptions {
 }
 object ExtensionRangeOptions {
   
+  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ExtensionRangeOptions instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ExtensionRangeOptions instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.create")
-  @js.native
-  def create(): ExtensionRangeOptions = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.create")
-  @js.native
-  def create(properties: IExtensionRangeOptions): ExtensionRangeOptions = js.native
+  @scala.inline
+  def create(): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ExtensionRangeOptions]
+  @scala.inline
+  def create(properties: IExtensionRangeOptions): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
   
   /**
     * Decodes an ExtensionRangeOptions message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object ExtensionRangeOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Reader): ExtensionRangeOptions = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ExtensionRangeOptions = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array): ExtensionRangeOptions = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ExtensionRangeOptions = js.native
+  @scala.inline
+  def decode(reader: Reader): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ExtensionRangeOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Uint8Array): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ExtensionRangeOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ExtensionRangeOptions]
   
   /**
     * Decodes an ExtensionRangeOptions message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object ExtensionRangeOptions {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ExtensionRangeOptions = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ExtensionRangeOptions = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
   
   /**
     * Encodes the specified ExtensionRangeOptions message. Does not implicitly {@link google.protobuf.ExtensionRangeOptions.verify|verify} messages.
@@ -89,12 +86,10 @@ object ExtensionRangeOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.encode")
-  @js.native
-  def encode(message: IExtensionRangeOptions): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.encode")
-  @js.native
-  def encode(message: IExtensionRangeOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IExtensionRangeOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IExtensionRangeOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ExtensionRangeOptions message, length delimited. Does not implicitly {@link google.protobuf.ExtensionRangeOptions.verify|verify} messages.
@@ -103,12 +98,10 @@ object ExtensionRangeOptions {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExtensionRangeOptions): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IExtensionRangeOptions, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IExtensionRangeOptions): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IExtensionRangeOptions, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an ExtensionRangeOptions message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object ExtensionRangeOptions {
     * @returns ExtensionRangeOptions
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ExtensionRangeOptions = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ExtensionRangeOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ExtensionRangeOptions]
   
   /**
     * Creates a plain object from an ExtensionRangeOptions message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object ExtensionRangeOptions {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.toObject")
-  @js.native
-  def toObject(message: ExtensionRangeOptions): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.toObject")
-  @js.native
-  def toObject(message: ExtensionRangeOptions, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ExtensionRangeOptions): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ExtensionRangeOptions, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an ExtensionRangeOptions message.
@@ -140,7 +130,6 @@ object ExtensionRangeOptions {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.protobuf.ExtensionRangeOptions.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -5,16 +5,14 @@ import typings.exceljs.exceljsStrings.custom
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CommentMargins> */
-@js.native
 trait PartialCommentMargins extends StObject {
   
-  var inset: js.UndefOr[js.Array[Number]] = js.native
+  var inset: js.UndefOr[js.Array[Number]] = js.undefined
   
-  var insetmode: js.UndefOr[auto | custom] = js.native
+  var insetmode: js.UndefOr[auto | custom] = js.undefined
 }
 object PartialCommentMargins {
   

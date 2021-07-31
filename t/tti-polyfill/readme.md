@@ -11,8 +11,8 @@ Polyfill for Time to Interactive. See https://goo.gl/OSmrPk
 | Full name          | tti-polyfill |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 17 |
-| # downloads        | 5424878 |
+| # dependents       | 20 |
+| # downloads        | 5924105 |
 | # stars            | 0 |
 
 ## Links

@@ -4,15 +4,13 @@ import typings.winrt.Windows.Foundation.Collections.IIterable
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchSuggestionCollection extends StObject {
   
-  def appendQuerySuggestion(text: String): Unit = js.native
+  def appendQuerySuggestion(text: String): Unit
   
-  def appendQuerySuggestions(suggestions: IIterable[String]): Unit = js.native
+  def appendQuerySuggestions(suggestions: IIterable[String]): Unit
   
   def appendResultSuggestion(
     text: String,
@@ -20,11 +18,11 @@ trait ISearchSuggestionCollection extends StObject {
     tag: String,
     image: IRandomAccessStreamReference,
     imageAlternateText: String
-  ): Unit = js.native
+  ): Unit
   
-  def appendSearchSeparator(label: String): Unit = js.native
+  def appendSearchSeparator(label: String): Unit
   
-  var size: Double = js.native
+  var size: Double
 }
 object ISearchSuggestionCollection {
   

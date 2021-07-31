@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationEventMap extends StObject {
   
-  var cancel: AnimationPlaybackEvent = js.native
+  var cancel: AnimationPlaybackEvent
   
-  var finish: AnimationPlaybackEvent = js.native
+  var finish: AnimationPlaybackEvent
 }
 object AnimationEventMap {
   

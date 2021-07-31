@@ -2,19 +2,17 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveSeekableRange extends StObject {
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var isLiveDone: js.UndefOr[Boolean] = js.native
+  var isLiveDone: js.UndefOr[Boolean] = js.undefined
   
-  var isMovingWindow: js.UndefOr[Boolean] = js.native
+  var isMovingWindow: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object LiveSeekableRange {
   

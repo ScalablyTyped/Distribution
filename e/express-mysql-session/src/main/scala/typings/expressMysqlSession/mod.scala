@@ -7,28 +7,34 @@ import typings.expressMysqlSession.anon.PartialSchema
 import typings.expressSession.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-mysql-session", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(session: FnCall): Instantiable3[
     /* options */ Options, 
     /* connection */ js.UndefOr[js.Any], 
     /* callback */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
     MySQLStoreClass
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[Instantiable3[
+    /* options */ Options, 
+    /* connection */ js.UndefOr[js.Any], 
+    /* callback */ js.UndefOr[js.Function1[/* error */ js.Any, Unit]], 
+    MySQLStoreClass
+  ]]
   
+  @JSImport("express-mysql-session", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ColumnNames extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var expires: String = js.native
+    var expires: String
     
-    var session_id: String = js.native
+    var session_id: String
   }
   object ColumnNames {
     
@@ -109,28 +115,27 @@ object mod {
     def validateOptions(options: Options): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var checkExpirationInterval: js.UndefOr[Double] = js.native
+    var checkExpirationInterval: js.UndefOr[Double] = js.undefined
     
-    var connectionLimit: js.UndefOr[Double] = js.native
+    var connectionLimit: js.UndefOr[Double] = js.undefined
     
-    var createDatabaseTable: js.UndefOr[Boolean] = js.native
+    var createDatabaseTable: js.UndefOr[Boolean] = js.undefined
     
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
-    var expiration: js.UndefOr[Double] = js.native
+    var expiration: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var schema: js.UndefOr[PartialSchema] = js.native
+    var schema: js.UndefOr[PartialSchema] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -205,12 +210,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Schema extends StObject {
     
-    var columnNames: PartialColumnNames = js.native
+    var columnNames: PartialColumnNames
     
-    var tableName: String = js.native
+    var tableName: String
   }
   object Schema {
     

@@ -2,7 +2,6 @@ package typings.suitescript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @return {nlobjError}
   * @constructor
   */
-@js.native
 trait nlobjError extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getCode(): String = js.native
+  def getCode(): String
   
   /**
     * return the error description for this error.
@@ -37,7 +35,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getDetails(): String = js.native
+  def getDetails(): String
   
   /**
     * return the error db ID for this error (if it was an unhandled unexpected error).
@@ -49,7 +47,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getId(): String = js.native
+  def getId(): String
   
   /**
     * return the internalid of the record if this error was thrown in an aftersubmit script.
@@ -61,7 +59,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getInternalId(): js.Any = js.native
+  def getInternalId(): js.Any
   
   /**
     * return a stacktrace containing the location of the error.
@@ -72,7 +70,7 @@ trait nlobjError extends StObject {
     *
     * @since 2008.2
     */
-  def getStackTrace(): Unit = js.native
+  def getStackTrace(): Unit
   
   /**
     * return the userevent script name where this error was thrown.
@@ -84,7 +82,7 @@ trait nlobjError extends StObject {
     * @since 2008.2
     * @return
     */
-  def getUserEvent(): String = js.native
+  def getUserEvent(): String
 }
 object nlobjError {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdvancedSecurityOptionsStatus extends StObject {
   
   /**
     *  Specifies advanced security options for the specified Elasticsearch domain.
     */
-  var Options: AdvancedSecurityOptions = js.native
+  var Options: AdvancedSecurityOptions
   
   /**
     *  Status of the advanced security options for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object AdvancedSecurityOptionsStatus {
   

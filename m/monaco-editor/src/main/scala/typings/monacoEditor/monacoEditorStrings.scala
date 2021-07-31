@@ -8,7 +8,6 @@ import typings.monacoEditor.mod.editor.GoToLocationValues
 import typings.monacoEditor.mod.editor._LineNumbersType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monacoEditorStrings {
@@ -40,18 +39,23 @@ object monacoEditorStrings {
   
   @js.native
   sealed trait always
-    extends EditorAutoClosingOvertypeStrategy
+    extends StObject
+       with EditorAutoClosingOvertypeStrategy
        with EditorAutoClosingStrategy
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait auto extends EditorAutoClosingOvertypeStrategy
+  sealed trait auto
+    extends StObject
+       with EditorAutoClosingOvertypeStrategy
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait beforeWhitespace extends EditorAutoClosingStrategy
+  sealed trait beforeWhitespace
+    extends StObject
+       with EditorAutoClosingStrategy
   @scala.inline
   def beforeWhitespace: beforeWhitespace = "beforeWhitespace".asInstanceOf[beforeWhitespace]
   
@@ -86,7 +90,9 @@ object monacoEditorStrings {
   def bounded: bounded = "bounded".asInstanceOf[bounded]
   
   @js.native
-  sealed trait brackets extends EditorAutoSurroundStrategy
+  sealed trait brackets
+    extends StObject
+       with EditorAutoSurroundStrategy
   @scala.inline
   def brackets: brackets = "brackets".asInstanceOf[brackets]
   
@@ -171,12 +177,16 @@ object monacoEditorStrings {
   def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait goto extends GoToLocationValues
+  sealed trait goto
+    extends StObject
+       with GoToLocationValues
   @scala.inline
   def goto: goto = "goto".asInstanceOf[goto]
   
   @js.native
-  sealed trait gotoAndPeek extends GoToLocationValues
+  sealed trait gotoAndPeek
+    extends StObject
+       with GoToLocationValues
   @scala.inline
   def gotoAndPeek: gotoAndPeek = "gotoAndPeek".asInstanceOf[gotoAndPeek]
   
@@ -186,7 +196,9 @@ object monacoEditorStrings {
   def gutter: gutter = "gutter".asInstanceOf[gutter]
   
   @js.native
-  sealed trait `hc-black` extends BuiltinTheme
+  sealed trait `hc-black`
+    extends StObject
+       with BuiltinTheme
   @scala.inline
   def `hc-black`: `hc-black` = "hc-black".asInstanceOf[`hc-black`]
   
@@ -221,7 +233,9 @@ object monacoEditorStrings {
   def insert: insert = "insert".asInstanceOf[insert]
   
   @js.native
-  sealed trait interval extends _LineNumbersType
+  sealed trait interval
+    extends StObject
+       with _LineNumbersType
   @scala.inline
   def interval: interval = "interval".asInstanceOf[interval]
   
@@ -232,7 +246,8 @@ object monacoEditorStrings {
   
   @js.native
   sealed trait languageDefined
-    extends EditorAutoClosingStrategy
+    extends StObject
+       with EditorAutoClosingStrategy
        with EditorAutoSurroundStrategy
   @scala.inline
   def languageDefined: languageDefined = "languageDefined".asInstanceOf[languageDefined]
@@ -274,7 +289,8 @@ object monacoEditorStrings {
   
   @js.native
   sealed trait never
-    extends EditorAutoClosingOvertypeStrategy
+    extends StObject
+       with EditorAutoClosingOvertypeStrategy
        with EditorAutoClosingStrategy
        with EditorAutoSurroundStrategy
   @scala.inline
@@ -286,12 +302,16 @@ object monacoEditorStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait off extends _LineNumbersType
+  sealed trait off
+    extends StObject
+       with _LineNumbersType
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait on extends _LineNumbersType
+  sealed trait on
+    extends StObject
+       with _LineNumbersType
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   
@@ -301,7 +321,9 @@ object monacoEditorStrings {
   def onlySnippets: onlySnippets = "onlySnippets".asInstanceOf[onlySnippets]
   
   @js.native
-  sealed trait peek extends GoToLocationValues
+  sealed trait peek
+    extends StObject
+       with GoToLocationValues
   @scala.inline
   def peek: peek = "peek".asInstanceOf[peek]
   
@@ -321,7 +343,9 @@ object monacoEditorStrings {
   def proportional: proportional = "proportional".asInstanceOf[proportional]
   
   @js.native
-  sealed trait quotes extends EditorAutoSurroundStrategy
+  sealed trait quotes
+    extends StObject
+       with EditorAutoSurroundStrategy
   @scala.inline
   def quotes: quotes = "quotes".asInstanceOf[quotes]
   
@@ -336,7 +360,9 @@ object monacoEditorStrings {
   def recentlyUsedByPrefix: recentlyUsedByPrefix = "recentlyUsedByPrefix".asInstanceOf[recentlyUsedByPrefix]
   
   @js.native
-  sealed trait relative extends _LineNumbersType
+  sealed trait relative
+    extends StObject
+       with _LineNumbersType
   @scala.inline
   def relative: relative = "relative".asInstanceOf[relative]
   
@@ -421,12 +447,16 @@ object monacoEditorStrings {
   def visible: visible = "visible".asInstanceOf[visible]
   
   @js.native
-  sealed trait vs extends BuiltinTheme
+  sealed trait vs
+    extends StObject
+       with BuiltinTheme
   @scala.inline
   def vs: vs = "vs".asInstanceOf[vs]
   
   @js.native
-  sealed trait `vs-dark` extends BuiltinTheme
+  sealed trait `vs-dark`
+    extends StObject
+       with BuiltinTheme
   @scala.inline
   def `vs-dark`: `vs-dark` = "vs-dark".asInstanceOf[`vs-dark`]
   

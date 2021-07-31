@@ -3,31 +3,29 @@ package typings.loopback.anon
 import typings.loopback.mod.ACL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaseSensitiveEmail extends StObject {
   
-  var acls: js.Array[ACL] = js.native
+  var acls: js.Array[ACL]
   
-  var caseSensitiveEmail: Boolean = js.native
+  var caseSensitiveEmail: Boolean
   
-  var emailVerificationRequired: Boolean = js.native
+  var emailVerificationRequired: Boolean
   
-  var http: Path = js.native
+  var http: Path
   
-  var maxTTL: Double = js.native
+  var maxTTL: Double
   
-  var realmDelimiter: String = js.native
+  var realmDelimiter: String
   
-  var realmRequired: Boolean = js.native
+  var realmRequired: Boolean
   
-  var resetPasswordTokenTTL: Double = js.native
+  var resetPasswordTokenTTL: Double
   
-  var saltWorkFactor: Double = js.native
+  var saltWorkFactor: Double
   
-  var ttl: Double = js.native
+  var ttl: Double
 }
 object CaseSensitiveEmail {
   

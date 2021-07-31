@@ -2,17 +2,15 @@ package typings.psi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
-  var benchmarkIndex: Double = js.native
+  var benchmarkIndex: Double
   
-  var hostUserAgent: String = js.native
+  var hostUserAgent: String
   
-  var networkUserAgent: String = js.native
+  var networkUserAgent: String
 }
 object Environment {
   

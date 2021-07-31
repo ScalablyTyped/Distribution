@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddInstanceFleetInput extends StObject {
   
   /**
     * The unique identifier of the cluster.
     */
-  var ClusterId: XmlStringMaxLen256 = js.native
+  var ClusterId: XmlStringMaxLen256
   
   /**
     * Specifies the configuration of the instance fleet.
     */
-  var InstanceFleet: InstanceFleetConfig = js.native
+  var InstanceFleet: InstanceFleetConfig
 }
 object AddInstanceFleetInput {
   

@@ -5,7 +5,6 @@ import typings.astTypes.kindsMod.JSXIdentifierKind
 import typings.astTypes.namedTypesMod.namedTypes.JSXNamespacedName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

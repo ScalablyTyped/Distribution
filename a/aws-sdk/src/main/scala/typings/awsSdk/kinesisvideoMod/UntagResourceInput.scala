@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signaling channel from which you want to remove tags.
     */
-  var ResourceARN: typings.awsSdk.kinesisvideoMod.ResourceARN = js.native
+  var ResourceARN: typings.awsSdk.kinesisvideoMod.ResourceARN
   
   /**
     * A list of the keys of the tags that you want to remove.
     */
-  var TagKeyList: typings.awsSdk.kinesisvideoMod.TagKeyList = js.native
+  var TagKeyList: typings.awsSdk.kinesisvideoMod.TagKeyList
 }
 object UntagResourceInput {
   

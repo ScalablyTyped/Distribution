@@ -11,8 +11,8 @@ Register named callbacks and call them with arguments.
 | Full name          | d3-dispatch |
 | Keywords           | d3, d3-module, event, listener, dispatch |
 | # releases         | 4 |
-| # dependents       | 103 |
-| # downloads        | 45985691 |
+| # dependents       | 115 |
+| # downloads        | 56879072 |
 | # stars            | 1 |
 
 ## Links

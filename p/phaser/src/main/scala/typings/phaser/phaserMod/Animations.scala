@@ -1,10 +1,10 @@
 package typings.phaser.phaserMod
 
 import typings.phaser.Phaser.Textures.Frame
+import typings.phaser.Phaser.Types.Animations.JSONAnimationFrame
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Animations {
@@ -21,7 +21,8 @@ object Animations {
   @JSImport("phaser", "Animations.Animation")
   @js.native
   class Animation protected ()
-    extends typings.phaser.Phaser.Animations.Animation {
+    extends StObject
+       with typings.phaser.Phaser.Animations.Animation {
     /**
       * 
       * @param manager A reference to the global Animation Manager
@@ -46,7 +47,8 @@ object Animations {
   @JSImport("phaser", "Animations.AnimationFrame")
   @js.native
   class AnimationFrame protected ()
-    extends typings.phaser.Phaser.Animations.AnimationFrame {
+    extends StObject
+       with typings.phaser.Phaser.Animations.AnimationFrame {
     /**
       * 
       * @param textureKey The key of the Texture this AnimationFrame uses.
@@ -56,6 +58,80 @@ object Animations {
       */
     def this(textureKey: String, textureFrame: String, index: integer, frame: Frame) = this()
     def this(textureKey: String, textureFrame: integer, index: integer, frame: Frame) = this()
+    
+    /**
+      * Destroys this object by removing references to external resources and callbacks.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Additional time (in ms) that this frame should appear for during playback.
+      * The value is added onto the msPerFrame set by the animation.
+      */
+    /* CompleteClass */
+    var duration: Double = js.native
+    
+    /**
+      * A reference to the Texture Frame this AnimationFrame uses for rendering.
+      */
+    /* CompleteClass */
+    var frame: Frame = js.native
+    
+    /**
+      * The index of this AnimationFrame within the Animation sequence.
+      */
+    /* CompleteClass */
+    var index: integer = js.native
+    
+    /**
+      * Is this the first frame in an animation sequence?
+      */
+    /* CompleteClass */
+    override val isFirst: Boolean = js.native
+    
+    /**
+      * Is this the last frame in an animation sequence?
+      */
+    /* CompleteClass */
+    override val isLast: Boolean = js.native
+    
+    /**
+      * A reference to the AnimationFrame that comes after this one in the animation, if any.
+      */
+    /* CompleteClass */
+    override val nextFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    
+    /**
+      * A reference to the AnimationFrame that comes before this one in the animation, if any.
+      */
+    /* CompleteClass */
+    override val prevFrame: typings.phaser.Phaser.Animations.AnimationFrame = js.native
+    
+    /**
+      * What % through the animation does this frame come?
+      * This value is generated when the animation is created and cached here.
+      */
+    /* CompleteClass */
+    override val progress: Double = js.native
+    
+    /**
+      * The key of the Frame within the Texture that this AnimationFrame uses.
+      */
+    /* CompleteClass */
+    var textureFrame: String | integer = js.native
+    
+    /**
+      * The key of the Texture this AnimationFrame uses.
+      */
+    /* CompleteClass */
+    var textureKey: String = js.native
+    
+    /**
+      * Generates a JavaScript object suitable for converting to JSON.
+      */
+    /* CompleteClass */
+    override def toJSON(): JSONAnimationFrame = js.native
   }
   
   /**
@@ -70,7 +146,8 @@ object Animations {
   @JSImport("phaser", "Animations.AnimationManager")
   @js.native
   class AnimationManager protected ()
-    extends typings.phaser.Phaser.Animations.AnimationManager {
+    extends StObject
+       with typings.phaser.Phaser.Animations.AnimationManager {
     /**
       * 
       * @param game A reference to the Phaser.Game instance.

@@ -3,17 +3,15 @@ package typings.browserSync.mod
 import typings.chokidar.mod.WatchOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileCallback extends StObject {
   
-  def fn(event: String, file: String): js.Any = js.native
+  def fn(event: String, file: String): js.Any
   
-  var `match`: js.UndefOr[String | js.Array[String]] = js.native
+  var `match`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var options: js.UndefOr[WatchOptions] = js.native
+  var options: js.UndefOr[WatchOptions] = js.undefined
 }
 object FileCallback {
   

@@ -2,13 +2,13 @@ package typings.openui5.global.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.SimpleType")
 @js.native
 abstract class SimpleType protected ()
-  extends typings.openui5.sap.ui.model.SimpleType {
+  extends StObject
+     with typings.openui5.sap.ui.model.SimpleType {
   /**
     * Constructor for a new SimpleType.
     * @param oFormatOptions options as provided by concrete subclasses

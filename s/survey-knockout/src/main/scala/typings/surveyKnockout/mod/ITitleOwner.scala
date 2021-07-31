@@ -2,25 +2,23 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITitleOwner extends StObject {
   
-  var isRequireTextAfterTitle: Boolean = js.native
+  var isRequireTextAfterTitle: Boolean
   
-  var isRequireTextBeforeTitle: Boolean = js.native
+  var isRequireTextBeforeTitle: Boolean
   
-  var isRequireTextOnStart: Boolean = js.native
+  var isRequireTextOnStart: Boolean
   
-  var locTitle: LocalizableString = js.native
+  var locTitle: LocalizableString
   
-  var name: String = js.native
+  var name: String
   
-  var no: String = js.native
+  var no: String
   
-  var requiredText: String = js.native
+  var requiredText: String
 }
 object ITitleOwner {
   

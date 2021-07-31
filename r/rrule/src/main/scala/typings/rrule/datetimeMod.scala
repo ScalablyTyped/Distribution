@@ -4,7 +4,6 @@ import typings.rrule.typesMod.ParsedOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeMod {
@@ -63,9 +62,12 @@ object datetimeMod {
   /* static members */
   object DateTime {
     
-    @JSImport("rrule/dist/esm/src/datetime", "DateTime.fromDate")
+    @JSImport("rrule/dist/esm/src/datetime", "DateTime")
     @js.native
-    def fromDate(date: Date): DateTime = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromDate(date: Date): DateTime = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[DateTime]
   }
   
   @JSImport("rrule/dist/esm/src/datetime", "Time")

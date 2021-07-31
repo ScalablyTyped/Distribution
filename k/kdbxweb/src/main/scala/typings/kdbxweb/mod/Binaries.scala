@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Binaries")
@@ -20,5 +19,5 @@ class Binaries () extends StObject {
   def getBinaryHash(binary: ArrayBuffer): js.Promise[String] = js.native
   def getBinaryHash(binary: Uint8Array): js.Promise[String] = js.native
   
-  def hash(): js.Promise[js.Array[_]] = js.native
+  def hash(): js.Promise[js.Array[js.Any]] = js.native
 }

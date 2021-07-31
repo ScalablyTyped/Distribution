@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait PivotHierarchyCollection extends ClientObject {
+trait PivotHierarchyCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -58,7 +59,7 @@ trait PivotHierarchyCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PivotHierarchyCollection = js.native
-  def load(options: PivotHierarchyCollectionLoadOptions with CollectionLoadOptions): PivotHierarchyCollection = js.native
+  def load(options: PivotHierarchyCollectionLoadOptions & CollectionLoadOptions): PivotHierarchyCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): PivotHierarchyCollection = js.native
   def load(propertyNames: String): PivotHierarchyCollection = js.native
   def load(propertyNames: js.Array[String]): PivotHierarchyCollection = js.native

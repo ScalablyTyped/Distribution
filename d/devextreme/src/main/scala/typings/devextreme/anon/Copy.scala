@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Copy extends StObject {
   
-  var copy: js.UndefOr[Boolean] = js.native
+  var copy: js.UndefOr[Boolean] = js.undefined
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
   
-  var delete: js.UndefOr[Boolean] = js.native
+  var delete: js.UndefOr[Boolean] = js.undefined
   
-  var download: js.UndefOr[Boolean] = js.native
+  var download: js.UndefOr[Boolean] = js.undefined
   
-  var move: js.UndefOr[Boolean] = js.native
+  var move: js.UndefOr[Boolean] = js.undefined
   
-  var rename: js.UndefOr[Boolean] = js.native
+  var rename: js.UndefOr[Boolean] = js.undefined
   
-  var upload: js.UndefOr[Boolean] = js.native
+  var upload: js.UndefOr[Boolean] = js.undefined
 }
 object Copy {
   

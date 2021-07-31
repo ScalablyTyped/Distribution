@@ -2,18 +2,18 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ES6 Set interface, only read methods included. */
-@js.native
-trait ReadonlySet[T] extends ReadonlyCollection[T] {
+trait ReadonlySet[T]
+  extends StObject
+     with ReadonlyCollection[T] {
   
-  def entries(): Iterator[js.Tuple2[T, T]] = js.native
+  def entries(): Iterator[js.Tuple2[T, T]]
   
-  def forEach(action: js.Function2[/* value */ T, /* key */ T, Unit]): Unit = js.native
+  def forEach(action: js.Function2[/* value */ T, /* key */ T, Unit]): Unit
   
-  def values(): Iterator[T] = js.native
+  def values(): Iterator[T]
 }
 object ReadonlySet {
   
@@ -31,7 +31,7 @@ object ReadonlySet {
   }
   
   @scala.inline
-  implicit class ReadonlySetMutableBuilder[Self <: ReadonlySet[_], T] (val x: Self with ReadonlySet[T]) extends AnyVal {
+  implicit class ReadonlySetMutableBuilder[Self <: ReadonlySet[?], T] (val x: Self & ReadonlySet[T]) extends AnyVal {
     
     @scala.inline
     def setEntries(value: () => Iterator[js.Tuple2[T, T]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))

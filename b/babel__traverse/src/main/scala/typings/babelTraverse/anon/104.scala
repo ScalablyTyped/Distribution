@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.VoidTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `104` extends StObject {
   
-  var `type`: VoidTypeAnnotation = js.native
+  var `type`: VoidTypeAnnotation
 }
 object `104` {
   
   @scala.inline
-  def apply(`type`: VoidTypeAnnotation): `104` = {
+  def apply(): `104` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VoidTypeAnnotation")
     __obj.asInstanceOf[`104`]
   }
   

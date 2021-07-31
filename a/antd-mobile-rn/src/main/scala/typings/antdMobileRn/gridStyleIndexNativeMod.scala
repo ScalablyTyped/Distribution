@@ -5,7 +5,6 @@ import typings.antdMobileRn.anon.HeightWidth
 import typings.antdMobileRn.anon.MarginTop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridStyleIndexNativeMod {

@@ -3,21 +3,19 @@ package typings.pdfmake.interfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferOptions extends StObject {
   
-  var autoPrint: js.UndefOr[Boolean] = js.native
+  var autoPrint: js.UndefOr[Boolean] = js.undefined
   
-  var bufferPages: js.UndefOr[Boolean] = js.native
+  var bufferPages: js.UndefOr[Boolean] = js.undefined
   
-  var fontLayoutCache: js.UndefOr[Boolean] = js.native
+  var fontLayoutCache: js.UndefOr[Boolean] = js.undefined
   
-  var progressCallback: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.native
+  var progressCallback: js.UndefOr[js.Function1[/* progress */ Double, Unit]] = js.undefined
   
-  var tableLayouts: js.UndefOr[StringDictionary[CustomTableLayout]] = js.native
+  var tableLayouts: js.UndefOr[StringDictionary[CustomTableLayout]] = js.undefined
 }
 object BufferOptions {
   

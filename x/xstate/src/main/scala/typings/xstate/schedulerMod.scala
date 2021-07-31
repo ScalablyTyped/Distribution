@@ -3,7 +3,6 @@ package typings.xstate
 import typings.xstate.anon.PartialSchedulerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulerMod {
@@ -33,10 +32,9 @@ object schedulerMod {
     def schedule(task: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait SchedulerOptions extends StObject {
     
-    var deferEvents: Boolean = js.native
+    var deferEvents: Boolean
   }
   object SchedulerOptions {
     

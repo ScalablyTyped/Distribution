@@ -3,7 +3,6 @@ package typings.iterm2Version
 import typings.iterm2Version.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,9 +17,8 @@ object mod {
   	//=> '3.0.15'
   	```
   	*/
-  @JSImport("iterm2-version", JSImport.Namespace)
-  @js.native
-  def apply(): js.UndefOr[String] = js.native
+  @scala.inline
+  def apply(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.UndefOr[String]]
   
   @JSImport("iterm2-version", JSImport.Namespace)
   @js.native
@@ -39,9 +37,8 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;
-  @JSImport("iterm2-version", "default")
-  @js.native
-  def default(): js.UndefOr[String] = js.native
+  @scala.inline
+  def default(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.UndefOr[String]]
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function iterm2Version(): string | undefined;
   // export = iterm2Version;

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait GooglePrivacyDlpV2DeltaPresenceEstimationResult extends StObject {
     * records: {min_probability: 0, max_probability: 0.1, frequency: 17} {min_probability: 0.2, max_probability: 0.3, frequency: 42} {min_probability: 0.3, max_probability: 0.4,
     * frequency: 99} mean that there are no record with an estimated probability in [0.1, 0.2) nor larger or equal to 0.4.
     */
-  var deltaPresenceEstimationHistogram: js.UndefOr[js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]] = js.native
+  var deltaPresenceEstimationHistogram: js.UndefOr[js.Array[GooglePrivacyDlpV2DeltaPresenceEstimationHistogramBucket]] = js.undefined
 }
 object GooglePrivacyDlpV2DeltaPresenceEstimationResult {
   

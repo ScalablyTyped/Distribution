@@ -6,19 +6,19 @@ import typings.react.mod.NativeMouseEvent
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OverlayProps extends Props[Overlay] {
+trait OverlayProps
+  extends StObject
+     with Props[Overlay] {
   
-  var autoLockScrolling: js.UndefOr[Boolean] = js.native
+  var autoLockScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var transitionEnabled: js.UndefOr[Boolean] = js.native
+  var transitionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object OverlayProps {
   

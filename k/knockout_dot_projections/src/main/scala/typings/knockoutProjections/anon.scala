@@ -2,17 +2,15 @@ package typings.knockoutProjections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dispose[TResult] extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    var mappedValue: TResult = js.native
+    var mappedValue: TResult
   }
   object Dispose {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DisposeMutableBuilder[Self <: Dispose[_], TResult] (val x: Self with Dispose[TResult]) extends AnyVal {
+    implicit class DisposeMutableBuilder[Self <: Dispose[?], TResult] (val x: Self & Dispose[TResult]) extends AnyVal {
       
       @scala.inline
       def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DisposeItem[T, TResult] extends StObject {
     
-    var disposeItem: js.UndefOr[js.Function1[/* mappedItem */ TResult, Unit]] = js.native
+    var disposeItem: js.UndefOr[js.Function1[/* mappedItem */ TResult, Unit]] = js.undefined
     
-    def mapping(value: T): TResult = js.native
+    def mapping(value: T): TResult
   }
   object DisposeItem {
     
@@ -49,7 +46,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DisposeItemMutableBuilder[Self <: DisposeItem[_, _], T, TResult] (val x: Self with (DisposeItem[T, TResult])) extends AnyVal {
+    implicit class DisposeItemMutableBuilder[Self <: DisposeItem[?, ?], T, TResult] (val x: Self & (DisposeItem[T, TResult])) extends AnyVal {
       
       @scala.inline
       def setDisposeItem(value: /* mappedItem */ TResult => Unit): Self = StObject.set(x, "disposeItem", js.Any.fromFunction1(value))
@@ -62,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MappingWithDisposeCallback[T, TResult] extends StObject {
     
-    def mappingWithDisposeCallback(value: T): Dispose[TResult] = js.native
+    def mappingWithDisposeCallback(value: T): Dispose[TResult]
   }
   object MappingWithDisposeCallback {
     
@@ -76,7 +72,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class MappingWithDisposeCallbackMutableBuilder[Self <: MappingWithDisposeCallback[_, _], T, TResult] (val x: Self with (MappingWithDisposeCallback[T, TResult])) extends AnyVal {
+    implicit class MappingWithDisposeCallbackMutableBuilder[Self <: MappingWithDisposeCallback[?, ?], T, TResult] (val x: Self & (MappingWithDisposeCallback[T, TResult])) extends AnyVal {
       
       @scala.inline
       def setMappingWithDisposeCallback(value: T => Dispose[TResult]): Self = StObject.set(x, "mappingWithDisposeCallback", js.Any.fromFunction1(value))

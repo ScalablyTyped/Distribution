@@ -2,16 +2,14 @@ package typings.awsSdk.elastictranscoderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadPresetResponse extends StObject {
   
   /**
     * A section of the response body that provides information about the preset.
     */
-  var Preset: js.UndefOr[typings.awsSdk.elastictranscoderMod.Preset] = js.native
+  var Preset: js.UndefOr[typings.awsSdk.elastictranscoderMod.Preset] = js.undefined
 }
 object ReadPresetResponse {
   

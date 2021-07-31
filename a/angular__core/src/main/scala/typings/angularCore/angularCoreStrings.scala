@@ -6,13 +6,14 @@ import typings.angularCore.mod.ɵBypassType
 import typings.angularCore.propertyNameMod.PropertyNameWithText
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCoreStrings {
   
   @js.native
-  sealed trait AnyDuringRendererMigration extends HelperFunction
+  sealed trait AnyDuringRendererMigration
+    extends StObject
+       with HelperFunction
   @scala.inline
   def AnyDuringRendererMigration: AnyDuringRendererMigration = "AnyDuringRendererMigration".asInstanceOf[AnyDuringRendererMigration]
   
@@ -42,7 +43,9 @@ object angularCoreStrings {
   def ContentQueries: ContentQueries = "ContentQueries".asInstanceOf[ContentQueries]
   
   @js.native
-  sealed trait HTML extends ɵBypassType
+  sealed trait HTML
+    extends StObject
+       with ɵBypassType
   @scala.inline
   def HTML: HTML = "HTML".asInstanceOf[HTML]
   
@@ -77,17 +80,23 @@ object angularCoreStrings {
   def NO_CHANGE: NO_CHANGE = "NO_CHANGE".asInstanceOf[NO_CHANGE]
   
   @js.native
-  sealed trait ResourceURL extends ɵBypassType
+  sealed trait ResourceURL
+    extends StObject
+       with ɵBypassType
   @scala.inline
   def ResourceURL: ResourceURL = "ResourceURL".asInstanceOf[ResourceURL]
   
   @js.native
-  sealed trait Script extends ɵBypassType
+  sealed trait Script
+    extends StObject
+       with ɵBypassType
   @scala.inline
   def Script: Script = "Script".asInstanceOf[Script]
   
   @js.native
-  sealed trait Style extends ɵBypassType
+  sealed trait Style
+    extends StObject
+       with ɵBypassType
   @scala.inline
   def Style: Style = "Style".asInstanceOf[Style]
   
@@ -112,57 +121,79 @@ object angularCoreStrings {
   def TrustedScriptURL: TrustedScriptURL = "TrustedScriptURL".asInstanceOf[TrustedScriptURL]
   
   @js.native
-  sealed trait URL extends ɵBypassType
+  sealed trait URL
+    extends StObject
+       with ɵBypassType
   @scala.inline
   def URL: URL = "URL".asInstanceOf[URL]
   
   @js.native
-  sealed trait __ngRendererAnimateHelper extends HelperFunction
+  sealed trait __ngRendererAnimateHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererAnimateHelper: __ngRendererAnimateHelper = "__ngRendererAnimateHelper".asInstanceOf[__ngRendererAnimateHelper]
   
   @js.native
-  sealed trait __ngRendererAttachViewAfterHelper extends HelperFunction
+  sealed trait __ngRendererAttachViewAfterHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererAttachViewAfterHelper: __ngRendererAttachViewAfterHelper = "__ngRendererAttachViewAfterHelper".asInstanceOf[__ngRendererAttachViewAfterHelper]
   
   @js.native
-  sealed trait __ngRendererCreateElementHelper extends HelperFunction
+  sealed trait __ngRendererCreateElementHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererCreateElementHelper: __ngRendererCreateElementHelper = "__ngRendererCreateElementHelper".asInstanceOf[__ngRendererCreateElementHelper]
   
   @js.native
-  sealed trait __ngRendererCreateTemplateAnchorHelper extends HelperFunction
+  sealed trait __ngRendererCreateTemplateAnchorHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererCreateTemplateAnchorHelper: __ngRendererCreateTemplateAnchorHelper = "__ngRendererCreateTemplateAnchorHelper".asInstanceOf[__ngRendererCreateTemplateAnchorHelper]
   
   @js.native
-  sealed trait __ngRendererCreateTextHelper extends HelperFunction
+  sealed trait __ngRendererCreateTextHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererCreateTextHelper: __ngRendererCreateTextHelper = "__ngRendererCreateTextHelper".asInstanceOf[__ngRendererCreateTextHelper]
   
   @js.native
-  sealed trait __ngRendererDestroyViewHelper extends HelperFunction
+  sealed trait __ngRendererDestroyViewHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererDestroyViewHelper: __ngRendererDestroyViewHelper = "__ngRendererDestroyViewHelper".asInstanceOf[__ngRendererDestroyViewHelper]
   
   @js.native
-  sealed trait __ngRendererDetachViewHelper extends HelperFunction
+  sealed trait __ngRendererDetachViewHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererDetachViewHelper: __ngRendererDetachViewHelper = "__ngRendererDetachViewHelper".asInstanceOf[__ngRendererDetachViewHelper]
   
   @js.native
-  sealed trait __ngRendererProjectNodesHelper extends HelperFunction
+  sealed trait __ngRendererProjectNodesHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererProjectNodesHelper: __ngRendererProjectNodesHelper = "__ngRendererProjectNodesHelper".asInstanceOf[__ngRendererProjectNodesHelper]
   
   @js.native
-  sealed trait __ngRendererSetElementAttributeHelper extends HelperFunction
+  sealed trait __ngRendererSetElementAttributeHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererSetElementAttributeHelper: __ngRendererSetElementAttributeHelper = "__ngRendererSetElementAttributeHelper".asInstanceOf[__ngRendererSetElementAttributeHelper]
   
   @js.native
-  sealed trait __ngRendererSplitNamespaceHelper extends HelperFunction
+  sealed trait __ngRendererSplitNamespaceHelper
+    extends StObject
+       with HelperFunction
   @scala.inline
   def __ngRendererSplitNamespaceHelper: __ngRendererSplitNamespaceHelper = "__ngRendererSplitNamespaceHelper".asInstanceOf[__ngRendererSplitNamespaceHelper]
   
@@ -177,7 +208,9 @@ object angularCoreStrings {
   def `array-map`: `array-map` = "array-map".asInstanceOf[`array-map`]
   
   @js.native
-  sealed trait body extends GlobalTargetName
+  sealed trait body
+    extends StObject
+       with GlobalTargetName
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   
@@ -187,7 +220,9 @@ object angularCoreStrings {
   def component: component = "component".asInstanceOf[component]
   
   @js.native
-  sealed trait document extends GlobalTargetName
+  sealed trait document
+    extends StObject
+       with GlobalTargetName
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
@@ -197,12 +232,16 @@ object angularCoreStrings {
   def element: element = "element".asInstanceOf[element]
   
   @js.native
-  sealed trait escapedText extends PropertyNameWithText
+  sealed trait escapedText
+    extends StObject
+       with PropertyNameWithText
   @scala.inline
   def escapedText: escapedText = "escapedText".asInstanceOf[escapedText]
   
   @js.native
-  sealed trait isInJSDocNamespace extends PropertyNameWithText
+  sealed trait isInJSDocNamespace
+    extends StObject
+       with PropertyNameWithText
   @scala.inline
   def isInJSDocNamespace: isInJSDocNamespace = "isInJSDocNamespace".asInstanceOf[isInJSDocNamespace]
   
@@ -212,7 +251,9 @@ object angularCoreStrings {
   def noop: noop = "noop".asInstanceOf[noop]
   
   @js.native
-  sealed trait originalKeywordKind extends PropertyNameWithText
+  sealed trait originalKeywordKind
+    extends StObject
+       with PropertyNameWithText
   @scala.inline
   def originalKeywordKind: originalKeywordKind = "originalKeywordKind".asInstanceOf[originalKeywordKind]
   
@@ -227,12 +268,16 @@ object angularCoreStrings {
   def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait text extends PropertyNameWithText
+  sealed trait text
+    extends StObject
+       with PropertyNameWithText
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
   @js.native
-  sealed trait window extends GlobalTargetName
+  sealed trait window
+    extends StObject
+       with GlobalTargetName
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   

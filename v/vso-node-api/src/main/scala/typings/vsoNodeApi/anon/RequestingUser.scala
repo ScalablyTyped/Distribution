@@ -2,15 +2,13 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestingUser extends StObject {
   
-  var requestingUser: scala.Double = js.native
+  var requestingUser: scala.Double
   
-  var serviceAccount: scala.Double = js.native
+  var serviceAccount: scala.Double
 }
 object RequestingUser {
   

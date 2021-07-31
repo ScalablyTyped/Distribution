@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait sizeContinuousRendererResult extends Object {
+trait sizeContinuousRendererResult
+  extends StObject
+     with Object {
   
   /**
     * The ID of the basemap used to determine the optimal fill color of the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var basemapId: String = js.native
+  var basemapId: String
   
   /**
     * Indicates whether the average color of the input view's basemap is `light` or `dark`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var basemapTheme: String = js.native
+  var basemapTheme: String
   
   /**
     * Indicates whether default values are used in the absence of sufficient data and/or statistics from the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var defaultValuesUsed: Boolean = js.native
+  var defaultValuesUsed: Boolean
   
   /**
     * The renderer object configured to best match the given basemap and the spread of the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var renderer: ClassBreaksRenderer = js.native
+  var renderer: ClassBreaksRenderer
   
   /**
     * The size scheme used by the visual variables.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var sizeScheme: SizeScheme = js.native
+  var sizeScheme: SizeScheme
   
   /**
     * Basic statistics returned from a query to the service for data from the given field name or expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var statistics: SummaryStatisticsResult = js.native
+  var statistics: SummaryStatisticsResult
   
   /**
     * Size visual variables configured based on the statistics of the data and the given basemap and scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-size.html#ContinuousRendererResult)
     */
-  var visualVariables: js.Array[SizeVariable] = js.native
+  var visualVariables: js.Array[SizeVariable]
 }
 object sizeContinuousRendererResult {
   

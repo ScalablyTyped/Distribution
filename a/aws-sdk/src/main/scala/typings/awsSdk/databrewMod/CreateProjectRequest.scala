@@ -2,38 +2,36 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectRequest extends StObject {
   
   /**
     * The name of the dataset to associate this project with.
     */
-  var DatasetName: typings.awsSdk.databrewMod.DatasetName = js.native
+  var DatasetName: typings.awsSdk.databrewMod.DatasetName
   
   /**
     * A unique name for the new project.
     */
-  var Name: ProjectName = js.native
+  var Name: ProjectName
   
   /**
     * The name of an existing recipe to associate with the project.
     */
-  var RecipeName: typings.awsSdk.databrewMod.RecipeName = js.native
+  var RecipeName: typings.awsSdk.databrewMod.RecipeName
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role to be assumed for this request.
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
   
-  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.native
+  var Sample: js.UndefOr[typings.awsSdk.databrewMod.Sample] = js.undefined
   
   /**
     * Metadata tags to apply to this project.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateProjectRequest {
   

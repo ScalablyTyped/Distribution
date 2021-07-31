@@ -32,16 +32,23 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grpcMod {
   
-  @JSImport("google-gax/build/src/grpc", "ClientStub")
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined  */ @JSImport("google-gax/build/src/grpc", "ClientStub")
   @js.native
-  class ClientStub protected ()
-    extends Client
-       with /* name */ StringDictionary[js.Function] {
+  class ClientStub protected () extends Client {
     def this(address: String, credentials: ChannelCredentials) = this()
     def this(address: String, credentials: ChannelCredentials, options: ClientOptions) = this()
   }
@@ -54,9 +61,12 @@ object grpcMod {
   /* static members */
   object GoogleProtoFilesRoot {
     
-    @JSImport("google-gax/build/src/grpc", "GoogleProtoFilesRoot._findIncludePath")
+    @JSImport("google-gax/build/src/grpc", "GoogleProtoFilesRoot")
     @js.native
-    def _findIncludePath(originPath: String, includePath: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _findIncludePath(originPath: String, includePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_findIncludePath")(originPath.asInstanceOf[js.Any], includePath.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("google-gax/build/src/grpc", "GrpcClient")
@@ -159,9 +169,12 @@ object grpcMod {
   /* static members */
   object GrpcClient {
     
-    @JSImport("google-gax/build/src/grpc", "GrpcClient._resolveFile")
+    @JSImport("google-gax/build/src/grpc", "GrpcClient")
     @js.native
-    def _resolveFile(protoPath: String, filename: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _resolveFile(protoPath: String, filename: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("_resolveFile")(protoPath.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Creates a 'bytelength' function for a given proto message class.
@@ -173,22 +186,21 @@ object grpcMod {
       * @return {function(Object):number} - a function to compute the byte length
       *   for an object.
       */
-    @JSImport("google-gax/build/src/grpc", "GrpcClient.createByteLengthFunction")
-    @js.native
-    def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = js.native
+    @scala.inline
+    def createByteLengthFunction(message: Encode): js.Function1[/* obj */ js.Object, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("createByteLengthFunction")(message.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* obj */ js.Object, Double]]
   }
   
-  @js.native
   trait ClientStubOptions
-    extends /* index */ StringDictionary[js.UndefOr[String | Double | js.Object]] {
+    extends StObject
+       with /* index */ StringDictionary[js.UndefOr[String | Double | js.Object]] {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var servicePath: js.UndefOr[String] = js.native
+    var servicePath: js.UndefOr[String] = js.undefined
     
-    var sslCreds: js.UndefOr[typings.grpcGrpcJs.mod.ChannelCredentials] = js.native
+    var sslCreds: js.UndefOr[typings.grpcGrpcJs.mod.ChannelCredentials] = js.undefined
   }
   object ClientStubOptions {
     
@@ -227,12 +239,13 @@ object grpcMod {
     }
   }
   
-  @js.native
-  trait GrpcClientOptions extends GoogleAuthOptions {
+  trait GrpcClientOptions
+    extends StObject
+       with GoogleAuthOptions {
     
-    var auth: js.UndefOr[GoogleAuth] = js.native
+    var auth: js.UndefOr[GoogleAuth] = js.undefined
     
-    var grpc: js.UndefOr[GrpcModule] = js.native
+    var grpc: js.UndefOr[GrpcModule] = js.undefined
   }
   object GrpcClientOptions {
     
@@ -330,7 +343,9 @@ object grpcMod {
   }
   
   @js.native
-  trait Metadata extends Instantiable0[Metadata] {
+  trait Metadata
+    extends StObject
+       with Instantiable0[Metadata] {
     
     def get(key: js.Object): js.Object = js.native
     
@@ -340,11 +355,10 @@ object grpcMod {
     var value: MetadataValue = js.native
   }
   
-  @js.native
   trait MetadataValue extends StObject {
     
     @JSName("equals")
-    var equals_FMetadataValue: js.Function = js.native
+    var equals_FMetadataValue: js.Function
   }
   object MetadataValue {
     

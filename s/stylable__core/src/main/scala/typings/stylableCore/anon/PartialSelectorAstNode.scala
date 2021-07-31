@@ -3,26 +3,24 @@ package typings.stylableCore.anon
 import typings.stylableCore.selectorUtilsMod.SelectorAstNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@stylable/core.@stylable/core/cjs/selector-utils.SelectorAstNode> */
-@js.native
 trait PartialSelectorAstNode extends StObject {
   
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nodes: js.UndefOr[js.Array[SelectorAstNode]] = js.native
+  var nodes: js.UndefOr[js.Array[SelectorAstNode]] = js.undefined
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object PartialSelectorAstNode {
   

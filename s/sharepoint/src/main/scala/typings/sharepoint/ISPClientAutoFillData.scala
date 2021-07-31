@@ -2,21 +2,19 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISPClientAutoFillData extends StObject {
   
-  var AutoFillDisplayText: js.UndefOr[String] = js.native
+  var AutoFillDisplayText: js.UndefOr[String] = js.undefined
   
-  var AutoFillKey: js.UndefOr[js.Any] = js.native
+  var AutoFillKey: js.UndefOr[js.Any] = js.undefined
   
-  var AutoFillMenuOptionType: js.UndefOr[Double] = js.native
+  var AutoFillMenuOptionType: js.UndefOr[Double] = js.undefined
   
-  var AutoFillSubDisplayText: js.UndefOr[String] = js.native
+  var AutoFillSubDisplayText: js.UndefOr[String] = js.undefined
   
-  var AutoFillTitleText: js.UndefOr[String] = js.native
+  var AutoFillTitleText: js.UndefOr[String] = js.undefined
 }
 object ISPClientAutoFillData {
   

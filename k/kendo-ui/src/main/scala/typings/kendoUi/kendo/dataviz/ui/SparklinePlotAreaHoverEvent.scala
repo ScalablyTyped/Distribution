@@ -2,19 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SparklinePlotAreaHoverEvent extends SparklineEvent {
+trait SparklinePlotAreaHoverEvent
+  extends StObject
+     with SparklineEvent {
   
-  var category: js.UndefOr[js.Any] = js.native
+  var category: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SparklinePlotAreaHoverEvent {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,41 +21,21 @@ trait PlusMapsSearch extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def drivingSearch(): Boolean = js.native
-  def drivingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def drivingSearch(start: js.UndefOr[scala.Nothing], startCity: js.UndefOr[scala.Nothing], end: String): Boolean = js.native
-  def drivingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: js.UndefOr[scala.Nothing],
-    end: String,
-    endCity: String
-  ): Boolean = js.native
-  def drivingSearch(start: js.UndefOr[scala.Nothing], startCity: String): Boolean = js.native
-  def drivingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: String,
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def drivingSearch(start: js.UndefOr[scala.Nothing], startCity: String, end: String): Boolean = js.native
-  def drivingSearch(start: js.UndefOr[scala.Nothing], startCity: String, end: String, endCity: String): Boolean = js.native
   def drivingSearch(start: String): Boolean = js.native
-  def drivingSearch(
-    start: String,
-    startCity: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def drivingSearch(start: String, startCity: js.UndefOr[scala.Nothing], end: String): Boolean = js.native
-  def drivingSearch(start: String, startCity: js.UndefOr[scala.Nothing], end: String, endCity: String): Boolean = js.native
   def drivingSearch(start: String, startCity: String): Boolean = js.native
-  def drivingSearch(start: String, startCity: String, end: js.UndefOr[scala.Nothing], endCity: String): Boolean = js.native
   def drivingSearch(start: String, startCity: String, end: String): Boolean = js.native
   def drivingSearch(start: String, startCity: String, end: String, endCity: String): Boolean = js.native
+  def drivingSearch(start: String, startCity: String, end: Unit, endCity: String): Boolean = js.native
+  def drivingSearch(start: String, startCity: Unit, end: String): Boolean = js.native
+  def drivingSearch(start: String, startCity: Unit, end: String, endCity: String): Boolean = js.native
+  def drivingSearch(start: String, startCity: Unit, end: Unit, endCity: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: String, end: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: String, end: String, endCity: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: String, end: Unit, endCity: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: Unit, end: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: Unit, end: String, endCity: String): Boolean = js.native
+  def drivingSearch(start: Unit, startCity: Unit, end: Unit, endCity: String): Boolean = js.native
   
   /**
     * 获取检索返回结果每页的信息数目
@@ -89,13 +68,13 @@ trait PlusMapsSearch extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def poiSearchInCity(): Boolean = js.native
-  def poiSearchInCity(city: js.UndefOr[scala.Nothing], key: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
-  def poiSearchInCity(city: js.UndefOr[scala.Nothing], key: String): Boolean = js.native
-  def poiSearchInCity(city: js.UndefOr[scala.Nothing], key: String, index: Double): Boolean = js.native
   def poiSearchInCity(city: String): Boolean = js.native
-  def poiSearchInCity(city: String, key: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
   def poiSearchInCity(city: String, key: String): Boolean = js.native
   def poiSearchInCity(city: String, key: String, index: Double): Boolean = js.native
+  def poiSearchInCity(city: String, key: Unit, index: Double): Boolean = js.native
+  def poiSearchInCity(city: Unit, key: String): Boolean = js.native
+  def poiSearchInCity(city: Unit, key: String, index: Double): Boolean = js.native
+  def poiSearchInCity(city: Unit, key: Unit, index: Double): Boolean = js.native
   
   /**
     * 指定范围检索
@@ -114,31 +93,21 @@ trait PlusMapsSearch extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def poiSearchNearBy(): Boolean = js.native
-  def poiSearchNearBy(
-    key: js.UndefOr[scala.Nothing],
-    pt: js.UndefOr[scala.Nothing],
-    radius: js.UndefOr[scala.Nothing],
-    index: Double
-  ): Boolean = js.native
-  def poiSearchNearBy(key: js.UndefOr[scala.Nothing], pt: js.UndefOr[scala.Nothing], radius: Double): Boolean = js.native
-  def poiSearchNearBy(key: js.UndefOr[scala.Nothing], pt: js.UndefOr[scala.Nothing], radius: Double, index: Double): Boolean = js.native
-  def poiSearchNearBy(key: js.UndefOr[scala.Nothing], pt: PlusMapsPoint): Boolean = js.native
-  def poiSearchNearBy(
-    key: js.UndefOr[scala.Nothing],
-    pt: PlusMapsPoint,
-    radius: js.UndefOr[scala.Nothing],
-    index: Double
-  ): Boolean = js.native
-  def poiSearchNearBy(key: js.UndefOr[scala.Nothing], pt: PlusMapsPoint, radius: Double): Boolean = js.native
-  def poiSearchNearBy(key: js.UndefOr[scala.Nothing], pt: PlusMapsPoint, radius: Double, index: Double): Boolean = js.native
   def poiSearchNearBy(key: String): Boolean = js.native
-  def poiSearchNearBy(key: String, pt: js.UndefOr[scala.Nothing], radius: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
-  def poiSearchNearBy(key: String, pt: js.UndefOr[scala.Nothing], radius: Double): Boolean = js.native
-  def poiSearchNearBy(key: String, pt: js.UndefOr[scala.Nothing], radius: Double, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: String, pt: Unit, radius: Double): Boolean = js.native
+  def poiSearchNearBy(key: String, pt: Unit, radius: Double, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: String, pt: Unit, radius: Unit, index: Double): Boolean = js.native
   def poiSearchNearBy(key: String, pt: PlusMapsPoint): Boolean = js.native
-  def poiSearchNearBy(key: String, pt: PlusMapsPoint, radius: js.UndefOr[scala.Nothing], index: Double): Boolean = js.native
   def poiSearchNearBy(key: String, pt: PlusMapsPoint, radius: Double): Boolean = js.native
   def poiSearchNearBy(key: String, pt: PlusMapsPoint, radius: Double, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: String, pt: PlusMapsPoint, radius: Unit, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: Unit, radius: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: Unit, radius: Double, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: Unit, radius: Unit, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: PlusMapsPoint): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: PlusMapsPoint, radius: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: PlusMapsPoint, radius: Double, index: Double): Boolean = js.native
+  def poiSearchNearBy(key: Unit, pt: PlusMapsPoint, radius: Unit, index: Double): Boolean = js.native
   
   /**
     * 设置驾车路线检索策略
@@ -178,13 +147,13 @@ trait PlusMapsSearch extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def transitSearch(): Boolean = js.native
-  def transitSearch(start: js.UndefOr[scala.Nothing], end: js.UndefOr[scala.Nothing], city: String): Boolean = js.native
-  def transitSearch(start: js.UndefOr[scala.Nothing], end: String): Boolean = js.native
-  def transitSearch(start: js.UndefOr[scala.Nothing], end: String, city: String): Boolean = js.native
   def transitSearch(start: String): Boolean = js.native
-  def transitSearch(start: String, end: js.UndefOr[scala.Nothing], city: String): Boolean = js.native
   def transitSearch(start: String, end: String): Boolean = js.native
   def transitSearch(start: String, end: String, city: String): Boolean = js.native
+  def transitSearch(start: String, end: Unit, city: String): Boolean = js.native
+  def transitSearch(start: Unit, end: String): Boolean = js.native
+  def transitSearch(start: Unit, end: String, city: String): Boolean = js.native
+  def transitSearch(start: Unit, end: Unit, city: String): Boolean = js.native
   
   /**
     * 步行路线检索
@@ -194,39 +163,19 @@ trait PlusMapsSearch extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
   def walkingSearch(): Boolean = js.native
-  def walkingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def walkingSearch(start: js.UndefOr[scala.Nothing], startCity: js.UndefOr[scala.Nothing], end: String): Boolean = js.native
-  def walkingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: js.UndefOr[scala.Nothing],
-    end: String,
-    endCity: String
-  ): Boolean = js.native
-  def walkingSearch(start: js.UndefOr[scala.Nothing], startCity: String): Boolean = js.native
-  def walkingSearch(
-    start: js.UndefOr[scala.Nothing],
-    startCity: String,
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def walkingSearch(start: js.UndefOr[scala.Nothing], startCity: String, end: String): Boolean = js.native
-  def walkingSearch(start: js.UndefOr[scala.Nothing], startCity: String, end: String, endCity: String): Boolean = js.native
   def walkingSearch(start: String): Boolean = js.native
-  def walkingSearch(
-    start: String,
-    startCity: js.UndefOr[scala.Nothing],
-    end: js.UndefOr[scala.Nothing],
-    endCity: String
-  ): Boolean = js.native
-  def walkingSearch(start: String, startCity: js.UndefOr[scala.Nothing], end: String): Boolean = js.native
-  def walkingSearch(start: String, startCity: js.UndefOr[scala.Nothing], end: String, endCity: String): Boolean = js.native
   def walkingSearch(start: String, startCity: String): Boolean = js.native
-  def walkingSearch(start: String, startCity: String, end: js.UndefOr[scala.Nothing], endCity: String): Boolean = js.native
   def walkingSearch(start: String, startCity: String, end: String): Boolean = js.native
   def walkingSearch(start: String, startCity: String, end: String, endCity: String): Boolean = js.native
+  def walkingSearch(start: String, startCity: String, end: Unit, endCity: String): Boolean = js.native
+  def walkingSearch(start: String, startCity: Unit, end: String): Boolean = js.native
+  def walkingSearch(start: String, startCity: Unit, end: String, endCity: String): Boolean = js.native
+  def walkingSearch(start: String, startCity: Unit, end: Unit, endCity: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: String, end: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: String, end: String, endCity: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: String, end: Unit, endCity: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: Unit, end: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: Unit, end: String, endCity: String): Boolean = js.native
+  def walkingSearch(start: Unit, startCity: Unit, end: Unit, endCity: String): Boolean = js.native
 }

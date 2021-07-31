@@ -2,40 +2,38 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for ImportEntities operations.
   */
-@js.native
 trait SchemaGoogleDatastoreAdminV1ImportEntitiesMetadata extends StObject {
   
   /**
     * Metadata common to all Datastore Admin operations.
     */
-  var common: js.UndefOr[SchemaGoogleDatastoreAdminV1CommonMetadata] = js.native
+  var common: js.UndefOr[SchemaGoogleDatastoreAdminV1CommonMetadata] = js.undefined
   
   /**
     * Description of which entities are being imported.
     */
-  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1EntityFilter] = js.native
+  var entityFilter: js.UndefOr[SchemaGoogleDatastoreAdminV1EntityFilter] = js.undefined
   
   /**
     * The location of the import metadata file. This will be the same value as
     * the google.datastore.admin.v1.ExportEntitiesResponse.output_url field.
     */
-  var inputUrl: js.UndefOr[String] = js.native
+  var inputUrl: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of the number of bytes processed.
     */
-  var progressBytes: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.native
+  var progressBytes: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.undefined
   
   /**
     * An estimate of the number of entities processed.
     */
-  var progressEntities: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.native
+  var progressEntities: js.UndefOr[SchemaGoogleDatastoreAdminV1Progress] = js.undefined
 }
 object SchemaGoogleDatastoreAdminV1ImportEntitiesMetadata {
   

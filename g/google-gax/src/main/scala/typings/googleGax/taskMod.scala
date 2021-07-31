@@ -7,10 +7,13 @@ import typings.googleGax.apitypesMod.RequestType
 import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskMod {
+  
+  @JSImport("google-gax/build/src/bundlingCalls/task", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("google-gax/build/src/bundlingCalls/task", "Task")
   @js.native
@@ -84,21 +87,18 @@ object taskMod {
     def run(): js.Array[String] = js.native
   }
   
-  @JSImport("google-gax/build/src/bundlingCalls/task", "deepCopyForResponse")
-  @js.native
-  def deepCopyForResponse(obj: js.Any): js.Any = js.native
-  @JSImport("google-gax/build/src/bundlingCalls/task", "deepCopyForResponse")
-  @js.native
-  def deepCopyForResponse(obj: js.Any, subresponseInfo: SubResponseInfo): js.Any = js.native
+  @scala.inline
+  def deepCopyForResponse(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def deepCopyForResponse(obj: js.Any, subresponseInfo: SubResponseInfo): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCopyForResponse")(obj.asInstanceOf[js.Any], subresponseInfo.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait SubResponseInfo extends StObject {
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object SubResponseInfo {
     
@@ -134,16 +134,15 @@ object taskMod {
     var id: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait TaskData extends StObject {
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var callback: TaskCallback = js.native
+    var callback: TaskCallback
     
-    var cancelled: js.UndefOr[Boolean] = js.native
+    var cancelled: js.UndefOr[Boolean] = js.undefined
     
-    var elements: js.Array[js.Object] = js.native
+    var elements: js.Array[js.Object]
   }
   object TaskData {
     

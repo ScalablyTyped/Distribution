@@ -3,32 +3,31 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TypeParameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TypeParameter_
-  extends Flow
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TypeParameter_
+  extends StObject
+     with BaseNode
+     with Flow {
   
-  var default: FlowType | Null = js.native
+  var default: FlowType | Null
   
-  var bound: TypeAnnotation_ | Null = js.native
+  var bound: TypeAnnotation_ | Null
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_TypeParameter_ : TypeParameter = js.native
+  var type_TypeParameter_ : TypeParameter
   
-  var variance: Variance_ | Null = js.native
+  var variance: Variance_ | Null
 }
 object TypeParameter_ {
   
   @scala.inline
-  def apply(name: String, `type`: TypeParameter): TypeParameter_ = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): TypeParameter_ = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], bound = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, variance = null)
+    __obj.updateDynamic("type")("TypeParameter")
     __obj.asInstanceOf[TypeParameter_]
   }
   

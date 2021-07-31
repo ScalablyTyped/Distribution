@@ -3,82 +3,80 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.SlotMs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobStatistics extends StObject {
   
   /**
     * [TrustedTester] [Output-only] Job progress (0.0 -&gt; 1.0) for LOAD and
     * EXTRACT jobs.
     */
-  var completionRatio: js.UndefOr[Double] = js.native
+  var completionRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output-only] Creation time of this job, in milliseconds since the epoch.
     * This field will be present on all jobs.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] End time of this job, in milliseconds since the epoch. This
     * field will be present whenever a job is in the DONE state.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Statistics for an extract job.
     */
-  var extract: js.UndefOr[SchemaJobStatistics4] = js.native
+  var extract: js.UndefOr[SchemaJobStatistics4] = js.undefined
   
   /**
     * [Output-only] Statistics for a load job.
     */
-  var load: js.UndefOr[SchemaJobStatistics3] = js.native
+  var load: js.UndefOr[SchemaJobStatistics3] = js.undefined
   
   /**
     * [Output-only] Number of child jobs executed.
     */
-  var numChildJobs: js.UndefOr[String] = js.native
+  var numChildJobs: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] If this is a child job, the id of the parent.
     */
-  var parentJobId: js.UndefOr[String] = js.native
+  var parentJobId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Statistics for a query job.
     */
-  var query: js.UndefOr[SchemaJobStatistics2] = js.native
+  var query: js.UndefOr[SchemaJobStatistics2] = js.undefined
   
   /**
     * [Output-only] Quotas which delayed this job&#39;s start time.
     */
-  var quotaDeferments: js.UndefOr[js.Array[String]] = js.native
+  var quotaDeferments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[SlotMs]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[SlotMs]] = js.undefined
   
   /**
     * [Output-only] Start time of this job, in milliseconds since the epoch.
     * This field will be present when the job transitions from the PENDING
     * state to either RUNNING or DONE.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] [Deprecated] Use the bytes processed in the query
     * statistics instead.
     */
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Slot-milliseconds for the job.
     */
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
 }
 object SchemaJobStatistics {
   

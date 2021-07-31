@@ -2,37 +2,35 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebGLOptions extends StObject {
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var antialias: js.UndefOr[Double] = js.native
+  var antialias: js.UndefOr[Double] = js.undefined
   
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
-  var enableExtensionsByDefault: js.UndefOr[Double] = js.native
+  var enableExtensionsByDefault: js.UndefOr[Double] = js.undefined
   
-  var explicitSwapControl: js.UndefOr[Double] = js.native
+  var explicitSwapControl: js.UndefOr[Double] = js.undefined
   
-  var failIfMajorPerformanceCaveat: js.UndefOr[Double] = js.native
+  var failIfMajorPerformanceCaveat: js.UndefOr[Double] = js.undefined
   
-  var majorVersion: js.UndefOr[Double] = js.native
+  var majorVersion: js.UndefOr[Double] = js.undefined
   
-  var minorVersion: js.UndefOr[Double] = js.native
+  var minorVersion: js.UndefOr[Double] = js.undefined
   
-  var preferLowPowerToHighPerformance: js.UndefOr[Double] = js.native
+  var preferLowPowerToHighPerformance: js.UndefOr[Double] = js.undefined
   
-  var premultipliedAlpha: js.UndefOr[Double] = js.native
+  var premultipliedAlpha: js.UndefOr[Double] = js.undefined
   
-  var preserveDrawingBuffer: js.UndefOr[Double] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Double] = js.undefined
   
-  var renderViaOffscreenBackBuffer: js.UndefOr[Double] = js.native
+  var renderViaOffscreenBackBuffer: js.UndefOr[Double] = js.undefined
   
-  var stencil: js.UndefOr[Double] = js.native
+  var stencil: js.UndefOr[Double] = js.undefined
 }
 object WebGLOptions {
   

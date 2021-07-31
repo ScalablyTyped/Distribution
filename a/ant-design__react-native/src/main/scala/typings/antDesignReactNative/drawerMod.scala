@@ -5,7 +5,6 @@ import typings.antDesignReactNative.drawerPropsTypeMod.DrawerProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerMod {
@@ -42,16 +41,17 @@ object drawerMod {
     def onOpenChange(isOpen: Boolean): Unit = js.native
   }
   
-  @js.native
-  trait DrawerNativeProps extends DrawerProps {
+  trait DrawerNativeProps
+    extends StObject
+       with DrawerProps {
     
-    var drawerBackgroundColor: js.UndefOr[String] = js.native
+    var drawerBackgroundColor: js.UndefOr[String] = js.undefined
     
     var drawerRef: js.UndefOr[
         js.Function1[/* el */ typings.bang88ReactNativeDrawerLayout.mod.default | Null, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var drawerWidth: js.UndefOr[Double] = js.native
+    var drawerWidth: js.UndefOr[Double] = js.undefined
   }
   object DrawerNativeProps {
     

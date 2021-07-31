@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiasettingsListPosDataProvidersResponse extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#liasettingsListPosDataProvidersResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The list of POS data providers for each eligible country */
-  var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.native
+  var posDataProviders: js.UndefOr[js.Array[PosDataProviders]] = js.undefined
 }
 object LiasettingsListPosDataProvidersResponse {
   

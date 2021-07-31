@@ -6,76 +6,76 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceFloodlightactivitiesList extends StandardParameters {
+trait ParamsResourceFloodlightactivitiesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only floodlight activities for the specified advertiser ID. Must
     * specify either ids, advertiserId, or floodlightConfigurationId for a
     * non-empty result.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only floodlight activities with the specified floodlight activity
     * group IDs.
     */
-  var floodlightActivityGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var floodlightActivityGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only floodlight activities with the specified floodlight activity
     * group name.
     */
-  var floodlightActivityGroupName: js.UndefOr[String] = js.native
+  var floodlightActivityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Select only floodlight activities with the specified floodlight activity
     * group tag string.
     */
-  var floodlightActivityGroupTagString: js.UndefOr[String] = js.native
+  var floodlightActivityGroupTagString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only floodlight activities with the specified floodlight activity
     * group type.
     */
-  var floodlightActivityGroupType: js.UndefOr[String] = js.native
+  var floodlightActivityGroupType: js.UndefOr[String] = js.undefined
   
   /**
     * Select only floodlight activities for the specified floodlight
     * configuration ID. Must specify either ids, advertiserId, or
     * floodlightConfigurationId for a non-empty result.
     */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only floodlight activities with the specified IDs. Must specify
     * either ids, advertiserId, or floodlightConfigurationId for a non-empty
     * result.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -87,22 +87,22 @@ trait ParamsResourceFloodlightactivitiesList extends StandardParameters {
     * floodlightactivity activity", "floodlightactivity 2015", or simply
     * "floodlightactivity".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only floodlight activities with the specified tag string.
     */
-  var tagString: js.UndefOr[String] = js.native
+  var tagString: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceFloodlightactivitiesList {
   

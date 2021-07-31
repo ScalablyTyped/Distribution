@@ -2,17 +2,15 @@ package typings.modernizr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoBoolean extends StObject {
   
-  var h264: String = js.native
+  var h264: String
   
-  var ogg: String = js.native
+  var ogg: String
   
-  var webm: String = js.native
+  var webm: String
 }
 object VideoBoolean {
   

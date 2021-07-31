@@ -2,30 +2,28 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A shielded VM identity entry.
   */
-@js.native
 trait SchemaShieldedVmIdentity extends StObject {
   
   /**
     * An Endorsement Key (EK) issued to the Shielded VM&#39;s vTPM.
     */
-  var encryptionKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.native
+  var encryptionKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#shieldedVmIdentity for
     * shielded VM identity entry.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * An Attestation Key (AK) issued to the Shielded VM&#39;s vTPM.
     */
-  var signingKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.native
+  var signingKey: js.UndefOr[SchemaShieldedVmIdentityEntry] = js.undefined
 }
 object SchemaShieldedVmIdentity {
   

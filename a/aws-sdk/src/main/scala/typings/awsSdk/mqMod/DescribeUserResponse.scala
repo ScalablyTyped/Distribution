@@ -2,36 +2,34 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserResponse extends StObject {
   
   /**
     * Required. The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: js.UndefOr[string] = js.native
+  var BrokerId: js.UndefOr[string] = js.undefined
   
   /**
     * Enables access to the the ActiveMQ Web Console for the ActiveMQ user.
     */
-  var ConsoleAccess: js.UndefOr[boolean] = js.native
+  var ConsoleAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * The list of groups (20 maximum) to which the ActiveMQ user belongs. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Groups: js.UndefOr[listOfString] = js.native
+  var Groups: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The status of the changes pending for the ActiveMQ user.
     */
-  var Pending: js.UndefOr[UserPendingChanges] = js.native
+  var Pending: js.UndefOr[UserPendingChanges] = js.undefined
   
   /**
     * Required. The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object DescribeUserResponse {
   

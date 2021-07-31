@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesAnalyze[T] extends Generic {
+trait IndicesAnalyze[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
 }
 object IndicesAnalyze {
   
@@ -21,7 +21,7 @@ object IndicesAnalyze {
   }
   
   @scala.inline
-  implicit class IndicesAnalyzeMutableBuilder[Self <: IndicesAnalyze[_], T] (val x: Self with IndicesAnalyze[T]) extends AnyVal {
+  implicit class IndicesAnalyzeMutableBuilder[Self <: IndicesAnalyze[?], T] (val x: Self & IndicesAnalyze[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

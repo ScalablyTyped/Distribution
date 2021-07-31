@@ -4,23 +4,22 @@ import typings.appBuilderLib.packagerMod.Packager
 import typings.appBuilderLib.platformSpecificBuildOptionsMod.PlatformSpecificBuildOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appInfoMod {
+  
+  @JSImport("app-builder-lib/out/appInfo", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/appInfo", "AppInfo")
   @js.native
   class AppInfo protected () extends StObject {
     def this(info: Packager) = this()
     def this(info: Packager, buildVersion: String) = this()
-    def this(
-      info: Packager,
-      buildVersion: js.UndefOr[scala.Nothing],
-      platformSpecificOptions: PlatformSpecificBuildOptions
-    ) = this()
     def this(info: Packager, buildVersion: String, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
     def this(info: Packager, buildVersion: Null, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
+    def this(info: Packager, buildVersion: Unit, platformSpecificOptions: PlatformSpecificBuildOptions) = this()
     
     val buildNumber: js.UndefOr[String] = js.native
     
@@ -68,7 +67,6 @@ object appInfoMod {
     val version: String = js.native
   }
   
-  @JSImport("app-builder-lib/out/appInfo", "smarten")
-  @js.native
-  def smarten(s: String): String = js.native
+  @scala.inline
+  def smarten(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("smarten")(s.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,41 +2,39 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestInvokeMethodResponse extends StObject {
   
   /**
     * The body of the HTTP response.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The headers of the HTTP response.
     */
-  var headers: js.UndefOr[MapOfStringToString] = js.native
+  var headers: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * The execution latency of the test invoke request.
     */
-  var latency: js.UndefOr[Long] = js.native
+  var latency: js.UndefOr[Long] = js.undefined
   
   /**
     * The API Gateway execution log for the test invoke request.
     */
-  var log: js.UndefOr[String] = js.native
+  var log: js.UndefOr[String] = js.undefined
   
   /**
     * The headers of the HTTP response as a map from string to list of values.
     */
-  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.native
+  var multiValueHeaders: js.UndefOr[MapOfStringToList] = js.undefined
   
   /**
     * The HTTP status code.
     */
-  var status: js.UndefOr[Integer] = js.native
+  var status: js.UndefOr[Integer] = js.undefined
 }
 object TestInvokeMethodResponse {
   

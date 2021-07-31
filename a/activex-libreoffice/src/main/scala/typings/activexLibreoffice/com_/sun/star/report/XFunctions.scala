@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,15 +17,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFunction
   * @see XReportDefinition
   */
-@js.native
 trait XFunctions
-  extends XIndexContainer
+  extends StObject
      with XContainer
+     with XIndexContainer
      with XChild
      with XComponent {
   
   /** factory method for {@link XFunction} . */
-  def createFunction(): XFunction = js.native
+  def createFunction(): XFunction
 }
 object XFunctions {
   

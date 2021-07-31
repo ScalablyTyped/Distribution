@@ -2,15 +2,13 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedrawResult extends StObject {
   
-  var c: js.Array[Connection] = js.native
+  var c: js.Array[Connection]
   
-  var e: js.Array[Endpoint] = js.native
+  var e: js.Array[Endpoint]
 }
 object RedrawResult {
   

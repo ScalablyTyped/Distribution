@@ -3,31 +3,29 @@ package typings.winrt.Windows.Networking.NetworkOperators
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMobileBroadbandNetwork extends StObject {
   
-  var accessPointName: String = js.native
+  var accessPointName: String
   
-  var activationNetworkError: Double = js.native
+  var activationNetworkError: Double
   
-  var networkAdapter: NetworkAdapter = js.native
+  var networkAdapter: NetworkAdapter
   
-  var networkRegistrationState: NetworkRegistrationState = js.native
+  var networkRegistrationState: NetworkRegistrationState
   
-  var packetAttachNetworkError: Double = js.native
+  var packetAttachNetworkError: Double
   
-  var registeredDataClass: DataClasses = js.native
+  var registeredDataClass: DataClasses
   
-  var registeredProviderId: String = js.native
+  var registeredProviderId: String
   
-  var registeredProviderName: String = js.native
+  var registeredProviderName: String
   
-  var registrationNetworkError: Double = js.native
+  var registrationNetworkError: Double
   
-  def showConnectionUI(): Unit = js.native
+  def showConnectionUI(): Unit
 }
 object IMobileBroadbandNetwork {
   

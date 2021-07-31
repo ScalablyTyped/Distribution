@@ -2,15 +2,13 @@ package typings.workboxPrecaching
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cleanupResultMod {
   
-  @js.native
   trait CleanupResult extends StObject {
     
-    var deletedCacheRequests: js.Array[String] = js.native
+    var deletedCacheRequests: js.Array[String]
   }
   object CleanupResult {
     

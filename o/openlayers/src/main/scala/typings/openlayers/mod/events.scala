@@ -2,7 +2,6 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object events {
@@ -99,6 +98,10 @@ object events {
   
   object condition {
     
+    @JSImport("openlayers", "events.condition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Return `true` if only the alt-key is pressed, `false` otherwise (e.g. when
       * additionally the shift-key is pressed).
@@ -107,9 +110,8 @@ object events {
       * @return True if only the alt key is pressed.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.altKeyOnly")
-    @js.native
-    def altKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def altKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("altKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if only the alt-key and shift-key is pressed, `false` otherwise
@@ -119,9 +121,8 @@ object events {
       * @return True if only the alt and shift keys are pressed.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.altShiftKeysOnly")
-    @js.native
-    def altShiftKeysOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def altShiftKeysOnly(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("altShiftKeysOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return always true.
@@ -130,9 +131,8 @@ object events {
       * @return True.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.always")
-    @js.native
-    def always(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def always(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("always")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the event is a `click` event, `false` otherwise.
@@ -141,9 +141,8 @@ object events {
       * @return True if the event is a map `click` event.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.click")
-    @js.native
-    def click(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def click(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the event is a map `dblclick` event, `false` otherwise.
@@ -152,9 +151,8 @@ object events {
       * @return True if the event is a map `dblclick` event.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.doubleClick")
-    @js.native
-    def doubleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def doubleClick(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleClick")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the event originates from a mouse device.
@@ -163,9 +161,8 @@ object events {
       * @return True if the event originates from a mouse device.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.mouseOnly")
-    @js.native
-    def mouseOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def mouseOnly(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return always false.
@@ -174,9 +171,8 @@ object events {
       * @return False.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.never")
-    @js.native
-    def never(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def never(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("never")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if no modifier key (alt-, shift- or platform-modifier-key) is
@@ -186,9 +182,8 @@ object events {
       * @return True only if there no modifier keys are pressed.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.noModifierKeys")
-    @js.native
-    def noModifierKeys(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def noModifierKeys(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("noModifierKeys")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if only the platform-modifier-key (the meta-key on Mac,
@@ -199,9 +194,8 @@ object events {
       * @return True if only the platform modifier key is pressed.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.platformModifierKeyOnly")
-    @js.native
-    def platformModifierKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def platformModifierKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("platformModifierKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the browser event is a `pointermove` event, `false`
@@ -211,9 +205,8 @@ object events {
       * @return True if the browser event is a `pointermove` event.
       * @api
       */
-    @JSImport("openlayers", "events.condition.pointerMove")
-    @js.native
-    def pointerMove(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def pointerMove(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerMove")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the event originates from a primary pointer in
@@ -224,9 +217,8 @@ object events {
       * @return True if the event originates from a primary pointer.
       * @api
       */
-    @JSImport("openlayers", "events.condition.primaryAction")
-    @js.native
-    def primaryAction(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def primaryAction(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAction")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if only the shift-key is pressed, `false` otherwise (e.g. when
@@ -236,9 +228,8 @@ object events {
       * @return True if only the shift key is pressed.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.shiftKeyOnly")
-    @js.native
-    def shiftKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def shiftKeyOnly(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the event is a map `singleclick` event, `false` otherwise.
@@ -247,9 +238,8 @@ object events {
       * @return True if the event is a map `singleclick` event.
       * @api stable
       */
-    @JSImport("openlayers", "events.condition.singleClick")
-    @js.native
-    def singleClick(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def singleClick(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("singleClick")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return `true` if the target element is not editable, i.e. not a `<input>`-,
@@ -259,8 +249,7 @@ object events {
       * @return True only if the target element is not editable.
       * @api
       */
-    @JSImport("openlayers", "events.condition.targetNotEditable")
-    @js.native
-    def targetNotEditable(mapBrowserEvent: MapBrowserEvent): Boolean = js.native
+    @scala.inline
+    def targetNotEditable(mapBrowserEvent: MapBrowserEvent): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("targetNotEditable")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

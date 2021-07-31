@@ -2,51 +2,49 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowRequest extends StObject {
   
   /**
     *  A description of the flow you want to create. 
     */
-  var description: js.UndefOr[FlowDescription] = js.native
+  var description: js.UndefOr[FlowDescription] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow places data in the destination connector. 
     */
-  var destinationFlowConfigList: DestinationFlowConfigList = js.native
+  var destinationFlowConfigList: DestinationFlowConfigList
   
   /**
     *  The specified name of the flow. Spaces are not allowed. Use underscores (_) or hyphens (-) only. 
     */
-  var flowName: FlowName = js.native
+  var flowName: FlowName
   
   /**
     *  The ARN (Amazon Resource Name) of the Key Management Service (KMS) key you provide for encryption. This is required if you do not want to use the Amazon AppFlow-managed KMS key. If you don't provide anything here, Amazon AppFlow uses the Amazon AppFlow-managed KMS key. 
     */
-  var kmsArn: js.UndefOr[KMSArn] = js.native
+  var kmsArn: js.UndefOr[KMSArn] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow retrieves data from the source connector. 
     */
-  var sourceFlowConfig: SourceFlowConfig = js.native
+  var sourceFlowConfig: SourceFlowConfig
   
   /**
     *  The tags used to organize, track, or control access for your flow. 
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     *  A list of tasks that Amazon AppFlow performs while transferring the data in the flow run. 
     */
-  var tasks: Tasks = js.native
+  var tasks: Tasks
   
   /**
     *  The trigger settings that determine how and when the flow runs. 
     */
-  var triggerConfig: TriggerConfig = js.native
+  var triggerConfig: TriggerConfig
 }
 object CreateFlowRequest {
   

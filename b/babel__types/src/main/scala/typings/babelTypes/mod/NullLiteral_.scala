@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.NullLiteral
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait NullLiteral_
-  extends Expression
+- typings.babelTypes.mod._Node because Already inherited */ trait NullLiteral_
+  extends StObject
      with BaseNode
+     with Expression
      with Immutable
      with Literal
      with Pureish {
   
   @JSName("type")
-  var type_NullLiteral_ : NullLiteral = js.native
+  var type_NullLiteral_ : NullLiteral
 }
 object NullLiteral_ {
   
   @scala.inline
-  def apply(`type`: NullLiteral): NullLiteral_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): NullLiteral_ = {
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral_]
   }
   

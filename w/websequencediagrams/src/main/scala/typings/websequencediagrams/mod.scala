@@ -4,60 +4,47 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("websequencediagrams", "diagram")
+  @JSImport("websequencediagrams", JSImport.Namespace)
   @js.native
-  def diagram(description: String, style: Null, format: Null, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: String, style: Null, format: OutputType, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: String, style: Style, format: Null, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: String, style: Style, format: OutputType, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: Buffer, style: Null, format: Null, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: Buffer, style: Null, format: OutputType, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: Buffer, style: Style, format: Null, callback: diagramCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram")
-  @js.native
-  def diagram(description: Buffer, style: Style, format: OutputType, callback: diagramCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: String, style: Null, format: Null, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: String, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: String, style: Style, format: Null, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: String, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: Buffer, style: Null, format: Null, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: Buffer, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: Buffer, style: Style, format: Null, callback: diagramUrlCallback): Unit = js.native
-  @JSImport("websequencediagrams", "diagram_url")
-  @js.native
-  def diagramUrl(description: Buffer, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = js.native
+  @scala.inline
+  def diagram(description: String, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: String, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: String, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: String, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: Buffer, style: Null, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: Buffer, style: Null, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: Buffer, style: Style, format: Null, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagram(description: Buffer, style: Style, format: OutputType, callback: diagramCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def diagramUrl(description: String, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: String, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: String, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: String, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: Buffer, style: Null, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: Buffer, style: Null, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: Buffer, style: Style, format: Null, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def diagramUrl(description: Buffer, style: Style, format: OutputType, callback: diagramUrlCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("diagram_url")(description.asInstanceOf[js.Any], style.asInstanceOf[js.Any], format.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("websequencediagrams", "root")
   @js.native

@@ -2,13 +2,11 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpatialStationaryFrameOfReference extends StObject {
   
-  var coordinateSystem: js.Any = js.native
+  var coordinateSystem: js.Any
 }
 object SpatialStationaryFrameOfReference {
   

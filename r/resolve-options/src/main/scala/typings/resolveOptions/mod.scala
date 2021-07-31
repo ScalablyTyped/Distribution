@@ -4,23 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(config: Config, options: Options): Resolver = (^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Resolver]
+  
   @JSImport("resolve-options", JSImport.Namespace)
   @js.native
-  def apply(config: Config, options: Options): Resolver = js.native
+  val ^ : js.Any = js.native
   
   type Config = StringDictionary[ConfigItem]
   
-  @js.native
   trait ConfigItem extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: String | js.Array[String] = js.native
+    var `type`: String | js.Array[String]
   }
   object ConfigItem {
     
@@ -48,30 +49,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowEmpty: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var allowEmpty: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var base: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, String])] = js.native
+    var base: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, String])] = js.undefined
     
-    var buffer: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var buffer: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var cwd: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, String])] = js.native
+    var cwd: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, String])] = js.undefined
     
-    var deep: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var deep: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var dirMode: js.UndefOr[String | Double | (js.Function1[/* repeated */ js.Any, String | Double])] = js.native
+    var dirMode: js.UndefOr[String | Double | (js.Function1[/* repeated */ js.Any, String | Double])] = js.undefined
     
-    var mode: js.UndefOr[String | Double | (js.Function1[/* repeated */ js.Any, String | Double])] = js.native
+    var mode: js.UndefOr[String | Double | (js.Function1[/* repeated */ js.Any, String | Double])] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var overwrite: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var passthrough: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var passthrough: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var read: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.native
+    var read: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, Boolean])] = js.undefined
     
-    var since: js.UndefOr[Date | Double | (js.Function1[/* repeated */ js.Any, Date | Double])] = js.native
+    var since: js.UndefOr[Date | Double | (js.Function1[/* repeated */ js.Any, Date | Double])] = js.undefined
   }
   object Options {
     
@@ -185,10 +185,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Resolver extends StObject {
     
-    def resolve(key: String): js.UndefOr[Double | String | Boolean | Date | Null] = js.native
+    def resolve(key: String): js.UndefOr[Double | String | Boolean | Date | Null]
   }
   object Resolver {
     

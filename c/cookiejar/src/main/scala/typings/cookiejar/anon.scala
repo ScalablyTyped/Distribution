@@ -6,14 +6,15 @@ import typings.std.FlatArray
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.ReadonlyArray<cookiejar.cookiejar.Cookie> & {toValueString (): string} */
   @js.native
-  trait ReadonlyArrayCookietoValu extends /* n */ NumberDictionary[Cookie] {
+  trait ReadonlyArrayCookietoValu
+    extends StObject
+       with /* n */ NumberDictionary[Cookie] {
     
     /**
       * Combines two or more arrays.
@@ -34,9 +35,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def every(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
     def every(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
+    ): Boolean = js.native
+    def every(
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
       thisArg: js.Any
     ): Boolean = js.native
     /**
@@ -72,9 +75,11 @@ object anon {
       * @param predicate A function that accepts up to three arguments. The filter method calls the predicate function one time for each element in the array.
       * @param thisArg An object to which the this keyword can refer in the predicate function. If thisArg is omitted, undefined is used as the this value.
       */
-    def filter(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): js.Array[Cookie] = js.native
     def filter(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
+    ): js.Array[Cookie] = js.native
+    def filter(
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
       thisArg: js.Any
     ): js.Array[Cookie] = js.native
     /**
@@ -102,9 +107,11 @@ object anon {
       thisArg: js.Any
     ): js.Array[S] = js.native
     
-    def find(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _]): js.UndefOr[Cookie] = js.native
     def find(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any]
+    ): js.UndefOr[Cookie] = js.native
+    def find(
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any],
       thisArg: js.Any
     ): js.UndefOr[Cookie] = js.native
     /**
@@ -145,9 +152,11 @@ object anon {
       * @param thisArg If provided, it will be used as the this value for each invocation of
       * predicate. If it is not provided, undefined is used instead.
       */
-    def findIndex(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _]): Double = js.native
     def findIndex(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any]
+    ): Double = js.native
+    def findIndex(
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* obj */ js.Array[Cookie], js.Any],
       thisArg: js.Any
     ): Double = js.native
     
@@ -345,9 +354,9 @@ object anon {
       * @param end The end of the specified portion of the array. This is exclusive of the element at the index 'end'.
       */
     def slice(): js.Array[Cookie] = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Cookie] = js.native
     def slice(start: Double): js.Array[Cookie] = js.native
     def slice(start: Double, end: Double): js.Array[Cookie] = js.native
+    def slice(start: Unit, end: Double): js.Array[Cookie] = js.native
     
     /**
       * Determines whether the specified callback function returns true for any element of an array.
@@ -357,9 +366,11 @@ object anon {
       * @param thisArg An object to which the this keyword can refer in the predicate function.
       * If thisArg is omitted, undefined is used as the this value.
       */
-    def some(predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _]): Boolean = js.native
     def some(
-      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], _],
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any]
+    ): Boolean = js.native
+    def some(
+      predicate: js.Function3[/* value */ Cookie, /* index */ Double, /* array */ js.Array[Cookie], js.Any],
       thisArg: js.Any
     ): Boolean = js.native
     

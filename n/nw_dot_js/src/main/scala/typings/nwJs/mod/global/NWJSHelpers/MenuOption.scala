@@ -2,19 +2,17 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object that contains options to use while creation of nw.Menu. example: new nw.Menu(MenuOption)
   */
-@js.native
 trait MenuOption extends StObject {
   
   /**
     * {string} (Optional) two types are accepted by this method: "menubar" or "contextmenu". The value is set to "contextmenu" by default.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object MenuOption {
   

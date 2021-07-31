@@ -8,13 +8,11 @@ import typings.i18next.i18nextStrings.logger
 import typings.i18next.i18nextStrings.postProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Module extends StObject {
   
-  var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+  var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty`
 }
 object Module {
   

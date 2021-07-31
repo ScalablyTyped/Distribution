@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.io.XObjectOutputStream
   * @see com.sun.star.io.XObjectInputStream
   */
-@js.native
-trait XPersistObject extends XInterface {
+trait XPersistObject
+  extends StObject
+     with XInterface {
   
   /**
     * gives the service name of the object
@@ -31,7 +31,7 @@ trait XPersistObject extends XInterface {
     * @returns the service name that specifies the behavior and the persistent data format of this implementation.
     * @see com.sun.star.lang.XMultiComponentFactory.getAvailableServiceNames()
     */
-  val ServiceName: String = js.native
+  val ServiceName: String
   
   /**
     * gives the service name of the object
@@ -40,7 +40,7 @@ trait XPersistObject extends XInterface {
     * @returns the service name that specifies the behavior and the persistent data format of this implementation.
     * @see com.sun.star.lang.XMultiComponentFactory.getAvailableServiceNames()
     */
-  def getServiceName(): String = js.native
+  def getServiceName(): String
   
   /**
     * reads all the persistent data of the object from the stream.
@@ -51,7 +51,7 @@ trait XPersistObject extends XInterface {
     * The implementation must read the data in the order documented at the service specification.
     * @param InStream the stream, the data shall be read from.
     */
-  def read(InStream: XObjectInputStream): Unit = js.native
+  def read(InStream: XObjectInputStream): Unit
   
   /**
     * writes all the persistent data of the object to the stream.
@@ -59,7 +59,7 @@ trait XPersistObject extends XInterface {
     * The implementation must write the data in the order documented in the service specification.
     * @param OutStream the stream, the data shall be written to. The stream supports simple types and other {@link XPersistObject} implementations.
     */
-  def write(OutStream: XObjectOutputStream): Unit = js.native
+  def write(OutStream: XObjectOutputStream): Unit
 }
 object XPersistObject {
   

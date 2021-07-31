@@ -5,23 +5,21 @@ import typings.tern.ternNumbers.`5`
 import typings.tern.ternNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CtorOptions extends StObject {
   
   /** The definition objects to load into the server’s environment. */
-  var defs: js.UndefOr[js.Array[Def]] = js.native
+  var defs: js.UndefOr[js.Array[Def]] = js.undefined
   
   /** The ECMAScript version to parse. Should be either 5 or 6. Default is 6. */
-  var ecmaVersion: js.UndefOr[`5` | `6`] = js.native
+  var ecmaVersion: js.UndefOr[`5` | `6`] = js.undefined
   
   /** Indicates the maximum amount of milliseconds to wait for an asynchronous getFile before giving up on it. Defaults to 1000. */
-  var fetchTimeout: js.UndefOr[Double] = js.native
+  var fetchTimeout: js.UndefOr[Double] = js.undefined
   
   /** Specifies the set of plugins that the server should load. The property names of the object name the plugins, and their values hold options that will be passed to them. */
-  var plugins: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var plugins: js.UndefOr[StringDictionary[js.Object]] = js.undefined
 }
 object CtorOptions {
   

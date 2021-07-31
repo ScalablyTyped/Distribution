@@ -2,7 +2,6 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,10 +10,9 @@ object global {
   @js.native
   val atom: AtomEnvironment = js.native
   
-  @js.native
   trait HTMLElementTagNameMap extends StObject {
     
-    var `atom-text-editor`: TextEditorElement = js.native
+    var `atom-text-editor`: TextEditorElement
   }
   object HTMLElementTagNameMap {
     

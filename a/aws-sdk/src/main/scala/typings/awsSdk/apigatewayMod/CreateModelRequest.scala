@@ -2,36 +2,34 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateModelRequest extends StObject {
   
   /**
     * [Required] The content-type for the model.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * The description of the model.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The name of the model. Must be alphanumeric.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * [Required] The RestApi identifier under which the Model will be created.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * The schema for the model. For application/json models, this should be JSON schema draft 4 model.
     */
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
 }
 object CreateModelRequest {
   

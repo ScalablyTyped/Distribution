@@ -4,15 +4,13 @@ import typings.playable.configMod.IPlayerConfig
 import typings.playable.eventEmitterTypesMod.IEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigEventEmitter extends StObject {
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
 }
 object ConfigEventEmitter {
   

@@ -7,7 +7,6 @@ import typings.std.SharedArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,11 +22,11 @@ trait TypeofBuffer extends StObject {
     */
   /* static member */
   def alloc(size: Double): typings.node.Buffer = js.native
-  def alloc(size: Double, fill: js.UndefOr[scala.Nothing], encoding: BufferEncoding): typings.node.Buffer = js.native
   def alloc(size: Double, fill: String): typings.node.Buffer = js.native
   def alloc(size: Double, fill: String, encoding: BufferEncoding): typings.node.Buffer = js.native
   def alloc(size: Double, fill: Double): typings.node.Buffer = js.native
   def alloc(size: Double, fill: Double, encoding: BufferEncoding): typings.node.Buffer = js.native
+  def alloc(size: Double, fill: Unit, encoding: BufferEncoding): typings.node.Buffer = js.native
   def alloc(size: Double, fill: typings.node.Buffer): typings.node.Buffer = js.native
   def alloc(size: Double, fill: typings.node.Buffer, encoding: BufferEncoding): typings.node.Buffer = js.native
   
@@ -97,13 +96,13 @@ trait TypeofBuffer extends StObject {
     */
   /* static member */
   def from(arrayBuffer: ArrayBuffer): typings.node.Buffer = js.native
-  def from(arrayBuffer: ArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: ArrayBuffer, byteOffset: Double, length: Double): typings.node.Buffer = js.native
+  def from(arrayBuffer: ArrayBuffer, byteOffset: Unit, length: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer): typings.node.Buffer = js.native
-  def from(arrayBuffer: SharedArrayBuffer, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double): typings.node.Buffer = js.native
   def from(arrayBuffer: SharedArrayBuffer, byteOffset: Double, length: Double): typings.node.Buffer = js.native
+  def from(arrayBuffer: SharedArrayBuffer, byteOffset: Unit, length: Double): typings.node.Buffer = js.native
   /**
     * Creates a new Buffer using the passed {data}
     * @param data data to create a new Buffer
@@ -113,9 +112,9 @@ trait TypeofBuffer extends StObject {
   /* static member */
   def from(data: Uint8Array): typings.node.Buffer = js.native
   def from(obj: ToPrimitive): typings.node.Buffer = js.native
-  def from(obj: ToPrimitive, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(obj: ToPrimitive, byteOffset: Double): typings.node.Buffer = js.native
   def from(obj: ToPrimitive, byteOffset: Double, length: Double): typings.node.Buffer = js.native
+  def from(obj: ToPrimitive, byteOffset: Unit, length: Double): typings.node.Buffer = js.native
   /**
     * Creates a new buffer containing the coerced value of an object
     * A `TypeError` will be thrown if {obj} has not mentioned methods or is not of other type appropriate for `Buffer.from()` variants.
@@ -123,9 +122,9 @@ trait TypeofBuffer extends StObject {
     */
   /* static member */
   def from(obj: ValueOf): typings.node.Buffer = js.native
-  def from(obj: ValueOf, byteOffset: js.UndefOr[scala.Nothing], length: Double): typings.node.Buffer = js.native
   def from(obj: ValueOf, byteOffset: Double): typings.node.Buffer = js.native
   def from(obj: ValueOf, byteOffset: Double, length: Double): typings.node.Buffer = js.native
+  def from(obj: ValueOf, byteOffset: Unit, length: Double): typings.node.Buffer = js.native
   /**
     * Creates a new Buffer containing the given JavaScript string {str}.
     * If provided, the {encoding} parameter identifies the character encoding.

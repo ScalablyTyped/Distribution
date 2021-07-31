@@ -1,9 +1,9 @@
 package typings.wonderFrp.es2015Mod
 
 import typings.wonderFrp.observerIobserverMod.IObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/es2015", "FilterObserver")
 @js.native
@@ -15,11 +15,14 @@ class FilterObserver protected ()
     source: typings.wonderFrp.coreStreamMod.Stream
   ) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/es2015", "FilterObserver")
-@js.native
-object FilterObserver extends js.Object {
+object FilterObserver {
+  
+  @JSImport("wonder-frp/dist/es2015", "FilterObserver")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     prevObserver: IObserver,
     predicate: js.Function3[
@@ -29,6 +32,5 @@ object FilterObserver extends js.Object {
       Boolean
     ],
     source: typings.wonderFrp.coreStreamMod.Stream
-  ): typings.wonderFrp.observerFilterObserverMod.FilterObserver = js.native
+  ): typings.wonderFrp.observerFilterObserverMod.FilterObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(prevObserver.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.observerFilterObserverMod.FilterObserver]
 }
-

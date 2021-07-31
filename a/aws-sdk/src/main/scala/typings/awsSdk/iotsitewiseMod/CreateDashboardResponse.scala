@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDashboardResponse extends StObject {
   
   /**
     * The ARN of the dashboard, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:dashboard/${DashboardId} 
     */
-  var dashboardArn: ARN = js.native
+  var dashboardArn: ARN
   
   /**
     * The ID of the dashboard.
     */
-  var dashboardId: ID = js.native
+  var dashboardId: ID
 }
 object CreateDashboardResponse {
   

@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsReleasesList extends StandardParameters {
+trait ParamsResourceProjectsReleasesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * `Release` filter. The list method supports filters with restrictions on
@@ -37,12 +37,12 @@ trait ParamsResourceProjectsReleasesList extends StandardParameters {
     * to the project. Fully qualified prefixed may also be used. e.g.
     * `test_suite_name=projects/foo/testsuites/uuid1`
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Resource name for the project.  Format: `projects/{project_id}`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Page size to load. Maximum of 100. Defaults to 10. Note: `page_size` is
@@ -51,12 +51,12 @@ trait ParamsResourceProjectsReleasesList extends StandardParameters {
     * the caller should iterate until the `page_token` on the response is
     * empty.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Next page token for the next batch of `Release` instances.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsReleasesList {
   

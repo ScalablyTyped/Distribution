@@ -4,52 +4,50 @@ import typings.jui.juiStrings.black
 import typings.jui.juiStrings.gray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHide extends StObject {
   
   /**
     * @cfg {Boolean} [autoHide=true]
     * Automatically hides a modal when clicking on it
     */
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {Boolean} [clone=false]
     * Copies an existing modal and shows it
     */
   @JSName("clone")
-  var clone_FAutoHide: js.UndefOr[Boolean] = js.native
+  var clone_FAutoHide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @cfg {"black"/"gray"} [color="black"]
     * Determines the color of a modal
     */
-  var color: js.UndefOr[black | gray] = js.native
+  var color: js.UndefOr[black | gray] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Integer} [index=0]
     * Determines the sequence (index) of a modal
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {Float} [opacity=0.4]
     * Sets the transparency of a modal
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * @cfg {String/DOMElement} [target="body"]
     * Sets a selector on which a modal is shown
     */
-  var target: js.UndefOr[String | js.Any] = js.native
+  var target: js.UndefOr[String | js.Any] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
 }
 object AutoHide {
   

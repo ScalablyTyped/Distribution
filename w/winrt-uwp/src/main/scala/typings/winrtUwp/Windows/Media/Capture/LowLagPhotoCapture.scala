@@ -4,24 +4,22 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for taking a low shutter lag photo. */
-@js.native
 trait LowLagPhotoCapture extends StObject {
   
   /**
     * Asynchronously captures a low shutter lag photo.
     * @return When this method completes, a CapturedPhoto object is returned which contains the captured photo.
     */
-  def captureAsync(): IPromiseWithIAsyncOperation[CapturedPhoto] = js.native
+  def captureAsync(): IPromiseWithIAsyncOperation[CapturedPhoto]
   
   /**
     * Asynchronously releases the LowLagPhotoCapture object and resources used by the capture photo operation.
     * @return Object that is used to control the asynchronous operation.
     */
-  def finishAsync(): IPromiseWithIAsyncAction = js.native
+  def finishAsync(): IPromiseWithIAsyncAction
 }
 object LowLagPhotoCapture {
   

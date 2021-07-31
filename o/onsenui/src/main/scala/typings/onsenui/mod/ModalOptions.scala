@@ -2,21 +2,19 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalOptions extends StObject {
   
   /**
     * @description Animation name. Available animations are `"none"` and `"fade"`.
     */
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
   /**
     * @description Specify the animation's duration, delay and timing. E.g. `{duration: 0.2, delay: 0.4, timing: 'ease-in'}`.
     */
-  var animationOptions: js.UndefOr[String] = js.native
+  var animationOptions: js.UndefOr[String] = js.undefined
 }
 object ModalOptions {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object GeoshapeType extends StObject {
   
   /** The geographic region is a rectangular region. */
   @js.native
-  sealed trait geoboundingBox extends GeoshapeType
+  sealed trait geoboundingBox
+    extends StObject
+       with GeoshapeType
   
   /** The geographic region is a circle with a center point and a radius. */
   @js.native
-  sealed trait geocircle extends GeoshapeType
+  sealed trait geocircle
+    extends StObject
+       with GeoshapeType
   
   /** The geographic region is an order series of points. */
   @js.native
-  sealed trait geopath extends GeoshapeType
+  sealed trait geopath
+    extends StObject
+       with GeoshapeType
   
   /** The geographic region is a point. */
   @js.native
-  sealed trait geopoint extends GeoshapeType
+  sealed trait geopoint
+    extends StObject
+       with GeoshapeType
 }

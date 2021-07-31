@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FleetOnDemandOptions extends StObject {
   
   /**
     * How to allocate the target capacity across the Spot pools. Valid values: `diversified`, `lowestPrice`. Default: `lowestPrice`.
     */
-  var allocationStrategy: js.UndefOr[String] = js.native
+  var allocationStrategy: js.UndefOr[String] = js.undefined
 }
 object FleetOnDemandOptions {
   

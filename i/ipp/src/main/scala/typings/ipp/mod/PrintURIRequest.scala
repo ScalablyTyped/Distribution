@@ -3,15 +3,13 @@ package typings.ipp.mod
 import typings.ipp.anon.Documentformat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintURIRequest extends StObject {
   
-  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.native
+  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.undefined
   
-  var `operation-attributes-tag`: Documentformat = js.native
+  var `operation-attributes-tag`: Documentformat
 }
 object PrintURIRequest {
   

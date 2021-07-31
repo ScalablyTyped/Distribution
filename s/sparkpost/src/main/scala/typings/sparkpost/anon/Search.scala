@@ -6,7 +6,6 @@ import typings.sparkpost.mod.ResultsCallback
 import typings.sparkpost.mod.ResultsPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

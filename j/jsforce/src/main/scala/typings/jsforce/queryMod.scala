@@ -11,7 +11,6 @@ import typings.std.Error
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryMod {
@@ -29,47 +28,32 @@ object queryMod {
     
     def del(): js.Any = js.native
     def del(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def del(
-      `type`: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]
-    ): js.Any = js.native
     def del(`type`: String): js.Any = js.native
     def del(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
+    def del(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
     
     def delete(): js.Any = js.native
     def delete(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
-    def delete(
-      `type`: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]
-    ): js.Any = js.native
     def delete(`type`: String): js.Any = js.native
     def delete(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
+    def delete(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Any = js.native
     
     def destroy(callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
-    def destroy(
-      `type`: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]
-    ): js.Promise[js.Array[RecordResult]] = js.native
     def destroy(`type`: String): js.Promise[js.Array[RecordResult]] = js.native
     def destroy(`type`: String, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
+    def destroy(`type`: Unit, callback: js.Function2[/* err */ Error, /* ret */ RecordResult, Unit]): js.Promise[js.Array[RecordResult]] = js.native
     @JSName("destroy")
     def destroy_Promise(): js.Promise[js.Array[RecordResult]] = js.native
     
     def end(): Query[T] = js.native
     
     def exec(): Query[T] = js.native
-    def exec(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]
-    ): Query[T] = js.native
+    def exec(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def exec(options: ExecuteOptions): Query[T] = js.native
     def exec(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     
     def execute(): Query[T] = js.native
-    def execute(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]
-    ): Query[T] = js.native
+    def execute(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def execute(options: ExecuteOptions): Query[T] = js.native
     def execute(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     
@@ -84,7 +68,7 @@ object queryMod {
     
     def limit(value: Double): Query[T] = js.native
     
-    def map(callback: js.Function1[/* currentValue */ js.Object, Unit]): js.Promise[_] = js.native
+    def map(callback: js.Function1[/* currentValue */ js.Object, Unit]): js.Promise[js.Any] = js.native
     
     def maxFetch(value: Double): Query[T] = js.native
     
@@ -96,10 +80,7 @@ object queryMod {
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
     def run(): Query[T] = js.native
-    def run(
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]
-    ): Query[T] = js.native
+    def run(options: Unit, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     def run(options: ExecuteOptions): Query[T] = js.native
     def run(options: ExecuteOptions, callback: js.Function2[/* err */ Error, /* records */ js.Array[T], Unit]): Query[T] = js.native
     
@@ -152,16 +133,15 @@ object queryMod {
     def where(conditions: js.Object): Query[T] = js.native
   }
   
-  @js.native
   trait ExecuteOptions extends StObject {
     
-    var autoFetch: js.UndefOr[Boolean] = js.native
+    var autoFetch: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var maxFetch: js.UndefOr[Double] = js.native
+    var maxFetch: js.UndefOr[Double] = js.undefined
     
-    var scanAll: js.UndefOr[Boolean] = js.native
+    var scanAll: js.UndefOr[Boolean] = js.undefined
   }
   object ExecuteOptions {
     
@@ -200,16 +180,15 @@ object queryMod {
     }
   }
   
-  @js.native
   trait QueryResult[T] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var nextRecordsUrl: js.UndefOr[String] = js.native
+    var nextRecordsUrl: js.UndefOr[String] = js.undefined
     
-    var records: js.Array[T] = js.native
+    var records: js.Array[T]
     
-    var totalSize: Double = js.native
+    var totalSize: Double
   }
   object QueryResult {
     
@@ -220,7 +199,7 @@ object queryMod {
     }
     
     @scala.inline
-    implicit class QueryResultMutableBuilder[Self <: QueryResult[_], T] (val x: Self with QueryResult[T]) extends AnyVal {
+    implicit class QueryResultMutableBuilder[Self <: QueryResult[?], T] (val x: Self & QueryResult[T]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])

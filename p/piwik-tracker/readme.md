@@ -12,7 +12,7 @@ A wrapper for the Piwik tracking HTTP API
 | Keywords           | piwik, analytics, tracking |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 5008 |
+| # downloads        | 5480 |
 | # stars            | 2 |
 
 ## Links

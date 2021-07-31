@@ -3,29 +3,28 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimpleTextMarkerTemplateSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var borderThickness: js.UndefOr[Double] = js.native
+  var borderThickness: js.UndefOr[Double] = js.undefined
   
-  var font: js.UndefOr[js.Any] = js.native
+  var font: js.UndefOr[js.Any] = js.undefined
   
-  var getText: js.UndefOr[js.Any] = js.native
+  var getText: js.UndefOr[js.Any] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object SimpleTextMarkerTemplateSettings {
   

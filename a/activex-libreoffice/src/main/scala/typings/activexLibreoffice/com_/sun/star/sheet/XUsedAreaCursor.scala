@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (borders and background color).
   * @see com.sun.star.sheet.SheetCellCursor
   */
-@js.native
-trait XUsedAreaCursor extends XInterface {
+trait XUsedAreaCursor
+  extends StObject
+     with XInterface {
   
   /**
     * points the cursor to the end of the used area.
     * @param bExpand `TRUE` = expands the current cursor range, `FALSE` = sets size of the cursor to a single cell.
     */
-  def gotoEndOfUsedArea(bExpand: Boolean): Unit = js.native
+  def gotoEndOfUsedArea(bExpand: Boolean): Unit
   
   /**
     * points the cursor to the start of the used area.
     * @param bExpand `TRUE` = expands the current cursor range, `FALSE` = sets size of the cursor to a single cell.
     */
-  def gotoStartOfUsedArea(bExpand: Boolean): Unit = js.native
+  def gotoStartOfUsedArea(bExpand: Boolean): Unit
 }
 object XUsedAreaCursor {
   

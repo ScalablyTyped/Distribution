@@ -12,7 +12,7 @@ Typescript framework for AWS API Gateway and Lambda
 | Keywords           | api gateway, lambda, aws, typescript |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1473 |
+| # downloads        | 1300 |
 | # stars            | 0 |
 
 ## Links

@@ -6,43 +6,43 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XAxis extends XInterface {
+trait XAxis
+  extends StObject
+     with XInterface {
   
   /** the returned property set must support the service {@link GridProperties} */
-  val GridProperties: XPropertySet = js.native
+  val GridProperties: XPropertySet
   
-  var ScaleData: typings.activexLibreoffice.com_.sun.star.chart2.ScaleData = js.native
+  var ScaleData: typings.activexLibreoffice.com_.sun.star.chart2.ScaleData
   
   /**
     * the returned property sets must support the service {@link GridProperties}
     *
     * If you do not want to render certain a sub-grid, in the corresponding XPropertySet the property {@link GridProperties.Show} must be `FALSE` .
     */
-  val SubGridProperties: SafeArray[XPropertySet] = js.native
+  val SubGridProperties: SafeArray[XPropertySet]
   
   /** the returned property sets must support the service TickProperties */
-  val SubTickProperties: SafeArray[XPropertySet] = js.native
+  val SubTickProperties: SafeArray[XPropertySet]
   
   /** the returned property set must support the service {@link GridProperties} */
-  def getGridProperties(): XPropertySet = js.native
+  def getGridProperties(): XPropertySet
   
-  def getScaleData(): ScaleData = js.native
+  def getScaleData(): ScaleData
   
   /**
     * the returned property sets must support the service {@link GridProperties}
     *
     * If you do not want to render certain a sub-grid, in the corresponding XPropertySet the property {@link GridProperties.Show} must be `FALSE` .
     */
-  def getSubGridProperties(): SafeArray[XPropertySet] = js.native
+  def getSubGridProperties(): SafeArray[XPropertySet]
   
   /** the returned property sets must support the service TickProperties */
-  def getSubTickProperties(): SafeArray[XPropertySet] = js.native
+  def getSubTickProperties(): SafeArray[XPropertySet]
   
-  def setScaleData(aScale: ScaleData): Unit = js.native
+  def setScaleData(aScale: ScaleData): Unit
 }
 object XAxis {
   

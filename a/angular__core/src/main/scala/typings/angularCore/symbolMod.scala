@@ -6,16 +6,17 @@ import typings.typescript.mod.Symbol
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolMod {
   
-  @JSImport("@angular/core/schematics/utils/typescript/symbol", "getValueSymbolOfDeclaration")
+  @JSImport("@angular/core/schematics/utils/typescript/symbol", JSImport.Namespace)
   @js.native
-  def getValueSymbolOfDeclaration(node: Node, typeChecker: TypeChecker): js.UndefOr[Symbol] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/utils/typescript/symbol", "isReferenceToImport")
-  @js.native
-  def isReferenceToImport(typeChecker: TypeChecker, node: Node, importSpecifier: ImportSpecifier): Boolean = js.native
+  @scala.inline
+  def getValueSymbolOfDeclaration(node: Node, typeChecker: TypeChecker): js.UndefOr[Symbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("getValueSymbolOfDeclaration")(node.asInstanceOf[js.Any], typeChecker.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Symbol]]
+  
+  @scala.inline
+  def isReferenceToImport(typeChecker: TypeChecker, node: Node, importSpecifier: ImportSpecifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReferenceToImport")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any], importSpecifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

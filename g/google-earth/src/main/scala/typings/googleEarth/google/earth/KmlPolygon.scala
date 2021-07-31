@@ -2,27 +2,27 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlPolygon extends KmlExtrudableGeometry {
+trait KmlPolygon
+  extends StObject
+     with KmlExtrudableGeometry {
   
   /**
     * Contains a LinearRing element.
     * You can specify multiple innerBoundary properties, which create multiple cut-outs inside the Polygon.
     */
-  def getInnerBoundaries(): GELinearRingContainer = js.native
+  def getInnerBoundaries(): GELinearRingContainer
   
   /**
     * Contains a LinearRing element.
     */
-  def getOuterBoundary(): KmlLinearRing = js.native
+  def getOuterBoundary(): KmlLinearRing
   
   /**
     * Contains a LinearRing element.
     */
-  def setOuterBoundary(outerBoundary: KmlLinearRing): Unit = js.native
+  def setOuterBoundary(outerBoundary: KmlLinearRing): Unit
 }
 object KmlPolygon {
   

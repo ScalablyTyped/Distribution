@@ -2,23 +2,21 @@ package typings.reBase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostOptions extends StObject {
   
   /**
     * The data you're wanting to persist to Firebase.
     */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     * A callback that will get invoked once the new data has been saved to
     * Firebase. If there is an error, it will be the only argument to this
     * function.
     */
-  var `then`: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.native
+  var `then`: js.UndefOr[js.Function1[/* result */ js.Any, Unit]] = js.undefined
 }
 object PostOptions {
   

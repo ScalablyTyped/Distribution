@@ -9,56 +9,47 @@ import typings.ngxInfiniteScroll.modelsMod.IPositionStats
 import typings.ngxInfiniteScroll.modelsMod.IResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object positionResolverMod {
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "calculatePoints")
+  @JSImport("ngx-infinite-scroll/src/services/position-resolver", JSImport.Namespace)
   @js.native
-  def calculatePoints(element: ElementRef[_], resolver: IResolver): IPositionStats = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "calculatePointsForElement")
-  @js.native
-  def calculatePointsForElement(height: Double, element: ElementRef[_], resolver: IResolver): IPositionStats = js.native
+  @scala.inline
+  def calculatePoints(element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePoints")(element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "calculatePointsForWindow")
-  @js.native
-  def calculatePointsForWindow(height: Double, element: ElementRef[_], resolver: IResolver): IPositionStats = js.native
+  @scala.inline
+  def calculatePointsForElement(height: Double, element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForElement")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "createResolver")
-  @js.native
-  def createResolver(hasWindowElementAxis: IPositionElements): IResolver = js.native
+  @scala.inline
+  def calculatePointsForWindow(height: Double, element: ElementRef[js.Any], resolver: IResolver): IPositionStats = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePointsForWindow")(height.asInstanceOf[js.Any], element.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[IPositionStats]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "createResolverWithContainer")
-  @js.native
-  def createResolverWithContainer(resolver: js.Any, windowElement: ContainerRef): js.Any = js.native
+  @scala.inline
+  def createResolver(hasWindowElementAxis: IPositionElements): IResolver = ^.asInstanceOf[js.Dynamic].applyDynamic("createResolver")(hasWindowElementAxis.asInstanceOf[js.Any]).asInstanceOf[IResolver]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "extractHeightForElement")
-  @js.native
-  def extractHeightForElement(hasContainerIsWindowAxis: IResolver): js.Any = js.native
+  @scala.inline
+  def createResolverWithContainer(resolver: js.Any, windowElement: ContainerRef): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createResolverWithContainer")(resolver.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "extractHeightPropKeys")
-  @js.native
-  def extractHeightPropKeys(axis: AxisResolver): ClientHeightKey = js.native
+  @scala.inline
+  def extractHeightForElement(hasContainerIsWindowAxis: IResolver): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightForElement")(hasContainerIsWindowAxis.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "getDocumentElement")
-  @js.native
-  def getDocumentElement(isContainerWindow: Boolean, windowElement: js.Any): js.Any = js.native
+  @scala.inline
+  def extractHeightPropKeys(axis: AxisResolver): ClientHeightKey = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHeightPropKeys")(axis.asInstanceOf[js.Any]).asInstanceOf[ClientHeightKey]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "getElementHeight")
-  @js.native
-  def getElementHeight(elem: js.Any, isWindow: Boolean, offsetHeightKey: String, clientHeightKey: String): js.Any = js.native
+  @scala.inline
+  def getDocumentElement(isContainerWindow: Boolean, windowElement: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentElement")(isContainerWindow.asInstanceOf[js.Any], windowElement.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "getElementOffsetTop")
-  @js.native
-  def getElementOffsetTop(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = js.native
+  @scala.inline
+  def getElementHeight(elem: js.Any, isWindow: Boolean, offsetHeightKey: String, clientHeightKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementHeight")(elem.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any], offsetHeightKey.asInstanceOf[js.Any], clientHeightKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "getElementPageYOffset")
-  @js.native
-  def getElementPageYOffset(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = js.native
+  @scala.inline
+  def getElementOffsetTop(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementOffsetTop")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ngx-infinite-scroll/src/services/position-resolver", "isElementWindow")
-  @js.native
-  def isElementWindow(windowElement: ContainerRef): Boolean = js.native
+  @scala.inline
+  def getElementPageYOffset(elem: ContainerRef, axis: AxisResolver, isWindow: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementPageYOffset")(elem.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], isWindow.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def isElementWindow(windowElement: ContainerRef): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElementWindow")(windowElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

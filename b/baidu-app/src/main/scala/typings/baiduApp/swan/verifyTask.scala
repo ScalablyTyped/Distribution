@@ -3,17 +3,15 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait verifyTask extends StObject {
   
-  var data: Result = js.native
+  var data: Result
   
-  var errmsg: String = js.native
+  var errmsg: String
   
-  var errno: String = js.native
+  var errno: String
 }
 object verifyTask {
   

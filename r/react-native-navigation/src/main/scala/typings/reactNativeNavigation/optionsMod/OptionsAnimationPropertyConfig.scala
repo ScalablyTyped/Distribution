@@ -2,38 +2,36 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsAnimationPropertyConfig extends StObject {
   
   /**
     * Animation duration
     * @default 300
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Animate from this value, ex. 0
     */
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
   /**
     * Animation interplation
     */
-  var interpolation: js.UndefOr[Interpolation] = js.native
+  var interpolation: js.UndefOr[Interpolation] = js.undefined
   
   /**
     * Animation delay
     * @default 0
     */
-  var startDelay: js.UndefOr[Double] = js.native
+  var startDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Animate to this value, ex. 1
     */
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object OptionsAnimationPropertyConfig {
   

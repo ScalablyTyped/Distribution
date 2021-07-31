@@ -10,9 +10,9 @@ TypeScript typings for Cloud Video Intelligence API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.videointelligence |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 51 |
+| # downloads        | 907 |
 | # stars            | 0 |
 
 ## Links

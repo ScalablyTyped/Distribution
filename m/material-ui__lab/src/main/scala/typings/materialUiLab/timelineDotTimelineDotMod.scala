@@ -14,14 +14,16 @@ import typings.react.mod.RefObject
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineDotTimelineDotMod {
   
-  @JSImport("@material-ui/lab/TimelineDot/TimelineDot", JSImport.Default)
+  @JSImport("@material-ui/lab/TimelineDot/TimelineDot", JSImport.Namespace)
   @js.native
-  def default(props: TimelineDotProps): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: TimelineDotProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiLab.materialUiLabStrings.root
@@ -58,31 +60,30 @@ object timelineDotTimelineDotMod {
   }
   
   /* Inlined parent @material-ui/core.@material-ui/core.StandardProps<{}, @material-ui/lab.@material-ui/lab/TimelineDot/TimelineDot.TimelineDotClassKey, never> */
-  @js.native
   trait TimelineDotProps extends StObject {
     
     /**
       * The content of the component.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var classes: js.UndefOr[PartialClassNameMapTimeliDefaultDefault] = js.native
+    var classes: js.UndefOr[PartialClassNameMapTimeliDefaultDefault] = js.undefined
     
     /**
       * The dot can have a different colors.
       */
-    var color: js.UndefOr[inherit | primary | secondary | grey] = js.native
+    var color: js.UndefOr[inherit | primary | secondary | grey] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * The dot can appear filled or outlined.
       */
-    var variant: js.UndefOr[default | outlined] = js.native
+    var variant: js.UndefOr[default | outlined] = js.undefined
   }
   object TimelineDotProps {
     
@@ -120,10 +121,10 @@ object timelineDotTimelineDotMod {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)

@@ -4,7 +4,6 @@ import typings.devexpressUtils.anon.TwoDigitYearMax
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateUtilsMod {
@@ -19,13 +18,11 @@ object dateUtilsMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/formatters/date-utils", "DateUtils.expandTwoDigitYear")
-    @js.native
-    def expandTwoDigitYear(value: Double, options: TwoDigitYearMax): Double = js.native
+    @scala.inline
+    def expandTwoDigitYear(value: Double, options: TwoDigitYearMax): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("expandTwoDigitYear")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/formatters/date-utils", "DateUtils.fixTimezoneGap")
-    @js.native
-    def fixTimezoneGap(oldDate: Date, newDate: Date): Unit = js.native
+    @scala.inline
+    def fixTimezoneGap(oldDate: Date, newDate: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fixTimezoneGap")(oldDate.asInstanceOf[js.Any], newDate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/formatters/date-utils", "DateUtils.getTimeZoneOffset")
     @js.native
@@ -33,8 +30,7 @@ object dateUtilsMod {
     @scala.inline
     def getTimeZoneOffset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getTimeZoneOffset")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/formatters/date-utils", "DateUtils.toUtcTime")
-    @js.native
-    def toUtcTime(date: Date): Date = js.native
+    @scala.inline
+    def toUtcTime(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUtcTime")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   }
 }

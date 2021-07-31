@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PruneImagesInfo extends StObject {
   
-  var ImagesDeleted: js.Array[ImageRemoveInfo] = js.native
+  var ImagesDeleted: js.Array[ImageRemoveInfo]
   
-  var SpaceReclaimed: Double = js.native
+  var SpaceReclaimed: Double
 }
 object PruneImagesInfo {
   

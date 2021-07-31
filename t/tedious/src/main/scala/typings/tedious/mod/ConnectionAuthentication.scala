@@ -2,21 +2,19 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionAuthentication extends StObject {
   
   /**
     * Authentication Options
     */
-  var options: ConnectionAuthenticationOptions = js.native
+  var options: ConnectionAuthenticationOptions
   
   /**
     * Authentication Type. Default value is 'default'.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ConnectionAuthentication {
   

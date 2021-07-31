@@ -6,19 +6,17 @@ import typings.node.httpMod.IncomingHttpHeaders
 import typings.syncRequest.optionsMod.MessageOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messagesMod {
   
-  @js.native
   trait Req extends StObject {
     
-    var m: HttpVerb = js.native
+    var m: HttpVerb
     
-    var o: js.UndefOr[MessageOptions] = js.native
+    var o: js.UndefOr[MessageOptions] = js.undefined
     
-    var u: String = js.native
+    var u: String
   }
   object Req {
     
@@ -45,16 +43,15 @@ object messagesMod {
     }
   }
   
-  @js.native
   trait Res extends StObject {
     
-    var b: Buffer | String = js.native
+    var b: Buffer | String
     
-    var h: IncomingHttpHeaders = js.native
+    var h: IncomingHttpHeaders
     
-    var s: Double = js.native
+    var s: Double
     
-    var u: String = js.native
+    var u: String
   }
   object Res {
     

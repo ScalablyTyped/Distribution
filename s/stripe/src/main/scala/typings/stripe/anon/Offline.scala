@@ -6,25 +6,23 @@ import typings.stripe.stripeStrings.online
 import typings.stripe.stripeStrings.refused
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offline extends StObject {
   
-  var date: js.UndefOr[Double] = js.native
+  var date: js.UndefOr[Double] = js.undefined
   
-  var ip: js.UndefOr[String] = js.native
+  var ip: js.UndefOr[String] = js.undefined
   
-  var offline: js.UndefOr[Contactemail] = js.native
+  var offline: js.UndefOr[Contactemail] = js.undefined
   
-  var online: js.UndefOr[Ip] = js.native
+  var online: js.UndefOr[Ip] = js.undefined
   
-  var status: accepted | refused = js.native
+  var status: accepted | refused
   
-  var `type`: online | offline = js.native
+  var `type`: online | offline
   
-  var user_agent: js.UndefOr[String] = js.native
+  var user_agent: js.UndefOr[String] = js.undefined
 }
 object Offline {
   

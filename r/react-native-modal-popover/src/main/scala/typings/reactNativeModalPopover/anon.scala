@@ -12,56 +12,54 @@ import typings.reactNativeModalPopover.popoverMod.Orientation
 import typings.reactNativeModalPopover.reactNativeModalPopoverStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ArrowSize extends StObject {
     
-    var arrowSize: Requireable[InferProps[X]] = js.native
+    var arrowSize: Requireable[InferProps[X]]
     
-    var arrowStyle: Requireable[_] = js.native
+    var arrowStyle: Requireable[js.Any]
     
-    var backgroundStyle: Requireable[_] = js.native
+    var backgroundStyle: Requireable[js.Any]
     
-    var contentStyle: Requireable[_] = js.native
+    var contentStyle: Requireable[js.Any]
     
-    var displayArea: Requireable[InferProps[Height]] = js.native
+    var displayArea: Requireable[InferProps[Height]]
     
-    var duration: Requireable[Double] = js.native
+    var duration: Requireable[Double]
     
-    var easing: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var easing: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var fromRect: Requireable[InferProps[Height]] = js.native
+    var fromRect: Requireable[InferProps[Height]]
     
-    var onClose: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var onDismiss: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onDismiss: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var placement: Requireable[String] = js.native
+    var placement: Requireable[String]
     
-    var popoverStyle: Requireable[_] = js.native
+    var popoverStyle: Requireable[js.Any]
     
-    var visible: Requireable[Boolean] = js.native
+    var visible: Requireable[Boolean]
   }
   object ArrowSize {
     
     @scala.inline
     def apply(
       arrowSize: Requireable[InferProps[X]],
-      arrowStyle: Requireable[_],
-      backgroundStyle: Requireable[_],
-      contentStyle: Requireable[_],
+      arrowStyle: Requireable[js.Any],
+      backgroundStyle: Requireable[js.Any],
+      contentStyle: Requireable[js.Any],
       displayArea: Requireable[InferProps[Height]],
       duration: Requireable[Double],
-      easing: Requireable[js.Function1[/* repeated */ _, _]],
+      easing: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       fromRect: Requireable[InferProps[Height]],
-      onClose: Requireable[js.Function1[/* repeated */ _, _]],
-      onDismiss: Requireable[js.Function1[/* repeated */ _, _]],
+      onClose: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      onDismiss: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       placement: Requireable[String],
-      popoverStyle: Requireable[_],
+      popoverStyle: Requireable[js.Any],
       visible: Requireable[Boolean]
     ): ArrowSize = {
       val __obj = js.Dynamic.literal(arrowSize = arrowSize.asInstanceOf[js.Any], arrowStyle = arrowStyle.asInstanceOf[js.Any], backgroundStyle = backgroundStyle.asInstanceOf[js.Any], contentStyle = contentStyle.asInstanceOf[js.Any], displayArea = displayArea.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], easing = easing.asInstanceOf[js.Any], fromRect = fromRect.asInstanceOf[js.Any], onClose = onClose.asInstanceOf[js.Any], onDismiss = onDismiss.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], popoverStyle = popoverStyle.asInstanceOf[js.Any], visible = visible.asInstanceOf[js.Any])
@@ -75,13 +73,13 @@ object anon {
       def setArrowSize(value: Requireable[InferProps[X]]): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setArrowStyle(value: Requireable[_]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
+      def setArrowStyle(value: Requireable[js.Any]): Self = StObject.set(x, "arrowStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBackgroundStyle(value: Requireable[_]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
+      def setBackgroundStyle(value: Requireable[js.Any]): Self = StObject.set(x, "backgroundStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setContentStyle(value: Requireable[_]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
+      def setContentStyle(value: Requireable[js.Any]): Self = StObject.set(x, "contentStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisplayArea(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "displayArea", value.asInstanceOf[js.Any])
@@ -90,37 +88,36 @@ object anon {
       def setDuration(value: Requireable[Double]): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEasing(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
+      def setEasing(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFromRect(value: Requireable[InferProps[Height]]): Self = StObject.set(x, "fromRect", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClose(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
+      def setOnClose(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onClose", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDismiss(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
+      def setOnDismiss(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onDismiss", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPlacement(value: Requireable[String]): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPopoverStyle(value: Requireable[_]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
+      def setPopoverStyle(value: Requireable[js.Any]): Self = StObject.set(x, "popoverStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setVisible(value: Requireable[Boolean]): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: Validator[js.Function1[/* repeated */ _, _]] = js.native
+    var children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]
   }
   object Children {
     
     @scala.inline
-    def apply(children: Validator[js.Function1[/* repeated */ _, _]]): Children = {
+    def apply(children: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Children = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[Children]
     }
@@ -129,20 +126,19 @@ object anon {
     implicit class ChildrenMutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: Validator[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: Validator[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Requireable[Double] = js.native
+    var height: Requireable[Double]
     
-    var width: Requireable[Double] = js.native
+    var width: Requireable[Double]
     
-    var x: Requireable[Double] = js.native
+    var x: Requireable[Double]
     
-    var y: Requireable[Double] = js.native
+    var y: Requireable[Double]
   }
   object Height {
     
@@ -174,15 +170,14 @@ object anon {
     }
   }
   
-  @js.native
   trait OnPopoverDisplayed extends StObject {
     
-    var onPopoverDisplayed: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
   }
   object OnPopoverDisplayed {
     
     @scala.inline
-    def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ _, _]]): OnPopoverDisplayed = {
+    def apply(onPopoverDisplayed: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): OnPopoverDisplayed = {
       val __obj = js.Dynamic.literal(onPopoverDisplayed = onPopoverDisplayed.asInstanceOf[js.Any])
       __obj.asInstanceOf[OnPopoverDisplayed]
     }
@@ -191,43 +186,42 @@ object anon {
     implicit class OnPopoverDisplayedMutableBuilder[Self <: OnPopoverDisplayed] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
+      def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined std.Partial<react-native-modal-popover.react-native-modal-popover/lib/Popover.PopoverProps> */
-  @js.native
   trait PartialPopoverProps extends StObject {
     
-    var arrowSize: js.UndefOr[Size] = js.native
+    var arrowSize: js.UndefOr[Size] = js.undefined
     
-    var arrowStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var arrowStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var backgroundStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var displayArea: js.UndefOr[Rect] = js.native
+    var displayArea: js.UndefOr[Rect] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.native
+    var easing: js.UndefOr[js.Function1[/* show */ Boolean, js.Function1[/* value */ Double, Double]]] = js.undefined
     
-    var fromRect: js.UndefOr[Rect] = js.native
+    var fromRect: js.UndefOr[Rect] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placement: js.UndefOr[Placement | auto] = js.native
+    var placement: js.UndefOr[Placement | auto] = js.undefined
     
-    var popoverStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var popoverStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.native
+    var supportedOrientations: js.UndefOr[js.Array[Orientation]] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object PartialPopoverProps {
     
@@ -347,12 +341,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Requireable[Double] = js.native
+    var x: Requireable[Double]
     
-    var y: Requireable[Double] = js.native
+    var y: Requireable[Double]
   }
   object X {
     

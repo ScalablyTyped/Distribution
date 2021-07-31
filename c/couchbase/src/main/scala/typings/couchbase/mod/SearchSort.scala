@@ -2,7 +2,6 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("couchbase", "SearchSort")
@@ -15,6 +14,10 @@ class SearchSort () extends StObject {
   def descending(descending: Boolean): this.type = js.native
 }
 object SearchSort {
+  
+  @JSImport("couchbase", "SearchSort")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("couchbase", "SearchSort.FieldSort")
   @js.native
@@ -42,19 +45,15 @@ object SearchSort {
   @js.native
   class ScoreSort () extends SearchSort
   
-  @JSImport("couchbase", "SearchSort.field")
-  @js.native
-  def field(field: String): FieldSort = js.native
+  @scala.inline
+  def field(field: String): FieldSort = ^.asInstanceOf[js.Dynamic].applyDynamic("field")(field.asInstanceOf[js.Any]).asInstanceOf[FieldSort]
   
-  @JSImport("couchbase", "SearchSort.geoDistance")
-  @js.native
-  def geoDistance(field: String, lat: Double, lon: Double): GeoDistanceSort = js.native
+  @scala.inline
+  def geoDistance(field: String, lat: Double, lon: Double): GeoDistanceSort = (^.asInstanceOf[js.Dynamic].applyDynamic("geoDistance")(field.asInstanceOf[js.Any], lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[GeoDistanceSort]
   
-  @JSImport("couchbase", "SearchSort.id")
-  @js.native
-  def id(): IdSort = js.native
+  @scala.inline
+  def id(): IdSort = ^.asInstanceOf[js.Dynamic].applyDynamic("id")().asInstanceOf[IdSort]
   
-  @JSImport("couchbase", "SearchSort.score")
-  @js.native
-  def score(): ScoreSort = js.native
+  @scala.inline
+  def score(): ScoreSort = ^.asInstanceOf[js.Dynamic].applyDynamic("score")().asInstanceOf[ScoreSort]
 }

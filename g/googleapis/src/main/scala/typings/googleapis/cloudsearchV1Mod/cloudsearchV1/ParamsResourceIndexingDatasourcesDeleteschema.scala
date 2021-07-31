@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceIndexingDatasourcesDeleteschema extends StandardParameters {
+trait ParamsResourceIndexingDatasourcesDeleteschema
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If set, the request will enable debugging features of Cloud Search. Only
     * turn on this field, if asked by Google to help with debugging.
     */
   @JSName("debugOptions.enableDebugging")
-  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.native
+  var debugOptionsDotenableDebugging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the data source to delete Schema.  Format:
     * datasources/{source_id}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceIndexingDatasourcesDeleteschema {
   

@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsumerDisclosure extends StObject {
   
   /**
     * The GUID of the account associated with the consumer disclosure.
     */
-  var accountEsignId: js.UndefOr[String] = js.native
+  var accountEsignId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the customer can withdraw their consent to the consumer disclosure when they decline to sign documents.
     * If these recipients sign documents sent to them from your account in the future, they will be required to agree to the terms in the disclosure. The default value is **false**.
     * **Note**: Only Admin users can change this setting.
     */
-  var allowCDWithdraw: js.UndefOr[String] = js.native
+  var allowCDWithdraw: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `allowCDWithdraw` property is editable.
@@ -26,14 +24,14 @@ trait ConsumerDisclosure extends StObject {
     */
   var allowCDWithdrawMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If the customer needs to change their email address, this is the email address to which they should the change request.
     *
     * Maximum length: 100 characters.
     */
-  var changeEmail: js.UndefOr[String] = js.native
+  var changeEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Other information about the requirements for the user to change their email address.
@@ -44,7 +42,7 @@ trait ConsumerDisclosure extends StObject {
     *
     * `We do not require any other information from you to change your email address.`
     */
-  var changeEmailOther: js.UndefOr[String] = js.native
+  var changeEmailOther: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the company name used in the disclosure. The default value is the account name.
@@ -56,12 +54,12 @@ trait ConsumerDisclosure extends StObject {
     * **Note**: This substitution only works if you use the default legal disclosure or if you apply the `companyName` to the merge fields in a custom ERSD.
     * You must also set the value of the `useBrand` property to **true**.
     */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number of the company associated with the consumer disclosure, as a free-formatted string.
     */
-  var companyPhone: js.UndefOr[String] = js.native
+  var companyPhone: js.UndefOr[String] = js.undefined
   
   /**
     * The cost per page if the customer requests paper copies.
@@ -70,7 +68,7 @@ trait ConsumerDisclosure extends StObject {
     *
     * `0.0000`
     */
-  var copyCostPerPage: js.UndefOr[String] = js.native
+  var copyCostPerPage: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the fee collection method for cases in which the customer requires paper copies of the document.
@@ -81,30 +79,30 @@ trait ConsumerDisclosure extends StObject {
     *
     * `We will bill you for any fees at that time, if any.`
     */
-  var copyFeeCollectionMethod: js.UndefOr[String] = js.native
+  var copyFeeCollectionMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The email address to which the customer should send a request for copies of a document.
     *
     * Maximum length: 100 characters.
     */
-  var copyRequestEmail: js.UndefOr[String] = js.native
+  var copyRequestEmail: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the consumer disclosure is a custom disclosure. The default is **false**.
     */
-  var custom: js.UndefOr[String] = js.native
+  var custom: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true** (default), indicates that eSign is enabled.
     */
-  var enableEsign: js.UndefOr[String] = js.native
+  var enableEsign: js.UndefOr[String] = js.undefined
   
   /**
     * The final, assembled text of the Electronic Record and Signature Disclosure that includes the appropriate `companyName` and other specifics.
     * It also includes the HTML tags used for formatting.
     */
-  var esignAgreement: js.UndefOr[String] = js.native
+  var esignAgreement: js.UndefOr[String] = js.undefined
   
   /**
     * The template for the Electronic Record and Signature Disclosure, which contains placeholders for information such as the `companyName`.
@@ -112,7 +110,7 @@ trait ConsumerDisclosure extends StObject {
     *
     * **Note**: If you are switching to or updating a custom disclosure, you can edit both the text and the HTML formatting.
     */
-  var esignText: js.UndefOr[String] = js.native
+  var esignText: js.UndefOr[String] = js.undefined
   
   /**
     * The code for the language version of the disclosure. The following languages are supported:
@@ -163,20 +161,20 @@ trait ConsumerDisclosure extends StObject {
     *
     * Additionally, you can automatically detect the browser language being used by the viewer and display the disclosure in that language by setting the value to `browser`.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the  recipient must agree to the consumer disclosure. The value of this property is read only. It is calculated based on the account setting
     * `consumerDisclosureFrequency` and the user's actions.
     */
-  var mustAgreeToEsign: js.UndefOr[String] = js.native
+  var mustAgreeToEsign: js.UndefOr[String] = js.undefined
   
   /**
     * **Deprecated**.
     *
     * The `pdfId` property in the consumer_disclosure PUT request is deprecated. For security reasons going forward, any value provided in the request packet must be ignored.
     */
-  var pdfId: js.UndefOr[String] = js.native
+  var pdfId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that the company name in the signing brand is used for the disclosure. Whenever an envelope is sent from the account that uses a
@@ -186,12 +184,12 @@ trait ConsumerDisclosure extends StObject {
     *
     * **Note**: This substitution only works if you use the default legal disclosure or if you apply the `companyName` to the merge fields in a custom ERSD.
     */
-  var useBrand: js.UndefOr[String] = js.native
+  var useBrand: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, specifies that recipients in the same account as the sender must agree to eSign an Electronic Record and Signature Disclosure Statement.
     */
-  var useConsumerDisclosureWithinAccount: js.UndefOr[String] = js.native
+  var useConsumerDisclosureWithinAccount: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `useConsumerDisclosureWithinAccount` property is editable.
@@ -199,57 +197,57 @@ trait ConsumerDisclosure extends StObject {
     */
   var useConsumerDisclosureWithinAccountMetadata: js.UndefOr[
     /* Metadata that indicates whether a property is editable and describes setting-specific options. */ SettingsMetadata
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Contains the first address line of the postal address to which a customer can send a consent withdrawal notification.
     *
     * Maximum length: 100 characters.
     */
-  var withdrawAddressLine1: js.UndefOr[String] = js.native
+  var withdrawAddressLine1: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the second address line of the postal address to which a customer can send a consent withdrawal notification.
     *
     * Maximum length: 100 characters.
     */
-  var withdrawAddressLine2: js.UndefOr[String] = js.native
+  var withdrawAddressLine2: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true** (default), indicates that the customer can withdraw consent by email.
     */
-  var withdrawByEmail: js.UndefOr[String] = js.native
+  var withdrawByEmail: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the customer can withdraw consent by postal mail. The default is **false**.
     */
-  var withdrawByMail: js.UndefOr[String] = js.native
+  var withdrawByMail: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, indicates that the customer can withdraw consent by phone. The default is **false**.
     */
-  var withdrawByPhone: js.UndefOr[String] = js.native
+  var withdrawByPhone: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the city of the postal address to which a customer can send a consent withdrawal notification.
     *
     * Maximum length: 50 characters.
     */
-  var withdrawCity: js.UndefOr[String] = js.native
+  var withdrawCity: js.UndefOr[String] = js.undefined
   
   /**
     * Text indicating the consequences of withdrawing consent.
     *
     * Maximum length: 255 characters.
     */
-  var withdrawConsequences: js.UndefOr[String] = js.native
+  var withdrawConsequences: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the email address to which a customer can send a consent withdrawal notification.
     *
     * Maximum length: 100 characters.
     */
-  var withdrawEmail: js.UndefOr[String] = js.native
+  var withdrawEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Contains any other information needed to withdraw consent.
@@ -260,28 +258,28 @@ trait ConsumerDisclosure extends StObject {
     *
     * `We do not need any other information from you to withdraw consent.`
     */
-  var withdrawOther: js.UndefOr[String] = js.native
+  var withdrawOther: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the phone number that a customer can call to register consent withdrawal notification as a free-formatted string.
     *
     * Maximum length: 20 characters.
     */
-  var withdrawPhone: js.UndefOr[String] = js.native
+  var withdrawPhone: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the postal code of the postal address to which a customer can send a consent withdrawal notification.
     *
     * Maximum length: 20 characters.
     */
-  var withdrawPostalCode: js.UndefOr[String] = js.native
+  var withdrawPostalCode: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the state of the postal address to which a customer can send a consent withdrawal notification.
     *
     * Example: `PA`
     */
-  var withdrawState: js.UndefOr[String] = js.native
+  var withdrawState: js.UndefOr[String] = js.undefined
 }
 object ConsumerDisclosure {
   

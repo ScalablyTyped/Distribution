@@ -4,24 +4,23 @@ import typings.awsSdkClientLambdaNode.invokeAsyncExceptionsUnionMod.InvokeAsyncE
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRequestContentExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRequestContentExceptionDetails> * / any */ @js.native
-  trait InvalidRequestContentException
-    extends InvokeAsyncExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRequestContentExceptionDetails> * / any */ trait InvalidRequestContentException
+    extends StObject
+       with InvokeAsyncExceptionsUnion
        with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException
   }
   object InvalidRequestContentException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException): InvalidRequestContentException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRequestContentException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRequestContentException")
       __obj.asInstanceOf[InvalidRequestContentException]
     }
     
@@ -33,18 +32,17 @@ object typesInvalidRequestContentExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRequestContentExceptionDetails extends StObject {
     
     /**
       * <p>The exception type.</p>
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The exception message.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidRequestContentExceptionDetails {
     

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDatabaseDdlRequest extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait UpdateDatabaseDdlRequest extends StObject {
     * and must be a valid identifier: `a-z*`. Note that automatically-generated operation IDs always begin with an underscore. If the named operation already exists, UpdateDatabaseDdl
     * returns `ALREADY_EXISTS`.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /** Required. DDL statements to be applied to the database. */
-  var statements: js.UndefOr[js.Array[String]] = js.native
+  var statements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object UpdateDatabaseDdlRequest {
   

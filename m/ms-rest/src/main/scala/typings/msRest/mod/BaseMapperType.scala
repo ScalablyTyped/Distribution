@@ -2,13 +2,11 @@ package typings.msRest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseMapperType extends StObject {
   
-  var name: MapperType = js.native
+  var name: MapperType
 }
 object BaseMapperType {
   

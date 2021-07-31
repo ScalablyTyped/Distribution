@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCredentials extends StObject {
   
   /**
     * Temporary key allowing access to the Amazon GameLift S3 account.
     */
-  var AccessKeyId: js.UndefOr[NonEmptyString] = js.native
+  var AccessKeyId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Temporary secret key allowing access to the Amazon GameLift S3 account.
     */
-  var SecretAccessKey: js.UndefOr[NonEmptyString] = js.native
+  var SecretAccessKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Token used to associate a specific build ID with the files uploaded using these credentials.
     */
-  var SessionToken: js.UndefOr[NonEmptyString] = js.native
+  var SessionToken: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsCredentials {
   

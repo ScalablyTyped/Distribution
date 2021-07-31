@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalinventoryCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** Local inventory of the product. */
-  var localInventory: js.UndefOr[LocalInventory] = js.native
+  var localInventory: js.UndefOr[LocalInventory] = js.undefined
   
   /** The ID of the managing account. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Method of the batch request entry. Acceptable values are: - "`insert`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The ID of the product for which to update local inventory. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object LocalinventoryCustomBatchRequestEntry {
   

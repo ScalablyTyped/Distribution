@@ -2,135 +2,133 @@ package typings.stylableCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attr extends StObject {
   
-  var attr: Boolean = js.native
+  var attr: Boolean
   
-  var blur: Boolean = js.native
+  var blur: Boolean
   
-  var brightness: Boolean = js.native
+  var brightness: Boolean
   
-  var calc: Boolean = js.native
+  var calc: Boolean
   
-  var circle: Boolean = js.native
+  var circle: Boolean
   
-  var constant: Boolean = js.native
+  var constant: Boolean
   
-  var contrast: Boolean = js.native
+  var contrast: Boolean
   
-  var counter: Boolean = js.native
+  var counter: Boolean
   
-  var counters: Boolean = js.native
+  var counters: Boolean
   
-  var `cubic-bezier`: Boolean = js.native
+  var `cubic-bezier`: Boolean
   
-  var `drop-shadow`: Boolean = js.native
+  var `drop-shadow`: Boolean
   
-  var ellipse: Boolean = js.native
+  var ellipse: Boolean
   
-  var env: Boolean = js.native
+  var env: Boolean
   
-  var format: Boolean = js.native
+  var format: Boolean
   
-  var grayscale: Boolean = js.native
+  var grayscale: Boolean
   
-  var hsl: Boolean = js.native
+  var hsl: Boolean
   
-  var hsla: Boolean = js.native
+  var hsla: Boolean
   
-  var `hue-rotate`: Boolean = js.native
+  var `hue-rotate`: Boolean
   
-  var hwb: Boolean = js.native
+  var hwb: Boolean
   
-  var image: Boolean = js.native
+  var image: Boolean
   
-  var inset: Boolean = js.native
+  var inset: Boolean
   
-  var invert: Boolean = js.native
+  var invert: Boolean
   
-  var `linear-gradient`: Boolean = js.native
+  var `linear-gradient`: Boolean
   
-  var local: Boolean = js.native
+  var local: Boolean
   
-  var matrix: Boolean = js.native
+  var matrix: Boolean
   
-  var matrix3d: Boolean = js.native
+  var matrix3d: Boolean
   
-  var minmax: Boolean = js.native
+  var minmax: Boolean
   
-  var opacity: Boolean = js.native
+  var opacity: Boolean
   
-  var paint: Boolean = js.native
+  var paint: Boolean
   
-  var path: Boolean = js.native
+  var path: Boolean
   
-  var perspective: Boolean = js.native
+  var perspective: Boolean
   
-  var polygon: Boolean = js.native
+  var polygon: Boolean
   
-  var `radial-gradient`: Boolean = js.native
+  var `radial-gradient`: Boolean
   
-  var rect: Boolean = js.native
+  var rect: Boolean
   
-  var repeat: Boolean = js.native
+  var repeat: Boolean
   
-  var `repeating-linear-gradient`: Boolean = js.native
+  var `repeating-linear-gradient`: Boolean
   
-  var `repeating-radial-gradient`: Boolean = js.native
+  var `repeating-radial-gradient`: Boolean
   
-  var rgb: Boolean = js.native
+  var rgb: Boolean
   
-  var rgba: Boolean = js.native
+  var rgba: Boolean
   
-  var rotate: Boolean = js.native
+  var rotate: Boolean
   
-  var rotate3d: Boolean = js.native
+  var rotate3d: Boolean
   
-  var rotateX: Boolean = js.native
+  var rotateX: Boolean
   
-  var rotateY: Boolean = js.native
+  var rotateY: Boolean
   
-  var rotateZ: Boolean = js.native
+  var rotateZ: Boolean
   
-  var saturate: Boolean = js.native
+  var saturate: Boolean
   
-  var scale: Boolean = js.native
+  var scale: Boolean
   
-  var scale3d: Boolean = js.native
+  var scale3d: Boolean
   
-  var scaleX: Boolean = js.native
+  var scaleX: Boolean
   
-  var scaleY: Boolean = js.native
+  var scaleY: Boolean
   
-  var scaleZ: Boolean = js.native
+  var scaleZ: Boolean
   
-  var sepia: Boolean = js.native
+  var sepia: Boolean
   
-  var skew: Boolean = js.native
+  var skew: Boolean
   
-  var skewX: Boolean = js.native
+  var skewX: Boolean
   
-  var skewY: Boolean = js.native
+  var skewY: Boolean
   
-  var symbols: Boolean = js.native
+  var symbols: Boolean
   
-  var translate: Boolean = js.native
+  var translate: Boolean
   
-  var translate3d: Boolean = js.native
+  var translate3d: Boolean
   
-  var translateX: Boolean = js.native
+  var translateX: Boolean
   
-  var translateY: Boolean = js.native
+  var translateY: Boolean
   
-  var translateZ: Boolean = js.native
+  var translateZ: Boolean
   
-  var url: Boolean = js.native
+  var url: Boolean
   
-  var `var`: Boolean = js.native
+  var `var`: Boolean
 }
 object Attr {
   

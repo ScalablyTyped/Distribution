@@ -2,19 +2,17 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRunCoverage extends StObject {
   
-  var lastError: String = js.native
+  var lastError: String
   
-  var modules: js.Array[ModuleCoverage] = js.native
+  var modules: js.Array[ModuleCoverage]
   
-  var state: String = js.native
+  var state: String
   
-  var testRun: ShallowReference = js.native
+  var testRun: ShallowReference
 }
 object TestRunCoverage {
   

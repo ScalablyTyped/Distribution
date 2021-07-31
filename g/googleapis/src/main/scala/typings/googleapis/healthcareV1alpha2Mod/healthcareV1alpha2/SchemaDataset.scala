@@ -2,7 +2,6 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * include multiple modalities of healthcare data, such as electronic medical
   * records or medical imaging data.
   */
-@js.native
 trait SchemaDataset extends StObject {
   
   /**
     * Output only. Resource name of the dataset, of the form
     * `projects/{project_id}/locations/{location_id}/datasets/{dataset_id}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The default timezone used by this dataset. Must be a either a valid IANA
@@ -26,7 +24,7 @@ trait SchemaDataset extends StObject {
     * defaults to UTC. This is used for parsing times in resources (e.g., HL7
     * messages) where no explicit timezone is specified.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
 }
 object SchemaDataset {
   

@@ -3,14 +3,12 @@ package typings.semanticUiShape.anon
 import typings.semanticUiShape.SemanticUI.Shape.SelectorSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-shape.SemanticUI.ShapeSettings._Impl, 'selector'> */
-@js.native
 trait PickImplselector extends StObject {
   
-  var selector: SelectorSettings = js.native
+  var selector: SelectorSettings
 }
 object PickImplselector {
   

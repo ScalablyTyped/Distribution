@@ -5,13 +5,11 @@ import typings.antvComponent.groupComponentMod.GroupComponentCtor
 import typings.antvComponent.typesMod.GroupComponentCfg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Component[C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */] extends StObject {
   
-  var component: GroupComponentCtor[C, CT] = js.native
+  var component: GroupComponentCtor[C, CT]
 }
 object Component {
   
@@ -22,7 +20,7 @@ object Component {
   }
   
   @scala.inline
-  implicit class ComponentMutableBuilder[Self <: Component[_, _], C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */] (val x: Self with (Component[C, CT])) extends AnyVal {
+  implicit class ComponentMutableBuilder[Self <: Component[?, ?], C /* <: GroupComponentCfg */, CT /* <: GroupComponent[GroupComponentCfg] */] (val x: Self & (Component[C, CT])) extends AnyVal {
     
     @scala.inline
     def setComponent(value: GroupComponentCtor[C, CT]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

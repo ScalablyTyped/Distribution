@@ -2,19 +2,17 @@ package typings.kolite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Opacity extends StObject {
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var segments: js.UndefOr[Double] = js.native
+    var segments: js.UndefOr[Double] = js.undefined
     
-    var steps: js.UndefOr[Double] = js.native
+    var steps: js.UndefOr[Double] = js.undefined
   }
   object Opacity {
     

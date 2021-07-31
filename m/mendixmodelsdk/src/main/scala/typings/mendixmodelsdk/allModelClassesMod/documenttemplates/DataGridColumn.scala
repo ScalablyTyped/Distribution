@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object DataGridColumn {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn]
   
   /**
     * Creates and returns a new DataGridColumn instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object DataGridColumn {
     * of the parent DataGrid element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGrid): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.DataGridColumn.structureTypeName")

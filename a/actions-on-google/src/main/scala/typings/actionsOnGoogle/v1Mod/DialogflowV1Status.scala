@@ -2,17 +2,15 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1Status extends StObject {
   
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
-  var errorType: js.UndefOr[String] = js.native
+  var errorType: js.UndefOr[String] = js.undefined
   
-  var webhookTimedOut: js.UndefOr[Boolean] = js.native
+  var webhookTimedOut: js.UndefOr[Boolean] = js.undefined
 }
 object DialogflowV1Status {
   

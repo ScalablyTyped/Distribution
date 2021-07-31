@@ -5,15 +5,13 @@ import typings.atom.atomStrings.hard
 import typings.atom.atomStrings.soft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `19` extends StObject {
   
-  var scopeDescriptor: typings.atom.mod.ScopeDescriptor = js.native
+  var scopeDescriptor: typings.atom.mod.ScopeDescriptor
   
-  var value: auto | soft | hard = js.native
+  var value: auto | soft | hard
 }
 object `19` {
   

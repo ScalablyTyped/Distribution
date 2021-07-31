@@ -2,7 +2,6 @@ package typings.jointjs.mod.g
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Ellipse")
@@ -25,9 +24,9 @@ class Ellipse protected () extends StObject {
   def equals(ellipse: Ellipse): Boolean = js.native
   
   def inflate(): this.type = js.native
-  def inflate(dx: js.UndefOr[scala.Nothing], dy: Double): this.type = js.native
   def inflate(dx: Double): this.type = js.native
   def inflate(dx: Double, dy: Double): this.type = js.native
+  def inflate(dx: Unit, dy: Double): this.type = js.native
   
   def intersectionWithLine(l: Line): js.Array[Point] | Null = js.native
   
@@ -44,8 +43,11 @@ class Ellipse protected () extends StObject {
 }
 object Ellipse {
   
-  /* static member */
-  @JSImport("jointjs", "g.Ellipse.fromRect")
+  @JSImport("jointjs", "g.Ellipse")
   @js.native
-  def fromRect(rect: PlainRect): Ellipse = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def fromRect(rect: PlainRect): Ellipse = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRect")(rect.asInstanceOf[js.Any]).asInstanceOf[Ellipse]
 }

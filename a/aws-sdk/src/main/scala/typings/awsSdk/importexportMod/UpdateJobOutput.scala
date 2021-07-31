@@ -2,17 +2,15 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobOutput extends StObject {
   
-  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.native
+  var ArtifactList: js.UndefOr[typings.awsSdk.importexportMod.ArtifactList] = js.undefined
   
-  var Success: js.UndefOr[typings.awsSdk.importexportMod.Success] = js.native
+  var Success: js.UndefOr[typings.awsSdk.importexportMod.Success] = js.undefined
   
-  var WarningMessage: js.UndefOr[typings.awsSdk.importexportMod.WarningMessage] = js.native
+  var WarningMessage: js.UndefOr[typings.awsSdk.importexportMod.WarningMessage] = js.undefined
 }
 object UpdateJobOutput {
   

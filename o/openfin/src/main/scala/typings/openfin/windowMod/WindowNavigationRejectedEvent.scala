@@ -3,15 +3,15 @@ package typings.openfin.windowMod
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowNavigationRejectedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowNavigationRejectedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var sourceName: js.UndefOr[String] = js.native
+  var sourceName: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object WindowNavigationRejectedEvent {
   
@@ -23,7 +23,7 @@ object WindowNavigationRejectedEvent {
   }
   
   @scala.inline
-  implicit class WindowNavigationRejectedEventMutableBuilder[Self <: WindowNavigationRejectedEvent[_, _], Topic, Type] (val x: Self with (WindowNavigationRejectedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowNavigationRejectedEventMutableBuilder[Self <: WindowNavigationRejectedEvent[?, ?], Topic, Type] (val x: Self & (WindowNavigationRejectedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setSourceName(value: String): Self = StObject.set(x, "sourceName", value.asInstanceOf[js.Any])

@@ -6,14 +6,12 @@ import typings.creditCardType.typesMod.CreditCardTypeCardBrandId
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("credit-card-type", JSImport.Namespace)
-  @js.native
-  def apply(cardNumber: String): js.Array[CreditCardType] = js.native
+  @scala.inline
+  def apply(cardNumber: String): js.Array[CreditCardType] = ^.asInstanceOf[js.Dynamic].apply(cardNumber.asInstanceOf[js.Any]).asInstanceOf[js.Array[CreditCardType]]
   
   @JSImport("credit-card-type", JSImport.Namespace)
   @js.native

@@ -2,15 +2,13 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionEnd extends StObject {
   
-  var selectionEnd: Double = js.native
+  var selectionEnd: Double
   
-  var selectionStart: Double = js.native
+  var selectionStart: Double
 }
 object SelectionEnd {
   

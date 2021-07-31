@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookApplication extends Entity {
+trait WorkbookApplication
+  extends StObject
+     with Entity {
   
   // Returns the calculation mode used in the workbook. Possible values are: Automatic, AutomaticExceptTables, Manual.
-  var calculationMode: js.UndefOr[String] = js.native
+  var calculationMode: js.UndefOr[String] = js.undefined
 }
 object WorkbookApplication {
   

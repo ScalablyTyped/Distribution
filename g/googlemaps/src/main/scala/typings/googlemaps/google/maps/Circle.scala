@@ -4,13 +4,13 @@ import typings.googlemaps.google.maps.places._LocationBias
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A circle on the Earth's surface; also known as a "spherical cap". */
 @js.native
 trait Circle
-  extends MVCObject
+  extends StObject
+     with MVCObject
      with _LocationBias {
   
   /** Gets the LatLngBounds of this Circle. */

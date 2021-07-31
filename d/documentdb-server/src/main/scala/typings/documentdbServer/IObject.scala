@@ -2,7 +2,6 @@ package typings.documentdbServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which are shortcuts to getContext().getRequest() and getContext().getResponse().
   */
 @js.native
-trait IObject extends ICollection {
+trait IObject
+  extends StObject
+     with ICollection {
   
   /** Alias for getContext().getRequest() */
   var request: IRequest = js.native

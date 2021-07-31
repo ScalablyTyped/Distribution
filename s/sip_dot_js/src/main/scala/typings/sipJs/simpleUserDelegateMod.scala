@@ -3,12 +3,10 @@ package typings.sipJs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleUserDelegateMod {
   
-  @js.native
   trait SimpleUserDelegate extends StObject {
     
     /**
@@ -16,35 +14,35 @@ object simpleUserDelegateMod {
       * @remarks
       * Callback for handling establishment of a new Session.
       */
-    var onCallAnswered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCallAnswered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when a call is created.
       * @remarks
       * Callback for handling the creation of a new Session.
       */
-    var onCallCreated: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCallCreated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when a call receives an incoming DTMF tone.
       * @remarks
       * Callback for handling an incoming INFO request with content type application/dtmf-relay.
       */
-    var onCallDTMFReceived: js.UndefOr[js.Function2[/* tone */ String, /* duration */ Double, Unit]] = js.native
+    var onCallDTMFReceived: js.UndefOr[js.Function2[/* tone */ String, /* duration */ Double, Unit]] = js.undefined
     
     /**
       * Called when a call is hung up.
       * @remarks
       * Callback for handling termination of a Session.
       */
-    var onCallHangup: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCallHangup: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when a call is put on hold or taken off hold.
       * @remarks
       * Callback for handling re-INVITE responses.
       */
-    var onCallHold: js.UndefOr[js.Function1[/* held */ Boolean, Unit]] = js.native
+    var onCallHold: js.UndefOr[js.Function1[/* held */ Boolean, Unit]] = js.undefined
     
     /**
       * Called when a call is received.
@@ -52,7 +50,7 @@ object simpleUserDelegateMod {
       * Callback for handling incoming INVITE requests.
       * The callback must either accept or reject the incoming call by calling `answer()` or `decline()` respectively.
       */
-    var onCallReceived: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCallReceived: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called upon receiving a message.
@@ -60,19 +58,19 @@ object simpleUserDelegateMod {
       * Callback for handling incoming MESSAGE requests.
       * @param message - The message received.
       */
-    var onMessageReceived: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var onMessageReceived: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
     /**
       * Called when user is registered to received calls.
       */
-    var onRegistered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRegistered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when user is connected to server.
       * @remarks
       * Callback for handling user becomes connected.
       */
-    var onServerConnect: js.UndefOr[js.Function0[Unit]] = js.native
+    var onServerConnect: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called when user is no longer connected.
@@ -81,12 +79,12 @@ object simpleUserDelegateMod {
       *
       * @param error - An Error if server caused the disconnect. Otherwise undefined.
       */
-    var onServerDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.native
+    var onServerDisconnect: js.UndefOr[js.Function1[/* error */ js.UndefOr[Error], Unit]] = js.undefined
     
     /**
       * Called when user is no longer registered to received calls.
       */
-    var onUnregistered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUnregistered: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SimpleUserDelegate {
     

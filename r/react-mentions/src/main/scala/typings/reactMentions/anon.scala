@@ -2,15 +2,13 @@ package typings.reactMentions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Target extends StObject {
     
-    var target: Value = js.native
+    var target: Value
   }
   object Target {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

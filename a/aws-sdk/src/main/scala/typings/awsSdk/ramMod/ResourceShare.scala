@@ -2,61 +2,59 @@ package typings.awsSdk.ramMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceShare extends StObject {
   
   /**
     * Indicates whether principals outside your AWS organization can be associated with a resource share.
     */
-  var allowExternalPrincipals: js.UndefOr[Boolean] = js.native
+  var allowExternalPrincipals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time when the resource share was created.
     */
-  var creationTime: js.UndefOr[DateTime] = js.native
+  var creationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates how the resource share was created. Possible values include:    CREATED_FROM_POLICY - Indicates that the resource share was created from an AWS Identity and Access Management (AWS IAM) policy attached to a resource. These resource shares are visible only to the AWS account that created it. They cannot be modified in AWS RAM.    PROMOTING_TO_STANDARD - The resource share is in the process of being promoted. For more information, see PromoteResourceShareCreatedFromPolicy.    STANDARD - Indicates that the resource share was created in AWS RAM using the console or APIs. These resource shares are visible to all principals. They can be modified in AWS RAM.  
     */
-  var featureSet: js.UndefOr[ResourceShareFeatureSet] = js.native
+  var featureSet: js.UndefOr[ResourceShareFeatureSet] = js.undefined
   
   /**
     * The time when the resource share was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[DateTime] = js.native
+  var lastUpdatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name of the resource share.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the AWS account that owns the resource share.
     */
-  var owningAccountId: js.UndefOr[String] = js.native
+  var owningAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource share.
     */
-  var resourceShareArn: js.UndefOr[String] = js.native
+  var resourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the resource share.
     */
-  var status: js.UndefOr[ResourceShareStatus] = js.native
+  var status: js.UndefOr[ResourceShareStatus] = js.undefined
   
   /**
     * A message about the status of the resource share.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The tags for the resource share.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object ResourceShare {
   

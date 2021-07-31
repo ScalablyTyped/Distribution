@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeConfiguration extends StObject {
   
   /**
     * Color properties that apply to chart data colors.
     */
-  var DataColorPalette: js.UndefOr[typings.awsSdk.quicksightMod.DataColorPalette] = js.native
+  var DataColorPalette: js.UndefOr[typings.awsSdk.quicksightMod.DataColorPalette] = js.undefined
   
   /**
     * Display options related to sheets.
     */
-  var Sheet: js.UndefOr[SheetStyle] = js.native
+  var Sheet: js.UndefOr[SheetStyle] = js.undefined
   
   /**
     * Color properties that apply to the UI and to charts, excluding the colors that apply to data. 
     */
-  var UIColorPalette: js.UndefOr[typings.awsSdk.quicksightMod.UIColorPalette] = js.native
+  var UIColorPalette: js.UndefOr[typings.awsSdk.quicksightMod.UIColorPalette] = js.undefined
 }
 object ThemeConfiguration {
   

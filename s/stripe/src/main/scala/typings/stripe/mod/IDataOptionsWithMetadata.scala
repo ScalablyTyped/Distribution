@@ -2,11 +2,11 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDataOptionsWithMetadata extends IDataOptions {
+trait IDataOptionsWithMetadata
+  extends StObject
+     with IDataOptions {
   
   /**
     * A set of key/value pairs that you can attach to an object. It can be
@@ -14,7 +14,7 @@ trait IDataOptionsWithMetadata extends IDataOptions {
     * format. You can unset an individual key by setting its value to null and
     * then saving. To clear all keys, set metadata to null, then save.
     */
-  var metadata: js.UndefOr[IOptionsMetadata] = js.native
+  var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
 }
 object IDataOptionsWithMetadata {
   

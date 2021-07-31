@@ -2,23 +2,21 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Property extends StObject {
   
   @JSName("ADODB.Property_typekey")
-  var ADODBDotProperty_typekey: Property = js.native
+  var ADODBDotProperty_typekey: Property
   
   /** Sum of one or more of the values in the **PropertyAttributesEnum** enum */
-  var Attributes: PropertyAttributesEnum = js.native
+  var Attributes: PropertyAttributesEnum
   
-  val Name: String = js.native
+  val Name: String
   
-  val Type: DataTypeEnum = js.native
+  val Type: DataTypeEnum
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object Property {
   

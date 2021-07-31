@@ -4,19 +4,21 @@ import typings.node.childProcessMod.ChildProcess
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("imagemagick", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object convert {
     
-    @JSImport("imagemagick", "convert")
-    @js.native
-    def apply(args: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = js.native
-    @JSImport("imagemagick", "convert")
-    @js.native
-    def apply(args: js.Any, timeout: Double, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = js.native
+    @scala.inline
+    def apply(args: js.Any, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    @scala.inline
+    def apply(args: js.Any, timeout: Double, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    
     @JSImport("imagemagick", "convert")
     @js.native
     val ^ : js.Any = js.native
@@ -28,18 +30,16 @@ object mod {
     def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("imagemagick", "crop")
-  @js.native
-  def crop(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = js.native
+  @scala.inline
+  def crop(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("crop")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
   object identify {
     
-    @JSImport("imagemagick", "identify")
-    @js.native
-    def apply(path: String, callback: js.Function2[/* err */ Error, /* features */ Features, Unit]): ChildProcess = js.native
-    @JSImport("imagemagick", "identify")
-    @js.native
-    def apply(path: js.Array[_], callback: js.Function2[/* err */ Error, /* result */ String, Unit]): ChildProcess = js.native
+    @scala.inline
+    def apply(path: String, callback: js.Function2[/* err */ Error, /* features */ Features, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    @scala.inline
+    def apply(path: js.Array[js.Any], callback: js.Function2[/* err */ Error, /* result */ String, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+    
     @JSImport("imagemagick", "identify")
     @js.native
     val ^ : js.Any = js.native
@@ -51,28 +51,24 @@ object mod {
     def path_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("path")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("imagemagick", "readMetadata")
-  @js.native
-  def readMetadata(path: String, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = js.native
+  @scala.inline
+  def readMetadata(path: String, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("readMetadata")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @JSImport("imagemagick", "resize")
-  @js.native
-  def resize(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = js.native
+  @scala.inline
+  def resize(options: Options, callback: js.Function2[/* err */ Error, /* result */ js.Any, Unit]): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("resize")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
   
-  @JSImport("imagemagick", "resizeArgs")
-  @js.native
-  def resizeArgs(options: Options): ResizeArgs_ = js.native
+  @scala.inline
+  def resizeArgs(options: Options): ResizeArgs_ = ^.asInstanceOf[js.Dynamic].applyDynamic("resizeArgs")(options.asInstanceOf[js.Any]).asInstanceOf[ResizeArgs_]
   
-  @js.native
   trait Features extends StObject {
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Features {
     
@@ -111,52 +107,51 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     //: false,
-    var colorspace: js.UndefOr[js.Any] = js.native
+    var colorspace: js.UndefOr[js.Any] = js.undefined
     
     //: 0.2,
-    var customArgs: js.UndefOr[js.Array[_]] = js.native
+    var customArgs: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     //: null,
-    var dstPath: js.UndefOr[String] = js.native
+    var dstPath: js.UndefOr[String] = js.undefined
     
     //: true,
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     //: 0.8,
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     //: 0,
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     //: 'jpg',
-    var progressive: js.UndefOr[Boolean] = js.native
+    var progressive: js.UndefOr[Boolean] = js.undefined
     
     //: null,
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     //: 'Lagrange',
-    var sharpening: js.UndefOr[Double] = js.native
+    var sharpening: js.UndefOr[Double] = js.undefined
     
     //: null,
-    var srcData: js.UndefOr[String] = js.native
+    var srcData: js.UndefOr[String] = js.undefined
     
     //: null,
-    var srcFormat: js.UndefOr[String] = js.native
+    var srcFormat: js.UndefOr[String] = js.undefined
     
-    var srcPath: js.UndefOr[String] = js.native
+    var srcPath: js.UndefOr[String] = js.undefined
     
     //: 0,
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
     
     //: [],
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     //: null,
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -176,7 +171,7 @@ object mod {
       def setColorspaceUndefined: Self = StObject.set(x, "colorspace", js.undefined)
       
       @scala.inline
-      def setCustomArgs(value: js.Array[_]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
+      def setCustomArgs(value: js.Array[js.Any]): Self = StObject.set(x, "customArgs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomArgsUndefined: Self = StObject.set(x, "customArgs", js.undefined)
@@ -264,12 +259,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizeArgs_ extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var opt: Options = js.native
+    var opt: Options
   }
   object ResizeArgs_ {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteRecordsRequest extends StObject {
   
   /**
     * A record containing the common measure and dimension attributes shared across all the records in the request. The measure and dimension attributes specified in here will be merged with the measure and dimension attributes in the records object when the data is written into Timestream. 
     */
-  var CommonAttributes: js.UndefOr[Record] = js.native
+  var CommonAttributes: js.UndefOr[Record] = js.undefined
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: ResourceName = js.native
+  var DatabaseName: ResourceName
   
   /**
     * An array of records containing the unique dimension and measure attributes for each time series data point. 
     */
-  var Records: typings.awsSdk.timestreamwriteMod.Records = js.native
+  var Records: typings.awsSdk.timestreamwriteMod.Records
   
   /**
     * The name of the Timesream table.
     */
-  var TableName: ResourceName = js.native
+  var TableName: ResourceName
 }
 object WriteRecordsRequest {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDataSourceRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The credentials QuickSight that uses to connect to your underlying source. Currently, only credentials based on user name and password are supported.
     */
-  var Credentials: js.UndefOr[DataSourceCredentials] = js.native
+  var Credentials: js.UndefOr[DataSourceCredentials] = js.undefined
   
   /**
     * An ID for the data source. This ID is unique per AWS Region for each AWS account. 
     */
-  var DataSourceId: ResourceId = js.native
+  var DataSourceId: ResourceId
   
   /**
     * The parameters that QuickSight uses to connect to your underlying source.
     */
-  var DataSourceParameters: js.UndefOr[typings.awsSdk.quicksightMod.DataSourceParameters] = js.native
+  var DataSourceParameters: js.UndefOr[typings.awsSdk.quicksightMod.DataSourceParameters] = js.undefined
   
   /**
     * A display name for the data source.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * A list of resource permissions on the data source.
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * Secure Socket Layer (SSL) properties that apply when QuickSight connects to your underlying source.
     */
-  var SslProperties: js.UndefOr[typings.awsSdk.quicksightMod.SslProperties] = js.native
+  var SslProperties: js.UndefOr[typings.awsSdk.quicksightMod.SslProperties] = js.undefined
   
   /**
     * Contains a map of the key-value pairs for the resource tag or tags assigned to the data source.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of the data source. Currently, the supported types for this operation are: ATHENA, AURORA, AURORA_POSTGRESQL, MARIADB, MYSQL, POSTGRESQL, PRESTO, REDSHIFT, S3, SNOWFLAKE, SPARK, SQLSERVER, TERADATA. Use ListDataSources to return a list of all data sources.
     */
-  var Type: DataSourceType = js.native
+  var Type: DataSourceType
   
   /**
     * Use this parameter only when you want QuickSight to use a VPC connection when connecting to your underlying source.
     */
-  var VpcConnectionProperties: js.UndefOr[typings.awsSdk.quicksightMod.VpcConnectionProperties] = js.native
+  var VpcConnectionProperties: js.UndefOr[typings.awsSdk.quicksightMod.VpcConnectionProperties] = js.undefined
 }
 object CreateDataSourceRequest {
   

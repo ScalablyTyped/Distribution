@@ -2,19 +2,17 @@ package typings.instabugReactnative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ComponentId extends StObject {
     
-    var componentId: js.Any = js.native
+    var componentId: js.Any
     
-    var componentName: js.Any = js.native
+    var componentName: js.Any
     
-    var passProps: js.Any = js.native
+    var passProps: js.Any
   }
   object ComponentId {
     

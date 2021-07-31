@@ -2,26 +2,46 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserverBaseDescriptor[T /* <: Ractive[T] */]
-  extends ObserverOpts
+  extends StObject
+     with ObserverOpts
      with ObserverDescriptor[T] {
   
   /**
   	 * The observer callback.
   	 */
-  def handler(value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[_] = js.native
+  def handler(value: js.Any, old: js.Any, keypath: String, parts: String*): Unit | js.Promise[js.Any]
   /**
   	 * The observer callback.
   	 */
   @JSName("handler")
-  var handler_Original: ObserverCallback[T] = js.native
+  var handler_Original: ObserverCallback[T]
   
   /**
   	 * Whether or not to use observeOnce when subscribing the observer. Defaults to false.
   	 */
-  var once: js.UndefOr[Boolean] = js.native
+  var once: js.UndefOr[Boolean] = js.undefined
+}
+object ObserverBaseDescriptor {
+  
+  @scala.inline
+  def apply[T /* <: Ractive[T] */](handler: ObserverCallback[T]): ObserverBaseDescriptor[T] = {
+    val __obj = js.Dynamic.literal(handler = handler.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ObserverBaseDescriptor[T]]
+  }
+  
+  @scala.inline
+  implicit class ObserverBaseDescriptorMutableBuilder[Self <: ObserverBaseDescriptor[?], T /* <: Ractive[T] */] (val x: Self & ObserverBaseDescriptor[T]) extends AnyVal {
+    
+    @scala.inline
+    def setHandler(value: ObserverCallback[T]): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnceUndefined: Self = StObject.set(x, "once", js.undefined)
+  }
 }

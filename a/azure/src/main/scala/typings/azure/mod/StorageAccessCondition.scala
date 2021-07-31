@@ -3,19 +3,17 @@ package typings.azure.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageAccessCondition extends StObject {
   
-  var `If-Match`: String = js.native
+  var `If-Match`: String
   
-  var `If-Modified-Since`: Date = js.native
+  var `If-Modified-Since`: Date
   
-  var `If-None-Match`: String = js.native
+  var `If-None-Match`: String
   
-  var `If-Unmodified-Since`: Date = js.native
+  var `If-Unmodified-Since`: Date
 }
 object StorageAccessCondition {
   

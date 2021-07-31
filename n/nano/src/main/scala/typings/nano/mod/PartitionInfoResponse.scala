@@ -3,27 +3,25 @@ package typings.nano.mod
 import typings.nano.anon.External
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://docs.couchdb.org/en/latest/partitioned-dbs/index.html
-@js.native
 trait PartitionInfoResponse extends StObject {
   
   // Database name
-  var db_name: String = js.native
+  var db_name: String
   
   // Document count
-  var doc_count: Double = js.native
+  var doc_count: Double
   
   // Deleted document count
-  var doc_del_count: Double = js.native
+  var doc_del_count: Double
   
   // Partition name
-  var partition: String = js.native
+  var partition: String
   
   // Partition sizes
-  var sizes: External = js.native
+  var sizes: External
 }
 object PartitionInfoResponse {
   

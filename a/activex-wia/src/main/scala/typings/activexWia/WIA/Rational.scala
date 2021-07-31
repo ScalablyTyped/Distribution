@@ -2,27 +2,25 @@ package typings.activexWia.WIA
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Rational object is a container for the rational values found in Exif tags. It is a supported element type of the Vector object and may be created
   * using "WIA.Rational" in a call to CreateObject.
   */
-@js.native
 trait Rational extends StObject {
   
   /** Returns/Sets the Rational Value Denominator */
-  var Denominator: Double = js.native
+  var Denominator: Double
   
   /** Returns/Sets the Rational Value Numerator */
-  var Numerator: Double = js.native
+  var Numerator: Double
   
   /** Returns the Rational Value as a Double */
-  val Value: Double = js.native
+  val Value: Double
   
   @JSName("WIA.Rational_typekey")
-  var WIADotRational_typekey: Rational = js.native
+  var WIADotRational_typekey: Rational
 }
 object Rational {
   

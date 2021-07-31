@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait RangeUnderlineStyle extends StObject
 object RangeUnderlineStyle extends StObject {
   
   @js.native
-  sealed trait double extends RangeUnderlineStyle
+  sealed trait double
+    extends StObject
+       with RangeUnderlineStyle
   
   @js.native
-  sealed trait doubleAccountant extends RangeUnderlineStyle
+  sealed trait doubleAccountant
+    extends StObject
+       with RangeUnderlineStyle
   
   @js.native
-  sealed trait none extends RangeUnderlineStyle
+  sealed trait none
+    extends StObject
+       with RangeUnderlineStyle
   
   @js.native
-  sealed trait single extends RangeUnderlineStyle
+  sealed trait single
+    extends StObject
+       with RangeUnderlineStyle
   
   @js.native
-  sealed trait singleAccountant extends RangeUnderlineStyle
+  sealed trait singleAccountant
+    extends StObject
+       with RangeUnderlineStyle
 }

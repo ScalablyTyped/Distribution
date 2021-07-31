@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcceptProposalRequest extends StObject {
   
   /** The last known client revision number of the proposal. */
-  var proposalRevision: js.UndefOr[String] = js.native
+  var proposalRevision: js.UndefOr[String] = js.undefined
 }
 object AcceptProposalRequest {
   

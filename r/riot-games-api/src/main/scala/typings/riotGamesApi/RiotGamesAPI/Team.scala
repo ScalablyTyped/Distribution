@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,30 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Team {
   
-  @js.native
   trait MatchHistorySummaryDto extends StObject {
     
-    var assists: Double = js.native
+    var assists: Double
     
-    var date: Double = js.native
+    var date: Double
     
-    var deaths: Double = js.native
+    var deaths: Double
     
-    var gameId: Double = js.native
+    var gameId: Double
     
-    var gameMode: String = js.native
+    var gameMode: String
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var kills: Double = js.native
+    var kills: Double
     
-    var mapId: Double = js.native
+    var mapId: Double
     
-    var opposingTeamKills: Double = js.native
+    var opposingTeamKills: Double
     
-    var opposingTeamName: String = js.native
+    var opposingTeamName: String
     
-    var win: Boolean = js.native
+    var win: Boolean
   }
   object MatchHistorySummaryDto {
     
@@ -93,12 +91,11 @@ object Team {
     }
   }
   
-  @js.native
   trait RosterDto extends StObject {
     
-    var memberList: js.Array[TeamMemberInfoDto] = js.native
+    var memberList: js.Array[TeamMemberInfoDto]
     
-    var ownerId: Double = js.native
+    var ownerId: Double
   }
   object RosterDto {
     
@@ -122,36 +119,35 @@ object Team {
     }
   }
   
-  @js.native
   trait TeamDto extends StObject {
     
-    var createDate: Double = js.native
+    var createDate: Double
     
-    var fullId: String = js.native
+    var fullId: String
     
-    var lastGameDate: Double = js.native
+    var lastGameDate: Double
     
-    var lastJoinDate: Double = js.native
+    var lastJoinDate: Double
     
-    var lastJoinedRankedTeamQueueDate: Double = js.native
+    var lastJoinedRankedTeamQueueDate: Double
     
-    var matchHistory: js.Array[MatchHistorySummaryDto] = js.native
+    var matchHistory: js.Array[MatchHistorySummaryDto]
     
-    var modifyDate: Double = js.native
+    var modifyDate: Double
     
-    var name: String = js.native
+    var name: String
     
-    var roster: RosterDto = js.native
+    var roster: RosterDto
     
-    var secondLastJoinDate: Double = js.native
+    var secondLastJoinDate: Double
     
-    var status: String = js.native
+    var status: String
     
-    var tag: String = js.native
+    var tag: String
     
-    var teamStatDetails: js.Array[TeamStatDetailDto] = js.native
+    var teamStatDetails: js.Array[TeamStatDetailDto]
     
-    var thirdLastJoinDate: Double = js.native
+    var thirdLastJoinDate: Double
   }
   object TeamDto {
     
@@ -229,16 +225,15 @@ object Team {
     }
   }
   
-  @js.native
   trait TeamMemberInfoDto extends StObject {
     
-    var inviteDate: Double = js.native
+    var inviteDate: Double
     
-    var joinDate: Double = js.native
+    var joinDate: Double
     
-    var playerId: Double = js.native
+    var playerId: Double
     
-    var status: String = js.native
+    var status: String
   }
   object TeamMemberInfoDto {
     
@@ -265,16 +260,15 @@ object Team {
     }
   }
   
-  @js.native
   trait TeamStatDetailDto extends StObject {
     
-    var averageGamesPlayed: Double = js.native
+    var averageGamesPlayed: Double
     
-    var losses: Double = js.native
+    var losses: Double
     
-    var teamStatType: String = js.native
+    var teamStatType: String
     
-    var wins: Double = js.native
+    var wins: Double
   }
   object TeamStatDetailDto {
     

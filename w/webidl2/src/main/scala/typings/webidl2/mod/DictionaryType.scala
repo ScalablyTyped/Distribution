@@ -3,25 +3,24 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DictionaryType
-  extends AbstractContainer
+  extends StObject
+     with AbstractContainer
      with IDLRootType {
   
   /** A string giving the name of a dictionary this one inherits from, null otherwise. */
-  var inheritance: String | Null = js.native
+  var inheritance: String | Null
   
   @JSName("members")
-  var members_DictionaryType: js.Array[DictionaryMemberType] = js.native
+  var members_DictionaryType: js.Array[DictionaryMemberType]
   
   @JSName("parent")
-  var parent_DictionaryType: Null = js.native
+  var parent_DictionaryType: Null
   
   @JSName("type")
-  var type_DictionaryType: dictionary = js.native
+  var type_DictionaryType: dictionary
 }
 object DictionaryType {
   
@@ -31,11 +30,10 @@ object DictionaryType {
     members: js.Array[DictionaryMemberType],
     name: String,
     parent: Null,
-    partial: Boolean,
-    `type`: dictionary
+    partial: Boolean
   ): DictionaryType = {
-    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(extAttrs = extAttrs.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], partial = partial.asInstanceOf[js.Any], inheritance = null)
+    __obj.updateDynamic("type")("dictionary")
     __obj.asInstanceOf[DictionaryType]
   }
   

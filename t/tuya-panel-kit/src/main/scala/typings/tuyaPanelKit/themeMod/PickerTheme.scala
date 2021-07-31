@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickerTheme extends StObject {
   
-  var fontColor: String = js.native
+  var fontColor: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var unitFontColor: String = js.native
+  var unitFontColor: String
   
-  var unitFontSize: Double = js.native
+  var unitFontSize: Double
 }
 object PickerTheme {
   

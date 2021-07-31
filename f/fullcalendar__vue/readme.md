@@ -10,9 +10,9 @@ An official FullCalendar component for Vue
 | ------------------ | :-------------: |
 | Full name          | @fullcalendar/vue |
 | Keywords           | vue, calendar, fullcalendar |
-| # releases         | 21 |
-| # dependents       | 8 |
-| # downloads        | 699854 |
+| # releases         | 25 |
+| # dependents       | 17 |
+| # downloads        | 1099557 |
 | # stars            | 0 |
 
 ## Links

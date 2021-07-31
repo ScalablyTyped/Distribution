@@ -2,19 +2,17 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostVersionsParams extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var name: String = js.native
+  var name: String
   
-  var releaseDueDate: String = js.native
+  var releaseDueDate: String
   
-  var startDate: String = js.native
+  var startDate: String
 }
 object PostVersionsParams {
   

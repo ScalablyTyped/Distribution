@@ -2,21 +2,19 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITabsOptions extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var linkClass: js.UndefOr[String] = js.native
+  var linkClass: js.UndefOr[String] = js.undefined
   
-  var matchHeight: js.UndefOr[Boolean] = js.native
+  var matchHeight: js.UndefOr[Boolean] = js.undefined
   
-  var panelClass: js.UndefOr[String] = js.native
+  var panelClass: js.UndefOr[String] = js.undefined
   
-  var wrapOnKeys: js.UndefOr[Boolean] = js.native
+  var wrapOnKeys: js.UndefOr[Boolean] = js.undefined
 }
 object ITabsOptions {
   

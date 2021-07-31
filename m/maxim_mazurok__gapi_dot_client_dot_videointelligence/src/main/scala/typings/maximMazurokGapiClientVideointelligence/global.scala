@@ -7,7 +7,6 @@ import typings.maximMazurokGapiClientVideointelligence.maximMazurokGapiClientVid
 import typings.maximMazurokGapiClientVideointelligence.maximMazurokGapiClientVideointelligenceStrings.videointelligence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,13 +15,15 @@ object global {
     
     object client {
       
+      @JSGlobal("gapi.client")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Load Cloud Video Intelligence API v1 */
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: videointelligence, version: v1): js.Thenable[Unit] = js.native
-      @JSGlobal("gapi.client.load")
-      @js.native
-      def load(name: videointelligence, version: v1, callback: js.Function0[_]): Unit = js.native
+      @scala.inline
+      def load(name: videointelligence, version: v1): js.Thenable[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Unit]]
+      @scala.inline
+      def load(name: videointelligence, version: v1, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       object videointelligence {
         

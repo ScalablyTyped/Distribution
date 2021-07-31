@@ -5,7 +5,6 @@ import typings.bootstrapGrowlIfightcrime.BootstrapGrowlIfightcrime.OffsetPositio
 import typings.bootstrapGrowlIfightcrime.BootstrapGrowlIfightcrime._AlertType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bootstrapGrowlIfightcrimeStrings {
@@ -16,47 +15,65 @@ object bootstrapGrowlIfightcrimeStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait bottom extends OffsetPositionType
+  sealed trait bottom
+    extends StObject
+       with OffsetPositionType
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait center extends AlignType
+  sealed trait center
+    extends StObject
+       with AlignType
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait danger extends _AlertType
+  sealed trait danger
+    extends StObject
+       with _AlertType
   @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
-  sealed trait info extends _AlertType
+  sealed trait info
+    extends StObject
+       with _AlertType
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait left extends AlignType
+  sealed trait left
+    extends StObject
+       with AlignType
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait right extends AlignType
+  sealed trait right
+    extends StObject
+       with AlignType
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait success extends _AlertType
+  sealed trait success
+    extends StObject
+       with _AlertType
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait top extends OffsetPositionType
+  sealed trait top
+    extends StObject
+       with OffsetPositionType
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait warning extends _AlertType
+  sealed trait warning
+    extends StObject
+       with _AlertType
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }

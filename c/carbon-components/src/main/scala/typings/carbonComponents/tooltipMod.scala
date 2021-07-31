@@ -3,15 +3,31 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMod {
   
   @JSImport("carbon-components/components/tooltip/tooltip", JSImport.Default)
   @js.native
-  class default protected () extends Tooltip {
+  class default protected ()
+    extends StObject
+       with Tooltip {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var _hasContextMenu: Boolean = js.native
+    
+    /* CompleteClass */
+    override def _hookOn(element: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def createdByEvent(event: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,18 +44,17 @@ object tooltipMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Tooltip extends StObject {
+  - Dropped any */ trait Tooltip extends StObject {
     
-    def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: js.Any): Unit = js.native
+    def _handleClick(hasRelatedTargetTypeHadContextMenuDetails: js.Any): Unit
     
-    var _hasContextMenu: Boolean = js.native
+    var _hasContextMenu: Boolean
     
-    def _hookOn(element: js.Any): Unit = js.native
+    def _hookOn(element: js.Any): Unit
     
-    def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit = js.native
+    def changeState(state: js.Any, detail: js.Any, callback: js.Any): Unit
     
-    def createdByEvent(event: js.Any): Unit = js.native
+    def createdByEvent(event: js.Any): Unit
   }
   object Tooltip {
     

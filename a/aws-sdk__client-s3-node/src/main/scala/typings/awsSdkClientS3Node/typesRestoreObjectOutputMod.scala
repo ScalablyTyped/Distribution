@@ -6,25 +6,24 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRestoreObjectOutputMod {
   
-  @js.native
   trait RestoreObjectOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
     
     /**
       * <p>Indicates the path in the provided S3 output location where Select results will be restored to.</p>
       */
-    var RestoreOutputPath: js.UndefOr[String] = js.native
+    var RestoreOutputPath: js.UndefOr[String] = js.undefined
   }
   object RestoreObjectOutput {
     

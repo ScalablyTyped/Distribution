@@ -10,9 +10,9 @@ Standalone node server and express integration for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/node-server |
 | Keywords           | polly, pollyjs, server, record, replay, express |
-| # releases         | 20 |
+| # releases         | 10 |
 | # dependents       | 4 |
-| # downloads        | 680095 |
+| # downloads        | 1133999 |
 | # stars            | 0 |
 
 ## Links

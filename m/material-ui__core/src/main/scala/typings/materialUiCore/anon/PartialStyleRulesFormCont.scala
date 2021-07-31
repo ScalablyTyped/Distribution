@@ -3,20 +3,18 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/FormControl.FormControlClassKey>> */
-@js.native
 trait PartialStyleRulesFormCont extends StObject {
   
-  var fullWidth: js.UndefOr[CSSProperties] = js.native
+  var fullWidth: js.UndefOr[CSSProperties] = js.undefined
   
-  var marginDense: js.UndefOr[CSSProperties] = js.native
+  var marginDense: js.UndefOr[CSSProperties] = js.undefined
   
-  var marginNormal: js.UndefOr[CSSProperties] = js.native
+  var marginNormal: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesFormCont {
   

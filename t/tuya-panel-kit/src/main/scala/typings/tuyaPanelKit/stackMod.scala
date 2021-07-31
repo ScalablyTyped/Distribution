@@ -25,10 +25,13 @@ import typings.tuyaPanelKit.stackViewMod.default
 import typings.tuyaPanelKit.typesMod.TypedNavigator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
+  
+  @JSImport("tuya-panel-kit/@react-navigation/stack", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "Assets")
   @js.native
@@ -40,33 +43,30 @@ object stackMod {
   
   object CardStyleInterpolators {
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forFadeFromBottomAndroid")
+    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators")
     @js.native
-    def forFadeFromBottomAndroid(hasCurrentInvertedLayoutsClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forHorizontalIOS")
-    @js.native
-    def forHorizontalIOS(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forFadeFromBottomAndroid(hasCurrentInvertedHasScreenClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFadeFromBottomAndroid")(hasCurrentInvertedHasScreenClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forModalPresentationIOS")
-    @js.native
-    def forModalPresentationIOS(hasIndexCurrentNextInvertedLayoutsInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forHorizontalIOS(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forHorizontalIOS")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forNoAnimation")
-    @js.native
-    def forNoAnimation(): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forModalPresentationIOS(hasIndexCurrentNextInvertedHasScreenInsets: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forModalPresentationIOS")(hasIndexCurrentNextInvertedHasScreenInsets.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forRevealFromBottomAndroid")
-    @js.native
-    def forRevealFromBottomAndroid(hasCurrentNextInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forNoAnimation(): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forScaleFromCenterAndroid")
-    @js.native
-    def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forRevealFromBottomAndroid(hasCurrentNextInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forRevealFromBottomAndroid")(hasCurrentNextInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "CardStyleInterpolators.forVerticalIOS")
-    @js.native
-    def forVerticalIOS(hasCurrentInvertedLayouts: StackCardInterpolationProps): StackCardInterpolatedStyle = js.native
+    @scala.inline
+    def forScaleFromCenterAndroid(hasCurrentNextClosing: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forScaleFromCenterAndroid")(hasCurrentNextClosing.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
+    
+    @scala.inline
+    def forVerticalIOS(hasCurrentInvertedHasScreen: StackCardInterpolationProps): StackCardInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forVerticalIOS")(hasCurrentInvertedHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackCardInterpolatedStyle]
   }
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "GestureHandlerRefContext")
@@ -77,15 +77,13 @@ object stackMod {
   @js.native
   val Header: NamedExoticComponent[StackHeaderProps] = js.native
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderBackButton")
-  @js.native
+  @scala.inline
   def HeaderBackButton(
-    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressPressColorAndroidScreenLayoutTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
-  ): Element = js.native
+    hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle: Props
+  ): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackButton")(hasDisabledAllowFontScalingBackImageLabelLabelStyleLabelVisibleOnLabelLayoutOnPressCustomPressColorAndroidScreenLayoutCustomTintColorTitleLayoutTruncatedLabelAccessibilityLabelStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderBackground")
-  @js.native
-  def HeaderBackground(hasStyleRest: typings.tuyaPanelKit.headerBackgroundMod.Props): Element = js.native
+  @scala.inline
+  def HeaderBackground(hasStyleRest: typings.tuyaPanelKit.headerBackgroundMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderBackground")(hasStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderHeightContext")
   @js.native
@@ -93,34 +91,31 @@ object stackMod {
   
   object HeaderStyleInterpolators {
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forFade")
+    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators")
     @js.native
-    def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forNoAnimation")
-    @js.native
-    def forNoAnimation(): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forFade(hasCurrentNext: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forFade")(hasCurrentNext.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forSlideLeft")
-    @js.native
-    def forSlideLeft(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forNoAnimation(): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forNoAnimation")().asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forSlideRight")
-    @js.native
-    def forSlideRight(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideLeft(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideLeft")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forSlideUp")
-    @js.native
-    def forSlideUp(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideRight(hasCurrentNextHasScreen: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideRight")(hasCurrentNextHasScreen.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderStyleInterpolators.forUIKit")
-    @js.native
-    def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = js.native
+    @scala.inline
+    def forSlideUp(hasCurrentNextHasHeader: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forSlideUp")(hasCurrentNextHasHeader.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
+    
+    @scala.inline
+    def forUIKit(hasCurrentNextLayouts: StackHeaderInterpolationProps): StackHeaderInterpolatedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("forUIKit")(hasCurrentNextLayouts.asInstanceOf[js.Any]).asInstanceOf[StackHeaderInterpolatedStyle]
   }
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "HeaderTitle")
-  @js.native
-  def HeaderTitle(hasTintColorStyleRest: typings.tuyaPanelKit.headerTitleMod.Props): Element = js.native
+  @scala.inline
+  def HeaderTitle(hasTintColorStyleRest: typings.tuyaPanelKit.headerTitleMod.Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("HeaderTitle")(hasTintColorStyleRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("tuya-panel-kit/@react-navigation/stack", "StackView")
   @js.native
@@ -128,9 +123,12 @@ object stackMod {
   /* static members */
   object StackView {
     
-    @JSImport("tuya-panel-kit/@react-navigation/stack", "StackView.getDerivedStateFromProps")
+    @JSImport("tuya-panel-kit/@react-navigation/stack", "StackView")
     @js.native
-    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(props: ReadonlyProps, state: ReadonlyState): ClosingRouteKeys | OpeningRouteKeys = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClosingRouteKeys | OpeningRouteKeys]
   }
   
   object TransitionPresets {
@@ -192,8 +190,7 @@ object stackMod {
   }
   
   // tslint:disable-next-line max-line-length prefer-declare-function no-unnecessary-generics
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "createStackNavigator")
-  @js.native
+  @scala.inline
   def createStackNavigator[ParamList /* <: Record[String, js.UndefOr[js.Object]] */](): TypedNavigator[
     ParamList, 
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
@@ -203,17 +200,23 @@ object stackMod {
       /* hasInitialRouteNameChildrenScreenOptionsRest */ typings.tuyaPanelKit.createStackNavigatorMod.Props, 
       Element
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createStackNavigator")().asInstanceOf[TypedNavigator[
+    ParamList, 
+    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    StackNavigationOptions, 
+    StackNavigationEventMap, 
+    js.Function1[
+      /* hasInitialRouteNameChildrenScreenOptionsRest */ typings.tuyaPanelKit.createStackNavigatorMod.Props, 
+      Element
+    ]
+  ]]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "useCardAnimation")
-  @js.native
-  def useCardAnimation(): StackCardInterpolationProps = js.native
+  @scala.inline
+  def useCardAnimation(): StackCardInterpolationProps = ^.asInstanceOf[js.Dynamic].applyDynamic("useCardAnimation")().asInstanceOf[StackCardInterpolationProps]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "useGestureHandlerRef")
-  @js.native
-  def useGestureHandlerRef(): Ref[PanGestureHandler] = js.native
+  @scala.inline
+  def useGestureHandlerRef(): Ref[PanGestureHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useGestureHandlerRef")().asInstanceOf[Ref[PanGestureHandler]]
   
-  @JSImport("tuya-panel-kit/@react-navigation/stack", "useHeaderHeight")
-  @js.native
-  def useHeaderHeight(): Double = js.native
+  @scala.inline
+  def useHeaderHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("useHeaderHeight")().asInstanceOf[Double]
 }

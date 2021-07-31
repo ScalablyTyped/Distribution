@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAnalysisResponse extends StObject {
   
   /**
     * The ID of the analysis.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.native
+  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * The ARN for the analysis.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The status of the creation of the analysis. 
     */
-  var CreationStatus: js.UndefOr[ResourceStatus] = js.native
+  var CreationStatus: js.UndefOr[ResourceStatus] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object CreateAnalysisResponse {
   

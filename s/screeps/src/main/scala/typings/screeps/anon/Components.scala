@@ -2,19 +2,17 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Components extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var components: RecordDepositConstantComm = js.native
+  var components: RecordDepositConstantComm
   
-  var cooldown: Double = js.native
+  var cooldown: Double
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
 }
 object Components {
   

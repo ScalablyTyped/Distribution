@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamConfig extends StObject {
   
   /**
@@ -22,13 +20,13 @@ trait StreamConfig extends StObject {
     * above also filters out duplicates. If a resource mutation cannot be streamed to BigQuery, errors are logged to Cloud Logging. For more information, see [Viewing error logs in Cloud
     * Logging](/healthcare/docs/how-tos/logging)).
     */
-  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1FhirBigQueryDestination] = js.native
+  var bigqueryDestination: js.UndefOr[GoogleCloudHealthcareV1FhirBigQueryDestination] = js.undefined
   
   /**
     * Supply a FHIR resource type (such as "Patient" or "Observation"). See https://www.hl7.org/fhir/valueset-resource-types.html for a list of all FHIR resource types. The server treats
     * an empty list as an intent to stream all the supported resource types in this FHIR store.
     */
-  var resourceTypes: js.UndefOr[js.Array[String]] = js.native
+  var resourceTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object StreamConfig {
   

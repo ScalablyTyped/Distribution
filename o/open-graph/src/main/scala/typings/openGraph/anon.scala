@@ -2,16 +2,14 @@ package typings.openGraph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alternate extends StObject {
     
     /** An array of other locales this page is available in. */
-    var alternate: js.UndefOr[String | js.Array[String]] = js.native
+    var alternate: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Alternate {
     

@@ -4,7 +4,6 @@ import typings.activexAccess.activexAccessNumbers.`0`
 import typings.activexAccess.activexAccessNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,9 +38,9 @@ trait FormatCondition extends StObject {
   
   /** @param Operator [Operator=0] */
   def Modify(Type: AcFormatConditionType): Unit = js.native
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: String): Unit = js.native
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): Unit = js.native
-  def Modify(Type: AcFormatConditionType, Operator: js.UndefOr[scala.Nothing], Expression1: Double): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: Unit, Expression1: String): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: Unit, Expression1: Boolean): Unit = js.native
+  def Modify(Type: AcFormatConditionType, Operator: Unit, Expression1: Double): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: String): Unit = js.native
   def Modify(Type: AcFormatConditionType, Operator: AcFormatConditionOperator, Expression1: Boolean): Unit = js.native
@@ -85,11 +84,11 @@ trait FormatCondition extends StObject {
   def Modify_1(Type: AcFormatConditionType, Operator: `1`, Expression1: Double, Expression2: Double): Unit = js.native
   /** @param Operator [Operator=0] */
   @JSName("Modify")
-  def Modify_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: String): Unit = js.native
+  def Modify_1(Type: `1`, Operator: Unit, Expression1: String): Unit = js.native
   @JSName("Modify")
-  def Modify_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Boolean): Unit = js.native
+  def Modify_1(Type: `1`, Operator: Unit, Expression1: Boolean): Unit = js.native
   @JSName("Modify")
-  def Modify_1(Type: `1`, Operator: js.UndefOr[scala.Nothing], Expression1: Double): Unit = js.native
+  def Modify_1(Type: `1`, Operator: Unit, Expression1: Double): Unit = js.native
   
   val Operator: AcFormatConditionOperator = js.native
   

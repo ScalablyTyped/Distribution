@@ -2,51 +2,49 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceSyncJob extends StObject {
   
   /**
     * If the reason that the synchronization failed is due to an error with the underlying data source, this field contains a code that identifies the error.
     */
-  var DataSourceErrorCode: js.UndefOr[String] = js.native
+  var DataSourceErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The UNIX datetime that the synchronization job was completed.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the Status field is set to FAILED, the ErrorCode field contains a the reason that the synchronization failed.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.kendraMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.kendraMod.ErrorCode] = js.undefined
   
   /**
     * If the Status field is set to ERROR, the ErrorMessage field contains a description of the error that caused the synchronization to fail.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.kendraMod.ErrorMessage] = js.undefined
   
   /**
     * A unique identifier for the synchronization job.
     */
-  var ExecutionId: js.UndefOr[String] = js.native
+  var ExecutionId: js.UndefOr[String] = js.undefined
   
   /**
     * Maps a batch delete document request to a specific data source sync job. This is optional and should only be supplied when documents are deleted by a data source connector.
     */
-  var Metrics: js.UndefOr[DataSourceSyncJobMetrics] = js.native
+  var Metrics: js.UndefOr[DataSourceSyncJobMetrics] = js.undefined
   
   /**
     * The UNIX datetime that the synchronization job was started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The execution status of the synchronization job. When the Status field is set to SUCCEEDED, the synchronization job is done. If the status code is set to FAILED, the ErrorCode and ErrorMessage fields give you the reason for the failure.
     */
-  var Status: js.UndefOr[DataSourceSyncJobStatus] = js.native
+  var Status: js.UndefOr[DataSourceSyncJobStatus] = js.undefined
 }
 object DataSourceSyncJob {
   

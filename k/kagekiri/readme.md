@@ -10,9 +10,9 @@ Shadow DOM-piercing querySelector/querySelectorAll implementation
 | ------------------ | :-------------: |
 | Full name          | kagekiri |
 | Keywords           | shadowdom, shadow, dom, CSS, selector, querySelector, querySelectorAll |
-| # releases         | 9 |
+| # releases         | 15 |
 | # dependents       | 0 |
-| # downloads        | 34523 |
+| # downloads        | 92251 |
 | # stars            | 0 |
 
 ## Links

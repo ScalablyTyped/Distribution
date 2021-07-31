@@ -2,76 +2,74 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeListSearchCriteria extends StObject {
   
   /**
     * If provided, a version descriptor to compare against base
     */
-  var compareVersion: String = js.native
+  var compareVersion: String
   
   /**
     * If true, don't include delete history entries
     */
-  var excludeDeletes: Boolean = js.native
+  var excludeDeletes: Boolean
   
   /**
     * Whether or not to follow renames for the given item being queried
     */
-  var followRenames: Boolean = js.native
+  var followRenames: Boolean
   
   /**
     * If provided, only include history entries created after this date (string)
     */
-  var fromDate: String = js.native
+  var fromDate: String
   
   /**
     * If provided, a version descriptor for the earliest change list to include
     */
-  var fromVersion: String = js.native
+  var fromVersion: String
   
   /**
     * Path of item to search under. If the itemPaths memebr is used then it will take precedence over this.
     */
-  var itemPath: String = js.native
+  var itemPath: String
   
   /**
     * List of item paths to search under. If this member is used then itemPath will be ignored.
     */
-  var itemPaths: js.Array[String] = js.native
+  var itemPaths: js.Array[String]
   
   /**
     * Version of the items to search
     */
-  var itemVersion: String = js.native
+  var itemVersion: String
   
   /**
     * Number of results to skip (used when clicking more...)
     */
-  var skip: Double = js.native
+  var skip: Double
   
   /**
     * If provided, only include history entries created before this date (string)
     */
-  var toDate: String = js.native
+  var toDate: String
   
   /**
     * If provided, a version descriptor for the latest change list to include
     */
-  var toVersion: String = js.native
+  var toVersion: String
   
   /**
     * If provided, the maximum number of history entries to return
     */
-  var top: Double = js.native
+  var top: Double
   
   /**
     * Alias or display name of user who made the changes
     */
-  var user: String = js.native
+  var user: String
 }
 object ChangeListSearchCriteria {
   

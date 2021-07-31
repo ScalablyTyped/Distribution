@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arg extends StObject {
   
   /** Argument matches any value provided. */
-  var anyValue: js.UndefOr[js.Any] = js.native
+  var anyValue: js.UndefOr[js.Any] = js.undefined
   
   /** Argument exactly matches value provided. */
-  var exactValue: js.UndefOr[js.Any] = js.native
+  var exactValue: js.UndefOr[js.Any] = js.undefined
 }
 object Arg {
   

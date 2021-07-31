@@ -2,13 +2,11 @@ package typings.nodeSql2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Named[Name /* <: String */] extends StObject {
   
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object Named {
   
@@ -19,7 +17,7 @@ object Named {
   }
   
   @scala.inline
-  implicit class NamedMutableBuilder[Self <: Named[_], Name /* <: String */] (val x: Self with Named[Name]) extends AnyVal {
+  implicit class NamedMutableBuilder[Self <: Named[?], Name /* <: String */] (val x: Self & Named[Name]) extends AnyVal {
     
     @scala.inline
     def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

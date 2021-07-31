@@ -13,7 +13,6 @@ import typings.reactNativeNavigation.storeMod.Store
 import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandsMod {
@@ -34,15 +33,15 @@ object commandsMod {
     
     val commandsObserver: js.Any = js.native
     
-    def dismissAllModals(): js.Promise[_] = js.native
-    def dismissAllModals(mergeOptions: Options): js.Promise[_] = js.native
+    def dismissAllModals(): js.Promise[js.Any] = js.native
+    def dismissAllModals(mergeOptions: Options): js.Promise[js.Any] = js.native
     
-    def dismissModal(componentId: String): js.Promise[_] = js.native
-    def dismissModal(componentId: String, mergeOptions: Options): js.Promise[_] = js.native
+    def dismissModal(componentId: String): js.Promise[js.Any] = js.native
+    def dismissModal(componentId: String, mergeOptions: Options): js.Promise[js.Any] = js.native
     
-    def dismissOverlay(componentId: String): js.Promise[_] = js.native
+    def dismissOverlay(componentId: String): js.Promise[js.Any] = js.native
     
-    def getLaunchArgs(): js.Promise[_] = js.native
+    def getLaunchArgs(): js.Promise[js.Any] = js.native
     
     val layoutProcessor: js.Any = js.native
     
@@ -56,26 +55,26 @@ object commandsMod {
     
     val optionsProcessor: js.Any = js.native
     
-    def pop(componentId: String): js.Promise[_] = js.native
-    def pop(componentId: String, mergeOptions: Options): js.Promise[_] = js.native
+    def pop(componentId: String): js.Promise[js.Any] = js.native
+    def pop(componentId: String, mergeOptions: Options): js.Promise[js.Any] = js.native
     
-    def popTo(componentId: String): js.Promise[_] = js.native
-    def popTo(componentId: String, mergeOptions: Options): js.Promise[_] = js.native
+    def popTo(componentId: String): js.Promise[js.Any] = js.native
+    def popTo(componentId: String, mergeOptions: Options): js.Promise[js.Any] = js.native
     
-    def popToRoot(componentId: String): js.Promise[_] = js.native
-    def popToRoot(componentId: String, mergeOptions: Options): js.Promise[_] = js.native
+    def popToRoot(componentId: String): js.Promise[js.Any] = js.native
+    def popToRoot(componentId: String, mergeOptions: Options): js.Promise[js.Any] = js.native
     
-    def push(componentId: String, simpleApi: Layout[js.Object]): js.Promise[_] = js.native
+    def push(componentId: String, simpleApi: Layout[js.Object]): js.Promise[js.Any] = js.native
     
     def setDefaultOptions(options: Options): Unit = js.native
     
-    def setRoot(simpleApi: LayoutRoot): js.Promise[_] = js.native
+    def setRoot(simpleApi: LayoutRoot): js.Promise[js.Any] = js.native
     
-    def setStackRoot(componentId: String, children: js.Array[Layout[js.Object]]): js.Promise[_] = js.native
+    def setStackRoot(componentId: String, children: js.Array[Layout[js.Object]]): js.Promise[js.Any] = js.native
     
-    def showModal(layout: Layout[js.Object]): js.Promise[_] = js.native
+    def showModal(layout: Layout[js.Object]): js.Promise[js.Any] = js.native
     
-    def showOverlay(simpleApi: Layout[js.Object]): js.Promise[_] = js.native
+    def showOverlay(simpleApi: Layout[js.Object]): js.Promise[js.Any] = js.native
     
     val store: js.Any = js.native
     

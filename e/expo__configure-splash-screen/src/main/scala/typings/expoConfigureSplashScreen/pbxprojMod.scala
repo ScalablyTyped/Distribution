@@ -3,34 +3,35 @@ package typings.expoConfigureSplashScreen
 import typings.expoConfigureSplashScreen.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pbxprojMod {
   
-  @JSImport("@expo/configure-splash-screen/build/ios/pbxproj", JSImport.Default)
+  @JSImport("@expo/configure-splash-screen/build/ios/pbxproj", JSImport.Namespace)
   @js.native
-  def default(projectRootPath: String): js.Promise[IosProject] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(projectRootPath: String): js.Promise[IosProject] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(projectRootPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[IosProject]]
+  
   trait IosProject extends StObject {
     
     /**
       * main application PBXNativeTarget from `.pbxproj` file.
       */
-    var applicationNativeTarget: Target = js.native
+    var applicationNativeTarget: Target
     
     /**
       * pbxProject reference that allows to modify `.pbxproj` file.
       */
-    var pbxProject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ js.Any = js.native
+    var pbxProject: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify XcodeProject */ js.Any
     
-    var projectName: String = js.native
+    var projectName: String
     
     /**
       * Root path to directory containing project source files.
       */
-    var projectPath: String = js.native
+    var projectPath: String
   }
   object IosProject {
     

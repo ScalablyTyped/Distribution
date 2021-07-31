@@ -4,58 +4,56 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ant-design/react-native.@ant-design/react-native/lib/picker/PopupPickerTypes.PopupPickerProps> */
-@js.native
 trait ReadonlyPopupPickerProps extends StObject {
   
-  val WrapComponent: js.UndefOr[js.Any] = js.native
+  val WrapComponent: js.UndefOr[js.Any] = js.undefined
   
-  val actionTextActiveOpacity: js.UndefOr[Double] = js.native
+  val actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
   
-  val actionTextUnderlayColor: js.UndefOr[String] = js.native
+  val actionTextUnderlayColor: js.UndefOr[String] = js.undefined
   
-  val content: js.UndefOr[ReactElement | String] = js.native
+  val content: js.UndefOr[ReactElement | String] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val dismissText: js.UndefOr[String | ReactElement] = js.native
+  val dismissText: js.UndefOr[String | ReactElement] = js.undefined
   
-  val maskTransitionName: js.UndefOr[String] = js.native
+  val maskTransitionName: js.UndefOr[String] = js.undefined
   
-  val okText: js.UndefOr[String | ReactElement] = js.native
+  val okText: js.UndefOr[String | ReactElement] = js.undefined
   
-  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  val onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  val onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+  val onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
   
-  val picker: js.UndefOr[js.Any] = js.native
+  val picker: js.UndefOr[js.Any] = js.undefined
   
-  val pickerValueChangeProp: js.UndefOr[String] = js.native
+  val pickerValueChangeProp: js.UndefOr[String] = js.undefined
   
-  val pickerValueProp: js.UndefOr[String] = js.native
+  val pickerValueProp: js.UndefOr[String] = js.undefined
   
-  val popupTransitionName: js.UndefOr[String] = js.native
+  val popupTransitionName: js.UndefOr[String] = js.undefined
   
-  val style: js.UndefOr[js.Any] = js.native
+  val style: js.UndefOr[js.Any] = js.undefined
   
-  val styles: js.UndefOr[js.Any] = js.native
+  val styles: js.UndefOr[js.Any] = js.undefined
   
-  val title: js.UndefOr[String | ReactElement] = js.native
+  val title: js.UndefOr[String | ReactElement] = js.undefined
   
-  val transitionName: js.UndefOr[String] = js.native
+  val transitionName: js.UndefOr[String] = js.undefined
   
-  val triggerType: js.UndefOr[String] = js.native
+  val triggerType: js.UndefOr[String] = js.undefined
   
-  val value: js.UndefOr[js.Any] = js.native
+  val value: js.UndefOr[js.Any] = js.undefined
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
   
-  val wrapStyle: js.UndefOr[CSSProperties] = js.native
+  val wrapStyle: js.UndefOr[CSSProperties] = js.undefined
 }
 object ReadonlyPopupPickerProps {
   

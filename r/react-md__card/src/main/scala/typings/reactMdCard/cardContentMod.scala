@@ -6,17 +6,17 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardContentMod {
   
   @JSImport("@react-md/card/types/CardContent", "CardContent")
   @js.native
-  val CardContent: ForwardRefExoticComponent[CardContentProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardContent: ForwardRefExoticComponent[CardContentProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait CardContentProps extends HTMLAttributes[HTMLDivElement] {
+  trait CardContentProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * Boolean if the extra `padding-bottom` that gets applied when the
@@ -24,13 +24,13 @@ object cardContentMod {
       * `disablePadding` prop is enabled, this prop will be ignored and the extra
       * padding will not be applied.
       */
-    var disableExtraPadding: js.UndefOr[Boolean] = js.native
+    var disableExtraPadding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the padding should be removed from the content. This is really
       * only useful if your child elements have their own padding.
       */
-    var disablePadding: js.UndefOr[Boolean] = js.native
+    var disablePadding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if any `<p>` tags that appear as children of this component should
@@ -38,13 +38,13 @@ object cardContentMod {
       * behavior is to remove all `margin-top` and remove the `margin-bottom` if
       * the `<p>` is the last child.
       */
-    var disableParagraphMargin: js.UndefOr[Boolean] = js.native
+    var disableParagraphMargin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the current secondary text color should be disabled from the
       * content.
       */
-    var disableSecondaryColor: js.UndefOr[Boolean] = js.native
+    var disableSecondaryColor: js.UndefOr[Boolean] = js.undefined
   }
   object CardContentProps {
     

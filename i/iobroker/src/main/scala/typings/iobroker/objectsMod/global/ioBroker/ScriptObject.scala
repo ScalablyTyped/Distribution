@@ -4,26 +4,25 @@ import typings.iobroker.iobrokerStrings.script
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_ScriptObject: ScriptCommon = js.native
+  var common_ScriptObject: ScriptCommon
   
   @JSName("type")
-  var type_ScriptObject: script = js.native
+  var type_ScriptObject: script
 }
 object ScriptObject {
   
   @scala.inline
-  def apply(_id: String, common: ScriptCommon, native: Record[String, _], `type`: script): ScriptObject = {
+  def apply(_id: String, common: ScriptCommon, native: Record[String, js.Any]): ScriptObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("script")
     __obj.asInstanceOf[ScriptObject]
   }
   

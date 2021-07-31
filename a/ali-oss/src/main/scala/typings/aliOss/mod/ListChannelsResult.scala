@@ -2,25 +2,23 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsResult extends StObject {
   
-  var channels: js.Array[Channel] = js.native
+  var channels: js.Array[Channel]
   
-  var isTruncated: Boolean = js.native
+  var isTruncated: Boolean
   
-  var nextMarker: String | Null = js.native
+  var nextMarker: String | Null
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object ListChannelsResult {
   
   @scala.inline
   def apply(channels: js.Array[Channel], isTruncated: Boolean, res: NormalSuccessResponse): ListChannelsResult = {
-    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], isTruncated = isTruncated.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(channels = channels.asInstanceOf[js.Any], isTruncated = isTruncated.asInstanceOf[js.Any], res = res.asInstanceOf[js.Any], nextMarker = null)
     __obj.asInstanceOf[ListChannelsResult]
   }
   

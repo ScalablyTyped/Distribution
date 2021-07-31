@@ -2,21 +2,19 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingSubscribeOptions extends StObject {
   
-  var invocationContext: js.UndefOr[js.Object] = js.native
+  var invocationContext: js.UndefOr[js.Object] = js.undefined
   
-  var onFailure: js.UndefOr[js.Function] = js.native
+  var onFailure: js.UndefOr[js.Function] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function] = js.native
+  var onSuccess: js.UndefOr[js.Function] = js.undefined
   
-  var qos: js.UndefOr[MessagingQOS] = js.native
+  var qos: js.UndefOr[MessagingQOS] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object MessagingSubscribeOptions {
   

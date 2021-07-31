@@ -6,7 +6,6 @@ import typings.zepto.anon.Android
 import typings.zepto.anon.Chrome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -136,7 +135,7 @@ trait ZeptoStatic extends StObject {
     * @param collection
     * @param fn
     **/
-  def each(collection: js.Array[_], fn: js.Function2[/* index */ Double, /* item */ js.Any, Boolean]): Unit = js.native
+  def each(collection: js.Array[js.Any], fn: js.Function2[/* index */ Double, /* item */ js.Any, Boolean]): Unit = js.native
   
   /**
     * @see ZeptoStatic.extend
@@ -211,7 +210,7 @@ trait ZeptoStatic extends StObject {
     * @param fn
     * @return
     **/
-  def grep(items: js.Array[_], fn: js.Function1[/* item */ js.Any, Boolean]): js.Array[_] = js.native
+  def grep(items: js.Array[js.Any], fn: js.Function1[/* item */ js.Any, Boolean]): js.Array[js.Any] = js.native
   
   /**
     * Get the position of element inside an array, or -1 if not found.
@@ -220,8 +219,8 @@ trait ZeptoStatic extends StObject {
     * @param fromIndex
     * @return
     **/
-  def inArray(element: js.Any, array: js.Array[_]): Double = js.native
-  def inArray(element: js.Any, array: js.Array[_], fromIndex: Double): Double = js.native
+  def inArray(element: js.Any, array: js.Array[js.Any]): Double = js.native
+  def inArray(element: js.Any, array: js.Array[js.Any], fromIndex: Double): Double = js.native
   
   /**
     * True if the object is an array.
@@ -257,7 +256,7 @@ trait ZeptoStatic extends StObject {
     * @param fn
     * @return
     **/
-  def map(collection: js.Array[_], fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): js.Array[_] = js.native
+  def map(collection: js.Array[js.Any], fn: js.Function2[/* item */ js.Any, /* index */ Double, js.Any]): js.Array[js.Any] = js.native
   
   /**
     * Detect

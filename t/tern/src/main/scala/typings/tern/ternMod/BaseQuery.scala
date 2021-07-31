@@ -3,17 +3,15 @@ package typings.tern.ternMod
 import typings.tern.ternStrings.full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseQuery extends StObject {
   
-  var docFormat: js.UndefOr[full] = js.native
+  var docFormat: js.UndefOr[full] = js.undefined
   
-  var lineCharPositions: js.UndefOr[Boolean] = js.native
+  var lineCharPositions: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseQuery {
   

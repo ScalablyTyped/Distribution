@@ -2,84 +2,82 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates contact information needed for billing and shipping.
   */
-@js.native
 trait ApplePayPaymentContact extends StObject {
   
   /**
     * The street portion of the address for the contact.
     */
-  var addressLines: js.UndefOr[js.Array[String]] = js.native
+  var addressLines: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The state for the contact.
     */
-  var administrativeArea: js.UndefOr[String] = js.native
+  var administrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the country for the contact.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The contact’s two-letter ISO 3166 country code.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * An email address for the contact.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The contact's family name.
     */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /**
     * The contact's given name.
     */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
   /**
     * The city for the contact.
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * A phone number for the contact.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The phonetic spelling of the contact's family name.
     */
-  var phoneticFamilyName: js.UndefOr[String] = js.native
+  var phoneticFamilyName: js.UndefOr[String] = js.undefined
   
   /**
     * The phonetic spelling of the contact's given name.
     */
-  var phoneticGivenName: js.UndefOr[String] = js.native
+  var phoneticGivenName: js.UndefOr[String] = js.undefined
   
   /**
     * The zip code or postal code, where applicable, for the contact.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * The subadministrative area (such as a county or other region) in a postal address.
     */
-  var subAdministrativeArea: js.UndefOr[String] = js.native
+  var subAdministrativeArea: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information associated with the location, typically defined at the city or town level (such as district or neighborhood), in a postal address.
     */
-  var subLocality: js.UndefOr[String] = js.native
+  var subLocality: js.UndefOr[String] = js.undefined
 }
 object ApplePayPaymentContact {
   

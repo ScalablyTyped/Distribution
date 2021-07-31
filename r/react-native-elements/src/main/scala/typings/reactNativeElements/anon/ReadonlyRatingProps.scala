@@ -9,44 +9,42 @@ import typings.reactNativeElements.reactNativeElementsStrings.rocket
 import typings.reactNativeElements.reactNativeElementsStrings.star
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native-ratings.react-native-ratings.RatingProps> */
-@js.native
 trait ReadonlyRatingProps extends StObject {
   
-  val fractions: js.UndefOr[Double] = js.native
+  val fractions: js.UndefOr[Double] = js.undefined
   
-  val imageSize: js.UndefOr[Double] = js.native
+  val imageSize: js.UndefOr[Double] = js.undefined
   
-  val minValue: js.UndefOr[Double] = js.native
+  val minValue: js.UndefOr[Double] = js.undefined
   
-  val onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.native
+  val onFinishRating: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.undefined
   
-  val onStartRating: js.UndefOr[js.Function0[Unit]] = js.native
+  val onStartRating: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val ratingBackgroundColor: js.UndefOr[String] = js.native
+  val ratingBackgroundColor: js.UndefOr[String] = js.undefined
   
-  val ratingColor: js.UndefOr[String] = js.native
+  val ratingColor: js.UndefOr[String] = js.undefined
   
-  val ratingCount: js.UndefOr[Double] = js.native
+  val ratingCount: js.UndefOr[Double] = js.undefined
   
-  val ratingImage: js.UndefOr[ImageURISource] = js.native
+  val ratingImage: js.UndefOr[ImageURISource] = js.undefined
   
-  val ratingTextColor: js.UndefOr[String] = js.native
+  val ratingTextColor: js.UndefOr[String] = js.undefined
   
-  val readonly: js.UndefOr[Boolean] = js.native
+  val readonly: js.UndefOr[Boolean] = js.undefined
   
-  val showRating: js.UndefOr[Boolean] = js.native
+  val showRating: js.UndefOr[Boolean] = js.undefined
   
-  val startingValue: js.UndefOr[Double] = js.native
+  val startingValue: js.UndefOr[Double] = js.undefined
   
-  val style: js.UndefOr[Requireable[js.Object]] = js.native
+  val style: js.UndefOr[Requireable[js.Object]] = js.undefined
   
-  val tintColor: js.UndefOr[String] = js.native
+  val tintColor: js.UndefOr[String] = js.undefined
   
-  val `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.native
+  val `type`: js.UndefOr[star | rocket | bell | heart | custom] = js.undefined
 }
 object ReadonlyRatingProps {
   

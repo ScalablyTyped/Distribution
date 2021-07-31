@@ -2,59 +2,57 @@ package typings.hlsJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * the Fragment object contains fragment related info
   */
-@js.native
 trait Fragment extends StObject {
   
   /**
     * continuity count
     */
-  var cc: Double = js.native
+  var cc: Double
   
   /**
     * fragment duration
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * fragment level identifier
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * stream start date and time
     */
-  var programDateTime: Double = js.native
+  var programDateTime: Double
   
   /**
     * fragment sequence number
     */
-  var sn: Double = js.native
+  var sn: Double
   
   /**
     * fragment start offset
     */
-  var start: Double = js.native
+  var start: Double
   
   /**
     * list of tags associated with the fragment
     */
-  var tagList: js.Array[js.Array[String]] = js.native
+  var tagList: js.Array[js.Array[String]]
   
   /**
     * fragment title
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * fragment url
     */
-  var url: String = js.native
+  var url: String
 }
 object Fragment {
   

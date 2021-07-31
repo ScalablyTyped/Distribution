@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLifecycleRuleTransition extends StObject {
   
   /**
     * Specifies the date after which you want the corresponding action to take effect.
     */
-  var date: js.UndefOr[Input[String]] = js.native
+  var date: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies the number of days after object creation when the specific rule action takes effect.
     */
-  var days: js.UndefOr[Input[Double]] = js.native
+  var days: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Specifies the Amazon S3 storage class to which you want the object to transition. Can be `ONEZONE_IA`, `STANDARD_IA`, `INTELLIGENT_TIERING`, `GLACIER`, or `DEEP_ARCHIVE`.
     */
-  var storageClass: Input[String] = js.native
+  var storageClass: Input[String]
 }
 object BucketLifecycleRuleTransition {
   

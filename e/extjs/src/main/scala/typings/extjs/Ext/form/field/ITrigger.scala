@@ -5,62 +5,62 @@ import typings.extjs.Ext.IElement
 import typings.extjs.Ext.IEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITrigger extends IText {
+trait ITrigger
+  extends StObject
+     with IText {
   
   /** [Config Option] (Boolean) */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Generates the arguments for the field decorations rendering template
     * @returns Object The template arguments
     */
   @JSName("getLabelableRenderData")
-  var getLabelableRenderData_ITrigger: js.UndefOr[js.Function0[_]] = js.native
+  var getLabelableRenderData_ITrigger: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Get the total width of the trigger button area
     * @returns Number The total trigger width
     */
-  var getTriggerWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getTriggerWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideTrigger: js.UndefOr[Boolean] = js.native
+  var hideTrigger: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var inputCell: js.UndefOr[IElement] = js.native
+  var inputCell: js.UndefOr[IElement] = js.undefined
   
   /** [Method] The function that should handle the trigger s click event
     * @param e Ext.EventObject
     */
-  var onTriggerClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var onTriggerClick: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var repeatTriggerClick: js.UndefOr[Boolean] = js.native
+  var repeatTriggerClick: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the editable state of this field
     * @param editable Boolean True to allow the user to directly edit the field text. If false is passed, the user will only be able to modify the field using the trigger. Will also add a click event to the text field which will call the trigger.
     */
-  var setEditable: js.UndefOr[js.Function1[/* editable */ js.UndefOr[Boolean], Unit]] = js.native
+  var setEditable: js.UndefOr[js.Function1[/* editable */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var triggerBaseCls: js.UndefOr[String] = js.native
+  var triggerBaseCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var triggerCls: js.UndefOr[String] = js.native
+  var triggerCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.CompositeElement) */
-  var triggerEl: js.UndefOr[ICompositeElement] = js.native
+  var triggerEl: js.UndefOr[ICompositeElement] = js.undefined
   
   /** [Config Option] (String) */
-  var triggerNoEditCls: js.UndefOr[String] = js.native
+  var triggerNoEditCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var triggerWrap: js.UndefOr[IElement] = js.native
+  var triggerWrap: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (String) */
-  var triggerWrapCls: js.UndefOr[String] = js.native
+  var triggerWrapCls: js.UndefOr[String] = js.undefined
 }
 object ITrigger {
   
@@ -80,7 +80,7 @@ object ITrigger {
     def setEditableUndefined: Self = StObject.set(x, "editable", js.undefined)
     
     @scala.inline
-    def setGetLabelableRenderData(value: () => _): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
+    def setGetLabelableRenderData(value: () => js.Any): Self = StObject.set(x, "getLabelableRenderData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLabelableRenderDataUndefined: Self = StObject.set(x, "getLabelableRenderData", js.undefined)

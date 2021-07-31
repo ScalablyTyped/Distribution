@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object UsbEndpointType extends StObject {
   
   /** Indicates a USB bulk endpoint. */
   @js.native
-  sealed trait bulk extends UsbEndpointType
+  sealed trait bulk
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB control endpoint (Endpoint 0). */
   @js.native
-  sealed trait control extends UsbEndpointType
+  sealed trait control
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB interrupt endpoint. */
   @js.native
-  sealed trait interrupt extends UsbEndpointType
+  sealed trait interrupt
+    extends StObject
+       with UsbEndpointType
   
   /** Indicates a USB isochronous endpoint. */
   @js.native
-  sealed trait isochronous extends UsbEndpointType
+  sealed trait isochronous
+    extends StObject
+       with UsbEndpointType
 }

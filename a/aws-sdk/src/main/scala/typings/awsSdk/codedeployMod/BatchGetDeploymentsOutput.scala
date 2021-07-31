@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDeploymentsOutput extends StObject {
   
   /**
     *  Information about the deployments. 
     */
-  var deploymentsInfo: js.UndefOr[DeploymentsInfoList] = js.native
+  var deploymentsInfo: js.UndefOr[DeploymentsInfoList] = js.undefined
 }
 object BatchGetDeploymentsOutput {
   

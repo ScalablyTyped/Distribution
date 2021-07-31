@@ -2,26 +2,24 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListDraftsResponse extends StObject {
   
   /**
     * List of drafts.
     */
-  var drafts: js.UndefOr[js.Array[SchemaDraft]] = js.native
+  var drafts: js.UndefOr[js.Array[SchemaDraft]] = js.undefined
   
   /**
     * Token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated total number of results.
     */
-  var resultSizeEstimate: js.UndefOr[Double] = js.native
+  var resultSizeEstimate: js.UndefOr[Double] = js.undefined
 }
 object SchemaListDraftsResponse {
   

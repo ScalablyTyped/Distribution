@@ -3,7 +3,6 @@ package typings.pEachSeries
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,12 +27,11 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-each-series", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
-    iterator: js.Function2[/* element */ ValueType, /* index */ Double, StopSymbol | _]
-  ): js.Promise[js.Array[ValueType]] = js.native
+    iterator: js.Function2[/* element */ ValueType, /* index */ Double, StopSymbol | js.Any]
+  ): js.Promise[js.Array[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ValueType]]]
   
   @JSImport("p-each-series", JSImport.Namespace)
   @js.native

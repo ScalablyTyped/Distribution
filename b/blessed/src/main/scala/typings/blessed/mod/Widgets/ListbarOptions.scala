@@ -3,27 +3,27 @@ package typings.blessed.mod.Widgets
 import typings.blessed.mod.Widgets.Types.ListbarCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListbarOptions extends BoxOptions {
+trait ListbarOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * Automatically bind list buttons to keys 0-9.
     */
-  var autoCommandKeys: Boolean = js.native
+  var autoCommandKeys: Boolean
   
   /**
     * Set buttons using an object with keys as titles of buttons, containing of objects
     * containing keys of keys and callback.
     */
-  var commands: js.Array[ListbarCommand] = js.native
+  var commands: js.Array[ListbarCommand]
   
-  var items: js.Array[ListbarCommand] = js.native
+  var items: js.Array[ListbarCommand]
   
   @JSName("style")
-  var style_ListbarOptions: js.UndefOr[ListElementStyle] = js.native
+  var style_ListbarOptions: js.UndefOr[ListElementStyle] = js.undefined
 }
 object ListbarOptions {
   

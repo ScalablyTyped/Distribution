@@ -2,16 +2,14 @@ package typings.weappApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AppId extends StObject {
     
     //  小程序appId
-    var appId: String = js.native
+    var appId: String
   }
   object AppId {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Scale extends StObject {
     
-    var scale: Double = js.native
+    var scale: Double
   }
   object Scale {
     
@@ -50,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TapIndex extends StObject {
     
-    var tapIndex: Double = js.native
+    var tapIndex: Double
   }
   object TapIndex {
     
@@ -71,14 +67,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Vetsion extends StObject {
     
     //  插件appId
-    var appId: String = js.native
+    var appId: String
     
     //  插件版本号
-    var vetsion: String = js.native
+    var vetsion: String
   }
   object Vetsion {
     

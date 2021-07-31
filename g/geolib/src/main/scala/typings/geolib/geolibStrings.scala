@@ -5,7 +5,6 @@ import typings.geolib.typesMod.LatitudeKeys
 import typings.geolib.typesMod.LongitudeKeys
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geolibStrings {
@@ -91,47 +90,65 @@ object geolibStrings {
   def WSW: WSW = "WSW".asInstanceOf[WSW]
   
   @js.native
-  sealed trait alt extends AltitudeKeys
+  sealed trait alt
+    extends StObject
+       with AltitudeKeys
   @scala.inline
   def alt: alt = "alt".asInstanceOf[alt]
   
   @js.native
-  sealed trait altitude extends AltitudeKeys
+  sealed trait altitude
+    extends StObject
+       with AltitudeKeys
   @scala.inline
   def altitude: altitude = "altitude".asInstanceOf[altitude]
   
   @js.native
-  sealed trait elev extends AltitudeKeys
+  sealed trait elev
+    extends StObject
+       with AltitudeKeys
   @scala.inline
   def elev: elev = "elev".asInstanceOf[elev]
   
   @js.native
-  sealed trait elevation extends AltitudeKeys
+  sealed trait elevation
+    extends StObject
+       with AltitudeKeys
   @scala.inline
   def elevation: elevation = "elevation".asInstanceOf[elevation]
   
   @js.native
-  sealed trait lat extends LatitudeKeys
+  sealed trait lat
+    extends StObject
+       with LatitudeKeys
   @scala.inline
   def lat: lat = "lat".asInstanceOf[lat]
   
   @js.native
-  sealed trait latitude extends LatitudeKeys
+  sealed trait latitude
+    extends StObject
+       with LatitudeKeys
   @scala.inline
   def latitude: latitude = "latitude".asInstanceOf[latitude]
   
   @js.native
-  sealed trait lng extends LongitudeKeys
+  sealed trait lng
+    extends StObject
+       with LongitudeKeys
   @scala.inline
   def lng: lng = "lng".asInstanceOf[lng]
   
   @js.native
-  sealed trait lon extends LongitudeKeys
+  sealed trait lon
+    extends StObject
+       with LongitudeKeys
   @scala.inline
   def lon: lon = "lon".asInstanceOf[lon]
   
   @js.native
-  sealed trait longitude extends LongitudeKeys
+  sealed trait longitude
+    extends StObject
+       with LongitudeKeys
   @scala.inline
   def longitude: longitude = "longitude".asInstanceOf[longitude]
 }

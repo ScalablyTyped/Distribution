@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProjectsResult extends StObject {
   
   /**
     * The continuation token to use when requesting the next set of results, if there are more results to be returned.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * A list of projects.
     */
-  var projects: ProjectsList = js.native
+  var projects: ProjectsList
 }
 object ListProjectsResult {
   

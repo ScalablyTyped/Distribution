@@ -2,16 +2,14 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReplicaOptions extends StObject {
   
   /**
     * The index for which replica you wish to retrieve this value from, or if undefined, use the value from the first server that replies.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
 }
 object GetReplicaOptions {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineMetadata extends StObject {
   
   /**
     * The date and time the pipeline was created, in timestamp format.
     */
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the pipeline.
     */
-  var pipelineArn: js.UndefOr[PipelineArn] = js.native
+  var pipelineArn: js.UndefOr[PipelineArn] = js.undefined
   
   /**
     * The date and time the pipeline was last updated, in timestamp format.
     */
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
 }
 object PipelineMetadata {
   

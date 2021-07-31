@@ -11,7 +11,6 @@ import typings.semanticUiReact.genericMod.SemanticShorthandContent
 import typings.semanticUiReact.searchResultMod.SearchResultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchCategoryMod extends Shortcut {
@@ -20,9 +19,9 @@ object searchCategoryMod extends Shortcut {
   @js.native
   val default: StatelessComponent[SearchCategoryProps] = js.native
   
-  @js.native
   trait SearchCategoryProps
-    extends StrictSearchCategoryProps
+    extends StObject
+       with StrictSearchCategoryProps
        with /* key */ StringDictionary[js.Any]
   object SearchCategoryProps {
     
@@ -33,23 +32,22 @@ object searchCategoryMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSearchCategoryProps extends StObject {
     
     /** The item currently selected by keyboard shortcut. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /**
       * Renders the SearchCategory layout.
@@ -60,10 +58,10 @@ object searchCategoryMod extends Shortcut {
       */
     var layoutRenderer: js.UndefOr[
         js.Function2[/* categoryContent */ ReactElement, /* resultsContent */ ReactElement, ReactElement]
-      ] = js.native
+      ] = js.undefined
     
     /** Display name. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Renders the category contents.
@@ -71,10 +69,10 @@ object searchCategoryMod extends Shortcut {
       * @param {object} props - The SearchCategory props object.
       * @returns {*} - Renderable category contents.
       */
-    var renderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.native
+    var renderer: js.UndefOr[js.Function1[/* props */ SearchCategoryProps, ReactElement]] = js.undefined
     
     /** Array of Search.Result props. */
-    var results: js.UndefOr[js.Array[ComponentClass[SearchResultProps, ComponentState]]] = js.native
+    var results: js.UndefOr[js.Array[ComponentClass[SearchResultProps, ComponentState]]] = js.undefined
   }
   object StrictSearchCategoryProps {
     

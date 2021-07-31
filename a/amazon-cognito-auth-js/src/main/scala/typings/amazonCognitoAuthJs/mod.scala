@@ -9,7 +9,6 @@ import typings.std.Storage
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -75,7 +74,7 @@ object mod {
       * @param set2 the other set
       * @returns boolean value is true if two sets are identical
       */
-    def compareSets(set1: ReadonlySet[_], set2: ReadonlySet[_]): Boolean = js.native
+    def compareSets(set1: ReadonlySet[js.Any], set2: ReadonlySet[js.Any]): Boolean = js.native
     
     /**
       * Create the XHR object
@@ -467,48 +466,47 @@ object mod {
     def getStorage(): Storage = js.native
   }
   
-  @js.native
   trait CognitoAuthOptions extends StObject {
     
     /**
       * Optional: boolean flag indicating if the data collection is enabled to support cognito advanced security features. By default, this flag is set to true.
       */
-    var AdvancedSecurityDataCollectionFlag: js.UndefOr[Boolean] = js.native
+    var AdvancedSecurityDataCollectionFlag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Required: The application/user-pools Cognito web hostname,this is set at the Cognito console.
       */
-    var AppWebDomain: String = js.native
+    var AppWebDomain: String
     
     /**
       * Required: User pool application client id.
       */
-    var ClientId: String = js.native
+    var ClientId: String
     
     /**
       * Optional: Pre-selected identity provider (this allows to automatically trigger social provider authentication flow).
       */
-    var IdentityProvider: js.UndefOr[String] = js.native
+    var IdentityProvider: js.UndefOr[String] = js.undefined
     
     /**
       * Required: Required: The redirect Uri, which will be launched after authentication as signed in.
       */
-    var RedirectUriSignIn: String = js.native
+    var RedirectUriSignIn: String
     
     /**
       * Required: The redirect Uri, which will be launched when signed out.
       */
-    var RedirectUriSignOut: String = js.native
+    var RedirectUriSignOut: String
     
     /**
       * Optional: The token scopes
       */
-    var TokenScopesArray: js.UndefOr[js.Array[String]] = js.native
+    var TokenScopesArray: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Optional: UserPoolId for the configured cognito userPool.
       */
-    var UserPoolId: js.UndefOr[String] = js.native
+    var UserPoolId: js.UndefOr[String] = js.undefined
   }
   object CognitoAuthOptions {
     
@@ -562,12 +560,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CognitoAuthUserHandler extends StObject {
     
-    def onFailure(err: js.Any): Unit = js.native
+    def onFailure(err: js.Any): Unit
     
-    def onSuccess(authSession: CognitoAuthSession): Unit = js.native
+    def onSuccess(authSession: CognitoAuthSession): Unit
   }
   object CognitoAuthUserHandler {
     
@@ -588,92 +585,91 @@ object mod {
     }
   }
   
-  @js.native
   trait CognitoConstants extends StObject {
     
-    var ACCESSTOKEN: String = js.native
+    var ACCESSTOKEN: String
     
-    var AMPERSAND: String = js.native
+    var AMPERSAND: String
     
-    var AUTHORIZATIONCODE: String = js.native
+    var AUTHORIZATIONCODE: String
     
-    var CLIENT_ID: String = js.native
+    var CLIENT_ID: String
     
-    var CODE: String = js.native
+    var CODE: String
     
-    var COLONDOUBLESLASH: String = js.native
+    var COLONDOUBLESLASH: String
     
-    var CONTENTTYPE: String = js.native
+    var CONTENTTYPE: String
     
-    var CONTENTTYPEVALUE: String = js.native
+    var CONTENTTYPEVALUE: String
     
-    var DOMAIN_PATH_SIGNIN: String = js.native
+    var DOMAIN_PATH_SIGNIN: String
     
-    var DOMAIN_PATH_SIGNOUT: String = js.native
+    var DOMAIN_PATH_SIGNOUT: String
     
-    var DOMAIN_PATH_TOKEN: String = js.native
+    var DOMAIN_PATH_TOKEN: String
     
-    var DOMAIN_QUERY_PARAM_IDENTITY_PROVIDER: String = js.native
+    var DOMAIN_QUERY_PARAM_IDENTITY_PROVIDER: String
     
-    var DOMAIN_QUERY_PARAM_REDIRECT_URI: String = js.native
+    var DOMAIN_QUERY_PARAM_REDIRECT_URI: String
     
-    var DOMAIN_QUERY_PARAM_RESPONSE_TYPE: String = js.native
+    var DOMAIN_QUERY_PARAM_RESPONSE_TYPE: String
     
-    var DOMAIN_QUERY_PARAM_SIGNOUT_URI: String = js.native
+    var DOMAIN_QUERY_PARAM_SIGNOUT_URI: String
     
-    var DOMAIN_QUERY_PARAM_USERCONTEXTDATA: String = js.native
+    var DOMAIN_QUERY_PARAM_USERCONTEXTDATA: String
     
-    var DOMAIN_SCHEME: String = js.native
+    var DOMAIN_SCHEME: String
     
-    var EQUALSIGN: String = js.native
+    var EQUALSIGN: String
     
-    var ERROR: String = js.native
+    var ERROR: String
     
-    var ERROR_DESCRIPTION: String = js.native
+    var ERROR_DESCRIPTION: String
     
-    var HEADER: ContentType = js.native
+    var HEADER: ContentType
     
-    var HOSTNAMEREGEX: RegExp = js.native
+    var HOSTNAMEREGEX: RegExp
     
-    var IDTOKEN: String = js.native
+    var IDTOKEN: String
     
-    var PARAMETERERROR: String = js.native
+    var PARAMETERERROR: String
     
-    var POST: String = js.native
+    var POST: String
     
-    var POUNDSIGN: String = js.native
+    var POUNDSIGN: String
     
-    var QUERYPARAMETERREGEX1: RegExp = js.native
+    var QUERYPARAMETERREGEX1: RegExp
     
-    var QUERYPARAMETERREGEX2: RegExp = js.native
+    var QUERYPARAMETERREGEX2: RegExp
     
-    var QUESTIONMARK: String = js.native
+    var QUESTIONMARK: String
     
-    var REFRESHTOKEN: String = js.native
+    var REFRESHTOKEN: String
     
-    var SCOPE: String = js.native
+    var SCOPE: String
     
-    var SCOPETYPEERROR: String = js.native
+    var SCOPETYPEERROR: String
     
-    var SELF: String = js.native
+    var SELF: String
     
-    var SLASH: String = js.native
+    var SLASH: String
     
-    var SPACE: String = js.native
+    var SPACE: String
     
-    var STATE: String = js.native
+    var STATE: String
     
-    var STATELENGTH: Double = js.native
+    var STATELENGTH: Double
     
-    var STATEORIGINSTRING: String = js.native
+    var STATEORIGINSTRING: String
     
-    var STRINGTYPE: String = js.native
+    var STRINGTYPE: String
     
-    var TOKEN: String = js.native
+    var TOKEN: String
     
-    var UNDEFINED: String = js.native
+    var UNDEFINED: String
     
-    var WITHCREDENTIALS: String = js.native
+    var WITHCREDENTIALS: String
   }
   object CognitoConstants {
     
@@ -857,33 +853,32 @@ object mod {
     }
   }
   
-  @js.native
   trait CognitoSessionData extends StObject {
     
     /**
       * The session's access token.
       */
-    var AccessToken: js.UndefOr[CognitoAccessToken] = js.native
+    var AccessToken: js.UndefOr[CognitoAccessToken] = js.undefined
     
     /**
       * The session's Id token.
       */
-    var IdToken: js.UndefOr[CognitoIdToken] = js.native
+    var IdToken: js.UndefOr[CognitoIdToken] = js.undefined
     
     /**
       * The session's refresh token.
       */
-    var RefreshToken: js.UndefOr[CognitoRefreshToken] = js.native
+    var RefreshToken: js.UndefOr[CognitoRefreshToken] = js.undefined
     
     /**
       * The session's state.
       */
-    var State: js.UndefOr[String] = js.native
+    var State: js.UndefOr[String] = js.undefined
     
     /**
       * The session's token scopes.
       */
-    var TokenScopes: js.UndefOr[CognitoTokenScopes] = js.native
+    var TokenScopes: js.UndefOr[CognitoTokenScopes] = js.undefined
   }
   object CognitoSessionData {
     
@@ -928,26 +923,25 @@ object mod {
     }
   }
   
-  @js.native
   trait XDomainRequest extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    def onerror(): Unit = js.native
+    def onerror(): Unit
     
-    def onload(): Unit = js.native
+    def onload(): Unit
     
-    def onprogress(): Unit = js.native
+    def onprogress(): Unit
     
-    def ontimeout(): Unit = js.native
+    def ontimeout(): Unit
     
-    def open(method: String, url: String): Unit = js.native
+    def open(method: String, url: String): Unit
     
-    val responseText: String = js.native
+    val responseText: String
     
-    def send(data: String): Unit = js.native
+    def send(data: String): Unit
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object XDomainRequest {
     

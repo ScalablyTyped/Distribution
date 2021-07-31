@@ -2,20 +2,20 @@ package typings.tensorflowTfjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object broadcastUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/broadcast_util", "assertAndGetBroadcastShape")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/broadcast_util", JSImport.Namespace)
   @js.native
-  def assertAndGetBroadcastShape(shapeA: js.Array[Double], shapeB: js.Array[Double]): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/broadcast_util", "getBroadcastDims")
-  @js.native
-  def getBroadcastDims(inShape: js.Array[Double], outShape: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def assertAndGetBroadcastShape(shapeA: js.Array[Double], shapeB: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("assertAndGetBroadcastShape")(shapeA.asInstanceOf[js.Any], shapeB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/broadcast_util", "getReductionAxes")
-  @js.native
-  def getReductionAxes(inShape: js.Array[Double], outShape: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def getBroadcastDims(inShape: js.Array[Double], outShape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBroadcastDims")(inShape.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def getReductionAxes(inShape: js.Array[Double], outShape: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReductionAxes")(inShape.asInstanceOf[js.Any], outShape.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
 }

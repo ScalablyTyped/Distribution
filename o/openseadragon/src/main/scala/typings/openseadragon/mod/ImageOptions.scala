@@ -6,53 +6,51 @@ import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageOptions extends StObject {
   
-  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var clip: js.UndefOr[Rect] = js.native
+  var clip: js.UndefOr[Rect] = js.undefined
   
-  var collectionImmediately: js.UndefOr[Boolean] = js.native
+  var collectionImmediately: js.UndefOr[Boolean] = js.undefined
   
-  var compositeOperation: js.UndefOr[String] = js.native
+  var compositeOperation: js.UndefOr[String] = js.undefined
   
-  var crossOriginPolicy: js.UndefOr[String] = js.native
+  var crossOriginPolicy: js.UndefOr[String] = js.undefined
   
-  var degrees: js.UndefOr[Double] = js.native
+  var degrees: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
   
-  var fitBounds: js.UndefOr[Rect] = js.native
+  var fitBounds: js.UndefOr[Rect] = js.undefined
   
-  var fitBoundsPlacement: js.UndefOr[Placement] = js.native
+  var fitBoundsPlacement: js.UndefOr[Placement] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var loadTilesWithAjax: js.UndefOr[Boolean] = js.native
+  var loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
+  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object ImageOptions {
   

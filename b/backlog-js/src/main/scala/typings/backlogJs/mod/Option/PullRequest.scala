@@ -2,21 +2,19 @@ package typings.backlogJs.mod.Option
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullRequest {
   
-  @js.native
   trait GetPullRequestCommentsParams extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var maxId: js.UndefOr[Double] = js.native
+    var maxId: js.UndefOr[Double] = js.undefined
     
-    var minId: js.UndefOr[Double] = js.native
+    var minId: js.UndefOr[Double] = js.undefined
     
-    var order: js.UndefOr[Order] = js.native
+    var order: js.UndefOr[Order] = js.undefined
   }
   object GetPullRequestCommentsParams {
     
@@ -55,20 +53,19 @@ object PullRequest {
     }
   }
   
-  @js.native
   trait GetPullRequestsParams extends StObject {
     
-    var assigneeId: js.UndefOr[js.Array[Double]] = js.native
+    var assigneeId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var createdUserId: js.UndefOr[js.Array[Double]] = js.native
+    var createdUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var issueId: js.UndefOr[js.Array[Double]] = js.native
+    var issueId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var statusId: js.UndefOr[js.Array[Double]] = js.native
+    var statusId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object GetPullRequestsParams {
     
@@ -131,10 +128,9 @@ object PullRequest {
     }
   }
   
-  @js.native
   trait PatchPullRequestCommentsParams extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object PatchPullRequestCommentsParams {
     
@@ -152,20 +148,19 @@ object PullRequest {
     }
   }
   
-  @js.native
   trait PatchPullRequestParams extends StObject {
     
-    var assigneeId: js.UndefOr[Double] = js.native
+    var assigneeId: js.UndefOr[Double] = js.undefined
     
-    var comment: js.UndefOr[js.Array[String]] = js.native
+    var comment: js.UndefOr[js.Array[String]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var issueId: js.UndefOr[Double] = js.native
+    var issueId: js.UndefOr[Double] = js.undefined
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
   }
   object PatchPullRequestParams {
     
@@ -222,12 +217,11 @@ object PullRequest {
     }
   }
   
-  @js.native
   trait PostPullRequestCommentsParams extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object PostPullRequestCommentsParams {
     
@@ -254,24 +248,23 @@ object PullRequest {
     }
   }
   
-  @js.native
   trait PostPullRequestParams extends StObject {
     
-    var assigneeId: js.UndefOr[Double] = js.native
+    var assigneeId: js.UndefOr[Double] = js.undefined
     
-    var attachmentId: js.UndefOr[js.Array[Double]] = js.native
+    var attachmentId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var base: String = js.native
+    var base: String
     
-    var branch: String = js.native
+    var branch: String
     
-    var description: String = js.native
+    var description: String
     
-    var issueId: js.UndefOr[Double] = js.native
+    var issueId: js.UndefOr[Double] = js.undefined
     
-    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.native
+    var notifiedUserId: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var summary: String = js.native
+    var summary: String
   }
   object PostPullRequestParams {
     

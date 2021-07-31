@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDescribeSimulationJobRequest extends StObject {
   
   /**
     * A list of Amazon Resource Names (ARNs) of simulation jobs to describe.
     */
-  var jobs: Arns = js.native
+  var jobs: Arns
 }
 object BatchDescribeSimulationJobRequest {
   

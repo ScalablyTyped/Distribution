@@ -10,18 +10,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FC<antd.antd/lib/config-provider.ConfigProviderProps> & {  ConfigContext :react.react.Context<antd.antd/lib/config-provider/context.ConfigConsumerProps>} */
 object ConfigProvider {
   
-  @JSImport("antd", "ConfigProvider")
-  @js.native
-  def apply(props: PropsWithChildren[ConfigProviderProps]): ReactElement | Null = js.native
-  @JSImport("antd", "ConfigProvider")
-  @js.native
-  def apply(props: PropsWithChildren[ConfigProviderProps], context: js.Any): ReactElement | Null = js.native
+  @scala.inline
+  def apply(props: PropsWithChildren[ConfigProviderProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def apply(props: PropsWithChildren[ConfigProviderProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
   @JSImport("antd", "ConfigProvider")
   @js.native
   val ^ : js.Any = js.native

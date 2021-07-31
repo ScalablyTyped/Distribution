@@ -2,26 +2,24 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsFilterTerm extends StObject {
   
   /**
     * The operator to use to filter the results.
     */
-  var comparator: js.UndefOr[JobComparator] = js.native
+  var comparator: js.UndefOr[JobComparator] = js.undefined
   
   /**
     * The property to use to filter the results.
     */
-  var key: js.UndefOr[ListJobsFilterKey] = js.native
+  var key: js.UndefOr[ListJobsFilterKey] = js.undefined
   
   /**
     * An array that lists one or more values to use to filter the results.
     */
-  var values: js.UndefOr[listOfString] = js.native
+  var values: js.UndefOr[listOfString] = js.undefined
 }
 object ListJobsFilterTerm {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plusDomains/v1", "plusDomains_v1.Resource$Circles")
@@ -33,7 +32,7 @@ class ResourceCircles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(callback: BodyResponseCallback[SchemaCircleFeed]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCircleFeed] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(params: ParamsResourceCirclesList): GaxiosPromise[SchemaCircleFeed] = js.native
   def list(params: ParamsResourceCirclesList, callback: BodyResponseCallback[SchemaCircleFeed]): Unit = js.native
   def list(

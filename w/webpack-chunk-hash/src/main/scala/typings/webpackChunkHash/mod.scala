@@ -6,39 +6,39 @@ import typings.webpackChunkHash.webpackChunkHashStrings.hex
 import typings.webpackChunkHash.webpackChunkHashStrings.latin1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-chunk-hash", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * @default null
       * @description A callback to add more content to the resulting hash
       */
-    var additionalHashContent: js.UndefOr[js.Function1[/* chunk */ js.Any, String]] = js.native
+    var additionalHashContent: js.UndefOr[js.Function1[/* chunk */ js.Any, String]] = js.undefined
     
     /**
       * @default 'md5'
       * @description The hash algorithm to use
       * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
       */
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'hex'
       * @description The digest enconding to use
       * @see {@link https://nodejs.org/api/crypto.html#crypto_crypto_createhash_algorithm_options}
       */
-    var digest: js.UndefOr[hex | latin1 | base64] = js.native
+    var digest: js.UndefOr[hex | latin1 | base64] = js.undefined
   }
   object Options {
     

@@ -7,22 +7,20 @@ import typings.aliApp.aliAppNumbers.`3`
 import typings.aliApp.my.LocationData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.GetLocationOptions> */
-@js.native
 trait PartialGetLocationOptions extends StObject {
   
-  var cacheTimeout: js.UndefOr[Double] = js.native
+  var cacheTimeout: js.UndefOr[Double] = js.undefined
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ LocationData, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ LocationData, Unit]] = js.undefined
   
-  var `type`: js.UndefOr[`0` | `1` | `2` | `3`] = js.native
+  var `type`: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
 }
 object PartialGetLocationOptions {
   

@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.geodesic
 import typings.arcgisJsApi.arcgisJsApiStrings.planar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LengthsParameters
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

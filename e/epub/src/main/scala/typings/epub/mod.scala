@@ -5,7 +5,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,8 +39,8 @@ object mod {
   class ^ protected () extends EPub {
     def this(epubfile: String) = this()
     def this(epubfile: String, imagewebroot: String) = this()
-    def this(epubfile: String, imagewebroot: js.UndefOr[scala.Nothing], chapterwebroot: String) = this()
     def this(epubfile: String, imagewebroot: String, chapterwebroot: String) = this()
+    def this(epubfile: String, imagewebroot: Unit, chapterwebroot: String) = this()
   }
   
   @js.native
@@ -74,18 +73,17 @@ object mod {
     var toc: js.Array[TocElement] = js.native
   }
   
-  @js.native
   trait TocElement extends StObject {
     
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var level: Double = js.native
+    var level: Double
     
-    var order: Double = js.native
+    var order: Double
     
-    var title: String = js.native
+    var title: String
   }
   object TocElement {
     

@@ -2,7 +2,6 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Collections {
@@ -33,38 +32,92 @@ object Collections {
   @JSImport("typescript-services", "Collections.HashTable")
   @js.native
   class HashTable[TKey, TValue] protected ()
-    extends typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] {
+    extends StObject
+       with typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] {
     def this(capacity: Double, hash: js.Function1[/* k */ TKey, Double]) = this()
+    
+    /* CompleteClass */
+    override def add(key: TKey, value: TValue): Unit = js.native
+    
+    /* CompleteClass */
+    /* private */ override def addEntry(key: js.Any, value: js.Any, hashCode: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def addOrSet(key: js.Any, value: js.Any, throwOnExistingEntry: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def computeHashCode(key: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def containsKey(key: TKey): Boolean = js.native
+    
+    /* CompleteClass */
+    var count: js.Any = js.native
+    
+    /* CompleteClass */
+    var entries: js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def findEntry(key: js.Any, hashCode: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def get(key: TKey): TValue = js.native
+    
+    /* CompleteClass */
+    /* private */ override def grow(): js.Any = js.native
+    
+    /* CompleteClass */
+    var hash: js.Any = js.native
+    
+    /* CompleteClass */
+    override def set(key: TKey, value: TValue): Unit = js.native
   }
   
   @JSImport("typescript-services", "Collections.StringTable")
   @js.native
   class StringTable protected ()
-    extends typings.typescriptServices.TypeScript.Collections.StringTable {
+    extends StObject
+       with typings.typescriptServices.TypeScript.Collections.StringTable {
     def this(capacity: Double) = this()
+    
+    /* CompleteClass */
+    override def addCharArray(key: js.Array[Double], start: Double, len: Double): String = js.native
+    
+    /* CompleteClass */
+    /* private */ override def addEntry(text: js.Any, hashCode: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    var count: js.Any = js.native
+    
+    /* CompleteClass */
+    var entries: js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def findCharArrayEntry(key: js.Any, start: js.Any, len: js.Any, hashCode: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def grow(): js.Any = js.native
   }
   object StringTable {
     
-    /* static member */
-    @JSImport("typescript-services", "Collections.StringTable.textCharArrayEquals")
+    @JSImport("typescript-services", "Collections.StringTable")
     @js.native
-    def textCharArrayEquals(text: js.Any, array: js.Any, start: js.Any, length: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def textCharArrayEquals(text: js.Any, array: js.Any, start: js.Any, length: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("textCharArrayEquals")(text.asInstanceOf[js.Any], array.asInstanceOf[js.Any], start.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @JSImport("typescript-services", "Collections.createHashTable")
-  @js.native
-  def createHashTable[TKey, TValue](): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = js.native
-  @JSImport("typescript-services", "Collections.createHashTable")
-  @js.native
-  def createHashTable[TKey, TValue](capacity: js.UndefOr[scala.Nothing], hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = js.native
-  @JSImport("typescript-services", "Collections.createHashTable")
-  @js.native
-  def createHashTable[TKey, TValue](capacity: Double): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = js.native
-  @JSImport("typescript-services", "Collections.createHashTable")
-  @js.native
-  def createHashTable[TKey, TValue](capacity: Double, hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = js.native
+  @scala.inline
+  def createHashTable[TKey, TValue](): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")().asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
+  @scala.inline
+  def createHashTable[TKey, TValue](capacity: Double): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")(capacity.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
+  @scala.inline
+  def createHashTable[TKey, TValue](capacity: Double, hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")(capacity.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
+  @scala.inline
+  def createHashTable[TKey, TValue](capacity: Unit, hash: js.Function1[/* k */ TKey, Double]): typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createHashTable")(capacity.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.Collections.HashTable[TKey, TValue]]
   
-  @JSImport("typescript-services", "Collections.identityHashCode")
-  @js.native
-  def identityHashCode(value: js.Any): Double = js.native
+  @scala.inline
+  def identityHashCode(value: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("identityHashCode")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

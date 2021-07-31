@@ -3,21 +3,21 @@ package typings.angularCompiler.compileMetadataMod
 import typings.angularCompiler.anon.Module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompileNgModuleSummary extends CompileTypeSummary {
+trait CompileNgModuleSummary
+  extends StObject
+     with CompileTypeSummary {
   
-  var entryComponents: js.Array[CompileEntryComponentMetadata] = js.native
+  var entryComponents: js.Array[CompileEntryComponentMetadata]
   
-  var exportedDirectives: js.Array[CompileIdentifierMetadata] = js.native
+  var exportedDirectives: js.Array[CompileIdentifierMetadata]
   
-  var exportedPipes: js.Array[CompileIdentifierMetadata] = js.native
+  var exportedPipes: js.Array[CompileIdentifierMetadata]
   
-  var modules: js.Array[CompileTypeMetadata] = js.native
+  var modules: js.Array[CompileTypeMetadata]
   
-  var providers: js.Array[Module] = js.native
+  var providers: js.Array[Module]
 }
 object CompileNgModuleSummary {
   
@@ -30,7 +30,7 @@ object CompileNgModuleSummary {
     providers: js.Array[Module],
     `type`: CompileTypeMetadata
   ): CompileNgModuleSummary = {
-    val __obj = js.Dynamic.literal(entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], summaryKind = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CompileNgModuleSummary]
   }

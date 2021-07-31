@@ -3,17 +3,15 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSRoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUSER_COUNT_CHANGE extends StObject {
   
-  var room: SFSRoom = js.native
+  var room: SFSRoom
   
-  var sCount: Double = js.native
+  var sCount: Double
   
-  var uCount: Double = js.native
+  var uCount: Double
 }
 object IUSER_COUNT_CHANGE {
   

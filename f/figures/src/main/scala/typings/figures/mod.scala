@@ -2,7 +2,6 @@ package typings.figures
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {None (string : string): string,  readonly main :figures.figures.FigureSet,  readonly windows :figures.figures.FigureSet} & figures.figures.FigureSet */
@@ -23,9 +22,12 @@ object mod {
   	// On Windows:           √
   	```
   	*/
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("figures", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("figures", "arrowDown")
   @js.native
@@ -269,122 +271,121 @@ object mod {
   @js.native
   val windows: FigureSet = js.native
   
-  @js.native
   trait FigureSet extends StObject {
     
-    val arrowDown: String = js.native
+    val arrowDown: String
     
-    val arrowLeft: String = js.native
+    val arrowLeft: String
     
-    val arrowRight: String = js.native
+    val arrowRight: String
     
-    val arrowUp: String = js.native
+    val arrowUp: String
     
-    val bullet: String = js.native
+    val bullet: String
     
-    val checkboxCircleOff: String = js.native
+    val checkboxCircleOff: String
     
-    val checkboxCircleOn: String = js.native
+    val checkboxCircleOn: String
     
-    val checkboxOff: String = js.native
+    val checkboxOff: String
     
-    val checkboxOn: String = js.native
+    val checkboxOn: String
     
-    val circle: String = js.native
+    val circle: String
     
-    val circleCircle: String = js.native
+    val circleCircle: String
     
-    val circleCross: String = js.native
+    val circleCross: String
     
-    val circleDotted: String = js.native
+    val circleDotted: String
     
-    val circleDouble: String = js.native
+    val circleDouble: String
     
-    val circleFilled: String = js.native
+    val circleFilled: String
     
-    val circlePipe: String = js.native
+    val circlePipe: String
     
-    val circleQuestionMark: String = js.native
+    val circleQuestionMark: String
     
-    val cross: String = js.native
+    val cross: String
     
-    val dot: String = js.native
+    val dot: String
     
-    val ellipsis: String = js.native
+    val ellipsis: String
     
-    val fiveEighths: String = js.native
+    val fiveEighths: String
     
-    val fiveSixths: String = js.native
+    val fiveSixths: String
     
-    val fourFifths: String = js.native
+    val fourFifths: String
     
-    val hamburger: String = js.native
+    val hamburger: String
     
-    val heart: String = js.native
+    val heart: String
     
-    val info: String = js.native
+    val info: String
     
-    val line: String = js.native
+    val line: String
     
-    val mustache: String = js.native
+    val mustache: String
     
-    val nodejs: String = js.native
+    val nodejs: String
     
-    val oneEighth: String = js.native
+    val oneEighth: String
     
-    val oneFifth: String = js.native
+    val oneFifth: String
     
-    val oneHalf: String = js.native
+    val oneHalf: String
     
-    val oneNinth: String = js.native
+    val oneNinth: String
     
-    val oneQuarter: String = js.native
+    val oneQuarter: String
     
-    val oneSeventh: String = js.native
+    val oneSeventh: String
     
-    val oneSixth: String = js.native
+    val oneSixth: String
     
-    val oneTenth: String = js.native
+    val oneTenth: String
     
-    val oneThird: String = js.native
+    val oneThird: String
     
-    val play: String = js.native
+    val play: String
     
-    val pointer: String = js.native
+    val pointer: String
     
-    val pointerSmall: String = js.native
+    val pointerSmall: String
     
-    val questionMarkPrefix: String = js.native
+    val questionMarkPrefix: String
     
-    val radioOff: String = js.native
+    val radioOff: String
     
-    val radioOn: String = js.native
+    val radioOn: String
     
-    val sevenEighth: String = js.native
+    val sevenEighth: String
     
-    val smiley: String = js.native
+    val smiley: String
     
-    val square: String = js.native
+    val square: String
     
-    val squareSmall: String = js.native
+    val squareSmall: String
     
-    val squareSmallFilled: String = js.native
+    val squareSmallFilled: String
     
-    val star: String = js.native
+    val star: String
     
-    val threeEighths: String = js.native
+    val threeEighths: String
     
-    val threeFifths: String = js.native
+    val threeFifths: String
     
-    val threeQuarters: String = js.native
+    val threeQuarters: String
     
-    val tick: String = js.native
+    val tick: String
     
-    val twoFifths: String = js.native
+    val twoFifths: String
     
-    val twoThirds: String = js.native
+    val twoThirds: String
     
-    val warning: String = js.native
+    val warning: String
   }
   object FigureSet {
     

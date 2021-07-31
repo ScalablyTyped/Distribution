@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OptionInfo extends StObject {
   
   /**
     * A unique key that will be sent back to the agent if this response is given.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * A list of synonyms that can also be used to trigger this item in dialog.
     */
-  var synonyms: js.UndefOr[js.Array[String]] = js.native
+  var synonyms: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleActionsV2OptionInfo {
   

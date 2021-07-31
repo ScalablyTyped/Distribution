@@ -2,61 +2,59 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RxNormEntity extends StObject {
   
   /**
     * The extracted attributes that relate to the entity. The attributes recognized by InferRxNorm are DOSAGE, DURATION, FORM, FREQUENCY, RATE, ROUTE_OR_MODE, and STRENGTH.
     */
-  var Attributes: js.UndefOr[RxNormAttributeList] = js.native
+  var Attributes: js.UndefOr[RxNormAttributeList] = js.undefined
   
   /**
     * The 0-based character offset in the input text that shows where the entity begins. The offset returns the UTF-8 code point in the string.
     */
-  var BeginOffset: js.UndefOr[Integer] = js.native
+  var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     * The category of the entity. The recognized categories are GENERIC or BRAND_NAME.
     */
-  var Category: js.UndefOr[RxNormEntityCategory] = js.native
+  var Category: js.UndefOr[RxNormEntityCategory] = js.undefined
   
   /**
     * The 0-based character offset in the input text that shows where the entity ends. The offset returns the UTF-8 code point in the string.
     */
-  var EndOffset: js.UndefOr[Integer] = js.native
+  var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     * The numeric identifier for the entity. This is a monotonically increasing id unique within this response rather than a global unique identifier.
     */
-  var Id: js.UndefOr[Integer] = js.native
+  var Id: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The RxNorm concepts that the entity could refer to, along with a score indicating the likelihood of the match.
     */
-  var RxNormConcepts: js.UndefOr[RxNormConceptList] = js.native
+  var RxNormConcepts: js.UndefOr[RxNormConceptList] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend Medical has in the accuracy of the detected entity.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
   
   /**
     * The segment of input text extracted from which the entity was detected.
     */
-  var Text: js.UndefOr[OntologyLinkingBoundedLengthString] = js.native
+  var Text: js.UndefOr[OntologyLinkingBoundedLengthString] = js.undefined
   
   /**
     *  Contextual information for the entity.
     */
-  var Traits: js.UndefOr[RxNormTraitList] = js.native
+  var Traits: js.UndefOr[RxNormTraitList] = js.undefined
   
   /**
     *  Describes the specific type of entity. For InferRxNorm, the recognized entity type is MEDICATION.
     */
-  var Type: js.UndefOr[RxNormEntityType] = js.native
+  var Type: js.UndefOr[RxNormEntityType] = js.undefined
 }
 object RxNormEntity {
   

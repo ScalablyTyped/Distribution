@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EgressEndpoint extends StObject {
   
   /**
     * The ID of the PackagingConfiguration being applied to the Asset.
     */
-  var PackagingConfigurationId: js.UndefOr[string] = js.native
+  var PackagingConfigurationId: js.UndefOr[string] = js.undefined
   
   /**
     * The URL of the parent manifest for the repackaged Asset.
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
 }
 object EgressEndpoint {
   

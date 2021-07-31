@@ -12,7 +12,7 @@ Compiles sync functions into async generator functions
 | Keywords           | - |
 | # releases         | 8 |
 | # dependents       | 5 |
-| # downloads        | 76188453 |
+| # downloads        | 98130531 |
 | # stars            | 1 |
 
 ## Links

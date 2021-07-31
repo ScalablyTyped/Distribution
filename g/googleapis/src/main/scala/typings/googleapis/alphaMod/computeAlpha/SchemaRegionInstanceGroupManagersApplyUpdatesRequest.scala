@@ -2,39 +2,37 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * InstanceGroupManagers.applyUpdatesToInstances
   */
-@js.native
 trait SchemaRegionInstanceGroupManagersApplyUpdatesRequest extends StObject {
   
   /**
     * The list of instances for which we want to apply changes on this managed
     * instance group.
     */
-  var instances: js.UndefOr[js.Array[String]] = js.native
+  var instances: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The maximal action that should be performed on the instances. By default
     * REPLACE. This field is deprecated, please use
     * most_disruptive_allowed_action.
     */
-  var maximalAction: js.UndefOr[String] = js.native
+  var maximalAction: js.UndefOr[String] = js.undefined
   
   /**
     * The minimal action that should be perfomed on the instances. By default
     * NONE.
     */
-  var minimalAction: js.UndefOr[String] = js.native
+  var minimalAction: js.UndefOr[String] = js.undefined
   
   /**
     * The most disruptive action that allowed to be performed on the instances.
     * By default REPLACE.
     */
-  var mostDisruptiveAllowedAction: js.UndefOr[String] = js.native
+  var mostDisruptiveAllowedAction: js.UndefOr[String] = js.undefined
 }
 object SchemaRegionInstanceGroupManagersApplyUpdatesRequest {
   

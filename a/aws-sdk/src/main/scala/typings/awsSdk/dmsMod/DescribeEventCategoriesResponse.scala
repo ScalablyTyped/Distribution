@@ -2,16 +2,14 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventCategoriesResponse extends StObject {
   
   /**
     * A list of event categories.
     */
-  var EventCategoryGroupList: js.UndefOr[typings.awsSdk.dmsMod.EventCategoryGroupList] = js.native
+  var EventCategoryGroupList: js.UndefOr[typings.awsSdk.dmsMod.EventCategoryGroupList] = js.undefined
 }
 object DescribeEventCategoriesResponse {
   

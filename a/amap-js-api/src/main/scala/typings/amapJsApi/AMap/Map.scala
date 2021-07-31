@@ -53,18 +53,19 @@ import typings.amapJsApi.anon.PartialStatus
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Map extends EventEmitter {
+trait Map
+  extends StObject
+     with EventEmitter {
   
-  def add(overlay: js.Array[Overlay[_]]): Unit = js.native
+  def add(overlay: js.Array[Overlay[js.Any]]): Unit = js.native
   /**
     * 添加覆盖物/图层
     * @param overlay 覆盖物/图层
     */
-  def add(overlay: Overlay[_]): Unit = js.native
+  def add(overlay: Overlay[js.Any]): Unit = js.native
   
   /**
     * 添加控件
@@ -111,15 +112,15 @@ trait Map extends EventEmitter {
     * 返回添加的覆盖物对象
     * @param type 覆盖物类型
     */
-  def getAllOverlays(): js.Array[Overlay[_]] = js.native
+  def getAllOverlays(): js.Array[Overlay[js.Any]] = js.native
   @JSName("getAllOverlays")
-  def getAllOverlays_circle(`type`: circle): js.Array[Overlay[_]] = js.native
+  def getAllOverlays_circle(`type`: circle): js.Array[Overlay[js.Any]] = js.native
   @JSName("getAllOverlays")
-  def getAllOverlays_marker(`type`: marker): js.Array[Overlay[_]] = js.native
+  def getAllOverlays_marker(`type`: marker): js.Array[Overlay[js.Any]] = js.native
   @JSName("getAllOverlays")
-  def getAllOverlays_polygon(`type`: polygon_): js.Array[Overlay[_]] = js.native
+  def getAllOverlays_polygon(`type`: polygon_): js.Array[Overlay[js.Any]] = js.native
   @JSName("getAllOverlays")
-  def getAllOverlays_polyline(`type`: polyline): js.Array[Overlay[_]] = js.native
+  def getAllOverlays_polyline(`type`: polyline): js.Array[Overlay[js.Any]] = js.native
   
   /**
     * 获取当前地图视图范围，获取当前可视区域
@@ -277,12 +278,12 @@ trait Map extends EventEmitter {
     */
   def poiOnAMAP(obj: Location): Unit = js.native
   
-  def remove(overlay: js.Array[Overlay[_]]): Unit = js.native
+  def remove(overlay: js.Array[Overlay[js.Any]]): Unit = js.native
   /**
     * 删除覆盖物/图层
     * @param overlay 覆盖物/图层
     */
-  def remove(overlay: Overlay[_]): Unit = js.native
+  def remove(overlay: Overlay[js.Any]): Unit = js.native
   
   // TODO
   /**
@@ -342,104 +343,71 @@ trait Map extends EventEmitter {
     * @param maxZoom 最大缩放级别
     */
   def setFitView(): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[js.Any]]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.UndefOr[scala.Nothing],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.Tuple4[Double, Double, Double, Double]
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.Tuple4[Double, Double, Double, Double],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.UndefOr[scala.Nothing], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
-    immediately: Boolean,
-    avoid: js.UndefOr[scala.Nothing],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
+    overlayList: js.Array[Overlay[js.Any]],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double]
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.UndefOr[scala.Nothing],
+    overlayList: js.Array[Overlay[js.Any]],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[_]]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[_]],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.UndefOr[scala.Nothing],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: js.Array[Overlay[_]],
-    immediately: js.UndefOr[scala.Nothing],
+    overlayList: js.Array[Overlay[js.Any]],
+    immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double]
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[_]],
-    immediately: js.UndefOr[scala.Nothing],
+    overlayList: js.Array[Overlay[js.Any]],
+    immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: js.Array[Overlay[_]], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: js.Array[Overlay[js.Any]], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Unit, immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Unit, immediately: Boolean, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[_]],
+    overlayList: Unit,
     immediately: Boolean,
-    avoid: js.UndefOr[scala.Nothing],
+    avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Unit, immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Unit, immediately: Unit, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[_]],
+    overlayList: Unit,
+    immediately: Unit,
+    avoid: js.Tuple4[Double, Double, Double, Double],
+    maxZoom: Double
+  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Unit, immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[js.Any]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[js.Any], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(
+    overlayList: Overlay[js.Any],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double]
   ): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: js.Array[Overlay[_]],
+    overlayList: Overlay[js.Any],
     immediately: Boolean,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[_]): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[js.Any], immediately: Boolean, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[js.Any], immediately: Unit, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
   def setFitView(
-    overlayList: Overlay[_],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.UndefOr[scala.Nothing],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: Overlay[_],
-    immediately: js.UndefOr[scala.Nothing],
-    avoid: js.Tuple4[Double, Double, Double, Double]
-  ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: Overlay[_],
-    immediately: js.UndefOr[scala.Nothing],
+    overlayList: Overlay[js.Any],
+    immediately: Unit,
     avoid: js.Tuple4[Double, Double, Double, Double],
     maxZoom: Double
   ): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[_], immediately: Boolean): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[_], immediately: Boolean, avoid: js.UndefOr[scala.Nothing], maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(overlayList: Overlay[_], immediately: Boolean, avoid: js.Tuple4[Double, Double, Double, Double]): js.UndefOr[Bounds | `false`] = js.native
-  def setFitView(
-    overlayList: Overlay[_],
-    immediately: Boolean,
-    avoid: js.Tuple4[Double, Double, Double, Double],
-    maxZoom: Double
-  ): js.UndefOr[Bounds | `false`] = js.native
+  def setFitView(overlayList: Overlay[js.Any], immediately: Unit, avoid: Unit, maxZoom: Double): js.UndefOr[Bounds | `false`] = js.native
   
   /**
     * 设置地图标注显示的顺序
@@ -514,97 +482,96 @@ trait Map extends EventEmitter {
 }
 object Map {
   
-  @js.native
   trait EventMap extends StObject {
     
-    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, Map] = js.native
+    var click: MapsEvent[typings.amapJsApi.amapJsApiStrings.click, Map]
     
-    var complete: Event_[typings.amapJsApi.amapJsApiStrings.complete, js.UndefOr[scala.Nothing]] = js.native
+    var complete: Event_[typings.amapJsApi.amapJsApiStrings.complete, Unit]
     
-    var contextmenu: MapsEvent[typings.amapJsApi.amapJsApiStrings.contextmenu, Map] = js.native
+    var contextmenu: MapsEvent[typings.amapJsApi.amapJsApiStrings.contextmenu, Map]
     
-    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, Map] = js.native
+    var dblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.dblclick, Map]
     
-    var dragend: Event_[typings.amapJsApi.amapJsApiStrings.dragend, js.UndefOr[scala.Nothing]] = js.native
+    var dragend: Event_[typings.amapJsApi.amapJsApiStrings.dragend, Unit]
     
-    var dragging: Event_[typings.amapJsApi.amapJsApiStrings.dragging, js.UndefOr[scala.Nothing]] = js.native
+    var dragging: Event_[typings.amapJsApi.amapJsApiStrings.dragging, Unit]
     
-    var dragstart: Event_[typings.amapJsApi.amapJsApiStrings.dragstart, js.UndefOr[scala.Nothing]] = js.native
+    var dragstart: Event_[typings.amapJsApi.amapJsApiStrings.dragstart, Unit]
     
-    var hotspotclick: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotclick] = js.native
+    var hotspotclick: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotclick]
     
-    var hotspotout: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotout] = js.native
+    var hotspotout: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotout]
     
-    var hotspotover: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotover] = js.native
+    var hotspotover: HotspotEvent[typings.amapJsApi.amapJsApiStrings.hotspotover]
     
-    var mapmove: Event_[typings.amapJsApi.amapJsApiStrings.mapmove, js.UndefOr[scala.Nothing]] = js.native
+    var mapmove: Event_[typings.amapJsApi.amapJsApiStrings.mapmove, Unit]
     
-    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, Map] = js.native
+    var mousedown: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousedown, Map]
     
-    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, Map] = js.native
+    var mousemove: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousemove, Map]
     
-    var mouseout: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseout, Map] = js.native
+    var mouseout: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseout, Map]
     
-    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, Map] = js.native
+    var mouseover: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseover, Map]
     
-    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, Map] = js.native
+    var mouseup: MapsEvent[typings.amapJsApi.amapJsApiStrings.mouseup, Map]
     
-    var mousewheel: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousewheel, Map] = js.native
+    var mousewheel: MapsEvent[typings.amapJsApi.amapJsApiStrings.mousewheel, Map]
     
-    var moveend: Event_[typings.amapJsApi.amapJsApiStrings.moveend, js.UndefOr[scala.Nothing]] = js.native
+    var moveend: Event_[typings.amapJsApi.amapJsApiStrings.moveend, Unit]
     
-    var movestart: Event_[typings.amapJsApi.amapJsApiStrings.movestart, js.UndefOr[scala.Nothing]] = js.native
+    var movestart: Event_[typings.amapJsApi.amapJsApiStrings.movestart, Unit]
     
-    var rdblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rdblclick, Map] = js.native
+    var rdblclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rdblclick, Map]
     
-    var resize: Event_[typings.amapJsApi.amapJsApiStrings.resize, js.UndefOr[scala.Nothing]] = js.native
+    var resize: Event_[typings.amapJsApi.amapJsApiStrings.resize, Unit]
     
-    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, Map] = js.native
+    var rightclick: MapsEvent[typings.amapJsApi.amapJsApiStrings.rightclick, Map]
     
-    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, Map] = js.native
+    var touchend: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchend, Map]
     
-    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, Map] = js.native
+    var touchmove: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchmove, Map]
     
-    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, Map] = js.native
+    var touchstart: MapsEvent[typings.amapJsApi.amapJsApiStrings.touchstart, Map]
     
-    var zoomchange: Event_[typings.amapJsApi.amapJsApiStrings.zoomchange, js.UndefOr[scala.Nothing]] = js.native
+    var zoomchange: Event_[typings.amapJsApi.amapJsApiStrings.zoomchange, Unit]
     
-    var zoomend: Event_[typings.amapJsApi.amapJsApiStrings.zoomend, js.UndefOr[scala.Nothing]] = js.native
+    var zoomend: Event_[typings.amapJsApi.amapJsApiStrings.zoomend, Unit]
     
-    var zoomstart: Event_[typings.amapJsApi.amapJsApiStrings.zoomstart, js.UndefOr[scala.Nothing]] = js.native
+    var zoomstart: Event_[typings.amapJsApi.amapJsApiStrings.zoomstart, Unit]
   }
   object EventMap {
     
     @scala.inline
     def apply(
       click: MapsEvent[click, Map],
-      complete: Event_[complete, js.UndefOr[scala.Nothing]],
+      complete: Event_[complete, Unit],
       contextmenu: MapsEvent[contextmenu, Map],
       dblclick: MapsEvent[dblclick, Map],
-      dragend: Event_[dragend, js.UndefOr[scala.Nothing]],
-      dragging: Event_[dragging, js.UndefOr[scala.Nothing]],
-      dragstart: Event_[dragstart, js.UndefOr[scala.Nothing]],
+      dragend: Event_[dragend, Unit],
+      dragging: Event_[dragging, Unit],
+      dragstart: Event_[dragstart, Unit],
       hotspotclick: HotspotEvent[hotspotclick],
       hotspotout: HotspotEvent[hotspotout],
       hotspotover: HotspotEvent[hotspotover],
-      mapmove: Event_[mapmove, js.UndefOr[scala.Nothing]],
+      mapmove: Event_[mapmove, Unit],
       mousedown: MapsEvent[mousedown, Map],
       mousemove: MapsEvent[mousemove, Map],
       mouseout: MapsEvent[mouseout, Map],
       mouseover: MapsEvent[mouseover, Map],
       mouseup: MapsEvent[mouseup, Map],
       mousewheel: MapsEvent[mousewheel, Map],
-      moveend: Event_[moveend, js.UndefOr[scala.Nothing]],
-      movestart: Event_[movestart, js.UndefOr[scala.Nothing]],
+      moveend: Event_[moveend, Unit],
+      movestart: Event_[movestart, Unit],
       rdblclick: MapsEvent[rdblclick, Map],
-      resize: Event_[resize, js.UndefOr[scala.Nothing]],
+      resize: Event_[resize, Unit],
       rightclick: MapsEvent[rightclick, Map],
       touchend: MapsEvent[touchend, Map],
       touchmove: MapsEvent[touchmove, Map],
       touchstart: MapsEvent[touchstart, Map],
-      zoomchange: Event_[zoomchange, js.UndefOr[scala.Nothing]],
-      zoomend: Event_[zoomend, js.UndefOr[scala.Nothing]],
-      zoomstart: Event_[zoomstart, js.UndefOr[scala.Nothing]]
+      zoomchange: Event_[zoomchange, Unit],
+      zoomend: Event_[zoomend, Unit],
+      zoomstart: Event_[zoomstart, Unit]
     ): EventMap = {
       val __obj = js.Dynamic.literal(click = click.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], contextmenu = contextmenu.asInstanceOf[js.Any], dblclick = dblclick.asInstanceOf[js.Any], dragend = dragend.asInstanceOf[js.Any], dragging = dragging.asInstanceOf[js.Any], dragstart = dragstart.asInstanceOf[js.Any], hotspotclick = hotspotclick.asInstanceOf[js.Any], hotspotout = hotspotout.asInstanceOf[js.Any], hotspotover = hotspotover.asInstanceOf[js.Any], mapmove = mapmove.asInstanceOf[js.Any], mousedown = mousedown.asInstanceOf[js.Any], mousemove = mousemove.asInstanceOf[js.Any], mouseout = mouseout.asInstanceOf[js.Any], mouseover = mouseover.asInstanceOf[js.Any], mouseup = mouseup.asInstanceOf[js.Any], mousewheel = mousewheel.asInstanceOf[js.Any], moveend = moveend.asInstanceOf[js.Any], movestart = movestart.asInstanceOf[js.Any], rdblclick = rdblclick.asInstanceOf[js.Any], resize = resize.asInstanceOf[js.Any], rightclick = rightclick.asInstanceOf[js.Any], touchend = touchend.asInstanceOf[js.Any], touchmove = touchmove.asInstanceOf[js.Any], touchstart = touchstart.asInstanceOf[js.Any], zoomchange = zoomchange.asInstanceOf[js.Any], zoomend = zoomend.asInstanceOf[js.Any], zoomstart = zoomstart.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMap]
@@ -617,7 +584,7 @@ object Map {
       def setClick(value: MapsEvent[click, Map]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setComplete(value: Event_[complete, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextmenu(value: MapsEvent[contextmenu, Map]): Self = StObject.set(x, "contextmenu", value.asInstanceOf[js.Any])
@@ -626,13 +593,13 @@ object Map {
       def setDblclick(value: MapsEvent[dblclick, Map]): Self = StObject.set(x, "dblclick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDragend(value: Event_[dragend, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
+      def setDragend(value: Event_[dragend, Unit]): Self = StObject.set(x, "dragend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDragging(value: Event_[dragging, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
+      def setDragging(value: Event_[dragging, Unit]): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDragstart(value: Event_[dragstart, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
+      def setDragstart(value: Event_[dragstart, Unit]): Self = StObject.set(x, "dragstart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHotspotclick(value: HotspotEvent[hotspotclick]): Self = StObject.set(x, "hotspotclick", value.asInstanceOf[js.Any])
@@ -644,7 +611,7 @@ object Map {
       def setHotspotover(value: HotspotEvent[hotspotover]): Self = StObject.set(x, "hotspotover", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMapmove(value: Event_[mapmove, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "mapmove", value.asInstanceOf[js.Any])
+      def setMapmove(value: Event_[mapmove, Unit]): Self = StObject.set(x, "mapmove", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMousedown(value: MapsEvent[mousedown, Map]): Self = StObject.set(x, "mousedown", value.asInstanceOf[js.Any])
@@ -665,16 +632,16 @@ object Map {
       def setMousewheel(value: MapsEvent[mousewheel, Map]): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMoveend(value: Event_[moveend, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
+      def setMoveend(value: Event_[moveend, Unit]): Self = StObject.set(x, "moveend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMovestart(value: Event_[movestart, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "movestart", value.asInstanceOf[js.Any])
+      def setMovestart(value: Event_[movestart, Unit]): Self = StObject.set(x, "movestart", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRdblclick(value: MapsEvent[rdblclick, Map]): Self = StObject.set(x, "rdblclick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResize(value: Event_[resize, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
+      def setResize(value: Event_[resize, Unit]): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRightclick(value: MapsEvent[rightclick, Map]): Self = StObject.set(x, "rightclick", value.asInstanceOf[js.Any])
@@ -689,13 +656,13 @@ object Map {
       def setTouchstart(value: MapsEvent[touchstart, Map]): Self = StObject.set(x, "touchstart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setZoomchange(value: Event_[zoomchange, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "zoomchange", value.asInstanceOf[js.Any])
+      def setZoomchange(value: Event_[zoomchange, Unit]): Self = StObject.set(x, "zoomchange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setZoomend(value: Event_[zoomend, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "zoomend", value.asInstanceOf[js.Any])
+      def setZoomend(value: Event_[zoomend, Unit]): Self = StObject.set(x, "zoomend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setZoomstart(value: Event_[zoomstart, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "zoomstart", value.asInstanceOf[js.Any])
+      def setZoomstart(value: Event_[zoomstart, Unit]): Self = StObject.set(x, "zoomstart", value.asInstanceOf[js.Any])
     }
   }
   
@@ -723,53 +690,52 @@ object Map {
   
   type HotspotEvent[N /* <: String */] = Event_[N, IsIndoorPOI]
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 地图平移过程中是否使用动画
       */
-    var animateEnable: js.UndefOr[Boolean] = js.native
+    var animateEnable: js.UndefOr[Boolean] = js.undefined
     
     // internal
-    var baseRender: js.UndefOr[vw | d | dv | v] = js.native
+    var baseRender: js.UndefOr[vw | d | dv | v] = js.undefined
     
     /**
       * 楼块出现和消失的时候是否显示动画过程
       */
-    var buildingAnimation: js.UndefOr[Boolean] = js.native
+    var buildingAnimation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图中心点坐标值
       */
-    var center: js.UndefOr[LocationValue] = js.native
+    var center: js.UndefOr[LocationValue] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
     /**
       * 地图显示的参考坐标系
       */
-    var crs: js.UndefOr[EPSG3857 | EPSG3395 | EPSG4326] = js.native
+    var crs: js.UndefOr[EPSG3857 | EPSG3395 | EPSG4326] = js.undefined
     
     /**
       * 地图默认鼠标样式
       */
-    var defaultCursor: js.UndefOr[String] = js.native
+    var defaultCursor: js.UndefOr[String] = js.undefined
     
     /**
       * 当前地图中默认显示的图层
       */
-    var defaultLayer: js.UndefOr[TileLayer] = js.native
+    var defaultLayer: js.UndefOr[TileLayer] = js.undefined
     
     /**
       * 地图是否可通过双击鼠标放大地图
       */
-    var doubleClickZoom: js.UndefOr[Boolean] = js.native
+    var doubleClickZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图是否可通过鼠标拖拽平移
       */
-    var dragEnable: js.UndefOr[Boolean] = js.native
+    var dragEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 在展示矢量图的时候自动展示室内地图图层
@@ -778,55 +744,55 @@ object Map {
     /**
       * 是否支持可以扩展最大缩放级别
       */
-    var expandZoomRange: js.UndefOr[Boolean] = js.native
+    var expandZoomRange: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置地图上显示的元素种类
       */
-    var features: js.UndefOr[js.Array[Feature] | all | Feature] = js.native
+    var features: js.UndefOr[js.Array[Feature] | all | Feature] = js.undefined
     
-    var forceVector: js.UndefOr[Boolean] = js.native
+    var forceVector: js.UndefOr[Boolean] = js.undefined
     
-    var gridMapForeign: js.UndefOr[Boolean] = js.native
+    var gridMapForeign: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否开启地图热点和标注的hover效果
       */
-    var isHotspot: js.UndefOr[Boolean] = js.native
+    var isHotspot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图是否使用缓动效果
       */
-    var jogEnable: js.UndefOr[Boolean] = js.native
+    var jogEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图是否可通过键盘控制
       */
-    var keyboardEnable: js.UndefOr[Boolean] = js.native
+    var keyboardEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图标注显示顺序
       */
-    var labelzIndex: js.UndefOr[Double] = js.native
+    var labelzIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * 地图语言类型
       */
-    var lang: js.UndefOr[Lang] = js.native
+    var lang: js.UndefOr[Lang] = js.undefined
     
     /**
       * 地图图层数组，数组可以是图层 中的一个或多个，默认为普通二维地图
       */
-    var layers: js.UndefOr[js.Array[Layer]] = js.native
+    var layers: js.UndefOr[js.Array[Layer]] = js.undefined
     
-    var logoUrl: js.UndefOr[String] = js.native
+    var logoUrl: js.UndefOr[String] = js.undefined
     
-    var logoUrlRetina: js.UndefOr[String] = js.native
+    var logoUrlRetina: js.UndefOr[String] = js.undefined
     
     /**
       * 设置地图的显示样式
       */
-    var mapStyle: js.UndefOr[String] = js.native
+    var mapStyle: js.UndefOr[String] = js.undefined
     
     /**
       * 为 Map 实例指定掩模的路径，各图层将只显示路径范围内图像
@@ -835,99 +801,99 @@ object Map {
         js.Array[
           (js.Array[(js.Array[js.Tuple2[Double, Double]]) | (js.Tuple2[Double, Double])]) | (js.Tuple2[Double, Double])
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var maxPitch: js.UndefOr[Double] = js.native
+    var maxPitch: js.UndefOr[Double] = js.undefined
     
-    var overlayRender: js.UndefOr[c | d] = js.native
+    var overlayRender: js.UndefOr[c | d] = js.undefined
     
     /**
       * 俯仰角度
       */
-    var pitch: js.UndefOr[Double] = js.native
+    var pitch: js.UndefOr[Double] = js.undefined
     
     /**
       * 是否允许设置俯仰角度
       */
-    var pitchEnable: js.UndefOr[Boolean] = js.native
+    var pitchEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置地图的预加载模式
       */
-    var preloadMode: js.UndefOr[Boolean] = js.native
+    var preloadMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否监控地图容器尺寸变化
       */
-    var resizeEnable: js.UndefOr[Boolean] = js.native
+    var resizeEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图是否可旋转
       */
-    var rotateEnable: js.UndefOr[Boolean] = js.native
+    var rotateEnable: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /**
       * 地图是否可通过鼠标滚轮缩放浏览
       */
-    var scrollWheel: js.UndefOr[Boolean] = js.native
+    var scrollWheel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 设置地图显示3D楼块效果
       */
-    var showBuildingBlock: js.UndefOr[Boolean] = js.native
+    var showBuildingBlock: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 是否在有矢量底图的时候自动展示室内地图
       */
-    var showIndoorMap: js.UndefOr[Boolean] = js.native
+    var showIndoorMap: js.UndefOr[Boolean] = js.undefined
     
-    var showLabel: js.UndefOr[Boolean] = js.native
+    var showLabel: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 调整天空颜色
       */
-    var skyColor: js.UndefOr[String] = js.native
+    var skyColor: js.UndefOr[String] = js.undefined
     
     /**
       * 地图在移动终端上是否可通过多点触控缩放浏览地图
       */
-    var touchZoom: js.UndefOr[Boolean] = js.native
+    var touchZoom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 当touchZoomCenter=1的时候，手机端双指缩放的以地图中心为中心，否则默认以双指中间点为中心
       */
-    var touchZoomCenter: js.UndefOr[Double] = js.native
+    var touchZoomCenter: js.UndefOr[Double] = js.undefined
     
-    var turboMode: js.UndefOr[Boolean] = js.native
+    var turboMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图视口，用于控制影响地图静态显示的属性
       */
-    var view: js.UndefOr[View2D] = js.native
+    var view: js.UndefOr[View2D] = js.undefined
     
     /**
       * 视图模式
       */
-    var viewMode: js.UndefOr[ViewMode] = js.native
+    var viewMode: js.UndefOr[ViewMode] = js.undefined
     
-    var workerMode: js.UndefOr[Boolean] = js.native
+    var workerMode: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图显示的缩放级别
       */
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
     
     /**
       * 地图是否可缩放
       */
-    var zoomEnable: js.UndefOr[Boolean] = js.native
+    var zoomEnable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 地图显示的缩放级别范围
       */
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     
@@ -1233,62 +1199,61 @@ object Map {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
     /**
       * 是否开启动画
       */
-    var animateEnable: Boolean = js.native
+    var animateEnable: Boolean
     
     /**
       * 是否双击缩放
       */
-    var doubleClickZoom: Boolean = js.native
+    var doubleClickZoom: Boolean
     
     /**
       * 是否支持拖拽
       */
-    var dragEnable: Boolean = js.native
+    var dragEnable: Boolean
     
-    var isHotspot: Boolean = js.native
+    var isHotspot: Boolean
     
     /**
       * 是否开启缓动效果
       */
-    var jogEnable: Boolean = js.native
+    var jogEnable: Boolean
     
     /**
       * 是否支持键盘
       */
-    var keyboardEnable: Boolean = js.native
+    var keyboardEnable: Boolean
     
     /**
       * 是否支持调整俯仰角
       */
-    var pitchEnable: Boolean = js.native
+    var pitchEnable: Boolean
     
-    var resizeEnable: Boolean = js.native
+    var resizeEnable: Boolean
     
     /**
       * 是否支持旋转
       */
-    var rotateEnable: Boolean = js.native
+    var rotateEnable: Boolean
     
     /**
       * 是否支持滚轮缩放
       */
-    var scrollWheel: Boolean = js.native
+    var scrollWheel: Boolean
     
     /**
       * 是否支持触摸缩放
       */
-    var touchZoom: Boolean = js.native
+    var touchZoom: Boolean
     
     /**
       * 是否支持缩放
       */
-    var zoomEnable: Boolean = js.native
+    var zoomEnable: Boolean
   }
   object Status {
     

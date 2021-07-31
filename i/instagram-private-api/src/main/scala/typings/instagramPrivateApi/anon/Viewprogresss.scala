@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewprogresss extends StObject {
   
-  var view_progress_s: Double = js.native
+  var view_progress_s: Double
 }
 object Viewprogresss {
   

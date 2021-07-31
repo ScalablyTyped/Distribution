@@ -15,25 +15,23 @@ import typings.exceljs.exceljsStrings.top
 import typings.exceljs.exceljsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alignment extends StObject {
   
-  var horizontal: left | center | right | fill | justify | centerContinuous | distributed = js.native
+  var horizontal: left | center | right | fill | justify | centerContinuous | distributed
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var readingOrder: rtl | ltr = js.native
+  var readingOrder: rtl | ltr
   
-  var shrinkToFit: Boolean = js.native
+  var shrinkToFit: Boolean
   
-  var textRotation: Double | vertical = js.native
+  var textRotation: Double | vertical
   
-  var vertical: top | middle | bottom | distributed | justify = js.native
+  var vertical: top | middle | bottom | distributed | justify
   
-  var wrapText: Boolean = js.native
+  var wrapText: Boolean
 }
 object Alignment {
   

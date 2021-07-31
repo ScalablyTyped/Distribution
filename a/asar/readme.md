@@ -10,9 +10,9 @@ Creating Electron app packages
 | ------------------ | :-------------: |
 | Full name          | asar |
 | Keywords           | - |
-| # releases         | 13 |
-| # dependents       | 97 |
-| # downloads        | 11445637 |
+| # releases         | 10 |
+| # dependents       | 107 |
+| # downloads        | 14235978 |
 | # stars            | 15 |
 
 ## Links

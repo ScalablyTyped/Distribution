@@ -2,23 +2,21 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRestrictionsForRepo extends StObject {
   
-  var getRestrictionsForOrg: `712` = js.native
+  var getRestrictionsForOrg: `712`
   
-  var getRestrictionsForRepo: `713` = js.native
+  var getRestrictionsForRepo: `713`
   
-  var removeRestrictionsForOrg: `714` = js.native
+  var removeRestrictionsForOrg: `714`
   
-  var removeRestrictionsForRepo: `715` = js.native
+  var removeRestrictionsForRepo: `715`
   
-  var setRestrictionsForOrg: `716` = js.native
+  var setRestrictionsForOrg: `716`
   
-  var setRestrictionsForRepo: `717` = js.native
+  var setRestrictionsForRepo: `717`
 }
 object GetRestrictionsForRepo {
   

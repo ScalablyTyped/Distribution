@@ -2,21 +2,19 @@ package typings.requireHacker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Path extends StObject {
     
     /**
       * The absolute path of the path argument passed to this `require` function (which could be relative).
       */
-    var path: String = js.native
+    var path: String
     
     /** Valid CommonJS JavaScript module source code. */
-    var source: String = js.native
+    var source: String
   }
   object Path {
     

@@ -2,31 +2,29 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantFrame extends StObject {
   
-  var currentGold: Double = js.native
+  var currentGold: Double
   
-  var dominionScore: Double = js.native
+  var dominionScore: Double
   
-  var jungleMinionsKilled: Double = js.native
+  var jungleMinionsKilled: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  var minionsKilled: Double = js.native
+  var minionsKilled: Double
   
-  var participantId: Double = js.native
+  var participantId: Double
   
-  var position: Position = js.native
+  var position: Position
   
-  var teamScore: Double = js.native
+  var teamScore: Double
   
-  var totalGold: Double = js.native
+  var totalGold: Double
   
-  var xp: Double = js.native
+  var xp: Double
 }
 object ParticipantFrame {
   

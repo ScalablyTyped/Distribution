@@ -10,9 +10,9 @@ A common util collection for antv projects
 | ------------------ | :-------------: |
 | Full name          | @antv/matrix-util |
 | Keywords           | util, antv, g |
-| # releases         | 29 |
-| # dependents       | 15 |
-| # downloads        | 739048 |
+| # releases         | 30 |
+| # dependents       | 24 |
+| # downloads        | 1283879 |
 | # stars            | 0 |
 
 ## Links

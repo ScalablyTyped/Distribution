@@ -2,36 +2,34 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
   /**
     * The author of the social network post.
     */
-  var author: String = js.native
+  var author: String
   
   /**
     * An image of the posts author.
     */
-  var imageUrl: String = js.native
+  var imageUrl: String
   
   /**
     * The URL of the social network post.
     */
-  var referenceUrl: String = js.native
+  var referenceUrl: String
   
   /**
     * The resourceId object encapsulates information that identifies the resource associated with a social network post.
     */
-  var resourceId: KindPlaylistId = js.native
+  var resourceId: KindPlaylistId
   
   /**
     * The name of the social network.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Author {
   

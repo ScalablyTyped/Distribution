@@ -6,7 +6,6 @@ import typings.jestTypes.globalMod.TestFn
 import typings.jestTypes.globalMod.TestName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @jest/types.@jest/types/build/Global.ItBase & {  concurrent :@jest/types.@jest/types/build/Global.ItConcurrentBase | undefined} */

@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddDocumentsRequest extends StObject {
   
   // Array of JSON documents
-  var data: js.Array[js.Object] = js.native
+  var data: js.Array[js.Object]
 }
 object AddDocumentsRequest {
   

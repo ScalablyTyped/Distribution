@@ -2,33 +2,31 @@ package typings.googleapis.monitoringV3Mod.monitoringV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the error status for payloads that were not written.
   */
-@js.native
 trait SchemaCollectdPayloadError extends StObject {
   
   /**
     * Records the error status for the payload. If this field is present, the
     * partial errors for nested values won&#39;t be populated.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * The zero-based index in
     * CreateCollectdTimeSeriesRequest.collectd_payloads.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Records the error status for values that were not written due to an
     * error.Failed payloads for which nothing is written will not include
     * partial value errors.
     */
-  var valueErrors: js.UndefOr[js.Array[SchemaCollectdValueError]] = js.native
+  var valueErrors: js.UndefOr[js.Array[SchemaCollectdValueError]] = js.undefined
 }
 object SchemaCollectdPayloadError {
   

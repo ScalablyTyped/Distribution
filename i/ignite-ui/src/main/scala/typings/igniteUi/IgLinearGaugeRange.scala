@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLinearGaugeRange
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,56 +15,56 @@ trait IgLinearGaugeRange
   /**
     * Gets or sets the brush to use to fill the range.
     */
-  var brush: js.UndefOr[String] = js.native
+  var brush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the value at which the range ends along the scale.
     */
-  var endValue: js.UndefOr[Double] = js.native
+  var endValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the distance measured from the front/bottom of the bullet graph (from 0 to 1) at which to end rendering the inner edge of the range.
     * Values further from zero than 1 can be used to make this extend further than the normal width/height of the bullet graph.
     */
-  var innerEndExtent: js.UndefOr[Double] = js.native
+  var innerEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the distance measured from the front/bottom of the bullet graph (from 0 to 1) at which to start rendering the inner edge of the range.
     * Values further from zero than 1 can be used to make this extend further than the normal width/height of the bullet graph.
     */
-  var innerStartExtent: js.UndefOr[Double] = js.native
+  var innerStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the name of the range.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the distance measured from the front/bottom of the bullet graph (from 0 to 1) at which to end rendering the outer edge of the range.
     * Values further from zero than 1 can be used to make this extend further than the normal width/height of the bullet graph.
     */
-  var outerEndExtent: js.UndefOr[Double] = js.native
+  var outerEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the distance measured from the front/bottom of the bullet graph (from 0 to 1) at which to start rendering the outer edge of the range.
     * Values further from zero than 1 can be used to make this extend further than the normal width/height of the bullet graph.
     */
-  var outerStartExtent: js.UndefOr[Double] = js.native
+  var outerStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the outline to use when rendering the range.
     */
-  var outline: js.UndefOr[String] = js.native
+  var outline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the value at which the range starts along the scale.
     */
-  var startValue: js.UndefOr[Double] = js.native
+  var startValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the stroke thickness to use when rendering this range's outline.
     */
-  var strokeThickness: js.UndefOr[Double] = js.native
+  var strokeThickness: js.UndefOr[Double] = js.undefined
 }
 object IgLinearGaugeRange {
   

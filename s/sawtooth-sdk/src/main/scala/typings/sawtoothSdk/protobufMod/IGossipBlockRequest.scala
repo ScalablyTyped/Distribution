@@ -2,20 +2,18 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGossipBlockRequest extends StObject {
   
   /** GossipBlockRequest blockId */
-  var blockId: js.UndefOr[String | Null] = js.native
+  var blockId: js.UndefOr[String | Null] = js.undefined
   
   /** GossipBlockRequest nonce */
-  var nonce: js.UndefOr[String | Null] = js.native
+  var nonce: js.UndefOr[String | Null] = js.undefined
   
   /** GossipBlockRequest timeToLive */
-  var timeToLive: js.UndefOr[Double | Null] = js.native
+  var timeToLive: js.UndefOr[Double | Null] = js.undefined
 }
 object IGossipBlockRequest {
   

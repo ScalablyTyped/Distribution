@@ -1,14 +1,16 @@
 package typings.mqtt
 
 import typings.mqtt.clientMod.IStream
-import typings.mqtt.clientOptionsMod.IClientOptions
 import typings.mqtt.storeOptionsMod.IStoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("mqtt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mqtt", "Client")
   @js.native
@@ -16,7 +18,7 @@ object mod {
     extends typings.mqtt.clientMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
-      options: IClientOptions
+      options: typings.mqtt.clientOptionsMod.IClientOptions
     ) = this()
   }
   
@@ -26,7 +28,7 @@ object mod {
     extends typings.mqtt.connectMod.MqttClient {
     def this(
       streamBuilder: js.Function1[/* client */ typings.mqtt.clientMod.MqttClient, IStream],
-      options: IClientOptions
+      options: typings.mqtt.clientOptionsMod.IClientOptions
     ) = this()
   }
   
@@ -53,22 +55,28 @@ object mod {
     * @param {String} [brokerUrl] - url of the broker, optional
     * @param {Object} opts - see MqttClient#constructor
     */
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(): typings.mqtt.clientMod.MqttClient = js.native
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(brokerUrl: js.UndefOr[scala.Nothing], opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = js.native
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(brokerUrl: String, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = js.native
-  @JSImport("mqtt", "connect")
-  @js.native
-  def connect(brokerUrl: js.Any, opts: IClientOptions): typings.mqtt.clientMod.MqttClient = js.native
+  @scala.inline
+  def connect(): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  @scala.inline
+  def connect(brokerUrl: String): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  @scala.inline
+  def connect(brokerUrl: String, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  @scala.inline
+  def connect(brokerUrl: js.Any): typings.mqtt.clientMod.MqttClient = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any]).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  @scala.inline
+  def connect(brokerUrl: js.Any, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  @scala.inline
+  def connect(brokerUrl: Unit, opts: typings.mqtt.clientOptionsMod.IClientOptions): typings.mqtt.clientMod.MqttClient = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(brokerUrl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.mqtt.clientMod.MqttClient]
+  
+  trait IClientOptions
+    extends StObject
+       with typings.mqtt.clientOptionsMod.IClientOptions
+  object IClientOptions {
+    
+    @scala.inline
+    def apply(): IClientOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[IClientOptions]
+    }
+  }
 }

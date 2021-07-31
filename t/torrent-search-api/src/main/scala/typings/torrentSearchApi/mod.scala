@@ -2,112 +2,91 @@ package typings.torrentSearchApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("torrent-search-api", "addProvider")
+  @JSImport("torrent-search-api", JSImport.Namespace)
   @js.native
-  def addProvider(provider: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("torrent-search-api", "disableAllProviders")
-  @js.native
-  def disableAllProviders(): Unit = js.native
+  @scala.inline
+  def addProvider(provider: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "disableProvider")
-  @js.native
-  def disableProvider(providerName: String): Unit = js.native
+  @scala.inline
+  def disableAllProviders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableAllProviders")().asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "downloadTorrent")
-  @js.native
-  def downloadTorrent(torrent: Torrent): js.Promise[String] = js.native
-  @JSImport("torrent-search-api", "downloadTorrent")
-  @js.native
-  def downloadTorrent(torrent: Torrent, filenamePath: String): js.Promise[String] = js.native
+  @scala.inline
+  def disableProvider(providerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableProvider")(providerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "enableProvider")
-  @js.native
-  def enableProvider(providerName: String): Unit = js.native
-  @JSImport("torrent-search-api", "enableProvider")
-  @js.native
-  def enableProvider(providerName: String, args: String*): Unit = js.native
-  @JSImport("torrent-search-api", "enableProvider")
-  @js.native
-  def enableProvider(providerName: String, args: js.Array[String]): Unit = js.native
+  @scala.inline
+  def downloadTorrent(torrent: Torrent): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("downloadTorrent")(torrent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def downloadTorrent(torrent: Torrent, filenamePath: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("downloadTorrent")(torrent.asInstanceOf[js.Any], filenamePath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("torrent-search-api", "enablePublicProviders")
-  @js.native
-  def enablePublicProviders(): Unit = js.native
+  @scala.inline
+  def enableProvider(providerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def enableProvider(providerName: String, args: String*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def enableProvider(providerName: String, args: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableProvider")(providerName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "getActiveProviders")
-  @js.native
-  def getActiveProviders(): js.Array[TorrentProvider] = js.native
+  @scala.inline
+  def enablePublicProviders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enablePublicProviders")().asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "getMagnet")
-  @js.native
-  def getMagnet(torrent: Torrent): js.Promise[String] = js.native
+  @scala.inline
+  def getActiveProviders(): js.Array[TorrentProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveProviders")().asInstanceOf[js.Array[TorrentProvider]]
   
-  @JSImport("torrent-search-api", "getProvider")
-  @js.native
-  def getProvider(name: String, throwOnError: Boolean): String = js.native
+  @scala.inline
+  def getMagnet(torrent: Torrent): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMagnet")(torrent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("torrent-search-api", "getProviders")
-  @js.native
-  def getProviders(): js.Array[TorrentProvider] = js.native
+  @scala.inline
+  def getProvider(name: String, throwOnError: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")(name.asInstanceOf[js.Any], throwOnError.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("torrent-search-api", "getTorrentDetails")
-  @js.native
-  def getTorrentDetails(torrent: Torrent): js.Promise[String] = js.native
+  @scala.inline
+  def getProviders(): js.Array[TorrentProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProviders")().asInstanceOf[js.Array[TorrentProvider]]
   
-  @JSImport("torrent-search-api", "isProviderActive")
-  @js.native
-  def isProviderActive(name: String): Boolean = js.native
+  @scala.inline
+  def getTorrentDetails(torrent: Torrent): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTorrentDetails")(torrent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("torrent-search-api", "loadProvider")
-  @js.native
-  def loadProvider(providerParam: String): Unit = js.native
-  @JSImport("torrent-search-api", "loadProvider")
-  @js.native
-  def loadProvider(providerParam: TorrentProvider): Unit = js.native
+  @scala.inline
+  def isProviderActive(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProviderActive")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("torrent-search-api", "loadProviders")
-  @js.native
-  def loadProviders(args: (String | TorrentProvider)*): Unit = js.native
+  @scala.inline
+  def loadProvider(providerParam: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def loadProvider(providerParam: TorrentProvider): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "lodProvider")
-  @js.native
-  def lodProvider(providerParam: String): Unit = js.native
+  @scala.inline
+  def loadProviders(args: (String | TorrentProvider)*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadProviders")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "overrideConfig")
-  @js.native
-  def overrideConfig(providerName: String, newConfig: TorrentProvider): js.Promise[String] = js.native
+  @scala.inline
+  def lodProvider(providerParam: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("lodProvider")(providerParam.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("torrent-search-api", "removeProvider")
-  @js.native
-  def removeProvider(providerName: String): Unit = js.native
+  @scala.inline
+  def overrideConfig(providerName: String, newConfig: TorrentProvider): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideConfig")(providerName.asInstanceOf[js.Any], newConfig.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("torrent-search-api", "search")
-  @js.native
-  def search(providers: js.Array[String], query: String, category: String, limit: Double): js.Promise[js.Array[Torrent]] = js.native
-  @JSImport("torrent-search-api", "search")
-  @js.native
-  def search(query: String, category: String, limit: Double): js.Promise[js.Array[Torrent]] = js.native
+  @scala.inline
+  def removeProvider(providerName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeProvider")(providerName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def search(providers: js.Array[String], query: String, category: String, limit: Double): js.Promise[js.Array[Torrent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(providers.asInstanceOf[js.Any], query.asInstanceOf[js.Any], category.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Torrent]]]
+  @scala.inline
+  def search(query: String, category: String, limit: Double): js.Promise[js.Array[Torrent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any], category.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Torrent]]]
+  
   trait Torrent extends StObject {
     
-    var desc: String = js.native
+    var desc: String
     
-    var magnet: String = js.native
+    var magnet: String
     
-    var provider: String = js.native
+    var provider: String
     
-    var size: String = js.native
+    var size: String
     
-    var time: String = js.native
+    var time: String
     
-    var title: String = js.native
+    var title: String
   }
   object Torrent {
     
@@ -140,51 +119,50 @@ object mod {
     }
   }
   
-  @js.native
   trait TorrentProvider extends StObject {
     
-    var autoFixUnstableUrl: Boolean = js.native
+    var autoFixUnstableUrl: Boolean
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var categories: js.Any = js.native
+    var categories: js.Any
     
     // FIXME {key: [string]}
-    var defaultCategory: String = js.native
+    var defaultCategory: String
     
-    var enableCloudFareBypass: Boolean = js.native
+    var enableCloudFareBypass: Boolean
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var itemSelectors: js.Any = js.native
+    var itemSelectors: js.Any
     
-    var itemsSelector: String = js.native
+    var itemsSelector: String
     
-    var loginQueryString: String = js.native
+    var loginQueryString: String
     
-    var loginUrl: String = js.native
+    var loginUrl: String
     
     // FIXME {key:[string]}
-    var magnetSelector: String = js.native
+    var magnetSelector: String
     
-    var name: String = js.native
+    var name: String
     
     // FIXME {key: [string]}
-    var paginateSelector: String = js.native
+    var paginateSelector: String
     
-    var requireAuthentification: Boolean = js.native
+    var requireAuthentification: Boolean
     
-    var resultsPerPageCount: Double = js.native
+    var resultsPerPageCount: Double
     
-    var searchUrl: String = js.native
+    var searchUrl: String
     
-    var supportCookiesAuthentification: Boolean = js.native
+    var supportCookiesAuthentification: Boolean
     
-    var supportCredentialsAuthentification: Boolean = js.native
+    var supportCredentialsAuthentification: Boolean
     
-    var supportTokenAuthentification: Boolean = js.native
+    var supportTokenAuthentification: Boolean
     
-    var torrentDetailsSelector: String = js.native
+    var torrentDetailsSelector: String
   }
   object TorrentProvider {
     

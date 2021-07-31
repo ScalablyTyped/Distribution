@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaceSearchSettings extends StObject {
   
   /**
     * The ID of a collection that contains faces that you want to search for.
     */
-  var CollectionId: js.UndefOr[typings.awsSdk.rekognitionMod.CollectionId] = js.native
+  var CollectionId: js.UndefOr[typings.awsSdk.rekognitionMod.CollectionId] = js.undefined
   
   /**
     * Minimum face match confidence score that must be met to return a result for a recognized face. Default is 80. 0 is the lowest confidence. 100 is the highest confidence.
     */
-  var FaceMatchThreshold: js.UndefOr[Percent] = js.native
+  var FaceMatchThreshold: js.UndefOr[Percent] = js.undefined
 }
 object FaceSearchSettings {
   

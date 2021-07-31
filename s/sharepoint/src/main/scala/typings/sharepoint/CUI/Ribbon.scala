@@ -3,31 +3,31 @@ package typings.sharepoint.CUI
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Ribbon extends Root {
+trait Ribbon
+  extends StObject
+     with Root {
   
-  def addChildAtIndex(child: js.Any, index: Double): scala.Unit = js.native
+  def addChildAtIndex(child: js.Any, index: Double): scala.Unit
   
-  def addContextualGroup(id: String, title: String, color: js.Any, command: String): js.Any = js.native
+  def addContextualGroup(id: String, title: String, color: js.Any, command: String): js.Any
   
-  def get_contextualGroupIds(): js.Array[String] = js.native
+  def get_contextualGroupIds(): js.Array[String]
   
-  def hideContextualGroup(id: String): scala.Unit = js.native
+  def hideContextualGroup(id: String): scala.Unit
   
-  def refresh(): scala.Unit = js.native
+  def refresh(): scala.Unit
   
-  def removeContextualGroup(id: String): scala.Unit = js.native
+  def removeContextualGroup(id: String): scala.Unit
   
-  def setFocus(): scala.Unit = js.native
+  def setFocus(): scala.Unit
   
-  def setFocusOnCurrentTab(): scala.Unit = js.native
+  def setFocusOnCurrentTab(): scala.Unit
   
-  def setFocusOnRibbon(): scala.Unit = js.native
+  def setFocusOnRibbon(): scala.Unit
   
-  def showContextualGroup(id: String): scala.Unit = js.native
+  def showContextualGroup(id: String): scala.Unit
 }
 object Ribbon {
   

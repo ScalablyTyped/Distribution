@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuditTaskMetadata extends StObject {
   
   /**
     * The ID of this audit.
     */
-  var taskId: js.UndefOr[AuditTaskId] = js.native
+  var taskId: js.UndefOr[AuditTaskId] = js.undefined
   
   /**
     * The status of this audit. One of "IN_PROGRESS", "COMPLETED", "FAILED", or "CANCELED".
     */
-  var taskStatus: js.UndefOr[AuditTaskStatus] = js.native
+  var taskStatus: js.UndefOr[AuditTaskStatus] = js.undefined
   
   /**
     * The type of this audit. One of "ON_DEMAND_AUDIT_TASK" or "SCHEDULED_AUDIT_TASK".
     */
-  var taskType: js.UndefOr[AuditTaskType] = js.native
+  var taskType: js.UndefOr[AuditTaskType] = js.undefined
 }
 object AuditTaskMetadata {
   

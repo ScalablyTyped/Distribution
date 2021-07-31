@@ -12,7 +12,6 @@ import typings.std.MediaStream
 import typings.std.MediaStreamTrack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simpleUserSimpleUserMod {
@@ -58,11 +57,7 @@ object simpleUserSimpleUserMod {
       * @param inviterInviteOptions - Optional options for Inviter.invite().
       */
     def call(destination: String): js.Promise[Unit] = js.native
-    def call(
-      destination: String,
-      inviterOptions: js.UndefOr[scala.Nothing],
-      inviterInviteOptions: InviterInviteOptions
-    ): js.Promise[Unit] = js.native
+    def call(destination: String, inviterOptions: Unit, inviterInviteOptions: InviterInviteOptions): js.Promise[Unit] = js.native
     def call(destination: String, inviterOptions: InviterOptions): js.Promise[Unit] = js.native
     def call(destination: String, inviterOptions: InviterOptions, inviterInviteOptions: InviterInviteOptions): js.Promise[Unit] = js.native
     
@@ -197,7 +192,7 @@ object simpleUserSimpleUserMod {
       * Resolves when the REGISTER request is sent, otherwise rejects.
       */
     def register(): js.Promise[Unit] = js.native
-    def register(registererOptions: js.UndefOr[scala.Nothing], registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
+    def register(registererOptions: Unit, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
     def register(registererOptions: RegistererOptions): js.Promise[Unit] = js.native
     def register(registererOptions: RegistererOptions, registererRegisterOptions: RegistererRegisterOptions): js.Promise[Unit] = js.native
     

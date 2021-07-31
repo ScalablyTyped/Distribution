@@ -2,36 +2,34 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderRefund extends StObject {
   
   /**
     * The actor that created the refund.
     */
-  var actor: js.UndefOr[String] = js.native
+  var actor: js.UndefOr[String] = js.undefined
   
   /**
     * The amount that is refunded.
     */
-  var amount: js.UndefOr[SchemaPrice] = js.native
+  var amount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Date on which the item has been created, in ISO 8601 format.
     */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the refund.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderRefund {
   

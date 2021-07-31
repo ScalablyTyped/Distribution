@@ -11,8 +11,8 @@ Convert a kebab-cased CSS property into a camelCased DOM property.
 | Full name          | camelcase-css |
 | Keywords           | camelcase, case, css, dom |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 37225235 |
+| # dependents       | 21 |
+| # downloads        | 62243741 |
 | # stars            | 0 |
 
 ## Links

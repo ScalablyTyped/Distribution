@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Storelayoutpages")
@@ -31,7 +30,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStorelayoutpagesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceStorelayoutpagesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -61,7 +60,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaStorePage] = js.native
   def get(callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
   def get(params: ParamsResourceStorelayoutpagesGet): GaxiosPromise[SchemaStorePage] = js.native
   def get(params: ParamsResourceStorelayoutpagesGet, callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
   def get(
@@ -91,7 +90,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaStorePage] = js.native
   def insert(callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
   def insert(params: ParamsResourceStorelayoutpagesInsert): GaxiosPromise[SchemaStorePage] = js.native
   def insert(params: ParamsResourceStorelayoutpagesInsert, callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
   def insert(
@@ -120,7 +119,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaStoreLayoutPagesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaStoreLayoutPagesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStoreLayoutPagesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStoreLayoutPagesListResponse] = js.native
   def list(params: ParamsResourceStorelayoutpagesList): GaxiosPromise[SchemaStoreLayoutPagesListResponse] = js.native
   def list(
     params: ParamsResourceStorelayoutpagesList,
@@ -155,7 +154,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaStorePage] = js.native
   def patch(callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
   def patch(params: ParamsResourceStorelayoutpagesPatch): GaxiosPromise[SchemaStorePage] = js.native
   def patch(params: ParamsResourceStorelayoutpagesPatch, callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
   def patch(
@@ -186,7 +185,7 @@ class ResourceStorelayoutpages protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaStorePage] = js.native
   def update(callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaStorePage] = js.native
   def update(params: ParamsResourceStorelayoutpagesUpdate): GaxiosPromise[SchemaStorePage] = js.native
   def update(params: ParamsResourceStorelayoutpagesUpdate, callback: BodyResponseCallback[SchemaStorePage]): Unit = js.native
   def update(

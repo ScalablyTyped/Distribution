@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instruction that reads records. Takes no inputs, produces one output.
   */
-@js.native
 trait SchemaReadInstruction extends StObject {
   
   /**
     * The source to read from.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaReadInstruction {
   

@@ -2,22 +2,22 @@ package typings.omitEmpty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("omit-empty", JSImport.Default)
+  @JSImport("omit-empty", JSImport.Namespace)
   @js.native
-  def default(obj: js.Object): js.Object = js.native
-  @JSImport("omit-empty", JSImport.Default)
-  @js.native
-  def default(obj: js.Object, options: OmitOptions): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(obj: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def default(obj: js.Object, options: OmitOptions): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait OmitOptions extends StObject {
     
-    var omitZero: js.UndefOr[Boolean] = js.native
+    var omitZero: js.UndefOr[Boolean] = js.undefined
   }
   object OmitOptions {
     

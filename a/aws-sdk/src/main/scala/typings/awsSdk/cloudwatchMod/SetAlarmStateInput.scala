@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetAlarmStateInput extends StObject {
   
   /**
     * The name of the alarm.
     */
-  var AlarmName: typings.awsSdk.cloudwatchMod.AlarmName = js.native
+  var AlarmName: typings.awsSdk.cloudwatchMod.AlarmName
   
   /**
     * The reason that this alarm is set to this specific state, in text format.
     */
-  var StateReason: typings.awsSdk.cloudwatchMod.StateReason = js.native
+  var StateReason: typings.awsSdk.cloudwatchMod.StateReason
   
   /**
     * The reason that this alarm is set to this specific state, in JSON format. For SNS or EC2 alarm actions, this is just informational. But for EC2 Auto Scaling or application Auto Scaling alarm actions, the Auto Scaling policy uses the information in this field to take the correct action.
     */
-  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.native
+  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.undefined
   
   /**
     * The value of the state.
     */
-  var StateValue: typings.awsSdk.cloudwatchMod.StateValue = js.native
+  var StateValue: typings.awsSdk.cloudwatchMod.StateValue
 }
 object SetAlarmStateInput {
   

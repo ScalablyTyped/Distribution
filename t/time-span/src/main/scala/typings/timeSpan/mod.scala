@@ -2,7 +2,6 @@ package typings.timeSpan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,12 @@ object mod {
   //=> 1.7453186
   ```
   */
+  @scala.inline
+  def apply(): TimeEndFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[TimeEndFunction]
+  
   @JSImport("time-span", JSImport.Namespace)
   @js.native
-  def apply(): TimeEndFunction = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait TimeEndFunction extends StObject {

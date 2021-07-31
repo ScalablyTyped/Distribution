@@ -2,45 +2,39 @@ package typings.dirGlob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dir-glob", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("dir-glob", JSImport.Namespace)
-  @js.native
-  def apply(input: String, options: Options): js.Promise[js.Array[String]] = js.native
-  @JSImport("dir-glob", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String]): js.Promise[js.Array[String]] = js.native
-  @JSImport("dir-glob", JSImport.Namespace)
-  @js.native
-  def apply(input: js.Array[String], options: Options): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(input: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(input: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(input: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("dir-glob", "sync")
+  @JSImport("dir-glob", JSImport.Namespace)
   @js.native
-  def sync(input: String): js.Array[String] = js.native
-  @JSImport("dir-glob", "sync")
-  @js.native
-  def sync(input: String, options: Options): js.Array[String] = js.native
-  @JSImport("dir-glob", "sync")
-  @js.native
-  def sync(input: js.Array[String]): js.Array[String] = js.native
-  @JSImport("dir-glob", "sync")
-  @js.native
-  def sync(input: js.Array[String], options: Options): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sync(input: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(input: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(input: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(input: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

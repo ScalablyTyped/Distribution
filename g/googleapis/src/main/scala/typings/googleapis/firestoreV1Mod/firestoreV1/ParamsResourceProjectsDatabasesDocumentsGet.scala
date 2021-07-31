@@ -6,40 +6,40 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsDatabasesDocumentsGet extends StandardParameters {
+trait ParamsResourceProjectsDatabasesDocumentsGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The list of field paths in the mask. See Document.fields for a field path
     * syntax reference.
     */
   @JSName("mask.fieldPaths")
-  var maskDotfieldPaths: js.UndefOr[js.Array[String]] = js.native
+  var maskDotfieldPaths: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The resource name of the Document to get. In the format:
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Reads the version of the document at the given time. This may not be
     * older than 60 seconds.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reads the document in a transaction.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsDatabasesDocumentsGet {
   

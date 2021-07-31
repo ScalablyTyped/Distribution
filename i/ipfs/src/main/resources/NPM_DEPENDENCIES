@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "ipfs" : "0.52.1"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "ipfs" : "0.52.1"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

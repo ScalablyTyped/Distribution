@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockAction extends StObject {
   
   /** Number of days the policy is non-compliant before the device or work profile is blocked. To block access immediately, set to 0. blockAfterDays must be less than wipeAfterDays. */
-  var blockAfterDays: js.UndefOr[Double] = js.native
+  var blockAfterDays: js.UndefOr[Double] = js.undefined
   
   /** Specifies the scope of this BlockAction. Only applicable to devices that are company-owned. */
-  var blockScope: js.UndefOr[String] = js.native
+  var blockScope: js.UndefOr[String] = js.undefined
 }
 object BlockAction {
   

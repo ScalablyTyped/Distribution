@@ -5,7 +5,6 @@ import typings.sharedb.anon.DuplexisServerbooleanunde
 import typings.sharedb.sharedbMod.JSONObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object agentMod {
@@ -24,7 +23,32 @@ object agentMod {
     */
   @JSImport("sharedb/lib/agent", JSImport.Namespace)
   @js.native
-  class ^ () extends Agent
+  class ^ ()
+    extends StObject
+       with Agent {
+    
+    /* CompleteClass */
+    var backend: typings.sharedb.mod.^ = js.native
+    
+    /**
+      * Object for custom use in middleware to store app-specific state for a
+      * given client session. It is in memory only as long as the session is
+      * active, and it is passed to each middleware call.
+      */
+    /* CompleteClass */
+    var custom: Custom = js.native
+    
+    /**
+      * Sends a JSON-compatible message to the client for this agent.
+      *
+      * @param message
+      */
+    /* CompleteClass */
+    override def send(message: JSONObject): Unit = js.native
+    
+    /* CompleteClass */
+    var stream: DuplexisServerbooleanunde = js.native
+  }
   
   /**
     * An `Agent` is the representation of a client's `Connection` state on the
@@ -38,26 +62,25 @@ object agentMod {
     *
     * @see https://github.com/share/sharedb#class-sharedbagent
     */
-  @js.native
   trait Agent extends StObject {
     
-    var backend: typings.sharedb.mod.^ = js.native
+    var backend: typings.sharedb.mod.^
     
     /**
       * Object for custom use in middleware to store app-specific state for a
       * given client session. It is in memory only as long as the session is
       * active, and it is passed to each middleware call.
       */
-    var custom: Custom = js.native
+    var custom: Custom
     
     /**
       * Sends a JSON-compatible message to the client for this agent.
       *
       * @param message
       */
-    def send(message: JSONObject): Unit = js.native
+    def send(message: JSONObject): Unit
     
-    var stream: DuplexisServerbooleanunde = js.native
+    var stream: DuplexisServerbooleanunde
   }
   object Agent {
     

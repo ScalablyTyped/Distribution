@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,15 +12,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XModeChangeListener
   * @since OOo 1.1.2
   */
-@js.native
-trait ModeChangeEvent extends EventObject {
+trait ModeChangeEvent
+  extends StObject
+     with EventObject {
   
   /**
     * denotes the new internal mode of a component
     *
     * The semantics of the mode string is to be defined by the component broadcasting this event.
     */
-  var NewMode: String = js.native
+  var NewMode: String
 }
 object ModeChangeEvent {
   

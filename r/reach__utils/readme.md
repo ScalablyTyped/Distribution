@@ -10,9 +10,9 @@ Internal, shared utilities for Reach UI.
 | ------------------ | :-------------: |
 | Full name          | @reach/utils |
 | Keywords           | - |
-| # releases         | 33 |
-| # dependents       | 37 |
-| # downloads        | 7256289 |
+| # releases         | 36 |
+| # dependents       | 36 |
+| # downloads        | 15115024 |
 | # stars            | 0 |
 
 ## Links

@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Structure Definition used by this map
   */
-@js.native
-trait StructureMapStructure extends BackboneElement {
+trait StructureMapStructure
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'alias'.
     */
-  var _alias: js.UndefOr[Element] = js.native
+  var _alias: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Name for type in this map
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * Documentation on use of structure
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * source | queried | target | produced
     */
-  var mode: code = js.native
+  var mode: code
   
   /**
     * Canonical URL for structure definition
     */
-  var url: uri = js.native
+  var url: uri
 }
 object StructureMapStructure {
   

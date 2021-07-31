@@ -2,23 +2,21 @@ package typings.reactNativeSquareInAppPayments.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InAppPaymentsException extends StObject {
   
   /** The enumerated error types */
-  var code: SQIPErrorCodes = js.native
+  var code: SQIPErrorCodes
   
   /** Information about error state */
-  var debugCode: String = js.native
+  var debugCode: String
   
   /** A description of the error state */
-  var debugMessage: String = js.native
+  var debugMessage: String
   
   /** A description of the usage error */
-  var message: String = js.native
+  var message: String
 }
 object InAppPaymentsException {
   

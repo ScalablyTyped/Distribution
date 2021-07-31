@@ -2,17 +2,15 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Max extends StObject {
   
   /** The maximum bitrate. */
-  var max: Double = js.native
+  var max: Double
   
   /** The minimum bitrate. */
-  var min: Double = js.native
+  var min: Double
 }
 object Max {
   

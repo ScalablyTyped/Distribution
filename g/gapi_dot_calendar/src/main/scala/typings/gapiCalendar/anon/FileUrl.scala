@@ -2,13 +2,11 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileUrl extends StObject {
   
-  var fileUrl: String = js.native
+  var fileUrl: String
 }
 object FileUrl {
   

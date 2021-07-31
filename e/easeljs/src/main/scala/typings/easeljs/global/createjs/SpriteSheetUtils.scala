@@ -4,83 +4,66 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.SpriteSheetUtils")
 @js.native
 class SpriteSheetUtils ()
-  extends typings.easeljs.createjs.SpriteSheetUtils
+  extends StObject
+     with typings.easeljs.createjs.SpriteSheetUtils
 /* static members */
 object SpriteSheetUtils {
   
+  @JSGlobal("createjs.SpriteSheetUtils")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @deprecated
     */
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(
-    spriteSheet: typings.easeljs.createjs.SpriteSheet,
-    horizontal: js.UndefOr[scala.Nothing],
-    vertical: js.UndefOr[scala.Nothing],
-    both: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(
-    spriteSheet: typings.easeljs.createjs.SpriteSheet,
-    horizontal: js.UndefOr[scala.Nothing],
-    vertical: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(
-    spriteSheet: typings.easeljs.createjs.SpriteSheet,
-    horizontal: js.UndefOr[scala.Nothing],
-    vertical: Boolean,
-    both: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(
-    spriteSheet: typings.easeljs.createjs.SpriteSheet,
-    horizontal: Boolean,
-    vertical: js.UndefOr[scala.Nothing],
-    both: Boolean
-  ): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
-  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean, vertical: Boolean): Unit = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.addFlippedFrames")
-  @js.native
+  @scala.inline
+  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Boolean, vertical: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addFlippedFrames(
     spriteSheet: typings.easeljs.createjs.SpriteSheet,
     horizontal: Boolean,
     vertical: Boolean,
     both: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], both.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: Boolean,
+    vertical: Unit,
+    both: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], both.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Unit, vertical: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(
+    spriteSheet: typings.easeljs.createjs.SpriteSheet,
+    horizontal: Unit,
+    vertical: Boolean,
+    both: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], both.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addFlippedFrames(spriteSheet: typings.easeljs.createjs.SpriteSheet, horizontal: Unit, vertical: Unit, both: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addFlippedFrames")(spriteSheet.asInstanceOf[js.Any], horizontal.asInstanceOf[js.Any], vertical.asInstanceOf[js.Any], both.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("createjs.SpriteSheetUtils.extractFrame")
-  @js.native
-  def extractFrame(spriteSheet: typings.easeljs.createjs.SpriteSheet, frameOrAnimation: String): HTMLImageElement = js.native
+  @scala.inline
+  def extractFrame(spriteSheet: typings.easeljs.createjs.SpriteSheet, frameOrAnimation: String): HTMLImageElement = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFrame")(spriteSheet.asInstanceOf[js.Any], frameOrAnimation.asInstanceOf[js.Any])).asInstanceOf[HTMLImageElement]
   // deprecated
-  @JSGlobal("createjs.SpriteSheetUtils.extractFrame")
-  @js.native
-  def extractFrame(spriteSheet: typings.easeljs.createjs.SpriteSheet, frameOrAnimation: Double): HTMLImageElement = js.native
+  @scala.inline
+  def extractFrame(spriteSheet: typings.easeljs.createjs.SpriteSheet, frameOrAnimation: Double): HTMLImageElement = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFrame")(spriteSheet.asInstanceOf[js.Any], frameOrAnimation.asInstanceOf[js.Any])).asInstanceOf[HTMLImageElement]
   
   /**
     * @deprecated
     */
-  @JSGlobal("createjs.SpriteSheetUtils.mergeAlpha")
-  @js.native
-  def mergeAlpha(rgbImage: HTMLImageElement, alphaImage: HTMLImageElement): HTMLCanvasElement = js.native
-  @JSGlobal("createjs.SpriteSheetUtils.mergeAlpha")
-  @js.native
-  def mergeAlpha(rgbImage: HTMLImageElement, alphaImage: HTMLImageElement, canvas: HTMLCanvasElement): HTMLCanvasElement = js.native
+  @scala.inline
+  def mergeAlpha(rgbImage: HTMLImageElement, alphaImage: HTMLImageElement): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAlpha")(rgbImage.asInstanceOf[js.Any], alphaImage.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
+  @scala.inline
+  def mergeAlpha(rgbImage: HTMLImageElement, alphaImage: HTMLImageElement, canvas: HTMLCanvasElement): HTMLCanvasElement = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeAlpha")(rgbImage.asInstanceOf[js.Any], alphaImage.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[HTMLCanvasElement]
 }

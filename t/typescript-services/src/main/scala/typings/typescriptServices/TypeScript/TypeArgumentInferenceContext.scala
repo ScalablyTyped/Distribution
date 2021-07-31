@@ -2,39 +2,37 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeArgumentInferenceContext extends StObject {
   
-  def _finalizeInferredTypeArguments(): js.Array[PullTypeSymbol] = js.native
+  def _finalizeInferredTypeArguments(): js.Array[PullTypeSymbol]
   
-  def addCandidateForInference(param: PullTypeParameterSymbol, candidate: PullTypeSymbol): Unit = js.native
+  def addCandidateForInference(param: PullTypeParameterSymbol, candidate: PullTypeSymbol): Unit
   
-  def addInferenceRoot(param: PullTypeParameterSymbol): Unit = js.native
+  def addInferenceRoot(param: PullTypeParameterSymbol): Unit
   
-  def alreadyRelatingTypes(objectType: PullTypeSymbol, parameterType: PullTypeSymbol): Boolean = js.native
+  def alreadyRelatingTypes(objectType: PullTypeSymbol, parameterType: PullTypeSymbol): Boolean
   
-  var candidateCache: js.Array[CandidateInferenceInfo] = js.native
+  var candidateCache: js.Array[CandidateInferenceInfo]
   
-  var context: PullTypeResolutionContext = js.native
+  var context: PullTypeResolutionContext
   
-  def fixTypeParameter(typeParameter: PullTypeParameterSymbol): Unit = js.native
+  def fixTypeParameter(typeParameter: PullTypeParameterSymbol): Unit
   
-  def getInferenceInfo(param: PullTypeParameterSymbol): CandidateInferenceInfo = js.native
+  def getInferenceInfo(param: PullTypeParameterSymbol): CandidateInferenceInfo
   
-  def inferTypeArguments(): js.Array[PullTypeSymbol] = js.native
+  def inferTypeArguments(): js.Array[PullTypeSymbol]
   
-  var inferenceCache: IBitMatrix = js.native
+  var inferenceCache: IBitMatrix
   
-  def isInvocationInferenceContext(): Boolean = js.native
+  def isInvocationInferenceContext(): Boolean
   
-  def resetRelationshipCache(): Unit = js.native
+  def resetRelationshipCache(): Unit
   
-  var resolver: PullTypeResolver = js.native
+  var resolver: PullTypeResolver
   
-  var signatureBeingInferred: PullSignatureSymbol = js.native
+  var signatureBeingInferred: PullSignatureSymbol
 }
 object TypeArgumentInferenceContext {
   

@@ -92,7 +92,6 @@ import typings.activexMsforms.anon.IndexPercent
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -1302,27 +1301,27 @@ trait ActiveXObject extends StObject {
   @JSName("set")
   def set_Column(obj: ComboBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
   @JSName("set")
-  def set_Column(obj: ComboBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: SafeArray[_]): Unit = js.native
+  def set_Column(obj: ComboBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: SafeArray[js.Any]): Unit = js.native
   @JSName("set")
   def set_Column(obj: ComboBox, propertyName: Column, parameterTypes: js.Tuple2[Double, Double], newValue: js.Any): Unit = js.native
   @JSName("set")
   def set_Column(obj: ListBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
   @JSName("set")
-  def set_Column(obj: ListBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: SafeArray[_]): Unit = js.native
+  def set_Column(obj: ListBox, propertyName: Column, parameterTypes: js.Array[Double], newValue: SafeArray[js.Any]): Unit = js.native
   @JSName("set")
   def set_Column(obj: ListBox, propertyName: Column, parameterTypes: js.Tuple2[Double, Double], newValue: js.Any): Unit = js.native
   @JSName("set")
   def set_List(obj: ComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
   @JSName("set")
-  def set_List(obj: ComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: SafeArray[_]): Unit = js.native
+  def set_List(obj: ComboBox, propertyName: List, parameterTypes: js.Array[Double], newValue: SafeArray[js.Any]): Unit = js.native
   @JSName("set")
   def set_List(obj: ComboBox, propertyName: List, parameterTypes: js.Tuple2[Double, Double], newValue: js.Any): Unit = js.native
   @JSName("set")
   def set_List(obj: ListBox, propertyName: List, parameterTypes: js.Array[Double], newValue: js.Any): Unit = js.native
   @JSName("set")
-  def set_List(obj: ListBox, propertyName: List, parameterTypes: js.Array[Double], newValue: SafeArray[_]): Unit = js.native
+  def set_List(obj: ListBox, propertyName: List, parameterTypes: js.Array[Double], newValue: SafeArray[js.Any]): Unit = js.native
   @JSName("set")
   def set_List(obj: ListBox, propertyName: List, parameterTypes: js.Tuple2[Double, Double], newValue: js.Any): Unit = js.native
   @JSName("set")
-  def set_Selected(obj: ListBox, propertyName: Selected, parameterTypes: js.Array[_], newValue: Boolean): Unit = js.native
+  def set_Selected(obj: ListBox, propertyName: Selected, parameterTypes: js.Array[js.Any], newValue: Boolean): Unit = js.native
 }

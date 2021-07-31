@@ -6,23 +6,23 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listSubheaderMod {
   
   @JSImport("@react-md/list/types/ListSubheader", "ListSubheader")
   @js.native
-  val ListSubheader: ForwardRefExoticComponent[ListSubheaderProps with RefAttributes[HTMLLIElement]] = js.native
+  val ListSubheader: ForwardRefExoticComponent[ListSubheaderProps & RefAttributes[HTMLLIElement]] = js.native
   
-  @js.native
-  trait ListSubheaderProps extends HTMLAttributes[HTMLLIElement] {
+  trait ListSubheaderProps
+    extends StObject
+       with HTMLAttributes[HTMLLIElement] {
     
     /**
       * Boolean if the subheader should be inset to match the `ListItem` text
       * keyline.
       */
-    var inset: js.UndefOr[Boolean] = js.native
+    var inset: js.UndefOr[Boolean] = js.undefined
   }
   object ListSubheaderProps {
     

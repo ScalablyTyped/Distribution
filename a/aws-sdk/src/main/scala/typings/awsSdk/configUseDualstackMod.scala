@@ -2,12 +2,10 @@ package typings.awsSdk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configUseDualstackMod {
   
-  @js.native
   trait UseDualstackConfigOptions extends StObject {
     
     /**
@@ -15,7 +13,7 @@ object configUseDualstackMod {
       * In most cases the network stack in the client environment will automatically prefer the AAAA record and make a connection using the IPv6 address. 
       * Note, however, that currently on Windows, the IPv4 address will be preferred.
       */
-    var useDualstack: js.UndefOr[Boolean] = js.native
+    var useDualstack: js.UndefOr[Boolean] = js.undefined
   }
   object UseDualstackConfigOptions {
     

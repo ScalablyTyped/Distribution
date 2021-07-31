@@ -4,43 +4,41 @@ import typings.activexOffice.Office.MsoPictureColorType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // there is no way to use the Globals class from within Javascript
-@js.native
 trait Graphic extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Brightness: Double = js.native
+  var Brightness: Double
   
-  var ColorType: MsoPictureColorType = js.native
+  var ColorType: MsoPictureColorType
   
-  var Contrast: Double = js.native
+  var Contrast: Double
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var CropBottom: Double = js.native
+  var CropBottom: Double
   
-  var CropLeft: Double = js.native
+  var CropLeft: Double
   
-  var CropRight: Double = js.native
+  var CropRight: Double
   
-  var CropTop: Double = js.native
+  var CropTop: Double
   
   @JSName("Excel.Graphic_typekey")
-  var ExcelDotGraphic_typekey: Graphic = js.native
+  var ExcelDotGraphic_typekey: Graphic
   
-  var Filename: String = js.native
+  var Filename: String
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var LockAspectRatio: MsoTriState = js.native
+  var LockAspectRatio: MsoTriState
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object Graphic {
   

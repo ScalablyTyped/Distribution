@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the cells spaced out, but without the lines between them.
   */
 @js.native
-trait Grid extends Shape {
+trait Grid
+  extends StObject
+     with Shape {
   
   /**
     * The alpha the alternating grid cells will be filled with.
@@ -69,9 +70,9 @@ trait Grid extends Shape {
     * @param fillAlpha The alpha the alternating grid cells will be filled with. You can also set the alpha of the overall Shape using its `alpha` property. Default 1.
     */
   def setAltFillStyle(): this.type = js.native
-  def setAltFillStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double): this.type = js.native
   def setAltFillStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
+  def setAltFillStyle(fillColor: Unit, fillAlpha: Double): this.type = js.native
   
   /**
     * Sets the fill color and alpha level that the lines between each grid cell will use.
@@ -86,9 +87,9 @@ trait Grid extends Shape {
     * @param fillAlpha The alpha the lines between the grid cells will be filled with. You can also set the alpha of the overall Shape using its `alpha` property. Default 1.
     */
   def setOutlineStyle(): this.type = js.native
-  def setOutlineStyle(fillColor: js.UndefOr[scala.Nothing], fillAlpha: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double): this.type = js.native
   def setOutlineStyle(fillColor: Double, fillAlpha: Double): this.type = js.native
+  def setOutlineStyle(fillColor: Unit, fillAlpha: Double): this.type = js.native
   
   /**
     * Will the grid render the alternating cells in the `altFillColor`?

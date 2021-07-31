@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
-  var entityAspect: EntityAspect = js.native
+  var entityAspect: EntityAspect
   
-  var entityType: EntityType = js.native
+  var entityType: EntityType
 }
 object Entity {
   

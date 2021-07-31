@@ -2,17 +2,15 @@ package typings.meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait URLS extends StObject {
   
-  def enrollAccount(token: String): String = js.native
+  def enrollAccount(token: String): String
   
-  def resetPassword(token: String): String = js.native
+  def resetPassword(token: String): String
   
-  def verifyEmail(token: String): String = js.native
+  def verifyEmail(token: String): String
 }
 object URLS {
   

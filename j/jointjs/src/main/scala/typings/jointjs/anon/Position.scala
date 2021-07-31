@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
 }
 object Position {
   

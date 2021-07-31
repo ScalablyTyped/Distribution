@@ -4,21 +4,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.SighashType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofsighashType extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
+  def canAdd(currentData: js.Any, newData: js.Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.SighashType */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.SighashType */ Boolean
   
-  def decode(keyVal: KeyValue): SighashType = js.native
+  def decode(keyVal: KeyValue): SighashType
   
-  def encode(data: SighashType): KeyValue = js.native
+  def encode(data: SighashType): KeyValue
   
-  val expected: /* "number" */ String = js.native
+  val expected: /* "number" */ String
 }
 object TypeofsighashType {
   

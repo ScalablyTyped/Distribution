@@ -6,35 +6,33 @@ import typings.webrtc.W3C.ConstrainLong
 import typings.webrtc.W3C.ConstrainString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackConstraintSet extends StObject {
   
-  var aspectRatio: js.UndefOr[ConstrainDouble] = js.native
+  var aspectRatio: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var deviceId: js.UndefOr[ConstrainString] = js.native
+  var deviceId: js.UndefOr[ConstrainString] = js.undefined
   
-  var echoCancellation: js.UndefOr[ConstrainBoolean] = js.native
+  var echoCancellation: js.UndefOr[ConstrainBoolean] = js.undefined
   
-  var facingMode: js.UndefOr[ConstrainString] = js.native
+  var facingMode: js.UndefOr[ConstrainString] = js.undefined
   
-  var frameRate: js.UndefOr[ConstrainDouble] = js.native
+  var frameRate: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var groupId: js.UndefOr[ConstrainString] = js.native
+  var groupId: js.UndefOr[ConstrainString] = js.undefined
   
-  var height: js.UndefOr[ConstrainLong] = js.native
+  var height: js.UndefOr[ConstrainLong] = js.undefined
   
-  var latency: js.UndefOr[ConstrainDouble] = js.native
+  var latency: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var sampleRate: js.UndefOr[ConstrainLong] = js.native
+  var sampleRate: js.UndefOr[ConstrainLong] = js.undefined
   
-  var sampleSize: js.UndefOr[ConstrainLong] = js.native
+  var sampleSize: js.UndefOr[ConstrainLong] = js.undefined
   
-  var volume: js.UndefOr[ConstrainDouble] = js.native
+  var volume: js.UndefOr[ConstrainDouble] = js.undefined
   
-  var width: js.UndefOr[ConstrainLong] = js.native
+  var width: js.UndefOr[ConstrainLong] = js.undefined
 }
 object MediaTrackConstraintSet {
   

@@ -3,7 +3,6 @@ package typings.angularStorage
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,7 +23,6 @@ object mod extends Shortcut {
       
       object storage {
         
-        @js.native
         trait INamespacedStoreService extends StObject {
           
           /**
@@ -33,14 +31,14 @@ object mod extends Shortcut {
             * @param {String} name - The key name for the location of the value
             * @returns The saved value; if you saved an object, you get an object
             */
-          def get(name: String): js.Any = js.native
+          def get(name: String): js.Any
           
           /**
             * Deletes the saved value with the key name
             *
             * @param {String} name - The key name for the location of the value to remove
             */
-          def remove(name: String): Unit = js.native
+          def remove(name: String): Unit
           
           /**
             * Sets a new value to the storage with the key name. It can be any object.
@@ -48,7 +46,7 @@ object mod extends Shortcut {
             * @param {String} name - The key name for the location of the value
             * @param value - The value to store
             */
-          def set(name: String, value: js.Any): Unit = js.native
+          def set(name: String, value: js.Any): Unit
         }
         object INamespacedStoreService {
           
@@ -72,7 +70,6 @@ object mod extends Shortcut {
           }
         }
         
-        @js.native
         trait IStoreProvider extends StObject {
           
           /**
@@ -80,7 +77,7 @@ object mod extends Shortcut {
             *
             * @param {String} storage - The storage name
             */
-          def setStore(storage: String): Unit = js.native
+          def setStore(storage: String): Unit
         }
         object IStoreProvider {
           
@@ -99,7 +96,9 @@ object mod extends Shortcut {
         }
         
         @js.native
-        trait IStoreService extends INamespacedStoreService {
+        trait IStoreService
+          extends StObject
+             with INamespacedStoreService {
           
           /**
             * Returns a namespaced store
@@ -110,9 +109,9 @@ object mod extends Shortcut {
             * @returns {INamespacedStoreService}
             */
           def getNamespacedStore(namespace: String): INamespacedStoreService = js.native
-          def getNamespacedStore(namespace: String, storage: js.UndefOr[scala.Nothing], delimiter: String): INamespacedStoreService = js.native
           def getNamespacedStore(namespace: String, storage: String): INamespacedStoreService = js.native
           def getNamespacedStore(namespace: String, storage: String, delimiter: String): INamespacedStoreService = js.native
+          def getNamespacedStore(namespace: String, storage: Unit, delimiter: String): INamespacedStoreService = js.native
         }
       }
     }

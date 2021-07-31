@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,35 +10,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * set of users. The app&#39;s developer would have defined configurable
   * properties in the managed configurations schema.
   */
-@js.native
 trait SchemaManagedConfigurationsSettings extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#managedConfigurationsSettings&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The last updated time of the managed configuration settings in
     * milliseconds since 1970-01-01T00:00:00Z.
     */
-  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
+  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.undefined
   
   /**
     * The set of managed properties for this configuration.
     */
-  var managedProperty: js.UndefOr[js.Array[SchemaManagedProperty]] = js.native
+  var managedProperty: js.UndefOr[js.Array[SchemaManagedProperty]] = js.undefined
   
   /**
     * The ID of the managed configurations settings.
     */
-  var mcmId: js.UndefOr[String] = js.native
+  var mcmId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the managed configurations settings.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedConfigurationsSettings {
   

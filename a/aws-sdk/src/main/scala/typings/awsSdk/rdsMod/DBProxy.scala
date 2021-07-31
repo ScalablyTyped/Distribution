@@ -2,81 +2,79 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBProxy extends StObject {
   
   /**
     * One or more data structures specifying the authorization mechanism to connect to the associated RDS DB instance or Aurora DB cluster.
     */
-  var Auth: js.UndefOr[UserAuthConfigInfoList] = js.native
+  var Auth: js.UndefOr[UserAuthConfigInfoList] = js.undefined
   
   /**
     * The date and time when the proxy was first created.
     */
-  var CreatedDate: js.UndefOr[TStamp] = js.native
+  var CreatedDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the proxy.
     */
-  var DBProxyArn: js.UndefOr[String] = js.native
+  var DBProxyArn: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the proxy. This name must be unique for all proxies owned by your AWS account in the specified AWS Region.
     */
-  var DBProxyName: js.UndefOr[String] = js.native
+  var DBProxyName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the proxy includes detailed information about SQL statements in its logs. This information helps you to debug issues involving SQL behavior or the performance and scalability of the proxy connections. The debug information includes the text of SQL statements that you submit through the proxy. Thus, only enable this setting when needed for debugging, and only when you have security measures in place to safeguard any sensitive information that appears in the logs.
     */
-  var DebugLogging: js.UndefOr[Boolean] = js.native
+  var DebugLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The endpoint that you can use to connect to the proxy. You include the endpoint value in the connection string for a database client application.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The engine family applies to MySQL and PostgreSQL for both RDS and Aurora.
     */
-  var EngineFamily: js.UndefOr[String] = js.native
+  var EngineFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seconds a connection to the proxy can have no activity before the proxy drops the client connection. The proxy keeps the underlying database connection open and puts it back into the connection pool for reuse by later connection requests. Default: 1800 (30 minutes) Constraints: 1 to 28,800
     */
-  var IdleClientTimeout: js.UndefOr[Integer] = js.native
+  var IdleClientTimeout: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates whether Transport Layer Security (TLS) encryption is required for connections to the proxy.
     */
-  var RequireTLS: js.UndefOr[Boolean] = js.native
+  var RequireTLS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the IAM role that the proxy uses to access Amazon Secrets Manager.
     */
-  var RoleArn: js.UndefOr[String] = js.native
+  var RoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The current status of this proxy. A status of available means the proxy is ready to handle requests. Other values indicate that you must wait for the proxy to be ready, or take some action to resolve an issue.
     */
-  var Status: js.UndefOr[DBProxyStatus] = js.native
+  var Status: js.UndefOr[DBProxyStatus] = js.undefined
   
   /**
     * The date and time when the proxy was last updated.
     */
-  var UpdatedDate: js.UndefOr[TStamp] = js.native
+  var UpdatedDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Provides a list of VPC security groups that the proxy belongs to.
     */
-  var VpcSecurityGroupIds: js.UndefOr[StringList] = js.native
+  var VpcSecurityGroupIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * The EC2 subnet IDs for the proxy.
     */
-  var VpcSubnetIds: js.UndefOr[StringList] = js.native
+  var VpcSubnetIds: js.UndefOr[StringList] = js.undefined
 }
 object DBProxy {
   

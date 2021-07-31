@@ -2,17 +2,18 @@ package typings.popmotionPopcorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
   
-  @JSImport("@popmotion/popcorn/lib/easing/steps", JSImport.Default)
+  @JSImport("@popmotion/popcorn/lib/easing/steps", JSImport.Namespace)
   @js.native
-  def default(steps: Double): js.Function1[/* progress */ Double, _] = js.native
-  @JSImport("@popmotion/popcorn/lib/easing/steps", JSImport.Default)
-  @js.native
-  def default(steps: Double, direction: Direction): js.Function1[/* progress */ Double, _] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(steps: Double): js.Function1[/* progress */ Double, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* progress */ Double, js.Any]]
+  @scala.inline
+  def default(steps: Double, direction: Direction): js.Function1[/* progress */ Double, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* progress */ Double, js.Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.popmotionPopcorn.popmotionPopcornStrings.start

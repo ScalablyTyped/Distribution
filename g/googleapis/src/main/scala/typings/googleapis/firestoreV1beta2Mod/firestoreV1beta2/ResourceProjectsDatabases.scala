@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1beta2", "firestore_v1beta2.Resource$Projects$Databases")
@@ -40,7 +39,7 @@ class ResourceProjectsDatabases protected () extends StObject {
     */
   def exportDocuments(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def exportDocuments(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def exportDocuments(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def exportDocuments(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def exportDocuments(params: ParamsResourceProjectsDatabasesExportdocuments): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def exportDocuments(
     params: ParamsResourceProjectsDatabasesExportdocuments,
@@ -78,7 +77,7 @@ class ResourceProjectsDatabases protected () extends StObject {
     */
   def importDocuments(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def importDocuments(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def importDocuments(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def importDocuments(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def importDocuments(params: ParamsResourceProjectsDatabasesImportdocuments): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def importDocuments(
     params: ParamsResourceProjectsDatabasesImportdocuments,

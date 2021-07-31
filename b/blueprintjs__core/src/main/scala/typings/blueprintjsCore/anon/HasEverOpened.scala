@@ -3,19 +3,17 @@ package typings.blueprintjsCore.anon
 import typings.blueprintjsCore.blueprintjsCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasEverOpened extends StObject {
   
-  var hasEverOpened: `true` = js.native
+  var hasEverOpened: `true`
 }
 object HasEverOpened {
   
   @scala.inline
-  def apply(hasEverOpened: `true`): HasEverOpened = {
-    val __obj = js.Dynamic.literal(hasEverOpened = hasEverOpened.asInstanceOf[js.Any])
+  def apply(): HasEverOpened = {
+    val __obj = js.Dynamic.literal(hasEverOpened = true)
     __obj.asInstanceOf[HasEverOpened]
   }
   

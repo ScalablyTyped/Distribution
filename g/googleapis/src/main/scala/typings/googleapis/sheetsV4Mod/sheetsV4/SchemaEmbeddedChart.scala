@@ -2,29 +2,27 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A chart embedded in a sheet.
   */
-@js.native
 trait SchemaEmbeddedChart extends StObject {
   
   /**
     * The ID of the chart.
     */
-  var chartId: js.UndefOr[Double] = js.native
+  var chartId: js.UndefOr[Double] = js.undefined
   
   /**
     * The position of the chart.
     */
-  var position: js.UndefOr[SchemaEmbeddedObjectPosition] = js.native
+  var position: js.UndefOr[SchemaEmbeddedObjectPosition] = js.undefined
   
   /**
     * The specification of the chart.
     */
-  var spec: js.UndefOr[SchemaChartSpec] = js.native
+  var spec: js.UndefOr[SchemaChartSpec] = js.undefined
 }
 object SchemaEmbeddedChart {
   

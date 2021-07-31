@@ -2,42 +2,40 @@ package typings.reactVirtualized.esTableMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRowProps extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var columns: js.Array[_] = js.native
+  var columns: js.Array[js.Any]
   
-  var index: Double = js.native
+  var index: Double
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var key: String = js.native
+  var key: String
   
-  var onRowClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var onRowDoubleClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowDoubleClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var onRowMouseOut: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowMouseOut: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var onRowMouseOver: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowMouseOver: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var onRowRightClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.native
+  var onRowRightClick: js.UndefOr[js.Function1[/* params */ RowMouseEventHandlerParams, Unit]] = js.undefined
   
-  var rowData: js.Any = js.native
+  var rowData: js.Any
   
-  var style: js.Any = js.native
+  var style: js.Any
 }
 object TableRowProps {
   
   @scala.inline
   def apply(
     className: String,
-    columns: js.Array[_],
+    columns: js.Array[js.Any],
     index: Double,
     isScrolling: Boolean,
     key: String,
@@ -55,7 +53,7 @@ object TableRowProps {
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColumns(value: js.Array[_]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
+    def setColumns(value: js.Array[js.Any]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsVarargs(value: js.Any*): Self = StObject.set(x, "columns", js.Array(value :_*))

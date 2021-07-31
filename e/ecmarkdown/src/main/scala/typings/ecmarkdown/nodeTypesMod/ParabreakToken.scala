@@ -3,23 +3,23 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.parabreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParabreakToken extends Token {
+trait ParabreakToken
+  extends StObject
+     with Token {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: parabreak = js.native
+  var name: parabreak
 }
 object ParabreakToken {
   
   @scala.inline
-  def apply(contents: String, location: LocationRange, name: parabreak): ParabreakToken = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: String, location: LocationRange): ParabreakToken = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "parabreak")
     __obj.asInstanceOf[ParabreakToken]
   }
   

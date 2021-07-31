@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppResponse extends StObject {
   
   /**
     * A summary description of the application.
     */
-  var appSummary: js.UndefOr[AppSummary] = js.native
+  var appSummary: js.UndefOr[AppSummary] = js.undefined
   
   /**
     * The server groups included in the application.
     */
-  var serverGroups: js.UndefOr[ServerGroups] = js.native
+  var serverGroups: js.UndefOr[ServerGroups] = js.undefined
   
   /**
     * The tags associated with the application.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateAppResponse {
   

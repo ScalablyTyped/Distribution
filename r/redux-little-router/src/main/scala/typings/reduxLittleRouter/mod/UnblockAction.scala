@@ -2,13 +2,13 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnblockAction extends RouterActions {
+trait UnblockAction
+  extends StObject
+     with RouterActions {
   
-  var `type`: /* "ROUTER_UNBLOCK" */ String = js.native
+  var `type`: /* "ROUTER_UNBLOCK" */ String
 }
 object UnblockAction {
   

@@ -10,26 +10,30 @@ import typings.reactMdMenu.useVisibilityMod.VisibilityOptions
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useItemVisibilityMod {
   
-  @JSImport("@react-md/menu/types/useItemVisibility", "useItemVisibility")
+  @JSImport("@react-md/menu/types/useItemVisibility", JSImport.Namespace)
   @js.native
-  def useItemVisibility(): ReturnValue = js.native
-  @JSImport("@react-md/menu/types/useItemVisibility", "useItemVisibility")
-  @js.native
-  def useItemVisibility(hasHorizontalOnClickOnKeyDownDefaultVisibleDefaultFocusOnVisibilityChange: ItemVisibilityOptions): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ItemVisibilityOptions extends VisibilityOptions {
+  @scala.inline
+  def useItemVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useItemVisibility")().asInstanceOf[ReturnValue]
+  @scala.inline
+  def useItemVisibility(
+    hasHorizontalPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange: ItemVisibilityOptions
+  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useItemVisibility")(hasHorizontalPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
+  trait ItemVisibilityOptions
+    extends StObject
+       with VisibilityOptions {
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
   }
   object ItemVisibilityOptions {
     
@@ -63,18 +67,17 @@ object useItemVisibilityMod {
   }
   
   /* Inlined parent std.Pick<react.react.HTMLAttributes<std.HTMLLIElement>, 'onClick' | 'onKeyDown'> */
-  @js.native
   trait ReturnValue extends StObject {
     
-    var defaultFocus: FocusType = js.native
+    var defaultFocus: FocusType
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLLIElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLLIElement]] = js.undefined
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ReturnValue {
     

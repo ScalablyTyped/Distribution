@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.currencyFormatter.mod.Currency
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object currenciesMod extends Shortcut {

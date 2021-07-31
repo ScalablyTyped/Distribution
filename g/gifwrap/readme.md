@@ -11,8 +11,8 @@ A Jimp-compatible library for working with GIFs
 | Full name          | gifwrap |
 | Keywords           | image, image, processing, image, manipulation, gif, javascript |
 | # releases         | 3 |
-| # dependents       | 10 |
-| # downloads        | 1158196 |
+| # dependents       | 13 |
+| # downloads        | 8862214 |
 | # stars            | 0 |
 
 ## Links

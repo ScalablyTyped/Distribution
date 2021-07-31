@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Playback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MediaPlaybackList::CurrentItemChanged event. */
-@js.native
 trait CurrentMediaPlaybackItemChangedEventArgs extends StObject {
   
   /** Gets the new current MediaPlaybackItem . */
-  var newItem: MediaPlaybackItem = js.native
+  var newItem: MediaPlaybackItem
   
   /** Gets the previous current MediaPlaybackItem . */
-  var oldItem: MediaPlaybackItem = js.native
+  var oldItem: MediaPlaybackItem
 }
 object CurrentMediaPlaybackItemChangedEventArgs {
   

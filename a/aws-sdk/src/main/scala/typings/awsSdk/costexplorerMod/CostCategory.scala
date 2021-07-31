@@ -2,40 +2,38 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CostCategory extends StObject {
   
   /**
     *  The unique identifier for your Cost Category. 
     */
-  var CostCategoryArn: Arn = js.native
+  var CostCategoryArn: Arn
   
   /**
     *  The Cost Category's effective end date.
     */
-  var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.native
+  var EffectiveEnd: js.UndefOr[ZonedDateTime] = js.undefined
   
   /**
     *  The Cost Category's effective start date.
     */
-  var EffectiveStart: ZonedDateTime = js.native
+  var EffectiveStart: ZonedDateTime
   
-  var Name: CostCategoryName = js.native
+  var Name: CostCategoryName
   
   /**
     *  The list of processing statuses for Cost Management products for a specific cost category. 
     */
-  var ProcessingStatus: js.UndefOr[CostCategoryProcessingStatusList] = js.native
+  var ProcessingStatus: js.UndefOr[CostCategoryProcessingStatusList] = js.undefined
   
-  var RuleVersion: CostCategoryRuleVersion = js.native
+  var RuleVersion: CostCategoryRuleVersion
   
   /**
     *  Rules are processed in order. If there are multiple rules that match the line item, then the first rule to match is used to determine that Cost Category value. 
     */
-  var Rules: CostCategoryRulesList = js.native
+  var Rules: CostCategoryRulesList
 }
 object CostCategory {
   

@@ -2,49 +2,47 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationId extends StObject {
   
-  var authorizationId: String = js.native
+  var authorizationId: String
   
-  var captureId: String = js.native
+  var captureId: String
   
-  var customField: String = js.native
+  var customField: String
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var payerEmail: String = js.native
+  var payerEmail: String
   
-  var payerFirstName: String = js.native
+  var payerFirstName: String
   
-  var payerId: String = js.native
+  var payerId: String
   
-  var payerLastName: String = js.native
+  var payerLastName: String
   
-  var payerStatus: String = js.native
+  var payerStatus: String
   
-  var paymentId: String = js.native
+  var paymentId: String
   
-  var refundFromTransactionFeeAmount: String = js.native
+  var refundFromTransactionFeeAmount: String
   
-  var refundFromTransactionFeeCurrencyIsoCode: String = js.native
+  var refundFromTransactionFeeCurrencyIsoCode: String
   
-  var refundId: String = js.native
+  var refundId: String
   
-  var sellerProtectionStatus: String = js.native
+  var sellerProtectionStatus: String
   
-  var taxId: String = js.native
+  var taxId: String
   
-  var taxIdType: String = js.native
+  var taxIdType: String
   
-  var token: String = js.native
+  var token: String
   
-  var transactionFeeAmount: String = js.native
+  var transactionFeeAmount: String
   
-  var transactionFeeCurrencyIsoCode: String = js.native
+  var transactionFeeCurrencyIsoCode: String
 }
 object AuthorizationId {
   

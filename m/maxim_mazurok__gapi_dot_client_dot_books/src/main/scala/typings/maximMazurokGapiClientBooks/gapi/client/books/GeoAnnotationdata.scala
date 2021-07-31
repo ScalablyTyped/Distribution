@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoAnnotationdata extends StObject {
   
   /** The type of annotation this data is for. */
-  var annotationType: js.UndefOr[String] = js.native
+  var annotationType: js.UndefOr[String] = js.undefined
   
   /** JSON encoded data for this geo annotation data. Emitted with name 'data' in JSON output. Either this or dict_data will be populated. */
-  var data: js.UndefOr[Geolayerdata] = js.native
+  var data: js.UndefOr[Geolayerdata] = js.undefined
   
   /** Base64 encoded data for this annotation data. */
-  var encodedData: js.UndefOr[String] = js.native
+  var encodedData: js.UndefOr[String] = js.undefined
   
   /** Unique id for this annotation data. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource Type */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The Layer id for this data. * */
-  var layerId: js.UndefOr[String] = js.native
+  var layerId: js.UndefOr[String] = js.undefined
   
   /** URL for this resource. * */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** Timestamp for the last time this data was updated. (RFC 3339 UTC date-time format). */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
   
   /** The volume id for this data. * */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
 }
 object GeoAnnotationdata {
   

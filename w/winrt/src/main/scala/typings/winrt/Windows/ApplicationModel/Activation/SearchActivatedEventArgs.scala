@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchActivatedEventArgs extends ISearchActivatedEventArgs
+trait SearchActivatedEventArgs
+  extends StObject
+     with ISearchActivatedEventArgs
 object SearchActivatedEventArgs {
   
   @scala.inline

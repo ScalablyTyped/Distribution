@@ -2,14 +2,16 @@ package typings.reactMdUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hexToRGBMod {
   
-  @JSImport("@react-md/utils/types/colors/hexToRGB", "hexToRGB")
+  @JSImport("@react-md/utils/types/colors/hexToRGB", JSImport.Namespace)
   @js.native
-  def hexToRGB(hex: HexString): js.Tuple3[RedBit, GreenBit, BlueBit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def hexToRGB(hex: HexString): js.Tuple3[RedBit, GreenBit, BlueBit] = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToRGB")(hex.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[RedBit, GreenBit, BlueBit]]
   
   type BlueBit = Double
   

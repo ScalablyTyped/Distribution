@@ -2,15 +2,13 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordMeta extends StObject {
   
-  var `@rid`: ORID = js.native
+  var `@rid`: ORID
   
-  var `@version`: Version = js.native
+  var `@version`: Version
 }
 object RecordMeta {
   

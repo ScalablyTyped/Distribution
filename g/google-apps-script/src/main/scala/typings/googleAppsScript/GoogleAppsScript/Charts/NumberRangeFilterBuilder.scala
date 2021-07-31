@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,18 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * For more details, see the Gviz
   * documentation.
   */
-@js.native
 trait NumberRangeFilterBuilder extends StObject {
   
-  def setMaxValue(maxValue: Integer): NumberRangeFilterBuilder = js.native
+  def setMaxValue(maxValue: Integer): NumberRangeFilterBuilder
   
-  def setMinValue(minValue: Integer): NumberRangeFilterBuilder = js.native
+  def setMinValue(minValue: Integer): NumberRangeFilterBuilder
   
-  def setOrientation(orientation: Orientation): NumberRangeFilterBuilder = js.native
+  def setOrientation(orientation: Orientation): NumberRangeFilterBuilder
   
-  def setShowRangeValues(showRangeValues: Boolean): NumberRangeFilterBuilder = js.native
+  def setShowRangeValues(showRangeValues: Boolean): NumberRangeFilterBuilder
   
-  def setTicks(ticks: Integer): NumberRangeFilterBuilder = js.native
+  def setTicks(ticks: Integer): NumberRangeFilterBuilder
 }
 object NumberRangeFilterBuilder {
   

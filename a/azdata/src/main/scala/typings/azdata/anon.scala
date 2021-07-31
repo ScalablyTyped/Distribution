@@ -5,19 +5,17 @@ import typings.azdata.mod.FormItemLayout
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Azdatacellguid extends StObject {
     
-    var azdata_cell_guid: js.UndefOr[String] = js.native
+    var azdata_cell_guid: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Azdatacellguid {
     
@@ -53,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AzdatachartOptions extends StObject {
     
-    var azdata_chartOptions: js.UndefOr[js.Any] = js.native
+    var azdata_chartOptions: js.UndefOr[js.Any] = js.undefined
   }
   object AzdatachartOptions {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dark extends StObject {
     
-    var dark: String | Uri = js.native
+    var dark: String | Uri
     
-    var light: String | Uri = js.native
+    var light: String | Uri
   }
   object Dark {
     
@@ -104,18 +100,17 @@ object anon {
   }
   
   /* Inlined azdata.azdata.FormComponent & {  layout :azdata.azdata.FormItemLayout | undefined} */
-  @js.native
   trait FormComponentlayoutFormIt extends StObject {
     
-    var actions: js.UndefOr[js.Array[Component]] = js.native
+    var actions: js.UndefOr[js.Array[Component]] = js.undefined
     
-    var component: Component = js.native
+    var component: Component
     
-    var layout: js.UndefOr[FormItemLayout] = js.native
+    var layout: js.UndefOr[FormItemLayout] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object FormComponentlayoutFormIt {
     
@@ -157,12 +152,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: Boolean = js.native
+    var password: Boolean
     
-    var prompt: String = js.native
+    var prompt: String
   }
   object Password {
     
@@ -183,12 +177,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var url: String = js.native
+    var url: String
   }
   object Text {
     
@@ -209,12 +202,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var token: String = js.native
+    var token: String
     
-    var tokenType: js.UndefOr[String] = js.native
+    var tokenType: js.UndefOr[String] = js.undefined
   }
   object Token {
     
@@ -238,12 +230,11 @@ object anon {
     }
   }
   
-  @js.native
   trait UndoStopAfter extends StObject {
     
-    var undoStopAfter: Boolean = js.native
+    var undoStopAfter: Boolean
     
-    var undoStopBefore: Boolean = js.native
+    var undoStopBefore: Boolean
   }
   object UndoStopAfter {
     

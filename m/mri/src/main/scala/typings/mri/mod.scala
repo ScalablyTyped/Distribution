@@ -3,25 +3,26 @@ package typings.mri
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mri", JSImport.Namespace)
-  @js.native
-  def apply(args: js.Array[String]): Argv = js.native
-  @JSImport("mri", JSImport.Namespace)
-  @js.native
-  def apply(args: js.Array[String], options: Options): Argv = js.native
+  @scala.inline
+  def apply(args: js.Array[String]): Argv = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[Argv]
+  @scala.inline
+  def apply(args: js.Array[String], options: Options): Argv = (^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Argv]
   
+  @JSImport("mri", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Argv
-    extends DictionaryObject[js.Any] {
+    extends StObject
+       with DictionaryObject[js.Any] {
     
     /** anything after `--` or between options */
     @JSName("_")
-    var _underscore: js.Array[String] = js.native
+    var _underscore: js.Array[String]
   }
   object Argv {
     
@@ -49,21 +50,20 @@ object mod {
   /** An object with any keys whose values conform to a specific type */
   type DictionaryObject[T] = StringDictionary[T]
   
-  @js.native
   trait Options extends StObject {
     
     /** Default values for flags */
-    var default: js.UndefOr[DictionaryObject[_]] = js.native
+    var default: js.UndefOr[DictionaryObject[js.Any]] = js.undefined
     
     /** Additional aliases for specific flags */
-    var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.native
+    var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.undefined
     
     /** A flag or array of flags whose values are boolean */
-    var boolean: js.UndefOr[ArrayOrString] = js.native
+    var boolean: js.UndefOr[ArrayOrString] = js.undefined
     
-    var string: js.UndefOr[ArrayOrString] = js.native
+    var string: js.UndefOr[ArrayOrString] = js.undefined
     
-    var unknown: js.UndefOr[js.Function1[/* flag */ String, Unit]] = js.native
+    var unknown: js.UndefOr[js.Function1[/* flag */ String, Unit]] = js.undefined
   }
   object Options {
     
@@ -92,7 +92,7 @@ object mod {
       def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
       
       @scala.inline
-      def setDefault(value: DictionaryObject[_]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: DictionaryObject[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)

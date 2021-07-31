@@ -3,43 +3,41 @@ package typings.vscode.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugAdapterTracker extends StObject {
   
   /**
     * The debug adapter has sent a Debug Adapter Protocol message to VS Code.
     */
-  var onDidSendMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
+  var onDidSendMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
   
   /**
     * An error with the debug adapter has occurred.
     */
-  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
   
   /**
     * The debug adapter has exited with the given exit code or signal.
     */
   var onExit: js.UndefOr[
     js.Function2[/* code */ js.UndefOr[Double], /* signal */ js.UndefOr[String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The debug adapter is about to receive a Debug Adapter Protocol message from VS Code.
     */
-  var onWillReceiveMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
+  var onWillReceiveMessage: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
   
   /**
     * A session with the debug adapter is about to be started.
     */
-  var onWillStartSession: js.UndefOr[js.Function0[Unit]] = js.native
+  var onWillStartSession: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The debug adapter session is about to be stopped.
     */
-  var onWillStopSession: js.UndefOr[js.Function0[Unit]] = js.native
+  var onWillStopSession: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object DebugAdapterTracker {
   

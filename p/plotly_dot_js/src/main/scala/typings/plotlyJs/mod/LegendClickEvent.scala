@@ -5,31 +5,29 @@ import typings.plotlyJs.anon.PartialLayout
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendClickEvent extends StObject {
   
-  var config: PartialConfig = js.native
+  var config: PartialConfig
   
-  var curveNumber: Double = js.native
+  var curveNumber: Double
   
-  var data: js.Array[Data] = js.native
+  var data: js.Array[Data]
   
-  var event: MouseEvent = js.native
+  var event: MouseEvent
   
-  var expandedIndex: Double = js.native
+  var expandedIndex: Double
   
-  var frames: js.Array[Frame] = js.native
+  var frames: js.Array[Frame]
   
-  var fullData: js.Array[Data] = js.native
+  var fullData: js.Array[Data]
   
-  var fullLayout: PartialLayout = js.native
+  var fullLayout: PartialLayout
   
-  var layout: PartialLayout = js.native
+  var layout: PartialLayout
   
-  var node: PlotlyHTMLElement = js.native
+  var node: PlotlyHTMLElement
 }
 object LegendClickEvent {
   

@@ -2,29 +2,27 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cert extends StObject {
   
   // Optional. Private key for server.
-  var cert: js.UndefOr[String] = js.native
+  var cert: js.UndefOr[String] = js.undefined
   
   // HTTPS url to send updates to.
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   // Optional. Use webhook instead of polling.
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   // Server port.
-  var maxConnections: js.UndefOr[Double] = js.native
+  var maxConnections: js.UndefOr[Double] = js.undefined
   
   // Webhook server host.
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   // Optional. key.
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Cert {
   

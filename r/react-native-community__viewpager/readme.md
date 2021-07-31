@@ -4,21 +4,21 @@
 Typings are for version 4.2.0
 
 ## Library description:
-React Native ViewPager native view
+React Native wrapper for Android and iOS ViewPager
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/viewpager |
-| Keywords           | react-native, viewpager, view pager, tabs |
-| # releases         | 29 |
-| # dependents       | 53 |
-| # downloads        | 1678087 |
+| Keywords           | react-native, ios, android |
+| # releases         | 34 |
+| # dependents       | 57 |
+| # downloads        | 2325124 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/react-native-community/react-native-viewpager#readme)
-- [Bugs](https://github.com/react-native-community/react-native-viewpager/issues)
-- [Repository](https://github.com/react-native-community/react-native-viewpager)
+- [Homepage](https://github.com/callstack/react-native-viewpager#readme)
+- [Bugs](https://github.com/callstack/react-native-viewpager/issues)
+- [Repository](https://github.com/callstack/react-native-viewpager)
 - [Npm](https://www.npmjs.com/package/%40react-native-community%2Fviewpager)
     
 

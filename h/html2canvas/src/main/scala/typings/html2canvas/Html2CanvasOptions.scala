@@ -4,83 +4,81 @@ import typings.std.HTMLDocument
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Html2CanvasOptions extends StObject {
   
   /** Whether to allow cross-origin images to taint the canvas */
-  var allowTaint: js.UndefOr[Boolean] = js.native
+  var allowTaint: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to parse and render the element asynchronously */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /** Canvas background color, if none is specified in DOM. Set null for transparent */
-  var backgroundColor: js.UndefOr[String | Null] = js.native
+  var backgroundColor: js.UndefOr[String | Null] = js.undefined
   
   /** Existing canvas element to use as a base for drawing on */
-  var canvas: js.UndefOr[js.Any] = js.native
+  var canvas: js.UndefOr[js.Any] = js.undefined
   
   /** Whether to use ForeignObject rendering if the browser supports it */
-  var foreignObjectRendering: js.UndefOr[Boolean] = js.native
+  var foreignObjectRendering: js.UndefOr[Boolean] = js.undefined
   
   /** Define the heigt of the canvas in pixels. If null, renders with full height of the window. */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /** Predicate function which removes the matching elements from the render. */
-  var ignoreElements: js.UndefOr[js.Function1[/* element */ HTMLElement, Boolean]] = js.native
+  var ignoreElements: js.UndefOr[js.Function1[/* element */ HTMLElement, Boolean]] = js.undefined
   
   /** Timeout for loading images, in milliseconds. Setting it to 0 will result in no timeout. */
-  var imageTimeout: js.UndefOr[Double] = js.native
+  var imageTimeout: js.UndefOr[Double] = js.undefined
   
   /** Whether to render each letter seperately. Necessary if letter-spacing is used. */
-  var letterRendering: js.UndefOr[Boolean] = js.native
+  var letterRendering: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to log events in the console. */
-  var logging: js.UndefOr[Boolean] = js.native
+  var logging: js.UndefOr[Boolean] = js.undefined
   
   /** Callback function which is called when the Document has been cloned for rendering, can be used to modify the contents that will be rendered without affecting the original source document. */
-  var onclone: js.UndefOr[js.Function1[/* doc */ HTMLDocument, Unit]] = js.native
+  var onclone: js.UndefOr[js.Function1[/* doc */ HTMLDocument, Unit]] = js.undefined
   
   /** Url to the proxy which is to be used for loading cross-origin images. If left empty, cross-origin images won't be loaded. */
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
   /** Whether to cleanup the cloned DOM elements html2canvas creates temporarily */
-  var removeContainer: js.UndefOr[Boolean] = js.native
+  var removeContainer: js.UndefOr[Boolean] = js.undefined
   
   /** The scale to use for rendering. Defaults to the browsers device pixel ratio. */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /** The x-scroll position to used when rendering element, (for example if the Element uses position: fixed ) */
-  var scrollX: js.UndefOr[Double] = js.native
+  var scrollX: js.UndefOr[Double] = js.undefined
   
   /** The y-scroll position to used when rendering element, (for example if the Element uses position: fixed ) */
-  var scrollY: js.UndefOr[Double] = js.native
+  var scrollY: js.UndefOr[Double] = js.undefined
   
   /** Use svg powered rendering where available (FF11+). */
-  var svgRendering: js.UndefOr[Boolean] = js.native
+  var svgRendering: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to test each image if it taints the canvas before drawing them */
-  var taintTest: js.UndefOr[Boolean] = js.native
+  var taintTest: js.UndefOr[Boolean] = js.undefined
   
   /** Whether to attempt to load cross-origin images as CORS served, before reverting back to proxy. */
-  var useCORS: js.UndefOr[Boolean] = js.native
+  var useCORS: js.UndefOr[Boolean] = js.undefined
   
   /** Define the width of the canvas in pixels. If null, renders with full width of the window. */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /** Window height to use when rendering Element, which may affect things like Media queries */
-  var windowHeight: js.UndefOr[Double] = js.native
+  var windowHeight: js.UndefOr[Double] = js.undefined
   
   /** Window width to use when rendering Element, which may affect things like Media queries */
-  var windowWidth: js.UndefOr[Double] = js.native
+  var windowWidth: js.UndefOr[Double] = js.undefined
   
   /** Crop canvas x-coordinate */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** Crop canvas y-coordinate */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Html2CanvasOptions {
   

@@ -2,21 +2,19 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/authn.html#get--_session
-@js.native
 trait DatabaseSessionResponse extends StObject {
   
   // Server authentication configuration
-  var info: js.Any = js.native
+  var info: js.Any
   
   // Operation status
-  var ok: Boolean = js.native
+  var ok: Boolean
   
   // User context for the current user
-  var userCtx: js.Any = js.native
+  var userCtx: js.Any
 }
 object DatabaseSessionResponse {
   

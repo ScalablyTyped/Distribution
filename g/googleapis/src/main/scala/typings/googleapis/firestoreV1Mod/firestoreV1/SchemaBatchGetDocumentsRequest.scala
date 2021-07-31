@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for Firestore.BatchGetDocuments.
   */
-@js.native
 trait SchemaBatchGetDocumentsRequest extends StObject {
   
   /**
@@ -17,32 +15,32 @@ trait SchemaBatchGetDocumentsRequest extends StObject {
     * The request will fail if any of the document is not a child resource of
     * the given `database`. Duplicate names will be elided.
     */
-  var documents: js.UndefOr[js.Array[String]] = js.native
+  var documents: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The fields to return. If not set, returns all fields.  If a document has
     * a field that is not present in this mask, that field will not be returned
     * in the response.
     */
-  var mask: js.UndefOr[SchemaDocumentMask] = js.native
+  var mask: js.UndefOr[SchemaDocumentMask] = js.undefined
   
   /**
     * Starts a new transaction and reads the documents. Defaults to a read-only
     * transaction. The new transaction ID will be returned as the first
     * response in the stream.
     */
-  var newTransaction: js.UndefOr[SchemaTransactionOptions] = js.native
+  var newTransaction: js.UndefOr[SchemaTransactionOptions] = js.undefined
   
   /**
     * Reads documents as they were at the given time. This may not be older
     * than 60 seconds.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * Reads documents in a transaction.
     */
-  var transaction: js.UndefOr[String] = js.native
+  var transaction: js.UndefOr[String] = js.undefined
 }
 object SchemaBatchGetDocumentsRequest {
   

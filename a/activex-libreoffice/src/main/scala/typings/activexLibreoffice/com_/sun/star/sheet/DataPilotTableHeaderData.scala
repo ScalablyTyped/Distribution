@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,23 +16,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataResult
   * @since OOo 3.0
   */
-@js.native
 trait DataPilotTableHeaderData extends StObject {
   
   /** number of dimensions */
-  var Dimension: Double = js.native
+  var Dimension: Double
   
   /** flag */
-  var Flags: Double = js.native
+  var Flags: Double
   
   /** hierarchy */
-  var Hierarchy: Double = js.native
+  var Hierarchy: Double
   
   /** level */
-  var Level: Double = js.native
+  var Level: Double
   
   /** member name */
-  var MemberName: String = js.native
+  var MemberName: String
 }
 object DataPilotTableHeaderData {
   

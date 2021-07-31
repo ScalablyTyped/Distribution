@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISearchPane extends StObject {
   
-  val Available: Boolean = js.native
+  val Available: Boolean
   
-  val Events: ISearchPaneEvents = js.native
+  val Events: ISearchPaneEvents
   
-  def SetTheme(theme: ITheme): Unit = js.native
+  def SetTheme(theme: ITheme): Unit
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object ISearchPane {
   

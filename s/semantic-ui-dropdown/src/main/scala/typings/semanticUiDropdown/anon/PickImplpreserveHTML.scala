@@ -2,14 +2,12 @@ package typings.semanticUiDropdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, 'preserveHTML'> */
-@js.native
 trait PickImplpreserveHTML extends StObject {
   
-  var preserveHTML: Boolean = js.native
+  var preserveHTML: Boolean
 }
 object PickImplpreserveHTML {
   

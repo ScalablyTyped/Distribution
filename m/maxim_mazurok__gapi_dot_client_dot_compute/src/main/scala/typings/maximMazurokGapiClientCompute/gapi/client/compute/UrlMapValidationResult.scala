@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlMapValidationResult extends StObject {
   
-  var loadErrors: js.UndefOr[js.Array[String]] = js.native
+  var loadErrors: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether the given UrlMap can be successfully loaded. If false, 'loadErrors' indicates the reasons. */
-  var loadSucceeded: js.UndefOr[Boolean] = js.native
+  var loadSucceeded: js.UndefOr[Boolean] = js.undefined
   
-  var testFailures: js.UndefOr[js.Array[TestFailure]] = js.native
+  var testFailures: js.UndefOr[js.Array[TestFailure]] = js.undefined
   
   /** If successfully loaded, this field indicates whether the test passed. If false, 'testFailures's indicate the reason of failure. */
-  var testPassed: js.UndefOr[Boolean] = js.native
+  var testPassed: js.UndefOr[Boolean] = js.undefined
 }
 object UrlMapValidationResult {
   

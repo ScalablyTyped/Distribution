@@ -3,15 +3,15 @@ package typings.camljs
 import typings.camljs.mod.Aggregation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Avg extends Aggregation {
+  trait Avg
+    extends StObject
+       with Aggregation {
     
-    var avg: String = js.native
+    var avg: String
   }
   object Avg {
     
@@ -29,10 +29,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Count extends Aggregation {
+  trait Count
+    extends StObject
+       with Aggregation {
     
-    var count: String = js.native
+    var count: String
   }
   object Count {
     
@@ -50,10 +51,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Max extends Aggregation {
+  trait Max
+    extends StObject
+       with Aggregation {
     
-    var max: String = js.native
+    var max: String
   }
   object Max {
     
@@ -71,10 +73,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Min extends Aggregation {
+  trait Min
+    extends StObject
+       with Aggregation {
     
-    var min: String = js.native
+    var min: String
   }
   object Min {
     
@@ -92,10 +95,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Stdev extends Aggregation {
+  trait Stdev
+    extends StObject
+       with Aggregation {
     
-    var stdev: String = js.native
+    var stdev: String
   }
   object Stdev {
     
@@ -113,10 +117,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Sum extends Aggregation {
+  trait Sum
+    extends StObject
+       with Aggregation {
     
-    var sum: String = js.native
+    var sum: String
   }
   object Sum {
     
@@ -134,10 +139,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Var extends Aggregation {
+  trait Var
+    extends StObject
+       with Aggregation {
     
-    var `var`: String = js.native
+    var `var`: String
   }
   object Var {
     

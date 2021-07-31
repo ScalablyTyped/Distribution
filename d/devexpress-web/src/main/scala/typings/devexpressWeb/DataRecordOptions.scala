@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the settings defining a data record.
   */
-@js.native
 trait DataRecordOptions extends StObject {
   
   /**
     * Gets or sets the index of the active data record.
     */
-  var activeRecordIndex: Double = js.native
+  var activeRecordIndex: Double
   
   /**
     * Gets or sets the count of data source records.
     */
-  var recordCount: Double = js.native
+  var recordCount: Double
 }
 object DataRecordOptions {
   

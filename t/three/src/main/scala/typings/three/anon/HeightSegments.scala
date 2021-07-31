@@ -2,27 +2,25 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeightSegments extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var heightSegments: Double = js.native
+  var heightSegments: Double
   
-  var openEnded: Boolean = js.native
+  var openEnded: Boolean
   
-  var radialSegments: Double = js.native
+  var radialSegments: Double
   
-  var radiusBottom: Double = js.native
+  var radiusBottom: Double
   
-  var radiusTop: Double = js.native
+  var radiusTop: Double
   
-  var thetaLength: Double = js.native
+  var thetaLength: Double
   
-  var thetaStart: Double = js.native
+  var thetaStart: Double
 }
 object HeightSegments {
   

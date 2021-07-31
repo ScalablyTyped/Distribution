@@ -2,14 +2,14 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CoreCompilerError extends CompilerError {
+trait CoreCompilerError
+  extends StObject
+     with CompilerError {
   
   @JSName("code")
-  var code_CoreCompilerError: ErrorCodes = js.native
+  var code_CoreCompilerError: ErrorCodes
 }
 object CoreCompilerError {
   

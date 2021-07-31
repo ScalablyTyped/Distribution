@@ -2,24 +2,22 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Bezier t values for an arc path segment in a bezier curve.
   */
-@js.native
 trait IBezierRange extends StObject {
   
   /**
     * The bezier t-value at the end point.
     */
-  var endT: Double = js.native
+  var endT: Double
   
   /**
     * The bezier t-value at the starting point.
     */
-  var startT: Double = js.native
+  var startT: Double
 }
 object IBezierRange {
   

@@ -4,42 +4,41 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.anon.Completed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Build
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var creation_time: js.UndefOr[Double] = js.native
+  var creation_time: js.UndefOr[Double] = js.undefined
   
-  var deletion_time: js.UndefOr[Double] = js.native
+  var deletion_time: js.UndefOr[Double] = js.undefined
   
-  var end_time: js.UndefOr[Double] = js.native
+  var end_time: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var jobs: js.UndefOr[Completed] = js.native
+  var jobs: js.UndefOr[Completed] = js.undefined
   
-  var modification_time: js.UndefOr[Double] = js.native
+  var modification_time: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[Double] = js.native
+  var number: js.UndefOr[Double] = js.undefined
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var passed: js.UndefOr[Boolean] = js.native
+  var passed: js.UndefOr[Boolean] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
-  var run: js.UndefOr[Double] = js.native
+  var run: js.UndefOr[Double] = js.undefined
   
-  var start_time: js.UndefOr[Double] = js.native
+  var start_time: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object Build {
   

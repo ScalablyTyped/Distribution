@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ahead extends StObject {
   
-  var ahead: Double = js.native
+  var ahead: Double
   
-  var behind: Double = js.native
+  var behind: Double
 }
 object Ahead {
   

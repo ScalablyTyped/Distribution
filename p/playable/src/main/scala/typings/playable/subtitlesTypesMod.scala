@@ -2,19 +2,17 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subtitlesTypesMod {
   
-  @js.native
   trait ISubtitleConfig extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
   }
   object ISubtitleConfig {
     
@@ -62,20 +60,19 @@ object subtitlesTypesMod {
     def showSubtitles(): Unit = js.native
   }
   
-  @js.native
   trait ISubtitlesAPI extends StObject {
     
-    var hideSubtitles: js.UndefOr[js.Function0[Unit]] = js.native
+    var hideSubtitles: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeSubtitles: js.UndefOr[js.Function0[Unit]] = js.native
+    var removeSubtitles: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setActiveSubtitle: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var setActiveSubtitle: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     var setSubtitles: js.UndefOr[
         js.Function1[/* subtitles */ String | ISubtitleConfig | js.Array[ISubtitleConfig], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var showSubtitles: js.UndefOr[js.Function0[Unit]] = js.native
+    var showSubtitles: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ISubtitlesAPI {
     
@@ -120,18 +117,17 @@ object subtitlesTypesMod {
     }
   }
   
-  @js.native
   trait ISubtitlesViewStyles extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var controlsShown: String = js.native
+    var controlsShown: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var subtitlesContainer: String = js.native
+    var subtitlesContainer: String
   }
   object ISubtitlesViewStyles {
     

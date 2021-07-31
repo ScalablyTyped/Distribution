@@ -2,17 +2,15 @@ package typings.devcert
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CaCertPath extends StObject {
     
-    var caCertPath: String = js.native
+    var caCertPath: String
     
-    var caKeyPath: String = js.native
+    var caKeyPath: String
   }
   object CaCertPath {
     

@@ -14,35 +14,33 @@ import typings.inboxsdk.mod.User.UserInstance
 import typings.inboxsdk.mod.Widgets.WidgetsInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InboxSDKInstance extends StObject {
   
-  var ButterBar: ButterBarInstance = js.native
+  var ButterBar: ButterBarInstance
   
-  var Compose: ComposeInstance = js.native
+  var Compose: ComposeInstance
   
-  var Conversations: ConversationsInstance = js.native
+  var Conversations: ConversationsInstance
   
-  var Global: GlobalInstance = js.native
+  var Global: GlobalInstance
   
-  var Keyboard: KeyboardInstance = js.native
+  var Keyboard: KeyboardInstance
   
-  var Lists: ListsInstance = js.native
+  var Lists: ListsInstance
   
-  var NavMenu: NavMenuInstance = js.native
+  var NavMenu: NavMenuInstance
   
-  var Router: RouterInstance = js.native
+  var Router: RouterInstance
   
-  var Search: SearchInstance = js.native
+  var Search: SearchInstance
   
-  var Toolbars: ToolbarsInstance = js.native
+  var Toolbars: ToolbarsInstance
   
-  var User: UserInstance = js.native
+  var User: UserInstance
   
-  var Widgets: WidgetsInstance = js.native
+  var Widgets: WidgetsInstance
 }
 object InboxSDKInstance {
   

@@ -10,30 +10,33 @@ import typings.reactToastify.typesMod.ToastTransitionProps
 import typings.reactToastify.typesMod.TypeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
   
-  @JSImport("react-toastify/dist/components", "Bounce")
+  @JSImport("react-toastify/dist/components", JSImport.Namespace)
   @js.native
-  def Bounce(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-toastify/dist/components", "CloseButton")
-  @js.native
-  def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = js.native
+  @scala.inline
+  def Bounce(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Bounce")(hasChildrenPositionPreventExitTransitionDoneProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-toastify/dist/components", "Flip")
-  @js.native
-  def Flip(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = js.native
+  @scala.inline
+  def CloseButton(hasCloseToastTypeAriaLabel: CloseButtonProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("CloseButton")(hasCloseToastTypeAriaLabel.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
+  @scala.inline
+  def Flip(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Flip")(hasChildrenPositionPreventExitTransitionDoneProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   object ProgressBar {
     
+    @scala.inline
+    def apply(
+      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn: ProgressBarProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-toastify/dist/components", "ProgressBar")
     @js.native
-    def apply(
-      hasDelayIsRunningCloseToastTypeHideClassNameStyleControlledProgressProgressRtlIsIn: ProgressBarProps
-    ): Element = js.native
+    val ^ : js.Any = js.native
     
     object defaultProps {
       
@@ -53,9 +56,8 @@ object componentsMod {
     }
   }
   
-  @JSImport("react-toastify/dist/components", "Slide")
-  @js.native
-  def Slide(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = js.native
+  @scala.inline
+  def Slide(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Slide")(hasChildrenPositionPreventExitTransitionDoneProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-toastify/dist/components", "Toast")
   @js.native
@@ -65,7 +67,6 @@ object componentsMod {
   @js.native
   val ToastContainer: FC[ToastContainerProps] = js.native
   
-  @JSImport("react-toastify/dist/components", "Zoom")
-  @js.native
-  def Zoom(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = js.native
+  @scala.inline
+  def Zoom(hasChildrenPositionPreventExitTransitionDoneProps: ToastTransitionProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Zoom")(hasChildrenPositionPreventExitTransitionDoneProps.asInstanceOf[js.Any]).asInstanceOf[Element]
 }

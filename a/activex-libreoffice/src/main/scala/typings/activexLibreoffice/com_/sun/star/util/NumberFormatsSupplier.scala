@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,17 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see NumberFormatter
   * @since OOo 1.1.2
   */
-@js.native
-trait NumberFormatsSupplier extends XNumberFormatsSupplier {
+trait NumberFormatsSupplier
+  extends StObject
+     with XNumberFormatsSupplier {
   
   /** Create using default locale. */
-  def createWithDefaultLocale(): Unit = js.native
+  def createWithDefaultLocale(): Unit
   
   /**
     * Create using specific locale.
     * @param Locale the locale of the number formats supplier
     */
-  def createWithLocale(Locale: Locale): Unit = js.native
+  def createWithLocale(Locale: Locale): Unit
 }
 object NumberFormatsSupplier {
   

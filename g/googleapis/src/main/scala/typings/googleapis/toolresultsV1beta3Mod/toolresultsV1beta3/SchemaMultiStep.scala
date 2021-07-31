@@ -2,30 +2,28 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details when multiple steps are run with the same configuration as a group.
   */
-@js.native
 trait SchemaMultiStep extends StObject {
   
   /**
     * Unique int given to each step. Ranges from 0(inclusive) to total number
     * of steps(exclusive). The primary step is 0.
     */
-  var multistepNumber: js.UndefOr[Double] = js.native
+  var multistepNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * Present if it is a primary (original) step.
     */
-  var primaryStep: js.UndefOr[SchemaPrimaryStep] = js.native
+  var primaryStep: js.UndefOr[SchemaPrimaryStep] = js.undefined
   
   /**
     * Step Id of the primary (original) step, which might be this step.
     */
-  var primaryStepId: js.UndefOr[String] = js.native
+  var primaryStepId: js.UndefOr[String] = js.undefined
 }
 object SchemaMultiStep {
   

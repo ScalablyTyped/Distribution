@@ -3,7 +3,6 @@ package typings.pMap
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,12 +31,14 @@ object mod {
   })();
   ```
   */
+  @scala.inline
+  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
+  @scala.inline
+  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement], options: Options): js.Promise[js.Array[NewElement]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], mapper.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[NewElement]]]
+  
   @JSImport("p-map", JSImport.Namespace)
   @js.native
-  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement]): js.Promise[js.Array[NewElement]] = js.native
-  @JSImport("p-map", JSImport.Namespace)
-  @js.native
-  def apply[Element, NewElement](input: Iterable[Element], mapper: Mapper[Element, NewElement], options: Options): js.Promise[js.Array[NewElement]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Function which is called for every item in `input`. Expected to return a `Promise` or value.
@@ -46,7 +47,6 @@ object mod {
   	*/
   type Mapper[Element, NewElement] = js.Function2[/* element */ Element, /* index */ Double, NewElement | js.Promise[NewElement]]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -54,13 +54,13 @@ object mod {
     		Must be an integer from 1 and up or `Infinity`.
     		@default Infinity
     		*/
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
     		When set to `false`, instead of stopping when a promise rejects, it will wait for all the promises to settle and then reject with an [aggregated error](https://github.com/sindresorhus/aggregate-error) containing all the errors from the rejected promises.
     		@default true
     		*/
-    val stopOnError: js.UndefOr[Boolean] = js.native
+    val stopOnError: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

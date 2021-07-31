@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaRequest extends StObject {
   
   /** Common debug options. */
-  var debugOptions: js.UndefOr[DebugOptions] = js.native
+  var debugOptions: js.UndefOr[DebugOptions] = js.undefined
   
   /** The new schema for the source. */
-  var schema: js.UndefOr[Schema] = js.native
+  var schema: js.UndefOr[Schema] = js.undefined
   
   /** If true, the schema will be checked for validity, but will not be registered with the data source, even if valid. */
-  var validateOnly: js.UndefOr[Boolean] = js.native
+  var validateOnly: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateSchemaRequest {
   

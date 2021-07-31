@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgComboMultiSelection
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,25 +16,25 @@ trait IgComboMultiSelection
     * Set addWithKeyModifier to true to disable the additive selection, then additive selection can be done by ctrl + mouse click / enter.
     *
     */
-  var addWithKeyModifier: js.UndefOr[Boolean] = js.native
+  var addWithKeyModifier: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set enabled to true to turn multi selection on. Set to true by default when target element for the combo is a select with the multiple attribute set.
     *
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Use itemSeparator to set what string to be rendered between items in field.
     *
     */
-  var itemSeparator: js.UndefOr[String] = js.native
+  var itemSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Set showCheckboxes to true to render check boxes in front of each drop down item.
     *
     */
-  var showCheckboxes: js.UndefOr[Boolean] = js.native
+  var showCheckboxes: js.UndefOr[Boolean] = js.undefined
 }
 object IgComboMultiSelection {
   

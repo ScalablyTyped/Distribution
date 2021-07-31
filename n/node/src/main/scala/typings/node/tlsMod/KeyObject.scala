@@ -3,21 +3,19 @@ package typings.node.tlsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyObject extends StObject {
   
   /**
     * Optional passphrase.
     */
-  var passphrase: js.UndefOr[String] = js.native
+  var passphrase: js.UndefOr[String] = js.undefined
   
   /**
     * Private keys in PEM format.
     */
-  var pem: String | Buffer = js.native
+  var pem: String | Buffer
 }
 object KeyObject {
   

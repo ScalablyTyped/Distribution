@@ -2,64 +2,62 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestChromeSettingsOverridesSearchProvider extends StObject {
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var alternate_urls: js.UndefOr[js.Array[String]] = js.native
+  var alternate_urls: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Encoding of the search term. */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var favicon_url: js.UndefOr[String] = js.native
-  
-  /** @deprecated Unsupported on Firefox at this time. */
-  var image_url: js.UndefOr[String] = js.native
+  var favicon_url: js.UndefOr[String] = js.undefined
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var image_url_post_params: js.UndefOr[String] = js.native
+  var image_url: js.UndefOr[String] = js.undefined
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var instant_url: js.UndefOr[String] = js.native
+  var image_url_post_params: js.UndefOr[String] = js.undefined
   
   /** @deprecated Unsupported on Firefox at this time. */
-  var instant_url_post_params: js.UndefOr[String] = js.native
+  var instant_url: js.UndefOr[String] = js.undefined
+  
+  /** @deprecated Unsupported on Firefox at this time. */
+  var instant_url_post_params: js.UndefOr[String] = js.undefined
   
   /** Sets the default engine to a built-in engine only. */
-  var is_default: js.UndefOr[Boolean] = js.native
+  var is_default: js.UndefOr[Boolean] = js.undefined
   
-  var keyword: js.UndefOr[String | js.Array[String]] = js.native
+  var keyword: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   /**
     * A list of optional search url parameters. This allows the additon of search url parameters based on how the search is performed in Firefox.
     */
-  var params: js.UndefOr[js.Array[WebExtensionManifestChromeSettingsOverridesSearchProviderParams]] = js.native
+  var params: js.UndefOr[js.Array[WebExtensionManifestChromeSettingsOverridesSearchProviderParams]] = js.undefined
   
   /** @deprecated Unsupported on Firefox. */
-  var prepopulated_id: js.UndefOr[Double] = js.native
+  var prepopulated_id: js.UndefOr[Double] = js.undefined
   
-  var search_form: js.UndefOr[String] = js.native
+  var search_form: js.UndefOr[String] = js.undefined
   
-  var search_url: String = js.native
+  var search_url: String
   
   /** GET parameters to the search_url as a query string. */
-  var search_url_get_params: js.UndefOr[String] = js.native
+  var search_url_get_params: js.UndefOr[String] = js.undefined
   
   /** POST parameters to the search_url as a query string. */
-  var search_url_post_params: js.UndefOr[String] = js.native
+  var search_url_post_params: js.UndefOr[String] = js.undefined
   
-  var suggest_url: js.UndefOr[String] = js.native
+  var suggest_url: js.UndefOr[String] = js.undefined
   
   /** GET parameters to the suggest_url as a query string. */
-  var suggest_url_get_params: js.UndefOr[String] = js.native
+  var suggest_url_get_params: js.UndefOr[String] = js.undefined
   
   /** POST parameters to the suggest_url as a query string. */
-  var suggest_url_post_params: js.UndefOr[String] = js.native
+  var suggest_url_post_params: js.UndefOr[String] = js.undefined
 }
 object WebExtensionManifestChromeSettingsOverridesSearchProvider {
   

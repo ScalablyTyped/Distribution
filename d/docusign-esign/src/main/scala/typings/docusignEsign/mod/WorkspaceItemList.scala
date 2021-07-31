@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceItemList extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait WorkspaceItemList extends StObject {
     js.Array[
       /* This object represents an item in a workspace, which can be either a file or folder. */ WorkspaceItem
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WorkspaceItemList {
   

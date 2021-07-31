@@ -5,7 +5,6 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webdriverProxyMod {
@@ -24,10 +23,9 @@ object webdriverProxyMod {
     var seleniumAddress: String = js.native
   }
   
-  @js.native
   trait WebDriverBarrier extends StObject {
     
-    def onCommand(command: WebDriverCommand): js.Promise[Unit] = js.native
+    def onCommand(command: WebDriverCommand): js.Promise[Unit]
   }
   object WebDriverBarrier {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlexaForBusinessMetadata extends StObject {
   
   /**
     * The ARN of the room resource.
     */
-  var AlexaForBusinessRoomArn: js.UndefOr[SensitiveString] = js.native
+  var AlexaForBusinessRoomArn: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * Starts or stops Alexa for Business.
     */
-  var IsAlexaForBusinessEnabled: js.UndefOr[Boolean] = js.native
+  var IsAlexaForBusinessEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object AlexaForBusinessMetadata {
   

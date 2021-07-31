@@ -4,76 +4,74 @@ import typings.extjs.Ext.fx.target.ITarget
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fx {
   
-  @js.native
   trait CubicBezier extends StObject
   
-  @js.native
   trait Easing extends StObject
   
-  @js.native
-  trait IAnim extends IObservable {
+  trait IAnim
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Boolean) */
-    var alternate: js.UndefOr[Boolean] = js.native
+    var alternate: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var callback: js.UndefOr[js.Any] = js.native
+    var callback: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Number) */
-    var currentIteration: js.UndefOr[Double] = js.native
+    var currentIteration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var easing: js.UndefOr[java.lang.String] = js.native
+    var easing: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Fire afteranimate event and end the animation  */
-    var end: js.UndefOr[js.Function0[Unit]] = js.native
+    var end: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var from: js.UndefOr[js.Any] = js.native
+    var from: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Boolean) */
-    var isAnimation: js.UndefOr[Boolean] = js.native
+    var isAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var keyframes: js.UndefOr[js.Any] = js.native
+    var keyframes: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Boolean) */
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var running: js.UndefOr[Boolean] = js.native
+    var running: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Date) */
-    var startTime: js.UndefOr[js.Any] = js.native
+    var startTime: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var to: js.UndefOr[js.Any] = js.native
+    var to: js.UndefOr[js.Any] = js.undefined
   }
   object IAnim {
     
@@ -202,47 +200,48 @@ object fx {
     }
   }
   
-  @js.native
-  trait IAnimator extends IObservable {
+  trait IAnimator
+    extends StObject
+       with IObservable {
     
     /** [Property] (Number) */
-    var currentIteration: js.UndefOr[Double] = js.native
+    var currentIteration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var easing: js.UndefOr[java.lang.String] = js.native
+    var easing: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Fire afteranimate event and end the animation  */
-    var end: js.UndefOr[js.Function0[Unit]] = js.native
+    var end: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Boolean) */
-    var isAnimator: js.UndefOr[Boolean] = js.native
+    var isAnimator: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Number) */
-    var keyframeStep: js.UndefOr[Double] = js.native
+    var keyframeStep: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Object) */
-    var keyframes: js.UndefOr[js.Any] = js.native
+    var keyframes: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Boolean) */
-    var paused: js.UndefOr[Boolean] = js.native
+    var paused: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Boolean) */
-    var running: js.UndefOr[Boolean] = js.native
+    var running: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.fx.target.Target) */
-    var target: js.UndefOr[ITarget] = js.native
+    var target: js.UndefOr[ITarget] = js.undefined
   }
   object IAnimator {
     
@@ -337,11 +336,11 @@ object fx {
   
   type ICubicBezier = IBase
   
-  @js.native
   trait IEasing extends StObject
   
-  @js.native
-  trait IManager extends IBase
+  trait IManager
+    extends StObject
+       with IBase
   object IManager {
     
     @scala.inline
@@ -355,18 +354,18 @@ object fx {
   
   type IQueue = IBase
   
-  @js.native
   trait Manager extends StObject
   
   object target {
     
     type IComponent = ITarget
     
-    @js.native
-    trait ICompositeElement extends IBase {
+    trait ICompositeElement
+      extends StObject
+         with IBase {
       
       /** [Property] (Boolean) */
-      var isComposite: js.UndefOr[Boolean] = js.native
+      var isComposite: js.UndefOr[Boolean] = js.undefined
     }
     object ICompositeElement {
       

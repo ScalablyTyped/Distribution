@@ -3,14 +3,12 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.TpEventAddResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpEventAddResponse extends StObject {
   
   /** TpEventAddResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object ITpEventAddResponse {
   

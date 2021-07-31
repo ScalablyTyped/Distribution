@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,18 +16,17 @@ object mod {
   @js.native
   val po: MoParser = js.native
   
-  @js.native
   trait GetTextComment extends StObject {
     
-    var extracted: String = js.native
+    var extracted: String
     
-    var flag: String = js.native
+    var flag: String
     
-    var previous: String = js.native
+    var previous: String
     
-    var reference: String = js.native
+    var reference: String
     
-    var translator: String = js.native
+    var translator: String
   }
   object GetTextComment {
     
@@ -58,18 +56,17 @@ object mod {
     }
   }
   
-  @js.native
   trait GetTextTranslation extends StObject {
     
-    var comments: js.UndefOr[GetTextComment] = js.native
+    var comments: js.UndefOr[GetTextComment] = js.undefined
     
-    var msgctxt: js.UndefOr[String] = js.native
+    var msgctxt: js.UndefOr[String] = js.undefined
     
-    var msgid: String = js.native
+    var msgid: String
     
-    var msgid_plural: js.UndefOr[js.Any] = js.native
+    var msgid_plural: js.UndefOr[js.Any] = js.undefined
     
-    var msgstr: js.Array[String] = js.native
+    var msgstr: js.Array[String]
   }
   object GetTextTranslation {
     
@@ -111,14 +108,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GetTextTranslations extends StObject {
     
-    var charset: String = js.native
+    var charset: String
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var translations: StringDictionary[StringDictionary[GetTextTranslation]] = js.native
+    var translations: StringDictionary[StringDictionary[GetTextTranslation]]
   }
   object GetTextTranslations {
     

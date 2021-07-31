@@ -8,7 +8,6 @@ import typings.hapiHapi.mod.ResponseToolkit
 import typings.hapiHapi.mod.ServerStateCookieOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,6 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[RegisterOptions] = js.native
   
-  @js.native
   trait RegisterOptions extends StObject {
     
     /**
@@ -25,49 +23,49 @@ object mod extends Shortcut {
       *
       * @default true
       */
-    var addToViewContext: js.UndefOr[Boolean] = js.native
+    var addToViewContext: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to automatically generate a new crumb for requests.
       *
       * @default true
       */
-    var autoGenerate: js.UndefOr[Boolean] = js.native
+    var autoGenerate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Storage options for the cookie containing the crumb
       *
       * @default { path: '/' }
       */
-    var cookieOptions: js.UndefOr[ServerStateCookieOptions] = js.native
+    var cookieOptions: js.UndefOr[ServerStateCookieOptions] = js.undefined
     
     /**
       * Using enforce with false will set the CSRF header cookie but won't execute the validation.
       *
       * @default true
       */
-    var enforce: js.UndefOr[Boolean] = js.native
+    var enforce: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the name of the custom CSRF header.
       *
       * @default 'X-CSRF-Token'
       */
-    var headerName: js.UndefOr[String] = js.native
+    var headerName: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the cookie to store the CSRF crumb into.
       *
       * @default 'crumb'
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to add to the request log with tag 'crumb' and data 'validation failed'.
       *
       * @default false
       */
-    var logUnauthorized: js.UndefOr[Boolean] = js.native
+    var logUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /**
       * RESTful mode that validates crumb tokens from 'X-CSRF-Token' request header for POST, PUT, PATCH and DELETE server routes.
@@ -75,7 +73,7 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var restful: js.UndefOr[Boolean] = js.native
+    var restful: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The length of the crumb to generate.
@@ -83,7 +81,7 @@ object mod extends Shortcut {
       *
       * @default 43
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * A function which when provided, is called for every request.
@@ -91,7 +89,7 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var skip: js.UndefOr[Boolean | SkipFunction] = js.native
+    var skip: js.UndefOr[Boolean | SkipFunction] = js.undefined
   }
   object RegisterOptions {
     
@@ -179,10 +177,9 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait PluginSpecificConfiguration extends StObject {
       
-      var crumb: js.UndefOr[Boolean | Key] = js.native
+      var crumb: js.UndefOr[Boolean | Key] = js.undefined
     }
     object PluginSpecificConfiguration {
       

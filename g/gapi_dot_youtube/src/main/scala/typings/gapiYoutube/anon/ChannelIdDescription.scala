@@ -3,19 +3,17 @@ package typings.gapiYoutube.anon
 import typings.gapiYoutube.GoogleApiYouTubeThumbnailResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelIdDescription extends StObject {
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var description: String = js.native
+  var description: String
   
-  var thumbnails: GoogleApiYouTubeThumbnailResource = js.native
+  var thumbnails: GoogleApiYouTubeThumbnailResource
   
-  var title: String = js.native
+  var title: String
 }
 object ChannelIdDescription {
   

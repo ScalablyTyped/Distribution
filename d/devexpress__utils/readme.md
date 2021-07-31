@@ -10,9 +10,9 @@ DevExpress utils
 | ------------------ | :-------------: |
 | Full name          | @devexpress/utils |
 | Keywords           | devexpress, devextreme |
-| # releases         | 22 |
-| # dependents       | 2 |
-| # downloads        | 70136 |
+| # releases         | 23 |
+| # dependents       | 3 |
+| # downloads        | 376697 |
 | # stars            | 0 |
 
 ## Links

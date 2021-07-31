@@ -2,20 +2,18 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFilterableOperatorsEnums extends StObject {
   
   @JSName("eq")
-  var eq_FGridFilterableOperatorsEnums: js.UndefOr[String] = js.native
+  var eq_FGridFilterableOperatorsEnums: js.UndefOr[String] = js.undefined
   
-  var isnotnull: js.UndefOr[String] = js.native
+  var isnotnull: js.UndefOr[String] = js.undefined
   
-  var isnull: js.UndefOr[String] = js.native
+  var isnull: js.UndefOr[String] = js.undefined
   
-  var neq: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.undefined
 }
 object GridFilterableOperatorsEnums {
   

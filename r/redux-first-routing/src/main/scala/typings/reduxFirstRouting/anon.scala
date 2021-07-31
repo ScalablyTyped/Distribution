@@ -3,21 +3,19 @@ package typings.reduxFirstRouting
 import typings.history.mod.Search
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hash[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] extends StObject {
     
-    var hash: H = js.native
+    var hash: H
     
-    var pathname: P = js.native
+    var pathname: P
     
-    var queries: js.Any = js.native
+    var queries: js.Any
     
-    var search: S = js.native
+    var search: S
   }
   object Hash {
     
@@ -28,7 +26,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class HashMutableBuilder[Self <: Hash[_, _, _], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self with (Hash[P, S, H])) extends AnyVal {
+    implicit class HashMutableBuilder[Self <: Hash[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self & (Hash[P, S, H])) extends AnyVal {
       
       @scala.inline
       def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
@@ -44,14 +42,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Pathname[P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] extends StObject {
     
-    var hash: H = js.native
+    var hash: H
     
-    var pathname: P = js.native
+    var pathname: P
     
-    var search: S = js.native
+    var search: S
   }
   object Pathname {
     
@@ -62,7 +59,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PathnameMutableBuilder[Self <: Pathname[_, _, _], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self with (Pathname[P, S, H])) extends AnyVal {
+    implicit class PathnameMutableBuilder[Self <: Pathname[?, ?, ?], P /* <: typings.history.mod.Pathname */, S /* <: Search */, H /* <: typings.history.mod.Hash */] (val x: Self & (Pathname[P, S, H])) extends AnyVal {
       
       @scala.inline
       def setHash(value: H): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])

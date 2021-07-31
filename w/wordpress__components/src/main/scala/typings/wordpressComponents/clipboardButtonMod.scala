@@ -6,7 +6,6 @@ import typings.wordpressComponents.buttonMod.Button.ButtonProps
 import typings.wordpressComponents.clipboardButtonMod.ClipboardButton.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clipboardButtonMod {
@@ -25,24 +24,25 @@ object clipboardButtonMod {
   
   object ClipboardButton {
     
-    @js.native
-    trait Props extends ButtonProps {
+    trait Props
+      extends StObject
+         with ButtonProps {
       
       /**
         * Function to be called when copy starts.
         */
       @JSName("onCopy")
-      var onCopy_Props: js.UndefOr[js.Function0[Unit]] = js.native
+      var onCopy_Props: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * Function to be called when copy finishes.
         */
-      var onFinishCopy: js.UndefOr[js.Function0[Unit]] = js.native
+      var onFinishCopy: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * Text to be copied to the clipboard on click.
         */
-      var text: String = js.native
+      var text: String
     }
     object Props {
       

@@ -3,17 +3,17 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MKSpinnerProperties extends ViewProps {
+trait MKSpinnerProperties
+  extends StObject
+     with ViewProps {
   
-  var spinnerAniDuration: js.UndefOr[Double] = js.native
+  var spinnerAniDuration: js.UndefOr[Double] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
 }
 object MKSpinnerProperties {
   

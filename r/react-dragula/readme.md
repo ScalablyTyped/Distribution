@@ -11,8 +11,8 @@ Drag and drop so simple it hurts
 | Full name          | react-dragula |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 29 |
-| # downloads        | 768387 |
+| # dependents       | 30 |
+| # downloads        | 662380 |
 | # stars            | 1 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedBackendService extends StObject {
   
   /**
     * The full or partial URL to the default BackendService resource. Before forwarding the request to backendService, the loadbalancer applies any relevant headerActions specified as
     * part of this backendServiceWeight.
     */
-  var backendService: js.UndefOr[String] = js.native
+  var backendService: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take effect for the selected backendService.
@@ -20,7 +18,7 @@ trait WeightedBackendService extends StObject {
     * Note that headerAction is not supported for Loadbalancers that have their loadBalancingScheme set to EXTERNAL.
     * Not supported when the URL map is bound to target gRPC proxy that has validateForProxyless field set to true.
     */
-  var headerAction: js.UndefOr[HttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[HttpHeaderAction] = js.undefined
   
   /**
     * Specifies the fraction of traffic sent to backendService, computed as weight / (sum of all weightedBackendService weights in routeAction) .
@@ -28,7 +26,7 @@ trait WeightedBackendService extends StObject {
     * backendService as determined by the BackendService's session affinity policy.
     * The value must be between 0 and 1000
     */
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object WeightedBackendService {
   

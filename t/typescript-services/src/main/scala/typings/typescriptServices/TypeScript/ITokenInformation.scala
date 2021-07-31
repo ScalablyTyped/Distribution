@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITokenInformation extends StObject {
   
-  var nextToken: ISyntaxToken = js.native
+  var nextToken: ISyntaxToken
   
-  var previousToken: ISyntaxToken = js.native
+  var previousToken: ISyntaxToken
 }
 object ITokenInformation {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Adunits")
@@ -33,7 +32,7 @@ class ResourceAdunits protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAdUnit] = js.native
   def get(callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdUnit] = js.native
   def get(params: ParamsResourceAdunitsGet): GaxiosPromise[SchemaAdUnit] = js.native
   def get(params: ParamsResourceAdunitsGet, callback: BodyResponseCallback[SchemaAdUnit]): Unit = js.native
   def get(
@@ -63,7 +62,7 @@ class ResourceAdunits protected () extends StObject {
     */
   def getAdCode(): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
-  def getAdCode(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdCode] = js.native
+  def getAdCode(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(params: ParamsResourceAdunitsGetadcode): GaxiosPromise[SchemaAdCode] = js.native
   def getAdCode(params: ParamsResourceAdunitsGetadcode, callback: BodyResponseCallback[SchemaAdCode]): Unit = js.native
   def getAdCode(
@@ -96,7 +95,7 @@ class ResourceAdunits protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAdUnits] = js.native
   def list(callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAdUnits] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAdUnits] = js.native
   def list(params: ParamsResourceAdunitsList): GaxiosPromise[SchemaAdUnits] = js.native
   def list(params: ParamsResourceAdunitsList, callback: BodyResponseCallback[SchemaAdUnits]): Unit = js.native
   def list(

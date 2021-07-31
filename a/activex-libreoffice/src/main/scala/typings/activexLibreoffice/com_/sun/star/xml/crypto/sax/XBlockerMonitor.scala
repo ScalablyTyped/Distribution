@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate a blocker.
   */
-@js.native
-trait XBlockerMonitor extends XInterface {
+trait XBlockerMonitor
+  extends StObject
+     with XInterface {
   
   /**
     * Configures the blocker's id.
     * @param id the keeper id of the blocker
     */
-  def setBlockerId(id: Double): Unit = js.native
+  def setBlockerId(id: Double): Unit
 }
 object XBlockerMonitor {
   

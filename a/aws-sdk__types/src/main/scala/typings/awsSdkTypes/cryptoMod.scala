@@ -11,7 +11,6 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
@@ -44,7 +43,8 @@ object cryptoMod {
   
   @js.native
   trait HashConstructor
-    extends Instantiable0[Hash]
+    extends StObject
+       with Instantiable0[Hash]
        with Instantiable1[/* secret */ SourceData, Hash]
   
   type SourceData = String | ArrayBuffer | ArrayBufferView

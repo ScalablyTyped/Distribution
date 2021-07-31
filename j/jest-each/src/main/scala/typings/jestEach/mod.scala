@@ -9,29 +9,35 @@ import typings.jestTypes.globalMod.TestCallback
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("jest-each", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object default {
     
-    @JSImport("jest-each", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       table: EachTable,
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param data because its type Global.TemplateData is not an array type */ data: TemplateData
     ): ReturnType[
         js.Function3[/* g */ Global, /* table */ EachTable, /* data */ TemplateData, Describe]
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].apply(table.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReturnType[
+        js.Function3[/* g */ Global, /* table */ EachTable, /* data */ TemplateData, Describe]
+      ]]
     
-    @JSImport("jest-each", "default.withGlobal")
+    @JSImport("jest-each", JSImport.Default)
     @js.native
-    def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def withGlobal(g: Global): js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGlobal")(g.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* table */ EachTable, /* data */ TemplateData, Describe]]
   }
   
-  @JSImport("jest-each", "bind")
-  @js.native
+  @scala.inline
   def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -41,9 +47,17 @@ object mod {
       /* timeout */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
-  @JSImport("jest-each", "bind")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* table */ EachTable, 
+    /* taggedTemplateData */ TemplateData, 
+    js.Function3[
+      /* title */ String, 
+      /* test */ EachTestFn[EachCallback], 
+      /* timeout */ js.UndefOr[Double], 
+      Unit
+    ]
+  ]]
+  @scala.inline
   def bind[EachCallback /* <: TestCallback */](cb: GlobalCallback, supportsDone: Boolean): js.Function2[
     /* table */ EachTable, 
     /* taggedTemplateData */ TemplateData, 
@@ -53,7 +67,16 @@ object mod {
       /* timeout */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(cb.asInstanceOf[js.Any], supportsDone.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+    /* table */ EachTable, 
+    /* taggedTemplateData */ TemplateData, 
+    js.Function3[
+      /* title */ String, 
+      /* test */ EachTestFn[EachCallback], 
+      /* timeout */ js.UndefOr[Double], 
+      Unit
+    ]
+  ]]
   
   type Global = typings.jestTypes.globalMod.Global
 }

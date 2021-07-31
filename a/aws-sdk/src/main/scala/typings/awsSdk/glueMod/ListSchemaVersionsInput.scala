@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSchemaVersionsInput extends StObject {
   
   /**
     * Maximum number of results required per page. If the value is not supplied, this will be defaulted to 25 per page.
     */
-  var MaxResults: js.UndefOr[MaxResultsNumber] = js.native
+  var MaxResults: js.UndefOr[MaxResultsNumber] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
   
   /**
     * This is a wrapper structure to contain schema identity fields. The structure contains:   SchemaId$SchemaArn: The Amazon Resource Name (ARN) of the schema. Either SchemaArn or SchemaName and RegistryName has to be provided.   SchemaId$SchemaName: The name of the schema. Either SchemaArn or SchemaName and RegistryName has to be provided.  
     */
-  var SchemaId: typings.awsSdk.glueMod.SchemaId = js.native
+  var SchemaId: typings.awsSdk.glueMod.SchemaId
 }
 object ListSchemaVersionsInput {
   

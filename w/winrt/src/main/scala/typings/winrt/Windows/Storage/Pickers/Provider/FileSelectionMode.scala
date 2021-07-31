@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.Pickers.Provider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait FileSelectionMode extends StObject
 object FileSelectionMode extends StObject {
   
   @js.native
-  sealed trait multiple extends FileSelectionMode
+  sealed trait multiple
+    extends StObject
+       with FileSelectionMode
   
   @js.native
-  sealed trait single extends FileSelectionMode
+  sealed trait single
+    extends StObject
+       with FileSelectionMode
 }

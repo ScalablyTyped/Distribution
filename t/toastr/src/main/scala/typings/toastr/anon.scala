@@ -2,37 +2,35 @@ package typings.toastr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
     /**
       * Icon to use on error toasts.
       * @default toast-error
       */
-    var error: String = js.native
+    var error: String
     
     /**
       * Icon to use on info toasts.
       * @default toast-info
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * Icon to use on success toasts.
       * @default toast-success
       */
-    var success: String = js.native
+    var success: String
     
     /**
       * Icon to use on warning toasts.
       * @default toast-warning
       */
-    var warning: String = js.native
+    var warning: String
   }
   object Error {
     
@@ -59,10 +57,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Force extends StObject {
     
-    var force: Boolean = js.native
+    var force: Boolean
   }
   object Force {
     

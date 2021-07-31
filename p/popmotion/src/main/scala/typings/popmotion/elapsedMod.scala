@@ -2,32 +2,28 @@ package typings.popmotion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elapsedMod {
   
-  @JSImport("popmotion/lib/animations/utils/elapsed", "hasRepeatDelayElapsed")
+  @JSImport("popmotion/lib/animations/utils/elapsed", JSImport.Namespace)
   @js.native
-  def hasRepeatDelayElapsed(elapsed: Double, duration: Double, delay: Double, isForwardPlayback: Boolean): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion/lib/animations/utils/elapsed", "loopElapsed")
-  @js.native
-  def loopElapsed(elapsed: Double, duration: Double): Double = js.native
-  @JSImport("popmotion/lib/animations/utils/elapsed", "loopElapsed")
-  @js.native
-  def loopElapsed(elapsed: Double, duration: Double, delay: Double): Double = js.native
+  @scala.inline
+  def hasRepeatDelayElapsed(elapsed: Double, duration: Double, delay: Double, isForwardPlayback: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasRepeatDelayElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], isForwardPlayback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("popmotion/lib/animations/utils/elapsed", "reverseElapsed")
-  @js.native
-  def reverseElapsed(elapsed: Double, duration: Double): Double = js.native
-  @JSImport("popmotion/lib/animations/utils/elapsed", "reverseElapsed")
-  @js.native
-  def reverseElapsed(elapsed: Double, duration: Double, delay: js.UndefOr[scala.Nothing], isForwardPlayback: Boolean): Double = js.native
-  @JSImport("popmotion/lib/animations/utils/elapsed", "reverseElapsed")
-  @js.native
-  def reverseElapsed(elapsed: Double, duration: Double, delay: Double): Double = js.native
-  @JSImport("popmotion/lib/animations/utils/elapsed", "reverseElapsed")
-  @js.native
-  def reverseElapsed(elapsed: Double, duration: Double, delay: Double, isForwardPlayback: Boolean): Double = js.native
+  @scala.inline
+  def loopElapsed(elapsed: Double, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loopElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def loopElapsed(elapsed: Double, duration: Double, delay: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loopElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def reverseElapsed(elapsed: Double, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def reverseElapsed(elapsed: Double, duration: Double, delay: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def reverseElapsed(elapsed: Double, duration: Double, delay: Double, isForwardPlayback: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], isForwardPlayback.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def reverseElapsed(elapsed: Double, duration: Double, delay: Unit, isForwardPlayback: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reverseElapsed")(elapsed.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any], isForwardPlayback.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

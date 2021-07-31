@@ -10,9 +10,9 @@ Immutability helpers with fast reads and acceptable writes
 | ------------------ | :-------------: |
 | Full name          | timm |
 | Keywords           | immutability |
-| # releases         | 2 |
-| # dependents       | 36 |
-| # downloads        | 28844806 |
+| # releases         | 4 |
+| # dependents       | 39 |
+| # downloads        | 38157942 |
 | # stars            | 5 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.mongodbMemoryServerCore
 import typings.mongodbMemoryServerCore.typesMod.StorageEngineT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mongodbMemoryServerCoreStrings {
@@ -39,12 +38,16 @@ object mongodbMemoryServerCoreStrings {
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait devnull extends StorageEngineT
+  sealed trait devnull
+    extends StObject
+       with StorageEngineT
   @scala.inline
   def devnull: devnull = "devnull".asInstanceOf[devnull]
   
   @js.native
-  sealed trait ephemeralForTest extends StorageEngineT
+  sealed trait ephemeralForTest
+    extends StObject
+       with StorageEngineT
   @scala.inline
   def ephemeralForTest: ephemeralForTest = "ephemeralForTest".asInstanceOf[ephemeralForTest]
   
@@ -64,7 +67,9 @@ object mongodbMemoryServerCoreStrings {
   def linux: linux = "linux".asInstanceOf[linux]
   
   @js.native
-  sealed trait mmapv1 extends StorageEngineT
+  sealed trait mmapv1
+    extends StObject
+       with StorageEngineT
   @scala.inline
   def mmapv1: mmapv1 = "mmapv1".asInstanceOf[mmapv1]
   
@@ -94,7 +99,9 @@ object mongodbMemoryServerCoreStrings {
   def win32: win32 = "win32".asInstanceOf[win32]
   
   @js.native
-  sealed trait wiredTiger extends StorageEngineT
+  sealed trait wiredTiger
+    extends StObject
+       with StorageEngineT
   @scala.inline
   def wiredTiger: wiredTiger = "wiredTiger".asInstanceOf[wiredTiger]
 }

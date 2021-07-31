@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Devices.Scanners
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a preview scan job. */
-@js.native
 trait ImageScannerPreviewResult extends StObject {
   
   /** Gets the format of the data for the scan preview. After preview this property is restored to the value before preview. */
-  var format: ImageScannerFormat = js.native
+  var format: ImageScannerFormat
   
   /** Gets whether the scan preview was successful. */
-  var succeeded: Boolean = js.native
+  var succeeded: Boolean
 }
 object ImageScannerPreviewResult {
   

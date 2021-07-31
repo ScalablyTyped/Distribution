@@ -3,7 +3,6 @@ package typings.awsSdkSmithyClient
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lazyJsonMod {
@@ -11,7 +10,8 @@ object lazyJsonMod {
   @JSImport("@aws-sdk/smithy-client/dist/cjs/lazy-json", "LazyJsonString")
   @js.native
   class LazyJsonString ()
-    extends typings.awsSdkSmithyClient.lazyJsonMod.StringWrapper {
+    extends StObject
+       with typings.awsSdkSmithyClient.lazyJsonMod.StringWrapper {
     
     def deserializeJSON(): js.Any = js.native
     
@@ -20,14 +20,18 @@ object lazyJsonMod {
   /* static members */
   object LazyJsonString {
     
-    @JSImport("@aws-sdk/smithy-client/dist/cjs/lazy-json", "LazyJsonString.fromObject")
+    @JSImport("@aws-sdk/smithy-client/dist/cjs/lazy-json", "LazyJsonString")
     @js.native
-    def fromObject(`object`: js.Any): LazyJsonString = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromObject(`object`: js.Any): LazyJsonString = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[LazyJsonString]
   }
   
   @js.native
   trait StringWrapper
-    extends Instantiable1[/* arg */ js.Any, String]
+    extends StObject
+       with Instantiable1[/* arg */ js.Any, String]
   @JSImport("@aws-sdk/smithy-client/dist/cjs/lazy-json", "StringWrapper")
   @js.native
   val StringWrapper: typings.awsSdkSmithyClient.lazyJsonMod.StringWrapper = js.native
@@ -36,7 +40,8 @@ object lazyJsonMod {
   @JSImport("@aws-sdk/smithy-client/dist/cjs/lazy-json", "StringWrapper")
   @js.native
   class StringWrapperCls protected ()
-    extends typings.std.String {
+    extends StObject
+       with typings.std.String {
     def this(arg: js.Any) = this()
   }
 }

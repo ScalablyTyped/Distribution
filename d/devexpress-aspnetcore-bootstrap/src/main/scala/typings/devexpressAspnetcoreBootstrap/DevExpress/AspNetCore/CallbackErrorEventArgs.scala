@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CallbackErrorEventArgs extends EventArgs {
+trait CallbackErrorEventArgs
+  extends StObject
+     with EventArgs {
   
-  var handled: Boolean = js.native
+  var handled: Boolean
   
-  var message: String = js.native
+  var message: String
 }
 object CallbackErrorEventArgs {
   

@@ -7,30 +7,30 @@ import typings.stripe.stripeStrings.now
 import typings.stripe.stripeStrings.unchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IInvoiceListUpcomingLineItemsOptions extends IListOptions {
+trait IInvoiceListUpcomingLineItemsOptions
+  extends StObject
+     with IListOptions {
   
   /**
     * The code of the coupon to apply. If subscription or subscription_items is provided, the invoice returned will preview updating or
     * creating a subscription with that coupon. Otherwise, it will preview applying that coupon to the customer for the next upcoming invoice
     * from among the customer’s subscriptions. The invoice can be previewed without a coupon by passing this value as an empty string.
     */
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the customer whose upcoming invoice you’d like to retrieve.
     * Required if subscription unset
     */
-  var customer: js.UndefOr[String] = js.native
+  var customer: js.UndefOr[String] = js.undefined
   
   /**
     * array of hashes
     * List of invoice items to add or update in the upcoming invoice preview.
     */
-  var invoice_items: js.UndefOr[js.Array[InvoiceItem]] = js.native
+  var invoice_items: js.UndefOr[js.Array[InvoiceItem]] = js.undefined
   
   /**
     * The identifier of the subscription for which you’d like to retrieve the upcoming invoice. If not
@@ -38,7 +38,7 @@ trait IInvoiceListUpcomingLineItemsOptions extends IListOptions {
     * those items. If neither subscription nor subscription_items is provided, you will retrieve the
     * next upcoming invoice from among the customer’s subscriptions.
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /**
     * For new subscriptions, a future timestamp to anchor the subscription’s billing cycle. This is used to
@@ -46,32 +46,32 @@ trait IInvoiceListUpcomingLineItemsOptions extends IListOptions {
     * the month for subsequent invoices. For existing subscriptions, the value can only be set to now or
     * unchanged.
     */
-  var subscription_billing_cycle_anchor: js.UndefOr[now | unchanged] = js.native
+  var subscription_billing_cycle_anchor: js.UndefOr[now | unchanged] = js.undefined
   
   /**
     * Boolean indicating when the subscription should be scheduled to cancel. Will prorate if
     * within the current period if prorate=true
     */
-  var subscription_cancel_at: js.UndefOr[Boolean] = js.native
+  var subscription_cancel_at: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean indicating whether this subscription should cancel at the end of the current period.
     */
-  var subscription_cancel_at_period_end: js.UndefOr[Boolean] = js.native
+  var subscription_cancel_at_period_end: js.UndefOr[Boolean] = js.undefined
   
-  var subscription_cancel_now: js.UndefOr[Boolean] = js.native
+  var subscription_cancel_now: js.UndefOr[Boolean] = js.undefined
   
   /**
     * array of hashes List of subscription items, each with an attached plan.
     */
-  var subscription_items: js.UndefOr[js.Array[ISubscriptionUpdateItem]] = js.native
+  var subscription_items: js.UndefOr[js.Array[ISubscriptionUpdateItem]] = js.undefined
   
   /**
     * If previewing an update to a subscription, this decides whether the preview will show the result of
     * applying prorations or not. If set, one of subscription_items or subscription, and one of
     * subscription_items or subscription_trial_end are required.
     */
-  var subscription_prorate: js.UndefOr[Boolean] = js.native
+  var subscription_prorate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If previewing an update to a subscription, and doing proration, subscription_proration_date
@@ -80,12 +80,12 @@ trait IInvoiceListUpcomingLineItemsOptions extends IListOptions {
     * its current plan. If set, subscription, and one of subscription_items, or subscription_trial_end are
     * required. Also, subscription_proration cannot be set to false.
     */
-  var subscription_proration_date: js.UndefOr[Double] = js.native
+  var subscription_proration_date: js.UndefOr[Double] = js.undefined
   
   /**
     * Date a subscription is intended to start (can be future or past)
     */
-  var subscription_start_date: js.UndefOr[Double] = js.native
+  var subscription_start_date: js.UndefOr[Double] = js.undefined
   
   /**
     * DEPRECATED
@@ -94,20 +94,20 @@ trait IInvoiceListUpcomingLineItemsOptions extends IListOptions {
     * and will be removed in a future API version, for further information view the migration docs for
     * tax_rates.
     */
-  var subscription_tax_percent: js.UndefOr[Double] = js.native
+  var subscription_tax_percent: js.UndefOr[Double] = js.undefined
   
   /**
     * If provided, the invoice returned will preview updating or creating a subscription with that trial end.
     * If set, one of subscription_items or subscription is required.
     */
-  var subscription_trial_end: js.UndefOr[now | Double | String] = js.native
+  var subscription_trial_end: js.UndefOr[now | Double | String] = js.undefined
   
   /**
     * Indicates if a plan’s trial_period_days should be applied to the subscription. Setting
     * subscription_trial_end per subscription is preferred, and this defaults to false. Setting this flag to
     * true together with subscription_trial_end is not allowed.
     */
-  var subscription_trial_from_plan: js.UndefOr[Boolean] = js.native
+  var subscription_trial_from_plan: js.UndefOr[Boolean] = js.undefined
 }
 object IInvoiceListUpcomingLineItemsOptions {
   

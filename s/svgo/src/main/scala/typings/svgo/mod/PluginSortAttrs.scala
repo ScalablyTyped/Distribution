@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginSortAttrs extends PluginConfig {
+trait PluginSortAttrs
+  extends StObject
+     with PluginConfig {
   
-  var sortAttrs: Boolean | js.Object = js.native
+  var sortAttrs: Boolean | js.Object
 }
 object PluginSortAttrs {
   

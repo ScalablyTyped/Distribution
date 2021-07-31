@@ -2,17 +2,15 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var gQ: GameQuery = js.native
+  var gQ: GameQuery
   
-  var gameQuery: GameQuery = js.native
+  var gameQuery: GameQuery
   
-  def playground(): JQuery = js.native
+  def playground(): JQuery
 }
 object JQueryStatic {
   

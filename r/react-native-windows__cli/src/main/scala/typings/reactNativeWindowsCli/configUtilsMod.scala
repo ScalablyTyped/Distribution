@@ -6,68 +6,56 @@ import typings.std.Document
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configUtilsMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findAppProjectFiles")
+  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", JSImport.Namespace)
   @js.native
-  def findAppProjectFiles(winFolder: String): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findDependencyProjectFiles")
-  @js.native
-  def findDependencyProjectFiles(winFolder: String): js.Array[String] = js.native
+  @scala.inline
+  def findAppProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAppProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findFiles")
-  @js.native
-  def findFiles(folder: String, filenamePattern: String): js.Array[String] = js.native
+  @scala.inline
+  def findDependencyProjectFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findDependencyProjectFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findPropertyValue")
-  @js.native
-  def findPropertyValue(projectContents: Node, propertyName: String, filePath: String): String = js.native
+  @scala.inline
+  def findFiles(folder: String, filenamePattern: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("findFiles")(folder.asInstanceOf[js.Any], filenamePattern.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findSolutionFiles")
-  @js.native
-  def findSolutionFiles(winFolder: String): js.Array[String] = js.native
+  @scala.inline
+  def findPropertyValue(projectContents: Node, propertyName: String, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("findPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "findWindowsFolder")
-  @js.native
-  def findWindowsFolder(folder: String): String | Null = js.native
+  @scala.inline
+  def findSolutionFiles(winFolder: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("findSolutionFiles")(winFolder.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "getProjectGuid")
-  @js.native
-  def getProjectGuid(projectContents: Node): String | Null = js.native
+  @scala.inline
+  def findWindowsFolder(folder: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findWindowsFolder")(folder.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "getProjectLanguage")
-  @js.native
-  def getProjectLanguage(projectPath: String): cpp | cs | Null = js.native
+  @scala.inline
+  def getProjectGuid(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectGuid")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "getProjectName")
-  @js.native
-  def getProjectName(projectContents: Node): String = js.native
+  @scala.inline
+  def getProjectLanguage(projectPath: String): cpp | cs | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectLanguage")(projectPath.asInstanceOf[js.Any]).asInstanceOf[cpp | cs | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "getProjectNamespace")
-  @js.native
-  def getProjectNamespace(projectContents: Node): String | Null = js.native
+  @scala.inline
+  def getProjectName(projectContents: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectName")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "importProjectExists")
-  @js.native
-  def importProjectExists(projectContents: Node, projectName: String): Boolean = js.native
+  @scala.inline
+  def getProjectNamespace(projectContents: Node): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getProjectNamespace")(projectContents.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "isRnwDependencyProject")
-  @js.native
-  def isRnwDependencyProject(filePath: String): Boolean = js.native
+  @scala.inline
+  def importProjectExists(projectContents: Node, projectName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("importProjectExists")(projectContents.asInstanceOf[js.Any], projectName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "isRnwSolution")
-  @js.native
-  def isRnwSolution(filePath: String): Boolean = js.native
+  @scala.inline
+  def isRnwDependencyProject(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwDependencyProject")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "readProjectFile")
-  @js.native
-  def readProjectFile(projectPath: String): Document = js.native
+  @scala.inline
+  def isRnwSolution(filePath: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRnwSolution")(filePath.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/config/configUtils", "tryFindPropertyValue")
-  @js.native
-  def tryFindPropertyValue(projectContents: Node, propertyName: String): String | Null = js.native
+  @scala.inline
+  def readProjectFile(projectPath: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("readProjectFile")(projectPath.asInstanceOf[js.Any]).asInstanceOf[Document]
+  
+  @scala.inline
+  def tryFindPropertyValue(projectContents: Node, propertyName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("tryFindPropertyValue")(projectContents.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
 }

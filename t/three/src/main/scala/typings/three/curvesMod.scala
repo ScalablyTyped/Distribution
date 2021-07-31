@@ -4,7 +4,6 @@ import typings.three.vector2Mod.Vector2
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object curvesMod {
@@ -34,40 +33,20 @@ object curvesMod {
   class CatmullRomCurve3 ()
     extends typings.three.catmullRomCurve3Mod.CatmullRomCurve3 {
     def this(points: js.Array[Vector3]) = this()
-    def this(points: js.UndefOr[scala.Nothing], closed: Boolean) = this()
     def this(points: js.Array[Vector3], closed: Boolean) = this()
-    def this(points: js.UndefOr[scala.Nothing], closed: js.UndefOr[scala.Nothing], curveType: String) = this()
-    def this(points: js.UndefOr[scala.Nothing], closed: Boolean, curveType: String) = this()
-    def this(points: js.Array[Vector3], closed: js.UndefOr[scala.Nothing], curveType: String) = this()
+    def this(points: Unit, closed: Boolean) = this()
     def this(points: js.Array[Vector3], closed: Boolean, curveType: String) = this()
-    def this(
-      points: js.UndefOr[scala.Nothing],
-      closed: js.UndefOr[scala.Nothing],
-      curveType: js.UndefOr[scala.Nothing],
-      tension: Double
-    ) = this()
-    def this(
-      points: js.UndefOr[scala.Nothing],
-      closed: js.UndefOr[scala.Nothing],
-      curveType: String,
-      tension: Double
-    ) = this()
-    def this(
-      points: js.UndefOr[scala.Nothing],
-      closed: Boolean,
-      curveType: js.UndefOr[scala.Nothing],
-      tension: Double
-    ) = this()
-    def this(points: js.UndefOr[scala.Nothing], closed: Boolean, curveType: String, tension: Double) = this()
-    def this(
-      points: js.Array[Vector3],
-      closed: js.UndefOr[scala.Nothing],
-      curveType: js.UndefOr[scala.Nothing],
-      tension: Double
-    ) = this()
-    def this(points: js.Array[Vector3], closed: js.UndefOr[scala.Nothing], curveType: String, tension: Double) = this()
-    def this(points: js.Array[Vector3], closed: Boolean, curveType: js.UndefOr[scala.Nothing], tension: Double) = this()
+    def this(points: js.Array[Vector3], closed: Unit, curveType: String) = this()
+    def this(points: Unit, closed: Boolean, curveType: String) = this()
+    def this(points: Unit, closed: Unit, curveType: String) = this()
     def this(points: js.Array[Vector3], closed: Boolean, curveType: String, tension: Double) = this()
+    def this(points: js.Array[Vector3], closed: Boolean, curveType: Unit, tension: Double) = this()
+    def this(points: js.Array[Vector3], closed: Unit, curveType: String, tension: Double) = this()
+    def this(points: js.Array[Vector3], closed: Unit, curveType: Unit, tension: Double) = this()
+    def this(points: Unit, closed: Boolean, curveType: String, tension: Double) = this()
+    def this(points: Unit, closed: Boolean, curveType: Unit, tension: Double) = this()
+    def this(points: Unit, closed: Unit, curveType: String, tension: Double) = this()
+    def this(points: Unit, closed: Unit, curveType: Unit, tension: Double) = this()
   }
   
   @JSImport("three/src/extras/curves/Curves", "CubicBezierCurve")
@@ -86,21 +65,21 @@ object curvesMod {
   
   object CurveUtils {
     
-    @JSImport("three/src/extras/curves/Curves", "CurveUtils.interpolate")
+    @JSImport("three/src/extras/curves/Curves", "CurveUtils")
     @js.native
-    def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("three/src/extras/curves/Curves", "CurveUtils.tangentCubicBezier")
-    @js.native
-    def tangentCubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+    @scala.inline
+    def interpolate(p0: Double, p1: Double, p2: Double, p3: Double, t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("three/src/extras/curves/Curves", "CurveUtils.tangentQuadraticBezier")
-    @js.native
-    def tangentQuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = js.native
+    @scala.inline
+    def tangentCubicBezier(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentCubicBezier")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("three/src/extras/curves/Curves", "CurveUtils.tangentSpline")
-    @js.native
-    def tangentSpline(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = js.native
+    @scala.inline
+    def tangentQuadraticBezier(t: Double, p0: Double, p1: Double, p2: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentQuadraticBezier")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def tangentSpline(t: Double, p0: Double, p1: Double, p2: Double, p3: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tangentSpline")(t.asInstanceOf[js.Any], p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   @JSImport("three/src/extras/curves/Curves", "EllipseCurve")

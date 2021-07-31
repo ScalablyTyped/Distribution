@@ -7,7 +7,6 @@ import typings.luminoWidgets.titleMod.Title.Dataset
 import typings.luminoWidgets.titleMod.Title.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object titleMod {
@@ -193,28 +192,27 @@ object titleMod {
     /**
       * An options object for initializing a title.
       */
-    @js.native
     trait IOptions[T] extends StObject {
       
       /**
         * The caption for the title.
         */
-      var caption: js.UndefOr[String] = js.native
+      var caption: js.UndefOr[String] = js.undefined
       
       /**
         * The extra class name for the title.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * The closable state for the title.
         */
-      var closable: js.UndefOr[Boolean] = js.native
+      var closable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The dataset for the title.
         */
-      var dataset: js.UndefOr[Dataset] = js.native
+      var dataset: js.UndefOr[Dataset] = js.undefined
       
       /**
         * The icon renderer for the title.
@@ -222,37 +220,37 @@ object titleMod {
         * DEPRECATED: if set to a string value, the .icon field will function as
         * an alias for the .iconClass field, for backwards compatibility
         */
-      var icon: js.UndefOr[IRenderer | String] = js.native
+      var icon: js.UndefOr[IRenderer | String] = js.undefined
       
       /**
         * The icon class name for the title.
         */
-      var iconClass: js.UndefOr[String] = js.native
+      var iconClass: js.UndefOr[String] = js.undefined
       
       /**
         * The icon label for the title.
         */
-      var iconLabel: js.UndefOr[String] = js.native
+      var iconLabel: js.UndefOr[String] = js.undefined
       
       /**
         * @deprecated Use `icon` instead.
         */
-      var iconRenderer: js.UndefOr[IRenderer] = js.native
+      var iconRenderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The label for the title.
         */
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
       /**
         * The mnemonic index for the title.
         */
-      var mnemonic: js.UndefOr[Double] = js.native
+      var mnemonic: js.UndefOr[Double] = js.undefined
       
       /**
         * The object which owns the title.
         */
-      var owner: T = js.native
+      var owner: T
     }
     object IOptions {
       
@@ -263,7 +261,7 @@ object titleMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T] (val x: Self with IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])

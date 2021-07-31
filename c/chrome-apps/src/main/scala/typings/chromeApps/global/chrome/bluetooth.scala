@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.bluetooth.Device
 import typings.chromeApps.chrome.bluetooth.DeviceFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -24,32 +23,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bluetooth {
   
-  /** Get information about the Bluetooth adapter. */
-  @JSGlobal("chrome.bluetooth.getAdapterState")
+  @JSGlobal("chrome.bluetooth")
   @js.native
-  def getAdapterState(callback: js.Function1[/* adapterInfo */ AdapterState, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /** Get information about the Bluetooth adapter. */
+  @scala.inline
+  def getAdapterState(callback: js.Function1[/* adapterInfo */ AdapterState, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAdapterState")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Get information about a Bluetooth device known to the system. */
-  @JSGlobal("chrome.bluetooth.getDevice")
-  @js.native
-  def getDevice(deviceAddress: String, callback: js.Function1[/* deviceInfo */ Device, Unit]): Unit = js.native
+  @scala.inline
+  def getDevice(deviceAddress: String, callback: js.Function1[/* deviceInfo */ Device, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevice")(deviceAddress.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Get a list of Bluetooth devices known to the system, including paired and recently discovered devices.
     * @param callback Called when the search is completed.
     */
-  @JSGlobal("chrome.bluetooth.getDevices")
-  @js.native
-  def getDevices(callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * @since Chrome 67.
     * @description Get a list of Bluetooth devices known to the system, including paired and recently discovered devices.
     * @param filter Some criteria to filter the list of returned bluetooth devices. If the filter is not set or set to {}, returned device list will contain all bluetooth devices. Right now this is only supported in ChromeOS, for other platforms, a full list is returned.
     * @param callback Called when the search is completed.
     */
-  @JSGlobal("chrome.bluetooth.getDevices")
-  @js.native
-  def getDevices(filter: DeviceFilter, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = js.native
+  @scala.inline
+  def getDevices(filter: DeviceFilter, callback: js.Function1[/* devices */ js.Array[Device], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")(filter.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when the state of the Bluetooth adapter changes. */
   @JSGlobal("chrome.bluetooth.onAdapterStateChanged")
@@ -75,12 +74,10 @@ object bluetooth {
     * Start discovery. Newly discovered devices will be returned via the onDeviceAdded event. Previously discovered devices already known to the adapter must be obtained using getDevices and will only be updated using the |onDeviceChanged| event if information about them changes.
     * Discovery will fail to start if this application has already called startDiscovery. Discovery can be resource intensive: stopDiscovery should be called as soon as possible.
     */
-  @JSGlobal("chrome.bluetooth.startDiscovery")
-  @js.native
-  def startDiscovery(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def startDiscovery(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startDiscovery")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** Stop discovery. */
-  @JSGlobal("chrome.bluetooth.stopDiscovery")
-  @js.native
-  def stopDiscovery(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def stopDiscovery(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopDiscovery")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

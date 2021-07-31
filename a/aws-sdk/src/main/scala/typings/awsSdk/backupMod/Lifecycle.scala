@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lifecycle extends StObject {
   
   /**
     * Specifies the number of days after creation that a recovery point is deleted. Must be greater than 90 days plus MoveToColdStorageAfterDays.
     */
-  var DeleteAfterDays: js.UndefOr[Long_] = js.native
+  var DeleteAfterDays: js.UndefOr[Long_] = js.undefined
   
   /**
     * Specifies the number of days after creation that a recovery point is moved to cold storage.
     */
-  var MoveToColdStorageAfterDays: js.UndefOr[Long_] = js.native
+  var MoveToColdStorageAfterDays: js.UndefOr[Long_] = js.undefined
 }
 object Lifecycle {
   

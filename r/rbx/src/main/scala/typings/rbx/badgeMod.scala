@@ -20,17 +20,18 @@ import typings.rbx.rbxStrings.warning
 import typings.rbx.rbxStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeMod {
   
-  @JSImport("rbx/base/helpers/badge", "makePropTypes")
+  @JSImport("rbx/base/helpers/badge", JSImport.Namespace)
   @js.native
-  def makePropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/badge", "makePropTypes")
-  @js.native
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/badge", "makeValidatingTransform")
   @js.native
@@ -40,20 +41,19 @@ object badgeMod {
   @js.native
   val transform: TransformFunction[BadgeHelpersProps, Databadge] = js.native
   
-  @js.native
   trait BadgeHelpersProps extends StObject {
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
   }
   object BadgeHelpersProps {
     

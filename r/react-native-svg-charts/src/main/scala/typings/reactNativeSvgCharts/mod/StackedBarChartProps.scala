@@ -7,37 +7,40 @@ import typings.reactNativeSvg.mod.RadialGradientProps
 import typings.reactNativeSvgCharts.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StackedBarChartProps[T] extends ChartProps[T] {
+trait StackedBarChartProps[T]
+  extends StObject
+     with ChartProps[T] {
   
-  var colors: js.Array[String] = js.native
+  var colors: js.Array[String]
   
-  var extra: js.UndefOr[js.Function0[js.Object]] = js.native
+  var extra: js.UndefOr[js.Function0[js.Object]] = js.undefined
   
-  var extras: js.UndefOr[js.Array[_]] = js.native
+  var extras: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
-  var keys: js.Array[/* keyof T */ String] = js.native
+  var keys: js.Array[/* keyof T */ String]
   
-  var offset: js.UndefOr[OffsetFunction] = js.native
+  var offset: js.UndefOr[OffsetFunction] = js.undefined
   
-  var order: js.UndefOr[OrderFunction] = js.native
+  var order: js.UndefOr[OrderFunction] = js.undefined
   
   var renderGradient: js.UndefOr[
-    js.Function1[/* props */ Id, Component[LinearGradientProps | RadialGradientProps, js.Object, _]]
-  ] = js.native
+    js.Function1[
+      /* props */ Id, 
+      Component[LinearGradientProps | RadialGradientProps, js.Object, js.Any]
+    ]
+  ] = js.undefined
   
-  var showGrid: js.UndefOr[Boolean] = js.native
+  var showGrid: js.UndefOr[Boolean] = js.undefined
   
-  var spacingInner: js.UndefOr[Double] = js.native
+  var spacingInner: js.UndefOr[Double] = js.undefined
   
-  var spacingOuter: js.UndefOr[Double] = js.native
+  var spacingOuter: js.UndefOr[Double] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
 }
 object StackedBarChartProps {
   
@@ -48,7 +51,7 @@ object StackedBarChartProps {
   }
   
   @scala.inline
-  implicit class StackedBarChartPropsMutableBuilder[Self <: StackedBarChartProps[_], T] (val x: Self with StackedBarChartProps[T]) extends AnyVal {
+  implicit class StackedBarChartPropsMutableBuilder[Self <: StackedBarChartProps[?], T] (val x: Self & StackedBarChartProps[T]) extends AnyVal {
     
     @scala.inline
     def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
@@ -63,7 +66,7 @@ object StackedBarChartProps {
     def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)
     
     @scala.inline
-    def setExtras(value: js.Array[_]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
+    def setExtras(value: js.Array[js.Any]): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtrasUndefined: Self = StObject.set(x, "extras", js.undefined)
@@ -96,7 +99,7 @@ object StackedBarChartProps {
     def setOrderUndefined: Self = StObject.set(x, "order", js.undefined)
     
     @scala.inline
-    def setRenderGradient(value: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, _]): Self = StObject.set(x, "renderGradient", js.Any.fromFunction1(value))
+    def setRenderGradient(value: /* props */ Id => Component[LinearGradientProps | RadialGradientProps, js.Object, js.Any]): Self = StObject.set(x, "renderGradient", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRenderGradientUndefined: Self = StObject.set(x, "renderGradient", js.undefined)

@@ -17,62 +17,60 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/tag-input/tagInput.ITagInputProps> */
-@js.native
 trait PartialITagInputProps extends StObject {
   
-  var addOnBlur: js.UndefOr[Boolean] = js.native
+  var addOnBlur: js.UndefOr[Boolean] = js.undefined
   
-  var addOnPaste: js.UndefOr[Boolean] = js.native
+  var addOnPaste: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
-  var inputProps: js.UndefOr[HTMLInputProps] = js.native
+  var inputProps: js.UndefOr[HTMLInputProps] = js.undefined
   
-  var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.native
+  var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var intent: js.UndefOr[Intent] = js.native
+  var intent: js.UndefOr[Intent] = js.undefined
   
-  var large: js.UndefOr[Boolean] = js.native
+  var large: js.UndefOr[Boolean] = js.undefined
   
-  var leftIcon: js.UndefOr[IconName | MaybeElement] = js.native
+  var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
   
   var onAdd: js.UndefOr[
     js.Function2[/* values */ js.Array[String], /* method */ TagInputAddMethod, Boolean | Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.undefined
   
-  var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+  var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
   
   var onKeyDown: js.UndefOr[
     js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onKeyUp: js.UndefOr[
     js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.native
+  var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var rightElement: js.UndefOr[Element] = js.native
+  var rightElement: js.UndefOr[Element] = js.undefined
   
-  var separator: js.UndefOr[String | RegExp | `false`] = js.native
+  var separator: js.UndefOr[String | RegExp | `false`] = js.undefined
   
-  var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.native
+  var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.undefined
   
-  var values: js.UndefOr[js.Array[ReactNode]] = js.native
+  var values: js.UndefOr[js.Array[ReactNode]] = js.undefined
 }
 object PartialITagInputProps {
   

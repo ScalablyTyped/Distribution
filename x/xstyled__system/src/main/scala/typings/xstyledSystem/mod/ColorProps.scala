@@ -2,16 +2,14 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorProps extends StObject {
   
   // Clash with HTMLAttributes interface declared in React module
   // that includes a non-standard HTML attribute `color?: string`.
   // Type here should be `ResponsiveValue<CSS.Property.Color>`.
-  val color: js.UndefOr[js.Any] = js.native
+  val color: js.UndefOr[js.Any] = js.undefined
 }
 object ColorProps {
   

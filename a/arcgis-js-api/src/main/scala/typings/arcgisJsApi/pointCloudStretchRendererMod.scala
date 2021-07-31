@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PointCloudStretchRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudStretchRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pointCloudStretchRendererMod extends Shortcut {
   
   @JSImport("esri/renderers/PointCloudStretchRenderer", JSImport.Namespace)
   @js.native
-  val ^ : PointCloudStretchRendererConstructor = js.native
+  val ^ : js.Object & PointCloudStretchRendererConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/renderers/PointCloudStretchRenderer", JSImport.Namespace)
@@ -23,12 +22,22 @@ object pointCloudStretchRendererMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html)
     */
-  class Class () extends PointCloudStretchRenderer {
+  class Class ()
+    extends StObject
+       with PointCloudStretchRenderer {
     def this(properties: PointCloudStretchRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = PointCloudStretchRendererConstructor
+  type _To = js.Object & PointCloudStretchRendererConstructor
   
   /* This means you don't have to write `^`, but can instead just say `pointCloudStretchRendererMod.foo` */
-  override def _to: PointCloudStretchRendererConstructor = ^
+  override def _to: js.Object & PointCloudStretchRendererConstructor = ^
 }

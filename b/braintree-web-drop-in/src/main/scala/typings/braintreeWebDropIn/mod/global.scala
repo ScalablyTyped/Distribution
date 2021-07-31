@@ -3,7 +3,6 @@ package typings.braintreeWebDropIn.mod
 import typings.braintreeWebDropIn.anon.Create
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Global

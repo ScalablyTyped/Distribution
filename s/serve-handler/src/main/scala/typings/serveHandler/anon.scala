@@ -17,7 +17,6 @@ import typings.node.fsMod.Stats
 import typings.serveHandler.serveHandlerStrings.buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -30,12 +29,11 @@ object anon {
     def apply(path: PathLike, options: AutoClose): ReadStream = js.native
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object Key {
     
@@ -71,12 +69,12 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
+      options: Null,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: Null,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
@@ -120,17 +118,17 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
       options: String,
       callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Null,
+      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
     ): Unit = js.native
     def apply(
@@ -155,17 +153,17 @@ object anon {
     ): Unit = js.native
     def native(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
-    ): Unit = js.native
-    def native(
-      path: PathLike,
       options: String,
       callback: js.Function2[/* err */ ErrnoException | Null, /* resolvedPath */ String | Buffer, Unit]
     ): Unit = js.native
     def native(
       path: PathLike,
       options: Null,
+      callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
+    ): Unit = js.native
+    def native(
+      path: PathLike,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, Buffer | (/* resolvedPath */ String), Unit]
     ): Unit = js.native
     def native(

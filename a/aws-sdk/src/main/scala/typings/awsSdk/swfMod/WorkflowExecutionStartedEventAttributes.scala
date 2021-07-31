@@ -2,71 +2,69 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionStartedEventAttributes extends StObject {
   
   /**
     * The policy to use for the child workflow executions if this workflow execution is terminated, by calling the TerminateWorkflowExecution action explicitly or due to an expired timeout. The supported child policies are:    TERMINATE – The child executions are terminated.    REQUEST_CANCEL – A request to cancel is attempted for each child execution by recording a WorkflowExecutionCancelRequested event in its history. It is up to the decider to take appropriate actions when it receives an execution history with this event.    ABANDON – No action is taken. The child executions continue to run.  
     */
-  var childPolicy: ChildPolicy = js.native
+  var childPolicy: ChildPolicy
   
   /**
     * If this workflow execution was started due to a ContinueAsNewWorkflowExecution decision, then it contains the runId of the previous workflow execution that was closed and continued as this execution.
     */
-  var continuedExecutionRunId: js.UndefOr[WorkflowRunIdOptional] = js.native
+  var continuedExecutionRunId: js.UndefOr[WorkflowRunIdOptional] = js.undefined
   
   /**
     * The maximum duration for this workflow execution. The duration is specified in seconds, an integer greater than or equal to 0. You can use NONE to specify unlimited duration.
     */
-  var executionStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var executionStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
     * The input provided to the workflow execution.
     */
-  var input: js.UndefOr[Data] = js.native
+  var input: js.UndefOr[Data] = js.undefined
   
   /**
     * The IAM role attached to the workflow execution.
     */
-  var lambdaRole: js.UndefOr[Arn] = js.native
+  var lambdaRole: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID of the StartChildWorkflowExecutionInitiated event corresponding to the StartChildWorkflowExecution Decision to start this workflow execution. The source event with this ID can be found in the history of the source workflow execution. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var parentInitiatedEventId: js.UndefOr[EventId] = js.native
+  var parentInitiatedEventId: js.UndefOr[EventId] = js.undefined
   
   /**
     * The source workflow execution that started this workflow execution. The member isn't set if the workflow execution was not started by a workflow.
     */
-  var parentWorkflowExecution: js.UndefOr[WorkflowExecution] = js.native
+  var parentWorkflowExecution: js.UndefOr[WorkflowExecution] = js.undefined
   
   /**
     * The list of tags associated with this workflow execution. An execution can have up to 5 tags.
     */
-  var tagList: js.UndefOr[TagList] = js.native
+  var tagList: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the task list for scheduling the decision tasks for this workflow execution.
     */
-  var taskList: TaskList = js.native
+  var taskList: TaskList
   
   /**
     * The priority of the decision tasks in the workflow execution.
     */
-  var taskPriority: js.UndefOr[TaskPriority] = js.native
+  var taskPriority: js.UndefOr[TaskPriority] = js.undefined
   
   /**
     * The maximum duration of decision tasks for this workflow type. The duration is specified in seconds, an integer greater than or equal to 0. You can use NONE to specify unlimited duration.
     */
-  var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.native
+  var taskStartToCloseTimeout: js.UndefOr[DurationInSecondsOptional] = js.undefined
   
   /**
     * The workflow type of this execution.
     */
-  var workflowType: WorkflowType = js.native
+  var workflowType: WorkflowType
 }
 object WorkflowExecutionStartedEventAttributes {
   

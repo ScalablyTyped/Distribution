@@ -3,22 +3,22 @@ package typings.reactBeautifulDnd.mod
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.COMBINE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CombineImpact extends ImpactLocation {
+trait CombineImpact
+  extends StObject
+     with ImpactLocation {
   
-  var combine: Combine = js.native
+  var combine: Combine
   
-  var `type`: COMBINE = js.native
+  var `type`: COMBINE
 }
 object CombineImpact {
   
   @scala.inline
-  def apply(combine: Combine, `type`: COMBINE): CombineImpact = {
+  def apply(combine: Combine): CombineImpact = {
     val __obj = js.Dynamic.literal(combine = combine.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("COMBINE")
     __obj.asInstanceOf[CombineImpact]
   }
   

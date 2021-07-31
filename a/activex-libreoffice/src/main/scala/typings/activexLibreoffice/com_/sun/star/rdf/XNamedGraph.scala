@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.2
   */
-@js.native
-trait XNamedGraph extends XURI {
+trait XNamedGraph
+  extends StObject
+     with XURI {
   
   /**
     * returns the name of the graph.
@@ -26,7 +26,7 @@ trait XNamedGraph extends XURI {
     * The name is unique within the repository.
     * @returns the name of the graph
     */
-  val Name: XURI = js.native
+  val Name: XURI
   
   /**
     * adds a RDF statement to the graph.
@@ -40,14 +40,14 @@ trait XNamedGraph extends XURI {
     * @throws com::sun::star::container::NoSuchElementException if this graph does not exist in the repository any more
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def addStatement(Subject: XResource, Predicate: XURI, Object: XNode): Unit = js.native
+  def addStatement(Subject: XResource, Predicate: XURI, Object: XNode): Unit
   
   /**
     * removes all statements from the graph.
     * @throws com::sun::star::container::NoSuchElementException if this graph does not exist in the repository any more
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * returns the name of the graph.
@@ -55,7 +55,7 @@ trait XNamedGraph extends XURI {
     * The name is unique within the repository.
     * @returns the name of the graph
     */
-  def getName(): XURI = js.native
+  def getName(): XURI
   
   /**
     * gets matching RDF statements from a graph.
@@ -72,7 +72,7 @@ trait XNamedGraph extends XURI {
     * @throws com::sun::star::container::NoSuchElementException if this graph does not exist in the repository any more
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def getStatements(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration = js.native
+  def getStatements(Subject: XResource, Predicate: XURI, Object: XNode): XEnumeration
   
   /**
     * removes matching RDF statements from the graph.
@@ -87,7 +87,7 @@ trait XNamedGraph extends XURI {
     * @throws com::sun::star::container::NoSuchElementException if this graph does not exist in the repository any more
     * @throws RepositoryException if an error occurs when accessing the repository.
     */
-  def removeStatements(Subject: XResource, Predicate: XURI, Object: XNode): Unit = js.native
+  def removeStatements(Subject: XResource, Predicate: XURI, Object: XNode): Unit
 }
 object XNamedGraph {
   

@@ -11,7 +11,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object starMod {
@@ -33,22 +32,21 @@ object starMod {
     var onKeyDown: KeyboardEventHandler[HTMLDivElement] = js.native
   }
   
-  @js.native
   trait StarProps extends StObject {
     
-    var allowHalf: js.UndefOr[Boolean] = js.native
+    var allowHalf: js.UndefOr[Boolean] = js.undefined
     
-    var character: js.UndefOr[ReactNode] = js.native
+    var character: js.UndefOr[ReactNode] = js.undefined
     
-    var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ this.type, ReactNode]] = js.native
+    var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ this.type, ReactNode]] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var focused: js.UndefOr[Boolean] = js.native
+    var focused: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[
@@ -56,15 +54,15 @@ object starMod {
           /* index */ Double, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onHover: js.UndefOr[
         js.Function2[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], /* index */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StarProps {
     

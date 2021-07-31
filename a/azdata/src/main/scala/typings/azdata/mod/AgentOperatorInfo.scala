@@ -2,45 +2,43 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentOperatorInfo extends StObject {
   
-  var categoryName: String = js.native
+  var categoryName: String
   
-  var emailAddress: String = js.native
+  var emailAddress: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var lastEmailDate: String = js.native
+  var lastEmailDate: String
   
-  var lastNetSendDate: String = js.native
+  var lastNetSendDate: String
   
-  var lastPagerDate: String = js.native
+  var lastPagerDate: String
   
-  var name: String = js.native
+  var name: String
   
-  var netSendAddress: String = js.native
+  var netSendAddress: String
   
-  var pagerAddress: String = js.native
+  var pagerAddress: String
   
-  var pagerDays: WeekDays = js.native
+  var pagerDays: WeekDays
   
-  var saturdayPagerEndTime: String = js.native
+  var saturdayPagerEndTime: String
   
-  var saturdayPagerStartTime: String = js.native
+  var saturdayPagerStartTime: String
   
-  var sundayPagerEndTime: String = js.native
+  var sundayPagerEndTime: String
   
-  var sundayPagerStartTime: String = js.native
+  var sundayPagerStartTime: String
   
-  var weekdayPagerEndTime: String = js.native
+  var weekdayPagerEndTime: String
   
-  var weekdayPagerStartTime: String = js.native
+  var weekdayPagerStartTime: String
 }
 object AgentOperatorInfo {
   

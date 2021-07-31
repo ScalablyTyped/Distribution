@@ -9,13 +9,11 @@ import typings.mapboxGl.mapboxGlStrings.vector
 import typings.mapboxGl.mapboxGlStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Source extends StObject {
   
-  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas = js.native
+  var `type`: vector | raster | `raster-dem` | geojson | image_ | video | canvas
 }
 object Source {
   

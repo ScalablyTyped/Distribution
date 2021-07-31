@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PutScriptParams extends GenericParams {
+trait PutScriptParams
+  extends StObject
+     with GenericParams {
   
-  var id: String = js.native
+  var id: String
   
-  var lang: String = js.native
+  var lang: String
 }
 object PutScriptParams {
   

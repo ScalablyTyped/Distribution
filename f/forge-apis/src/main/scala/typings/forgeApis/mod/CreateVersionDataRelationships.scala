@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVersionDataRelationships extends StObject {
   
-  var item: js.UndefOr[CreateVersionDataRelationshipsItem] = js.native
+  var item: js.UndefOr[CreateVersionDataRelationshipsItem] = js.undefined
   
-  var storage: js.UndefOr[CreateItemRelationshipsStorage] = js.native
+  var storage: js.UndefOr[CreateItemRelationshipsStorage] = js.undefined
 }
 object CreateVersionDataRelationships {
   

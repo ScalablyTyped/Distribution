@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Networking.Proximity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PeerRole extends StObject {
   
   /** The app is a client peer app in a multi-peer connection. */
   @js.native
-  sealed trait client extends PeerRole
+  sealed trait client
+    extends StObject
+       with PeerRole
   
   /** The app is the host peer app in a multi-peer connection. */
   @js.native
-  sealed trait host extends PeerRole
+  sealed trait host
+    extends StObject
+       with PeerRole
   
   /** The app is part of a two-peer connection. */
   @js.native
-  sealed trait peer extends PeerRole
+  sealed trait peer
+    extends StObject
+       with PeerRole
 }

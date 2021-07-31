@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,9 +40,8 @@ object BasicJavaActionParameterValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue]
   
   /**
     * Creates and returns a new BasicJavaActionParameterValue instance in the SDK and on the server.
@@ -54,9 +52,8 @@ object BasicJavaActionParameterValue {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.microflowsMod.microflows.JavaActionParameterMapping): typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.BasicJavaActionParameterValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.BasicJavaActionParameterValue.structureTypeName")

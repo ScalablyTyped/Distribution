@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditModeValidationErrorEventUIParam extends StObject {
   
   /**
     * Get or set the [action](ig.spreadsheet.SpreadsheetEditModeValidationErrorAction)  to take in response to the failed validation.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Get a boolean indicating whether the cell is allowed to stay in edit mode.
     */
-  var canStayInEditMode: js.UndefOr[Boolean] = js.native
+  var canStayInEditMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the cell for which the control is in edit mode.
     */
-  var cell: js.UndefOr[String] = js.native
+  var cell: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the spreadsheet widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get the [rule](ig.excel.DataValidationRule) which failed validation.
     */
-  var validationRule: js.UndefOr[String] = js.native
+  var validationRule: js.UndefOr[String] = js.undefined
 }
 object EditModeValidationErrorEventUIParam {
   

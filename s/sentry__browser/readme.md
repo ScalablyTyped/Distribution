@@ -10,9 +10,9 @@ Official Sentry SDK for browsers
 | ------------------ | :-------------: |
 | Full name          | @sentry/browser |
 | Keywords           | - |
-| # releases         | 128 |
-| # dependents       | 300 |
-| # downloads        | 69891874 |
+| # releases         | 131 |
+| # dependents       | 348 |
+| # downloads        | 93971703 |
 | # stars            | 1 |
 
 ## Links

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicSli extends StObject {
   
   /** Good service is defined to be the count of requests made to this service that return successfully. */
-  var availability: js.UndefOr[js.Any] = js.native
+  var availability: js.UndefOr[js.Any] = js.undefined
   
   /** Good service is defined to be the count of requests made to this service that are fast enough with respect to latency.threshold. */
-  var latency: js.UndefOr[LatencyCriteria] = js.native
+  var latency: js.UndefOr[LatencyCriteria] = js.undefined
   
   /**
     * OPTIONAL: The set of locations to which this SLI is relevant. Telemetry from other locations will not be used to calculate performance for this SLI. If omitted, this SLI applies to
     * all locations in which the Service has activity. For service types that don't support breaking down by location, setting this field will result in an error.
     */
-  var location: js.UndefOr[js.Array[String]] = js.native
+  var location: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * OPTIONAL: The set of RPCs to which this SLI is relevant. Telemetry from other methods will not be used to calculate performance for this SLI. If omitted, this SLI applies to all the
     * Service's methods. For service types that don't support breaking down by method, setting this field will result in an error.
     */
-  var method: js.UndefOr[js.Array[String]] = js.native
+  var method: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * OPTIONAL: The set of API versions to which this SLI is relevant. Telemetry from other API versions will not be used to calculate performance for this SLI. If omitted, this SLI
     * applies to all API versions. For service types that don't support breaking down by version, setting this field will result in an error.
     */
-  var version: js.UndefOr[js.Array[String]] = js.native
+  var version: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BasicSli {
   

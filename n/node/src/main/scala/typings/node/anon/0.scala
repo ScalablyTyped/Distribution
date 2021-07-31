@@ -3,20 +3,18 @@ package typings.node.anon
 import typings.node.nodeStrings.pkcs8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var `type`: pkcs8 = js.native
+  var `type`: pkcs8
 }
 object `0` {
   
   @scala.inline
-  def apply(`type`: pkcs8): `0` = {
+  def apply(): `0` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pkcs8")
     __obj.asInstanceOf[`0`]
   }
   

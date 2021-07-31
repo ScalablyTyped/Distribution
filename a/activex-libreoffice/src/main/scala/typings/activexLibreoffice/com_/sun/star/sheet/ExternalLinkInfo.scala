@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes an external link in a formula.
   * @since OOo 3.1
   */
-@js.native
 trait ExternalLinkInfo extends StObject {
   
   /**
@@ -24,10 +22,10 @@ trait ExternalLinkInfo extends StObject {
     *  2. If {@link Type} is {@link ExternalLinkType.DDE} , this member shall contain a {@link DDELinkInfo} describing service name, topic, and all known
     * items of a DDE link.
     */
-  var Data: js.Any = js.native
+  var Data: js.Any
   
   /** Link type, one of {@link ExternalLinkType} constants. */
-  var Type: Double = js.native
+  var Type: Double
 }
 object ExternalLinkInfo {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientVpnAuthentication extends StObject {
   
   /**
     * Information about the Active Directory, if applicable.
     */
-  var ActiveDirectory: js.UndefOr[DirectoryServiceAuthentication] = js.native
+  var ActiveDirectory: js.UndefOr[DirectoryServiceAuthentication] = js.undefined
   
   /**
     * Information about the IAM SAML identity provider, if applicable.
     */
-  var FederatedAuthentication: js.UndefOr[typings.awsSdk.ec2Mod.FederatedAuthentication] = js.native
+  var FederatedAuthentication: js.UndefOr[typings.awsSdk.ec2Mod.FederatedAuthentication] = js.undefined
   
   /**
     * Information about the authentication certificates, if applicable.
     */
-  var MutualAuthentication: js.UndefOr[CertificateAuthentication] = js.native
+  var MutualAuthentication: js.UndefOr[CertificateAuthentication] = js.undefined
   
   /**
     * The authentication type used.
     */
-  var Type: js.UndefOr[ClientVpnAuthenticationType] = js.native
+  var Type: js.UndefOr[ClientVpnAuthenticationType] = js.undefined
 }
 object ClientVpnAuthentication {
   

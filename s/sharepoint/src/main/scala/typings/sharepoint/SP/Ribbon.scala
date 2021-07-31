@@ -15,15 +15,12 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Ribbon {
   
-  @js.native
   trait BlogPostWebPartPageComponent extends StObject
   
-  @js.native
   trait CLVP extends StObject
   
   type CalendarListPageComponent = GenericListWebPartPageComponent
@@ -38,13 +35,10 @@ object Ribbon {
   
   type ECBMenuItem = js.Object
   
-  @js.native
   trait EMailLink extends StObject
   
-  @js.native
   trait FetchListViewWebPartPageComponentWorker extends StObject
   
-  @js.native
   trait FetchedDocLibItemInfo extends StObject
   
   type GenericListWebPartPageComponent = ListViewWebPartPageComponent
@@ -53,12 +47,10 @@ object Ribbon {
   
   type GroupBoardWebPartPageComponent = GenericListWebPartPageComponent
   
-  @js.native
   trait HelpCommandNames extends StObject
   
   type HelpPageComponent = PageComponent
   
-  @js.native
   trait IRelatedFieldsInfoRequestor extends StObject
   
   type ListFormWebPartPageComponent = WebPartPageComponent
@@ -67,9 +59,9 @@ object Ribbon {
   
   type ListViewWebPartData = ToolbarRibbonAdapterData
   
-  @js.native
   trait ListViewWebPartPageComponent
-    extends PageComponent
+    extends StObject
+       with PageComponent
        with ViewInformationRequestor
        with DefaultFormsInformationRequestor
   object ListViewWebPartPageComponent {
@@ -96,19 +88,19 @@ object Ribbon {
   
   type ListViewWebPartPageComponentData = WebPartPageComponentData
   
-  @js.native
   trait PageManager
-    extends typings.sharepoint.CUI.Page.PageManager {
+    extends StObject
+       with typings.sharepoint.CUI.Page.PageManager {
     
-    def addPageComponent(component: Component): Unit = js.native
+    def addPageComponent(component: Component): Unit
     
-    def get_ribbon(): typings.sharepoint.SP.Ribbon.Ribbon = js.native
+    def get_ribbon(): typings.sharepoint.SP.Ribbon.Ribbon
     
-    def isRootCommandEnabled(commandId: String, root: Root): Boolean = js.native
+    def isRootCommandEnabled(commandId: String, root: Root): Boolean
     
-    def onRootRefreshed(root: Root): Unit = js.native
+    def onRootRefreshed(root: Root): Unit
     
-    def removePageComponent(component: Component): Unit = js.native
+    def removePageComponent(component: Component): Unit
   }
   object PageManager {
     
@@ -152,14 +144,13 @@ object Ribbon {
   
   object PageState {
     
-    @js.native
     trait Handlers extends StObject
     
-    @js.native
     trait PageStateCommands extends StObject
     
-    @js.native
-    trait PageStateHandler extends PageComponent
+    trait PageStateHandler
+      extends StObject
+         with PageComponent
     object PageStateHandler {
       
       @scala.inline
@@ -179,27 +170,22 @@ object Ribbon {
       }
     }
     
-    @js.native
     trait PageStateStrings extends StObject
     
-    @js.native
     trait StateChangeDialogHandler extends StObject
   }
   
-  @js.native
   trait PageStateActionButton extends StObject
   
-  @js.native
   trait PagingInformation extends StObject
   
-  @js.native
   trait RelatedFieldsFetcher extends StObject
   
   type RelatedFieldsHelper = IRelatedFieldsInfoRequestor
   
-  @js.native
   trait Ribbon
-    extends typings.sharepoint.CUI.Ribbon
+    extends StObject
+       with typings.sharepoint.CUI.Ribbon
   object Ribbon {
     
     @scala.inline
@@ -259,13 +245,10 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait SQMUtility extends StObject
   
-  @js.native
   trait SU extends StObject
   
-  @js.native
   trait SaveConflictHandler extends StObject
   
   type SolutionsPageComponent = ListViewWebPartPageComponent
@@ -277,7 +260,6 @@ object Ribbon {
   
   type ToolbarRibbonAdapter = PageComponent
   
-  @js.native
   trait ToolbarRibbonAdapterData extends StObject
   
   type TrackTabPageComponent = PageComponent
@@ -286,16 +268,15 @@ object Ribbon {
   
   type UserInterfacePageComponent = PageComponent
   
-  @js.native
   trait Utility extends StObject
   
-  @js.native
   trait UtilityInternal extends StObject
   
-  @js.native
-  trait WebPartComponent extends PageComponent {
+  trait WebPartComponent
+    extends StObject
+       with PageComponent {
     
-    def selectWebPart(zc: HTMLElement, setNextRibbonTab: Boolean): Unit = js.native
+    def selectWebPart(zc: HTMLElement, setNextRibbonTab: Boolean): Unit
   }
   object WebPartComponent {
     
@@ -324,14 +305,13 @@ object Ribbon {
     }
   }
   
-  @js.native
   trait WebPartComponentInitInfo extends StObject {
     
-    var allowWebPartAdder: Boolean = js.native
+    var allowWebPartAdder: Boolean
     
-    var editable: Boolean = js.native
+    var editable: Boolean
     
-    var isEditMode: Boolean = js.native
+    var isEditMode: Boolean
   }
   object WebPartComponentInitInfo {
     

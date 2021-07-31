@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyValue extends StObject {
   
   /** The text of the bottom label. Formatted text supported. */
-  var bottomLabel: js.UndefOr[String] = js.native
+  var bottomLabel: js.UndefOr[String] = js.undefined
   
   /** A button that can be clicked to trigger an action. */
-  var button: js.UndefOr[Button] = js.native
+  var button: js.UndefOr[Button] = js.undefined
   
   /** The text of the content. Formatted text supported and always required. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** If the content should be multiline. */
-  var contentMultiline: js.UndefOr[Boolean] = js.native
+  var contentMultiline: js.UndefOr[Boolean] = js.undefined
   
   /** An enum value that will be replaced by the Chat API with the corresponding icon image. */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** The icon specified by a URL. */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /** The onclick action. Only the top label, bottom label and content region are clickable. */
-  var onClick: js.UndefOr[OnClick] = js.native
+  var onClick: js.UndefOr[OnClick] = js.undefined
   
   /** The text of the top label. Formatted text supported. */
-  var topLabel: js.UndefOr[String] = js.native
+  var topLabel: js.UndefOr[String] = js.undefined
 }
 object KeyValue {
   

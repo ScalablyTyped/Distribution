@@ -4,7 +4,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object truncatedFormatMod {
@@ -67,26 +66,33 @@ object truncatedFormatMod {
   object TruncatedPopoverMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TruncatedPopoverMode with String] = js.native
+    def apply(value: String): js.UndefOr[TruncatedPopoverMode & String] = js.native
     
     @js.native
-    sealed trait ALWAYS extends TruncatedPopoverMode
-    /* "always" */ val ALWAYS: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.ALWAYS with String = js.native
+    sealed trait ALWAYS
+      extends StObject
+         with TruncatedPopoverMode
+    /* "always" */ val ALWAYS: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.ALWAYS & String = js.native
     
     @js.native
-    sealed trait NEVER extends TruncatedPopoverMode
-    /* "never" */ val NEVER: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.NEVER with String = js.native
+    sealed trait NEVER
+      extends StObject
+         with TruncatedPopoverMode
+    /* "never" */ val NEVER: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.NEVER & String = js.native
     
     @js.native
-    sealed trait WHEN_TRUNCATED extends TruncatedPopoverMode
-    /* "when-truncated" */ val WHEN_TRUNCATED: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED with String = js.native
+    sealed trait WHEN_TRUNCATED
+      extends StObject
+         with TruncatedPopoverMode
+    /* "when-truncated" */ val WHEN_TRUNCATED: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED & String = js.native
     
     @js.native
-    sealed trait WHEN_TRUNCATED_APPROX extends TruncatedPopoverMode
-    /* "when-truncated-approx" */ val WHEN_TRUNCATED_APPROX: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED_APPROX with String = js.native
+    sealed trait WHEN_TRUNCATED_APPROX
+      extends StObject
+         with TruncatedPopoverMode
+    /* "when-truncated-approx" */ val WHEN_TRUNCATED_APPROX: typings.blueprintjsTable.truncatedFormatMod.TruncatedPopoverMode.WHEN_TRUNCATED_APPROX & String = js.native
   }
   
-  @js.native
   trait ITrucatedFormateMeasureByApproximateOptions extends StObject {
     
     /**
@@ -95,14 +101,14 @@ object truncatedFormatMod {
       * but should be changed as necessary if the fonts or styles are changed significantly.
       * @default 8
       */
-    var approximateCharWidth: Double = js.native
+    var approximateCharWidth: Double
     
     /**
       * Approximate line height (in pixels), used to determine whether to display the popover in approx truncation mode.
       * The default value should work for normal table styles, but should be changed if the fonts or styles are changed significantly.
       * @default 18
       */
-    var approximateLineHeight: Double = js.native
+    var approximateLineHeight: Double
     
     /**
       * Total horizonal cell padding (both sides), used to determine whether to display the popover in approx truncation mode.
@@ -110,7 +116,7 @@ object truncatedFormatMod {
       * but should be changed as necessary if the fonts or styles are changed significantly.
       * @default 20
       */
-    var cellHorizontalPadding: Double = js.native
+    var cellHorizontalPadding: Double
     
     /**
       * Number of buffer lines desired, used to determine whether to display the popover in approx truncation mode.
@@ -120,7 +126,7 @@ object truncatedFormatMod {
       * but should be changed as necessary if the fonts or styles are changed significantly.
       * @default 0
       */
-    var numBufferLines: Double = js.native
+    var numBufferLines: Double
   }
   object ITrucatedFormateMeasureByApproximateOptions {
     
@@ -152,10 +158,11 @@ object truncatedFormatMod {
     }
   }
   
-  @js.native
-  trait ITruncatedFormatProps extends IProps {
+  trait ITruncatedFormatProps
+    extends StObject
+       with IProps {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
     /**
       * Should the component keep track of the truncation state of the string content. If true, the
@@ -163,7 +170,7 @@ object truncatedFormatMod {
       * `WHEN_TRUNCATED`, popovers will only render when necessary.
       * @default false;
       */
-    var detectTruncation: js.UndefOr[Boolean] = js.native
+    var detectTruncation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Values to use for character width, line height, cell padding, and buffer lines desired, when using approximate truncation.
@@ -171,24 +178,24 @@ object truncatedFormatMod {
       * enough for default table styles, but may need to be overridden for more accuracy if the default styles or font size, etc
       * are changed.
       */
-    var measureByApproxOptions: js.UndefOr[ITrucatedFormateMeasureByApproximateOptions] = js.native
+    var measureByApproxOptions: js.UndefOr[ITrucatedFormateMeasureByApproximateOptions] = js.undefined
     
     /**
       * Height of the parent cell. Used by shouldComponentUpdate only
       */
-    var parentCellHeight: js.UndefOr[Double] = js.native
+    var parentCellHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Width of the parent cell. Used by shouldComponentUpdate only
       */
-    var parentCellWidth: js.UndefOr[Double] = js.native
+    var parentCellWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets the popover content style to `white-space: pre` if `true` or
       * `white-space: normal` if `false`.
       * @default false
       */
-    var preformatted: js.UndefOr[Boolean] = js.native
+    var preformatted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Configures when the popover is shown with the `TruncatedPopoverMode` enum.
@@ -201,7 +208,7 @@ object truncatedFormatMod {
       *   a formula to calculate this based on text length, which is faster but less accurate.
       * @default WHEN_TRUNCATED
       */
-    var showPopover: js.UndefOr[TruncatedPopoverMode] = js.native
+    var showPopover: js.UndefOr[TruncatedPopoverMode] = js.undefined
     
     /**
       * Number of characters that are displayed before being truncated and appended with the
@@ -209,13 +216,13 @@ object truncatedFormatMod {
       * `detectTruncation` is `true`.
       * @default 2000
       */
-    var truncateLength: js.UndefOr[Double] = js.native
+    var truncateLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The string that is appended to the display string if it is truncated.
       * @default "..."
       */
-    var truncationSuffix: js.UndefOr[String] = js.native
+    var truncationSuffix: js.UndefOr[String] = js.undefined
   }
   object ITruncatedFormatProps {
     
@@ -284,12 +291,11 @@ object truncatedFormatMod {
     }
   }
   
-  @js.native
   trait ITruncatedFormatState extends StObject {
     
-    var isPopoverOpen: js.UndefOr[Boolean] = js.native
+    var isPopoverOpen: js.UndefOr[Boolean] = js.undefined
     
-    var isTruncated: js.UndefOr[Boolean] = js.native
+    var isTruncated: js.UndefOr[Boolean] = js.undefined
   }
   object ITruncatedFormatState {
     

@@ -2,32 +2,32 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapSparklineEventMap extends ControlEventMap {
+trait BootstrapSparklineEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var disposing: BootstrapChartEventArgsBase = js.native
+  var disposing: BootstrapChartEventArgsBase
   
-  var drawn: BootstrapChartEventArgsBase = js.native
+  var drawn: BootstrapChartEventArgsBase
   
-  var exported: BootstrapChartEventArgsBase = js.native
+  var exported: BootstrapChartEventArgsBase
   
-  var exporting: BootstrapChartExportEventArgs = js.native
+  var exporting: BootstrapChartExportEventArgs
   
-  var fileSaving: BootstrapChartExportEventArgs = js.native
+  var fileSaving: BootstrapChartExportEventArgs
   
-  var incidentOccurred: BootstrapChartErrorEventArgs = js.native
+  var incidentOccurred: BootstrapChartErrorEventArgs
   
   @JSName("init")
-  var init_BootstrapSparklineEventMap: BootstrapChartEventArgsBase = js.native
+  var init_BootstrapSparklineEventMap: BootstrapChartEventArgsBase
   
-  var optionChanged: BootstrapChartOptionChangedEventArgs = js.native
+  var optionChanged: BootstrapChartOptionChangedEventArgs
   
-  var tooltipHidden: BootstrapChartEventArgsBase = js.native
+  var tooltipHidden: BootstrapChartEventArgsBase
   
-  var tooltipShown: BootstrapChartEventArgsBase = js.native
+  var tooltipShown: BootstrapChartEventArgsBase
 }
 object BootstrapSparklineEventMap {
   

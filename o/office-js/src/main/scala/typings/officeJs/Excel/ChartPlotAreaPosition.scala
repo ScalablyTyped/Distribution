@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait ChartPlotAreaPosition extends StObject
 object ChartPlotAreaPosition extends StObject {
   
   @js.native
-  sealed trait automatic extends ChartPlotAreaPosition
+  sealed trait automatic
+    extends StObject
+       with ChartPlotAreaPosition
   
   @js.native
-  sealed trait custom extends ChartPlotAreaPosition
+  sealed trait custom
+    extends StObject
+       with ChartPlotAreaPosition
 }

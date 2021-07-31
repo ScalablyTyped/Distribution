@@ -2,7 +2,6 @@ package typings.knuddelsUserappsApi.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -39,11 +38,14 @@ class DiceConfigurationFactory () extends StObject {
 }
 object DiceConfigurationFactory {
   
+  @JSGlobal("DiceConfigurationFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
   		 * @see https://developer.knuddels.de/docs/classes/DiceConfigurationFactory.html#method_fromString
   		 */
   /* static member */
-  @JSGlobal("DiceConfigurationFactory.fromString")
-  @js.native
-  def fromString(diceConfigurationString: java.lang.String): DiceConfiguration = js.native
+  @scala.inline
+  def fromString(diceConfigurationString: java.lang.String): DiceConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(diceConfigurationString.asInstanceOf[js.Any]).asInstanceOf[DiceConfiguration]
 }

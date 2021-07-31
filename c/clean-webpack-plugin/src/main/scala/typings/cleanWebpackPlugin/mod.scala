@@ -2,7 +2,6 @@ package typings.cleanWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,7 +54,6 @@ object mod {
   
   type Compilation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify compilationType.Compilation */ js.Any
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -66,7 +64,7 @@ object mod {
       *
       * default: []
       */
-    var cleanAfterEveryBuildPatterns: js.UndefOr[js.Array[String]] = js.native
+    var cleanAfterEveryBuildPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Removes files once prior to Webpack compilation
@@ -76,14 +74,14 @@ object mod {
       *
       * default: ['**\/ *']
       */
-    var cleanOnceBeforeBuildPatterns: js.UndefOr[js.Array[String]] = js.native
+    var cleanOnceBeforeBuildPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Automatically remove all unused webpack assets on rebuild
       *
       * default: true
       */
-    var cleanStaleWebpackAssets: js.UndefOr[Boolean] = js.native
+    var cleanStaleWebpackAssets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow clean patterns outside of process.cwd()
@@ -92,21 +90,21 @@ object mod {
       *
       * default: false
       */
-    var dangerouslyAllowCleanPatternsOutsideProject: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowCleanPatternsOutsideProject: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Simulate the removal of files
       *
       * default: false
       */
-    var dry: js.UndefOr[Boolean] = js.native
+    var dry: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Do not allow removal of current webpack assets
       *
       * default: true
       */
-    var protectWebpackAssets: js.UndefOr[Boolean] = js.native
+    var protectWebpackAssets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Write Logs to Console
@@ -114,7 +112,7 @@ object mod {
       *
       * default: false
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AndroidManagedAppProtection extends TargetedManagedAppProtection {
+trait AndroidManagedAppProtection
+  extends StObject
+     with TargetedManagedAppProtection {
   
   // List of apps to which the policy is deployed.
-  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.native
+  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.undefined
   
   /**
     * Friendly name of the preferred custom browser to open weblink on Android. When this property is configured,
     * ManagedBrowserToOpenLinksRequired should be true.
     */
-  var customBrowserDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var customBrowserDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Unique identifier of the preferred custom browser to open weblink on Android. When this property is configured,
     * ManagedBrowserToOpenLinksRequired should be true.
     */
-  var customBrowserPackageId: js.UndefOr[NullableOption[String]] = js.native
+  var customBrowserPackageId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Count of apps to which the current policy is deployed.
-  var deployedAppCount: js.UndefOr[Double] = js.native
+  var deployedAppCount: js.UndefOr[Double] = js.undefined
   
   // Navigation property to deployment summary of the configuration.
-  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.native
+  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.undefined
   
   // When this setting is enabled, app level encryption is disabled if device level encryption is enabled
-  var disableAppEncryptionIfDeviceEncryptionIsEnabled: js.UndefOr[Boolean] = js.native
+  var disableAppEncryptionIfDeviceEncryptionIsEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Indicates whether application data for managed apps should be encrypted
-  var encryptAppData: js.UndefOr[Boolean] = js.native
+  var encryptAppData: js.UndefOr[Boolean] = js.undefined
   
   // Define the oldest required Android security patch level a user can have to gain secure access to the app.
-  var minimumRequiredPatchVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumRequiredPatchVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Define the oldest recommended Android security patch level a user can have for secure access to the app.
-  var minimumWarningPatchVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumWarningPatchVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether a managed user can take screen captures of managed apps
-  var screenCaptureBlocked: js.UndefOr[Boolean] = js.native
+  var screenCaptureBlocked: js.UndefOr[Boolean] = js.undefined
 }
 object AndroidManagedAppProtection {
   

@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElementDeprecatedTagNameMap extends StObject {
   
-  var listing: HTMLPreElement = js.native
+  var listing: HTMLPreElement
   
-  var xmp: HTMLPreElement = js.native
+  var xmp: HTMLPreElement
 }
 object HTMLElementDeprecatedTagNameMap {
   

@@ -4,7 +4,6 @@ import typings.reactVirtualized.anon.AutoHeight
 import typings.reactVirtualized.esListMod.ListProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-virtualized", "List")

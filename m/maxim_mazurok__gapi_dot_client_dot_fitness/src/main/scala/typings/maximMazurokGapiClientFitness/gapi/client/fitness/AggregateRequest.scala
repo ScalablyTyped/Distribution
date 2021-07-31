@@ -2,48 +2,46 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateRequest extends StObject {
   
   /**
     * The specification of data to be aggregated. At least one aggregateBy spec must be provided. All data that is specified will be aggregated using the same bucketing criteria. There
     * will be one dataset in the response for every aggregateBy spec.
     */
-  var aggregateBy: js.UndefOr[js.Array[AggregateBy]] = js.native
+  var aggregateBy: js.UndefOr[js.Array[AggregateBy]] = js.undefined
   
   /**
     * Specifies that data be aggregated each activity segment recorded for a user. Similar to bucketByActivitySegment, but bucketing is done for each activity segment rather than all
     * segments of the same type. Mutually exclusive of other bucketing specifications.
     */
-  var bucketByActivitySegment: js.UndefOr[BucketByActivity] = js.native
+  var bucketByActivitySegment: js.UndefOr[BucketByActivity] = js.undefined
   
   /**
     * Specifies that data be aggregated by the type of activity being performed when the data was recorded. All data that was recorded during a certain activity type (.for the given time
     * range) will be aggregated into the same bucket. Data that was recorded while the user was not active will not be included in the response. Mutually exclusive of other bucketing
     * specifications.
     */
-  var bucketByActivityType: js.UndefOr[BucketByActivity] = js.native
+  var bucketByActivityType: js.UndefOr[BucketByActivity] = js.undefined
   
   /**
     * Specifies that data be aggregated by user sessions. Data that does not fall within the time range of a session will not be included in the response. Mutually exclusive of other
     * bucketing specifications.
     */
-  var bucketBySession: js.UndefOr[BucketBySession] = js.native
+  var bucketBySession: js.UndefOr[BucketBySession] = js.undefined
   
   /** Specifies that data be aggregated by a single time interval. Mutually exclusive of other bucketing specifications. */
-  var bucketByTime: js.UndefOr[BucketByTime] = js.native
+  var bucketByTime: js.UndefOr[BucketByTime] = js.undefined
   
   /** The end of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. */
-  var endTimeMillis: js.UndefOr[String] = js.native
+  var endTimeMillis: js.UndefOr[String] = js.undefined
   
   /** DO NOT POPULATE THIS FIELD. It is ignored. */
-  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.native
+  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The start of a window of time. Data that intersects with this time window will be aggregated. The time is in milliseconds since epoch, inclusive. */
-  var startTimeMillis: js.UndefOr[String] = js.native
+  var startTimeMillis: js.UndefOr[String] = js.undefined
 }
 object AggregateRequest {
   

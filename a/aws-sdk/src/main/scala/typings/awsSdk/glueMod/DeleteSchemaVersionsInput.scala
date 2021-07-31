@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSchemaVersionsInput extends StObject {
   
   /**
     * This is a wrapper structure that may contain the schema name and Amazon Resource Name (ARN).
     */
-  var SchemaId: typings.awsSdk.glueMod.SchemaId = js.native
+  var SchemaId: typings.awsSdk.glueMod.SchemaId
   
   /**
     * A version range may be supplied which may be of the format:   a single version number, 5   a range, 5-8 : deletes versions 5, 6, 7, 8  
     */
-  var Versions: VersionsString = js.native
+  var Versions: VersionsString
 }
 object DeleteSchemaVersionsInput {
   

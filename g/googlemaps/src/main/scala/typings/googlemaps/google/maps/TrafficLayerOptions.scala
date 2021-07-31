@@ -3,15 +3,13 @@ package typings.googlemaps.google.maps
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficLayerOptions extends StObject {
   
-  var autoRefresh: js.UndefOr[Boolean] = js.native
+  var autoRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var map: js.UndefOr[Map[Element]] = js.native
+  var map: js.UndefOr[Map[Element]] = js.undefined
 }
 object TrafficLayerOptions {
   

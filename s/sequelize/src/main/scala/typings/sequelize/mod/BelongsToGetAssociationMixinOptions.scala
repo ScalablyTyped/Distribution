@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -15,13 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The options for the getAssociation mixin of the belongsTo association.
   * @see BelongsToGetAssociationMixin
   */
-@js.native
 trait BelongsToGetAssociationMixinOptions extends StObject {
   
   /**
     * Apply a scope on the related model, or remove its default scope by passing false.
     */
-  var scope: js.UndefOr[String | Boolean] = js.native
+  var scope: js.UndefOr[String | Boolean] = js.undefined
 }
 object BelongsToGetAssociationMixinOptions {
   

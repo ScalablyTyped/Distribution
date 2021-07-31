@@ -3,21 +3,22 @@ package typings.listJs
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("list.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends List {
+  class ^ protected ()
+    extends StObject
+       with List {
     def this(element: String) = this()
     def this(element: HTMLElement) = this()
     def this(element: String, options: ListOptions) = this()
     def this(element: HTMLElement, options: ListOptions) = this()
-    def this(element: String, options: js.UndefOr[scala.Nothing], values: js.Array[js.Object]) = this()
+    def this(element: String, options: Unit, values: js.Array[js.Object]) = this()
     def this(element: String, options: ListOptions, values: js.Array[js.Object]) = this()
-    def this(element: HTMLElement, options: js.UndefOr[scala.Nothing], values: js.Array[js.Object]) = this()
+    def this(element: HTMLElement, options: Unit, values: js.Array[js.Object]) = this()
     def this(element: HTMLElement, options: ListOptions, values: js.Array[js.Object]) = this()
   }
   
@@ -55,18 +56,17 @@ object mod {
     def updated: typings.listJs.listJsStrings.updated = "updated".asInstanceOf[typings.listJs.listJsStrings.updated]
   }
   
-  @js.native
   trait FuzzySearchOptions extends StObject {
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
-    var location: js.UndefOr[Double] = js.native
+    var location: js.UndefOr[Double] = js.undefined
     
-    var multiSearch: js.UndefOr[Boolean] = js.native
+    var multiSearch: js.UndefOr[Boolean] = js.undefined
     
-    var searchClass: js.UndefOr[String] = js.native
+    var searchClass: js.UndefOr[String] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object FuzzySearchOptions {
     
@@ -178,28 +178,27 @@ object mod {
     def visible(): Boolean = js.native
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
-    var fuzzySearch: js.UndefOr[FuzzySearchOptions] = js.native
+    var fuzzySearch: js.UndefOr[FuzzySearchOptions] = js.undefined
     
-    var i: js.UndefOr[Double] = js.native
+    var i: js.UndefOr[Double] = js.undefined
     
-    var indexAsync: js.UndefOr[Boolean] = js.native
+    var indexAsync: js.UndefOr[Boolean] = js.undefined
     
-    var item: js.UndefOr[String] = js.native
+    var item: js.UndefOr[String] = js.undefined
     
-    var listClass: js.UndefOr[String] = js.native
+    var listClass: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var pagination: js.UndefOr[Boolean] = js.native
+    var pagination: js.UndefOr[Boolean] = js.undefined
     
-    var searchClass: js.UndefOr[String] = js.native
+    var searchClass: js.UndefOr[String] = js.undefined
     
-    var sortClass: js.UndefOr[String] = js.native
+    var sortClass: js.UndefOr[String] = js.undefined
     
-    var valueNames: js.UndefOr[js.Array[String]] = js.native
+    var valueNames: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ListOptions {
     
@@ -277,16 +276,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SortOptions extends StObject {
     
-    var alphabet: js.UndefOr[String] = js.native
+    var alphabet: js.UndefOr[String] = js.undefined
     
-    var insensitive: js.UndefOr[Boolean] = js.native
+    var insensitive: js.UndefOr[Boolean] = js.undefined
     
-    var order: js.UndefOr[String] = js.native
+    var order: js.UndefOr[String] = js.undefined
     
-    var sortFunction: js.UndefOr[js.Function2[/* a */ js.Object, /* b */ js.Object, js.UndefOr[Double]]] = js.native
+    var sortFunction: js.UndefOr[js.Function2[/* a */ js.Object, /* b */ js.Object, js.UndefOr[Double]]] = js.undefined
   }
   object SortOptions {
     

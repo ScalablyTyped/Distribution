@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subnet extends StObject {
   
   /**
     * The Availability Zone (AZ) for the subnet.
     */
-  var SubnetAvailabilityZone: js.UndefOr[String] = js.native
+  var SubnetAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The system-assigned identifier for the subnet.
     */
-  var SubnetIdentifier: js.UndefOr[String] = js.native
+  var SubnetIdentifier: js.UndefOr[String] = js.undefined
 }
 object Subnet {
   

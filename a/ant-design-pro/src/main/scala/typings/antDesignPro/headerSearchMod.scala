@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerSearchMod {
@@ -16,28 +15,27 @@ object headerSearchMod {
   
   type HeaderSearch = Component[HeaderSearchProps, js.Any, js.Any]
   
-  @js.native
   trait HeaderSearchProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dataSource: js.UndefOr[js.Array[String]] = js.native
+    var dataSource: js.UndefOr[js.Array[String]] = js.undefined
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onPressEnter: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPressEnter: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object HeaderSearchProps {
     

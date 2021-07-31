@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountSettingsResponse extends StObject {
   
   /**
     * The Amazon Chime account settings.
     */
-  var AccountSettings: js.UndefOr[typings.awsSdk.chimeMod.AccountSettings] = js.native
+  var AccountSettings: js.UndefOr[typings.awsSdk.chimeMod.AccountSettings] = js.undefined
 }
 object GetAccountSettingsResponse {
   

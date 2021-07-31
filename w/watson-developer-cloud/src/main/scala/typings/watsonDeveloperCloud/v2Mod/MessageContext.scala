@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** MessageContext. */
-@js.native
 trait MessageContext extends StObject {
   
   /** Information that is shared by all skills used by the Assistant. */
-  var global: js.UndefOr[MessageContextGlobal] = js.native
+  var global: js.UndefOr[MessageContextGlobal] = js.undefined
   
   /** Information specific to particular skills used by the Assistant. **Note:** Currently, only a single property named `main skill` is supported. This object contains variables that apply to the dialog skill used by the assistant. */
-  var skills: js.UndefOr[MessageContextSkills] = js.native
+  var skills: js.UndefOr[MessageContextSkills] = js.undefined
 }
 object MessageContext {
   

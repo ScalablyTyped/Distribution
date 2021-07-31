@@ -4,15 +4,13 @@ import typings.giphyApi.anon.Count
 import typings.giphyApi.anon.Msg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseResponse extends StObject {
   
-  var meta: Msg = js.native
+  var meta: Msg
   
-  var pagination: Count = js.native
+  var pagination: Count
 }
 object BaseResponse {
   

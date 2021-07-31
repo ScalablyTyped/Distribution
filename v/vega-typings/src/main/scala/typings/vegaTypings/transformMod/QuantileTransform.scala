@@ -4,30 +4,30 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.quantile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QuantileTransform extends _Transforms {
+trait QuantileTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(js.Array[String | SignalRef]) | SignalRef] = js.undefined
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var probs: js.UndefOr[js.Array[Double] | SignalRef] = js.native
+  var probs: js.UndefOr[js.Array[Double] | SignalRef] = js.undefined
   
-  var step: js.UndefOr[Double | SignalRef] = js.native
+  var step: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var `type`: quantile = js.native
+  var `type`: quantile
 }
 object QuantileTransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: quantile): QuantileTransform = {
+  def apply(field: FieldRef): QuantileTransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("quantile")
     __obj.asInstanceOf[QuantileTransform]
   }
   

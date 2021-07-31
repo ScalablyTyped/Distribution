@@ -2,15 +2,13 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait From extends StObject {
   
-  var from: String | Column = js.native
+  var from: String | Column
   
-  var to: String | Column = js.native
+  var to: String | Column
 }
 object From {
   

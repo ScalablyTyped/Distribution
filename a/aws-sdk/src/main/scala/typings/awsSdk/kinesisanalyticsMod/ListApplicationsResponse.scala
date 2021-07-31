@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationsResponse extends StObject {
   
   /**
     * List of ApplicationSummary objects. 
     */
-  var ApplicationSummaries: typings.awsSdk.kinesisanalyticsMod.ApplicationSummaries = js.native
+  var ApplicationSummaries: typings.awsSdk.kinesisanalyticsMod.ApplicationSummaries
   
   /**
     * Returns true if there are more applications to retrieve.
     */
-  var HasMoreApplications: BooleanObject = js.native
+  var HasMoreApplications: BooleanObject
 }
 object ListApplicationsResponse {
   

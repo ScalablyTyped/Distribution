@@ -3,7 +3,6 @@ package typings.nodal.mod
 import typings.nodal.anon.TypeofModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "ModelFactory")
@@ -26,29 +25,30 @@ class ModelFactory protected () extends StObject {
 /* static members */
 object ModelFactory {
   
+  @JSImport("nodal", "ModelFactory")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new factories from a supplied array of Models, loading in data keyed by Model name
     * @param {Array} Models Array of model constructors you wish to reference
     * @param {Object} objModelData Keys are model names, values are arrays of model data you wish to create
     * @param {Function} callback What to execute upon completion
     */
-  @JSImport("nodal", "ModelFactory.createFromModels")
-  @js.native
-  def createFromModels(Models: js.Array[TypeofModel], objModelData: IModelData, callback: js.Function): Unit = js.native
+  @scala.inline
+  def createFromModels(Models: js.Array[TypeofModel], objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromModels")(Models.asInstanceOf[js.Any], objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Loads all model constructors in your ./app/models directory into an array
     * @return {Array} Array of model Constructors
     */
-  @JSImport("nodal", "ModelFactory.loadModels")
-  @js.native
-  def loadModels(): js.Array[_] = js.native
+  @scala.inline
+  def loadModels(): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadModels")().asInstanceOf[js.Array[js.Any]]
   
   /**
     * Populates a large amount of model data from an Object.
     * @param {Array} Models Array of Model constructors
     */
-  @JSImport("nodal", "ModelFactory.populate")
-  @js.native
-  def populate(objModelData: IModelData, callback: js.Function): Unit = js.native
+  @scala.inline
+  def populate(objModelData: IModelData, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("populate")(objModelData.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

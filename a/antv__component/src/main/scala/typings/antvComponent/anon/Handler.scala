@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handler extends StObject {
   
-  var handler: Size = js.native
+  var handler: Size
   
-  var label: Formatter = js.native
+  var label: Formatter
   
-  var rail: DefaultLength = js.native
+  var rail: DefaultLength
   
-  var title: Spacing = js.native
+  var title: Spacing
 }
 object Handler {
   

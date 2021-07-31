@@ -2,20 +2,18 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /** Gets an array of Fields associated with the DataSource. */
-  def getFields(): js.Array[Field] = js.native
+  def getFields(): js.Array[Field]
   
   /** Indicates whether this DataSource is a primary or a secondary data source. */
-  def getIsPrimary(): Boolean = js.native
+  def getIsPrimary(): Boolean
   
   /** The name of the DataSource as seen in the UI. */
-  def getName(): String = js.native
+  def getName(): String
 }
 object DataSource {
   

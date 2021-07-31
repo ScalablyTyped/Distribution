@@ -4,29 +4,29 @@ import typings.onfleetNodeOnfleet.anon.PartialCreateRecipientPro
 import typings.onfleetNodeOnfleet.metadataMod.OnfleetMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recipientsMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Recipients", JSImport.Namespace)
   @js.native
-  class ^ () extends Recipient
+  class ^ ()
+    extends StObject
+       with Recipient
   
-  @js.native
   trait CreateRecipientProps extends StObject {
     
-    var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.native
+    var metadata: js.UndefOr[js.Array[OnfleetMetadata]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var phone: String = js.native
+    var phone: String
     
-    var skipPhoneNumberValidation: js.UndefOr[Boolean] = js.native
+    var skipPhoneNumberValidation: js.UndefOr[Boolean] = js.undefined
     
-    var skipSMSNotifications: js.UndefOr[Boolean] = js.native
+    var skipSMSNotifications: js.UndefOr[Boolean] = js.undefined
   }
   object CreateRecipientProps {
     
@@ -74,26 +74,25 @@ object recipientsMod {
     }
   }
   
-  @js.native
   trait OnfleetRecipient extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var metadata: js.Array[OnfleetMetadata] = js.native
+    var metadata: js.Array[OnfleetMetadata]
     
-    var name: String = js.native
+    var name: String
     
-    var notes: String = js.native
+    var notes: String
     
-    var organization: String = js.native
+    var organization: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var skipSMSNotifications: Boolean = js.native
+    var skipSMSNotifications: Boolean
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
   }
   object OnfleetRecipient {
     

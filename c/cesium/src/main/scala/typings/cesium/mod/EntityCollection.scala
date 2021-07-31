@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "EntityCollection")
@@ -13,7 +12,7 @@ class EntityCollection protected () extends StObject {
   
   def add(entity: Entity): Entity = js.native
   
-  val collectionChanged: Event[js.Array[_]] = js.native
+  val collectionChanged: Event[js.Array[js.Any]] = js.native
   
   def computeAvailability(): TimeInterval = js.native
   
@@ -43,13 +42,16 @@ class EntityCollection protected () extends StObject {
 }
 object EntityCollection {
   
-  /* static member */
-  @JSImport("cesium", "EntityCollection.collectionChangedEventCallback")
+  @JSImport("cesium", "EntityCollection")
   @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
   def collectionChangedEventCallback(
     collection: EntityCollection,
     added: js.Array[Entity],
     removed: js.Array[Entity],
     changed: js.Array[Entity]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("collectionChangedEventCallback")(collection.asInstanceOf[js.Any], added.asInstanceOf[js.Any], removed.asInstanceOf[js.Any], changed.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

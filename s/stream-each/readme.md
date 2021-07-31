@@ -11,8 +11,8 @@ Iterate all the data in a stream
 | Full name          | stream-each |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 62 |
-| # downloads        | 377348796 |
+| # dependents       | 69 |
+| # downloads        | 458680483 |
 | # stars            | 2 |
 
 ## Links

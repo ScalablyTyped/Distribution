@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,23 +14,24 @@ object mod {
     * @param gitOpts
     * @param execOpts Options to pass to `git` `childProcess`.
     */
+  @scala.inline
+  def apply(gitOptions: GitOptions): Readable = ^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any]).asInstanceOf[Readable]
+  @scala.inline
+  def apply(gitOptions: GitOptions, execOptions: ExecOptions): Readable = (^.asInstanceOf[js.Dynamic].apply(gitOptions.asInstanceOf[js.Any], execOptions.asInstanceOf[js.Any])).asInstanceOf[Readable]
+  
   @JSImport("git-raw-commits", JSImport.Namespace)
   @js.native
-  def apply(gitOptions: GitOptions): Readable = js.native
-  @JSImport("git-raw-commits", JSImport.Namespace)
-  @js.native
-  def apply(gitOptions: GitOptions, execOptions: ExecOptions): Readable = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Options to pass to `git` `childProcess`.
     */
-  @js.native
   trait ExecOptions extends StObject {
     
     /**
       * Current working directory to execute git in.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
   }
   object ExecOptions {
     
@@ -71,14 +71,14 @@ object mod {
     * * `debug`
     * * `path`
     */
-  @js.native
   trait GitOptions
-    extends /* options */ StringDictionary[js.Any] {
+    extends StObject
+       with /* options */ StringDictionary[js.Any] {
     
     /**
       * A function to get debug information.
       */
-    var debug: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.native
+    var debug: js.UndefOr[js.Function1[/* message */ js.Any, Unit]] = js.undefined
     
     /**
       * Please check http://git-scm.com/docs/git-log for format options.
@@ -86,24 +86,24 @@ object mod {
       * @default
       * '%B'
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * @default
       * ''
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
     /**
       * Filter commits to the path provided.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * @default
       * 'HEAD'
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object GitOptions {
     

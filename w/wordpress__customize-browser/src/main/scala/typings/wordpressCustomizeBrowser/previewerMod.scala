@@ -10,7 +10,6 @@ import typings.wordpressCustomizeBrowser.messengerMod.MessengerParams
 import typings.wordpressCustomizeBrowser.valueMod.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewerMod {
@@ -36,7 +35,7 @@ object previewerMod {
     
     def keepPreviewAlive(): Unit = js.native
     
-    def login(): Promise[_, _, _] = js.native
+    def login(): Promise[js.Any, js.Any, js.Any] = js.native
     
     var previewUrl: Value[String] = js.native
     
@@ -48,21 +47,20 @@ object previewerMod {
     
     var refreshBuffer: Null | Double = js.native
     
-    def refreshNonces(): Deferred[_, _, _] = js.native
+    def refreshNonces(): Deferred[js.Any, js.Any, js.Any] = js.native
   }
   
-  @js.native
   trait PreviewerData extends StObject {
     
     // TODO
-    var activeControls: js.Any = js.native
+    var activeControls: js.Any
     
-    var activePanels: js.Any = js.native
+    var activePanels: js.Any
     
     // TODO
-    var activeSections: js.Any = js.native
+    var activeSections: js.Any
     
-    var currentUrl: String = js.native
+    var currentUrl: String
   }
   object PreviewerData {
     
@@ -89,15 +87,14 @@ object previewerMod {
     }
   }
   
-  @js.native
   trait PreviewerDeferred extends StObject {
     
-    var active: Deferred[_, _, _] = js.native
+    var active: Deferred[js.Any, js.Any, js.Any]
   }
   object PreviewerDeferred {
     
     @scala.inline
-    def apply(active: Deferred[_, _, _]): PreviewerDeferred = {
+    def apply(active: Deferred[js.Any, js.Any, js.Any]): PreviewerDeferred = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviewerDeferred]
     }
@@ -106,27 +103,28 @@ object previewerMod {
     implicit class PreviewerDeferredMutableBuilder[Self <: PreviewerDeferred] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setActive(value: Deferred[_, _, _]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
+      def setActive(value: Deferred[js.Any, js.Any, js.Any]): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait PreviewerParams extends MessengerParams {
+  trait PreviewerParams
+    extends StObject
+       with MessengerParams {
     
-    var allowedUrls: js.Array[_] = js.native
+    var allowedUrls: js.Array[js.Any]
     
     // TODO
-    var container: String = js.native
+    var container: String
     
-    var form: String = js.native
+    var form: String
     
-    var previewUrl: String = js.native
+    var previewUrl: String
   }
   object PreviewerParams {
     
     @scala.inline
     def apply(
-      allowedUrls: js.Array[_],
+      allowedUrls: js.Array[js.Any],
       channel: String,
       container: String,
       form: String,
@@ -142,7 +140,7 @@ object previewerMod {
     implicit class PreviewerParamsMutableBuilder[Self <: PreviewerParams] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAllowedUrls(value: js.Array[_]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
+      def setAllowedUrls(value: js.Array[js.Any]): Self = StObject.set(x, "allowedUrls", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAllowedUrlsVarargs(value: js.Any*): Self = StObject.set(x, "allowedUrls", js.Array(value :_*))

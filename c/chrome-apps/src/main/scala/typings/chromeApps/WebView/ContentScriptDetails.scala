@@ -3,11 +3,9 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.extensionTypes.RunAt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Details of the content script to inject. **/
-@js.native
 trait ContentScriptDetails extends StObject {
   
   /**
@@ -15,39 +13,39 @@ trait ContentScriptDetails extends StObject {
     * By default, all_frames is false and the JavaScript or CSS is only injected into the top frame.
     * @default false
     */
-  var all_frames: js.UndefOr[Boolean] = js.native
+  var all_frames: js.UndefOr[Boolean] = js.undefined
   
   /** JavaScript code or CSS to be injected into matching pages. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * The CSS code or a list of CSS files to be injected into matching pages.
     * These are injected in the order they appear,
     * before any DOM is constructed or displayed for the page.
     */
-  var css: js.UndefOr[InjectionItems] = js.native
+  var css: js.UndefOr[InjectionItems] = js.undefined
   
   /**
     * Applied after matches to exclude URLs that match this glob.
     * Intended to emulate the @exclude Greasemonkey keyword.
     */
-  var exclude_globs: js.UndefOr[js.Array[String]] = js.native
+  var exclude_globs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Excludes pages that this content script would otherwise be injected into. */
-  var exclude_matches: js.UndefOr[js.Array[String]] = js.native
+  var exclude_matches: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Applied after matches to include only those URLs that also match this glob.
     * Intended to emulate the @include Greasemonkey keyword.
     */
-  var include_globs: js.UndefOr[js.Array[String]] = js.native
+  var include_globs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The JavaScript code or a list of JavaScript files to be injected into matching pages.
     * These are injected in the order they appear.
     */
   @JSName("js")
-  var js_ : js.UndefOr[InjectionItems] = js.native
+  var js_ : js.UndefOr[InjectionItems] = js.undefined
   
   /**
     * Whether to insert the content script on about:blank and about:srcdoc.
@@ -56,19 +54,19 @@ trait ContentScriptDetails extends StObject {
     * The inherit URL is the URL of the document that created the frame or window.
     * Content scripts cannot be inserted in sandboxed frames.
     */
-  var match_about_blank: js.UndefOr[Boolean] = js.native
+  var match_about_blank: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies which pages this content script will be injected into. */
-  var matches: js.Array[String] = js.native
+  var matches: js.Array[String]
   
   /** The name of the content script to inject. */
-  var name: String = js.native
+  var name: String
   
   /**
     * The soonest that the JavaScript or CSS will be injected into the tab.
     * Defaults to 'document_idle'.
     */
-  var run_at: js.UndefOr[RunAt] = js.native
+  var run_at: js.UndefOr[RunAt] = js.undefined
 }
 object ContentScriptDetails {
   

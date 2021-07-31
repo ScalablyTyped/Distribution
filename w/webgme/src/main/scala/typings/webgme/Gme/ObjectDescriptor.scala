@@ -4,53 +4,51 @@ import typings.webgme.GmeCommon.Dictionary
 import typings.webgme.GmeCommon.Pointer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectDescriptor extends StObject {
   
-  var childrenIds: js.Array[String] = js.native
+  var childrenIds: js.Array[String]
   
-  var childrenNum: Double = js.native
+  var childrenNum: Double
   
-  var control: js.UndefOr[VisualizerControl] = js.native
+  var control: js.UndefOr[VisualizerControl] = js.undefined
   
-  var dstObjId: String = js.native
+  var dstObjId: String
   
-  var dstPos: Pos2D = js.native
+  var dstPos: Pos2D
   
-  var dstSubCompId: js.UndefOr[String] = js.native
+  var dstSubCompId: js.UndefOr[String] = js.undefined
   
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var isConnection: Boolean = js.native
+  var isConnection: Boolean
   
-  var metaInfo: js.UndefOr[Dictionary[String]] = js.native
+  var metaInfo: js.UndefOr[Dictionary[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var parentId: String = js.native
+  var parentId: String
   
-  var pointers: Dictionary[Pointer] = js.native
+  var pointers: Dictionary[Pointer]
   
-  var position: Double = js.native
+  var position: Double
   
-  var preferencesHelper: js.UndefOr[PreferenceHelper] = js.native
+  var preferencesHelper: js.UndefOr[PreferenceHelper] = js.undefined
   
-  var reconnectable: js.UndefOr[Boolean] = js.native
+  var reconnectable: js.UndefOr[Boolean] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var srcObjId: String = js.native
+  var srcObjId: String
   
-  var srcPos: Pos2D = js.native
+  var srcPos: Pos2D
   
-  var srcSubCompId: js.UndefOr[String] = js.native
+  var srcSubCompId: js.UndefOr[String] = js.undefined
   
-  var target: String = js.native
+  var target: String
 }
 object ObjectDescriptor {
   

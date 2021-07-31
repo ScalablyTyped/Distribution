@@ -3,13 +3,11 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.routersTypesMod.NavigationAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  var action: NavigationAction = js.native
+  var action: NavigationAction
 }
 object Action {
   

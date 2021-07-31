@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Membership extends StObject {
   
   /** The contact group membership. */
-  var contactGroupMembership: js.UndefOr[ContactGroupMembership] = js.native
+  var contactGroupMembership: js.UndefOr[ContactGroupMembership] = js.undefined
   
   /** Output only. The domain membership. */
-  var domainMembership: js.UndefOr[DomainMembership] = js.native
+  var domainMembership: js.UndefOr[DomainMembership] = js.undefined
   
   /** Metadata about the membership. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
 }
 object Membership {
   

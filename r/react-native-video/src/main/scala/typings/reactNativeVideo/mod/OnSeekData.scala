@@ -2,17 +2,15 @@ package typings.reactNativeVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnSeekData extends StObject {
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var seekTime: Double = js.native
+  var seekTime: Double
   
-  var target: js.UndefOr[Double] = js.native
+  var target: js.UndefOr[Double] = js.undefined
 }
 object OnSeekData {
   

@@ -2,82 +2,80 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherProfileApiProto extends StObject {
   
   /** Publisher provided info on its audience. */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /** A pitch statement for the buyer */
-  var buyerPitchStatement: js.UndefOr[String] = js.native
+  var buyerPitchStatement: js.UndefOr[String] = js.undefined
   
   /** Direct contact for the publisher profile. */
-  var directContact: js.UndefOr[String] = js.native
+  var directContact: js.UndefOr[String] = js.undefined
   
   /** Exchange where this publisher profile is from. E.g. AdX, Rubicon etc... */
-  var exchange: js.UndefOr[String] = js.native
+  var exchange: js.UndefOr[String] = js.undefined
   
   /** Link to publisher's Google+ page. */
-  var googlePlusLink: js.UndefOr[String] = js.native
+  var googlePlusLink: js.UndefOr[String] = js.undefined
   
   /** True, if this is the parent profile, which represents all domains owned by the publisher. */
-  var isParent: js.UndefOr[Boolean] = js.native
+  var isParent: js.UndefOr[Boolean] = js.undefined
   
   /** True, if this profile is published. Deprecated for state. */
-  var isPublished: js.UndefOr[Boolean] = js.native
+  var isPublished: js.UndefOr[Boolean] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "adexchangebuyer#publisherProfileApiProto". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The url to the logo for the publisher. */
-  var logoUrl: js.UndefOr[String] = js.native
+  var logoUrl: js.UndefOr[String] = js.undefined
   
   /** The url for additional marketing and sales materials. */
-  var mediaKitLink: js.UndefOr[String] = js.native
+  var mediaKitLink: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Publisher provided overview. */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /** The pair of (seller.account_id, profile_id) uniquely identifies a publisher profile for a given publisher. */
-  var profileId: js.UndefOr[Double] = js.native
+  var profileId: js.UndefOr[Double] = js.undefined
   
   /** Programmatic contact for the publisher profile. */
-  var programmaticContact: js.UndefOr[String] = js.native
+  var programmaticContact: js.UndefOr[String] = js.undefined
   
   /** The list of app IDs represented in this pubisher profile. Empty if this is a parent profile. Deprecated in favor of publisher_app. */
-  var publisherAppIds: js.UndefOr[js.Array[String]] = js.native
+  var publisherAppIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of apps represented in this pubisher profile. Empty if this is a parent profile. */
-  var publisherApps: js.UndefOr[js.Array[MobileApplication]] = js.native
+  var publisherApps: js.UndefOr[js.Array[MobileApplication]] = js.undefined
   
   /** The list of domains represented in this publisher profile. Empty if this is a parent profile. */
-  var publisherDomains: js.UndefOr[js.Array[String]] = js.native
+  var publisherDomains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Unique Id for publisher profile. */
-  var publisherProfileId: js.UndefOr[String] = js.native
+  var publisherProfileId: js.UndefOr[String] = js.undefined
   
   /** Publisher provided forecasting information. */
-  var publisherProvidedForecast: js.UndefOr[PublisherProvidedForecast] = js.native
+  var publisherProvidedForecast: js.UndefOr[PublisherProvidedForecast] = js.undefined
   
   /** Link to publisher rate card */
-  var rateCardInfoLink: js.UndefOr[String] = js.native
+  var rateCardInfoLink: js.UndefOr[String] = js.undefined
   
   /** Link for a sample content page. */
-  var samplePageLink: js.UndefOr[String] = js.native
+  var samplePageLink: js.UndefOr[String] = js.undefined
   
   /** Seller of the publisher profile. */
-  var seller: js.UndefOr[Seller] = js.native
+  var seller: js.UndefOr[Seller] = js.undefined
   
   /** State of the publisher profile. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Publisher provided key metrics and rankings. */
-  var topHeadlines: js.UndefOr[js.Array[String]] = js.native
+  var topHeadlines: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PublisherProfileApiProto {
   

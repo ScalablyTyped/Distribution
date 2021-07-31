@@ -8,7 +8,6 @@ import typings.agGrid.originalColumnGroupMod.OriginalColumnGroup
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssClassApplierMod {
@@ -19,85 +18,81 @@ object cssClassApplierMod {
   /* static members */
   object CssClassApplier {
     
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
+    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier")
     @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: String,
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: ColumnGroup
-    ): Unit = js.native
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
-    @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: String,
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: OriginalColumnGroup
-    ): Unit = js.native
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
-    @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: js.Array[String],
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: ColumnGroup
-    ): Unit = js.native
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
-    @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: js.Array[String],
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: OriginalColumnGroup
-    ): Unit = js.native
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
-    @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: ColumnGroup
-    ): Unit = js.native
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addColumnClassesFromCollDef")
-    @js.native
-    def addColumnClassesFromCollDef(
-      classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
-      abstractColDef: AbstractColDef,
-      eHeaderCell: HTMLElement,
-      gridOptionsWrapper: GridOptionsWrapper,
-      column: Column,
-      columnGroup: OriginalColumnGroup
-    ): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addHeaderClassesFromColDef")
-    @js.native
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: String,
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: ColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: String,
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: OriginalColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: js.Array[String],
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: ColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: js.Array[String],
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: OriginalColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: ColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addColumnClassesFromCollDef(
+      classesOrFunc: js.Function1[/* params */ js.Any, String | js.Array[String]],
+      abstractColDef: AbstractColDef,
+      eHeaderCell: HTMLElement,
+      gridOptionsWrapper: GridOptionsWrapper,
+      column: Column,
+      columnGroup: OriginalColumnGroup
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addColumnClassesFromCollDef")(classesOrFunc.asInstanceOf[js.Any], abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
     def addHeaderClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,
       gridOptionsWrapper: GridOptionsWrapper,
       column: Column,
       columnGroup: ColumnGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHeaderClassesFromColDef")(abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("ag-grid/dist/lib/headerRendering/cssClassApplier", "CssClassApplier.addToolPanelClassesFromColDef")
-    @js.native
+    @scala.inline
     def addToolPanelClassesFromColDef(
       abstractColDef: AbstractColDef,
       eHeaderCell: HTMLElement,
       gridOptionsWrapper: GridOptionsWrapper,
       column: Column,
       columnGroup: OriginalColumnGroup
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addToolPanelClassesFromColDef")(abstractColDef.asInstanceOf[js.Any], eHeaderCell.asInstanceOf[js.Any], gridOptionsWrapper.asInstanceOf[js.Any], column.asInstanceOf[js.Any], columnGroup.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

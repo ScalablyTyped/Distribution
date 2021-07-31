@@ -2,27 +2,25 @@ package typings.skyway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallOptions extends StObject {
   
-  var audioBandwidth: js.UndefOr[Double] = js.native
+  var audioBandwidth: js.UndefOr[Double] = js.undefined
   
-  var audioCodec: js.UndefOr[String] = js.native
+  var audioCodec: js.UndefOr[String] = js.undefined
   
-  var audioReceiveEnabled: js.UndefOr[Boolean] = js.native
+  var audioReceiveEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
-  var videoBandWidth: js.UndefOr[Double] = js.native
+  var videoBandWidth: js.UndefOr[Double] = js.undefined
   
-  var videoCodec: js.UndefOr[String] = js.native
+  var videoCodec: js.UndefOr[String] = js.undefined
   
-  var videoReceiveEnabled: js.UndefOr[Boolean] = js.native
+  var videoReceiveEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object CallOptions {
   

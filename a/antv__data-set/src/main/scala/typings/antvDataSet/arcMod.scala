@@ -5,35 +5,33 @@ import typings.antvDataSet.antvDataSetStrings.id
 import typings.antvDataSet.antvDataSetStrings.weigth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var id: js.UndefOr[js.Function1[/* node */ js.Any, _]] = js.native
+    var id: js.UndefOr[js.Function1[/* node */ js.Any, js.Any]] = js.undefined
     
-    var marginRatio: js.UndefOr[Double] = js.native
+    var marginRatio: js.UndefOr[Double] = js.undefined
     
     var sortBy: js.UndefOr[
         id | weigth | frequency | Null | (js.Function2[/* a */ js.Any, /* b */ js.Any, Double])
-      ] = js.native
+      ] = js.undefined
     
-    var source: js.UndefOr[js.Function1[/* edge */ js.Any, _]] = js.native
+    var source: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
     
-    var sourceWeight: js.UndefOr[js.Function1[/* edge */ js.Any, Double]] = js.native
+    var sourceWeight: js.UndefOr[js.Function1[/* edge */ js.Any, Double]] = js.undefined
     
-    var target: js.UndefOr[js.Function1[/* edge */ js.Any, _]] = js.native
+    var target: js.UndefOr[js.Function1[/* edge */ js.Any, js.Any]] = js.undefined
     
-    var targetWeight: js.UndefOr[js.Function1[/* edge */ js.Any, Double]] = js.native
+    var targetWeight: js.UndefOr[js.Function1[/* edge */ js.Any, Double]] = js.undefined
     
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
     
-    var weight: js.UndefOr[Boolean] = js.native
+    var weight: js.UndefOr[Boolean] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -47,7 +45,7 @@ object arcMod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setId(value: /* node */ js.Any => _): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
+      def setId(value: /* node */ js.Any => js.Any): Self = StObject.set(x, "id", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
@@ -71,7 +69,7 @@ object arcMod {
       def setSortByUndefined: Self = StObject.set(x, "sortBy", js.undefined)
       
       @scala.inline
-      def setSource(value: /* edge */ js.Any => _): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
+      def setSource(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "source", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSourceUndefined: Self = StObject.set(x, "source", js.undefined)
@@ -83,7 +81,7 @@ object arcMod {
       def setSourceWeightUndefined: Self = StObject.set(x, "sourceWeight", js.undefined)
       
       @scala.inline
-      def setTarget(value: /* edge */ js.Any => _): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
+      def setTarget(value: /* edge */ js.Any => js.Any): Self = StObject.set(x, "target", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)

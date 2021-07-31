@@ -3,18 +3,21 @@ package typings.backblazeB2
 import typings.backblazeB2.mod.BucketType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backblazeB2Strings {
   
   @js.native
-  sealed trait allPrivate extends BucketType
+  sealed trait allPrivate
+    extends StObject
+       with BucketType
   @scala.inline
   def allPrivate: allPrivate = "allPrivate".asInstanceOf[allPrivate]
   
   @js.native
-  sealed trait allPublic extends BucketType
+  sealed trait allPublic
+    extends StObject
+       with BucketType
   @scala.inline
   def allPublic: allPublic = "allPublic".asInstanceOf[allPublic]
   

@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeSecurityGroupIngressRequest extends StObject {
   
   /**
     * The CIDR IP address range. You can't specify this parameter when specifying a source security group.
     */
-  var CidrIp: js.UndefOr[String] = js.native
+  var CidrIp: js.UndefOr[String] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The start of port range for the TCP and UDP protocols, or an ICMP type number. For the ICMP type number, use -1 to specify all ICMP types.
     */
-  var FromPort: js.UndefOr[Integer] = js.native
+  var FromPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the security group. You must specify either the security group ID or the security group name in the request. For security groups in a nondefault VPC, you must specify the security group ID.
     */
-  var GroupId: js.UndefOr[SecurityGroupId] = js.native
+  var GroupId: js.UndefOr[SecurityGroupId] = js.undefined
   
   /**
     * [EC2-Classic, default VPC] The name of the security group. You must specify either the security group ID or the security group name in the request.
     */
-  var GroupName: js.UndefOr[SecurityGroupName] = js.native
+  var GroupName: js.UndefOr[SecurityGroupName] = js.undefined
   
   /**
     * The sets of IP permissions. You can't specify a source security group and a CIDR IP address range in the same set of permissions.
     */
-  var IpPermissions: js.UndefOr[IpPermissionList] = js.native
+  var IpPermissions: js.UndefOr[IpPermissionList] = js.undefined
   
   /**
     * The IP protocol name (tcp, udp, icmp) or number (see Protocol Numbers). Use -1 to specify all.
     */
-  var IpProtocol: js.UndefOr[String] = js.native
+  var IpProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * [EC2-Classic, default VPC] The name of the source security group. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the start of the port range, the IP protocol, and the end of the port range. For EC2-VPC, the source security group must be in the same VPC. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
     */
-  var SourceSecurityGroupName: js.UndefOr[String] = js.native
+  var SourceSecurityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * [EC2-Classic] The AWS account ID of the source security group, if the source security group is in a different account. You can't specify this parameter in combination with the following parameters: the CIDR IP address range, the IP protocol, the start of the port range, and the end of the port range. To revoke a specific rule for an IP protocol and port range, use a set of IP permissions instead.
     */
-  var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.native
+  var SourceSecurityGroupOwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The end of port range for the TCP and UDP protocols, or an ICMP code number. For the ICMP code number, use -1 to specify all ICMP codes for the ICMP type.
     */
-  var ToPort: js.UndefOr[Integer] = js.native
+  var ToPort: js.UndefOr[Integer] = js.undefined
 }
 object RevokeSecurityGroupIngressRequest {
   

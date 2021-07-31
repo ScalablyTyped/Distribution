@@ -2,31 +2,30 @@ package typings.lineColumnPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("line-column-path", "parse")
+  @JSImport("line-column-path", JSImport.Namespace)
   @js.native
-  def parse(path: PathLike): ParsedPath = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("line-column-path", "stringify")
-  @js.native
-  def stringify(path: PathDescriptor): String = js.native
-  @JSImport("line-column-path", "stringify")
-  @js.native
-  def stringify(path: PathDescriptor, options: StringifyOptions): String = js.native
+  @scala.inline
+  def parse(path: PathLike): ParsedPath = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any]).asInstanceOf[ParsedPath]
+  
+  @scala.inline
+  def stringify(path: PathDescriptor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(path: PathDescriptor, options: StringifyOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* Inlined type-fest.type-fest.Mutable<std.Required<line-column-path.line-column-path.PathDescriptor>> */
-  @js.native
   trait ParsedPath extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var file: String = js.native
+    var file: String
     
-    var line: Double = js.native
+    var line: Double
   }
   object ParsedPath {
     
@@ -50,14 +49,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PathDescriptor extends StObject {
     
-    val column: js.UndefOr[Double] = js.native
+    val column: js.UndefOr[Double] = js.undefined
     
-    val file: String = js.native
+    val file: String
     
-    val line: js.UndefOr[Double] = js.native
+    val line: js.UndefOr[Double] = js.undefined
   }
   object PathDescriptor {
     
@@ -89,7 +87,6 @@ object mod {
   
   type PathLike = String | PathDescriptor
   
-  @js.native
   trait StringifyOptions extends StObject {
     
     /**
@@ -97,14 +94,14 @@ object mod {
     	Setting this to `false` will result in `unicorn.js:8` instead of `unicorn.js:8:14`.
     	@default true
     	*/
-    var column: js.UndefOr[Boolean] = js.native
+    var column: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Output the file path.
     	Setting this to `false` will result in `8:18` instead of `unicorn.js:8:14`.
     	@default true
     	*/
-    val file: js.UndefOr[Boolean] = js.native
+    val file: js.UndefOr[Boolean] = js.undefined
   }
   object StringifyOptions {
     

@@ -3,14 +3,12 @@ package typings.bingmaps.Microsoft.Maps
 import typings.bingmaps.Microsoft.Maps.DrawingTools.DrawingBarAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDrawingToolOptions extends StObject {
   
   /** Set of buttons to show in the drawing bar */
-  var drawingBarActions: js.UndefOr[DrawingBarAction] = js.native
+  var drawingBarActions: js.UndefOr[DrawingBarAction] = js.undefined
 }
 object IDrawingToolOptions {
   

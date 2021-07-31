@@ -20,19 +20,24 @@ import typings.std.Iterator
 import typings.std.IteratorResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("regenerator-runtime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("regenerator-runtime", "AsyncIterator")
   @js.native
-  class AsyncIterator[TYield, TReturn, TNext] protected () extends AsyncGenerator[TYield, TReturn, TNext] {
+  class AsyncIterator[TYield, TReturn, TNext] protected ()
+    extends StObject
+       with AsyncGenerator[TYield, TReturn, TNext] {
     def this(
       generator: Generator[
-            TYield | js.Thenable[TYield] | awrap[_], 
-            TReturn | js.Thenable[TReturn] | awrap[_], 
-            _
+            TYield | js.Thenable[TYield] | awrap[js.Any], 
+            TReturn | js.Thenable[TReturn] | awrap[js.Any], 
+            js.Any
           ],
       PromiseImpl: ResolvablePromiseConstructorLike
     ) = this()
@@ -46,272 +51,241 @@ object mod {
     def throw_MAsyncIterator(e: js.Any): js.Promise[IteratorResult[TYield, TReturn]] = js.native
   }
   
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](innerFn: InnerFunction[T, _, TReturn, _]): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  @scala.inline
+  def async[T, TReturn](innerFn: InnerFunction[T, js.Any, TReturn, js.Any]): js.Promise[TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T,
-    tryLocsList: js.UndefOr[scala.Nothing],
-    PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T,
-    tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T,
-    tryLocsList: TryLocationsList,
-    PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: js.UndefOr[scala.Nothing],
-    PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: TryLocationsList,
-    PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T,
-    tryLocsList: js.UndefOr[scala.Nothing],
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T,
     tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: js.UndefOr[scala.Nothing],
+    self: Unit,
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T,
-    tryLocsList: js.UndefOr[scala.Nothing],
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T,
     tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: js.UndefOr[scala.Nothing],
+    self: Unit,
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
   def async[T, TReturn](
-    innerFn: InnerFunction[T, _, TReturn, _],
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): js.Promise[TReturn] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, _], outerFn: GeneratorFunction): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, _], outerFn: GeneratorFunction, self: T): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: T
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
     self: T,
-    tryLocsList: js.UndefOr[scala.Nothing],
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
     self: T,
     tryLocsList: TryLocationsList
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
     self: T,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: js.UndefOr[scala.Nothing],
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: Unit,
+    tryLocsList: Unit,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
-    self: js.UndefOr[scala.Nothing],
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: Unit,
     tryLocsList: TryLocationsList
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
-  @JSImport("regenerator-runtime", "async")
-  @js.native
-  def async[T, TYield, TReturn](
-    innerFn: InnerFunction[T, TYield, TReturn, _],
-    outerFn: GeneratorFunction,
-    self: js.UndefOr[scala.Nothing],
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TReturn](
+    innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: Unit,
     tryLocsList: TryLocationsList,
     PromiseImpl: ResolvablePromiseConstructorLike
-  ): AsyncIterator[Exclude[TYield, awrap[_]], Exclude[TReturn, awrap[_]], _] = js.native
+  ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+  @scala.inline
+  def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, js.Any], outerFn: GeneratorFunction): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, js.Any], outerFn: GeneratorFunction, self: T): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: T,
+    tryLocsList: Unit,
+    PromiseImpl: ResolvablePromiseConstructorLike
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: T,
+    tryLocsList: TryLocationsList
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: T,
+    tryLocsList: TryLocationsList,
+    PromiseImpl: ResolvablePromiseConstructorLike
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: Unit,
+    tryLocsList: Unit,
+    PromiseImpl: ResolvablePromiseConstructorLike
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: Unit,
+    tryLocsList: TryLocationsList
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
+  @scala.inline
+  def async[T, TYield, TReturn](
+    innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+    outerFn: GeneratorFunction,
+    self: Unit,
+    tryLocsList: TryLocationsList,
+    PromiseImpl: ResolvablePromiseConstructorLike
+  ): AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[Exclude[TYield, awrap[js.Any]], Exclude[TReturn, awrap[js.Any]], js.Any]]
   
   @JSImport("regenerator-runtime", "awrap")
   @js.native
@@ -323,14 +297,21 @@ object mod {
     // Used to tell TypeScript that this class is to be treated as a nominal type:
     val `private`: js.Any = js.native
   }
-  @JSImport("regenerator-runtime", "awrap")
-  @js.native
-  def awrap[V](arg: V): awrap[V] = js.native
+  object awrap {
+    
+    @JSImport("regenerator-runtime", "awrap")
+    @js.native
+    def apply[V](arg: V): awrap[V] = js.native
+  }
   
   object global {
     
     /* was `typeof imported_regenerator-runtime` */
     object regeneratorRuntime {
+      
+      @JSGlobal("regeneratorRuntime")
+      @js.native
+      val ^ : js.Any = js.native
       
       @JSGlobal("regeneratorRuntime.AsyncIterator")
       @js.native
@@ -338,312 +319,313 @@ object mod {
         extends typings.regeneratorRuntime.mod.AsyncIterator[TYield, TReturn, TNext] {
         def this(
           generator: Generator[
-                    TYield | js.Thenable[TYield] | typings.regeneratorRuntime.mod.awrap[_], 
-                    TReturn | js.Thenable[TReturn] | typings.regeneratorRuntime.mod.awrap[_], 
-                    _
+                    TYield | js.Thenable[TYield] | typings.regeneratorRuntime.mod.awrap[js.Any], 
+                    TReturn | js.Thenable[TReturn] | typings.regeneratorRuntime.mod.awrap[js.Any], 
+                    js.Any
                   ],
           PromiseImpl: ResolvablePromiseConstructorLike
         ) = this()
       }
       
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](innerFn: InnerFunction[T, _, TReturn, _]): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      @scala.inline
+      def async[T, TReturn](innerFn: InnerFunction[T, js.Any, TReturn, js.Any]): js.Promise[TReturn] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T,
-        tryLocsList: js.UndefOr[scala.Nothing],
-        PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T,
-        tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T,
-        tryLocsList: TryLocationsList,
-        PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: js.UndefOr[scala.Nothing],
-        PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: TryLocationsList,
-        PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T,
-        tryLocsList: js.UndefOr[scala.Nothing],
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T,
         tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: js.UndefOr[scala.Nothing],
+        self: Unit,
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T,
-        tryLocsList: js.UndefOr[scala.Nothing],
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T,
         tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: js.UndefOr[scala.Nothing],
+        self: Unit,
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
       def async[T, TReturn](
-        innerFn: InnerFunction[T, _, TReturn, _],
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): js.Promise[TReturn] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, _], outerFn: GeneratorFunction): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, _], outerFn: GeneratorFunction, self: T): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
-        outerFn: GeneratorFunction,
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: T
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
         self: T,
-        tryLocsList: js.UndefOr[scala.Nothing],
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
-        outerFn: GeneratorFunction,
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
         self: T,
         tryLocsList: TryLocationsList
-      ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
-      def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
-        outerFn: GeneratorFunction,
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
         self: T,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
-      ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: Unit,
+        tryLocsList: Unit,
+        PromiseImpl: ResolvablePromiseConstructorLike
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: Unit,
+        tryLocsList: TryLocationsList
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TReturn](
+        innerFn: InnerFunction[T, js.Any, TReturn, js.Any],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: Unit,
+        tryLocsList: TryLocationsList,
+        PromiseImpl: ResolvablePromiseConstructorLike
+      ): js.Promise[TReturn] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[js.Promise[TReturn]]
+      @scala.inline
+      def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, js.Any], outerFn: GeneratorFunction): typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
+      def async[T, TYield, TReturn](innerFn: InnerFunction[T, TYield, TReturn, js.Any], outerFn: GeneratorFunction, self: T): typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
       def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
         outerFn: GeneratorFunction,
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: js.UndefOr[scala.Nothing],
+        self: T,
+        tryLocsList: Unit,
         PromiseImpl: ResolvablePromiseConstructorLike
       ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
       def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
         outerFn: GeneratorFunction,
-        self: js.UndefOr[scala.Nothing],
+        self: T,
         tryLocsList: TryLocationsList
       ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
-      @JSGlobal("regeneratorRuntime.async")
-      @js.native
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
       def async[T, TYield, TReturn](
-        innerFn: InnerFunction[T, TYield, TReturn, _],
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
         outerFn: GeneratorFunction,
-        self: js.UndefOr[scala.Nothing],
+        self: T,
         tryLocsList: TryLocationsList,
         PromiseImpl: ResolvablePromiseConstructorLike
       ): typings.regeneratorRuntime.mod.AsyncIterator[
-            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[_]], 
-            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[_]], 
-            _
-          ] = js.native
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
+      def async[T, TYield, TReturn](
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+        outerFn: GeneratorFunction,
+        self: Unit,
+        tryLocsList: Unit,
+        PromiseImpl: ResolvablePromiseConstructorLike
+      ): typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
+      def async[T, TYield, TReturn](
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+        outerFn: GeneratorFunction,
+        self: Unit,
+        tryLocsList: TryLocationsList
+      ): typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
+      @scala.inline
+      def async[T, TYield, TReturn](
+        innerFn: InnerFunction[T, TYield, TReturn, js.Any],
+        outerFn: GeneratorFunction,
+        self: Unit,
+        tryLocsList: TryLocationsList,
+        PromiseImpl: ResolvablePromiseConstructorLike
+      ): typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any], PromiseImpl.asInstanceOf[js.Any])).asInstanceOf[typings.regeneratorRuntime.mod.AsyncIterator[
+            Exclude[TYield, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            Exclude[TReturn, typings.regeneratorRuntime.mod.awrap[js.Any]], 
+            js.Any
+          ]]
       
       @JSGlobal("regeneratorRuntime.awrap")
       @js.native
@@ -651,240 +633,208 @@ object mod {
         extends typings.regeneratorRuntime.mod.awrap[V] {
         def this(arg: V) = this()
       }
-      @JSGlobal("regeneratorRuntime.awrap")
-      @js.native
-      def awrap[V](arg: V): typings.regeneratorRuntime.mod.awrap[V] = js.native
+      object awrap {
+        
+        @JSGlobal("regeneratorRuntime.awrap")
+        @js.native
+        def apply[V](arg: V): typings.regeneratorRuntime.mod.awrap[V] = js.native
+      }
       
-      @JSGlobal("regeneratorRuntime.isGeneratorFunction")
-      @js.native
-      def isGeneratorFunction(func: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+      @scala.inline
+      def isGeneratorFunction(func: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGeneratorFunction")(func.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
       
-      @JSGlobal("regeneratorRuntime.keys")
-      @js.native
-      def keys(`object`: js.Object): js.Function0[IteratorResult[String, js.UndefOr[scala.Nothing]]] = js.native
+      @scala.inline
+      def keys(`object`: js.Object): js.Function0[IteratorResult[String, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Function0[IteratorResult[String, Unit]]]
       
-      @JSGlobal("regeneratorRuntime.mark")
-      @js.native
-      def mark[F /* <: js.Function */](genFun: F): F with GeneratorFunction = js.native
+      @scala.inline
+      def mark[F /* <: js.Function */](genFun: F): F & GeneratorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("mark")(genFun.asInstanceOf[js.Any]).asInstanceOf[F & GeneratorFunction]
       
-      @JSGlobal("regeneratorRuntime.values")
-      @js.native
-      def values[T](iterableOrArrayLike: ArrayLike[T]): Iterator[T, _, _] = js.native
-      @JSGlobal("regeneratorRuntime.values")
-      @js.native
-      def values[T](iterableOrArrayLike: Iterable[T]): Iterator[T, _, _] = js.native
-      @JSGlobal("regeneratorRuntime.values")
-      @js.native
-      def values[I /* <: Iterator[_, _, _] */](iterable: typings.regeneratorRuntime.anon.Iterator[I]): I = js.native
+      @scala.inline
+      def values[T](iterableOrArrayLike: ArrayLike[T]): Iterator[T, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterableOrArrayLike.asInstanceOf[js.Any]).asInstanceOf[Iterator[T, js.Any, js.Any]]
+      @scala.inline
+      def values[T](iterableOrArrayLike: Iterable[T]): Iterator[T, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterableOrArrayLike.asInstanceOf[js.Any]).asInstanceOf[Iterator[T, js.Any, js.Any]]
+      @scala.inline
+      def values[I /* <: Iterator[js.Any, js.Any, js.Any] */](iterable: typings.regeneratorRuntime.anon.Iterator[I]): I = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterable.asInstanceOf[js.Any]).asInstanceOf[I]
       
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
-      def wrap[T, TYield, TReturn, TNext](innerFn: InnerFunction[T, TYield, TReturn, TNext]): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
-      def wrap[T, TYield, TReturn, TNext](
-        innerFn: InnerFunction[T, TYield, TReturn, TNext],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
-      def wrap[T, TYield, TReturn, TNext](
-        innerFn: InnerFunction[T, TYield, TReturn, TNext],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: T,
-        tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
-      def wrap[T, TYield, TReturn, TNext](
-        innerFn: InnerFunction[T, TYield, TReturn, TNext],
-        // tslint:disable-next-line: ban-types
-      outerFn: js.UndefOr[scala.Nothing],
-        self: js.UndefOr[scala.Nothing],
-        tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      @scala.inline
+      def wrap[T, TYield, TReturn, TNext](innerFn: InnerFunction[T, TYield, TReturn, TNext]): Generator[TYield, TReturn, TNext] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any]).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
         self: T,
         tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: js.Function,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
         self: T,
         tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
-      @JSGlobal("regeneratorRuntime.wrap")
-      @js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
       def wrap[T, TYield, TReturn, TNext](
         innerFn: InnerFunction[T, TYield, TReturn, TNext],
         // tslint:disable-next-line: ban-types
       outerFn: Null,
-        self: js.UndefOr[scala.Nothing],
+        self: Unit,
         tryLocsList: TryLocationsList
-      ): Generator[TYield, TReturn, TNext] = js.native
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
+      def wrap[T, TYield, TReturn, TNext](
+        innerFn: InnerFunction[T, TYield, TReturn, TNext],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: T
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
+      def wrap[T, TYield, TReturn, TNext](
+        innerFn: InnerFunction[T, TYield, TReturn, TNext],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: T,
+        tryLocsList: TryLocationsList
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+      @scala.inline
+      def wrap[T, TYield, TReturn, TNext](
+        innerFn: InnerFunction[T, TYield, TReturn, TNext],
+        // tslint:disable-next-line: ban-types
+      outerFn: Unit,
+        self: Unit,
+        tryLocsList: TryLocationsList
+      ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
     }
   }
   
-  @JSImport("regenerator-runtime", "isGeneratorFunction")
-  @js.native
-  def isGeneratorFunction(func: js.Any): /* is std.GeneratorFunction */ Boolean = js.native
+  @scala.inline
+  def isGeneratorFunction(func: js.Any): /* is std.GeneratorFunction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGeneratorFunction")(func.asInstanceOf[js.Any]).asInstanceOf[/* is std.GeneratorFunction */ Boolean]
   
-  @JSImport("regenerator-runtime", "keys")
-  @js.native
-  def keys(`object`: js.Object): js.Function0[IteratorResult[String, js.UndefOr[scala.Nothing]]] = js.native
+  @scala.inline
+  def keys(`object`: js.Object): js.Function0[IteratorResult[String, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Function0[IteratorResult[String, Unit]]]
   
-  @JSImport("regenerator-runtime", "mark")
-  @js.native
-  def mark[F /* <: js.Function */](genFun: F): F with GeneratorFunction = js.native
+  @scala.inline
+  def mark[F /* <: js.Function */](genFun: F): F & GeneratorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("mark")(genFun.asInstanceOf[js.Any]).asInstanceOf[F & GeneratorFunction]
   
-  @JSImport("regenerator-runtime", "values")
-  @js.native
-  def values[T](iterableOrArrayLike: ArrayLike[T]): Iterator[T, _, _] = js.native
-  @JSImport("regenerator-runtime", "values")
-  @js.native
-  def values[T](iterableOrArrayLike: Iterable[T]): Iterator[T, _, _] = js.native
-  @JSImport("regenerator-runtime", "values")
-  @js.native
-  def values[I /* <: Iterator[_, _, _] */](iterable: typings.regeneratorRuntime.anon.Iterator[I]): I = js.native
+  @scala.inline
+  def values[T](iterableOrArrayLike: ArrayLike[T]): Iterator[T, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterableOrArrayLike.asInstanceOf[js.Any]).asInstanceOf[Iterator[T, js.Any, js.Any]]
+  @scala.inline
+  def values[T](iterableOrArrayLike: Iterable[T]): Iterator[T, js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterableOrArrayLike.asInstanceOf[js.Any]).asInstanceOf[Iterator[T, js.Any, js.Any]]
+  @scala.inline
+  def values[I /* <: Iterator[js.Any, js.Any, js.Any] */](iterable: typings.regeneratorRuntime.anon.Iterator[I]): I = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(iterable.asInstanceOf[js.Any]).asInstanceOf[I]
   
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
-  def wrap[T, TYield, TReturn, TNext](innerFn: InnerFunction[T, TYield, TReturn, TNext]): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
-  def wrap[T, TYield, TReturn, TNext](
-    innerFn: InnerFunction[T, TYield, TReturn, TNext],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
-  def wrap[T, TYield, TReturn, TNext](
-    innerFn: InnerFunction[T, TYield, TReturn, TNext],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: T,
-    tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
-  def wrap[T, TYield, TReturn, TNext](
-    innerFn: InnerFunction[T, TYield, TReturn, TNext],
-    // tslint:disable-next-line: ban-types
-  outerFn: js.UndefOr[scala.Nothing],
-    self: js.UndefOr[scala.Nothing],
-    tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  @scala.inline
+  def wrap[T, TYield, TReturn, TNext](innerFn: InnerFunction[T, TYield, TReturn, TNext]): Generator[TYield, TReturn, TNext] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any]).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
     self: T,
     tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: js.Function,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
     self: T,
     tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
-  @JSImport("regenerator-runtime", "wrap")
-  @js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
   def wrap[T, TYield, TReturn, TNext](
     innerFn: InnerFunction[T, TYield, TReturn, TNext],
     // tslint:disable-next-line: ban-types
   outerFn: Null,
-    self: js.UndefOr[scala.Nothing],
+    self: Unit,
     tryLocsList: TryLocationsList
-  ): Generator[TYield, TReturn, TNext] = js.native
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
+  def wrap[T, TYield, TReturn, TNext](
+    innerFn: InnerFunction[T, TYield, TReturn, TNext],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: T
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
+  def wrap[T, TYield, TReturn, TNext](
+    innerFn: InnerFunction[T, TYield, TReturn, TNext],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: T,
+    tryLocsList: TryLocationsList
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
+  @scala.inline
+  def wrap[T, TYield, TReturn, TNext](
+    innerFn: InnerFunction[T, TYield, TReturn, TNext],
+    // tslint:disable-next-line: ban-types
+  outerFn: Unit,
+    self: Unit,
+    tryLocsList: TryLocationsList
+  ): Generator[TYield, TReturn, TNext] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(innerFn.asInstanceOf[js.Any], outerFn.asInstanceOf[js.Any], self.asInstanceOf[js.Any], tryLocsList.asInstanceOf[js.Any])).asInstanceOf[Generator[TYield, TReturn, TNext]]
   
-  @js.native
   trait CompletionRecord extends StObject {
     
-    var arg: js.Any = js.native
+    var arg: js.Any
     
-    var `type`: CompletionType = js.native
+    var `type`: CompletionType
   }
   object CompletionRecord {
     
@@ -934,7 +884,8 @@ object mod {
   
   @js.native
   trait Context[TYield, TReturn, TNext]
-    extends /* temp */ StringDictionary[js.Any] {
+    extends StObject
+       with /* temp */ StringDictionary[js.Any] {
     
     /**
       * @param type The completion type.
@@ -1055,15 +1006,14 @@ object mod {
   
   type ContextLocation = Double | end
   
-  @js.native
   trait DelegatedIterator extends StObject {
     
-    var iterator: Iterator[_, _, _] = js.native
+    var iterator: Iterator[js.Any, js.Any, js.Any]
   }
   object DelegatedIterator {
     
     @scala.inline
-    def apply(iterator: Iterator[_, _, _]): DelegatedIterator = {
+    def apply(iterator: Iterator[js.Any, js.Any, js.Any]): DelegatedIterator = {
       val __obj = js.Dynamic.literal(iterator = iterator.asInstanceOf[js.Any])
       __obj.asInstanceOf[DelegatedIterator]
     }
@@ -1072,7 +1022,7 @@ object mod {
     implicit class DelegatedIteratorMutableBuilder[Self <: DelegatedIterator] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIterator(value: Iterator[_, _, _]): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
+      def setIterator(value: Iterator[js.Any, js.Any, js.Any]): Self = StObject.set(x, "iterator", value.asInstanceOf[js.Any])
     }
   }
   
@@ -1086,18 +1036,17 @@ object mod {
     def resolve[T](value: T): js.Thenable[T] = js.native
   }
   
-  @js.native
   trait TryEntry extends StObject {
     
-    val afterLoc: js.UndefOr[ContextLocation] = js.native
+    val afterLoc: js.UndefOr[ContextLocation] = js.undefined
     
-    val catchLoc: js.UndefOr[Double] = js.native
+    val catchLoc: js.UndefOr[Double] = js.undefined
     
-    var completion: js.UndefOr[CompletionRecord] = js.native
+    var completion: js.UndefOr[CompletionRecord] = js.undefined
     
-    val finallyLoc: js.UndefOr[Double] = js.native
+    val finallyLoc: js.UndefOr[Double] = js.undefined
     
-    val tryLoc: Double = js.native
+    val tryLoc: Double
   }
   object TryEntry {
     

@@ -3,10 +3,13 @@ package typings.dotProp
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dot-prop", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
   	Delete the property at the given path.
@@ -26,16 +29,9 @@ object mod {
   	//=> {foo: {bar: {y: 'x'}}}
   	```
   	*/
-  @JSImport("dot-prop", "delete")
-  @js.native
-  def delete(`object`: StringDictionary[js.Any], path: String): Boolean = js.native
+  @scala.inline
+  def delete(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("dot-prop", "get")
-  @js.native
-  def get[T](`object`: js.UndefOr[scala.Nothing], path: String): js.UndefOr[T] = js.native
-  @JSImport("dot-prop", "get")
-  @js.native
-  def get[T](`object`: js.UndefOr[scala.Nothing], path: String, defaultValue: T): T = js.native
   /**
   	Get the value of the property at the given path.
   	@param object - Object to get the `path` value.
@@ -54,16 +50,15 @@ object mod {
   	//=> 'unicorn'
   	```
   	*/
-  @JSImport("dot-prop", "get")
-  @js.native
-  def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = js.native
-  @JSImport("dot-prop", "get")
-  @js.native
-  def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = js.native
+  @scala.inline
+  def get[T](`object`: StringDictionary[js.Any], path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def get[T](`object`: StringDictionary[js.Any], path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def get[T](`object`: Unit, path: String): js.UndefOr[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[T]]
+  @scala.inline
+  def get[T](`object`: Unit, path: String, defaultValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("dot-prop", "has")
-  @js.native
-  def has(`object`: js.UndefOr[scala.Nothing], path: String): Boolean = js.native
   /**
   	Check whether the property at the given path exists.
   	@param object - Object to test the `path` value.
@@ -75,9 +70,10 @@ object mod {
   	//=> true
   	```
   	*/
-  @JSImport("dot-prop", "has")
-  @js.native
-  def has(`object`: StringDictionary[js.Any], path: String): Boolean = js.native
+  @scala.inline
+  def has(`object`: StringDictionary[js.Any], path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def has(`object`: Unit, path: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
   	Set the property at the given path to the given value.
@@ -100,7 +96,6 @@ object mod {
   	//=> {foo: {bar: 'b', baz: 'x'}}
   	```
   	*/
-  @JSImport("dot-prop", "set")
-  @js.native
-  def set[T /* <: StringDictionary[js.Any] */](`object`: T, path: String, value: js.Any): T = js.native
+  @scala.inline
+  def set[T /* <: StringDictionary[js.Any] */](`object`: T, path: String, value: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[T]
 }

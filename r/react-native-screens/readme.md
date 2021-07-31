@@ -11,8 +11,8 @@ Native navigation primitives for your React Native app.
 | Full name          | react-native-screens |
 | Keywords           | - |
 | # releases         | 71 |
-| # dependents       | 187 |
-| # downloads        | 15152243 |
+| # dependents       | 208 |
+| # downloads        | 16350446 |
 | # stars            | 0 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSkillGroupsResponse extends StObject {
   
   /**
     * The token returned to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
   
   /**
     * The skill groups that meet the filter criteria, in sort order.
     */
-  var SkillGroups: js.UndefOr[SkillGroupDataList] = js.native
+  var SkillGroups: js.UndefOr[SkillGroupDataList] = js.undefined
   
   /**
     * The total number of skill groups returned.
     */
-  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.native
+  var TotalCount: js.UndefOr[typings.awsSdk.alexaforbusinessMod.TotalCount] = js.undefined
 }
 object SearchSkillGroupsResponse {
   

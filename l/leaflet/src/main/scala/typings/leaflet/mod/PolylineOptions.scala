@@ -2,15 +2,15 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolylineOptions extends PathOptions {
+trait PolylineOptions
+  extends StObject
+     with PathOptions {
   
-  var noClip: js.UndefOr[Boolean] = js.native
+  var noClip: js.UndefOr[Boolean] = js.undefined
   
-  var smoothFactor: js.UndefOr[Double] = js.native
+  var smoothFactor: js.UndefOr[Double] = js.undefined
 }
 object PolylineOptions {
   

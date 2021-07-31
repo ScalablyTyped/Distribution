@@ -2,36 +2,37 @@ package typings.changeEmitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("change-emitter", "createChangeEmitter")
+  @JSImport("change-emitter", JSImport.Namespace)
   @js.native
-  def createChangeEmitter(): ChangeEmitter = js.native
-  @JSImport("change-emitter", "createChangeEmitter")
-  @js.native
-  def createChangeEmitter_T1T2T3T4T5_ChangeEmitterOf5[T1, T2, T3, T4, T5](): ChangeEmitterOf5[T1, T2, T3, T4, T5] = js.native
-  @JSImport("change-emitter", "createChangeEmitter")
-  @js.native
-  def createChangeEmitter_T1T2T3T4_ChangeEmitterOf4[T1, T2, T3, T4](): ChangeEmitterOf4[T1, T2, T3, T4] = js.native
-  @JSImport("change-emitter", "createChangeEmitter")
-  @js.native
-  def createChangeEmitter_T1T2T3_ChangeEmitterOf3[T1, T2, T3](): ChangeEmitterOf3[T1, T2, T3] = js.native
-  @JSImport("change-emitter", "createChangeEmitter")
-  @js.native
-  def createChangeEmitter_T1T2_ChangeEmitterOf2[T1, T2](): ChangeEmitterOf2[T1, T2] = js.native
-  @JSImport("change-emitter", "createChangeEmitter")
-  @js.native
-  def createChangeEmitter_T_ChangeEmitterOf1[T](): ChangeEmitterOf1[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createChangeEmitter(): ChangeEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitter]
+  
+  @scala.inline
+  def createChangeEmitter_T1T2T3T4T5_ChangeEmitterOf5[T1, T2, T3, T4, T5](): ChangeEmitterOf5[T1, T2, T3, T4, T5] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitterOf5[T1, T2, T3, T4, T5]]
+  
+  @scala.inline
+  def createChangeEmitter_T1T2T3T4_ChangeEmitterOf4[T1, T2, T3, T4](): ChangeEmitterOf4[T1, T2, T3, T4] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitterOf4[T1, T2, T3, T4]]
+  
+  @scala.inline
+  def createChangeEmitter_T1T2T3_ChangeEmitterOf3[T1, T2, T3](): ChangeEmitterOf3[T1, T2, T3] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitterOf3[T1, T2, T3]]
+  
+  @scala.inline
+  def createChangeEmitter_T1T2_ChangeEmitterOf2[T1, T2](): ChangeEmitterOf2[T1, T2] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitterOf2[T1, T2]]
+  
+  @scala.inline
+  def createChangeEmitter_T_ChangeEmitterOf1[T](): ChangeEmitterOf1[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createChangeEmitter")().asInstanceOf[ChangeEmitterOf1[T]]
+  
   trait ChangeEmitter extends StObject {
     
-    def emit(args: js.Any*): Unit = js.native
+    def emit(args: js.Any*): Unit
     
-    def listen(listener: Listener): Unlisten = js.native
+    def listen(listener: Listener): Unlisten
   }
   object ChangeEmitter {
     
@@ -52,12 +53,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf0 extends StObject {
     
-    def emit(): Unit = js.native
+    def emit(): Unit
     
-    def listen(listener: ListenerOf0): Unlisten = js.native
+    def listen(listener: ListenerOf0): Unlisten
   }
   object ChangeEmitterOf0 {
     
@@ -78,12 +78,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf1[T] extends StObject {
     
-    def emit(value: T): Unit = js.native
+    def emit(value: T): Unit
     
-    def listen(listener: ListenerOf1[T]): Unlisten = js.native
+    def listen(listener: ListenerOf1[T]): Unlisten
   }
   object ChangeEmitterOf1 {
     
@@ -94,7 +93,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ChangeEmitterOf1MutableBuilder[Self <: ChangeEmitterOf1[_], T] (val x: Self with ChangeEmitterOf1[T]) extends AnyVal {
+    implicit class ChangeEmitterOf1MutableBuilder[Self <: ChangeEmitterOf1[?], T] (val x: Self & ChangeEmitterOf1[T]) extends AnyVal {
       
       @scala.inline
       def setEmit(value: T => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
@@ -104,12 +103,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf2[T1, T2] extends StObject {
     
-    def emit(value1: T1, value2: T2): Unit = js.native
+    def emit(value1: T1, value2: T2): Unit
     
-    def listen(listener: ListenerOf2[T1, T2]): Unlisten = js.native
+    def listen(listener: ListenerOf2[T1, T2]): Unlisten
   }
   object ChangeEmitterOf2 {
     
@@ -120,7 +118,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ChangeEmitterOf2MutableBuilder[Self <: ChangeEmitterOf2[_, _], T1, T2] (val x: Self with (ChangeEmitterOf2[T1, T2])) extends AnyVal {
+    implicit class ChangeEmitterOf2MutableBuilder[Self <: ChangeEmitterOf2[?, ?], T1, T2] (val x: Self & (ChangeEmitterOf2[T1, T2])) extends AnyVal {
       
       @scala.inline
       def setEmit(value: (T1, T2) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
@@ -130,12 +128,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf3[T1, T2, T3] extends StObject {
     
-    def emit(value1: T1, value2: T2, value3: T3): Unit = js.native
+    def emit(value1: T1, value2: T2, value3: T3): Unit
     
-    def listen(listener: ListenerOf3[T1, T2, T3]): Unlisten = js.native
+    def listen(listener: ListenerOf3[T1, T2, T3]): Unlisten
   }
   object ChangeEmitterOf3 {
     
@@ -146,7 +143,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ChangeEmitterOf3MutableBuilder[Self <: ChangeEmitterOf3[_, _, _], T1, T2, T3] (val x: Self with (ChangeEmitterOf3[T1, T2, T3])) extends AnyVal {
+    implicit class ChangeEmitterOf3MutableBuilder[Self <: ChangeEmitterOf3[?, ?, ?], T1, T2, T3] (val x: Self & (ChangeEmitterOf3[T1, T2, T3])) extends AnyVal {
       
       @scala.inline
       def setEmit(value: (T1, T2, T3) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
@@ -156,12 +153,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf4[T1, T2, T3, T4] extends StObject {
     
-    def emit(value1: T1, value2: T2, value3: T3, value4: T4): Unit = js.native
+    def emit(value1: T1, value2: T2, value3: T3, value4: T4): Unit
     
-    def listen(listener: ListenerOf4[T1, T2, T3, T4]): Unlisten = js.native
+    def listen(listener: ListenerOf4[T1, T2, T3, T4]): Unlisten
   }
   object ChangeEmitterOf4 {
     
@@ -172,7 +168,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ChangeEmitterOf4MutableBuilder[Self <: ChangeEmitterOf4[_, _, _, _], T1, T2, T3, T4] (val x: Self with (ChangeEmitterOf4[T1, T2, T3, T4])) extends AnyVal {
+    implicit class ChangeEmitterOf4MutableBuilder[Self <: ChangeEmitterOf4[?, ?, ?, ?], T1, T2, T3, T4] (val x: Self & (ChangeEmitterOf4[T1, T2, T3, T4])) extends AnyVal {
       
       @scala.inline
       def setEmit(value: (T1, T2, T3, T4) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction4(value))
@@ -182,12 +178,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ChangeEmitterOf5[T1, T2, T3, T4, T5] extends StObject {
     
-    def emit(value1: T1, value2: T2, value3: T3, value4: T4, value5: T5): Unit = js.native
+    def emit(value1: T1, value2: T2, value3: T3, value4: T4, value5: T5): Unit
     
-    def listen(listener: ListenerOf5[T1, T2, T3, T4, T5]): Unlisten = js.native
+    def listen(listener: ListenerOf5[T1, T2, T3, T4, T5]): Unlisten
   }
   object ChangeEmitterOf5 {
     
@@ -198,7 +193,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ChangeEmitterOf5MutableBuilder[Self <: ChangeEmitterOf5[_, _, _, _, _], T1, T2, T3, T4, T5] (val x: Self with (ChangeEmitterOf5[T1, T2, T3, T4, T5])) extends AnyVal {
+    implicit class ChangeEmitterOf5MutableBuilder[Self <: ChangeEmitterOf5[?, ?, ?, ?, ?], T1, T2, T3, T4, T5] (val x: Self & (ChangeEmitterOf5[T1, T2, T3, T4, T5])) extends AnyVal {
       
       @scala.inline
       def setEmit(value: (T1, T2, T3, T4, T5) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction5(value))
@@ -208,7 +203,11 @@ object mod {
     }
   }
   
-  type Listener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait Listener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   type ListenerOf0 = js.Function0[Unit]
   

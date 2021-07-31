@@ -3,23 +3,21 @@ package typings.storybookUi.anon
 import typings.storybookAddonActions.handlerFunctionMod.HandlerFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var onClick: HandlerFunction = js.native
+  var onClick: HandlerFunction
   
-  var title: String = js.native
+  var title: String
 }
 object Id {
   
   @scala.inline
-  def apply(id: String, onClick: /* repeated */ js.Any => Unit, title: String): Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onClick = js.Any.fromFunction1(onClick), title = title.asInstanceOf[js.Any])
+  def apply(id: String, onClick: HandlerFunction, title: String): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], onClick = onClick.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[Id]
   }
   
@@ -30,7 +28,7 @@ object Id {
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOnClick(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: HandlerFunction): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ import typings.mathjs.mathjsStrings.uncorrected
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -368,9 +367,9 @@ trait MathJsChain extends StObject {
     * 0.
     */
   def createUnit(): MathJsChain = js.native
-  def createUnit(definition: js.UndefOr[scala.Nothing], options: CreateUnitOptions): MathJsChain = js.native
   def createUnit(definition: String): MathJsChain = js.native
   def createUnit(definition: String, options: CreateUnitOptions): MathJsChain = js.native
+  def createUnit(definition: scala.Unit, options: CreateUnitOptions): MathJsChain = js.native
   def createUnit(definition: UnitDefinition): MathJsChain = js.native
   def createUnit(definition: UnitDefinition, options: CreateUnitOptions): MathJsChain = js.native
   def createUnit(options: CreateUnitOptions): MathJsChain = js.native
@@ -617,11 +616,6 @@ trait MathJsChain extends StObject {
     * @see http://mathjs.org/docs/reference/functions/format.html
     */
   def format(value: js.Any): MathJsChain = js.native
-  def format(
-    value: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* value */ js.Any, String]
-  ): MathJsChain = js.native
   def format(value: js.Any, options: js.Function1[/* item */ js.Any, String]): MathJsChain = js.native
   def format(
     value: js.Any,
@@ -630,6 +624,7 @@ trait MathJsChain extends StObject {
   ): MathJsChain = js.native
   def format(value: js.Any, options: Double): MathJsChain = js.native
   def format(value: js.Any, options: Double, callback: js.Function1[/* value */ js.Any, String]): MathJsChain = js.native
+  def format(value: js.Any, options: scala.Unit, callback: js.Function1[/* value */ js.Any, String]): MathJsChain = js.native
   def format(value: js.Any, options: FormatOptions): MathJsChain = js.native
   def format(value: js.Any, options: FormatOptions, callback: js.Function1[/* value */ js.Any, String]): MathJsChain = js.native
   
@@ -879,9 +874,9 @@ trait MathJsChain extends StObject {
   def lup(): MathJsChain = js.native
   
   def lusolve(b: MathArray): MathJsChain = js.native
-  def lusolve(b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): MathJsChain = js.native
   def lusolve(b: MathArray, order: Double): MathJsChain = js.native
   def lusolve(b: MathArray, order: Double, threshold: Double): MathJsChain = js.native
+  def lusolve(b: MathArray, order: scala.Unit, threshold: Double): MathJsChain = js.native
   /**
     * Solves the linear system A * x = b where A is an [n x n] matrix and b
     * is a [n] column vector.
@@ -892,9 +887,9 @@ trait MathJsChain extends StObject {
     * see slu for details. Matrix must be a SparseMatrix.
     */
   def lusolve(b: Matrix): MathJsChain = js.native
-  def lusolve(b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): MathJsChain = js.native
   def lusolve(b: Matrix, order: Double): MathJsChain = js.native
   def lusolve(b: Matrix, order: Double, threshold: Double): MathJsChain = js.native
+  def lusolve(b: Matrix, order: scala.Unit, threshold: Double): MathJsChain = js.native
   
   /*************************************************************************
     * Statistics functions
@@ -929,7 +924,7 @@ trait MathJsChain extends StObject {
     * the matrix. Supported storage formats are 'dense' and 'sparse'.
     */
   def matrix(): MathJsChain = js.native
-  def matrix(format: js.UndefOr[scala.Nothing], dataType: String): MathJsChain = js.native
+  def matrix(format: scala.Unit, dataType: String): MathJsChain = js.native
   @JSName("matrix")
   def matrix_dense(format: dense): MathJsChain = js.native
   @JSName("matrix")
@@ -1124,9 +1119,9 @@ trait MathJsChain extends StObject {
     * @param weights An array of ints or floats
     */
   def pickRandom(): MathJsChain = js.native
-  def pickRandom(number: js.UndefOr[scala.Nothing], weights: js.Array[Double]): MathJsChain = js.native
   def pickRandom(number: Double): MathJsChain = js.native
   def pickRandom(number: Double, weights: js.Array[Double]): MathJsChain = js.native
+  def pickRandom(number: scala.Unit, weights: js.Array[Double]): MathJsChain = js.native
   
   /**
     * Calculates the power of x to y, x ^ y. Matrix exponentiation is
@@ -1145,11 +1140,11 @@ trait MathJsChain extends StObject {
     * numbers. See function math.format for a description of all options.
     */
   def print(values: js.Any): MathJsChain = js.native
-  def print(values: js.Any, precision: js.UndefOr[scala.Nothing], options: js.Object): MathJsChain = js.native
-  def print(values: js.Any, precision: js.UndefOr[scala.Nothing], options: Double): MathJsChain = js.native
   def print(values: js.Any, precision: Double): MathJsChain = js.native
   def print(values: js.Any, precision: Double, options: js.Object): MathJsChain = js.native
   def print(values: js.Any, precision: Double, options: Double): MathJsChain = js.native
+  def print(values: js.Any, precision: scala.Unit, options: js.Object): MathJsChain = js.native
+  def print(values: js.Any, precision: scala.Unit, options: Double): MathJsChain = js.native
   
   /**
     * Compute the product of a matrix or a list with values. In case of a
@@ -1241,11 +1236,11 @@ trait MathJsChain extends StObject {
     * expression node (default)
     */
   def rationalize(): MathJsChain = js.native
-  def rationalize(optional: js.UndefOr[scala.Nothing], detailed: Boolean): MathJsChain = js.native
   def rationalize(optional: js.Object): MathJsChain = js.native
   def rationalize(optional: js.Object, detailed: Boolean): MathJsChain = js.native
   def rationalize(optional: Boolean): MathJsChain = js.native
   def rationalize(optional: Boolean, detailed: Boolean): MathJsChain = js.native
+  def rationalize(optional: scala.Unit, detailed: Boolean): MathJsChain = js.native
   
   /**
     * Get the real part of a complex number. For a complex number a + bi,
@@ -1415,9 +1410,9 @@ trait MathJsChain extends StObject {
     * @param scope Scope to variables
     */
   def simplify(): MathJsChain = js.native
-  def simplify(rules: js.UndefOr[scala.Nothing], scope: js.Object): MathJsChain = js.native
   def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathJsChain = js.native
   def simplify(rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])], scope: js.Object): MathJsChain = js.native
+  def simplify(rules: scala.Unit, scope: js.Object): MathJsChain = js.native
   
   /**
     * Calculate the sine of a value. For matrices, the function is
@@ -1583,9 +1578,9 @@ trait MathJsChain extends StObject {
     * undefined. Default value: undefined.
     */
   def subset(index: Index): MathJsChain = js.native
-  def subset(index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): MathJsChain = js.native
   def subset(index: Index, replacement: js.Any): MathJsChain = js.native
   def subset(index: Index, replacement: js.Any, defaultValue: js.Any): MathJsChain = js.native
+  def subset(index: Index, replacement: scala.Unit, defaultValue: js.Any): MathJsChain = js.native
   
   /**
     * Subtract two values, x - y. For matrices, the function is evaluated

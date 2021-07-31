@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrokerInstance extends StObject {
   
   /**
     * The URL of the broker's Web Console.
     */
-  var ConsoleURL: js.UndefOr[string] = js.native
+  var ConsoleURL: js.UndefOr[string] = js.undefined
   
   /**
     * The broker's wire-level protocol endpoints.
     */
-  var Endpoints: js.UndefOr[listOfString] = js.native
+  var Endpoints: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The IP address of the Elastic Network Interface (ENI) attached to the broker. Does not apply to RabbitMQ brokers
     */
-  var IpAddress: js.UndefOr[string] = js.native
+  var IpAddress: js.UndefOr[string] = js.undefined
 }
 object BrokerInstance {
   

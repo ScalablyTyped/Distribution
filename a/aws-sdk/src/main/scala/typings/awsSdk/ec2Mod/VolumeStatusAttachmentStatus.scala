@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatusAttachmentStatus extends StObject {
   
   /**
     * The ID of the attached instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum IOPS supported by the attached instance.
     */
-  var IoPerformance: js.UndefOr[String] = js.native
+  var IoPerformance: js.UndefOr[String] = js.undefined
 }
 object VolumeStatusAttachmentStatus {
   

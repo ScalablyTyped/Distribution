@@ -13,7 +13,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeNodeMod {
@@ -60,67 +59,67 @@ object treeNodeMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/tree/treeNode", "TreeNode.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], TreeNode[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ ITreeNodeProps[U], TreeNode[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ ITreeNodeProps[U], TreeNode[U]]]
   }
   
-  @js.native
-  trait ITreeNode[T] extends IProps {
+  trait ITreeNode[T]
+    extends StObject
+       with IProps {
     
     /**
       * Child tree nodes of this node.
       */
-    var childNodes: js.UndefOr[js.Array[ITreeNode[T]]] = js.native
+    var childNodes: js.UndefOr[js.Array[ITreeNode[T]]] = js.undefined
     
     /**
       * Whether this tree node is non-interactive. Enabling this prop will ignore
       * mouse event handlers (in particular click, down, enter, leave).
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the caret to expand/collapse a node should be shown.
       * If not specified, this will be true if the node has children and false otherwise.
       */
-    var hasCaret: js.UndefOr[Boolean] = js.native
+    var hasCaret: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of a Blueprint icon (or an icon element) to render next to the node's label.
       */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /**
       * A unique identifier for the node.
       */
-    var id: String | Double = js.native
+    var id: String | Double
     
     /**
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether this node is selected.
       * @default false
       */
-    var isSelected: js.UndefOr[Boolean] = js.native
+    var isSelected: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The main label for the node.
       */
-    var label: String | Element = js.native
+    var label: String | Element
     
     /**
       * An optional custom user object to associate with the node.
       * This property can then be used in the `onClick`, `onContextMenu` and `onDoubleClick`
       * event handlers for doing custom logic per node.
       */
-    var nodeData: js.UndefOr[T] = js.native
+    var nodeData: js.UndefOr[T] = js.undefined
     
     /**
       * A secondary label/component that is displayed at the right side of the node.
       */
-    var secondaryLabel: js.UndefOr[String | MaybeElement] = js.native
+    var secondaryLabel: js.UndefOr[String | MaybeElement] = js.undefined
   }
   object ITreeNode {
     
@@ -131,7 +130,7 @@ object treeNodeMod {
     }
     
     @scala.inline
-    implicit class ITreeNodeMutableBuilder[Self <: ITreeNode[_], T] (val x: Self with ITreeNode[T]) extends AnyVal {
+    implicit class ITreeNodeMutableBuilder[Self <: ITreeNode[?], T] (val x: Self & ITreeNode[T]) extends AnyVal {
       
       @scala.inline
       def setChildNodes(value: js.Array[ITreeNode[T]]): Self = StObject.set(x, "childNodes", value.asInstanceOf[js.Any])
@@ -198,46 +197,47 @@ object treeNodeMod {
     }
   }
   
-  @js.native
-  trait ITreeNodeProps[T] extends ITreeNode[T] {
+  trait ITreeNodeProps[T]
+    extends StObject
+       with ITreeNode[T] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var contentRef: js.UndefOr[js.Function2[/* node */ TreeNode[T], /* element */ HTMLDivElement | Null, Unit]] = js.native
+    var contentRef: js.UndefOr[js.Function2[/* node */ TreeNode[T], /* element */ HTMLDivElement | Null, Unit]] = js.undefined
     
-    var depth: Double = js.native
+    var depth: Double
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onCollapse: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLSpanElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onContextMenu: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onDoubleClick: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onExpand: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLSpanElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onMouseEnter: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onMouseLeave: js.UndefOr[
         js.Function2[/* node */ TreeNode[T], /* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var path: js.Array[Double] = js.native
+    var path: js.Array[Double]
   }
   object ITreeNodeProps {
     
@@ -248,7 +248,7 @@ object treeNodeMod {
     }
     
     @scala.inline
-    implicit class ITreeNodePropsMutableBuilder[Self <: ITreeNodeProps[_], T] (val x: Self with ITreeNodeProps[T]) extends AnyVal {
+    implicit class ITreeNodePropsMutableBuilder[Self <: ITreeNodeProps[?], T] (val x: Self & ITreeNodeProps[T]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

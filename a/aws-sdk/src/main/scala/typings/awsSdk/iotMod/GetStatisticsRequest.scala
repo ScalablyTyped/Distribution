@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStatisticsRequest extends StObject {
   
   /**
     * The aggregation field name.
     */
-  var aggregationField: js.UndefOr[AggregationField] = js.native
+  var aggregationField: js.UndefOr[AggregationField] = js.undefined
   
   /**
     * The name of the index to search. The default value is AWS_Things.
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The query used to search. You can specify "*" for the query string to get the count of all indexed things in your AWS account.
     */
-  var queryString: QueryString = js.native
+  var queryString: QueryString
   
   /**
     * The version of the query used to search.
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
 }
 object GetStatisticsRequest {
   

@@ -2,27 +2,25 @@ package typings.kendoUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currency extends StObject {
   
   @JSName(",")
-  var Comma: String = js.native
+  var Comma: String
   
   @JSName(".")
-  var Dot: String = js.native
+  var Dot: String
   
-  var currency: Decimals = js.native
+  var currency: Decimals
   
-  var decimals: Double = js.native
+  var decimals: Double
   
-  var groupSize: js.Array[Double] = js.native
+  var groupSize: js.Array[Double]
   
-  var pattern: js.Array[String] = js.native
+  var pattern: js.Array[String]
   
-  var percent: Decimals = js.native
+  var percent: Decimals
 }
 object Currency {
   

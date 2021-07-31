@@ -9,53 +9,51 @@ import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStream
 import typings.winrtUwp.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An implementation of IRandomAccessStreamWithContent type used in the Imaging namespace. */
-@js.native
 trait ImageStream extends StObject {
   
   /** Indicates if you can read the stream. */
-  var canRead: Boolean = js.native
+  var canRead: Boolean
   
   /** Indicates if you can write to the stream. */
-  var canWrite: Boolean = js.native
+  var canWrite: Boolean
   
   /**
     * Returns the file stream for the ImageStream .
     * @return The file stream for the image.
     */
-  def cloneStream(): IRandomAccessStream = js.native
+  def cloneStream(): IRandomAccessStream
   
   /** Closes the ImageStream . */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /** Returns the data format of the stream. */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Asynchronously commits the current frame data and flushes all of the data on the image stream.
     * @return An object that manages the asynchronous flush operation.
     */
-  def flushAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def flushAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Returns an input stream at a specified location in a stream.
     * @param position The location in the stream at which to begin.
     * @return The input stream.
     */
-  def getInputStreamAt(position: Double): IInputStream = js.native
+  def getInputStreamAt(position: Double): IInputStream
   
   /**
     * Returns an output stream at a specified location in a stream.
     * @param position The location in the output stream at which to begin.
     * @return The output stream.
     */
-  def getOutputStreamAt(position: Double): IOutputStream = js.native
+  def getOutputStreamAt(position: Double): IOutputStream
   
   /** Gets the byte offset of the stream. */
-  var position: Double = js.native
+  var position: Double
   
   /**
     * Reads data asynchronously from a sequential stream.
@@ -64,23 +62,23 @@ trait ImageStream extends StObject {
     * @param options The options for the stream to be read.
     * @return The byte reader operation.
     */
-  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double] = js.native
+  def readAsync(buffer: IBuffer, count: Double, options: InputStreamOptions): IPromiseWithIAsyncOperationWithProgress[IBuffer, Double]
   
   /**
     * Sets the position of the stream to the specified value.
     * @param position The new position of the stream.
     */
-  def seek(position: Double): Unit = js.native
+  def seek(position: Double): Unit
   
   /** Gets or sets the size of the random access stream. */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Writes data asynchronously in a sequential stream.
     * @param buffer The buffer into which the asynchronous writer operation writes.
     * @return The byte writer operation.
     */
-  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double] = js.native
+  def writeAsync(buffer: IBuffer): IPromiseWithIAsyncOperationWithProgress[Double, Double]
 }
 object ImageStream {
   

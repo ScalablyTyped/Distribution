@@ -2,32 +2,30 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The reply for batch updating a spreadsheet.
   */
-@js.native
 trait SchemaBatchUpdateSpreadsheetResponse extends StObject {
   
   /**
     * The reply of the updates.  This maps 1:1 with the updates, although
     * replies to some requests may be empty.
     */
-  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.native
+  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.undefined
   
   /**
     * The spreadsheet the updates were applied to.
     */
-  var spreadsheetId: js.UndefOr[String] = js.native
+  var spreadsheetId: js.UndefOr[String] = js.undefined
   
   /**
     * The spreadsheet after updates were applied. This is only set if
     * [BatchUpdateSpreadsheetRequest.include_spreadsheet_in_response] is
     * `true`.
     */
-  var updatedSpreadsheet: js.UndefOr[SchemaSpreadsheet] = js.native
+  var updatedSpreadsheet: js.UndefOr[SchemaSpreadsheet] = js.undefined
 }
 object SchemaBatchUpdateSpreadsheetResponse {
   

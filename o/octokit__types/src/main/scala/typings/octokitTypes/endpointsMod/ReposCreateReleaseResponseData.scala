@@ -3,53 +3,51 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateReleaseResponseData extends StObject {
   
-  var assets: js.Array[_] = js.native
+  var assets: js.Array[js.Any]
   
-  var assets_url: String = js.native
+  var assets_url: String
   
-  var author: Avatarurl = js.native
+  var author: Avatarurl
   
-  var body: String = js.native
+  var body: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var draft: Boolean = js.native
+  var draft: Boolean
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var prerelease: Boolean = js.native
+  var prerelease: Boolean
   
-  var published_at: String = js.native
+  var published_at: String
   
-  var tag_name: String = js.native
+  var tag_name: String
   
-  var tarball_url: String = js.native
+  var tarball_url: String
   
-  var target_commitish: String = js.native
+  var target_commitish: String
   
-  var upload_url: String = js.native
+  var upload_url: String
   
-  var url: String = js.native
+  var url: String
   
-  var zipball_url: String = js.native
+  var zipball_url: String
 }
 object ReposCreateReleaseResponseData {
   
   @scala.inline
   def apply(
-    assets: js.Array[_],
+    assets: js.Array[js.Any],
     assets_url: String,
     author: Avatarurl,
     body: String,
@@ -76,7 +74,7 @@ object ReposCreateReleaseResponseData {
   implicit class ReposCreateReleaseResponseDataMutableBuilder[Self <: ReposCreateReleaseResponseData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAssets(value: js.Array[_]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    def setAssets(value: js.Array[js.Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAssetsVarargs(value: js.Any*): Self = StObject.set(x, "assets", js.Array(value :_*))

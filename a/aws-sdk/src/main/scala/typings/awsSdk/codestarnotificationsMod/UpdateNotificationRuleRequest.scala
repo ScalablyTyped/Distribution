@@ -2,41 +2,39 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateNotificationRuleRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * The level of detail to include in the notifications for this resource. BASIC will include only the contents of the event as it would appear in AWS CloudWatch. FULL will include any supplemental information provided by AWS CodeStar Notifications and/or the service for the resource for which the notification is created.
     */
-  var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.native
+  var DetailType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.DetailType] = js.undefined
   
   /**
     * A list of event types associated with this notification rule.
     */
-  var EventTypeIds: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeIds] = js.native
+  var EventTypeIds: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeIds] = js.undefined
   
   /**
     * The name of the notification rule.
     */
-  var Name: js.UndefOr[NotificationRuleName] = js.native
+  var Name: js.UndefOr[NotificationRuleName] = js.undefined
   
   /**
     * The status of the notification rule. Valid statuses include enabled (sending notifications) or disabled (not sending notifications).
     */
-  var Status: js.UndefOr[NotificationRuleStatus] = js.native
+  var Status: js.UndefOr[NotificationRuleStatus] = js.undefined
   
   /**
     * The address and type of the targets to receive notifications from this notification rule.
     */
-  var Targets: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Targets] = js.native
+  var Targets: js.UndefOr[typings.awsSdk.codestarnotificationsMod.Targets] = js.undefined
 }
 object UpdateNotificationRuleRequest {
   

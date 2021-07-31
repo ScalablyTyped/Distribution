@@ -16,7 +16,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
@@ -26,7 +25,7 @@ object headerMod {
   class Header ()
     extends Component[IInternalHeaderProps, IHeaderState, js.Any] {
     def this(props: IInternalHeaderProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: IInternalHeaderProps, context: js.Any) = this()
     
     var activationIndex: Double = js.native
@@ -69,7 +68,7 @@ object headerMod {
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MHeader(): Boolean = js.native
     @JSName("shouldComponentUpdate")
-    def shouldComponentUpdate_MHeader(nextProps: js.UndefOr[scala.Nothing], nextState: IHeaderState): Boolean = js.native
+    def shouldComponentUpdate_MHeader(nextProps: Unit, nextState: IHeaderState): Boolean = js.native
     @JSName("shouldComponentUpdate")
     def shouldComponentUpdate_MHeader(nextProps: IInternalHeaderProps): Boolean = js.native
     @JSName("shouldComponentUpdate")
@@ -83,7 +82,8 @@ object headerMod {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.blueprintjsTable.selectableMod.ISelectableProps because var conflicts: selectedRegions. Inlined enableMultipleSelection, focusedCell, onSelectionEnd, selectedRegionTransform */ @js.native
   trait IHeaderProps
-    extends ILockableLayout
+    extends StObject
+       with ILockableLayout
        with IReorderableProps {
     
     /**
@@ -148,7 +148,6 @@ object headerMod {
     var selectedRegionTransform: js.UndefOr[ISelectedRegionTransform] = js.native
   }
   
-  @js.native
   trait IHeaderState extends StObject {
     
     /**
@@ -157,7 +156,7 @@ object headerMod {
       * true, DragReorderable will know that it can override the click-and-drag
       * interactions that would normally be reserved for drag-select behavior.
       */
-    var hasValidSelection: js.UndefOr[Boolean] = js.native
+    var hasValidSelection: js.UndefOr[Boolean] = js.undefined
   }
   object IHeaderState {
     
@@ -179,7 +178,9 @@ object headerMod {
   }
   
   @js.native
-  trait IInternalHeaderProps extends IHeaderProps {
+  trait IInternalHeaderProps
+    extends StObject
+       with IHeaderProps {
     
     /**
       * Converts a point on the screen to a row or column index in the table grid.

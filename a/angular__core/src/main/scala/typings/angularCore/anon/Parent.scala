@@ -4,17 +4,15 @@ import typings.angularCore.mod.Injector
 import typings.angularCore.mod.StaticProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parent extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[Injector] = js.native
+  var parent: js.UndefOr[Injector] = js.undefined
   
-  var providers: js.Array[StaticProvider] = js.native
+  var providers: js.Array[StaticProvider]
 }
 object Parent {
   

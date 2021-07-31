@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalGateway extends StObject {
   
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.native
+  var LocalGatewayId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID that owns the local gateway.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the local gateway.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The tags assigned to the local gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object LocalGateway {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSubscriptionResponse extends StObject {
   
   /**
     * The AWS Shield Advanced subscription details for an account.
     */
-  var Subscription: js.UndefOr[typings.awsSdk.shieldMod.Subscription] = js.native
+  var Subscription: js.UndefOr[typings.awsSdk.shieldMod.Subscription] = js.undefined
 }
 object DescribeSubscriptionResponse {
   

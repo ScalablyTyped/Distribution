@@ -3,15 +3,22 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
   
   @JSImport("carbon-components/components/notification/notification", JSImport.Default)
   @js.native
-  class default protected () extends Notification {
+  class default protected ()
+    extends StObject
+       with Notification {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _changeState(state: js.Any, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove(): Unit = js.native
   }
   object default {
     
@@ -60,12 +67,11 @@ object notificationMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Notification extends StObject {
+  - Dropped any */ trait Notification extends StObject {
     
-    def _changeState(state: js.Any, callback: js.Any): Unit = js.native
+    def _changeState(state: js.Any, callback: js.Any): Unit
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object Notification {
     

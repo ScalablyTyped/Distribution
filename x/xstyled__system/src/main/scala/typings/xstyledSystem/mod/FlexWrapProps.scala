@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexWrapProps extends StObject {
   
   val flexWrap: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexWrapProps {
   
@@ -28,7 +26,7 @@ object FlexWrapProps {
     @scala.inline
     def setFlexWrap(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any
         ]
     ): Self = StObject.set(x, "flexWrap", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object FlexWrapProps {
     def setFlexWrapUndefined: Self = StObject.set(x, "flexWrap", js.undefined)
     
     @scala.inline
-    def setFlexWrapVarargs(value: js.Any*): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
+    def setFlexWrapVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FlexWrap */ js.Any)*
+    ): Self = StObject.set(x, "flexWrap", js.Array(value :_*))
   }
 }

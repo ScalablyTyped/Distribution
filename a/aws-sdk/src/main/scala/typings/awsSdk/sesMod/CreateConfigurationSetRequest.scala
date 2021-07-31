@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConfigurationSetRequest extends StObject {
   
   /**
     * A data structure that contains the name of the configuration set.
     */
-  var ConfigurationSet: typings.awsSdk.sesMod.ConfigurationSet = js.native
+  var ConfigurationSet: typings.awsSdk.sesMod.ConfigurationSet
 }
 object CreateConfigurationSetRequest {
   

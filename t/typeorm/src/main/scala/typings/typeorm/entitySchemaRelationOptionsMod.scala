@@ -14,69 +14,67 @@ import typings.typeorm.typeormStrings.remove
 import typings.typeorm.typeormStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entitySchemaRelationOptionsMod {
   
-  @js.native
   trait EntitySchemaRelationOptions extends StObject {
     
     /**
       * Default database value.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * If set to true then it means that related object can be allowed to be inserted / updated / removed to the db.
       * This is option a shortcut if you would like to set cascadeInsert, cascadeUpdate and cascadeRemove to true.
       */
-    var cascade: js.UndefOr[Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])] = js.native
+    var cascade: js.UndefOr[Boolean | (js.Array[insert | update | remove | `soft-remove` | recover])] = js.undefined
     
     /**
       * Indicate if foreign key constraints can be deferred.
       */
-    var deferrable: js.UndefOr[DeferrableType] = js.native
+    var deferrable: js.UndefOr[DeferrableType] = js.undefined
     
     /**
       * Indicates if this relation will be eagerly loaded.
       */
-    var eager: js.UndefOr[Boolean] = js.native
+    var eager: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Inverse side of the relation.
       */
-    var inverseSide: js.UndefOr[String] = js.native
+    var inverseSide: js.UndefOr[String] = js.undefined
     
     /**
       * Join column options of this column. If set to true then it simply means that it has a join column.
       */
-    var joinColumn: js.UndefOr[Boolean | JoinColumnOptions | js.Array[JoinColumnOptions]] = js.native
+    var joinColumn: js.UndefOr[Boolean | JoinColumnOptions | js.Array[JoinColumnOptions]] = js.undefined
     
     /**
       * Join table options of this column. If set to true then it simply means that it has a join table.
       */
-    var joinTable: js.UndefOr[Boolean | JoinTableOptions | JoinTableMultipleColumnsOptions] = js.native
+    var joinTable: js.UndefOr[Boolean | JoinTableOptions | JoinTableMultipleColumnsOptions] = js.undefined
     
     /**
       * Indicates if this relation will be lazily loaded.
       */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if relation column value can be nullable or not.
       */
-    var nullable: js.UndefOr[Boolean] = js.native
+    var nullable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Database cascade action on delete.
       */
-    var onDelete: js.UndefOr[OnDeleteType] = js.native
+    var onDelete: js.UndefOr[OnDeleteType] = js.undefined
     
     /**
       * Database cascade action on update.
       */
-    var onUpdate: js.UndefOr[OnUpdateType] = js.native
+    var onUpdate: js.UndefOr[OnUpdateType] = js.undefined
     
     /**
       * Indicates if persistence is enabled for the relation.
@@ -84,33 +82,33 @@ object entitySchemaRelationOptionsMod {
       * If its disabled you can only change a relation from inverse side of a relation or using relation query builder functionality.
       * This is useful for performance optimization since its disabling avoid multiple extra queries during entity save.
       */
-    var persistence: js.UndefOr[Boolean] = js.native
+    var persistence: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this relation will be a primary key.
       * Can be used only for many-to-one and owner one-to-one relations.
       */
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates with which entity this relation is made.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
     
     /**
       * Indicates if this is a children (can be only one-to-many relation) relation in the tree tables.
       */
-    var treeChildren: js.UndefOr[Boolean] = js.native
+    var treeChildren: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if this is a parent (can be only many-to-one relation) relation in the tree tables.
       */
-    var treeParent: js.UndefOr[Boolean] = js.native
+    var treeParent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Type of relation. Can be one of the value of the RelationTypes class.
       */
-    var `type`: RelationType = js.native
+    var `type`: RelationType
   }
   object EntitySchemaRelationOptions {
     

@@ -7,19 +7,19 @@ import typings.rcSlider.interfaceMod.GenericSliderProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ContextType[Props /* <: GenericSliderProps */]
-  extends Instantiable1[/* props */ ComponentWrapperProps with Props, ComponentDidMount[Props]]
+  extends StObject
+     with Instantiable1[/* props */ ComponentWrapperProps & Props, ComponentDidMount[Props]]
      with Instantiable2[
-      /* props */ ComponentWrapperProps with Props, 
+      /* props */ ComponentWrapperProps & Props, 
       /* context */ js.Any, 
       ComponentDidMount[Props]
     ] {
   
-  var contextType: js.UndefOr[Context[_]] = js.native
+  var contextType: js.UndefOr[Context[js.Any]] = js.native
   
   var defaultProps: GetTooltipContainer = js.native
 }

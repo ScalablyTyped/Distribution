@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.embed
 import typings.activexLibreoffice.com_.sun.star.frame.XDispatchProviderInterceptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * this descriptor should be used as an in/out parameter.
   * @see com.sun.star.beans.PropertyValue
   */
-@js.native
 trait EmbeddedObjectDescriptor extends StObject {
   
   /** allows to provide a dispatch interceptor for outplace activation. */
-  var OutplaceDispatchInterceptor: XDispatchProviderInterceptor = js.native
+  var OutplaceDispatchInterceptor: XDispatchProviderInterceptor
   
   /**
     * denotes the storage from which the embedded object is to be recovered.
@@ -31,7 +29,7 @@ trait EmbeddedObjectDescriptor extends StObject {
     * The object will still be based on the storage denoted in the `XEmbedObjectCreator` method call, i.e., subsequent save operations will still use that
     * storage. `RecoveryStorage` is used at loading time only, and then discarded.
     */
-  var RecoveryStorage: XStorage = js.native
+  var RecoveryStorage: XStorage
   
   /**
     * lets the graphical representation of embedded document be stored.
@@ -39,7 +37,7 @@ trait EmbeddedObjectDescriptor extends StObject {
     * Setting of this property to true tells the embedded object that controls the document to store or not to store the graphical representation of the
     * document in to the object persistence. If this property is not set the object makes the decision itself.
     */
-  var StoreVisualReplacement: Boolean = js.native
+  var StoreVisualReplacement: Boolean
 }
 object EmbeddedObjectDescriptor {
   

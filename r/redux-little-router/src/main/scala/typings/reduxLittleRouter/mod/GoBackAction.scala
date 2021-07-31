@@ -2,13 +2,13 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GoBackAction extends RouterActions {
+trait GoBackAction
+  extends StObject
+     with RouterActions {
   
-  var `type`: /* "ROUTER_GO_BACK" */ String = js.native
+  var `type`: /* "ROUTER_GO_BACK" */ String
 }
 object GoBackAction {
   

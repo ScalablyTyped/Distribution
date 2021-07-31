@@ -5,120 +5,104 @@ import typings.pug.anon.Body
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pug", "compile")
+  @JSImport("pug", JSImport.Namespace)
   @js.native
-  def compile(template: String): compileTemplate = js.native
-  @JSImport("pug", "compile")
-  @js.native
-  def compile(template: String, options: Options): compileTemplate = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pug", "compileClient")
-  @js.native
-  def compileClient(template: String): String = js.native
-  @JSImport("pug", "compileClient")
-  @js.native
-  def compileClient(template: String, options: Options): String = js.native
+  @scala.inline
+  def compile(template: String): compileTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any]).asInstanceOf[compileTemplate]
+  @scala.inline
+  def compile(template: String, options: Options): compileTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[compileTemplate]
   
-  @JSImport("pug", "compileClientWithDependenciesTracked")
-  @js.native
-  def compileClientWithDependenciesTracked(template: String): Body = js.native
-  @JSImport("pug", "compileClientWithDependenciesTracked")
-  @js.native
-  def compileClientWithDependenciesTracked(template: String, options: Options): Body = js.native
+  @scala.inline
+  def compileClient(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compileClient")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compileClient(template: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compileClient")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pug", "compileFile")
-  @js.native
-  def compileFile(path: String): compileTemplate = js.native
-  @JSImport("pug", "compileFile")
-  @js.native
-  def compileFile(path: String, options: Options): compileTemplate = js.native
+  @scala.inline
+  def compileClientWithDependenciesTracked(template: String): Body = ^.asInstanceOf[js.Dynamic].applyDynamic("compileClientWithDependenciesTracked")(template.asInstanceOf[js.Any]).asInstanceOf[Body]
+  @scala.inline
+  def compileClientWithDependenciesTracked(template: String, options: Options): Body = (^.asInstanceOf[js.Dynamic].applyDynamic("compileClientWithDependenciesTracked")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Body]
   
-  @JSImport("pug", "compileFileClient")
-  @js.native
-  def compileFileClient(path: String): String = js.native
-  @JSImport("pug", "compileFileClient")
-  @js.native
-  def compileFileClient(path: String, options: Options): String = js.native
+  @scala.inline
+  def compileFile(path: String): compileTemplate = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(path.asInstanceOf[js.Any]).asInstanceOf[compileTemplate]
+  @scala.inline
+  def compileFile(path: String, options: Options): compileTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[compileTemplate]
   
-  @JSImport("pug", "render")
-  @js.native
-  def render(template: String): String = js.native
-  @JSImport("pug", "render")
-  @js.native
-  def render(template: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = js.native
-  @JSImport("pug", "render")
-  @js.native
-  def render(template: String, options: Options with LocalsObject): String = js.native
-  @JSImport("pug", "render")
-  @js.native
+  @scala.inline
+  def compileFileClient(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFileClient")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def compileFileClient(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFileClient")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def render(template: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(template: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def render(template: String, options: Options & LocalsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def render(
     template: String,
-    options: Options with LocalsObject,
+    options: Options & LocalsObject,
     callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("pug", "renderFile")
-  @js.native
-  def renderFile(path: String): String = js.native
-  @JSImport("pug", "renderFile")
-  @js.native
-  def renderFile(path: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = js.native
-  @JSImport("pug", "renderFile")
-  @js.native
-  def renderFile(path: String, options: Options with LocalsObject): String = js.native
-  @JSImport("pug", "renderFile")
-  @js.native
+  @scala.inline
+  def renderFile(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderFile(path: String, callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def renderFile(path: String, options: Options & LocalsObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def renderFile(
     path: String,
-    options: Options with LocalsObject,
+    options: Options & LocalsObject,
     callback: js.Function2[/* err */ Error | Null, /* html */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type LocalsObject = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
     /** The root directory of all absolute inclusion. */
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
     /** If set to true, compiled functions are cached. filename must be set as the cache key. Only applies to render functions. Defaults to false. */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /** If set to true, the function source will be included in the compiled template for better error messages (sometimes useful in development). It is enabled by default unless used with Express in production mode. */
-    var compileDebug: js.UndefOr[Boolean] = js.native
+    var compileDebug: js.UndefOr[Boolean] = js.undefined
     
     /** If set to true, the tokens and function body are logged to stdout. */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** If the doctype is not specified as part of the template, you can specify it here. It is sometimes useful to get self-closing tags and remove mirroring of boolean attributes; see doctype documentation for more information. */
-    var doctype: js.UndefOr[String] = js.native
+    var doctype: js.UndefOr[String] = js.undefined
     
     /** The name of the file being compiled. Used in exceptions, and required for relative includes and extends. Defaults to 'Pug'. */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Hash table of custom filters. Defaults to undefined. */
-    var filters: js.UndefOr[js.Any] = js.native
+    var filters: js.UndefOr[js.Any] = js.undefined
     
     /** Add a list of global names to make accessible in templates. */
-    var globals: js.UndefOr[js.Array[String]] = js.native
+    var globals: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Inline runtime functions instead of require-ing them from a shared version. For compileClient functions, the default is true so that one does not have to include the runtime. For all other compilation or rendering types, the default is false. */
-    var inlineRuntimeFunctions: js.UndefOr[Boolean] = js.native
+    var inlineRuntimeFunctions: js.UndefOr[Boolean] = js.undefined
     
     /** The name of the template function. Only applies to compileClient functions. Defaults to 'template'. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Adds whitespace to the resulting HTML to make it easier for a human to read using '  ' as indentation. If a string is specified, that will be used as indentation instead (e.g. '\t'). Defaults to false. */
-    var pretty: js.UndefOr[Boolean | String] = js.native
+    var pretty: js.UndefOr[Boolean | String] = js.undefined
     
     /** Use a self namespace to hold the locals. It will speed up the compilation, but instead of writing variable you will have to write self.variable to access a property of the locals object. Defaults to false. */
-    var self: js.UndefOr[Boolean] = js.native
+    var self: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

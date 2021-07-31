@@ -3,15 +3,13 @@ package typings.reactScroll
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Container extends StObject {
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
   }
   object Container {
     
@@ -32,12 +30,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Id {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Smooth extends StObject {
     
-    var smooth: Boolean | String = js.native
+    var smooth: Boolean | String
   }
   object Smooth {
     

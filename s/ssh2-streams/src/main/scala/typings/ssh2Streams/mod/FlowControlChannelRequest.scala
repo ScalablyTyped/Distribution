@@ -3,23 +3,23 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`xon-xoff`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlowControlChannelRequest extends ChannelRequest {
+trait FlowControlChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var clientControl: Boolean = js.native
+  var clientControl: Boolean
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: `xon-xoff` = js.native
+  var request: `xon-xoff`
 }
 object FlowControlChannelRequest {
   
   @scala.inline
-  def apply(clientControl: Boolean, recipient: Double, request: `xon-xoff`): FlowControlChannelRequest = {
-    val __obj = js.Dynamic.literal(clientControl = clientControl.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+  def apply(clientControl: Boolean, recipient: Double): FlowControlChannelRequest = {
+    val __obj = js.Dynamic.literal(clientControl = clientControl.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "xon-xoff")
     __obj.asInstanceOf[FlowControlChannelRequest]
   }
   

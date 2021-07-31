@@ -11,7 +11,6 @@ import typings.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.middle
 import typings.reactNativeMaterialMenu.reactNativeMaterialMenuStrings.tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,10 +52,9 @@ object mod {
     def show(): js.Object = js.native
   }
   
-  @js.native
   trait MenuDividerProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object MenuDividerProps {
     
@@ -77,24 +75,23 @@ object mod {
     }
   }
   
-  @js.native
   trait MenuItemProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var disabledTextColor: js.UndefOr[String] = js.native
+    var disabledTextColor: js.UndefOr[String] = js.undefined
     
-    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
     
-    var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var textStyle: js.UndefOr[TextStyle] = js.native
+    var textStyle: js.UndefOr[TextStyle] = js.undefined
     
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object MenuItemProps {
     
@@ -160,18 +157,17 @@ object mod {
     }
   }
   
-  @js.native
   trait MenuProps extends StObject {
     
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
-    var button: js.UndefOr[ReactElement] = js.native
+    var button: js.UndefOr[ReactElement] = js.undefined
     
-    var onHidden: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHidden: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
   }
   object MenuProps {
     

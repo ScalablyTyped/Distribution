@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Disk encryption status.
   */
-@js.native
 trait SchemaDiskEncryptionStatus extends StObject {
   
   /**
     * This is always sql#diskEncryptionStatus.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * KMS key version used to encrypt the Cloud SQL instance disk
     */
-  var kmsKeyVersionName: js.UndefOr[String] = js.native
+  var kmsKeyVersionName: js.UndefOr[String] = js.undefined
 }
 object SchemaDiskEncryptionStatus {
   

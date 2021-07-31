@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCOAuthCredential extends StObject {
   
-  var accessToken: java.lang.String = js.native
+  var accessToken: java.lang.String
   
-  var macKey: java.lang.String = js.native
+  var macKey: java.lang.String
 }
 object RTCOAuthCredential {
   

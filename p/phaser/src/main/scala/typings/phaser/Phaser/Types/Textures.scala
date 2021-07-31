@@ -3,7 +3,6 @@ package typings.phaser.Phaser.Types
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Textures {
@@ -11,28 +10,27 @@ object Textures {
   /**
     * An object containing the position and color data for a single pixel in a CanvasTexture.
     */
-  @js.native
   trait PixelConfig extends StObject {
     
     /**
       * The alpha of the pixel, between 0 and 1.
       */
-    var alpha: Double = js.native
+    var alpha: Double
     
     /**
       * The color of the pixel, not including the alpha channel.
       */
-    var color: integer = js.native
+    var color: integer
     
     /**
       * The x-coordinate of the pixel.
       */
-    var x: integer = js.native
+    var x: integer
     
     /**
       * The y-coordinate of the pixel.
       */
-    var y: integer = js.native
+    var y: integer
   }
   object PixelConfig {
     
@@ -59,38 +57,37 @@ object Textures {
     }
   }
   
-  @js.native
   trait SpriteSheetConfig extends StObject {
     
     /**
       * The total number of frames to extract from the Sprite Sheet. The default value of -1 means "extract all frames".
       */
-    var endFrame: js.UndefOr[integer] = js.native
+    var endFrame: js.UndefOr[integer] = js.undefined
     
     /**
       * The fixed height of each frame. If not set it will use the frameWidth as the height.
       */
-    var frameHeight: js.UndefOr[integer] = js.native
+    var frameHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * The fixed width of each frame.
       */
-    var frameWidth: integer = js.native
+    var frameWidth: integer
     
     /**
       * If the frames have been drawn with a margin, specify the amount here.
       */
-    var margin: js.UndefOr[integer] = js.native
+    var margin: js.UndefOr[integer] = js.undefined
     
     /**
       * If the frames have been drawn with spacing between them, specify the amount here.
       */
-    var spacing: js.UndefOr[integer] = js.native
+    var spacing: js.UndefOr[integer] = js.undefined
     
     /**
       * Skip a number of frames. Useful when there are multiple sprite sheets in one Texture.
       */
-    var startFrame: js.UndefOr[integer] = js.native
+    var startFrame: js.UndefOr[integer] = js.undefined
   }
   object SpriteSheetConfig {
     
@@ -138,48 +135,47 @@ object Textures {
     }
   }
   
-  @js.native
   trait SpriteSheetFromAtlasConfig extends StObject {
     
     /**
       * The key of the Texture Atlas in which this Sprite Sheet can be found.
       */
-    var atlas: String = js.native
+    var atlas: String
     
     /**
       * The total number of frames to extract from the Sprite Sheet. The default value of -1 means "extract all frames".
       */
-    var endFrame: js.UndefOr[integer] = js.native
+    var endFrame: js.UndefOr[integer] = js.undefined
     
     /**
       * The key of the Texture Atlas Frame in which this Sprite Sheet can be found.
       */
-    var frame: String = js.native
+    var frame: String
     
     /**
       * The fixed height of each frame. If not set it will use the frameWidth as the height.
       */
-    var frameHeight: js.UndefOr[integer] = js.native
+    var frameHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * The fixed width of each frame.
       */
-    var frameWidth: integer = js.native
+    var frameWidth: integer
     
     /**
       * If the frames have been drawn with a margin, specify the amount here.
       */
-    var margin: js.UndefOr[integer] = js.native
+    var margin: js.UndefOr[integer] = js.undefined
     
     /**
       * If the frames have been drawn with spacing between them, specify the amount here.
       */
-    var spacing: js.UndefOr[integer] = js.native
+    var spacing: js.UndefOr[integer] = js.undefined
     
     /**
       * Skip a number of frames. Useful when there are multiple sprite sheets in one Texture.
       */
-    var startFrame: js.UndefOr[integer] = js.native
+    var startFrame: js.UndefOr[integer] = js.undefined
   }
   object SpriteSheetFromAtlasConfig {
     

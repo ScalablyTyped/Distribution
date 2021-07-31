@@ -2,41 +2,39 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationTaskSummary extends StObject {
   
   /**
     * Unique identifier that references the migration task. Do not store personal data in this field. 
     */
-  var MigrationTaskName: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTaskName] = js.native
+  var MigrationTaskName: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTaskName] = js.undefined
   
   /**
     * Indication of the percentage completion of the task.
     */
-  var ProgressPercent: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressPercent] = js.native
+  var ProgressPercent: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressPercent] = js.undefined
   
   /**
     * An AWS resource used for access control. It should uniquely identify the migration tool as it is used for all updates made by the tool.
     */
-  var ProgressUpdateStream: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStream] = js.native
+  var ProgressUpdateStream: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressUpdateStream] = js.undefined
   
   /**
     * Status of the task.
     */
-  var Status: js.UndefOr[typings.awsSdk.migrationhubMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.migrationhubMod.Status] = js.undefined
   
   /**
     * Detail information of what is being done within the overall status state.
     */
-  var StatusDetail: js.UndefOr[typings.awsSdk.migrationhubMod.StatusDetail] = js.native
+  var StatusDetail: js.UndefOr[typings.awsSdk.migrationhubMod.StatusDetail] = js.undefined
   
   /**
     * The timestamp when the task was gathered.
     */
-  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.native
+  var UpdateDateTime: js.UndefOr[typings.awsSdk.migrationhubMod.UpdateDateTime] = js.undefined
 }
 object MigrationTaskSummary {
   

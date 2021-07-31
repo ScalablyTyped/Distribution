@@ -2,22 +2,22 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Declarative event action that cancels a network request. */
-@js.native
-trait CancelRequest extends OnRequestActions {
+trait CancelRequest
+  extends StObject
+     with OnRequestActions {
   
-  val instanceType: String = js.native
+  val instanceType: String
   
-  val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest = js.native
+  val typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest
 }
 object CancelRequest {
   
   @scala.inline
-  def apply(instanceType: String, typeGuard: typings.chromeApps.chromeAppsStrings.CancelRequest): CancelRequest = {
-    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = typeGuard.asInstanceOf[js.Any])
+  def apply(instanceType: String): CancelRequest = {
+    val __obj = js.Dynamic.literal(instanceType = instanceType.asInstanceOf[js.Any], typeGuard = "CancelRequest")
     __obj.asInstanceOf[CancelRequest]
   }
   

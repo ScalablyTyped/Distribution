@@ -3,19 +3,18 @@ package typings.reactNativeJoi.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationError
-  extends Error
+  extends StObject
+     with Error
      with JoiObject {
   
-  var _object: js.Any = js.native
+  var _object: js.Any
   
-  def annotate(): String = js.native
+  def annotate(): String
   
-  var details: js.Array[ValidationErrorItem] = js.native
+  var details: js.Array[ValidationErrorItem]
 }
 object ValidationError {
   

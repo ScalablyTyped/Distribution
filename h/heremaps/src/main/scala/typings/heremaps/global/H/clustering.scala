@@ -1,11 +1,12 @@
 package typings.heremaps.global.H
 
 import typings.heremaps.H.clustering.Provider.Options
+import typings.heremaps.H.geo.Altitude
+import typings.heremaps.H.geo.AltitudeContext
 import typings.heremaps.H.geo.Latitude
 import typings.heremaps.H.geo.Longitude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** clustering *****/
@@ -21,7 +22,8 @@ object clustering {
   @JSGlobal("H.clustering.DataPoint")
   @js.native
   class DataPoint protected ()
-    extends typings.heremaps.H.clustering.DataPoint {
+    extends StObject
+       with typings.heremaps.H.clustering.DataPoint {
     /**
       * Constructor
       * @param lat {H.geo.Latitude} - The latitude coordinate of the data point's position
@@ -31,8 +33,28 @@ object clustering {
       */
     def this(lat: Latitude, lng: Longitude) = this()
     def this(lat: Latitude, lng: Longitude, opt_weight: Double) = this()
-    def this(lat: Latitude, lng: Longitude, opt_weight: js.UndefOr[scala.Nothing], opt_data: js.Any) = this()
     def this(lat: Latitude, lng: Longitude, opt_weight: Double, opt_data: js.Any) = this()
+    def this(lat: Latitude, lng: Longitude, opt_weight: Unit, opt_data: js.Any) = this()
+    
+    /* CompleteClass */
+    @JSName("alt")
+    var alt_DataPoint: Altitude = js.native
+    
+    /* CompleteClass */
+    @JSName("ctx")
+    var ctx_DataPoint: AltitudeContext = js.native
+    
+    /* CompleteClass */
+    var data: js.Any = js.native
+    
+    /* CompleteClass */
+    var lat: Latitude = js.native
+    
+    /* CompleteClass */
+    var lng: Longitude = js.native
+    
+    /* CompleteClass */
+    var wt: Double = js.native
   }
   
   /**
@@ -44,7 +66,8 @@ object clustering {
   @JSGlobal("H.clustering.Provider")
   @js.native
   class Provider protected ()
-    extends typings.heremaps.H.clustering.Provider {
+    extends StObject
+       with typings.heremaps.H.clustering.Provider {
     /**
       * Constructor
       * @param dataPoints {Array<H.clustering.DataPoint>}
@@ -66,13 +89,13 @@ object clustering {
     object Strategy extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.clustering.Provider.Strategy with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.clustering.Provider.Strategy & Double] = js.native
       
-      /* 2 */ val DYNAMICGRID: typings.heremaps.H.clustering.Provider.Strategy.DYNAMICGRID with Double = js.native
+      /* 2 */ val DYNAMICGRID: typings.heremaps.H.clustering.Provider.Strategy.DYNAMICGRID & Double = js.native
       
-      /* 0 */ val FASTGRID: typings.heremaps.H.clustering.Provider.Strategy.FASTGRID with Double = js.native
+      /* 0 */ val FASTGRID: typings.heremaps.H.clustering.Provider.Strategy.FASTGRID & Double = js.native
       
-      /* 1 */ val GRID: typings.heremaps.H.clustering.Provider.Strategy.GRID with Double = js.native
+      /* 1 */ val GRID: typings.heremaps.H.clustering.Provider.Strategy.GRID & Double = js.native
     }
   }
 }

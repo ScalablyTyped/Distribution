@@ -3,17 +3,15 @@ package typings.activexFaxcomexlib.anon
 import typings.activexFaxcomexlib.FAXCOMEXLib.FaxAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FRemovedFromReceiveFolder extends StObject {
   
-  val bstrMessageId: String = js.native
+  val bstrMessageId: String
   
-  val fRemovedFromReceiveFolder: Boolean = js.native
+  val fRemovedFromReceiveFolder: Boolean
   
-  val pFaxAccount: FaxAccount = js.native
+  val pFaxAccount: FaxAccount
 }
 object FRemovedFromReceiveFolder {
   

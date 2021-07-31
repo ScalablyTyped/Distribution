@@ -2,26 +2,24 @@ package typings.hapiHapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /**
     * decorations on the request object.
     */
-  var request: js.Array[String] = js.native
+  var request: js.Array[String]
   
   /**
     * decorations on the server object.
     */
-  var server: js.Array[String] = js.native
+  var server: js.Array[String]
   
   /**
     * decorations on the response toolkit.
     */
-  var toolkit: js.Array[String] = js.native
+  var toolkit: js.Array[String]
 }
 object Request {
   

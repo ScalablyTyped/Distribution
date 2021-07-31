@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrivateDnsNameConfiguration extends StObject {
   
   /**
     * The name of the record subdomain the service provider needs to create. The service provider adds the value text to the name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The verification state of the VPC endpoint service. &gt;Consumers of the endpoint service can use the private name only when the state is verified.
     */
-  var State: js.UndefOr[DnsNameState] = js.native
+  var State: js.UndefOr[DnsNameState] = js.undefined
   
   /**
     * The endpoint service verification type, for example TXT.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
   
   /**
     * The value the service provider adds to the private DNS name domain record before verification.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object PrivateDnsNameConfiguration {
   

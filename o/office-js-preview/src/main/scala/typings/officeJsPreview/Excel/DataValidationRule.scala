@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait DataValidationRule extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var custom: js.UndefOr[CustomDataValidation] = js.native
+  var custom: js.UndefOr[CustomDataValidation] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var date: js.UndefOr[DateTimeDataValidation] = js.native
+  var date: js.UndefOr[DateTimeDataValidation] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var decimal: js.UndefOr[BasicDataValidation] = js.native
+  var decimal: js.UndefOr[BasicDataValidation] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var list: js.UndefOr[ListDataValidation] = js.native
+  var list: js.UndefOr[ListDataValidation] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textLength: js.UndefOr[BasicDataValidation] = js.native
+  var textLength: js.UndefOr[BasicDataValidation] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var time: js.UndefOr[DateTimeDataValidation] = js.native
+  var time: js.UndefOr[DateTimeDataValidation] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait DataValidationRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var wholeNumber: js.UndefOr[BasicDataValidation] = js.native
+  var wholeNumber: js.UndefOr[BasicDataValidation] = js.undefined
 }
 object DataValidationRule {
   

@@ -2,23 +2,21 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataObject extends StObject {
   
-  var childXmlNames: js.UndefOr[js.Array[String]] = js.native
+  var childXmlNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var directoryName: js.UndefOr[String] = js.native
+  var directoryName: js.UndefOr[String] = js.undefined
   
-  var inFolder: js.UndefOr[Boolean] = js.native
+  var inFolder: js.UndefOr[Boolean] = js.undefined
   
-  var metaFile: js.UndefOr[Boolean] = js.native
+  var metaFile: js.UndefOr[Boolean] = js.undefined
   
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
-  var xmlName: String = js.native
+  var xmlName: String
 }
 object MetadataObject {
   

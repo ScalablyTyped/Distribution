@@ -2,42 +2,40 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookiesGetFilter extends StObject {
   
   /**
     * Retrieves cookies whose domains match or are subdomains of `domains`.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Filters cookies by name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Retrieves cookies whose path matches `path`.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Filters cookies by their Secure property.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Filters out session or persistent cookies.
     */
-  var session: js.UndefOr[Boolean] = js.native
+  var session: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Retrieves cookies which are associated with `url`. Empty implies retrieving
     * cookies of all URLs.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CookiesGetFilter {
   

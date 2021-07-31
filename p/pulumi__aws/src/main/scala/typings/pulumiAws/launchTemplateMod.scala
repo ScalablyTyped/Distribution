@@ -23,7 +23,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object launchTemplateMod {
@@ -40,7 +39,7 @@ object launchTemplateMod {
       */
     def this(name: String) = this()
     def this(name: String, args: LaunchTemplateArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: LaunchTemplateArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -225,6 +224,10 @@ object launchTemplateMod {
   /* static members */
   object LaunchTemplate {
     
+    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LaunchTemplate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -234,29 +237,23 @@ object launchTemplateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LaunchTemplate = js.native
-    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LaunchTemplate = js.native
-    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LaunchTemplateState): LaunchTemplate = js.native
-    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LaunchTemplateState, opts: CustomResourceOptions): LaunchTemplate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LaunchTemplateState): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LaunchTemplateState, opts: CustomResourceOptions): LaunchTemplate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LaunchTemplate]
     
     /**
       * Returns true if the given object is an instance of LaunchTemplate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/launchTemplate", "LaunchTemplate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/launchTemplate.LaunchTemplate */ Boolean]
   }
   
-  @js.native
   trait LaunchTemplateArgs extends StObject {
     
     /**
@@ -265,46 +262,46 @@ object launchTemplateMod {
       */
     val blockDeviceMappings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
       */
     val capacityReservationSpecification: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The CPU options for the instance. See CPU Options below for more details.
       */
-    val cpuOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]] = js.native
+    val cpuOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]] = js.undefined
     
     /**
       * Customize the credit specification of the instance. See Credit
       * Specification below for more details.
       */
-    val creditSpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]] = js.native
+    val creditSpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]] = js.undefined
     
     /**
       * Default Version of the launch template.
       */
-    val defaultVersion: js.UndefOr[Input[Double]] = js.native
+    val defaultVersion: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Description of the launch template.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If `true`, enables [EC2 Instance
       * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
       */
-    val disableApiTermination: js.UndefOr[Input[Boolean]] = js.native
+    val disableApiTermination: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If `true`, the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: js.UndefOr[Input[String]] = js.native
+    val ebsOptimized: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The elastic GPU to attach to the instance. See Elastic GPU
@@ -314,55 +311,55 @@ object launchTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
       */
-    val elasticInferenceAccelerator: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]] = js.native
+    val elasticInferenceAccelerator: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]] = js.undefined
     
     /**
       * The hibernation options for the instance. See Hibernation Options below for more details.
       */
-    val hibernationOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]] = js.native
+    val hibernationOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]] = js.undefined
     
     /**
       * The IAM Instance Profile to launch the instance with. See Instance Profile
       * below for more details.
       */
-    val iamInstanceProfile: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]] = js.native
+    val iamInstanceProfile: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]] = js.undefined
     
     /**
       * The AMI from which to launch the instance.
       */
-    val imageId: js.UndefOr[Input[String]] = js.native
+    val imageId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Shutdown behavior for the instance. Can be `stop` or `terminate`.
       * (Default: `stop`).
       */
-    val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.native
+    val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The market (purchasing) option for the instance. See Market Options
       * below for details.
       */
-    val instanceMarketOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]] = js.native
+    val instanceMarketOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]] = js.undefined
     
     /**
       * The type of the instance.
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The kernel ID.
       */
-    val kernelId: js.UndefOr[Input[String]] = js.native
+    val kernelId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The key name to use for the instance.
       */
-    val keyName: js.UndefOr[Input[String]] = js.native
+    val keyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of license specifications to associate with. See License Specification below for more details.
@@ -371,27 +368,27 @@ object launchTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Customize the metadata options for the instance. See Metadata Options below for more details.
       */
-    val metadataOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]] = js.native
+    val metadataOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]] = js.undefined
     
     /**
       * The monitoring option for the instance. See Monitoring below for more details.
       */
-    val monitoring: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]] = js.native
+    val monitoring: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]] = js.undefined
     
     /**
       * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize network interfaces to be attached at instance boot time. See Network
@@ -399,50 +396,50 @@ object launchTemplateMod {
       */
     val networkInterfaces: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The placement of the instance. See Placement below for more details.
       */
-    val placement: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]] = js.native
+    val placement: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]] = js.undefined
     
     /**
       * The ID of the RAM disk.
       */
-    val ramDiskId: js.UndefOr[Input[String]] = js.native
+    val ramDiskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group names to associate with. If you are creating Instances in a VPC, use
       * `vpcSecurityGroupIds` instead.
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The tags to apply to the resources during launch. See Tag Specifications below for more details.
       */
     val tagSpecifications: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A map of tags to assign to the launch template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to update Default Version each update. Conflicts with `defaultVersion`.
       */
-    val updateDefaultVersion: js.UndefOr[Input[Boolean]] = js.native
+    val updateDefaultVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Base64-encoded user data to provide when launching the instance.
       */
-    val userData: js.UndefOr[Input[String]] = js.native
+    val userData: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to associate with.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object LaunchTemplateArgs {
     
@@ -678,13 +675,12 @@ object launchTemplateMod {
     }
   }
   
-  @js.native
   trait LaunchTemplateState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the instance profile.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify volumes to attach to the instance besides the volumes specified by the AMI.
@@ -692,46 +688,46 @@ object launchTemplateMod {
       */
     val blockDeviceMappings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateBlockDeviceMapping]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Targeting for EC2 capacity reservations. See Capacity Reservation Specification below for more details.
       */
     val capacityReservationSpecification: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCapacityReservationSpecification]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The CPU options for the instance. See CPU Options below for more details.
       */
-    val cpuOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]] = js.native
+    val cpuOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCpuOptions]] = js.undefined
     
     /**
       * Customize the credit specification of the instance. See Credit
       * Specification below for more details.
       */
-    val creditSpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]] = js.native
+    val creditSpecification: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateCreditSpecification]] = js.undefined
     
     /**
       * Default Version of the launch template.
       */
-    val defaultVersion: js.UndefOr[Input[Double]] = js.native
+    val defaultVersion: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Description of the launch template.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If `true`, enables [EC2 Instance
       * Termination Protection](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/terminating-instances.html#Using_ChangingDisableAPITermination)
       */
-    val disableApiTermination: js.UndefOr[Input[Boolean]] = js.native
+    val disableApiTermination: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If `true`, the launched EC2 instance will be EBS-optimized.
       */
-    val ebsOptimized: js.UndefOr[Input[String]] = js.native
+    val ebsOptimized: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The elastic GPU to attach to the instance. See Elastic GPU
@@ -741,60 +737,60 @@ object launchTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticGpuSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration block containing an Elastic Inference Accelerator to attach to the instance. See Elastic Inference Accelerator below for more details.
       */
-    val elasticInferenceAccelerator: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]] = js.native
+    val elasticInferenceAccelerator: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateElasticInferenceAccelerator]] = js.undefined
     
     /**
       * The hibernation options for the instance. See Hibernation Options below for more details.
       */
-    val hibernationOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]] = js.native
+    val hibernationOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateHibernationOptions]] = js.undefined
     
     /**
       * The IAM Instance Profile to launch the instance with. See Instance Profile
       * below for more details.
       */
-    val iamInstanceProfile: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]] = js.native
+    val iamInstanceProfile: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateIamInstanceProfile]] = js.undefined
     
     /**
       * The AMI from which to launch the instance.
       */
-    val imageId: js.UndefOr[Input[String]] = js.native
+    val imageId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Shutdown behavior for the instance. Can be `stop` or `terminate`.
       * (Default: `stop`).
       */
-    val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.native
+    val instanceInitiatedShutdownBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The market (purchasing) option for the instance. See Market Options
       * below for details.
       */
-    val instanceMarketOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]] = js.native
+    val instanceMarketOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateInstanceMarketOptions]] = js.undefined
     
     /**
       * The type of the instance.
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The kernel ID.
       */
-    val kernelId: js.UndefOr[Input[String]] = js.native
+    val kernelId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The key name to use for the instance.
       */
-    val keyName: js.UndefOr[Input[String]] = js.native
+    val keyName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The latest version of the launch template.
       */
-    val latestVersion: js.UndefOr[Input[Double]] = js.native
+    val latestVersion: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of license specifications to associate with. See License Specification below for more details.
@@ -803,27 +799,27 @@ object launchTemplateMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateLicenseSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Customize the metadata options for the instance. See Metadata Options below for more details.
       */
-    val metadataOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]] = js.native
+    val metadataOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMetadataOptions]] = js.undefined
     
     /**
       * The monitoring option for the instance. See Monitoring below for more details.
       */
-    val monitoring: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]] = js.native
+    val monitoring: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateMonitoring]] = js.undefined
     
     /**
       * The name of the launch template. If you leave this blank, this provider will auto-generate a unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Customize network interfaces to be attached at instance boot time. See Network
@@ -831,50 +827,50 @@ object launchTemplateMod {
       */
     val networkInterfaces: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateNetworkInterface]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The placement of the instance. See Placement below for more details.
       */
-    val placement: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]] = js.native
+    val placement: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplatePlacement]] = js.undefined
     
     /**
       * The ID of the RAM disk.
       */
-    val ramDiskId: js.UndefOr[Input[String]] = js.native
+    val ramDiskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group names to associate with. If you are creating Instances in a VPC, use
       * `vpcSecurityGroupIds` instead.
       */
-    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The tags to apply to the resources during launch. See Tag Specifications below for more details.
       */
     val tagSpecifications: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.LaunchTemplateTagSpecification]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A map of tags to assign to the launch template.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether to update Default Version each update. Conflicts with `defaultVersion`.
       */
-    val updateDefaultVersion: js.UndefOr[Input[Boolean]] = js.native
+    val updateDefaultVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Base64-encoded user data to provide when launching the instance.
       */
-    val userData: js.UndefOr[Input[String]] = js.native
+    val userData: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security group IDs to associate with.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object LaunchTemplateState {
     

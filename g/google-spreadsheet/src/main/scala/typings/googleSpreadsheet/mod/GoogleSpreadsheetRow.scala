@@ -3,13 +3,13 @@ package typings.googleSpreadsheet.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetRow")
 @js.native
 class GoogleSpreadsheetRow protected ()
-  extends /**
+  extends StObject
+     with /**
   * @description
   * This represents the properties that get loaded using the header row
   */

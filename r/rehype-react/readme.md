@@ -11,8 +11,8 @@ rehype plugin to transform to React
 | Full name          | rehype-react |
 | Keywords           | unified, rehype, rehype-plugin, plugin, html, hast, react |
 | # releases         | 8 |
-| # dependents       | 61 |
-| # downloads        | 589332 |
+| # dependents       | 70 |
+| # downloads        | 979239 |
 | # stars            | 0 |
 
 ## Links

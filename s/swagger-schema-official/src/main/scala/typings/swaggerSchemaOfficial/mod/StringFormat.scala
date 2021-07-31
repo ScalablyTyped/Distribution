@@ -9,22 +9,22 @@ import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.password
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringFormat extends SchemaFormatConstraints {
+trait StringFormat
+  extends StObject
+     with SchemaFormatConstraints {
   
-  var format: js.UndefOr[_empty | byte | binary | date | `date-time` | password] = js.native
+  var format: js.UndefOr[_empty | byte | binary | date | `date-time` | password] = js.undefined
   
-  var `type`: string = js.native
+  var `type`: string
 }
 object StringFormat {
   
   @scala.inline
-  def apply(`type`: string): StringFormat = {
+  def apply(): StringFormat = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[StringFormat]
   }
   

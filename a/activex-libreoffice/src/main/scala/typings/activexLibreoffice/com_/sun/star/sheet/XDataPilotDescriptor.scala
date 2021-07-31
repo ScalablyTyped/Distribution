@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,98 +16,99 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotDescriptor
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
-trait XDataPilotDescriptor extends XNamed {
+trait XDataPilotDescriptor
+  extends StObject
+     with XNamed {
   
   /**
     * returns the collection of the data pilot fields used as column fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val ColumnFields: XIndexAccess = js.native
+  val ColumnFields: XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val DataFields: XIndexAccess = js.native
+  val DataFields: XIndexAccess
   
   /** returns the collection of all the data pilot fields. */
-  val DataPilotFields: XIndexAccess = js.native
+  val DataPilotFields: XIndexAccess
   
   /** returns the filter descriptor specifying which data from the source cell range are used for the data pilot table. */
-  val FilterDescriptor: XSheetFilterDescriptor = js.native
+  val FilterDescriptor: XSheetFilterDescriptor
   
   /**
     * returns the collection of the data pilot fields not used as column, row, page, or data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val HiddenFields: XIndexAccess = js.native
+  val HiddenFields: XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as page fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val PageFields: XIndexAccess = js.native
+  val PageFields: XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as row fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  val RowFields: XIndexAccess = js.native
+  val RowFields: XIndexAccess
   
   /** returns the cell range containing the data for the data pilot table. */
-  var SourceRange: CellRangeAddress = js.native
+  var SourceRange: CellRangeAddress
   
   /** returns an additional string stored in the data pilot table. */
-  var Tag: String = js.native
+  var Tag: String
   
   /**
     * returns the collection of the data pilot fields used as column fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getColumnFields(): XIndexAccess = js.native
+  def getColumnFields(): XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getDataFields(): XIndexAccess = js.native
+  def getDataFields(): XIndexAccess
   
   /** returns the collection of all the data pilot fields. */
-  def getDataPilotFields(): XIndexAccess = js.native
+  def getDataPilotFields(): XIndexAccess
   
   /** returns the filter descriptor specifying which data from the source cell range are used for the data pilot table. */
-  def getFilterDescriptor(): XSheetFilterDescriptor = js.native
+  def getFilterDescriptor(): XSheetFilterDescriptor
   
   /**
     * returns the collection of the data pilot fields not used as column, row, page, or data fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getHiddenFields(): XIndexAccess = js.native
+  def getHiddenFields(): XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as page fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getPageFields(): XIndexAccess = js.native
+  def getPageFields(): XIndexAccess
   
   /**
     * returns the collection of the data pilot fields used as row fields.
     * @see com.sun.star.sheet.DataPilotFields
     */
-  def getRowFields(): XIndexAccess = js.native
+  def getRowFields(): XIndexAccess
   
   /** returns the cell range containing the data for the data pilot table. */
-  def getSourceRange(): CellRangeAddress = js.native
+  def getSourceRange(): CellRangeAddress
   
   /** returns an additional string stored in the data pilot table. */
-  def getTag(): String = js.native
+  def getTag(): String
   
   /** sets the cell range containing the data for the data pilot table. */
-  def setSourceRange(aSourceRange: CellRangeAddress): Unit = js.native
+  def setSourceRange(aSourceRange: CellRangeAddress): Unit
   
   /** sets an additional string stored in the data pilot table. */
-  def setTag(aTag: String): Unit = js.native
+  def setTag(aTag: String): Unit
 }
 object XDataPilotDescriptor {
   

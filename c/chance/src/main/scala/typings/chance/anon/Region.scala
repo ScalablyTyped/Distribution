@@ -3,19 +3,17 @@ package typings.chance.anon
 import typings.chance.chanceBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
-  var region: `true` = js.native
+  var region: `true`
 }
 object Region {
   
   @scala.inline
-  def apply(region: `true`): Region = {
-    val __obj = js.Dynamic.literal(region = region.asInstanceOf[js.Any])
+  def apply(): Region = {
+    val __obj = js.Dynamic.literal(region = true)
     __obj.asInstanceOf[Region]
   }
   

@@ -2,21 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchHit extends StObject {
   
-  var contentSource: js.UndefOr[NullableOption[String]] = js.native
+  var contentSource: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var hitId: js.UndefOr[NullableOption[String]] = js.native
+  var hitId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var rank: js.UndefOr[NullableOption[Double]] = js.native
+  var rank: js.UndefOr[NullableOption[Double]] = js.undefined
   
-  var resource: js.UndefOr[NullableOption[Entity]] = js.native
+  var resource: js.UndefOr[NullableOption[Entity]] = js.undefined
   
-  var summary: js.UndefOr[NullableOption[String]] = js.native
+  var summary: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SearchHit {
   

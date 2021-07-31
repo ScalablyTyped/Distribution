@@ -3,28 +3,47 @@ package typings.bootstrap
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertMod {
   
   @JSImport("bootstrap/js/dist/alert", JSImport.Default)
   @js.native
-  class default protected () extends Alert {
+  class default protected ()
+    extends StObject
+       with Alert {
     def this(element: Element) = this()
+    
+    /**
+      * Closes an alert by removing it from the DOM. If the .fade and .show
+      * classes are present on the element, the alert will fade out before it
+      * is removed.
+      */
+    /* CompleteClass */
+    override def close(): Unit = js.native
+    
+    /**
+      * Destroys an element's alert.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
   }
   object default {
+    
+    @JSImport("bootstrap/js/dist/alert", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("bootstrap/js/dist/alert", "default.Events")
     @js.native
     object Events extends StObject {
       
       @JSBracketAccess
-      def apply(value: String): js.UndefOr[typings.bootstrap.alertMod.Alert.Events with String] = js.native
+      def apply(value: String): js.UndefOr[typings.bootstrap.alertMod.Alert.Events & String] = js.native
       
-      /* "close.bs.alert" */ val close: typings.bootstrap.alertMod.Alert.Events.close with String = js.native
+      /* "close.bs.alert" */ val close: typings.bootstrap.alertMod.Alert.Events.close & String = js.native
       
-      /* "closed.bs.alert" */ val closed: typings.bootstrap.alertMod.Alert.Events.closed with String = js.native
+      /* "closed.bs.alert" */ val closed: typings.bootstrap.alertMod.Alert.Events.closed & String = js.native
     }
     
     /**
@@ -32,12 +51,10 @@ object alertMod {
       * DOM element, you can use it like this: getInstance(alert)
       */
     /* static member */
-    @JSImport("bootstrap/js/dist/alert", "default.getInstance")
-    @js.native
-    def getInstance(element: Element): Alert = js.native
+    @scala.inline
+    def getInstance(element: Element): Alert = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(element.asInstanceOf[js.Any]).asInstanceOf[Alert]
   }
   
-  @js.native
   trait Alert extends StObject {
     
     /**
@@ -45,12 +62,12 @@ object alertMod {
       * classes are present on the element, the alert will fade out before it
       * is removed.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Destroys an element's alert.
       */
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Alert {
     
@@ -70,14 +87,18 @@ object alertMod {
         * Fires immediately when the close instance method is called.
         */
       @js.native
-      sealed trait close extends Events
+      sealed trait close
+        extends StObject
+           with Events
       
       /**
         * Fired when the alert has been closed and CSS transitions have
         * completed.
         */
       @js.native
-      sealed trait closed extends Events
+      sealed trait closed
+        extends StObject
+           with Events
     }
     
     @scala.inline

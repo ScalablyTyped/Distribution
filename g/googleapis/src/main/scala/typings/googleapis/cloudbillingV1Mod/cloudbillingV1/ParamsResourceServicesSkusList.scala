@@ -6,23 +6,23 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceServicesSkusList extends StandardParameters {
+trait ParamsResourceServicesSkusList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ISO 4217 currency code for the pricing info in the response proto.
     * Will use the conversion rate as of start_time. Optional. If not specified
     * USD will be used.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional exclusive end time of the time range for which the pricing
@@ -32,24 +32,24 @@ trait ParamsResourceServicesSkusList extends StandardParameters {
     * specified, the latest pricing will be returned (up to 12 hours old at
     * most).
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Requested page size. Defaults to 5000.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying a page of results to return. This should be a
     * `next_page_token` value returned from a previous `ListSkus` call. If
     * unspecified, the first page of results is returned.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service. Example: "services/DA34-426B-A397"
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Optional inclusive start time of the time range for which the pricing
@@ -59,7 +59,7 @@ trait ParamsResourceServicesSkusList extends StandardParameters {
     * specified, the latest pricing will be returned (up to 12 hours old at
     * most).
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceServicesSkusList {
   

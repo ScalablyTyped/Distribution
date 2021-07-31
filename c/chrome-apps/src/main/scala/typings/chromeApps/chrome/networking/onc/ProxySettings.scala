@@ -2,23 +2,21 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxySettings[M, S, SL] extends StObject {
   
   /** Domains and hosts for which manual proxy settings are excluded. */
-  var ExcludeDomains: js.UndefOr[SL] = js.native
+  var ExcludeDomains: js.UndefOr[SL] = js.undefined
   
   /** Manual proxy settings - used only for *Manual* proxy settings. */
-  var Manual: js.UndefOr[ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]] = js.native
+  var Manual: js.UndefOr[ManualProxySettings[M, ProxyLocation | ManagedProxyLocation]] = js.undefined
   
   /** URL for proxy auto-configuration file. */
-  var PAC: js.UndefOr[S] = js.native
+  var PAC: js.UndefOr[S] = js.undefined
   
   /** The type of proxy settings. */
-  var Type: ProxySettingsType | ManagedType[ProxySettingsType] = js.native
+  var Type: ProxySettingsType | ManagedType[ProxySettingsType]
 }
 object ProxySettings {
   
@@ -29,7 +27,7 @@ object ProxySettings {
   }
   
   @scala.inline
-  implicit class ProxySettingsMutableBuilder[Self <: ProxySettings[_, _, _], M, S, SL] (val x: Self with (ProxySettings[M, S, SL])) extends AnyVal {
+  implicit class ProxySettingsMutableBuilder[Self <: ProxySettings[?, ?, ?], M, S, SL] (val x: Self & (ProxySettings[M, S, SL])) extends AnyVal {
     
     @scala.inline
     def setExcludeDomains(value: SL): Self = StObject.set(x, "ExcludeDomains", value.asInstanceOf[js.Any])

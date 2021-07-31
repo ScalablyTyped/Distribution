@@ -2,30 +2,30 @@ package typings.d3InterpolatePath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-interpolate-path", "interpolatePath")
+  @JSImport("d3-interpolate-path", JSImport.Namespace)
   @js.native
-  def interpolatePath(a: String, b: String): js.Function1[/* t */ Double, String] = js.native
-  @JSImport("d3-interpolate-path", "interpolatePath")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def interpolatePath(a: String, b: String): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePath")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
+  @scala.inline
   def interpolatePath(
     a: String,
     b: String,
     excludeSegment: js.Function2[/* a */ PathCommandObject, /* b */ PathCommandObject, Boolean]
-  ): js.Function1[/* t */ Double, String] = js.native
+  ): js.Function1[/* t */ Double, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolatePath")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], excludeSegment.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* t */ Double, String]]
   
-  @js.native
   trait PathCommandObject extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object PathCommandObject {
     

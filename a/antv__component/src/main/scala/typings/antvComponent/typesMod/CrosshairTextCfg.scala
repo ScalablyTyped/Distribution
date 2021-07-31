@@ -3,23 +3,23 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CrosshairTextCfg extends CrosshairTextBaseCfg {
+trait CrosshairTextCfg
+  extends StObject
+     with CrosshairTextBaseCfg {
   
   /**
     * 是否自动旋转
     * @type {boolean}
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 文本的配置项
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object CrosshairTextCfg {
   

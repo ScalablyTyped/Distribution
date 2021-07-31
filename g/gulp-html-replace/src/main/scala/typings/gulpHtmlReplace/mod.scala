@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,12 +13,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : HtmlReplace = js.native
   
-  @js.native
   trait AdvancedTask extends StObject {
     
-    var src: String | js.Array[String] = js.native
+    var src: String | js.Array[String]
     
-    var tpl: String = js.native
+    var tpl: String
   }
   object AdvancedTask {
     
@@ -45,14 +43,13 @@ object mod extends Shortcut {
   
   type HtmlReplace = js.Function2[/* tasks */ Tasks, /* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
-    var keepBlockTags: js.UndefOr[Boolean] = js.native
+    var keepBlockTags: js.UndefOr[Boolean] = js.undefined
     
-    var keepUnassigned: js.UndefOr[Boolean] = js.native
+    var keepUnassigned: js.UndefOr[Boolean] = js.undefined
     
-    var resolvePaths: js.UndefOr[Boolean] = js.native
+    var resolvePaths: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

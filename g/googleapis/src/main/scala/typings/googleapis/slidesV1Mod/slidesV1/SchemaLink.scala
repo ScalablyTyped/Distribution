@@ -2,37 +2,35 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A hypertext link.
   */
-@js.native
 trait SchemaLink extends StObject {
   
   /**
     * If set, indicates this is a link to the specific page in this
     * presentation with this ID. A page with this ID may not exist.
     */
-  var pageObjectId: js.UndefOr[String] = js.native
+  var pageObjectId: js.UndefOr[String] = js.undefined
   
   /**
     * If set, indicates this is a link to a slide in this presentation,
     * addressed by its position.
     */
-  var relativeLink: js.UndefOr[String] = js.native
+  var relativeLink: js.UndefOr[String] = js.undefined
   
   /**
     * If set, indicates this is a link to the slide at this zero-based index in
     * the presentation. There may not be a slide at this index.
     */
-  var slideIndex: js.UndefOr[Double] = js.native
+  var slideIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * If set, indicates this is a link to the external web page at this URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaLink {
   

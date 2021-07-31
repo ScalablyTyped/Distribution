@@ -4,34 +4,33 @@ import typings.connect.mod.NextHandleFunction
 import typings.multiparty.mod.FormOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-form-data", "format")
+  @JSImport("express-form-data", JSImport.Namespace)
   @js.native
-  def format(): NextHandleFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("express-form-data", "parse")
-  @js.native
-  def parse(): NextHandleFunction = js.native
-  @JSImport("express-form-data", "parse")
-  @js.native
-  def parse(options: FormDataOptions): NextHandleFunction = js.native
+  @scala.inline
+  def format(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("format")().asInstanceOf[NextHandleFunction]
   
-  @JSImport("express-form-data", "stream")
-  @js.native
-  def stream(): NextHandleFunction = js.native
+  @scala.inline
+  def parse(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def parse(options: FormDataOptions): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
-  @JSImport("express-form-data", "union")
-  @js.native
-  def union(): NextHandleFunction = js.native
+  @scala.inline
+  def stream(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("stream")().asInstanceOf[NextHandleFunction]
   
-  @js.native
-  trait FormDataOptions extends FormOptions {
+  @scala.inline
+  def union(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("union")().asInstanceOf[NextHandleFunction]
+  
+  trait FormDataOptions
+    extends StObject
+       with FormOptions {
     
-    var autoClean: js.UndefOr[Boolean] = js.native
+    var autoClean: js.UndefOr[Boolean] = js.undefined
   }
   object FormDataOptions {
     

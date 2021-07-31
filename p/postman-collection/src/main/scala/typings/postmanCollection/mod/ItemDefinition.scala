@@ -2,17 +2,17 @@ package typings.postmanCollection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ItemDefinition extends PropertyDefinition {
+trait ItemDefinition
+  extends StObject
+     with PropertyDefinition {
   
-  var events: js.UndefOr[js.Array[EventDefinition]] = js.native
+  var events: js.UndefOr[js.Array[EventDefinition]] = js.undefined
   
-  var request: js.UndefOr[RequestDefinition] = js.native
+  var request: js.UndefOr[RequestDefinition] = js.undefined
   
-  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.native
+  var response: js.UndefOr[js.Array[ResponseDefinition]] = js.undefined
 }
 object ItemDefinition {
   

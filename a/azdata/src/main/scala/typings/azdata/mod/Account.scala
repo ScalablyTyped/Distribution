@@ -2,31 +2,29 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /**
     * Display information for the account
     */
-  var displayInfo: AccountDisplayInfo = js.native
+  var displayInfo: AccountDisplayInfo
   
   /**
     * Indicates if the account needs refreshing
     */
-  var isStale: Boolean = js.native
+  var isStale: Boolean
   
   /**
     * The key that identifies the account
     */
-  var key: AccountKey = js.native
+  var key: AccountKey
   
   /**
     * Custom properties stored with the account
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
 }
 object Account {
   

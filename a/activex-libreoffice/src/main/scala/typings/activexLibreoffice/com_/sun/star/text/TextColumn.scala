@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** defines a single text column. */
-@js.native
 trait TextColumn extends StObject {
   
   /**
@@ -14,21 +12,21 @@ trait TextColumn extends StObject {
     *
     * This is a metric value.
     */
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   /**
     * contains the right margin of the column.
     *
     * This is a metric value.
     */
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
   /**
     * contains the relative width of the column, including both margins.
     *
     * Width isn't a metric value, it's a relative value to the sum of the width of all columns.
     */
-  var Width: Double = js.native
+  var Width: Double
 }
 object TextColumn {
   

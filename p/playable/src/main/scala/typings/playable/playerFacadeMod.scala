@@ -6,48 +6,28 @@ import typings.playable.createContainerMod.Container
 import typings.playable.themeTypesMod.IThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object playerFacadeMod {
   
   @JSImport("playable/dist/src/core/player-facade", JSImport.Default)
   @js.native
-  class default protected () extends Player {
+  class default protected ()
+    extends StObject
+       with Player {
     def this(params: IPlayerConfig, scope: Container) = this()
     def this(params: IPlayerConfig, scope: Container, defaultModulesNames: js.Array[String]) = this()
     def this(
       params: IPlayerConfig,
       scope: Container,
-      defaultModulesNames: js.UndefOr[scala.Nothing],
-      additionalModuleNames: js.Array[String]
-    ) = this()
-    def this(
-      params: IPlayerConfig,
-      scope: Container,
       defaultModulesNames: js.Array[String],
       additionalModuleNames: js.Array[String]
     ) = this()
     def this(
       params: IPlayerConfig,
       scope: Container,
-      defaultModulesNames: js.UndefOr[scala.Nothing],
-      additionalModuleNames: js.UndefOr[scala.Nothing],
-      themeConfig: IThemeConfig
-    ) = this()
-    def this(
-      params: IPlayerConfig,
-      scope: Container,
-      defaultModulesNames: js.UndefOr[scala.Nothing],
-      additionalModuleNames: js.Array[String],
-      themeConfig: IThemeConfig
-    ) = this()
-    def this(
-      params: IPlayerConfig,
-      scope: Container,
-      defaultModulesNames: js.Array[String],
-      additionalModuleNames: js.UndefOr[scala.Nothing],
-      themeConfig: IThemeConfig
+      defaultModulesNames: Unit,
+      additionalModuleNames: js.Array[String]
     ) = this()
     def this(
       params: IPlayerConfig,
@@ -56,34 +36,90 @@ object playerFacadeMod {
       additionalModuleNames: js.Array[String],
       themeConfig: IThemeConfig
     ) = this()
-  }
-  
-  @js.native
-  trait Player extends StObject {
+    def this(
+      params: IPlayerConfig,
+      scope: Container,
+      defaultModulesNames: js.Array[String],
+      additionalModuleNames: Unit,
+      themeConfig: IThemeConfig
+    ) = this()
+    def this(
+      params: IPlayerConfig,
+      scope: Container,
+      defaultModulesNames: Unit,
+      additionalModuleNames: js.Array[String],
+      themeConfig: IThemeConfig
+    ) = this()
+    def this(
+      params: IPlayerConfig,
+      scope: Container,
+      defaultModulesNames: Unit,
+      additionalModuleNames: Unit,
+      themeConfig: IThemeConfig
+    ) = this()
     
+    /* CompleteClass */
     var _addPlayerAPIFromModule: js.Any = js.native
     
+    /* CompleteClass */
     var _additionalModules: StringDictionary[js.Any] = js.native
     
+    /* CompleteClass */
     var _clearPlayerAPIForModule: js.Any = js.native
     
+    /* CompleteClass */
     var _config: IPlayerConfig = js.native
     
+    /* CompleteClass */
     var _defaultModules: StringDictionary[js.Any] = js.native
     
+    /* CompleteClass */
     var _destroyed: js.Any = js.native
     
+    /* CompleteClass */
     var _getPlayerAPIMethodDescriptor: js.Any = js.native
     
+    /* CompleteClass */
     var _getWrappedCallToModuleFunction: js.Any = js.native
     
+    /* CompleteClass */
     var _resolveAdditionalModules: js.Any = js.native
     
+    /* CompleteClass */
     var _resolveDefaultModules: js.Any = js.native
     
+    /* CompleteClass */
     var _scope: Container = js.native
     
-    def destroy(): Unit = js.native
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+  }
+  
+  trait Player extends StObject {
+    
+    var _addPlayerAPIFromModule: js.Any
+    
+    var _additionalModules: StringDictionary[js.Any]
+    
+    var _clearPlayerAPIForModule: js.Any
+    
+    var _config: IPlayerConfig
+    
+    var _defaultModules: StringDictionary[js.Any]
+    
+    var _destroyed: js.Any
+    
+    var _getPlayerAPIMethodDescriptor: js.Any
+    
+    var _getWrappedCallToModuleFunction: js.Any
+    
+    var _resolveAdditionalModules: js.Any
+    
+    var _resolveDefaultModules: js.Any
+    
+    var _scope: Container
+    
+    def destroy(): Unit
   }
   object Player {
     

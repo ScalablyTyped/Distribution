@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminAuditData extends StObject {
   
   /** The permission_delta when when creating or updating a Role. */
-  var permissionDelta: js.UndefOr[PermissionDelta] = js.native
+  var permissionDelta: js.UndefOr[PermissionDelta] = js.undefined
 }
 object AdminAuditData {
   

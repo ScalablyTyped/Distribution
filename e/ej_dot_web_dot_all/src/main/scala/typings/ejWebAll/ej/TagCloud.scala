@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TagCloud extends Widget_ {
+trait TagCloud
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -40,28 +41,27 @@ trait TagCloud extends Widget_ {
 }
 object TagCloud {
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** return current URL link
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TagCloud model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** return current tag name
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -106,20 +106,19 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TagCloud model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -152,20 +151,19 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TagCloud model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -198,24 +196,23 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
     /** Defines the frequency column number to categorize the font size.
       */
-    var frequency: js.UndefOr[String] = js.native
+    var frequency: js.UndefOr[String] = js.undefined
     
     /** Defines the HTML attributes column for the anchor elements inside the each tag items.
       */
-    var htmlAttributes: js.UndefOr[String] = js.native
+    var htmlAttributes: js.UndefOr[String] = js.undefined
     
     /** Defines the tag value or display text.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Defines the URL link to navigate while click the tag.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Fields {
     
@@ -254,87 +251,86 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Event triggers when the TagCloud items are clicked
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the TagCloud are created
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to button to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** The dataSource contains the list of data to display in a cloud format. Each data contains a link URL, frequency to categorize the font size and a display text.
       * @Default {null}
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Event triggers when the TagCloud are destroyed
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Sets the TagCloud and tag items direction as right to left alignment.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Defines the mapping fields for the data items of the TagCloud.
       * @Default {null}
       */
-    var fields: js.UndefOr[Fields] = js.native
+    var fields: js.UndefOr[Fields] = js.undefined
     
     /** Defines the format for the TagCloud to display the tag items.See Format
       * @Default {ej.Format.Cloud}
       */
-    var format: js.UndefOr[String | Format] = js.native
+    var format: js.UndefOr[String | Format] = js.undefined
     
     /** Specifies the list of HTML attributes to be added to TagCloud control.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the maximum font size value for the tag items. The font size for the tag items will be generated in between the minimum and maximum font size values.
       * @Default {40px}
       */
-    var maxFontSize: js.UndefOr[String | Double] = js.native
+    var maxFontSize: js.UndefOr[String | Double] = js.undefined
     
     /** Sets the minimum font size value for the tag items. The font size for the tag items will be generated in between the minimum and maximum font size values.
       * @Default {10px}
       */
-    var minFontSize: js.UndefOr[String | Double] = js.native
+    var minFontSize: js.UndefOr[String | Double] = js.undefined
     
     /** Event triggers when the cursor leaves out from a tag item
       */
-    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.native
+    var mouseout: js.UndefOr[js.Function1[/* e */ MouseoutEventArgs, Unit]] = js.undefined
     
     /** Event triggers when the cursor hovers on a tag item
       */
-    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.native
+    var mouseover: js.UndefOr[js.Function1[/* e */ MouseoverEventArgs, Unit]] = js.undefined
     
     /** Define the query to retrieve the data from online server. The query is used only when the online dataSource is used.
       * @Default {null}
       */
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
     /** Shows or hides the TagCloud title. When this set to false, it hides the TagCloud header.
       * @Default {true}
       */
-    var showTitle: js.UndefOr[Boolean] = js.native
+    var showTitle: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the title image for the TagCloud. To show the title image, the showTitle property should be enabled.
       * @Default {null}
       */
-    var titleImage: js.UndefOr[String] = js.native
+    var titleImage: js.UndefOr[String] = js.undefined
     
     /** Sets the title text for the TagCloud. To show the title text, the showTitle property should be enabled.
       * @Default {Title}
       */
-    var titleText: js.UndefOr[String] = js.native
+    var titleText: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -451,28 +447,27 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait MouseoutEventArgs extends StObject {
     
     /** return current URL link
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TagCloud model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** return current tag name
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseoutEventArgs {
     
@@ -517,28 +512,27 @@ object TagCloud {
     }
   }
   
-  @js.native
   trait MouseoverEventArgs extends StObject {
     
     /** return current URL link
       */
-    var URL: js.UndefOr[String] = js.native
+    var URL: js.UndefOr[String] = js.undefined
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the TagCloud model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** return current tag name
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MouseoverEventArgs {
     

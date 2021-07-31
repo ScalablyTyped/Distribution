@@ -13,7 +13,6 @@ import typings.ts3NodejsLibrary.responseTypesMod.ChannelGroupEntry
 import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelGroupMod {
@@ -54,7 +53,7 @@ object channelGroupMod {
       * Adds a specified permissions to the channel group.
       * A permission can be specified by permid or permsid.
       */
-    def createPerm(): Permission[_] = js.native
+    def createPerm(): Permission[js.Any] = js.native
     
     /**
       * Deletes the channel group. If force is set to 1, the channel group will be deleted even if there are clients within.
@@ -121,18 +120,19 @@ object channelGroupMod {
   /* static members */
   object TeamSpeakChannelGroup {
     
+    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /** retrieves the client id from a string or teamspeak client */
-    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getId")
-    @js.native
-    def getId[T /* <: GroupType */](): js.UndefOr[String] = js.native
-    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getId")
-    @js.native
-    def getId[T /* <: GroupType */](channel: T): js.UndefOr[String] = js.native
+    @scala.inline
+    def getId[T /* <: GroupType */](): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")().asInstanceOf[js.UndefOr[String]]
+    @scala.inline
+    def getId[T /* <: GroupType */](channel: T): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getId")(channel.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
     
     /** retrieves the clients from an array */
-    @JSImport("ts3-nodejs-library/lib/node/ChannelGroup", "TeamSpeakChannelGroup.getMultipleIds")
-    @js.native
-    def getMultipleIds(client: MultiGroupType): js.Array[String] = js.native
+    @scala.inline
+    def getMultipleIds(client: MultiGroupType): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMultipleIds")(client.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     type GroupType = String | TeamSpeakChannelGroup
     

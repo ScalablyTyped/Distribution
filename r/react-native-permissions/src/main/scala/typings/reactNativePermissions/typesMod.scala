@@ -6,7 +6,6 @@ import typings.reactNativePermissions.permissionsWindowsMod.WindowsPermissionMap
 import typings.reactNativePermissions.resultsMod.ResultMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -29,10 +28,9 @@ object typesMod {
     def reduced: typings.reactNativePermissions.reactNativePermissionsStrings.reduced = "reduced".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.reduced]
   }
   
-  @js.native
   trait LocationAccuracyOptions extends StObject {
     
-    var purposeKey: String = js.native
+    var purposeKey: String
   }
   object LocationAccuracyOptions {
     
@@ -80,24 +78,23 @@ object typesMod {
     def sound: typings.reactNativePermissions.reactNativePermissionsStrings.sound = "sound".asInstanceOf[typings.reactNativePermissions.reactNativePermissionsStrings.sound]
   }
   
-  @js.native
   trait NotificationSettings extends StObject {
     
-    var alert: js.UndefOr[Boolean] = js.native
+    var alert: js.UndefOr[Boolean] = js.undefined
     
-    var badge: js.UndefOr[Boolean] = js.native
+    var badge: js.UndefOr[Boolean] = js.undefined
     
-    var carPlay: js.UndefOr[Boolean] = js.native
+    var carPlay: js.UndefOr[Boolean] = js.undefined
     
-    var criticalAlert: js.UndefOr[Boolean] = js.native
+    var criticalAlert: js.UndefOr[Boolean] = js.undefined
     
-    var lockScreen: js.UndefOr[Boolean] = js.native
+    var lockScreen: js.UndefOr[Boolean] = js.undefined
     
-    var notificationCenter: js.UndefOr[Boolean] = js.native
+    var notificationCenter: js.UndefOr[Boolean] = js.undefined
     
-    var provisional: js.UndefOr[Boolean] = js.native
+    var provisional: js.UndefOr[Boolean] = js.undefined
     
-    var sound: js.UndefOr[Boolean] = js.native
+    var sound: js.UndefOr[Boolean] = js.undefined
   }
   object NotificationSettings {
     
@@ -160,12 +157,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NotificationsResponse extends StObject {
     
-    var settings: NotificationSettings = js.native
+    var settings: NotificationSettings
     
-    var status: PermissionStatus = js.native
+    var status: PermissionStatus
   }
   object NotificationsResponse {
     

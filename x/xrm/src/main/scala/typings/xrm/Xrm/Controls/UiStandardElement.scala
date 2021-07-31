@@ -2,22 +2,21 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base interface for standard UI elements.
   */
-@js.native
 trait UiStandardElement
-  extends UiCanGetVisibleElement
+  extends StObject
+     with UiCanGetVisibleElement
      with UiLabelElement {
   
   /**
     * Sets the visibility state.
     * @param visible true to show, false to hide.
     */
-  def setVisible(visible: Boolean): Unit = js.native
+  def setVisible(visible: Boolean): Unit
 }
 object UiStandardElement {
   

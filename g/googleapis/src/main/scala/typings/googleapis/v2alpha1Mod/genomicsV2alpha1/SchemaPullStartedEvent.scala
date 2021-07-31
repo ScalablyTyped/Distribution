@@ -2,19 +2,17 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated when the worker starts pulling an image.
   */
-@js.native
 trait SchemaPullStartedEvent extends StObject {
   
   /**
     * The URI of the image that was pulled.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object SchemaPullStartedEvent {
   

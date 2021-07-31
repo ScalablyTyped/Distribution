@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.PopOver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofPopOver extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): PopOver = js.native
+  def extend(proto: js.Object): PopOver
   
   /* static member */
-  var fn: PopOver = js.native
+  var fn: PopOver
 }
 object TypeofPopOver {
   

@@ -2,15 +2,13 @@ package typings.blazy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Breakpoint extends StObject {
   
-  var src: String = js.native
+  var src: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object Breakpoint {
   

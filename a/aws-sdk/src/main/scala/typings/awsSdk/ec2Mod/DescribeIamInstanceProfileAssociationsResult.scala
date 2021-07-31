@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIamInstanceProfileAssociationsResult extends StObject {
   
   /**
     * Information about the IAM instance profile associations.
     */
-  var IamInstanceProfileAssociations: js.UndefOr[IamInstanceProfileAssociationSet] = js.native
+  var IamInstanceProfileAssociations: js.UndefOr[IamInstanceProfileAssociationSet] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ec2Mod.NextToken] = js.undefined
 }
 object DescribeIamInstanceProfileAssociationsResult {
   

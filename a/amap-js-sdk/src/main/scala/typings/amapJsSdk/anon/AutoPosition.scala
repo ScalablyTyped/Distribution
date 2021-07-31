@@ -4,31 +4,29 @@ import typings.amapJsSdk.AMap.Marker
 import typings.amapJsSdk.AMap.Pixel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoPosition extends StObject {
   
-  var autoPosition: js.UndefOr[Boolean] = js.native
+  var autoPosition: js.UndefOr[Boolean] = js.undefined
   
-  var direction: js.UndefOr[Boolean] = js.native
+  var direction: js.UndefOr[Boolean] = js.undefined
   
-  var liteStyle: js.UndefOr[Boolean] = js.native
+  var liteStyle: js.UndefOr[Boolean] = js.undefined
   
-  var locate: js.UndefOr[Boolean] = js.native
+  var locate: js.UndefOr[Boolean] = js.undefined
   
-  var locationMarker: js.UndefOr[Marker] = js.native
+  var locationMarker: js.UndefOr[Marker] = js.undefined
   
-  var noIpLocate: js.UndefOr[Boolean] = js.native
+  var noIpLocate: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Pixel] = js.native
+  var offset: js.UndefOr[Pixel] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var ruler: js.UndefOr[Boolean] = js.native
+  var ruler: js.UndefOr[Boolean] = js.undefined
   
-  var useNative: js.UndefOr[Boolean] = js.native
+  var useNative: js.UndefOr[Boolean] = js.undefined
 }
 object AutoPosition {
   

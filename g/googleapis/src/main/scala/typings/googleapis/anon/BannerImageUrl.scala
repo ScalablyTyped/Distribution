@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BannerImageUrl extends StObject {
   
-  var bannerImageUrl: js.UndefOr[String] = js.native
+  var bannerImageUrl: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var seriesId: js.UndefOr[String] = js.native
+  var seriesId: js.UndefOr[String] = js.undefined
   
-  var seriesType: js.UndefOr[String] = js.native
+  var seriesType: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object BannerImageUrl {
   

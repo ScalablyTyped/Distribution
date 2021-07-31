@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trailMod {
@@ -124,6 +123,10 @@ object trailMod {
   /* static members */
   object Trail {
     
+    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Trail resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -133,115 +136,109 @@ object trailMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrailState): Trail = js.native
-    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): Trail = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrailState): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Trail]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrailState, opts: CustomResourceOptions): Trail = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Trail]
     
     /**
       * Returns true if the given object is an instance of Trail.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudtrail/trail", "Trail.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudtrail/trail.Trail */ Boolean]
   }
   
-  @js.native
   trait TrailArgs extends StObject {
     
     /**
       * Specifies a log group name using an Amazon Resource Name (ARN),
       * that represents the log group to which CloudTrail logs will be delivered. Note that CloudTrail requires the Log Stream wildcard.
       */
-    val cloudWatchLogsGroupArn: js.UndefOr[Input[String]] = js.native
+    val cloudWatchLogsGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the role for the CloudWatch Logs
       * endpoint to assume to write to a user’s log group.
       */
-    val cloudWatchLogsRoleArn: js.UndefOr[Input[String]] = js.native
+    val cloudWatchLogsRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether log file integrity validation is enabled.
       * Defaults to `false`.
       */
-    val enableLogFileValidation: js.UndefOr[Input[Boolean]] = js.native
+    val enableLogFileValidation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enables logging for the trail. Defaults to `true`.
       * Setting this to `false` will pause logging.
       */
-    val enableLogging: js.UndefOr[Input[Boolean]] = js.native
+    val enableLogging: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
       */
-    val eventSelectors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]] = js.native
+    val eventSelectors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]] = js.undefined
     
     /**
       * Specifies whether the trail is publishing events
       * from global services such as IAM to the log files. Defaults to `true`.
       */
-    val includeGlobalServiceEvents: js.UndefOr[Input[Boolean]] = js.native
+    val includeGlobalServiceEvents: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an insight selector for identifying unusual operational activity. Fields documented below.
       */
     val insightSelectors: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies whether the trail is created in the current
       * region or in all regions. Defaults to `false`.
       */
-    val isMultiRegionTrail: js.UndefOr[Input[Boolean]] = js.native
+    val isMultiRegionTrail: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
       */
-    val isOrganizationTrail: js.UndefOr[Input[Boolean]] = js.native
+    val isOrganizationTrail: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the trail.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the S3 bucket designated for publishing log files.
       */
-    val s3BucketName: Input[String] = js.native
+    val s3BucketName: Input[String]
     
     /**
       * Specifies the S3 key prefix that follows
       * the name of the bucket you have designated for log file delivery.
       */
-    val s3KeyPrefix: js.UndefOr[Input[String]] = js.native
+    val s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the Amazon SNS topic
       * defined for notification of log file delivery.
       */
-    val snsTopicName: js.UndefOr[Input[String]] = js.native
+    val snsTopicName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the trail
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TrailArgs {
     
@@ -349,103 +346,102 @@ object trailMod {
     }
   }
   
-  @js.native
   trait TrailState extends StObject {
     
     /**
       * The Amazon Resource Name of the trail.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies a log group name using an Amazon Resource Name (ARN),
       * that represents the log group to which CloudTrail logs will be delivered. Note that CloudTrail requires the Log Stream wildcard.
       */
-    val cloudWatchLogsGroupArn: js.UndefOr[Input[String]] = js.native
+    val cloudWatchLogsGroupArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the role for the CloudWatch Logs
       * endpoint to assume to write to a user’s log group.
       */
-    val cloudWatchLogsRoleArn: js.UndefOr[Input[String]] = js.native
+    val cloudWatchLogsRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether log file integrity validation is enabled.
       * Defaults to `false`.
       */
-    val enableLogFileValidation: js.UndefOr[Input[Boolean]] = js.native
+    val enableLogFileValidation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Enables logging for the trail. Defaults to `true`.
       * Setting this to `false` will pause logging.
       */
-    val enableLogging: js.UndefOr[Input[Boolean]] = js.native
+    val enableLogging: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an event selector for enabling data event logging. Fields documented below. Please note the [CloudTrail limits](https://docs.aws.amazon.com/awscloudtrail/latest/userguide/WhatIsCloudTrail-Limits.html) when configuring these.
       */
-    val eventSelectors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]] = js.native
+    val eventSelectors: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailEventSelector]]]] = js.undefined
     
     /**
       * The region in which the trail was created.
       */
-    val homeRegion: js.UndefOr[Input[String]] = js.native
+    val homeRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies whether the trail is publishing events
       * from global services such as IAM to the log files. Defaults to `true`.
       */
-    val includeGlobalServiceEvents: js.UndefOr[Input[Boolean]] = js.native
+    val includeGlobalServiceEvents: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies an insight selector for identifying unusual operational activity. Fields documented below.
       */
     val insightSelectors: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudtrail.TrailInsightSelector]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies whether the trail is created in the current
       * region or in all regions. Defaults to `false`.
       */
-    val isMultiRegionTrail: js.UndefOr[Input[Boolean]] = js.native
+    val isMultiRegionTrail: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies whether the trail is an AWS Organizations trail. Organization trails log events for the master account and all member accounts. Can only be created in the organization master account. Defaults to `false`.
       */
-    val isOrganizationTrail: js.UndefOr[Input[Boolean]] = js.native
+    val isOrganizationTrail: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the KMS key ARN to use to encrypt the logs delivered by CloudTrail.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the trail.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the S3 bucket designated for publishing log files.
       */
-    val s3BucketName: js.UndefOr[Input[String]] = js.native
+    val s3BucketName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the S3 key prefix that follows
       * the name of the bucket you have designated for log file delivery.
       */
-    val s3KeyPrefix: js.UndefOr[Input[String]] = js.native
+    val s3KeyPrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the name of the Amazon SNS topic
       * defined for notification of log file delivery.
       */
-    val snsTopicName: js.UndefOr[Input[String]] = js.native
+    val snsTopicName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the trail
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TrailState {
     

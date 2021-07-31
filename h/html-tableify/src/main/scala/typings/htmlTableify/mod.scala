@@ -3,17 +3,18 @@ package typings.htmlTableify
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]]): String = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]], config: Config[T]): String = (^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("html-tableify", JSImport.Namespace)
   @js.native
-  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]]): String = js.native
-  @JSImport("html-tableify", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: /* keyof any */ String */](data: js.Array[Datum[T]], config: Config[T]): String = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.htmlTableify.htmlTableifyStrings.center
@@ -34,13 +35,12 @@ object mod {
   }
   
   /** Table config object for data with keys `T`. */
-  @js.native
   trait Config[T] extends StObject {
     
-    var headers: js.UndefOr[js.Array[Header[T]]] = js.native
+    var headers: js.UndefOr[js.Array[Header[T]]] = js.undefined
     
     /** Tidy the output HTML. */
-    var tidy: js.UndefOr[Boolean] = js.native
+    var tidy: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -51,7 +51,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], T] (val x: Self with Config[T]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], T] (val x: Self & Config[T]) extends AnyVal {
       
       @scala.inline
       def setHeaders(value: js.Array[Header[T]]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
@@ -73,20 +73,19 @@ object mod {
   /** Object of optional values for each key `T`. */
   type Datum[T /* <: /* keyof any */ String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in T ]:? unknown}
-    */ typings.htmlTableify.htmlTableifyStrings.Datum with TopLevel[js.Any]
+    */ typings.htmlTableify.htmlTableifyStrings.Datum & TopLevel[js.Any]
   
   /** Header config object for key `T`. */
-  @js.native
   trait Header[T] extends StObject {
     
     /** Text align of the column. */
-    var align: js.UndefOr[Alignment] = js.native
+    var align: js.UndefOr[Alignment] = js.undefined
     
     /** Key in data object. */
-    var name: T = js.native
+    var name: T
     
     /** Title of the column. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Header {
     
@@ -97,7 +96,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HeaderMutableBuilder[Self <: Header[_], T] (val x: Self with Header[T]) extends AnyVal {
+    implicit class HeaderMutableBuilder[Self <: Header[?], T] (val x: Self & Header[T]) extends AnyVal {
       
       @scala.inline
       def setAlign(value: Alignment): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])

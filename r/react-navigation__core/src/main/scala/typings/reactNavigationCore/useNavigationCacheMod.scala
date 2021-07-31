@@ -12,31 +12,32 @@ import typings.reactNavigationRouters.typesMod.Router
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useNavigationCacheMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useNavigationCache", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useNavigationCache", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State]): NavigationCache[State, ScreenOptions] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */](hasStateGetStateNavigationSetOptionsRouterEmitter: Options[State]): NavigationCache[State, ScreenOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasStateGetStateNavigationSetOptionsRouterEmitter.asInstanceOf[js.Any]).asInstanceOf[NavigationCache[State, ScreenOptions]]
   
   type NavigationCache[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */] = StringDictionary[NavigationProp[ParamListBase, String, State, ScreenOptions, js.Object]]
   
-  @js.native
   trait Options[State /* <: NavigationState[ParamListBase] */] extends StObject {
     
-    var emitter: NavigationEventEmitter[EventMapBase] = js.native
+    var emitter: NavigationEventEmitter[EventMapBase]
     
-    def getState(): State = js.native
+    def getState(): State
     
-    var navigation: NavigationHelpersParamLis = js.native
+    var navigation: NavigationHelpersParamLis
     
-    var router: Router[State, NavigationAction] = js.native
+    var router: Router[State, NavigationAction]
     
-    def setOptions(cb: js.Function1[/* options */ Record[String, js.Object], Record[String, js.Object]]): Unit = js.native
+    def setOptions(cb: js.Function1[/* options */ Record[String, js.Object], Record[String, js.Object]]): Unit
     
-    var state: State = js.native
+    var state: State
   }
   object Options {
     
@@ -54,7 +55,7 @@ object useNavigationCacheMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Options[State]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Options[State]) extends AnyVal {
       
       @scala.inline
       def setEmitter(value: NavigationEventEmitter[EventMapBase]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])

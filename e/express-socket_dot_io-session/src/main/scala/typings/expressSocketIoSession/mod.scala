@@ -7,40 +7,38 @@ import typings.expressSocketIoSession.anon.SessionPartialSessionData
 import typings.socketIo.mod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-socket.io-session", JSImport.Namespace)
-  @js.native
-  def apply(expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query]): SocketIoSharedSessionMiddleware = js.native
-  @JSImport("express-socket.io-session", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]): SocketIoSharedSessionMiddleware = ^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any]).asInstanceOf[SocketIoSharedSessionMiddleware]
+  @scala.inline
   def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query],
-    cookieParserMiddleware: RequestHandler[ParamsDictionary, _, _, Query]
-  ): SocketIoSharedSessionMiddleware = js.native
-  @JSImport("express-socket.io-session", JSImport.Namespace)
-  @js.native
+    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    cookieParserMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
+  ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], cookieParserMiddleware.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
+  @scala.inline
   def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query],
-    cookieParserMiddleware: RequestHandler[ParamsDictionary, _, _, Query],
+    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
+    cookieParserMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
     options: SharedSessionOptions
-  ): SocketIoSharedSessionMiddleware = js.native
-  @JSImport("express-socket.io-session", JSImport.Namespace)
-  @js.native
+  ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], cookieParserMiddleware.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
+  @scala.inline
   def apply(
-    expressSessionMiddleware: RequestHandler[ParamsDictionary, _, _, Query],
+    expressSessionMiddleware: RequestHandler[ParamsDictionary, js.Any, js.Any, Query],
     options: SharedSessionOptions
-  ): SocketIoSharedSessionMiddleware = js.native
+  ): SocketIoSharedSessionMiddleware = (^.asInstanceOf[js.Dynamic].apply(expressSessionMiddleware.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[SocketIoSharedSessionMiddleware]
   
+  @JSImport("express-socket.io-session", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SharedSessionOptions extends StObject {
     
-    var autoSave: js.UndefOr[Boolean] = js.native
+    var autoSave: js.UndefOr[Boolean] = js.undefined
     
-    var saveUninitialized: js.UndefOr[Boolean] = js.native
+    var saveUninitialized: js.UndefOr[Boolean] = js.undefined
   }
   object SharedSessionOptions {
     
@@ -76,12 +74,11 @@ object mod {
   /* augmented module */
   object socketIoAugmentingMod {
     
-    @js.native
     trait Handshake extends StObject {
       
-      var session: js.UndefOr[SessionPartialSessionData] = js.native
+      var session: js.UndefOr[SessionPartialSessionData] = js.undefined
       
-      var sessionID: js.UndefOr[String] = js.native
+      var sessionID: js.UndefOr[String] = js.undefined
     }
     object Handshake {
       

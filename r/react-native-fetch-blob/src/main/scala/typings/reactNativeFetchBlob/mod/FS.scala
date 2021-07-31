@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNativeFetchBlob.anon.Free
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -52,8 +51,8 @@ trait FS extends StObject {
     * @param  path Path of the file.
     * @param  encoding Encoding of read stream.
     */
-  def readFile(path: String, encoding: Encoding): js.Promise[_] = js.native
-  def readFile(path: String, encoding: Encoding, bufferSize: Double): js.Promise[_] = js.native
+  def readFile(path: String, encoding: Encoding): js.Promise[js.Any] = js.native
+  def readFile(path: String, encoding: Encoding, bufferSize: Double): js.Promise[js.Any] = js.native
   
   /**
     * Create file stream from file at `path`.
@@ -63,9 +62,9 @@ trait FS extends StObject {
     * @return RNFetchBlobStream stream instance.
     */
   def readStream(path: String, encoding: Encoding): js.Promise[RNFetchBlobReadStream] = js.native
-  def readStream(path: String, encoding: Encoding, bufferSize: js.UndefOr[scala.Nothing], tick: Double): js.Promise[RNFetchBlobReadStream] = js.native
   def readStream(path: String, encoding: Encoding, bufferSize: Double): js.Promise[RNFetchBlobReadStream] = js.native
   def readStream(path: String, encoding: Encoding, bufferSize: Double, tick: Double): js.Promise[RNFetchBlobReadStream] = js.native
+  def readStream(path: String, encoding: Encoding, bufferSize: Unit, tick: Double): js.Promise[RNFetchBlobReadStream] = js.native
   
   /**
     * Android only method, request media scanner to scan the file.

@@ -8,7 +8,6 @@ import typings.jquerySortable.jquerySortableStrings.refresh
 import typings.jquerySortable.jquerySortableStrings.serialize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

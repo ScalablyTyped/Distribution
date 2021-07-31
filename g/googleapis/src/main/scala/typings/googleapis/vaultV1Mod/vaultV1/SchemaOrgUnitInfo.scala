@@ -2,13 +2,11 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Org Unit to search
   */
-@js.native
 trait SchemaOrgUnitInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaOrgUnitInfo extends StObject {
     * href=&quot;https://developers.google.com/admin-sdk/directory/&quot;&gt;Admin
     * SDK Directory API&lt;/a&gt;.
     */
-  var orgUnitId: js.UndefOr[String] = js.native
+  var orgUnitId: js.UndefOr[String] = js.undefined
 }
 object SchemaOrgUnitInfo {
   

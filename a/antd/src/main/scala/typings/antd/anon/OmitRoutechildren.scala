@@ -2,16 +2,14 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined antd.antd/lib/_util/type.Omit<antd.antd/lib/breadcrumb/Breadcrumb.Route, 'children'> */
-@js.native
 trait OmitRoutechildren extends StObject {
   
-  var breadcrumbName: String = js.native
+  var breadcrumbName: String
   
-  var path: String = js.native
+  var path: String
 }
 object OmitRoutechildren {
   

@@ -3,13 +3,11 @@ package typings.asn1js.mod
 import typings.asn1js.anon.IsIndefiniteForm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalLengthBlockParams extends StObject {
   
-  var lenBlock: js.UndefOr[IsIndefiniteForm] = js.native
+  var lenBlock: js.UndefOr[IsIndefiniteForm] = js.undefined
 }
 object LocalLengthBlockParams {
   

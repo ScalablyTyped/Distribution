@@ -3,30 +3,29 @@ package typings.focusLock
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabOrderMod {
   
-  @JSImport("focus-lock/dist/es5/utils/tabOrder", "orderByTabIndex")
+  @JSImport("focus-lock/dist/es5/utils/tabOrder", JSImport.Namespace)
   @js.native
-  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean): js.Array[NodeIndex] = js.native
-  @JSImport("focus-lock/dist/es5/utils/tabOrder", "orderByTabIndex")
-  @js.native
-  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean, keepGuards: Boolean): js.Array[NodeIndex] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("focus-lock/dist/es5/utils/tabOrder", "tabSort")
-  @js.native
-  def tabSort(a: NodeIndex, b: NodeIndex): Double = js.native
+  @scala.inline
+  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
+  @scala.inline
+  def orderByTabIndex(nodes: js.Array[HTMLInputElement], filterNegative: Boolean, keepGuards: Boolean): js.Array[NodeIndex] = (^.asInstanceOf[js.Dynamic].applyDynamic("orderByTabIndex")(nodes.asInstanceOf[js.Any], filterNegative.asInstanceOf[js.Any], keepGuards.asInstanceOf[js.Any])).asInstanceOf[js.Array[NodeIndex]]
   
-  @js.native
+  @scala.inline
+  def tabSort(a: NodeIndex, b: NodeIndex): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("tabSort")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait NodeIndex extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var node: HTMLInputElement = js.native
+    var node: HTMLInputElement
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
   }
   object NodeIndex {
     

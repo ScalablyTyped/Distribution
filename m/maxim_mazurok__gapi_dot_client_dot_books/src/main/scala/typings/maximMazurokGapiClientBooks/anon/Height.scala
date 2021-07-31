@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   /** Height or length of this volume (in cm). */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /** Thickness of this volume (in cm). */
-  var thickness: js.UndefOr[String] = js.native
+  var thickness: js.UndefOr[String] = js.undefined
   
   /** Width of this volume (in cm). */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object Height {
   

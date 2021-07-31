@@ -2,23 +2,21 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmOptions extends StObject {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var initOpen: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var initOpen: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var messages: js.UndefOr[ConfirmMessages] = js.native
+  var messages: js.UndefOr[ConfirmMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.native
+  var open: js.UndefOr[js.Function1[/* e */ DialogEvent, Unit]] = js.undefined
   
-  var title: js.UndefOr[String | Boolean] = js.native
+  var title: js.UndefOr[String | Boolean] = js.undefined
 }
 object ConfirmOptions {
   

@@ -2,7 +2,6 @@ package typings.k6.htmlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("k6/html", "FieldSetElement")
@@ -19,5 +18,5 @@ abstract class FieldSetElement () extends Element {
   def `type`(): String = js.native
   
   /** Validity states. Unimplemented. Always `undefined`. */
-  def validity(): js.UndefOr[scala.Nothing] = js.native
+  def validity(): Unit = js.native
 }

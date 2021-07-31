@@ -11,7 +11,7 @@ A light-weight jQuery "dirty forms" Plugin - it monitors HTML forms and alerts u
 | Keywords           | dirty, form, onbeforeunload, save, check |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 267095 |
+| # downloads        | 414111 |
 | # stars            | 0 |
 
 ## Links

@@ -3,47 +3,45 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCaseResultUpdateModel extends StObject {
   
-  var associatedWorkItems: js.Array[Double] = js.native
+  var associatedWorkItems: js.Array[Double]
   
-  var automatedTestTypeId: String = js.native
+  var automatedTestTypeId: String
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: String = js.native
+  var completedDate: String
   
-  var computerName: String = js.native
+  var computerName: String
   
-  var customFields: js.Array[CustomTestField] = js.native
+  var customFields: js.Array[CustomTestField]
   
-  var durationInMs: String = js.native
+  var durationInMs: String
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var failureType: String = js.native
+  var failureType: String
   
-  var outcome: String = js.native
+  var outcome: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var resolutionState: String = js.native
+  var resolutionState: String
   
-  var runBy: IdentityRef = js.native
+  var runBy: IdentityRef
   
-  var stackTrace: String = js.native
+  var stackTrace: String
   
-  var startedDate: String = js.native
+  var startedDate: String
   
-  var state: String = js.native
+  var state: String
   
-  var testCasePriority: String = js.native
+  var testCasePriority: String
   
-  var testResult: ShallowReference = js.native
+  var testResult: ShallowReference
 }
 object TestCaseResultUpdateModel {
   

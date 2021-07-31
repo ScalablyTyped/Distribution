@@ -2,26 +2,24 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerGroup extends StObject {
   
   /**
     * The name of a server group.
     */
-  var name: js.UndefOr[ServerGroupName] = js.native
+  var name: js.UndefOr[ServerGroupName] = js.undefined
   
   /**
     * The ID of a server group.
     */
-  var serverGroupId: js.UndefOr[ServerGroupId] = js.native
+  var serverGroupId: js.UndefOr[ServerGroupId] = js.undefined
   
   /**
     * The servers that belong to a server group.
     */
-  var serverList: js.UndefOr[ServerList] = js.native
+  var serverList: js.UndefOr[ServerList] = js.undefined
 }
 object ServerGroup {
   

@@ -4,7 +4,6 @@ import typings.reactNativeNavigation.processorSubscriptionMod.ProcessorSubscript
 import typings.reactNativeNavigation.processorsMod.OptionsProcessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionProcessorsStoreMod {
@@ -15,7 +14,7 @@ object optionProcessorsStoreMod {
     
     def addProcessor[T](optionPath: String, processor: OptionsProcessor[T]): ProcessorSubscription = js.native
     
-    def getProcessors(optionPath: String): js.Array[OptionsProcessor[_]] = js.native
+    def getProcessors(optionPath: String): js.Array[OptionsProcessor[js.Any]] = js.native
     
     var optionsProcessorsByObjectPath: js.Any = js.native
     

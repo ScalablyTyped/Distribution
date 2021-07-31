@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollerMessages extends StObject {
   
-  var pullTemplate: js.UndefOr[String] = js.native
+  var pullTemplate: js.UndefOr[String] = js.undefined
   
-  var refreshTemplate: js.UndefOr[String] = js.native
+  var refreshTemplate: js.UndefOr[String] = js.undefined
   
-  var releaseTemplate: js.UndefOr[String] = js.native
+  var releaseTemplate: js.UndefOr[String] = js.undefined
 }
 object ScrollerMessages {
   

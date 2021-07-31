@@ -4,17 +4,15 @@ import typings.navigo.mod.NavigoHooks
 import typings.navigo.mod.Params
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait As extends StObject {
     
-    var as: String = js.native
+    var as: String
     
-    def uses(params: Params, query: String): Unit = js.native
+    def uses(params: Params, query: String): Unit
   }
   object As {
     
@@ -35,18 +33,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Hooks extends StObject {
     
-    var hooks: NavigoHooks = js.native
+    var hooks: NavigoHooks
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[Params] = js.native
+    var params: js.UndefOr[Params] = js.undefined
     
-    var query: String = js.native
+    var query: String
     
-    var url: String = js.native
+    var url: String
   }
   object Hooks {
     

@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `DetectIntentResponse.output_audio_config` which can either be set at
   * request-level or can come from the agent-level synthesizer config.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech extends StObject {
   
   /**
     * The SSML to be synthesized. For more information, see
     * [SSML](https://developers.google.com/actions/reference/ssml).
     */
-  var ssml: js.UndefOr[String] = js.native
+  var ssml: js.UndefOr[String] = js.undefined
   
   /**
     * The raw text to be synthesized.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech {
   

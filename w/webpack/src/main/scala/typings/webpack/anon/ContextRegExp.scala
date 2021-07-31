@@ -4,21 +4,21 @@ import typings.std.RegExp
 import typings.webpack.ignorePluginMod.IgnorePluginOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextRegExp extends IgnorePluginOptions {
+trait ContextRegExp
+  extends StObject
+     with IgnorePluginOptions {
   
   /**
   			 * A RegExp to test the context (directory) against
   			 */
-  var contextRegExp: js.UndefOr[RegExp] = js.native
+  var contextRegExp: js.UndefOr[RegExp] = js.undefined
   
   /**
   			 * A RegExp to test the request against
   			 */
-  var resourceRegExp: js.UndefOr[RegExp] = js.native
+  var resourceRegExp: js.UndefOr[RegExp] = js.undefined
 }
 object ContextRegExp {
   

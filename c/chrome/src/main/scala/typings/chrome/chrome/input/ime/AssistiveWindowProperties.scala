@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssistiveWindowProperties extends StObject {
   
-  var announceString: js.UndefOr[String] = js.native
+  var announceString: js.UndefOr[String] = js.undefined
   
-  var `type`: AssistiveWindowType = js.native
+  var `type`: AssistiveWindowType
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object AssistiveWindowProperties {
   

@@ -5,26 +5,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsecuritypoliciesPatchrule extends StandardParameters {
+trait ParamsResourceOrganizationsecuritypoliciesPatchrule
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The priority of the rule to patch.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaSecurityPolicyRule] = js.native
+  var requestBody: js.UndefOr[SchemaSecurityPolicyRule] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -38,12 +38,12 @@ trait ParamsResourceOrganizationsecuritypoliciesPatchrule extends StandardParame
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the security policy to update.
     */
-  var securityPolicy: js.UndefOr[String] = js.native
+  var securityPolicy: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsecuritypoliciesPatchrule {
   

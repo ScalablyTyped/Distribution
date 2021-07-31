@@ -2,15 +2,13 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSdkVersion extends StObject {
   
-  var awsSdkVersion: String = js.native
+  var awsSdkVersion: String
   
-  var clientId: String = js.native
+  var clientId: String
 }
 object AwsSdkVersion {
   

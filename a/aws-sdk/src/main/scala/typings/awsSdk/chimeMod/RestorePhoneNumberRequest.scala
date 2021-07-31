@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestorePhoneNumberRequest extends StObject {
   
   /**
     * The phone number.
     */
-  var PhoneNumberId: NonEmptyString = js.native
+  var PhoneNumberId: NonEmptyString
 }
 object RestorePhoneNumberRequest {
   

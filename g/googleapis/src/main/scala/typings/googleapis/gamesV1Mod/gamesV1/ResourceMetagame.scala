@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Metagame")
@@ -29,7 +28,7 @@ class ResourceMetagame protected () extends StObject {
     */
   def getMetagameConfig(): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(callback: BodyResponseCallback[SchemaMetagameConfig]): Unit = js.native
-  def getMetagameConfig(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMetagameConfig] = js.native
+  def getMetagameConfig(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(params: ParamsResourceMetagameGetmetagameconfig): GaxiosPromise[SchemaMetagameConfig] = js.native
   def getMetagameConfig(
     params: ParamsResourceMetagameGetmetagameconfig,
@@ -66,7 +65,7 @@ class ResourceMetagame protected () extends StObject {
     */
   def listCategoriesByPlayer(): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(callback: BodyResponseCallback[SchemaCategoryListResponse]): Unit = js.native
-  def listCategoriesByPlayer(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCategoryListResponse] = js.native
+  def listCategoriesByPlayer(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(params: ParamsResourceMetagameListcategoriesbyplayer): GaxiosPromise[SchemaCategoryListResponse] = js.native
   def listCategoriesByPlayer(
     params: ParamsResourceMetagameListcategoriesbyplayer,

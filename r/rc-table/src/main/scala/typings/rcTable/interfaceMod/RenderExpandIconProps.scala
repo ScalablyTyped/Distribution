@@ -5,21 +5,19 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderExpandIconProps[RecordType] extends StObject {
   
-  var expandable: Boolean = js.native
+  var expandable: Boolean
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
-  var onExpand: TriggerEventHandler[RecordType] = js.native
+  var onExpand: TriggerEventHandler[RecordType]
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var record: RecordType = js.native
+  var record: RecordType
 }
 object RenderExpandIconProps {
   
@@ -36,7 +34,7 @@ object RenderExpandIconProps {
   }
   
   @scala.inline
-  implicit class RenderExpandIconPropsMutableBuilder[Self <: RenderExpandIconProps[_], RecordType] (val x: Self with RenderExpandIconProps[RecordType]) extends AnyVal {
+  implicit class RenderExpandIconPropsMutableBuilder[Self <: RenderExpandIconProps[?], RecordType] (val x: Self & RenderExpandIconProps[RecordType]) extends AnyVal {
     
     @scala.inline
     def setExpandable(value: Boolean): Self = StObject.set(x, "expandable", value.asInstanceOf[js.Any])

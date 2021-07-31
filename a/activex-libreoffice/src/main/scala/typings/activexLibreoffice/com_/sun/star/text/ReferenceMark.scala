@@ -5,13 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for cross references in text documents. */
-@js.native
 trait ReferenceMark
-  extends XTextContent
+  extends StObject
+     with XTextContent
      with XNamed
 object ReferenceMark {
   

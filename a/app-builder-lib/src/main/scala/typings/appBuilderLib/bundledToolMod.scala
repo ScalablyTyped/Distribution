@@ -2,31 +2,29 @@ package typings.appBuilderLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bundledToolMod {
   
-  @JSImport("app-builder-lib/out/util/bundledTool", "computeEnv")
+  @JSImport("app-builder-lib/out/util/bundledTool", JSImport.Namespace)
   @js.native
-  def computeEnv(oldValue: js.UndefOr[scala.Nothing], newValues: js.Array[String]): String = js.native
-  @JSImport("app-builder-lib/out/util/bundledTool", "computeEnv")
-  @js.native
-  def computeEnv(oldValue: String, newValues: js.Array[String]): String = js.native
-  @JSImport("app-builder-lib/out/util/bundledTool", "computeEnv")
-  @js.native
-  def computeEnv(oldValue: Null, newValues: js.Array[String]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("app-builder-lib/out/util/bundledTool", "computeToolEnv")
-  @js.native
-  def computeToolEnv(libPath: js.Array[String]): js.Any = js.native
+  @scala.inline
+  def computeEnv(oldValue: String, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def computeEnv(oldValue: Null, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def computeEnv(oldValue: Unit, newValues: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeEnv")(oldValue.asInstanceOf[js.Any], newValues.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def computeToolEnv(libPath: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("computeToolEnv")(libPath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait ToolInfo extends StObject {
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object ToolInfo {
     

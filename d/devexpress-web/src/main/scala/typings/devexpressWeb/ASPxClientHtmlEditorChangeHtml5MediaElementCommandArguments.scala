@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for parameters related to inserting or changing HTML5 media elements (Audio and Video) in the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments extends ASPxClientHtmlEditorChangeMediaElementCommandArguments {
+trait ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorChangeMediaElementCommandArguments {
   
   /**
     * Determines if a media file will start playing automatically.
     */
-  var autoPlay: Boolean = js.native
+  var autoPlay: Boolean
   
   /**
     * Determines if a media file repeats indefinitely, or stops when it reaches the last frame.
     */
-  var loop: Boolean = js.native
+  var loop: Boolean
   
   /**
     * Determines how a media file should be loaded when the page loads.
     */
-  var preloadMode: String = js.native
+  var preloadMode: String
   
   /**
     * Determines if the media player controls should be displayed.
     */
-  var showPlayerControls: Boolean = js.native
+  var showPlayerControls: Boolean
 }
 object ASPxClientHtmlEditorChangeHtml5MediaElementCommandArguments {
   

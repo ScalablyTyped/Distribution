@@ -11,589 +11,427 @@ import typings.antvUtil.throttleMod.OptionsType
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@antv/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@antv/util", "Cache")
   @js.native
   class Cache[T] () extends default[T]
   
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: A): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: B): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: B, src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: js.UndefOr[scala.Nothing], src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: js.UndefOr[scala.Nothing], src2: B): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](dist: Base with A with B with C, src1: js.UndefOr[scala.Nothing], src2: B, src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "assign")
-  @js.native
-  def assign[Base, A, B, C](
-    dist: Base with A with B with C,
-    src1: js.UndefOr[scala.Nothing],
-    src2: js.UndefOr[scala.Nothing],
-    src3: C
-  ): Base with A with B with C = js.native
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C): Base & A & B & C = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any]).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: A): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: B): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: B, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: Unit, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: B): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: B, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def assign[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: Unit, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
   
-  @JSImport("@antv/util", "augment")
-  @js.native
-  def augment(args: js.Any*): Unit = js.native
+  @scala.inline
+  def augment(args: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("augment")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@antv/util", "clamp")
-  @js.native
-  def clamp(a: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def clamp(a: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(a.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "clearAnimationFrame")
-  @js.native
-  def clearAnimationFrame(handler: Double): Unit = js.native
+  @scala.inline
+  def clearAnimationFrame(handler: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAnimationFrame")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@antv/util", "clone")
-  @js.native
-  def clone_(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def clone_(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "contains")
-  @js.native
-  def contains(arr: js.Array[_], value: js.Any): Boolean = js.native
+  @scala.inline
+  def contains(arr: js.Array[js.Any], value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/util", "debounce")
-  @js.native
-  def debounce(func: js.Function): js.Function0[Unit] = js.native
-  @JSImport("@antv/util", "debounce")
-  @js.native
-  def debounce(func: js.Function, wait: js.UndefOr[scala.Nothing], immediate: Boolean): js.Function0[Unit] = js.native
-  @JSImport("@antv/util", "debounce")
-  @js.native
-  def debounce(func: js.Function, wait: Double): js.Function0[Unit] = js.native
-  @JSImport("@antv/util", "debounce")
-  @js.native
-  def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Function0[Unit] = js.native
+  @scala.inline
+  def debounce(func: js.Function): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def debounce(func: js.Function, wait: Double): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def debounce(func: js.Function, wait: Double, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
+  @scala.inline
+  def debounce(func: js.Function, wait: Unit, immediate: Boolean): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
   
-  @JSImport("@antv/util", "deepMix")
-  @js.native
-  def deepMix(rst: js.Any, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def deepMix(rst: js.Any, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMix")(rst.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "difference")
-  @js.native
-  def difference[T](arr: js.Array[T]): js.Array[T] = js.native
-  @JSImport("@antv/util", "difference")
-  @js.native
-  def difference[T](arr: js.Array[T], values: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def difference[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def difference[T](arr: js.Array[T], values: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("difference")(arr.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@antv/util", "each")
-  @js.native
-  def each(elements: js.Array[_], func: js.Function2[/* v */ js.Any, /* k */ js.Any, _]): Unit = js.native
-  @JSImport("@antv/util", "each")
-  @js.native
-  def each(elements: js.Object, func: js.Function2[/* v */ js.Any, /* k */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def each(elements: js.Array[js.Any], func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def each(elements: js.Object, func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("each")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@antv/util", "endsWith")
-  @js.native
-  def endsWith(arr: String, e: String): Boolean = js.native
-  @JSImport("@antv/util", "endsWith")
-  @js.native
-  def endsWith[T](arr: js.Array[T], e: T): Boolean = js.native
+  @scala.inline
+  def endsWith(arr: String, e: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def endsWith[T](arr: js.Array[T], e: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("endsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/util", "every")
-  @js.native
-  def every[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ js.UndefOr[Double], _]): Boolean = js.native
+  @scala.inline
+  def every[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ js.UndefOr[Double], js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/util", "extend")
-  @js.native
-  def extend(subclass: js.Any, superclass: js.Any): js.Any = js.native
-  @JSImport("@antv/util", "extend")
-  @js.native
-  def extend(
-    subclass: js.Any,
-    superclass: js.Any,
-    overrides: js.UndefOr[scala.Nothing],
-    staticOverrides: js.Any
-  ): js.Any = js.native
-  @JSImport("@antv/util", "extend")
-  @js.native
-  def extend(subclass: js.Any, superclass: js.Any, overrides: js.Any): js.Any = js.native
-  @JSImport("@antv/util", "extend")
-  @js.native
-  def extend(subclass: js.Any, superclass: js.Any, overrides: js.Any, staticOverrides: js.Any): js.Any = js.native
+  @scala.inline
+  def extend(subclass: js.Any, superclass: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def extend(subclass: js.Any, superclass: js.Any, overrides: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def extend(subclass: js.Any, superclass: js.Any, overrides: js.Any, staticOverrides: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def extend(subclass: js.Any, superclass: js.Any, overrides: Unit, staticOverrides: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(subclass.asInstanceOf[js.Any], superclass.asInstanceOf[js.Any], overrides.asInstanceOf[js.Any], staticOverrides.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "filter")
-  @js.native
-  def filter[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ Double, Boolean]): js.Array[T] = js.native
+  @scala.inline
+  def filter[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ Double, Boolean]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@antv/util", "find")
-  @js.native
-  def find[T](arr: js.Array[T], predicate: js.Function): T = js.native
-  @JSImport("@antv/util", "find")
-  @js.native
-  def find[T](arr: js.Array[T], predicate: js.Object): T = js.native
+  @scala.inline
+  def find[T](arr: js.Array[T], predicate: js.Function): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def find[T](arr: js.Array[T], predicate: js.Object): T = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@antv/util", "findIndex")
-  @js.native
-  def findIndex[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = js.native
-  @JSImport("@antv/util", "findIndex")
-  @js.native
+  @scala.inline
+  def findIndex[T](arr: js.Array[T], predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def findIndex[T](
     arr: js.Array[T],
     predicate: js.Function2[/* item */ T, /* idx */ js.UndefOr[Double], Boolean],
     fromIndex: Double
-  ): Double = js.native
-  
-  @JSImport("@antv/util", "firstValue")
-  @js.native
-  def firstValue(data: js.Array[js.Object], name: String): js.Any = js.native
-  
-  @JSImport("@antv/util", "fixedBase")
-  @js.native
-  def fixedBase(v: Double, base: String): Double = js.native
-  @JSImport("@antv/util", "fixedBase")
-  @js.native
-  def fixedBase(v: Double, base: Double): Double = js.native
-  
-  @JSImport("@antv/util", "flatten")
-  @js.native
-  def flatten[T](arr: js.Array[T]): js.Array[T] = js.native
-  
-  @JSImport("@antv/util", "flattenDeep")
-  @js.native
-  def flattenDeep(arr: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@antv/util", "flattenDeep")
-  @js.native
-  def flattenDeep(arr: js.Array[_], result: js.Array[_]): js.Array[_] = js.native
-  
-  @JSImport("@antv/util", "forIn")
-  @js.native
-  def forIn(elements: js.Array[_], func: js.Function2[/* v */ js.Any, /* k */ js.Any, _]): Unit = js.native
-  @JSImport("@antv/util", "forIn")
-  @js.native
-  def forIn(elements: js.Object, func: js.Function2[/* v */ js.Any, /* k */ js.Any, _]): Unit = js.native
-  
-  @JSImport("@antv/util", "get")
-  @js.native
-  def get(obj: js.Any, key: String): js.Any = js.native
-  @JSImport("@antv/util", "get")
-  @js.native
-  def get(obj: js.Any, key: String, defaultValue: js.Any): js.Any = js.native
-  @JSImport("@antv/util", "get")
-  @js.native
-  def get(obj: js.Any, key: js.Array[_]): js.Any = js.native
-  @JSImport("@antv/util", "get")
-  @js.native
-  def get(obj: js.Any, key: js.Array[_], defaultValue: js.Any): js.Any = js.native
-  
-  @JSImport("@antv/util", "getRange")
-  @js.native
-  def getRange(values: js.Array[Double]): RangeType = js.native
-  
-  @JSImport("@antv/util", "getType")
-  @js.native
-  def getType(value: js.Any): String = js.native
-  
-  @JSImport("@antv/util", "getWrapBehavior")
-  @js.native
-  def getWrapBehavior(obj: js.Object, action: String): js.Function = js.native
-  
-  @JSImport("@antv/util", "group")
-  @js.native
-  def group[T](data: js.Array[T], condition: String): js.Array[js.Array[T]] = js.native
-  @JSImport("@antv/util", "group")
-  @js.native
-  def group[T](data: js.Array[T], condition: js.Array[String]): js.Array[js.Array[T]] = js.native
-  @JSImport("@antv/util", "group")
-  @js.native
-  def group[T](data: js.Array[T], condition: js.Function1[/* v */ T, String]): js.Array[js.Array[T]] = js.native
-  
-  @JSImport("@antv/util", "groupBy")
-  @js.native
-  def groupBy[T](data: js.Array[T], condition: String): ObjectType[T] = js.native
-  @JSImport("@antv/util", "groupBy")
-  @js.native
-  def groupBy[T](data: js.Array[T], condition: js.Function1[/* item */ T, String]): ObjectType[T] = js.native
-  
-  @JSImport("@antv/util", "groupToMap")
-  @js.native
-  def groupToMap(data: js.Any, condition: js.Any): ObjectType[_] | `0` = js.native
-  
-  @JSImport("@antv/util", "has")
-  @js.native
-  def has(obj: js.Object, key: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "hasKey")
-  @js.native
-  def hasKey(obj: js.Object, key: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "hasValue")
-  @js.native
-  def hasValue(obj: js.Object, value: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "head")
-  @js.native
-  def head(o: js.Any): js.Any = js.native
-  
-  @JSImport("@antv/util", "identity")
-  @js.native
-  def identity[T](v: T): T = js.native
-  
-  @JSImport("@antv/util", "includes")
-  @js.native
-  def includes(arr: js.Array[_], value: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "indexOf")
-  @js.native
-  def indexOf[T](arr: js.Array[T], obj: T): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "isArguments")
-  @js.native
-  def isArguments(value: js.Any): Boolean = js.native
+  @scala.inline
+  def firstValue(data: js.Array[js.Object], name: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("firstValue")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "isArray")
-  @js.native
-  def isArray(value: js.Any): /* is std.Array<any> */ Boolean = js.native
+  @scala.inline
+  def fixedBase(v: Double, base: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fixedBase")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def fixedBase(v: Double, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fixedBase")(v.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "isArrayLike")
-  @js.native
-  def isArrayLike(value: js.Any): Boolean = js.native
+  @scala.inline
+  def flatten[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("@antv/util", "isBoolean")
-  @js.native
-  def isBoolean(value: js.Any): /* is boolean */ Boolean = js.native
+  @scala.inline
+  def flattenDeep(arr: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("flattenDeep")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def flattenDeep(arr: js.Array[js.Any], result: js.Array[js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("flattenDeep")(arr.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/util", "isDate")
-  @js.native
-  def isDate(value: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def forIn(elements: js.Array[js.Any], func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forIn")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def forIn(elements: js.Object, func: js.Function2[/* v */ js.Any, /* k */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forIn")(elements.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@antv/util", "isDecimal")
-  @js.native
-  def isDecimal(num: js.Any): Boolean = js.native
+  @scala.inline
+  def get(obj: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(obj: js.Any, key: String, defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(obj: js.Any, key: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(obj: js.Any, key: js.Array[js.Any], defaultValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "isElement")
-  @js.native
-  def isElement(o: js.Any): Boolean = js.native
+  @scala.inline
+  def getRange(values: js.Array[Double]): RangeType = ^.asInstanceOf[js.Dynamic].applyDynamic("getRange")(values.asInstanceOf[js.Any]).asInstanceOf[RangeType]
   
-  @JSImport("@antv/util", "isEmpty")
-  @js.native
-  def isEmpty(value: js.Any): Boolean = js.native
+  @scala.inline
+  def getType(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/util", "isEqual")
-  @js.native
-  def isEqual(value: js.Any, other: js.Any): Boolean = js.native
+  @scala.inline
+  def getWrapBehavior(obj: js.Object, action: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("getWrapBehavior")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("@antv/util", "isEqualWith")
-  @js.native
-  def isEqualWith[T](value: T, other: T, fn: js.Function2[/* v1 */ T, /* v2 */ T, Boolean]): Boolean = js.native
+  @scala.inline
+  def group[T](data: js.Array[T], condition: String): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+  @scala.inline
+  def group[T](data: js.Array[T], condition: js.Array[String]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
+  @scala.inline
+  def group[T](data: js.Array[T], condition: js.Function1[/* v */ T, String]): js.Array[js.Array[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("group")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Array[T]]]
   
-  @JSImport("@antv/util", "isError")
-  @js.native
-  def isError(value: js.Any): /* is std.Error */ Boolean = js.native
+  @scala.inline
+  def groupBy[T](data: js.Array[T], condition: String): ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[ObjectType[T]]
+  @scala.inline
+  def groupBy[T](data: js.Array[T], condition: js.Function1[/* item */ T, String]): ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupBy")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[ObjectType[T]]
   
-  @JSImport("@antv/util", "isEven")
-  @js.native
-  def isEven(num: js.Any): Boolean = js.native
+  @scala.inline
+  def groupToMap(data: js.Any, condition: js.Any): ObjectType[js.Any] | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("groupToMap")(data.asInstanceOf[js.Any], condition.asInstanceOf[js.Any])).asInstanceOf[ObjectType[js.Any] | `0`]
   
-  @JSImport("@antv/util", "isFinite")
-  @js.native
-  def isFinite(value: js.Any): /* is number */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isInteger")
-  @js.native
-  def isInteger(number: Double): Boolean = js.native
-  
-  @JSImport("@antv/util", "isMatch")
-  @js.native
-  def isMatch(obj: js.Any, attrs: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "isNegative")
-  @js.native
-  def isNegative(num: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "isNil")
-  @js.native
-  def isNil(value: js.Any): /* is null */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isNull")
-  @js.native
-  def isNull(value: js.Any): /* is null */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isNumber")
-  @js.native
-  def isNumber(value: js.Any): /* is number */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isNumberEqual")
-  @js.native
-  def isNumberEqual(a: Double, b: Double): Boolean = js.native
-  @JSImport("@antv/util", "isNumberEqual")
-  @js.native
-  def isNumberEqual(a: Double, b: Double, precision: Double): Boolean = js.native
-  
-  @JSImport("@antv/util", "isObject")
-  @js.native
-  def isObject[T](value: js.Any): /* is T */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isObjectLike")
-  @js.native
-  def isObjectLike(value: js.Any): /* is object */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isOdd")
-  @js.native
-  def isOdd(num: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "isPlainObject")
-  @js.native
-  def isPlainObject(value: js.Any): /* is object */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isPositive")
-  @js.native
-  def isPositive(num: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "isPrototype")
-  @js.native
-  def isPrototype(value: js.Any): Boolean = js.native
-  
-  @JSImport("@antv/util", "isRegExp")
-  @js.native
-  def isRegExp(str: js.Any): /* is std.RegExp */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isString")
-  @js.native
-  def isString(str: js.Any): /* is string */ Boolean = js.native
-  
-  @JSImport("@antv/util", "isType")
-  @js.native
-  def isType(value: js.Any, `type`: String): Boolean = js.native
-  
-  @JSImport("@antv/util", "isUndefined")
-  @js.native
-  def isUndefined(value: js.Any): /* is undefined */ Boolean = js.native
-  
-  @JSImport("@antv/util", "keys")
-  @js.native
-  def keys(obj: js.Any): js.Array[_] = js.native
-  
-  @JSImport("@antv/util", "last")
-  @js.native
-  def last(o: js.Any): js.Any = js.native
-  
-  @JSImport("@antv/util", "lowerCase")
-  @js.native
-  def lowerCase(str: String): String = js.native
-  
-  @JSImport("@antv/util", "lowerFirst")
-  @js.native
-  def lowerFirst(value: String): String = js.native
-  
-  @JSImport("@antv/util", "map")
-  @js.native
-  def map[T, G](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ Double, G]): js.Array[G] = js.native
-  
-  @JSImport("@antv/util", "mapValues")
-  @js.native
-  def mapValues[T](`object`: StringDictionary[T]): StringDictionary[js.Any] = js.native
-  @JSImport("@antv/util", "mapValues")
-  @js.native
-  def mapValues[T](`object`: StringDictionary[T], func: js.Function2[/* value */ T, /* key */ String, _]): StringDictionary[js.Any] = js.native
-  
-  @JSImport("@antv/util", "maxBy")
-  @js.native
-  def maxBy[T](arr: js.Array[T], fn: String): T = js.native
-  @JSImport("@antv/util", "maxBy")
-  @js.native
-  def maxBy[T](arr: js.Array[T], fn: js.Function1[/* v */ T, Double]): T = js.native
-  
-  @JSImport("@antv/util", "memoize")
-  @js.native
-  def memoize(f: js.Function): Call = js.native
-  @JSImport("@antv/util", "memoize")
-  @js.native
-  def memoize(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = js.native
-  
-  @JSImport("@antv/util", "minBy")
-  @js.native
-  def minBy[T](arr: js.Array[T], fn: String): T = js.native
-  @JSImport("@antv/util", "minBy")
-  @js.native
-  def minBy[T](arr: js.Array[T], fn: js.Function1[/* v */ T, Double]): T = js.native
-  
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: A): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: B): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: B, src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: A, src2: js.UndefOr[scala.Nothing], src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: js.UndefOr[scala.Nothing], src2: B): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](dist: Base with A with B with C, src1: js.UndefOr[scala.Nothing], src2: B, src3: C): Base with A with B with C = js.native
-  @JSImport("@antv/util", "mix")
-  @js.native
-  def mix[Base, A, B, C](
-    dist: Base with A with B with C,
-    src1: js.UndefOr[scala.Nothing],
-    src2: js.UndefOr[scala.Nothing],
-    src3: C
-  ): Base with A with B with C = js.native
-  
-  @JSImport("@antv/util", "mod")
-  @js.native
-  def mod(n: Double, m: Double): Double = js.native
-  
-  @JSImport("@antv/util", "noop")
-  @js.native
-  def noop(): Unit = js.native
-  
-  @JSImport("@antv/util", "number2color")
-  @js.native
-  def number2color(num: Double): String = js.native
-  
-  @JSImport("@antv/util", "parseRadius")
-  @js.native
-  def parseRadius(radius: js.Array[Double]): RadiusType = js.native
-  @JSImport("@antv/util", "parseRadius")
-  @js.native
-  def parseRadius(radius: Double): RadiusType = js.native
-  
-  @JSImport("@antv/util", "pick")
-  @js.native
-  def pick[T](`object`: typings.antvUtil.pickMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.pickMod.ObjectType[T] = js.native
-  
-  @JSImport("@antv/util", "pull")
-  @js.native
-  def pull[T](arr: js.Array[T], values: js.Any*): js.Array[T] = js.native
-  
-  @JSImport("@antv/util", "pullAt")
-  @js.native
-  def pullAt[T](arr: js.Array[T], indexes: js.Array[Double]): js.Array[T] = js.native
-  
-  @JSImport("@antv/util", "reduce")
-  @js.native
-  def reduce[T, G](arr: js.Array[G], fn: js.Function3[/* result */ T, /* data */ G, /* idx */ Double, T], init: T): T = js.native
-  
-  @JSImport("@antv/util", "remove")
-  @js.native
+  @scala.inline
+  def has(obj: js.Object, key: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("has")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasKey(obj: js.Object, key: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasKey")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def hasValue(obj: js.Object, value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasValue")(obj.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def head(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def identity[T](v: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("identity")(v.asInstanceOf[js.Any]).asInstanceOf[T]
+  
+  @scala.inline
+  def includes(arr: js.Array[js.Any], value: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(arr.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def indexOf[T](arr: js.Array[T], obj: T): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(arr.asInstanceOf[js.Any], obj.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def isArguments(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArguments")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isArray(value: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
+  
+  @scala.inline
+  def isArrayLike(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArrayLike")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isBoolean(value: js.Any): /* is boolean */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(value.asInstanceOf[js.Any]).asInstanceOf[/* is boolean */ Boolean]
+  
+  @scala.inline
+  def isDate(value: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
+  
+  @scala.inline
+  def isDecimal(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimal")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isElement(o: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEmpty(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEqual(value: js.Any, other: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqual")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isEqualWith[T](value: T, other: T, fn: js.Function2[/* v1 */ T, /* v2 */ T, Boolean]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEqualWith")(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isError(value: js.Any): /* is std.Error */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isError")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Error */ Boolean]
+  
+  @scala.inline
+  def isEven(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEven")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isFinite(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  
+  @scala.inline
+  def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
+  
+  @scala.inline
+  def isInteger(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isMatch(obj: js.Any, attrs: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMatch")(obj.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNegative(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegative")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isNil(value: js.Any): /* is null */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNil")(value.asInstanceOf[js.Any]).asInstanceOf[/* is null */ Boolean]
+  
+  @scala.inline
+  def isNull(value: js.Any): /* is null */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(value.asInstanceOf[js.Any]).asInstanceOf[/* is null */ Boolean]
+  
+  @scala.inline
+  def isNumber(value: js.Any): /* is number */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(value.asInstanceOf[js.Any]).asInstanceOf[/* is number */ Boolean]
+  
+  @scala.inline
+  def isNumberEqual(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumberEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isNumberEqual(a: Double, b: Double, precision: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumberEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isObject[T](value: js.Any): /* is T */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is T */ Boolean]
+  
+  @scala.inline
+  def isObjectLike(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObjectLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  
+  @scala.inline
+  def isOdd(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOdd")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPlainObject(value: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
+  
+  @scala.inline
+  def isPositive(num: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositive")(num.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isPrototype(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrototype")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRegExp(str: js.Any): /* is std.RegExp */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[/* is std.RegExp */ Boolean]
+  
+  @scala.inline
+  def isString(str: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(str.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
+  @scala.inline
+  def isType(value: js.Any, `type`: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isType")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isUndefined(value: js.Any): /* is undefined */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(value.asInstanceOf[js.Any]).asInstanceOf[/* is undefined */ Boolean]
+  
+  @scala.inline
+  def keys(obj: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
+  def last(o: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("last")(o.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def lowerCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def lowerFirst(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("lowerFirst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def map[T, G](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ Double, G]): js.Array[G] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[js.Array[G]]
+  
+  @scala.inline
+  def mapValues[T](`object`: StringDictionary[T]): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def mapValues[T](`object`: StringDictionary[T], func: js.Function2[/* value */ T, /* key */ String, js.Any]): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("mapValues")(`object`.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
+  
+  @scala.inline
+  def maxBy[T](arr: js.Array[T], fn: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxBy")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def maxBy[T](arr: js.Array[T], fn: js.Function1[/* v */ T, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("maxBy")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def memoize(f: js.Function): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(f.asInstanceOf[js.Any]).asInstanceOf[Call]
+  @scala.inline
+  def memoize(f: js.Function, resolver: js.Function1[/* repeated */ js.Any, String]): Call = (^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(f.asInstanceOf[js.Any], resolver.asInstanceOf[js.Any])).asInstanceOf[Call]
+  
+  @scala.inline
+  def minBy[T](arr: js.Array[T], fn: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minBy")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def minBy[T](arr: js.Array[T], fn: js.Function1[/* v */ T, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("minBy")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C): Base & A & B & C = ^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any]).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: A): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: B): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: B, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: A, src2: Unit, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: B): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: B, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  @scala.inline
+  def mix[Base, A, B, C](dist: Base & A & B & C, src1: Unit, src2: Unit, src3: C): Base & A & B & C = (^.asInstanceOf[js.Dynamic].applyDynamic("mix")(dist.asInstanceOf[js.Any], src1.asInstanceOf[js.Any], src2.asInstanceOf[js.Any], src3.asInstanceOf[js.Any])).asInstanceOf[Base & A & B & C]
+  
+  @scala.inline
+  def mod(n: Double, m: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(n.asInstanceOf[js.Any], m.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def number2color(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("number2color")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def parseRadius(radius: js.Array[Double]): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRadius")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  @scala.inline
+  def parseRadius(radius: Double): RadiusType = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRadius")(radius.asInstanceOf[js.Any]).asInstanceOf[RadiusType]
+  
+  @scala.inline
+  def pick[T](`object`: typings.antvUtil.pickMod.ObjectType[T], keys: js.Array[String]): typings.antvUtil.pickMod.ObjectType[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(`object`.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[typings.antvUtil.pickMod.ObjectType[T]]
+  
+  @scala.inline
+  def pull[T](arr: js.Array[T], values: js.Any*): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pull")(arr.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def pullAt[T](arr: js.Array[T], indexes: js.Array[Double]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("pullAt")(arr.asInstanceOf[js.Any], indexes.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  
+  @scala.inline
+  def reduce[T, G](arr: js.Array[G], fn: js.Function3[/* result */ T, /* data */ G, /* idx */ Double, T], init: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(arr.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @scala.inline
   def remove[T](
     arr: js.Array[T],
     predicate: js.Function3[/* value */ T, /* idx */ Double, /* arr */ js.UndefOr[js.Array[T]], Boolean]
-  ): js.Array[T] = js.native
+  ): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(arr.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@antv/util", "requestAnimationFrame")
-  @js.native
-  def requestAnimationFrame(fn: FrameRequestCallback): js.Any = js.native
+  @scala.inline
+  def requestAnimationFrame(fn: FrameRequestCallback): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFrame")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "set")
-  @js.native
-  def set(obj: js.Any, path: String, value: js.Any): js.Any = js.native
-  @JSImport("@antv/util", "set")
-  @js.native
-  def set(obj: js.Any, path: js.Array[_], value: js.Any): js.Any = js.native
+  @scala.inline
+  def set(obj: js.Any, path: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def set(obj: js.Any, path: js.Array[js.Any], value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "size")
-  @js.native
-  def size(o: js.Any): Double = js.native
+  @scala.inline
+  def size(o: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("size")(o.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "some")
-  @js.native
-  def some[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ js.UndefOr[Double], _]): Boolean = js.native
+  @scala.inline
+  def some[T](arr: js.Array[T], func: js.Function2[/* v */ T, /* idx */ js.UndefOr[Double], js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(arr.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/util", "sortBy")
-  @js.native
-  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: String): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = js.native
-  @JSImport("@antv/util", "sortBy")
-  @js.native
-  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Array[String]): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = js.native
-  @JSImport("@antv/util", "sortBy")
-  @js.native
-  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Function): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = js.native
+  @scala.inline
+  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: String): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
+  @scala.inline
+  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Array[String]): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
+  @scala.inline
+  def sortBy[T](arr: js.Array[typings.antvUtil.sortByMod.ObjectType[T]], key: js.Function): js.Array[typings.antvUtil.sortByMod.ObjectType[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("sortBy")(arr.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.antvUtil.sortByMod.ObjectType[T]]]
   
-  @JSImport("@antv/util", "startsWith")
-  @js.native
-  def startsWith(arr: String, e: String): Boolean = js.native
-  @JSImport("@antv/util", "startsWith")
-  @js.native
-  def startsWith[T](arr: js.Array[T], e: T): Boolean = js.native
+  @scala.inline
+  def startsWith(arr: String, e: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def startsWith[T](arr: js.Array[T], e: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("startsWith")(arr.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/util", "substitute")
-  @js.native
-  def substitute[T](str: String, o: typings.antvUtil.substituteMod.ObjectType[T]): String = js.native
+  @scala.inline
+  def substitute[T](str: String, o: typings.antvUtil.substituteMod.ObjectType[T]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("substitute")(str.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@antv/util", "throttle")
-  @js.native
-  def throttle(func: js.Function, wait: Double, options: OptionsType): js.Function = js.native
+  @scala.inline
+  def throttle(func: js.Function, wait: Double, options: OptionsType): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(func.asInstanceOf[js.Any], wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
-  @JSImport("@antv/util", "toArray")
-  @js.native
-  def toArray(value: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def toArray(value: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toArray")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/util", "toDegree")
-  @js.native
-  def toDegree(radian: Double): Double = js.native
+  @scala.inline
+  def toDegree(radian: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDegree")(radian.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "toRadian")
-  @js.native
-  def toRadian(degree: Double): Double = js.native
+  @scala.inline
+  def toRadian(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toRadian")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@antv/util", "toString")
-  @js.native
-  def toString_(value: js.Any): String = js.native
+  @scala.inline
+  def toString_(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/util", "union")
-  @js.native
-  def union(sources: js.Any*): js.Array[_] = js.native
+  @scala.inline
+  def union(sources: js.Any*): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("union")(sources.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/util", "uniq")
-  @js.native
-  def uniq(arr: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def uniq(arr: js.Any): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniq")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/util", "uniqueId")
-  @js.native
-  def uniqueId(): String = js.native
-  @JSImport("@antv/util", "uniqueId")
-  @js.native
-  def uniqueId(prefix: String): String = js.native
+  @scala.inline
+  def uniqueId(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")().asInstanceOf[String]
+  @scala.inline
+  def uniqueId(prefix: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqueId")(prefix.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/util", "upperCase")
-  @js.native
-  def upperCase(str: String): String = js.native
+  @scala.inline
+  def upperCase(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperCase")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/util", "upperFirst")
-  @js.native
-  def upperFirst(value: String): String = js.native
+  @scala.inline
+  def upperFirst(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("upperFirst")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@antv/util", "values")
-  @js.native
-  def values(obj: js.Any): js.Any = js.native
+  @scala.inline
+  def values(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("values")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@antv/util", "valuesOfKey")
-  @js.native
-  def valuesOfKey(data: js.Array[_], name: String): js.Array[_] = js.native
+  @scala.inline
+  def valuesOfKey(data: js.Array[js.Any], name: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("valuesOfKey")(data.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@antv/util", "wrapBehavior")
-  @js.native
-  def wrapBehavior(obj: js.Object, action: String): js.Function = js.native
+  @scala.inline
+  def wrapBehavior(obj: js.Object, action: String): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapBehavior")(obj.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
 }

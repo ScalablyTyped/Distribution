@@ -2,15 +2,13 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableLocation extends StObject {
   
-  var droppableId: DroppableId = js.native
+  var droppableId: DroppableId
   
-  var index: Double = js.native
+  var index: Double
 }
 object DraggableLocation {
   

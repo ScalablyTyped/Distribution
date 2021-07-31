@@ -2,15 +2,13 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsChildWindow extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val IsChildWindow: Boolean = js.native
+  val IsChildWindow: Boolean
 }
 object IsChildWindow {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Usually, the parser has a default behavior of resolving external references (See documentation of the parser implementation). Use this interface to
   * modify or reimplement this behavior.
   */
-@js.native
-trait XEntityResolver extends XInterface {
+trait XEntityResolver
+  extends StObject
+     with XInterface {
   
   /** @returns {@link InputSource} for the external entity.  If **aInputStream** is a valid reference to an input stream, the parser uses this {@link InputSourc */
-  def resolveEntity(sPublicId: String, sSystemId: String): InputSource = js.native
+  def resolveEntity(sPublicId: String, sSystemId: String): InputSource
 }
 object XEntityResolver {
   

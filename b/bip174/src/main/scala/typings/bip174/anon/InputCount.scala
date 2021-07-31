@@ -2,15 +2,13 @@ package typings.bip174.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputCount extends StObject {
   
-  var inputCount: Double = js.native
+  var inputCount: Double
   
-  var outputCount: Double = js.native
+  var outputCount: Double
 }
 object InputCount {
   

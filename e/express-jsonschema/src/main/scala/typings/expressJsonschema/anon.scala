@@ -2,19 +2,17 @@ package typings.expressJsonschema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Instance extends StObject {
     
-    var instance: js.Any = js.native
+    var instance: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var property: String = js.native
+    var property: String
   }
   object Instance {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Messages extends StObject {
     
-    var messages: js.Array[String] = js.native
+    var messages: js.Array[String]
     
-    var property: String = js.native
+    var property: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Messages {
     

@@ -2,13 +2,11 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestUserScripts extends StObject {
   
-  var api_script: js.UndefOr[ExtensionURL] = js.native
+  var api_script: js.UndefOr[ExtensionURL] = js.undefined
 }
 object WebExtensionManifestUserScripts {
   

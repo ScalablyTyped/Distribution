@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "pages.ReferenceSetSource")
@@ -38,9 +37,8 @@ object ReferenceSetSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.ReferenceSetSource.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource]
   
   /**
     * Creates and returns a new ReferenceSetSource instance in the SDK and on the server.
@@ -51,9 +49,8 @@ object ReferenceSetSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.ReferenceSetSource.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource]
   
   /**
     * Creates and returns a new ReferenceSetSource instance in the SDK and on the server.
@@ -61,9 +58,8 @@ object ReferenceSetSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.ReferenceSetSource.createInEntityWidgetUnderDataSource")
-  @js.native
-  def createInEntityWidgetUnderDataSource(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = js.native
+  @scala.inline
+  def createInEntityWidgetUnderDataSource(container: typings.mendixmodelsdk.pagesMod.pages.EntityWidget): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource]
   
   /**
     * Creates and returns a new ReferenceSetSource instance in the SDK and on the server.
@@ -74,9 +70,8 @@ object ReferenceSetSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.ReferenceSetSource.createInWidgetValueUnderDataSource")
-  @js.native
-  def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = js.native
+  @scala.inline
+  def createInWidgetValueUnderDataSource(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.ReferenceSetSource]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.ReferenceSetSource.structureTypeName")

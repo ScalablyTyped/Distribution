@@ -2,16 +2,14 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectionOutput extends StObject {
   
   /**
     * The connection details, such as status, owner, and provider type.
     */
-  var Connection: js.UndefOr[typings.awsSdk.codestarconnectionsMod.Connection] = js.native
+  var Connection: js.UndefOr[typings.awsSdk.codestarconnectionsMod.Connection] = js.undefined
 }
 object GetConnectionOutput {
   

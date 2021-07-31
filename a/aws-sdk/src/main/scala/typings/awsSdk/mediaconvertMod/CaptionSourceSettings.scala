@@ -2,46 +2,44 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionSourceSettings extends StObject {
   
   /**
     * Settings for ancillary captions source.
     */
-  var AncillarySourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AncillarySourceSettings] = js.native
+  var AncillarySourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.AncillarySourceSettings] = js.undefined
   
   /**
     * DVB Sub Source Settings
     */
-  var DvbSubSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSubSourceSettings] = js.native
+  var DvbSubSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DvbSubSourceSettings] = js.undefined
   
   /**
     * Settings for embedded captions Source
     */
-  var EmbeddedSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedSourceSettings] = js.native
+  var EmbeddedSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.EmbeddedSourceSettings] = js.undefined
   
   /**
     * If your input captions are SCC, SMI, SRT, STL, TTML, or IMSC 1.1 in an xml file, specify the URI of the input caption source file. If your caption source is IMSC in an IMF package, use TrackSourceSettings instead of FileSoureSettings.
     */
-  var FileSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FileSourceSettings] = js.native
+  var FileSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FileSourceSettings] = js.undefined
   
   /**
     * Use Source (SourceType) to identify the format of your input captions.  The service cannot auto-detect caption format.
     */
-  var SourceType: js.UndefOr[CaptionSourceType] = js.native
+  var SourceType: js.UndefOr[CaptionSourceType] = js.undefined
   
   /**
     * Settings specific to Teletext caption sources, including Page number.
     */
-  var TeletextSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TeletextSourceSettings] = js.native
+  var TeletextSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TeletextSourceSettings] = js.undefined
   
   /**
     * Settings specific to caption sources that are specified by track number. Currently, this is only IMSC captions in an IMF package. If your caption source is IMSC 1.1 in a separate xml file, use FileSourceSettings instead of TrackSourceSettings.
     */
-  var TrackSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TrackSourceSettings] = js.native
+  var TrackSourceSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.TrackSourceSettings] = js.undefined
 }
 object CaptionSourceSettings {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceGraphRequest extends StObject {
   
   /**
     * The end of the timeframe for which to generate a graph.
     */
-  var EndTime: Timestamp = js.native
+  var EndTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of a group based on which you want to generate a graph.
     */
-  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.native
+  var GroupARN: js.UndefOr[typings.awsSdk.xrayMod.GroupARN] = js.undefined
   
   /**
     * The name of a group based on which you want to generate a graph.
     */
-  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.native
+  var GroupName: js.UndefOr[typings.awsSdk.xrayMod.GroupName] = js.undefined
   
   /**
     * Pagination token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The start of the time frame for which to generate a graph.
     */
-  var StartTime: Timestamp = js.native
+  var StartTime: Timestamp
 }
 object GetServiceGraphRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConfigResponse extends StObject {
   
   /**
     * The certificate file containing the server.pem files of the HSMs.
     */
-  var ConfigCred: js.UndefOr[String] = js.native
+  var ConfigCred: js.UndefOr[String] = js.undefined
   
   /**
     * The chrystoki.conf configuration file.
     */
-  var ConfigFile: js.UndefOr[String] = js.native
+  var ConfigFile: js.UndefOr[String] = js.undefined
   
   /**
     * The type of credentials.
     */
-  var ConfigType: js.UndefOr[String] = js.native
+  var ConfigType: js.UndefOr[String] = js.undefined
 }
 object GetConfigResponse {
   

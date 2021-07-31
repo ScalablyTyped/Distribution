@@ -2,27 +2,25 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAxes extends StObject {
   
-  def add(horizontal: Boolean, otherSide: Boolean): IAxis = js.native
+  def add(horizontal: Boolean, otherSide: Boolean): IAxis
   
-  var bottom: IAxis = js.native
+  var bottom: IAxis
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var items: js.Array[IAxis] = js.native
+  var items: js.Array[IAxis]
   
-  var left: IAxis = js.native
+  var left: IAxis
   
-  var right: IAxis = js.native
+  var right: IAxis
   
-  var top: IAxis = js.native
+  var top: IAxis
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IAxes {
   

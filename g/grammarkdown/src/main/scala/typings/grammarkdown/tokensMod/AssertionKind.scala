@@ -2,7 +2,6 @@ package typings.grammarkdown.tokensMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,4 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.tokensMod.SyntaxKind.ProseAssertion
   - typings.grammarkdown.tokensMod.SyntaxKind.InvalidAssertion
 */
-trait AssertionKind extends _LexicalSymbolKind
+trait AssertionKind
+  extends StObject
+     with _LexicalSymbolKind

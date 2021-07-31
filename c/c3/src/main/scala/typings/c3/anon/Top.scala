@@ -2,17 +2,15 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top extends StObject {
   
   /** Defaults to `"50px"`. */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /** Defaults to `"0px"`. */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
 }
 object Top {
   

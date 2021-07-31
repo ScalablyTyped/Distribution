@@ -7,65 +7,63 @@ import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Group {
   
   type GroupCallback = js.Function1[/* item */ GameObject, Unit]
   
-  @js.native
   trait GroupConfig extends StObject {
     
     /**
       * Sets {@link Phaser.GameObjects.Group#active}.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#classType}.
       */
-    var classType: js.UndefOr[js.Function] = js.native
+    var classType: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#createCallback}.
       */
-    var createCallback: js.UndefOr[GroupCallback] = js.native
+    var createCallback: js.UndefOr[GroupCallback] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#createMultipleCallback}.
       */
-    var createMultipleCallback: js.UndefOr[GroupMultipleCreateCallback] = js.native
+    var createMultipleCallback: js.UndefOr[GroupMultipleCreateCallback] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#defaultFrame}.
       */
-    var defaultFrame: js.UndefOr[String | integer] = js.native
+    var defaultFrame: js.UndefOr[String | integer] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#defaultKey}.
       */
-    var defaultKey: js.UndefOr[String] = js.native
+    var defaultKey: js.UndefOr[String] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#maxSize}.
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#name}.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#removeCallback}.
       */
-    var removeCallback: js.UndefOr[GroupCallback] = js.native
+    var removeCallback: js.UndefOr[GroupCallback] = js.undefined
     
     /**
       * Sets {@link Phaser.GameObjects.Group#runChildUpdate}.
       */
-    var runChildUpdate: js.UndefOr[Boolean] = js.native
+    var runChildUpdate: js.UndefOr[Boolean] = js.undefined
   }
   object GroupConfig {
     
@@ -149,203 +147,202 @@ object Group {
     * 
     * `key` is required. {@link Phaser.GameObjects.Group#defaultKey} is not used.
     */
-  @js.native
   trait GroupCreateConfig extends StObject {
     
     /**
       * The active state of each new Game Object.
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The class of each new Game Object.
       */
-    var classType: js.UndefOr[js.Function] = js.native
+    var classType: js.UndefOr[js.Function] = js.undefined
     
     /**
       * The texture frame of each new Game Object.
       */
-    var frame: js.UndefOr[String | (js.Array[String | integer]) | integer] = js.native
+    var frame: js.UndefOr[String | (js.Array[String | integer]) | integer] = js.undefined
     
     /**
       * The number of times each `frame` should be combined with one `key`.
       */
-    var frameQuantity: js.UndefOr[integer] = js.native
+    var frameQuantity: js.UndefOr[integer] = js.undefined
     
     /**
       * Align the new Game Objects in a grid using these settings.
       */
-    var gridAlign: js.UndefOr[`false` | GridAlignConfig] = js.native
+    var gridAlign: js.UndefOr[`false` | GridAlignConfig] = js.undefined
     
     /**
       * A geometric shape that defines the hit area for the Game Object.
       */
-    var hitArea: js.UndefOr[js.Any] = js.native
+    var hitArea: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A callback to be invoked when the Game Object is interacted with.
       */
-    var hitAreaCallback: js.UndefOr[HitAreaCallback] = js.native
+    var hitAreaCallback: js.UndefOr[HitAreaCallback] = js.undefined
     
     /**
       * The texture key of each new Game Object.
       */
-    var key: js.UndefOr[String | js.Array[String]] = js.native
+    var key: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * The maximum number of new Game Objects to create. 0 is no maximum.
       */
-    var max: js.UndefOr[integer] = js.native
+    var max: js.UndefOr[integer] = js.undefined
     
     /**
       * The number of Game Objects to create. If set, this overrides the `frameQuantity` value. Use `frameQuantity` for more advanced control.
       */
-    var quantity: js.UndefOr[integer] = js.native
+    var quantity: js.UndefOr[integer] = js.undefined
     
     /**
       * Select a `frame` at random.
       */
-    var randomFrame: js.UndefOr[Boolean] = js.native
+    var randomFrame: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Select a `key` at random.
       */
-    var randomKey: js.UndefOr[Boolean] = js.native
+    var randomKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The number of times each `key` × `frame` combination will be *repeated* (after the first combination).
       */
-    var repeat: js.UndefOr[integer] = js.native
+    var repeat: js.UndefOr[integer] = js.undefined
     
-    var setAlpha: js.UndefOr[js.Object] = js.native
+    var setAlpha: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's alpha from the previous by this amount, starting from `setAlpha.value`.
       */
     @JSName("setAlpha.step")
-    var setAlphaDotstep: js.UndefOr[Double] = js.native
+    var setAlphaDotstep: js.UndefOr[Double] = js.undefined
     
     /**
       * The alpha value of each new Game Object.
       */
     @JSName("setAlpha.value")
-    var setAlphaDotvalue: js.UndefOr[Double] = js.native
+    var setAlphaDotvalue: js.UndefOr[Double] = js.undefined
     
-    var setDepth: js.UndefOr[js.Object] = js.native
+    var setDepth: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's depth from the previous by this amount, starting from `setDepth.value`.
       */
     @JSName("setDepth.step")
-    var setDepthDotstep: js.UndefOr[Double] = js.native
+    var setDepthDotstep: js.UndefOr[Double] = js.undefined
     
     /**
       * The depth value of each new Game Object.
       */
     @JSName("setDepth.value")
-    var setDepthDotvalue: js.UndefOr[Double] = js.native
+    var setDepthDotvalue: js.UndefOr[Double] = js.undefined
     
-    var setRotation: js.UndefOr[js.Object] = js.native
+    var setRotation: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's rotation from the previous by this amount, starting at `setRotation.value`.
       */
     @JSName("setRotation.step")
-    var setRotationDotstep: js.UndefOr[Double] = js.native
+    var setRotationDotstep: js.UndefOr[Double] = js.undefined
     
     /**
       * Rotation of each new Game Object.
       */
     @JSName("setRotation.value")
-    var setRotationDotvalue: js.UndefOr[Double] = js.native
+    var setRotationDotvalue: js.UndefOr[Double] = js.undefined
     
-    var setScale: js.UndefOr[js.Object] = js.native
+    var setScale: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's horizontal scale from the previous by this amount, starting from `setScale.x`.
       */
     @JSName("setScale.stepX")
-    var setScaleDotstepX: js.UndefOr[Double] = js.native
+    var setScaleDotstepX: js.UndefOr[Double] = js.undefined
     
     /**
       * Increment each Game object's vertical scale from the previous by this amount, starting from `setScale.y`.
       */
     @JSName("setScale.stepY")
-    var setScaleDotstepY: js.UndefOr[Double] = js.native
+    var setScaleDotstepY: js.UndefOr[Double] = js.undefined
     
     /**
       * The horizontal scale of each new Game Object.
       */
     @JSName("setScale.x")
-    var setScaleDotx: js.UndefOr[Double] = js.native
+    var setScaleDotx: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical scale of each new Game Object.
       */
     @JSName("setScale.y")
-    var setScaleDoty: js.UndefOr[Double] = js.native
+    var setScaleDoty: js.UndefOr[Double] = js.undefined
     
-    var setScrollFactor: js.UndefOr[js.Object] = js.native
+    var setScrollFactor: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's horizontal scroll factor from the previous by this amount, starting from `setScrollFactor.x`.
       */
     @JSName("setScrollFactor.stepX")
-    var setScrollFactorDotstepX: js.UndefOr[Double] = js.native
+    var setScrollFactorDotstepX: js.UndefOr[Double] = js.undefined
     
     /**
       * Increment each Game object's vertical scroll factor from the previous by this amount, starting from `setScrollFactor.y`.
       */
     @JSName("setScrollFactor.stepY")
-    var setScrollFactorDotstepY: js.UndefOr[Double] = js.native
+    var setScrollFactorDotstepY: js.UndefOr[Double] = js.undefined
     
     /**
       * The horizontal scroll factor of each new Game Object.
       */
     @JSName("setScrollFactor.x")
-    var setScrollFactorDotx: js.UndefOr[Double] = js.native
+    var setScrollFactorDotx: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical scroll factor of each new Game Object.
       */
     @JSName("setScrollFactor.y")
-    var setScrollFactorDoty: js.UndefOr[Double] = js.native
+    var setScrollFactorDoty: js.UndefOr[Double] = js.undefined
     
-    var setXY: js.UndefOr[js.Object] = js.native
+    var setXY: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Increment each Game Object's horizontal position from the previous by this amount, starting from `setXY.x`.
       */
     @JSName("setXY.stepX")
-    var setXYDotstepX: js.UndefOr[Double] = js.native
+    var setXYDotstepX: js.UndefOr[Double] = js.undefined
     
     /**
       * Increment each Game Object's vertical position from the previous by this amount, starting from `setXY.y`.
       */
     @JSName("setXY.stepY")
-    var setXYDotstepY: js.UndefOr[Double] = js.native
+    var setXYDotstepY: js.UndefOr[Double] = js.undefined
     
     /**
       * The horizontal position of each new Game Object.
       */
     @JSName("setXY.x")
-    var setXYDotx: js.UndefOr[Double] = js.native
+    var setXYDotx: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical position of each new Game Object.
       */
     @JSName("setXY.y")
-    var setXYDoty: js.UndefOr[Double] = js.native
+    var setXYDoty: js.UndefOr[Double] = js.undefined
     
     /**
       * The visible state of each new Game Object.
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Select keys and frames by moving forward then backward through `key` and `frame`.
       */
-    var yoyo: js.UndefOr[Boolean] = js.native
+    var yoyo: js.UndefOr[Boolean] = js.undefined
   }
   object GroupCreateConfig {
     

@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ObjectTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
-  var callProperties: js.Array[ObjectTypeCallProperty_] = js.native
+  var callProperties: js.Array[ObjectTypeCallProperty_]
   
-  var indexers: js.Array[ObjectTypeIndexer_] = js.native
+  var indexers: js.Array[ObjectTypeIndexer_]
   
-  var properties: js.Array[ObjectTypeProperty_] = js.native
+  var properties: js.Array[ObjectTypeProperty_]
   
   @JSName("type")
-  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation = js.native
+  var type_ObjectTypeAnnotation_ : ObjectTypeAnnotation
 }
 object ObjectTypeAnnotation_ {
   
@@ -30,11 +29,10 @@ object ObjectTypeAnnotation_ {
     indexers: js.Array[ObjectTypeIndexer_],
     loc: SourceLocation,
     properties: js.Array[ObjectTypeProperty_],
-    start: Double,
-    `type`: ObjectTypeAnnotation
+    start: Double
   ): ObjectTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(callProperties = callProperties.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], indexers = indexers.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectTypeAnnotation")
     __obj.asInstanceOf[ObjectTypeAnnotation_]
   }
   

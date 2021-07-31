@@ -6,38 +6,39 @@ import typings.std.CryptoKey
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signedDataMod {
   
   @JSImport("pkijs/src/SignedData", JSImport.Default)
   @js.native
-  class default () extends SignedData {
+  class default ()
+    extends StObject
+       with SignedData {
     def this(params: js.Any) = this()
   }
   /* static members */
   object default {
+    
+    @JSImport("pkijs/src/SignedData", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Compare values with default values for all class members
       * @param {string} memberName String name for a class member
       * @param {*} memberValue Value to compare with default value
       */
-    @JSImport("pkijs/src/SignedData", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("pkijs/src/SignedData", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("pkijs/src/SignedData", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/SignedData", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @js.native
@@ -73,14 +74,9 @@ object signedDataMod {
       * @memberOf SignedData
       */
     def sign(privateKey: CryptoKey, signerIndex: Double): ArrayBuffer = js.native
-    def sign(
-      privateKey: CryptoKey,
-      signerIndex: Double,
-      hashAlgorithm: js.UndefOr[scala.Nothing],
-      data: BufferSource
-    ): ArrayBuffer = js.native
     def sign(privateKey: CryptoKey, signerIndex: Double, hashAlgorithm: String): ArrayBuffer = js.native
     def sign(privateKey: CryptoKey, signerIndex: Double, hashAlgorithm: String, data: BufferSource): ArrayBuffer = js.native
+    def sign(privateKey: CryptoKey, signerIndex: Double, hashAlgorithm: Unit, data: BufferSource): ArrayBuffer = js.native
     
     var signerInfos: js.Array[typings.pkijs.signerInfoMod.default] = js.native
     
@@ -100,22 +96,21 @@ object signedDataMod {
     var version: Double = js.native
   }
   
-  @js.native
   trait VerifyParams extends StObject {
     
-    var checkChain: js.UndefOr[Boolean] = js.native
+    var checkChain: js.UndefOr[Boolean] = js.undefined
     
-    var checkDate: js.UndefOr[Date] = js.native
+    var checkDate: js.UndefOr[Date] = js.undefined
     
-    var data: js.UndefOr[ArrayBuffer] = js.native
+    var data: js.UndefOr[ArrayBuffer] = js.undefined
     
-    var extendedMode: js.UndefOr[Boolean] = js.native
+    var extendedMode: js.UndefOr[Boolean] = js.undefined
     
-    var includeSignerCertificate: js.UndefOr[Boolean] = js.native
+    var includeSignerCertificate: js.UndefOr[Boolean] = js.undefined
     
-    var signer: js.UndefOr[Double] = js.native
+    var signer: js.UndefOr[Double] = js.undefined
     
-    var trustedCerts: js.UndefOr[js.Array[typings.pkijs.certificateMod.default]] = js.native
+    var trustedCerts: js.UndefOr[js.Array[typings.pkijs.certificateMod.default]] = js.undefined
   }
   object VerifyParams {
     
@@ -175,20 +170,19 @@ object signedDataMod {
     }
   }
   
-  @js.native
   trait VerifyResult extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var date: Date = js.native
+    var date: Date
     
-    var message: String = js.native
+    var message: String
     
-    var signatureVerified: js.UndefOr[Boolean] = js.native
+    var signatureVerified: js.UndefOr[Boolean] = js.undefined
     
-    var signerCertificate: js.UndefOr[typings.pkijs.certificateMod.default] = js.native
+    var signerCertificate: js.UndefOr[typings.pkijs.certificateMod.default] = js.undefined
     
-    var signerCertificateVerified: js.UndefOr[Boolean] = js.native
+    var signerCertificateVerified: js.UndefOr[Boolean] = js.undefined
   }
   object VerifyResult {
     

@@ -2,23 +2,21 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseWorkItemRef extends StObject {
   
-  var assignee: String = js.native
+  var assignee: String
   
-  var id: String = js.native
+  var id: String
   
-  var state: String = js.native
+  var state: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object ReleaseWorkItemRef {
   

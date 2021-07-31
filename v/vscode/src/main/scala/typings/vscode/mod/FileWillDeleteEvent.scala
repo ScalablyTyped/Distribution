@@ -3,7 +3,6 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,5 +38,5 @@ trait FileWillDeleteEvent extends StObject {
     *
     * @param thenable A thenable that delays saving.
     */
-  def waitUntil(thenable: Thenable[_ | WorkspaceEdit]): Unit = js.native
+  def waitUntil(thenable: Thenable[js.Any | WorkspaceEdit]): Unit = js.native
 }

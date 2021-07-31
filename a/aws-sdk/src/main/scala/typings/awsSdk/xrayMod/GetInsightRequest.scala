@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightRequest extends StObject {
   
   /**
     * The insight's unique identifier. Use the GetInsightSummaries action to retrieve an InsightId.
     */
-  var InsightId: typings.awsSdk.xrayMod.InsightId = js.native
+  var InsightId: typings.awsSdk.xrayMod.InsightId
 }
 object GetInsightRequest {
   

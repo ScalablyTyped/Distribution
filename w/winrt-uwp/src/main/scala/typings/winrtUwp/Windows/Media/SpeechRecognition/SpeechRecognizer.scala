@@ -12,14 +12,13 @@ import typings.winrtUwp.winrtUwpStrings.recognitionqualitydegrading
 import typings.winrtUwp.winrtUwpStrings.statechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables speech recognition with either a default or a custom graphical user interface (GUI). */
 @js.native
 trait SpeechRecognizer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_hypothesisgenerated(
     `type`: hypothesisgenerated,
@@ -55,19 +54,19 @@ trait SpeechRecognizer extends StObject {
   var currentLanguage: Language = js.native
   
   /** Occurs during an ongoing dictation session when a recognition result fragment is returned by the speech recognizer. */
-  def onhypothesisgenerated(ev: SpeechRecognitionHypothesisGeneratedEventArgs with WinRTEvent[SpeechRecognizer]): Unit = js.native
+  def onhypothesisgenerated(ev: SpeechRecognitionHypothesisGeneratedEventArgs & WinRTEvent[SpeechRecognizer]): Unit = js.native
   /** Occurs during an ongoing dictation session when a recognition result fragment is returned by the speech recognizer. */
   @JSName("onhypothesisgenerated")
   var onhypothesisgenerated_Original: TypedEventHandler[SpeechRecognizer, SpeechRecognitionHypothesisGeneratedEventArgs] = js.native
   
   /** This event is raised when an audio problem is detected that might affect recognition accuracy. */
-  def onrecognitionqualitydegrading(ev: SpeechRecognitionQualityDegradingEventArgs with WinRTEvent[SpeechRecognizer]): Unit = js.native
+  def onrecognitionqualitydegrading(ev: SpeechRecognitionQualityDegradingEventArgs & WinRTEvent[SpeechRecognizer]): Unit = js.native
   /** This event is raised when an audio problem is detected that might affect recognition accuracy. */
   @JSName("onrecognitionqualitydegrading")
   var onrecognitionqualitydegrading_Original: TypedEventHandler[SpeechRecognizer, SpeechRecognitionQualityDegradingEventArgs] = js.native
   
   /** This event is raised when a change occurs to the State property during audio capture. */
-  def onstatechanged(ev: SpeechRecognizerStateChangedEventArgs with WinRTEvent[SpeechRecognizer]): Unit = js.native
+  def onstatechanged(ev: SpeechRecognizerStateChangedEventArgs & WinRTEvent[SpeechRecognizer]): Unit = js.native
   /** This event is raised when a change occurs to the State property during audio capture. */
   @JSName("onstatechanged")
   var onstatechanged_Original: TypedEventHandler[SpeechRecognizer, SpeechRecognizerStateChangedEventArgs] = js.native
@@ -84,7 +83,7 @@ trait SpeechRecognizer extends StObject {
     */
   def recognizeWithUIAsync(): IPromiseWithIAsyncOperation[SpeechRecognitionResult] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_hypothesisgenerated(
     `type`: hypothesisgenerated,

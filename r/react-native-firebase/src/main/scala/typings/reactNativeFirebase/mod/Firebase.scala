@@ -3,7 +3,6 @@ package typings.reactNativeFirebase.mod
 import typings.reactNativeFirebase.mod.Firebase.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-native-firebase", "Firebase")
@@ -49,20 +48,19 @@ class Firebase protected () extends StObject {
 }
 object Firebase {
   
-  @js.native
   trait Options extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var appId: String = js.native
+    var appId: String
     
-    var databaseURL: String = js.native
+    var databaseURL: String
     
-    var messagingSenderId: String = js.native
+    var messagingSenderId: String
     
-    var projectId: String = js.native
+    var projectId: String
     
-    var storageBucket: String = js.native
+    var storageBucket: String
   }
   object Options {
     

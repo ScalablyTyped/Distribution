@@ -10,9 +10,9 @@ Create HTTP error objects
 | ------------------ | :-------------: |
 | Full name          | http-errors |
 | Keywords           | http, error |
-| # releases         | 4 |
-| # dependents       | 1246 |
-| # downloads        | 1275507732 |
+| # releases         | 3 |
+| # dependents       | 1382 |
+| # downloads        | 1564125270 |
 | # stars            | 37 |
 
 ## Links

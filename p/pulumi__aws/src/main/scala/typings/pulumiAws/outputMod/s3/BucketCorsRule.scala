@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketCorsRule extends StObject {
   
   /**
     * Specifies which headers are allowed.
     */
-  var allowedHeaders: js.UndefOr[js.Array[String]] = js.native
+  var allowedHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies which methods are allowed. Can be `GET`, `PUT`, `POST`, `DELETE` or `HEAD`.
     */
-  var allowedMethods: js.Array[String] = js.native
+  var allowedMethods: js.Array[String]
   
   /**
     * Specifies which origins are allowed.
     */
-  var allowedOrigins: js.Array[String] = js.native
+  var allowedOrigins: js.Array[String]
   
   /**
     * Specifies expose header in the response.
     */
-  var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+  var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies time in seconds that browser can cache the response for a preflight request.
     */
-  var maxAgeSeconds: js.UndefOr[Double] = js.native
+  var maxAgeSeconds: js.UndefOr[Double] = js.undefined
 }
 object BucketCorsRule {
   

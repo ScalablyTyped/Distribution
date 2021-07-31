@@ -3,7 +3,6 @@ package typings.sindresorhusSlugify
 import typings.sindresorhusSlugify.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,14 @@ object mod {
   	//=> 'ya-lyublyu-edinorogov'
   	```
   	*/
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("@sindresorhus/slugify", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
-  @JSImport("@sindresorhus/slugify", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Returns a new instance of `slugify(string, options?)` with a counter to handle multiple occurences of the same string.
@@ -56,11 +57,9 @@ object mod {
   	```
   	You can then use `slugify.counter()` to generate unique HTML `id`'s to ensure anchors will link to the right headline.
   	*/
-  @JSImport("@sindresorhus/slugify", "counter")
-  @js.native
-  def counter(): Call = js.native
+  @scala.inline
+  def counter(): Call = ^.asInstanceOf[js.Dynamic].applyDynamic("counter")().asInstanceOf[Call]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -92,7 +91,7 @@ object mod {
     		//=> 'i-love-dogs'
     		```
     		*/
-    val customReplacements: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    val customReplacements: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
     
     /**
     		Convert camelcase to separate words. Internally it does `fooBar` → `foo bar`.
@@ -106,7 +105,7 @@ object mod {
     		//=> 'foobar'
     		```
     		*/
-    val decamelize: js.UndefOr[Boolean] = js.native
+    val decamelize: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Make the slug lowercase.
@@ -120,7 +119,7 @@ object mod {
     		//=> 'Deja-Vu'
     		```
     		*/
-    val lowercase: js.UndefOr[Boolean] = js.native
+    val lowercase: js.UndefOr[Boolean] = js.undefined
     
     /**
     		If your string starts with an underscore, it will be preserved in the slugified string.
@@ -135,7 +134,7 @@ object mod {
     		//=> '_foo-bar'
     		```
     		*/
-    val preserveLeadingUnderscore: js.UndefOr[Boolean] = js.native
+    val preserveLeadingUnderscore: js.UndefOr[Boolean] = js.undefined
     
     /**
     		@default '-'
@@ -150,7 +149,7 @@ object mod {
     		//=> 'barandbaz'
     		```
     		*/
-    val separator: js.UndefOr[String] = js.native
+    val separator: js.UndefOr[String] = js.undefined
   }
   object Options {
     

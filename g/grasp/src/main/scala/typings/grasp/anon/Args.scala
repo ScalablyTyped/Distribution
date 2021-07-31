@@ -5,21 +5,19 @@ import typings.node.anon.ReadStreamfd0
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: js.Array[String] | (Record[String, _]) | String = js.native
+  var args: js.Array[String] | (Record[String, js.Any]) | String
   
-  var callback: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* result */ String, Unit]] = js.undefined
   
-  var console: js.UndefOr[Typeofconsole] = js.native
+  var console: js.UndefOr[Typeofconsole] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   
-  var exit: js.UndefOr[js.Function1[/* code */ Double, Unit]] = js.native
+  var exit: js.UndefOr[js.Function1[/* code */ Double, Unit]] = js.undefined
   
   // The following are "overrides" for defaults, such as console, cli-color,
   // process.stdin, or fs. In most cases grasp only makes use of a small
@@ -28,18 +26,18 @@ trait Args extends StObject {
   // it should be up to them to use a cast rather than the typedef to be
   // overly lenient. We never know if grasp might change their internal use of
   // fs, after all.
-  var fs: js.UndefOr[Typeoffs] = js.native
+  var fs: js.UndefOr[Typeoffs] = js.undefined
   
-  var input: js.UndefOr[String] = js.native
+  var input: js.UndefOr[String] = js.undefined
   
-  var stdin: js.UndefOr[ReadStreamfd0] = js.native
+  var stdin: js.UndefOr[ReadStreamfd0] = js.undefined
   
-  var textFormat: js.UndefOr[Color] = js.native
+  var textFormat: js.UndefOr[Color] = js.undefined
 }
 object Args {
   
   @scala.inline
-  def apply(args: js.Array[String] | (Record[String, _]) | String): Args = {
+  def apply(args: js.Array[String] | (Record[String, js.Any]) | String): Args = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
     __obj.asInstanceOf[Args]
   }
@@ -48,7 +46,7 @@ object Args {
   implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[String] | (Record[String, _]) | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[String] | (Record[String, js.Any]) | String): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsVarargs(value: String*): Self = StObject.set(x, "args", js.Array(value :_*))

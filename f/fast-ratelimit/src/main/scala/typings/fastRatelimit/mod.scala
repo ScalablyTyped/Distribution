@@ -2,7 +2,6 @@ package typings.fastRatelimit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,13 +36,12 @@ object mod {
     def hasTokenSync(namespace: String): Boolean = js.native
   }
   
-  @js.native
   trait FastRateLimitOptions extends StObject {
     
-    var threshold: Double = js.native
+    var threshold: Double
     
     // available tokens over timespan
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object FastRateLimitOptions {
     

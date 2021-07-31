@@ -7,7 +7,6 @@ import typings.cassandraDriver.typesMod.types.Long
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mappingMod {
@@ -16,7 +15,19 @@ object mappingMod {
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.DefaultTableMappings")
     @js.native
-    class DefaultTableMappings () extends TableMappings
+    class DefaultTableMappings ()
+      extends StObject
+         with TableMappings {
+      
+      /* CompleteClass */
+      override def getColumnName(propName: String): String = js.native
+      
+      /* CompleteClass */
+      override def getPropertyName(columnName: String): String = js.native
+      
+      /* CompleteClass */
+      override def newObjectInstance(): js.Any = js.native
+    }
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.Mapper")
     @js.native
@@ -24,79 +35,81 @@ object mappingMod {
       def this(client: Client) = this()
       def this(client: Client, options: MappingOptions) = this()
       
-      def batch(items: js.Array[ModelBatchItem]): js.Promise[Result[_]] = js.native
-      def batch(items: js.Array[ModelBatchItem], executionOptions: String): js.Promise[Result[_]] = js.native
-      def batch(items: js.Array[ModelBatchItem], executionOptions: MappingExecutionOptions): js.Promise[Result[_]] = js.native
+      def batch(items: js.Array[ModelBatchItem]): js.Promise[Result[js.Any]] = js.native
+      def batch(items: js.Array[ModelBatchItem], executionOptions: String): js.Promise[Result[js.Any]] = js.native
+      def batch(items: js.Array[ModelBatchItem], executionOptions: MappingExecutionOptions): js.Promise[Result[js.Any]] = js.native
       
       def forModel[T](name: String): ModelMapper[T] = js.native
     }
     
     @JSImport("cassandra-driver/lib/mapping", "mapping.UnderscoreCqlToCamelCaseMappings")
     @js.native
-    class UnderscoreCqlToCamelCaseMappings () extends TableMappings
+    class UnderscoreCqlToCamelCaseMappings ()
+      extends StObject
+         with TableMappings {
+      
+      /* CompleteClass */
+      override def getColumnName(propName: String): String = js.native
+      
+      /* CompleteClass */
+      override def getPropertyName(columnName: String): String = js.native
+      
+      /* CompleteClass */
+      override def newObjectInstance(): js.Any = js.native
+    }
     
     object q {
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.and")
+      @JSImport("cassandra-driver/lib/mapping", "mapping.q")
       @js.native
-      def and(condition1: js.Any, condition2: js.Any): QueryOperator = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.append")
-      @js.native
-      def append(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def and(condition1: js.Any, condition2: js.Any): QueryOperator = (^.asInstanceOf[js.Dynamic].applyDynamic("and")(condition1.asInstanceOf[js.Any], condition2.asInstanceOf[js.Any])).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.decr")
-      @js.native
-      def decr(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def append(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("append")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.gt")
-      @js.native
-      def gt(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def decr(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("decr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.gte")
-      @js.native
-      def gte(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def gt(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.in_")
-      @js.native
-      def in(arr: js.Any): QueryOperator = js.native
+      @scala.inline
+      def gte(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("gte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.incr")
-      @js.native
-      def incr(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def in(arr: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("in_")(arr.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.lt")
-      @js.native
-      def lt(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def incr(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("incr")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.lte")
-      @js.native
-      def lte(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def lt(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lt")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.notEq")
-      @js.native
-      def notEq(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def lte(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("lte")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.prepend")
-      @js.native
-      def prepend(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def notEq(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("notEq")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @JSImport("cassandra-driver/lib/mapping", "mapping.q.remove")
-      @js.native
-      def remove(value: js.Any): QueryOperator = js.native
+      @scala.inline
+      def prepend(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("prepend")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
       
-      @js.native
+      @scala.inline
+      def remove(value: js.Any): QueryOperator = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[QueryOperator]
+      
       trait QueryOperator extends StObject
     }
     
-    @js.native
     trait FindDocInfo extends StObject {
       
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
-      var orderBy: js.UndefOr[StringDictionary[String]] = js.native
+      var orderBy: js.UndefOr[StringDictionary[String]] = js.undefined
     }
     object FindDocInfo {
       
@@ -132,14 +145,13 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait InsertDocInfo extends StObject {
       
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ifNotExists: js.UndefOr[Boolean] = js.native
+      var ifNotExists: js.UndefOr[Boolean] = js.undefined
       
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
     }
     object InsertDocInfo {
       
@@ -175,20 +187,19 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait MappingExecutionOptions extends StObject {
       
-      var executionProfile: js.UndefOr[String] = js.native
+      var executionProfile: js.UndefOr[String] = js.undefined
       
-      var fetchSize: js.UndefOr[Double] = js.native
+      var fetchSize: js.UndefOr[Double] = js.undefined
       
-      var isIdempotent: js.UndefOr[Boolean] = js.native
+      var isIdempotent: js.UndefOr[Boolean] = js.undefined
       
-      var logged: js.UndefOr[Boolean] = js.native
+      var logged: js.UndefOr[Boolean] = js.undefined
       
-      var pageState: js.UndefOr[Double] = js.native
+      var pageState: js.UndefOr[Double] = js.undefined
       
-      var timestamp: js.UndefOr[Double | Long] = js.native
+      var timestamp: js.UndefOr[Double | Long] = js.undefined
     }
     object MappingExecutionOptions {
       
@@ -239,10 +250,9 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait MappingOptions extends StObject {
       
-      var models: StringDictionary[ModelOptions] = js.native
+      var models: StringDictionary[ModelOptions]
     }
     object MappingOptions {
       
@@ -260,7 +270,6 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait ModelBatchItem extends StObject
     
     @js.native
@@ -276,14 +285,13 @@ object mappingMod {
       def update(doc: js.Any, docInfo: UpdateDocInfo): ModelBatchItem = js.native
     }
     
-    @js.native
     trait ModelColumnOptions extends StObject {
       
-      var fromModel: js.UndefOr[js.Function1[/* modelValue */ js.Any, _]] = js.native
+      var fromModel: js.UndefOr[js.Function1[/* modelValue */ js.Any, js.Any]] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var toModel: js.UndefOr[js.Function1[/* columnValue */ js.Any, _]] = js.native
+      var toModel: js.UndefOr[js.Function1[/* columnValue */ js.Any, js.Any]] = js.undefined
     }
     object ModelColumnOptions {
       
@@ -297,7 +305,7 @@ object mappingMod {
       implicit class ModelColumnOptionsMutableBuilder[Self <: ModelColumnOptions] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setFromModel(value: /* modelValue */ js.Any => _): Self = StObject.set(x, "fromModel", js.Any.fromFunction1(value))
+        def setFromModel(value: /* modelValue */ js.Any => js.Any): Self = StObject.set(x, "fromModel", js.Any.fromFunction1(value))
         
         @scala.inline
         def setFromModelUndefined: Self = StObject.set(x, "fromModel", js.undefined)
@@ -306,7 +314,7 @@ object mappingMod {
         def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setToModel(value: /* columnValue */ js.Any => _): Self = StObject.set(x, "toModel", js.Any.fromFunction1(value))
+        def setToModel(value: /* columnValue */ js.Any => js.Any): Self = StObject.set(x, "toModel", js.Any.fromFunction1(value))
         
         @scala.inline
         def setToModelUndefined: Self = StObject.set(x, "toModel", js.undefined)
@@ -319,53 +327,41 @@ object mappingMod {
       var batching: ModelBatchMapper = js.native
       
       def find(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def find(doc: StringDictionary[js.Any], docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Result[T]] = js.native
-      def find(
-        doc: StringDictionary[js.Any],
-        docInfo: js.UndefOr[scala.Nothing],
-        executionOptions: MappingExecutionOptions
-      ): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def find(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo): js.Promise[Result[T]] = js.native
       def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def find(doc: StringDictionary[js.Any], docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
       def findAll(): js.Promise[Result[T]] = js.native
-      def findAll(docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Result[T]] = js.native
-      def findAll(docInfo: js.UndefOr[scala.Nothing], executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
+      def findAll(docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def findAll(docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       def findAll(docInfo: FindDocInfo): js.Promise[Result[T]] = js.native
       def findAll(docInfo: FindDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def findAll(docInfo: FindDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
       def get(doc: StringDictionary[js.Any]): js.Promise[Null | T] = js.native
-      def get(doc: StringDictionary[js.Any], docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Null | T] = js.native
-      def get(
-        doc: StringDictionary[js.Any],
-        docInfo: js.UndefOr[scala.Nothing],
-        executionOptions: MappingExecutionOptions
-      ): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Null | T] = js.native
+      def get(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
       def get(doc: StringDictionary[js.Any], docInfo: Fields): js.Promise[Null | T] = js.native
       def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: String): js.Promise[Null | T] = js.native
       def get(doc: StringDictionary[js.Any], docInfo: Fields, executionOptions: MappingExecutionOptions): js.Promise[Null | T] = js.native
       
       def insert(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def insert(doc: StringDictionary[js.Any], docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Result[T]] = js.native
-      def insert(
-        doc: StringDictionary[js.Any],
-        docInfo: js.UndefOr[scala.Nothing],
-        executionOptions: MappingExecutionOptions
-      ): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def insert(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo): js.Promise[Result[T]] = js.native
       def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def insert(doc: StringDictionary[js.Any], docInfo: InsertDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
-      def mapWithQuery(query: String, paramsHandler: js.Function1[/* doc */ js.Any, js.Array[_]]): js.Function2[
+      def mapWithQuery(query: String, paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]]): js.Function2[
             /* doc */ js.Any, 
             /* executionOptions */ js.UndefOr[String | MappingExecutionOptions], 
             js.Promise[Result[T]]
           ] = js.native
       def mapWithQuery(
         query: String,
-        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[_]],
+        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]],
         executionOptions: String
       ): js.Function2[
             /* doc */ js.Any, 
@@ -374,7 +370,7 @@ object mappingMod {
           ] = js.native
       def mapWithQuery(
         query: String,
-        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[_]],
+        paramsHandler: js.Function1[/* doc */ js.Any, js.Array[js.Any]],
         executionOptions: MappingExecutionOptions
       ): js.Function2[
             /* doc */ js.Any, 
@@ -385,38 +381,29 @@ object mappingMod {
       var name: String = js.native
       
       def remove(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def remove(doc: StringDictionary[js.Any], docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Result[T]] = js.native
-      def remove(
-        doc: StringDictionary[js.Any],
-        docInfo: js.UndefOr[scala.Nothing],
-        executionOptions: MappingExecutionOptions
-      ): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def remove(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo): js.Promise[Result[T]] = js.native
       def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def remove(doc: StringDictionary[js.Any], docInfo: RemoveDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       
       def update(doc: StringDictionary[js.Any]): js.Promise[Result[T]] = js.native
-      def update(doc: StringDictionary[js.Any], docInfo: js.UndefOr[scala.Nothing], executionOptions: String): js.Promise[Result[T]] = js.native
-      def update(
-        doc: StringDictionary[js.Any],
-        docInfo: js.UndefOr[scala.Nothing],
-        executionOptions: MappingExecutionOptions
-      ): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: String): js.Promise[Result[T]] = js.native
+      def update(doc: StringDictionary[js.Any], docInfo: Unit, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
       def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo): js.Promise[Result[T]] = js.native
       def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo, executionOptions: String): js.Promise[Result[T]] = js.native
       def update(doc: StringDictionary[js.Any], docInfo: UpdateDocInfo, executionOptions: MappingExecutionOptions): js.Promise[Result[T]] = js.native
     }
     
-    @js.native
     trait ModelOptions extends StObject {
       
-      var columns: js.UndefOr[StringDictionary[String | ModelColumnOptions]] = js.native
+      var columns: js.UndefOr[StringDictionary[String | ModelColumnOptions]] = js.undefined
       
-      var keyspace: js.UndefOr[String] = js.native
+      var keyspace: js.UndefOr[String] = js.undefined
       
-      var mappings: js.UndefOr[TableMappings] = js.native
+      var mappings: js.UndefOr[TableMappings] = js.undefined
       
-      var tables: js.UndefOr[js.Array[ModelTables | String]] = js.native
+      var tables: js.UndefOr[js.Array[ModelTables | String]] = js.undefined
     }
     object ModelOptions {
       
@@ -458,12 +445,11 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait ModelTables extends StObject {
       
-      var isView: Boolean = js.native
+      var isView: Boolean
       
-      var name: String = js.native
+      var name: String
     }
     object ModelTables {
       
@@ -484,18 +470,17 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait RemoveDocInfo extends StObject {
       
-      var deleteOnlyColumns: js.UndefOr[Boolean] = js.native
+      var deleteOnlyColumns: js.UndefOr[Boolean] = js.undefined
       
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ifExists: js.UndefOr[Boolean] = js.native
+      var ifExists: js.UndefOr[Boolean] = js.undefined
       
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
       
-      var when: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var when: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object RemoveDocInfo {
       
@@ -545,7 +530,8 @@ object mappingMod {
     
     @js.native
     trait Result[T]
-      extends Iterator[T, js.Any, js.UndefOr[scala.Nothing]] {
+      extends StObject
+         with Iterator[T, js.Any, Unit] {
       
       def first(): T | Null = js.native
       
@@ -557,14 +543,13 @@ object mappingMod {
       def wasApplied(): Boolean = js.native
     }
     
-    @js.native
     trait TableMappings extends StObject {
       
-      def getColumnName(propName: String): String = js.native
+      def getColumnName(propName: String): String
       
-      def getPropertyName(columnName: String): String = js.native
+      def getPropertyName(columnName: String): String
       
-      def newObjectInstance(): js.Any = js.native
+      def newObjectInstance(): js.Any
     }
     object TableMappings {
       
@@ -592,22 +577,21 @@ object mappingMod {
       }
     }
     
-    @js.native
     trait UpdateDocInfo extends StObject {
       
-      var deleteOnlyColumns: js.UndefOr[Boolean] = js.native
+      var deleteOnlyColumns: js.UndefOr[Boolean] = js.undefined
       
-      var fields: js.UndefOr[js.Array[String]] = js.native
+      var fields: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ifExists: js.UndefOr[Boolean] = js.native
+      var ifExists: js.UndefOr[Boolean] = js.undefined
       
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
-      var orderBy: js.UndefOr[StringDictionary[String]] = js.native
+      var orderBy: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var ttl: js.UndefOr[Double] = js.native
+      var ttl: js.UndefOr[Double] = js.undefined
       
-      var when: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var when: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object UpdateDocInfo {
       

@@ -14,7 +14,6 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -74,8 +73,9 @@ object csr {
     * //   subjectPKInfo SubjectPublicKeyInfo{{ PKInfoAlgorithms }},
     * //   attributes    [0] Attributes{{ CRIAttributes }} }
     */
-  @js.native
-  trait CertificationRequest extends ASN1Object {
+  trait CertificationRequest
+    extends StObject
+       with ASN1Object {
     
     /**
       * get PEM formatted certificate signing request (CSR/PKCS#10)
@@ -92,7 +92,7 @@ object csr {
       * // MII ...snip...
       * // -----END CERTIFICATE REQUEST-----
       */
-    def getPEMString(): String = js.native
+    def getPEMString(): String
     
     /**
       * sign CertificationRequest and set signature value internally
@@ -104,7 +104,7 @@ object csr {
       * csr = new KJUR.asn1.csr.CertificationRequest({'csrinfo': csri});
       * csr.sign("SHA256withRSA", prvKeyObj);
       */
-    def sign(sigAlgName: String, prvKeyObj: js.Any): Unit = js.native
+    def sign(sigAlgName: String, prvKeyObj: js.Any): Unit
   }
   object CertificationRequest {
     
@@ -156,7 +156,9 @@ object csr {
     * csri.setSubjectPublicKeyByGetKey(pubKeyObj);
     */
   @js.native
-  trait CertificationRequestInfo extends ASN1Object {
+  trait CertificationRequestInfo
+    extends StObject
+       with ASN1Object {
     
     def _initialize(): Unit = js.native
     
@@ -208,12 +210,11 @@ object csr {
     def setSubjectPublicKeyByGetKey(keyParam: RSAKey): Unit = js.native
   }
   
-  @js.native
   trait PEMInfo extends StObject {
     
-    var pubkey: Obj = js.native
+    var pubkey: Obj
     
-    var subject: HexName = js.native
+    var subject: HexName
   }
   object PEMInfo {
     

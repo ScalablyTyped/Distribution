@@ -2,23 +2,21 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssignmentsForHITResponse extends StObject {
   
   /**
     *  The collection of Assignment data structures returned by this call.
     */
-  var Assignments: js.UndefOr[AssignmentList] = js.native
+  var Assignments: js.UndefOr[AssignmentList] = js.undefined
   
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The number of assignments on the page in the filtered results list, equivalent to the number of assignments returned by this call.
     */
-  var NumResults: js.UndefOr[Integer] = js.native
+  var NumResults: js.UndefOr[Integer] = js.undefined
 }
 object ListAssignmentsForHITResponse {
   

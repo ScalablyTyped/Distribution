@@ -2,31 +2,29 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssetRequest extends StObject {
   
   /**
     * The ID of the asset model from which to create the asset.
     */
-  var assetModelId: ID = js.native
+  var assetModelId: ID
   
   /**
     * A unique, friendly name for the asset.
     */
-  var assetName: Name = js.native
+  var assetName: Name
   
   /**
     * A unique case-sensitive identifier that you can provide to ensure the idempotency of the request. Don't reuse this client token if a new idempotent request is required.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * A list of key-value pairs that contain metadata for the asset. For more information, see Tagging your AWS IoT SiteWise resources in the AWS IoT SiteWise User Guide.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateAssetRequest {
   

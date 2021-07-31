@@ -11,17 +11,15 @@ import typings.croppie.mod.CropType
 import typings.croppie.mod.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -42,18 +40,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Orientation extends StObject {
     
-    var orientation: js.UndefOr[Double] = js.native
+    var orientation: js.UndefOr[Double] = js.undefined
     
-    var points: js.UndefOr[js.Array[Double]] = js.native
+    var points: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var useCanvas: js.UndefOr[Boolean] = js.native
+    var useCanvas: js.UndefOr[Boolean] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object Orientation {
     
@@ -99,23 +96,22 @@ object anon {
   }
   
   /* Inlined croppie.croppie.ResultOptions & {  type :'base64' | 'canvas'} */
-  @js.native
   trait ResultOptionstypebase64ca extends StObject {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[viewport | original | Height] = js.native
+    var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] with (base64 | canvas) = js.native
+    var `type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)
   }
   object ResultOptionstypebase64ca {
     
     @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] with (base64 | canvas)): ResultOptionstypebase64ca = {
+    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): ResultOptionstypebase64ca = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypebase64ca]
@@ -149,28 +145,27 @@ object anon {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] with (base64 | canvas)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.UndefOr[typings.croppie.mod.Type] & (base64 | canvas)): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined croppie.croppie.ResultOptions & {  type :'blob'} */
-  @js.native
   trait ResultOptionstypeblob extends StObject {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[viewport | original | Height] = js.native
+    var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] with blob = js.native
+    var `type`: js.UndefOr[typings.croppie.mod.Type] & blob
   }
   object ResultOptionstypeblob {
     
     @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] with blob): ResultOptionstypeblob = {
+    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & blob): ResultOptionstypeblob = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypeblob]
@@ -204,28 +199,27 @@ object anon {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] with blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.UndefOr[typings.croppie.mod.Type] & blob): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined croppie.croppie.ResultOptions & {  type :'html'} */
-  @js.native
   trait ResultOptionstypehtml extends StObject {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[viewport | original | Height] = js.native
+    var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] with html = js.native
+    var `type`: js.UndefOr[typings.croppie.mod.Type] & html
   }
   object ResultOptionstypehtml {
     
     @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] with html): ResultOptionstypehtml = {
+    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & html): ResultOptionstypehtml = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstypehtml]
@@ -259,28 +253,27 @@ object anon {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] with html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.UndefOr[typings.croppie.mod.Type] & html): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined croppie.croppie.ResultOptions & {  type :'rawcanvas'} */
-  @js.native
   trait ResultOptionstyperawcanva extends StObject {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[viewport | original | Height] = js.native
+    var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[typings.croppie.mod.Type] with rawcanvas = js.native
+    var `type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas
   }
   object ResultOptionstyperawcanva {
     
     @scala.inline
-    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] with rawcanvas): ResultOptionstyperawcanva = {
+    def apply(`type`: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): ResultOptionstyperawcanva = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultOptionstyperawcanva]
@@ -314,18 +307,17 @@ object anon {
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
       
       @scala.inline
-      def setType(value: js.UndefOr[typings.croppie.mod.Type] with rawcanvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: js.UndefOr[typings.croppie.mod.Type] & rawcanvas): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var `type`: js.UndefOr[CropType] = js.native
+    var `type`: js.UndefOr[CropType] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object Type {
     

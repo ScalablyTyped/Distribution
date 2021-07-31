@@ -16,7 +16,6 @@ import typings.plottable.plottableStrings.year
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timeAxisMod {
@@ -292,29 +291,49 @@ object timeAxisMod {
   
   type TimeAxisConfiguration = js.Array[TimeAxisTierConfiguration]
   
-  @js.native
   trait TimeAxisTierConfiguration extends StObject {
     
     /**
       * Formatter used to format tick labels. Tick values will be passed through the formatter
       * before being displayed.
       */
-    def formatter(value: js.Any): String = js.native
+    def formatter(value: js.Any): String
     /**
       * Formatter used to format tick labels. Tick values will be passed through the formatter
       * before being displayed.
       */
     @JSName("formatter")
-    var formatter_Original: Formatter = js.native
+    var formatter_Original: Formatter
     
     /**
       * The time unit associated with this configuration (seconds, minutes, hours, etc).
       */
-    var interval: String = js.native
+    var interval: String
     
     /**
       * Number of intervals between each tick.
       */
-    var step: Double = js.native
+    var step: Double
+  }
+  object TimeAxisTierConfiguration {
+    
+    @scala.inline
+    def apply(formatter: /* value */ js.Any => String, interval: String, step: Double): TimeAxisTierConfiguration = {
+      val __obj = js.Dynamic.literal(formatter = js.Any.fromFunction1(formatter), interval = interval.asInstanceOf[js.Any], step = step.asInstanceOf[js.Any])
+      __obj.asInstanceOf[TimeAxisTierConfiguration]
+    }
+    
+    @scala.inline
+    implicit class TimeAxisTierConfigurationMutableBuilder[Self <: TimeAxisTierConfiguration] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setFormatter(value: /* value */ js.Any => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
+    }
   }
 }

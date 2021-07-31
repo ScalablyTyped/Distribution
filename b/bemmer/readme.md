@@ -12,7 +12,7 @@ BEM-like simple classname builder.
 | Keywords           | react, bem, classname, css |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 6174 |
+| # downloads        | 7961 |
 | # stars            | 1 |
 
 ## Links

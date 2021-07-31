@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapBinaryImageEventMap extends BootstrapClientEditEventMap {
+trait BootstrapBinaryImageEventMap
+  extends StObject
+     with BootstrapClientEditEventMap {
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var click: EditClickEventArgs = js.native
+  var click: EditClickEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
 }
 object BootstrapBinaryImageEventMap {
   

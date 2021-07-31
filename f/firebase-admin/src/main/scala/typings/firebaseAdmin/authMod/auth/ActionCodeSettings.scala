@@ -4,14 +4,12 @@ import typings.firebaseAdmin.anon.BundleId
 import typings.firebaseAdmin.anon.InstallApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is the interface that defines the required continue/state URL with
   * optional Android and iOS bundle identifiers.
   */
-@js.native
 trait ActionCodeSettings extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait ActionCodeSettings extends StObject {
     * version of the app is installed, the user is taken to the Play Store to
     * upgrade the app.
     */
-  var android: js.UndefOr[InstallApp] = js.native
+  var android: js.UndefOr[InstallApp] = js.undefined
   
   /**
     * Defines the dynamic link domain to use for the current link if it is to be
@@ -33,7 +31,7 @@ trait ActionCodeSettings extends StObject {
     * configured per project. This fields provides the ability explicitly choose
     * one. If none is provided, the oldest domain is used by default.
     */
-  var dynamicLinkDomain: js.UndefOr[String] = js.native
+  var dynamicLinkDomain: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to open the link via a mobile app or a browser.
@@ -42,13 +40,13 @@ trait ActionCodeSettings extends StObject {
     * installed. In the false case, the code is sent to the web widget first
     * and then redirects to the app if installed.
     */
-  var handleCodeInApp: js.UndefOr[Boolean] = js.native
+  var handleCodeInApp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the iOS bundle ID. This will try to open the link in an iOS app if it
     * is installed.
     */
-  var iOS: js.UndefOr[BundleId] = js.native
+  var iOS: js.UndefOr[BundleId] = js.undefined
   
   /**
     * Defines the link continue/state URL, which has different meanings in
@@ -60,7 +58,7 @@ trait ActionCodeSettings extends StObject {
     *     query parameter in the deep link of the Dynamic Link.</li>
     * </ul>
     */
-  var url: String = js.native
+  var url: String
 }
 object ActionCodeSettings {
   

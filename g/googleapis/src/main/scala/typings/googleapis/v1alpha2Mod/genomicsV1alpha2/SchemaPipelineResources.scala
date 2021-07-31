@@ -2,13 +2,11 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The system resources for the pipeline run.
   */
-@js.native
 trait SchemaPipelineResources extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaPipelineResources extends StObject {
     * third-party software onto your managed Compute Engine instances: NVIDIA®
     * Tesla® drivers and NVIDIA® CUDA toolkit.
     */
-  var acceleratorCount: js.UndefOr[String] = js.native
+  var acceleratorCount: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Compute Engine defined accelerator type. By specifying this
@@ -27,27 +25,27 @@ trait SchemaPipelineResources extends StObject {
     * https://cloud.google.com/compute/docs/gpus/ for a list of available
     * accelerator types.
     */
-  var acceleratorType: js.UndefOr[String] = js.native
+  var acceleratorType: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the boot disk. Defaults to 10 (GB).
     */
-  var bootDiskSizeGb: js.UndefOr[Double] = js.native
+  var bootDiskSizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Disks to attach.
     */
-  var disks: js.UndefOr[js.Array[SchemaDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaDisk]] = js.undefined
   
   /**
     * The minimum number of cores to use. Defaults to 1.
     */
-  var minimumCpuCores: js.UndefOr[Double] = js.native
+  var minimumCpuCores: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum amount of RAM to use. Defaults to 3.75 (GB)
     */
-  var minimumRamGb: js.UndefOr[Double] = js.native
+  var minimumRamGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to assign an external IP to the instance. This is an experimental
@@ -63,20 +61,20 @@ trait SchemaPipelineResources extends StObject {
     * Google services from internal
     * IPs](https://cloud.google.com/compute/docs/configure-private-google-access#configuring_access_to_google_services_from_internal_ips).
     */
-  var noAddress: js.UndefOr[Boolean] = js.native
+  var noAddress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to use preemptible VMs. Defaults to `false`. In order to use
     * this, must be true for both create time and run time. Cannot be true at
     * run time if false at create time.
     */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of Google Compute Engine availability zones to which resource
     * creation will restricted. If empty, any zone may be chosen.
     */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPipelineResources {
   

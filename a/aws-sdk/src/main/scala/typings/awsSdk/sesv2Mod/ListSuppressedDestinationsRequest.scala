@@ -2,36 +2,34 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSuppressedDestinationsRequest extends StObject {
   
   /**
     * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list before a specific date. The date that you specify should be in Unix time format.
     */
-  var EndDate: js.UndefOr[Timestamp] = js.native
+  var EndDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A token returned from a previous call to ListSuppressedDestinations to indicate the position in the list of suppressed email addresses.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
   
   /**
     * The number of results to show in a single call to ListSuppressedDestinations. If the number of results is larger than the number you specified in this parameter, then the response includes a NextToken element, which you can use to obtain additional results.
     */
-  var PageSize: js.UndefOr[MaxItems] = js.native
+  var PageSize: js.UndefOr[MaxItems] = js.undefined
   
   /**
     * The factors that caused the email address to be added to .
     */
-  var Reasons: js.UndefOr[SuppressionListReasons] = js.native
+  var Reasons: js.UndefOr[SuppressionListReasons] = js.undefined
   
   /**
     * Used to filter the list of suppressed email destinations so that it only includes addresses that were added to the list after a specific date. The date that you specify should be in Unix time format.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.native
+  var StartDate: js.UndefOr[Timestamp] = js.undefined
 }
 object ListSuppressedDestinationsRequest {
   

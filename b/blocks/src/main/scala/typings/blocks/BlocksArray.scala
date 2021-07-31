@@ -2,14 +2,15 @@ package typings.blocks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /////////////////////////////////////////
 // blocks array
 /////////////////////////////////////////
 @js.native
-trait BlocksArray extends BlocksObservable {
+trait BlocksArray
+  extends StObject
+     with BlocksObservable {
   
   /**
     * Adds values to the end of the observable array
@@ -28,19 +29,19 @@ trait BlocksArray extends BlocksObservable {
     * 
     * @param value The array that will be added to the end of the array
     */
-  def addMany(value: js.Array[_]): BlocksArray = js.native
+  def addMany(value: js.Array[js.Any]): BlocksArray = js.native
   /**
     * @param value The array that will be added to the end of the array
     * @param index Optional position where the array of values to be inserted
     */
-  def addMany(value: js.Array[_], index: Double): BlocksArray = js.native
+  def addMany(value: js.Array[js.Any], index: Double): BlocksArray = js.native
   
   /**
     * The concat() method is used to join two or more arrays
     * 
     * @param arrays The arrays to be joined
     */
-  def concat(arrays: js.Any*): js.Array[_] = js.native
+  def concat(arrays: js.Any*): js.Array[js.Any] = js.native
   
   /**
     * Extends the current observable with particular functionality depending on the parameters specified.
@@ -124,12 +125,12 @@ trait BlocksArray extends BlocksObservable {
     * 
     * @param value The new value that will be populated
     */
-  def reset(value: js.Array[_]): BlocksArray = js.native
+  def reset(value: js.Array[js.Any]): BlocksArray = js.native
   
   /**
     * Reverses the order of the elements in the observable array
     */
-  def reverse(): js.Array[_] = js.native
+  def reverse(): js.Array[js.Any] = js.native
   
   /**
     * Removes the first element of a observable array, and returns that element
@@ -141,22 +142,22 @@ trait BlocksArray extends BlocksObservable {
     * 
     * @param start An integer that specifies where to start the selection (The first element has an index of 0)
     */
-  def slice(start: Double): js.Array[_] = js.native
+  def slice(start: Double): js.Array[js.Any] = js.native
   /**
     * @param start An integer that specifies where to start the selection (The first element has an index of 0)
     * @param end An integer that specifies where to end the selection. If omitted, all elements from the start position and to the end of the array will be selected.
     *            Use negative numbers to select from the end of an array
     */
-  def slice(start: Double, end: Double): js.Array[_] = js.native
+  def slice(start: Double, end: Double): js.Array[js.Any] = js.native
   
   /**
     * Sorts the elements of an array
     */
-  def sort(): js.Array[_] = js.native
+  def sort(): js.Array[js.Any] = js.native
   /**
     * @param sortfunction A function that defines the sort order
     */
-  def sort(sortfunction: js.Function): js.Array[_] = js.native
+  def sort(sortfunction: js.Function): js.Array[js.Any] = js.native
   
   /**
     * Adds and/or removes elements from the observable array
@@ -166,7 +167,7 @@ trait BlocksArray extends BlocksObservable {
     * @param howMany The number of items to be removed. If set to 0, no items will be removed.
     * @param items The new item(s) to be added to the array.
     */
-  def splice(index: Double, howMany: Double, items: js.Any*): js.Array[_] = js.native
+  def splice(index: Double, howMany: Double, items: js.Any*): js.Array[js.Any] = js.native
   
   /**
     * Swaps two values in the observable array. Note: Faster than removing the items and adding them at the locations

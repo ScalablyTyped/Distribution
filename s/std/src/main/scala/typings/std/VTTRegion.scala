@@ -2,27 +2,25 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VTTRegion extends StObject {
   
-  var id: java.lang.String = js.native
+  var id: java.lang.String
   
-  var lines: Double = js.native
+  var lines: Double
   
-  var regionAnchorX: Double = js.native
+  var regionAnchorX: Double
   
-  var regionAnchorY: Double = js.native
+  var regionAnchorY: Double
   
-  var scroll: ScrollSetting = js.native
+  var scroll: ScrollSetting
   
-  var viewportAnchorX: Double = js.native
+  var viewportAnchorX: Double
   
-  var viewportAnchorY: Double = js.native
+  var viewportAnchorY: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object VTTRegion {
   

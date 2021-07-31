@@ -5,7 +5,6 @@ import typings.mysql.mysqlStrings.offline
 import typings.mysql.mysqlStrings.remove
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,10 +34,10 @@ trait PoolCluster extends StObject {
     callback: js.Function2[/* err */ MysqlError, /* connection */ PoolConnection, Unit]
   ): Unit = js.native
   
-  def of(pattern: js.UndefOr[scala.Nothing], selector: String): Pool = js.native
   def of(pattern: String): Pool = js.native
   def of(pattern: String, selector: String): Pool = js.native
   def of(pattern: Null, selector: String): Pool = js.native
+  def of(pattern: Unit, selector: String): Pool = js.native
   @JSName("of")
   def of_false(pattern: `false`, selector: String): Pool = js.native
   

@@ -4,7 +4,6 @@ import typings.primereact.anon.IndexNumber
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object galleriaMod {
@@ -31,64 +30,63 @@ object galleriaMod {
     def stopSlideShow(): Unit = js.native
   }
   
-  @js.native
   trait GalleriaProps extends StObject {
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var autoPlay: js.UndefOr[Boolean] = js.native
+    var autoPlay: js.UndefOr[Boolean] = js.undefined
     
-    var baseZIndex: js.UndefOr[Double] = js.native
+    var baseZIndex: js.UndefOr[Double] = js.undefined
     
-    var caption: js.UndefOr[js.Any] = js.native
+    var caption: js.UndefOr[js.Any] = js.undefined
     
-    var changeItemOnIndicatorHover: js.UndefOr[Boolean] = js.native
+    var changeItemOnIndicatorHover: js.UndefOr[Boolean] = js.undefined
     
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var fullScreen: js.UndefOr[Boolean] = js.native
+    var fullScreen: js.UndefOr[Boolean] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var indicator: js.UndefOr[js.Any] = js.native
+    var indicator: js.UndefOr[js.Any] = js.undefined
     
-    var indicatorsPosition: js.UndefOr[String] = js.native
+    var indicatorsPosition: js.UndefOr[String] = js.undefined
     
-    var item: js.UndefOr[js.Any] = js.native
+    var item: js.UndefOr[js.Any] = js.undefined
     
-    var numVisible: js.UndefOr[Double] = js.native
+    var numVisible: js.UndefOr[Double] = js.undefined
     
-    var onItemChange: js.UndefOr[js.Function1[/* e */ IndexNumber, Unit]] = js.native
+    var onItemChange: js.UndefOr[js.Function1[/* e */ IndexNumber, Unit]] = js.undefined
     
-    var responsiveOptions: js.UndefOr[js.Any] = js.native
+    var responsiveOptions: js.UndefOr[js.Any] = js.undefined
     
-    var showIndicators: js.UndefOr[Boolean] = js.native
+    var showIndicators: js.UndefOr[Boolean] = js.undefined
     
-    var showIndicatorsOnItem: js.UndefOr[Boolean] = js.native
+    var showIndicatorsOnItem: js.UndefOr[Boolean] = js.undefined
     
-    var showItemNavigators: js.UndefOr[Boolean] = js.native
+    var showItemNavigators: js.UndefOr[Boolean] = js.undefined
     
-    var showItemNavigatorsOnHover: js.UndefOr[Boolean] = js.native
+    var showItemNavigatorsOnHover: js.UndefOr[Boolean] = js.undefined
     
-    var showThumbnailNavigators: js.UndefOr[Boolean] = js.native
+    var showThumbnailNavigators: js.UndefOr[Boolean] = js.undefined
     
-    var showThumbnails: js.UndefOr[Boolean] = js.native
+    var showThumbnails: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var thumbnail: js.UndefOr[js.Any] = js.native
+    var thumbnail: js.UndefOr[js.Any] = js.undefined
     
-    var thumbnailsPosition: js.UndefOr[String] = js.native
+    var thumbnailsPosition: js.UndefOr[String] = js.undefined
     
-    var transitionInterval: js.UndefOr[Double] = js.native
+    var transitionInterval: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object GalleriaProps {
     
@@ -264,7 +262,7 @@ object galleriaMod {
       def setTransitionIntervalUndefined: Self = StObject.set(x, "transitionInterval", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

@@ -3,23 +3,21 @@ package typings.expoFileSystem.fileSystemTypesMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemHttpResult extends StObject {
   
-  var headers: Record[String, String] = js.native
+  var headers: Record[String, String]
   
-  var mimeType: String | Null = js.native
+  var mimeType: String | Null
   
-  var status: Double = js.native
+  var status: Double
 }
 object FileSystemHttpResult {
   
   @scala.inline
   def apply(headers: Record[String, String], status: Double): FileSystemHttpResult = {
-    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], mimeType = null)
     __obj.asInstanceOf[FileSystemHttpResult]
   }
   

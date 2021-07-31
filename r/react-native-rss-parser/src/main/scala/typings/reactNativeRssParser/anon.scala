@@ -3,31 +3,29 @@ package typings.reactNativeRssParser
 import typings.reactNativeRssParser.mod.Maybe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Authors extends StObject {
     
-    var authors: Maybe[js.Array[Name]] = js.native
+    var authors: Maybe[js.Array[Name]]
     
-    var block: Maybe[String] = js.native
+    var block: Maybe[String]
     
-    var duration: String = js.native
+    var duration: String
     
-    var explicit: String = js.native
+    var explicit: String
     
-    var image: Maybe[String] = js.native
+    var image: Maybe[String]
     
-    var isClosedCaptioned: Maybe[String] = js.native
+    var isClosedCaptioned: Maybe[String]
     
-    var order: Maybe[String] = js.native
+    var order: Maybe[String]
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var summary: Maybe[String] = js.native
+    var summary: Maybe[String]
   }
   object Authors {
     
@@ -90,28 +88,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Block extends StObject {
     
-    var authors: js.Array[Name] = js.native
+    var authors: js.Array[Name]
     
-    var block: Maybe[String] = js.native
+    var block: Maybe[String]
     
-    var categories: js.Array[SubCategories] = js.native
+    var categories: js.Array[SubCategories]
     
-    var complete: Maybe[String] = js.native
+    var complete: Maybe[String]
     
-    var explicit: String = js.native
+    var explicit: String
     
-    var image: String = js.native
+    var image: String
     
-    var newFeedUrl: Maybe[String] = js.native
+    var newFeedUrl: Maybe[String]
     
-    var owner: Email = js.native
+    var owner: Email
     
-    var subtitle: Maybe[String] = js.native
+    var subtitle: Maybe[String]
     
-    var summary: String = js.native
+    var summary: String
   }
   object Block {
     
@@ -181,18 +178,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: Maybe[String] = js.native
+    var description: Maybe[String]
     
-    var height: Maybe[String] = js.native
+    var height: Maybe[String]
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
     
-    var width: Maybe[String] = js.native
+    var width: Maybe[String]
   }
   object Description {
     
@@ -231,12 +227,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object Email {
     
@@ -257,14 +252,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Length extends StObject {
     
-    var length: String = js.native
+    var length: String
     
-    var mimeType: String = js.native
+    var mimeType: String
     
-    var url: String = js.native
+    var url: String
   }
   object Length {
     
@@ -288,10 +282,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -309,12 +302,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Rel extends StObject {
     
-    var rel: String = js.native
+    var rel: String
     
-    var url: String = js.native
+    var url: String
   }
   object Rel {
     
@@ -335,12 +327,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SubCategories extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var subCategories: js.Array[Maybe[Name]] = js.native
+    var subCategories: js.Array[Maybe[Name]]
   }
   object SubCategories {
     

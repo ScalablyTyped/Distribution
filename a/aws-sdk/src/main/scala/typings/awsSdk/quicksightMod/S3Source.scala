@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Source extends StObject {
   
   /**
     * The amazon Resource Name (ARN) for the data source.
     */
-  var DataSourceArn: Arn = js.native
+  var DataSourceArn: Arn
   
   /**
     * A physical table type for as S3 data source.
     */
-  var InputColumns: InputColumnList = js.native
+  var InputColumns: InputColumnList
   
   /**
     * Information about the format for the S3 source file or files.
     */
-  var UploadSettings: js.UndefOr[typings.awsSdk.quicksightMod.UploadSettings] = js.native
+  var UploadSettings: js.UndefOr[typings.awsSdk.quicksightMod.UploadSettings] = js.undefined
 }
 object S3Source {
   

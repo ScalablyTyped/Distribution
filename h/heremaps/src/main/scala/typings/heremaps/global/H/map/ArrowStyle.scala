@@ -3,7 +3,6 @@ package typings.heremaps.global.H.map
 import typings.heremaps.H.map.ArrowStyle.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param opt_options {(H.map.ArrowStyle | H.map.ArrowStyle.Options)=}
   */
 class ArrowStyle ()
-  extends typings.heremaps.H.map.ArrowStyle {
+  extends StObject
+     with typings.heremaps.H.map.ArrowStyle {
   def this(opt_options: typings.heremaps.H.map.ArrowStyle) = this()
   def this(opt_options: Options) = this()
 }

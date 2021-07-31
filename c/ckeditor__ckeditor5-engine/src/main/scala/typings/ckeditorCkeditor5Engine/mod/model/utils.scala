@@ -5,88 +5,66 @@ import typings.ckeditorCkeditor5Engine.anon.DoNotResetEntireContent
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.deleteContent")
+  @JSImport("@ckeditor/ckeditor5-engine", "model.utils")
   @js.native
-  def deleteContent(model: Model, selection: DocumentSelection, batch: Batch): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.deleteContent")
-  @js.native
-  def deleteContent(model: Model, selection: DocumentSelection, batch: Batch, options: DoNotResetEntireContent): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.deleteContent")
-  @js.native
-  def deleteContent(model: Model, selection: Selection, batch: Batch): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.deleteContent")
-  @js.native
-  def deleteContent(model: Model, selection: Selection, batch: Batch, options: DoNotResetEntireContent): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.getSelectedContent")
-  @js.native
-  def getSelectedContent(model: Model, selection: DocumentSelection): DocumentFragment = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.getSelectedContent")
-  @js.native
-  def getSelectedContent(model: Model, selection: Selection): DocumentFragment = js.native
+  @scala.inline
+  def deleteContent(model: Model, selection: DocumentSelection, batch: Batch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], batch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deleteContent(model: Model, selection: DocumentSelection, batch: Batch, options: DoNotResetEntireContent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], batch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deleteContent(model: Model, selection: Selection, batch: Batch): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], batch.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def deleteContent(model: Model, selection: Selection, batch: Batch, options: DoNotResetEntireContent): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], batch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.injectSelectionPostFixer")
-  @js.native
-  def injectSelectionPostFixer(model: Model): Unit = js.native
+  @scala.inline
+  def getSelectedContent(model: Model, selection: DocumentSelection): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  @scala.inline
+  def getSelectedContent(model: Model, selection: Selection): DocumentFragment = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectedContent")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: DocumentSelection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: Element): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: Position): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: Range): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: Selection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: DocumentFragment, selectable: Iterable[Range]): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: DocumentSelection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: Element): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: Position): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: Range): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: Selection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.insertContent")
-  @js.native
-  def insertContent(model: Model, content: Item, selectable: Iterable[Range]): Unit = js.native
+  @scala.inline
+  def injectSelectionPostFixer(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectSelectionPostFixer")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.modifySelection")
-  @js.native
-  def modifySelection(model: Model, selection: DocumentSelection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.modifySelection")
-  @js.native
-  def modifySelection(model: Model, selection: DocumentSelection, options: Direction): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.modifySelection")
-  @js.native
-  def modifySelection(model: Model, selection: Selection): Unit = js.native
-  @JSImport("@ckeditor/ckeditor5-engine", "model.utils.modifySelection")
-  @js.native
-  def modifySelection(model: Model, selection: Selection, options: Direction): Unit = js.native
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: DocumentSelection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: Position): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: Range): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: Selection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: DocumentFragment, selectable: Iterable[Range]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: DocumentSelection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: Element): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: Position): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: Range): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: Selection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def insertContent(model: Model, content: Item, selectable: Iterable[Range]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("insertContent")(model.asInstanceOf[js.Any], content.asInstanceOf[js.Any], selectable.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def modifySelection(model: Model, selection: DocumentSelection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def modifySelection(model: Model, selection: DocumentSelection, options: Direction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def modifySelection(model: Model, selection: Selection): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def modifySelection(model: Model, selection: Selection, options: Direction): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("modifySelection")(model.asInstanceOf[js.Any], selection.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

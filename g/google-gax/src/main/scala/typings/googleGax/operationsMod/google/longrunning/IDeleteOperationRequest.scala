@@ -2,15 +2,13 @@ package typings.googleGax.operationsMod.google.longrunning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DeleteOperationRequest. */
-@js.native
 trait IDeleteOperationRequest extends StObject {
   
   /** DeleteOperationRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object IDeleteOperationRequest {
   

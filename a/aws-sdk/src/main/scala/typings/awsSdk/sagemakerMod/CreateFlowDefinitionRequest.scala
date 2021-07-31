@@ -2,46 +2,44 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFlowDefinitionRequest extends StObject {
   
   /**
     * The name of your flow definition.
     */
-  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName = js.native
+  var FlowDefinitionName: typings.awsSdk.sagemakerMod.FlowDefinitionName
   
   /**
     * An object containing information about the events that trigger a human workflow.
     */
-  var HumanLoopActivationConfig: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopActivationConfig] = js.native
+  var HumanLoopActivationConfig: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopActivationConfig] = js.undefined
   
   /**
     * An object containing information about the tasks the human reviewers will perform.
     */
-  var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig = js.native
+  var HumanLoopConfig: typings.awsSdk.sagemakerMod.HumanLoopConfig
   
   /**
     * Container for configuring the source of human task requests. Use to specify if Amazon Rekognition or Amazon Textract is used as an integration source.
     */
-  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.native
+  var HumanLoopRequestSource: js.UndefOr[typings.awsSdk.sagemakerMod.HumanLoopRequestSource] = js.undefined
   
   /**
     * An object containing information about where the human review results will be uploaded.
     */
-  var OutputConfig: FlowDefinitionOutputConfig = js.native
+  var OutputConfig: FlowDefinitionOutputConfig
   
   /**
     * The Amazon Resource Name (ARN) of the role needed to call other services on your behalf. For example, arn:aws:iam::1234567890:role/service-role/AmazonSageMaker-ExecutionRole-20180111T151298.
     */
-  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.sagemakerMod.RoleArn
   
   /**
     * An array of key-value pairs that contain metadata to help you categorize and organize a flow definition. Each tag consists of a key and a value, both of which you define.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateFlowDefinitionRequest {
   

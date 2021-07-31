@@ -4,19 +4,17 @@ import typings.gestalt.gestaltStrings.md
 import typings.gestalt.gestaltStrings.sm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpinnerProps extends StObject {
   
-  var accessibilityLabel: String = js.native
+  var accessibilityLabel: String
   
-  var delay: js.UndefOr[Boolean] = js.native
+  var delay: js.UndefOr[Boolean] = js.undefined
   
-  var show: Boolean = js.native
+  var show: Boolean
   
-  var size: js.UndefOr[sm | md] = js.native
+  var size: js.UndefOr[sm | md] = js.undefined
 }
 object SpinnerProps {
   

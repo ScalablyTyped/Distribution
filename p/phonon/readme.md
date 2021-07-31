@@ -12,7 +12,7 @@ Phonon is an open source HTML, CSS and JavaScript agnostic framework that allows
 | Keywords           | css, sass, mobile, desktop, responsive, front-end, framework, web |
 | # releases         | 5 |
 | # dependents       | 0 |
-| # downloads        | 4716 |
+| # downloads        | 5548 |
 | # stars            | 0 |
 
 ## Links

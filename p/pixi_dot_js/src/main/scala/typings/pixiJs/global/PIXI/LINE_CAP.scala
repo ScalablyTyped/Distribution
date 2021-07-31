@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,11 +22,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object LINE_CAP extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_CAP with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.pixiJs.PIXI.LINE_CAP & Double] = js.native
   
-  /* 0 */ val BUTT: typings.pixiJs.PIXI.LINE_CAP.BUTT with Double = js.native
+  /* 0 */ val BUTT: typings.pixiJs.PIXI.LINE_CAP.BUTT & Double = js.native
   
-  /* 1 */ val ROUND: typings.pixiJs.PIXI.LINE_CAP.ROUND with Double = js.native
+  /* 1 */ val ROUND: typings.pixiJs.PIXI.LINE_CAP.ROUND & Double = js.native
   
-  /* 2 */ val SQUARE: typings.pixiJs.PIXI.LINE_CAP.SQUARE with Double = js.native
+  /* 2 */ val SQUARE: typings.pixiJs.PIXI.LINE_CAP.SQUARE & Double = js.native
 }

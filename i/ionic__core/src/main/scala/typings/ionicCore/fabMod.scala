@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fabMod {
   
   @JSImport("@ionic/core/dist/types/components/fab/fab", "Fab")
   @js.native
-  class Fab () extends ComponentInterface {
+  class Fab ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If `true`, both the `ion-fab-button` and all `ion-fab-list` inside `ion-fab` will become active.

@@ -2,28 +2,26 @@ package typings.pgPromise.pgSubsetMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumn extends StObject {
   
-  var columnID: Double = js.native
+  var columnID: Double
   
-  var dataTypeID: Double = js.native
+  var dataTypeID: Double
   
-  var dataTypeModifier: Double = js.native
+  var dataTypeModifier: Double
   
-  var dataTypeSize: Double = js.native
+  var dataTypeSize: Double
   
-  var format: String = js.native
+  var format: String
   
-  var name: String = js.native
+  var name: String
   
-  var oid: Double = js.native
+  var oid: Double
   
   // NOTE: properties below are not available within Native Bindings:
-  var tableID: Double = js.native
+  var tableID: Double
 }
 object IColumn {
   

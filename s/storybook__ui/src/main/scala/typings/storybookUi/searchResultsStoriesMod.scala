@@ -10,10 +10,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.anon.Matches
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchResultsStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -52,17 +55,14 @@ object searchResultsStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "LastViewed")
-  @js.native
-  def LastViewed_(): Element = js.native
+  @scala.inline
+  def LastViewed_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LastViewed")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "NoResults")
-  @js.native
-  def NoResults_(): Element = js.native
+  @scala.inline
+  def NoResults_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoResults")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "Searching")
-  @js.native
-  def Searching_(): Element = js.native
+  @scala.inline
+  def Searching_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Searching")().asInstanceOf[Element]
   
   object lastViewed {
     
@@ -70,23 +70,18 @@ object searchResultsStoriesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.closeMenu")
-    @js.native
-    def closeMenu(): Unit = js.native
+    @scala.inline
+    def closeMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.getItemProps")
-    @js.native
-    def getItemProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.getItemProps")
-    @js.native
-    def getItemProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getItemProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getItemProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.getMenuProps")
-    @js.native
-    def getMenuProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.getMenuProps")
-    @js.native
-    def getMenuProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getMenuProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getMenuProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
     @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "lastViewed.highlightedIndex")
     @js.native
@@ -113,23 +108,18 @@ object searchResultsStoriesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.closeMenu")
-    @js.native
-    def closeMenu(): Unit = js.native
+    @scala.inline
+    def closeMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.getItemProps")
-    @js.native
-    def getItemProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.getItemProps")
-    @js.native
-    def getItemProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getItemProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getItemProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.getMenuProps")
-    @js.native
-    def getMenuProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.getMenuProps")
-    @js.native
-    def getMenuProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getMenuProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getMenuProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
     @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "noResults.highlightedIndex")
     @js.native
@@ -156,23 +146,18 @@ object searchResultsStoriesMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.closeMenu")
-    @js.native
-    def closeMenu(): Unit = js.native
+    @scala.inline
+    def closeMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeMenu")().asInstanceOf[Unit]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.getItemProps")
-    @js.native
-    def getItemProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.getItemProps")
-    @js.native
-    def getItemProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getItemProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getItemProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.getMenuProps")
-    @js.native
-    def getMenuProps(): KeyAny = js.native
-    @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.getMenuProps")
-    @js.native
-    def getMenuProps(props: js.Any): KeyAny = js.native
+    @scala.inline
+    def getMenuProps(): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")().asInstanceOf[KeyAny]
+    @scala.inline
+    def getMenuProps(props: js.Any): KeyAny = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuProps")(props.asInstanceOf[js.Any]).asInstanceOf[KeyAny]
     
     @JSImport("@storybook/ui/dist/components/sidebar/SearchResults.stories", "searching.highlightedIndex")
     @js.native

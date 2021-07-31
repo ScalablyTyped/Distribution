@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * conducting the job search. This information is used to improve the
   * performance of the service.
   */
-@js.native
 trait SchemaRequestMetadata extends StObject {
   
   /**
     * Optional.  The type of device used by the job seeker at the time of the
     * call to the service.
     */
-  var deviceInfo: js.UndefOr[SchemaDeviceInfo] = js.native
+  var deviceInfo: js.UndefOr[SchemaDeviceInfo] = js.undefined
   
   /**
     * Required.  The client-defined scope or source of the service call, which
@@ -30,7 +28,7 @@ trait SchemaRequestMetadata extends StObject {
     * that any improvements to the service model for a particular tenant site
     * rely on this field being set correctly to some domain.
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  A unique session identification string. A session is defined
@@ -41,7 +39,7 @@ trait SchemaRequestMetadata extends StObject {
     * a particular tenant site, rely on this field being set correctly to some
     * unique session_id.
     */
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  A unique user identification string, as determined by the
@@ -53,7 +51,7 @@ trait SchemaRequestMetadata extends StObject {
     * a particular tenant site, rely on this field being set correctly to some
     * unique user_id.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaRequestMetadata {
   

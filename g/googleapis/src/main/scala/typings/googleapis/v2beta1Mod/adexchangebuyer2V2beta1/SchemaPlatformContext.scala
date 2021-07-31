@@ -2,19 +2,17 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @OutputOnly The type of platform the restriction applies to.
   */
-@js.native
 trait SchemaPlatformContext extends StObject {
   
   /**
     * The platforms this restriction applies to.
     */
-  var platforms: js.UndefOr[js.Array[String]] = js.native
+  var platforms: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaPlatformContext {
   

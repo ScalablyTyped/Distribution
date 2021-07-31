@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminationHealth extends StObject {
   
   /**
     * The source IP address.
     */
-  var Source: js.UndefOr[String] = js.native
+  var Source: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp, in ISO 8601 format.
     */
-  var Timestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var Timestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object TerminationHealth {
   

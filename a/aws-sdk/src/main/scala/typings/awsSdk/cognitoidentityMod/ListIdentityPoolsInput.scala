@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIdentityPoolsInput extends StObject {
   
   /**
     * The maximum number of identities to return.
     */
-  var MaxResults: QueryLimit = js.native
+  var MaxResults: QueryLimit
   
   /**
     * A pagination token.
     */
-  var NextToken: js.UndefOr[PaginationKey] = js.native
+  var NextToken: js.UndefOr[PaginationKey] = js.undefined
 }
 object ListIdentityPoolsInput {
   

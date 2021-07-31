@@ -3,7 +3,6 @@ package typings.naverWhale.whale
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,20 +15,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object tabCapture {
   
-  @js.native
   trait CaptureInfo extends StObject {
     
     /** Whether an element in the tab being captured is in fullscreen mode. */
-    var fullscreen: Boolean = js.native
+    var fullscreen: Boolean
     
     /**
       * The new capture status of the tab.
       * One of: "pending", "active", "stopped", or "error"
       */
-    var status: String = js.native
+    var status: String
     
     /** The id of the tab whose status changed. */
-    var tabId: Double = js.native
+    var tabId: Double
   }
   object CaptureInfo {
     
@@ -53,20 +51,19 @@ object tabCapture {
     }
   }
   
-  @js.native
   trait CaptureOptions extends StObject {
     
     /** Optional. */
-    var audio: js.UndefOr[Boolean] = js.native
+    var audio: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. */
-    var audioConstraints: js.UndefOr[typings.chrome.chrome.tabCapture.MediaStreamConstraint] = js.native
+    var audioConstraints: js.UndefOr[typings.chrome.chrome.tabCapture.MediaStreamConstraint] = js.undefined
     
     /** Optional. */
-    var video: js.UndefOr[Boolean] = js.native
+    var video: js.UndefOr[Boolean] = js.undefined
     
     /** Optional. */
-    var videoConstraints: js.UndefOr[typings.chrome.chrome.tabCapture.MediaStreamConstraint] = js.native
+    var videoConstraints: js.UndefOr[typings.chrome.chrome.tabCapture.MediaStreamConstraint] = js.undefined
   }
   object CaptureOptions {
     
@@ -107,12 +104,11 @@ object tabCapture {
   
   type CaptureStatusChangedEvent = Event[js.Function1[/* info */ typings.chrome.chrome.tabCapture.CaptureInfo, Unit]]
   
-  @js.native
   trait MediaStreamConstraint extends StObject {
     
-    var mandatory: js.Object = js.native
+    var mandatory: js.Object
     
-    var optional: js.UndefOr[js.Object] = js.native
+    var optional: js.UndefOr[js.Object] = js.undefined
   }
   object MediaStreamConstraint {
     

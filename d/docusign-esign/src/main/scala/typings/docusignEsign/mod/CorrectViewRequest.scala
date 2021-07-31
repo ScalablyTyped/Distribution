@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorrectViewRequest extends StObject {
   
   /**
@@ -24,12 +22,12 @@ trait CorrectViewRequest extends StObject {
     *
     * ###### Note: Include `https://` in the URL or the redirect might not succeed on some browsers.
     */
-  var returnUrl: js.UndefOr[String] = js.native
+  var returnUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether the window is displayed with or without dressing.
     */
-  var suppressNavigation: js.UndefOr[String] = js.native
+  var suppressNavigation: js.UndefOr[String] = js.undefined
 }
 object CorrectViewRequest {
   

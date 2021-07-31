@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.SceneLayerViewConstructor
 import typings.arcgisJsApi.esri.SceneLayerViewProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sceneLayerViewMod extends Shortcut {
   
   @JSImport("esri/views/layers/SceneLayerView", JSImport.Namespace)
   @js.native
-  val ^ : SceneLayerViewConstructor = js.native
+  val ^ : js.Object & SceneLayerViewConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/views/layers/SceneLayerView", JSImport.Namespace)
@@ -23,12 +22,14 @@ object sceneLayerViewMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-layers-SceneLayerView.html)
     */
-  class Class () extends SceneLayerView {
+  class Class ()
+    extends StObject
+       with SceneLayerView {
     def this(properties: SceneLayerViewProperties) = this()
   }
   
-  type _To = SceneLayerViewConstructor
+  type _To = js.Object & SceneLayerViewConstructor
   
   /* This means you don't have to write `^`, but can instead just say `sceneLayerViewMod.foo` */
-  override def _to: SceneLayerViewConstructor = ^
+  override def _to: js.Object & SceneLayerViewConstructor = ^
 }

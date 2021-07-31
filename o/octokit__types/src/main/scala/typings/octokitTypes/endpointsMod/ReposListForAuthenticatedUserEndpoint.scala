@@ -13,10 +13,8 @@ import typings.octokitTypes.octokitTypesStrings.pushed
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListForAuthenticatedUserEndpoint extends StObject {
   
   /**
@@ -25,39 +23,39 @@ trait ReposListForAuthenticatedUserEndpoint extends StObject {
     * \* `collaborator`: Repositories that the user has been added to as a collaborator.
     * \* `organization_member`: Repositories that the user has access to through being a member of an organization. This includes every repository on every team that the user is on.
     */
-  var affiliation: js.UndefOr[String] = js.native
+  var affiliation: js.UndefOr[String] = js.undefined
   
   /**
     * Can be one of `asc` or `desc`. Default: `asc` when using `full_name`, otherwise `desc`
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Can be one of `created`, `updated`, `pushed`, `full_name`.
     */
-  var sort: js.UndefOr[created | updated | pushed | full_name] = js.native
+  var sort: js.UndefOr[created | updated | pushed | full_name] = js.undefined
   
   /**
     * Can be one of `all`, `owner`, `public`, `private`, `member`. Default: `all`
     *
     * Will cause a `422` error if used in the same request as **visibility** or **affiliation**. Will cause a `422` error if used in the same request as **visibility** or **affiliation**.
     */
-  var `type`: js.UndefOr[all | owner | public | `private` | member] = js.native
+  var `type`: js.UndefOr[all | owner | public | `private` | member] = js.undefined
   
   /**
     * Can be one of `all`, `public`, or `private`.
     */
-  var visibility: js.UndefOr[all | public | `private`] = js.native
+  var visibility: js.UndefOr[all | public | `private`] = js.undefined
 }
 object ReposListForAuthenticatedUserEndpoint {
   

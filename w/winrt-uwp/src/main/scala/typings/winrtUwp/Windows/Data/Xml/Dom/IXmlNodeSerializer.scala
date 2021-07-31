@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Encapsulates the methods needed to serialize a DOM tree or subtree to a string representation. */
-@js.native
 trait IXmlNodeSerializer extends StObject {
   
   /**
     * Returns the XML representation of the node and all its descendants.
     * @return The XML representation of the node and all its descendants.
     */
-  def getXml(): String = js.native
+  def getXml(): String
   
   /** Gets and sets the text from inside the XML. */
-  var innerText: String = js.native
+  var innerText: String
 }
 object IXmlNodeSerializer {
   

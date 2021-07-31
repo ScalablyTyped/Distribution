@@ -2,26 +2,24 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByoipCidr extends StObject {
   
   /**
     * The address range, in CIDR notation.
     */
-  var Cidr: js.UndefOr[GenericString] = js.native
+  var Cidr: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A history of status changes for an IP address range that you bring to AWS Global Accelerator through bring your own IP address (BYOIP).
     */
-  var Events: js.UndefOr[ByoipCidrEvents] = js.native
+  var Events: js.UndefOr[ByoipCidrEvents] = js.undefined
   
   /**
     * The state of the address pool.
     */
-  var State: js.UndefOr[ByoipCidrState] = js.native
+  var State: js.UndefOr[ByoipCidrState] = js.undefined
 }
 object ByoipCidr {
   

@@ -10,9 +10,9 @@ simple, compliant file streaming module for node
 | ------------------ | :-------------: |
 | Full name          | node-static |
 | Keywords           | http, static, file, server |
-| # releases         | 2 |
-| # dependents       | 412 |
-| # downloads        | 1806271 |
+| # releases         | 0 |
+| # dependents       | 413 |
+| # downloads        | 1883481 |
 | # stars            | 49 |
 
 ## Links

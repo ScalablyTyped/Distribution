@@ -2,11 +2,12 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RowChildMethods extends CoreMethods {
+trait RowChildMethods
+  extends StObject
+     with CoreMethods {
   
   /**
     * Hide the child row(s) of a parent row

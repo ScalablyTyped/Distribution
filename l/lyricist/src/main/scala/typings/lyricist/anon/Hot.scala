@@ -2,17 +2,15 @@ package typings.lyricist.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hot extends StObject {
   
-  var hot: Boolean = js.native
+  var hot: Boolean
   
-  var pageviews: Double = js.native
+  var pageviews: Double
   
-  var unreviewed_annotations: Double = js.native
+  var unreviewed_annotations: Double
 }
 object Hot {
   

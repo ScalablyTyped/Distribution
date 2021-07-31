@@ -9,29 +9,27 @@ import typings.openlayers.mod.geom.Point
 import typings.openlayers.mod.source.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var extent: js.UndefOr[Extent_] = js.native
+  var extent: js.UndefOr[Extent_] = js.undefined
   
-  var format: js.UndefOr[Feature] = js.native
+  var format: js.UndefOr[Feature] = js.undefined
   
-  var geometryFunction: js.UndefOr[js.Function1[/* feature */ typings.openlayers.mod.Feature, Point]] = js.native
+  var geometryFunction: js.UndefOr[js.Function1[/* feature */ typings.openlayers.mod.Feature, Point]] = js.undefined
   
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
-  var projection: js.UndefOr[ProjectionLike] = js.native
+  var projection: js.UndefOr[ProjectionLike] = js.undefined
   
-  var source: Vector = js.native
+  var source: Vector
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object ClusterOptions {
   

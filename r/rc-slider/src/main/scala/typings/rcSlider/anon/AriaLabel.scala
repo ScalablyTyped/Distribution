@@ -4,45 +4,43 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AriaLabel extends StObject {
   
-  var ariaLabel: String = js.native
+  var ariaLabel: String
   
-  var ariaLabelledBy: String = js.native
+  var ariaLabelledBy: String
   
-  var ariaValueTextFormatter: String = js.native
+  var ariaValueTextFormatter: String
   
-  var className: String = js.native
+  var className: String
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dragging: js.UndefOr[Boolean] = js.native
+  var dragging: js.UndefOr[Boolean] = js.undefined
   
-  var index: Double = js.native
+  var index: Double
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var ref: js.UndefOr[Ref[_]] = js.native
+  var ref: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var value: Double = js.native
+  var value: Double
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object AriaLabel {
   
@@ -112,10 +110,10 @@ object AriaLabel {
     def setPrefixClsUndefined: Self = StObject.set(x, "prefixCls", js.undefined)
     
     @scala.inline
-    def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

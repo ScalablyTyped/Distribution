@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserDefinedFunctionRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the function to be updated is located. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database where the function to be updated is located.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A FunctionInput object that redefines the function in the Data Catalog.
     */
-  var FunctionInput: UserDefinedFunctionInput = js.native
+  var FunctionInput: UserDefinedFunctionInput
   
   /**
     * The name of the function.
     */
-  var FunctionName: NameString = js.native
+  var FunctionName: NameString
 }
 object UpdateUserDefinedFunctionRequest {
   

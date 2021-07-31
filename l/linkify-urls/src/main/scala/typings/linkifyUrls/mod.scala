@@ -6,17 +6,14 @@ import typings.linkifyUrls.linkifyUrlsStrings.string
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("linkify-urls", JSImport.Namespace)
-  @js.native
-  def apply(string: String): String = js.native
-  @JSImport("linkify-urls", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: Options): String = js.native
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
   Linkify URLs in a string.
   @param string - String with URLs to linkify.
@@ -42,24 +39,26 @@ object mod {
   document.body.appendChild(fragment);
   ```
   */
+  @scala.inline
+  def apply(string: String, options: TypeDomOptions): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  
   @JSImport("linkify-urls", JSImport.Namespace)
   @js.native
-  def apply(string: String, options: TypeDomOptions): DocumentFragment = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		HTML attributes to add to the link.
     		*/
-    val attributes: js.UndefOr[StringDictionary[String | Double | Boolean | js.Array[String]]] = js.native
+    val attributes: js.UndefOr[StringDictionary[String | Double | Boolean | js.Array[String]]] = js.undefined
     
     /**
     		Format of the generated content.
     		`'string'` will return it as a flat string like `'Visit <a href="https://example.com">https://example.com</a>'`.
     		`'dom'` will return it as a `DocumentFragment` ready to be appended in a DOM safely, like `DocumentFragment(TextNode('Visit '), HTMLAnchorElement('https://example.com'))`. This type only works in the browser.
     		*/
-    val `type`: js.UndefOr[string | dom] = js.native
+    val `type`: js.UndefOr[string | dom] = js.undefined
     
     /**
     		Set a custom HTML value for the link.
@@ -72,7 +71,7 @@ object mod {
     		//=> 'See <a href="https://sindresorhus.com/foo">/foo</a>'
     		```
     		*/
-    val value: js.UndefOr[String | (js.Function1[/* url */ String, String])] = js.native
+    val value: js.UndefOr[String | (js.Function1[/* url */ String, String])] = js.undefined
   }
   object Options {
     
@@ -108,18 +107,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait TypeDomOptions extends Options {
+  trait TypeDomOptions
+    extends StObject
+       with Options {
     
     @JSName("type")
-    val type_TypeDomOptions: dom = js.native
+    val type_TypeDomOptions: dom
   }
   object TypeDomOptions {
     
     @scala.inline
-    def apply(`type`: dom): TypeDomOptions = {
+    def apply(): TypeDomOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("dom")
       __obj.asInstanceOf[TypeDomOptions]
     }
     

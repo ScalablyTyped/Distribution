@@ -12,7 +12,7 @@ The lodash method `_.divide` exported as a module.
 | Keywords           | lodash-modularized, divide |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1130 |
+| # downloads        | 1849 |
 | # stars            | 0 |
 
 ## Links

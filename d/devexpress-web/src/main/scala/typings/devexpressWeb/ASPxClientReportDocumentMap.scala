@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the ASPxClientDocumentViewer control's Document Map.
   */
-@js.native
-trait ASPxClientReportDocumentMap extends ASPxClientControl {
+trait ASPxClientReportDocumentMap
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Occurs after the content of the Document Viewer's document map is updated.
     */
-  var ContentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]] = js.native
+  var ContentChanged: ASPxClientEvent[ASPxClientEventHandler[ASPxClientReportDocumentMap]]
 }
 object ASPxClientReportDocumentMap {
   

@@ -10,9 +10,9 @@ Utilities for testing Vue components.
 | ------------------ | :-------------: |
 | Full name          | @vue/test-utils |
 | Keywords           | - |
-| # releases         | 35 |
-| # dependents       | 103 |
-| # downloads        | 31779169 |
+| # releases         | 39 |
+| # dependents       | 113 |
+| # downloads        | 35557434 |
 | # stars            | 1 |
 
 ## Links

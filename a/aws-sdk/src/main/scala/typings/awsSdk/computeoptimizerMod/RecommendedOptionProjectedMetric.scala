@@ -2,26 +2,24 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendedOptionProjectedMetric extends StObject {
   
   /**
     * An array of objects that describe a projected utilization metric.
     */
-  var projectedMetrics: js.UndefOr[ProjectedMetrics] = js.native
+  var projectedMetrics: js.UndefOr[ProjectedMetrics] = js.undefined
   
   /**
     * The rank of the recommendation option projected metric. The top recommendation option is ranked as 1. The projected metric rank correlates to the recommendation option rank. For example, the projected metric ranked as 1 is related to the recommendation option that is also ranked as 1 in the same response.
     */
-  var rank: js.UndefOr[Rank] = js.native
+  var rank: js.UndefOr[Rank] = js.undefined
   
   /**
     * The recommended instance type.
     */
-  var recommendedInstanceType: js.UndefOr[RecommendedInstanceType] = js.native
+  var recommendedInstanceType: js.UndefOr[RecommendedInstanceType] = js.undefined
 }
 object RecommendedOptionProjectedMetric {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -68,27 +67,15 @@ trait PlusMessaging extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/messaging.html](http://www.html5plus.org/doc/zh_cn/messaging.html)
     */
   def sendMessage(): Unit = js.native
-  def sendMessage(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def sendMessage(msg: js.UndefOr[scala.Nothing], successCB: js.Function0[Unit]): Unit = js.native
-  def sendMessage(
-    msg: js.UndefOr[scala.Nothing],
-    successCB: js.Function0[Unit],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
+  def sendMessage(msg: Unit, successCB: js.Function0[Unit]): Unit = js.native
+  def sendMessage(msg: Unit, successCB: js.Function0[Unit], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def sendMessage(msg: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def sendMessage(msg: PlusMessagingMessage): Unit = js.native
-  def sendMessage(
-    msg: PlusMessagingMessage,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def sendMessage(msg: PlusMessagingMessage, successCB: js.Function0[Unit]): Unit = js.native
   def sendMessage(
     msg: PlusMessagingMessage,
     successCB: js.Function0[Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def sendMessage(msg: PlusMessagingMessage, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
 }

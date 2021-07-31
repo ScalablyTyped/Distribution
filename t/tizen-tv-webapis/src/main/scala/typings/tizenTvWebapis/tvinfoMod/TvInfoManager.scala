@@ -6,31 +6,29 @@ import typings.tizenTvWebapis.anon.TVVIEWERBGEXECUTABLE
 import typings.tizenTvWebapis.anon.TVVIEWERBGNOTEXECUTABLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TvInfoManager extends StObject {
   
   /**
     * Defines constants for TV information keys.
     */
-  var TvInfoKey: TVVIEWERBGEXECUTABLE = js.native
+  var TvInfoKey: TVVIEWERBGEXECUTABLE
   
   /**
     * Caption settings key
     */
-  var TvInfoMenuKey: ACCESSIBILITYFOCUSZOOM = js.native
+  var TvInfoMenuKey: ACCESSIBILITYFOCUSZOOM
   
   /**
     * Defines constants for TV menu settings values.
     */
-  var TvInfoMenuValue: AUDIOLANGUAGECODEAFR = js.native
+  var TvInfoMenuValue: AUDIOLANGUAGECODEAFR
   
   /**
     * Defines constants for TV information values.
     */
-  var TvInfoValue: TVVIEWERBGNOTEXECUTABLE = js.native
+  var TvInfoValue: TVVIEWERBGNOTEXECUTABLE
   
   /**
     * Registers a caption menu change listener callback.
@@ -41,7 +39,7 @@ trait TvInfoManager extends StObject {
     * @since 2.3
     * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
     */
-  def addCaptionChangeListener(key: TvInfoMenuKey, listener: TvInfoCaptionChangeCallback): Double = js.native
+  def addCaptionChangeListener(key: TvInfoMenuKey, listener: TvInfoCaptionChangeCallback): Double
   
   /**
     * Retrieves the specified caption or subtitle menu key value.
@@ -51,7 +49,7 @@ trait TvInfoManager extends StObject {
     * @since 2.3
     * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
     */
-  def getMenuValue(key: TvInfoMenuKey): TvInfoMenuValue = js.native
+  def getMenuValue(key: TvInfoMenuKey): TvInfoMenuValue
   
   /**
     * Retrieves the specified TV information key value.
@@ -61,14 +59,14 @@ trait TvInfoManager extends StObject {
     * @since 2.3
     * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
     */
-  def getTvInfoValue(key: TvInfoKey): TvInfoValue = js.native
+  def getTvInfoValue(key: TvInfoKey): TvInfoValue
   
   /**
     * Retrieves the plugin version number.
     * @returns Plugin version
     * @since 2.3
     */
-  def getVersion(): String = js.native
+  def getVersion(): String
   
   /**
     * Checks whether the picture size has been resized.
@@ -80,7 +78,7 @@ trait TvInfoManager extends StObject {
     * @since 2.3
     * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
     */
-  def isTvsPicSizeResized(): Boolean = js.native
+  def isTvsPicSizeResized(): Boolean
   
   /**
     * Enables controlling caption display dynamically from within the application.
@@ -91,7 +89,7 @@ trait TvInfoManager extends StObject {
     * @throw WebAPIException TypeMismatchError
     * @since 2.3
     */
-  def registerInAppCaptionControl(status: Boolean): Unit = js.native
+  def registerInAppCaptionControl(status: Boolean): Unit
   
   /**
     * Unregisters a caption menu change listener callback.
@@ -100,7 +98,7 @@ trait TvInfoManager extends StObject {
     * @since 2.3
     * @note Since plugin version 3.0, if a parameter value is out of range, InvalidValuesError is thrown instead of TypeMismatchError.
     */
-  def removeCaptionChangeListener(listenerId: Double): Unit = js.native
+  def removeCaptionChangeListener(listenerId: Double): Unit
   
   /**
     * If captions are switched on in the TV menu, controls the caption visibility state.
@@ -109,7 +107,7 @@ trait TvInfoManager extends StObject {
     * @throw WebAPIException TypeMismatchError
     * @since 2.3
     */
-  def showCaption(show: Boolean): Unit = js.native
+  def showCaption(show: Boolean): Unit
 }
 object TvInfoManager {
   

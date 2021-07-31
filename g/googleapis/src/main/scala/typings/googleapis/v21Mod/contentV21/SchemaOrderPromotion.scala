@@ -2,64 +2,62 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderPromotion extends StObject {
   
   /**
     * Items which this promotion may be applied to. If empty, there are no
     * restrictions on applicable items and quantity.
     */
-  var applicableItems: js.UndefOr[js.Array[SchemaOrderPromotionItem]] = js.native
+  var applicableItems: js.UndefOr[js.Array[SchemaOrderPromotionItem]] = js.undefined
   
   /**
     * Items which this promotion have been applied to.
     */
-  var appliedItems: js.UndefOr[js.Array[SchemaOrderPromotionItem]] = js.native
+  var appliedItems: js.UndefOr[js.Array[SchemaOrderPromotionItem]] = js.undefined
   
   /**
     * The party funding the promotion.
     */
-  var funder: js.UndefOr[String] = js.native
+  var funder: js.UndefOr[String] = js.undefined
   
   /**
     * This field is used to identify promotions within merchants&#39; own
     * systems.
     */
-  var merchantPromotionId: js.UndefOr[String] = js.native
+  var merchantPromotionId: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated discount applied to price. Amount is pre-tax or post-tax
     * depending on location of order.
     */
-  var priceValue: js.UndefOr[SchemaPrice] = js.native
+  var priceValue: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * A short title of the promotion to be shown on the checkout page.
     */
-  var shortTitle: js.UndefOr[String] = js.native
+  var shortTitle: js.UndefOr[String] = js.undefined
   
   /**
     * The category of the promotion.
     */
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
   
   /**
     * Estimated discount applied to tax (if allowed by law).
     */
-  var taxValue: js.UndefOr[SchemaPrice] = js.native
+  var taxValue: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The title of the promotion.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The scope of the promotion.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaOrderPromotion {
   

@@ -4,7 +4,6 @@ import typings.conventionalChangelogWriter.mod.Context
 import typings.conventionalCommitsParser.mod.Commit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,28 +24,32 @@ object mod {
     *
     * @param path
     */
+  @scala.inline
+  def apply(path: String): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
+  @scala.inline
+  def apply(path: Config): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]]
+  
   @JSImport("conventional-changelog-preset-loader", JSImport.Namespace)
   @js.native
-  def apply(path: String): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = js.native
-  @JSImport("conventional-changelog-preset-loader", JSImport.Namespace)
-  @js.native
-  def apply(path: Config): typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context] = js.native
+  val ^ : js.Any = js.native
   
   object presetLoader {
     
+    @scala.inline
+    def apply(requireMethod: RequireMethod): js.Any = ^.asInstanceOf[js.Dynamic].apply(requireMethod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
     @JSImport("conventional-changelog-preset-loader", "presetLoader")
     @js.native
-    def apply(requireMethod: RequireMethod): js.Any = js.native
+    val ^ : js.Any = js.native
     
     type RequireMethod = js.Function1[/* id */ String, js.Any]
   }
   
   type Builder = js.Function1[
-    /* config */ js.Object with Config, 
+    /* config */ js.Object & Config, 
     typings.conventionalChangelogCore.mod.Options.Config[Commit[String | Double | js.Symbol], Context]
   ]
   
-  @js.native
   trait Config extends StObject {
     
     /**
@@ -60,7 +63,7 @@ object mod {
       * * `@scope/angular` => `@scope/conventional-changelog-angular`
       * * `@scope/angular/preset/path` => `@scope/conventional-changelog-angular/preset/path`
       */
-    var name: String = js.native
+    var name: String
   }
   object Config {
     

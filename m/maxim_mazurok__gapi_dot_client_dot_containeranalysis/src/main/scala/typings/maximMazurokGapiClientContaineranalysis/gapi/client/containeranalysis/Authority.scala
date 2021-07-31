@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authority extends StObject {
   
   /** Hint hints at the purpose of the attestation authority. */
-  var hint: js.UndefOr[Hint] = js.native
+  var hint: js.UndefOr[Hint] = js.undefined
 }
 object Authority {
   

@@ -4,17 +4,15 @@ import typings.sipml.SIPml.Session.Event
 import typings.sipml.SIPml.Session.EventSubscriptionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Audio extends StObject {
     
-    var audio: Double = js.native
+    var audio: Double
     
-    var video: Double = js.native
+    var video: Double
   }
   object Audio {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var events: EventSubscriptionType | js.Array[EventSubscriptionType] = js.native
+    var events: EventSubscriptionType | js.Array[EventSubscriptionType]
     
-    def listener(e: Event): Unit = js.native
+    def listener(e: Event): Unit
   }
   object Events {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Listener extends StObject {
     
-    var events: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType] = js.native
+    var events: typings.sipml.SIPml.Stack.EventSubscriptionType | js.Array[typings.sipml.SIPml.Stack.EventSubscriptionType]
     
-    def listener(e: typings.sipml.SIPml.Stack.Event): Unit = js.native
+    def listener(e: typings.sipml.SIPml.Stack.Event): Unit
   }
   object Listener {
     
@@ -98,16 +94,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxHeight extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
   }
   object MaxHeight {
     

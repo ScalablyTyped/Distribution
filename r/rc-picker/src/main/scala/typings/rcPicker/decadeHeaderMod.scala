@@ -4,27 +4,28 @@ import typings.rcPicker.generateMod.GenerateConfig
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object decadeHeaderMod {
   
-  @JSImport("rc-picker/es/panels/DecadePanel/DecadeHeader", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DecadePanel/DecadeHeader", JSImport.Namespace)
   @js.native
-  def default[DateType](props: YearHeaderProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: YearHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait YearHeaderProps[DateType] extends StObject {
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    def onNextDecades(): Unit = js.native
+    def onNextDecades(): Unit
     
-    def onPrevDecades(): Unit = js.native
+    def onPrevDecades(): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var viewDate: DateType = js.native
+    var viewDate: DateType
   }
   object YearHeaderProps {
     
@@ -41,7 +42,7 @@ object decadeHeaderMod {
     }
     
     @scala.inline
-    implicit class YearHeaderPropsMutableBuilder[Self <: YearHeaderProps[_], DateType] (val x: Self with YearHeaderProps[DateType]) extends AnyVal {
+    implicit class YearHeaderPropsMutableBuilder[Self <: YearHeaderProps[?], DateType] (val x: Self & YearHeaderProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setGenerateConfig(value: GenerateConfig[DateType]): Self = StObject.set(x, "generateConfig", value.asInstanceOf[js.Any])

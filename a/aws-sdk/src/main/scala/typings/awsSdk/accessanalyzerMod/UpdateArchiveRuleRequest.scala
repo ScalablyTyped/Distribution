@@ -2,31 +2,29 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateArchiveRuleRequest extends StObject {
   
   /**
     * The name of the analyzer to update the archive rules for.
     */
-  var analyzerName: Name = js.native
+  var analyzerName: Name
   
   /**
     * A client token.
     */
-  var clientToken: js.UndefOr[String] = js.native
+  var clientToken: js.UndefOr[String] = js.undefined
   
   /**
     * A filter to match for the rules to update. Only rules that match the filter are updated.
     */
-  var filter: FilterCriteriaMap = js.native
+  var filter: FilterCriteriaMap
   
   /**
     * The name of the rule to update.
     */
-  var ruleName: Name = js.native
+  var ruleName: Name
 }
 object UpdateArchiveRuleRequest {
   

@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interaction continuation handing back some authentication data
   * @since LibreOffice 4.4
   */
-@js.native
-trait AuthenticationFallbackRequest extends ClassifiedInteractionRequest {
+trait AuthenticationFallbackRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** Instructions to be followed by the user */
-  var instructions: String = js.native
+  var instructions: String
   
   /** url to be opened in browser */
-  var url: String = js.native
+  var url: String
 }
 object AuthenticationFallbackRequest {
   

@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetCredentialsResult extends ResultStatus {
+trait GetCredentialsResult
+  extends StObject
+     with ResultStatus {
   
-  var credentials: js.Array[CredentialInfo] = js.native
+  var credentials: js.Array[CredentialInfo]
 }
 object GetCredentialsResult {
   

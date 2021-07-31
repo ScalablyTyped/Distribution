@@ -9,7 +9,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,7 +43,7 @@ trait DocDB extends Service {
   ): Request[ApplyPendingMaintenanceActionResult, AWSError] = js.native
   
   @JSName("config")
-  var config_DocDB: ConfigBase with ClientConfiguration = js.native
+  var config_DocDB: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copies the specified cluster parameter group.

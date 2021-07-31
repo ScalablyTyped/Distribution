@@ -19,13 +19,11 @@ import typings.devextreme.mod.DevExpress.ui.dxSchedulerScrolling
 import typings.devextreme.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgendaDuration extends StObject {
   
-  var agendaDuration: js.UndefOr[Double] = js.native
+  var agendaDuration: js.UndefOr[Double] = js.undefined
   
   var appointmentCollectorTemplate: js.UndefOr[
     template | (js.Function2[
@@ -33,7 +31,7 @@ trait AgendaDuration extends StObject {
       /* collectorElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
   var appointmentTemplate: js.UndefOr[
     template | (js.Function3[
@@ -42,7 +40,7 @@ trait AgendaDuration extends StObject {
       /* contentElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
   var appointmentTooltipTemplate: js.UndefOr[
     template | (js.Function3[
@@ -51,9 +49,9 @@ trait AgendaDuration extends StObject {
       /* contentElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var cellDuration: js.UndefOr[Double] = js.native
+  var cellDuration: js.UndefOr[Double] = js.undefined
   
   var dataCellTemplate: js.UndefOr[
     template | (js.Function3[
@@ -62,7 +60,7 @@ trait AgendaDuration extends StObject {
       /* itemElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
   var dateCellTemplate: js.UndefOr[
     template | (js.Function3[
@@ -71,7 +69,7 @@ trait AgendaDuration extends StObject {
       /* itemElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
   var dropDownAppointmentTemplate: js.UndefOr[
     template | (js.Function3[
@@ -80,25 +78,25 @@ trait AgendaDuration extends StObject {
       /* contentElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var endDayHour: js.UndefOr[Double] = js.native
+  var endDayHour: js.UndefOr[Double] = js.undefined
   
   var firstDayOfWeek: js.UndefOr[
     typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2` | typings.devextreme.devextremeNumbers.`3` | typings.devextreme.devextremeNumbers.`4` | typings.devextreme.devextremeNumbers.`5` | typings.devextreme.devextremeNumbers.`6`
-  ] = js.native
+  ] = js.undefined
   
-  var groupByDate: js.UndefOr[Boolean] = js.native
+  var groupByDate: js.UndefOr[Boolean] = js.undefined
   
-  var groupOrientation: js.UndefOr[horizontal | vertical] = js.native
+  var groupOrientation: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var intervalCount: js.UndefOr[Double] = js.native
+  var intervalCount: js.UndefOr[Double] = js.undefined
   
-  var maxAppointmentsPerCell: js.UndefOr[Double | auto | unlimited] = js.native
+  var maxAppointmentsPerCell: js.UndefOr[Double | auto | unlimited] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   var resourceCellTemplate: js.UndefOr[
     template | (js.Function3[
@@ -107,13 +105,13 @@ trait AgendaDuration extends StObject {
       /* itemElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var scrolling: js.UndefOr[dxSchedulerScrolling] = js.native
+  var scrolling: js.UndefOr[dxSchedulerScrolling] = js.undefined
   
-  var startDate: js.UndefOr[typings.std.Date | Double | String] = js.native
+  var startDate: js.UndefOr[typings.std.Date | Double | String] = js.undefined
   
-  var startDayHour: js.UndefOr[Double] = js.native
+  var startDayHour: js.UndefOr[Double] = js.undefined
   
   var timeCellTemplate: js.UndefOr[
     template | (js.Function3[
@@ -122,11 +120,11 @@ trait AgendaDuration extends StObject {
       /* itemElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
   var `type`: js.UndefOr[
     agenda | day | month | timelineDay | timelineMonth | timelineWeek | timelineWorkWeek | week | workWeek
-  ] = js.native
+  ] = js.undefined
 }
 object AgendaDuration {
   

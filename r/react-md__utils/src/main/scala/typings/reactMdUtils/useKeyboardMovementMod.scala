@@ -11,20 +11,21 @@ import typings.reactMdUtils.utilsMod.GetItemValue_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useKeyboardMovementMod {
   
-  @JSImport("@react-md/utils/types/wia-aria/movement/useKeyboardMovement", "useKeyboardMovement")
+  @JSImport("@react-md/utils/types/wia-aria/movement/useKeyboardMovement", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useKeyboardMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](
     hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue: KeyboardMovementOptions[D, CE, IE]
-  ): KeyboardMovementProviders[CE, IE] = js.native
+  ): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardMovement")(hasOnKeyDownIncrementKeysDecrementKeysJumpToFirstKeysJumpToLastKeysStopPropagationOnChangeItemsResetTimeFindMatchIndexFocusedIndexLoopableSearchableValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
   
   /* Inlined parent std.Omit<@react-md/utils.@react-md/utils/types/search/useKeyboardSearch.BaseKeyboardSearchOptions<D, CE>, 'onChange'> */
   /* Inlined parent @react-md/utils.@react-md/utils/types/wia-aria/movement/types.MovementConfig */
-  @js.native
   trait BaseKeyboardMovementOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] extends StObject {
     
     /**
@@ -32,36 +33,36 @@ object useKeyboardMovementMod {
       * config is enabled, this will loop to the last item if the first item is
       * currently "focused".
       */
-    var decrementKeys: js.Array[IncrementMovementKey] = js.native
+    var decrementKeys: js.Array[IncrementMovementKey]
     
-    var findMatchIndex: js.UndefOr[FindMatchIndex_] = js.native
+    var findMatchIndex: js.UndefOr[FindMatchIndex_] = js.undefined
     
-    var getItemValue: js.UndefOr[GetItemValue_[D]] = js.native
+    var getItemValue: js.UndefOr[GetItemValue_[D]] = js.undefined
     
     /**
       * The keys that can trigger a move to the next item. If the `loopable` config
       * is enabled, this will loop to the first item if the last item is currently
       * "focused".
       */
-    var incrementKeys: js.Array[IncrementMovementKey] = js.native
+    var incrementKeys: js.Array[IncrementMovementKey]
     
-    var items: js.Array[D] = js.native
+    var items: js.Array[D]
     
     /**
       * The keys that can trigger a move to the first item.
       */
-    var jumpToFirstKeys: js.Array[JumpMovementKey] = js.native
+    var jumpToFirstKeys: js.Array[JumpMovementKey]
     
     /**
       * The keys that can trigger a move to the last item.
       */
-    var jumpToLastKeys: js.Array[JumpMovementKey] = js.native
+    var jumpToLastKeys: js.Array[JumpMovementKey]
     
     /**
       * Boolean if the keyboard movement should be able to loop around once it has
       * reached the start or end of all the items.
       */
-    var loopable: js.UndefOr[Boolean] = js.native
+    var loopable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A required change event handler that will be called whenever a user types a
@@ -69,17 +70,17 @@ object useKeyboardMovementMod {
       * something that either updates the `aria-activedescendant` id to the new
       * found item's id or manually focus the item's DOM node.
       */
-    var onChange: js.UndefOr[js.Function2[/* data */ SearchData[D, CE], /* itemRefs */ ItemRefList[IE], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* data */ SearchData[D, CE], /* itemRefs */ ItemRefList[IE], Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[CE]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[CE]] = js.undefined
     
-    var resetTime: js.UndefOr[Double] = js.native
+    var resetTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean if the movement should also include printable characters search
       * movement.
       */
-    var searchable: js.UndefOr[Boolean] = js.native
+    var searchable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the event should trigger `event.stopPropagation()` when the
@@ -87,9 +88,9 @@ object useKeyboardMovementMod {
       * `false` or `undefined` by default, but enabled when creating more complex
       * 2-dimensional movement cases such as grids.
       */
-    var stopPropagation: js.UndefOr[Boolean] = js.native
+    var stopPropagation: js.UndefOr[Boolean] = js.undefined
     
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
   }
   object BaseKeyboardMovementOptions {
     
@@ -106,7 +107,7 @@ object useKeyboardMovementMod {
     }
     
     @scala.inline
-    implicit class BaseKeyboardMovementOptionsMutableBuilder[Self <: BaseKeyboardMovementOptions[_, _, _], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self with (BaseKeyboardMovementOptions[D, CE, IE])) extends AnyVal {
+    implicit class BaseKeyboardMovementOptionsMutableBuilder[Self <: BaseKeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (BaseKeyboardMovementOptions[D, CE, IE])) extends AnyVal {
       
       @scala.inline
       def setDecrementKeys(value: js.Array[IncrementMovementKey]): Self = StObject.set(x, "decrementKeys", value.asInstanceOf[js.Any])
@@ -200,15 +201,16 @@ object useKeyboardMovementMod {
   
   type ItemRefList[E /* <: HTMLElement */] = js.Array[ItemRef[E]]
   
-  @js.native
-  trait KeyboardMovementOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] extends BaseKeyboardMovementOptions[D, CE, IE] {
+  trait KeyboardMovementOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */]
+    extends StObject
+       with BaseKeyboardMovementOptions[D, CE, IE] {
     
     /**
       * The currently focused index within the item list. This will need to be
       * updated due to the `onChange` callback being called for this hook to work
       * as it is fully "controlled" by a parent hook/component.
       */
-    var focusedIndex: Double = js.native
+    var focusedIndex: Double
     
     /**
       * A required change event handler that will be called whenever a user types a
@@ -217,7 +219,7 @@ object useKeyboardMovementMod {
       * found item's id or manually focus the item's DOM node.
       */
     @JSName("onChange")
-    def onChange_MKeyboardMovementOptions(data: SearchData[D, CE], itemRefs: ItemRefList[IE]): Unit = js.native
+    def onChange_MKeyboardMovementOptions(data: SearchData[D, CE], itemRefs: ItemRefList[IE]): Unit
   }
   object KeyboardMovementOptions {
     
@@ -236,7 +238,7 @@ object useKeyboardMovementMod {
     }
     
     @scala.inline
-    implicit class KeyboardMovementOptionsMutableBuilder[Self <: KeyboardMovementOptions[_, _, _], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self with (KeyboardMovementOptions[D, CE, IE])) extends AnyVal {
+    implicit class KeyboardMovementOptionsMutableBuilder[Self <: KeyboardMovementOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardMovementOptions[D, CE, IE])) extends AnyVal {
       
       @scala.inline
       def setFocusedIndex(value: Double): Self = StObject.set(x, "focusedIndex", value.asInstanceOf[js.Any])

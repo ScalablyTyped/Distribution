@@ -3,13 +3,11 @@ package typings.prettier.mod
 import typings.prettier.prettierBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
   
-  var category: String = js.native
+  var category: String
   
   /**
     * Indicate that the option is deprecated.
@@ -17,15 +15,15 @@ trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
     * Use a string to add an extra message to --help for the option,
     * for example to suggest a replacement option.
     */
-  var deprecated: js.UndefOr[`true` | String] = js.native
+  var deprecated: js.UndefOr[`true` | String] = js.undefined
   
   /**
     * Description to be displayed in --help. If omitted, the option won't be
     * shown at all in --help.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var since: String = js.native
+  var since: String
   
   /**
     * The type of the option.
@@ -34,7 +32,7 @@ trait BaseSupportOption[Type /* <: SupportOptionType */] extends StObject {
     * treated as taking any string as argument, and `--option <${type}>` will
     * be displayed in --help.
     */
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object BaseSupportOption {
   
@@ -46,7 +44,7 @@ object BaseSupportOption {
   }
   
   @scala.inline
-  implicit class BaseSupportOptionMutableBuilder[Self <: BaseSupportOption[_], Type /* <: SupportOptionType */] (val x: Self with BaseSupportOption[Type]) extends AnyVal {
+  implicit class BaseSupportOptionMutableBuilder[Self <: BaseSupportOption[?], Type /* <: SupportOptionType */] (val x: Self & BaseSupportOption[Type]) extends AnyVal {
     
     @scala.inline
     def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])

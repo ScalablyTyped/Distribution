@@ -8,54 +8,52 @@ import typings.mangopay2NodejsSdk.mod.user.LegalPersonType
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.UserLegalData>, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserLegalData> */
-@js.native
 trait MakeKeysRequiredPartialUs extends StObject {
   
-  var CompanyNumber: js.UndefOr[String] = js.native
+  var CompanyNumber: js.UndefOr[String] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var Email: String = js.native
+  var Email: String
   
-  var HeadquartersAddress: js.UndefOr[AddressType] = js.native
+  var HeadquartersAddress: js.UndefOr[AddressType] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.native
+  var KYCLevel: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.KYCLevel] = js.undefined
   
-  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType = js.native
+  var LegalPersonType: typings.mangopay2NodejsSdk.mod.user.LegalPersonType
   
-  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.native
+  var LegalRepresentativeAddress: js.UndefOr[AddressType] = js.undefined
   
-  var LegalRepresentativeBirthday: Timestamp = js.native
+  var LegalRepresentativeBirthday: Timestamp
   
-  var LegalRepresentativeCountryOfResidence: CountryISO = js.native
+  var LegalRepresentativeCountryOfResidence: CountryISO
   
-  var LegalRepresentativeEmail: js.UndefOr[String] = js.native
+  var LegalRepresentativeEmail: js.UndefOr[String] = js.undefined
   
-  var LegalRepresentativeFirstName: String = js.native
+  var LegalRepresentativeFirstName: String
   
-  var LegalRepresentativeLastName: String = js.native
+  var LegalRepresentativeLastName: String
   
-  var LegalRepresentativeNationality: CountryISO = js.native
+  var LegalRepresentativeNationality: CountryISO
   
-  var Name: String = js.native
+  var Name: String
   
-  var PersonType: js.UndefOr[LEGAL] = js.native
+  var PersonType: js.UndefOr[LEGAL] = js.undefined
   
-  var ProofOfIdentity: js.UndefOr[String | Null] = js.native
+  var ProofOfIdentity: js.UndefOr[String | Null] = js.undefined
   
-  var ProofOfRegistration: js.UndefOr[String | Null] = js.native
+  var ProofOfRegistration: js.UndefOr[String | Null] = js.undefined
   
-  var ShareholderDeclaration: js.UndefOr[String | Null] = js.native
+  var ShareholderDeclaration: js.UndefOr[String | Null] = js.undefined
   
-  var Statute: js.UndefOr[String | Null] = js.native
+  var Statute: js.UndefOr[String | Null] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object MakeKeysRequiredPartialUs {
   

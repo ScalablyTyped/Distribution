@@ -9,15 +9,19 @@ import typings.std.Iterable
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("url", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("url", "URLSearchParams")
   @js.native
   class URLSearchParams ()
-    extends Iterable[js.Tuple2[String, String]] {
+    extends StObject
+       with Iterable[js.Tuple2[String, String]] {
     def this(init: String) = this()
     def this(init: js.Array[js.Tuple2[String, String]]) = this()
     def this(init: StringDictionary[js.UndefOr[String | js.Array[String]]]) = this()
@@ -84,87 +88,70 @@ object mod {
     var username: String = js.native
   }
   
-  @JSImport("url", "domainToASCII")
-  @js.native
-  def domainToASCII(domain: String): String = js.native
+  @scala.inline
+  def domainToASCII(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainToASCII")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("url", "domainToUnicode")
-  @js.native
-  def domainToUnicode(domain: String): String = js.native
+  @scala.inline
+  def domainToUnicode(domain: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("domainToUnicode")(domain.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * This function ensures the correct decodings of percent-encoded characters as
     * well as ensuring a cross-platform valid absolute path string.
     * @param url The file URL string or URL object to convert to a path.
     */
-  @JSImport("url", "fileURLToPath")
-  @js.native
-  def fileURLToPath(url: String): String = js.native
-  @JSImport("url", "fileURLToPath")
-  @js.native
-  def fileURLToPath(url: URL_): String = js.native
+  @scala.inline
+  def fileURLToPath(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fileURLToPath")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fileURLToPath(url: URL_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fileURLToPath")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("url", "format")
-  @js.native
-  def format(URL: URL_): String = js.native
-  @JSImport("url", "format")
-  @js.native
-  def format(URL: URL_, options: URLFormatOptions): String = js.native
-  @JSImport("url", "format")
-  @js.native
-  def format(urlObject: String): String = js.native
-  @JSImport("url", "format")
-  @js.native
-  def format(urlObject: UrlObject): String = js.native
+  @scala.inline
+  def format(URL: URL_): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(URL.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(URL: URL_, options: URLFormatOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(URL.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(urlObject: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(urlObject: UrlObject): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(urlObject.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String): UrlWithStringQuery = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): UrlWithStringQuery = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: Boolean): Url = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse_false(urlStr: String, parseQueryString: `false`): UrlWithStringQuery = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse_false(urlStr: String, parseQueryString: `false`, slashesDenoteHost: Boolean): UrlWithStringQuery = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse_true(urlStr: String, parseQueryString: `true`): UrlWithParsedQuery = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse_true(urlStr: String, parseQueryString: `true`, slashesDenoteHost: Boolean): UrlWithParsedQuery = js.native
+  @scala.inline
+  def parse(urlStr: String): UrlWithStringQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any]).asInstanceOf[UrlWithStringQuery]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[Url]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Unit, slashesDenoteHost: Boolean): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+  
+  @scala.inline
+  def parse_false(urlStr: String, parseQueryString: `false`): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+  @scala.inline
+  def parse_false(urlStr: String, parseQueryString: `false`, slashesDenoteHost: Boolean): UrlWithStringQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithStringQuery]
+  
+  @scala.inline
+  def parse_true(urlStr: String, parseQueryString: `true`): UrlWithParsedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[UrlWithParsedQuery]
+  @scala.inline
+  def parse_true(urlStr: String, parseQueryString: `true`, slashesDenoteHost: Boolean): UrlWithParsedQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[UrlWithParsedQuery]
   
   /**
     * This function ensures that path is resolved absolutely, and that the URL
     * control characters are correctly encoded when converting into a File URL.
     * @param url The path to convert to a File URL.
     */
-  @JSImport("url", "pathToFileURL")
-  @js.native
-  def pathToFileURL(url: String): URL_ = js.native
+  @scala.inline
+  def pathToFileURL(url: String): URL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToFileURL")(url.asInstanceOf[js.Any]).asInstanceOf[URL_]
   
-  @JSImport("url", "resolve")
-  @js.native
-  def resolve(from: String, to: String): String = js.native
+  @scala.inline
+  def resolve(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait URLFormatOptions extends StObject {
     
-    var auth: js.UndefOr[Boolean] = js.native
+    var auth: js.UndefOr[Boolean] = js.undefined
     
-    var fragment: js.UndefOr[Boolean] = js.native
+    var fragment: js.UndefOr[Boolean] = js.undefined
     
-    var search: js.UndefOr[Boolean] = js.native
+    var search: js.UndefOr[Boolean] = js.undefined
     
-    var unicode: js.UndefOr[Boolean] = js.native
+    var unicode: js.UndefOr[Boolean] = js.undefined
   }
   object URLFormatOptions {
     
@@ -204,38 +191,37 @@ object mod {
   }
   
   // Output of `url.parse`
-  @js.native
   trait Url extends StObject {
     
-    var auth: String | Null = js.native
+    var auth: String | Null
     
-    var hash: String | Null = js.native
+    var hash: String | Null
     
-    var host: String | Null = js.native
+    var host: String | Null
     
-    var hostname: String | Null = js.native
+    var hostname: String | Null
     
-    var href: String = js.native
+    var href: String
     
-    var path: String | Null = js.native
+    var path: String | Null
     
-    var pathname: String | Null = js.native
+    var pathname: String | Null
     
-    var port: String | Null = js.native
+    var port: String | Null
     
-    var protocol: String | Null = js.native
+    var protocol: String | Null
     
-    var query: String | Null | ParsedUrlQuery = js.native
+    var query: String | Null | ParsedUrlQuery
     
-    var search: String | Null = js.native
+    var search: String | Null
     
-    var slashes: Boolean | Null = js.native
+    var slashes: Boolean | Null
   }
   object Url {
     
     @scala.inline
     def apply(href: String): Url = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[Url]
     }
     
@@ -314,32 +300,31 @@ object mod {
   }
   
   // Input to `url.format`
-  @js.native
   trait UrlObject extends StObject {
     
-    var auth: js.UndefOr[String | Null] = js.native
+    var auth: js.UndefOr[String | Null] = js.undefined
     
-    var hash: js.UndefOr[String | Null] = js.native
+    var hash: js.UndefOr[String | Null] = js.undefined
     
-    var host: js.UndefOr[String | Null] = js.native
+    var host: js.UndefOr[String | Null] = js.undefined
     
-    var hostname: js.UndefOr[String | Null] = js.native
+    var hostname: js.UndefOr[String | Null] = js.undefined
     
-    var href: js.UndefOr[String | Null] = js.native
+    var href: js.UndefOr[String | Null] = js.undefined
     
-    var path: js.UndefOr[String | Null] = js.native
+    var path: js.UndefOr[String | Null] = js.undefined
     
-    var pathname: js.UndefOr[String | Null] = js.native
+    var pathname: js.UndefOr[String | Null] = js.undefined
     
-    var port: js.UndefOr[String | Double | Null] = js.native
+    var port: js.UndefOr[String | Double | Null] = js.undefined
     
-    var protocol: js.UndefOr[String | Null] = js.native
+    var protocol: js.UndefOr[String | Null] = js.undefined
     
-    var query: js.UndefOr[String | Null | ParsedUrlQueryInput] = js.native
+    var query: js.UndefOr[String | Null | ParsedUrlQueryInput] = js.undefined
     
-    var search: js.UndefOr[String | Null] = js.native
+    var search: js.UndefOr[String | Null] = js.undefined
     
-    var slashes: js.UndefOr[Boolean | Null] = js.native
+    var slashes: js.UndefOr[Boolean | Null] = js.undefined
   }
   object UrlObject {
     
@@ -462,17 +447,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait UrlWithParsedQuery extends Url {
+  trait UrlWithParsedQuery
+    extends StObject
+       with Url {
     
     @JSName("query")
-    var query_UrlWithParsedQuery: ParsedUrlQuery = js.native
+    var query_UrlWithParsedQuery: ParsedUrlQuery
   }
   object UrlWithParsedQuery {
     
     @scala.inline
     def apply(href: String, query: ParsedUrlQuery): UrlWithParsedQuery = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], query = query.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, search = null, slashes = null)
       __obj.asInstanceOf[UrlWithParsedQuery]
     }
     
@@ -484,17 +470,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait UrlWithStringQuery extends Url {
+  trait UrlWithStringQuery
+    extends StObject
+       with Url {
     
     @JSName("query")
-    var query_UrlWithStringQuery: String | Null = js.native
+    var query_UrlWithStringQuery: String | Null
   }
   object UrlWithStringQuery {
     
     @scala.inline
     def apply(href: String): UrlWithStringQuery = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, pathname = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[UrlWithStringQuery]
     }
     

@@ -2,23 +2,21 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Organizationbillingemail extends StObject {
   
-  var email: String = js.native
+  var email: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var login: String = js.native
+  var login: String
   
-  var organization_billing_email: String = js.native
+  var organization_billing_email: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Organizationbillingemail {
   

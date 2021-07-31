@@ -2,31 +2,29 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolConfig extends StObject {
   
   /**
     * A regular expression for validating the incoming Amazon Cognito user pool app client ID.
     */
-  var appIdClientRegex: js.UndefOr[String] = js.native
+  var appIdClientRegex: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS Region in which the user pool was created.
     */
-  var awsRegion: String = js.native
+  var awsRegion: String
   
   /**
     * The action that you want your GraphQL API to take when a request that uses Amazon Cognito user pool authentication doesn't match the Amazon Cognito user pool configuration.
     */
-  var defaultAction: DefaultAction = js.native
+  var defaultAction: DefaultAction
   
   /**
     * The user pool ID.
     */
-  var userPoolId: String = js.native
+  var userPoolId: String
 }
 object UserPoolConfig {
   

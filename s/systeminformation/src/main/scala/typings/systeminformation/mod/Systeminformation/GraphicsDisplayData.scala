@@ -2,43 +2,41 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicsDisplayData extends StObject {
   
-  var builtin: Boolean = js.native
+  var builtin: Boolean
   
-  var connection: String = js.native
+  var connection: String
   
-  var currentRefreshRate: Double = js.native
+  var currentRefreshRate: Double
   
-  var currentResX: Double = js.native
+  var currentResX: Double
   
-  var currentResY: Double = js.native
+  var currentResY: Double
   
-  var deviceName: String = js.native
+  var deviceName: String
   
-  var main: Boolean = js.native
+  var main: Boolean
   
-  var model: String = js.native
+  var model: String
   
-  var pixeldepth: Double = js.native
+  var pixeldepth: Double
   
-  var positionX: Double = js.native
+  var positionX: Double
   
-  var positionY: Double = js.native
+  var positionY: Double
   
-  var resolutionx: Double = js.native
+  var resolutionx: Double
   
-  var resolutiony: Double = js.native
+  var resolutiony: Double
   
-  var sizex: Double = js.native
+  var sizex: Double
   
-  var sizey: Double = js.native
+  var sizey: Double
   
-  var vendor: String = js.native
+  var vendor: String
 }
 object GraphicsDisplayData {
   

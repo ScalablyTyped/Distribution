@@ -3,38 +3,36 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactResource extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Type-specific data about the artifact.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * A link to download the resource.
     */
-  var downloadUrl: String = js.native
+  var downloadUrl: String
   
   /**
     * Type-specific properties of the artifact.
     */
-  var properties: StringDictionary[String] = js.native
+  var properties: StringDictionary[String]
   
   /**
     * The type of the resource: File container, version control folder, UNC path, etc.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The full http link to the resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object ArtifactResource {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserHierarchyGroupNameRequest extends StObject {
   
   /**
     * The identifier of the hierarchy group.
     */
-  var HierarchyGroupId: typings.awsSdk.connectMod.HierarchyGroupId = js.native
+  var HierarchyGroupId: typings.awsSdk.connectMod.HierarchyGroupId
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The name of the hierarchy group. Must not be more than 100 characters.
     */
-  var Name: HierarchyGroupName = js.native
+  var Name: HierarchyGroupName
 }
 object UpdateUserHierarchyGroupNameRequest {
   

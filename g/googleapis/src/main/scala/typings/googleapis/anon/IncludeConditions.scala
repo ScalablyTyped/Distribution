@@ -3,13 +3,11 @@ package typings.googleapis.anon
 import typings.googleapis.v3Mod.analyticsV3.SchemaIncludeConditions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeConditions extends StObject {
   
-  var includeConditions: js.UndefOr[SchemaIncludeConditions] = js.native
+  var includeConditions: js.UndefOr[SchemaIncludeConditions] = js.undefined
 }
 object IncludeConditions {
   

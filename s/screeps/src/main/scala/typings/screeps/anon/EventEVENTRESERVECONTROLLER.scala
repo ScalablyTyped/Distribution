@@ -4,17 +4,17 @@ import typings.screeps.EVENT_RESERVE_CONTROLLER
 import typings.screeps.EventItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventEVENTRESERVECONTROLLER extends EventItem {
+trait EventEVENTRESERVECONTROLLER
+  extends StObject
+     with EventItem {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_RESERVE_CONTROLLER] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_RESERVE_CONTROLLER] */ js.Any
   
-  var event: EVENT_RESERVE_CONTROLLER = js.native
+  var event: EVENT_RESERVE_CONTROLLER
   
-  var objectId: String = js.native
+  var objectId: String
 }
 object EventEVENTRESERVECONTROLLER {
   

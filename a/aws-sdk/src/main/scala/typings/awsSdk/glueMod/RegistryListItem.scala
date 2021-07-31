@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegistryListItem extends StObject {
   
   /**
     * The data the registry was created.
     */
-  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.native
+  var CreatedTime: js.UndefOr[CreatedTimestamp] = js.undefined
   
   /**
     * A description of the registry.
     */
-  var Description: js.UndefOr[DescriptionString] = js.native
+  var Description: js.UndefOr[DescriptionString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the registry.
     */
-  var RegistryArn: js.UndefOr[GlueResourceArn] = js.native
+  var RegistryArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The status of the registry.
     */
-  var Status: js.UndefOr[RegistryStatus] = js.native
+  var Status: js.UndefOr[RegistryStatus] = js.undefined
   
   /**
     * The date the registry was updated.
     */
-  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.native
+  var UpdatedTime: js.UndefOr[UpdatedTimestamp] = js.undefined
 }
 object RegistryListItem {
   

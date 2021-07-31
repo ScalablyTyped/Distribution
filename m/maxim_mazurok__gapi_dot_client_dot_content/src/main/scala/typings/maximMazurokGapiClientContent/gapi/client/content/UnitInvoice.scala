@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitInvoice extends StObject {
   
   /** Additional charges for a unit, e.g. shipping costs. */
-  var additionalCharges: js.UndefOr[js.Array[UnitInvoiceAdditionalCharge]] = js.native
+  var additionalCharges: js.UndefOr[js.Array[UnitInvoiceAdditionalCharge]] = js.undefined
   
   /** [required] Pre-tax or post-tax price of the unit depending on the locality of the order. */
-  var unitPrice: js.UndefOr[Price] = js.native
+  var unitPrice: js.UndefOr[Price] = js.undefined
   
   /** Tax amounts to apply to the unit price. */
-  var unitPriceTaxes: js.UndefOr[js.Array[UnitInvoiceTaxLine]] = js.native
+  var unitPriceTaxes: js.UndefOr[js.Array[UnitInvoiceTaxLine]] = js.undefined
 }
 object UnitInvoice {
   

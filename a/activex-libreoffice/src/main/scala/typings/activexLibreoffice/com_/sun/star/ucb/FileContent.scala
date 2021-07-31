@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,12 +22,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Whether a content represents a folder or a file can be determined by inspecting its property **IsFolder** or **IsDocument** .
   * @see com.sun.star.ucb.FileContentProvider
   */
-@js.native
 trait FileContent
-  extends XCommandProcessor2
+  extends StObject
      with XComponent
      with XContent
      with XContentCreator
+     with XCommandProcessor2
      with XPropertiesChangeNotifier
      with XPropertyContainer
      with XPropertySetInfoChangeNotifier

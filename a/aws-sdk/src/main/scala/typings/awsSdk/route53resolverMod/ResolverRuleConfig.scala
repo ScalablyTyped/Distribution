@@ -2,26 +2,24 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolverRuleConfig extends StObject {
   
   /**
     * The new name for the Resolver rule. The name that you specify appears in the Resolver dashboard in the Route 53 console. 
     */
-  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
     * The ID of the new outbound Resolver endpoint that you want to use to route DNS queries to the IP addresses that you specify in TargetIps.
     */
-  var ResolverEndpointId: js.UndefOr[ResourceId] = js.native
+  var ResolverEndpointId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * For DNS queries that originate in your VPC, the new IP addresses that you want to route outbound DNS queries to.
     */
-  var TargetIps: js.UndefOr[TargetList] = js.native
+  var TargetIps: js.UndefOr[TargetList] = js.undefined
 }
 object ResolverRuleConfig {
   

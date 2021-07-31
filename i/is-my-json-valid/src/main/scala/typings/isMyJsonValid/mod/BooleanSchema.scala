@@ -3,20 +3,20 @@ package typings.isMyJsonValid.mod
 import typings.isMyJsonValid.isMyJsonValidStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BooleanSchema extends _AnySchema {
+trait BooleanSchema
+  extends StObject
+     with _AnySchema {
   
-  var `type`: boolean = js.native
+  var `type`: boolean
 }
 object BooleanSchema {
   
   @scala.inline
-  def apply(`type`: boolean): BooleanSchema = {
+  def apply(): BooleanSchema = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[BooleanSchema]
   }
   

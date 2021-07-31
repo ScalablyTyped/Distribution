@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceCrowdingConfig extends StObject {
   
   /** Maximum number of results allowed from a source. No limits will be set on results if this value is less than or equal to 0. */
-  var numResults: js.UndefOr[Double] = js.native
+  var numResults: js.UndefOr[Double] = js.undefined
   
   /** Maximum number of suggestions allowed from a source. No limits will be set on results if this value is less than or equal to 0. */
-  var numSuggestions: js.UndefOr[Double] = js.native
+  var numSuggestions: js.UndefOr[Double] = js.undefined
 }
 object SourceCrowdingConfig {
   

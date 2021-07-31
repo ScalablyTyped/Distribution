@@ -2,31 +2,29 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportAssetsToS3RequestDetails extends StObject {
   
   /**
     * The destination for the asset.
     */
-  var AssetDestinations: ListOfAssetDestinationEntry = js.native
+  var AssetDestinations: ListOfAssetDestinationEntry
   
   /**
     * The unique identifier for the data set associated with this export job.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * Encryption configuration for the export job.
     */
-  var Encryption: js.UndefOr[ExportServerSideEncryption] = js.native
+  var Encryption: js.UndefOr[ExportServerSideEncryption] = js.undefined
   
   /**
     * The unique identifier for the revision associated with this export request.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
 }
 object ExportAssetsToS3RequestDetails {
   

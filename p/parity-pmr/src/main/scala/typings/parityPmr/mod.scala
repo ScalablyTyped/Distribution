@@ -3,47 +3,47 @@ package typings.parityPmr
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("parity-pmr", "format")
+  @JSImport("parity-pmr", JSImport.Namespace)
   @js.native
-  def format(message: PMRMessage): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("parity-pmr", "parse")
-  @js.native
-  def parse(buffer: Buffer): PMRMessage = js.native
+  @scala.inline
+  def format(message: PMRMessage): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(message.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @js.native
+  @scala.inline
+  def parse(buffer: Buffer): PMRMessage = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(buffer.asInstanceOf[js.Any]).asInstanceOf[PMRMessage]
+  
   trait PMRMessage extends StObject {
     
-    var canceledQuantity: js.UndefOr[Double] = js.native
+    var canceledQuantity: js.UndefOr[Double] = js.undefined
     
-    var incomingOrderNumber: js.UndefOr[Double] = js.native
+    var incomingOrderNumber: js.UndefOr[Double] = js.undefined
     
-    var instrument: js.UndefOr[String] = js.native
+    var instrument: js.UndefOr[String] = js.undefined
     
-    var matchNumber: js.UndefOr[Double] = js.native
+    var matchNumber: js.UndefOr[Double] = js.undefined
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var orderNumber: js.UndefOr[String] = js.native
+    var orderNumber: js.UndefOr[String] = js.undefined
     
-    var price: js.UndefOr[Double] = js.native
+    var price: js.UndefOr[Double] = js.undefined
     
-    var quantity: js.UndefOr[Double] = js.native
+    var quantity: js.UndefOr[Double] = js.undefined
     
-    var restingOrderNumber: js.UndefOr[Double] = js.native
+    var restingOrderNumber: js.UndefOr[Double] = js.undefined
     
-    var side: js.UndefOr[String] = js.native
+    var side: js.UndefOr[String] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object PMRMessage {
     

@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait typeUniqueValueInfo extends Object {
+trait typeUniqueValueInfo
+  extends StObject
+     with Object {
   
   /**
     * The number of features with the given `value` (or belonging to the given category).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * The label describing the value or category in the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The symbol used to represent features belonging to the given category.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
     */
-  var symbol: Symbol = js.native
+  var symbol: Symbol
   
   /**
     * A unique value representing a type or category of features in a layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-type.html#UniqueValueInfo)
     */
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object typeUniqueValueInfo {
   

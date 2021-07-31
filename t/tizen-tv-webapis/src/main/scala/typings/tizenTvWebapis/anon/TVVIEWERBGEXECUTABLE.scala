@@ -3,22 +3,20 @@ package typings.tizenTvWebapis.anon
 import typings.tizenTvWebapis.tizenTvWebapisNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TVVIEWERBGEXECUTABLE extends StObject {
   
   /**
     * Whether the application can be executed in the background
     */
-  var TV_VIEWER_BG_EXECUTABLE: `0` = js.native
+  var TV_VIEWER_BG_EXECUTABLE: `0`
 }
 object TVVIEWERBGEXECUTABLE {
   
   @scala.inline
-  def apply(TV_VIEWER_BG_EXECUTABLE: `0`): TVVIEWERBGEXECUTABLE = {
-    val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = TV_VIEWER_BG_EXECUTABLE.asInstanceOf[js.Any])
+  def apply(): TVVIEWERBGEXECUTABLE = {
+    val __obj = js.Dynamic.literal(TV_VIEWER_BG_EXECUTABLE = 0)
     __obj.asInstanceOf[TVVIEWERBGEXECUTABLE]
   }
   

@@ -2,37 +2,35 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashTools extends StObject {
   
-  var activeTool: js.Any = js.native
+  var activeTool: js.Any
   
-  var altIsDown: js.Any = js.native
+  var altIsDown: js.Any
   
-  def constraintPoint(): js.Any = js.native
+  def constraintPoint(): js.Any
   
-  var ctlIsDown: js.Any = js.native
+  var ctlIsDown: js.Any
   
-  def getKeyDown(): js.Any = js.native
+  def getKeyDown(): js.Any
   
-  var mouseIsDown: js.Any = js.native
+  var mouseIsDown: js.Any
   
-  var penDownLoc: js.Any = js.native
+  var penDownLoc: js.Any
   
-  var penLoc: js.Any = js.native
+  var penLoc: js.Any
   
-  def setCreatingBbox(): js.Any = js.native
+  def setCreatingBbox(): js.Any
   
-  def setCursor(): js.Any = js.native
+  def setCursor(): js.Any
   
-  var shiftIsDown: js.Any = js.native
+  var shiftIsDown: js.Any
   
-  def snapPoint(): js.Any = js.native
+  def snapPoint(): js.Any
   
-  var toolObjs: js.Any = js.native
+  var toolObjs: js.Any
 }
 object FlashTools {
   

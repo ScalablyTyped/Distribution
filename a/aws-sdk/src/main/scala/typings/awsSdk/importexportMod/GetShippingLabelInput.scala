@@ -2,35 +2,33 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetShippingLabelInput extends StObject {
   
-  var APIVersion: js.UndefOr[APIVersion_] = js.native
+  var APIVersion: js.UndefOr[APIVersion_] = js.undefined
   
-  var city: js.UndefOr[typings.awsSdk.importexportMod.city] = js.native
+  var city: js.UndefOr[typings.awsSdk.importexportMod.city] = js.undefined
   
-  var company: js.UndefOr[typings.awsSdk.importexportMod.company] = js.native
+  var company: js.UndefOr[typings.awsSdk.importexportMod.company] = js.undefined
   
-  var country: js.UndefOr[typings.awsSdk.importexportMod.country] = js.native
+  var country: js.UndefOr[typings.awsSdk.importexportMod.country] = js.undefined
   
-  var jobIds: JobIdList = js.native
+  var jobIds: JobIdList
   
-  var name: js.UndefOr[typings.awsSdk.importexportMod.name] = js.native
+  var name: js.UndefOr[typings.awsSdk.importexportMod.name] = js.undefined
   
-  var phoneNumber: js.UndefOr[typings.awsSdk.importexportMod.phoneNumber] = js.native
+  var phoneNumber: js.UndefOr[typings.awsSdk.importexportMod.phoneNumber] = js.undefined
   
-  var postalCode: js.UndefOr[typings.awsSdk.importexportMod.postalCode] = js.native
+  var postalCode: js.UndefOr[typings.awsSdk.importexportMod.postalCode] = js.undefined
   
-  var stateOrProvince: js.UndefOr[typings.awsSdk.importexportMod.stateOrProvince] = js.native
+  var stateOrProvince: js.UndefOr[typings.awsSdk.importexportMod.stateOrProvince] = js.undefined
   
-  var street1: js.UndefOr[typings.awsSdk.importexportMod.street1] = js.native
+  var street1: js.UndefOr[typings.awsSdk.importexportMod.street1] = js.undefined
   
-  var street2: js.UndefOr[typings.awsSdk.importexportMod.street2] = js.native
+  var street2: js.UndefOr[typings.awsSdk.importexportMod.street2] = js.undefined
   
-  var street3: js.UndefOr[typings.awsSdk.importexportMod.street3] = js.native
+  var street3: js.UndefOr[typings.awsSdk.importexportMod.street3] = js.undefined
 }
 object GetShippingLabelInput {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetProfileResponse extends StObject {
   
   /**
     * The content encoding of the profile.
     */
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * The content type of the profile in the payload. It is either application/json or the default application/x-amzn-ion.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Information about the profile.
     */
-  var profile: AggregatedProfile = js.native
+  var profile: AggregatedProfile
 }
 object GetProfileResponse {
   

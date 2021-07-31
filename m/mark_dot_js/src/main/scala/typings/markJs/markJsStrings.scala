@@ -3,13 +3,14 @@ package typings.markJs
 import typings.markJs.mod.MarkAccuracy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object markJsStrings {
   
   @js.native
-  sealed trait complementary extends MarkAccuracy
+  sealed trait complementary
+    extends StObject
+       with MarkAccuracy
   @scala.inline
   def complementary: complementary = "complementary".asInstanceOf[complementary]
   
@@ -24,12 +25,16 @@ object markJsStrings {
   def enabled: enabled = "enabled".asInstanceOf[enabled]
   
   @js.native
-  sealed trait exactly extends MarkAccuracy
+  sealed trait exactly
+    extends StObject
+       with MarkAccuracy
   @scala.inline
   def exactly: exactly = "exactly".asInstanceOf[exactly]
   
   @js.native
-  sealed trait partially extends MarkAccuracy
+  sealed trait partially
+    extends StObject
+       with MarkAccuracy
   @scala.inline
   def partially: partially = "partially".asInstanceOf[partially]
   

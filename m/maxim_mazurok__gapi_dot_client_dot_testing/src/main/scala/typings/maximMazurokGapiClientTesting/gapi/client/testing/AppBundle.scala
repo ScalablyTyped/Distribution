@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppBundle extends StObject {
   
   /** .aab file representing the app bundle under test. */
-  var bundleLocation: js.UndefOr[FileReference] = js.native
+  var bundleLocation: js.UndefOr[FileReference] = js.undefined
 }
 object AppBundle {
   

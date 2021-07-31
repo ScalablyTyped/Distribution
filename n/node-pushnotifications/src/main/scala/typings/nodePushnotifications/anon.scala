@@ -3,23 +3,21 @@ package typings.nodePushnotifications
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[String] = js.native
+    var headers: js.UndefOr[String] = js.undefined
     
-    var notificationMethod: js.UndefOr[String] = js.native
+    var notificationMethod: js.UndefOr[String] = js.undefined
   }
   object AccessToken {
     
@@ -64,14 +62,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Address extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var autoAdjustCache: js.UndefOr[Boolean] = js.native
+    var autoAdjustCache: js.UndefOr[Boolean] = js.undefined
     
-    var buffersNotifications: js.UndefOr[Boolean] = js.native
+    var buffersNotifications: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of trusted certificates. Each element should contain either a filename to load, or a
@@ -79,54 +76,54 @@ object anon {
       * will be used. - You may need to use this as some environments don't include the CA used by
       * Apple (entrust_2048).
       */
-    var ca: js.UndefOr[js.Array[Buffer | String]] = js.native
+    var ca: js.UndefOr[js.Array[Buffer | String]] = js.undefined
     
-    var cacheLength: js.UndefOr[Double] = js.native
+    var cacheLength: js.UndefOr[Double] = js.undefined
     
     /**
       * The filename of the connection certificate to load from disk, or a Buffer/String containing the
       * certificate data.
       */
-    var cert: js.UndefOr[String] = js.native
+    var cert: js.UndefOr[String] = js.undefined
     
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
-    var connectionRetryLimit: js.UndefOr[Double] = js.native
+    var connectionRetryLimit: js.UndefOr[Double] = js.undefined
     
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
-    var disableEPIPEFix: js.UndefOr[Boolean] = js.native
+    var disableEPIPEFix: js.UndefOr[Boolean] = js.undefined
     
-    var disableNagle: js.UndefOr[Boolean] = js.native
+    var disableNagle: js.UndefOr[Boolean] = js.undefined
     
-    var fastMode: js.UndefOr[Boolean] = js.native
+    var fastMode: js.UndefOr[Boolean] = js.undefined
     
     /** The filename of the connection key to load from disk, or a Buffer or String containing the key data. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var maxConnections: js.UndefOr[Double] = js.native
+    var maxConnections: js.UndefOr[Double] = js.undefined
     
-    var minConnections: js.UndefOr[Double] = js.native
+    var minConnections: js.UndefOr[Double] = js.undefined
     
     /** The passphrase for the connection key, if required */
-    var passphrase: js.UndefOr[String] = js.native
+    var passphrase: js.UndefOr[String] = js.undefined
     
     /**
       * File path for private key, certificate and CA certs in PFX or PKCS12 format, or a Buffer containing
       * the PFX data. If supplied will always be used instead of certificate and key above.
       */
-    var pfx: js.UndefOr[Buffer | String] = js.native
+    var pfx: js.UndefOr[Buffer | String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /** APN Token */
-    var token: js.UndefOr[Key] = js.native
+    var token: js.UndefOr[Key] = js.undefined
     
-    var voip: js.UndefOr[Boolean] = js.native
+    var voip: js.UndefOr[Boolean] = js.undefined
   }
   object Address {
     
@@ -276,12 +273,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Clientid extends StObject {
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
   }
   object Clientid {
     
@@ -308,11 +304,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
     /** GCM or FCM token */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object Id {
     
@@ -333,20 +328,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
     /**
       * The filename of the provider token key (as supplied by Apple) to load from disk, or a
       * Buffer/String containing the key data.
       */
-    var key: js.UndefOr[Buffer | String] = js.native
+    var key: js.UndefOr[Buffer | String] = js.undefined
     
     /** The ID of the key issued by Apple */
-    var keyId: js.UndefOr[String] = js.native
+    var keyId: js.UndefOr[String] = js.undefined
     
     /** ID of the team associated with the provider token key */
-    var teamId: js.UndefOr[String] = js.native
+    var teamId: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -379,10 +373,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: js.UndefOr[Clientid] = js.native
+    var options: js.UndefOr[Clientid] = js.undefined
   }
   object Options {
     

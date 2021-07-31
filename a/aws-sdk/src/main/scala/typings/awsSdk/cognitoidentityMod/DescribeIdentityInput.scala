@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIdentityInput extends StObject {
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitoidentityMod.IdentityId
 }
 object DescribeIdentityInput {
   

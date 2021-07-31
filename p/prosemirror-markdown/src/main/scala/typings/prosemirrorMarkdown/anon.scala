@@ -2,17 +2,15 @@ package typings.prosemirrorMarkdown
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Leading extends StObject {
     
-    var leading: js.UndefOr[String | Null] = js.native
+    var leading: js.UndefOr[String | Null] = js.undefined
     
-    var trailing: js.UndefOr[String | Null] = js.native
+    var trailing: js.UndefOr[String | Null] = js.undefined
   }
   object Leading {
     
@@ -45,10 +43,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TightLists extends StObject {
     
-    var tightLists: js.UndefOr[Boolean | Null] = js.native
+    var tightLists: js.UndefOr[Boolean | Null] = js.undefined
   }
   object TightLists {
     

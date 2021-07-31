@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
   /** The creation time for this document or object in the search result. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Options that specify how to display a structured data search result. */
-  var displayOptions: js.UndefOr[ResultDisplayMetadata] = js.native
+  var displayOptions: js.UndefOr[ResultDisplayMetadata] = js.undefined
   
   /** Indexed fields in structured data, returned as a generic named property. */
-  var fields: js.UndefOr[js.Array[NamedProperty]] = js.native
+  var fields: js.UndefOr[js.Array[NamedProperty]] = js.undefined
   
   /** Mime type of the search result. */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /** Object type of the search result. */
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
   /** Owner (usually creator) of the document or object of the search result. */
-  var owner: js.UndefOr[Person] = js.native
+  var owner: js.UndefOr[Person] = js.undefined
   
   /** The named source for the result, such as Gmail. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /**
     * The last modified date for the object in the search result. If not set in the item, the value returned here is empty. When `updateTime` is used for calculating freshness and is not
     * set, this value defaults to 2 years from the current time.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Metadata {
   

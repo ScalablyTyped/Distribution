@@ -10,9 +10,9 @@ React Native Camera Roll for iOS & Android
 | ------------------ | :-------------: |
 | Full name          | @react-native-community/cameraroll |
 | Keywords           | react-native, react native, cameraroll, camera, photo gallery |
-| # releases         | 34 |
-| # dependents       | 13 |
-| # downloads        | 1229781 |
+| # releases         | 33 |
+| # dependents       | 14 |
+| # downloads        | 1461464 |
 | # stars            | 0 |
 
 ## Links

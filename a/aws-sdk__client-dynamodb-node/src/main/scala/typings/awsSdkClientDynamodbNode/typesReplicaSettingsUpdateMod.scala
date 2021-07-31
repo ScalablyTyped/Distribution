@@ -7,18 +7,16 @@ import typings.awsSdkClientDynamodbNode.typesReplicaGlobalSecondaryIndexSettings
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaSettingsUpdateMod {
   
-  @js.native
   trait ReplicaSettingsUpdate extends StObject {
     
     /**
       * <p>The region of the replica to be added.</p>
       */
-    var RegionName: String = js.native
+    var RegionName: String
     
     /**
       * <p>Represents the settings of a global secondary index for a global table that will be modified.</p>
@@ -29,17 +27,17 @@ object typesReplicaSettingsUpdateMod {
         ]) | (Iterable[
           typings.awsSdkClientDynamodbNode.typesReplicaGlobalSecondaryIndexSettingsUpdateMod.ReplicaGlobalSecondaryIndexSettingsUpdate
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Autoscaling settings for managing a global table replica's read capacity units.</p>
       */
-    var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.native
+    var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate: js.UndefOr[AutoScalingSettingsUpdate] = js.undefined
     
     /**
       * <p>The maximum number of strongly consistent reads consumed per second before DynamoDB returns a <code>ThrottlingException</code>. For more information, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithTables.html#ProvisionedThroughput">Specifying Read and Write Requirements</a> in the <i>Amazon DynamoDB Developer Guide</i>. </p>
       */
-    var ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.native
+    var ReplicaProvisionedReadCapacityUnits: js.UndefOr[Double] = js.undefined
   }
   object ReplicaSettingsUpdate {
     
@@ -80,20 +78,21 @@ object typesReplicaSettingsUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicaSettingsUpdate extends ReplicaSettingsUpdate {
+  trait UnmarshalledReplicaSettingsUpdate
+    extends StObject
+       with ReplicaSettingsUpdate {
     
     /**
       * <p>Represents the settings of a global secondary index for a global table that will be modified.</p>
       */
     @JSName("ReplicaGlobalSecondaryIndexSettingsUpdate")
-    var ReplicaGlobalSecondaryIndexSettingsUpdate_UnmarshalledReplicaSettingsUpdate: js.UndefOr[js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate]] = js.native
+    var ReplicaGlobalSecondaryIndexSettingsUpdate_UnmarshalledReplicaSettingsUpdate: js.UndefOr[js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsUpdate]] = js.undefined
     
     /**
       * <p>Autoscaling settings for managing a global table replica's read capacity units.</p>
       */
     @JSName("ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate")
-    var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate_UnmarshalledReplicaSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.native
+    var ReplicaProvisionedReadCapacityAutoScalingSettingsUpdate_UnmarshalledReplicaSettingsUpdate: js.UndefOr[UnmarshalledAutoScalingSettingsUpdate] = js.undefined
   }
   object UnmarshalledReplicaSettingsUpdate {
     

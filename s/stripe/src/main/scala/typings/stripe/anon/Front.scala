@@ -2,21 +2,19 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Front extends StObject {
   
   /**
     * The back of a document returned by a file upload with a purpose value of identity_document.
     */
-  var back: String = js.native
+  var back: String
   
   /**
     * The front of a document returned by a file upload with a purpose value of identity_document.
     */
-  var front: String = js.native
+  var front: String
 }
 object Front {
   

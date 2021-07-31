@@ -2,56 +2,54 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var Details: js.UndefOr[SessionDetails] = js.native
+  var Details: js.UndefOr[SessionDetails] = js.undefined
   
   /**
     * The name of the Session Manager SSM document used to define the parameters and plugin settings for the session. For example, SSM-SessionManagerRunShell.
     */
-  var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.native
+  var DocumentName: js.UndefOr[typings.awsSdk.ssmMod.DocumentName] = js.undefined
   
   /**
     * The date and time, in ISO-8601 Extended format, when the session was terminated.
     */
-  var EndDate: js.UndefOr[DateTime] = js.native
+  var EndDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var OutputUrl: js.UndefOr[SessionManagerOutputUrl] = js.native
+  var OutputUrl: js.UndefOr[SessionManagerOutputUrl] = js.undefined
   
   /**
     * The ID of the AWS user account that started the session.
     */
-  var Owner: js.UndefOr[SessionOwner] = js.native
+  var Owner: js.UndefOr[SessionOwner] = js.undefined
   
   /**
     * The ID of the session.
     */
-  var SessionId: js.UndefOr[typings.awsSdk.ssmMod.SessionId] = js.native
+  var SessionId: js.UndefOr[typings.awsSdk.ssmMod.SessionId] = js.undefined
   
   /**
     * The date and time, in ISO-8601 Extended format, when the session began.
     */
-  var StartDate: js.UndefOr[DateTime] = js.native
+  var StartDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The status of the session. For example, "Connected" or "Terminated".
     */
-  var Status: js.UndefOr[SessionStatus] = js.native
+  var Status: js.UndefOr[SessionStatus] = js.undefined
   
   /**
     * The instance that the Session Manager session connected to.
     */
-  var Target: js.UndefOr[SessionTarget] = js.native
+  var Target: js.UndefOr[SessionTarget] = js.undefined
 }
 object Session {
   

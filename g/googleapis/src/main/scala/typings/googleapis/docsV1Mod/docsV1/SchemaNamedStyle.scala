@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ParagraphStyle from this named style when they have the same named style
   * type.
   */
-@js.native
 trait SchemaNamedStyle extends StObject {
   
   /**
     * The type of this named style.
     */
-  var namedStyleType: js.UndefOr[String] = js.native
+  var namedStyleType: js.UndefOr[String] = js.undefined
   
   /**
     * The paragraph style of this named style.
     */
-  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.native
+  var paragraphStyle: js.UndefOr[SchemaParagraphStyle] = js.undefined
   
   /**
     * The text style of this named style.
     */
-  var textStyle: js.UndefOr[SchemaTextStyle] = js.native
+  var textStyle: js.UndefOr[SchemaTextStyle] = js.undefined
 }
 object SchemaNamedStyle {
   

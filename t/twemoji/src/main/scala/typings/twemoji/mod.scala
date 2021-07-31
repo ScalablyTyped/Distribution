@@ -5,10 +5,13 @@ import typings.twemoji.anon.PartialParseObject
 import typings.twemoji.twemojiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("twemoji", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("twemoji", "base")
   @js.native
@@ -19,6 +22,10 @@ object mod {
   val className: String = js.native
   
   object convert {
+    
+    @JSImport("twemoji", "convert")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Given an HEX codepoint, returns UTF16 surrogate pairs.
@@ -34,9 +41,8 @@ object mod {
       *  '1f1e8-1f1f3'.split('-').map(twemoji.convert.fromCodePoint).join('')
       *  // "\\ud83c\\udde8\\ud83c\\uddf3"
       */
-    @JSImport("twemoji", "convert.fromCodePoint")
-    @js.native
-    def fromCodePoint(codepoint: String): String = js.native
+    @scala.inline
+    def fromCodePoint(codepoint: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCodePoint")(codepoint.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Given UTF16 surrogate pairs, returns the equivalent HEX codepoint.
@@ -52,56 +58,44 @@ object mod {
       *  twemoji.convert.toCodePoint('\\ud83c\\udde8\\ud83c\\uddf3', '~');
       *  // "1f1e8~1f1f3"
       */
-    @JSImport("twemoji", "convert.toCodePoint")
-    @js.native
-    def toCodePoint(unicodeSurrogates: String): String = js.native
-    @JSImport("twemoji", "convert.toCodePoint")
-    @js.native
-    def toCodePoint(unicodeSurrogates: String, sep: String): String = js.native
+    @scala.inline
+    def toCodePoint(unicodeSurrogates: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoint")(unicodeSurrogates.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toCodePoint(unicodeSurrogates: String, sep: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toCodePoint")(unicodeSurrogates.asInstanceOf[js.Any], sep.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("twemoji", "ext")
   @js.native
   val ext: String = js.native
   
-  @JSImport("twemoji", "onerror")
-  @js.native
-  def onerror(): Unit = js.native
+  @scala.inline
+  def onerror(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onerror")().asInstanceOf[Unit]
   
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: String): String = js.native
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: String, how: PartialParseObject): String = js.native
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: String, how: ParseCallback): String = js.native
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: HTMLElement): String = js.native
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: HTMLElement, how: PartialParseObject): String = js.native
-  @JSImport("twemoji", "parse")
-  @js.native
-  def parse(what: HTMLElement, how: ParseCallback): String = js.native
+  @scala.inline
+  def parse(what: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def parse(what: String, how: PartialParseObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any], how.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parse(what: String, how: ParseCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any], how.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parse(what: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def parse(what: HTMLElement, how: PartialParseObject): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any], how.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def parse(what: HTMLElement, how: ParseCallback): String = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(what.asInstanceOf[js.Any], how.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("twemoji", "replace")
-  @js.native
-  def replace(text: String, callback: js.Function0[Unit]): String = js.native
+  @scala.inline
+  def replace(text: String, callback: js.Function0[Unit]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(text.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("twemoji", "size")
   @js.native
   val size: String = js.native
   
-  @JSImport("twemoji", "test")
-  @js.native
-  def test(text: String): Boolean = js.native
+  @scala.inline
+  def test(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type ParseCallback = js.Function3[/* icon */ String, /* options */ js.Object, /* variant */ String, String | `false`]
   
-  @js.native
   trait ParseObject extends StObject {
     
     /**
@@ -110,45 +104,86 @@ object mod {
       * @param the lower case HEX code point i.e. "1f4a9"
       * @param variant the optional \\uFE0F ("as image") variant, in case this info is anyhow meaningful. By default this is ignored.
       */
-    def attributes(icon: String, variant: String): js.Object = js.native
+    def attributes(icon: String, variant: String): js.Object
     
     /**
       * default: MaxCDN
       */
-    var base: String = js.native
+    var base: String
     
     /**
       * the callback to invoke per each found emoji.
       *
       * default: the common replacer
       */
-    def callback(icon: String, options: js.Object, variant: String): String | `false` = js.native
+    def callback(icon: String, options: js.Object, variant: String): String | `false`
     /**
       * the callback to invoke per each found emoji.
       *
       * default: the common replacer
       */
     @JSName("callback")
-    var callback_Original: ParseCallback = js.native
+    var callback_Original: ParseCallback
     
     /**
       * default: "emoji"
       */
-    var className: String = js.native
+    var className: String
     
     /**
       * default: ".png"
       */
-    var ext: String = js.native
+    var ext: String
     
     /**
       * in case it's specified it replaces .size info, if any
       */
-    var folder: String = js.native
+    var folder: String
     
     /**
       * default: "72x72"
       */
-    var size: String | Double = js.native
+    var size: String | Double
+  }
+  object ParseObject {
+    
+    @scala.inline
+    def apply(
+      attributes: (String, String) => js.Object,
+      base: String,
+      callback: (/* icon */ String, /* options */ js.Object, /* variant */ String) => String | `false`,
+      className: String,
+      ext: String,
+      folder: String,
+      size: String | Double
+    ): ParseObject = {
+      val __obj = js.Dynamic.literal(attributes = js.Any.fromFunction2(attributes), base = base.asInstanceOf[js.Any], callback = js.Any.fromFunction3(callback), className = className.asInstanceOf[js.Any], ext = ext.asInstanceOf[js.Any], folder = folder.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ParseObject]
+    }
+    
+    @scala.inline
+    implicit class ParseObjectMutableBuilder[Self <: ParseObject] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAttributes(value: (String, String) => js.Object): Self = StObject.set(x, "attributes", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCallback(value: (/* icon */ String, /* options */ js.Object, /* variant */ String) => String | `false`): Self = StObject.set(x, "callback", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExt(value: String): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
+    }
   }
 }

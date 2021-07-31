@@ -3,24 +3,24 @@ package typings.siesta.Siesta.Test.Action
 import typings.siesta.Siesta.Test.IAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-@js.native
-trait Drag extends IAction {
+trait Drag
+  extends StObject
+     with IAction {
   
-  var by: js.UndefOr[js.Any] = js.native
+  var by: js.UndefOr[js.Any] = js.undefined
   
-  var dragOnly: js.UndefOr[Boolean] = js.native
+  var dragOnly: js.UndefOr[Boolean] = js.undefined
   
-  var source: js.UndefOr[js.Any] = js.native
+  var source: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.native
+  var to: js.UndefOr[js.Any] = js.undefined
 }
 object Drag {
   

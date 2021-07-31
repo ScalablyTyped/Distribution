@@ -2,210 +2,208 @@ package typings.esFeatureDetection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Builtins | es-feature-detection.es-feature-detection.ES2016Builtins | es-feature-detection.es-feature-detection.ES2017Builtins, boolean> & {  es2015 :std.Record<es-feature-detection.es-feature-detection.ES2015Builtins, boolean>,   es2016 :std.Record<es-feature-detection.es-feature-detection.ES2016Builtins, boolean>,   es2017 :std.Record<es-feature-detection.es-feature-detection.ES2017Builtins, boolean>} */
-  @js.native
   trait RecordES2015BuiltinsES201 extends StObject {
     
     @JSName("Array.from")
-    var ArrayDotfrom: Boolean = js.native
+    var ArrayDotfrom: Boolean
     
     @JSName("Array.of")
-    var ArrayDotof: Boolean = js.native
+    var ArrayDotof: Boolean
     
     @JSName("Array.prototype.copyWithin")
-    var ArrayDotprototypeDotcopyWithin: Boolean = js.native
+    var ArrayDotprototypeDotcopyWithin: Boolean
     
     @JSName("Array.prototype.entries")
-    var ArrayDotprototypeDotentries: Boolean = js.native
+    var ArrayDotprototypeDotentries: Boolean
     
     @JSName("Array.prototype.fill")
-    var ArrayDotprototypeDotfill: Boolean = js.native
+    var ArrayDotprototypeDotfill: Boolean
     
     @JSName("Array.prototype.find")
-    var ArrayDotprototypeDotfind: Boolean = js.native
+    var ArrayDotprototypeDotfind: Boolean
     
     @JSName("Array.prototype.findIndex")
-    var ArrayDotprototypeDotfindIndex: Boolean = js.native
+    var ArrayDotprototypeDotfindIndex: Boolean
     
     @JSName("Array.prototype.includes")
-    var ArrayDotprototypeDotincludes: Boolean = js.native
+    var ArrayDotprototypeDotincludes: Boolean
     
     @JSName("Array.prototype.keys")
-    var ArrayDotprototypeDotkeys: Boolean = js.native
+    var ArrayDotprototypeDotkeys: Boolean
     
-    var Atomics: Boolean = js.native
+    var Atomics: Boolean
     
-    var Map: Boolean = js.native
+    var Map: Boolean
     
     @JSName("Math.acosh")
-    var MathDotacosh: Boolean = js.native
+    var MathDotacosh: Boolean
     
     @JSName("Math.asinh")
-    var MathDotasinh: Boolean = js.native
+    var MathDotasinh: Boolean
     
     @JSName("Math.cbrt")
-    var MathDotcbrt: Boolean = js.native
+    var MathDotcbrt: Boolean
     
     @JSName("Math.clz32")
-    var MathDotclz32: Boolean = js.native
+    var MathDotclz32: Boolean
     
     @JSName("Math.cosh")
-    var MathDotcosh: Boolean = js.native
+    var MathDotcosh: Boolean
     
     @JSName("Math.expm1")
-    var MathDotexpm1: Boolean = js.native
+    var MathDotexpm1: Boolean
     
     @JSName("Math.fround")
-    var MathDotfround: Boolean = js.native
+    var MathDotfround: Boolean
     
     @JSName("Math.hypot")
-    var MathDothypot: Boolean = js.native
+    var MathDothypot: Boolean
     
     @JSName("Math.imul")
-    var MathDotimul: Boolean = js.native
+    var MathDotimul: Boolean
     
     @JSName("Math.log10")
-    var MathDotlog10: Boolean = js.native
+    var MathDotlog10: Boolean
     
     @JSName("Math.log1p")
-    var MathDotlog1p: Boolean = js.native
+    var MathDotlog1p: Boolean
     
     @JSName("Math.log2")
-    var MathDotlog2: Boolean = js.native
+    var MathDotlog2: Boolean
     
     @JSName("Math.sign")
-    var MathDotsign: Boolean = js.native
+    var MathDotsign: Boolean
     
     @JSName("Math.sinh")
-    var MathDotsinh: Boolean = js.native
+    var MathDotsinh: Boolean
     
     @JSName("Math.tanh")
-    var MathDottanh: Boolean = js.native
+    var MathDottanh: Boolean
     
     @JSName("Math.trunc")
-    var MathDottrunc: Boolean = js.native
+    var MathDottrunc: Boolean
     
     @JSName("Number.EPSILON")
-    var NumberDotEPSILON: Boolean = js.native
+    var NumberDotEPSILON: Boolean
     
     @JSName("Number.MAX_SAFE_INTEGER")
-    var NumberDotMAX_SAFE_INTEGER: Boolean = js.native
+    var NumberDotMAX_SAFE_INTEGER: Boolean
     
     @JSName("Number.MIN_SAFE_INTEGER")
-    var NumberDotMIN_SAFE_INTEGER: Boolean = js.native
+    var NumberDotMIN_SAFE_INTEGER: Boolean
     
     @JSName("Number.isFinite")
-    var NumberDotisFinite: Boolean = js.native
+    var NumberDotisFinite: Boolean
     
     @JSName("Number.isInteger")
-    var NumberDotisInteger: Boolean = js.native
+    var NumberDotisInteger: Boolean
     
     @JSName("Number.isNaN")
-    var NumberDotisNaN: Boolean = js.native
+    var NumberDotisNaN: Boolean
     
     @JSName("Number.isSafeInteger")
-    var NumberDotisSafeInteger: Boolean = js.native
+    var NumberDotisSafeInteger: Boolean
     
     @JSName("Number.parseFloat")
-    var NumberDotparseFloat: Boolean = js.native
+    var NumberDotparseFloat: Boolean
     
     @JSName("Number.parseInt")
-    var NumberDotparseInt: Boolean = js.native
+    var NumberDotparseInt: Boolean
     
     @JSName("Object.assign")
-    var ObjectDotassign: Boolean = js.native
+    var ObjectDotassign: Boolean
     
     @JSName("Object.entries")
-    var ObjectDotentries: Boolean = js.native
+    var ObjectDotentries: Boolean
     
     @JSName("Object.getOwnPropertyDescriptors")
-    var ObjectDotgetOwnPropertyDescriptors: Boolean = js.native
+    var ObjectDotgetOwnPropertyDescriptors: Boolean
     
     @JSName("Object.getOwnPropertySymbols")
-    var ObjectDotgetOwnPropertySymbols: Boolean = js.native
+    var ObjectDotgetOwnPropertySymbols: Boolean
     
     @JSName("Object.is")
-    var ObjectDotis: Boolean = js.native
+    var ObjectDotis: Boolean
     
     @JSName("Object.prototype.__proto__")
-    var ObjectDotprototypeDot__proto__ : Boolean = js.native
+    var ObjectDotprototypeDot__proto__ : Boolean
     
     @JSName("Object.setPrototypeOf")
-    var ObjectDotsetPrototypeOf: Boolean = js.native
+    var ObjectDotsetPrototypeOf: Boolean
     
     @JSName("Object.values")
-    var ObjectDotvalues: Boolean = js.native
+    var ObjectDotvalues: Boolean
     
-    var Promise: Boolean = js.native
+    var Promise: Boolean
     
-    var Proxy: Boolean = js.native
+    var Proxy: Boolean
     
-    var Reflect: Boolean = js.native
+    var Reflect: Boolean
     
-    var Set: Boolean = js.native
+    var Set: Boolean
     
-    var SharedArrayBuffer: Boolean = js.native
+    var SharedArrayBuffer: Boolean
     
     @JSName("String.fromCodePoint")
-    var StringDotfromCodePoint: Boolean = js.native
+    var StringDotfromCodePoint: Boolean
     
     @JSName("String.prototype.codePointAt")
-    var StringDotprototypeDotcodePointAt: Boolean = js.native
+    var StringDotprototypeDotcodePointAt: Boolean
     
     @JSName("String.prototype.endsWith")
-    var StringDotprototypeDotendsWith: Boolean = js.native
+    var StringDotprototypeDotendsWith: Boolean
     
     @JSName("String.prototype.includes")
-    var StringDotprototypeDotincludes: Boolean = js.native
+    var StringDotprototypeDotincludes: Boolean
     
     @JSName("String.prototype.normalize")
-    var StringDotprototypeDotnormalize: Boolean = js.native
+    var StringDotprototypeDotnormalize: Boolean
     
     @JSName("String.prototype.padEnd")
-    var StringDotprototypeDotpadEnd: Boolean = js.native
+    var StringDotprototypeDotpadEnd: Boolean
     
     @JSName("String.prototype.padStart")
-    var StringDotprototypeDotpadStart: Boolean = js.native
+    var StringDotprototypeDotpadStart: Boolean
     
     @JSName("String.prototype.repeat")
-    var StringDotprototypeDotrepeat: Boolean = js.native
+    var StringDotprototypeDotrepeat: Boolean
     
     @JSName("String.prototype.startsWith")
-    var StringDotprototypeDotstartsWith: Boolean = js.native
+    var StringDotprototypeDotstartsWith: Boolean
     
     @JSName("String.raw")
-    var StringDotraw: Boolean = js.native
+    var StringDotraw: Boolean
     
-    var Symbol: Boolean = js.native
+    var Symbol: Boolean
     
     @JSName("TypedArray.prototype.includes")
-    var TypedArrayDotprototypeDotincludes: Boolean = js.native
+    var TypedArrayDotprototypeDotincludes: Boolean
     
-    var TypedArrays: Boolean = js.native
+    var TypedArrays: Boolean
     
-    var WeakMap: Boolean = js.native
+    var WeakMap: Boolean
     
-    var WeakSet: Boolean = js.native
+    var WeakSet: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
     
-    var base64: Boolean = js.native
+    var base64: Boolean
     
-    var es2015: RecordES2015Builtinsboole = js.native
+    var es2015: RecordES2015Builtinsboole
     
-    var es2016: RecordES2016Builtinsboole = js.native
+    var es2016: RecordES2016Builtinsboole
     
-    var es2017: RecordES2017Builtinsboole = js.native
+    var es2017: RecordES2017Builtinsboole
     
     @JSName("new.target")
-    var newDottarget: Boolean = js.native
+    var newDottarget: Boolean
     
-    var requestAnimationFrame: Boolean = js.native
+    var requestAnimationFrame: Boolean
   }
   object RecordES2015BuiltinsES201 {
     
@@ -560,173 +558,172 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Builtins, boolean> */
-  @js.native
   trait RecordES2015Builtinsboole extends StObject {
     
     @JSName("Array.from")
-    var ArrayDotfrom: Boolean = js.native
+    var ArrayDotfrom: Boolean
     
     @JSName("Array.of")
-    var ArrayDotof: Boolean = js.native
+    var ArrayDotof: Boolean
     
     @JSName("Array.prototype.copyWithin")
-    var ArrayDotprototypeDotcopyWithin: Boolean = js.native
+    var ArrayDotprototypeDotcopyWithin: Boolean
     
     @JSName("Array.prototype.entries")
-    var ArrayDotprototypeDotentries: Boolean = js.native
+    var ArrayDotprototypeDotentries: Boolean
     
     @JSName("Array.prototype.fill")
-    var ArrayDotprototypeDotfill: Boolean = js.native
+    var ArrayDotprototypeDotfill: Boolean
     
     @JSName("Array.prototype.find")
-    var ArrayDotprototypeDotfind: Boolean = js.native
+    var ArrayDotprototypeDotfind: Boolean
     
     @JSName("Array.prototype.findIndex")
-    var ArrayDotprototypeDotfindIndex: Boolean = js.native
+    var ArrayDotprototypeDotfindIndex: Boolean
     
     @JSName("Array.prototype.keys")
-    var ArrayDotprototypeDotkeys: Boolean = js.native
+    var ArrayDotprototypeDotkeys: Boolean
     
-    var Map: Boolean = js.native
+    var Map: Boolean
     
     @JSName("Math.acosh")
-    var MathDotacosh: Boolean = js.native
+    var MathDotacosh: Boolean
     
     @JSName("Math.asinh")
-    var MathDotasinh: Boolean = js.native
+    var MathDotasinh: Boolean
     
     @JSName("Math.cbrt")
-    var MathDotcbrt: Boolean = js.native
+    var MathDotcbrt: Boolean
     
     @JSName("Math.clz32")
-    var MathDotclz32: Boolean = js.native
+    var MathDotclz32: Boolean
     
     @JSName("Math.cosh")
-    var MathDotcosh: Boolean = js.native
+    var MathDotcosh: Boolean
     
     @JSName("Math.expm1")
-    var MathDotexpm1: Boolean = js.native
+    var MathDotexpm1: Boolean
     
     @JSName("Math.fround")
-    var MathDotfround: Boolean = js.native
+    var MathDotfround: Boolean
     
     @JSName("Math.hypot")
-    var MathDothypot: Boolean = js.native
+    var MathDothypot: Boolean
     
     @JSName("Math.imul")
-    var MathDotimul: Boolean = js.native
+    var MathDotimul: Boolean
     
     @JSName("Math.log10")
-    var MathDotlog10: Boolean = js.native
+    var MathDotlog10: Boolean
     
     @JSName("Math.log1p")
-    var MathDotlog1p: Boolean = js.native
+    var MathDotlog1p: Boolean
     
     @JSName("Math.log2")
-    var MathDotlog2: Boolean = js.native
+    var MathDotlog2: Boolean
     
     @JSName("Math.sign")
-    var MathDotsign: Boolean = js.native
+    var MathDotsign: Boolean
     
     @JSName("Math.sinh")
-    var MathDotsinh: Boolean = js.native
+    var MathDotsinh: Boolean
     
     @JSName("Math.tanh")
-    var MathDottanh: Boolean = js.native
+    var MathDottanh: Boolean
     
     @JSName("Math.trunc")
-    var MathDottrunc: Boolean = js.native
+    var MathDottrunc: Boolean
     
     @JSName("Number.EPSILON")
-    var NumberDotEPSILON: Boolean = js.native
+    var NumberDotEPSILON: Boolean
     
     @JSName("Number.MAX_SAFE_INTEGER")
-    var NumberDotMAX_SAFE_INTEGER: Boolean = js.native
+    var NumberDotMAX_SAFE_INTEGER: Boolean
     
     @JSName("Number.MIN_SAFE_INTEGER")
-    var NumberDotMIN_SAFE_INTEGER: Boolean = js.native
+    var NumberDotMIN_SAFE_INTEGER: Boolean
     
     @JSName("Number.isFinite")
-    var NumberDotisFinite: Boolean = js.native
+    var NumberDotisFinite: Boolean
     
     @JSName("Number.isInteger")
-    var NumberDotisInteger: Boolean = js.native
+    var NumberDotisInteger: Boolean
     
     @JSName("Number.isNaN")
-    var NumberDotisNaN: Boolean = js.native
+    var NumberDotisNaN: Boolean
     
     @JSName("Number.isSafeInteger")
-    var NumberDotisSafeInteger: Boolean = js.native
+    var NumberDotisSafeInteger: Boolean
     
     @JSName("Number.parseFloat")
-    var NumberDotparseFloat: Boolean = js.native
+    var NumberDotparseFloat: Boolean
     
     @JSName("Number.parseInt")
-    var NumberDotparseInt: Boolean = js.native
+    var NumberDotparseInt: Boolean
     
     @JSName("Object.assign")
-    var ObjectDotassign: Boolean = js.native
+    var ObjectDotassign: Boolean
     
     @JSName("Object.getOwnPropertySymbols")
-    var ObjectDotgetOwnPropertySymbols: Boolean = js.native
+    var ObjectDotgetOwnPropertySymbols: Boolean
     
     @JSName("Object.is")
-    var ObjectDotis: Boolean = js.native
+    var ObjectDotis: Boolean
     
     @JSName("Object.prototype.__proto__")
-    var ObjectDotprototypeDot__proto__ : Boolean = js.native
+    var ObjectDotprototypeDot__proto__ : Boolean
     
     @JSName("Object.setPrototypeOf")
-    var ObjectDotsetPrototypeOf: Boolean = js.native
+    var ObjectDotsetPrototypeOf: Boolean
     
-    var Promise: Boolean = js.native
+    var Promise: Boolean
     
-    var Proxy: Boolean = js.native
+    var Proxy: Boolean
     
-    var Reflect: Boolean = js.native
+    var Reflect: Boolean
     
-    var Set: Boolean = js.native
+    var Set: Boolean
     
     @JSName("String.fromCodePoint")
-    var StringDotfromCodePoint: Boolean = js.native
+    var StringDotfromCodePoint: Boolean
     
     @JSName("String.prototype.codePointAt")
-    var StringDotprototypeDotcodePointAt: Boolean = js.native
+    var StringDotprototypeDotcodePointAt: Boolean
     
     @JSName("String.prototype.endsWith")
-    var StringDotprototypeDotendsWith: Boolean = js.native
+    var StringDotprototypeDotendsWith: Boolean
     
     @JSName("String.prototype.includes")
-    var StringDotprototypeDotincludes: Boolean = js.native
+    var StringDotprototypeDotincludes: Boolean
     
     @JSName("String.prototype.normalize")
-    var StringDotprototypeDotnormalize: Boolean = js.native
+    var StringDotprototypeDotnormalize: Boolean
     
     @JSName("String.prototype.repeat")
-    var StringDotprototypeDotrepeat: Boolean = js.native
+    var StringDotprototypeDotrepeat: Boolean
     
     @JSName("String.prototype.startsWith")
-    var StringDotprototypeDotstartsWith: Boolean = js.native
+    var StringDotprototypeDotstartsWith: Boolean
     
     @JSName("String.raw")
-    var StringDotraw: Boolean = js.native
+    var StringDotraw: Boolean
     
-    var Symbol: Boolean = js.native
+    var Symbol: Boolean
     
-    var TypedArrays: Boolean = js.native
+    var TypedArrays: Boolean
     
-    var WeakMap: Boolean = js.native
+    var WeakMap: Boolean
     
-    var WeakSet: Boolean = js.native
+    var WeakSet: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
     
-    var base64: Boolean = js.native
+    var base64: Boolean
     
     @JSName("new.target")
-    var newDottarget: Boolean = js.native
+    var newDottarget: Boolean
     
-    var requestAnimationFrame: Boolean = js.native
+    var requestAnimationFrame: Boolean
   }
   object RecordES2015Builtinsboole {
     
@@ -1026,68 +1023,67 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Syntax | es-feature-detection.es-feature-detection.ES2016Syntax | es-feature-detection.es-feature-detection.ES2017Syntax, boolean> & {  es2015 :std.Record<es-feature-detection.es-feature-detection.ES2015Syntax, boolean>,   es2016 :std.Record<es-feature-detection.es-feature-detection.ES2016Syntax, boolean>,   es2017 :std.Record<es-feature-detection.es-feature-detection.ES2017Syntax, boolean>} */
-  @js.native
   trait RecordES2015SyntaxES2016S extends StObject {
     
-    var `Arrow function`: Boolean = js.native
+    var `Arrow function`: Boolean
     
-    var `Binary literals`: Boolean = js.native
+    var `Binary literals`: Boolean
     
-    var `Block level function declaration`: Boolean = js.native
+    var `Block level function declaration`: Boolean
     
-    var `Computed property`: Boolean = js.native
+    var `Computed property`: Boolean
     
-    var `Default parameters`: Boolean = js.native
+    var `Default parameters`: Boolean
     
-    var Destructuring: Boolean = js.native
+    var Destructuring: Boolean
     
-    var `Exponentiation operator`: Boolean = js.native
+    var `Exponentiation operator`: Boolean
     
-    var `Generator function`: Boolean = js.native
+    var `Generator function`: Boolean
     
-    var `Octal literals`: Boolean = js.native
+    var `Octal literals`: Boolean
     
     @JSName("RegExp.prototype.sticky")
-    var RegExpDotprototypeDotsticky: Boolean = js.native
+    var RegExpDotprototypeDotsticky: Boolean
     
     @JSName("RegExp.prototype.unicode")
-    var RegExpDotprototypeDotunicode: Boolean = js.native
+    var RegExpDotprototypeDotunicode: Boolean
     
-    var `Rest destructuring`: Boolean = js.native
+    var `Rest destructuring`: Boolean
     
-    var `Rest parameters`: Boolean = js.native
+    var `Rest parameters`: Boolean
     
-    var `Shorthand method`: Boolean = js.native
+    var `Shorthand method`: Boolean
     
-    var `Shorthand property`: Boolean = js.native
+    var `Shorthand property`: Boolean
     
-    var `Spread Array`: Boolean = js.native
+    var `Spread Array`: Boolean
     
-    var `Spread Function call`: Boolean = js.native
+    var `Spread Function call`: Boolean
     
-    var `Template Strings`: Boolean = js.native
+    var `Template Strings`: Boolean
     
-    var `Trailing parameter commas`: Boolean = js.native
+    var `Trailing parameter commas`: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
     
     @JSName("async/await")
-    var asyncSlashawait: Boolean = js.native
+    var asyncSlashawait: Boolean
     
-    var `class`: Boolean = js.native
+    var `class`: Boolean
     
-    var const: Boolean = js.native
+    var const: Boolean
     
-    var es2015: RecordES2015Syntaxboolean = js.native
+    var es2015: RecordES2015Syntaxboolean
     
-    var es2016: RecordES2016Syntaxboolean = js.native
+    var es2016: RecordES2016Syntaxboolean
     
-    var es2017: RecordES2017Syntaxboolean = js.native
+    var es2017: RecordES2017Syntaxboolean
     
     @JSName("for...of")
-    var forDotDotDotof: Boolean = js.native
+    var forDotDotDotof: Boolean
     
-    var let: Boolean = js.native
+    var let: Boolean
   }
   object RecordES2015SyntaxES2016S {
     
@@ -1237,53 +1233,52 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2015Syntax, boolean> */
-  @js.native
   trait RecordES2015Syntaxboolean extends StObject {
     
-    var `Arrow function`: Boolean = js.native
+    var `Arrow function`: Boolean
     
-    var `Binary literals`: Boolean = js.native
+    var `Binary literals`: Boolean
     
-    var `Block level function declaration`: Boolean = js.native
+    var `Block level function declaration`: Boolean
     
-    var `Computed property`: Boolean = js.native
+    var `Computed property`: Boolean
     
-    var `Default parameters`: Boolean = js.native
+    var `Default parameters`: Boolean
     
-    var Destructuring: Boolean = js.native
+    var Destructuring: Boolean
     
-    var `Generator function`: Boolean = js.native
+    var `Generator function`: Boolean
     
-    var `Octal literals`: Boolean = js.native
+    var `Octal literals`: Boolean
     
     @JSName("RegExp.prototype.sticky")
-    var RegExpDotprototypeDotsticky: Boolean = js.native
+    var RegExpDotprototypeDotsticky: Boolean
     
     @JSName("RegExp.prototype.unicode")
-    var RegExpDotprototypeDotunicode: Boolean = js.native
+    var RegExpDotprototypeDotunicode: Boolean
     
-    var `Rest parameters`: Boolean = js.native
+    var `Rest parameters`: Boolean
     
-    var `Shorthand method`: Boolean = js.native
+    var `Shorthand method`: Boolean
     
-    var `Shorthand property`: Boolean = js.native
+    var `Shorthand property`: Boolean
     
-    var `Spread Array`: Boolean = js.native
+    var `Spread Array`: Boolean
     
-    var `Spread Function call`: Boolean = js.native
+    var `Spread Function call`: Boolean
     
-    var `Template Strings`: Boolean = js.native
+    var `Template Strings`: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
     
-    var `class`: Boolean = js.native
+    var `class`: Boolean
     
-    var const: Boolean = js.native
+    var const: Boolean
     
     @JSName("for...of")
-    var forDotDotDotof: Boolean = js.native
+    var forDotDotDotof: Boolean
     
-    var let: Boolean = js.native
+    var let: Boolean
   }
   object RecordES2015Syntaxboolean {
     
@@ -1401,16 +1396,15 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2016Builtins, boolean> */
-  @js.native
   trait RecordES2016Builtinsboole extends StObject {
     
     @JSName("Array.prototype.includes")
-    var ArrayDotprototypeDotincludes: Boolean = js.native
+    var ArrayDotprototypeDotincludes: Boolean
     
     @JSName("TypedArray.prototype.includes")
-    var TypedArrayDotprototypeDotincludes: Boolean = js.native
+    var TypedArrayDotprototypeDotincludes: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
   }
   object RecordES2016Builtinsboole {
     
@@ -1437,14 +1431,13 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2016Syntax, boolean> */
-  @js.native
   trait RecordES2016Syntaxboolean extends StObject {
     
-    var `Exponentiation operator`: Boolean = js.native
+    var `Exponentiation operator`: Boolean
     
-    var `Rest destructuring`: Boolean = js.native
+    var `Rest destructuring`: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
   }
   object RecordES2016Syntaxboolean {
     
@@ -1471,29 +1464,28 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2017Builtins, boolean> */
-  @js.native
   trait RecordES2017Builtinsboole extends StObject {
     
-    var Atomics: Boolean = js.native
+    var Atomics: Boolean
     
     @JSName("Object.entries")
-    var ObjectDotentries: Boolean = js.native
+    var ObjectDotentries: Boolean
     
     @JSName("Object.getOwnPropertyDescriptors")
-    var ObjectDotgetOwnPropertyDescriptors: Boolean = js.native
+    var ObjectDotgetOwnPropertyDescriptors: Boolean
     
     @JSName("Object.values")
-    var ObjectDotvalues: Boolean = js.native
+    var ObjectDotvalues: Boolean
     
-    var SharedArrayBuffer: Boolean = js.native
+    var SharedArrayBuffer: Boolean
     
     @JSName("String.prototype.padEnd")
-    var StringDotprototypeDotpadEnd: Boolean = js.native
+    var StringDotprototypeDotpadEnd: Boolean
     
     @JSName("String.prototype.padStart")
-    var StringDotprototypeDotpadStart: Boolean = js.native
+    var StringDotprototypeDotpadStart: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
   }
   object RecordES2017Builtinsboole {
     
@@ -1547,15 +1539,14 @@ object anon {
   }
   
   /* Inlined std.Record<es-feature-detection.es-feature-detection.ES2017Syntax, boolean> */
-  @js.native
   trait RecordES2017Syntaxboolean extends StObject {
     
-    var `Trailing parameter commas`: Boolean = js.native
+    var `Trailing parameter commas`: Boolean
     
-    var __all: Boolean = js.native
+    var __all: Boolean
     
     @JSName("async/await")
-    var asyncSlashawait: Boolean = js.native
+    var asyncSlashawait: Boolean
   }
   object RecordES2017Syntaxboolean {
     

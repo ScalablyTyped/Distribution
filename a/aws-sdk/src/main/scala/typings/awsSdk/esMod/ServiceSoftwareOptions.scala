@@ -2,51 +2,49 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceSoftwareOptions extends StObject {
   
   /**
     * Timestamp, in Epoch time, until which you can manually request a service software update. After this date, we automatically update your service software.
     */
-  var AutomatedUpdateDate: js.UndefOr[DeploymentCloseDateTimeStamp] = js.native
+  var AutomatedUpdateDate: js.UndefOr[DeploymentCloseDateTimeStamp] = js.undefined
   
   /**
     * True if you are able to cancel your service software version update. False if you are not able to cancel your service software version. 
     */
-  var Cancellable: js.UndefOr[Boolean] = js.native
+  var Cancellable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current service software version that is present on the domain.
     */
-  var CurrentVersion: js.UndefOr[String] = js.native
+  var CurrentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the UpdateStatus.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The new service software version if one is available.
     */
-  var NewVersion: js.UndefOr[String] = js.native
+  var NewVersion: js.UndefOr[String] = js.undefined
   
   /**
     * True if a service software is never automatically updated. False if a service software is automatically updated after AutomatedUpdateDate. 
     */
-  var OptionalDeployment: js.UndefOr[Boolean] = js.native
+  var OptionalDeployment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if you are able to update you service software version. False if you are not able to update your service software version. 
     */
-  var UpdateAvailable: js.UndefOr[Boolean] = js.native
+  var UpdateAvailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The status of your service software update. This field can take the following values: ELIGIBLE, PENDING_UPDATE, IN_PROGRESS, COMPLETED, and NOT_ELIGIBLE.
     */
-  var UpdateStatus: js.UndefOr[DeploymentStatus] = js.native
+  var UpdateStatus: js.UndefOr[DeploymentStatus] = js.undefined
 }
 object ServiceSoftwareOptions {
   

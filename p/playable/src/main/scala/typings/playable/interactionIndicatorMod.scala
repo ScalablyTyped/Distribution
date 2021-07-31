@@ -6,15 +6,73 @@ import typings.playable.interactionIndicatorTypesMod.IInteractionIndicator
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionIndicatorMod {
   
   @JSImport("playable/dist/src/modules/ui/interaction-indicator/interaction-indicator", JSImport.Default)
   @js.native
-  class default protected () extends InteractionIndicator {
+  class default protected ()
+    extends StObject
+       with InteractionIndicator {
     def this(hasEventEmitterEngineConfigRootContainer: RootContainer) = this()
+    
+    /* CompleteClass */
+    var _bindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    var _engine: js.Any = js.native
+    
+    /* CompleteClass */
+    var _eventEmitter: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _showPlaybackChangeIndicator: js.Any = js.native
+    
+    /* CompleteClass */
+    var _unbindEvents: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    override def hideIcons(): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showDecreaseVolume(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showForward(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showIncreaseVolume(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showMute(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showPause(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showPlay(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showRewind(): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.interactionIndicatorViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -42,22 +100,23 @@ object interactionIndicatorMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait InteractionIndicator extends IInteractionIndicator {
+  trait InteractionIndicator
+    extends StObject
+       with IInteractionIndicator {
     
-    var _bindEvents: js.Any = js.native
+    var _bindEvents: js.Any
     
-    var _engine: js.Any = js.native
+    var _engine: js.Any
     
-    var _eventEmitter: js.Any = js.native
+    var _eventEmitter: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _showPlaybackChangeIndicator: js.Any = js.native
+    var _showPlaybackChangeIndicator: js.Any
     
-    var _unbindEvents: js.Any = js.native
+    var _unbindEvents: js.Any
     
-    var view: typings.playable.interactionIndicatorViewMod.default = js.native
+    var view: typings.playable.interactionIndicatorViewMod.default
   }
   object InteractionIndicator {
     

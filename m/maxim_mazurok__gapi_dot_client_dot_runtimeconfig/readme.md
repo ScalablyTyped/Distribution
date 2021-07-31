@@ -10,9 +10,9 @@ TypeScript typings for Cloud Runtime Configuration API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.runtimeconfig |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 1069 |
 | # stars            | 0 |
 
 ## Links

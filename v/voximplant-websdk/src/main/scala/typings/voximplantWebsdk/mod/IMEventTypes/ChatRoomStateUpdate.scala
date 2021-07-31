@@ -4,34 +4,34 @@ import typings.voximplantWebsdk.mod.ChatStateType
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when chat session state updated
   */
-@js.native
-trait ChatRoomStateUpdate extends VoxImplantIMEvent {
+trait ChatRoomStateUpdate
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     * User id
     */
-  var from: String = js.native
+  var from: String
   
   /**
     * Resource name
     */
-  var resource: String = js.native
+  var resource: String
   
   /**
     * Room id
     */
-  var room: String = js.native
+  var room: String
   
   /**
     * Current chat session state
     */
-  var state: ChatStateType = js.native
+  var state: ChatStateType
 }
 object ChatRoomStateUpdate {
   

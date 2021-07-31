@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWorkflowDataProperties extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait UpdateWorkflowDataProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#candidates)
     */
-  var candidates: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var candidates: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * The object that matches the feature being updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#editableItem)
     */
-  var editableItem: js.UndefOr[EditableItem] = js.native
+  var editableItem: js.UndefOr[EditableItem] = js.undefined
   
   /**
     * The [edits](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-Edits.html) used to keep track of a feature being modified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#edits)
     */
-  var edits: js.UndefOr[EditsProperties] = js.native
+  var edits: js.UndefOr[EditsProperties] = js.undefined
   
   /**
     * The associated [EditorViewModel](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html) for this workflow.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-UpdateWorkflowData.html#viewModel)
     */
-  var viewModel: js.UndefOr[EditorViewModelProperties] = js.native
+  var viewModel: js.UndefOr[EditorViewModelProperties] = js.undefined
 }
 object UpdateWorkflowDataProperties {
   

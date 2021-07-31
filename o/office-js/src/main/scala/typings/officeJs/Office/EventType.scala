@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,7 +31,9 @@ object EventType extends StObject {
     * **Hosts**: PowerPoint
     */
   @js.native
-  sealed trait ActiveViewChanged extends EventType
+  sealed trait ActiveViewChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when any date or time of the selected appointment or series is changed in Outlook. Supported with task pane only.
@@ -43,7 +44,9 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.7]
     */
   @js.native
-  sealed trait AppointmentTimeChanged extends EventType
+  sealed trait AppointmentTimeChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when an attachment is added to or removed from an item. Supported with task pane only.
@@ -54,7 +57,9 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.8]
     */
   @js.native
-  sealed trait AttachmentsChanged extends EventType
+  sealed trait AttachmentsChanged
+    extends StObject
+       with EventType
   
   /**
     * Occurs when data within the binding is changed. 
@@ -66,7 +71,9 @@ object EventType extends StObject {
     * **Hosts**: Excel, Word
     */
   @js.native
-  sealed trait BindingDataChanged extends EventType
+  sealed trait BindingDataChanged
+    extends StObject
+       with EventType
   
   /**
     * Occurs when the selection is changed within the binding. To add an event handler for the BindingSelectionChanged event of a binding, use 
@@ -77,25 +84,33 @@ object EventType extends StObject {
     * **Hosts**: Excel, Word 
     */
   @js.native
-  sealed trait BindingSelectionChanged extends EventType
+  sealed trait BindingSelectionChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when Dialog has an event, such as dialog closed or dialog navigation failed.
     */
   @js.native
-  sealed trait DialogEventReceived extends EventType
+  sealed trait DialogEventReceived
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a dialog sends a message via `messageParent`.
     */
   @js.native
-  sealed trait DialogMessageReceived extends EventType
+  sealed trait DialogMessageReceived
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a host page sends a message to a child dialog box with `messageChild`.
     */
   @js.native
-  sealed trait DialogParentMessageReceived extends EventType
+  sealed trait DialogParentMessageReceived
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a document-level selection happens.
@@ -105,7 +120,9 @@ object EventType extends StObject {
     * **Hosts**: Excel, Word
     */
   @js.native
-  sealed trait DocumentSelectionChanged extends EventType
+  sealed trait DocumentSelectionChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when the appointment location is changed in Outlook. Supported with task pane only.
@@ -116,7 +133,9 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.8]
     */
   @js.native
-  sealed trait EnhancedLocationsChanged extends EventType
+  sealed trait EnhancedLocationsChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a different Outlook item is selected for viewing while the task pane is pinned. Supported with task pane only.
@@ -124,25 +143,33 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.5]
     */
   @js.native
-  sealed trait ItemChanged extends EventType
+  sealed trait ItemChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a customXmlPart node is deleted.
     */
   @js.native
-  sealed trait NodeDeleted extends EventType
+  sealed trait NodeDeleted
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a customXmlPart node is inserted.
     */
   @js.native
-  sealed trait NodeInserted extends EventType
+  sealed trait NodeInserted
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a customXmlPart node is replaced.
     */
   @js.native
-  sealed trait NodeReplaced extends EventType
+  sealed trait NodeReplaced
+    extends StObject
+       with EventType
   
   /**
     * Triggers when the recipient list of the selected item or the appointment location is changed in Outlook. Supported with task pane only.
@@ -153,7 +180,9 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.7]
     */
   @js.native
-  sealed trait RecipientsChanged extends EventType
+  sealed trait RecipientsChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when the recurrence pattern of the selected series is changed in Outlook. Supported with task pane only.
@@ -164,13 +193,17 @@ object EventType extends StObject {
     * [Api set: Mailbox 1.7]
     */
   @js.native
-  sealed trait RecurrenceChanged extends EventType
+  sealed trait RecurrenceChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a Resource selection happens in Project.
     */
   @js.native
-  sealed trait ResourceSelectionChanged extends EventType
+  sealed trait ResourceSelectionChanged
+    extends StObject
+       with EventType
   
   /**
     * A Settings.settingsChanged event was raised.
@@ -180,17 +213,23 @@ object EventType extends StObject {
     * **Hosts**: Excel, PowerPoint, Word
     */
   @js.native
-  sealed trait SettingsChanged extends EventType
+  sealed trait SettingsChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a Task selection happens in Project.
     */
   @js.native
-  sealed trait TaskSelectionChanged extends EventType
+  sealed trait TaskSelectionChanged
+    extends StObject
+       with EventType
   
   /**
     * Triggers when a View selection happens in Project.
     */
   @js.native
-  sealed trait ViewSelectionChanged extends EventType
+  sealed trait ViewSelectionChanged
+    extends StObject
+       with EventType
 }

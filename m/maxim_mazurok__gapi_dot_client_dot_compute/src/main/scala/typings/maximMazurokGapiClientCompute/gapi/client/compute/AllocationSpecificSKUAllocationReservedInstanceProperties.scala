@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllocationSpecificSKUAllocationReservedInstanceProperties extends StObject {
   
   /** Specifies accelerator type and count. */
-  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[AcceleratorConfig]] = js.undefined
   
   /** Specifies amount of local ssd to reserve with each instance. The type of disk is local-ssd. */
-  var localSsds: js.UndefOr[js.Array[AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]] = js.native
+  var localSsds: js.UndefOr[js.Array[AllocationSpecificSKUAllocationAllocatedInstancePropertiesReservedDisk]] = js.undefined
   
   /**
     * Specifies type of machine (name only) which has fixed number of vCPUs and fixed amount of memory. This also includes specifying custom machine type following
     * custom-NUMBER_OF_CPUS-AMOUNT_OF_MEMORY pattern.
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
   
   /** Minimum cpu platform the reservation. */
-  var minCpuPlatform: js.UndefOr[String] = js.native
+  var minCpuPlatform: js.UndefOr[String] = js.undefined
 }
 object AllocationSpecificSKUAllocationReservedInstanceProperties {
   

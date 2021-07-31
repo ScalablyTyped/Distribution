@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeasurementConfig extends StObject {
   
   /** Whether or not to report DV360 cost to CM360. */
-  var dv360ToCmCostReportingEnabled: js.UndefOr[Boolean] = js.native
+  var dv360ToCmCostReportingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not to include DV360 data in CM360 data transfer reports. */
-  var dv360ToCmDataSharingEnabled: js.UndefOr[Boolean] = js.native
+  var dv360ToCmDataSharingEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object MeasurementConfig {
   

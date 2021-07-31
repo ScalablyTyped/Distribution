@@ -3,13 +3,11 @@ package typings.pubnub.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStateResponse extends StObject {
   
-  var channels: StringDictionary[js.Any] = js.native
+  var channels: StringDictionary[js.Any]
 }
 object GetStateResponse {
   

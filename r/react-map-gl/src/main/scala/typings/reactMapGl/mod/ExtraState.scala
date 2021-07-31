@@ -2,23 +2,21 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraState extends StObject {
   
-  var inTransition: js.UndefOr[Boolean] = js.native
+  var inTransition: js.UndefOr[Boolean] = js.undefined
   
-  var isDragging: js.UndefOr[Boolean] = js.native
+  var isDragging: js.UndefOr[Boolean] = js.undefined
   
-  var isHovering: js.UndefOr[Boolean] = js.native
+  var isHovering: js.UndefOr[Boolean] = js.undefined
   
-  var isPanning: js.UndefOr[Boolean] = js.native
+  var isPanning: js.UndefOr[Boolean] = js.undefined
   
-  var isRotating: js.UndefOr[Boolean] = js.native
+  var isRotating: js.UndefOr[Boolean] = js.undefined
   
-  var isZooming: js.UndefOr[Boolean] = js.native
+  var isZooming: js.UndefOr[Boolean] = js.undefined
 }
 object ExtraState {
   

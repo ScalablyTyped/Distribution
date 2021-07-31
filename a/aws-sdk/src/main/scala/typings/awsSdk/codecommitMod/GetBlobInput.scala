@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBlobInput extends StObject {
   
   /**
     * The ID of the blob, which is its SHA-1 pointer.
     */
-  var blobId: ObjectId = js.native
+  var blobId: ObjectId
   
   /**
     * The name of the repository that contains the blob.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetBlobInput {
   

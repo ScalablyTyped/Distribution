@@ -2,62 +2,60 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SimulationJobRequest extends StObject {
   
   /**
     * Compute information for the simulation job
     */
-  var compute: js.UndefOr[Compute] = js.native
+  var compute: js.UndefOr[Compute] = js.undefined
   
   /**
     * Specify data sources to mount read-only files from S3 into your simulation. These files are available under /opt/robomaker/datasources/data_source_name.   There is a limit of 100 files and a combined size of 25GB for all DataSourceConfig objects.  
     */
-  var dataSources: js.UndefOr[DataSourceConfigs] = js.native
+  var dataSources: js.UndefOr[DataSourceConfigs] = js.undefined
   
   /**
     * The failure behavior the simulation job.  Continue  Restart the simulation job in the same host instance.  Fail  Stop the simulation job and terminate the instance.  
     */
-  var failureBehavior: js.UndefOr[FailureBehavior] = js.native
+  var failureBehavior: js.UndefOr[FailureBehavior] = js.undefined
   
   /**
     * The IAM role name that allows the simulation instance to call the AWS APIs that are specified in its associated policies on your behalf. This is how credentials are passed in to your simulation job. 
     */
-  var iamRole: js.UndefOr[IamRole] = js.native
+  var iamRole: js.UndefOr[IamRole] = js.undefined
   
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   
   /**
     * The maximum simulation job duration in seconds. The value must be 8 days (691,200 seconds) or less.
     */
-  var maxJobDurationInSeconds: JobDuration = js.native
+  var maxJobDurationInSeconds: JobDuration
   
-  var outputLocation: js.UndefOr[OutputLocation] = js.native
+  var outputLocation: js.UndefOr[OutputLocation] = js.undefined
   
   /**
     * The robot applications to use in the simulation job.
     */
-  var robotApplications: js.UndefOr[RobotApplicationConfigs] = js.native
+  var robotApplications: js.UndefOr[RobotApplicationConfigs] = js.undefined
   
   /**
     * The simulation applications to use in the simulation job.
     */
-  var simulationApplications: js.UndefOr[SimulationApplicationConfigs] = js.native
+  var simulationApplications: js.UndefOr[SimulationApplicationConfigs] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the simulation job request.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * Boolean indicating whether to use default simulation tool applications.
     */
-  var useDefaultApplications: js.UndefOr[BoxedBoolean] = js.native
+  var useDefaultApplications: js.UndefOr[BoxedBoolean] = js.undefined
   
-  var vpcConfig: js.UndefOr[VPCConfig] = js.native
+  var vpcConfig: js.UndefOr[VPCConfig] = js.undefined
 }
 object SimulationJobRequest {
   

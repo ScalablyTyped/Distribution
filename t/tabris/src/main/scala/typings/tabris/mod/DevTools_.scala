@@ -1,21 +1,24 @@
 package typings.tabris.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "DevTools")
 @js.native
 class DevTools_ protected () extends NativeObject {
+  
   /**
     * Hides the developer tools UI if currently visible. Note that this can cause a re-layout since the
     * [`contentView`](./ContentView.md) grows.
     */
   def hideUi(): Unit = js.native
+  
   /**
     * Returns `true` if the developer tools UI is currently visible.
     */
   def isUiVisible(): Boolean = js.native
+  
   /**
     * Shows the developer tools UI if available and not already visible. Returns `true` if the UI is now
     * visible. Returns `false` if the UI can not be shown [because `EnableDeveloperConsole` is not set to
@@ -24,4 +27,3 @@ class DevTools_ protected () extends NativeObject {
     */
   def showUi(): Boolean = js.native
 }
-

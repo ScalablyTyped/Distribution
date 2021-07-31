@@ -3,15 +3,15 @@ package typings.webvrApi
 import typings.std.EventInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VRDisplayEventInit extends EventInit {
+trait VRDisplayEventInit
+  extends StObject
+     with EventInit {
   
-  var display: VRDisplay = js.native
+  var display: VRDisplay
   
-  var reason: js.UndefOr[VRDisplayEventReasonDtAlias] = js.native
+  var reason: js.UndefOr[VRDisplayEventReasonDtAlias] = js.undefined
 }
 object VRDisplayEventInit {
   

@@ -6,11 +6,12 @@ import typings.simperium.simperiumNumbers.`2`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClientEvent extends SimperiumEvent {
+trait ClientEvent
+  extends StObject
+     with SimperiumEvent {
   
   def `access-token`(token: String): Unit = js.native
   

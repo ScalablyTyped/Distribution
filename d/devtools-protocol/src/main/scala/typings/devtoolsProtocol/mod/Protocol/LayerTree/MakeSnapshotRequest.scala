@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeSnapshotRequest extends StObject {
   
   /**
     * The id of the layer.
     */
-  var layerId: LayerId = js.native
+  var layerId: LayerId
 }
 object MakeSnapshotRequest {
   

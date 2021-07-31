@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentEC2Mod {
@@ -74,6 +73,10 @@ object environmentEC2Mod {
   /* static members */
   object EnvironmentEC2 {
     
+    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EnvironmentEC2 resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,65 +86,59 @@ object environmentEC2Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EnvironmentEC2 = js.native
-    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EnvironmentEC2 = js.native
-    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EnvironmentEC2State): EnvironmentEC2 = js.native
-    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EnvironmentEC2State, opts: CustomResourceOptions): EnvironmentEC2 = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EnvironmentEC2State): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EnvironmentEC2State, opts: CustomResourceOptions): EnvironmentEC2 = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EnvironmentEC2]
     
     /**
       * Returns true if the given object is an instance of EnvironmentEC2.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloud9/environmentEC2", "EnvironmentEC2.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloud9/environmentEC2.EnvironmentEC2 */ Boolean]
   }
   
-  @js.native
   trait EnvironmentEC2Args extends StObject {
     
     /**
       * The number of minutes until the running instance is shut down after the environment has last been used.
       */
-    val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.native
+    val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The description of the environment.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of instance to connect to the environment, e.g. `t2.micro`.
       */
-    val instanceType: Input[String] = js.native
+    val instanceType: Input[String]
     
     /**
       * The name of the environment.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the environment owner. This can be ARN of any AWS IAM principal. Defaults to the environment's creator.
       */
-    val ownerArn: js.UndefOr[Input[String]] = js.native
+    val ownerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object EnvironmentEC2Args {
     
@@ -195,53 +192,52 @@ object environmentEC2Mod {
     }
   }
   
-  @js.native
   trait EnvironmentEC2State extends StObject {
     
     /**
       * The ARN of the environment.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of minutes until the running instance is shut down after the environment has last been used.
       */
-    val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.native
+    val automaticStopTimeMinutes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The description of the environment.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of instance to connect to the environment, e.g. `t2.micro`.
       */
-    val instanceType: js.UndefOr[Input[String]] = js.native
+    val instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the environment.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the environment owner. This can be ARN of any AWS IAM principal. Defaults to the environment's creator.
       */
-    val ownerArn: js.UndefOr[Input[String]] = js.native
+    val ownerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the subnet in Amazon VPC that AWS Cloud9 will use to communicate with the Amazon EC2 instance.
       */
-    val subnetId: js.UndefOr[Input[String]] = js.native
+    val subnetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of the environment (e.g. `ssh` or `ec2`)
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object EnvironmentEC2State {
     

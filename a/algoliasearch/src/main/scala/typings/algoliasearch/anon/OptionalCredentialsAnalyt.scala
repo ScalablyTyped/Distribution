@@ -4,18 +4,16 @@ import typings.algoliasearch.algoliasearchStrings.de
 import typings.algoliasearch.algoliasearchStrings.us
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined algoliasearch.algoliasearch/dist/algoliasearch.OptionalCredentials<@algolia/client-analytics.@algolia/client-analytics.AnalyticsClientOptions> */
-@js.native
 trait OptionalCredentialsAnalyt extends StObject {
   
-  var apiKey: js.UndefOr[String] = js.native
+  var apiKey: js.UndefOr[String] = js.undefined
   
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[de | us] = js.native
+  var region: js.UndefOr[de | us] = js.undefined
 }
 object OptionalCredentialsAnalyt {
   

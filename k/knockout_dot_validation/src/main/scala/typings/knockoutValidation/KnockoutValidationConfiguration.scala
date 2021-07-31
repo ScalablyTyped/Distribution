@@ -2,100 +2,98 @@ package typings.knockoutValidation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutValidationConfiguration extends StObject {
   
   /**
     * Allows HTML in validation messages
     */
-  var allowHtmlMessages: js.UndefOr[Boolean] = js.native
+  var allowHtmlMessages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether css error classes are added only
     * when properties are modified or at all times
     * @type {[type]}
     */
-  var decorateElementOnModified: js.UndefOr[Boolean] = js.native
+  var decorateElementOnModified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to assign an error class to the <input> tag
     * when your property is invalid
     */
-  var decorateInputElement: js.UndefOr[Boolean] = js.native
+  var decorateInputElement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If defined, the CSS class assigned to both <input> and validation message elements
     */
-  var errorClass: js.UndefOr[String] = js.native
+  var errorClass: js.UndefOr[String] = js.undefined
   
   /**
     * The CSS class assigned to validation error <input> elements, must have decorateInputElement set to true
     */
-  var errorElementClass: js.UndefOr[String] = js.native
+  var errorElementClass: js.UndefOr[String] = js.undefined
   
   /**
     * The CSS class assigned to validation error messages
     */
-  var errorMessageClass: js.UndefOr[String] = js.native
+  var errorMessageClass: js.UndefOr[String] = js.undefined
   
   /**
     * Shows tooltips using input 'title' attribute. False hides them
     */
-  var errorsAsTitle: js.UndefOr[Boolean] = js.native
+  var errorsAsTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Shows the error when hovering the input field (decorateElement must be true)
     */
-  var errorsAsTitleOnModified: js.UndefOr[Boolean] = js.native
+  var errorsAsTitleOnModified: js.UndefOr[Boolean] = js.undefined
   
-  var grouping: js.UndefOr[KnockoutValidationGroupingOptions] = js.native
+  var grouping: js.UndefOr[KnockoutValidationGroupingOptions] = js.undefined
   
   /**
     * Supply the HTML5 input types validation will be
     * added to. Defaults to ["email", "number", "date"]
     */
-  var html5InputTypes: js.UndefOr[js.Array[String]] = js.native
+  var html5InputTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If true validation will insert either a <span> element or the template
     * specified by messageTemplate after any element (e.g. <input>)
     * that uses a KO value binding with a validated field
     */
-  var insertMessages: js.UndefOr[Boolean] = js.native
+  var insertMessages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The id of the <script type="text/html"></script>
     * that you want to use for all your validation messages
     */
-  var messageTemplate: js.UndefOr[String] = js.native
+  var messageTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether validation messages are triggered only
     * when properties are modified or at all times
     */
-  var messagesOnModified: js.UndefOr[Boolean] = js.native
+  var messagesOnModified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to assign validation rules to your ViewModel
     * using HTML5 validation attributes
     */
-  var parseInputAttributes: js.UndefOr[Boolean] = js.native
+  var parseInputAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Register custom validation rules defined via ko.validation.rules
     */
-  var registerExtenders: js.UndefOr[Boolean] = js.native
+  var registerExtenders: js.UndefOr[Boolean] = js.undefined
   
-  var validate: js.UndefOr[KnockoutValidationValidateOptions] = js.native
+  var validate: js.UndefOr[KnockoutValidationValidateOptions] = js.undefined
   
   /**
     * Add HTML5 input validation attributes to form elements
     * that ko observable's are bound to
     */
-  var writeInputAttributes: js.UndefOr[Boolean] = js.native
+  var writeInputAttributes: js.UndefOr[Boolean] = js.undefined
 }
 object KnockoutValidationConfiguration {
   

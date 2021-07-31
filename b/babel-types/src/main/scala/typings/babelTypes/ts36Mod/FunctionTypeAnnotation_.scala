@@ -3,25 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.FunctionTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionTypeAnnotation_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with FlowTypeAnnotation {
   
-  var params: js.Array[FunctionTypeParam_] = js.native
+  var params: js.Array[FunctionTypeParam_]
   
-  var rest: FunctionTypeParam_ = js.native
+  var rest: FunctionTypeParam_
   
-  var returnType: FlowTypeAnnotation = js.native
+  var returnType: FlowTypeAnnotation
   
-  var typeParameters: TypeParameterDeclaration_ = js.native
+  var typeParameters: TypeParameterDeclaration_
   
   @JSName("type")
-  var type_FunctionTypeAnnotation_ : FunctionTypeAnnotation = js.native
+  var type_FunctionTypeAnnotation_ : FunctionTypeAnnotation
 }
 object FunctionTypeAnnotation_ {
   
@@ -33,11 +32,10 @@ object FunctionTypeAnnotation_ {
     rest: FunctionTypeParam_,
     returnType: FlowTypeAnnotation,
     start: Double,
-    `type`: FunctionTypeAnnotation,
     typeParameters: TypeParameterDeclaration_
   ): FunctionTypeAnnotation_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], rest = rest.asInstanceOf[js.Any], returnType = returnType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], typeParameters = typeParameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionTypeAnnotation")
     __obj.asInstanceOf[FunctionTypeAnnotation_]
   }
   

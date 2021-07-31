@@ -2,17 +2,15 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedProperty[T] extends StObject {
   
-  var CanBeChanged: Boolean = js.native
+  var CanBeChanged: Boolean
   
-  var ManagedPropertyLogicalName: String = js.native
+  var ManagedPropertyLogicalName: String
   
-  var Value: T = js.native
+  var Value: T
 }
 object ManagedProperty {
   
@@ -23,7 +21,7 @@ object ManagedProperty {
   }
   
   @scala.inline
-  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty[_], T] (val x: Self with ManagedProperty[T]) extends AnyVal {
+  implicit class ManagedPropertyMutableBuilder[Self <: ManagedProperty[?], T] (val x: Self & ManagedProperty[T]) extends AnyVal {
     
     @scala.inline
     def setCanBeChanged(value: Boolean): Self = StObject.set(x, "CanBeChanged", value.asInstanceOf[js.Any])

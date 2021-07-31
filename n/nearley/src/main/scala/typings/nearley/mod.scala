@@ -5,7 +5,6 @@ import typings.nearley.anon.Dictkey
 import typings.nearley.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,9 +25,12 @@ object mod {
   /* static members */
   object Grammar {
     
-    @JSImport("nearley", "Grammar.fromCompiled")
+    @JSImport("nearley", "Grammar")
     @js.native
-    def fromCompiled(rules: CompiledRules): Grammar = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromCompiled(rules: CompiledRules): Grammar = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCompiled")(rules.asInstanceOf[js.Any]).asInstanceOf[Grammar]
   }
   
   @JSImport("nearley", "Parser")
@@ -50,7 +52,7 @@ object mod {
       */
     def feed(chunk: String): this.type = js.native
     
-    def finish(): js.Array[_] = js.native
+    def finish(): js.Array[js.Any] = js.native
     
     var grammar: Grammar = js.native
     
@@ -68,7 +70,7 @@ object mod {
       * Note that this is undefined before the first feed() call.
       * It isn't typed as `any[] | undefined` to spare you the null checks when it's definitely an array.
       */
-    var results: js.Array[_] = js.native
+    var results: js.Array[js.Any] = js.native
     
     def save(): Dictkey = js.native
   }
@@ -92,8 +94,8 @@ object mod {
   @JSImport("nearley", "Rule")
   @js.native
   class Rule protected () extends StObject {
-    def this(name: String, symbols: js.Array[_]) = this()
-    def this(name: String, symbols: js.Array[_], postprocess: Postprocessor) = this()
+    def this(name: String, symbols: js.Array[js.Any]) = this()
+    def this(name: String, symbols: js.Array[js.Any], postprocess: Postprocessor) = this()
     
     var id: Double = js.native
     
@@ -101,7 +103,7 @@ object mod {
     
     var postprocess: js.UndefOr[Postprocessor] = js.native
     
-    var symbols: js.Array[_] = js.native
+    var symbols: js.Array[js.Any] = js.native
     
     def toString(withCursorAt: Double): String = js.native
   }
@@ -119,14 +121,13 @@ object mod {
     def highestId_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("highestId")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CompiledRules extends StObject {
     
-    var Lexer: js.UndefOr[typings.nearley.mod.Lexer] = js.native
+    var Lexer: js.UndefOr[typings.nearley.mod.Lexer] = js.undefined
     
-    var ParserRules: js.Array[ParserRule] = js.native
+    var ParserRules: js.Array[ParserRule]
     
-    var ParserStart: String = js.native
+    var ParserStart: String
   }
   object CompiledRules {
     
@@ -186,12 +187,11 @@ object mod {
   
   type LexerState = StringDictionary[js.Any]
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var keepHistory: js.UndefOr[Boolean] = js.native
+    var keepHistory: js.UndefOr[Boolean] = js.undefined
     
-    var lexer: js.UndefOr[Lexer] = js.native
+    var lexer: js.UndefOr[Lexer] = js.undefined
   }
   object ParserOptions {
     
@@ -218,19 +218,18 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserRule extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var postprocess: js.UndefOr[Postprocessor] = js.native
+    var postprocess: js.UndefOr[Postprocessor] = js.undefined
     
-    var symbols: js.Array[_] = js.native
+    var symbols: js.Array[js.Any]
   }
   object ParserRule {
     
     @scala.inline
-    def apply(name: String, symbols: js.Array[_]): ParserRule = {
+    def apply(name: String, symbols: js.Array[js.Any]): ParserRule = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], symbols = symbols.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParserRule]
     }
@@ -250,7 +249,7 @@ object mod {
       def setPostprocessUndefined: Self = StObject.set(x, "postprocess", js.undefined)
       
       @scala.inline
-      def setSymbols(value: js.Array[_]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
+      def setSymbols(value: js.Array[js.Any]): Self = StObject.set(x, "symbols", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSymbolsVarargs(value: js.Any*): Self = StObject.set(x, "symbols", js.Array(value :_*))

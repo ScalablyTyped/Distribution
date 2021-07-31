@@ -14,25 +14,23 @@ import typings.pako.pakoNumbers.`9`
 import typings.pako.pakoStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeflateFunctionOptions extends StObject {
   
-  var dictionary: js.UndefOr[js.Any] = js.native
+  var dictionary: js.UndefOr[js.Any] = js.undefined
   
-  var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+  var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
   
-  var memLevel: js.UndefOr[Double] = js.native
+  var memLevel: js.UndefOr[Double] = js.undefined
   
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
-  var strategy: js.UndefOr[StrategyValues] = js.native
+  var strategy: js.UndefOr[StrategyValues] = js.undefined
   
-  var to: js.UndefOr[string] = js.native
+  var to: js.UndefOr[string] = js.undefined
   
-  var windowBits: js.UndefOr[Double] = js.native
+  var windowBits: js.UndefOr[Double] = js.undefined
 }
 object DeflateFunctionOptions {
   

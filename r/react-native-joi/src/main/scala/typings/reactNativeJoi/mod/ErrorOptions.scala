@@ -2,10 +2,8 @@ package typings.reactNativeJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ErrorOptions extends StObject {
     * This concept only makes sense for `array` or `object` schemas as other values don't have children.
     * @default false
     */
-  var self: js.UndefOr[Boolean] = js.native
+  var self: js.UndefOr[Boolean] = js.undefined
 }
 object ErrorOptions {
   

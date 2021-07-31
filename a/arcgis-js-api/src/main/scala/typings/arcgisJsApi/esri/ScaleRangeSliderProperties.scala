@@ -2,81 +2,81 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleRangeSliderProperties extends WidgetProperties {
+trait ScaleRangeSliderProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * When `true`, sets the widget to a disabled state so the user cannot interact with it.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#disabled)
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When provided, the initial [minScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#minScale) and [maxScale](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#maxScale) values will match the layer's.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#layer)
     */
-  var layer: js.UndefOr[LayerProperties] = js.native
+  var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
     * The maximum scale of the active scale range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#maxScale)
     */
-  var maxScale: js.UndefOr[Double] = js.native
+  var maxScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The lowest possible maximum scale value on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#maxScaleLimit)
     */
-  var maxScaleLimit: js.UndefOr[Double] = js.native
+  var maxScaleLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum scale of the active scale range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#minScale)
     */
-  var minScale: js.UndefOr[Double] = js.native
+  var minScale: js.UndefOr[Double] = js.undefined
   
   /**
     * The highest possible minimum scale value on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#minScaleLimit)
     */
-  var minScaleLimit: js.UndefOr[Double] = js.native
+  var minScaleLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * The region that the scale thumbnails will focus on.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#region)
     */
-  var region: js.UndefOr[SupportedRegion] = js.native
+  var region: js.UndefOr[SupportedRegion] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[ScaleRangeSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[ScaleRangeSliderViewModelProperties] = js.undefined
   
   /**
     * The visible elements that are displayed within the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-ScaleRangeSlider.html#visibleElements)
     */
-  var visibleElements: js.UndefOr[ScaleRangeSliderVisibleElements] = js.native
+  var visibleElements: js.UndefOr[ScaleRangeSliderVisibleElements] = js.undefined
 }
 object ScaleRangeSliderProperties {
   

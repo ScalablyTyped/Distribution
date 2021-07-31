@@ -4,26 +4,24 @@ import typings.typeorm.anon.IdObjectID
 import typings.typeorm.anon.NModified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWriteOpResult extends StObject {
   
   /**
     * The connection object used for the operation.
     */
-  var connection: js.Any = js.native
+  var connection: js.Any
   
   /**
     * The number of documents that matched the filter.
     */
-  var matchedCount: scala.Double = js.native
+  var matchedCount: scala.Double
   
   /**
     * The number of documents that were modified.
     */
-  var modifiedCount: scala.Double = js.native
+  var modifiedCount: scala.Double
   
   /**
     * The raw result returned from MongoDB, field will vary depending on server version.
@@ -31,18 +29,18 @@ trait UpdateWriteOpResult extends StObject {
     * @param n The total count of documents scanned.
     * @param nModified The total count of documents modified.
     */
-  var result: NModified = js.native
+  var result: NModified
   
   /**
     * The number of documents upserted.
     */
-  var upsertedCount: scala.Double = js.native
+  var upsertedCount: scala.Double
   
   /**
     * The upserted id.
     * @param _id The upserted _id returned from the server.
     */
-  var upsertedId: IdObjectID = js.native
+  var upsertedId: IdObjectID
 }
 object UpdateWriteOpResult {
   

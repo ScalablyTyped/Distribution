@@ -4,21 +4,19 @@ import typings.ionicCore.anon.Tab
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonTabs extends StObject {
   
   /**
     * Emitted when the navigation has finished transitioning to a new component.
     */
-  var onIonTabsDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Tab], Unit]] = js.native
+  var onIonTabsDidChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Tab], Unit]] = js.undefined
   
   /**
     * Emitted when the navigation is about to transition to a new component.
     */
-  var onIonTabsWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Tab], Unit]] = js.native
+  var onIonTabsWillChange: js.UndefOr[js.Function1[/* event */ CustomEvent[Tab], Unit]] = js.undefined
 }
 object IonTabs {
   

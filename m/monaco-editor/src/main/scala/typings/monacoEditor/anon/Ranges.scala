@@ -4,15 +4,13 @@ import typings.monacoEditor.mod.IRange
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ranges extends StObject {
   
-  var ranges: js.Array[IRange] = js.native
+  var ranges: js.Array[IRange]
   
-  var wordPattern: js.UndefOr[RegExp] = js.native
+  var wordPattern: js.UndefOr[RegExp] = js.undefined
 }
 object Ranges {
   

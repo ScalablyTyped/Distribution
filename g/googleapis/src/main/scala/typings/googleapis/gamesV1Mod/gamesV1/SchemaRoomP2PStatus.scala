@@ -2,20 +2,18 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an update on the status of a peer in a room.
   */
-@js.native
 trait SchemaRoomP2PStatus extends StObject {
   
   /**
     * The amount of time in milliseconds it took to establish connections with
     * this peer.
     */
-  var connectionSetupLatencyMillis: js.UndefOr[Double] = js.native
+  var connectionSetupLatencyMillis: js.UndefOr[Double] = js.undefined
   
   /**
     * The error code in event of a failure. Possible values are:   -
@@ -25,23 +23,23 @@ trait SchemaRoomP2PStatus extends StObject {
     * The client received an error when trying to use the relay server to
     * establish a P2P connection with the peer.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * More detailed diagnostic message returned in event of a failure.
     */
-  var error_reason: js.UndefOr[String] = js.native
+  var error_reason: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#roomP2PStatus.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the participant.
     */
-  var participantId: js.UndefOr[String] = js.native
+  var participantId: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the peer in the room. Possible values are:   -
@@ -49,13 +47,13 @@ trait SchemaRoomP2PStatus extends StObject {
     * connection with the peer.  - &quot;CONNECTION_FAILED&quot; - The client
     * failed to establish directed presence with the peer.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of time in milliseconds it took to send packets back and forth
     * on the unreliable channel with this peer.
     */
-  var unreliableRoundtripLatencyMillis: js.UndefOr[Double] = js.native
+  var unreliableRoundtripLatencyMillis: js.UndefOr[Double] = js.undefined
 }
 object SchemaRoomP2PStatus {
   

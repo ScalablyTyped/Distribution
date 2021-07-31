@@ -2,20 +2,18 @@ package typings.dav.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined dav.dav.Partial<dav.dav.DAVObject> */
-@js.native
 trait DAVObjectOptions extends StObject {
   
-  var constructor: js.UndefOr[js.Function1[/* options */ this.type, js.Any]] = js.native
+  var constructor: js.UndefOr[js.Function1[/* options */ this.type, js.Any]] = js.undefined
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object DAVObjectOptions {
   

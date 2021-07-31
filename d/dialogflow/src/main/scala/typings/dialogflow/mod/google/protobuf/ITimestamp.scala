@@ -3,18 +3,16 @@ package typings.dialogflow.mod.google.protobuf
 import typings.long.mod.Long
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Timestamp. */
-@js.native
 trait ITimestamp extends StObject {
   
   /** Timestamp nanos */
-  var nanos: js.UndefOr[Double | Null] = js.native
+  var nanos: js.UndefOr[Double | Null] = js.undefined
   
   /** Timestamp seconds */
-  var seconds: js.UndefOr[Double | Long | String | Null] = js.native
+  var seconds: js.UndefOr[Double | Long | String | Null] = js.undefined
 }
 object ITimestamp {
   

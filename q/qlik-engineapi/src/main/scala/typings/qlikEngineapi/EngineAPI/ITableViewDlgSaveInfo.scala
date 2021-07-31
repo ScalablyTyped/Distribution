@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewDlgSaveInfo...
   */
-@js.native
 trait ITableViewDlgSaveInfo extends StObject {
   
   /**
     * Set of data for internal and source view modes.
     */
-  var qCtlInfo: ITableViewCtlSaveInfo = js.native
+  var qCtlInfo: ITableViewCtlSaveInfo
   
   /**
     * View mode to display when opening Qlik Sense data model viewer.
@@ -22,13 +20,13 @@ trait ITableViewDlgSaveInfo extends StObject {
     *   0 for internal view mode
     *   1 for source view mode
     */
-  var qMode: Double = js.native
+  var qMode: Double
   
   /**
     * Information about the position of the dialog window.
     * Not used in Qlik Sense.
     */
-  var qPos: IRect = js.native
+  var qPos: IRect
 }
 object ITableViewDlgSaveInfo {
   

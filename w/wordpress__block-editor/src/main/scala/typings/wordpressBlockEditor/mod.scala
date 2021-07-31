@@ -146,19 +146,21 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.wbr
 import typings.wordpressBlocks.mod.BlockIconNormalized
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@wordpress/block-editor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@wordpress/block-editor", "AlignmentToolbar")
   @js.native
   val AlignmentToolbar: ComponentType[Props] = js.native
   
   // tslint:disable-next-line:no-unnecessary-generics
-  @JSImport("@wordpress/block-editor", "Autocomplete")
-  @js.native
-  def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = js.native
+  @scala.inline
+  def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Autocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor", "BlockAlignmentToolbar")
   @js.native
@@ -168,9 +170,9 @@ object mod {
   
   object BlockControls {
     
-    @JSImport("@wordpress/block-editor", "BlockControls")
-    @js.native
-    def apply(props: typings.wordpressBlockEditor.blockControlsMod.BlockControls.Props): Element = js.native
+    @scala.inline
+    def apply(props: typings.wordpressBlockEditor.blockControlsMod.BlockControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor", "BlockControls")
     @js.native
     val ^ : js.Any = js.native
@@ -198,9 +200,9 @@ object mod {
   
   object BlockFormatControls {
     
-    @JSImport("@wordpress/block-editor", "BlockFormatControls")
-    @js.native
-    def apply(props: typings.wordpressBlockEditor.blockFormatControlsMod.BlockFormatControls.Props): Element = js.native
+    @scala.inline
+    def apply(props: typings.wordpressBlockEditor.blockFormatControlsMod.BlockFormatControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor", "BlockFormatControls")
     @js.native
     val ^ : js.Any = js.native
@@ -282,9 +284,9 @@ object mod {
   
   object InnerBlocks {
     
-    @JSImport("@wordpress/block-editor", "InnerBlocks")
-    @js.native
-    def apply(props: typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props): Element = js.native
+    @scala.inline
+    def apply(props: typings.wordpressBlockEditor.innerBlocksMod.InnerBlocks.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor", "InnerBlocks")
     @js.native
     val ^ : js.Any = js.native
@@ -322,9 +324,9 @@ object mod {
   
   object InspectorAdvancedControls {
     
-    @JSImport("@wordpress/block-editor", "InspectorAdvancedControls")
-    @js.native
-    def apply(props: typings.wordpressBlockEditor.inspectorAdvancedControlsMod.InspectorAdvancedControls.Props): Element = js.native
+    @scala.inline
+    def apply(props: typings.wordpressBlockEditor.inspectorAdvancedControlsMod.InspectorAdvancedControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor", "InspectorAdvancedControls")
     @js.native
     val ^ : js.Any = js.native
@@ -338,9 +340,9 @@ object mod {
   
   object InspectorControls {
     
-    @JSImport("@wordpress/block-editor", "InspectorControls")
-    @js.native
-    def apply(props: typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props): Element = js.native
+    @scala.inline
+    def apply(props: typings.wordpressBlockEditor.inspectorControlsMod.InspectorControls.Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor", "InspectorControls")
     @js.native
     val ^ : js.Any = js.native
@@ -352,13 +354,11 @@ object mod {
     def Slot_=(x: FC[OmitPropsname]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Slot")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@wordpress/block-editor", "MediaPlaceholder")
-  @js.native
-  def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = js.native
+  @scala.inline
+  def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaPlaceholder")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@wordpress/block-editor", "MediaUpload")
-  @js.native
-  def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props[T]): Element = js.native
+  @scala.inline
+  def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaUpload")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/block-editor", "MediaUploadCheck")
   @js.native
@@ -398,381 +398,381 @@ object mod {
   
   object RichText {
     
-    @JSImport("@wordpress/block-editor", "RichText")
-    @js.native
+    @scala.inline
     def apply(
       props: typings.wordpressBlockEditor.richTextMod.RichText.Props[
           a | abbr | address | applet | area | article | aside | audio | b | base | basefont | bdi | bdo | blockquote | body | br | button | canvas | caption | cite | code | col | colgroup | data | datalist | dd | del | details | dfn | dialog | dir | div | dl | dt | em | embed | fieldset | figcaption | figure | font | footer | form | frame | frameset | h1 | h2 | h3 | h4 | h5 | h6 | head | header | hgroup | hr | html | i | iframe | img | input | ins | kbd | label | legend | li | link | main | map | mark | marquee | menu | meta | meter | nav | noscript | `object` | ol | optgroup | option | output | p | param | picture | pre | progress | q | rp | rt | ruby | s | samp | script | section | select | slot | small | source | span | strong | style | sub | summary | sup | table | tbody | td | template | textarea | tfoot | th | thead | time | title | tr | track | u | ul | `var` | video | wbr
         ]
-    ): Element = js.native
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @JSImport("@wordpress/block-editor", "RichText")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Should be used in the `save` function of your block to correctly save rich text content.
       */
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_a(props: ContentProps[a]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_abbr(props: ContentProps[abbr]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_address(props: ContentProps[address]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_applet(props: ContentProps[applet]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_area(props: ContentProps[area]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_article(props: ContentProps[article]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_aside(props: ContentProps[aside]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_audio(props: ContentProps[audio]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_b(props: ContentProps[b]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_base(props: ContentProps[base]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_basefont(props: ContentProps[basefont]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_bdi(props: ContentProps[bdi]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_bdo(props: ContentProps[bdo]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_blockquote(props: ContentProps[blockquote]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_body(props: ContentProps[body]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_br(props: ContentProps[br]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_button(props: ContentProps[button]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_canvas(props: ContentProps[canvas]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_caption(props: ContentProps[caption]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_cite(props: ContentProps[cite]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_code(props: ContentProps[code]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_col(props: ContentProps[col]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_colgroup(props: ContentProps[colgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_data(props: ContentProps[data]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_datalist(props: ContentProps[datalist]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dd(props: ContentProps[dd]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_del(props: ContentProps[del]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_details(props: ContentProps[details]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dfn(props: ContentProps[dfn]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dialog(props: ContentProps[dialog]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dir(props: ContentProps[dir]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_div(props: ContentProps[div]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dl(props: ContentProps[dl]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_dt(props: ContentProps[dt]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_em(props: ContentProps[em]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_embed(props: ContentProps[embed]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_fieldset(props: ContentProps[fieldset]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_figcaption(props: ContentProps[figcaption]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_figure(props: ContentProps[figure]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_font(props: ContentProps[font]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_footer(props: ContentProps[footer]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_form(props: ContentProps[form]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_frame(props: ContentProps[frame]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_frameset(props: ContentProps[frameset]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h1(props: ContentProps[h1]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h2(props: ContentProps[h2]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h3(props: ContentProps[h3]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h4(props: ContentProps[h4]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h5(props: ContentProps[h5]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_h6(props: ContentProps[h6]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_head(props: ContentProps[head]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_header(props: ContentProps[header]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_hgroup(props: ContentProps[hgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_hr(props: ContentProps[hr]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_html(props: ContentProps[html]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_i(props: ContentProps[i]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_iframe(props: ContentProps[iframe]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_img(props: ContentProps[img]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_input(props: ContentProps[input]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_ins(props: ContentProps[ins]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_kbd(props: ContentProps[kbd]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_label(props: ContentProps[label]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_legend(props: ContentProps[legend]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_li(props: ContentProps[li]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_link(props: ContentProps[link]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_main(props: ContentProps[main]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_map(props: ContentProps[map]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_mark(props: ContentProps[mark]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_marquee(props: ContentProps[marquee]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_menu(props: ContentProps[menu]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_meta(props: ContentProps[meta]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_meter(props: ContentProps[meter]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_nav(props: ContentProps[nav]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_noscript(props: ContentProps[noscript]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_object(props: ContentProps[`object`]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_ol(props: ContentProps[ol]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_optgroup(props: ContentProps[optgroup]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_option(props: ContentProps[option]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_output(props: ContentProps[output]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_p(props: ContentProps[p]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_param(props: ContentProps[param]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_picture(props: ContentProps[picture]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_pre(props: ContentProps[pre]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_progress(props: ContentProps[progress]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_q(props: ContentProps[q]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_rp(props: ContentProps[rp]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_rt(props: ContentProps[rt]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_ruby(props: ContentProps[ruby]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_s(props: ContentProps[s]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_samp(props: ContentProps[samp]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_script(props: ContentProps[script]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_section(props: ContentProps[section]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_select(props: ContentProps[select]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_slot(props: ContentProps[slot]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_small(props: ContentProps[small]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_source(props: ContentProps[source]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_span(props: ContentProps[span]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_strong(props: ContentProps[strong]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_style(props: ContentProps[style]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_sub(props: ContentProps[sub]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_summary(props: ContentProps[summary]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_sup(props: ContentProps[sup]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_table(props: ContentProps[table]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_tbody(props: ContentProps[tbody]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_td(props: ContentProps[td]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_template(props: ContentProps[template]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_textarea(props: ContentProps[textarea]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_tfoot(props: ContentProps[tfoot]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_th(props: ContentProps[th]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_thead(props: ContentProps[thead]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_time(props: ContentProps[time]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_title(props: ContentProps[title]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_tr(props: ContentProps[tr]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_track(props: ContentProps[track]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_u(props: ContentProps[u]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_ul(props: ContentProps[ul]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_var(props: ContentProps[`var`]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_video(props: ContentProps[video]): Element = js.native
-    @JSImport("@wordpress/block-editor", "RichText.Content")
-    @js.native
-    def Content_wbr(props: ContentProps[wbr]): Element = js.native
+    @scala.inline
+    def Content_a(props: ContentProps[a]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSImport("@wordpress/block-editor", "RichText.isEmpty")
-    @js.native
-    def isEmpty(value: String): Boolean = js.native
-    @JSImport("@wordpress/block-editor", "RichText.isEmpty")
-    @js.native
-    def isEmpty(value: js.Array[String]): Boolean = js.native
+    @scala.inline
+    def Content_abbr(props: ContentProps[abbr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_address(props: ContentProps[address]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_applet(props: ContentProps[applet]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_area(props: ContentProps[area]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_article(props: ContentProps[article]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_aside(props: ContentProps[aside]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_audio(props: ContentProps[audio]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_b(props: ContentProps[b]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_base(props: ContentProps[base]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_basefont(props: ContentProps[basefont]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_bdi(props: ContentProps[bdi]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_bdo(props: ContentProps[bdo]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_blockquote(props: ContentProps[blockquote]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_body(props: ContentProps[body]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_br(props: ContentProps[br]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_button(props: ContentProps[button]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_canvas(props: ContentProps[canvas]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_caption(props: ContentProps[caption]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_cite(props: ContentProps[cite]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_code(props: ContentProps[code]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_col(props: ContentProps[col]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_colgroup(props: ContentProps[colgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_data(props: ContentProps[data]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_datalist(props: ContentProps[datalist]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dd(props: ContentProps[dd]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_del(props: ContentProps[del]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_details(props: ContentProps[details]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dfn(props: ContentProps[dfn]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dialog(props: ContentProps[dialog]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dir(props: ContentProps[dir]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_div(props: ContentProps[div]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dl(props: ContentProps[dl]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_dt(props: ContentProps[dt]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_em(props: ContentProps[em]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_embed(props: ContentProps[embed]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_fieldset(props: ContentProps[fieldset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_figcaption(props: ContentProps[figcaption]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_figure(props: ContentProps[figure]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_font(props: ContentProps[font]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_footer(props: ContentProps[footer]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_form(props: ContentProps[form]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_frame(props: ContentProps[frame]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_frameset(props: ContentProps[frameset]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h1(props: ContentProps[h1]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h2(props: ContentProps[h2]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h3(props: ContentProps[h3]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h4(props: ContentProps[h4]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h5(props: ContentProps[h5]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_h6(props: ContentProps[h6]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_head(props: ContentProps[head]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_header(props: ContentProps[header]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_hgroup(props: ContentProps[hgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_hr(props: ContentProps[hr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_html(props: ContentProps[html]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_i(props: ContentProps[i]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_iframe(props: ContentProps[iframe]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_img(props: ContentProps[img]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_input(props: ContentProps[input]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ins(props: ContentProps[ins]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_kbd(props: ContentProps[kbd]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_label(props: ContentProps[label]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_legend(props: ContentProps[legend]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_li(props: ContentProps[li]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_link(props: ContentProps[link]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_main(props: ContentProps[main]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_map(props: ContentProps[map]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_mark(props: ContentProps[mark]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_marquee(props: ContentProps[marquee]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_menu(props: ContentProps[menu]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_meta(props: ContentProps[meta]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_meter(props: ContentProps[meter]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_nav(props: ContentProps[nav]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_noscript(props: ContentProps[noscript]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_object(props: ContentProps[`object`]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ol(props: ContentProps[ol]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_optgroup(props: ContentProps[optgroup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_option(props: ContentProps[option]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_output(props: ContentProps[output]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_p(props: ContentProps[p]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_param(props: ContentProps[param]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_picture(props: ContentProps[picture]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_pre(props: ContentProps[pre]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_progress(props: ContentProps[progress]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_q(props: ContentProps[q]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_rp(props: ContentProps[rp]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_rt(props: ContentProps[rt]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ruby(props: ContentProps[ruby]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_s(props: ContentProps[s]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_samp(props: ContentProps[samp]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_script(props: ContentProps[script]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_section(props: ContentProps[section]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_select(props: ContentProps[select]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_slot(props: ContentProps[slot]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_small(props: ContentProps[small]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_source(props: ContentProps[source]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_span(props: ContentProps[span]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_strong(props: ContentProps[strong]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_style(props: ContentProps[style]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_sub(props: ContentProps[sub]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_summary(props: ContentProps[summary]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_sup(props: ContentProps[sup]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_table(props: ContentProps[table]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tbody(props: ContentProps[tbody]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_td(props: ContentProps[td]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_template(props: ContentProps[template]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_textarea(props: ContentProps[textarea]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tfoot(props: ContentProps[tfoot]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_th(props: ContentProps[th]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_thead(props: ContentProps[thead]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_time(props: ContentProps[time]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_title(props: ContentProps[title]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_tr(props: ContentProps[tr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_track(props: ContentProps[track]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_u(props: ContentProps[u]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_ul(props: ContentProps[ul]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_var(props: ContentProps[`var`]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_video(props: ContentProps[video]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def Content_wbr(props: ContentProps[wbr]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Content")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
+    @scala.inline
+    def isEmpty(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def isEmpty(value: js.Array[String]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("@wordpress/block-editor", "RichTextShortcut")
@@ -811,57 +811,44 @@ object mod {
   @js.native
   val WritingFlow: ComponentType[typings.wordpressBlockEditor.writingFlowMod.WritingFlow.Props] = js.native
   
-  @JSImport("@wordpress/block-editor", "createCustomColorsHOC")
-  @js.native
+  @scala.inline
   def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[_], ComponentType[_]]
-  ] = js.native
+    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* colorNames */ T, 
+    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+  ]]
   
-  @JSImport("@wordpress/block-editor", "getColorClassName")
-  @js.native
-  def getColorClassName(): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/block-editor", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: js.UndefOr[scala.Nothing], colorSlug: String): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/block-editor", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: String): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/block-editor", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: String, colorSlug: String): String = js.native
-  @JSImport("@wordpress/block-editor", "getColorClassName")
-  @js.native
-  def getColorClassName_Union(colorContextName: String, colorSlug: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getColorClassName(colorContextName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getColorClassName(colorContextName: String, colorSlug: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getColorClassName(colorContextName: Unit, colorSlug: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/block-editor", "getColorObjectByAttributeValues")
-  @js.native
-  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: js.UndefOr[scala.Nothing], customColor: String): EditorColor | PickEditorColorcolor = js.native
-  @JSImport("@wordpress/block-editor", "getColorObjectByAttributeValues")
-  @js.native
-  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: String, customColor: String): EditorColor | PickEditorColorcolor = js.native
+  @scala.inline
+  def getColorClassName_Union(colorContextName: String, colorSlug: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/block-editor", "getColorObjectByColorValue")
-  @js.native
-  def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = js.native
-  @JSImport("@wordpress/block-editor", "getColorObjectByColorValue")
-  @js.native
-  def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = js.native
+  @scala.inline
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: String, customColor: String): EditorColor | PickEditorColorcolor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByAttributeValues")(colors.asInstanceOf[js.Any], definedColor.asInstanceOf[js.Any], customColor.asInstanceOf[js.Any])).asInstanceOf[EditorColor | PickEditorColorcolor]
+  @scala.inline
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: Unit, customColor: String): EditorColor | PickEditorColorcolor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByAttributeValues")(colors.asInstanceOf[js.Any], definedColor.asInstanceOf[js.Any], customColor.asInstanceOf[js.Any])).asInstanceOf[EditorColor | PickEditorColorcolor]
   
-  @JSImport("@wordpress/block-editor", "getFontSize")
-  @js.native
-  def getFontSize(
-    fontSizes: js.Array[EditorFontSize],
-    fontSizeAttribute: js.UndefOr[scala.Nothing],
-    customFontSizeAttribute: Double
-  ): PartialEditorFontSizePick = js.native
-  @JSImport("@wordpress/block-editor", "getFontSize")
-  @js.native
-  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = js.native
+  @scala.inline
+  def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EditorColor]]
+  @scala.inline
+  def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any], colorValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EditorColor]]
   
-  @JSImport("@wordpress/block-editor", "getFontSizeClass")
-  @js.native
-  def getFontSizeClass(fontSizeSlug: String): String = js.native
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: Unit, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
+  
+  @scala.inline
+  def getFontSizeClass(fontSizeSlug: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontSizeClass")(fontSizeSlug.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object storeConfig {
     
@@ -894,51 +881,50 @@ object mod {
     def selectors_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectors")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@wordpress/block-editor", "transformStyles")
-  @js.native
-  def transformStyles(styles: js.Array[EditorStyle]): js.Array[String] = js.native
-  @JSImport("@wordpress/block-editor", "transformStyles")
-  @js.native
-  def transformStyles(styles: js.Array[EditorStyle], wrapperClassName: String): js.Array[String] = js.native
+  @scala.inline
+  def transformStyles(styles: js.Array[EditorStyle]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("transformStyles")(styles.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def transformStyles(styles: js.Array[EditorStyle], wrapperClassName: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformStyles")(styles.asInstanceOf[js.Any], wrapperClassName.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
   // prettier-ignore
-  @JSImport("@wordpress/block-editor", "withColorContext")
-  @js.native
-  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps with OwnProps, ComponentState]): ComponentType[
-    (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-  ] = js.native
-  @JSImport("@wordpress/block-editor", "withColorContext")
-  @js.native
-  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps with OwnProps]): ComponentType[
-    (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-  ] = js.native
+  @scala.inline
+  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ]]
+  @scala.inline
+  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ]]
   
-  @JSImport("@wordpress/block-editor", "withColors")
-  @js.native
-  def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def withColors(colorTypes: (String | (Record[String, String]))*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColors")(colorTypes.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
-  @JSImport("@wordpress/block-editor", "withFontSizes")
-  @js.native
-  def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def withFontSizes(attributeNames: String*): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withFontSizes")(attributeNames.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
   
   /* augmented module */
   object wordpressDataAugmentingMod {
     
-    @JSImport("@wordpress/data", "dispatch")
+    @JSImport("@wordpress/data", JSImport.Namespace)
     @js.native
-    def dispatch_coreblockeditor(key: `coreSlashblock-editor`): TypeofimportedActions = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/data", "select")
-    @js.native
-    def select_coreblockeditor(key: `coreSlashblock-editor`): TypeofimportedSelectors = js.native
+    @scala.inline
+    def dispatch_coreblockeditor(key: `coreSlashblock-editor`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    
+    @scala.inline
+    def select_coreblockeditor(key: `coreSlashblock-editor`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
-  @js.native
   trait EditorBaseSetting extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var slug: String = js.native
+    var slug: String
   }
   object EditorBaseSetting {
     
@@ -959,12 +945,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EditorBlockListSettings extends StObject {
     
-    var allowedBlocks: js.UndefOr[js.Array[String]] = js.native
+    var allowedBlocks: js.UndefOr[js.Array[String]] = js.undefined
     
-    var templateLock: js.UndefOr[EditorTemplateLock] = js.native
+    var templateLock: js.UndefOr[EditorTemplateLock] = js.undefined
   }
   object EditorBlockListSettings {
     
@@ -1008,10 +993,11 @@ object mod {
     def visual: typings.wordpressBlockEditor.wordpressBlockEditorStrings.visual = "visual".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.visual]
   }
   
-  @js.native
-  trait EditorColor extends EditorBaseSetting {
+  trait EditorColor
+    extends StObject
+       with EditorBaseSetting {
     
-    var color: String = js.native
+    var color: String
   }
   object EditorColor {
     
@@ -1029,10 +1015,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait EditorFontSize extends EditorBaseSetting {
+  trait EditorFontSize
+    extends StObject
+       with EditorBaseSetting {
     
-    var size: Double = js.native
+    var size: Double
   }
   object EditorFontSize {
     
@@ -1052,60 +1039,59 @@ object mod {
   
   type EditorImageSize = EditorBaseSetting
   
-  @js.native
   trait EditorInserterItem extends StObject {
     
     /**
       * Block category that the item is associated with.
       */
-    var category: String = js.native
+    var category: String
     
     /**
       * Hueristic that combines frequency and recency.
       */
-    var frecency: Double = js.native
+    var frecency: Double
     
-    var hasChildBlocksWithInserterSupport: Boolean = js.native
+    var hasChildBlocksWithInserterSupport: Boolean
     
     /**
       * Icon for the item, as it appears in the inserter.
       */
-    var icon: BlockIconNormalized = js.native
+    var icon: BlockIconNormalized
     
     /**
       * Unique identifier for the item.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Attributes to pass to the newly created block.
       */
-    var initialAttributes: Record[String, _] = js.native
+    var initialAttributes: Record[String, js.Any]
     
     /**
       * Whether or not the user should be prevented from inserting this item.
       */
-    var isDisabled: Boolean = js.native
+    var isDisabled: Boolean
     
     /**
       * Keywords that can be searched to find this item.
       */
-    var keywords: js.Array[String] = js.native
+    var keywords: js.Array[String]
     
     /**
       * The type of block to create.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Title of the item, as it appears in the inserter.
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * How useful we think this item is, between 0 and 3.
       */
-    var utility: Double = js.native
+    var utility: Double
   }
   object EditorInserterItem {
     
@@ -1116,7 +1102,7 @@ object mod {
       hasChildBlocksWithInserterSupport: Boolean,
       icon: BlockIconNormalized,
       id: String,
-      initialAttributes: Record[String, _],
+      initialAttributes: Record[String, js.Any],
       isDisabled: Boolean,
       keywords: js.Array[String],
       name: String,
@@ -1146,7 +1132,7 @@ object mod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInitialAttributes(value: Record[String, _]): Self = StObject.set(x, "initialAttributes", value.asInstanceOf[js.Any])
+      def setInitialAttributes(value: Record[String, js.Any]): Self = StObject.set(x, "initialAttributes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
@@ -1182,23 +1168,22 @@ object mod {
     def visual: typings.wordpressBlockEditor.wordpressBlockEditorStrings.visual = "visual".asInstanceOf[typings.wordpressBlockEditor.wordpressBlockEditorStrings.visual]
   }
   
-  @js.native
   trait EditorSelection extends StObject {
     
     /**
       * The selected block attribute key.
       */
-    var attributeKey: js.UndefOr[String] = js.native
+    var attributeKey: js.UndefOr[String] = js.undefined
     
     /**
       * The selected block client ID.
       */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /**
       * The selected block attribute offset.
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object EditorSelection {
     
@@ -1231,20 +1216,19 @@ object mod {
     }
   }
   
-  @js.native
   trait EditorSettings extends StObject {
     
     /**
       * Enable/Disable Wide/Full Alignments
       * @defaultValue `false`
       */
-    var alignWide: Boolean = js.native
+    var alignWide: Boolean
     
     /**
       * Array of allowed block types, `true` for all blocks, or `false` for no blocks.
       * @defaultValue `true`
       */
-    var allowedBlockTypes: js.Array[String] | Boolean = js.native
+    var allowedBlockTypes: js.Array[String] | Boolean
     
     /**
       * Mapping of extension:mimetype
@@ -1255,104 +1239,104 @@ object mod {
       * }
       * ```
       */
-    var allowedMimeTypes: (Record[String, String]) | Null = js.native
+    var allowedMimeTypes: (Record[String, String]) | Null
     
-    var autosaveInterval: Double = js.native
+    var autosaveInterval: Double
     
     /**
       * Array of objects representing the legacy widgets available.
       */
-    var availableLegacyWidgets: js.Array[Description] = js.native
+    var availableLegacyWidgets: js.Array[Description]
     
     // FIXME: it is unclear what this value should be.
-    var availableTemplates: js.Array[_] = js.native
+    var availableTemplates: js.Array[js.Any]
     
     /**
       * Empty post placeholder.
       * @defaultValue `"Start writing or type / to choose a block"`
       */
-    var bodyPlaceholder: String = js.native
+    var bodyPlaceholder: String
     
     /**
       * Whether or not the user can switch to the code editor.
       */
-    var codeEditingEnabled: Boolean = js.native
+    var codeEditingEnabled: Boolean
     
     /**
       * Palette colors.
       */
-    var colors: js.Array[EditorColor] = js.native
+    var colors: js.Array[EditorColor]
     
     /**
       * Whether or not the custom colors are disabled.
       */
-    var disableCustomColors: Boolean = js.native
+    var disableCustomColors: Boolean
     
     /**
       * Whether or not the custom font sizes are disabled.
       */
-    var disableCustomEditorFontSizes: Boolean = js.native
+    var disableCustomEditorFontSizes: Boolean
     
     /**
       * Whether or not the custom post formats are disabled.
       */
-    var disablePostFormats: Boolean = js.native
+    var disablePostFormats: Boolean
     
     /**
       * Whether or not the custom fields are enabled.
       */
-    var enableCustomFields: Boolean = js.native
+    var enableCustomFields: Boolean
     
     /**
       * Whether the focus mode is enabled or not.
       */
-    var focusMode: Boolean = js.native
+    var focusMode: Boolean
     
     /**
       * Array of available font sizes.
       */
-    var fontSizes: js.Array[EditorFontSize] = js.native
+    var fontSizes: js.Array[EditorFontSize]
     
     /**
       * Whether or not the editor toolbar is fixed.
       */
-    var hasFixedToolbar: Boolean = js.native
+    var hasFixedToolbar: Boolean
     
     /**
       * Whether or not the user is able to manage widgets.
       */
-    var hasPermissionsToManageWidgets: Boolean = js.native
+    var hasPermissionsToManageWidgets: Boolean
     
     /**
       * Available image sizes.
       */
-    var imageSizes: js.Array[EditorImageSize] = js.native
+    var imageSizes: js.Array[EditorImageSize]
     
     /**
       * Whether the editor is in RTL mode.
       */
-    var isRTL: Boolean = js.native
+    var isRTL: Boolean
     
-    var maxUploadFileSize: Double = js.native
+    var maxUploadFileSize: Double
     
     /**
       * Max width to constraint resizing.
       */
-    var maxWidth: Double = js.native
+    var maxWidth: Double
     
-    var postLock: IsLocked = js.native
+    var postLock: IsLocked
     
-    var postLockUtils: AjaxUrl = js.native
+    var postLockUtils: AjaxUrl
     
-    var richEditingEnabled: Boolean = js.native
+    var richEditingEnabled: Boolean
     
-    var styles: js.Array[EditorStyle] = js.native
+    var styles: js.Array[EditorStyle]
     
     /**
       * Empty title placeholder.
       * @defaultValue `"Add title"`
       */
-    var titlePlaceholder: String = js.native
+    var titlePlaceholder: String
   }
   object EditorSettings {
     
@@ -1362,7 +1346,7 @@ object mod {
       allowedBlockTypes: js.Array[String] | Boolean,
       autosaveInterval: Double,
       availableLegacyWidgets: js.Array[Description],
-      availableTemplates: js.Array[_],
+      availableTemplates: js.Array[js.Any],
       bodyPlaceholder: String,
       codeEditingEnabled: Boolean,
       colors: js.Array[EditorColor],
@@ -1384,7 +1368,7 @@ object mod {
       styles: js.Array[EditorStyle],
       titlePlaceholder: String
     ): EditorSettings = {
-      val __obj = js.Dynamic.literal(alignWide = alignWide.asInstanceOf[js.Any], allowedBlockTypes = allowedBlockTypes.asInstanceOf[js.Any], autosaveInterval = autosaveInterval.asInstanceOf[js.Any], availableLegacyWidgets = availableLegacyWidgets.asInstanceOf[js.Any], availableTemplates = availableTemplates.asInstanceOf[js.Any], bodyPlaceholder = bodyPlaceholder.asInstanceOf[js.Any], codeEditingEnabled = codeEditingEnabled.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], disableCustomColors = disableCustomColors.asInstanceOf[js.Any], disableCustomEditorFontSizes = disableCustomEditorFontSizes.asInstanceOf[js.Any], disablePostFormats = disablePostFormats.asInstanceOf[js.Any], enableCustomFields = enableCustomFields.asInstanceOf[js.Any], focusMode = focusMode.asInstanceOf[js.Any], fontSizes = fontSizes.asInstanceOf[js.Any], hasFixedToolbar = hasFixedToolbar.asInstanceOf[js.Any], hasPermissionsToManageWidgets = hasPermissionsToManageWidgets.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], maxUploadFileSize = maxUploadFileSize.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], postLock = postLock.asInstanceOf[js.Any], postLockUtils = postLockUtils.asInstanceOf[js.Any], richEditingEnabled = richEditingEnabled.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], titlePlaceholder = titlePlaceholder.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alignWide = alignWide.asInstanceOf[js.Any], allowedBlockTypes = allowedBlockTypes.asInstanceOf[js.Any], autosaveInterval = autosaveInterval.asInstanceOf[js.Any], availableLegacyWidgets = availableLegacyWidgets.asInstanceOf[js.Any], availableTemplates = availableTemplates.asInstanceOf[js.Any], bodyPlaceholder = bodyPlaceholder.asInstanceOf[js.Any], codeEditingEnabled = codeEditingEnabled.asInstanceOf[js.Any], colors = colors.asInstanceOf[js.Any], disableCustomColors = disableCustomColors.asInstanceOf[js.Any], disableCustomEditorFontSizes = disableCustomEditorFontSizes.asInstanceOf[js.Any], disablePostFormats = disablePostFormats.asInstanceOf[js.Any], enableCustomFields = enableCustomFields.asInstanceOf[js.Any], focusMode = focusMode.asInstanceOf[js.Any], fontSizes = fontSizes.asInstanceOf[js.Any], hasFixedToolbar = hasFixedToolbar.asInstanceOf[js.Any], hasPermissionsToManageWidgets = hasPermissionsToManageWidgets.asInstanceOf[js.Any], imageSizes = imageSizes.asInstanceOf[js.Any], isRTL = isRTL.asInstanceOf[js.Any], maxUploadFileSize = maxUploadFileSize.asInstanceOf[js.Any], maxWidth = maxWidth.asInstanceOf[js.Any], postLock = postLock.asInstanceOf[js.Any], postLockUtils = postLockUtils.asInstanceOf[js.Any], richEditingEnabled = richEditingEnabled.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], titlePlaceholder = titlePlaceholder.asInstanceOf[js.Any], allowedMimeTypes = null)
       __obj.asInstanceOf[EditorSettings]
     }
     
@@ -1416,7 +1400,7 @@ object mod {
       def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
       
       @scala.inline
-      def setAvailableTemplates(value: js.Array[_]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+      def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAvailableTemplatesVarargs(value: js.Any*): Self = StObject.set(x, "availableTemplates", js.Array(value :_*))
@@ -1495,12 +1479,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EditorStyle extends StObject {
     
-    var baseURL: js.UndefOr[String] = js.native
+    var baseURL: js.UndefOr[String] = js.undefined
     
-    var css: String = js.native
+    var css: String
   }
   object EditorStyle {
     

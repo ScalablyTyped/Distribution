@@ -3,16 +3,14 @@ package typings.wegameApi.anon
 import typings.wegameApi.wx.types.AudioSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioSources extends StObject {
   
   /**
     * 音频输入源，每一项对应一种音频输入源
     */
-  var audioSources: js.Array[AudioSourceType] = js.native
+  var audioSources: js.Array[AudioSourceType]
 }
 object AudioSources {
   

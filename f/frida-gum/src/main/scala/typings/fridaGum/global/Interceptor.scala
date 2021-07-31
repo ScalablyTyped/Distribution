@@ -5,7 +5,6 @@ import typings.fridaGum.InvocationListenerCallbacks
 import typings.fridaGum.NativePointerValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,12 +12,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Interceptor {
   
-  @JSGlobal("Interceptor.attach")
+  @JSGlobal("Interceptor")
   @js.native
-  def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback): typings.fridaGum.InvocationListener = js.native
-  @JSGlobal("Interceptor.attach")
-  @js.native
-  def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback, data: NativePointerValue): typings.fridaGum.InvocationListener = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback): typings.fridaGum.InvocationListener = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], callbacksOrProbe.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.InvocationListener]
+  @scala.inline
+  def attach(target: NativePointerValue, callbacksOrProbe: InstructionProbeCallback, data: NativePointerValue): typings.fridaGum.InvocationListener = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], callbacksOrProbe.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.InvocationListener]
   /**
     * Intercepts calls to function/instruction at `target`. It is important
     * to specify a `InstructionProbeCallback` if `target` is not the first
@@ -29,30 +30,26 @@ object Interceptor {
     * @param data User data exposed to `NativeInvocationListenerCallbacks`
     *             through the `GumInvocationContext *`.
     */
-  @JSGlobal("Interceptor.attach")
-  @js.native
-  def attach(target: NativePointerValue, callbacksOrProbe: InvocationListenerCallbacks): typings.fridaGum.InvocationListener = js.native
-  @JSGlobal("Interceptor.attach")
-  @js.native
+  @scala.inline
+  def attach(target: NativePointerValue, callbacksOrProbe: InvocationListenerCallbacks): typings.fridaGum.InvocationListener = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], callbacksOrProbe.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.InvocationListener]
+  @scala.inline
   def attach(
     target: NativePointerValue,
     callbacksOrProbe: InvocationListenerCallbacks,
     data: NativePointerValue
-  ): typings.fridaGum.InvocationListener = js.native
+  ): typings.fridaGum.InvocationListener = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(target.asInstanceOf[js.Any], callbacksOrProbe.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.InvocationListener]
   
   /**
     * Detaches all previously attached listeners.
     */
-  @JSGlobal("Interceptor.detachAll")
-  @js.native
-  def detachAll(): Unit = js.native
+  @scala.inline
+  def detachAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachAll")().asInstanceOf[Unit]
   
   /**
     * Ensure any pending changes have been committed to memory.
     */
-  @JSGlobal("Interceptor.flush")
-  @js.native
-  def flush(): Unit = js.native
+  @scala.inline
+  def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
   
   /**
     * Replaces function at `target` with implementation at `replacement`.
@@ -65,17 +62,14 @@ object Interceptor {
     *             `GumInvocationContext *`, obtained using
     *             `gum_interceptor_get_current_invocation()`.
     */
-  @JSGlobal("Interceptor.replace")
-  @js.native
-  def replace(target: NativePointerValue, replacement: NativePointerValue): Unit = js.native
-  @JSGlobal("Interceptor.replace")
-  @js.native
-  def replace(target: NativePointerValue, replacement: NativePointerValue, data: NativePointerValue): Unit = js.native
+  @scala.inline
+  def replace(target: NativePointerValue, replacement: NativePointerValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(target.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def replace(target: NativePointerValue, replacement: NativePointerValue, data: NativePointerValue): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(target.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Reverts the previously replaced function at `target`.
     */
-  @JSGlobal("Interceptor.revert")
-  @js.native
-  def revert(target: NativePointerValue): Unit = js.native
+  @scala.inline
+  def revert(target: NativePointerValue): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revert")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

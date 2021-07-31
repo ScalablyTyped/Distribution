@@ -2,19 +2,17 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSubaccountResponse extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var label: String = js.native
+  var label: String
   
-  var short_key: String = js.native
+  var short_key: String
   
-  var subaccount_id: Double = js.native
+  var subaccount_id: Double
 }
 object CreateSubaccountResponse {
   

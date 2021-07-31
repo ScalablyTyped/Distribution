@@ -2,16 +2,14 @@ package typings.awsSdk.lakeformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnWildcard extends StObject {
   
   /**
     * Excludes column names. Any column with this name will be excluded.
     */
-  var ExcludedColumnNames: js.UndefOr[ColumnNames] = js.native
+  var ExcludedColumnNames: js.UndefOr[ColumnNames] = js.undefined
 }
 object ColumnWildcard {
   

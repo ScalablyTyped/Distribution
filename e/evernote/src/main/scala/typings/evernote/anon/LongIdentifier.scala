@@ -3,17 +3,15 @@ package typings.evernote.anon
 import typings.evernote.mod.Types.UserIdentityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongIdentifier extends StObject {
   
-  var longIdentifier: js.UndefOr[Double] = js.native
+  var longIdentifier: js.UndefOr[Double] = js.undefined
   
-  var stringIdentifier: js.UndefOr[String] = js.native
+  var stringIdentifier: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[UserIdentityType] = js.native
+  var `type`: js.UndefOr[UserIdentityType] = js.undefined
 }
 object LongIdentifier {
   

@@ -2,39 +2,37 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseApprovalPendingEvent extends StObject {
   
-  var approval: ReleaseApproval = js.native
+  var approval: ReleaseApproval
   
-  var approvalOptions: ApprovalOptions = js.native
+  var approvalOptions: ApprovalOptions
   
-  var completedApprovals: js.Array[ReleaseApproval] = js.native
+  var completedApprovals: js.Array[ReleaseApproval]
   
-  var definitionName: String = js.native
+  var definitionName: String
   
-  var deployment: Deployment = js.native
+  var deployment: Deployment
   
-  var environmentId: Double = js.native
+  var environmentId: Double
   
-  var environmentName: String = js.native
+  var environmentName: String
   
-  var environments: js.Array[ReleaseEnvironment] = js.native
+  var environments: js.Array[ReleaseEnvironment]
   
-  var isMultipleRankApproval: Boolean = js.native
+  var isMultipleRankApproval: Boolean
   
-  var pendingApprovals: js.Array[ReleaseApproval] = js.native
+  var pendingApprovals: js.Array[ReleaseApproval]
   
-  var releaseCreator: String = js.native
+  var releaseCreator: String
   
-  var releaseName: String = js.native
+  var releaseName: String
   
-  var title: String = js.native
+  var title: String
   
-  var webAccessUri: String = js.native
+  var webAccessUri: String
 }
 object ReleaseApprovalPendingEvent {
   

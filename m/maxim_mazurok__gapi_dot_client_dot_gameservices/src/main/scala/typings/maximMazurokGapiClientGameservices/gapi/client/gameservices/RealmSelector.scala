@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealmSelector extends StObject {
   
   /** List of realms to match. */
-  var realms: js.UndefOr[js.Array[String]] = js.native
+  var realms: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RealmSelector {
   

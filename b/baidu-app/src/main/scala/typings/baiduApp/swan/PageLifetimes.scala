@@ -2,18 +2,16 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 组件所在页面的生命周期声明对象，目前仅支持页面的show和hide两个生命周期
   */
-@js.native
 trait PageLifetimes extends StObject {
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object PageLifetimes {
   

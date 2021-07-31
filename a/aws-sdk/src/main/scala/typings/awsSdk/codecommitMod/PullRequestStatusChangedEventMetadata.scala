@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequestStatusChangedEventMetadata extends StObject {
   
   /**
     * The changed status of the pull request.
     */
-  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.native
+  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.undefined
 }
 object PullRequestStatusChangedEventMetadata {
   

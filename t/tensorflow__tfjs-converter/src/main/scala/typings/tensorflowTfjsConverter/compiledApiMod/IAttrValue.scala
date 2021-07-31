@@ -3,41 +3,39 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.tensorflowTfjsConverter.compiledApiMod.AttrValue.IListValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAttrValue extends StObject {
   
   /** AttrValue b */
-  var b: js.UndefOr[Boolean | Null] = js.native
+  var b: js.UndefOr[Boolean | Null] = js.undefined
   
   /** AttrValue f */
-  var f: js.UndefOr[Double | Null] = js.native
+  var f: js.UndefOr[Double | Null] = js.undefined
   
   /** AttrValue func */
-  var func: js.UndefOr[INameAttrList | Null] = js.native
+  var func: js.UndefOr[INameAttrList | Null] = js.undefined
   
   /** AttrValue i */
-  var i: js.UndefOr[Double | String | Null] = js.native
+  var i: js.UndefOr[Double | String | Null] = js.undefined
   
   /** AttrValue list */
-  var list: js.UndefOr[IListValue | Null] = js.native
+  var list: js.UndefOr[IListValue | Null] = js.undefined
   
   /** AttrValue placeholder */
-  var placeholder: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String | Null] = js.undefined
   
   /** AttrValue s */
-  var s: js.UndefOr[String | Null] = js.native
+  var s: js.UndefOr[String | Null] = js.undefined
   
   /** AttrValue shape */
-  var shape: js.UndefOr[ITensorShape | Null] = js.native
+  var shape: js.UndefOr[ITensorShape | Null] = js.undefined
   
   /** AttrValue tensor */
-  var tensor: js.UndefOr[ITensor | Null] = js.native
+  var tensor: js.UndefOr[ITensor | Null] = js.undefined
   
   /** AttrValue type */
-  var `type`: js.UndefOr[DataType | Null] = js.native
+  var `type`: js.UndefOr[DataType | Null] = js.undefined
 }
 object IAttrValue {
   

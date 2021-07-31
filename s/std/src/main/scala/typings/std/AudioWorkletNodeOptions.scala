@@ -2,21 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AudioWorkletNodeOptions extends AudioNodeOptions {
+trait AudioWorkletNodeOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var numberOfInputs: js.UndefOr[Double] = js.native
+  var numberOfInputs: js.UndefOr[Double] = js.undefined
   
-  var numberOfOutputs: js.UndefOr[Double] = js.native
+  var numberOfOutputs: js.UndefOr[Double] = js.undefined
   
-  var outputChannelCount: js.UndefOr[js.Array[Double]] = js.native
+  var outputChannelCount: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var parameterData: js.UndefOr[Record[java.lang.String, Double]] = js.native
+  var parameterData: js.UndefOr[Record[java.lang.String, Double]] = js.undefined
   
-  var processorOptions: js.UndefOr[js.Any] = js.native
+  var processorOptions: js.UndefOr[js.Any] = js.undefined
 }
 object AudioWorkletNodeOptions {
   

@@ -2,13 +2,11 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for manually scaling a model.
   */
-@js.native
 trait SchemaGoogleCloudMlV1ManualScaling extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGoogleCloudMlV1ManualScaling extends StObject {
     * operating this model will be proportional to `nodes` * number of hours
     * since last billing cycle plus the cost for each prediction performed.
     */
-  var nodes: js.UndefOr[Double] = js.native
+  var nodes: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudMlV1ManualScaling {
   

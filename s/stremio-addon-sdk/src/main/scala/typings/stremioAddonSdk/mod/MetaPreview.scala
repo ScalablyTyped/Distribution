@@ -5,7 +5,6 @@ import typings.stremioAddonSdk.stremioAddonSdkStrings.regular
 import typings.stremioAddonSdk.stremioAddonSdkStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Catalogs are displayed on the Stremio's Board, Discover and Search.
   */
-@js.native
 trait MetaPreview extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait MetaPreview extends StObject {
     *
     * URL to PNG, max file size 500kb.
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * A few sentences describing your content.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Universal identifier.
@@ -36,7 +34,7 @@ trait MetaPreview extends StObject {
     *
     * Example: 'yt_id:UCrDkAvwZum-UTjHmzDI2iIw'
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The logo shown on the stremio detail page.
@@ -45,12 +43,12 @@ trait MetaPreview extends StObject {
     *
     * URL to PNG.
     */
-  var logo: js.UndefOr[String] = js.native
+  var logo: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the content.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * URL to PNG of poster.
@@ -60,19 +58,19 @@ trait MetaPreview extends StObject {
     * You can use any resolution, as long as the file size is below 100kb.
     * Below 50kb is recommended
     */
-  var poster: js.UndefOr[String] = js.native
+  var poster: js.UndefOr[String] = js.undefined
   
   /**
     * Poster can be square (1:1 aspect) or regular (1:0.675) or landscape (1:1.77).
     *
     * Defaults to 'regular'.
     */
-  var posterShape: js.UndefOr[square | regular | landscape] = js.native
+  var posterShape: js.UndefOr[square | regular | landscape] = js.undefined
   
   /**
     * Type of the content.
     */
-  var `type`: ContentType = js.native
+  var `type`: ContentType
 }
 object MetaPreview {
   

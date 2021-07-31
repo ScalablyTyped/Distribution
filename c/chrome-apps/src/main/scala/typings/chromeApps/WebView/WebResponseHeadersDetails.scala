@@ -5,17 +5,17 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebResponseHeadersDetails extends WebResponseDetails {
+trait WebResponseHeadersDetails
+  extends StObject
+     with WebResponseDetails {
   
   /** standard HTTP method i.e. GET, POST, PUT, etc. */
-  var method: String = js.native
+  var method: String
   
   /** Optional. The HTTP response headers that have been received with this response. */
-  var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var responseHeaders: js.UndefOr[js.Array[HttpHeader]] = js.undefined
 }
 object WebResponseHeadersDetails {
   

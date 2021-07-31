@@ -12,10 +12,13 @@ import typings.amplitudeJs.anon.Carrier
 import typings.amplitudeJs.anon.Reason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("amplitude-js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("amplitude-js", "AmplitudeClient")
   @js.native
@@ -34,26 +37,8 @@ object mod {
     def identify(identify_obj: Identify_, opt_callback: Callback): Unit = js.native
     
     def init(apiKey: String): Unit = js.native
-    def init(
-      apiKey: String,
-      userId: js.UndefOr[scala.Nothing],
-      config: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* client */ this.type, Unit]
-    ): Unit = js.native
-    def init(apiKey: String, userId: js.UndefOr[scala.Nothing], config: Config): Unit = js.native
-    def init(
-      apiKey: String,
-      userId: js.UndefOr[scala.Nothing],
-      config: Config,
-      callback: js.Function1[/* client */ this.type, Unit]
-    ): Unit = js.native
     def init(apiKey: String, userId: String): Unit = js.native
-    def init(
-      apiKey: String,
-      userId: String,
-      config: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* client */ this.type, Unit]
-    ): Unit = js.native
+    def init(apiKey: String, userId: String, config: Unit, callback: js.Function1[/* client */ this.type, Unit]): Unit = js.native
     def init(apiKey: String, userId: String, config: Config): Unit = js.native
     def init(
       apiKey: String,
@@ -61,41 +46,34 @@ object mod {
       config: Config,
       callback: js.Function1[/* client */ this.type, Unit]
     ): Unit = js.native
+    def init(apiKey: String, userId: Unit, config: Unit, callback: js.Function1[/* client */ this.type, Unit]): Unit = js.native
+    def init(apiKey: String, userId: Unit, config: Config): Unit = js.native
+    def init(apiKey: String, userId: Unit, config: Config, callback: js.Function1[/* client */ this.type, Unit]): Unit = js.native
     
     def isNewSession(): Boolean = js.native
     
     def logEvent(event: String): LogReturn = js.native
-    def logEvent(event: String, data: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
     def logEvent(event: String, data: js.Any): LogReturn = js.native
     def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = js.native
+    def logEvent(event: String, data: Unit, callback: Callback): LogReturn = js.native
     
     def logEventWithGroups(event: String): LogReturn = js.native
-    def logEventWithGroups(
-      event: String,
-      data: js.UndefOr[scala.Nothing],
-      groups: js.UndefOr[scala.Nothing],
-      callback: Callback
-    ): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any, callback: Callback): LogReturn = js.native
     def logEventWithGroups(event: String, data: js.Any): LogReturn = js.native
-    def logEventWithGroups(event: String, data: js.Any, groups: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
     def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = js.native
     def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = js.native
+    def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = js.native
     
     def logEventWithTimestamp(event: String): LogReturn = js.native
-    def logEventWithTimestamp(
-      event: String,
-      data: js.UndefOr[scala.Nothing],
-      timestamp: js.UndefOr[scala.Nothing],
-      callback: Callback
-    ): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double, callback: Callback): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: js.Any): LogReturn = js.native
-    def logEventWithTimestamp(event: String, data: js.Any, timestamp: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = js.native
     def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = js.native
+    def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = js.native
     
     def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = js.native
     
@@ -135,27 +113,27 @@ object mod {
     def add(key: String, value: Double): Identify_ = js.native
     
     def append(key: String, value: String): Identify_ = js.native
-    def append(key: String, value: js.Array[_]): Identify_ = js.native
+    def append(key: String, value: js.Array[js.Any]): Identify_ = js.native
     def append(key: String, value: js.Object): Identify_ = js.native
     /** Append a value or values to a user property */
     def append(key: String, value: Double): Identify_ = js.native
     
     def prepend(key: String, value: String): Identify_ = js.native
-    def prepend(key: String, value: js.Array[_]): Identify_ = js.native
+    def prepend(key: String, value: js.Array[js.Any]): Identify_ = js.native
     def prepend(key: String, value: js.Object): Identify_ = js.native
     /** Prepend a value or values to a user property */
     def prepend(key: String, value: Boolean): Identify_ = js.native
     def prepend(key: String, value: Double): Identify_ = js.native
     
     def set(key: String, value: String): Identify_ = js.native
-    def set(key: String, value: js.Array[_]): Identify_ = js.native
+    def set(key: String, value: js.Array[js.Any]): Identify_ = js.native
     def set(key: String, value: js.Object): Identify_ = js.native
     /** Sets the value of a given user property */
     def set(key: String, value: Boolean): Identify_ = js.native
     def set(key: String, value: Double): Identify_ = js.native
     
     def setOnce(key: String, value: String): Identify_ = js.native
-    def setOnce(key: String, value: js.Array[_]): Identify_ = js.native
+    def setOnce(key: String, value: js.Array[js.Any]): Identify_ = js.native
     def setOnce(key: String, value: js.Object): Identify_ = js.native
     /** Sets the value of a given user property only once */
     def setOnce(key: String, value: Boolean): Identify_ = js.native
@@ -184,203 +162,145 @@ object mod {
   @js.native
   val __VERSION__ : String = js.native
   
-  @JSImport("amplitude-js", "clearUserProperties")
-  @js.native
-  def clearUserProperties(): Unit = js.native
+  @scala.inline
+  def clearUserProperties(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearUserProperties")().asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "getInstance")
-  @js.native
-  def getInstance(): AmplitudeClient = js.native
-  @JSImport("amplitude-js", "getInstance")
-  @js.native
-  def getInstance(instanceName: String): AmplitudeClient = js.native
+  @scala.inline
+  def getInstance(): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[AmplitudeClient]
+  @scala.inline
+  def getInstance(instanceName: String): AmplitudeClient = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(instanceName.asInstanceOf[js.Any]).asInstanceOf[AmplitudeClient]
   
-  @JSImport("amplitude-js", "getSessionId")
-  @js.native
-  def getSessionId(): Double = js.native
+  @scala.inline
+  def getSessionId(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSessionId")().asInstanceOf[Double]
   
-  @JSImport("amplitude-js", "identify")
-  @js.native
-  def identify(identify: Identify_): Unit = js.native
-  @JSImport("amplitude-js", "identify")
-  @js.native
-  def identify(identify: Identify_, callback: Callback): Unit = js.native
+  @scala.inline
+  def identify(identify: Identify_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def identify(identify: Identify_, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("identify")(identify.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(apiKey: String): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(
-    apiKey: String,
-    userId: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* client */ AmplitudeClient, Unit]
-  ): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(apiKey: String, userId: js.UndefOr[scala.Nothing], options: Config): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(
-    apiKey: String,
-    userId: js.UndefOr[scala.Nothing],
-    options: Config,
-    callback: js.Function1[/* client */ AmplitudeClient, Unit]
-  ): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(apiKey: String, userId: String): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
+  @scala.inline
+  def init(apiKey: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def init(apiKey: String, userId: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def init(
     apiKey: String,
     userId: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
-  ): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
-  def init(apiKey: String, userId: String, options: Config): Unit = js.native
-  @JSImport("amplitude-js", "init")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(apiKey: String, userId: String, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def init(
     apiKey: String,
     userId: String,
     options: Config,
     callback: js.Function1[/* client */ AmplitudeClient, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(
+    apiKey: String,
+    userId: Unit,
+    options: Unit,
+    callback: js.Function1[/* client */ AmplitudeClient, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(apiKey: String, userId: Unit, options: Config): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def init(
+    apiKey: String,
+    userId: Unit,
+    options: Config,
+    callback: js.Function1[/* client */ AmplitudeClient, Unit]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], userId.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "isNewSession")
-  @js.native
-  def isNewSession(): Boolean = js.native
+  @scala.inline
+  def isNewSession(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNewSession")().asInstanceOf[Boolean]
   
-  @JSImport("amplitude-js", "logEvent")
-  @js.native
-  def logEvent(event: String): LogReturn = js.native
-  @JSImport("amplitude-js", "logEvent")
-  @js.native
-  def logEvent(event: String, data: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
-  @JSImport("amplitude-js", "logEvent")
-  @js.native
-  def logEvent(event: String, data: js.Any): LogReturn = js.native
-  @JSImport("amplitude-js", "logEvent")
-  @js.native
-  def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = js.native
+  @scala.inline
+  def logEvent(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEvent(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEvent(event: String, data: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEvent(event: String, data: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEvent")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(
-    event: String,
-    data: js.UndefOr[scala.Nothing],
-    groups: js.UndefOr[scala.Nothing],
-    callback: Callback
-  ): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.UndefOr[scala.Nothing], groups: js.Any, callback: Callback): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.Any): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.Any, groups: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithGroups")
-  @js.native
-  def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = js.native
+  @scala.inline
+  def logEventWithGroups(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: js.Any, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: js.Any, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: js.Any, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: Unit, groups: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: Unit, groups: js.Any, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithGroups(event: String, data: Unit, groups: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithGroups")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], groups.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(
-    event: String,
-    data: js.UndefOr[scala.Nothing],
-    timestamp: js.UndefOr[scala.Nothing],
-    callback: Callback
-  ): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.UndefOr[scala.Nothing], timestamp: Double, callback: Callback): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.Any): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: js.UndefOr[scala.Nothing], callback: Callback): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = js.native
-  @JSImport("amplitude-js", "logEventWithTimestamp")
-  @js.native
-  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = js.native
+  @scala.inline
+  def logEventWithTimestamp(event: String): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: js.Any): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: js.Any, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: Unit, timestamp: Double): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: Unit, timestamp: Double, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
+  @scala.inline
+  def logEventWithTimestamp(event: String, data: Unit, timestamp: Unit, callback: Callback): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logEventWithTimestamp")(event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @JSImport("amplitude-js", "logRevenue")
-  @js.native
-  def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = js.native
+  @scala.inline
+  def logRevenue(pric: Double, quantity: Double, product: String): LogReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("logRevenue")(pric.asInstanceOf[js.Any], quantity.asInstanceOf[js.Any], product.asInstanceOf[js.Any])).asInstanceOf[LogReturn]
   
-  @JSImport("amplitude-js", "logRevenueV2")
-  @js.native
-  def logRevenueV2(revenue_obj: Revenue): LogReturn = js.native
+  @scala.inline
+  def logRevenueV2(revenue_obj: Revenue): LogReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("logRevenueV2")(revenue_obj.asInstanceOf[js.Any]).asInstanceOf[LogReturn]
   
   @JSImport("amplitude-js", "options")
   @js.native
   val options: Config = js.native
   
-  @JSImport("amplitude-js", "regenerateDeviceId")
-  @js.native
-  def regenerateDeviceId(): Unit = js.native
+  @scala.inline
+  def regenerateDeviceId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("regenerateDeviceId")().asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setDeviceId")
-  @js.native
-  def setDeviceId(id: String): Unit = js.native
+  @scala.inline
+  def setDeviceId(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDeviceId")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setDomain")
-  @js.native
-  def setDomain(domain: String): Unit = js.native
+  @scala.inline
+  def setDomain(domain: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDomain")(domain.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setGlobalUserProperties")
-  @js.native
-  def setGlobalUserProperties(properties: js.Any): Unit = js.native
+  @scala.inline
+  def setGlobalUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setGroup")
-  @js.native
-  def setGroup(groupType: String, groupName: String): Unit = js.native
-  @JSImport("amplitude-js", "setGroup")
-  @js.native
-  def setGroup(groupType: String, groupName: js.Array[String]): Unit = js.native
+  @scala.inline
+  def setGroup(groupType: String, groupName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setGroup(groupType: String, groupName: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setGroup")(groupType.asInstanceOf[js.Any], groupName.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setOptOut")
-  @js.native
-  def setOptOut(optOut: Boolean): Unit = js.native
+  @scala.inline
+  def setOptOut(optOut: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOptOut")(optOut.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setUserId")
-  @js.native
-  def setUserId(): Unit = js.native
-  @JSImport("amplitude-js", "setUserId")
-  @js.native
-  def setUserId(userId: String): Unit = js.native
+  @scala.inline
+  def setUserId(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")().asInstanceOf[Unit]
+  @scala.inline
+  def setUserId(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserId")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setUserProperties")
-  @js.native
-  def setUserProperties(properties: js.Any): Unit = js.native
+  @scala.inline
+  def setUserProperties(properties: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUserProperties")(properties.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("amplitude-js", "setVersionName")
-  @js.native
-  def setVersionName(version: String): Unit = js.native
+  @scala.inline
+  def setVersionName(version: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setVersionName")(version.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type Callback = js.Function3[
     /* responseCode */ Double, 
@@ -389,76 +309,75 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Config extends StObject {
     
-    var apiEndpoint: js.UndefOr[String] = js.native
+    var apiEndpoint: js.UndefOr[String] = js.undefined
     
-    var batchEvents: js.UndefOr[Boolean] = js.native
+    var batchEvents: js.UndefOr[Boolean] = js.undefined
     
-    var cookieExpiration: js.UndefOr[Double] = js.native
+    var cookieExpiration: js.UndefOr[Double] = js.undefined
     
-    var cookieForceUpgrade: js.UndefOr[Boolean] = js.native
+    var cookieForceUpgrade: js.UndefOr[Boolean] = js.undefined
     
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
     
-    var deferInitialization: js.UndefOr[Boolean] = js.native
+    var deferInitialization: js.UndefOr[Boolean] = js.undefined
     
-    var deviceId: js.UndefOr[String] = js.native
+    var deviceId: js.UndefOr[String] = js.undefined
     
-    var deviceIdFromUrlParam: js.UndefOr[Boolean] = js.native
+    var deviceIdFromUrlParam: js.UndefOr[Boolean] = js.undefined
     
-    var disableCookies: js.UndefOr[Boolean] = js.native
+    var disableCookies: js.UndefOr[Boolean] = js.undefined
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var eventUploadPeriodMillis: js.UndefOr[Double] = js.native
+    var eventUploadPeriodMillis: js.UndefOr[Double] = js.undefined
     
-    var eventUploadThreshold: js.UndefOr[Double] = js.native
+    var eventUploadThreshold: js.UndefOr[Double] = js.undefined
     
-    var forceHttps: js.UndefOr[Boolean] = js.native
+    var forceHttps: js.UndefOr[Boolean] = js.undefined
     
-    var includeGclid: js.UndefOr[Boolean] = js.native
+    var includeGclid: js.UndefOr[Boolean] = js.undefined
     
-    var includeReferrer: js.UndefOr[Boolean] = js.native
+    var includeReferrer: js.UndefOr[Boolean] = js.undefined
     
-    var includeUtm: js.UndefOr[Boolean] = js.native
+    var includeUtm: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.native
+    var logLevel: js.UndefOr[DISABLE | ERROR | WARN | INFO] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Unit]] = js.native
+    var onError: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var optOut: js.UndefOr[Boolean] = js.native
+    var optOut: js.UndefOr[Boolean] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var sameSiteCookie: js.UndefOr[Lax | Strict | None] = js.native
+    var sameSiteCookie: js.UndefOr[Lax | Strict | None] = js.undefined
     
-    var saveEvents: js.UndefOr[Boolean] = js.native
+    var saveEvents: js.UndefOr[Boolean] = js.undefined
     
-    var saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.native
+    var saveParamsReferrerOncePerSession: js.UndefOr[Boolean] = js.undefined
     
-    var savedMaxCount: js.UndefOr[Double] = js.native
+    var savedMaxCount: js.UndefOr[Double] = js.undefined
     
-    var secureCookie: js.UndefOr[Boolean] = js.native
+    var secureCookie: js.UndefOr[Boolean] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var trackingOptions: js.UndefOr[Carrier] = js.native
+    var trackingOptions: js.UndefOr[Carrier] = js.undefined
     
-    var unsentIdentifyKey: js.UndefOr[String] = js.native
+    var unsentIdentifyKey: js.UndefOr[String] = js.undefined
     
-    var unsentKey: js.UndefOr[String] = js.native
+    var unsentKey: js.UndefOr[String] = js.undefined
     
-    var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.native
+    var unsetParamsReferrerOnNewSession: js.UndefOr[Boolean] = js.undefined
     
-    var uploadBatchSize: js.UndefOr[Double] = js.native
+    var uploadBatchSize: js.UndefOr[Double] = js.undefined
     
-    var useNativeDeviceInfo: js.UndefOr[Boolean] = js.native
+    var useNativeDeviceInfo: js.UndefOr[Boolean] = js.undefined
     
-    var userId: js.UndefOr[String] = js.native
+    var userId: js.UndefOr[String] = js.undefined
   }
   object Config {
     

@@ -2,46 +2,44 @@ package typings.googleapis.cloudbuildV1Mod.cloudbuildV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GitHubEventsConfig describes the configuration of a trigger that creates a
   * build whenever a GitHub event is received.  This message is experimental.
   */
-@js.native
 trait SchemaGitHubEventsConfig extends StObject {
   
   /**
     * Output only. Indicates that a build was generated from a check suite
     * event.
     */
-  var checkSuite: js.UndefOr[SchemaCheckSuiteFilter] = js.native
+  var checkSuite: js.UndefOr[SchemaCheckSuiteFilter] = js.undefined
   
   /**
     * The installationID that emmits the GitHub event.
     */
-  var installationId: js.UndefOr[String] = js.native
+  var installationId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the repository.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Owner of the repository.
     */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /**
     * filter to match changes in pull requests.
     */
-  var pullRequest: js.UndefOr[SchemaPullRequestFilter] = js.native
+  var pullRequest: js.UndefOr[SchemaPullRequestFilter] = js.undefined
   
   /**
     * filter to match changes in refs like branches, tags.
     */
-  var push: js.UndefOr[SchemaPushFilter] = js.native
+  var push: js.UndefOr[SchemaPushFilter] = js.undefined
 }
 object SchemaGitHubEventsConfig {
   

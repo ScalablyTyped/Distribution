@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSessionsResponse extends StObject {
   
   /**
     * The token for the next set of items to return. (You received this token from a previous call.)
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
   
   /**
     * A list of sessions meeting the request parameters.
     */
-  var Sessions: js.UndefOr[SessionList] = js.native
+  var Sessions: js.UndefOr[SessionList] = js.undefined
 }
 object DescribeSessionsResponse {
   

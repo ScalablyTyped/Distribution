@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** KeywordResult. */
-@js.native
 trait KeywordResult extends StObject {
   
   /** A confidence score for the keyword match in the range of 0.0 to 1.0. */
-  var confidence: Double = js.native
+  var confidence: Double
   
   /** The end time in seconds of the keyword match. */
-  var end_time: Double = js.native
+  var end_time: Double
   
   /** A specified keyword normalized to the spoken phrase that matched in the audio input. */
-  var normalized_text: String = js.native
+  var normalized_text: String
   
   /** The start time in seconds of the keyword match. */
-  var start_time: Double = js.native
+  var start_time: Double
 }
 object KeywordResult {
   

@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMarketplacenotesList extends StandardParameters {
+trait ParamsResourceMarketplacenotesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Query string to retrieve specific notes. To search the text contents of
     * notes, please use syntax like "WHERE note.note = "foo" or "WHERE
     * note.note LIKE "%bar%"
     */
-  var pqlQuery: js.UndefOr[String] = js.native
+  var pqlQuery: js.UndefOr[String] = js.undefined
   
   /**
     * The proposalId to get notes for. To search across all proposals specify
     * order_id = '-' as part of the URL.
     */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceMarketplacenotesList {
   

@@ -5,36 +5,34 @@ import typings.awsSdkSmithyClient.awsSdkSmithyClientStrings.server
 import typings.awsSdkSmithyClient.retryableTraitMod.RetryableTrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceptionMod {
   
-  @js.native
   trait SmithyException extends StObject {
     
     /**
       * Whether the client or server are at fault.
       */
     @JSName("$fault")
-    val $fault: client | server = js.native
+    val $fault: client | server
     
     /**
       * Indicates that an error MAY be retried by the client.
       */
     @JSName("$retryable")
-    val $retryable: js.UndefOr[RetryableTrait] = js.native
+    val $retryable: js.UndefOr[RetryableTrait] = js.undefined
     
     /**
       * The service that encountered the exception.
       */
     @JSName("$service")
-    val $service: js.UndefOr[String] = js.native
+    val $service: js.UndefOr[String] = js.undefined
     
     /**
       * The shape ID name of the exception.
       */
-    val name: String = js.native
+    val name: String
   }
   object SmithyException {
     

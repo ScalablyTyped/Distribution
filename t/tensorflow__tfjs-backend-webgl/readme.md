@@ -10,9 +10,9 @@ GPU accelerated WebGL backend for TensorFlow.js
 | ------------------ | :-------------: |
 | Full name          | @tensorflow/tfjs-backend-webgl |
 | Keywords           | - |
-| # releases         | 9 |
-| # dependents       | 1 |
-| # downloads        | 93537 |
+| # releases         | 24 |
+| # dependents       | 9 |
+| # downloads        | 467827 |
 | # stars            | 0 |
 
 ## Links

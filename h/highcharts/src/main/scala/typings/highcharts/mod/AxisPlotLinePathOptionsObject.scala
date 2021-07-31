@@ -2,51 +2,49 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisPlotLinePathOptionsObject extends StObject {
   
   /**
     * Used in Highstock. When `true`, plot paths (crosshair, plotLines,
     * gridLines) will be rendered on all axes when defined on the first axis.
     */
-  var acrossPanes: js.UndefOr[Boolean] = js.native
+  var acrossPanes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `false`, the function will return null when it falls outside the axis
     * bounds. If `true`, the function will return a path aligned to the plot
     * area sides if it falls outside. If `pass`, it will return a path outside.
     */
-  var force: js.UndefOr[Boolean | String] = js.native
+  var force: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * Line width used for calculation crisp line coordinates. Defaults to 1.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Use old coordinates (for resizing and rescaling). If not set, defaults to
     * `false`.
     */
-  var old: js.UndefOr[Boolean] = js.native
+  var old: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Used in Polar axes. Reverse the positions for concatenation of polygonal
     * plot bands
     */
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If given, return the plot line path of a pixel position on the axis.
     */
-  var translatedValue: js.UndefOr[Double] = js.native
+  var translatedValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Axis value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object AxisPlotLinePathOptionsObject {
   

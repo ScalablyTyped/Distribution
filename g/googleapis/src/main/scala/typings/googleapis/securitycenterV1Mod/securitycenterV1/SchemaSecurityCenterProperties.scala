@@ -2,14 +2,12 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud SCC managed properties. These properties are managed by Cloud SCC and
   * cannot be modified by the user.
   */
-@js.native
 trait SchemaSecurityCenterProperties extends StObject {
   
   /**
@@ -17,31 +15,31 @@ trait SchemaSecurityCenterProperties extends StObject {
     * field is immutable after create time. See:
     * https://cloud.google.com/apis/design/resource_names#full_resource_name
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Owners of the Google Cloud resource.
     */
-  var resourceOwners: js.UndefOr[js.Array[String]] = js.native
+  var resourceOwners: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The full resource name of the immediate parent of the resource. See:
     * https://cloud.google.com/apis/design/resource_names#full_resource_name
     */
-  var resourceParent: js.UndefOr[String] = js.native
+  var resourceParent: js.UndefOr[String] = js.undefined
   
   /**
     * The full resource name of the project the resource belongs to. See:
     * https://cloud.google.com/apis/design/resource_names#full_resource_name
     */
-  var resourceProject: js.UndefOr[String] = js.native
+  var resourceProject: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the GCP resource. Examples include: APPLICATION, PROJECT, and
     * ORGANIZATION. This is a case insensitive field defined by Cloud SCC
     * and/or the producer of the resource and is immutable after create time.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object SchemaSecurityCenterProperties {
   

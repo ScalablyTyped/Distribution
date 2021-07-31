@@ -2,51 +2,49 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleRunRequest extends StObject {
   
   /**
     * The ARN of an application package to run tests against, created with CreateUpload. See ListUploads.
     */
-  var appArn: js.UndefOr[AmazonResourceName] = js.native
+  var appArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * Information about the settings for the run to be scheduled.
     */
-  var configuration: js.UndefOr[ScheduleRunConfiguration] = js.native
+  var configuration: js.UndefOr[ScheduleRunConfiguration] = js.undefined
   
   /**
     * The ARN of the device pool for the run to be scheduled.
     */
-  var devicePoolArn: js.UndefOr[AmazonResourceName] = js.native
+  var devicePoolArn: js.UndefOr[AmazonResourceName] = js.undefined
   
   /**
     * The filter criteria used to dynamically select a set of devices for a test run and the maximum number of devices to be included in the run. Either  devicePoolArn  or  deviceSelectionConfiguration  is required in a request.
     */
-  var deviceSelectionConfiguration: js.UndefOr[DeviceSelectionConfiguration] = js.native
+  var deviceSelectionConfiguration: js.UndefOr[DeviceSelectionConfiguration] = js.undefined
   
   /**
     * Specifies configuration information about a test run, such as the execution timeout (in minutes).
     */
-  var executionConfiguration: js.UndefOr[ExecutionConfiguration] = js.native
+  var executionConfiguration: js.UndefOr[ExecutionConfiguration] = js.undefined
   
   /**
     * The name for the run to be scheduled.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
   
   /**
     * The ARN of the project for the run to be scheduled.
     */
-  var projectArn: AmazonResourceName = js.native
+  var projectArn: AmazonResourceName
   
   /**
     * Information about the test for the run to be scheduled.
     */
-  var test: ScheduleRunTest = js.native
+  var test: ScheduleRunTest
 }
 object ScheduleRunRequest {
   

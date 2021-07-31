@@ -3,7 +3,6 @@ package typings.nodeJose
 import typings.nodeJose.mod.JWK.KeyUse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeJoseStrings {
@@ -29,12 +28,16 @@ object nodeJoseStrings {
   def compact: compact = "compact".asInstanceOf[compact]
   
   @js.native
-  sealed trait desc extends KeyUse
+  sealed trait desc
+    extends StObject
+       with KeyUse
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait enc extends KeyUse
+  sealed trait enc
+    extends StObject
+       with KeyUse
   @scala.inline
   def enc: enc = "enc".asInstanceOf[enc]
   
@@ -79,7 +82,9 @@ object nodeJoseStrings {
   def public: public = "public".asInstanceOf[public]
   
   @js.native
-  sealed trait sig extends KeyUse
+  sealed trait sig
+    extends StObject
+       with KeyUse
   @scala.inline
   def sig: sig = "sig".asInstanceOf[sig]
   

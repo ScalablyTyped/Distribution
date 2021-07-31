@@ -2,87 +2,86 @@ package typings.senchaTouch.Ext.form
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISpinner
-  extends typings.senchaTouch.Ext.field.INumber {
+  extends StObject
+     with typings.senchaTouch.Ext.field.INumber {
   
   /** [Config Option] (Boolean) */
-  var accelerateOnTapHold: js.UndefOr[Boolean] = js.native
+  var accelerateOnTapHold: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var cycle: js.UndefOr[Boolean] = js.native
+  var cycle: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var defaultValue: js.UndefOr[Double] = js.native
+  var defaultValue: js.UndefOr[Double] = js.undefined
   
   /** [Method] Returns the value of accelerateOnTapHold
     * @returns Boolean
     */
-  var getAccelerateOnTapHold: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getAccelerateOnTapHold: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of cls
     * @returns String
     */
   @JSName("getCls")
-  var getCls_ISpinner: js.UndefOr[js.Function0[String]] = js.native
+  var getCls_ISpinner: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of cycle
     * @returns Boolean
     */
-  var getCycle: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getCycle: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of defaultValue
     * @returns Number
     */
-  var getDefaultValue: js.UndefOr[js.Function0[Double]] = js.native
+  var getDefaultValue: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of groupButtons
     * @returns Boolean
     */
-  var getGroupButtons: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getGroupButtons: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var groupButtons: js.UndefOr[Boolean] = js.native
+  var groupButtons: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var increment: js.UndefOr[String] = js.native
+  var increment: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var incrementValue: js.UndefOr[String] = js.native
+  var incrementValue: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of accelerateOnTapHold
     * @param accelerateOnTapHold Boolean The new value.
     */
-  var setAccelerateOnTapHold: js.UndefOr[js.Function1[/* accelerateOnTapHold */ js.UndefOr[Boolean], Unit]] = js.native
+  var setAccelerateOnTapHold: js.UndefOr[js.Function1[/* accelerateOnTapHold */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
   @JSName("setCls")
-  var setCls_ISpinner: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.native
+  var setCls_ISpinner: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of cycle
     * @param cycle Boolean The new value.
     */
-  var setCycle: js.UndefOr[js.Function1[/* cycle */ js.UndefOr[Boolean], Unit]] = js.native
+  var setCycle: js.UndefOr[js.Function1[/* cycle */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of defaultValue
     * @param defaultValue Number The new value.
     */
-  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[Double], Unit]] = js.native
+  var setDefaultValue: js.UndefOr[js.Function1[/* defaultValue */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of groupButtons
     * @param groupButtons Boolean The new value.
     */
-  var setGroupButtons: js.UndefOr[js.Function1[/* groupButtons */ js.UndefOr[Boolean], Unit]] = js.native
+  var setGroupButtons: js.UndefOr[js.Function1[/* groupButtons */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Updates the component configuration
     * @param newComponent Object
     */
-  var updateComponent: js.UndefOr[js.Function1[/* newComponent */ js.UndefOr[js.Any], Unit]] = js.native
+  var updateComponent: js.UndefOr[js.Function1[/* newComponent */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object ISpinner {
   

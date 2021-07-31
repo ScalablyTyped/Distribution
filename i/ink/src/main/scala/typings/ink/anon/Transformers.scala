@@ -3,13 +3,11 @@ package typings.ink.anon
 import typings.ink.renderNodeToOutputMod.OutputTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transformers extends StObject {
   
-  var transformers: js.Array[OutputTransformer] = js.native
+  var transformers: js.Array[OutputTransformer]
 }
 object Transformers {
   

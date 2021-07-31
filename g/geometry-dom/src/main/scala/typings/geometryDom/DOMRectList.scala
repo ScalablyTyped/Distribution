@@ -3,23 +3,21 @@ package typings.geometryDom
 import typings.geometryDom.GeometryDom.DOMRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMRectList extends StObject {
   
   /**
     * the DOMRect object at index must be returned.
     * @param index
     */
-  def item(index: Double): DOMRect = js.native
+  def item(index: Double): DOMRect
   
   /**
     * total number of DOMRect objects associated with the object.
     * readonly unsigned long length
     */
-  var length: Double = js.native
+  var length: Double
 }
 object DOMRectList {
   

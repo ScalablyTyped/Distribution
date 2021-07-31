@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instance truncate log request.
   */
-@js.native
 trait SchemaInstancesTruncateLogRequest extends StObject {
   
   /**
     * Contains details about the truncate log operation.
     */
-  var truncateLogContext: js.UndefOr[SchemaTruncateLogContext] = js.native
+  var truncateLogContext: js.UndefOr[SchemaTruncateLogContext] = js.undefined
 }
 object SchemaInstancesTruncateLogRequest {
   

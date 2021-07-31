@@ -3,51 +3,49 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiAtlasFileConfig extends StObject {
   
   /**
     * The default file extension to use for the atlas json if no url is provided.
     */
-  var atlasExtension: js.UndefOr[String] = js.native
+  var atlasExtension: js.UndefOr[String] = js.undefined
   
   /**
     * The absolute or relative URL to load the multi atlas json file from. Or, a well formed JSON object.
     */
-  var atlasURL: js.UndefOr[String] = js.native
+  var atlasURL: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for the atlas json file.
     */
-  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var atlasXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
   /**
     * Optional Base URL to use when loading the textures defined in the atlas data.
     */
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Texture Manager.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Optional path to use when loading the textures defined in the atlas data.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Extra XHR Settings specifically for the texture files.
     */
-  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var textureXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
   /**
     * An alias for 'atlasURL'. If given, it overrides anything set in 'atlasURL'.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object MultiAtlasFileConfig {
   

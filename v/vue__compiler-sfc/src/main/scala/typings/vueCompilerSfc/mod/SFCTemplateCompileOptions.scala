@@ -4,40 +4,38 @@ import typings.sourceMap.mod.RawSourceMap
 import typings.vueCompilerCore.mod.CompilerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCTemplateCompileOptions extends StObject {
   
-  var compiler: js.UndefOr[TemplateCompiler] = js.native
+  var compiler: js.UndefOr[TemplateCompiler] = js.undefined
   
-  var compilerOptions: js.UndefOr[CompilerOptions] = js.native
+  var compilerOptions: js.UndefOr[CompilerOptions] = js.undefined
   
-  var filename: String = js.native
+  var filename: String
   
-  var inMap: js.UndefOr[RawSourceMap] = js.native
+  var inMap: js.UndefOr[RawSourceMap] = js.undefined
   
   /**
     * In some cases, compiler-sfc may not be inside the project root (e.g. when
     * linked or globally installed). In such cases a custom `require` can be
     * passed to correctly resolve the preprocessors.
     */
-  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, _]] = js.native
+  var preprocessCustomRequire: js.UndefOr[js.Function1[/* id */ String, js.Any]] = js.undefined
   
-  var preprocessLang: js.UndefOr[String] = js.native
+  var preprocessLang: js.UndefOr[String] = js.undefined
   
-  var preprocessOptions: js.UndefOr[js.Any] = js.native
+  var preprocessOptions: js.UndefOr[js.Any] = js.undefined
   
-  var source: String = js.native
+  var source: String
   
-  var ssr: js.UndefOr[Boolean] = js.native
+  var ssr: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configure what tags/attributes to transform into asset url imports,
     * or disable the transform altogether with `false`.
     */
-  var transformAssetUrls: js.UndefOr[AssetURLOptions | AssetURLTagConfig | Boolean] = js.native
+  var transformAssetUrls: js.UndefOr[AssetURLOptions | AssetURLTagConfig | Boolean] = js.undefined
 }
 object SFCTemplateCompileOptions {
   
@@ -72,7 +70,7 @@ object SFCTemplateCompileOptions {
     def setInMapUndefined: Self = StObject.set(x, "inMap", js.undefined)
     
     @scala.inline
-    def setPreprocessCustomRequire(value: /* id */ String => _): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
+    def setPreprocessCustomRequire(value: /* id */ String => js.Any): Self = StObject.set(x, "preprocessCustomRequire", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPreprocessCustomRequireUndefined: Self = StObject.set(x, "preprocessCustomRequire", js.undefined)

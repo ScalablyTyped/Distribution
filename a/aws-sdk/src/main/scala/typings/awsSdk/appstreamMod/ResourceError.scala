@@ -2,26 +2,24 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceError extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[FleetErrorCode] = js.native
+  var ErrorCode: js.UndefOr[FleetErrorCode] = js.undefined
   
   /**
     * The error message.
     */
-  var ErrorMessage: js.UndefOr[String] = js.native
+  var ErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The time the error occurred.
     */
-  var ErrorTimestamp: js.UndefOr[Timestamp] = js.native
+  var ErrorTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object ResourceError {
   

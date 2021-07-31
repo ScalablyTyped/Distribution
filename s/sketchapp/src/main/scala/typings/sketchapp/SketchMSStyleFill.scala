@@ -3,37 +3,34 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.styleFill
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyleFill extends StObject {
   
-  var _class: styleFill = js.native
+  var _class: styleFill
   
-  var color: SketchMSColor = js.native
+  var color: SketchMSColor
   
-  var contextSettings: SketchMSGraphicsContextSettings = js.native
+  var contextSettings: SketchMSGraphicsContextSettings
   
-  var fillType: Double = js.native
+  var fillType: Double
   
-  var gradient: SketchMSGradient = js.native
+  var gradient: SketchMSGradient
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var noiseIndex: Double = js.native
+  var noiseIndex: Double
   
-  var noiseIntensity: Double = js.native
+  var noiseIntensity: Double
   
-  var patternFillType: Double = js.native
+  var patternFillType: Double
   
-  var patternTileScale: Double = js.native
+  var patternTileScale: Double
 }
 object SketchMSStyleFill {
   
   @scala.inline
   def apply(
-    _class: styleFill,
     color: SketchMSColor,
     contextSettings: SketchMSGraphicsContextSettings,
     fillType: Double,
@@ -44,7 +41,7 @@ object SketchMSStyleFill {
     patternFillType: Double,
     patternTileScale: Double
   ): SketchMSStyleFill = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], contextSettings = contextSettings.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], noiseIndex = noiseIndex.asInstanceOf[js.Any], noiseIntensity = noiseIntensity.asInstanceOf[js.Any], patternFillType = patternFillType.asInstanceOf[js.Any], patternTileScale = patternTileScale.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "styleFill", color = color.asInstanceOf[js.Any], contextSettings = contextSettings.asInstanceOf[js.Any], fillType = fillType.asInstanceOf[js.Any], gradient = gradient.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], noiseIndex = noiseIndex.asInstanceOf[js.Any], noiseIntensity = noiseIntensity.asInstanceOf[js.Any], patternFillType = patternFillType.asInstanceOf[js.Any], patternTileScale = patternTileScale.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleFill]
   }
   

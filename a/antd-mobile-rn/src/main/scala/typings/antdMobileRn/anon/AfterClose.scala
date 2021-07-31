@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.mod.RegisteredStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterClose extends StObject {
   
-  def afterClose(): Unit = js.native
+  def afterClose(): Unit
   
-  var closable: Boolean = js.native
+  var closable: Boolean
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onClose(): Unit = js.native
+  def onClose(): Unit
   
-  def onLongPress(): Unit = js.native
+  def onLongPress(): Unit
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var small: Boolean = js.native
+  var small: Boolean
   
-  var styles: StringDictionary[RegisteredStyle[_]] = js.native
+  var styles: StringDictionary[RegisteredStyle[js.Any]]
 }
 object AfterClose {
   
@@ -40,7 +38,7 @@ object AfterClose {
     onLongPress: () => Unit,
     selected: Boolean,
     small: Boolean,
-    styles: StringDictionary[RegisteredStyle[_]]
+    styles: StringDictionary[RegisteredStyle[js.Any]]
   ): AfterClose = {
     val __obj = js.Dynamic.literal(afterClose = js.Any.fromFunction0(afterClose), closable = closable.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], onChange = js.Any.fromFunction0(onChange), onClose = js.Any.fromFunction0(onClose), onLongPress = js.Any.fromFunction0(onLongPress), selected = selected.asInstanceOf[js.Any], small = small.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
     __obj.asInstanceOf[AfterClose]
@@ -74,6 +72,6 @@ object AfterClose {
     def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setStyles(value: StringDictionary[RegisteredStyle[_]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    def setStyles(value: StringDictionary[RegisteredStyle[js.Any]]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }
 }

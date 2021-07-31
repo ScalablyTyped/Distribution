@@ -2,11 +2,11 @@ package typings.styledComponents.styledComponentsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _InterpolationValue
-  extends _Interpolation[js.Any]
+  extends StObject
+     with _Interpolation[js.Any]
      with _SimpleInterpolation
 object _InterpolationValue {
   
@@ -27,9 +27,9 @@ object _InterpolationValue {
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
-      _ | StyledComponentInnerAttrs[AnyStyledComponent]
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
   ): typings.styledComponents.anon.PickStyledComponentBasean = {
     val __obj = js.Dynamic.literal(withComponent = js.Any.fromFunction1(withComponent))
@@ -42,8 +42,8 @@ object _InterpolationValue {
     DollarDollartypeof: js.Symbol,
     withComponent: /* component */ AnyStyledComponent => StyledComponent[
       StyledComponentInnerComponent[AnyStyledComponent], 
-      _, 
-      js.Any with StyledComponentInnerOtherProps[AnyStyledComponent], 
+      js.Any, 
+      js.Any & StyledComponentInnerOtherProps[AnyStyledComponent], 
       scala.Nothing | StyledComponentInnerAttrs[AnyStyledComponent]
     ]
   ): typings.styledComponents.anon.PickStyledComponentBaseanDefaultProps = {

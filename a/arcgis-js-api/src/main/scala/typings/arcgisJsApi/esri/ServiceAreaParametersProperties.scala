@@ -26,10 +26,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.straight
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAreaParametersProperties extends StObject {
   
   /**
@@ -37,70 +35,70 @@ trait ServiceAreaParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#accumulateAttributes)
     */
-  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.native
+  var accumulateAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A set of attribute parameter values that can be parameterized to determine which network elements can be used by a vehicle.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#attributeParameterValues)
     */
-  var attributeParameterValues: js.UndefOr[js.Array[_]] = js.native
+  var attributeParameterValues: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of numbers defining the breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#defaultBreaks)
     */
-  var defaultBreaks: js.UndefOr[js.Array[Double]] = js.native
+  var defaultBreaks: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * When `true`, restricted network elements should be considered when finding network locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#doNotLocateOnRestrictedElements)
     */
-  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.native
+  var doNotLocateOnRestrictedElements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of network source names to NOT use when generating polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#excludeSourcesFromPolygons)
     */
-  var excludeSourcesFromPolygons: js.UndefOr[js.Array[String]] = js.native
+  var excludeSourcesFromPolygons: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The set of facilities loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#facilities)
     */
-  var facilities: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var facilities: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The network attribute name used as the impedance attribute in analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#impedanceAttribute)
     */
-  var impedanceAttribute: js.UndefOr[String] = js.native
+  var impedanceAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, similar ranges will be merged in the resulting polygons.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#mergeSimilarPolygonRanges)
     */
-  var mergeSimilarPolygonRanges: js.UndefOr[Boolean] = js.native
+  var mergeSimilarPolygonRanges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The well-known ID of the spatial reference for the geometries returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * The precision of the output geometry after generalization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputGeometryPrecision)
     */
-  var outputGeometryPrecision: js.UndefOr[Double] = js.native
+  var outputGeometryPrecision: js.UndefOr[Double] = js.undefined
   
   /**
     * The units of the output geometry precision.
@@ -109,56 +107,56 @@ trait ServiceAreaParametersProperties extends StObject {
     */
   var outputGeometryPrecisionUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of output lines to be generated in the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputLines)
     */
-  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.native
+  var outputLines: js.UndefOr[none | straight | `true-shape` | `true-shape-with-measure`] = js.undefined
   
   /**
     * The type of output polygons to be generated in the result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#outputPolygons)
     */
-  var outputPolygons: js.UndefOr[none | simplified | detailed] = js.native
+  var outputPolygons: js.UndefOr[none | simplified | detailed] = js.undefined
   
   /**
     * Indicates if the lines should overlap from multiple facilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#overlapLines)
     */
-  var overlapLines: js.UndefOr[Boolean] = js.native
+  var overlapLines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if the polygons should overlap from multiple facilities.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#overlapPolygons)
     */
-  var overlapPolygons: js.UndefOr[Boolean] = js.native
+  var overlapPolygons: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The set of point barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var pointBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polygon barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polygonBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * The set of polyline barriers loaded as network locations during analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.native
+  var polylineBarriers: js.UndefOr[DataLayerProperties | FeatureSetProperties] = js.undefined
   
   /**
     * Specifies how U-turns should be handled.
@@ -167,91 +165,91 @@ trait ServiceAreaParametersProperties extends StObject {
     */
   var restrictUTurns: js.UndefOr[
     `allow-backtrack` | `at-dead-ends-only` | `no-backtrack` | `at-dead-ends-and-intersections`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The list of network attribute names to be used as restrictions with the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#restrictionAttributes)
     */
-  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.native
+  var restrictionAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If `true`, facilities will be returned with the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#returnFacilities)
     */
-  var returnFacilities: js.UndefOr[Boolean] = js.native
+  var returnFacilities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, point barriers will be returned in the [pointBarriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#pointBarriers) property of the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#returnPointBarriers)
     */
-  var returnPointBarriers: js.UndefOr[Boolean] = js.native
+  var returnPointBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polygon barriers will be returned in the [polygonBarriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polygonBarriers) property of the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#returnPolygonBarriers)
     */
-  var returnPolygonBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolygonBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polyline barriers will be returned in the [polylineBarriers](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polylineBarriers) property of the analysis results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#returnPolylineBarriers)
     */
-  var returnPolylineBarriers: js.UndefOr[Boolean] = js.native
+  var returnPolylineBarriers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, lines will be split at breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#splitLinesAtBreaks)
     */
-  var splitLinesAtBreaks: js.UndefOr[Boolean] = js.native
+  var splitLinesAtBreaks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, polygons will be split at breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#splitPolygonsAtBreaks)
     */
-  var splitPolygonsAtBreaks: js.UndefOr[Boolean] = js.native
+  var splitPolygonsAtBreaks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Local date and time at the facility.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#timeOfDay)
     */
-  var timeOfDay: js.UndefOr[DateProperties] = js.native
+  var timeOfDay: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * Options for traveling to or from the facility.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelDirection)
     */
-  var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.native
+  var travelDirection: js.UndefOr[`from-facility` | `to-facility`] = js.undefined
   
   /**
     * A travel mode represents a means of transportation, such as driving or walking.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#travelMode)
     */
-  var travelMode: js.UndefOr[String] = js.native
+  var travelMode: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the outermost polygon (at the maximum break value) will be trimmed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimOuterPolygon)
     */
-  var trimOuterPolygon: js.UndefOr[Boolean] = js.native
+  var trimOuterPolygon: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If polygons are being trimmed, provides the distance to trim.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimPolygonDistance)
     */
-  var trimPolygonDistance: js.UndefOr[Double] = js.native
+  var trimPolygonDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * If polygons are being trimmed, specifies the units of [trimPolygonDistance](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#trimPolygonDistance).
@@ -260,14 +258,14 @@ trait ServiceAreaParametersProperties extends StObject {
     */
   var trimPolygonDistanceUnits: js.UndefOr[
     centimeters | `decimal-degrees` | decimeters | feet_ | inches | kilometers_ | meters_ | miles_ | millimeters | `nautical-miles` | points | yards
-  ] = js.native
+  ] = js.undefined
   
   /**
     * When `true`, the hierarchy attributes for the network will be used in the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaParameters.html#useHierarchy)
     */
-  var useHierarchy: js.UndefOr[Boolean] = js.native
+  var useHierarchy: js.UndefOr[Boolean] = js.undefined
 }
 object ServiceAreaParametersProperties {
   
@@ -290,7 +288,7 @@ object ServiceAreaParametersProperties {
     def setAccumulateAttributesVarargs(value: String*): Self = StObject.set(x, "accumulateAttributes", js.Array(value :_*))
     
     @scala.inline
-    def setAttributeParameterValues(value: js.Array[_]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
+    def setAttributeParameterValues(value: js.Array[js.Any]): Self = StObject.set(x, "attributeParameterValues", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttributeParameterValuesUndefined: Self = StObject.set(x, "attributeParameterValues", js.undefined)

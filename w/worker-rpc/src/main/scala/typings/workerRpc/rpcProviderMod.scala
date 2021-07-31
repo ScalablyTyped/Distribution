@@ -5,14 +5,15 @@ import typings.workerRpc.rpcProviderInterfaceMod.RpcProviderInterface
 import typings.workerRpc.rpcProviderMod.RpcProvider.Dispatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcProviderMod {
   
   @JSImport("worker-rpc/lib/RpcProvider", JSImport.Default)
   @js.native
-  class default protected () extends RpcProvider {
+  class default protected ()
+    extends StObject
+       with RpcProvider {
     def this(_dispatch: Dispatcher) = this()
     def this(_dispatch: Dispatcher, _rpcTimeout: Double) = this()
   }
@@ -23,18 +24,20 @@ object rpcProviderMod {
     object MessageType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.workerRpc.rpcProviderMod.RpcProvider.MessageType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.workerRpc.rpcProviderMod.RpcProvider.MessageType & Double] = js.native
       
-      /* 2 */ val internal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.internal with Double = js.native
+      /* 2 */ val internal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.internal & Double = js.native
       
-      /* 1 */ val rpc: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.rpc with Double = js.native
+      /* 1 */ val rpc: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.rpc & Double = js.native
       
-      /* 0 */ val signal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.signal with Double = js.native
+      /* 0 */ val signal: typings.workerRpc.rpcProviderMod.RpcProvider.MessageType.signal & Double = js.native
     }
   }
   
   @js.native
-  trait RpcProvider extends RpcProviderInterface {
+  trait RpcProvider
+    extends StObject
+       with RpcProviderInterface {
     
     var _clearTransaction: js.Any = js.native
     
@@ -64,10 +67,10 @@ object rpcProviderMod {
     var error_RpcProvider: Event = js.native
     
     def rpc[T, U](id: String, payload: T, transfer: js.Any): js.Promise[U] = js.native
-    def rpc[T, U](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Any): js.Promise[U] = js.native
+    def rpc[T, U](id: String, payload: Unit, transfer: js.Any): js.Promise[U] = js.native
     
     def signal[T](id: String, payload: T, transfer: js.Any): this.type = js.native
-    def signal[T](id: String, payload: js.UndefOr[scala.Nothing], transfer: js.Any): this.type = js.native
+    def signal[T](id: String, payload: Unit, transfer: js.Any): this.type = js.native
   }
   object RpcProvider {
     
@@ -78,27 +81,32 @@ object rpcProviderMod {
     object MessageType extends StObject {
       
       @js.native
-      sealed trait internal extends MessageType
+      sealed trait internal
+        extends StObject
+           with MessageType
       
       @js.native
-      sealed trait rpc extends MessageType
+      sealed trait rpc
+        extends StObject
+           with MessageType
       
       @js.native
-      sealed trait signal extends MessageType
+      sealed trait signal
+        extends StObject
+           with MessageType
     }
     
     type Dispatcher = js.Function2[/* message */ Message, /* transfer */ js.UndefOr[js.Array[js.Any]], Unit]
     
-    @js.native
     trait Message extends StObject {
       
-      var id: String = js.native
+      var id: String
       
-      var payload: js.UndefOr[js.Any] = js.native
+      var payload: js.UndefOr[js.Any] = js.undefined
       
-      var transactionId: js.UndefOr[Double] = js.native
+      var transactionId: js.UndefOr[Double] = js.undefined
       
-      var `type`: MessageType = js.native
+      var `type`: MessageType
     }
     object Message {
       

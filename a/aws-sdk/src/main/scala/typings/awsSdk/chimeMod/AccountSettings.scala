@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSettings extends StObject {
   
   /**
     * Setting that stops or starts remote control of shared screens during meetings.
     */
-  var DisableRemoteControl: js.UndefOr[Boolean] = js.native
+  var DisableRemoteControl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Setting that allows meeting participants to choose the Call me at a phone number option. For more information, see Join a Meeting without the Amazon Chime App.
     */
-  var EnableDialOut: js.UndefOr[Boolean] = js.native
+  var EnableDialOut: js.UndefOr[Boolean] = js.undefined
 }
 object AccountSettings {
   

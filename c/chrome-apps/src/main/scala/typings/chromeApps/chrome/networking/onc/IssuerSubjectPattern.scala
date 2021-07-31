@@ -2,29 +2,27 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuerSubjectPattern extends StObject {
   
   /** If set, the value against which to match the certificate subject's common name. */
-  var CommonName: js.UndefOr[String] = js.native
+  var CommonName: js.UndefOr[String] = js.undefined
   
   /** If set, the value against which to match the certificate subject's common location. */
-  var Locality: js.UndefOr[String] = js.native
+  var Locality: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the value against which to match the certificate subject's organizations.
     * At least one organization should match the value.
     */
-  var Organization: js.UndefOr[String] = js.native
+  var Organization: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the value against which to match the certificate subject's organizational units.
     * At least one organizational unit should match the value.
     */
-  var OrganizationalUnit: js.UndefOr[String] = js.native
+  var OrganizationalUnit: js.UndefOr[String] = js.undefined
 }
 object IssuerSubjectPattern {
   

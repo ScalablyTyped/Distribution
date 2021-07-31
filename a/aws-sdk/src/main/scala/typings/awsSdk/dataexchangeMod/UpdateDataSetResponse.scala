@@ -2,61 +2,59 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSetResponse extends StObject {
   
   /**
     * The ARN for the data set.
     */
-  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
     * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
     */
-  var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.native
+  var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.undefined
   
   /**
     * The date and time that the data set was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description for the data set.
     */
-  var Description: js.UndefOr[typings.awsSdk.dataexchangeMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.dataexchangeMod.Description] = js.undefined
   
   /**
     * The unique identifier for the data set.
     */
-  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
     * The name of the data set.
     */
-  var Name: js.UndefOr[typings.awsSdk.dataexchangeMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.dataexchangeMod.Name] = js.undefined
   
   /**
     * A property that defines the data set as OWNED by the account (for providers) or ENTITLED to the account (for subscribers).
     */
-  var Origin: js.UndefOr[typings.awsSdk.dataexchangeMod.Origin] = js.native
+  var Origin: js.UndefOr[typings.awsSdk.dataexchangeMod.Origin] = js.undefined
   
   /**
     * If the origin of this data set is ENTITLED, includes the details for the product on AWS Marketplace.
     */
-  var OriginDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.OriginDetails] = js.native
+  var OriginDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.OriginDetails] = js.undefined
   
   /**
     * The data set ID of the owned data set corresponding to the entitled data set being viewed. This parameter is returned when a data set owner is viewing the entitled copy of its owned data set.
     */
-  var SourceId: js.UndefOr[Id] = js.native
+  var SourceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The date and time that the data set was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object UpdateDataSetResponse {
   

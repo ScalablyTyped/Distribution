@@ -4,31 +4,31 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcBranch extends TfvcBranchRef {
+trait TfvcBranch
+  extends StObject
+     with TfvcBranchRef {
   
   /**
     * List of children for the branch.
     */
-  var children: js.Array[TfvcBranch] = js.native
+  var children: js.Array[TfvcBranch]
   
   /**
     * List of branch mappings.
     */
-  var mappings: js.Array[TfvcBranchMapping] = js.native
+  var mappings: js.Array[TfvcBranchMapping]
   
   /**
     * Path of the branch's parent.
     */
-  var parent: TfvcShallowBranchRef = js.native
+  var parent: TfvcShallowBranchRef
   
   /**
     * List of paths of the related branches.
     */
-  var relatedBranches: js.Array[TfvcShallowBranchRef] = js.native
+  var relatedBranches: js.Array[TfvcShallowBranchRef]
 }
 object TfvcBranch {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProxySessionsRequest extends StObject {
   
   /**
     * The maximum number of results to return in a single call.
     */
-  var MaxResults: js.UndefOr[ResultMax] = js.native
+  var MaxResults: js.UndefOr[ResultMax] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * The proxy session status.
     */
-  var Status: js.UndefOr[ProxySessionStatus] = js.native
+  var Status: js.UndefOr[ProxySessionStatus] = js.undefined
   
   /**
     * The Amazon Chime voice connector ID.
     */
-  var VoiceConnectorId: NonEmptyString128 = js.native
+  var VoiceConnectorId: NonEmptyString128
 }
 object ListProxySessionsRequest {
   

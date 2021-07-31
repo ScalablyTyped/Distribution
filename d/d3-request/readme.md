@@ -11,8 +11,8 @@ A convenient alternative to XMLHttpRequest.
 | Full name          | d3-request |
 | Keywords           | d3, d3-module, request, ajax, XMLHttpRequest |
 | # releases         | 0 |
-| # dependents       | 66 |
-| # downloads        | 11220331 |
+| # dependents       | 67 |
+| # downloads        | 9856906 |
 | # stars            | 2 |
 
 ## Links

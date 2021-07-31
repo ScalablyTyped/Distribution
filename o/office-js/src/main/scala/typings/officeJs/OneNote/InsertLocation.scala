@@ -2,7 +2,6 @@ package typings.officeJs.OneNote
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait InsertLocation extends StObject
 object InsertLocation extends StObject {
   
   @js.native
-  sealed trait after extends InsertLocation
+  sealed trait after
+    extends StObject
+       with InsertLocation
   
   @js.native
-  sealed trait before extends InsertLocation
+  sealed trait before
+    extends StObject
+       with InsertLocation
 }

@@ -2,15 +2,13 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object musicSearchFeedResponseMod {
   
-  @js.native
   trait MusicSearchFeedResponseItemsItem extends StObject {
     
-    var track: MusicSearchFeedResponseTrack = js.native
+    var track: MusicSearchFeedResponseTrack
   }
   object MusicSearchFeedResponseItemsItem {
     
@@ -28,14 +26,13 @@ object musicSearchFeedResponseMod {
     }
   }
   
-  @js.native
   trait MusicSearchFeedResponsePageInfo extends StObject {
     
-    var auto_load_more_available: Boolean = js.native
+    var auto_load_more_available: Boolean
     
-    var more_available: Boolean = js.native
+    var more_available: Boolean
     
-    var next_max_id: String = js.native
+    var next_max_id: String
   }
   object MusicSearchFeedResponsePageInfo {
     
@@ -59,16 +56,15 @@ object musicSearchFeedResponseMod {
     }
   }
   
-  @js.native
   trait MusicSearchFeedResponseRootObject extends StObject {
     
-    var alacorn_session_id: String = js.native
+    var alacorn_session_id: String
     
-    var items: js.Array[MusicSearchFeedResponseItemsItem] = js.native
+    var items: js.Array[MusicSearchFeedResponseItemsItem]
     
-    var page_info: MusicSearchFeedResponsePageInfo = js.native
+    var page_info: MusicSearchFeedResponsePageInfo
     
-    var status: String = js.native
+    var status: String
   }
   object MusicSearchFeedResponseRootObject {
     
@@ -103,32 +99,31 @@ object musicSearchFeedResponseMod {
     }
   }
   
-  @js.native
   trait MusicSearchFeedResponseTrack extends StObject {
     
-    var audio_asset_id: Null = js.native
+    var audio_asset_id: Null
     
-    var cover_artwork_thumbnail_uri: String = js.native
+    var cover_artwork_thumbnail_uri: String
     
-    var cover_artwork_uri: String = js.native
+    var cover_artwork_uri: String
     
-    var dash_manifest: String = js.native
+    var dash_manifest: String
     
-    var display_artist: String = js.native
+    var display_artist: String
     
-    var has_lyrics: Boolean = js.native
+    var has_lyrics: Boolean
     
-    var highlight_start_times_in_ms: js.Array[Double] = js.native
+    var highlight_start_times_in_ms: js.Array[Double]
     
-    var id: String = js.native
+    var id: String
     
-    var is_explicit: Boolean = js.native
+    var is_explicit: Boolean
     
-    var progressive_download_url: String = js.native
+    var progressive_download_url: String
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var title: String = js.native
+    var title: String
   }
   object MusicSearchFeedResponseTrack {
     

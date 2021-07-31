@@ -17,45 +17,43 @@ import typings.vegaLite.vegaSchemaMod.VgValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/compile/mark/encode/valueref.MidPointParams & {  channel :'x' | 'y' | 'radius' | 'theta',   isMidPoint :boolean | undefined} */
-@js.native
 trait MidPointParamschannelxyra extends StObject {
   
   /**
     * Allow overriding band instead of reading to field def since band is applied to size (width/height) instead of the position for x/y-position with band scales.
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
-  var channel: typings.vegaLite.channelMod.Channel with (x | y | radius | theta) = js.native
+  var channel: typings.vegaLite.channelMod.Channel & (x | y | radius | theta)
   
-  var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.native
+  var channel2Def: js.UndefOr[SecondaryChannelDef[String]] = js.undefined
   
-  var channelDef: ChannelDef[String] = js.native
+  var channelDef: ChannelDef[String]
   
-  var config: typings.vegaLite.srcConfigMod.Config[SignalRef] = js.native
+  var config: typings.vegaLite.srcConfigMod.Config[SignalRef]
   
-  var defaultRef: VgValueRef | js.Function0[VgValueRef] = js.native
+  var defaultRef: VgValueRef | js.Function0[VgValueRef]
   
-  var isMidPoint: js.UndefOr[Boolean] = js.native
+  var isMidPoint: js.UndefOr[Boolean] = js.undefined
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef] = js.native
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef]
   
-  var offset: js.UndefOr[Double | SignalRef] = js.native
+  var offset: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var scale: ScaleComponent = js.native
+  var scale: ScaleComponent
   
-  var scaleName: String = js.native
+  var scaleName: String
   
-  var stack: js.UndefOr[StackProperties] = js.native
+  var stack: js.UndefOr[StackProperties] = js.undefined
 }
 object MidPointParamschannelxyra {
   
   @scala.inline
   def apply(
-    channel: typings.vegaLite.channelMod.Channel with (x | y | radius | theta),
+    channel: typings.vegaLite.channelMod.Channel & (x | y | radius | theta),
     config: typings.vegaLite.srcConfigMod.Config[SignalRef],
     defaultRef: VgValueRef | js.Function0[VgValueRef],
     markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, SignalRef],
@@ -77,7 +75,7 @@ object MidPointParamschannelxyra {
     
     @scala.inline
     def setChannel(
-      value: typings.vegaLite.channelMod.Channel with (typings.vegaLite.vegaLiteStrings.x | y | radius | theta)
+      value: typings.vegaLite.channelMod.Channel & (typings.vegaLite.vegaLiteStrings.x | y | radius | theta)
     ): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     
     @scala.inline

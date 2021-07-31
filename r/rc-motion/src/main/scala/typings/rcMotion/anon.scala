@@ -14,17 +14,15 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Animationend extends StObject {
     
-    var animationend: Record[String, String] = js.native
+    var animationend: Record[String, String]
     
-    var transitionend: Record[String, String] = js.native
+    var transitionend: Record[String, String]
   }
   object Animationend {
     
@@ -45,20 +43,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Appear extends StObject {
     
-    var appear: js.UndefOr[String] = js.native
+    var appear: js.UndefOr[String] = js.undefined
     
-    var appearActive: js.UndefOr[String] = js.native
+    var appearActive: js.UndefOr[String] = js.undefined
     
-    var enter: js.UndefOr[String] = js.native
+    var enter: js.UndefOr[String] = js.undefined
     
-    var enterActive: js.UndefOr[String] = js.native
+    var enterActive: js.UndefOr[String] = js.undefined
     
-    var leave: js.UndefOr[String] = js.native
+    var leave: js.UndefOr[String] = js.undefined
     
-    var leaveActive: js.UndefOr[String] = js.native
+    var leaveActive: js.UndefOr[String] = js.undefined
   }
   object Appear {
     
@@ -110,73 +107,72 @@ object anon {
   }
   
   /* Inlined rc-motion.rc-motion/es/CSSMotion.CSSMotionProps & {  ref :react.react.Ref<any> | undefined} */
-  @js.native
   trait CSSMotionPropsrefRefanyun extends StObject {
     
     var children: js.UndefOr[
         js.Function2[/* props */ Dictkey, /* ref */ js.Function1[/* node */ js.Any, Unit], ReactElement]
-      ] = js.native
+      ] = js.undefined
     
     /** @private Used by CSSMotionList. Do not use in your production. */
-    var eventProps: js.UndefOr[js.Object] = js.native
+    var eventProps: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Create element in view even the element is invisible.
       * Will patch `display: none` style on it.
       */
-    var forceRender: js.UndefOr[Boolean] = js.native
+    var forceRender: js.UndefOr[Boolean] = js.undefined
     
-    var internalRef: js.UndefOr[Ref[_]] = js.native
+    var internalRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var leavedClassName: js.UndefOr[String] = js.native
+    var leavedClassName: js.UndefOr[String] = js.undefined
     
-    var motionAppear: js.UndefOr[Boolean] = js.native
+    var motionAppear: js.UndefOr[Boolean] = js.undefined
     
-    var motionDeadline: js.UndefOr[Double] = js.native
+    var motionDeadline: js.UndefOr[Double] = js.undefined
     
-    var motionEnter: js.UndefOr[Boolean] = js.native
+    var motionEnter: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeave: js.UndefOr[Boolean] = js.native
+    var motionLeave: js.UndefOr[Boolean] = js.undefined
     
-    var motionLeaveImmediately: js.UndefOr[Boolean] = js.native
+    var motionLeaveImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var motionName: js.UndefOr[MotionName] = js.native
+    var motionName: js.UndefOr[MotionName] = js.undefined
     
-    var onAppearActive: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onAppearEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onAppearPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onAppearStart: js.UndefOr[MotionEventHandler] = js.native
+    var onAppearStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterActive: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onEnterEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onEnterPrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onEnterStart: js.UndefOr[MotionEventHandler] = js.native
+    var onEnterStart: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveActive: js.UndefOr[MotionEventHandler] = js.undefined
     
-    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.native
+    var onLeaveEnd: js.UndefOr[MotionEndEventHandler] = js.undefined
     
-    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.native
+    var onLeavePrepare: js.UndefOr[MotionPrepareEventHandler] = js.undefined
     
-    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.native
+    var onLeaveStart: js.UndefOr[MotionEventHandler] = js.undefined
     
     /** This will always trigger after final visible changed. Even if no motion configured. */
-    var onVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChanged: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var ref: js.UndefOr[Ref[_]] = js.native
+    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
     
     /**
       * Remove element when motion end. This will not work when `forceRender` is set.
       */
-    var removeOnLeave: js.UndefOr[Boolean] = js.native
+    var removeOnLeave: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CSSMotionPropsrefRefanyun {
     
@@ -208,10 +204,10 @@ object anon {
       def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
       
       @scala.inline
-      def setInternalRef(value: Ref[_]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
+      def setInternalRef(value: Ref[js.Any]): Self = StObject.set(x, "internalRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInternalRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
+      def setInternalRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "internalRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInternalRefNull: Self = StObject.set(x, "internalRef", null)
@@ -340,10 +336,10 @@ object anon {
       def setOnVisibleChangedUndefined: Self = StObject.set(x, "onVisibleChanged", js.undefined)
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -365,10 +361,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Deadline extends StObject {
     
-    var deadline: js.UndefOr[Boolean] = js.native
+    var deadline: js.UndefOr[Boolean] = js.undefined
   }
   object Deadline {
     
@@ -389,15 +384,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object Dictkey {
     
@@ -430,11 +425,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictname
-    extends /* name */ StringDictionary[js.Any] {
+    extends StObject
+       with /* name */ StringDictionary[js.Any] {
     
-    var key: typings.react.mod.Key = js.native
+    var key: typings.react.mod.Key
   }
   object Dictname {
     
@@ -452,13 +447,12 @@ object anon {
     }
   }
   
-  @js.native
   trait ForwardRef extends StObject {
     
     /** @deprecated, no need this anymore since `rc-motion` only support latest react */
-    var forwardRef: js.UndefOr[Boolean] = js.native
+    var forwardRef: js.UndefOr[Boolean] = js.undefined
     
-    var transitionSupport: js.UndefOr[Boolean] = js.native
+    var transitionSupport: js.UndefOr[Boolean] = js.undefined
   }
   object ForwardRef {
     
@@ -485,10 +479,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsCanceled extends StObject {
     
-    def isCanceled(): Boolean = js.native
+    def isCanceled(): Boolean
   }
   object IsCanceled {
     
@@ -506,10 +499,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: typings.react.mod.Key = js.native
+    var key: typings.react.mod.Key
   }
   object Key {
     
@@ -527,12 +519,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var status: js.UndefOr[DiffStatus] = js.native
+    var status: js.UndefOr[DiffStatus] = js.undefined
   }
   object Status {
     

@@ -2,10 +2,8 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTranslationsResource extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait SchemaTranslationsResource extends StObject {
     * language was passed, auto-detection of the language will not occur and
     * this field will be empty.
     */
-  var detectedSourceLanguage: js.UndefOr[String] = js.native
+  var detectedSourceLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The `model` type used for this translation. Valid values are listed in
     * public documentation. Can be different from requested `model`. Present
     * only if specific model type was explicitly requested.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * Text translated into the target language.
     */
-  var translatedText: js.UndefOr[String] = js.native
+  var translatedText: js.UndefOr[String] = js.undefined
 }
 object SchemaTranslationsResource {
   

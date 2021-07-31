@@ -5,7 +5,6 @@ import typings.instagramPrivateApi.discoverRepositoryChainingResponseMod.Discove
 import typings.instagramPrivateApi.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoverRepositoryMod {
@@ -17,10 +16,10 @@ object discoverRepositoryMod {
     
     def chaining(targetId: String): js.Promise[DiscoverRepositoryChainingResponseRootObject] = js.native
     
-    def markSuSeen(): js.Promise[_] = js.native
+    def markSuSeen(): js.Promise[js.Any] = js.native
     
-    def profileSuBadge(): js.Promise[_] = js.native
+    def profileSuBadge(): js.Promise[js.Any] = js.native
     
-    def topicalExplore(): js.Promise[_] = js.native
+    def topicalExplore(): js.Promise[js.Any] = js.native
   }
 }

@@ -7,14 +7,16 @@ import typings.dispatchr.anon.FnCall
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dispatchr", "createDispatcher")
+  @JSImport("dispatchr", JSImport.Namespace)
   @js.native
-  def createDispatcher(options: DispatcherOption): Dispatcher = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createDispatcher(options: DispatcherOption): Dispatcher = ^.asInstanceOf[js.Dynamic].applyDynamic("createDispatcher")(options.asInstanceOf[js.Any]).asInstanceOf[Dispatcher]
   
   @js.native
   trait Dispatcher extends StObject {
@@ -47,14 +49,13 @@ object mod {
     def waitFor(stores: js.Array[String | StoreClass], callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait DispatcherError extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var meta: ActionName = js.native
+    var meta: ActionName
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object DispatcherError {
     
@@ -79,27 +80,50 @@ object mod {
     }
   }
   
-  @js.native
   trait DispatcherInterface extends StObject {
     
-    def getContext(): DispatcherContext = js.native
+    def getContext(): DispatcherContext
     
-    def getStore(name: String): Store[js.Object] = js.native
-    def getStore[T /* <: StoreClass */](name: T): T = js.native
+    def getStore(name: String): Store[js.Object]
+    def getStore[T /* <: StoreClass */](name: T): T
     @JSName("getStore")
-    var getStore_Original: FnCall = js.native
+    var getStore_Original: FnCall
     
-    def waitFor(stores: js.Array[String | StoreClass], callback: js.Function0[Unit]): Unit = js.native
+    def waitFor(stores: js.Array[String | StoreClass], callback: js.Function0[Unit]): Unit
     @JSName("waitFor")
-    var waitFor_Original: js.Function2[/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit], Unit] = js.native
+    var waitFor_Original: js.Function2[/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit], Unit]
+  }
+  object DispatcherInterface {
+    
+    @scala.inline
+    def apply(
+      getContext: () => DispatcherContext,
+      getStore: FnCall,
+      waitFor: (/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit]) => Unit
+    ): DispatcherInterface = {
+      val __obj = js.Dynamic.literal(getContext = js.Any.fromFunction0(getContext), getStore = getStore.asInstanceOf[js.Any], waitFor = js.Any.fromFunction2(waitFor))
+      __obj.asInstanceOf[DispatcherInterface]
+    }
+    
+    @scala.inline
+    implicit class DispatcherInterfaceMutableBuilder[Self <: DispatcherInterface] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGetContext(value: () => DispatcherContext): Self = StObject.set(x, "getContext", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setGetStore(value: FnCall): Self = StObject.set(x, "getStore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWaitFor(value: (/* stores */ js.Array[String | StoreClass], /* callback */ js.Function0[Unit]) => Unit): Self = StObject.set(x, "waitFor", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait DispatcherOption extends StObject {
     
-    var errorHandler: js.UndefOr[js.Function2[/* e */ DispatcherError, /* context */ DispatcherContext, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function2[/* e */ DispatcherError, /* context */ DispatcherContext, Unit]] = js.undefined
     
-    var stores: js.UndefOr[js.Array[StoreClass]] = js.native
+    var stores: js.UndefOr[js.Array[StoreClass]] = js.undefined
   }
   object DispatcherOption {
     
@@ -129,10 +153,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DispatcherState extends StObject {
     
-    var stores: StringDictionary[js.Any] = js.native
+    var stores: StringDictionary[js.Any]
   }
   object DispatcherState {
     
@@ -164,7 +187,8 @@ object mod {
   
   @js.native
   trait StoreClass
-    extends Instantiable0[Store[js.Object]] {
+    extends StObject
+       with Instantiable0[Store[js.Object]] {
     
     var storeName: String = js.native
   }

@@ -3,27 +3,27 @@ package typings.yaml.parseCstMod.CST
 import typings.yaml.utilMod.Type.DOCUMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Document extends Node {
+trait Document
+  extends StObject
+     with Node {
   
   @JSName("anchor")
-  val anchor_Document: Null = js.native
+  val anchor_Document: Null
   
   @JSName("comment")
-  val comment_Document: Null = js.native
+  val comment_Document: Null
   
-  var contents: js.Array[BlankLine | Comment | ContentNode] = js.native
+  var contents: js.Array[BlankLine | Comment | ContentNode]
   
-  var directives: js.Array[BlankLine | Comment | Directive] = js.native
+  var directives: js.Array[BlankLine | Comment | Directive]
   
   @JSName("tag")
-  val tag_Document: Null = js.native
+  val tag_Document: Null
   
   @JSName("type")
-  var type_Document: DOCUMENT = js.native
+  var type_Document: DOCUMENT
 }
 object Document {
   
@@ -41,7 +41,7 @@ object Document {
     `type`: DOCUMENT,
     valueRangeContainsNewline: Boolean
   ): Document = {
-    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(anchor = anchor.asInstanceOf[js.Any], comment = comment.asInstanceOf[js.Any], contents = contents.asInstanceOf[js.Any], directives = directives.asInstanceOf[js.Any], hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], context = null, error = null, range = null, rawValue = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Document]
   }

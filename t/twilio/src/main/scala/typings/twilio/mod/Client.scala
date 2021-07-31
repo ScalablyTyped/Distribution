@@ -3,114 +3,42 @@ package typings.twilio.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "Client")
 @js.native
 class Client () extends StObject {
   def this(sid: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String) = this()
   def this(sid: String, tkn: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: js.UndefOr[scala.Nothing], host: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String, host: String) = this()
-  def this(sid: String, tkn: js.UndefOr[scala.Nothing], host: String) = this()
+  def this(sid: Unit, tkn: String) = this()
   def this(sid: String, tkn: String, host: String) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: js.UndefOr[scala.Nothing],
-    host: js.UndefOr[scala.Nothing],
-    api_version: String
-  ) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: js.UndefOr[scala.Nothing], host: String, api_version: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String, host: js.UndefOr[scala.Nothing], api_version: String) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String, host: String, api_version: String) = this()
-  def this(sid: String, tkn: js.UndefOr[scala.Nothing], host: js.UndefOr[scala.Nothing], api_version: String) = this()
-  def this(sid: String, tkn: js.UndefOr[scala.Nothing], host: String, api_version: String) = this()
-  def this(sid: String, tkn: String, host: js.UndefOr[scala.Nothing], api_version: String) = this()
+  def this(sid: String, tkn: Unit, host: String) = this()
+  def this(sid: Unit, tkn: String, host: String) = this()
+  def this(sid: Unit, tkn: Unit, host: String) = this()
   def this(sid: String, tkn: String, host: String, api_version: String) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: js.UndefOr[scala.Nothing],
-    host: js.UndefOr[scala.Nothing],
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: js.UndefOr[scala.Nothing],
-    host: js.UndefOr[scala.Nothing],
-    api_version: String,
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: js.UndefOr[scala.Nothing],
-    host: String,
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: js.UndefOr[scala.Nothing],
-    host: String,
-    api_version: String,
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: String,
-    host: js.UndefOr[scala.Nothing],
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: String,
-    host: js.UndefOr[scala.Nothing],
-    api_version: String,
-    timeout: Double
-  ) = this()
-  def this(
-    sid: js.UndefOr[scala.Nothing],
-    tkn: String,
-    host: String,
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(sid: js.UndefOr[scala.Nothing], tkn: String, host: String, api_version: String, timeout: Double) = this()
-  def this(
-    sid: String,
-    tkn: js.UndefOr[scala.Nothing],
-    host: js.UndefOr[scala.Nothing],
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(
-    sid: String,
-    tkn: js.UndefOr[scala.Nothing],
-    host: js.UndefOr[scala.Nothing],
-    api_version: String,
-    timeout: Double
-  ) = this()
-  def this(
-    sid: String,
-    tkn: js.UndefOr[scala.Nothing],
-    host: String,
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(sid: String, tkn: js.UndefOr[scala.Nothing], host: String, api_version: String, timeout: Double) = this()
-  def this(
-    sid: String,
-    tkn: String,
-    host: js.UndefOr[scala.Nothing],
-    api_version: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ) = this()
-  def this(sid: String, tkn: String, host: js.UndefOr[scala.Nothing], api_version: String, timeout: Double) = this()
-  def this(sid: String, tkn: String, host: String, api_version: js.UndefOr[scala.Nothing], timeout: Double) = this()
+  def this(sid: String, tkn: String, host: Unit, api_version: String) = this()
+  def this(sid: String, tkn: Unit, host: String, api_version: String) = this()
+  def this(sid: String, tkn: Unit, host: Unit, api_version: String) = this()
+  def this(sid: Unit, tkn: String, host: String, api_version: String) = this()
+  def this(sid: Unit, tkn: String, host: Unit, api_version: String) = this()
+  def this(sid: Unit, tkn: Unit, host: String, api_version: String) = this()
+  def this(sid: Unit, tkn: Unit, host: Unit, api_version: String) = this()
   def this(sid: String, tkn: String, host: String, api_version: String, timeout: Double) = this()
+  def this(sid: String, tkn: String, host: String, api_version: Unit, timeout: Double) = this()
+  def this(sid: String, tkn: String, host: Unit, api_version: String, timeout: Double) = this()
+  def this(sid: String, tkn: String, host: Unit, api_version: Unit, timeout: Double) = this()
+  def this(sid: String, tkn: Unit, host: String, api_version: String, timeout: Double) = this()
+  def this(sid: String, tkn: Unit, host: String, api_version: Unit, timeout: Double) = this()
+  def this(sid: String, tkn: Unit, host: Unit, api_version: String, timeout: Double) = this()
+  def this(sid: String, tkn: Unit, host: Unit, api_version: Unit, timeout: Double) = this()
+  def this(sid: Unit, tkn: String, host: String, api_version: String, timeout: Double) = this()
+  def this(sid: Unit, tkn: String, host: String, api_version: Unit, timeout: Double) = this()
+  def this(sid: Unit, tkn: String, host: Unit, api_version: String, timeout: Double) = this()
+  def this(sid: Unit, tkn: String, host: Unit, api_version: Unit, timeout: Double) = this()
+  def this(sid: Unit, tkn: Unit, host: String, api_version: String, timeout: Double) = this()
+  def this(sid: Unit, tkn: Unit, host: String, api_version: Unit, timeout: Double) = this()
+  def this(sid: Unit, tkn: Unit, host: Unit, api_version: String, timeout: Double) = this()
+  def this(sid: Unit, tkn: Unit, host: Unit, api_version: Unit, timeout: Double) = this()
   
   var accountSid: String = js.native
   
@@ -122,8 +50,8 @@ class Client () extends StObject {
   
   var host: String = js.native
   
-  def request(options: ClientRequestOptions): Promise[_] = js.native
-  def request(options: ClientRequestOptions, callback: RequestCallback): Promise[_] = js.native
+  def request(options: ClientRequestOptions): Promise[js.Any] = js.native
+  def request(options: ClientRequestOptions, callback: RequestCallback): Promise[js.Any] = js.native
   
   var timeout: Double = js.native
 }

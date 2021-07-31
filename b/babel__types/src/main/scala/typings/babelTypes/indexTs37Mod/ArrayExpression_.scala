@@ -3,26 +3,25 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.ArrayExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait ArrayExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait ArrayExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var elements: js.Array[Null | Expression | SpreadElement_] = js.native
+  var elements: js.Array[Null | Expression | SpreadElement_]
   
   @JSName("type")
-  var type_ArrayExpression_ : ArrayExpression = js.native
+  var type_ArrayExpression_ : ArrayExpression
 }
 object ArrayExpression_ {
   
   @scala.inline
-  def apply(elements: js.Array[Null | Expression | SpreadElement_], `type`: ArrayExpression): ArrayExpression_ = {
-    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(elements: js.Array[Null | Expression | SpreadElement_]): ArrayExpression_ = {
+    val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ArrayExpression")
     __obj.asInstanceOf[ArrayExpression_]
   }
   

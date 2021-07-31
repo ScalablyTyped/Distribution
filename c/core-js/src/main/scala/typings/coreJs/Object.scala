@@ -3,13 +3,11 @@ package typings.coreJs
 import typings.std.PropertyDescriptorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Object extends StObject {
   
-  def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap = js.native
+  def getOwnPropertyDescriptors(`object`: js.Any): PropertyDescriptorMap
 }
 object Object {
   

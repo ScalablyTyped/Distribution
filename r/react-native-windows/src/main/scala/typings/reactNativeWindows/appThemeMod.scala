@@ -7,7 +7,6 @@ import typings.reactNativeWindows.appThemeTypesMod.IHighContrastChangedEvent
 import typings.reactNativeWindows.appThemeTypesMod.IHighContrastColors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appThemeMod {
@@ -18,7 +17,9 @@ object appThemeMod {
   type AppTheme = AppThemeModule
   
   @js.native
-  trait AppThemeModule extends NativeEventEmitter {
+  trait AppThemeModule
+    extends StObject
+       with NativeEventEmitter {
     
     var _currentTheme: js.Any = js.native
     
@@ -35,48 +36,47 @@ object appThemeMod {
     def isHighContrast: Boolean = js.native
   }
   
-  @js.native
   trait MissingNativeAppThemeShim extends StObject {
     
-    def addEventListener(): Unit = js.native
+    def addEventListener(): Unit
     
     def addListener(
       _eventType: String,
-      _listener: js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]
-    ): js.Any = js.native
+      _listener: js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]
+    ): js.Any
     
-    var currentHighContrastColors: IHighContrastColors = js.native
+    var currentHighContrastColors: IHighContrastColors
     
-    var currentTheme: String = js.native
+    var currentTheme: String
     
-    var isAvailable: Boolean = js.native
+    var isAvailable: Boolean
     
-    var isHighContrast: Boolean = js.native
+    var isHighContrast: Boolean
     
-    def removeAllListeners(): Unit = js.native
+    def removeAllListeners(): Unit
     
-    def removeEventListener(): Unit = js.native
+    def removeEventListener(): Unit
     
     def removeListener(
       _eventType: String,
-      _listener: js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]
-    ): Unit = js.native
+      _listener: js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]
+    ): Unit
     
-    def removeSubscription(): Unit = js.native
+    def removeSubscription(): Unit
   }
   object MissingNativeAppThemeShim {
     
     @scala.inline
     def apply(
       addEventListener: () => Unit,
-      addListener: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]) => js.Any,
+      addListener: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => js.Any,
       currentHighContrastColors: IHighContrastColors,
       currentTheme: String,
       isAvailable: Boolean,
       isHighContrast: Boolean,
       removeAllListeners: () => Unit,
       removeEventListener: () => Unit,
-      removeListener: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]) => Unit,
+      removeListener: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => Unit,
       removeSubscription: () => Unit
     ): MissingNativeAppThemeShim = {
       val __obj = js.Dynamic.literal(addEventListener = js.Any.fromFunction0(addEventListener), addListener = js.Any.fromFunction2(addListener), currentHighContrastColors = currentHighContrastColors.asInstanceOf[js.Any], currentTheme = currentTheme.asInstanceOf[js.Any], isAvailable = isAvailable.asInstanceOf[js.Any], isHighContrast = isHighContrast.asInstanceOf[js.Any], removeAllListeners = js.Any.fromFunction0(removeAllListeners), removeEventListener = js.Any.fromFunction0(removeEventListener), removeListener = js.Any.fromFunction2(removeListener), removeSubscription = js.Any.fromFunction0(removeSubscription))
@@ -91,7 +91,7 @@ object appThemeMod {
       
       @scala.inline
       def setAddListener(
-        value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]) => js.Any
+        value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => js.Any
       ): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -114,7 +114,7 @@ object appThemeMod {
       
       @scala.inline
       def setRemoveListener(
-        value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent with IHighContrastChangedEvent, Unit]) => Unit
+        value: (String, js.Function1[/* nativeEvent */ IAppThemeChangedEvent & IHighContrastChangedEvent, Unit]) => Unit
       ): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
       
       @scala.inline

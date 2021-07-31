@@ -2,46 +2,44 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchInferenceJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the batch inference job.
     */
-  var batchInferenceJobArn: js.UndefOr[Arn] = js.native
+  var batchInferenceJobArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time at which the batch inference job was created.
     */
-  var creationDateTime: js.UndefOr[Date] = js.native
+  var creationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * If the batch inference job failed, the reason for the failure.
     */
-  var failureReason: js.UndefOr[FailureReason] = js.native
+  var failureReason: js.UndefOr[FailureReason] = js.undefined
   
   /**
     * The name of the batch inference job.
     */
-  var jobName: js.UndefOr[Name] = js.native
+  var jobName: js.UndefOr[Name] = js.undefined
   
   /**
     * The time at which the batch inference job was last updated.
     */
-  var lastUpdatedDateTime: js.UndefOr[Date] = js.native
+  var lastUpdatedDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The ARN of the solution version used by the batch inference job.
     */
-  var solutionVersionArn: js.UndefOr[Arn] = js.native
+  var solutionVersionArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the batch inference job. The status is one of the following values:   PENDING   IN PROGRESS   ACTIVE   CREATE FAILED  
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
 }
 object BatchInferenceJobSummary {
   

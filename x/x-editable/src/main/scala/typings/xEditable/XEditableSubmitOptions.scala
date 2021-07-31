@@ -2,21 +2,19 @@ package typings.xEditable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XEditableSubmitOptions extends StObject {
   
-  var ajaxOptions: js.UndefOr[js.Any] = js.native
+  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  def error(obj: js.Any): Unit = js.native
+  def error(obj: js.Any): Unit
   
-  def success(obj: js.Any, config: js.Any): Unit = js.native
+  def success(obj: js.Any, config: js.Any): Unit
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
 }
 object XEditableSubmitOptions {
   

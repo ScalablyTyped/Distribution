@@ -3,19 +3,19 @@ package typings.ethereumProtocol.mod
 import typings.ethereumProtocol.mod.AbiType.Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConstructorAbi extends FunctionAbi {
+trait ConstructorAbi
+  extends StObject
+     with FunctionAbi {
   
-  var inputs: js.Array[DataItem] = js.native
+  var inputs: js.Array[DataItem]
   
-  var payable: Boolean = js.native
+  var payable: Boolean
   
-  var stateMutability: ConstructorStateMutability = js.native
+  var stateMutability: ConstructorStateMutability
   
-  var `type`: Constructor = js.native
+  var `type`: Constructor
 }
 object ConstructorAbi {
   

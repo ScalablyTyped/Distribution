@@ -4,15 +4,13 @@ import typings.react.mod.Dispatch
 import typings.react.mod.SetStateAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatMenuKeys extends StObject {
   
-  var flatMenuKeys: js.Array[String] = js.native
+  var flatMenuKeys: js.Array[String]
   
-  var setFlatMenuKeys: Dispatch[SetStateAction[js.Array[String]]] = js.native
+  var setFlatMenuKeys: Dispatch[SetStateAction[js.Array[String]]]
 }
 object FlatMenuKeys {
   

@@ -5,27 +5,26 @@ import typings.std.ReadableStreamReader
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("slice-source", JSImport.Namespace)
-  @js.native
-  def apply(source: SliceSource): SliceSource = js.native
-  @JSImport("slice-source", JSImport.Namespace)
-  @js.native
-  def apply(source: ReadableStream[_]): SliceSource = js.native
-  @JSImport("slice-source", JSImport.Namespace)
-  @js.native
-  def apply(source: ReadableStreamReader[_]): SliceSource = js.native
+  @scala.inline
+  def apply(source: SliceSource): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  @scala.inline
+  def apply(source: ReadableStream[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
+  @scala.inline
+  def apply(source: ReadableStreamReader[js.Any]): SliceSource = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[SliceSource]
   
+  @JSImport("slice-source", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait SliceChunk extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: Uint8Array = js.native
+    var value: Uint8Array
   }
   object SliceChunk {
     
@@ -46,14 +45,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SliceSource extends StObject {
     
-    def cancel(): js.Promise[Unit] = js.native
+    def cancel(): js.Promise[Unit]
     
-    def read(): js.Promise[SliceChunk] = js.native
+    def read(): js.Promise[SliceChunk]
     
-    def slice(length: Double): js.Promise[Uint8Array] = js.native
+    def slice(length: Double): js.Promise[Uint8Array]
   }
   object SliceSource {
     

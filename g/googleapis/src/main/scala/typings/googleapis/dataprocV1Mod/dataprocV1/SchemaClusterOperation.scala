@@ -2,29 +2,27 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The cluster operation triggered by a workflow.
   */
-@js.native
 trait SchemaClusterOperation extends StObject {
   
   /**
     * Output only. Indicates the operation is done.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. Error, if operation failed.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The id of the cluster operation.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
 }
 object SchemaClusterOperation {
   

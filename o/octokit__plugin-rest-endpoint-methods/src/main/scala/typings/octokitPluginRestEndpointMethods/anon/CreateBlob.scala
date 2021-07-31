@@ -7,25 +7,23 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBlob extends StObject {
   
   def createBlob(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/blobs']['response'] */ js.Any
-  ] = js.native
+  ]
   def createBlob(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/blobs']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/blobs']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("createBlob")
-  var createBlob_Original: `144` = js.native
+  var createBlob_Original: `144`
   
   /**
     * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
@@ -61,15 +59,15 @@ trait CreateBlob extends StObject {
     */
   def createCommit(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   def createCommit(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/commits']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Creates a new Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
     *
@@ -103,27 +101,27 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("createCommit")
-  var createCommit_Original: `145` = js.native
+  var createCommit_Original: `145`
   
   /**
     * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
     */
   def createRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/refs']['response'] */ js.Any
-  ] = js.native
+  ]
   def createRef(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/refs']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/refs']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Creates a reference for your repository. You are unable to create new references for empty repositories, even if the commit SHA-1 hash used exists. Empty repositories are repositories without branches.
     */
   @JSName("createRef")
-  var createRef_Original: `146` = js.native
+  var createRef_Original: `146`
   
   /**
     * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
@@ -160,15 +158,15 @@ trait CreateBlob extends StObject {
     */
   def createTag(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/tags']['response'] */ js.Any
-  ] = js.native
+  ]
   def createTag(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/tags']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/tags']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Note that creating a tag object does not create the reference that makes a tag in Git. If you want to create an annotated tag in Git, you have to do this call to create the tag object, and then [create](https://developer.github.com/v3/git/refs/#create-a-reference) the `refs/tags/[tag]` reference. If you want to create a lightweight tag, you only have to [create](https://developer.github.com/v3/git/refs/#create-a-reference) the tag reference - this call would be unnecessary.
     *
@@ -203,7 +201,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("createTag")
-  var createTag_Original: `147` = js.native
+  var createTag_Original: `147`
   
   /**
     * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
@@ -212,36 +210,36 @@ trait CreateBlob extends StObject {
     */
   def createTree(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/trees']['response'] */ js.Any
-  ] = js.native
+  ]
   def createTree(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/trees']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/git/trees']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * The tree creation API accepts nested entries. If you specify both a tree and a nested path modifying that tree, this endpoint will overwrite the contents of the tree with the new path contents, and create a new tree structure.
     *
     * If you use this endpoint to add, delete, or modify the file contents in a tree, you will need to commit the tree and then update a branch to point to the commit. For more information see "[Create a commit](https://developer.github.com/v3/git/commits/#create-a-commit)" and "[Update a reference](https://developer.github.com/v3/git/refs/#update-a-reference)."
     */
   @JSName("createTree")
-  var createTree_Original: `148` = js.native
+  var createTree_Original: `148`
   
   def deleteRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/git/refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   def deleteRef(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/git/refs/:ref']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/git/refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("deleteRef")
-  var deleteRef_Original: `149` = js.native
+  var deleteRef_Original: `149`
   
   /**
     * The `content` in the response will always be Base64 encoded.
@@ -250,22 +248,22 @@ trait CreateBlob extends StObject {
     */
   def getBlob(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/blobs/:file_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   def getBlob(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/blobs/:file_sha']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/blobs/:file_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * The `content` in the response will always be Base64 encoded.
     *
     * _Note_: This API supports blobs up to 100 megabytes in size.
     */
   @JSName("getBlob")
-  var getBlob_Original: `150` = js.native
+  var getBlob_Original: `150`
   
   /**
     * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
@@ -302,15 +300,15 @@ trait CreateBlob extends StObject {
     */
   def getCommit(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/commits/:commit_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   def getCommit(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/commits/:commit_sha']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/commits/:commit_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Gets a Git [commit object](https://git-scm.com/book/en/v1/Git-Internals-Git-Objects#Commit-Objects).
     *
@@ -345,7 +343,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getCommit")
-  var getCommit_Original: `151` = js.native
+  var getCommit_Original: `151`
   
   /**
     * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
@@ -354,22 +352,22 @@ trait CreateBlob extends StObject {
     */
   def getRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/ref/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   def getRef(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/ref/:ref']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/ref/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Returns a single reference from your Git database. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't match an existing ref, a `404` is returned.
     *
     * **Note:** You need to explicitly [request a pull request](https://developer.github.com/v3/pulls/#get-a-pull-request) to trigger a test merge commit, which checks the mergeability of pull requests. For more information, see "[Checking mergeability of pull requests](https://developer.github.com/v3/git/#checking-mergeability-of-pull-requests)".
     */
   @JSName("getRef")
-  var getRef_Original: `152` = js.native
+  var getRef_Original: `152`
   
   /**
     * **Signature verification object**
@@ -403,15 +401,15 @@ trait CreateBlob extends StObject {
     */
   def getTag(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/tags/:tag_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   def getTag(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/tags/:tag_sha']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/tags/:tag_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Signature verification object**
     *
@@ -443,7 +441,7 @@ trait CreateBlob extends StObject {
     * | `valid` | None of the above errors applied, so the signature is considered to be verified. |
     */
   @JSName("getTag")
-  var getTag_Original: `153` = js.native
+  var getTag_Original: `153`
   
   /**
     * Returns a single tree using the SHA1 value for that tree.
@@ -452,22 +450,22 @@ trait CreateBlob extends StObject {
     */
   def getTree(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/trees/:tree_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   def getTree(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/trees/:tree_sha']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/trees/:tree_sha']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Returns a single tree using the SHA1 value for that tree.
     *
     * If `truncated` is `true` in the response then the number of items in the `tree` array exceeded our maximum limit. If you need to fetch more items, use the non-recursive method of fetching trees, and fetch one sub-tree at a time.
     */
   @JSName("getTree")
-  var getTree_Original: `154` = js.native
+  var getTree_Original: `154`
   
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
@@ -480,15 +478,15 @@ trait CreateBlob extends StObject {
     */
   def listMatchingRefs(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/matching-refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   def listMatchingRefs(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/matching-refs/:ref']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/git/matching-refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Returns an array of references from your Git database that match the supplied name. The `:ref` in the URL must be formatted as `heads/<branch name>` for branches and `tags/<tag name>` for tags. If the `:ref` doesn't exist in the repository, but existing refs start with `:ref`, they will be returned as an array.
     *
@@ -499,19 +497,84 @@ trait CreateBlob extends StObject {
     * If you request matching references for a branch named `feature` but the branch `feature` doesn't exist, the response can still include other matching head refs that start with the word `feature`, such as `featureA` and `featureB`.
     */
   @JSName("listMatchingRefs")
-  var listMatchingRefs_Original: `155` = js.native
+  var listMatchingRefs_Original: `155`
   
   def updateRef(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/git/refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   def updateRef(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/git/refs/:ref']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/git/refs/:ref']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("updateRef")
-  var updateRef_Original: `156` = js.native
+  var updateRef_Original: `156`
+}
+object CreateBlob {
+  
+  @scala.inline
+  def apply(
+    createBlob: `144`,
+    createCommit: `145`,
+    createRef: `146`,
+    createTag: `147`,
+    createTree: `148`,
+    deleteRef: `149`,
+    getBlob: `150`,
+    getCommit: `151`,
+    getRef: `152`,
+    getTag: `153`,
+    getTree: `154`,
+    listMatchingRefs: `155`,
+    updateRef: `156`
+  ): CreateBlob = {
+    val __obj = js.Dynamic.literal(createBlob = createBlob.asInstanceOf[js.Any], createCommit = createCommit.asInstanceOf[js.Any], createRef = createRef.asInstanceOf[js.Any], createTag = createTag.asInstanceOf[js.Any], createTree = createTree.asInstanceOf[js.Any], deleteRef = deleteRef.asInstanceOf[js.Any], getBlob = getBlob.asInstanceOf[js.Any], getCommit = getCommit.asInstanceOf[js.Any], getRef = getRef.asInstanceOf[js.Any], getTag = getTag.asInstanceOf[js.Any], getTree = getTree.asInstanceOf[js.Any], listMatchingRefs = listMatchingRefs.asInstanceOf[js.Any], updateRef = updateRef.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CreateBlob]
+  }
+  
+  @scala.inline
+  implicit class CreateBlobMutableBuilder[Self <: CreateBlob] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCreateBlob(value: `144`): Self = StObject.set(x, "createBlob", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateCommit(value: `145`): Self = StObject.set(x, "createCommit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateRef(value: `146`): Self = StObject.set(x, "createRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateTag(value: `147`): Self = StObject.set(x, "createTag", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateTree(value: `148`): Self = StObject.set(x, "createTree", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeleteRef(value: `149`): Self = StObject.set(x, "deleteRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetBlob(value: `150`): Self = StObject.set(x, "getBlob", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetCommit(value: `151`): Self = StObject.set(x, "getCommit", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetRef(value: `152`): Self = StObject.set(x, "getRef", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetTag(value: `153`): Self = StObject.set(x, "getTag", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetTree(value: `154`): Self = StObject.set(x, "getTree", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListMatchingRefs(value: `155`): Self = StObject.set(x, "listMatchingRefs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateRef(value: `156`): Self = StObject.set(x, "updateRef", value.asInstanceOf[js.Any])
+  }
 }

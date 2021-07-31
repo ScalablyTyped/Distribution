@@ -3,11 +3,11 @@ package typings.extjs.Ext.layout.container
 import typings.extjs.Ext.layout.ISizePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IColumn extends IAuto {
+trait IColumn
+  extends StObject
+     with IAuto {
   
   /** [Method] Returns an object describing how this layout manages the size of the given component
     * @param item Object
@@ -17,7 +17,7 @@ trait IColumn extends IAuto {
   @JSName("getItemSizePolicy")
   var getItemSizePolicy_IColumn: js.UndefOr[
     js.Function2[/* item */ js.UndefOr[js.Any], /* ownerSizeModel */ js.UndefOr[js.Any], ISizePolicy]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] This method sets the height and or width of the outerCt innerCt to adjust for the following browser specific issues
     * @param ownerContext Object
@@ -26,7 +26,7 @@ trait IColumn extends IAuto {
   @JSName("setCtSizeIfNeeded")
   var setCtSizeIfNeeded_IColumn: js.UndefOr[
     js.Function2[/* ownerContext */ js.UndefOr[js.Any], /* containerSize */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object IColumn {
   

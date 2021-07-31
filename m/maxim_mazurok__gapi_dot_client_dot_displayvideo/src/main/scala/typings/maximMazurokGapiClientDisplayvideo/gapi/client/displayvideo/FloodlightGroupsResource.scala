@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientDisplayvideo.anon.FloodlightGroupId
 import typings.maximMazurokGapiClientDisplayvideo.anon.FloodlightGroupIdKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

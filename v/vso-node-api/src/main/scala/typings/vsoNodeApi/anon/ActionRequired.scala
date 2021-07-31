@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionRequired extends StObject {
   
-  var actionRequired: scala.Double = js.native
+  var actionRequired: scala.Double
   
-  var actionResolved: scala.Double = js.native
+  var actionResolved: scala.Double
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var enabled: scala.Double = js.native
+  var enabled: scala.Double
   
-  var installed: scala.Double = js.native
+  var installed: scala.Double
   
-  var uninstalled: scala.Double = js.native
+  var uninstalled: scala.Double
   
-  var versionUpdated: scala.Double = js.native
+  var versionUpdated: scala.Double
 }
 object ActionRequired {
   

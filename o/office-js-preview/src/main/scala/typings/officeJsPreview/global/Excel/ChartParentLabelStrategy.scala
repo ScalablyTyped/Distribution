@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartParentLabelStrategy extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartParentLabelStrategy with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartParentLabelStrategy & String] = js.native
   
-  /* "Banner" */ val banner: typings.officeJsPreview.Excel.ChartParentLabelStrategy.banner with String = js.native
+  /* "Banner" */ val banner: typings.officeJsPreview.Excel.ChartParentLabelStrategy.banner & String = js.native
   
-  /* "None" */ val none: typings.officeJsPreview.Excel.ChartParentLabelStrategy.none with String = js.native
+  /* "None" */ val none: typings.officeJsPreview.Excel.ChartParentLabelStrategy.none & String = js.native
   
-  /* "Overlapping" */ val overlapping: typings.officeJsPreview.Excel.ChartParentLabelStrategy.overlapping with String = js.native
+  /* "Overlapping" */ val overlapping: typings.officeJsPreview.Excel.ChartParentLabelStrategy.overlapping & String = js.native
 }

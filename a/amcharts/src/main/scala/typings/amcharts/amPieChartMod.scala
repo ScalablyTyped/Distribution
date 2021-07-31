@@ -2,7 +2,6 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amPieChartMod {
@@ -39,7 +38,7 @@ object amPieChartMod {
     /**
       * Read-only. Array of Slice objects.
       */
-    var chartData: js.Array[_] = js.native
+    var chartData: js.Array[js.Any] = js.native
     
     /**
       * You can trigger the click on a slice from outside. index - the number of a slice or Slice object.
@@ -60,7 +59,7 @@ object amPieChartMod {
       * "#000000", "#57032A", "#CA9726", "#990000", "#4B0C25"
       * ]
       */
-    var colors: js.Array[_] = js.native
+    var colors: js.Array[js.Any] = js.native
     
     /**
       * Depth of the pie (for 3D effect).

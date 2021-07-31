@@ -2,10 +2,8 @@ package typings.agoraRtcSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attr extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait Attr extends StObject {
     * - 1: the remote media stream falls back to audio-only due to unreliable network conditions.
     * - 0: the remote media stream switches back to the video stream after the network conditions improve.
     */
-  var attr: Double = js.native
+  var attr: Double
   
   /** ID of the remote user sending the stream. */
-  var uid: String | Double = js.native
+  var uid: String | Double
 }
 object Attr {
   

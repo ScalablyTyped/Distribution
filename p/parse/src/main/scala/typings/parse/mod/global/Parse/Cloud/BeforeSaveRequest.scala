@@ -4,14 +4,14 @@ import typings.parse.mod.global.Parse.Attributes
 import typings.parse.mod.global.Parse.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-line no-empty-interface
-@js.native
-trait BeforeSaveRequest extends TriggerRequest {
+trait BeforeSaveRequest
+  extends StObject
+     with TriggerRequest {
   
-  var context: js.Object = js.native
+  var context: js.Object
 }
 object BeforeSaveRequest {
   

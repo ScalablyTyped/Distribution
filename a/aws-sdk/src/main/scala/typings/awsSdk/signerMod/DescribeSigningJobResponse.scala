@@ -2,76 +2,74 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSigningJobResponse extends StObject {
   
   /**
     * Date and time that the signing job was completed.
     */
-  var completedAt: js.UndefOr[CompletedAt] = js.native
+  var completedAt: js.UndefOr[CompletedAt] = js.undefined
   
   /**
     * Date and time that the signing job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The ID of the signing job on output.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * A list of any overrides that were applied to the signing operation.
     */
-  var overrides: js.UndefOr[SigningPlatformOverrides] = js.native
+  var overrides: js.UndefOr[SigningPlatformOverrides] = js.undefined
   
   /**
     * The microcontroller platform to which your signed code image will be distributed.
     */
-  var platformId: js.UndefOr[PlatformId] = js.native
+  var platformId: js.UndefOr[PlatformId] = js.undefined
   
   /**
     * The name of the profile that initiated the signing operation.
     */
-  var profileName: js.UndefOr[ProfileName] = js.native
+  var profileName: js.UndefOr[ProfileName] = js.undefined
   
   /**
     * The IAM principal that requested the signing job.
     */
-  var requestedBy: js.UndefOr[RequestedBy] = js.native
+  var requestedBy: js.UndefOr[RequestedBy] = js.undefined
   
   /**
     * Name of the S3 bucket where the signed code image is saved by code signing.
     */
-  var signedObject: js.UndefOr[SignedObject] = js.native
+  var signedObject: js.UndefOr[SignedObject] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of your code signing certificate.
     */
-  var signingMaterial: js.UndefOr[SigningMaterial] = js.native
+  var signingMaterial: js.UndefOr[SigningMaterial] = js.undefined
   
   /**
     * Map of user-assigned key-value pairs used during signing. These values contain any information that you specified for use in your signing job. 
     */
-  var signingParameters: js.UndefOr[SigningParameters] = js.native
+  var signingParameters: js.UndefOr[SigningParameters] = js.undefined
   
   /**
     * The object that contains the name of your S3 bucket or your raw code.
     */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /**
     * Status of the signing job.
     */
-  var status: js.UndefOr[SigningStatus] = js.native
+  var status: js.UndefOr[SigningStatus] = js.undefined
   
   /**
     * String value that contains the status reason.
     */
-  var statusReason: js.UndefOr[StatusReason] = js.native
+  var statusReason: js.UndefOr[StatusReason] = js.undefined
 }
 object DescribeSigningJobResponse {
   

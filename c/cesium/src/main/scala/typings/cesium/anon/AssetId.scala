@@ -2,17 +2,15 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetId extends StObject {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var assetId: Double = js.native
+  var assetId: Double
   
-  var server: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.undefined
 }
 object AssetId {
   

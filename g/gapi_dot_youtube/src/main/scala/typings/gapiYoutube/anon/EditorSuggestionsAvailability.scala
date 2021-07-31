@@ -2,48 +2,46 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditorSuggestionsAvailability extends StObject {
   
   /**
     * This value indicates whether video editing suggestions, which might improve video quality or the playback experience, are available for the video. You can retrieve these suggestions by requesting the suggestions part in your videos.list() request.
     */
-  var editorSuggestionsAvailability: String = js.native
+  var editorSuggestionsAvailability: String
   
   /**
     * The reason that YouTube failed to process the video. This property will only have a value if the processingStatus propertys value is failed.
     */
-  var fileDetailsAvailability: String = js.native
+  var fileDetailsAvailability: String
   
-  var processingFailureReason: String = js.native
+  var processingFailureReason: String
   
   /**
     * This value indicates whether file details are available for the uploaded video. You can retrieve a videos file details by requesting the fileDetails part in your videos.list() request.
     */
-  var processingIssuesAvailability: String = js.native
+  var processingIssuesAvailability: String
   
   /**
     * The processingProgress object contains information about the progress YouTube has made in processing the video. The values are really only relevant if the videos processing status is processing.
     */
-  var processingProgress: PartsProcessed = js.native
+  var processingProgress: PartsProcessed
   
   /**
     * The videos processing status. This value indicates whether YouTube was able to process the video or if the video is still being processed.
     */
-  var processingStatus: String = js.native
+  var processingStatus: String
   
   /**
     * This value indicates whether keyword (tag) suggestions are available for the video. Tags can be added to a videos metadata to make it easier for other users to find the video. You can retrieve these suggestions by requesting the suggestions part in your videos.list() request.
     */
-  var tagSuggestionsAvailability: String = js.native
+  var tagSuggestionsAvailability: String
   
   /**
     * This value indicates whether thumbnail images have been generated for the video.
     */
-  var thumbnailsAvailability: String = js.native
+  var thumbnailsAvailability: String
 }
 object EditorSuggestionsAvailability {
   

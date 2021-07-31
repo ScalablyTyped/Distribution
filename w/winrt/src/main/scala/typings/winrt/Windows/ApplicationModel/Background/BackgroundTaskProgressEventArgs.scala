@@ -2,11 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BackgroundTaskProgressEventArgs extends IBackgroundTaskProgressEventArgs
+trait BackgroundTaskProgressEventArgs
+  extends StObject
+     with IBackgroundTaskProgressEventArgs
 object BackgroundTaskProgressEventArgs {
   
   @scala.inline

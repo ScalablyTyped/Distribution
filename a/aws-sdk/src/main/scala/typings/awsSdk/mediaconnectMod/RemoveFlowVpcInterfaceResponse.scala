@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFlowVpcInterfaceResponse extends StObject {
   
   /**
     * The ARN of the flow that is associated with the VPC interface you removed.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * IDs of network interfaces associated with the removed VPC interface that Media Connect was unable to remove.
     */
-  var NonDeletedNetworkInterfaceIds: js.UndefOr[listOfString] = js.native
+  var NonDeletedNetworkInterfaceIds: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The name of the VPC interface that was removed.
     */
-  var VpcInterfaceName: js.UndefOr[string] = js.native
+  var VpcInterfaceName: js.UndefOr[string] = js.undefined
 }
 object RemoveFlowVpcInterfaceResponse {
   

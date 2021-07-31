@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableColumn object, for use in `tableColumn.set({ ... })`. */
-@js.native
 trait TableColumnUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableColumnUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for getting the name; 1.4 for setting it.]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableColumnUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.UndefOr[js.Array[js.Array[_]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
 }
 object TableColumnUpdateData {
   
@@ -43,7 +41,7 @@ object TableColumnUpdateData {
     def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
     
     @scala.inline
-    def setValues(value: js.Array[js.Array[_]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+    def setValues(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)

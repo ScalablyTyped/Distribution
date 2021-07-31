@@ -2,15 +2,13 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailOptions extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var length: Double = js.native
+  var length: Double
 }
 object EmailOptions {
   

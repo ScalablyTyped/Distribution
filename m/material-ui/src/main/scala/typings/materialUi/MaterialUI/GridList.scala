@@ -16,23 +16,21 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GridList {
   
   type GridList = Component[GridListProps, js.Object, js.Any]
   
-  @js.native
   trait GridListProps extends StObject {
     
-    var cellHeight: js.UndefOr[Double | auto] = js.native
+    var cellHeight: js.UndefOr[Double | auto] = js.undefined
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GridListProps {
     
@@ -73,34 +71,33 @@ object GridList {
   
   type GridTile = Component[GridTileProps, js.Object, js.Any]
   
-  @js.native
   trait GridTileProps extends StObject {
     
-    var actionIcon: js.UndefOr[ReactElement] = js.native
+    var actionIcon: js.UndefOr[ReactElement] = js.undefined
     
-    var actionPosition: js.UndefOr[left | right] = js.native
+    var actionPosition: js.UndefOr[left | right] = js.undefined
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var containerElement: js.UndefOr[String | ReactElement | (ComponentClass[_, ComponentState])] = js.native
+    var containerElement: js.UndefOr[String | ReactElement | (ComponentClass[js.Any, ComponentState])] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subtitle: js.UndefOr[ReactNode] = js.native
+    var subtitle: js.UndefOr[ReactNode] = js.undefined
     
-    var subtitleStyle: js.UndefOr[CSSProperties] = js.native
+    var subtitleStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var titleBackground: js.UndefOr[String] = js.native
+    var titleBackground: js.UndefOr[String] = js.undefined
     
-    var titlePosition: js.UndefOr[top | bottom] = js.native
+    var titlePosition: js.UndefOr[top | bottom] = js.undefined
     
-    var titleStyle: js.UndefOr[CSSProperties] = js.native
+    var titleStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object GridTileProps {
     
@@ -132,7 +129,7 @@ object GridList {
       def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
       
       @scala.inline
-      def setContainerElement(value: String | ReactElement | (ComponentClass[_, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
+      def setContainerElement(value: String | ReactElement | (ComponentClass[js.Any, ComponentState])): Self = StObject.set(x, "containerElement", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContainerElementUndefined: Self = StObject.set(x, "containerElement", js.undefined)

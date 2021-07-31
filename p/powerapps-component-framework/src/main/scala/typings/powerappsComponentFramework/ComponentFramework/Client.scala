@@ -2,19 +2,17 @@ package typings.powerappsComponentFramework.ComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for the context.client
   */
-@js.native
 trait Client extends StObject {
   
   /**
     * Whether this control should disable its scrolling capabilities.
     */
-  var disableScroll: Boolean = js.native
+  var disableScroll: Boolean
   
   /**
     * Returns a value to indicate which client the script is executing in.
@@ -22,7 +20,7 @@ trait Client extends StObject {
     * Outlook: Outlook
     * Mobile: Mobile app
     */
-  def getClient(): String = js.native
+  def getClient(): String
   
   /**
     * Device form factor.
@@ -31,12 +29,12 @@ trait Client extends StObject {
     * Tablet = 2
     * Phone = 3
     */
-  def getFormFactor(): Double = js.native
+  def getFormFactor(): Double
   
   /**
     * Returns information whether the server is online or offline.
     */
-  def isOffline(): Boolean = js.native
+  def isOffline(): Boolean
 }
 object Client {
   

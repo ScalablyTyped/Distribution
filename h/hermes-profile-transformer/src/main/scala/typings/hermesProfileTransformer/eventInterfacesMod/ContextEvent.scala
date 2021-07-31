@@ -4,14 +4,15 @@ import typings.hermesProfileTransformer.phasesMod.EventsPhase.CONTEXT_EVENTS_ENT
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.CONTEXT_EVENTS_LEAVE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.hermesProfileTransformer.eventInterfacesMod.ContextEventEnter
   - typings.hermesProfileTransformer.eventInterfacesMod.ContextEventLeave
 */
-trait ContextEvent extends Event
+trait ContextEvent
+  extends StObject
+     with Event
 object ContextEvent {
   
   @scala.inline

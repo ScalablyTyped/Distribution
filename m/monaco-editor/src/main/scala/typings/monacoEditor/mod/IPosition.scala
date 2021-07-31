@@ -2,21 +2,19 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPosition extends StObject {
   
   /**
     * column (the first character in a line is between column 1 and column 2)
     */
-  val column: Double = js.native
+  val column: Double
   
   /**
     * line number (starts at 1)
     */
-  val lineNumber: Double = js.native
+  val lineNumber: Double
 }
 object IPosition {
   

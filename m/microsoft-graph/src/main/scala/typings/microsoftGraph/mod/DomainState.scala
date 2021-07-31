@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainState extends StObject {
   
   /**
     * Timestamp for when the last activity occurred. The value is updated when an operation is scheduled, the asynchronous
     * task starts, and when the operation completes.
     */
-  var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastActionDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Type of asynchronous operation. The values can be ForceDelete or Verification
-  var operation: js.UndefOr[NullableOption[String]] = js.native
+  var operation: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Current status of the operation. Scheduled - Operation has been scheduled but has not started. InProgress - Task has
     * started and is in progress. Failed - Operation has failed.
     */
-  var status: js.UndefOr[NullableOption[String]] = js.native
+  var status: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object DomainState {
   

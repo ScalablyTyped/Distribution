@@ -4,19 +4,19 @@ import typings.spotifyWebApiNode.anon.Position
 import typings.spotifyWebApiNode.anon.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlayOptions extends DeviceOptions {
+trait PlayOptions
+  extends StObject
+     with DeviceOptions {
   
-  var context_uri: js.UndefOr[String] = js.native
+  var context_uri: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Position | Uri] = js.native
+  var offset: js.UndefOr[Position | Uri] = js.undefined
   
-  var position_ms: js.UndefOr[Double] = js.native
+  var position_ms: js.UndefOr[Double] = js.undefined
   
-  var uris: js.UndefOr[js.Array[String]] = js.native
+  var uris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PlayOptions {
   

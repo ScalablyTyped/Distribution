@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaceMatch extends StObject {
   
   /**
     * Describes the face properties such as the bounding box, face ID, image ID of the source image, and external image ID that you assigned.
     */
-  var Face: js.UndefOr[typings.awsSdk.rekognitionMod.Face] = js.native
+  var Face: js.UndefOr[typings.awsSdk.rekognitionMod.Face] = js.undefined
   
   /**
     * Confidence in the match of this face with the input face.
     */
-  var Similarity: js.UndefOr[Percent] = js.native
+  var Similarity: js.UndefOr[Percent] = js.undefined
 }
 object FaceMatch {
   

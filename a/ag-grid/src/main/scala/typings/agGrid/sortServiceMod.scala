@@ -4,7 +4,6 @@ import typings.agGrid.columnMod.Column
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sortServiceMod {
@@ -38,12 +37,11 @@ object sortServiceMod {
     var valueService: js.Any = js.native
   }
   
-  @js.native
   trait SortOption extends StObject {
     
-    var column: Column = js.native
+    var column: Column
     
-    var inverter: Double = js.native
+    var inverter: Double
   }
   object SortOption {
     
@@ -64,12 +62,11 @@ object sortServiceMod {
     }
   }
   
-  @js.native
   trait SortedRowNode extends StObject {
     
-    var currentPos: Double = js.native
+    var currentPos: Double
     
-    var rowNode: RowNode = js.native
+    var rowNode: RowNode
   }
   object SortedRowNode {
     

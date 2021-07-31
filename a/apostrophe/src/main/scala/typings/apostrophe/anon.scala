@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.apostrophe.mod.AposObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
   }
   object Fields {
     
@@ -43,7 +41,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Form extends StObject {
     
     def form(
@@ -52,8 +49,8 @@ object anon {
       name: String,
       `object`: AposObject,
       field: js.Any,
-      callback: js.Function0[_]
-    ): Unit = js.native
+      callback: js.Function0[js.Any]
+    ): Unit
     
     def string(
       req: js.Any,
@@ -61,15 +58,15 @@ object anon {
       name: String,
       `object`: AposObject,
       field: js.Any,
-      callback: js.Function0[_]
-    ): Unit = js.native
+      callback: js.Function0[js.Any]
+    ): Unit
   }
   object Form {
     
     @scala.inline
     def apply(
-      form: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[_]) => Unit,
-      string: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[_]) => Unit
+      form: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit,
+      string: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit
     ): Form = {
       val __obj = js.Dynamic.literal(form = js.Any.fromFunction6(form), string = js.Any.fromFunction6(string))
       __obj.asInstanceOf[Form]
@@ -79,21 +76,20 @@ object anon {
     implicit class FormMutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setForm(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction6(value))
+      def setForm(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "form", js.Any.fromFunction6(value))
       
       @scala.inline
-      def setString(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[_]) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction6(value))
+      def setString(value: (js.Any, js.Any, String, AposObject, js.Any, js.Function0[js.Any]) => Unit): Self = StObject.set(x, "string", js.Any.fromFunction6(value))
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var _id: String = js.native
+    var _id: String
     
-    var _url: js.UndefOr[String] = js.native
+    var _url: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Id {
     
@@ -121,10 +117,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Projection extends StObject {
     
-    var projection: js.UndefOr[StringDictionary[Double]] = js.native
+    var projection: js.UndefOr[StringDictionary[Double]] = js.undefined
   }
   object Projection {
     

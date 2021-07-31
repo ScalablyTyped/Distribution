@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualRule extends StObject {
   
   /** The list of group names and the corresponding items from the source data that map to each group name. */
-  var groups: js.UndefOr[js.Array[ManualRuleGroup]] = js.native
+  var groups: js.UndefOr[js.Array[ManualRuleGroup]] = js.undefined
 }
 object ManualRule {
   

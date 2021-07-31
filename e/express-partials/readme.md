@@ -11,7 +11,7 @@ Express 3.x Layout & Partial support.
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 43 |
-| # downloads        | 1135823 |
+| # downloads        | 1234898 |
 | # stars            | 5 |
 
 ## Links

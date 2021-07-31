@@ -2,15 +2,13 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISimpleOrientationSensor extends StObject {
   
-  def getCurrentOrientation(): SimpleOrientation = js.native
+  def getCurrentOrientation(): SimpleOrientation
   
-  var onorientationchanged: js.Any = js.native
+  var onorientationchanged: js.Any
 }
 object ISimpleOrientationSensor {
   

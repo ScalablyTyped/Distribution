@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputColumn extends StObject {
   
   /**
     * A description for a column.
     */
-  var Description: js.UndefOr[ColumnDescriptiveText] = js.native
+  var Description: js.UndefOr[ColumnDescriptiveText] = js.undefined
   
   /**
     * A display name for the dataset.
     */
-  var Name: js.UndefOr[ColumnName] = js.native
+  var Name: js.UndefOr[ColumnName] = js.undefined
   
   /**
     * Type.
     */
-  var Type: js.UndefOr[ColumnDataType] = js.native
+  var Type: js.UndefOr[ColumnDataType] = js.undefined
 }
 object OutputColumn {
   

@@ -7,26 +7,24 @@ import typings.chromeApps.chrome.gcm.OutgoingMessage
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofgcm extends StObject {
   
   /**
     * The maximum size (in bytes) of all key/value pairs in a message.
     * @default 4096
     */
-  val MAX_MESSAGE_SIZE: integer = js.native
+  val MAX_MESSAGE_SIZE: integer
   
   /** Fired when a message is received through GCM. */
-  val onMessage: Event[js.Function1[/* message */ IncomingMessage, Unit]] = js.native
+  val onMessage: Event[js.Function1[/* message */ IncomingMessage, Unit]]
   
   /** Fired when a GCM server had to delete messages sent by an app server to the application. See Messages deleted event section of Cloud Messaging documentation for details on handling this event. */
-  val onMessagesDeleted: Event[js.Function0[Unit]] = js.native
+  val onMessagesDeleted: Event[js.Function0[Unit]]
   
   /** Fired when it was not possible to send a message to the GCM server. */
-  val onSendError: Event[js.Function1[/* error */ GcmError, Unit]] = js.native
+  val onSendError: Event[js.Function1[/* error */ GcmError, Unit]]
   
   /**
     * Registers the application with GCM. The registration ID will be returned by the callback. If register is called again with the same list of senderIds, the same registration ID will be returned.
@@ -36,7 +34,7 @@ trait Typeofgcm extends StObject {
     * function(string registrationId) {...};
     * Parameter registrationId: A registration ID assigned to the application by the GCM.
     */
-  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = js.native
+  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit
   
   /**
     * Sends a message according to its contents.
@@ -46,7 +44,7 @@ trait Typeofgcm extends StObject {
     * function(string messageId) {...};
     * Parameter messageId: The ID of the message that the callback was issued for.
     */
-  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = js.native
+  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit
   
   /**
     * Unregisters the application from GCM.
@@ -54,7 +52,7 @@ trait Typeofgcm extends StObject {
     * The callback parameter should be a function that looks like this:
     * function() {...};
     */
-  def unregister(callback: js.Function0[Unit]): Unit = js.native
+  def unregister(callback: js.Function0[Unit]): Unit
 }
 object Typeofgcm {
   

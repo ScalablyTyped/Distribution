@@ -2,26 +2,24 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectionAliasPermissionsResult extends StObject {
   
   /**
     * The identifier of the connection alias.
     */
-  var AliasId: js.UndefOr[ConnectionAliasId] = js.native
+  var AliasId: js.UndefOr[ConnectionAliasId] = js.undefined
   
   /**
     * The permissions associated with a connection alias.
     */
-  var ConnectionAliasPermissions: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionAliasPermissions] = js.native
+  var ConnectionAliasPermissions: js.UndefOr[typings.awsSdk.workspacesMod.ConnectionAliasPermissions] = js.undefined
   
   /**
     * The token to use to retrieve the next set of results, or null if no more results are available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object DescribeConnectionAliasPermissionsResult {
   

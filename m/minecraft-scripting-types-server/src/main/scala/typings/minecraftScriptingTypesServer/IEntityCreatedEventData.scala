@@ -3,19 +3,17 @@ package typings.minecraftScriptingTypesServer
 import typings.minecraftScriptingTypesShared.IEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is triggered whenever an entity is added to the world.
   */
-@js.native
 trait IEntityCreatedEventData extends StObject {
   
   /**
     * The entity that was just created
     */
-  var entity: IEntity = js.native
+  var entity: IEntity
 }
 object IEntityCreatedEventData {
   

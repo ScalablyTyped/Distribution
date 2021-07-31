@@ -3,12 +3,12 @@ package typings.typescript.mod
 import typings.typescript.mod.SyntaxKind.NullKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NullLiteral
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
      with JsonObjectExpression {
   
   @JSName("kind")

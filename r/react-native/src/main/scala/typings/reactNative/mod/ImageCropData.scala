@@ -7,34 +7,32 @@ import typings.reactNative.reactNativeStrings.cover
 import typings.reactNative.reactNativeStrings.stretch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageCropData extends StObject {
   
   /**
     * (Optional) size to scale the cropped image to.
     */
-  var displaySize: js.UndefOr[Height] = js.native
+  var displaySize: js.UndefOr[Height] = js.undefined
   
   /**
     * The top-left corner of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var offset: X = js.native
+  var offset: X
   
   /**
     * (Optional) the resizing mode to use when scaling the image. If the
     * `displaySize` param is not specified, this has no effect.
     */
-  var resizeMode: js.UndefOr[contain | cover | stretch] = js.native
+  var resizeMode: js.UndefOr[contain | cover | stretch] = js.undefined
   
   /**
     * The size (dimensions) of the cropped image, specified in the original
     * image's coordinate space.
     */
-  var size: Height = js.native
+  var size: Height
 }
 object ImageCropData {
   

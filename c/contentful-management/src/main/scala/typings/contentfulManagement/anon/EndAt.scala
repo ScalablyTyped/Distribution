@@ -2,15 +2,13 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndAt extends StObject {
   
-  var endAt: String = js.native
+  var endAt: String
   
-  var startAt: String = js.native
+  var startAt: String
 }
 object EndAt {
   

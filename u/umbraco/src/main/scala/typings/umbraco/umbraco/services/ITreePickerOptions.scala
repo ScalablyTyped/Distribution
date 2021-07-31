@@ -2,26 +2,24 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Iconpicker dialog options object
   */
-@js.native
 trait ITreePickerOptions extends StObject {
   
   /*callback function*/
-  var callback: js.Function = js.native
+  var callback: js.Function
   
   /*should the tree pick one or multiple items before returning*/
-  var multiPicker: Boolean = js.native
+  var multiPicker: Boolean
   
   /*tree section to display*/
-  var section: String = js.native
+  var section: String
   
   /*specific tree to display*/
-  var treeAlias: String = js.native
+  var treeAlias: String
 }
 object ITreePickerOptions {
   

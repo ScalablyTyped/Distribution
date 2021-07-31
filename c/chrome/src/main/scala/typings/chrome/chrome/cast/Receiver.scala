@@ -2,23 +2,21 @@ package typings.chrome.chrome.cast
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Receiver extends StObject {
   
-  var capabilities: js.Array[Capability] = js.native
+  var capabilities: js.Array[Capability]
   
-  var displayStatus: ReceiverDisplayStatus = js.native
+  var displayStatus: ReceiverDisplayStatus
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var label: String = js.native
+  var label: String
   
-  var receiverType: ReceiverType = js.native
+  var receiverType: ReceiverType
   
-  var volume: Volume = js.native
+  var volume: Volume
 }
 object Receiver {
   

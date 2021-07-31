@@ -2,27 +2,25 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitImageOptions extends StObject {
   
-  var dataSrc: js.UndefOr[String] = js.native
+  var dataSrc: js.UndefOr[String] = js.undefined
   
-  var dataSrcset: js.UndefOr[String | Boolean] = js.native
+  var dataSrcset: js.UndefOr[String | Boolean] = js.undefined
   
-  var height: js.UndefOr[String | Boolean] = js.native
+  var height: js.UndefOr[String | Boolean] = js.undefined
   
-  var offsetLeft: js.UndefOr[String | Double] = js.native
+  var offsetLeft: js.UndefOr[String | Double] = js.undefined
   
-  var offsetTop: js.UndefOr[String] = js.native
+  var offsetTop: js.UndefOr[String] = js.undefined
   
-  var sizes: js.UndefOr[String | Boolean] = js.native
+  var sizes: js.UndefOr[String | Boolean] = js.undefined
   
-  var target: js.UndefOr[String | Boolean] = js.native
+  var target: js.UndefOr[String | Boolean] = js.undefined
   
-  var width: js.UndefOr[String | Boolean] = js.native
+  var width: js.UndefOr[String | Boolean] = js.undefined
 }
 object UIkitImageOptions {
   

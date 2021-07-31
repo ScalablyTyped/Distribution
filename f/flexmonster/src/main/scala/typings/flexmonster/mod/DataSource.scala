@@ -2,64 +2,62 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
-  var browseForFile: js.UndefOr[Boolean] = js.native
+  var browseForFile: js.UndefOr[Boolean] = js.undefined
   
-  var catalog: js.UndefOr[String] = js.native
+  var catalog: js.UndefOr[String] = js.undefined
   
-  var cube: js.UndefOr[String] = js.native
+  var cube: js.UndefOr[String] = js.undefined
   
-  var customData: js.UndefOr[String] = js.native
+  var customData: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Array[js.Object]] = js.native
+  var data: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var dataSourceInfo: js.UndefOr[String] = js.native
+  var dataSourceInfo: js.UndefOr[String] = js.undefined
   
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
-  var effectiveUserName: js.UndefOr[String] = js.native
+  var effectiveUserName: js.UndefOr[String] = js.undefined
   
-  var fieldSeparator: js.UndefOr[String] = js.native
+  var fieldSeparator: js.UndefOr[String] = js.undefined
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   // elasticsearch
-  var host: js.UndefOr[String | js.Array[String] | js.Object] = js.native
+  var host: js.UndefOr[String | js.Array[String] | js.Object] = js.undefined
   
-  var ignoreQuotedLineBreaks: js.UndefOr[Boolean] = js.native
+  var ignoreQuotedLineBreaks: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String] = js.native
+  var index: js.UndefOr[String] = js.undefined
   
-  var localeIdentifier: js.UndefOr[String] = js.native
+  var localeIdentifier: js.UndefOr[String] = js.undefined
   
-  var mapping: js.UndefOr[js.Object] = js.native
+  var mapping: js.UndefOr[js.Object] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
   
-  var recordsetDelimiter: js.UndefOr[String] = js.native
+  var recordsetDelimiter: js.UndefOr[String] = js.undefined
   
-  var requestHeaders: js.UndefOr[js.Object] = js.native
+  var requestHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var roles: js.UndefOr[String] = js.native
+  var roles: js.UndefOr[String] = js.undefined
   
-  var subquery: js.UndefOr[String | js.Object] = js.native
+  var subquery: js.UndefOr[String | js.Object] = js.undefined
   
-  var thousandSeparator: js.UndefOr[String] = js.native
+  var thousandSeparator: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object DataSource {
   

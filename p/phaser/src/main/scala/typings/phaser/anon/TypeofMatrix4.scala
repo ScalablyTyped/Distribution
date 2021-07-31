@@ -2,26 +2,24 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofMatrix4 extends StObject {
   
   /* static member */
-  def initTemps(): Unit = js.native
+  def initTemps(): Unit
   
   /* static member */
-  var tmpMatrix: js.Any = js.native
+  var tmpMatrix: js.Any
   
   /* static member */
-  var xAxis: js.Any = js.native
+  var xAxis: js.Any
   
   /* static member */
-  var yAxis: js.Any = js.native
+  var yAxis: js.Any
   
   /* static member */
-  var zAxis: js.Any = js.native
+  var zAxis: js.Any
 }
 object TypeofMatrix4 {
   

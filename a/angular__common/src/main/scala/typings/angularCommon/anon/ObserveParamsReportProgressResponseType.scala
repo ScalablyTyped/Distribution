@@ -7,29 +7,27 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObserveParamsReportProgressResponseType extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.native
+  var headers: js.UndefOr[HttpHeaders | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var observe: events = js.native
+  var observe: events
   
-  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.native
+  var params: js.UndefOr[HttpParams | (StringDictionary[String | js.Array[String]])] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: arraybuffer = js.native
+  var responseType: arraybuffer
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ObserveParamsReportProgressResponseType {
   
   @scala.inline
-  def apply(observe: events, responseType: arraybuffer): ObserveParamsReportProgressResponseType = {
-    val __obj = js.Dynamic.literal(observe = observe.asInstanceOf[js.Any], responseType = responseType.asInstanceOf[js.Any])
+  def apply(): ObserveParamsReportProgressResponseType = {
+    val __obj = js.Dynamic.literal(observe = "events", responseType = "arraybuffer")
     __obj.asInstanceOf[ObserveParamsReportProgressResponseType]
   }
   

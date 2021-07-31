@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,11 +17,37 @@ object mod {
     */
   @JSImport("headroom.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Headroom_ {
+  class ^ protected ()
+    extends StObject
+       with Headroom_ {
     def this(element: HTMLElement) = this()
     def this(element: Node) = this()
     def this(element: HTMLElement, options: HeadroomOptions) = this()
     def this(element: Node, options: HeadroomOptions) = this()
+    
+    /** destroy the headroom instance, removing event listeners and any classes added */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /** freeze the headroom instance's state (pinned or unpinned), and no longer respond to scroll events */
+    /* CompleteClass */
+    override def freeze(): Unit = js.native
+    
+    /** initialise */
+    /* CompleteClass */
+    override def init(): Unit = js.native
+    
+    /** forcibly set the headroom instance's state to pinned */
+    /* CompleteClass */
+    override def pin(): Unit = js.native
+    
+    /** resume responding to scroll events */
+    /* CompleteClass */
+    override def unfreeze(): Unit = js.native
+    
+    /** forcibly set the headroom instance's state to unpinned */
+    /* CompleteClass */
+    override def unpin(): Unit = js.native
   }
   @JSImport("headroom.js", JSImport.Namespace)
   @js.native
@@ -47,26 +72,25 @@ object mod {
     * Hides header when scrolling down
     * Shows header when scrolling up
     */
-  @js.native
   trait Headroom_ extends StObject {
     
     /** destroy the headroom instance, removing event listeners and any classes added */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /** freeze the headroom instance's state (pinned or unpinned), and no longer respond to scroll events */
-    def freeze(): Unit = js.native
+    def freeze(): Unit
     
     /** initialise */
-    def init(): Unit = js.native
+    def init(): Unit
     
     /** forcibly set the headroom instance's state to pinned */
-    def pin(): Unit = js.native
+    def pin(): Unit
     
     /** resume responding to scroll events */
-    def unfreeze(): Unit = js.native
+    def unfreeze(): Unit
     
     /** forcibly set the headroom instance's state to unpinned */
-    def unpin(): Unit = js.native
+    def unpin(): Unit
   }
   object Headroom_ {
     
@@ -108,44 +132,43 @@ object mod {
   
   object headroom {
     
-    @js.native
     trait HeadroomOptions extends StObject {
       
       /** css classes to apply multiple classes are also supported with a space-separated list */
-      var classes: js.UndefOr[Bottom] = js.native
+      var classes: js.UndefOr[Bottom] = js.undefined
       
       /**
         * vertical offset in px before element is first unpinned
         * @default 0
         */
-      var offset: js.UndefOr[Double] = js.native
+      var offset: js.UndefOr[Double] = js.undefined
       
       /** callback when at bottom of page, `this` is headroom object */
-      var onBottom: js.UndefOr[js.Function0[Unit]] = js.native
+      var onBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /** callback when moving away from bottom of page, `this` is headroom object */
-      var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.native
+      var onNotBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /** callback when below offset, `this` is headroom object */
-      var onNotTop: js.UndefOr[js.Function0[Unit]] = js.native
+      var onNotTop: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /** callback when pinned, `this` is headroom object */
-      var onPin: js.UndefOr[js.Function0[Unit]] = js.native
+      var onPin: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /** callback when above offset, `this` is headroom object */
-      var onTop: js.UndefOr[js.Function0[Unit]] = js.native
+      var onTop: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /** callback when unpinned, `this` is headroom object */
-      var onUnpin: js.UndefOr[js.Function0[Unit]] = js.native
+      var onUnpin: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * element to listen to scroll events on
         * @default window
         */
-      var scroller: js.UndefOr[HTMLElement] = js.native
+      var scroller: js.UndefOr[HTMLElement] = js.undefined
       
       /** scroll tolerance in px before state changes or you can specify tolerance individually for up/down scroll */
-      var tolerance: js.UndefOr[Tolerance | Double] = js.native
+      var tolerance: js.UndefOr[Tolerance | Double] = js.undefined
     }
     object HeadroomOptions {
       
@@ -220,14 +243,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Tolerance extends StObject {
       
       /** @default 0 */
-      var down: js.UndefOr[Double] = js.native
+      var down: js.UndefOr[Double] = js.undefined
       
       /** @default 0 */
-      var up: js.UndefOr[Double] = js.native
+      var up: js.UndefOr[Double] = js.undefined
     }
     object Tolerance {
       

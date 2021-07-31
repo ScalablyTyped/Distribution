@@ -6,27 +6,27 @@ import typings.rollup.mod.RollupWatcherEvent
 import typings.rollup.rollupStrings.BUNDLE_END
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Duration extends RollupWatcherEvent {
+trait Duration
+  extends StObject
+     with RollupWatcherEvent {
   
-  var code: BUNDLE_END = js.native
+  var code: BUNDLE_END
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var input: js.UndefOr[InputOption] = js.native
+  var input: js.UndefOr[InputOption] = js.undefined
   
-  var output: js.Array[String] = js.native
+  var output: js.Array[String]
   
-  var result: RollupBuild = js.native
+  var result: RollupBuild
 }
 object Duration {
   
   @scala.inline
-  def apply(code: BUNDLE_END, duration: Double, output: js.Array[String], result: RollupBuild): Duration = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+  def apply(duration: Double, output: js.Array[String], result: RollupBuild): Duration = {
+    val __obj = js.Dynamic.literal(code = "BUNDLE_END", duration = duration.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
     __obj.asInstanceOf[Duration]
   }
   

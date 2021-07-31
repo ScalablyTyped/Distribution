@@ -5,27 +5,25 @@ import typings.evernote.mod.Types.MessageEventID
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blocked extends StObject {
   
-  var blocked: js.UndefOr[Boolean] = js.native
+  var blocked: js.UndefOr[Boolean] = js.undefined
   
-  var contact: js.UndefOr[Contact] = js.native
+  var contact: js.UndefOr[Contact] = js.undefined
   
-  var deactivated: js.UndefOr[Boolean] = js.native
+  var deactivated: js.UndefOr[Boolean] = js.undefined
   
-  var eventId: js.UndefOr[MessageEventID] = js.native
+  var eventId: js.UndefOr[MessageEventID] = js.undefined
   
-  var id: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.native
+  var id: js.UndefOr[typings.evernote.mod.Types.IdentityID] = js.undefined
   
-  var sameBusiness: js.UndefOr[Boolean] = js.native
+  var sameBusiness: js.UndefOr[Boolean] = js.undefined
   
-  var userConnected: js.UndefOr[Boolean] = js.native
+  var userConnected: js.UndefOr[Boolean] = js.undefined
   
-  var userId: js.UndefOr[UserID] = js.native
+  var userId: js.UndefOr[UserID] = js.undefined
 }
 object Blocked {
   

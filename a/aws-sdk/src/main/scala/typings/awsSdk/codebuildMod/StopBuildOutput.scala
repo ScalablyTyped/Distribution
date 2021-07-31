@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBuildOutput extends StObject {
   
   /**
     * Information about the build.
     */
-  var build: js.UndefOr[Build] = js.native
+  var build: js.UndefOr[Build] = js.undefined
 }
 object StopBuildOutput {
   

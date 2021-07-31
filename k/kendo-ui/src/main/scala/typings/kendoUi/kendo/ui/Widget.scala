@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.Observable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Widget extends Observable {
+trait Widget
+  extends StObject
+     with Observable {
   
   def destroy(): Unit = js.native
   

@@ -3,19 +3,17 @@ package typings.orientjs.mod
 import typings.orientjs.anon.Max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ODatabaseSessionPoolOptions extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var pool: js.UndefOr[Max] = js.native
+  var pool: js.UndefOr[Max] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object ODatabaseSessionPoolOptions {
   

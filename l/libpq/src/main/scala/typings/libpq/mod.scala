@@ -6,7 +6,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -123,9 +122,9 @@ object mod {
       *                                                  commandText.
       */
     def execParams(): Unit = js.native
-    def execParams(commandText: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Unit = js.native
     def execParams(commandText: String): Unit = js.native
     def execParams(commandText: String, parameters: js.Array[String | Double]): Unit = js.native
+    def execParams(commandText: Unit, parameters: js.Array[String | Double]): Unit = js.native
     
     /**
       * (sync) Sends a command to the server to execute a previously prepared statement. Blocks
@@ -136,9 +135,9 @@ object mod {
       *                                                  statement.
       */
     def execPrepared(): Unit = js.native
-    def execPrepared(statementName: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Unit = js.native
     def execPrepared(statementName: String): Unit = js.native
     def execPrepared(statementName: String, parameters: js.Array[String | Double]): Unit = js.native
+    def execPrepared(statementName: Unit, parameters: js.Array[String | Double]): Unit = js.native
     
     /**
       * Disconnects from the backend and cleans up all memory used by the libpq connection.
@@ -335,9 +334,9 @@ object mod {
       * @returns true if the command was sent succesfully or false if it failed to send.
       */
     def sendQueryParams(): Boolean = js.native
-    def sendQueryParams(commandText: js.UndefOr[scala.Nothing], parameters: js.Array[String | Double]): Boolean = js.native
     def sendQueryParams(commandText: String): Boolean = js.native
     def sendQueryParams(commandText: String, parameters: js.Array[String | Double]): Boolean = js.native
+    def sendQueryParams(commandText: Unit, parameters: js.Array[String | Double]): Boolean = js.native
     
     /**
       * (async) Sends a request to execute a previously prepared statement.
@@ -347,9 +346,9 @@ object mod {
       * @returns true if the command was sent succesfully or false if it failed to send.
       */
     def sendQueryPrepared(): Boolean = js.native
-    def sendQueryPrepared(statementName: js.UndefOr[scala.Nothing], parameters: js.Array[String]): Boolean = js.native
     def sendQueryPrepared(statementName: String): Boolean = js.native
     def sendQueryPrepared(statementName: String, parameters: js.Array[String]): Boolean = js.native
+    def sendQueryPrepared(statementName: Unit, parameters: js.Array[String]): Boolean = js.native
     
     /**
       * @returns the version of the connected PostgreSQL backend server as a number.
@@ -396,14 +395,13 @@ object mod {
     def writable(callback: js.Function0[Unit]): this.type = js.native
   }
   
-  @js.native
   trait NotifyMsg extends StObject {
     
-    var be_pid: Double = js.native
+    var be_pid: Double
     
-    var extra: String = js.native
+    var extra: String
     
-    var relname: String = js.native
+    var relname: String
   }
   object NotifyMsg {
     
@@ -427,40 +425,39 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultError extends StObject {
     
-    var constraintName: js.UndefOr[String] = js.native
+    var constraintName: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var dataTypeName: js.UndefOr[String] = js.native
+    var dataTypeName: js.UndefOr[String] = js.undefined
     
-    var internalPosition: js.UndefOr[String] = js.native
+    var internalPosition: js.UndefOr[String] = js.undefined
     
-    var internalQuery: js.UndefOr[String] = js.native
+    var internalQuery: js.UndefOr[String] = js.undefined
     
-    var messageDetail: js.UndefOr[String] = js.native
+    var messageDetail: js.UndefOr[String] = js.undefined
     
-    var messageHint: js.UndefOr[String] = js.native
+    var messageHint: js.UndefOr[String] = js.undefined
     
-    var messagePrimary: String = js.native
+    var messagePrimary: String
     
-    var schemaName: js.UndefOr[String] = js.native
+    var schemaName: js.UndefOr[String] = js.undefined
     
-    var severity: String = js.native
+    var severity: String
     
-    var sourceFile: String = js.native
+    var sourceFile: String
     
-    var sourceFunction: String = js.native
+    var sourceFunction: String
     
-    var sourceLine: String = js.native
+    var sourceLine: String
     
-    var sqlState: String = js.native
+    var sqlState: String
     
-    var statementPosition: js.UndefOr[String] = js.native
+    var statementPosition: js.UndefOr[String] = js.undefined
     
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
   }
   object ResultError {
     

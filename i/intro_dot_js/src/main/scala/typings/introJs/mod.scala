@@ -15,29 +15,28 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("intro.js", JSImport.Namespace)
-  @js.native
-  def apply(): IntroJs = js.native
-  @JSImport("intro.js", JSImport.Namespace)
-  @js.native
-  def apply(element: HTMLElement): IntroJs = js.native
-  @JSImport("intro.js", JSImport.Namespace)
-  @js.native
-  def apply(querySelector: String): IntroJs = js.native
+  @scala.inline
+  def apply(): IntroJs = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[IntroJs]
+  @scala.inline
+  def apply(element: HTMLElement): IntroJs = ^.asInstanceOf[js.Dynamic].apply(element.asInstanceOf[js.Any]).asInstanceOf[IntroJs]
+  @scala.inline
+  def apply(querySelector: String): IntroJs = ^.asInstanceOf[js.Dynamic].apply(querySelector.asInstanceOf[js.Any]).asInstanceOf[IntroJs]
   
+  @JSImport("intro.js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Hint extends StObject {
     
-    var element: js.UndefOr[String | HTMLElement | Element] = js.native
+    var element: js.UndefOr[String | HTMLElement | Element] = js.undefined
     
-    var hint: String = js.native
+    var hint: String
     
-    var hintPosition: js.UndefOr[String] = js.native
+    var hintPosition: js.UndefOr[String] = js.undefined
   }
   object Hint {
     
@@ -94,19 +93,21 @@ object mod {
     
     def nextStep(): IntroJs = js.native
     
-    def onafterchange(callback: js.Function1[/* element */ HTMLElement, _]): IntroJs = js.native
+    def onafterchange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
     
-    def onbeforechange(callback: js.Function1[/* element */ HTMLElement, _]): IntroJs = js.native
+    def onbeforechange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
     
-    def onchange(callback: js.Function1[/* element */ HTMLElement, _]): IntroJs = js.native
+    def onchange(callback: js.Function1[/* element */ HTMLElement, js.Any]): IntroJs = js.native
     
     def oncomplete(callback: js.Function): IntroJs = js.native
     
     def onexit(callback: js.Function): IntroJs = js.native
     
-    def onhintclick(callback: js.Function3[/* hintElement */ HTMLElement, /* item */ Step, /* stepId */ Double, _]): IntroJs = js.native
+    def onhintclick(
+      callback: js.Function3[/* hintElement */ HTMLElement, /* item */ Step, /* stepId */ Double, js.Any]
+    ): IntroJs = js.native
     
-    def onhintclose(callback: js.Function1[/* stepId */ Double, _]): IntroJs = js.native
+    def onhintclose(callback: js.Function1[/* stepId */ Double, js.Any]): IntroJs = js.native
     
     def onhintsadded(callback: js.Function): IntroJs = js.native
     
@@ -131,60 +132,59 @@ object mod {
     def start(): IntroJs = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var disableInteraction: js.UndefOr[Boolean] = js.native
+    var disableInteraction: js.UndefOr[Boolean] = js.undefined
     
-    var doneLabel: js.UndefOr[String] = js.native
+    var doneLabel: js.UndefOr[String] = js.undefined
     
-    var exitOnEsc: js.UndefOr[Boolean] = js.native
+    var exitOnEsc: js.UndefOr[Boolean] = js.undefined
     
-    var exitOnOverlayClick: js.UndefOr[Boolean] = js.native
+    var exitOnOverlayClick: js.UndefOr[Boolean] = js.undefined
     
-    var hideNext: js.UndefOr[Boolean] = js.native
+    var hideNext: js.UndefOr[Boolean] = js.undefined
     
-    var hidePrev: js.UndefOr[Boolean] = js.native
+    var hidePrev: js.UndefOr[Boolean] = js.undefined
     
-    var highlightClass: js.UndefOr[String] = js.native
+    var highlightClass: js.UndefOr[String] = js.undefined
     
-    var hintAnimation: js.UndefOr[Boolean] = js.native
+    var hintAnimation: js.UndefOr[Boolean] = js.undefined
     
-    var hintButtonLabel: js.UndefOr[String] = js.native
+    var hintButtonLabel: js.UndefOr[String] = js.undefined
     
-    var hintPosition: js.UndefOr[String] = js.native
+    var hintPosition: js.UndefOr[String] = js.undefined
     
-    var hints: js.UndefOr[js.Array[Hint]] = js.native
+    var hints: js.UndefOr[js.Array[Hint]] = js.undefined
     
-    var keyboardNavigation: js.UndefOr[Boolean] = js.native
+    var keyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
-    var nextLabel: js.UndefOr[String] = js.native
+    var nextLabel: js.UndefOr[String] = js.undefined
     
-    var overlayOpacity: js.UndefOr[Double] = js.native
+    var overlayOpacity: js.UndefOr[Double] = js.undefined
     
-    var positionPrecedence: js.UndefOr[js.Array[String]] = js.native
+    var positionPrecedence: js.UndefOr[js.Array[String]] = js.undefined
     
-    var prevLabel: js.UndefOr[String] = js.native
+    var prevLabel: js.UndefOr[String] = js.undefined
     
-    var scrollPadding: js.UndefOr[Double] = js.native
+    var scrollPadding: js.UndefOr[Double] = js.undefined
     
-    var scrollToElement: js.UndefOr[Boolean] = js.native
+    var scrollToElement: js.UndefOr[Boolean] = js.undefined
     
-    var showBullets: js.UndefOr[Boolean] = js.native
+    var showBullets: js.UndefOr[Boolean] = js.undefined
     
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
-    var showProgress: js.UndefOr[Boolean] = js.native
+    var showProgress: js.UndefOr[Boolean] = js.undefined
     
-    var showStepNumbers: js.UndefOr[Boolean] = js.native
+    var showStepNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var skipLabel: js.UndefOr[String] = js.native
+    var skipLabel: js.UndefOr[String] = js.undefined
     
-    var steps: js.UndefOr[js.Array[Step]] = js.native
+    var steps: js.UndefOr[js.Array[Step]] = js.undefined
     
-    var tooltipClass: js.UndefOr[String] = js.native
+    var tooltipClass: js.UndefOr[String] = js.undefined
     
-    var tooltipPosition: js.UndefOr[String] = js.native
+    var tooltipPosition: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -364,24 +364,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Step extends StObject {
     
-    var disableInteraction: js.UndefOr[Boolean] = js.native
+    var disableInteraction: js.UndefOr[Boolean] = js.undefined
     
-    var element: js.UndefOr[String | HTMLElement | Element] = js.native
+    var element: js.UndefOr[String | HTMLElement | Element] = js.undefined
     
-    var highlightClass: js.UndefOr[String] = js.native
+    var highlightClass: js.UndefOr[String] = js.undefined
     
-    var intro: String = js.native
+    var intro: String
     
     var position: js.UndefOr[
         top | left | right | bottom | `bottom-left-aligned` | `bottom-middle-aligned` | `bottom-right-aligned` | auto
-      ] = js.native
+      ] = js.undefined
     
-    var scrollTo: js.UndefOr[off | tooltip | element] = js.native
+    var scrollTo: js.UndefOr[off | tooltip | element] = js.undefined
     
-    var tooltipClass: js.UndefOr[String] = js.native
+    var tooltipClass: js.UndefOr[String] = js.undefined
   }
   object Step {
     

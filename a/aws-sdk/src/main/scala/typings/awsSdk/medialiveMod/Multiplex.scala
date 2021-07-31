@@ -2,61 +2,59 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Multiplex extends StObject {
   
   /**
     * The unique arn of the multiplex.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * A list of availability zones for the multiplex.
     */
-  var AvailabilityZones: js.UndefOr[listOfString] = js.native
+  var AvailabilityZones: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A list of the multiplex output destinations.
     */
-  var Destinations: js.UndefOr[listOfMultiplexOutputDestination] = js.native
+  var Destinations: js.UndefOr[listOfMultiplexOutputDestination] = js.undefined
   
   /**
     * The unique id of the multiplex.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * Configuration for a multiplex event.
     */
-  var MultiplexSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexSettings] = js.native
+  var MultiplexSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexSettings] = js.undefined
   
   /**
     * The name of the multiplex.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * The number of currently healthy pipelines.
     */
-  var PipelinesRunningCount: js.UndefOr[integer] = js.native
+  var PipelinesRunningCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The number of programs in the multiplex.
     */
-  var ProgramCount: js.UndefOr[integer] = js.native
+  var ProgramCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The current state of the multiplex.
     */
-  var State: js.UndefOr[MultiplexState] = js.native
+  var State: js.UndefOr[MultiplexState] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object Multiplex {
   

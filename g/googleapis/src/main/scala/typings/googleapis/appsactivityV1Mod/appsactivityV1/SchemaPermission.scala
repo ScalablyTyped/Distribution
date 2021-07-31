@@ -2,7 +2,6 @@ package typings.googleapis.appsactivityV1Mod.appsactivityV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,40 +9,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * regards to a Google Drive object. This is a subset of the fields contained
   * in a corresponding Drive Permissions object.
   */
-@js.native
 trait SchemaPermission extends StObject {
   
   /**
     * The name of the user or group the permission applies to.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID for this permission. Corresponds to the Drive API&#39;s permission
     * ID returned as part of the Drive Permissions resource.
     */
-  var permissionId: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the Google Drive permissions role. The role determines a
     * user&#39;s ability to read, write, or comment on the file.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates how widely permissions are granted.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s information if the type is USER.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * Whether the permission requires a link to the file.
     */
-  var withLink: js.UndefOr[Boolean] = js.native
+  var withLink: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPermission {
   

@@ -2,71 +2,69 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountAddress extends StObject {
   
   /**
     * The first line of the address. Maximum length: 100 characters.
     */
-  var address1: js.UndefOr[String] = js.native
+  var address1: js.UndefOr[String] = js.undefined
   
   /**
     * The second line of the address. Maximum length: 100 characters.
     */
-  var address2: js.UndefOr[String] = js.native
+  var address2: js.UndefOr[String] = js.undefined
   
   /**
     * The city associated with the address. Maximum length: 40 characters.
     */
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
   /**
     * The country associated with the address. Maximum length: 50 characters.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The email address associated with the account.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The fax number associated with the account.
     */
-  var fax: js.UndefOr[String] = js.native
+  var fax: js.UndefOr[String] = js.undefined
   
   /**
     * The first name of the user associated with the account. Maximum Length: 50 characters.
     */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /**
     * The last name of the user associated with the account.
     */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number associated with the account.
     */
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
   
   /**
     * The postal code associated with the address. Maximum length: 20 characters.
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * The state or province associated with the address. Maximum length: 40 characters.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * An array of supported countries associated with the account.
     */
-  var supportedCountries: js.UndefOr[js.Array[Country]] = js.native
+  var supportedCountries: js.UndefOr[js.Array[Country]] = js.undefined
 }
 object AccountAddress {
   

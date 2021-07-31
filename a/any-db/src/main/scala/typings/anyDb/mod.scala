@@ -6,30 +6,27 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("any-db", "createConnection")
+  @JSImport("any-db", JSImport.Namespace)
   @js.native
-  def createConnection(opts: ConnectOpts): Connection = js.native
-  @JSImport("any-db", "createConnection")
-  @js.native
-  def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = js.native
-  @JSImport("any-db", "createConnection")
-  @js.native
-  def createConnection(url: String): Connection = js.native
-  @JSImport("any-db", "createConnection")
-  @js.native
-  def createConnection(url: String, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("any-db", "createPool")
-  @js.native
-  def createPool(opts: ConnectOpts, config: PoolConfig): ConnectionPool = js.native
-  @JSImport("any-db", "createPool")
-  @js.native
-  def createPool(url: String, config: PoolConfig): ConnectionPool = js.native
+  @scala.inline
+  def createConnection(opts: ConnectOpts): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  @scala.inline
+  def createConnection(opts: ConnectOpts, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  @scala.inline
+  def createConnection(url: String): Connection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any]).asInstanceOf[Connection]
+  @scala.inline
+  def createConnection(url: String, callback: js.Function2[/* error */ Error, /* connection */ Connection, Unit]): Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Connection]
+  
+  @scala.inline
+  def createPool(opts: ConnectOpts, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(opts.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
+  @scala.inline
+  def createPool(url: String, config: PoolConfig): ConnectionPool = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(url.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ConnectionPool]
   
   @js.native
   trait Adapter extends StObject {
@@ -48,25 +45,24 @@ object mod {
       * by synchronously returning a Query stream
       */
     def createQuery(text: String): Query = js.native
+    def createQuery(text: String, params: js.Array[js.Any]): Query = js.native
     def createQuery(
       text: String,
-      params: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
       callback: js.Function2[/* error */ Error, /* result */ ResultSet, Unit]
     ): Query = js.native
-    def createQuery(text: String, params: js.Array[_]): Query = js.native
     def createQuery(
       text: String,
-      params: js.Array[_],
+      params: Unit,
       callback: js.Function2[/* error */ Error, /* result */ ResultSet, Unit]
     ): Query = js.native
     
     var name: String = js.native
   }
   
-  @js.native
   trait ConnectOpts extends StObject {
     
-    var adapter: String = js.native
+    var adapter: String
   }
   object ConnectOpts {
     
@@ -119,7 +115,9 @@ object mod {
   }
   
   @js.native
-  trait ConnectionStatic extends Instantiable0[Connection] {
+  trait ConnectionStatic
+    extends StObject
+       with Instantiable0[Connection] {
     
     def createConnection(): Unit = js.native
     
@@ -128,10 +126,9 @@ object mod {
     var name: String = js.native
   }
   
-  @js.native
   trait Field extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Field {
     
@@ -149,25 +146,24 @@ object mod {
     }
   }
   
-  @js.native
   trait PoolConfig extends StObject {
     
     /**
       * (default 30000) The maximum amount of time a connection can sit idle in the pool before being reaped
       */
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * max (default 10) The maximum number of connections to keep open in the pool.
       * When this limit is reached further requests for connections will queue waiting
       * for an existing connection to be released back into the pool.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * min (default 0) The minimum number of connections to keep open in the pool.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Called immediately after a connection is first established. Use this to do one-time setup of new connections.
@@ -179,18 +175,18 @@ object mod {
           /* ready */ js.Function2[/* error */ Error, /* result */ Connection, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       *  (default 1000) How frequently the pool should check for connections that are old enough to be reaped.
       */
-    var reapInterval: js.UndefOr[Double] = js.native
+    var reapInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * (default true) When this is true, the pool will reap connections that
       * have been idle for more than idleTimeout milliseconds.
       */
-    var refreshIdle: js.UndefOr[Boolean] = js.native
+    var refreshIdle: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called each time a connection is returned to the pool. Use this to restore a connection to
@@ -199,14 +195,14 @@ object mod {
       */
     var reset: js.UndefOr[
         js.Function2[/* connection */ Connection, /* done */ js.Function1[/* error */ Error, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * (default function (err) { return true }) - Called when an error is encountered
       * by pool.query or emitted by an idle connection. If shouldDestroyConnection(error)
       * is truthy the connection will be destroyed, otherwise it will be reset.
       */
-    var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ Error, Boolean]] = js.native
+    var shouldDestroyConnection: js.UndefOr[js.Function1[/* error */ Error, Boolean]] = js.undefined
   }
   object PoolConfig {
     
@@ -291,7 +287,7 @@ object mod {
     /**
       * The array of parameter values.
       */
-    var values: js.Array[_] = js.native
+    var values: js.Array[js.Any] = js.native
   }
   
   @js.native
@@ -311,62 +307,61 @@ object mod {
       * with ConnectionPool and Transaction. See Adapter.createQuery for more details.
       */
     def query(text: String): Query = js.native
+    def query(text: String, params: js.Array[js.Any]): Query = js.native
     def query(
       text: String,
-      params: js.UndefOr[scala.Nothing],
+      params: js.Array[js.Any],
       callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
     ): Query = js.native
-    def query(text: String, params: js.Array[_]): Query = js.native
     def query(
       text: String,
-      params: js.Array[_],
+      params: Unit,
       callback: js.Function2[/* error */ Error, /* results */ ResultSet, Unit]
     ): Query = js.native
   }
   
-  @js.native
   trait ResultSet extends StObject {
     
     /**
       * Not supported by all drivers.
       */
-    var affectedRows: js.UndefOr[Double] = js.native
+    var affectedRows: js.UndefOr[Double] = js.undefined
     
     /**
       * Not supported by all drivers.
       */
-    var changedRows: js.UndefOr[Double] = js.native
+    var changedRows: js.UndefOr[Double] = js.undefined
     
     /**
       * Not supported by all drivers.
       */
-    var fieldCount: js.UndefOr[Double] = js.native
+    var fieldCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Result field descriptions
       */
-    var fields: js.Array[Field] = js.native
+    var fields: js.Array[Field]
     
     /**
       * Not supported by all drivers.
       */
-    var lastInsertId: js.UndefOr[js.Any] = js.native
+    var lastInsertId: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Affected rows. Note e.g. for INSERT queries the rows property is not filled even
       * though rowCount is non-zero.
       */
-    var rowCount: Double = js.native
+    var rowCount: Double
     
     /**
       * Result rows
       */
-    var rows: js.Array[_] = js.native
+    var rows: js.Array[js.Any]
   }
   object ResultSet {
     
     @scala.inline
-    def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[_]): ResultSet = {
+    def apply(fields: js.Array[Field], rowCount: Double, rows: js.Array[js.Any]): ResultSet = {
       val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
       __obj.asInstanceOf[ResultSet]
     }
@@ -408,7 +403,7 @@ object mod {
       def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRows(value: js.Array[_]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
+      def setRows(value: js.Array[js.Any]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRowsVarargs(value: js.Any*): Self = StObject.set(x, "rows", js.Array(value :_*))

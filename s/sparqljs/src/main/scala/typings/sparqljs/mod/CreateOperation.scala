@@ -3,24 +3,24 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.create
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateOperation extends ManagementOperation {
+trait CreateOperation
+  extends StObject
+     with ManagementOperation {
   
-  var graph: IriTerm = js.native
+  var graph: IriTerm
   
-  var silent: Boolean = js.native
+  var silent: Boolean
   
-  var `type`: create = js.native
+  var `type`: create
 }
 object CreateOperation {
   
   @scala.inline
-  def apply(graph: IriTerm, silent: Boolean, `type`: create): CreateOperation = {
+  def apply(graph: IriTerm, silent: Boolean): CreateOperation = {
     val __obj = js.Dynamic.literal(graph = graph.asInstanceOf[js.Any], silent = silent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("create")
     __obj.asInstanceOf[CreateOperation]
   }
   

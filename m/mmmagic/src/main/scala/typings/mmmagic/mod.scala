@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -138,8 +137,8 @@ object mod {
   class Magic () extends StObject {
     def this(magicPath: String) = this()
     def this(mask: bitmask) = this()
-    def this(magicPath: js.UndefOr[scala.Nothing], mask: bitmask) = this()
     def this(magicPath: String, mask: bitmask) = this()
+    def this(magicPath: Unit, mask: bitmask) = this()
     
     def detect(data: Buffer, callback: DetectionCallback): Unit = js.native
     

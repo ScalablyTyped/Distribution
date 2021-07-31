@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to decrement the indent level of paragraphs in a selected numbered list.
   */
-@js.native
-trait DecrementNumberingIndentCommand extends CommandWithSimpleStateBase {
+trait DecrementNumberingIndentCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DecrementNumberingIndentCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DecrementNumberingIndentCommand {
   

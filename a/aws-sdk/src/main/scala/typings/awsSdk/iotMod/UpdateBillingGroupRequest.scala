@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBillingGroupRequest extends StObject {
   
   /**
     * The name of the billing group.
     */
-  var billingGroupName: BillingGroupName = js.native
+  var billingGroupName: BillingGroupName
   
   /**
     * The properties of the billing group.
     */
-  var billingGroupProperties: BillingGroupProperties = js.native
+  var billingGroupProperties: BillingGroupProperties
   
   /**
     * The expected version of the billing group. If the version of the billing group does not match the expected version specified in the request, the UpdateBillingGroup request is rejected with a VersionConflictException.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
 }
 object UpdateBillingGroupRequest {
   

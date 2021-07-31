@@ -2,66 +2,64 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelVersionDetail extends StObject {
   
   /**
     * The model version ARN.
     */
-  var arn: js.UndefOr[fraudDetectorArn] = js.native
+  var arn: js.UndefOr[fraudDetectorArn] = js.undefined
   
   /**
     * The timestamp when the model was created.
     */
-  var createdTime: js.UndefOr[time] = js.native
+  var createdTime: js.UndefOr[time] = js.undefined
   
   /**
     * The event details.
     */
-  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.native
+  var externalEventsDetail: js.UndefOr[ExternalEventsDetail] = js.undefined
   
   /**
     * The timestamp when the model was last updated.
     */
-  var lastUpdatedTime: js.UndefOr[time] = js.native
+  var lastUpdatedTime: js.UndefOr[time] = js.undefined
   
   /**
     * The model ID.
     */
-  var modelId: js.UndefOr[modelIdentifier] = js.native
+  var modelId: js.UndefOr[modelIdentifier] = js.undefined
   
   /**
     * The model type.
     */
-  var modelType: js.UndefOr[ModelTypeEnum] = js.native
+  var modelType: js.UndefOr[ModelTypeEnum] = js.undefined
   
   /**
     * The model version number.
     */
-  var modelVersionNumber: js.UndefOr[floatVersionString] = js.native
+  var modelVersionNumber: js.UndefOr[floatVersionString] = js.undefined
   
   /**
     * The status of the model version.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The training data schema.
     */
-  var trainingDataSchema: js.UndefOr[TrainingDataSchema] = js.native
+  var trainingDataSchema: js.UndefOr[TrainingDataSchema] = js.undefined
   
   /**
     * The model version training data source.
     */
-  var trainingDataSource: js.UndefOr[TrainingDataSourceEnum] = js.native
+  var trainingDataSource: js.UndefOr[TrainingDataSourceEnum] = js.undefined
   
   /**
     * The training results.
     */
-  var trainingResult: js.UndefOr[TrainingResult] = js.native
+  var trainingResult: js.UndefOr[TrainingResult] = js.undefined
 }
 object ModelVersionDetail {
   

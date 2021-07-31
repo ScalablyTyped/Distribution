@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingMod {
@@ -61,18 +60,17 @@ object ratingMod {
   @js.native
   val StyledStar: StyletronComponent[StyledRatingItemProps] = js.native
   
-  @js.native
   trait EmoticonRatingProps extends StObject {
     
-    var onChange: js.UndefOr[js.Function1[/* args */ ValueNumber, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ ValueNumber, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[RatingOverrides] = js.native
+    var overrides: js.UndefOr[RatingOverrides] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object EmoticonRatingProps {
     
@@ -86,7 +84,7 @@ object ratingMod {
     implicit class EmoticonRatingPropsMutableBuilder[Self <: EmoticonRatingProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnChange(value: /* args */ ValueNumber => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -117,16 +115,15 @@ object ratingMod {
     }
   }
   
-  @js.native
   trait RatingOverrides extends StObject {
     
     var Item: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object RatingOverrides {
     
@@ -157,10 +154,9 @@ object ratingMod {
     }
   }
   
-  @js.native
   trait RatingState extends StObject {
     
-    var previewIndex: js.UndefOr[Double] = js.native
+    var previewIndex: js.UndefOr[Double] = js.undefined
   }
   object RatingState {
     
@@ -181,20 +177,19 @@ object ratingMod {
     }
   }
   
-  @js.native
   trait StarRatingProps extends StObject {
     
-    var numItems: js.UndefOr[Double] = js.native
+    var numItems: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* args */ ValueNumber, _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* args */ ValueNumber, js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[RatingOverrides] = js.native
+    var overrides: js.UndefOr[RatingOverrides] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StarRatingProps {
     
@@ -214,7 +209,7 @@ object ratingMod {
       def setNumItemsUndefined: Self = StObject.set(x, "numItems", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* args */ ValueNumber => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* args */ ValueNumber => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -245,20 +240,19 @@ object ratingMod {
     }
   }
   
-  @js.native
   trait StyledRatingItemProps extends StObject {
     
     @JSName("$index")
-    var $index: Double = js.native
+    var $index: Double
     
     @JSName("$isActive")
-    var $isActive: Boolean = js.native
+    var $isActive: Boolean
     
     @JSName("$isSelected")
-    var $isSelected: Boolean = js.native
+    var $isSelected: Boolean
     
     @JSName("$theme")
-    var $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
+    var $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
   }
   object StyledRatingItemProps {
     
@@ -292,11 +286,10 @@ object ratingMod {
     }
   }
   
-  @js.native
   trait StyledRootProps extends StObject {
     
     @JSName("$theme")
-    var $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any = js.native
+    var $theme: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Theme */ js.Any
   }
   object StyledRootProps {
     

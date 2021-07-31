@@ -7,17 +7,15 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ImageUrl extends StObject {
     
-    var imageUrl: String = js.native
+    var imageUrl: String
     
-    var platform: Platforms = js.native
+    var platform: Platforms
   }
   object ImageUrl {
     
@@ -38,14 +36,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Lifespan extends StObject {
     
-    var lifespan: Double = js.native
+    var lifespan: Double
     
-    var name: String = js.native
+    var name: String
     
-    var parameters: js.Object = js.native
+    var parameters: js.Object
   }
   object Lifespan {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RawPayload extends StObject {
     
-    var rawPayload: js.UndefOr[Boolean] = js.native
+    var rawPayload: js.UndefOr[Boolean] = js.undefined
     
-    var sendAsMessage: js.UndefOr[Boolean] = js.native
+    var sendAsMessage: js.UndefOr[Boolean] = js.undefined
   }
   object RawPayload {
     
@@ -101,17 +97,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var request: Request_[ParamsDictionary, _, _, Query] = js.native
+    var request: Request_[ParamsDictionary, js.Any, js.Any, Query]
     
-    var response: Response_[_] = js.native
+    var response: Response_[js.Any]
   }
   object Request {
     
     @scala.inline
-    def apply(request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): Request = {
+    def apply(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
     }
@@ -120,19 +115,18 @@ object anon {
     implicit class RequestMutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRequest(value: Request_[ParamsDictionary, _, _, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+      def setRequest(value: Request_[ParamsDictionary, js.Any, js.Any, Query]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResponse(value: Response_[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      def setResponse(value: Response_[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var text: String = js.native
+    var text: String
     
-    var url: String = js.native
+    var url: String
   }
   object Text {
     

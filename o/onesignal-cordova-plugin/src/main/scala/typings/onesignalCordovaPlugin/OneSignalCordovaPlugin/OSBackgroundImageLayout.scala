@@ -2,17 +2,15 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSBackgroundImageLayout extends StObject {
   
-  var bodyTextColor: String = js.native
+  var bodyTextColor: String
   
-  var image: String = js.native
+  var image: String
   
-  var titleTextColor: String = js.native
+  var titleTextColor: String
 }
 object OSBackgroundImageLayout {
   

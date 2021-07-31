@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResponse extends StObject {
   
   /** Debugging information about the response. */
-  var debugInfo: js.UndefOr[ResponseDebugInfo] = js.native
+  var debugInfo: js.UndefOr[ResponseDebugInfo] = js.undefined
   
   /** Error information about the response. */
-  var errorInfo: js.UndefOr[ErrorInfo] = js.native
+  var errorInfo: js.UndefOr[ErrorInfo] = js.undefined
   
   /** Repeated facet results. */
-  var facetResults: js.UndefOr[js.Array[FacetResult]] = js.native
+  var facetResults: js.UndefOr[js.Array[FacetResult]] = js.undefined
   
   /** Whether there are more search results matching the query. */
-  var hasMoreResults: js.UndefOr[Boolean] = js.native
+  var hasMoreResults: js.UndefOr[Boolean] = js.undefined
   
   /** Query interpretation result for user query. Empty if query interpretation is disabled. */
-  var queryInterpretation: js.UndefOr[QueryInterpretation] = js.native
+  var queryInterpretation: js.UndefOr[QueryInterpretation] = js.undefined
   
   /** The estimated result count for this query. */
-  var resultCountEstimate: js.UndefOr[String] = js.native
+  var resultCountEstimate: js.UndefOr[String] = js.undefined
   
   /** The exact result count for this query. */
-  var resultCountExact: js.UndefOr[String] = js.native
+  var resultCountExact: js.UndefOr[String] = js.undefined
   
   /** Expanded result count information. */
-  var resultCounts: js.UndefOr[ResultCounts] = js.native
+  var resultCounts: js.UndefOr[ResultCounts] = js.undefined
   
   /** Results from a search query. */
-  var results: js.UndefOr[js.Array[SearchResult]] = js.native
+  var results: js.UndefOr[js.Array[SearchResult]] = js.undefined
   
   /** Suggested spelling for the query. */
-  var spellResults: js.UndefOr[js.Array[SpellResult]] = js.native
+  var spellResults: js.UndefOr[js.Array[SpellResult]] = js.undefined
   
   /** Structured results for the user query. These results are not counted against the page_size. */
-  var structuredResults: js.UndefOr[js.Array[StructuredResult]] = js.native
+  var structuredResults: js.UndefOr[js.Array[StructuredResult]] = js.undefined
 }
 object SearchResponse {
   

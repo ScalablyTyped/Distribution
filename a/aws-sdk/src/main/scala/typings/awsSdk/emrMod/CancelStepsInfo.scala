@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelStepsInfo extends StObject {
   
   /**
     * The reason for the failure if the CancelSteps request fails.
     */
-  var Reason: js.UndefOr[String] = js.native
+  var Reason: js.UndefOr[String] = js.undefined
   
   /**
     * The status of a CancelSteps Request. The value may be SUBMITTED or FAILED.
     */
-  var Status: js.UndefOr[CancelStepsRequestStatus] = js.native
+  var Status: js.UndefOr[CancelStepsRequestStatus] = js.undefined
   
   /**
     * The encrypted StepId of a step.
     */
-  var StepId: js.UndefOr[typings.awsSdk.emrMod.StepId] = js.native
+  var StepId: js.UndefOr[typings.awsSdk.emrMod.StepId] = js.undefined
 }
 object CancelStepsInfo {
   

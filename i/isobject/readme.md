@@ -11,8 +11,8 @@ Returns true if the value is an object and not an array or null.
 | Full name          | isobject |
 | Keywords           | check, is, is-object, isobject, kind, kind-of, kindof, native, object, type, typeof, value |
 | # releases         | 2 |
-| # dependents       | 426 |
-| # downloads        | 1337291599 |
+| # dependents       | 478 |
+| # downloads        | 1497418704 |
 | # stars            | 3 |
 
 ## Links

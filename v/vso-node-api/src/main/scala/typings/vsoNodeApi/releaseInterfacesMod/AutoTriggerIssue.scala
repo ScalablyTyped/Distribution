@@ -2,21 +2,19 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoTriggerIssue extends StObject {
   
-  var issue: Issue = js.native
+  var issue: Issue
   
-  var issueSource: IssueSource = js.native
+  var issueSource: IssueSource
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
   
-  var releaseDefinitionReference: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinitionReference: ReleaseDefinitionShallowReference
   
-  var releaseTriggerType: ReleaseTriggerType = js.native
+  var releaseTriggerType: ReleaseTriggerType
 }
 object AutoTriggerIssue {
   

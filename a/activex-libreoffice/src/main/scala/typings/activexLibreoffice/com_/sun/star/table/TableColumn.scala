@@ -8,31 +8,30 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a special cell range containing all cells of a single specific column in a table or spreadsheet. */
-@js.native
 trait TableColumn
-  extends XCellRange
+  extends StObject
+     with XCellRange
      with XPropertySet
      with XNamed {
   
   /** is `TRUE` , if there is a manual horizontal page break attached to the column. */
-  var IsStartOfNewPage: Boolean = js.native
+  var IsStartOfNewPage: Boolean
   
   /** is `TRUE` , if the column is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** is `TRUE` , if the column always keeps its optimal width. */
-  var OptimalWidth: Boolean = js.native
+  var OptimalWidth: Boolean
   
   /**
     * contains the width of the column (in 1/100th mm).
     *
     * When hidden, it returns the width which the column would have, if it were visible.
     */
-  var Width: Double = js.native
+  var Width: Double
 }
 object TableColumn {
   

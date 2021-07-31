@@ -9,7 +9,6 @@ import typings.storybookTheming.typesMod.Theme
 import typings.storybookUi.anon.PickDetailedHTMLPropsHTML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderMod {
@@ -26,14 +25,13 @@ object loaderMod {
   @js.native
   val Loader: FunctionComponent[LoaderProps] = js.native
   
-  @js.native
   trait LoaderProps extends StObject {
     
     /**
       * The number of lines to display in the loader.
       * These are indented according to a pre-defined sequence of depths.
       */
-    var size: Double = js.native
+    var size: Double
   }
   object LoaderProps {
     

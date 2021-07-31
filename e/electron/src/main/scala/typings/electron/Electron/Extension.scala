@@ -2,33 +2,31 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extension extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/extension
-  var id: String = js.native
+  var id: String
   
   /**
     * Copy of the extension's manifest data.
     */
-  var manifest: js.Any = js.native
+  var manifest: js.Any
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The extension's file path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The extension's `chrome-extension://` URL.
     */
-  var url: String = js.native
+  var url: String
   
-  var version: String = js.native
+  var version: String
 }
 object Extension {
   

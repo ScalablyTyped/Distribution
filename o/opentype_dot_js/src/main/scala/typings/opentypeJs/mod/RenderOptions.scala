@@ -3,23 +3,21 @@ package typings.opentypeJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderOptions extends StObject {
   
-  var features: js.UndefOr[StringDictionary[Boolean]] = js.native
+  var features: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   
-  var kerning: js.UndefOr[Boolean] = js.native
+  var kerning: js.UndefOr[Boolean] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
   
-  var xScale: js.UndefOr[Double] = js.native
+  var xScale: js.UndefOr[Double] = js.undefined
   
-  var yScale: js.UndefOr[Double] = js.native
+  var yScale: js.UndefOr[Double] = js.undefined
 }
 object RenderOptions {
   

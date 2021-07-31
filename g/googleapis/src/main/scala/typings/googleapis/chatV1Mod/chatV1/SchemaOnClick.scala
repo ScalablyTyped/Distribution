@@ -2,24 +2,22 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An onclick action (e.g. open a link).
   */
-@js.native
 trait SchemaOnClick extends StObject {
   
   /**
     * A form action will be trigger by this onclick if specified.
     */
-  var action: js.UndefOr[SchemaFormAction] = js.native
+  var action: js.UndefOr[SchemaFormAction] = js.undefined
   
   /**
     * This onclick triggers an open link action if specified.
     */
-  var openLink: js.UndefOr[SchemaOpenLink] = js.native
+  var openLink: js.UndefOr[SchemaOpenLink] = js.undefined
 }
 object SchemaOnClick {
   

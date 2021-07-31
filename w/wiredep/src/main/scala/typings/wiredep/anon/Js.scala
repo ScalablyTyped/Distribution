@@ -2,24 +2,22 @@ package typings.wiredep.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Js extends StObject {
   
   /**
     * @example:
     *  '- {{filePath}}'
     */
-  var css: String = js.native
+  var css: String
   
   /**
     * @example:
     *  '- {{filePath}}'
     */
   @JSName("js")
-  var js_ : String = js.native
+  var js_ : String
 }
 object Js {
   

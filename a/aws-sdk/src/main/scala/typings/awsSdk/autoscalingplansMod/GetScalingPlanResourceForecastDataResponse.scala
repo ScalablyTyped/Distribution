@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScalingPlanResourceForecastDataResponse extends StObject {
   
   /**
     * The data points to return.
     */
-  var Datapoints: typings.awsSdk.autoscalingplansMod.Datapoints = js.native
+  var Datapoints: typings.awsSdk.autoscalingplansMod.Datapoints
 }
 object GetScalingPlanResourceForecastDataResponse {
   

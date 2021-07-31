@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuiteTestCase extends StObject {
   
-  var pointAssignments: js.Array[PointAssignment] = js.native
+  var pointAssignments: js.Array[PointAssignment]
   
-  var testCase: WorkItemReference = js.native
+  var testCase: WorkItemReference
 }
 object SuiteTestCase {
   

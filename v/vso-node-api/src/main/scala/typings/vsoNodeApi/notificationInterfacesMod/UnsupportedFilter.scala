@@ -2,11 +2,11 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnsupportedFilter extends BaseSubscriptionFilter
+trait UnsupportedFilter
+  extends StObject
+     with BaseSubscriptionFilter
 object UnsupportedFilter {
   
   @scala.inline

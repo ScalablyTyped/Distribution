@@ -2,21 +2,19 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorFontSize extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var lineHeight: Double = js.native
+  var lineHeight: Double
   
-  var paddingHorizontal: Double = js.native
+  var paddingHorizontal: Double
   
-  var textAlignVertical: String = js.native
+  var textAlignVertical: String
 }
 object BackgroundColorFontSize {
   

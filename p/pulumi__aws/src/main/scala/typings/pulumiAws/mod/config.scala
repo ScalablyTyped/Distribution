@@ -5,7 +5,6 @@ import typings.pulumiAws.outputMod.config.Endpoints
 import typings.pulumiAws.outputMod.config.IgnoreTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object config {
@@ -74,9 +73,8 @@ object config {
   @scala.inline
   def region_=(x: js.UndefOr[typings.pulumiAws.enumsMod.Region]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("region")(x.asInstanceOf[js.Any])
   
-  @JSImport("@pulumi/aws", "config.requireRegion")
-  @js.native
-  def requireRegion(): typings.pulumiAws.enumsMod.Region = js.native
+  @scala.inline
+  def requireRegion(): typings.pulumiAws.enumsMod.Region = ^.asInstanceOf[js.Dynamic].applyDynamic("requireRegion")().asInstanceOf[typings.pulumiAws.enumsMod.Region]
   
   @JSImport("@pulumi/aws", "config.s3ForcePathStyle")
   @js.native

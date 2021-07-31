@@ -13,17 +13,15 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Duration extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    def onClose(): Unit = js.native
+    def onClose(): Unit
   }
   object Duration {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HolderCallback extends StObject {
     
-    var holderCallback: js.UndefOr[HolderReadyCallback] = js.native
+    var holderCallback: js.UndefOr[HolderReadyCallback] = js.undefined
     
-    var notice: NoticeContentuserPassKeyK = js.native
+    var notice: NoticeContentuserPassKeyK
   }
   object HolderCallback {
     
@@ -73,12 +70,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: String = js.native
+    var left: String
     
-    var top: Double = js.native
+    var top: Double
   }
   object Left {
     
@@ -100,36 +96,35 @@ object anon {
   }
   
   /* Inlined rc-notification.rc-notification/es/Notification.NoticeContent & {  userPassKey :react.react.Key | undefined} */
-  @js.native
   trait NoticeContentuserPassKeyK extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
-    var holder: js.UndefOr[HTMLDivElement] = js.native
+    var holder: js.UndefOr[HTMLDivElement] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[DivProps] = js.native
+    var props: js.UndefOr[DivProps] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var updateMark: js.UndefOr[String] = js.native
+    var updateMark: js.UndefOr[String] = js.undefined
     
-    var userPassKey: js.UndefOr[Key] = js.native
+    var userPassKey: js.UndefOr[Key] = js.undefined
   }
   object NoticeContentuserPassKeyK {
     
@@ -232,38 +227,37 @@ object anon {
   }
   
   /* Inlined rc-notification.rc-notification/es/Notice.NoticeProps & {  key :react.react.Key} */
-  @js.native
   trait NoticePropskeyKey extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
     /** @private Only for internal usage. We don't promise that we will refactor this */
-    var holder: js.UndefOr[HTMLDivElement] = js.native
+    var holder: js.UndefOr[HTMLDivElement] = js.undefined
     
-    var key: Key = js.native
+    var key: Key
     
     /** Mark as final key since set maxCount may keep the key but user pass key is different */
-    var noticeKey: Key = js.native
+    var noticeKey: Key
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var props: js.UndefOr[DivProps] = js.native
+    var props: js.UndefOr[DivProps] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var updateMark: js.UndefOr[String] = js.native
+    var updateMark: js.UndefOr[String] = js.undefined
   }
   object NoticePropskeyKey {
     
@@ -357,38 +351,37 @@ object anon {
   }
   
   /* Inlined rc-notification.rc-notification/es/Notice.NoticeProps & {  key :react.react.ReactText} */
-  @js.native
   trait NoticePropskeyReactText extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
     /** @private Only for internal usage. We don't promise that we will refactor this */
-    var holder: js.UndefOr[HTMLDivElement] = js.native
+    var holder: js.UndefOr[HTMLDivElement] = js.undefined
     
-    var key: ReactText = js.native
+    var key: ReactText
     
     /** Mark as final key since set maxCount may keep the key but user pass key is different */
-    var noticeKey: Key = js.native
+    var noticeKey: Key
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var props: js.UndefOr[DivProps] = js.native
+    var props: js.UndefOr[DivProps] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var updateMark: js.UndefOr[String] = js.native
+    var updateMark: js.UndefOr[String] = js.undefined
   }
   object NoticePropskeyReactText {
     
@@ -482,24 +475,23 @@ object anon {
   }
   
   /* Inlined rc-notification.rc-notification/es/Notification.NotificationProps & {  getContainer :(): std.HTMLElement | undefined} */
-  @js.native
   trait NotificationPropsgetConta extends StObject {
     
-    var animation: js.UndefOr[String | js.Object] = js.native
+    var animation: js.UndefOr[String | js.Object] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object NotificationPropsgetConta {
     
@@ -562,12 +554,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var holderCallback: js.UndefOr[HolderReadyCallback] = js.native
+    var holderCallback: js.UndefOr[HolderReadyCallback] = js.undefined
     
-    var props: NoticePropskeyReactText = js.native
+    var props: NoticePropskeyReactText
   }
   object Props {
     

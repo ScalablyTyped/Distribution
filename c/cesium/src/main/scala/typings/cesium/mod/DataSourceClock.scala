@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "DataSourceClock")
@@ -17,7 +16,7 @@ class DataSourceClock () extends StObject {
   
   var currentTime: JulianDate = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   def equals(other: DataSourceClock): Boolean = js.native
   

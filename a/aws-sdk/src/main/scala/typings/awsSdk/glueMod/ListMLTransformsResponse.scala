@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMLTransformsResponse extends StObject {
   
   /**
     * A continuation token, if the returned list does not contain the last metric available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The identifiers of all the machine learning transforms in the account, or the machine learning transforms with the specified tags.
     */
-  var TransformIds: TransformIdList = js.native
+  var TransformIds: TransformIdList
 }
 object ListMLTransformsResponse {
   

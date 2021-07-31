@@ -12,7 +12,6 @@ import typings.sipJs.transactionsMod.InviteServerTransaction
 import typings.sipJs.userAgentCoreMod.UserAgentCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogsMod {
@@ -31,6 +30,10 @@ object dialogsMod {
   /* static members */
   object Dialog {
     
+    @JSImport("sip.js/lib/core/dialogs", "Dialog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * When a UAC receives a response that establishes a dialog, it
       * constructs the state of the dialog.  This state MUST be maintained
@@ -39,9 +42,8 @@ object dialogsMod {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
-    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentClient")
-    @js.native
-    def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = js.native
+    @scala.inline
+    def initialDialogStateForUserAgentClient(outgoingRequestMessage: OutgoingRequestMessage, incomingResponseMessage: IncomingResponseMessage): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentClient")(outgoingRequestMessage.asInstanceOf[js.Any], incomingResponseMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
     
     /**
       * The UAS then constructs the state of the dialog.  This state MUST be
@@ -50,12 +52,10 @@ object dialogsMod {
       * @param incomingRequestMessage - Incoming request message creating dialog.
       * @param toTag - Tag in the To field in the response to the incoming request.
       */
-    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentServer")
-    @js.native
-    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = js.native
-    @JSImport("sip.js/lib/core/dialogs", "Dialog.initialDialogStateForUserAgentServer")
-    @js.native
-    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = js.native
+    @scala.inline
+    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any])).asInstanceOf[DialogState]
+    @scala.inline
+    def initialDialogStateForUserAgentServer(incomingRequestMessage: IncomingRequestMessage, toTag: String, early: Boolean): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForUserAgentServer")(incomingRequestMessage.asInstanceOf[js.Any], toTag.asInstanceOf[js.Any], early.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   }
   
   @JSImport("sip.js/lib/core/dialogs", "SessionDialog")
@@ -101,6 +101,10 @@ object dialogsMod {
   /* static members */
   object SubscriptionDialog {
     
+    @JSImport("sip.js/lib/core/dialogs", "SubscriptionDialog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * When a UAC receives a response that establishes a dialog, it
       * constructs the state of the dialog.  This state MUST be maintained
@@ -109,11 +113,10 @@ object dialogsMod {
       * @param outgoingRequestMessage - Outgoing request message for dialog.
       * @param incomingResponseMessage - Incoming response message creating dialog.
       */
-    @JSImport("sip.js/lib/core/dialogs", "SubscriptionDialog.initialDialogStateForSubscription")
-    @js.native
+    @scala.inline
     def initialDialogStateForSubscription(
       outgoingSubscribeRequestMessage: OutgoingRequestMessage,
       incomingNotifyRequestMessage: IncomingRequestMessage
-    ): DialogState = js.native
+    ): DialogState = (^.asInstanceOf[js.Dynamic].applyDynamic("initialDialogStateForSubscription")(outgoingSubscribeRequestMessage.asInstanceOf[js.Any], incomingNotifyRequestMessage.asInstanceOf[js.Any])).asInstanceOf[DialogState]
   }
 }

@@ -5,51 +5,49 @@ import typings.chrome.chrome.cast.media.MediaInfo
 import typings.chrome.chrome.cast.media.PlayerState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemotePlayer extends StObject {
   
-  var canControlVolume: Boolean = js.native
+  var canControlVolume: Boolean
   
-  var canPause: Boolean = js.native
+  var canPause: Boolean
   
-  var canSeek: Boolean = js.native
+  var canSeek: Boolean
   
-  var controller: RemotePlayerController | Null = js.native
+  var controller: RemotePlayerController | Null
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var displayStatus: String = js.native
+  var displayStatus: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var imageUrl: String | Null = js.native
+  var imageUrl: String | Null
   
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
-  var isMediaLoaded: Boolean = js.native
+  var isMediaLoaded: Boolean
   
-  var isMuted: Boolean = js.native
+  var isMuted: Boolean
   
-  var isPaused: Boolean = js.native
+  var isPaused: Boolean
   
-  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.native
+  var liveSeekableRange: js.UndefOr[LiveSeekableRange] = js.undefined
   
-  var mediaInfo: js.UndefOr[MediaInfo] = js.native
+  var mediaInfo: js.UndefOr[MediaInfo] = js.undefined
   
-  var playerState: PlayerState | Null = js.native
+  var playerState: PlayerState | Null
   
-  var savedPlayerState: SavedPlayerState | Null = js.native
+  var savedPlayerState: SavedPlayerState | Null
   
-  var statusText: String = js.native
+  var statusText: String
   
-  var title: String = js.native
+  var title: String
   
-  var volumeLevel: Double = js.native
+  var volumeLevel: Double
 }
 object RemotePlayer {
   
@@ -70,7 +68,7 @@ object RemotePlayer {
     title: String,
     volumeLevel: Double
   ): RemotePlayer = {
-    val __obj = js.Dynamic.literal(canControlVolume = canControlVolume.asInstanceOf[js.Any], canPause = canPause.asInstanceOf[js.Any], canSeek = canSeek.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], displayStatus = displayStatus.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], isConnected = isConnected.asInstanceOf[js.Any], isMediaLoaded = isMediaLoaded.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], volumeLevel = volumeLevel.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canControlVolume = canControlVolume.asInstanceOf[js.Any], canPause = canPause.asInstanceOf[js.Any], canSeek = canSeek.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], displayStatus = displayStatus.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], isConnected = isConnected.asInstanceOf[js.Any], isMediaLoaded = isMediaLoaded.asInstanceOf[js.Any], isMuted = isMuted.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], volumeLevel = volumeLevel.asInstanceOf[js.Any], controller = null, imageUrl = null, playerState = null, savedPlayerState = null)
     __obj.asInstanceOf[RemotePlayer]
   }
   

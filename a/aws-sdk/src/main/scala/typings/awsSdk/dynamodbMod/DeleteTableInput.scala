@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTableInput extends StObject {
   
   /**
     * The name of the table to delete.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object DeleteTableInput {
   

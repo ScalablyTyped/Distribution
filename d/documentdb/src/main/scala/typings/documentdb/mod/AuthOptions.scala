@@ -3,20 +3,18 @@ package typings.documentdb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthOptions extends StObject {
   
   /** The authorization master key to use to create the client. */
-  var masterKey: js.UndefOr[String] = js.native
+  var masterKey: js.UndefOr[String] = js.undefined
   
   /** An array of {@link Permission} objects. */
-  var permissionFeed: js.UndefOr[js.Array[Permission]] = js.native
+  var permissionFeed: js.UndefOr[js.Array[Permission]] = js.undefined
   
   /** An object that contains resources tokens. Keys for the object are resource Ids and values are the resource tokens. */
-  var resourceTokens: js.UndefOr[StringDictionary[String]] = js.native
+  var resourceTokens: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object AuthOptions {
   

@@ -2,17 +2,15 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignRight extends StObject {
   
-  var alignRight: Boolean = js.native
+  var alignRight: Boolean
   
-  var formatter: js.Any = js.native
+  var formatter: js.Any
   
-  var style: FillFontSize = js.native
+  var style: FillFontSize
 }
 object AlignRight {
   

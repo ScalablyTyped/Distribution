@@ -2,21 +2,19 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoveredResource extends StObject {
   
   /**
     * The configurationId in Application Discovery Service that uniquely identifies the on-premise resource.
     */
-  var ConfigurationId: typings.awsSdk.migrationhubMod.ConfigurationId = js.native
+  var ConfigurationId: typings.awsSdk.migrationhubMod.ConfigurationId
   
   /**
     * A description that can be free-form text to record additional detail about the discovered resource for clarity or later reference.
     */
-  var Description: js.UndefOr[DiscoveredResourceDescription] = js.native
+  var Description: js.UndefOr[DiscoveredResourceDescription] = js.undefined
 }
 object DiscoveredResource {
   

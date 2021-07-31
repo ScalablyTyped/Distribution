@@ -3,28 +3,26 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaModel extends StObject {
   
   /**
     * Output only. The time when this model was created, in millisecs since the
     * epoch.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] A user-friendly description of this model. @mutable
     * bigquery.models.patch
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A hash of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The time when this model expires, in milliseconds since the
@@ -34,24 +32,24 @@ trait SchemaModel extends StObject {
     * used to set a default expirationTime on newly created models. @mutable
     * bigquery.models.patch
     */
-  var expirationTime: js.UndefOr[String] = js.native
+  var expirationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Input feature columns that were used to train this model.
     */
-  var featureColumns: js.UndefOr[js.Array[SchemaStandardSqlField]] = js.native
+  var featureColumns: js.UndefOr[js.Array[SchemaStandardSqlField]] = js.undefined
   
   /**
     * [Optional] A descriptive name for this model. @mutable
     * bigquery.models.patch
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Label columns that were used to train this model. The output
     * of the model will have a “predicted_” prefix to these columns.
     */
-  var labelColumns: js.UndefOr[js.Array[SchemaStandardSqlField]] = js.native
+  var labelColumns: js.UndefOr[js.Array[SchemaStandardSqlField]] = js.undefined
   
   /**
     * [Optional] The labels associated with this model. You can use these to
@@ -62,35 +60,35 @@ trait SchemaModel extends StObject {
     * label in the list must have a different key. @mutable
     * bigquery.models.patch
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The time when this model was last modified, in millisecs
     * since the epoch.
     */
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The geographic location where the model resides. This value
     * is inherited from the dataset.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Unique identifier for this model.
     */
-  var modelReference: js.UndefOr[SchemaModelReference] = js.native
+  var modelReference: js.UndefOr[SchemaModelReference] = js.undefined
   
   /**
     * Output only. Type of the model resource.
     */
-  var modelType: js.UndefOr[String] = js.native
+  var modelType: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Information for all training runs in increasing order of
     * start_time.
     */
-  var trainingRuns: js.UndefOr[js.Array[SchemaTrainingRun]] = js.native
+  var trainingRuns: js.UndefOr[js.Array[SchemaTrainingRun]] = js.undefined
 }
 object SchemaModel {
   

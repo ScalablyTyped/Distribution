@@ -2,25 +2,25 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object address {
   
-  @js.native
-  trait AddressData extends _AddressType {
+  trait AddressData
+    extends StObject
+       with _AddressType {
     
-    var AddressLine1: String = js.native
+    var AddressLine1: String
     
-    var AddressLine2: String = js.native
+    var AddressLine2: String
     
-    var City: String = js.native
+    var City: String
     
-    var Country: String = js.native
+    var Country: String
     
-    var PostalCode: String = js.native
+    var PostalCode: String
     
-    var Region: String = js.native
+    var Region: String
   }
   object AddressData {
     

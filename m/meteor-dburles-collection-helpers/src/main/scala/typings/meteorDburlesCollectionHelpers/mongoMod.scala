@@ -19,7 +19,6 @@ import typings.meteorDburlesCollectionHelpers.mod.Helpers
 import typings.meteorDburlesCollectionHelpers.mod.PartialHelpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Cursor<T> and Collection<T> are pulled from https://github.com/DefinitelyTyped/DefinitelyTyped/blob/master/types/meteor/mongo.d.ts
@@ -40,13 +39,14 @@ object mongoMod {
       
       def deny(options: Fetch[T]): Boolean = js.native
       
-      def findOne(): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: js.UndefOr[Selector[T]], options: Fields): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: String): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: String, options: Fields): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: ObjectID): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: ObjectID, options: Fields): js.UndefOr[Full[T] with T] = js.native
-      def findOne(selector: Selector[T]): js.UndefOr[Full[T] with T] = js.native
+      def findOne(): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: String): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: String, options: Fields): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: Unit, options: Fields): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: ObjectID): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: ObjectID, options: Fields): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: Selector[T]): js.UndefOr[Full[T] & T] = js.native
+      def findOne(selector: Selector[T], options: Fields): js.UndefOr[Full[T] & T] = js.native
       
       /**
         * Provide the definitions here for the methods and Helper<T>s you declared on your item interface.
@@ -72,7 +72,7 @@ object mongoMod {
       def update(
         selector: String,
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -90,7 +90,7 @@ object mongoMod {
       def update(
         selector: ObjectID,
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -108,7 +108,7 @@ object mongoMod {
       def update(
         selector: Selector[T],
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -127,7 +127,7 @@ object mongoMod {
       def upsert(
         selector: String,
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -145,7 +145,7 @@ object mongoMod {
       def upsert(
         selector: ObjectID,
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -163,7 +163,7 @@ object mongoMod {
       def upsert(
         selector: Selector[T],
         modifier: Modifier[Data[T]],
-        options: js.UndefOr[scala.Nothing],
+        options: Unit,
         // ditto
       // tslint:disable-next-line ban-types
       callback: js.Function
@@ -184,21 +184,21 @@ object mongoMod {
     @js.native
     trait Cursor[T] extends StObject {
       
-      def fetch(): js.Array[Full[T] with T] = js.native
+      def fetch(): js.Array[Full[T] & T] = js.native
       
-      def forEach(callback: js.Function3[/* doc */ Full[T] with T, /* index */ Double, /* cursor */ Cursor[T], Unit]): Unit = js.native
+      def forEach(callback: js.Function3[/* doc */ Full[T] & T, /* index */ Double, /* cursor */ Cursor[T], Unit]): Unit = js.native
       def forEach(
-        callback: js.Function3[/* doc */ Full[T] with T, /* index */ Double, /* cursor */ Cursor[T], Unit],
+        callback: js.Function3[/* doc */ Full[T] & T, /* index */ Double, /* cursor */ Cursor[T], Unit],
         thisArg: js.Any
       ): Unit = js.native
       
-      def map[U](callback: js.Function3[/* doc */ Full[T] with T, /* index */ Double, /* cursor */ Cursor[T], U]): js.Array[U] = js.native
+      def map[U](callback: js.Function3[/* doc */ Full[T] & T, /* index */ Double, /* cursor */ Cursor[T], U]): js.Array[U] = js.native
       def map[U](
-        callback: js.Function3[/* doc */ Full[T] with T, /* index */ Double, /* cursor */ Cursor[T], U],
+        callback: js.Function3[/* doc */ Full[T] & T, /* index */ Double, /* cursor */ Cursor[T], U],
         thisArg: js.Any
       ): js.Array[U] = js.native
       
-      def observe(callbacks: ObserveCallbacks[Full[T] with T]): LiveQueryHandle = js.native
+      def observe(callbacks: ObserveCallbacks[Full[T] & T]): LiveQueryHandle = js.native
     }
   }
 }

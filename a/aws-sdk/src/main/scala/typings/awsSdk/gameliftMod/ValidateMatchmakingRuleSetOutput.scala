@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateMatchmakingRuleSetOutput extends StObject {
   
   /**
     * A response indicating whether the rule set is valid.
     */
-  var Valid: js.UndefOr[BooleanModel] = js.native
+  var Valid: js.UndefOr[BooleanModel] = js.undefined
 }
 object ValidateMatchmakingRuleSetOutput {
   

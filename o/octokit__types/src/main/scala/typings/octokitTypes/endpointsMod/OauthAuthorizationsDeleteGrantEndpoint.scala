@@ -2,13 +2,11 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsDeleteGrantEndpoint extends StObject {
   
-  var grant_id: Double = js.native
+  var grant_id: Double
 }
 object OauthAuthorizationsDeleteGrantEndpoint {
   

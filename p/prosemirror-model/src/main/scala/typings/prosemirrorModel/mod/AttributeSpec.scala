@@ -2,10 +2,8 @@ package typings.prosemirrorModel.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeSpec extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait AttributeSpec extends StObject {
     * provided whenever a node or mark of a type that has them is
     * created.
     */
-  var default: js.UndefOr[js.Any] = js.native
+  var default: js.UndefOr[js.Any] = js.undefined
 }
 object AttributeSpec {
   

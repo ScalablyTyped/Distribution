@@ -2,25 +2,23 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenIterator extends StObject {
   
-  def getCurrentToken(): Token = js.native
+  def getCurrentToken(): Token
   
-  def getCurrentTokenColumn(): Double = js.native
+  def getCurrentTokenColumn(): Double
   
-  def getCurrentTokenPosition(): Point = js.native
+  def getCurrentTokenPosition(): Point
   
-  def getCurrentTokenRange(): Range = js.native
+  def getCurrentTokenRange(): Range
   
-  def getCurrentTokenRow(): Double = js.native
+  def getCurrentTokenRow(): Double
   
-  def stepBackward(): Token = js.native
+  def stepBackward(): Token
   
-  def stepForward(): Token = js.native
+  def stepForward(): Token
 }
 object TokenIterator {
   

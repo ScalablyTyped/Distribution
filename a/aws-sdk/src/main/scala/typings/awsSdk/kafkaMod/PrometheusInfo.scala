@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrometheusInfo extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait PrometheusInfo extends StObject {
     Indicates whether you want to enable or disable the JMX Exporter.
     
     */
-  var JmxExporter: js.UndefOr[JmxExporterInfo] = js.native
+  var JmxExporter: js.UndefOr[JmxExporterInfo] = js.undefined
   
   /**
     * 
     Indicates whether you want to enable or disable the Node Exporter.
     
     */
-  var NodeExporter: js.UndefOr[NodeExporterInfo] = js.native
+  var NodeExporter: js.UndefOr[NodeExporterInfo] = js.undefined
 }
 object PrometheusInfo {
   

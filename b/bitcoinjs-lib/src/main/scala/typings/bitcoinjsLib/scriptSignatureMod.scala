@@ -3,25 +3,25 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scriptSignatureMod {
   
-  @JSImport("bitcoinjs-lib/types/script_signature", "decode")
+  @JSImport("bitcoinjs-lib/types/script_signature", JSImport.Namespace)
   @js.native
-  def decode(buffer: Buffer): ScriptSignature = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/script_signature", "encode")
-  @js.native
-  def encode(signature: Buffer, hashType: Double): Buffer = js.native
+  @scala.inline
+  def decode(buffer: Buffer): ScriptSignature = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[ScriptSignature]
   
-  @js.native
+  @scala.inline
+  def encode(signature: Buffer, hashType: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(signature.asInstanceOf[js.Any], hashType.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  
   trait ScriptSignature extends StObject {
     
-    var hashType: Double = js.native
+    var hashType: Double
     
-    var signature: Buffer = js.native
+    var signature: Buffer
   }
   object ScriptSignature {
     

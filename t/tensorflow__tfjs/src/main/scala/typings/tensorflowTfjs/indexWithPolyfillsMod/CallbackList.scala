@@ -3,7 +3,6 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import typings.tensorflowTfjsLayers.baseCallbacksMod.BaseCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "CallbackList")
@@ -17,6 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CallbackList ()
   extends typings.tensorflowTfjs.mod.CallbackList {
   def this(callbacks: js.Array[BaseCallback]) = this()
-  def this(callbacks: js.UndefOr[scala.Nothing], queueLength: Double) = this()
   def this(callbacks: js.Array[BaseCallback], queueLength: Double) = this()
+  def this(callbacks: Unit, queueLength: Double) = this()
 }

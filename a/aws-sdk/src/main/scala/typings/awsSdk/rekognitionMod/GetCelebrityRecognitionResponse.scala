@@ -2,36 +2,34 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCelebrityRecognitionResponse extends StObject {
   
   /**
     * Array of celebrities recognized in the video.
     */
-  var Celebrities: js.UndefOr[CelebrityRecognitions] = js.native
+  var Celebrities: js.UndefOr[CelebrityRecognitions] = js.undefined
   
   /**
     * The current status of the celebrity recognition job.
     */
-  var JobStatus: js.UndefOr[VideoJobStatus] = js.native
+  var JobStatus: js.UndefOr[VideoJobStatus] = js.undefined
   
   /**
     * If the response is truncated, Amazon Rekognition Video returns this token that you can use in the subsequent request to retrieve the next set of celebrities.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * If the job fails, StatusMessage provides a descriptive error message.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.rekognitionMod.StatusMessage] = js.undefined
   
   /**
     * Information about a video that Amazon Rekognition Video analyzed. Videometadata is returned in every page of paginated responses from a Amazon Rekognition Video operation.
     */
-  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.native
+  var VideoMetadata: js.UndefOr[typings.awsSdk.rekognitionMod.VideoMetadata] = js.undefined
 }
 object GetCelebrityRecognitionResponse {
   

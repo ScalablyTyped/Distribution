@@ -2,14 +2,15 @@ package typings.semaphoreAsyncAwait
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semaphoreMod {
   
   @JSImport("semaphore-async-await/dist/Semaphore", JSImport.Default)
   @js.native
-  class default protected () extends Semaphore {
+  class default protected ()
+    extends StObject
+       with Semaphore {
     /**
       * Creates a semaphore.
       * @param permits  The number of permits, i.e. things being allowed to run in parallel.
@@ -17,22 +18,20 @@ object semaphoreMod {
       * This number can also be negative.
       */
     def this(permits: Double) = this()
-  }
-  
-  @js.native
-  trait Semaphore extends StObject {
     
     /**
       * Alias for {@linkcode Semaphore.wait}.
       * @returns  A promise that gets resolved when execution is allowed to proceed.
       */
-    def acquire(): js.Promise[Boolean] = js.native
+    /* CompleteClass */
+    override def acquire(): js.Promise[Boolean] = js.native
     
     /**
       * Acquires all permits that are currently available and returns the number of acquired permits.
       * @returns  Number of acquired permits.
       */
-    def drainPermits(): Double = js.native
+    /* CompleteClass */
+    override def drainPermits(): Double = js.native
     
     /**
       * Schedules func to be called once a permit becomes available.
@@ -41,34 +40,41 @@ object semaphoreMod {
       * @param func  The function to be executed.
       * @return  A promise that gets resolved with the return value of the function.
       */
-    def execute[T](func: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
+    /* CompleteClass */
+    override def execute[T](func: js.Function0[T | js.Thenable[T]]): js.Promise[T] = js.native
     
     /**
       * Returns the number of available permits.
       * @returns  The number of available permits.
       */
-    def getPermits(): Double = js.native
+    /* CompleteClass */
+    override def getPermits(): Double = js.native
     
+    /* CompleteClass */
     var permits: js.Any = js.native
     
+    /* CompleteClass */
     var promiseResolverQueue: js.Any = js.native
     
     /**
       * Alias for {@linkcode Semaphore.signal}.
       */
-    def release(): Unit = js.native
+    /* CompleteClass */
+    override def release(): Unit = js.native
     
     /**
       * Increases the number of permits by one. If there are other functions waiting, one of them will
       * continue to execute in a future iteration of the event loop.
       */
-    def signal(): Unit = js.native
+    /* CompleteClass */
+    override def signal(): Unit = js.native
     
     /**
       * Synchronous function that tries to acquire a permit and returns true if successful, false otherwise.
       * @returns  Whether a permit could be acquired.
       */
-    def tryAcquire(): Boolean = js.native
+    /* CompleteClass */
+    override def tryAcquire(): Boolean = js.native
     
     /**
       * Same as {@linkcode Semaphore.wait} except the promise returned gets resolved with false if no
@@ -78,7 +84,69 @@ object semaphoreMod {
       * @returns  A promise that gets resolved with true when execution is allowed to proceed or
       * false if the time given elapses before a permit becomes available.
       */
-    def waitFor(milliseconds: Double): js.Promise[Boolean] = js.native
+    /* CompleteClass */
+    override def waitFor(milliseconds: Double): js.Promise[Boolean] = js.native
+  }
+  
+  trait Semaphore extends StObject {
+    
+    /**
+      * Alias for {@linkcode Semaphore.wait}.
+      * @returns  A promise that gets resolved when execution is allowed to proceed.
+      */
+    def acquire(): js.Promise[Boolean]
+    
+    /**
+      * Acquires all permits that are currently available and returns the number of acquired permits.
+      * @returns  Number of acquired permits.
+      */
+    def drainPermits(): Double
+    
+    /**
+      * Schedules func to be called once a permit becomes available.
+      * Returns a promise that resolves to the return value of func.
+      * @typeparam T  The return type of func.
+      * @param func  The function to be executed.
+      * @return  A promise that gets resolved with the return value of the function.
+      */
+    def execute[T](func: js.Function0[T | js.Thenable[T]]): js.Promise[T]
+    
+    /**
+      * Returns the number of available permits.
+      * @returns  The number of available permits.
+      */
+    def getPermits(): Double
+    
+    var permits: js.Any
+    
+    var promiseResolverQueue: js.Any
+    
+    /**
+      * Alias for {@linkcode Semaphore.signal}.
+      */
+    def release(): Unit
+    
+    /**
+      * Increases the number of permits by one. If there are other functions waiting, one of them will
+      * continue to execute in a future iteration of the event loop.
+      */
+    def signal(): Unit
+    
+    /**
+      * Synchronous function that tries to acquire a permit and returns true if successful, false otherwise.
+      * @returns  Whether a permit could be acquired.
+      */
+    def tryAcquire(): Boolean
+    
+    /**
+      * Same as {@linkcode Semaphore.wait} except the promise returned gets resolved with false if no
+      * permit becomes available in time.
+      * @param milliseconds  The time spent waiting before the wait is aborted. This is a lower bound,
+      * don't rely on it being precise.
+      * @returns  A promise that gets resolved with true when execution is allowed to proceed or
+      * false if the time given elapses before a permit becomes available.
+      */
+    def waitFor(milliseconds: Double): js.Promise[Boolean]
   }
   object Semaphore {
     

@@ -2,16 +2,14 @@ package typings.dymoLabelFramework.dymo.label.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Print Job Status Info */
-@js.native
 trait PrintJobStatusInfo extends StObject {
   
-  var status: PrintJobStatus = js.native
+  var status: PrintJobStatus
   
-  var statusMessage: String = js.native
+  var statusMessage: String
 }
 object PrintJobStatusInfo {
   

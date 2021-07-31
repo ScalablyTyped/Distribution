@@ -3,19 +3,17 @@ package typings.jupyterlabCoreutils
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Download extends StObject {
     
-    var download: Boolean = js.native
+    var download: Boolean
     
-    var format: String = js.native
+    var format: String
     
-    var path: String = js.native
+    var path: String
   }
   object Download {
     
@@ -39,12 +37,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Raw extends StObject {
     
-    var raw: String = js.native
+    var raw: String
     
-    var rule: RegExp = js.native
+    var rule: RegExp
   }
   object Raw {
     

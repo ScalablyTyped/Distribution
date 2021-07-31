@@ -4,7 +4,6 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.firefoxWebextBrowser.browser.geckoProfiler.StartSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,41 +15,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object geckoProfiler {
   
+  @JSGlobal("browser.geckoProfiler")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Gathers the profile data from the current profiling session, and writes it to disk. The returned promise resolves to a path that locates the created file.
     * @param fileName The name of the file inside the profile/profiler directory
     */
-  @JSGlobal("browser.geckoProfiler.dumpProfileToFile")
-  @js.native
-  def dumpProfileToFile(fileName: String): js.Promise[_] = js.native
+  @scala.inline
+  def dumpProfileToFile(fileName: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dumpProfileToFile")(fileName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   /** Gathers the profile data from the current profiling session. */
-  @JSGlobal("browser.geckoProfiler.getProfile")
-  @js.native
-  def getProfile(): js.Promise[_] = js.native
+  @scala.inline
+  def getProfile(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer that contains a JSON string.
     */
-  @JSGlobal("browser.geckoProfiler.getProfileAsArrayBuffer")
-  @js.native
-  def getProfileAsArrayBuffer(): js.Promise[_] = js.native
+  @scala.inline
+  def getProfileAsArrayBuffer(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileAsArrayBuffer")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Gathers the profile data from the current profiling session. The returned promise resolves to an array buffer that contains a gzipped JSON string.
     */
-  @JSGlobal("browser.geckoProfiler.getProfileAsGzippedArrayBuffer")
-  @js.native
-  def getProfileAsGzippedArrayBuffer(): js.Promise[_] = js.native
+  @scala.inline
+  def getProfileAsGzippedArrayBuffer(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileAsGzippedArrayBuffer")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Gets the debug symbols for a particular library.
     * @param debugName The name of the library's debug file. For example, 'xul.pdb
     * @param breakpadId The Breakpad ID of the library
     */
-  @JSGlobal("browser.geckoProfiler.getSymbols")
-  @js.native
-  def getSymbols(debugName: String, breakpadId: String): js.Promise[_] = js.native
+  @scala.inline
+  def getSymbols(debugName: String, breakpadId: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSymbols")(debugName.asInstanceOf[js.Any], breakpadId.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /* geckoProfiler events */
   /**
@@ -62,23 +60,19 @@ object geckoProfiler {
   val onRunning: WebExtEvent[js.Function1[/* isRunning */ Boolean, Unit]] = js.native
   
   /** Pauses the profiler, keeping any profile data that is already written. */
-  @JSGlobal("browser.geckoProfiler.pause")
-  @js.native
-  def pause(): js.Promise[_] = js.native
+  @scala.inline
+  def pause(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pause")().asInstanceOf[js.Promise[js.Any]]
   
   /** Resumes the profiler with the settings that were initially used to start it. */
-  @JSGlobal("browser.geckoProfiler.resume")
-  @js.native
-  def resume(): js.Promise[_] = js.native
+  @scala.inline
+  def resume(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("resume")().asInstanceOf[js.Promise[js.Any]]
   
   /* geckoProfiler functions */
   /** Starts the profiler with the specified settings. */
-  @JSGlobal("browser.geckoProfiler.start")
-  @js.native
-  def start(settings: StartSettings): js.Promise[_] = js.native
+  @scala.inline
+  def start(settings: StartSettings): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(settings.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   /** Stops the profiler and discards any captured profile data. */
-  @JSGlobal("browser.geckoProfiler.stop")
-  @js.native
-  def stop(): js.Promise[_] = js.native
+  @scala.inline
+  def stop(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[js.Promise[js.Any]]
 }

@@ -2,48 +2,46 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateShareMenuOption extends StObject {
   
   /** 动态消息的 activityId。通过 [updatableMessage.createActivityId](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/updatable-message/updatableMessage.createActivityId.html) 接口获取
     *
     * 最低基础库： `2.4.0` */
-  var activityId: js.UndefOr[String] = js.native
+  var activityId: js.UndefOr[String] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[UpdateShareMenuCompleteCallback] = js.native
+  var complete: js.UndefOr[UpdateShareMenuCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[UpdateShareMenuFailCallback] = js.native
+  var fail: js.UndefOr[UpdateShareMenuFailCallback] = js.undefined
   
   /** 是否是私密消息。详见 [小程序私密消息](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/private-message.html)
     *
     * 最低基础库： `2.13.0` */
-  var isPrivateMessage: js.UndefOr[Boolean] = js.native
+  var isPrivateMessage: js.UndefOr[Boolean] = js.undefined
   
   /** 是否是动态消息，详见[动态消息](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share/updatable-message.html)
     *
     * 最低基础库： `2.4.0` */
-  var isUpdatableMessage: js.UndefOr[Boolean] = js.native
+  var isUpdatableMessage: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[UpdateShareMenuSuccessCallback] = js.native
+  var success: js.UndefOr[UpdateShareMenuSuccessCallback] = js.undefined
   
   /** 动态消息的模板信息
     *
     * 最低基础库： `2.4.0` */
-  var templateInfo: js.UndefOr[UpdatableMessageFrontEndTemplateInfo] = js.native
+  var templateInfo: js.UndefOr[UpdatableMessageFrontEndTemplateInfo] = js.undefined
   
   /** 群待办消息的id，通过toDoActivityId可以把多个群待办消息聚合为同一个。通过 [updatableMessage.createActivityId](https://developers.weixin.qq.com/miniprogram/dev/api-backend/open-api/updatable-message/updatableMessage.createActivityId.html) 接口获取。详见[群待办消息](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share.html)
     *
     * 最低基础库： `2.11.0` */
-  var toDoActivityId: js.UndefOr[String] = js.native
+  var toDoActivityId: js.UndefOr[String] = js.undefined
   
   /** 是否使用带 shareTicket 的转发[详情](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share.html) */
-  var withShareTicket: js.UndefOr[Boolean] = js.native
+  var withShareTicket: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateShareMenuOption {
   

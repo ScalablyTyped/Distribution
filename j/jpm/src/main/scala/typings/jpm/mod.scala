@@ -2,22 +2,21 @@ package typings.jpm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sdk/base64", "decode")
+  @JSImport("sdk/base64", JSImport.Namespace)
   @js.native
-  def decode(data: String): String = js.native
-  @JSImport("sdk/base64", "decode")
-  @js.native
-  def decode(data: String, charset: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sdk/base64", "encode")
-  @js.native
-  def encode(data: String): String = js.native
-  @JSImport("sdk/base64", "encode")
-  @js.native
-  def encode(data: String, charset: String): String = js.native
+  @scala.inline
+  def decode(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def decode(data: String, charset: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def encode(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(data: String, charset: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any], charset.asInstanceOf[js.Any])).asInstanceOf[String]
 }

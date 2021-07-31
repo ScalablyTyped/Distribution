@@ -2,35 +2,33 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceGeoLocation extends StObject {
   
   // Altitude, given in meters above sea level
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   // Heading in degrees from true north
-  var heading: js.UndefOr[Double] = js.native
+  var heading: js.UndefOr[Double] = js.undefined
   
   // Accuracy of longitude and latitude in meters
-  var horizontalAccuracy: js.UndefOr[Double] = js.native
+  var horizontalAccuracy: js.UndefOr[Double] = js.undefined
   
   // Time at which location was recorded, relative to UTC
-  var lastCollectedDateTime: js.UndefOr[String] = js.native
+  var lastCollectedDateTime: js.UndefOr[String] = js.undefined
   
   // Latitude coordinate of the device's location
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   // Longitude coordinate of the device's location
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
   
   // Speed the device is traveling in meters per second
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
   
   // Accuracy of altitude in meters
-  var verticalAccuracy: js.UndefOr[Double] = js.native
+  var verticalAccuracy: js.UndefOr[Double] = js.undefined
 }
 object DeviceGeoLocation {
   

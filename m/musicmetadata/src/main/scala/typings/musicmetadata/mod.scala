@@ -7,19 +7,20 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("musicmetadata", JSImport.Namespace)
-  @js.native
-  def apply(readStream: Readable, callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]): EventEmitter = js.native
-  @JSImport("musicmetadata", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(readStream: Readable, callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]): EventEmitter = (^.asInstanceOf[js.Dynamic].apply(readStream.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  @scala.inline
   def apply(
     readStream: Readable,
     options: Options,
     callback: js.Function2[/* err */ Error, /* metadata */ Metadata, Unit]
-  ): EventEmitter = js.native
+  ): EventEmitter = (^.asInstanceOf[js.Dynamic].apply(readStream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[EventEmitter]
+  
+  @JSImport("musicmetadata", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

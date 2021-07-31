@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XPreparedStatement
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A command could be a table, query, or any kind of SQL statement prepared by the user.
   */
-@js.native
-trait XCommandPreparation extends XInterface {
+trait XCommandPreparation
+  extends StObject
+     with XInterface {
   
   /**
     * creates a {@link com.sun.star.sdbc.PreparedStatement} object for sending parameterized SQL statements to the database.
@@ -26,7 +26,7 @@ trait XCommandPreparation extends XInterface {
     * @returns the {@link PreparedStatement} object
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def prepareCommand(command: String, commandType: Double): XPreparedStatement = js.native
+  def prepareCommand(command: String, commandType: Double): XPreparedStatement
 }
 object XCommandPreparation {
   

@@ -5,47 +5,40 @@ import typings.firebaseDatabase.anon.Instance
 import typings.firebaseDatabase.referenceMod.Reference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalMod {
   
-  @JSImport("@firebase/database/dist/src/api/internal", "dataUpdateCount")
+  @JSImport("@firebase/database/dist/src/api/internal", JSImport.Namespace)
   @js.native
-  def dataUpdateCount(ref: Reference): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/database/dist/src/api/internal", "forceLongPolling")
-  @js.native
-  def forceLongPolling(): Unit = js.native
+  @scala.inline
+  def dataUpdateCount(ref: Reference): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("dataUpdateCount")(ref.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "forceWebSockets")
-  @js.native
-  def forceWebSockets(): Unit = js.native
+  @scala.inline
+  def forceLongPolling(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLongPolling")().asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "initStandalone")
-  @js.native
-  def initStandalone[T](hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin: App[T]): Instance[T] = js.native
+  @scala.inline
+  def forceWebSockets(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceWebSockets")().asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "interceptServerData")
-  @js.native
-  def interceptServerData(ref: Reference, callback: js.Function2[/* a */ String, /* b */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def initStandalone[T](hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin: App[T]): Instance[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("initStandalone")(hasAppUrlVersionCustomAuthImplNamespaceNodeAdmin.asInstanceOf[js.Any]).asInstanceOf[Instance[T]]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "isWebSocketsAvailable")
-  @js.native
-  def isWebSocketsAvailable(): Boolean = js.native
+  @scala.inline
+  def interceptServerData(ref: Reference, callback: js.Function2[/* a */ String, /* b */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("interceptServerData")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "setSecurityDebugCallback")
-  @js.native
-  def setSecurityDebugCallback(ref: Reference, callback: js.Function1[/* a */ js.Object, Unit]): Unit = js.native
+  @scala.inline
+  def isWebSocketsAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWebSocketsAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "stats")
-  @js.native
-  def stats(ref: Reference): Unit = js.native
-  @JSImport("@firebase/database/dist/src/api/internal", "stats")
-  @js.native
-  def stats(ref: Reference, showDelta: Boolean): Unit = js.native
+  @scala.inline
+  def setSecurityDebugCallback(ref: Reference, callback: js.Function1[/* a */ js.Object, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSecurityDebugCallback")(ref.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/database/dist/src/api/internal", "statsIncrementCounter")
-  @js.native
-  def statsIncrementCounter(ref: Reference, metric: String): Unit = js.native
+  @scala.inline
+  def stats(ref: Reference): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stats")(ref.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def stats(ref: Reference, showDelta: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("stats")(ref.asInstanceOf[js.Any], showDelta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def statsIncrementCounter(ref: Reference, metric: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statsIncrementCounter")(ref.asInstanceOf[js.Any], metric.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

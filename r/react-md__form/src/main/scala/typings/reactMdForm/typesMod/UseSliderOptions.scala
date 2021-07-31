@@ -4,24 +4,23 @@ import typings.react.mod.Ref
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseSliderOptions
-  extends SliderStepOptions
+  extends StObject
+     with SliderStepOptions
      with SliderEventHandlers {
   
   /**
     * The default value for the slider.
     */
-  var defaultValue: js.UndefOr[SliderDefaultValue] = js.native
+  var defaultValue: js.UndefOr[SliderDefaultValue] = js.undefined
   
   /**
     * An optional ref to merge with the internal `ref` required for the slider to
     * work.
     */
-  var ref: js.UndefOr[Ref[HTMLSpanElement]] = js.native
+  var ref: js.UndefOr[Ref[HTMLSpanElement]] = js.undefined
 }
 object UseSliderOptions {
   

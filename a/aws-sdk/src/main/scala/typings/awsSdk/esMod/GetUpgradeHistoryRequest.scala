@@ -2,17 +2,15 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUpgradeHistoryRequest extends StObject {
   
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
   
-  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.esMod.MaxResults] = js.undefined
   
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
 }
 object GetUpgradeHistoryRequest {
   

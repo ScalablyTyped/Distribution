@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,14 +30,13 @@ object mod extends Shortcut {
     var caches: ICacheStore = js.native
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
       * Uses md5 instead of storing the whole file contents.
       * @default false
       */
-    var optimizeMemory: js.UndefOr[Boolean] = js.native
+    var optimizeMemory: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     

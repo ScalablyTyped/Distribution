@@ -85,7 +85,6 @@ import typings.activexFaxcomexlib.anon.Pctinfo
 import typings.activexFaxcomexlib.anon.PpvObj
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

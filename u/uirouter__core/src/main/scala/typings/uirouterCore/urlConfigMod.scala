@@ -6,14 +6,15 @@ import typings.uirouterCore.paramsMod.ParamTypes
 import typings.uirouterCore.routerMod.UIRouter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlConfigMod {
   
   @JSImport("@uirouter/core/lib/url/urlConfig", "UrlConfig")
   @js.native
-  class UrlConfig protected () extends Disposable {
+  class UrlConfig protected ()
+    extends StObject
+       with Disposable {
     /** @internal */ def this(/** @internal */ router: UIRouter) = this()
     
     /** @internal */ var _decodeParams: Boolean = js.native
@@ -157,11 +158,7 @@ object urlConfigMod {
       * @returns if only the `name` parameter was specified: the currently registered [[ParamType]] object, or undefined
       */
     def `type`(name: String): js.Any = js.native
-    def `type`(
-      name: String,
-      definition: js.UndefOr[scala.Nothing],
-      definitionFn: js.Function0[ParamTypeDefinition]
-    ): js.Any = js.native
+    def `type`(name: String, definition: Unit, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition): js.Any = js.native
     def `type`(name: String, definition: ParamTypeDefinition, definitionFn: js.Function0[ParamTypeDefinition]): js.Any = js.native
   }

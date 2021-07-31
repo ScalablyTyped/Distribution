@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object slidesMod {
+  
+  @JSImport("googleapis/build/src/apis/slides", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,9 +69,12 @@ object slidesMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/slides", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/slides", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -112,10 +118,9 @@ object slidesMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/slides", "slides")
-  @js.native
-  def slides(options: Options): Slides = js.native
-  @JSImport("googleapis/build/src/apis/slides", "slides")
-  @js.native
-  def slides_v1(version: v1): Slides = js.native
+  @scala.inline
+  def slides(options: Options): Slides = ^.asInstanceOf[js.Dynamic].applyDynamic("slides")(options.asInstanceOf[js.Any]).asInstanceOf[Slides]
+  
+  @scala.inline
+  def slides_v1(version: v1): Slides = ^.asInstanceOf[js.Dynamic].applyDynamic("slides")(version.asInstanceOf[js.Any]).asInstanceOf[Slides]
 }

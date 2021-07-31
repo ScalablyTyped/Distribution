@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,79 +18,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
-trait SpreadsheetDocumentSettings extends XPropertySet {
+trait SpreadsheetDocumentSettings
+  extends StObject
+     with XPropertySet {
   
   /**
     * specifies whether calculations are performed with the rounded values displayed in cells (set to `TRUE` ) instead of the internal values (set to
     * `FALSE` ).
     */
-  var CalcAsShown: Boolean = js.native
+  var CalcAsShown: Boolean
   
   /** contains the standard document language for Western text. */
-  var CharLocale: Locale = js.native
+  var CharLocale: Locale
   
   /** contains the standard document language for Asian text. */
-  var CharLocaleAsian: Locale = js.native
+  var CharLocaleAsian: Locale
   
   /** contains the standard document language for Complex text. */
-  var CharLocaleComplex: Locale = js.native
+  var CharLocaleComplex: Locale
   
   /** specifies the width of default tabulators. */
-  var DefaultTabStop: Double = js.native
+  var DefaultTabStop: Double
   
   /** contains the interface XForbiddenCharacters. */
-  var ForbiddenCharacters: XForbiddenCharacters = js.native
+  var ForbiddenCharacters: XForbiddenCharacters
   
   /**
     * If this property is set the document has DrawPages. Use this property to find out, whether the document has DrawPages or not, because the getDrawPage
     * method on the XDrawPageSupplier and the getDrawPages method on the XDrawPagesSupplier always creates the DrawPages if there are none; and this is very
     * slow and needs more memory.
     */
-  var HasDrawPages: Boolean = js.native
+  var HasDrawPages: Boolean
   
   /** specifies whether upper and lower cases are treated as equal when comparing cells. */
-  var IgnoreCase: Boolean = js.native
+  var IgnoreCase: Boolean
   
   /**
     * specifies whether the automatic adjustment of the row height is enabled.
     * @since OOo 3.0
     */
-  var IsAdjustHeightEnabled: Boolean = js.native
+  var IsAdjustHeightEnabled: Boolean
   
   /**
     * specifies whether the automatic execution of links is enabled.
     * @since OOo 3.0
     */
-  var IsExecuteLinkEnabled: Boolean = js.native
+  var IsExecuteLinkEnabled: Boolean
   
   /** enables iterated calculation of circular references. */
-  var IsIterationEnabled: Boolean = js.native
+  var IsIterationEnabled: Boolean
   
   /**
     * specifies whether the document data are already loaded.
     * @since OOo 3.0
     */
-  var IsLoaded: Boolean = js.native
+  var IsLoaded: Boolean
   
   /**
     * specifies whether changes record is protected.
     * @since LibreOffice 5.0
     */
-  var IsRecordChangesProtected: Boolean = js.native
+  var IsRecordChangesProtected: Boolean
   
   /**
     * specifies whether the undo command is enabled.
     * @since OOo 3.0
     */
-  var IsUndoEnabled: Boolean = js.native
+  var IsUndoEnabled: Boolean
   
   /**
     * specifies how many iterations are carried out.
     *
     * This setting is only used, if iteration is enabled using {@link SpreadsheetDocumentSettings.IsIterationEnabled} .
     */
-  var IterationCount: Double = js.native
+  var IterationCount: Double
   
   /**
     * specifies the point at which a change in results will stop the iteration.
@@ -101,7 +101,7 @@ trait SpreadsheetDocumentSettings extends XPropertySet {
     *
     * This setting is only used, if iteration is enabled using {@link SpreadsheetDocumentSettings.IsIterationEnabled} .
     */
-  var IterationEpsilon: Double = js.native
+  var IterationEpsilon: Double
   
   /**
     * specifies whether column or row labels are looked up from anywhere on the sheet.
@@ -109,13 +109,13 @@ trait SpreadsheetDocumentSettings extends XPropertySet {
     * Explicitly defined label ranges are used even if this property is set to `FALSE` .
     * @see com.sun.star.sheet.LabelRanges
     */
-  var LookUpLabels: Boolean = js.native
+  var LookUpLabels: Boolean
   
   /** specifies whether filter criteria must match entire cell contents. */
-  var MatchWholeCell: Boolean = js.native
+  var MatchWholeCell: Boolean
   
   /** specifies the date that is represented by the value zero. */
-  var NullDate: Date = js.native
+  var NullDate: Date
   
   /**
     * specifies whether changes record is enabled.
@@ -124,13 +124,13 @@ trait SpreadsheetDocumentSettings extends XPropertySet {
     * SpreadsheetDocumentSettings.IsRecordChangesProtected}
     * @since LibreOffice 5.0
     */
-  var RecordChanges: Boolean = js.native
+  var RecordChanges: Boolean
   
   /**
     * contains the reference device used for formatting the document.
     * @since OOo 3.0
     */
-  var ReferenceDevice: XDevice = js.native
+  var ReferenceDevice: XDevice
   
   /**
     * specifies whether regular expressions in formulas are enabled, e.g., for functions which look up spreadsheet contents.
@@ -138,13 +138,13 @@ trait SpreadsheetDocumentSettings extends XPropertySet {
     * RegularExpressions and Wildcards are mutually exclusive, only one can have the value `TRUE` . If both are set to `TRUE` via API calls then the last
     * one set takes precedence.
     */
-  var RegularExpressions: Boolean = js.native
+  var RegularExpressions: Boolean
   
   /** enables online spell checking. */
-  var SpellOnline: Boolean = js.native
+  var SpellOnline: Boolean
   
   /** specifies the number of decimals in the default number format. */
-  var StandardDecimals: Double = js.native
+  var StandardDecimals: Double
   
   /**
     * specifies whether wildcards in formulas are enabled, e.g., for functions which look up spreadsheet contents.
@@ -153,7 +153,7 @@ trait SpreadsheetDocumentSettings extends XPropertySet {
     * one set takes precedence.
     * @since LibreOffice 5.2
     */
-  var Wildcards: Boolean = js.native
+  var Wildcards: Boolean
 }
 object SpreadsheetDocumentSettings {
   

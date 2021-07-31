@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateRefEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The name of the fully qualified reference (ie: `refs/heads/master`). If it doesn't start with 'refs' and have at least two slashes, it will be rejected.
     */
-  var ref: String = js.native
+  var ref: String
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The SHA1 value for this reference.
     */
-  var sha: String = js.native
+  var sha: String
 }
 object GitCreateRefEndpoint {
   

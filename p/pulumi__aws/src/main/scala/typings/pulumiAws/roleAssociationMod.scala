@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roleAssociationMod {
@@ -43,6 +42,10 @@ object roleAssociationMod {
   /* static members */
   object RoleAssociation {
     
+    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RoleAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object roleAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RoleAssociation = js.native
-    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RoleAssociation = js.native
-    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleAssociationState): RoleAssociation = js.native
-    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RoleAssociationState, opts: CustomResourceOptions): RoleAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RoleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RoleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RoleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleAssociationState): RoleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RoleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RoleAssociationState, opts: CustomResourceOptions): RoleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RoleAssociation]
     
     /**
       * Returns true if the given object is an instance of RoleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/roleAssociation", "RoleAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/roleAssociation.RoleAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/roleAssociation.RoleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/roleAssociation.RoleAssociation */ Boolean]
   }
   
-  @js.native
   trait RoleAssociationArgs extends StObject {
     
     /**
       * DB Instance Identifier to associate with the IAM Role.
       */
-    val dbInstanceIdentifier: Input[String] = js.native
+    val dbInstanceIdentifier: Input[String]
     
     /**
       * Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the `SupportedFeatureNames` list returned by [AWS CLI rds describe-db-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html).
       */
-    val featureName: Input[String] = js.native
+    val featureName: Input[String]
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role to associate with the DB Instance.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
   }
   object RoleAssociationArgs {
     
@@ -114,23 +111,22 @@ object roleAssociationMod {
     }
   }
   
-  @js.native
   trait RoleAssociationState extends StObject {
     
     /**
       * DB Instance Identifier to associate with the IAM Role.
       */
-    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.native
+    val dbInstanceIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the feature for association. This can be found in the AWS documentation relevant to the integration or a full list is available in the `SupportedFeatureNames` list returned by [AWS CLI rds describe-db-engine-versions](https://docs.aws.amazon.com/cli/latest/reference/rds/describe-db-engine-versions.html).
       */
-    val featureName: js.UndefOr[Input[String]] = js.native
+    val featureName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM Role to associate with the DB Instance.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object RoleAssociationState {
     

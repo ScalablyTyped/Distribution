@@ -2,21 +2,19 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
   /**
     * To set the word count. 5 | 20 | 100 | ...
     */
-  var count: js.UndefOr[js.Any] = js.native
+  var count: js.UndefOr[js.Any] = js.undefined
   
   /**
     * To set the word. "Flowers" | "Freesia" | "Peony" | ...
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Text {
   

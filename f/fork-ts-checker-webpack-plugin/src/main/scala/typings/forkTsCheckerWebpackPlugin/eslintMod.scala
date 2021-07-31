@@ -3,21 +3,19 @@ package typings.forkTsCheckerWebpackPlugin
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eslintMod {
   
-  @js.native
   trait CLIEngine extends StObject {
     
-    def executeOnFiles(filesPatterns: js.Array[String]): LintReport = js.native
+    def executeOnFiles(filesPatterns: js.Array[String]): LintReport
     
-    def isPathIgnored(filePath: String): Boolean = js.native
+    def isPathIgnored(filePath: String): Boolean
     
-    def resolveFileGlobPatterns(filesPatterns: js.Array[String]): js.Array[String] = js.native
+    def resolveFileGlobPatterns(filesPatterns: js.Array[String]): js.Array[String]
     
-    var version: String = js.native
+    var version: String
   }
   object CLIEngine {
     
@@ -49,15 +47,15 @@ object eslintMod {
     }
   }
   
-  @js.native
   trait CLIEngineOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fix: js.UndefOr[Boolean] = js.native
+    var fix: js.UndefOr[Boolean] = js.undefined
   }
   object CLIEngineOptions {
     
@@ -93,29 +91,29 @@ object eslintMod {
     }
   }
   
-  @js.native
   trait LintMessage
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var column: Double = js.native
+    var column: Double
     
-    var endColumn: js.UndefOr[Double] = js.native
+    var endColumn: js.UndefOr[Double] = js.undefined
     
-    var endLine: js.UndefOr[Double] = js.native
+    var endLine: js.UndefOr[Double] = js.undefined
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var ruleId: String | Null = js.native
+    var ruleId: String | Null
     
-    var severity: Double = js.native
+    var severity: Double
   }
   object LintMessage {
     
     @scala.inline
     def apply(column: Double, line: Double, message: String, severity: Double): LintMessage = {
-      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(column = column.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], severity = severity.asInstanceOf[js.Any], ruleId = null)
       __obj.asInstanceOf[LintMessage]
     }
     
@@ -154,11 +152,11 @@ object eslintMod {
     }
   }
   
-  @js.native
   trait LintReport
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var results: js.Array[LintResult] = js.native
+    var results: js.Array[LintResult]
   }
   object LintReport {
     
@@ -179,13 +177,13 @@ object eslintMod {
     }
   }
   
-  @js.native
   trait LintResult
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var filePath: String = js.native
+    var filePath: String
     
-    var messages: js.Array[LintMessage] = js.native
+    var messages: js.Array[LintMessage]
   }
   object LintResult {
     

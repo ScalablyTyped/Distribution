@@ -2,17 +2,15 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotIn extends StObject {
   
-  var close: String = js.native
+  var close: String
   
-  var notIn: js.UndefOr[js.Array[String]] = js.native
+  var notIn: js.UndefOr[js.Array[String]] = js.undefined
   
-  var open: String = js.native
+  var open: String
 }
 object NotIn {
   

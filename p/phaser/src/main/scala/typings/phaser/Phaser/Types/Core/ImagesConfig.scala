@@ -2,21 +2,19 @@ package typings.phaser.Phaser.Types.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagesConfig extends StObject {
   
   /**
     * URL to use for the 'default' texture.
     */
-  var default: js.UndefOr[String] = js.native
+  var default: js.UndefOr[String] = js.undefined
   
   /**
     * URL to use for the 'missing' texture.
     */
-  var missing: js.UndefOr[String] = js.native
+  var missing: js.UndefOr[String] = js.undefined
 }
 object ImagesConfig {
   

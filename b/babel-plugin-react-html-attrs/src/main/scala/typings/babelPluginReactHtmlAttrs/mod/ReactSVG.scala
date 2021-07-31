@@ -2,121 +2,119 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactSVG extends StObject {
   
-  var animate: SVGFactory = js.native
+  var animate: SVGFactory
   
-  var circle: SVGFactory = js.native
+  var circle: SVGFactory
   
-  var clipPath: SVGFactory = js.native
+  var clipPath: SVGFactory
   
-  var defs: SVGFactory = js.native
+  var defs: SVGFactory
   
-  var desc: SVGFactory = js.native
+  var desc: SVGFactory
   
-  var ellipse: SVGFactory = js.native
+  var ellipse: SVGFactory
   
-  var feBlend: SVGFactory = js.native
+  var feBlend: SVGFactory
   
-  var feColorMatrix: SVGFactory = js.native
+  var feColorMatrix: SVGFactory
   
-  var feComponentTransfer: SVGFactory = js.native
+  var feComponentTransfer: SVGFactory
   
-  var feComposite: SVGFactory = js.native
+  var feComposite: SVGFactory
   
-  var feConvolveMatrix: SVGFactory = js.native
+  var feConvolveMatrix: SVGFactory
   
-  var feDiffuseLighting: SVGFactory = js.native
+  var feDiffuseLighting: SVGFactory
   
-  var feDisplacementMap: SVGFactory = js.native
+  var feDisplacementMap: SVGFactory
   
-  var feDistantLight: SVGFactory = js.native
+  var feDistantLight: SVGFactory
   
-  var feDropShadow: SVGFactory = js.native
+  var feDropShadow: SVGFactory
   
-  var feFlood: SVGFactory = js.native
+  var feFlood: SVGFactory
   
-  var feFuncA: SVGFactory = js.native
+  var feFuncA: SVGFactory
   
-  var feFuncB: SVGFactory = js.native
+  var feFuncB: SVGFactory
   
-  var feFuncG: SVGFactory = js.native
+  var feFuncG: SVGFactory
   
-  var feFuncR: SVGFactory = js.native
+  var feFuncR: SVGFactory
   
-  var feGaussianBlur: SVGFactory = js.native
+  var feGaussianBlur: SVGFactory
   
-  var feImage: SVGFactory = js.native
+  var feImage: SVGFactory
   
-  var feMerge: SVGFactory = js.native
+  var feMerge: SVGFactory
   
-  var feMergeNode: SVGFactory = js.native
+  var feMergeNode: SVGFactory
   
-  var feMorphology: SVGFactory = js.native
+  var feMorphology: SVGFactory
   
-  var feOffset: SVGFactory = js.native
+  var feOffset: SVGFactory
   
-  var fePointLight: SVGFactory = js.native
+  var fePointLight: SVGFactory
   
-  var feSpecularLighting: SVGFactory = js.native
+  var feSpecularLighting: SVGFactory
   
-  var feSpotLight: SVGFactory = js.native
+  var feSpotLight: SVGFactory
   
-  var feTile: SVGFactory = js.native
+  var feTile: SVGFactory
   
-  var feTurbulence: SVGFactory = js.native
+  var feTurbulence: SVGFactory
   
-  var filter: SVGFactory = js.native
+  var filter: SVGFactory
   
-  var foreignObject: SVGFactory = js.native
+  var foreignObject: SVGFactory
   
-  var g: SVGFactory = js.native
+  var g: SVGFactory
   
-  var image: SVGFactory = js.native
+  var image: SVGFactory
   
-  var line: SVGFactory = js.native
+  var line: SVGFactory
   
-  var linearGradient: SVGFactory = js.native
+  var linearGradient: SVGFactory
   
-  var marker: SVGFactory = js.native
+  var marker: SVGFactory
   
-  var mask: SVGFactory = js.native
+  var mask: SVGFactory
   
-  var metadata: SVGFactory = js.native
+  var metadata: SVGFactory
   
-  var path: SVGFactory = js.native
+  var path: SVGFactory
   
-  var pattern: SVGFactory = js.native
+  var pattern: SVGFactory
   
-  var polygon: SVGFactory = js.native
+  var polygon: SVGFactory
   
-  var polyline: SVGFactory = js.native
+  var polyline: SVGFactory
   
-  var radialGradient: SVGFactory = js.native
+  var radialGradient: SVGFactory
   
-  var rect: SVGFactory = js.native
+  var rect: SVGFactory
   
-  var stop: SVGFactory = js.native
+  var stop: SVGFactory
   
-  var svg: SVGFactory = js.native
+  var svg: SVGFactory
   
-  var switch: SVGFactory = js.native
+  var switch: SVGFactory
   
-  var symbol: SVGFactory = js.native
+  var symbol: SVGFactory
   
-  var text: SVGFactory = js.native
+  var text: SVGFactory
   
-  var textPath: SVGFactory = js.native
+  var textPath: SVGFactory
   
-  var tspan: SVGFactory = js.native
+  var tspan: SVGFactory
   
-  var use: SVGFactory = js.native
+  var use: SVGFactory
   
-  var view: SVGFactory = js.native
+  var view: SVGFactory
 }
 object ReactSVG {
   

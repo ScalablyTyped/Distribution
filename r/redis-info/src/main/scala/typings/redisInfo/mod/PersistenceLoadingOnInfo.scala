@@ -3,23 +3,21 @@ package typings.redisInfo.mod
 import typings.redisInfo.mod.Flag.ON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceLoadingOnInfo extends StObject {
   
-  var loading: ON = js.native
+  var loading: ON
   
-  var loading_eta_seconds: String = js.native
+  var loading_eta_seconds: String
   
-  var loading_loaded_bytes: String = js.native
+  var loading_loaded_bytes: String
   
-  var loading_loaded_perc: String = js.native
+  var loading_loaded_perc: String
   
-  var loading_start_time: String = js.native
+  var loading_start_time: String
   
-  var loading_total_bytes: String = js.native
+  var loading_total_bytes: String
 }
 object PersistenceLoadingOnInfo {
   

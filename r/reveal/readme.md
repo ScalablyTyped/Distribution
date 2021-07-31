@@ -12,7 +12,7 @@ The HTML presentation framework
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 17897 |
+| # downloads        | 18551 |
 | # stars            | 1 |
 
 ## Links

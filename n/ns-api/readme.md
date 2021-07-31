@@ -10,9 +10,9 @@ Public transit data from Nederlandse Spoorwegen API
 | ------------------ | :-------------: |
 | Full name          | ns-api |
 | Keywords           | api, navigation, nl, ns, public transport, railway, traffic, trains, transit, transport, unlicense |
-| # releases         | 1 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 8337 |
+| # downloads        | 13042 |
 | # stars            | 1 |
 
 ## Links

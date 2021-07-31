@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotHierarchy.toJSON()`. */
-@js.native
 trait PivotHierarchyData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var fields: js.UndefOr[js.Array[PivotFieldData]] = js.native
+  var fields: js.UndefOr[js.Array[PivotFieldData]] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait PivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait PivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object PivotHierarchyData {
   

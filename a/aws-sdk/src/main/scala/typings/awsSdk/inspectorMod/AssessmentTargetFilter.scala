@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentTargetFilter extends StObject {
   
   /**
     * For a record to match a filter, an explicit value or a string that contains a wildcard that is specified for this data type property must match the value of the assessmentTargetName property of the AssessmentTarget data type.
     */
-  var assessmentTargetNamePattern: js.UndefOr[NamePattern] = js.native
+  var assessmentTargetNamePattern: js.UndefOr[NamePattern] = js.undefined
 }
 object AssessmentTargetFilter {
   

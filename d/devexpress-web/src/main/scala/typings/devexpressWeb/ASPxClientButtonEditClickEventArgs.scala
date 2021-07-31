@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientButtonEditBase.ButtonClick event.
   */
-@js.native
-trait ASPxClientButtonEditClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientButtonEditClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the index of the clicked button.
     */
-  var buttonIndex: Double = js.native
+  var buttonIndex: Double
 }
 object ASPxClientButtonEditClickEventArgs {
   

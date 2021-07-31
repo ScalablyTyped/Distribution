@@ -2,58 +2,56 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamRoleDetails extends StObject {
   
   /**
     * The trust policy that grants permission to assume the role.
     */
-  var AssumeRolePolicyDocument: js.UndefOr[AwsIamRoleAssumeRolePolicyDocument] = js.native
+  var AssumeRolePolicyDocument: js.UndefOr[AwsIamRoleAssumeRolePolicyDocument] = js.undefined
   
   /**
     * The list of the managed policies that are attached to the role.
     */
-  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.native
+  var AttachedManagedPolicies: js.UndefOr[AwsIamAttachedManagedPolicyList] = js.undefined
   
   /**
     * Indicates when the role was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of instance profiles that contain this role.
     */
-  var InstanceProfileList: js.UndefOr[AwsIamInstanceProfileList] = js.native
+  var InstanceProfileList: js.UndefOr[AwsIamInstanceProfileList] = js.undefined
   
   /**
     * The maximum session duration (in seconds) that you want to set for the specified role.
     */
-  var MaxSessionDuration: js.UndefOr[Integer] = js.native
+  var MaxSessionDuration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The path to the role.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
-  var PermissionsBoundary: js.UndefOr[AwsIamPermissionsBoundary] = js.native
+  var PermissionsBoundary: js.UndefOr[AwsIamPermissionsBoundary] = js.undefined
   
   /**
     * The stable and unique string identifying the role.
     */
-  var RoleId: js.UndefOr[NonEmptyString] = js.native
+  var RoleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The friendly name that identifies the role.
     */
-  var RoleName: js.UndefOr[NonEmptyString] = js.native
+  var RoleName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The list of inline policies that are embedded in the role.
     */
-  var RolePolicyList: js.UndefOr[AwsIamRolePolicyList] = js.native
+  var RolePolicyList: js.UndefOr[AwsIamRolePolicyList] = js.undefined
 }
 object AwsIamRoleDetails {
   

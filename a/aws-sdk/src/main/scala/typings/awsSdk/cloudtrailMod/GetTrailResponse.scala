@@ -2,13 +2,11 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTrailResponse extends StObject {
   
-  var Trail: js.UndefOr[typings.awsSdk.cloudtrailMod.Trail] = js.native
+  var Trail: js.UndefOr[typings.awsSdk.cloudtrailMod.Trail] = js.undefined
 }
 object GetTrailResponse {
   

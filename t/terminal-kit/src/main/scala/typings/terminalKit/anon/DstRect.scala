@@ -5,21 +5,19 @@ import typings.terminalKit.terminalKitStrings.x
 import typings.terminalKit.terminalKitStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DstRect extends StObject {
   
-  var dstRect: Rect = js.native
+  var dstRect: Rect
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var srcRect: Rect = js.native
+  var srcRect: Rect
   
-  var wrapOnly: js.UndefOr[x | y] = js.native
+  var wrapOnly: js.UndefOr[x | y] = js.undefined
 }
 object DstRect {
   

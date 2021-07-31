@@ -2,17 +2,15 @@ package typings.postmark.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliveryMessage extends StObject {
   
-  var DeliveryMessage: String = js.native
+  var DeliveryMessage: String
   
-  var DestinationIP: String = js.native
+  var DestinationIP: String
   
-  var DestinationServer: String = js.native
+  var DestinationServer: String
 }
 object DeliveryMessage {
   

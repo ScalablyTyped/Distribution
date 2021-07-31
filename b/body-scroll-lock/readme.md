@@ -10,9 +10,9 @@ Enables body scroll locking (for iOS Mobile and Tablet, Android, desktop Safari/
 | ------------------ | :-------------: |
 | Full name          | body-scroll-lock |
 | Keywords           | body scroll, body scroll lock, react scroll lock, react scroll, scroll, lock, freeze, toggle, disable, overflow, modal, lightbox, react, vanilla-js, angular, vue, ios, mobile, desktop, tablet, bsl |
-| # releases         | 18 |
-| # dependents       | 185 |
-| # downloads        | 11472274 |
+| # releases         | 13 |
+| # dependents       | 217 |
+| # downloads        | 15989057 |
 | # stars            | 1 |
 
 ## Links

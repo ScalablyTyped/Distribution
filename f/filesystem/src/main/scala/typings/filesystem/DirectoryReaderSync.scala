@@ -2,7 +2,6 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,13 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * <li> The entries produced by readEntries must not include the directory itself ["."] or its parent [".."].</li>
   * </ul>
   */
-@js.native
 trait DirectoryReaderSync extends StObject {
   
   /**
     * Read the next block of entries from this directory.
     */
-  def readEntries(): js.Array[EntrySync] = js.native
+  def readEntries(): js.Array[EntrySync]
 }
 object DirectoryReaderSync {
   

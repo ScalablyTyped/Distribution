@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a push token resource.
   */
-@js.native
 trait SchemaPushToken extends StObject {
   
   /**
@@ -17,23 +15,23 @@ trait SchemaPushToken extends StObject {
     * compatible messages. Format: [PLATFORM_TYPE]:[VERSION_NUMBER]. Possible
     * values of PLATFORM_TYPE are:   - IOS - Push token is for iOS
     */
-  var clientRevision: js.UndefOr[String] = js.native
+  var clientRevision: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for this push token.
     */
-  var id: js.UndefOr[SchemaPushTokenId] = js.native
+  var id: js.UndefOr[SchemaPushTokenId] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#pushToken.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The preferred language for notifications that are sent using this token.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object SchemaPushToken {
   

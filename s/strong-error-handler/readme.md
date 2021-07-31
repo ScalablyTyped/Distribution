@@ -12,7 +12,7 @@ Error handler for use in development and production environments.
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 59 |
-| # downloads        | 2553564 |
+| # downloads        | 2954306 |
 | # stars            | 1 |
 
 ## Links

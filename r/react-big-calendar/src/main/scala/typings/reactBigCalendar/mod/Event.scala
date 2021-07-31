@@ -3,21 +3,19 @@ package typings.reactBigCalendar.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var allDay: js.UndefOr[Boolean] = js.native
+  var allDay: js.UndefOr[Boolean] = js.undefined
   
-  var end: js.UndefOr[Date] = js.native
+  var end: js.UndefOr[Date] = js.undefined
   
-  var resource: js.UndefOr[js.Any] = js.native
+  var resource: js.UndefOr[js.Any] = js.undefined
   
-  var start: js.UndefOr[Date] = js.native
+  var start: js.UndefOr[Date] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Event {
   

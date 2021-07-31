@@ -3,11 +3,12 @@ package typings.kendoUi.kendo.data
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SchedulerEvent extends Model {
+trait SchedulerEvent
+  extends StObject
+     with Model {
   
   def clone(options: js.Any, updateUid: Boolean): SchedulerEvent = js.native
   

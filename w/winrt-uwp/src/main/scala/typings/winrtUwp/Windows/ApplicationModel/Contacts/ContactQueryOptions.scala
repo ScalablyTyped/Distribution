@@ -3,30 +3,28 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used to specify the query options when searching for contacts. */
-@js.native
 trait ContactQueryOptions extends StObject {
   
   /** Gets a list to which you can add ContactAnnotationList.Id values for which to search. */
-  var annotationListIds: IVector[String] = js.native
+  var annotationListIds: IVector[String]
   
   /** Gets a list to which you can add ContactList.Id values for which to search. */
-  var contactListIds: IVector[String] = js.native
+  var contactListIds: IVector[String]
   
   /** Gets or sets the desired fields a contact must have to match the query. */
-  var desiredFields: ContactQueryDesiredFields = js.native
+  var desiredFields: ContactQueryDesiredFields
   
   /** Gets or sets the desired annotation operations a contact must have to match the query. */
-  var desiredOperations: ContactAnnotationOperations = js.native
+  var desiredOperations: ContactAnnotationOperations
   
   /** Gets or sets a Boolean value indicating if the query results should include contacts from lists that are not shown in the user interface. */
-  var includeContactsFromHiddenLists: Boolean = js.native
+  var includeContactsFromHiddenLists: Boolean
   
   /** Gets a ContactQueryTextSearch object that can be used for text searches. */
-  var textSearch: ContactQueryTextSearch = js.native
+  var textSearch: ContactQueryTextSearch
 }
 object ContactQueryOptions {
   

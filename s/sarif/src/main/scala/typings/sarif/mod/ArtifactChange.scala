@@ -2,27 +2,25 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactChange extends StObject {
   
   /**
     * The location of the artifact to change.
     */
-  var artifactLocation: ArtifactLocation = js.native
+  var artifactLocation: ArtifactLocation
   
   /**
     * Key/value pairs that provide additional information about the change.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * An array of replacement objects, each of which represents the replacement of a single region in a single
     * artifact specified by 'artifactLocation'.
     */
-  var replacements: js.Array[Replacement] = js.native
+  var replacements: js.Array[Replacement]
 }
 object ArtifactChange {
   

@@ -2,27 +2,27 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapPaint extends AnyPaint {
+trait HeatmapPaint
+  extends StObject
+     with AnyPaint {
   
-  var `heatmap-color`: js.UndefOr[String | StyleFunction | Expression] = js.native
+  var `heatmap-color`: js.UndefOr[String | StyleFunction | Expression] = js.undefined
   
-  var `heatmap-intensity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `heatmap-intensity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `heatmap-intensity-transition`: js.UndefOr[Transition] = js.native
+  var `heatmap-intensity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `heatmap-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `heatmap-opacity`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `heatmap-opacity-transition`: js.UndefOr[Transition] = js.native
+  var `heatmap-opacity-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `heatmap-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `heatmap-radius`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
   
-  var `heatmap-radius-transition`: js.UndefOr[Transition] = js.native
+  var `heatmap-radius-transition`: js.UndefOr[Transition] = js.undefined
   
-  var `heatmap-weight`: js.UndefOr[Double | StyleFunction | Expression] = js.native
+  var `heatmap-weight`: js.UndefOr[Double | StyleFunction | Expression] = js.undefined
 }
 object HeatmapPaint {
   

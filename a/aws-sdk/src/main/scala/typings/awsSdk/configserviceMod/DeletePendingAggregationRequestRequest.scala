@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePendingAggregationRequestRequest extends StObject {
   
   /**
     * The 12-digit account ID of the account requesting to aggregate data.
     */
-  var RequesterAccountId: AccountId = js.native
+  var RequesterAccountId: AccountId
   
   /**
     * The region requesting to aggregate data.
     */
-  var RequesterAwsRegion: AwsRegion = js.native
+  var RequesterAwsRegion: AwsRegion
 }
 object DeletePendingAggregationRequestRequest {
   

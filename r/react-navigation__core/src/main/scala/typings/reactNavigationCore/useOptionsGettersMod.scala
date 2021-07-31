@@ -6,25 +6,26 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useOptionsGettersMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useOptionsGetters", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useOptionsGetters", JSImport.Namespace)
   @js.native
-  def default(hasKeyOptionsNavigation: Options): GetCurrentOptions = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasKeyOptionsNavigation: Options): GetCurrentOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasKeyOptionsNavigation.asInstanceOf[js.Any]).asInstanceOf[GetCurrentOptions]
+  
   trait Options extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     var navigation: js.UndefOr[
         NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object]
-      ] = js.native
+      ] = js.undefined
     
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Options {
     

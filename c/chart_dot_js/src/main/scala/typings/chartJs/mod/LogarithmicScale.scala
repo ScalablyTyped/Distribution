@@ -2,14 +2,14 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogarithmicScale extends ChartScales {
+trait LogarithmicScale
+  extends StObject
+     with ChartScales {
   
   @JSName("ticks")
-  var ticks_LogarithmicScale: js.UndefOr[LogarithmicTickOptions] = js.native
+  var ticks_LogarithmicScale: js.UndefOr[LogarithmicTickOptions] = js.undefined
 }
 object LogarithmicScale {
   

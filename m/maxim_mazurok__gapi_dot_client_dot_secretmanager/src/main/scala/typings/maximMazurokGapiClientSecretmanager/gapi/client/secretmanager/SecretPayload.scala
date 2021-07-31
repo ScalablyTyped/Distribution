@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSecretmanager.gapi.client.secretmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecretPayload extends StObject {
   
   /** The secret data. Must be no larger than 64KiB. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
 }
 object SecretPayload {
   

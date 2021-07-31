@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerServiceRegistryLogin extends StObject {
   
   /**
     * The timestamp of when the container image registry username and password expire. The log in credentials expire 12 hours after they are created, at which point you will need to create a new set of log in credentials using the CreateContainerServiceRegistryLogin action.
     */
-  var expiresAt: js.UndefOr[IsoDate] = js.native
+  var expiresAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The container service registry password to use to push container images to the container image registry of a Lightsail account
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * The address to use to push container images to the container image registry of a Lightsail account.
     */
-  var registry: js.UndefOr[String] = js.native
+  var registry: js.UndefOr[String] = js.undefined
   
   /**
     * The container service registry username to use to push container images to the container image registry of a Lightsail account.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object ContainerServiceRegistryLogin {
   

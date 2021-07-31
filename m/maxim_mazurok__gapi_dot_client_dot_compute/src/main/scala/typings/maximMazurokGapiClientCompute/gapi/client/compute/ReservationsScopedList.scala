@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 import typings.maximMazurokGapiClientCompute.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationsScopedList extends StObject {
   
   /** A list of reservations contained in this scope. */
-  var reservations: js.UndefOr[js.Array[Reservation]] = js.native
+  var reservations: js.UndefOr[js.Array[Reservation]] = js.undefined
   
   /** Informational warning which replaces the list of reservations when the list is empty. */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object ReservationsScopedList {
   

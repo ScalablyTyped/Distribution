@@ -1,39 +1,46 @@
 package typings.tabris.mod
 
-import typings.tabris.AnonSpacing
+import typings.tabris.anon.Spacing
 import typings.tabris.tabrisStrings.centerX
 import typings.tabris.tabrisStrings.left
 import typings.tabris.tabrisStrings.right
 import typings.tabris.tabrisStrings.stretchX
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tabris", "StackLayout")
 @js.native
 class StackLayout () extends Layout {
-  def this(options: AnonSpacing) = this()
+  def this(options: Spacing) = this()
+  
   /**
     * Determines the horizontal placement of the children. For the `stretchX` value to work correctly the
     * composite needs to be given a width either by setting `width` or by setting `left` and `right`.
     * @constant
     */
   val alignment: left | centerX | stretchX | right = js.native
+  
   /**
     * The space between the children in device independent pixel.
     * @constant
     */
   val spacing: Double = js.native
 }
-
 /* static members */
-@JSImport("tabris", "StackLayout")
-@js.native
-object StackLayout extends js.Object {
+object StackLayout {
+  
+  @JSImport("tabris", "StackLayout")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Instance of StackLayout used as the default `layout` property value of `Stack` widgets. Equivalent to
     * `new StackLayout()`
     */
-  var default: StackLayout = js.native
+  @JSImport("tabris", "StackLayout.default")
+  @js.native
+  def default: StackLayout = js.native
+  @scala.inline
+  def default_=(x: StackLayout): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
 }
-

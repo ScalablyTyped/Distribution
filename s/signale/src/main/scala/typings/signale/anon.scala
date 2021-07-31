@@ -6,17 +6,15 @@ import typings.signale.mod.Signale
 import typings.signale.mod.SignaleConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var span: js.UndefOr[Double] = js.native
+    var span: js.UndefOr[Double] = js.undefined
   }
   object Label {
     
@@ -41,88 +39,164 @@ object anon {
   }
   
   /* Inlined std.Record<signale.signale.DefaultMethods, signale.signale.LoggerFunc> */
-  @js.native
   trait RecordDefaultMethodsLogge extends StObject {
     
-    def await(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def await(message: js.Any, optionalArgs: js.Any*): Unit
+    def await(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("await")
-    var await_Original: LoggerFunc = js.native
+    var await_Original: LoggerFunc
     
-    def complete(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def complete(message: js.Any, optionalArgs: js.Any*): Unit
+    def complete(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("complete")
-    var complete_Original: LoggerFunc = js.native
+    var complete_Original: LoggerFunc
     
-    def debug(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def debug(message: js.Any, optionalArgs: js.Any*): Unit
+    def debug(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("debug")
-    var debug_Original: LoggerFunc = js.native
+    var debug_Original: LoggerFunc
     
-    def error(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def error(message: js.Any, optionalArgs: js.Any*): Unit
+    def error(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("error")
-    var error_Original: LoggerFunc = js.native
+    var error_Original: LoggerFunc
     
-    def fatal(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def fatal(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def fatal(message: js.Any, optionalArgs: js.Any*): Unit
+    def fatal(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("fatal")
-    var fatal_Original: LoggerFunc = js.native
+    var fatal_Original: LoggerFunc
     
-    def fav(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def fav(message: js.Any, optionalArgs: js.Any*): Unit
+    def fav(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("fav")
-    var fav_Original: LoggerFunc = js.native
+    var fav_Original: LoggerFunc
     
-    def info(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def info(message: js.Any, optionalArgs: js.Any*): Unit
+    def info(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("info")
-    var info_Original: LoggerFunc = js.native
+    var info_Original: LoggerFunc
     
-    def log(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def log(message: js.Any, optionalArgs: js.Any*): Unit
+    def log(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("log")
-    var log_Original: LoggerFunc = js.native
+    var log_Original: LoggerFunc
     
-    def note(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def note(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def note(message: js.Any, optionalArgs: js.Any*): Unit
+    def note(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("note")
-    var note_Original: LoggerFunc = js.native
+    var note_Original: LoggerFunc
     
-    def pause(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def pause(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def pause(message: js.Any, optionalArgs: js.Any*): Unit
+    def pause(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("pause")
-    var pause_Original: LoggerFunc = js.native
+    var pause_Original: LoggerFunc
     
-    def pending(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def pending(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def pending(message: js.Any, optionalArgs: js.Any*): Unit
+    def pending(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("pending")
-    var pending_Original: LoggerFunc = js.native
+    var pending_Original: LoggerFunc
     
-    def star(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def star(message: js.Any, optionalArgs: js.Any*): Unit
+    def star(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("star")
-    var star_Original: LoggerFunc = js.native
+    var star_Original: LoggerFunc
     
-    def start(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def start(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def start(message: js.Any, optionalArgs: js.Any*): Unit
+    def start(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("start")
-    var start_Original: LoggerFunc = js.native
+    var start_Original: LoggerFunc
     
-    def success(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def success(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def success(message: js.Any, optionalArgs: js.Any*): Unit
+    def success(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("success")
-    var success_Original: LoggerFunc = js.native
+    var success_Original: LoggerFunc
     
-    def warn(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def warn(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def warn(message: js.Any, optionalArgs: js.Any*): Unit
+    def warn(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("warn")
-    var warn_Original: LoggerFunc = js.native
+    var warn_Original: LoggerFunc
     
-    def watch(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
-    def watch(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def watch(message: js.Any, optionalArgs: js.Any*): Unit
+    def watch(message: Unit, optionalArgs: js.Any*): Unit
     @JSName("watch")
-    var watch_Original: LoggerFunc = js.native
+    var watch_Original: LoggerFunc
+  }
+  object RecordDefaultMethodsLogge {
+    
+    @scala.inline
+    def apply(
+      await: LoggerFunc,
+      complete: LoggerFunc,
+      debug: LoggerFunc,
+      error: LoggerFunc,
+      fatal: LoggerFunc,
+      fav: LoggerFunc,
+      info: LoggerFunc,
+      log: LoggerFunc,
+      note: LoggerFunc,
+      pause: LoggerFunc,
+      pending: LoggerFunc,
+      star: LoggerFunc,
+      start: LoggerFunc,
+      success: LoggerFunc,
+      warn: LoggerFunc,
+      watch: LoggerFunc
+    ): RecordDefaultMethodsLogge = {
+      val __obj = js.Dynamic.literal(await = await.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], fatal = fatal.asInstanceOf[js.Any], fav = fav.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], note = note.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], pending = pending.asInstanceOf[js.Any], star = star.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any], warn = warn.asInstanceOf[js.Any], watch = watch.asInstanceOf[js.Any])
+      __obj.asInstanceOf[RecordDefaultMethodsLogge]
+    }
+    
+    @scala.inline
+    implicit class RecordDefaultMethodsLoggeMutableBuilder[Self <: RecordDefaultMethodsLogge] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAwait(value: LoggerFunc): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setComplete(value: LoggerFunc): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDebug(value: LoggerFunc): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setError(value: LoggerFunc): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFatal(value: LoggerFunc): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFav(value: LoggerFunc): Self = StObject.set(x, "fav", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInfo(value: LoggerFunc): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: LoggerFunc): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNote(value: LoggerFunc): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPause(value: LoggerFunc): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPending(value: LoggerFunc): Self = StObject.set(x, "pending", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStar(value: LoggerFunc): Self = StObject.set(x, "star", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStart(value: LoggerFunc): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSuccess(value: LoggerFunc): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWarn(value: LoggerFunc): Self = StObject.set(x, "warn", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setWatch(value: LoggerFunc): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+    }
   }
   
   /* Inlined signale.signale.Signale<signale.signale.DefaultMethods> */
@@ -136,8 +210,8 @@ object anon {
       */
     def addSecrets(secrets: js.Array[Double | String]): Unit = js.native
     
-    def await(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def await(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def await(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("await")
     var await_Original: LoggerFunc = js.native
     
@@ -146,8 +220,8 @@ object anon {
       */
     def clearSecrets(): Unit = js.native
     
-    def complete(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def complete(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def complete(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("complete")
     var complete_Original: LoggerFunc = js.native
     
@@ -158,8 +232,8 @@ object anon {
       */
     def config(configObj: SignaleConfig): Signale[DefaultMethods] = js.native
     
-    def debug(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def debug(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def debug(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("debug")
     var debug_Original: LoggerFunc = js.native
     
@@ -173,23 +247,23 @@ object anon {
       */
     def enable(): Unit = js.native
     
-    def error(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def error(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def error(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("error")
     var error_Original: LoggerFunc = js.native
     
-    def fatal(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def fatal(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def fatal(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("fatal")
     var fatal_Original: LoggerFunc = js.native
     
-    def fav(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def fav(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def fav(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("fav")
     var fav_Original: LoggerFunc = js.native
     
-    def info(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def info(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def info(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("info")
     var info_Original: LoggerFunc = js.native
     
@@ -200,23 +274,23 @@ object anon {
       */
     def isEnabled(): Boolean = js.native
     
-    def log(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def log(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def log(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("log")
     var log_Original: LoggerFunc = js.native
     
-    def note(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def note(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def note(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("note")
     var note_Original: LoggerFunc = js.native
     
-    def pause(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def pause(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def pause(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("pause")
     var pause_Original: LoggerFunc = js.native
     
-    def pending(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def pending(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def pending(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("pending")
     var pending_Original: LoggerFunc = js.native
     
@@ -227,18 +301,18 @@ object anon {
       */
     def scope(name: String*): Signale[DefaultMethods] = js.native
     
-    def star(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def star(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def star(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("star")
     var star_Original: LoggerFunc = js.native
     
-    def start(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def start(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def start(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("start")
     var start_Original: LoggerFunc = js.native
     
-    def success(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def success(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def success(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("success")
     var success_Original: LoggerFunc = js.native
     
@@ -260,20 +334,20 @@ object anon {
       * @param span Total running time.
       */
     def timeEnd(): Label = js.native
-    def timeEnd(label: js.UndefOr[scala.Nothing], span: Double): Label = js.native
     def timeEnd(label: String): Label = js.native
     def timeEnd(label: String, span: Double): Label = js.native
+    def timeEnd(label: Unit, span: Double): Label = js.native
     
     /** Clears the scope name of the logger. */
     def unscope(): Unit = js.native
     
-    def warn(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def warn(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def warn(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("warn")
     var warn_Original: LoggerFunc = js.native
     
-    def watch(message: js.UndefOr[scala.Nothing], optionalArgs: js.Any*): Unit = js.native
     def watch(message: js.Any, optionalArgs: js.Any*): Unit = js.native
+    def watch(message: Unit, optionalArgs: js.Any*): Unit = js.native
     @JSName("watch")
     var watch_Original: LoggerFunc = js.native
   }

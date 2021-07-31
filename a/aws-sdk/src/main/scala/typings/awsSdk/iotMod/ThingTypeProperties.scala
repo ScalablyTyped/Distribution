@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThingTypeProperties extends StObject {
   
   /**
     * A list of searchable thing attribute names.
     */
-  var searchableAttributes: js.UndefOr[SearchableAttributes] = js.native
+  var searchableAttributes: js.UndefOr[SearchableAttributes] = js.undefined
   
   /**
     * The description of the thing type.
     */
-  var thingTypeDescription: js.UndefOr[ThingTypeDescription] = js.native
+  var thingTypeDescription: js.UndefOr[ThingTypeDescription] = js.undefined
 }
 object ThingTypeProperties {
   

@@ -2,13 +2,13 @@ package typings.fibjs.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Class_HttpsServer")
 @js.native
 class ClassHttpsServer protected ()
-  extends typings.fibjs.ClassHttpsServer {
+  extends StObject
+     with typings.fibjs.ClassHttpsServer {
   /**
     * 
     * @brief HttpsServer 构造函数，在所有本机地址侦听
@@ -33,7 +33,7 @@ class ClassHttpsServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[_], port: Double, hdlr: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[js.Any], port: Double, hdlr: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief HttpsServer 构造函数
@@ -59,7 +59,7 @@ class ClassHttpsServer protected ()
     * 
     * 
     */
-  def this(certs: js.Array[_], addr: String, port: Double, hdlr: typings.fibjs.ClassHandler) = this()
+  def this(certs: js.Array[js.Any], addr: String, port: Double, hdlr: typings.fibjs.ClassHandler) = this()
   /**
     * 
     * @brief HttpsServer 构造函数，在所有本机地址侦听

@@ -2,7 +2,6 @@ package typings.zoneJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can define the following configurations on the `window` or `global` object before
   * importing `zone-testing.js` to change `zone-testing.js` default behaviors in the test runner.
   */
-@js.native
 trait ZoneTestConfigurations extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait ZoneTestConfigurations extends StObject {
     * `zone-testing.js` does not monkey patch the jasmine APIs and the `async()`/`fakeAsync()` cannot
     * work with the Jasmine runner any longer.
     */
-  var __Zone_disable_jasmine: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_jasmine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the Jest integration.
@@ -48,7 +46,7 @@ trait ZoneTestConfigurations extends StObject {
     * `zone-testing.js` does not monkey patch the jest APIs and `async()`/`fakeAsync()` cannot
     * work with the Jest runner any longer.
     */
-  var __Zone_disable_jest: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_jest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the Mocha integration.
@@ -66,7 +64,7 @@ trait ZoneTestConfigurations extends StObject {
     * `zone-testing.js` does not monkey patch the Mocha APIs and the `async()/`fakeAsync()` can not
     * work with the Mocha runner any longer.
     */
-  var __Zone_disable_mocha: js.UndefOr[Boolean] = js.native
+  var __Zone_disable_mocha: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable auto running into `fakeAsync()` when installing the `jasmine.clock()`.
@@ -119,7 +117,7 @@ trait ZoneTestConfigurations extends StObject {
     * ```
     *
     */
-  var __zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched: js.UndefOr[Boolean] = js.native
+  var __zone_symbol__fakeAsyncAutoFakeAsyncWhenClockPatched: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable monkey patch the jasmine clock APIs.
@@ -152,7 +150,7 @@ trait ZoneTestConfigurations extends StObject {
     * `zone-testing.js`,`zone-testing.js` does not monkey patch the `jasmine.clock()` APIs and the
     * `jasmine.clock()` cannot work with `fakeAsync()` any longer.
     */
-  var __zone_symbol__fakeAsyncDisablePatchingClock: js.UndefOr[Boolean] = js.native
+  var __zone_symbol__fakeAsyncDisablePatchingClock: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable waiting for the unresolved promise in the `async()` test.
@@ -181,7 +179,7 @@ trait ZoneTestConfigurations extends StObject {
     * If you set `__zone_symbol__supportWaitUnResolvedChainedPromise = true`, the above case
     * times out, because `async()` will wait for the unresolved promise.
     */
-  var __zone_symbol__supportWaitUnResolvedChainedPromise: js.UndefOr[Boolean] = js.native
+  var __zone_symbol__supportWaitUnResolvedChainedPromise: js.UndefOr[Boolean] = js.undefined
 }
 object ZoneTestConfigurations {
   

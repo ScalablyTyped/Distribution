@@ -2,19 +2,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewSelectionEventArgs extends ProcessingModeEventArgs {
+trait GridViewSelectionEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val isAllRecordsOnPage: Boolean = js.native
+  val isAllRecordsOnPage: Boolean
   
-  val isChangedOnServer: Boolean = js.native
+  val isChangedOnServer: Boolean
   
-  val isSelected: Boolean = js.native
+  val isSelected: Boolean
   
-  val visibleIndex: Double = js.native
+  val visibleIndex: Double
 }
 object GridViewSelectionEventArgs {
   

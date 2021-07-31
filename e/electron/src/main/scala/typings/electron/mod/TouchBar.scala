@@ -12,21 +12,27 @@ import typings.electron.Electron.TouchBarScrubberConstructorOptions
 import typings.electron.Electron.TouchBarSegmentedControlConstructorOptions
 import typings.electron.Electron.TouchBarSliderConstructorOptions
 import typings.electron.Electron.TouchBarSpacerConstructorOptions
+import typings.electron.electronStrings.left
+import typings.electron.electronStrings.overlay
+import typings.electron.electronStrings.right
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron", "TouchBar")
 @js.native
 class TouchBar protected ()
-  extends typings.electron.Electron.TouchBar {
+  extends StObject
+     with typings.electron.Electron.TouchBar {
   // Docs: https://electronjs.org/docs/api/touch-bar
   /**
     * TouchBar
     */
   def this(options: TouchBarConstructorOptions) = this()
+  
+  /* CompleteClass */
+  var escapeItem: typings.electron.Electron.TouchBarButton | typings.electron.Electron.TouchBarColorPicker | typings.electron.Electron.TouchBarGroup | typings.electron.Electron.TouchBarLabel | typings.electron.Electron.TouchBarPopover | typings.electron.Electron.TouchBarScrubber | typings.electron.Electron.TouchBarSegmentedControl | typings.electron.Electron.TouchBarSlider | typings.electron.Electron.TouchBarSpacer | Null = js.native
 }
 object TouchBar {
   
@@ -38,12 +44,31 @@ object TouchBar {
   @JSImport("electron", "TouchBar.TouchBarButton")
   @js.native
   class TouchBarButton protected ()
-    extends typings.electron.Electron.TouchBarButton {
+    extends StObject
+       with typings.electron.Electron.TouchBarButton {
     // Docs: https://electronjs.org/docs/api/touch-bar-button
     /**
       * TouchBarButton
       */
     def this(options: TouchBarButtonConstructorOptions) = this()
+    
+    /* CompleteClass */
+    var accessibilityLabel: String = js.native
+    
+    /* CompleteClass */
+    var backgroundColor: String = js.native
+    
+    /* CompleteClass */
+    var enabled: Boolean = js.native
+    
+    /* CompleteClass */
+    var icon: typings.electron.Electron.NativeImage_ = js.native
+    
+    /* CompleteClass */
+    var iconPosition: left | right | overlay = js.native
+    
+    /* CompleteClass */
+    var label: String = js.native
   }
   /* static member */
   /* was `typeof TouchBarButton` */

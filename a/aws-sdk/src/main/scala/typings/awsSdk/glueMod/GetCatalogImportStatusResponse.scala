@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCatalogImportStatusResponse extends StObject {
   
   /**
     * The status of the specified catalog migration.
     */
-  var ImportStatus: js.UndefOr[CatalogImportStatus] = js.native
+  var ImportStatus: js.UndefOr[CatalogImportStatus] = js.undefined
 }
 object GetCatalogImportStatusResponse {
   

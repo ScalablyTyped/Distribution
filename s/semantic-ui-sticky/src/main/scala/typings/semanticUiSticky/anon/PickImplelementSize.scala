@@ -2,14 +2,12 @@ package typings.semanticUiSticky.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sticky.SemanticUI.Sticky.ErrorSettings._Impl, 'elementSize'> */
-@js.native
 trait PickImplelementSize extends StObject {
   
-  var elementSize: String = js.native
+  var elementSize: String
 }
 object PickImplelementSize {
   

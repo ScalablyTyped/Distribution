@@ -2,15 +2,15 @@ package typings.rxLite.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Observer[T] extends IObserver[T] {
+trait Observer[T]
+  extends StObject
+     with IObserver[T] {
   
-  def asObserver(): Observer[T] = js.native
+  def asObserver(): Observer[T]
   
-  def toNotifier(): js.Function1[/* notification */ Notification[T], Unit] = js.native
+  def toNotifier(): js.Function1[/* notification */ Notification[T], Unit]
 }
 object Observer {
   
@@ -27,7 +27,7 @@ object Observer {
   }
   
   @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+  implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     @scala.inline
     def setAsObserver(value: () => Observer[T]): Self = StObject.set(x, "asObserver", js.Any.fromFunction0(value))

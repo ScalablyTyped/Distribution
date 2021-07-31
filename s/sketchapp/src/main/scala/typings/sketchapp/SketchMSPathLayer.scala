@@ -7,22 +7,22 @@ import typings.sketchapp.sketchappStrings.shapePath
 import typings.sketchapp.sketchappStrings.triangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchMSPathLayer extends SketchMSLayer {
+trait SketchMSPathLayer
+  extends StObject
+     with SketchMSLayer {
   
   @JSName("_class")
-  var _class_SketchMSPathLayer: path | shapePath | rectangle | oval | triangle = js.native
+  var _class_SketchMSPathLayer: path | shapePath | rectangle | oval | triangle
   
-  var edited: Boolean = js.native
+  var edited: Boolean
   
-  var isClosed: Boolean = js.native
+  var isClosed: Boolean
   
-  var pointRadiusBehaviour: Double = js.native
+  var pointRadiusBehaviour: Double
   
-  var points: js.Array[SketchMSPoint] = js.native
+  var points: js.Array[SketchMSPoint]
 }
 object SketchMSPathLayer {
   

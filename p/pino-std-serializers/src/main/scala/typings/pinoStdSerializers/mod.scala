@@ -10,42 +10,37 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pino-std-serializers", "err")
+  @JSImport("pino-std-serializers", JSImport.Namespace)
   @js.native
-  def err(err: Error): SerializedError = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pino-std-serializers", "mapHttpRequest")
-  @js.native
-  def mapHttpRequest(req: IncomingMessage): Req = js.native
+  @scala.inline
+  def err(err: Error): SerializedError = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(err.asInstanceOf[js.Any]).asInstanceOf[SerializedError]
   
-  @JSImport("pino-std-serializers", "mapHttpResponse")
-  @js.native
-  def mapHttpResponse(res: ServerResponse): Res = js.native
+  @scala.inline
+  def mapHttpRequest(req: IncomingMessage): Req = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpRequest")(req.asInstanceOf[js.Any]).asInstanceOf[Req]
   
-  @JSImport("pino-std-serializers", "req")
-  @js.native
-  def req(req: IncomingMessage): SerializedRequest = js.native
+  @scala.inline
+  def mapHttpResponse(res: ServerResponse): Res = ^.asInstanceOf[js.Dynamic].applyDynamic("mapHttpResponse")(res.asInstanceOf[js.Any]).asInstanceOf[Res]
   
-  @JSImport("pino-std-serializers", "res")
-  @js.native
-  def res(res: ServerResponse): SerializedResponse = js.native
+  @scala.inline
+  def req(req: IncomingMessage): SerializedRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(req.asInstanceOf[js.Any]).asInstanceOf[SerializedRequest]
   
-  @JSImport("pino-std-serializers", "wrapErrorSerializer")
-  @js.native
-  def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, _]] = js.native
+  @scala.inline
+  def res(res: ServerResponse): SerializedResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(res.asInstanceOf[js.Any]).asInstanceOf[SerializedResponse]
   
-  @JSImport("pino-std-serializers", "wrapRequestSerializer")
-  @js.native
-  def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, _]] = js.native
+  @scala.inline
+  def wrapErrorSerializer(customSerializer: CustomErrorSerializer): js.Function1[/* err */ Error, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapErrorSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* err */ Error, Record[String, js.Any]]]
   
-  @JSImport("pino-std-serializers", "wrapResponseSerializer")
-  @js.native
-  def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, _]] = js.native
+  @scala.inline
+  def wrapRequestSerializer(customSerializer: CustomRequestSerializer): js.Function1[/* req */ IncomingMessage, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapRequestSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* req */ IncomingMessage, Record[String, js.Any]]]
+  
+  @scala.inline
+  def wrapResponseSerializer(customSerializer: CustomResponseSerializer): js.Function1[/* res */ ServerResponse, Record[String, js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapResponseSerializer")(customSerializer.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* res */ ServerResponse, Record[String, js.Any]]]
   
   type CustomErrorSerializer = js.Function1[/* err */ SerializedError, Record[String, js.Any]]
   
@@ -53,9 +48,9 @@ object mod {
   
   type CustomResponseSerializer = js.Function1[/* res */ SerializedResponse, Record[String, js.Any]]
   
-  @js.native
   trait SerializedError
-    extends /* key */ NumberDictionary[js.Any]
+    extends StObject
+       with /* key */ NumberDictionary[js.Any]
        with /**
     * Any other extra properties that have been attached to the object will also be present on the serialized object.
     */
@@ -64,23 +59,23 @@ object mod {
     /**
       * The supplied error message.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * Non-enumerable. The original Error object. This will not be included in the logged output.
       * This is available for subsequent serializers to use.
       */
-    var raw: Error = js.native
+    var raw: Error
     
     /**
       * The stack when the error was generated.
       */
-    var stack: String = js.native
+    var stack: String
     
     /**
       * The name of the object's constructor.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object SerializedError {
     
@@ -108,41 +103,40 @@ object mod {
     }
   }
   
-  @js.native
   trait SerializedRequest extends StObject {
     
     /**
       * Reference to the `headers` object from the request (as per req.headers in core HTTP).
       */
-    var headers: Record[String, String] = js.native
+    var headers: Record[String, String]
     
     /**
       * Defaults to `undefined`, unless there is an `id` property already attached to the `request` object or
       * to the `request.info` object. Attach a synchronous function to the `request.id` that returns an
       * identifier to have the value filled.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * HTTP method.
       */
-    var method: String = js.native
+    var method: String
     
     /**
       * Non-enumerable, i.e. will not be in the output, original request object. This is available for subsequent
       * serializers to use. In cases where the `request` input already has  a `raw` property this will
       * replace the original `request.raw` property.
       */
-    var raw: IncomingMessage = js.native
+    var raw: IncomingMessage
     
-    var remoteAddress: String = js.native
+    var remoteAddress: String
     
-    var remotePort: Double = js.native
+    var remotePort: Double
     
     /**
       * Request pathname (as per req.url in core HTTP).
       */
-    var url: String = js.native
+    var url: String
   }
   object SerializedRequest {
     
@@ -188,23 +182,22 @@ object mod {
     }
   }
   
-  @js.native
   trait SerializedResponse extends StObject {
     
     /**
       * The headers to be sent in the response.
       */
-    var headers: Record[String, String] = js.native
+    var headers: Record[String, String]
     
     /**
       * Non-enumerable, i.e. will not be in the output, original response object. This is available for subsequent serializers to use.
       */
-    var raw: ServerResponse = js.native
+    var raw: ServerResponse
     
     /**
       * HTTP status code.
       */
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object SerializedResponse {
     

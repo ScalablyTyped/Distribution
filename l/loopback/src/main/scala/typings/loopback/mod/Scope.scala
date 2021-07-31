@@ -3,7 +3,6 @@ package typings.loopback.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,6 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Scope () extends StObject
 object Scope {
   
+  @JSImport("loopback", "Scope")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the given scope is allowed to access the model/property
     * @param {string} scope The scope name
@@ -29,13 +32,12 @@ object Scope {
     * @param {AccessRequest} result The access permission
     */
   /* static member */
-  @JSImport("loopback", "Scope.checkPermission")
-  @js.native
+  @scala.inline
   def checkPermission(
     scope: String,
     model: String,
     property: String,
     accessType: String,
     callback: js.Function2[/* err */ String | Error, /* result */ AccessRequest, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPermission")(scope.asInstanceOf[js.Any], model.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

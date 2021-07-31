@@ -4,24 +4,24 @@ import typings.node.httpMod.Server
 import typings.node.processMod.global.NodeJS.Signals
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lightship", "createLightship")
+  @JSImport("lightship", JSImport.Namespace)
   @js.native
-  def createLightship(): LightshipType = js.native
-  @JSImport("lightship", "createLightship")
-  @js.native
-  def createLightship(configuration: ConfigurationInputType): LightshipType = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createLightship(): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")().asInstanceOf[LightshipType]
+  @scala.inline
+  def createLightship(configuration: ConfigurationInputType): LightshipType = ^.asInstanceOf[js.Dynamic].applyDynamic("createLightship")(configuration.asInstanceOf[js.Any]).asInstanceOf[LightshipType]
   
   type BeaconContextType = js.Object
   
-  @js.native
   trait BeaconControllerType extends StObject {
     
-    def die(): js.Promise[Unit] = js.native
+    def die(): js.Promise[Unit]
   }
   object BeaconControllerType {
     
@@ -39,45 +39,44 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigurationInputType extends StObject {
     
     /**
       * Run Lightship in local mode when Kubernetes is not detected.
       * @default true.
       */
-    var detectKubernetes: js.UndefOr[Boolean] = js.native
+    var detectKubernetes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A number of milliseconds before forcefull termination if process does not gracefully exit.
       * The timer starts when `lightship.shutdown()` is called. This includes the time allowed to live beacons.
       * @default 60_000
       */
-    var gracefulShutdownTimeout: js.UndefOr[Double] = js.native
+    var gracefulShutdownTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * The port on which the Lightship service listens. This port must be different than your main service port, if any.
       * @default 9000
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * A number of milliseconds before forceful termination if shutdown handlers do not complete. The timer starts when the first shutdown handler is called.
       * @default 5000
       */
-    var shutdownHandlerTimeout: js.UndefOr[Double] = js.native
+    var shutdownHandlerTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * An a array of [signal events](https://nodejs.org/api/process.html#process_signal_events).
       * @default [SIGTERM, SIGHUP, SIGINT].
       */
-    var signals: js.UndefOr[js.Array[Signals]] = js.native
+    var signals: js.UndefOr[js.Array[Signals]] = js.undefined
     
     /**
       * Method used to terminate Node.js process
       * @default `() => { process.exit(1) };`
       */
-    var terminate: js.UndefOr[js.Function0[Unit]] = js.native
+    var terminate: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ConfigurationInputType {
     

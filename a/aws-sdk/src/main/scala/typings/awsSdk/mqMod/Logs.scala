@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logs extends StObject {
   
   /**
     * Enables audit logging. Every user management action made using JMX or the ActiveMQ Web Console is logged. Does not apply to RabbitMQ brokers.
     */
-  var Audit: js.UndefOr[boolean] = js.native
+  var Audit: js.UndefOr[boolean] = js.undefined
   
   /**
     * Enables general logging.
     */
-  var General: js.UndefOr[boolean] = js.native
+  var General: js.UndefOr[boolean] = js.undefined
 }
 object Logs {
   

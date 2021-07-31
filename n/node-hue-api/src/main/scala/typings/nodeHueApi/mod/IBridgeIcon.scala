@@ -2,21 +2,19 @@ package typings.nodeHueApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBridgeIcon extends StObject {
   
-  var depth: String = js.native
+  var depth: String
   
-  var height: String = js.native
+  var height: String
   
-  var mimetype: String = js.native
+  var mimetype: String
   
-  var url: String = js.native
+  var url: String
   
-  var width: String = js.native
+  var width: String
 }
 object IBridgeIcon {
   

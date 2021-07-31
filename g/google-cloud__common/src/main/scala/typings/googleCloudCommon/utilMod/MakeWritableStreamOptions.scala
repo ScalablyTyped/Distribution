@@ -6,29 +6,27 @@ import typings.teenyRequest.mod.Options
 import typings.teenyRequest.mod.OptionsWithUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeWritableStreamOptions extends StObject {
   
   /**
     * A connection instance used to get a token with and send the request
     * through.
     */
-  var connection: js.UndefOr[js.Object] = js.native
+  var connection: js.UndefOr[js.Object] = js.undefined
   
-  def makeAuthenticatedRequest(reqOpts: OptionsWithUri, fnobj: OnAuthenticated): Unit = js.native
+  def makeAuthenticatedRequest(reqOpts: OptionsWithUri, fnobj: OnAuthenticated): Unit
   
   /**
     * Metadata to send at the head of the request.
     */
-  var metadata: js.UndefOr[ContentType] = js.native
+  var metadata: js.UndefOr[ContentType] = js.undefined
   
   /**
     * Request object, in the format of a standard Node.js http.request() object.
     */
-  var request: js.UndefOr[Options] = js.native
+  var request: js.UndefOr[Options] = js.undefined
 }
 object MakeWritableStreamOptions {
   

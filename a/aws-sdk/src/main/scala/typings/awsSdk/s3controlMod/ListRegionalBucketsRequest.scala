@@ -2,31 +2,29 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegionalBucketsRequest extends StObject {
   
   /**
     * The AWS account ID of the Outposts bucket.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.s3controlMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.s3controlMod.MaxResults] = js.undefined
   
   /**
     * 
     */
-  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * The ID of the AWS Outposts.  This is required by Amazon S3 on Outposts buckets. 
     */
-  var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.native
+  var OutpostId: js.UndefOr[NonEmptyMaxLength64String] = js.undefined
 }
 object ListRegionalBucketsRequest {
   

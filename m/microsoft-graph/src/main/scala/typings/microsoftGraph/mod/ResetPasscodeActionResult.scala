@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResetPasscodeActionResult extends DeviceActionResult {
+trait ResetPasscodeActionResult
+  extends StObject
+     with DeviceActionResult {
   
   // Newly generated passcode for the device
-  var passcode: js.UndefOr[NullableOption[String]] = js.native
+  var passcode: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ResetPasscodeActionResult {
   

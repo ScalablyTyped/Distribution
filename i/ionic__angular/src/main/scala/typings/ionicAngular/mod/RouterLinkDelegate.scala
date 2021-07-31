@@ -6,7 +6,6 @@ import typings.angularRouter.mod.Router
 import typings.angularRouter.mod.RouterLink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "RouterLinkDelegate")
@@ -16,13 +15,13 @@ class RouterLinkDelegate protected ()
   def this(
     locationStrategy: LocationStrategy,
     navCtrl: typings.ionicAngular.navControllerMod.NavController,
-    elementRef: ElementRef[_],
+    elementRef: ElementRef[js.Any],
     router: Router
   ) = this()
   def this(
     locationStrategy: LocationStrategy,
     navCtrl: typings.ionicAngular.navControllerMod.NavController,
-    elementRef: ElementRef[_],
+    elementRef: ElementRef[js.Any],
     router: Router,
     routerLink: RouterLink
   ) = this()

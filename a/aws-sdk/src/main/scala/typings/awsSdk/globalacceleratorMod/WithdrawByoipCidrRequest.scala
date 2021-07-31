@@ -2,16 +2,14 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WithdrawByoipCidrRequest extends StObject {
   
   /**
     * The address range, in CIDR notation.
     */
-  var Cidr: GenericString = js.native
+  var Cidr: GenericString
 }
 object WithdrawByoipCidrRequest {
   

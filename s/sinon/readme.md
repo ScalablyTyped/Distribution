@@ -9,10 +9,10 @@ JavaScript test spies, stubs and mocks.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sinon |
-| Keywords           | - |
-| # releases         | 32 |
-| # dependents       | 1548 |
-| # downloads        | 126433314 |
+| Keywords           | sinon, test, testing, unit, stub, spy, fake, time, clock, mock, xhr, assert |
+| # releases         | 27 |
+| # dependents       | 1596 |
+| # downloads        | 139301038 |
 | # stars            | 192 |
 
 ## Links

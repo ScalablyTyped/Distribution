@@ -2,21 +2,19 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersRejectionInfo extends StObject {
   
   /**
     * Reason for the error.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * Rejection type.
     */
-  var `type`: js.UndefOr[GoogleActionsV2OrdersRejectionInfoType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2OrdersRejectionInfoType] = js.undefined
 }
 object GoogleActionsV2OrdersRejectionInfo {
   

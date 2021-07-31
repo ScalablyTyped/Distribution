@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompromisedCredentialsRiskConfigurationType extends StObject {
   
   /**
     * The compromised credentials risk configuration actions.
     */
-  var Actions: CompromisedCredentialsActionsType = js.native
+  var Actions: CompromisedCredentialsActionsType
   
   /**
     * Perform the action for these events. The default is to perform all events if no event filter is specified.
     */
-  var EventFilter: js.UndefOr[EventFiltersType] = js.native
+  var EventFilter: js.UndefOr[EventFiltersType] = js.undefined
 }
 object CompromisedCredentialsRiskConfigurationType {
   

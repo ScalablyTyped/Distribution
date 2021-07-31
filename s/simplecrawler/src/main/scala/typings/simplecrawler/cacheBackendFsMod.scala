@@ -6,17 +6,18 @@ import typings.simplecrawler.simplecrawlerBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheBackendFsMod {
   
-  @JSImport("simplecrawler/cache-backend-fs", JSImport.Default)
+  @JSImport("simplecrawler/cache-backend-fs", JSImport.Namespace)
   @js.native
-  def default(): FSBackend = js.native
-  @JSImport("simplecrawler/cache-backend-fs", JSImport.Default)
-  @js.native
-  def default(loadParameter: String): FSBackend = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[FSBackend]
+  @scala.inline
+  def default(loadParameter: String): FSBackend = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(loadParameter.asInstanceOf[js.Any]).asInstanceOf[FSBackend]
   
   @JSImport("simplecrawler/cache-backend-fs", "FSBackend")
   @js.native

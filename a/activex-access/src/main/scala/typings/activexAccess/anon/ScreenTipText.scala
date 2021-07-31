@@ -2,15 +2,13 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenTipText extends StObject {
   
-  val ScreenTipText: js.Any = js.native
+  val ScreenTipText: js.Any
   
-  val SourceObject: js.Any = js.native
+  val SourceObject: js.Any
 }
 object ScreenTipText {
   

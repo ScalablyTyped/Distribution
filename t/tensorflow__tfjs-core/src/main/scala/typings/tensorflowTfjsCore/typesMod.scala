@@ -15,17 +15,15 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait IOHandler extends StObject {
     
-    var load: js.UndefOr[LoadHandler] = js.native
+    var load: js.UndefOr[LoadHandler] = js.undefined
     
-    var save: js.UndefOr[SaveHandler] = js.native
+    var save: js.UndefOr[SaveHandler] = js.undefined
   }
   object IOHandler {
     
@@ -54,13 +52,12 @@ object typesMod {
   
   type LoadHandler = js.Function0[js.Promise[ModelArtifacts]]
   
-  @js.native
   trait LoadOptions extends StObject {
     
     /**
       * A function used to override the `window.fetch` function.
       */
-    var fetchFunc: js.UndefOr[js.Function] = js.native
+    var fetchFunc: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Whether the module or model is to be loaded from TF Hub.
@@ -70,12 +67,12 @@ object typesMod {
       *
       * Default: `false`.
       */
-    var fromTFHub: js.UndefOr[Boolean] = js.native
+    var fromTFHub: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Progress callback.
       */
-    var onProgress: js.UndefOr[OnProgressCallback] = js.native
+    var onProgress: js.UndefOr[OnProgressCallback] = js.undefined
     
     /**
       * RequestInit (options) for HTTP requests.
@@ -84,7 +81,7 @@ object typesMod {
       * [https://developer.mozilla.org/en-US/docs/Web/API/Request/Request](
       *     https://developer.mozilla.org/en-US/docs/Web/API/Request/Request)
       */
-    var requestInit: js.UndefOr[RequestInit] = js.native
+    var requestInit: js.UndefOr[RequestInit] = js.undefined
     
     /**
       * Strict loading model: whether extraneous weights or missing
@@ -96,7 +93,7 @@ object typesMod {
       *
       * Default: `true`.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path prefix for weight files, by default this is calculated from the
@@ -111,7 +108,7 @@ object typesMod {
       * `http://localhost/foo/alt-weights`, then the weight file will be loaded
       * from the path `http://localhost/foo/alt-weights/group1-shard1of2` instead.
       */
-    var weightPathPrefix: js.UndefOr[String] = js.native
+    var weightPathPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * An async function to convert weight file name to URL. The weight file
@@ -123,7 +120,7 @@ object typesMod {
       *
       * With this func you can convert the weight file name to any URL.
       */
-    var weightUrlConverter: js.UndefOr[js.Function1[/* weightFileName */ String, js.Promise[String]]] = js.native
+    var weightUrlConverter: js.UndefOr[js.Function1[/* weightFileName */ String, js.Promise[String]]] = js.undefined
   }
   object LoadOptions {
     
@@ -180,7 +177,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ModelArtifacts extends StObject {
     
     /**
@@ -193,25 +189,25 @@ object typesMod {
       * conversion process (e.g., saved directly from a TensorFlow.js
       * `tf.LayersModel` instance.)
       */
-    var convertedBy: js.UndefOr[String | Null] = js.native
+    var convertedBy: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Hard-coded format name for models saved from TensorFlow.js or converted
       * by TensorFlow.js Converter.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * What library is responsible for originally generating this artifact.
       *
       * Used for debugging purposes. E.g., 'TensorFlow.js v1.0.0'.
       */
-    var generatedBy: js.UndefOr[String] = js.native
+    var generatedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Initializer for the model.
       */
-    var modelInitializer: js.UndefOr[js.Object] = js.native
+    var modelInitializer: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Model topology.
@@ -220,30 +216,30 @@ object typesMod {
       * For TensorFlow-style models (e.g., `SavedModel`), this is the JSON
       * encoding of the `GraphDef` protocol buffer.
       */
-    var modelTopology: js.UndefOr[js.Object | ArrayBuffer] = js.native
+    var modelTopology: js.UndefOr[js.Object | ArrayBuffer] = js.undefined
     
     /**
       * Serialized configuration for the model's training.
       */
-    var trainingConfig: js.UndefOr[TrainingConfig] = js.native
+    var trainingConfig: js.UndefOr[TrainingConfig] = js.undefined
     
     /**
       * User-defined metadata about the model.
       */
-    var userDefinedMetadata: js.UndefOr[js.Object] = js.native
+    var userDefinedMetadata: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Binary buffer for all weight values concatenated in the order specified
       * by `weightSpecs`.
       */
-    var weightData: js.UndefOr[ArrayBuffer] = js.native
+    var weightData: js.UndefOr[ArrayBuffer] = js.undefined
     
     /**
       * Weight specifications.
       *
       * This corresponds to the weightsData below.
       */
-    var weightSpecs: js.UndefOr[js.Array[WeightsManifestEntry]] = js.native
+    var weightSpecs: js.UndefOr[js.Array[WeightsManifestEntry]] = js.undefined
   }
   object ModelArtifacts {
     
@@ -318,18 +314,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ModelArtifactsInfo extends StObject {
     
     /**
       * Timestamp for when the model is saved.
       */
-    var dateSaved: Date = js.native
+    var dateSaved: Date
     
     /**
       * Size of model topology (Keras JSON or GraphDef), in bytes.
       */
-    var modelTopologyBytes: js.UndefOr[Double] = js.native
+    var modelTopologyBytes: js.UndefOr[Double] = js.undefined
     
     /**
       * TODO (cais,yassogba) consider removing GraphDef as GraphDefs now
@@ -347,17 +342,17 @@ object typesMod {
       *     [GraphDef](https://www.tensorflow.org/extend/tool_developers/#graphdef)
       *     protocol buffer (binary).
       */
-    var modelTopologyType: JSON | GraphDef = js.native
+    var modelTopologyType: JSON | GraphDef
     
     /**
       * Size of weight value data, in bytes.
       */
-    var weightDataBytes: js.UndefOr[Double] = js.native
+    var weightDataBytes: js.UndefOr[Double] = js.undefined
     
     /**
       * Size of weight specification or manifest, in bytes.
       */
-    var weightSpecsBytes: js.UndefOr[Double] = js.native
+    var weightSpecsBytes: js.UndefOr[Double] = js.undefined
   }
   object ModelArtifactsInfo {
     
@@ -396,7 +391,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ModelJSON extends StObject {
     
     /**
@@ -409,33 +403,33 @@ object typesMod {
       * conversion process (e.g., saved directly from a TensorFlow.js
       * `tf.LayersModel` instance.)
       */
-    var convertedBy: js.UndefOr[String | Null] = js.native
+    var convertedBy: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Hard-coded format name for models saved from TensorFlow.js or converted
       * by TensorFlow.js Converter.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * What library is responsible for originally generating this artifact.
       *
       * Used for debugging purposes. E.g., 'TensorFlow.js v1.0.0'.
       */
-    var generatedBy: js.UndefOr[String] = js.native
+    var generatedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Initializer for the model.
       */
-    var modelInitializer: js.UndefOr[js.Object] = js.native
+    var modelInitializer: js.UndefOr[js.Object] = js.undefined
     
     /** Model training configuration. */
-    var trainingConfig: js.UndefOr[TrainingConfig] = js.native
+    var trainingConfig: js.UndefOr[TrainingConfig] = js.undefined
     
     /**
       * User-defined metadata about the model.
       */
-    var userDefinedMetadata: js.UndefOr[js.Object] = js.native
+    var userDefinedMetadata: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Weights manifest.
@@ -445,7 +439,7 @@ object typesMod {
       * stored in a number of paths. See the documentation of
       * `WeightsManifestConfig` for more details.
       */
-    var weightsManifest: WeightsManifestConfig = js.native
+    var weightsManifest: WeightsManifestConfig
   }
   object ModelJSON {
     
@@ -505,7 +499,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ModelStoreManager extends StObject {
     
     /**
@@ -515,7 +508,7 @@ object typesMod {
       *   model artifacts info. Model artifacts info include type of the model's
       *   topology, byte sizes of the topology, weights, etc.
       */
-    def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
+    def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]]
     
     /**
       * Remove a model specified by `path`.
@@ -525,7 +518,7 @@ object typesMod {
       *   is successful).
       * @throws Error if deletion fails, e.g., if no model exists at `path`.
       */
-    def removeModel(path: String): js.Promise[ModelArtifactsInfo] = js.native
+    def removeModel(path: String): js.Promise[ModelArtifactsInfo]
   }
   object ModelStoreManager {
     
@@ -551,13 +544,12 @@ object typesMod {
   
   type OnProgressCallback = js.Function1[/* fraction */ Double, Unit]
   
-  @js.native
   trait RequestDetails extends StObject {
     
     /**
       * Is this request for a binary file (as opposed to a json file)
       */
-    var isBinary: js.UndefOr[Boolean] = js.native
+    var isBinary: js.UndefOr[Boolean] = js.undefined
   }
   object RequestDetails {
     
@@ -578,7 +570,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait SaveConfig extends StObject {
     
     /**
@@ -586,13 +577,13 @@ object typesMod {
       *
       * Default: `false`.
       */
-    var includeOptimizer: js.UndefOr[Boolean] = js.native
+    var includeOptimizer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to save only the trainable weights of the model, ignoring the
       * non-trainable ones.
       */
-    var trainableOnly: js.UndefOr[Boolean] = js.native
+    var trainableOnly: js.UndefOr[Boolean] = js.undefined
   }
   object SaveConfig {
     
@@ -621,24 +612,23 @@ object typesMod {
   
   type SaveHandler = js.Function1[/* modelArtifact */ ModelArtifacts, js.Promise[SaveResult]]
   
-  @js.native
   trait SaveResult extends StObject {
     
     /**
       * Error messages and related data (if any).
       */
-    var errors: js.UndefOr[js.Array[js.Object | String]] = js.native
+    var errors: js.UndefOr[js.Array[js.Object | String]] = js.undefined
     
     /**
       * Information about the model artifacts saved.
       */
-    var modelArtifactsInfo: ModelArtifactsInfo = js.native
+    var modelArtifactsInfo: ModelArtifactsInfo
     
     /**
       * HTTP responses from the server that handled the model-saving request (if
       * any). This is applicable only to server-based saving routes.
       */
-    var responses: js.UndefOr[js.Array[Response]] = js.native
+    var responses: js.UndefOr[js.Array[Response]] = js.undefined
   }
   object SaveResult {
     
@@ -674,20 +664,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TrainingConfig extends StObject {
     
     /** Loss function(s) for the model's output(s). */
-    var loss: String | js.Array[String] | StringDictionary[String] = js.native
+    var loss: String | js.Array[String] | StringDictionary[String]
     
-    var loss_weights: js.UndefOr[js.Array[Double] | StringDictionary[Double]] = js.native
+    var loss_weights: js.UndefOr[js.Array[Double] | StringDictionary[Double]] = js.undefined
     
     /** Metric function(s) for the model's output(s). */
-    var metrics: js.UndefOr[js.Array[String] | StringDictionary[String]] = js.native
+    var metrics: js.UndefOr[js.Array[String] | StringDictionary[String]] = js.undefined
     
-    var sample_weight_mode: js.UndefOr[String] = js.native
+    var sample_weight_mode: js.UndefOr[String] = js.undefined
     
-    var weighted_metrics: js.UndefOr[js.Array[String]] = js.native
+    var weighted_metrics: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TrainingConfig {
     
@@ -757,13 +746,12 @@ object typesMod {
   
   type WeightsManifestConfig = js.Array[WeightsManifestGroupConfig]
   
-  @js.native
   trait WeightsManifestEntry extends StObject {
     
     /**
       * Data type of the weight.
       */
-    var dtype: float32 | int32 | bool | string | complex64 = js.native
+    var dtype: float32 | int32 | bool | string | complex64
     
     /**
       * Type of the weight.
@@ -773,22 +761,22 @@ object typesMod {
       * The value 'optimizer' indicates the weight belongs to an optimizer
       * (i.e., used only during model training and not during inference).
       */
-    var group: js.UndefOr[WeightGroup] = js.native
+    var group: js.UndefOr[WeightGroup] = js.undefined
     
     /**
       * Name of the weight, e.g., 'Dense_1/bias'
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Information for dequantization of the weight.
       */
-    var quantization: js.UndefOr[Dtype] = js.native
+    var quantization: js.UndefOr[Dtype] = js.undefined
     
     /**
       * Shape of the weight.
       */
-    var shape: js.Array[Double] = js.native
+    var shape: js.Array[Double]
   }
   object WeightsManifestEntry {
     
@@ -827,7 +815,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WeightsManifestGroupConfig extends StObject {
     
     /**
@@ -836,12 +823,12 @@ object typesMod {
       * Paths are intentionally abstract in order to be general. For example, they
       * can be relative URL paths or relative paths on the file system.
       */
-    var paths: js.Array[String] = js.native
+    var paths: js.Array[String]
     
     /**
       * Specifications of the weights stored in the paths.
       */
-    var weights: js.Array[WeightsManifestEntry] = js.native
+    var weights: js.Array[WeightsManifestEntry]
   }
   object WeightsManifestGroupConfig {
     

@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResultMessage extends StObject {
   
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
-  var isError: Boolean = js.native
+  var isError: Boolean
   
-  var message: String = js.native
+  var message: String
   
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object IResultMessage {
   

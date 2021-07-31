@@ -10,7 +10,6 @@ import typings.std.HTMLAnchorElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkMod {
@@ -19,13 +18,13 @@ object linkMod {
   @js.native
   val StyledLink: StyletronComponent[LinkProps] = js.native
   
-  @js.native
   trait LinkProps
-    extends AnchorHTMLAttributes[HTMLAnchorElement]
-       with ClassAttributes[HTMLAnchorElement] {
+    extends StObject
+       with ClassAttributes[HTMLAnchorElement]
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
     @JSName("target")
-    var target_LinkProps: js.UndefOr[_self | _blank | _parent | _top] = js.native
+    var target_LinkProps: js.UndefOr[_self | _blank | _parent | _top] = js.undefined
   }
   object LinkProps {
     

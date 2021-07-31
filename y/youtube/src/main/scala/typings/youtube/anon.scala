@@ -3,21 +3,19 @@ package typings.youtube
 import typings.youtube.YT.SuggestedVideoQuality
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EndSeconds extends StObject {
     
-    var endSeconds: js.UndefOr[Double] = js.native
+    var endSeconds: js.UndefOr[Double] = js.undefined
     
-    var mediaContentUrl: String = js.native
+    var mediaContentUrl: String
     
-    var startSeconds: js.UndefOr[Double] = js.native
+    var startSeconds: js.UndefOr[Double] = js.undefined
     
-    var suggestedQuality: js.UndefOr[SuggestedVideoQuality] = js.native
+    var suggestedQuality: js.UndefOr[SuggestedVideoQuality] = js.undefined
   }
   object EndSeconds {
     

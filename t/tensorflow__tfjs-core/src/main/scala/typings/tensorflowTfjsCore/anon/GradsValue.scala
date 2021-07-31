@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GradsValue[T /* <: Tensor[Rank] */] extends StObject {
   
-  var grads: js.Array[Tensor[Rank]] = js.native
+  var grads: js.Array[Tensor[Rank]]
   
-  var value: T = js.native
+  var value: T
 }
 object GradsValue {
   
@@ -23,7 +21,7 @@ object GradsValue {
   }
   
   @scala.inline
-  implicit class GradsValueMutableBuilder[Self <: GradsValue[_], T /* <: Tensor[Rank] */] (val x: Self with GradsValue[T]) extends AnyVal {
+  implicit class GradsValueMutableBuilder[Self <: GradsValue[?], T /* <: Tensor[Rank] */] (val x: Self & GradsValue[T]) extends AnyVal {
     
     @scala.inline
     def setGrads(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "grads", value.asInstanceOf[js.Any])

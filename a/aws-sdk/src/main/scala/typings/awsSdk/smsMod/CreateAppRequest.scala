@@ -2,41 +2,39 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppRequest extends StObject {
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of application creation.
     */
-  var clientToken: js.UndefOr[ClientToken] = js.native
+  var clientToken: js.UndefOr[ClientToken] = js.undefined
   
   /**
     * The description of the new application
     */
-  var description: js.UndefOr[AppDescription] = js.native
+  var description: js.UndefOr[AppDescription] = js.undefined
   
   /**
     * The name of the new application.
     */
-  var name: js.UndefOr[AppName] = js.native
+  var name: js.UndefOr[AppName] = js.undefined
   
   /**
     * The name of the service role in the customer's account to be used by AWS SMS.
     */
-  var roleName: js.UndefOr[RoleName] = js.native
+  var roleName: js.UndefOr[RoleName] = js.undefined
   
   /**
     * The server groups to include in the application.
     */
-  var serverGroups: js.UndefOr[ServerGroups] = js.native
+  var serverGroups: js.UndefOr[ServerGroups] = js.undefined
   
   /**
     * The tags to be associated with the application.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object CreateAppRequest {
   

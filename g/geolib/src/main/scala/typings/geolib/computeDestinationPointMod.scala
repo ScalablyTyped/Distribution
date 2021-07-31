@@ -4,15 +4,16 @@ import typings.geolib.anon.Latitude
 import typings.geolib.typesMod.GeolibInputCoordinates
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computeDestinationPointMod {
   
-  @JSImport("geolib/es/computeDestinationPoint", JSImport.Default)
+  @JSImport("geolib/es/computeDestinationPoint", JSImport.Namespace)
   @js.native
-  def default(start: GeolibInputCoordinates, distance: Double, bearing: Double): Latitude = js.native
-  @JSImport("geolib/es/computeDestinationPoint", JSImport.Default)
-  @js.native
-  def default(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): Latitude = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(start: GeolibInputCoordinates, distance: Double, bearing: Double): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any])).asInstanceOf[Latitude]
+  @scala.inline
+  def default(start: GeolibInputCoordinates, distance: Double, bearing: Double, radius: Double): Latitude = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(start.asInstanceOf[js.Any], distance.asInstanceOf[js.Any], bearing.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Latitude]
 }

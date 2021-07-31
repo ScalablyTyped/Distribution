@@ -2,13 +2,11 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomFields extends StObject {
   
-  var customFields: js.UndefOr[Boolean] = js.native
+  var customFields: js.UndefOr[Boolean] = js.undefined
 }
 object CustomFields {
   

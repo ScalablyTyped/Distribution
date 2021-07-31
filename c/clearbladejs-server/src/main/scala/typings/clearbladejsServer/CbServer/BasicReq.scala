@@ -3,25 +3,23 @@ package typings.clearbladejsServer.CbServer
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasicReq extends StObject {
   
-  val isLogging: Boolean = js.native
+  val isLogging: Boolean
   
-  val params: StringDictionary[js.Any] = js.native
+  val params: StringDictionary[js.Any]
   
-  val systemKey: String = js.native
+  val systemKey: String
   
-  val systemSecret: String = js.native
+  val systemSecret: String
   
-  val userEmail: String = js.native
+  val userEmail: String
   
-  val userToken: String = js.native
+  val userToken: String
   
-  val userid: String = js.native
+  val userid: String
 }
 object BasicReq {
   

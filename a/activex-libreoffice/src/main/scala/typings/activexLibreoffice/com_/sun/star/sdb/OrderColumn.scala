@@ -7,19 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes a column which is part of the ORDER clause.
   * @see com.sun.star.sdb.XSingleSelectQueryComposer
   */
-@js.native
 trait OrderColumn
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.Column {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.Column {
   
   /** describes which sort order this column has. The default is `TRUE` . */
-  var IsAscending: Boolean = js.native
+  var IsAscending: Boolean
 }
 object OrderColumn {
   

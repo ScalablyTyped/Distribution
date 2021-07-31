@@ -2,11 +2,12 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointBounds extends Bounds {
+trait PointBounds
+  extends StObject
+     with Bounds {
   
   def equals(bounds: Bounds): Boolean = js.native
   def equals(bounds: PointBoundsLiteral): Boolean = js.native

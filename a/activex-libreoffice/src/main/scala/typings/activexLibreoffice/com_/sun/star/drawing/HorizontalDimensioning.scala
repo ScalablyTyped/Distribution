@@ -6,7 +6,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The HorizontalDimensioning specifies the horizontal position of the text of a dimensioning shape. */

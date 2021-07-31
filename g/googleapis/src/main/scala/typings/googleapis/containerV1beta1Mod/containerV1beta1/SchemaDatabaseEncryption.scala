@@ -2,25 +2,23 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of etcd encryption.
   */
-@js.native
 trait SchemaDatabaseEncryption extends StObject {
   
   /**
     * Name of CloudKMS key to use for the encryption of secrets in etcd. Ex.
     * projects/my-project/locations/global/keyRings/my-ring/cryptoKeys/my-key
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
   
   /**
     * Denotes the state of etcd encryption.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaDatabaseEncryption {
   

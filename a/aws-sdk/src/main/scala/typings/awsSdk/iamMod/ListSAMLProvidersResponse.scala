@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSAMLProvidersResponse extends StObject {
   
   /**
     * The list of SAML provider resource objects defined in IAM for this AWS account.
     */
-  var SAMLProviderList: js.UndefOr[SAMLProviderListType] = js.native
+  var SAMLProviderList: js.UndefOr[SAMLProviderListType] = js.undefined
 }
 object ListSAMLProvidersResponse {
   

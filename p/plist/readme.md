@@ -11,8 +11,8 @@ Mac OS X Plist parser/builder for Node.js and browsers
 | Full name          | plist |
 | Keywords           | apple, browser, mac, plist, parser, xml |
 | # releases         | 0 |
-| # dependents       | 716 |
-| # downloads        | 53157541 |
+| # dependents       | 774 |
+| # downloads        | 60310796 |
 | # stars            | 15 |
 
 ## Links

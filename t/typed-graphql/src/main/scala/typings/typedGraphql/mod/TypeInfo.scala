@@ -2,28 +2,26 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // utilities/Typeinfo.js
-@js.native
 trait TypeInfo extends StObject {
   
-  def enter(node: Node): Unit = js.native
+  def enter(node: Node): Unit
   
-  def getArgument(): GraphQLArgument = js.native
+  def getArgument(): GraphQLArgument
   
-  def getDirective(): GraphQLDirective = js.native
+  def getDirective(): GraphQLDirective
   
-  def getFieldDef(): GraphQLFieldDefinition = js.native
+  def getFieldDef(): GraphQLFieldDefinition
   
-  def getInputType(): GraphQLInputType = js.native
+  def getInputType(): GraphQLInputType
   
-  def getParentType(): GraphQLCompositeType = js.native
+  def getParentType(): GraphQLCompositeType
   
-  def getType(): GraphQLOutputType = js.native
+  def getType(): GraphQLOutputType
   
-  def leave(node: Node): Unit = js.native
+  def leave(node: Node): Unit
 }
 object TypeInfo {
   

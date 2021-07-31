@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Organizationsecuritypolicies")
@@ -31,7 +30,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def addAssociation(): GaxiosPromise[SchemaOperation] = js.native
   def addAssociation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addAssociation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addAssociation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addAssociation(params: ParamsResourceOrganizationsecuritypoliciesAddassociation): GaxiosPromise[SchemaOperation] = js.native
   def addAssociation(
     params: ParamsResourceOrganizationsecuritypoliciesAddassociation,
@@ -65,7 +64,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def addRule(): GaxiosPromise[SchemaOperation] = js.native
   def addRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addRule(params: ParamsResourceOrganizationsecuritypoliciesAddrule): GaxiosPromise[SchemaOperation] = js.native
   def addRule(
     params: ParamsResourceOrganizationsecuritypoliciesAddrule,
@@ -101,7 +100,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def copyRules(): GaxiosPromise[SchemaOperation] = js.native
   def copyRules(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def copyRules(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def copyRules(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def copyRules(params: ParamsResourceOrganizationsecuritypoliciesCopyrules): GaxiosPromise[SchemaOperation] = js.native
   def copyRules(
     params: ParamsResourceOrganizationsecuritypoliciesCopyrules,
@@ -134,7 +133,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceOrganizationsecuritypoliciesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(
     params: ParamsResourceOrganizationsecuritypoliciesDelete,
@@ -166,7 +165,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaSecurityPolicy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(params: ParamsResourceOrganizationsecuritypoliciesGet): GaxiosPromise[SchemaSecurityPolicy] = js.native
   def get(
     params: ParamsResourceOrganizationsecuritypoliciesGet,
@@ -199,7 +198,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def getAssociation(): GaxiosPromise[SchemaSecurityPolicyAssociation] = js.native
   def getAssociation(callback: BodyResponseCallback[SchemaSecurityPolicyAssociation]): Unit = js.native
-  def getAssociation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyAssociation] = js.native
+  def getAssociation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyAssociation] = js.native
   def getAssociation(params: ParamsResourceOrganizationsecuritypoliciesGetassociation): GaxiosPromise[SchemaSecurityPolicyAssociation] = js.native
   def getAssociation(
     params: ParamsResourceOrganizationsecuritypoliciesGetassociation,
@@ -232,7 +231,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def getRule(): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(callback: BodyResponseCallback[SchemaSecurityPolicyRule]): Unit = js.native
-  def getRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
+  def getRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(params: ParamsResourceOrganizationsecuritypoliciesGetrule): GaxiosPromise[SchemaSecurityPolicyRule] = js.native
   def getRule(
     params: ParamsResourceOrganizationsecuritypoliciesGetrule,
@@ -267,7 +266,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceOrganizationsecuritypoliciesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(
     params: ParamsResourceOrganizationsecuritypoliciesInsert,
@@ -304,7 +303,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(callback: BodyResponseCallback[SchemaSecurityPolicyList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(params: ParamsResourceOrganizationsecuritypoliciesList): GaxiosPromise[SchemaSecurityPolicyList] = js.native
   def list(
     params: ParamsResourceOrganizationsecuritypoliciesList,
@@ -337,7 +336,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def listAssociations(): GaxiosPromise[SchemaOrganizationSecurityPoliciesListAssociationsResponse] = js.native
   def listAssociations(callback: BodyResponseCallback[SchemaOrganizationSecurityPoliciesListAssociationsResponse]): Unit = js.native
-  def listAssociations(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrganizationSecurityPoliciesListAssociationsResponse] = js.native
+  def listAssociations(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrganizationSecurityPoliciesListAssociationsResponse] = js.native
   def listAssociations(params: ParamsResourceOrganizationsecuritypoliciesListassociations): GaxiosPromise[SchemaOrganizationSecurityPoliciesListAssociationsResponse] = js.native
   def listAssociations(
     params: ParamsResourceOrganizationsecuritypoliciesListassociations,
@@ -371,7 +370,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def move(): GaxiosPromise[SchemaOperation] = js.native
   def move(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def move(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def move(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def move(params: ParamsResourceOrganizationsecuritypoliciesMove): GaxiosPromise[SchemaOperation] = js.native
   def move(
     params: ParamsResourceOrganizationsecuritypoliciesMove,
@@ -405,7 +404,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceOrganizationsecuritypoliciesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceOrganizationsecuritypoliciesPatch,
@@ -440,7 +439,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def patchRule(): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patchRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patchRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(params: ParamsResourceOrganizationsecuritypoliciesPatchrule): GaxiosPromise[SchemaOperation] = js.native
   def patchRule(
     params: ParamsResourceOrganizationsecuritypoliciesPatchrule,
@@ -474,7 +473,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def removeAssociation(): GaxiosPromise[SchemaOperation] = js.native
   def removeAssociation(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def removeAssociation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeAssociation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeAssociation(params: ParamsResourceOrganizationsecuritypoliciesRemoveassociation): GaxiosPromise[SchemaOperation] = js.native
   def removeAssociation(
     params: ParamsResourceOrganizationsecuritypoliciesRemoveassociation,
@@ -508,7 +507,7 @@ class ResourceOrganizationsecuritypolicies protected () extends StObject {
     */
   def removeRule(): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def removeRule(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeRule(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(params: ParamsResourceOrganizationsecuritypoliciesRemoverule): GaxiosPromise[SchemaOperation] = js.native
   def removeRule(
     params: ParamsResourceOrganizationsecuritypoliciesRemoverule,

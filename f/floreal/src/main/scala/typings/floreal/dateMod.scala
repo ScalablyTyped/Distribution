@@ -3,16 +3,83 @@ package typings.floreal
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMod {
   
   @JSImport("floreal/date", JSImport.Namespace)
   @js.native
-  class ^ () extends FlorealDate {
+  class ^ ()
+    extends StObject
+       with FlorealDate {
     def this(value: String) = this()
     def this(value: Double) = this()
+    
+    /* CompleteClass */
+    override def day(): Double = js.native
+    
+    /* CompleteClass */
+    override def dayName(): String = js.native
+    
+    /* CompleteClass */
+    override def dayOfDecade(): Double = js.native
+    
+    /* CompleteClass */
+    override def dayOfMonth(): Double = js.native
+    
+    /* CompleteClass */
+    override def dayOfWeek(): Double = js.native
+    
+    /* CompleteClass */
+    override def dayOfYear(): Double = js.native
+    
+    /* CompleteClass */
+    override def dayTitle(): String = js.native
+    
+    /* CompleteClass */
+    override def decade(): Double = js.native
+    
+    /* CompleteClass */
+    override def firstDayOfYear(): Date = js.native
+    
+    /* CompleteClass */
+    override def isComplementaryDay(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isYearSextile(): Boolean = js.native
+    
+    /* CompleteClass */
+    override def month(): Double = js.native
+    
+    /* CompleteClass */
+    override def monthName(): String = js.native
+    
+    /* CompleteClass */
+    override def setDate(year: Double, month: Double, day: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setDay(day: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setMonth(month: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setYear(year: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setYearDecimal(year: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def toFullDateString(): String = js.native
+    
+    /* CompleteClass */
+    override def toShortDateString(): String = js.native
+    
+    /* CompleteClass */
+    override def year(): String = js.native
+    
+    /* CompleteClass */
+    override def yearDecimal(): Double = js.native
   }
   @JSImport("floreal/date", JSImport.Namespace)
   @js.native
@@ -27,56 +94,54 @@ object dateMod {
   def dayNames_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("day_names")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("floreal/date", "first_day_of_year")
-  @js.native
-  def firstDayOfYear(year: js.Any): js.Any = js.native
+  @scala.inline
+  def firstDayOfYear(year: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("first_day_of_year")(year.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait FlorealDate extends StObject {
     
-    def day(): Double = js.native
+    def day(): Double
     
-    def dayName(): String = js.native
+    def dayName(): String
     
-    def dayOfDecade(): Double = js.native
+    def dayOfDecade(): Double
     
-    def dayOfMonth(): Double = js.native
+    def dayOfMonth(): Double
     
-    def dayOfWeek(): Double = js.native
+    def dayOfWeek(): Double
     
-    def dayOfYear(): Double = js.native
+    def dayOfYear(): Double
     
-    def dayTitle(): String = js.native
+    def dayTitle(): String
     
-    def decade(): Double = js.native
+    def decade(): Double
     
-    def firstDayOfYear(): Date = js.native
+    def firstDayOfYear(): Date
     
-    def isComplementaryDay(): Boolean = js.native
+    def isComplementaryDay(): Boolean
     
-    def isYearSextile(): Boolean = js.native
+    def isYearSextile(): Boolean
     
-    def month(): Double = js.native
+    def month(): Double
     
-    def monthName(): String = js.native
+    def monthName(): String
     
-    def setDate(year: Double, month: Double, day: Double): Unit = js.native
+    def setDate(year: Double, month: Double, day: Double): Unit
     
-    def setDay(day: Double): Unit = js.native
+    def setDay(day: Double): Unit
     
-    def setMonth(month: Double): Unit = js.native
+    def setMonth(month: Double): Unit
     
-    def setYear(year: String): Unit = js.native
+    def setYear(year: String): Unit
     
-    def setYearDecimal(year: Double): Unit = js.native
+    def setYearDecimal(year: Double): Unit
     
-    def toFullDateString(): String = js.native
+    def toFullDateString(): String
     
-    def toShortDateString(): String = js.native
+    def toShortDateString(): String
     
-    def year(): String = js.native
+    def year(): String
     
-    def yearDecimal(): Double = js.native
+    def yearDecimal(): Double
   }
   object FlorealDate {
     

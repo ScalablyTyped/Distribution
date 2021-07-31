@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noImplicitDependenciesRuleMod {
@@ -22,9 +21,8 @@ object noImplicitDependenciesRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/noImplicitDependenciesRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(module: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(module: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(module.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noImplicitDependenciesRule", "Rule.metadata")
     @js.native

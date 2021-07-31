@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to remove the previous word.
   */
-@js.native
-trait RemovePrevWordCommand extends CommandWithSimpleStateBase {
+trait RemovePrevWordCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the RemovePrevWordCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object RemovePrevWordCommand {
   

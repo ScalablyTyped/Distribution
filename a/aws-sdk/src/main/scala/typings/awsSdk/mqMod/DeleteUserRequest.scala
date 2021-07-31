@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserRequest extends StObject {
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: string = js.native
+  var BrokerId: string
   
   /**
     * The username of the ActiveMQ user. This value can contain only alphanumeric characters, dashes, periods, underscores, and tildes (- . _ ~). This value must be 2-100 characters long.
     */
-  var Username: string = js.native
+  var Username: string
 }
 object DeleteUserRequest {
   

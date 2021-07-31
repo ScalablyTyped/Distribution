@@ -2,36 +2,34 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMetaData extends StObject {
   
   /**
     * The column's name
     */
-  var colName: String = js.native
+  var colName: String
   
   /**
     * The length, for char, varchar, nvarchar and varbinary.
     */
-  var dataLength: js.UndefOr[Double] = js.native
+  var dataLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The precision. Only applicable to numeric and decimal.
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * The scale. Only applicable to numeric, decimal, time, datetime2 and datetimeoffset.
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     * The column type.
     */
-  var `type`: ColumnType = js.native
+  var `type`: ColumnType
 }
 object ColumnMetaData {
   

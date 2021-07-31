@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * can be used to identify office modules.
   * @since OOo 2.0
   */
-@js.native
-trait XModuleManager extends XInterface {
+trait XModuleManager
+  extends StObject
+     with XInterface {
   
   /**
     * This identifier can then be used at the service {@link ModuleManager} to get more information about this module.
@@ -26,7 +26,7 @@ trait XModuleManager extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the parameter Module is: an empty oneor does not provide one of the needed interface {@link XFr
     * @throws UnknownModuleException if the given module could not be identified. Note: If the module represent a {@link XFrame} instance with does not contain
     */
-  def identify(Module: XInterface): String = js.native
+  def identify(Module: XInterface): String
 }
 object XModuleManager {
   

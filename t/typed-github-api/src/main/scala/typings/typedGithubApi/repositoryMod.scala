@@ -5,157 +5,155 @@ import typings.typedGithubApi.anon.Admin
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryMod {
   
-  @js.native
   trait Repository extends StObject {
     
-    var allow_merge_commit: Boolean = js.native
+    var allow_merge_commit: Boolean
     
-    var allow_rebase_merge: Boolean = js.native
+    var allow_rebase_merge: Boolean
     
-    var allow_squash_merge: Boolean = js.native
+    var allow_squash_merge: Boolean
     
-    var archive_url: String = js.native
+    var archive_url: String
     
-    var assignees_url: String = js.native
+    var assignees_url: String
     
-    var blobs_url: String = js.native
+    var blobs_url: String
     
-    var branches_url: String = js.native
+    var branches_url: String
     
-    var clone_url: String = js.native
+    var clone_url: String
     
-    var collaborators_url: String = js.native
+    var collaborators_url: String
     
-    var comments_url: String = js.native
+    var comments_url: String
     
-    var commits_url: String = js.native
+    var commits_url: String
     
-    var compare_url: String = js.native
+    var compare_url: String
     
-    var contents_url: String = js.native
+    var contents_url: String
     
-    var contributors_url: String = js.native
+    var contributors_url: String
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var default_branch: String = js.native
+    var default_branch: String
     
-    var deployments_url: String = js.native
+    var deployments_url: String
     
-    var description: String = js.native
+    var description: String
     
-    var downloads_url: String = js.native
+    var downloads_url: String
     
-    var events_url: String = js.native
+    var events_url: String
     
-    var fork: Boolean = js.native
+    var fork: Boolean
     
-    var forks_count: Double = js.native
+    var forks_count: Double
     
-    var forks_url: String = js.native
+    var forks_url: String
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var git_commits_url: String = js.native
+    var git_commits_url: String
     
-    var git_refs_url: String = js.native
+    var git_refs_url: String
     
-    var git_tags_url: String = js.native
+    var git_tags_url: String
     
-    var git_url: String = js.native
+    var git_url: String
     
-    var has_downloads: Boolean = js.native
+    var has_downloads: Boolean
     
-    var has_issues: Boolean = js.native
+    var has_issues: Boolean
     
-    var has_pages: Boolean = js.native
+    var has_pages: Boolean
     
-    var has_wiki: Boolean = js.native
+    var has_wiki: Boolean
     
-    var homepage: String = js.native
+    var homepage: String
     
-    var hooks_url: String = js.native
+    var hooks_url: String
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var issue_comment_url: String = js.native
+    var issue_comment_url: String
     
-    var issue_events_url: String = js.native
+    var issue_events_url: String
     
-    var issues_url: String = js.native
+    var issues_url: String
     
-    var keys_url: String = js.native
+    var keys_url: String
     
-    var labels_url: String = js.native
+    var labels_url: String
     
-    var language: String | Null = js.native
+    var language: String | Null
     
-    var languages_url: String = js.native
+    var languages_url: String
     
-    var merges_url: String = js.native
+    var merges_url: String
     
-    var milestones_url: String = js.native
+    var milestones_url: String
     
-    var mirror_url: String = js.native
+    var mirror_url: String
     
-    var name: String = js.native
+    var name: String
     
-    var network_count: Double = js.native
+    var network_count: Double
     
-    var notifications_url: String = js.native
+    var notifications_url: String
     
-    var open_issues_count: Double = js.native
+    var open_issues_count: Double
     
-    var owner: UserSummary = js.native
+    var owner: UserSummary
     
-    var permissions: Admin = js.native
+    var permissions: Admin
     
-    var `private`: Boolean = js.native
+    var `private`: Boolean
     
-    var pulls_url: String = js.native
+    var pulls_url: String
     
-    var pushed_at: Date = js.native
+    var pushed_at: Date
     
-    var releases_url: String = js.native
+    var releases_url: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var ssh_url: String = js.native
+    var ssh_url: String
     
-    var stargazers_count: Double = js.native
+    var stargazers_count: Double
     
-    var stargazers_url: String = js.native
+    var stargazers_url: String
     
-    var statuses_url: String = js.native
+    var statuses_url: String
     
-    var subscribers_count: Double = js.native
+    var subscribers_count: Double
     
-    var subscribers_url: String = js.native
+    var subscribers_url: String
     
-    var subscription_url: String = js.native
+    var subscription_url: String
     
-    var svn_url: String = js.native
+    var svn_url: String
     
-    var tags_url: String = js.native
+    var tags_url: String
     
-    var teams_url: String = js.native
+    var teams_url: String
     
-    var topics: js.Array[String] = js.native
+    var topics: js.Array[String]
     
-    var trees_url: String = js.native
+    var trees_url: String
     
-    var updated_at: Date = js.native
+    var updated_at: Date
     
-    var url: String = js.native
+    var url: String
     
-    var watchers_count: Double = js.native
+    var watchers_count: Double
   }
   object Repository {
     
@@ -233,7 +231,7 @@ object repositoryMod {
       url: String,
       watchers_count: Double
     ): Repository = {
-      val __obj = js.Dynamic.literal(allow_merge_commit = allow_merge_commit.asInstanceOf[js.Any], allow_rebase_merge = allow_rebase_merge.asInstanceOf[js.Any], allow_squash_merge = allow_squash_merge.asInstanceOf[js.Any], archive_url = archive_url.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], homepage = homepage.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], mirror_url = mirror_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], network_count = network_count.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_count = subscribers_count.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allow_merge_commit = allow_merge_commit.asInstanceOf[js.Any], allow_rebase_merge = allow_rebase_merge.asInstanceOf[js.Any], allow_squash_merge = allow_squash_merge.asInstanceOf[js.Any], archive_url = archive_url.asInstanceOf[js.Any], assignees_url = assignees_url.asInstanceOf[js.Any], blobs_url = blobs_url.asInstanceOf[js.Any], branches_url = branches_url.asInstanceOf[js.Any], clone_url = clone_url.asInstanceOf[js.Any], collaborators_url = collaborators_url.asInstanceOf[js.Any], comments_url = comments_url.asInstanceOf[js.Any], commits_url = commits_url.asInstanceOf[js.Any], compare_url = compare_url.asInstanceOf[js.Any], contents_url = contents_url.asInstanceOf[js.Any], contributors_url = contributors_url.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], default_branch = default_branch.asInstanceOf[js.Any], deployments_url = deployments_url.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], downloads_url = downloads_url.asInstanceOf[js.Any], events_url = events_url.asInstanceOf[js.Any], fork = fork.asInstanceOf[js.Any], forks_count = forks_count.asInstanceOf[js.Any], forks_url = forks_url.asInstanceOf[js.Any], full_name = full_name.asInstanceOf[js.Any], git_commits_url = git_commits_url.asInstanceOf[js.Any], git_refs_url = git_refs_url.asInstanceOf[js.Any], git_tags_url = git_tags_url.asInstanceOf[js.Any], git_url = git_url.asInstanceOf[js.Any], has_downloads = has_downloads.asInstanceOf[js.Any], has_issues = has_issues.asInstanceOf[js.Any], has_pages = has_pages.asInstanceOf[js.Any], has_wiki = has_wiki.asInstanceOf[js.Any], homepage = homepage.asInstanceOf[js.Any], hooks_url = hooks_url.asInstanceOf[js.Any], html_url = html_url.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], issue_comment_url = issue_comment_url.asInstanceOf[js.Any], issue_events_url = issue_events_url.asInstanceOf[js.Any], issues_url = issues_url.asInstanceOf[js.Any], keys_url = keys_url.asInstanceOf[js.Any], labels_url = labels_url.asInstanceOf[js.Any], languages_url = languages_url.asInstanceOf[js.Any], merges_url = merges_url.asInstanceOf[js.Any], milestones_url = milestones_url.asInstanceOf[js.Any], mirror_url = mirror_url.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], network_count = network_count.asInstanceOf[js.Any], notifications_url = notifications_url.asInstanceOf[js.Any], open_issues_count = open_issues_count.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], pulls_url = pulls_url.asInstanceOf[js.Any], pushed_at = pushed_at.asInstanceOf[js.Any], releases_url = releases_url.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], ssh_url = ssh_url.asInstanceOf[js.Any], stargazers_count = stargazers_count.asInstanceOf[js.Any], stargazers_url = stargazers_url.asInstanceOf[js.Any], statuses_url = statuses_url.asInstanceOf[js.Any], subscribers_count = subscribers_count.asInstanceOf[js.Any], subscribers_url = subscribers_url.asInstanceOf[js.Any], subscription_url = subscription_url.asInstanceOf[js.Any], svn_url = svn_url.asInstanceOf[js.Any], tags_url = tags_url.asInstanceOf[js.Any], teams_url = teams_url.asInstanceOf[js.Any], topics = topics.asInstanceOf[js.Any], trees_url = trees_url.asInstanceOf[js.Any], updated_at = updated_at.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], watchers_count = watchers_count.asInstanceOf[js.Any], language = null)
       __obj.updateDynamic("private")(`private`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Repository]
     }

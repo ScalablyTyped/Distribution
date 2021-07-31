@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ProjectsGetPermissionForUserResponseDat
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersProjectsGetPermissionForUserEndpoint extends StObject {
   
-  var parameters: ProjectsGetPermissionForUserEndpoint = js.native
+  var parameters: ProjectsGetPermissionForUserEndpoint
   
-  var request: ProjectsGetPermissionForUserRequestOptions = js.native
+  var request: ProjectsGetPermissionForUserRequestOptions
   
-  var response: OctokitResponse[ProjectsGetPermissionForUserResponseData] = js.native
+  var response: OctokitResponse[ProjectsGetPermissionForUserResponseData]
 }
 object ParametersProjectsGetPermissionForUserEndpoint {
   

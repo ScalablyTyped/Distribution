@@ -2,21 +2,19 @@ package typings.web3CoreHelpers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpProviderOptions extends StObject {
   
-  var agent: js.UndefOr[HttpAgent] = js.native
+  var agent: js.UndefOr[HttpAgent] = js.undefined
   
-  var headers: js.UndefOr[js.Array[HttpHeader]] = js.native
+  var headers: js.UndefOr[js.Array[HttpHeader]] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object HttpProviderOptions {
   

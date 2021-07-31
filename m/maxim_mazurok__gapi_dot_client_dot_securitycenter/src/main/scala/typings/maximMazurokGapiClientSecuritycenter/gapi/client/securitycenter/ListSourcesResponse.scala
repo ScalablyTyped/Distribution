@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSourcesResponse extends StObject {
   
   /** Token to retrieve the next page of results, or empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Sources belonging to the requested parent. */
-  var sources: js.UndefOr[js.Array[Source]] = js.native
+  var sources: js.UndefOr[js.Array[Source]] = js.undefined
 }
 object ListSourcesResponse {
   

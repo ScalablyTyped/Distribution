@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HyperCubeDef...
   */
-@js.native
 trait IHyperCubeDef extends StObject {
   
   /**
@@ -16,31 +14,31 @@ trait IHyperCubeDef extends StObject {
     * It implies that it is not possible to collapse any cells.
     * >> The default value is false.
     */
-  var qAlwaysFullyExpanded: Boolean = js.native
+  var qAlwaysFullyExpanded: Boolean
   
   /**
     * Specifies a calculation condition, which must be fulfilled for the hypercube to be (re)calculated.
     * As long as the condition is not met, the engine does not perform a new calculation.
     * This property is optional. By default, there is no calculation condition.
     */
-  var qCalcCond: js.UndefOr[IValueExpr] = js.native
+  var qCalcCond: js.UndefOr[IValueExpr] = js.undefined
   
   /**
     * Array of dimensions.
     */
-  var qDimensions: js.Array[INxDimension] = js.native
+  var qDimensions: js.Array[INxDimension]
   
   /**
     * This property applies for pivot tables and allows to change the layout of the table.
     * An indentation is added to the beginning of each row.
     * >> The default value is false.
     */
-  var qIndentMode: Boolean = js.native
+  var qIndentMode: Boolean
   
   /**
     * Initial data set.
     */
-  var qInitialDataFetch: js.Array[INxPage] = js.native
+  var qInitialDataFetch: js.Array[INxPage]
   
   /**
     * Defines the sort order of the columns in the hypercube.
@@ -55,18 +53,18 @@ trait IHyperCubeDef extends StObject {
     * You can neither collapse/expand a pseudo dimension nor make any selections in it.
     * Stacked pivot tables can only contain one measure.
     */
-  var qInterColumnSortOrder: js.Array[Double] = js.native
+  var qInterColumnSortOrder: js.Array[Double]
   
   /**
     * Maximum number of cells for an initial data fetch (set in qInitialDataFetch) when in stacked mode (qMode is K).
     * >> The default value is 5000.
     */
-  var qMaxStackedCells: Double = js.native
+  var qMaxStackedCells: Double
   
   /**
     * Array of measures.
     */
-  var qMeasures: js.Array[INxMeasure] = js.native
+  var qMeasures: js.Array[INxMeasure]
   
   /**
     * Defines the way the data are handled internally by the engine.
@@ -74,7 +72,7 @@ trait IHyperCubeDef extends StObject {
     * A pivot table can contain several dimensions and measures whereas a stacked pivot
     * table can contain several dimensions but only one measure.
     */
-  var qMode: NxHypercubeMode = js.native
+  var qMode: NxHypercubeMode
   
   /**
     * Number of left dimensions.
@@ -110,25 +108,25 @@ trait IHyperCubeDef extends StObject {
     * - Category is a top dimension.
     * - The pseudo dimension is a top dimension
     */
-  var qNoOfLeftDims: Double = js.native
+  var qNoOfLeftDims: Double
   
   /**
     * If this property is set to true, the missing symbols (if any) are replaced by 0 if the value is a numeric
     * and by an empty string if the value is a string.
     * >> The default value is false.
     */
-  var qPopulateMissing: Boolean = js.native
+  var qPopulateMissing: Boolean
   
-  var qPseudoDimPos: Double = js.native
+  var qPseudoDimPos: Double
   
   // ?Dokufehler
-  var qReductionMode: ReductionModeType = js.native
+  var qReductionMode: ReductionModeType
   
   /**
     * If set to true, the total (if any) is shown on the first row.
     * >> The default value is false.
     */
-  var qShowTotalsAbove: Boolean = js.native
+  var qShowTotalsAbove: Boolean
   
   /**
     * To enable the sorting by ascending or descending order in the values of a measure.
@@ -136,23 +134,23 @@ trait IHyperCubeDef extends StObject {
     * In the case of a pivot table, the measure or pseudo dimension should be defined as a top dimension.
     * The sorting is restricted to the values of the first measure in a pivot table.
     */
-  var qSortbyYValue: String = js.native
+  var qSortbyYValue: String
   
   /**
     * Name of the alternate state.
     * Default is current selections $.
     */
-  var qStateName: String = js.native
+  var qStateName: String
   
   /**
     * Removes missing values.
     */
-  var qSuppressMissing: Boolean = js.native
+  var qSuppressMissing: Boolean
   
   /**
     * Removes zero values.
     */
-  var qSuppressZero: Boolean = js.native
+  var qSuppressZero: Boolean
 }
 object IHyperCubeDef {
   

@@ -2,26 +2,24 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response when listing guardians.
   */
-@js.native
 trait SchemaListGuardiansResponse extends StObject {
   
   /**
     * Guardians on this page of results that met the criteria specified in the
     * request.
     */
-  var guardians: js.UndefOr[js.Array[SchemaGuardian]] = js.native
+  var guardians: js.UndefOr[js.Array[SchemaGuardian]] = js.undefined
   
   /**
     * Token identifying the next page of results to return. If empty, no
     * further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListGuardiansResponse {
   

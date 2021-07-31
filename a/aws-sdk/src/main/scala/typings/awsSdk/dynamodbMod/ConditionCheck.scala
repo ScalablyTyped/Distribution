@@ -2,41 +2,39 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionCheck extends StObject {
   
   /**
     * A condition that must be satisfied in order for a conditional update to succeed.
     */
-  var ConditionExpression: typings.awsSdk.dynamodbMod.ConditionExpression = js.native
+  var ConditionExpression: typings.awsSdk.dynamodbMod.ConditionExpression
   
   /**
     * One or more substitution tokens for attribute names in an expression.
     */
-  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.native
+  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
   /**
     * One or more values that can be substituted in an expression.
     */
-  var ExpressionAttributeValues: js.UndefOr[ExpressionAttributeValueMap] = js.native
+  var ExpressionAttributeValues: js.UndefOr[ExpressionAttributeValueMap] = js.undefined
   
   /**
     * The primary key of the item to be checked. Each element consists of an attribute name and a value for that attribute.
     */
-  var Key: typings.awsSdk.dynamodbMod.Key = js.native
+  var Key: typings.awsSdk.dynamodbMod.Key
   
   /**
     * Use ReturnValuesOnConditionCheckFailure to get the item attributes if the ConditionCheck condition fails. For ReturnValuesOnConditionCheckFailure, the valid values are: NONE and ALL_OLD.
     */
-  var ReturnValuesOnConditionCheckFailure: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnValuesOnConditionCheckFailure] = js.native
+  var ReturnValuesOnConditionCheckFailure: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnValuesOnConditionCheckFailure] = js.undefined
   
   /**
     * Name of the table for the check item request.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object ConditionCheck {
   

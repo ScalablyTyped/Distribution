@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportRequest extends StObject {
   
   /** Describes the list of operations to be reported. Each operation is represented as an AttributeContext, and contains all attributes around an API access. */
-  var operations: js.UndefOr[js.Array[AttributeContext]] = js.native
+  var operations: js.UndefOr[js.Array[AttributeContext]] = js.undefined
   
   /**
     * Specifies the version of the service configuration that should be used to process the request. Must not be empty. Set this field to 'latest' to specify using the latest
     * configuration.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object ReportRequest {
   

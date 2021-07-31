@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetStyle extends StObject {
   
   /**
     * The display options for tiles.
     */
-  var Tile: js.UndefOr[TileStyle] = js.native
+  var Tile: js.UndefOr[TileStyle] = js.undefined
   
   /**
     * The layout options for tiles.
     */
-  var TileLayout: js.UndefOr[TileLayoutStyle] = js.native
+  var TileLayout: js.UndefOr[TileLayoutStyle] = js.undefined
 }
 object SheetStyle {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingRule extends StObject {
   
   /**
     * The claim name that must be present in the token, for example, "isAdmin" or "paid".
     */
-  var Claim: ClaimName = js.native
+  var Claim: ClaimName
   
   /**
     * The match condition that specifies how closely the claim value in the IdP token must match Value.
     */
-  var MatchType: MappingRuleMatchType = js.native
+  var MatchType: MappingRuleMatchType
   
   /**
     * The role ARN.
     */
-  var RoleARN: ARNString = js.native
+  var RoleARN: ARNString
   
   /**
     * A brief string that the claim must match, for example, "paid" or "yes".
     */
-  var Value: ClaimValue = js.native
+  var Value: ClaimValue
 }
 object MappingRule {
   

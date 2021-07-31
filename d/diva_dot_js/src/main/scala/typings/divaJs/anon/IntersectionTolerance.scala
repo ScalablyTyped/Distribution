@@ -2,13 +2,11 @@ package typings.divaJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntersectionTolerance extends StObject {
   
-  var intersectionTolerance: Double = js.native
+  var intersectionTolerance: Double
 }
 object IntersectionTolerance {
   

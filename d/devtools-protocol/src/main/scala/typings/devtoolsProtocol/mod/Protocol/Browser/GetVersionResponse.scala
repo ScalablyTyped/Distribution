@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVersionResponse extends StObject {
   
   /**
     * V8 version.
     */
-  var jsVersion: String = js.native
+  var jsVersion: String
   
   /**
     * Product name.
     */
-  var product: String = js.native
+  var product: String
   
   /**
     * Protocol version.
     */
-  var protocolVersion: String = js.native
+  var protocolVersion: String
   
   /**
     * Product revision.
     */
-  var revision: String = js.native
+  var revision: String
   
   /**
     * User-Agent.
     */
-  var userAgent: String = js.native
+  var userAgent: String
 }
 object GetVersionResponse {
   

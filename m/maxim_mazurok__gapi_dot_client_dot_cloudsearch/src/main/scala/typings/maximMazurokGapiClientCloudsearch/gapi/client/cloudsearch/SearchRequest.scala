@@ -2,37 +2,35 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRequest extends StObject {
   
   /** The sources to use for querying. If not specified, all data sources from the current search application are used. */
-  var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.native
+  var dataSourceRestrictions: js.UndefOr[js.Array[DataSourceRestriction]] = js.undefined
   
-  var facetOptions: js.UndefOr[js.Array[FacetOptions]] = js.native
+  var facetOptions: js.UndefOr[js.Array[FacetOptions]] = js.undefined
   
   /**
     * Maximum number of search results to return in one page. Valid values are between 1 and 100, inclusive. Default value is 10. Minimum value is 50 when results beyond 2000 are
     * requested.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /** The raw query string. See supported search operators in the [Cloud search Cheat Sheet](https://support.google.com/a/users/answer/9299929) */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /** Options to interpret the user query. */
-  var queryInterpretationOptions: js.UndefOr[QueryInterpretationOptions] = js.native
+  var queryInterpretationOptions: js.UndefOr[QueryInterpretationOptions] = js.undefined
   
   /** Request options, such as the search application and user timezone. */
-  var requestOptions: js.UndefOr[RequestOptions] = js.native
+  var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   
   /** The options for sorting the search results */
-  var sortOptions: js.UndefOr[SortOptions] = js.native
+  var sortOptions: js.UndefOr[SortOptions] = js.undefined
   
   /** Starting index of the results. */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object SearchRequest {
   

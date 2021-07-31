@@ -2,51 +2,49 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionGroup extends StObject {
   
   /**
     * Indicates whether this option group can be applied to both VPC and non-VPC instances. The value true indicates the option group can be applied to both VPC and non-VPC instances. 
     */
-  var AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.native
+  var AllowsVpcAndNonVpcInstanceMemberships: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates the name of the engine that this option group can be applied to.
     */
-  var EngineName: js.UndefOr[String] = js.native
+  var EngineName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the major engine version associated with this option group.
     */
-  var MajorEngineVersion: js.UndefOr[String] = js.native
+  var MajorEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the option group.
     */
-  var OptionGroupArn: js.UndefOr[String] = js.native
+  var OptionGroupArn: js.UndefOr[String] = js.undefined
   
   /**
     * Provides a description of the option group.
     */
-  var OptionGroupDescription: js.UndefOr[String] = js.native
+  var OptionGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the option group.
     */
-  var OptionGroupName: js.UndefOr[String] = js.native
+  var OptionGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates what options are available in the option group.
     */
-  var Options: js.UndefOr[OptionsList] = js.native
+  var Options: js.UndefOr[OptionsList] = js.undefined
   
   /**
     * If AllowsVpcAndNonVpcInstanceMemberships is false, this field is blank. If AllowsVpcAndNonVpcInstanceMemberships is true and this field is blank, then this option group can be applied to both VPC and non-VPC instances. If this field contains a value, then this option group can only be applied to instances that are in the VPC indicated by this field. 
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object OptionGroup {
   

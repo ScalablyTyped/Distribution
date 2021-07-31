@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlicerSpec extends StObject {
   
   /** True if the filter should apply to pivot tables. If not set, default to `True`. */
-  var applyToPivotTables: js.UndefOr[Boolean] = js.native
+  var applyToPivotTables: js.UndefOr[Boolean] = js.undefined
   
   /** The background color of the slicer. */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /** The background color of the slicer. If background_color is also set, this field takes precedence. */
-  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.native
+  var backgroundColorStyle: js.UndefOr[ColorStyle] = js.undefined
   
   /** The column index in the data table on which the filter is applied to. */
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
   /** The data range of the slicer. */
-  var dataRange: js.UndefOr[GridRange] = js.native
+  var dataRange: js.UndefOr[GridRange] = js.undefined
   
   /** The filtering criteria of the slicer. */
-  var filterCriteria: js.UndefOr[FilterCriteria] = js.native
+  var filterCriteria: js.UndefOr[FilterCriteria] = js.undefined
   
   /** The horizontal alignment of title in the slicer. If unspecified, defaults to `LEFT` */
-  var horizontalAlignment: js.UndefOr[String] = js.native
+  var horizontalAlignment: js.UndefOr[String] = js.undefined
   
   /** The text format of title in the slicer. */
-  var textFormat: js.UndefOr[TextFormat] = js.native
+  var textFormat: js.UndefOr[TextFormat] = js.undefined
   
   /** The title of the slicer. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SlicerSpec {
   

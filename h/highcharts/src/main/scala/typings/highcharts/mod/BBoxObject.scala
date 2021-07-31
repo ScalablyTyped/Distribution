@@ -2,21 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BBoxObject extends PositionObject {
+trait BBoxObject
+  extends StObject
+     with PositionObject {
   
   /**
     * Height of the bounding box.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Width of the bounding box.
     */
-  var width: Double = js.native
+  var width: Double
 }
 object BBoxObject {
   

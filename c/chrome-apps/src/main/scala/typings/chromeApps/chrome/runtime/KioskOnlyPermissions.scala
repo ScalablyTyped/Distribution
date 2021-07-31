@@ -3,7 +3,6 @@ package typings.chromeApps.chrome.runtime
 import typings.chromeApps.chromeAppsStrings.audio_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.chromeApps.chromeAppsStrings.systemDotpowerSource
   - typings.chromeApps.chromeAppsStrings.virtualKeyboard
 */
-trait KioskOnlyPermissions extends Permission
+trait KioskOnlyPermissions
+  extends StObject
+     with Permission
 object KioskOnlyPermissions {
   
   @scala.inline

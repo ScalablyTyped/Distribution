@@ -4,23 +4,21 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.prefix
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.suffix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFilterRuleMod {
   
-  @js.native
   trait FilterRule extends StObject {
     
     /**
       * <p>Object key name prefix or suffix identifying one or more objects to which the filtering rule applies. Maximum prefix length can be up to 1,024 characters. Overlapping prefixes and suffixes are not supported. For more information, go to <a href="http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html">Configuring Event Notifications</a> in the Amazon Simple Storage Service Developer Guide.</p>
       */
-    var Name: js.UndefOr[prefix | suffix | String] = js.native
+    var Name: js.UndefOr[prefix | suffix | String] = js.undefined
     
     /**
       * _FilterRuleValue shape
       */
-    var Value: js.UndefOr[String] = js.native
+    var Value: js.UndefOr[String] = js.undefined
   }
   object FilterRule {
     

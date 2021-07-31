@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityDescription extends StObject {
   
   /**
     * Date on which the identity was created.
     */
-  var CreationDate: js.UndefOr[DateType] = js.native
+  var CreationDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A unique identifier in the format REGION:GUID.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityId] = js.undefined
   
   /**
     * Date on which the identity was last modified.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The provider names.
     */
-  var Logins: js.UndefOr[LoginsList] = js.native
+  var Logins: js.UndefOr[LoginsList] = js.undefined
 }
 object IdentityDescription {
   

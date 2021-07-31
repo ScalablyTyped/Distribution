@@ -2,14 +2,15 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.relayRuntime.normalizationNodeMod.NormalizationScalarHandle
   - typings.relayRuntime.normalizationNodeMod.NormalizationLinkedHandle
 */
-trait NormalizationHandle extends NormalizationSelection
+trait NormalizationHandle
+  extends StObject
+     with NormalizationSelection
 object NormalizationHandle {
   
   @scala.inline

@@ -2,17 +2,15 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Acceptstlschannelid extends StObject {
   
-  var accepts_tls_channel_id: js.UndefOr[Boolean] = js.native
+  var accepts_tls_channel_id: js.UndefOr[Boolean] = js.undefined
   
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var matches: js.UndefOr[js.Array[String]] = js.native
+  var matches: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Acceptstlschannelid {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzerSummary extends StObject {
   
   /**
     * The ARN of the analyzer.
     */
-  var arn: AnalyzerArn = js.native
+  var arn: AnalyzerArn
   
   /**
     * A timestamp for the time at which the analyzer was created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The resource that was most recently analyzed by the analyzer.
     */
-  var lastResourceAnalyzed: js.UndefOr[String] = js.native
+  var lastResourceAnalyzed: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the most recently analyzed resource was analyzed.
     */
-  var lastResourceAnalyzedAt: js.UndefOr[Timestamp] = js.native
+  var lastResourceAnalyzedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the analyzer.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The status of the analyzer. An Active analyzer successfully monitors supported resources and generates new findings. The analyzer is Disabled when a user action, such as removing trusted access for IAM Access Analyzer from AWS Organizations, causes the analyzer to stop generating new findings. The status is Creating when the analyzer creation is in progress and Failed when the analyzer creation has failed. 
     */
-  var status: AnalyzerStatus = js.native
+  var status: AnalyzerStatus
   
   /**
     * The statusReason provides more details about the current status of the analyzer. For example, if the creation for the analyzer fails, a Failed status is displayed. For an analyzer with organization as the type, this failure can be due to an issue with creating the service-linked roles required in the member accounts of the AWS organization.
     */
-  var statusReason: js.UndefOr[StatusReason] = js.native
+  var statusReason: js.UndefOr[StatusReason] = js.undefined
   
   /**
     * The tags added to the analyzer.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
   
   /**
     * The type of analyzer, which corresponds to the zone of trust chosen for the analyzer.
     */
-  var `type`: Type = js.native
+  var `type`: Type
 }
 object AnalyzerSummary {
   

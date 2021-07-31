@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.dateMod.DatePicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimeMod {
@@ -29,14 +28,13 @@ object dateTimeMod {
     val ^ : ComponentType[typings.wordpressComponents.dateTimeMod.DateTimePicker.Props] = js.native
     
     /* Inlined std.Omit<@wordpress/components.@wordpress/components/date-time/date.default.Props, 'isInvalidDate'> */
-    @js.native
     trait Props extends StObject {
       
-      var currentDate: js.UndefOr[String] = js.native
+      var currentDate: js.UndefOr[String] = js.undefined
       
-      var is12Hour: js.UndefOr[Boolean] = js.native
+      var is12Hour: js.UndefOr[Boolean] = js.undefined
       
-      var onChange: js.Function1[/* currentDate */ String, Unit] = js.native
+      var onChange: js.Function1[/* currentDate */ String, Unit]
     }
     object Props {
       

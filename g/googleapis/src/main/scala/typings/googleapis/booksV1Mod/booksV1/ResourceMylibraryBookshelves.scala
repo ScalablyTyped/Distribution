@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Mylibrary$Bookshelves")
@@ -31,7 +30,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def addVolume(): GaxiosPromise[Unit] = js.native
   def addVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def addVolume(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def addVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume): GaxiosPromise[Unit] = js.native
   def addVolume(params: ParamsResourceMylibraryBookshelvesAddvolume, callback: BodyResponseCallback[Unit]): Unit = js.native
   def addVolume(
@@ -61,7 +60,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def clearVolumes(): GaxiosPromise[Unit] = js.native
   def clearVolumes(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def clearVolumes(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def clearVolumes(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes): GaxiosPromise[Unit] = js.native
   def clearVolumes(params: ParamsResourceMylibraryBookshelvesClearvolumes, callback: BodyResponseCallback[Unit]): Unit = js.native
   def clearVolumes(
@@ -94,7 +93,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBookshelf] = js.native
   def get(callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBookshelf] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBookshelf] = js.native
   def get(params: ParamsResourceMylibraryBookshelvesGet): GaxiosPromise[SchemaBookshelf] = js.native
   def get(params: ParamsResourceMylibraryBookshelvesGet, callback: BodyResponseCallback[SchemaBookshelf]): Unit = js.native
   def get(
@@ -124,7 +123,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBookshelves] = js.native
   def list(callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBookshelves] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBookshelves] = js.native
   def list(params: ParamsResourceMylibraryBookshelvesList): GaxiosPromise[SchemaBookshelves] = js.native
   def list(params: ParamsResourceMylibraryBookshelvesList, callback: BodyResponseCallback[SchemaBookshelves]): Unit = js.native
   def list(
@@ -156,7 +155,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def moveVolume(): GaxiosPromise[Unit] = js.native
   def moveVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def moveVolume(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def moveVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume): GaxiosPromise[Unit] = js.native
   def moveVolume(params: ParamsResourceMylibraryBookshelvesMovevolume, callback: BodyResponseCallback[Unit]): Unit = js.native
   def moveVolume(
@@ -188,7 +187,7 @@ class ResourceMylibraryBookshelves protected () extends StObject {
     */
   def removeVolume(): GaxiosPromise[Unit] = js.native
   def removeVolume(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def removeVolume(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def removeVolume(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume): GaxiosPromise[Unit] = js.native
   def removeVolume(params: ParamsResourceMylibraryBookshelvesRemovevolume, callback: BodyResponseCallback[Unit]): Unit = js.native
   def removeVolume(

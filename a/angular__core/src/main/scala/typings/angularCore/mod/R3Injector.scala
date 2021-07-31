@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,17 +25,13 @@ trait R3Injector extends StObject {
   def destroyed: Boolean = js.native
   
   def get[T](token: InjectionToken[T]): T = js.native
-  def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any): T = js.native
   def get[T](token: InjectionToken[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native
-  def get[T](token: typings.angularCore.mod.Type[T]): T = js.native
-  def get[T](
-    token: typings.angularCore.mod.Type[T],
-    notFoundValue: js.UndefOr[scala.Nothing],
-    flags: InjectFlags
-  ): T = js.native
-  def get[T](token: typings.angularCore.mod.Type[T], notFoundValue: js.Any): T = js.native
-  def get[T](token: typings.angularCore.mod.Type[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native
+  def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
+  def get[T](token: Type[T]): T = js.native
+  def get[T](token: Type[T], notFoundValue: js.Any): T = js.native
+  def get[T](token: Type[T], notFoundValue: js.Any, flags: InjectFlags): T = js.native
+  def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
   
   var hydrate: js.Any = js.native
   

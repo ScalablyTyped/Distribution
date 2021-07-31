@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNetworkInterfaceAttributeRequest extends StObject {
   
   /**
     * The attribute of the network interface. This parameter is required.
     */
-  var Attribute: js.UndefOr[NetworkInterfaceAttribute] = js.native
+  var Attribute: js.UndefOr[NetworkInterfaceAttribute] = js.undefined
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
 }
 object DescribeNetworkInterfaceAttributeRequest {
   

@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesGetIndexTemplate extends Generic {
+trait IndicesGetIndexTemplate
+  extends StObject
+     with Generic {
   
-  var flat_settings: js.UndefOr[Boolean] = js.native
+  var flat_settings: js.UndefOr[Boolean] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String | js.Array[String]] = js.native
+  var name: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IndicesGetIndexTemplate {
   

@@ -2,59 +2,57 @@ package typings.pulumiKubernetes.outputMod.apps.v1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * StatefulSetStatus represents the current state of a StatefulSet.
   */
-@js.native
 trait StatefulSetStatus extends StObject {
   
   /**
     * collisionCount is the count of hash collisions for the StatefulSet. The StatefulSet controller uses this field as a collision avoidance mechanism when it needs to create the name for the newest ControllerRevision.
     */
-  var collisionCount: Double = js.native
+  var collisionCount: Double
   
   /**
     * Represents the latest available observations of a statefulset's current state.
     */
-  var conditions: js.Array[StatefulSetCondition] = js.native
+  var conditions: js.Array[StatefulSetCondition]
   
   /**
     * currentReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by currentRevision.
     */
-  var currentReplicas: Double = js.native
+  var currentReplicas: Double
   
   /**
     * currentRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [0,currentReplicas).
     */
-  var currentRevision: String = js.native
+  var currentRevision: String
   
   /**
     * observedGeneration is the most recent generation observed for this StatefulSet. It corresponds to the StatefulSet's generation, which is updated on mutation by the API Server.
     */
-  var observedGeneration: Double = js.native
+  var observedGeneration: Double
   
   /**
     * readyReplicas is the number of Pods created by the StatefulSet controller that have a Ready Condition.
     */
-  var readyReplicas: Double = js.native
+  var readyReplicas: Double
   
   /**
     * replicas is the number of Pods created by the StatefulSet controller.
     */
-  var replicas: Double = js.native
+  var replicas: Double
   
   /**
     * updateRevision, if not empty, indicates the version of the StatefulSet used to generate Pods in the sequence [replicas-updatedReplicas,replicas)
     */
-  var updateRevision: String = js.native
+  var updateRevision: String
   
   /**
     * updatedReplicas is the number of Pods created by the StatefulSet controller from the StatefulSet version indicated by updateRevision.
     */
-  var updatedReplicas: Double = js.native
+  var updatedReplicas: Double
 }
 object StatefulSetStatus {
   

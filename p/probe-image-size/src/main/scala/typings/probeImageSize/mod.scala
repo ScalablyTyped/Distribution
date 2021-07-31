@@ -6,45 +6,42 @@ import typings.probeImageSize.probeImageSizeStrings.ECONTENT
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: String): js.Promise[ProbeResult] = js.native
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: String, callback: ProbeCallback): Unit = js.native
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: String, opts: ProbeOptions): js.Promise[ProbeResult] = js.native
+  @scala.inline
+  def apply(source: String): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
+  @scala.inline
+  def apply(source: String, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: String, opts: ProbeOptions): js.Promise[ProbeResult] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProbeResult]]
   /**
     * Get image size without full download. Supported image types: JPG, GIF, PNG, WebP, BMP, TIFF, SVG, PSD.
     */
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: String, opts: ProbeOptions, callback: ProbeCallback): Unit = js.native
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: ReadableStream): js.Promise[ProbeResult] = js.native
-  @JSImport("probe-image-size", JSImport.Namespace)
-  @js.native
-  def apply(source: ReadableStream, callback: ProbeCallback): Unit = js.native
+  @scala.inline
+  def apply(source: String, opts: ProbeOptions, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(source: ReadableStream): js.Promise[ProbeResult] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProbeResult]]
+  @scala.inline
+  def apply(source: ReadableStream, callback: ProbeCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("probe-image-size", "sync")
+  @JSImport("probe-image-size", JSImport.Namespace)
   @js.native
-  def sync(data: Buffer): ProbeResult | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def sync(data: Buffer): ProbeResult | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(data.asInstanceOf[js.Any]).asInstanceOf[ProbeResult | Null]
   
   type ProbeCallback = js.Function2[/* err */ ProbeError | Null, /* result */ ProbeResult, Unit]
   
-  @js.native
-  trait ProbeError extends Error {
+  trait ProbeError
+    extends StObject
+       with Error {
     
-    var code: js.UndefOr[ECONTENT] = js.native
+    var code: js.UndefOr[ECONTENT] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
   }
   object ProbeError {
     
@@ -71,12 +68,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ProbeOptions extends StObject {
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ProbeOptions {
     
@@ -103,24 +99,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ProbeResult extends StObject {
     
-    var hUnits: String = js.native
+    var hUnits: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var length: Double = js.native
+    var length: Double
     
-    var mime: String = js.native
+    var mime: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
     
-    var wUnits: String = js.native
+    var wUnits: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object ProbeResult {
     

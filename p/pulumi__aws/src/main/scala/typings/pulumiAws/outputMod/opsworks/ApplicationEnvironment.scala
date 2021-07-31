@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.opsworks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationEnvironment extends StObject {
   
   /**
     * Variable name.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Set visibility of the variable value to `true` or `false`.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Variable value.
     */
-  var value: String = js.native
+  var value: String
 }
 object ApplicationEnvironment {
   

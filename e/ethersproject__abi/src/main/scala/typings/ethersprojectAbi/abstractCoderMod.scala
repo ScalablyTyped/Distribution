@@ -9,10 +9,13 @@ import typings.std.ReadonlyArray
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractCoderMod {
+  
+  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Coder")
   @js.native
@@ -39,8 +42,8 @@ object abstractCoderMod {
   class Reader protected () extends StObject {
     def this(data: BytesLike) = this()
     def this(data: BytesLike, wordSize: Double) = this()
-    def this(data: BytesLike, wordSize: js.UndefOr[scala.Nothing], coerceFunc: CoerceFunc) = this()
     def this(data: BytesLike, wordSize: Double, coerceFunc: CoerceFunc) = this()
+    def this(data: BytesLike, wordSize: Unit, coerceFunc: CoerceFunc) = this()
     
     def _coerceFunc(`type`: String, value: js.Any): js.Any = js.native
     
@@ -67,9 +70,12 @@ object abstractCoderMod {
   /* static members */
   object Reader {
     
-    @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Reader.coerce")
+    @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Reader")
     @js.native
-    def coerce(name: String, value: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def coerce(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("coerce")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "Writer")
@@ -98,14 +104,14 @@ object abstractCoderMod {
     def writeValue(value: BigNumberish): Double = js.native
   }
   
-  @JSImport("@ethersproject/abi/lib/coders/abstract-coder", "checkResultErrors")
-  @js.native
-  def checkResultErrors(result: Result): js.Array[Error] = js.native
+  @scala.inline
+  def checkResultErrors(result: Result): js.Array[Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResultErrors")(result.asInstanceOf[js.Any]).asInstanceOf[js.Array[Error]]
   
   type CoerceFunc = js.Function2[/* type */ String, /* value */ js.Any, js.Any]
   
   @js.native
   trait Result
-    extends ReadonlyArray[js.Any]
+    extends StObject
+       with ReadonlyArray[js.Any]
        with /* key */ StringDictionary[js.Any]
 }

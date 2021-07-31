@@ -2,25 +2,23 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfoItem extends StObject {
   
-  var flair: js.UndefOr[String] = js.native
+  var flair: js.UndefOr[String] = js.undefined
   
-  var group: InfoItemGroup = js.native
+  var group: InfoItemGroup
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object InfoItem {
   

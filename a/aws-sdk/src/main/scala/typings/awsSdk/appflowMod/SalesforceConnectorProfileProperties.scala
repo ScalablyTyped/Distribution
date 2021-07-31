@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceConnectorProfileProperties extends StObject {
   
   /**
     *  The location of the Salesforce resource. 
     */
-  var instanceUrl: js.UndefOr[InstanceUrl] = js.native
+  var instanceUrl: js.UndefOr[InstanceUrl] = js.undefined
   
   /**
     *  Indicates whether the connector profile applies to a sandbox or production environment. 
     */
-  var isSandboxEnvironment: js.UndefOr[Boolean] = js.native
+  var isSandboxEnvironment: js.UndefOr[Boolean] = js.undefined
 }
 object SalesforceConnectorProfileProperties {
   

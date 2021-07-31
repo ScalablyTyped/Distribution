@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersHistoryList extends StandardParameters {
+trait ParamsResourceUsersHistoryList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * History types to be returned by the function
     */
-  var historyTypes: js.UndefOr[js.Array[String]] = js.native
+  var historyTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Only return messages with a label matching the ID.
     */
-  var labelId: js.UndefOr[String] = js.native
+  var labelId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of history records to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Page token to retrieve a specific page of results in the list.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Returns history records after the specified startHistoryId. The
@@ -50,13 +50,13 @@ trait ParamsResourceUsersHistoryList extends StandardParameters {
     * there are no updates to retrieve and you can store the returned historyId
     * for a future request.
     */
-  var startHistoryId: js.UndefOr[String] = js.native
+  var startHistoryId: js.UndefOr[String] = js.undefined
   
   /**
     * The user's email address. The special value me can be used to indicate
     * the authenticated user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersHistoryList {
   

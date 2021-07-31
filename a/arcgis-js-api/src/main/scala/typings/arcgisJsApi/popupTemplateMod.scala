@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PopupTemplateConstructor
 import typings.arcgisJsApi.esri.PopupTemplateProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupTemplateMod extends Shortcut {
   
   @JSImport("esri/PopupTemplate", JSImport.Namespace)
   @js.native
-  val ^ : PopupTemplateConstructor = js.native
+  val ^ : js.Object & PopupTemplateConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/PopupTemplate", JSImport.Namespace)
@@ -23,12 +22,22 @@ object popupTemplateMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html)
     */
-  class Class () extends PopupTemplate {
+  class Class ()
+    extends StObject
+       with PopupTemplate {
     def this(properties: PopupTemplateProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = PopupTemplateConstructor
+  type _To = js.Object & PopupTemplateConstructor
   
   /* This means you don't have to write `^`, but can instead just say `popupTemplateMod.foo` */
-  override def _to: PopupTemplateConstructor = ^
+  override def _to: js.Object & PopupTemplateConstructor = ^
 }

@@ -2,13 +2,11 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertExtraNode extends StObject {
   
-  var insertExtraNode: js.UndefOr[Boolean] = js.native
+  var insertExtraNode: js.UndefOr[Boolean] = js.undefined
 }
 object InsertExtraNode {
   

@@ -4,7 +4,6 @@ import typings.bitcoinjsLib.paymentsMod.Stack
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multisigMod {
@@ -13,18 +12,15 @@ object multisigMod {
     
     object check {
       
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
-      @js.native
-      def apply(script: Stack): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
-      @js.native
-      def apply(script: Stack, allowIncomplete: Boolean): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
-      @js.native
-      def apply(script: Buffer): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
-      @js.native
-      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = js.native
+      @scala.inline
+      def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
       @JSImport("bitcoinjs-lib/types/templates/multisig", "input.check")
       @js.native
       val ^ : js.Any = js.native
@@ -41,18 +37,15 @@ object multisigMod {
     
     object check {
       
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
-      @js.native
-      def apply(script: Stack): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
-      @js.native
-      def apply(script: Stack, allowIncomplete: Boolean): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
-      @js.native
-      def apply(script: Buffer): Boolean = js.native
-      @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
-      @js.native
-      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = js.native
+      @scala.inline
+      def apply(script: Stack): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Stack, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def apply(script: Buffer, allowIncomplete: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].apply(script.asInstanceOf[js.Any], allowIncomplete.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+      
       @JSImport("bitcoinjs-lib/types/templates/multisig", "output.check")
       @js.native
       val ^ : js.Any = js.native

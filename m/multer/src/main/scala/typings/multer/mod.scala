@@ -13,7 +13,6 @@ import typings.node.streamMod.Readable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,16 +31,20 @@ object mod {
     * populated with an entry mapping the field name to its string value, or array
     * of string values if multiple fields share the same name.
     */
+  @scala.inline
+  def apply(): Multer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Multer]
+  @scala.inline
+  def apply(options: Options): Multer = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Multer]
+  
   @JSImport("multer", JSImport.Namespace)
   @js.native
-  def apply(): Multer = js.native
-  @JSImport("multer", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Multer = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("multer", "MulterError")
   @js.native
-  class MulterError protected () extends Error {
+  class MulterError protected ()
+    extends StObject
+       with Error {
     def this(code: ErrorCode) = this()
     def this(code: ErrorCode, field: String) = this()
     
@@ -50,6 +53,12 @@ object mod {
     
     /** Name of the multipart form field associated with this error. */
     var field: js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   /**
@@ -61,19 +70,16 @@ object mod {
     * files will be stored in the system's temporary directory with random 32
     * character filenames.
     */
-  @JSImport("multer", "diskStorage")
-  @js.native
-  def diskStorage(options: DiskStorageOptions): StorageEngine = js.native
+  @scala.inline
+  def diskStorage(options: DiskStorageOptions): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("diskStorage")(options.asInstanceOf[js.Any]).asInstanceOf[StorageEngine]
   
   /**
     * Returns a `StorageEngine` implementation configured to store files in
     * memory as `Buffer` objects.
     */
-  @JSImport("multer", "memoryStorage")
-  @js.native
-  def memoryStorage(): StorageEngine = js.native
+  @scala.inline
+  def memoryStorage(): StorageEngine = ^.asInstanceOf[js.Dynamic].applyDynamic("memoryStorage")().asInstanceOf[StorageEngine]
   
-  @js.native
   trait DiskStorageOptions extends StObject {
     
     /**
@@ -88,12 +94,12 @@ object mod {
       */
     var destination: js.UndefOr[
         String | (js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* file */ File, 
           /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
           Unit
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function that determines the name of the uploaded file. If nothing
@@ -106,12 +112,12 @@ object mod {
       */
     var filename: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* file */ File, 
           /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DiskStorageOptions {
     
@@ -127,7 +133,7 @@ object mod {
       @scala.inline
       def setDestination(
         value: String | (js.Function3[
-              /* req */ Request_[ParamsDictionary, _, _, Query], 
+              /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
               /* file */ File, 
               /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit], 
               Unit
@@ -136,7 +142,7 @@ object mod {
       
       @scala.inline
       def setDestinationFunction3(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit]) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* destination */ String, Unit]) => Unit
       ): Self = StObject.set(x, "destination", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -144,7 +150,7 @@ object mod {
       
       @scala.inline
       def setFilename(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ js.Function2[/* error */ Error | Null, /* filename */ String, Unit]) => Unit
       ): Self = StObject.set(x, "filename", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -190,14 +196,13 @@ object mod {
     * An object describing a field name and the maximum number of files with
     * that field name to accept.
     */
-  @js.native
   trait Field extends StObject {
     
     /** Optional maximum number of files per field to accept. (Default: Infinity) */
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
     /** The field name. */
-    var name: String = js.native
+    var name: String
   }
   object Field {
     
@@ -246,7 +251,7 @@ object mod {
       * The `Request` object will be populated with a `files` array containing
       * an information object for each processed file.
       */
-    def any(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def any(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     /**
       * Returns middleware that processes multiple files sharing the same field
@@ -259,8 +264,8 @@ object mod {
       * @param maxCount Optional. Maximum number of files to process. (default: Infinity)
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName`
       */
-    def array(fieldName: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def array(fieldName: String, maxCount: Double): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def array(fieldName: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def array(fieldName: String, maxCount: Double): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     /**
       * Returns middleware that processes multiple files associated with the
@@ -273,14 +278,14 @@ object mod {
       * @param fields Array of `Field` objects describing multipart form fields to process.
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if more than `maxCount` files are associated with `fieldName` for any field.
       */
-    def fields(fields: js.Array[Field]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def fields(fields: js.Array[Field]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     /**
       * Returns middleware that accepts only non-file multipart form fields.
       *
       * @throws `MulterError('LIMIT_UNEXPECTED_FILE')` if any file is encountered.
       */
-    def none(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def none(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     /**
       * Returns middleware that processes a single file associated with the
@@ -291,11 +296,10 @@ object mod {
       *
       * @param fieldName Name of the multipart form field to process.
       */
-    def single(fieldName: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def single(fieldName: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
   }
   
   /** Options for initializing a Multer instance. */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -305,7 +309,7 @@ object mod {
       *
       * Ignored if `storage` is set.
       */
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
     /**
       * Optional function to control which files are uploaded. This is called
@@ -317,28 +321,28 @@ object mod {
       */
     var fileFilter: js.UndefOr[
         js.Function3[
-          /* req */ Request_[ParamsDictionary, _, _, Query], 
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
           /* file */ File, 
           /* callback */ FileFilterCallback, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An object specifying various limits on incoming data. This object is
       * passed to Busboy directly, and the details of properties can be found
       * at https://github.com/mscdex/busboy#busboy-methods.
       */
-    var limits: js.UndefOr[FieldNameSize] = js.native
+    var limits: js.UndefOr[FieldNameSize] = js.undefined
     
     /** Preserve the full path of the original filename rather than the basename. (Default: false) */
-    var preservePath: js.UndefOr[Boolean] = js.native
+    var preservePath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A `StorageEngine` responsible for processing files uploaded via Multer.
       * Takes precedence over `dest`.
       */
-    var storage: js.UndefOr[StorageEngine] = js.native
+    var storage: js.UndefOr[StorageEngine] = js.undefined
   }
   object Options {
     
@@ -359,7 +363,7 @@ object mod {
       
       @scala.inline
       def setFileFilter(
-        value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* file */ File, /* callback */ FileFilterCallback) => Unit
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* file */ File, /* callback */ FileFilterCallback) => Unit
       ): Self = StObject.set(x, "fileFilter", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -391,7 +395,6 @@ object mod {
     * once stored. Implementations must also provide a method for removing
     * files in the event that an error occurs.
     */
-  @js.native
   trait StorageEngine extends StObject {
     
     /**
@@ -407,10 +410,10 @@ object mod {
       * @param callback Callback to specify file information.
       */
     def _handleFile(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       file: File,
       callback: js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * Remove the file described by `file`, then invoke the callback with.
@@ -423,17 +426,17 @@ object mod {
       * @param callback Callback to indicate completion.
       */
     def _removeFile(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       file: File,
       callback: js.Function1[/* error */ Error, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object StorageEngine {
     
     @scala.inline
     def apply(
-      _handleFile: (Request_[ParamsDictionary, _, _, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
-      _removeFile: (Request_[ParamsDictionary, _, _, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
+      _handleFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit,
+      _removeFile: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
     ): StorageEngine = {
       val __obj = js.Dynamic.literal(_handleFile = js.Any.fromFunction3(_handleFile), _removeFile = js.Any.fromFunction3(_removeFile))
       __obj.asInstanceOf[StorageEngine]
@@ -444,12 +447,12 @@ object mod {
       
       @scala.inline
       def set_handleFile(
-        value: (Request_[ParamsDictionary, _, _, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit
+        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function2[/* error */ js.UndefOr[js.Any], /* info */ js.UndefOr[PartialFile], Unit]) => Unit
       ): Self = StObject.set(x, "_handleFile", js.Any.fromFunction3(value))
       
       @scala.inline
       def set_removeFile(
-        value: (Request_[ParamsDictionary, _, _, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
+        value: (Request_[ParamsDictionary, js.Any, js.Any, Query], File, js.Function1[/* error */ Error, Unit]) => Unit
       ): Self = StObject.set(x, "_removeFile", js.Any.fromFunction3(value))
     }
   }
@@ -461,45 +464,44 @@ object mod {
       object Multer {
         
         /** Object containing file metadata and access information. */
-        @js.native
         trait File extends StObject {
           
           /** `MemoryStorage` only: A Buffer containing the entire file. */
-          var buffer: Buffer = js.native
+          var buffer: Buffer
           
           /** `DiskStorage` only: Directory to which this file has been uploaded. */
-          var destination: String = js.native
+          var destination: String
           
           /**
             * Value of the `Content-Transfer-Encoding` header for this file.
             * @deprecated since July 2015
             * @see RFC 7578, Section 4.7
             */
-          var encoding: String = js.native
+          var encoding: String
           
           /** Name of the form field associated with this file. */
-          var fieldname: String = js.native
+          var fieldname: String
           
           /** `DiskStorage` only: Name of this file within `destination`. */
-          var filename: String = js.native
+          var filename: String
           
           /** Value of the `Content-Type` header for this file. */
-          var mimetype: String = js.native
+          var mimetype: String
           
           /** Name of the file on the uploader's computer. */
-          var originalname: String = js.native
+          var originalname: String
           
           /** `DiskStorage` only: Full path to the uploaded file. */
-          var path: String = js.native
+          var path: String
           
           /** Size of the file in bytes. */
-          var size: Double = js.native
+          var size: Double
           
           /**
             * A readable stream of this file. Only available to the `_handleFile`
             * callback for custom `StorageEngine`s.
             */
-          var stream: Readable = js.native
+          var stream: Readable
         }
         object File {
           
@@ -556,17 +558,16 @@ object mod {
         }
       }
       
-      @js.native
       trait Request extends StObject {
         
         /** `Multer.File` object populated by `single()` middleware. */
-        var file: File = js.native
+        var file: File
         
         /**
           * Array or dictionary of `Multer.File` object populated by `array()`,
           * `fields()`, and `any()` middleware.
           */
-        var files: StringDictionary[js.Array[File]] | js.Array[File] = js.native
+        var files: StringDictionary[js.Array[File]] | js.Array[File]
       }
       object Request {
         

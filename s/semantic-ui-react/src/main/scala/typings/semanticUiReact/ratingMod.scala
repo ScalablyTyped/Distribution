@@ -8,7 +8,6 @@ import typings.semanticUiReact.ratingRatingMod.RatingComponent
 import typings.semanticUiReact.ratingRatingMod.RatingProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingMod {

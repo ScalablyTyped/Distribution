@@ -2,11 +2,12 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Anchor extends EventEmitter {
+trait Anchor
+  extends StObject
+     with EventEmitter {
   
   def attach(doc: Document): Unit = js.native
   

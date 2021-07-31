@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JourneyCustomMessage extends StObject {
   
   /**
     * The message content that's passed to an AWS Lambda function or to a web hook.
     */
-  var Data: js.UndefOr[string] = js.native
+  var Data: js.UndefOr[string] = js.undefined
 }
 object JourneyCustomMessage {
   

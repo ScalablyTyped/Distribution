@@ -7,7 +7,6 @@ import typings.passportInstagramGraph.passportInstagramGraphBooleans.`false`
 import typings.passportInstagramGraph.passportInstagramGraphBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,11 +14,12 @@ object mod {
   @JSImport("passport-instagram-graph", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(
       options: StrategyOptionWithRequest,
       verify: js.Function5[
-            /* req */ Request_[ParamsDictionary, _, _, Query], 
+            /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
             /* accessToken */ String, 
             /* refreshToken */ String, 
             /* profile */ Profile, 
@@ -38,16 +38,16 @@ object mod {
           ]
     ) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: js.Any = js.native
+    var _json: js.Any
     
-    var _raw: String = js.native
+    var _raw: String
   }
   object Profile {
     
@@ -68,10 +68,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOption extends StrategyOptionBase {
+  trait StrategyOption
+    extends StObject
+       with StrategyOptionBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOption {
     
@@ -92,18 +93,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionBase extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOptionBase {
     
@@ -139,16 +139,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionWithRequest extends StrategyOptionBase {
+  trait StrategyOptionWithRequest
+    extends StObject
+       with StrategyOptionBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionWithRequest {
     
     @scala.inline
-    def apply(callbackURL: String, clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionWithRequest = {
-      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(callbackURL: String, clientID: String, clientSecret: String): StrategyOptionWithRequest = {
+      val __obj = js.Dynamic.literal(callbackURL = callbackURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     

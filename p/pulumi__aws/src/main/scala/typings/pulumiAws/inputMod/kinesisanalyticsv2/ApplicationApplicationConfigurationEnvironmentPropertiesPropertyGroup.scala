@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup extends StObject {
   
   /**
     * The key of the application execution property key-value map.
     */
-  var propertyGroupId: Input[String] = js.native
+  var propertyGroupId: Input[String]
   
   /**
     * Application execution property key-value map.
     */
-  var propertyMap: Input[StringDictionary[Input[String]]] = js.native
+  var propertyMap: Input[StringDictionary[Input[String]]]
 }
 object ApplicationApplicationConfigurationEnvironmentPropertiesPropertyGroup {
   

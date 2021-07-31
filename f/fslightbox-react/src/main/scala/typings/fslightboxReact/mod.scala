@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,50 +15,49 @@ object mod {
   
   type FsLightbox = Component[FsLightboxProps, js.Object, js.Any]
   
-  @js.native
   trait FsLightboxProps extends StObject {
     
     // custom sources
-    var customSources: js.UndefOr[js.Array[Element]] = js.native
+    var customSources: js.UndefOr[js.Array[Element]] = js.undefined
     
     // types
-    var disableLocalStorage: js.UndefOr[Boolean] = js.native
+    var disableLocalStorage: js.UndefOr[Boolean] = js.undefined
     
     // preferences
-    var loadOnlyCurrentSource: js.UndefOr[Boolean] = js.native
+    var loadOnlyCurrentSource: js.UndefOr[Boolean] = js.undefined
     
-    var maxYoutubeVideoDimensions: js.UndefOr[VideoDimensions] = js.native
+    var maxYoutubeVideoDimensions: js.UndefOr[VideoDimensions] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // events
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var openOnMount: js.UndefOr[Boolean] = js.native
+    var openOnMount: js.UndefOr[Boolean] = js.undefined
     
     // slide number controlling
-    var slide: js.UndefOr[Double] = js.native
+    var slide: js.UndefOr[Double] = js.undefined
     
-    var slideDistance: js.UndefOr[Double] = js.native
+    var slideDistance: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var sourceIndex: js.UndefOr[Double] = js.native
+    var sourceIndex: js.UndefOr[Double] = js.undefined
     
-    var sources: js.UndefOr[js.Array[String]] = js.native
+    var sources: js.UndefOr[js.Array[String]] = js.undefined
     
-    var toggler: Boolean = js.native
+    var toggler: Boolean
     
-    var `type`: js.UndefOr[SourceType] = js.native
+    var `type`: js.UndefOr[SourceType] = js.undefined
     
-    var types: js.UndefOr[js.Array[SourceType]] = js.native
+    var types: js.UndefOr[js.Array[SourceType]] = js.undefined
     
     // sources
-    var videosPosters: js.UndefOr[js.Array[VideoPoster]] = js.native
+    var videosPosters: js.UndefOr[js.Array[VideoPoster]] = js.undefined
   }
   object FsLightboxProps {
     
@@ -202,12 +200,11 @@ object mod {
   */
   type SourceType = _SourceType | Null
   
-  @js.native
   trait VideoDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object VideoDimensions {
     

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.xstream.mod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tweenMod extends Shortcut {
@@ -15,37 +14,60 @@ object tweenMod extends Shortcut {
   
   type Ease = js.Function3[/* x */ Double, /* from */ Double, /* to */ Double, Double]
   
-  @js.native
   trait Easings extends StObject {
     
-    def easeIn(x: Double, from: Double, to: Double): Double = js.native
+    def easeIn(x: Double, from: Double, to: Double): Double
     
-    def easeInOut(x: Double, from: Double, to: Double): Double = js.native
+    def easeInOut(x: Double, from: Double, to: Double): Double
     @JSName("easeInOut")
-    var easeInOut_Original: Ease = js.native
+    var easeInOut_Original: Ease
     
     @JSName("easeIn")
-    var easeIn_Original: Ease = js.native
+    var easeIn_Original: Ease
     
-    def easeOut(x: Double, from: Double, to: Double): Double = js.native
+    def easeOut(x: Double, from: Double, to: Double): Double
     @JSName("easeOut")
-    var easeOut_Original: Ease = js.native
+    var easeOut_Original: Ease
+  }
+  object Easings {
+    
+    @scala.inline
+    def apply(
+      easeIn: (/* x */ Double, /* from */ Double, /* to */ Double) => Double,
+      easeInOut: (/* x */ Double, /* from */ Double, /* to */ Double) => Double,
+      easeOut: (/* x */ Double, /* from */ Double, /* to */ Double) => Double
+    ): Easings = {
+      val __obj = js.Dynamic.literal(easeIn = js.Any.fromFunction3(easeIn), easeInOut = js.Any.fromFunction3(easeInOut), easeOut = js.Any.fromFunction3(easeOut))
+      __obj.asInstanceOf[Easings]
+    }
+    
+    @scala.inline
+    implicit class EasingsMutableBuilder[Self <: Easings] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setEaseIn(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeIn", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setEaseInOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeInOut", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setEaseOut(value: (/* x */ Double, /* from */ Double, /* to */ Double) => Double): Self = StObject.set(x, "easeOut", js.Any.fromFunction3(value))
+    }
   }
   
   type NumericFunction = js.Function1[/* input */ Double, Double]
   
-  @js.native
   trait TweenConfig extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var ease: js.UndefOr[Ease] = js.native
+    var ease: js.UndefOr[Ease] = js.undefined
     
-    var from: Double = js.native
+    var from: Double
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var to: Double = js.native
+    var to: Double
   }
   object TweenConfig {
     

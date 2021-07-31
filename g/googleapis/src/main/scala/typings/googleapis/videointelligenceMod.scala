@@ -16,10 +16,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object videointelligenceMod {
+  
+  @JSImport("googleapis/build/src/apis/videointelligence", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -176,9 +179,12 @@ object videointelligenceMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/videointelligence", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/videointelligence", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -222,34 +228,29 @@ object videointelligenceMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence(options: Options): typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence(options: typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Options): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence(options: typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Options): Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence(options: typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Options): typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence(options: typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Options): typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence_v1(version: v1): Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence_v1beta2(version: v1beta2): typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence_v1p1beta1(version: v1p1beta1): typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence_v1p2beta1(version: v1p2beta1): typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence = js.native
-  @JSImport("googleapis/build/src/apis/videointelligence", "videointelligence")
-  @js.native
-  def videointelligence_v1p3beta1(version: v1p3beta1): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = js.native
+  @scala.inline
+  def videointelligence(options: Options): typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence]
+  @scala.inline
+  def videointelligence(options: typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Options): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence]
+  @scala.inline
+  def videointelligence(options: typings.googleapis.videointelligenceV1Mod.videointelligenceV1.Options): Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(options.asInstanceOf[js.Any]).asInstanceOf[Videointelligence]
+  @scala.inline
+  def videointelligence(options: typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Options): typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence]
+  @scala.inline
+  def videointelligence(options: typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Options): typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence]
+  
+  @scala.inline
+  def videointelligence_v1(version: v1): Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(version.asInstanceOf[js.Any]).asInstanceOf[Videointelligence]
+  
+  @scala.inline
+  def videointelligence_v1beta2(version: v1beta2): typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.videointelligenceV1beta2Mod.videointelligenceV1beta2.Videointelligence]
+  
+  @scala.inline
+  def videointelligence_v1p1beta1(version: v1p1beta1): typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.videointelligenceV1p1beta1Mod.videointelligenceV1p1beta1.Videointelligence]
+  
+  @scala.inline
+  def videointelligence_v1p2beta1(version: v1p2beta1): typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1.Videointelligence]
+  
+  @scala.inline
+  def videointelligence_v1p3beta1(version: v1p3beta1): typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence = ^.asInstanceOf[js.Dynamic].applyDynamic("videointelligence")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1.Videointelligence]
 }

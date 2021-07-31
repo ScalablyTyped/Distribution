@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleVerify extends StObject {
   
   /** Avoid bidding on apps with the star ratings. */
-  var appStarRating: js.UndefOr[DoubleVerifyAppStarRating] = js.native
+  var appStarRating: js.UndefOr[DoubleVerifyAppStarRating] = js.undefined
   
   /** Avoid bidding on apps with the age rating. */
-  var avoidedAgeRatings: js.UndefOr[js.Array[String]] = js.native
+  var avoidedAgeRatings: js.UndefOr[js.Array[String]] = js.undefined
   
   /** DV Brand Safety Controls. */
-  var brandSafetyCategories: js.UndefOr[DoubleVerifyBrandSafetyCategories] = js.native
+  var brandSafetyCategories: js.UndefOr[DoubleVerifyBrandSafetyCategories] = js.undefined
   
   /**
     * The custom segment ID provided by DoubleVerify. The ID must start with "51" and consist of eight digits. Custom segment ID cannot be specified along with any of the following
     * fields: * brand_safety_categories * avoided_age_ratings * app_star_rating * fraud_invalid_traffic
     */
-  var customSegmentId: js.UndefOr[String] = js.native
+  var customSegmentId: js.UndefOr[String] = js.undefined
   
   /** Display viewability settings (applicable to display line items only). */
-  var displayViewability: js.UndefOr[DoubleVerifyDisplayViewability] = js.native
+  var displayViewability: js.UndefOr[DoubleVerifyDisplayViewability] = js.undefined
   
   /** Avoid Sites and Apps with historical Fraud & IVT Rates. */
-  var fraudInvalidTraffic: js.UndefOr[DoubleVerifyFraudInvalidTraffic] = js.native
+  var fraudInvalidTraffic: js.UndefOr[DoubleVerifyFraudInvalidTraffic] = js.undefined
   
   /** Video viewability settings (applicable to video line items only). */
-  var videoViewability: js.UndefOr[DoubleVerifyVideoViewability] = js.native
+  var videoViewability: js.UndefOr[DoubleVerifyVideoViewability] = js.undefined
 }
 object DoubleVerify {
   

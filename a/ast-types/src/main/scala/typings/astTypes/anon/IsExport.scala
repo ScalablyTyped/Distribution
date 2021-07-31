@@ -7,21 +7,19 @@ import typings.astTypes.kindsMod.TSExternalModuleReferenceKind
 import typings.astTypes.kindsMod.TSQualifiedNameKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsExport extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var isExport: js.UndefOr[Boolean] = js.native
+  var isExport: js.UndefOr[Boolean] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var moduleReference: IdentifierKind | TSQualifiedNameKind | TSExternalModuleReferenceKind = js.native
+  var moduleReference: IdentifierKind | TSQualifiedNameKind | TSExternalModuleReferenceKind
 }
 object IsExport {
   

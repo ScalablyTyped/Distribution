@@ -7,22 +7,20 @@ import typings.baseui.baseuiStrings.mini
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosizeInputProps extends StObject {
   
   @JSName("$size")
-  var $size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var $size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var inputRef: js.UndefOr[Ref[_]] = js.native
+  var inputRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var overrides: js.UndefOr[AutosizeInputOverrides] = js.native
+  var overrides: js.UndefOr[AutosizeInputOverrides] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object AutosizeInputProps {
   
@@ -48,10 +46,10 @@ object AutosizeInputProps {
     def setDefaultValueUndefined: Self = StObject.set(x, "defaultValue", js.undefined)
     
     @scala.inline
-    def setInputRef(value: Ref[_]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
+    def setInputRef(value: Ref[js.Any]): Self = StObject.set(x, "inputRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInputRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
+    def setInputRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "inputRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInputRefNull: Self = StObject.set(x, "inputRef", null)

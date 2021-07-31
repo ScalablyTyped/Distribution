@@ -4,7 +4,6 @@ import typings.guacamoleClient.guacCommonMod.Mimetype
 import typings.guacamoleClient.inputStreamMod.InputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object audioPlayerMod {
@@ -24,6 +23,10 @@ object audioPlayerMod {
   /* static members */
   object AudioPlayer {
     
+    @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns an instance of Guacamole.AudioPlayer providing support for the given
       * audio format. If support for the given audio format is not available, null
@@ -34,9 +37,8 @@ object audioPlayerMod {
       * @return A Guacamole.AudioPlayer instance supporting the given mimetype and
       * reading from the given stream, or null if support for the given mimetype is absent.
       */
-    @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer.getInstance")
-    @js.native
-    def getInstance(stream: InputStream, mimetype: Mimetype): AudioPlayer | Null = js.native
+    @scala.inline
+    def getInstance(stream: InputStream, mimetype: Mimetype): AudioPlayer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(stream.asInstanceOf[js.Any], mimetype.asInstanceOf[js.Any])).asInstanceOf[AudioPlayer | Null]
     
     /**
       * Returns a list of all mimetypes supported by any built-in
@@ -48,8 +50,7 @@ object audioPlayerMod {
       * however (see https://tools.ietf.org/html/rfc4856).
       * @returns A list of all mimetypes supported by any built-in Guacamole.AudioPlayer, excluding any parameters.
       */
-    @JSImport("guacamole-client/lib/AudioPlayer", "AudioPlayer.getSupportedTypes")
-    @js.native
-    def getSupportedTypes(): js.Array[Mimetype] = js.native
+    @scala.inline
+    def getSupportedTypes(): js.Array[Mimetype] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSupportedTypes")().asInstanceOf[js.Array[Mimetype]]
   }
 }

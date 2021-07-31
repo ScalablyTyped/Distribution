@@ -2,46 +2,44 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCheckPolicy extends StObject {
   
   /**
     * The number of consecutive successful health checks that must occur before declaring listener healthy.
     */
-  var healthyThreshold: HealthCheckThreshold = js.native
+  var healthyThreshold: HealthCheckThreshold
   
   /**
     * The time period in milliseconds between each health check execution.
     */
-  var intervalMillis: HealthCheckIntervalMillis = js.native
+  var intervalMillis: HealthCheckIntervalMillis
   
   /**
     * The destination path for the health check request. This value is only used if the specified protocol is HTTP or HTTP/2. For any other protocol, this value is ignored.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The destination port for the health check request. This port must match the port defined in the PortMapping for the listener.
     */
-  var port: js.UndefOr[PortNumber] = js.native
+  var port: js.UndefOr[PortNumber] = js.undefined
   
   /**
     * The protocol for the health check request. If you specify grpc, then your service must conform to the GRPC Health Checking Protocol.
     */
-  var protocol: PortProtocol = js.native
+  var protocol: PortProtocol
   
   /**
     * The amount of time to wait when receiving a response from the health check, in milliseconds.
     */
-  var timeoutMillis: HealthCheckTimeoutMillis = js.native
+  var timeoutMillis: HealthCheckTimeoutMillis
   
   /**
     * The number of consecutive failed health checks that must occur before declaring a virtual node unhealthy. 
     */
-  var unhealthyThreshold: HealthCheckThreshold = js.native
+  var unhealthyThreshold: HealthCheckThreshold
 }
 object HealthCheckPolicy {
   

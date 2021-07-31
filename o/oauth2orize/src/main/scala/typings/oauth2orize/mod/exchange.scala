@@ -2,23 +2,22 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exchange {
   
-  @JSImport("oauth2orize", "exchange.authorizationCode")
+  @JSImport("oauth2orize", "exchange")
   @js.native
-  def authorizationCode(issue: IssueExchangeCodeFunction): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "exchange.authorizationCode")
-  @js.native
-  def authorizationCode(options: Options, issue: IssueExchangeCodeFunction): MiddlewareFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
-  def clientCredentials(issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
+  @scala.inline
+  def authorizationCode(issue: IssueExchangeCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("authorizationCode")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
+  def authorizationCode(options: Options, issue: IssueExchangeCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("authorizationCode")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
+  
+  @scala.inline
+  def clientCredentials(issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
   def clientCredentials(
     issue: js.Function3[
       /* client */ js.Any, 
@@ -26,17 +25,15 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   // arity == 2; issue(client, issued);
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
+  @scala.inline
   def clientCredentials(
     options: Options,
     issue: js.Function2[/* client */ js.Any, /* issued */ ExchangeDoneFunction, Unit]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 3; issue(client, scope, issued);
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
+  @scala.inline
   def clientCredentials(
     options: Options,
     issue: js.Function3[
@@ -45,10 +42,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 4; issue(client, scope, req.body, issued);
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
+  @scala.inline
   def clientCredentials(
     options: Options,
     issue: js.Function4[
@@ -58,10 +54,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 5; issue(client, scope, req.body, req.authInfo, issued);
-  @JSImport("oauth2orize", "exchange.clientCredentials")
-  @js.native
+  @scala.inline
   def clientCredentials(
     options: Options,
     issue: js.Function5[
@@ -72,17 +67,14 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("clientCredentials")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @JSImport("oauth2orize", "exchange.code")
-  @js.native
-  def code(issue: IssueExchangeCodeFunction): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "exchange.code")
-  @js.native
-  def code(options: Options, issue: IssueExchangeCodeFunction): MiddlewareFunction = js.native
+  @scala.inline
+  def code(issue: IssueExchangeCodeFunction): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("code")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
+  def code(options: Options, issue: IssueExchangeCodeFunction): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("code")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  @scala.inline
   def password(
     issue: js.Function4[
       /* client */ js.Any, 
@@ -91,9 +83,8 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
   def password(
     issue: js.Function5[
       /* client */ js.Any, 
@@ -103,10 +94,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   // arity == 4; issue(client, username, passwd, issued);
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  @scala.inline
   def password(
     options: Options,
     issue: js.Function4[
@@ -116,10 +106,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 5; issue(client, username, passwd, scope, issued);
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  @scala.inline
   def password(
     options: Options,
     issue: js.Function5[
@@ -130,10 +119,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 6; issue(client, username, passwd, scope, req.body, issued);
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  @scala.inline
   def password(
     options: Options,
     issue: js.Function6[
@@ -145,10 +133,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 7; issue(client, username, passwd, scope, req.body, req.authInfo, issued);
-  @JSImport("oauth2orize", "exchange.password")
-  @js.native
+  @scala.inline
   def password(
     options: Options,
     issue: js.Function7[
@@ -161,10 +148,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("password")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  @scala.inline
   def refreshToken(
     issue: js.Function3[
       /* client */ js.Any, 
@@ -172,9 +158,8 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
+  @scala.inline
   def refreshToken(
     issue: js.Function4[
       /* client */ js.Any, 
@@ -183,10 +168,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(issue.asInstanceOf[js.Any]).asInstanceOf[MiddlewareFunction]
   // arity == 3; issue(client, refreshToken, issued);
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  @scala.inline
   def refreshToken(
     options: Options,
     issue: js.Function3[
@@ -195,10 +179,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 4; issue(client, refreshToken, scope, issued);
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  @scala.inline
   def refreshToken(
     options: Options,
     issue: js.Function4[
@@ -208,10 +191,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 5; issue(client, refreshToken, scope, req.body, issued);
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  @scala.inline
   def refreshToken(
     options: Options,
     issue: js.Function5[
@@ -222,10 +204,9 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   // arity == 6; issue(client, refreshToken, scope, req.body, req.authInfo, issued);
-  @JSImport("oauth2orize", "exchange.refreshToken")
-  @js.native
+  @scala.inline
   def refreshToken(
     options: Options,
     issue: js.Function6[
@@ -237,9 +218,8 @@ object exchange {
       /* issued */ ExchangeDoneFunction, 
       Unit
     ]
-  ): MiddlewareFunction = js.native
+  ): MiddlewareFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(options.asInstanceOf[js.Any], issue.asInstanceOf[js.Any])).asInstanceOf[MiddlewareFunction]
   
-  @js.native
   trait Options extends StObject {
     
     // For maximum flexibility, multiple scope spearators can optionally be
@@ -247,11 +227,11 @@ object exchange {
     // with either space or comma (' ', ',').  This violates the specification,
     // but achieves compatibility with existing client libraries that are already
     // deployed.
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
     // The 'user' property of `req` holds the authenticated user.  In the case
     // of the token endpoint, the property will contain the OAuth 2.0 client.
-    var userProperty: js.UndefOr[String] = js.native
+    var userProperty: js.UndefOr[String] = js.undefined
   }
   object Options {
     

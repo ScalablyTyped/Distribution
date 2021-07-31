@@ -13,7 +13,6 @@ import typings.libraCore.transactionInfoPbMod.TransactionInfo
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof")
@@ -21,12 +20,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TransactionListWithProof () extends Message {
   
   def addInfos(): TransactionInfo = js.native
-  def addInfos(value: js.UndefOr[scala.Nothing], index: Double): TransactionInfo = js.native
+  def addInfos(value: Unit, index: Double): TransactionInfo = js.native
   def addInfos(value: TransactionInfo): TransactionInfo = js.native
   def addInfos(value: TransactionInfo, index: Double): TransactionInfo = js.native
   
   def addTransactions(): SignedTransaction = js.native
-  def addTransactions(value: js.UndefOr[scala.Nothing], index: Double): SignedTransaction = js.native
+  def addTransactions(value: Unit, index: Double): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction): SignedTransaction = js.native
   def addTransactions(value: SignedTransaction, index: Double): SignedTransaction = js.native
   
@@ -85,13 +84,11 @@ object TransactionListWithProof {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): TransactionListWithProof = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): TransactionListWithProof = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[TransactionListWithProof]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: TransactionListWithProof, reader: BinaryReader): TransactionListWithProof = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: TransactionListWithProof, reader: BinaryReader): TransactionListWithProof = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[TransactionListWithProof]
   
   @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof.extensions")
   @js.native
@@ -106,28 +103,25 @@ object TransactionListWithProof {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: TransactionListWithProof, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: TransactionListWithProof, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/transaction_pb", "TransactionListWithProof.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: TransactionListWithProof): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: TransactionListWithProof): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var eventsForVersions: js.UndefOr[typings.libraCore.eventsPbMod.EventsForVersions.AsObject] = js.native
+    var eventsForVersions: js.UndefOr[typings.libraCore.eventsPbMod.EventsForVersions.AsObject] = js.undefined
     
-    var firstTransactionVersion: js.UndefOr[typings.googleProtobuf.wrappersPbMod.UInt64Value.AsObject] = js.native
+    var firstTransactionVersion: js.UndefOr[typings.googleProtobuf.wrappersPbMod.UInt64Value.AsObject] = js.undefined
     
-    var infosList: js.Array[typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject] = js.native
+    var infosList: js.Array[typings.libraCore.transactionInfoPbMod.TransactionInfo.AsObject]
     
-    var proofOfFirstTransaction: js.UndefOr[typings.libraCore.proofPbMod.AccumulatorProof.AsObject] = js.native
+    var proofOfFirstTransaction: js.UndefOr[typings.libraCore.proofPbMod.AccumulatorProof.AsObject] = js.undefined
     
-    var proofOfLastTransaction: js.UndefOr[typings.libraCore.proofPbMod.AccumulatorProof.AsObject] = js.native
+    var proofOfLastTransaction: js.UndefOr[typings.libraCore.proofPbMod.AccumulatorProof.AsObject] = js.undefined
     
-    var transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject] = js.native
+    var transactionsList: js.Array[typings.libraCore.transactionPbMod.SignedTransaction.AsObject]
   }
   object AsObject {
     

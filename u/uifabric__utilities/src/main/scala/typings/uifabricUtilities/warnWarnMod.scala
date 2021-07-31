@@ -3,23 +3,23 @@ package typings.uifabricUtilities
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object warnWarnMod {
   
-  @JSImport("@uifabric/utilities/lib/warn/warn", "setWarningCallback")
+  @JSImport("@uifabric/utilities/lib/warn/warn", JSImport.Namespace)
   @js.native
-  def setWarningCallback(): Unit = js.native
-  @JSImport("@uifabric/utilities/lib/warn/warn", "setWarningCallback")
-  @js.native
-  def setWarningCallback(warningCallback: js.Function1[/* message */ String, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uifabric/utilities/lib/warn/warn", "warn")
-  @js.native
-  def warn(message: String): Unit = js.native
+  @scala.inline
+  def setWarningCallback(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")().asInstanceOf[Unit]
+  @scala.inline
+  def setWarningCallback(warningCallback: js.Function1[/* message */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setWarningCallback")(warningCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type ISettingsMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap with TopLevel[js.Any]
+    */ typings.uifabricUtilities.uifabricUtilitiesStrings.ISettingsMap & TopLevel[js.Any]
 }

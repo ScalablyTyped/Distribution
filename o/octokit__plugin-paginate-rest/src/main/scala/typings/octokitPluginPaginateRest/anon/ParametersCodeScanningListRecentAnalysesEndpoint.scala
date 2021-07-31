@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.CodeScanningListRecentAnalysesResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersCodeScanningListRecentAnalysesEndpoint extends StObject {
   
-  var parameters: CodeScanningListRecentAnalysesEndpoint = js.native
+  var parameters: CodeScanningListRecentAnalysesEndpoint
   
-  var response: OctokitResponse[CodeScanningListRecentAnalysesResponseData] = js.native
+  var response: OctokitResponse[CodeScanningListRecentAnalysesResponseData]
 }
 object ParametersCodeScanningListRecentAnalysesEndpoint {
   

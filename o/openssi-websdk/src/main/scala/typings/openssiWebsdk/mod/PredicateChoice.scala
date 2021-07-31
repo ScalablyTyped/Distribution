@@ -2,17 +2,15 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredicateChoice extends StObject {
   
-  var cred_def_id: CredentialDefinitionID = js.native
+  var cred_def_id: CredentialDefinitionID
   
-  var predicate: String = js.native
+  var predicate: String
   
-  var schema_id: CredentialSchemaID = js.native
+  var schema_id: CredentialSchemaID
 }
 object PredicateChoice {
   

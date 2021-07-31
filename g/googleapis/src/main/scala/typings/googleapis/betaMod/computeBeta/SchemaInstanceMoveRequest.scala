@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceMoveRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaInstanceMoveRequest extends StObject {
     * - https://www.googleapis.com/compute/v1/projects/project/zones/zone  -
     * projects/project/zones/zone  - zones/zone
     */
-  var destinationZone: js.UndefOr[String] = js.native
+  var destinationZone: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the target instance to move. This can be a full or partial
@@ -23,7 +21,7 @@ trait SchemaInstanceMoveRequest extends StObject {
     * - projects/project/zones/zone/instances/instance  -
     * zones/zone/instances/instance
     */
-  var targetInstance: js.UndefOr[String] = js.native
+  var targetInstance: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceMoveRequest {
   

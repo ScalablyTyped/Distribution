@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.HyperlinkClick event.
   */
-@js.native
-trait ASPxClientRichEditHyperlinkClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditHyperlinkClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether the event is handled manually, so no default processing is required.
     */
-  var handled: Boolean = js.native
+  var handled: Boolean
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
   
   /**
     * Gets a value identifying the clicked hyperlink type.
     */
-  var hyperlinkType: ASPxClientOfficeDocumentLinkType = js.native
+  var hyperlinkType: ASPxClientOfficeDocumentLinkType
   
   /**
     * Gets the clicked link's URI.
     */
-  var targetUri: String = js.native
+  var targetUri: String
 }
 object ASPxClientRichEditHyperlinkClickEventArgs {
   

@@ -4,30 +4,32 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object singleMod {
   
   @JSImport("rsocket-flowable/Single", JSImport.Default)
   @js.native
-  class default[T] protected () extends Single[T] {
+  class default[T] protected ()
+    extends StObject
+       with Single[T] {
     def this(source: Source[T]) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("rsocket-flowable/Single", "default.error")
+    @JSImport("rsocket-flowable/Single", JSImport.Default)
     @js.native
-    def error(error: Error): Single[scala.Nothing] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("rsocket-flowable/Single", "default.never")
-    @js.native
-    def never(): Single[scala.Nothing] = js.native
+    @scala.inline
+    def error(error: Error): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(error.asInstanceOf[js.Any]).asInstanceOf[Single[scala.Nothing]]
     
-    @JSImport("rsocket-flowable/Single", "default.of")
-    @js.native
-    def of[U](value: U): Single[U] = js.native
+    @scala.inline
+    def never(): Single[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("never")().asInstanceOf[Single[scala.Nothing]]
+    
+    @scala.inline
+    def of[U](value: U): Single[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(value.asInstanceOf[js.Any]).asInstanceOf[Single[U]]
   }
   
   type CancelCallback = js.Function0[Unit]
@@ -43,14 +45,13 @@ object singleMod {
     def onSubscribe(cancel: CancelCallback): Unit = js.native
   }
   
-  @js.native
   trait IFutureSubscriber[T] extends StObject {
     
-    def onComplete(value: T): Unit = js.native
+    def onComplete(value: T): Unit
     
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
-    def onSubscribe(cancel: CancelCallback): Unit = js.native
+    def onSubscribe(cancel: CancelCallback): Unit
   }
   object IFutureSubscriber {
     
@@ -61,7 +62,7 @@ object singleMod {
     }
     
     @scala.inline
-    implicit class IFutureSubscriberMutableBuilder[Self <: IFutureSubscriber[_], T] (val x: Self with IFutureSubscriber[T]) extends AnyVal {
+    implicit class IFutureSubscriberMutableBuilder[Self <: IFutureSubscriber[?], T] (val x: Self & IFutureSubscriber[T]) extends AnyVal {
       
       @scala.inline
       def setOnComplete(value: T => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction1(value))
@@ -89,9 +90,9 @@ object singleMod {
     def subscribe(partialSubscriber: Partial[IFutureSubscriber[T]]): Unit = js.native
     
     def `then`(): Unit = js.native
-    def `then`(successFn: js.UndefOr[scala.Nothing], errorFn: js.Function1[/* error */ Error, Unit]): Unit = js.native
     def `then`(successFn: js.Function1[/* data */ T, Unit]): Unit = js.native
     def `then`(successFn: js.Function1[/* data */ T, Unit], errorFn: js.Function1[/* error */ Error, Unit]): Unit = js.native
+    def `then`(successFn: Unit, errorFn: js.Function1[/* error */ Error, Unit]): Unit = js.native
   }
   
   type Source[T] = js.Function1[/* subject */ IFutureSubject[T], Unit]

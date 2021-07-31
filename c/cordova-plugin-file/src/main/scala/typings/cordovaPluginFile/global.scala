@@ -2,7 +2,6 @@ package typings.cordovaPluginFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,8 +10,13 @@ object global {
   @JSGlobal("FileError")
   @js.native
   class FileError protected ()
-    extends typings.cordovaPluginFile.FileError {
+    extends StObject
+       with typings.cordovaPluginFile.FileError {
     def this(code: Double) = this()
+    
+    /** Error code */
+    /* CompleteClass */
+    var code: Double = js.native
   }
   object FileError {
     
@@ -124,10 +128,10 @@ object global {
   object LocalFileSystem extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.cordovaPluginFile.LocalFileSystem with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.cordovaPluginFile.LocalFileSystem & Double] = js.native
     
-    /* 1 */ val PERSISTENT: typings.cordovaPluginFile.LocalFileSystem.PERSISTENT with Double = js.native
+    /* 1 */ val PERSISTENT: typings.cordovaPluginFile.LocalFileSystem.PERSISTENT & Double = js.native
     
-    /* 0 */ val TEMPORARY: typings.cordovaPluginFile.LocalFileSystem.TEMPORARY with Double = js.native
+    /* 0 */ val TEMPORARY: typings.cordovaPluginFile.LocalFileSystem.TEMPORARY & Double = js.native
   }
 }

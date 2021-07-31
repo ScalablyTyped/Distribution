@@ -2,25 +2,23 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A TextElement kind that represents the beginning of a new paragraph.
   */
-@js.native
 trait SchemaParagraphMarker extends StObject {
   
   /**
     * The bullet for this paragraph. If not present, the paragraph does not
     * belong to a list.
     */
-  var bullet: js.UndefOr[SchemaBullet] = js.native
+  var bullet: js.UndefOr[SchemaBullet] = js.undefined
   
   /**
     * The paragraph&#39;s style
     */
-  var style: js.UndefOr[SchemaParagraphStyle] = js.native
+  var style: js.UndefOr[SchemaParagraphStyle] = js.undefined
 }
 object SchemaParagraphMarker {
   

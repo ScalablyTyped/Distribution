@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Courses$Aliases")
@@ -37,7 +36,7 @@ class ResourceCoursesAliases protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(callback: BodyResponseCallback[SchemaCourseAlias]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCourseAlias] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(params: ParamsResourceCoursesAliasesCreate): GaxiosPromise[SchemaCourseAlias] = js.native
   def create(params: ParamsResourceCoursesAliasesCreate, callback: BodyResponseCallback[SchemaCourseAlias]): Unit = js.native
   def create(
@@ -72,7 +71,7 @@ class ResourceCoursesAliases protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAliasesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceCoursesAliasesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -106,7 +105,7 @@ class ResourceCoursesAliases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCourseAliasesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(params: ParamsResourceCoursesAliasesList): GaxiosPromise[SchemaListCourseAliasesResponse] = js.native
   def list(
     params: ParamsResourceCoursesAliasesList,

@@ -6,17 +6,17 @@ import typings.elasticsearch.elasticsearchStrings.query_and_fetch
 import typings.elasticsearch.elasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MSearchTemplateParams extends GenericParams {
+trait MSearchTemplateParams
+  extends StObject
+     with GenericParams {
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | query_and_fetch | dfs_query_then_fetch | dfs_query_and_fetch] = js.undefined
   
-  var `type`: js.UndefOr[NameList] = js.native
+  var `type`: js.UndefOr[NameList] = js.undefined
 }
 object MSearchTemplateParams {
   

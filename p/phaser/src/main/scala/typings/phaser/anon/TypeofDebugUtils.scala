@@ -3,14 +3,12 @@ package typings.phaser.anon
 import typings.phaser.spine.Skeleton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDebugUtils extends StObject {
   
   /* static member */
-  def logBones(skeleton: Skeleton): Unit = js.native
+  def logBones(skeleton: Skeleton): Unit
 }
 object TypeofDebugUtils {
   

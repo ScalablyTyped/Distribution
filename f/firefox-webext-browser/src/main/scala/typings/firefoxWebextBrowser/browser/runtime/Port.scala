@@ -4,28 +4,26 @@ import typings.firefoxWebextBrowser.WebExtEvent
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* runtime types */
 /** An object which allows two way communication with other pages. */
-@js.native
 trait Port extends StObject {
   
-  def disconnect(): Unit = js.native
+  def disconnect(): Unit
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var onDisconnect: WebExtEvent[js.Function1[/* port */ this.type, Unit]] = js.native
+  var onDisconnect: WebExtEvent[js.Function1[/* port */ this.type, Unit]]
   
-  var onMessage: WebExtEvent[js.Function1[/* response */ js.Object, Unit]] = js.native
+  var onMessage: WebExtEvent[js.Function1[/* response */ js.Object, Unit]]
   
-  def postMessage(message: js.Object): Unit = js.native
+  def postMessage(message: js.Object): Unit
   
   /** This property will **only** be present on ports passed to onConnect/onConnectExternal listeners. */
-  var sender: js.UndefOr[MessageSender] = js.native
+  var sender: js.UndefOr[MessageSender] = js.undefined
 }
 object Port {
   

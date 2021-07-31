@@ -6,7 +6,6 @@ import typings.vue.vueMod.Vue
 import typings.vue.vueMod.VueConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,7 +19,9 @@ object mod extends Shortcut {
   val VueEditor: VueEditorConstructor = js.native
   
   @js.native
-  trait VueEditorConstructor extends VueConstructor[Vue] {
+  trait VueEditorConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     def data(): VueEditorData = js.native
     
@@ -31,10 +32,9 @@ object mod extends Shortcut {
     var watch: VueEditorWatch = js.native
   }
   
-  @js.native
   trait VueEditorData extends StObject {
     
-    var quill: js.Any = js.native
+    var quill: js.Any
   }
   object VueEditorData {
     
@@ -52,36 +52,35 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueEditorMethods extends StObject {
     
-    def checkForCustomImageHandler(): Unit = js.native
+    def checkForCustomImageHandler(): Unit
     
-    def customImageHandler(image: js.Any, callback: js.Any): Unit = js.native
+    def customImageHandler(image: js.Any, callback: js.Any): Unit
     
-    def emitImageInfo($event: Event): Unit = js.native
+    def emitImageInfo($event: Event): Unit
     
-    def handleInitialContent(): Unit = js.native
+    def handleInitialContent(): Unit
     
-    def handleSelectionChange(range: js.Any, oldRange: js.Any): Unit = js.native
+    def handleSelectionChange(range: js.Any, oldRange: js.Any): Unit
     
-    def handleTextChange(): Unit = js.native
+    def handleTextChange(): Unit
     
-    def initializeEditor(): Unit = js.native
+    def initializeEditor(): Unit
     
-    def listenForEditorEvent(`type`: js.Any): Unit = js.native
+    def listenForEditorEvent(`type`: js.Any): Unit
     
-    def prepareEditorConfig(editorConfig: js.Any): Unit = js.native
+    def prepareEditorConfig(editorConfig: js.Any): Unit
     
-    def registerEditorEventListeners(): Unit = js.native
+    def registerEditorEventListeners(): Unit
     
-    def registerPrototypes(): Unit = js.native
+    def registerPrototypes(): Unit
     
-    def setModules(): Unit = js.native
+    def setModules(): Unit
     
-    def setupCustomImageHandler(): Unit = js.native
+    def setupCustomImageHandler(): Unit
     
-    def setupQuillEditor(): Unit = js.native
+    def setupQuillEditor(): Unit
   }
   object VueEditorMethods {
     
@@ -153,24 +152,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueEditorProps extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
     
-    var editorOptions: js.Any = js.native
+    var editorOptions: js.Any
     
-    var editorToolbar: js.Array[_] = js.native
+    var editorToolbar: js.Array[js.Any]
     
-    var id: String = js.native
+    var id: String
     
-    var placeholder: String = js.native
+    var placeholder: String
     
-    var useCustomImageHandler: js.Any = js.native
+    var useCustomImageHandler: js.Any
     
-    var useMarkdownShortcuts: Boolean = js.native
+    var useMarkdownShortcuts: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object VueEditorProps {
     
@@ -178,7 +176,7 @@ object mod extends Shortcut {
     def apply(
       disabled: Boolean,
       editorOptions: js.Any,
-      editorToolbar: js.Array[_],
+      editorToolbar: js.Array[js.Any],
       id: String,
       placeholder: String,
       useCustomImageHandler: js.Any,
@@ -199,7 +197,7 @@ object mod extends Shortcut {
       def setEditorOptions(value: js.Any): Self = StObject.set(x, "editorOptions", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setEditorToolbar(value: js.Array[_]): Self = StObject.set(x, "editorToolbar", value.asInstanceOf[js.Any])
+      def setEditorToolbar(value: js.Array[js.Any]): Self = StObject.set(x, "editorToolbar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEditorToolbarVarargs(value: js.Any*): Self = StObject.set(x, "editorToolbar", js.Array(value :_*))
@@ -221,12 +219,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait VueEditorWatch extends StObject {
     
-    def disabled(status: Boolean): Unit = js.native
+    def disabled(status: Boolean): Unit
     
-    def value(`val`: js.Any): Unit = js.native
+    def value(`val`: js.Any): Unit
   }
   object VueEditorWatch {
     

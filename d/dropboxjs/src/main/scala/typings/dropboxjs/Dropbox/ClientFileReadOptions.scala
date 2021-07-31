@@ -2,29 +2,27 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientFileReadOptions extends StObject {
   
-  var arrayBuffer: js.UndefOr[Boolean] = js.native
+  var arrayBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
-  var blob: js.UndefOr[Boolean] = js.native
+  var blob: js.UndefOr[Boolean] = js.undefined
   
-  var buffer: js.UndefOr[Boolean] = js.native
+  var buffer: js.UndefOr[Boolean] = js.undefined
   
-  var httpCache: js.UndefOr[Boolean] = js.native
+  var httpCache: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var rev: js.UndefOr[String] = js.native
+  var rev: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var versionTag: js.UndefOr[String] = js.native
+  var versionTag: js.UndefOr[String] = js.undefined
 }
 object ClientFileReadOptions {
   

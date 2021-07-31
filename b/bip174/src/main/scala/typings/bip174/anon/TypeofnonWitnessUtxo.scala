@@ -4,21 +4,19 @@ import typings.bip174.interfacesMod.KeyValue
 import typings.bip174.interfacesMod.NonWitnessUtxo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofnonWitnessUtxo extends StObject {
   
-  def canAdd(currentData: js.Any, newData: js.Any): Boolean = js.native
+  def canAdd(currentData: js.Any, newData: js.Any): Boolean
   
-  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.NonWitnessUtxo */ Boolean = js.native
+  def check(data: js.Any): /* is bip174.bip174/src/lib/interfaces.NonWitnessUtxo */ Boolean
   
-  def decode(keyVal: KeyValue): NonWitnessUtxo = js.native
+  def decode(keyVal: KeyValue): NonWitnessUtxo
   
-  def encode(data: NonWitnessUtxo): KeyValue = js.native
+  def encode(data: NonWitnessUtxo): KeyValue
   
-  val expected: /* "Buffer" */ String = js.native
+  val expected: /* "Buffer" */ String
 }
 object TypeofnonWitnessUtxo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlgorithmResponse extends StObject {
   
   /**
     * A listing of the properties of the algorithm.
     */
-  var algorithm: js.UndefOr[Algorithm] = js.native
+  var algorithm: js.UndefOr[Algorithm] = js.undefined
 }
 object DescribeAlgorithmResponse {
   

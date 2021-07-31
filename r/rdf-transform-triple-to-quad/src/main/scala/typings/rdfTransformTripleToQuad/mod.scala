@@ -11,7 +11,6 @@ import typings.rdfJs.mod.QuadGraph
 import typings.rdfJs.mod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,7 +19,8 @@ object mod {
   @js.native
   class ^[Q /* <: BaseQuad */] () extends TripleToQuadTransform[Q] {
     def this(graph: QuadGraph) = this()
-    def this(graph: js.UndefOr[QuadGraph], options: TripleToQuadTransformOptions) = this()
+    def this(graph: Unit, options: TripleToQuadTransformOptions) = this()
+    def this(graph: QuadGraph, options: TripleToQuadTransformOptions) = this()
   }
   
   @js.native
@@ -40,13 +40,12 @@ object mod {
       * @return A quad from the internal buffer, or null if none is available.
       */
     /* InferMemberOverrides */
-    override def read(): (Q | Null) with (String | Buffer) = js.native
+    override def read(): (Q | Null) & (String | Buffer) = js.native
   }
   
-  @js.native
   trait TripleToQuadTransformOptions extends StObject {
     
-    var factory: DataFactory[Quad, Quad] = js.native
+    var factory: DataFactory[Quad, Quad]
   }
   object TripleToQuadTransformOptions {
     

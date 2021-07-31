@@ -5,21 +5,22 @@ import typings.std.Date
 import typings.stylableCore.anon.Fs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryMinimalFsMod {
   
-  @JSImport("@stylable/core/cjs/memory-minimal-fs", "createMinimalFS")
+  @JSImport("@stylable/core/cjs/memory-minimal-fs", JSImport.Namespace)
   @js.native
-  def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createMinimalFS(hasFilesTrimWS: MinimalFSSetup): Fs = ^.asInstanceOf[js.Dynamic].applyDynamic("createMinimalFS")(hasFilesTrimWS.asInstanceOf[js.Any]).asInstanceOf[Fs]
+  
   trait File extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var mtime: js.UndefOr[Date] = js.native
+    var mtime: js.UndefOr[Date] = js.undefined
   }
   object File {
     
@@ -43,12 +44,11 @@ object memoryMinimalFsMod {
     }
   }
   
-  @js.native
   trait MinimalFSSetup extends StObject {
     
-    var files: StringDictionary[File] = js.native
+    var files: StringDictionary[File]
     
-    var trimWS: js.UndefOr[Boolean] = js.native
+    var trimWS: js.UndefOr[Boolean] = js.undefined
   }
   object MinimalFSSetup {
     

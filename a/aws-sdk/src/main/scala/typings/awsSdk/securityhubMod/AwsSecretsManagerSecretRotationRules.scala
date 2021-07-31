@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSecretsManagerSecretRotationRules extends StObject {
   
   /**
     * The number of days after the previous rotation to rotate the secret.
     */
-  var AutomaticallyAfterDays: js.UndefOr[Integer] = js.native
+  var AutomaticallyAfterDays: js.UndefOr[Integer] = js.undefined
 }
 object AwsSecretsManagerSecretRotationRules {
   

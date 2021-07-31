@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Duration extends StObject {
   
   /** contains a human-readable representation of the duration. */
-  var text: String = js.native
+  var text: String
   
   /** indicates the duration in seconds. */
-  var value: Double = js.native
+  var value: Double
 }
 object Duration {
   

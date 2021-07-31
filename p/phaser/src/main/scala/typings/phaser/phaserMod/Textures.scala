@@ -8,7 +8,6 @@ import typings.std.HTMLVideoElement
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Textures {
@@ -35,7 +34,8 @@ object Textures {
   @JSImport("phaser", "Textures.CanvasTexture")
   @js.native
   class CanvasTexture protected ()
-    extends typings.phaser.Phaser.Textures.CanvasTexture {
+    extends StObject
+       with typings.phaser.Phaser.Textures.CanvasTexture {
     /**
       * 
       * @param manager A reference to the Texture Manager this Texture belongs to.
@@ -126,11 +126,11 @@ object Textures {
   object FilterMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Textures.FilterMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.phaser.Phaser.Textures.FilterMode & Double] = js.native
     
-    /* 0 */ val LINEAR: typings.phaser.Phaser.Textures.FilterMode.LINEAR with Double = js.native
+    /* 0 */ val LINEAR: typings.phaser.Phaser.Textures.FilterMode.LINEAR & Double = js.native
     
-    /* 1 */ val NEAREST: typings.phaser.Phaser.Textures.FilterMode.NEAREST with Double = js.native
+    /* 1 */ val NEAREST: typings.phaser.Phaser.Textures.FilterMode.NEAREST & Double = js.native
   }
   
   /**
@@ -139,7 +139,8 @@ object Textures {
   @JSImport("phaser", "Textures.Frame")
   @js.native
   class Frame protected ()
-    extends typings.phaser.Phaser.Textures.Frame {
+    extends StObject
+       with typings.phaser.Phaser.Textures.Frame {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       name: String,
@@ -201,7 +202,8 @@ object Textures {
   @JSImport("phaser", "Textures.Texture")
   @js.native
   class Texture protected ()
-    extends typings.phaser.Phaser.Textures.Texture {
+    extends StObject
+       with typings.phaser.Phaser.Textures.Texture {
     def this(
       manager: typings.phaser.Phaser.Textures.TextureManager,
       key: String,
@@ -239,21 +241,14 @@ object Textures {
       manager: typings.phaser.Phaser.Textures.TextureManager,
       key: String,
       source: js.Array[HTMLCanvasElement | HTMLImageElement],
-      width: js.UndefOr[scala.Nothing],
+      width: Double,
       height: Double
     ) = this()
     def this(
       manager: typings.phaser.Phaser.Textures.TextureManager,
       key: String,
       source: js.Array[HTMLCanvasElement | HTMLImageElement],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      manager: typings.phaser.Phaser.Textures.TextureManager,
-      key: String,
-      source: HTMLCanvasElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: Double
     ) = this()
     def this(
@@ -266,8 +261,8 @@ object Textures {
     def this(
       manager: typings.phaser.Phaser.Textures.TextureManager,
       key: String,
-      source: HTMLImageElement,
-      width: js.UndefOr[scala.Nothing],
+      source: HTMLCanvasElement,
+      width: Unit,
       height: Double
     ) = this()
     def this(
@@ -275,6 +270,13 @@ object Textures {
       key: String,
       source: HTMLImageElement,
       width: Double,
+      height: Double
+    ) = this()
+    def this(
+      manager: typings.phaser.Phaser.Textures.TextureManager,
+      key: String,
+      source: HTMLImageElement,
+      width: Unit,
       height: Double
     ) = this()
   }
@@ -290,7 +292,8 @@ object Textures {
   @JSImport("phaser", "Textures.TextureManager")
   @js.native
   class TextureManager protected ()
-    extends typings.phaser.Phaser.Textures.TextureManager {
+    extends StObject
+       with typings.phaser.Phaser.Textures.TextureManager {
     /**
       * 
       * @param game The Phaser.Game instance this Texture Manager belongs to.
@@ -308,7 +311,8 @@ object Textures {
   @JSImport("phaser", "Textures.TextureSource")
   @js.native
   class TextureSource protected ()
-    extends typings.phaser.Phaser.Textures.TextureSource {
+    extends StObject
+       with typings.phaser.Phaser.Textures.TextureSource {
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: RenderTexture) = this()
     def this(texture: typings.phaser.Phaser.Textures.Texture, source: HTMLCanvasElement) = this()
     /**
@@ -330,7 +334,7 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ) = this()
     def this(
@@ -342,7 +346,7 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ) = this()
     def this(
@@ -354,7 +358,7 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLImageElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ) = this()
     def this(
@@ -366,7 +370,7 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLVideoElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ) = this()
     def this(
@@ -378,7 +382,7 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer
     ) = this()
     def this(
@@ -390,14 +394,14 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       flipY: Boolean
     ) = this()
@@ -405,7 +409,7 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: RenderTexture,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
@@ -418,14 +422,14 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       flipY: Boolean
     ) = this()
@@ -433,7 +437,7 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLCanvasElement,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
@@ -446,14 +450,14 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLImageElement,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLImageElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       flipY: Boolean
     ) = this()
@@ -461,7 +465,7 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLImageElement,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
@@ -474,14 +478,14 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLVideoElement,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLVideoElement,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       flipY: Boolean
     ) = this()
@@ -489,7 +493,7 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: HTMLVideoElement,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
@@ -502,14 +506,14 @@ object Textures {
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
+      width: Unit,
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: integer,
       flipY: Boolean
     ) = this()
@@ -517,7 +521,7 @@ object Textures {
       texture: typings.phaser.Phaser.Textures.Texture,
       source: WebGLTexture,
       width: integer,
-      height: js.UndefOr[scala.Nothing],
+      height: Unit,
       flipY: Boolean
     ) = this()
     def this(

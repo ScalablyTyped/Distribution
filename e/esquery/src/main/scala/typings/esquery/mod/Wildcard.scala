@@ -4,26 +4,25 @@ import typings.esquery.esqueryStrings.Asterisk
 import typings.esquery.esqueryStrings.wildcard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Wildcard
-  extends SubjectSelectorAtom
+  extends StObject
+     with SubjectSelectorAtom
      with Selector
      with SubjectSelector {
   
   @JSName("type")
-  var type_Wildcard: wildcard = js.native
+  var type_Wildcard: wildcard
   
-  var value: Asterisk = js.native
+  var value: Asterisk
 }
 object Wildcard {
   
   @scala.inline
-  def apply(`type`: wildcard, value: Asterisk): Wildcard = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): Wildcard = {
+    val __obj = js.Dynamic.literal(value = "*")
+    __obj.updateDynamic("type")("wildcard")
     __obj.asInstanceOf[Wildcard]
   }
   

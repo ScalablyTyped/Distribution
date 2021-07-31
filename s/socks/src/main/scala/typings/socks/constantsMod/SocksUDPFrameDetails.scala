@@ -3,17 +3,15 @@ package typings.socks.constantsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocksUDPFrameDetails extends StObject {
   
-  var data: Buffer = js.native
+  var data: Buffer
   
-  var frameNumber: js.UndefOr[Double] = js.native
+  var frameNumber: js.UndefOr[Double] = js.undefined
   
-  var remoteHost: SocksRemoteHost = js.native
+  var remoteHost: SocksRemoteHost
 }
 object SocksUDPFrameDetails {
   

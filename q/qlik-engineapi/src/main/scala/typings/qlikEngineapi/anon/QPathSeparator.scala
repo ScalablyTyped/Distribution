@@ -2,16 +2,14 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QPathSeparator extends StObject {
   
   /**
     * Path Separator for the OS
     */
-  var qPathSeparator: String = js.native
+  var qPathSeparator: String
 }
 object QPathSeparator {
   

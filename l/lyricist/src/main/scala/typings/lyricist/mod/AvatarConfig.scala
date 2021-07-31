@@ -3,15 +3,13 @@ package typings.lyricist.mod
 import typings.lyricist.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvatarConfig extends StObject {
   
-  var bounding_box: Height = js.native
+  var bounding_box: Height
   
-  var url: String = js.native
+  var url: String
 }
 object AvatarConfig {
   

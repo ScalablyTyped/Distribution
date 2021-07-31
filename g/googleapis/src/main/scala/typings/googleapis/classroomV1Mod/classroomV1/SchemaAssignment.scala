@@ -2,20 +2,18 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional details for assignments.
   */
-@js.native
 trait SchemaAssignment extends StObject {
   
   /**
     * Drive folder where attachments from student submissions are placed. This
     * is only populated for course teachers and administrators.
     */
-  var studentWorkFolder: js.UndefOr[SchemaDriveFolder] = js.native
+  var studentWorkFolder: js.UndefOr[SchemaDriveFolder] = js.undefined
 }
 object SchemaAssignment {
   

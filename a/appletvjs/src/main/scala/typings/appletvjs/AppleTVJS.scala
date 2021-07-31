@@ -4,7 +4,6 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AppleTVJS {
@@ -42,31 +41,30 @@ object AppleTVJS {
       * For example App.onError = function (options) {}.
       * */
     def reload(): Unit = js.native
-    def reload(options: js.UndefOr[scala.Nothing], reloadData: js.Any): Unit = js.native
     def reload(options: js.Any): Unit = js.native
     def reload(options: js.Any, reloadData: js.Any): Unit = js.native
+    def reload(options: Unit, reloadData: js.Any): Unit = js.native
   }
   
-  @js.native
   trait Device extends StObject {
     
     /** The unique identifier for the app. */
-    var appIdentifier: String = js.native
+    var appIdentifier: String
     
     /** The current app version. */
-    var appVersion: String = js.native
+    var appVersion: String
     
     /** A string that identifies the device model. */
-    var model: String = js.native
+    var model: String
     
     /** The version of the product installed on the device. */
-    var productType: String = js.native
+    var productType: String
     
     /** The operating system on the device. */
-    var systemVersion: String = js.native
+    var systemVersion: String
     
     /** The UUID of the device. */
-    var vendorIdentifier: String = js.native
+    var vendorIdentifier: String
   }
   object Device {
     
@@ -107,29 +105,30 @@ object AppleTVJS {
   }
   
   @js.native
-  trait FeatureElement extends Element {
+  trait FeatureElement
+    extends StObject
+       with Element {
     
     /** Gets a feature for a given element. */
     def getFeature(feature: String): js.Any = js.native
   }
   
-  @js.native
   trait Highlight extends StObject {
     
     /** The description of the highlight. */
-    var description: String = js.native
+    var description: String
     
     /** The duration of the highlight. */
-    var duration: Double = js.native
+    var duration: Double
     
     /** The imageURL of the highlight. */
-    var imageURL: String = js.native
+    var imageURL: String
     
     /** The name of the highlight. */
-    var name: String = js.native
+    var name: String
     
     /** The starttime of the highlight. */
-    var starttime: Double = js.native
+    var starttime: Double
   }
   object Highlight {
     
@@ -159,14 +158,13 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait HighlightGroup extends StObject {
     
     /** The hightlights in the highlight group. */
-    var hightlights: js.Array[Highlight] = js.native
+    var hightlights: js.Array[Highlight]
     
     /** The name of the highlight group. */
-    var name: String = js.native
+    var name: String
   }
   object HighlightGroup {
     
@@ -190,14 +188,13 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait Interstitial extends StObject {
     
     /** The duration of the interstitial. */
-    var duration: Double = js.native
+    var duration: Double
     
     /** The starttime of the interstitial. */
-    var starttime: Double = js.native
+    var starttime: Double
   }
   object Interstitial {
     
@@ -218,17 +215,16 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait Keyboard extends StObject {
     
     /**
       * A callback function that is called when the text inside
       * of searchField or textField element changes.
       * */
-    def onTextChange(): Unit = js.native
+    def onTextChange(): Unit
     
     /** The text inside of a searchField or textField element. */
-    var text: String = js.native
+    var text: String
   }
   object Keyboard {
     
@@ -249,17 +245,16 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait MediaItem extends StObject {
     
     /** The URL path to the artwork that accompanies the media item. */
-    var artworkImageURL: String = js.native
+    var artworkImageURL: String
     
     /**
       * The domain that the rating applies to.
       * There are three valid values for this property: movie, music, and tvshow.
       * */
-    var contentRatingDomain: String = js.native
+    var contentRatingDomain: String
     
     /**
       * The rating for a video item.
@@ -267,35 +262,35 @@ object AppleTVJS {
       * used by different countries. For example, a rating value can represent a PG-13
       * rating in the United State and a MA15+ in Australia.
       * */
-    var contentRatingRanking: Double = js.native
+    var contentRatingRanking: Double
     
     /** The description for a media item. */
-    var description: String = js.native
+    var description: String
     
     /** An array of highlightGroup objects. */
-    var highlightGroups: js.Array[HighlightGroup] = js.native
+    var highlightGroups: js.Array[HighlightGroup]
     
     /** An array of interstitial objects. */
-    var interstitials: js.Array[Interstitial] = js.native
+    var interstitials: js.Array[Interstitial]
     
     /**
       * A value indicating whether the item has explicit lyrics.
       * This property is ignored if the MediaItem object type is video.
       * */
-    var isExplicit: Boolean = js.native
+    var isExplicit: Boolean
     
     /** A callback function used to load the asset identifier for an item. */
-    def loadAssetID(url: String, callback: js.Function2[/* assetID */ String, /* error */ String, Unit]): Unit = js.native
+    def loadAssetID(url: String, callback: js.Function2[/* assetID */ String, /* error */ String, Unit]): Unit
     
     /** A callback function used to load the security certificate for an item. */
-    def loadCertificate(url: String, callback: js.Function2[/* certificate */ String, /* error */ String, Unit]): Unit = js.native
+    def loadCertificate(url: String, callback: js.Function2[/* certificate */ String, /* error */ String, Unit]): Unit
     
     /** A callback function used to load the security key for an item. */
     def loadKey(
       url: String,
       requestData: js.Any,
       callback: js.Function3[/* key */ String, /* renewalDate */ String, /* error */ String, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * The number, in seconds, that a media item starts playing at.
@@ -304,22 +299,22 @@ object AppleTVJS {
       * other than 0, the player displays “Resume” instead of
       * “Play from beginning” on playback.
       * */
-    var resumeTime: Double = js.native
+    var resumeTime: Double
     
     /** The subtitle for a the media item. */
-    var subtitle: String = js.native
+    var subtitle: String
     
     /** The title of the media item. */
-    var title: String = js.native
+    var title: String
     
     /**
       * The type of media item.
       * The valid values for this attribute are audio and video.
       * */
-    var `type`: String = js.native
+    var `type`: String
     
     /** The URL path to the media item. */
-    var url: String = js.native
+    var url: String
   }
   object MediaItem {
     
@@ -404,23 +399,22 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait MenuBarDocument extends StObject {
     
     /**
       * Retrieves the document associated with the specified menu item.
       * */
-    def getDocument(menuItem: Element): Document = js.native
+    def getDocument(menuItem: Element): Document
     
     /**
       * Associates a document with a menu item.
       * */
-    def setDocument(document: Document, menuItem: Element): Unit = js.native
+    def setDocument(document: Document, menuItem: Element): Unit
     
     /**
       * Sets the focus in a menu bar to the specified menu item.
       * */
-    def setSelectedItem(menuItem: Element): Unit = js.native
+    def setSelectedItem(menuItem: Element): Unit
   }
   object MenuBarDocument {
     
@@ -599,23 +593,22 @@ object AppleTVJS {
     def timedMetadata(): Unit = js.native
   }
   
-  @js.native
   trait Playlist extends StObject {
     
     /** Returns the MediaItem located in the indicated array index. */
-    def item(index: Double): MediaItem = js.native
+    def item(index: Double): MediaItem
     
     /** The number of items in the playlist. */
-    var length: Double = js.native
+    var length: Double
     
     /** Removes a media item from the end of a playlist. */
-    def pop(): MediaItem = js.native
+    def pop(): MediaItem
     
     /** Adds a media item to the end of a playlist. */
-    def push(`object`: MediaItem): Unit = js.native
+    def push(`object`: MediaItem): Unit
     
     /** Deletes the indicated array elements and replaces them with the specified elements. */
-    def splice(index: Double, howManu: Double, `object`: MediaItem): js.Array[MediaItem] = js.native
+    def splice(index: Double, howManu: Double, `object`: MediaItem): js.Array[MediaItem]
   }
   object Playlist {
     
@@ -651,23 +644,22 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait Restrictions extends StObject {
     
     /** A boolean value that indicates if explicit media is allowed. */
-    var allowsExplicit: Boolean = js.native
+    var allowsExplicit: Boolean
     
     /** The maximum movie ranking allowed. */
-    var maxMovieRank: Double = js.native
+    var maxMovieRank: Double
     
     /** The maximum movie rating allowed for the specified country. */
-    def maxMovieRatingForCountry(countryCode: String): String = js.native
+    def maxMovieRatingForCountry(countryCode: String): String
     
     /** The maximum television show ranking allowed. */
-    var maxTVShowRank: Double = js.native
+    var maxTVShowRank: Double
     
     /** Sets the maximum television show rating allowed for the specified country. */
-    def maxTVShowRatingForCountry(countryCode: String): String = js.native
+    def maxTVShowRatingForCountry(countryCode: String): String
   }
   object Restrictions {
     
@@ -703,22 +695,21 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /** Contains the language the device displays information in. */
-    var language: String = js.native
+    var language: String
     
     /**
       * Called when changes to a device’s restriction information changes.
       */
-    def onRestrictionsChange(): Unit = js.native
+    def onRestrictionsChange(): Unit
     
     /** Contains the restriction information on the device. */
-    var restrictions: Restrictions = js.native
+    var restrictions: Restrictions
     
     /** Contains the country code used by the store on this device. */
-    var storefrontCountryCode: String = js.native
+    var storefrontCountryCode: String
   }
   object Settings {
     
@@ -750,14 +741,13 @@ object AppleTVJS {
     }
   }
   
-  @js.native
   trait TVError extends StObject {
     
     /** The error code. */
-    var code: String = js.native
+    var code: String
     
     /** A string containing the description of the error. */
-    var description: String = js.native
+    var description: String
     
     /**
       * A string containing the error domain.
@@ -767,7 +757,7 @@ object AppleTVJS {
       * NSOSStatusErrorDomain - OS X/Carbon errors
       * NSMachErrorDomain - Mach errors
       * */
-    var domain: String = js.native
+    var domain: String
     
     /**
       * The user info dictionary.
@@ -787,7 +777,7 @@ object AppleTVJS {
       * NSURLErrorFailingURLStringErrorKey
       * NSURLErrorFailingURLPeerTrustErrorKey
       * */
-    var userInfo: js.Any = js.native
+    var userInfo: js.Any
   }
   object TVError {
     

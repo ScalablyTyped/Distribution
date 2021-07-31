@@ -5,7 +5,6 @@ import typings.reactNativeCommunityCliTypes.mod.Config
 import typings.reactNativeCommunityCliTypes.mod.OptionValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runWindowsOptionsMod {
@@ -58,50 +57,49 @@ object runWindowsOptionsMod {
     def ReleaseBundle: typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.ReleaseBundle = "ReleaseBundle".asInstanceOf[typings.reactNativeWindowsCli.reactNativeWindowsCliStrings.ReleaseBundle]
   }
   
-  @js.native
   trait RunWindowsOptions_ extends StObject {
     
-    var arch: BuildArch = js.native
+    var arch: BuildArch
     
-    var autolink: Boolean = js.native
+    var autolink: Boolean
     
-    var build: Boolean = js.native
+    var build: Boolean
     
-    var buildLogDirectory: js.UndefOr[String] = js.native
+    var buildLogDirectory: js.UndefOr[String] = js.undefined
     
-    var bundle: Boolean = js.native
+    var bundle: Boolean
     
-    var deploy: Boolean = js.native
+    var deploy: Boolean
     
-    var device: js.UndefOr[Boolean] = js.native
+    var device: js.UndefOr[Boolean] = js.undefined
     
-    var directDebugging: js.UndefOr[Double] = js.native
+    var directDebugging: js.UndefOr[Double] = js.undefined
     
-    var emulator: js.UndefOr[Boolean] = js.native
+    var emulator: js.UndefOr[Boolean] = js.undefined
     
-    var info: Boolean = js.native
+    var info: Boolean
     
-    var launch: Boolean = js.native
+    var launch: Boolean
     
-    var logging: Boolean = js.native
+    var logging: Boolean
     
-    var msbuildprops: js.UndefOr[String] = js.native
+    var msbuildprops: js.UndefOr[String] = js.undefined
     
-    var packager: Boolean = js.native
+    var packager: Boolean
     
-    var proj: js.UndefOr[String] = js.native
+    var proj: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[Boolean] = js.native
+    var release: js.UndefOr[Boolean] = js.undefined
     
-    var remoteDebugging: js.UndefOr[String] = js.native
+    var remoteDebugging: js.UndefOr[String] = js.undefined
     
-    var root: String = js.native
+    var root: String
     
-    var sln: js.UndefOr[String] = js.native
+    var sln: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var telemetry: js.UndefOr[Boolean] = js.native
+    var telemetry: js.UndefOr[Boolean] = js.undefined
   }
   object RunWindowsOptions_ {
     

@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SurfaceMouseleaveEvent extends SurfaceEvent {
+trait SurfaceMouseleaveEvent
+  extends StObject
+     with SurfaceEvent {
   
-  var element: js.UndefOr[Element] = js.native
+  var element: js.UndefOr[Element] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 object SurfaceMouseleaveEvent {
   

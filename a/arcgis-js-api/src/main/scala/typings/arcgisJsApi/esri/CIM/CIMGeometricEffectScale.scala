@@ -2,33 +2,32 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectScale
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The amount of change in size of a symbol in the x-axis. The value is expressed in terms of a ratio/percentage.
     */
-  var XScaleFactor: js.UndefOr[Double] = js.native
+  var XScaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * The amount of change in size of a symbol in the y-axis. The value is expressed in terms of a ratio/percentage.
     */
-  var YScaleFactor: js.UndefOr[Double] = js.native
+  var YScaleFactor: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectScale: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale = js.native
+  var type_CIMGeometricEffectScale: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale
 }
 object CIMGeometricEffectScale {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): CIMGeometricEffectScale = {
+  def apply(): CIMGeometricEffectScale = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectScale")
     __obj.asInstanceOf[CIMGeometricEffectScale]
   }
   

@@ -2,7 +2,6 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -120,7 +119,7 @@ class OServer () extends StObject {
     */
   def send(operation: Double, options: js.Any): js.Any = js.native
   
-  def shutdown(): js.Promise[_] = js.native
+  def shutdown(): js.Promise[js.Any] = js.native
   
   /**
     * Use the database with the given name / config.

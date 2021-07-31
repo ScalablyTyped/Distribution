@@ -11,7 +11,6 @@ import typings.storybookHtml.typesMod.IStorybookSection
 import typings.storybookHtml.typesMod.StoryFnHtmlReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewMod {
@@ -55,20 +54,21 @@ object previewMod {
   @js.native
   val storiesOf: js.Function2[/* kind */ StoryKind, /* module */ NodeModule, StoryApi[StoryFnHtmlReturnType]] = js.native
   
-  @js.native
-  trait ClientApi extends ClientStoryApi[StoryFnHtmlReturnType] {
+  trait ClientApi
+    extends StObject
+       with ClientStoryApi[StoryFnHtmlReturnType] {
     
-    def clearDecorators(): Unit = js.native
+    def clearDecorators(): Unit
     
-    def configure(loader: Loadable, module: NodeModule): Unit = js.native
+    def configure(loader: Loadable, module: NodeModule): Unit
     
-    def forceReRender(): Unit = js.native
+    def forceReRender(): Unit
     
-    def getStorybook(): js.Array[IStorybookSection] = js.native
+    def getStorybook(): js.Array[IStorybookSection]
     
-    def raw(): js.Any = js.native
+    def raw(): js.Any
     
-    def setAddon(addon: js.Any): Unit = js.native
+    def setAddon(addon: js.Any): Unit
   }
   object ClientApi {
     

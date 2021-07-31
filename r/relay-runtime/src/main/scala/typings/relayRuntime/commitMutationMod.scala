@@ -14,27 +14,28 @@ import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commitMutationMod {
   
-  @JSImport("relay-runtime/lib/mutations/commitMutation", "commitMutation")
+  @JSImport("relay-runtime/lib/mutations/commitMutation", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def commitMutation[TOperation /* <: MutationParameters */](
     environment: Environment,
     // tslint:disable-next-line no-unnecessary-generics
   config: MutationConfig[TOperation]
-  ): Disposable = js.native
+  ): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("commitMutation")(environment.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Disposable]
   
-  @js.native
   trait MutationConfig[TOperation /* <: MutationParameters */] extends StObject {
     
-    var cacheConfig: js.UndefOr[CacheConfig] = js.native
+    var cacheConfig: js.UndefOr[CacheConfig] = js.undefined
     
-    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.native
+    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.undefined
     
-    var mutation: GraphQLTaggedNode = js.native
+    var mutation: GraphQLTaggedNode
     
     var onCompleted: js.UndefOr[
         (js.Function2[
@@ -42,31 +43,31 @@ object commitMutationMod {
           /* errors */ js.UndefOr[js.Array[PayloadError] | Null], 
           Unit
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.native
+    var onError: js.UndefOr[(js.Function1[/* error */ Error, Unit]) | Null] = js.undefined
     
-    var onUnsubscribe: js.UndefOr[js.Function0[js.UndefOr[Unit | Null]]] = js.native
+    var onUnsubscribe: js.UndefOr[js.Function0[js.UndefOr[Unit | Null]]] = js.undefined
     
     var optimisticResponse: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var optimisticUpdater: js.UndefOr[
         (SelectorStoreUpdater[
           /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     var updater: js.UndefOr[
         (SelectorStoreUpdater[
           /* import warning: importer.ImportType#apply Failed type conversion: TOperation['response'] */ js.Any
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var uploadables: js.UndefOr[UploadableMap | Null] = js.native
+    var uploadables: js.UndefOr[UploadableMap | Null] = js.undefined
     
-    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any = js.native
+    var variables: /* import warning: importer.ImportType#apply Failed type conversion: TOperation['variables'] */ js.Any
   }
   object MutationConfig {
     
@@ -80,7 +81,7 @@ object commitMutationMod {
     }
     
     @scala.inline
-    implicit class MutationConfigMutableBuilder[Self <: MutationConfig[_], TOperation /* <: MutationParameters */] (val x: Self with MutationConfig[TOperation]) extends AnyVal {
+    implicit class MutationConfigMutableBuilder[Self <: MutationConfig[?], TOperation /* <: MutationParameters */] (val x: Self & MutationConfig[TOperation]) extends AnyVal {
       
       @scala.inline
       def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
@@ -179,10 +180,9 @@ object commitMutationMod {
     }
   }
   
-  @js.native
   trait MutationParameters extends StObject {
     
-    val rawResponse: js.UndefOr[js.Object] = js.native
+    val rawResponse: js.UndefOr[js.Object] = js.undefined
   }
   object MutationParameters {
     

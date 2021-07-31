@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentKeyValuesFilter extends StObject {
   
   /**
     * The name of the filter key.
     */
-  var Key: js.UndefOr[DocumentKeyValuesFilterKey] = js.native
+  var Key: js.UndefOr[DocumentKeyValuesFilterKey] = js.undefined
   
   /**
     * The value for the filter key.
     */
-  var Values: js.UndefOr[DocumentKeyValuesFilterValues] = js.native
+  var Values: js.UndefOr[DocumentKeyValuesFilterValues] = js.undefined
 }
 object DocumentKeyValuesFilter {
   

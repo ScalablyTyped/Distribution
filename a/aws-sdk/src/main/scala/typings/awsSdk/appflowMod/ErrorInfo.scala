@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorInfo extends StObject {
   
   /**
     *  Specifies the error message that appears if a flow fails. 
     */
-  var executionMessage: js.UndefOr[ExecutionMessage] = js.native
+  var executionMessage: js.UndefOr[ExecutionMessage] = js.undefined
   
   /**
     *  Specifies the failure count for the attempted flow. 
     */
-  var putFailuresCount: js.UndefOr[Long] = js.native
+  var putFailuresCount: js.UndefOr[Long] = js.undefined
 }
 object ErrorInfo {
   

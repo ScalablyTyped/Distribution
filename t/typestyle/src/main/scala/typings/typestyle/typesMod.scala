@@ -105,7 +105,6 @@ import typings.typestyle.typestyleStrings.print
 import typings.typestyle.typestyleStrings.screen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -116,9 +115,9 @@ object typesMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.csstype.mod.ObsoletePropertiesFallback because var conflicts: clip. Inlined msImeMode, MozOutlineStyle, KhtmlBoxLines, MozBackgroundInlinePolicy, MozForceBrokenImageIcon, MozOutlineRadiusBottomleft, WebkitScrollSnapPointsX, MozOutline, textCombineHorizontal, MozTextDecorationLine, MozBoxFlex, MozUserInput, WebkitBoxOrdinalGroup, OAnimationDuration, KhtmlBoxOrient, boxLines, WebkitBoxFlexGroup, MozFloatEdge, WebkitBoxDirection, MozOutlineRadiusTopright, MozBoxDirection, offsetInlineStart, scrollSnapCoordinate, KhtmlBoxAlign, imeMode, MozBackgroundSize, MozOutlineRadius, fontVariantAlternates, gridGap, msScrollbarTrackColor, MozBoxAlign, scrollSnapTypeY, offsetInline, offsetBlock, WebkitBoxLines, gridRowGap, MozBoxOrient, boxOrient, KhtmlLineBreak, OAnimationDelay, MozBinding, OTransform, MozBoxPack, WebkitBoxAlign, scrollSnapDestination, OTransitionDuration, MozTextDecorationColor, offsetBlockStart, MozBorderRadiusTopright, MozBorderRadiusBottomleft, MozOpacity, boxOrdinalGroup, WebkitBoxOrient, OAnimation, OBackgroundSize, OAnimationFillMode, offsetBlockEnd, scrollSnapPointsY, WebkitBoxFlex, MozBoxShadow, KhtmlUserSelect, gridColumnGap, scrollSnapTypeX, MozTextAlignLast, MozTextDecorationStyle, OTransitionTimingFunction, boxPack, MozBorderRadius, KhtmlBoxOrdinalGroup, OBorderImage, azimuth, MozBorderRadiusTopleft, OAnimationName, MozOutlineWidth, MozBorderRadiusBottomright, MozOutlineColor, OTransition, OTransitionProperty, KhtmlBoxFlex, KhtmlBoxDirection, MozBoxOrdinalGroup, boxAlign, KhtmlBoxFlexGroup, MozBackgroundOrigin, MozOutlineRadiusTopleft, MozOutlineRadiusBottomright, boxFlex, WebkitBoxPack, boxFlexGroup, OAnimationDirection, OTransitionDelay, MozBackgroundClip, OAnimationPlayState, boxDirection, OAnimationTimingFunction, KhtmlBoxPack, scrollbarTrackColor, scrollSnapPointsX, KhtmlOpacity, offsetInlineEnd, WebkitScrollSnapPointsY, OAnimationIterationCount
-  - typings.csstype.mod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined textAnchor, shapeRendering, markerStart, strokeLinecap, strokeDashoffset, lightingColor, fillOpacity, colorRendering, floodColor, strokeWidth, strokeOpacity, strokeLinejoin, stroke, markerEnd, stopColor, clip, dominantBaseline, baselineShift, stopOpacity, fillRule, clipRule, colorInterpolation, marker, fill, glyphOrientationVertical, alignmentBaseline, vectorEffect, strokeDasharray, markerMid, strokeMiterlimit, floodOpacity */ @js.native
-  trait CSSProperties
-    extends StandardPropertiesFallback[TLength]
+  - typings.csstype.mod.SvgPropertiesFallback because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined textAnchor, shapeRendering, markerStart, strokeLinecap, strokeDashoffset, lightingColor, fillOpacity, colorRendering, floodColor, strokeWidth, strokeOpacity, strokeLinejoin, stroke, markerEnd, stopColor, clip, dominantBaseline, baselineShift, stopOpacity, fillRule, clipRule, colorInterpolation, marker, fill, glyphOrientationVertical, alignmentBaseline, vectorEffect, strokeDasharray, markerMid, strokeMiterlimit, floodOpacity */ trait CSSProperties
+    extends StObject
+       with StandardPropertiesFallback[TLength]
        with VendorPropertiesHyphenFallback[TLength] {
     
     /**
@@ -131,7 +130,7 @@ object typesMod {
       * This is needed for certain browser edge cases like placeholder styling
       **/
     @JSName("$unique")
-    var $unique: js.UndefOr[Boolean] = js.native
+    var $unique: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
@@ -142,7 +141,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.native
+    var KhtmlBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
     
     /**
       * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
@@ -153,7 +152,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.native
+    var KhtmlBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
     
     /**
       * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
@@ -164,7 +163,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var KhtmlBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
@@ -175,7 +174,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var KhtmlBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
@@ -186,7 +185,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.native
+    var KhtmlBoxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
     
     /**
       * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
@@ -197,7 +196,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var KhtmlBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
@@ -208,7 +207,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.native
+    var KhtmlBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
     
     /**
       * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
@@ -219,7 +218,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.native
+    var KhtmlBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
     
     /**
       * The **`line-break`** CSS property sets how to break lines of Chinese, Japanese, or Korean (CJK) text when working with punctuation and symbols.
@@ -230,7 +229,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlLineBreak: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.native
+    var KhtmlLineBreak: js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]] = js.undefined
     
     /**
       * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
@@ -241,7 +240,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlOpacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.native
+    var KhtmlOpacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
     
     /**
       * The `**user-select**` CSS property controls whether the user can select text. This doesn't have any effect on content loaded as chrome, except in textboxes.
@@ -252,7 +251,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var KhtmlUserSelect: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.native
+    var KhtmlUserSelect: js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]] = js.undefined
     
     /**
       * The **`background-clip`** CSS property sets whether an element's background `<color>` or `<image>` extends underneath its border.
@@ -263,7 +262,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBackgroundClip: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.native
+    var MozBackgroundClip: js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]] = js.undefined
     
     /**
       * The **`box-decoration-break`** CSS property specifies how an element's fragments should be rendered when broken across multiple lines, columns, or pages.
@@ -274,7 +273,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBackgroundInlinePolicy: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.native
+    var MozBackgroundInlinePolicy: js.UndefOr[BoxDecorationBreakProperty | js.Array[BoxDecorationBreakProperty]] = js.undefined
     
     /**
       * The **`background-origin`** CSS property sets the _background positioning area_. In other words, it sets the origin position of an image set with the `background-image` property.
@@ -285,7 +284,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBackgroundOrigin: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.native
+    var MozBackgroundOrigin: js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]] = js.undefined
     
     /**
       * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
@@ -296,7 +295,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.native
+    var MozBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
     
     /**
       * The **`-moz-binding`** CSS property is used by Mozilla-based applications to attach an XBL binding to a DOM element.
@@ -307,7 +306,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBinding: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.native
+    var MozBinding: js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]] = js.undefined
     
     /**
       * The **`border-radius`** CSS property rounds the corners of an element's outer border edge. You can set a single radius to make circular corners, or two radii to make elliptical corners.
@@ -316,7 +315,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBorderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.native
+    var MozBorderRadius: js.UndefOr[BorderRadiusProperty[TLength] | js.Array[BorderRadiusProperty[TLength]]] = js.undefined
     
     /**
       * The **`border-bottom-left-radius`** CSS property rounds the bottom-left corner of an element.
@@ -329,7 +328,7 @@ object typesMod {
       */
     var MozBorderRadiusBottomleft: js.UndefOr[
         BorderBottomLeftRadiusProperty[TLength] | js.Array[BorderBottomLeftRadiusProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`border-bottom-right-radius`** CSS property rounds the bottom-right corner of an element.
@@ -342,7 +341,7 @@ object typesMod {
       */
     var MozBorderRadiusBottomright: js.UndefOr[
         BorderBottomRightRadiusProperty[TLength] | js.Array[BorderBottomRightRadiusProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`border-top-left-radius`** CSS property rounds the top-left corner of an element.
@@ -355,7 +354,7 @@ object typesMod {
       */
     var MozBorderRadiusTopleft: js.UndefOr[
         BorderTopLeftRadiusProperty[TLength] | js.Array[BorderTopLeftRadiusProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`border-top-right-radius`** CSS property rounds the top-right corner of an element.
@@ -368,7 +367,7 @@ object typesMod {
       */
     var MozBorderRadiusTopright: js.UndefOr[
         BorderTopRightRadiusProperty[TLength] | js.Array[BorderTopRightRadiusProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
@@ -379,7 +378,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.native
+    var MozBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
     
     /**
       * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
@@ -390,7 +389,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.native
+    var MozBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
     
     /**
       * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
@@ -401,7 +400,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var MozBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
@@ -412,7 +411,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var MozBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
@@ -423,7 +422,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.native
+    var MozBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
     
     /**
       * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
@@ -434,7 +433,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.native
+    var MozBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
     
     /**
       * The **`box-shadow`** CSS property adds shadow effects around an element's frame. You can set multiple effects separated by commas. A box shadow is described by X and Y offsets relative to the element, blur and spread radii, and color.
@@ -445,7 +444,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozBoxShadow: js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]] = js.native
+    var MozBoxShadow: js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]] = js.undefined
     
     /**
       * The non-standard **`-moz-float-edge`** CSS property specifies whether the height and width properties of the element include the margin, border, or padding thickness.
@@ -456,7 +455,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]] = js.native
+    var MozFloatEdge: js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]] = js.undefined
     
     /**
       * The **`-moz-force-broken-image-icon`** extended CSS property can be used to force the broken image icon to be shown even when a broken image has an `alt` attribute.
@@ -467,7 +466,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var MozForceBrokenImageIcon: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`opacity`** CSS property sets the transparency of an element or the degree to which content behind an element is visible.
@@ -478,7 +477,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOpacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.native
+    var MozOpacity: js.UndefOr[OpacityProperty | js.Array[OpacityProperty]] = js.undefined
     
     /**
       * The **`outline`** CSS property is a shorthand to set various outline properties in a single declaration: `outline-style`, `outline-width`, and `outline-color`.
@@ -487,7 +486,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOutline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.native
+    var MozOutline: js.UndefOr[OutlineProperty[TLength] | js.Array[OutlineProperty[TLength]]] = js.undefined
     
     /**
       * The **`outline-color`** CSS property sets the color of an element's outline.
@@ -498,7 +497,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOutlineColor: js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]] = js.native
+    var MozOutlineColor: js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]] = js.undefined
     
     /**
       * In Mozilla applications like Firefox, the **`-moz-outline-radius`** CSS property can be used to give an element's `outline` rounded corners.
@@ -507,7 +506,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOutlineRadius: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.native
+    var MozOutlineRadius: js.UndefOr[MozOutlineRadiusProperty[TLength] | js.Array[MozOutlineRadiusProperty[TLength]]] = js.undefined
     
     /**
       * In Mozilla applications, the **`-moz-outline-radius-bottomleft`** CSS property can be used to round the bottom-left corner of an element's `outline`.
@@ -520,7 +519,7 @@ object typesMod {
       */
     var MozOutlineRadiusBottomleft: js.UndefOr[
         MozOutlineRadiusBottomleftProperty[TLength] | js.Array[MozOutlineRadiusBottomleftProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * In Mozilla applications, the **`-moz-outline-radius-bottomright`** CSS property can be used to round the bottom-right corner of an element's `outline`.
@@ -533,7 +532,7 @@ object typesMod {
       */
     var MozOutlineRadiusBottomright: js.UndefOr[
         MozOutlineRadiusBottomrightProperty[TLength] | js.Array[MozOutlineRadiusBottomrightProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * In Mozilla applications, the **`-moz-outline-radius-topleft`** CSS property can be used to round the top-left corner of an element's `outline`.
@@ -546,7 +545,7 @@ object typesMod {
       */
     var MozOutlineRadiusTopleft: js.UndefOr[
         MozOutlineRadiusTopleftProperty[TLength] | js.Array[MozOutlineRadiusTopleftProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * In Mozilla applications, the **`-moz-outline-radius-topright`** CSS property can be used to round the top-right corner of an element's `outline`.
@@ -559,7 +558,7 @@ object typesMod {
       */
     var MozOutlineRadiusTopright: js.UndefOr[
         MozOutlineRadiusToprightProperty[TLength] | js.Array[MozOutlineRadiusToprightProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`outline-style`** CSS property sets the style of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
@@ -570,7 +569,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOutlineStyle: js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]] = js.native
+    var MozOutlineStyle: js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]] = js.undefined
     
     /**
       * The **`outline-width`** CSS property sets the thickness of an element's outline. An outline is a line that is drawn around an element, outside the `border`.
@@ -581,7 +580,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozOutlineWidth: js.UndefOr[OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]]] = js.native
+    var MozOutlineWidth: js.UndefOr[OutlineWidthProperty[TLength] | js.Array[OutlineWidthProperty[TLength]]] = js.undefined
     
     /**
       * The **`text-align-last`** CSS property sets how the last line of a block or a line, right before a forced line break, is aligned.
@@ -592,7 +591,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozTextAlignLast: js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]] = js.native
+    var MozTextAlignLast: js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]] = js.undefined
     
     /**
       * The **`text-decoration-color`** CSS property sets the color of decorations added to text by `text-decoration-line`.
@@ -603,7 +602,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozTextDecorationColor: js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]] = js.native
+    var MozTextDecorationColor: js.UndefOr[TextDecorationColorProperty | js.Array[TextDecorationColorProperty]] = js.undefined
     
     /**
       * The **`text-decoration-line`** CSS property sets the kind of decoration that is used on text in an element, such as an underline or overline.
@@ -614,7 +613,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozTextDecorationLine: js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]] = js.native
+    var MozTextDecorationLine: js.UndefOr[TextDecorationLineProperty | js.Array[TextDecorationLineProperty]] = js.undefined
     
     /**
       * The **`text-decoration-style`** CSS property sets the style of the lines specified by `text-decoration-line`. The style applies to all lines that are set with `text-decoration-line`.
@@ -625,7 +624,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.native
+    var MozTextDecorationStyle: js.UndefOr[TextDecorationStyleProperty | js.Array[TextDecorationStyleProperty]] = js.undefined
     
     /**
       * In Mozilla applications, **`-moz-user-input`** determines if an element will accept user input.
@@ -636,7 +635,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var MozUserInput: js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]] = js.native
+    var MozUserInput: js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]] = js.undefined
     
     /**
       * The **`animation`** shorthand CSS property sets an animated transition between styles. It is a shorthand for `animation-name`, `animation-duration`, `animation-timing-function`, `animation-delay`, `animation-iteration-count`, `animation-direction`, `animation-fill-mode`, and `animation-play-state`.
@@ -645,7 +644,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.native
+    var OAnimation: js.UndefOr[AnimationProperty | js.Array[AnimationProperty]] = js.undefined
     
     /**
       * The **`animation-delay`** CSS property sets when an animation starts. The animation can start later, immediately from its beginning, or immediately and partway through the animation.
@@ -656,7 +655,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.native
+    var OAnimationDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
     
     /**
       * The **`animation-direction`** CSS property sets whether an animation should play forwards, backwards, or alternating back and forth.
@@ -667,7 +666,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationDirection: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.native
+    var OAnimationDirection: js.UndefOr[AnimationDirectionProperty | js.Array[AnimationDirectionProperty]] = js.undefined
     
     /**
       * The **`animation-duration`** CSS property sets the length of time that an animation takes to complete one cycle.
@@ -678,7 +677,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.native
+    var OAnimationDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
     
     /**
       * The **`animation-fill-mode`** CSS property sets how a CSS animation applies styles to its target before and after its execution.
@@ -689,7 +688,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationFillMode: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.native
+    var OAnimationFillMode: js.UndefOr[AnimationFillModeProperty | js.Array[AnimationFillModeProperty]] = js.undefined
     
     /**
       * The **`animation-iteration-count`** CSS property sets the number of times an animation cycle should be played before stopping.
@@ -700,7 +699,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.native
+    var OAnimationIterationCount: js.UndefOr[AnimationIterationCountProperty | js.Array[AnimationIterationCountProperty]] = js.undefined
     
     /**
       * The **`animation-name`** CSS property sets one or more animations to apply to an element. Each name is an `@keyframes` at-rule that sets the property values for the animation sequence.
@@ -711,7 +710,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationName: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.native
+    var OAnimationName: js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]] = js.undefined
     
     /**
       * The **`animation-play-state`** CSS property sets whether an animation is running or paused.
@@ -722,7 +721,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationPlayState: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.native
+    var OAnimationPlayState: js.UndefOr[AnimationPlayStateProperty | js.Array[AnimationPlayStateProperty]] = js.undefined
     
     /**
       * The `**animation-timing-function**` CSS property sets how an animation progresses through the duration of each cycle.
@@ -733,7 +732,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.native
+    var OAnimationTimingFunction: js.UndefOr[AnimationTimingFunctionProperty | js.Array[AnimationTimingFunctionProperty]] = js.undefined
     
     /**
       * The **`background-size`** CSS property sets the size of the element's background image. The image can be left to its natural size, stretched, or constrained to fit the available space.
@@ -744,7 +743,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.native
+    var OBackgroundSize: js.UndefOr[BackgroundSizeProperty[TLength] | js.Array[BackgroundSizeProperty[TLength]]] = js.undefined
     
     /**
       * The **`border-image`** CSS property draws an image in place of an element's `border-style`.
@@ -753,7 +752,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OBorderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.native
+    var OBorderImage: js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]] = js.undefined
     
     /**
       * The **`transform`** CSS property lets you rotate, scale, skew, or translate an element. It modifies the coordinate space of the CSS visual formatting model.
@@ -764,7 +763,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransform: js.UndefOr[TransformProperty | js.Array[TransformProperty]] = js.native
+    var OTransform: js.UndefOr[TransformProperty | js.Array[TransformProperty]] = js.undefined
     
     /**
       * The **`transition`** CSS property is a shorthand property for `transition-property`, `transition-duration`, `transition-timing-function`, and `transition-delay`.
@@ -773,7 +772,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.native
+    var OTransition: js.UndefOr[TransitionProperty | js.Array[TransitionProperty]] = js.undefined
     
     /**
       * The **`transition-delay`** CSS property specifies the duration to wait before starting a property's transition effect when its value changes.
@@ -784,7 +783,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.native
+    var OTransitionDelay: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
     
     /**
       * The **`transition-duration`** CSS property sets the length of time a transition animation should take to complete. By default, the value is `0s`, meaning that no animation will occur.
@@ -795,7 +794,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.native
+    var OTransitionDuration: js.UndefOr[GlobalsString | js.Array[GlobalsString]] = js.undefined
     
     /**
       * The **`transition-property`** CSS property sets the CSS properties to which a transition effect should be applied.
@@ -806,7 +805,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.native
+    var OTransitionProperty: js.UndefOr[TransitionPropertyProperty | js.Array[TransitionPropertyProperty]] = js.undefined
     
     /**
       * The **`transition-timing-function`** CSS property sets how intermediate values are calculated for CSS properties being affected by a transition effect.
@@ -817,7 +816,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var OTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.native
+    var OTransitionTimingFunction: js.UndefOr[TransitionTimingFunctionProperty | js.Array[TransitionTimingFunctionProperty]] = js.undefined
     
     /**
       * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
@@ -828,7 +827,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.native
+    var WebkitBoxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
     
     /**
       * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
@@ -839,7 +838,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.native
+    var WebkitBoxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
     
     /**
       * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
@@ -850,7 +849,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var WebkitBoxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
@@ -861,7 +860,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var WebkitBoxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
@@ -872,7 +871,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.native
+    var WebkitBoxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
     
     /**
       * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
@@ -883,7 +882,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var WebkitBoxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
@@ -894,7 +893,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.native
+    var WebkitBoxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
     
     /**
       * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
@@ -905,7 +904,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.native
+    var WebkitBoxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
     
     /**
       * The **`scroll-snap-points-x`** CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.
@@ -916,7 +915,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitScrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.native
+    var WebkitScrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.undefined
     
     /**
       * The **`scroll-snap-points-y`** CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.
@@ -927,9 +926,9 @@ object typesMod {
       *
       * @deprecated
       */
-    var WebkitScrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.native
+    var WebkitScrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.undefined
     
-    var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.native
+    var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty | js.Array[AlignmentBaselineProperty]] = js.undefined
     
     /**
       * In combination with `elevation`, the **`azimuth`** CSS property enables different audio sources to be positioned spatially for aural presentation. This is important in that it provides a natural way to tell several voices apart, as each can be positioned to originate at a different location on the sound stage. Stereo output produce a lateral sound stage, while binaural headphones and multi-speaker setups allow for a fully three-dimensional stage.
@@ -940,9 +939,9 @@ object typesMod {
       *
       * @deprecated
       */
-    var azimuth: js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]] = js.native
+    var azimuth: js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]] = js.undefined
     
-    var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.native
+    var baselineShift: js.UndefOr[BaselineShiftProperty[TLength] | js.Array[BaselineShiftProperty[TLength]]] = js.undefined
     
     /**
       * The **`box-align`** CSS property specifies how an element aligns its contents across its layout in a perpendicular direction. The effect of the property is only visible if there is extra space in the box.
@@ -953,7 +952,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.native
+    var boxAlign: js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]] = js.undefined
     
     /**
       * The **`box-direction`** CSS property specifies whether a box lays out its contents normally (from the top or left edge), or in reverse (from the bottom or right edge).
@@ -964,7 +963,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.native
+    var boxDirection: js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]] = js.undefined
     
     /**
       * The **`-moz-box-flex`** and **`-webkit-box-flex`** CSS properties specify how a `-moz-box` or `-webkit-box` grows to fill the box that contains it, in the direction of the containing box's layout.
@@ -975,7 +974,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var boxFlex: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-flex-group`** CSS property assigns the flexbox's child elements to a flex group.
@@ -986,7 +985,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var boxFlexGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-lines`** CSS property determines whether the box may have a single or multiple lines (rows for horizontally oriented boxes, columns for vertically oriented boxes).
@@ -997,7 +996,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.native
+    var boxLines: js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]] = js.undefined
     
     /**
       * The **`box-ordinal-group`** CSS property assigns the flexbox's child elements to an ordinal group.
@@ -1008,7 +1007,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var boxOrdinalGroup: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`box-orient`** CSS property specifies whether an element lays out its contents horizontally or vertically.
@@ -1019,7 +1018,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.native
+    var boxOrient: js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]] = js.undefined
     
     /**
       * The **`-moz-box-pack`** and **`-webkit-box-pack`** CSS properties specify how a `-moz-box` or `-webkit-box` packs its contents in the direction of its layout. The effect of this is only visible if there is extra space in the box.
@@ -1030,27 +1029,27 @@ object typesMod {
       *
       * @deprecated
       */
-    var boxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.native
+    var boxPack: js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]] = js.undefined
     
-    var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.native
+    var clip: js.UndefOr[ClipProperty | js.Array[ClipProperty]] = js.undefined
     
-    var clipRule: js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]] = js.native
+    var clipRule: js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]] = js.undefined
     
-    var colorInterpolation: js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]] = js.native
+    var colorInterpolation: js.UndefOr[ColorInterpolationProperty | js.Array[ColorInterpolationProperty]] = js.undefined
     
-    var colorRendering: js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]] = js.native
+    var colorRendering: js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]] = js.undefined
     
-    var dominantBaseline: js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]] = js.native
+    var dominantBaseline: js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]] = js.undefined
     
-    var fill: js.UndefOr[FillProperty | js.Array[FillProperty]] = js.native
+    var fill: js.UndefOr[FillProperty | js.Array[FillProperty]] = js.undefined
     
-    var fillOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var fillOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
-    var fillRule: js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]] = js.native
+    var fillRule: js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]] = js.undefined
     
-    var floodColor: js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]] = js.native
+    var floodColor: js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]] = js.undefined
     
-    var floodOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var floodOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
     /**
       * The **`font-variant-alternates`** CSS property controls the usage of alternate glyphs. These alternate glyphs may be referenced by alternative names defined in `@font-feature-values`.
@@ -1061,9 +1060,9 @@ object typesMod {
       *
       * @deprecated
       */
-    var fontVariantAlternates: js.UndefOr[FontVariantAlternatesProperty | js.Array[FontVariantAlternatesProperty]] = js.native
+    var fontVariantAlternates: js.UndefOr[FontVariantAlternatesProperty | js.Array[FontVariantAlternatesProperty]] = js.undefined
     
-    var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]] = js.native
+    var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty | js.Array[GlyphOrientationVerticalProperty]] = js.undefined
     
     /**
       * The **`column-gap`** CSS property sets the size of the gap (gutter) between an element's columns.
@@ -1074,7 +1073,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var gridColumnGap: js.UndefOr[GridColumnGapProperty[TLength] | js.Array[GridColumnGapProperty[TLength]]] = js.native
+    var gridColumnGap: js.UndefOr[GridColumnGapProperty[TLength] | js.Array[GridColumnGapProperty[TLength]]] = js.undefined
     
     /**
       * The **`gap`** CSS property sets the gaps (gutters) between rows and columns. It is a shorthand for `row-gap` and `column-gap`.
@@ -1083,7 +1082,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var gridGap: js.UndefOr[GridGapProperty[TLength] | js.Array[GridGapProperty[TLength]]] = js.native
+    var gridGap: js.UndefOr[GridGapProperty[TLength] | js.Array[GridGapProperty[TLength]]] = js.undefined
     
     /**
       * The **`row-gap`** CSS property sets the size of the gap (gutter) between an element's grid rows.
@@ -1094,7 +1093,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var gridRowGap: js.UndefOr[GridRowGapProperty[TLength] | js.Array[GridRowGapProperty[TLength]]] = js.native
+    var gridRowGap: js.UndefOr[GridRowGapProperty[TLength] | js.Array[GridRowGapProperty[TLength]]] = js.undefined
     
     /**
       * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
@@ -1105,17 +1104,17 @@ object typesMod {
       *
       * @deprecated
       */
-    var imeMode: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.native
+    var imeMode: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.undefined
     
-    var lightingColor: js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]] = js.native
+    var lightingColor: js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]] = js.undefined
     
-    var marker: js.UndefOr[MarkerProperty | js.Array[MarkerProperty]] = js.native
+    var marker: js.UndefOr[MarkerProperty | js.Array[MarkerProperty]] = js.undefined
     
-    var markerEnd: js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]] = js.native
+    var markerEnd: js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]] = js.undefined
     
-    var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.native
+    var markerMid: js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]] = js.undefined
     
-    var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.native
+    var markerStart: js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]] = js.undefined
     
     /**
       * The **`ime-mode`** CSS property controls the state of the input method editor (IME) for text fields. This property is obsolete.
@@ -1126,7 +1125,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var msImeMode: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.native
+    var msImeMode: js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]] = js.undefined
     
     /**
       * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
@@ -1137,7 +1136,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.native
+    var msScrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
     
     /**
       * The **`inset-block`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1148,7 +1147,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetBlock: js.UndefOr[InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]]] = js.native
+    var offsetBlock: js.UndefOr[InsetBlockProperty[TLength] | js.Array[InsetBlockProperty[TLength]]] = js.undefined
     
     /**
       * The **`inset-block-end`** CSS property defines the logical block end offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1159,7 +1158,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetBlockEnd: js.UndefOr[InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]]] = js.native
+    var offsetBlockEnd: js.UndefOr[InsetBlockEndProperty[TLength] | js.Array[InsetBlockEndProperty[TLength]]] = js.undefined
     
     /**
       * The **`inset-block-start`** CSS property defines the logical block start offset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1170,7 +1169,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetBlockStart: js.UndefOr[InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]]] = js.native
+    var offsetBlockStart: js.UndefOr[InsetBlockStartProperty[TLength] | js.Array[InsetBlockStartProperty[TLength]]] = js.undefined
     
     /**
       * The **`inset-inline`** CSS property defines the logical block start and end offsets of an element, which maps to physical offsets depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top` and `bottom`, or `right` and `left` properties depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1181,7 +1180,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetInline: js.UndefOr[InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]]] = js.native
+    var offsetInline: js.UndefOr[InsetInlineProperty[TLength] | js.Array[InsetInlineProperty[TLength]]] = js.undefined
     
     /**
       * The **`inset-inline-end`** CSS property defines the logical inline end inset of an element, which maps to a physical inset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1192,7 +1191,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetInlineEnd: js.UndefOr[InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]]] = js.native
+    var offsetInlineEnd: js.UndefOr[InsetInlineEndProperty[TLength] | js.Array[InsetInlineEndProperty[TLength]]] = js.undefined
     
     /**
       * The **`inset-inline-start`** CSS property defines the logical inline start inset of an element, which maps to a physical offset depending on the element's writing mode, directionality, and text orientation. It corresponds to the `top`, `right`, `bottom`, or `left` property depending on the values defined for `writing-mode`, `direction`, and `text-orientation`.
@@ -1203,7 +1202,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var offsetInlineStart: js.UndefOr[InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]]] = js.native
+    var offsetInlineStart: js.UndefOr[InsetInlineStartProperty[TLength] | js.Array[InsetInlineStartProperty[TLength]]] = js.undefined
     
     /**
       * The **`scroll-snap-coordinate`** CSS property defines the x and y coordinate positions within an element that will align with its nearest ancestor scroll container's `scroll-snap-destination` for each respective axis.
@@ -1216,7 +1215,7 @@ object typesMod {
       */
     var scrollSnapCoordinate: js.UndefOr[
         ScrollSnapCoordinateProperty[TLength] | js.Array[ScrollSnapCoordinateProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`scroll-snap-destination`** CSS property defines the position in x and y coordinates within the scroll container's visual viewport which element snap points align with.
@@ -1229,7 +1228,7 @@ object typesMod {
       */
     var scrollSnapDestination: js.UndefOr[
         ScrollSnapDestinationProperty[TLength] | js.Array[ScrollSnapDestinationProperty[TLength]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The **`scroll-snap-points-x`** CSS property defines the horizontal positioning of snap points within the content of the scroll container they are applied to.
@@ -1240,7 +1239,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var scrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.native
+    var scrollSnapPointsX: js.UndefOr[ScrollSnapPointsXProperty | js.Array[ScrollSnapPointsXProperty]] = js.undefined
     
     /**
       * The **`scroll-snap-points-y`** CSS property defines the vertical positioning of snap points within the content of the scroll container they are applied to.
@@ -1251,7 +1250,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var scrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.native
+    var scrollSnapPointsY: js.UndefOr[ScrollSnapPointsYProperty | js.Array[ScrollSnapPointsYProperty]] = js.undefined
     
     /**
       * The **`scroll-snap-type-x`** CSS property defines how strictly snap points are enforced on the horizontal axis of the scroll container in case there is one.
@@ -1262,7 +1261,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty]] = js.native
+    var scrollSnapTypeX: js.UndefOr[ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty]] = js.undefined
     
     /**
       * The **`scroll-snap-type-y`** CSS property defines how strictly snap points are enforced on the vertical axis of the scroll container in case there is one.
@@ -1273,7 +1272,7 @@ object typesMod {
       *
       * @deprecated
       */
-    var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]] = js.native
+    var scrollSnapTypeY: js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]] = js.undefined
     
     /**
       * The **`-ms-scrollbar-track-color`** CSS property is a Microsoft extension that specifies the color of the track element of a scrollbar.
@@ -1284,31 +1283,31 @@ object typesMod {
       *
       * @deprecated
       */
-    var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.native
+    var scrollbarTrackColor: js.UndefOr[MsScrollbarTrackColorProperty | js.Array[MsScrollbarTrackColorProperty]] = js.undefined
     
-    var shapeRendering: js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]] = js.native
+    var shapeRendering: js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]] = js.undefined
     
-    var stopColor: js.UndefOr[StopColorProperty | js.Array[StopColorProperty]] = js.native
+    var stopColor: js.UndefOr[StopColorProperty | js.Array[StopColorProperty]] = js.undefined
     
-    var stopOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var stopOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
-    var stroke: js.UndefOr[StrokeProperty | js.Array[StrokeProperty]] = js.native
+    var stroke: js.UndefOr[StrokeProperty | js.Array[StrokeProperty]] = js.undefined
     
-    var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]] = js.native
+    var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[TLength] | js.Array[StrokeDasharrayProperty[TLength]]] = js.undefined
     
-    var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]] = js.native
+    var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[TLength] | js.Array[StrokeDashoffsetProperty[TLength]]] = js.undefined
     
-    var strokeLinecap: js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]] = js.native
+    var strokeLinecap: js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]] = js.undefined
     
-    var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]] = js.native
+    var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]] = js.undefined
     
-    var strokeMiterlimit: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var strokeMiterlimit: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
-    var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.native
+    var strokeOpacity: js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]] = js.undefined
     
-    var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.native
+    var strokeWidth: js.UndefOr[StrokeWidthProperty[TLength] | js.Array[StrokeWidthProperty[TLength]]] = js.undefined
     
-    var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.native
+    var textAnchor: js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]] = js.undefined
     
     /**
       * The **`text-combine-upright`** CSS property sets the combination of characters into the space of a single character. If the combined text is wider than 1em, the user agent must fit the contents within 1em. The resulting composition is treated as a single upright glyph for layout and decoration. This property only has an effect in vertical writing modes.
@@ -1319,9 +1318,9 @@ object typesMod {
       *
       * @deprecated
       */
-    var textCombineHorizontal: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.native
+    var textCombineHorizontal: js.UndefOr[TextCombineUprightProperty | js.Array[TextCombineUprightProperty]] = js.undefined
     
-    var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.native
+    var vectorEffect: js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]] = js.undefined
   }
   object CSSProperties {
     
@@ -2551,12 +2550,12 @@ object typesMod {
   
   type FontFace = typings.csstype.mod.FontFace
   
-  @js.native
   trait KeyFrames
-    extends /* key */ StringDictionary[js.UndefOr[CSSProperties | String]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[CSSProperties | String]] {
     
     @JSName("$debugName")
-    var $debugName: js.UndefOr[String] = js.native
+    var $debugName: js.UndefOr[String] = js.undefined
   }
   object KeyFrames {
     
@@ -2577,20 +2576,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait MediaQuery extends StObject {
     
-    var maxHeight: js.UndefOr[Double | String] = js.native
+    var maxHeight: js.UndefOr[Double | String] = js.undefined
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minHeight: js.UndefOr[Double | String] = js.native
+    var minHeight: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
-    var orientation: js.UndefOr[landscape | portrait] = js.native
+    var orientation: js.UndefOr[landscape | portrait] = js.undefined
     
-    var `type`: js.UndefOr[screen | print | all] = js.native
+    var `type`: js.UndefOr[screen | print | all] = js.undefined
   }
   object MediaQuery {
     
@@ -2641,18 +2639,19 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait NestedCSSProperties extends CSSProperties {
+  trait NestedCSSProperties
+    extends StObject
+       with CSSProperties {
     
     /**
       * A debug only (stripped in process.env.NODE_ENV !== 'production') name
       * Helps you figure out where the class is coming from if you care
       **/
     @JSName("$debugName")
-    var $debugName: js.UndefOr[String] = js.native
+    var $debugName: js.UndefOr[String] = js.undefined
     
     @JSName("$nest")
-    var $nest: js.UndefOr[NestedCSSSelectors] = js.native
+    var $nest: js.UndefOr[NestedCSSSelectors] = js.undefined
   }
   object NestedCSSProperties {
     
@@ -2679,9 +2678,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NestedCSSSelectors
-    extends /**
+    extends StObject
+       with /**
     * Also cater for any other nested query you want
     */
   /* selector */ StringDictionary[js.UndefOr[NestedCSSProperties]] {
@@ -2690,151 +2689,151 @@ object typesMod {
       * Desktop first media query example
       **/
     @JSName("@media screen and (max-width: 700px)")
-    var `@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis`: js.UndefOr[NestedCSSProperties] = js.native
+    var `@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     /**
       * Mobile first media query example
       **/
     @JSName("@media screen and (min-width: 700px)")
-    var `@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis`: js.UndefOr[NestedCSSProperties] = js.native
+    var `@media screen and Leftparenthesismin-widthColon 700pxRightparenthesis`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     /**
       * Pseudo-elements
       * https://developer.mozilla.org/en/docs/Web/CSS/Pseudo-elements
       */
     @JSName("&::after")
-    var AmpersandColonColonafter: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonafter: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::backdrop")
-    var AmpersandColonColonbackdrop: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonbackdrop: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::before")
-    var AmpersandColonColonbefore: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonbefore: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::first-letter")
-    var `AmpersandColonColonfirst-letter`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonColonfirst-letter`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::first-line")
-    var `AmpersandColonColonfirst-line`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonColonfirst-line`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::grammar-error")
-    var `AmpersandColonColongrammar-error`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonColongrammar-error`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::marker")
-    var AmpersandColonColonmarker: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonmarker: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::placeholder")
-    var AmpersandColonColonplaceholder: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonplaceholder: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::selection")
-    var AmpersandColonColonselection: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonColonselection: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&::spelling-error")
-    var `AmpersandColonColonspelling-error`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonColonspelling-error`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     /** State selector */
     @JSName("&:active")
-    var AmpersandColonactive: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonactive: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:any")
-    var AmpersandColonany: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonany: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:checked")
-    var AmpersandColonchecked: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonchecked: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:default")
-    var AmpersandColondefault: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColondefault: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:disabled")
-    var AmpersandColondisabled: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColondisabled: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:empty")
-    var AmpersandColonempty: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonempty: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:enabled")
-    var AmpersandColonenabled: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonenabled: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:first")
-    var AmpersandColonfirst: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonfirst: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:first-child")
-    var `AmpersandColonfirst-child`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonfirst-child`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:first-of-type")
-    var `AmpersandColonfirst-of-type`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonfirst-of-type`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:focus")
-    var AmpersandColonfocus: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonfocus: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:fullscreen")
-    var AmpersandColonfullscreen: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonfullscreen: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:hover")
-    var AmpersandColonhover: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonhover: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:in-range")
-    var `AmpersandColonin-range`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonin-range`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:indeterminate")
-    var AmpersandColonindeterminate: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonindeterminate: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:invalid")
-    var AmpersandColoninvalid: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColoninvalid: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:last-child")
-    var `AmpersandColonlast-child`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonlast-child`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:last-of-type")
-    var `AmpersandColonlast-of-type`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonlast-of-type`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:left")
-    var AmpersandColonleft: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonleft: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:link")
-    var AmpersandColonlink: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonlink: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:only-child")
-    var `AmpersandColononly-child`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColononly-child`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:only-of-type")
-    var `AmpersandColononly-of-type`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColononly-of-type`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:optional")
-    var AmpersandColonoptional: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonoptional: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:out-of-range")
-    var `AmpersandColonout-of-range`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonout-of-range`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:read-only")
-    var `AmpersandColonread-only`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonread-only`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:read-write")
-    var `AmpersandColonread-write`: js.UndefOr[NestedCSSProperties] = js.native
+    var `AmpersandColonread-write`: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:required")
-    var AmpersandColonrequired: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonrequired: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:right")
-    var AmpersandColonright: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonright: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:root")
-    var AmpersandColonroot: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonroot: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:scope")
-    var AmpersandColonscope: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonscope: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:target")
-    var AmpersandColontarget: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColontarget: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:valid")
-    var AmpersandColonvalid: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonvalid: js.UndefOr[NestedCSSProperties] = js.undefined
     
     @JSName("&:visited")
-    var AmpersandColonvisited: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandColonvisited: js.UndefOr[NestedCSSProperties] = js.undefined
     
     /** Children */
     @JSName("&>*")
-    var AmpersandGreaterthansignAsterisk: js.UndefOr[NestedCSSProperties] = js.native
+    var AmpersandGreaterthansignAsterisk: js.UndefOr[NestedCSSProperties] = js.undefined
   }
   object NestedCSSSelectors {
     

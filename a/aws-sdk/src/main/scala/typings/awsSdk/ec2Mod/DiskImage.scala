@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskImage extends StObject {
   
   /**
     * A description of the disk image.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the disk image.
     */
-  var Image: js.UndefOr[DiskImageDetail] = js.native
+  var Image: js.UndefOr[DiskImageDetail] = js.undefined
   
   /**
     * Information about the volume.
     */
-  var Volume: js.UndefOr[VolumeDetail] = js.native
+  var Volume: js.UndefOr[VolumeDetail] = js.undefined
 }
 object DiskImage {
   

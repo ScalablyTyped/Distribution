@@ -3,11 +3,11 @@ package typings.winrt.Windows.ApplicationModel
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SuspendingOperation extends ISuspendingOperation
+trait SuspendingOperation
+  extends StObject
+     with ISuspendingOperation
 object SuspendingOperation {
   
   @scala.inline

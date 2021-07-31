@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterNatSubnetworkToNat extends StObject {
   
   /** URL for the subnetwork resource that will use NAT. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the secondary ranges of the Subnetwork that are allowed to use NAT. This can be populated only if "LIST_OF_SECONDARY_IP_RANGES" is one of the values in
     * source_ip_ranges_to_nat.
     */
-  var secondaryIpRangeNames: js.UndefOr[js.Array[String]] = js.native
+  var secondaryIpRangeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify the options for NAT ranges in the Subnetwork. All options of a single value are valid except NAT_IP_RANGE_OPTION_UNSPECIFIED. The only valid option with multiple values is:
     * ["PRIMARY_IP_RANGE", "LIST_OF_SECONDARY_IP_RANGES"] Default: [ALL_IP_RANGES]
     */
-  var sourceIpRangesToNat: js.UndefOr[js.Array[String]] = js.native
+  var sourceIpRangesToNat: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RouterNatSubnetworkToNat {
   

@@ -7,29 +7,29 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesPutSettings[T] extends Generic {
+trait IndicesPutSettings[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var flat_settings: js.UndefOr[Boolean] = js.native
+  var flat_settings: js.UndefOr[Boolean] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var preserve_existing: js.UndefOr[Boolean] = js.native
+  var preserve_existing: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object IndicesPutSettings {
   
@@ -40,7 +40,7 @@ object IndicesPutSettings {
   }
   
   @scala.inline
-  implicit class IndicesPutSettingsMutableBuilder[Self <: IndicesPutSettings[_], T] (val x: Self with IndicesPutSettings[T]) extends AnyVal {
+  implicit class IndicesPutSettingsMutableBuilder[Self <: IndicesPutSettings[?], T] (val x: Self & IndicesPutSettings[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

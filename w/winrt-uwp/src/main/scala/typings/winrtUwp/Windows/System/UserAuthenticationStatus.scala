@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object UserAuthenticationStatus extends StObject {
   
   /** The user is locally authenticated. */
   @js.native
-  sealed trait locallyAuthenticated extends UserAuthenticationStatus
+  sealed trait locallyAuthenticated
+    extends StObject
+       with UserAuthenticationStatus
   
   /** The user is remotely authenticated. */
   @js.native
-  sealed trait remotelyAuthenticated extends UserAuthenticationStatus
+  sealed trait remotelyAuthenticated
+    extends StObject
+       with UserAuthenticationStatus
   
   /** The user is unauthenticated. */
   @js.native
-  sealed trait unauthenticated extends UserAuthenticationStatus
+  sealed trait unauthenticated
+    extends StObject
+       with UserAuthenticationStatus
 }

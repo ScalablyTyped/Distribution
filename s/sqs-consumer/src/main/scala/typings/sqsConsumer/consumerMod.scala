@@ -14,7 +14,6 @@ import typings.sqsConsumer.sqsConsumerStrings.timeout_error
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object consumerMod {
@@ -170,45 +169,47 @@ object consumerMod {
   /* static members */
   object Consumer {
     
-    @JSImport("sqs-consumer/dist/consumer", "Consumer.create")
+    @JSImport("sqs-consumer/dist/consumer", "Consumer")
     @js.native
-    def create(options: ConsumerOptions): Consumer = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(options: ConsumerOptions): Consumer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Consumer]
   }
   
-  @js.native
   trait ConsumerOptions extends StObject {
     
-    var attributeNames: js.UndefOr[js.Array[String]] = js.native
+    var attributeNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var authenticationErrorTimeout: js.UndefOr[Double] = js.native
+    var authenticationErrorTimeout: js.UndefOr[Double] = js.undefined
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var handleMessage: js.UndefOr[js.Function1[/* message */ SQSMessage, js.Promise[Unit]]] = js.native
+    var handleMessage: js.UndefOr[js.Function1[/* message */ SQSMessage, js.Promise[Unit]]] = js.undefined
     
-    var handleMessageBatch: js.UndefOr[js.Function1[/* messages */ js.Array[SQSMessage], js.Promise[Unit]]] = js.native
+    var handleMessageBatch: js.UndefOr[js.Function1[/* messages */ js.Array[SQSMessage], js.Promise[Unit]]] = js.undefined
     
-    var handleMessageTimeout: js.UndefOr[Double] = js.native
+    var handleMessageTimeout: js.UndefOr[Double] = js.undefined
     
-    var heartbeatInterval: js.UndefOr[Double] = js.native
+    var heartbeatInterval: js.UndefOr[Double] = js.undefined
     
-    var messageAttributeNames: js.UndefOr[js.Array[String]] = js.native
+    var messageAttributeNames: js.UndefOr[js.Array[String]] = js.undefined
     
-    var pollingWaitTimeMs: js.UndefOr[Double] = js.native
+    var pollingWaitTimeMs: js.UndefOr[Double] = js.undefined
     
-    var queueUrl: js.UndefOr[String] = js.native
+    var queueUrl: js.UndefOr[String] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var sqs: js.UndefOr[^] = js.native
+    var sqs: js.UndefOr[^] = js.undefined
     
-    var stopped: js.UndefOr[Boolean] = js.native
+    var stopped: js.UndefOr[Boolean] = js.undefined
     
-    var terminateVisibilityTimeout: js.UndefOr[Boolean] = js.native
+    var terminateVisibilityTimeout: js.UndefOr[Boolean] = js.undefined
     
-    var visibilityTimeout: js.UndefOr[Double] = js.native
+    var visibilityTimeout: js.UndefOr[Double] = js.undefined
     
-    var waitTimeSeconds: js.UndefOr[Double] = js.native
+    var waitTimeSeconds: js.UndefOr[Double] = js.undefined
   }
   object ConsumerOptions {
     
@@ -325,24 +326,23 @@ object consumerMod {
     }
   }
   
-  @js.native
   trait Events extends StObject {
     
-    var empty: js.Array[js.Any] = js.native
+    var empty: js.Array[js.Any]
     
-    var error: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]] = js.native
+    var error: js.Tuple2[Error, Unit | SQSMessage | js.Array[SQSMessage]]
     
-    var message_processed: js.Array[SQSMessage] = js.native
+    var message_processed: js.Array[SQSMessage]
     
-    var message_received: js.Array[SQSMessage] = js.native
+    var message_received: js.Array[SQSMessage]
     
-    var processing_error: js.Tuple2[Error, SQSMessage] = js.native
+    var processing_error: js.Tuple2[Error, SQSMessage]
     
-    var response_processed: js.Array[js.Any] = js.native
+    var response_processed: js.Array[js.Any]
     
-    var stopped: js.Array[js.Any] = js.native
+    var stopped: js.Array[js.Any]
     
-    var timeout_error: js.Tuple2[Error, SQSMessage] = js.native
+    var timeout_error: js.Tuple2[Error, SQSMessage]
   }
   object Events {
     

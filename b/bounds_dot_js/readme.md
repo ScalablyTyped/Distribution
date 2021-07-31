@@ -12,7 +12,7 @@ Asynchronous boundary detection.
 | Keywords           | boundary, asynchronous, infinite, scroll, lazy, load, images, bounds |
 | # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 5023 |
+| # downloads        | 7515 |
 | # stars            | 0 |
 
 ## Links

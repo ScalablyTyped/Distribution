@@ -2,14 +2,12 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/disposable/
-@js.native
 trait Disposable extends StObject {
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object Disposable {
   

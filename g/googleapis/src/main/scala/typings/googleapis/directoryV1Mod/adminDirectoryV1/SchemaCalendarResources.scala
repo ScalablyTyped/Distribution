@@ -2,36 +2,34 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Calendar Resource List Response object in Directory API.
   */
-@js.native
 trait SchemaCalendarResources extends StObject {
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The CalendarResources in this page of results.
     */
-  var items: js.UndefOr[js.Array[SchemaCalendarResource]] = js.native
+  var items: js.UndefOr[js.Array[SchemaCalendarResource]] = js.undefined
   
   /**
     * Identifies this as a collection of CalendarResources. This is always
     * admin#directory#resources#calendars#calendarResourcesList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. Provide
     * this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCalendarResources {
   

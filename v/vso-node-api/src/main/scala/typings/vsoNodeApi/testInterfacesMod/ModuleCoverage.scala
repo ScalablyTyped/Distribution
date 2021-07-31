@@ -2,25 +2,23 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModuleCoverage extends StObject {
   
-  var blockCount: Double = js.native
+  var blockCount: Double
   
-  var blockData: js.Array[Double] = js.native
+  var blockData: js.Array[Double]
   
-  var functions: js.Array[FunctionCoverage] = js.native
+  var functions: js.Array[FunctionCoverage]
   
-  var name: String = js.native
+  var name: String
   
-  var signature: String = js.native
+  var signature: String
   
-  var signatureAge: Double = js.native
+  var signatureAge: Double
   
-  var statistics: CoverageStatistics = js.native
+  var statistics: CoverageStatistics
 }
 object ModuleCoverage {
   

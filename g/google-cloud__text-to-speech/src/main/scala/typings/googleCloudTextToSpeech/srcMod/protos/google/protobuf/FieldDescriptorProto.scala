@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a FieldDescriptorProto. */
@@ -24,6 +23,10 @@ class FieldDescriptorProto ()
 }
 object FieldDescriptorProto {
   
+  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Label enum. */
   @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.Label")
   @js.native
@@ -31,14 +34,14 @@ object FieldDescriptorProto {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label with Double
+        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label & Double
       ] = js.native
     
-    /* 1 */ val LABEL_OPTIONAL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL with Double = js.native
+    /* 1 */ val LABEL_OPTIONAL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_OPTIONAL & Double = js.native
     
-    /* 3 */ val LABEL_REPEATED: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED with Double = js.native
+    /* 3 */ val LABEL_REPEATED: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_REPEATED & Double = js.native
     
-    /* 2 */ val LABEL_REQUIRED: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED with Double = js.native
+    /* 2 */ val LABEL_REQUIRED: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Label.LABEL_REQUIRED & Double = js.native
   }
   
   /** Type enum. */
@@ -48,44 +51,44 @@ object FieldDescriptorProto {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type with Double
+        typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type & Double
       ] = js.native
     
-    /* 8 */ val TYPE_BOOL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL with Double = js.native
+    /* 8 */ val TYPE_BOOL: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_BOOL & Double = js.native
     
-    /* 12 */ val TYPE_BYTES: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES with Double = js.native
+    /* 12 */ val TYPE_BYTES: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_BYTES & Double = js.native
     
-    /* 1 */ val TYPE_DOUBLE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE with Double = js.native
+    /* 1 */ val TYPE_DOUBLE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_DOUBLE & Double = js.native
     
-    /* 14 */ val TYPE_ENUM: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM with Double = js.native
+    /* 14 */ val TYPE_ENUM: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_ENUM & Double = js.native
     
-    /* 7 */ val TYPE_FIXED32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32 with Double = js.native
+    /* 7 */ val TYPE_FIXED32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED32 & Double = js.native
     
-    /* 6 */ val TYPE_FIXED64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64 with Double = js.native
+    /* 6 */ val TYPE_FIXED64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FIXED64 & Double = js.native
     
-    /* 2 */ val TYPE_FLOAT: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT with Double = js.native
+    /* 2 */ val TYPE_FLOAT: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_FLOAT & Double = js.native
     
-    /* 10 */ val TYPE_GROUP: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP with Double = js.native
+    /* 10 */ val TYPE_GROUP: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_GROUP & Double = js.native
     
-    /* 5 */ val TYPE_INT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32 with Double = js.native
+    /* 5 */ val TYPE_INT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT32 & Double = js.native
     
-    /* 3 */ val TYPE_INT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64 with Double = js.native
+    /* 3 */ val TYPE_INT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_INT64 & Double = js.native
     
-    /* 11 */ val TYPE_MESSAGE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE with Double = js.native
+    /* 11 */ val TYPE_MESSAGE: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_MESSAGE & Double = js.native
     
-    /* 15 */ val TYPE_SFIXED32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32 with Double = js.native
+    /* 15 */ val TYPE_SFIXED32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED32 & Double = js.native
     
-    /* 16 */ val TYPE_SFIXED64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64 with Double = js.native
+    /* 16 */ val TYPE_SFIXED64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SFIXED64 & Double = js.native
     
-    /* 17 */ val TYPE_SINT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32 with Double = js.native
+    /* 17 */ val TYPE_SINT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT32 & Double = js.native
     
-    /* 18 */ val TYPE_SINT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64 with Double = js.native
+    /* 18 */ val TYPE_SINT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_SINT64 & Double = js.native
     
-    /* 9 */ val TYPE_STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING with Double = js.native
+    /* 9 */ val TYPE_STRING: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_STRING & Double = js.native
     
-    /* 13 */ val TYPE_UINT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32 with Double = js.native
+    /* 13 */ val TYPE_UINT32: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT32 & Double = js.native
     
-    /* 4 */ val TYPE_UINT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64 with Double = js.native
+    /* 4 */ val TYPE_UINT64: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto.Type.TYPE_UINT64 & Double = js.native
   }
   
   /**
@@ -94,12 +97,10 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto instance
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.create")
-  @js.native
-  def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.create")
-  @js.native
-  def create(properties: IFieldDescriptorProto): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
+  @scala.inline
+  def create(): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
+  @scala.inline
+  def create(properties: IFieldDescriptorProto): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer.
@@ -110,18 +111,14 @@ object FieldDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Decodes a FieldDescriptorProto message from the specified reader or buffer, length delimited.
@@ -131,12 +128,10 @@ object FieldDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Encodes the specified FieldDescriptorProto message. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -145,12 +140,10 @@ object FieldDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: IFieldDescriptorProto): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.encode")
-  @js.native
-  def encode(message: IFieldDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IFieldDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IFieldDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified FieldDescriptorProto message, length delimited. Does not implicitly {@link google.protobuf.FieldDescriptorProto.verify|verify} messages.
@@ -159,12 +152,10 @@ object FieldDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldDescriptorProto): Writer = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IFieldDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IFieldDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IFieldDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a FieldDescriptorProto message from a plain object. Also converts values to their respective internal types.
@@ -172,9 +163,8 @@ object FieldDescriptorProto {
     * @returns FieldDescriptorProto
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto]
   
   /**
     * Creates a plain object from a FieldDescriptorProto message. Also converts values to other types if specified.
@@ -183,15 +173,13 @@ object FieldDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.toObject")
-  @js.native
-  def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.toObject")
-  @js.native
+  @scala.inline
+  def toObject(message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
   def toObject(
     message: typings.googleCloudTextToSpeech.mod.google.protobuf.FieldDescriptorProto,
     options: IConversionOptions
-  ): StringDictionary[js.Any] = js.native
+  ): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a FieldDescriptorProto message.
@@ -199,7 +187,6 @@ object FieldDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/text-to-speech/build/src", "protos.google.protobuf.FieldDescriptorProto.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -4,19 +4,17 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWebSocketControl extends StObject {
   
-  var outboundBufferSizeInBytes: Double = js.native
+  var outboundBufferSizeInBytes: Double
   
-  var proxyCredential: PasswordCredential = js.native
+  var proxyCredential: PasswordCredential
   
-  var serverCredential: PasswordCredential = js.native
+  var serverCredential: PasswordCredential
   
-  var supportedProtocols: IVector[String] = js.native
+  var supportedProtocols: IVector[String]
 }
 object IWebSocketControl {
   

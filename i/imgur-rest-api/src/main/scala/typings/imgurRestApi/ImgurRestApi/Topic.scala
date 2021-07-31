@@ -2,17 +2,15 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Topic extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
 }
 object Topic {
   

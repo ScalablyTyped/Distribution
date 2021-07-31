@@ -2,13 +2,11 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentsPublish extends StObject {
   
-  var commentsToPublish: js.UndefOr[js.Array[CommentPublish]] = js.native
+  var commentsToPublish: js.UndefOr[js.Array[CommentPublish]] = js.undefined
 }
 object CommentsPublish {
   

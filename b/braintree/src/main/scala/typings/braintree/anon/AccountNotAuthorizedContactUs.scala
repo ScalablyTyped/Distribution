@@ -2,25 +2,23 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountNotAuthorizedContactUs extends StObject {
   
-  var AccountNotAuthorizedContactUs: String = js.native
+  var AccountNotAuthorizedContactUs: String
   
-  var AnotherUsBankMerchantAccount: String = js.native
+  var AnotherUsBankMerchantAccount: String
   
-  var Approve: String = js.native
+  var Approve: String
   
-  var BankRejectedNone: String = js.native
+  var BankRejectedNone: String
   
-  var BankRejectedUpdateFundingInformation: String = js.native
+  var BankRejectedUpdateFundingInformation: String
   
-  var InsufficientFundsContactUs: String = js.native
+  var InsufficientFundsContactUs: String
   
-  var UsBankMerchantAccount: String = js.native
+  var UsBankMerchantAccount: String
 }
 object AccountNotAuthorizedContactUs {
   

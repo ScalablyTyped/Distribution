@@ -2,16 +2,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BranchUpdatedEvent extends RealTimePullRequestEvent {
+trait BranchUpdatedEvent
+  extends StObject
+     with RealTimePullRequestEvent {
   
   /**
     * If true, the source branch of the pull request was updated
     */
-  var isSourceUpdate: Boolean = js.native
+  var isSourceUpdate: Boolean
 }
 object BranchUpdatedEvent {
   

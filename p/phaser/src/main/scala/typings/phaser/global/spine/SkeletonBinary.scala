@@ -1,16 +1,60 @@
 package typings.phaser.global.spine
 
 import typings.phaser.spine.AttachmentLoader
+import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("spine.SkeletonBinary")
 @js.native
 class SkeletonBinary protected ()
-  extends typings.phaser.spine.SkeletonBinary {
+  extends StObject
+     with typings.phaser.spine.SkeletonBinary {
   def this(attachmentLoader: AttachmentLoader) = this()
+  
+  /* CompleteClass */
+  var attachmentLoader: AttachmentLoader = js.native
+  
+  /* CompleteClass */
+  var linkedMeshes: js.Any = js.native
+  
+  /* CompleteClass */
+  var readAnimation: js.Any = js.native
+  
+  /* CompleteClass */
+  var readAttachment: js.Any = js.native
+  
+  /* CompleteClass */
+  var readCurve: js.Any = js.native
+  
+  /* CompleteClass */
+  var readFloatArray: js.Any = js.native
+  
+  /* CompleteClass */
+  var readShortArray: js.Any = js.native
+  
+  /* CompleteClass */
+  override def readSkeletonData(binary: Uint8Array): typings.phaser.spine.SkeletonData = js.native
+  
+  /* CompleteClass */
+  var readSkin: js.Any = js.native
+  
+  /* CompleteClass */
+  var readVertices: js.Any = js.native
+  
+  /* CompleteClass */
+  var scale: Double = js.native
+  
+  /* CompleteClass */
+  override def setCurve(
+    timeline: typings.phaser.spine.CurveTimeline,
+    frameIndex: Double,
+    cx1: Double,
+    cy1: Double,
+    cx2: Double,
+    cy2: Double
+  ): Unit = js.native
 }
 object SkeletonBinary {
   

@@ -2,17 +2,15 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /** The identifier of the action. Any string or CommonActionId for common actions. */
-  var id: String = js.native
+  var id: String
   
   /** Optional. The title of the action. It may be ignored for common actions.  */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Action {
   

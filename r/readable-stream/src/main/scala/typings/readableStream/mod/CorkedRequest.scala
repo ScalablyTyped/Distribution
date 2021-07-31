@@ -2,18 +2,16 @@ package typings.readableStream.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ==== _stream_writable ====
-@js.native
 trait CorkedRequest extends StObject {
   
-  var entry: js.Any = js.native
+  var entry: js.Any
   
-  def finish(): Unit = js.native
+  def finish(): Unit
   
-  var next: js.Any = js.native
+  var next: js.Any
 }
 object CorkedRequest {
   

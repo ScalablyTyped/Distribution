@@ -3,25 +3,23 @@ package typings.polished.anon
 import typings.polished.polishedStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfixPrefix extends StObject {
   
-  var infix: FNotation = js.native
+  var infix: FNotation
   
-  var prefix: NotationPrecedence = js.native
+  var prefix: NotationPrecedence
   
-  var regSymbol: `-_` = js.native
+  var regSymbol: `-_`
   
-  var symbol: `-_` = js.native
+  var symbol: `-_`
 }
 object InfixPrefix {
   
   @scala.inline
-  def apply(infix: FNotation, prefix: NotationPrecedence, regSymbol: `-_`, symbol: `-_`): InfixPrefix = {
-    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(infix: FNotation, prefix: NotationPrecedence): InfixPrefix = {
+    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], prefix = prefix.asInstanceOf[js.Any], regSymbol = "-", symbol = "-")
     __obj.asInstanceOf[InfixPrefix]
   }
   

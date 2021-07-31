@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientClouderrorreporting.gapi.client.clouderror
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorGroup extends StObject {
   
   /** Group IDs are unique for a given project. If the same kind of error occurs in different service contexts, it will receive the same group ID. */
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
   /** The group resource name. Example: projects/my-project-123/groups/CNSgkpnppqKCUw */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Error group's resolution status. An unspecified resolution status will be interpreted as OPEN */
-  var resolutionStatus: js.UndefOr[String] = js.native
+  var resolutionStatus: js.UndefOr[String] = js.undefined
   
   /** Associated tracking issues. */
-  var trackingIssues: js.UndefOr[js.Array[TrackingIssue]] = js.native
+  var trackingIssues: js.UndefOr[js.Array[TrackingIssue]] = js.undefined
 }
 object ErrorGroup {
   

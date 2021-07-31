@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlshortenerV1Mod {
@@ -42,7 +41,7 @@ object urlshortenerV1Mod {
         */
       def get(): GaxiosPromise[SchemaUrl] = js.native
       def get(callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
       def get(params: ParamsResourceUrlGet): GaxiosPromise[SchemaUrl] = js.native
       def get(params: ParamsResourceUrlGet, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
       def get(
@@ -67,7 +66,7 @@ object urlshortenerV1Mod {
         */
       def insert(): GaxiosPromise[SchemaUrl] = js.native
       def insert(callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
-      def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
+      def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrl] = js.native
       def insert(params: ParamsResourceUrlInsert): GaxiosPromise[SchemaUrl] = js.native
       def insert(params: ParamsResourceUrlInsert, callback: BodyResponseCallback[SchemaUrl]): Unit = js.native
       def insert(
@@ -93,7 +92,7 @@ object urlshortenerV1Mod {
         */
       def list(): GaxiosPromise[SchemaUrlHistory] = js.native
       def list(callback: BodyResponseCallback[SchemaUrlHistory]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlHistory] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlHistory] = js.native
       def list(params: ParamsResourceUrlList): GaxiosPromise[SchemaUrlHistory] = js.native
       def list(params: ParamsResourceUrlList, callback: BodyResponseCallback[SchemaUrlHistory]): Unit = js.native
       def list(
@@ -135,16 +134,17 @@ object urlshortenerV1Mod {
       var url: ResourceUrl = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -156,23 +156,24 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrlGet extends StandardParameters {
+    trait ParamsResourceUrlGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Additional information to return.
         */
-      var projection: js.UndefOr[String] = js.native
+      var projection: js.UndefOr[String] = js.undefined
       
       /**
         * The short URL, including the protocol.
         */
-      var shortUrl: js.UndefOr[String] = js.native
+      var shortUrl: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceUrlGet {
       
@@ -205,18 +206,19 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrlInsert extends StandardParameters {
+    trait ParamsResourceUrlInsert
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaUrl] = js.native
+      var requestBody: js.UndefOr[SchemaUrl] = js.undefined
     }
     object ParamsResourceUrlInsert {
       
@@ -243,23 +245,24 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceUrlList extends StandardParameters {
+    trait ParamsResourceUrlList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Additional information to return.
         */
-      var projection: js.UndefOr[String] = js.native
+      var projection: js.UndefOr[String] = js.undefined
       
       /**
         * Token for requesting successive pages of results.
         */
-      var `start-token`: js.UndefOr[String] = js.native
+      var `start-token`: js.UndefOr[String] = js.undefined
     }
     object ParamsResourceUrlList {
       
@@ -292,43 +295,42 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait SchemaAnalyticsSnapshot extends StObject {
       
       /**
         * Top browsers, e.g. &quot;Chrome&quot;; sorted by (descending) click
         * counts. Only present if this data is available.
         */
-      var browsers: js.UndefOr[js.Array[SchemaStringCount]] = js.native
+      var browsers: js.UndefOr[js.Array[SchemaStringCount]] = js.undefined
       
       /**
         * Top countries (expressed as country codes), e.g. &quot;US&quot; or
         * &quot;DE&quot;; sorted by (descending) click counts. Only present if this
         * data is available.
         */
-      var countries: js.UndefOr[js.Array[SchemaStringCount]] = js.native
+      var countries: js.UndefOr[js.Array[SchemaStringCount]] = js.undefined
       
       /**
         * Number of clicks on all goo.gl short URLs pointing to this long URL.
         */
-      var longUrlClicks: js.UndefOr[String] = js.native
+      var longUrlClicks: js.UndefOr[String] = js.undefined
       
       /**
         * Top platforms or OSes, e.g. &quot;Windows&quot;; sorted by (descending)
         * click counts. Only present if this data is available.
         */
-      var platforms: js.UndefOr[js.Array[SchemaStringCount]] = js.native
+      var platforms: js.UndefOr[js.Array[SchemaStringCount]] = js.undefined
       
       /**
         * Top referring hosts, e.g. &quot;www.google.com&quot;; sorted by
         * (descending) click counts. Only present if this data is available.
         */
-      var referrers: js.UndefOr[js.Array[SchemaStringCount]] = js.native
+      var referrers: js.UndefOr[js.Array[SchemaStringCount]] = js.undefined
       
       /**
         * Number of clicks on this short URL.
         */
-      var shortUrlClicks: js.UndefOr[String] = js.native
+      var shortUrlClicks: js.UndefOr[String] = js.undefined
     }
     object SchemaAnalyticsSnapshot {
       
@@ -391,33 +393,32 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait SchemaAnalyticsSummary extends StObject {
       
       /**
         * Click analytics over all time.
         */
-      var allTime: js.UndefOr[SchemaAnalyticsSnapshot] = js.native
+      var allTime: js.UndefOr[SchemaAnalyticsSnapshot] = js.undefined
       
       /**
         * Click analytics over the last day.
         */
-      var day: js.UndefOr[SchemaAnalyticsSnapshot] = js.native
+      var day: js.UndefOr[SchemaAnalyticsSnapshot] = js.undefined
       
       /**
         * Click analytics over the last month.
         */
-      var month: js.UndefOr[SchemaAnalyticsSnapshot] = js.native
+      var month: js.UndefOr[SchemaAnalyticsSnapshot] = js.undefined
       
       /**
         * Click analytics over the last two hours.
         */
-      var twoHours: js.UndefOr[SchemaAnalyticsSnapshot] = js.native
+      var twoHours: js.UndefOr[SchemaAnalyticsSnapshot] = js.undefined
       
       /**
         * Click analytics over the last week.
         */
-      var week: js.UndefOr[SchemaAnalyticsSnapshot] = js.native
+      var week: js.UndefOr[SchemaAnalyticsSnapshot] = js.undefined
     }
     object SchemaAnalyticsSummary {
       
@@ -462,20 +463,19 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait SchemaStringCount extends StObject {
       
       /**
         * Number of clicks for this top entry, e.g. for this particular country or
         * browser.
         */
-      var count: js.UndefOr[String] = js.native
+      var count: js.UndefOr[String] = js.undefined
       
       /**
         * Label assigned to this top entry, e.g. &quot;US&quot; or
         * &quot;Chrome&quot;.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
     }
     object SchemaStringCount {
       
@@ -502,37 +502,36 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait SchemaUrl extends StObject {
       
       /**
         * A summary of the click analytics for the short and long URL. Might not be
         * present if not requested or currently unavailable.
         */
-      var analytics: js.UndefOr[SchemaAnalyticsSummary] = js.native
+      var analytics: js.UndefOr[SchemaAnalyticsSummary] = js.undefined
       
       /**
         * Time the short URL was created; ISO 8601 representation using the
         * yyyy-MM-dd&#39;T&#39;HH:mm:ss.SSSZZ format, e.g.
         * &quot;2010-10-14T19:01:24.944+00:00&quot;.
         */
-      var created: js.UndefOr[String] = js.native
+      var created: js.UndefOr[String] = js.undefined
       
       /**
         * Short URL, e.g. &quot;http://goo.gl/l6MS&quot;.
         */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
       /**
         * The fixed string &quot;urlshortener#url&quot;.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * Long URL, e.g. &quot;http://www.google.com/&quot;. Might not be present
         * if the status is &quot;REMOVED&quot;.
         */
-      var longUrl: js.UndefOr[String] = js.native
+      var longUrl: js.UndefOr[String] = js.undefined
       
       /**
         * Status of the target URL. Possible values: &quot;OK&quot;,
@@ -540,7 +539,7 @@ object urlshortenerV1Mod {
         * might be marked &quot;REMOVED&quot; if it was flagged as spam, for
         * example.
         */
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object SchemaUrl {
       
@@ -591,36 +590,35 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait SchemaUrlHistory extends StObject {
       
       /**
         * A list of URL resources.
         */
-      var items: js.UndefOr[js.Array[SchemaUrl]] = js.native
+      var items: js.UndefOr[js.Array[SchemaUrl]] = js.undefined
       
       /**
         * Number of items returned with each full &quot;page&quot; of results. Note
         * that the last page could have fewer items than the
         * &quot;itemsPerPage&quot; value.
         */
-      var itemsPerPage: js.UndefOr[Double] = js.native
+      var itemsPerPage: js.UndefOr[Double] = js.undefined
       
       /**
         * The fixed string &quot;urlshortener#urlHistory&quot;.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * A token to provide to get the next page of results.
         */
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
       /**
         * Total number of short URLs associated with this user (may be
         * approximate).
         */
-      var totalItems: js.UndefOr[Double] = js.native
+      var totalItems: js.UndefOr[Double] = js.undefined
     }
     object SchemaUrlHistory {
       
@@ -668,46 +666,45 @@ object urlshortenerV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

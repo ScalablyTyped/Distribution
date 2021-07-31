@@ -2,33 +2,31 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyGrantingServiceAccess extends StObject {
   
   /**
     * The name of the entity (user or role) to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
     */
-  var EntityName: js.UndefOr[entityNameType] = js.native
+  var EntityName: js.UndefOr[entityNameType] = js.undefined
   
   /**
     * The type of entity (user or role) that used the policy to access the service to which the inline policy is attached. This field is null for managed policies. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
     */
-  var EntityType: js.UndefOr[policyOwnerEntityType] = js.native
+  var EntityType: js.UndefOr[policyOwnerEntityType] = js.undefined
   
-  var PolicyArn: js.UndefOr[arnType] = js.native
+  var PolicyArn: js.UndefOr[arnType] = js.undefined
   
   /**
     * The policy name.
     */
-  var PolicyName: policyNameType = js.native
+  var PolicyName: policyNameType
   
   /**
     * The policy type. For more information about these policy types, see Managed Policies and Inline Policies in the IAM User Guide.
     */
-  var PolicyType: policyType = js.native
+  var PolicyType: policyType
 }
 object PolicyGrantingServiceAccess {
   

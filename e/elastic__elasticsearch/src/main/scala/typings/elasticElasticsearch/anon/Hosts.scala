@@ -2,20 +2,18 @@ package typings.elasticElasticsearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hosts extends StObject {
   
-  var hosts: js.Array[_] = js.native
+  var hosts: js.Array[js.Any]
   
-  var reason: String = js.native
+  var reason: String
 }
 object Hosts {
   
   @scala.inline
-  def apply(hosts: js.Array[_], reason: String): Hosts = {
+  def apply(hosts: js.Array[js.Any], reason: String): Hosts = {
     val __obj = js.Dynamic.literal(hosts = hosts.asInstanceOf[js.Any], reason = reason.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hosts]
   }
@@ -24,7 +22,7 @@ object Hosts {
   implicit class HostsMutableBuilder[Self <: Hosts] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHosts(value: js.Array[_]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
+    def setHosts(value: js.Array[js.Any]): Self = StObject.set(x, "hosts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHostsVarargs(value: js.Any*): Self = StObject.set(x, "hosts", js.Array(value :_*))

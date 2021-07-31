@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExperimentConfig extends StObject {
   
   /**
     * The name of an existing experiment to associate the trial component with.
     */
-  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The display name for the trial component. If this key isn't specified, the display name is the trial component name.
     */
-  var TrialComponentDisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialComponentDisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The name of an existing trial to associate the trial component with. If not specified, a new trial is created.
     */
-  var TrialName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialName: js.UndefOr[ExperimentEntityName] = js.undefined
 }
 object ExperimentConfig {
   

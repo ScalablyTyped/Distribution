@@ -3,7 +3,6 @@ package typings.brotliWebpackPlugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,6 @@ object mod {
   
   type BrotliWebpackPlugin = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -29,27 +27,27 @@ object mod {
       * - `[path]` is replaced with the path of the original asset.
       * - `[query]` is replaced with the query.
       */
-    var asset: js.UndefOr[String] = js.native
+    var asset: js.UndefOr[String] = js.undefined
     
     /**
       * Remove original files that were compressed with brotli. Default: `false`.
       */
-    var deleteOriginalAssets: js.UndefOr[Boolean] = js.native
+    var deleteOriginalAssets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Only assets that compress better that this ratio are processed. Defaults to `0.8`.
       */
-    var minRatio: js.UndefOr[Double] = js.native
+    var minRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * All assets matching this RegExp are processed. Defaults to every asset.
       */
-    var test: js.UndefOr[RegExp] = js.native
+    var test: js.UndefOr[RegExp] = js.undefined
     
     /**
       * Only assets bigger than this size (in bytes) are processed. Defaults to `0`.
       */
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

@@ -2,17 +2,15 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvAudioInfo extends StObject {
   
-  var audio: AudioInfo = js.native
+  var audio: AudioInfo
   
-  var format: AvFormat = js.native
+  var format: AvFormat
   
-  var video: VideoInfo = js.native
+  var video: VideoInfo
 }
 object AvAudioInfo {
   

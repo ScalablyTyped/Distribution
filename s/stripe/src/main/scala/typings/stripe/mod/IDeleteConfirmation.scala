@@ -2,17 +2,15 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeleteConfirmation extends StObject {
   
-  var deleted: Boolean = js.native
+  var deleted: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var `object`: String = js.native
+  var `object`: String
 }
 object IDeleteConfirmation {
   

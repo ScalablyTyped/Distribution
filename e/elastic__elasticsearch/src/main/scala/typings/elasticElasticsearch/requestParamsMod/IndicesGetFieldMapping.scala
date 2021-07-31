@@ -7,29 +7,29 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesGetFieldMapping extends Generic {
+trait IndicesGetFieldMapping
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var fields: String | js.Array[String] = js.native
+  var fields: String | js.Array[String]
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var include_defaults: js.UndefOr[Boolean] = js.native
+  var include_defaults: js.UndefOr[Boolean] = js.undefined
   
-  var include_type_name: js.UndefOr[Boolean] = js.native
+  var include_type_name: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IndicesGetFieldMapping {
   

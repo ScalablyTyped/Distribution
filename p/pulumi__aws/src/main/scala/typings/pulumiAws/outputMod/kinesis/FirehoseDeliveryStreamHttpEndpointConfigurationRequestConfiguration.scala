@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration extend
     js.Array[
       FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfigurationCommonAttribute
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Kinesis Data Firehose uses the content encoding to compress the body of a request before sending the request to the destination. Valid values are `NONE` and `GZIP`.  Default value is `NONE`.
     */
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
 }
 object FirehoseDeliveryStreamHttpEndpointConfigurationRequestConfiguration {
   

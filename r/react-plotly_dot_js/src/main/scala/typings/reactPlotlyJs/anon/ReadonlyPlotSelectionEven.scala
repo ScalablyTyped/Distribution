@@ -4,18 +4,16 @@ import typings.plotlyJs.mod.PlotDatum
 import typings.plotlyJs.mod.SelectionRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<plotly.js.plotly.js.PlotSelectionEvent> */
-@js.native
 trait ReadonlyPlotSelectionEven extends StObject {
   
-  val lassoPoints: js.UndefOr[SelectionRange] = js.native
+  val lassoPoints: js.UndefOr[SelectionRange] = js.undefined
   
-  val points: js.Array[PlotDatum] = js.native
+  val points: js.Array[PlotDatum]
   
-  val range: js.UndefOr[SelectionRange] = js.native
+  val range: js.UndefOr[SelectionRange] = js.undefined
 }
 object ReadonlyPlotSelectionEven {
   

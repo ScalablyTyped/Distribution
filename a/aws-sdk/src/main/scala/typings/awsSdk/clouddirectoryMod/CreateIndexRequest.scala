@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIndexRequest extends StObject {
   
   /**
     * The ARN of the directory where the index should be created.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * Indicates whether the attribute that is being indexed has unique values or not.
     */
-  var IsUnique: Bool = js.native
+  var IsUnique: Bool
   
   /**
     * The name of the link between the parent object and the index object.
     */
-  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.native
+  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.undefined
   
   /**
     * Specifies the attributes that should be indexed on. Currently only a single attribute is supported.
     */
-  var OrderedIndexedAttributeList: AttributeKeyList = js.native
+  var OrderedIndexedAttributeList: AttributeKeyList
   
   /**
     * A reference to the parent object that contains the index object.
     */
-  var ParentReference: js.UndefOr[ObjectReference] = js.native
+  var ParentReference: js.UndefOr[ObjectReference] = js.undefined
 }
 object CreateIndexRequest {
   

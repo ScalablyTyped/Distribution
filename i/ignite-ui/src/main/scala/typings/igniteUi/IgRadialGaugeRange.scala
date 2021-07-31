@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgRadialGaugeRange
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,57 +15,57 @@ trait IgRadialGaugeRange
   /**
     * Gets or sets the brush for the entire range.
     */
-  var brush: js.UndefOr[String] = js.native
+  var brush: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the ending value of the range.
     */
-  var endValue: js.UndefOr[Double] = js.native
+  var endValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the ending value of the inner extent of the range.
     */
-  var innerEndExtent: js.UndefOr[Double] = js.native
+  var innerEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the starting value of the inner extent of the range.
     */
-  var innerStartExtent: js.UndefOr[Double] = js.native
+  var innerStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the name of the range.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the ending value of the outer extent of the range.
     */
-  var outerEndExtent: js.UndefOr[Double] = js.native
+  var outerEndExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the starting value of the outer extent of the range.
     */
-  var outerStartExtent: js.UndefOr[Double] = js.native
+  var outerStartExtent: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the brush for the outline of the range.
     */
-  var outline: js.UndefOr[String] = js.native
+  var outline: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the flag used to determine if the range should be removed. If set to true, the range (if existing) is removed.
     */
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the starting value of the range.
     */
-  var startValue: js.UndefOr[Double] = js.native
+  var startValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the thickness of the range outline.
     */
-  var strokeThickness: js.UndefOr[Double] = js.native
+  var strokeThickness: js.UndefOr[Double] = js.undefined
 }
 object IgRadialGaugeRange {
   

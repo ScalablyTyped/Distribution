@@ -5,7 +5,6 @@ import typings.sharepoint.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SPAnimationUtility {
@@ -13,12 +12,16 @@ object SPAnimationUtility {
   @JSGlobal("SPAnimationUtility.BasicAnimator")
   @js.native
   class BasicAnimator ()
-    extends typings.sharepoint.SPAnimationUtility.BasicAnimator
+    extends StObject
+       with typings.sharepoint.SPAnimationUtility.BasicAnimator
   object BasicAnimator {
     
-    /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.CommonResize")
+    @JSGlobal("SPAnimationUtility.BasicAnimator")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def CommonResize(
       element: HTMLElement,
       newHeight: Double,
@@ -26,216 +29,158 @@ object SPAnimationUtility {
       finishFunc: js.Function1[/* data */ js.Any, Unit],
       data: js.Any,
       animationId: ID
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CommonResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any], animationId.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeIn")
-    @js.native
-    def FadeIn(element: HTMLElement): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeIn")
-    @js.native
-    def FadeIn(element: HTMLElement, finishFunc: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeIn")
-    @js.native
-    def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeIn")
-    @js.native
-    def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = js.native
+    @scala.inline
+    def FadeIn(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FadeIn(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FadeIn(element: HTMLElement, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeIn")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeOut")
-    @js.native
-    def FadeOut(element: HTMLElement): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeOut")
-    @js.native
-    def FadeOut(element: HTMLElement, finishFunc: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeOut")
-    @js.native
-    def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.FadeOut")
-    @js.native
-    def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = js.native
+    @scala.inline
+    def FadeOut(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FadeOut(element: HTMLElement, finishFunc: js.Function1[/* data */ js.Any, Unit], data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FadeOut(element: HTMLElement, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FadeOut")(element.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.GetLeftOffset")
-    @js.native
-    def GetLeftOffset(element: HTMLElement): Double = js.native
+    @scala.inline
+    def GetLeftOffset(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetLeftOffset")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.GetRightOffset")
-    @js.native
-    def GetRightOffset(element: HTMLElement): Double = js.native
+    @scala.inline
+    def GetRightOffset(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetRightOffset")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.GetTopOffset")
-    @js.native
-    def GetTopOffset(element: HTMLElement): Double = js.native
+    @scala.inline
+    def GetTopOffset(element: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTopOffset")(element.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.GetWindowScrollPosition")
-    @js.native
-    def GetWindowScrollPosition(): X = js.native
+    @scala.inline
+    def GetWindowScrollPosition(): X = ^.asInstanceOf[js.Dynamic].applyDynamic("GetWindowScrollPosition")().asInstanceOf[X]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.IsPositioned")
-    @js.native
-    def IsPositioned(element: HTMLElement): Boolean = js.native
+    @scala.inline
+    def IsPositioned(element: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsPositioned")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Move")
-    @js.native
-    def Move(element: HTMLElement, posX: Double, posY: Double): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Move")
-    @js.native
-    def Move(
-      element: HTMLElement,
-      posX: Double,
-      posY: Double,
-      finishFunc: js.UndefOr[scala.Nothing],
-      data: js.Any
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Move")
-    @js.native
+    @scala.inline
+    def Move(element: HTMLElement, posX: Double, posY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def Move(
       element: HTMLElement,
       posX: Double,
       posY: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Move")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def Move(
       element: HTMLElement,
       posX: Double,
       posY: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit],
       data: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def Move(element: HTMLElement, posX: Double, posY: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Move")(element.asInstanceOf[js.Any], posX.asInstanceOf[js.Any], posY.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.PositionAbsolute")
-    @js.native
-    def PositionAbsolute(element: HTMLElement): Unit = js.native
+    @scala.inline
+    def PositionAbsolute(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PositionAbsolute")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.PositionAbsoluteExact")
-    @js.native
-    def PositionAbsoluteExact(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = js.native
+    @scala.inline
+    def PositionAbsoluteExact(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PositionAbsoluteExact")(element.asInstanceOf[js.Any], topValue.asInstanceOf[js.Any], leftValue.asInstanceOf[js.Any], heightValue.asInstanceOf[js.Any], widthValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.PositionElement")
-    @js.native
-    def PositionElement(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = js.native
+    @scala.inline
+    def PositionElement(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PositionElement")(element.asInstanceOf[js.Any], topValue.asInstanceOf[js.Any], leftValue.asInstanceOf[js.Any], heightValue.asInstanceOf[js.Any], widthValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.PositionRelative")
-    @js.native
-    def PositionRelative(element: HTMLElement): Unit = js.native
+    @scala.inline
+    def PositionRelative(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("PositionRelative")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.PositionRelativeExact")
-    @js.native
-    def PositionRelativeExact(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = js.native
+    @scala.inline
+    def PositionRelativeExact(element: HTMLElement, topValue: Double, leftValue: Double, heightValue: Double, widthValue: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("PositionRelativeExact")(element.asInstanceOf[js.Any], topValue.asInstanceOf[js.Any], leftValue.asInstanceOf[js.Any], heightValue.asInstanceOf[js.Any], widthValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.QuickResize")
-    @js.native
-    def QuickResize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.QuickResize")
-    @js.native
-    def QuickResize(
-      element: HTMLElement,
-      newHeight: Double,
-      newWidth: Double,
-      finishFunc: js.UndefOr[scala.Nothing],
-      data: js.Any
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.QuickResize")
-    @js.native
+    @scala.inline
+    def QuickResize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def QuickResize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.QuickResize")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def QuickResize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit],
       data: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def QuickResize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("QuickResize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Resize")
-    @js.native
-    def Resize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Resize")
-    @js.native
-    def Resize(
-      element: HTMLElement,
-      newHeight: Double,
-      newWidth: Double,
-      finishFunc: js.UndefOr[scala.Nothing],
-      data: js.Any
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Resize")
-    @js.native
+    @scala.inline
+    def Resize(element: HTMLElement, newHeight: Double, newWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def Resize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.Resize")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def Resize(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit],
       data: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def Resize(element: HTMLElement, newHeight: Double, newWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Resize")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.ResizeContainerAndFillContent")
-    @js.native
+    @scala.inline
     def ResizeContainerAndFillContent(
       element: HTMLElement,
       newHeight: Double,
       newWidth: Double,
       finishFunc: js.Function0[Unit],
       fAddToEnd: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ResizeContainerAndFillContent")(element.asInstanceOf[js.Any], newHeight.asInstanceOf[js.Any], newWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], fAddToEnd.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("SPAnimationUtility.BasicAnimator.StrikeThrough")
-    @js.native
-    def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.StrikeThrough")
-    @js.native
-    def StrikeThrough(
-      element: HTMLElement,
-      strikeThroughWidth: Double,
-      finishFunc: js.UndefOr[scala.Nothing],
-      data: js.Any
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.StrikeThrough")
-    @js.native
+    @scala.inline
+    def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def StrikeThrough(
       element: HTMLElement,
       strikeThroughWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit]
-    ): Unit = js.native
-    @JSGlobal("SPAnimationUtility.BasicAnimator.StrikeThrough")
-    @js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def StrikeThrough(
       element: HTMLElement,
       strikeThroughWidth: Double,
       finishFunc: js.Function1[/* data */ js.Any, Unit],
       data: js.Any
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def StrikeThrough(element: HTMLElement, strikeThroughWidth: Double, finishFunc: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("StrikeThrough")(element.asInstanceOf[js.Any], strikeThroughWidth.asInstanceOf[js.Any], finishFunc.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

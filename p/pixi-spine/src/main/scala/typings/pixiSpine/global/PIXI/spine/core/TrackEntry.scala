@@ -2,13 +2,13 @@ package typings.pixiSpine.global.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("PIXI.spine.core.TrackEntry")
 @js.native
 class TrackEntry ()
-  extends typings.pixiSpine.PIXI.spine.core.TrackEntry
+  extends StObject
+     with typings.pixiSpine.PIXI.spine.core.TrackEntry
 object TrackEntry {
   
   @JSGlobal("PIXI.spine.core.TrackEntry")

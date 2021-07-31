@@ -3,30 +3,30 @@ package typings.relayRuntime.normalizationNodeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizationStream
-  extends NormalizationSelectableNode
+  extends StObject
+     with NormalizationSelectableNode
      with NormalizationSelection {
   
-  val `if`: String | Null = js.native
+  val `if`: String | Null
   
-  val kind: String = js.native
+  val kind: String
   
   // 'Stream';
-  val label: String = js.native
+  val label: String
   
-  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+  val metadata: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
   
-  val selections: js.Array[NormalizationSelection] = js.native
+  val selections: js.Array[NormalizationSelection]
 }
 object NormalizationStream {
   
   @scala.inline
   def apply(kind: String, label: String, selections: js.Array[NormalizationSelection]): NormalizationStream = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[NormalizationStream]
   }
   

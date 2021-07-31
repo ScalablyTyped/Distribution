@@ -6,35 +6,33 @@ import typings.antvComponent.antvComponentStrings.tail
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhancedTextCfg extends StObject {
   
   /** 超出 maxLength 是否自动省略 */
-  var autoEllipsis: js.UndefOr[Boolean] = js.native
+  var autoEllipsis: js.UndefOr[Boolean] = js.undefined
   
   /** 文字包围盒样式设置 */
-  var background: js.UndefOr[EnhancedTextBackgroundCfg] = js.native
+  var background: js.UndefOr[EnhancedTextBackgroundCfg] = js.undefined
   
   /** 文本标注内容 */
-  var content: String | Double = js.native
+  var content: String | Double
   
   /** 文本截断的位置 */
-  var ellipsisPosition: js.UndefOr[head | middle | tail] = js.native
+  var ellipsisPosition: js.UndefOr[head | middle | tail] = js.undefined
   
   /** 文本在二维坐标系的显示位置，是沿着 x 轴显示 还是沿着 y 轴显示 */
-  var isVertical: js.UndefOr[Boolean] = js.native
+  var isVertical: js.UndefOr[Boolean] = js.undefined
   
   /** 文本的最大长度 */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /** 旋转，弧度制 */
-  var rotate: js.UndefOr[Double] = js.native
+  var rotate: js.UndefOr[Double] = js.undefined
   
   /** 文本标注样式 */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object EnhancedTextCfg {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifySelfservicePermissionsRequest extends StObject {
   
   /**
     * The identifier of the directory.
     */
-  var ResourceId: DirectoryId = js.native
+  var ResourceId: DirectoryId
   
   /**
     * The permissions to enable or disable self-service capabilities.
     */
-  var SelfservicePermissions: typings.awsSdk.workspacesMod.SelfservicePermissions = js.native
+  var SelfservicePermissions: typings.awsSdk.workspacesMod.SelfservicePermissions
 }
 object ModifySelfservicePermissionsRequest {
   

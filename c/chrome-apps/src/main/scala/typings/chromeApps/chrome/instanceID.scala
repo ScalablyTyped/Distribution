@@ -3,7 +3,6 @@ package typings.chromeApps.chrome
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -18,18 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object instanceID {
   
-  @js.native
   trait DeleteTokenParams extends StObject {
     
     /**
       * The authorized entity that is used to obtain the token.
       */
-    var authorizedEntity: String = js.native
+    var authorizedEntity: String
     
     /**
       * The scope that is used to obtain the token.
       */
-    var scope: String = js.native
+    var scope: String
   }
   object DeleteTokenParams {
     
@@ -50,26 +48,25 @@ object instanceID {
     }
   }
   
-  @js.native
   trait TokenParams extends StObject {
     
     /**
       * Identifies the entity that is authorized to access resources associated with this Instance ID.
       * It can be a project ID from Google developer console.
       */
-    var authorizedEntity: String = js.native
+    var authorizedEntity: String
     
     /**
       * Allows including a small number of string key/value pairs that will
       * be associated with the token and may be used in processing the request.
       */
-    var options: js.UndefOr[StringDictionary[String]] = js.native
+    var options: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Identifies authorized actions that the authorized entity can take.
       * E.g. for sending GCM messages, GCM scope should be used.
       */
-    var scope: String = js.native
+    var scope: String
   }
   object TokenParams {
     

@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the page orientation.
   */
-@js.native
-trait ChangePageOrientationCommand extends CommandBase {
+trait ChangePageOrientationCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangePageOrientationCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param orientation The page orientation.
     */
-  def execute(orientation: Orientation): Boolean = js.native
+  def execute(orientation: Orientation): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[Orientation] = js.native
+  def getState(): CommandState[Orientation]
 }
 object ChangePageOrientationCommand {
   

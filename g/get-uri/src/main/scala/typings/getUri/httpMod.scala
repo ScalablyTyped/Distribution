@@ -9,14 +9,16 @@ import typings.node.streamMod.Readable
 import typings.node.urlMod.UrlWithStringQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
-  @JSImport("get-uri/dist/http", JSImport.Default)
+  @JSImport("get-uri/dist/http", JSImport.Namespace)
   @js.native
-  def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(parsed: UrlWithStringQuery, opts: HttpOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(parsed.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
   
   @js.native
   trait HttpIncomingMessage
@@ -29,19 +31,19 @@ object httpMod {
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   }
   
-  @js.native
   trait HttpOptions
-    extends GetUriOptions
+    extends StObject
+       with GetUriOptions
        with RequestOptions {
     
     @JSName("cache")
-    var cache_HttpOptions: js.UndefOr[HttpReadable] = js.native
+    var cache_HttpOptions: js.UndefOr[HttpReadable] = js.undefined
     
-    var http: js.UndefOr[HttpOrHttpsModule] = js.native
+    var http: js.UndefOr[HttpOrHttpsModule] = js.undefined
     
-    var maxRedirects: js.UndefOr[Double] = js.native
+    var maxRedirects: js.UndefOr[Double] = js.undefined
     
-    var redirects: js.UndefOr[js.Array[HttpReadable]] = js.native
+    var redirects: js.UndefOr[js.Array[HttpReadable]] = js.undefined
   }
   object HttpOptions {
     
@@ -100,14 +102,13 @@ object httpMod {
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
   }
   
-  @js.native
   trait HttpReadableProps extends StObject {
     
-    var date: js.UndefOr[Double] = js.native
+    var date: js.UndefOr[Double] = js.undefined
     
-    var parsed: js.UndefOr[UrlWithStringQuery] = js.native
+    var parsed: js.UndefOr[UrlWithStringQuery] = js.undefined
     
-    var redirects: js.UndefOr[js.Array[HttpReadable]] = js.native
+    var redirects: js.UndefOr[js.Array[HttpReadable]] = js.undefined
   }
   object HttpReadableProps {
     

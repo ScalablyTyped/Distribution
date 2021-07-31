@@ -4,49 +4,45 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.childProcessMod.ForkOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("worker-farm", JSImport.Namespace)
-  @js.native
-  def apply(name: String): Workers = js.native
-  @JSImport("worker-farm", JSImport.Namespace)
-  @js.native
-  def apply(name: String, exportedMethods: js.Array[String]): Workers = js.native
-  @JSImport("worker-farm", JSImport.Namespace)
-  @js.native
-  def apply(options: FarmOptions, name: String): Workers = js.native
-  @JSImport("worker-farm", JSImport.Namespace)
-  @js.native
-  def apply(options: FarmOptions, name: String, exportedMethods: js.Array[String]): Workers = js.native
+  @scala.inline
+  def apply(name: String): Workers = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[Workers]
+  @scala.inline
+  def apply(name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
+  @scala.inline
+  def apply(options: FarmOptions, name: String): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Workers]
+  @scala.inline
+  def apply(options: FarmOptions, name: String, exportedMethods: js.Array[String]): Workers = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any], exportedMethods.asInstanceOf[js.Any])).asInstanceOf[Workers]
   
-  @JSImport("worker-farm", "end")
+  @JSImport("worker-farm", JSImport.Namespace)
   @js.native
-  def end(workers: Workers): Unit = js.native
-  @JSImport("worker-farm", "end")
-  @js.native
-  def end(workers: Workers, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def end(workers: Workers): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def end(workers: Workers, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("end")(workers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait FarmOptions extends StObject {
     
-    var autoStart: js.UndefOr[Boolean] = js.native
+    var autoStart: js.UndefOr[Boolean] = js.undefined
     
-    var maxCallTime: js.UndefOr[Double] = js.native
+    var maxCallTime: js.UndefOr[Double] = js.undefined
     
-    var maxCallsPerWorker: js.UndefOr[Double] = js.native
+    var maxCallsPerWorker: js.UndefOr[Double] = js.undefined
     
-    var maxConcurrentCalls: js.UndefOr[Double] = js.native
+    var maxConcurrentCalls: js.UndefOr[Double] = js.undefined
     
-    var maxConcurrentCallsPerWorker: js.UndefOr[Double] = js.native
+    var maxConcurrentCallsPerWorker: js.UndefOr[Double] = js.undefined
     
-    var maxConcurrentWorkers: js.UndefOr[Double] = js.native
+    var maxConcurrentWorkers: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var workerOptions: js.UndefOr[ForkOptions] = js.native
+    var workerOptions: js.UndefOr[ForkOptions] = js.undefined
   }
   object FarmOptions {
     
@@ -122,7 +118,9 @@ object mod {
   type WorkerCallback4 = js.Function4[/* arg1 */ js.Any, /* arg2 */ js.Any, /* arg3 */ js.Any, /* arg4 */ js.Any, Unit]
   
   @js.native
-  trait Workers extends /* x */ StringDictionary[Workers] {
+  trait Workers
+    extends StObject
+       with /* x */ StringDictionary[Workers] {
     
     def apply(arg1: js.Any, arg2: js.Any, arg3: js.Any, arg4: js.Any, callback: WorkerCallback): Unit = js.native
     def apply(arg1: js.Any, arg2: js.Any, arg3: js.Any, callback: WorkerCallback): Unit = js.native

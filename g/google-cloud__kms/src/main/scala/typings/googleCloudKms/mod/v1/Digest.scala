@@ -3,17 +3,15 @@ package typings.googleCloudKms.mod.v1
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Digest extends StObject {
   
-  var sha256: js.UndefOr[Buffer] = js.native
+  var sha256: js.UndefOr[Buffer] = js.undefined
   
-  var sha384: js.UndefOr[Buffer] = js.native
+  var sha384: js.UndefOr[Buffer] = js.undefined
   
-  var sha512: js.UndefOr[Buffer] = js.native
+  var sha512: js.UndefOr[Buffer] = js.undefined
 }
 object Digest {
   

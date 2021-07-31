@@ -2,41 +2,39 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRepositoryRequest extends StObject {
   
   /**
     *  A description of the created repository. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  The domain that contains the created repository. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The name of the repository to create. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
   
   /**
     * One or more tag key-value pairs for the repository.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
     */
-  var upstreams: js.UndefOr[UpstreamRepositoryList] = js.native
+  var upstreams: js.UndefOr[UpstreamRepositoryList] = js.undefined
 }
 object CreateRepositoryRequest {
   

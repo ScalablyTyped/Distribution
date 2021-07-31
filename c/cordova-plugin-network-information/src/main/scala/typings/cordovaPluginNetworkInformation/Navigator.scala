@@ -2,21 +2,19 @@ package typings.cordovaPluginNetworkInformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /**
     * This plugin provides an implementation of an old version of the Network Information API.
     * It provides information about the device's cellular and wifi connection, and whether the device has an internet connection.
     */
-  var connection: Connection = js.native
+  var connection: Connection
   
   // see https://github.com/apache/cordova-plugin-network-information/blob/dev/doc/index.md#api-change
   // for 
-  var network: typings.cordovaPluginNetworkInformation.anon.Connection = js.native
+  var network: typings.cordovaPluginNetworkInformation.anon.Connection
 }
 object Navigator {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The window which has the keyboard focus is the window which gets the keyboard events.
   */
-@js.native
-trait XFocusListener extends XEventListener {
+trait XFocusListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a window gains the keyboard focus.
     * @see XActivateListener.windowActivated
     */
-  def focusGained(e: FocusEvent): Unit = js.native
+  def focusGained(e: FocusEvent): Unit
   
   /**
     * is invoked when a window loses the keyboard focus.
     * @see XActivateListener.windowDeactivated
     */
-  def focusLost(e: FocusEvent): Unit = js.native
+  def focusLost(e: FocusEvent): Unit
 }
 object XFocusListener {
   

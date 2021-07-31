@@ -4,7 +4,6 @@ import typings.pixiJs.PIXI.IFontMetrics
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.TextMetrics")
 @js.native
 class TextMetrics protected ()
-  extends typings.pixiJs.PIXI.TextMetrics {
+  extends StObject
+     with typings.pixiJs.PIXI.TextMetrics {
   def this(
     text: String,
     style: typings.pixiJs.PIXI.TextStyle,
@@ -33,6 +33,78 @@ class TextMetrics protected ()
     maxLineWidth: Double,
     fontProperties: js.Any
   ) = this()
+  
+  /**
+    * The font properties object from TextMetrics.measureFont
+    *
+    * @member {PIXI.IFontMetrics} PIXI.TextMetrics#fontProperties
+    */
+  /* CompleteClass */
+  var fontProperties: IFontMetrics = js.native
+  
+  /**
+    * The measured height of the text
+    *
+    * @member {number} PIXI.TextMetrics#height
+    */
+  /* CompleteClass */
+  var height: Double = js.native
+  
+  /**
+    * The measured line height for this style
+    *
+    * @member {number} PIXI.TextMetrics#lineHeight
+    */
+  /* CompleteClass */
+  var lineHeight: Double = js.native
+  
+  /**
+    * An array of the line widths for each line matched to `lines`
+    *
+    * @member {number[]} PIXI.TextMetrics#lineWidths
+    */
+  /* CompleteClass */
+  var lineWidths: js.Array[Double] = js.native
+  
+  /**
+    * An array of lines of the text broken by new lines and wrapping is specified in style
+    *
+    * @member {string[]} PIXI.TextMetrics#lines
+    */
+  /* CompleteClass */
+  var lines: js.Array[String] = js.native
+  
+  /**
+    * The maximum line width for all measured lines
+    *
+    * @member {number} PIXI.TextMetrics#maxLineWidth
+    */
+  /* CompleteClass */
+  var maxLineWidth: Double = js.native
+  
+  /**
+    * The style that was measured
+    *
+    * @member {PIXI.TextStyle} PIXI.TextMetrics#style
+    */
+  /* CompleteClass */
+  var style: typings.pixiJs.PIXI.TextStyle = js.native
+  
+  /**
+    * The text that was measured
+    *
+    * @member {string} PIXI.TextMetrics#text
+    */
+  /* CompleteClass */
+  var text: String = js.native
+  
+  /**
+    * The measured width of the text
+    *
+    * @member {number} PIXI.TextMetrics#width
+    */
+  /* CompleteClass */
+  var width: Double = js.native
 }
 object TextMetrics {
   
@@ -105,9 +177,8 @@ object TextMetrics {
     * @return {boolean} whether to break word or not
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.canBreakChars")
-  @js.native
-  def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = js.native
+  @scala.inline
+  def canBreakChars(char: String, nextChar: String, token: String, index: Double, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakChars")(char.asInstanceOf[js.Any], nextChar.asInstanceOf[js.Any], token.asInstanceOf[js.Any], index.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -121,9 +192,8 @@ object TextMetrics {
     * @return {boolean} whether to break word or not
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.canBreakWords")
-  @js.native
-  def canBreakWords(token: String, breakWords: Boolean): Boolean = js.native
+  @scala.inline
+  def canBreakWords(token: String, breakWords: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("canBreakWords")(token.asInstanceOf[js.Any], breakWords.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Clear font metrics in metrics cache.
@@ -132,12 +202,10 @@ object TextMetrics {
     * @param {string} [font] - font name. If font name not set then clear cache for all fonts.
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.clearMetrics")
-  @js.native
-  def clearMetrics(): Unit = js.native
-  @JSGlobal("PIXI.TextMetrics.clearMetrics")
-  @js.native
-  def clearMetrics(font: String): Unit = js.native
+  @scala.inline
+  def clearMetrics(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")().asInstanceOf[Unit]
+  @scala.inline
+  def clearMetrics(font: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearMetrics")(font.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Calculates the ascent, descent and fontSize of a given font-style
@@ -147,9 +215,8 @@ object TextMetrics {
     * @return {PIXI.IFontMetrics} Font properties object
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.measureFont")
-  @js.native
-  def measureFont(font: String): IFontMetrics = js.native
+  @scala.inline
+  def measureFont(font: String): IFontMetrics = ^.asInstanceOf[js.Dynamic].applyDynamic("measureFont")(font.asInstanceOf[js.Any]).asInstanceOf[IFontMetrics]
   
   /**
     * Measures the supplied string of text and returns a Rectangle.
@@ -161,23 +228,14 @@ object TextMetrics {
     * @return {PIXI.TextMetrics} measured width and height of the text.
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.measureText")
-  @js.native
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.TextMetrics = js.native
-  @JSGlobal("PIXI.TextMetrics.measureText")
-  @js.native
-  def measureText(
-    text: String,
-    style: typings.pixiJs.PIXI.TextStyle,
-    wordWrap: js.UndefOr[scala.Nothing],
-    canvas: HTMLCanvasElement
-  ): typings.pixiJs.PIXI.TextMetrics = js.native
-  @JSGlobal("PIXI.TextMetrics.measureText")
-  @js.native
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = js.native
-  @JSGlobal("PIXI.TextMetrics.measureText")
-  @js.native
-  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = js.native
+  @scala.inline
+  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  @scala.inline
+  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  @scala.inline
+  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Boolean, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
+  @scala.inline
+  def measureText(text: String, style: typings.pixiJs.PIXI.TextStyle, wordWrap: Unit, canvas: HTMLCanvasElement): typings.pixiJs.PIXI.TextMetrics = (^.asInstanceOf[js.Dynamic].applyDynamic("measureText")(text.asInstanceOf[js.Any], style.asInstanceOf[js.Any], wordWrap.asInstanceOf[js.Any], canvas.asInstanceOf[js.Any])).asInstanceOf[typings.pixiJs.PIXI.TextMetrics]
   
   /**
     * Overridable helper method used internally by TextMetrics, exposed to allow customizing the class's behavior.
@@ -194,7 +252,6 @@ object TextMetrics {
     * @return {string[]} The characters of the token
     */
   /* static member */
-  @JSGlobal("PIXI.TextMetrics.wordWrapSplit")
-  @js.native
-  def wordWrapSplit(token: String): js.Array[String] = js.native
+  @scala.inline
+  def wordWrapSplit(token: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("wordWrapSplit")(token.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
 }

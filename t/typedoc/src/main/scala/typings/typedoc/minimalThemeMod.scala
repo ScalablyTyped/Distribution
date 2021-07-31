@@ -6,7 +6,6 @@ import typings.typedoc.reflectionsMod.DeclarationReflection
 import typings.typedoc.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minimalThemeMod {
@@ -21,8 +20,11 @@ object minimalThemeMod {
   /* static members */
   object MinimalTheme {
     
-    @JSImport("typedoc/dist/lib/output/themes/MinimalTheme", "MinimalTheme.buildToc")
+    @JSImport("typedoc/dist/lib/output/themes/MinimalTheme", "MinimalTheme")
     @js.native
-    def buildToc(model: DeclarationReflection, parent: NavigationItem): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildToc(model: DeclarationReflection, parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

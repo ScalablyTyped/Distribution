@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Selects a key from a ConfigMap.
   */
-@js.native
 trait ConfigMapKeySelector extends StObject {
   
   /**
     * The key to select.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Name of the referent. More info: https://kubernetes.io/docs/concepts/overview/working-with-objects/names/#names
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Specify whether the ConfigMap or its key must be defined
     */
-  var optional: Boolean = js.native
+  var optional: Boolean
 }
 object ConfigMapKeySelector {
   

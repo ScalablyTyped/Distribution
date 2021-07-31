@@ -2,55 +2,53 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyCode extends StObject {
   
-  var BACKSPACE: Double = js.native
+  var BACKSPACE: Double
   
-  var COMMA: Double = js.native
+  var COMMA: Double
   
-  var DELETE: Double = js.native
+  var DELETE: Double
   
-  var DOWN: Double = js.native
+  var DOWN: Double
   
-  var END: Double = js.native
+  var END: Double
   
-  var ENTER: Double = js.native
+  var ENTER: Double
   
-  var ESCAPE: Double = js.native
+  var ESCAPE: Double
   
-  var HOME: Double = js.native
+  var HOME: Double
   
-  var LEFT: Double = js.native
+  var LEFT: Double
   
-  var NUMPAD_ADD: Double = js.native
+  var NUMPAD_ADD: Double
   
-  var NUMPAD_DECIMAL: Double = js.native
+  var NUMPAD_DECIMAL: Double
   
-  var NUMPAD_DIVIDE: Double = js.native
+  var NUMPAD_DIVIDE: Double
   
-  var NUMPAD_ENTER: Double = js.native
+  var NUMPAD_ENTER: Double
   
-  var NUMPAD_MULTIPLY: Double = js.native
+  var NUMPAD_MULTIPLY: Double
   
-  var NUMPAD_SUBTRACT: Double = js.native
+  var NUMPAD_SUBTRACT: Double
   
-  var PAGE_DOWN: Double = js.native
+  var PAGE_DOWN: Double
   
-  var PAGE_UP: Double = js.native
+  var PAGE_UP: Double
   
-  var PERIOD: Double = js.native
+  var PERIOD: Double
   
-  var RIGHT: Double = js.native
+  var RIGHT: Double
   
-  var SPACE: Double = js.native
+  var SPACE: Double
   
-  var TAB: Double = js.native
+  var TAB: Double
   
-  var UP: Double = js.native
+  var UP: Double
 }
 object KeyCode {
   

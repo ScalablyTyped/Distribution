@@ -5,7 +5,6 @@ import typings.angular.mod.IPromise
 import typings.angularStrap.anon.Hide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -14,17 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object typeahead {
   
-  @js.native
   trait ITypeahead extends StObject {
     
     @JSName("$promise")
-    var $promise: IPromise[Unit] = js.native
+    var $promise: IPromise[Unit]
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object ITypeahead {
     
@@ -51,46 +49,45 @@ object typeahead {
     }
   }
   
-  @js.native
   trait ITypeaheadOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var autoSelect: js.UndefOr[Boolean] = js.native
+    var autoSelect: js.UndefOr[Boolean] = js.undefined
     
-    var comparator: js.UndefOr[String] = js.native
+    var comparator: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* typeahead */ ITypeahead, Unit]] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var trimValue: js.UndefOr[Boolean] = js.native
+    var trimValue: js.UndefOr[Boolean] = js.undefined
     
-    var watchOptions: js.UndefOr[Boolean] = js.native
+    var watchOptions: js.UndefOr[Boolean] = js.undefined
   }
   object ITypeaheadOptions {
     
@@ -219,10 +216,9 @@ object typeahead {
     }
   }
   
-  @js.native
   trait ITypeaheadProvider extends StObject {
     
-    var defaults: ITypeaheadOptions = js.native
+    var defaults: ITypeaheadOptions
   }
   object ITypeaheadProvider {
     

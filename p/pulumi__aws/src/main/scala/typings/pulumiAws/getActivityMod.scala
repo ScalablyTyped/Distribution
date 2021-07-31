@@ -3,36 +3,34 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getActivityMod {
   
-  @JSImport("@pulumi/aws/sfn/getActivity", "getActivity")
+  @JSImport("@pulumi/aws/sfn/getActivity", JSImport.Namespace)
   @js.native
-  def getActivity(): js.Promise[GetActivityResult] = js.native
-  @JSImport("@pulumi/aws/sfn/getActivity", "getActivity")
-  @js.native
-  def getActivity(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
-  @JSImport("@pulumi/aws/sfn/getActivity", "getActivity")
-  @js.native
-  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = js.native
-  @JSImport("@pulumi/aws/sfn/getActivity", "getActivity")
-  @js.native
-  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getActivity(): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")().asInstanceOf[js.Promise[GetActivityResult]]
+  @scala.inline
+  def getActivity(args: Unit, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
+  @scala.inline
+  def getActivity(args: GetActivityArgs): js.Promise[GetActivityResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetActivityResult]]
+  @scala.inline
+  def getActivity(args: GetActivityArgs, opts: InvokeOptions): js.Promise[GetActivityResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActivity")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetActivityResult]]
+  
   trait GetActivityArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the activity.
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * The name that identifies the activity.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object GetActivityArgs {
     
@@ -59,22 +57,21 @@ object getActivityMod {
     }
   }
   
-  @js.native
   trait GetActivityResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The date the activity was created.
       */
-    val creationDate: String = js.native
+    val creationDate: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
   }
   object GetActivityResult {
     

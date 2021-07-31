@@ -20,7 +20,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
@@ -28,14 +27,15 @@ object interfaceMod {
   /* Inlined parent std.Pick<react.react.ComponentClass<Props, State>, 'displayName' | 'defaultProps' | 'propTypes' | 'contextType' | 'contextTypes' | 'childContextTypes'> */
   @js.native
   trait GenericSlider[Props, State]
-    extends Instantiable1[/* props */ Props, GenericSliderClass[Props, State]]
+    extends StObject
+       with Instantiable1[/* props */ Props, GenericSliderClass[Props, State]]
        with Instantiable2[/* props */ Props, /* context */ js.Any, GenericSliderClass[Props, State]] {
     
-    var childContextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    var childContextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
     
-    var contextType: js.UndefOr[Context[_]] = js.native
+    var contextType: js.UndefOr[Context[js.Any]] = js.native
     
-    var contextTypes: js.UndefOr[ValidationMap[_]] = js.native
+    var contextTypes: js.UndefOr[ValidationMap[js.Any]] = js.native
     
     var defaultProps: js.UndefOr[Partial[Props]] = js.native
     
@@ -68,50 +68,49 @@ object interfaceMod {
     def trimAlignValue(v: Double, nextProps: Partial[Props]): Double = js.native
   }
   
-  @js.native
   trait GenericSliderProps extends StObject {
     
-    var activeDotStyle: js.UndefOr[CSSProperties] = js.native
+    var activeDotStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dotStyle: js.UndefOr[CSSProperties] = js.native
+    var dotStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var dots: js.UndefOr[Boolean] = js.native
+    var dots: js.UndefOr[Boolean] = js.undefined
     
-    var handleStyle: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.native
+    var handleStyle: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.undefined
     
-    var included: js.UndefOr[Boolean] = js.native
+    var included: js.UndefOr[Boolean] = js.undefined
     
-    var marks: js.UndefOr[Record[Double, ReactNode | Label]] = js.native
+    var marks: js.UndefOr[Record[Double, ReactNode | Label]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maximumTrackStyle: js.UndefOr[CSSProperties] = js.native
+    var maximumTrackStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ FocusEvent[HTMLDivElement], Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var railStyle: js.UndefOr[CSSProperties] = js.native
+    var railStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double | Null] = js.native
+    var step: js.UndefOr[Double | Null] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var trackStyle: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.native
+    var trackStyle: js.UndefOr[CSSProperties | js.Array[CSSProperties]] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object GenericSliderProps {
     
@@ -261,10 +260,9 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait GenericSliderState extends StObject {
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object GenericSliderState {
     

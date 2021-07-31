@@ -2,21 +2,19 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCaseResultAttachmentModel extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var iterationId: Double = js.native
+  var iterationId: Double
   
-  var name: String = js.native
+  var name: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var url: String = js.native
+  var url: String
 }
 object TestCaseResultAttachmentModel {
   

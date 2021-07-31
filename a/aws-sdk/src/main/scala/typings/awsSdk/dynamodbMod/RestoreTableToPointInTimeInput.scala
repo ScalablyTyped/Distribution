@@ -2,61 +2,59 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreTableToPointInTimeInput extends StObject {
   
   /**
     * The billing mode of the restored table.
     */
-  var BillingModeOverride: js.UndefOr[BillingMode] = js.native
+  var BillingModeOverride: js.UndefOr[BillingMode] = js.undefined
   
   /**
     * List of global secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
     */
-  var GlobalSecondaryIndexOverride: js.UndefOr[GlobalSecondaryIndexList] = js.native
+  var GlobalSecondaryIndexOverride: js.UndefOr[GlobalSecondaryIndexList] = js.undefined
   
   /**
     * List of local secondary indexes for the restored table. The indexes provided should match existing secondary indexes. You can choose to exclude some or all of the indexes at the time of restore.
     */
-  var LocalSecondaryIndexOverride: js.UndefOr[LocalSecondaryIndexList] = js.native
+  var LocalSecondaryIndexOverride: js.UndefOr[LocalSecondaryIndexList] = js.undefined
   
   /**
     * Provisioned throughput settings for the restored table.
     */
-  var ProvisionedThroughputOverride: js.UndefOr[ProvisionedThroughput] = js.native
+  var ProvisionedThroughputOverride: js.UndefOr[ProvisionedThroughput] = js.undefined
   
   /**
     * Time in the past to restore the table to.
     */
-  var RestoreDateTime: js.UndefOr[Date] = js.native
+  var RestoreDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The new server-side encryption settings for the restored table.
     */
-  var SSESpecificationOverride: js.UndefOr[SSESpecification] = js.native
+  var SSESpecificationOverride: js.UndefOr[SSESpecification] = js.undefined
   
   /**
     * The DynamoDB table that will be restored. This value is an Amazon Resource Name (ARN).
     */
-  var SourceTableArn: js.UndefOr[TableArn] = js.native
+  var SourceTableArn: js.UndefOr[TableArn] = js.undefined
   
   /**
     * Name of the source table that is being restored.
     */
-  var SourceTableName: js.UndefOr[TableName] = js.native
+  var SourceTableName: js.UndefOr[TableName] = js.undefined
   
   /**
     * The name of the new table to which it must be restored to.
     */
-  var TargetTableName: TableName = js.native
+  var TargetTableName: TableName
   
   /**
     * Restore the table to the latest possible time. LatestRestorableDateTime is typically 5 minutes before the current time. 
     */
-  var UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.native
+  var UseLatestRestorableTime: js.UndefOr[BooleanObject] = js.undefined
 }
 object RestoreTableToPointInTimeInput {
   

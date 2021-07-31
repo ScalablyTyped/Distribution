@@ -4,7 +4,6 @@ import typings.reduxForm.mod.FormErrors
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object submissionErrorMod {
@@ -17,9 +16,17 @@ object submissionErrorMod {
   
   @JSImport("redux-form/lib/SubmissionError", "SubmissionError")
   @js.native
-  class SubmissionError[FormData, ErrorType] protected () extends Error {
+  class SubmissionError[FormData, ErrorType] protected ()
+    extends StObject
+       with Error {
     def this(errors: FormErrors[FormData, ErrorType]) = this()
     
     var errors: FormErrors[FormData, ErrorType] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
 }

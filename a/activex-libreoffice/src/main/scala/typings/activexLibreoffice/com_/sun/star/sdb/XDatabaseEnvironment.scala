@@ -7,19 +7,19 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.sdbc.XDriverManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is not to be used anymore.
   * @deprecated Deprecated
   */
-@js.native
-trait XDatabaseEnvironment extends XDriverManager {
+trait XDatabaseEnvironment
+  extends StObject
+     with XDriverManager {
   
-  def createDatabaseAccess(URL: String, title: String): XDatabaseAccess = js.native
+  def createDatabaseAccess(URL: String, title: String): XDatabaseAccess
   
-  def getDatabaseAccess(URL: String): XDatabaseAccess = js.native
+  def getDatabaseAccess(URL: String): XDatabaseAccess
 }
 object XDatabaseEnvironment {
   

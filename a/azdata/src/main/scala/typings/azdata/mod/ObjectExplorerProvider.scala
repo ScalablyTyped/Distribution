@@ -3,21 +3,21 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectExplorerProvider extends ObjectExplorerProviderBase {
+trait ObjectExplorerProvider
+  extends StObject
+     with ObjectExplorerProviderBase {
   
-  def closeSession(closeSessionInfo: ObjectExplorerCloseSessionInfo): Thenable[ObjectExplorerCloseSessionResponse] = js.native
+  def closeSession(closeSessionInfo: ObjectExplorerCloseSessionInfo): Thenable[ObjectExplorerCloseSessionResponse]
   
-  def createNewSession(connInfo: ConnectionInfo): Thenable[ObjectExplorerSessionResponse] = js.native
+  def createNewSession(connInfo: ConnectionInfo): Thenable[ObjectExplorerSessionResponse]
   
-  def registerOnSessionCreated(handler: js.Function1[/* response */ ObjectExplorerSession, _]): Unit = js.native
+  def registerOnSessionCreated(handler: js.Function1[/* response */ ObjectExplorerSession, js.Any]): Unit
   
   var registerOnSessionDisconnected: js.UndefOr[
-    js.Function1[/* handler */ js.Function1[/* response */ ObjectExplorerSession, _], Unit]
-  ] = js.native
+    js.Function1[/* handler */ js.Function1[/* response */ ObjectExplorerSession, js.Any], Unit]
+  ] = js.undefined
 }
 object ObjectExplorerProvider {
   
@@ -29,8 +29,8 @@ object ObjectExplorerProvider {
     findNodes: FindNodesInfo => Thenable[ObjectExplorerFindNodesResponse],
     providerId: String,
     refreshNode: ExpandNodeInfo => Thenable[Boolean],
-    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, _] => Unit,
-    registerOnSessionCreated: js.Function1[/* response */ ObjectExplorerSession, _] => Unit
+    registerOnExpandCompleted: js.Function1[/* response */ ObjectExplorerExpandInfo, js.Any] => Unit,
+    registerOnSessionCreated: js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit
   ): ObjectExplorerProvider = {
     val __obj = js.Dynamic.literal(closeSession = js.Any.fromFunction1(closeSession), createNewSession = js.Any.fromFunction1(createNewSession), expandNode = js.Any.fromFunction1(expandNode), findNodes = js.Any.fromFunction1(findNodes), providerId = providerId.asInstanceOf[js.Any], refreshNode = js.Any.fromFunction1(refreshNode), registerOnExpandCompleted = js.Any.fromFunction1(registerOnExpandCompleted), registerOnSessionCreated = js.Any.fromFunction1(registerOnSessionCreated))
     __obj.asInstanceOf[ObjectExplorerProvider]
@@ -46,10 +46,10 @@ object ObjectExplorerProvider {
     def setCreateNewSession(value: ConnectionInfo => Thenable[ObjectExplorerSessionResponse]): Self = StObject.set(x, "createNewSession", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1(value))
+    def setRegisterOnSessionCreated(value: js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionCreated", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, _] => Unit): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1(value))
+    def setRegisterOnSessionDisconnected(value: /* handler */ js.Function1[/* response */ ObjectExplorerSession, js.Any] => Unit): Self = StObject.set(x, "registerOnSessionDisconnected", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRegisterOnSessionDisconnectedUndefined: Self = StObject.set(x, "registerOnSessionDisconnected", js.undefined)

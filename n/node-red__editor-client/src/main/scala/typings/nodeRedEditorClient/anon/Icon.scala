@@ -4,17 +4,15 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.default
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[default | simple] = js.native
+  var `type`: js.UndefOr[default | simple] = js.undefined
 }
 object Icon {
   

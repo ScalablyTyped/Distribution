@@ -11,57 +11,55 @@ import typings.devtoolsProtocol.mod.Protocol.Input.SynthesizeScrollGestureReques
 import typings.devtoolsProtocol.mod.Protocol.Input.SynthesizeTapGestureRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputApi extends StObject {
   
   /**
     * Dispatches a key event to the page.
     */
-  def dispatchKeyEvent(params: DispatchKeyEventRequest): js.Promise[Unit] = js.native
+  def dispatchKeyEvent(params: DispatchKeyEventRequest): js.Promise[Unit]
   
   /**
     * Dispatches a mouse event to the page.
     */
-  def dispatchMouseEvent(params: DispatchMouseEventRequest): js.Promise[Unit] = js.native
+  def dispatchMouseEvent(params: DispatchMouseEventRequest): js.Promise[Unit]
   
   /**
     * Dispatches a touch event to the page.
     */
-  def dispatchTouchEvent(params: DispatchTouchEventRequest): js.Promise[Unit] = js.native
+  def dispatchTouchEvent(params: DispatchTouchEventRequest): js.Promise[Unit]
   
   /**
     * Emulates touch event from the mouse event parameters.
     */
-  def emulateTouchFromMouseEvent(params: EmulateTouchFromMouseEventRequest): js.Promise[Unit] = js.native
+  def emulateTouchFromMouseEvent(params: EmulateTouchFromMouseEventRequest): js.Promise[Unit]
   
   /**
     * This method emulates inserting text that doesn't come from a key press,
     * for example an emoji keyboard or an IME.
     */
-  def insertText(params: InsertTextRequest): js.Promise[Unit] = js.native
+  def insertText(params: InsertTextRequest): js.Promise[Unit]
   
   /**
     * Ignores input events (useful while auditing page).
     */
-  def setIgnoreInputEvents(params: SetIgnoreInputEventsRequest): js.Promise[Unit] = js.native
+  def setIgnoreInputEvents(params: SetIgnoreInputEventsRequest): js.Promise[Unit]
   
   /**
     * Synthesizes a pinch gesture over a time period by issuing appropriate touch events.
     */
-  def synthesizePinchGesture(params: SynthesizePinchGestureRequest): js.Promise[Unit] = js.native
+  def synthesizePinchGesture(params: SynthesizePinchGestureRequest): js.Promise[Unit]
   
   /**
     * Synthesizes a scroll gesture over a time period by issuing appropriate touch events.
     */
-  def synthesizeScrollGesture(params: SynthesizeScrollGestureRequest): js.Promise[Unit] = js.native
+  def synthesizeScrollGesture(params: SynthesizeScrollGestureRequest): js.Promise[Unit]
   
   /**
     * Synthesizes a tap gesture over a time period by issuing appropriate touch events.
     */
-  def synthesizeTapGesture(params: SynthesizeTapGestureRequest): js.Promise[Unit] = js.native
+  def synthesizeTapGesture(params: SynthesizeTapGestureRequest): js.Promise[Unit]
 }
 object InputApi {
   

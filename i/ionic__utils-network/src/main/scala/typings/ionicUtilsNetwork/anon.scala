@@ -2,15 +2,13 @@ package typings.ionicUtilsNetwork
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Device extends StObject {
     
-    var device: String = js.native
+    var device: String
   }
   object Device {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Timeout {
     

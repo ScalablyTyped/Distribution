@@ -3,23 +3,21 @@ package typings.formSerializer
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object FormSerializer {
   
-  @js.native
   trait FormSerializerPatterns extends StObject {
     
-    var fixed: RegExp = js.native
+    var fixed: RegExp
     
-    var key: RegExp = js.native
+    var key: RegExp
     
-    var named: RegExp = js.native
+    var named: RegExp
     
-    var push: RegExp = js.native
+    var push: RegExp
     
-    var validate: RegExp = js.native
+    var validate: RegExp
   }
   object FormSerializerPatterns {
     

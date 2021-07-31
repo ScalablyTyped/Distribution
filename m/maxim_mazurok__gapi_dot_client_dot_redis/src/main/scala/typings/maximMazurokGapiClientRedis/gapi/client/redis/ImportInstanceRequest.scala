@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRedis.gapi.client.redis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportInstanceRequest extends StObject {
   
   /** Required. Specify data to be imported. */
-  var inputConfig: js.UndefOr[InputConfig] = js.native
+  var inputConfig: js.UndefOr[InputConfig] = js.undefined
 }
 object ImportInstanceRequest {
   

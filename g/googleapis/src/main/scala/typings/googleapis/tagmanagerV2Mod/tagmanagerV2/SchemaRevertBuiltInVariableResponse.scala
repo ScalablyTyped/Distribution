@@ -2,19 +2,17 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of reverting a built-in variable in a workspace.
   */
-@js.native
 trait SchemaRevertBuiltInVariableResponse extends StObject {
   
   /**
     * Whether the built-in variable is enabled after reversion.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaRevertBuiltInVariableResponse {
   

@@ -11,8 +11,8 @@ A simple module for signing Ethereum transactions.
 | Full name          | ethjs-signer |
 | Keywords           | ethereum, rpc, formatter, format, ethereum, encoding, decoding |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 63301 |
+| # dependents       | 19 |
+| # downloads        | 69026 |
 | # stars            | 0 |
 
 ## Links

@@ -14,11 +14,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SmartMappingSliderBase extends Widget_ {
+trait SmartMappingSliderBase
+  extends StObject
+     with Widget_ {
   
   /**
     * The [Histogram](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Histogram.html) associated with the data represented on the slider.
@@ -33,7 +34,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction)
     */
   def inputFormatFunction(value: Double): String = js.native
-  def inputFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def inputFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A function used to format user inputs.
     *
@@ -64,7 +65,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputParseFunction)
     */
   def inputParseFunction(value: String): Double = js.native
-  def inputParseFunction(value: String, `type`: js.UndefOr[scala.Nothing], index: Double): Double = js.native
+  def inputParseFunction(value: String, `type`: Unit, index: Double): Double = js.native
   /**
     * Function used to parse slider inputs formatted by the [inputFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#inputFormatFunction).
     *
@@ -99,7 +100,7 @@ trait SmartMappingSliderBase extends Widget_ {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#labelFormatFunction)
     */
   def labelFormatFunction(value: Double): String = js.native
-  def labelFormatFunction(value: Double, `type`: js.UndefOr[scala.Nothing], index: Double): String = js.native
+  def labelFormatFunction(value: Double, `type`: Unit, index: Double): String = js.native
   /**
     * A modified version of [Slider.labelFormatFunction](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Slider.html#labelFormatFunction), which is a custom function used to format labels on the thumbs, min, max, and average values.
     *

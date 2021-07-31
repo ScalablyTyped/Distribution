@@ -6,27 +6,27 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCoursesAliasesDelete extends StandardParameters {
+trait ParamsResourceCoursesAliasesDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Alias to delete. This may not be the Classroom-assigned identifier.
     */
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Identifier of the course whose alias should be deleted. This identifier
     * can be either the Classroom-assigned identifier or an alias.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceCoursesAliasesDelete {
   

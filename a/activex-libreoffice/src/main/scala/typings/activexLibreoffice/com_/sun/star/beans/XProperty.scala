@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Provides access to traits of this object that would otherwise only be available from a containing {@link XPropertySet} via its {@link
   * XPropertySetInfo} .
   */
-@js.native
-trait XProperty extends XInterface {
+trait XProperty
+  extends StObject
+     with XInterface {
   
   /** @returns the specification of this object as {@link Property} . */
-  val AsProperty: Property = js.native
+  val AsProperty: Property
   
   /** @returns the specification of this object as {@link Property} . */
-  def getAsProperty(): Property = js.native
+  def getAsProperty(): Property
 }
 object XProperty {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2Fulfillment extends StObject {
   
   /** Optional. The human-readable name of the fulfillment, unique within the agent. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Optional. Whether fulfillment is enabled. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. The field defines whether the fulfillment is enabled for certain features. */
-  var features: js.UndefOr[js.Array[GoogleCloudDialogflowV2FulfillmentFeature]] = js.native
+  var features: js.UndefOr[js.Array[GoogleCloudDialogflowV2FulfillmentFeature]] = js.undefined
   
   /** Configuration for a generic web service. */
-  var genericWebService: js.UndefOr[GoogleCloudDialogflowV2FulfillmentGenericWebService] = js.native
+  var genericWebService: js.UndefOr[GoogleCloudDialogflowV2FulfillmentGenericWebService] = js.undefined
   
   /** Required. The unique identifier of the fulfillment. Format: `projects//agent/fulfillment`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2Fulfillment {
   

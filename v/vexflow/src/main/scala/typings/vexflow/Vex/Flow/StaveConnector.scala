@@ -6,7 +6,6 @@ import typings.vexflow.anon.Shiftx
 import typings.vexflow.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -45,33 +44,53 @@ object StaveConnector {
   object `type` extends StObject {
     
     @js.native
-    sealed trait BOLD_DOUBLE_LEFT extends `type`
+    sealed trait BOLD_DOUBLE_LEFT
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait BOLD_DOUBLE_RIGHT extends `type`
+    sealed trait BOLD_DOUBLE_RIGHT
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait BRACE extends `type`
+    sealed trait BRACE
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait BRACKET extends `type`
+    sealed trait BRACKET
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait DOUBLE extends `type`
+    sealed trait DOUBLE
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait NONE extends `type`
+    sealed trait NONE
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait SINGLE extends `type`
+    sealed trait SINGLE
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait SINGLE_LEFT extends `type`
+    sealed trait SINGLE_LEFT
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait SINGLE_RIGHT extends `type`
+    sealed trait SINGLE_RIGHT
+      extends StObject
+         with `type`
     
     @js.native
-    sealed trait THIN_DOUBLE extends `type`
+    sealed trait THIN_DOUBLE
+      extends StObject
+         with `type`
   }
 }

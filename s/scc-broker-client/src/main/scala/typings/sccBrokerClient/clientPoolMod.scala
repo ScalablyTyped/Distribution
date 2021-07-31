@@ -12,7 +12,6 @@ import typings.socketclusterClient.clientsocketMod.SubscribeOptions
 import typings.socketclusterClient.mod.AGClientSocket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientPoolMod {
@@ -23,14 +22,13 @@ object clientPoolMod {
     def this(options: ClientPoolOptions) = this()
   }
   
-  @js.native
   trait BrokenDownURI extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[`true`] = js.native
+    var secure: js.UndefOr[`true`] = js.undefined
   }
   object BrokenDownURI {
     
@@ -107,8 +105,8 @@ object clientPoolMod {
     
     def selectClient(key: String): AGClientSocket = js.native
     
-    def subscribe(channelName: String): typings.agChannel.mod.^[_] = js.native
-    def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[_] = js.native
+    def subscribe(channelName: String): typings.agChannel.mod.^[js.Any] = js.native
+    def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[js.Any] = js.native
     
     def subscriptions(): js.Array[String] = js.native
     def subscriptions(includePending: Boolean): js.Array[String] = js.native
@@ -118,14 +116,13 @@ object clientPoolMod {
     def unsubscribe(channelName: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait ClientPoolOptions extends StObject {
     
-    var authKey: js.UndefOr[Secret] = js.native
+    var authKey: js.UndefOr[Secret] = js.undefined
     
-    var clientCount: js.UndefOr[Double] = js.native
+    var clientCount: js.UndefOr[Double] = js.undefined
     
-    var targetURI: String = js.native
+    var targetURI: String
   }
   object ClientPoolOptions {
     
@@ -155,16 +152,15 @@ object clientPoolMod {
     }
   }
   
-  @js.native
   trait PublishData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var poolIndex: Double = js.native
+    var poolIndex: Double
     
-    var targetURI: String = js.native
+    var targetURI: String
   }
   object PublishData {
     
@@ -191,16 +187,15 @@ object clientPoolMod {
     }
   }
   
-  @js.native
   trait PublishFailData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
     
-    var poolIndex: Double = js.native
+    var poolIndex: Double
     
-    var targetURI: String = js.native
+    var targetURI: String
   }
   object PublishFailData {
     
@@ -227,14 +222,13 @@ object clientPoolMod {
     }
   }
   
-  @js.native
   trait SubscribeData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var poolIndex: Double = js.native
+    var poolIndex: Double
     
-    var targetURI: String = js.native
+    var targetURI: String
   }
   object SubscribeData {
     
@@ -258,10 +252,11 @@ object clientPoolMod {
     }
   }
   
-  @js.native
-  trait SubscribeFailData extends SubscribeData {
+  trait SubscribeFailData
+    extends StObject
+       with SubscribeData {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
   }
   object SubscribeFailData {
     

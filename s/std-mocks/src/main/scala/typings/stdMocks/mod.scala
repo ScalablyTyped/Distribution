@@ -9,47 +9,40 @@ import typings.stdMocks.anon.StderrStdout
 import typings.stdMocks.anon.Stdout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("std-mocks", "flush")
+  @JSImport("std-mocks", JSImport.Namespace)
   @js.native
-  def flush(): StderrStdout = js.native
-  @JSImport("std-mocks", "flush")
-  @js.native
-  def flush(opts: Optionsstderrfalse): Stdout = js.native
-  @JSImport("std-mocks", "flush")
-  @js.native
-  def flush(opts: Optionsstdoutfalse): Stderr = js.native
-  @JSImport("std-mocks", "flush")
-  @js.native
-  def flush(opts: Optionsstdoutfalsestderrf): js.Object = js.native
-  @JSImport("std-mocks", "flush")
-  @js.native
-  def flush(opts: Options): StderrStdout = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("std-mocks", "restore")
-  @js.native
-  def restore(): Unit = js.native
-  @JSImport("std-mocks", "restore")
-  @js.native
-  def restore(opts: Options): Unit = js.native
+  @scala.inline
+  def flush(): StderrStdout = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[StderrStdout]
+  @scala.inline
+  def flush(opts: Optionsstderrfalse): Stdout = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(opts.asInstanceOf[js.Any]).asInstanceOf[Stdout]
+  @scala.inline
+  def flush(opts: Optionsstdoutfalse): Stderr = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(opts.asInstanceOf[js.Any]).asInstanceOf[Stderr]
+  @scala.inline
+  def flush(opts: Optionsstdoutfalsestderrf): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def flush(opts: Options): StderrStdout = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(opts.asInstanceOf[js.Any]).asInstanceOf[StderrStdout]
   
-  @JSImport("std-mocks", "use")
-  @js.native
-  def use(): Unit = js.native
-  @JSImport("std-mocks", "use")
-  @js.native
-  def use(opts: Optionsprintbooleanundefi): Unit = js.native
+  @scala.inline
+  def restore(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")().asInstanceOf[Unit]
+  @scala.inline
+  def restore(opts: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restore")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def use(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")().asInstanceOf[Unit]
+  @scala.inline
+  def use(opts: Optionsprintbooleanundefi): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("use")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var stderr: js.UndefOr[Boolean] = js.native
+    var stderr: js.UndefOr[Boolean] = js.undefined
     
-    var stdout: js.UndefOr[Boolean] = js.native
+    var stdout: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

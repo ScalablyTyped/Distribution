@@ -3,36 +3,34 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeSpec extends StObject {
   
   /**
     * The defaults for backends.
     */
-  var backendDefaults: js.UndefOr[Input[VirtualNodeSpecBackendDefaults]] = js.native
+  var backendDefaults: js.UndefOr[Input[VirtualNodeSpecBackendDefaults]] = js.undefined
   
   /**
     * The backends to which the virtual node is expected to send outbound traffic.
     */
-  var backends: js.UndefOr[Input[js.Array[Input[VirtualNodeSpecBackend]]]] = js.native
+  var backends: js.UndefOr[Input[js.Array[Input[VirtualNodeSpecBackend]]]] = js.undefined
   
   /**
     * The listeners from which the virtual node is expected to receive inbound traffic.
     */
-  var listener: js.UndefOr[Input[VirtualNodeSpecListener]] = js.native
+  var listener: js.UndefOr[Input[VirtualNodeSpecListener]] = js.undefined
   
   /**
     * The inbound and outbound access logging information for the virtual node.
     */
-  var logging: js.UndefOr[Input[VirtualNodeSpecLogging]] = js.native
+  var logging: js.UndefOr[Input[VirtualNodeSpecLogging]] = js.undefined
   
   /**
     * The service discovery information for the virtual node.
     */
-  var serviceDiscovery: js.UndefOr[Input[VirtualNodeSpecServiceDiscovery]] = js.native
+  var serviceDiscovery: js.UndefOr[Input[VirtualNodeSpecServiceDiscovery]] = js.undefined
 }
 object VirtualNodeSpec {
   

@@ -2,19 +2,17 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomUUIDFields extends StObject {
   
-  var UUIDFields: js.UndefOr[Boolean] = js.native
+  var UUIDFields: js.UndefOr[Boolean] = js.undefined
   
-  var customFields: js.UndefOr[Boolean] = js.native
+  var customFields: js.UndefOr[Boolean] = js.undefined
   
-  var customUUIDFields: js.UndefOr[Boolean] = js.native
+  var customUUIDFields: js.UndefOr[Boolean] = js.undefined
   
-  var totalCount: js.UndefOr[Boolean] = js.native
+  var totalCount: js.UndefOr[Boolean] = js.undefined
 }
 object CustomUUIDFields {
   

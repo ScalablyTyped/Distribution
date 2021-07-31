@@ -2,34 +2,32 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The card response message.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageCard extends StObject {
   
   /**
     * Optional. The collection of card buttons.
     */
-  var buttons: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]] = js.native
+  var buttons: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageCardButton]] = js.undefined
   
   /**
     * Optional. The public URI to an image file for the card.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The subtitle of the card.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The title of the card.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageCard {
   

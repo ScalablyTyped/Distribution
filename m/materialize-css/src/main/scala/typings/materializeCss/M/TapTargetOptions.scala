@@ -3,23 +3,21 @@ package typings.materializeCss.M
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TapTargetOptions extends StObject {
   
   /**
     * Callback function called when Tap Target is closed
     * @default null
     */
-  def onClose(origin: Element): Unit = js.native
+  def onClose(origin: Element): Unit
   
   /**
     * Callback function called when Tap Target is opened
     * @default null
     */
-  def onOpen(origin: Element): Unit = js.native
+  def onOpen(origin: Element): Unit
 }
 object TapTargetOptions {
   

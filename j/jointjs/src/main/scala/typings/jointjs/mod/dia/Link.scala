@@ -30,7 +30,6 @@ import typings.jointjs.mod.routers.RouterJSON
 import typings.jointjs.mod.routers.RouterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "dia.Link")
@@ -38,7 +37,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // default label props
 class Link () extends Cell {
   def this(attributes: Attributes) = this()
-  def this(attributes: js.UndefOr[scala.Nothing], opt: Options) = this()
+  def this(attributes: Unit, opt: Options) = this()
   def this(attributes: Attributes, opt: Options) = this()
   
   def appendLabel(label: Label): js.Array[Label] = js.native
@@ -55,7 +54,7 @@ class Link () extends Cell {
   def connector(connector: ConnectorJSON, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def connector(connector: Connector, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def connector(name: ConnectorType): this.type = js.native
-  def connector(name: ConnectorType, args: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
+  def connector(name: ConnectorType, args: Unit, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def connector(name: ConnectorType, args: ConnectorArguments): this.type = js.native
   def connector(name: ConnectorType, args: ConnectorArguments, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   
@@ -104,21 +103,21 @@ class Link () extends Cell {
   def labels(labels: js.Array[Label]): this.type = js.native
   
   def removeLabel(): js.Array[Label] = js.native
-  def removeLabel(index: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Label] = js.native
   def removeLabel(index: Double): js.Array[Label] = js.native
   def removeLabel(index: Double, opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Label] = js.native
+  def removeLabel(index: Unit, opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Label] = js.native
   
   def removeVertex(): js.Array[Vertex] = js.native
-  def removeVertex(index: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Vertex] = js.native
   def removeVertex(index: Double): js.Array[Vertex] = js.native
   def removeVertex(index: Double, opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Vertex] = js.native
+  def removeVertex(index: Unit, opt: typings.jointjs.mod.dia.Cell.Options): js.Array[Vertex] = js.native
   
   def reparent(): Element = js.native
   def reparent(opt: typings.jointjs.mod.dia.Cell.Options): Element = js.native
   
   def router(): Router | RouterJSON | Null = js.native
   def router(name: RouterType): this.type = js.native
-  def router(name: RouterType, args: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
+  def router(name: RouterType, args: Unit, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def router(name: RouterType, args: RouterArguments): this.type = js.native
   def router(name: RouterType, args: RouterArguments, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def router(router: Router): this.type = js.native
@@ -127,18 +126,13 @@ class Link () extends Cell {
   def router(router: Router, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   
   def scale(sx: Double, sy: Double): this.type = js.native
-  def scale(
-    sx: Double,
-    sy: Double,
-    origin: js.UndefOr[scala.Nothing],
-    opt: typings.jointjs.mod.dia.Cell.Options
-  ): this.type = js.native
+  def scale(sx: Double, sy: Double, origin: Unit, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def scale(sx: Double, sy: Double, origin: Point): this.type = js.native
   def scale(sx: Double, sy: Double, origin: Point, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   
   def source(): EndJSON = js.native
   def source(source: Cell): this.type = js.native
-  def source(source: Cell, args: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
+  def source(source: Cell, args: Unit, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def source(source: Cell, args: EndCellArgs): this.type = js.native
   def source(source: Cell, args: EndCellArgs, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def source(source: EndJSON): this.type = js.native
@@ -146,7 +140,7 @@ class Link () extends Cell {
   
   def target(): EndJSON = js.native
   def target(target: Cell): this.type = js.native
-  def target(target: Cell, args: js.UndefOr[scala.Nothing], opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
+  def target(target: Cell, args: Unit, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def target(target: Cell, args: EndCellArgs): this.type = js.native
   def target(target: Cell, args: EndCellArgs, opt: typings.jointjs.mod.dia.Cell.Options): this.type = js.native
   def target(target: EndJSON): this.type = js.native
@@ -169,40 +163,31 @@ class Link () extends Cell {
 }
 object Link {
   
-  /* static member */
-  @JSImport("jointjs", "dia.Link.define")
+  @JSImport("jointjs", "dia.Link")
   @js.native
-  def define(`type`: String): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(
-    `type`: String,
-    defaults: js.UndefOr[scala.Nothing],
-    protoProps: js.UndefOr[scala.Nothing],
-    staticProps: js.Any
-  ): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.UndefOr[scala.Nothing], protoProps: js.Any, staticProps: js.Any): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.UndefOr[scala.Nothing], staticProps: js.Any): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Link] = js.native
-  @JSImport("jointjs", "dia.Link.define")
-  @js.native
-  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  /* static member */
+  @scala.inline
+  def define(`type`: String): Constructor[Link] = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any]).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: js.Any, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: js.Any, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  @scala.inline
+  def define(`type`: String, defaults: Unit, protoProps: Unit, staticProps: js.Any): Constructor[Link] = (^.asInstanceOf[js.Dynamic].applyDynamic("define")(`type`.asInstanceOf[js.Any], defaults.asInstanceOf[js.Any], protoProps.asInstanceOf[js.Any], staticProps.asInstanceOf[js.Any])).asInstanceOf[Constructor[Link]]
+  
   trait Attributes
-    extends typings.jointjs.mod.dia.Cell.GenericAttributes[LinkSelectors]
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.GenericAttributes[LinkSelectors]
   object Attributes {
     
     @scala.inline
@@ -212,20 +197,19 @@ object Link {
     }
   }
   
-  @js.native
   trait EndCellArgs extends StObject {
     
-    var anchor: js.UndefOr[AnchorJSON] = js.native
+    var anchor: js.UndefOr[AnchorJSON] = js.undefined
     
-    var connectionPoint: js.UndefOr[ConnectionPointJSON] = js.native
+    var connectionPoint: js.UndefOr[ConnectionPointJSON] = js.undefined
     
-    var magnet: js.UndefOr[String] = js.native
+    var magnet: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var priority: js.UndefOr[Boolean] = js.native
+    var priority: js.UndefOr[Boolean] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
   }
   object EndCellArgs {
     
@@ -276,14 +260,15 @@ object Link {
     }
   }
   
-  @js.native
-  trait EndJSON extends EndCellArgs {
+  trait EndJSON
+    extends StObject
+       with EndCellArgs {
     
-    var id: js.UndefOr[Double | String] = js.native
+    var id: js.UndefOr[Double | String] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object EndJSON {
     
@@ -316,25 +301,25 @@ object Link {
     }
   }
   
-  @js.native
   trait GenericAttributes[T]
-    extends typings.jointjs.mod.dia.Cell.GenericAttributes[T] {
+    extends StObject
+       with typings.jointjs.mod.dia.Cell.GenericAttributes[T] {
     
-    var connector: js.UndefOr[Connector | ConnectorJSON] = js.native
+    var connector: js.UndefOr[Connector | ConnectorJSON] = js.undefined
     
-    var labels: js.UndefOr[js.Array[Label]] = js.native
+    var labels: js.UndefOr[js.Array[Label]] = js.undefined
     
-    var manhattan: js.UndefOr[Boolean] = js.native
+    var manhattan: js.UndefOr[Boolean] = js.undefined
     
-    var router: js.UndefOr[Router | RouterJSON] = js.native
+    var router: js.UndefOr[Router | RouterJSON] = js.undefined
     
-    var smooth: js.UndefOr[Boolean] = js.native
+    var smooth: js.UndefOr[Boolean] = js.undefined
     
-    var source: js.UndefOr[EndJSON] = js.native
+    var source: js.UndefOr[EndJSON] = js.undefined
     
-    var target: js.UndefOr[EndJSON] = js.native
+    var target: js.UndefOr[EndJSON] = js.undefined
     
-    var vertices: js.UndefOr[js.Array[Point]] = js.native
+    var vertices: js.UndefOr[js.Array[Point]] = js.undefined
   }
   object GenericAttributes {
     
@@ -345,7 +330,7 @@ object Link {
     }
     
     @scala.inline
-    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[_], T] (val x: Self with GenericAttributes[T]) extends AnyVal {
+    implicit class GenericAttributesMutableBuilder[Self <: GenericAttributes[?], T] (val x: Self & GenericAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setConnector(value: Connector | ConnectorJSON): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
@@ -413,17 +398,16 @@ object Link {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
     // optional for default labels
-    var attrs: js.UndefOr[Selectors] = js.native
+    var attrs: js.UndefOr[Selectors] = js.undefined
     
-    var markup: js.UndefOr[String | MarkupJSON] = js.native
+    var markup: js.UndefOr[String | MarkupJSON] = js.undefined
     
-    var position: js.UndefOr[LabelPosition | Double] = js.native
+    var position: js.UndefOr[LabelPosition | Double] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
   }
   object Label {
     
@@ -462,17 +446,16 @@ object Link {
     }
   }
   
-  @js.native
   trait LabelPosition extends StObject {
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var args: js.UndefOr[LabelOptions] = js.native
+    var args: js.UndefOr[LabelOptions] = js.undefined
     
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     // optional for default labels
-    var offset: js.UndefOr[Double | X] = js.native
+    var offset: js.UndefOr[Double | X] = js.undefined
   }
   object LabelPosition {
     
@@ -511,32 +494,33 @@ object Link {
     }
   }
   
-  @js.native
-  trait LinkSelectors extends Selectors {
+  trait LinkSelectors
+    extends StObject
+       with Selectors {
     
     @JSName(".connection")
-    var Dotconnection: js.UndefOr[SVGPathAttributes] = js.native
+    var Dotconnection: js.UndefOr[SVGPathAttributes] = js.undefined
     
     @JSName(".connection-wrap")
-    var `Dotconnection-wrap`: js.UndefOr[SVGPathAttributes] = js.native
+    var `Dotconnection-wrap`: js.UndefOr[SVGPathAttributes] = js.undefined
     
     @JSName(".labels")
-    var Dotlabels: js.UndefOr[SVGAttributes] = js.native
+    var Dotlabels: js.UndefOr[SVGAttributes] = js.undefined
     
     @JSName(".link-tools")
-    var `Dotlink-tools`: js.UndefOr[SVGAttributes] = js.native
+    var `Dotlink-tools`: js.UndefOr[SVGAttributes] = js.undefined
     
     @JSName(".marker-arrowheads")
-    var `Dotmarker-arrowheads`: js.UndefOr[SVGAttributes] = js.native
+    var `Dotmarker-arrowheads`: js.UndefOr[SVGAttributes] = js.undefined
     
     @JSName(".marker-source")
-    var `Dotmarker-source`: js.UndefOr[SVGPathAttributes] = js.native
+    var `Dotmarker-source`: js.UndefOr[SVGPathAttributes] = js.undefined
     
     @JSName(".marker-target")
-    var `Dotmarker-target`: js.UndefOr[SVGPathAttributes] = js.native
+    var `Dotmarker-target`: js.UndefOr[SVGPathAttributes] = js.undefined
     
     @JSName(".marker-vertices")
-    var `Dotmarker-vertices`: js.UndefOr[SVGAttributes] = js.native
+    var `Dotmarker-vertices`: js.UndefOr[SVGAttributes] = js.undefined
   }
   object LinkSelectors {
     
@@ -599,9 +583,9 @@ object Link {
     }
   }
   
-  @js.native
   trait Vertex
-    extends PlainPoint
+    extends StObject
+       with PlainPoint
        with /* key */ StringDictionary[js.Any]
   object Vertex {
     

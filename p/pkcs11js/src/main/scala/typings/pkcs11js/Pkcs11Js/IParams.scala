@@ -2,11 +2,9 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Crypto parameters
-@js.native
 trait IParams extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait IParams extends StObject {
     *
     * @type {number}
     */
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object IParams {
   

@@ -2,24 +2,22 @@ package typings.googleapis.firebaserulesV1Mod.firebaserulesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for FirebaseRulesService.UpdateReleasePatch.
   */
-@js.native
 trait SchemaUpdateReleaseRequest extends StObject {
   
   /**
     * `Release` to update.
     */
-  var release: js.UndefOr[SchemaRelease] = js.native
+  var release: js.UndefOr[SchemaRelease] = js.undefined
   
   /**
     * Specifies which fields to update.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateReleaseRequest {
   

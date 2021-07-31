@@ -15,7 +15,6 @@ import typings.std.CanvasPattern
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapeMod {
@@ -445,112 +444,113 @@ object shapeMod {
     def round: typings.konva.konvaStrings.round = "round".asInstanceOf[typings.konva.konvaStrings.round]
   }
   
-  @js.native
-  trait ShapeConfig extends NodeConfig {
+  trait ShapeConfig
+    extends StObject
+       with NodeConfig {
     
-    var dash: js.UndefOr[js.Array[Double]] = js.native
+    var dash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var dashEnabled: js.UndefOr[Boolean] = js.native
+    var dashEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var dashOffset: js.UndefOr[Double] = js.native
+    var dashOffset: js.UndefOr[Double] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var fillEnabled: js.UndefOr[Boolean] = js.native
+    var fillEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var fillLinearGradientColorStops: js.UndefOr[js.Array[Double | String]] = js.native
+    var fillLinearGradientColorStops: js.UndefOr[js.Array[Double | String]] = js.undefined
     
-    var fillLinearGradientEndPoint: js.UndefOr[Vector2d] = js.native
+    var fillLinearGradientEndPoint: js.UndefOr[Vector2d] = js.undefined
     
-    var fillLinearGradientEndPointX: js.UndefOr[Double] = js.native
+    var fillLinearGradientEndPointX: js.UndefOr[Double] = js.undefined
     
-    var fillLinearGradientEndPointY: js.UndefOr[Double] = js.native
+    var fillLinearGradientEndPointY: js.UndefOr[Double] = js.undefined
     
-    var fillLinearGradientStartPoint: js.UndefOr[Vector2d] = js.native
+    var fillLinearGradientStartPoint: js.UndefOr[Vector2d] = js.undefined
     
-    var fillLinearGradientStartPointX: js.UndefOr[Double] = js.native
+    var fillLinearGradientStartPointX: js.UndefOr[Double] = js.undefined
     
-    var fillLinearGradientStartPointY: js.UndefOr[Double] = js.native
+    var fillLinearGradientStartPointY: js.UndefOr[Double] = js.undefined
     
-    var fillPatternImage: js.UndefOr[HTMLImageElement] = js.native
+    var fillPatternImage: js.UndefOr[HTMLImageElement] = js.undefined
     
-    var fillPatternOffset: js.UndefOr[Vector2d] = js.native
+    var fillPatternOffset: js.UndefOr[Vector2d] = js.undefined
     
-    var fillPatternOffsetX: js.UndefOr[Double] = js.native
+    var fillPatternOffsetX: js.UndefOr[Double] = js.undefined
     
-    var fillPatternOffsetY: js.UndefOr[Double] = js.native
+    var fillPatternOffsetY: js.UndefOr[Double] = js.undefined
     
-    var fillPatternRepeat: js.UndefOr[String] = js.native
+    var fillPatternRepeat: js.UndefOr[String] = js.undefined
     
-    var fillPatternRotation: js.UndefOr[Double] = js.native
+    var fillPatternRotation: js.UndefOr[Double] = js.undefined
     
-    var fillPatternScale: js.UndefOr[Vector2d] = js.native
+    var fillPatternScale: js.UndefOr[Vector2d] = js.undefined
     
-    var fillPatternScaleX: js.UndefOr[Double] = js.native
+    var fillPatternScaleX: js.UndefOr[Double] = js.undefined
     
-    var fillPatternScaleY: js.UndefOr[Double] = js.native
+    var fillPatternScaleY: js.UndefOr[Double] = js.undefined
     
-    var fillPatternX: js.UndefOr[Double] = js.native
+    var fillPatternX: js.UndefOr[Double] = js.undefined
     
-    var fillPatternY: js.UndefOr[Double] = js.native
+    var fillPatternY: js.UndefOr[Double] = js.undefined
     
-    var fillPriority: js.UndefOr[String] = js.native
+    var fillPriority: js.UndefOr[String] = js.undefined
     
-    var fillRadialGradientColorStops: js.UndefOr[js.Array[Double | String]] = js.native
+    var fillRadialGradientColorStops: js.UndefOr[js.Array[Double | String]] = js.undefined
     
-    var fillRadialGradientEndPoint: js.UndefOr[Vector2d] = js.native
+    var fillRadialGradientEndPoint: js.UndefOr[Vector2d] = js.undefined
     
-    var fillRadialGradientEndPointX: js.UndefOr[Double] = js.native
+    var fillRadialGradientEndPointX: js.UndefOr[Double] = js.undefined
     
-    var fillRadialGradientEndPointY: js.UndefOr[Double] = js.native
+    var fillRadialGradientEndPointY: js.UndefOr[Double] = js.undefined
     
-    var fillRadialGradientEndRadius: js.UndefOr[Double] = js.native
+    var fillRadialGradientEndRadius: js.UndefOr[Double] = js.undefined
     
-    var fillRadialGradientStartPoint: js.UndefOr[Vector2d] = js.native
+    var fillRadialGradientStartPoint: js.UndefOr[Vector2d] = js.undefined
     
-    var fillRadialGradientStartPointX: js.UndefOr[Double] = js.native
+    var fillRadialGradientStartPointX: js.UndefOr[Double] = js.undefined
     
-    var fillRadialGradientStartPointY: js.UndefOr[Double] = js.native
+    var fillRadialGradientStartPointY: js.UndefOr[Double] = js.undefined
     
-    var fillRadialGradientStartRadius: js.UndefOr[Double] = js.native
+    var fillRadialGradientStartRadius: js.UndefOr[Double] = js.undefined
     
-    var hitFunc: js.UndefOr[js.Function2[/* con */ Context, /* shape */ Shape[this.type], Unit]] = js.native
+    var hitFunc: js.UndefOr[js.Function2[/* con */ Context, /* shape */ Shape[this.type], Unit]] = js.undefined
     
-    var hitStrokeWidth: js.UndefOr[Double | String] = js.native
+    var hitStrokeWidth: js.UndefOr[Double | String] = js.undefined
     
-    var lineCap: js.UndefOr[LineCap] = js.native
+    var lineCap: js.UndefOr[LineCap] = js.undefined
     
-    var lineJoin: js.UndefOr[LineJoin] = js.native
+    var lineJoin: js.UndefOr[LineJoin] = js.undefined
     
-    var perfectDrawEnabled: js.UndefOr[Boolean] = js.native
+    var perfectDrawEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var sceneFunc: js.UndefOr[js.Function2[/* con */ Context, /* shape */ Shape[this.type], Unit]] = js.native
+    var sceneFunc: js.UndefOr[js.Function2[/* con */ Context, /* shape */ Shape[this.type], Unit]] = js.undefined
     
-    var shadowBlur: js.UndefOr[Double] = js.native
+    var shadowBlur: js.UndefOr[Double] = js.undefined
     
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
     
-    var shadowEnabled: js.UndefOr[Boolean] = js.native
+    var shadowEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var shadowForStrokeEnabled: js.UndefOr[Boolean] = js.native
+    var shadowForStrokeEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var shadowOffset: js.UndefOr[Vector2d] = js.native
+    var shadowOffset: js.UndefOr[Vector2d] = js.undefined
     
-    var shadowOffsetX: js.UndefOr[Double] = js.native
+    var shadowOffsetX: js.UndefOr[Double] = js.undefined
     
-    var shadowOffsetY: js.UndefOr[Double] = js.native
+    var shadowOffsetY: js.UndefOr[Double] = js.undefined
     
-    var shadowOpacity: js.UndefOr[Double] = js.native
+    var shadowOpacity: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var strokeEnabled: js.UndefOr[Boolean] = js.native
+    var strokeEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var strokeHitEnabled: js.UndefOr[Boolean] = js.native
+    var strokeHitEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var strokeScaleEnabled: js.UndefOr[Boolean] = js.native
+    var strokeScaleEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object ShapeConfig {
     
@@ -888,16 +888,15 @@ object shapeMod {
   
   type ShapeConfigHandler[TTarget] = js.Function2[/* ctx */ Context, /* shape */ TTarget, Unit]
   
-  @js.native
   trait ShapegGetClientRectConfig extends StObject {
     
-    var relativeTo: js.UndefOr[Node[NodeConfig]] = js.native
+    var relativeTo: js.UndefOr[Node[NodeConfig]] = js.undefined
     
-    var skipShadow: js.UndefOr[Boolean] = js.native
+    var skipShadow: js.UndefOr[Boolean] = js.undefined
     
-    var skipStroke: js.UndefOr[Boolean] = js.native
+    var skipStroke: js.UndefOr[Boolean] = js.undefined
     
-    var skipTransform: js.UndefOr[Boolean] = js.native
+    var skipTransform: js.UndefOr[Boolean] = js.undefined
   }
   object ShapegGetClientRectConfig {
     

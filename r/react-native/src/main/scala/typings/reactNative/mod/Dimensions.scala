@@ -2,12 +2,12 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.anon.Screen
+import typings.reactNative.mod.^
 import typings.reactNative.reactNativeStrings.change
 import typings.reactNative.reactNativeStrings.screen
 import typings.reactNative.reactNativeStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,4 +55,9 @@ trait Dimensions extends StObject {
     * @param dims Simple string-keyed object of dimensions to set
     */
   def set(dims: StringDictionary[js.Any]): Unit = js.native
+}
+object Dimensions {
+  
+  @scala.inline
+  def apply: Dimensions = ^.asInstanceOf[js.Dynamic].selectDynamic("Dimensions").asInstanceOf[Dimensions]
 }

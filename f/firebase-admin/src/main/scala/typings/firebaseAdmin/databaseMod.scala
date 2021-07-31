@@ -6,19 +6,20 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
   
   object database {
     
+    @scala.inline
+    def apply(): Database = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Database]
+    @scala.inline
+    def apply(app: App): Database = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Database]
+    
     @JSImport("firebase-admin/lib/database", "database")
     @js.native
-    def apply(): Database = js.native
-    @JSImport("firebase-admin/lib/database", "database")
-    @js.native
-    def apply(app: App): Database = js.native
+    val ^ : js.Any = js.native
     
     /**
       * [`ServerValue`](https://firebase.google.com/docs/reference/js/firebase.database.ServerValue)
@@ -28,51 +29,44 @@ object databaseMod {
     @js.native
     val ServerValue: typings.firebaseDatabaseTypes.mod.ServerValue = js.native
     
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(): js.Any = js.native
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(logger: js.UndefOr[scala.Nothing], persistent: Boolean): js.Any = js.native
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(logger: js.Function1[/* a */ String, _]): js.Any = js.native
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(logger: js.Function1[/* a */ String, _], persistent: Boolean): js.Any = js.native
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(logger: Boolean): js.Any = js.native
-    @JSImport("firebase-admin/lib/database", "database.enableLogging")
-    @js.native
-    def enableLogging(logger: Boolean, persistent: Boolean): js.Any = js.native
+    @scala.inline
+    def enableLogging(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")().asInstanceOf[js.Any]
+    @scala.inline
+    def enableLogging(logger: js.Function1[/* a */ String, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def enableLogging(logger: js.Function1[/* a */ String, js.Any], persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def enableLogging(logger: Boolean): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def enableLogging(logger: Boolean, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def enableLogging(logger: Unit, persistent: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("enableLogging")(logger.asInstanceOf[js.Any], persistent.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @js.native
     trait DataSnapshot extends StObject {
       
-      def child(path: String): typings.firebaseDatabaseTypes.mod.DataSnapshot = js.native
+      def child(path: String): typings.firebaseDatabaseTypes.mod.DataSnapshot
       
-      def exists(): Boolean = js.native
+      def exists(): Boolean
       
-      def exportVal(): js.Any = js.native
+      def exportVal(): js.Any
       
-      def forEach(action: js.Function1[/* a */ this.type, Boolean | Unit]): Boolean = js.native
+      def forEach(action: js.Function1[/* a */ this.type, Boolean | Unit]): Boolean
       
-      def getPriority(): String | Double | Null = js.native
+      def getPriority(): String | Double | Null
       
-      def hasChild(path: String): Boolean = js.native
+      def hasChild(path: String): Boolean
       
-      def hasChildren(): Boolean = js.native
+      def hasChildren(): Boolean
       
-      var key: String | Null = js.native
+      var key: String | Null
       
-      def numChildren(): Double = js.native
+      def numChildren(): Double
       
-      var ref: typings.firebaseDatabaseTypes.mod.Reference = js.native
+      var ref: typings.firebaseDatabaseTypes.mod.Reference
       
-      def toJSON(): js.Object | Null = js.native
+      def toJSON(): js.Object | Null
       
-      def `val`(): js.Any = js.native
+      def `val`(): js.Any
     }
     object DataSnapshot {
       
@@ -90,7 +84,7 @@ object databaseMod {
         toJSON: () => js.Object | Null,
         `val`: () => js.Any
       ): DataSnapshot = {
-        val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON))
+        val __obj = js.Dynamic.literal(child = js.Any.fromFunction1(child), exists = js.Any.fromFunction0(exists), exportVal = js.Any.fromFunction0(exportVal), forEach = js.Any.fromFunction1(forEach), getPriority = js.Any.fromFunction0(getPriority), hasChild = js.Any.fromFunction1(hasChild), hasChildren = js.Any.fromFunction0(hasChildren), numChildren = js.Any.fromFunction0(numChildren), ref = ref.asInstanceOf[js.Any], toJSON = js.Any.fromFunction0(toJSON), key = null)
         __obj.updateDynamic("val")(js.Any.fromFunction0(`val`))
         __obj.asInstanceOf[DataSnapshot]
       }
@@ -200,23 +194,23 @@ object databaseMod {
     trait OnDisconnect extends StObject {
       
       def cancel(): js.Promise[Unit] = js.native
-      def cancel(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[Unit] = js.native
+      def cancel(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[Unit] = js.native
       
       def remove(): js.Promise[Unit] = js.native
-      def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[Unit] = js.native
+      def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[Unit] = js.native
       
       def set(value: js.Any): js.Promise[Unit] = js.native
-      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[Unit] = js.native
+      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[Unit] = js.native
       
-      def setWithPriority(value: js.Any): js.Promise[_] = js.native
-      def setWithPriority(value: js.Any, priority: String): js.Promise[_] = js.native
-      def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(value: js.Any, priority: Double): js.Promise[_] = js.native
-      def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def setWithPriority(value: js.Any): js.Promise[js.Any] = js.native
+      def setWithPriority(value: js.Any, priority: String): js.Promise[js.Any] = js.native
+      def setWithPriority(value: js.Any, priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(value: js.Any, priority: Double): js.Promise[js.Any] = js.native
+      def setWithPriority(value: js.Any, priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(value: js.Any, priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def update(values: js.Object): js.Promise[_] = js.native
-      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def update(values: js.Object): js.Promise[js.Any] = js.native
+      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     }
     
     @js.native
@@ -250,36 +244,31 @@ object databaseMod {
       def limitToLast(limit: Double): typings.firebaseDatabaseTypes.mod.Query = js.native
       
       def off(): Unit = js.native
-      def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
       def off(
-        eventType: js.UndefOr[scala.Nothing],
+        eventType: Unit,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): Unit = js.native
       def off(
-        eventType: js.UndefOr[scala.Nothing],
+        eventType: Unit,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         context: js.Object
       ): Unit = js.native
+      def off(eventType: Unit, callback: Unit, context: js.Object): Unit = js.native
       def off(eventType: typings.firebaseDatabaseTypes.mod.EventType): Unit = js.native
       def off(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): Unit = js.native
-      def off(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): Unit = js.native
       def off(
@@ -287,147 +276,114 @@ object databaseMod {
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         context: js.Object
       ): Unit = js.native
+      def off(eventType: typings.firebaseDatabaseTypes.mod.EventType, callback: Unit, context: js.Object): Unit = js.native
       
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
-        cancelCallbackOrContext: js.UndefOr[scala.Nothing],
+        cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any]
+      ): js.Function2[
+            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+            /* b */ js.UndefOr[String | Null], 
+            js.Any
+          ] = js.native
+      def on(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        callback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any],
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        cancelCallbackOrContext: js.Function1[/* a */ Error, _]
-      ): js.Function2[
-            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-            /* b */ js.UndefOr[String | Null], 
-            _
-          ] = js.native
-      def on(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        cancelCallbackOrContext: js.Function1[/* a */ Error, _],
-        context: js.Object
-      ): js.Function2[
-            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-            /* b */ js.UndefOr[String | Null], 
-            _
-          ] = js.native
-      def on(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: js.Object,
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: Null,
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
+          ] = js.native
+      def on(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        callback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        cancelCallbackOrContext: Unit,
+        context: js.Object
+      ): js.Function2[
+            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+            /* b */ js.UndefOr[String | Null], 
+            js.Any
           ] = js.native
       
       def once(eventType: typings.firebaseDatabaseTypes.mod.EventType): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       def once(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Object,
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: Null,
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       def once(
@@ -435,17 +391,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        failureCallbackOrContext: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
@@ -454,7 +400,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
         context: js.Object
@@ -464,7 +410,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Object
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
@@ -473,7 +419,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Object,
         context: js.Object
@@ -483,9 +429,53 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: Null,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        failureCallbackOrContext: Unit,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Object,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: Null,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: Unit,
         context: js.Object
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       
@@ -513,7 +503,8 @@ object databaseMod {
     
     @js.native
     trait Reference
-      extends typings.firebaseDatabaseTypes.mod.Query {
+      extends StObject
+         with typings.firebaseDatabaseTypes.mod.Query {
       
       def child(path: String): typings.firebaseDatabaseTypes.mod.Reference = js.native
       
@@ -524,57 +515,53 @@ object databaseMod {
       var parent: typings.firebaseDatabaseTypes.mod.Reference | Null = js.native
       
       def push(): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
-      def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, _]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
       def push(value: js.Any): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
-      def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
+      def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
+      def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, js.Any]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
       
-      def remove(): js.Promise[_] = js.native
-      def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def remove(): js.Promise[js.Any] = js.native
+      def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
       var root: typings.firebaseDatabaseTypes.mod.Reference = js.native
       
-      def set(value: js.Any): js.Promise[_] = js.native
-      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def set(value: js.Any): js.Promise[js.Any] = js.native
+      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[js.Any] = js.native
       def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
-        onComplete: js.UndefOr[scala.Nothing],
-        applyLocally: Boolean
-      ): js.Promise[_] = js.native
-      def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
+        transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
         onComplete: js.Function3[
               /* a */ Error | Null, 
               /* b */ Boolean, 
               /* c */ typings.firebaseDatabaseTypes.mod.DataSnapshot | Null, 
-              _
+              js.Any
             ]
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = js.native
       def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
+        transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
         onComplete: js.Function3[
               /* a */ Error | Null, 
               /* b */ Boolean, 
               /* c */ typings.firebaseDatabaseTypes.mod.DataSnapshot | Null, 
-              _
+              js.Any
             ],
         applyLocally: Boolean
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = js.native
+      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[js.Any] = js.native
       
-      def update(values: js.Object): js.Promise[_] = js.native
-      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def update(values: js.Object): js.Promise[js.Any] = js.native
+      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     }
     
     /* Inlined parent @firebase/database-types.@firebase/database-types.Reference */
@@ -618,36 +605,31 @@ object databaseMod {
       def limitToLast(limit: Double): typings.firebaseDatabaseTypes.mod.Query = js.native
       
       def off(): Unit = js.native
-      def off(eventType: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], context: js.Object): Unit = js.native
       def off(
-        eventType: js.UndefOr[scala.Nothing],
+        eventType: Unit,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): Unit = js.native
       def off(
-        eventType: js.UndefOr[scala.Nothing],
+        eventType: Unit,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         context: js.Object
       ): Unit = js.native
+      def off(eventType: Unit, callback: Unit, context: js.Object): Unit = js.native
       def off(eventType: typings.firebaseDatabaseTypes.mod.EventType): Unit = js.native
       def off(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): Unit = js.native
-      def off(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): Unit = js.native
       def off(
@@ -655,104 +637,105 @@ object databaseMod {
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         context: js.Object
       ): Unit = js.native
+      def off(eventType: typings.firebaseDatabaseTypes.mod.EventType, callback: Unit, context: js.Object): Unit = js.native
       
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
-        cancelCallbackOrContext: js.UndefOr[scala.Nothing],
+        cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any]
+      ): js.Function2[
+            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+            /* b */ js.UndefOr[String | Null], 
+            js.Any
+          ] = js.native
+      def on(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        callback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        cancelCallbackOrContext: js.Function1[/* a */ Error, js.Any],
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        cancelCallbackOrContext: js.Function1[/* a */ Error, _]
-      ): js.Function2[
-            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-            /* b */ js.UndefOr[String | Null], 
-            _
-          ] = js.native
-      def on(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        cancelCallbackOrContext: js.Function1[/* a */ Error, _],
-        context: js.Object
-      ): js.Function2[
-            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-            /* b */ js.UndefOr[String | Null], 
-            _
-          ] = js.native
-      def on(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        callback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: js.Object,
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
           ] = js.native
       def on(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
         callback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         cancelCallbackOrContext: Null,
         context: js.Object
       ): js.Function2[
             /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
             /* b */ js.UndefOr[String | Null], 
-            _
+            js.Any
+          ] = js.native
+      def on(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        callback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        cancelCallbackOrContext: Unit,
+        context: js.Object
+      ): js.Function2[
+            /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+            /* b */ js.UndefOr[String | Null], 
+            js.Any
           ] = js.native
       
       def onDisconnect(): typings.firebaseDatabaseTypes.mod.OnDisconnect = js.native
@@ -760,44 +743,10 @@ object databaseMod {
       def once(eventType: typings.firebaseDatabaseTypes.mod.EventType): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       def once(
         eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: js.Object,
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.UndefOr[scala.Nothing],
-        failureCallbackOrContext: Null,
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ]
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       def once(
@@ -805,17 +754,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
-            ],
-        failureCallbackOrContext: js.UndefOr[scala.Nothing],
-        context: js.Object
-      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
-      def once(
-        eventType: typings.firebaseDatabaseTypes.mod.EventType,
-        successCallback: js.Function2[
-              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
-              /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
@@ -824,7 +763,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
         context: js.Object
@@ -834,7 +773,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Object
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
@@ -843,7 +782,7 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: js.Object,
         context: js.Object
@@ -853,9 +792,53 @@ object databaseMod {
         successCallback: js.Function2[
               /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
               /* b */ js.UndefOr[String | Null], 
-              _
+              js.Any
             ],
         failureCallbackOrContext: Null,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: js.Function2[
+              /* a */ typings.firebaseDatabaseTypes.mod.DataSnapshot, 
+              /* b */ js.UndefOr[String | Null], 
+              js.Any
+            ],
+        failureCallbackOrContext: Unit,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Function1[/* a */ Error, Unit]
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Function1[/* a */ Error, Unit],
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: js.Object,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: Null,
+        context: js.Object
+      ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
+      def once(
+        eventType: typings.firebaseDatabaseTypes.mod.EventType,
+        successCallback: Unit,
+        failureCallbackOrContext: Unit,
         context: js.Object
       ): js.Promise[typings.firebaseDatabaseTypes.mod.DataSnapshot] = js.native
       
@@ -870,30 +853,30 @@ object databaseMod {
       var parent: typings.firebaseDatabaseTypes.mod.Reference | Null = js.native
       
       def push(): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
-      def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, _]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
       def push(value: js.Any): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
-      def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
+      def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
+      def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, js.Any]): typings.firebaseDatabaseTypes.mod.ThenableReference = js.native
       
       var ref: typings.firebaseDatabaseTypes.mod.Reference = js.native
       
-      def remove(): js.Promise[_] = js.native
-      def remove(onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def remove(): js.Promise[js.Any] = js.native
+      def remove(onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
       var root: typings.firebaseDatabaseTypes.mod.Reference = js.native
       
-      def set(value: js.Any): js.Promise[_] = js.native
-      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def set(value: js.Any): js.Promise[js.Any] = js.native
+      def set(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
-      def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
-      def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
+      def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
       
       def startAt(): typings.firebaseDatabaseTypes.mod.Query = js.native
       def startAt(value: String): typings.firebaseDatabaseTypes.mod.Query = js.native
@@ -910,34 +893,30 @@ object databaseMod {
       
       def toJSON(): js.Object = js.native
       
-      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[_] = js.native
+      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[js.Any] = js.native
       def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
-        onComplete: js.UndefOr[scala.Nothing],
-        applyLocally: Boolean
-      ): js.Promise[_] = js.native
-      def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
+        transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
         onComplete: js.Function3[
               /* a */ Error | Null, 
               /* b */ Boolean, 
               /* c */ typings.firebaseDatabaseTypes.mod.DataSnapshot | Null, 
-              _
+              js.Any
             ]
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = js.native
       def transaction(
-        transactionUpdate: js.Function1[/* a */ js.Any, _],
+        transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
         onComplete: js.Function3[
               /* a */ Error | Null, 
               /* b */ Boolean, 
               /* c */ typings.firebaseDatabaseTypes.mod.DataSnapshot | Null, 
-              _
+              js.Any
             ],
         applyLocally: Boolean
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = js.native
+      def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[js.Any] = js.native
       
-      def update(values: js.Object): js.Promise[_] = js.native
-      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, _]): js.Promise[_] = js.native
+      def update(values: js.Object): js.Promise[js.Any] = js.native
+      def update(values: js.Object, onComplete: js.Function1[/* a */ Error | Null, js.Any]): js.Promise[js.Any] = js.native
     }
   }
 }

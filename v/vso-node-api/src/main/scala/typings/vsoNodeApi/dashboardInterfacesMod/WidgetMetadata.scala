@@ -2,116 +2,114 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetMetadata extends StObject {
   
   /**
     * Sizes supported by the Widget.
     */
-  var allowedSizes: js.Array[WidgetSize] = js.native
+  var allowedSizes: js.Array[WidgetSize]
   
   /**
     * Opt-in boolean that indicates if the widget requires the Analytics Service to function. Widgets requiring the analytics service are hidden from the catalog if the Analytics Service is not available.
     */
-  var analyticsServiceRequired: Boolean = js.native
+  var analyticsServiceRequired: Boolean
   
   /**
     * Resource for an icon in the widget catalog.
     */
-  var catalogIconUrl: String = js.native
+  var catalogIconUrl: String
   
   /**
     * Opt-in URL string pointing at widget information. Defaults to extension marketplace URL if omitted
     */
-  var catalogInfoUrl: String = js.native
+  var catalogInfoUrl: String
   
   /**
     * The id of the underlying contribution defining the supplied Widget custom configuration UI. Null if custom configuration UI is not available.
     */
-  var configurationContributionId: String = js.native
+  var configurationContributionId: String
   
   /**
     * The relative id of the underlying contribution defining the supplied Widget custom configuration UI. Null if custom configuration UI is not available.
     */
-  var configurationContributionRelativeId: String = js.native
+  var configurationContributionRelativeId: String
   
   /**
     * Indicates if the widget requires configuration before being added to dashboard.
     */
-  var configurationRequired: Boolean = js.native
+  var configurationRequired: Boolean
   
   /**
     * Uri for the widget content to be loaded from .
     */
-  var contentUri: String = js.native
+  var contentUri: String
   
   /**
     * The id of the underlying contribution defining the supplied Widget.
     */
-  var contributionId: String = js.native
+  var contributionId: String
   
   /**
     * Optional default settings to be copied into widget settings.
     */
-  var defaultSettings: String = js.native
+  var defaultSettings: String
   
   /**
     * Summary information describing the widget.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Widgets can be disabled by the app store.  We'll need to gracefully handle for: - persistence (Allow) - Requests (Tag as disabled, and provide context)
     */
-  var isEnabled: Boolean = js.native
+  var isEnabled: Boolean
   
   /**
     * Opt-out boolean that indicates if the widget supports widget name/title configuration. Widgets ignoring the name should set it to false in the manifest.
     */
-  var isNameConfigurable: Boolean = js.native
+  var isNameConfigurable: Boolean
   
   /**
     * Opt-out boolean indicating if the widget is hidden from the catalog. Commonly, this is used to allow developers to disable creation of a deprecated widget. A widget must have a functional default state, or have a configuration experience, in order to be visible from the catalog.
     */
-  var isVisibleFromCatalog: Boolean = js.native
+  var isVisibleFromCatalog: Boolean
   
   /**
     * Opt-in properties for customizing widget presentation in a "lightbox" dialog.
     */
-  var lightboxOptions: LightboxOptions = js.native
+  var lightboxOptions: LightboxOptions
   
   /**
     * Resource for a loading placeholder image on dashboard
     */
-  var loadingImageUrl: String = js.native
+  var loadingImageUrl: String
   
   /**
     * User facing name of the widget type. Each widget must use a unique value here.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Publisher Name of this kind of widget.
     */
-  var publisherName: String = js.native
+  var publisherName: String
   
   /**
     * Data contract required for the widget to function and to work in its container.
     */
-  var supportedScopes: js.Array[WidgetScope] = js.native
+  var supportedScopes: js.Array[WidgetScope]
   
   /**
     * Contribution target IDs
     */
-  var targets: js.Array[String] = js.native
+  var targets: js.Array[String]
   
   /**
     * Deprecated: locally unique developer-facing id of this kind of widget. ContributionId provides a globally unique identifier for widget types.
     */
-  var typeId: String = js.native
+  var typeId: String
 }
 object WidgetMetadata {
   

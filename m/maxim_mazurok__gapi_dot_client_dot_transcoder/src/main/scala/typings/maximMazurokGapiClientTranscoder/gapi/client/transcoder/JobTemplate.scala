@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobTemplate extends StObject {
   
   /** The configuration for this template. */
-  var config: js.UndefOr[JobConfig] = js.native
+  var config: js.UndefOr[JobConfig] = js.undefined
   
   /** The resource name of the job template. Format: `projects/{project}/locations/{location}/jobTemplates/{job_template}` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object JobTemplate {
   

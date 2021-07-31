@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientUploadControl.DropZoneLeave event.
   */
-@js.native
-trait ASPxClientUploadControlDropZoneLeaveEventArgs extends ASPxClientEventArgs {
+trait ASPxClientUploadControlDropZoneLeaveEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a drop zone object related to the processed event.
     */
-  var dropZone: js.Any = js.native
+  var dropZone: js.Any
 }
 object ASPxClientUploadControlDropZoneLeaveEventArgs {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait Sensitivity extends StObject
 object Sensitivity extends StObject {
   
   @js.native
-  sealed trait CONFIDENTIAL extends Sensitivity
+  sealed trait CONFIDENTIAL
+    extends StObject
+       with Sensitivity
   
   @js.native
-  sealed trait NORMAL extends Sensitivity
+  sealed trait NORMAL
+    extends StObject
+       with Sensitivity
   
   @js.native
-  sealed trait PERSONAL extends Sensitivity
+  sealed trait PERSONAL
+    extends StObject
+       with Sensitivity
   
   @js.native
-  sealed trait PRIVATE extends Sensitivity
+  sealed trait PRIVATE
+    extends StObject
+       with Sensitivity
 }

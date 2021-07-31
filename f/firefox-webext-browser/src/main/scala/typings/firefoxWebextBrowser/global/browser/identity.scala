@@ -9,7 +9,6 @@ import typings.firefoxWebextBrowser.browser.identity.RemoveCachedAuthTokenDetail
 import typings.firefoxWebextBrowser.browser.identity.RemoveCachedAuthTokenReturnUserinfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,49 +20,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object identity {
   
+  @JSGlobal("browser.identity")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* identity functions */
   /**
     * Retrieves a list of AccountInfo objects describing the accounts present on the profile.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.identity.getAccounts")
-  @js.native
-  def getAccounts(): js.Promise[js.Array[AccountInfo]] = js.native
+  @scala.inline
+  def getAccounts(): js.Promise[js.Array[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccounts")().asInstanceOf[js.Promise[js.Array[AccountInfo]]]
   
   /**
     * Gets an OAuth2 access token using the client ID and scopes specified in the oauth2 section of manifest.json.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.identity.getAuthToken")
-  @js.native
-  def getAuthToken(): js.Promise[js.Array[AccountInfo]] = js.native
-  @JSGlobal("browser.identity.getAuthToken")
-  @js.native
-  def getAuthToken(details: GetAuthTokenDetails): js.Promise[js.Array[AccountInfo]] = js.native
+  @scala.inline
+  def getAuthToken(): js.Promise[js.Array[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")().asInstanceOf[js.Promise[js.Array[AccountInfo]]]
+  @scala.inline
+  def getAuthToken(details: GetAuthTokenDetails): js.Promise[js.Array[AccountInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAuthToken")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[AccountInfo]]]
   
   /**
     * Retrieves email address and obfuscated gaia id of the user signed into a profile.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.identity.getProfileUserInfo")
-  @js.native
-  def getProfileUserInfo(): js.Promise[GetProfileUserInfoReturnUserinfo] = js.native
+  @scala.inline
+  def getProfileUserInfo(): js.Promise[GetProfileUserInfoReturnUserinfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfileUserInfo")().asInstanceOf[js.Promise[GetProfileUserInfoReturnUserinfo]]
   
   /**
     * Generates a redirect URL to be used in |launchWebAuthFlow|.
     * @param [path] The path appended to the end of the generated URL.
     */
-  @JSGlobal("browser.identity.getRedirectURL")
-  @js.native
-  def getRedirectURL(): String = js.native
-  @JSGlobal("browser.identity.getRedirectURL")
-  @js.native
-  def getRedirectURL(path: String): String = js.native
+  @scala.inline
+  def getRedirectURL(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectURL")().asInstanceOf[String]
+  @scala.inline
+  def getRedirectURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRedirectURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Starts an auth flow at the specified URL. */
-  @JSGlobal("browser.identity.launchWebAuthFlow")
-  @js.native
-  def launchWebAuthFlow(details: LaunchWebAuthFlowDetails): js.Promise[String] = js.native
+  @scala.inline
+  def launchWebAuthFlow(details: LaunchWebAuthFlowDetails): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("launchWebAuthFlow")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /* identity events */
   /**
@@ -80,7 +76,6 @@ object identity {
     * Removes an OAuth2 access token from the Identity API's token cache.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.identity.removeCachedAuthToken")
-  @js.native
-  def removeCachedAuthToken(details: RemoveCachedAuthTokenDetails): js.Promise[RemoveCachedAuthTokenReturnUserinfo] = js.native
+  @scala.inline
+  def removeCachedAuthToken(details: RemoveCachedAuthTokenDetails): js.Promise[RemoveCachedAuthTokenReturnUserinfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCachedAuthToken")(details.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RemoveCachedAuthTokenReturnUserinfo]]
 }

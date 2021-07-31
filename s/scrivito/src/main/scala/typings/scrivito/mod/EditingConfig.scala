@@ -3,35 +3,33 @@ package typings.scrivito.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditingConfig extends StObject {
   
-  var attributes: js.UndefOr[EditingConfigAttributes] = js.native
+  var attributes: js.UndefOr[EditingConfigAttributes] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var descriptionForContent: js.UndefOr[js.Function1[/* instance */ Obj | Widget, String]] = js.native
+  var descriptionForContent: js.UndefOr[js.Function1[/* instance */ Obj | Widget, String]] = js.undefined
   
-  var hideInSelectionDialogs: js.UndefOr[Boolean] = js.native
+  var hideInSelectionDialogs: js.UndefOr[Boolean] = js.undefined
   
-  var initialContent: js.UndefOr[Record[String, _]] = js.native
+  var initialContent: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var initializeCopy: js.UndefOr[js.Function1[/* originalInstance */ Obj, Unit]] = js.native
+  var initializeCopy: js.UndefOr[js.Function1[/* originalInstance */ Obj, Unit]] = js.undefined
   
-  var properties: js.UndefOr[js.Array[String]] = js.native
+  var properties: js.UndefOr[js.Array[String]] = js.undefined
   
-  var propertiesGroups: js.UndefOr[js.Array[PropertiesGroup]] = js.native
+  var propertiesGroups: js.UndefOr[js.Array[PropertiesGroup]] = js.undefined
   
-  var thumbnail: js.UndefOr[String] = js.native
+  var thumbnail: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleForContent: js.UndefOr[js.Function1[/* instance */ Obj | Widget, String | Unit]] = js.native
+  var titleForContent: js.UndefOr[js.Function1[/* instance */ Obj | Widget, String | Unit]] = js.undefined
   
-  var validations: js.UndefOr[js.Array[Validation]] = js.native
+  var validations: js.UndefOr[js.Array[Validation]] = js.undefined
 }
 object EditingConfig {
   
@@ -69,7 +67,7 @@ object EditingConfig {
     def setHideInSelectionDialogsUndefined: Self = StObject.set(x, "hideInSelectionDialogs", js.undefined)
     
     @scala.inline
-    def setInitialContent(value: Record[String, _]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
+    def setInitialContent(value: Record[String, js.Any]): Self = StObject.set(x, "initialContent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInitialContentUndefined: Self = StObject.set(x, "initialContent", js.undefined)

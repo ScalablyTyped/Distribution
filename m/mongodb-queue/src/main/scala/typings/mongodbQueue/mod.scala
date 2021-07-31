@@ -6,17 +6,18 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(db: Db, name: String): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  @scala.inline
+  def apply(db: Db, name: String, opts: QueueOptions): Queue = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Queue]
+  
   @JSImport("mongodb-queue", JSImport.Namespace)
   @js.native
-  def apply(db: Db, name: String): Queue = js.native
-  @JSImport("mongodb-queue", JSImport.Namespace)
-  @js.native
-  def apply(db: Db, name: String, opts: QueueOptions): Queue = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mongodb-queue", "Queue")
   @js.native
@@ -31,7 +32,7 @@ object mod {
     def add(payload: Payload, callback: QueueCallback[String]): Unit = js.native
     def add(payload: Payload, opts: QueueOptions, callback: QueueCallback[String]): Unit = js.native
     
-    def clean(callback: QueueCallback[_]): Unit = js.native
+    def clean(callback: QueueCallback[js.Any]): Unit = js.native
     
     def createIndexes(callback: QueueCallback[String]): Unit = js.native
     
@@ -56,16 +57,15 @@ object mod {
   
   type QueueCallback[T] = js.Function2[/* err */ MongoError | Error, /* result */ T, Unit]
   
-  @js.native
   trait QueueMessage extends StObject {
     
-    var ack: String = js.native
+    var ack: String
     
-    var id: String = js.native
+    var id: String
     
-    var payload: Payload | ArrayPayload = js.native
+    var payload: Payload | ArrayPayload
     
-    var tries: Double = js.native
+    var tries: Double
   }
   object QueueMessage {
     
@@ -95,16 +95,15 @@ object mod {
     }
   }
   
-  @js.native
   trait QueueOptions extends StObject {
     
-    var deadQueue: js.UndefOr[Queue] = js.native
+    var deadQueue: js.UndefOr[Queue] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var visibility: js.UndefOr[Double] = js.native
+    var visibility: js.UndefOr[Double] = js.undefined
   }
   object QueueOptions {
     

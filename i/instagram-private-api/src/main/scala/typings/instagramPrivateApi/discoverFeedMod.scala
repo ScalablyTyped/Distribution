@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.feedMod.Feed
 import typings.instagramPrivateApi.responsesMod.DiscoverFeedResponseUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object discoverFeedMod {

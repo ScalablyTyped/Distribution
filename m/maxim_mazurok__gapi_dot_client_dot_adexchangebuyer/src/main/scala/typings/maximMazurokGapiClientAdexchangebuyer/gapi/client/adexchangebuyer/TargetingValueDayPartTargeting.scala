@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetingValueDayPartTargeting extends StObject {
   
-  var dayParts: js.UndefOr[js.Array[TargetingValueDayPartTargetingDayPart]] = js.native
+  var dayParts: js.UndefOr[js.Array[TargetingValueDayPartTargetingDayPart]] = js.undefined
   
-  var timeZoneType: js.UndefOr[String] = js.native
+  var timeZoneType: js.UndefOr[String] = js.undefined
 }
 object TargetingValueDayPartTargeting {
   

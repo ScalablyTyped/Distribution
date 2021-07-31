@@ -10,9 +10,9 @@ TypeScript typings for Security Token Service API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.sts |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 859 |
+| # downloads        | 984 |
 | # stars            | 0 |
 
 ## Links

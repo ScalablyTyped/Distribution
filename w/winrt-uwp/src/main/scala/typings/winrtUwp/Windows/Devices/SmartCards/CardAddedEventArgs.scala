@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the CardAdded event. */
-@js.native
 trait CardAddedEventArgs extends StObject {
   
   /** Gets info about the smart card that was inserted into the smart card reader. */
-  var smartCard: SmartCard = js.native
+  var smartCard: SmartCard
 }
 object CardAddedEventArgs {
   

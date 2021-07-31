@@ -2,25 +2,23 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEmailComposerOptions extends StObject {
   
-  var attachments: js.UndefOr[js.Array[_]] = js.native
+  var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var bcc: js.UndefOr[String | js.Array[String]] = js.native
+  var bcc: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var cc: js.UndefOr[String | js.Array[String]] = js.native
+  var cc: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var isHtml: js.UndefOr[Boolean] = js.native
+  var isHtml: js.UndefOr[Boolean] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var to: String | js.Array[String] = js.native
+  var to: String | js.Array[String]
 }
 object IEmailComposerOptions {
   
@@ -34,7 +32,7 @@ object IEmailComposerOptions {
   implicit class IEmailComposerOptionsMutableBuilder[Self <: IEmailComposerOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+    def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)

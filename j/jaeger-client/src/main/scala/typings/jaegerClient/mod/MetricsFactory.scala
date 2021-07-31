@@ -2,17 +2,15 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsFactory extends StObject {
   
-  def createCounter(name: String, tags: js.Any): Counter = js.native
+  def createCounter(name: String, tags: js.Any): Counter
   
-  def createGauge(name: String, tags: js.Any): Gauge = js.native
+  def createGauge(name: String, tags: js.Any): Gauge
   
-  def createTimer(name: String, tags: js.Any): Timer = js.native
+  def createTimer(name: String, tags: js.Any): Timer
 }
 object MetricsFactory {
   

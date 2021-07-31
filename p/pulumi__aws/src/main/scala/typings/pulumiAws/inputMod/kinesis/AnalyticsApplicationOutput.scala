@@ -3,43 +3,41 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationOutput extends StObject {
   
   /**
     * The ARN of the Kinesis Analytics Application.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The Kinesis Firehose configuration for the destination stream. Conflicts with `kinesisStream`.
     * See Kinesis Firehose below for more details.
     */
-  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationOutputKinesisFirehose]] = js.native
+  var kinesisFirehose: js.UndefOr[Input[AnalyticsApplicationOutputKinesisFirehose]] = js.undefined
   
   /**
     * The Kinesis Stream configuration for the destination stream. Conflicts with `kinesisFirehose`.
     * See Kinesis Stream below for more details.
     */
-  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationOutputKinesisStream]] = js.native
+  var kinesisStream: js.UndefOr[Input[AnalyticsApplicationOutputKinesisStream]] = js.undefined
   
   /**
     * The Lambda function destination. See Lambda below for more details.
     */
-  var lambda: js.UndefOr[Input[AnalyticsApplicationOutputLambda]] = js.native
+  var lambda: js.UndefOr[Input[AnalyticsApplicationOutputLambda]] = js.undefined
   
   /**
     * The Name of the in-application stream.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * The Schema format of the data written to the destination. See Destination Schema below for more details.
     */
-  var schema: Input[AnalyticsApplicationOutputSchema] = js.native
+  var schema: Input[AnalyticsApplicationOutputSchema]
 }
 object AnalyticsApplicationOutput {
   

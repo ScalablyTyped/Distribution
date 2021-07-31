@@ -5,7 +5,6 @@ import typings.typedoc.defaultThemeMod.TemplateMapping
 import typings.typedoc.reflectionGroupMod.ReflectionGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typedoc", "DefaultTheme")
@@ -33,57 +32,43 @@ object DefaultTheme {
   @scala.inline
   def URL_PREFIX_=(x: RegExp): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL_PREFIX")(x.asInstanceOf[js.Any])
   
-  @JSImport("typedoc", "DefaultTheme.applyAnchorUrl")
-  @js.native
+  @scala.inline
   def applyAnchorUrl(
     reflection: typings.typedoc.reflectionsMod.Reflection,
     container: typings.typedoc.reflectionsMod.Reflection
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyAnchorUrl")(reflection.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("typedoc", "DefaultTheme.applyGroupClasses")
-  @js.native
-  def applyGroupClasses(group: ReflectionGroup): Unit = js.native
+  @scala.inline
+  def applyGroupClasses(group: ReflectionGroup): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyGroupClasses")(group.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedoc", "DefaultTheme.applyReflectionClasses")
-  @js.native
-  def applyReflectionClasses(reflection: typings.typedoc.reflectionsMod.DeclarationReflection): Unit = js.native
+  @scala.inline
+  def applyReflectionClasses(reflection: typings.typedoc.reflectionsMod.DeclarationReflection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyReflectionClasses")(reflection.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("typedoc", "DefaultTheme.buildUrls")
-  @js.native
+  @scala.inline
   def buildUrls(
     reflection: typings.typedoc.reflectionsMod.DeclarationReflection,
     urls: js.Array[typings.typedoc.urlMappingMod.UrlMapping]
-  ): js.Array[typings.typedoc.urlMappingMod.UrlMapping] = js.native
+  ): js.Array[typings.typedoc.urlMappingMod.UrlMapping] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildUrls")(reflection.asInstanceOf[js.Any], urls.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typedoc.urlMappingMod.UrlMapping]]
   
-  @JSImport("typedoc", "DefaultTheme.getMapping")
-  @js.native
-  def getMapping(reflection: typings.typedoc.reflectionsMod.DeclarationReflection): js.UndefOr[TemplateMapping] = js.native
+  @scala.inline
+  def getMapping(reflection: typings.typedoc.reflectionsMod.DeclarationReflection): js.UndefOr[TemplateMapping] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMapping")(reflection.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[TemplateMapping]]
   
-  @JSImport("typedoc", "DefaultTheme.getUrl")
-  @js.native
-  def getUrl(reflection: typings.typedoc.reflectionsMod.Reflection): String = js.native
-  @JSImport("typedoc", "DefaultTheme.getUrl")
-  @js.native
-  def getUrl(
-    reflection: typings.typedoc.reflectionsMod.Reflection,
-    relative: js.UndefOr[scala.Nothing],
-    separator: String
-  ): String = js.native
-  @JSImport("typedoc", "DefaultTheme.getUrl")
-  @js.native
+  @scala.inline
+  def getUrl(reflection: typings.typedoc.reflectionsMod.Reflection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getUrl(reflection: typings.typedoc.reflectionsMod.Reflection, relative: Unit, separator: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def getUrl(
     reflection: typings.typedoc.reflectionsMod.Reflection,
     relative: typings.typedoc.reflectionsMod.Reflection
-  ): String = js.native
-  @JSImport("typedoc", "DefaultTheme.getUrl")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def getUrl(
     reflection: typings.typedoc.reflectionsMod.Reflection,
     relative: typings.typedoc.reflectionsMod.Reflection,
     separator: String
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(reflection.asInstanceOf[js.Any], relative.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("typedoc", "DefaultTheme.toStyleClass")
-  @js.native
-  def toStyleClass(str: String): String = js.native
+  @scala.inline
+  def toStyleClass(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toStyleClass")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

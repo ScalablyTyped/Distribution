@@ -1,27 +1,36 @@
 package typings.xstream
 
+import typings.xstream.mod.InternalListener
 import typings.xstream.mod.InternalProducer
 import typings.xstream.mod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromDiagramMod {
   
-  @JSImport("xstream/extra/fromDiagram", JSImport.Default)
+  @JSImport("xstream/extra/fromDiagram", JSImport.Namespace)
   @js.native
-  def default(diagram: String): Stream[_] = js.native
-  @JSImport("xstream/extra/fromDiagram", JSImport.Default)
-  @js.native
-  def default(diagram: String, options: FromDiagramOptions): Stream[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(diagram: String): Stream[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any]).asInstanceOf[Stream[js.Any]]
+  @scala.inline
+  def default(diagram: String, options: FromDiagramOptions): Stream[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(diagram.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Stream[js.Any]]
   
   @JSImport("xstream/extra/fromDiagram", "DiagramProducer")
   @js.native
   class DiagramProducer protected ()
-    extends InternalProducer[js.Any] {
+    extends StObject
+       with InternalProducer[js.Any] {
     def this(diagram: String) = this()
     def this(diagram: String, opt: FromDiagramOptions) = this()
+    
+    /* CompleteClass */
+    override def _start(listener: InternalListener[js.Any]): Unit = js.native
+    
+    /* CompleteClass */
+    override def _stop(): Unit = js.native
     
     var diagram: js.Any = js.native
     
@@ -36,14 +45,13 @@ object fromDiagramMod {
     var values: js.Any = js.native
   }
   
-  @js.native
   trait FromDiagramOptions extends StObject {
     
-    var errorValue: js.UndefOr[js.Any] = js.native
+    var errorValue: js.UndefOr[js.Any] = js.undefined
     
-    var timeUnit: js.UndefOr[Double] = js.native
+    var timeUnit: js.UndefOr[Double] = js.undefined
     
-    var values: js.UndefOr[js.Object] = js.native
+    var values: js.UndefOr[js.Object] = js.undefined
   }
   object FromDiagramOptions {
     

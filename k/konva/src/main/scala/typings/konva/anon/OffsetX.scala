@@ -2,29 +2,27 @@ package typings.konva.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OffsetX extends StObject {
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
-  var scaleY: Double = js.native
+  var scaleY: Double
   
-  var skewX: Double = js.native
+  var skewX: Double
   
-  var skewY: Double = js.native
+  var skewY: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object OffsetX {
   

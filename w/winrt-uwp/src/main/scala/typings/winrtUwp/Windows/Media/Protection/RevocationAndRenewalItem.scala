@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Media.Protection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a component that is being revoked and renewed with a trusted component. */
-@js.native
 trait RevocationAndRenewalItem extends StObject {
   
   /** Returns the header hash for the component being revoked. */
-  var headerHash: String = js.native
+  var headerHash: String
   
   /** Returns the name for the component being revoked. */
-  var name: String = js.native
+  var name: String
   
   /** Returns the public key hash for the component. */
-  var publicKeyHash: String = js.native
+  var publicKeyHash: String
   
   /** Returns the reason for revocation of component. */
-  var reasons: RevocationAndRenewalReasons = js.native
+  var reasons: RevocationAndRenewalReasons
   
   /** Returns the GUID for the renewal object. */
-  var renewalId: String = js.native
+  var renewalId: String
 }
 object RevocationAndRenewalItem {
   

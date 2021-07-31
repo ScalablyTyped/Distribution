@@ -6,7 +6,6 @@ import typings.fundamentalReact.fundamentalReactStrings.circle
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod extends Shortcut {
@@ -15,19 +14,19 @@ object imageMod extends Shortcut {
   @js.native
   val default: FunctionComponent[ImageProps] = js.native
   
-  @js.native
   trait ImageProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var photo: String = js.native
+    var photo: String
     
-    var size: imageSize = js.native
+    var size: imageSize
     
-    var `type`: js.UndefOr[imageType] = js.native
+    var `type`: js.UndefOr[imageType] = js.undefined
   }
   object ImageProps {
     

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object FindOptions extends StObject {
   
   /** Match case; that is, a case-sensitive search. */
   @js.native
-  sealed trait `case` extends FindOptions
+  sealed trait `case`
+    extends StObject
+       with FindOptions
   
   /** Use the default text search options; namely, use case- independent, arbitrary character boundaries. */
   @js.native
-  sealed trait none extends FindOptions
+  sealed trait none
+    extends StObject
+       with FindOptions
   
   /** Match whole words. */
   @js.native
-  sealed trait word extends FindOptions
+  sealed trait word
+    extends StObject
+       with FindOptions
 }

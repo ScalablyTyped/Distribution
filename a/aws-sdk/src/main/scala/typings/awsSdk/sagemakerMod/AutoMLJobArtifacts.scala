@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLJobArtifacts extends StObject {
   
   /**
     * The URL to the notebook location.
     */
-  var CandidateDefinitionNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.CandidateDefinitionNotebookLocation] = js.native
+  var CandidateDefinitionNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.CandidateDefinitionNotebookLocation] = js.undefined
   
   /**
     * The URL to the notebook location.
     */
-  var DataExplorationNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.DataExplorationNotebookLocation] = js.native
+  var DataExplorationNotebookLocation: js.UndefOr[typings.awsSdk.sagemakerMod.DataExplorationNotebookLocation] = js.undefined
 }
 object AutoMLJobArtifacts {
   

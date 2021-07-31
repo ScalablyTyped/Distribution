@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditorViewColumnChangeEvent extends StObject {
   
   /**
     * The [text editor](#TextEditor) for which the view column has changed.
     */
-  val textEditor: TextEditor = js.native
+  val textEditor: TextEditor
   
   /**
     * The new value for the [text editor's view column](#TextEditor.viewColumn).
     */
-  val viewColumn: ViewColumn = js.native
+  val viewColumn: ViewColumn
 }
 object TextEditorViewColumnChangeEvent {
   

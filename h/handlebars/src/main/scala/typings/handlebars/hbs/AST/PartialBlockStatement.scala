@@ -2,26 +2,26 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PartialBlockStatement extends Node {
+trait PartialBlockStatement
+  extends StObject
+     with Node {
   
-  var closeStrip: StripFlags = js.native
+  var closeStrip: StripFlags
   
-  var hash: Hash = js.native
+  var hash: Hash
   
-  var name: PathExpression | SubExpression = js.native
+  var name: PathExpression | SubExpression
   
-  var openStrip: StripFlags = js.native
+  var openStrip: StripFlags
   
-  var params: js.Array[Expression] = js.native
+  var params: js.Array[Expression]
   
-  var program: Program = js.native
+  var program: Program
   
   @JSName("type")
-  var type_PartialBlockStatement: typings.handlebars.handlebarsStrings.PartialBlockStatement = js.native
+  var type_PartialBlockStatement: typings.handlebars.handlebarsStrings.PartialBlockStatement
 }
 object PartialBlockStatement {
   
@@ -33,11 +33,10 @@ object PartialBlockStatement {
     name: PathExpression | SubExpression,
     openStrip: StripFlags,
     params: js.Array[Expression],
-    program: Program,
-    `type`: typings.handlebars.handlebarsStrings.PartialBlockStatement
+    program: Program
   ): PartialBlockStatement = {
     val __obj = js.Dynamic.literal(closeStrip = closeStrip.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], openStrip = openStrip.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], program = program.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PartialBlockStatement")
     __obj.asInstanceOf[PartialBlockStatement]
   }
   

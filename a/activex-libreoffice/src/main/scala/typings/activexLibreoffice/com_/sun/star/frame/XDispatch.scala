@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,8 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see Frame
   * @see FeatureStateEvent
   */
-@js.native
-trait XDispatch extends XInterface {
+trait XDispatch
+  extends StObject
+     with XInterface {
   
   /**
     * registers a listener of a control for a specific URL at this object to receive status events.
@@ -36,7 +36,7 @@ trait XDispatch extends XInterface {
     * @see XStatusListener
     * @see XDispatch.removeStatusListener()
     */
-  def addStatusListener(Control: XStatusListener, URL: URL): Unit = js.native
+  def addStatusListener(Control: XStatusListener, URL: URL): Unit
   
   /**
     * dispatches (executes) an URL
@@ -45,7 +45,7 @@ trait XDispatch extends XInterface {
     * @param URL fully parsed URL describing the feature which should be dispatched (=executed)
     * @param Arguments optional arguments for this request (see {@link com.sun.star.document.MediaDescriptor} ) They depend on the real implementation of the
     */
-  def dispatch(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit = js.native
+  def dispatch(URL: URL, Arguments: SeqEquiv[PropertyValue]): Unit
   
   /**
     * unregisters a listener from a control.
@@ -54,7 +54,7 @@ trait XDispatch extends XInterface {
     * @see XStatusListener
     * @see XDispatch.addStatusListener()
     */
-  def removeStatusListener(Control: XStatusListener, URL: URL): Unit = js.native
+  def removeStatusListener(Control: XStatusListener, URL: URL): Unit
 }
 object XDispatch {
   

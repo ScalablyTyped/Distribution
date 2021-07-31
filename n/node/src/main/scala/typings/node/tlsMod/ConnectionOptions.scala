@@ -8,26 +8,25 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionOptions
-  extends SecureContextOptions
+  extends StObject
+     with SecureContextOptions
      with CommonConnectionOptions {
   
   // Establish secure connection on a given socket rather than creating a new socket
-  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.native
+  var checkServerIdentity: js.UndefOr[js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]]] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var lookup: js.UndefOr[LookupFunction] = js.native
+  var lookup: js.UndefOr[LookupFunction] = js.undefined
   
-  var minDHSize: js.UndefOr[Double] = js.native
+  var minDHSize: js.UndefOr[Double] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * When negotiating TLS-PSK (pre-shared keys), this function is called
@@ -46,17 +45,17 @@ trait ConnectionOptions
     * compatible with the selected cipher's digest.
     * `identity` must use UTF-8 encoding.
     */
-  var pskCallback: js.UndefOr[js.Function1[/* hint */ String | Null, PSKCallbackNegotation | Null]] = js.native
+  var pskCallback: js.UndefOr[js.Function1[/* hint */ String | Null, PSKCallbackNegotation | Null]] = js.undefined
   
-  var servername: js.UndefOr[String] = js.native
+  var servername: js.UndefOr[String] = js.undefined
   
   // SNI TLS Extension
-  var session: js.UndefOr[Buffer] = js.native
+  var session: js.UndefOr[Buffer] = js.undefined
   
   // Creates unix socket connection to path. If this option is specified, `host` and `port` are ignored.
-  var socket: js.UndefOr[Socket] = js.native
+  var socket: js.UndefOr[Socket] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object ConnectionOptions {
   

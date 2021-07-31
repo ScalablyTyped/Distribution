@@ -12,7 +12,7 @@ A simple HTML5 notification for Angular 1
 | Keywords           | angular, html5, notification |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 21160 |
+| # downloads        | 24779 |
 | # stars            | 0 |
 
 ## Links

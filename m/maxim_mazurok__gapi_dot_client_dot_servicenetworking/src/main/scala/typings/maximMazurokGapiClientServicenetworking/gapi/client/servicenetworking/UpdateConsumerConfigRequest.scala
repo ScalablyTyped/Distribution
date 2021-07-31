@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConsumerConfigRequest extends StObject {
   
   /** Required. The updated peering config. */
-  var consumerConfig: js.UndefOr[ConsumerConfig] = js.native
+  var consumerConfig: js.UndefOr[ConsumerConfig] = js.undefined
 }
 object UpdateConsumerConfigRequest {
   

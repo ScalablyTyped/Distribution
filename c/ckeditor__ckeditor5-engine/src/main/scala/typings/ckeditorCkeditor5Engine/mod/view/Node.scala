@@ -12,13 +12,14 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.textProxy
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.uiElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/node
 @JSImport("@ckeditor/ckeditor5-engine", "view.Node")
 @js.native
-class Node () extends Item {
+class Node ()
+  extends StObject
+     with Item {
   
   /* protected */ def _clone(): Node = js.native
   

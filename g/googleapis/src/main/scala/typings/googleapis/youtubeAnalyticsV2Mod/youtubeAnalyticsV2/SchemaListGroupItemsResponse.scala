@@ -2,36 +2,34 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for GroupsService.ListGroupItems.
   */
-@js.native
 trait SchemaListGroupItemsResponse extends StObject {
   
   /**
     * Apiary error details
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * The Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * A list of groups that match the API request parameters. Each item in the
     * list represents a `groupItem` resource.
     */
-  var items: js.UndefOr[js.Array[SchemaGroupItem]] = js.native
+  var items: js.UndefOr[js.Array[SchemaGroupItem]] = js.undefined
   
   /**
     * Identifies the API resource&#39;s type. The value will be
     * `youtube#groupItemListResponse`.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaListGroupItemsResponse {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * SAX = Simple API for XMLURI = Uniform Resource IdentifierDTD = document type definition
   */
-@js.native
-trait SAXException extends Exception {
+trait SAXException
+  extends StObject
+     with Exception {
   
   /** This field may contain a wrapped exception. */
-  var WrappedException: js.Any = js.native
+  var WrappedException: js.Any
 }
 object SAXException {
   

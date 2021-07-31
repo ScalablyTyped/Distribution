@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ad extends StObject {
   
   /** Account ID of this ad. This is a read-only field that can be left blank. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Whether this ad is active. When true, archived must be false. */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** Advertiser ID of this ad. This is a required field on insertion. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the advertiser. This is a read-only, auto-generated field. */
-  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Whether this ad is archived. When true, active must be false. */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /** Audience segment ID that is being targeted for this ad. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var audienceSegmentId: js.UndefOr[String] = js.native
+  var audienceSegmentId: js.UndefOr[String] = js.undefined
   
   /** Campaign ID of this ad. This is a required field on insertion. */
-  var campaignId: js.UndefOr[String] = js.native
+  var campaignId: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of the campaign. This is a read-only, auto-generated field. */
-  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var campaignIdDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Click-through URL for this ad. This is a required field on insertion. Applicable when type is AD_SERVING_CLICK_TRACKER. */
-  var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.native
+  var clickThroughUrl: js.UndefOr[ClickThroughUrl] = js.undefined
   
   /** Click-through URL suffix properties for this ad. Applies to the URL in the ad or (if overriding ad properties) the URL in the creative. */
-  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.native
+  var clickThroughUrlSuffixProperties: js.UndefOr[ClickThroughUrlSuffixProperties] = js.undefined
   
   /** Comments for this ad. */
-  var comments: js.UndefOr[String] = js.native
+  var comments: js.UndefOr[String] = js.undefined
   
   /**
     * Compatibility of this ad. Applicable when type is AD_SERVING_DEFAULT_AD. DISPLAY and DISPLAY_INTERSTITIAL refer to either rendering on desktop or on mobile devices or in mobile apps
@@ -47,95 +45,95 @@ trait Ad extends StObject {
     * DISPLAY_INTERSTITIAL and default ads created for those placements will be limited to those compatibility types. IN_STREAM_VIDEO refers to rendering in-stream video ads developed
     * with the VAST standard.
     */
-  var compatibility: js.UndefOr[String] = js.native
+  var compatibility: js.UndefOr[String] = js.undefined
   
   /** Information about the creation of this ad. This is a read-only field. */
-  var createInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var createInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
   /** Creative group assignments for this ad. Applicable when type is AD_SERVING_CLICK_TRACKER. Only one assignment per creative group number is allowed for a maximum of two assignments. */
-  var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.native
+  var creativeGroupAssignments: js.UndefOr[js.Array[CreativeGroupAssignment]] = js.undefined
   
   /**
     * Creative rotation for this ad. Applicable when type is AD_SERVING_DEFAULT_AD, AD_SERVING_STANDARD_AD, or AD_SERVING_TRACKING. When type is AD_SERVING_DEFAULT_AD, this field should
     * have exactly one creativeAssignment .
     */
-  var creativeRotation: js.UndefOr[CreativeRotation] = js.native
+  var creativeRotation: js.UndefOr[CreativeRotation] = js.undefined
   
   /** Time and day targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.native
+  var dayPartTargeting: js.UndefOr[DayPartTargeting] = js.undefined
   
   /** Default click-through event tag properties for this ad. */
-  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.native
+  var defaultClickThroughEventTagProperties: js.UndefOr[DefaultClickThroughEventTagProperties] = js.undefined
   
   /**
     * Delivery schedule information for this ad. Applicable when type is AD_SERVING_STANDARD_AD or AD_SERVING_TRACKING. This field along with subfields priority and impressionRatio are
     * required on insertion when type is AD_SERVING_STANDARD_AD.
     */
-  var deliverySchedule: js.UndefOr[DeliverySchedule] = js.native
+  var deliverySchedule: js.UndefOr[DeliverySchedule] = js.undefined
   
   /** Whether this ad is a dynamic click tracker. Applicable when type is AD_SERVING_CLICK_TRACKER. This is a required field on insert, and is read-only after insert. */
-  var dynamicClickTracker: js.UndefOr[Boolean] = js.native
+  var dynamicClickTracker: js.UndefOr[Boolean] = js.undefined
   
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Event tag overrides for this ad. */
-  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.native
+  var eventTagOverrides: js.UndefOr[js.Array[EventTagOverride]] = js.undefined
   
   /** Geographical targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var geoTargeting: js.UndefOr[GeoTargeting] = js.native
+  var geoTargeting: js.UndefOr[GeoTargeting] = js.undefined
   
   /** ID of this ad. This is a read-only, auto-generated field. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Dimension value for the ID of this ad. This is a read-only, auto-generated field. */
-  var idDimensionValue: js.UndefOr[DimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[DimensionValue] = js.undefined
   
   /** Key-value targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.native
+  var keyValueTargetingExpression: js.UndefOr[KeyValueTargetingExpression] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#ad". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Language targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var languageTargeting: js.UndefOr[LanguageTargeting] = js.native
+  var languageTargeting: js.UndefOr[LanguageTargeting] = js.undefined
   
   /** Information about the most recent modification of this ad. This is a read-only field. */
-  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.native
+  var lastModifiedInfo: js.UndefOr[LastModifiedInfo] = js.undefined
   
   /** Name of this ad. This is a required field and must be less than 256 characters long. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Placement assignments for this ad. */
-  var placementAssignments: js.UndefOr[js.Array[PlacementAssignment]] = js.native
+  var placementAssignments: js.UndefOr[js.Array[PlacementAssignment]] = js.undefined
   
   /** Remarketing list targeting expression for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var remarketingListExpression: js.UndefOr[ListTargetingExpression] = js.native
+  var remarketingListExpression: js.UndefOr[ListTargetingExpression] = js.undefined
   
   /** Size of this ad. Applicable when type is AD_SERVING_DEFAULT_AD. */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /** Whether this ad is ssl compliant. This is a read-only field that is auto-generated when the ad is inserted or updated. */
-  var sslCompliant: js.UndefOr[Boolean] = js.native
+  var sslCompliant: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this ad requires ssl. This is a read-only field that is auto-generated when the ad is inserted or updated. */
-  var sslRequired: js.UndefOr[Boolean] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.undefined
   
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Subaccount ID of this ad. This is a read-only field that can be left blank. */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Targeting template ID, used to apply preconfigured targeting information to this ad. This cannot be set while any of dayPartTargeting, geoTargeting, keyValueTargetingExpression,
     * languageTargeting, remarketingListExpression, or technologyTargeting are set. Applicable when type is AD_SERVING_STANDARD_AD.
     */
-  var targetingTemplateId: js.UndefOr[String] = js.native
+  var targetingTemplateId: js.UndefOr[String] = js.undefined
   
   /** Technology platform targeting information for this ad. This field must be left blank if the ad is using a targeting template. Applicable when type is AD_SERVING_STANDARD_AD. */
-  var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.native
+  var technologyTargeting: js.UndefOr[TechnologyTargeting] = js.undefined
   
   /** Type of ad. This is a required field on insertion. Note that default ads ( AD_SERVING_DEFAULT_AD) cannot be created directly (see Creative resource). */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Ad {
   

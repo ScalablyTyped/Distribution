@@ -2,35 +2,35 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.ui method when 'name' is set to
   * 'skydrivepicker'.
   */
-@js.native
-trait ISkyDrivePickerProperies extends IUIProperties {
+trait ISkyDrivePickerProperies
+  extends StObject
+     with IUIProperties {
   
   /**
     * Defines the color pallette used for the file picker dialog box. Valid
     * values are "white", "gray", and "transparent".
     * @default "white"
     */
-  var lightbox: js.UndefOr[String] = js.native
+  var lightbox: js.UndefOr[String] = js.undefined
   
   /**
     * The type of SkyDrive file picker button to display. Specify "save" to
     * display the upload button. Specify "open" to display the download
     * button.
     */
-  var mode: String = js.native
+  var mode: String
   
   /**
     * Specifies the function to call if the selected files cannot be
     * successfully uploaded or downloaded.
     */
-  var onerror: js.UndefOr[js.Function] = js.native
+  var onerror: js.UndefOr[js.Function] = js.undefined
   
   /**
     * If the mode property is set to "save", specifies the function to call
@@ -38,7 +38,7 @@ trait ISkyDrivePickerProperies extends IUIProperties {
     * the mode property is set to "open", specifies the function to call
     * after the user clicks either Open or Cancel in the file picker.
     */
-  var onselected: js.UndefOr[js.Function] = js.native
+  var onselected: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Required if the mode property is set to "open". Specifies how many
@@ -46,14 +46,14 @@ trait ISkyDrivePickerProperies extends IUIProperties {
     * file. Specify "multi" for multiple files.
     * @default "single"
     */
-  var select: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the color pallette used for the file picker button. Valid
     * values are "white" and "blue".
     * @default "white"
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
 }
 object ISkyDrivePickerProperies {
   

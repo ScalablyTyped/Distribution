@@ -2,71 +2,69 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Network extends StObject {
   
   /**
     * The destination domain of network-related information about a finding.
     */
-  var DestinationDomain: js.UndefOr[NonEmptyString] = js.native
+  var DestinationDomain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The destination IPv4 address of network-related information about a finding.
     */
-  var DestinationIpV4: js.UndefOr[NonEmptyString] = js.native
+  var DestinationIpV4: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The destination IPv6 address of network-related information about a finding.
     */
-  var DestinationIpV6: js.UndefOr[NonEmptyString] = js.native
+  var DestinationIpV6: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The destination port of network-related information about a finding.
     */
-  var DestinationPort: js.UndefOr[Integer] = js.native
+  var DestinationPort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The direction of network traffic associated with a finding.
     */
-  var Direction: js.UndefOr[NetworkDirection] = js.native
+  var Direction: js.UndefOr[NetworkDirection] = js.undefined
   
   /**
     * The range of open ports that is present on the network.
     */
-  var OpenPortRange: js.UndefOr[PortRange] = js.native
+  var OpenPortRange: js.UndefOr[PortRange] = js.undefined
   
   /**
     * The protocol of network-related information about a finding.
     */
-  var Protocol: js.UndefOr[NonEmptyString] = js.native
+  var Protocol: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source domain of network-related information about a finding.
     */
-  var SourceDomain: js.UndefOr[NonEmptyString] = js.native
+  var SourceDomain: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source IPv4 address of network-related information about a finding.
     */
-  var SourceIpV4: js.UndefOr[NonEmptyString] = js.native
+  var SourceIpV4: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source IPv6 address of network-related information about a finding.
     */
-  var SourceIpV6: js.UndefOr[NonEmptyString] = js.native
+  var SourceIpV6: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source media access control (MAC) address of network-related information about a finding.
     */
-  var SourceMac: js.UndefOr[NonEmptyString] = js.native
+  var SourceMac: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The source port of network-related information about a finding.
     */
-  var SourcePort: js.UndefOr[Integer] = js.native
+  var SourcePort: js.UndefOr[Integer] = js.undefined
 }
 object Network {
   

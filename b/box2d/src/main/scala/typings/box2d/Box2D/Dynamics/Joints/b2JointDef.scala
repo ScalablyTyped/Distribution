@@ -3,36 +3,34 @@ package typings.box2d.Box2D.Dynamics.Joints
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2JointDef extends StObject {
   
   /**
     * The first attached body.
     **/
-  var bodyA: b2Body = js.native
+  var bodyA: b2Body
   
   /**
     * The second attached body.
     **/
-  var bodyB: b2Body = js.native
+  var bodyB: b2Body
   
   /**
     * Set this flag to true if the attached bodies should collide.
     **/
-  var collideConnected: Boolean = js.native
+  var collideConnected: Boolean
   
   /**
     * The joint type is set automatically for concrete joint types.
     **/
-  var `type`: Double = js.native
+  var `type`: Double
   
   /**
     * Use this to attach application specific data to your joints.
     **/
-  var userData: js.Any = js.native
+  var userData: js.Any
 }
 object b2JointDef {
   

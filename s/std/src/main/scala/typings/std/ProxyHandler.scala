@@ -2,20 +2,18 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProxyHandler[T /* <: js.Object */] extends StObject {
   
   @JSName("apply")
   var apply: js.UndefOr[
-    js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], _]
-  ] = js.native
+    js.Function3[/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any], js.Any]
+  ] = js.undefined
   
   var construct: js.UndefOr[
     js.Function3[/* target */ T, /* argArray */ js.Any, /* newTarget */ js.UndefOr[js.Any], js.Object]
-  ] = js.native
+  ] = js.undefined
   
   var defineProperty: js.UndefOr[
     js.Function3[
@@ -24,25 +22,25 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
       /* attributes */ PropertyDescriptor, 
       scala.Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.native
+  var deleteProperty: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
   
-  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, _]] = js.native
+  var get: js.UndefOr[js.Function3[/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any, js.Any]] = js.undefined
   
   var getOwnPropertyDescriptor: js.UndefOr[
     js.Function2[/* target */ T, /* p */ PropertyKey, js.UndefOr[PropertyDescriptor]]
-  ] = js.native
+  ] = js.undefined
   
-  var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.native
+  var getPrototypeOf: js.UndefOr[js.Function1[/* target */ T, js.Object | Null]] = js.undefined
   
-  var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.native
+  var has: js.UndefOr[js.Function2[/* target */ T, /* p */ PropertyKey, scala.Boolean]] = js.undefined
   
-  var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.native
+  var isExtensible: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
   
-  var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.native
+  var ownKeys: js.UndefOr[js.Function1[/* target */ T, js.Array[PropertyKey]]] = js.undefined
   
-  var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.native
+  var preventExtensions: js.UndefOr[js.Function1[/* target */ T, scala.Boolean]] = js.undefined
   
   var set: js.UndefOr[
     js.Function4[
@@ -52,9 +50,9 @@ trait ProxyHandler[T /* <: js.Object */] extends StObject {
       /* receiver */ js.Any, 
       scala.Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.native
+  var setPrototypeOf: js.UndefOr[js.Function2[/* target */ T, /* v */ js.Any, scala.Boolean]] = js.undefined
 }
 object ProxyHandler {
   
@@ -65,10 +63,10 @@ object ProxyHandler {
   }
   
   @scala.inline
-  implicit class ProxyHandlerMutableBuilder[Self <: ProxyHandler[_], T /* <: js.Object */] (val x: Self with ProxyHandler[T]) extends AnyVal {
+  implicit class ProxyHandlerMutableBuilder[Self <: ProxyHandler[?], T /* <: js.Object */] (val x: Self & ProxyHandler[T]) extends AnyVal {
     
     @scala.inline
-    def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
+    def setApply(value: (/* target */ T, /* thisArg */ js.Any, /* argArray */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "apply", js.Any.fromFunction3(value))
     
     @scala.inline
     def setApplyUndefined: Self = StObject.set(x, "apply", js.undefined)
@@ -92,7 +90,7 @@ object ProxyHandler {
     def setDeletePropertyUndefined: Self = StObject.set(x, "deleteProperty", js.undefined)
     
     @scala.inline
-    def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => _): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
+    def setGet(value: (/* target */ T, /* p */ PropertyKey, /* receiver */ js.Any) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
     
     @scala.inline
     def setGetOwnPropertyDescriptor(value: (/* target */ T, /* p */ PropertyKey) => js.UndefOr[PropertyDescriptor]): Self = StObject.set(x, "getOwnPropertyDescriptor", js.Any.fromFunction2(value))

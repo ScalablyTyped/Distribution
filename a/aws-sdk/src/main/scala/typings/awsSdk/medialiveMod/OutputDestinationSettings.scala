@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputDestinationSettings extends StObject {
   
   /**
     * key used to extract the password from EC2 Parameter store
     */
-  var PasswordParam: js.UndefOr[string] = js.native
+  var PasswordParam: js.UndefOr[string] = js.undefined
   
   /**
     * Stream name for RTMP destinations (URLs of type rtmp://)
     */
-  var StreamName: js.UndefOr[string] = js.native
+  var StreamName: js.UndefOr[string] = js.undefined
   
   /**
     * A URL specifying a destination
     */
-  var Url: js.UndefOr[string] = js.native
+  var Url: js.UndefOr[string] = js.undefined
   
   /**
     * username for destination
     */
-  var Username: js.UndefOr[string] = js.native
+  var Username: js.UndefOr[string] = js.undefined
 }
 object OutputDestinationSettings {
   

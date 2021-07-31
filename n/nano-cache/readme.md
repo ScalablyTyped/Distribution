@@ -12,7 +12,7 @@ simple node cache module
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 87522 |
+| # downloads        | 108443 |
 | # stars            | 0 |
 
 ## Links

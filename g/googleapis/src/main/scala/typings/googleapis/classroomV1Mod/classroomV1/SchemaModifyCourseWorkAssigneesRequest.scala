@@ -2,26 +2,24 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to modify assignee mode and options of a coursework.
   */
-@js.native
 trait SchemaModifyCourseWorkAssigneesRequest extends StObject {
   
   /**
     * Mode of the coursework describing whether it will be assigned to all
     * students or specified individual students.
     */
-  var assigneeMode: js.UndefOr[String] = js.native
+  var assigneeMode: js.UndefOr[String] = js.undefined
   
   /**
     * Set which students are assigned or not assigned to the coursework. Must
     * be specified only when `assigneeMode` is `INDIVIDUAL_STUDENTS`.
     */
-  var modifyIndividualStudentsOptions: js.UndefOr[SchemaModifyIndividualStudentsOptions] = js.native
+  var modifyIndividualStudentsOptions: js.UndefOr[SchemaModifyIndividualStudentsOptions] = js.undefined
 }
 object SchemaModifyCourseWorkAssigneesRequest {
   

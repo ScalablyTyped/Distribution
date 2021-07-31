@@ -8,124 +8,124 @@ import typings.victory.victoryStrings.right
 import typings.victory.victoryStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlyoutProps extends VictoryCommonProps {
+trait FlyoutProps
+  extends StObject
+     with VictoryCommonProps {
   
   /**
     * a flag signifying whether the component is active
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * the center coordinates of the flyout
     */
-  var center: js.UndefOr[`0`] = js.native
+  var center: js.UndefOr[`0`] = js.undefined
   
   /**
     * the class name that will be applied to the rendered element
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * the corner radius of the flyout
     */
-  var cornerRadius: js.UndefOr[Double] = js.native
+  var cornerRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * the entire dataset if applicable
     */
-  var data: js.UndefOr[js.Array[_]] = js.native
+  var data: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * the data point corresponding to this flyout if applicable
     */
-  var datum: js.UndefOr[js.Object] = js.native
+  var datum: js.UndefOr[js.Object] = js.undefined
   
   /**
     * offset in the x dimension.
     */
-  var dx: js.UndefOr[Double] = js.native
+  var dx: js.UndefOr[Double] = js.undefined
   
   /**
     * offset in the y dimension.
     */
-  var dy: js.UndefOr[Double] = js.native
+  var dy: js.UndefOr[Double] = js.undefined
   
   /**
     * events to attach to the rendered element
     */
-  var events: js.UndefOr[js.Object] = js.native
+  var events: js.UndefOr[js.Object] = js.undefined
   
   /**
     * an id to apply to the rendered component
     */
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
   /**
     * the index of this flyout within the dataset
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[top | bottom | left | right] = js.native
+  var orientation: js.UndefOr[top | bottom | left | right] = js.undefined
   
   /**
     * the svg coordinates of the center point of a polar chart
     */
-  var origin: js.UndefOr[js.Object] = js.native
+  var origin: js.UndefOr[js.Object] = js.undefined
   
   /**
     * the rendered path element
     * @default pathComponent={<Path/>}
     */
-  var pathComponent: js.UndefOr[ReactElement] = js.native
+  var pathComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * the length of the triangular pointer
     */
-  var pointerLength: js.UndefOr[Double] = js.native
+  var pointerLength: js.UndefOr[Double] = js.undefined
   
   /**
     * the width of the base of the triangular pointer
     */
-  var pointerWidth: js.UndefOr[Double] = js.native
+  var pointerWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * a flag specifying whether the component is part of a polar chart
     */
-  var polar: js.UndefOr[Boolean] = js.native
+  var polar: js.UndefOr[Boolean] = js.undefined
   
   /**
     * the aria role to assign to the element
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
   /**
     * the shape rendering attribute to apply to the rendered elements
     */
-  var shapeRendering: js.UndefOr[String] = js.native
+  var shapeRendering: js.UndefOr[String] = js.undefined
   
   /**
     * the styles to apply to the rendered element
     */
-  var style: js.UndefOr[VictoryStyleObject] = js.native
+  var style: js.UndefOr[VictoryStyleObject] = js.undefined
   
   /**
     * a transform that will be supplied to elements this component renders
     */
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
   /**
     * the x coordinate of data point associated with this flyout
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * the y coordinate of data point associated with this flyout
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object FlyoutProps {
   
@@ -163,7 +163,7 @@ object FlyoutProps {
     def setCornerRadiusUndefined: Self = StObject.set(x, "cornerRadius", js.undefined)
     
     @scala.inline
-    def setData(value: js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

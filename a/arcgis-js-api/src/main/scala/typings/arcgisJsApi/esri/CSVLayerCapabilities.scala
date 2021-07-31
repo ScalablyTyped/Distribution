@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CSVLayerCapabilities extends Object {
+trait CSVLayerCapabilities
+  extends StObject
+     with Object {
   
   /**
     * Describes characteristics of the data in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var data: CSVLayerCapabilitiesData = js.native
+  var data: CSVLayerCapabilitiesData
   
   /**
     * Describes editing capabilities that can be performed on the features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var editing: CSVLayerCapabilitiesEditing = js.native
+  var editing: CSVLayerCapabilitiesEditing
   
   /**
     * Describes operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var operations: CSVLayerCapabilitiesOperations = js.native
+  var operations: CSVLayerCapabilitiesOperations
   
   /**
     * Describes [query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) operations that can be performed on features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var query: CSVLayerCapabilitiesQuery = js.native
+  var query: CSVLayerCapabilitiesQuery
   
   /**
     * Indicates if the layer's query operation supports querying features or records related to features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-CSVLayer.html#capabilities)
     */
-  var queryRelated: CSVLayerCapabilitiesQueryRelated = js.native
+  var queryRelated: CSVLayerCapabilitiesQueryRelated
 }
 object CSVLayerCapabilities {
   

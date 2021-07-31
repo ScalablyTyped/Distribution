@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
   
   /**
     * The tags to add.
     */
-  var tags: TagList = js.native
+  var tags: TagList
 }
 object TagResourceRequest {
   

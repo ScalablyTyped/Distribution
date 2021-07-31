@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This struct contains a name-value pair of a document header (i.e. the "subject" field and the appropriate value of a MIME message). */
-@js.native
 trait DocumentHeaderField extends StObject {
   
   /** The name of the header field. */
-  var Name: String = js.native
+  var Name: String
   
   /** The value of the header field. */
-  var Value: String = js.native
+  var Value: String
 }
 object DocumentHeaderField {
   

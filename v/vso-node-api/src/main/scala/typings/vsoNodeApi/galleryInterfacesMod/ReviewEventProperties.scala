@@ -3,76 +3,74 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewEventProperties extends StObject {
   
   /**
     * Operation performed on Event - Create\Update
     */
-  var eventOperation: ReviewEventOperation = js.native
+  var eventOperation: ReviewEventOperation
   
   /**
     * Flag to see if reply is admin reply
     */
-  var isAdminReply: Boolean = js.native
+  var isAdminReply: Boolean
   
   /**
     * Flag to record if the reviwe is ignored
     */
-  var isIgnored: Boolean = js.native
+  var isIgnored: Boolean
   
   /**
     * Rating at the time of event
     */
-  var rating: Double = js.native
+  var rating: Double
   
   /**
     * Reply update date
     */
-  var replyDate: Date = js.native
+  var replyDate: Date
   
   /**
     * Publisher reply text or admin reply text
     */
-  var replyText: String = js.native
+  var replyText: String
   
   /**
     * User who responded to the review
     */
-  var replyUserId: String = js.native
+  var replyUserId: String
   
   /**
     * Review Event Type - Review
     */
-  var resourceType: ReviewResourceType = js.native
+  var resourceType: ReviewResourceType
   
   /**
     * Review update date
     */
-  var reviewDate: Date = js.native
+  var reviewDate: Date
   
   /**
     * ReviewId of the review  on which the operation is performed
     */
-  var reviewId: Double = js.native
+  var reviewId: Double
   
   /**
     * Text in Review Text
     */
-  var reviewText: String = js.native
+  var reviewText: String
   
   /**
     * User display name at the time of review
     */
-  var userDisplayName: String = js.native
+  var userDisplayName: String
   
   /**
     * User who gave review
     */
-  var userId: String = js.native
+  var userId: String
 }
 object ReviewEventProperties {
   

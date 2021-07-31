@@ -2,24 +2,46 @@ package typings.mssql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISqlTypeWithPrecisionScale extends ISqlType {
+trait ISqlTypeWithPrecisionScale
+  extends StObject
+     with ISqlType {
   
-  var precision: Double = js.native
+  var precision: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
   @JSName("type")
-  def type_MISqlTypeWithPrecisionScale(): ISqlTypeWithPrecisionScale = js.native
+  def type_MISqlTypeWithPrecisionScale(): ISqlTypeWithPrecisionScale
   @JSName("type")
-  def type_MISqlTypeWithPrecisionScale(precision: js.UndefOr[scala.Nothing], scale: Double): ISqlTypeWithPrecisionScale = js.native
+  def type_MISqlTypeWithPrecisionScale(precision: Double): ISqlTypeWithPrecisionScale
   @JSName("type")
-  def type_MISqlTypeWithPrecisionScale(precision: Double): ISqlTypeWithPrecisionScale = js.native
+  def type_MISqlTypeWithPrecisionScale(precision: Double, scale: Double): ISqlTypeWithPrecisionScale
   @JSName("type")
-  def type_MISqlTypeWithPrecisionScale(precision: Double, scale: Double): ISqlTypeWithPrecisionScale = js.native
+  def type_MISqlTypeWithPrecisionScale(precision: Unit, scale: Double): ISqlTypeWithPrecisionScale
   @JSName("type")
-  var type_Original: ISqlTypeFactoryWithPrecisionScale = js.native
+  var type_Original: ISqlTypeFactoryWithPrecisionScale
+}
+object ISqlTypeWithPrecisionScale {
+  
+  @scala.inline
+  def apply(precision: Double, scale: Double, `type`: ISqlTypeFactoryWithPrecisionScale): ISqlTypeWithPrecisionScale = {
+    val __obj = js.Dynamic.literal(precision = precision.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ISqlTypeWithPrecisionScale]
+  }
+  
+  @scala.inline
+  implicit class ISqlTypeWithPrecisionScaleMutableBuilder[Self <: ISqlTypeWithPrecisionScale] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setPrecision(value: Double): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: ISqlTypeFactoryWithPrecisionScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }

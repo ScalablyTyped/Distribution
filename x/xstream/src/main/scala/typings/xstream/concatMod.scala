@@ -3,12 +3,14 @@ package typings.xstream
 import typings.xstream.mod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatMod {
   
-  @JSImport("xstream/extra/concat", JSImport.Default)
+  @JSImport("xstream/extra/concat", JSImport.Namespace)
   @js.native
-  def default[T](streams: Stream[T]*): Stream[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](streams: Stream[T]*): Stream[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(streams.asInstanceOf[js.Any]).asInstanceOf[Stream[T]]
 }

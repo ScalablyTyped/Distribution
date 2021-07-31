@@ -2,11 +2,9 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "selection.toJSON()". */
-@js.native
 trait SelectionData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SelectionData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var shapes: js.UndefOr[js.Array[ShapeData]] = js.native
+  var shapes: js.UndefOr[js.Array[ShapeData]] = js.undefined
 }
 object SelectionData {
   

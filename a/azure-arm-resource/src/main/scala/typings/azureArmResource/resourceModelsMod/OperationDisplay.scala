@@ -2,31 +2,29 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationDisplay extends StObject {
   
   /**
     * Description of the operation.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Operation type: Read, write, delete, etc.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * Service provider: Microsoft.Resources
     */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
   
   /**
     * Resource on which the operation is performed: Profile, endpoint, etc.
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
 }
 object OperationDisplay {
   

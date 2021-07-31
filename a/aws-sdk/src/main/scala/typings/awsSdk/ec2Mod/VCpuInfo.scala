@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VCpuInfo extends StObject {
   
   /**
     * The default number of cores for the instance type.
     */
-  var DefaultCores: js.UndefOr[CoreCount] = js.native
+  var DefaultCores: js.UndefOr[CoreCount] = js.undefined
   
   /**
     * The default number of threads per core for the instance type.
     */
-  var DefaultThreadsPerCore: js.UndefOr[ThreadsPerCore] = js.native
+  var DefaultThreadsPerCore: js.UndefOr[ThreadsPerCore] = js.undefined
   
   /**
     * The default number of vCPUs for the instance type.
     */
-  var DefaultVCpus: js.UndefOr[VCpuCount] = js.native
+  var DefaultVCpus: js.UndefOr[VCpuCount] = js.undefined
   
   /**
     * The valid number of cores that can be configured for the instance type.
     */
-  var ValidCores: js.UndefOr[CoreCountList] = js.native
+  var ValidCores: js.UndefOr[CoreCountList] = js.undefined
   
   /**
     * The valid number of threads per core that can be configured for the instance type. 
     */
-  var ValidThreadsPerCore: js.UndefOr[ThreadsPerCoreList] = js.native
+  var ValidThreadsPerCore: js.UndefOr[ThreadsPerCoreList] = js.undefined
 }
 object VCpuInfo {
   

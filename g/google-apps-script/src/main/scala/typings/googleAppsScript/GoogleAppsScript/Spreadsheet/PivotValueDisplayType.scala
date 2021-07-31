@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait PivotValueDisplayType extends StObject
 object PivotValueDisplayType extends StObject {
   
   @js.native
-  sealed trait DEFAULT extends PivotValueDisplayType
+  sealed trait DEFAULT
+    extends StObject
+       with PivotValueDisplayType
   
   @js.native
-  sealed trait PERCENT_OF_COLUMN_TOTAL extends PivotValueDisplayType
+  sealed trait PERCENT_OF_COLUMN_TOTAL
+    extends StObject
+       with PivotValueDisplayType
   
   @js.native
-  sealed trait PERCENT_OF_GRAND_TOTAL extends PivotValueDisplayType
+  sealed trait PERCENT_OF_GRAND_TOTAL
+    extends StObject
+       with PivotValueDisplayType
   
   @js.native
-  sealed trait PERCENT_OF_ROW_TOTAL extends PivotValueDisplayType
+  sealed trait PERCENT_OF_ROW_TOTAL
+    extends StObject
+       with PivotValueDisplayType
 }

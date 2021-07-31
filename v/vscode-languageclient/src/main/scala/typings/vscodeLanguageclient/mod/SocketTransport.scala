@@ -3,15 +3,15 @@ package typings.vscodeLanguageclient.mod
 import typings.vscodeLanguageclient.mod.TransportKind.socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SocketTransport extends Transport {
+trait SocketTransport
+  extends StObject
+     with Transport {
   
-  var kind: socket = js.native
+  var kind: socket
   
-  var port: Double = js.native
+  var port: Double
 }
 object SocketTransport {
   

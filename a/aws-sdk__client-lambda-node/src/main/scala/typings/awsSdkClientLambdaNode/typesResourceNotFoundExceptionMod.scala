@@ -29,15 +29,14 @@ import typings.awsSdkClientLambdaNode.updateFunctionCodeExceptionsUnionMod.Updat
 import typings.awsSdkClientLambdaNode.updateFunctionConfigurationExceptionsUnionMod.UpdateFunctionConfigurationExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ @js.native
-  trait ResourceNotFoundException
-    extends AddPermissionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ trait ResourceNotFoundException
+    extends StObject
+       with AddPermissionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateEventSourceMappingExceptionsUnion
        with CreateFunctionExceptionsUnion
@@ -65,13 +64,13 @@ object typesResourceNotFoundExceptionMod {
        with UpdateFunctionCodeExceptionsUnion
        with UpdateFunctionConfigurationExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ResourceNotFoundException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ResourceNotFoundException
   }
   object ResourceNotFoundException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ResourceNotFoundException): ResourceNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[ResourceNotFoundException]
     }
     
@@ -83,18 +82,17 @@ object typesResourceNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceNotFoundExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object ResourceNotFoundExceptionDetails {
     

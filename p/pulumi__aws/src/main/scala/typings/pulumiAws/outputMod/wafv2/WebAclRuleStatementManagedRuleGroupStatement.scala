@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementManagedRuleGroupStatement extends StObject {
   
   /**
     * The `rules` whose actions are set to `COUNT` by the web ACL, regardless of the action that is set on the rule. See Excluded Rule below for details.
     */
-  var excludedRules: js.UndefOr[js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]] = js.native
+  var excludedRules: js.UndefOr[js.Array[WebAclRuleStatementManagedRuleGroupStatementExcludedRule]] = js.undefined
   
   /**
     * The name of the managed rule group.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The name of the managed rule group vendor.
     */
-  var vendorName: String = js.native
+  var vendorName: String
 }
 object WebAclRuleStatementManagedRuleGroupStatement {
   

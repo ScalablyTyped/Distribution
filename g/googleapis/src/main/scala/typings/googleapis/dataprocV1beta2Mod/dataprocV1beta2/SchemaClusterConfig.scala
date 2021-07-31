@@ -2,20 +2,18 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The cluster config.
   */
-@js.native
 trait SchemaClusterConfig extends StObject {
   
   /**
     * Optional. Autoscaling config for the policy associated with the cluster.
     * Cluster does not autoscale if this field is unset.
     */
-  var autoscalingConfig: js.UndefOr[SchemaAutoscalingConfig] = js.native
+  var autoscalingConfig: js.UndefOr[SchemaAutoscalingConfig] = js.undefined
   
   /**
     * Optional. A Google Cloud Storage bucket used to stage job dependencies,
@@ -26,23 +24,23 @@ trait SchemaClusterConfig extends StObject {
     * create and manage this project-level, per-location bucket (see Cloud
     * Dataproc staging bucket).
     */
-  var configBucket: js.UndefOr[String] = js.native
+  var configBucket: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Encryption settings for the cluster.
     */
-  var encryptionConfig: js.UndefOr[SchemaEncryptionConfig] = js.native
+  var encryptionConfig: js.UndefOr[SchemaEncryptionConfig] = js.undefined
   
   /**
     * Optional. Port/endpoint configuration for this cluster
     */
-  var endpointConfig: js.UndefOr[SchemaEndpointConfig] = js.native
+  var endpointConfig: js.UndefOr[SchemaEndpointConfig] = js.undefined
   
   /**
     * Optional. The shared Compute Engine config settings for all instances in
     * a cluster.
     */
-  var gceClusterConfig: js.UndefOr[SchemaGceClusterConfig] = js.native
+  var gceClusterConfig: js.UndefOr[SchemaGceClusterConfig] = js.undefined
   
   /**
     * Optional. Commands to execute on each node after config is completed. By
@@ -54,40 +52,40 @@ trait SchemaClusterConfig extends StObject {
     * if [[ &quot;${ROLE}&quot; == &#39;Master&#39; ]]; then   ... master
     * specific actions ... else   ... worker specific actions ... fi
     */
-  var initializationActions: js.UndefOr[js.Array[SchemaNodeInitializationAction]] = js.native
+  var initializationActions: js.UndefOr[js.Array[SchemaNodeInitializationAction]] = js.undefined
   
   /**
     * Optional. The config setting for auto delete cluster schedule.
     */
-  var lifecycleConfig: js.UndefOr[SchemaLifecycleConfig] = js.native
+  var lifecycleConfig: js.UndefOr[SchemaLifecycleConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for the master instance in a
     * cluster.
     */
-  var masterConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var masterConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for additional worker
     * instances in a cluster.
     */
-  var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var secondaryWorkerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
   
   /**
     * Optional. Security related configuration.
     */
-  var securityConfig: js.UndefOr[SchemaSecurityConfig] = js.native
+  var securityConfig: js.UndefOr[SchemaSecurityConfig] = js.undefined
   
   /**
     * Optional. The config settings for software inside the cluster.
     */
-  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.native
+  var softwareConfig: js.UndefOr[SchemaSoftwareConfig] = js.undefined
   
   /**
     * Optional. The Compute Engine config settings for worker instances in a
     * cluster.
     */
-  var workerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.native
+  var workerConfig: js.UndefOr[SchemaInstanceGroupConfig] = js.undefined
 }
 object SchemaClusterConfig {
   

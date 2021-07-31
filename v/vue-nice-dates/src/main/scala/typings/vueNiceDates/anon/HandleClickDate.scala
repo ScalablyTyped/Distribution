@@ -2,19 +2,17 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HandleClickDate extends StObject {
   
-  def changeLastValidDate(date: String): Unit = js.native
+  def changeLastValidDate(date: String): Unit
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit = js.native
+  def handleClickDate(date: typings.std.Date, `type`: String): Unit
   
-  def initDate(): Unit = js.native
+  def initDate(): Unit
   
-  def isValidAndSelectable(date: typings.std.Date): Boolean = js.native
+  def isValidAndSelectable(date: typings.std.Date): Boolean
 }
 object HandleClickDate {
   

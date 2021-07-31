@@ -2,44 +2,43 @@ package typings.jsonpointer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("jsonpointer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     *  Builds a JSONPointer instance from a pointer value.
     */
-  @JSImport("jsonpointer", "compile")
-  @js.native
-  def compile(pointer: String): JSONPointer = js.native
+  @scala.inline
+  def compile(pointer: String): JSONPointer = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(pointer.asInstanceOf[js.Any]).asInstanceOf[JSONPointer]
   
   /**
     * Looks up a JSON pointer in an object
     */
-  @JSImport("jsonpointer", "get")
-  @js.native
-  def get(`object`: js.Object, pointer: String): js.Any = js.native
+  @scala.inline
+  def get(`object`: js.Object, pointer: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Set a value for a JSON pointer on object
     */
-  @JSImport("jsonpointer", "set")
-  @js.native
-  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def set(`object`: js.Object, pointer: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(`object`.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait JSONPointer extends StObject {
     
     /**
       * Looks up a JSON pointer in an object
       */
-    def get(`object`: js.Object, pointer: String): js.Any = js.native
+    def get(`object`: js.Object, pointer: String): js.Any
     
     /**
       * Set a value for a JSON pointer on object
       */
-    def set(`object`: js.Object, pointer: String, value: js.Any): Unit = js.native
+    def set(`object`: js.Object, pointer: String, value: js.Any): Unit
   }
   object JSONPointer {
     

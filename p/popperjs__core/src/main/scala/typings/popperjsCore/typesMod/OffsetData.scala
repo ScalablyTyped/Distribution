@@ -2,42 +2,40 @@ package typings.popperjsCore.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ key in @popperjs/core.@popperjs/core/lib/enums.Placement ]: @popperjs/core.@popperjs/core/lib/types.Offsets} */
-@js.native
 trait OffsetData extends StObject {
   
-  var auto: Offsets = js.native
+  var auto: Offsets
   
-  var `auto-end`: Offsets = js.native
+  var `auto-end`: Offsets
   
-  var `auto-start`: Offsets = js.native
+  var `auto-start`: Offsets
   
-  var bottom: Offsets = js.native
+  var bottom: Offsets
   
-  var `bottom-end`: Offsets = js.native
+  var `bottom-end`: Offsets
   
-  var `bottom-start`: Offsets = js.native
+  var `bottom-start`: Offsets
   
-  var left: Offsets = js.native
+  var left: Offsets
   
-  var `left-end`: Offsets = js.native
+  var `left-end`: Offsets
   
-  var `left-start`: Offsets = js.native
+  var `left-start`: Offsets
   
-  var right: Offsets = js.native
+  var right: Offsets
   
-  var `right-end`: Offsets = js.native
+  var `right-end`: Offsets
   
-  var `right-start`: Offsets = js.native
+  var `right-start`: Offsets
   
-  var top: Offsets = js.native
+  var top: Offsets
   
-  var `top-end`: Offsets = js.native
+  var `top-end`: Offsets
   
-  var `top-start`: Offsets = js.native
+  var `top-start`: Offsets
 }
 object OffsetData {
   

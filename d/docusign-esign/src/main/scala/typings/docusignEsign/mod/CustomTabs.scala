@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTabs extends StObject {
   
   /**
     * An optional string that is used to auto-match tabs to strings located in the documents of an envelope.
     */
-  var anchor: js.UndefOr[String] = js.native
+  var anchor: js.UndefOr[String] = js.undefined
   
   /**
     * This property controls how [anchor tabs][AnchorTabs] are placed. When **true**, the text string in a document must match the case of the `anchorString`
@@ -48,7 +46,7 @@ trait CustomTabs extends StObject {
     *
     * [AnchorTabs]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     */
-  var anchorCaseSensitive: js.UndefOr[String] = js.native
+  var anchorCaseSensitive: js.UndefOr[String] = js.undefined
   
   /**
     * This property controls how [anchor tabs][AnchorTabs] are aligned in relation to the anchor text. Possible values are :
@@ -61,12 +59,12 @@ trait CustomTabs extends StObject {
     * [AnchorTabs]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     *
     */
-  var anchorHorizontalAlignment: js.UndefOr[String] = js.native
+  var anchorHorizontalAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, this tab is ignored if the `anchorString` is not found in the document.
     */
-  var anchorIgnoreIfNotPresent: js.UndefOr[String] = js.native
+  var anchorIgnoreIfNotPresent: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the text string in a document must match the value of the `anchorString` property in its entirety for an [anchor tab][AnchorTab] to be created.
@@ -105,12 +103,12 @@ trait CustomTabs extends StObject {
     * [AnchorTab]: https://developers.docusign.com/esign-rest-api/guides/concepts/tabs#autoplace
     *
     */
-  var anchorMatchWholeWord: js.UndefOr[String] = js.native
+  var anchorMatchWholeWord: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the units of the X and Y offset. Units may be pixels, millimeters, centimeters, or inches.
     */
-  var anchorUnits: js.UndefOr[String] = js.native
+  var anchorUnits: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the X axis location of the tab in `anchorUnits` relative to the `anchorString`.
@@ -118,7 +116,7 @@ trait CustomTabs extends StObject {
     * **Note**: When you provide an x- and y-coordinate for the sign here tab, the tab appears 21 points lower than the value you provide for the y-coordinate.
     * To align the tab as expected, subtract 21 from the expected y-value.
     */
-  var anchorXOffset: js.UndefOr[String] = js.native
+  var anchorXOffset: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the Y axis location of the tab in `anchorUnits` relative to the `anchorString`.
@@ -126,12 +124,12 @@ trait CustomTabs extends StObject {
     * **Note**: When you provide an x- and y-coordinate for the sign here tab, the tab appears 21 points lower than the value you provide for the y-coordinate.
     * To align the tab as expected, subtract 21 from the expected y-value.
     */
-  var anchorYOffset: js.UndefOr[String] = js.native
+  var anchorYOffset: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is bold.
     */
-  var bold: js.UndefOr[String] = js.native
+  var bold: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the field appears normally while the recipient is adding or modifying the information in the field, but the data is not visible (the characters
@@ -142,34 +140,34 @@ trait CustomTabs extends StObject {
     *
     * This setting applies only to text boxes and does not affect list boxes, radio buttons, or check boxes.
     */
-  var concealValueOnDocument: js.UndefOr[String] = js.native
+  var concealValueOnDocument: js.UndefOr[String] = js.undefined
   
   /**
     * The user name of the DocuSign user who created this object.
     */
-  var createdByDisplayName: js.UndefOr[String] = js.native
+  var createdByDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The userId of the DocuSign user who created this object.
     */
-  var createdByUserId: js.UndefOr[String] = js.native
+  var createdByUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The DocuSign-generated custom tab ID for the custom tab to be applied. This property can only be used when adding new tabs for a recipient. When used, the new tab
     * inherits all of the custom tab properties.
     */
-  var customTabId: js.UndefOr[String] = js.native
+  var customTabId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, disables the auto sizing of single line text boxes in the signing screen when the signer enters data. If disabled users will only be able enter
     * as much data as the text box can hold. By default this is false. This property only affects single line text boxes.
     */
-  var disableAutoSize: js.UndefOr[String] = js.native
+  var disableAutoSize: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the custom tab is editable. Otherwise the custom tab cannot be modified.
     */
-  var editable: js.UndefOr[String] = js.native
+  var editable: js.UndefOr[String] = js.undefined
   
   /**
     * The font to be used for the tab value. Supported fonts include:
@@ -192,7 +190,7 @@ trait CustomTabs extends StObject {
     * - Verdana
     *
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * The font color to use for the information in the tab. Possible values are:
@@ -209,7 +207,7 @@ trait CustomTabs extends StObject {
     * - White
     *
     */
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
   /**
     * The font size used for the information in the tab. Possible values are:
@@ -232,69 +230,69 @@ trait CustomTabs extends StObject {
     * - Size48
     * - Size72
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the tab in pixels.
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the tab is included in e-mails related to the envelope on which it exists. This applies to only specific tabs.
     */
-  var includedInEmail: js.UndefOr[String] = js.native
+  var includedInEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The original value of the tab.
     */
-  var initialValue: js.UndefOr[String] = js.native
+  var initialValue: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is italic.
     */
-  var italic: js.UndefOr[String] = js.native
+  var italic: js.UndefOr[String] = js.undefined
   
   /**
     * If the tab is a list, this represents the values that are possible for the tab.
     */
-  var items: js.UndefOr[js.Array[String]] = js.native
+  var items: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The UTC DateTime this object was last modified. This is in ISO8601 format.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * The User Name of the DocuSign user who last modified this object.
     */
-  var lastModifiedByDisplayName: js.UndefOr[String] = js.native
+  var lastModifiedByDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The userId of the DocuSign user who last modified this object.
     */
-  var lastModifiedByUserId: js.UndefOr[String] = js.native
+  var lastModifiedByUserId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the signer cannot change the data of the custom tab.
     */
-  var locked: js.UndefOr[String] = js.native
+  var locked: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of entry characters supported by the custom tab.
     */
-  var maximumLength: js.UndefOr[String] = js.native
+  var maximumLength: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the information necessary to map the tab to a field in SalesForce.
     */
   var mergeField: js.UndefOr[
     /* Contains information for transfering values between Salesforce data fields and DocuSign Tabs. */ MergeField
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the custom tab.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If the custom tab is for a payment request, this is the external code for the item associated with the charge. For example, this might be your product id.
@@ -303,7 +301,7 @@ trait CustomTabs extends StObject {
     *
     * Maximum Length: 100 characters.
     */
-  var paymentItemCode: js.UndefOr[String] = js.native
+  var paymentItemCode: js.UndefOr[String] = js.undefined
   
   /**
     * If the custom tab is for a payment request, this is the description of the item associated with the charge.
@@ -312,7 +310,7 @@ trait CustomTabs extends StObject {
     *
     * Maximum Length: 100 characters.
     */
-  var paymentItemDescription: js.UndefOr[String] = js.native
+  var paymentItemDescription: js.UndefOr[String] = js.undefined
   
   /**
     * If the custom tab is for a payment request, this is the name of the item associated with the charge.
@@ -321,27 +319,27 @@ trait CustomTabs extends StObject {
     *
     * Example: `Hamlet`
     */
-  var paymentItemName: js.UndefOr[String] = js.native
+  var paymentItemName: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the signer is required to fill out this tab.
     */
-  var required: js.UndefOr[String] = js.native
+  var required: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the size of the tab. This field accepts values from `0.5` to `1.0`, where `1.0` represents full size and `0.5` is 50% of full size.
     */
-  var scaleValue: js.UndefOr[String] = js.native
+  var scaleValue: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the radio button is selected.
     */
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, this custom tab is shared.
     */
-  var shared: js.UndefOr[String] = js.native
+  var shared: js.UndefOr[String] = js.undefined
   
   /**
     * The type of stamp. Valid values are:
@@ -350,13 +348,13 @@ trait CustomTabs extends StObject {
     * - `stamp`: A stamp image.
     * - null
     */
-  var stampType: js.UndefOr[String] = js.native
+  var stampType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `stampType` property is editable.
     *
     */
-  var stampTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var stampTypeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The label associated with the tab. This value may be an empty string.
@@ -365,7 +363,7 @@ trait CustomTabs extends StObject {
     * Maximum Length: 500 characters.
     *
     */
-  var tabLabel: js.UndefOr[String] = js.native
+  var tabLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this tab. Values are:
@@ -396,27 +394,27 @@ trait CustomTabs extends StObject {
     * - Zip5Dash4
     *
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the information in the tab is underlined.
     */
-  var underline: js.UndefOr[String] = js.native
+  var underline: js.UndefOr[String] = js.undefined
   
   /**
     * The message displayed if the custom tab fails input validation (either custom of embedded).
     */
-  var validationMessage: js.UndefOr[String] = js.native
+  var validationMessage: js.UndefOr[String] = js.undefined
   
   /**
     * A regular expression used to validate input for the tab.
     */
-  var validationPattern: js.UndefOr[String] = js.native
+  var validationPattern: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the tab in pixels.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object CustomTabs {
   

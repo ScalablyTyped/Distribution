@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyUsageOptions extends StObject {
   
   /** The key may be used to sign certificates. */
-  var certSign: js.UndefOr[Boolean] = js.native
+  var certSign: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used for cryptographic commitments. Note that this may also be referred to as "non-repudiation". */
-  var contentCommitment: js.UndefOr[Boolean] = js.native
+  var contentCommitment: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used sign certificate revocation lists. */
-  var crlSign: js.UndefOr[Boolean] = js.native
+  var crlSign: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used to encipher data. */
-  var dataEncipherment: js.UndefOr[Boolean] = js.native
+  var dataEncipherment: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used to decipher only. */
-  var decipherOnly: js.UndefOr[Boolean] = js.native
+  var decipherOnly: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used for digital signatures. */
-  var digitalSignature: js.UndefOr[Boolean] = js.native
+  var digitalSignature: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used to encipher only. */
-  var encipherOnly: js.UndefOr[Boolean] = js.native
+  var encipherOnly: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used in a key agreement protocol. */
-  var keyAgreement: js.UndefOr[Boolean] = js.native
+  var keyAgreement: js.UndefOr[Boolean] = js.undefined
   
   /** The key may be used to encipher other keys. */
-  var keyEncipherment: js.UndefOr[Boolean] = js.native
+  var keyEncipherment: js.UndefOr[Boolean] = js.undefined
 }
 object KeyUsageOptions {
   

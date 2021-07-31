@@ -3,28 +3,26 @@ package typings.xrm.Xrm
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the DateFormattingInfo.calendar field
   */
-@js.native
 trait Calendar extends StObject {
   
-  var AlgorithmType: Double = js.native
+  var AlgorithmType: Double
   
-  var CalendarType: Double = js.native
+  var CalendarType: Double
   
-  var Eras: js.Array[Double] = js.native
+  var Eras: js.Array[Double]
   
-  var IsReadOnly: Boolean = js.native
+  var IsReadOnly: Boolean
   
-  var MaxSupportedDateTime: Date = js.native
+  var MaxSupportedDateTime: Date
   
-  var MinSupportedDateTime: Date = js.native
+  var MinSupportedDateTime: Date
   
-  var TwoDigitYearMax: Double = js.native
+  var TwoDigitYearMax: Double
 }
 object Calendar {
   

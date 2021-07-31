@@ -2,24 +2,22 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A tuple of values for the quasi-identifier columns.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues extends StObject {
   
   /**
     * The estimated anonymity for these quasi-identifier values.
     */
-  var estimatedAnonymity: js.UndefOr[String] = js.native
+  var estimatedAnonymity: js.UndefOr[String] = js.undefined
   
   /**
     * The quasi-identifier values.
     */
-  var quasiIdsValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.native
+  var quasiIdsValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KMapEstimationQuasiIdValues {
   

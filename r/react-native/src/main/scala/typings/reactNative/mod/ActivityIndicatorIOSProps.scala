@@ -4,26 +4,26 @@ import typings.reactNative.reactNativeStrings.large_
 import typings.reactNative.reactNativeStrings.small_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivityIndicatorIOSProps extends ViewProps {
+trait ActivityIndicatorIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Whether to show the indicator (true, the default) or hide it (false).
     */
-  var animating: js.UndefOr[Boolean] = js.native
+  var animating: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The foreground color of the spinner (default is gray).
     */
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * Whether the indicator should hide when not animating (true by default).
     */
-  var hidesWhenStopped: js.UndefOr[Boolean] = js.native
+  var hidesWhenStopped: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Size of the indicator.
@@ -31,7 +31,7 @@ trait ActivityIndicatorIOSProps extends ViewProps {
     *
     * enum('small', 'large')
     */
-  var size: js.UndefOr[small_ | large_] = js.native
+  var size: js.UndefOr[small_ | large_] = js.undefined
 }
 object ActivityIndicatorIOSProps {
   

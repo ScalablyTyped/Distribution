@@ -2,35 +2,33 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2a864886f70d010101` extends StObject {
   
-  var `2a864886f70d010101`: String = js.native
+  var `2a864886f70d010101`: String
   
-  var `2a8648ce380401`: String = js.native
+  var `2a8648ce380401`: String
   
-  var `2a8648ce380403`: String = js.native
+  var `2a8648ce380403`: String
   
-  var `2a8648ce3d0201`: String = js.native
+  var `2a8648ce3d0201`: String
   
-  var `2a8648ce3d030107`: String = js.native
+  var `2a8648ce3d030107`: String
   
-  var `2b8104000a`: String = js.native
+  var `2b8104000a`: String
   
-  var `2b8104001f`: String = js.native
+  var `2b8104001f`: String
   
-  var `2b81040021`: String = js.native
+  var `2b81040021`: String
   
-  var `2b81040022`: String = js.native
+  var `2b81040022`: String
   
-  var `2b81040023`: String = js.native
+  var `2b81040023`: String
   
-  var `608648016503040301`: String = js.native
+  var `608648016503040301`: String
   
-  var `608648016503040302`: String = js.native
+  var `608648016503040302`: String
 }
 object `2a864886f70d010101` {
   

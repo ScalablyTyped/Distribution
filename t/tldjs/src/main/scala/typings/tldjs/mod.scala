@@ -5,44 +5,38 @@ import typings.tldjs.anon.ExtractHostname
 import typings.tldjs.anon.GetDomain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tldjs", "extractHostname")
+  @JSImport("tldjs", JSImport.Namespace)
   @js.native
-  def extractHostname(host: String): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tldjs", "fromUserSettings")
-  @js.native
-  def fromUserSettings(options: ExtractHostname): GetDomain = js.native
+  @scala.inline
+  def extractHostname(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("extractHostname")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("tldjs", "getDomain")
-  @js.native
-  def getDomain(host: String): String | Null = js.native
+  @scala.inline
+  def fromUserSettings(options: ExtractHostname): GetDomain = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUserSettings")(options.asInstanceOf[js.Any]).asInstanceOf[GetDomain]
   
-  @JSImport("tldjs", "getPublicSuffix")
-  @js.native
-  def getPublicSuffix(host: String): String | Null = js.native
+  @scala.inline
+  def getDomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("tldjs", "getSubdomain")
-  @js.native
-  def getSubdomain(host: String): String | Null = js.native
+  @scala.inline
+  def getPublicSuffix(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPublicSuffix")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("tldjs", "isValid")
-  @js.native
-  def isValid(host: String): Boolean = js.native
+  @scala.inline
+  def getSubdomain(host: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubdomain")(host.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("tldjs", "isValidHostname")
-  @js.native
-  def isValidHostname(host: String): Boolean = js.native
+  @scala.inline
+  def isValid(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tldjs", "parse")
-  @js.native
-  def parse(host: String): Domain = js.native
+  @scala.inline
+  def isValidHostname(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("tldjs", "tldExists")
-  @js.native
-  def tldExists(host: String): Boolean = js.native
+  @scala.inline
+  def parse(host: String): Domain = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(host.asInstanceOf[js.Any]).asInstanceOf[Domain]
+  
+  @scala.inline
+  def tldExists(host: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("tldExists")(host.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

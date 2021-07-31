@@ -2,24 +2,22 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single row in the confusion matrix.
   */
-@js.native
 trait SchemaRow extends StObject {
   
   /**
     * The original label of this row.
     */
-  var actualLabel: js.UndefOr[String] = js.native
+  var actualLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Info describing predicted label distribution.
     */
-  var entries: js.UndefOr[js.Array[SchemaEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaEntry]] = js.undefined
 }
 object SchemaRow {
   

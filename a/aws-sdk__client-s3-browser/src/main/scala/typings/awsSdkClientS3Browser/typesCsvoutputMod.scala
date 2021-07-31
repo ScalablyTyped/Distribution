@@ -4,38 +4,36 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ALWAYS
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.ASNEEDED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCsvoutputMod {
   
-  @js.native
   trait CSVOutput extends StObject {
     
     /**
       * <p>Value used to separate individual fields in a record.</p>
       */
-    var FieldDelimiter: js.UndefOr[String] = js.native
+    var FieldDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Value used for escaping where the field delimiter is part of the value.</p>
       */
-    var QuoteCharacter: js.UndefOr[String] = js.native
+    var QuoteCharacter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Single character used for escaping the quote character inside an already escaped value.</p>
       */
-    var QuoteEscapeCharacter: js.UndefOr[String] = js.native
+    var QuoteEscapeCharacter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Indicates whether or not all output fields should be quoted.</p>
       */
-    var QuoteFields: js.UndefOr[ALWAYS | ASNEEDED | String] = js.native
+    var QuoteFields: js.UndefOr[ALWAYS | ASNEEDED | String] = js.undefined
     
     /**
       * <p>Value used to separate individual records.</p>
       */
-    var RecordDelimiter: js.UndefOr[String] = js.native
+    var RecordDelimiter: js.UndefOr[String] = js.undefined
   }
   object CSVOutput {
     

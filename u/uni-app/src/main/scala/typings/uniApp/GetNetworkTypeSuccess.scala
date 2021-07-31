@@ -2,16 +2,14 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNetworkTypeSuccess extends StObject {
   
   /**
     * 网络类型
     */
-  var networkType: js.UndefOr[String] = js.native
+  var networkType: js.UndefOr[String] = js.undefined
 }
 object GetNetworkTypeSuccess {
   

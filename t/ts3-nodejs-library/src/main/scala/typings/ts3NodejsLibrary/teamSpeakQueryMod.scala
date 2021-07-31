@@ -12,7 +12,6 @@ import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.Response
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.executeArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamSpeakQueryMod {
@@ -130,9 +129,8 @@ object teamSpeakQueryMod {
     def IGNORE_LINES_INITIAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IGNORE_LINES_INITIAL")(x.asInstanceOf[js.Any])
     
     /** returns a constructed Socket */
-    @JSImport("ts3-nodejs-library/lib/transport/TeamSpeakQuery", "TeamSpeakQuery.getSocket")
-    @js.native
-    def getSocket(config: ConnectionParams): QueryProtocolInterface = js.native
+    @scala.inline
+    def getSocket(config: ConnectionParams): QueryProtocolInterface = ^.asInstanceOf[js.Dynamic].applyDynamic("getSocket")(config.asInstanceOf[js.Any]).asInstanceOf[QueryProtocolInterface]
     
     @js.native
     trait QueryProtocolInterface extends EventEmitter {
@@ -152,16 +150,15 @@ object teamSpeakQueryMod {
       def sendKeepAlive(): Unit = js.native
     }
     
-    @js.native
     trait QueueItem extends StObject {
       
-      var cmd: Command = js.native
+      var cmd: Command
       
-      def fulfill(data: js.Any): Unit = js.native
+      def fulfill(data: js.Any): Unit
       
-      var priority: Boolean = js.native
+      var priority: Boolean
       
-      def reject(data: js.Any): Unit = js.native
+      def reject(data: js.Any): Unit
     }
     object QueueItem {
       
@@ -190,8 +187,9 @@ object teamSpeakQueryMod {
     
     type Response = js.Array[ResponseEntry]
     
-    @js.native
-    trait ResponseEntry extends /* x */ StringDictionary[ValueTypes]
+    trait ResponseEntry
+      extends StObject
+         with /* x */ StringDictionary[ValueTypes]
     object ResponseEntry {
       
       @scala.inline

@@ -6,22 +6,26 @@ import typings.divaJs.interfacesMod.ManifestData
 import typings.divaJs.interfacesMod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageManifestMod {
   
   @JSImport("diva.js/image-manifest", JSImport.Default)
   @js.native
-  class default protected () extends ImageManifest {
+  class default protected ()
+    extends StObject
+       with ImageManifest {
     def this(data: ManifestData, urlAdapter: IIIFSourceAdapter) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("diva.js/image-manifest", "default.fromIIIF")
+    @JSImport("diva.js/image-manifest", JSImport.Default)
     @js.native
-    def fromIIIF(iiifManifest: js.Object): ImageManifest = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromIIIF(iiifManifest: js.Object): ImageManifest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIIIF")(iiifManifest.asInstanceOf[js.Any]).asInstanceOf[ImageManifest]
   }
   
   type IIIFSourceAdapter = js.Any

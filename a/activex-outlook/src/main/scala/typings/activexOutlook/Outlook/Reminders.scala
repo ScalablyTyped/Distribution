@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reminders extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Reminder = js.native
+  def Item(Index: js.Any): Reminder
   
   @JSName("Outlook.Reminders_typekey")
-  var OutlookDotReminders_typekey: Reminders = js.native
+  var OutlookDotReminders_typekey: Reminders
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Reminders {
   

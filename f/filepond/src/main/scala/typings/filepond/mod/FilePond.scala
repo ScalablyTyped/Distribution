@@ -8,7 +8,6 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -24,15 +23,15 @@ class FilePond () extends StObject {
   def addEventListener(event: FilePondEventPrefixed, fn: js.Function1[/* e */ js.Any, Unit]): Unit = js.native
   
   def addFile(source: String): js.Promise[FilePondFile] = js.native
-  def addFile(source: String, options: Index with Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
+  def addFile(source: String, options: Index & Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
   /**
     * Adds a file.
     * @param options.index The index that the file should be added at.
     */
   def addFile(source: ActualFileObject): js.Promise[FilePondFile] = js.native
-  def addFile(source: ActualFileObject, options: Index with Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
+  def addFile(source: ActualFileObject, options: Index & Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
   def addFile(source: Blob): js.Promise[FilePondFile] = js.native
-  def addFile(source: Blob, options: Index with Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
+  def addFile(source: Blob, options: Index & Partial[typings.filepond.anon.File]): js.Promise[FilePondFile] = js.native
   
   /**
     * Adds multiple files.
@@ -152,11 +151,11 @@ class FilePond () extends StObject {
     * @param options Options for removal
     */
   def removeFile(options: RemoveFileOptions): Unit = js.native
-  def removeFile(query: js.UndefOr[scala.Nothing], options: RemoveFileOptions): Unit = js.native
   def removeFile(query: String): Unit = js.native
   def removeFile(query: String, options: RemoveFileOptions): Unit = js.native
   def removeFile(query: Double): Unit = js.native
   def removeFile(query: Double, options: RemoveFileOptions): Unit = js.native
+  def removeFile(query: Unit, options: RemoveFileOptions): Unit = js.native
   def removeFile(query: FilePondFile): Unit = js.native
   def removeFile(query: FilePondFile, options: RemoveFileOptions): Unit = js.native
   
@@ -171,9 +170,9 @@ class FilePond () extends StObject {
     * @param options Options for removal
     */
   def removeFiles(options: RemoveFileOptions): Unit = js.native
-  def removeFiles(query: js.UndefOr[scala.Nothing], options: RemoveFileOptions): Unit = js.native
   def removeFiles(query: js.Array[FilePondFile | String | Double]): Unit = js.native
   def removeFiles(query: js.Array[FilePondFile | String | Double], options: RemoveFileOptions): Unit = js.native
+  def removeFiles(query: Unit, options: RemoveFileOptions): Unit = js.native
   
   /** Replaces the supplied element with FilePond. */
   def replaceElement(element: Element): Unit = js.native

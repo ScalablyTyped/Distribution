@@ -2,17 +2,17 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PickerPropsIOS extends ViewProps {
+trait PickerPropsIOS
+  extends StObject
+     with ViewProps {
   
   /**
     * Style to apply to each of the item labels.
     * @platform ios
     */
-  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object PickerPropsIOS {
   

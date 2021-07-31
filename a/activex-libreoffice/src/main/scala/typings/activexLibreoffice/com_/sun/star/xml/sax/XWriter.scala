@@ -5,17 +5,16 @@ import typings.activexLibreoffice.com_.sun.star.io.XActiveDataSource
 import typings.activexLibreoffice.com_.sun.star.io.XOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style {@link Writer} service to implement.
   * @since LibreOffice 4.0
   */
-@js.native
 trait XWriter
-  extends XExtendedDocumentHandler
+  extends StObject
      with XActiveDataSource
+     with XExtendedDocumentHandler
 object XWriter {
   
   @scala.inline

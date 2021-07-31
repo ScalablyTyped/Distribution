@@ -5,20 +5,21 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-wait", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-wait", "Waiter")
   @js.native
   val Waiter: FunctionComponent[js.Object] = js.native
   
-  @JSImport("react-wait", "useWait")
-  @js.native
-  def useWait(): UseWaitAPI = js.native
+  @scala.inline
+  def useWait(): UseWaitAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("useWait")().asInstanceOf[UseWaitAPI]
   
-  @js.native
   trait UseWaitAPI extends StObject {
     
     /**
@@ -44,7 +45,7 @@ object mod {
       * </button>
       * ```
       */
-    var Wait: ComponentType[WaitProps] = js.native
+    var Wait: ComponentType[WaitProps]
     
     /**
       * Returns boolean value if any loader exists in context.
@@ -54,7 +55,7 @@ object mod {
       * return <button disabled={anyWaiting()}>Disabled while waiting</button>;
       * ```
       */
-    def anyWaiting(): Boolean = js.native
+    def anyWaiting(): Boolean
     
     /**
       * Creates a waiting context.
@@ -68,7 +69,7 @@ object mod {
       * );
       * ```
       */
-    def createWaitingContext(waiter: String): WaitingContext = js.native
+    def createWaitingContext(waiter: String): WaitingContext
     
     /**
       * Stops the given waiter.
@@ -78,7 +79,7 @@ object mod {
       * return <button onClick={() => endWaiting("message")}>Stop</button>;
       * ```
       */
-    def endWaiting(waiter: String): Unit = js.native
+    def endWaiting(waiter: String): Unit
     
     /**
       * Returns boolean value if given loader exists in context.
@@ -92,7 +93,7 @@ object mod {
       * );
       * ```
       */
-    def isWaiting(waiter: String): Boolean = js.native
+    def isWaiting(waiter: String): Boolean
     
     /**
       * Starts the given waiter.
@@ -102,12 +103,12 @@ object mod {
       * return <button onClick={() => startWaiting("message")}>Start</button>;
       * ```
       */
-    def startWaiting(waiter: String): Unit = js.native
+    def startWaiting(waiter: String): Unit
     
     /**
       * Returns an array of waiters.
       */
-    var waiters: js.Array[String] = js.native
+    var waiters: js.Array[String]
   }
   object UseWaitAPI {
     
@@ -154,10 +155,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait WaitProps extends WaitingContextWaitProps {
+  trait WaitProps
+    extends StObject
+       with WaitingContextWaitProps {
     
-    var on: String = js.native
+    var on: String
   }
   object WaitProps {
     
@@ -175,16 +177,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WaitingContext extends StObject {
     
-    var Wait: ComponentType[WaitingContextWaitProps] = js.native
+    var Wait: ComponentType[WaitingContextWaitProps]
     
-    def endWaiting(): Unit = js.native
+    def endWaiting(): Unit
     
-    def isWaiting(): Boolean = js.native
+    def isWaiting(): Boolean
     
-    def startWaiting(): Unit = js.native
+    def startWaiting(): Unit
   }
   object WaitingContext {
     
@@ -216,10 +217,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WaitingContextWaitProps extends StObject {
     
-    var fallback: Element = js.native
+    var fallback: Element
   }
   object WaitingContextWaitProps {
     

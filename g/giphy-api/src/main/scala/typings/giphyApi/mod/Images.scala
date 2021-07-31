@@ -8,51 +8,49 @@ import typings.giphyApi.anon.Height
 import typings.giphyApi.anon.Mp4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Images extends StObject {
   
-  var downsized: BaseImagesizestring = js.native
+  var downsized: BaseImagesizestring
   
-  var downsized_large: BaseImagesizestring = js.native
+  var downsized_large: BaseImagesizestring
   
-  var downsized_medium: BaseImagesizestring = js.native
+  var downsized_medium: BaseImagesizestring
   
-  var downsized_small: BaseImagesizestring = js.native
+  var downsized_small: BaseImagesizestring
   
-  var downsized_still: BaseImage = js.native
+  var downsized_still: BaseImage
   
-  var fixed_height: BaseImagesizestringmp4str = js.native
+  var fixed_height: BaseImagesizestringmp4str
   
-  var fixed_height_downsampled: BaseImagesizestringwebpst = js.native
+  var fixed_height_downsampled: BaseImagesizestringwebpst
   
-  var fixed_height_small: BaseImagesizestringmp4str = js.native
+  var fixed_height_small: BaseImagesizestringmp4str
   
-  var fixed_height_small_still: BaseImage = js.native
+  var fixed_height_small_still: BaseImage
   
-  var fixed_height_still: BaseImage = js.native
+  var fixed_height_still: BaseImage
   
-  var fixed_width: BaseImagesizestringmp4str = js.native
+  var fixed_width: BaseImagesizestringmp4str
   
-  var fixed_width_downsampled: BaseImagesizestringwebpst = js.native
+  var fixed_width_downsampled: BaseImagesizestringwebpst
   
-  var fixed_width_small: BaseImagesizestringmp4str = js.native
+  var fixed_width_small: BaseImagesizestringmp4str
   
-  var fixed_width_small_still: BaseImage = js.native
+  var fixed_width_small_still: BaseImage
   
-  var fixed_width_still: BaseImage = js.native
+  var fixed_width_still: BaseImage
   
-  var looping: Mp4 = js.native
+  var looping: Mp4
   
-  var original: BaseImagesizestringframes = js.native
+  var original: BaseImagesizestringframes
   
-  var original_still: BaseImage = js.native
+  var original_still: BaseImage
   
-  var preview: Height = js.native
+  var preview: Height
   
-  var preview_gif: BaseImagesizestring = js.native
+  var preview_gif: BaseImagesizestring
 }
 object Images {
   

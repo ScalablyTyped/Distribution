@@ -2,16 +2,14 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCelebrityInfoRequest extends StObject {
   
   /**
     * The ID for the celebrity. You get the celebrity ID from a call to the RecognizeCelebrities operation, which recognizes celebrities in an image. 
     */
-  var Id: RekognitionUniqueId = js.native
+  var Id: RekognitionUniqueId
 }
 object GetCelebrityInfoRequest {
   

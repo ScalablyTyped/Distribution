@@ -4,14 +4,12 @@ import typings.recurlyRecurlyJs.emitterMod.Emitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `3dSecureMod` {
   
   type Risk = js.Function0[typings.recurlyRecurlyJs.anon.ThreeDSecure]
   
-  @js.native
   trait RiskOptions extends StObject {
     
     /**
@@ -20,7 +18,7 @@ object `3dSecureMod` {
       *
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#fn-recurlythreedsecure|ThreeDSecure}
       */
-    var actionTokenId: js.UndefOr[String] = js.native
+    var actionTokenId: js.UndefOr[String] = js.undefined
   }
   object RiskOptions {
     
@@ -44,7 +42,9 @@ object `3dSecureMod` {
   type ThreeDSecure = js.Function1[/* riskOptions */ RiskOptions, ThreeDSecureEmitter]
   
   @js.native
-  trait ThreeDSecureEmitter extends Emitter[ThreeDSecureEvent] {
+  trait ThreeDSecureEmitter
+    extends StObject
+       with Emitter[ThreeDSecureEvent] {
     
     /**
       * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#fn-threedsecureattach|ThreeDSecure.attach}

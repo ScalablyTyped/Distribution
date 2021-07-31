@@ -3,14 +3,14 @@ package typings.yup.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ArraySchemaConstructor
-  extends AnySchemaConstructor
+  extends StObject
      with // tslint:disable-next-line:no-unnecessary-generics
-Instantiable0[NotRequiredArraySchema[js.Object, js.Object]] {
+Instantiable0[NotRequiredArraySchema[js.Object, js.Object]]
+     with AnySchemaConstructor {
   
   def apply[T, C](): NotRequiredArraySchema[T, C] = js.native
   def apply[T, C](schema: Schema[T, C]): NotRequiredArraySchema[T, C] = js.native

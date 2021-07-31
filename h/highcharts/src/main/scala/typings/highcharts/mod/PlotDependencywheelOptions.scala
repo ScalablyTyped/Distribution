@@ -5,23 +5,21 @@ import typings.highcharts.highchartsNumbers.`0`
 import typings.highcharts.highchartsNumbers.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotDependencywheelOptions extends StObject {
   
   /**
     * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
     * rendered as `null` points. If `false`, those areas are skipped.
     */
-  var allAreas: js.UndefOr[Boolean] = js.native
+  var allAreas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
@@ -32,7 +30,7 @@ trait PlotDependencywheelOptions extends StObject {
     *
     * And alternative way of selecting points is through dragging.
     */
-  var allowPointSelect: js.UndefOr[Boolean] = js.native
+  var allowPointSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the initial animation when a series is
@@ -52,7 +50,7 @@ trait PlotDependencywheelOptions extends StObject {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotDependencywheelAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PlotDependencywheelAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The color of the border surrounding each
@@ -61,7 +59,7 @@ trait PlotDependencywheelOptions extends StObject {
     * In styled mode, the border stroke can be set with the `.highcharts-point`
     * rule.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The width of the border surrounding each
@@ -72,28 +70,28 @@ trait PlotDependencywheelOptions extends StObject {
     * In styled mode, the stroke width can be set with the `.highcharts-point`
     * rule.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The center of the wheel relative to the plot area. Can be
     * percentages or pixel values. The default behaviour is to center the wheel
     * inside the plot area.
     */
-  var center: js.UndefOr[js.Array[Double | String | Null]] = js.native
+  var center: js.UndefOr[js.Array[Double | String | Null]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When `true`, the columns will center in
     * the category, ignoring null or missing points. When `false`, space will
     * be reserved for null or missing points.
     */
-  var centerInCategory: js.UndefOr[Boolean] = js.native
+  var centerInCategory: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Disable this option to allow series rendering in the whole
@@ -101,7 +99,7 @@ trait PlotDependencywheelOptions extends StObject {
     *
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
-  var clip: js.UndefOr[Boolean] = js.native
+  var clip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The main color of the series. In line type series it applies
@@ -115,7 +113,7 @@ trait PlotDependencywheelOptions extends StObject {
     * `.highcharts-series-{n}` class, or individual classes given by the
     * `className` option.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When using automatic point colors pulled
@@ -127,21 +125,21 @@ trait PlotDependencywheelOptions extends StObject {
     * and instead this option gives the points individual color class names on
     * the form `highcharts-color-{n}`.
     */
-  var colorByPoint: js.UndefOr[Boolean] = js.native
+  var colorByPoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) A series specific or series type specific
     * color set to apply instead of the global colors when colorByPoint is
     * true.
     */
-  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.native
+  var colors: js.UndefOr[js.Array[ColorString | GradientColorObject | PatternObject]] = js.undefined
   
   /**
     * (Highstock) Compare the values of the series against the first non-null,
@@ -151,13 +149,13 @@ trait PlotDependencywheelOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.native
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.native
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -168,13 +166,13 @@ trait PlotDependencywheelOptions extends StObject {
     * range will have 0% (`compareStart=true`) or should have been already
     * calculated according to the previous point (`compareStart=false`).
     */
-  var compareStart: js.UndefOr[Boolean] = js.native
+  var compareStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.native
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
@@ -184,21 +182,21 @@ trait PlotDependencywheelOptions extends StObject {
     * In styled mode, the series cursor can be set with the same classes as
     * listed under series.color.
     */
-  var cursor: js.UndefOr[String | CursorValue] = js.native
+  var cursor: js.UndefOr[String | CursorValue] = js.undefined
   
   /**
     * (Highcharts) Higher numbers makes the links in a sankey diagram or
     * dependency wheelrender more curved. A `curveFactor` of 0 makes the lines
     * straight.
     */
-  var curveFactor: js.UndefOr[Double] = js.native
+  var curveFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A reserved subspace to store options and values for
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Highcharts) Name of the dash style to use for the graph, or for some
@@ -207,7 +205,7 @@ trait PlotDependencywheelOptions extends StObject {
     * In styled mode, the stroke dash-array can be set with the same classes as
     * listed under series.color.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
@@ -223,7 +221,7 @@ trait PlotDependencywheelOptions extends StObject {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.native
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the data labels
@@ -234,27 +232,27 @@ trait PlotDependencywheelOptions extends StObject {
     */
   var dataLabels: js.UndefOr[
     SeriesSankeyDataLabelsOptionsObject | js.Array[SeriesSankeyDataLabelsOptionsObject]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
     */
-  var enableMouseTracking: js.UndefOr[Boolean] = js.native
+  var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) General event handlers for the series items. These event
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[SeriesEventsOptionsObject] = js.native
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -262,7 +260,7 @@ trait PlotDependencywheelOptions extends StObject {
     * axis. By default, the Y axis adjusts to the min and max of the visible
     * data. Cartesian series only.
     */
-  var getExtremesFromAll: js.UndefOr[Boolean] = js.native
+  var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) When set to `false` will prevent the series data from being
@@ -271,7 +269,7 @@ trait PlotDependencywheelOptions extends StObject {
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.native
+  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) What property to join the `mapData` to the value data. For
@@ -289,14 +287,14 @@ trait PlotDependencywheelOptions extends StObject {
     * points and have a backend that can preprocess the data into a parallel
     * array of the mapData.
     */
-  var joinBy: js.UndefOr[String | js.Array[String]] = js.native
+  var joinBy: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * (Highcharts) An array specifying which option maps to which key in the
     * data point array. This makes it convenient to work with unstructured data
     * arrays from different sources.
     */
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
@@ -307,28 +305,28 @@ trait PlotDependencywheelOptions extends StObject {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[SeriesLabelOptionsObject] = js.native
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.native
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.native
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Set options on specific levels. Takes precedence over series
     * options, but not node and link options.
     */
-  var levels: js.UndefOr[js.Array[PlotDependencywheelLevelsOptions]] = js.native
+  var levels: js.UndefOr[js.Array[PlotDependencywheelLevelsOptions]] = js.undefined
   
   /**
     * (Highcharts) Opacity for the links between nodes in the sankey diagram.
     */
-  var linkOpacity: js.UndefOr[Double] = js.native
+  var linkOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -340,13 +338,13 @@ trait PlotDependencywheelOptions extends StObject {
     * own sorting definition, the linked series will be sorted in the same
     * order as the master one.
     */
-  var linkedTo: js.UndefOr[String] = js.native
+  var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The minimal width for a line of a sankey. By default, 0
     * values are not shown.
     */
-  var minLinkWidth: js.UndefOr[Double] = js.native
+  var minLinkWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -356,7 +354,7 @@ trait PlotDependencywheelOptions extends StObject {
     * These options are merged with options in navigator.series, and will take
     * precedence if the same option is defined both places.
     */
-  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.native
+  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   
   /**
     * (Highcharts) The padding between nodes in a sankey diagram or dependency
@@ -366,44 +364,44 @@ trait PlotDependencywheelOptions extends StObject {
     * within the plot area with the given `nodePadding`, they will be rendered
     * with a smaller padding as a strategy to avoid overflow.
     */
-  var nodePadding: js.UndefOr[Double] = js.native
+  var nodePadding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The pixel width of each node in a sankey diagram or
     * dependency wheel, or the height in case the chart is inverted.
     */
-  var nodeWidth: js.UndefOr[Double] = js.native
+  var nodeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSeriesPointOptions] = js.native
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
     */
-  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.native
+  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
     * for a selected series.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
     */
-  var showCheckbox: js.UndefOr[Boolean] = js.native
+  var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to display this particular series or series type in
@@ -411,27 +409,27 @@ trait PlotDependencywheelOptions extends StObject {
     * series are not. Since v7.2.0 it is possible to show series that use
     * colorAxis by setting this option to `true`.
     */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether or not to show the series in the navigator. Takes
     * precedence over navigator.baseSeries if defined.
     */
-  var showInNavigator: js.UndefOr[Boolean] = js.native
+  var showInNavigator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) If set to `true`, the accessibility module will skip past
     * the points in this series for keyboard navigation.
     */
-  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.native
+  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The start angle of the dependency wheel, in degrees where 0
     * is up.
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var states: js.UndefOr[SeriesStatesOptionsObject] = js.native
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -446,14 +444,14 @@ trait PlotDependencywheelOptions extends StObject {
     * **Note:** The boost module will force this option because of technical
     * limitations.
     */
-  var stickyTracking: js.UndefOr[Boolean] = js.native
+  var stickyTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.native
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
@@ -466,17 +464,17 @@ trait PlotDependencywheelOptions extends StObject {
     * Note: In boost mode turbo threshold is forced. Only array of numbers or
     * two dimensional arrays are allowed.
     */
-  var turboThreshold: js.UndefOr[Double] = js.native
+  var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Set the initial visibility of the series.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Define the z index of the series.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object PlotDependencywheelOptions {
   
@@ -616,7 +614,7 @@ object PlotDependencywheelOptions {
     def setCurveFactorUndefined: Self = StObject.set(x, "curveFactor", js.undefined)
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

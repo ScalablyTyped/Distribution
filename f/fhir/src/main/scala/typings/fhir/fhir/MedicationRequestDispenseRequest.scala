@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Medication supply authorization
   */
-@js.native
-trait MedicationRequestDispenseRequest extends BackboneElement {
+trait MedicationRequestDispenseRequest
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'numberOfRepeatsAllowed'.
     */
-  var _numberOfRepeatsAllowed: js.UndefOr[Element] = js.native
+  var _numberOfRepeatsAllowed: js.UndefOr[Element] = js.undefined
   
   /**
     * Number of days supply per dispense
     */
-  var expectedSupplyDuration: js.UndefOr[Duration] = js.native
+  var expectedSupplyDuration: js.UndefOr[Duration] = js.undefined
   
   /**
     * Number of refills authorized
     */
-  var numberOfRepeatsAllowed: js.UndefOr[positiveInt] = js.native
+  var numberOfRepeatsAllowed: js.UndefOr[positiveInt] = js.undefined
   
   /**
     * Intended dispenser
     */
-  var performer: js.UndefOr[Reference] = js.native
+  var performer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Amount of medication to supply per dispense
     */
-  var quantity: js.UndefOr[Quantity] = js.native
+  var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Time period supply is authorized for
     */
-  var validityPeriod: js.UndefOr[Period] = js.native
+  var validityPeriod: js.UndefOr[Period] = js.undefined
 }
 object MedicationRequestDispenseRequest {
   

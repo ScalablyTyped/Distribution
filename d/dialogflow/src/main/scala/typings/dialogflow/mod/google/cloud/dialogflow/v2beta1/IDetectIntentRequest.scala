@@ -3,27 +3,25 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DetectIntentRequest. */
-@js.native
 trait IDetectIntentRequest extends StObject {
   
   /** DetectIntentRequest inputAudio */
-  var inputAudio: js.UndefOr[Uint8Array | String | Null] = js.native
+  var inputAudio: js.UndefOr[Uint8Array | String | Null] = js.undefined
   
   /** DetectIntentRequest outputAudioConfig */
-  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.native
+  var outputAudioConfig: js.UndefOr[IOutputAudioConfig | Null] = js.undefined
   
   /** DetectIntentRequest queryInput */
-  var queryInput: js.UndefOr[IQueryInput | Null] = js.native
+  var queryInput: js.UndefOr[IQueryInput | Null] = js.undefined
   
   /** DetectIntentRequest queryParams */
-  var queryParams: js.UndefOr[IQueryParameters | Null] = js.native
+  var queryParams: js.UndefOr[IQueryParameters | Null] = js.undefined
   
   /** DetectIntentRequest session */
-  var session: js.UndefOr[String | Null] = js.native
+  var session: js.UndefOr[String | Null] = js.undefined
 }
 object IDetectIntentRequest {
   

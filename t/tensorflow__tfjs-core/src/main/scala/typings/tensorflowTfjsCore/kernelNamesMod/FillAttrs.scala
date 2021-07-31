@@ -3,17 +3,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillAttrs extends StObject {
   
-  var dtype: DataType = js.native
+  var dtype: DataType
   
-  var shape: js.Array[Double] = js.native
+  var shape: js.Array[Double]
   
-  var value: Double | String = js.native
+  var value: Double | String
 }
 object FillAttrs {
   

@@ -5,7 +5,6 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,14 +61,13 @@ object mod {
   
   type EncodedPacket = String | Buffer | ArrayBuffer | Blob
   
-  @js.native
   trait Packet extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: Double = js.native
+    var id: Double
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object Packet {
     

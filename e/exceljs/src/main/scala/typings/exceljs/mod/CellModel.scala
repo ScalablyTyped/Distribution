@@ -2,33 +2,31 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellModel extends StObject {
   
-  var address: Address = js.native
+  var address: Address
   
-  var comment: Comment = js.native
+  var comment: Comment
   
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
-  var hyperlink: js.UndefOr[String] = js.native
+  var hyperlink: js.UndefOr[String] = js.undefined
   
-  var master: String = js.native
+  var master: String
   
-  var result: js.UndefOr[String | Double | js.Any] = js.native
+  var result: js.UndefOr[String | Double | js.Any] = js.undefined
   
-  var sharedFormula: js.UndefOr[String] = js.native
+  var sharedFormula: js.UndefOr[String] = js.undefined
   
-  var style: Style = js.native
+  var style: Style
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: ValueType = js.native
+  var `type`: ValueType
   
-  var value: js.UndefOr[CellValue] = js.native
+  var value: js.UndefOr[CellValue] = js.undefined
 }
 object CellModel {
   

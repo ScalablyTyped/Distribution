@@ -10,11 +10,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Manual
 import typings.officeJsPreview.officeJsPreviewStrings.Pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `application.toJSON()`. */
-@js.native
 trait ApplicationData extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationEngineVersion: js.UndefOr[Double] = js.native
+  var calculationEngineVersion: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
-  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.native
+  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var calculationState: js.UndefOr[CalculationState | Done | Calculating | Pending] = js.native
+  var calculationState: js.UndefOr[CalculationState | Done | Calculating | Pending] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var cultureInfo: js.UndefOr[CultureInfoData] = js.native
+  var cultureInfo: js.UndefOr[CultureInfoData] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var iterativeCalculation: js.UndefOr[IterativeCalculationData] = js.native
+  var iterativeCalculation: js.UndefOr[IterativeCalculationData] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var thousandsSeparator: js.UndefOr[String] = js.native
+  var thousandsSeparator: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -82,7 +80,7 @@ trait ApplicationData extends StObject {
     *
     * [Api set: ExcelApi 1.11]
     */
-  var useSystemSeparators: js.UndefOr[Boolean] = js.native
+  var useSystemSeparators: js.UndefOr[Boolean] = js.undefined
 }
 object ApplicationData {
   

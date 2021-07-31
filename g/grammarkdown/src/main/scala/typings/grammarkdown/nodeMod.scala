@@ -18,7 +18,6 @@ import typings.grammarkdown.nodesMod.SourceFile
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
@@ -84,8 +83,8 @@ object nodeMod {
   class SingleFileHost protected () extends Host {
     def this(content: String) = this()
     def this(content: String, file: String) = this()
-    def this(content: String, file: js.UndefOr[scala.Nothing], hostFallback: Host) = this()
     def this(content: String, file: String, hostFallback: Host) = this()
+    def this(content: String, file: Unit, hostFallback: Host) = this()
     
     var _hostFallback: js.Any = js.native
     
@@ -94,16 +93,17 @@ object nodeMod {
     val file: String = js.native
   }
   
-  @js.native
-  trait HostOptions extends HostBaseOptions {
+  trait HostOptions
+    extends StObject
+       with HostBaseOptions {
     
-    var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback] = js.native
+    var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback] = js.undefined
     
-    var readFileSync: js.UndefOr[ReadFileSyncCallback | LegacyReadFileSyncCallback] = js.native
+    var readFileSync: js.UndefOr[ReadFileSyncCallback | LegacyReadFileSyncCallback] = js.undefined
     
-    var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback] = js.native
+    var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback] = js.undefined
     
-    var writeFileSync: js.UndefOr[WriteFileSyncCallback | LegacyWriteFileSyncCallback] = js.native
+    var writeFileSync: js.UndefOr[WriteFileSyncCallback | LegacyWriteFileSyncCallback] = js.undefined
   }
   object HostOptions {
     
@@ -142,14 +142,15 @@ object nodeMod {
     }
   }
   
-  @js.native
-  trait NodeAsyncHostOptions extends HostBaseOptions {
+  trait NodeAsyncHostOptions
+    extends StObject
+       with HostBaseOptions {
     
-    var allowUris: js.UndefOr[`false`] = js.native
+    var allowUris: js.UndefOr[`false`] = js.undefined
     
-    var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.native
+    var readFile: js.UndefOr[ReadFileCallback | LegacyReadFileCallback | `false`] = js.undefined
     
-    var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.native
+    var writeFile: js.UndefOr[WriteFileCallback | LegacyWriteFileCallback | `false`] = js.undefined
   }
   object NodeAsyncHostOptions {
     
@@ -182,14 +183,15 @@ object nodeMod {
     }
   }
   
-  @js.native
-  trait NodeSyncHostOptions extends HostBaseOptions {
+  trait NodeSyncHostOptions
+    extends StObject
+       with HostBaseOptions {
     
-    var allowUris: js.UndefOr[`false`] = js.native
+    var allowUris: js.UndefOr[`false`] = js.undefined
     
-    var readFileSync: js.UndefOr[LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`] = js.native
+    var readFileSync: js.UndefOr[LegacyReadFileSyncCallback | ReadFileSyncCallback | `false`] = js.undefined
     
-    var writeFileSync: js.UndefOr[LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`] = js.native
+    var writeFileSync: js.UndefOr[LegacyWriteFileSyncCallback | WriteFileSyncCallback | `false`] = js.undefined
   }
   object NodeSyncHostOptions {
     

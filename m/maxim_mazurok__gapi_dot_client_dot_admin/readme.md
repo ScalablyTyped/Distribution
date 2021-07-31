@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201117
 
 ## Library description:
-TypeScript typings for Admin SDK reports_v1
+TypeScript typings for Admin SDK API reports_v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.admin |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 14 |
 | # dependents       | 1 |
-| # downloads        | 58 |
+| # downloads        | 1405 |
 | # stars            | 0 |
 
 ## Links

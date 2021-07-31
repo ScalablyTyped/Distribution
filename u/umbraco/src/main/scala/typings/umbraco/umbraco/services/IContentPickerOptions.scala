@@ -2,20 +2,18 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Content picker dialog options object
   */
-@js.native
 trait IContentPickerOptions extends StObject {
   
   /*callback function*/
-  var callback: js.Function = js.native
+  var callback: js.Function
   
   /*should the picker return one or multiple items*/
-  var multipicker: Boolean = js.native
+  var multipicker: Boolean
 }
 object IContentPickerOptions {
   

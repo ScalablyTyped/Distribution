@@ -3,26 +3,24 @@ package typings.babelCodeFrame
 import typings.babelCodeFrame.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@babel/code-frame", JSImport.Default)
+  @JSImport("@babel/code-frame", JSImport.Namespace)
   @js.native
-  def default(rawLines: String, lineNumber: Double, colNumber: Double): String = js.native
-  @JSImport("@babel/code-frame", JSImport.Default)
-  @js.native
-  def default(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@babel/code-frame", "codeFrameColumns")
-  @js.native
-  def codeFrameColumns(rawLines: String, location: SourceLocation): String = js.native
-  @JSImport("@babel/code-frame", "codeFrameColumns")
-  @js.native
-  def codeFrameColumns(rawLines: String, location: SourceLocation, options: BabelCodeFrameOptions): String = js.native
+  @scala.inline
+  def default(rawLines: String, lineNumber: Double, colNumber: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(rawLines: String, lineNumber: Double, colNumber: Double, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawLines.asInstanceOf[js.Any], lineNumber.asInstanceOf[js.Any], colNumber.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def codeFrameColumns(rawLines: String, location: SourceLocation): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def codeFrameColumns(rawLines: String, location: SourceLocation, options: BabelCodeFrameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("codeFrameColumns")(rawLines.asInstanceOf[js.Any], location.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait BabelCodeFrameOptions extends StObject {
     
     /**
@@ -30,16 +28,16 @@ object mod {
       * overrides highlightCode.
       * default: false
       */
-    var forceColor: js.UndefOr[Boolean] = js.native
+    var forceColor: js.UndefOr[Boolean] = js.undefined
     
     /** Syntax highlight the code as JavaScript for terminals. default: false */
-    var highlightCode: js.UndefOr[Boolean] = js.native
+    var highlightCode: js.UndefOr[Boolean] = js.undefined
     
     /**  The number of lines to show above the error. default: 2 */
-    var linesAbove: js.UndefOr[Double] = js.native
+    var linesAbove: js.UndefOr[Double] = js.undefined
     
     /**  The number of lines to show below the error. default: 3 */
-    var linesBelow: js.UndefOr[Double] = js.native
+    var linesBelow: js.UndefOr[Double] = js.undefined
     
     /**
       * Pass in a string to be displayed inline (if possible) next to the
@@ -47,7 +45,7 @@ object mod {
       * it will be placed above the code frame.
       * default: nothing
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object BabelCodeFrameOptions {
     
@@ -92,12 +90,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceLocation extends StObject {
     
-    var end: js.UndefOr[Column] = js.native
+    var end: js.UndefOr[Column] = js.undefined
     
-    var start: Column = js.native
+    var start: Column
   }
   object SourceLocation {
     

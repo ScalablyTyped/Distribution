@@ -10,9 +10,9 @@ The Material Components for the web segmented button component
 | ------------------ | :-------------: |
 | Full name          | @material/segmented-button |
 | Keywords           | material components, material design, segmented button |
-| # releases         | 215 |
+| # releases         | 368 |
 | # dependents       | 1 |
-| # downloads        | 23665 |
+| # downloads        | 108115 |
 | # stars            | 0 |
 
 ## Links

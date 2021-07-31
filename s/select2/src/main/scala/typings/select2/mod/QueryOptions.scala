@@ -2,15 +2,13 @@ package typings.select2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var term: js.UndefOr[String] = js.native
+  var term: js.UndefOr[String] = js.undefined
 }
 object QueryOptions {
   

@@ -3,25 +3,24 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagNode
-  extends FragmentNode
+  extends StObject
+     with FragmentNode
      with Node {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: tag = js.native
+  var name: tag
 }
 object TagNode {
   
   @scala.inline
-  def apply(contents: String, location: LocationRange, name: tag): TagNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: String, location: LocationRange): TagNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "tag")
     __obj.asInstanceOf[TagNode]
   }
   

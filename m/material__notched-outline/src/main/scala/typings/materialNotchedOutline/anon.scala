@@ -2,19 +2,17 @@ package typings.materialNotchedOutline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait NOLABEL extends StObject {
     
-    var NO_LABEL: String = js.native
+    var NO_LABEL: String
     
-    var OUTLINE_NOTCHED: String = js.native
+    var OUTLINE_NOTCHED: String
     
-    var OUTLINE_UPGRADED: String = js.native
+    var OUTLINE_UPGRADED: String
   }
   object NOLABEL {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NOTCHELEMENTPADDING extends StObject {
     
-    var NOTCH_ELEMENT_PADDING: Double = js.native
+    var NOTCH_ELEMENT_PADDING: Double
   }
   object NOTCHELEMENTPADDING {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NOTCHELEMENTSELECTOR extends StObject {
     
-    var NOTCH_ELEMENT_SELECTOR: String = js.native
+    var NOTCH_ELEMENT_SELECTOR: String
   }
   object NOTCHELEMENTSELECTOR {
     
@@ -81,16 +77,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/notched-outline.@material/notched-outline/adapter.MDCNotchedOutlineAdapter> */
-  @js.native
   trait PartialMDCNotchedOutlineA extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeNotchWidthProperty: js.UndefOr[js.Function0[Unit]] = js.native
+    var removeNotchWidthProperty: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setNotchWidthProperty: js.UndefOr[js.Function1[/* width */ Double, Unit]] = js.native
+    var setNotchWidthProperty: js.UndefOr[js.Function1[/* width */ Double, Unit]] = js.undefined
   }
   object PartialMDCNotchedOutlineA {
     

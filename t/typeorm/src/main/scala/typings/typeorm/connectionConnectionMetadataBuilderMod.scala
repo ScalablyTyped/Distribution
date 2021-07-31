@@ -7,7 +7,6 @@ import typings.typeorm.migrationMigrationInterfaceMod.MigrationInterface
 import typings.typeorm.subscriberEntitySubscriberInterfaceMod.EntitySubscriberInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionConnectionMetadataBuilderMod {
@@ -20,7 +19,7 @@ object connectionConnectionMetadataBuilderMod {
     /**
       * Builds entity metadatas for the given classes or directories.
       */
-    def buildEntityMetadatas(entities: js.Array[js.Function | EntitySchema[_] | String]): js.Array[EntityMetadata] = js.native
+    def buildEntityMetadatas(entities: js.Array[js.Function | EntitySchema[js.Any] | String]): js.Array[EntityMetadata] = js.native
     
     /**
       * Builds migration instances for the given classes or directories.
@@ -30,7 +29,7 @@ object connectionConnectionMetadataBuilderMod {
     /**
       * Builds subscriber instances for the given classes or directories.
       */
-    def buildSubscribers(subscribers: js.Array[js.Function | String]): js.Array[EntitySubscriberInterface[_]] = js.native
+    def buildSubscribers(subscribers: js.Array[js.Function | String]): js.Array[EntitySubscriberInterface[js.Any]] = js.native
     
     var connection: Connection = js.native
   }

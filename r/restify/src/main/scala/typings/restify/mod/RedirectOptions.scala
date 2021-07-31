@@ -2,16 +2,14 @@ package typings.restify.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedirectOptions extends StObject {
   
   /**
     * redirect location's hostname
     */
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   /**
     * if true, `options.query`
@@ -19,32 +17,32 @@ trait RedirectOptions extends StObject {
     * parameters on current URL.
     * by default, will merge the two.
     */
-  var overrideQuery: js.UndefOr[Boolean] = js.native
+  var overrideQuery: js.UndefOr[Boolean] = js.undefined
   
   /**
     * redirect location's pathname
     */
-  var pathname: js.UndefOr[String] = js.native
+  var pathname: js.UndefOr[String] = js.undefined
   
   /**
     * if true, sets 301. defaults to 302.
     */
-  var permanent: js.UndefOr[Boolean] = js.native
+  var permanent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * redirect location's port number
     */
-  var port: js.UndefOr[String] = js.native
+  var port: js.UndefOr[String] = js.undefined
   
   /**
     * redirect location's query string parameters
     */
-  var query: js.UndefOr[String | js.Object] = js.native
+  var query: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * whether to redirect to http or https
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
 }
 object RedirectOptions {
   

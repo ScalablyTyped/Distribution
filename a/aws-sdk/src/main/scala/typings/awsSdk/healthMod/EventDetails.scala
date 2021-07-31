@@ -2,26 +2,24 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventDetails extends StObject {
   
   /**
     * Summary information about the event.
     */
-  var event: js.UndefOr[Event] = js.native
+  var event: js.UndefOr[Event] = js.undefined
   
   /**
     * The most recent description of the event.
     */
-  var eventDescription: js.UndefOr[EventDescription_] = js.native
+  var eventDescription: js.UndefOr[EventDescription_] = js.undefined
   
   /**
     * Additional metadata about the event.
     */
-  var eventMetadata: js.UndefOr[typings.awsSdk.healthMod.eventMetadata] = js.native
+  var eventMetadata: js.UndefOr[typings.awsSdk.healthMod.eventMetadata] = js.undefined
 }
 object EventDetails {
   

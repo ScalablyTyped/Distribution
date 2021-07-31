@@ -3,17 +3,15 @@ package typings.lokijs.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lastsave extends StObject {
   
-  var lastsave: Date = js.native
+  var lastsave: Date
   
-  var savecount: Double = js.native
+  var savecount: Double
   
-  var value: String = js.native
+  var value: String
 }
 object Lastsave {
   

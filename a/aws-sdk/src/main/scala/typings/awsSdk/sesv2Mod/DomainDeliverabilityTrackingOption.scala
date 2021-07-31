@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDeliverabilityTrackingOption extends StObject {
   
   /**
     * A verified domain that’s associated with your AWS account and currently has an active Deliverability dashboard subscription.
     */
-  var Domain: js.UndefOr[typings.awsSdk.sesv2Mod.Domain] = js.native
+  var Domain: js.UndefOr[typings.awsSdk.sesv2Mod.Domain] = js.undefined
   
   /**
     * An object that contains information about the inbox placement data settings for the domain.
     */
-  var InboxPlacementTrackingOption: js.UndefOr[typings.awsSdk.sesv2Mod.InboxPlacementTrackingOption] = js.native
+  var InboxPlacementTrackingOption: js.UndefOr[typings.awsSdk.sesv2Mod.InboxPlacementTrackingOption] = js.undefined
   
   /**
     * The date, in Unix time format, when you enabled the Deliverability dashboard for the domain.
     */
-  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.native
+  var SubscriptionStartDate: js.UndefOr[Timestamp] = js.undefined
 }
 object DomainDeliverabilityTrackingOption {
   

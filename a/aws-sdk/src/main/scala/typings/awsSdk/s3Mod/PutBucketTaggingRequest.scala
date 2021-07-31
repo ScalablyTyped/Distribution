@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutBucketTaggingRequest extends StObject {
   
   /**
     * The bucket name.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The base64-encoded 128-bit MD5 digest of the data. You must use this header as a message integrity check to verify that the request body was not corrupted in transit. For more information, see RFC 1864. For requests made using the AWS Command Line Interface (CLI) or AWS SDKs, this field is calculated automatically.
     */
-  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.native
+  var ContentMD5: js.UndefOr[typings.awsSdk.s3Mod.ContentMD5] = js.undefined
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Container for the TagSet and Tag elements.
     */
-  var Tagging: typings.awsSdk.s3Mod.Tagging = js.native
+  var Tagging: typings.awsSdk.s3Mod.Tagging
 }
 object PutBucketTaggingRequest {
   

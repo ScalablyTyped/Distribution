@@ -3,17 +3,15 @@ package typings.jsoneditor.mod
 import typings.ajv.mod.ErrorObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaValidationError extends StObject {
   
-  var error: ErrorObject = js.native
+  var error: ErrorObject
   
-  var node: Node = js.native
+  var node: Node
   
-  var `type`: SchemaValidationErrorType = js.native
+  var `type`: SchemaValidationErrorType
 }
 object SchemaValidationError {
   

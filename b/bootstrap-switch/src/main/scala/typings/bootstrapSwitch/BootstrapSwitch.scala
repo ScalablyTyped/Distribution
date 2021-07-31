@@ -3,59 +3,59 @@ package typings.bootstrapSwitch
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BootstrapSwitch {
   
   @js.native
-  trait BootstrapSwitchChangeEventObject extends JQueryEventObject {
+  trait BootstrapSwitchChangeEventObject
+    extends StObject
+       with JQueryEventObject {
     
     var state: Boolean = js.native
   }
   
   type BootstrapSwitchEventObject = JQueryEventObject
   
-  @js.native
   trait BootstrapSwitchOptions extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var baseClass: js.UndefOr[String] = js.native
+    var baseClass: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handleWidth: js.UndefOr[String] = js.native
+    var handleWidth: js.UndefOr[String] = js.undefined
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
-    var invers: js.UndefOr[Boolean] = js.native
+    var invers: js.UndefOr[Boolean] = js.undefined
     
-    var labelText: js.UndefOr[String] = js.native
+    var labelText: js.UndefOr[String] = js.undefined
     
-    var labelWidth: js.UndefOr[String] = js.native
+    var labelWidth: js.UndefOr[String] = js.undefined
     
-    var offColor: js.UndefOr[String] = js.native
+    var offColor: js.UndefOr[String] = js.undefined
     
-    var offText: js.UndefOr[String] = js.native
+    var offText: js.UndefOr[String] = js.undefined
     
-    var onColor: js.UndefOr[String] = js.native
+    var onColor: js.UndefOr[String] = js.undefined
     
-    var onInit: js.UndefOr[js.Any] = js.native
+    var onInit: js.UndefOr[js.Any] = js.undefined
     
-    var onSwitchChange: js.UndefOr[js.Any] = js.native
+    var onSwitchChange: js.UndefOr[js.Any] = js.undefined
     
-    var onText: js.UndefOr[String] = js.native
+    var onText: js.UndefOr[String] = js.undefined
     
-    var radioAllOff: js.UndefOr[Boolean] = js.native
+    var radioAllOff: js.UndefOr[Boolean] = js.undefined
     
-    var readonly: js.UndefOr[Boolean] = js.native
+    var readonly: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[Boolean] = js.native
+    var state: js.UndefOr[Boolean] = js.undefined
     
-    var wrapperClass: js.UndefOr[String] = js.native
+    var wrapperClass: js.UndefOr[String] = js.undefined
   }
   object BootstrapSwitchOptions {
     

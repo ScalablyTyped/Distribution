@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BotCommand extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var description: String = js.native
+  var description: String
 }
 object BotCommand {
   

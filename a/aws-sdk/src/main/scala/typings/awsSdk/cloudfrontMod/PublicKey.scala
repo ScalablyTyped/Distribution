@@ -2,26 +2,24 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicKey extends StObject {
   
   /**
     * The date and time when the public key was uploaded.
     */
-  var CreatedTime: timestamp = js.native
+  var CreatedTime: timestamp
   
   /**
     * The identifier of the public key.
     */
-  var Id: String = js.native
+  var Id: String
   
   /**
     * Configuration information about a public key that you can use with signed URLs and signed cookies, or with field-level encryption.
     */
-  var PublicKeyConfig: typings.awsSdk.cloudfrontMod.PublicKeyConfig = js.native
+  var PublicKeyConfig: typings.awsSdk.cloudfrontMod.PublicKeyConfig
 }
 object PublicKey {
   

@@ -10,7 +10,6 @@ import typings.phaser.integer
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,23 +19,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * For documentation about what all the arguments and configuration options mean please see Phaser.Loader.LoaderPlugin#audio.
   */
-@js.native
-trait HTML5AudioFile extends File {
+trait HTML5AudioFile
+  extends StObject
+     with File {
   
   /**
     * Called if the file errors while loading.
     */
-  def onError(): Unit = js.native
+  def onError(): Unit
   
   /**
     * Called when the file finishes loading.
     */
-  def onLoad(): Unit = js.native
+  def onLoad(): Unit
   
   /**
     * Called during the file load progress. Is sent a DOM ProgressEvent.
     */
-  def onProgress(): Unit = js.native
+  def onProgress(): Unit
 }
 object HTML5AudioFile {
   

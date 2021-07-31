@@ -3,19 +3,17 @@ package typings.three.anon
 import typings.std.WebGLBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BytesPerElement extends StObject {
   
-  var buffer: WebGLBuffer = js.native
+  var buffer: WebGLBuffer
   
-  var bytesPerElement: Double = js.native
+  var bytesPerElement: Double
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var version: Double = js.native
+  var version: Double
 }
 object BytesPerElement {
   

@@ -1,53 +1,41 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Jenkins
 import typings.envCi.envCiStrings.jenkins_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JenkinsEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: String = js.native
+  var branch: String
   
-  var build: String = js.native
+  var build: String
   
-  var buildUrl: String = js.native
+  var buildUrl: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var isPr: Boolean = js.native
+  var isPr: Boolean
   
-  var name: Jenkins = js.native
+  var name: Jenkins
   
-  var pr: js.UndefOr[String] = js.native
+  var pr: js.UndefOr[String] = js.undefined
   
-  var prBranch: js.UndefOr[String] = js.native
+  var prBranch: js.UndefOr[String] = js.undefined
   
-  var root: String = js.native
+  var root: String
   
-  var service: jenkins_ = js.native
+  var service: jenkins_
 }
 object JenkinsEnv {
   
   @scala.inline
-  def apply(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    isPr: Boolean,
-    name: Jenkins,
-    root: String,
-    service: jenkins_
-  ): JenkinsEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], isPr = isPr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any])
+  def apply(branch: String, build: String, buildUrl: String, commit: String, isPr: Boolean, root: String): JenkinsEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, isPr = isPr.asInstanceOf[js.Any], name = "Jenkins", root = root.asInstanceOf[js.Any], service = "jenkins")
     __obj.asInstanceOf[JenkinsEnv]
   }
   

@@ -134,22 +134,22 @@ import typings.babelTypes.ts36Mod.WithStatement_
 import typings.babelTypes.ts36Mod.YieldExpression_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("babylon-walk", "ancestor")
+  @JSImport("babylon-walk", JSImport.Namespace)
   @js.native
-  def ancestor(node: NodeTypes, visitors: visitors[AncestorVisitor], state: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("babylon-walk", "recursive")
-  @js.native
-  def recursive(node: NodeTypes, visitors: visitors[RecursiveVisitor], state: js.Any): Unit = js.native
+  @scala.inline
+  def ancestor(node: NodeTypes, visitors: visitors[AncestorVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ancestor")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("babylon-walk", "simple")
-  @js.native
-  def simple(node: NodeTypes, visitors: visitors[SimpleVisitor], state: js.Any): Unit = js.native
+  @scala.inline
+  def recursive(node: NodeTypes, visitors: visitors[RecursiveVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("recursive")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def simple(node: NodeTypes, visitors: visitors[SimpleVisitor], state: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("simple")(node.asInstanceOf[js.Any], visitors.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AncestorStatelessVisitor = js.Function3[/* node */ NodeTypes, /* state */ js.Any, /* ancestors */ js.Array[Node], Unit]
   
@@ -170,106 +170,105 @@ object mod {
   
   type coreTypes = ArrayExpression_ | AssignmentExpression_ | BinaryExpression_ | Directive_ | DirectiveLiteral_ | BlockStatement_ | BreakStatement_ | CallExpression_ | CatchClause_ | ConditionalExpression_ | ContinueStatement_ | DebuggerStatement_ | DoWhileStatement_ | EmptyStatement_ | ExpressionStatement_ | File_ | ForInStatement_ | ForStatement_ | FunctionDeclaration_ | FunctionExpression_ | Identifier_ | IfStatement_ | LabeledStatement_ | StringLiteral_ | NumericLiteral_ | NullLiteral_ | BooleanLiteral_ | RegExpLiteral_ | LogicalExpression_ | MemberExpression_ | NewExpression_ | Program_ | ObjectExpression_ | ObjectMethod_ | ObjectProperty_ | RestElement_ | ReturnStatement_ | SequenceExpression_ | SwitchCase_ | SwitchStatement_ | ThisExpression_ | ThrowStatement_ | TryStatement_ | UnaryExpression_ | UpdateExpression_ | VariableDeclaration_ | VariableDeclarator_ | WhileStatement_ | WithStatement_
   
-  @js.native
   trait coreVisitors[V] extends StObject {
     
-    var ArrayExpression: js.UndefOr[V] = js.native
+    var ArrayExpression: js.UndefOr[V] = js.undefined
     
-    var AssignmentExpression: js.UndefOr[V] = js.native
+    var AssignmentExpression: js.UndefOr[V] = js.undefined
     
-    var BinaryExpression: js.UndefOr[V] = js.native
+    var BinaryExpression: js.UndefOr[V] = js.undefined
     
-    var BlockStatement: js.UndefOr[V] = js.native
+    var BlockStatement: js.UndefOr[V] = js.undefined
     
-    var BooleanLiteral: js.UndefOr[V] = js.native
+    var BooleanLiteral: js.UndefOr[V] = js.undefined
     
-    var BreakStatement: js.UndefOr[V] = js.native
+    var BreakStatement: js.UndefOr[V] = js.undefined
     
-    var CallExpression: js.UndefOr[V] = js.native
+    var CallExpression: js.UndefOr[V] = js.undefined
     
-    var CatchClause: js.UndefOr[V] = js.native
+    var CatchClause: js.UndefOr[V] = js.undefined
     
-    var ConditionalExpression: js.UndefOr[V] = js.native
+    var ConditionalExpression: js.UndefOr[V] = js.undefined
     
-    var ContinueStatement: js.UndefOr[V] = js.native
+    var ContinueStatement: js.UndefOr[V] = js.undefined
     
-    var DebuggerStatement: js.UndefOr[V] = js.native
+    var DebuggerStatement: js.UndefOr[V] = js.undefined
     
-    var Directive: js.UndefOr[V] = js.native
+    var Directive: js.UndefOr[V] = js.undefined
     
-    var DirectiveLiteral: js.UndefOr[V] = js.native
+    var DirectiveLiteral: js.UndefOr[V] = js.undefined
     
-    var DoWhileStatement: js.UndefOr[V] = js.native
+    var DoWhileStatement: js.UndefOr[V] = js.undefined
     
-    var EmptyStatement: js.UndefOr[V] = js.native
+    var EmptyStatement: js.UndefOr[V] = js.undefined
     
-    var ExpressionStatement: js.UndefOr[V] = js.native
+    var ExpressionStatement: js.UndefOr[V] = js.undefined
     
-    var File: js.UndefOr[V] = js.native
+    var File: js.UndefOr[V] = js.undefined
     
-    var ForInStatement: js.UndefOr[V] = js.native
+    var ForInStatement: js.UndefOr[V] = js.undefined
     
-    var ForStatement: js.UndefOr[V] = js.native
+    var ForStatement: js.UndefOr[V] = js.undefined
     
-    var FunctionDeclaration: js.UndefOr[V] = js.native
+    var FunctionDeclaration: js.UndefOr[V] = js.undefined
     
-    var FunctionExpression: js.UndefOr[V] = js.native
+    var FunctionExpression: js.UndefOr[V] = js.undefined
     
-    var Identifier: js.UndefOr[V] = js.native
+    var Identifier: js.UndefOr[V] = js.undefined
     
-    var IfStatement: js.UndefOr[V] = js.native
+    var IfStatement: js.UndefOr[V] = js.undefined
     
-    var LabeledStatement: js.UndefOr[V] = js.native
+    var LabeledStatement: js.UndefOr[V] = js.undefined
     
-    var LogicalExpression: js.UndefOr[V] = js.native
+    var LogicalExpression: js.UndefOr[V] = js.undefined
     
-    var MemberExpression: js.UndefOr[V] = js.native
+    var MemberExpression: js.UndefOr[V] = js.undefined
     
-    var NewExpression: js.UndefOr[V] = js.native
+    var NewExpression: js.UndefOr[V] = js.undefined
     
-    var NullLiteral: js.UndefOr[V] = js.native
+    var NullLiteral: js.UndefOr[V] = js.undefined
     
-    var NumericLiteral: js.UndefOr[V] = js.native
+    var NumericLiteral: js.UndefOr[V] = js.undefined
     
-    var ObjectExpression: js.UndefOr[V] = js.native
+    var ObjectExpression: js.UndefOr[V] = js.undefined
     
-    var ObjectMethod: js.UndefOr[V] = js.native
+    var ObjectMethod: js.UndefOr[V] = js.undefined
     
-    var ObjectProperty: js.UndefOr[V] = js.native
+    var ObjectProperty: js.UndefOr[V] = js.undefined
     
-    var Program: js.UndefOr[V] = js.native
+    var Program: js.UndefOr[V] = js.undefined
     
-    var RegExpLiteral: js.UndefOr[V] = js.native
+    var RegExpLiteral: js.UndefOr[V] = js.undefined
     
-    var RestElement: js.UndefOr[V] = js.native
+    var RestElement: js.UndefOr[V] = js.undefined
     
-    var ReturnStatement: js.UndefOr[V] = js.native
+    var ReturnStatement: js.UndefOr[V] = js.undefined
     
-    var SequenceExpression: js.UndefOr[V] = js.native
+    var SequenceExpression: js.UndefOr[V] = js.undefined
     
-    var StringLiteral: js.UndefOr[V] = js.native
+    var StringLiteral: js.UndefOr[V] = js.undefined
     
-    var SwitchCase: js.UndefOr[V] = js.native
+    var SwitchCase: js.UndefOr[V] = js.undefined
     
-    var SwitchStatement: js.UndefOr[V] = js.native
+    var SwitchStatement: js.UndefOr[V] = js.undefined
     
-    var ThisExpression: js.UndefOr[V] = js.native
+    var ThisExpression: js.UndefOr[V] = js.undefined
     
-    var ThrowStatement: js.UndefOr[V] = js.native
+    var ThrowStatement: js.UndefOr[V] = js.undefined
     
-    var TryStatement: js.UndefOr[V] = js.native
+    var TryStatement: js.UndefOr[V] = js.undefined
     
-    var UnaryExpression: js.UndefOr[V] = js.native
+    var UnaryExpression: js.UndefOr[V] = js.undefined
     
-    var UpdateExpression: js.UndefOr[V] = js.native
+    var UpdateExpression: js.UndefOr[V] = js.undefined
     
-    var VariableDeclaration: js.UndefOr[V] = js.native
+    var VariableDeclaration: js.UndefOr[V] = js.undefined
     
-    var VariableDeclarator: js.UndefOr[V] = js.native
+    var VariableDeclarator: js.UndefOr[V] = js.undefined
     
-    var WhileStatement: js.UndefOr[V] = js.native
+    var WhileStatement: js.UndefOr[V] = js.undefined
     
-    var WithStatement: js.UndefOr[V] = js.native
+    var WithStatement: js.UndefOr[V] = js.undefined
   }
   object coreVisitors {
     
@@ -280,7 +279,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class coreVisitorsMutableBuilder[Self <: coreVisitors[_], V] (val x: Self with coreVisitors[V]) extends AnyVal {
+    implicit class coreVisitorsMutableBuilder[Self <: coreVisitors[?], V] (val x: Self & coreVisitors[V]) extends AnyVal {
       
       @scala.inline
       def setArrayExpression(value: V): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
@@ -580,70 +579,69 @@ object mod {
   
   type es2015Types = AssignmentPattern_ | ArrayPattern_ | ArrowFunctionExpression_ | ClassBody_ | ClassDeclaration_ | ClassExpression_ | ExportAllDeclaration_ | ExportDefaultDeclaration_ | ExportNamedDeclaration_ | ExportSpecifier_ | ForOfStatement_ | ImportDeclaration_ | ImportDefaultSpecifier_ | ImportNamespaceSpecifier_ | ImportSpecifier_ | MetaProperty_ | ClassMethod_ | ObjectPattern_ | SpreadElement_ | Super | TaggedTemplateExpression_ | TemplateElement_ | TemplateLiteral_ | YieldExpression_ | AwaitExpression_ | BindExpression_ | ClassProperty_ | Decorator_ | DoExpression_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_
   
-  @js.native
   trait es2015Visitors[V] extends StObject {
     
-    var ArrayPattern: js.UndefOr[V] = js.native
+    var ArrayPattern: js.UndefOr[V] = js.undefined
     
-    var ArrowFunctionExpression: js.UndefOr[V] = js.native
+    var ArrowFunctionExpression: js.UndefOr[V] = js.undefined
     
-    var AssignmentPattern: js.UndefOr[V] = js.native
+    var AssignmentPattern: js.UndefOr[V] = js.undefined
     
-    var AwaitExpression: js.UndefOr[V] = js.native
+    var AwaitExpression: js.UndefOr[V] = js.undefined
     
-    var BindExpression: js.UndefOr[V] = js.native
+    var BindExpression: js.UndefOr[V] = js.undefined
     
-    var ClassBody: js.UndefOr[V] = js.native
+    var ClassBody: js.UndefOr[V] = js.undefined
     
-    var ClassDeclaration: js.UndefOr[V] = js.native
+    var ClassDeclaration: js.UndefOr[V] = js.undefined
     
-    var ClassExpression: js.UndefOr[V] = js.native
+    var ClassExpression: js.UndefOr[V] = js.undefined
     
-    var ClassMethod: js.UndefOr[V] = js.native
+    var ClassMethod: js.UndefOr[V] = js.undefined
     
-    var ClassProperty: js.UndefOr[V] = js.native
+    var ClassProperty: js.UndefOr[V] = js.undefined
     
-    var Decorator: js.UndefOr[V] = js.native
+    var Decorator: js.UndefOr[V] = js.undefined
     
-    var DoExpression: js.UndefOr[V] = js.native
+    var DoExpression: js.UndefOr[V] = js.undefined
     
-    var ExportAllDeclaration: js.UndefOr[V] = js.native
+    var ExportAllDeclaration: js.UndefOr[V] = js.undefined
     
-    var ExportDefaultDeclaration: js.UndefOr[V] = js.native
+    var ExportDefaultDeclaration: js.UndefOr[V] = js.undefined
     
-    var ExportDefaultSpecifier: js.UndefOr[V] = js.native
+    var ExportDefaultSpecifier: js.UndefOr[V] = js.undefined
     
-    var ExportNamedDeclaration: js.UndefOr[V] = js.native
+    var ExportNamedDeclaration: js.UndefOr[V] = js.undefined
     
-    var ExportNamespaceSpecifier: js.UndefOr[V] = js.native
+    var ExportNamespaceSpecifier: js.UndefOr[V] = js.undefined
     
-    var ExportSpecifier: js.UndefOr[V] = js.native
+    var ExportSpecifier: js.UndefOr[V] = js.undefined
     
-    var ForOfStatement: js.UndefOr[V] = js.native
+    var ForOfStatement: js.UndefOr[V] = js.undefined
     
-    var ImportDeclaration: js.UndefOr[V] = js.native
+    var ImportDeclaration: js.UndefOr[V] = js.undefined
     
-    var ImportDefaultSpecifier: js.UndefOr[V] = js.native
+    var ImportDefaultSpecifier: js.UndefOr[V] = js.undefined
     
-    var ImportNamespaceSpecifier: js.UndefOr[V] = js.native
+    var ImportNamespaceSpecifier: js.UndefOr[V] = js.undefined
     
-    var ImportSpecifier: js.UndefOr[V] = js.native
+    var ImportSpecifier: js.UndefOr[V] = js.undefined
     
-    var MetaProperty: js.UndefOr[V] = js.native
+    var MetaProperty: js.UndefOr[V] = js.undefined
     
-    var ObjectPattern: js.UndefOr[V] = js.native
+    var ObjectPattern: js.UndefOr[V] = js.undefined
     
-    var SpreadElement: js.UndefOr[V] = js.native
+    var SpreadElement: js.UndefOr[V] = js.undefined
     
-    var Super: js.UndefOr[V] = js.native
+    var Super: js.UndefOr[V] = js.undefined
     
-    var TaggedTemplateExpression: js.UndefOr[V] = js.native
+    var TaggedTemplateExpression: js.UndefOr[V] = js.undefined
     
-    var TemplateElement: js.UndefOr[V] = js.native
+    var TemplateElement: js.UndefOr[V] = js.undefined
     
-    var TemplateLiteral: js.UndefOr[V] = js.native
+    var TemplateLiteral: js.UndefOr[V] = js.undefined
     
-    var YieldExpression: js.UndefOr[V] = js.native
+    var YieldExpression: js.UndefOr[V] = js.undefined
   }
   object es2015Visitors {
     
@@ -654,7 +652,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class es2015VisitorsMutableBuilder[Self <: es2015Visitors[_], V] (val x: Self with es2015Visitors[V]) extends AnyVal {
+    implicit class es2015VisitorsMutableBuilder[Self <: es2015Visitors[?], V] (val x: Self & es2015Visitors[V]) extends AnyVal {
       
       @scala.inline
       def setArrayPattern(value: V): Self = StObject.set(x, "ArrayPattern", value.asInstanceOf[js.Any])
@@ -846,84 +844,83 @@ object mod {
   
   type flowTypes = AnyTypeAnnotation_ | ArrayTypeAnnotation_ | BooleanTypeAnnotation_ | BooleanLiteralTypeAnnotation_ | NullLiteralTypeAnnotation_ | ClassImplements_ | DeclareClass_ | DeclareFunction_ | DeclareInterface_ | DeclareModule_ | DeclareTypeAlias_ | DeclareVariable_ | FunctionTypeAnnotation_ | FunctionTypeParam_ | GenericTypeAnnotation_ | InterfaceExtends_ | InterfaceDeclaration_ | IntersectionTypeAnnotation_ | MixedTypeAnnotation_ | NullableTypeAnnotation_ | NumberTypeAnnotation_ | ObjectTypeAnnotation_ | ObjectTypeCallProperty_ | ObjectTypeIndexer_ | ObjectTypeProperty_ | QualifiedTypeIdentifier_ | StringLiteralTypeAnnotation_ | StringTypeAnnotation_ | ThisTypeAnnotation_ | TupleTypeAnnotation_ | TypeofTypeAnnotation_ | TypeAlias_ | TypeAnnotation_ | TypeCastExpression_ | TypeParameterDeclaration_ | TypeParameterInstantiation_ | UnionTypeAnnotation_ | VoidTypeAnnotation_
   
-  @js.native
   trait flowVisitors[V] extends StObject {
     
-    var AnyTypeAnnotation: js.UndefOr[V] = js.native
+    var AnyTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var ArrayTypeAnnotation: js.UndefOr[V] = js.native
+    var ArrayTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var BooleanLiteralTypeAnnotation: js.UndefOr[V] = js.native
+    var BooleanLiteralTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var BooleanTypeAnnotation: js.UndefOr[V] = js.native
+    var BooleanTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var ClassImplements: js.UndefOr[V] = js.native
+    var ClassImplements: js.UndefOr[V] = js.undefined
     
-    var DeclareClass: js.UndefOr[V] = js.native
+    var DeclareClass: js.UndefOr[V] = js.undefined
     
-    var DeclareFunction: js.UndefOr[V] = js.native
+    var DeclareFunction: js.UndefOr[V] = js.undefined
     
-    var DeclareInterface: js.UndefOr[V] = js.native
+    var DeclareInterface: js.UndefOr[V] = js.undefined
     
-    var DeclareModule: js.UndefOr[V] = js.native
+    var DeclareModule: js.UndefOr[V] = js.undefined
     
-    var DeclareTypeAlias: js.UndefOr[V] = js.native
+    var DeclareTypeAlias: js.UndefOr[V] = js.undefined
     
-    var DeclareVariable: js.UndefOr[V] = js.native
+    var DeclareVariable: js.UndefOr[V] = js.undefined
     
-    var FunctionTypeAnnotation: js.UndefOr[V] = js.native
+    var FunctionTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var FunctionTypeParam: js.UndefOr[V] = js.native
+    var FunctionTypeParam: js.UndefOr[V] = js.undefined
     
-    var GenericTypeAnnotation: js.UndefOr[V] = js.native
+    var GenericTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var InterfaceDeclaration: js.UndefOr[V] = js.native
+    var InterfaceDeclaration: js.UndefOr[V] = js.undefined
     
-    var InterfaceExtends: js.UndefOr[V] = js.native
+    var InterfaceExtends: js.UndefOr[V] = js.undefined
     
-    var IntersectionTypeAnnotation: js.UndefOr[V] = js.native
+    var IntersectionTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var MixedTypeAnnotation: js.UndefOr[V] = js.native
+    var MixedTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var NullLiteralTypeAnnotation: js.UndefOr[V] = js.native
+    var NullLiteralTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var NullableTypeAnnotation: js.UndefOr[V] = js.native
+    var NullableTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var NumberTypeAnnotation: js.UndefOr[V] = js.native
+    var NumberTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var ObjectTypeAnnotation: js.UndefOr[V] = js.native
+    var ObjectTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var ObjectTypeCallProperty: js.UndefOr[V] = js.native
+    var ObjectTypeCallProperty: js.UndefOr[V] = js.undefined
     
-    var ObjectTypeIndexer: js.UndefOr[V] = js.native
+    var ObjectTypeIndexer: js.UndefOr[V] = js.undefined
     
-    var ObjectTypeProperty: js.UndefOr[V] = js.native
+    var ObjectTypeProperty: js.UndefOr[V] = js.undefined
     
-    var QualifiedTypeIdentifier: js.UndefOr[V] = js.native
+    var QualifiedTypeIdentifier: js.UndefOr[V] = js.undefined
     
-    var StringLiteralTypeAnnotation: js.UndefOr[V] = js.native
+    var StringLiteralTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var StringTypeAnnotation: js.UndefOr[V] = js.native
+    var StringTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var ThisTypeAnnotation: js.UndefOr[V] = js.native
+    var ThisTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var TupleTypeAnnotation: js.UndefOr[V] = js.native
+    var TupleTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var TypeAlias: js.UndefOr[V] = js.native
+    var TypeAlias: js.UndefOr[V] = js.undefined
     
-    var TypeAnnotation: js.UndefOr[V] = js.native
+    var TypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var TypeCastExpression: js.UndefOr[V] = js.native
+    var TypeCastExpression: js.UndefOr[V] = js.undefined
     
-    var TypeParameterDeclaration: js.UndefOr[V] = js.native
+    var TypeParameterDeclaration: js.UndefOr[V] = js.undefined
     
-    var TypeParameterInstantiation: js.UndefOr[V] = js.native
+    var TypeParameterInstantiation: js.UndefOr[V] = js.undefined
     
-    var TypeofTypeAnnotation: js.UndefOr[V] = js.native
+    var TypeofTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var UnionTypeAnnotation: js.UndefOr[V] = js.native
+    var UnionTypeAnnotation: js.UndefOr[V] = js.undefined
     
-    var VoidTypeAnnotation: js.UndefOr[V] = js.native
+    var VoidTypeAnnotation: js.UndefOr[V] = js.undefined
   }
   object flowVisitors {
     
@@ -934,7 +931,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class flowVisitorsMutableBuilder[Self <: flowVisitors[_], V] (val x: Self with flowVisitors[V]) extends AnyVal {
+    implicit class flowVisitorsMutableBuilder[Self <: flowVisitors[?], V] (val x: Self & flowVisitors[V]) extends AnyVal {
       
       @scala.inline
       def setAnyTypeAnnotation(value: V): Self = StObject.set(x, "AnyTypeAnnotation", value.asInstanceOf[js.Any])
@@ -1168,30 +1165,29 @@ object mod {
   
   type jsxTypes = JSXAttribute_ | JSXClosingElement_ | JSXElement_ | JSXEmptyExpression_ | JSXExpressionContainer_ | JSXIdentifier_ | JSXMemberExpression_ | JSXNamespacedName_ | JSXOpeningElement_ | JSXSpreadAttribute_ | JSXText_
   
-  @js.native
   trait jsxVisitors[V] extends StObject {
     
-    var JSXAttribute: js.UndefOr[V] = js.native
+    var JSXAttribute: js.UndefOr[V] = js.undefined
     
-    var JSXClosingElement: js.UndefOr[V] = js.native
+    var JSXClosingElement: js.UndefOr[V] = js.undefined
     
-    var JSXElement: js.UndefOr[V] = js.native
+    var JSXElement: js.UndefOr[V] = js.undefined
     
-    var JSXEmptyExpression: js.UndefOr[V] = js.native
+    var JSXEmptyExpression: js.UndefOr[V] = js.undefined
     
-    var JSXExpressionContainer: js.UndefOr[V] = js.native
+    var JSXExpressionContainer: js.UndefOr[V] = js.undefined
     
-    var JSXIdentifier: js.UndefOr[V] = js.native
+    var JSXIdentifier: js.UndefOr[V] = js.undefined
     
-    var JSXMemberExpression: js.UndefOr[V] = js.native
+    var JSXMemberExpression: js.UndefOr[V] = js.undefined
     
-    var JSXNamespacedName: js.UndefOr[V] = js.native
+    var JSXNamespacedName: js.UndefOr[V] = js.undefined
     
-    var JSXOpeningElement: js.UndefOr[V] = js.native
+    var JSXOpeningElement: js.UndefOr[V] = js.undefined
     
-    var JSXSpreadAttribute: js.UndefOr[V] = js.native
+    var JSXSpreadAttribute: js.UndefOr[V] = js.undefined
     
-    var JSXText: js.UndefOr[V] = js.native
+    var JSXText: js.UndefOr[V] = js.undefined
   }
   object jsxVisitors {
     
@@ -1202,7 +1198,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class jsxVisitorsMutableBuilder[Self <: jsxVisitors[_], V] (val x: Self with jsxVisitors[V]) extends AnyVal {
+    implicit class jsxVisitorsMutableBuilder[Self <: jsxVisitors[?], V] (val x: Self & jsxVisitors[V]) extends AnyVal {
       
       @scala.inline
       def setJSXAttribute(value: V): Self = StObject.set(x, "JSXAttribute", value.asInstanceOf[js.Any])
@@ -1274,12 +1270,11 @@ object mod {
   
   type miscTypes = Noop_ | ParenthesizedExpression_
   
-  @js.native
   trait miscVisitors[V] extends StObject {
     
-    var Noop: js.UndefOr[V] = js.native
+    var Noop: js.UndefOr[V] = js.undefined
     
-    var ParenthesizedExpression: js.UndefOr[V] = js.native
+    var ParenthesizedExpression: js.UndefOr[V] = js.undefined
   }
   object miscVisitors {
     
@@ -1290,7 +1285,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class miscVisitorsMutableBuilder[Self <: miscVisitors[_], V] (val x: Self with miscVisitors[V]) extends AnyVal {
+    implicit class miscVisitorsMutableBuilder[Self <: miscVisitors[?], V] (val x: Self & miscVisitors[V]) extends AnyVal {
       
       @scala.inline
       def setNoop(value: V): Self = StObject.set(x, "Noop", value.asInstanceOf[js.Any])
@@ -1306,9 +1301,9 @@ object mod {
     }
   }
   
-  @js.native
   trait visitors[V]
-    extends coreVisitors[V]
+    extends StObject
+       with coreVisitors[V]
        with es2015Visitors[V]
        with flowVisitors[V]
        with jsxVisitors[V]

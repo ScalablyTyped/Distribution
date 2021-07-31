@@ -2,46 +2,44 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JwtTokenTypeConfiguration extends StObject {
   
   /**
     * The regular expression that identifies the claim.
     */
-  var ClaimRegex: js.UndefOr[typings.awsSdk.kendraMod.ClaimRegex] = js.native
+  var ClaimRegex: js.UndefOr[typings.awsSdk.kendraMod.ClaimRegex] = js.undefined
   
   /**
     * The group attribute field.
     */
-  var GroupAttributeField: js.UndefOr[typings.awsSdk.kendraMod.GroupAttributeField] = js.native
+  var GroupAttributeField: js.UndefOr[typings.awsSdk.kendraMod.GroupAttributeField] = js.undefined
   
   /**
     * The issuer of the token.
     */
-  var Issuer: js.UndefOr[typings.awsSdk.kendraMod.Issuer] = js.native
+  var Issuer: js.UndefOr[typings.awsSdk.kendraMod.Issuer] = js.undefined
   
   /**
     * The location of the key.
     */
-  var KeyLocation: typings.awsSdk.kendraMod.KeyLocation = js.native
+  var KeyLocation: typings.awsSdk.kendraMod.KeyLocation
   
   /**
     * The Amazon Resource Name (arn) of the secret.
     */
-  var SecretManagerArn: js.UndefOr[RoleArn] = js.native
+  var SecretManagerArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The signing key URL.
     */
-  var URL: js.UndefOr[Url] = js.native
+  var URL: js.UndefOr[Url] = js.undefined
   
   /**
     * The user name attribute field.
     */
-  var UserNameAttributeField: js.UndefOr[typings.awsSdk.kendraMod.UserNameAttributeField] = js.native
+  var UserNameAttributeField: js.UndefOr[typings.awsSdk.kendraMod.UserNameAttributeField] = js.undefined
 }
 object JwtTokenTypeConfiguration {
   

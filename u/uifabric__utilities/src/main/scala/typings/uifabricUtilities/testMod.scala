@@ -8,26 +8,26 @@ import typings.std.ReturnType
 import typings.uifabricUtilities.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testMod {
   
-  @JSImport("@uifabric/utilities/lib/test", "create")
+  @JSImport("@uifabric/utilities/lib/test", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def create(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<typeof defaultCreate> is not an array type */ args: Parameters[FnCall]
-  ): ReturnType[FnCall] = js.native
+  ): ReturnType[FnCall] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[ReturnType[FnCall]]
   
-  @JSImport("@uifabric/utilities/lib/test", "injectWrapperMethod")
-  @js.native
+  @scala.inline
   def injectWrapperMethod(
-    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]],
+    wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]],
     methodName: String,
     fn: js.Function0[Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("injectWrapperMethod")(wrapper.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@uifabric/utilities/lib/test", "setRenderSpy")
-  @js.native
-  def setRenderSpy(wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, _]]): SinonSpy[js.Array[_], _] = js.native
+  @scala.inline
+  def setRenderSpy(wrapper: ReactWrapper[js.Object, js.Object, Component[js.Object, js.Object, js.Any]]): SinonSpy[js.Array[js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setRenderSpy")(wrapper.asInstanceOf[js.Any]).asInstanceOf[SinonSpy[js.Array[js.Any], js.Any]]
 }

@@ -2,17 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuthToken extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var expiresAt: String = js.native
+  var expiresAt: String
   
-  var refreshToken: String = js.native
+  var refreshToken: String
 }
 object OAuthToken {
   

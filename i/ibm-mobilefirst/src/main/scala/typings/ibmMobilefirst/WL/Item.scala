@@ -2,17 +2,15 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  def setEnabled(isEnable: String): Unit = js.native
+  def setEnabled(isEnable: String): Unit
   
-  def setImagePath(imagePath: String): Unit = js.native
+  def setImagePath(imagePath: String): Unit
   
-  def setTitle(title: String): Unit = js.native
+  def setTitle(title: String): Unit
 }
 object Item {
   

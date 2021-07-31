@@ -21,7 +21,6 @@ import typings.minecraftScriptingTypesShared.IEventData
 import typings.minecraftScriptingTypesShared.IQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -223,28 +222,13 @@ trait IVanillaClientSystemBase extends StObject {
   //Ideally this would be in system.d.ts, but it seems to conflict with the parameterized version
   def registerQuery(): IQuery | Null = js.native
   def registerQuery(component: String): IQuery = js.native
-  def registerQuery(
-    component: String,
-    componentField1: js.UndefOr[scala.Nothing],
-    componentField2: js.UndefOr[scala.Nothing],
-    componentField3: String
-  ): IQuery = js.native
-  def registerQuery(component: String, componentField1: js.UndefOr[scala.Nothing], componentField2: String): IQuery = js.native
-  def registerQuery(
-    component: String,
-    componentField1: js.UndefOr[scala.Nothing],
-    componentField2: String,
-    componentField3: String
-  ): IQuery = js.native
   def registerQuery(component: String, componentField1: String): IQuery = js.native
-  def registerQuery(
-    component: String,
-    componentField1: String,
-    componentField2: js.UndefOr[scala.Nothing],
-    componentField3: String
-  ): IQuery = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String): IQuery = js.native
   def registerQuery(component: String, componentField1: String, componentField2: String, componentField3: String): IQuery = js.native
+  def registerQuery(component: String, componentField1: String, componentField2: Unit, componentField3: String): IQuery = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: String): IQuery = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: String, componentField3: String): IQuery = js.native
+  def registerQuery(component: String, componentField1: Unit, componentField2: Unit, componentField3: String): IQuery = js.native
   /**
     * Allows you to register a query that will only show entities that have the given component and define which fields of that component will be used as a filter when getting the entities from the query.
     * 
@@ -254,31 +238,31 @@ trait IVanillaClientSystemBase extends StObject {
     * @param componentField3 This is the name of the third field of the component that we want to filter entities by. By default this is set to z. If the component you used doesn't have the field you defined here, the field will be ignored
     */
   def registerQuery(component: MinecraftComponent): IQuery = js.native
-  def registerQuery(
-    component: MinecraftComponent,
-    componentField1: js.UndefOr[scala.Nothing],
-    componentField2: js.UndefOr[scala.Nothing],
-    componentField3: String
-  ): IQuery = js.native
-  def registerQuery(component: MinecraftComponent, componentField1: js.UndefOr[scala.Nothing], componentField2: String): IQuery = js.native
-  def registerQuery(
-    component: MinecraftComponent,
-    componentField1: js.UndefOr[scala.Nothing],
-    componentField2: String,
-    componentField3: String
-  ): IQuery = js.native
   def registerQuery(component: MinecraftComponent, componentField1: String): IQuery = js.native
-  def registerQuery(
-    component: MinecraftComponent,
-    componentField1: String,
-    componentField2: js.UndefOr[scala.Nothing],
-    componentField3: String
-  ): IQuery = js.native
   def registerQuery(component: MinecraftComponent, componentField1: String, componentField2: String): IQuery = js.native
   def registerQuery(
     component: MinecraftComponent,
     componentField1: String,
     componentField2: String,
+    componentField3: String
+  ): IQuery = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: String,
+    componentField2: Unit,
+    componentField3: String
+  ): IQuery = js.native
+  def registerQuery(component: MinecraftComponent, componentField1: Unit, componentField2: String): IQuery = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: Unit,
+    componentField2: String,
+    componentField3: String
+  ): IQuery = js.native
+  def registerQuery(
+    component: MinecraftComponent,
+    componentField1: Unit,
+    componentField2: Unit,
     componentField3: String
   ): IQuery = js.native
 }

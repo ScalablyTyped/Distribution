@@ -2,19 +2,17 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NightwatchTestSuite extends StObject {
   
-  var group: String = js.native
+  var group: String
   
-  var module: String = js.native
+  var module: String
   
-  var name: String = js.native
+  var name: String
   
-  var results: js.Any = js.native
+  var results: js.Any
 }
 object NightwatchTestSuite {
   

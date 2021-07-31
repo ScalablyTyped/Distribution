@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of instance tags.
   */
-@js.native
 trait SchemaTags extends StObject {
   
   /**
@@ -19,13 +17,13 @@ trait SchemaTags extends StObject {
     * fingerprint hash in order to update or change tags.  To see the latest
     * fingerprint, make get() request to the instance.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * An array of tags. Each tag must be 1-63 characters long, and comply with
     * RFC1035.
     */
-  var items: js.UndefOr[js.Array[String]] = js.native
+  var items: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTags {
   

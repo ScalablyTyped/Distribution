@@ -2,42 +2,40 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressList extends StObject {
   
-  val AddressEntries: typings.activexOutlook.Outlook.AddressEntries = js.native
+  val AddressEntries: typings.activexOutlook.Outlook.AddressEntries
   
-  val AddressListType: OlAddressListType = js.native
+  val AddressListType: OlAddressListType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def GetContactsFolder(): Folder = js.native
+  def GetContactsFolder(): Folder
   
-  val ID: String = js.native
+  val ID: String
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val IsInitialAddressList: Boolean = js.native
+  val IsInitialAddressList: Boolean
   
-  val IsReadOnly: Boolean = js.native
+  val IsReadOnly: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.AddressList_typekey")
-  var OutlookDotAddressList_typekey: AddressList = js.native
+  var OutlookDotAddressList_typekey: AddressList
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor = js.native
+  val PropertyAccessor: typings.activexOutlook.Outlook.PropertyAccessor
   
-  val ResolutionOrder: Double = js.native
+  val ResolutionOrder: Double
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object AddressList {
   

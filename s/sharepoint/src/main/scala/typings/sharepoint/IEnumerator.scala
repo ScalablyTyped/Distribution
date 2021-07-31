@@ -2,17 +2,15 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnumerator[T] extends StObject {
   
-  def get_current(): T = js.native
+  def get_current(): T
   
-  def moveNext(): Boolean = js.native
+  def moveNext(): Boolean
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object IEnumerator {
   
@@ -23,7 +21,7 @@ object IEnumerator {
   }
   
   @scala.inline
-  implicit class IEnumeratorMutableBuilder[Self <: IEnumerator[_], T] (val x: Self with IEnumerator[T]) extends AnyVal {
+  implicit class IEnumeratorMutableBuilder[Self <: IEnumerator[?], T] (val x: Self & IEnumerator[T]) extends AnyVal {
     
     @scala.inline
     def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))

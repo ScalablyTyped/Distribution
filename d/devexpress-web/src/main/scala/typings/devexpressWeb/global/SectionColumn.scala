@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("SectionColumn")
 @js.native
 class SectionColumn ()
-  extends typings.devexpressWeb.SectionColumn
+  extends StObject
+     with typings.devexpressWeb.SectionColumn {
+  
+  /**
+    * Specifies the space between adjacent section columns.
+    */
+  /* CompleteClass */
+  var spacing: Double = js.native
+  
+  /**
+    * Specifies the width of the section column.
+    */
+  /* CompleteClass */
+  var width: Double = js.native
+}

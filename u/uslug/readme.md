@@ -11,8 +11,8 @@ A permissive slug generator that works with unicode.
 | Full name          | uslug |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 1215580 |
+| # dependents       | 68 |
+| # downloads        | 1700751 |
 | # stars            | 1 |
 
 ## Links

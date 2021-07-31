@@ -2,28 +2,26 @@ package typings.awsSdkClientCognitoIdentityBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCognitoIdentityProviderMod {
   
-  @js.native
   trait CognitoIdentityProvider extends StObject {
     
     /**
       * <p>The client ID for the Amazon Cognito Identity User Pool.</p>
       */
-    var ClientId: js.UndefOr[String] = js.native
+    var ClientId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The provider name for an Amazon Cognito Identity User Pool. For example, <code>cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789</code>.</p>
       */
-    var ProviderName: js.UndefOr[String] = js.native
+    var ProviderName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>TRUE if server-side token validation is enabled for the identity provider’s token.</p>
       */
-    var ServerSideTokenCheck: js.UndefOr[Boolean] = js.native
+    var ServerSideTokenCheck: js.UndefOr[Boolean] = js.undefined
   }
   object CognitoIdentityProvider {
     

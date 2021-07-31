@@ -3,22 +3,22 @@ package typings.gulpJsonValidator
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-json-validator", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-json-validator", JSImport.Namespace)
-  @js.native
-  def apply(option: GulpJsonValidatorOptions): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(option: GulpJsonValidatorOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(option.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-json-validator", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait GulpJsonValidatorOptions extends StObject {
     
-    var allowDuplicatedKeys: js.UndefOr[Boolean] = js.native
+    var allowDuplicatedKeys: js.UndefOr[Boolean] = js.undefined
   }
   object GulpJsonValidatorOptions {
     

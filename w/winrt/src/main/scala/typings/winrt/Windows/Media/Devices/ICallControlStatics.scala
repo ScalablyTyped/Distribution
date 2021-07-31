@@ -2,15 +2,13 @@ package typings.winrt.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICallControlStatics extends StObject {
   
-  def fromId(deviceInterfaceId: String): CallControl = js.native
+  def fromId(deviceInterfaceId: String): CallControl
   
-  def getDefault(): CallControl = js.native
+  def getDefault(): CallControl
 }
 object ICallControlStatics {
   

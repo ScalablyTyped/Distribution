@@ -2,26 +2,24 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacesService extends StObject {
   
   def findPlaceFromPhoneNumber(
     request: FindPlaceFromPhoneNumberRequest,
     callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def findPlaceFromQuery(
     request: FindPlaceFromQueryRequest,
     callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def getDetails(
     request: PlaceDetailsRequest,
     callback: js.Function2[/* result */ PlaceResult, /* status */ PlacesServiceStatus, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def nearbySearch(
     request: PlaceSearchRequest,
@@ -31,7 +29,7 @@ trait PlacesService extends StObject {
       /* pagination */ PlaceSearchPagination, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
   
   /**
     * @deprecated Radar search is deprecated as of June 30, 2018. After that
@@ -40,7 +38,7 @@ trait PlacesService extends StObject {
   def radarSearch(
     request: RadarSearchRequest,
     callback: js.Function2[/* results */ js.Array[PlaceResult], /* status */ PlacesServiceStatus, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def textSearch(
     request: TextSearchRequest,
@@ -50,7 +48,7 @@ trait PlacesService extends StObject {
       /* pagination */ PlaceSearchPagination, 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit
 }
 object PlacesService {
   

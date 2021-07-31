@@ -2,19 +2,17 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration to publish a Cloud Pub/Sub message.
   */
-@js.native
 trait SchemaPubsubConfig extends StObject {
   
   /**
     * The format of the Cloud Pub/Sub messages.
     */
-  var messageFormat: js.UndefOr[String] = js.native
+  var messageFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Email address of the service account used for publishing Cloud Pub/Sub
@@ -23,14 +21,14 @@ trait SchemaPubsubConfig extends StObject {
     * iam.serviceAccounts.actAs permission on this service account. If
     * unspecified, it defaults to the compute engine default service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * A topic of Cloud Pub/Sub. Values are of the form
     * `projects/&lt;project&gt;/topics/&lt;topic&gt;`. The project needs to be
     * the same project as this config is in.
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
 }
 object SchemaPubsubConfig {
   

@@ -2,19 +2,17 @@ package typings.pad
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Char extends StObject {
     
-    var char: js.UndefOr[String] = js.native
+    var char: js.UndefOr[String] = js.undefined
     
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
-    var strip: js.UndefOr[Boolean] = js.native
+    var strip: js.UndefOr[Boolean] = js.undefined
   }
   object Char {
     

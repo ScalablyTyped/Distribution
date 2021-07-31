@@ -11,8 +11,8 @@ A port of the Brotli compression algorithm as used in WOFF2
 | Full name          | brotli |
 | Keywords           | compress, decompress, encode, decode |
 | # releases         | 0 |
-| # dependents       | 90 |
-| # downloads        | 33917869 |
+| # dependents       | 95 |
+| # downloads        | 44133767 |
 | # stars            | 5 |
 
 ## Links

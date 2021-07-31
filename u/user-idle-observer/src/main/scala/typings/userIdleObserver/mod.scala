@@ -2,7 +2,6 @@ package typings.userIdleObserver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,32 +9,33 @@ object mod {
   /**
     * This lib allows you to track user inactivity time.
     */
+  @scala.inline
+  def apply(): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[UserIDLEObserver]
+  @scala.inline
+  def apply(opts: Options): UserIDLEObserver = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[UserIDLEObserver]
+  
   @JSImport("user-idle-observer", JSImport.Namespace)
   @js.native
-  def apply(): UserIDLEObserver = js.native
-  @JSImport("user-idle-observer", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): UserIDLEObserver = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function1[/* time */ Double, Unit]
   
   /**
     * observer options
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * callback that will triger after opts.idleTime of user's IDLE
       * @default console.log
       */
-    var cb: js.UndefOr[Callback] = js.native
+    var cb: js.UndefOr[Callback] = js.undefined
     
     /**
       * fire callback on user inactivity time in ms
       * @default 3_000
       */
-    var idleTime: js.UndefOr[Double] = js.native
+    var idleTime: js.UndefOr[Double] = js.undefined
     
     /**
       * @default ["mousemove", "mousedown", "keydown", "scroll", "touchstart", "resize", "visibilitychange"]
@@ -44,7 +44,7 @@ object mod {
         js.Array[
           /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 97 */ js.Any
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -84,13 +84,12 @@ object mod {
     }
   }
   
-  @js.native
   trait UserIDLEObserver extends StObject {
     
     /**
       * destroy observer instance
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object UserIDLEObserver {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudbuild.gapi.client.cloudbuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOperationMetadata extends StObject {
   
   /** The build that the operation is tracking. */
-  var build: js.UndefOr[Build] = js.native
+  var build: js.UndefOr[Build] = js.undefined
 }
 object BuildOperationMetadata {
   

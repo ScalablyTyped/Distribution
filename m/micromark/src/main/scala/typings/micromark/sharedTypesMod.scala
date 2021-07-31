@@ -14,7 +14,6 @@ import typings.std.NonNullable
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedTypesMod {
@@ -79,12 +78,11 @@ object sharedTypesMod {
   
   type Compile = js.Function1[/* slice */ js.Array[Event], String]
   
-  @js.native
   trait CompileOptions extends StObject {
     
     // Whether to allow embedded HTML (`boolean`, default: `false`).
     //
-    var allowDangerousHtml: js.UndefOr[Boolean] = js.native
+    var allowDangerousHtml: js.UndefOr[Boolean] = js.undefined
     
     // Whether to allow potentially dangerous protocols in links and images (`boolean`,
     // default: `false`).
@@ -93,7 +91,7 @@ object sharedTypesMod {
     // and `xmpp`.
     // For images, the allowed protocols are `http` and `https`.
     //
-    var allowDangerousProtocol: js.UndefOr[Boolean] = js.native
+    var allowDangerousProtocol: js.UndefOr[Boolean] = js.undefined
     
     // Value to use for line endings not in `doc` (`string`, default: first line
     // ending or `'\n'`).
@@ -103,11 +101,11 @@ object sharedTypesMod {
     // In some cases, such as `> a`, CommonMark requires that extra line endings are
     // added: `<blockquote>\n<p>a</p>\n</blockquote>`.
     //
-    var defaultLineEnding: js.UndefOr[Carriagereturn | Linefeed | CarriagereturnLinefeed] = js.native
+    var defaultLineEnding: js.UndefOr[Carriagereturn | Linefeed | CarriagereturnLinefeed] = js.undefined
     
     // Array of HTML extensions
     //
-    var htmlExtensions: js.UndefOr[js.Array[HtmlExtension]] = js.native
+    var htmlExtensions: js.UndefOr[js.Array[HtmlExtension]] = js.undefined
   }
   object CompileOptions {
     
@@ -149,26 +147,82 @@ object sharedTypesMod {
     }
   }
   
-  @js.native
   trait Construct extends StObject {
     
-    var concrete: js.UndefOr[Boolean] = js.native
+    var concrete: js.UndefOr[Boolean] = js.undefined
     
-    var interruptible: js.UndefOr[Boolean] = js.native
+    var interruptible: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var partial: js.UndefOr[Boolean] = js.native
+    var partial: js.UndefOr[Boolean] = js.undefined
     
-    var resolve: js.UndefOr[Resolve] = js.native
+    var resolve: js.UndefOr[Resolve] = js.undefined
     
-    var resolveAll: js.UndefOr[Resolve] = js.native
+    var resolveAll: js.UndefOr[Resolve] = js.undefined
     
-    var resolveTo: js.UndefOr[Resolve] = js.native
+    var resolveTo: js.UndefOr[Resolve] = js.undefined
     
-    def tokenize(context: Tokenizer, effects: Effects): State = js.native
+    def tokenize(context: Tokenizer, effects: Effects): State
     @JSName("tokenize")
-    var tokenize_Original: Tokenize = js.native
+    var tokenize_Original: Tokenize
+  }
+  object Construct {
+    
+    @scala.inline
+    def apply(tokenize: (/* context */ Tokenizer, /* effects */ Effects) => State): Construct = {
+      val __obj = js.Dynamic.literal(tokenize = js.Any.fromFunction2(tokenize))
+      __obj.asInstanceOf[Construct]
+    }
+    
+    @scala.inline
+    implicit class ConstructMutableBuilder[Self <: Construct] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setConcrete(value: Boolean): Self = StObject.set(x, "concrete", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConcreteUndefined: Self = StObject.set(x, "concrete", js.undefined)
+      
+      @scala.inline
+      def setInterruptible(value: Boolean): Self = StObject.set(x, "interruptible", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInterruptibleUndefined: Self = StObject.set(x, "interruptible", js.undefined)
+      
+      @scala.inline
+      def setLazy(value: Boolean): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLazyUndefined: Self = StObject.set(x, "lazy", js.undefined)
+      
+      @scala.inline
+      def setPartial(value: Boolean): Self = StObject.set(x, "partial", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPartialUndefined: Self = StObject.set(x, "partial", js.undefined)
+      
+      @scala.inline
+      def setResolve(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolve", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setResolveAll(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveAll", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setResolveAllUndefined: Self = StObject.set(x, "resolveAll", js.undefined)
+      
+      @scala.inline
+      def setResolveTo(value: (/* events */ js.Array[Event], /* context */ Tokenizer) => js.Array[Event]): Self = StObject.set(x, "resolveTo", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setResolveToUndefined: Self = StObject.set(x, "resolveTo", js.undefined)
+      
+      @scala.inline
+      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
+      
+      @scala.inline
+      def setTokenize(value: (/* context */ Tokenizer, /* effects */ Effects) => State): Self = StObject.set(x, "tokenize", js.Any.fromFunction2(value))
+    }
   }
   
   @js.native
@@ -261,14 +315,24 @@ object sharedTypesMod {
   
   type Okay = State
   
-  type Options = ParseOptions with CompileOptions
+  trait Options
+    extends StObject
+       with ParseOptions
+       with CompileOptions
+  object Options {
+    
+    @scala.inline
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[Options]
+    }
+  }
   
-  @js.native
   trait ParseOptions extends StObject {
     
     // Array of syntax extensions
     //
-    var extensions: js.UndefOr[js.Array[SyntaxExtension]] = js.native
+    var extensions: js.UndefOr[js.Array[SyntaxExtension]] = js.undefined
   }
   object ParseOptions {
     
@@ -292,22 +356,21 @@ object sharedTypesMod {
     }
   }
   
-  @js.native
   trait Parser extends StObject {
     
-    var constructs: Record[CodeAsKey, Construct | js.Array[Construct]] = js.native
+    var constructs: Record[CodeAsKey, Construct | js.Array[Construct]]
     
-    def content(from: Point): Tokenizer = js.native
+    def content(from: Point): Tokenizer
     
-    var defined: js.Array[String] = js.native
+    var defined: js.Array[String]
     
-    def document(from: Point): Tokenizer = js.native
+    def document(from: Point): Tokenizer
     
-    def flow(from: Point): Tokenizer = js.native
+    def flow(from: Point): Tokenizer
     
-    def string(from: Point): Tokenizer = js.native
+    def string(from: Point): Tokenizer
     
-    def text(from: Point): Tokenizer = js.native
+    def text(from: Point): Tokenizer
   }
   object Parser {
     
@@ -354,18 +417,17 @@ object sharedTypesMod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var _bufferIndex: js.UndefOr[Double] = js.native
+    var _bufferIndex: js.UndefOr[Double] = js.undefined
     
-    var _index: js.UndefOr[Double] = js.native
+    var _index: js.UndefOr[Double] = js.undefined
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Point {
     
@@ -408,20 +470,19 @@ object sharedTypesMod {
     (/* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias micromark.micromark/dist/shared-types.State */ js.Object) | Unit
   ]
   
-  @js.native
   trait SyntaxExtension extends StObject {
     
-    var contentInitial: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var contentInitial: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
     
-    var document: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var document: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
     
-    var flow: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var flow: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
     
-    var flowInitial: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var flowInitial: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
     
-    var string: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var string: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
     
-    var text: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.native
+    var text: js.UndefOr[Record[CodeAsKey, Construct | js.Array[Construct]]] = js.undefined
   }
   object SyntaxExtension {
     
@@ -472,7 +533,6 @@ object sharedTypesMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
     /**
@@ -480,36 +540,36 @@ object sharedTypesMod {
       * depending on the characters before and after sequences (**),
       * the sequence can open, close, both, or none
       */
-    var _close: js.UndefOr[Boolean] = js.native
+    var _close: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Close and open are also used in attention:
       * depending on the characters before and after sequences (**),
       * the sequence can open, close, both, or none
       */
-    var _open: js.UndefOr[Boolean] = js.native
+    var _open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used when dealing with linked tokens. A child tokenizer is needed to tokenize them, which is stored on those tokens
       */
-    var _tokenizer: js.UndefOr[Tokenizer] = js.native
+    var _tokenizer: js.UndefOr[Tokenizer] = js.undefined
     
     /**
       * Declares a token as having content of a certain type.
       * Because markdown requires to first parse containers, flow, content completely,
       * and then later go on to phrasing and such, it needs to be declared somewhere on the tokens.
       */
-    var contentType: js.UndefOr[flow | content | string | text] = js.native
+    var contentType: js.UndefOr[flow | content | string | text] = js.undefined
     
-    var end: Point = js.native
+    var end: Point
     
-    var next: js.UndefOr[Token] = js.native
+    var next: js.UndefOr[Token] = js.undefined
     
-    var previous: js.UndefOr[Token] = js.native
+    var previous: js.UndefOr[Token] = js.undefined
     
-    var start: Point = js.native
+    var start: Point
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object Token {
     
@@ -572,24 +632,23 @@ object sharedTypesMod {
   
   type Tokenize = js.Function2[/* context */ Tokenizer, /* effects */ Effects, State]
   
-  @js.native
   trait Tokenizer extends StObject {
     
-    def defineSkip(value: Point): Unit = js.native
+    def defineSkip(value: Point): Unit
     
-    var events: js.Array[Event] = js.native
+    var events: js.Array[Event]
     
-    def now(): Point = js.native
+    def now(): Point
     
-    var parser: Parser = js.native
+    var parser: Parser
     
-    var previous: Code = js.native
+    var previous: Code
     
-    def sliceSerialize(token: Token): String = js.native
+    def sliceSerialize(token: Token): String
     
-    def sliceStream(token: Token): js.Array[Chunk] = js.native
+    def sliceStream(token: Token): js.Array[Chunk]
     
-    def write(slice: js.Array[Chunk]): js.Array[Event] = js.native
+    def write(slice: js.Array[Chunk]): js.Array[Event]
   }
   object Tokenizer {
     
@@ -603,7 +662,7 @@ object sharedTypesMod {
       sliceStream: Token => js.Array[Chunk],
       write: js.Array[Chunk] => js.Array[Event]
     ): Tokenizer = {
-      val __obj = js.Dynamic.literal(defineSkip = js.Any.fromFunction1(defineSkip), events = events.asInstanceOf[js.Any], now = js.Any.fromFunction0(now), parser = parser.asInstanceOf[js.Any], sliceSerialize = js.Any.fromFunction1(sliceSerialize), sliceStream = js.Any.fromFunction1(sliceStream), write = js.Any.fromFunction1(write))
+      val __obj = js.Dynamic.literal(defineSkip = js.Any.fromFunction1(defineSkip), events = events.asInstanceOf[js.Any], now = js.Any.fromFunction0(now), parser = parser.asInstanceOf[js.Any], sliceSerialize = js.Any.fromFunction1(sliceSerialize), sliceStream = js.Any.fromFunction1(sliceStream), write = js.Any.fromFunction1(write), previous = null)
       __obj.asInstanceOf[Tokenizer]
     }
     
@@ -642,16 +701,15 @@ object sharedTypesMod {
     }
   }
   
-  @js.native
   trait TokenizerThis extends StObject {
     
-    var containerState: js.UndefOr[Record[String, _]] = js.native
+    var containerState: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var events: js.Array[Event] = js.native
+    var events: js.Array[Event]
     
-    var interrupt: js.UndefOr[Boolean] = js.native
+    var interrupt: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
   }
   object TokenizerThis {
     
@@ -665,7 +723,7 @@ object sharedTypesMod {
     implicit class TokenizerThisMutableBuilder[Self <: TokenizerThis] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setContainerState(value: Record[String, _]): Self = StObject.set(x, "containerState", value.asInstanceOf[js.Any])
+      def setContainerState(value: Record[String, js.Any]): Self = StObject.set(x, "containerState", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContainerStateUndefined: Self = StObject.set(x, "containerState", js.undefined)

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewsListResponse extends StObject {
   
   /** Information about the current page. */
-  var pageInfo: js.UndefOr[PageInfo] = js.native
+  var pageInfo: js.UndefOr[PageInfo] = js.undefined
   
   /** List of reviews. */
-  var reviews: js.UndefOr[js.Array[Review]] = js.native
+  var reviews: js.UndefOr[js.Array[Review]] = js.undefined
   
   /** Pagination token, to handle a number of products that is over one page. */
-  var tokenPagination: js.UndefOr[TokenPagination] = js.native
+  var tokenPagination: js.UndefOr[TokenPagination] = js.undefined
 }
 object ReviewsListResponse {
   

@@ -4,35 +4,33 @@ import typings.uirouterCore.pathNodeMod.PathNode
 import typings.uirouterCore.stateInterfaceMod.ViewDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewInterfaceMod {
   
-  @js.native
   trait ActiveUIView extends StObject {
     
     /** type of framework, e.g., "ng1" or "ng2" */
     @JSName("$type")
-    var $type: String = js.native
+    var $type: String
     
     /** The ViewConfig that is currently loaded into the ui-view */
-    var config: ViewConfig = js.native
+    var config: ViewConfig
     
     /** A callback that should apply a ViewConfig (or clear the ui-view, if config is undefined) */
-    def configUpdated(config: ViewConfig): Unit = js.native
+    def configUpdated(config: ViewConfig): Unit
     
     /** The state context in which the ui-view tag was created. */
-    var creationContext: ViewContext = js.native
+    var creationContext: ViewContext
     
     /** The ui-view's fully qualified name */
-    var fqn: String = js.native
+    var fqn: String
     
     /** An auto-incremented id */
-    var id: Double = js.native
+    var id: Double
     
     /** The ui-view short name */
-    var name: String = js.native
+    var name: String
   }
   object ActiveUIView {
     
@@ -76,22 +74,21 @@ object viewInterfaceMod {
     }
   }
   
-  @js.native
   trait ViewConfig extends StObject {
     
     @JSName("$id")
-    var $id: Double = js.native
+    var $id: Double
     
     /** Fetches templates, runs dynamic (controller|template)Provider code, lazy loads Components, etc */
-    def load(): js.Promise[ViewConfig] = js.native
+    def load(): js.Promise[ViewConfig]
     
-    var loaded: Boolean = js.native
+    var loaded: Boolean
     
     /** The node the ViewConfig is bound to */
-    var path: js.Array[PathNode] = js.native
+    var path: js.Array[PathNode]
     
     /** The normalized view declaration from [[State.views]] */
-    var viewDecl: ViewDeclaration = js.native
+    var viewDecl: ViewDeclaration
   }
   object ViewConfig {
     
@@ -130,12 +127,11 @@ object viewInterfaceMod {
     }
   }
   
-  @js.native
   trait ViewContext extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var parent: ViewContext = js.native
+    var parent: ViewContext
   }
   object ViewContext {
     

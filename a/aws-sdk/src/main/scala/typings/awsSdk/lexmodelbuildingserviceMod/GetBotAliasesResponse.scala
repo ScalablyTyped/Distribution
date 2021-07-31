@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotAliasesResponse extends StObject {
   
   /**
     * An array of BotAliasMetadata objects, each describing a bot alias.
     */
-  var BotAliases: js.UndefOr[BotAliasMetadataList] = js.native
+  var BotAliases: js.UndefOr[BotAliasMetadataList] = js.undefined
   
   /**
     * A pagination token for fetching next page of aliases. If the response to this call is truncated, Amazon Lex returns a pagination token in the response. To fetch the next page of aliases, specify the pagination token in the next request. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetBotAliasesResponse {
   

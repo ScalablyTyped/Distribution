@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.wafregional
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulePredicate extends StObject {
   
-  var dataId: String = js.native
+  var dataId: String
   
-  var negated: Boolean = js.native
+  var negated: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object RulePredicate {
   

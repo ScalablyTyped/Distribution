@@ -12,7 +12,7 @@ Search images using Google Custom Search Engine API
 | Keywords           | google, images, google images, image search |
 | # releases         | 0 |
 | # dependents       | 11 |
-| # downloads        | 42541 |
+| # downloads        | 46445 |
 | # stars            | 11 |
 
 ## Links

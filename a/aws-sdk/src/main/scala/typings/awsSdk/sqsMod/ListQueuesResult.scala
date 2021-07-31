@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListQueuesResult extends StObject {
   
   /**
     * Pagination token to include in the next request. Token value is null if there are no additional results to request, or if you did not set MaxResults in the request.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of queue URLs, up to 1,000 entries, or the value of MaxResults that you sent in the request.
     */
-  var QueueUrls: js.UndefOr[QueueUrlList] = js.native
+  var QueueUrls: js.UndefOr[QueueUrlList] = js.undefined
 }
 object ListQueuesResult {
   

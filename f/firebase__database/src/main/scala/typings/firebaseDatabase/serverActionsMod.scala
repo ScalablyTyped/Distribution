@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseDatabase.queryMod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serverActionsMod {
@@ -85,7 +84,6 @@ object serverActionsMod {
       * @param {string=} hash
       */
     def put(pathString: String, data: js.Any): Unit = js.native
-    def put(pathString: String, data: js.Any, onComplete: js.UndefOr[scala.Nothing], hash: String): Unit = js.native
     def put(pathString: String, data: js.Any, onComplete: js.Function2[/* a */ String, /* b */ String, Unit]): Unit = js.native
     def put(
       pathString: String,
@@ -93,6 +91,7 @@ object serverActionsMod {
       onComplete: js.Function2[/* a */ String, /* b */ String, Unit],
       hash: String
     ): Unit = js.native
+    def put(pathString: String, data: js.Any, onComplete: Unit, hash: String): Unit = js.native
     
     /**
       * Refreshes the auth token for the current connection.

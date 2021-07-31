@@ -2,15 +2,13 @@ package typings.sqlstring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ToSqlString extends StObject {
     
-    def toSqlString(): String = js.native
+    def toSqlString(): String
   }
   object ToSqlString {
     

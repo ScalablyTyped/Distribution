@@ -2,23 +2,21 @@ package typings.protobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMethodDescriptorProto extends StObject {
   
-  var clientStreaming: js.UndefOr[Boolean] = js.native
+  var clientStreaming: js.UndefOr[Boolean] = js.undefined
   
-  var inputType: js.UndefOr[String] = js.native
+  var inputType: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[IMethodOptions] = js.native
+  var options: js.UndefOr[IMethodOptions] = js.undefined
   
-  var outputType: js.UndefOr[String] = js.native
+  var outputType: js.UndefOr[String] = js.undefined
   
-  var serverStreaming: js.UndefOr[Boolean] = js.native
+  var serverStreaming: js.UndefOr[Boolean] = js.undefined
 }
 object IMethodDescriptorProto {
   

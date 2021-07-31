@@ -2,7 +2,6 @@ package typings.tsconfigPaths
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsconfigPathsStrings {
@@ -13,9 +12,9 @@ object tsconfigPathsStrings {
   def _package: _package = "package".asInstanceOf[_package]
   
   @js.native
-  sealed trait extension extends StObject
+  sealed trait `extension` extends StObject
   @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
+  def `extension`: `extension` = "extension".asInstanceOf[`extension`]
   
   @js.native
   sealed trait failed extends StObject

@@ -2,13 +2,11 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a batch update failure resource.
   */
-@js.native
 trait SchemaEventBatchRecordFailure extends StObject {
   
   /**
@@ -23,18 +21,18 @@ trait SchemaEventBatchRecordFailure extends StObject {
     * &quot;RECORD_RATE_HIGH&quot;: An attempt was made to record data faster
     * than the server will apply updates.
     */
-  var failureCause: js.UndefOr[String] = js.native
+  var failureCause: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#eventBatchRecordFailure.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The time range which was rejected; empty for a request-wide failure.
     */
-  var range: js.UndefOr[SchemaEventPeriodRange] = js.native
+  var range: js.UndefOr[SchemaEventPeriodRange] = js.undefined
 }
 object SchemaEventBatchRecordFailure {
   

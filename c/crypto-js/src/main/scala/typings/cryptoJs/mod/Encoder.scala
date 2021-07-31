@@ -2,13 +2,11 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encoding strategy.
   */
-@js.native
 trait Encoder extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait Encoder extends StObject {
     *
     *     var wordArray = CryptoJS.enc.Hex.parse(hexString);
     */
-  def parse(str: String): WordArray = js.native
+  def parse(str: String): WordArray
   
   /**
     * Converts a word array to a hex string.
@@ -35,7 +33,7 @@ trait Encoder extends StObject {
     *
     *     var hexString = CryptoJS.enc.Hex.stringify(wordArray);
     */
-  def stringify(wordArray: WordArray): String = js.native
+  def stringify(wordArray: WordArray): String
 }
 object Encoder {
   

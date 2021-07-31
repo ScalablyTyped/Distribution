@@ -3,28 +3,24 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeApplication extends Type_ {
+trait TypeApplication
+  extends StObject
+     with Type_ {
   
-  var applications: js.Array[Type_] = js.native
+  var applications: js.Array[Type_]
   
-  var expression: Type_ = js.native
+  var expression: Type_
   
-  var `type`: typings.doctrine.doctrineStrings.TypeApplication = js.native
+  var `type`: typings.doctrine.doctrineStrings.TypeApplication
 }
 object TypeApplication {
   
   @scala.inline
-  def apply(
-    applications: js.Array[Type_],
-    expression: Type_,
-    `type`: typings.doctrine.doctrineStrings.TypeApplication
-  ): TypeApplication = {
+  def apply(applications: js.Array[Type_], expression: Type_): TypeApplication = {
     val __obj = js.Dynamic.literal(applications = applications.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TypeApplication")
     __obj.asInstanceOf[TypeApplication]
   }
   

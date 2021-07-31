@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateComputeEnvironmentResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the compute environment.
     */
-  var computeEnvironmentArn: js.UndefOr[String] = js.native
+  var computeEnvironmentArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the compute environment.
     */
-  var computeEnvironmentName: js.UndefOr[String] = js.native
+  var computeEnvironmentName: js.UndefOr[String] = js.undefined
 }
 object CreateComputeEnvironmentResponse {
   

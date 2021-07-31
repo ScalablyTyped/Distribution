@@ -2,40 +2,38 @@ package typings.graphite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("graphite", JSImport.Namespace)
   @js.native
-  class ^ protected () extends GraphiteClient {
+  class ^ protected ()
+    extends StObject
+       with GraphiteClient {
     def this(properties: GraphiteClientProperties) = this()
   }
+  @JSImport("graphite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("graphite", "appendTags")
-  @js.native
-  def appendTags(flatMetrics: js.Any, tags: js.Any): js.Any = js.native
+  @scala.inline
+  def appendTags(flatMetrics: js.Any, tags: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("appendTags")(flatMetrics.asInstanceOf[js.Any], tags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("graphite", "createClient")
-  @js.native
-  def createClient(dsn: String): GraphiteClient = js.native
+  @scala.inline
+  def createClient(dsn: String): GraphiteClient = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(dsn.asInstanceOf[js.Any]).asInstanceOf[GraphiteClient]
   
   /* static member */
-  @JSImport("graphite", "flatten")
-  @js.native
-  def flatten(`object`: js.Any): js.Any = js.native
-  @JSImport("graphite", "flatten")
-  @js.native
-  def flatten(`object`: js.Any, flat: js.UndefOr[scala.Nothing], prefix: String): js.Any = js.native
-  @JSImport("graphite", "flatten")
-  @js.native
-  def flatten(`object`: js.Any, flat: js.Any): js.Any = js.native
-  @JSImport("graphite", "flatten")
-  @js.native
-  def flatten(`object`: js.Any, flat: js.Any, prefix: String): js.Any = js.native
+  @scala.inline
+  def flatten(`object`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def flatten(`object`: js.Any, flat: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def flatten(`object`: js.Any, flat: js.Any, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def flatten(`object`: js.Any, flat: Unit, prefix: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(`object`.asInstanceOf[js.Any], flat.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Callback = js.Function1[/* err */ js.Any, Unit]
   
@@ -46,21 +44,20 @@ object mod {
     
     def write(metrics: js.Any): Unit = js.native
     def write(metrics: js.Any, callback: Callback): Unit = js.native
-    def write(metrics: js.Any, timestamp: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
     def write(metrics: js.Any, timestamp: Double): Unit = js.native
     def write(metrics: js.Any, timestamp: Double, callback: Callback): Unit = js.native
+    def write(metrics: js.Any, timestamp: Unit, callback: Callback): Unit = js.native
     
     def writeTagged(metrics: js.Any, tags: js.Any): Unit = js.native
     def writeTagged(metrics: js.Any, tags: js.Any, callback: Callback): Unit = js.native
-    def writeTagged(metrics: js.Any, tags: js.Any, timestamp: js.UndefOr[scala.Nothing], callback: Callback): Unit = js.native
     def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Double): Unit = js.native
     def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Double, callback: Callback): Unit = js.native
+    def writeTagged(metrics: js.Any, tags: js.Any, timestamp: Unit, callback: Callback): Unit = js.native
   }
   
-  @js.native
   trait GraphiteClientProperties extends StObject {
     
-    var carbon: js.Any = js.native
+    var carbon: js.Any
   }
   object GraphiteClientProperties {
     

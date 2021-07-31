@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateThemeAliasRequest extends StObject {
   
   /**
     * The name that you want to give to the theme alias that you are creating. The alias name can't begin with a $. Alias names that start with $ are reserved by Amazon QuickSight. 
     */
-  var AliasName: typings.awsSdk.quicksightMod.AliasName = js.native
+  var AliasName: typings.awsSdk.quicksightMod.AliasName
   
   /**
     * The ID of the AWS account that contains the theme for the new theme alias.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * An ID for the theme alias.
     */
-  var ThemeId: RestrictiveResourceId = js.native
+  var ThemeId: RestrictiveResourceId
   
   /**
     * The version number of the theme.
     */
-  var ThemeVersionNumber: VersionNumber = js.native
+  var ThemeVersionNumber: VersionNumber
 }
 object CreateThemeAliasRequest {
   

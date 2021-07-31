@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of past encounter statuses
   */
-@js.native
-trait EncounterStatusHistory extends BackboneElement {
+trait EncounterStatusHistory
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The time that the episode was in the specified status
     */
-  var period: Period = js.native
+  var period: Period
   
   /**
     * planned | arrived | triaged | in-progress | onleave | finished | cancelled +
     */
-  var status: code = js.native
+  var status: code
 }
 object EncounterStatusHistory {
   

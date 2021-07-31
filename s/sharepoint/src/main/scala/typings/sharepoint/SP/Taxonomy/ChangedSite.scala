@@ -3,11 +3,12 @@ package typings.sharepoint.SP.Taxonomy
 import typings.sharepoint.SP.Guid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChangedSite extends ChangedItem {
+trait ChangedSite
+  extends StObject
+     with ChangedItem {
   
   def get_siteId(): Guid = js.native
   

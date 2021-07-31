@@ -2,65 +2,64 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMPictureMarker
-  extends CIMMarker
+  extends StObject
+     with CIMMarker
      with CIMSymbolLayerType {
   
   /**
     * The color substitutions for the picture.
     */
-  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.native
+  var colorSubstitutions: js.UndefOr[js.Array[CIMColorSubstitution]] = js.undefined
   
   /**
     * The depth of the image when drawn in 3D.
     */
-  var depth3D: js.UndefOr[Double] = js.native
+  var depth3D: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether the image is right-reading when viewed from behind.
     */
-  var invertBackfaceTexture: js.UndefOr[Boolean] = js.native
+  var invertBackfaceTexture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scale X which changes the width of the symbol without changing the height (or depth in 3D), as a ratio.
     */
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
   /**
     * How the image is resampled.
     */
   var textureFilter: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof TextureFilter * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The color that is applied as a tint to the image. The color is applied to the whole image. When the tint is set to white the image appears with its native colors.
     */
-  var tintColor: js.UndefOr[js.Array[Double]] = js.native
+  var tintColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   @JSName("type")
-  var type_CIMPictureMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker = js.native
+  var type_CIMPictureMarker: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker
   
   /**
     * The image that is used in the symbol layer. Typically a base64 encoded image.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * A value indicating whether the marker stands upright as though locked in place. The marker can be viewed from all angles.
     */
-  var verticalOrientation3D: js.UndefOr[Boolean] = js.native
+  var verticalOrientation3D: js.UndefOr[Boolean] = js.undefined
 }
 object CIMPictureMarker {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMPictureMarker): CIMPictureMarker = {
+  def apply(): CIMPictureMarker = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMPictureMarker")
     __obj.asInstanceOf[CIMPictureMarker]
   }
   

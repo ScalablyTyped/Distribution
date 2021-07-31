@@ -5,105 +5,104 @@ import typings.jqueryFancytree.jqueryFancytreeStrings.dimm
 import typings.jqueryFancytree.jqueryFancytreeStrings.hide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Extensions {
   
-  @js.native
   trait DragAndDrop5
-    extends /* extension */ StringDictionary[js.Any] {
+    extends StObject
+       with /* extension */ StringDictionary[js.Any] {
     
     /**
       * Expand nodes after n milliseconds of hovering.
       */
-    var autoExpandMS: js.UndefOr[Double] = js.native
+    var autoExpandMS: js.UndefOr[Double] = js.undefined
     
-    var dragDrag: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragDrag: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Events (drag drop)
       */
-    var dragDrop: js.UndefOr[js.Function2[/* node */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragDrop: js.UndefOr[js.Function2[/* node */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
-    var dragEnd: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragEnd: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Callback(targetNode, data), return true, to enable dnd drop
       */
-    var dragEnter: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragEnter: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Callback(targetNode, data), return false to prevent autoExpand
       */
-    var dragExpand: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragExpand: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
-    var dragLeave: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragLeave: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Events (drag over)
       */
-    var dragOver: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragOver: js.UndefOr[js.Function2[/* targetNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Callback(sourceNode, data), return true, to enable dnd drag
       */
-    var dragStart: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function2[/* sourceNode */ FancytreeNode, /* data */ js.Any, Unit]] = js.undefined
     
     /**
       * Additional offset for drop-marker with hitMode = "before"/"after"
       */
-    var dropMarkerInsertOffsetX: js.UndefOr[Double] = js.native
+    var dropMarkerInsertOffsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * Absolute position offset for .fancytree-drop-marker
       */
-    var dropMarkerOffsetX: js.UndefOr[Double] = js.native
+    var dropMarkerOffsetX: js.UndefOr[Double] = js.undefined
     
     /**
       * true: Drag multiple (i.e. selected) nodes.
       */
-    var multiSource: js.UndefOr[Boolean] = js.native
+    var multiSource: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent dropping nodes from different Fancytrees
       */
-    var preventForeignNodes: js.UndefOr[Boolean] = js.native
+    var preventForeignNodes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent dropping items other than Fancytree nodes
       */
-    var preventNonNodes: js.UndefOr[Boolean] = js.native
+    var preventNonNodes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent dropping nodes on own descendants
       */
-    var preventRecursiveMoves: js.UndefOr[Boolean] = js.native
+    var preventRecursiveMoves: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent dropping nodes 'before self', etc.
       */
-    var preventVoidMoves: js.UndefOr[Boolean] = js.native
+    var preventVoidMoves: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable auto-scrolling while dragging
       */
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Active top/bottom margin in pixel
       */
-    var scrollSensitivity: js.UndefOr[Double] = js.native
+    var scrollSensitivity: js.UndefOr[Double] = js.undefined
     
     /**
       * Pixel per event
       */
-    var scrollSpeed: js.UndefOr[Double] = js.native
+    var scrollSpeed: js.UndefOr[Double] = js.undefined
     
     /**
       * Allow dragging of nodes to different IE windows, default: false
       */
-    var setTextTypeJson: js.UndefOr[Boolean] = js.native
+    var setTextTypeJson: js.UndefOr[Boolean] = js.undefined
   }
   object DragAndDrop5 {
     
@@ -241,59 +240,59 @@ object Extensions {
   /**
     * Define filter-extension options
     */
-  @js.native
   trait Filter
-    extends /* extension */ StringDictionary[js.Any] {
+    extends StObject
+       with /* extension */ StringDictionary[js.Any] {
     
     /**
       * Re-apply last filter if lazy data is loaded
       */
-    var autoApply: js.UndefOr[Boolean] = js.native
+    var autoApply: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Expand all branches that contain matches while filtered
       */
-    var autoExpand: js.UndefOr[Boolean] = js.native
+    var autoExpand: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show a badge with number of matching child nodes near parent icons
       */
-    var counter: js.UndefOr[Boolean] = js.native
+    var counter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Match single characters in order, e.g. 'fb' will match 'FooBar'
       */
-    var fuzzy: js.UndefOr[Boolean] = js.native
+    var fuzzy: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hide counter badge if parent is expanded
       */
-    var hideExpandedCounter: js.UndefOr[Boolean] = js.native
+    var hideExpandedCounter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Hide expanders if all child nodes are hidden by filter
       */
-    var hideExpanders: js.UndefOr[Boolean] = js.native
+    var hideExpanders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Highlight matches by wrapping inside <mark> tags
       */
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Match end nodes only
       */
-    var leavesOnly: js.UndefOr[Boolean] = js.native
+    var leavesOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Grayout unmatched nodes (pass "hide" to remove unmatched node instead); default 'dimm'
       */
-    var mode: js.UndefOr[dimm | hide] = js.native
+    var mode: js.UndefOr[dimm | hide] = js.undefined
     
     /**
       * Display a 'no data' status node if result is empty
       */
-    var nodata: js.UndefOr[Boolean] = js.native
+    var nodata: js.UndefOr[Boolean] = js.undefined
   }
   object Filter {
     
@@ -368,15 +367,15 @@ object Extensions {
     }
   }
   
-  @js.native
   trait List
-    extends /* extension */ StringDictionary[js.Any] {
+    extends StObject
+       with /* extension */ StringDictionary[js.Any] {
     
-    var dnd5: js.UndefOr[DragAndDrop5] = js.native
+    var dnd5: js.UndefOr[DragAndDrop5] = js.undefined
     
-    var filter: js.UndefOr[Filter] = js.native
+    var filter: js.UndefOr[Filter] = js.undefined
     
-    var table: js.UndefOr[Table] = js.native
+    var table: js.UndefOr[Table] = js.undefined
   }
   object List {
     
@@ -412,24 +411,24 @@ object Extensions {
   /**
     * Define table-extension options
     */
-  @js.native
   trait Table
-    extends /* extension */ StringDictionary[js.Any] {
+    extends StObject
+       with /* extension */ StringDictionary[js.Any] {
     
     /**
       * Render the checkboxes into the this column index (default: nodeColumnIdx)
       */
-    var checkboxColumnIdx: js.Any = js.native
+    var checkboxColumnIdx: js.Any
     
     /**
       * Indent every node level by 16px; default: 16
       */
-    var indentation: Double = js.native
+    var indentation: Double
     
     /**
       * Render node expander, icon, and title to this column (default: 0)
       */
-    var nodeColumnIdx: Double = js.native
+    var nodeColumnIdx: Double
   }
   object Table {
     

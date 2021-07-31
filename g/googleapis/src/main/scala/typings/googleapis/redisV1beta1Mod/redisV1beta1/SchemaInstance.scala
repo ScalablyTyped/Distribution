@@ -3,13 +3,11 @@ package typings.googleapis.redisV1beta1Mod.redisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Google Cloud Redis instance.
   */
-@js.native
 trait SchemaInstance extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaInstance extends StObject {
     * against zonal failures by provisioning it across two zones. If provided,
     * it must be a different zone from the one provided in [location_id].
     */
-  var alternativeLocationId: js.UndefOr[String] = js.native
+  var alternativeLocationId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The full name of the Google Compute Engine
@@ -25,12 +23,12 @@ trait SchemaInstance extends StObject {
     * instance is connected. If left unspecified, the `default` network will be
     * used.
     */
-  var authorizedNetwork: js.UndefOr[String] = js.native
+  var authorizedNetwork: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time the instance was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current zone where the Redis endpoint is placed. For
@@ -39,23 +37,23 @@ trait SchemaInstance extends StObject {
     * can be either [location_id] or [alternative_location_id] and can change
     * after a failover event.
     */
-  var currentLocationId: js.UndefOr[String] = js.native
+  var currentLocationId: js.UndefOr[String] = js.undefined
   
   /**
     * An arbitrary and optional user-provided name for the instance.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Hostname or IP address of the exposed Redis endpoint used by
     * clients to connect to the service.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Resource labels to represent user provided metadata
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The zone where the instance will be provisioned. If not
@@ -64,12 +62,12 @@ trait SchemaInstance extends StObject {
     * protection against zonal failures. If [alternative_location_id] is also
     * provided, it must be different from [location_id].
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Redis memory size in GiB.
     */
-  var memorySizeGb: js.UndefOr[Double] = js.native
+  var memorySizeGb: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. Unique name of the resource in this scope including project and
@@ -81,12 +79,12 @@ trait SchemaInstance extends StObject {
     * instance should be provisioned in. Refer to [location_id] and
     * [alternative_location_id] fields for more details.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The port number of the exposed Redis endpoint.
     */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Redis configuration parameters, according to
@@ -95,7 +93,7 @@ trait SchemaInstance extends StObject {
     * notify-keyspace-events   Redis 4.0 and above:   *   activedefrag  *
     * lfu-log-factor  *   lfu-decay-time
     */
-  var redisConfigs: js.UndefOr[StringDictionary[String]] = js.native
+  var redisConfigs: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Optional. The version of Redis software. If not provided, latest
@@ -104,7 +102,7 @@ trait SchemaInstance extends StObject {
     * are:   *   `REDIS_4_0` for Redis 4.0 compatibility  *   `REDIS_3_2` for
     * Redis 3.2 compatibility
     */
-  var redisVersion: js.UndefOr[String] = js.native
+  var redisVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The CIDR range of internal addresses that are reserved for this
@@ -112,23 +110,23 @@ trait SchemaInstance extends StObject {
     * for example, 10.0.0.0/29 or 192.168.0.0/29. Ranges must be unique and
     * non-overlapping with existing subnets in an authorized network.
     */
-  var reservedIpRange: js.UndefOr[String] = js.native
+  var reservedIpRange: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The current state of this instance.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Additional information about the current status of this
     * instance, if available.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The service tier of the instance.
     */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
 }
 object SchemaInstance {
   

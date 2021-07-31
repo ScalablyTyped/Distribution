@@ -9,7 +9,6 @@ import typings.wallpaper.wallpaperStrings.main
 import typings.wallpaper.wallpaperStrings.stretch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,12 +38,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("wallpaper", "get")
-  @js.native
-  def get(): js.Promise[String] = js.native
-  @JSImport("wallpaper", "get")
-  @js.native
-  def get(options: GetOptions): js.Promise[String] = js.native
+  @scala.inline
+  def get(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def get(options: GetOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
   	__macOS only.__
@@ -75,14 +72,11 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("wallpaper", "set")
-  @js.native
-  def set(imagePath: String): js.Promise[Unit] = js.native
-  @JSImport("wallpaper", "set")
-  @js.native
-  def set(imagePath: String, options: SetOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def set(imagePath: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def set(imagePath: String, options: SetOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(imagePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait GetOptions extends StObject {
     
     /**
@@ -91,7 +85,7 @@ object mod {
     		Values: `all`, `main`, or the index of a screen from `.screens()`.
     		@default 'main'
     		*/
-    val screen: js.UndefOr[all | main | Double] = js.native
+    val screen: js.UndefOr[all | main | Double] = js.undefined
   }
   object GetOptions {
     
@@ -112,7 +106,6 @@ object mod {
     }
   }
   
-  @js.native
   trait SetOptions extends StObject {
     
     /**
@@ -120,7 +113,7 @@ object mod {
     		Scaling method. Values: `auto` `fill` `fit` `stretch` `center`.
     		@default 'auto'
     		*/
-    val scale: js.UndefOr[auto | fill | fit | stretch | center] = js.native
+    val scale: js.UndefOr[auto | fill | fit | stretch | center] = js.undefined
     
     /**
     		__macOS only.__
@@ -129,7 +122,7 @@ object mod {
     		*On Linux and Windows it's hard-coded to `main`.*
     		@default 'all'
     		*/
-    val screen: js.UndefOr[all | main | Double] = js.native
+    val screen: js.UndefOr[all | main | Double] = js.undefined
   }
   object SetOptions {
     

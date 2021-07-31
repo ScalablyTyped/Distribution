@@ -4,15 +4,13 @@ import typings.reactSketchapp.reactSketchappStrings.evenodd
 import typings.reactSketchapp.reactSketchappStrings.nonzero
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClipProps extends StObject {
   
-  var clipPath: js.UndefOr[String] = js.native
+  var clipPath: js.UndefOr[String] = js.undefined
   
-  var clipRule: js.UndefOr[evenodd | nonzero] = js.native
+  var clipRule: js.UndefOr[evenodd | nonzero] = js.undefined
 }
 object ClipProps {
   

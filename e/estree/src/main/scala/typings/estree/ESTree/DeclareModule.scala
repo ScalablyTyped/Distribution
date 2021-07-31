@@ -2,16 +2,14 @@ package typings.estree.ESTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration * / any */ @js.native
-trait DeclareModule extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Declaration * / any */ trait DeclareModule extends StObject {
   
-  var body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any = js.native
+  var body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BlockStatement */ js.Any
   
-  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Literal */ js.Any = js.native
+  var id: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Literal */ js.Any
 }
 object DeclareModule {
   

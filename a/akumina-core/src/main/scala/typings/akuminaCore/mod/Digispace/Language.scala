@@ -2,7 +2,6 @@ package typings.akuminaCore.mod.Digispace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("akumina-core", "Digispace.Language")
@@ -10,14 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Language () extends StObject
 object Language {
   
+  @JSImport("akumina-core", "Digispace.Language")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* Added */
   /* static member */
-  @JSImport("akumina-core", "Digispace.Language.GetText")
-  @js.native
-  def GetText(Token: String): String = js.native
+  @scala.inline
+  def GetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("GetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSImport("akumina-core", "Digispace.Language.TryGetText")
-  @js.native
-  def TryGetText(Token: String): String = js.native
+  @scala.inline
+  def TryGetText(Token: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("TryGetText")(Token.asInstanceOf[js.Any]).asInstanceOf[String]
 }

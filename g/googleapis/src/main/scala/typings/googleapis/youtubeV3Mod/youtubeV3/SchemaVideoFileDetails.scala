@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * audio and video streams, but also metadata information like content length,
   * digitization time, or geotagging information.
   */
-@js.native
 trait SchemaVideoFileDetails extends StObject {
   
   /**
     * A list of audio streams contained in the uploaded video file. Each item
     * in the list contains detailed metadata about an audio stream.
     */
-  var audioStreams: js.UndefOr[js.Array[SchemaVideoFileDetailsAudioStream]] = js.native
+  var audioStreams: js.UndefOr[js.Array[SchemaVideoFileDetailsAudioStream]] = js.undefined
   
   /**
     * The uploaded video file&#39;s combined (video and audio) bitrate in bits
     * per second.
     */
-  var bitrateBps: js.UndefOr[String] = js.native
+  var bitrateBps: js.UndefOr[String] = js.undefined
   
   /**
     * The uploaded video file&#39;s container format.
     */
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time when the uploaded video file was created. The value is
@@ -36,24 +34,24 @@ trait SchemaVideoFileDetails extends StObject {
     * are supported:   - Date only: YYYY-MM-DD  - Naive time:
     * YYYY-MM-DDTHH:MM:SS  - Time with timezone: YYYY-MM-DDTHH:MM:SS+HH:MM
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The length of the uploaded video in milliseconds.
     */
-  var durationMs: js.UndefOr[String] = js.native
+  var durationMs: js.UndefOr[String] = js.undefined
   
   /**
     * The uploaded file&#39;s name. This field is present whether a video file
     * or another type of file was uploaded.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * The uploaded file&#39;s size in bytes. This field is present whether a
     * video file or another type of file was uploaded.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * The uploaded file&#39;s type as detected by YouTube&#39;s video
@@ -61,13 +59,13 @@ trait SchemaVideoFileDetails extends StObject {
     * this field is present whether a video file or another type of file was
     * uploaded.
     */
-  var fileType: js.UndefOr[String] = js.native
+  var fileType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of video streams contained in the uploaded video file. Each item
     * in the list contains detailed metadata about a video stream.
     */
-  var videoStreams: js.UndefOr[js.Array[SchemaVideoFileDetailsVideoStream]] = js.native
+  var videoStreams: js.UndefOr[js.Array[SchemaVideoFileDetailsVideoStream]] = js.undefined
 }
 object SchemaVideoFileDetails {
   

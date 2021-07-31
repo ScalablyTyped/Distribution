@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePartitionRequest extends StObject {
   
   /**
     * The AWS account ID of the catalog in which the partition is to be created.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the metadata database in which the partition is to be created.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A PartitionInput structure defining the partition to be created.
     */
-  var PartitionInput: typings.awsSdk.glueMod.PartitionInput = js.native
+  var PartitionInput: typings.awsSdk.glueMod.PartitionInput
   
   /**
     * The name of the metadata table in which the partition is to be created.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object CreatePartitionRequest {
   

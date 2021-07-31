@@ -2,21 +2,28 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object procMod {
   
   @JSImport("node-os-utils/lib/proc", JSImport.Default)
   @js.native
-  class default () extends Proc
+  class default ()
+    extends StObject
+       with Proc {
+    
+    /* CompleteClass */
+    override def totalProcesses(): js.Promise[Double | String] = js.native
+    
+    /* CompleteClass */
+    override def zombieProcesses(): js.Promise[Double | String] = js.native
+  }
   
-  @js.native
   trait Proc extends StObject {
     
-    def totalProcesses(): js.Promise[Double | String] = js.native
+    def totalProcesses(): js.Promise[Double | String]
     
-    def zombieProcesses(): js.Promise[Double | String] = js.native
+    def zombieProcesses(): js.Promise[Double | String]
   }
   object Proc {
     

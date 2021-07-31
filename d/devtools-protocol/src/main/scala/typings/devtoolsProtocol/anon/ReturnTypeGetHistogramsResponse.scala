@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.GetHistogramsRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.GetHistogramsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetHistogramsResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetHistogramsRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetHistogramsRequest]]
   
-  var returnType: GetHistogramsResponse = js.native
+  var returnType: GetHistogramsResponse
 }
 object ReturnTypeGetHistogramsResponse {
   

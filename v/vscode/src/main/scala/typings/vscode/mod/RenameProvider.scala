@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.anon.Placeholder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameProvider extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait RenameProvider extends StObject {
       /* token */ CancellationToken, 
       ProviderResult[Range | Placeholder]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Provide an edit that describes changes that have to be made to one
@@ -42,7 +40,7 @@ trait RenameProvider extends StObject {
     * @return A workspace edit or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideRenameEdits(document: TextDocument, position: Position, newName: String, token: CancellationToken): ProviderResult[WorkspaceEdit] = js.native
+  def provideRenameEdits(document: TextDocument, position: Position, newName: String, token: CancellationToken): ProviderResult[WorkspaceEdit]
 }
 object RenameProvider {
   

@@ -6,34 +6,32 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.mod.ButtonInformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.PricingCardProps> */
-@js.native
 trait PartialPricingCardProps extends StObject {
   
-  var button: js.UndefOr[ButtonInformation] = js.native
+  var button: js.UndefOr[ButtonInformation] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var info: js.UndefOr[js.Array[String]] = js.native
+  var info: js.UndefOr[js.Array[String]] = js.undefined
   
-  var infoStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var infoStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var onButtonPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onButtonPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
-  var pricingStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var pricingStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object PartialPricingCardProps {
   

@@ -5,10 +5,8 @@ import typings.uiGrid.mod.treeBase.rowCollapsedHandler
 import typings.uiGrid.mod.treeBase.rowExpandedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowCollapsed[TEntity] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RowCollapsed[TEntity] extends StObject {
     * @param {ng.IScope} scope Grid scope
     * @param {rowCollapsedHandler} handler Callback
     */
-  def rowCollapsed(scope: IScope, handler: rowCollapsedHandler[TEntity]): Unit = js.native
+  def rowCollapsed(scope: IScope, handler: rowCollapsedHandler[TEntity]): Unit
   
   /**
     * Raised whenever a row is expanded.
@@ -28,7 +26,7 @@ trait RowCollapsed[TEntity] extends StObject {
     * @param {ng.IScope} scope Grid Scope
     * @param {rowExpandedHandler} handler Callback
     */
-  def rowExpanded(scope: IScope, handler: rowExpandedHandler[TEntity]): Unit = js.native
+  def rowExpanded(scope: IScope, handler: rowExpandedHandler[TEntity]): Unit
 }
 object RowCollapsed {
   
@@ -42,7 +40,7 @@ object RowCollapsed {
   }
   
   @scala.inline
-  implicit class RowCollapsedMutableBuilder[Self <: RowCollapsed[_], TEntity] (val x: Self with RowCollapsed[TEntity]) extends AnyVal {
+  implicit class RowCollapsedMutableBuilder[Self <: RowCollapsed[?], TEntity] (val x: Self & RowCollapsed[TEntity]) extends AnyVal {
     
     @scala.inline
     def setRowCollapsed(value: (IScope, rowCollapsedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowCollapsed", js.Any.fromFunction2(value))

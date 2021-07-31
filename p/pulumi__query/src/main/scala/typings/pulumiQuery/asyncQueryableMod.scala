@@ -10,7 +10,6 @@ import typings.pulumiQuery.interfacesMod.OrderKey
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncQueryableMod {
@@ -324,7 +323,7 @@ object asyncQueryableMod {
       op7: Operator[TResult6, TResult7],
       op8: Operator[TResult7, TResult8],
       op9: Operator[TResult8, TResult9],
-      ops: (Operator[_, _])*
+      ops: (Operator[js.Any, js.Any])*
     ): AsyncQueryable[TResult9] = js.native
     
     /**
@@ -418,9 +417,12 @@ object asyncQueryableMod {
   /* static members */
   object AsyncQueryableImpl {
     
-    @JSImport("@pulumi/query/asyncQueryable", "AsyncQueryableImpl.from")
+    @JSImport("@pulumi/query/asyncQueryable", "AsyncQueryableImpl")
     @js.native
-    def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryableImpl[TSource] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def from[TSource](source: AsyncQuerySource[TSource]): AsyncQueryableImpl[TSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(source.asInstanceOf[js.Any]).asInstanceOf[AsyncQueryableImpl[TSource]]
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

@@ -6,11 +6,11 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Result extends DisplayControl {
+trait Result
+  extends StObject
+     with DisplayControl {
   
   def activate(
     prompt: String,
@@ -22,144 +22,144 @@ trait Result extends DisplayControl {
     searchBoxLinkId: String,
     searchBoxProgressClass: String,
     searchBoxPromptClass: String
-  ): Unit = js.native
+  ): Unit
   
-  def changeQueryLanguage(queryLanguage: Double): Unit = js.native
+  def changeQueryLanguage(queryLanguage: Double): Unit
   
-  def changeQueryTerm(queryTerm: js.Any): Unit = js.native
+  def changeQueryTerm(queryTerm: js.Any): Unit
   
-  def get_advancedSearchPageAddress(): String = js.native
+  def get_advancedSearchPageAddress(): String
   
-  def get_advancedUrl(): String = js.native
+  def get_advancedUrl(): String
   
-  def get_currentPageNumber(): Double = js.native
+  def get_currentPageNumber(): Double
   
-  def get_currentTerm(): String = js.native
+  def get_currentTerm(): String
   
-  def get_emptyRefinementMessageId(): String = js.native
+  def get_emptyRefinementMessageId(): String
   
-  def get_groupTemplateId(): String = js.native
+  def get_groupTemplateId(): String
   
-  def get_initialPrompt(): String = js.native
+  def get_initialPrompt(): String
   
-  def get_itemBodyTemplateId(): String = js.native
+  def get_itemBodyTemplateId(): String
   
-  def get_itemTemplateId(): String = js.native
+  def get_itemTemplateId(): String
   
-  def get_maxPagesAfterCurrent(): Double = js.native
+  def get_maxPagesAfterCurrent(): Double
   
-  def get_maxPagesBeforeCurrent(): Double = js.native
+  def get_maxPagesBeforeCurrent(): Double
   
-  def get_pagingInfo(): js.Any = js.native
+  def get_pagingInfo(): js.Any
   
-  def get_preloadedItemTemplateIds(): js.Array[String] = js.native
+  def get_preloadedItemTemplateIds(): js.Array[String]
   
-  def get_repositionLanguageDropDown(): Boolean = js.native
+  def get_repositionLanguageDropDown(): Boolean
   
-  def get_scrollToTopOnRedraw(): Boolean = js.native
+  def get_scrollToTopOnRedraw(): Boolean
   
-  def get_selectedRefinementControls(): js.Array[CSRRefinementControl] = js.native
+  def get_selectedRefinementControls(): js.Array[CSRRefinementControl]
   
-  def get_showAdvancedLink(): Boolean = js.native
+  def get_showAdvancedLink(): Boolean
   
-  def get_showAlertMe(): Boolean = js.native
+  def get_showAlertMe(): Boolean
   
-  def get_showBestBets(): Boolean = js.native
+  def get_showBestBets(): Boolean
   
-  def get_showDefinitions(): Boolean = js.native
+  def get_showDefinitions(): Boolean
   
-  def get_showDidYouMean(): Boolean = js.native
+  def get_showDidYouMean(): Boolean
   
-  def get_showLanguageOptions(): Boolean = js.native
+  def get_showLanguageOptions(): Boolean
   
-  def get_showNavigation(): Boolean = js.native
+  def get_showNavigation(): Boolean
   
-  def get_showPaging(): Boolean = js.native
+  def get_showPaging(): Boolean
   
-  def get_showPersonalFavorites(): Boolean = js.native
+  def get_showPersonalFavorites(): Boolean
   
-  def get_showPreferencesLink(): Boolean = js.native
+  def get_showPreferencesLink(): Boolean
   
-  def get_showQuerySuggestions(): Boolean = js.native
+  def get_showQuerySuggestions(): Boolean
   
-  def get_showResultCount(): Boolean = js.native
+  def get_showResultCount(): Boolean
   
-  def get_showResults(): Boolean = js.native
+  def get_showResults(): Boolean
   
-  def get_showSortOptions(): Boolean = js.native
+  def get_showSortOptions(): Boolean
   
-  def get_showUpScopeMessage(): Boolean = js.native
+  def get_showUpScopeMessage(): Boolean
   
-  def get_showViewDuplicates(): Boolean = js.native
+  def get_showViewDuplicates(): Boolean
   
-  def get_useSimplifiedQueryBuilder(): Boolean = js.native
+  def get_useSimplifiedQueryBuilder(): Boolean
   
-  def handleClickOnCategoryLink(id: String): Unit = js.native
+  def handleClickOnCategoryLink(id: String): Unit
   
-  def page(startAt: Double): Unit = js.native
+  def page(startAt: Double): Unit
   
-  def processResultReady(resultTableCollection: ResultTableCollection): Unit = js.native
+  def processResultReady(resultTableCollection: ResultTableCollection): Unit
   
-  def setAriaCollapsed(element: HTMLElement): Unit = js.native
+  def setAriaCollapsed(element: HTMLElement): Unit
   
-  def set_advancedUrl(value: String): String = js.native
+  def set_advancedUrl(value: String): String
   
-  def set_currentPageNumber(value: Double): Double = js.native
+  def set_currentPageNumber(value: Double): Double
   
-  def set_groupTemplateId(value: String): String = js.native
+  def set_groupTemplateId(value: String): String
   
-  def set_itemBodyTemplateId(value: String): String = js.native
+  def set_itemBodyTemplateId(value: String): String
   
-  def set_itemTemplateId(value: String): String = js.native
+  def set_itemTemplateId(value: String): String
   
-  def set_maxPagesAfterCurrent(value: Double): Double = js.native
+  def set_maxPagesAfterCurrent(value: Double): Double
   
-  def set_maxPagesBeforeCurrent(value: Double): Double = js.native
+  def set_maxPagesBeforeCurrent(value: Double): Double
   
-  def set_preloadedItemTemplateIds(value: js.Array[String]): js.Array[String] = js.native
+  def set_preloadedItemTemplateIds(value: js.Array[String]): js.Array[String]
   
-  def set_repositionLanguageDropDown(value: Boolean): Boolean = js.native
+  def set_repositionLanguageDropDown(value: Boolean): Boolean
   
-  def set_scrollToTopOnRedraw(value: Boolean): Boolean = js.native
+  def set_scrollToTopOnRedraw(value: Boolean): Boolean
   
-  def set_showAdvancedLink(value: Boolean): Boolean = js.native
+  def set_showAdvancedLink(value: Boolean): Boolean
   
-  def set_showAlertMe(value: Boolean): Boolean = js.native
+  def set_showAlertMe(value: Boolean): Boolean
   
-  def set_showBestBets(value: Boolean): Boolean = js.native
+  def set_showBestBets(value: Boolean): Boolean
   
-  def set_showDefinitions(value: Boolean): Boolean = js.native
+  def set_showDefinitions(value: Boolean): Boolean
   
-  def set_showDidYouMean(value: Boolean): Boolean = js.native
+  def set_showDidYouMean(value: Boolean): Boolean
   
-  def set_showLanguageOptions(value: Boolean): Boolean = js.native
+  def set_showLanguageOptions(value: Boolean): Boolean
   
-  def set_showPaging(value: Boolean): Boolean = js.native
+  def set_showPaging(value: Boolean): Boolean
   
-  def set_showPersonalFavorites(value: Boolean): Boolean = js.native
+  def set_showPersonalFavorites(value: Boolean): Boolean
   
-  def set_showPreferencesLink(value: Boolean): Boolean = js.native
+  def set_showPreferencesLink(value: Boolean): Boolean
   
-  def set_showResultCount(value: Boolean): Boolean = js.native
+  def set_showResultCount(value: Boolean): Boolean
   
-  def set_showResults(value: Boolean): Boolean = js.native
+  def set_showResults(value: Boolean): Boolean
   
-  def set_showSortOptions(value: Boolean): Boolean = js.native
+  def set_showSortOptions(value: Boolean): Boolean
   
-  def set_showUpScopeMessage(value: Boolean): Boolean = js.native
+  def set_showUpScopeMessage(value: Boolean): Boolean
   
-  def set_showViewDuplicates(value: Boolean): Boolean = js.native
+  def set_showViewDuplicates(value: Boolean): Boolean
   
-  def set_useSimplifiedQueryBuilder(value: Boolean): Boolean = js.native
+  def set_useSimplifiedQueryBuilder(value: Boolean): Boolean
   
   /** Returns true if the specified table has results and is enabled to be shown by this control */
-  def shouldShowTable(resultTable: ResultTable): Boolean = js.native
+  def shouldShowTable(resultTable: ResultTable): Boolean
   
-  def sort(sortName: String): Unit = js.native
+  def sort(sortName: String): Unit
   
-  def sortOrRank(sortRankName: String): Unit = js.native
+  def sortOrRank(sortRankName: String): Unit
   
-  def viewDuplicates(docId: Double): Unit = js.native
+  def viewDuplicates(docId: Double): Unit
 }
 object Result {
   
@@ -204,7 +204,7 @@ object Result {
     get_itemTemplateId: () => String,
     get_maxPagesAfterCurrent: () => Double,
     get_maxPagesBeforeCurrent: () => Double,
-    get_messages: () => js.Array[_],
+    get_messages: () => js.Array[js.Any],
     get_nextUniqueId: () => String,
     get_pagingInfo: () => js.Any,
     get_preloadedItemTemplateIds: () => js.Array[String],
@@ -267,7 +267,7 @@ object Result {
     scriptApplication_PostLoad: (js.Any, js.Any) => Unit,
     scriptApplication_PreLoad: (js.Any, js.Any) => Unit,
     serverTemplateScriptsCallback: () => Unit,
-    serverTemplateScriptsToLoad: js.Array[_],
+    serverTemplateScriptsToLoad: js.Array[js.Any],
     setAriaCollapsed: HTMLElement => Unit,
     setControlElementVisibility: Boolean => js.Any,
     set_advancedUrl: String => String,
@@ -282,7 +282,7 @@ object Result {
     set_itemTemplateId: String => String,
     set_maxPagesAfterCurrent: Double => Double,
     set_maxPagesBeforeCurrent: Double => Double,
-    set_messages: js.Array[_] => js.Array[_],
+    set_messages: js.Array[js.Any] => js.Array[js.Any],
     set_preloadedItemTemplateIds: js.Array[String] => js.Array[String],
     set_queryGroupName: String => String,
     set_renderTemplateId: String => String,

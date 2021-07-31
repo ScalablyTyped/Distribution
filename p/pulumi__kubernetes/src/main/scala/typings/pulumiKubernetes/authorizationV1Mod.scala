@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizationV1Mod {
@@ -27,11 +26,15 @@ object authorizationV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: LocalSubjectAccessReviewArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: LocalSubjectAccessReviewArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object LocalSubjectAccessReview {
+    
+    @JSImport("@pulumi/kubernetes/authorization/v1", "LocalSubjectAccessReview")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing LocalSubjectAccessReview resource's state with the given name, ID, and optional extra
@@ -41,20 +44,17 @@ object authorizationV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "LocalSubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
-    @JSImport("@pulumi/kubernetes/authorization/v1", "LocalSubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1LocalSubjectAccessReviewMod.LocalSubjectAccessReview]
     
     /**
       * Returns true if the given object is an instance of LocalSubjectAccessReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "LocalSubjectAccessReview.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/localSubjectAccessReview.LocalSubjectAccessReview */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/localSubjectAccessReview.LocalSubjectAccessReview */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/localSubjectAccessReview.LocalSubjectAccessReview */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectAccessReview")
@@ -70,11 +70,15 @@ object authorizationV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: SelfSubjectAccessReviewArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SelfSubjectAccessReviewArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object SelfSubjectAccessReview {
+    
+    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectAccessReview")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing SelfSubjectAccessReview resource's state with the given name, ID, and optional extra
@@ -84,20 +88,17 @@ object authorizationV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SelfSubjectAccessReviewMod.SelfSubjectAccessReview]
     
     /**
       * Returns true if the given object is an instance of SelfSubjectAccessReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectAccessReview.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectAccessReview.SelfSubjectAccessReview */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectAccessReview.SelfSubjectAccessReview */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectAccessReview.SelfSubjectAccessReview */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectRulesReview")
@@ -113,11 +114,15 @@ object authorizationV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: SelfSubjectRulesReviewArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SelfSubjectRulesReviewArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object SelfSubjectRulesReview {
+    
+    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectRulesReview")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing SelfSubjectRulesReview resource's state with the given name, ID, and optional extra
@@ -127,20 +132,17 @@ object authorizationV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectRulesReview.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectRulesReview.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SelfSubjectRulesReviewMod.SelfSubjectRulesReview]
     
     /**
       * Returns true if the given object is an instance of SelfSubjectRulesReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SelfSubjectRulesReview.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectRulesReview.SelfSubjectRulesReview */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectRulesReview.SelfSubjectRulesReview */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/selfSubjectRulesReview.SelfSubjectRulesReview */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes/authorization/v1", "SubjectAccessReview")
@@ -156,11 +158,15 @@ object authorizationV1Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: SubjectAccessReviewArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: SubjectAccessReviewArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object SubjectAccessReview {
+    
+    @JSImport("@pulumi/kubernetes/authorization/v1", "SubjectAccessReview")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing SubjectAccessReview resource's state with the given name, ID, and optional extra
@@ -170,19 +176,16 @@ object authorizationV1Mod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview = js.native
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SubjectAccessReview.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1SubjectAccessReviewMod.SubjectAccessReview]
     
     /**
       * Returns true if the given object is an instance of SubjectAccessReview.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/authorization/v1", "SubjectAccessReview.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/authorization/v1/subjectAccessReview.SubjectAccessReview */ Boolean]
   }
 }

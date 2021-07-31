@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Collections.IMapView
 import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ApplicationDataCompositeValue extends IPropertySet
+trait ApplicationDataCompositeValue
+  extends StObject
+     with IPropertySet
 object ApplicationDataCompositeValue {
   
   @scala.inline

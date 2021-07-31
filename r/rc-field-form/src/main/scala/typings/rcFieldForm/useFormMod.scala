@@ -8,17 +8,18 @@ import typings.rcFieldForm.rcFieldFormStrings.updateValue
 import typings.rcFieldForm.rcFieldFormStrings.validateField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFormMod {
   
-  @JSImport("rc-field-form/es/useForm", JSImport.Default)
+  @JSImport("rc-field-form/es/useForm", JSImport.Namespace)
   @js.native
-  def default[Values](): js.Array[FormInstance[Values]] = js.native
-  @JSImport("rc-field-form/es/useForm", JSImport.Default)
-  @js.native
-  def default[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Values](): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Array[FormInstance[Values]]]
+  @scala.inline
+  def default[Values](form: FormInstance[Values]): js.Array[FormInstance[Values]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(form.asInstanceOf[js.Any]).asInstanceOf[js.Array[FormInstance[Values]]]
   
   @JSImport("rc-field-form/es/useForm", "FormStore")
   @js.native
@@ -138,35 +139,36 @@ object useFormMod {
   object ReducerAction {
     
     @scala.inline
-    def UpdateAction(namePath: InternalNamePath, `type`: updateValue, value: StoreValue): typings.rcFieldForm.useFormMod.UpdateAction = {
+    def UpdateAction(namePath: InternalNamePath, value: StoreValue): typings.rcFieldForm.useFormMod.UpdateAction = {
       val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("updateValue")
       __obj.asInstanceOf[typings.rcFieldForm.useFormMod.UpdateAction]
     }
     
     @scala.inline
-    def ValidateAction(namePath: InternalNamePath, triggerName: String, `type`: validateField): typings.rcFieldForm.useFormMod.ValidateAction = {
+    def ValidateAction(namePath: InternalNamePath, triggerName: String): typings.rcFieldForm.useFormMod.ValidateAction = {
       val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("validateField")
       __obj.asInstanceOf[typings.rcFieldForm.useFormMod.ValidateAction]
     }
   }
   
-  @js.native
-  trait UpdateAction extends ReducerAction {
+  trait UpdateAction
+    extends StObject
+       with ReducerAction {
     
-    var namePath: InternalNamePath = js.native
+    var namePath: InternalNamePath
     
-    var `type`: updateValue = js.native
+    var `type`: updateValue
     
-    var value: StoreValue = js.native
+    var value: StoreValue
   }
   object UpdateAction {
     
     @scala.inline
-    def apply(namePath: InternalNamePath, `type`: updateValue, value: StoreValue): UpdateAction = {
+    def apply(namePath: InternalNamePath, value: StoreValue): UpdateAction = {
       val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("updateValue")
       __obj.asInstanceOf[UpdateAction]
     }
     
@@ -187,21 +189,22 @@ object useFormMod {
     }
   }
   
-  @js.native
-  trait ValidateAction extends ReducerAction {
+  trait ValidateAction
+    extends StObject
+       with ReducerAction {
     
-    var namePath: InternalNamePath = js.native
+    var namePath: InternalNamePath
     
-    var triggerName: String = js.native
+    var triggerName: String
     
-    var `type`: validateField = js.native
+    var `type`: validateField
   }
   object ValidateAction {
     
     @scala.inline
-    def apply(namePath: InternalNamePath, triggerName: String, `type`: validateField): ValidateAction = {
+    def apply(namePath: InternalNamePath, triggerName: String): ValidateAction = {
       val __obj = js.Dynamic.literal(namePath = namePath.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("validateField")
       __obj.asInstanceOf[ValidateAction]
     }
     

@@ -2,15 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var row: Double = js.native
+  var row: Double
 }
 object Column {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Appointments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object AppointmentCalendarOtherAppWriteAccess extends StObject {
   
   /** Only the app that created the calendar can write to it. */
   @js.native
-  sealed trait none extends AppointmentCalendarOtherAppWriteAccess
+  sealed trait none
+    extends StObject
+       with AppointmentCalendarOtherAppWriteAccess
   
   /** The operating system can write to the calendar. */
   @js.native
-  sealed trait systemOnly extends AppointmentCalendarOtherAppWriteAccess
+  sealed trait systemOnly
+    extends StObject
+       with AppointmentCalendarOtherAppWriteAccess
 }

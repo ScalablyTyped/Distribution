@@ -4,37 +4,34 @@ import typings.std.RegExp
 import typings.storybookCsf.anon.Groups
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@storybook/csf", "isExportStory")
+  @JSImport("@storybook/csf", JSImport.Namespace)
   @js.native
-  def isExportStory(key: String, hasIncludeStoriesExcludeStories: IncludeExcludeOptions): Boolean | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/csf", "parseKind")
-  @js.native
-  def parseKind(kind: String, hasRootSeparatorGroupSeparator: SeparatorOptions): Groups = js.native
+  @scala.inline
+  def isExportStory(key: String, hasIncludeStoriesExcludeStories: IncludeExcludeOptions): Boolean | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("isExportStory")(key.asInstanceOf[js.Any], hasIncludeStoriesExcludeStories.asInstanceOf[js.Any])).asInstanceOf[Boolean | Null]
   
-  @JSImport("@storybook/csf", "sanitize")
-  @js.native
-  def sanitize(string: String): String = js.native
+  @scala.inline
+  def parseKind(kind: String, hasRootSeparatorGroupSeparator: SeparatorOptions): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKind")(kind.asInstanceOf[js.Any], hasRootSeparatorGroupSeparator.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
-  @JSImport("@storybook/csf", "storyNameFromExport")
-  @js.native
-  def storyNameFromExport(key: String): String = js.native
+  @scala.inline
+  def sanitize(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@storybook/csf", "toId")
-  @js.native
-  def toId(kind: String, name: String): String = js.native
+  @scala.inline
+  def storyNameFromExport(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("storyNameFromExport")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toId(kind: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toId")(kind.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait IncludeExcludeOptions extends StObject {
     
-    var excludeStories: js.UndefOr[StoryDescriptor] = js.native
+    var excludeStories: js.UndefOr[StoryDescriptor] = js.undefined
     
-    var includeStories: js.UndefOr[StoryDescriptor] = js.native
+    var includeStories: js.UndefOr[StoryDescriptor] = js.undefined
   }
   object IncludeExcludeOptions {
     
@@ -67,12 +64,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SeparatorOptions extends StObject {
     
-    var groupSeparator: String | RegExp = js.native
+    var groupSeparator: String | RegExp
     
-    var rootSeparator: String | RegExp = js.native
+    var rootSeparator: String | RegExp
   }
   object SeparatorOptions {
     

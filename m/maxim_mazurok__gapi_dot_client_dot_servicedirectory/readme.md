@@ -4,15 +4,15 @@
 Typings are for version 1.0.20201112
 
 ## Library description:
-TypeScript typings for Service Directory API v1beta1
+TypeScript typings for Service Directory API v1
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.servicedirectory |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 50 |
+| # downloads        | 918 |
 | # stars            | 0 |
 
 ## Links

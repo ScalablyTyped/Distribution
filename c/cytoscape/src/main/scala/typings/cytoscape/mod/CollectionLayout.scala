@@ -2,16 +2,14 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#collection/layout
   */
-@js.native
 trait CollectionLayout extends StObject {
   
-  def createLayout(options: LayoutOptions): Layouts = js.native
+  def createLayout(options: LayoutOptions): Layouts
   
   /**
     * Get a new layout, which can be used to algorithmically position the nodes in the collection.
@@ -23,9 +21,9 @@ trait CollectionLayout extends StObject {
     *
     * @param options The layout options.
     */
-  def layout(options: LayoutOptions): Layouts = js.native
+  def layout(options: LayoutOptions): Layouts
   
-  def makeLayout(options: LayoutOptions): Layouts = js.native
+  def makeLayout(options: LayoutOptions): Layouts
 }
 object CollectionLayout {
   

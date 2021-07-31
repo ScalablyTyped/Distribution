@@ -2,13 +2,11 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentsToolbarButtonEvent extends StObject {
   
-  var attachmentCardViews: js.Array[AttachmentCardView] = js.native
+  var attachmentCardViews: js.Array[AttachmentCardView]
 }
 object AttachmentsToolbarButtonEvent {
   

@@ -2,26 +2,24 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoRecover extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Excel.AutoRecover_typekey")
-  var ExcelDotAutoRecover_typekey: AutoRecover = js.native
+  var ExcelDotAutoRecover_typekey: AutoRecover
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Path: String = js.native
+  var Path: String
   
-  var Time: Double = js.native
+  var Time: Double
 }
 object AutoRecover {
   

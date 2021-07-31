@@ -22,7 +22,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -30,21 +29,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This service extends the service {@link com.sun.star.style.PageStyle} with spreadsheet specific properties.
   */
-@js.native
-trait TablePageStyle extends PageStyle {
+trait TablePageStyle
+  extends StObject
+     with PageStyle {
   
   /** determines whether the table is centered horizontally on the page. */
-  var CenterHorizontally: Boolean = js.native
+  var CenterHorizontally: Boolean
   
   /** determines whether the table is centered vertically on the page. */
-  var CenterVertically: Boolean = js.native
+  var CenterVertically: Boolean
   
   /**
     * contains the page number applied to the first page for this sheet.
     *
     * The value 0 indicates that the page numbers are continued from the previous sheet.
     */
-  var FirstPageNumber: Double = js.native
+  var FirstPageNumber: Double
   
   /**
     * contains the content of the footer for left pages.
@@ -52,7 +52,7 @@ trait TablePageStyle extends PageStyle {
     * After changing the footer text contents, this property has to be reinserted into the property set.
     * @see com.sun.star.sheet.HeaderFooterContent
     */
-  var LeftPageFooterContent: XHeaderFooterContent = js.native
+  var LeftPageFooterContent: XHeaderFooterContent
   
   /**
     * contains the content of the header for left pages.
@@ -60,16 +60,16 @@ trait TablePageStyle extends PageStyle {
     * After changing the header text contents, this property has to be reinserted into the property set.
     * @see com.sun.star.sheet.HeaderFooterContent
     */
-  var LeftPageHeaderContent: XHeaderFooterContent = js.native
+  var LeftPageHeaderContent: XHeaderFooterContent
   
   /** contains the scaling factor (in percent) for printing the sheet. */
-  var PageScale: Double = js.native
+  var PageScale: Double
   
   /** enables printing of cell annotations. */
-  var PrintAnnotations: Boolean = js.native
+  var PrintAnnotations: Boolean
   
   /** enables printing of charts. */
-  var PrintCharts: Boolean = js.native
+  var PrintCharts: Boolean
   
   /**
     * specifies the print order for the pages within each sheet.
@@ -77,25 +77,25 @@ trait TablePageStyle extends PageStyle {
     * If `TRUE` , the order for printing pages begins with top-to-bottom, then continues with the next set of cell columns to the right. If `FALSE` , the
     * order for printing pages begins with left-to-right, then continues with the next set of cell rows to the bottom.
     */
-  var PrintDownFirst: Boolean = js.native
+  var PrintDownFirst: Boolean
   
   /** enables printing of drawing objects. */
-  var PrintDrawing: Boolean = js.native
+  var PrintDrawing: Boolean
   
   /** enables printing of formulas instead of their results. */
-  var PrintFormulas: Boolean = js.native
+  var PrintFormulas: Boolean
   
   /** enables printing of the cell grid. */
-  var PrintGrid: Boolean = js.native
+  var PrintGrid: Boolean
   
   /** enables printing of column and row headers. */
-  var PrintHeaders: Boolean = js.native
+  var PrintHeaders: Boolean
   
   /** enables printing of embedded objects. */
-  var PrintObjects: Boolean = js.native
+  var PrintObjects: Boolean
   
   /** enables printing of zero-values. */
-  var PrintZeroValues: Boolean = js.native
+  var PrintZeroValues: Boolean
   
   /**
     * contains the content of the footer for right pages.
@@ -103,7 +103,7 @@ trait TablePageStyle extends PageStyle {
     * After changing the footer text contents, this property has to be reinserted into the property set.
     * @see com.sun.star.sheet.HeaderFooterContent
     */
-  var RightPageFooterContent: XHeaderFooterContent = js.native
+  var RightPageFooterContent: XHeaderFooterContent
   
   /**
     * contains the content of the header for right pages.
@@ -111,22 +111,29 @@ trait TablePageStyle extends PageStyle {
     * After changing the header text contents, this property has to be reinserted into the property set.
     * @see com.sun.star.sheet.HeaderFooterContent
     */
-  var RightPageHeaderContent: XHeaderFooterContent = js.native
+  var RightPageHeaderContent: XHeaderFooterContent
   
   /** contains the number of pages the sheet will printed. */
-  var ScaleToPages: Double = js.native
+  var ScaleToPages: Double
   
   /**
     * contains the number of horizontal pages the sheet will printed on.
     * @since OOo 2.0
     */
-  var ScaleToPagesX: Double = js.native
+  var ScaleToPagesX: Double
   
   /**
     * contains the number of vertical pages the sheet will printed on.
     * @since OOo 2.0
     */
-  var ScaleToPagesY: Double = js.native
+  var ScaleToPagesY: Double
+  
+  /**
+    * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+    * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+    */
+  /* InferMemberOverrides */
+  override def getPropertySetInfo(): XPropertySetInfo
 }
 object TablePageStyle {
   
@@ -269,11 +276,11 @@ object TablePageStyle {
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getName: () => String,
     getParentStyle: () => String,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],
     getPropertyValue: String => js.Any,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     isInUse: () => Boolean,
     isUserDefined: () => Boolean,
     queryInterface: `type` => js.Any,
@@ -286,7 +293,7 @@ object TablePageStyle {
     setParentStyle: String => Unit,
     setPropertiesToDefault: SeqEquiv[String] => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): TablePageStyle = {
     val __obj = js.Dynamic.literal(BackColor = BackColor.asInstanceOf[js.Any], BackGraphicFilter = BackGraphicFilter.asInstanceOf[js.Any], BackGraphicLocation = BackGraphicLocation.asInstanceOf[js.Any], BackGraphicURL = BackGraphicURL.asInstanceOf[js.Any], BackTransparent = BackTransparent.asInstanceOf[js.Any], BorderDistance = BorderDistance.asInstanceOf[js.Any], BottomBorder = BottomBorder.asInstanceOf[js.Any], BottomBorderDistance = BottomBorderDistance.asInstanceOf[js.Any], BottomMargin = BottomMargin.asInstanceOf[js.Any], CenterHorizontally = CenterHorizontally.asInstanceOf[js.Any], CenterVertically = CenterVertically.asInstanceOf[js.Any], DisplayName = DisplayName.asInstanceOf[js.Any], FirstIsShared = FirstIsShared.asInstanceOf[js.Any], FirstPageNumber = FirstPageNumber.asInstanceOf[js.Any], FollowStyle = FollowStyle.asInstanceOf[js.Any], FooterBackColor = FooterBackColor.asInstanceOf[js.Any], FooterBackGraphicFilter = FooterBackGraphicFilter.asInstanceOf[js.Any], FooterBackGraphicLocation = FooterBackGraphicLocation.asInstanceOf[js.Any], FooterBackGraphicURL = FooterBackGraphicURL.asInstanceOf[js.Any], FooterBackTransparent = FooterBackTransparent.asInstanceOf[js.Any], FooterBodyDistance = FooterBodyDistance.asInstanceOf[js.Any], FooterBorderDistance = FooterBorderDistance.asInstanceOf[js.Any], FooterBottomBorder = FooterBottomBorder.asInstanceOf[js.Any], FooterBottomBorderDistance = FooterBottomBorderDistance.asInstanceOf[js.Any], FooterDynamicSpacing = FooterDynamicSpacing.asInstanceOf[js.Any], FooterHeight = FooterHeight.asInstanceOf[js.Any], FooterIsDynamicHeight = FooterIsDynamicHeight.asInstanceOf[js.Any], FooterIsOn = FooterIsOn.asInstanceOf[js.Any], FooterIsShared = FooterIsShared.asInstanceOf[js.Any], FooterLeftBorder = FooterLeftBorder.asInstanceOf[js.Any], FooterLeftBorderDistance = FooterLeftBorderDistance.asInstanceOf[js.Any], FooterLeftMargin = FooterLeftMargin.asInstanceOf[js.Any], FooterRightBorder = FooterRightBorder.asInstanceOf[js.Any], FooterRightBorderDistance = FooterRightBorderDistance.asInstanceOf[js.Any], FooterRightMargin = FooterRightMargin.asInstanceOf[js.Any], FooterShadowFormat = FooterShadowFormat.asInstanceOf[js.Any], FooterText = FooterText.asInstanceOf[js.Any], FooterTextLeft = FooterTextLeft.asInstanceOf[js.Any], FooterTextRight = FooterTextRight.asInstanceOf[js.Any], FooterTopBorder = FooterTopBorder.asInstanceOf[js.Any], FooterTopBorderDistance = FooterTopBorderDistance.asInstanceOf[js.Any], FootnoteHeight = FootnoteHeight.asInstanceOf[js.Any], FootnoteLineAdjust = FootnoteLineAdjust.asInstanceOf[js.Any], FootnoteLineColor = FootnoteLineColor.asInstanceOf[js.Any], FootnoteLineDistance = FootnoteLineDistance.asInstanceOf[js.Any], FootnoteLineRelativeWidth = FootnoteLineRelativeWidth.asInstanceOf[js.Any], FootnoteLineStyle = FootnoteLineStyle.asInstanceOf[js.Any], FootnoteLineTextDistance = FootnoteLineTextDistance.asInstanceOf[js.Any], FootnoteLineWeight = FootnoteLineWeight.asInstanceOf[js.Any], GridBaseHeight = GridBaseHeight.asInstanceOf[js.Any], GridColor = GridColor.asInstanceOf[js.Any], GridDisplay = GridDisplay.asInstanceOf[js.Any], GridLines = GridLines.asInstanceOf[js.Any], GridMode = GridMode.asInstanceOf[js.Any], GridPrint = GridPrint.asInstanceOf[js.Any], GridRubyBelow = GridRubyBelow.asInstanceOf[js.Any], GridRubyHeight = GridRubyHeight.asInstanceOf[js.Any], HeaderBackColor = HeaderBackColor.asInstanceOf[js.Any], HeaderBackGraphicFilter = HeaderBackGraphicFilter.asInstanceOf[js.Any], HeaderBackGraphicLocation = HeaderBackGraphicLocation.asInstanceOf[js.Any], HeaderBackGraphicURL = HeaderBackGraphicURL.asInstanceOf[js.Any], HeaderBackTransparent = HeaderBackTransparent.asInstanceOf[js.Any], HeaderBodyDistance = HeaderBodyDistance.asInstanceOf[js.Any], HeaderBorderDistance = HeaderBorderDistance.asInstanceOf[js.Any], HeaderBottomBorder = HeaderBottomBorder.asInstanceOf[js.Any], HeaderBottomBorderDistance = HeaderBottomBorderDistance.asInstanceOf[js.Any], HeaderDynamicSpacing = HeaderDynamicSpacing.asInstanceOf[js.Any], HeaderHeight = HeaderHeight.asInstanceOf[js.Any], HeaderIsDynamicHeight = HeaderIsDynamicHeight.asInstanceOf[js.Any], HeaderIsOn = HeaderIsOn.asInstanceOf[js.Any], HeaderIsShared = HeaderIsShared.asInstanceOf[js.Any], HeaderLeftBorder = HeaderLeftBorder.asInstanceOf[js.Any], HeaderLeftBorderDistance = HeaderLeftBorderDistance.asInstanceOf[js.Any], HeaderLeftMargin = HeaderLeftMargin.asInstanceOf[js.Any], HeaderRightBorder = HeaderRightBorder.asInstanceOf[js.Any], HeaderRightBorderDistance = HeaderRightBorderDistance.asInstanceOf[js.Any], HeaderRightMargin = HeaderRightMargin.asInstanceOf[js.Any], HeaderShadowFormat = HeaderShadowFormat.asInstanceOf[js.Any], HeaderText = HeaderText.asInstanceOf[js.Any], HeaderTextLeft = HeaderTextLeft.asInstanceOf[js.Any], HeaderTextRight = HeaderTextRight.asInstanceOf[js.Any], HeaderTopBorder = HeaderTopBorder.asInstanceOf[js.Any], HeaderTopBorderDistance = HeaderTopBorderDistance.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], Hidden = Hidden.asInstanceOf[js.Any], IsAutoUpdate = IsAutoUpdate.asInstanceOf[js.Any], IsLandscape = IsLandscape.asInstanceOf[js.Any], IsPhysical = IsPhysical.asInstanceOf[js.Any], LeftBorder = LeftBorder.asInstanceOf[js.Any], LeftBorderDistance = LeftBorderDistance.asInstanceOf[js.Any], LeftMargin = LeftMargin.asInstanceOf[js.Any], LeftPageFooterContent = LeftPageFooterContent.asInstanceOf[js.Any], LeftPageHeaderContent = LeftPageHeaderContent.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], NumberingType = NumberingType.asInstanceOf[js.Any], PageScale = PageScale.asInstanceOf[js.Any], PageStyleLayout = PageStyleLayout.asInstanceOf[js.Any], ParaStyleConditions = ParaStyleConditions.asInstanceOf[js.Any], ParentStyle = ParentStyle.asInstanceOf[js.Any], PrintAnnotations = PrintAnnotations.asInstanceOf[js.Any], PrintCharts = PrintCharts.asInstanceOf[js.Any], PrintDownFirst = PrintDownFirst.asInstanceOf[js.Any], PrintDrawing = PrintDrawing.asInstanceOf[js.Any], PrintFormulas = PrintFormulas.asInstanceOf[js.Any], PrintGrid = PrintGrid.asInstanceOf[js.Any], PrintHeaders = PrintHeaders.asInstanceOf[js.Any], PrintObjects = PrintObjects.asInstanceOf[js.Any], PrintZeroValues = PrintZeroValues.asInstanceOf[js.Any], PrinterPaperTray = PrinterPaperTray.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RegisterModeActive = RegisterModeActive.asInstanceOf[js.Any], RegisterParagraphStyle = RegisterParagraphStyle.asInstanceOf[js.Any], RightBorder = RightBorder.asInstanceOf[js.Any], RightBorderDistance = RightBorderDistance.asInstanceOf[js.Any], RightMargin = RightMargin.asInstanceOf[js.Any], RightPageFooterContent = RightPageFooterContent.asInstanceOf[js.Any], RightPageHeaderContent = RightPageHeaderContent.asInstanceOf[js.Any], ScaleToPages = ScaleToPages.asInstanceOf[js.Any], ScaleToPagesX = ScaleToPagesX.asInstanceOf[js.Any], ScaleToPagesY = ScaleToPagesY.asInstanceOf[js.Any], ShadowFormat = ShadowFormat.asInstanceOf[js.Any], Size = Size.asInstanceOf[js.Any], StyleInteropGrabBag = StyleInteropGrabBag.asInstanceOf[js.Any], TextColumns = TextColumns.asInstanceOf[js.Any], TopBorder = TopBorder.asInstanceOf[js.Any], TopBorderDistance = TopBorderDistance.asInstanceOf[js.Any], TopMargin = TopMargin.asInstanceOf[js.Any], UserDefinedAttributes = UserDefinedAttributes.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], WritingMode = WritingMode.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getName = js.Any.fromFunction0(getName), getParentStyle = js.Any.fromFunction0(getParentStyle), getPropertyDefaults = js.Any.fromFunction1(getPropertyDefaults), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyStates = js.Any.fromFunction1(getPropertyStates), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), isInUse = js.Any.fromFunction0(isInUse), isUserDefined = js.Any.fromFunction0(isUserDefined), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setAllPropertiesToDefault = js.Any.fromFunction0(setAllPropertiesToDefault), setName = js.Any.fromFunction1(setName), setParentStyle = js.Any.fromFunction1(setParentStyle), setPropertiesToDefault = js.Any.fromFunction1(setPropertiesToDefault), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[TablePageStyle]
@@ -303,6 +310,9 @@ object TablePageStyle {
     
     @scala.inline
     def setFirstPageNumber(value: Double): Self = StObject.set(x, "FirstPageNumber", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
     def setLeftPageFooterContent(value: XHeaderFooterContent): Self = StObject.set(x, "LeftPageFooterContent", value.asInstanceOf[js.Any])

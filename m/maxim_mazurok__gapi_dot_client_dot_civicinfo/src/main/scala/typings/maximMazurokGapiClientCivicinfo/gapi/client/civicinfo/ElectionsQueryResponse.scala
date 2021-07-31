@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElectionsQueryResponse extends StObject {
   
   /** A list of available elections */
-  var elections: js.UndefOr[js.Array[Election]] = js.native
+  var elections: js.UndefOr[js.Array[Election]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "civicinfo#electionsQueryResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ElectionsQueryResponse {
   

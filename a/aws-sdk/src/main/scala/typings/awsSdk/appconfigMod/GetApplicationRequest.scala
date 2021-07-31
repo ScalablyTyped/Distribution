@@ -2,16 +2,14 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApplicationRequest extends StObject {
   
   /**
     * The ID of the application you want to get.
     */
-  var ApplicationId: Id = js.native
+  var ApplicationId: Id
 }
 object GetApplicationRequest {
   

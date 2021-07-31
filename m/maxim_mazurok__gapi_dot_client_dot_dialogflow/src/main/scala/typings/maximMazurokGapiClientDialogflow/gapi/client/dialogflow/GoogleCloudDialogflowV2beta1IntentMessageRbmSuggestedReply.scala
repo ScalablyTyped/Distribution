@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply extends StObject {
   
   /**
     * Opaque payload that the Dialogflow receives in a user event when the user taps the suggested reply. This data will be also forwarded to webhook to allow performing custom business
     * logic.
     */
-  var postbackData: js.UndefOr[String] = js.native
+  var postbackData: js.UndefOr[String] = js.undefined
   
   /** Suggested reply text. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmSuggestedReply {
   

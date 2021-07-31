@@ -2,31 +2,29 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPublishOptions extends StObject {
   
-  var acknowledge: js.UndefOr[Boolean] = js.native
+  var acknowledge: js.UndefOr[Boolean] = js.undefined
   
-  var disclose_me: js.UndefOr[Boolean] = js.native
+  var disclose_me: js.UndefOr[Boolean] = js.undefined
   
-  var eligible: js.UndefOr[js.Array[Double]] = js.native
+  var eligible: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var eligible_authid: js.UndefOr[js.Array[String]] = js.native
+  var eligible_authid: js.UndefOr[js.Array[String]] = js.undefined
   
-  var eligible_authrole: js.UndefOr[js.Array[String]] = js.native
+  var eligible_authrole: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exclude: js.UndefOr[js.Array[Double]] = js.native
+  var exclude: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var exclude_authid: js.UndefOr[js.Array[String]] = js.native
+  var exclude_authid: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exclude_authrole: js.UndefOr[js.Array[String]] = js.native
+  var exclude_authrole: js.UndefOr[js.Array[String]] = js.undefined
   
-  var exclude_me: js.UndefOr[Boolean] = js.native
+  var exclude_me: js.UndefOr[Boolean] = js.undefined
   
-  var retain: js.UndefOr[Boolean] = js.native
+  var retain: js.UndefOr[Boolean] = js.undefined
 }
 object IPublishOptions {
   

@@ -2,33 +2,33 @@ package typings.wnumb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("wnumb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create a wNumb
     */
-  @JSImport("wnumb", JSImport.Default)
-  @js.native
-  def default(): Instance = js.native
-  @JSImport("wnumb", JSImport.Default)
-  @js.native
-  def default(options: Options): Instance = js.native
+  @scala.inline
+  def default(): Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Instance]
+  @scala.inline
+  def default(options: Options): Instance = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Instance]
   
-  @js.native
   trait Instance extends StObject {
     
     /**
       * get number from formatted string
       */
-    def from(`val`: String): Double = js.native
+    def from(`val`: String): Double
     
     /**
       * format to string
       */
-    def to(`val`: Double): String = js.native
+    def to(`val`: Double): String
   }
   object Instance {
     
@@ -49,11 +49,10 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** The number of decimals to include in the result. Limited to 7. */
-    var decimals: js.UndefOr[Double] = js.native
+    var decimals: js.UndefOr[Double] = js.undefined
     
     /**
       * Reverse the operations set in encoder.
@@ -62,12 +61,12 @@ object mod {
       *   return value / 1.32;
       * }
       */
-    var decoder: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var decoder: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
     
     /**
       * Similar to encoder, but applied after all other formatting options are applied.
       */
-    var edit: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var edit: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
     
     /**
       * This is a powerful option to manually modify the slider output.
@@ -76,44 +75,44 @@ object mod {
       *  return value * 1.32;
       * }
       */
-    var encoder: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var encoder: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
     
     /**
       * The decimal separator.
       * Defaults to '.' if thousand isn't already set to '.'.
       */
-    var mark: js.UndefOr[String] = js.native
+    var mark: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for negative values. Defaults to '-' if negativeBefore isn't set.
       */
-    var negative: js.UndefOr[String] = js.native
+    var negative: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix for a negative number. Inserted before prefix.
       */
-    var negativeBefore: js.UndefOr[String] = js.native
+    var negativeBefore: js.UndefOr[String] = js.undefined
     
     /**
       * A string to prepend to the number. Use cases include prefixing with money symbols such as '$' or '€'.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * A number to append to a number. For example: ',-'.
       */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
     
     /**
       * Separator for large numbers. For example: ' ' would result in a formatted number of 1 000 000.
       */
-    var thousand: js.UndefOr[String] = js.native
+    var thousand: js.UndefOr[String] = js.undefined
     
     /**
       * Similar to decoder and the reverse for edit.
       * Applied before all other formatting options are applied.
       */
-    var undo: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var undo: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
   }
   object Options {
     

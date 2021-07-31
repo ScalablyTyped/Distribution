@@ -2,19 +2,17 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance restore backup request.
   */
-@js.native
 trait SchemaInstancesRestoreBackupRequest extends StObject {
   
   /**
     * Parameters required to perform the restore backup operation.
     */
-  var restoreBackupContext: js.UndefOr[SchemaRestoreBackupContext] = js.native
+  var restoreBackupContext: js.UndefOr[SchemaRestoreBackupContext] = js.undefined
 }
 object SchemaInstancesRestoreBackupRequest {
   

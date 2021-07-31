@@ -9,7 +9,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -60,22 +59,21 @@ object mod {
     def y: typings.reactResizable.reactResizableStrings.y = "y".asInstanceOf[typings.reactResizable.reactResizableStrings.y]
   }
   
-  @js.native
   trait DragCallbackData extends StObject {
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var lastX: Double = js.native
+    var lastX: Double
     
-    var lastY: Double = js.native
+    var lastY: Double
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object DragCallbackData {
     
@@ -121,12 +119,11 @@ object mod {
   
   type ResizableBoxProps = ResizableProps
   
-  @js.native
   trait ResizableBoxState extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResizableBoxState {
     
@@ -147,42 +144,41 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizableProps extends StObject {
     
-    var axis: js.UndefOr[Axis] = js.native
+    var axis: js.UndefOr[Axis] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var draggableOpts: js.UndefOr[js.Any] = js.native
+    var draggableOpts: js.UndefOr[js.Any] = js.undefined
     
-    var handle: js.UndefOr[ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])] = js.native
+    var handle: js.UndefOr[ReactNode | (js.Function1[/* resizeHandle */ ResizeHandle, ReactNode])] = js.undefined
     
-    var handleSize: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var handleSize: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var lockAspectRatio: js.UndefOr[Boolean] = js.native
+    var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var maxConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var minConstraints: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     var onResize: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, _]
-      ] = js.native
+        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
+      ] = js.undefined
     
     var onResizeStart: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, _]
-      ] = js.native
+        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
+      ] = js.undefined
     
     var onResizeStop: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, _]
-      ] = js.native
+        js.Function2[/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData, js.Any]
+      ] = js.undefined
     
-    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.native
+    var resizeHandles: js.UndefOr[js.Array[ResizeHandle]] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResizableProps {
     
@@ -250,16 +246,16 @@ object mod {
       def setMinConstraintsUndefined: Self = StObject.set(x, "minConstraints", js.undefined)
       
       @scala.inline
-      def setOnResize(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
+      def setOnResize(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setOnResizeStart(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction2(value))
+      def setOnResizeStart(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResizeStart", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnResizeStartUndefined: Self = StObject.set(x, "onResizeStart", js.undefined)
       
       @scala.inline
-      def setOnResizeStop(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => _): Self = StObject.set(x, "onResizeStop", js.Any.fromFunction2(value))
+      def setOnResizeStop(value: (/* e */ SyntheticEvent[Element, Event], /* data */ ResizeCallbackData) => js.Any): Self = StObject.set(x, "onResizeStop", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnResizeStopUndefined: Self = StObject.set(x, "onResizeStop", js.undefined)
@@ -281,18 +277,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizableState extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var resizing: Boolean = js.native
+    var resizing: Boolean
     
-    var slackH: Double = js.native
+    var slackH: Double
     
-    var slackW: Double = js.native
+    var slackW: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResizableState {
     
@@ -322,14 +317,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ResizeCallbackData extends StObject {
     
-    var handle: ResizeHandle = js.native
+    var handle: ResizeHandle
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var size: Height = js.native
+    var size: Height
   }
   object ResizeCallbackData {
     

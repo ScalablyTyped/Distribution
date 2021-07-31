@@ -2,7 +2,6 @@ package typings.webgme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Based on examination of
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // Documentation: https://editor.webgme.org/docs/source/index.html
 // https://github.com/webgme/webgme/tree/master/config
 object webgmeMod {
+  
+  @JSImport("webgme", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webgme", "Standalone")
   @js.native
@@ -22,11 +25,9 @@ object webgmeMod {
     def stop(): Unit = js.native
   }
   
-  @JSImport("webgme", "addToRequireJsPaths")
-  @js.native
-  def addToRequireJsPaths(config: js.Any): Unit = js.native
+  @scala.inline
+  def addToRequireJsPaths(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addToRequireJsPaths")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("webgme", "standaloneServer")
-  @js.native
-  def standaloneServer(config: js.Any): Unit = js.native
+  @scala.inline
+  def standaloneServer(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("standaloneServer")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

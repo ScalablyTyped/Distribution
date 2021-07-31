@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Device {
@@ -223,6 +222,10 @@ object Device {
   
   object media {
     
+    @JSGlobal("sap.ui.Device.media")
+    @js.native
+    val ^ : js.Any = js.native
+    
     object RANGESETS {
       
       @JSGlobal("sap.ui.Device.media.RANGESETS")
@@ -341,9 +344,8 @@ object Device {
       *              ({@link sap.ui.Device.media.html#initRangeSet}). If no name is provided, the           
       *      {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
       */
-    @JSGlobal("sap.ui.Device.media.attachHandler")
-    @js.native
-    def attachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = js.native
+    @scala.inline
+    def attachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a previously attached event handler from the change events of the screen width.The passed
@@ -353,9 +355,8 @@ object Device {
       * @param sName The name of the range set to listen to. If no name is provided, the                 
       * {@link sap.ui.Device.media.RANGESETS.SAP_STANDARD default range set} is used.
       */
-    @JSGlobal("sap.ui.Device.media.detachHandler")
-    @js.native
-    def detachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = js.native
+    @scala.inline
+    def detachHandler(fnFunction: js.Any, oListener: js.Any, sName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any], sName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Returns information about the current active range of the range set with the given name.
@@ -364,18 +365,16 @@ object Device {
       * @returns Information about the current active interval of the range set. The returned map has the
       * same structure as the argument of the event handlers ({link sap.ui.Device.media#attachHandler})
       */
-    @JSGlobal("sap.ui.Device.media.getCurrentRange")
-    @js.native
-    def getCurrentRange(sName: String): js.Any = js.native
+    @scala.inline
+    def getCurrentRange(sName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentRange")(sName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Returns <code>true</code> if a range set with the given name is already initialized.
       * @param sName The name of the range set.
       * @returns Returns <code>true</code> if a range set with the given name is already initialized
       */
-    @JSGlobal("sap.ui.Device.media.hasRangeSet")
-    @js.native
-    def hasRangeSet(sName: String): Boolean = js.native
+    @scala.inline
+    def hasRangeSet(sName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Initializes a screen width media query range set.This initialization step makes the range set ready
@@ -407,117 +406,62 @@ object Device {
       * @param bSuppressClasses Whether or not writing of CSS classes to the document root should be
       * suppressed when            <code>aRangeNames</code> are provided
       */
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(sName: String): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.UndefOr[scala.Nothing],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.Array[String]
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.Array[String],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(sName: String, aRangeBorders: js.UndefOr[scala.Nothing], sUnit: String): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: String,
-      aRangeNames: js.UndefOr[scala.Nothing],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: String,
-      aRangeNames: js.Array[String]
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: js.UndefOr[scala.Nothing],
-      sUnit: String,
-      aRangeNames: js.Array[String],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(sName: String, aRangeBorders: Double): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: Double,
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.UndefOr[scala.Nothing],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: Double,
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.Array[String]
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: Double,
-      sUnit: js.UndefOr[scala.Nothing],
-      aRangeNames: js.Array[String],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(
-      sName: String,
-      aRangeBorders: Double,
-      sUnit: String,
-      aRangeNames: js.UndefOr[scala.Nothing],
-      bSuppressClasses: Boolean
-    ): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
-    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String, aRangeNames: js.Array[String]): Unit = js.native
-    @JSGlobal("sap.ui.Device.media.initRangeSet")
-    @js.native
+    @scala.inline
+    def initRangeSet(sName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String, aRangeNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def initRangeSet(
       sName: String,
       aRangeBorders: Double,
       sUnit: String,
       aRangeNames: js.Array[String],
       bSuppressClasses: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: String, aRangeNames: Unit, bSuppressClasses: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: Unit, aRangeNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Double,
+      sUnit: Unit,
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Double, sUnit: Unit, aRangeNames: Unit, bSuppressClasses: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Unit, sUnit: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Unit, sUnit: String, aRangeNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Unit,
+      sUnit: String,
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Unit, sUnit: String, aRangeNames: Unit, bSuppressClasses: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Unit, sUnit: Unit, aRangeNames: js.Array[String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(
+      sName: String,
+      aRangeBorders: Unit,
+      sUnit: Unit,
+      aRangeNames: js.Array[String],
+      bSuppressClasses: Boolean
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def initRangeSet(sName: String, aRangeBorders: Unit, sUnit: Unit, aRangeNames: Unit, bSuppressClasses: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("initRangeSet")(sName.asInstanceOf[js.Any], aRangeBorders.asInstanceOf[js.Any], sUnit.asInstanceOf[js.Any], aRangeNames.asInstanceOf[js.Any], bSuppressClasses.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a previously initialized range set and detaches all registered handlers.Only custom range
@@ -525,9 +469,8 @@ object Device {
       * sap.ui.Device.media#RANGESETS}) cannot be removed.
       * @param sName The name of the range set which should be removed.
       */
-    @JSGlobal("sap.ui.Device.media.removeRangeSet")
-    @js.native
-    def removeRangeSet(sName: String): Unit = js.native
+    @scala.inline
+    def removeRangeSet(sName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRangeSet")(sName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object orientation {
@@ -551,12 +494,10 @@ object Device {
       * context within the                       handler function). If it is not specified, the handler
       * function is called in the context of the <code>window</code>.
       */
-    @JSGlobal("sap.ui.Device.orientation.attachHandler")
-    @js.native
-    def attachHandler(fnFunction: js.Any): Unit = js.native
-    @JSGlobal("sap.ui.Device.orientation.attachHandler")
-    @js.native
-    def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    @scala.inline
+    def attachHandler(fnFunction: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a previously attached event handler from the orientation change events.The passed parameters
@@ -564,12 +505,10 @@ object Device {
       * @param fnFunction The handler function to detach from the event
       * @param oListener The object that wanted to be notified when the event occurred
       */
-    @JSGlobal("sap.ui.Device.orientation.detachHandler")
-    @js.native
-    def detachHandler(fnFunction: js.Any): Unit = js.native
-    @JSGlobal("sap.ui.Device.orientation.detachHandler")
-    @js.native
-    def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    @scala.inline
+    def detachHandler(fnFunction: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * If this flag is set to <code>true</code>, the screen is currently in landscape mode (the width is
@@ -784,12 +723,10 @@ object Device {
       * context within the                       handler function). If it is not specified, the handler
       * function is called in the context of the <code>window</code>.
       */
-    @JSGlobal("sap.ui.Device.resize.attachHandler")
-    @js.native
-    def attachHandler(fnFunction: js.Any): Unit = js.native
-    @JSGlobal("sap.ui.Device.resize.attachHandler")
-    @js.native
-    def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    @scala.inline
+    def attachHandler(fnFunction: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def attachHandler(fnFunction: js.Any, oListener: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a previously attached event handler from the resize events.The passed parameters must match
@@ -797,12 +734,10 @@ object Device {
       * @param fnFunction The handler function to detach from the event
       * @param oListener The object that wanted to be notified when the event occurred
       */
-    @JSGlobal("sap.ui.Device.resize.detachHandler")
-    @js.native
-    def detachHandler(fnFunction: js.Any): Unit = js.native
-    @JSGlobal("sap.ui.Device.resize.detachHandler")
-    @js.native
-    def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = js.native
+    @scala.inline
+    def detachHandler(fnFunction: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def detachHandler(fnFunction: js.Any, oListener: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("detachHandler")(fnFunction.asInstanceOf[js.Any], oListener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * The current height of the document's window in pixels.

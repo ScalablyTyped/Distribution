@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiskMoveRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait DiskMoveRequest extends StObject {
     * - projects/project/zones/zone
     * - zones/zone
     */
-  var destinationZone: js.UndefOr[String] = js.native
+  var destinationZone: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the target disk to move. This can be a full or partial URL. For example, the following are all valid URLs to a disk:
@@ -22,7 +20,7 @@ trait DiskMoveRequest extends StObject {
     * - projects/project/zones/zone/disks/disk
     * - zones/zone/disks/disk
     */
-  var targetDisk: js.UndefOr[String] = js.native
+  var targetDisk: js.UndefOr[String] = js.undefined
 }
 object DiskMoveRequest {
   

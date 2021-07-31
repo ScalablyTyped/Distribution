@@ -8,7 +8,6 @@ import typings.officeJsPreview.Word.Interfaces.CustomXmlPartScopedCollectionData
 import typings.officeJsPreview.Word.Interfaces.CustomXmlPartScopedCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @beta
   */
 @js.native
-trait CustomXmlPartScopedCollection extends ClientObject {
+trait CustomXmlPartScopedCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -78,7 +79,7 @@ trait CustomXmlPartScopedCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): CustomXmlPartScopedCollection = js.native
-  def load(options: CustomXmlPartScopedCollectionLoadOptions with CollectionLoadOptions): CustomXmlPartScopedCollection = js.native
+  def load(options: CustomXmlPartScopedCollectionLoadOptions & CollectionLoadOptions): CustomXmlPartScopedCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): CustomXmlPartScopedCollection = js.native
   def load(propertyNames: String): CustomXmlPartScopedCollection = js.native
   def load(propertyNames: js.Array[String]): CustomXmlPartScopedCollection = js.native

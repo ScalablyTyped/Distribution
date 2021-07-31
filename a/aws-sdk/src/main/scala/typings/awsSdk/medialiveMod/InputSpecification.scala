@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputSpecification extends StObject {
   
   /**
     * Input codec
     */
-  var Codec: js.UndefOr[InputCodec] = js.native
+  var Codec: js.UndefOr[InputCodec] = js.undefined
   
   /**
     * Maximum input bitrate, categorized coarsely
     */
-  var MaximumBitrate: js.UndefOr[InputMaximumBitrate] = js.native
+  var MaximumBitrate: js.UndefOr[InputMaximumBitrate] = js.undefined
   
   /**
     * Input resolution, categorized coarsely
     */
-  var Resolution: js.UndefOr[InputResolution] = js.native
+  var Resolution: js.UndefOr[InputResolution] = js.undefined
 }
 object InputSpecification {
   

@@ -1,13 +1,13 @@
 package typings.esfxAsyncCanceltoken
 
 import typings.esfxCancelable.distMod.CancelSignal
+import typings.esfxCancelable.distMod.CancelSubscription
 import typings.esfxCancelable.distMod.Cancelable
 import typings.esfxCancelable.distMod.CancelableSource
 import typings.esfxDisposable.distMod.Disposable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distMod {
@@ -21,19 +21,23 @@ object distMod {
   
   object CancelSubscription {
     
+    @JSImport("@esfx/async-canceltoken/dist", "CancelSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a `CancelSubscription` object for an `unsubscribe` callback.
       * @param unsubscribe The callback to execute when the `unsubscribe()` method is called.
       */
-    @JSImport("@esfx/async-canceltoken/dist", "CancelSubscription.create")
-    @js.native
-    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = js.native
+    @scala.inline
+    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
   }
   
   @JSImport("@esfx/async-canceltoken/dist", "CancelToken")
   @js.native
   class CancelToken protected ()
-    extends Cancelable
+    extends StObject
+       with Cancelable
        with CancelSignal {
     
     var _state: js.Any = js.native
@@ -44,6 +48,18 @@ object distMod {
     val canBeSignaled: Boolean = js.native
     
     /**
+      * Gets a value indicating whether cancellation was signaled.
+      */
+    /* CompleteClass */
+    override val signaled: Boolean = js.native
+    
+    /**
+      * Subscribes to notifications for when the object becomes signaled.
+      */
+    /* CompleteClass */
+    override def subscribe(onSignaled: js.Function0[Unit]): CancelSubscription = js.native
+    
+    /**
       * Throws a CancelError if the token was signaled.
       */
     def throwIfSignaled(): Unit = js.native
@@ -51,13 +67,16 @@ object distMod {
   /* static members */
   object CancelToken {
     
+    @JSImport("@esfx/async-canceltoken/dist", "CancelToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a CancelToken that becomes signaled when **all** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @JSImport("@esfx/async-canceltoken/dist", "CancelToken.all")
-    @js.native
-    def all(cancelables: Iterable[Cancelable]): CancelToken = js.native
+    @scala.inline
+    def all(cancelables: Iterable[Cancelable]): CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(cancelables.asInstanceOf[js.Any]).asInstanceOf[CancelToken]
     
     @JSImport("@esfx/async-canceltoken/dist", "CancelToken.canceled")
     @js.native
@@ -66,12 +85,10 @@ object distMod {
     /**
       * Gets a CancelToken from a cancelable.
       */
-    @JSImport("@esfx/async-canceltoken/dist", "CancelToken.from")
-    @js.native
-    def from(): CancelToken = js.native
-    @JSImport("@esfx/async-canceltoken/dist", "CancelToken.from")
-    @js.native
-    def from(cancelable: Cancelable): CancelToken = js.native
+    @scala.inline
+    def from(): CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[CancelToken]
+    @scala.inline
+    def from(cancelable: Cancelable): CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[CancelToken]
     
     @JSImport("@esfx/async-canceltoken/dist", "CancelToken.none")
     @js.native
@@ -81,21 +98,20 @@ object distMod {
       * Returns a CancelToken that becomes signaled when **any** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @JSImport("@esfx/async-canceltoken/dist", "CancelToken.race")
-    @js.native
-    def race(cancelables: Iterable[Cancelable]): CancelToken = js.native
+    @scala.inline
+    def race(cancelables: Iterable[Cancelable]): CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(cancelables.asInstanceOf[js.Any]).asInstanceOf[CancelToken]
     
     /**
       * Creates a new CancelSource.
       */
-    @JSImport("@esfx/async-canceltoken/dist", "CancelToken.source")
-    @js.native
-    def source(): CancelSource = js.native
+    @scala.inline
+    def source(): CancelSource = ^.asInstanceOf[js.Dynamic].applyDynamic("source")().asInstanceOf[CancelSource]
   }
   
   @js.native
   trait CancelSource
-    extends CancelableSource
+    extends StObject
+       with CancelableSource
        with Disposable {
     
     /**

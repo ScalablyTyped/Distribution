@@ -2,19 +2,17 @@ package typings.minappEnv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAPIParam[T] extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* val */ T | IAPIError, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* val */ T | IAPIError, Unit]] = js.undefined
   
-  var config: js.UndefOr[ICloudConfig] = js.native
+  var config: js.UndefOr[ICloudConfig] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* err */ IAPIError, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ IAPIError, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.undefined
 }
 object IAPIParam {
   
@@ -25,7 +23,7 @@ object IAPIParam {
   }
   
   @scala.inline
-  implicit class IAPIParamMutableBuilder[Self <: IAPIParam[_], T] (val x: Self with IAPIParam[T]) extends AnyVal {
+  implicit class IAPIParamMutableBuilder[Self <: IAPIParam[?], T] (val x: Self & IAPIParam[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: /* val */ T | IAPIError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobTemplatesResponse extends StObject {
   
   /**
     * List of Job templates.
     */
-  var JobTemplates: js.UndefOr[listOfJobTemplate] = js.native
+  var JobTemplates: js.UndefOr[listOfJobTemplate] = js.undefined
   
   /**
     * Use this string to request the next batch of job templates.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListJobTemplatesResponse {
   

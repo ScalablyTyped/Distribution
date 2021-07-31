@@ -2,20 +2,20 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanity {
   
-  @JSGlobal("KSR.sanity.sanity_check")
+  @JSGlobal("KSR.sanity")
   @js.native
-  def sanityCheck(mflags: Double, uflags: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.sanity.sanity_check_defaults")
-  @js.native
-  def sanityCheckDefaults(): Double = js.native
+  @scala.inline
+  def sanityCheck(mflags: Double, uflags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check")(mflags.asInstanceOf[js.Any], uflags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.sanity.sanity_reply")
-  @js.native
-  def sanityReply(): Double = js.native
+  @scala.inline
+  def sanityCheckDefaults(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_check_defaults")().asInstanceOf[Double]
+  
+  @scala.inline
+  def sanityReply(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sanity_reply")().asInstanceOf[Double]
 }

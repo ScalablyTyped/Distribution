@@ -24,7 +24,6 @@ import typings.plottable.plottableStrings.stepBefore
 import typings.plottable.xyPlotMod.XYPlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linePlotMod {
@@ -175,10 +174,10 @@ object linePlotMod {
       * @returns {Line<[number,number]>}
       * @private
       */
-    /* protected */ def _d3LineFactory(dataset: Dataset): Line_[_] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: js.UndefOr[scala.Nothing], yProjector: IAccessor[_]): Line_[_] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_]): Line_[_] = js.native
-    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[_], yProjector: IAccessor[_]): Line_[_] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset): Line_[js.Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: Unit, yProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
+    /* protected */ def _d3LineFactory(dataset: Dataset, xProjector: IAccessor[js.Any], yProjector: IAccessor[js.Any]): Line_[js.Any] = js.native
     
     var _downsamplingEnabled: js.Any = js.native
     

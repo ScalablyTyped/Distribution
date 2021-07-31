@@ -2,36 +2,34 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateChangedEventUIParam extends StObject {
   
   /**
     * Gets the name of the action. That can be one of the following: "open" - the dialog was opened. Note: the event is raised before a possible "openAnimation" started. "close" - the dialog was closed. Note: the event is raised before a possible "closeAnimation" started. "minimize" - the dialog was minimized. "maximize" - the dialog was maximized. "restore" - the dialog was restored from minimized or maximized state. "pin" - the dialog was pinned. "unpin" - the dialog was unpinned.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the name of the button, which triggered the event. Note: if the state was modified from the code, then "button" is undefined.
     */
-  var button: js.UndefOr[String] = js.native
+  var button: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the boolean value of the old pin state of the dialog.
     */
-  var oldPinned: js.UndefOr[Boolean] = js.native
+  var oldPinned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the old state of the dialog, which can be one of the following: "opened", "minimized", "maximized", "closed".
     */
-  var oldState: js.UndefOr[String] = js.native
+  var oldState: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the igDialog widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object StateChangedEventUIParam {
   

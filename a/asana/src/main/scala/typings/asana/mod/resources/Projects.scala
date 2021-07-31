@@ -11,7 +11,6 @@ import typings.asana.mod.resources.Projects.MembersParams
 import typings.asana.mod.resources.Projects.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,7 +27,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Projects
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * Adds the specified list of users as followers to the project. Followers are a subset of members, therefore if
@@ -160,7 +160,7 @@ trait Projects
     * @return
     */
   def findAll(): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findAll(params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findAll(params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findAll(params: FindAllParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findAll(params: FindAllParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -176,11 +176,11 @@ trait Projects
     * @return
     */
   def findById(project: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(project: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(project: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(project: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(project: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(project: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(project: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -198,11 +198,11 @@ trait Projects
     * @return
     */
   def findByTeam(team: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTeam(team: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTeam(team: String, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTeam(team: String, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTeam(team: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByTeam(team: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByTeam(team: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTeam(team: Double, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByTeam(team: Double, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -220,11 +220,11 @@ trait Projects
     * @return
     */
   def findByWorkspace(workspace: String): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: String, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double): typings.bluebird.mod.^[ResourceList[Type]] = js.native
-  def findByWorkspace(workspace: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
+  def findByWorkspace(workspace: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: FindByParams): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   def findByWorkspace(workspace: Double, params: FindByParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[Type]] = js.native
   
@@ -275,11 +275,11 @@ trait Projects
     * @return
     */
   def sections(project: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   def sections(project: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   def sections(project: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   def sections(project: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
-  def sections(project: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
+  def sections(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   def sections(project: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   def sections(project: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Sections.Type]] = js.native
   
@@ -296,11 +296,11 @@ trait Projects
     * @return
     */
   def tasks(project: String): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def tasks(project: String, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def tasks(project: String, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def tasks(project: Double): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
-  def tasks(project: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
+  def tasks(project: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def tasks(project: Double, params: PaginationParams): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   def tasks(project: Double, params: PaginationParams, dispatchOptions: js.Any): typings.bluebird.mod.^[ResourceList[typings.asana.mod.resources.Tasks.Type]] = js.native
   
@@ -333,7 +333,9 @@ object Projects extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Projects")
   @js.native
-  class ^ protected () extends Projects {
+  class ^ protected ()
+    extends StObject
+       with Projects {
     /**
       * @param dispatcher
       */
@@ -344,20 +346,19 @@ object Projects extends Shortcut {
   @js.native
   val ^ : ProjectsStatic = js.native
   
-  @js.native
   trait CreateParams extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var due_date: js.UndefOr[String] = js.native
+    var due_date: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var team: js.UndefOr[String | Double] = js.native
+    var team: js.UndefOr[String | Double] = js.undefined
   }
   object CreateParams {
     
@@ -408,14 +409,15 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
-  trait FindAllParams extends PaginationParams {
+  trait FindAllParams
+    extends StObject
+       with PaginationParams {
     
-    var archived: js.UndefOr[Boolean] = js.native
+    var archived: js.UndefOr[Boolean] = js.undefined
     
-    var team: js.UndefOr[String | Double] = js.native
+    var team: js.UndefOr[String | Double] = js.undefined
     
-    var workspace: js.UndefOr[String | Double] = js.native
+    var workspace: js.UndefOr[String | Double] = js.undefined
   }
   object FindAllParams {
     
@@ -448,10 +450,11 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
-  trait FindByParams extends PaginationParams {
+  trait FindByParams
+    extends StObject
+       with PaginationParams {
     
-    var archived: js.UndefOr[Boolean] = js.native
+    var archived: js.UndefOr[Boolean] = js.undefined
   }
   object FindByParams {
     
@@ -472,10 +475,9 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
   trait FollowersParams extends StObject {
     
-    var followers: js.Array[Double | String] = js.native
+    var followers: js.Array[Double | String]
   }
   object FollowersParams {
     
@@ -496,10 +498,9 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
   trait MembersParams extends StObject {
     
-    var members: js.Array[Double | String] = js.native
+    var members: js.Array[Double | String]
   }
   object MembersParams {
     
@@ -520,29 +521,22 @@ object Projects extends Shortcut {
     }
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var author: typings.asana.mod.resources.Resource = js.native
+    var author: Resource
     
-    var color: String = js.native
+    var color: String
     
-    var html_text: String = js.native
+    var html_text: String
     
-    var modified_at: String = js.native
+    var modified_at: String
     
-    var text: String = js.native
+    var text: String
   }
   object Status {
     
     @scala.inline
-    def apply(
-      author: typings.asana.mod.resources.Resource,
-      color: String,
-      html_text: String,
-      modified_at: String,
-      text: String
-    ): Status = {
+    def apply(author: Resource, color: String, html_text: String, modified_at: String, text: String): Status = {
       val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], html_text = html_text.asInstanceOf[js.Any], modified_at = modified_at.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
       __obj.asInstanceOf[Status]
     }
@@ -551,7 +545,7 @@ object Projects extends Shortcut {
     implicit class StatusMutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAuthor(value: typings.asana.mod.resources.Resource): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
+      def setAuthor(value: Resource): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -569,7 +563,8 @@ object Projects extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
     var archived: Boolean = js.native
     
@@ -581,9 +576,9 @@ object Projects extends Shortcut {
     
     var due_date: String = js.native
     
-    var followers: js.Array[typings.asana.mod.resources.Resource] = js.native
+    var followers: js.Array[Resource] = js.native
     
-    var members: js.Array[typings.asana.mod.resources.Resource] = js.native
+    var members: js.Array[Resource] = js.native
     
     var modified_at: String = js.native
     
@@ -591,9 +586,9 @@ object Projects extends Shortcut {
     
     var public: Boolean = js.native
     
-    var team: typings.asana.mod.resources.Resource = js.native
+    var team: Resource = js.native
     
-    var workspace: typings.asana.mod.resources.Resource = js.native
+    var workspace: Resource = js.native
   }
   
   type _To = ProjectsStatic

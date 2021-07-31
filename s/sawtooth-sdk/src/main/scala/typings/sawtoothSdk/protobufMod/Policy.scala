@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.Policy.IEntry
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "Policy")
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Policy.
   * @param [properties] Properties to set
   */
-class Policy () extends IPolicy {
+class Policy ()
+  extends StObject
+     with IPolicy {
   def this(properties: IPolicy) = this()
   
   /** Policy entries. */
@@ -37,6 +38,10 @@ class Policy () extends IPolicy {
 /* static members */
 object Policy {
   
+  @JSImport("sawtooth-sdk/protobuf", "Policy")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an Entry. */
   @JSImport("sawtooth-sdk/protobuf", "Policy.Entry")
   @js.native
@@ -44,7 +49,9 @@ object Policy {
     * Constructs a new Entry.
     * @param [properties] Properties to set
     */
-  class Entry () extends IEntry {
+  class Entry ()
+    extends StObject
+       with IEntry {
     def this(properties: IEntry) = this()
     
     /** Entry key. */
@@ -63,18 +70,20 @@ object Policy {
   }
   object Entry {
     
+    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new Entry instance using the specified properties.
       * @param [properties] Properties to set
       * @returns Entry instance
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.create")
-    @js.native
-    def create(): Entry = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.create")
-    @js.native
-    def create(properties: IEntry): Entry = js.native
+    @scala.inline
+    def create(): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Entry]
+    @scala.inline
+    def create(properties: IEntry): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Decodes an Entry message from the specified reader or buffer.
@@ -85,18 +94,14 @@ object Policy {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decode")
-    @js.native
-    def decode(reader: Reader): Entry = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): Entry = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decode")
-    @js.native
-    def decode(reader: Uint8Array): Entry = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): Entry = js.native
+    @scala.inline
+    def decode(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    @scala.inline
+    def decode(reader: Reader, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
+    @scala.inline
+    def decode(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): Entry = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Entry]
     
     /**
       * Decodes an Entry message from the specified reader or buffer, length delimited.
@@ -106,12 +111,10 @@ object Policy {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): Entry = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): Entry = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Encodes the specified Entry message. Does not implicitly {@link Policy.Entry.verify|verify} messages.
@@ -120,12 +123,10 @@ object Policy {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.encode")
-    @js.native
-    def encode(message: IEntry): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.encode")
-    @js.native
-    def encode(message: IEntry, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified Entry message, length delimited. Does not implicitly {@link Policy.Entry.verify|verify} messages.
@@ -134,12 +135,10 @@ object Policy {
       * @returns Writer
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntry): Writer = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEntry, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IEntry): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IEntry, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an Entry message from a plain object. Also converts values to their respective internal types.
@@ -147,9 +146,8 @@ object Policy {
       * @returns Entry
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): Entry = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): Entry = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Entry]
     
     /**
       * Creates a plain object from an Entry message. Also converts values to other types if specified.
@@ -158,12 +156,10 @@ object Policy {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.toObject")
-    @js.native
-    def toObject(message: Entry): StringDictionary[js.Any] = js.native
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.toObject")
-    @js.native
-    def toObject(message: Entry, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: Entry): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: Entry, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an Entry message.
@@ -171,9 +167,8 @@ object Policy {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("sawtooth-sdk/protobuf", "Policy.Entry.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   @js.native
@@ -184,19 +179,25 @@ object Policy {
   object EntryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EntryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EntryType & Double] = js.native
     
     @js.native
-    sealed trait DENY_KEY extends EntryType
-    /* 2 */ val DENY_KEY: typings.sawtoothSdk.protobufMod.Policy.EntryType.DENY_KEY with Double = js.native
+    sealed trait DENY_KEY
+      extends StObject
+         with EntryType
+    /* 2 */ val DENY_KEY: typings.sawtoothSdk.protobufMod.Policy.EntryType.DENY_KEY & Double = js.native
     
     @js.native
-    sealed trait ENTRY_TYPE_UNSET extends EntryType
-    /* 0 */ val ENTRY_TYPE_UNSET: typings.sawtoothSdk.protobufMod.Policy.EntryType.ENTRY_TYPE_UNSET with Double = js.native
+    sealed trait ENTRY_TYPE_UNSET
+      extends StObject
+         with EntryType
+    /* 0 */ val ENTRY_TYPE_UNSET: typings.sawtoothSdk.protobufMod.Policy.EntryType.ENTRY_TYPE_UNSET & Double = js.native
     
     @js.native
-    sealed trait PERMIT_KEY extends EntryType
-    /* 1 */ val PERMIT_KEY: typings.sawtoothSdk.protobufMod.Policy.EntryType.PERMIT_KEY with Double = js.native
+    sealed trait PERMIT_KEY
+      extends StObject
+         with EntryType
+    /* 1 */ val PERMIT_KEY: typings.sawtoothSdk.protobufMod.Policy.EntryType.PERMIT_KEY & Double = js.native
   }
   
   /**
@@ -204,12 +205,10 @@ object Policy {
     * @param [properties] Properties to set
     * @returns Policy instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.create")
-  @js.native
-  def create(): Policy = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.create")
-  @js.native
-  def create(properties: IPolicy): Policy = js.native
+  @scala.inline
+  def create(): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Policy]
+  @scala.inline
+  def create(properties: IPolicy): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Policy]
   
   /**
     * Decodes a Policy message from the specified reader or buffer.
@@ -219,18 +218,14 @@ object Policy {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decode")
-  @js.native
-  def decode(reader: Reader): Policy = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Policy = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decode")
-  @js.native
-  def decode(reader: Uint8Array): Policy = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Policy = js.native
+  @scala.inline
+  def decode(reader: Reader): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Policy]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Policy]
+  @scala.inline
+  def decode(reader: Uint8Array): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Policy]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Policy = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Policy]
   
   /**
     * Decodes a Policy message from the specified reader or buffer, length delimited.
@@ -239,12 +234,10 @@ object Policy {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Policy = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Policy = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Policy]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Policy]
   
   /**
     * Encodes the specified Policy message. Does not implicitly {@link Policy.verify|verify} messages.
@@ -252,12 +245,10 @@ object Policy {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.encode")
-  @js.native
-  def encode(message: IPolicy): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.encode")
-  @js.native
-  def encode(message: IPolicy, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Policy message, length delimited. Does not implicitly {@link Policy.verify|verify} messages.
@@ -265,21 +256,18 @@ object Policy {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPolicy): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IPolicy, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IPolicy): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IPolicy, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a Policy message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Policy
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Policy = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Policy = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Policy]
   
   /**
     * Creates a plain object from a Policy message. Also converts values to other types if specified.
@@ -287,31 +275,27 @@ object Policy {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.toObject")
-  @js.native
-  def toObject(message: Policy): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "Policy.toObject")
-  @js.native
-  def toObject(message: Policy, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Policy): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Policy, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a Policy message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "Policy.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an Entry. */
-  @js.native
   trait IEntry extends StObject {
     
     /** Entry key */
-    var key: js.UndefOr[String | Null] = js.native
+    var key: js.UndefOr[String | Null] = js.undefined
     
     /** Entry type */
-    var `type`: js.UndefOr[EntryType | Null] = js.native
+    var `type`: js.UndefOr[EntryType | Null] = js.undefined
   }
   object IEntry {
     

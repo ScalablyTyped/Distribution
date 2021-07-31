@@ -3,34 +3,32 @@ package typings.indefinite
 import typings.indefinite.indefiniteStrings.colloquial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("indefinite", JSImport.Namespace)
-  @js.native
-  def apply(word: String): String = js.native
-  @JSImport("indefinite", JSImport.Namespace)
-  @js.native
-  def apply(word: String, opts: Options): String = js.native
-  @JSImport("indefinite", JSImport.Namespace)
-  @js.native
-  def apply(word: Double): String = js.native
-  @JSImport("indefinite", JSImport.Namespace)
-  @js.native
-  def apply(word: Double, opts: Options): String = js.native
+  @scala.inline
+  def apply(word: String): String = ^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(word: String, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(word: Double): String = ^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(word: Double, opts: Options): String = (^.asInstanceOf[js.Dynamic].apply(word.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("indefinite", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var articleOnly: js.UndefOr[Boolean] = js.native
+    var articleOnly: js.UndefOr[Boolean] = js.undefined
     
-    var capitalize: js.UndefOr[Boolean] = js.native
+    var capitalize: js.UndefOr[Boolean] = js.undefined
     
-    var caseInsensitive: js.UndefOr[Boolean] = js.native
+    var caseInsensitive: js.UndefOr[Boolean] = js.undefined
     
-    var numbers: js.UndefOr[colloquial] = js.native
+    var numbers: js.UndefOr[colloquial] = js.undefined
   }
   object Options {
     

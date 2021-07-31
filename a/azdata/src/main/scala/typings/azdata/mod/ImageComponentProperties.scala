@@ -2,12 +2,11 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageComponentProperties
-  extends ComponentProperties
+  extends StObject
+     with ComponentProperties
      with ComponentWithIcon
 object ImageComponentProperties {
   

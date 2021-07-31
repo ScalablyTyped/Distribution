@@ -2,35 +2,33 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttMessagesEditor extends StObject {
   
-  var assignButton: js.UndefOr[String] = js.native
+  var assignButton: js.UndefOr[String] = js.undefined
   
-  var editorTitle: js.UndefOr[String] = js.native
+  var editorTitle: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[String] = js.native
+  var end: js.UndefOr[String] = js.undefined
   
-  var percentComplete: js.UndefOr[String] = js.native
+  var percentComplete: js.UndefOr[String] = js.undefined
   
-  var plannedEnd: js.UndefOr[String] = js.native
+  var plannedEnd: js.UndefOr[String] = js.undefined
   
-  var plannedStart: js.UndefOr[String] = js.native
+  var plannedStart: js.UndefOr[String] = js.undefined
   
-  var resources: js.UndefOr[String] = js.native
+  var resources: js.UndefOr[String] = js.undefined
   
-  var resourcesEditorTitle: js.UndefOr[String] = js.native
+  var resourcesEditorTitle: js.UndefOr[String] = js.undefined
   
-  var resourcesHeader: js.UndefOr[String] = js.native
+  var resourcesHeader: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[String] = js.native
+  var start: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var unitsHeader: js.UndefOr[String] = js.native
+  var unitsHeader: js.UndefOr[String] = js.undefined
 }
 object GanttMessagesEditor {
   

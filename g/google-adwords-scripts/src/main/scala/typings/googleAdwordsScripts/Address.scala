@@ -2,25 +2,23 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
-  def getCityName(): String = js.native
+  def getCityName(): String
   
-  def getCountryCode(): String = js.native
+  def getCountryCode(): String
   
-  def getPostalCode(): String = js.native
+  def getPostalCode(): String
   
-  def getProvinceCode(): String = js.native
+  def getProvinceCode(): String
   
-  def getProvinceName(): String = js.native
+  def getProvinceName(): String
   
-  def getStreetAddress(): String = js.native
+  def getStreetAddress(): String
   
-  def getStreetAddress2(): String = js.native
+  def getStreetAddress2(): String
 }
 object Address {
   

@@ -2,71 +2,69 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticateOidcActionConfig extends StObject {
   
   /**
     * The query parameters (up to 10) to include in the redirect request to the authorization endpoint.
     */
-  var AuthenticationRequestExtraParams: js.UndefOr[AuthenticateOidcActionAuthenticationRequestExtraParams] = js.native
+  var AuthenticationRequestExtraParams: js.UndefOr[AuthenticateOidcActionAuthenticationRequestExtraParams] = js.undefined
   
   /**
     * The authorization endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
     */
-  var AuthorizationEndpoint: AuthenticateOidcActionAuthorizationEndpoint = js.native
+  var AuthorizationEndpoint: AuthenticateOidcActionAuthorizationEndpoint
   
   /**
     * The OAuth 2.0 client identifier.
     */
-  var ClientId: AuthenticateOidcActionClientId = js.native
+  var ClientId: AuthenticateOidcActionClientId
   
   /**
     * The OAuth 2.0 client secret. This parameter is required if you are creating a rule. If you are modifying a rule, you can omit this parameter if you set UseExistingClientSecret to true.
     */
-  var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.native
+  var ClientSecret: js.UndefOr[AuthenticateOidcActionClientSecret] = js.undefined
   
   /**
     * The OIDC issuer identifier of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
     */
-  var Issuer: AuthenticateOidcActionIssuer = js.native
+  var Issuer: AuthenticateOidcActionIssuer
   
   /**
     * The behavior if the user is not authenticated. The following are possible values:   deny - Return an HTTP 401 Unauthorized error.   allow - Allow the request to be forwarded to the target.   authenticate - Redirect the request to the IdP authorization endpoint. This is the default value.  
     */
-  var OnUnauthenticatedRequest: js.UndefOr[AuthenticateOidcActionConditionalBehaviorEnum] = js.native
+  var OnUnauthenticatedRequest: js.UndefOr[AuthenticateOidcActionConditionalBehaviorEnum] = js.undefined
   
   /**
     * The set of user claims to be requested from the IdP. The default is openid. To verify which scope values your IdP supports and how to separate multiple values, see the documentation for your IdP.
     */
-  var Scope: js.UndefOr[AuthenticateOidcActionScope] = js.native
+  var Scope: js.UndefOr[AuthenticateOidcActionScope] = js.undefined
   
   /**
     * The name of the cookie used to maintain session information. The default is AWSELBAuthSessionCookie.
     */
-  var SessionCookieName: js.UndefOr[AuthenticateOidcActionSessionCookieName] = js.native
+  var SessionCookieName: js.UndefOr[AuthenticateOidcActionSessionCookieName] = js.undefined
   
   /**
     * The maximum duration of the authentication session, in seconds. The default is 604800 seconds (7 days).
     */
-  var SessionTimeout: js.UndefOr[AuthenticateOidcActionSessionTimeout] = js.native
+  var SessionTimeout: js.UndefOr[AuthenticateOidcActionSessionTimeout] = js.undefined
   
   /**
     * The token endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
     */
-  var TokenEndpoint: AuthenticateOidcActionTokenEndpoint = js.native
+  var TokenEndpoint: AuthenticateOidcActionTokenEndpoint
   
   /**
     * Indicates whether to use the existing client secret when modifying a rule. If you are creating a rule, you can omit this parameter or set it to false.
     */
-  var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.native
+  var UseExistingClientSecret: js.UndefOr[AuthenticateOidcActionUseExistingClientSecret] = js.undefined
   
   /**
     * The user info endpoint of the IdP. This must be a full URL, including the HTTPS protocol, the domain, and the path.
     */
-  var UserInfoEndpoint: AuthenticateOidcActionUserInfoEndpoint = js.native
+  var UserInfoEndpoint: AuthenticateOidcActionUserInfoEndpoint
 }
 object AuthenticateOidcActionConfig {
   

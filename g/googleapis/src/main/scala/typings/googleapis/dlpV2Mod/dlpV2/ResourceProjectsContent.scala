@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dlp/v2", "dlp_v2.Resource$Projects$Content")
@@ -37,7 +36,7 @@ class ResourceProjectsContent protected () extends StObject {
     */
   def deidentify(): GaxiosPromise[SchemaGooglePrivacyDlpV2DeidentifyContentResponse] = js.native
   def deidentify(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2DeidentifyContentResponse]): Unit = js.native
-  def deidentify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DeidentifyContentResponse] = js.native
+  def deidentify(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2DeidentifyContentResponse] = js.native
   def deidentify(params: ParamsResourceProjectsContentDeidentify): GaxiosPromise[SchemaGooglePrivacyDlpV2DeidentifyContentResponse] = js.native
   def deidentify(
     params: ParamsResourceProjectsContentDeidentify,
@@ -76,7 +75,7 @@ class ResourceProjectsContent protected () extends StObject {
     */
   def inspect(): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectContentResponse] = js.native
   def inspect(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2InspectContentResponse]): Unit = js.native
-  def inspect(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectContentResponse] = js.native
+  def inspect(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectContentResponse] = js.native
   def inspect(params: ParamsResourceProjectsContentInspect): GaxiosPromise[SchemaGooglePrivacyDlpV2InspectContentResponse] = js.native
   def inspect(
     params: ParamsResourceProjectsContentInspect,
@@ -111,7 +110,7 @@ class ResourceProjectsContent protected () extends StObject {
     */
   def reidentify(): GaxiosPromise[SchemaGooglePrivacyDlpV2ReidentifyContentResponse] = js.native
   def reidentify(callback: BodyResponseCallback[SchemaGooglePrivacyDlpV2ReidentifyContentResponse]): Unit = js.native
-  def reidentify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ReidentifyContentResponse] = js.native
+  def reidentify(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGooglePrivacyDlpV2ReidentifyContentResponse] = js.native
   def reidentify(params: ParamsResourceProjectsContentReidentify): GaxiosPromise[SchemaGooglePrivacyDlpV2ReidentifyContentResponse] = js.native
   def reidentify(
     params: ParamsResourceProjectsContentReidentify,

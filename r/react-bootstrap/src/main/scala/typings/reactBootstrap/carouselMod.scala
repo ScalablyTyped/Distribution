@@ -8,7 +8,6 @@ import typings.reactBootstrap.mod.Omit
 import typings.reactBootstrap.reactBootstrapStrings.wrap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselMod {
@@ -49,5 +48,5 @@ object carouselMod {
   trait Carousel
     extends Component[CarouselProps, js.Object, js.Any]
   
-  type CarouselProps = (Omit[HTMLProps[Carousel], wrap]) with ActiveIndex
+  type CarouselProps = (Omit[HTMLProps[Carousel], wrap]) & ActiveIndex
 }

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionContextDestroyedEvent extends StObject {
   
   /**
     * Id of the destroyed context
     */
-  var executionContextId: ExecutionContextId = js.native
+  var executionContextId: ExecutionContextId
 }
 object ExecutionContextDestroyedEvent {
   

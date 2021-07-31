@@ -2,26 +2,25 @@ package typings.regexpp.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CapturingGroup
-  extends BranchNode
+  extends StObject
      with NodeBase
+     with BranchNode
      with QuantifiableElement {
   
-  var alternatives: js.Array[Alternative] = js.native
+  var alternatives: js.Array[Alternative]
   
-  var name: String | Null = js.native
+  var name: String | Null
   
   @JSName("parent")
-  var parent_CapturingGroup: Alternative | Quantifier = js.native
+  var parent_CapturingGroup: Alternative | Quantifier
   
-  var references: js.Array[Backreference] = js.native
+  var references: js.Array[Backreference]
   
   @JSName("type")
-  var type_CapturingGroup: typings.regexpp.regexppStrings.CapturingGroup = js.native
+  var type_CapturingGroup: typings.regexpp.regexppStrings.CapturingGroup
 }
 object CapturingGroup {
   
@@ -32,11 +31,10 @@ object CapturingGroup {
     parent: Alternative | Quantifier,
     raw: String,
     references: js.Array[Backreference],
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.CapturingGroup
+    start: Double
   ): CapturingGroup = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], references = references.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], name = null)
+    __obj.updateDynamic("type")("CapturingGroup")
     __obj.asInstanceOf[CapturingGroup]
   }
   

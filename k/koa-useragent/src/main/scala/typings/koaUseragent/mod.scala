@@ -6,7 +6,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,10 +18,9 @@ object mod extends Shortcut {
   @js.native
   val userAgent: Middleware[DefaultState, DefaultContext] = js.native
   
-  @js.native
   trait UserAgentContext extends StObject {
     
-    var userAgent: typings.koaUseragent.useragentMod.default = js.native
+    var userAgent: typings.koaUseragent.useragentMod.default
   }
   object UserAgentContext {
     

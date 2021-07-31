@@ -2,51 +2,49 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait APNSChannelRequest extends StObject {
   
   /**
     * The bundle identifier that's assigned to your iOS app. This identifier is used for APNs tokens.
     */
-  var BundleId: js.UndefOr[string] = js.native
+  var BundleId: js.UndefOr[string] = js.undefined
   
   /**
     * The APNs client certificate that you received from Apple, if you want Amazon Pinpoint to communicate with APNs by using an APNs certificate.
     */
-  var Certificate: js.UndefOr[string] = js.native
+  var Certificate: js.UndefOr[string] = js.undefined
   
   /**
     * The default authentication method that you want Amazon Pinpoint to use when authenticating with APNs, key or certificate.
     */
-  var DefaultAuthenticationMethod: js.UndefOr[string] = js.native
+  var DefaultAuthenticationMethod: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether to enable the APNs channel for the application.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * The private key for the APNs client certificate that you want Amazon Pinpoint to use to communicate with APNs.
     */
-  var PrivateKey: js.UndefOr[string] = js.native
+  var PrivateKey: js.UndefOr[string] = js.undefined
   
   /**
     * The identifier that's assigned to your Apple developer account team. This identifier is used for APNs tokens.
     */
-  var TeamId: js.UndefOr[string] = js.native
+  var TeamId: js.UndefOr[string] = js.undefined
   
   /**
     * The authentication key to use for APNs tokens.
     */
-  var TokenKey: js.UndefOr[string] = js.native
+  var TokenKey: js.UndefOr[string] = js.undefined
   
   /**
     * The key identifier that's assigned to your APNs signing key, if you want Amazon Pinpoint to communicate with APNs by using APNs tokens.
     */
-  var TokenKeyId: js.UndefOr[string] = js.native
+  var TokenKeyId: js.UndefOr[string] = js.undefined
 }
 object APNSChannelRequest {
   

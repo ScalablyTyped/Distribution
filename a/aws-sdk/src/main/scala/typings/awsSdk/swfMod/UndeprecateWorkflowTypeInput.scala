@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UndeprecateWorkflowTypeInput extends StObject {
   
   /**
     * The name of the domain of the deprecated workflow type.
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     * The name of the domain of the deprecated workflow type.
     */
-  var workflowType: WorkflowType = js.native
+  var workflowType: WorkflowType
 }
 object UndeprecateWorkflowTypeInput {
   

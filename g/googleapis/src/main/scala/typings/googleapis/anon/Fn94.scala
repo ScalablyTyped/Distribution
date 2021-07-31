@@ -5,7 +5,6 @@ import typings.googleapis.mirrorV1Mod.mirrorV1.Mirror
 import typings.googleapis.mirrorV1Mod.mirrorV1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

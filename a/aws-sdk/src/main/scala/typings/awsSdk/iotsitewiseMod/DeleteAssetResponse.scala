@@ -2,16 +2,14 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAssetResponse extends StObject {
   
   /**
     * The status of the asset, which contains a state (DELETING after successfully calling this operation) and any error message.
     */
-  var assetStatus: AssetStatus = js.native
+  var assetStatus: AssetStatus
 }
 object DeleteAssetResponse {
   

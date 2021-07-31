@@ -4,7 +4,6 @@ import typings.vscode.Thenable
 import typings.vscode.anon.NewUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,5 +39,5 @@ trait FileWillRenameEvent extends StObject {
     *
     * @param thenable A thenable that delays saving.
     */
-  def waitUntil(thenable: Thenable[_ | WorkspaceEdit]): Unit = js.native
+  def waitUntil(thenable: Thenable[js.Any | WorkspaceEdit]): Unit = js.native
 }

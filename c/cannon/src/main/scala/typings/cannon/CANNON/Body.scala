@@ -2,18 +2,19 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Body extends EventTarget {
+trait Body
+  extends StObject
+     with EventTarget {
   
   var aabb: AABB = js.native
   
   var aabbNeedsUpdate: Boolean = js.native
   
   def addShape(shape: Shape): Unit = js.native
-  def addShape(shape: Shape, offset: js.UndefOr[scala.Nothing], orientation: Quaternion): Unit = js.native
+  def addShape(shape: Shape, offset: Unit, orientation: Quaternion): Unit = js.native
   def addShape(shape: Shape, offset: Vec3): Unit = js.native
   def addShape(shape: Shape, offset: Vec3, orientation: Quaternion): Unit = js.native
   
@@ -95,9 +96,9 @@ trait Body extends EventTarget {
   
   var quaternion: Quaternion = js.native
   
-  var shapeOffsets: js.Array[_] = js.native
+  var shapeOffsets: js.Array[js.Any] = js.native
   
-  var shapeOrientations: js.Array[_] = js.native
+  var shapeOrientations: js.Array[js.Any] = js.native
   
   var shapes: js.Array[Shape] = js.native
   

@@ -42,7 +42,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind
 import typings.grammarkdown.tokensMod.TokenKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object visitorMod {

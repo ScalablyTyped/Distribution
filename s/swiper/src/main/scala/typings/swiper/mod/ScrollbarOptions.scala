@@ -3,10 +3,8 @@ package typings.swiper.mod
 import typings.swiper.swiperStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollbarOptions extends StObject {
   
   /**
@@ -14,47 +12,47 @@ trait ScrollbarOptions extends StObject {
     *
     * @default 'swiper-scrollbar-drag'
     */
-  var dragClass: js.UndefOr[String] = js.native
+  var dragClass: js.UndefOr[String] = js.undefined
   
   /**
     * Size of scrollbar draggable element in px
     *
     * @default 'auto'
     */
-  var dragSize: js.UndefOr[auto | Double] = js.native
+  var dragSize: js.UndefOr[auto | Double] = js.undefined
   
   /**
     * Set to true to enable make scrollbar draggable that allows you to control slider position
     *
     * @default true
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * String with CSS selector or HTML element of the container with scrollbar.
     */
-  var el: SelectableElement = js.native
+  var el: SelectableElement
   
   /**
     * Hide scrollbar automatically after user interaction
     *
     * @default true
     */
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Scrollbar element additional CSS class when it is disabled
     *
     * @default 'swiper-scrollbar-lock'
     */
-  var lockClass: js.UndefOr[String] = js.native
+  var lockClass: js.UndefOr[String] = js.undefined
   
   /**
     * Set to true to snap slider position to slides when you release scrollbar
     *
     * @default false
     */
-  var snapOnRelease: js.UndefOr[Boolean] = js.native
+  var snapOnRelease: js.UndefOr[Boolean] = js.undefined
 }
 object ScrollbarOptions {
   

@@ -4,151 +4,149 @@ import typings.jqueryPnotify.anon.Closerhover
 import typings.jqueryPnotify.anon.Nonblock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PNotifyOptions extends StObject {
   
   /**
     * Additional classes to be added to the notice. (For custom styling.)
     */
-  var addclass: js.UndefOr[String] = js.native
+  var addclass: js.UndefOr[String] = js.undefined
   
   /**
     * Speed at which the notice animates in and out. "slow", "def" or "normal", "fast" or number of milliseconds.
     */
-  var animate_speed: js.UndefOr[String] = js.native
+  var animate_speed: js.UndefOr[String] = js.undefined
   
   /**
     * The animation to use when displaying and hiding the notice. "none" and "fade" are supported through CSS. 
     * Others are supported through the Animate module and Animate.css.
     */ 
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
   /**
     * Display the notice when it is created. Turn this off to add notifications to the history without displaying them.
     */
-  var auto_display: js.UndefOr[Boolean] = js.native
+  var auto_display: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[Closerhover] = js.native
+  var buttons: js.UndefOr[Closerhover] = js.undefined
   
   /**
     * Support for PNotifyconfirm options
     */
-  var confirm: js.UndefOr[PNotifyconfirm] = js.native
+  var confirm: js.UndefOr[PNotifyconfirm] = js.undefined
   
   /**
     * Class to be added to the notice for corner styling.
     */
-  var cornerclass: js.UndefOr[String] = js.native
+  var cornerclass: js.UndefOr[String] = js.undefined
   
   /**
     * Delay in milliseconds before the notice is removed.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * After a delay, remove the notice, set to false for sticky note.
     */
-  var hide: js.UndefOr[Boolean] = js.native
+  var hide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Display a pull down menu to redisplay previous notices, and place the notice in the history.
     */
-  var history: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set icon to true to use the default icon for the selected style/type, false for no icon, or a string for your own icon class.
     */
-  var icon: js.UndefOr[js.Any] = js.native
+  var icon: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Change new lines to br tags.
     */
-  var insert_brs: js.UndefOr[Boolean] = js.native
+  var insert_brs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The various displayed text, helps facilitating internationalization.
     */
-  var labels: js.UndefOr[PNotifyLabel] = js.native
+  var labels: js.UndefOr[PNotifyLabel] = js.undefined
   
   /**
     * Maximum number of notifications to have onscreen.
     */
-  var maxonscreen: js.UndefOr[Double] = js.native
+  var maxonscreen: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum height of the notice. It will expand to fit content.
     */
-  var min_height: js.UndefOr[String] = js.native
+  var min_height: js.UndefOr[String] = js.undefined
   
   /**
     * Reset the hide timer if the mouse moves over the notice.
     */
-  var mouse_reset: js.UndefOr[Boolean] = js.native
+  var mouse_reset: js.UndefOr[Boolean] = js.undefined
   
-  var nonblock: js.UndefOr[Nonblock] = js.native
+  var nonblock: js.UndefOr[Nonblock] = js.undefined
   
   /**
     * Opacity of the notice.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify a specific duration of position animation
     */
-  var position_animate_speed: js.UndefOr[Double] = js.native
+  var position_animate_speed: js.UndefOr[Double] = js.undefined
   
   /**
     * Remove the notice's elements from the DOM after it is removed.
     */
-  var remove: js.UndefOr[Boolean] = js.native
+  var remove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Display a drop shadow.
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The stack on which the notices will be placed. Also controls the direction the notices stack.
     */
-  var stack: js.UndefOr[PNotifyStack] = js.native
+  var stack: js.UndefOr[PNotifyStack] = js.undefined
   
   /**
     * What styling classes to use. (Can be either "brighttheme", "jqueryui", "bootstrap2", "bootstrap3", "fontawesome" or a custom style object)
     */
-  var styling: js.UndefOr[StylingOptions] = js.native
+  var styling: js.UndefOr[StylingOptions] = js.undefined
   
   /**
     * The notice's text. Either boolean false or string
     */
-  var text: js.UndefOr[String | Boolean] = js.native
+  var text: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Whether to escape the content of the text. (Not allow HTML.)
     */
-  var text_escape: js.UndefOr[Boolean] = js.native
+  var text_escape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The notice's title. Either boolean false or string
     */
-  var title: js.UndefOr[String | Boolean] = js.native
+  var title: js.UndefOr[String | Boolean] = js.undefined
   
   /**
     * Whether to escape the content of the title. (Not allow HTML.)
     */
-  var title_escape: js.UndefOr[Boolean] = js.native
+  var title_escape: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type of the notice. "notice", "info", "success", or "error".
     */
-  var `type`: js.UndefOr[NoticeTypeOptions] = js.native
+  var `type`: js.UndefOr[NoticeTypeOptions] = js.undefined
   
   /**
     * Width of the notice.
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object PNotifyOptions {
   

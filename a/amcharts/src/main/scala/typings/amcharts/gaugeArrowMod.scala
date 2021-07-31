@@ -2,22 +2,21 @@ package typings.amcharts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaugeArrowMod {
   
   @JSImport("amcharts/GaugeArrow", JSImport.Default)
   @js.native
-  class default () extends GaugeArrow
-  
-  @js.native
-  trait GaugeArrow extends StObject {
+  class default ()
+    extends StObject
+       with GaugeArrow {
     
     /**
       * Opacity of an arrow.
       * @default 1
       */
+    /* CompleteClass */
     var alpha: Double = js.native
     
     /**
@@ -25,83 +24,189 @@ object gaugeArrowMod {
       * If you don't set any axis, the first axis of a chart will be used.
       * @default GaugeAxis
       */
+    /* CompleteClass */
     var axis: typings.amcharts.gaugeAxisMod.default = js.native
     
     /**
       * Opacity of arrow border.
       * @default 1
       */
+    /* CompleteClass */
     var borderAlpha: Double = js.native
     
     /**
       * In case you need the arrow to rotate only clock-wise, set this property to true.
       * @default false
       */
+    /* CompleteClass */
     var clockWiseOnly: Boolean = js.native
     
     /**
       * Color of an arrow.
       * @default #000000
       */
+    /* CompleteClass */
     var color: String = js.native
     
     /**
       * Unique id of an arrow.
       */
+    /* CompleteClass */
     var id: String = js.native
     
     /**
       * Inner radius of an arrow.
       * @default 0
       */
+    /* CompleteClass */
     var innerRadius: js.Any = js.native
     
     /**
       * Opacity of a nail, holding the arrow.
       * @default 1
       */
+    /* CompleteClass */
     var nailAlpha: Double = js.native
     
     /**
       * Opacity of nail border.
       * @default 0
       */
+    /* CompleteClass */
     var nailBorderAlpha: Double = js.native
     
     /**
       * Thickness of nail border.
       * @default 1
       */
+    /* CompleteClass */
     var nailBorderThickness: Double = js.native
     
     /**
       * Radius of a nail, holding the arrow.
       * @default 8
       */
+    /* CompleteClass */
     var nailRadius: Double = js.native
     
     /**
       * Radius of an arrow.
       * @default '90%'
       */
+    /* CompleteClass */
     var radius: js.Any = js.native
     
     /**
       * Sets value for the arrow.
       * Arrow will animate to this value if you do it after chart is written to it's container.
       */
-    def setValue(value: Double): Unit = js.native
+    /* CompleteClass */
+    override def setValue(value: Double): Unit = js.native
     
     /**
       * Width of arrow root.
       * @default 8
       */
+    /* CompleteClass */
     var startWidth: Double = js.native
     
     /**
       * Value to which the arrow should point at.
       */
+    /* CompleteClass */
     var value: Double = js.native
+  }
+  
+  trait GaugeArrow extends StObject {
+    
+    /**
+      * Opacity of an arrow.
+      * @default 1
+      */
+    var alpha: Double
+    
+    /**
+      * Axis of the arrow. You can use reference to the axis or id of the axis.
+      * If you don't set any axis, the first axis of a chart will be used.
+      * @default GaugeAxis
+      */
+    var axis: typings.amcharts.gaugeAxisMod.default
+    
+    /**
+      * Opacity of arrow border.
+      * @default 1
+      */
+    var borderAlpha: Double
+    
+    /**
+      * In case you need the arrow to rotate only clock-wise, set this property to true.
+      * @default false
+      */
+    var clockWiseOnly: Boolean
+    
+    /**
+      * Color of an arrow.
+      * @default #000000
+      */
+    var color: String
+    
+    /**
+      * Unique id of an arrow.
+      */
+    var id: String
+    
+    /**
+      * Inner radius of an arrow.
+      * @default 0
+      */
+    var innerRadius: js.Any
+    
+    /**
+      * Opacity of a nail, holding the arrow.
+      * @default 1
+      */
+    var nailAlpha: Double
+    
+    /**
+      * Opacity of nail border.
+      * @default 0
+      */
+    var nailBorderAlpha: Double
+    
+    /**
+      * Thickness of nail border.
+      * @default 1
+      */
+    var nailBorderThickness: Double
+    
+    /**
+      * Radius of a nail, holding the arrow.
+      * @default 8
+      */
+    var nailRadius: Double
+    
+    /**
+      * Radius of an arrow.
+      * @default '90%'
+      */
+    var radius: js.Any
+    
+    /**
+      * Sets value for the arrow.
+      * Arrow will animate to this value if you do it after chart is written to it's container.
+      */
+    def setValue(value: Double): Unit
+    
+    /**
+      * Width of arrow root.
+      * @default 8
+      */
+    var startWidth: Double
+    
+    /**
+      * Value to which the arrow should point at.
+      */
+    var value: Double
   }
   object GaugeArrow {
     

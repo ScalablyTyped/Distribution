@@ -2,17 +2,15 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetSslProxiesSetSslCertificatesRequest extends StObject {
   
   /**
     * New set of URLs to SslCertificate resources to associate with this
     * TargetSslProxy. Currently exactly one ssl certificate must be specified.
     */
-  var sslCertificates: js.UndefOr[js.Array[String]] = js.native
+  var sslCertificates: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTargetSslProxiesSetSslCertificatesRequest {
   

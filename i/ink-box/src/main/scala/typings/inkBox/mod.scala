@@ -12,7 +12,6 @@ import typings.inkBox.inkBoxStrings.singleDouble
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,24 +38,23 @@ object mod extends Shortcut {
     def right: typings.inkBox.inkBoxStrings.right = "right".asInstanceOf[typings.inkBox.inkBoxStrings.right]
   }
   
-  @js.native
   trait BoxProps extends StObject {
     
-    var align: js.UndefOr[Alignment] = js.native
+    var align: js.UndefOr[Alignment] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var borderStyle: js.UndefOr[single | double | round | singleDouble | doubleSingle | classic | BottomLeft] = js.native
+    var borderStyle: js.UndefOr[single | double | round | singleDouble | doubleSingle | classic | BottomLeft] = js.undefined
     
-    var dimBorder: js.UndefOr[Boolean] = js.native
+    var dimBorder: js.UndefOr[Boolean] = js.undefined
     
-    var float: js.UndefOr[Alignment] = js.native
+    var float: js.UndefOr[Alignment] = js.undefined
     
-    var margin: js.UndefOr[Spacing] = js.native
+    var margin: js.UndefOr[Spacing] = js.undefined
     
-    var padding: js.UndefOr[Spacing] = js.native
+    var padding: js.UndefOr[Spacing] = js.undefined
   }
   object BoxProps {
     

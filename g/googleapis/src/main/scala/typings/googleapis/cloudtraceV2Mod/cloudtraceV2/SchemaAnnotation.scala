@@ -2,26 +2,24 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Text annotation with a set of attributes.
   */
-@js.native
 trait SchemaAnnotation extends StObject {
   
   /**
     * A set of attributes on the annotation. You can have up to 4 attributes
     * per Annotation.
     */
-  var attributes: js.UndefOr[SchemaAttributes] = js.native
+  var attributes: js.UndefOr[SchemaAttributes] = js.undefined
   
   /**
     * A user-supplied message describing the event. The maximum length for the
     * description is 256 bytes.
     */
-  var description: js.UndefOr[SchemaTruncatableString] = js.native
+  var description: js.UndefOr[SchemaTruncatableString] = js.undefined
 }
 object SchemaAnnotation {
   

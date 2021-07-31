@@ -11,8 +11,8 @@ Check if something is a Node.js stream
 | Full name          | is-stream |
 | Keywords           | stream, type, streams, writable, readable, duplex, transform, check, detect, is |
 | # releases         | 2 |
-| # dependents       | 436 |
-| # downloads        | 862838664 |
+| # dependents       | 658 |
+| # downloads        | 1181338043 |
 | # stars            | 5 |
 
 ## Links

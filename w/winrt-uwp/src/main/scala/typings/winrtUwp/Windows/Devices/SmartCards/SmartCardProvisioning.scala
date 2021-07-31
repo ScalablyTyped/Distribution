@@ -3,49 +3,47 @@ package typings.winrtUwp.Windows.Devices.SmartCards
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents info about, and operations for, configuring smart cards. */
-@js.native
 trait SmartCardProvisioning extends StObject {
   
-  var getAuthorityKeyContainerNameAsync: js.Any = js.native
+  var getAuthorityKeyContainerNameAsync: js.Any
   
   /* unmapped type */
   /**
     * Returns a smart card's authentication challenge/response context.
     * @return After the asynchronous operation completes, returns an instance of SmartCardChalllengeContext , representing the smart card's authentication challenge/response context.
     */
-  def getChallengeContextAsync(): IPromiseWithIAsyncOperation[SmartCardChallengeContext] = js.native
+  def getChallengeContextAsync(): IPromiseWithIAsyncOperation[SmartCardChallengeContext]
   
   /**
     * Returns the smart card's ID.
     * @return After the asynchronous operation completes, returns the smart card's ID.
     */
-  def getIdAsync(): IPromiseWithIAsyncOperation[String] = js.native
+  def getIdAsync(): IPromiseWithIAsyncOperation[String]
   
   /**
     * Returns the smart card's minidriver name.
     * @return After the asynchronous operation completes, returns the smart card's name.
     */
-  def getNameAsync(): IPromiseWithIAsyncOperation[String] = js.native
+  def getNameAsync(): IPromiseWithIAsyncOperation[String]
   
   /**
     * Changes a smart card's personal identification number (PIN).
     * @return After the smart card PIN change attempt completes, returns true if the smart card's PIN was successfully changed; otherwise false.
     */
-  def requestPinChangeAsync(): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def requestPinChangeAsync(): IPromiseWithIAsyncOperation[Boolean]
   
   /**
     * Resets a smart card's personal identification number (PIN).
     * @param handler The method that handles the smart card PIN reset.
     * @return After the smart card PIN reset attempt completes, returns true if the smart card's PIN was successfully reset; otherwise false.
     */
-  def requestPinResetAsync(handler: SmartCardPinResetHandler): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def requestPinResetAsync(handler: SmartCardPinResetHandler): IPromiseWithIAsyncOperation[Boolean]
   
   /** Gets the configured smart card. */
-  var smartCard: SmartCard = js.native
+  var smartCard: SmartCard
 }
 object SmartCardProvisioning {
   

@@ -2,7 +2,6 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,18 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the context project ID ) are discouraged. Reads and writes of foreign
   * partition IDs may fail if the project is not in an active state.
   */
-@js.native
 trait SchemaPartitionId extends StObject {
   
   /**
     * If not empty, the ID of the namespace to which the entities belong.
     */
-  var namespaceId: js.UndefOr[String] = js.native
+  var namespaceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the project to which the entities belong.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SchemaPartitionId {
   

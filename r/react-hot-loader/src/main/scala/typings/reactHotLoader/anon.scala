@@ -4,15 +4,13 @@ import typings.react.mod.ComponentType
 import typings.reactHotLoader.mod.HotError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Array[HotError] = js.native
+    var errors: js.Array[HotError]
   }
   object Errors {
     
@@ -34,40 +32,39 @@ object anon {
   }
   
   /* Inlined std.Partial<react-hot-loader.react-hot-loader.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var ErrorOverlay: js.UndefOr[ComponentType[Errors]] = js.native
+    var ErrorOverlay: js.UndefOr[ComponentType[Errors]] = js.undefined
     
-    var allowSFC: js.UndefOr[Boolean] = js.native
+    var allowSFC: js.UndefOr[Boolean] = js.undefined
     
-    var disableHotRenderer: js.UndefOr[Boolean] = js.native
+    var disableHotRenderer: js.UndefOr[Boolean] = js.undefined
     
-    var disableHotRendererWhenInjected: js.UndefOr[Boolean] = js.native
+    var disableHotRendererWhenInjected: js.UndefOr[Boolean] = js.undefined
     
-    var errorReporter: js.UndefOr[ComponentType[HotError]] = js.native
+    var errorReporter: js.UndefOr[ComponentType[HotError]] = js.undefined
     
-    var ignoreComponents: js.UndefOr[Boolean] = js.native
+    var ignoreComponents: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreSFC: js.UndefOr[Boolean] = js.native
+    var ignoreSFC: js.UndefOr[Boolean] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var onComponentCreate: js.UndefOr[js.Function2[/* type */ js.Any, /* displayName */ String, _]] = js.native
+    var onComponentCreate: js.UndefOr[js.Function2[/* type */ js.Any, /* displayName */ String, js.Any]] = js.undefined
     
     var onComponentRegister: js.UndefOr[
-        js.Function3[/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String, _]
-      ] = js.native
+        js.Function3[/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String, js.Any]
+      ] = js.undefined
     
-    var pureRender: js.UndefOr[Boolean] = js.native
+    var pureRender: js.UndefOr[Boolean] = js.undefined
     
-    var pureSFC: js.UndefOr[Boolean] = js.native
+    var pureSFC: js.UndefOr[Boolean] = js.undefined
     
-    var reloadHooks: js.UndefOr[Boolean] = js.native
+    var reloadHooks: js.UndefOr[Boolean] = js.undefined
     
-    var showReactDomPatchNotification: js.UndefOr[Boolean] = js.native
+    var showReactDomPatchNotification: js.UndefOr[Boolean] = js.undefined
     
-    var trackTailUpdates: js.UndefOr[Boolean] = js.native
+    var trackTailUpdates: js.UndefOr[Boolean] = js.undefined
   }
   object PartialConfig {
     
@@ -129,13 +126,13 @@ object anon {
       def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
       
       @scala.inline
-      def setOnComponentCreate(value: (/* type */ js.Any, /* displayName */ String) => _): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
+      def setOnComponentCreate(value: (/* type */ js.Any, /* displayName */ String) => js.Any): Self = StObject.set(x, "onComponentCreate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnComponentCreateUndefined: Self = StObject.set(x, "onComponentCreate", js.undefined)
       
       @scala.inline
-      def setOnComponentRegister(value: (/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String) => _): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
+      def setOnComponentRegister(value: (/* type */ js.Any, /* uniqueLocalName */ String, /* fileName */ String) => js.Any): Self = StObject.set(x, "onComponentRegister", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnComponentRegisterUndefined: Self = StObject.set(x, "onComponentRegister", js.undefined)

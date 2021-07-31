@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOriginRequestPolicyConfigResult extends StObject {
   
   /**
     * The current version of the origin request policy.
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * The origin request policy configuration.
     */
-  var OriginRequestPolicyConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginRequestPolicyConfig] = js.native
+  var OriginRequestPolicyConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.OriginRequestPolicyConfig] = js.undefined
 }
 object GetOriginRequestPolicyConfigResult {
   

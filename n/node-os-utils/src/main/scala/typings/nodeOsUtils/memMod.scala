@@ -2,25 +2,38 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memMod {
   
   @JSImport("node-os-utils/lib/mem", JSImport.Default)
   @js.native
-  class default () extends Mem
+  class default ()
+    extends StObject
+       with Mem {
+    
+    /* CompleteClass */
+    override def free(): js.Promise[MemFreeInfo] = js.native
+    
+    /* CompleteClass */
+    override def info(): js.Promise[MemInfo] = js.native
+    
+    /* CompleteClass */
+    override def totalMem(): Double = js.native
+    
+    /* CompleteClass */
+    override def used(): js.Promise[MemUsedInfo] = js.native
+  }
   
-  @js.native
   trait Mem extends StObject {
     
-    def free(): js.Promise[MemFreeInfo] = js.native
+    def free(): js.Promise[MemFreeInfo]
     
-    def info(): js.Promise[MemInfo] = js.native
+    def info(): js.Promise[MemInfo]
     
-    def totalMem(): Double = js.native
+    def totalMem(): Double
     
-    def used(): js.Promise[MemUsedInfo] = js.native
+    def used(): js.Promise[MemUsedInfo]
   }
   object Mem {
     
@@ -52,12 +65,11 @@ object memMod {
     }
   }
   
-  @js.native
   trait MemFreeInfo extends StObject {
     
-    var freeMemMb: Double = js.native
+    var freeMemMb: Double
     
-    var totalMemMb: Double = js.native
+    var totalMemMb: Double
   }
   object MemFreeInfo {
     
@@ -79,12 +91,13 @@ object memMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.nodeOsUtils.memMod.MemUsedInfo because var conflicts: totalMemMb. Inlined usedMemMb */ @js.native
-  trait MemInfo extends MemFreeInfo {
+  - typings.nodeOsUtils.memMod.MemUsedInfo because var conflicts: totalMemMb. Inlined usedMemMb */ trait MemInfo
+    extends StObject
+       with MemFreeInfo {
     
-    var freeMemPercentage: Double = js.native
+    var freeMemPercentage: Double
     
-    var usedMemMb: Double = js.native
+    var usedMemMb: Double
   }
   object MemInfo {
     
@@ -105,12 +118,11 @@ object memMod {
     }
   }
   
-  @js.native
   trait MemUsedInfo extends StObject {
     
-    var totalMemMb: Double = js.native
+    var totalMemMb: Double
     
-    var usedMemMb: Double = js.native
+    var usedMemMb: Double
   }
   object MemUsedInfo {
     

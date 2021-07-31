@@ -5,10 +5,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.number
 import typings.arcgisJsApi.arcgisJsApiStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionInfoProperties extends StObject {
   
   /**
@@ -16,28 +14,28 @@ trait ExpressionInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#expression)
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#name)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the return type of the Arcade expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#returnType)
     */
-  var returnType: js.UndefOr[boolean | number | string] = js.native
+  var returnType: js.UndefOr[boolean | number | string] = js.undefined
   
   /**
     * The title used to describe the value returned by the expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-ExpressionInfo.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ExpressionInfoProperties {
   

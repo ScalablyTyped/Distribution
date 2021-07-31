@@ -2,15 +2,15 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TasksGetParams extends GenericParams {
+trait TasksGetParams
+  extends StObject
+     with GenericParams {
   
-  var taskId: js.UndefOr[String] = js.native
+  var taskId: js.UndefOr[String] = js.undefined
   
-  var waitForCompletion: js.UndefOr[Boolean] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
 object TasksGetParams {
   

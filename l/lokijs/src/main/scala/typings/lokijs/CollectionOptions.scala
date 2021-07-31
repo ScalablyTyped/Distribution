@@ -7,42 +7,40 @@ import typings.lokijs.lokijsStrings.`shallow-recurse-objects`
 import typings.lokijs.lokijsStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionOptions[E] extends StObject {
   
-  var adaptiveBinaryIndices: Boolean = js.native
+  var adaptiveBinaryIndices: Boolean
   
-  var asyncListeners: Boolean = js.native
+  var asyncListeners: Boolean
   
-  var autoupdate: Boolean = js.native
+  var autoupdate: Boolean
   
-  var cloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects` = js.native
+  var cloneMethod: `parse-stringify` | `jquery-extend-deep` | shallow | `shallow-assign` | `shallow-recurse-objects`
   
   @JSName("clone")
-  var clone_FCollectionOptions: Boolean = js.native
+  var clone_FCollectionOptions: Boolean
   
-  var disableChangesApi: Boolean = js.native
+  var disableChangesApi: Boolean
   
-  var disableDeltaChangesApi: Boolean = js.native
+  var disableDeltaChangesApi: Boolean
   
-  var disableMeta: Boolean = js.native
+  var disableMeta: Boolean
   
-  var exact: js.Array[/* keyof E */ String] = js.native
+  var exact: js.Array[/* keyof E */ String]
   
-  var indices: (/* keyof E */ String) | (js.Array[/* keyof E */ String]) = js.native
+  var indices: (/* keyof E */ String) | (js.Array[/* keyof E */ String])
   
-  var serializableIndices: Boolean = js.native
+  var serializableIndices: Boolean
   
-  var transactional: Boolean = js.native
+  var transactional: Boolean
   
-  var ttl: Double = js.native
+  var ttl: Double
   
-  var ttlInterval: Double = js.native
+  var ttlInterval: Double
   
-  var unique: js.Array[/* keyof E */ String] = js.native
+  var unique: js.Array[/* keyof E */ String]
 }
 object CollectionOptions {
   
@@ -70,7 +68,7 @@ object CollectionOptions {
   }
   
   @scala.inline
-  implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions[_], E] (val x: Self with CollectionOptions[E]) extends AnyVal {
+  implicit class CollectionOptionsMutableBuilder[Self <: CollectionOptions[?], E] (val x: Self & CollectionOptions[E]) extends AnyVal {
     
     @scala.inline
     def setAdaptiveBinaryIndices(value: Boolean): Self = StObject.set(x, "adaptiveBinaryIndices", value.asInstanceOf[js.Any])

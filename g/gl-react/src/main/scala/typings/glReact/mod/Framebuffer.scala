@@ -4,21 +4,19 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Framebuffer extends StObject {
   
-  def bind(): Unit = js.native
+  def bind(): Unit
   
-  var color: WebGLTexture = js.native
+  var color: WebGLTexture
   
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
-  var handle: WebGLFramebuffer = js.native
+  var handle: WebGLFramebuffer
   
-  def syncSize(w: Double, h: Double): Unit = js.native
+  def syncSize(w: Double, h: Double): Unit
 }
 object Framebuffer {
   

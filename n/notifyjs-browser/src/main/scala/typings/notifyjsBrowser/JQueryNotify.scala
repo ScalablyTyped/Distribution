@@ -2,7 +2,6 @@ package typings.notifyjsBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,13 @@ trait JQueryNotify extends StObject {
     * @param options notification options
     */
   def apply(): JQuery = js.native
-  def apply(
-    element: js.UndefOr[scala.Nothing],
-    notificationdata: js.UndefOr[scala.Nothing],
-    options: NotificationOptions
-  ): JQuery = js.native
-  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any): JQuery = js.native
-  def apply(element: js.UndefOr[scala.Nothing], notificationdata: js.Any, options: NotificationOptions): JQuery = js.native
   def apply(element: js.Any): JQuery = js.native
-  def apply(element: js.Any, notificationdata: js.UndefOr[scala.Nothing], options: NotificationOptions): JQuery = js.native
   def apply(element: js.Any, notificationdata: js.Any): JQuery = js.native
   def apply(element: js.Any, notificationdata: js.Any, options: NotificationOptions): JQuery = js.native
+  def apply(element: js.Any, notificationdata: Unit, options: NotificationOptions): JQuery = js.native
+  def apply(element: Unit, notificationdata: js.Any): JQuery = js.native
+  def apply(element: Unit, notificationdata: js.Any, options: NotificationOptions): JQuery = js.native
+  def apply(element: Unit, notificationdata: Unit, options: NotificationOptions): JQuery = js.native
   
   /**
     * Add style

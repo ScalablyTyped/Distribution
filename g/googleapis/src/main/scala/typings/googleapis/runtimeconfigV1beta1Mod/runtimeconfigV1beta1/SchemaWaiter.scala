@@ -2,7 +2,6 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Waiter](/deployment-manager/runtime-configurator/creating-a-waiter)
   * documentation.
   */
-@js.native
 trait SchemaWaiter extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaWaiter extends StObject {
     * Adding the value of `timeout` to this instant yields the timeout deadline
     * for the waiter.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. If the value is `false`, it means the waiter is still
@@ -34,13 +32,13 @@ trait SchemaWaiter extends StObject {
     * finished. If the waiter finished due to a timeout or failure, `error`
     * will be set.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. If the waiter ended due to a failure or timeout, this value
     * will be set.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * [Optional] The failure condition of this waiter. If this condition is
@@ -50,7 +48,7 @@ trait SchemaWaiter extends StObject {
     * value is optional; if no failure condition is set, the only failure
     * scenario will be a timeout.
     */
-  var failure: js.UndefOr[SchemaEndCondition] = js.native
+  var failure: js.UndefOr[SchemaEndCondition] = js.undefined
   
   /**
     * The name of the Waiter resource, in the format:
@@ -61,7 +59,7 @@ trait SchemaWaiter extends StObject {
     * of `[WAITER_NAME]` must be less than 64 bytes.  After you create a Waiter
     * resource, you cannot change the resource name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The success condition. If this condition is met, `done` will
@@ -69,7 +67,7 @@ trait SchemaWaiter extends StObject {
     * condition takes precedence over the success condition. If both conditions
     * are met, a failure will be indicated.
     */
-  var success: js.UndefOr[SchemaEndCondition] = js.native
+  var success: js.UndefOr[SchemaEndCondition] = js.undefined
   
   /**
     * [Required] Specifies the timeout of the waiter in seconds, beginning from
@@ -77,7 +75,7 @@ trait SchemaWaiter extends StObject {
     * elapses before the success or failure conditions are met, the waiter
     * fails and sets the `error` code to `DEADLINE_EXCEEDED`.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object SchemaWaiter {
   

@@ -3,35 +3,33 @@ package typings.randomWords
 import typings.randomWords.mod.WordFormatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined random-words.random-words.Options & {  join :string} */
-  @js.native
   trait Optionsjoinstring extends StObject {
     
-    var exactly: js.UndefOr[Double] = js.native
+    var exactly: js.UndefOr[Double] = js.undefined
     
-    var formatter: js.UndefOr[WordFormatter] = js.native
+    var formatter: js.UndefOr[WordFormatter] = js.undefined
     
-    var join: js.UndefOr[String] with String = js.native
+    var join: js.UndefOr[String] & String
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var wordsPerString: js.UndefOr[Double] = js.native
+    var wordsPerString: js.UndefOr[Double] = js.undefined
   }
   object Optionsjoinstring {
     
     @scala.inline
-    def apply(join: js.UndefOr[String] with String): Optionsjoinstring = {
+    def apply(join: js.UndefOr[String] & String): Optionsjoinstring = {
       val __obj = js.Dynamic.literal(join = join.asInstanceOf[js.Any])
       __obj.asInstanceOf[Optionsjoinstring]
     }
@@ -52,7 +50,7 @@ object anon {
       def setFormatterUndefined: Self = StObject.set(x, "formatter", js.undefined)
       
       @scala.inline
-      def setJoin(value: js.UndefOr[String] with String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
+      def setJoin(value: js.UndefOr[String] & String): Self = StObject.set(x, "join", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])

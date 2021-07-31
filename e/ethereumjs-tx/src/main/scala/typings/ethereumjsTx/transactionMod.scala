@@ -11,7 +11,6 @@ import typings.ethereumjsUtil.mod.BN
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
@@ -47,13 +46,15 @@ object transactionMod {
     * const tx = new Transaction(txData);
     * ```
     */
-  class default () extends Transaction {
+  class default ()
+    extends StObject
+       with Transaction {
     def this(data: js.Array[BufferLike]) = this()
     def this(data: PrefixedHexString) = this()
     def this(data: TxData) = this()
     def this(data: Buffer) = this()
-    def this(data: js.UndefOr[scala.Nothing], opts: TransactionOptions) = this()
     def this(data: js.Array[BufferLike], opts: TransactionOptions) = this()
+    def this(data: Unit, opts: TransactionOptions) = this()
     def this(data: PrefixedHexString, opts: TransactionOptions) = this()
     def this(data: TxData, opts: TransactionOptions) = this()
     def this(data: Buffer, opts: TransactionOptions) = this()

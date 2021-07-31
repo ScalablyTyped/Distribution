@@ -2,15 +2,14 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMapZoomOptions
-  extends IMapMarginOptions
+  extends StObject
+     with IMapMarginOptions
      with IMapCheckZoomRangeOptions {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object IMapZoomOptions {
   

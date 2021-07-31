@@ -2,38 +2,36 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of how user IDs are encrypted.
   */
-@js.native
 trait SchemaEncryptionInfo extends StObject {
   
   /**
     * The encryption entity ID. This should match the encryption configuration
     * for ad serving or Data Transfer.
     */
-  var encryptionEntityId: js.UndefOr[String] = js.native
+  var encryptionEntityId: js.UndefOr[String] = js.undefined
   
   /**
     * The encryption entity type. This should match the encryption
     * configuration for ad serving or Data Transfer.
     */
-  var encryptionEntityType: js.UndefOr[String] = js.native
+  var encryptionEntityType: js.UndefOr[String] = js.undefined
   
   /**
     * Describes whether the encrypted cookie was received from ad serving (the
     * %m macro) or from Data Transfer.
     */
-  var encryptionSource: js.UndefOr[String] = js.native
+  var encryptionSource: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#encryptionInfo&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaEncryptionInfo {
   

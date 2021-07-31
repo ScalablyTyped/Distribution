@@ -5,7 +5,6 @@ import typings.antdMobile.checkboxPropsTypeMod.CheckboxItemPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxItemMod {
@@ -31,18 +30,19 @@ object checkboxItemMod {
   trait CheckboxItem
     extends Component[CheckboxItemProps, js.Any, js.Any]
   
-  @js.native
-  trait CheckboxItemProps extends CheckboxItemPropsType {
+  trait CheckboxItemProps
+    extends StObject
+       with CheckboxItemPropsType {
     
-    var checkboxProps: js.UndefOr[typings.antdMobile.checkboxCheckboxMod.CheckboxProps] = js.native
+    var checkboxProps: js.UndefOr[typings.antdMobile.checkboxCheckboxMod.CheckboxProps] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var listPrefixCls: js.UndefOr[String] = js.native
+    var listPrefixCls: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var wrapLabel: js.UndefOr[Boolean] = js.native
+    var wrapLabel: js.UndefOr[Boolean] = js.undefined
   }
   object CheckboxItemProps {
     

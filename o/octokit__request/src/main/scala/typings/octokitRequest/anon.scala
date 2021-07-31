@@ -6,21 +6,19 @@ import typings.octokitRequest.octokitRequestStrings.follow
 import typings.octokitRequest.octokitRequestStrings.manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var status: Double = js.native
+    var status: Double
     
-    var url: String = js.native
+    var url: String
   }
   object Data {
     
@@ -47,10 +45,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Redirect extends StObject {
     
-    var redirect: js.UndefOr[error | follow | manual] = js.native
+    var redirect: js.UndefOr[error | follow | manual] = js.undefined
   }
   object Redirect {
     

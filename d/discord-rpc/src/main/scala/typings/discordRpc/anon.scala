@@ -2,21 +2,19 @@ package typings.discordRpc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoThreshold extends StObject {
     
-    var autoThreshold: Boolean = js.native
+    var autoThreshold: Boolean
     
-    var delay: Double = js.native
+    var delay: Double
     
-    var shortcut: js.Array[Code] = js.native
+    var shortcut: js.Array[Code]
     
-    var threshold: Double = js.native
+    var threshold: Double
   }
   object AutoThreshold {
     
@@ -46,16 +44,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Avatar extends StObject {
     
-    var avatar: String = js.native
+    var avatar: String
     
-    var discriminator: String = js.native
+    var discriminator: String
     
-    var id: String = js.native
+    var id: String
     
-    var username: String = js.native
+    var username: String
   }
   object Avatar {
     
@@ -82,16 +79,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Capacity extends StObject {
     
-    var capacity: Double = js.native
+    var capacity: Double
     
-    var metadata: js.Any = js.native
+    var metadata: js.Any
     
-    var owner: Id | String = js.native
+    var owner: Id | String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Capacity {
     
@@ -119,14 +115,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object Code {
     
@@ -151,18 +146,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var icon: String = js.native
+    var icon: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var rpc_origins: js.Array[String] = js.native
+    var rpc_origins: js.Array[String]
   }
   object Description {
     
@@ -195,12 +189,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Device extends StObject {
     
-    var device: String = js.native
+    var device: String
     
-    var volume: Double = js.native
+    var volume: Double
   }
   object Device {
     
@@ -221,12 +214,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Force extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Force {
     
@@ -253,10 +245,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -274,12 +265,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
   }
   object Left {
     
@@ -300,12 +290,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var url: String = js.native
+    var url: String
   }
   object Name {
     
@@ -326,12 +315,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Timeout extends StObject {
     
-    var force: Boolean = js.native
+    var force: Boolean
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object Timeout {
     

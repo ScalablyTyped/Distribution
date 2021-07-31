@@ -2,23 +2,21 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoXmlSummaryMetadata extends StObject {
   
   /** The bounds of all the shapes and layers in the XML document. */
-  var bounds: js.UndefOr[LocationRect] = js.native
+  var bounds: js.UndefOr[LocationRect] = js.undefined
   
   /** The description of the content of the XML document. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Any additional metadata that the XML document may have. i.e. atom:author */
-  var metadata: js.UndefOr[IDictionary[_]] = js.native
+  var metadata: js.UndefOr[IDictionary[js.Any]] = js.undefined
   
   /** The title or name of the content of the XML document. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object IGeoXmlSummaryMetadata {
   
@@ -44,7 +42,7 @@ object IGeoXmlSummaryMetadata {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setMetadata(value: IDictionary[_]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
+    def setMetadata(value: IDictionary[js.Any]): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMetadataUndefined: Self = StObject.set(x, "metadata", js.undefined)

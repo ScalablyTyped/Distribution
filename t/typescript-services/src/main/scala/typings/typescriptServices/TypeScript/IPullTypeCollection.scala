@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPullTypeCollection extends StObject {
   
-  def getLength(): Double = js.native
+  def getLength(): Double
   
-  def getTypeAtIndex(index: Double): PullTypeSymbol = js.native
+  def getTypeAtIndex(index: Double): PullTypeSymbol
 }
 object IPullTypeCollection {
   

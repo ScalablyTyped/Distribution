@@ -2,19 +2,17 @@ package typings.jssip.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentDisconnectedEvent extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var reason: String = js.native
+  var reason: String
   
-  var socket: Socket = js.native
+  var socket: Socket
 }
 object UserAgentDisconnectedEvent {
   

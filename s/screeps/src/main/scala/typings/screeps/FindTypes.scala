@@ -3,96 +3,96 @@ package typings.screeps
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FindTypes extends /* key */ NumberDictionary[
+trait FindTypes
+  extends StObject
+     with /* key */ NumberDictionary[
       RoomPosition | AnyCreep | Source | Resource[ResourceConstant] | Structure[StructureConstant] | Flag | ConstructionSite[BuildableStructureConstant] | Mineral[MineralConstant] | Nuke | Tombstone | Deposit | Ruin
     ] {
   
-  var `1`: RoomPosition = js.native
+  var `1`: RoomPosition
   
   // FIND_EXIT_LEFT
-  var `10`: RoomPosition = js.native
+  var `10`: RoomPosition
   
   // FIND_EXIT
-  var `101`: Creep = js.native
+  var `101`: Creep
   
   // FIND_CREEPS
-  var `102`: Creep = js.native
+  var `102`: Creep
   
   // FIND_MY_CREEPS
-  var `103`: Creep = js.native
+  var `103`: Creep
   
   // FIND_HOSTILE_CREEPS
-  var `104`: Source = js.native
+  var `104`: Source
   
   // FIND_SOURCES_ACTIVE
-  var `105`: Source = js.native
+  var `105`: Source
   
   // FIND_SOURCES
-  var `106`: Resource[ResourceConstant] = js.native
+  var `106`: Resource[ResourceConstant]
   
   // FIND_DROPPED_RESOURCES
-  var `107`: AnyStructure = js.native
+  var `107`: AnyStructure
   
   // FIND_STRUCTURES
-  var `108`: AnyOwnedStructure = js.native
+  var `108`: AnyOwnedStructure
   
   // FIND_MY_STRUCTURES
-  var `109`: AnyOwnedStructure = js.native
+  var `109`: AnyOwnedStructure
   
   // FIND_HOSTILE_STRUCTURES
-  var `110`: Flag = js.native
+  var `110`: Flag
   
   // FIND_FLAGS
-  var `111`: ConstructionSite[BuildableStructureConstant] = js.native
+  var `111`: ConstructionSite[BuildableStructureConstant]
   
   // FIND_CONSTRUCTION_SITES
-  var `112`: StructureSpawn = js.native
+  var `112`: StructureSpawn
   
   // FIND_MY_SPAWNS
-  var `113`: StructureSpawn = js.native
+  var `113`: StructureSpawn
   
   // FIND_HOSTILE_SPAWNS
-  var `114`: ConstructionSite[BuildableStructureConstant] = js.native
+  var `114`: ConstructionSite[BuildableStructureConstant]
   
   // FIND_MY_CONSTRUCTION_SITES
-  var `115`: ConstructionSite[BuildableStructureConstant] = js.native
+  var `115`: ConstructionSite[BuildableStructureConstant]
   
   // FIND_HOSTILE_CONSTRUCTION_SITES
-  var `116`: Mineral[MineralConstant] = js.native
+  var `116`: Mineral[MineralConstant]
   
   // FIND_MINERALS
-  var `117`: Nuke = js.native
+  var `117`: Nuke
   
   // FIND_NUKES
-  var `118`: Tombstone = js.native
+  var `118`: Tombstone
   
   // FIND_TOMBSTONES
-  var `119`: PowerCreep = js.native
+  var `119`: PowerCreep
   
   // FIND_POWER_CREEPS
-  var `120`: PowerCreep = js.native
+  var `120`: PowerCreep
   
   // FIND_MY_POWER_CREEPS
-  var `121`: PowerCreep = js.native
+  var `121`: PowerCreep
   
   // FIND_HOSTILE_POWER_CREEPS
-  var `122`: Deposit = js.native
+  var `122`: Deposit
   
   // FIND_DEPOSITS
-  var `123`: Ruin = js.native
+  var `123`: Ruin
   
   // FIND_EXIT_TOP
-  var `3`: RoomPosition = js.native
+  var `3`: RoomPosition
   
   // FIND_EXIT_RIGHT
-  var `5`: RoomPosition = js.native
+  var `5`: RoomPosition
   
   // FIND_EXIT_BOTTOM
-  var `7`: RoomPosition = js.native
+  var `7`: RoomPosition
 }
 object FindTypes {
   

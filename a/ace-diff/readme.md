@@ -12,7 +12,7 @@ A diff/merging wrapper for Ace Editor built on google-diff-match-patch
 | Keywords           | ace, dif, diffing, merge, merging, ace editor, syntax highlighting |
 | # releases         | 5 |
 | # dependents       | 1 |
-| # downloads        | 53412 |
+| # downloads        | 54569 |
 | # stars            | 0 |
 
 ## Links

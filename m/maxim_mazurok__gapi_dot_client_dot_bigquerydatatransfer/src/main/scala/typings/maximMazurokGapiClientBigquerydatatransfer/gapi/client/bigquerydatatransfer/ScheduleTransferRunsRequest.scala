@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleTransferRunsRequest extends StObject {
   
   /** Required. End time of the range of transfer runs. For example, `"2017-05-30T00:00:00+00:00"`. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Required. Start time of the range of transfer runs. For example, `"2017-05-25T00:00:00+00:00"`. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object ScheduleTransferRunsRequest {
   

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapMarkerTooltipAnimation extends StObject {
   
-  var close: js.UndefOr[MapMarkerTooltipAnimationClose] = js.native
+  var close: js.UndefOr[MapMarkerTooltipAnimationClose] = js.undefined
   
-  var open: js.UndefOr[MapMarkerTooltipAnimationOpen] = js.native
+  var open: js.UndefOr[MapMarkerTooltipAnimationOpen] = js.undefined
 }
 object MapMarkerTooltipAnimation {
   

@@ -4,40 +4,39 @@ import typings.codependency.anon.Index
 import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("codependency", "get")
+  @JSImport("codependency", JSImport.Namespace)
   @js.native
-  def get(middlewareName: String): RequirePeerFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("codependency", "register")
-  @js.native
-  def register(baseModule: NodeModule): RequirePeerFunction = js.native
-  @JSImport("codependency", "register")
-  @js.native
-  def register(baseModule: NodeModule, options: Index): RequirePeerFunction = js.native
+  @scala.inline
+  def get(middlewareName: String): RequirePeerFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(middlewareName.asInstanceOf[js.Any]).asInstanceOf[RequirePeerFunction]
   
-  @js.native
+  @scala.inline
+  def register(baseModule: NodeModule): RequirePeerFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(baseModule.asInstanceOf[js.Any]).asInstanceOf[RequirePeerFunction]
+  @scala.inline
+  def register(baseModule: NodeModule, options: Index): RequirePeerFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(baseModule.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequirePeerFunction]
+  
   trait DependencyInfo extends StObject {
     
-    var installedVersion: String | Null = js.native
+    var installedVersion: String | Null
     
-    var isInstalled: Boolean | Null = js.native
+    var isInstalled: Boolean | Null
     
-    var isValid: Boolean | Null = js.native
+    var isValid: Boolean | Null
     
-    var pkgPath: String = js.native
+    var pkgPath: String
     
-    var supportedRange: String | Null = js.native
+    var supportedRange: String | Null
   }
   object DependencyInfo {
     
     @scala.inline
     def apply(pkgPath: String): DependencyInfo = {
-      val __obj = js.Dynamic.literal(pkgPath = pkgPath.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(pkgPath = pkgPath.asInstanceOf[js.Any], installedVersion = null, isInstalled = null, isValid = null, supportedRange = null)
       __obj.asInstanceOf[DependencyInfo]
     }
     
@@ -82,12 +81,11 @@ object mod {
     def resolve(name: String): DependencyInfo = js.native
   }
   
-  @js.native
   trait RequirePeerFunctionOptions extends StObject {
     
-    var dontThrow: js.UndefOr[Boolean] = js.native
+    var dontThrow: js.UndefOr[Boolean] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
   }
   object RequirePeerFunctionOptions {
     

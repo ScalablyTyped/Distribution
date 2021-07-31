@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquerydatatransfer.gapi.client.bigqueryd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var dataSources: DataSourcesResource = js.native
+  var dataSources: DataSourcesResource
   
-  var locations: LocationsResource = js.native
+  var locations: LocationsResource
   
-  var transferConfigs: TransferConfigsResource = js.native
+  var transferConfigs: TransferConfigsResource
 }
 object ProjectsResource {
   

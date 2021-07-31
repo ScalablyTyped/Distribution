@@ -8,7 +8,6 @@ import typings.backbone.mod.ModelSetOptions
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,11 +25,12 @@ object mod {
     @scala.inline
     def fetchCache_=(x: Static): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fetchCache")(x.asInstanceOf[js.Any])
     
-    @js.native
-    trait CollectionFetchWithCacheOptions extends ModelFetchWithCacheOptions {
+    trait CollectionFetchWithCacheOptions
+      extends StObject
+         with ModelFetchWithCacheOptions {
       
       @JSName("prefillSuccess")
-      var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ js.Any, Unit]] = js.native
+      var prefillSuccess_CollectionFetchWithCacheOptions: js.UndefOr[js.Function1[/* self */ js.Any, Unit]] = js.undefined
     }
     object CollectionFetchWithCacheOptions {
       
@@ -63,24 +63,25 @@ object mod {
       * Collection #.fetch() method. Here are the options you can pass into that
       * method to get behaviour particular to Backbone Fetch Cache.
       */
-    @js.native
-    trait ModelFetchWithCacheOptions extends ModelFetchOptions {
+    trait ModelFetchWithCacheOptions
+      extends StObject
+         with ModelFetchOptions {
       
       /**
         * Calls to modelInstance.fetch or collectionInstance.fetch will be
         * fulfilled from the cache (if possible) when cache: true is set in
         * the options hash.
         */
-      var cache: js.UndefOr[Boolean] = js.native
+      var cache: js.UndefOr[Boolean] = js.undefined
       
-      var context: js.UndefOr[js.Any] = js.native
+      var context: js.UndefOr[js.Any] = js.undefined
       
       /**
         * Cache values expire after 5 minutes by default. You can adjust this
         * by passing expires: <seconds> to the fetch call. Set to false to
         * never expire.
         */
-      var expires: js.UndefOr[Double] = js.native
+      var expires: js.UndefOr[Double] = js.undefined
       
       /**
         * This option allows the model/collection to be populated from the
@@ -109,13 +110,13 @@ object mod {
         *  prefill expired, use the prefill callback and do a fetch (usual
         *  prefill behaviour)
         */
-      var prefill: js.UndefOr[Boolean] = js.native
+      var prefill: js.UndefOr[Boolean] = js.undefined
       
-      var prefillExpires: js.UndefOr[Double] = js.native
+      var prefillExpires: js.UndefOr[Double] = js.undefined
       
       var prefillSuccess: js.UndefOr[
             js.Function3[/* self */ js.Any, /* attributes */ js.Any, /* opts */ this.type, Unit]
-          ] = js.native
+          ] = js.undefined
     }
     object ModelFetchWithCacheOptions {
       
@@ -174,16 +175,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Cache extends StObject {
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var lastSync: Double = js.native
+    var lastSync: Double
     
-    var prefillExpires: Double = js.native
+    var prefillExpires: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Cache {
     
@@ -210,12 +210,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait GetCacheKeyObject extends _GetCacheKeyOptions {
+  trait GetCacheKeyObject
+    extends StObject
+       with _GetCacheKeyOptions {
     
-    var getCacheKey: js.UndefOr[js.Function1[/* opts */ js.UndefOr[GetCacheOptions], String]] = js.native
+    var getCacheKey: js.UndefOr[js.Function1[/* opts */ js.UndefOr[GetCacheOptions], String]] = js.undefined
     
-    var url: js.UndefOr[js.Function0[String]] = js.native
+    var url: js.UndefOr[js.Function0[String]] = js.undefined
   }
   object GetCacheKeyObject {
     
@@ -249,12 +250,11 @@ object mod {
   */
   type GetCacheKeyOptions = _GetCacheKeyOptions | String
   
-  @js.native
   trait GetCacheOptions extends StObject {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object GetCacheOptions {
     
@@ -281,16 +281,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait SetCacheOptions extends GetCacheOptions {
+  trait SetCacheOptions
+    extends StObject
+       with GetCacheOptions {
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var expires: Boolean | Double = js.native
+    var expires: Boolean | Double
     
-    var prefill: Boolean = js.native
+    var prefill: Boolean
     
-    var prefillExpires: Boolean | Double = js.native
+    var prefillExpires: Boolean | Double
   }
   object SetCacheOptions {
     
@@ -383,11 +384,11 @@ object mod {
     def reset(): Unit = js.native
     
     def setCache(instance: js.Function0[String]): Unit = js.native
-    def setCache(instance: js.Function0[String], opts: js.UndefOr[scala.Nothing], attrs: js.Any): Unit = js.native
+    def setCache(instance: js.Function0[String], opts: Unit, attrs: js.Any): Unit = js.native
     def setCache(instance: js.Function0[String], opts: SetCacheOptions): Unit = js.native
     def setCache(instance: js.Function0[String], opts: SetCacheOptions, attrs: js.Any): Unit = js.native
     def setCache(instance: GetCacheKeyOptions): Unit = js.native
-    def setCache(instance: GetCacheKeyOptions, opts: js.UndefOr[scala.Nothing], attrs: js.Any): Unit = js.native
+    def setCache(instance: GetCacheKeyOptions, opts: Unit, attrs: js.Any): Unit = js.native
     def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions): Unit = js.native
     def setCache(instance: GetCacheKeyOptions, opts: SetCacheOptions, attrs: js.Any): Unit = js.native
     

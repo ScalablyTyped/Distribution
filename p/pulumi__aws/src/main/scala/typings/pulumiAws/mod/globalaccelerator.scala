@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalaccelerator {
@@ -29,11 +28,15 @@ object globalaccelerator {
       */
     def this(name: String) = this()
     def this(name: String, args: AcceleratorArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AcceleratorArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Accelerator {
+    
+    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Accelerator resource's state with the given name, ID, and optional extra
@@ -44,26 +47,21 @@ object globalaccelerator {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.acceleratorMod.Accelerator = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AcceleratorState): typings.pulumiAws.acceleratorMod.Accelerator = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.acceleratorMod.Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.acceleratorMod.Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.acceleratorMod.Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AcceleratorState): typings.pulumiAws.acceleratorMod.Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.acceleratorMod.Accelerator]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AcceleratorState, opts: CustomResourceOptions): typings.pulumiAws.acceleratorMod.Accelerator = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.acceleratorMod.Accelerator]
     
     /**
       * Returns true if the given object is an instance of Accelerator.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.Accelerator.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/accelerator.Accelerator */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup")
@@ -83,6 +81,10 @@ object globalaccelerator {
   /* static members */
   object EndpointGroup {
     
+    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EndpointGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,26 +94,21 @@ object globalaccelerator {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointGroupState): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.endpointGroupMod.EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointGroupMod.EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointGroupMod.EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointGroupState): typings.pulumiAws.endpointGroupMod.EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointGroupMod.EndpointGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointGroupState, opts: CustomResourceOptions): typings.pulumiAws.endpointGroupMod.EndpointGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.endpointGroupMod.EndpointGroup]
     
     /**
       * Returns true if the given object is an instance of EndpointGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.EndpointGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/endpointGroup.EndpointGroup */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "globalaccelerator.Listener")
@@ -131,6 +128,10 @@ object globalaccelerator {
   /* static members */
   object Listener {
     
+    @JSImport("@pulumi/aws", "globalaccelerator.Listener")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Listener resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -140,25 +141,20 @@ object globalaccelerator {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
-    @JSImport("@pulumi/aws", "globalaccelerator.Listener.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.globalacceleratorListenerMod.Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalacceleratorListenerMod.Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalacceleratorListenerMod.Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState): typings.pulumiAws.globalacceleratorListenerMod.Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalacceleratorListenerMod.Listener]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ListenerState, opts: CustomResourceOptions): typings.pulumiAws.globalacceleratorListenerMod.Listener = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalacceleratorListenerMod.Listener]
     
     /**
       * Returns true if the given object is an instance of Listener.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "globalaccelerator.Listener.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/globalaccelerator/listener.Listener */ Boolean]
   }
 }

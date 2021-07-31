@@ -10,7 +10,6 @@ import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererConstructor
 import typings.arcgisJsApi.esri.PointCloudUniqueValueRendererProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,8 +32,17 @@ object pointCloudRenderers {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudClassBreaksRenderer.html)
     */
   class PointCloudClassBreaksRendererCls ()
-    extends typings.arcgisJsApi.esri.PointCloudClassBreaksRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.PointCloudClassBreaksRenderer {
     def this(properties: PointCloudClassBreaksRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.pointCloudRenderers.PointCloudRGBRenderer")
@@ -50,8 +58,17 @@ object pointCloudRenderers {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRGBRenderer.html)
     */
   class PointCloudRGBRendererCls ()
-    extends typings.arcgisJsApi.esri.PointCloudRGBRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.PointCloudRGBRenderer {
     def this(properties: PointCloudRGBRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.pointCloudRenderers.PointCloudStretchRenderer")
@@ -67,8 +84,17 @@ object pointCloudRenderers {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudStretchRenderer.html)
     */
   class PointCloudStretchRendererCls ()
-    extends typings.arcgisJsApi.esri.PointCloudStretchRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.PointCloudStretchRenderer {
     def this(properties: PointCloudStretchRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
   @JSGlobal("__esri.pointCloudRenderers.PointCloudUniqueValueRenderer")
@@ -84,7 +110,16 @@ object pointCloudRenderers {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudUniqueValueRenderer.html)
     */
   class PointCloudUniqueValueRendererCls ()
-    extends typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer {
+    extends StObject
+       with typings.arcgisJsApi.esri.PointCloudUniqueValueRenderer {
     def this(properties: PointCloudUniqueValueRendererProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
 }

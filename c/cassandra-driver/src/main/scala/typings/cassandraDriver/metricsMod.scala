@@ -6,7 +6,6 @@ import typings.cassandraDriver.mod.errors.ResponseError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricsMod {
@@ -15,7 +14,9 @@ object metricsMod {
     
     @JSImport("cassandra-driver/lib/metrics", "metrics.DefaultMetrics")
     @js.native
-    class DefaultMetrics () extends ClientMetrics
+    class DefaultMetrics ()
+      extends StObject
+         with ClientMetrics
     
     @js.native
     trait ClientMetrics extends StObject {

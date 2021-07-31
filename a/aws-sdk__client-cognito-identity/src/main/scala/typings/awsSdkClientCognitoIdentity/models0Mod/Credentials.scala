@@ -3,31 +3,29 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credentials extends StObject {
   
   /**
     * <p>The Access Key portion of the credentials.</p>
     */
-  var AccessKeyId: js.UndefOr[String] = js.native
+  var AccessKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The date at which these credentials will expire.</p>
     */
-  var Expiration: js.UndefOr[Date] = js.native
+  var Expiration: js.UndefOr[Date] = js.undefined
   
   /**
     * <p>The Secret Access Key portion of the credentials</p>
     */
-  var SecretKey: js.UndefOr[String] = js.native
+  var SecretKey: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The Session Token portion of the credentials</p>
     */
-  var SessionToken: js.UndefOr[String] = js.native
+  var SessionToken: js.UndefOr[String] = js.undefined
 }
 object Credentials {
   
@@ -37,9 +35,12 @@ object Credentials {
     __obj.asInstanceOf[Credentials]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "Credentials.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "Credentials")
   @js.native
-  def filterSensitiveLog(obj: Credentials): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: Credentials): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class CredentialsMutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {

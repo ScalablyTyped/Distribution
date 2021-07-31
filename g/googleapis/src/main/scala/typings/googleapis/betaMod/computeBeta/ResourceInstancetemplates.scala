@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Instancetemplates")
@@ -91,7 +90,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancetemplatesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancetemplatesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -179,7 +178,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceTemplate]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceTemplate] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(params: ParamsResourceInstancetemplatesGet): GaxiosPromise[SchemaInstanceTemplate] = js.native
   def get(params: ParamsResourceInstancetemplatesGet, callback: BodyResponseCallback[SchemaInstanceTemplate]): Unit = js.native
   def get(
@@ -210,7 +209,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancetemplatesGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceInstancetemplatesGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -302,7 +301,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancetemplatesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancetemplatesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -402,7 +401,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceTemplateList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceTemplateList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(params: ParamsResourceInstancetemplatesList): GaxiosPromise[SchemaInstanceTemplateList] = js.native
   def list(
     params: ParamsResourceInstancetemplatesList,
@@ -437,7 +436,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancetemplatesSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceInstancetemplatesSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -526,7 +525,7 @@ class ResourceInstancetemplates protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInstancetemplatesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInstancetemplatesTestiampermissions,

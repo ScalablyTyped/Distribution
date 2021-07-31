@@ -12,7 +12,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorStrings.disableCustomCol
 import typings.wordpressBlockEditor.wordpressBlockEditorStrings.hasColorsToChoose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withColorContextMod {
@@ -20,28 +19,33 @@ object withColorContextMod {
   object default {
     
     // prettier-ignore
+    @scala.inline
+    def apply[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+        (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+      ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+        (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+      ]]
+    @scala.inline
+    def apply[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+        (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+      ] = ^.asInstanceOf[js.Dynamic].apply(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+        (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+      ]]
+    
     @JSImport("@wordpress/block-editor/components/color-palette/with-color-context", JSImport.Default)
     @js.native
-    def apply[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps with OwnProps, ComponentState]): ComponentType[
-        (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-      ] = js.native
-    @JSImport("@wordpress/block-editor/components/color-palette/with-color-context", JSImport.Default)
-    @js.native
-    def apply[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps with OwnProps]): ComponentType[
-        (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-      ] = js.native
+    val ^ : js.Any = js.native
   }
   
   object withColorContext {
     
-    @js.native
     trait Props extends StObject {
       
-      var colors: js.Array[EditorColor] = js.native
+      var colors: js.Array[EditorColor]
       
-      var disableCustomColors: Boolean = js.native
+      var disableCustomColors: Boolean
       
-      var hasColorsToChoose: Boolean = js.native
+      var hasColorsToChoose: Boolean
     }
     object Props {
       

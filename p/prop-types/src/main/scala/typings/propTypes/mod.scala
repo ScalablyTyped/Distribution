@@ -13,10 +13,13 @@ import typings.std.Pick
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("prop-types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("prop-types", "any")
   @js.native
@@ -26,26 +29,23 @@ object mod {
   @js.native
   val array: Requireable[js.Array[js.Any]] = js.native
   
-  @JSImport("prop-types", "arrayOf")
-  @js.native
-  def arrayOf[T](`type`: Validator[T]): Requireable[js.Array[T]] = js.native
+  @scala.inline
+  def arrayOf[T](`type`: Validator[T]): Requireable[js.Array[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[js.Array[T]]]
   
   @JSImport("prop-types", "bool")
   @js.native
   val bool: Requireable[Boolean] = js.native
   
-  @JSImport("prop-types", "checkPropTypes")
-  @js.native
-  def checkPropTypes(typeSpecs: js.Any, values: js.Any, location: String, componentName: String): Unit = js.native
-  @JSImport("prop-types", "checkPropTypes")
-  @js.native
+  @scala.inline
+  def checkPropTypes(typeSpecs: js.Any, values: js.Any, location: String, componentName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropTypes")(typeSpecs.asInstanceOf[js.Any], values.asInstanceOf[js.Any], location.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def checkPropTypes(
     typeSpecs: js.Any,
     values: js.Any,
     location: String,
     componentName: String,
-    getStack: js.Function0[_]
-  ): Unit = js.native
+    getStack: js.Function0[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkPropTypes")(typeSpecs.asInstanceOf[js.Any], values.asInstanceOf[js.Any], location.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any], getStack.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("prop-types", "element")
   @js.native
@@ -55,17 +55,15 @@ object mod {
   @js.native
   val elementType: Requireable[ReactComponentLike] = js.native
   
-  @JSImport("prop-types", "exact")
-  @js.native
-  def exact[P /* <: ValidationMap[_] */](`type`: P): Requireable[Required[InferProps[P]]] = js.native
+  @scala.inline
+  def exact[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[Required[InferProps[P]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("exact")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[Required[InferProps[P]]]]
   
   @JSImport("prop-types", "func")
   @js.native
   val func: Requireable[js.Function1[/* repeated */ js.Any, js.Any]] = js.native
   
-  @JSImport("prop-types", "instanceOf")
-  @js.native
-  def instanceOf[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = js.native
+  @scala.inline
+  def instanceOf[T](expectedClass: Instantiable1[/* args (repeated) */ js.Any, T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instanceOf")(expectedClass.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
   @JSImport("prop-types", "node")
   @js.native
@@ -79,29 +77,32 @@ object mod {
   @js.native
   val number: Requireable[Double] = js.native
   
-  @JSImport("prop-types", "objectOf")
+  @JSImport("prop-types", "object")
   @js.native
+  val `object`: Requireable[js.Object] = js.native
+  
+  @scala.inline
   def objectOf[T](`type`: Validator[T]): Requireable[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof any ]: T}
-    */ typings.propTypes.propTypesStrings.objectOf with TopLevel[js.Any]
-  ] = js.native
+    */ typings.propTypes.propTypesStrings.objectOf & TopLevel[js.Any]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectOf")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof any ]: T}
+    */ typings.propTypes.propTypesStrings.objectOf & TopLevel[js.Any]
+  ]]
   
-  @JSImport("prop-types", "oneOf")
-  @js.native
-  def oneOf[T](types: js.Array[T]): Requireable[T] = js.native
+  @scala.inline
+  def oneOf[T](types: js.Array[T]): Requireable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOf")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[T]]
   
-  @JSImport("prop-types", "oneOfType")
-  @js.native
-  def oneOfType[T /* <: Validator[_] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = js.native
+  @scala.inline
+  def oneOfType[T /* <: Validator[js.Any] */](types: js.Array[T]): Requireable[NonNullable[InferType[T]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("oneOfType")(types.asInstanceOf[js.Any]).asInstanceOf[Requireable[NonNullable[InferType[T]]]]
   
-  @JSImport("prop-types", "resetWarningCache")
-  @js.native
-  def resetWarningCache(): Unit = js.native
+  @scala.inline
+  def resetWarningCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetWarningCache")().asInstanceOf[Unit]
   
-  @JSImport("prop-types", "shape")
-  @js.native
-  def shape[P /* <: ValidationMap[_] */](`type`: P): Requireable[InferProps[P]] = js.native
+  @scala.inline
+  def shape[P /* <: ValidationMap[js.Any] */](`type`: P): Requireable[InferProps[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("shape")(`type`.asInstanceOf[js.Any]).asInstanceOf[Requireable[InferProps[P]]]
   
   @JSImport("prop-types", "string")
   @js.native
@@ -111,11 +112,11 @@ object mod {
   @js.native
   val symbol: Requireable[js.Symbol] = js.native
   
-  type InferProps[V] = (InferPropsInner[Pick[V, RequiredKeys[V]]]) with (Partial[InferPropsInner[Pick[V, OptionalKeys[V]]]])
+  type InferProps[V] = (InferPropsInner[Pick[V, RequiredKeys[V]]]) & (Partial[InferPropsInner[Pick[V, OptionalKeys[V]]]])
   
   type InferPropsInner[V] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof V ]: -? prop-types.prop-types.InferType<V[K]>}
-    */ typings.propTypes.propTypesStrings.InferPropsInner with TopLevel[V]
+    */ typings.propTypes.propTypesStrings.InferPropsInner & TopLevel[V]
   
   type InferType[V] = js.Any
   
@@ -129,20 +130,21 @@ object mod {
   
   type ReactComponentLike = String | (js.Function2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any]) | (Instantiable2[/* props */ js.Any, /* context */ js.UndefOr[js.Any], js.Any])
   
-  @js.native
-  trait ReactElementLike extends _ReactNodeLike {
+  trait ReactElementLike
+    extends StObject
+       with _ReactNodeLike {
     
-    var key: String | Double | Null = js.native
+    var key: String | Double | Null
     
-    var props: js.Any = js.native
+    var props: js.Any
     
-    var `type`: ReactComponentLike = js.native
+    var `type`: ReactComponentLike
   }
   object ReactElementLike {
     
     @scala.inline
     def apply(props: js.Any, `type`: ReactComponentLike): ReactElementLike = {
-      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReactElementLike]
     }
@@ -169,7 +171,8 @@ object mod {
   
   @js.native
   trait ReactNodeArray
-    extends Array[ReactNodeLike]
+    extends StObject
+       with Array[ReactNodeLike]
        with _ReactNodeLike
   
   /* Rewritten from type alias, can be one of: 
@@ -180,13 +183,14 @@ object mod {
     - scala.Double
     - scala.Boolean
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type ReactNodeLike = js.UndefOr[_ReactNodeLike | js.Object | String | Double | Boolean | Null]
   
   @js.native
   trait Requireable[T]
-    extends Validator[js.UndefOr[T | Null]] {
+    extends StObject
+       with Validator[js.UndefOr[T | Null]] {
     
     def isRequired(
       props: StringDictionary[js.Any],
@@ -203,7 +207,7 @@ object mod {
   
   type ValidationMap[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? prop-types.prop-types.Validator<T[K]>}
-    */ typings.propTypes.propTypesStrings.ValidationMap with TopLevel[T]
+    */ typings.propTypes.propTypesStrings.ValidationMap & TopLevel[T]
   
   @js.native
   trait Validator[T] extends StObject {
@@ -218,8 +222,4 @@ object mod {
   }
   
   trait _ReactNodeLike extends StObject
-  
-  @JSImport("prop-types", "object")
-  @js.native
-  val `object`: Requireable[js.Object] = js.native
 }

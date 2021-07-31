@@ -2,7 +2,6 @@ package typings.jasmineAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -10,7 +9,8 @@ object global {
   @JSGlobal("MockAjax")
   @js.native
   class MockAjax protected ()
-    extends typings.jasmineAjax.MockAjax {
+    extends StObject
+       with typings.jasmineAjax.MockAjax {
     def this(globals: js.Any) = this()
   }
   

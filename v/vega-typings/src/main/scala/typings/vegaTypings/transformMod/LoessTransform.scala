@@ -5,30 +5,30 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.loess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LoessTransform extends _Transforms {
+trait LoessTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var bandwidth: js.UndefOr[Double | SignalRef] = js.native
+  var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var `type`: loess = js.native
+  var `type`: loess
   
-  var x: FieldRef = js.native
+  var x: FieldRef
   
-  var y: FieldRef = js.native
+  var y: FieldRef
 }
 object LoessTransform {
   
   @scala.inline
-  def apply(`type`: loess, x: FieldRef, y: FieldRef): LoessTransform = {
+  def apply(x: FieldRef, y: FieldRef): LoessTransform = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("loess")
     __obj.asInstanceOf[LoessTransform]
   }
   

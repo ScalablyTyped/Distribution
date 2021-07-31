@@ -2,16 +2,17 @@ package typings.ethereumjsCommon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object genesisStatesMod {
   
-  @JSImport("ethereumjs-common/dist/genesisStates", "genesisStateById")
+  @JSImport("ethereumjs-common/dist/genesisStates", JSImport.Namespace)
   @js.native
-  def genesisStateById(id: Double): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereumjs-common/dist/genesisStates", "genesisStateByName")
-  @js.native
-  def genesisStateByName(name: String): js.Any = js.native
+  @scala.inline
+  def genesisStateById(id: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateById")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def genesisStateByName(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("genesisStateByName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

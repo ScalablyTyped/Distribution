@@ -10,9 +10,9 @@ HTTP Range processing utilities
 | ------------------ | :-------------: |
 | Full name          | @hapi/ammo |
 | Keywords           | http, range, utilities |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 6 |
-| # downloads        | 10894123 |
+| # downloads        | 14048762 |
 | # stars            | 0 |
 
 ## Links

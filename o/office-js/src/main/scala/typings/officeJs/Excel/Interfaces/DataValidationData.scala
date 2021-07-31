@@ -16,11 +16,9 @@ import typings.officeJs.officeJsStrings.Time
 import typings.officeJs.officeJsStrings.WholeNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `dataValidation.toJSON()`. */
-@js.native
 trait DataValidationData extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait DataValidationData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.native
+  var errorAlert: js.UndefOr[DataValidationErrorAlert] = js.undefined
   
   /**
     *
@@ -37,7 +35,7 @@ trait DataValidationData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var ignoreBlanks: js.UndefOr[Boolean] = js.native
+  var ignoreBlanks: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -45,7 +43,7 @@ trait DataValidationData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var prompt: js.UndefOr[DataValidationPrompt] = js.native
+  var prompt: js.UndefOr[DataValidationPrompt] = js.undefined
   
   /**
     *
@@ -53,7 +51,7 @@ trait DataValidationData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var rule: js.UndefOr[DataValidationRule] = js.native
+  var rule: js.UndefOr[DataValidationRule] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait DataValidationData extends StObject {
     */
   var `type`: js.UndefOr[
     DataValidationType | None | WholeNumber | Decimal | List | Date | Time | TextLength | Custom | Inconsistent | MixedCriteria
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait DataValidationData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var valid: js.UndefOr[Boolean] = js.native
+  var valid: js.UndefOr[Boolean] = js.undefined
 }
 object DataValidationData {
   

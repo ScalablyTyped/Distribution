@@ -4,45 +4,45 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Base interface for XIdlField2s and XIdlMethods. */
-@js.native
-trait XIdlMember extends XInterface {
+trait XIdlMember
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
-  val DeclaringClass: XIdlClass[_] = js.native
+  val DeclaringClass: XIdlClass[js.Any]
   
   /**
     * Returns the fully-qualified name of the member.
     * @returns fully-qualified name of the member
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * Returns the declaring type of this field, i.e. the type having the member declared (interface, enum, struct, exception).
     * @returns declaring type
     */
-  def getDeclaringClass(): XIdlClass[_] = js.native
+  def getDeclaringClass(): XIdlClass[js.Any]
   
   /**
     * Returns the fully-qualified name of the member.
     * @returns fully-qualified name of the member
     */
-  def getName(): String = js.native
+  def getName(): String
 }
 object XIdlMember {
   
   @scala.inline
   def apply(
-    DeclaringClass: XIdlClass[_],
+    DeclaringClass: XIdlClass[js.Any],
     Name: String,
     acquire: () => Unit,
-    getDeclaringClass: () => XIdlClass[_],
+    getDeclaringClass: () => XIdlClass[js.Any],
     getName: () => String,
     queryInterface: `type` => js.Any,
     release: () => Unit
@@ -55,10 +55,10 @@ object XIdlMember {
   implicit class XIdlMemberMutableBuilder[Self <: XIdlMember] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDeclaringClass(value: XIdlClass[_]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
+    def setDeclaringClass(value: XIdlClass[js.Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetDeclaringClass(value: () => XIdlClass[_]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
+    def setGetDeclaringClass(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getDeclaringClass", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))

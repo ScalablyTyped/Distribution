@@ -2,19 +2,19 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DependenciesParams extends ErrorParameters {
+trait DependenciesParams
+  extends StObject
+     with ErrorParameters {
   
-  var deps: String = js.native
+  var deps: String
   
-  var depsCount: Double = js.native
+  var depsCount: Double
   
-  var missingProperty: String = js.native
+  var missingProperty: String
   
-  var property: String = js.native
+  var property: String
 }
 object DependenciesParams {
   

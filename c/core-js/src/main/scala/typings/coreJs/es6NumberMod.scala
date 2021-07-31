@@ -2,7 +2,6 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* was `typeof core.Number` */
@@ -30,105 +29,79 @@ object es6NumberMod {
   @scala.inline
   def MIN_SAFE_INTEGER_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_SAFE_INTEGER")(x.asInstanceOf[js.Any])
   
-  @JSImport("core-js/es6/number", "acosh")
-  @js.native
-  def acosh(x: Double): Double = js.native
+  @scala.inline
+  def acosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("acosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "asinh")
-  @js.native
-  def asinh(x: Double): Double = js.native
+  @scala.inline
+  def asinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("asinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "atanh")
-  @js.native
-  def atanh(x: Double): Double = js.native
+  @scala.inline
+  def atanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("atanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "cbrt")
-  @js.native
-  def cbrt(x: Double): Double = js.native
+  @scala.inline
+  def cbrt(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cbrt")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "clz32")
-  @js.native
-  def clz32(x: Double): Double = js.native
+  @scala.inline
+  def clz32(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("clz32")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "cosh")
-  @js.native
-  def cosh(x: Double): Double = js.native
+  @scala.inline
+  def cosh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cosh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "expm1")
-  @js.native
-  def expm1(x: Double): Double = js.native
+  @scala.inline
+  def expm1(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("expm1")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "fround")
-  @js.native
-  def fround(x: Double): Double = js.native
+  @scala.inline
+  def fround(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fround")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "hypot")
-  @js.native
-  def hypot(values: Double*): Double = js.native
+  @scala.inline
+  def hypot(values: Double*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hypot")(values.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "imul")
-  @js.native
-  def imul(x: Double, y: Double): Double = js.native
+  @scala.inline
+  def imul(x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("imul")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "isFinite")
-  @js.native
-  def isFinite(number: Double): Boolean = js.native
+  @scala.inline
+  def isFinite(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFinite")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("core-js/es6/number", "isInteger")
-  @js.native
-  def isInteger(number: Double): Boolean = js.native
+  @scala.inline
+  def isInteger(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInteger")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("core-js/es6/number", "isNaN")
-  @js.native
-  def isNaN(number: Double): Boolean = js.native
+  @scala.inline
+  def isNaN(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("core-js/es6/number", "isSafeInteger")
-  @js.native
-  def isSafeInteger(number: Double): Boolean = js.native
+  @scala.inline
+  def isSafeInteger(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeInteger")(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("core-js/es6/number", "log10")
-  @js.native
-  def log10(x: Double): Double = js.native
+  @scala.inline
+  def log10(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log10")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "log1p")
-  @js.native
-  def log1p(x: Double): Double = js.native
+  @scala.inline
+  def log1p(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log1p")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "log2")
-  @js.native
-  def log2(x: Double): Double = js.native
+  @scala.inline
+  def log2(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("log2")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "parseFloat")
-  @js.native
-  def parseFloat(string: java.lang.String): Double = js.native
+  @scala.inline
+  def parseFloat(string: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFloat")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "parseInt")
-  @js.native
-  def parseInt(string: java.lang.String): Double = js.native
-  @JSImport("core-js/es6/number", "parseInt")
-  @js.native
-  def parseInt(string: java.lang.String, radix: Double): Double = js.native
+  @scala.inline
+  def parseInt(string: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parseInt")(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def parseInt(string: java.lang.String, radix: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("parseInt")(string.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "random")
-  @js.native
-  def random(): Double = js.native
-  @JSImport("core-js/es6/number", "random")
-  @js.native
-  def random(lim: Double): Double = js.native
+  @scala.inline
+  def random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Double]
+  @scala.inline
+  def random(lim: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")(lim.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "sign")
-  @js.native
-  def sign(x: Double): Double = js.native
+  @scala.inline
+  def sign(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sign")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "sinh")
-  @js.native
-  def sinh(x: Double): Double = js.native
+  @scala.inline
+  def sinh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("sinh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "tanh")
-  @js.native
-  def tanh(x: Double): Double = js.native
+  @scala.inline
+  def tanh(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("tanh")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("core-js/es6/number", "trunc")
-  @js.native
-  def trunc(x: Double): Double = js.native
+  @scala.inline
+  def trunc(x: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("trunc")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

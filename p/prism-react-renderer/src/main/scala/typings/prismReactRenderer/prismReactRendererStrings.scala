@@ -3,7 +3,6 @@ package typings.prismReactRenderer
 import typings.prismReactRenderer.mod.Language
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prismReactRendererStrings {
@@ -54,12 +53,16 @@ object prismReactRendererStrings {
   def `900`: `900` = "900".asInstanceOf[`900`]
   
   @js.native
-  sealed trait actionscript extends Language
+  sealed trait actionscript
+    extends StObject
+       with Language
   @scala.inline
   def actionscript: actionscript = "actionscript".asInstanceOf[actionscript]
   
   @js.native
-  sealed trait bash extends Language
+  sealed trait bash
+    extends StObject
+       with Language
   @scala.inline
   def bash: bash = "bash".asInstanceOf[bash]
   
@@ -69,57 +72,79 @@ object prismReactRendererStrings {
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait c extends Language
+  sealed trait c
+    extends StObject
+       with Language
   @scala.inline
   def c: c = "c".asInstanceOf[c]
   
   @js.native
-  sealed trait clike extends Language
+  sealed trait clike
+    extends StObject
+       with Language
   @scala.inline
   def clike: clike = "clike".asInstanceOf[clike]
   
   @js.native
-  sealed trait coffeescript extends Language
+  sealed trait coffeescript
+    extends StObject
+       with Language
   @scala.inline
   def coffeescript: coffeescript = "coffeescript".asInstanceOf[coffeescript]
   
   @js.native
-  sealed trait cpp extends Language
+  sealed trait cpp
+    extends StObject
+       with Language
   @scala.inline
   def cpp: cpp = "cpp".asInstanceOf[cpp]
   
   @js.native
-  sealed trait css extends Language
+  sealed trait css
+    extends StObject
+       with Language
   @scala.inline
   def css: css = "css".asInstanceOf[css]
   
   @js.native
-  sealed trait `css-extr` extends Language
+  sealed trait `css-extr`
+    extends StObject
+       with Language
   @scala.inline
   def `css-extr`: `css-extr` = "css-extr".asInstanceOf[`css-extr`]
   
   @js.native
-  sealed trait diff extends Language
+  sealed trait diff
+    extends StObject
+       with Language
   @scala.inline
   def diff: diff = "diff".asInstanceOf[diff]
   
   @js.native
-  sealed trait git extends Language
+  sealed trait git
+    extends StObject
+       with Language
   @scala.inline
   def git: git = "git".asInstanceOf[git]
   
   @js.native
-  sealed trait go extends Language
+  sealed trait go
+    extends StObject
+       with Language
   @scala.inline
   def go: go = "go".asInstanceOf[go]
   
   @js.native
-  sealed trait graphql extends Language
+  sealed trait graphql
+    extends StObject
+       with Language
   @scala.inline
   def graphql: graphql = "graphql".asInstanceOf[graphql]
   
   @js.native
-  sealed trait handlebars extends Language
+  sealed trait handlebars
+    extends StObject
+       with Language
   @scala.inline
   def handlebars: handlebars = "handlebars".asInstanceOf[handlebars]
   
@@ -129,22 +154,30 @@ object prismReactRendererStrings {
   def italic: italic = "italic".asInstanceOf[italic]
   
   @js.native
-  sealed trait javascript extends Language
+  sealed trait javascript
+    extends StObject
+       with Language
   @scala.inline
   def javascript: javascript = "javascript".asInstanceOf[javascript]
   
   @js.native
-  sealed trait json extends Language
+  sealed trait json
+    extends StObject
+       with Language
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait jsx extends Language
+  sealed trait jsx
+    extends StObject
+       with Language
   @scala.inline
   def jsx: jsx = "jsx".asInstanceOf[jsx]
   
   @js.native
-  sealed trait less extends Language
+  sealed trait less
+    extends StObject
+       with Language
   @scala.inline
   def less: less = "less".asInstanceOf[less]
   
@@ -154,17 +187,23 @@ object prismReactRendererStrings {
   def `line-through`: `line-through` = "line-through".asInstanceOf[`line-through`]
   
   @js.native
-  sealed trait makefile extends Language
+  sealed trait makefile
+    extends StObject
+       with Language
   @scala.inline
   def makefile: makefile = "makefile".asInstanceOf[makefile]
   
   @js.native
-  sealed trait markdown extends Language
+  sealed trait markdown
+    extends StObject
+       with Language
   @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
-  sealed trait markup extends Language
+  sealed trait markup
+    extends StObject
+       with Language
   @scala.inline
   def markup: markup = "markup".asInstanceOf[markup]
   
@@ -179,52 +218,72 @@ object prismReactRendererStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait objectivec extends Language
+  sealed trait objectivec
+    extends StObject
+       with Language
   @scala.inline
   def objectivec: objectivec = "objectivec".asInstanceOf[objectivec]
   
   @js.native
-  sealed trait ocaml extends Language
+  sealed trait ocaml
+    extends StObject
+       with Language
   @scala.inline
   def ocaml: ocaml = "ocaml".asInstanceOf[ocaml]
   
   @js.native
-  sealed trait python extends Language
+  sealed trait python
+    extends StObject
+       with Language
   @scala.inline
   def python: python = "python".asInstanceOf[python]
   
   @js.native
-  sealed trait reason extends Language
+  sealed trait reason
+    extends StObject
+       with Language
   @scala.inline
   def reason: reason = "reason".asInstanceOf[reason]
   
   @js.native
-  sealed trait sass extends Language
+  sealed trait sass
+    extends StObject
+       with Language
   @scala.inline
   def sass: sass = "sass".asInstanceOf[sass]
   
   @js.native
-  sealed trait scss extends Language
+  sealed trait scss
+    extends StObject
+       with Language
   @scala.inline
   def scss: scss = "scss".asInstanceOf[scss]
   
   @js.native
-  sealed trait sql extends Language
+  sealed trait sql
+    extends StObject
+       with Language
   @scala.inline
   def sql: sql = "sql".asInstanceOf[sql]
   
   @js.native
-  sealed trait stylus extends Language
+  sealed trait stylus
+    extends StObject
+       with Language
   @scala.inline
   def stylus: stylus = "stylus".asInstanceOf[stylus]
   
   @js.native
-  sealed trait tsx extends Language
+  sealed trait tsx
+    extends StObject
+       with Language
   @scala.inline
   def tsx: tsx = "tsx".asInstanceOf[tsx]
   
   @js.native
-  sealed trait typescript extends Language
+  sealed trait typescript
+    extends StObject
+       with Language
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   
@@ -239,12 +298,16 @@ object prismReactRendererStrings {
   def `underline line-through`: `underline line-through` = ("underline line-through").asInstanceOf[`underline line-through`]
   
   @js.native
-  sealed trait wasm extends Language
+  sealed trait wasm
+    extends StObject
+       with Language
   @scala.inline
   def wasm: wasm = "wasm".asInstanceOf[wasm]
   
   @js.native
-  sealed trait yaml extends Language
+  sealed trait yaml
+    extends StObject
+       with Language
   @scala.inline
   def yaml: yaml = "yaml".asInstanceOf[yaml]
 }

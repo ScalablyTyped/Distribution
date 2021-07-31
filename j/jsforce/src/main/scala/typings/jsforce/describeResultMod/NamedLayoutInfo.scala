@@ -3,15 +3,13 @@ package typings.jsforce.describeResultMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedLayoutInfo extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var urls: Record[String, String] = js.native
+  var urls: Record[String, String]
 }
 object NamedLayoutInfo {
   

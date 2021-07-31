@@ -2,16 +2,14 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddListenerCertificatesOutput extends StObject {
   
   /**
     * Information about the certificates in the certificate list.
     */
-  var Certificates: js.UndefOr[CertificateList] = js.native
+  var Certificates: js.UndefOr[CertificateList] = js.undefined
 }
 object AddListenerCertificatesOutput {
   

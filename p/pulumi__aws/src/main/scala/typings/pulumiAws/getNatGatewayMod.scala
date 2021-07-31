@@ -5,57 +5,55 @@ import typings.pulumiAws.inputMod.ec2.GetNatGatewayFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getNatGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2/getNatGateway", "getNatGateway")
+  @JSImport("@pulumi/aws/ec2/getNatGateway", JSImport.Namespace)
   @js.native
-  def getNatGateway(): js.Promise[GetNatGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNatGateway", "getNatGateway")
-  @js.native
-  def getNatGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetNatGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNatGateway", "getNatGateway")
-  @js.native
-  def getNatGateway(args: GetNatGatewayArgs): js.Promise[GetNatGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNatGateway", "getNatGateway")
-  @js.native
-  def getNatGateway(args: GetNatGatewayArgs, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getNatGateway(): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")().asInstanceOf[js.Promise[GetNatGatewayResult]]
+  @scala.inline
+  def getNatGateway(args: Unit, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  @scala.inline
+  def getNatGateway(args: GetNatGatewayArgs): js.Promise[GetNatGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  @scala.inline
+  def getNatGateway(args: GetNatGatewayArgs, opts: InvokeOptions): js.Promise[GetNatGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNatGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNatGatewayResult]]
+  
   trait GetNatGatewayArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetNatGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetNatGatewayFilter]] = js.undefined
     
     /**
       * The id of the specific Nat Gateway to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The state of the NAT gateway (pending | failed | available | deleting | deleted ).
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * The id of subnet that the Nat Gateway resides in.
       */
-    val subnetId: js.UndefOr[String] = js.native
+    val subnetId: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired Nat Gateway.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The id of the VPC that the Nat Gateway resides in.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetNatGatewayArgs {
     
@@ -109,40 +107,39 @@ object getNatGatewayMod {
     }
   }
   
-  @js.native
   trait GetNatGatewayResult extends StObject {
     
     /**
       * The Id of the EIP allocated to the selected Nat Gateway.
       */
-    val allocationId: String = js.native
+    val allocationId: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNatGatewayFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
     /**
       * The Id of the ENI allocated to the selected Nat Gateway.
       */
-    val networkInterfaceId: String = js.native
+    val networkInterfaceId: String
     
     /**
       * The private Ip address of the selected Nat Gateway.
       */
-    val privateIp: String = js.native
+    val privateIp: String
     
     /**
       * The public Ip (EIP) address of the selected Nat Gateway.
       */
-    val publicIp: String = js.native
+    val publicIp: String
     
-    val state: String = js.native
+    val state: String
     
-    val subnetId: String = js.native
+    val subnetId: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetNatGatewayResult {
     

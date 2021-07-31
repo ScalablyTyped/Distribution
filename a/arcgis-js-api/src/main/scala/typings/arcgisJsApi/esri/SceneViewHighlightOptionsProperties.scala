@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewHighlightOptionsProperties extends Object {
+trait SceneViewHighlightOptionsProperties
+  extends StObject
+     with Object {
   
   /**
     * The color of the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var color: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * The opacity of the fill (area within the halo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional color for the halo of the highlight.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var haloColor: js.UndefOr[Color_] = js.native
+  var haloColor: js.UndefOr[Color_] = js.undefined
   
   /**
     * The opacity of the highlight halo.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#highlightOptions)
     */
-  var haloOpacity: js.UndefOr[Double] = js.native
+  var haloOpacity: js.UndefOr[Double] = js.undefined
 }
 object SceneViewHighlightOptionsProperties {
   

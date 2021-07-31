@@ -7,19 +7,18 @@ import typings.vue.optionsMod.DefaultMethods
 import typings.vue.optionsMod.DefaultProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
   
   object default {
     
-    @JSImport("@ant-design/icons-vue/lib/components/Icon", JSImport.Default)
-    @js.native
+    @scala.inline
     def apply(
       props: IconComponentProps,
       context: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SetupContext */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
     @JSImport("@ant-design/icons-vue/lib/components/Icon", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -31,16 +30,15 @@ object iconMod {
     def inheritAttrs_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inheritAttrs")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CustomIconComponentProps extends StObject {
     
-    var fill: String = js.native
+    var fill: String
     
-    var height: String | Double = js.native
+    var height: String | Double
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: String | Double = js.native
+    var width: String | Double
   }
   object CustomIconComponentProps {
     
@@ -71,12 +69,11 @@ object iconMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLAttributes * / any */ @js.native
-  trait IconBaseProps extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HTMLAttributes * / any */ trait IconBaseProps extends StObject {
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var spin: js.UndefOr[Boolean] = js.native
+    var spin: js.UndefOr[Boolean] = js.undefined
   }
   object IconBaseProps {
     
@@ -103,10 +100,11 @@ object iconMod {
     }
   }
   
-  @js.native
-  trait IconComponentProps extends IconBaseProps {
+  trait IconComponentProps
+    extends StObject
+       with IconBaseProps {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     var component: js.UndefOr[
         Component[
@@ -115,9 +113,9 @@ object iconMod {
           DefaultComputed, 
           DefaultProps
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
   }
   object IconComponentProps {
     

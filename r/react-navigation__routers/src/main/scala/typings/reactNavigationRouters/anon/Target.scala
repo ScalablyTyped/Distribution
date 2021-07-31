@@ -5,26 +5,26 @@ import typings.reactNavigationRouters.commonActionsMod.ResetState
 import typings.reactNavigationRouters.reactNavigationRoutersStrings.RESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Target extends Action {
+trait Target
+  extends StObject
+     with Action {
   
-  var payload: js.UndefOr[ResetState] = js.native
+  var payload: js.UndefOr[ResetState] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: RESET = js.native
+  var `type`: RESET
 }
 object Target {
   
   @scala.inline
-  def apply(`type`: RESET): Target = {
+  def apply(): Target = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RESET")
     __obj.asInstanceOf[Target]
   }
   

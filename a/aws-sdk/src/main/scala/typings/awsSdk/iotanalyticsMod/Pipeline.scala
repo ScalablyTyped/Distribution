@@ -2,41 +2,39 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pipeline extends StObject {
   
   /**
     * The activities that perform transformations on the messages.
     */
-  var activities: js.UndefOr[PipelineActivities] = js.native
+  var activities: js.UndefOr[PipelineActivities] = js.undefined
   
   /**
     * The ARN of the pipeline.
     */
-  var arn: js.UndefOr[PipelineArn] = js.native
+  var arn: js.UndefOr[PipelineArn] = js.undefined
   
   /**
     * When the pipeline was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the pipeline was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the pipeline.
     */
-  var name: js.UndefOr[PipelineName] = js.native
+  var name: js.UndefOr[PipelineName] = js.undefined
   
   /**
     * A summary of information about the pipeline reprocessing.
     */
-  var reprocessingSummaries: js.UndefOr[ReprocessingSummaries] = js.native
+  var reprocessingSummaries: js.UndefOr[ReprocessingSummaries] = js.undefined
 }
 object Pipeline {
   

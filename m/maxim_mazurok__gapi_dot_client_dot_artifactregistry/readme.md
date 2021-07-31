@@ -10,9 +10,9 @@ TypeScript typings for Artifact Registry API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.artifactregistry |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 806 |
+| # downloads        | 893 |
 | # stars            | 0 |
 
 ## Links

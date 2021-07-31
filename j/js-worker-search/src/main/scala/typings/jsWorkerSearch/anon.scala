@@ -4,21 +4,19 @@ import typings.jsWorkerSearch.mod.INDEX_MODES
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CaseSensitive extends StObject {
     
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
-    var indexMode: js.UndefOr[INDEX_MODES] = js.native
+    var indexMode: js.UndefOr[INDEX_MODES] = js.undefined
     
-    var matchAnyToken: js.UndefOr[Boolean] = js.native
+    var matchAnyToken: js.UndefOr[Boolean] = js.undefined
     
-    var tokenizePattern: js.UndefOr[RegExp] = js.native
+    var tokenizePattern: js.UndefOr[RegExp] = js.undefined
   }
   object CaseSensitive {
     

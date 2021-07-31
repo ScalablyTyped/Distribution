@@ -2,26 +2,24 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesSourceList extends StObject {
   
   /**
     * Whether you want to allow or deny access to the domains in your target list.
     */
-  var GeneratedRulesType: typings.awsSdk.networkfirewallMod.GeneratedRulesType = js.native
+  var GeneratedRulesType: typings.awsSdk.networkfirewallMod.GeneratedRulesType
   
   /**
     * 
     */
-  var TargetTypes: typings.awsSdk.networkfirewallMod.TargetTypes = js.native
+  var TargetTypes: typings.awsSdk.networkfirewallMod.TargetTypes
   
   /**
     * The domains that you want to inspect for in your traffic flows. To provide multiple domains, separate them with commas.
     */
-  var Targets: RuleTargets = js.native
+  var Targets: RuleTargets
 }
 object RulesSourceList {
   

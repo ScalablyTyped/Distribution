@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobExecutionRequest extends StObject {
   
   /**
     * A string (consisting of the digits "0" through "9" which is used to specify a particular job execution on a particular device.
     */
-  var executionNumber: js.UndefOr[ExecutionNumber] = js.native
+  var executionNumber: js.UndefOr[ExecutionNumber] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * The name of the thing on which the job execution is running.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object DescribeJobExecutionRequest {
   

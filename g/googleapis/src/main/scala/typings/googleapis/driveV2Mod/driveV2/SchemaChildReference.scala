@@ -2,34 +2,32 @@ package typings.googleapis.driveV2Mod.driveV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a folder&#39;s child.
   */
-@js.native
 trait SchemaChildReference extends StObject {
   
   /**
     * A link to the child.
     */
-  var childLink: js.UndefOr[String] = js.native
+  var childLink: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the child.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This is always drive#childReference.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this reference.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaChildReference {
   

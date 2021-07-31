@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,15 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderDoneListener extends XInterface {
+trait XRemoteContentProviderDoneListener
+  extends StObject
+     with XInterface {
   
   /**
     * A notification that all remote content providers added to the given {@link XRemoteContentProviderAcceptor} should be removed, because the acceptor no
     * longer needs them.
     * @param Acceptor If null, all remote content providers added to any acceptor shall be removed.
     */
-  def doneWithRemoteContentProviders(Acceptor: XRemoteContentProviderAcceptor): Unit = js.native
+  def doneWithRemoteContentProviders(Acceptor: XRemoteContentProviderAcceptor): Unit
 }
 object XRemoteContentProviderDoneListener {
   

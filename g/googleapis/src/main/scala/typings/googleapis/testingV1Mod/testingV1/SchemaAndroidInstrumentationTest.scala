@@ -2,7 +2,6 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,24 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &lt;http://developer.android.com/tools/testing/testing_android.html&gt; for
   * more information on types of Android tests.
   */
-@js.native
 trait SchemaAndroidInstrumentationTest extends StObject {
   
   /**
     * The APK for the application under test.
     */
-  var appApk: js.UndefOr[SchemaFileReference] = js.native
+  var appApk: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * A multi-apk app bundle for the application under test.
     */
-  var appBundle: js.UndefOr[SchemaAppBundle] = js.native
+  var appBundle: js.UndefOr[SchemaAppBundle] = js.undefined
   
   /**
     * The java package for the application under test. The default value is
     * determined by examining the application&#39;s manifest.
     */
-  var appPackageId: js.UndefOr[String] = js.native
+  var appPackageId: js.UndefOr[String] = js.undefined
   
   /**
     * The option of whether running each test within its own invocation of
@@ -44,24 +42,24 @@ trait SchemaAndroidInstrumentationTest extends StObject {
     * for more information about Android Test Orchestrator.  If not set, the
     * test will be run without the orchestrator.
     */
-  var orchestratorOption: js.UndefOr[String] = js.native
+  var orchestratorOption: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The APK containing the test code to be executed.
     */
-  var testApk: js.UndefOr[SchemaFileReference] = js.native
+  var testApk: js.UndefOr[SchemaFileReference] = js.undefined
   
   /**
     * The java package for the test to be executed. The default value is
     * determined by examining the application&#39;s manifest.
     */
-  var testPackageId: js.UndefOr[String] = js.native
+  var testPackageId: js.UndefOr[String] = js.undefined
   
   /**
     * The InstrumentationTestRunner class. The default value is determined by
     * examining the application&#39;s manifest.
     */
-  var testRunnerClass: js.UndefOr[String] = js.native
+  var testRunnerClass: js.UndefOr[String] = js.undefined
   
   /**
     * Each target must be fully qualified with the package name or class name,
@@ -70,7 +68,7 @@ trait SchemaAndroidInstrumentationTest extends StObject {
     * package_name.class_name#method_name&quot;  If empty, all targets in the
     * module will be run.
     */
-  var testTargets: js.UndefOr[js.Array[String]] = js.native
+  var testTargets: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAndroidInstrumentationTest {
   

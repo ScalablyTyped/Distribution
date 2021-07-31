@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,45 +9,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * many bids with the specified dimension values were considered eligible at
   * each stage of the bidding funnel;
   */
-@js.native
 trait SchemaBidMetricsRow extends StObject {
   
   /**
     * The number of bids that Ad Exchange received from the buyer.
     */
-  var bids: js.UndefOr[SchemaMetricValue] = js.native
+  var bids: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The number of bids that were permitted to compete in the auction.
     */
-  var bidsInAuction: js.UndefOr[SchemaMetricValue] = js.native
+  var bidsInAuction: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The number of bids for which the buyer was billed.
     */
-  var billedImpressions: js.UndefOr[SchemaMetricValue] = js.native
+  var billedImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The number of bids that won an impression.
     */
-  var impressionsWon: js.UndefOr[SchemaMetricValue] = js.native
+  var impressionsWon: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The number of bids for which the corresponding impression was measurable
     * for viewability (as defined by Active View).
     */
-  var measurableImpressions: js.UndefOr[SchemaMetricValue] = js.native
+  var measurableImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
   
   /**
     * The number of bids for which the corresponding impression was viewable
     * (as defined by Active View).
     */
-  var viewableImpressions: js.UndefOr[SchemaMetricValue] = js.native
+  var viewableImpressions: js.UndefOr[SchemaMetricValue] = js.undefined
 }
 object SchemaBidMetricsRow {
   

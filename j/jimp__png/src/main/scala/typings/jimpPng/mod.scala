@@ -8,29 +8,30 @@ import typings.jimpPng.anon.MIMEPNG
 import typings.jimpPng.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/png", JSImport.Default)
+  @JSImport("@jimp/png", JSImport.Namespace)
   @js.native
-  def default(): PNG = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PNG]
+  
   trait PNG extends StObject {
     
-    var `class`: PNGClass = js.native
+    var `class`: PNGClass
     
-    var constants: MIMEPNG = js.native
+    var constants: MIMEPNG
     
-    var decoders: ImagepngDecoderFn = js.native
+    var decoders: ImagepngDecoderFn
     
-    var encoders: ImagepngEncoderFn = js.native
+    var encoders: ImagepngEncoderFn
     
-    var hasAlpha: `0` = js.native
+    var hasAlpha: `0`
     
-    var mime: Imagepng = js.native
+    var mime: Imagepng
   }
   object PNG {
     

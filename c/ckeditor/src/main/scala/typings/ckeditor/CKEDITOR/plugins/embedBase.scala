@@ -7,46 +7,24 @@ import typings.ckeditor.CKEDITOR.template
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object embedBase {
   
   @js.native
-  trait baseDefinition extends definition {
+  trait baseDefinition
+    extends StObject
+       with definition {
     
     def getErrorMessage(messageTypeOrMessage: String): String = js.native
-    def getErrorMessage(messageTypeOrMessage: String, url: js.UndefOr[scala.Nothing], suffix: String): String = js.native
     def getErrorMessage(messageTypeOrMessage: String, url: String): String = js.native
     def getErrorMessage(messageTypeOrMessage: String, url: String, suffix: String): String = js.native
+    def getErrorMessage(messageTypeOrMessage: String, url: Unit, suffix: String): String = js.native
     
     def isUrlValid(url: String): Boolean = js.native
     
     def loadContent(url: String): request = js.native
-    def loadContent(
-      url: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.UndefOr[scala.Nothing],
-      noNotifications: Boolean
-    ): request = js.native
-    def loadContent(
-      url: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit]
-    ): request = js.native
-    def loadContent(
-      url: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* error */ String, Unit],
-      noNotifications: Boolean
-    ): request = js.native
     def loadContent(url: String, callback: js.Function0[Unit]): request = js.native
-    def loadContent(
-      url: String,
-      callback: js.Function0[Unit],
-      errorCallback: js.UndefOr[scala.Nothing],
-      noNotifications: Boolean
-    ): request = js.native
     def loadContent(url: String, callback: js.Function0[Unit], errorCallback: js.Function1[/* error */ String, Unit]): request = js.native
     def loadContent(
       url: String,
@@ -54,26 +32,34 @@ object embedBase {
       errorCallback: js.Function1[/* error */ String, Unit],
       noNotifications: Boolean
     ): request = js.native
+    def loadContent(url: String, callback: js.Function0[Unit], errorCallback: Unit, noNotifications: Boolean): request = js.native
+    def loadContent(url: String, callback: Unit, errorCallback: js.Function1[/* error */ String, Unit]): request = js.native
+    def loadContent(
+      url: String,
+      callback: Unit,
+      errorCallback: js.Function1[/* error */ String, Unit],
+      noNotifications: Boolean
+    ): request = js.native
+    def loadContent(url: String, callback: Unit, errorCallback: Unit, noNotifications: Boolean): request = js.native
     
     var providerUrl: template = js.native
     
     var urlRegExp: RegExp = js.native
   }
   
-  @js.native
   trait request extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
     
-    def errorCallback(error: String): Unit = js.native
+    def errorCallback(error: String): Unit
     
-    var response: StringDictionary[String] = js.native
+    var response: StringDictionary[String]
     
-    var task: typings.ckeditor.CKEDITOR.plugins.notificationAggregator.task = js.native
+    var task: typings.ckeditor.CKEDITOR.plugins.notificationAggregator.task
     
-    var url: String = js.native
+    var url: String
   }
   object request {
     

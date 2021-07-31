@@ -2,21 +2,19 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnOpenCallbackResult extends StObject {
   
   /** 连接成功的 HTTP 响应 Header
     *
     * 最低基础库： `2.0.0` */
-  var header: IAnyObject = js.native
+  var header: IAnyObject
   
   /** 网络请求过程中一些调试信息
     *
     * 最低基础库： `2.10.4` */
-  var profile: SocketProfile = js.native
+  var profile: SocketProfile
 }
 object OnOpenCallbackResult {
   

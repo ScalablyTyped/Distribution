@@ -2,61 +2,59 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentResult extends StObject {
   
   /**
     * A description of the document attachments, including names, locations, sizes, and so on.
     */
-  var AttachmentsContent: js.UndefOr[AttachmentContentList] = js.native
+  var AttachmentsContent: js.UndefOr[AttachmentContentList] = js.undefined
   
   /**
     * The contents of the Systems Manager document.
     */
-  var Content: js.UndefOr[DocumentContent] = js.native
+  var Content: js.UndefOr[DocumentContent] = js.undefined
   
   /**
     * The document format, either JSON or YAML.
     */
-  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.native
+  var DocumentFormat: js.UndefOr[typings.awsSdk.ssmMod.DocumentFormat] = js.undefined
   
   /**
     * The document type.
     */
-  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.native
+  var DocumentType: js.UndefOr[typings.awsSdk.ssmMod.DocumentType] = js.undefined
   
   /**
     * The document version.
     */
-  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.native
+  var DocumentVersion: js.UndefOr[typings.awsSdk.ssmMod.DocumentVersion] = js.undefined
   
   /**
     * The name of the Systems Manager document.
     */
-  var Name: js.UndefOr[DocumentARN] = js.native
+  var Name: js.UndefOr[DocumentARN] = js.undefined
   
   /**
     * A list of SSM documents required by a document. For example, an ApplicationConfiguration document requires an ApplicationConfigurationSchema document.
     */
-  var Requires: js.UndefOr[DocumentRequiresList] = js.native
+  var Requires: js.UndefOr[DocumentRequiresList] = js.undefined
   
   /**
     * The status of the Systems Manager document, such as Creating, Active, Updating, Failed, and Deleting.
     */
-  var Status: js.UndefOr[DocumentStatus] = js.native
+  var Status: js.UndefOr[DocumentStatus] = js.undefined
   
   /**
     * A message returned by AWS Systems Manager that explains the Status value. For example, a Failed status might be explained by the StatusInformation message, "The specified S3 bucket does not exist. Verify that the URL of the S3 bucket is correct."
     */
-  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.native
+  var StatusInformation: js.UndefOr[DocumentStatusInformation] = js.undefined
   
   /**
     * The version of the artifact associated with the document. For example, "Release 12, Update 6". This value is unique across all versions of a document, and cannot be changed.
     */
-  var VersionName: js.UndefOr[DocumentVersionName] = js.native
+  var VersionName: js.UndefOr[DocumentVersionName] = js.undefined
 }
 object GetDocumentResult {
   

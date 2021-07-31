@@ -2,17 +2,15 @@ package typings.domutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DecodeEntities extends StObject {
     
-    var decodeEntities: js.UndefOr[Boolean] = js.native
+    var decodeEntities: js.UndefOr[Boolean] = js.undefined
     
-    var xmlMode: js.UndefOr[Boolean] = js.native
+    var xmlMode: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeEntities {
     

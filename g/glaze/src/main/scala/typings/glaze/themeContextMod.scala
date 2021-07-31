@@ -5,25 +5,25 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeContextMod {
   
-  @JSImport("glaze/dist-types/ThemeContext", "ThemeProvider")
+  @JSImport("glaze/dist-types/ThemeContext", JSImport.Namespace)
   @js.native
-  def ThemeProvider(hasThemeChildren: ThemeProviderProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("glaze/dist-types/ThemeContext", "useTheme")
-  @js.native
-  def useTheme(): RuntimeTheme = js.native
+  @scala.inline
+  def ThemeProvider(hasThemeChildren: ThemeProviderProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("ThemeProvider")(hasThemeChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
+  @scala.inline
+  def useTheme(): RuntimeTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("useTheme")().asInstanceOf[RuntimeTheme]
+  
   trait ThemeProviderProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var theme: RuntimeTheme = js.native
+    var theme: RuntimeTheme
   }
   object ThemeProviderProps {
     

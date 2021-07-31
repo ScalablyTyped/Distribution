@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * 设置重定向资源数据的http头数据
@@ -28,7 +26,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 区配需要拦截请求资源的URL地址
@@ -36,7 +34,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `match`: js.UndefOr[String] = js.native
+  var `match`: js.UndefOr[String] = js.undefined
   
   /**
     * 重定向的资源数据类型
@@ -46,7 +44,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
   /**
     * 拦截重定向的资源地址
@@ -54,7 +52,7 @@ trait PlusWebviewWebviewOverrideResourceOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var redirect: js.UndefOr[String] = js.native
+  var redirect: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewWebviewOverrideResourceOptions {
   

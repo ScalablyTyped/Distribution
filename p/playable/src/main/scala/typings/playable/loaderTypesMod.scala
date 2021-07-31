@@ -3,25 +3,23 @@ package typings.playable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderTypesMod {
   
-  @js.native
   trait ILoader extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var isDelayedShowScheduled: Boolean = js.native
+    var isDelayedShowScheduled: Boolean
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def stopDelayedShow(): Unit = js.native
+    def stopDelayedShow(): Unit
   }
   object ILoader {
     
@@ -61,14 +59,13 @@ object loaderTypesMod {
     }
   }
   
-  @js.native
   trait ILoaderViewStyles extends StObject {
     
-    var active: String = js.native
+    var active: String
     
-    var hidden: String = js.native
+    var hidden: String
     
-    var loader: String = js.native
+    var loader: String
   }
   object ILoaderViewStyles {
     

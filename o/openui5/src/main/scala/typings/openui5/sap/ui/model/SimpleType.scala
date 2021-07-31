@@ -2,11 +2,12 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SimpleType extends Type_ {
+trait SimpleType
+  extends StObject
+     with Type_ {
   
   /**
     * Format the given value in model representation to an output value in the giveninternal type. This
@@ -25,7 +26,7 @@ trait SimpleType extends Type_ {
     * @returns the parse result
     */
   def parseValue(oValue: js.Any, sInternalType: String): js.Any = js.native
-  def parseValue(oValue: js.Any, sInternalType: String, aCurrentValues: js.Array[_]): js.Any = js.native
+  def parseValue(oValue: js.Any, sInternalType: String, aCurrentValues: js.Array[js.Any]): js.Any = js.native
   
   /**
     * Validate whether a given value in model representation is valid and meets thedefined constraints (if

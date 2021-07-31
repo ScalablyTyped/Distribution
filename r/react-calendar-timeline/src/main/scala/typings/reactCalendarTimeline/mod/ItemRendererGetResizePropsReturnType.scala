@@ -3,15 +3,13 @@ package typings.reactCalendarTimeline.mod
 import typings.reactCalendarTimeline.anon.ClassName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemRendererGetResizePropsReturnType extends StObject {
   
-  var left: js.UndefOr[ClassName] = js.native
+  var left: js.UndefOr[ClassName] = js.undefined
   
-  var right: js.UndefOr[ClassName] = js.native
+  var right: js.UndefOr[ClassName] = js.undefined
 }
 object ItemRendererGetResizePropsReturnType {
   

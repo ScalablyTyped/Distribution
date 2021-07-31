@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault extends StObject {
   
   /**
     * The AWS KMS master key ID used for the SSE-KMS encryption. This can only be used when you set the value of `sseAlgorithm` as `aws:kms`. The default `aws/s3` AWS KMS master key is used if this element is absent while the `sseAlgorithm` is `aws:kms`.
     */
-  var kmsMasterKeyId: js.UndefOr[Input[String]] = js.native
+  var kmsMasterKeyId: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The server-side encryption algorithm to use. Valid values are `AES256` and `aws:kms`
     */
-  var sseAlgorithm: Input[String] = js.native
+  var sseAlgorithm: Input[String]
 }
 object BucketServerSideEncryptionConfigurationRuleApplyServerSideEncryptionByDefault {
   

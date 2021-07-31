@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * properties they wish to update in the fields parameter, as well as specify
   * at least one DataFilter matching the metadata they wish to update.
   */
-@js.native
 trait SchemaUpdateDeveloperMetadataRequest extends StObject {
   
   /**
     * The filters matching the developer metadata entries to update.
     */
-  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[SchemaDataFilter]] = js.undefined
   
   /**
     * The value that all metadata matched by the data filters will be updated
     * to.
     */
-  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.native
+  var developerMetadata: js.UndefOr[SchemaDeveloperMetadata] = js.undefined
   
   /**
     * The fields that should be updated.  At least one field must be specified.
     * The root `developerMetadata` is implied and should not be specified. A
     * single `&quot;*&quot;` can be used as short-hand for listing every field.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateDeveloperMetadataRequest {
   

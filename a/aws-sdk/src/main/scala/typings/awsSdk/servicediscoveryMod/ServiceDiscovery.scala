@@ -5,13 +5,14 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ServiceDiscovery extends Service {
+trait ServiceDiscovery
+  extends StObject
+     with Service {
   
-  var config: ConfigBase with ClientConfiguration = js.native
+  var config: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an HTTP namespace. Service instances that you register using an HTTP namespace can be discovered using a DiscoverInstances request but can't be discovered using DNS.  For the current quota on the number of namespaces that you can create using the same AWS account, see AWS Cloud Map quotas in the AWS Cloud Map Developer Guide.

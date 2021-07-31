@@ -2,7 +2,6 @@ package typings.w3cCssTypedObjectModelLevel1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait CSSMathOperator extends StObject
 object CSSMathOperator extends StObject {
   
   @js.native
-  sealed trait clamp extends CSSMathOperator
+  sealed trait clamp
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait invert extends CSSMathOperator
+  sealed trait invert
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait max extends CSSMathOperator
+  sealed trait max
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait min extends CSSMathOperator
+  sealed trait min
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait negate extends CSSMathOperator
+  sealed trait negate
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait product extends CSSMathOperator
+  sealed trait product
+    extends StObject
+       with CSSMathOperator
   
   @js.native
-  sealed trait sum extends CSSMathOperator
+  sealed trait sum
+    extends StObject
+       with CSSMathOperator
 }

@@ -7,11 +7,9 @@ import typings.officeJs.officeJsStrings.BinWidth
 import typings.officeJs.officeJsStrings.Category
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `chartBinOptions.toJSON()`. */
-@js.native
 trait ChartBinOptionsData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var allowOverflow: js.UndefOr[Boolean] = js.native
+  var allowOverflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var allowUnderflow: js.UndefOr[Boolean] = js.native
+  var allowUnderflow: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var overflowValue: js.UndefOr[Double] = js.native
+  var overflowValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[ChartBinType | Category | Auto | BinWidth | BinCount] = js.native
+  var `type`: js.UndefOr[ChartBinType | Category | Auto | BinWidth | BinCount] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var underflowValue: js.UndefOr[Double] = js.native
+  var underflowValue: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait ChartBinOptionsData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartBinOptionsData {
   

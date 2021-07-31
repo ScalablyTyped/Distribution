@@ -3,26 +3,26 @@ package typings.currentGitBranch
 import typings.currentGitBranch.currentGitBranchBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[CurrentGitBranchResult]
+  @scala.inline
+  def apply(args: CurrentGitBranchOptions): CurrentGitBranchResult = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[CurrentGitBranchResult]
+  
   @JSImport("current-git-branch", JSImport.Namespace)
   @js.native
-  def apply(): CurrentGitBranchResult = js.native
-  @JSImport("current-git-branch", JSImport.Namespace)
-  @js.native
-  def apply(args: CurrentGitBranchOptions): CurrentGitBranchResult = js.native
+  val ^ : js.Any = js.native
   
   type CurrentGitBranchOptions = CurrentGitBranchOptionsObject | js.Array[String] | String
   
-  @js.native
   trait CurrentGitBranchOptionsObject extends StObject {
     
-    var altPath: js.UndefOr[String] = js.native
+    var altPath: js.UndefOr[String] = js.undefined
     
-    var branchOptions: js.UndefOr[String] = js.native
+    var branchOptions: js.UndefOr[String] = js.undefined
   }
   object CurrentGitBranchOptionsObject {
     

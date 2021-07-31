@@ -2,15 +2,13 @@ package typings.lyricist.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Following extends StObject {
   
-  var following: Boolean = js.native
+  var following: Boolean
   
-  var pyong: Boolean = js.native
+  var pyong: Boolean
 }
 object Following {
   

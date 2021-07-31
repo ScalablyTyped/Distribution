@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailableCapacity extends StObject {
   
   /**
     * The number of instances that can be launched onto the Dedicated Host depending on the host's available capacity. For Dedicated Hosts that support multiple instance types, this parameter represents the number of instances for each instance size that is supported on the host.
     */
-  var AvailableInstanceCapacity: js.UndefOr[AvailableInstanceCapacityList] = js.native
+  var AvailableInstanceCapacity: js.UndefOr[AvailableInstanceCapacityList] = js.undefined
   
   /**
     * The number of vCPUs available for launching instances onto the Dedicated Host.
     */
-  var AvailableVCpus: js.UndefOr[Integer] = js.native
+  var AvailableVCpus: js.UndefOr[Integer] = js.undefined
 }
 object AvailableCapacity {
   

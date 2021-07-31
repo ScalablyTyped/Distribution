@@ -2,15 +2,13 @@ package typings.vis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nodes extends StObject {
   
-  var edges: js.Array[String] = js.native
+  var edges: js.Array[String]
   
-  var nodes: js.Array[String] = js.native
+  var nodes: js.Array[String]
 }
 object Nodes {
   

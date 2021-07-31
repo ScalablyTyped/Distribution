@@ -2,23 +2,22 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssemblyCase
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
   @JSName("type")
-  var type_AssemblyCase: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase = js.native
+  var type_AssemblyCase: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase
 }
 object AssemblyCase {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.AssemblyCase): AssemblyCase = {
+  def apply(): AssemblyCase = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssemblyCase")
     __obj.asInstanceOf[AssemblyCase]
   }
   

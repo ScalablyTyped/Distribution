@@ -4,7 +4,6 @@ import typings.playcanvas.pc.callbacks.FindNode
 import typings.playcanvas.pc.callbacks.ForEach
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [name] - The non-unique name of the graph node, default is "Untitled".
   */
 @js.native
-trait GraphNode extends EventHandler {
+trait GraphNode
+  extends StObject
+     with EventHandler {
   
   /**
     * Add a new child to the child list and update the parent value of the child node.
@@ -362,9 +363,9 @@ trait GraphNode extends EventHandler {
   val root: GraphNode = js.native
   
   def rotate(x: Double): Unit = js.native
-  def rotate(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotate(x: Double, y: Double): Unit = js.native
   def rotate(x: Double, y: Double, z: Double): Unit = js.native
+  def rotate(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Rotates the graph node in world-space by the specified Euler angles.
     * Eulers are specified in degrees in XYZ order. This function has two valid signatures:
@@ -382,14 +383,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Rotation around world-space z-axis in degrees.
     */
   def rotate(x: Vec3): Unit = js.native
-  def rotate(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotate(x: Vec3, y: Double): Unit = js.native
   def rotate(x: Vec3, y: Double, z: Double): Unit = js.native
+  def rotate(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def rotateLocal(x: Double): Unit = js.native
-  def rotateLocal(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotateLocal(x: Double, y: Double): Unit = js.native
   def rotateLocal(x: Double, y: Double, z: Double): Unit = js.native
+  def rotateLocal(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Rotates the graph node in local-space by the specified Euler angles.
     * Eulers are specified in degrees in XYZ order. This function has two valid signatures:
@@ -407,14 +408,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Rotation around local-space z-axis in degrees.
     */
   def rotateLocal(x: Vec3): Unit = js.native
-  def rotateLocal(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def rotateLocal(x: Vec3, y: Double): Unit = js.native
   def rotateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
+  def rotateLocal(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setEulerAngles(x: Double): Unit = js.native
-  def setEulerAngles(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setEulerAngles(x: Double, y: Double): Unit = js.native
   def setEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
+  def setEulerAngles(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Sets the world-space rotation of the specified graph node using euler angles.
     * Eulers are interpreted in XYZ order. Eulers must be specified in degrees. This function
@@ -433,14 +434,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Rotation around world-space z-axis in degrees.
     */
   def setEulerAngles(x: Vec3): Unit = js.native
-  def setEulerAngles(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setEulerAngles(x: Vec3, y: Double): Unit = js.native
   def setEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setEulerAngles(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setLocalEulerAngles(x: Double): Unit = js.native
-  def setLocalEulerAngles(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalEulerAngles(x: Double, y: Double): Unit = js.native
   def setLocalEulerAngles(x: Double, y: Double, z: Double): Unit = js.native
+  def setLocalEulerAngles(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Sets the local-space rotation of the specified graph node using euler angles.
     * Eulers are interpreted in XYZ order. Eulers must be specified in degrees. This function
@@ -459,14 +460,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Rotation around local-space z-axis in degrees.
     */
   def setLocalEulerAngles(x: Vec3): Unit = js.native
-  def setLocalEulerAngles(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalEulerAngles(x: Vec3, y: Double): Unit = js.native
   def setLocalEulerAngles(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalEulerAngles(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setLocalPosition(x: Double): Unit = js.native
-  def setLocalPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalPosition(x: Double, y: Double): Unit = js.native
   def setLocalPosition(x: Double, y: Double, z: Double): Unit = js.native
+  def setLocalPosition(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Sets the local-space position of the specified graph node. This function
     * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
@@ -484,18 +485,18 @@ trait GraphNode extends EventHandler {
     * @param [z] - Z-coordinate of local-space position.
     */
   def setLocalPosition(x: Vec3): Unit = js.native
-  def setLocalPosition(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalPosition(x: Vec3, y: Double): Unit = js.native
   def setLocalPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalPosition(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setLocalRotation(x: Double): Unit = js.native
-  def setLocalRotation(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def setLocalRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
-  def setLocalRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Unit = js.native
   def setLocalRotation(x: Double, y: Double): Unit = js.native
-  def setLocalRotation(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setLocalRotation(x: Double, y: Double, z: Double): Unit = js.native
   def setLocalRotation(x: Double, y: Double, z: Double, w: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Double, z: Unit, w: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Unit, z: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Unit, z: Double, w: Double): Unit = js.native
+  def setLocalRotation(x: Double, y: Unit, z: Unit, w: Double): Unit = js.native
   /**
     * Sets the local-space rotation of the specified graph node. This function
     * has two valid signatures: you can either pass a quaternion or 3 numbers to specify the
@@ -514,18 +515,18 @@ trait GraphNode extends EventHandler {
     * @param [w] - W-component of local-space quaternion rotation.
     */
   def setLocalRotation(x: Quat): Unit = js.native
-  def setLocalRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def setLocalRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
-  def setLocalRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Unit = js.native
   def setLocalRotation(x: Quat, y: Double): Unit = js.native
-  def setLocalRotation(x: Quat, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setLocalRotation(x: Quat, y: Double, z: Double): Unit = js.native
   def setLocalRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Double, z: Unit, w: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Unit, z: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Unit, z: Double, w: Double): Unit = js.native
+  def setLocalRotation(x: Quat, y: Unit, z: Unit, w: Double): Unit = js.native
   
   def setLocalScale(x: Double): Unit = js.native
-  def setLocalScale(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalScale(x: Double, y: Double): Unit = js.native
   def setLocalScale(x: Double, y: Double, z: Double): Unit = js.native
+  def setLocalScale(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Sets the local-space scale factor of the specified graph node. This function
     * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
@@ -543,14 +544,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Z-coordinate of local-space scale.
     */
   def setLocalScale(x: Vec3): Unit = js.native
-  def setLocalScale(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setLocalScale(x: Vec3, y: Double): Unit = js.native
   def setLocalScale(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setLocalScale(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setPosition(x: Double): Unit = js.native
-  def setPosition(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setPosition(x: Double, y: Double): Unit = js.native
   def setPosition(x: Double, y: Double, z: Double): Unit = js.native
+  def setPosition(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Sets the world-space position of the specified graph node. This function
     * has two valid signatures: you can either pass a 3D vector or 3 numbers to specify the
@@ -568,18 +569,18 @@ trait GraphNode extends EventHandler {
     * @param [z] - Z-coordinate of world-space position.
     */
   def setPosition(x: Vec3): Unit = js.native
-  def setPosition(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def setPosition(x: Vec3, y: Double): Unit = js.native
   def setPosition(x: Vec3, y: Double, z: Double): Unit = js.native
+  def setPosition(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def setRotation(x: Double): Unit = js.native
-  def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
-  def setRotation(x: Double, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Unit = js.native
   def setRotation(x: Double, y: Double): Unit = js.native
-  def setRotation(x: Double, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setRotation(x: Double, y: Double, z: Double): Unit = js.native
   def setRotation(x: Double, y: Double, z: Double, w: Double): Unit = js.native
+  def setRotation(x: Double, y: Double, z: Unit, w: Double): Unit = js.native
+  def setRotation(x: Double, y: Unit, z: Double): Unit = js.native
+  def setRotation(x: Double, y: Unit, z: Double, w: Double): Unit = js.native
+  def setRotation(x: Double, y: Unit, z: Unit, w: Double): Unit = js.native
   /**
     * Sets the world-space rotation of the specified graph node. This function
     * has two valid signatures: you can either pass a quaternion or 3 numbers to specify the
@@ -598,13 +599,13 @@ trait GraphNode extends EventHandler {
     * @param [w] - W-component of world-space quaternion rotation.
     */
   def setRotation(x: Quat): Unit = js.native
-  def setRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-  def setRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
-  def setRotation(x: Quat, y: js.UndefOr[scala.Nothing], z: Double, w: Double): Unit = js.native
   def setRotation(x: Quat, y: Double): Unit = js.native
-  def setRotation(x: Quat, y: Double, z: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
   def setRotation(x: Quat, y: Double, z: Double): Unit = js.native
   def setRotation(x: Quat, y: Double, z: Double, w: Double): Unit = js.native
+  def setRotation(x: Quat, y: Double, z: Unit, w: Double): Unit = js.native
+  def setRotation(x: Quat, y: Unit, z: Double): Unit = js.native
+  def setRotation(x: Quat, y: Unit, z: Double, w: Double): Unit = js.native
+  def setRotation(x: Quat, y: Unit, z: Unit, w: Double): Unit = js.native
   
   /**
     * Interface for tagging graph nodes. Tag based searches can be performed using the {@link pc.GraphNode#findByTag} function.
@@ -612,9 +613,9 @@ trait GraphNode extends EventHandler {
   var tags: Tags = js.native
   
   def translate(x: Double): Unit = js.native
-  def translate(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translate(x: Double, y: Double): Unit = js.native
   def translate(x: Double, y: Double, z: Double): Unit = js.native
+  def translate(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Translates the graph node in world-space by the specified translation vector.
     * This function has two valid signatures: you can either pass a 3D vector or 3 numbers to
@@ -632,14 +633,14 @@ trait GraphNode extends EventHandler {
     * @param [z] - Z-coordinate of world-space translation.
     */
   def translate(x: Vec3): Unit = js.native
-  def translate(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translate(x: Vec3, y: Double): Unit = js.native
   def translate(x: Vec3, y: Double, z: Double): Unit = js.native
+  def translate(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   def translateLocal(x: Double): Unit = js.native
-  def translateLocal(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translateLocal(x: Double, y: Double): Unit = js.native
   def translateLocal(x: Double, y: Double, z: Double): Unit = js.native
+  def translateLocal(x: Double, y: Unit, z: Double): Unit = js.native
   /**
     * Translates the graph node in local-space by the specified translation vector.
     * This function has two valid signatures: you can either pass a 3D vector or 3 numbers to
@@ -657,9 +658,9 @@ trait GraphNode extends EventHandler {
     * @param [z] - Z-coordinate of local-space translation.
     */
   def translateLocal(x: Vec3): Unit = js.native
-  def translateLocal(x: Vec3, y: js.UndefOr[scala.Nothing], z: Double): Unit = js.native
   def translateLocal(x: Vec3, y: Double): Unit = js.native
   def translateLocal(x: Vec3, y: Double, z: Double): Unit = js.native
+  def translateLocal(x: Vec3, y: Unit, z: Double): Unit = js.native
   
   /**
     * The normalized local space Y-axis vector of the graph node in world space.

@@ -16,7 +16,6 @@ import typings.qlik.mod.LanguageCodes.Turkish
 import typings.qlik.mod.ListTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object qlikStrings {
@@ -52,7 +51,9 @@ object qlikStrings {
   def B: B = "B".asInstanceOf[B]
   
   @js.native
-  sealed trait BookmarkList extends ListTypes
+  sealed trait BookmarkList
+    extends StObject
+       with ListTypes
   @scala.inline
   def BookmarkList: BookmarkList = "BookmarkList".asInstanceOf[BookmarkList]
   
@@ -82,7 +83,9 @@ object qlikStrings {
   def D: D = "D".asInstanceOf[D]
   
   @js.native
-  sealed trait DimensionList extends ListTypes
+  sealed trait DimensionList
+    extends StObject
+       with ListTypes
   @scala.inline
   def DimensionList: DimensionList = "DimensionList".asInstanceOf[DimensionList]
   
@@ -97,7 +100,9 @@ object qlikStrings {
   def F: F = "F".asInstanceOf[F]
   
   @js.native
-  sealed trait FieldList extends ListTypes
+  sealed trait FieldList
+    extends StObject
+       with ListTypes
   @scala.inline
   def FieldList: FieldList = "FieldList".asInstanceOf[FieldList]
   
@@ -132,17 +137,23 @@ object qlikStrings {
   def M: M = "M".asInstanceOf[M]
   
   @js.native
-  sealed trait Materobject extends ListTypes
+  sealed trait Materobject
+    extends StObject
+       with ListTypes
   @scala.inline
   def Materobject: Materobject = "Materobject".asInstanceOf[Materobject]
   
   @js.native
-  sealed trait MeasureList extends ListTypes
+  sealed trait MeasureList
+    extends StObject
+       with ListTypes
   @scala.inline
   def MeasureList: MeasureList = "MeasureList".asInstanceOf[MeasureList]
   
   @js.native
-  sealed trait MediaList extends ListTypes
+  sealed trait MediaList
+    extends StObject
+       with ListTypes
   @scala.inline
   def MediaList: MediaList = "MediaList".asInstanceOf[MediaList]
   
@@ -272,12 +283,16 @@ object qlikStrings {
   def S: S = "S".asInstanceOf[S]
   
   @js.native
-  sealed trait Selectionobject extends ListTypes
+  sealed trait Selectionobject
+    extends StObject
+       with ListTypes
   @scala.inline
   def Selectionobject: Selectionobject = "Selectionobject".asInstanceOf[Selectionobject]
   
   @js.native
-  sealed trait SnapshotList extends ListTypes
+  sealed trait SnapshotList
+    extends StObject
+       with ListTypes
   @scala.inline
   def SnapshotList: SnapshotList = "SnapshotList".asInstanceOf[SnapshotList]
   
@@ -332,7 +347,9 @@ object qlikStrings {
   def ValueExpression: ValueExpression = "ValueExpression".asInstanceOf[ValueExpression]
   
   @js.native
-  sealed trait VariableList extends ListTypes
+  sealed trait VariableList
+    extends StObject
+       with ListTypes
   @scala.inline
   def VariableList: VariableList = "VariableList".asInstanceOf[VariableList]
   
@@ -402,12 +419,16 @@ object qlikStrings {
   def data: data = "data".asInstanceOf[data]
   
   @js.native
-  sealed trait de extends German
+  sealed trait de
+    extends StObject
+       with German
   @scala.inline
   def de: de = "de".asInstanceOf[de]
   
   @js.native
-  sealed trait `de-DE` extends German
+  sealed trait `de-DE`
+    extends StObject
+       with German
   @scala.inline
   def `de-DE`: `de-DE` = "de-DE".asInstanceOf[`de-DE`]
   
@@ -427,22 +448,30 @@ object qlikStrings {
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
   @js.native
-  sealed trait en extends English
+  sealed trait en
+    extends StObject
+       with English
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait `en-US` extends English
+  sealed trait `en-US`
+    extends StObject
+       with English
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
   @js.native
-  sealed trait es extends Spanish
+  sealed trait es
+    extends StObject
+       with Spanish
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   
   @js.native
-  sealed trait `es-ES` extends Spanish
+  sealed trait `es-ES`
+    extends StObject
+       with Spanish
   @scala.inline
   def `es-ES`: `es-ES` = "es-ES".asInstanceOf[`es-ES`]
   
@@ -452,12 +481,16 @@ object qlikStrings {
   def expression: expression = "expression".asInstanceOf[expression]
   
   @js.native
-  sealed trait fr extends French
+  sealed trait fr
+    extends StObject
+       with French
   @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait `fr-FR` extends French
+  sealed trait `fr-FR`
+    extends StObject
+       with French
   @scala.inline
   def `fr-FR`: `fr-FR` = "fr-FR".asInstanceOf[`fr-FR`]
   
@@ -467,12 +500,16 @@ object qlikStrings {
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait it extends Italian
+  sealed trait it
+    extends StObject
+       with Italian
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   
   @js.native
-  sealed trait `it-IT` extends Italian
+  sealed trait `it-IT`
+    extends StObject
+       with Italian
   @scala.inline
   def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
   
@@ -482,22 +519,30 @@ object qlikStrings {
   def items: items = "items".asInstanceOf[items]
   
   @js.native
-  sealed trait ja extends Japanese
+  sealed trait ja
+    extends StObject
+       with Japanese
   @scala.inline
   def ja: ja = "ja".asInstanceOf[ja]
   
   @js.native
-  sealed trait `ja-JP` extends Japanese
+  sealed trait `ja-JP`
+    extends StObject
+       with Japanese
   @scala.inline
   def `ja-JP`: `ja-JP` = "ja-JP".asInstanceOf[`ja-JP`]
   
   @js.native
-  sealed trait ko extends Korean
+  sealed trait ko
+    extends StObject
+       with Korean
   @scala.inline
   def ko: ko = "ko".asInstanceOf[ko]
   
   @js.native
-  sealed trait `ko-KR` extends Korean
+  sealed trait `ko-KR`
+    extends StObject
+       with Korean
   @scala.inline
   def `ko-KR`: `ko-KR` = "ko-KR".asInstanceOf[`ko-KR`]
   
@@ -522,12 +567,16 @@ object qlikStrings {
   def media: media = "media".asInstanceOf[media]
   
   @js.native
-  sealed trait nl extends Dutch
+  sealed trait nl
+    extends StObject
+       with Dutch
   @scala.inline
   def nl: nl = "nl".asInstanceOf[nl]
   
   @js.native
-  sealed trait `nl-NL` extends Dutch
+  sealed trait `nl-NL`
+    extends StObject
+       with Dutch
   @scala.inline
   def `nl-NL`: `nl-NL` = "nl-NL".asInstanceOf[`nl-NL`]
   
@@ -542,22 +591,30 @@ object qlikStrings {
   def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait pl extends Polish
+  sealed trait pl
+    extends StObject
+       with Polish
   @scala.inline
   def pl: pl = "pl".asInstanceOf[pl]
   
   @js.native
-  sealed trait `pl-PL` extends Polish
+  sealed trait `pl-PL`
+    extends StObject
+       with Polish
   @scala.inline
   def `pl-PL`: `pl-PL` = "pl-PL".asInstanceOf[`pl-PL`]
   
   @js.native
-  sealed trait pt extends BrazilianPortuguese
+  sealed trait pt
+    extends StObject
+       with BrazilianPortuguese
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
   
   @js.native
-  sealed trait `pt-BR` extends BrazilianPortuguese
+  sealed trait `pt-BR`
+    extends StObject
+       with BrazilianPortuguese
   @scala.inline
   def `pt-BR`: `pt-BR` = "pt-BR".asInstanceOf[`pt-BR`]
   
@@ -577,12 +634,16 @@ object qlikStrings {
   def replace: replace = "replace".asInstanceOf[replace]
   
   @js.native
-  sealed trait ru extends Russian
+  sealed trait ru
+    extends StObject
+       with Russian
   @scala.inline
   def ru: ru = "ru".asInstanceOf[ru]
   
   @js.native
-  sealed trait `ru-RU` extends Russian
+  sealed trait `ru-RU`
+    extends StObject
+       with Russian
   @scala.inline
   def `ru-RU`: `ru-RU` = "ru-RU".asInstanceOf[`ru-RU`]
   
@@ -592,7 +653,9 @@ object qlikStrings {
   def settings: settings = "settings".asInstanceOf[settings]
   
   @js.native
-  sealed trait sheet extends ListTypes
+  sealed trait sheet
+    extends StObject
+       with ListTypes
   @scala.inline
   def sheet: sheet = "sheet".asInstanceOf[sheet]
   
@@ -607,7 +670,9 @@ object qlikStrings {
   def sorting: sorting = "sorting".asInstanceOf[sorting]
   
   @js.native
-  sealed trait story extends ListTypes
+  sealed trait story
+    extends StObject
+       with ListTypes
   @scala.inline
   def story: story = "story".asInstanceOf[story]
   
@@ -617,12 +682,16 @@ object qlikStrings {
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait sv extends Swedish
+  sealed trait sv
+    extends StObject
+       with Swedish
   @scala.inline
   def sv: sv = "sv".asInstanceOf[sv]
   
   @js.native
-  sealed trait `sv-SE` extends Swedish
+  sealed trait `sv-SE`
+    extends StObject
+       with Swedish
   @scala.inline
   def `sv-SE`: `sv-SE` = "sv-SE".asInstanceOf[`sv-SE`]
   
@@ -642,12 +711,16 @@ object qlikStrings {
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait `ts-TR` extends Turkish
+  sealed trait `ts-TR`
+    extends StObject
+       with Turkish
   @scala.inline
   def `ts-TR`: `ts-TR` = "ts-TR".asInstanceOf[`ts-TR`]
   
   @js.native
-  sealed trait ts_ extends Turkish
+  sealed trait ts_
+    extends StObject
+       with Turkish
   @scala.inline
   def ts_ : ts_ = "ts".asInstanceOf[ts_]
   

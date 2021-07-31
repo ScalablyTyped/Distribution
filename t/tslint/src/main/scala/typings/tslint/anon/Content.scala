@@ -3,15 +3,13 @@ package typings.tslint.anon
 import typings.tslint.tagExclusionMod.IContentTags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: IContentTags = js.native
+  var content: IContentTags
   
-  var existence: js.Array[String] = js.native
+  var existence: js.Array[String]
 }
 object Content {
   

@@ -7,15 +7,13 @@ import typings.contentfulManagement.commonTypesMod.Collection
 import typings.contentfulManagement.commonTypesMod.CollectionProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofapiKey extends StObject {
   
-  def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey = js.native
+  def wrapApiKey(http: AxiosInstance, data: ApiKeyProps): ApiKey
   
-  def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps] = js.native
+  def wrapApiKeyCollection(http: AxiosInstance, data: CollectionProp[ApiKeyProps]): Collection[ApiKey, ApiKeyProps]
 }
 object TypeofapiKey {
   

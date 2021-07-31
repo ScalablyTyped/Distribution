@@ -2,28 +2,26 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
   /**
     * `true` if the value was inserted into the new string.
     */
-  var added: js.UndefOr[Boolean] = js.native
+  var added: js.UndefOr[Boolean] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * `true` if the value was removed from the old string.
     */
-  var removed: js.UndefOr[Boolean] = js.native
+  var removed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Text content.
     */
-  var value: String = js.native
+  var value: String
 }
 object Change {
   

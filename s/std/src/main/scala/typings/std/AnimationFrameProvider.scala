@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationFrameProvider extends StObject {
   
-  def cancelAnimationFrame(handle: Double): Unit = js.native
+  def cancelAnimationFrame(handle: Double): Unit
   
-  def requestAnimationFrame(callback: FrameRequestCallback): Double = js.native
+  def requestAnimationFrame(callback: FrameRequestCallback): Double
 }
 object AnimationFrameProvider {
   

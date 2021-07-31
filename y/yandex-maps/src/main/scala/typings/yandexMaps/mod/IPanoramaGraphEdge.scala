@@ -2,13 +2,11 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaGraphEdge extends StObject {
   
-  def getEndNodes(): js.Array[IPanoramaGraphNode] = js.native
+  def getEndNodes(): js.Array[IPanoramaGraphNode]
 }
 object IPanoramaGraphEdge {
   

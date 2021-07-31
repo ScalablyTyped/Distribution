@@ -11,37 +11,54 @@ import typings.dayjs.toObjectMod.DayjsObject
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esmMod {
   
+  @scala.inline
+  def apply(): Dayjs = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: Unit, locale: String): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: Unit, locale: String, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: Unit, locale: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: OptionType): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: OptionType, locale: String): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: OptionType, locale: String, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: OptionType, locale: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: Unit, format: OptionType, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType): Dayjs = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: Unit, locale: String): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: Unit, locale: String, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: Unit, locale: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: OptionType): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: OptionType, locale: String): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: OptionType, locale: String, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: OptionType, locale: Unit, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  @scala.inline
+  def apply(date: ConfigType, format: OptionType, strict: Boolean): Dayjs = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], strict.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
+  
   @JSImport("dayjs/esm", JSImport.Namespace)
   @js.native
-  def apply(): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(
-    date: js.UndefOr[ConfigType],
-    format: js.UndefOr[OptionType],
-    locale: js.UndefOr[scala.Nothing],
-    strict: Boolean
-  ): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(date: js.UndefOr[ConfigType], format: js.UndefOr[OptionType], locale: String): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(date: js.UndefOr[ConfigType], format: js.UndefOr[OptionType], locale: String, strict: Boolean): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(date: js.UndefOr[ConfigType], format: js.UndefOr[OptionType], strict: Boolean): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(date: js.UndefOr[ConfigType], format: OptionType): Dayjs = js.native
-  @JSImport("dayjs/esm", JSImport.Namespace)
-  @js.native
-  def apply(date: ConfigType): Dayjs = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dayjs/esm", "Dayjs")
   @js.native
@@ -64,8 +81,9 @@ object esmMod {
     def add(value: Duration): typings.dayjs.durationMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     def calendar(): String = js.native
-    def calendar(referenceTime: js.UndefOr[ConfigType], formats: js.Object): String = js.native
+    def calendar(referenceTime: Unit, formats: js.Object): String = js.native
     def calendar(referenceTime: ConfigType): String = js.native
+    def calendar(referenceTime: ConfigType, formats: js.Object): String = js.native
     
     /**
       * Get the date of the month.
@@ -144,7 +162,7 @@ object esmMod {
       * Docs: https://day.js.org/docs/en/display/difference
       */
     def diff(date: ConfigType): Double = js.native
-    def diff(date: ConfigType, unit: js.UndefOr[scala.Nothing], float: Boolean): Double = js.native
+    def diff(date: ConfigType, unit: Unit, float: Boolean): Double = js.native
     def diff(date: ConfigType, unit: OpUnitType): Double = js.native
     def diff(date: ConfigType, unit: OpUnitType, float: Boolean): Double = js.native
     def diff(date: ConfigType, unit: QUnitType): Double = js.native
@@ -259,8 +277,8 @@ object esmMod {
     def isBefore(date: ConfigType, unit: ISOUnitType): Boolean = js.native
     
     def isBetween(a: ConfigType, b: ConfigType): Boolean = js.native
-    def isBetween(a: ConfigType, b: ConfigType, c: js.UndefOr[scala.Nothing], d: String): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: Null, d: String): Boolean = js.native
+    def isBetween(a: ConfigType, b: ConfigType, c: Unit, d: String): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType): Boolean = js.native
     def isBetween(a: ConfigType, b: ConfigType, c: OpUnitType, d: String): Boolean = js.native
     
@@ -502,9 +520,9 @@ object esmMod {
     def toObject(): DayjsObject = js.native
     
     def tz(): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
-    def tz(timezone: js.UndefOr[scala.Nothing], keepLocalTime: Boolean): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def tz(timezone: String): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     def tz(timezone: String, keepLocalTime: Boolean): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
+    def tz(timezone: Unit, keepLocalTime: Boolean): typings.dayjs.timezoneMod.dayjsEsmAugmentingMod.Dayjs = js.native
     
     /**
       * This returns the Unix timestamp (the number of **seconds** since the Unix Epoch) of the Day.js object.
@@ -563,136 +581,102 @@ object esmMod {
     def years(value: Double): typings.dayjs.pluralGetSetMod.dayjsEsmAugmentingMod.Dayjs = js.native
   }
   
-  @JSImport("dayjs/esm", "duration")
-  @js.native
-  def duration(): Duration = js.native
-  @JSImport("dayjs/esm", "duration")
-  @js.native
-  def duration(input: js.UndefOr[DurationInputType], unit: String): Duration = js.native
-  @JSImport("dayjs/esm", "duration")
-  @js.native
-  def duration(input: DurationInputType): Duration = js.native
+  @scala.inline
+  def duration(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")().asInstanceOf[Duration]
+  @scala.inline
+  def duration(input: Unit, unit: String): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
+  @scala.inline
+  def duration(input: DurationInputType): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any]).asInstanceOf[Duration]
+  @scala.inline
+  def duration(input: DurationInputType, unit: String): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("duration")(input.asInstanceOf[js.Any], unit.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
-  @JSImport("dayjs/esm", "extend")
-  @js.native
-  def extend[T](plugin: PluginFunc[T]): Dayjs = js.native
-  @JSImport("dayjs/esm", "extend")
-  @js.native
-  def extend[T](plugin: PluginFunc[T], option: T): Dayjs = js.native
+  @scala.inline
+  def extend[T](plugin: PluginFunc[T]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  @scala.inline
+  def extend[T](plugin: PluginFunc[T], option: T): Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(plugin.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Dayjs]
   
-  @JSImport("dayjs/esm", "isDayjs")
-  @js.native
-  def isDayjs(d: js.Any): /* is dayjs.dayjs/esm.Dayjs */ Boolean = js.native
+  @scala.inline
+  def isDayjs(d: js.Any): /* is dayjs.dayjs/esm.Dayjs */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDayjs")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm.Dayjs */ Boolean]
   
-  @JSImport("dayjs/esm", "isDuration")
-  @js.native
-  def isDuration(d: js.Any): /* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean = js.native
+  @scala.inline
+  def isDuration(d: js.Any): /* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDuration")(d.asInstanceOf[js.Any]).asInstanceOf[/* is dayjs.dayjs/esm/plugin/duration.Duration */ Boolean]
   
-  @JSImport("dayjs/esm", "isMoment")
-  @js.native
-  def isMoment(input: js.Any): Boolean = js.native
+  @scala.inline
+  def isMoment(input: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMoment")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: js.UndefOr[scala.Nothing], `object`: js.UndefOr[scala.Nothing], isLocal: Boolean): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: js.UndefOr[scala.Nothing], `object`: PartialILocale): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: js.UndefOr[scala.Nothing], `object`: PartialILocale, isLocal: Boolean): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: String): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: String, `object`: js.UndefOr[scala.Nothing], isLocal: Boolean): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: String, `object`: PartialILocale): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: String, `object`: PartialILocale, isLocal: Boolean): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: ILocale): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: ILocale, `object`: js.UndefOr[scala.Nothing], isLocal: Boolean): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: ILocale, `object`: PartialILocale): String = js.native
-  @JSImport("dayjs/esm", "locale")
-  @js.native
-  def locale(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = js.native
+  @scala.inline
+  def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+  @scala.inline
+  def locale(preset: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: String, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: String, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: String, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: Unit, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: Unit, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: Unit, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: ILocale): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: ILocale, `object`: Unit, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: ILocale, `object`: PartialILocale): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(preset: ILocale, `object`: PartialILocale, isLocal: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(preset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], isLocal.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("dayjs/esm", "localeData")
-  @js.native
-  def localeData(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn = js.native
+  @scala.inline
+  def localeData(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("localeData")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.GlobalLocaleDataReturn]
   
-  @JSImport("dayjs/esm", "max")
-  @js.native
-  def max(dayjs: Dayjs*): Dayjs = js.native
-  @JSImport("dayjs/esm", "max")
-  @js.native
-  def max(dayjs: js.Array[Dayjs]): Dayjs = js.native
+  @scala.inline
+  def max(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  @scala.inline
+  def max(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  @JSImport("dayjs/esm", "min")
-  @js.native
-  def min(dayjs: Dayjs*): Dayjs = js.native
-  @JSImport("dayjs/esm", "min")
-  @js.native
-  def min(dayjs: js.Array[Dayjs]): Dayjs = js.native
+  @scala.inline
+  def min(dayjs: Dayjs*): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
+  @scala.inline
+  def min(dayjs: js.Array[Dayjs]): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(dayjs.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  @JSImport("dayjs/esm", "months")
-  @js.native
-  def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+  @scala.inline
+  def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("months")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames]
   
-  @JSImport("dayjs/esm", "monthsShort")
-  @js.native
-  def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
+  @scala.inline
+  def monthsShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = ^.asInstanceOf[js.Dynamic].applyDynamic("monthsShort")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames]
   
-  @JSImport("dayjs/esm", "unix")
-  @js.native
-  def unix(t: Double): Dayjs = js.native
+  @scala.inline
+  def unix(t: Double): Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("unix")(t.asInstanceOf[js.Any]).asInstanceOf[Dayjs]
   
-  @JSImport("dayjs/esm", "updateLocale")
-  @js.native
-  def updateLocale(localeName: String, customConfig: js.Object): js.Any = js.native
+  @scala.inline
+  def updateLocale(localeName: String, customConfig: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("updateLocale")(localeName.asInstanceOf[js.Any], customConfig.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("dayjs/esm", "utc")
-  @js.native
-  def utc(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-  @JSImport("dayjs/esm", "utc")
-  @js.native
-  def utc(config: js.UndefOr[ConfigType], format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
-  @JSImport("dayjs/esm", "utc")
-  @js.native
-  def utc(config: ConfigType): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = js.native
+  @scala.inline
+  def utc(): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")().asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  @scala.inline
+  def utc(config: Unit, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  @scala.inline
+  def utc(config: ConfigType): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = ^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
+  @scala.inline
+  def utc(config: ConfigType, format: String): typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs = (^.asInstanceOf[js.Dynamic].applyDynamic("utc")(config.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[typings.dayjs.utcMod.dayjsEsmAugmentingMod.Dayjs]
   
-  @JSImport("dayjs/esm", "weekdays")
-  @js.native
-  def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-  @JSImport("dayjs/esm", "weekdays")
-  @js.native
-  def weekdays(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+  @scala.inline
+  def weekdays(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  @scala.inline
+  def weekdays(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdays")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
-  @JSImport("dayjs/esm", "weekdaysMin")
-  @js.native
-  def weekdaysMin(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-  @JSImport("dayjs/esm", "weekdaysMin")
-  @js.native
-  def weekdaysMin(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+  @scala.inline
+  def weekdaysMin(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  @scala.inline
+  def weekdaysMin(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysMin")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
-  @JSImport("dayjs/esm", "weekdaysShort")
-  @js.native
-  def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
-  @JSImport("dayjs/esm", "weekdaysShort")
-  @js.native
-  def weekdaysShort(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = js.native
+  @scala.inline
+  def weekdaysShort(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")().asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
+  @scala.inline
+  def weekdaysShort(localOrder: Boolean): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames = ^.asInstanceOf[js.Dynamic].applyDynamic("weekdaysShort")(localOrder.asInstanceOf[js.Any]).asInstanceOf[typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.WeekdayNames]
   
   type ConfigType = String | Double | Date | Dayjs
   
@@ -717,13 +701,13 @@ object esmMod {
     def longDateFormat(format: String): String = js.native
     
     def meridiem(): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double, isLower: Boolean): String = js.native
     def meridiem(hour: Double): String = js.native
-    def meridiem(hour: Double, minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
     def meridiem(hour: Double, minute: Double): String = js.native
     def meridiem(hour: Double, minute: Double, isLower: Boolean): String = js.native
+    def meridiem(hour: Double, minute: Unit, isLower: Boolean): String = js.native
+    def meridiem(hour: Unit, minute: Double): String = js.native
+    def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
+    def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
     
     def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     
@@ -744,13 +728,13 @@ object esmMod {
     def longDateFormat(format: String): String = js.native
     
     def meridiem(): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double): String = js.native
-    def meridiem(hour: js.UndefOr[scala.Nothing], minute: Double, isLower: Boolean): String = js.native
     def meridiem(hour: Double): String = js.native
-    def meridiem(hour: Double, minute: js.UndefOr[scala.Nothing], isLower: Boolean): String = js.native
     def meridiem(hour: Double, minute: Double): String = js.native
     def meridiem(hour: Double, minute: Double, isLower: Boolean): String = js.native
+    def meridiem(hour: Double, minute: Unit, isLower: Boolean): String = js.native
+    def meridiem(hour: Unit, minute: Double): String = js.native
+    def meridiem(hour: Unit, minute: Double, isLower: Boolean): String = js.native
+    def meridiem(hour: Unit, minute: Unit, isLower: Boolean): String = js.native
     
     def months(): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native
     def months(instance: typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.Dayjs): typings.dayjs.localeDataMod.dayjsEsmAugmentingMod.MonthNames = js.native

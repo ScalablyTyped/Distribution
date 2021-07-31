@@ -3,14 +3,12 @@ package typings.algoliasearch.anon
 import typings.algoliaClientCommon.mod.AuthModeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined algoliasearch.algoliasearch/dist/algoliasearch.WithoutCredentials<@algolia/client-search.@algolia/client-search.SearchClientOptions> */
-@js.native
 trait WithoutCredentialsSearchC extends StObject {
   
-  var authMode: js.UndefOr[AuthModeType] = js.native
+  var authMode: js.UndefOr[AuthModeType] = js.undefined
 }
 object WithoutCredentialsSearchC {
   

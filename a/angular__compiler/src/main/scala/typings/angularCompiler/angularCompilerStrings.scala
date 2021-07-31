@@ -3,13 +3,14 @@ package typings.angularCompiler
 import typings.angularCompiler.outputAstMod.JSDocTagName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularCompilerStrings {
   
   @js.native
-  sealed trait desc extends JSDocTagName
+  sealed trait desc
+    extends StObject
+       with JSDocTagName
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
@@ -19,7 +20,9 @@ object angularCompilerStrings {
   def directiveInject: directiveInject = "directiveInject".asInstanceOf[directiveInject]
   
   @js.native
-  sealed trait id extends JSDocTagName
+  sealed trait id
+    extends StObject
+       with JSDocTagName
   @scala.inline
   def id: id = "id".asInstanceOf[id]
   
@@ -34,7 +37,9 @@ object angularCompilerStrings {
   def invalid: invalid = "invalid".asInstanceOf[invalid]
   
   @js.native
-  sealed trait meaning extends JSDocTagName
+  sealed trait meaning
+    extends StObject
+       with JSDocTagName
   @scala.inline
   def meaning: meaning = "meaning".asInstanceOf[meaning]
   

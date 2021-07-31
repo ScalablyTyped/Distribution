@@ -2,21 +2,19 @@ package typings.requirejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequireShim extends StObject {
   
   /**
     * List of dependencies.
     **/
-  var deps: js.UndefOr[js.Array[String]] = js.native
+  var deps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name the module will be exported as.
     **/
-  var exports: js.UndefOr[String] = js.native
+  var exports: js.UndefOr[String] = js.undefined
   
   /**
     * Initialize function with all dependcies passed in,
@@ -26,7 +24,7 @@ trait RequireShim extends StObject {
     * @param dependencies
     * @return
     **/
-  var init: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var init: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object RequireShim {
   
@@ -55,7 +53,7 @@ object RequireShim {
     def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def setInit(value: /* repeated */ js.Any => _): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
+    def setInit(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "init", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInitUndefined: Self = StObject.set(x, "init", js.undefined)

@@ -2,74 +2,74 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColumnDefinition extends Entity {
+trait ColumnDefinition
+  extends StObject
+     with Entity {
   
   // This column stores boolean values.
-  var boolean: js.UndefOr[NullableOption[BooleanColumn]] = js.native
+  var boolean: js.UndefOr[NullableOption[BooleanColumn]] = js.undefined
   
   // This column's data is calculated based on other columns.
-  var calculated: js.UndefOr[NullableOption[CalculatedColumn]] = js.native
+  var calculated: js.UndefOr[NullableOption[CalculatedColumn]] = js.undefined
   
   // This column stores data from a list of choices.
-  var choice: js.UndefOr[NullableOption[ChoiceColumn]] = js.native
+  var choice: js.UndefOr[NullableOption[ChoiceColumn]] = js.undefined
   
   // For site columns, the name of the group this column belongs to. Helps organize related columns.
-  var columnGroup: js.UndefOr[NullableOption[String]] = js.native
+  var columnGroup: js.UndefOr[NullableOption[String]] = js.undefined
   
   // This column stores currency values.
-  var currency: js.UndefOr[NullableOption[CurrencyColumn]] = js.native
+  var currency: js.UndefOr[NullableOption[CurrencyColumn]] = js.undefined
   
   // This column stores DateTime values.
-  var dateTime: js.UndefOr[NullableOption[DateTimeColumn]] = js.native
+  var dateTime: js.UndefOr[NullableOption[DateTimeColumn]] = js.undefined
   
   // The default value for this column.
-  var defaultValue: js.UndefOr[NullableOption[DefaultColumnValue]] = js.native
+  var defaultValue: js.UndefOr[NullableOption[DefaultColumnValue]] = js.undefined
   
   // The user-facing description of the column.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user-facing name of the column.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // If true, no two list items may have the same value for this column.
-  var enforceUniqueValues: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enforceUniqueValues: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // This column stores a geolocation.
-  var geolocation: js.UndefOr[NullableOption[GeolocationColumn]] = js.native
+  var geolocation: js.UndefOr[NullableOption[GeolocationColumn]] = js.undefined
   
   // Specifies whether the column is displayed in the user interface.
-  var hidden: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hidden: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies whether the column values can used for sorting and searching.
-  var indexed: js.UndefOr[NullableOption[Boolean]] = js.native
+  var indexed: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // This column's data is looked up from another source in the site.
-  var lookup: js.UndefOr[NullableOption[LookupColumn]] = js.native
+  var lookup: js.UndefOr[NullableOption[LookupColumn]] = js.undefined
   
   /**
     * The API-facing name of the column as it appears in the [fields][] on a [listItem][]. For the user-facing name, see
     * displayName.
     */
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // This column stores number values.
-  var number: js.UndefOr[NullableOption[NumberColumn]] = js.native
+  var number: js.UndefOr[NullableOption[NumberColumn]] = js.undefined
   
   // This column stores Person or Group values.
-  var personOrGroup: js.UndefOr[NullableOption[PersonOrGroupColumn]] = js.native
+  var personOrGroup: js.UndefOr[NullableOption[PersonOrGroupColumn]] = js.undefined
   
   // Specifies whether the column values can be modified.
-  var readOnly: js.UndefOr[NullableOption[Boolean]] = js.native
+  var readOnly: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Specifies whether the column value is not optional.
-  var required: js.UndefOr[NullableOption[Boolean]] = js.native
+  var required: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // This column stores text values.
-  var text: js.UndefOr[NullableOption[TextColumn]] = js.native
+  var text: js.UndefOr[NullableOption[TextColumn]] = js.undefined
 }
 object ColumnDefinition {
   

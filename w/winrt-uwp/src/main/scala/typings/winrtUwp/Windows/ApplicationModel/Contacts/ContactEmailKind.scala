@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ContactEmailKind extends StObject {
   
   /** An email address of the contact other than personal or work. */
   @js.native
-  sealed trait other extends ContactEmailKind
+  sealed trait other
+    extends StObject
+       with ContactEmailKind
   
   /** The personal email address of the contact. */
   @js.native
-  sealed trait personal extends ContactEmailKind
+  sealed trait personal
+    extends StObject
+       with ContactEmailKind
   
   /** The work email address of the contact. */
   @js.native
-  sealed trait work extends ContactEmailKind
+  sealed trait work
+    extends StObject
+       with ContactEmailKind
 }

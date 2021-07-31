@@ -7,45 +7,43 @@ import typings.electron.electronStrings.purchasing
 import typings.electron.electronStrings.restored
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/transaction
   /**
     * The error code if an error occurred while processing the transaction.
     */
-  var errorCode: Double = js.native
+  var errorCode: Double
   
   /**
     * The error message if an error occurred while processing the transaction.
     */
-  var errorMessage: String = js.native
+  var errorMessage: String
   
   /**
     * The identifier of the restored transaction by the App Store.
     */
-  var originalTransactionIdentifier: String = js.native
+  var originalTransactionIdentifier: String
   
-  var payment: Payment = js.native
+  var payment: Payment
   
   /**
     * The date the transaction was added to the App Store’s payment queue.
     */
-  var transactionDate: String = js.native
+  var transactionDate: String
   
   /**
     * A string that uniquely identifies a successful payment transaction.
     */
-  var transactionIdentifier: String = js.native
+  var transactionIdentifier: String
   
   /**
     * The transaction state, can be `purchasing`, `purchased`, `failed`, `restored` or
     * `deferred`.
     */
-  var transactionState: purchasing | purchased | failed | restored | deferred = js.native
+  var transactionState: purchasing | purchased | failed | restored | deferred
 }
 object Transaction {
   

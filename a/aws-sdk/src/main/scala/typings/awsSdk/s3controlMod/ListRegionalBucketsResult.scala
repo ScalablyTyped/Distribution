@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegionalBucketsResult extends StObject {
   
   /**
     *  NextToken is sent when isTruncated is true, which means there are more buckets that can be listed. The next list requests to Amazon S3 can be continued with this NextToken. NextToken is obfuscated and is not a real key.
     */
-  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.native
+  var NextToken: js.UndefOr[NonEmptyMaxLength1024String] = js.undefined
   
   /**
     * 
     */
-  var RegionalBucketList: js.UndefOr[typings.awsSdk.s3controlMod.RegionalBucketList] = js.native
+  var RegionalBucketList: js.UndefOr[typings.awsSdk.s3controlMod.RegionalBucketList] = js.undefined
 }
 object ListRegionalBucketsResult {
   

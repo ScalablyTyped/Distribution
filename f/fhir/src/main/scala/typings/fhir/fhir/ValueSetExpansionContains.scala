@@ -2,84 +2,84 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Codes in the value set
   */
-@js.native
-trait ValueSetExpansionContains extends BackboneElement {
+trait ValueSetExpansionContains
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'abstract'.
     */
-  var _abstract: js.UndefOr[Element] = js.native
+  var _abstract: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'inactive'.
     */
-  var _inactive: js.UndefOr[Element] = js.native
+  var _inactive: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * If user cannot select this entry
     */
-  var `abstract`: js.UndefOr[Boolean] = js.native
+  var `abstract`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Code - if blank, this is not a selectable code
     */
-  var code: js.UndefOr[typings.fhir.fhir.code] = js.native
+  var code: js.UndefOr[typings.fhir.fhir.code] = js.undefined
   
   /**
     * Codes contained under this entry
     */
-  var contains: js.UndefOr[js.Array[ValueSetExpansionContains]] = js.native
+  var contains: js.UndefOr[js.Array[ValueSetExpansionContains]] = js.undefined
   
   /**
     * Additional representations for this item
     */
-  var designation: js.UndefOr[js.Array[ValueSetComposeIncludeConceptDesignation]] = js.native
+  var designation: js.UndefOr[js.Array[ValueSetComposeIncludeConceptDesignation]] = js.undefined
   
   /**
     * User display for the concept
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * If concept is inactive in the code system
     */
-  var inactive: js.UndefOr[Boolean] = js.native
+  var inactive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * System value for the code
     */
-  var system: js.UndefOr[uri] = js.native
+  var system: js.UndefOr[uri] = js.undefined
   
   /**
     * Version in which this code/display is defined
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object ValueSetExpansionContains {
   

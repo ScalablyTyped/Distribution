@@ -10,9 +10,9 @@ Async iterable http multipart message parser
 | ------------------ | :-------------: |
 | Full name          | it-multipart |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 10 |
 | # dependents       | 3 |
-| # downloads        | 166242 |
+| # downloads        | 252505 |
 | # stars            | 0 |
 
 ## Links

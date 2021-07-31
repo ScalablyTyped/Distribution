@@ -2,21 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ForInStatement extends AST {
+trait ForInStatement
+  extends StObject
+     with AST {
   
-  var expression: AST = js.native
+  var expression: AST
   
-  var left: AST = js.native
+  var left: AST
   
-  var statement: AST = js.native
+  var statement: AST
   
-  def structuralEquals(ast: ForInStatement, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ForInStatement, includingPosition: Boolean): Boolean
   
-  var variableDeclaration: VariableDeclaration = js.native
+  var variableDeclaration: VariableDeclaration
 }
 object ForInStatement {
   

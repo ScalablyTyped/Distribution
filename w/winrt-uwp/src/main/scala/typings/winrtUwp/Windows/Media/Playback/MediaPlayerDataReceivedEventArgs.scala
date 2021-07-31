@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Media.Playback
 import typings.winrtUwp.Windows.Foundation.Collections.IMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the MessageReceivedFromBackground and MessageReceivedFromForeground events. */
-@js.native
 trait MediaPlayerDataReceivedEventArgs extends StObject {
   
   /** Gets the data from the MessageReceivedFromBackground or MessageReceivedFromForeground event. */
-  var data: IMap[String, String] = js.native
+  var data: IMap[String, String]
 }
 object MediaPlayerDataReceivedEventArgs {
   

@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Qualifications obtained by training and certification
   */
-@js.native
-trait PractitionerQualification extends BackboneElement {
+trait PractitionerQualification
+  extends StObject
+     with BackboneElement {
   
   /**
     * Coded representation of the qualification
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * An identifier for this qualification for the practitioner
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * Organization that regulates and issues the qualification
     */
-  var issuer: js.UndefOr[Reference] = js.native
+  var issuer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Period during which the qualification is valid
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
 }
 object PractitionerQualification {
   

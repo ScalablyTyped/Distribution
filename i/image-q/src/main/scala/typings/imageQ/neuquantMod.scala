@@ -2,16 +2,19 @@ package typings.imageQ
 
 import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.paletteCommonMod.IPaletteQuantizer
+import typings.imageQ.pointContainerMod.PointContainer
+import typings.imageQ.utilsPaletteMod.Palette
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object neuquantMod {
   
   @JSImport("image-q/dist/palette/neuquant/neuquant", "NeuQuant")
   @js.native
-  class NeuQuant protected () extends IPaletteQuantizer {
+  class NeuQuant protected ()
+    extends StObject
+       with IPaletteQuantizer {
     def this(colorDistanceCalculator: AbstractDistanceCalculator) = this()
     def this(colorDistanceCalculator: AbstractDistanceCalculator, colors: Double) = this()
     
@@ -63,6 +66,12 @@ object neuquantMod {
     
     /** sampling factor 1..30 */
     val _sampleFactor: js.Any = js.native
+    
+    /* CompleteClass */
+    override def quantize(): Palette = js.native
+    
+    /* CompleteClass */
+    override def sample(pointBuffer: PointContainer): Unit = js.native
   }
   /* static members */
   object NeuQuant {

@@ -2,17 +2,15 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   /** if true, method does not make an actual request to the API Server but rather returns an object with url which contains the actual URL to make the GET request to WebPageTest API Server */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** if specified, overrides the WebPageTest server informed in the constructor only for that method call */
-  var server: js.UndefOr[String] = js.native
+  var server: js.UndefOr[String] = js.undefined
 }
 object Options {
   

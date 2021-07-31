@@ -2,17 +2,15 @@ package typings.nodeIp2region
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait City extends StObject {
     
-    var city: Double = js.native
+    var city: Double
     
-    var region: String = js.native
+    var region: String
   }
   object City {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DbPath extends StObject {
     
-    var dbPath: String = js.native
+    var dbPath: String
   }
   object DbPath {
     

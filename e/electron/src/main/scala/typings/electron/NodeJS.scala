@@ -13,13 +13,14 @@ import typings.electron.electronStrings.worker
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object NodeJS {
   
   @js.native
-  trait Process extends EventEmitter {
+  trait Process
+    extends StObject
+       with EventEmitter {
     
     @JSName("addListener")
     def addListener_loaded(event: loaded, listener: js.Function): this.type = js.native
@@ -248,12 +249,11 @@ object NodeJS {
     val windowsStore: Boolean = js.native
   }
   
-  @js.native
   trait ProcessVersions extends StObject {
     
-    val chrome: String = js.native
+    val chrome: String
     
-    val electron: String = js.native
+    val electron: String
   }
   object ProcessVersions {
     

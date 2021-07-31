@@ -2,75 +2,73 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var background: js.Any = js.native
+  var background: js.Any
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var colors: js.Array[_] = js.native
+  var colors: js.Array[js.Any]
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var defaultCfg: Handler = js.native
+  var defaultCfg: Handler
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var group: js.Any = js.native
+  var group: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var isInit: Boolean = js.native
+  var isInit: Boolean
   
-  var isRegister: Boolean = js.native
+  var isRegister: Boolean
   
-  var isUpdating: Boolean = js.native
+  var isUpdating: Boolean
   
-  var layout: String = js.native
+  var layout: String
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var max: Double = js.native
+  var max: Double
   
-  var maxHeight: js.Any = js.native
+  var maxHeight: js.Any
   
-  var maxWidth: js.Any = js.native
+  var maxWidth: js.Any
   
-  var min: Double = js.native
+  var min: Double
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var slidable: Boolean = js.native
+  var slidable: Boolean
   
-  var step: js.Any = js.native
+  var step: js.Any
   
-  var tip: js.Any = js.native
+  var tip: js.Any
   
-  var title: js.Any = js.native
+  var title: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var value: js.Any = js.native
+  var value: js.Any
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Colors {
   
@@ -80,7 +78,7 @@ object Colors {
     animateOption: Appear,
     background: js.Any,
     capture: Boolean,
-    colors: js.Array[_],
+    colors: js.Array[js.Any],
     container: js.Any,
     defaultCfg: Handler,
     events: js.Any,
@@ -130,7 +128,7 @@ object Colors {
     def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColors(value: js.Array[_]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
+    def setColors(value: js.Array[js.Any]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColorsVarargs(value: js.Any*): Self = StObject.set(x, "colors", js.Array(value :_*))

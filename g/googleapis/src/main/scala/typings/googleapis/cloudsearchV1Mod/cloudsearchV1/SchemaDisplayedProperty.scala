@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * property if one is specified. If a display label is not specified, only the
   * values will be shown.
   */
-@js.native
 trait SchemaDisplayedProperty extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaDisplayedProperty extends StObject {
     * for the object. If the name is not a defined property in the schema, an
     * error will be given when attempting to update the schema.
     */
-  var propertyName: js.UndefOr[String] = js.native
+  var propertyName: js.UndefOr[String] = js.undefined
 }
 object SchemaDisplayedProperty {
   

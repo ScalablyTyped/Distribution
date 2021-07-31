@@ -2,17 +2,15 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Selectionobject extends StObject {
   
-  var qBackCount: Double = js.native
+  var qBackCount: Double
   
-  var qForwardCount: Double = js.native
+  var qForwardCount: Double
   
-  var qSelections: js.Array[NxCurrentSelectionItem] = js.native
+  var qSelections: js.Array[NxCurrentSelectionItem]
 }
 object Selectionobject {
   

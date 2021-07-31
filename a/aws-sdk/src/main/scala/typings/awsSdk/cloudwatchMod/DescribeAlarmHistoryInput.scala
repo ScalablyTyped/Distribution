@@ -2,51 +2,49 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAlarmHistoryInput extends StObject {
   
   /**
     * The name of the alarm.
     */
-  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.native
+  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.undefined
   
   /**
     * Use this parameter to specify whether you want the operation to return metric alarms or composite alarms. If you omit this parameter, only metric alarms are returned.
     */
-  var AlarmTypes: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmTypes] = js.native
+  var AlarmTypes: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmTypes] = js.undefined
   
   /**
     * The ending date to retrieve alarm history.
     */
-  var EndDate: js.UndefOr[Timestamp] = js.native
+  var EndDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of alarm histories to retrieve.
     */
-  var HistoryItemType: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryItemType] = js.native
+  var HistoryItemType: js.UndefOr[typings.awsSdk.cloudwatchMod.HistoryItemType] = js.undefined
   
   /**
     * The maximum number of alarm history records to retrieve.
     */
-  var MaxRecords: js.UndefOr[typings.awsSdk.cloudwatchMod.MaxRecords] = js.native
+  var MaxRecords: js.UndefOr[typings.awsSdk.cloudwatchMod.MaxRecords] = js.undefined
   
   /**
     * The token returned by a previous call to indicate that there is more data available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudwatchMod.NextToken] = js.undefined
   
   /**
     * Specified whether to return the newest or oldest alarm history first. Specify TimestampDescending to have the newest event history returned first, and specify TimestampAscending to have the oldest history returned first.
     */
-  var ScanBy: js.UndefOr[typings.awsSdk.cloudwatchMod.ScanBy] = js.native
+  var ScanBy: js.UndefOr[typings.awsSdk.cloudwatchMod.ScanBy] = js.undefined
   
   /**
     * The starting date to retrieve alarm history.
     */
-  var StartDate: js.UndefOr[Timestamp] = js.native
+  var StartDate: js.UndefOr[Timestamp] = js.undefined
 }
 object DescribeAlarmHistoryInput {
   

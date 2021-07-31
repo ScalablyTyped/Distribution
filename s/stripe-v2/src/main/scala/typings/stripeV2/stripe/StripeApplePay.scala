@@ -3,10 +3,8 @@ package typings.stripeV2.stripe
 import typings.stripeV2.anon.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeApplePay extends StObject {
   
   def buildSession(
@@ -17,9 +15,9 @@ trait StripeApplePay extends StObject {
       Unit
     ],
     onErrorHanlder: js.Function1[/* error */ Message, Unit]
-  ): js.Any = js.native
+  ): js.Any
   
-  def checkAvailability(resopnseHandler: js.Function1[/* result */ Boolean, Unit]): Unit = js.native
+  def checkAvailability(resopnseHandler: js.Function1[/* result */ Boolean, Unit]): Unit
 }
 object StripeApplePay {
   

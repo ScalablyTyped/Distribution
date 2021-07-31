@@ -2,7 +2,6 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object algo {
@@ -31,6 +30,10 @@ object algo {
     extends typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF
   object EvpKDF {
     
+    @JSImport("crypto-js", "algo.EvpKDF")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Initializes a newly created key derivation function.
       *
@@ -43,12 +46,10 @@ object algo {
       *     var kdf = CryptoJS.algo.EvpKDF.create({ keySize: 8, iterations: 1000 });
       */
     /* static member */
-    @JSImport("crypto-js", "algo.EvpKDF.create")
-    @js.native
-    def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
-    @JSImport("crypto-js", "algo.EvpKDF.create")
-    @js.native
-    def create(cfg: typings.cryptoJs.anon.Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = js.native
+    @scala.inline
+    def create(): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
+    @scala.inline
+    def create(cfg: typings.cryptoJs.anon.Hasher): typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.EvpKDF]
   }
   
   /**
@@ -60,9 +61,12 @@ object algo {
     extends typings.cryptoJs.mod.global.CryptoJS.algo.HMAC
   object HMAC {
     
-    @JSImport("crypto-js", "algo.HMAC.create")
+    @JSImport("crypto-js", "algo.HMAC")
     @js.native
-    def create(hasher: HasherStatic, key: String): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(hasher: HasherStatic, key: String): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.HMAC]
     /**
       * Initializes a newly created HMAC.
       *
@@ -74,9 +78,8 @@ object algo {
       *     var hmacHasher = CryptoJS.algo.HMAC.create(CryptoJS.algo.SHA256, key);
       */
     /* static member */
-    @JSImport("crypto-js", "algo.HMAC.create")
-    @js.native
-    def create(hasher: HasherStatic, key: WordArray): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = js.native
+    @scala.inline
+    def create(hasher: HasherStatic, key: WordArray): typings.cryptoJs.mod.global.CryptoJS.algo.HMAC = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasher.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.HMAC]
   }
   
   /**
@@ -95,6 +98,10 @@ object algo {
     extends typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2
   object PBKDF2 {
     
+    @JSImport("crypto-js", "algo.PBKDF2")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Initializes a newly created key derivation function.
       *
@@ -107,12 +114,10 @@ object algo {
       *     var kdf = CryptoJS.algo.PBKDF2.create({ keySize: 8, iterations: 1000 });
       */
     /* static member */
-    @JSImport("crypto-js", "algo.PBKDF2.create")
-    @js.native
-    def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
-    @JSImport("crypto-js", "algo.PBKDF2.create")
-    @js.native
-    def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = js.native
+    @scala.inline
+    def create(): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
+    @scala.inline
+    def create(cfg: KDFOption): typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(cfg.asInstanceOf[js.Any]).asInstanceOf[typings.cryptoJs.mod.global.CryptoJS.algo.PBKDF2]
   }
   
   /**

@@ -2,48 +2,46 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningPlatform extends StObject {
   
   /**
     * The category of a code signing platform.
     */
-  var category: js.UndefOr[Category] = js.native
+  var category: js.UndefOr[Category] = js.undefined
   
   /**
     * The display name of a code signing platform.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum size (in MB) of code that can be signed by a code signing platform.
     */
-  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.native
+  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.undefined
   
   /**
     * Any partner entities linked to a code signing platform.
     */
-  var partner: js.UndefOr[String] = js.native
+  var partner: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of a code signing; platform.
     */
-  var platformId: js.UndefOr[String] = js.native
+  var platformId: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration of a code signing platform. This includes the designated hash algorithm and encryption algorithm of a signing platform.
     */
-  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.native
+  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.undefined
   
-  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.native
+  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.undefined
   
   /**
     * The types of targets that can be signed by a code signing platform.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SigningPlatform {
   

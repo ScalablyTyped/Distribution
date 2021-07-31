@@ -2,19 +2,17 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cropbottom extends StObject {
   
-  var crop_bottom: Double = js.native
+  var crop_bottom: Double
   
-  var crop_left: Double = js.native
+  var crop_left: Double
   
-  var crop_right: Double = js.native
+  var crop_right: Double
   
-  var crop_top: Double = js.native
+  var crop_top: Double
 }
 object Cropbottom {
   

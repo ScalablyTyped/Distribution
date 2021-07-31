@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait StreetViewPreference extends StObject
 object StreetViewPreference extends StObject {
   
   @js.native
-  sealed trait BEST extends StreetViewPreference
+  sealed trait BEST
+    extends StObject
+       with StreetViewPreference
   
   @js.native
-  sealed trait NEAREST extends StreetViewPreference
+  sealed trait NEAREST
+    extends StObject
+       with StreetViewPreference
 }

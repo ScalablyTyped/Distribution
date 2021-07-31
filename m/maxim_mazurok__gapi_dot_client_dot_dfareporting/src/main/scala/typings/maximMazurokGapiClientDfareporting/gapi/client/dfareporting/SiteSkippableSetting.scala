@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SiteSkippableSetting extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#siteSkippableSetting". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Amount of time to play videos served to this site template before counting a view. Applicable when skippable is true. */
-  var progressOffset: js.UndefOr[VideoOffset] = js.native
+  var progressOffset: js.UndefOr[VideoOffset] = js.undefined
   
   /** Amount of time to play videos served to this site before the skip button should appear. Applicable when skippable is true. */
-  var skipOffset: js.UndefOr[VideoOffset] = js.native
+  var skipOffset: js.UndefOr[VideoOffset] = js.undefined
   
   /** Whether the user can skip creatives served to this site. This will act as default for new placements created under this site. */
-  var skippable: js.UndefOr[Boolean] = js.native
+  var skippable: js.UndefOr[Boolean] = js.undefined
 }
 object SiteSkippableSetting {
   

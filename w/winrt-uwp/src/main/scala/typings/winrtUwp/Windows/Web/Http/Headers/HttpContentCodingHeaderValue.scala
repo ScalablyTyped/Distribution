@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents content encoding information used in the Content-Encoding HTTP header on HTTP content in a request or a response. */
-@js.native
 trait HttpContentCodingHeaderValue extends StObject {
   
   /** Gets the value of the content-coding information used in the Content-Encoding HTTP header. */
-  var contentCoding: String = js.native
+  var contentCoding: String
 }
 object HttpContentCodingHeaderValue {
   

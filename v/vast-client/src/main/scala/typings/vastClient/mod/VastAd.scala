@@ -2,35 +2,33 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastAd extends StObject {
   
-  var advertiser: String | Null = js.native
+  var advertiser: String | Null
   
-  var creatives: js.Array[VastCreative] = js.native
+  var creatives: js.Array[VastCreative]
   
-  var description: String | Null = js.native
+  var description: String | Null
   
-  var errorURLTemplates: js.Array[String] = js.native
+  var errorURLTemplates: js.Array[String]
   
-  var extensions: js.Array[VastAdExtension] = js.native
+  var extensions: js.Array[VastAdExtension]
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var impressionURLTemplates: js.Array[String] = js.native
+  var impressionURLTemplates: js.Array[String]
   
-  var pricing: String | Null = js.native
+  var pricing: String | Null
   
-  var sequence: String | Null = js.native
+  var sequence: String | Null
   
-  var survey: String | Null = js.native
+  var survey: String | Null
   
-  var system: VastSystem | String | Null = js.native
+  var system: VastSystem | String | Null
   
-  var title: String | Null = js.native
+  var title: String | Null
 }
 object VastAd {
   
@@ -41,7 +39,7 @@ object VastAd {
     extensions: js.Array[VastAdExtension],
     impressionURLTemplates: js.Array[String]
   ): VastAd = {
-    val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], impressionURLTemplates = impressionURLTemplates.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(creatives = creatives.asInstanceOf[js.Any], errorURLTemplates = errorURLTemplates.asInstanceOf[js.Any], extensions = extensions.asInstanceOf[js.Any], impressionURLTemplates = impressionURLTemplates.asInstanceOf[js.Any], advertiser = null, description = null, id = null, pricing = null, sequence = null, survey = null, system = null, title = null)
     __obj.asInstanceOf[VastAd]
   }
   

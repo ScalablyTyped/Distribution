@@ -4,7 +4,6 @@ import typings.node.cryptoMod.HexBase64Latin1Encoding
 import typings.nodeObjectHash.objectSorterMod.SorterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,12 +12,14 @@ object mod {
     * Hasher constructor
     * @param options hasher options
     */
+  @scala.inline
+  def apply(): Hasher = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Hasher]
+  @scala.inline
+  def apply(options: HasherOptions): Hasher = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Hasher]
+  
   @JSImport("node-object-hash", JSImport.Namespace)
   @js.native
-  def apply(): Hasher = js.native
-  @JSImport("node-object-hash", JSImport.Namespace)
-  @js.native
-  def apply(options: HasherOptions): Hasher = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Hasher extends StObject {
@@ -50,20 +51,21 @@ object mod {
   /**
     * Object hasher options
     */
-  @js.native
-  trait HasherOptions extends SorterOptions {
+  trait HasherOptions
+    extends StObject
+       with SorterOptions {
     
     /**
       * Hash algorithm to use
       * @default 'sha256'
       */
-    var alg: js.UndefOr[String] = js.native
+    var alg: js.UndefOr[String] = js.undefined
     
     /**
       * String encoding for hash
       * @default 'hex'
       */
-    var enc: js.UndefOr[HexBase64Latin1Encoding] = js.native
+    var enc: js.UndefOr[HexBase64Latin1Encoding] = js.undefined
   }
   object HasherOptions {
     

@@ -2,23 +2,21 @@ package typings.loginWithAmazonSdkBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains profile information.
   */
 /* Inlined std.Partial<{  CustomerId :string,   Name :string,   PostalCode :string,   PrimaryEmail :string}> */
-@js.native
 trait UserProfile extends StObject {
   
-  var CustomerId: js.UndefOr[String] = js.native
+  var CustomerId: js.UndefOr[String] = js.undefined
   
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
-  var PostalCode: js.UndefOr[String] = js.native
+  var PostalCode: js.UndefOr[String] = js.undefined
   
-  var PrimaryEmail: js.UndefOr[String] = js.native
+  var PrimaryEmail: js.UndefOr[String] = js.undefined
 }
 object UserProfile {
   

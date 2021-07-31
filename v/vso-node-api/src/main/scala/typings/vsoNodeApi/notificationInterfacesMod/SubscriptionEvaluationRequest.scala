@@ -3,21 +3,19 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscriptionEvaluationRequest extends StObject {
   
   /**
     * The min created date for the events used for matching in UTC. Use all events created since this date
     */
-  var minEventsCreatedDate: Date = js.native
+  var minEventsCreatedDate: Date
   
   /**
     * User or group that will receive notifications for events matching the subscription's filter criteria. If not specified, defaults to the calling user.
     */
-  var subscriptionCreateParameters: NotificationSubscriptionCreateParameters = js.native
+  var subscriptionCreateParameters: NotificationSubscriptionCreateParameters
 }
 object SubscriptionEvaluationRequest {
   

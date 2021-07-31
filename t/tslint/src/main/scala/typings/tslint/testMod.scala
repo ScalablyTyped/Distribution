@@ -7,51 +7,45 @@ import typings.tslint.tslintBooleans.`false`
 import typings.tslint.tslintBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testMod {
   
-  @JSImport("tslint/lib/test", "consoleTestResultHandler")
+  @JSImport("tslint/lib/test", JSImport.Namespace)
   @js.native
-  def consoleTestResultHandler(testResult: TestResult, logger: Logger): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tslint/lib/test", "consoleTestResultsHandler")
-  @js.native
-  def consoleTestResultsHandler(testResults: js.Array[TestResult], logger: Logger): Boolean = js.native
+  @scala.inline
+  def consoleTestResultHandler(testResult: TestResult, logger: Logger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("consoleTestResultHandler")(testResult.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/test", "runTest")
-  @js.native
-  def runTest(testDirectory: String): TestResult = js.native
-  @JSImport("tslint/lib/test", "runTest")
-  @js.native
-  def runTest(testDirectory: String, rulesDirectory: String): TestResult = js.native
-  @JSImport("tslint/lib/test", "runTest")
-  @js.native
-  def runTest(testDirectory: String, rulesDirectory: js.Array[String]): TestResult = js.native
+  @scala.inline
+  def consoleTestResultsHandler(testResults: js.Array[TestResult], logger: Logger): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("consoleTestResultsHandler")(testResults.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("tslint/lib/test", "runTests")
-  @js.native
-  def runTests(patterns: js.Array[String]): js.Array[TestResult] = js.native
-  @JSImport("tslint/lib/test", "runTests")
-  @js.native
-  def runTests(patterns: js.Array[String], rulesDirectory: String): js.Array[TestResult] = js.native
-  @JSImport("tslint/lib/test", "runTests")
-  @js.native
-  def runTests(patterns: js.Array[String], rulesDirectory: js.Array[String]): js.Array[TestResult] = js.native
+  @scala.inline
+  def runTest(testDirectory: String): TestResult = ^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any]).asInstanceOf[TestResult]
+  @scala.inline
+  def runTest(testDirectory: String, rulesDirectory: String): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[TestResult]
+  @scala.inline
+  def runTest(testDirectory: String, rulesDirectory: js.Array[String]): TestResult = (^.asInstanceOf[js.Dynamic].applyDynamic("runTest")(testDirectory.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[TestResult]
   
-  @js.native
+  @scala.inline
+  def runTests(patterns: js.Array[String]): js.Array[TestResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[TestResult]]
+  @scala.inline
+  def runTests(patterns: js.Array[String], rulesDirectory: String): js.Array[TestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestResult]]
+  @scala.inline
+  def runTests(patterns: js.Array[String], rulesDirectory: js.Array[String]): js.Array[TestResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("runTests")(patterns.asInstanceOf[js.Any], rulesDirectory.asInstanceOf[js.Any])).asInstanceOf[js.Array[TestResult]]
+  
   trait SkippedTest extends StObject {
     
-    var requirement: String = js.native
+    var requirement: String
     
-    var skipped: `true` = js.native
+    var skipped: `true`
   }
   object SkippedTest {
     
     @scala.inline
-    def apply(requirement: String, skipped: `true`): SkippedTest = {
-      val __obj = js.Dynamic.literal(requirement = requirement.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
+    def apply(requirement: String): SkippedTest = {
+      val __obj = js.Dynamic.literal(requirement = requirement.asInstanceOf[js.Any], skipped = true)
       __obj.asInstanceOf[SkippedTest]
     }
     
@@ -66,22 +60,21 @@ object testMod {
     }
   }
   
-  @js.native
   trait TestOutput extends StObject {
     
-    var errorsFromLinter: js.Array[LintError] = js.native
+    var errorsFromLinter: js.Array[LintError]
     
-    var errorsFromMarkup: js.Array[LintError] = js.native
+    var errorsFromMarkup: js.Array[LintError]
     
-    var fixesFromLinter: String = js.native
+    var fixesFromLinter: String
     
-    var fixesFromMarkup: String = js.native
+    var fixesFromMarkup: String
     
-    var markupFromLinter: String = js.native
+    var markupFromLinter: String
     
-    var markupFromMarkup: String = js.native
+    var markupFromMarkup: String
     
-    var skipped: `false` = js.native
+    var skipped: `false`
   }
   object TestOutput {
     
@@ -92,10 +85,9 @@ object testMod {
       fixesFromLinter: String,
       fixesFromMarkup: String,
       markupFromLinter: String,
-      markupFromMarkup: String,
-      skipped: `false`
+      markupFromMarkup: String
     ): TestOutput = {
-      val __obj = js.Dynamic.literal(errorsFromLinter = errorsFromLinter.asInstanceOf[js.Any], errorsFromMarkup = errorsFromMarkup.asInstanceOf[js.Any], fixesFromLinter = fixesFromLinter.asInstanceOf[js.Any], fixesFromMarkup = fixesFromMarkup.asInstanceOf[js.Any], markupFromLinter = markupFromLinter.asInstanceOf[js.Any], markupFromMarkup = markupFromMarkup.asInstanceOf[js.Any], skipped = skipped.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(errorsFromLinter = errorsFromLinter.asInstanceOf[js.Any], errorsFromMarkup = errorsFromMarkup.asInstanceOf[js.Any], fixesFromLinter = fixesFromLinter.asInstanceOf[js.Any], fixesFromMarkup = fixesFromMarkup.asInstanceOf[js.Any], markupFromLinter = markupFromLinter.asInstanceOf[js.Any], markupFromMarkup = markupFromMarkup.asInstanceOf[js.Any], skipped = false)
       __obj.asInstanceOf[TestOutput]
     }
     
@@ -131,12 +123,11 @@ object testMod {
     }
   }
   
-  @js.native
   trait TestResult extends StObject {
     
-    var directory: String = js.native
+    var directory: String
     
-    var results: StringDictionary[TestOutput | SkippedTest] = js.native
+    var results: StringDictionary[TestOutput | SkippedTest]
   }
   object TestResult {
     

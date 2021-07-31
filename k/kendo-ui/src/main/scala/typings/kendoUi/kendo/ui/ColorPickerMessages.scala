@@ -2,18 +2,16 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorPickerMessages extends StObject {
   
   @JSName("apply")
-  var apply: js.UndefOr[String] = js.native
+  var apply: js.UndefOr[String] = js.undefined
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var previewInput: js.UndefOr[String] = js.native
+  var previewInput: js.UndefOr[String] = js.undefined
 }
 object ColorPickerMessages {
   

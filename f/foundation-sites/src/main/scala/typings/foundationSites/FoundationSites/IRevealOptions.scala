@@ -2,39 +2,37 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRevealOptions extends StObject {
   
-  var animationIn: js.UndefOr[String] = js.native
+  var animationIn: js.UndefOr[String] = js.undefined
   
-  var animationOut: js.UndefOr[String] = js.native
+  var animationOut: js.UndefOr[String] = js.undefined
   
-  var btmOffsetPct: js.UndefOr[Double] = js.native
+  var btmOffsetPct: js.UndefOr[Double] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnEsc: js.UndefOr[Boolean] = js.native
+  var closeOnEsc: js.UndefOr[Boolean] = js.undefined
   
-  var deepLink: js.UndefOr[Boolean] = js.native
+  var deepLink: js.UndefOr[Boolean] = js.undefined
   
-  var fullScreen: js.UndefOr[Boolean] = js.native
+  var fullScreen: js.UndefOr[Boolean] = js.undefined
   
-  var hOffset: js.UndefOr[Double] = js.native
+  var hOffset: js.UndefOr[Double] = js.undefined
   
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
-  var multipleOpened: js.UndefOr[Boolean] = js.native
+  var multipleOpened: js.UndefOr[Boolean] = js.undefined
   
-  var overlay: js.UndefOr[Boolean] = js.native
+  var overlay: js.UndefOr[Boolean] = js.undefined
   
-  var resetOnClose: js.UndefOr[Boolean] = js.native
+  var resetOnClose: js.UndefOr[Boolean] = js.undefined
   
-  var showDelay: js.UndefOr[Double] = js.native
+  var showDelay: js.UndefOr[Double] = js.undefined
   
-  var vOffset: js.UndefOr[Double] = js.native
+  var vOffset: js.UndefOr[Double] = js.undefined
 }
 object IRevealOptions {
   

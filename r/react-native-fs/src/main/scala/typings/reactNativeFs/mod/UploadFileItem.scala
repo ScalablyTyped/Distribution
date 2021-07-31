@@ -2,22 +2,20 @@ package typings.reactNativeFs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileItem extends StObject {
   
   // Name of the file, if not defined then filename is used
-  var filename: String = js.native
+  var filename: String
   
   // Name of file
-  var filepath: String = js.native
+  var filepath: String
   
   // Path to file
-  var filetype: String = js.native
+  var filetype: String
   
-  var name: String = js.native
+  var name: String
 }
 object UploadFileItem {
   

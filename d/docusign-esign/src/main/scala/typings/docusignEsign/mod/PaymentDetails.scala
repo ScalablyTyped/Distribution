@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentDetails extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait PaymentDetails extends StObject {
     * Do not specify `BankAccount` (ACH) if you are also using in-person signing.
     *
     */
-  var allowedPaymentMethods: js.UndefOr[js.Array[String]] = js.native
+  var allowedPaymentMethods: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The GUID set by the payment gateway (such as Stripe) that identifies a transaction. The `chargeId` is created when authorizing a payment and must be referenced when completing a payment.
     */
-  var chargeId: js.UndefOr[String] = js.native
+  var chargeId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the three-letter
@@ -47,12 +45,12 @@ trait PaymentDetails extends StObject {
     * [ISO4217]:          https://en.wikipedia.org/wiki/ISO_4217
     *
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `currencyCode` property is editable.
     */
-  var currencyCodeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var currencyCodeMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * This is a sender-defined field that passes any extra metadata about the payment that will show up in the Authorize.net transaction under **Description**
@@ -62,18 +60,18 @@ trait PaymentDetails extends StObject {
     *
     * `<envelopeID>, <customMetadata>`
     */
-  var customMetadata: js.UndefOr[String] = js.native
+  var customMetadata: js.UndefOr[String] = js.undefined
   
   /**
     * A sender-defined field that specifies whether custom metadata is required for the transaction. When set to **true**, custom metadata is required.
     * This property only applies if you are using an Authorize.net payment gateway account.
     */
-  var customMetadataRequired: js.UndefOr[Boolean] = js.native
+  var customMetadataRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The customer ID.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * A GUID that identifies the payment gateway
@@ -93,19 +91,19 @@ trait PaymentDetails extends StObject {
     * [paymentgateways]:  https://support.docusign.com/en/guides/managing-payment-gateways
     *
     */
-  var gatewayAccountId: js.UndefOr[String] = js.native
+  var gatewayAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `gatewayAccountId` property is editable.
     */
-  var gatewayAccountIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var gatewayAccountIdMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * Display name of the gateway connected to sender's Docusign account.
     *
     * Possible values are: Stripe, Braintree, Authorize.Net.
     */
-  var gatewayDisplayName: js.UndefOr[String] = js.native
+  var gatewayDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the gateway connected to sender's DocuSign account.
@@ -116,7 +114,7 @@ trait PaymentDetails extends StObject {
     * * `Braintree`
     * * `AuthorizeDotNet`
     */
-  var gatewayName: js.UndefOr[String] = js.native
+  var gatewayName: js.UndefOr[String] = js.undefined
   
   /**
     * A payment formula can have
@@ -129,7 +127,7 @@ trait PaymentDetails extends StObject {
     * to the payment gateway.
     *
     */
-  var lineItems: js.UndefOr[js.Array[PaymentLineItem]] = js.native
+  var lineItems: js.UndefOr[js.Array[PaymentLineItem]] = js.undefined
   
   /**
     * This property specifies how the signer's collected payment details will be used.
@@ -140,12 +138,12 @@ trait PaymentDetails extends StObject {
     * - `save`: The signer's payment method (credit card or bank account) will be saved to the sender's payment gateway.
     * - `save_and_authorize`: The signer's payment method (credit card or bank account) will be saved to the sender's payment gateway and will also be used to collect payment.
     */
-  var paymentOption: js.UndefOr[String] = js.native
+  var paymentOption: js.UndefOr[String] = js.undefined
   
   /**
     * The payment source ID.
     */
-  var paymentSourceId: js.UndefOr[String] = js.native
+  var paymentSourceId: js.UndefOr[String] = js.undefined
   
   /**
     * This read-only property describes the status of a payment.
@@ -173,7 +171,7 @@ trait PaymentDetails extends StObject {
     * The recipient's payment method has been saved to the sender's payment gateway.
     *
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * This read-only property
@@ -186,7 +184,7 @@ trait PaymentDetails extends StObject {
     * have completed all required fields.
     *
     */
-  var total: js.UndefOr[Money] = js.native
+  var total: js.UndefOr[Money] = js.undefined
 }
 object PaymentDetails {
   

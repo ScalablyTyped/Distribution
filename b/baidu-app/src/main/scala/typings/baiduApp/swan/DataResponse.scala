@@ -3,21 +3,19 @@ package typings.baiduApp.swan
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #region 基本参数
-@js.native
 trait DataResponse extends StObject {
   
   /** 回调函数返回的内容 */
-  var data: String | ArrayBuffer = js.native
+  var data: String | ArrayBuffer
   
-  var header: js.Any = js.native
+  var header: js.Any
   
-  var result: String = js.native
+  var result: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object DataResponse {
   

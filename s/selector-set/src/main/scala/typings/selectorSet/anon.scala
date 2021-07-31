@@ -3,17 +3,15 @@ package typings.selectorSet
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var selector: String = js.native
+    var selector: String
   }
   object Data {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DataMutableBuilder[Self <: Data[_], T] (val x: Self with Data[T]) extends AnyVal {
+    implicit class DataMutableBuilder[Self <: Data[?], T] (val x: Self & Data[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Elements[T] extends StObject {
     
-    var data: T = js.native
+    var data: T
     
-    var elements: js.Array[Element] = js.native
+    var elements: js.Array[Element]
     
-    var selector: String = js.native
+    var selector: String
   }
   object Elements {
     
@@ -52,7 +49,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ElementsMutableBuilder[Self <: Elements[_], T] (val x: Self with Elements[T]) extends AnyVal {
+    implicit class ElementsMutableBuilder[Self <: Elements[?], T] (val x: Self & Elements[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

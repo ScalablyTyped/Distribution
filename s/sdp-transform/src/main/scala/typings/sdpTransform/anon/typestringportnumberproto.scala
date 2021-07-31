@@ -6,122 +6,120 @@ import typings.sdpTransform.sdpTransformStrings.sendonly
 import typings.sdpTransform.sdpTransformStrings.sendrecv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  type :string,   port :number,   protocol :string,   payloads :string | undefined} & sdp-transform.sdp-transform.MediaDescription */
-@js.native
 trait typestringportnumberproto extends StObject {
   
   // b=AS:4000
-  var bandwidth: js.UndefOr[js.Array[Limit]] = js.native
+  var bandwidth: js.UndefOr[js.Array[Limit]] = js.undefined
   
   // a=candidate
-  var candidates: js.UndefOr[js.Array[Foundation]] = js.native
+  var candidates: js.UndefOr[js.Array[Foundation]] = js.undefined
   
   // c=IN IP4 10.47.197.26
-  var connection: js.UndefOr[Ip] = js.native
+  var connection: js.UndefOr[Ip] = js.undefined
   
   // a=control
-  var control: js.UndefOr[String] = js.native
+  var control: js.UndefOr[String] = js.undefined
   
   // a=crypto
-  var crypto: js.UndefOr[Id] = js.native
+  var crypto: js.UndefOr[Id] = js.undefined
   
   // i=
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   // a=sendrecv
   // a=recvonly
   // a=sendonly
   // a=inactive
-  var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.native
+  var direction: js.UndefOr[sendrecv | recvonly | sendonly | inactive] = js.undefined
   
   // a=end-of-candidates
-  var endOfCandidates: js.UndefOr[String] = js.native
+  var endOfCandidates: js.UndefOr[String] = js.undefined
   
   // a=extmap
-  var ext: js.UndefOr[js.Array[Uri]] = js.native
+  var ext: js.UndefOr[js.Array[Uri]] = js.undefined
   
-  var fingerprint: js.UndefOr[Hash] = js.native
+  var fingerprint: js.UndefOr[Hash] = js.undefined
   
   // a=fmtp
-  var fmtp: js.Array[Config] = js.native
+  var fmtp: js.Array[Config]
   
   // a=framerate
-  var framerate: js.UndefOr[Double | String] = js.native
+  var framerate: js.UndefOr[Double | String] = js.undefined
   
-  var icePwd: js.UndefOr[String] = js.native
+  var icePwd: js.UndefOr[String] = js.undefined
   
-  var iceUfrag: js.UndefOr[String] = js.native
+  var iceUfrag: js.UndefOr[String] = js.undefined
   
   // a=imageattr
-  var imageattrs: js.UndefOr[js.Array[Attrs1]] = js.native
+  var imageattrs: js.UndefOr[js.Array[Attrs1]] = js.undefined
   
-  var invalid: js.UndefOr[js.Array[ValueString]] = js.native
+  var invalid: js.UndefOr[js.Array[ValueString]] = js.undefined
   
   // a=maxptime
-  var maxptime: js.UndefOr[Double] = js.native
+  var maxptime: js.UndefOr[Double] = js.undefined
   
   // a=mid
-  var mid: js.UndefOr[String] = js.native
+  var mid: js.UndefOr[String] = js.undefined
   
   // a=msid
-  var msid: js.UndefOr[String] = js.native
+  var msid: js.UndefOr[String] = js.undefined
   
-  var payloads: js.UndefOr[String] = js.native
+  var payloads: js.UndefOr[String] = js.undefined
   
-  var port: Double = js.native
+  var port: Double
   
-  var protocol: String = js.native
+  var protocol: String
   
-  var ptime: js.UndefOr[Double] = js.native
+  var ptime: js.UndefOr[Double] = js.undefined
   
   // a=remote-candidates
-  var remoteCandidates: js.UndefOr[String] = js.native
+  var remoteCandidates: js.UndefOr[String] = js.undefined
   
   // a=rid
-  var rids: js.UndefOr[js.Array[Direction]] = js.native
+  var rids: js.UndefOr[js.Array[Direction]] = js.undefined
   
-  var rtcp: js.UndefOr[IpVer] = js.native
+  var rtcp: js.UndefOr[IpVer] = js.undefined
   
   // a=rtcp-fb:98 nack rpsi
-  var rtcpFb: js.UndefOr[js.Array[Payload]] = js.native
+  var rtcpFb: js.UndefOr[js.Array[Payload]] = js.undefined
   
   // a=rtcp-fb:98 trr-int 100
-  var rtcpFbTrrInt: js.UndefOr[js.Array[Value]] = js.native
+  var rtcpFbTrrInt: js.UndefOr[js.Array[Value]] = js.undefined
   
   // a=rtcp-mux
-  var rtcpMux: js.UndefOr[String] = js.native
+  var rtcpMux: js.UndefOr[String] = js.undefined
   
   // a=rtcp-rsize
-  var rtcpRsize: js.UndefOr[String] = js.native
+  var rtcpRsize: js.UndefOr[String] = js.undefined
   
-  var rtp: js.Array[Codec] = js.native
+  var rtp: js.Array[Codec]
   
   // a=sctpmap
-  var sctpmap: js.UndefOr[App] = js.native
+  var sctpmap: js.UndefOr[App] = js.undefined
   
   // a=setup
-  var setup: js.UndefOr[String] = js.native
+  var setup: js.UndefOr[String] = js.undefined
   
-  var simulcast: js.UndefOr[Dir1] = js.native
+  var simulcast: js.UndefOr[Dir1] = js.undefined
   
-  var simulcast_03: js.UndefOr[ValueString] = js.native
+  var simulcast_03: js.UndefOr[ValueString] = js.undefined
   
   // a=source-filter: incl IN IP4 239.5.2.31 10.1.15.5
-  var sourceFilter: js.UndefOr[AddressTypes] = js.native
+  var sourceFilter: js.UndefOr[AddressTypes] = js.undefined
   
   // a=ssrc-group:
-  var ssrcGroups: js.UndefOr[js.Array[Semantics]] = js.native
+  var ssrcGroups: js.UndefOr[js.Array[Semantics]] = js.undefined
   
   // a=ssrc:
-  var ssrcs: js.UndefOr[js.Array[Attribute]] = js.native
+  var ssrcs: js.UndefOr[js.Array[Attribute]] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
   
   // a=x-google-flag
-  var xGoogleFlag: js.UndefOr[String] = js.native
+  var xGoogleFlag: js.UndefOr[String] = js.undefined
 }
 object typestringportnumberproto {
   

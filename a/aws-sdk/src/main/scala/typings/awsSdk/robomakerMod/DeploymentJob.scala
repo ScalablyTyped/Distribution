@@ -2,51 +2,49 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentJob extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the deployment job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the deployment job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The deployment application configuration.
     */
-  var deploymentApplicationConfigs: js.UndefOr[DeploymentApplicationConfigs] = js.native
+  var deploymentApplicationConfigs: js.UndefOr[DeploymentApplicationConfigs] = js.undefined
   
   /**
     * The deployment configuration.
     */
-  var deploymentConfig: js.UndefOr[DeploymentConfig] = js.native
+  var deploymentConfig: js.UndefOr[DeploymentConfig] = js.undefined
   
   /**
     * The deployment job failure code.
     */
-  var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.native
+  var failureCode: js.UndefOr[DeploymentJobErrorCode] = js.undefined
   
   /**
     * A short description of the reason why the deployment job failed.
     */
-  var failureReason: js.UndefOr[GenericString] = js.native
+  var failureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var fleet: js.UndefOr[Arn] = js.native
+  var fleet: js.UndefOr[Arn] = js.undefined
   
   /**
     * The status of the deployment job.
     */
-  var status: js.UndefOr[DeploymentStatus] = js.native
+  var status: js.UndefOr[DeploymentStatus] = js.undefined
 }
 object DeploymentJob {
   

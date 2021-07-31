@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebootNodeRequest extends StObject {
   
   /**
     * The name of the DAX cluster containing the node to be rebooted.
     */
-  var ClusterName: String = js.native
+  var ClusterName: String
   
   /**
     * The system-assigned ID of the node to be rebooted.
     */
-  var NodeId: String = js.native
+  var NodeId: String
 }
 object RebootNodeRequest {
   

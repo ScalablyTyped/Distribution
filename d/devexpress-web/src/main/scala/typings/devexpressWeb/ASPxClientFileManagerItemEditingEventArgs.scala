@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the item editing event.
   */
-@js.native
-trait ASPxClientFileManagerItemEditingEventArgs extends ASPxClientFileManagerActionEventArgsBase {
+trait ASPxClientFileManagerItemEditingEventArgs
+  extends StObject
+     with ASPxClientFileManagerActionEventArgsBase {
   
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
 }
 object ASPxClientFileManagerItemEditingEventArgs {
   

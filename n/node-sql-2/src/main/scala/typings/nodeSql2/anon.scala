@@ -17,7 +17,6 @@ import typings.nodeSql2.nodeSql2Strings.restrict
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -61,16 +60,15 @@ object anon {
     def update(o: Partial[T]): ModifyingQuery = js.native
   }
   
-  @js.native
   trait Column extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var onDelete: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.native
+    var onDelete: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
     
-    var onUpdate: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.native
+    var onUpdate: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
     
-    var table: String = js.native
+    var table: String
   }
   object Column {
     
@@ -103,18 +101,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Columns[Row] extends StObject {
     
-    var columns: js.Array[/* keyof Row */ String] = js.native
+    var columns: js.Array[/* keyof Row */ String]
     
-    var onDelete: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.native
+    var onDelete: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
     
-    var onUpdate: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.native
+    var onUpdate: js.UndefOr[restrict | cascade | (`no action`) | (`set null`) | (`set default`)] = js.undefined
     
-    var refColumns: js.Array[String] = js.native
+    var refColumns: js.Array[String]
     
-    var table: String = js.native
+    var table: String
   }
   object Columns {
     
@@ -125,7 +122,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ColumnsMutableBuilder[Self <: Columns[_], Row] (val x: Self with Columns[Row]) extends AnyVal {
+    implicit class ColumnsMutableBuilder[Self <: Columns[?], Row] (val x: Self & Columns[Row]) extends AnyVal {
       
       @scala.inline
       def setColumns(value: js.Array[/* keyof Row */ String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
@@ -156,10 +153,9 @@ object anon {
     }
   }
   
-  @js.native
   trait LOWER extends StObject {
     
-    def LOWER[Name](c: typings.nodeSql2.mod.Column[Name, String]): typings.nodeSql2.mod.Column[Name, String] = js.native
+    def LOWER[Name](c: typings.nodeSql2.mod.Column[Name, String]): typings.nodeSql2.mod.Column[Name, String]
   }
   object LOWER {
     

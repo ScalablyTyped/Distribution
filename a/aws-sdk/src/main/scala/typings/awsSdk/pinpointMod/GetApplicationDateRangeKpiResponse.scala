@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApplicationDateRangeKpiResponse extends StObject {
   
-  var ApplicationDateRangeKpiResponse: typings.awsSdk.pinpointMod.ApplicationDateRangeKpiResponse = js.native
+  var ApplicationDateRangeKpiResponse: typings.awsSdk.pinpointMod.ApplicationDateRangeKpiResponse
 }
 object GetApplicationDateRangeKpiResponse {
   

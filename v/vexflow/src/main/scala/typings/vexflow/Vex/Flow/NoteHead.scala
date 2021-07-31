@@ -4,11 +4,12 @@ import typings.vexflow.Vex.IRenderContext
 import typings.vexflow.anon.FillStyle_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NoteHead extends Note {
+trait NoteHead
+  extends StObject
+     with Note {
   
   def applyStyle(context: IRenderContext): NoteHead = js.native
   

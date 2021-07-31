@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.embed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes a verb. */
-@js.native
 trait VerbDescriptor extends StObject {
   
   /**
@@ -14,20 +12,20 @@ trait VerbDescriptor extends StObject {
     *
     * It can take values from {@link VerbAttributes} .
     */
-  var VerbAttributes: Double = js.native
+  var VerbAttributes: Double
   
   /**
     * specifies the flags that are set for the verb.
     *
     * The flags can be used to build the verb's menu.
     */
-  var VerbFlags: Double = js.native
+  var VerbFlags: Double
   
   /** specifies the id of the verb. */
-  var VerbID: Double = js.native
+  var VerbID: Double
   
   /** specifies the name of the verb. */
-  var VerbName: String = js.native
+  var VerbName: String
 }
 object VerbDescriptor {
   

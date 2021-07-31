@@ -3,20 +3,18 @@ package typings.officeJs.OfficeExtension
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request URL and headers
   */
-@js.native
 trait RequestUrlAndHeaderInfo extends StObject {
   
   /** Request headers */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /** Request URL */
-  var url: String = js.native
+  var url: String
 }
 object RequestUrlAndHeaderInfo {
   

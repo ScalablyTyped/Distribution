@@ -3,19 +3,17 @@ package typings.reactDatagrid
 import typings.react.mod.SVGAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DisabledStyle extends StObject {
     
-    var disabledStyle: SVGAttributes[js.Object] = js.native
+    var disabledStyle: SVGAttributes[js.Object]
     
-    var overStyle: SVGAttributes[js.Object] = js.native
+    var overStyle: SVGAttributes[js.Object]
     
-    var style: SVGAttributes[js.Object] = js.native
+    var style: SVGAttributes[js.Object]
   }
   object DisabledStyle {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PageSize extends StObject {
     
-    var pageSize: Double = js.native
+    var pageSize: Double
     
-    var skip: Double = js.native
+    var skip: Double
   }
   object PageSize {
     

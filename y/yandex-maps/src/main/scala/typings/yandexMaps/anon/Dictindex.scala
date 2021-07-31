@@ -3,24 +3,23 @@ package typings.yandexMaps.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictindex
-  extends /* index */ StringDictionary[js.Any] {
+  extends StObject
+     with /* index */ StringDictionary[js.Any] {
   
-  var activeRouteAutoSelection: js.UndefOr[Boolean] = js.native
+  var activeRouteAutoSelection: js.UndefOr[Boolean] = js.undefined
   
-  var boundsAutoApply: js.UndefOr[Boolean] = js.native
+  var boundsAutoApply: js.UndefOr[Boolean] = js.undefined
   
-  var dragUpdateInterval: js.UndefOr[String | Double] = js.native
+  var dragUpdateInterval: js.UndefOr[String | Double] = js.undefined
   
-  var preventDragUpdate: js.UndefOr[Boolean] = js.native
+  var preventDragUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var useMapMargin: js.UndefOr[Boolean] = js.native
+  var useMapMargin: js.UndefOr[Boolean] = js.undefined
   
-  var zoomMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.native
+  var zoomMargin: js.UndefOr[(js.Array[js.Array[Double] | Double]) | Double] = js.undefined
 }
 object Dictindex {
   

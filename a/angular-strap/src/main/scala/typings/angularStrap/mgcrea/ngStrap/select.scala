@@ -4,7 +4,6 @@ import typings.angular.mod.IAugmentedJQuery
 import typings.angularStrap.anon.Hide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -18,18 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 ///////////////////////////////////////////////////////////////////////////
 object select {
   
-  @js.native
   trait ISelect extends StObject {
     
-    def active(index: Double): Double = js.native
+    def active(index: Double): Double
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def select(index: Double): Unit = js.native
+    def select(index: Double): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
     
-    def update(matches: js.Any): Unit = js.native
+    def update(matches: js.Any): Unit
   }
   object ISelect {
     
@@ -65,52 +63,51 @@ object select {
     }
   }
   
-  @js.native
   trait ISelectOptions extends StObject {
     
-    var allNoneButtons: js.UndefOr[Boolean] = js.native
+    var allNoneButtons: js.UndefOr[Boolean] = js.undefined
     
-    var allText: js.UndefOr[String] = js.native
+    var allText: js.UndefOr[String] = js.undefined
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[String | Boolean] = js.native
+    var container: js.UndefOr[String | Boolean] = js.undefined
     
-    var delay: js.UndefOr[Double | Hide] = js.native
+    var delay: js.UndefOr[Double | Hide] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var iconCheckmark: js.UndefOr[String] = js.native
+    var iconCheckmark: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxLengthHtml: js.UndefOr[String] = js.native
+    var maxLengthHtml: js.UndefOr[String] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var noneText: js.UndefOr[String] = js.native
+    var noneText: js.UndefOr[String] = js.undefined
     
-    var onBeforeHide: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.native
+    var onBeforeHide: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.undefined
     
-    var onBeforeShow: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.native
+    var onBeforeShow: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.native
+    var onHide: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.native
+    var onShow: js.UndefOr[js.Function1[/* select */ ISelect, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var placement: js.UndefOr[String] = js.native
+    var placement: js.UndefOr[String] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
   }
   object ISelectOptions {
     
@@ -257,10 +254,9 @@ object select {
     }
   }
   
-  @js.native
   trait ISelectProvider extends StObject {
     
-    var defaults: ISelectOptions = js.native
+    var defaults: ISelectOptions
   }
   object ISelectProvider {
     

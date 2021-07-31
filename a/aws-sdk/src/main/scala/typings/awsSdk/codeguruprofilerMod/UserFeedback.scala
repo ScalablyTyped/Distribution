@@ -2,16 +2,14 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserFeedback extends StObject {
   
   /**
     * Optional Positive or Negative feedback submitted by the user about whether the recommendation is useful or not.
     */
-  var `type`: FeedbackType = js.native
+  var `type`: FeedbackType
 }
 object UserFeedback {
   

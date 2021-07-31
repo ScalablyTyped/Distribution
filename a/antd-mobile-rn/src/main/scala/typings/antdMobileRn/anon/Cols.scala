@@ -2,23 +2,21 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cols extends StObject {
   
-  var cascade: Boolean = js.native
+  var cascade: Boolean
   
-  var cols: Double = js.native
+  var cols: Double
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  var pickerPrefixCls: String = js.native
+  var pickerPrefixCls: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var value: js.Array[scala.Nothing] = js.native
+  var value: js.Array[scala.Nothing]
 }
 object Cols {
   

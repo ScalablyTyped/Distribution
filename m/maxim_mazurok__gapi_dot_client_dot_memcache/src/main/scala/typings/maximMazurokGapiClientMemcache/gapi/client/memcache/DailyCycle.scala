@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DailyCycle extends StObject {
   
   /** Output only. Duration of the time window, set by service producer. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Time within the day to start the operations. */
-  var startTime: js.UndefOr[TimeOfDay] = js.native
+  var startTime: js.UndefOr[TimeOfDay] = js.undefined
 }
 object DailyCycle {
   

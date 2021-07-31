@@ -3,28 +3,26 @@ package typings.coinbase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Amount extends StObject {
     
     /**
       * Amount as floating-point in a string
       */
-    var amount: String = js.native
+    var amount: String
     
     /**
       * Currency e.g. "BTC" (see Client#getCurrencies() for available strings)
       */
-    var base: String = js.native
+    var base: String
     
     /**
       * Currency e.g. "EUR" (see Client#getCurrencies() for available strings)
       */
-    var currency: String = js.native
+    var currency: String
   }
   object Amount {
     
@@ -48,18 +46,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Currency extends StObject {
     
     /**
       * Base currency
       */
-    var currency: String = js.native
+    var currency: String
     
     /**
       * Rates as floating points in strings; indexed by currency id
       */
-    var rates: StringDictionary[String] = js.native
+    var rates: StringDictionary[String]
   }
   object Currency {
     
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Epoch extends StObject {
     
-    var epoch: Double = js.native
+    var epoch: Double
     
-    var iso: String = js.native
+    var iso: String
   }
   object Epoch {
     
@@ -106,14 +102,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
     
-    var url: String = js.native
+    var url: String
   }
   object Id {
     
@@ -137,23 +132,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Minsize extends StObject {
     
     /**
       * Abbreviation e.g. "USD" or "BTC"
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Floating-point number in a string
       */
-    var min_size: String = js.native
+    var min_size: String
     
     /**
       * Full name e.g. "United Arab Emirates Dirham"
       */
-    var name: String = js.native
+    var name: String
   }
   object Minsize {
     

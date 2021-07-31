@@ -4,12 +4,11 @@ import typings.vscodeLanguageserverTypes.mod.Position
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionParams
-  extends TextDocumentPositionParams
+  extends StObject
+     with TextDocumentPositionParams
      with WorkDoneProgressParams
      with PartialResultParams
 object DefinitionParams {

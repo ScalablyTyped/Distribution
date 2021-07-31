@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email address of a contact. */
-@js.native
 trait ContactEmail extends StObject {
   
   /** Gets and sets the email address of a contact. The maximum string length for the description is 321 characters. */
-  var address: String = js.native
+  var address: String
   
   /** Gets and sets the description of an email address of a contact. The maximum string length for the description is 512 characters. */
-  var description: String = js.native
+  var description: String
   
   /** Gets and sets the kind of email address of a contact. */
-  var kind: ContactEmailKind = js.native
+  var kind: ContactEmailKind
 }
 object ContactEmail {
   

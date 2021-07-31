@@ -14,29 +14,27 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.kindsMod.TypeAliasKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declaration: DeclareVariableKind | DeclareFunctionKind | DeclareClassKind | FlowTypeKind | TypeAliasKind | DeclareOpaqueTypeKind | InterfaceDeclarationKind | Null = js.native
+  var declaration: DeclareVariableKind | DeclareFunctionKind | DeclareClassKind | FlowTypeKind | TypeAliasKind | DeclareOpaqueTypeKind | InterfaceDeclarationKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var source: js.UndefOr[LiteralKind | Null] = js.native
+  var source: js.UndefOr[LiteralKind | Null] = js.undefined
   
-  var specifiers: js.UndefOr[js.Array[ExportSpecifierKind | ExportBatchSpecifierKind]] = js.native
+  var specifiers: js.UndefOr[js.Array[ExportSpecifierKind | ExportBatchSpecifierKind]] = js.undefined
 }
 object Default {
   
   @scala.inline
   def apply(default: Boolean): Default = {
-    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any], declaration = null)
     __obj.asInstanceOf[Default]
   }
   

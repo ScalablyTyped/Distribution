@@ -4,17 +4,15 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LastResultDetails extends StObject {
   
-  var dateCompleted: Date = js.native
+  var dateCompleted: Date
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var runBy: IdentityRef = js.native
+  var runBy: IdentityRef
 }
 object LastResultDetails {
   

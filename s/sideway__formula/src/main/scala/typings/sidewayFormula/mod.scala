@@ -5,7 +5,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,28 +32,27 @@ object mod {
     def evaluate(context: js.Any): T = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * A hash of key - value pairs used to convert constants to values.
       */
-    val constants: js.UndefOr[Record[String, _]] = js.native
+    val constants: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * A hash of key-value pairs used to resolve formula functions.
       */
-    val functions: js.UndefOr[Record[String, js.Function]] = js.native
+    val functions: js.UndefOr[Record[String, js.Function]] = js.undefined
     
     /**
       * A variable resolver factory function.
       */
-    val reference: js.UndefOr[Reference] = js.native
+    val reference: js.UndefOr[Reference] = js.undefined
     
     /**
       * A regular expression used to validate token variables.
       */
-    val tokenRx: js.UndefOr[RegExp] = js.native
+    val tokenRx: js.UndefOr[RegExp] = js.undefined
   }
   object Options {
     
@@ -68,7 +66,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setConstants(value: Record[String, _]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
+      def setConstants(value: Record[String, js.Any]): Self = StObject.set(x, "constants", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstantsUndefined: Self = StObject.set(x, "constants", js.undefined)

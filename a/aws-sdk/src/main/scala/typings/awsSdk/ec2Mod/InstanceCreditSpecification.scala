@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceCreditSpecification extends StObject {
   
   /**
     * The credit option for CPU usage of the instance. Valid values are standard and unlimited.
     */
-  var CpuCredits: js.UndefOr[String] = js.native
+  var CpuCredits: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
 }
 object InstanceCreditSpecification {
   

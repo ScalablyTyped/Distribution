@@ -2,134 +2,134 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional coverage classifications
   */
-@js.native
-trait CoverageGrouping extends BackboneElement {
+trait CoverageGrouping
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'class'.
     */
-  var _class: js.UndefOr[Element] = js.native
+  var _class: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'classDisplay'.
     */
-  var _classDisplay: js.UndefOr[Element] = js.native
+  var _classDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'group'.
     */
-  var _group: js.UndefOr[Element] = js.native
+  var _group: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'groupDisplay'.
     */
-  var _groupDisplay: js.UndefOr[Element] = js.native
+  var _groupDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'plan'.
     */
-  var _plan: js.UndefOr[Element] = js.native
+  var _plan: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'planDisplay'.
     */
-  var _planDisplay: js.UndefOr[Element] = js.native
+  var _planDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subClass'.
     */
-  var _subClass: js.UndefOr[Element] = js.native
+  var _subClass: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subClassDisplay'.
     */
-  var _subClassDisplay: js.UndefOr[Element] = js.native
+  var _subClassDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subGroup'.
     */
-  var _subGroup: js.UndefOr[Element] = js.native
+  var _subGroup: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subGroupDisplay'.
     */
-  var _subGroupDisplay: js.UndefOr[Element] = js.native
+  var _subGroupDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subPlan'.
     */
-  var _subPlan: js.UndefOr[Element] = js.native
+  var _subPlan: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'subPlanDisplay'.
     */
-  var _subPlanDisplay: js.UndefOr[Element] = js.native
+  var _subPlanDisplay: js.UndefOr[Element] = js.undefined
   
   /**
     * An identifier for the class
     */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for the class
     */
-  var classDisplay: js.UndefOr[String] = js.native
+  var classDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the group
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for an identifier for the group
     */
-  var groupDisplay: js.UndefOr[String] = js.native
+  var groupDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the plan
     */
-  var plan: js.UndefOr[String] = js.native
+  var plan: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for the plan
     */
-  var planDisplay: js.UndefOr[String] = js.native
+  var planDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the subsection of the class
     */
-  var subClass: js.UndefOr[String] = js.native
+  var subClass: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for the subsection of the subclass
     */
-  var subClassDisplay: js.UndefOr[String] = js.native
+  var subClassDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the subsection of the group
     */
-  var subGroup: js.UndefOr[String] = js.native
+  var subGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for the subsection of the group
     */
-  var subGroupDisplay: js.UndefOr[String] = js.native
+  var subGroupDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * An identifier for the subsection of the plan
     */
-  var subPlan: js.UndefOr[String] = js.native
+  var subPlan: js.UndefOr[String] = js.undefined
   
   /**
     * Display text for the subsection of the plan
     */
-  var subPlanDisplay: js.UndefOr[String] = js.native
+  var subPlanDisplay: js.UndefOr[String] = js.undefined
 }
 object CoverageGrouping {
   

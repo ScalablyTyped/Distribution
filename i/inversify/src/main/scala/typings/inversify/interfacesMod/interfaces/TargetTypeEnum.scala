@@ -2,17 +2,15 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetTypeEnum extends StObject {
   
-  var ClassProperty: TargetType = js.native
+  var ClassProperty: TargetType
   
-  var ConstructorArgument: TargetType = js.native
+  var ConstructorArgument: TargetType
   
-  var Variable: TargetType = js.native
+  var Variable: TargetType
 }
 object TargetTypeEnum {
   

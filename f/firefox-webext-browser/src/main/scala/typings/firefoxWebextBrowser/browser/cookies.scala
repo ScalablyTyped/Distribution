@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,50 +14,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object cookies {
   
   /** Represents information about an HTTP cookie. */
-  @js.native
   trait Cookie extends StObject {
     
     /** The domain of the cookie (e.g. "www.google.com", "example.com"). */
-    var domain: String = js.native
+    var domain: String
     
     /**
       * The expiration date of the cookie as the number of seconds since the UNIX epoch. Not provided for session cookies.
       */
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
     /** The first-party domain of the cookie. */
-    var firstPartyDomain: String = js.native
+    var firstPartyDomain: String
     
     /**
       * True if the cookie is a host-only cookie (i.e. a request's host must exactly match the domain of the cookie).
       */
-    var hostOnly: Boolean = js.native
+    var hostOnly: Boolean
     
     /** True if the cookie is marked as HttpOnly (i.e. the cookie is inaccessible to client-side scripts). */
-    var httpOnly: Boolean = js.native
+    var httpOnly: Boolean
     
     /** The name of the cookie. */
-    var name: String = js.native
+    var name: String
     
     /** The path of the cookie. */
-    var path: String = js.native
+    var path: String
     
     /** The cookie's same-site status (i.e. whether the cookie is sent with cross-site requests). */
-    var sameSite: SameSiteStatus = js.native
+    var sameSite: SameSiteStatus
     
     /**
       * True if the cookie is marked as Secure (i.e. its scope is limited to secure channels, typically HTTPS).
       */
-    var secure: Boolean = js.native
+    var secure: Boolean
     
     /** True if the cookie is a session cookie, as opposed to a persistent cookie with an expiration date. */
-    var session: Boolean = js.native
+    var session: Boolean
     
     /** The ID of the cookie store containing this cookie, as provided in getAllCookieStores(). */
-    var storeId: String = js.native
+    var storeId: String
     
     /** The value of the cookie. */
-    var value: String = js.native
+    var value: String
   }
   object Cookie {
     
@@ -127,17 +125,16 @@ object cookies {
   /**
     * Represents a cookie store in the browser. An incognito mode window, for instance, uses a separate cookie store from a non-incognito window.
     */
-  @js.native
   trait CookieStore extends StObject {
     
     /** The unique identifier for the cookie store. */
-    var id: String = js.native
+    var id: String
     
     /** Indicates if this is an incognito cookie store */
-    var incognito: Boolean = js.native
+    var incognito: Boolean
     
     /** Identifiers of all the browser tabs that share this cookie store. */
-    var tabIds: js.Array[Double] = js.native
+    var tabIds: js.Array[Double]
   }
   object CookieStore {
     
@@ -165,36 +162,35 @@ object cookies {
   }
   
   /** Information to filter the cookies being retrieved. */
-  @js.native
   trait GetAllDetails extends StObject {
     
     /** Restricts the retrieved cookies to those whose domains match or are subdomains of this one. */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts the retrieved cookies to those whose first-party domains match this one. This attribute is required if First-Party Isolation is enabled. To not filter by a specific first-party domain, use `null` or `undefined`.
       */
-    var firstPartyDomain: js.UndefOr[String] = js.native
+    var firstPartyDomain: js.UndefOr[String] = js.undefined
     
     /** Filters the cookies by name. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Restricts the retrieved cookies to those whose path exactly matches this string. */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Filters the cookies by their Secure property. */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** Filters out session vs. persistent cookies. */
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The cookie store to retrieve cookies from. If omitted, the current execution context's cookie store will be used.
       */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /** Restricts the retrieved cookies to those that would match the given URL. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object GetAllDetails {
     
@@ -258,26 +254,25 @@ object cookies {
   }
   
   /** Details to identify the cookie being retrieved. */
-  @js.native
   trait GetDetails extends StObject {
     
     /**
       * The first-party domain which the cookie to retrieve is associated. This attribute is required if First-Party Isolation is enabled.
       */
-    var firstPartyDomain: js.UndefOr[String] = js.native
+    var firstPartyDomain: js.UndefOr[String] = js.undefined
     
     /** The name of the cookie to retrieve. */
-    var name: String = js.native
+    var name: String
     
     /**
       * The ID of the cookie store in which to look for the cookie. By default, the current execution context's cookie store will be used.
       */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /**
       * The URL with which the cookie to retrieve is associated. This argument may be a full URL, in which case any data following the URL path (e.g. the query string) is simply ignored. If host permissions for this URL are not specified in the manifest file, the API call will fail.
       */
-    var url: String = js.native
+    var url: String
   }
   object GetDetails {
     
@@ -339,17 +334,16 @@ object cookies {
     def overwrite: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite = "overwrite".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.overwrite]
   }
   
-  @js.native
   trait OnChangedChangeInfo extends StObject {
     
     /** The underlying reason behind the cookie's change. */
-    var cause: OnChangedCause = js.native
+    var cause: OnChangedCause
     
     /** Information about the cookie that was set or removed. */
-    var cookie: Cookie = js.native
+    var cookie: Cookie
     
     /** True if a cookie was removed. */
-    var removed: Boolean = js.native
+    var removed: Boolean
   }
   object OnChangedChangeInfo {
     
@@ -374,26 +368,25 @@ object cookies {
   }
   
   /** Information to identify the cookie to remove. */
-  @js.native
   trait RemoveDetails extends StObject {
     
     /**
       * The first-party domain associated with the cookie. This attribute is required if First-Party Isolation is enabled.
       */
-    var firstPartyDomain: js.UndefOr[String] = js.native
+    var firstPartyDomain: js.UndefOr[String] = js.undefined
     
     /** The name of the cookie to remove. */
-    var name: String = js.native
+    var name: String
     
     /**
       * The ID of the cookie store to look in for the cookie. If unspecified, the cookie is looked for by default in the current execution context's cookie store.
       */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /**
       * The URL associated with the cookie. If host permissions for this URL are not specified in the manifest file, the API call will fail.
       */
-    var url: String = js.native
+    var url: String
   }
   object RemoveDetails {
     
@@ -429,20 +422,19 @@ object cookies {
   /**
     * Contains details about the cookie that's been removed. If removal failed for any reason, this will be "null", and `runtime.lastError` will be set.
     */
-  @js.native
   trait RemoveReturnDetails extends StObject {
     
     /** The first-party domain associated with the cookie that's been removed. */
-    var firstPartyDomain: String = js.native
+    var firstPartyDomain: String
     
     /** The name of the cookie that's been removed. */
-    var name: String = js.native
+    var name: String
     
     /** The ID of the cookie store from which the cookie was removed. */
-    var storeId: String = js.native
+    var storeId: String
     
     /** The URL associated with the cookie that's been removed. */
-    var url: String = js.native
+    var url: String
   }
   object RemoveReturnDetails {
     
@@ -492,49 +484,48 @@ object cookies {
   }
   
   /** Details about the cookie being set. */
-  @js.native
   trait SetDetails extends StObject {
     
     /** The domain of the cookie. If omitted, the cookie becomes a host-only cookie. */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * The expiration date of the cookie as the number of seconds since the UNIX epoch. If omitted, the cookie becomes a session cookie.
       */
-    var expirationDate: js.UndefOr[Double] = js.native
+    var expirationDate: js.UndefOr[Double] = js.undefined
     
     /**
       * The first-party domain of the cookie. This attribute is required if First-Party Isolation is enabled.
       */
-    var firstPartyDomain: js.UndefOr[String] = js.native
+    var firstPartyDomain: js.UndefOr[String] = js.undefined
     
     /** Whether the cookie should be marked as HttpOnly. Defaults to false. */
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /** The name of the cookie. Empty by default if omitted. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The path of the cookie. Defaults to the path portion of the url parameter. */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** The cookie's same-site status. */
-    var sameSite: js.UndefOr[SameSiteStatus] = js.native
+    var sameSite: js.UndefOr[SameSiteStatus] = js.undefined
     
     /** Whether the cookie should be marked as Secure. Defaults to false. */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The ID of the cookie store in which to set the cookie. By default, the cookie is set in the current execution context's cookie store.
       */
-    var storeId: js.UndefOr[String] = js.native
+    var storeId: js.UndefOr[String] = js.undefined
     
     /**
       * The request-URI to associate with the setting of the cookie. This value can affect the default domain and path values of the created cookie. If host permissions for this URL are not specified in the manifest file, the API call will fail.
       */
-    var url: String = js.native
+    var url: String
     
     /** The value of the cookie. Empty by default if omitted. */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object SetDetails {
     

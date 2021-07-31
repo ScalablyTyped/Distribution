@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAssessmentTemplateRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment template that you want to delete.
     */
-  var assessmentTemplateArn: Arn = js.native
+  var assessmentTemplateArn: Arn
 }
 object DeleteAssessmentTemplateRequest {
   

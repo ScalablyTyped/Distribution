@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunRealtimeReportRequest extends StObject {
   
   /** The filter clause of dimensions. Dimensions must be requested to be used in this filter. Metrics cannot be used in this filter. */
-  var dimensionFilter: js.UndefOr[FilterExpression] = js.native
+  var dimensionFilter: js.UndefOr[FilterExpression] = js.undefined
   
   /** The dimensions requested and displayed. */
-  var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** The number of rows to return. If unspecified, 10 rows are returned. If -1, all rows are returned. */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /** Aggregation of metrics. Aggregated metric values will be shown in rows where the dimension_values are set to "RESERVED_(MetricAggregation)". */
-  var metricAggregations: js.UndefOr[js.Array[String]] = js.native
+  var metricAggregations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The filter clause of metrics. Applied at post aggregation phase, similar to SQL having-clause. Metrics must be requested to be used in this filter. Dimensions cannot be used in this
     * filter.
     */
-  var metricFilter: js.UndefOr[FilterExpression] = js.native
+  var metricFilter: js.UndefOr[FilterExpression] = js.undefined
   
   /** The metrics requested and displayed. */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.native
+  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
   
   /** Specifies how rows are ordered in the response. */
-  var orderBys: js.UndefOr[js.Array[OrderBy]] = js.native
+  var orderBys: js.UndefOr[js.Array[OrderBy]] = js.undefined
   
   /** Toggles whether to return the current state of this Analytics Property's Realtime quota. Quota is returned in [PropertyQuota](#PropertyQuota). */
-  var returnPropertyQuota: js.UndefOr[Boolean] = js.native
+  var returnPropertyQuota: js.UndefOr[Boolean] = js.undefined
 }
 object RunRealtimeReportRequest {
   

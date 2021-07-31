@@ -10,9 +10,9 @@ Finds first available shell command from a list.
 | ------------------ | :-------------: |
 | Full name          | find-exec |
 | Keywords           | find, executable, shell, minimalistic, command, line |
-| # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 94952 |
+| # releases         | 0 |
+| # dependents       | 5 |
+| # downloads        | 149568 |
 | # stars            | 1 |
 
 ## Links

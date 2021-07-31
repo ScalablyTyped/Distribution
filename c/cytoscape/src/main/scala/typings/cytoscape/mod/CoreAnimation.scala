@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -60,7 +59,7 @@ trait CoreAnimation extends StObject {
     * @param jumpToEnd A boolean, indicating whether the currently-running animations should jump to their ends rather than just stopping midway.
     */
   def stop(): Core = js.native
-  def stop(clearQueue: js.UndefOr[scala.Nothing], jumpToEnd: Boolean): Core = js.native
   def stop(clearQueue: Boolean): Core = js.native
   def stop(clearQueue: Boolean, jumpToEnd: Boolean): Core = js.native
+  def stop(clearQueue: Unit, jumpToEnd: Boolean): Core = js.native
 }

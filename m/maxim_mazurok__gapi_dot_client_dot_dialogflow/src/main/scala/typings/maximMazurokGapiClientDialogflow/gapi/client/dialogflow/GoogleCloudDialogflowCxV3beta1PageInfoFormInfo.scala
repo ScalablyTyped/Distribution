@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowCxV3beta1PageInfoFormInfo extends StObject {
   
   /** Optional for both WebhookRequest and WebhookResponse. The parameters contained in the form. Note that the webhook cannot add or remove any form parameter. */
-  var parameterInfo: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo]] = js.native
+  var parameterInfo: js.UndefOr[js.Array[GoogleCloudDialogflowCxV3beta1PageInfoFormInfoParameterInfo]] = js.undefined
 }
 object GoogleCloudDialogflowCxV3beta1PageInfoFormInfo {
   

@@ -7,7 +7,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,6 @@ object mod extends Shortcut {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -31,28 +29,28 @@ object mod extends Shortcut {
       *
       * @default false
       */
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Max number of jobs the queue should process concurrently.
       *
       * @default Infinity
       */
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
     /**
       * An array to set job callback arguments on.
       *
       * @default null
       */
-    var results: js.UndefOr[js.Array[_]] = js.native
+    var results: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Milliseconds to wait for a job to execute its callback.
       *
       * @default 0
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -78,7 +76,7 @@ object mod extends Shortcut {
       def setConcurrencyUndefined: Self = StObject.set(x, "concurrency", js.undefined)
       
       @scala.inline
-      def setResults(value: js.Array[_]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
+      def setResults(value: js.Array[js.Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResultsUndefined: Self = StObject.set(x, "results", js.undefined)
@@ -153,7 +151,7 @@ object mod extends Shortcut {
     /**
       * An array to set job callback arguments on.
       */
-    var results: js.Array[_] | Null = js.native
+    var results: js.Array[js.Any] | Null = js.native
     
     /**
       * Reverses the order of the elements of the Queue in place.
@@ -172,9 +170,9 @@ object mod extends Shortcut {
       * @param end The end of the specified portion of the Queue.
       */
     def slice(): Queue = js.native
-    def slice(start: js.UndefOr[scala.Nothing], end: Double): Queue = js.native
     def slice(start: Double): Queue = js.native
     def slice(start: Double, end: Double): Queue = js.native
+    def slice(start: Unit, end: Double): Queue = js.native
     
     /**
       * Adds and/or removes elements from the queue.
@@ -221,7 +219,8 @@ object mod extends Shortcut {
   
   @js.native
   trait QueueConstructor
-    extends Instantiable0[Queue]
+    extends StObject
+       with Instantiable0[Queue]
        with Instantiable1[/* options */ Options, Queue] {
     
     def apply(): Queue = js.native

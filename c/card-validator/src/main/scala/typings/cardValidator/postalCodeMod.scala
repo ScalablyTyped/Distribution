@@ -3,28 +3,26 @@ package typings.cardValidator
 import typings.cardValidator.typesMod.Verification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postalCodeMod {
   
-  @JSImport("card-validator/dist/postal-code", "postalCode")
+  @JSImport("card-validator/dist/postal-code", JSImport.Namespace)
   @js.native
-  def postalCode(value: String): Verification = js.native
-  @JSImport("card-validator/dist/postal-code", "postalCode")
-  @js.native
-  def postalCode(value: String, options: PostalCodeOptions): Verification = js.native
-  @JSImport("card-validator/dist/postal-code", "postalCode")
-  @js.native
-  def postalCode(value: js.Any): Verification = js.native
-  @JSImport("card-validator/dist/postal-code", "postalCode")
-  @js.native
-  def postalCode(value: js.Any, options: PostalCodeOptions): Verification = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def postalCode(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: String, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def postalCode(value: js.Any, options: PostalCodeOptions): Verification = (^.asInstanceOf[js.Dynamic].applyDynamic("postalCode")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Verification]
+  
   trait PostalCodeOptions extends StObject {
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
   }
   object PostalCodeOptions {
     

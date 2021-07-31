@@ -2,55 +2,53 @@ package typings.googleapis.plusDomainsV1Mod.plusDomainsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCommentFeed extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this collection of comments.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The comments in this page of results.
     */
-  var items: js.UndefOr[js.Array[SchemaComment]] = js.native
+  var items: js.UndefOr[js.Array[SchemaComment]] = js.undefined
   
   /**
     * Identifies this resource as a collection of comments. Value:
     * &quot;plus#commentFeed&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Link to the next page of activities.
     */
-  var nextLink: js.UndefOr[String] = js.native
+  var nextLink: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, which is used to page through large result sets.
     * Provide this value in a subsequent request to return the next page of
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this collection of comments.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which this collection of comments was last updated. Formatted
     * as an RFC 3339 timestamp.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaCommentFeed {
   

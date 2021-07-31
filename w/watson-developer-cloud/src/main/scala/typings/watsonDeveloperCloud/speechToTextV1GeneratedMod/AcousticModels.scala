@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** AcousticModels. */
-@js.native
 trait AcousticModels extends StObject {
   
   /** An array of `AcousticModel` objects that provides information about each available custom acoustic model. The array is empty if the requesting credentials own no custom acoustic models (if no language is specified) or own no custom acoustic models for the specified language. */
-  var customizations: js.Array[AcousticModel] = js.native
+  var customizations: js.Array[AcousticModel]
 }
 object AcousticModels {
   

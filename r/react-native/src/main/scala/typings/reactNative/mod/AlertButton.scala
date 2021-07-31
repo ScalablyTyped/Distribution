@@ -5,17 +5,15 @@ import typings.reactNative.reactNativeStrings.default
 import typings.reactNative.reactNativeStrings.destructive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlertButton extends StObject {
   
-  var onPress: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* value */ js.UndefOr[String], Unit]] = js.undefined
   
-  var style: js.UndefOr[default | cancel | destructive] = js.native
+  var style: js.UndefOr[default | cancel | destructive] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object AlertButton {
   

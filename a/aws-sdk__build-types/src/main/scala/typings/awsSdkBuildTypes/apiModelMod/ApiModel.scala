@@ -2,19 +2,17 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiModel extends StObject {
   
-  var documentation: js.UndefOr[java.lang.String] = js.native
+  var documentation: js.UndefOr[java.lang.String] = js.undefined
   
-  var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any = js.native
+  var metadata: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ServiceMetadata */ js.Any
   
-  var operations: OperationMap = js.native
+  var operations: OperationMap
   
-  var shapes: ShapeMap = js.native
+  var shapes: ShapeMap
 }
 object ApiModel {
   

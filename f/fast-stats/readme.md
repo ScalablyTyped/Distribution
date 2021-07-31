@@ -12,7 +12,7 @@ Quickly calculate common statistics on lists of numbers
 | Keywords           | statistics, statistic, gauss, lognormal, normal, mean, median, mode, standard deviation, margin of error, iqr, quartile, inter quartile range |
 | # releases         | 3 |
 | # dependents       | 51 |
-| # downloads        | 2036042 |
+| # downloads        | 2264247 |
 | # stars            | 4 |
 
 ## Links

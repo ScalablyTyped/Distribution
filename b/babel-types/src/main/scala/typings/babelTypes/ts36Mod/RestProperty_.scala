@@ -3,25 +3,24 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.RestProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestProperty_
-  extends Node
+  extends StObject
+     with Node
      with UnaryLike {
   
-  var argument: LVal = js.native
+  var argument: LVal
   
   @JSName("type")
-  var type_RestProperty_ : RestProperty = js.native
+  var type_RestProperty_ : RestProperty
 }
 object RestProperty_ {
   
   @scala.inline
-  def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double, `type`: RestProperty): RestProperty_ = {
+  def apply(argument: LVal, end: Double, loc: SourceLocation, start: Double): RestProperty_ = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RestProperty")
     __obj.asInstanceOf[RestProperty_]
   }
   

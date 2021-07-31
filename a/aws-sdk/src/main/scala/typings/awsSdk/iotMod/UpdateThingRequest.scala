@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateThingRequest extends StObject {
   
   /**
     * A list of thing attributes, a JSON string containing name-value pairs. For example:  {\"attributes\":{\"name1\":\"value2\"}}  This data is used to add new attributes or update existing attributes.
     */
-  var attributePayload: js.UndefOr[AttributePayload] = js.native
+  var attributePayload: js.UndefOr[AttributePayload] = js.undefined
   
   /**
     * The expected version of the thing record in the registry. If the version of the record in the registry does not match the expected version specified in the request, the UpdateThing request is rejected with a VersionConflictException.
     */
-  var expectedVersion: js.UndefOr[OptionalVersion] = js.native
+  var expectedVersion: js.UndefOr[OptionalVersion] = js.undefined
   
   /**
     * Remove a thing type association. If true, the association is removed.
     */
-  var removeThingType: js.UndefOr[RemoveThingType] = js.native
+  var removeThingType: js.UndefOr[RemoveThingType] = js.undefined
   
   /**
     * The name of the thing to update. You can't change a thing's name. To change a thing's name, you must create a new thing, give it the new name, and then delete the old thing.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
   
   /**
     * The name of the thing type.
     */
-  var thingTypeName: js.UndefOr[ThingTypeName] = js.native
+  var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
 }
 object UpdateThingRequest {
   

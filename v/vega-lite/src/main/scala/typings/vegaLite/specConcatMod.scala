@@ -2,56 +2,53 @@ package typings.vegaLite
 
 import typings.vegaLite.specBaseMod.BaseSpec
 import typings.vegaLite.specBaseMod.BoundsMixins
-import typings.vegaLite.specBaseMod.ColumnMixins
-import typings.vegaLite.specBaseMod.GenericCompositionLayout
+import typings.vegaLite.specBaseMod.GenericCompositionLayoutWithColumns
 import typings.vegaLite.specBaseMod.ResolveMixins
 import typings.vegaLite.specMod.GenericSpec
 import typings.vegaLite.specMod.NormalizedSpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object specConcatMod {
   
-  @JSImport("vega-lite/build/src/spec/concat", "isAnyConcatSpec")
+  @JSImport("vega-lite/build/src/spec/concat", JSImport.Namespace)
   @js.native
-  def isAnyConcatSpec(spec: BaseSpec): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/spec/concat", "isConcatSpec")
-  @js.native
-  def isConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean = js.native
+  @scala.inline
+  def isAnyConcatSpec(spec: BaseSpec): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnyConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/spec/concat", "isHConcatSpec")
-  @js.native
-  def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = js.native
+  @scala.inline
+  def isConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericConcatSpec<any> */ Boolean]
   
-  @JSImport("vega-lite/build/src/spec/concat", "isVConcatSpec")
-  @js.native
-  def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = js.native
+  @scala.inline
+  def isHConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericHConcatSpec<any> */ Boolean]
   
-  @js.native
-  trait GenericConcatSpec[S /* <: GenericSpec[_, _, _, _] */]
-    extends GenericCompositionLayout
+  @scala.inline
+  def isVConcatSpec(spec: BaseSpec): /* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVConcatSpec")(spec.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/concat.GenericVConcatSpec<any> */ Boolean]
+  
+  trait GenericConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+    extends StObject
        with BaseSpec
-       with ColumnMixins
+       with GenericCompositionLayoutWithColumns
        with ResolveMixins {
     
     /**
       * A list of views to be concatenated.
       */
-    var concat: js.Array[S] = js.native
+    var concat: js.Array[S]
   }
   object GenericConcatSpec {
     
     @scala.inline
-    def apply[S /* <: GenericSpec[_, _, _, _] */](concat: js.Array[S]): GenericConcatSpec[S] = {
+    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](concat: js.Array[S]): GenericConcatSpec[S] = {
       val __obj = js.Dynamic.literal(concat = concat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericConcatSpec[S]]
     }
     
     @scala.inline
-    implicit class GenericConcatSpecMutableBuilder[Self <: GenericConcatSpec[_], S /* <: GenericSpec[_, _, _, _] */] (val x: Self with GenericConcatSpec[S]) extends AnyVal {
+    implicit class GenericConcatSpecMutableBuilder[Self <: GenericConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericConcatSpec[S]) extends AnyVal {
       
       @scala.inline
       def setConcat(value: js.Array[S]): Self = StObject.set(x, "concat", value.asInstanceOf[js.Any])
@@ -61,26 +58,26 @@ object specConcatMod {
     }
   }
   
-  @js.native
-  trait GenericHConcatSpec[S /* <: GenericSpec[_, _, _, _] */]
-    extends OneDirectionalConcatLayout
-       with BaseSpec {
+  trait GenericHConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+    extends StObject
+       with BaseSpec
+       with OneDirectionalConcatLayout {
     
     /**
       * A list of views to be concatenated and put into a row.
       */
-    var hconcat: js.Array[S] = js.native
+    var hconcat: js.Array[S]
   }
   object GenericHConcatSpec {
     
     @scala.inline
-    def apply[S /* <: GenericSpec[_, _, _, _] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
+    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](hconcat: js.Array[S]): GenericHConcatSpec[S] = {
       val __obj = js.Dynamic.literal(hconcat = hconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericHConcatSpec[S]]
     }
     
     @scala.inline
-    implicit class GenericHConcatSpecMutableBuilder[Self <: GenericHConcatSpec[_], S /* <: GenericSpec[_, _, _, _] */] (val x: Self with GenericHConcatSpec[S]) extends AnyVal {
+    implicit class GenericHConcatSpecMutableBuilder[Self <: GenericHConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericHConcatSpec[S]) extends AnyVal {
       
       @scala.inline
       def setHconcat(value: js.Array[S]): Self = StObject.set(x, "hconcat", value.asInstanceOf[js.Any])
@@ -90,26 +87,26 @@ object specConcatMod {
     }
   }
   
-  @js.native
-  trait GenericVConcatSpec[S /* <: GenericSpec[_, _, _, _] */]
-    extends OneDirectionalConcatLayout
-       with BaseSpec {
+  trait GenericVConcatSpec[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */]
+    extends StObject
+       with BaseSpec
+       with OneDirectionalConcatLayout {
     
     /**
       * A list of views to be concatenated and put into a column.
       */
-    var vconcat: js.Array[S] = js.native
+    var vconcat: js.Array[S]
   }
   object GenericVConcatSpec {
     
     @scala.inline
-    def apply[S /* <: GenericSpec[_, _, _, _] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
+    def apply[S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */](vconcat: js.Array[S]): GenericVConcatSpec[S] = {
       val __obj = js.Dynamic.literal(vconcat = vconcat.asInstanceOf[js.Any])
       __obj.asInstanceOf[GenericVConcatSpec[S]]
     }
     
     @scala.inline
-    implicit class GenericVConcatSpecMutableBuilder[Self <: GenericVConcatSpec[_], S /* <: GenericSpec[_, _, _, _] */] (val x: Self with GenericVConcatSpec[S]) extends AnyVal {
+    implicit class GenericVConcatSpecMutableBuilder[Self <: GenericVConcatSpec[?], S /* <: GenericSpec[js.Any, js.Any, js.Any, js.Any] */] (val x: Self & GenericVConcatSpec[S]) extends AnyVal {
       
       @scala.inline
       def setVconcat(value: js.Array[S]): Self = StObject.set(x, "vconcat", value.asInstanceOf[js.Any])
@@ -121,9 +118,9 @@ object specConcatMod {
   
   type NormalizedConcatSpec = GenericConcatSpec[NormalizedSpec] | GenericVConcatSpec[NormalizedSpec] | GenericHConcatSpec[NormalizedSpec]
   
-  @js.native
   trait OneDirectionalConcatLayout
-    extends BoundsMixins
+    extends StObject
+       with BoundsMixins
        with ResolveMixins {
     
     /**
@@ -131,14 +128,14 @@ object specConcatMod {
       *
       * __Default value:__ `false`
       */
-    var center: js.UndefOr[Boolean] = js.native
+    var center: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The spacing in pixels between sub-views of the concat operator.
       *
       * __Default value__: `10`
       */
-    var spacing: js.UndefOr[Double] = js.native
+    var spacing: js.UndefOr[Double] = js.undefined
   }
   object OneDirectionalConcatLayout {
     

@@ -10,9 +10,9 @@ HTML assertions for Chai.
 | ------------------ | :-------------: |
 | Full name          | chai-html |
 | Keywords           | chai, html, test, assert, assertion |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 486325 |
+| # downloads        | 598386 |
 | # stars            | 0 |
 
 ## Links

@@ -3,51 +3,49 @@ package typings.typeorm
 import typings.typeorm.joinColumnMetadataArgsMod.JoinColumnMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object joinTableMetadataArgsMod {
   
-  @js.native
   trait JoinTableMetadataArgs extends StObject {
     
     /**
       * Database where join table will be created.
       * Works only in some databases (like mysql and mssql).
       */
-    val database: js.UndefOr[String] = js.native
+    val database: js.UndefOr[String] = js.undefined
     
     /**
       * Second (inverse) column of the join table.
       */
-    val inverseJoinColumns: js.UndefOr[js.Array[JoinColumnMetadataArgs]] = js.native
+    val inverseJoinColumns: js.UndefOr[js.Array[JoinColumnMetadataArgs]] = js.undefined
     
     /**
       * First column of the join table.
       */
-    val joinColumns: js.UndefOr[js.Array[JoinColumnMetadataArgs]] = js.native
+    val joinColumns: js.UndefOr[js.Array[JoinColumnMetadataArgs]] = js.undefined
     
     /**
       * Name of the table that will be created to store values of the both tables (join table).
       * By default is auto generated.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * Class's property name to which this column is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Schema where join table will be created.
       * Works only in some databases (like postgres and mssql).
       */
-    val schema: js.UndefOr[String] = js.native
+    val schema: js.UndefOr[String] = js.undefined
     
     /**
       * Class to which this column is applied.
       */
-    val target: js.Function | String = js.native
+    val target: js.Function | String
   }
   object JoinTableMetadataArgs {
     

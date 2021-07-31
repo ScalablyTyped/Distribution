@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDownloadUrlForLayerRequest extends StObject {
   
   /**
     * The digest of the image layer to download.
     */
-  var layerDigest: LayerDigest = js.native
+  var layerDigest: LayerDigest
   
   /**
     * The AWS account ID associated with the registry that contains the image layer to download. If you do not specify a registry, the default registry is assumed.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The name of the repository that is associated with the image layer to download.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object GetDownloadUrlForLayerRequest {
   

@@ -2,16 +2,16 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SafariValidateEvent extends SafariEvent {
+trait SafariValidateEvent
+  extends StObject
+     with SafariEvent {
   
   /**
     * The command identifier of the target being validated.
     */
-  var command: String = js.native
+  var command: String
 }
 object SafariValidateEvent {
   

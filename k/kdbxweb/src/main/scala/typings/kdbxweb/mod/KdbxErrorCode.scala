@@ -2,7 +2,6 @@ package typings.kdbxweb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  NotImplemented :'NotImplemented',   InvalidArg :'InvalidArg',   BadSignature :'BadSignature',   InvalidVersion :'InvalidVersion',   Unsupported :'Unsupported',   FileCorrupt :'FileCorrupt',   InvalidKey :'InvalidKey',   MergeError :'MergeError'}[keyof {  NotImplemented :'NotImplemented',   InvalidArg :'InvalidArg',   BadSignature :'BadSignature',   InvalidVersion :'InvalidVersion',   Unsupported :'Unsupported',   FileCorrupt :'FileCorrupt',   InvalidKey :'InvalidKey',   MergeError :'MergeError'}] */

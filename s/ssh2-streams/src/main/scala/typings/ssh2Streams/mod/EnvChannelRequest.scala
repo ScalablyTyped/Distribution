@@ -3,27 +3,27 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.env
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnvChannelRequest extends ChannelRequest {
+trait EnvChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var key: String = js.native
+  var key: String
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: env = js.native
+  var request: env
   
-  var `val`: String = js.native
+  var `val`: String
   
-  var wantReply: Boolean = js.native
+  var wantReply: Boolean
 }
 object EnvChannelRequest {
   
   @scala.inline
-  def apply(key: String, recipient: Double, request: env, `val`: String, wantReply: Boolean): EnvChannelRequest = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], wantReply = wantReply.asInstanceOf[js.Any])
+  def apply(key: String, recipient: Double, `val`: String, wantReply: Boolean): EnvChannelRequest = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "env", wantReply = wantReply.asInstanceOf[js.Any])
     __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
     __obj.asInstanceOf[EnvChannelRequest]
   }

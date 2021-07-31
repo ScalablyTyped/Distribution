@@ -2,21 +2,21 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDiffEditorModel extends IEditorModel {
+trait IDiffEditorModel
+  extends StObject
+     with IEditorModel {
   
   /**
     * Modified model.
     */
-  var modified: ITextModel = js.native
+  var modified: ITextModel
   
   /**
     * Original model.
     */
-  var original: ITextModel = js.native
+  var original: ITextModel
 }
 object IDiffEditorModel {
   

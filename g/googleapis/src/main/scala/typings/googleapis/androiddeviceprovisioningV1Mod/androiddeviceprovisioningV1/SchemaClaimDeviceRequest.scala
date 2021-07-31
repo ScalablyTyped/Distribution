@@ -2,34 +2,32 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message to claim a device on behalf of a customer.
   */
-@js.native
 trait SchemaClaimDeviceRequest extends StObject {
   
   /**
     * Required. The ID of the customer for whom the device is being claimed.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The device identifier of the device to claim.
     */
-  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[SchemaDeviceIdentifier] = js.undefined
   
   /**
     * Optional. The metadata to attach to the device.
     */
-  var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.native
+  var deviceMetadata: js.UndefOr[SchemaDeviceMetadata] = js.undefined
   
   /**
     * Required. The section type of the device&#39;s provisioning record.
     */
-  var sectionType: js.UndefOr[String] = js.native
+  var sectionType: js.UndefOr[String] = js.undefined
 }
 object SchemaClaimDeviceRequest {
   

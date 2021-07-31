@@ -2,34 +2,32 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Folder&#39;s contents.
   */
-@js.native
 trait SchemaFolderEntities extends StObject {
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of tags inside the folder.
     */
-  var tag: js.UndefOr[js.Array[SchemaTag]] = js.native
+  var tag: js.UndefOr[js.Array[SchemaTag]] = js.undefined
   
   /**
     * The list of triggers inside the folder.
     */
-  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.native
+  var trigger: js.UndefOr[js.Array[SchemaTrigger]] = js.undefined
   
   /**
     * The list of variables inside the folder.
     */
-  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variable: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
 }
 object SchemaFolderEntities {
   

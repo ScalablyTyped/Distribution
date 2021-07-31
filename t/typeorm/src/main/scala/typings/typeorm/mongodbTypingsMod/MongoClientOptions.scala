@@ -3,56 +3,54 @@ package typings.typeorm.mongodbTypingsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MongoClientOptions extends StObject {
   
   /**
     * A hash of options to set on the db object, see Db constructor.
     */
-  var db: js.UndefOr[DbCreateOptions] = js.native
+  var db: js.UndefOr[DbCreateOptions] = js.undefined
   
   /**
     * A hash of options to set on the mongos object, see Mongos constructor**.
     */
-  var mongos: js.UndefOr[MongosOptions] = js.native
+  var mongos: js.UndefOr[MongosOptions] = js.undefined
   
   /**
     * The maximum size of the individual server pool.
     */
-  var poolSize: js.UndefOr[scala.Double] = js.native
+  var poolSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * A Promise library class the application wishes to use such as Bluebird, must be ES6 compatible.
     */
-  var promiseLibrary: js.UndefOr[js.Object] = js.native
+  var promiseLibrary: js.UndefOr[js.Object] = js.undefined
   
   /**
     * A hash of options to set on the replSet object, see ReplSet constructor**.
     */
-  var replSet: js.UndefOr[ReplSetOptions] = js.native
+  var replSet: js.UndefOr[ReplSetOptions] = js.undefined
   
   /**
     * A hash of options to set on the server objects, see Server constructor**.
     */
-  var server: js.UndefOr[ServerOptions] = js.native
+  var server: js.UndefOr[ServerOptions] = js.undefined
   
   /**
     * Enable SSL connection.
     */
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * SSL Certificate store binary buffer.
     */
-  var sslCA: js.UndefOr[Buffer] = js.native
+  var sslCA: js.UndefOr[Buffer] = js.undefined
   
   /**
     * Uri decode the user name and password for authentication.
     */
-  var uri_decode_auth: js.UndefOr[Boolean] = js.native
+  var uri_decode_auth: js.UndefOr[Boolean] = js.undefined
 }
 object MongoClientOptions {
   

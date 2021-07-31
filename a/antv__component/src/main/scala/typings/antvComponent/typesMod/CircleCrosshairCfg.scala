@@ -4,35 +4,35 @@ import typings.antvGBase.interfacesMod.IGroup
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleCrosshairCfg extends CrosshairBaseCfg {
+trait CircleCrosshairCfg
+  extends StObject
+     with CrosshairBaseCfg {
   
   /**
     * 圆心
     * @type {Point}
     */
-  var center: Point = js.native
+  var center: Point
   
   /**
     * 结束角度
     * @type {number}
     */
-  var endAngle: Double = js.native
+  var endAngle: Double
   
   /**
     * 半径
     * @type {number}
     */
-  var radius: Double = js.native
+  var radius: Double
   
   /**
     * 开始角度
     * @type {number}
     */
-  var startAngle: Double = js.native
+  var startAngle: Double
 }
 object CircleCrosshairCfg {
   

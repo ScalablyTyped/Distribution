@@ -2,15 +2,15 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPixelRectangleGeometry extends IPixelGeometry {
+trait IPixelRectangleGeometry
+  extends StObject
+     with IPixelGeometry {
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getClosest(anchorPosition: js.Array[Double]): js.Object
   
-  def getCoordinates(): js.Array[js.Array[Double]] = js.native
+  def getCoordinates(): js.Array[js.Array[Double]]
 }
 object IPixelRectangleGeometry {
   

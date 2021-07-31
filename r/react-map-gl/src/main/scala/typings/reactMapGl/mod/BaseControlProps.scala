@@ -2,19 +2,17 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseControlProps extends StObject {
   
-  var captureClick: js.UndefOr[Boolean] = js.native
+  var captureClick: js.UndefOr[Boolean] = js.undefined
   
-  var captureDoubleClick: js.UndefOr[Boolean] = js.native
+  var captureDoubleClick: js.UndefOr[Boolean] = js.undefined
   
-  var captureDrag: js.UndefOr[Boolean] = js.native
+  var captureDrag: js.UndefOr[Boolean] = js.undefined
   
-  var captureScroll: js.UndefOr[Boolean] = js.native
+  var captureScroll: js.UndefOr[Boolean] = js.undefined
 }
 object BaseControlProps {
   

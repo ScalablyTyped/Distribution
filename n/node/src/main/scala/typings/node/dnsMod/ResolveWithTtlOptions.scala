@@ -3,20 +3,20 @@ package typings.node.dnsMod
 import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResolveWithTtlOptions extends ResolveOptions {
+trait ResolveWithTtlOptions
+  extends StObject
+     with ResolveOptions {
   
   @JSName("ttl")
-  var ttl_ResolveWithTtlOptions: `true` = js.native
+  var ttl_ResolveWithTtlOptions: `true`
 }
 object ResolveWithTtlOptions {
   
   @scala.inline
-  def apply(ttl: `true`): ResolveWithTtlOptions = {
-    val __obj = js.Dynamic.literal(ttl = ttl.asInstanceOf[js.Any])
+  def apply(): ResolveWithTtlOptions = {
+    val __obj = js.Dynamic.literal(ttl = true)
     __obj.asInstanceOf[ResolveWithTtlOptions]
   }
   

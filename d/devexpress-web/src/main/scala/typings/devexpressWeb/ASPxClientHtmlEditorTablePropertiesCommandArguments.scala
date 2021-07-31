@@ -2,49 +2,49 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings related to the ASPxClientCommandConsts.TABLEPROPERTIES_DIALOG_COMMAND command parameter.
   */
-@js.native
-trait ASPxClientHtmlEditorTablePropertiesCommandArguments extends ASPxClientHtmlEditorCommandArguments {
+trait ASPxClientHtmlEditorTablePropertiesCommandArguments
+  extends StObject
+     with ASPxClientHtmlEditorCommandArguments {
   
   /**
     * Determines the position of the target table element.
     */
-  var align: String = js.native
+  var align: String
   
   /**
     * Gets or sets a value that is the table caption.
     */
-  var caption: String = js.native
+  var caption: String
   
   /**
     * Gets or sets a table cell padding.
     */
-  var cellPadding: Double = js.native
+  var cellPadding: Double
   
   /**
     * Gets or sets the table cell spacing.
     */
-  var cellSpacing: Double = js.native
+  var cellSpacing: Double
   
   /**
     * Gets or sets a value indicating whether the first row/column serves as the table's header.
     */
-  var headers: String = js.native
+  var headers: String
   
   /**
     * Contains the style settings defining the appearance of the target table element.
     */
-  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings = js.native
+  var styleSettings: ASPxClientHtmlEditorCommandStyleSettings
   
   /**
     * Gets or sets the table's summary.
     */
-  var summary: String = js.native
+  var summary: String
 }
 object ASPxClientHtmlEditorTablePropertiesCommandArguments {
   

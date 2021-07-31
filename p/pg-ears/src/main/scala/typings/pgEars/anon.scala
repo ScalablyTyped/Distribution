@@ -5,51 +5,49 @@ import typings.node.tlsMod.ConnectionOptions
 import typings.pgEars.pgEarsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined pg.pg.ClientConfig & {  maxAttempts :number | undefined,   checkInterval :number | undefined} */
-  @js.native
   trait ClientConfigmaxAttemptsnu extends StObject {
     
-    var application_name: js.UndefOr[String] = js.native
+    var application_name: js.UndefOr[String] = js.undefined
     
     // Interval between connection retries, in milliseconds.
-    var checkInterval: js.UndefOr[Double] = js.native
+    var checkInterval: js.UndefOr[Double] = js.undefined
     
-    var connectionString: js.UndefOr[String] = js.native
+    var connectionString: js.UndefOr[String] = js.undefined
     
-    var connectionTimeoutMillis: js.UndefOr[Double] = js.native
+    var connectionTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var database: js.UndefOr[String] = js.native
+    var database: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var idle_in_transaction_session_timeout: js.UndefOr[Double] = js.native
+    var idle_in_transaction_session_timeout: js.UndefOr[Double] = js.undefined
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.native
+    var keepAliveInitialDelayMillis: js.UndefOr[Double] = js.undefined
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.native
+    var parseInputDatesAsUTC: js.UndefOr[Boolean] = js.undefined
     
-    var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.native
+    var password: js.UndefOr[String | (js.Function0[String | js.Promise[String]])] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var query_timeout: js.UndefOr[Double] = js.native
+    var query_timeout: js.UndefOr[Double] = js.undefined
     
-    var ssl: js.UndefOr[Boolean | ConnectionOptions] = js.native
+    var ssl: js.UndefOr[Boolean | ConnectionOptions] = js.undefined
     
-    var statement_timeout: js.UndefOr[`false` | Double] = js.native
+    var statement_timeout: js.UndefOr[`false` | Double] = js.undefined
     
-    var stream: js.UndefOr[Duplex] = js.native
+    var stream: js.UndefOr[Duplex] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object ClientConfigmaxAttemptsnu {
     

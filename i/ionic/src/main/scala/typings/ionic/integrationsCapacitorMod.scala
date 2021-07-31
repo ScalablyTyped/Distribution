@@ -8,7 +8,6 @@ import typings.ionic.libIntegrationsMod.IntegrationConfig
 import typings.ionic.libIntegrationsMod.IntegrationDeps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object integrationsCapacitorMod {
@@ -21,7 +20,7 @@ object integrationsCapacitorMod {
     def this(e: IntegrationDeps) = this()
     
     @JSName("archiveUrl")
-    val archiveUrl_Integration: js.UndefOr[scala.Nothing] = js.native
+    val archiveUrl_Integration: Unit = js.native
     
     @JSName("config")
     def config_MIntegration: IntegrationConfig = js.native

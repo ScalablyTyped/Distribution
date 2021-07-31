@@ -3,29 +3,27 @@ package typings.vueTemplateCompiler.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCBlock extends StObject {
   
-  var attrs: Record[String, String] = js.native
+  var attrs: Record[String, String]
   
-  var content: String = js.native
+  var content: String
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var module: js.UndefOr[String | Boolean] = js.native
+  var module: js.UndefOr[String | Boolean] = js.undefined
   
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object SFCBlock {
   

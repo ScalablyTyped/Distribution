@@ -6,7 +6,6 @@ import typings.awsCryptoSha256Browser.awsCryptoSha256BrowserStrings.`SHA-256`
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {

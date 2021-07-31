@@ -2,34 +2,32 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Drawer/Drawer.DrawerClassKey>> */
-@js.native
 trait PartialClassNameMapDrawer extends StObject {
   
-  var docked: js.UndefOr[String] = js.native
+  var docked: js.UndefOr[String] = js.undefined
   
-  var modal: js.UndefOr[String] = js.native
+  var modal: js.UndefOr[String] = js.undefined
   
-  var paper: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.undefined
   
-  var paperAnchorBottom: js.UndefOr[String] = js.native
+  var paperAnchorBottom: js.UndefOr[String] = js.undefined
   
-  var paperAnchorDockedBottom: js.UndefOr[String] = js.native
+  var paperAnchorDockedBottom: js.UndefOr[String] = js.undefined
   
-  var paperAnchorDockedLeft: js.UndefOr[String] = js.native
+  var paperAnchorDockedLeft: js.UndefOr[String] = js.undefined
   
-  var paperAnchorDockedRight: js.UndefOr[String] = js.native
+  var paperAnchorDockedRight: js.UndefOr[String] = js.undefined
   
-  var paperAnchorDockedTop: js.UndefOr[String] = js.native
+  var paperAnchorDockedTop: js.UndefOr[String] = js.undefined
   
-  var paperAnchorLeft: js.UndefOr[String] = js.native
+  var paperAnchorLeft: js.UndefOr[String] = js.undefined
   
-  var paperAnchorRight: js.UndefOr[String] = js.native
+  var paperAnchorRight: js.UndefOr[String] = js.undefined
   
-  var paperAnchorTop: js.UndefOr[String] = js.native
+  var paperAnchorTop: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapDrawer {
   

@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client file that corresponds to a particular file selected for uploading in the upload control.
   */
-@js.native
 trait ASPxClientUploadControlFile extends StObject {
   
   /**
     * Gets the name of the file selected for uploading.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the size of the file selected for uploading.
     */
-  var size: Double = js.native
+  var size: Double
   
   /**
     * Provides access to the file as a native Javascript object.
     */
-  var sourceFileObject: js.Any = js.native
+  var sourceFileObject: js.Any
 }
 object ASPxClientUploadControlFile {
   

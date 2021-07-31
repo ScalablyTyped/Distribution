@@ -18,7 +18,6 @@ import typings.cadesplugin.cadespluginStrings.CAdESCOMDotRawSignature
 import typings.cadesplugin.cadespluginStrings.CAdESCOMDotSignedXML
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,4 +41,12 @@ trait CADESPluginSync
   def CreateObject_CAdESCOMRawSignature(objName: CAdESCOMDotRawSignature): RawSignature = js.native
   @JSName("CreateObject")
   def CreateObject_CAdESCOMSignedXML(objName: CAdESCOMDotSignedXML): SignedXML = js.native
+  
+  /* InferMemberOverrides */
+  override def `then`[B](
+    onFulfilled: js.Function1[scala.Nothing, B | js.Thenable[B]],
+    onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]
+  ): js.Promise[B] & js.Thenable[B] = js.native
+  /* InferMemberOverrides */
+  override def `then`[B](onFulfilled: Unit, onRejected: js.UndefOr[js.Function1[Any, B | js.Thenable[B]]]): js.Promise[B] & js.Thenable[B] = js.native
 }

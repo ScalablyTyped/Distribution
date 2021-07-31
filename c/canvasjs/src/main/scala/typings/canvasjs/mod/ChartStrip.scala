@@ -2,11 +2,12 @@ package typings.canvasjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ChartStrip extends ChartStripLinesOptions {
+trait ChartStrip
+  extends StObject
+     with ChartStripLinesOptions {
   
   /**
     * Returns the specified property of stripLines.

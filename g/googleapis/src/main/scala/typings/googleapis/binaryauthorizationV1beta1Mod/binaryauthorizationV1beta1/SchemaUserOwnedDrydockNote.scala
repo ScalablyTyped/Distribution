@@ -2,14 +2,12 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An user owned drydock note references a Drydock ATTESTATION_AUTHORITY Note
   * created by the user.
   */
-@js.native
 trait SchemaUserOwnedDrydockNote extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaUserOwnedDrydockNote extends StObject {
     * make any other assumptions about the service account email; future
     * versions may use an email based on a different naming pattern.
     */
-  var delegationServiceAccountEmail: js.UndefOr[String] = js.native
+  var delegationServiceAccountEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Drydock resource name of a ATTESTATION_AUTHORITY Note,
@@ -32,7 +30,7 @@ trait SchemaUserOwnedDrydockNote extends StObject {
     * that names a container image and that links to this Note. Drydock is an
     * external dependency.
     */
-  var noteReference: js.UndefOr[String] = js.native
+  var noteReference: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Public keys that verify attestations signed by this attestor.
@@ -41,7 +39,7 @@ trait SchemaUserOwnedDrydockNote extends StObject {
     * attestor for the image specified in the admission request.  If this field
     * is empty, this attestor always returns that no valid attestations exist.
     */
-  var publicKeys: js.UndefOr[js.Array[SchemaAttestorPublicKey]] = js.native
+  var publicKeys: js.UndefOr[js.Array[SchemaAttestorPublicKey]] = js.undefined
 }
 object SchemaUserOwnedDrydockNote {
   

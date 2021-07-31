@@ -2,13 +2,11 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for group by findings.
   */
-@js.native
 trait SchemaGroupFindingsResponse extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaGroupFindingsResponse extends StObject {
     * combination of property/values. The element contains a count for the
     * number of times those specific property/values appear.
     */
-  var groupByResults: js.UndefOr[js.Array[SchemaGroupResult]] = js.native
+  var groupByResults: js.UndefOr[js.Array[SchemaGroupResult]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Time used for executing the groupBy request.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupFindingsResponse {
   

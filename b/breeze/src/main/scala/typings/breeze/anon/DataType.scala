@@ -2,17 +2,15 @@ package typings.breeze.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataType extends StObject {
   
-  var dataType: js.UndefOr[typings.breeze.breeze.DataType] = js.native
+  var dataType: js.UndefOr[typings.breeze.breeze.DataType] = js.undefined
   
-  var isLiteral: js.UndefOr[Boolean] = js.native
+  var isLiteral: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object DataType {
   

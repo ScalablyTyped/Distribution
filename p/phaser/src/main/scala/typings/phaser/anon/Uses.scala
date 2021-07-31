@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phaser.MatterJS.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uses
-  extends /* _ */ StringDictionary[js.Any] {
+  extends StObject
+     with /* _ */ StringDictionary[js.Any] {
   
-  var uses: js.UndefOr[js.Array[Plugin | String]] = js.native
+  var uses: js.UndefOr[js.Array[Plugin | String]] = js.undefined
 }
 object Uses {
   

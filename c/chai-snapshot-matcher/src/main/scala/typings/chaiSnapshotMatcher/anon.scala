@@ -2,21 +2,19 @@ package typings.chaiSnapshotMatcher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Folder extends StObject {
     
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var snapshotPath: js.UndefOr[String] = js.native
+    var snapshotPath: js.UndefOr[String] = js.undefined
   }
   object Folder {
     

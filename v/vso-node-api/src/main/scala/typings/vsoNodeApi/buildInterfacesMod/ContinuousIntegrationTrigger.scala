@@ -2,35 +2,35 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContinuousIntegrationTrigger extends BuildTrigger {
+trait ContinuousIntegrationTrigger
+  extends StObject
+     with BuildTrigger {
   
   /**
     * Indicates whether changes should be batched while another CI build is running.
     */
-  var batchChanges: Boolean = js.native
+  var batchChanges: Boolean
   
-  var branchFilters: js.Array[String] = js.native
+  var branchFilters: js.Array[String]
   
   /**
     * The maximum number of simultaneous CI builds that will run per branch.
     */
-  var maxConcurrentBuildsPerBranch: Double = js.native
+  var maxConcurrentBuildsPerBranch: Double
   
-  var pathFilters: js.Array[String] = js.native
+  var pathFilters: js.Array[String]
   
   /**
     * The polling interval, in seconds.
     */
-  var pollingInterval: Double = js.native
+  var pollingInterval: Double
   
   /**
     * The ID of the job used to poll an external repository.
     */
-  var pollingJobId: String = js.native
+  var pollingJobId: String
 }
 object ContinuousIntegrationTrigger {
   

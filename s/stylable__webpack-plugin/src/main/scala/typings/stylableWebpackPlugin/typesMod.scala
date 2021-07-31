@@ -12,7 +12,6 @@ import typings.stylableWebpackPlugin.anon.ClassNameOptimizations
 import typings.stylableWebpackPlugin.anon.DUPLICATEMODULENAMESPACE
 import typings.stylableWebpackPlugin.anon.FileDependencies
 import typings.stylableWebpackPlugin.anon.Module
-import typings.stylableWebpackPlugin.anon.Request
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.external
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.isolated
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.module
@@ -20,17 +19,15 @@ import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.namespace
 import typings.stylableWebpackPlugin.stylableWebpackPluginStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait CalcResult extends StObject {
     
-    var cssDependencies: js.Array[StylableModule] = js.native
+    var cssDependencies: js.Array[StylableModule]
     
-    var depth: Double = js.native
+    var depth: Double
   }
   object CalcResult {
     
@@ -56,18 +53,17 @@ object typesMod {
   
   type ShallowPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] extends new (): any? T[P] : std.Partial<T[P]>}
-    */ typings.stylableWebpackPlugin.stylableWebpackPluginStrings.ShallowPartial with TopLevel[js.Any]
+    */ typings.stylableWebpackPlugin.stylableWebpackPluginStrings.ShallowPartial & TopLevel[js.Any]
   
-  @js.native
   trait StylableGeneratorOptions extends StObject {
     
-    var afterTransform: js.Any = js.native
+    var afterTransform: js.Any
     
-    var experimentalHMR: Boolean = js.native
+    var experimentalHMR: Boolean
     
-    var includeCSSInJS: Boolean = js.native
+    var includeCSSInJS: Boolean
     
-    var runtimeStylesheetId: module | namespace = js.native
+    var runtimeStylesheetId: module | namespace
   }
   object StylableGeneratorOptions {
     
@@ -100,32 +96,31 @@ object typesMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Module * / any */ @js.native
-  trait StylableModule extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Module * / any */ trait StylableModule extends StObject {
     
     def addDependency(
       dep: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Dependency */ js.Any
-    ): Unit = js.native
+    ): Unit
     
-    var buildInfo: FileDependencies = js.native
+    var buildInfo: FileDependencies
     
-    var context: String = js.native
+    var context: String
     
-    var dependencies: js.UndefOr[js.Array[StylableModule]] = js.native
+    var dependencies: js.UndefOr[js.Array[StylableModule]] = js.undefined
     
     var loaders: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ js.Any
+      ]
     
-    var module: js.UndefOr[StylableModule] = js.native
+    var module: js.UndefOr[StylableModule] = js.undefined
     
-    def originalSource(): String = js.native
+    def originalSource(): String
     
-    var reasons: js.Array[Module] = js.native
+    var reasons: js.Array[Module]
     
-    var request: String = js.native
+    var request: String
     
-    var resource: String = js.native
+    var resource: String
   }
   object StylableModule {
     
@@ -135,7 +130,7 @@ object typesMod {
       buildInfo: FileDependencies,
       context: String,
       loaders: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ js.Any
         ],
       originalSource: () => String,
       reasons: js.Array[Module],
@@ -172,12 +167,14 @@ object typesMod {
       @scala.inline
       def setLoaders(
         value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ js.Any
             ]
       ): Self = StObject.set(x, "loaders", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLoadersVarargs(value: js.Any*): Self = StObject.set(x, "loaders", js.Array(value :_*))
+      def setLoadersVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.NewLoader */ js.Any)*
+      ): Self = StObject.set(x, "loaders", js.Array(value :_*))
       
       @scala.inline
       def setModule(value: StylableModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
@@ -202,7 +199,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait StylableWebpackPluginOptions extends StObject {
     
     var afterTransform: js.UndefOr[
@@ -212,51 +208,51 @@ object typesMod {
           /* stylable */ Stylable, 
           Unit
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var bootstrap: AutoInit = js.native
+    var bootstrap: AutoInit
     
-    var createRuntimeChunk: Boolean = js.native
+    var createRuntimeChunk: Boolean
     
-    var experimentalHMR: Boolean = js.native
+    var experimentalHMR: Boolean
     
-    var filename: String = js.native
+    var filename: String
     
-    var generate: AfterTransform = js.native
+    var generate: AfterTransform
     
-    var globalRuntimeId: String = js.native
+    var globalRuntimeId: String
     
-    var includeCSSInJS: Boolean = js.native
+    var includeCSSInJS: Boolean
     
-    var includeDynamicModulesInCSS: Boolean = js.native
+    var includeDynamicModulesInCSS: Boolean
     
-    var optimize: ClassNameOptimizations = js.native
+    var optimize: ClassNameOptimizations
     
-    var optimizeStylableModulesPerChunks: Boolean = js.native
+    var optimizeStylableModulesPerChunks: Boolean
     
-    var optimizer: js.UndefOr[StylableOptimizer] = js.native
+    var optimizer: js.UndefOr[StylableOptimizer] = js.undefined
     
-    var outputCSS: Boolean = js.native
+    var outputCSS: Boolean
     
-    var plugins: js.UndefOr[js.Array[Apply]] = js.native
+    var plugins: js.UndefOr[js.Array[Apply]] = js.undefined
     
-    def requireModule(path: String): js.Any = js.native
+    def requireModule(path: String): js.Any
     
-    var resolveNamespace: js.UndefOr[js.Function0[String]] = js.native
+    var resolveNamespace: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var runtimeMode: isolated | shared | external = js.native
+    var runtimeMode: isolated | shared | external
     
-    var skipDynamicCSSEmit: Boolean = js.native
+    var skipDynamicCSSEmit: Boolean
     
-    var transformHooks: js.UndefOr[TransformHooks] = js.native
+    var transformHooks: js.UndefOr[TransformHooks] = js.undefined
     
-    var unsafeBuildNamespace: js.UndefOr[Boolean] = js.native
+    var unsafeBuildNamespace: js.UndefOr[Boolean] = js.undefined
     
-    var unsafeMuteDiagnostics: DUPLICATEMODULENAMESPACE = js.native
+    var unsafeMuteDiagnostics: DUPLICATEMODULENAMESPACE
     
-    var useEntryModuleInjection: Boolean = js.native
+    var useEntryModuleInjection: Boolean
     
-    var useWeakDeps: Boolean = js.native
+    var useWeakDeps: Boolean
   }
   object StylableWebpackPluginOptions {
     
@@ -384,5 +380,24 @@ object typesMod {
     }
   }
   
-  type WebpackAssetModule = (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Module */ js.Any) with Request
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Module * / any */ trait WebpackAssetModule extends StObject {
+    
+    var request: String
+  }
+  object WebpackAssetModule {
+    
+    @scala.inline
+    def apply(request: String): WebpackAssetModule = {
+      val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any])
+      __obj.asInstanceOf[WebpackAssetModule]
+    }
+    
+    @scala.inline
+    implicit class WebpackAssetModuleMutableBuilder[Self <: WebpackAssetModule] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRequest(value: String): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
+    }
+  }
 }

@@ -2,41 +2,39 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListIndexRequest extends StObject {
   
   /**
     * The consistency level to execute the request at.
     */
-  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.native
+  var ConsistencyLevel: js.UndefOr[typings.awsSdk.clouddirectoryMod.ConsistencyLevel] = js.undefined
   
   /**
     * The ARN of the directory that the index exists in.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The reference to the index to list.
     */
-  var IndexReference: ObjectReference = js.native
+  var IndexReference: ObjectReference
   
   /**
     * The maximum number of objects in a single page to retrieve from the index during a request. For more information, see Amazon Cloud Directory Limits.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Specifies the ranges of indexed values that you want to query.
     */
-  var RangesOnIndexedValues: js.UndefOr[ObjectAttributeRangeList] = js.native
+  var RangesOnIndexedValues: js.UndefOr[ObjectAttributeRangeList] = js.undefined
 }
 object ListIndexRequest {
   

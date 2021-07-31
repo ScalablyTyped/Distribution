@@ -5,69 +5,58 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-hierarchy", "cluster")
+  @JSImport("d3-hierarchy", JSImport.Namespace)
   @js.native
-  def cluster[Datum](): ClusterLayout[Datum] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-hierarchy", "hierarchy")
-  @js.native
-  def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = js.native
-  @JSImport("d3-hierarchy", "hierarchy")
-  @js.native
-  def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = js.native
+  @scala.inline
+  def cluster[Datum](): ClusterLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("cluster")().asInstanceOf[ClusterLayout[Datum]]
   
-  @JSImport("d3-hierarchy", "pack")
-  @js.native
-  def pack[Datum](): PackLayout[Datum] = js.native
+  @scala.inline
+  def hierarchy[Datum](data: Datum): HierarchyNode[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any]).asInstanceOf[HierarchyNode[Datum]]
+  @scala.inline
+  def hierarchy[Datum](data: Datum, children: js.Function1[/* d */ Datum, js.UndefOr[Iterable[Datum] | Null]]): HierarchyNode[Datum] = (^.asInstanceOf[js.Dynamic].applyDynamic("hierarchy")(data.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[HierarchyNode[Datum]]
   
-  @JSImport("d3-hierarchy", "packEnclose")
-  @js.native
-  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = js.native
+  @scala.inline
+  def pack[Datum](): PackLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")().asInstanceOf[PackLayout[Datum]]
   
-  @JSImport("d3-hierarchy", "packSiblings")
-  @js.native
-  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum with PackCircle] = js.native
+  @scala.inline
+  def packEnclose[Datum /* <: PackCircle */](circles: js.Array[Datum]): PackCircle = ^.asInstanceOf[js.Dynamic].applyDynamic("packEnclose")(circles.asInstanceOf[js.Any]).asInstanceOf[PackCircle]
   
-  @JSImport("d3-hierarchy", "partition")
-  @js.native
-  def partition[Datum](): PartitionLayout[Datum] = js.native
+  @scala.inline
+  def packSiblings[Datum /* <: PackRadius */](circles: js.Array[Datum]): js.Array[Datum & PackCircle] = ^.asInstanceOf[js.Dynamic].applyDynamic("packSiblings")(circles.asInstanceOf[js.Any]).asInstanceOf[js.Array[Datum & PackCircle]]
   
-  @JSImport("d3-hierarchy", "stratify")
-  @js.native
-  def stratify[Datum](): StratifyOperator[Datum] = js.native
+  @scala.inline
+  def partition[Datum](): PartitionLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("partition")().asInstanceOf[PartitionLayout[Datum]]
   
-  @JSImport("d3-hierarchy", "tree")
-  @js.native
-  def tree[Datum](): TreeLayout[Datum] = js.native
+  @scala.inline
+  def stratify[Datum](): StratifyOperator[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("stratify")().asInstanceOf[StratifyOperator[Datum]]
   
-  @JSImport("d3-hierarchy", "treemap")
-  @js.native
-  def treemap[Datum](): TreemapLayout[Datum] = js.native
+  @scala.inline
+  def tree[Datum](): TreeLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("tree")().asInstanceOf[TreeLayout[Datum]]
   
-  @JSImport("d3-hierarchy", "treemapBinary")
-  @js.native
-  def treemapBinary(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemap[Datum](): TreemapLayout[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("treemap")().asInstanceOf[TreemapLayout[Datum]]
   
-  @JSImport("d3-hierarchy", "treemapDice")
-  @js.native
-  def treemapDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapBinary(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapBinary")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def treemapDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapResquarify")
   @js.native
   val treemapResquarify: RatioSquarifyTilingFactory = js.native
   
-  @JSImport("d3-hierarchy", "treemapSlice")
-  @js.native
-  def treemapSlice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapSlice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSlice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("d3-hierarchy", "treemapSliceDice")
-  @js.native
-  def treemapSliceDice(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+  @scala.inline
+  def treemapSliceDice(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("treemapSliceDice")(node.asInstanceOf[js.Any], x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("d3-hierarchy", "treemapSquarify")
   @js.native
@@ -125,18 +114,17 @@ object mod {
     def size(size: js.Tuple2[Double, Double]): this.type = js.native
   }
   
-  @js.native
   trait HierarchyCircularLink[Datum] extends StObject {
     
     /**
       * The source of the link.
       */
-    var source: HierarchyCircularNode[Datum] = js.native
+    var source: HierarchyCircularNode[Datum]
     
     /**
       * The target of the link.
       */
-    var target: HierarchyCircularNode[Datum] = js.native
+    var target: HierarchyCircularNode[Datum]
   }
   object HierarchyCircularLink {
     
@@ -147,7 +135,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HierarchyCircularLinkMutableBuilder[Self <: HierarchyCircularLink[_], Datum] (val x: Self with HierarchyCircularLink[Datum]) extends AnyVal {
+    implicit class HierarchyCircularLinkMutableBuilder[Self <: HierarchyCircularLink[?], Datum] (val x: Self & HierarchyCircularLink[Datum]) extends AnyVal {
       
       @scala.inline
       def setSource(value: HierarchyCircularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
@@ -158,7 +146,9 @@ object mod {
   }
   
   @js.native
-  trait HierarchyCircularNode[Datum] extends HierarchyNode[Datum] {
+  trait HierarchyCircularNode[Datum]
+    extends StObject
+       with HierarchyNode[Datum] {
     
     /**
       * The radius of the circle.
@@ -176,18 +166,17 @@ object mod {
     var y: Double = js.native
   }
   
-  @js.native
   trait HierarchyLink[Datum] extends StObject {
     
     /**
       * The source of the link.
       */
-    var source: HierarchyNode[Datum] = js.native
+    var source: HierarchyNode[Datum]
     
     /**
       * The target of the link.
       */
-    var target: HierarchyNode[Datum] = js.native
+    var target: HierarchyNode[Datum]
   }
   object HierarchyLink {
     
@@ -198,7 +187,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HierarchyLinkMutableBuilder[Self <: HierarchyLink[_], Datum] (val x: Self with HierarchyLink[Datum]) extends AnyVal {
+    implicit class HierarchyLinkMutableBuilder[Self <: HierarchyLink[?], Datum] (val x: Self & HierarchyLink[Datum]) extends AnyVal {
       
       @scala.inline
       def setSource(value: HierarchyNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
@@ -315,7 +304,7 @@ object mod {
       * Returns an iterator over the node’s descendants in breadth-first order.
       */
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[this.type, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[this.type, js.Any, Unit]] = js.native
     
     /**
       * Returns the array of leaf nodes in traversal order; leaves are nodes with no children.
@@ -366,18 +355,17 @@ object mod {
     val value: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait HierarchyPointLink[Datum] extends StObject {
     
     /**
       * The source of the link.
       */
-    var source: HierarchyPointNode[Datum] = js.native
+    var source: HierarchyPointNode[Datum]
     
     /**
       * The target of the link.
       */
-    var target: HierarchyPointNode[Datum] = js.native
+    var target: HierarchyPointNode[Datum]
   }
   object HierarchyPointLink {
     
@@ -388,7 +376,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HierarchyPointLinkMutableBuilder[Self <: HierarchyPointLink[_], Datum] (val x: Self with HierarchyPointLink[Datum]) extends AnyVal {
+    implicit class HierarchyPointLinkMutableBuilder[Self <: HierarchyPointLink[?], Datum] (val x: Self & HierarchyPointLink[Datum]) extends AnyVal {
       
       @scala.inline
       def setSource(value: HierarchyPointNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
@@ -399,7 +387,9 @@ object mod {
   }
   
   @js.native
-  trait HierarchyPointNode[Datum] extends HierarchyNode[Datum] {
+  trait HierarchyPointNode[Datum]
+    extends StObject
+       with HierarchyNode[Datum] {
     
     /**
       * The x-coordinate of the node.
@@ -412,18 +402,17 @@ object mod {
     var y: Double = js.native
   }
   
-  @js.native
   trait HierarchyRectangularLink[Datum] extends StObject {
     
     /**
       * The source of the link.
       */
-    var source: HierarchyRectangularNode[Datum] = js.native
+    var source: HierarchyRectangularNode[Datum]
     
     /**
       * The target of the link.
       */
-    var target: HierarchyRectangularNode[Datum] = js.native
+    var target: HierarchyRectangularNode[Datum]
   }
   object HierarchyRectangularLink {
     
@@ -434,7 +423,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class HierarchyRectangularLinkMutableBuilder[Self <: HierarchyRectangularLink[_], Datum] (val x: Self with HierarchyRectangularLink[Datum]) extends AnyVal {
+    implicit class HierarchyRectangularLinkMutableBuilder[Self <: HierarchyRectangularLink[?], Datum] (val x: Self & HierarchyRectangularLink[Datum]) extends AnyVal {
       
       @scala.inline
       def setSource(value: HierarchyRectangularNode[Datum]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
@@ -445,7 +434,9 @@ object mod {
   }
   
   @js.native
-  trait HierarchyRectangularNode[Datum] extends HierarchyNode[Datum] {
+  trait HierarchyRectangularNode[Datum]
+    extends StObject
+       with HierarchyNode[Datum] {
     
     /**
       * The left edge of the rectangle.
@@ -468,23 +459,22 @@ object mod {
     var y1: Double = js.native
   }
   
-  @js.native
   trait PackCircle extends StObject {
     
     /**
       * The radius of the circle.
       */
-    var r: Double = js.native
+    var r: Double
     
     /**
       * The x-coordinate of the circle’s center.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y-coordinate of the circle’s center.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object PackCircle {
     
@@ -579,23 +569,22 @@ object mod {
     def size(size: js.Tuple2[Double, Double]): this.type = js.native
   }
   
-  @js.native
   trait PackRadius extends StObject {
     
     /**
       * The radius of the circle.
       */
-    var r: Double = js.native
+    var r: Double
     
     /**
       * The x-coordinate of the circle’s center.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The y-coordinate of the circle’s center.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object PackRadius {
     
@@ -675,7 +664,7 @@ object mod {
   @js.native
   trait RatioSquarifyTilingFactory extends StObject {
     
-    def apply(node: HierarchyRectangularNode[_], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
+    def apply(node: HierarchyRectangularNode[js.Any], x0: Double, y0: Double, x1: Double, y1: Double): Unit = js.native
     
     /**
       * Specifies the desired aspect ratio of the generated rectangles.

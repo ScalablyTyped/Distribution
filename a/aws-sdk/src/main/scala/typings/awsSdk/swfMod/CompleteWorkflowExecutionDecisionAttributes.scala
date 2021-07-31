@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompleteWorkflowExecutionDecisionAttributes extends StObject {
   
   /**
     * The result of the workflow execution. The form of the result is implementation defined.
     */
-  var result: js.UndefOr[Data] = js.native
+  var result: js.UndefOr[Data] = js.undefined
 }
 object CompleteWorkflowExecutionDecisionAttributes {
   

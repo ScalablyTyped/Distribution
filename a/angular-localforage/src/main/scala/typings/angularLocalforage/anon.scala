@@ -2,21 +2,19 @@ package typings.angularLocalforage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DefaultValue extends StObject {
     
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var scopeKey: js.UndefOr[String] = js.native
+    var scopeKey: js.UndefOr[String] = js.undefined
   }
   object DefaultValue {
     

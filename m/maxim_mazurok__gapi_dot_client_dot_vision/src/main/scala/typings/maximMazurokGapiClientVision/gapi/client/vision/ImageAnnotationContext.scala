@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageAnnotationContext extends StObject {
   
   /** If the file was a PDF or TIFF, this field gives the page number within the file used to produce the image. */
-  var pageNumber: js.UndefOr[Double] = js.native
+  var pageNumber: js.UndefOr[Double] = js.undefined
   
   /** The URI of the file used to produce the image. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object ImageAnnotationContext {
   

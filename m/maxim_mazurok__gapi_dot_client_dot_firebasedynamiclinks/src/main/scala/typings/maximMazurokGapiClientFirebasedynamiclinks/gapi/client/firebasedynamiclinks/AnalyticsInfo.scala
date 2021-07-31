@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsInfo extends StObject {
   
   /** Google Play Campaign Measurements. */
-  var googlePlayAnalytics: js.UndefOr[GooglePlayAnalytics] = js.native
+  var googlePlayAnalytics: js.UndefOr[GooglePlayAnalytics] = js.undefined
   
   /** iTunes Connect App Analytics. */
-  var itunesConnectAnalytics: js.UndefOr[ITunesConnectAnalytics] = js.native
+  var itunesConnectAnalytics: js.UndefOr[ITunesConnectAnalytics] = js.undefined
 }
 object AnalyticsInfo {
   

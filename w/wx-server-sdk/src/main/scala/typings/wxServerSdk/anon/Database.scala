@@ -2,17 +2,15 @@ package typings.wxServerSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
-  var database: String = js.native
+  var database: String
   
-  var functions: String = js.native
+  var functions: String
   
-  var storage: String = js.native
+  var storage: String
 }
 object Database {
   

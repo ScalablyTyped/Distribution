@@ -21,7 +21,6 @@ import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -55,54 +54,24 @@ object anon {
   trait FnCallFdBufferOffsetLengthPosition extends StObject {
     
     def apply(fd: Double, buffer: ArrayBufferView): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: ArrayBufferView,
-      offset: js.UndefOr[scala.Nothing],
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): Double = js.native
-    def apply(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: ArrayBufferView,
-      offset: js.UndefOr[scala.Nothing],
-      length: Double,
-      position: Double
-    ): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: ArrayBufferView,
-      offset: js.UndefOr[scala.Nothing],
-      length: Null,
-      position: Double
-    ): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: ArrayBufferView,
-      offset: Double,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-    def apply(
-      fd: Double,
-      buffer: ArrayBufferView,
-      offset: Null,
-      length: js.UndefOr[scala.Nothing],
-      position: Double
-    ): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
     def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = js.native
+    def apply(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = js.native
     def apply(fd: Double, string: String): Double = js.native
-    def apply(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
     def apply(fd: Double, string: String, position: Double): Double = js.native
     def apply(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
     def apply(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
+    def apply(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = js.native
   }
   
   @js.native
@@ -120,12 +89,11 @@ object anon {
     def apply(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
   }
   
-  @js.native
   trait Gid extends StObject {
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Gid {
     
@@ -147,19 +115,18 @@ object anon {
   }
   
   /* Inlined atomically.atomically/dist/types.ReadOptions & {  encoding :string} */
-  @js.native
   trait ReadOptionsencodingstring extends StObject {
     
-    var encoding: (js.UndefOr[String | Null]) with String = js.native
+    var encoding: (js.UndefOr[String | Null]) & String
     
-    var mode: js.UndefOr[String | Double | `false`] = js.native
+    var mode: js.UndefOr[String | Double | `false`] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ReadOptionsencodingstring {
     
     @scala.inline
-    def apply(encoding: (js.UndefOr[String | Null]) with String): ReadOptionsencodingstring = {
+    def apply(encoding: (js.UndefOr[String | Null]) & String): ReadOptionsencodingstring = {
       val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReadOptionsencodingstring]
     }
@@ -168,7 +135,7 @@ object anon {
     implicit class ReadOptionsencodingstringMutableBuilder[Self <: ReadOptionsencodingstring] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEncoding(value: (js.UndefOr[String | Null]) with String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+      def setEncoding(value: (js.UndefOr[String | Null]) & String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMode(value: String | Double | `false`): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])

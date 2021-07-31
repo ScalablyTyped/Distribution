@@ -2,21 +2,19 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeferCloseChannel extends StObject {
   
-  var deferCloseChannel: Double = js.native
+  var deferCloseChannel: Double
   
-  var prefetch: Double = js.native
+  var prefetch: Double
   
-  var redeliveries: Limit = js.native
+  var redeliveries: Limit
   
-  var retry: Factor = js.native
+  var retry: Factor
   
-  var vhost: String = js.native
+  var vhost: String
 }
 object DeferCloseChannel {
   

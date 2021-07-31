@@ -3,14 +3,13 @@ package typings.xstate.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvokeSourceDefinition
-  extends /* option */ StringDictionary[js.Any] {
+  extends StObject
+     with /* option */ StringDictionary[js.Any] {
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object InvokeSourceDefinition {
   

@@ -2,43 +2,41 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupDetail extends StObject {
   
-  var Arn: js.UndefOr[arnType] = js.native
+  var Arn: js.UndefOr[arnType] = js.undefined
   
   /**
     * A list of the managed policies attached to the group.
     */
-  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.native
+  var AttachedManagedPolicies: js.UndefOr[attachedPoliciesListType] = js.undefined
   
   /**
     * The date and time, in ISO 8601 date-time format, when the group was created.
     */
-  var CreateDate: js.UndefOr[dateType] = js.native
+  var CreateDate: js.UndefOr[dateType] = js.undefined
   
   /**
     * The stable and unique string identifying the group. For more information about IDs, see IAM Identifiers in the IAM User Guide.
     */
-  var GroupId: js.UndefOr[idType] = js.native
+  var GroupId: js.UndefOr[idType] = js.undefined
   
   /**
     * The friendly name that identifies the group.
     */
-  var GroupName: js.UndefOr[groupNameType] = js.native
+  var GroupName: js.UndefOr[groupNameType] = js.undefined
   
   /**
     * A list of the inline policies embedded in the group.
     */
-  var GroupPolicyList: js.UndefOr[policyDetailListType] = js.native
+  var GroupPolicyList: js.UndefOr[policyDetailListType] = js.undefined
   
   /**
     * The path to the group. For more information about paths, see IAM Identifiers in the IAM User Guide.
     */
-  var Path: js.UndefOr[pathType] = js.native
+  var Path: js.UndefOr[pathType] = js.undefined
 }
 object GroupDetail {
   

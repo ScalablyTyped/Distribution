@@ -4,13 +4,14 @@ import typings.fluentuiTheme.ischemeMod.ISchemeNames
 import typings.fluentuiTheme.themeMod.SizeValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fluentuiThemeStrings {
   
   @js.native
-  sealed trait default extends ISchemeNames
+  sealed trait default
+    extends StObject
+       with ISchemeNames
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -20,52 +21,72 @@ object fluentuiThemeStrings {
   def RecursivePartial: RecursivePartial = "RecursivePartial".asInstanceOf[RecursivePartial]
   
   @js.native
-  sealed trait large extends SizeValue
+  sealed trait large
+    extends StObject
+       with SizeValue
   @scala.inline
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait larger extends SizeValue
+  sealed trait larger
+    extends StObject
+       with SizeValue
   @scala.inline
   def larger: larger = "larger".asInstanceOf[larger]
   
   @js.native
-  sealed trait largest extends SizeValue
+  sealed trait largest
+    extends StObject
+       with SizeValue
   @scala.inline
   def largest: largest = "largest".asInstanceOf[largest]
   
   @js.native
-  sealed trait medium extends SizeValue
+  sealed trait medium
+    extends StObject
+       with SizeValue
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait neutral extends ISchemeNames
+  sealed trait neutral
+    extends StObject
+       with ISchemeNames
   @scala.inline
   def neutral: neutral = "neutral".asInstanceOf[neutral]
   
   @js.native
-  sealed trait small extends SizeValue
+  sealed trait small
+    extends StObject
+       with SizeValue
   @scala.inline
   def small: small = "small".asInstanceOf[small]
   
   @js.native
-  sealed trait smaller extends SizeValue
+  sealed trait smaller
+    extends StObject
+       with SizeValue
   @scala.inline
   def smaller: smaller = "smaller".asInstanceOf[smaller]
   
   @js.native
-  sealed trait smallest extends SizeValue
+  sealed trait smallest
+    extends StObject
+       with SizeValue
   @scala.inline
   def smallest: smallest = "smallest".asInstanceOf[smallest]
   
   @js.native
-  sealed trait soft extends ISchemeNames
+  sealed trait soft
+    extends StObject
+       with ISchemeNames
   @scala.inline
   def soft: soft = "soft".asInstanceOf[soft]
   
   @js.native
-  sealed trait strong extends ISchemeNames
+  sealed trait strong
+    extends StObject
+       with ISchemeNames
   @scala.inline
   def strong: strong = "strong".asInstanceOf[strong]
 }

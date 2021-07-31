@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ComponentSystemRegistry")
 @js.native
 class ComponentSystemRegistry ()
-  extends typings.playcanvas.pc.ComponentSystemRegistry
+  extends StObject
+     with typings.playcanvas.pc.ComponentSystemRegistry

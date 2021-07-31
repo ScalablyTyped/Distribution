@@ -10,9 +10,9 @@ A fully customizable, one-time password input component for the web built with R
 | ------------------ | :-------------: |
 | Full name          | react-otp-input |
 | Keywords           | - |
-| # releases         | 11 |
-| # dependents       | 8 |
-| # downloads        | 253961 |
+| # releases         | 14 |
+| # dependents       | 9 |
+| # downloads        | 492584 |
 | # stars            | 0 |
 
 ## Links

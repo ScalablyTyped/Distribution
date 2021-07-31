@@ -6,15 +6,15 @@ import typings.react.mod.AnchorHTMLAttributes
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkProps extends AnchorHTMLAttributes[HTMLAnchorElement] {
+trait LinkProps
+  extends StObject
+     with AnchorHTMLAttributes[HTMLAnchorElement] {
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
   
-  var to: LocationDescriptor[LocationState] = js.native
+  var to: LocationDescriptor[LocationState]
 }
 object LinkProps {
   

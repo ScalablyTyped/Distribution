@@ -7,7 +7,6 @@ import typings.std.Map
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object watchFileSystemMod {
@@ -16,81 +15,13 @@ object watchFileSystemMod {
   trait WatchFileSystem extends StObject {
     
     def watch(files: Iterable[String], dirs: Iterable[String], missing: Iterable[String]): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: PartialWatchFileSystemOpt
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: PartialWatchFileSystemOpt,
-      callback: js.UndefOr[scala.Nothing],
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: js.UndefOr[scala.Nothing],
-      options: PartialWatchFileSystemOpt,
-      callback: js.Function,
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
     def watch(files: Iterable[String], dirs: Iterable[String], missing: Iterable[String], startTime: Double): Watcher = js.native
     def watch(
       files: Iterable[String],
       dirs: Iterable[String],
       missing: Iterable[String],
       startTime: Double,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function
     ): Watcher = js.native
     def watch(
@@ -98,8 +29,17 @@ object watchFileSystemMod {
       dirs: Iterable[String],
       missing: Iterable[String],
       startTime: Double,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Double,
+      options: Unit,
+      callback: Unit,
       callbackUndelayed: js.Function
     ): Watcher = js.native
     def watch(
@@ -115,15 +55,6 @@ object watchFileSystemMod {
       missing: Iterable[String],
       startTime: Double,
       options: PartialWatchFileSystemOpt,
-      callback: js.UndefOr[scala.Nothing],
-      callbackUndelayed: js.Function
-    ): Watcher = js.native
-    def watch(
-      files: Iterable[String],
-      dirs: Iterable[String],
-      missing: Iterable[String],
-      startTime: Double,
-      options: PartialWatchFileSystemOpt,
       callback: js.Function
     ): Watcher = js.native
     def watch(
@@ -133,6 +64,74 @@ object watchFileSystemMod {
       startTime: Double,
       options: PartialWatchFileSystemOpt,
       callback: js.Function,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Double,
+      options: PartialWatchFileSystemOpt,
+      callback: Unit,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: Unit,
+      callback: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: Unit,
+      callback: js.Function,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: Unit,
+      callback: Unit,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: PartialWatchFileSystemOpt
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: PartialWatchFileSystemOpt,
+      callback: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: PartialWatchFileSystemOpt,
+      callback: js.Function,
+      callbackUndelayed: js.Function
+    ): Watcher = js.native
+    def watch(
+      files: Iterable[String],
+      dirs: Iterable[String],
+      missing: Iterable[String],
+      startTime: Unit,
+      options: PartialWatchFileSystemOpt,
+      callback: Unit,
       callbackUndelayed: js.Function
     ): Watcher = js.native
     
@@ -141,16 +140,15 @@ object watchFileSystemMod {
     var wfs: js.UndefOr[typings.forkTsCheckerWebpackPlugin.anon.Watcher] = js.native
   }
   
-  @js.native
   trait WatchFileSystemOptions extends StObject {
     
-    var aggregateTimeout: Double = js.native
+    var aggregateTimeout: Double
     
-    var followSymlinks: Boolean = js.native
+    var followSymlinks: Boolean
     
-    var ignored: String | RegExp | (js.Array[String | RegExp]) = js.native
+    var ignored: String | RegExp | (js.Array[String | RegExp])
     
-    var poll: Boolean = js.native
+    var poll: Boolean
   }
   object WatchFileSystemOptions {
     
@@ -215,16 +213,17 @@ object watchFileSystemMod {
     }
   }
   
-  @js.native
-  trait WatcherV4 extends Watcher {
+  trait WatcherV4
+    extends StObject
+       with Watcher {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def getContextTimestamps(): Map[String, Double] = js.native
+    def getContextTimestamps(): Map[String, Double]
     
-    def getFileTimestamps(): Map[String, Double] = js.native
+    def getFileTimestamps(): Map[String, Double]
     
-    def pause(): Unit = js.native
+    def pause(): Unit
   }
   object WatcherV4 {
     
@@ -256,16 +255,17 @@ object watchFileSystemMod {
     }
   }
   
-  @js.native
-  trait WatcherV5 extends Watcher {
+  trait WatcherV5
+    extends StObject
+       with Watcher {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def getContextTimeInfoEntries(): Map[String, Double] = js.native
+    def getContextTimeInfoEntries(): Map[String, Double]
     
-    def getFileTimeInfoEntries(): Map[String, Double] = js.native
+    def getFileTimeInfoEntries(): Map[String, Double]
     
-    def pause(): Unit = js.native
+    def pause(): Unit
   }
   object WatcherV5 {
     

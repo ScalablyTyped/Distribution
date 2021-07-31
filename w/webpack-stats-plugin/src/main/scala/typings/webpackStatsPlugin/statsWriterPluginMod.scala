@@ -4,43 +4,43 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statsWriterPluginMod {
   
   @JSImport("webpack-stats-plugin/lib/stats-writer-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends StatsWriterPlugin {
+  class ^ ()
+    extends StObject
+       with StatsWriterPlugin {
     def this(opts: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * fields of stats obj to keep
       * @default ['assetsByChunkName']
       */
-    var fields: js.UndefOr[Null | js.Array[String]] = js.native
+    var fields: js.UndefOr[Null | js.Array[String]] = js.undefined
     
     /**
       * output file name
       * @default 'stats.json'
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /**
       * stats config object or string preset
       * @default {}
       */
-    var stats: js.UndefOr[StringDictionary[js.Any] | String] = js.native
+    var stats: js.UndefOr[StringDictionary[js.Any] | String] = js.undefined
     
     /**
       * transform stats obj
       * @default JSON.stringify()
       */
-    var transform: js.UndefOr[TransformFunc] = js.native
+    var transform: js.UndefOr[TransformFunc] = js.undefined
   }
   object Options {
     
@@ -88,7 +88,9 @@ object statsWriterPluginMod {
   }
   
   @js.native
-  trait StatsWriterPlugin extends Plugin {
+  trait StatsWriterPlugin
+    extends StObject
+       with Plugin {
     
     def emitStats(
       curCompiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
@@ -108,11 +110,10 @@ object statsWriterPluginMod {
     String | js.Promise[String]
   ]
   
-  @js.native
   trait TransformOptions extends StObject {
     
     /** Current compiler instance */
-    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any = js.native
+    var compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.compilation.Compilation */ js.Any
   }
   object TransformOptions {
     

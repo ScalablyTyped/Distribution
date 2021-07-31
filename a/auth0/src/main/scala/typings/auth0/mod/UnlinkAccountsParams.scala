@@ -2,17 +2,15 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnlinkAccountsParams extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var provider: UnlinkAccountsParamsProvider = js.native
+  var provider: UnlinkAccountsParamsProvider
   
-  var user_id: String = js.native
+  var user_id: String
 }
 object UnlinkAccountsParams {
   

@@ -4,43 +4,41 @@ import typings.octokitTypes.anon.Avatarurl
 import typings.octokitTypes.anon.Read
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsCheckPermissionsForProjectLegacyResponseData extends StObject {
   
-  var body: String = js.native
+  var body: String
   
-  var columns_url: String = js.native
+  var columns_url: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var creator: Avatarurl = js.native
+  var creator: Avatarurl
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var organization_permission: String = js.native
+  var organization_permission: String
   
-  var owner_url: String = js.native
+  var owner_url: String
   
-  var permissions: Read = js.native
+  var permissions: Read
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var state: String = js.native
+  var state: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object TeamsCheckPermissionsForProjectLegacyResponseData {
   

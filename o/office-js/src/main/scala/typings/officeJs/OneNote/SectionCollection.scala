@@ -7,7 +7,6 @@ import typings.officeJs.OneNote.Interfaces.SectionCollectionData
 import typings.officeJs.OneNote.Interfaces.SectionCollectionLoadOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait SectionCollection extends ClientObject {
+trait SectionCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -81,7 +82,7 @@ trait SectionCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): SectionCollection = js.native
-  def load(option: SectionCollectionLoadOptions with CollectionLoadOptions): SectionCollection = js.native
+  def load(option: SectionCollectionLoadOptions & CollectionLoadOptions): SectionCollection = js.native
   def load(option: String): SectionCollection = js.native
   def load(option: js.Array[String]): SectionCollection = js.native
   def load(option: LoadOption): SectionCollection = js.native

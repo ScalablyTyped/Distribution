@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the client events involved with a key being pressed or released.
   */
-@js.native
-trait ASPxClientEditKeyEventArgs extends ASPxClientEventArgs {
+trait ASPxClientEditKeyEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a DHTML event object that relates to the processed event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object ASPxClientEditKeyEventArgs {
   

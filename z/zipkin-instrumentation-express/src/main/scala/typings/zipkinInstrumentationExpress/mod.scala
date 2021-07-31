@@ -5,19 +5,20 @@ import typings.zipkinInstrumentationExpress.anon.Port
 import typings.zipkinInstrumentationExpress.anon.RemoteServiceName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zipkin-instrumentation-express", "expressMiddleware")
+  @JSImport("zipkin-instrumentation-express", JSImport.Namespace)
   @js.native
-  def expressMiddleware(options: Port): Handler = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("zipkin-instrumentation-express", "wrapExpressHttpProxy")
-  @js.native
+  @scala.inline
+  def expressMiddleware(options: Port): Handler = ^.asInstanceOf[js.Dynamic].applyDynamic("expressMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[Handler]
+  
+  @scala.inline
   def wrapExpressHttpProxy(
     proxy: js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler],
     options: RemoteServiceName
-  ): js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler] = js.native
+  ): js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapExpressHttpProxy")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* host */ String, /* options */ js.UndefOr[js.Any], Handler]]
 }

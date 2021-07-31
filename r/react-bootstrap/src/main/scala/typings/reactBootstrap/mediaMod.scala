@@ -6,7 +6,6 @@ import typings.react.mod.HTMLProps
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaMod {
@@ -96,10 +95,11 @@ object mediaMod {
   trait Media
     extends Component[MediaProps, js.Object, js.Any]
   
-  @js.native
-  trait MediaProps extends HTMLProps[Media] {
+  trait MediaProps
+    extends StObject
+       with HTMLProps[Media] {
     
-    var componentClass: js.UndefOr[ReactType[_]] = js.native
+    var componentClass: js.UndefOr[ReactType[js.Any]] = js.undefined
   }
   object MediaProps {
     
@@ -113,7 +113,7 @@ object mediaMod {
     implicit class MediaPropsMutableBuilder[Self <: MediaProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComponentClass(value: ReactType[_]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
+      def setComponentClass(value: ReactType[js.Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentClassUndefined: Self = StObject.set(x, "componentClass", js.undefined)

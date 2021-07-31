@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,10 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * you already know the Authority and artifact to be verified) and intent
   * (which authority was this attestation intended to sign for).
   */
-@js.native
 trait SchemaAttestation extends StObject {
   
-  var pgpSignedAttestation: js.UndefOr[SchemaPgpSignedAttestation] = js.native
+  var pgpSignedAttestation: js.UndefOr[SchemaPgpSignedAttestation] = js.undefined
 }
 object SchemaAttestation {
   

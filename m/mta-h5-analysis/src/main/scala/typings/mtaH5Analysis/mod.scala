@@ -6,21 +6,21 @@ import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`0`
 import typings.mtaH5Analysis.mtaH5AnalysisNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mta-h5-analysis", "clickShare")
+  @JSImport("mta-h5-analysis", JSImport.Namespace)
   @js.native
-  def clickShare(channelId: String): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mta-h5-analysis", "clickStat")
-  @js.native
-  def clickStat(`type`: String): Unit = js.native
-  @JSImport("mta-h5-analysis", "clickStat")
-  @js.native
-  def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def clickShare(channelId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickShare")(channelId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def clickStat(`type`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def clickStat(`type`: String, params: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clickStat")(`type`.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object conf {
     
@@ -77,13 +77,11 @@ object mod {
     def userReport_=(x: `0` | `1`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("userReport")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("mta-h5-analysis", "init")
-  @js.native
-  def init(params: AutoReport): Unit = js.native
+  @scala.inline
+  def init(params: AutoReport): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(params.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mta-h5-analysis", "pgv")
-  @js.native
-  def pgv(): Unit = js.native
+  @scala.inline
+  def pgv(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pgv")().asInstanceOf[Unit]
   
   @JSImport("mta-h5-analysis", "version")
   @js.native

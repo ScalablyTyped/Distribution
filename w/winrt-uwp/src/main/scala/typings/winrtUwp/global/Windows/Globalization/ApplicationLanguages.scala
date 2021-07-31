@@ -3,14 +3,14 @@ package typings.winrtUwp.global.Windows.Globalization
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the language-related preferences that the app can use and maintain. */
 @JSGlobal("Windows.Globalization.ApplicationLanguages")
 @js.native
 abstract class ApplicationLanguages ()
-  extends typings.winrtUwp.Windows.Globalization.ApplicationLanguages
+  extends StObject
+     with typings.winrtUwp.Windows.Globalization.ApplicationLanguages
 object ApplicationLanguages {
   
   @JSGlobal("Windows.Globalization.ApplicationLanguages")

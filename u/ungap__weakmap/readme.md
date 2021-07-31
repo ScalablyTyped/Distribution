@@ -10,9 +10,9 @@ An essential WeakMap polyfill for legacy browsers.
 | ------------------ | :-------------: |
 | Full name          | @ungap/weakmap |
 | Keywords           | WeakMap, polyfill, legacy, ungap |
-| # releases         | 9 |
+| # releases         | 3 |
 | # dependents       | 12 |
-| # downloads        | 89635 |
+| # downloads        | 83782 |
 | # stars            | 0 |
 
 ## Links

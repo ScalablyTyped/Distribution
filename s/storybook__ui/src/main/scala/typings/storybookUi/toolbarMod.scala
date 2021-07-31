@@ -7,6 +7,8 @@ import typings.react.mod.PropsWithChildren
 import typings.std.Pick
 import typings.std.Record
 import typings.storybookAddons.distMod.Addon
+import typings.storybookApi.addonsMod.Collection
+import typings.storybookApi.addonsMod.Types_
 import typings.storybookApi.mod.API
 import typings.storybookApi.storiesMod.Group
 import typings.storybookApi.storiesMod.Story
@@ -18,20 +20,23 @@ import typings.storybookUi.anon.Right
 import typings.storybookUi.anon.Shown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toolbarMod {
   
+  @JSImport("@storybook/ui/dist/components/preview/toolbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@storybook/ui/dist/components/preview/toolbar", "ToolRes")
   @js.native
-  val ToolRes: FunctionComponent[ToolData with RenderData] = js.native
+  val ToolRes: FunctionComponent[ToolData & RenderData] = js.native
   
   @JSImport("@storybook/ui/dist/components/preview/toolbar", "Toolbar")
   @js.native
   val Toolbar: StyledComponent[
-    PropsWithChildren[Shown with (Record[String, _])], 
-    Pick[PropsWithChildren[Shown with (Record[String, _])], String], 
+    PropsWithChildren[Shown & (Record[String, js.Any])], 
+    Pick[PropsWithChildren[Shown & (Record[String, js.Any])], String], 
     Theme
   ] = js.native
   
@@ -43,9 +48,8 @@ object toolbarMod {
   @js.native
   val Tools: NamedExoticComponent[List] = js.native
   
-  @JSImport("@storybook/ui/dist/components/preview/toolbar", "createTabsTool")
-  @js.native
-  def createTabsTool(tabs: js.Array[Addon]): Addon = js.native
+  @scala.inline
+  def createTabsTool(tabs: js.Array[Addon]): Addon = ^.asInstanceOf[js.Dynamic].applyDynamic("createTabsTool")(tabs.asInstanceOf[js.Any]).asInstanceOf[Addon]
   
   @JSImport("@storybook/ui/dist/components/preview/toolbar", "defaultTools")
   @js.native
@@ -55,41 +59,33 @@ object toolbarMod {
   @js.native
   val defaultToolsExtra: js.Array[Addon] = js.native
   
-  @JSImport("@storybook/ui/dist/components/preview/toolbar", "filterTools")
-  @js.native
+  @scala.inline
   def filterTools(
     tools: js.Array[Addon],
     toolsExtra: js.Array[Addon],
     tabs: js.Array[Addon],
     hasViewModeStoryLocationPath: Location
-  ): Right = js.native
+  ): Right = (^.asInstanceOf[js.Dynamic].applyDynamic("filterTools")(tools.asInstanceOf[js.Any], toolsExtra.asInstanceOf[js.Any], tabs.asInstanceOf[js.Any], hasViewModeStoryLocationPath.asInstanceOf[js.Any])).asInstanceOf[Right]
   
   @JSImport("@storybook/ui/dist/components/preview/toolbar", "fullScreenTool")
   @js.native
   val fullScreenTool: Addon = js.native
   
-  @JSImport("@storybook/ui/dist/components/preview/toolbar", "getToolsExtra")
-  @js.native
-  def getToolsExtra_getElements(
-    getFn: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.API['getElements'] */ js.Any
-  ): js.Array[Addon] = js.native
+  @scala.inline
+  def getTools(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTools")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
   
-  @JSImport("@storybook/ui/dist/components/preview/toolbar", "getTools")
-  @js.native
-  def getTools_getElements(
-    getFn: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.API['getElements'] */ js.Any
-  ): js.Array[Addon] = js.native
+  @scala.inline
+  def getToolsExtra(getFn: js.Function1[/* type */ Types_, Collection[js.Any]]): js.Array[Addon] = ^.asInstanceOf[js.Dynamic].applyDynamic("getToolsExtra")(getFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[Addon]]
   
-  @js.native
   trait ToolData extends StObject {
     
-    var api: API = js.native
+    var api: API
     
-    var isShown: Boolean = js.native
+    var isShown: Boolean
     
-    var story: Story | Group = js.native
+    var story: Story | Group
     
-    var tabs: js.Array[Addon] = js.native
+    var tabs: js.Array[Addon]
   }
   object ToolData {
     

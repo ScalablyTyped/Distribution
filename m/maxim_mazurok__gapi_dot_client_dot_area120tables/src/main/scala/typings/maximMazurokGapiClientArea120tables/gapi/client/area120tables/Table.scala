@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /** List of columns in this table. Order of columns matches the display order. */
-  var columns: js.UndefOr[js.Array[ColumnDescription]] = js.native
+  var columns: js.UndefOr[js.Array[ColumnDescription]] = js.undefined
   
   /** The human readable title of the table. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** The resource name of the table. Table names have the form `tables/{table}`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Table {
   

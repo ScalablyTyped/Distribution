@@ -2,25 +2,23 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionSelectorSettings extends StObject {
   
-  var AncillarySourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.AncillarySourceSettings] = js.native
+  var AncillarySourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.AncillarySourceSettings] = js.undefined
   
-  var AribSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.AribSourceSettings] = js.native
+  var AribSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.AribSourceSettings] = js.undefined
   
-  var DvbSubSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.DvbSubSourceSettings] = js.native
+  var DvbSubSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.DvbSubSourceSettings] = js.undefined
   
-  var EmbeddedSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedSourceSettings] = js.native
+  var EmbeddedSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.EmbeddedSourceSettings] = js.undefined
   
-  var Scte20SourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte20SourceSettings] = js.native
+  var Scte20SourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte20SourceSettings] = js.undefined
   
-  var Scte27SourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte27SourceSettings] = js.native
+  var Scte27SourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.Scte27SourceSettings] = js.undefined
   
-  var TeletextSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.TeletextSourceSettings] = js.native
+  var TeletextSourceSettings: js.UndefOr[typings.awsSdk.medialiveMod.TeletextSourceSettings] = js.undefined
 }
 object CaptionSelectorSettings {
   

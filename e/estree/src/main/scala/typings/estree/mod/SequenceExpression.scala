@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceExpression
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Expression {
   
-  var expressions: js.Array[Expression] = js.native
+  var expressions: js.Array[Expression]
   
   @JSName("type")
-  var type_SequenceExpression: typings.estree.estreeStrings.SequenceExpression = js.native
+  var type_SequenceExpression: typings.estree.estreeStrings.SequenceExpression
 }
 object SequenceExpression {
   
   @scala.inline
-  def apply(expressions: js.Array[Expression], `type`: typings.estree.estreeStrings.SequenceExpression): SequenceExpression = {
+  def apply(expressions: js.Array[Expression]): SequenceExpression = {
     val __obj = js.Dynamic.literal(expressions = expressions.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SequenceExpression")
     __obj.asInstanceOf[SequenceExpression]
   }
   

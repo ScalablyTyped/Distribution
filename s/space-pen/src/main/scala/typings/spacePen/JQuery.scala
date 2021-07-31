@@ -2,7 +2,6 @@ package typings.spacePen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://atom.github.io/space-pen/
@@ -75,5 +74,5 @@ trait JQuery extends StObject {
   
   def view(): js.Any = js.native
   
-  def views(): js.Array[_] = js.native
+  def views(): js.Array[js.Any] = js.native
 }

@@ -2,39 +2,37 @@ package typings.ytSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseOptions extends StObject {
   
   /**
     * The category (for example `'music'`.)
     * @default ''
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * The location.
     * @default 'US'
     */
-  var gl: js.UndefOr[String] = js.native
+  var gl: js.UndefOr[String] = js.undefined
   
   /**
     * The language.
     * @default 'en'
     */
-  var hl: js.UndefOr[String] = js.native
+  var hl: js.UndefOr[String] = js.undefined
   
-  var pageEnd: js.UndefOr[Double] = js.native
+  var pageEnd: js.UndefOr[Double] = js.undefined
   
-  var pageStart: js.UndefOr[Double] = js.native
+  var pageStart: js.UndefOr[Double] = js.undefined
   
-  var pages: js.UndefOr[Double] = js.native
+  var pages: js.UndefOr[Double] = js.undefined
   
-  var sp: js.UndefOr[String] = js.native
+  var sp: js.UndefOr[String] = js.undefined
   
-  var userAgent: js.UndefOr[String] = js.native
+  var userAgent: js.UndefOr[String] = js.undefined
 }
 object BaseOptions {
   

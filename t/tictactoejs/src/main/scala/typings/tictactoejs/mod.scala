@@ -6,7 +6,6 @@ import typings.tictactoejs.tictactoejsStrings.`in progress`
 import typings.tictactoejs.tictactoejsStrings.draw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterStatusNatStatus extends StObject {
   
   /** A list of IPs auto-allocated for NAT. Example: ["1.1.1.1", "129.2.16.89"] */
-  var autoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var autoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of IPs auto-allocated for NAT that are in drain mode. Example: ["1.1.1.1", "179.12.26.133"]. */
-  var drainAutoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var drainAutoAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of IPs user-allocated for NAT that are in drain mode. Example: ["1.1.1.1", "179.12.26.133"]. */
-  var drainUserAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var drainUserAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The number of extra IPs to allocate. This will be greater than 0 only if user-specified IPs are NOT enough to allow all configured VMs to use NAT. This value is meaningful only when
     * auto-allocation of NAT IPs is *not* used.
     */
-  var minExtraNatIpsNeeded: js.UndefOr[Double] = js.native
+  var minExtraNatIpsNeeded: js.UndefOr[Double] = js.undefined
   
   /** Unique name of this NAT. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Number of VM endpoints (i.e., Nics) that can use NAT. */
-  var numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.native
+  var numVmEndpointsWithNatMappings: js.UndefOr[Double] = js.undefined
   
   /** A list of fully qualified URLs of reserved IP address resources. */
-  var userAllocatedNatIpResources: js.UndefOr[js.Array[String]] = js.native
+  var userAllocatedNatIpResources: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A list of IPs user-allocated for NAT. They will be raw IP strings like "179.12.26.133". */
-  var userAllocatedNatIps: js.UndefOr[js.Array[String]] = js.native
+  var userAllocatedNatIps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RouterStatusNatStatus {
   

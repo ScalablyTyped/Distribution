@@ -2,23 +2,21 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserData extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var date: String = js.native
+  var date: String
   
-  var ip: String = js.native
+  var ip: String
   
-  var time: String = js.native
+  var time: String
   
-  var tty: String = js.native
+  var tty: String
   
-  var user: String = js.native
+  var user: String
 }
 object UserData {
   

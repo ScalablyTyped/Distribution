@@ -4,7 +4,6 @@ import typings.reactMdAutocomplete.typesMod.AutoCompletion
 import typings.reactMdAutocomplete.typesMod.PreconfiguredFilterFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactMdAutocompleteStrings {
@@ -40,12 +39,16 @@ object reactMdAutocompleteStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait both extends AutoCompletion
+  sealed trait both
+    extends StObject
+       with AutoCompletion
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait `case-insensitive` extends PreconfiguredFilterFunction
+  sealed trait `case-insensitive`
+    extends StObject
+       with PreconfiguredFilterFunction
   @scala.inline
   def `case-insensitive`: `case-insensitive` = "case-insensitive".asInstanceOf[`case-insensitive`]
   
@@ -95,7 +98,9 @@ object reactMdAutocompleteStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait fuzzy extends PreconfiguredFilterFunction
+  sealed trait fuzzy
+    extends StObject
+       with PreconfiguredFilterFunction
   @scala.inline
   def fuzzy: fuzzy = "fuzzy".asInstanceOf[fuzzy]
   
@@ -125,7 +130,9 @@ object reactMdAutocompleteStrings {
   def inherit: inherit = "inherit".asInstanceOf[inherit]
   
   @js.native
-  sealed trait `inline` extends AutoCompletion
+  sealed trait `inline`
+    extends StObject
+       with AutoCompletion
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
@@ -135,7 +142,9 @@ object reactMdAutocompleteStrings {
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait list extends AutoCompletion
+  sealed trait list
+    extends StObject
+       with AutoCompletion
   @scala.inline
   def list: list = "list".asInstanceOf[list]
   
@@ -176,7 +185,8 @@ object reactMdAutocompleteStrings {
   
   @js.native
   sealed trait none
-    extends AutoCompletion
+    extends StObject
+       with AutoCompletion
        with PreconfiguredFilterFunction
   @scala.inline
   def none: none = "none".asInstanceOf[none]

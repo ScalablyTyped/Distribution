@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIdentitiesResponse extends StObject {
   
   /**
     * An array of UnprocessedIdentityId objects, each of which contains an ErrorCode and IdentityId.
     */
-  var UnprocessedIdentityIds: js.UndefOr[UnprocessedIdentityIdList] = js.native
+  var UnprocessedIdentityIds: js.UndefOr[UnprocessedIdentityIdList] = js.undefined
 }
 object DeleteIdentitiesResponse {
   

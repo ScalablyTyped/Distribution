@@ -4,67 +4,67 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonMenuItemConfig extends Object {
+trait ButtonMenuItemConfig
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to automatically close the menu's item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var autoCloseMenu: js.UndefOr[Boolean] = js.native
+  var autoCloseMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that executes on the ButtonMenuItem's `click` event.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var clickFunction: js.UndefOr[ButtonMenuItemClickFunction] = js.native
+  var clickFunction: js.UndefOr[ButtonMenuItemClickFunction] = js.undefined
   
   /**
     * Adds a CSS class to the menu button's DOM node.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * An array of individual menu items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var items: js.UndefOr[js.Array[ButtonMenuItem]] = js.native
+  var items: js.UndefOr[js.Array[ButtonMenuItem]] = js.undefined
   
   /**
     * The label of the menu item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the menu content is visible.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var open: js.UndefOr[Boolean] = js.native
+  var open: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the menu item is selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether a toggled state should be applied to individual menu items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable.html#ButtonMenuItemConfig)
     */
-  var selectionEnabled: js.UndefOr[Boolean] = js.native
+  var selectionEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonMenuItemConfig {
   

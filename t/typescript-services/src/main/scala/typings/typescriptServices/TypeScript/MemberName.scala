@@ -2,21 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberName extends StObject {
   
-  def isArray(): Boolean = js.native
+  def isArray(): Boolean
   
-  def isMarker(): Boolean = js.native
+  def isMarker(): Boolean
   
-  def isString(): Boolean = js.native
+  def isString(): Boolean
   
-  var prefix: String = js.native
+  var prefix: String
   
-  var suffix: String = js.native
+  var suffix: String
 }
 object MemberName {
   

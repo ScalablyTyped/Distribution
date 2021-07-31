@@ -16,12 +16,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.svgz
 import typings.arcgisJsApi.arcgisJsApiStrings.tiff
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TileInfo
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

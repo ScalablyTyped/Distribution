@@ -5,17 +5,15 @@ import typings.storybookUi.storybookUiStrings.bottom
 import typings.storybookUi.storybookUiStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: bottom | right = js.native
+  var align: bottom | right
   
-  var hidden: Boolean = js.native
+  var hidden: Boolean
   
-  var position: CSSProperties = js.native
+  var position: CSSProperties
 }
 object Align {
   

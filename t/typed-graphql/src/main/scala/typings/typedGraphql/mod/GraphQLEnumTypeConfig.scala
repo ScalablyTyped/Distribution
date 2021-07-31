@@ -2,17 +2,15 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLEnumTypeConfig extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var values: GraphQLEnumValueConfigMap = js.native
+  var values: GraphQLEnumValueConfigMap
 }
 object GraphQLEnumTypeConfig {
   

@@ -2,14 +2,14 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileUpload extends BulkUpload[FileUpload] {
+trait FileUpload
+  extends StObject
+     with BulkUpload[FileUpload] {
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
 }
 object FileUpload {
   

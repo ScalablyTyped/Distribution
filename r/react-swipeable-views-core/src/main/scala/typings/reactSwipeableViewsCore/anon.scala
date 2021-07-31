@@ -2,17 +2,15 @@ package typings.reactSwipeableViewsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var startX: Double = js.native
+    var startX: Double
   }
   object Index {
     

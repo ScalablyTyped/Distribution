@@ -2,29 +2,27 @@ package typings.googleapis.youtubeAnalyticsV2Mod.youtubeAnalyticsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The description of a column of the result table.
   */
-@js.native
 trait SchemaResultTableColumnHeader extends StObject {
   
   /**
     * The type of the column (`DIMENSION` or `METRIC`).
     */
-  var columnType: js.UndefOr[String] = js.native
+  var columnType: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the data in the column (`STRING`, `INTEGER`, `FLOAT`, etc.).
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the dimension or metric.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaResultTableColumnHeader {
   

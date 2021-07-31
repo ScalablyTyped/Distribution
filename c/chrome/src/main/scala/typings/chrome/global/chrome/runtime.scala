@@ -18,7 +18,6 @@ import typings.chrome.chrome.runtime.UpdateCheckDetails
 import typings.filesystem.DirectoryEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -34,42 +33,32 @@ object runtime {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.runtime.connect")
-  @js.native
-  def connect(): Port = js.native
-  @JSGlobal("chrome.runtime.connect")
-  @js.native
-  def connect(connectInfo: ConnectInfo): Port = js.native
-  @JSGlobal("chrome.runtime.connect")
-  @js.native
-  def connect(extensionId: String): Port = js.native
-  @JSGlobal("chrome.runtime.connect")
-  @js.native
-  def connect(extensionId: String, connectInfo: ConnectInfo): Port = js.native
+  @scala.inline
+  def connect(): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[Port]
+  @scala.inline
+  def connect(connectInfo: ConnectInfo): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connectInfo.asInstanceOf[js.Any]).asInstanceOf[Port]
+  @scala.inline
+  def connect(extensionId: String): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(extensionId.asInstanceOf[js.Any]).asInstanceOf[Port]
+  @scala.inline
+  def connect(extensionId: String, connectInfo: ConnectInfo): Port = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(extensionId.asInstanceOf[js.Any], connectInfo.asInstanceOf[js.Any])).asInstanceOf[Port]
   
-  @JSGlobal("chrome.runtime.connectNative")
-  @js.native
-  def connectNative(application: String): Port = js.native
+  @scala.inline
+  def connectNative(application: String): Port = ^.asInstanceOf[js.Dynamic].applyDynamic("connectNative")(application.asInstanceOf[js.Any]).asInstanceOf[Port]
   
-  @JSGlobal("chrome.runtime.getBackgroundPage")
-  @js.native
-  def getBackgroundPage(callback: js.Function1[/* backgroundPage */ js.UndefOr[Window], Unit]): Unit = js.native
+  @scala.inline
+  def getBackgroundPage(callback: js.Function1[/* backgroundPage */ js.UndefOr[Window], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.getManifest")
-  @js.native
-  def getManifest(): Manifest = js.native
+  @scala.inline
+  def getManifest(): Manifest = ^.asInstanceOf[js.Dynamic].applyDynamic("getManifest")().asInstanceOf[Manifest]
   
-  @JSGlobal("chrome.runtime.getPackageDirectoryEntry")
-  @js.native
-  def getPackageDirectoryEntry(callback: js.Function1[/* directoryEntry */ DirectoryEntry, Unit]): Unit = js.native
+  @scala.inline
+  def getPackageDirectoryEntry(callback: js.Function1[/* directoryEntry */ DirectoryEntry, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageDirectoryEntry")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.getPlatformInfo")
-  @js.native
-  def getPlatformInfo(callback: js.Function1[/* platformInfo */ PlatformInfo, Unit]): Unit = js.native
+  @scala.inline
+  def getPlatformInfo(callback: js.Function1[/* platformInfo */ PlatformInfo, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatformInfo")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.getURL")
-  @js.native
-  def getURL(path: String): String = js.native
+  @scala.inline
+  def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSGlobal("chrome.runtime.id")
   @js.native
@@ -152,80 +141,63 @@ object runtime {
   @scala.inline
   def onUpdateAvailable_=(x: RuntimeUpdateAvailableEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onUpdateAvailable")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.runtime.openOptionsPage")
-  @js.native
-  def openOptionsPage(): Unit = js.native
-  @JSGlobal("chrome.runtime.openOptionsPage")
-  @js.native
-  def openOptionsPage(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def openOptionsPage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openOptionsPage")().asInstanceOf[Unit]
+  @scala.inline
+  def openOptionsPage(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openOptionsPage")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.reload")
-  @js.native
-  def reload(): Unit = js.native
+  @scala.inline
+  def reload(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.requestUpdateCheck")
-  @js.native
+  @scala.inline
   def requestUpdateCheck(
     callback: js.Function2[
       /* status */ RequestUpdateCheckStatus, 
       /* details */ js.UndefOr[UpdateCheckDetails], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestUpdateCheck")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.restart")
-  @js.native
-  def restart(): Unit = js.native
+  @scala.inline
+  def restart(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restart")().asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(extensionId: String, message: js.Any): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(extensionId: String, message: js.Any, options: MessageOptions): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
+  @scala.inline
+  def sendMessage(extensionId: String, message: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(extensionId: String, message: js.Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendMessage(
     extensionId: String,
     message: js.Any,
     options: MessageOptions,
     responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(extensionId: String, message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(message: js.Any): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(message: js.Any, options: MessageOptions): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(extensionId: String, message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(extensionId.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(message: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(message: js.Any, options: MessageOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendMessage(
     message: js.Any,
     options: MessageOptions,
     responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
-  @JSGlobal("chrome.runtime.sendMessage")
-  @js.native
-  def sendMessage(message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendMessage(message: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendMessage")(message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.sendNativeMessage")
-  @js.native
-  def sendNativeMessage(application: String, message: js.Object): Unit = js.native
-  @JSGlobal("chrome.runtime.sendNativeMessage")
-  @js.native
+  @scala.inline
+  def sendNativeMessage(application: String, message: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def sendNativeMessage(
     application: String,
     message: js.Object,
     responseCallback: js.Function1[/* response */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendNativeMessage")(application.asInstanceOf[js.Any], message.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.runtime.setUninstallURL")
-  @js.native
-  def setUninstallURL(url: String): Unit = js.native
-  @JSGlobal("chrome.runtime.setUninstallURL")
-  @js.native
-  def setUninstallURL(url: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setUninstallURL(url: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUninstallURL")(url.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setUninstallURL(url: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUninstallURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/vault/v1", "vault_v1.Resource$Matters")
@@ -29,7 +28,7 @@ class ResourceMatters protected () extends StObject {
     */
   def addPermissions(): GaxiosPromise[SchemaMatterPermission] = js.native
   def addPermissions(callback: BodyResponseCallback[SchemaMatterPermission]): Unit = js.native
-  def addPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatterPermission] = js.native
+  def addPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatterPermission] = js.native
   def addPermissions(params: ParamsResourceMattersAddpermissions): GaxiosPromise[SchemaMatterPermission] = js.native
   def addPermissions(
     params: ParamsResourceMattersAddpermissions,
@@ -62,7 +61,7 @@ class ResourceMatters protected () extends StObject {
     */
   def close(): GaxiosPromise[SchemaCloseMatterResponse] = js.native
   def close(callback: BodyResponseCallback[SchemaCloseMatterResponse]): Unit = js.native
-  def close(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCloseMatterResponse] = js.native
+  def close(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCloseMatterResponse] = js.native
   def close(params: ParamsResourceMattersClose): GaxiosPromise[SchemaCloseMatterResponse] = js.native
   def close(params: ParamsResourceMattersClose, callback: BodyResponseCallback[SchemaCloseMatterResponse]): Unit = js.native
   def close(
@@ -95,7 +94,7 @@ class ResourceMatters protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaMatter] = js.native
   def create(callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
   def create(params: ParamsResourceMattersCreate): GaxiosPromise[SchemaMatter] = js.native
   def create(params: ParamsResourceMattersCreate, callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
   def create(
@@ -124,7 +123,7 @@ class ResourceMatters protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaMatter] = js.native
   def delete(callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
   def delete(params: ParamsResourceMattersDelete): GaxiosPromise[SchemaMatter] = js.native
   def delete(params: ParamsResourceMattersDelete, callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
   def delete(
@@ -156,7 +155,7 @@ class ResourceMatters protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMatter] = js.native
   def get(callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
   def get(params: ParamsResourceMattersGet): GaxiosPromise[SchemaMatter] = js.native
   def get(params: ParamsResourceMattersGet, callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
   def get(
@@ -190,7 +189,7 @@ class ResourceMatters protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListMattersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListMattersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListMattersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListMattersResponse] = js.native
   def list(params: ParamsResourceMattersList): GaxiosPromise[SchemaListMattersResponse] = js.native
   def list(params: ParamsResourceMattersList, callback: BodyResponseCallback[SchemaListMattersResponse]): Unit = js.native
   def list(
@@ -220,7 +219,7 @@ class ResourceMatters protected () extends StObject {
     */
   def removePermissions(): GaxiosPromise[SchemaEmpty] = js.native
   def removePermissions(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def removePermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def removePermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def removePermissions(params: ParamsResourceMattersRemovepermissions): GaxiosPromise[SchemaEmpty] = js.native
   def removePermissions(params: ParamsResourceMattersRemovepermissions, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def removePermissions(
@@ -250,7 +249,7 @@ class ResourceMatters protected () extends StObject {
     */
   def reopen(): GaxiosPromise[SchemaReopenMatterResponse] = js.native
   def reopen(callback: BodyResponseCallback[SchemaReopenMatterResponse]): Unit = js.native
-  def reopen(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaReopenMatterResponse] = js.native
+  def reopen(params: Unit, options: MethodOptions): GaxiosPromise[SchemaReopenMatterResponse] = js.native
   def reopen(params: ParamsResourceMattersReopen): GaxiosPromise[SchemaReopenMatterResponse] = js.native
   def reopen(params: ParamsResourceMattersReopen, callback: BodyResponseCallback[SchemaReopenMatterResponse]): Unit = js.native
   def reopen(
@@ -282,7 +281,7 @@ class ResourceMatters protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaMatter] = js.native
   def undelete(callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
   def undelete(params: ParamsResourceMattersUndelete): GaxiosPromise[SchemaMatter] = js.native
   def undelete(params: ParamsResourceMattersUndelete, callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
   def undelete(
@@ -314,7 +313,7 @@ class ResourceMatters protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaMatter] = js.native
   def update(callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMatter] = js.native
   def update(params: ParamsResourceMattersUpdate): GaxiosPromise[SchemaMatter] = js.native
   def update(params: ParamsResourceMattersUpdate, callback: BodyResponseCallback[SchemaMatter]): Unit = js.native
   def update(

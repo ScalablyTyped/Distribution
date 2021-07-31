@@ -5,37 +5,38 @@ import typings.ffmpegConcat.ffmpegConcatStrings.png
 import typings.ffmpegConcat.ffmpegConcatStrings.raw
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(concatOptions: ConcatOptions): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].apply(concatOptions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("ffmpeg-concat", JSImport.Namespace)
   @js.native
-  def apply(concatOptions: ConcatOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait ConcatOptions extends StObject {
     
-    var audio: js.UndefOr[String] = js.native
+    var audio: js.UndefOr[String] = js.undefined
     
-    var cleanupFrames: js.UndefOr[Boolean] = js.native
+    var cleanupFrames: js.UndefOr[Boolean] = js.undefined
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var frameFormat: js.UndefOr[jpg | png | raw] = js.native
+    var frameFormat: js.UndefOr[jpg | png | raw] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* stdout */ String, Unit]] = js.native
+    var log: js.UndefOr[js.Function1[/* stdout */ String, Unit]] = js.undefined
     
-    var output: String = js.native
+    var output: String
     
-    var tempDir: js.UndefOr[String] = js.native
+    var tempDir: js.UndefOr[String] = js.undefined
     
-    var transition: js.UndefOr[Transition] = js.native
+    var transition: js.UndefOr[Transition] = js.undefined
     
-    var transitions: js.UndefOr[js.Array[Transition]] = js.native
+    var transitions: js.UndefOr[js.Array[Transition]] = js.undefined
     
-    var videos: js.Array[String] = js.native
+    var videos: js.Array[String]
   }
   object ConcatOptions {
     
@@ -110,14 +111,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Transition extends StObject {
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object Transition {
     

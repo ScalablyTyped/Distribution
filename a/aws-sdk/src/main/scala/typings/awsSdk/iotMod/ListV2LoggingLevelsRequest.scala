@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListV2LoggingLevelsRequest extends StObject {
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[SkyfallMaxResults] = js.native
+  var maxResults: js.UndefOr[SkyfallMaxResults] = js.undefined
   
   /**
     * To retrieve the next set of results, the nextToken value from a previous response; otherwise null to receive the first set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The type of resource for which you are configuring logging. Must be THING_Group.
     */
-  var targetType: js.UndefOr[LogTargetType] = js.native
+  var targetType: js.UndefOr[LogTargetType] = js.undefined
 }
 object ListV2LoggingLevelsRequest {
   

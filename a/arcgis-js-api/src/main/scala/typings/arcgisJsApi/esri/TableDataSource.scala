@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableDataSource extends Object {
+trait TableDataSource
+  extends StObject
+     with Object {
   
   /**
     * The name of the table in the registered workspace.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
     */
-  var dataSourceName: String = js.native
+  var dataSourceName: String
   
   /**
     * References the geodatabase version if multiple versions exist in the geodatabase.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
     */
-  var gdbVersion: String = js.native
+  var gdbVersion: String
   
   /**
     * This value is always `table`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The workspace where the table resides as defined in the ArcGIS Server Manager.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#TableDataSource)
     */
-  var workspaceId: String = js.native
+  var workspaceId: String
 }
 object TableDataSource {
   

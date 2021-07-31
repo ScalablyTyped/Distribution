@@ -3,7 +3,6 @@ package typings.jsonStreamStringify
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,43 +11,46 @@ object mod {
   @js.native
   class ^ protected () extends JsonStreamStringify {
     def this(value: js.Any) = this()
-    def this(value: js.Any, replacer: js.Array[_]) = this()
-    def this(value: js.Any, replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _]) = this()
-    def this(value: js.Any, replacer: js.UndefOr[scala.Nothing], spaces: String) = this()
-    def this(value: js.Any, replacer: js.UndefOr[scala.Nothing], spaces: Double) = this()
-    def this(value: js.Any, replacer: js.Array[_], spaces: String) = this()
-    def this(value: js.Any, replacer: js.Array[_], spaces: Double) = this()
-    def this(value: js.Any, replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _], spaces: String) = this()
-    def this(value: js.Any, replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _], spaces: Double) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any]) = this()
+    def this(value: js.Any, replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any], spaces: String) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any], spaces: Double) = this()
     def this(
       value: js.Any,
-      replacer: js.UndefOr[scala.Nothing],
-      spaces: js.UndefOr[scala.Nothing],
-      cycle: Boolean
-    ) = this()
-    def this(value: js.Any, replacer: js.UndefOr[scala.Nothing], spaces: String, cycle: Boolean) = this()
-    def this(value: js.Any, replacer: js.UndefOr[scala.Nothing], spaces: Double, cycle: Boolean) = this()
-    def this(value: js.Any, replacer: js.Array[_], spaces: js.UndefOr[scala.Nothing], cycle: Boolean) = this()
-    def this(value: js.Any, replacer: js.Array[_], spaces: String, cycle: Boolean) = this()
-    def this(value: js.Any, replacer: js.Array[_], spaces: Double, cycle: Boolean) = this()
-    def this(
-      value: js.Any,
-      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _],
-      spaces: js.UndefOr[scala.Nothing],
-      cycle: Boolean
+      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any],
+      spaces: String
     ) = this()
     def this(
       value: js.Any,
-      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any],
+      spaces: Double
+    ) = this()
+    def this(value: js.Any, replacer: Unit, spaces: String) = this()
+    def this(value: js.Any, replacer: Unit, spaces: Double) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any], spaces: String, cycle: Boolean) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any], spaces: Double, cycle: Boolean) = this()
+    def this(value: js.Any, replacer: js.Array[js.Any], spaces: Unit, cycle: Boolean) = this()
+    def this(
+      value: js.Any,
+      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any],
       spaces: String,
       cycle: Boolean
     ) = this()
     def this(
       value: js.Any,
-      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, _],
+      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any],
       spaces: Double,
       cycle: Boolean
     ) = this()
+    def this(
+      value: js.Any,
+      replacer: js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any],
+      spaces: Unit,
+      cycle: Boolean
+    ) = this()
+    def this(value: js.Any, replacer: Unit, spaces: String, cycle: Boolean) = this()
+    def this(value: js.Any, replacer: Unit, spaces: Double, cycle: Boolean) = this()
+    def this(value: js.Any, replacer: Unit, spaces: Unit, cycle: Boolean) = this()
   }
   
   @js.native

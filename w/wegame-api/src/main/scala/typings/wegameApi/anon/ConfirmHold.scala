@@ -7,36 +7,34 @@ import typings.wegameApi.wegameApiStrings.search
 import typings.wegameApi.wegameApiStrings.send
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmHold extends StObject {
   
   /**
     * 当点击完成时键盘是否收起
     */
-  var confirmHold: js.UndefOr[Boolean] = js.native
+  var confirmHold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 键盘右下角 confirm 按钮的类型，只影响按钮的文本内容
     */
-  var confirmType: js.UndefOr[done | next | search | go | send] = js.native
+  var confirmType: js.UndefOr[done | next | search | go | send] = js.undefined
   
   /**
     * 键盘输入框显示的默认值
     */
-  var defaultValue: String = js.native
+  var defaultValue: String
   
   /**
     * 键盘中文本的最大长度
     */
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   /**
     * 是否为多行输入
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
 }
 object ConfirmHold {
   

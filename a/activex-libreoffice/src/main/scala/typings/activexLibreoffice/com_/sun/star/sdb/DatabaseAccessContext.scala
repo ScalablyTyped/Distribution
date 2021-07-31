@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XLocalizedAliases
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,9 +26,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see com.sun.star.util.XLocalizedAliases
   */
-@js.native
 trait DatabaseAccessContext
-  extends XEnumerationAccess
+  extends StObject
+     with XEnumerationAccess
      with XNameAccess
      with XLocalizedAliases
      with XLocalizable

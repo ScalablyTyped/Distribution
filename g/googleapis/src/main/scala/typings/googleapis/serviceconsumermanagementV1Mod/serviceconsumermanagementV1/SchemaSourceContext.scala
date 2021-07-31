@@ -2,14 +2,12 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * `SourceContext` represents information about the source of a protobuf
   * element, like the file in which it is defined.
   */
-@js.native
 trait SchemaSourceContext extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaSourceContext extends StObject {
     * protobuf element.  For example:
     * `&quot;google/protobuf/source_context.proto&quot;`.
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceContext {
   

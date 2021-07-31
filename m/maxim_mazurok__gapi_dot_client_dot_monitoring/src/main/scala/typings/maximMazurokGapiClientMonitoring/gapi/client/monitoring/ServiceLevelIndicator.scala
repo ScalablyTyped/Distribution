@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceLevelIndicator extends StObject {
   
   /** Basic SLI on a well-known service type. */
-  var basicSli: js.UndefOr[BasicSli] = js.native
+  var basicSli: js.UndefOr[BasicSli] = js.undefined
   
   /** Request-based SLIs */
-  var requestBased: js.UndefOr[RequestBasedSli] = js.native
+  var requestBased: js.UndefOr[RequestBasedSli] = js.undefined
   
   /** Windows-based SLIs */
-  var windowsBased: js.UndefOr[WindowsBasedSli] = js.native
+  var windowsBased: js.UndefOr[WindowsBasedSli] = js.undefined
 }
 object ServiceLevelIndicator {
   

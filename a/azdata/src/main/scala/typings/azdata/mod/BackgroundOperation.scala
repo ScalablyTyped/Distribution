@@ -4,7 +4,6 @@ import typings.vscode.mod.Disposable
 import typings.vscode.mod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,14 +17,10 @@ trait BackgroundOperation extends StObject {
   /**
     * Event raised when operation is canceled in UI
     */
-  def onCanceled(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-  def onCanceled(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onCanceled(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-  def onCanceled(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onCanceled(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   /**
     * Event raised when operation is canceled in UI
     */

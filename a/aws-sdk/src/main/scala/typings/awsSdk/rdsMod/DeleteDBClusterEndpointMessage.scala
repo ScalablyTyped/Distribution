@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDBClusterEndpointMessage extends StObject {
   
   /**
     * The identifier associated with the custom endpoint. This parameter is stored as a lowercase string.
     */
-  var DBClusterEndpointIdentifier: String = js.native
+  var DBClusterEndpointIdentifier: String
 }
 object DeleteDBClusterEndpointMessage {
   

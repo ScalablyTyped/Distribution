@@ -2,7 +2,6 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait ParagraphLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var image: js.UndefOr[ImageLoadOptions] = js.native
+  var image: js.UndefOr[ImageLoadOptions] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var inkWords: js.UndefOr[InkWordCollectionLoadOptions] = js.native
+  var inkWords: js.UndefOr[InkWordCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var outline: js.UndefOr[OutlineLoadOptions] = js.native
+  var outline: js.UndefOr[OutlineLoadOptions] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var paragraphs: js.UndefOr[ParagraphCollectionLoadOptions] = js.native
+  var paragraphs: js.UndefOr[ParagraphCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -63,7 +61,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentParagraph: js.UndefOr[ParagraphLoadOptions] = js.native
+  var parentParagraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
     *
@@ -71,7 +69,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentParagraphOrNull: js.UndefOr[ParagraphLoadOptions] = js.native
+  var parentParagraphOrNull: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
     *
@@ -79,7 +77,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -87,7 +85,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var parentTableCellOrNull: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCellOrNull: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -95,7 +93,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var richText: js.UndefOr[RichTextLoadOptions] = js.native
+  var richText: js.UndefOr[RichTextLoadOptions] = js.undefined
   
   /**
     *
@@ -103,7 +101,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var table: js.UndefOr[TableLoadOptions] = js.native
+  var table: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait ParagraphLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var `type`: js.UndefOr[Boolean] = js.native
+  var `type`: js.UndefOr[Boolean] = js.undefined
 }
 object ParagraphLoadOptions {
   

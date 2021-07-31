@@ -2,17 +2,15 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetDefinition extends StObject {
   
-  var gzip: js.UndefOr[Boolean] = js.native
+  var gzip: js.UndefOr[Boolean] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AssetDefinition {
   

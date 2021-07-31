@@ -5,7 +5,6 @@ import typings.sugar.sugarjs.Array.searchFn
 import typings.sugar.sugarjs.Array.sortMapFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -44,8 +43,8 @@ trait Array[T] extends StObject {
   def every(search: searchFn[T], context: js.Any): Boolean = js.native
   
   def everyFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def everyFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def everyFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def everyFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def exclude(search: T): Array[T] = js.native
   def exclude(search: searchFn[T]): Array[T] = js.native
@@ -56,8 +55,8 @@ trait Array[T] extends StObject {
   def filter(search: searchFn[T], context: js.Any): Array[T] = js.native
   
   def filterFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def filterFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def filterFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def filterFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def find(search: T): T = js.native
   def find(search: T, context: js.Any): T = js.native
@@ -65,8 +64,8 @@ trait Array[T] extends StObject {
   def find(search: searchFn[T], context: js.Any): T = js.native
   
   def findFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def findFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def findFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def findFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def findIndex(search: T): Double = js.native
   def findIndex(search: T, context: js.Any): Double = js.native
@@ -74,8 +73,8 @@ trait Array[T] extends StObject {
   def findIndex(search: searchFn[T], context: js.Any): Double = js.native
   
   def findIndexFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def findIndexFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def findIndexFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def findIndexFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def first(): T = js.native
   def first(num: Double): T = js.native
@@ -84,8 +83,8 @@ trait Array[T] extends StObject {
   def flatten(limit: Double): Array[T] = js.native
   
   def forEachFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def forEachFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def forEachFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def forEachFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def from(index: Double): Array[T] = js.native
   
@@ -121,11 +120,11 @@ trait Array[T] extends StObject {
   def last(num: Double): T = js.native
   
   def least[U](): Array[T] = js.native
-  def least[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): Array[T] = js.native
-  def least[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): Array[T] = js.native
   def least[U](all: Boolean): Array[T] = js.native
   def least[U](all: Boolean, map: java.lang.String): Array[T] = js.native
   def least[U](all: Boolean, map: mapFn[T, U]): Array[T] = js.native
+  def least[U](all: Unit, map: java.lang.String): Array[T] = js.native
+  def least[U](all: Unit, map: mapFn[T, U]): Array[T] = js.native
   def least[U](map: java.lang.String): Array[T] = js.native
   def least[U](map: mapFn[T, U]): Array[T] = js.native
   
@@ -135,15 +134,15 @@ trait Array[T] extends StObject {
   def map[U](map: mapFn[T, U], context: js.Any): Array[U] = js.native
   
   def mapFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def mapFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def mapFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def mapFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def max[U](): T = js.native
-  def max[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def max[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def max[U](all: Boolean): T = js.native
   def max[U](all: Boolean, map: java.lang.String): T = js.native
   def max[U](all: Boolean, map: mapFn[T, U]): T = js.native
+  def max[U](all: Unit, map: java.lang.String): T = js.native
+  def max[U](all: Unit, map: mapFn[T, U]): T = js.native
   def max[U](map: java.lang.String): T = js.native
   def max[U](map: mapFn[T, U]): T = js.native
   
@@ -152,20 +151,20 @@ trait Array[T] extends StObject {
   def median[U](map: mapFn[T, U]): Double = js.native
   
   def min[U](): T = js.native
-  def min[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): T = js.native
-  def min[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): T = js.native
   def min[U](all: Boolean): T = js.native
   def min[U](all: Boolean, map: java.lang.String): T = js.native
   def min[U](all: Boolean, map: mapFn[T, U]): T = js.native
+  def min[U](all: Unit, map: java.lang.String): T = js.native
+  def min[U](all: Unit, map: mapFn[T, U]): T = js.native
   def min[U](map: java.lang.String): T = js.native
   def min[U](map: mapFn[T, U]): T = js.native
   
   def most[U](): Array[T] = js.native
-  def most[U](all: js.UndefOr[scala.Nothing], map: java.lang.String): Array[T] = js.native
-  def most[U](all: js.UndefOr[scala.Nothing], map: mapFn[T, U]): Array[T] = js.native
   def most[U](all: Boolean): Array[T] = js.native
   def most[U](all: Boolean, map: java.lang.String): Array[T] = js.native
   def most[U](all: Boolean, map: mapFn[T, U]): Array[T] = js.native
+  def most[U](all: Unit, map: java.lang.String): Array[T] = js.native
+  def most[U](all: Unit, map: mapFn[T, U]): Array[T] = js.native
   def most[U](map: java.lang.String): Array[T] = js.native
   def most[U](map: mapFn[T, U]): Array[T] = js.native
   
@@ -175,12 +174,12 @@ trait Array[T] extends StObject {
   def none(search: searchFn[T], context: js.Any): Boolean = js.native
   
   def reduceFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def reduceFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def reduceFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def reduceFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def reduceRightFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def reduceRightFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def reduceRightFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def reduceRightFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def remove(search: T): Array[T] = js.native
   def remove(search: searchFn[T]): Array[T] = js.native
@@ -189,9 +188,9 @@ trait Array[T] extends StObject {
   def removeAt(start: Double, end: Double): Array[T] = js.native
   
   def sample(): T = js.native
-  def sample(num: js.UndefOr[scala.Nothing], remove: Boolean): T = js.native
   def sample(num: Double): T = js.native
   def sample(num: Double, remove: Boolean): T = js.native
+  def sample(num: Unit, remove: Boolean): T = js.native
   
   def shuffle(): Array[T] = js.native
   
@@ -201,13 +200,13 @@ trait Array[T] extends StObject {
   def some(search: searchFn[T], context: js.Any): Boolean = js.native
   
   def someFromIndex(startIndex: Double, args: js.Any*): T = js.native
-  def someFromIndex(startIndex: Double, loop: js.UndefOr[scala.Nothing], args: js.Any*): T = js.native
   def someFromIndex(startIndex: Double, loop: Boolean, args: js.Any*): T = js.native
+  def someFromIndex(startIndex: Double, loop: Unit, args: js.Any*): T = js.native
   
   def sortBy[U](): Array[T] = js.native
-  def sortBy[U](map: js.UndefOr[scala.Nothing], desc: Boolean): Array[T] = js.native
   def sortBy[U](map: java.lang.String): Array[T] = js.native
   def sortBy[U](map: java.lang.String, desc: Boolean): Array[T] = js.native
+  def sortBy[U](map: Unit, desc: Boolean): Array[T] = js.native
   def sortBy[U](map: sortMapFn[T, U]): Array[T] = js.native
   def sortBy[U](map: sortMapFn[T, U], desc: Boolean): Array[T] = js.native
   

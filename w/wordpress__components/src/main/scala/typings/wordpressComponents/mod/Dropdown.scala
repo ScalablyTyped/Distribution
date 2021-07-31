@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.dropdownMod.Dropdown.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dropdown extends Shortcut {

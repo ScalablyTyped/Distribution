@@ -2,27 +2,27 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IToolTip extends IAnnotation {
+trait IToolTip
+  extends StObject
+     with IAnnotation {
   
-  var animated: Double = js.native
+  var animated: Double
   
-  var autoHide: Boolean = js.native
+  var autoHide: Boolean
   
-  var autoRedraw: Boolean = js.native
+  var autoRedraw: Boolean
   
-  var currentIndex: Double = js.native
+  var currentIndex: Double
   
-  var currentSeries: ISeries = js.native
+  var currentSeries: ISeries
   
-  var delay: Double = js.native
+  var delay: Double
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def refresh(series: ISeries, index: Double): Unit = js.native
+  def refresh(series: ISeries, index: Double): Unit
 }
 object IToolTip {
   

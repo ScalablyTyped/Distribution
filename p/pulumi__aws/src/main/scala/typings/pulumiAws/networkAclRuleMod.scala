@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkAclRuleMod {
@@ -83,6 +82,10 @@ object networkAclRuleMod {
   /* static members */
   object NetworkAclRule {
     
+    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing NetworkAclRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,85 +95,79 @@ object networkAclRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): NetworkAclRule = js.native
-    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): NetworkAclRule = js.native
-    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAclRuleState): NetworkAclRule = js.native
-    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NetworkAclRuleState, opts: CustomResourceOptions): NetworkAclRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): NetworkAclRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[NetworkAclRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): NetworkAclRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAclRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAclRuleState): NetworkAclRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[NetworkAclRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NetworkAclRuleState, opts: CustomResourceOptions): NetworkAclRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[NetworkAclRule]
     
     /**
       * Returns true if the given object is an instance of NetworkAclRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/networkAclRule", "NetworkAclRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAclRule.NetworkAclRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/networkAclRule.NetworkAclRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/networkAclRule.NetworkAclRule */ Boolean]
   }
   
-  @js.native
   trait NetworkAclRuleArgs extends StObject {
     
     /**
       * The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet). Default `false`.
       */
-    val egress: js.UndefOr[Input[Boolean]] = js.native
+    val egress: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The from port to match.
       */
-    val fromPort: js.UndefOr[Input[Double]] = js.native
+    val fromPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ICMP protocol: The ICMP code. Required if specifying ICMP for the protocol. e.g. -1
       */
-    val icmpCode: js.UndefOr[Input[String]] = js.native
+    val icmpCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ICMP protocol: The ICMP type. Required if specifying ICMP for the protocol. e.g. -1
       */
-    val icmpType: js.UndefOr[Input[String]] = js.native
+    val icmpType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv6 CIDR block to allow or deny.
       */
-    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network ACL.
       */
-    val networkAclId: Input[String] = js.native
+    val networkAclId: Input[String]
     
     /**
       * The protocol. A value of -1 means all protocols.
       */
-    val protocol: Input[String] = js.native
+    val protocol: Input[String]
     
     /**
       * Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`
       */
-    val ruleAction: Input[String] = js.native
+    val ruleAction: Input[String]
     
     /**
       * The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.
       */
-    val ruleNumber: Input[Double] = js.native
+    val ruleNumber: Input[Double]
     
     /**
       * The to port to match.
       */
-    val toPort: js.UndefOr[Input[Double]] = js.native
+    val toPort: js.UndefOr[Input[Double]] = js.undefined
   }
   object NetworkAclRuleArgs {
     
@@ -244,63 +241,62 @@ object networkAclRuleMod {
     }
   }
   
-  @js.native
   trait NetworkAclRuleState extends StObject {
     
     /**
       * The network range to allow or deny, in CIDR notation (for example 172.16.0.0/24 ).
       */
-    val cidrBlock: js.UndefOr[Input[String]] = js.native
+    val cidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether this is an egress rule (rule is applied to traffic leaving the subnet). Default `false`.
       */
-    val egress: js.UndefOr[Input[Boolean]] = js.native
+    val egress: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The from port to match.
       */
-    val fromPort: js.UndefOr[Input[Double]] = js.native
+    val fromPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * ICMP protocol: The ICMP code. Required if specifying ICMP for the protocol. e.g. -1
       */
-    val icmpCode: js.UndefOr[Input[String]] = js.native
+    val icmpCode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ICMP protocol: The ICMP type. Required if specifying ICMP for the protocol. e.g. -1
       */
-    val icmpType: js.UndefOr[Input[String]] = js.native
+    val icmpType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv6 CIDR block to allow or deny.
       */
-    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.native
+    val ipv6CidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the network ACL.
       */
-    val networkAclId: js.UndefOr[Input[String]] = js.native
+    val networkAclId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The protocol. A value of -1 means all protocols.
       */
-    val protocol: js.UndefOr[Input[String]] = js.native
+    val protocol: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether to allow or deny the traffic that matches the rule. Accepted values: `allow` | `deny`
       */
-    val ruleAction: js.UndefOr[Input[String]] = js.native
+    val ruleAction: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The rule number for the entry (for example, 100). ACL entries are processed in ascending order by rule number.
       */
-    val ruleNumber: js.UndefOr[Input[Double]] = js.native
+    val ruleNumber: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The to port to match.
       */
-    val toPort: js.UndefOr[Input[Double]] = js.native
+    val toPort: js.UndefOr[Input[Double]] = js.undefined
   }
   object NetworkAclRuleState {
     

@@ -3,7 +3,6 @@ package typings.sequelize
 import typings.sequelize.mod.IndexType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sequelizeStrings {
@@ -44,7 +43,9 @@ object sequelizeStrings {
   def EXCLUSIVE: EXCLUSIVE = "EXCLUSIVE".asInstanceOf[EXCLUSIVE]
   
   @js.native
-  sealed trait FULLTEXT extends IndexType
+  sealed trait FULLTEXT
+    extends StObject
+       with IndexType
   @scala.inline
   def FULLTEXT: FULLTEXT = "FULLTEXT".asInstanceOf[FULLTEXT]
   
@@ -89,12 +90,16 @@ object sequelizeStrings {
   def SHARE: SHARE = "SHARE".asInstanceOf[SHARE]
   
   @js.native
-  sealed trait SPATIAL extends IndexType
+  sealed trait SPATIAL
+    extends StObject
+       with IndexType
   @scala.inline
   def SPATIAL: SPATIAL = "SPATIAL".asInstanceOf[SPATIAL]
   
   @js.native
-  sealed trait UNIQUE extends IndexType
+  sealed trait UNIQUE
+    extends StObject
+       with IndexType
   @scala.inline
   def UNIQUE: UNIQUE = "UNIQUE".asInstanceOf[UNIQUE]
   

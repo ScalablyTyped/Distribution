@@ -3,15 +3,13 @@ package typings.stylableOptimizer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Names extends StObject {
     
-    var names: Record[String, String] = js.native
+    var names: Record[String, String]
   }
   object Names {
     

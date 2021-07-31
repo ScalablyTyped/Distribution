@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridGroupEvent extends GridEvent {
+trait GridGroupEvent
+  extends StObject
+     with GridEvent {
   
-  var groups: js.UndefOr[js.Any] = js.native
+  var groups: js.UndefOr[js.Any] = js.undefined
 }
 object GridGroupEvent {
   

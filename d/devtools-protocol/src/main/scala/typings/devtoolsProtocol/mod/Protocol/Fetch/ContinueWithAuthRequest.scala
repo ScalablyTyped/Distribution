@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Fetch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueWithAuthRequest extends StObject {
   
   /**
     * Response to  with an authChallenge.
     */
-  var authChallengeResponse: AuthChallengeResponse = js.native
+  var authChallengeResponse: AuthChallengeResponse
   
   /**
     * An id the client received in authRequired event.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
 }
 object ContinueWithAuthRequest {
   

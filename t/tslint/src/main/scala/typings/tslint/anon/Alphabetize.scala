@@ -2,15 +2,13 @@ package typings.tslint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alphabetize extends StObject {
   
-  var alphabetize: Boolean = js.native
+  var alphabetize: Boolean
   
-  var order: String = js.native
+  var order: String
 }
 object Alphabetize {
   

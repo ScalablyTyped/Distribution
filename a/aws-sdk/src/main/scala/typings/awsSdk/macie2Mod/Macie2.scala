@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -43,7 +42,7 @@ trait Macie2 extends Service {
   ): Request[BatchGetCustomDataIdentifiersResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Macie2: ConfigBase with ClientConfiguration = js.native
+  var config_Macie2: ConfigBase & ClientConfiguration = js.native
   
   /**
     *  Creates and defines the settings for a classification job.

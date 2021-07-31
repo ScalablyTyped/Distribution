@@ -1,0 +1,18 @@
+package typings.awsSdkClientDynamodbBrowser.mod
+
+import typings.awsSdkClientDynamodbBrowser.typesInternalServerErrorMod.InternalServerError
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait DescribeLimitsExceptionsUnion
+  extends StObject
+     with InternalServerError
+object DescribeLimitsExceptionsUnion {
+  
+  @scala.inline
+  def apply(): DescribeLimitsExceptionsUnion = {
+    val __obj = js.Dynamic.literal(name = "InternalServerError")
+    __obj.asInstanceOf[DescribeLimitsExceptionsUnion]
+  }
+}

@@ -4,90 +4,73 @@ import typings.ol.mapBrowserEventMod.default
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conditionMod {
   
-  @JSImport("ol/events/condition", "all")
+  @JSImport("ol/events/condition", JSImport.Namespace)
   @js.native
-  def all(var_args: Condition*): Condition = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/events/condition", "altKeyOnly")
-  @js.native
-  def altKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def all(var_args: Condition*): Condition = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(var_args.asInstanceOf[js.Any]).asInstanceOf[Condition]
   
-  @JSImport("ol/events/condition", "altShiftKeysOnly")
-  @js.native
-  def altShiftKeysOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def altKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("altKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "always")
-  @js.native
-  def always(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def altShiftKeysOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("altShiftKeysOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "click")
-  @js.native
-  def click(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def always(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("always")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "doubleClick")
-  @js.native
-  def doubleClick(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def click(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("click")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "focus")
-  @js.native
-  def focus(event: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def doubleClick(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("doubleClick")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "focusWithTabindex")
-  @js.native
-  def focusWithTabindex(event: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def focus(event: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focus")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "mouseActionButton")
-  @js.native
-  def mouseActionButton(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def focusWithTabindex(event: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("focusWithTabindex")(event.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "mouseOnly")
-  @js.native
-  def mouseOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def mouseActionButton(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseActionButton")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "never")
-  @js.native
-  def never(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def mouseOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "noModifierKeys")
-  @js.native
-  def noModifierKeys(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def never(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("never")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "penOnly")
-  @js.native
-  def penOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def noModifierKeys(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("noModifierKeys")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "platformModifierKeyOnly")
-  @js.native
-  def platformModifierKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def penOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("penOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "pointerMove")
-  @js.native
-  def pointerMove(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def platformModifierKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("platformModifierKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "primaryAction")
-  @js.native
-  def primaryAction(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def pointerMove(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("pointerMove")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "shiftKeyOnly")
-  @js.native
-  def shiftKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def primaryAction(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("primaryAction")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "singleClick")
-  @js.native
-  def singleClick(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def shiftKeyOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shiftKeyOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "targetNotEditable")
-  @js.native
-  def targetNotEditable(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def singleClick(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("singleClick")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ol/events/condition", "touchOnly")
-  @js.native
-  def touchOnly(mapBrowserEvent: default[UIEvent]): Boolean = js.native
+  @scala.inline
+  def targetNotEditable(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("targetNotEditable")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def touchOnly(mapBrowserEvent: default[UIEvent]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("touchOnly")(mapBrowserEvent.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   type Condition = js.ThisFunction1[/* this */ js.Any, /* p0 */ default[UIEvent], Boolean]
 }

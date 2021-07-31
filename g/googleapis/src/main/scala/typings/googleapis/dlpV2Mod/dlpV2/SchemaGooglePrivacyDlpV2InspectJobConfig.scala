@@ -2,34 +2,32 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectJobConfig extends StObject {
   
   /**
     * Actions to execute at the completion of the job. Are executed in the
     * order provided.
     */
-  var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.native
+  var actions: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Action]] = js.undefined
   
   /**
     * How and what to scan for.
     */
-  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
     * If provided, will be used as the default for all values in InspectConfig.
     * `inspect_config` will be merged into the values persisted as part of the
     * template.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The data to scan.
     */
-  var storageConfig: js.UndefOr[SchemaGooglePrivacyDlpV2StorageConfig] = js.native
+  var storageConfig: js.UndefOr[SchemaGooglePrivacyDlpV2StorageConfig] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectJobConfig {
   

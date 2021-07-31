@@ -3,7 +3,6 @@ package typings.nodeJsonDb
 import typings.nodeJsonDb.jsonDBConfigMod.Config
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,28 +21,18 @@ object mod {
     def this(filename: Config) = this()
     def this(filename: String, saveOnPush: Boolean) = this()
     def this(filename: Config, saveOnPush: Boolean) = this()
-    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean) = this()
-    def this(filename: Config, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean) = this()
     def this(filename: Config, saveOnPush: Boolean, humanReadable: Boolean) = this()
-    def this(
-      filename: String,
-      saveOnPush: js.UndefOr[scala.Nothing],
-      humanReadable: js.UndefOr[scala.Nothing],
-      separator: String
-    ) = this()
-    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean, separator: String) = this()
-    def this(filename: String, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
+    def this(filename: Config, saveOnPush: Unit, humanReadable: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
-    def this(
-      filename: Config,
-      saveOnPush: js.UndefOr[scala.Nothing],
-      humanReadable: js.UndefOr[scala.Nothing],
-      separator: String
-    ) = this()
-    def this(filename: Config, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean, separator: String) = this()
-    def this(filename: Config, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
+    def this(filename: String, saveOnPush: Boolean, humanReadable: Unit, separator: String) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean, separator: String) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: String) = this()
     def this(filename: Config, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
+    def this(filename: Config, saveOnPush: Boolean, humanReadable: Unit, separator: String) = this()
+    def this(filename: Config, saveOnPush: Unit, humanReadable: Boolean, separator: String) = this()
+    def this(filename: Config, saveOnPush: Unit, humanReadable: Unit, separator: String) = this()
     
     val config: js.Any = js.native
     

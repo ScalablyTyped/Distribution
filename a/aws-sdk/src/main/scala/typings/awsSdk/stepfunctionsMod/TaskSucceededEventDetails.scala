@@ -2,31 +2,29 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskSucceededEventDetails extends StObject {
   
   /**
     * The full JSON response from a resource when a task has succeeded. This response becomes the output of the related task. Length constraints apply to the payload size, and are expressed as bytes in UTF-8 encoding.
     */
-  var output: js.UndefOr[SensitiveData] = js.native
+  var output: js.UndefOr[SensitiveData] = js.undefined
   
   /**
     * Contains details about the output of an execution history event.
     */
-  var outputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.native
+  var outputDetails: js.UndefOr[HistoryEventExecutionDataDetails] = js.undefined
   
   /**
     * The service name of the resource in a task state.
     */
-  var resource: Name = js.native
+  var resource: Name
   
   /**
     * The action of the resource called by a task state.
     */
-  var resourceType: Name = js.native
+  var resourceType: Name
 }
 object TaskSucceededEventDetails {
   

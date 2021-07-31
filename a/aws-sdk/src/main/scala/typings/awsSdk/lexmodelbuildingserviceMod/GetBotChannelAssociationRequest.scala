@@ -2,26 +2,24 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotChannelAssociationRequest extends StObject {
   
   /**
     * An alias pointing to the specific version of the Amazon Lex bot to which this association is being made.
     */
-  var botAlias: AliasName = js.native
+  var botAlias: AliasName
   
   /**
     * The name of the Amazon Lex bot.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     * The name of the association between the bot and the channel. The name is case sensitive. 
     */
-  var name: BotChannelName = js.native
+  var name: BotChannelName
 }
 object GetBotChannelAssociationRequest {
   

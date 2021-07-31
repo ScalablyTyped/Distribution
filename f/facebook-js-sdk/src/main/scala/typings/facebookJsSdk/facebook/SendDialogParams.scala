@@ -3,23 +3,23 @@ package typings.facebookJsSdk.facebook
 import typings.facebookJsSdk.facebookJsSdkStrings.send
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendDialogParams extends DialogParams {
+trait SendDialogParams
+  extends StObject
+     with DialogParams {
   
-  var link: String = js.native
+  var link: String
   
-  var method: send = js.native
+  var method: send
   
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
 }
 object SendDialogParams {
   
   @scala.inline
-  def apply(link: String, method: send): SendDialogParams = {
-    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
+  def apply(link: String): SendDialogParams = {
+    val __obj = js.Dynamic.literal(link = link.asInstanceOf[js.Any], method = "send")
     __obj.asInstanceOf[SendDialogParams]
   }
   

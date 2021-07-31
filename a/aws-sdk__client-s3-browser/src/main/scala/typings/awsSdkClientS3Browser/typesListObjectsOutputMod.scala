@@ -8,65 +8,64 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListObjectsOutputMod {
   
-  @js.native
   trait ListObjectsOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _CommonPrefixList shape
       */
-    var CommonPrefixes: js.UndefOr[js.Array[UnmarshalledCommonPrefix]] = js.native
+    var CommonPrefixes: js.UndefOr[js.Array[UnmarshalledCommonPrefix]] = js.undefined
     
     /**
       * _ObjectList shape
       */
-    var Contents: js.UndefOr[js.Array[UnmarshalledObject]] = js.native
+    var Contents: js.UndefOr[js.Array[UnmarshalledObject]] = js.undefined
     
     /**
       * _Delimiter shape
       */
-    var Delimiter: js.UndefOr[String] = js.native
+    var Delimiter: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Encoding type used by Amazon S3 to encode object keys in the response.</p>
       */
-    var EncodingType: js.UndefOr[url | String] = js.native
+    var EncodingType: js.UndefOr[url | String] = js.undefined
     
     /**
       * <p>A flag that indicates whether or not Amazon S3 returned all of the results that satisfied the search criteria.</p>
       */
-    var IsTruncated: js.UndefOr[Boolean] = js.native
+    var IsTruncated: js.UndefOr[Boolean] = js.undefined
     
     /**
       * _Marker shape
       */
-    var Marker: js.UndefOr[String] = js.native
+    var Marker: js.UndefOr[String] = js.undefined
     
     /**
       * _MaxKeys shape
       */
-    var MaxKeys: js.UndefOr[Double] = js.native
+    var MaxKeys: js.UndefOr[Double] = js.undefined
     
     /**
       * _BucketName shape
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
     
     /**
       * <p>When response is truncated (the IsTruncated element value in the response is true), you can use the key name in this field as marker in the subsequent request to get next set of objects. Amazon S3 lists objects in alphabetical order Note: This element is returned only if you have delimiter request parameter specified. If response does not include the NextMaker and it is truncated, you can use the value of the last Key in the response as the marker in the subsequent request to get the next set of object keys.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
     
     /**
       * _Prefix shape
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
   }
   object ListObjectsOutput {
     

@@ -2,15 +2,13 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HookOptions extends StObject {
   
-  var tags: js.UndefOr[js.Any] = js.native
+  var tags: js.UndefOr[js.Any] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object HookOptions {
   

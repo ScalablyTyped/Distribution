@@ -5,28 +5,26 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUtilDomEvent extends StObject {
   
   /**
     * Adds an event listener to an element
     */
-  def addListener(element: HTMLElement, eventName: String, handler: js.Function): Unit = js.native
+  def addListener(element: HTMLElement, eventName: String, handler: js.Function): Unit
   
   /**
     * Cross-browser wrapper for getting event's coordinates
     * @param event Event object
     * @param upperCanvasEl &lt;canvas> element on which object selection is drawn
     */
-  def getPointer(event: Event, upperCanvasEl: HTMLCanvasElement): Point = js.native
+  def getPointer(event: Event, upperCanvasEl: HTMLCanvasElement): Point
   
   /**
     * Removes an event listener from an element
     */
-  def removeListener(element: HTMLElement, eventName: String, handler: js.Function): Unit = js.native
+  def removeListener(element: HTMLElement, eventName: String, handler: js.Function): Unit
 }
 object IUtilDomEvent {
   

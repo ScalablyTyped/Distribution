@@ -2,28 +2,28 @@ package typings.webpackBlocksSass
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@webpack-blocks/sass", JSImport.Namespace)
-  @js.native
-  def apply(): js.Any = js.native
-  @JSImport("@webpack-blocks/sass", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Any = js.native
+  @scala.inline
+  def apply(): js.Any = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Any]
+  @scala.inline
+  def apply(options: Options): js.Any = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
+  @JSImport("@webpack-blocks/sass", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var includePaths: js.UndefOr[js.Array[String]] = js.native
+    var includePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var indentedSyntax: js.UndefOr[Boolean] = js.native
+    var indentedSyntax: js.UndefOr[Boolean] = js.undefined
     
-    var outputStyle: js.UndefOr[String] = js.native
+    var outputStyle: js.UndefOr[String] = js.undefined
     
-    var sourceMap: js.UndefOr[Boolean] = js.native
+    var sourceMap: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

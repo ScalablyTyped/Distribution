@@ -7,77 +7,77 @@ import typings.extjs.Ext.util.IObservable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDragTracker extends IObservable {
+trait IDragTracker
+  extends StObject
+     with IObservable {
   
   /** [Property] (Boolean) */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var autoStart: js.UndefOr[js.Any] = js.native
+  var autoStart: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Ext.util.Region/Ext.Element) */
-  var constrainTo: js.UndefOr[js.Any] = js.native
+  var constrainTo: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var delegate: js.UndefOr[String] = js.native
+  var delegate: js.UndefOr[String] = js.undefined
   
   /** [Property] (HTMLElement) */
-  var dragTarget: js.UndefOr[HTMLElement] = js.native
+  var dragTarget: js.UndefOr[HTMLElement] = js.undefined
   
   /** [Method] Returns the drag target
     * @returns Ext.Element The element currently being tracked.
     */
-  var getDragTarget: js.UndefOr[js.Function0[IElement]] = js.native
+  var getDragTarget: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Returns the X Y offset of the current mouse position from the mousedown point
     * @param constrainMode String If omitted the true mouse position is returned. May be passed as point or dragTarget. See above.
     * @returns Number[] The X, Y offset from the mousedown point, optionally constrained.
     */
-  var getOffset: js.UndefOr[js.Function1[/* constrainMode */ js.UndefOr[String], Array]] = js.native
+  var getOffset: js.UndefOr[js.Function1[/* constrainMode */ js.UndefOr[String], Array]] = js.undefined
   
   /** [Method] Initializes the DragTracker on a given element
     * @param el Ext.Element/HTMLElement The element
     */
-  var initEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.native
+  var initEl: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Ext.EventObject The event object
     */
-  var onBeforeStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var onBeforeStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Ext.EventObject The event object
     */
-  var onDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var onDrag: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Ext.EventObject The event object
     */
-  var onEnd: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var onEnd: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Method] Template method which should be overridden by each DragTracker instance
     * @param e Ext.EventObject The event object
     */
-  var onStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.native
+  var onStart: js.UndefOr[js.Function1[/* e */ js.UndefOr[IEventObject], Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var overCls: js.UndefOr[String] = js.native
+  var overCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var preventDefault: js.UndefOr[Boolean] = js.native
+  var preventDefault: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var stopEvent: js.UndefOr[Boolean] = js.native
+  var stopEvent: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number) */
-  var tolerance: js.UndefOr[Double] = js.native
+  var tolerance: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var trackOver: js.UndefOr[Boolean] = js.native
+  var trackOver: js.UndefOr[Boolean] = js.undefined
 }
 object IDragTracker {
   

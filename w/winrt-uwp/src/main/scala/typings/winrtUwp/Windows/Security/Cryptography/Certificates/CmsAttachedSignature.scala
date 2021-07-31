@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a signature attached to a signed CMS message. */
-@js.native
 trait CmsAttachedSignature extends StObject {
   
   /** Gets the list of certificates that are used for chain building for the signer certificate. */
-  var certificates: IVectorView[Certificate] = js.native
+  var certificates: IVectorView[Certificate]
   
   /** Gets the content of the signed CMS message. */
-  var content: Double = js.native
+  var content: Double
   
   /** Gets the list of signers that are used for creating or verifying the signature. */
-  var signers: IVectorView[CmsSignerInfo] = js.native
+  var signers: IVectorView[CmsSignerInfo]
   
   /**
     * Verifies the signature contained in the signed CMS message.
     * @return The result of the signature verification operation.
     */
-  def verifySignature(): SignatureValidationResult = js.native
+  def verifySignature(): SignatureValidationResult
 }
 object CmsAttachedSignature {
   

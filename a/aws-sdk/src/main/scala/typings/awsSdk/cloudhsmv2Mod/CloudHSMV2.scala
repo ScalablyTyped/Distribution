@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CloudHSMV2 extends Service {
   
   @JSName("config")
-  var config_CloudHSMV2: ConfigBase with ClientConfiguration = js.native
+  var config_CloudHSMV2: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copy an AWS CloudHSM cluster backup to a different region.

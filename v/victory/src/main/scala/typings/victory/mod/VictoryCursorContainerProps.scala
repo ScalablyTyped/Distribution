@@ -5,11 +5,11 @@ import typings.victory.victoryStrings.x
 import typings.victory.victoryStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryCursorContainerProps extends VictoryContainerProps {
+trait VictoryCursorContainerProps
+  extends StObject
+     with VictoryContainerProps {
   
   /**
     * The cursorComponent prop takes a component instance which will be used to render a cursor element.
@@ -17,7 +17,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * If a cursorComponent is not supplied, a new Line component will be rendered.
     * @default cursorComponent={<Line/>}
     */
-  var cursorComponent: js.UndefOr[ReactElement] = js.native
+  var cursorComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * When the cursorDimension prop is set, the cursor will be a line to inspect the given dimension (either "x" or "y").
@@ -26,7 +26,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * the cursor will then be a vertical line that will inspect the time value of the current mouse position.
     * @example cursorDimension="x"
     */
-  var cursorDimension: js.UndefOr[x | y] = js.native
+  var cursorDimension: js.UndefOr[x | y] = js.undefined
   
   /**
     * The cursorLabel prop defines the label that will appear next to the cursor.
@@ -34,7 +34,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * function of a point (an Object with x and y properties).
     * @example cursorLabel={(point) => point.x}
     */
-  var cursorLabel: js.UndefOr[js.Function1[/* point */ CursorData, Unit]] = js.native
+  var cursorLabel: js.UndefOr[js.Function1[/* point */ CursorData, Unit]] = js.undefined
   
   /**
     * The cursorLabelComponent prop takes a component instance which will be
@@ -43,7 +43,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * active, text. If cursorLabelComponent is omitted, a new VictoryLabel will be created with the props described above.
     * @default cursorLabelComponent={<VictoryLabel/>}
     */
-  var cursorLabelComponent: js.UndefOr[ReactElement] = js.native
+  var cursorLabelComponent: js.UndefOr[ReactElement] = js.undefined
   
   /**
     * The cursorLabelOffset prop determines the pixel offset of the cursor label
@@ -51,7 +51,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * number to be used for both dimensions.
     * @default "{ x: 5, y: -10 }"
     */
-  var cursorLabelOffset: js.UndefOr[Double | CursorData] = js.native
+  var cursorLabelOffset: js.UndefOr[Double | CursorData] = js.undefined
   
   /**
     * Whenever the mouse is not over the chart, the cursor will not be displayed.
@@ -59,12 +59,12 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * The prop should be a point (an Object with x and y properties) for 2-dimensional cursors, or a number for 1-dimensional cursors.
     * @example defaultCursorValue={{x: 1, y: 1}}, defaultCursorValue={0}}
     */
-  var defaultCursorValue: js.UndefOr[Double | CursorData] = js.native
+  var defaultCursorValue: js.UndefOr[Double | CursorData] = js.undefined
   
   /**
     * When the disable prop is set to true, VictoryCursorContainer events will not fire.
     */
-  var disable: js.UndefOr[Boolean] = js.native
+  var disable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When the cursorDimension prop is set, the cursor will be a line to inspect the given dimension (either "x" or "y").
@@ -73,7 +73,7 @@ trait VictoryCursorContainerProps extends VictoryContainerProps {
     * the cursor will then be a vertical line that will inspect the time value of the current mouse position.
     * @example onChange={(value, props) => this.setState({cursorValue: value})}
     */
-  var onCursorChange: js.UndefOr[js.Function2[/* value */ CursorData, /* props */ this.type, Unit]] = js.native
+  var onCursorChange: js.UndefOr[js.Function2[/* value */ CursorData, /* props */ this.type, Unit]] = js.undefined
 }
 object VictoryCursorContainerProps {
   

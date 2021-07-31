@@ -9,9 +9,9 @@ Fake S3 server for node
 | ------------------ | :-------------: |
 | Full name          | s3rver |
 | Keywords           | fake, s3, server, mock, false, amazon |
-| # releases         | 16 |
+| # releases         | 13 |
 | # dependents       | 7 |
-| # downloads        | 767458 |
+| # downloads        | 995100 |
 | # stars            | 2 |
 
 ## Links

@@ -9,7 +9,6 @@ import typings.gulpStylint.mod.GulpStylint.Options
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -33,16 +32,15 @@ object mod extends Shortcut {
   }
   object GulpStylint {
     
-    @js.native
     trait FailReporterOptions extends StObject {
       
-      var failOnWarning: `true` = js.native
+      var failOnWarning: `true`
     }
     object FailReporterOptions {
       
       @scala.inline
-      def apply(failOnWarning: `true`): FailReporterOptions = {
-        val __obj = js.Dynamic.literal(failOnWarning = failOnWarning.asInstanceOf[js.Any])
+      def apply(): FailReporterOptions = {
+        val __obj = js.Dynamic.literal(failOnWarning = true)
         __obj.asInstanceOf[FailReporterOptions]
       }
       
@@ -54,14 +52,13 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var config: js.UndefOr[String] = js.native
+      var config: js.UndefOr[String] = js.undefined
       
-      var reporter: js.UndefOr[js.Any] = js.native
+      var reporter: js.UndefOr[js.Any] = js.undefined
       
-      var rules: js.UndefOr[StringDictionary[js.Any]] = js.native
+      var rules: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     }
     object Options {
       
@@ -94,10 +91,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait ReporterOptions extends StObject {
       
-      var logger: js.UndefOr[js.Function0[Unit]] = js.native
+      var logger: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object ReporterOptions {
       

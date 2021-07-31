@@ -7,15 +7,13 @@ import typings.react.mod.ComponentType
 import typings.reactDnd.dndProviderMod.DndProviderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var shallow: js.UndefOr[Boolean] = js.native
+    var shallow: js.UndefOr[Boolean] = js.undefined
   }
   object `0` {
     
@@ -36,16 +34,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait Backend[BackendContext, BackendOptions] extends DndProviderProps[BackendContext, BackendOptions] {
+  trait Backend[BackendContext, BackendOptions]
+    extends StObject
+       with DndProviderProps[BackendContext, BackendOptions] {
     
-    var backend: BackendFactory = js.native
+    var backend: BackendFactory
     
-    var context: js.UndefOr[BackendContext] = js.native
+    var context: js.UndefOr[BackendContext] = js.undefined
     
-    var debugMode: js.UndefOr[Boolean] = js.native
+    var debugMode: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.UndefOr[BackendOptions] = js.native
+    var options: js.UndefOr[BackendOptions] = js.undefined
   }
   object Backend {
     
@@ -58,7 +57,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class BackendMutableBuilder[Self <: Backend[_, _], BackendContext, BackendOptions] (val x: Self with (Backend[BackendContext, BackendOptions])) extends AnyVal {
+    implicit class BackendMutableBuilder[Self <: Backend[?, ?], BackendContext, BackendOptions] (val x: Self & (Backend[BackendContext, BackendOptions])) extends AnyVal {
       
       @scala.inline
       def setBackend(
@@ -85,31 +84,29 @@ object anon {
     }
   }
   
-  @js.native
-  trait DecoratedComponent[C /* <: ComponentType[_] */] extends StObject {
+  trait DecoratedComponent[C /* <: ComponentType[js.Any] */] extends StObject {
     
-    var DecoratedComponent: C = js.native
+    var DecoratedComponent: C
   }
   object DecoratedComponent {
     
     @scala.inline
-    def apply[C /* <: ComponentType[_] */](DecoratedComponent: C): DecoratedComponent[C] = {
+    def apply[C /* <: ComponentType[js.Any] */](DecoratedComponent: C): DecoratedComponent[C] = {
       val __obj = js.Dynamic.literal(DecoratedComponent = DecoratedComponent.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecoratedComponent[C]]
     }
     
     @scala.inline
-    implicit class DecoratedComponentMutableBuilder[Self <: DecoratedComponent[_], C /* <: ComponentType[_] */] (val x: Self with DecoratedComponent[C]) extends AnyVal {
+    implicit class DecoratedComponentMutableBuilder[Self <: DecoratedComponent[?], C /* <: ComponentType[js.Any] */] (val x: Self & DecoratedComponent[C]) extends AnyVal {
       
       @scala.inline
       def setDecoratedComponent(value: C): Self = StObject.set(x, "DecoratedComponent", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Dispose extends StObject {
     
-    var dispose: js.Function0[Unit] = js.native
+    var dispose: js.Function0[Unit]
   }
   object Dispose {
     
@@ -127,10 +124,9 @@ object anon {
     }
   }
   
-  @js.native
   trait HandlerIds extends StObject {
     
-    var handlerIds: js.UndefOr[js.Array[Identifier]] = js.native
+    var handlerIds: js.UndefOr[js.Array[Identifier]] = js.undefined
   }
   object HandlerIds {
     
@@ -154,11 +150,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Manager
-    extends DndProviderProps[js.Any, js.Any] {
+    extends StObject
+       with DndProviderProps[js.Any, js.Any] {
     
-    var manager: DragDropManager = js.native
+    var manager: DragDropManager
   }
   object Manager {
     
@@ -176,10 +172,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Shallow extends StObject {
     
-    var shallow: Boolean = js.native
+    var shallow: Boolean
   }
   object Shallow {
     

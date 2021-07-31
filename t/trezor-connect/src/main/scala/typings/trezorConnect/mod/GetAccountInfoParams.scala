@@ -2,19 +2,19 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetAccountInfoParams extends CommonParams {
+trait GetAccountInfoParams
+  extends StObject
+     with CommonParams {
   
   // if both these fields are missing, the user will select an account
-  var coin: String = js.native
+  var coin: String
   
-  var path: js.UndefOr[js.Array[Double]] = js.native
+  var path: js.UndefOr[js.Array[Double]] = js.undefined
   
   // NOTE:
-  var xpub: js.UndefOr[String] = js.native
+  var xpub: js.UndefOr[String] = js.undefined
 }
 object GetAccountInfoParams {
   

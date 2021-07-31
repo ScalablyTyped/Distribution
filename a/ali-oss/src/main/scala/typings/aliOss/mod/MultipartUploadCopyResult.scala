@@ -2,19 +2,17 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipartUploadCopyResult extends StObject {
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var etag: String = js.native
+  var etag: String
   
-  var name: String = js.native
+  var name: String
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object MultipartUploadCopyResult {
   

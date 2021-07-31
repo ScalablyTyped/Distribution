@@ -3,20 +3,18 @@ package typings.minappEnv.wx
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageInfoSuccessCallbackOption extends StObject {
   
   /** 当前占用的空间大小, 单位 KB */
-  var currentSize: Double = js.native
+  var currentSize: Double
   
   /** 当前 storage 中所有的 key */
-  var keys: Array[String] = js.native
+  var keys: Array[String]
   
   /** 限制的空间大小，单位 KB */
-  var limitSize: Double = js.native
+  var limitSize: Double
 }
 object GetStorageInfoSuccessCallbackOption {
   

@@ -7,10 +7,13 @@ import typings.reactVirtualized.esMasonryMod.Positioner
 import typings.reactVirtualized.esMasonryMod.createCellPositionerParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object masonryMod {
+  
+  @JSImport("react-virtualized/dist/commonjs/Masonry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-virtualized/dist/commonjs/Masonry", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
   @js.native
@@ -40,12 +43,10 @@ object masonryMod {
     @scala.inline
     def defaultProps_=(x: KeyMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-virtualized/dist/commonjs/Masonry", "Masonry.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MasonryState | Null]
   }
   
-  @JSImport("react-virtualized/dist/commonjs/Masonry", "createCellPositioner")
-  @js.native
-  def createCellPositioner(params: createCellPositionerParams): Positioner = js.native
+  @scala.inline
+  def createCellPositioner(params: createCellPositionerParams): Positioner = ^.asInstanceOf[js.Dynamic].applyDynamic("createCellPositioner")(params.asInstanceOf[js.Any]).asInstanceOf[Positioner]
 }

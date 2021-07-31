@@ -6,11 +6,11 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsBatchgetassetshistory extends StandardParameters {
+trait ParamsResourceProjectsBatchgetassetshistory
+  extends StObject
+     with StandardParameters {
   
   /**
     * A list of the full names of the assets. For example:
@@ -20,17 +20,17 @@ trait ParamsResourceProjectsBatchgetassetshistory extends StandardParameters {
     * for more info.  The request becomes a no-op if the asset name list is
     * empty, and the max size of the asset name list is 100 in one request.
     */
-  var assetNames: js.UndefOr[js.Array[String]] = js.native
+  var assetNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The content type.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The relative name of the root asset. It can only be an
@@ -38,20 +38,20 @@ trait ParamsResourceProjectsBatchgetassetshistory extends StandardParameters {
     * "projects/my-project-id")", or a project number (such as
     * "projects/12345").
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * End time of the time window (inclusive). Current timestamp if not
     * specified.
     */
   @JSName("readTimeWindow.endTime")
-  var readTimeWindowDotendTime: js.UndefOr[String] = js.native
+  var readTimeWindowDotendTime: js.UndefOr[String] = js.undefined
   
   /**
     * Start time of the time window (exclusive).
     */
   @JSName("readTimeWindow.startTime")
-  var readTimeWindowDotstartTime: js.UndefOr[String] = js.native
+  var readTimeWindowDotstartTime: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsBatchgetassetshistory {
   

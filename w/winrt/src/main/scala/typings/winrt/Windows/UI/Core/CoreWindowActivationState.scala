@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait CoreWindowActivationState extends StObject
 object CoreWindowActivationState extends StObject {
   
   @js.native
-  sealed trait codeActivated extends CoreWindowActivationState
+  sealed trait codeActivated
+    extends StObject
+       with CoreWindowActivationState
   
   @js.native
-  sealed trait deactivated extends CoreWindowActivationState
+  sealed trait deactivated
+    extends StObject
+       with CoreWindowActivationState
   
   @js.native
-  sealed trait pointerActivated extends CoreWindowActivationState
+  sealed trait pointerActivated
+    extends StObject
+       with CoreWindowActivationState
 }

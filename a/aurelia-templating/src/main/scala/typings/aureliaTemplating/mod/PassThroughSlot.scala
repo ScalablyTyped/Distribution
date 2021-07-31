@@ -2,47 +2,26 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-templating", "PassThroughSlot")
 @js.native
 class PassThroughSlot () extends StObject {
   def this(anchor: js.Any) = this()
-  def this(anchor: js.UndefOr[scala.Nothing], name: js.Any) = this()
   def this(anchor: js.Any, name: js.Any) = this()
-  def this(anchor: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], destinationName: js.Any) = this()
-  def this(anchor: js.UndefOr[scala.Nothing], name: js.Any, destinationName: js.Any) = this()
-  def this(anchor: js.Any, name: js.UndefOr[scala.Nothing], destinationName: js.Any) = this()
+  def this(anchor: Unit, name: js.Any) = this()
   def this(anchor: js.Any, name: js.Any, destinationName: js.Any) = this()
-  def this(
-    anchor: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    destinationName: js.UndefOr[scala.Nothing],
-    fallbackFactory: js.Any
-  ) = this()
-  def this(
-    anchor: js.UndefOr[scala.Nothing],
-    name: js.UndefOr[scala.Nothing],
-    destinationName: js.Any,
-    fallbackFactory: js.Any
-  ) = this()
-  def this(
-    anchor: js.UndefOr[scala.Nothing],
-    name: js.Any,
-    destinationName: js.UndefOr[scala.Nothing],
-    fallbackFactory: js.Any
-  ) = this()
-  def this(anchor: js.UndefOr[scala.Nothing], name: js.Any, destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(
-    anchor: js.Any,
-    name: js.UndefOr[scala.Nothing],
-    destinationName: js.UndefOr[scala.Nothing],
-    fallbackFactory: js.Any
-  ) = this()
-  def this(anchor: js.Any, name: js.UndefOr[scala.Nothing], destinationName: js.Any, fallbackFactory: js.Any) = this()
-  def this(anchor: js.Any, name: js.Any, destinationName: js.UndefOr[scala.Nothing], fallbackFactory: js.Any) = this()
+  def this(anchor: js.Any, name: Unit, destinationName: js.Any) = this()
+  def this(anchor: Unit, name: js.Any, destinationName: js.Any) = this()
+  def this(anchor: Unit, name: Unit, destinationName: js.Any) = this()
   def this(anchor: js.Any, name: js.Any, destinationName: js.Any, fallbackFactory: js.Any) = this()
+  def this(anchor: js.Any, name: js.Any, destinationName: Unit, fallbackFactory: js.Any) = this()
+  def this(anchor: js.Any, name: Unit, destinationName: js.Any, fallbackFactory: js.Any) = this()
+  def this(anchor: js.Any, name: Unit, destinationName: Unit, fallbackFactory: js.Any) = this()
+  def this(anchor: Unit, name: js.Any, destinationName: js.Any, fallbackFactory: js.Any) = this()
+  def this(anchor: Unit, name: js.Any, destinationName: Unit, fallbackFactory: js.Any) = this()
+  def this(anchor: Unit, name: Unit, destinationName: js.Any, fallbackFactory: js.Any) = this()
+  def this(anchor: Unit, name: Unit, destinationName: Unit, fallbackFactory: js.Any) = this()
   
   /**
     * @param {View} view
@@ -51,41 +30,21 @@ class PassThroughSlot () extends StObject {
     * @param {number} index
     */
   def addNode(): js.Any = js.native
-  def addNode(
-    view: js.UndefOr[scala.Nothing],
-    node: js.UndefOr[scala.Nothing],
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def addNode(view: js.UndefOr[scala.Nothing], node: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
-  def addNode(
-    view: js.UndefOr[scala.Nothing],
-    node: js.UndefOr[scala.Nothing],
-    projectionSource: js.Any,
-    index: js.Any
-  ): js.Any = js.native
-  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any): js.Any = js.native
-  def addNode(
-    view: js.UndefOr[scala.Nothing],
-    node: js.Any,
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any, projectionSource: js.Any): js.Any = js.native
-  def addNode(view: js.UndefOr[scala.Nothing], node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def addNode(view: js.Any): js.Any = js.native
-  def addNode(
-    view: js.Any,
-    node: js.UndefOr[scala.Nothing],
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def addNode(view: js.Any, node: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.UndefOr[scala.Nothing], projectionSource: js.Any, index: js.Any): js.Any = js.native
   def addNode(view: js.Any, node: js.Any): js.Any = js.native
-  def addNode(view: js.Any, node: js.Any, projectionSource: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def addNode(view: js.Any, node: js.Any, projectionSource: js.Any): js.Any = js.native
   def addNode(view: js.Any, node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(view: js.Any, node: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def addNode(view: js.Any, node: Unit, projectionSource: js.Any): js.Any = js.native
+  def addNode(view: js.Any, node: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(view: js.Any, node: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: js.Any, projectionSource: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: Unit, projectionSource: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def addNode(view: Unit, node: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
   
   def attached(): js.Any = js.native
   
@@ -119,9 +78,9 @@ class PassThroughSlot () extends StObject {
     * @param {ViewSlot} projectionSource
     */
   def projectFrom(): js.Any = js.native
-  def projectFrom(view: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def projectFrom(view: js.Any): js.Any = js.native
   def projectFrom(view: js.Any, projectionSource: js.Any): js.Any = js.native
+  def projectFrom(view: Unit, projectionSource: js.Any): js.Any = js.native
   
   /**
     * @param {ViewSlot} projectionSource
@@ -134,9 +93,9 @@ class PassThroughSlot () extends StObject {
     * @param {ViewSlot} projectionSource
     */
   def removeView(): js.Any = js.native
-  def removeView(view: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
   def removeView(view: js.Any): js.Any = js.native
   def removeView(view: js.Any, projectionSource: js.Any): js.Any = js.native
+  def removeView(view: Unit, projectionSource: js.Any): js.Any = js.native
   
   /**
     * @param {View} view
@@ -145,41 +104,21 @@ class PassThroughSlot () extends StObject {
     * @param {number} index
     */
   def renderFallbackContent(): js.Any = js.native
-  def renderFallbackContent(
-    view: js.UndefOr[scala.Nothing],
-    nodes: js.UndefOr[scala.Nothing],
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(
-    view: js.UndefOr[scala.Nothing],
-    nodes: js.UndefOr[scala.Nothing],
-    projectionSource: js.Any,
-    index: js.Any
-  ): js.Any = js.native
-  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any): js.Any = js.native
-  def renderFallbackContent(
-    view: js.UndefOr[scala.Nothing],
-    nodes: js.Any,
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any, projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.UndefOr[scala.Nothing], nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any): js.Any = js.native
-  def renderFallbackContent(
-    view: js.Any,
-    nodes: js.UndefOr[scala.Nothing],
-    projectionSource: js.UndefOr[scala.Nothing],
-    index: js.Any
-  ): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.UndefOr[scala.Nothing], projectionSource: js.Any, index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any): js.Any = js.native
-  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any): js.Any = js.native
   def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: js.Any, nodes: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: js.Any, projectionSource: Unit, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: js.Any, index: js.Any): js.Any = js.native
+  def renderFallbackContent(view: Unit, nodes: Unit, projectionSource: Unit, index: js.Any): js.Any = js.native
   
   def unbind(): js.Any = js.native
 }

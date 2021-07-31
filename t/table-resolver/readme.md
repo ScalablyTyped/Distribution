@@ -12,7 +12,7 @@ Table resolution utilities
 | Keywords           | table, tables, resolve, resolving, algorithm, reactabular |
 | # releases         | 0 |
 | # dependents       | 8 |
-| # downloads        | 422376 |
+| # downloads        | 451096 |
 | # stars            | 0 |
 
 ## Links

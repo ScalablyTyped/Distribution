@@ -2,14 +2,15 @@ package typings.objectRefs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("object-refs", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Refs {
+  class ^ protected ()
+    extends StObject
+       with Refs {
     /**
       * Creates a new references object defining two inversly related
       * attribute descriptors a and b.
@@ -21,27 +22,27 @@ object mod {
   
   object Collection {
     
-    /** Extends a collection with Refs aware methods */
-    @JSImport("object-refs", "Collection.extend")
+    @JSImport("object-refs", "Collection")
     @js.native
-    def extend(collection: js.Array[_], refs: Refs, property: String, target: js.Any): js.Any = js.native
-    @JSImport("object-refs", "Collection.extend")
-    @js.native
-    def extend(collection: js.Array[_], refs: Refs, property: AttributeDescriptor, target: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("object-refs", "Collection.isExtended")
-    @js.native
-    def isExtended(collection: js.Array[_]): Boolean = js.native
+    /** Extends a collection with Refs aware methods */
+    @scala.inline
+    def extend(collection: js.Array[js.Any], refs: Refs, property: String, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def extend(collection: js.Array[js.Any], refs: Refs, property: AttributeDescriptor, target: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(collection.asInstanceOf[js.Any], refs.asInstanceOf[js.Any], property.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def isExtended(collection: js.Array[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExtended")(collection.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @js.native
   trait AttributeDescriptor extends StObject {
     
-    var collection: js.UndefOr[Boolean] = js.native
+    var collection: js.UndefOr[Boolean] = js.undefined
     
-    var enumerable: js.UndefOr[Boolean] = js.native
+    var enumerable: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object AttributeDescriptor {
     

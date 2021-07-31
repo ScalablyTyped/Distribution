@@ -2,28 +2,26 @@ package typings.activexAdodb.ADODB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
   @JSName("ADODB.Error_typekey")
-  var ADODBDotError_typekey: Error = js.native
+  var ADODBDotError_typekey: Error
   
-  val Description: String = js.native
+  val Description: String
   
-  val HelpContext: Double = js.native
+  val HelpContext: Double
   
-  val HelpFile: String = js.native
+  val HelpFile: String
   
-  val NativeError: Double = js.native
+  val NativeError: Double
   
-  val Number: Double = js.native
+  val Number: Double
   
-  val SQLState: String = js.native
+  val SQLState: String
   
-  val Source: String = js.native
+  val Source: String
 }
 object Error {
   

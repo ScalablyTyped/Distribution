@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersResponse extends StObject {
   
   /** The list of requested clusters. */
-  var clusters: js.UndefOr[js.Array[Cluster]] = js.native
+  var clusters: js.UndefOr[js.Array[Cluster]] = js.undefined
   
   /**
     * Locations from which Cluster information could not be retrieved, due to an outage or some other transient condition. Clusters from these locations may be missing from `clusters`, or
     * may only have partial information returned. Values are of the form `projects//locations/`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** DEPRECATED: This field is unused and ignored. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListClustersResponse {
   

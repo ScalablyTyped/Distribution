@@ -3,17 +3,16 @@ package typings.webpack.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictk
-  extends /* k */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
   /**
   		 * The context that can be used to configure older loaders
   		 */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
 }
 object Dictk {
   

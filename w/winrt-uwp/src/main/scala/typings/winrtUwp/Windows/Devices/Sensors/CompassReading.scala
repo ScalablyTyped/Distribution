@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a compass reading. */
-@js.native
 trait CompassReading extends StObject {
   
   /** Gets the compass's heading accuracy. */
-  var headingAccuracy: MagnetometerAccuracy = js.native
+  var headingAccuracy: MagnetometerAccuracy
   
   /** Gets the heading in degrees relative to magnetic-north. */
-  var headingMagneticNorth: Double = js.native
+  var headingMagneticNorth: Double
   
   /** Gets the heading in degrees relative to geographic true-north. */
-  var headingTrueNorth: Double = js.native
+  var headingTrueNorth: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object CompassReading {
   

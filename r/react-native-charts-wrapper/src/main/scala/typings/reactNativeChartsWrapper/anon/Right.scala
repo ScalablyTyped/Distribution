@@ -3,15 +3,13 @@ package typings.reactNativeChartsWrapper.anon
 import typings.reactNativeChartsWrapper.mod.yAxis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Right extends StObject {
   
-  var left: js.UndefOr[yAxis] = js.native
+  var left: js.UndefOr[yAxis] = js.undefined
   
-  var right: js.UndefOr[yAxis] = js.native
+  var right: js.UndefOr[yAxis] = js.undefined
 }
 object Right {
   

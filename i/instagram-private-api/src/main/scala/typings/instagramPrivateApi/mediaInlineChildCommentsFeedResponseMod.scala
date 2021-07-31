@@ -2,43 +2,41 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaInlineChildCommentsFeedResponseMod {
   
-  @js.native
   trait MediaInlineChildCommentsFeedResponseChildCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var parent_comment_id: String = js.native
+    var parent_comment_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaInlineChildCommentsFeedResponseUser = js.native
+    var user: MediaInlineChildCommentsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaInlineChildCommentsFeedResponseChildCommentsItem {
     
@@ -115,36 +113,35 @@ object mediaInlineChildCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaInlineChildCommentsFeedResponseParentComment extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaInlineChildCommentsFeedResponseUser = js.native
+    var user: MediaInlineChildCommentsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaInlineChildCommentsFeedResponseParentComment {
     
@@ -217,24 +214,23 @@ object mediaInlineChildCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaInlineChildCommentsFeedResponseRootObject extends StObject {
     
-    var child_comment_count: Double = js.native
+    var child_comment_count: Double
     
-    var child_comments: js.Array[MediaInlineChildCommentsFeedResponseChildCommentsItem] = js.native
+    var child_comments: js.Array[MediaInlineChildCommentsFeedResponseChildCommentsItem]
     
-    var has_more_head_child_comments: Boolean = js.native
+    var has_more_head_child_comments: Boolean
     
-    var has_more_tail_child_comments: Boolean = js.native
+    var has_more_tail_child_comments: Boolean
     
-    var next_max_child_cursor: String = js.native
+    var next_max_child_cursor: String
     
-    var num_tail_child_comments: Double = js.native
+    var num_tail_child_comments: Double
     
-    var parent_comment: MediaInlineChildCommentsFeedResponseParentComment = js.native
+    var parent_comment: MediaInlineChildCommentsFeedResponseParentComment
     
-    var status: String = js.native
+    var status: String
   }
   object MediaInlineChildCommentsFeedResponseRootObject {
     
@@ -285,22 +281,21 @@ object mediaInlineChildCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaInlineChildCommentsFeedResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object MediaInlineChildCommentsFeedResponseUser {
     

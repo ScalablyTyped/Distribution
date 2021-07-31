@@ -2,13 +2,11 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of reverting a tag in a workspace.
   */
-@js.native
 trait SchemaRevertTagResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRevertTagResponse extends StObject {
     * workspace synchronization operation. If no tag is present, that means the
     * tag was deleted in the latest container version.
     */
-  var tag: js.UndefOr[SchemaTag] = js.native
+  var tag: js.UndefOr[SchemaTag] = js.undefined
 }
 object SchemaRevertTagResponse {
   

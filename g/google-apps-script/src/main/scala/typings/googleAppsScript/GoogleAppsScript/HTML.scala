@@ -5,7 +5,6 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Blob
 import typings.googleAppsScript.GoogleAppsScript.Base.BlobSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object HTML {
@@ -42,13 +41,19 @@ object HTML {
   object SandboxMode extends StObject {
     
     @js.native
-    sealed trait EMULATED extends SandboxMode
+    sealed trait EMULATED
+      extends StObject
+         with SandboxMode
     
     @js.native
-    sealed trait IFRAME extends SandboxMode
+    sealed trait IFRAME
+      extends StObject
+         with SandboxMode
     
     @js.native
-    sealed trait NATIVE extends SandboxMode
+    sealed trait NATIVE
+      extends StObject
+         with SandboxMode
   }
   
   @js.native
@@ -72,10 +77,14 @@ object HTML {
   object XFrameOptionsMode extends StObject {
     
     @js.native
-    sealed trait ALLOWALL extends XFrameOptionsMode
+    sealed trait ALLOWALL
+      extends StObject
+         with XFrameOptionsMode
     
     @js.native
-    sealed trait DEFAULT extends XFrameOptionsMode
+    sealed trait DEFAULT
+      extends StObject
+         with XFrameOptionsMode
   }
   
   /**
@@ -92,48 +101,47 @@ object HTML {
     * sandboxing
     * guide to restrictions in HTML service
     */
-  @js.native
   trait HtmlOutput extends StObject {
     
-    def addMetaTag(name: String, content: String): HtmlOutput = js.native
+    def addMetaTag(name: String, content: String): HtmlOutput
     
-    def append(addedContent: String): HtmlOutput = js.native
+    def append(addedContent: String): HtmlOutput
     
-    def appendUntrusted(addedContent: String): HtmlOutput = js.native
+    def appendUntrusted(addedContent: String): HtmlOutput
     
-    def asTemplate(): HtmlTemplate = js.native
+    def asTemplate(): HtmlTemplate
     
-    def clear(): HtmlOutput = js.native
+    def clear(): HtmlOutput
     
-    def getAs(contentType: String): Blob = js.native
+    def getAs(contentType: String): Blob
     
-    def getBlob(): Blob = js.native
+    def getBlob(): Blob
     
-    def getContent(): String = js.native
+    def getContent(): String
     
-    def getFaviconUrl(): String = js.native
+    def getFaviconUrl(): String
     
-    def getHeight(): Integer = js.native
+    def getHeight(): Integer
     
-    def getMetaTags(): js.Array[HtmlOutputMetaTag] = js.native
+    def getMetaTags(): js.Array[HtmlOutputMetaTag]
     
-    def getTitle(): String = js.native
+    def getTitle(): String
     
-    def getWidth(): Integer = js.native
+    def getWidth(): Integer
     
-    def setContent(content: String): HtmlOutput = js.native
+    def setContent(content: String): HtmlOutput
     
-    def setFaviconUrl(iconUrl: String): HtmlOutput = js.native
+    def setFaviconUrl(iconUrl: String): HtmlOutput
     
-    def setHeight(height: Integer): HtmlOutput = js.native
+    def setHeight(height: Integer): HtmlOutput
     
-    def setSandboxMode(mode: SandboxMode): HtmlOutput = js.native
+    def setSandboxMode(mode: SandboxMode): HtmlOutput
     
-    def setTitle(title: String): HtmlOutput = js.native
+    def setTitle(title: String): HtmlOutput
     
-    def setWidth(width: Integer): HtmlOutput = js.native
+    def setWidth(width: Integer): HtmlOutput
     
-    def setXFrameOptionsMode(mode: XFrameOptionsMode): HtmlOutput = js.native
+    def setXFrameOptionsMode(mode: XFrameOptionsMode): HtmlOutput
   }
   object HtmlOutput {
     
@@ -238,12 +246,11 @@ object HTML {
     *     var tags = output.getMetaTags();
     *     Logger.log('<meta name="%s" content="%s"/>', tags[0].getName(), tags[0].getContent());
     */
-  @js.native
   trait HtmlOutputMetaTag extends StObject {
     
-    def getContent(): String = js.native
+    def getContent(): String
     
-    def getName(): String = js.native
+    def getName(): String
   }
   object HtmlOutputMetaTag {
     
@@ -295,17 +302,17 @@ object HTML {
   /**
     * A template object for dynamically constructing HTML. For more information, see the guide to templates.
     */
-  @js.native
   trait HtmlTemplate
-    extends /* propName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propName */ StringDictionary[js.Any] {
     
-    def evaluate(): HtmlOutput = js.native
+    def evaluate(): HtmlOutput
     
-    def getCode(): String = js.native
+    def getCode(): String
     
-    def getCodeWithComments(): String = js.native
+    def getCodeWithComments(): String
     
-    def getRawContent(): String = js.native
+    def getRawContent(): String
   }
   object HtmlTemplate {
     

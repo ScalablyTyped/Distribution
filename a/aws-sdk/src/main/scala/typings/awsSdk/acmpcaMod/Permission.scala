@@ -2,41 +2,39 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Permission extends StObject {
   
   /**
     * The private CA actions that can be performed by the designated AWS service.
     */
-  var Actions: js.UndefOr[ActionList] = js.native
+  var Actions: js.UndefOr[ActionList] = js.undefined
   
   /**
     * The Amazon Resource Number (ARN) of the private CA from which the permission was issued.
     */
-  var CertificateAuthorityArn: js.UndefOr[Arn] = js.native
+  var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time at which the permission was created.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.native
+  var CreatedAt: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The name of the policy that is associated with the permission.
     */
-  var Policy: js.UndefOr[AWSPolicy] = js.native
+  var Policy: js.UndefOr[AWSPolicy] = js.undefined
   
   /**
     * The AWS service or entity that holds the permission. At this time, the only valid principal is acm.amazonaws.com.
     */
-  var Principal: js.UndefOr[typings.awsSdk.acmpcaMod.Principal] = js.native
+  var Principal: js.UndefOr[typings.awsSdk.acmpcaMod.Principal] = js.undefined
   
   /**
     * The ID of the account that assigned the permission.
     */
-  var SourceAccount: js.UndefOr[AccountId] = js.native
+  var SourceAccount: js.UndefOr[AccountId] = js.undefined
 }
 object Permission {
   

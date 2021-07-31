@@ -10,9 +10,9 @@ A reference client implementation for the playback of MPEG DASH via Javascript a
 | ------------------ | :-------------: |
 | Full name          | dashjs |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 36 |
-| # downloads        | 567579 |
+| # releases         | 9 |
+| # dependents       | 40 |
+| # downloads        | 865381 |
 | # stars            | 2 |
 
 ## Links

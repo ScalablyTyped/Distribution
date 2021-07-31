@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingsResponse extends StObject {
   
   /**
     * The findings that matched the filters specified in the request.
     */
-  var Findings: AwsSecurityFindingList = js.native
+  var Findings: AwsSecurityFindingList
   
   /**
     * The pagination token to use to request the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
 }
 object GetFindingsResponse {
   

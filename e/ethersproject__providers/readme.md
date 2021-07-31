@@ -10,9 +10,9 @@ Ethereum Providers for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/providers |
 | Keywords           | Ethereum, ethers |
-| # releases         | 69 |
-| # dependents       | 43 |
-| # downloads        | 628027 |
+| # releases         | 77 |
+| # dependents       | 65 |
+| # downloads        | 1410421 |
 | # stars            | 0 |
 
 ## Links

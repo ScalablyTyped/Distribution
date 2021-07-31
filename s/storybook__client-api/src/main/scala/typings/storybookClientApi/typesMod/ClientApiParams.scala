@@ -6,17 +6,15 @@ import typings.storybookAddons.typesMod.StoryFn
 import typings.storybookClientApi.storyStoreMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientApiParams extends StObject {
   
-  var decorateStory: js.UndefOr[DecorateStoryFunction[_]] = js.native
+  var decorateStory: js.UndefOr[DecorateStoryFunction[js.Any]] = js.undefined
   
-  var noStoryModuleAddMethodHotDispose: js.UndefOr[Boolean] = js.native
+  var noStoryModuleAddMethodHotDispose: js.UndefOr[Boolean] = js.undefined
   
-  var storyStore: default = js.native
+  var storyStore: default
 }
 object ClientApiParams {
   
@@ -30,7 +28,9 @@ object ClientApiParams {
   implicit class ClientApiParamsMutableBuilder[Self <: ClientApiParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDecorateStory(value: (/* storyFn */ StoryFn[_], /* decorators */ js.Array[DecoratorFunction[_]]) => StoryFn[_]): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
+    def setDecorateStory(
+      value: (/* storyFn */ StoryFn[js.Any], /* decorators */ js.Array[DecoratorFunction[js.Any]]) => StoryFn[js.Any]
+    ): Self = StObject.set(x, "decorateStory", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDecorateStoryUndefined: Self = StObject.set(x, "decorateStory", js.undefined)

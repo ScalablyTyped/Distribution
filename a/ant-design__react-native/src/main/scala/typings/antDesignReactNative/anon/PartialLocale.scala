@@ -2,30 +2,28 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@ant-design/react-native.@ant-design/react-native/lib/locale-provider.Locale> */
-@js.native
 trait PartialLocale extends StObject {
   
-  var DatePicker: js.UndefOr[DismissText] = js.native
+  var DatePicker: js.UndefOr[DismissText] = js.undefined
   
-  var DatePickerView: js.UndefOr[Day] = js.native
+  var DatePickerView: js.UndefOr[Day] = js.undefined
   
-  var InputItem: js.UndefOr[BackspaceLabel] = js.native
+  var InputItem: js.UndefOr[BackspaceLabel] = js.undefined
   
-  var ListView: js.UndefOr[Done] = js.native
+  var ListView: js.UndefOr[Done] = js.undefined
   
-  var Modal: js.UndefOr[ButtonText] = js.native
+  var Modal: js.UndefOr[ButtonText] = js.undefined
   
-  var Pagination: js.UndefOr[NextText] = js.native
+  var Pagination: js.UndefOr[NextText] = js.undefined
   
-  var Picker: js.UndefOr[Extra] = js.native
+  var Picker: js.UndefOr[Extra] = js.undefined
   
-  var SearchBar: js.UndefOr[CancelText] = js.native
+  var SearchBar: js.UndefOr[CancelText] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
 }
 object PartialLocale {
   

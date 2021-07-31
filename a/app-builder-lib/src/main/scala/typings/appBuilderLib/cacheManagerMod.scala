@@ -4,10 +4,13 @@ import typings.builderUtil.archMod.Arch
 import typings.node.cryptoMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheManagerMod {
+  
+  @JSImport("app-builder-lib/out/util/cacheManager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/util/cacheManager", "BuildCacheManager")
   @js.native
@@ -44,14 +47,12 @@ object cacheManagerMod {
     def VERSION_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("app-builder-lib/out/util/cacheManager", "digest")
-  @js.native
-  def digest(hash: Hash, files: js.Array[String]): js.Promise[String] = js.native
+  @scala.inline
+  def digest(hash: Hash, files: js.Array[String]): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("digest")(hash.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @js.native
   trait BuildCacheInfo extends StObject {
     
-    var executableDigest: String = js.native
+    var executableDigest: String
   }
   object BuildCacheInfo {
     

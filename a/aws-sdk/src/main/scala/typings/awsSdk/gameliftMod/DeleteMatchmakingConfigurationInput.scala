@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMatchmakingConfigurationInput extends StObject {
   
   /**
     * A unique identifier for a matchmaking configuration. You can use either the configuration name or ARN value.
     */
-  var Name: MatchmakingConfigurationName = js.native
+  var Name: MatchmakingConfigurationName
 }
 object DeleteMatchmakingConfigurationInput {
   

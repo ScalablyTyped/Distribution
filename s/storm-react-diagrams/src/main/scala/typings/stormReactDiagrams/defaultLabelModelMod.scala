@@ -3,7 +3,6 @@ package typings.stormReactDiagrams
 import typings.stormReactDiagrams.labelModelMod.LabelModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultLabelModelMod {

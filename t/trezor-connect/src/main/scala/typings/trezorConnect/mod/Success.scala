@@ -3,28 +3,28 @@ package typings.trezorConnect.mod
 import typings.trezorConnect.trezorConnectBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Success[T] extends ResponseMessage[T] {
+trait Success[T]
+  extends StObject
+     with ResponseMessage[T] {
   
-  var id: Double = js.native
+  var id: Double
   
-  var payload: T = js.native
+  var payload: T
   
-  var success: `true` = js.native
+  var success: `true`
 }
 object Success {
   
   @scala.inline
-  def apply[T](id: Double, payload: T, success: `true`): Success[T] = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+  def apply[T](id: Double, payload: T): Success[T] = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], payload = payload.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[Success[T]]
   }
   
   @scala.inline
-  implicit class SuccessMutableBuilder[Self <: Success[_], T] (val x: Self with Success[T]) extends AnyVal {
+  implicit class SuccessMutableBuilder[Self <: Success[?], T] (val x: Self & Success[T]) extends AnyVal {
     
     @scala.inline
     def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])

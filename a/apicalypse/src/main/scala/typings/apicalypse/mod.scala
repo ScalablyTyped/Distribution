@@ -4,23 +4,22 @@ import typings.axios.mod.AxiosRequestConfig
 import typings.axios.mod.AxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("apicalypse", JSImport.Default)
+  @JSImport("apicalypse", JSImport.Namespace)
   @js.native
-  def default(): Apicalypse = js.native
-  @JSImport("apicalypse", JSImport.Default)
-  @js.native
-  def default(options: ApicalypseConfig): Apicalypse = js.native
-  @JSImport("apicalypse", JSImport.Default)
-  @js.native
-  def default(rawQueryString: String): Apicalypse = js.native
-  @JSImport("apicalypse", JSImport.Default)
-  @js.native
-  def default(rawQueryString: String, options: ApicalypseConfig): Apicalypse = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(options: ApicalypseConfig): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(rawQueryString: String): Apicalypse = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any]).asInstanceOf[Apicalypse]
+  @scala.inline
+  def default(rawQueryString: String, options: ApicalypseConfig): Apicalypse = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(rawQueryString.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Apicalypse]
   
   @js.native
   trait Apicalypse extends StObject {
@@ -36,10 +35,10 @@ object mod {
     
     def query(endpoint: String, name: String): Apicalypse = js.native
     
-    def request(url: String): js.Promise[AxiosResponse[_]] = js.native
+    def request(url: String): js.Promise[AxiosResponse[js.Any]] = js.native
     
-    def requestAll(url: String): js.Promise[js.Array[_]] = js.native
-    def requestAll(url: String, options: RequestAllConfig): js.Promise[js.Array[_]] = js.native
+    def requestAll(url: String): js.Promise[js.Array[js.Any]] = js.native
+    def requestAll(url: String, options: RequestAllConfig): js.Promise[js.Array[js.Any]] = js.native
     
     def search(search: String): Apicalypse = js.native
     
@@ -50,10 +49,11 @@ object mod {
     def where(filters: js.Array[String]): Apicalypse = js.native
   }
   
-  @js.native
-  trait ApicalypseConfig extends AxiosRequestConfig {
+  trait ApicalypseConfig
+    extends StObject
+       with AxiosRequestConfig {
     
-    var queryMethod: js.UndefOr[QueryMethod] = js.native
+    var queryMethod: js.UndefOr[QueryMethod] = js.undefined
   }
   object ApicalypseConfig {
     
@@ -88,12 +88,11 @@ object mod {
     def url: typings.apicalypse.apicalypseStrings.url = "url".asInstanceOf[typings.apicalypse.apicalypseStrings.url]
   }
   
-  @js.native
   trait RequestAllConfig extends StObject {
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
   }
   object RequestAllConfig {
     

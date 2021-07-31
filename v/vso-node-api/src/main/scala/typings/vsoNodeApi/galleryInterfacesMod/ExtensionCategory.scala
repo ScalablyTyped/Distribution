@@ -2,38 +2,36 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionCategory extends StObject {
   
   /**
     * The name of the products with which this category is associated to.
     */
-  var associatedProducts: js.Array[String] = js.native
+  var associatedProducts: js.Array[String]
   
-  var categoryId: Double = js.native
+  var categoryId: Double
   
   /**
     * This is the internal name for a category
     */
-  var categoryName: String = js.native
+  var categoryName: String
   
   /**
     * This parameter is obsolete. Refer to LanguageTitles for langauge specific titles
     */
-  var language: String = js.native
+  var language: String
   
   /**
     * The list of all the titles of this category in various languages
     */
-  var languageTitles: js.Array[CategoryLanguageTitle] = js.native
+  var languageTitles: js.Array[CategoryLanguageTitle]
   
   /**
     * This is the internal name of the parent if this is associated with a parent
     */
-  var parentCategoryName: String = js.native
+  var parentCategoryName: String
 }
 object ExtensionCategory {
   

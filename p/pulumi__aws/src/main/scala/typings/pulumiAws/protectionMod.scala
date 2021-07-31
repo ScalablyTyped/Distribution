@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protectionMod {
@@ -38,6 +37,10 @@ object protectionMod {
   /* static members */
   object Protection {
     
+    @JSImport("@pulumi/aws/shield/protection", "Protection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Protection resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object protectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/shield/protection", "Protection.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Protection = js.native
-    @JSImport("@pulumi/aws/shield/protection", "Protection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Protection = js.native
-    @JSImport("@pulumi/aws/shield/protection", "Protection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProtectionState): Protection = js.native
-    @JSImport("@pulumi/aws/shield/protection", "Protection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProtectionState, opts: CustomResourceOptions): Protection = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProtectionState): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Protection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProtectionState, opts: CustomResourceOptions): Protection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Protection]
     
     /**
       * Returns true if the given object is an instance of Protection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/shield/protection", "Protection.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/shield/protection.Protection */ Boolean]
   }
   
-  @js.native
   trait ProtectionArgs extends StObject {
     
     /**
       * A friendly name for the Protection you are creating.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN (Amazon Resource Name) of the resource to be protected.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
   }
   object ProtectionArgs {
     
@@ -104,18 +101,17 @@ object protectionMod {
     }
   }
   
-  @js.native
   trait ProtectionState extends StObject {
     
     /**
       * A friendly name for the Protection you are creating.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN (Amazon Resource Name) of the resource to be protected.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
   }
   object ProtectionState {
     

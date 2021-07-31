@@ -2,16 +2,14 @@ package typings.sentiment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Apply extends StObject {
     
     @JSName("apply")
-    def apply(tokens: js.Array[String], cursor: Double, tokenScore: Double): Double = js.native
+    def apply(tokens: js.Array[String], cursor: Double, tokenScore: Double): Double
   }
   object Apply {
     

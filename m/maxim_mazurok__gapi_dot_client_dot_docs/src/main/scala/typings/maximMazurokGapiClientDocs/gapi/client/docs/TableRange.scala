@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRange extends StObject {
   
   /** The column span of the table range. */
-  var columnSpan: js.UndefOr[Double] = js.native
+  var columnSpan: js.UndefOr[Double] = js.undefined
   
   /** The row span of the table range. */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
   /** The cell location where the table range starts. */
-  var tableCellLocation: js.UndefOr[TableCellLocation] = js.native
+  var tableCellLocation: js.UndefOr[TableCellLocation] = js.undefined
 }
 object TableRange {
   

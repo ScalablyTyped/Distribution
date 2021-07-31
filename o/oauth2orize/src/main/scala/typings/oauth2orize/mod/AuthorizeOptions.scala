@@ -2,15 +2,13 @@ package typings.oauth2orize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizeOptions extends StObject {
   
-  var idLength: js.UndefOr[Double] = js.native
+  var idLength: js.UndefOr[Double] = js.undefined
   
-  var sessionKey: js.UndefOr[String] = js.native
+  var sessionKey: js.UndefOr[String] = js.undefined
 }
 object AuthorizeOptions {
   

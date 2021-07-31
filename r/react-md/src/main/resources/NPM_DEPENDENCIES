@@ -1,0 +1,16 @@
+{
+  "compile-dependencies" : [
+    {
+      "react-md" : "2.4.3"
+    }
+  ],
+  "test-dependencies" : [
+    {
+      "react-md" : "2.4.3"
+    }
+  ],
+  "compile-devDependencies" : [
+  ],
+  "test-devDependencies" : [
+  ]
+}

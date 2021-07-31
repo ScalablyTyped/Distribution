@@ -2,7 +2,6 @@ package typings.angularCompiler.publicApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "CssSelector")
@@ -12,7 +11,10 @@ class CssSelector ()
 /* static members */
 object CssSelector {
   
-  @JSImport("@angular/compiler/public_api", "CssSelector.parse")
+  @JSImport("@angular/compiler/public_api", "CssSelector")
   @js.native
-  def parse(selector: String): js.Array[typings.angularCompiler.selectorMod.CssSelector] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(selector: String): js.Array[typings.angularCompiler.selectorMod.CssSelector] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.angularCompiler.selectorMod.CssSelector]]
 }

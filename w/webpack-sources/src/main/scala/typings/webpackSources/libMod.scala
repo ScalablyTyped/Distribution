@@ -9,7 +9,6 @@ import typings.std.Map
 import typings.webpackSources.cachedSourceMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
@@ -34,10 +33,13 @@ object libMod {
   }
   object CompatSource {
     
-    /* static member */
-    @JSImport("webpack-sources/lib", "CompatSource.from")
+    @JSImport("webpack-sources/lib", "CompatSource")
     @js.native
-    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def from(sourceLike: SourceLike): typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(sourceLike.asInstanceOf[js.Any]).asInstanceOf[typings.webpackSources.sourceMod.^ | typings.webpackSources.compatSourceMod.CompatSource]
   }
   
   /**
@@ -134,20 +136,6 @@ object libMod {
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: String
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: RawSourceMap
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
       originalSource: String,
       innerSourceMap: String
     ) = this()
@@ -161,15 +149,15 @@ object libMod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: String
     ) = this()
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap
     ) = this()
     def this(
@@ -189,16 +177,22 @@ object libMod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: String
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: RawSourceMap
     ) = this()
     def this(
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
+      originalSource: String,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
@@ -206,24 +200,8 @@ object libMod {
       sourceCode: String,
       name: String,
       sourceMap: RawSourceMap,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: RawSourceMap,
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
       originalSource: String,
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: RawSourceMap,
-      originalSource: String,
-      innerSourceMap: String,
+      innerSourceMap: Unit,
       removeOriginalSource: Boolean
     ) = this()
     def this(
@@ -237,24 +215,24 @@ object libMod {
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
     def this(
       sourceCode: String,
       name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: js.UndefOr[scala.Nothing],
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: RawSourceMap,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap,
       removeOriginalSource: Boolean
     ) = this()
@@ -263,14 +241,6 @@ object libMod {
       name: String,
       sourceMap: SourceMapGenerator,
       originalSource: String,
-      innerSourceMap: js.UndefOr[scala.Nothing],
-      removeOriginalSource: Boolean
-    ) = this()
-    def this(
-      sourceCode: String,
-      name: String,
-      sourceMap: SourceMapGenerator,
-      originalSource: String,
       innerSourceMap: String,
       removeOriginalSource: Boolean
     ) = this()
@@ -279,21 +249,52 @@ object libMod {
       name: String,
       sourceMap: SourceMapGenerator,
       originalSource: String,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: String,
+      innerSourceMap: RawSourceMap,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: String,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
+      innerSourceMap: Unit,
+      removeOriginalSource: Boolean
+    ) = this()
+    def this(
+      sourceCode: String,
+      name: String,
+      sourceMap: SourceMapGenerator,
+      originalSource: Unit,
       innerSourceMap: RawSourceMap,
       removeOriginalSource: Boolean
     ) = this()
   }
   
-  @js.native
   trait CachedData extends StObject {
     
-    var buffer: js.UndefOr[Buffer] = js.native
+    var buffer: js.UndefOr[Buffer] = js.undefined
     
-    var cachedData: js.UndefOr[Map[_, _]] = js.native
+    var cachedData: js.UndefOr[Map[js.Any, js.Any]] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[String | Boolean] = js.native
+    var source: js.UndefOr[String | Boolean] = js.undefined
   }
   object CachedData {
     
@@ -313,7 +314,7 @@ object libMod {
       def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
       
       @scala.inline
-      def setCachedData(value: Map[_, _]): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
+      def setCachedData(value: Map[js.Any, js.Any]): Self = StObject.set(x, "cachedData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCachedDataUndefined: Self = StObject.set(x, "cachedData", js.undefined)
@@ -332,20 +333,19 @@ object libMod {
     }
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
     /**
       * If set to false the implementation may omit mappings for columns
       * @default true
       */
-    var columns: js.UndefOr[Boolean] = js.native
+    var columns: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to false the implementation may omit inner mappings for modules.
       * @default true
       */
-    var module: js.UndefOr[Boolean] = js.native
+    var module: js.UndefOr[Boolean] = js.undefined
   }
   object MapOptions {
     
@@ -372,18 +372,17 @@ object libMod {
     }
   }
   
-  @js.native
   trait Replacement extends StObject {
     
-    val content: String = js.native
+    val content: String
     
-    val end: Double = js.native
+    val end: Double
     
-    val insertIndex: Double = js.native
+    val insertIndex: Double
     
-    val name: String = js.native
+    val name: String
     
-    val start: Double = js.native
+    val start: Double
   }
   object Replacement {
     
@@ -431,18 +430,17 @@ object libMod {
     def sourceAndMap(options: MapOptions): SourceAndMapResult = js.native
   }
   
-  @js.native
   trait SourceAndMapResult extends StObject {
     
-    var map: RawSourceMap | Null = js.native
+    var map: RawSourceMap | Null
     
-    var source: String = js.native
+    var source: String
   }
   object SourceAndMapResult {
     
     @scala.inline
     def apply(source: String): SourceAndMapResult = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], map = null)
       __obj.asInstanceOf[SourceAndMapResult]
     }
     
@@ -461,20 +459,19 @@ object libMod {
   }
   
   /* Inlined std.Partial<std.Pick<webpack-sources.webpack-sources/lib.Source, 'source' | 'buffer' | 'size' | 'map' | 'sourceAndMap' | 'updateHash'>> */
-  @js.native
   trait SourceLike extends StObject {
     
-    var buffer: js.UndefOr[js.Function0[Buffer]] = js.native
+    var buffer: js.UndefOr[js.Function0[Buffer]] = js.undefined
     
-    var map: js.UndefOr[js.Function1[/* options */ js.UndefOr[MapOptions], RawSourceMap | Null]] = js.native
+    var map: js.UndefOr[js.Function1[/* options */ js.UndefOr[MapOptions], RawSourceMap | Null]] = js.undefined
     
-    var size: js.UndefOr[js.Function0[Double]] = js.native
+    var size: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var source: js.UndefOr[js.Function0[String | ArrayBuffer]] = js.native
+    var source: js.UndefOr[js.Function0[String | ArrayBuffer]] = js.undefined
     
-    var sourceAndMap: js.UndefOr[js.Function1[/* options */ js.UndefOr[MapOptions], SourceAndMapResult]] = js.native
+    var sourceAndMap: js.UndefOr[js.Function1[/* options */ js.UndefOr[MapOptions], SourceAndMapResult]] = js.undefined
     
-    var updateHash: js.UndefOr[js.Function1[/* hash */ Hash, Unit]] = js.native
+    var updateHash: js.UndefOr[js.Function1[/* hash */ Hash, Unit]] = js.undefined
   }
   object SourceLike {
     

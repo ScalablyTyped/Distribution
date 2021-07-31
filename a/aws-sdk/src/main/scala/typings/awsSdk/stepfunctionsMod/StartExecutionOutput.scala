@@ -2,21 +2,19 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartExecutionOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that id entifies the execution.
     */
-  var executionArn: Arn = js.native
+  var executionArn: Arn
   
   /**
     * The date the execution is started.
     */
-  var startDate: Timestamp = js.native
+  var startDate: Timestamp
 }
 object StartExecutionOutput {
   

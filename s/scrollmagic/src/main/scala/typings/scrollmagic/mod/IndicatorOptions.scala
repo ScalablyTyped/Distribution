@@ -2,23 +2,21 @@ package typings.scrollmagic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndicatorOptions extends StObject {
   
-  var colorEnd: js.UndefOr[String] = js.native
+  var colorEnd: js.UndefOr[String] = js.undefined
   
-  var colorStart: js.UndefOr[String] = js.native
+  var colorStart: js.UndefOr[String] = js.undefined
   
-  var colorTrigger: js.UndefOr[String] = js.native
+  var colorTrigger: js.UndefOr[String] = js.undefined
   
-  var indent: js.UndefOr[Double] = js.native
+  var indent: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[ElementOrSelector] = js.native
+  var parent: js.UndefOr[ElementOrSelector] = js.undefined
 }
 object IndicatorOptions {
   

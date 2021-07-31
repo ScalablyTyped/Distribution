@@ -2,29 +2,29 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItem extends BaseItem {
+trait ListItem
+  extends StObject
+     with BaseItem {
   
   // Analytics about the view activities that took place on this item.
-  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.native
+  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.undefined
   
   // The content type of this list item
-  var contentType: js.UndefOr[NullableOption[ContentTypeInfo]] = js.native
+  var contentType: js.UndefOr[NullableOption[ContentTypeInfo]] = js.undefined
   
   // For document libraries, the driveItem relationship exposes the listItem as a [driveItem][]
-  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
   // The values of the columns set on this list item.
-  var fields: js.UndefOr[NullableOption[FieldValueSet]] = js.native
+  var fields: js.UndefOr[NullableOption[FieldValueSet]] = js.undefined
   
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
   // The list of previous versions of the list item.
-  var versions: js.UndefOr[NullableOption[js.Array[ListItemVersion]]] = js.native
+  var versions: js.UndefOr[NullableOption[js.Array[ListItemVersion]]] = js.undefined
 }
 object ListItem {
   

@@ -2,27 +2,28 @@ package typings.parseCacheControl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(field: String): Header | Null = ^.asInstanceOf[js.Dynamic].apply(field.asInstanceOf[js.Any]).asInstanceOf[Header | Null]
+  
   @JSImport("parse-cache-control", JSImport.Namespace)
   @js.native
-  def apply(field: String): Header | Null = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Header extends StObject {
     
-    var `max-age`: js.UndefOr[Double] = js.native
+    var `max-age`: js.UndefOr[Double] = js.undefined
     
-    var `must-revalidate`: js.UndefOr[Boolean] = js.native
+    var `must-revalidate`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-cache`: js.UndefOr[Boolean] = js.native
+    var `no-cache`: js.UndefOr[Boolean] = js.undefined
     
-    var `no-store`: js.UndefOr[Boolean] = js.native
+    var `no-store`: js.UndefOr[Boolean] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
   }
   object Header {
     

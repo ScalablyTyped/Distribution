@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @description
   * A service to return macro information such as generating syntax to insert a macro into an editor
   */
-@js.native
 trait IMacroService extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMacroSyntax(args: js.Any*): Unit = js.native
+  def generateMacroSyntax(args: js.Any*): Unit
   
   /**
     * @ngdoc function
@@ -40,7 +38,7 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateMvcSyntax(args: js.Any*): Unit = js.native
+  def generateMvcSyntax(args: js.Any*): Unit
   
   /**
     * @ngdoc function
@@ -53,7 +51,7 @@ trait IMacroService extends StObject {
     *
     * @param {object} args an object containing the macro alias and it's parameter values
     */
-  def generateWebFormsSyntax(args: js.Any*): Unit = js.native
+  def generateWebFormsSyntax(args: js.Any*): Unit
 }
 object IMacroService {
   

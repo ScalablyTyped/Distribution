@@ -11,7 +11,6 @@ import typings.miniprogram.anon.SiteName
 import typings.miniprogram.anon.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

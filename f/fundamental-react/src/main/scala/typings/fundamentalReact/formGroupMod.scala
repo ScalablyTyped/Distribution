@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formGroupMod {
@@ -17,12 +16,11 @@ object formGroupMod {
   /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Forms/FormGroup.FormGroupProps> & {  displayName :'FormGroup'} */
   object default {
     
-    @JSImport("fundamental-react/lib/Forms/FormGroup", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[FormGroupProps]): ReactElement | Null = js.native
-    @JSImport("fundamental-react/lib/Forms/FormGroup", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[FormGroupProps], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[FormGroupProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[FormGroupProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("fundamental-react/lib/Forms/FormGroup", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -52,11 +50,11 @@ object formGroupMod {
     def propTypes_=(x: js.UndefOr[WeakValidationMapFormGrou]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait FormGroupProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
   }
   object FormGroupProps {
     

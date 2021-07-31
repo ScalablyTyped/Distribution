@@ -14,24 +14,27 @@ import typings.winrt.Windows.Storage.Search.IStorageFolderQueryOperations
 import typings.winrt.Windows.Storage.Search.IStorageQueryResultBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BulkAccess {
   
   @js.native
   trait FileInformation
-    extends IStorageFile
+    extends StObject
        with IStorageItemInformation
+       with IStorageFile
        with IStorageItemProperties
   
   @js.native
-  trait FileInformationFactory extends IFileInformationFactory
+  trait FileInformationFactory
+    extends StObject
+       with IFileInformationFactory
   
   @js.native
   trait FolderInformation
-    extends IStorageFolder
+    extends StObject
        with IStorageItemInformation
+       with IStorageFolder
        with IStorageItemProperties
        with IStorageFolderQueryOperations {
     
@@ -58,19 +61,18 @@ object BulkAccess {
     def getVirtualizedItemsVector(): js.Any = js.native
   }
   
-  @js.native
   trait IFileInformationFactoryFactory extends StObject {
     
-    def createWithMode(queryResult: IStorageQueryResultBase, mode: ThumbnailMode): FileInformationFactory = js.native
+    def createWithMode(queryResult: IStorageQueryResultBase, mode: ThumbnailMode): FileInformationFactory
     
-    def createWithModeAndSize(queryResult: IStorageQueryResultBase, mode: ThumbnailMode, requestedThumbnailSize: Double): FileInformationFactory = js.native
+    def createWithModeAndSize(queryResult: IStorageQueryResultBase, mode: ThumbnailMode, requestedThumbnailSize: Double): FileInformationFactory
     
     def createWithModeAndSizeAndOptions(
       queryResult: IStorageQueryResultBase,
       mode: ThumbnailMode,
       requestedThumbnailSize: Double,
       thumbnailOptions: ThumbnailOptions
-    ): FileInformationFactory = js.native
+    ): FileInformationFactory
     
     def createWithModeAndSizeAndOptionsAndFlags(
       queryResult: IStorageQueryResultBase,
@@ -78,7 +80,7 @@ object BulkAccess {
       requestedThumbnailSize: Double,
       thumbnailOptions: ThumbnailOptions,
       delayLoad: Boolean
-    ): FileInformationFactory = js.native
+    ): FileInformationFactory
   }
   object IFileInformationFactoryFactory {
     
@@ -114,24 +116,23 @@ object BulkAccess {
     }
   }
   
-  @js.native
   trait IStorageItemInformation extends StObject {
     
-    var basicProperties: BasicProperties = js.native
+    var basicProperties: BasicProperties
     
-    var documentProperties: DocumentProperties = js.native
+    var documentProperties: DocumentProperties
     
-    var imageProperties: ImageProperties = js.native
+    var imageProperties: ImageProperties
     
-    var musicProperties: MusicProperties = js.native
+    var musicProperties: MusicProperties
     
-    var onpropertiesupdated: js.Any = js.native
+    var onpropertiesupdated: js.Any
     
-    var onthumbnailupdated: js.Any = js.native
+    var onthumbnailupdated: js.Any
     
-    var thumbnail: StorageItemThumbnail = js.native
+    var thumbnail: StorageItemThumbnail
     
-    var videoProperties: VideoProperties = js.native
+    var videoProperties: VideoProperties
   }
   object IStorageItemInformation {
     

@@ -10,9 +10,9 @@ A geographic extension for [flatbush](https://github.com/mourner/flatbush), a ve
 | ------------------ | :-------------: |
 | Full name          | geoflatbush |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 542 |
+| # downloads        | 651 |
 | # stars            | 0 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PressableAndroidRippleConfig extends StObject {
   
-  var borderless: js.UndefOr[Null | Boolean] = js.native
+  var borderless: js.UndefOr[Null | Boolean] = js.undefined
   
-  var color: js.UndefOr[Null | ColorValue] = js.native
+  var color: js.UndefOr[Null | ColorValue] = js.undefined
   
-  var radius: js.UndefOr[Null | Double] = js.native
+  var radius: js.UndefOr[Null | Double] = js.undefined
 }
 object PressableAndroidRippleConfig {
   

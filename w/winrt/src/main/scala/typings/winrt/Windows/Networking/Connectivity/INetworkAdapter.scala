@@ -3,23 +3,21 @@ package typings.winrt.Windows.Networking.Connectivity
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkAdapter extends StObject {
   
-  def getConnectedProfileAsync(): IAsyncOperation[ConnectionProfile] = js.native
+  def getConnectedProfileAsync(): IAsyncOperation[ConnectionProfile]
   
-  var ianaInterfaceType: Double = js.native
+  var ianaInterfaceType: Double
   
-  var inboundMaxBitsPerSecond: Double = js.native
+  var inboundMaxBitsPerSecond: Double
   
-  var networkAdapterId: String = js.native
+  var networkAdapterId: String
   
-  var networkItem: NetworkItem = js.native
+  var networkItem: NetworkItem
   
-  var outboundMaxBitsPerSecond: Double = js.native
+  var outboundMaxBitsPerSecond: Double
 }
 object INetworkAdapter {
   

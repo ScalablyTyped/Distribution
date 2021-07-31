@@ -2,28 +2,26 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait BaseDirectionsStep extends StObject {
   
-  var distance: Distance = js.native
+  var distance: Distance
   
-  var duration: Duration = js.native
+  var duration: Duration
   
-  var end_location: LatLng = js.native
+  var end_location: LatLng
   
-  var instructions: String = js.native
+  var instructions: String
   
-  var path: js.Array[LatLng] = js.native
+  var path: js.Array[LatLng]
   
-  var start_location: LatLng = js.native
+  var start_location: LatLng
   
-  var transit: TransitDetails = js.native
+  var transit: TransitDetails
   
-  var travel_mode: TravelMode = js.native
+  var travel_mode: TravelMode
 }
 object BaseDirectionsStep {
   

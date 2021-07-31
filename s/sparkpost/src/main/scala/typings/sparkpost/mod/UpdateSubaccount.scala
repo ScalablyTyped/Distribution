@@ -2,20 +2,18 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubaccount extends StObject {
   
   /** id of the default IP pool assigned to subaccount"s transmissions */
-  var ip_pool: js.UndefOr[String] = js.native
+  var ip_pool: js.UndefOr[String] = js.undefined
   
   /** user-friendly name */
-  var name: String = js.native
+  var name: String
   
   /** status of the subaccount */
-  var status: String = js.native
+  var status: String
 }
 object UpdateSubaccount {
   

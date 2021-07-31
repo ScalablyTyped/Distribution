@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2MetadataLocation extends StObject {
   
   /** Storage metadata. */
-  var storageLabel: js.UndefOr[GooglePrivacyDlpV2StorageMetadataLabel] = js.native
+  var storageLabel: js.UndefOr[GooglePrivacyDlpV2StorageMetadataLabel] = js.undefined
   
   /** Type of metadata containing the finding. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2MetadataLocation {
   

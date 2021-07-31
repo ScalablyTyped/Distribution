@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -52,9 +51,8 @@ object HashedStringAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.create")
-  @js.native
-  def create(model: IModel): HashedStringAttributeType = js.native
+  @scala.inline
+  def create(model: IModel): HashedStringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[HashedStringAttributeType]
   
   /**
     * Creates and returns a new HashedStringAttributeType instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object HashedStringAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.createIn")
-  @js.native
-  def createIn(container: Attribute): HashedStringAttributeType = js.native
+  @scala.inline
+  def createIn(container: Attribute): HashedStringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[HashedStringAttributeType]
   
   /**
     * Creates and returns a new HashedStringAttributeType instance in the SDK and on the server.
@@ -75,9 +72,8 @@ object HashedStringAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.createInAttributeUnderType")
-  @js.native
-  def createInAttributeUnderType(container: Attribute): HashedStringAttributeType = js.native
+  @scala.inline
+  def createInAttributeUnderType(container: Attribute): HashedStringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[HashedStringAttributeType]
   
   /**
     * Creates and returns a new HashedStringAttributeType instance in the SDK and on the server.
@@ -88,9 +84,8 @@ object HashedStringAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.createInEntityKeyPartUnderType")
-  @js.native
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): HashedStringAttributeType = js.native
+  @scala.inline
+  def createInEntityKeyPartUnderType(container: EntityKeyPart): HashedStringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[HashedStringAttributeType]
   
   /**
     * Creates and returns a new HashedStringAttributeType instance in the SDK and on the server.
@@ -101,9 +96,8 @@ object HashedStringAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.createInODataKeyPartUnderType")
-  @js.native
-  def createInODataKeyPartUnderType(container: ODataKeyPart): HashedStringAttributeType = js.native
+  @scala.inline
+  def createInODataKeyPartUnderType(container: ODataKeyPart): HashedStringAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[HashedStringAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.HashedStringAttributeType.structureTypeName")

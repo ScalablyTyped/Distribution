@@ -2,50 +2,48 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diagnostic extends StObject {
   
   /**
     * The diagnostic's code, which usually appear in the user interface.
     */
-  var code: js.UndefOr[Double | String] = js.native
+  var code: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The diagnostic's message. It usually appears in the user interface
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The range at which the message applies
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * An array of related diagnostic information, e.g. when symbol-names within
     * a scope collide all definitions can be marked via this property.
     */
-  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.native
+  var relatedInformation: js.UndefOr[js.Array[DiagnosticRelatedInformation]] = js.undefined
   
   /**
     * The diagnostic's severity. Can be omitted. If omitted it is up to the
     * client to interpret diagnostics as error, warning, info or hint.
     */
-  var severity: js.UndefOr[DiagnosticSeverity] = js.native
+  var severity: js.UndefOr[DiagnosticSeverity] = js.undefined
   
   /**
     * A human-readable string describing the source of this
     * diagnostic, e.g. 'typescript' or 'super lint'. It usually
     * appears in the user interface.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * Additional metadata about the diagnostic.
     */
-  var tags: js.UndefOr[js.Array[DiagnosticTag]] = js.native
+  var tags: js.UndefOr[js.Array[DiagnosticTag]] = js.undefined
 }
 object Diagnostic {
   
@@ -55,143 +53,86 @@ object Diagnostic {
     __obj.asInstanceOf[Diagnostic]
   }
   
+  @JSImport("vscode-languageserver-types", "Diagnostic")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Diagnostic literal.
     */
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  @scala.inline
+  def create(range: Range, message: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: Unit, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: Unit, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: js.UndefOr[scala.Nothing],
-    code: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(
-    range: Range,
-    message: String,
-    severity: js.UndefOr[scala.Nothing],
-    code: js.UndefOr[scala.Nothing],
-    source: String
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(
-    range: Range,
-    message: String,
-    severity: js.UndefOr[scala.Nothing],
-    code: js.UndefOr[scala.Nothing],
-    source: String,
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: js.UndefOr[scala.Nothing], code: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(
-    range: Range,
-    message: String,
-    severity: js.UndefOr[scala.Nothing],
-    code: String,
-    source: js.UndefOr[scala.Nothing],
-    relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: js.UndefOr[scala.Nothing], code: String, source: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(
-    range: Range,
-    message: String,
-    severity: js.UndefOr[scala.Nothing],
+    severity: Unit,
     code: String,
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: js.UndefOr[scala.Nothing], code: Double): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: js.UndefOr[scala.Nothing],
-    code: Double,
-    source: js.UndefOr[scala.Nothing],
+    severity: Unit,
+    code: String,
+    source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: js.UndefOr[scala.Nothing], code: Double, source: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: Unit, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: Unit, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: js.UndefOr[scala.Nothing],
+    severity: Unit,
     code: Double,
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: DiagnosticSeverity): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: DiagnosticSeverity,
-    code: js.UndefOr[scala.Nothing],
-    source: js.UndefOr[scala.Nothing],
+    severity: Unit,
+    code: Double,
+    source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: Unit, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: DiagnosticSeverity,
-    code: js.UndefOr[scala.Nothing],
-    source: String
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(
-    range: Range,
-    message: String,
-    severity: DiagnosticSeverity,
-    code: js.UndefOr[scala.Nothing],
+    severity: Unit,
+    code: Unit,
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
-    severity: DiagnosticSeverity,
-    code: String,
-    source: js.UndefOr[scala.Nothing],
+    severity: Unit,
+    code: Unit,
+    source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String, source: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: String, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
@@ -199,25 +140,21 @@ object Diagnostic {
     code: String,
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
     severity: DiagnosticSeverity,
-    code: Double,
-    source: js.UndefOr[scala.Nothing],
+    code: String,
+    source: Unit,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
-  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = js.native
-  @JSImport("vscode-languageserver-types", "Diagnostic.create")
-  @js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Double, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
   def create(
     range: Range,
     message: String,
@@ -225,14 +162,42 @@ object Diagnostic {
     code: Double,
     source: String,
     relatedInformation: js.Array[DiagnosticRelatedInformation]
-  ): Diagnostic = js.native
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: Double,
+    source: Unit,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(range: Range, message: String, severity: DiagnosticSeverity, code: Unit, source: String): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: Unit,
+    source: String,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
+  @scala.inline
+  def create(
+    range: Range,
+    message: String,
+    severity: DiagnosticSeverity,
+    code: Unit,
+    source: Unit,
+    relatedInformation: js.Array[DiagnosticRelatedInformation]
+  ): Diagnostic = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(range.asInstanceOf[js.Any], message.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], code.asInstanceOf[js.Any], source.asInstanceOf[js.Any], relatedInformation.asInstanceOf[js.Any])).asInstanceOf[Diagnostic]
   
   /**
     * Checks whether the given literal conforms to the [Diagnostic](#Diagnostic) interface.
     */
-  @JSImport("vscode-languageserver-types", "Diagnostic.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.Diagnostic */ Boolean]
   
   @scala.inline
   implicit class DiagnosticMutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {

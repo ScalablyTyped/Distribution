@@ -2,15 +2,13 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateInfo extends StObject {
   
-  var Code: js.UndefOr[string] = js.native
+  var Code: js.UndefOr[string] = js.undefined
   
-  var Message: js.UndefOr[string] = js.native
+  var Message: js.UndefOr[string] = js.undefined
 }
 object StateInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDimensionRequest extends StObject {
   
   /**
     * The unique identifier for the dimension.
     */
-  var name: DimensionName = js.native
+  var name: DimensionName
 }
 object DescribeDimensionRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueryLoggingConfigResponse extends StObject {
   
   /**
     * A complex type that contains information about the query logging configuration that you specified in a GetQueryLoggingConfig request.
     */
-  var QueryLoggingConfig: typings.awsSdk.route53Mod.QueryLoggingConfig = js.native
+  var QueryLoggingConfig: typings.awsSdk.route53Mod.QueryLoggingConfig
 }
 object GetQueryLoggingConfigResponse {
   

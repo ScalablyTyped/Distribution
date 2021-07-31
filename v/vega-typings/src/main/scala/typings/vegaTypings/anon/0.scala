@@ -5,13 +5,13 @@ import typings.vegaTypings.encodeMod.RadialGradient
 import typings.vegaTypings.encodeMod._ColorValueRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `0` extends _ColorValueRef {
+trait `0`
+  extends StObject
+     with _ColorValueRef {
   
-  var value: LinearGradient | RadialGradient = js.native
+  var value: LinearGradient | RadialGradient
 }
 object `0` {
   

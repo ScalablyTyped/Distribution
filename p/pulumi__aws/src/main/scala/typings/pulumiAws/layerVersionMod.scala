@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerVersionMod {
@@ -99,6 +98,10 @@ object layerVersionMod {
   /* static members */
   object LayerVersion {
     
+    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LayerVersion resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -108,75 +111,69 @@ object layerVersionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LayerVersion = js.native
-    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LayerVersion = js.native
-    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LayerVersionState): LayerVersion = js.native
-    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LayerVersionState, opts: CustomResourceOptions): LayerVersion = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LayerVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LayerVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LayerVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LayerVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LayerVersionState): LayerVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LayerVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LayerVersionState, opts: CustomResourceOptions): LayerVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LayerVersion]
     
     /**
       * Returns true if the given object is an instance of LayerVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/layerVersion", "LayerVersion.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/layerVersion.LayerVersion */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/layerVersion.LayerVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/layerVersion.LayerVersion */ Boolean]
   }
   
-  @js.native
   trait LayerVersionArgs extends StObject {
     
     /**
       * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
       */
-    val code: js.UndefOr[Input[Archive]] = js.native
+    val code: js.UndefOr[Input[Archive]] = js.undefined
     
     /**
       * A list of [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-CompatibleRuntimes) this layer is compatible with. Up to 5 runtimes can be specified.
       */
-    val compatibleRuntimes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val compatibleRuntimes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Description of what your Lambda Layer does.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for your Lambda Layer
       */
-    val layerName: Input[String] = js.native
+    val layerName: Input[String]
     
     /**
       * License info for your Lambda Layer. See [License Info](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-LicenseInfo).
       */
-    val licenseInfo: js.UndefOr[Input[String]] = js.native
+    val licenseInfo: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3Key: js.UndefOr[Input[String]] = js.native
+    val s3Key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object version containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3ObjectVersion: js.UndefOr[Input[String]] = js.native
+    val s3ObjectVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3Key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
       */
-    val sourceCodeHash: js.UndefOr[Input[String]] = js.native
+    val sourceCodeHash: js.UndefOr[Input[String]] = js.undefined
   }
   object LayerVersionArgs {
     
@@ -245,78 +242,77 @@ object layerVersionMod {
     }
   }
   
-  @js.native
   trait LayerVersionState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Lambda Layer with version.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The path to the function's deployment package within the local filesystem. If defined, The `s3_`-prefixed options cannot be used.
       */
-    val code: js.UndefOr[Input[Archive]] = js.native
+    val code: js.UndefOr[Input[Archive]] = js.undefined
     
     /**
       * A list of [Runtimes](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-CompatibleRuntimes) this layer is compatible with. Up to 5 runtimes can be specified.
       */
-    val compatibleRuntimes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val compatibleRuntimes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The date this resource was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of what your Lambda Layer does.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the Lambda Layer without version.
       */
-    val layerArn: js.UndefOr[Input[String]] = js.native
+    val layerArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for your Lambda Layer
       */
-    val layerName: js.UndefOr[Input[String]] = js.native
+    val layerName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * License info for your Lambda Layer. See [License Info](https://docs.aws.amazon.com/lambda/latest/dg/API_PublishLayerVersion.html#SSS-PublishLayerVersion-request-LicenseInfo).
       */
-    val licenseInfo: js.UndefOr[Input[String]] = js.native
+    val licenseInfo: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 bucket location containing the function's deployment package. Conflicts with `filename`. This bucket must reside in the same AWS region where you are creating the Lambda function.
       */
-    val s3Bucket: js.UndefOr[Input[String]] = js.native
+    val s3Bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The S3 key of an object containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3Key: js.UndefOr[Input[String]] = js.native
+    val s3Key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The object version containing the function's deployment package. Conflicts with `filename`.
       */
-    val s3ObjectVersion: js.UndefOr[Input[String]] = js.native
+    val s3ObjectVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Used to trigger updates. Must be set to a base64-encoded SHA256 hash of the package file specified with either `filename` or `s3Key`. The usual way to set this is `${filebase64sha256("file.zip")}` (this provider 0.11.12 or later) or `${base64sha256(file("file.zip"))}` (this provider 0.11.11 and earlier), where "file.zip" is the local filename of the lambda layer source archive.
       */
-    val sourceCodeHash: js.UndefOr[Input[String]] = js.native
+    val sourceCodeHash: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size in bytes of the function .zip file.
       */
-    val sourceCodeSize: js.UndefOr[Input[Double]] = js.native
+    val sourceCodeSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * This Lamba Layer version.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object LayerVersionState {
     

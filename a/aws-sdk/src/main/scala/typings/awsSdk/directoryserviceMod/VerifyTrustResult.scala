@@ -2,16 +2,14 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyTrustResult extends StObject {
   
   /**
     * The unique Trust ID of the trust relationship that was verified.
     */
-  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.native
+  var TrustId: js.UndefOr[typings.awsSdk.directoryserviceMod.TrustId] = js.undefined
 }
 object VerifyTrustResult {
   

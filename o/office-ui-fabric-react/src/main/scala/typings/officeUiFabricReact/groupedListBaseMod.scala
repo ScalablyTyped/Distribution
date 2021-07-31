@@ -9,7 +9,6 @@ import typings.react.mod.Component
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupedListBaseMod {
@@ -80,23 +79,21 @@ object groupedListBaseMod {
     @scala.inline
     def defaultProps_=(x: Compact): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("office-ui-fabric-react/lib/components/GroupedList/GroupedList.base", "GroupedListBase.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IGroupedListProps, previousState: IGroupedListState): IGroupedListState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IGroupedListState]
   }
   
-  @js.native
   trait IGroupedListState extends StObject {
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var groups: js.UndefOr[js.Array[IGroup]] = js.native
+    var groups: js.UndefOr[js.Array[IGroup]] = js.undefined
     
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var listProps: js.UndefOr[IListProps[_]] = js.native
+    var listProps: js.UndefOr[IListProps[js.Any]] = js.undefined
     
-    var selectionMode: js.UndefOr[SelectionMode] = js.native
+    var selectionMode: js.UndefOr[SelectionMode] = js.undefined
   }
   object IGroupedListState {
     
@@ -125,7 +122,7 @@ object groupedListBaseMod {
       def setGroupsVarargs(value: IGroup*): Self = StObject.set(x, "groups", js.Array(value :_*))
       
       @scala.inline
-      def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+      def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)
@@ -134,7 +131,7 @@ object groupedListBaseMod {
       def setItemsVarargs(value: js.Any*): Self = StObject.set(x, "items", js.Array(value :_*))
       
       @scala.inline
-      def setListProps(value: IListProps[_]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
+      def setListProps(value: IListProps[js.Any]): Self = StObject.set(x, "listProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListPropsUndefined: Self = StObject.set(x, "listProps", js.undefined)

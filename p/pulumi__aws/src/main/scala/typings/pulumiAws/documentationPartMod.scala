@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentationPartMod {
@@ -44,6 +43,10 @@ object documentationPartMod {
   /* static members */
   object DocumentationPart {
     
+    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DocumentationPart resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,45 +56,39 @@ object documentationPartMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DocumentationPart = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DocumentationPart = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentationPartState): DocumentationPart = js.native
-    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DocumentationPartState, opts: CustomResourceOptions): DocumentationPart = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentationPartState): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DocumentationPartState, opts: CustomResourceOptions): DocumentationPart = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DocumentationPart]
     
     /**
       * Returns true if the given object is an instance of DocumentationPart.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigateway/documentationPart", "DocumentationPart.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/documentationPart.DocumentationPart */ Boolean]
   }
   
-  @js.native
   trait DocumentationPartArgs extends StObject {
     
     /**
       * The location of the targeted API entity of the to-be-created documentation part. See below.
       */
-    val location: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation] = js.native
+    val location: Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]
     
     /**
       * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant key-value pairs can be exported and, hence, published.
       */
-    val properties: Input[String] = js.native
+    val properties: Input[String]
     
     /**
       * The ID of the associated Rest API
       */
-    val restApiId: Input[String] = js.native
+    val restApiId: Input[String]
   }
   object DocumentationPartArgs {
     
@@ -119,23 +116,22 @@ object documentationPartMod {
     }
   }
   
-  @js.native
   trait DocumentationPartState extends StObject {
     
     /**
       * The location of the targeted API entity of the to-be-created documentation part. See below.
       */
-    val location: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]] = js.native
+    val location: js.UndefOr[Input[typings.pulumiAws.inputMod.apigateway.DocumentationPartLocation]] = js.undefined
     
     /**
       * A content map of API-specific key-value pairs describing the targeted API entity. The map must be encoded as a JSON string, e.g., "{ \"description\": \"The API does ...\" }". Only Swagger-compliant key-value pairs can be exported and, hence, published.
       */
-    val properties: js.UndefOr[Input[String]] = js.native
+    val properties: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the associated Rest API
       */
-    val restApiId: js.UndefOr[Input[String]] = js.native
+    val restApiId: js.UndefOr[Input[String]] = js.undefined
   }
   object DocumentationPartState {
     

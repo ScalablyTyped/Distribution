@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the SlicerItem object, for use in `slicerItem.set({ ... })`. */
-@js.native
 trait SlicerItemUpdateData extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SlicerItemUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
 }
 object SlicerItemUpdateData {
   

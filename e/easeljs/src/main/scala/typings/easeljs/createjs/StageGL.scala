@@ -7,20 +7,21 @@ import typings.std.WebGLRenderingContext
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StageGL extends Stage {
+trait StageGL
+  extends StObject
+     with Stage {
   
   var autoPurge: Double = js.native
   
   def cacheDraw(target: DisplayObject, filters: js.Array[Filter], manager: BitmapCache): Boolean = js.native
   
   def getBaseTexture(): WebGLTexture | Null = js.native
-  def getBaseTexture(w: js.UndefOr[scala.Nothing], h: Double): WebGLTexture | Null = js.native
   def getBaseTexture(w: Double): WebGLTexture | Null = js.native
   def getBaseTexture(w: Double, h: Double): WebGLTexture | Null = js.native
+  def getBaseTexture(w: Unit, h: Double): WebGLTexture | Null = js.native
   
   def getFilterShader(filter: js.Object): WebGLProgram = js.native
   def getFilterShader(filter: Filter): WebGLProgram = js.native

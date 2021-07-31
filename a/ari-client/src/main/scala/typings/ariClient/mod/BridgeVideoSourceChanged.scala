@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BridgeVideoSourceChanged extends Event {
+trait BridgeVideoSourceChanged
+  extends StObject
+     with Event {
   
   /**
     * Bridge.
     */
-  var bridge: Bridge = js.native
+  var bridge: Bridge
   
   /**
     * Old_video_source_id.
     */
-  var old_video_source_id: js.UndefOr[String] = js.native
+  var old_video_source_id: js.UndefOr[String] = js.undefined
 }
 object BridgeVideoSourceChanged {
   

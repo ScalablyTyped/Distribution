@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workingStorageMod {
@@ -38,6 +37,10 @@ object workingStorageMod {
   /* static members */
   object WorkingStorage {
     
+    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WorkingStorage resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object workingStorageMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkingStorageState): WorkingStorage = js.native
-    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): WorkingStorage = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkingStorageState): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WorkingStorageState, opts: CustomResourceOptions): WorkingStorage = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WorkingStorage]
     
     /**
       * Returns true if the given object is an instance of WorkingStorage.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/storagegateway/workingStorage", "WorkingStorage.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/storagegateway/workingStorage.WorkingStorage */ Boolean]
   }
   
-  @js.native
   trait WorkingStorageArgs extends StObject {
     
     /**
       * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
       */
-    val diskId: Input[String] = js.native
+    val diskId: Input[String]
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: Input[String] = js.native
+    val gatewayArn: Input[String]
   }
   object WorkingStorageArgs {
     
@@ -101,18 +98,17 @@ object workingStorageMod {
     }
   }
   
-  @js.native
   trait WorkingStorageState extends StObject {
     
     /**
       * Local disk identifier. For example, `pci-0000:03:00.0-scsi-0:0:0:0`.
       */
-    val diskId: js.UndefOr[Input[String]] = js.native
+    val diskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the gateway.
       */
-    val gatewayArn: js.UndefOr[Input[String]] = js.native
+    val gatewayArn: js.UndefOr[Input[String]] = js.undefined
   }
   object WorkingStorageState {
     

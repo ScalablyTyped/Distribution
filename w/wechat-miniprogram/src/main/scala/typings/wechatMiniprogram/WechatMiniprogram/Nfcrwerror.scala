@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nfcrwerror extends StObject {
   
   /** 错误码
@@ -27,7 +25,7 @@ trait Nfcrwerror extends StObject {
     * | 13015 | unavailable tech | 从标签上获取对应技术失败 |
     * | 13024 | function not support | 当前标签技术不支持该功能 |
     * | 13017 | system internal error | 相关读写操作失败 |
-    * | 13016 | connect fail | 连接失败 | */ var errCode: Double = js.native
+    * | 13016 | connect fail | 连接失败 | */ var errCode: Double
   
   /** 错误信息
     *
@@ -48,7 +46,7 @@ trait Nfcrwerror extends StObject {
     * | 13015 | unavailable tech | 从标签上获取对应技术失败 |
     * | 13024 | function not support | 当前标签技术不支持该功能 |
     * | 13017 | system internal error | 相关读写操作失败 |
-    * | 13016 | connect fail | 连接失败 | */ var errMsg: String = js.native
+    * | 13016 | connect fail | 连接失败 | */ var errMsg: String
 }
 object Nfcrwerror {
   

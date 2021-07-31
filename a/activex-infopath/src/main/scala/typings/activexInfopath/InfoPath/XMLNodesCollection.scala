@@ -3,18 +3,16 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLNodesCollection extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
   @JSName("InfoPath.XMLNodesCollection_typekey")
-  var InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection = js.native
+  var InfoPathDotXMLNodesCollection_typekey: XMLNodesCollection
   
-  def Item(varIndex: js.Any): IXMLDOMNode = js.native
+  def Item(varIndex: js.Any): IXMLDOMNode
 }
 object XMLNodesCollection {
   

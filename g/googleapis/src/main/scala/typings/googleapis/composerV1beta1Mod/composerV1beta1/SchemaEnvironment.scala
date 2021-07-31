@@ -3,24 +3,22 @@ package typings.googleapis.composerV1beta1Mod.composerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An environment for running orchestration tasks.
   */
-@js.native
 trait SchemaEnvironment extends StObject {
   
   /**
     * Configuration parameters for this environment.
     */
-  var config: js.UndefOr[SchemaEnvironmentConfig] = js.native
+  var config: js.UndefOr[SchemaEnvironmentConfig] = js.undefined
   
   /**
     * Output only. The time at which this environment was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. User-defined labels for this environment. The labels map can
@@ -30,30 +28,30 @@ trait SchemaEnvironment extends StObject {
     * [\p{Ll}\p{Lo}\p{N}_-]{0,63} * Both keys and values are additionally
     * constrained to be &lt;= 128 bytes in size.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The resource name of the environment, in the form:
     * &quot;projects/{projectId}/locations/{locationId}/environments/{environmentId}&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the environment.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which this environment was last modified.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The UUID (Universally Unique IDentifier) associated with
     * this environment. This value is generated when the environment is
     * created.
     */
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object SchemaEnvironment {
   

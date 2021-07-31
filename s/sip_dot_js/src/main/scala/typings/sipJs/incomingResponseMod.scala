@@ -3,16 +3,14 @@ package typings.sipJs
 import typings.sipJs.incomingResponseMessageMod.IncomingResponseMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object incomingResponseMod {
   
-  @js.native
   trait IncomingResponse extends StObject {
     
     /** The incoming message. */
-    val message: IncomingResponseMessage = js.native
+    val message: IncomingResponseMessage
   }
   object IncomingResponse {
     

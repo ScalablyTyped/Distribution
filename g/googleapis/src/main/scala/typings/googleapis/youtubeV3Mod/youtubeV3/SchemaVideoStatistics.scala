@@ -2,43 +2,41 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Statistics about the video, such as the number of times the video was
   * viewed or liked.
   */
-@js.native
 trait SchemaVideoStatistics extends StObject {
   
   /**
     * The number of comments for the video.
     */
-  var commentCount: js.UndefOr[String] = js.native
+  var commentCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of users who have indicated that they disliked the video by
     * giving it a negative rating.
     */
-  var dislikeCount: js.UndefOr[String] = js.native
+  var dislikeCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of users who currently have the video marked as a favorite
     * video.
     */
-  var favoriteCount: js.UndefOr[String] = js.native
+  var favoriteCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of users who have indicated that they liked the video by
     * giving it a positive rating.
     */
-  var likeCount: js.UndefOr[String] = js.native
+  var likeCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times the video has been viewed.
     */
-  var viewCount: js.UndefOr[String] = js.native
+  var viewCount: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoStatistics {
   

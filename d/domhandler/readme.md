@@ -10,9 +10,9 @@ Handler for htmlparser2 that turns pages into a dom
 | ------------------ | :-------------: |
 | Full name          | domhandler |
 | Keywords           | dom, htmlparser2 |
-| # releases         | 5 |
-| # dependents       | 115 |
-| # downloads        | 491057770 |
+| # releases         | 6 |
+| # dependents       | 123 |
+| # downloads        | 539946235 |
 | # stars            | 5 |
 
 ## Links

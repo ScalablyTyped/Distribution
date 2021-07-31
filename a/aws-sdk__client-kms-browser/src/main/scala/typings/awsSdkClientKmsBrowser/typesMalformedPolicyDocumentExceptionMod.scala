@@ -4,26 +4,23 @@ import typings.awsSdkClientKmsBrowser.createKeyExceptionsUnionMod.CreateKeyExcep
 import typings.awsSdkClientKmsBrowser.putKeyPolicyExceptionsUnionMod.PutKeyPolicyExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMalformedPolicyDocumentExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MalformedPolicyDocumentExceptionDetails> * / any */ @js.native
-  trait MalformedPolicyDocumentException
-    extends CreateKeyExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MalformedPolicyDocumentExceptionDetails> * / any */ trait MalformedPolicyDocumentException
+    extends StObject
+       with CreateKeyExceptionsUnion
        with PutKeyPolicyExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.MalformedPolicyDocumentException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.MalformedPolicyDocumentException
   }
   object MalformedPolicyDocumentException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.MalformedPolicyDocumentException
-    ): MalformedPolicyDocumentException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): MalformedPolicyDocumentException = {
+      val __obj = js.Dynamic.literal(name = "MalformedPolicyDocumentException")
       __obj.asInstanceOf[MalformedPolicyDocumentException]
     }
     
@@ -37,13 +34,12 @@ object typesMalformedPolicyDocumentExceptionMod {
     }
   }
   
-  @js.native
   trait MalformedPolicyDocumentExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object MalformedPolicyDocumentExceptionDetails {
     

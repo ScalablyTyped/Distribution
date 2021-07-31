@@ -2,17 +2,17 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComposeTransactionParams extends CommonParams {
+trait ComposeTransactionParams
+  extends StObject
+     with CommonParams {
   
-  var coin: String = js.native
+  var coin: String
   
-  var outputs: js.Array[Output] = js.native
+  var outputs: js.Array[Output]
   
-  var push: js.UndefOr[Boolean] = js.native
+  var push: js.UndefOr[Boolean] = js.undefined
 }
 object ComposeTransactionParams {
   

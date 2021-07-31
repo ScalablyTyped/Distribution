@@ -3,50 +3,52 @@ package typings.stackUtils
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("stack-utils", JSImport.Namespace)
   @js.native
-  class ^ () extends StackUtils {
+  class ^ ()
+    extends StObject
+       with StackUtils {
     def this(options: Options) = this()
   }
+  @JSImport("stack-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("stack-utils", "nodeInternals")
-  @js.native
-  def nodeInternals(): js.Array[RegExp] = js.native
+  @scala.inline
+  def nodeInternals(): js.Array[RegExp] = ^.asInstanceOf[js.Dynamic].applyDynamic("nodeInternals")().asInstanceOf[js.Array[RegExp]]
   
-  @js.native
   trait CallSite extends StObject {
     
-    def getColumnNumber(): Double = js.native
+    def getColumnNumber(): Double
     
-    def getEvalOrigin(): CallSite | String = js.native
+    def getEvalOrigin(): CallSite | String
     
-    def getFileName(): js.UndefOr[String] = js.native
+    def getFileName(): js.UndefOr[String]
     
-    def getFunction(): js.UndefOr[js.Function] = js.native
+    def getFunction(): js.UndefOr[js.Function]
     
-    def getFunctionName(): String = js.native
+    def getFunctionName(): String
     
-    def getLineNumber(): Double = js.native
+    def getLineNumber(): Double
     
-    def getMethodName(): String | Null = js.native
+    def getMethodName(): String | Null
     
-    def getThis(): js.UndefOr[js.Object] = js.native
+    def getThis(): js.UndefOr[js.Object]
     
-    def getTypeName(): String = js.native
+    def getTypeName(): String
     
-    def isConstructor(): Boolean = js.native
+    def isConstructor(): Boolean
     
-    def isEval(): Boolean = js.native
+    def isEval(): Boolean
     
-    def isNative(): Boolean = js.native
+    def isNative(): Boolean
     
-    def isToplevel(): Boolean = js.native
+    def isToplevel(): Boolean
   }
   object CallSite {
     
@@ -114,10 +116,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait CallSiteLike extends StackData {
+  trait CallSiteLike
+    extends StObject
+       with StackData {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CallSiteLike {
     
@@ -138,16 +141,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var ignoredPackages: js.UndefOr[js.Array[String]] = js.native
+    var ignoredPackages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var internals: js.UndefOr[js.Array[RegExp]] = js.native
+    var internals: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var wrapCallSite: js.UndefOr[js.Function1[/* callSite */ CallSite, CallSite]] = js.native
+    var wrapCallSite: js.UndefOr[js.Function1[/* callSite */ CallSite, CallSite]] = js.undefined
   }
   object Options {
     
@@ -192,24 +194,23 @@ object mod {
     }
   }
   
-  @js.native
   trait StackData extends StObject {
     
-    var column: js.UndefOr[Double] = js.native
+    var column: js.UndefOr[Double] = js.undefined
     
-    var constructor: js.UndefOr[Boolean] = js.native
+    var constructor: js.UndefOr[Boolean] = js.undefined
     
-    var evalOrigin: js.UndefOr[String] = js.native
+    var evalOrigin: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var function: js.UndefOr[String] = js.native
+    var function: js.UndefOr[String] = js.undefined
     
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var native: js.UndefOr[Boolean] = js.native
+    var native: js.UndefOr[Boolean] = js.undefined
   }
   object StackData {
     
@@ -272,14 +273,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait StackLineData extends StackData {
+  trait StackLineData
+    extends StObject
+       with StackData {
     
-    var evalColumn: js.UndefOr[Double] = js.native
+    var evalColumn: js.UndefOr[Double] = js.undefined
     
-    var evalFile: js.UndefOr[String] = js.native
+    var evalFile: js.UndefOr[String] = js.undefined
     
-    var evalLine: js.UndefOr[Double] = js.native
+    var evalLine: js.UndefOr[Double] = js.undefined
   }
   object StackLineData {
     
@@ -319,15 +321,15 @@ object mod {
     def at(startStackFunction: js.Function): CallSiteLike = js.native
     
     def capture(): js.Array[CallSite] = js.native
-    def capture(limit: js.UndefOr[scala.Nothing], startStackFunction: js.Function): js.Array[CallSite] = js.native
     def capture(limit: Double): js.Array[CallSite] = js.native
     def capture(limit: Double, startStackFunction: js.Function): js.Array[CallSite] = js.native
+    def capture(limit: Unit, startStackFunction: js.Function): js.Array[CallSite] = js.native
     def capture(startStackFunction: js.Function): js.Array[CallSite] = js.native
     
     def captureString(): String = js.native
-    def captureString(limit: js.UndefOr[scala.Nothing], startStackFunction: js.Function): String = js.native
     def captureString(limit: Double): String = js.native
     def captureString(limit: Double, startStackFunction: js.Function): String = js.native
+    def captureString(limit: Unit, startStackFunction: js.Function): String = js.native
     def captureString(startStackFunction: js.Function): String = js.native
     
     def clean(stack: String): String = js.native

@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDeploymentResult extends StObject {
   
   /**
     *  The summary for the job. 
     */
-  var jobSummary: JobSummary = js.native
+  var jobSummary: JobSummary
 }
 object StartDeploymentResult {
   

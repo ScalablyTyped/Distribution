@@ -2,24 +2,23 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CDC
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
   @JSName("type")
-  var type_CDC: typings.cssTree.cssTreeStrings.CDC = js.native
+  var type_CDC: typings.cssTree.cssTreeStrings.CDC
 }
 object CDC {
   
   @scala.inline
-  def apply(`type`: typings.cssTree.cssTreeStrings.CDC): CDC = {
+  def apply(): CDC = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CDC")
     __obj.asInstanceOf[CDC]
   }
   

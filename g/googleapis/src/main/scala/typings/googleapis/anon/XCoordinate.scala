@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XCoordinate extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xCoordinate: js.UndefOr[Double] = js.native
+  var xCoordinate: js.UndefOr[Double] = js.undefined
   
-  var yCoordinate: js.UndefOr[Double] = js.native
+  var yCoordinate: js.UndefOr[Double] = js.undefined
 }
 object XCoordinate {
   

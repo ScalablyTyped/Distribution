@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApplicationInput extends StObject {
   
   /**
     * The name of the application. This name must be unique with the applicable IAM user or AWS account.
     */
-  var applicationName: ApplicationName = js.native
+  var applicationName: ApplicationName
   
   /**
     *  The destination platform type for the deployment (Lambda, Server, or ECS).
     */
-  var computePlatform: js.UndefOr[ComputePlatform] = js.native
+  var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   
   /**
     *  The metadata that you apply to CodeDeploy applications to help you organize and categorize them. Each tag consists of a key and an optional value, both of which you define. 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateApplicationInput {
   

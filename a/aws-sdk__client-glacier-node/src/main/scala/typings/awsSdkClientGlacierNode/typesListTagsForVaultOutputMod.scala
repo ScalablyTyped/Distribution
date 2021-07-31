@@ -5,24 +5,24 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListTagsForVaultOutputMod {
   
-  @js.native
-  trait ListTagsForVaultOutput extends _OutputTypesUnion {
+  trait ListTagsForVaultOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The tags attached to the vault. Each tag is composed of a key and a value.</p>
       */
-    var Tags: js.UndefOr[StringDictionary[String]] = js.native
+    var Tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object ListTagsForVaultOutput {
     

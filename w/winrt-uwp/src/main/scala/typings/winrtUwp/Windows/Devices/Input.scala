@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.mousemoved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for identifying the input devices available (pointer, touch, mouse, and keyboard) and retrieving information about those devices. */
@@ -23,23 +22,28 @@ object Input {
     
     /** Mouse */
     @js.native
-    sealed trait mouse extends PointerDeviceType
+    sealed trait mouse
+      extends StObject
+         with PointerDeviceType
     
     /** Pen */
     @js.native
-    sealed trait pen extends PointerDeviceType
+    sealed trait pen
+      extends StObject
+         with PointerDeviceType
     
     /** A touch-enabled device */
     @js.native
-    sealed trait touch extends PointerDeviceType
+    sealed trait touch
+      extends StObject
+         with PointerDeviceType
   }
   
   /** Supports the ability to determine the capabilities of any connected hardware keyboards. */
-  @js.native
   trait KeyboardCapabilities extends StObject {
     
     /** Gets a value that indicates whether a hardware keyboard is detected. */
-    var keyboardPresent: Double = js.native
+    var keyboardPresent: Double
   }
   object KeyboardCapabilities {
     
@@ -58,23 +62,22 @@ object Input {
   }
   
   /** Supports the ability to determine the capabilities of any connected mouse devices. */
-  @js.native
   trait MouseCapabilities extends StObject {
     
     /** Gets a value indicating whether any of the mice connected to the computer have a scroll wheel that tilts left and right (usually for horizontal scrolling). */
-    var horizontalWheelPresent: Double = js.native
+    var horizontalWheelPresent: Double
     
     /** Gets a value that indicates whether a mouse device is detected. */
-    var mousePresent: Double = js.native
+    var mousePresent: Double
     
     /** Gets a value representing the number of buttons on the mouse. If multiple mice are present, it returns the number of buttons of the mouse which has maximum number of buttons. */
-    var numberOfButtons: Double = js.native
+    var numberOfButtons: Double
     
     /** Gets a value indicating whether any of the mice connected to the computer has swapped left and right buttons. */
-    var swapButtons: Double = js.native
+    var swapButtons: Double
     
     /** Gets a value indicating whether any of the mice connected to the computer have a scroll wheel that rolls up and down (usually for vertical scrolling). */
-    var verticalWheelPresent: Double = js.native
+    var verticalWheelPresent: Double
   }
   object MouseCapabilities {
     
@@ -111,14 +114,13 @@ object Input {
   }
   
   /** Identifies the change in screen location of the mouse pointer, relative to the location of the last mouse event. */
-  @js.native
   trait MouseDelta extends StObject {
     
     /** The x-coordinate of the mouse pointer, relative to the location of the last mouse event. */
-    var x: Double = js.native
+    var x: Double
     
     /** The y-coordinate of the mouse pointer, relative to the location of the last mouse event. */
-    var y: Double = js.native
+    var y: Double
   }
   object MouseDelta {
     
@@ -143,27 +145,26 @@ object Input {
   @js.native
   trait MouseDevice extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_mousemoved(`type`: mousemoved, listener: TypedEventHandler[MouseDevice, MouseEventArgs]): Unit = js.native
     
     /** Occurs when the mouse pointer is moved. */
-    def onmousemoved(ev: MouseEventArgs with WinRTEvent[MouseDevice]): Unit = js.native
+    def onmousemoved(ev: MouseEventArgs & WinRTEvent[MouseDevice]): Unit = js.native
     /** Occurs when the mouse pointer is moved. */
     @JSName("onmousemoved")
     var onmousemoved_Original: TypedEventHandler[MouseDevice, MouseEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_mousemoved(`type`: mousemoved, listener: TypedEventHandler[MouseDevice, MouseEventArgs]): Unit = js.native
   }
   
   /** Contains event data for the MouseMoved event. */
-  @js.native
   trait MouseEventArgs extends StObject {
     
     /** Gets a value that indicates the change in the screen location of the mouse pointer since the last mouse event. */
-    var mouseDelta: MouseDelta = js.native
+    var mouseDelta: MouseDelta
   }
   object MouseEventArgs {
     
@@ -182,29 +183,28 @@ object Input {
   }
   
   /** Supports the ability to identify the connected pointer devices and determine their capabilities. */
-  @js.native
   trait PointerDevice extends StObject {
     
     /** Gets a value indicating whether the pointer device is an integrated device. For example, a video display with an integrated touch digitizer compared to an external pen/stylus digitizer. */
-    var isIntegrated: Boolean = js.native
+    var isIntegrated: Boolean
     
     /** Gets a value indicating the maximum number of contacts supported by the input device. */
-    var maxContacts: Double = js.native
+    var maxContacts: Double
     
-    var maxPointersWithZDistance: js.Any = js.native
+    var maxPointersWithZDistance: js.Any
     
     /* unmapped type */
     /** Gets the coordinates of the bounding rectangle supported by the input device. */
-    var physicalDeviceRect: Rect = js.native
+    var physicalDeviceRect: Rect
     
     /** Gets the pointer device type. */
-    var pointerDeviceType: PointerDeviceType = js.native
+    var pointerDeviceType: PointerDeviceType
     
     /** Gets the screen coordinates that are mapped to the bounding rectangle supported by the input device. */
-    var screenRect: Rect = js.native
+    var screenRect: Rect
     
     /** Gets a collection containing the supported pointer device usages . */
-    var supportedUsages: IVectorView[PointerDeviceUsage] = js.native
+    var supportedUsages: IVectorView[PointerDeviceUsage]
   }
   object PointerDevice {
     
@@ -249,32 +249,31 @@ object Input {
   }
   
   /** Identifies the Human Interface Device (HID) usage details for the input device. */
-  @js.native
   trait PointerDeviceUsage extends StObject {
     
     /** The maximum logical value for Usage. */
-    var maxLogical: Double = js.native
+    var maxLogical: Double
     
     /** The maximum physical value for Usage. */
-    var maxPhysical: Double = js.native
+    var maxPhysical: Double
     
     /** The minimum logical value for Usage. */
-    var minLogical: Double = js.native
+    var minLogical: Double
     
     /** The minimum physical value for Usage. */
-    var minPhysical: Double = js.native
+    var minPhysical: Double
     
     /** The multiplier used to convert the usage value reported by the device to a physical value in units of Unit. (Valid only for usages that indicate a static or dynamic value associated with a control, such as pressure or width and height of the touch contact.) */
-    var physicalMultiplier: Double = js.native
+    var physicalMultiplier: Double
     
     /** The HID unit of measure. */
-    var unit: Double = js.native
+    var unit: Double
     
     /** The HID pointer device usage ID that specifies a device or property in the UsagePage. For example, 0x04 indicates a touch screen device and 0x47 indicates touch confidence. */
-    var usage: Double = js.native
+    var usage: Double
     
     /** The HID usage page of the pointer device. */
-    var usagePage: Double = js.native
+    var usagePage: Double
   }
   object PointerDeviceUsage {
     
@@ -323,14 +322,13 @@ object Input {
   }
   
   /** Supports the ability to determine the touch capabilities of any connected touch digitizers. */
-  @js.native
   trait TouchCapabilities extends StObject {
     
     /** Gets the minimum number of contacts supported by all the digitizers. */
-    var contacts: Double = js.native
+    var contacts: Double
     
     /** Gets a value that indicates whether a touch digitizer is detected. */
-    var touchPresent: Double = js.native
+    var touchPresent: Double
   }
   object TouchCapabilities {
     

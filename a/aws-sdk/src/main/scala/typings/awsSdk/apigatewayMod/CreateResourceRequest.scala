@@ -2,26 +2,24 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceRequest extends StObject {
   
   /**
     * [Required] The parent resource's identifier.
     */
-  var parentId: String = js.native
+  var parentId: String
   
   /**
     * The last path segment for this resource.
     */
-  var pathPart: String = js.native
+  var pathPart: String
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
 }
 object CreateResourceRequest {
   

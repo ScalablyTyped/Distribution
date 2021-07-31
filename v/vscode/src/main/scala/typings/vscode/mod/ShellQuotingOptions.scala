@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.anon.CharsToEscape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShellQuotingOptions extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait ShellQuotingOptions extends StObject {
     * are escaped. If a `{ escapeChar, charsToEscape }` literal is provide all characters
     * in `charsToEscape` are escaped using the `escapeChar`.
     */
-  var escape: js.UndefOr[String | CharsToEscape] = js.native
+  var escape: js.UndefOr[String | CharsToEscape] = js.undefined
   
   /**
     * The character used for strong quoting. The string's length must be 1.
     */
-  var strong: js.UndefOr[String] = js.native
+  var strong: js.UndefOr[String] = js.undefined
   
   /**
     * The character used for weak quoting. The string's length must be 1.
     */
-  var weak: js.UndefOr[String] = js.native
+  var weak: js.UndefOr[String] = js.undefined
 }
 object ShellQuotingOptions {
   

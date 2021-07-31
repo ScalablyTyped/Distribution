@@ -3,53 +3,51 @@ package typings.phaser.Phaser.Types
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Curves {
   
-  @js.native
   trait EllipseCurveConfig extends StObject {
     
     /**
       * Sets if the the ellipse rotation is clockwise (true) or anti-clockwise (false)
       */
-    var clockwise: js.UndefOr[Boolean] = js.native
+    var clockwise: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The end angle of the ellipse, in degrees.
       */
-    var endAngle: js.UndefOr[integer] = js.native
+    var endAngle: js.UndefOr[integer] = js.undefined
     
     /**
       * The rotation of the ellipse, in degrees.
       */
-    var rotation: js.UndefOr[integer] = js.native
+    var rotation: js.UndefOr[integer] = js.undefined
     
     /**
       * The start angle of the ellipse, in degrees.
       */
-    var startAngle: js.UndefOr[integer] = js.native
+    var startAngle: js.UndefOr[integer] = js.undefined
     
     /**
       * The x coordinate of the ellipse.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * The horizontal radius of the ellipse.
       */
-    var xRadius: js.UndefOr[Double] = js.native
+    var xRadius: js.UndefOr[Double] = js.undefined
     
     /**
       * The y coordinate of the ellipse.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
     
     /**
       * The vertical radius of the ellipse.
       */
-    var yRadius: js.UndefOr[Double] = js.native
+    var yRadius: js.UndefOr[Double] = js.undefined
   }
   object EllipseCurveConfig {
     
@@ -112,18 +110,17 @@ object Curves {
     }
   }
   
-  @js.native
   trait JSONCurve extends StObject {
     
     /**
       * The arrays of points like `[x1, y1, x2, y2]`
       */
-    var points: js.Array[Double] = js.native
+    var points: js.Array[Double]
     
     /**
       * The of the curve
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object JSONCurve {
     
@@ -148,53 +145,52 @@ object Curves {
     }
   }
   
-  @js.native
   trait JSONEllipseCurve extends StObject {
     
     /**
       * Sets if the the ellipse rotation is clockwise (true) or anti-clockwise (false)
       */
-    var clockwise: Boolean = js.native
+    var clockwise: Boolean
     
     /**
       * The end angle of the ellipse, in degrees.
       */
-    var endAngle: integer = js.native
+    var endAngle: integer
     
     /**
       * The rotation of ellipse, in degrees.
       */
-    var rotation: integer = js.native
+    var rotation: integer
     
     /**
       * The start angle of the ellipse, in degrees.
       */
-    var startAngle: integer = js.native
+    var startAngle: integer
     
     /**
       * The of the curve.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The x coordinate of the ellipse.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The horizontal radius of ellipse.
       */
-    var xRadius: Double = js.native
+    var xRadius: Double
     
     /**
       * The y coordinate of the ellipse.
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * The vertical radius of ellipse.
       */
-    var yRadius: Double = js.native
+    var yRadius: Double
   }
   object JSONEllipseCurve {
     
@@ -247,33 +243,32 @@ object Curves {
     }
   }
   
-  @js.native
   trait JSONPath extends StObject {
     
     /**
       * The path is auto closed.
       */
-    var autoClose: Boolean = js.native
+    var autoClose: Boolean
     
     /**
       * The list of the curves
       */
-    var curves: js.Array[JSONCurve] = js.native
+    var curves: js.Array[JSONCurve]
     
     /**
       * The of the curve.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The X coordinate of the curve's starting point.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The Y coordinate of the path's starting point.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object JSONPath {
     

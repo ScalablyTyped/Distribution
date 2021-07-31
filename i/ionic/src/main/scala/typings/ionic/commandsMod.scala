@@ -5,7 +5,6 @@ import typings.ionic.definitionsMod.IonicEnvironment
 import typings.ionic.namespaceMod.Namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandsMod {
@@ -26,12 +25,11 @@ object commandsMod {
     def project_MIonicNamespace: js.UndefOr[IProject] = js.native
   }
   
-  @js.native
   trait IonicEnvironmentDeps extends StObject {
     
-    val env: IonicEnvironment = js.native
+    val env: IonicEnvironment
     
-    val project: js.UndefOr[IProject] = js.native
+    val project: js.UndefOr[IProject] = js.undefined
   }
   object IonicEnvironmentDeps {
     

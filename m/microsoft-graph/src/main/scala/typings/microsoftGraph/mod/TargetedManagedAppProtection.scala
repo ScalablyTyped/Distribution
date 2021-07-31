@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TargetedManagedAppProtection extends ManagedAppProtection {
+trait TargetedManagedAppProtection
+  extends StObject
+     with ManagedAppProtection {
   
   // Navigation property to list of inclusion and exclusion groups to which the policy is deployed.
-  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.native
+  var assignments: js.UndefOr[NullableOption[js.Array[TargetedManagedAppPolicyAssignment]]] = js.undefined
   
   // Indicates if the policy is deployed to any inclusion groups or not.
-  var isAssigned: js.UndefOr[Boolean] = js.native
+  var isAssigned: js.UndefOr[Boolean] = js.undefined
 }
 object TargetedManagedAppProtection {
   

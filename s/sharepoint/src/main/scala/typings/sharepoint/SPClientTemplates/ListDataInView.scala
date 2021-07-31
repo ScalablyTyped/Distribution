@@ -2,36 +2,34 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDataInView extends StObject {
   
-  var FilterFields: String = js.native
+  var FilterFields: String
   
-  var FilterLink: String = js.native
+  var FilterLink: String
   
-  var FirstRow: Double = js.native
+  var FirstRow: Double
   
   /** Either "0" or "1" */
-  var ForceNoHierarchy: String = js.native
+  var ForceNoHierarchy: String
   
-  var HierarchyHasIndention: String = js.native
+  var HierarchyHasIndention: String
   
-  var LastRow: Double = js.native
+  var LastRow: Double
   
   /** Link to the next page  (not defined if not available) */
-  var NextHref: String = js.native
+  var NextHref: String
   
   /** Link to the previous page (not defined if not available) */
-  var PrevHref: String = js.native
+  var PrevHref: String
   
-  var Row: js.Array[Item] = js.native
+  var Row: js.Array[Item]
   
-  var SortDir: String = js.native
+  var SortDir: String
   
-  var SortField: String = js.native
+  var SortField: String
 }
 object ListDataInView {
   

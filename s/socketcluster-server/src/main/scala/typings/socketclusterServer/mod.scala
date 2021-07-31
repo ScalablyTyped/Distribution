@@ -2,17 +2,20 @@ package typings.socketclusterServer
 
 import typings.node.httpMod.Server
 import typings.socketclusterServer.serverMod.AGServerOptions
-import typings.socketclusterServer.serverMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("socketcluster-server", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("socketcluster-server", "AGServer")
   @js.native
-  class AGServer () extends ^ {
+  class AGServer ()
+    extends typings.socketclusterServer.serverMod.^ {
     def this(options: AGServerOptions) = this()
   }
   
@@ -20,48 +23,37 @@ object mod {
   @js.native
   class AGServerSocket protected ()
     extends typings.socketclusterServer.serversocketMod.^ {
-    def this(id: String, server: ^, socket: typings.ws.mod.^, protocolVersion: Double) = this()
+    def this(
+      id: String,
+      server: typings.socketclusterServer.serverMod.^,
+      socket: typings.ws.mod.^,
+      protocolVersion: Double
+    ) = this()
   }
   
-  @JSImport("socketcluster-server", "attach")
-  @js.native
-  def attach(server: Server): AGServer = js.native
-  @JSImport("socketcluster-server", "attach")
-  @js.native
-  def attach(server: Server, options: AGServerOptions): AGServer = js.native
+  @scala.inline
+  def attach(server: Server): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any]).asInstanceOf[AGServer]
+  @scala.inline
+  def attach(server: Server, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
   
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(
-    port: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    listeningListener: js.Function0[Unit]
-  ): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: js.UndefOr[scala.Nothing], options: AGServerOptions): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: js.UndefOr[scala.Nothing], options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: Double): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: Double, listeningListener: js.Function0[Unit]): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: Double, options: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: Double, options: AGServerOptions): AGServer = js.native
-  @JSImport("socketcluster-server", "listen")
-  @js.native
-  def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = js.native
+  @scala.inline
+  def listen(): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")().asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Double): AGServer = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any]).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Double, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Double, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Double, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Double, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Unit, options: Unit, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Unit, options: AGServerOptions): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AGServer]
+  @scala.inline
+  def listen(port: Unit, options: AGServerOptions, listeningListener: js.Function0[Unit]): AGServer = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(port.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listeningListener.asInstanceOf[js.Any])).asInstanceOf[AGServer]
 }

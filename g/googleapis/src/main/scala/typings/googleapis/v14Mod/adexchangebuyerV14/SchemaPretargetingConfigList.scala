@@ -2,21 +2,19 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPretargetingConfigList extends StObject {
   
   /**
     * A list of pretargeting configs
     */
-  var items: js.UndefOr[js.Array[SchemaPretargetingConfig]] = js.native
+  var items: js.UndefOr[js.Array[SchemaPretargetingConfig]] = js.undefined
   
   /**
     * Resource type.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaPretargetingConfigList {
   

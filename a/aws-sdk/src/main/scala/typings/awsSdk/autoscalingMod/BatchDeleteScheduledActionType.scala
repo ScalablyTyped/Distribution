@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteScheduledActionType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The names of the scheduled actions to delete. The maximum number allowed is 50. 
     */
-  var ScheduledActionNames: typings.awsSdk.autoscalingMod.ScheduledActionNames = js.native
+  var ScheduledActionNames: typings.awsSdk.autoscalingMod.ScheduledActionNames
 }
 object BatchDeleteScheduledActionType {
   

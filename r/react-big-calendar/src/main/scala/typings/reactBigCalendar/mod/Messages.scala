@@ -2,43 +2,41 @@ package typings.reactBigCalendar.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Messages extends StObject {
   
-  var agenda: js.UndefOr[String] = js.native
+  var agenda: js.UndefOr[String] = js.undefined
   
-  var allDay: js.UndefOr[String] = js.native
+  var allDay: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var day: js.UndefOr[String] = js.native
+  var day: js.UndefOr[String] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var month: js.UndefOr[String] = js.native
+  var month: js.UndefOr[String] = js.undefined
   
-  var next: js.UndefOr[String] = js.native
+  var next: js.UndefOr[String] = js.undefined
   
-  var noEventsInRange: js.UndefOr[String] = js.native
+  var noEventsInRange: js.UndefOr[String] = js.undefined
   
-  var previous: js.UndefOr[String] = js.native
+  var previous: js.UndefOr[String] = js.undefined
   
-  var showMore: js.UndefOr[js.Function1[/* count */ Double, String]] = js.native
+  var showMore: js.UndefOr[js.Function1[/* count */ Double, String]] = js.undefined
   
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
   
-  var today: js.UndefOr[String] = js.native
+  var today: js.UndefOr[String] = js.undefined
   
-  var tomorrow: js.UndefOr[String] = js.native
+  var tomorrow: js.UndefOr[String] = js.undefined
   
-  var week: js.UndefOr[String] = js.native
+  var week: js.UndefOr[String] = js.undefined
   
-  var work_week: js.UndefOr[String] = js.native
+  var work_week: js.UndefOr[String] = js.undefined
   
-  var yesterday: js.UndefOr[String] = js.native
+  var yesterday: js.UndefOr[String] = js.undefined
 }
 object Messages {
   

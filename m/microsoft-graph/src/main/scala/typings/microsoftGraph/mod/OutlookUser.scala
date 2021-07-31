@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OutlookUser extends Entity {
+trait OutlookUser
+  extends StObject
+     with Entity {
   
   // A list of categories defined for the user.
-  var masterCategories: js.UndefOr[NullableOption[js.Array[OutlookCategory]]] = js.native
+  var masterCategories: js.UndefOr[NullableOption[js.Array[OutlookCategory]]] = js.undefined
 }
 object OutlookUser {
   

@@ -5,7 +5,6 @@ import typings.blueprintjsTable.menuContextMod.IMenuContext
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyCellsMenuItemMod {
@@ -24,20 +23,21 @@ object copyCellsMenuItemMod {
     var handleClick: js.Any = js.native
   }
   
-  @js.native
-  trait ICopyCellsMenuItemProps extends IMenuItemProps {
+  trait ICopyCellsMenuItemProps
+    extends StObject
+       with IMenuItemProps {
     
     /**
       * The `IMenuContext` that launched the menu.
       */
-    var context: IMenuContext = js.native
+    var context: IMenuContext
     
     /**
       * A callback that returns the data for a specific cell. This need not
       * match the value displayed in the `<Cell>` component. The value will be
       * invisibly added as `textContent` into the DOM before copying.
       */
-    def getCellData(row: Double, col: Double): js.Any = js.native
+    def getCellData(row: Double, col: Double): js.Any
     
     /**
       * If you want to do something after the copy or if you want to notify the
@@ -48,7 +48,7 @@ object copyCellsMenuItemMod {
       * if the browser does not support the copy method (see
       * `Clipboard.isCopySupported`).
       */
-    var onCopy: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.native
+    var onCopy: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.undefined
   }
   object ICopyCellsMenuItemProps {
     

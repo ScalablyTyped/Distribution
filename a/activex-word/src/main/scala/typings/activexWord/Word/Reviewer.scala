@@ -2,22 +2,20 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reviewer extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
   
   @JSName("Word.Reviewer_typekey")
-  var WordDotReviewer_typekey: Reviewer = js.native
+  var WordDotReviewer_typekey: Reviewer
 }
 object Reviewer {
   

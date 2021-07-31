@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,23 +11,37 @@ sealed trait FollowedContentQueryOptions extends StObject
 object FollowedContentQueryOptions extends StObject {
   
   @js.native
-  sealed trait all extends FollowedContentQueryOptions
+  sealed trait all
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait defaultOptions extends FollowedContentQueryOptions
+  sealed trait defaultOptions
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait documents extends FollowedContentQueryOptions
+  sealed trait documents
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait hidden extends FollowedContentQueryOptions
+  sealed trait hidden
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait nonFeed extends FollowedContentQueryOptions
+  sealed trait nonFeed
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait sites extends FollowedContentQueryOptions
+  sealed trait sites
+    extends StObject
+       with FollowedContentQueryOptions
   
   @js.native
-  sealed trait unset extends FollowedContentQueryOptions
+  sealed trait unset
+    extends StObject
+       with FollowedContentQueryOptions
 }

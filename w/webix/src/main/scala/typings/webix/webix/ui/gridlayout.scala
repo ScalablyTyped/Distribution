@@ -3,11 +3,12 @@ package typings.webix.webix.ui
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait gridlayout extends baseview {
+trait gridlayout
+  extends StObject
+     with baseview {
   
   def addView(view: js.Any): String | Double = js.native
   def addView(view: js.Any, index: Double): String | Double = js.native
@@ -17,7 +18,7 @@ trait gridlayout extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -44,8 +45,8 @@ trait gridlayout extends baseview {
   def restore(state: js.Any): Unit = js.native
   def restore(state: js.Any, factory: WebixCallback): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(serializer: WebixCallback): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(serializer: WebixCallback): js.Array[js.Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

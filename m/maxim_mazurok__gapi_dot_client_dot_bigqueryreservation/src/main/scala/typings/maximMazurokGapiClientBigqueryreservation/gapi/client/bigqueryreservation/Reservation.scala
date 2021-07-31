@@ -2,33 +2,31 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reservation extends StObject {
   
   /** Output only. Creation time of the reservation. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * If false, any query using this reservation will use idle slots from other reservations within the same admin project. If true, a query using this reservation will execute with the
     * slot capacity specified above at most.
     */
-  var ignoreIdleSlots: js.UndefOr[Boolean] = js.native
+  var ignoreIdleSlots: js.UndefOr[Boolean] = js.undefined
   
   /** The resource name of the reservation, e.g., `projects/∗/locations/∗/reservations/team1-prod`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum slots available to this reservation. A slot is a unit of computational power in BigQuery, and serves as the unit of parallelism. Queries using this reservation might use
     * more slots during runtime if ignore_idle_slots is set to false. If the new reservation's slot capacity exceed the parent's slot capacity or if total slot capacity of the new
     * reservation and its siblings exceeds the parent's slot capacity, the request will fail with `google.rpc.Code.RESOURCE_EXHAUSTED`.
     */
-  var slotCapacity: js.UndefOr[String] = js.native
+  var slotCapacity: js.UndefOr[String] = js.undefined
   
   /** Output only. Last update time of the reservation. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Reservation {
   

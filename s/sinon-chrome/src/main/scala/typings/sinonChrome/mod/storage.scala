@@ -3,7 +3,6 @@ package typings.sinonChrome.mod
 import typings.sinonChrome.mod.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storage {
@@ -36,43 +35,75 @@ object storage {
   @scala.inline
   def sync_=(x: StubbedStorageArea): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait StubbedStorageArea extends StObject {
     
     // Methods
     def clear(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
+    ): js.Any
     @JSName("clear")
-    var clear_Original: SinonChromeStub = js.native
+    var clear_Original: SinonChromeStub
     
     // Methods
     def get(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
+    ): js.Any
     
     // Methods
     def getBytesInUse(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
+    ): js.Any
     @JSName("getBytesInUse")
-    var getBytesInUse_Original: SinonChromeStub = js.native
+    var getBytesInUse_Original: SinonChromeStub
     
     @JSName("get")
-    var get_Original: SinonChromeStub = js.native
+    var get_Original: SinonChromeStub
     
     // Methods
     def remove(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
+    ): js.Any
     @JSName("remove")
-    var remove_Original: SinonChromeStub = js.native
+    var remove_Original: SinonChromeStub
     
     // Methods
     def set(
-      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
-    ): js.Any = js.native
+      /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
+    ): js.Any
     @JSName("set")
-    var set_Original: SinonChromeStub = js.native
+    var set_Original: SinonChromeStub
+  }
+  object StubbedStorageArea {
+    
+    @scala.inline
+    def apply(
+      clear: SinonChromeStub,
+      get: SinonChromeStub,
+      getBytesInUse: SinonChromeStub,
+      remove: SinonChromeStub,
+      set: SinonChromeStub
+    ): StubbedStorageArea = {
+      val __obj = js.Dynamic.literal(clear = clear.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getBytesInUse = getBytesInUse.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any])
+      __obj.asInstanceOf[StubbedStorageArea]
+    }
+    
+    @scala.inline
+    implicit class StubbedStorageAreaMutableBuilder[Self <: StubbedStorageArea] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGet(value: SinonChromeStub): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGetBytesInUse(value: SinonChromeStub): Self = StObject.set(x, "getBytesInUse", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRemove(value: SinonChromeStub): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSet(value: SinonChromeStub): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+    }
   }
 }

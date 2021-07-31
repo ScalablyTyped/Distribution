@@ -3,13 +3,13 @@ package typings.gapiCalendar.gapi.client.calendar
 import typings.gapiCalendar.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AclUpdateParameters extends AclInsertParameters {
+trait AclUpdateParameters
+  extends StObject
+     with AclInsertParameters {
   
-  var ruleId: String = js.native
+  var ruleId: String
 }
 object AclUpdateParameters {
   

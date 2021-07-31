@@ -12,7 +12,7 @@ Generates image sprites and their spritesheets (css, stylus, sass, scss or less)
 | Keywords           | sprite, sprites, generator, middleware, css, stylus, less, sass, scss, grunt, retina |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 90987 |
+| # downloads        | 114169 |
 | # stars            | 2 |
 
 ## Links

@@ -2,27 +2,25 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactMaterial extends StObject {
   
-  var contactEquationRelaxation: Double = js.native
+  var contactEquationRelaxation: Double
   
-  var contactEquationStiffness: Double = js.native
+  var contactEquationStiffness: Double
   
-  var friction: Double = js.native
+  var friction: Double
   
-  var frictionEquationRelaxation: Double = js.native
+  var frictionEquationRelaxation: Double
   
-  var frictionEquationStiffness: Double = js.native
+  var frictionEquationStiffness: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var materials: js.Array[Material] = js.native
+  var materials: js.Array[Material]
   
-  var restitution: Double = js.native
+  var restitution: Double
 }
 object ContactMaterial {
   

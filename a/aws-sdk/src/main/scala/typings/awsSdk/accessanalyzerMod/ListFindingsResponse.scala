@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsResponse extends StObject {
   
   /**
     * A list of findings retrieved from the analyzer that match the filter criteria specified, if any.
     */
-  var findings: FindingsList = js.native
+  var findings: FindingsList
   
   /**
     * A token used for pagination of results returned.
     */
-  var nextToken: js.UndefOr[Token] = js.native
+  var nextToken: js.UndefOr[Token] = js.undefined
 }
 object ListFindingsResponse {
   

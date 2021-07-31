@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestEnvironmentCatalog extends StObject {
   
   /** Supported Android devices. */
-  var androidDeviceCatalog: js.UndefOr[AndroidDeviceCatalog] = js.native
+  var androidDeviceCatalog: js.UndefOr[AndroidDeviceCatalog] = js.undefined
   
   /** The IP blocks used by devices in the test environment. */
-  var deviceIpBlockCatalog: js.UndefOr[DeviceIpBlockCatalog] = js.native
+  var deviceIpBlockCatalog: js.UndefOr[DeviceIpBlockCatalog] = js.undefined
   
   /** Supported iOS devices. */
-  var iosDeviceCatalog: js.UndefOr[IosDeviceCatalog] = js.native
+  var iosDeviceCatalog: js.UndefOr[IosDeviceCatalog] = js.undefined
   
   /** Supported network configurations. */
-  var networkConfigurationCatalog: js.UndefOr[NetworkConfigurationCatalog] = js.native
+  var networkConfigurationCatalog: js.UndefOr[NetworkConfigurationCatalog] = js.undefined
   
   /** The software test environment provided by TestExecutionService. */
-  var softwareCatalog: js.UndefOr[ProvidedSoftwareCatalog] = js.native
+  var softwareCatalog: js.UndefOr[ProvidedSoftwareCatalog] = js.undefined
 }
 object TestEnvironmentCatalog {
   

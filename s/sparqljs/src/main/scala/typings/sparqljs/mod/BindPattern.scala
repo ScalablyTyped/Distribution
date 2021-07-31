@@ -3,24 +3,24 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.bind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BindPattern extends Pattern {
+trait BindPattern
+  extends StObject
+     with Pattern {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var `type`: bind = js.native
+  var `type`: bind
   
-  var variable: VariableTerm = js.native
+  var variable: VariableTerm
 }
 object BindPattern {
   
   @scala.inline
-  def apply(expression: Expression, `type`: bind, variable: VariableTerm): BindPattern = {
+  def apply(expression: Expression, variable: VariableTerm): BindPattern = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bind")
     __obj.asInstanceOf[BindPattern]
   }
   

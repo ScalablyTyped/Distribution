@@ -2,19 +2,17 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RingRadius extends StObject {
   
-  var ringRadius: js.UndefOr[Double] = js.native
+  var ringRadius: js.UndefOr[Double] = js.undefined
   
-  var segments: js.UndefOr[Double] = js.native
+  var segments: js.UndefOr[Double] = js.undefined
   
-  var sides: js.UndefOr[Double] = js.native
+  var sides: js.UndefOr[Double] = js.undefined
   
-  var tubeRadius: js.UndefOr[Double] = js.native
+  var tubeRadius: js.UndefOr[Double] = js.undefined
 }
 object RingRadius {
   

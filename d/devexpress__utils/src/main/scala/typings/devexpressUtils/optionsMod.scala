@@ -2,45 +2,43 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait IDateFormatterOptions extends StObject {
     
-    var abbrDayNames: js.Array[String] = js.native
+    var abbrDayNames: js.Array[String]
     
-    var abbrMonthNames: js.Array[String] = js.native
+    var abbrMonthNames: js.Array[String]
     
-    var am: String = js.native
+    var am: String
     
-    var dayNames: js.Array[String] = js.native
+    var dayNames: js.Array[String]
     
-    var ds: String = js.native
+    var ds: String
     
-    var genMonthNames: js.Array[String] = js.native
+    var genMonthNames: js.Array[String]
     
-    var longDate: String = js.native
+    var longDate: String
     
-    var longTime: String = js.native
+    var longTime: String
     
-    var monthDay: String = js.native
+    var monthDay: String
     
-    var monthNames: js.Array[String] = js.native
+    var monthNames: js.Array[String]
     
-    var pm: String = js.native
+    var pm: String
     
-    var shortDate: String = js.native
+    var shortDate: String
     
-    var shortTime: String = js.native
+    var shortTime: String
     
-    var ts: String = js.native
+    var ts: String
     
-    var twoDigitYearMax: Double = js.native
+    var twoDigitYearMax: Double
     
-    var yearMonth: String = js.native
+    var yearMonth: String
   }
   object IDateFormatterOptions {
     
@@ -135,9 +133,9 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait IFormattersOptions
-    extends IDateFormatterOptions
+    extends StObject
+       with IDateFormatterOptions
        with INumberFormatterOptions
   object IFormattersOptions {
     
@@ -181,40 +179,39 @@ object optionsMod {
     }
   }
   
-  @js.native
   trait INumberFormatterOptions extends StObject {
     
-    var currDecimalPoint: String = js.native
+    var currDecimalPoint: String
     
-    var currGroupSeparator: String = js.native
+    var currGroupSeparator: String
     
-    var currGroups: js.Array[Double] = js.native
+    var currGroups: js.Array[Double]
     
-    var currNegPattern: Double = js.native
+    var currNegPattern: Double
     
-    var currPosPattern: Double = js.native
+    var currPosPattern: Double
     
-    var currPrec: Double = js.native
+    var currPrec: Double
     
-    var currency: String = js.native
+    var currency: String
     
-    var numDecimalPoint: String = js.native
+    var numDecimalPoint: String
     
-    var numGroupSeparator: String = js.native
+    var numGroupSeparator: String
     
-    var numGroups: js.Array[Double] = js.native
+    var numGroups: js.Array[Double]
     
-    var numNan: String = js.native
+    var numNan: String
     
-    var numNegInf: String = js.native
+    var numNegInf: String
     
-    var numNegPattern: Double = js.native
+    var numNegPattern: Double
     
-    var numPosInf: String = js.native
+    var numPosInf: String
     
-    var numPrec: Double = js.native
+    var numPrec: Double
     
-    var percentPattern: Double = js.native
+    var percentPattern: Double
   }
   object INumberFormatterOptions {
     

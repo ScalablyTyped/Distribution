@@ -2,14 +2,15 @@ package typings.powerRadix
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("power-radix", JSImport.Namespace)
   @js.native
-  class ^ protected () extends PowerRadix {
+  class ^ protected ()
+    extends StObject
+       with PowerRadix {
     def this(digits: String, sourceRadix: js.Array[Double]) = this()
     /**
       * Creates a new instance of PowerRadix

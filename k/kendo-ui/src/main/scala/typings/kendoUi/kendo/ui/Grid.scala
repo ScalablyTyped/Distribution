@@ -8,11 +8,12 @@ import typings.kendoUi.kendo.data.ObservableObject
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Grid extends Widget {
+trait Grid
+  extends StObject
+     with Widget {
   
   def addRow(): Unit = js.native
   
@@ -104,7 +105,7 @@ trait Grid extends Widget {
   
   def saveAsExcel(): Unit = js.native
   
-  def saveAsPDF(): JQueryPromise[_] = js.native
+  def saveAsPDF(): JQueryPromise[js.Any] = js.native
   
   def saveChanges(): Unit = js.native
   

@@ -3,14 +3,16 @@ package typings.nodeRedisPubsub
 import typings.redis.mod.RedisClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
+  
   @JSImport("node-redis-pubsub", JSImport.Namespace)
   @js.native
-  def apply(options: js.Object): NodeRedisPubSub = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-redis-pubsub", "NodeRedisPubSub")
   @js.native
@@ -42,7 +44,6 @@ object mod {
     ): js.Function0[Unit] = js.native
   }
   
-  @JSImport("node-redis-pubsub", "initClient")
-  @js.native
-  def initClient(options: js.Object): NodeRedisPubSub = js.native
+  @scala.inline
+  def initClient(options: js.Object): NodeRedisPubSub = ^.asInstanceOf[js.Dynamic].applyDynamic("initClient")(options.asInstanceOf[js.Any]).asInstanceOf[NodeRedisPubSub]
 }

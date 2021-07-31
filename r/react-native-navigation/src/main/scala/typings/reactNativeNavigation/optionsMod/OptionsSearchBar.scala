@@ -2,25 +2,23 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsSearchBar extends StObject {
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var hideOnScroll: js.UndefOr[Boolean] = js.native
+  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
   
-  var hideTopBarOnFocus: js.UndefOr[Boolean] = js.native
+  var hideTopBarOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var obscuresBackgroundDuringPresentation: js.UndefOr[Boolean] = js.native
+  var obscuresBackgroundDuringPresentation: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var tintColor: js.UndefOr[Color] = js.native
+  var tintColor: js.UndefOr[Color] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsSearchBar {
   

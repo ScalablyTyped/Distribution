@@ -2,16 +2,14 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDiscovererRequest extends StObject {
   
   /**
     * The ID of the discoverer.
     */
-  var DiscovererId: string = js.native
+  var DiscovererId: string
 }
 object DeleteDiscovererRequest {
   

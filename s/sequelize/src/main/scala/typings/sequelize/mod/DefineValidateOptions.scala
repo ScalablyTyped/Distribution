@@ -16,7 +16,6 @@ import typings.sequelize.sequelizeStrings.all
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,9 +27,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The validations are implemented by validator.js.
   */
-@js.native
 trait DefineValidateOptions
-  extends /**
+  extends StObject
+     with /**
   * custom validations are also possible
   *
   * Implementation notes :
@@ -50,166 +49,166 @@ trait DefineValidateOptions
   /**
     * force specific substrings
     */
-  var contains: js.UndefOr[String | MsgString] = js.native
+  var contains: js.UndefOr[String | MsgString] = js.undefined
   
   /**
     * only allow a specific value
     */
   @JSName("equals")
-  var equals_FDefineValidateOptions: js.UndefOr[String | MsgString] = js.native
+  var equals_FDefineValidateOptions: js.UndefOr[String | MsgString] = js.undefined
   
   /**
     * is: ["^[a-z]+$",'i'] // will only allow letters
     * is: /^[a-z]+$/i      // same as the previous example using real RegExp
     */
-  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.native
+  var is: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
   
   /**
     * only allow date strings after a specific date
     */
-  var isAfter: js.UndefOr[String | ArgsString] = js.native
+  var isAfter: js.UndefOr[String | ArgsString] = js.undefined
   
   /**
     * will only allow letters
     */
-  var isAlpha: js.UndefOr[Boolean | MsgString] = js.native
+  var isAlpha: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * will only allow alphanumeric characters, so "_abc" will fail
     */
-  var isAlphanumeric: js.UndefOr[Boolean | MsgString] = js.native
+  var isAlphanumeric: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * only allow arrays
     */
-  var isArray: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  var isArray: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   
   /**
     * only allow date strings before a specific date
     */
-  var isBefore: js.UndefOr[String | ArgsString] = js.native
+  var isBefore: js.UndefOr[String | ArgsString] = js.undefined
   
   /**
     * check for valid credit card numbers
     */
-  var isCreditCard: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  var isCreditCard: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   
   /**
     * only allow date strings
     */
-  var isDate: js.UndefOr[Boolean | ArgsBoolean] = js.native
+  var isDate: js.UndefOr[Boolean | ArgsBoolean] = js.undefined
   
   /**
     * checks for any numbers
     */
-  var isDecimal: js.UndefOr[Boolean | MsgString] = js.native
+  var isDecimal: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for email format (foo@bar.com)
     */
-  var isEmail: js.UndefOr[Boolean | MsgString] = js.native
+  var isEmail: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for valid floating point numbers
     */
-  var isFloat: js.UndefOr[Boolean | MsgString] = js.native
+  var isFloat: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for IPv4 (129.89.23.1) or IPv6 format
     */
-  var isIP: js.UndefOr[Boolean | MsgString] = js.native
+  var isIP: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for IPv4 (129.89.23.1)
     */
-  var isIPv4: js.UndefOr[Boolean | MsgString] = js.native
+  var isIPv4: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for IPv6 format
     */
-  var isIPv6: js.UndefOr[Boolean | MsgString] = js.native
+  var isIPv6: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * check the value is one of these
     */
-  var isIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.native
+  var isIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
   
   /**
     * checks for valid integers
     */
-  var isInt: js.UndefOr[Boolean | MsgString] = js.native
+  var isInt: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for lowercase
     */
-  var isLowercase: js.UndefOr[Boolean | MsgString] = js.native
+  var isLowercase: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * only allows null
     */
-  var isNull: js.UndefOr[Boolean | MsgString] = js.native
+  var isNull: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * will only allow numbers
     */
-  var isNumeric: js.UndefOr[Boolean | MsgString] = js.native
+  var isNumeric: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * only allow uuids
     */
   var isUUID: js.UndefOr[
     `3` | `4` | `5` | typings.sequelize.sequelizeStrings.`3` | typings.sequelize.sequelizeStrings.`4` | typings.sequelize.sequelizeStrings.`5` | all | ArgsNumber
-  ] = js.native
+  ] = js.undefined
   
   /**
     * checks for uppercase
     */
-  var isUppercase: js.UndefOr[Boolean | MsgString] = js.native
+  var isUppercase: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * checks for url format (http://foo.com)
     */
-  var isUrl: js.UndefOr[Boolean | MsgString] = js.native
+  var isUrl: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * only allow values with length between 2 and 10
     */
-  var len: js.UndefOr[(js.Tuple2[Double, Double]) | `1`] = js.native
+  var len: js.UndefOr[(js.Tuple2[Double, Double]) | `1`] = js.undefined
   
   /**
     * only allow values
     */
-  var max: js.UndefOr[Double | ArgsNumber] = js.native
+  var max: js.UndefOr[Double | ArgsNumber] = js.undefined
   
   /**
     * only allow values >= 23
     */
-  var min: js.UndefOr[Double | ArgsNumber] = js.native
+  var min: js.UndefOr[Double | ArgsNumber] = js.undefined
   
   /**
     * not: ["[a-z]",'i']  // will not allow letters
     */
-  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.native
+  var not: js.UndefOr[String | (js.Array[String | RegExp]) | RegExp | Args] = js.undefined
   
   /**
     * don't allow specific substrings
     */
-  var notContains: js.UndefOr[js.Array[String] | String | ArgsMsgString] = js.native
+  var notContains: js.UndefOr[js.Array[String] | String | ArgsMsgString] = js.undefined
   
   /**
     * don't allow empty strings
     */
-  var notEmpty: js.UndefOr[Boolean | MsgString] = js.native
+  var notEmpty: js.UndefOr[Boolean | MsgString] = js.undefined
   
   /**
     * check the value is not one of these
     */
-  var notIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.native
+  var notIn: js.UndefOr[js.Array[js.Array[String]] | ArgsMsg] = js.undefined
   
   /**
     * won't allow null
     */
-  var notNull: js.UndefOr[Boolean | MsgString] = js.native
+  var notNull: js.UndefOr[Boolean | MsgString] = js.undefined
 }
 object DefineValidateOptions {
   

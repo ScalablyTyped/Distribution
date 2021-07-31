@@ -10,17 +10,15 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.POST
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PUT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkDescription extends StObject {
   
-  var href: String = js.native
+  var href: String
   
-  var method: js.UndefOr[CONNECT | DELETE | GET | HEAD | OPTIONS | PATCH | POST | PUT] = js.native
+  var method: js.UndefOr[CONNECT | DELETE | GET | HEAD | OPTIONS | PATCH | POST | PUT] = js.undefined
   
-  var rel: String = js.native
+  var rel: String
 }
 object LinkDescription {
   

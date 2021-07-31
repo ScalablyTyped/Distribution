@@ -2,96 +2,94 @@ package typings.awsSdk.cloudtrailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTrailStatusResponse extends StObject {
   
   /**
     * Whether the CloudTrail is currently logging AWS API calls.
     */
-  var IsLogging: js.UndefOr[Boolean] = js.native
+  var IsLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Displays any CloudWatch Logs error that CloudTrail encountered when attempting to deliver logs to CloudWatch Logs.
     */
-  var LatestCloudWatchLogsDeliveryError: js.UndefOr[String] = js.native
+  var LatestCloudWatchLogsDeliveryError: js.UndefOr[String] = js.undefined
   
   /**
     * Displays the most recent date and time when CloudTrail delivered logs to CloudWatch Logs.
     */
-  var LatestCloudWatchLogsDeliveryTime: js.UndefOr[Date] = js.native
+  var LatestCloudWatchLogsDeliveryTime: js.UndefOr[Date] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var LatestDeliveryAttemptSucceeded: js.UndefOr[String] = js.native
+  var LatestDeliveryAttemptSucceeded: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var LatestDeliveryAttemptTime: js.UndefOr[String] = js.native
+  var LatestDeliveryAttemptTime: js.UndefOr[String] = js.undefined
   
   /**
     * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver log files to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
     */
-  var LatestDeliveryError: js.UndefOr[String] = js.native
+  var LatestDeliveryError: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the date and time that CloudTrail last delivered log files to an account's Amazon S3 bucket.
     */
-  var LatestDeliveryTime: js.UndefOr[Date] = js.native
+  var LatestDeliveryTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Displays any Amazon S3 error that CloudTrail encountered when attempting to deliver a digest file to the designated bucket. For more information see the topic Error Responses in the Amazon S3 API Reference.   This error occurs only when there is a problem with the destination S3 bucket and will not occur for timeouts. To resolve the issue, create a new bucket and call UpdateTrail to specify the new bucket, or fix the existing objects so that CloudTrail can again write to the bucket. 
     */
-  var LatestDigestDeliveryError: js.UndefOr[String] = js.native
+  var LatestDigestDeliveryError: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the date and time that CloudTrail last delivered a digest file to an account's Amazon S3 bucket.
     */
-  var LatestDigestDeliveryTime: js.UndefOr[Date] = js.native
+  var LatestDigestDeliveryTime: js.UndefOr[Date] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var LatestNotificationAttemptSucceeded: js.UndefOr[String] = js.native
+  var LatestNotificationAttemptSucceeded: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var LatestNotificationAttemptTime: js.UndefOr[String] = js.native
+  var LatestNotificationAttemptTime: js.UndefOr[String] = js.undefined
   
   /**
     * Displays any Amazon SNS error that CloudTrail encountered when attempting to send a notification. For more information about Amazon SNS errors, see the Amazon SNS Developer Guide. 
     */
-  var LatestNotificationError: js.UndefOr[String] = js.native
+  var LatestNotificationError: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the date and time of the most recent Amazon SNS notification that CloudTrail has written a new log file to an account's Amazon S3 bucket.
     */
-  var LatestNotificationTime: js.UndefOr[Date] = js.native
+  var LatestNotificationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Specifies the most recent date and time when CloudTrail started recording API calls for an AWS account.
     */
-  var StartLoggingTime: js.UndefOr[Date] = js.native
+  var StartLoggingTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Specifies the most recent date and time when CloudTrail stopped recording API calls for an AWS account.
     */
-  var StopLoggingTime: js.UndefOr[Date] = js.native
+  var StopLoggingTime: js.UndefOr[Date] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var TimeLoggingStarted: js.UndefOr[String] = js.native
+  var TimeLoggingStarted: js.UndefOr[String] = js.undefined
   
   /**
     * This field is no longer in use.
     */
-  var TimeLoggingStopped: js.UndefOr[String] = js.native
+  var TimeLoggingStopped: js.UndefOr[String] = js.undefined
 }
 object GetTrailStatusResponse {
   

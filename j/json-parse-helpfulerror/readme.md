@@ -11,8 +11,8 @@ A drop-in replacement for JSON.parse that uses `jju` to give helpful errors
 | Full name          | json-parse-helpfulerror |
 | Keywords           | json, parse, line, doublequote, error |
 | # releases         | 0 |
-| # dependents       | 59 |
-| # downloads        | 22780067 |
+| # dependents       | 62 |
+| # downloads        | 26942518 |
 | # stars            | 2 |
 
 ## Links

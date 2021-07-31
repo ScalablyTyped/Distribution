@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema extends StObject {
   
   /**
     * Specifies the format of the records on the output stream. Valid values: `CSV`, `JSON`.
     */
-  var recordFormatType: String = js.native
+  var recordFormatType: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema {
   

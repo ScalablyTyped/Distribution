@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApplicationVpcConfigurationRequest extends StObject {
   
   /**
     * The name of an existing application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * The current application version ID. You can retrieve the application version ID using DescribeApplication.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
   
   /**
     * The ID of the VPC configuration to delete.
     */
-  var VpcConfigurationId: Id = js.native
+  var VpcConfigurationId: Id
 }
 object DeleteApplicationVpcConfigurationRequest {
   

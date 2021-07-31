@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteNamespaceResponse extends StObject {
   
   /**
     * The ARN of the namespace to be deleted.
     */
-  var namespaceArn: js.UndefOr[Arn] = js.native
+  var namespaceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the namespace to be deleted.
     */
-  var namespaceName: js.UndefOr[NamespaceName] = js.native
+  var namespaceName: js.UndefOr[NamespaceName] = js.undefined
 }
 object DeleteNamespaceResponse {
   

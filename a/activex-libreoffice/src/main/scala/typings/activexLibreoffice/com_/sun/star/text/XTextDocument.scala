@@ -10,24 +10,24 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is the main interface of a text document.
   * @see com.sun.star.text.TextDocument
   */
-@js.native
-trait XTextDocument extends XModel {
+trait XTextDocument
+  extends StObject
+     with XModel {
   
   /** @returns the major {@link com.sun.star.text.Text} of the text document.  This text does not contain texts in {@link TextFrames} , or cells of {@link TextT */
-  val Text: XText = js.native
+  val Text: XText
   
   /** @returns the major {@link com.sun.star.text.Text} of the text document.  This text does not contain texts in {@link TextFrames} , or cells of {@link TextT */
-  def getText(): XText = js.native
+  def getText(): XText
   
   /** reformats the contents of the document. */
-  def reformat(): Unit = js.native
+  def reformat(): Unit
 }
 object XTextDocument {
   

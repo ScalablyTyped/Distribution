@@ -2,19 +2,17 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The entrypoint for the application.
   */
-@js.native
 trait SchemaEntrypoint extends StObject {
   
   /**
     * The format should be a shell command that can be fed to bash -c.
     */
-  var shell: js.UndefOr[String] = js.native
+  var shell: js.UndefOr[String] = js.undefined
 }
 object SchemaEntrypoint {
   

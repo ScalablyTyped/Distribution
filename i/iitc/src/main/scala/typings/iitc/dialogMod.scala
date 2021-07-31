@@ -6,7 +6,6 @@ import typings.spectrum.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogMod {
@@ -46,104 +45,100 @@ object dialogMod {
     def DIALOG_SLIDE_DURATION_=(x: Double): Unit = js.Dynamic.global.updateDynamic("DIALOG_SLIDE_DURATION")(x.asInstanceOf[js.Any])
     
     /** custom alert box */
-    @JSGlobal("alert")
-    @js.native
-    def alert(text: String, isHTML: Boolean, closeCallback: js.Any): JQuery = js.native
+    @scala.inline
+    def alert(text: String, isHTML: Boolean, closeCallback: js.Any): JQuery = (js.Dynamic.global.applyDynamic("alert")(text.asInstanceOf[js.Any], isHTML.asInstanceOf[js.Any], closeCallback.asInstanceOf[js.Any])).asInstanceOf[JQuery]
     
     /** Create and show dialog */
-    @JSGlobal("dialog")
-    @js.native
-    def dialog(data: DialogOptions): JQuery = js.native
+    @scala.inline
+    def dialog(data: DialogOptions): JQuery = js.Dynamic.global.applyDynamic("dialog")(data.asInstanceOf[js.Any]).asInstanceOf[JQuery]
     
     /** init */
-    @JSGlobal("setupDialogs")
-    @js.native
-    def setupDialogs(): Unit = js.native
+    @scala.inline
+    def setupDialogs(): Unit = js.Dynamic.global.applyDynamic("setupDialogs")().asInstanceOf[Unit]
     
     /** All onscreen dialogs, keyed by their ID. */
     object DIALOGS
     
     // see https://jqueryui.com/dialog/
-    @js.native
     trait DialogOptions extends StObject {
       
-      var appendTo: js.UndefOr[js.Any] = js.native
+      var appendTo: js.UndefOr[js.Any] = js.undefined
       
-      var autoOpen: js.UndefOr[Boolean] = js.native
+      var autoOpen: js.UndefOr[Boolean] = js.undefined
       
-      var blurCallback: js.UndefOr[js.Any] = js.native
+      var blurCallback: js.UndefOr[js.Any] = js.undefined
       
-      var buttons: js.UndefOr[js.Array[ButtonOptions] | StringDictionary[js.Function0[Unit]]] = js.native
+      var buttons: js.UndefOr[js.Array[ButtonOptions] | StringDictionary[js.Function0[Unit]]] = js.undefined
       
-      var classes: js.UndefOr[js.Any] = js.native
+      var classes: js.UndefOr[js.Any] = js.undefined
       
-      var closeCallback: js.UndefOr[js.Any] = js.native
+      var closeCallback: js.UndefOr[js.Any] = js.undefined
       
-      var closeOnEscape: js.UndefOr[Boolean] = js.native
+      var closeOnEscape: js.UndefOr[Boolean] = js.undefined
       
       /** Specifies the text for the close button */
-      var closeText: js.UndefOr[String] = js.native
+      var closeText: js.UndefOr[String] = js.undefined
       
-      var collapseCallback: js.UndefOr[js.Any] = js.native
+      var collapseCallback: js.UndefOr[js.Any] = js.undefined
       
-      var collapseExpandCallback: js.UndefOr[js.Any] = js.native
+      var collapseExpandCallback: js.UndefOr[js.Any] = js.undefined
       
-      var dialogClass: js.UndefOr[String] = js.native
+      var dialogClass: js.UndefOr[String] = js.undefined
       
       /**
         * moveable dialog
         * default: true
         */
-      var draggable: js.UndefOr[Boolean] = js.native
+      var draggable: js.UndefOr[Boolean] = js.undefined
       
-      var expandCallback: js.UndefOr[js.Any] = js.native
+      var expandCallback: js.UndefOr[js.Any] = js.undefined
       
-      var focusCallback: js.UndefOr[js.Any] = js.native
+      var focusCallback: js.UndefOr[js.Any] = js.undefined
       
       /** size */
-      var height: js.UndefOr[String | Double] = js.native
+      var height: js.UndefOr[String | Double] = js.undefined
       
-      var hide: js.UndefOr[js.Any] = js.native
+      var hide: js.UndefOr[js.Any] = js.undefined
       
       /** Dialog contents (if no text) */
-      var html: js.UndefOr[String | HTMLElement | JQuery] = js.native
+      var html: js.UndefOr[String | HTMLElement | JQuery] = js.undefined
       
       /** If set only one dialog can be open */
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var maxHeight: js.UndefOr[String] = js.native
+      var maxHeight: js.UndefOr[String] = js.undefined
       
-      var maxWidth: js.UndefOr[String] = js.native
+      var maxWidth: js.UndefOr[String] = js.undefined
       
-      var minHeight: js.UndefOr[String] = js.native
+      var minHeight: js.UndefOr[String] = js.undefined
       
-      var minWidth: js.UndefOr[String] = js.native
+      var minWidth: js.UndefOr[String] = js.undefined
       
       /**
         * single dialog
         * default: false
         */
-      var modal: js.UndefOr[Boolean] = js.native
+      var modal: js.UndefOr[Boolean] = js.undefined
       
       /** position, see: https://api.jqueryui.com/position/ */
-      var position: js.UndefOr[js.Any] = js.native
+      var position: js.UndefOr[js.Any] = js.undefined
       
       /**
         * resizeable dialog (won't work in iitc out-of-the-box)
         * default: false
         */
-      var resizable: js.UndefOr[Boolean] = js.native
+      var resizable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Dialog contents - converted by convertTextToTableMagic
         * \n will be line breaks \t will be table fields
         */
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
       
       /** Dialog title */
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[String | Double] = js.native
+      var width: js.UndefOr[String | Double] = js.undefined
     }
     object DialogOptions {
       

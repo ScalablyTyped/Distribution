@@ -3,7 +3,6 @@ package typings.firebase.mod.default
 import typings.firebase.mod.firebase.app.App
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
@@ -35,10 +34,12 @@ object app {
     * @return The app corresponding to the provided app name.
     *   If no app name is provided, the default app is returned.
     */
+  @scala.inline
+  def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
+  @scala.inline
+  def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
+  
   @JSImport("firebase", "default.app")
   @js.native
-  def apply(): App = js.native
-  @JSImport("firebase", "default.app")
-  @js.native
-  def apply(name: String): App = js.native
+  val ^ : js.Any = js.native
 }

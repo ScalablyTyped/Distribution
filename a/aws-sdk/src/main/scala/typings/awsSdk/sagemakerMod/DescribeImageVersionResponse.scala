@@ -2,56 +2,54 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImageVersionResponse extends StObject {
   
   /**
     * The registry path of the container image on which this image version is based.
     */
-  var BaseImage: js.UndefOr[ImageBaseImage] = js.native
+  var BaseImage: js.UndefOr[ImageBaseImage] = js.undefined
   
   /**
     * The registry path of the container image that contains this image version.
     */
-  var ContainerImage: js.UndefOr[ImageContainerImage] = js.native
+  var ContainerImage: js.UndefOr[ImageContainerImage] = js.undefined
   
   /**
     * When the version was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * When a create or delete operation fails, the reason for the failure.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.sagemakerMod.FailureReason] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image the version is based on.
     */
-  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.native
+  var ImageArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageArn] = js.undefined
   
   /**
     * The ARN of the version.
     */
-  var ImageVersionArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionArn] = js.native
+  var ImageVersionArn: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionArn] = js.undefined
   
   /**
     * The status of the version.
     */
-  var ImageVersionStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionStatus] = js.native
+  var ImageVersionStatus: js.UndefOr[typings.awsSdk.sagemakerMod.ImageVersionStatus] = js.undefined
   
   /**
     * When the version was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The version number.
     */
-  var Version: js.UndefOr[ImageVersionNumber] = js.native
+  var Version: js.UndefOr[ImageVersionNumber] = js.undefined
 }
 object DescribeImageVersionResponse {
   

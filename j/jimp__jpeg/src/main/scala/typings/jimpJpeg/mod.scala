@@ -7,27 +7,28 @@ import typings.jimpJpeg.anon.ImagejpegEncoderFn
 import typings.jimpJpeg.anon.MIMEJPEG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/jpeg", JSImport.Default)
+  @JSImport("@jimp/jpeg", JSImport.Namespace)
   @js.native
-  def default(): Jpeg = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Jpeg = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Jpeg]
+  
   trait Jpeg extends StObject {
     
-    var `class`: JpegClass = js.native
+    var `class`: JpegClass
     
-    var constants: MIMEJPEG = js.native
+    var constants: MIMEJPEG
     
-    var decoders: ImagejpegDecoderFn = js.native
+    var decoders: ImagejpegDecoderFn
     
-    var encoders: ImagejpegEncoderFn = js.native
+    var encoders: ImagejpegEncoderFn
     
-    var mime: Imagejpeg = js.native
+    var mime: Imagejpeg
   }
   object Jpeg {
     

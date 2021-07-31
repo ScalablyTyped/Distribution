@@ -3,7 +3,6 @@ package typings.jointjs.mod.g
 import typings.jointjs.anon.Threshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jointjs", "g.Polyline")
@@ -64,15 +63,18 @@ class Polyline () extends StObject {
   def tangentAtLength(length: Double): Line | Null = js.native
   
   def translate(): this.type = js.native
-  def translate(tx: js.UndefOr[scala.Nothing], ty: Double): this.type = js.native
   def translate(tx: Double): this.type = js.native
   def translate(tx: Double, ty: Double): this.type = js.native
+  def translate(tx: Unit, ty: Double): this.type = js.native
   def translate(tx: PlainPoint): this.type = js.native
 }
 object Polyline {
   
-  /* static member */
-  @JSImport("jointjs", "g.Polyline.parse")
+  @JSImport("jointjs", "g.Polyline")
   @js.native
-  def parse(svgString: String): Polyline = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def parse(svgString: String): Polyline = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(svgString.asInstanceOf[js.Any]).asInstanceOf[Polyline]
 }

@@ -3,33 +3,31 @@ package typings.markedjsHtmlDiffer
 import typings.markedjsHtmlDiffer.mod.ChangeObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
   
-  @JSImport("@markedjs/html-differ/lib/logger", "getDiffText")
+  @JSImport("@markedjs/html-differ/lib/logger", JSImport.Namespace)
   @js.native
-  def getDiffText(result: js.Array[ChangeObject]): String = js.native
-  @JSImport("@markedjs/html-differ/lib/logger", "getDiffText")
-  @js.native
-  def getDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@markedjs/html-differ/lib/logger", "logDiffText")
-  @js.native
-  def logDiffText(result: js.Array[ChangeObject]): String = js.native
-  @JSImport("@markedjs/html-differ/lib/logger", "logDiffText")
-  @js.native
-  def logDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = js.native
+  @scala.inline
+  def getDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def logDiffText(result: js.Array[ChangeObject]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def logDiffText(result: js.Array[ChangeObject], options: LoggerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("logDiffText")(result.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait LoggerOptions extends StObject {
     
     /**
       * the number of characters around the diff result between two HTML
       * @default 40
       */
-    var charsAroundDiff: js.UndefOr[Double] = js.native
+    var charsAroundDiff: js.UndefOr[Double] = js.undefined
   }
   object LoggerOptions {
     

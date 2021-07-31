@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** the listener interface for receiving "errorOccured" events posted by any database object. */
-@js.native
-trait XSQLErrorListener extends XEventListener {
+trait XSQLErrorListener
+  extends StObject
+     with XEventListener {
   
   /**
     * invoked when a database error occurs, just before a {@link com.sun.star.sdbc.SQLException} is thrown to the application.
     * @param aEvent the event which occurred
     */
-  def errorOccured(aEvent: SQLErrorEvent): Unit = js.native
+  def errorOccured(aEvent: SQLErrorEvent): Unit
 }
 object XSQLErrorListener {
   

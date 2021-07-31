@@ -2,22 +2,20 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowRuleOptions extends StObject {
   
-  var expression: String = js.native
+  var expression: String
   
-  var filter_friendly_name: js.UndefOr[String] = js.native
+  var filter_friendly_name: js.UndefOr[String] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   // Don't ask me why, but all of these are supported options.
-  var friendly_name: js.UndefOr[String] = js.native
+  var friendly_name: js.UndefOr[String] = js.undefined
   
-  var targets: js.Array[WorkflowRuleTargetOptions] = js.native
+  var targets: js.Array[WorkflowRuleTargetOptions]
 }
 object WorkflowRuleOptions {
   

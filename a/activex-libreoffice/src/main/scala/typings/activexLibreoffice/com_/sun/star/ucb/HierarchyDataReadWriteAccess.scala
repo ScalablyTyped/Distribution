@@ -12,13 +12,12 @@ import typings.activexLibreoffice.com_.sun.star.util.XChangesListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides read and write access to a fragment of the hierarchy data. */
-@js.native
 trait HierarchyDataReadWriteAccess
-  extends HierarchyDataReadAccess
+  extends StObject
+     with HierarchyDataReadAccess
      with XNameContainer
      with XSingleServiceFactory
      with XChangesBatch
@@ -34,7 +33,7 @@ object HierarchyDataReadWriteAccess {
     addEventListener: XEventListener => Unit,
     commitChanges: () => Unit,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[_] => XInterface,
+    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
     dispose: () => Unit,
     getByHierarchicalName: String => js.Any,
     getByName: String => js.Any,

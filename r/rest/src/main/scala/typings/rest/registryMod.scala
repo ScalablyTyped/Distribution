@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.when.When.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registryMod extends Shortcut {
@@ -13,17 +12,16 @@ object registryMod extends Shortcut {
   @js.native
   val ^ : Registry = js.native
   
-  @js.native
   trait MIMEConverter extends StObject {
     
-    def read(value: String): js.Any | Promise[_] = js.native
+    def read(value: String): js.Any | Promise[js.Any]
     
-    def write(value: js.Any): String | Promise[String] = js.native
+    def write(value: js.Any): String | Promise[String]
   }
   object MIMEConverter {
     
     @scala.inline
-    def apply(read: String => js.Any | Promise[_], write: js.Any => String | Promise[String]): MIMEConverter = {
+    def apply(read: String => js.Any | Promise[js.Any], write: js.Any => String | Promise[String]): MIMEConverter = {
       val __obj = js.Dynamic.literal(read = js.Any.fromFunction1(read), write = js.Any.fromFunction1(write))
       __obj.asInstanceOf[MIMEConverter]
     }
@@ -32,19 +30,18 @@ object registryMod extends Shortcut {
     implicit class MIMEConverterMutableBuilder[Self <: MIMEConverter] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRead(value: String => js.Any | Promise[_]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
+      def setRead(value: String => js.Any | Promise[js.Any]): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWrite(value: js.Any => String | Promise[String]): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait Registry extends StObject {
     
-    def lookup(mimeType: String): Promise[MIMEConverter] = js.native
+    def lookup(mimeType: String): Promise[MIMEConverter]
     
-    def register(mimeType: String, converter: MIMEConverter): Unit = js.native
+    def register(mimeType: String, converter: MIMEConverter): Unit
   }
   object Registry {
     

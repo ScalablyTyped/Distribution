@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsInformationProtectionProxiedDomainCollection extends StObject {
   
   // Display name
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // Collection of proxied domains
-  var proxiedDomains: js.UndefOr[js.Array[ProxiedDomain]] = js.native
+  var proxiedDomains: js.UndefOr[js.Array[ProxiedDomain]] = js.undefined
 }
 object WindowsInformationProtectionProxiedDomainCollection {
   

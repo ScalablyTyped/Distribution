@@ -2,13 +2,13 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IsIntOptions extends MinMaxExtendedOptions {
+trait IsIntOptions
+  extends StObject
+     with MinMaxExtendedOptions {
   
-  var allow_leading_zeroes: js.UndefOr[Boolean] = js.native
+  var allow_leading_zeroes: js.UndefOr[Boolean] = js.undefined
 }
 object IsIntOptions {
   

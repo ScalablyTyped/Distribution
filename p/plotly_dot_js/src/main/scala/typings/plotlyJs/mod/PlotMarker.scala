@@ -8,55 +8,53 @@ import typings.plotlyJs.plotlyJsStrings.area
 import typings.plotlyJs.plotlyJsStrings.diameter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotMarker extends StObject {
   
-  var autocolorscale: Boolean = js.native
+  var autocolorscale: Boolean
   
-  var cauto: Boolean = js.native
+  var cauto: Boolean
   
-  var cmax: Double = js.native
+  var cmax: Double
   
-  var cmin: Double = js.native
+  var cmin: Double
   
-  var color: Color | js.Array[Color] = js.native
+  var color: Color | js.Array[Color]
   
-  var colorbar: PartialColorBarBgcolor = js.native
+  var colorbar: PartialColorBarBgcolor
   
-  var colors: js.Array[Color] = js.native
+  var colors: js.Array[Color]
   
-  var colorscale: ColorScale = js.native
+  var colorscale: ColorScale
   
-  var gradient: Colorsrc = js.native
+  var gradient: Colorsrc
   
-  var line: PartialScatterMarkerLine = js.native
+  var line: PartialScatterMarkerLine
   
-  var maxdisplayed: Double = js.native
+  var maxdisplayed: Double
   
-  var opacity: Double | js.Array[Double] = js.native
+  var opacity: Double | js.Array[Double]
   
-  var pad: PartialPadding = js.native
+  var pad: PartialPadding
   
-  var reversescale: Boolean = js.native
+  var reversescale: Boolean
   
-  var showscale: Boolean = js.native
+  var showscale: Boolean
   
-  var size: Double | js.Array[Double] = js.native
+  var size: Double | js.Array[Double]
   
-  var sizemax: Double = js.native
+  var sizemax: Double
   
-  var sizemin: Double = js.native
+  var sizemin: Double
   
-  var sizemode: diameter | area = js.native
+  var sizemode: diameter | area
   
-  var sizeref: Double = js.native
+  var sizeref: Double
   
-  var symbol: MarkerSymbol = js.native
+  var symbol: MarkerSymbol
   
-  var width: Double = js.native
+  var width: Double
 }
 object PlotMarker {
   

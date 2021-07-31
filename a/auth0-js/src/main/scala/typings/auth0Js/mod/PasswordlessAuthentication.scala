@@ -2,7 +2,6 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "PasswordlessAuthentication")
@@ -21,11 +20,11 @@ class PasswordlessAuthentication protected () extends StObject {
     *
     * @param options: https://auth0.com/docs/api/authentication#passwordless
     */
-  def start(options: PasswordlessStartOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def start(options: PasswordlessStartOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
   
   /**
     * Verifies the passwordless TOTP and returns an error if any.
     *
     */
-  def verify(options: PasswordlessVerifyOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def verify(options: PasswordlessVerifyOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
 }

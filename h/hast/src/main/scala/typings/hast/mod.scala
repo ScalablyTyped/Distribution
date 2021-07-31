@@ -9,26 +9,26 @@ import typings.hast.hastStrings.text
 import typings.unist.mod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
-  trait Comment extends Literal {
+  trait Comment
+    extends StObject
+       with Literal {
     
     /**
       * Represents this variant of a Literal.
       */
     @JSName("type")
-    var type_Comment: comment = js.native
+    var type_Comment: comment
   }
   object Comment {
     
     @scala.inline
-    def apply(`type`: comment, value: js.Any): Comment = {
+    def apply(value: js.Any): Comment = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("comment")
       __obj.asInstanceOf[Comment]
     }
     
@@ -40,33 +40,34 @@ object mod {
     }
   }
   
-  @js.native
-  trait DocType extends Node {
+  trait DocType
+    extends StObject
+       with Node {
     
-    var name: String = js.native
+    var name: String
     
     /**
       * Represents the document’s public identifier.
       */
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
     /**
       * Represents the document’s system identifier.
       */
-    var system: js.UndefOr[String] = js.native
+    var system: js.UndefOr[String] = js.undefined
     
     /**
       * Represents this variant of a Node.
       */
     @JSName("type")
-    var type_DocType: doctype = js.native
+    var type_DocType: doctype
   }
   object DocType {
     
     @scala.inline
-    def apply(name: String, `type`: doctype): DocType = {
+    def apply(name: String): DocType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("doctype")
       __obj.asInstanceOf[DocType]
     }
     
@@ -93,42 +94,43 @@ object mod {
     }
   }
   
-  @js.native
-  trait Element extends Parent {
+  trait Element
+    extends StObject
+       with Parent {
     
     /**
       * List representing the children of a node.
       */
     @JSName("children")
-    var children_Element: js.Array[Element | Comment | Text] = js.native
+    var children_Element: js.Array[Element | Comment | Text]
     
     /**
       * If the tagName field is 'template', a content field can be present.
       */
-    var content: js.UndefOr[Root] = js.native
+    var content: js.UndefOr[Root] = js.undefined
     
     /**
       * Represents information associated with the element.
       */
-    var properties: js.UndefOr[Properties] = js.native
+    var properties: js.UndefOr[Properties] = js.undefined
     
     /**
       * Represents the element’s local name.
       */
-    var tagName: String = js.native
+    var tagName: String
     
     /**
       * Represents this variant of a Node.
       */
     @JSName("type")
-    var type_Element: element = js.native
+    var type_Element: element
   }
   object Element {
     
     @scala.inline
-    def apply(children: js.Array[Element | Comment | Text], tagName: String, `type`: element): Element = {
+    def apply(children: js.Array[Element | Comment | Text], tagName: String): Element = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("element")
       __obj.asInstanceOf[Element]
     }
     
@@ -161,9 +163,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Literal
-    extends typings.unist.mod.Literal
+    extends StObject
+       with typings.unist.mod.Literal
   object Literal {
     
     @scala.inline
@@ -174,9 +176,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Parent
-    extends typings.unist.mod.Parent
+    extends StObject
+       with typings.unist.mod.Parent
   object Parent {
     
     @scala.inline
@@ -189,21 +191,22 @@ object mod {
   
   type Properties = StringDictionary[js.UndefOr[Boolean | Double | String | Null | (js.Array[String | Double])]]
   
-  @js.native
-  trait Root extends Parent {
+  trait Root
+    extends StObject
+       with Parent {
     
     /**
       * Represents this variant of a Node.
       */
     @JSName("type")
-    var type_Root: root = js.native
+    var type_Root: root
   }
   object Root {
     
     @scala.inline
-    def apply(children: js.Array[Node], `type`: root): Root = {
+    def apply(children: js.Array[Node]): Root = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Root]
     }
     
@@ -215,21 +218,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait Text extends Literal {
+  trait Text
+    extends StObject
+       with Literal {
     
     /**
       * Represents this variant of a Literal.
       */
     @JSName("type")
-    var type_Text: text = js.native
+    var type_Text: text
   }
   object Text {
     
     @scala.inline
-    def apply(`type`: text, value: js.Any): Text = {
+    def apply(value: js.Any): Text = {
       val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("text")
       __obj.asInstanceOf[Text]
     }
     

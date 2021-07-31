@@ -3,17 +3,18 @@ package typings.sumchecker
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(algorithm.asInstanceOf[js.Any], checksumFilename.asInstanceOf[js.Any], baseDir.asInstanceOf[js.Any], filesToCheck.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   @JSImport("sumchecker", JSImport.Namespace)
   @js.native
-  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: String): js.Promise[Unit] = js.native
-  @JSImport("sumchecker", JSImport.Namespace)
-  @js.native
-  def apply(algorithm: String, checksumFilename: String, baseDir: String, filesToCheck: js.Array[String]): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sumchecker", "ChecksumMismatchError")
   @js.native
@@ -23,8 +24,16 @@ object mod {
   
   @JSImport("sumchecker", "ChecksumParseError")
   @js.native
-  class ChecksumParseError protected () extends Error {
+  class ChecksumParseError protected ()
+    extends StObject
+       with Error {
     def this(lineNumber: Double, line: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sumchecker", "ChecksumValidator")
@@ -49,8 +58,16 @@ object mod {
   
   @JSImport("sumchecker", "ErrorWithFilename")
   @js.native
-  class ErrorWithFilename protected () extends Error {
+  class ErrorWithFilename protected ()
+    extends StObject
+       with Error {
     def this(filename: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("sumchecker", "NoChecksumFoundError")
@@ -59,10 +76,9 @@ object mod {
     def this(filename: String) = this()
   }
   
-  @js.native
   trait ChecksumOptions extends StObject {
     
-    var defaultTextEncoding: js.UndefOr[String] = js.native
+    var defaultTextEncoding: js.UndefOr[String] = js.undefined
   }
   object ChecksumOptions {
     

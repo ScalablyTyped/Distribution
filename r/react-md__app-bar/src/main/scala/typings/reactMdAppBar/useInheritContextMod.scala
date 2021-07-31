@@ -3,10 +3,13 @@ package typings.reactMdAppBar
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useInheritContextMod {
+  
+  @JSImport("@react-md/app-bar/types/useInheritContext", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/app-bar/types/useInheritContext", "InheritContext")
   @js.native
@@ -16,18 +19,14 @@ object useInheritContextMod {
   @js.native
   val ParentContext: Context[Boolean] = js.native
   
-  @JSImport("@react-md/app-bar/types/useInheritContext", "useInheritContext")
-  @js.native
-  def useInheritContext(): Boolean = js.native
-  @JSImport("@react-md/app-bar/types/useInheritContext", "useInheritContext")
-  @js.native
-  def useInheritContext(inheritColor: Boolean): Boolean = js.native
+  @scala.inline
+  def useInheritContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")().asInstanceOf[Boolean]
+  @scala.inline
+  def useInheritContext(inheritColor: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useInheritContext")(inheritColor.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/app-bar/types/useInheritContext", "useParentContext")
-  @js.native
-  def useParentContext(): Boolean = js.native
+  @scala.inline
+  def useParentContext(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useParentContext")().asInstanceOf[Boolean]
   
-  @js.native
   trait AppBarColorInherit extends StObject {
     
     /**
@@ -35,7 +34,7 @@ object useInheritContextMod {
       * `AppBar`.  When this value is omitted, this will be enabled when the theme
       * is not `"clear"` and not `"default"`
       */
-    var inheritColor: js.UndefOr[Boolean] = js.native
+    var inheritColor: js.UndefOr[Boolean] = js.undefined
   }
   object AppBarColorInherit {
     

@@ -4,83 +4,81 @@ import typings.chromaJs.mod.Color
 import typings.chromaJs.mod.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accent extends StObject {
     
-    var Accent: js.Array[String] = js.native
+    var Accent: js.Array[String]
     
-    var Blues: js.Array[String] = js.native
+    var Blues: js.Array[String]
     
-    var BrBG: js.Array[String] = js.native
+    var BrBG: js.Array[String]
     
-    var BuGn: js.Array[String] = js.native
+    var BuGn: js.Array[String]
     
-    var BuPu: js.Array[String] = js.native
+    var BuPu: js.Array[String]
     
-    var Dark2: js.Array[String] = js.native
+    var Dark2: js.Array[String]
     
-    var GnBu: js.Array[String] = js.native
+    var GnBu: js.Array[String]
     
-    var Greens: js.Array[String] = js.native
+    var Greens: js.Array[String]
     
-    var Greys: js.Array[String] = js.native
+    var Greys: js.Array[String]
     
-    var OrRd: js.Array[String] = js.native
+    var OrRd: js.Array[String]
     
-    var Oranges: js.Array[String] = js.native
+    var Oranges: js.Array[String]
     
-    var PRGn: js.Array[String] = js.native
+    var PRGn: js.Array[String]
     
-    var Paired: js.Array[String] = js.native
+    var Paired: js.Array[String]
     
-    var Pastel1: js.Array[String] = js.native
+    var Pastel1: js.Array[String]
     
-    var Pastel2: js.Array[String] = js.native
+    var Pastel2: js.Array[String]
     
-    var PiYG: js.Array[String] = js.native
+    var PiYG: js.Array[String]
     
-    var PuBu: js.Array[String] = js.native
+    var PuBu: js.Array[String]
     
-    var PuBuGn: js.Array[String] = js.native
+    var PuBuGn: js.Array[String]
     
-    var PuOr: js.Array[String] = js.native
+    var PuOr: js.Array[String]
     
-    var PuRd: js.Array[String] = js.native
+    var PuRd: js.Array[String]
     
-    var Purples: js.Array[String] = js.native
+    var Purples: js.Array[String]
     
-    var RdBu: js.Array[String] = js.native
+    var RdBu: js.Array[String]
     
-    var RdGy: js.Array[String] = js.native
+    var RdGy: js.Array[String]
     
-    var RdPu: js.Array[String] = js.native
+    var RdPu: js.Array[String]
     
-    var RdYlBu: js.Array[String] = js.native
+    var RdYlBu: js.Array[String]
     
-    var RdYlGn: js.Array[String] = js.native
+    var RdYlGn: js.Array[String]
     
-    var Reds: js.Array[String] = js.native
+    var Reds: js.Array[String]
     
-    var Set1: js.Array[String] = js.native
+    var Set1: js.Array[String]
     
-    var Set2: js.Array[String] = js.native
+    var Set2: js.Array[String]
     
-    var Set3: js.Array[String] = js.native
+    var Set3: js.Array[String]
     
-    var Spectral: js.Array[String] = js.native
+    var Spectral: js.Array[String]
     
-    var YlGn: js.Array[String] = js.native
+    var YlGn: js.Array[String]
     
-    var YlGnBu: js.Array[String] = js.native
+    var YlGnBu: js.Array[String]
     
-    var YlOrBr: js.Array[String] = js.native
+    var YlOrBr: js.Array[String]
     
-    var YlOrRd: js.Array[String] = js.native
+    var YlOrRd: js.Array[String]
   }
   object Accent {
     

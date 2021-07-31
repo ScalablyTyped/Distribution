@@ -3,27 +3,26 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link
-  extends Parent
+  extends StObject
+     with Parent
      with Resource
      with PhrasingContent {
   
   @JSName("children")
-  var children_Link: js.Array[StaticPhrasingContent] = js.native
+  var children_Link: js.Array[StaticPhrasingContent]
   
   @JSName("type")
-  var type_Link: link = js.native
+  var type_Link: link
 }
 object Link {
   
   @scala.inline
-  def apply(children: js.Array[StaticPhrasingContent], `type`: link, url: String): Link = {
+  def apply(children: js.Array[StaticPhrasingContent], url: String): Link = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("link")
     __obj.asInstanceOf[Link]
   }
   

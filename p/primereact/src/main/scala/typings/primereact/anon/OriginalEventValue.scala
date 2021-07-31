@@ -3,15 +3,13 @@ package typings.primereact.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OriginalEventValue extends StObject {
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
   
-  var value: Date = js.native
+  var value: Date
 }
 object OriginalEventValue {
   

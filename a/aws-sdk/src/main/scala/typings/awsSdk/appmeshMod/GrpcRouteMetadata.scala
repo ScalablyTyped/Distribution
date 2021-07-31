@@ -2,26 +2,24 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcRouteMetadata extends StObject {
   
   /**
     * Specify True to match anything except the match criteria. The default value is False.
     */
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object that represents the data to match from the request.
     */
-  var `match`: js.UndefOr[GrpcRouteMetadataMatchMethod] = js.native
+  var `match`: js.UndefOr[GrpcRouteMetadataMatchMethod] = js.undefined
   
   /**
     * The name of the route.
     */
-  var name: HeaderName = js.native
+  var name: HeaderName
 }
 object GrpcRouteMetadata {
   

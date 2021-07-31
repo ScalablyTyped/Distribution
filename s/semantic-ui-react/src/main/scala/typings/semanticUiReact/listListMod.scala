@@ -23,7 +23,6 @@ import typings.semanticUiReact.semanticUiReactStrings.very
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listListMod extends Shortcut {
@@ -33,7 +32,9 @@ object listListMod extends Shortcut {
   val default: ListComponent = js.native
   
   @js.native
-  trait ListComponent extends FunctionComponent[ListProps] {
+  trait ListComponent
+    extends StObject
+       with FunctionComponent[ListProps] {
     
     var Content: StatelessComponent[ListContentProps] = js.native
     
@@ -48,9 +49,9 @@ object listListMod extends Shortcut {
     var List: StatelessComponent[ListListProps] = js.native
   }
   
-  @js.native
   trait ListProps
-    extends StrictListProps
+    extends StObject
+       with StrictListProps
        with /* key */ StringDictionary[js.Any]
   object ListProps {
     
@@ -61,47 +62,46 @@ object listListMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictListProps extends StObject {
     
     /** A list can animate to set the current item apart from the list. */
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A list can mark items with a bullet. */
-    var bulleted: js.UndefOr[Boolean] = js.native
+    var bulleted: js.UndefOr[Boolean] = js.undefined
     
     /** A list can divide its items into cells. */
-    var celled: js.UndefOr[Boolean] = js.native
+    var celled: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A list can show divisions between content. */
-    var divided: js.UndefOr[Boolean] = js.native
+    var divided: js.UndefOr[Boolean] = js.undefined
     
     /** An list can be floated left or right. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** A list can be formatted to have items appear horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** A list can be inverted to appear on a dark background. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand array of props for ListItem. */
-    var items: js.UndefOr[SemanticShorthandCollection[ListItemProps]] = js.native
+    var items: js.UndefOr[SemanticShorthandCollection[ListItemProps]] = js.undefined
     
     /** A list can be specially formatted for navigation links. */
-    var link: js.UndefOr[Boolean] = js.native
+    var link: js.UndefOr[Boolean] = js.undefined
     
     /**
       * onClick handler for ListItem. Mutually exclusive with children.
@@ -115,22 +115,22 @@ object listListMod extends Shortcut {
           /* data */ ListItemProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A list can be ordered numerically. */
-    var ordered: js.UndefOr[Boolean] = js.native
+    var ordered: js.UndefOr[Boolean] = js.undefined
     
     /** A list can relax its padding to provide more negative space. */
-    var relaxed: js.UndefOr[Boolean | very] = js.native
+    var relaxed: js.UndefOr[Boolean | very] = js.undefined
     
     /** A selection list formats list items as possible choices. */
-    var selection: js.UndefOr[Boolean] = js.native
+    var selection: js.UndefOr[Boolean] = js.undefined
     
     /** A list can vary in size. */
-    var size: js.UndefOr[SemanticSIZES] = js.native
+    var size: js.UndefOr[SemanticSIZES] = js.undefined
     
     /** An element inside a list can be vertically aligned. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictListProps {
     

@@ -2,126 +2,124 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Patch extends StObject {
   
   /**
     * The Advisory ID of the patch. For example, RHSA-2020:3779. Applies to Linux-based instances only.
     */
-  var AdvisoryIds: js.UndefOr[PatchAdvisoryIdList] = js.native
+  var AdvisoryIds: js.UndefOr[PatchAdvisoryIdList] = js.undefined
   
   /**
     * The architecture of the patch. For example, in example-pkg-0.710.10-2.7.abcd.x86_64, the architecture is indicated by x86_64. Applies to Linux-based instances only.
     */
-  var Arch: js.UndefOr[PatchArch] = js.native
+  var Arch: js.UndefOr[PatchArch] = js.undefined
   
   /**
     * The Bugzilla ID of the patch. For example, 1600646. Applies to Linux-based instances only.
     */
-  var BugzillaIds: js.UndefOr[PatchBugzillaIdList] = js.native
+  var BugzillaIds: js.UndefOr[PatchBugzillaIdList] = js.undefined
   
   /**
     * The Common Vulnerabilities and Exposures (CVE) ID of the patch. For example, CVE-1999-0067. Applies to Linux-based instances only.
     */
-  var CVEIds: js.UndefOr[PatchCVEIdList] = js.native
+  var CVEIds: js.UndefOr[PatchCVEIdList] = js.undefined
   
   /**
     * The classification of the patch. For example, SecurityUpdates, Updates, or CriticalUpdates.
     */
-  var Classification: js.UndefOr[PatchClassification] = js.native
+  var Classification: js.UndefOr[PatchClassification] = js.undefined
   
   /**
     * The URL where more information can be obtained about the patch.
     */
-  var ContentUrl: js.UndefOr[PatchContentUrl] = js.native
+  var ContentUrl: js.UndefOr[PatchContentUrl] = js.undefined
   
   /**
     * The description of the patch.
     */
-  var Description: js.UndefOr[PatchDescription] = js.native
+  var Description: js.UndefOr[PatchDescription] = js.undefined
   
   /**
     * The epoch of the patch. For example in pkg-example-EE-20180914-2.2.amzn1.noarch, the epoch value is 20180914-2. Applies to Linux-based instances only.
     */
-  var Epoch: js.UndefOr[PatchEpoch] = js.native
+  var Epoch: js.UndefOr[PatchEpoch] = js.undefined
   
   /**
     * The ID of the patch. Applies to Windows patches only.  This ID is not the same as the Microsoft Knowledge Base ID. 
     */
-  var Id: js.UndefOr[PatchId] = js.native
+  var Id: js.UndefOr[PatchId] = js.undefined
   
   /**
     * The Microsoft Knowledge Base ID of the patch. Applies to Windows patches only.
     */
-  var KbNumber: js.UndefOr[PatchKbNumber] = js.native
+  var KbNumber: js.UndefOr[PatchKbNumber] = js.undefined
   
   /**
     * The language of the patch if it's language-specific.
     */
-  var Language: js.UndefOr[PatchLanguage] = js.native
+  var Language: js.UndefOr[PatchLanguage] = js.undefined
   
   /**
     * The ID of the Microsoft Security Response Center (MSRC) bulletin the patch is related to. For example, MS14-045. Applies to Windows patches only.
     */
-  var MsrcNumber: js.UndefOr[PatchMsrcNumber] = js.native
+  var MsrcNumber: js.UndefOr[PatchMsrcNumber] = js.undefined
   
   /**
     * The severity of the patch, such as Critical, Important, or Moderate. Applies to Windows patches only.
     */
-  var MsrcSeverity: js.UndefOr[PatchMsrcSeverity] = js.native
+  var MsrcSeverity: js.UndefOr[PatchMsrcSeverity] = js.undefined
   
   /**
     * The name of the patch. Applies to Linux-based instances only.
     */
-  var Name: js.UndefOr[PatchName] = js.native
+  var Name: js.UndefOr[PatchName] = js.undefined
   
   /**
     * The specific product the patch is applicable for. For example, WindowsServer2016 or AmazonLinux2018.03.
     */
-  var Product: js.UndefOr[PatchProduct] = js.native
+  var Product: js.UndefOr[PatchProduct] = js.undefined
   
   /**
     * The product family the patch is applicable for. For example, Windows or Amazon Linux 2.
     */
-  var ProductFamily: js.UndefOr[PatchProductFamily] = js.native
+  var ProductFamily: js.UndefOr[PatchProductFamily] = js.undefined
   
   /**
     * The particular release of a patch. For example, in pkg-example-EE-20180914-2.2.amzn1.noarch, the release is 2.amaz1. Applies to Linux-based instances only.
     */
-  var Release: js.UndefOr[PatchRelease] = js.native
+  var Release: js.UndefOr[PatchRelease] = js.undefined
   
   /**
     * The date the patch was released.
     */
-  var ReleaseDate: js.UndefOr[DateTime] = js.native
+  var ReleaseDate: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The source patch repository for the operating system and version, such as trusty-security for Ubuntu Server 14.04 LTE and focal-security for Ubuntu Server 20.04 LTE. Applies to Linux-based instances only.
     */
-  var Repository: js.UndefOr[PatchRepository] = js.native
+  var Repository: js.UndefOr[PatchRepository] = js.undefined
   
   /**
     * The severity level of the patch. For example, CRITICAL or MODERATE.
     */
-  var Severity: js.UndefOr[PatchSeverity] = js.native
+  var Severity: js.UndefOr[PatchSeverity] = js.undefined
   
   /**
     * The title of the patch.
     */
-  var Title: js.UndefOr[PatchTitle] = js.native
+  var Title: js.UndefOr[PatchTitle] = js.undefined
   
   /**
     * The name of the vendor providing the patch.
     */
-  var Vendor: js.UndefOr[PatchVendor] = js.native
+  var Vendor: js.UndefOr[PatchVendor] = js.undefined
   
   /**
     * The version number of the patch. For example, in example-pkg-1.710.10-2.7.abcd.x86_64, the version number is indicated by -1. Applies to Linux-based instances only.
     */
-  var Version: js.UndefOr[PatchVersion] = js.native
+  var Version: js.UndefOr[PatchVersion] = js.undefined
 }
 object Patch {
   

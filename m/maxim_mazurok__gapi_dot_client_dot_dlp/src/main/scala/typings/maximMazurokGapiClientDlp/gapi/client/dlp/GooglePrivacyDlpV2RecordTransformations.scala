@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RecordTransformations extends StObject {
   
   /** Transform the record by applying various field transformations. */
-  var fieldTransformations: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldTransformation]] = js.native
+  var fieldTransformations: js.UndefOr[js.Array[GooglePrivacyDlpV2FieldTransformation]] = js.undefined
   
   /** Configuration defining which records get suppressed entirely. Records that match any suppression rule are omitted from the output. */
-  var recordSuppressions: js.UndefOr[js.Array[GooglePrivacyDlpV2RecordSuppression]] = js.native
+  var recordSuppressions: js.UndefOr[js.Array[GooglePrivacyDlpV2RecordSuppression]] = js.undefined
 }
 object GooglePrivacyDlpV2RecordTransformations {
   

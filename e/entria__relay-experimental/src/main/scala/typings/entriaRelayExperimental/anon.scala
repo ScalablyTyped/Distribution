@@ -7,23 +7,21 @@ import typings.relayRuntime.relayRuntimeTypesMod.Variables
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cursor extends StObject {
     
-    var cursor: String | Null = js.native
+    var cursor: String | Null
     
-    var hasMore: Boolean = js.native
+    var hasMore: Boolean
   }
   object Cursor {
     
     @scala.inline
     def apply(hasMore: Boolean): Cursor = {
-      val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(hasMore = hasMore.asInstanceOf[js.Any], cursor = null)
       __obj.asInstanceOf[Cursor]
     }
     
@@ -41,14 +39,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait Environment extends Action {
+  trait Environment
+    extends StObject
+       with Action {
     
-    var environment: typings.relayRuntime.relayStoreTypesMod.Environment = js.native
+    var environment: typings.relayRuntime.relayStoreTypesMod.Environment
     
-    var fragmentIdentifier: String = js.native
+    var fragmentIdentifier: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Environment {
     
@@ -77,14 +76,13 @@ object anon {
     }
   }
   
-  @js.native
   trait FetchKey extends StObject {
     
-    var fetchKey: js.UndefOr[String | Double] = js.native
+    var fetchKey: js.UndefOr[String | Double] = js.undefined
     
-    var fetchPolicy: js.UndefOr[typings.entriaRelayExperimental.queryResourceMod.FetchPolicy] = js.native
+    var fetchPolicy: js.UndefOr[typings.entriaRelayExperimental.queryResourceMod.FetchPolicy] = js.undefined
     
-    var networkCacheConfig: js.UndefOr[CacheConfig] = js.native
+    var networkCacheConfig: js.UndefOr[CacheConfig] = js.undefined
   }
   object FetchKey {
     
@@ -117,20 +115,21 @@ object anon {
     }
   }
   
-  @js.native
-  trait FetchPolicy extends Action {
+  trait FetchPolicy
+    extends StObject
+       with Action {
     
-    var environment: typings.relayRuntime.relayStoreTypesMod.Environment = js.native
+    var environment: typings.relayRuntime.relayStoreTypesMod.Environment
     
-    var fetchPolicy: js.UndefOr[typings.entriaRelayExperimental.queryResourceMod.FetchPolicy] = js.native
+    var fetchPolicy: js.UndefOr[typings.entriaRelayExperimental.queryResourceMod.FetchPolicy] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* args */ Error | Null, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* args */ Error | Null, Unit]] = js.undefined
     
-    var refetchVariables: Variables = js.native
+    var refetchVariables: Variables
     
-    var renderPolicy: js.UndefOr[RenderPolicy] = js.native
+    var renderPolicy: js.UndefOr[RenderPolicy] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object FetchPolicy {
     
@@ -177,10 +176,9 @@ object anon {
     }
   }
   
-  @js.native
   trait NetworkCacheConfig extends StObject {
     
-    var networkCacheConfig: js.UndefOr[CacheConfig] = js.native
+    var networkCacheConfig: js.UndefOr[CacheConfig] = js.undefined
   }
   object NetworkCacheConfig {
     
@@ -201,10 +199,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OnComplete extends StObject {
     
-    var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* arg */ Error | Null, Unit]] = js.undefined
   }
   object OnComplete {
     

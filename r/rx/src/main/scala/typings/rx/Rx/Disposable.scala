@@ -2,14 +2,14 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Disposable extends IDisposable {
+trait Disposable
+  extends StObject
+     with IDisposable {
   
   /** Is this value disposed. */
-  var isDisposed: js.UndefOr[Boolean] = js.native
+  var isDisposed: js.UndefOr[Boolean] = js.undefined
 }
 object Disposable {
   

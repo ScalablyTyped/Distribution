@@ -26,7 +26,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iab {
@@ -34,10 +33,9 @@ object iab {
   object vpaid {
     
     /** Creative Data with AdParameters field */
-    @js.native
     trait CreativeData extends StObject {
       
-      var AdParameters: String = js.native
+      var AdParameters: String
     }
     object CreativeData {
       
@@ -58,20 +56,19 @@ object iab {
     /**
       * JavaScript specific VPAID init config
       */
-    @js.native
     trait EnvironmentVars extends StObject {
       
       /**
         * A reference to the HTML element on the page in which the ad is to be rendered.
         * The ad unit essentially gets control of that element.
         */
-      var slot: HTMLElement = js.native
+      var slot: HTMLElement
       
       /** A reference to the video element on the page where the ad video is to be rendered */
-      var videoSlot: HTMLVideoElement = js.native
+      var videoSlot: HTMLVideoElement
       
       /** A boolean flag indicating whether the `videoSlot` is capable of autoplaying. */
-      var videoSlotCanAutoPlay: Boolean = js.native
+      var videoSlotCanAutoPlay: Boolean
     }
     object EnvironmentVars {
       
@@ -97,104 +94,220 @@ object iab {
     
     /** Vpaid events and associated callbacks to type `subscribe` and `unsubscribe` methods */
     /* Inlined iab-vpaid.iab.vpaid.SimpleEventsMap & iab-vpaid.iab.vpaid.ParameterizedEventsMap */
-    @js.native
     trait EventsMap extends StObject {
       
-      def AdClickThru(url: String, id: String, playerHandles: Boolean): Unit = js.native
+      def AdClickThru(url: String, id: String, playerHandles: Boolean): Unit
       
-      def AdDurationChange(): Unit = js.native
+      def AdDurationChange(): Unit
       @JSName("AdDurationChange")
-      var AdDurationChange_Original: js.Function0[Unit] = js.native
+      var AdDurationChange_Original: js.Function0[Unit]
       
-      def AdError(message: String): Unit = js.native
+      def AdError(message: String): Unit
       
-      def AdExpandedChange(): Unit = js.native
+      def AdExpandedChange(): Unit
       @JSName("AdExpandedChange")
-      var AdExpandedChange_Original: js.Function0[Unit] = js.native
+      var AdExpandedChange_Original: js.Function0[Unit]
       
-      def AdImpression(): Unit = js.native
+      def AdImpression(): Unit
       @JSName("AdImpression")
-      var AdImpression_Original: js.Function0[Unit] = js.native
+      var AdImpression_Original: js.Function0[Unit]
       
-      def AdInteraction(id: String): Unit = js.native
+      def AdInteraction(id: String): Unit
       
-      def AdLinearChange(): Unit = js.native
+      def AdLinearChange(): Unit
       @JSName("AdLinearChange")
-      var AdLinearChange_Original: js.Function0[Unit] = js.native
+      var AdLinearChange_Original: js.Function0[Unit]
       
-      def AdLoaded(): Unit = js.native
+      def AdLoaded(): Unit
       @JSName("AdLoaded")
-      var AdLoaded_Original: js.Function0[Unit] = js.native
+      var AdLoaded_Original: js.Function0[Unit]
       
-      def AdLog(id: String): Unit = js.native
+      def AdLog(id: String): Unit
       
-      def AdPaused(): Unit = js.native
+      def AdPaused(): Unit
       @JSName("AdPaused")
-      var AdPaused_Original: js.Function0[Unit] = js.native
+      var AdPaused_Original: js.Function0[Unit]
       
-      def AdPlaying(): Unit = js.native
+      def AdPlaying(): Unit
       @JSName("AdPlaying")
-      var AdPlaying_Original: js.Function0[Unit] = js.native
+      var AdPlaying_Original: js.Function0[Unit]
       
-      def AdRemainingTimeChange(): Unit = js.native
+      def AdRemainingTimeChange(): Unit
       @JSName("AdRemainingTimeChange")
-      var AdRemainingTimeChange_Original: js.Function0[Unit] = js.native
+      var AdRemainingTimeChange_Original: js.Function0[Unit]
       
-      def AdSizeChange(): Unit = js.native
+      def AdSizeChange(): Unit
       @JSName("AdSizeChange")
-      var AdSizeChange_Original: js.Function0[Unit] = js.native
+      var AdSizeChange_Original: js.Function0[Unit]
       
-      def AdSkippableStateChange(): Unit = js.native
+      def AdSkippableStateChange(): Unit
       @JSName("AdSkippableStateChange")
-      var AdSkippableStateChange_Original: js.Function0[Unit] = js.native
+      var AdSkippableStateChange_Original: js.Function0[Unit]
       
-      def AdSkipped(): Unit = js.native
+      def AdSkipped(): Unit
       @JSName("AdSkipped")
-      var AdSkipped_Original: js.Function0[Unit] = js.native
+      var AdSkipped_Original: js.Function0[Unit]
       
-      def AdStarted(): Unit = js.native
+      def AdStarted(): Unit
       @JSName("AdStarted")
-      var AdStarted_Original: js.Function0[Unit] = js.native
+      var AdStarted_Original: js.Function0[Unit]
       
-      def AdStopped(): Unit = js.native
+      def AdStopped(): Unit
       @JSName("AdStopped")
-      var AdStopped_Original: js.Function0[Unit] = js.native
+      var AdStopped_Original: js.Function0[Unit]
       
-      def AdUserAcceptInvitation(): Unit = js.native
+      def AdUserAcceptInvitation(): Unit
       @JSName("AdUserAcceptInvitation")
-      var AdUserAcceptInvitation_Original: js.Function0[Unit] = js.native
+      var AdUserAcceptInvitation_Original: js.Function0[Unit]
       
-      def AdUserClose(): Unit = js.native
+      def AdUserClose(): Unit
       @JSName("AdUserClose")
-      var AdUserClose_Original: js.Function0[Unit] = js.native
+      var AdUserClose_Original: js.Function0[Unit]
       
-      def AdUserMinimize(): Unit = js.native
+      def AdUserMinimize(): Unit
       @JSName("AdUserMinimize")
-      var AdUserMinimize_Original: js.Function0[Unit] = js.native
+      var AdUserMinimize_Original: js.Function0[Unit]
       
-      def AdVideoComplete(): Unit = js.native
+      def AdVideoComplete(): Unit
       @JSName("AdVideoComplete")
-      var AdVideoComplete_Original: js.Function0[Unit] = js.native
+      var AdVideoComplete_Original: js.Function0[Unit]
       
-      def AdVideoFirstQuartile(): Unit = js.native
+      def AdVideoFirstQuartile(): Unit
       @JSName("AdVideoFirstQuartile")
-      var AdVideoFirstQuartile_Original: js.Function0[Unit] = js.native
+      var AdVideoFirstQuartile_Original: js.Function0[Unit]
       
-      def AdVideoMidpoint(): Unit = js.native
+      def AdVideoMidpoint(): Unit
       @JSName("AdVideoMidpoint")
-      var AdVideoMidpoint_Original: js.Function0[Unit] = js.native
+      var AdVideoMidpoint_Original: js.Function0[Unit]
       
-      def AdVideoStart(): Unit = js.native
+      def AdVideoStart(): Unit
       @JSName("AdVideoStart")
-      var AdVideoStart_Original: js.Function0[Unit] = js.native
+      var AdVideoStart_Original: js.Function0[Unit]
       
-      def AdVideoThirdQuartile(): Unit = js.native
+      def AdVideoThirdQuartile(): Unit
       @JSName("AdVideoThirdQuartile")
-      var AdVideoThirdQuartile_Original: js.Function0[Unit] = js.native
+      var AdVideoThirdQuartile_Original: js.Function0[Unit]
       
-      def AdVolumeChange(): Unit = js.native
+      def AdVolumeChange(): Unit
       @JSName("AdVolumeChange")
-      var AdVolumeChange_Original: js.Function0[Unit] = js.native
+      var AdVolumeChange_Original: js.Function0[Unit]
+    }
+    object EventsMap {
+      
+      @scala.inline
+      def apply(
+        AdClickThru: (String, String, Boolean) => Unit,
+        AdDurationChange: () => Unit,
+        AdError: String => Unit,
+        AdExpandedChange: () => Unit,
+        AdImpression: () => Unit,
+        AdInteraction: String => Unit,
+        AdLinearChange: () => Unit,
+        AdLoaded: () => Unit,
+        AdLog: String => Unit,
+        AdPaused: () => Unit,
+        AdPlaying: () => Unit,
+        AdRemainingTimeChange: () => Unit,
+        AdSizeChange: () => Unit,
+        AdSkippableStateChange: () => Unit,
+        AdSkipped: () => Unit,
+        AdStarted: () => Unit,
+        AdStopped: () => Unit,
+        AdUserAcceptInvitation: () => Unit,
+        AdUserClose: () => Unit,
+        AdUserMinimize: () => Unit,
+        AdVideoComplete: () => Unit,
+        AdVideoFirstQuartile: () => Unit,
+        AdVideoMidpoint: () => Unit,
+        AdVideoStart: () => Unit,
+        AdVideoThirdQuartile: () => Unit,
+        AdVolumeChange: () => Unit
+      ): EventsMap = {
+        val __obj = js.Dynamic.literal(AdClickThru = js.Any.fromFunction3(AdClickThru), AdDurationChange = js.Any.fromFunction0(AdDurationChange), AdError = js.Any.fromFunction1(AdError), AdExpandedChange = js.Any.fromFunction0(AdExpandedChange), AdImpression = js.Any.fromFunction0(AdImpression), AdInteraction = js.Any.fromFunction1(AdInteraction), AdLinearChange = js.Any.fromFunction0(AdLinearChange), AdLoaded = js.Any.fromFunction0(AdLoaded), AdLog = js.Any.fromFunction1(AdLog), AdPaused = js.Any.fromFunction0(AdPaused), AdPlaying = js.Any.fromFunction0(AdPlaying), AdRemainingTimeChange = js.Any.fromFunction0(AdRemainingTimeChange), AdSizeChange = js.Any.fromFunction0(AdSizeChange), AdSkippableStateChange = js.Any.fromFunction0(AdSkippableStateChange), AdSkipped = js.Any.fromFunction0(AdSkipped), AdStarted = js.Any.fromFunction0(AdStarted), AdStopped = js.Any.fromFunction0(AdStopped), AdUserAcceptInvitation = js.Any.fromFunction0(AdUserAcceptInvitation), AdUserClose = js.Any.fromFunction0(AdUserClose), AdUserMinimize = js.Any.fromFunction0(AdUserMinimize), AdVideoComplete = js.Any.fromFunction0(AdVideoComplete), AdVideoFirstQuartile = js.Any.fromFunction0(AdVideoFirstQuartile), AdVideoMidpoint = js.Any.fromFunction0(AdVideoMidpoint), AdVideoStart = js.Any.fromFunction0(AdVideoStart), AdVideoThirdQuartile = js.Any.fromFunction0(AdVideoThirdQuartile), AdVolumeChange = js.Any.fromFunction0(AdVolumeChange))
+        __obj.asInstanceOf[EventsMap]
+      }
+      
+      @scala.inline
+      implicit class EventsMapMutableBuilder[Self <: EventsMap] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setAdClickThru(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "AdClickThru", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdError(value: String => Unit): Self = StObject.set(x, "AdError", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdInteraction(value: String => Unit): Self = StObject.set(x, "AdInteraction", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdLog(value: String => Unit): Self = StObject.set(x, "AdLog", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
+      }
     }
     
     /* Inlined keyof iab-vpaid.iab.vpaid.EventsMap */
@@ -308,16 +421,15 @@ object iab {
       def AdVolumeChange: typings.iabVpaid.iabVpaidStrings.AdVolumeChange = "AdVolumeChange".asInstanceOf[typings.iabVpaid.iabVpaidStrings.AdVolumeChange]
     }
     
-    @js.native
     trait ParameterizedEventsMap extends StObject {
       
-      def AdClickThru(url: String, id: String, playerHandles: Boolean): Unit = js.native
+      def AdClickThru(url: String, id: String, playerHandles: Boolean): Unit
       
-      def AdError(message: String): Unit = js.native
+      def AdError(message: String): Unit
       
-      def AdInteraction(id: String): Unit = js.native
+      def AdInteraction(id: String): Unit
       
-      def AdLog(id: String): Unit = js.native
+      def AdLog(id: String): Unit
     }
     object ParameterizedEventsMap {
       
@@ -444,96 +556,196 @@ object iab {
     }
     
     /* Inlined {[ K in iab-vpaid.iab.vpaid.SimpleEvents ]: (): void} */
-    @js.native
     trait SimpleEventsMap extends StObject {
       
-      def AdDurationChange(): Unit = js.native
+      def AdDurationChange(): Unit
       @JSName("AdDurationChange")
-      var AdDurationChange_Original: js.Function0[Unit] = js.native
+      var AdDurationChange_Original: js.Function0[Unit]
       
-      def AdExpandedChange(): Unit = js.native
+      def AdExpandedChange(): Unit
       @JSName("AdExpandedChange")
-      var AdExpandedChange_Original: js.Function0[Unit] = js.native
+      var AdExpandedChange_Original: js.Function0[Unit]
       
-      def AdImpression(): Unit = js.native
+      def AdImpression(): Unit
       @JSName("AdImpression")
-      var AdImpression_Original: js.Function0[Unit] = js.native
+      var AdImpression_Original: js.Function0[Unit]
       
-      def AdLinearChange(): Unit = js.native
+      def AdLinearChange(): Unit
       @JSName("AdLinearChange")
-      var AdLinearChange_Original: js.Function0[Unit] = js.native
+      var AdLinearChange_Original: js.Function0[Unit]
       
-      def AdLoaded(): Unit = js.native
+      def AdLoaded(): Unit
       @JSName("AdLoaded")
-      var AdLoaded_Original: js.Function0[Unit] = js.native
+      var AdLoaded_Original: js.Function0[Unit]
       
-      def AdPaused(): Unit = js.native
+      def AdPaused(): Unit
       @JSName("AdPaused")
-      var AdPaused_Original: js.Function0[Unit] = js.native
+      var AdPaused_Original: js.Function0[Unit]
       
-      def AdPlaying(): Unit = js.native
+      def AdPlaying(): Unit
       @JSName("AdPlaying")
-      var AdPlaying_Original: js.Function0[Unit] = js.native
+      var AdPlaying_Original: js.Function0[Unit]
       
-      def AdRemainingTimeChange(): Unit = js.native
+      def AdRemainingTimeChange(): Unit
       @JSName("AdRemainingTimeChange")
-      var AdRemainingTimeChange_Original: js.Function0[Unit] = js.native
+      var AdRemainingTimeChange_Original: js.Function0[Unit]
       
-      def AdSizeChange(): Unit = js.native
+      def AdSizeChange(): Unit
       @JSName("AdSizeChange")
-      var AdSizeChange_Original: js.Function0[Unit] = js.native
+      var AdSizeChange_Original: js.Function0[Unit]
       
-      def AdSkippableStateChange(): Unit = js.native
+      def AdSkippableStateChange(): Unit
       @JSName("AdSkippableStateChange")
-      var AdSkippableStateChange_Original: js.Function0[Unit] = js.native
+      var AdSkippableStateChange_Original: js.Function0[Unit]
       
-      def AdSkipped(): Unit = js.native
+      def AdSkipped(): Unit
       @JSName("AdSkipped")
-      var AdSkipped_Original: js.Function0[Unit] = js.native
+      var AdSkipped_Original: js.Function0[Unit]
       
-      def AdStarted(): Unit = js.native
+      def AdStarted(): Unit
       @JSName("AdStarted")
-      var AdStarted_Original: js.Function0[Unit] = js.native
+      var AdStarted_Original: js.Function0[Unit]
       
-      def AdStopped(): Unit = js.native
+      def AdStopped(): Unit
       @JSName("AdStopped")
-      var AdStopped_Original: js.Function0[Unit] = js.native
+      var AdStopped_Original: js.Function0[Unit]
       
-      def AdUserAcceptInvitation(): Unit = js.native
+      def AdUserAcceptInvitation(): Unit
       @JSName("AdUserAcceptInvitation")
-      var AdUserAcceptInvitation_Original: js.Function0[Unit] = js.native
+      var AdUserAcceptInvitation_Original: js.Function0[Unit]
       
-      def AdUserClose(): Unit = js.native
+      def AdUserClose(): Unit
       @JSName("AdUserClose")
-      var AdUserClose_Original: js.Function0[Unit] = js.native
+      var AdUserClose_Original: js.Function0[Unit]
       
-      def AdUserMinimize(): Unit = js.native
+      def AdUserMinimize(): Unit
       @JSName("AdUserMinimize")
-      var AdUserMinimize_Original: js.Function0[Unit] = js.native
+      var AdUserMinimize_Original: js.Function0[Unit]
       
-      def AdVideoComplete(): Unit = js.native
+      def AdVideoComplete(): Unit
       @JSName("AdVideoComplete")
-      var AdVideoComplete_Original: js.Function0[Unit] = js.native
+      var AdVideoComplete_Original: js.Function0[Unit]
       
-      def AdVideoFirstQuartile(): Unit = js.native
+      def AdVideoFirstQuartile(): Unit
       @JSName("AdVideoFirstQuartile")
-      var AdVideoFirstQuartile_Original: js.Function0[Unit] = js.native
+      var AdVideoFirstQuartile_Original: js.Function0[Unit]
       
-      def AdVideoMidpoint(): Unit = js.native
+      def AdVideoMidpoint(): Unit
       @JSName("AdVideoMidpoint")
-      var AdVideoMidpoint_Original: js.Function0[Unit] = js.native
+      var AdVideoMidpoint_Original: js.Function0[Unit]
       
-      def AdVideoStart(): Unit = js.native
+      def AdVideoStart(): Unit
       @JSName("AdVideoStart")
-      var AdVideoStart_Original: js.Function0[Unit] = js.native
+      var AdVideoStart_Original: js.Function0[Unit]
       
-      def AdVideoThirdQuartile(): Unit = js.native
+      def AdVideoThirdQuartile(): Unit
       @JSName("AdVideoThirdQuartile")
-      var AdVideoThirdQuartile_Original: js.Function0[Unit] = js.native
+      var AdVideoThirdQuartile_Original: js.Function0[Unit]
       
-      def AdVolumeChange(): Unit = js.native
+      def AdVolumeChange(): Unit
       @JSName("AdVolumeChange")
-      var AdVolumeChange_Original: js.Function0[Unit] = js.native
+      var AdVolumeChange_Original: js.Function0[Unit]
+    }
+    object SimpleEventsMap {
+      
+      @scala.inline
+      def apply(
+        AdDurationChange: () => Unit,
+        AdExpandedChange: () => Unit,
+        AdImpression: () => Unit,
+        AdLinearChange: () => Unit,
+        AdLoaded: () => Unit,
+        AdPaused: () => Unit,
+        AdPlaying: () => Unit,
+        AdRemainingTimeChange: () => Unit,
+        AdSizeChange: () => Unit,
+        AdSkippableStateChange: () => Unit,
+        AdSkipped: () => Unit,
+        AdStarted: () => Unit,
+        AdStopped: () => Unit,
+        AdUserAcceptInvitation: () => Unit,
+        AdUserClose: () => Unit,
+        AdUserMinimize: () => Unit,
+        AdVideoComplete: () => Unit,
+        AdVideoFirstQuartile: () => Unit,
+        AdVideoMidpoint: () => Unit,
+        AdVideoStart: () => Unit,
+        AdVideoThirdQuartile: () => Unit,
+        AdVolumeChange: () => Unit
+      ): SimpleEventsMap = {
+        val __obj = js.Dynamic.literal(AdDurationChange = js.Any.fromFunction0(AdDurationChange), AdExpandedChange = js.Any.fromFunction0(AdExpandedChange), AdImpression = js.Any.fromFunction0(AdImpression), AdLinearChange = js.Any.fromFunction0(AdLinearChange), AdLoaded = js.Any.fromFunction0(AdLoaded), AdPaused = js.Any.fromFunction0(AdPaused), AdPlaying = js.Any.fromFunction0(AdPlaying), AdRemainingTimeChange = js.Any.fromFunction0(AdRemainingTimeChange), AdSizeChange = js.Any.fromFunction0(AdSizeChange), AdSkippableStateChange = js.Any.fromFunction0(AdSkippableStateChange), AdSkipped = js.Any.fromFunction0(AdSkipped), AdStarted = js.Any.fromFunction0(AdStarted), AdStopped = js.Any.fromFunction0(AdStopped), AdUserAcceptInvitation = js.Any.fromFunction0(AdUserAcceptInvitation), AdUserClose = js.Any.fromFunction0(AdUserClose), AdUserMinimize = js.Any.fromFunction0(AdUserMinimize), AdVideoComplete = js.Any.fromFunction0(AdVideoComplete), AdVideoFirstQuartile = js.Any.fromFunction0(AdVideoFirstQuartile), AdVideoMidpoint = js.Any.fromFunction0(AdVideoMidpoint), AdVideoStart = js.Any.fromFunction0(AdVideoStart), AdVideoThirdQuartile = js.Any.fromFunction0(AdVideoThirdQuartile), AdVolumeChange = js.Any.fromFunction0(AdVolumeChange))
+        __obj.asInstanceOf[SimpleEventsMap]
+      }
+      
+      @scala.inline
+      implicit class SimpleEventsMapMutableBuilder[Self <: SimpleEventsMap] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setAdDurationChange(value: () => Unit): Self = StObject.set(x, "AdDurationChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdExpandedChange(value: () => Unit): Self = StObject.set(x, "AdExpandedChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdImpression(value: () => Unit): Self = StObject.set(x, "AdImpression", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdLinearChange(value: () => Unit): Self = StObject.set(x, "AdLinearChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdLoaded(value: () => Unit): Self = StObject.set(x, "AdLoaded", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdPaused(value: () => Unit): Self = StObject.set(x, "AdPaused", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdPlaying(value: () => Unit): Self = StObject.set(x, "AdPlaying", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdRemainingTimeChange(value: () => Unit): Self = StObject.set(x, "AdRemainingTimeChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSizeChange(value: () => Unit): Self = StObject.set(x, "AdSizeChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSkippableStateChange(value: () => Unit): Self = StObject.set(x, "AdSkippableStateChange", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdSkipped(value: () => Unit): Self = StObject.set(x, "AdSkipped", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdStarted(value: () => Unit): Self = StObject.set(x, "AdStarted", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdStopped(value: () => Unit): Self = StObject.set(x, "AdStopped", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserAcceptInvitation(value: () => Unit): Self = StObject.set(x, "AdUserAcceptInvitation", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserClose(value: () => Unit): Self = StObject.set(x, "AdUserClose", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdUserMinimize(value: () => Unit): Self = StObject.set(x, "AdUserMinimize", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoComplete(value: () => Unit): Self = StObject.set(x, "AdVideoComplete", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoFirstQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoFirstQuartile", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoMidpoint(value: () => Unit): Self = StObject.set(x, "AdVideoMidpoint", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoStart(value: () => Unit): Self = StObject.set(x, "AdVideoStart", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVideoThirdQuartile(value: () => Unit): Self = StObject.set(x, "AdVideoThirdQuartile", js.Any.fromFunction0(value))
+        
+        @scala.inline
+        def setAdVolumeChange(value: () => Unit): Self = StObject.set(x, "AdVolumeChange", js.Any.fromFunction0(value))
+      }
     }
     
     /** The vpaid view mode set on init or on resize */
@@ -827,7 +1039,7 @@ object iab {
         height: Double,
         viewMode: ViewMode,
         desiredBitrate: Double,
-        creativeData: js.UndefOr[scala.Nothing],
+        creativeData: Null,
         environmentVars: EnvironmentVars
       ): Unit = js.native
       def initAd(
@@ -835,7 +1047,7 @@ object iab {
         height: Double,
         viewMode: ViewMode,
         desiredBitrate: Double,
-        creativeData: Null,
+        creativeData: Unit,
         environmentVars: EnvironmentVars
       ): Unit = js.native
       /**

@@ -6,7 +6,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wingBlankIndexNativeMod {
@@ -35,10 +34,11 @@ object wingBlankIndexNativeMod {
   trait WingBlank
     extends Component[WingBlankProps, js.Any, js.Any]
   
-  @js.native
-  trait WingBlankProps extends WingBlankPropsType {
+  trait WingBlankProps
+    extends StObject
+       with WingBlankPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object WingBlankProps {
     

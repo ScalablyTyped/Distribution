@@ -6,16 +6,16 @@ import typings.postmark.anon.DeliveryMessage
 import typings.postmark.anon.Summary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outboundMessageEventsMod {
   
-  @js.native
-  trait BounceEvent extends MessageEvent {
+  trait BounceEvent
+    extends StObject
+       with MessageEvent {
     
     @JSName("Details")
-    var Details_BounceEvent: BounceID = js.native
+    var Details_BounceEvent: BounceID
   }
   object BounceEvent {
     
@@ -33,11 +33,12 @@ object outboundMessageEventsMod {
     }
   }
   
-  @js.native
-  trait ClickEvent extends MessageEvent {
+  trait ClickEvent
+    extends StObject
+       with MessageEvent {
     
     @JSName("Details")
-    var Details_ClickEvent: ClickLocation = js.native
+    var Details_ClickEvent: ClickLocation
   }
   object ClickEvent {
     
@@ -55,11 +56,12 @@ object outboundMessageEventsMod {
     }
   }
   
-  @js.native
-  trait DeliveryEvent extends MessageEvent {
+  trait DeliveryEvent
+    extends StObject
+       with MessageEvent {
     
     @JSName("Details")
-    var Details_DeliveryEvent: DeliveryMessage = js.native
+    var Details_DeliveryEvent: DeliveryMessage
   }
   object DeliveryEvent {
     
@@ -77,16 +79,15 @@ object outboundMessageEventsMod {
     }
   }
   
-  @js.native
   trait MessageEvent extends StObject {
     
-    var Details: js.Object = js.native
+    var Details: js.Object
     
-    var ReceivedAt: String = js.native
+    var ReceivedAt: String
     
-    var Recipient: String = js.native
+    var Recipient: String
     
-    var Type: String = js.native
+    var Type: String
   }
   object MessageEvent {
     
@@ -113,11 +114,12 @@ object outboundMessageEventsMod {
     }
   }
   
-  @js.native
-  trait OpenEvent extends MessageEvent {
+  trait OpenEvent
+    extends StObject
+       with MessageEvent {
     
     @JSName("Details")
-    var Details_OpenEvent: Summary = js.native
+    var Details_OpenEvent: Summary
   }
   object OpenEvent {
     
@@ -135,11 +137,12 @@ object outboundMessageEventsMod {
     }
   }
   
-  @js.native
-  trait TransientDelayEvent extends MessageEvent {
+  trait TransientDelayEvent
+    extends StObject
+       with MessageEvent {
     
     @JSName("Details")
-    var Details_TransientDelayEvent: DeliveryMessage = js.native
+    var Details_TransientDelayEvent: DeliveryMessage
   }
   object TransientDelayEvent {
     

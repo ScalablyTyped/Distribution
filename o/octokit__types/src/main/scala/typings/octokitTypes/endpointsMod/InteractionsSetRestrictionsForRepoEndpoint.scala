@@ -1,35 +1,33 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`4`
+import typings.octokitTypes.anon.`0`
 import typings.octokitTypes.octokitTypesStrings.collaborators_only
 import typings.octokitTypes.octokitTypesStrings.contributors_only
 import typings.octokitTypes.octokitTypesStrings.existing_users
+import typings.octokitTypes.octokitTypesStrings.sombra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   limit :'existing_users' | 'contributors_only' | 'collaborators_only'} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'sombra'> */
-@js.native
-trait InteractionsSetRestrictionsForRepoEndpoint extends StObject {
+trait InteractionsSetRestrictionsForRepoEndpoint
+  extends StObject
+     with RequiredPreview[sombra] {
   
   /**
     * Specifies the group of GitHub users who can comment, open issues, or create pull requests for the given repository. Must be one of: `existing_users`, `contributors_only`, or `collaborators_only`.
     */
-  var limit: existing_users | contributors_only | collaborators_only = js.native
+  var limit: existing_users | contributors_only | collaborators_only
   
-  var mediaType: `4` = js.native
+  var owner: String
   
-  var owner: String = js.native
-  
-  var repo: String = js.native
+  var repo: String
 }
 object InteractionsSetRestrictionsForRepoEndpoint {
   
   @scala.inline
   def apply(
     limit: existing_users | contributors_only | collaborators_only,
-    mediaType: `4`,
+    mediaType: `0`[sombra],
     owner: String,
     repo: String
   ): InteractionsSetRestrictionsForRepoEndpoint = {
@@ -42,9 +40,6 @@ object InteractionsSetRestrictionsForRepoEndpoint {
     
     @scala.inline
     def setLimit(value: existing_users | contributors_only | collaborators_only): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `4`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

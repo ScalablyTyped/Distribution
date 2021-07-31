@@ -2,15 +2,13 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expression extends StObject {
   
-  var ExpressionName: StandardName = js.native
+  var ExpressionName: StandardName
   
-  var ExpressionValue: typings.awsSdk.cloudsearchMod.ExpressionValue = js.native
+  var ExpressionValue: typings.awsSdk.cloudsearchMod.ExpressionValue
 }
 object Expression {
   

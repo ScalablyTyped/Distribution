@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsItemDataValue extends StObject {
   
   /**
     * The type of key-value pair. Valid types include SearchableString and String.
     */
-  var Type: js.UndefOr[OpsItemDataType] = js.native
+  var Type: js.UndefOr[OpsItemDataType] = js.undefined
   
   /**
     * The value of the OperationalData key.
     */
-  var Value: js.UndefOr[OpsItemDataValueString] = js.native
+  var Value: js.UndefOr[OpsItemDataValueString] = js.undefined
 }
 object OpsItemDataValue {
   

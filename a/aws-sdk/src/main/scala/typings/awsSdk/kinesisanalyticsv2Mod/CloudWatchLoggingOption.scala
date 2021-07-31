@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLoggingOption extends StObject {
   
   /**
     * The ARN of the CloudWatch log to receive application messages.
     */
-  var LogStreamARN: typings.awsSdk.kinesisanalyticsv2Mod.LogStreamARN = js.native
+  var LogStreamARN: typings.awsSdk.kinesisanalyticsv2Mod.LogStreamARN
 }
 object CloudWatchLoggingOption {
   

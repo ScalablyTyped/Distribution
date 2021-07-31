@@ -2,66 +2,64 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilationJobSummary extends StObject {
   
   /**
     * The time when the model compilation job completed.
     */
-  var CompilationEndTime: js.UndefOr[Timestamp] = js.native
+  var CompilationEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the model compilation job.
     */
-  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn = js.native
+  var CompilationJobArn: typings.awsSdk.sagemakerMod.CompilationJobArn
   
   /**
     * The name of the model compilation job that you want a summary for.
     */
-  var CompilationJobName: EntityName = js.native
+  var CompilationJobName: EntityName
   
   /**
     * The status of the model compilation job.
     */
-  var CompilationJobStatus: typings.awsSdk.sagemakerMod.CompilationJobStatus = js.native
+  var CompilationJobStatus: typings.awsSdk.sagemakerMod.CompilationJobStatus
   
   /**
     * The time when the model compilation job started.
     */
-  var CompilationStartTime: js.UndefOr[Timestamp] = js.native
+  var CompilationStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of device that the model will run on after the compilation job has completed.
     */
-  var CompilationTargetDevice: js.UndefOr[TargetDevice] = js.native
+  var CompilationTargetDevice: js.UndefOr[TargetDevice] = js.undefined
   
   /**
     * The type of accelerator that the model will run on after the compilation job has completed.
     */
-  var CompilationTargetPlatformAccelerator: js.UndefOr[TargetPlatformAccelerator] = js.native
+  var CompilationTargetPlatformAccelerator: js.UndefOr[TargetPlatformAccelerator] = js.undefined
   
   /**
     * The type of architecture that the model will run on after the compilation job has completed.
     */
-  var CompilationTargetPlatformArch: js.UndefOr[TargetPlatformArch] = js.native
+  var CompilationTargetPlatformArch: js.UndefOr[TargetPlatformArch] = js.undefined
   
   /**
     * The type of OS that the model will run on after the compilation job has completed.
     */
-  var CompilationTargetPlatformOs: js.UndefOr[TargetPlatformOs] = js.native
+  var CompilationTargetPlatformOs: js.UndefOr[TargetPlatformOs] = js.undefined
   
   /**
     * The time when the model compilation job was created.
     */
-  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime = js.native
+  var CreationTime: typings.awsSdk.sagemakerMod.CreationTime
   
   /**
     * The time when the model compilation job was last modified.
     */
-  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.native
+  var LastModifiedTime: js.UndefOr[typings.awsSdk.sagemakerMod.LastModifiedTime] = js.undefined
 }
 object CompilationJobSummary {
   

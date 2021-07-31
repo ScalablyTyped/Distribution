@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is invoked in case of fired database exception triggered by a database object. */
-@js.native
-trait SQLErrorEvent extends EventObject {
+trait SQLErrorEvent
+  extends StObject
+     with EventObject {
   
   /** contains the exception that is going to be fired. */
-  var Reason: js.Any = js.native
+  var Reason: js.Any
 }
 object SQLErrorEvent {
   

@@ -10,9 +10,9 @@ Multipart plugin for Fastify
 | ------------------ | :-------------: |
 | Full name          | fastify-multipart |
 | Keywords           | fastify, multipart, form |
-| # releases         | 18 |
-| # dependents       | 19 |
-| # downloads        | 298233 |
+| # releases         | 21 |
+| # dependents       | 25 |
+| # downloads        | 560073 |
 | # stars            | 0 |
 
 ## Links

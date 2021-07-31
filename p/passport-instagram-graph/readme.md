@@ -12,7 +12,7 @@ Instagram graph authentication strategy for Passport.
 | Keywords           | passport, instagram, auth, authentication, identity |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 770 |
+| # downloads        | 2180 |
 | # stars            | 0 |
 
 ## Links

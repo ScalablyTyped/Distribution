@@ -2,16 +2,14 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotSeriesPointOptions extends StObject {
   
   /**
     * (Highstock) Events for each single point.
     */
-  var events: js.UndefOr[PointEventsOptionsObject] = js.native
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
 }
 object PlotSeriesPointOptions {
   

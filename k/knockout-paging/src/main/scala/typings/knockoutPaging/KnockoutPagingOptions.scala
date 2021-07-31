@@ -3,15 +3,13 @@ package typings.knockoutPaging
 import typings.knockoutPaging.anon.Dictname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutPagingOptions extends StObject {
   
-  var defaults: KnockoutPagingDefaultOptions = js.native
+  var defaults: KnockoutPagingDefaultOptions
   
-  var generators: Dictname = js.native
+  var generators: Dictname
 }
 object KnockoutPagingOptions {
   

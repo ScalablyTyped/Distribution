@@ -2,28 +2,26 @@ package typings.vegaLite.transformMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImputeSequence extends StObject {
   
   /**
     * The starting value of the sequence.
     * __Default value:__ `0`
     */
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
   /**
     * The step value between sequence entries.
     * __Default value:__ `1` or `-1` if `stop < start`
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * The ending value(exclusive) of the sequence.
     */
-  var stop: Double = js.native
+  var stop: Double
 }
 object ImputeSequence {
   

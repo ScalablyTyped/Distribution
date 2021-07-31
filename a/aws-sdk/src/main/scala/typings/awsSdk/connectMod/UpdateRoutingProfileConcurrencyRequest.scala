@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRoutingProfileConcurrencyRequest extends StObject {
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The channels agents can handle in the Contact Control Panel (CCP).
     */
-  var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies = js.native
+  var MediaConcurrencies: typings.awsSdk.connectMod.MediaConcurrencies
   
   /**
     * The identifier of the routing profile.
     */
-  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId = js.native
+  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId
 }
 object UpdateRoutingProfileConcurrencyRequest {
   

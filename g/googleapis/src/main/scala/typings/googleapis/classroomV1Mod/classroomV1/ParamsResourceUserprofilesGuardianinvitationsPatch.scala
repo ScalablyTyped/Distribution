@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUserprofilesGuardianinvitationsPatch extends StandardParameters {
+trait ParamsResourceUserprofilesGuardianinvitationsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The `id` field of the `GuardianInvitation` to be modified.
     */
-  var invitationId: js.UndefOr[String] = js.native
+  var invitationId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGuardianInvitation] = js.native
+  var requestBody: js.UndefOr[SchemaGuardianInvitation] = js.undefined
   
   /**
     * The ID of the student whose guardian invitation is to be modified.
     */
-  var studentId: js.UndefOr[String] = js.native
+  var studentId: js.UndefOr[String] = js.undefined
   
   /**
     * Mask that identifies which fields on the course to update. This field is
@@ -39,7 +39,7 @@ trait ParamsResourceUserprofilesGuardianinvitationsPatch extends StandardParamet
     * query parameter, this field should be specified as
     * `updateMask=<field1>,<field2>,...`
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUserprofilesGuardianinvitationsPatch {
   

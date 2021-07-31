@@ -3,13 +3,11 @@ package typings.reactMdl.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomRenderedComponent extends StObject {
   
-  var component: js.UndefOr[String | Element | js.Function] = js.native
+  var component: js.UndefOr[String | Element | js.Function] = js.undefined
 }
 object CustomRenderedComponent {
   

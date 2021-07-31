@@ -2,12 +2,12 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RowsMethods
-  extends CoreMethods
+  extends StObject
+     with CoreMethods
      with CommonRowMethod {
   
   /**
@@ -16,7 +16,7 @@ trait RowsMethods
     * @param d Data to use for the row.
     */
   def data(): Api = js.native
-  def data(d: js.Array[_]): Api = js.native
+  def data(d: js.Array[js.Any]): Api = js.native
   def data(d: js.Object): Api = js.native
   
   /**

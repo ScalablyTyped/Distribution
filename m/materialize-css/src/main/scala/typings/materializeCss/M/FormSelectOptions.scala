@@ -3,23 +3,21 @@ package typings.materializeCss.M
 import typings.materializeCss.anon.PartialDropdownOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormSelectOptions extends StObject {
   
   /**
     * Classes to be added to the select wrapper element
     * @default ''
     */
-  var classes: String = js.native
+  var classes: String
   
   /**
     * Pass options object to select dropdown initialization
     * @default {}
     */
-  var dropdownOptions: PartialDropdownOptions = js.native
+  var dropdownOptions: PartialDropdownOptions
 }
 object FormSelectOptions {
   

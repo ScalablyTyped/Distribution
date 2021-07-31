@@ -4,20 +4,20 @@ import typings.std.HTMLElement
 import typings.sweetalert.optionsMod.SwalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalMod {
   
-  @JSImport("sweetalert/typings/modules/init/modal", JSImport.Default)
+  @JSImport("sweetalert/typings/modules/init/modal", JSImport.Namespace)
   @js.native
-  def default(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sweetalert/typings/modules/init/modal", "initModalContent")
-  @js.native
-  def initModalContent(opts: SwalOptions): Unit = js.native
+  @scala.inline
+  def default(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Unit]
   
-  @JSImport("sweetalert/typings/modules/init/modal", "injectElIntoModal")
-  @js.native
-  def injectElIntoModal(markup: String): HTMLElement = js.native
+  @scala.inline
+  def initModalContent(opts: SwalOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initModalContent")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def injectElIntoModal(markup: String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("injectElIntoModal")(markup.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
 }

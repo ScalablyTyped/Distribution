@@ -4,7 +4,6 @@ import typings.sugar.sugarjs.Date.DateCreateOptions
 import typings.sugar.sugarjs.Range
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,13 +21,13 @@ trait Number extends StObject {
   def atan(): Double = js.native
   
   def bytes(): java.lang.String = js.native
-  def bytes(precision: js.UndefOr[scala.Nothing], binary: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
-  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean): java.lang.String = js.native
-  def bytes(precision: js.UndefOr[scala.Nothing], binary: Boolean, units: java.lang.String): java.lang.String = js.native
   def bytes(precision: Double): java.lang.String = js.native
-  def bytes(precision: Double, binary: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
   def bytes(precision: Double, binary: Boolean): java.lang.String = js.native
   def bytes(precision: Double, binary: Boolean, units: java.lang.String): java.lang.String = js.native
+  def bytes(precision: Double, binary: Unit, units: java.lang.String): java.lang.String = js.native
+  def bytes(precision: Unit, binary: Boolean): java.lang.String = js.native
+  def bytes(precision: Unit, binary: Boolean, units: java.lang.String): java.lang.String = js.native
+  def bytes(precision: Unit, binary: Unit, units: java.lang.String): java.lang.String = js.native
   
   def cap(): Double = js.native
   def cap(max: Double): Double = js.native
@@ -39,9 +38,9 @@ trait Number extends StObject {
   def chr(): java.lang.String = js.native
   
   def clamp(): Double = js.native
-  def clamp(start: js.UndefOr[scala.Nothing], end: Double): Double = js.native
   def clamp(start: Double): Double = js.native
   def clamp(start: Double, end: Double): Double = js.native
+  def clamp(start: Unit, end: Double): Double = js.native
   
   def cos(): Double = js.native
   
@@ -87,13 +86,9 @@ trait Number extends StObject {
   
   def downto[T](num: Double): Array[T] = js.native
   def downto[T](num: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
-  def downto[T](
-    num: Double,
-    step: js.UndefOr[scala.Nothing],
-    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
-  ): Array[T] = js.native
   def downto[T](num: Double, step: Double): Array[T] = js.native
   def downto[T](num: Double, step: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
+  def downto[T](num: Double, step: Unit, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
   
   def duration(): java.lang.String = js.native
   def duration(localeCode: java.lang.String): java.lang.String = js.native
@@ -161,9 +156,9 @@ trait Number extends StObject {
   def log(base: Double): Double = js.native
   
   def metric(): java.lang.String = js.native
-  def metric(precision: js.UndefOr[scala.Nothing], units: java.lang.String): java.lang.String = js.native
   def metric(precision: Double): java.lang.String = js.native
   def metric(precision: Double, units: java.lang.String): java.lang.String = js.native
+  def metric(precision: Unit, units: java.lang.String): java.lang.String = js.native
   
   def millisecond(): Double = js.native
   
@@ -288,13 +283,13 @@ trait Number extends StObject {
   def ordinalize(): java.lang.String = js.native
   
   def pad(): java.lang.String = js.native
-  def pad(place: js.UndefOr[scala.Nothing], sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
-  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean): java.lang.String = js.native
-  def pad(place: js.UndefOr[scala.Nothing], sign: Boolean, base: Double): java.lang.String = js.native
   def pad(place: Double): java.lang.String = js.native
-  def pad(place: Double, sign: js.UndefOr[scala.Nothing], base: Double): java.lang.String = js.native
   def pad(place: Double, sign: Boolean): java.lang.String = js.native
   def pad(place: Double, sign: Boolean, base: Double): java.lang.String = js.native
+  def pad(place: Double, sign: Unit, base: Double): java.lang.String = js.native
+  def pad(place: Unit, sign: Boolean): java.lang.String = js.native
+  def pad(place: Unit, sign: Boolean, base: Double): java.lang.String = js.native
+  def pad(place: Unit, sign: Unit, base: Double): java.lang.String = js.native
   
   def pow(): Double = js.native
   
@@ -347,19 +342,15 @@ trait Number extends StObject {
   
   def tan(): Double = js.native
   
-  def times[T](indexMapFn: js.Function1[/* i */ Double, _]): T = js.native
+  def times[T](indexMapFn: js.Function1[/* i */ Double, js.Any]): T = js.native
   
   def toNumber(): Double = js.native
   
   def upto[T](num: Double): Array[T] = js.native
   def upto[T](num: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
-  def upto[T](
-    num: Double,
-    step: js.UndefOr[scala.Nothing],
-    everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]
-  ): Array[T] = js.native
   def upto[T](num: Double, step: Double): Array[T] = js.native
   def upto[T](num: Double, step: Double, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
+  def upto[T](num: Double, step: Unit, everyFn: js.Function3[/* el */ T, /* i */ Double, /* r */ Range, Unit]): Array[T] = js.native
   
   def week(): Double = js.native
   

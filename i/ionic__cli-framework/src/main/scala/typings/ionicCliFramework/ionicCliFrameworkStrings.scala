@@ -4,38 +4,49 @@ import typings.ionicCliFramework.definitionsMod.MetadataGroup
 import typings.ionicCliFramework.loggerMod.LoggerLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicCliFrameworkStrings {
   
   @js.native
-  sealed trait DEBUG extends LoggerLevel
+  sealed trait DEBUG
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def DEBUG: DEBUG = "DEBUG".asInstanceOf[DEBUG]
   
   @js.native
-  sealed trait ERROR extends LoggerLevel
+  sealed trait ERROR
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def ERROR: ERROR = "ERROR".asInstanceOf[ERROR]
   
   @js.native
-  sealed trait INFO extends LoggerLevel
+  sealed trait INFO
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def INFO: INFO = "INFO".asInstanceOf[INFO]
   
   @js.native
-  sealed trait WARN extends LoggerLevel
+  sealed trait WARN
+    extends StObject
+       with LoggerLevel
   @scala.inline
   def WARN: WARN = "WARN".asInstanceOf[WARN]
   
   @js.native
-  sealed trait advanced extends MetadataGroup
+  sealed trait advanced
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def advanced: advanced = "advanced".asInstanceOf[advanced]
   
   @js.native
-  sealed trait beta extends MetadataGroup
+  sealed trait beta
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def beta: beta = "beta".asInstanceOf[beta]
   
@@ -45,7 +56,9 @@ object ionicCliFrameworkStrings {
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait deprecated extends MetadataGroup
+  sealed trait deprecated
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def deprecated: deprecated = "deprecated".asInstanceOf[deprecated]
   
@@ -55,7 +68,9 @@ object ionicCliFrameworkStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait experimental extends MetadataGroup
+  sealed trait experimental
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def experimental: experimental = "experimental".asInstanceOf[experimental]
   
@@ -70,7 +85,9 @@ object ionicCliFrameworkStrings {
   def help: help = "help".asInstanceOf[help]
   
   @js.native
-  sealed trait hidden extends MetadataGroup
+  sealed trait hidden
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -95,7 +112,9 @@ object ionicCliFrameworkStrings {
   def `operation-rpc`: `operation-rpc` = "operation-rpc".asInstanceOf[`operation-rpc`]
   
   @js.native
-  sealed trait paid extends MetadataGroup
+  sealed trait paid
+    extends StObject
+       with MetadataGroup
   @scala.inline
   def paid: paid = "paid".asInstanceOf[paid]
   

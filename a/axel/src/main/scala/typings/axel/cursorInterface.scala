@@ -2,19 +2,17 @@ package typings.axel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait cursorInterface extends StObject {
   
-  def off(): Unit = js.native
+  def off(): Unit
   
-  def on(): Unit = js.native
+  def on(): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def restore(): Unit = js.native
+  def restore(): Unit
 }
 object cursorInterface {
   

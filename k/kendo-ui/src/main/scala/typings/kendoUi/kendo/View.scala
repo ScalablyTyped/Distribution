@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait View extends Observable {
+trait View
+  extends StObject
+     with Observable {
   
   var content: js.Any = js.native
   

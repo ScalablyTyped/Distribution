@@ -3,19 +3,17 @@ package typings.three.anon
 import typings.three.vector2Mod.Vector2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhiLength extends StObject {
   
-  var phiLength: Double = js.native
+  var phiLength: Double
   
-  var phiStart: Double = js.native
+  var phiStart: Double
   
-  var points: js.Array[Vector2] = js.native
+  var points: js.Array[Vector2]
   
-  var segments: Double = js.native
+  var segments: Double
 }
 object PhiLength {
   

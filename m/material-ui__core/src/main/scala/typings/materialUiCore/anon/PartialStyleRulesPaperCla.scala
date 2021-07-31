@@ -3,66 +3,64 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/Paper.PaperClassKey>> */
-@js.native
 trait PartialStyleRulesPaperCla extends StObject {
   
-  var elevation0: js.UndefOr[CSSProperties] = js.native
+  var elevation0: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation1: js.UndefOr[CSSProperties] = js.native
+  var elevation1: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation10: js.UndefOr[CSSProperties] = js.native
+  var elevation10: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation11: js.UndefOr[CSSProperties] = js.native
+  var elevation11: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation12: js.UndefOr[CSSProperties] = js.native
+  var elevation12: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation13: js.UndefOr[CSSProperties] = js.native
+  var elevation13: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation14: js.UndefOr[CSSProperties] = js.native
+  var elevation14: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation15: js.UndefOr[CSSProperties] = js.native
+  var elevation15: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation16: js.UndefOr[CSSProperties] = js.native
+  var elevation16: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation17: js.UndefOr[CSSProperties] = js.native
+  var elevation17: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation18: js.UndefOr[CSSProperties] = js.native
+  var elevation18: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation19: js.UndefOr[CSSProperties] = js.native
+  var elevation19: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation2: js.UndefOr[CSSProperties] = js.native
+  var elevation2: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation20: js.UndefOr[CSSProperties] = js.native
+  var elevation20: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation21: js.UndefOr[CSSProperties] = js.native
+  var elevation21: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation22: js.UndefOr[CSSProperties] = js.native
+  var elevation22: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation23: js.UndefOr[CSSProperties] = js.native
+  var elevation23: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation24: js.UndefOr[CSSProperties] = js.native
+  var elevation24: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation3: js.UndefOr[CSSProperties] = js.native
+  var elevation3: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation4: js.UndefOr[CSSProperties] = js.native
+  var elevation4: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation5: js.UndefOr[CSSProperties] = js.native
+  var elevation5: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation6: js.UndefOr[CSSProperties] = js.native
+  var elevation6: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation7: js.UndefOr[CSSProperties] = js.native
+  var elevation7: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation8: js.UndefOr[CSSProperties] = js.native
+  var elevation8: js.UndefOr[CSSProperties] = js.undefined
   
-  var elevation9: js.UndefOr[CSSProperties] = js.native
+  var elevation9: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var rounded: js.UndefOr[CSSProperties] = js.native
+  var rounded: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesPaperCla {
   

@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,7 @@ object mod {
   @JSImport("react-timeago", JSImport.Namespace)
   @js.native
   class ^[T /* <: ComponentType[js.Object] */] ()
-    extends Component[ReactTimeagoProps[T] with ComponentProps[T], js.Object, js.Any]
+    extends Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, js.Any]
   
   type Formatter = js.Function5[
     /* value */ Double, 
@@ -28,26 +27,25 @@ object mod {
     ReactNode
   ]
   
-  type ReactTimeago[T /* <: ComponentType[js.Object] */] = Component[ReactTimeagoProps[T] with ComponentProps[T], js.Object, js.Any]
+  type ReactTimeago[T /* <: ComponentType[js.Object] */] = Component[ReactTimeagoProps[T] & ComponentProps[T], js.Object, js.Any]
   
-  @js.native
   trait ReactTimeagoProps[T /* <: ComponentType[js.Object] */] extends StObject {
     
-    val component: js.UndefOr[String | T] = js.native
+    val component: js.UndefOr[String | T] = js.undefined
     
-    val date: String | Double | Date = js.native
+    val date: String | Double | Date
     
-    val formatter: js.UndefOr[Formatter] = js.native
+    val formatter: js.UndefOr[Formatter] = js.undefined
     
-    val live: js.UndefOr[Boolean] = js.native
+    val live: js.UndefOr[Boolean] = js.undefined
     
-    val maxPeriod: js.UndefOr[Double] = js.native
+    val maxPeriod: js.UndefOr[Double] = js.undefined
     
-    val minPeriod: js.UndefOr[Double] = js.native
+    val minPeriod: js.UndefOr[Double] = js.undefined
     
-    val now: js.UndefOr[js.Function0[Double]] = js.native
+    val now: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
   }
   object ReactTimeagoProps {
     
@@ -58,7 +56,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReactTimeagoPropsMutableBuilder[Self <: ReactTimeagoProps[_], T /* <: ComponentType[js.Object] */] (val x: Self with ReactTimeagoProps[T]) extends AnyVal {
+    implicit class ReactTimeagoPropsMutableBuilder[Self <: ReactTimeagoProps[?], T /* <: ComponentType[js.Object] */] (val x: Self & ReactTimeagoProps[T]) extends AnyVal {
       
       @scala.inline
       def setComponent(value: String | T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

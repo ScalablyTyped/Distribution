@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2Conversation extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait GoogleActionsV2Conversation extends StObject {
     * turn. After that it remains the same for subsequent conversation turns
     * until the conversation is terminated.
     */
-  var conversationId: js.UndefOr[String] = js.native
+  var conversationId: js.UndefOr[String] = js.undefined
   
   /**
     * Opaque token specified by the Action in the last conversation turn. It can
     * be used by an Action to track the conversation or to store conversation
     * related data.
     */
-  var conversationToken: js.UndefOr[String] = js.native
+  var conversationToken: js.UndefOr[String] = js.undefined
   
   /**
     * Type indicates the state of the conversation in its lifecycle.
     */
-  var `type`: js.UndefOr[GoogleActionsV2ConversationType] = js.native
+  var `type`: js.UndefOr[GoogleActionsV2ConversationType] = js.undefined
 }
 object GoogleActionsV2Conversation {
   

@@ -3,23 +3,21 @@ package typings.meteor.meteorMod.Meteor
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User_ extends StObject {
   
-  var _id: String = js.native
+  var _id: String
   
-  var createdAt: js.UndefOr[Date] = js.native
+  var createdAt: js.UndefOr[Date] = js.undefined
   
-  var emails: js.UndefOr[js.Array[UserEmail]] = js.native
+  var emails: js.UndefOr[js.Array[UserEmail]] = js.undefined
   
-  var profile: js.UndefOr[js.Any] = js.native
+  var profile: js.UndefOr[js.Any] = js.undefined
   
-  var services: js.UndefOr[js.Any] = js.native
+  var services: js.UndefOr[js.Any] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object User_ {
   

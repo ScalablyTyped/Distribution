@@ -4,29 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pdfkit.PDFKit.DocumentPermissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TDocumentDefinitions extends StObject {
   
-  var background: js.UndefOr[DynamicBackground | Content] = js.native
+  var background: js.UndefOr[DynamicBackground | Content] = js.undefined
   
-  var compress: js.UndefOr[Boolean] = js.native
+  var compress: js.UndefOr[Boolean] = js.undefined
   
-  var content: Content = js.native
+  var content: Content
   
-  var defaultStyle: js.UndefOr[Style] = js.native
+  var defaultStyle: js.UndefOr[Style] = js.undefined
   
-  var footer: js.UndefOr[DynamicContent | Content] = js.native
+  var footer: js.UndefOr[DynamicContent | Content] = js.undefined
   
-  var header: js.UndefOr[DynamicContent | Content] = js.native
+  var header: js.UndefOr[DynamicContent | Content] = js.undefined
   
-  var images: js.UndefOr[StringDictionary[String]] = js.native
+  var images: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var info: js.UndefOr[TDocumentInformation] = js.native
+  var info: js.UndefOr[TDocumentInformation] = js.undefined
   
-  var ownerPassword: js.UndefOr[String] = js.native
+  var ownerPassword: js.UndefOr[String] = js.undefined
   
   var pageBreakBefore: js.UndefOr[
     js.Function4[
@@ -36,23 +34,23 @@ trait TDocumentDefinitions extends StObject {
       /* previousNodesOnPage */ js.Array[Node], 
       Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var pageMargins: js.UndefOr[Margins] = js.native
+  var pageMargins: js.UndefOr[Margins] = js.undefined
   
-  var pageOrientation: js.UndefOr[PageOrientation] = js.native
+  var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
   
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
   
-  var permissions: js.UndefOr[DocumentPermissions] = js.native
+  var permissions: js.UndefOr[DocumentPermissions] = js.undefined
   
-  var styles: js.UndefOr[StyleDictionary] = js.native
+  var styles: js.UndefOr[StyleDictionary] = js.undefined
   
-  var userPassword: js.UndefOr[String] = js.native
+  var userPassword: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[PDFVersion] = js.native
+  var version: js.UndefOr[PDFVersion] = js.undefined
   
-  var watermark: js.UndefOr[String | Watermark] = js.native
+  var watermark: js.UndefOr[String | Watermark] = js.undefined
 }
 object TDocumentDefinitions {
   

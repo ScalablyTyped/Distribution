@@ -2,10 +2,13 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Renderer {
+  
+  @JSImport("backbone.marionette", "Renderer")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     *  This method returns a string containing the result of applying the
@@ -18,7 +21,6 @@ object Renderer {
     * that returns valid HTML as a string from the data parameter passed to
     * the function.
     */
-  @JSImport("backbone.marionette", "Renderer.render")
-  @js.native
-  def render(template: js.Any, data: js.Any): String = js.native
+  @scala.inline
+  def render(template: js.Any, data: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(template.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[String]
 }

@@ -3,26 +3,26 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContributionType extends ContributionBase {
+trait ContributionType
+  extends StObject
+     with ContributionBase {
   
   /**
     * Controls whether or not contributions of this type have the type indexed for queries. This allows clients to find all extensions that have a contribution of this type.  NOTE: Only TrustedPartners are allowed to specify indexed contribution types.
     */
-  var indexed: Boolean = js.native
+  var indexed: Boolean
   
   /**
     * Friendly name of the contribution/type
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Describes the allowed properties for this contribution type
     */
-  var properties: StringDictionary[ContributionPropertyDescription] = js.native
+  var properties: StringDictionary[ContributionPropertyDescription]
 }
 object ContributionType {
   

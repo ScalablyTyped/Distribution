@@ -1,30 +1,29 @@
 package typings.rollup.mod
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.rollup.rollupStrings.chunk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderedChunk extends PreRenderedChunk {
+trait RenderedChunk
+  extends StObject
+     with PreRenderedChunk {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var dynamicImports: js.Array[String] = js.native
+  var dynamicImports: js.Array[String]
   
-  var fileName: String = js.native
+  var fileName: String
   
-  var implicitlyLoadedBefore: js.Array[String] = js.native
+  var implicitlyLoadedBefore: js.Array[String]
   
-  var importedBindings: StringDictionary[js.Array[String]] = js.native
+  var importedBindings: StringDictionary[js.Array[String]]
   
-  var imports: js.Array[String] = js.native
+  var imports: js.Array[String]
   
-  var map: js.UndefOr[SourceMap] = js.native
+  var map: js.UndefOr[SourceMap] = js.undefined
   
-  var referencedFiles: js.Array[String] = js.native
+  var referencedFiles: js.Array[String]
 }
 object RenderedChunk {
   
@@ -41,11 +40,10 @@ object RenderedChunk {
     isImplicitEntry: Boolean,
     modules: StringDictionary[RenderedModule],
     name: String,
-    referencedFiles: js.Array[String],
-    `type`: chunk
+    referencedFiles: js.Array[String]
   ): RenderedChunk = {
-    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedBindings = importedBindings.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(dynamicImports = dynamicImports.asInstanceOf[js.Any], exports = exports.asInstanceOf[js.Any], fileName = fileName.asInstanceOf[js.Any], implicitlyLoadedBefore = implicitlyLoadedBefore.asInstanceOf[js.Any], importedBindings = importedBindings.asInstanceOf[js.Any], imports = imports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], referencedFiles = referencedFiles.asInstanceOf[js.Any], facadeModuleId = null)
+    __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[RenderedChunk]
   }
   

@@ -4,25 +4,24 @@ import typings.estree.mod.BaseNode
 import typings.estree.mod.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXSpreadAttribute
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_JSXSpreadAttribute: typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute = js.native
+  var type_JSXSpreadAttribute: typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute
 }
 object JSXSpreadAttribute {
   
   @scala.inline
-  def apply(argument: Expression, `type`: typings.estreeJsx.estreeJsxStrings.JSXSpreadAttribute): JSXSpreadAttribute = {
+  def apply(argument: Expression): JSXSpreadAttribute = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXSpreadAttribute")
     __obj.asInstanceOf[JSXSpreadAttribute]
   }
   

@@ -3,25 +3,23 @@ package typings.ssh2Streams.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadStreamOptions extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var flags: js.UndefOr[String] = js.native
+  var flags: js.UndefOr[String] = js.undefined
   
-  var handle: js.UndefOr[Buffer] = js.native
+  var handle: js.UndefOr[Buffer] = js.undefined
   
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object ReadStreamOptions {
   

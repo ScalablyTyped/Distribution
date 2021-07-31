@@ -2,15 +2,13 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeMessage extends StObject {
   
-  var _msgid: js.UndefOr[String] = js.native
+  var _msgid: js.UndefOr[String] = js.undefined
   
-  var payload: js.UndefOr[js.Any] = js.native
+  var payload: js.UndefOr[js.Any] = js.undefined
 }
 object NodeMessage {
   

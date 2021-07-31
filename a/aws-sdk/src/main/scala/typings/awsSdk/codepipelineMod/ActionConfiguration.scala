@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionConfiguration extends StObject {
   
   /**
     * The configuration data for the action.
     */
-  var configuration: js.UndefOr[ActionConfigurationMap] = js.native
+  var configuration: js.UndefOr[ActionConfigurationMap] = js.undefined
 }
 object ActionConfiguration {
   

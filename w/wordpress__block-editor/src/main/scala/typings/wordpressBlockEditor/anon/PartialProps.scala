@@ -3,18 +3,16 @@ package typings.wordpressBlockEditor.anon
 import typings.wordpressBlockEditor.mod.EditorColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/block-editor.@wordpress/block-editor/components/color-palette/with-color-context.withColorContext.Props> */
-@js.native
 trait PartialProps extends StObject {
   
-  var colors: js.UndefOr[js.Array[EditorColor]] = js.native
+  var colors: js.UndefOr[js.Array[EditorColor]] = js.undefined
   
-  var disableCustomColors: js.UndefOr[Boolean] = js.native
+  var disableCustomColors: js.UndefOr[Boolean] = js.undefined
   
-  var hasColorsToChoose: js.UndefOr[Boolean] = js.native
+  var hasColorsToChoose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialProps {
   

@@ -4,7 +4,6 @@ import typings.pdfjsDist.mod.PDFJSStatic
 import typings.reactPdf.documentMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryParcelMod {
@@ -30,13 +29,13 @@ object entryParcelMod {
     object CMapCompressionType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.CMapCompressionType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.CMapCompressionType & Double] = js.native
       
-      /* 1 */ val BINARY: typings.pdfjsDist.mod.CMapCompressionType.BINARY with Double = js.native
+      /* 1 */ val BINARY: typings.pdfjsDist.mod.CMapCompressionType.BINARY & Double = js.native
       
-      /* 0 */ val NONE: typings.pdfjsDist.mod.CMapCompressionType.NONE with Double = js.native
+      /* 0 */ val NONE: typings.pdfjsDist.mod.CMapCompressionType.NONE & Double = js.native
       
-      /* 2 */ val STREAM: typings.pdfjsDist.mod.CMapCompressionType.STREAM with Double = js.native
+      /* 2 */ val STREAM: typings.pdfjsDist.mod.CMapCompressionType.STREAM & Double = js.native
     }
     
     @JSImport("react-pdf/dist/esm/entry.parcel", "pdfjs.PDFJS")
@@ -48,13 +47,13 @@ object entryParcelMod {
     object VerbosityLevel extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.VerbosityLevel with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.pdfjsDist.mod.VerbosityLevel & Double] = js.native
       
-      /* 0 */ val ERRORS: typings.pdfjsDist.mod.VerbosityLevel.ERRORS with Double = js.native
+      /* 0 */ val ERRORS: typings.pdfjsDist.mod.VerbosityLevel.ERRORS & Double = js.native
       
-      /* 5 */ val INFOS: typings.pdfjsDist.mod.VerbosityLevel.INFOS with Double = js.native
+      /* 5 */ val INFOS: typings.pdfjsDist.mod.VerbosityLevel.INFOS & Double = js.native
       
-      /* 1 */ val WARNINGS: typings.pdfjsDist.mod.VerbosityLevel.WARNINGS with Double = js.native
+      /* 1 */ val WARNINGS: typings.pdfjsDist.mod.VerbosityLevel.WARNINGS & Double = js.native
     }
   }
 }

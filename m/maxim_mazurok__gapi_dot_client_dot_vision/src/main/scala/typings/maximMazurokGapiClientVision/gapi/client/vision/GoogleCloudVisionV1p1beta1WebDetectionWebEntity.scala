@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p1beta1WebDetectionWebEntity extends StObject {
   
   /** Canonical description of the entity, in English. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Opaque entity ID. */
-  var entityId: js.UndefOr[String] = js.native
+  var entityId: js.UndefOr[String] = js.undefined
   
   /** Overall relevancy score for the entity. Not normalized and not comparable across different image queries. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudVisionV1p1beta1WebDetectionWebEntity {
   

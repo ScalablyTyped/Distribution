@@ -2,21 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentNotebookHistoryInfo extends AgentJobHistoryInfo {
+trait AgentNotebookHistoryInfo
+  extends StObject
+     with AgentJobHistoryInfo {
   
-  var materializedNotebookDeleted: Boolean = js.native
+  var materializedNotebookDeleted: Boolean
   
-  var materializedNotebookErrorInfo: String = js.native
+  var materializedNotebookErrorInfo: String
   
-  var materializedNotebookId: Double = js.native
+  var materializedNotebookId: Double
   
-  var materializedNotebookName: String = js.native
+  var materializedNotebookName: String
   
-  var materializedNotebookPin: Boolean = js.native
+  var materializedNotebookPin: Boolean
 }
 object AgentNotebookHistoryInfo {
   

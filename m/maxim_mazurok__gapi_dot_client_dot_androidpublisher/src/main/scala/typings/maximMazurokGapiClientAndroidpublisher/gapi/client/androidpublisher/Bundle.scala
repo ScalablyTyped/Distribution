@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bundle extends StObject {
   
   /** A sha1 hash of the upload payload, encoded as a hex string and matching the output of the sha1sum command. */
-  var sha1: js.UndefOr[String] = js.native
+  var sha1: js.UndefOr[String] = js.undefined
   
   /** A sha256 hash of the upload payload, encoded as a hex string and matching the output of the sha256sum command. */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
   
   /** The version code of the Android App Bundle, as specified in the Android App Bundle's base module APK manifest file. */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
 }
 object Bundle {
   

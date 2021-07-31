@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotCopyMod {
@@ -88,6 +87,10 @@ object snapshotCopyMod {
   /* static members */
   object SnapshotCopy {
     
+    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SnapshotCopy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -97,60 +100,54 @@ object snapshotCopyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotCopyState): SnapshotCopy = js.native
-    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): SnapshotCopy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotCopyState): SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotCopyState, opts: CustomResourceOptions): SnapshotCopy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCopy]
     
     /**
       * Returns true if the given object is an instance of SnapshotCopy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs/snapshotCopy", "SnapshotCopy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/snapshotCopy.SnapshotCopy */ Boolean]
   }
   
-  @js.native
   trait SnapshotCopyArgs extends StObject {
     
     /**
       * A description of what the snapshot is.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the snapshot is encrypted.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The region of the source snapshot.
       */
-    val sourceRegion: Input[String] = js.native
+    val sourceRegion: Input[String]
     
     /**
       * The ARN for the snapshot to be copied.
       */
-    val sourceSnapshotId: Input[String] = js.native
+    val sourceSnapshotId: Input[String]
     
     /**
       * A map of tags for the snapshot.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object SnapshotCopyArgs {
     
@@ -195,67 +192,66 @@ object snapshotCopyMod {
     }
   }
   
-  @js.native
   trait SnapshotCopyState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the EBS Snapshot.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The data encryption key identifier for the snapshot.
       * * `sourceSnapshotId` The ARN of the copied snapshot.
       * * `sourceRegion` The region of the source snapshot.
       */
-    val dataEncryptionKeyId: js.UndefOr[Input[String]] = js.native
+    val dataEncryptionKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of what the snapshot is.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether the snapshot is encrypted.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Value from an Amazon-maintained list (`amazon`, `aws-marketplace`, `microsoft`) of snapshot owners.
       */
-    val ownerAlias: js.UndefOr[Input[String]] = js.native
+    val ownerAlias: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS account ID of the snapshot owner.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The region of the source snapshot.
       */
-    val sourceRegion: js.UndefOr[Input[String]] = js.native
+    val sourceRegion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN for the snapshot to be copied.
       */
-    val sourceSnapshotId: js.UndefOr[Input[String]] = js.native
+    val sourceSnapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags for the snapshot.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
-    val volumeId: js.UndefOr[Input[String]] = js.native
+    val volumeId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The size of the drive in GiBs.
       */
-    val volumeSize: js.UndefOr[Input[Double]] = js.native
+    val volumeSize: js.UndefOr[Input[Double]] = js.undefined
   }
   object SnapshotCopyState {
     

@@ -3,15 +3,30 @@ package typings.twilio.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AvailablePhoneNumberResourceGroup extends ListableResource {
+trait AvailablePhoneNumberResourceGroup
+  extends StObject
+     with ListableResource {
   
-  def search(args: js.Any): Promise[_] = js.native
-  def search(args: js.Any, callback: RequestCallback): Promise[_] = js.native
-  def search(callback: RequestCallback): Promise[_] = js.native
+  def search(args: js.Any): Promise[js.Any]
+  def search(args: js.Any, callback: RequestCallback): Promise[js.Any]
+  def search(callback: RequestCallback): Promise[js.Any]
   @JSName("search")
-  var search_Original: RestMethod = js.native
+  var search_Original: RestMethod
+}
+object AvailablePhoneNumberResourceGroup {
+  
+  @scala.inline
+  def apply(get: RestMethod, list: RestMethod, search: RestMethod): AvailablePhoneNumberResourceGroup = {
+    val __obj = js.Dynamic.literal(get = get.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], search = search.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AvailablePhoneNumberResourceGroup]
+  }
+  
+  @scala.inline
+  implicit class AvailablePhoneNumberResourceGroupMutableBuilder[Self <: AvailablePhoneNumberResourceGroup] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setSearch(value: RestMethod): Self = StObject.set(x, "search", value.asInstanceOf[js.Any])
+  }
 }

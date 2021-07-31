@@ -1,15 +1,12 @@
-package typings.devtoolsProtocol.mod.Protocol
+package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object Page {
-  
-  type CaptureSnapshotRequestFormat = typings.devtoolsProtocol.devtoolsProtocolStrings.mhtml
-  
-  type FrameId = java.lang.String
-  
-  type ScriptIdentifier = java.lang.String
-}
+
+type CaptureSnapshotRequestFormat = typings.devtoolsProtocol.devtoolsProtocolStrings.mhtml
+
+type FrameId = java.lang.String
+
+type ScriptIdentifier = java.lang.String

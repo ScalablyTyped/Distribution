@@ -2,18 +2,16 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommonPrefixMod {
   
-  @js.native
   trait CommonPrefix extends StObject {
     
     /**
       * _Prefix shape
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
   }
   object CommonPrefix {
     

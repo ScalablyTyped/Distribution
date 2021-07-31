@@ -3,37 +3,35 @@ package typings.mobxTask
 import typings.mobxTask.taskMod.Task_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskGroupMod {
   
   /* Inlined std.Pick<mobx-task.mobx-task/lib/task.Task<A, R>, mobx-task.mobx-task/lib/task-group.QueryableMethods> */
-  @js.native
-  trait TaskGroup[A /* <: js.Array[_] */, R] extends StObject {
+  trait TaskGroup[A /* <: js.Array[js.Any] */, R] extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var `match`: js.UndefOr[js.Any] = js.native
+    var `match`: js.UndefOr[js.Any] = js.undefined
     
-    var pending: js.UndefOr[js.Any] = js.native
+    var pending: js.UndefOr[js.Any] = js.undefined
     
-    var rejected: js.UndefOr[js.Any] = js.native
+    var rejected: js.UndefOr[js.Any] = js.undefined
     
-    var resolved: js.UndefOr[js.Any] = js.native
+    var resolved: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
   }
   object TaskGroup {
     
     @JSImport("mobx-task/lib/task-group", "TaskGroup")
     @js.native
-    def apply[A /* <: js.Array[_] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
+    def apply[A /* <: js.Array[js.Any] */, R](tasks: js.Array[Task_[A, R]]): TaskGroup[A, R] = js.native
     
     @scala.inline
-    implicit class TaskGroupMutableBuilder[Self <: TaskGroup[_, _], A /* <: js.Array[_] */, R] (val x: Self with (TaskGroup[A, R])) extends AnyVal {
+    implicit class TaskGroupMutableBuilder[Self <: TaskGroup[?, ?], A /* <: js.Array[js.Any] */, R] (val x: Self & (TaskGroup[A, R])) extends AnyVal {
       
       @scala.inline
       def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

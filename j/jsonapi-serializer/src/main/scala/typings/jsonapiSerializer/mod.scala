@@ -15,7 +15,6 @@ import typings.jsonapiSerializer.jsonapiSerializerStrings.snake_case
 import typings.jsonapiSerializer.jsonapiSerializerStrings.underscore_case
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,7 +26,7 @@ object mod {
   @js.native
   trait Deserializer extends StObject {
     
-    def deserialize(data: js.Any): js.Promise[_] = js.native
+    def deserialize(data: js.Any): js.Promise[js.Any] = js.native
     def deserialize(data: js.Any, callback: Callback): Unit = js.native
   }
   @JSImport("jsonapi-serializer", "Deserializer")
@@ -37,7 +36,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jsonapi-serializer", "Deserializer")
   @js.native
-  class DeserializerCls protected () extends Deserializer {
+  class DeserializerCls protected ()
+    extends StObject
+       with Deserializer {
     def this(opts: DeserializerOptions) = this()
   }
   
@@ -47,9 +48,14 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jsonapi-serializer", "Error")
   @js.native
-  class Error protected () extends JSONAPIError {
+  class Error protected ()
+    extends StObject
+       with JSONAPIError {
     def this(opts: js.Array[JSONAPIErrorOptions]) = this()
     def this(opts: JSONAPIErrorOptions) = this()
+    
+    /* CompleteClass */
+    var errors: js.Array[js.Any] = js.native
   }
   @JSImport("jsonapi-serializer", "Error")
   @js.native
@@ -57,10 +63,9 @@ object mod {
   @scala.inline
   def Error_=(x: ErrorConstructor): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Error")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Serializer extends StObject {
     
-    def serialize(data: js.Any): js.Any = js.native
+    def serialize(data: js.Any): js.Any
   }
   object Serializer {
     
@@ -79,29 +84,35 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("jsonapi-serializer", "Serializer")
   @js.native
-  class SerializerCls protected () extends Serializer {
+  class SerializerCls protected ()
+    extends StObject
+       with Serializer {
     def this(collectionName: String, opts: SerializerOptions) = this()
+    
+    /* CompleteClass */
+    override def serialize(data: js.Any): js.Any = js.native
   }
   
   type Callback = js.Function2[/* error */ typings.std.Error, /* response */ js.Any, js.Any]
   
   @js.native
-  trait DeserializerConstructor extends Instantiable1[/* opts */ DeserializerOptions, Deserializer]
+  trait DeserializerConstructor
+    extends StObject
+       with Instantiable1[/* opts */ DeserializerOptions, Deserializer]
   
-  @js.native
   trait DeserializerOptions extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     var keyForAttribute: js.UndefOr[
         `dash-case` | `lisp-case` | `spinal-case` | `kebab-case` | underscore_case | snake_case | camelCase_ | CamelCase | KeyForAttribute
-      ] = js.native
+      ] = js.undefined
     
-    var pluralizeType: js.UndefOr[Boolean] = js.native
+    var pluralizeType: js.UndefOr[Boolean] = js.undefined
     
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
     
-    var typeAsAttribute: js.UndefOr[Boolean] = js.native
+    var typeAsAttribute: js.UndefOr[Boolean] = js.undefined
   }
   object DeserializerOptions {
     
@@ -153,20 +164,20 @@ object mod {
   
   @js.native
   trait ErrorConstructor
-    extends Instantiable1[
+    extends StObject
+       with Instantiable1[
           (/* opts */ js.Array[JSONAPIErrorOptions]) | (/* opts */ JSONAPIErrorOptions), 
           JSONAPIError
         ]
   
-  @js.native
   trait JSONAPIError extends StObject {
     
-    var errors: js.Array[_] = js.native
+    var errors: js.Array[js.Any]
   }
   object JSONAPIError {
     
     @scala.inline
-    def apply(errors: js.Array[_]): JSONAPIError = {
+    def apply(errors: js.Array[js.Any]): JSONAPIError = {
       val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSONAPIError]
     }
@@ -175,31 +186,30 @@ object mod {
     implicit class JSONAPIErrorMutableBuilder[Self <: JSONAPIError] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setErrors(value: js.Array[_]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
+      def setErrors(value: js.Array[js.Any]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setErrorsVarargs(value: js.Any*): Self = StObject.set(x, "errors", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait JSONAPIErrorOptions extends StObject {
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var detail: js.UndefOr[String] = js.native
+    var detail: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var links: js.UndefOr[About] = js.native
+    var links: js.UndefOr[About] = js.undefined
     
-    var meta: js.UndefOr[js.Any] = js.native
+    var meta: js.UndefOr[js.Any] = js.undefined
     
-    var source: js.UndefOr[Parameter] = js.native
+    var source: js.UndefOr[Parameter] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object JSONAPIErrorOptions {
     
@@ -264,18 +274,21 @@ object mod {
   
   type KeyForAttribute = js.Function1[/* attribute */ String, String]
   
-  type LinkFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait LinkFunction extends StObject {
+    
+    def apply(records: js.Any*): js.Any = js.native
+  }
   
   type RefFunction = js.Function2[/* current */ js.Any, /* item */ js.Any, String]
   
-  @js.native
   trait Relation extends StObject {
     
-    var attributes: js.UndefOr[js.Array[String]] = js.native
+    var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var included: js.UndefOr[Boolean] = js.native
+    var included: js.UndefOr[Boolean] = js.undefined
     
-    var ref: String | RefFunction = js.native
+    var ref: String | RefFunction
   }
   object Relation {
     
@@ -312,42 +325,43 @@ object mod {
   }
   
   @js.native
-  trait SerializerConstructor extends Instantiable2[/* collectionName */ String, /* opts */ SerializerOptions, Serializer]
+  trait SerializerConstructor
+    extends StObject
+       with Instantiable2[/* collectionName */ String, /* opts */ SerializerOptions, Serializer]
   
-  @js.native
   trait SerializerOptions extends StObject {
     
-    var attributes: js.UndefOr[js.Array[String]] = js.native
+    var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var dataLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+    var dataLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
     
-    var dataMeta: js.UndefOr[js.Function0[Unit] | js.Object] = js.native
+    var dataMeta: js.UndefOr[js.Function0[Unit] | js.Object] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var ignoreRelationshipData: js.UndefOr[Boolean] = js.native
+    var ignoreRelationshipData: js.UndefOr[Boolean] = js.undefined
     
-    var included: js.UndefOr[Boolean] = js.native
+    var included: js.UndefOr[Boolean] = js.undefined
     
-    var keyForAttribute: js.UndefOr[String | KeyForAttribute] = js.native
+    var keyForAttribute: js.UndefOr[String | KeyForAttribute] = js.undefined
     
-    var meta: js.UndefOr[js.Object] = js.native
+    var meta: js.UndefOr[js.Object] = js.undefined
     
-    var nullIfMissing: js.UndefOr[Boolean] = js.native
+    var nullIfMissing: js.UndefOr[Boolean] = js.undefined
     
-    var pluralizeType: js.UndefOr[Boolean] = js.native
+    var pluralizeType: js.UndefOr[Boolean] = js.undefined
     
-    var ref: js.UndefOr[js.Function0[Unit] | Boolean | String] = js.native
+    var ref: js.UndefOr[js.Function0[Unit] | Boolean | String] = js.undefined
     
-    var relationshipLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+    var relationshipLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
     
-    var relationshipMeta: js.UndefOr[js.Object] = js.native
+    var relationshipMeta: js.UndefOr[js.Object] = js.undefined
     
-    var topLevelLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.native
+    var topLevelLinks: js.UndefOr[StringDictionary[String | LinkFunction]] = js.undefined
     
-    var transform: js.UndefOr[Transform] = js.native
+    var transform: js.UndefOr[Transform] = js.undefined
     
-    var typeForAttribute: js.UndefOr[TypeForAttribute] = js.native
+    var typeForAttribute: js.UndefOr[TypeForAttribute] = js.undefined
   }
   object SerializerOptions {
     

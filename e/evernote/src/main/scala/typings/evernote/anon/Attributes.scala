@@ -4,35 +4,33 @@ import typings.evernote.mod.Types.NoteAttributes
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var attributes: js.UndefOr[NoteAttributes] = js.native
+  var attributes: js.UndefOr[NoteAttributes] = js.undefined
   
-  var contentLength: js.UndefOr[Double] = js.native
+  var contentLength: js.UndefOr[Double] = js.undefined
   
-  var created: js.UndefOr[Timestamp] = js.native
+  var created: js.UndefOr[Timestamp] = js.undefined
   
-  var deleted: js.UndefOr[Timestamp] = js.native
+  var deleted: js.UndefOr[Timestamp] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var largestResourceMime: js.UndefOr[String] = js.native
+  var largestResourceMime: js.UndefOr[String] = js.undefined
   
-  var largestResourceSize: js.UndefOr[Double] = js.native
+  var largestResourceSize: js.UndefOr[Double] = js.undefined
   
-  var notebookGuid: js.UndefOr[String] = js.native
+  var notebookGuid: js.UndefOr[String] = js.undefined
   
-  var tagGuids: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.native
+  var tagGuids: js.UndefOr[js.Array[typings.evernote.mod.Types.Guid]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
   
-  var updated: js.UndefOr[Timestamp] = js.native
+  var updated: js.UndefOr[Timestamp] = js.undefined
 }
 object Attributes {
   

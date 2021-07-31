@@ -10,13 +10,13 @@ Building blocks for WordPress editors.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/editor |
 | Keywords           | wordpress, gutenberg, editor |
-| # releases         | 77 |
-| # dependents       | 13 |
-| # downloads        | 356732 |
+| # releases         | 74 |
+| # dependents       | 14 |
+| # downloads        | 509058 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/editor/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/editor/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Feditor)

@@ -9,15 +9,17 @@ import typings.gcsResumableUpload.gcsResumableUploadStrings.noAcl
 import typings.googleAuthLibrary.googleauthMod.GoogleAuthOptions
 import typings.googleAuthLibrary.mod.GoogleAuth
 import typings.node.Buffer
-import typings.pumpify.mod.^
 import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gcs-resumable-upload", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gcs-resumable-upload", "PROTOCOL_REGEX")
   @js.native
@@ -25,7 +27,8 @@ object mod {
   
   @JSImport("gcs-resumable-upload", "Upload")
   @js.native
-  class Upload_ protected () extends ^ {
+  class Upload_ protected ()
+    extends typings.pumpify.mod.^ {
     def this(cfg: UploadConfig) = this()
     
     var apiEndpoint: String = js.native
@@ -117,30 +120,27 @@ object mod {
     var userProject: js.UndefOr[String] = js.native
   }
   
-  @JSImport("gcs-resumable-upload", "createURI")
-  @js.native
-  def createURI(cfg: UploadConfig): js.Promise[String] = js.native
-  @JSImport("gcs-resumable-upload", "createURI")
-  @js.native
-  def createURI(cfg: UploadConfig, callback: CreateUriCallback): Unit = js.native
+  @scala.inline
+  def createURI(cfg: UploadConfig): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def createURI(cfg: UploadConfig, callback: CreateUriCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createURI")(cfg.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("gcs-resumable-upload", "upload")
-  @js.native
-  def upload(cfg: UploadConfig): Upload_ = js.native
+  @scala.inline
+  def upload(cfg: UploadConfig): Upload_ = ^.asInstanceOf[js.Dynamic].applyDynamic("upload")(cfg.asInstanceOf[js.Any]).asInstanceOf[Upload_]
   
-  @js.native
   trait ConfigMetadata
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Set the length of the file being uploaded.
       */
-    var contentLength: js.UndefOr[Double] = js.native
+    var contentLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Set the content type of the incoming data.
       */
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
   }
   object ConfigMetadata {
     
@@ -169,13 +169,13 @@ object mod {
   
   type CreateUriCallback = js.Function2[/* err */ Error | Null, /* uri */ js.UndefOr[String], Unit]
   
-  @js.native
   trait Encryption extends StObject
   
-  @js.native
-  trait ErrorWithCode extends Error {
+  trait ErrorWithCode
+    extends StObject
+       with Error {
     
-    var code: Double = js.native
+    var code: Double
   }
   object ErrorWithCode {
     
@@ -223,26 +223,25 @@ object mod {
     def publicRead: typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead = "publicRead".asInstanceOf[typings.gcsResumableUpload.gcsResumableUploadStrings.publicRead]
   }
   
-  @js.native
   trait QueryParameters extends StObject {
     
-    var contentEncoding: js.UndefOr[String] = js.native
+    var contentEncoding: js.UndefOr[String] = js.undefined
     
-    var ifGenerationMatch: js.UndefOr[Double] = js.native
+    var ifGenerationMatch: js.UndefOr[Double] = js.undefined
     
-    var ifGenerationNotMatch: js.UndefOr[Double] = js.native
+    var ifGenerationNotMatch: js.UndefOr[Double] = js.undefined
     
-    var ifMetagenerationMatch: js.UndefOr[Double] = js.native
+    var ifMetagenerationMatch: js.UndefOr[Double] = js.undefined
     
-    var ifMetagenerationNotMatch: js.UndefOr[Double] = js.native
+    var ifMetagenerationNotMatch: js.UndefOr[Double] = js.undefined
     
-    var kmsKeyName: js.UndefOr[String] = js.native
+    var kmsKeyName: js.UndefOr[String] = js.undefined
     
-    var predefinedAcl: js.UndefOr[PredefinedAcl] = js.native
+    var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
     
-    var projection: js.UndefOr[full | noAcl] = js.native
+    var projection: js.UndefOr[full | noAcl] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object QueryParameters {
     
@@ -311,60 +310,59 @@ object mod {
     }
   }
   
-  @js.native
   trait UploadConfig extends StObject {
     
     /**
       * The API endpoint used for the request.
       * Defaults to `storage.googleapis.com`.
       */
-    var apiEndpoint: js.UndefOr[String] = js.native
+    var apiEndpoint: js.UndefOr[String] = js.undefined
     
     /**
       * If you want to re-use an auth client from google-auto-auth, pass an
       * instance here.
       */
-    var authClient: js.UndefOr[GoogleAuth] = js.native
+    var authClient: js.UndefOr[GoogleAuth] = js.undefined
     
     /**
       * The GoogleAuthOptions passed to google-auth-library
       */
-    var authConfig: js.UndefOr[GoogleAuthOptions] = js.native
+    var authConfig: js.UndefOr[GoogleAuthOptions] = js.undefined
     
     /**
       * The name of the destination bucket.
       */
-    var bucket: String = js.native
+    var bucket: String
     
     /**
       * Where the gcs-resumable-upload configuration file should be stored on your
       * system. This maps to the configstore option by the same name.
       */
-    var configPath: js.UndefOr[String] = js.native
+    var configPath: js.UndefOr[String] = js.undefined
     
     /**
       * For each API request we send, you may specify custom request options that
       * we'll add onto the request. The request options follow the gaxios API:
       * https://github.com/googleapis/gaxios#request-options.
       */
-    var customRequestOptions: js.UndefOr[GaxiosOptions] = js.native
+    var customRequestOptions: js.UndefOr[GaxiosOptions] = js.undefined
     
     /**
       * The name of the destination file.
       */
-    var file: String = js.native
+    var file: String
     
     /**
       * This will cause the upload to fail if the current generation of the remote
       * object does not match the one provided here.
       */
-    var generation: js.UndefOr[Double] = js.native
+    var generation: js.UndefOr[Double] = js.undefined
     
     /**
       * A customer-supplied encryption key. See
       * https://cloud.google.com/storage/docs/encryption#customer-supplied.
       */
-    var key: js.UndefOr[String | Buffer] = js.native
+    var key: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Resource name of the Cloud KMS key, of the form
@@ -372,59 +370,59 @@ object mod {
       * that will be used to encrypt the object. Overrides the object metadata's
       * `kms_key_name` value, if any.
       */
-    var kmsKeyName: js.UndefOr[String] = js.native
+    var kmsKeyName: js.UndefOr[String] = js.undefined
     
     /**
       * Any metadata you wish to set on the object.
       */
-    var metadata: js.UndefOr[ConfigMetadata] = js.native
+    var metadata: js.UndefOr[ConfigMetadata] = js.undefined
     
     /**
       * The starting byte of the upload stream, for resuming an interrupted upload.
       * See
       * https://cloud.google.com/storage/docs/json_api/v1/how-tos/resumable-upload#resume-upload.
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Set an Origin header when creating the resumable upload URI.
       */
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
     /**
       * Specify query parameters that go along with the initial upload request. See
       * https://cloud.google.com/storage/docs/json_api/v1/objects/insert#parameters
       */
-    var params: js.UndefOr[QueryParameters] = js.native
+    var params: js.UndefOr[QueryParameters] = js.undefined
     
     /**
       * Apply a predefined set of access controls to the created file.
       */
-    var predefinedAcl: js.UndefOr[PredefinedAcl] = js.native
+    var predefinedAcl: js.UndefOr[PredefinedAcl] = js.undefined
     
     /**
       * Make the uploaded file private. (Alias for config.predefinedAcl =
       * 'private')
       */
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Make the uploaded file public. (Alias for config.predefinedAcl =
       * 'publicRead')
       */
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If you already have a resumable URI from a previously-created resumable
       * upload, just pass it in here and we'll use that.
       */
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
     
     /**
       * If the bucket being accessed has requesterPays functionality enabled, this
       * can be set to control which project is billed for the access of this file.
       */
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object UploadConfig {
     

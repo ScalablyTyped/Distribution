@@ -2,55 +2,53 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetResponse extends StObject {
   
   /**
     * The date and time that the dataset was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (user name) of the user who created the dataset.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
-  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.native
+  var FormatOptions: js.UndefOr[typings.awsSdk.databrewMod.FormatOptions] = js.undefined
   
-  var Input: typings.awsSdk.databrewMod.Input = js.native
+  var Input: typings.awsSdk.databrewMod.Input
   
   /**
     * The identifier (user name) of the user who last modified the dataset.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time that the dataset was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the dataset.
     */
-  var Name: DatasetName = js.native
+  var Name: DatasetName
   
   /**
     * The Amazon Resource Name (ARN) of the dataset.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The location of the data for this dataset, Amazon S3 or the AWS Glue Data Catalog.
     */
-  var Source: js.UndefOr[typings.awsSdk.databrewMod.Source] = js.native
+  var Source: js.UndefOr[typings.awsSdk.databrewMod.Source] = js.undefined
   
   /**
     * Metadata tags associated with this dataset.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object DescribeDatasetResponse {
   

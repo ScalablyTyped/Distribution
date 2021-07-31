@@ -3,28 +3,26 @@ package typings.mapboxGl.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupOptions extends StObject {
   
-  var anchor: js.UndefOr[Anchor] = js.native
+  var anchor: js.UndefOr[Anchor] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @param {boolean} [options.closeOnMove=false] If `true`, the popup will closed when the map moves.
     */
-  var closeOnMove: js.UndefOr[Boolean] = js.native
+  var closeOnMove: js.UndefOr[Boolean] = js.undefined
   
-  var maxWidth: js.UndefOr[String] = js.native
+  var maxWidth: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double | PointLike | StringDictionary[PointLike]] = js.native
+  var offset: js.UndefOr[Double | PointLike | StringDictionary[PointLike]] = js.undefined
 }
 object PopupOptions {
   

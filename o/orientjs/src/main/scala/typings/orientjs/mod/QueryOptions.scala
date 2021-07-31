@@ -7,25 +7,23 @@ import typings.orientjs.orientjsStrings.l
 import typings.orientjs.orientjsStrings.s
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryOptions extends StObject {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var fetchPlan: js.UndefOr[js.Any] = js.native
+  var fetchPlan: js.UndefOr[js.Any] = js.undefined
   
-  var language: js.UndefOr[SQL | Javascript] = js.native
+  var language: js.UndefOr[SQL | Javascript] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[s | a | l] = js.native
+  var mode: js.UndefOr[s | a | l] = js.undefined
   
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
-  var token: js.UndefOr[js.Any] = js.native
+  var token: js.UndefOr[js.Any] = js.undefined
 }
 object QueryOptions {
   

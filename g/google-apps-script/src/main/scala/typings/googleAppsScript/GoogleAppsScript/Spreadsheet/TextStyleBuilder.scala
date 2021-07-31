@@ -3,30 +3,28 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for text styles.
   */
-@js.native
 trait TextStyleBuilder extends StObject {
   
-  def build(): TextStyle = js.native
+  def build(): TextStyle
   
-  def setBold(bold: Boolean): TextStyleBuilder = js.native
+  def setBold(bold: Boolean): TextStyleBuilder
   
-  def setFontFamily(fontFamily: String): TextStyleBuilder = js.native
+  def setFontFamily(fontFamily: String): TextStyleBuilder
   
-  def setFontSize(fontSize: Integer): TextStyleBuilder = js.native
+  def setFontSize(fontSize: Integer): TextStyleBuilder
   
-  def setForegroundColor(cssString: String): TextStyleBuilder = js.native
+  def setForegroundColor(cssString: String): TextStyleBuilder
   
-  def setItalic(italic: Boolean): TextStyleBuilder = js.native
+  def setItalic(italic: Boolean): TextStyleBuilder
   
-  def setStrikethrough(strikethrough: Boolean): TextStyleBuilder = js.native
+  def setStrikethrough(strikethrough: Boolean): TextStyleBuilder
   
-  def setUnderline(underline: Boolean): TextStyleBuilder = js.native
+  def setUnderline(underline: Boolean): TextStyleBuilder
 }
 object TextStyleBuilder {
   

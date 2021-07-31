@@ -2,15 +2,13 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var end: LineColumn = js.native
+  var end: LineColumn
   
-  var start: LineColumn = js.native
+  var start: LineColumn
 }
 object Location {
   

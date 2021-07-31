@@ -2,15 +2,13 @@ package typings.relayRuntime.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FragmentName extends StObject {
   
-  val fragmentName: String = js.native
+  val fragmentName: String
   
-  val fragmentPropName: String = js.native
+  val fragmentPropName: String
 }
 object FragmentName {
   

@@ -2,62 +2,60 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxTreeNode extends StObject {
   
   /**
     * Attribute dimension values.
     */
-  var qAttrDims: js.UndefOr[INxAttributeDimValues] = js.native
+  var qAttrDims: js.UndefOr[INxAttributeDimValues] = js.undefined
   
   /**
     * Attribute expression values.
     */
-  var qAttrExps: js.UndefOr[INxAttributeExpressionValues] = js.native
+  var qAttrExps: js.UndefOr[INxAttributeExpressionValues] = js.undefined
   
   /**
     * Element number
     */
-  var qElemNo: Double = js.native
+  var qElemNo: Double
   
   /**
     * A generated number applicable to this page only. Used so that children can easily identify who their parents are.
     */
-  var qNodeNr: Double = js.native
+  var qNodeNr: Double
   
   /**
     * The children of this node in the tree structure.
     */
-  var qNodes: INxTreeNode = js.native
+  var qNodes: INxTreeNode
   
   /**
     * The qNodeNr of this node's parent for the current page.
     */
-  var qParentNode: Double = js.native
+  var qParentNode: Double
   
   /**
     * Row index in the data matrix.
     * The indexing starts from 0.
     */
-  var qRow: Double = js.native
+  var qRow: Double
   
   /**
     * The text version of the value, if available.
     */
-  var qText: String = js.native
+  var qText: String
   
   /**
     * Type of the cell.
     */
-  var qType: NxTreeNodeType = js.native
+  var qType: NxTreeNodeType
   
   /**
     * The measures for this node.
     */
-  var qValues: INxTreeValue = js.native
+  var qValues: INxTreeValue
 }
 object INxTreeNode {
   

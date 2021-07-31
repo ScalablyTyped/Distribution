@@ -3,21 +3,19 @@ package typings.reactWindow.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridChildComponentProps extends StObject {
   
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var isScrolling: js.UndefOr[Boolean] = js.native
+  var isScrolling: js.UndefOr[Boolean] = js.undefined
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object GridChildComponentProps {
   

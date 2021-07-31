@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyframeEffectOptions extends EffectTiming {
+trait KeyframeEffectOptions
+  extends StObject
+     with EffectTiming {
   
-  var composite: js.UndefOr[CompositeOperation] = js.native
+  var composite: js.UndefOr[CompositeOperation] = js.undefined
   
-  var iterationComposite: js.UndefOr[IterationCompositeOperation] = js.native
+  var iterationComposite: js.UndefOr[IterationCompositeOperation] = js.undefined
 }
 object KeyframeEffectOptions {
   

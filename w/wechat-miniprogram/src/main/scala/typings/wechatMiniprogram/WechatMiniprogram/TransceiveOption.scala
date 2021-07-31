@@ -3,23 +3,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransceiveOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[TransceiveCompleteCallback] = js.native
+  var complete: js.UndefOr[TransceiveCompleteCallback] = js.undefined
   
   /** 需要传递的二进制数据 */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[TransceiveFailCallback] = js.native
+  var fail: js.UndefOr[TransceiveFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[TransceiveSuccessCallback] = js.native
+  var success: js.UndefOr[TransceiveSuccessCallback] = js.undefined
 }
 object TransceiveOption {
   

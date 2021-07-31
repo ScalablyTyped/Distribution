@@ -9,47 +9,47 @@ import typings.forkTsCheckerWebpackPlugin.typeScriptDiagnosticsOptionsMod.TypeSc
 import typings.forkTsCheckerWebpackPlugin.typeScriptReporterOptionsMod.TypeScriptReporterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptReporterConfigurationMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/TypeScriptReporterConfiguration", "createTypeScriptReporterConfiguration")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/TypeScriptReporterConfiguration", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createTypeScriptReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-  ): TypeScriptReporterConfiguration = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/TypeScriptReporterConfiguration", "createTypeScriptReporterConfiguration")
-  @js.native
+  ): TypeScriptReporterConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[TypeScriptReporterConfiguration]
+  @scala.inline
   def createTypeScriptReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: TypeScriptReporterOptions
-  ): TypeScriptReporterConfiguration = js.native
+  ): TypeScriptReporterConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptReporterConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TypeScriptReporterConfiguration]
   
-  @js.native
   trait TypeScriptReporterConfiguration extends StObject {
     
-    var build: Boolean = js.native
+    var build: Boolean
     
-    var configFile: String = js.native
+    var configFile: String
     
-    var configOverwrite: TypeScriptConfigurationOverwrite = js.native
+    var configOverwrite: TypeScriptConfigurationOverwrite
     
-    var context: String = js.native
+    var context: String
     
-    var diagnosticOptions: TypeScriptDiagnosticsOptions = js.native
+    var diagnosticOptions: TypeScriptDiagnosticsOptions
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var extensions: Vue = js.native
+    var extensions: Vue
     
-    var memoryLimit: Double = js.native
+    var memoryLimit: Double
     
-    var mode: readonly | `write-tsbuildinfo` | `write-references` = js.native
+    var mode: readonly | `write-tsbuildinfo` | `write-references`
     
-    var profile: Boolean = js.native
+    var profile: Boolean
     
-    var typescriptPath: String = js.native
+    var typescriptPath: String
   }
   object TypeScriptReporterConfiguration {
     

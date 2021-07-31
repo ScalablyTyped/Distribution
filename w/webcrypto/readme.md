@@ -10,8 +10,8 @@ Use the Node.js crypto module API without having to worry if it is being run in 
 | Full name          | webcrypto |
 | Keywords           | crypto |
 | # releases         | 0 |
-| # dependents       | 16 |
-| # downloads        | 161213 |
+| # dependents       | 20 |
+| # downloads        | 236065 |
 | # stars            | 0 |
 
 ## Links

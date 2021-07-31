@@ -2,17 +2,15 @@ package typings.muri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Pass extends StObject {
     
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
-    var user: String = js.native
+    var user: String
   }
   object Pass {
     

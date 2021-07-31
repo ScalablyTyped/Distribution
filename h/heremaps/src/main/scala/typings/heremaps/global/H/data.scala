@@ -4,7 +4,6 @@ import typings.heremaps.H.data.AbstractReader.State
 import typings.heremaps.H.map.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /***** data *****/
@@ -20,7 +19,8 @@ object data {
     * @param opt_url {string=}
     */
   class AbstractReader ()
-    extends typings.heremaps.H.data.AbstractReader {
+    extends StObject
+       with typings.heremaps.H.data.AbstractReader {
     def this(opt_url: String) = this()
   }
   object AbstractReader {
@@ -31,7 +31,8 @@ object data {
     @JSGlobal("H.data.AbstractReader.Event")
     @js.native
     class Event protected ()
-      extends typings.heremaps.H.util.Event {
+      extends StObject
+         with typings.heremaps.H.util.Event {
       /**
         * Constructor
         * @param target {(H.data.AbstractReader | H.map.Object)} - The target that's passed to event listeners
@@ -41,6 +42,30 @@ object data {
         */
       def this(target: typings.heremaps.H.data.AbstractReader, `type`: String, state: State, message: String) = this()
       def this(target: Object, `type`: String, state: State, message: String) = this()
+      
+      /* CompleteClass */
+      var currentTarget: js.Any = js.native
+      
+      /* CompleteClass */
+      var defaultPrevented: Boolean = js.native
+      
+      /**
+        * Sets defaultPrevented to true. Which can be used to prevent some default behavior.
+        */
+      /* CompleteClass */
+      override def preventDefault(): Unit = js.native
+      
+      /**
+        * Stops propagation for current event.
+        */
+      /* CompleteClass */
+      override def stopPropagation(): Unit = js.native
+      
+      /* CompleteClass */
+      var target: js.Any = js.native
+      
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -51,15 +76,15 @@ object data {
     object State extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.data.AbstractReader.State with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.data.AbstractReader.State & Double] = js.native
       
-      /* 0 */ val ERROR: typings.heremaps.H.data.AbstractReader.State.ERROR with Double = js.native
+      /* 0 */ val ERROR: typings.heremaps.H.data.AbstractReader.State.ERROR & Double = js.native
       
-      /* 1 */ val LOADING: typings.heremaps.H.data.AbstractReader.State.LOADING with Double = js.native
+      /* 1 */ val LOADING: typings.heremaps.H.data.AbstractReader.State.LOADING & Double = js.native
       
-      /* 3 */ val READY: typings.heremaps.H.data.AbstractReader.State.READY with Double = js.native
+      /* 3 */ val READY: typings.heremaps.H.data.AbstractReader.State.READY & Double = js.native
       
-      /* 2 */ val VISIT: typings.heremaps.H.data.AbstractReader.State.VISIT with Double = js.native
+      /* 2 */ val VISIT: typings.heremaps.H.data.AbstractReader.State.VISIT & Double = js.native
     }
   }
 }

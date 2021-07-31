@@ -2,7 +2,6 @@ package typings.blueprintjsDatetime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monthsMod {
@@ -14,54 +13,78 @@ object monthsMod {
   object Months extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Months with Double] = js.native
+    def apply(value: Double): js.UndefOr[Months & Double] = js.native
     
     @js.native
-    sealed trait APRIL extends Months
-    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL with Double = js.native
+    sealed trait APRIL
+      extends StObject
+         with Months
+    /* 3 */ val APRIL: typings.blueprintjsDatetime.monthsMod.Months.APRIL & Double = js.native
     
     @js.native
-    sealed trait AUGUST extends Months
-    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST with Double = js.native
+    sealed trait AUGUST
+      extends StObject
+         with Months
+    /* 7 */ val AUGUST: typings.blueprintjsDatetime.monthsMod.Months.AUGUST & Double = js.native
     
     @js.native
-    sealed trait DECEMBER extends Months
-    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER with Double = js.native
+    sealed trait DECEMBER
+      extends StObject
+         with Months
+    /* 11 */ val DECEMBER: typings.blueprintjsDatetime.monthsMod.Months.DECEMBER & Double = js.native
     
     @js.native
-    sealed trait FEBRUARY extends Months
-    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY with Double = js.native
+    sealed trait FEBRUARY
+      extends StObject
+         with Months
+    /* 1 */ val FEBRUARY: typings.blueprintjsDatetime.monthsMod.Months.FEBRUARY & Double = js.native
     
     @js.native
-    sealed trait JANUARY extends Months
-    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY with Double = js.native
+    sealed trait JANUARY
+      extends StObject
+         with Months
+    /* 0 */ val JANUARY: typings.blueprintjsDatetime.monthsMod.Months.JANUARY & Double = js.native
     
     @js.native
-    sealed trait JULY extends Months
-    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY with Double = js.native
+    sealed trait JULY
+      extends StObject
+         with Months
+    /* 6 */ val JULY: typings.blueprintjsDatetime.monthsMod.Months.JULY & Double = js.native
     
     @js.native
-    sealed trait JUNE extends Months
-    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE with Double = js.native
+    sealed trait JUNE
+      extends StObject
+         with Months
+    /* 5 */ val JUNE: typings.blueprintjsDatetime.monthsMod.Months.JUNE & Double = js.native
     
     @js.native
-    sealed trait MARCH extends Months
-    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH with Double = js.native
+    sealed trait MARCH
+      extends StObject
+         with Months
+    /* 2 */ val MARCH: typings.blueprintjsDatetime.monthsMod.Months.MARCH & Double = js.native
     
     @js.native
-    sealed trait MAY extends Months
-    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY with Double = js.native
+    sealed trait MAY
+      extends StObject
+         with Months
+    /* 4 */ val MAY: typings.blueprintjsDatetime.monthsMod.Months.MAY & Double = js.native
     
     @js.native
-    sealed trait NOVEMBER extends Months
-    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER with Double = js.native
+    sealed trait NOVEMBER
+      extends StObject
+         with Months
+    /* 10 */ val NOVEMBER: typings.blueprintjsDatetime.monthsMod.Months.NOVEMBER & Double = js.native
     
     @js.native
-    sealed trait OCTOBER extends Months
-    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER with Double = js.native
+    sealed trait OCTOBER
+      extends StObject
+         with Months
+    /* 9 */ val OCTOBER: typings.blueprintjsDatetime.monthsMod.Months.OCTOBER & Double = js.native
     
     @js.native
-    sealed trait SEPTEMBER extends Months
-    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER with Double = js.native
+    sealed trait SEPTEMBER
+      extends StObject
+         with Months
+    /* 8 */ val SEPTEMBER: typings.blueprintjsDatetime.monthsMod.Months.SEPTEMBER & Double = js.native
   }
 }

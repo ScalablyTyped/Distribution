@@ -3,17 +3,15 @@ package typings.restify.mod
 import typings.restify.anon.Password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestAuthorization extends StObject {
   
-  var basic: js.UndefOr[Password] = js.native
+  var basic: js.UndefOr[Password] = js.undefined
   
-  var credentials: String = js.native
+  var credentials: String
   
-  var scheme: String = js.native
+  var scheme: String
 }
 object RequestAuthorization {
   

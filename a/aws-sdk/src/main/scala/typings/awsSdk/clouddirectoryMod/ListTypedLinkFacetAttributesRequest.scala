@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTypedLinkFacetAttributesRequest extends StObject {
   
   /**
     * The maximum number of results to retrieve.
     */
-  var MaxResults: js.UndefOr[NumberResults] = js.native
+  var MaxResults: js.UndefOr[NumberResults] = js.undefined
   
   /**
     * The unique name of the typed link facet.
     */
-  var Name: TypedLinkName = js.native
+  var Name: TypedLinkName
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the schema. For more information, see arns.
     */
-  var SchemaArn: Arn = js.native
+  var SchemaArn: Arn
 }
 object ListTypedLinkFacetAttributesRequest {
   

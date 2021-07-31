@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientEmailNotification extends StObject {
   
   /**
     * The body of the email message.
     */
-  var emailBody: js.UndefOr[String] = js.native
+  var emailBody: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `emailBody` property can be edited.
     */
-  var emailBodyMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var emailBodyMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The subject line for the email notification.
     */
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `emailSubject` property can be edited.
     */
-  var emailSubjectMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var emailSubjectMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
   
   /**
     * The language to use for the standard email format and signing view for a recipient.
@@ -41,12 +39,12 @@ trait RecipientEmailNotification extends StObject {
     *
     * [ListLang]: ./esign/restapi/Accounts/Accounts/listSupportedLanguages/
     */
-  var supportedLanguage: js.UndefOr[String] = js.native
+  var supportedLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata that indicates whether the `supportedLanguage` property can be edited.
     */
-  var supportedLanguageMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.native
+  var supportedLanguageMetadata: js.UndefOr[/* Metadata about a property. */ PropertyMetadata] = js.undefined
 }
 object RecipientEmailNotification {
   

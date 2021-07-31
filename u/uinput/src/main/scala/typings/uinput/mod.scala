@@ -4,10 +4,13 @@ import typings.node.fsMod.WriteStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("uinput", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("uinput", "ABS_BRAKE")
   @js.native
@@ -2705,52 +2708,46 @@ object mod {
   @js.native
   val SW_VIDEOOUT_INSERT: Double = js.native
   
-  @JSImport("uinput", "create")
-  @js.native
-  def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def create(stream: WriteStream, options: CreateOptions, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uinput", "emit_combo")
-  @js.native
-  def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def emitCombo(stream: WriteStream, codes: js.Array[Double], callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("emit_combo")(stream.asInstanceOf[js.Any], codes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uinput", "key_event")
-  @js.native
-  def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def keyEvent(stream: WriteStream, code: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("key_event")(stream.asInstanceOf[js.Any], code.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uinput", "send_event")
-  @js.native
+  @scala.inline
   def sendEvent(
     stream: WriteStream,
     typeParam: Double,
     code: Double,
     value: Double,
     callback: js.Function1[/* err */ Error, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send_event")(stream.asInstanceOf[js.Any], typeParam.asInstanceOf[js.Any], code.asInstanceOf[js.Any], value.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("uinput", "setup")
-  @js.native
-  def setup(options: SetupOptions, callback: js.Function2[/* err */ Error, /* stream */ WriteStream, Unit]): Unit = js.native
+  @scala.inline
+  def setup(options: SetupOptions, callback: js.Function2[/* err */ Error, /* stream */ WriteStream, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CreateID extends StObject {
     
-    var absflat: js.UndefOr[js.Array[Double]] = js.native
+    var absflat: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var absfuzz: js.UndefOr[js.Array[Double]] = js.native
+    var absfuzz: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var absmax: js.UndefOr[js.Array[Double]] = js.native
+    var absmax: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var absmin: js.UndefOr[js.Array[Double]] = js.native
+    var absmin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var bustype: Double = js.native
+    var bustype: Double
     
-    var ff_effects_max: js.UndefOr[Double] = js.native
+    var ff_effects_max: js.UndefOr[Double] = js.undefined
     
-    var product: Double = js.native
+    var product: Double
     
-    var vendor: Double = js.native
+    var vendor: Double
     
-    var version: Double = js.native
+    var version: Double
   }
   object CreateID {
     
@@ -2819,12 +2816,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateOptions extends StObject {
     
-    var id: CreateID = js.native
+    var id: CreateID
     
-    var name: String = js.native
+    var name: String
   }
   object CreateOptions {
     
@@ -2845,15 +2841,14 @@ object mod {
     }
   }
   
-  @js.native
   trait SetupOptions extends StObject {
     
-    var EV_KEY: js.Array[_] = js.native
+    var EV_KEY: js.Array[js.Any]
   }
   object SetupOptions {
     
     @scala.inline
-    def apply(EV_KEY: js.Array[_]): SetupOptions = {
+    def apply(EV_KEY: js.Array[js.Any]): SetupOptions = {
       val __obj = js.Dynamic.literal(EV_KEY = EV_KEY.asInstanceOf[js.Any])
       __obj.asInstanceOf[SetupOptions]
     }
@@ -2862,7 +2857,7 @@ object mod {
     implicit class SetupOptionsMutableBuilder[Self <: SetupOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEV_KEY(value: js.Array[_]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
+      def setEV_KEY(value: js.Array[js.Any]): Self = StObject.set(x, "EV_KEY", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEV_KEYVarargs(value: js.Any*): Self = StObject.set(x, "EV_KEY", js.Array(value :_*))

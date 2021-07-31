@@ -3,17 +3,16 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.devicesArrayBluetoothDevi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectedBluetoothDevicesOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var services: js.Array[String] = js.native
+  var services: js.Array[String]
   
   @JSName("success")
-  def success_MGetConnectedBluetoothDevicesOptions(res: devicesArrayBluetoothDevi): Unit = js.native
+  def success_MGetConnectedBluetoothDevicesOptions(res: devicesArrayBluetoothDevi): Unit
 }
 object GetConnectedBluetoothDevicesOptions {
   

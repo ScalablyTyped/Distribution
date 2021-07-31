@@ -2,24 +2,22 @@ package typings.googleapis.v1alphaMod.appengineV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for AuthorizedDomains.ListAuthorizedDomains.
   */
-@js.native
 trait SchemaListAuthorizedDomainsResponse extends StObject {
   
   /**
     * The authorized domains belonging to the user.
     */
-  var domains: js.UndefOr[js.Array[SchemaAuthorizedDomain]] = js.native
+  var domains: js.UndefOr[js.Array[SchemaAuthorizedDomain]] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAuthorizedDomainsResponse {
   

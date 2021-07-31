@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.gapi.client.books
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volumes extends StObject {
   
   /** A list of volumes. */
-  var items: js.UndefOr[js.Array[Volume]] = js.native
+  var items: js.UndefOr[js.Array[Volume]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Total number of volumes found. This might be greater than the number of volumes returned in this response if results have been paginated. */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object Volumes {
   

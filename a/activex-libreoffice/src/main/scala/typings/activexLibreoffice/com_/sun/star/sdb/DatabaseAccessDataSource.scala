@@ -11,7 +11,6 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.ucb.RememberAuthentication
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,17 +18,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * is returned.
   * @deprecated Deprecated
   */
-@js.native
 trait DatabaseAccessDataSource
-  extends XPropertySet
+  extends StObject
+     with XPropertySet
      with XDataSource
      with XCompletedConnection {
   
   /** determines the password handling. */
-  var PasswordMode: RememberAuthentication = js.native
+  var PasswordMode: RememberAuthentication
   
   /** locates the database access bean. */
-  var URL: String = js.native
+  var URL: String
 }
 object DatabaseAccessDataSource {
   

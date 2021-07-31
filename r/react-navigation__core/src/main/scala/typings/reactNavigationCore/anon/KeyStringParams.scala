@@ -2,17 +2,15 @@ package typings.reactNavigationCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyStringParams[RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] extends StObject {
   
-  var key: String = js.native
+  var key: String
   
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase[RouteName] */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object KeyStringParams {
   
@@ -23,7 +21,7 @@ object KeyStringParams {
   }
   
   @scala.inline
-  implicit class KeyStringParamsMutableBuilder[Self <: KeyStringParams[_], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] (val x: Self with KeyStringParams[RouteName]) extends AnyVal {
+  implicit class KeyStringParamsMutableBuilder[Self <: KeyStringParams[?], RouteName /* <: /* keyof @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase */ String */] (val x: Self & KeyStringParams[RouteName]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

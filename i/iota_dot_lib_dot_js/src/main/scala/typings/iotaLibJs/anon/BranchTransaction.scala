@@ -2,17 +2,15 @@ package typings.iotaLibJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BranchTransaction extends StObject {
   
-  var branchTransaction: String = js.native
+  var branchTransaction: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var trunkTransaction: String = js.native
+  var trunkTransaction: String
 }
 object BranchTransaction {
   

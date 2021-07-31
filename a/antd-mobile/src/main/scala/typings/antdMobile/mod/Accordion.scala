@@ -4,7 +4,6 @@ import typings.antdMobile.accordionMod.default
 import typings.antdMobile.anon.PrefixCls
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "Accordion")

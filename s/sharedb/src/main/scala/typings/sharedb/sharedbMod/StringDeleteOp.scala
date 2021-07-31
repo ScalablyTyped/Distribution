@@ -2,15 +2,15 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StringDeleteOp extends Op {
+trait StringDeleteOp
+  extends StObject
+     with Op {
   
-  var p: Path = js.native
+  var p: Path
   
-  var sd: String = js.native
+  var sd: String
 }
 object StringDeleteOp {
   

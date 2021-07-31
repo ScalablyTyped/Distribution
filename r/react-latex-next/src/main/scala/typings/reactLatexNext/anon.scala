@@ -3,20 +3,18 @@ package typings.reactLatexNext
 import typings.reactLatexNext.typesMod.Delimiter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-latex-next.react-latex-next/dist/Latex.LatexProps> */
-  @js.native
   trait PartialLatexProps extends StObject {
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var delimiters: js.UndefOr[js.Array[Delimiter]] = js.native
+    var delimiters: js.UndefOr[js.Array[Delimiter]] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object PartialLatexProps {
     

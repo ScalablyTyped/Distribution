@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketOwnershipControlsRule extends StObject {
   
   /**
     * Object ownership. Valid values: `BucketOwnerPreferred` or `ObjectWriter`
     */
-  var objectOwnership: String = js.native
+  var objectOwnership: String
 }
 object BucketOwnershipControlsRule {
   

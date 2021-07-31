@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Link extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Item: js.Any = js.native
+  val Item: js.Any
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.Link_typekey")
-  var OutlookDotLink_typekey: Link = js.native
+  var OutlookDotLink_typekey: Link
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Type: OlObjectClass = js.native
+  val Type: OlObjectClass
 }
 object Link {
   

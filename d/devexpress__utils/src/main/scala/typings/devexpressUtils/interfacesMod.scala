@@ -2,21 +2,19 @@ package typings.devexpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait IOffsets extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object IOffsets {
     
@@ -43,12 +41,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IPoint extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object IPoint {
     
@@ -69,9 +66,9 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait IRectangle
-    extends IPoint
+    extends StObject
+       with IPoint
        with ISize
   object IRectangle {
     
@@ -82,12 +79,11 @@ object interfacesMod {
     }
   }
   
-  @js.native
   trait ISize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ISize {
     

@@ -2,13 +2,11 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The service account create request.
   */
-@js.native
 trait SchemaCreateServiceAccountRequest extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaCreateServiceAccountRequest extends StObject {
     * be 6-30 characters long, and match the regular expression
     * `[a-z]([-a-z0-9]*[a-z0-9])` to comply with RFC1035.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The ServiceAccount resource to create. Currently, only the following
     * values are user assignable: `display_name` .
     */
-  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.native
+  var serviceAccount: js.UndefOr[SchemaServiceAccount] = js.undefined
 }
 object SchemaCreateServiceAccountRequest {
   

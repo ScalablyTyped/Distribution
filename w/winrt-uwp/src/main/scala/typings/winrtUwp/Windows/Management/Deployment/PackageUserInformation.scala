@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the users of an installed package. */
-@js.native
 trait PackageUserInformation extends StObject {
   
   /** Gets the install state of the package for the user. */
-  var installState: PackageInstallState = js.native
+  var installState: PackageInstallState
   
   /** Gets the security identifier (SID) of the package user. */
-  var userSecurityId: String = js.native
+  var userSecurityId: String
 }
 object PackageUserInformation {
   

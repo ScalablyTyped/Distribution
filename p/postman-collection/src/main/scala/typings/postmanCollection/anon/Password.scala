@@ -2,15 +2,13 @@ package typings.postmanCollection.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Password extends StObject {
   
-  var password: String = js.native
+  var password: String
   
-  var user: String = js.native
+  var user: String
 }
 object Password {
   

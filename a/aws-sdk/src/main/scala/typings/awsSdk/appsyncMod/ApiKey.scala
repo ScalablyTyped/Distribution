@@ -2,31 +2,29 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiKey extends StObject {
   
   /**
     * The time after which the API key is deleted. The date is represented as seconds since the epoch, rounded down to the nearest hour.
     */
-  var deletes: js.UndefOr[Long] = js.native
+  var deletes: js.UndefOr[Long] = js.undefined
   
   /**
     * A description of the purpose of the API key.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour.
     */
-  var expires: js.UndefOr[Long] = js.native
+  var expires: js.UndefOr[Long] = js.undefined
   
   /**
     * The API key ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object ApiKey {
   

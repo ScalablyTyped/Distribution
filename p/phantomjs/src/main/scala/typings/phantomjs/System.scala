@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.phantomjs.anon.Architecture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait System extends StObject {
   
-  var args: js.Array[String] = js.native
+  var args: js.Array[String]
   
-  var env: StringDictionary[String] = js.native
+  var env: StringDictionary[String]
   
-  var os: Architecture = js.native
+  var os: Architecture
   
-  var pid: Double = js.native
+  var pid: Double
   
-  var platform: String = js.native
+  var platform: String
 }
 object System {
   

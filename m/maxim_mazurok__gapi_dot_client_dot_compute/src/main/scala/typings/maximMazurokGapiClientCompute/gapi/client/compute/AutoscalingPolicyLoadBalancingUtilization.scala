@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalingPolicyLoadBalancingUtilization extends StObject {
   
   /**
     * Fraction of backend capacity utilization (set in HTTP(S) load balancing configuration) that autoscaler should maintain. Must be a positive float value. If not defined, the default
     * is 0.8.
     */
-  var utilizationTarget: js.UndefOr[Double] = js.native
+  var utilizationTarget: js.UndefOr[Double] = js.undefined
 }
 object AutoscalingPolicyLoadBalancingUtilization {
   

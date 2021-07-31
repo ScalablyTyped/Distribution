@@ -36,16 +36,15 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is for a simple {@link Shape} with lines. */
-@js.native
 trait LineShape
-  extends Text
+  extends StObject
      with Shape
      with LineProperties
      with PolyPolygonDescriptor
+     with Text
      with ShadowProperties
      with RotationDescriptor
 object LineShape {
@@ -301,7 +300,7 @@ object LineShape {
     removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
     setPosition: Point => Unit,
     setPropertyValue: (String, js.Any) => Unit,
-    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[_]) => SafeArray[SetPropertyTolerantFailed],
+    setPropertyValuesTolerant: (SeqEquiv[String], SeqEquiv[js.Any]) => SafeArray[SetPropertyTolerantFailed],
     setSize: Size => Unit,
     setString: String => Unit
   ): LineShape = {

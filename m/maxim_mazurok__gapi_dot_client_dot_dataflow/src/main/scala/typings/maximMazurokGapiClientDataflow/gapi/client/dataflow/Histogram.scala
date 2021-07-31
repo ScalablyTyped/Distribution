@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Histogram extends StObject {
   
   /**
     * Counts of values in each bucket. For efficiency, prefix and trailing buckets with count = 0 are elided. Buckets can store the full range of values of an unsigned long, with
     * ULLONG_MAX falling into the 59th bucket with range [1e19, 2e19).
     */
-  var bucketCounts: js.UndefOr[js.Array[String]] = js.native
+  var bucketCounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Starting index of first stored bucket. The non-inclusive upper-bound of the ith bucket is given by: pow(10,(i-first_bucket_offset)/3) * (1,2,5)[(i-first_bucket_offset)%3] */
-  var firstBucketOffset: js.UndefOr[Double] = js.native
+  var firstBucketOffset: js.UndefOr[Double] = js.undefined
 }
 object Histogram {
   

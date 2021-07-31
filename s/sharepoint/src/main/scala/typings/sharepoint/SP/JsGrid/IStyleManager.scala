@@ -10,49 +10,47 @@ import typings.sharepoint.anon.AllSelected
 import typings.sharepoint.anon.Dra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStyleManager extends StObject {
   
-  def GetCellStyle(styleId: String): Cell = js.native
+  def GetCellStyle(styleId: String): Cell
   
-  def RegisterCellStyle(styleId: String, cellStyle: Cell): Unit = js.native
+  def RegisterCellStyle(styleId: String, cellStyle: Cell): Unit
   
-  def UpdateDefaultCellStyleFromCss(styleObject: Cell, cssClass: String): Unit = js.native
+  def UpdateDefaultCellStyleFromCss(styleObject: Cell, cssClass: String): Unit
   
-  def UpdateGridPaneStyleFromCss(styleObject: GridPane, gridStyleNameCollection: js.Any): Unit = js.native
+  def UpdateGridPaneStyleFromCss(styleObject: GridPane, gridStyleNameCollection: js.Any): Unit
   
-  def UpdateGroupStylesFromCss(styleObject: Cell, prefix: String): Unit = js.native
+  def UpdateGroupStylesFromCss(styleObject: Cell, prefix: String): Unit
   
-  def UpdateHeaderStyleFromCss(styleObject: Header, headerStyleNameCol: js.Any): Unit = js.native
+  def UpdateHeaderStyleFromCss(styleObject: Header, headerStyleNameCol: js.Any): Unit
   
-  def UpdateSplitterStyleFromCss(styleObject: Splitter, splitterStyleNameCollection: js.Any): Unit = js.native
+  def UpdateSplitterStyleFromCss(styleObject: Splitter, splitterStyleNameCollection: js.Any): Unit
   
-  var columnHeaderStyleCollection: AllSelected = js.native
+  var columnHeaderStyleCollection: AllSelected
   
-  var defaultCellStyle: Cell = js.native
+  var defaultCellStyle: Cell
   
-  var gridPaneStyle: GridPane = js.native
+  var gridPaneStyle: GridPane
   
-  var groupingStyles: js.Array[_] = js.native
+  var groupingStyles: js.Array[js.Any]
   
-  var readOnlyCellStyle: Cell = js.native
+  var readOnlyCellStyle: Cell
   
-  var readOnlyFocusedCellStyle: Cell = js.native
+  var readOnlyFocusedCellStyle: Cell
   
-  var rowHeaderStyleCollection: AllSelected = js.native
+  var rowHeaderStyleCollection: AllSelected
   
-  var splitterStyleCollection: Dra = js.native
+  var splitterStyleCollection: Dra
   
-  var timescaleTierStyle: TimescaleTier = js.native
+  var timescaleTierStyle: TimescaleTier
   
-  var widgetDockHoverStyle: Widget = js.native
+  var widgetDockHoverStyle: Widget
   
-  var widgetDockPressedStyle: Widget = js.native
+  var widgetDockPressedStyle: Widget
   
-  var widgetDockStyle: Widget = js.native
+  var widgetDockStyle: Widget
 }
 object IStyleManager {
   
@@ -68,7 +66,7 @@ object IStyleManager {
     columnHeaderStyleCollection: AllSelected,
     defaultCellStyle: Cell,
     gridPaneStyle: GridPane,
-    groupingStyles: js.Array[_],
+    groupingStyles: js.Array[js.Any],
     readOnlyCellStyle: Cell,
     readOnlyFocusedCellStyle: Cell,
     rowHeaderStyleCollection: AllSelected,
@@ -98,7 +96,7 @@ object IStyleManager {
     def setGridPaneStyle(value: GridPane): Self = StObject.set(x, "gridPaneStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGroupingStyles(value: js.Array[_]): Self = StObject.set(x, "groupingStyles", value.asInstanceOf[js.Any])
+    def setGroupingStyles(value: js.Array[js.Any]): Self = StObject.set(x, "groupingStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupingStylesVarargs(value: js.Any*): Self = StObject.set(x, "groupingStyles", js.Array(value :_*))

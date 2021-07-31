@@ -2,24 +2,22 @@ package typings.activexWia.WIA
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The DeviceCommand object describes a CommandID that can be used when calling ExecuteCommand on a Device or Item object. */
-@js.native
 trait DeviceCommand extends StObject {
   
   /** Returns the commandID for this Command */
-  val CommandID: String = js.native
+  val CommandID: String
   
   /** Returns the command Description */
-  val Description: String = js.native
+  val Description: String
   
   /** Returns the command Name */
-  val Name: String = js.native
+  val Name: String
   
   @JSName("WIA.DeviceCommand_typekey")
-  var WIADotDeviceCommand_typekey: DeviceCommand = js.native
+  var WIADotDeviceCommand_typekey: DeviceCommand
 }
 object DeviceCommand {
   

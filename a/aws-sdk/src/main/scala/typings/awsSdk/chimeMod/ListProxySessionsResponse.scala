@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListProxySessionsResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
   
   /**
     * The proxy session details.
     */
-  var ProxySessions: js.UndefOr[typings.awsSdk.chimeMod.ProxySessions] = js.native
+  var ProxySessions: js.UndefOr[typings.awsSdk.chimeMod.ProxySessions] = js.undefined
 }
 object ListProxySessionsResponse {
   

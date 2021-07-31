@@ -4,7 +4,6 @@ import typings.relayRuntime.relayStoreTypesMod.FragmentReference
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
@@ -23,14 +22,13 @@ object helpersMod {
   type GetEntryPointParamsFromEntryPoint[TEntryPoint] = js.Any
   
   /* Inlined std.Readonly<{   $data :TData | undefined,    $fragmentRefs :relay-runtime.relay-runtime.FragmentReference}> */
-  @js.native
   trait KeyType[TData] extends StObject {
     
     @JSName(" $data")
-    val Space$data: js.UndefOr[TData] = js.native
+    val Space$data: js.UndefOr[TData] = js.undefined
     
     @JSName(" $fragmentRefs")
-    val Space$fragmentRefs: FragmentReference = js.native
+    val Space$fragmentRefs: FragmentReference
   }
   object KeyType {
     
@@ -42,7 +40,7 @@ object helpersMod {
     }
     
     @scala.inline
-    implicit class KeyTypeMutableBuilder[Self <: KeyType[_], TData] (val x: Self with KeyType[TData]) extends AnyVal {
+    implicit class KeyTypeMutableBuilder[Self <: KeyType[?], TData] (val x: Self & KeyType[TData]) extends AnyVal {
       
       @scala.inline
       def setSpace$data(value: TData): Self = StObject.set(x, " $data", value.asInstanceOf[js.Any])

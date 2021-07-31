@@ -5,22 +5,20 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.default_
 import typings.devtoolsProtocol.devtoolsProtocolStrings.deny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDownloadBehaviorRequest extends StObject {
   
   /**
     * Whether to allow all or deny all download requests, or use default Chrome behavior if
     * available (otherwise deny). (SetDownloadBehaviorRequestBehavior enum)
     */
-  var behavior: deny | allow | default_ = js.native
+  var behavior: deny | allow | default_
   
   /**
     * The default path to save downloaded files to. This is requred if behavior is set to 'allow'
     */
-  var downloadPath: js.UndefOr[String] = js.native
+  var downloadPath: js.UndefOr[String] = js.undefined
 }
 object SetDownloadBehaviorRequest {
   

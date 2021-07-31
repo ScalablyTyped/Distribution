@@ -5,7 +5,6 @@ import typings.chrome.chrome.tabs.Tab
 import typings.chrome.chrome.windows.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -18,14 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object sessions {
   
-  @js.native
   trait Device extends StObject {
     
     /** The name of the foreign device. */
-    var deviceName: String = js.native
+    var deviceName: String
     
     /** A list of open window sessions for the foreign device, sorted from most recently to least recently modified session. */
-    var sessions: js.Array[Session] = js.native
+    var sessions: js.Array[Session]
   }
   object Device {
     
@@ -49,14 +47,13 @@ object sessions {
     }
   }
   
-  @js.native
   trait Filter extends StObject {
     
     /**
       * Optional.
       * The maximum number of entries to be fetched in the requested list. Omit this parameter to fetch the maximum number of entries (sessions.MAX_SESSION_RESULTS).
       */
-    var maxResults: js.UndefOr[Double] = js.native
+    var maxResults: js.UndefOr[Double] = js.undefined
   }
   object Filter {
     
@@ -77,23 +74,22 @@ object sessions {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
     /** The time when the window or tab was closed or modified, represented in milliseconds since the epoch. */
-    var lastModified: Double = js.native
+    var lastModified: Double
     
     /**
       * Optional.
       * The tabs.Tab, if this entry describes a tab. Either this or sessions.Session.window will be set.
       */
-    var tab: js.UndefOr[Tab] = js.native
+    var tab: js.UndefOr[Tab] = js.undefined
     
     /**
       * Optional.
       * The windows.Window, if this entry describes a window. Either this or sessions.Session.tab will be set.
       */
-    var window: js.UndefOr[Window] = js.native
+    var window: js.UndefOr[Window] = js.undefined
   }
   object Session {
     

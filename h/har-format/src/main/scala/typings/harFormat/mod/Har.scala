@@ -2,14 +2,12 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Har extends StObject {
   
   /** This object represents the root of exported data. */
-  var log: Log = js.native
+  var log: Log
 }
 object Har {
   

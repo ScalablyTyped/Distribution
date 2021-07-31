@@ -2,7 +2,6 @@ package typings.microsoftAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 * Boolean Type Extensions
 * @see {@link http://msdn.microsoft.com/en-us/library/bb397557(v=vs.100).aspx}
 */
-@js.native
 trait BooleanConstructor extends StObject {
   
   //#region Extensions
   /**
     * Converts a string representation of a logical value to its Boolean object equivalent.
     */
-  def parse(value: java.lang.String): Boolean = js.native
+  def parse(value: java.lang.String): Boolean
 }
 object BooleanConstructor {
   

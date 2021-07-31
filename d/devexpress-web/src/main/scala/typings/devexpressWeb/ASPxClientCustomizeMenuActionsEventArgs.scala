@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeMenuActions, ASPxClientReportDesigner.PreviewCustomizeMenuActions and ASPxClientWebDocumentViewer.CustomizeMenuActions.
   */
-@js.native
-trait ASPxClientCustomizeMenuActionsEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeMenuActionsEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides access to the collection of actions available in the toolbar and menu.
     */
-  var Actions: js.Array[ASPxClientMenuAction] = js.native
+  var Actions: js.Array[ASPxClientMenuAction]
   
   /**
     * Returns a menu action with the specified ID. An IAction object.
     * @param actionId A String value that specifies the action ID.
     */
-  def GetById(actionId: String): ASPxClientMenuAction = js.native
+  def GetById(actionId: String): ASPxClientMenuAction
 }
 object ASPxClientCustomizeMenuActionsEventArgs {
   

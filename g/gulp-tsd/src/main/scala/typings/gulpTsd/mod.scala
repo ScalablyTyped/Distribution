@@ -4,34 +4,32 @@ import typings.gulp.mod.TaskCallback
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-tsd", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-tsd", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], callback: TaskCallback): ReadWriteStream = js.native
-  @JSImport("gulp-tsd", JSImport.Namespace)
-  @js.native
-  def apply(opts: IOptions): ReadWriteStream = js.native
-  @JSImport("gulp-tsd", JSImport.Namespace)
-  @js.native
-  def apply(opts: IOptions, callback: TaskCallback): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: Unit, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: IOptions): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: IOptions, callback: TaskCallback): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-tsd", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait IOptions extends StObject {
     
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
-    var latest: js.UndefOr[Boolean] = js.native
+    var latest: js.UndefOr[Boolean] = js.undefined
     
-    var opts: js.UndefOr[js.Object] = js.native
+    var opts: js.UndefOr[js.Object] = js.undefined
   }
   object IOptions {
     

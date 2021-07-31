@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopQueryRequest extends StObject {
   
   /**
     * The ID number of the query to stop. To find this ID number, use DescribeQueries.
     */
-  var queryId: QueryId = js.native
+  var queryId: QueryId
 }
 object StopQueryRequest {
   

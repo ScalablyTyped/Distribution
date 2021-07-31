@@ -11,7 +11,6 @@ import typings.evernote.mod.Types.Tag
 import typings.evernote.mod.Types.Timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("evernote", "NoteStore.SyncChunk")

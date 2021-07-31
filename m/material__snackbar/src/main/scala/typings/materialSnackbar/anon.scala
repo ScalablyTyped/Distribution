@@ -2,35 +2,33 @@ package typings.materialSnackbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ACTIONSELECTOR extends StObject {
     
-    var ACTION_SELECTOR: String = js.native
+    var ACTION_SELECTOR: String
     
-    var ARIA_LIVE_LABEL_TEXT_ATTR: String = js.native
+    var ARIA_LIVE_LABEL_TEXT_ATTR: String
     
-    var CLOSED_EVENT: String = js.native
+    var CLOSED_EVENT: String
     
-    var CLOSING_EVENT: String = js.native
+    var CLOSING_EVENT: String
     
-    var DISMISS_SELECTOR: String = js.native
+    var DISMISS_SELECTOR: String
     
-    var LABEL_SELECTOR: String = js.native
+    var LABEL_SELECTOR: String
     
-    var OPENED_EVENT: String = js.native
+    var OPENED_EVENT: String
     
-    var OPENING_EVENT: String = js.native
+    var OPENING_EVENT: String
     
-    var REASON_ACTION: String = js.native
+    var REASON_ACTION: String
     
-    var REASON_DISMISS: String = js.native
+    var REASON_DISMISS: String
     
-    var SURFACE_SELECTOR: String = js.native
+    var SURFACE_SELECTOR: String
   }
   object ACTIONSELECTOR {
     
@@ -90,22 +88,21 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIALIVEDELAYMS extends StObject {
     
-    var ARIA_LIVE_DELAY_MS: Double = js.native
+    var ARIA_LIVE_DELAY_MS: Double
     
-    var DEFAULT_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    var DEFAULT_AUTO_DISMISS_TIMEOUT_MS: Double
     
-    var INDETERMINATE: Double = js.native
+    var INDETERMINATE: Double
     
-    var MAX_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    var MAX_AUTO_DISMISS_TIMEOUT_MS: Double
     
-    var MIN_AUTO_DISMISS_TIMEOUT_MS: Double = js.native
+    var MIN_AUTO_DISMISS_TIMEOUT_MS: Double
     
-    var SNACKBAR_ANIMATION_CLOSE_TIME_MS: Double = js.native
+    var SNACKBAR_ANIMATION_CLOSE_TIME_MS: Double
     
-    var SNACKBAR_ANIMATION_OPEN_TIME_MS: Double = js.native
+    var SNACKBAR_ANIMATION_OPEN_TIME_MS: Double
   }
   object ARIALIVEDELAYMS {
     
@@ -149,14 +146,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CLOSING extends StObject {
     
-    var CLOSING: String = js.native
+    var CLOSING: String
     
-    var OPEN: String = js.native
+    var OPEN: String
     
-    var OPENING: String = js.native
+    var OPENING: String
   }
   object CLOSING {
     
@@ -181,22 +177,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/snackbar.@material/snackbar/adapter.MDCSnackbarAdapter> */
-  @js.native
   trait PartialMDCSnackbarAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var announce: js.UndefOr[js.Function0[Unit]] = js.native
+    var announce: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyClosed: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+    var notifyClosed: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
     
-    var notifyClosing: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+    var notifyClosing: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
     
-    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyOpening: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   }
   object PartialMDCSnackbarAdapter {
     

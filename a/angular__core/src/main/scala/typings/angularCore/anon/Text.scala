@@ -2,13 +2,11 @@ package typings.angularCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
-  def text(): js.Promise[String] = js.native
+  def text(): js.Promise[String]
 }
 object Text {
   

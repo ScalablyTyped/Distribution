@@ -6,12 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`bookmark-select`
 import typings.arcgisJsApi.arcgisJsApiStrings.`select-bookmark`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Bookmarks
-  extends Widget_
+  extends StObject
+     with Widget_
      with GoTo {
   
   /**
@@ -47,7 +47,7 @@ trait Bookmarks
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Bookmarks.html#goTo)
     */
-  def goTo(Bookmark: Bookmark): js.Promise[_] = js.native
+  def goTo(Bookmark: Bookmark): js.Promise[js.Any] = js.native
   
   /**
     * The widget's default CSS icon class.

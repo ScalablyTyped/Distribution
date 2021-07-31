@@ -7,52 +7,51 @@ import typings.reactNative.reactNativeStrings.solid
 import typings.reactNative.reactNativeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewStyle
-  extends FlexStyle
+  extends StObject
+     with FlexStyle
      with ShadowStyleIOS
      with TransformsStyle {
   
-  var backfaceVisibility: js.UndefOr[visible | hidden] = js.native
+  var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
   
-  var backgroundColor: js.UndefOr[ColorValue] = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderBottomColor: js.UndefOr[ColorValue] = js.native
+  var borderBottomColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderBottomEndRadius: js.UndefOr[Double] = js.native
+  var borderBottomEndRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[Double] = js.native
+  var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[Double] = js.native
+  var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomStartRadius: js.UndefOr[Double] = js.native
+  var borderBottomStartRadius: js.UndefOr[Double] = js.undefined
   
-  var borderColor: js.UndefOr[ColorValue] = js.native
+  var borderColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderEndColor: js.UndefOr[ColorValue] = js.native
+  var borderEndColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderLeftColor: js.UndefOr[ColorValue] = js.native
+  var borderLeftColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderRightColor: js.UndefOr[ColorValue] = js.native
+  var borderRightColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderStartColor: js.UndefOr[ColorValue] = js.native
+  var borderStartColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderStyle: js.UndefOr[solid | dotted | dashed] = js.native
+  var borderStyle: js.UndefOr[solid | dotted | dashed] = js.undefined
   
-  var borderTopColor: js.UndefOr[ColorValue] = js.native
+  var borderTopColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderTopEndRadius: js.UndefOr[Double] = js.native
+  var borderTopEndRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[Double] = js.native
+  var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[Double] = js.native
+  var borderTopRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopStartRadius: js.UndefOr[Double] = js.native
+  var borderTopStartRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the elevation of a view, using Android's underlying
@@ -62,11 +61,11 @@ trait ViewStyle
     *
     * @platform android
     */
-  var elevation: js.UndefOr[Double] = js.native
+  var elevation: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
 }
 object ViewStyle {
   

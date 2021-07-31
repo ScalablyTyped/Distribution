@@ -2,25 +2,23 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportResponseData extends StObject {
   
-  val CreationTS: js.UndefOr[Double] = js.native
+  val CreationTS: js.UndefOr[Double] = js.undefined
   
-  val ExpirationTS: js.UndefOr[Double] = js.native
+  val ExpirationTS: js.UndefOr[Double] = js.undefined
   
-  val FromTs: js.UndefOr[Double] = js.native
+  val FromTs: js.UndefOr[Double] = js.undefined
   
-  val ID: Double = js.native
+  val ID: Double
   
-  val Status: ResponseStatus = js.native
+  val Status: ResponseStatus
   
-  val ToTs: js.UndefOr[Double] = js.native
+  val ToTs: js.UndefOr[Double] = js.undefined
   
-  val URL: js.UndefOr[String] = js.native
+  val URL: js.UndefOr[String] = js.undefined
 }
 object ExportResponseData {
   

@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,25 +9,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * corresponding bid request or bid response was not successful, as described
   * by the specified callout status.
   */
-@js.native
 trait SchemaCalloutStatusRow extends StObject {
   
   /**
     * The ID of the callout status. See
     * [callout-status-codes](https://developers.google.com/authorized-buyers/rtb/downloads/callout-status-codes).
     */
-  var calloutStatusId: js.UndefOr[Double] = js.native
+  var calloutStatusId: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of impressions for which there was a bid request or bid
     * response with the specified callout status.
     */
-  var impressionCount: js.UndefOr[SchemaMetricValue] = js.native
+  var impressionCount: js.UndefOr[SchemaMetricValue] = js.undefined
   
   /**
     * The values of all dimensions associated with metric values in this row.
     */
-  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.native
+  var rowDimensions: js.UndefOr[SchemaRowDimensions] = js.undefined
 }
 object SchemaCalloutStatusRow {
   

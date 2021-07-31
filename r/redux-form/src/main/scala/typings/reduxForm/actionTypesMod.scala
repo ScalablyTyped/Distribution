@@ -2,7 +2,6 @@ package typings.reduxForm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionTypesMod {
@@ -11,78 +10,77 @@ object actionTypesMod {
   @js.native
   val actionTypes: ActionTypes_ = js.native
   
-  @js.native
   trait ActionTypes_ extends StObject {
     
-    var ARRAY_INSERT: String = js.native
+    var ARRAY_INSERT: String
     
-    var ARRAY_MOVE: String = js.native
+    var ARRAY_MOVE: String
     
-    var ARRAY_POP: String = js.native
+    var ARRAY_POP: String
     
-    var ARRAY_PUSH: String = js.native
+    var ARRAY_PUSH: String
     
-    var ARRAY_REMOVE: String = js.native
+    var ARRAY_REMOVE: String
     
-    var ARRAY_REMOVE_ALL: String = js.native
+    var ARRAY_REMOVE_ALL: String
     
-    var ARRAY_SHIFT: String = js.native
+    var ARRAY_SHIFT: String
     
-    var ARRAY_SPLICE: String = js.native
+    var ARRAY_SPLICE: String
     
-    var ARRAY_SWAP: String = js.native
+    var ARRAY_SWAP: String
     
-    var ARRAY_UNSHIFT: String = js.native
+    var ARRAY_UNSHIFT: String
     
-    var AUTOFILL: String = js.native
+    var AUTOFILL: String
     
-    var BLUR: String = js.native
+    var BLUR: String
     
-    var CHANGE: String = js.native
+    var CHANGE: String
     
-    var CLEAR_ASYNC_ERROR: String = js.native
+    var CLEAR_ASYNC_ERROR: String
     
-    var CLEAR_FIELDS: String = js.native
+    var CLEAR_FIELDS: String
     
-    var CLEAR_SUBMIT: String = js.native
+    var CLEAR_SUBMIT: String
     
-    var CLEAR_SUBMIT_ERRORS: String = js.native
+    var CLEAR_SUBMIT_ERRORS: String
     
-    var DESTROY: String = js.native
+    var DESTROY: String
     
-    var FOCUS: String = js.native
+    var FOCUS: String
     
-    var INITIALIZE: String = js.native
+    var INITIALIZE: String
     
-    var REGISTER_FIELD: String = js.native
+    var REGISTER_FIELD: String
     
-    var RESET: String = js.native
+    var RESET: String
     
-    var RESET_SECTION: String = js.native
+    var RESET_SECTION: String
     
-    var SET_SUBMIT_FAILED: String = js.native
+    var SET_SUBMIT_FAILED: String
     
-    var SET_SUBMIT_SUCCEEDED: String = js.native
+    var SET_SUBMIT_SUCCEEDED: String
     
-    var START_ASYNC_VALIDATION: String = js.native
+    var START_ASYNC_VALIDATION: String
     
-    var START_SUBMIT: String = js.native
+    var START_SUBMIT: String
     
-    var STOP_ASYNC_VALIDATION: String = js.native
+    var STOP_ASYNC_VALIDATION: String
     
-    var STOP_SUBMIT: String = js.native
+    var STOP_SUBMIT: String
     
-    var SUBMIT: String = js.native
+    var SUBMIT: String
     
-    var TOUCH: String = js.native
+    var TOUCH: String
     
-    var UNREGISTER_FIELD: String = js.native
+    var UNREGISTER_FIELD: String
     
-    var UNTOUCH: String = js.native
+    var UNTOUCH: String
     
-    var UPDATE_SYNC_ERRORS: String = js.native
+    var UPDATE_SYNC_ERRORS: String
     
-    var UPDATE_SYNC_WARNINGS: String = js.native
+    var UPDATE_SYNC_WARNINGS: String
   }
   object ActionTypes_ {
     

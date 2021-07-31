@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMailboxDetailsRequest extends StObject {
   
   /**
     * The identifier for the organization that contains the user whose mailbox details are being requested.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier for the user whose mailbox details are being requested.
     */
-  var UserId: WorkMailIdentifier = js.native
+  var UserId: WorkMailIdentifier
 }
 object GetMailboxDetailsRequest {
   

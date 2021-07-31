@@ -9,7 +9,6 @@ import typings.astTypes.kindsMod.TSPropertySignatureKind
 import typings.astTypes.namedTypesMod.namedTypes.TSInterfaceBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

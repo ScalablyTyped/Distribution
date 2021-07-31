@@ -2,32 +2,30 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A service account identity, including the name and credentials that can be
   * used to authenticate as the service account.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * Credentials that can be used to authenticate as this ServiceAccount.
     */
-  var key: js.UndefOr[SchemaServiceAccountKey] = js.native
+  var key: js.UndefOr[SchemaServiceAccountKey] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#serviceAccount&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The account name of the service account, in the form of an email address.
     * Assigned by the server.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceAccount {
   

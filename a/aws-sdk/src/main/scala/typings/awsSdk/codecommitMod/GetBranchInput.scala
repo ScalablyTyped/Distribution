@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBranchInput extends StObject {
   
   /**
     * The name of the branch for which you want to retrieve information.
     */
-  var branchName: js.UndefOr[BranchName] = js.native
+  var branchName: js.UndefOr[BranchName] = js.undefined
   
   /**
     * The name of the repository that contains the branch for which you want to retrieve information.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object GetBranchInput {
   

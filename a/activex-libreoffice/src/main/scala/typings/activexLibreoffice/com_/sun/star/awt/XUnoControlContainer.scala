@@ -6,27 +6,27 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the tab controllers of a {@link UnoControlContainer} . */
-@js.native
-trait XUnoControlContainer extends XInterface {
+trait XUnoControlContainer
+  extends StObject
+     with XInterface {
   
   /** returns all currently specified tab controllers. */
-  var TabControllers: SafeArray[XTabController] = js.native
+  var TabControllers: SafeArray[XTabController]
   
   /** adds a single tab controller. */
-  def addTabController(TabController: XTabController): Unit = js.native
+  def addTabController(TabController: XTabController): Unit
   
   /** returns all currently specified tab controllers. */
-  def getTabControllers(): SafeArray[XTabController] = js.native
+  def getTabControllers(): SafeArray[XTabController]
   
   /** removes a single tab controller. */
-  def removeTabController(TabController: XTabController): Unit = js.native
+  def removeTabController(TabController: XTabController): Unit
   
   /** sets a set of tab controllers. */
-  def setTabControllers(TabControllers: SeqEquiv[XTabController]): Unit = js.native
+  def setTabControllers(TabControllers: SeqEquiv[XTabController]): Unit
 }
 object XUnoControlContainer {
   

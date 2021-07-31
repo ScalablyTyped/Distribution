@@ -11,45 +11,35 @@ import typings.reactBeautifulDnd.reactBeautifulDndStrings.x
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HorizontalAxis extends Axis {
+trait HorizontalAxis
+  extends StObject
+     with Axis {
   
-  var crossAxisEnd: bottom = js.native
+  var crossAxisEnd: bottom
   
-  var crossAxisLine: y = js.native
+  var crossAxisLine: y
   
-  var crossAxisSize: height = js.native
+  var crossAxisSize: height
   
-  var crossAxisStart: top = js.native
+  var crossAxisStart: top
   
-  var direction: horizontal = js.native
+  var direction: horizontal
   
-  var end: right = js.native
+  var end: right
   
-  var line: x = js.native
+  var line: x
   
-  var size: width = js.native
+  var size: width
   
-  var start: left = js.native
+  var start: left
 }
 object HorizontalAxis {
   
   @scala.inline
-  def apply(
-    crossAxisEnd: bottom,
-    crossAxisLine: y,
-    crossAxisSize: height,
-    crossAxisStart: top,
-    direction: horizontal,
-    end: right,
-    line: x,
-    size: width,
-    start: left
-  ): HorizontalAxis = {
-    val __obj = js.Dynamic.literal(crossAxisEnd = crossAxisEnd.asInstanceOf[js.Any], crossAxisLine = crossAxisLine.asInstanceOf[js.Any], crossAxisSize = crossAxisSize.asInstanceOf[js.Any], crossAxisStart = crossAxisStart.asInstanceOf[js.Any], direction = direction.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], line = line.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  def apply(): HorizontalAxis = {
+    val __obj = js.Dynamic.literal(crossAxisEnd = "bottom", crossAxisLine = "y", crossAxisSize = "height", crossAxisStart = "top", direction = "horizontal", end = "right", line = "x", size = "width", start = "left")
     __obj.asInstanceOf[HorizontalAxis]
   }
   

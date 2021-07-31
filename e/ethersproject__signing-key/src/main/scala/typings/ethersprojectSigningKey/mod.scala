@@ -5,10 +5,13 @@ import typings.ethersprojectBytes.mod.Signature
 import typings.ethersprojectBytes.mod.SignatureLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ethersproject/signing-key", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/signing-key", "SigningKey")
   @js.native
@@ -34,19 +37,19 @@ object mod {
   /* static members */
   object SigningKey {
     
-    @JSImport("@ethersproject/signing-key", "SigningKey.isSigningKey")
+    @JSImport("@ethersproject/signing-key", "SigningKey")
     @js.native
-    def isSigningKey(value: js.Any): /* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isSigningKey(value: js.Any): /* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSigningKey")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/signing-key.@ethersproject/signing-key.SigningKey */ Boolean]
   }
   
-  @JSImport("@ethersproject/signing-key", "computePublicKey")
-  @js.native
-  def computePublicKey(key: BytesLike): String = js.native
-  @JSImport("@ethersproject/signing-key", "computePublicKey")
-  @js.native
-  def computePublicKey(key: BytesLike, compressed: Boolean): String = js.native
+  @scala.inline
+  def computePublicKey(key: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computePublicKey")(key.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computePublicKey(key: BytesLike, compressed: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computePublicKey")(key.asInstanceOf[js.Any], compressed.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/signing-key", "recoverPublicKey")
-  @js.native
-  def recoverPublicKey(digest: BytesLike, signature: SignatureLike): String = js.native
+  @scala.inline
+  def recoverPublicKey(digest: BytesLike, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("recoverPublicKey")(digest.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
 }

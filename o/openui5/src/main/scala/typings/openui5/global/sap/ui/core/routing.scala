@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routing {
@@ -10,12 +9,14 @@ object routing {
   @JSGlobal("sap.ui.core.routing.HashChanger")
   @js.native
   class HashChanger ()
-    extends typings.openui5.sap.ui.core.routing.HashChanger
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.HashChanger
   
   @JSGlobal("sap.ui.core.routing.History")
   @js.native
   class History protected ()
-    extends typings.openui5.sap.ui.core.routing.History {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.History {
     /**
       * Used to determine the {@link sap.ui.core.HistoryDirection} of the current or a future
       * navigation,done with a {@link sap.ui.core.routing.Router} or {@link
@@ -26,12 +27,38 @@ object routing {
       * aware of the hash-changes.
       */
     def this(oHashChanger: typings.openui5.sap.ui.core.routing.HashChanger) = this()
+    
+    /**
+      * Determines what the navigation direction for a newly given hash would beIt will say Unknown if there
+      * is a history foo - bar (current history) - fooIf you now ask for the direction of the hash "foo" you
+      * get Unknown because it might be backwards or forwards.For hash replacements, the history stack will
+      * be replaced at this position for the history.
+      * @param sNewHash optional, if this parameter is not passed the last hashChange is taken.
+      * @returns or undefined, if no navigation has taken place yet.
+      */
+    /* CompleteClass */
+    override def getDirection(sNewHash: String): js.Any = js.native
+    
+    /**
+      * @returns a global singleton that gets created as soon as the sap.ui.core.routing.History is required
+      */
+    /* CompleteClass */
+    override def getInstance(): typings.openui5.sap.ui.core.routing.History = js.native
+    
+    /**
+      * gets the previous hash in the history - if the last direction was Unknown or there was no navigation
+      * yet, undefined will be returned
+      * @returns or undefined
+      */
+    /* CompleteClass */
+    override def getPreviousHash(): String = js.native
   }
   
   @JSGlobal("sap.ui.core.routing.Route")
   @js.native
   class Route protected ()
-    extends typings.openui5.sap.ui.core.routing.Route {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Route {
     /**
       * Instantiates a SAPUI5 Route
       * @param The router instance, the route will be added to.
@@ -51,7 +78,8 @@ object routing {
   @JSGlobal("sap.ui.core.routing.Router")
   @js.native
   class Router protected ()
-    extends typings.openui5.sap.ui.core.routing.Router {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Router {
     /**
       * Instantiates a SAPUI5 Router
       * @param oRoutes may contain many Route configurations as {@link
@@ -93,56 +121,38 @@ object routing {
       *       controlAggregation: "pages"         }    })</code></pre>
       */
     def this(oRoutes: js.Any) = this()
-    def this(oRoutes: js.Array[_]) = this()
+    def this(oRoutes: js.Array[js.Any]) = this()
     def this(oRoutes: js.Any, oConfig: js.Any) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any) = this()
-    def this(
-      oRoutes: js.Any,
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: typings.openui5.sap.ui.core.UIComponent
-    ) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any) = this()
     def this(oRoutes: js.Any, oConfig: js.Any, oOwner: typings.openui5.sap.ui.core.UIComponent) = this()
-    def this(
-      oRoutes: js.Array[_],
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: typings.openui5.sap.ui.core.UIComponent
-    ) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: typings.openui5.sap.ui.core.UIComponent) = this()
-    def this(
-      oRoutes: js.Any,
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: js.UndefOr[scala.Nothing],
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(
-      oRoutes: js.Any,
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: typings.openui5.sap.ui.core.UIComponent,
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(oRoutes: js.Any, oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Any, oConfig: Unit, oOwner: typings.openui5.sap.ui.core.UIComponent) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any, oOwner: typings.openui5.sap.ui.core.UIComponent) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: Unit, oOwner: typings.openui5.sap.ui.core.UIComponent) = this()
+    def this(oRoutes: js.Any, oConfig: js.Any, oOwner: Unit, oTargetsConfig: js.Any) = this()
     def this(
       oRoutes: js.Any,
       oConfig: js.Any,
       oOwner: typings.openui5.sap.ui.core.UIComponent,
       oTargetsConfig: js.Any
     ) = this()
+    def this(oRoutes: js.Any, oConfig: Unit, oOwner: Unit, oTargetsConfig: js.Any) = this()
     def this(
-      oRoutes: js.Array[_],
-      oConfig: js.UndefOr[scala.Nothing],
-      oOwner: js.UndefOr[scala.Nothing],
-      oTargetsConfig: js.Any
-    ) = this()
-    def this(
-      oRoutes: js.Array[_],
-      oConfig: js.UndefOr[scala.Nothing],
+      oRoutes: js.Any,
+      oConfig: Unit,
       oOwner: typings.openui5.sap.ui.core.UIComponent,
       oTargetsConfig: js.Any
     ) = this()
-    def this(oRoutes: js.Array[_], oConfig: js.Any, oOwner: js.UndefOr[scala.Nothing], oTargetsConfig: js.Any) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: js.Any, oOwner: Unit, oTargetsConfig: js.Any) = this()
     def this(
-      oRoutes: js.Array[_],
+      oRoutes: js.Array[js.Any],
       oConfig: js.Any,
+      oOwner: typings.openui5.sap.ui.core.UIComponent,
+      oTargetsConfig: js.Any
+    ) = this()
+    def this(oRoutes: js.Array[js.Any], oConfig: Unit, oOwner: Unit, oTargetsConfig: js.Any) = this()
+    def this(
+      oRoutes: js.Array[js.Any],
+      oConfig: Unit,
       oOwner: typings.openui5.sap.ui.core.UIComponent,
       oTargetsConfig: js.Any
     ) = this()
@@ -151,7 +161,8 @@ object routing {
   @JSGlobal("sap.ui.core.routing.Target")
   @js.native
   class Target protected ()
-    extends typings.openui5.sap.ui.core.routing.Target {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Target {
     /**
       * Provides a convenient way for placing views into the correct containers of your application.<br/>The
       * main benefit of Targets is lazy loading: you do not have to create the views until you really need
@@ -176,7 +187,8 @@ object routing {
   @JSGlobal("sap.ui.core.routing.Targets")
   @js.native
   class Targets protected ()
-    extends typings.openui5.sap.ui.core.routing.Targets {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Targets {
     /**
       * Provides a convenient way for placing views into the correct containers of your application.The main
       * benefit of Targets is lazy loading: you do not have to create the views until you really need
@@ -190,7 +202,8 @@ object routing {
   @JSGlobal("sap.ui.core.routing.Views")
   @js.native
   class Views protected ()
-    extends typings.openui5.sap.ui.core.routing.Views {
+    extends StObject
+       with typings.openui5.sap.ui.core.routing.Views {
     /**
       * Instantiates a view repository that creates and caches views. If it is destroyed, all the Views it
       * created are destroyed.Usually you do not have to create instances of this class, it is used by the
@@ -213,15 +226,15 @@ object routing {
     object HistoryDirection extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.routing.routing.HistoryDirection with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.routing.routing.HistoryDirection & Double] = js.native
       
-      /* 0 */ val Backwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Backwards with Double = js.native
+      /* 0 */ val Backwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Backwards & Double = js.native
       
-      /* 1 */ val Forwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Forwards with Double = js.native
+      /* 1 */ val Forwards: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Forwards & Double = js.native
       
-      /* 2 */ val NewEntry: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.NewEntry with Double = js.native
+      /* 2 */ val NewEntry: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.NewEntry & Double = js.native
       
-      /* 3 */ val Unknown: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Unknown with Double = js.native
+      /* 3 */ val Unknown: typings.openui5.sap.ui.core.routing.routing.HistoryDirection.Unknown & Double = js.native
     }
   }
 }

@@ -10,7 +10,6 @@ import typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat
 import typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables formatting of dates and times. */
@@ -20,7 +19,8 @@ object DateTimeFormatting {
   @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
   @js.native
   class DateTimeFormatter protected ()
-    extends typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
+    extends StObject
+       with typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
     /**
       * Creates a DateTimeFormatter object that is initialized by a format template string.
       * @param formatTemplate A format template string that specifies the requested components. The order of the components is irrelevant. This can also be a format pattern. See the remarks for the DateTimeFormatter class for a list of valid format templates and format patterns.
@@ -161,11 +161,11 @@ object DateTimeFormatting {
   object DayFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat.default & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayFormat.none & Double = js.native
   }
   
   /** Specifies the intended format for the day of the week in a DateTimeFormatter object. */
@@ -175,16 +175,16 @@ object DateTimeFormatting {
     
     @JSBracketAccess
     def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat with Double
+        typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat & Double
       ] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.default & Double = js.native
     
-    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated with Double = js.native
+    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated & Double = js.native
     
-    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full with Double = js.native
+    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none & Double = js.native
   }
   
   /** Specifies the intended format for the hour in a DateTimeFormatter object. */
@@ -193,11 +193,11 @@ object DateTimeFormatting {
   object HourFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat.default & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.HourFormat.none & Double = js.native
   }
   
   /** Specifies the intended format for the minute in a DateTimeFormatter object. */
@@ -206,13 +206,11 @@ object DateTimeFormatting {
   object MinuteFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat.default & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MinuteFormat.none & Double = js.native
   }
   
   /** Specifies the intended format for the month in a DateTimeFormatter object. */
@@ -221,19 +219,17 @@ object DateTimeFormatting {
   object MonthFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.default & Double = js.native
     
-    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated with Double = js.native
+    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated & Double = js.native
     
-    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.full with Double = js.native
+    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.full & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.none & Double = js.native
     
-    /* 4 */ val numeric: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.numeric with Double = js.native
+    /* 4 */ val numeric: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.MonthFormat.numeric & Double = js.native
   }
   
   /** Specifies the intended format for the second in a DateTimeFormatter object. */
@@ -242,13 +238,11 @@ object DateTimeFormatting {
   object SecondFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat.default & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.SecondFormat.none & Double = js.native
   }
   
   /** Specifies the intended format for the year in a DateTimeFormatter object. */
@@ -257,14 +251,14 @@ object DateTimeFormatting {
   object YearFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat & Double] = js.native
     
-    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.default with Double = js.native
+    /* 1 */ val default: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.default & Double = js.native
     
-    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated with Double = js.native
+    /* 2 */ val abbreviated: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated & Double = js.native
     
-    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.full with Double = js.native
+    /* 3 */ val full: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.full & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Globalization.DateTimeFormatting.YearFormat.none & Double = js.native
   }
 }

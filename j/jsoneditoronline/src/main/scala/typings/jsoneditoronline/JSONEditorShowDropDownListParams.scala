@@ -2,27 +2,25 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorShowDropDownListParams extends StObject {
   
-  def callback(value: js.Any): Unit = js.native
+  def callback(value: js.Any): Unit
   
-  var node: JSONEditorNode = js.native
+  var node: JSONEditorNode
   
-  var optionClassName: String = js.native
+  var optionClassName: String
   
-  var optionSelectedClassName: String = js.native
+  var optionSelectedClassName: String
   
-  var value: String = js.native
+  var value: String
   
-  var values: js.Array[js.Object] = js.native
+  var values: js.Array[js.Object]
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object JSONEditorShowDropDownListParams {
   

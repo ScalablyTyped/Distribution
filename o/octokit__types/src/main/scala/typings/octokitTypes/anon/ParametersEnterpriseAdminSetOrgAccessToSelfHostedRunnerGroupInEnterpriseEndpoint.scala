@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.EnterpriseAdminSetOrgAccessToSelfHosted
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint extends StObject {
   
-  var parameters: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint = js.native
+  var parameters: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint
   
-  var request: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions = js.native
+  var request: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseE
   def apply(
     parameters: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint,
     request: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseEndpoint]
@@ -39,6 +37,6 @@ object ParametersEnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseE
     def setRequest(value: EnterpriseAdminSetOrgAccessToSelfHostedRunnerGroupInEnterpriseRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

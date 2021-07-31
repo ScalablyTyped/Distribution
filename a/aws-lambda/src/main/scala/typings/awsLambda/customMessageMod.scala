@@ -14,17 +14,17 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customMessageMod {
   
-  @js.native
-  trait BaseCustomMessageTriggerEvent[T /* <: String */] extends BaseTriggerEvent[T] {
+  trait BaseCustomMessageTriggerEvent[T /* <: String */]
+    extends StObject
+       with BaseTriggerEvent[T] {
     
-    var request: ClientMetadata = js.native
+    var request: ClientMetadata
     
-    var response: EmailMessage = js.native
+    var response: EmailMessage
   }
   object BaseCustomMessageTriggerEvent {
     
@@ -44,7 +44,7 @@ object customMessageMod {
     }
     
     @scala.inline
-    implicit class BaseCustomMessageTriggerEventMutableBuilder[Self <: BaseCustomMessageTriggerEvent[_], T /* <: String */] (val x: Self with BaseCustomMessageTriggerEvent[T]) extends AnyVal {
+    implicit class BaseCustomMessageTriggerEventMutableBuilder[Self <: BaseCustomMessageTriggerEvent[?], T /* <: String */] (val x: Self & BaseCustomMessageTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setRequest(value: ClientMetadata): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

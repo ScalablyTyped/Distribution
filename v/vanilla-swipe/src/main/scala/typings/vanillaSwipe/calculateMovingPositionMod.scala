@@ -6,31 +6,30 @@ import typings.vanillaSwipe.anon.ClientX
 import typings.vanillaSwipe.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calculateMovingPositionMod {
   
-  @JSImport("vanilla-swipe/lib/utils/calculateMovingPosition", "calculateMovingPosition")
+  @JSImport("vanilla-swipe/lib/utils/calculateMovingPosition", JSImport.Namespace)
   @js.native
-  def calculateMovingPosition[T /* <: E */](e: T): X = js.native
-  @JSImport("vanilla-swipe/lib/utils/calculateMovingPosition", "calculateMovingPosition")
-  @js.native
-  def calculateMovingPosition[T /* <: E */](e: MouseEvent): X = js.native
-  @JSImport("vanilla-swipe/lib/utils/calculateMovingPosition", "calculateMovingPosition")
-  @js.native
-  def calculateMovingPosition[T /* <: E */](e: TouchEvent): X = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def calculateMovingPosition[T /* <: E */](e: T): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  @scala.inline
+  def calculateMovingPosition[T /* <: E */](e: MouseEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  @scala.inline
+  def calculateMovingPosition[T /* <: E */](e: TouchEvent): X = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateMovingPosition")(e.asInstanceOf[js.Any]).asInstanceOf[X]
+  
   trait E extends StObject {
     
-    var changedTouches: js.UndefOr[js.Array[ClientX]] = js.native
+    var changedTouches: js.UndefOr[js.Array[ClientX]] = js.undefined
     
-    var clientX: Double = js.native
+    var clientX: Double
     
-    var clientY: Double = js.native
+    var clientY: Double
     
-    var preventDefault: js.UndefOr[js.Function] = js.native
+    var preventDefault: js.UndefOr[js.Function] = js.undefined
   }
   object E {
     

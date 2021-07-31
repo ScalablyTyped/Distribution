@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFragmentsOutput extends StObject {
   
   /**
     * A list of archived Fragment objects from the stream that meet the selector criteria. Results are in no specific order, even across pages.
     */
-  var Fragments: js.UndefOr[FragmentList] = js.native
+  var Fragments: js.UndefOr[FragmentList] = js.undefined
   
   /**
     * If the returned list is truncated, the operation returns this token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.NextToken] = js.undefined
 }
 object ListFragmentsOutput {
   

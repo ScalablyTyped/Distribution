@@ -30,7 +30,6 @@ import typings.std.Error
 import typings.std.ReadonlySet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object processMod extends Shortcut {
@@ -51,12 +50,11 @@ object processMod extends Shortcut {
       
       type BeforeExitListener = js.Function1[/* code */ Double, Unit]
       
-      @js.native
       trait CpuUsage extends StObject {
         
-        var system: Double = js.native
+        var system: Double
         
-        var user: Double = js.native
+        var user: Double
       }
       object CpuUsage {
         
@@ -81,10 +79,9 @@ object processMod extends Shortcut {
       
       type ExitListener = js.Function1[/* code */ Double, Unit]
       
-      @js.native
       trait Global extends StObject {
         
-        var process: Process = js.native
+        var process: Process
       }
       object Global {
         
@@ -111,18 +108,17 @@ object processMod extends Shortcut {
         def bigint(): js.BigInt = js.native
       }
       
-      @js.native
       trait MemoryUsage extends StObject {
         
-        var arrayBuffers: Double = js.native
+        var arrayBuffers: Double
         
-        var external: Double = js.native
+        var external: Double
         
-        var heapTotal: Double = js.native
+        var heapTotal: Double
         
-        var heapUsed: Double = js.native
+        var heapUsed: Double
         
-        var rss: Double = js.native
+        var rss: Double
       }
       object MemoryUsage {
         
@@ -228,7 +224,9 @@ object processMod extends Shortcut {
       }
       
       @js.native
-      trait Process extends EventEmitter {
+      trait Process
+        extends StObject
+           with EventEmitter {
         
         def abort(): scala.Nothing = js.native
         
@@ -292,13 +290,13 @@ object processMod extends Shortcut {
         def emit(event: Signals, signal: Signals): Boolean = js.native
         
         def emitWarning(warning: java.lang.String): Unit = js.native
-        def emitWarning(warning: java.lang.String, name: js.UndefOr[scala.Nothing], ctor: js.Function): Unit = js.native
         def emitWarning(warning: java.lang.String, name: java.lang.String): Unit = js.native
         def emitWarning(warning: java.lang.String, name: java.lang.String, ctor: js.Function): Unit = js.native
+        def emitWarning(warning: java.lang.String, name: Unit, ctor: js.Function): Unit = js.native
         def emitWarning(warning: Error): Unit = js.native
-        def emitWarning(warning: Error, name: js.UndefOr[scala.Nothing], ctor: js.Function): Unit = js.native
         def emitWarning(warning: Error, name: java.lang.String): Unit = js.native
         def emitWarning(warning: Error, name: java.lang.String, ctor: js.Function): Unit = js.native
+        def emitWarning(warning: Error, name: Unit, ctor: js.Function): Unit = js.native
         
         @JSName("emit")
         def emit_beforeExit(event: beforeExit, code: Double): Boolean = js.native
@@ -319,7 +317,7 @@ object processMod extends Shortcut {
         @JSName("emit")
         def emit_newListener(event: newListener, eventName: js.Symbol, listener: js.Function1[/* repeated */ js.Any, Unit]): this.type = js.native
         @JSName("emit")
-        def emit_rejectionHandled(event: rejectionHandled, promise: js.Promise[_]): Boolean = js.native
+        def emit_rejectionHandled(event: rejectionHandled, promise: js.Promise[js.Any]): Boolean = js.native
         @JSName("emit")
         def emit_removeListener(
           event: removeListener,
@@ -331,7 +329,7 @@ object processMod extends Shortcut {
         @JSName("emit")
         def emit_uncaughtExceptionMonitor(event: uncaughtExceptionMonitor, error: Error): Boolean = js.native
         @JSName("emit")
-        def emit_unhandledRejection(event: unhandledRejection, reason: js.Any, promise: js.Promise[_]): Boolean = js.native
+        def emit_unhandledRejection(event: unhandledRejection, reason: js.Any, promise: js.Promise[js.Any]): Boolean = js.native
         @JSName("emit")
         def emit_warning(event: warning, warning: Error): Boolean = js.native
         
@@ -589,18 +587,17 @@ object processMod extends Shortcut {
       // Alias for compatibility
       type ProcessEnv = Dict[java.lang.String]
       
-      @js.native
       trait ProcessRelease extends StObject {
         
-        var headersUrl: js.UndefOr[java.lang.String] = js.native
+        var headersUrl: js.UndefOr[java.lang.String] = js.undefined
         
-        var libUrl: js.UndefOr[java.lang.String] = js.native
+        var libUrl: js.UndefOr[java.lang.String] = js.undefined
         
-        var lts: js.UndefOr[java.lang.String] = js.native
+        var lts: js.UndefOr[java.lang.String] = js.undefined
         
-        var name: java.lang.String = js.native
+        var name: java.lang.String
         
-        var sourceUrl: js.UndefOr[java.lang.String] = js.native
+        var sourceUrl: js.UndefOr[java.lang.String] = js.undefined
       }
       object ProcessRelease {
         
@@ -707,30 +704,30 @@ object processMod extends Shortcut {
           */
         def writeReport(): java.lang.String = js.native
         def writeReport(error: Error): java.lang.String = js.native
-        def writeReport(fileName: js.UndefOr[scala.Nothing], err: Error): java.lang.String = js.native
         def writeReport(fileName: java.lang.String): java.lang.String = js.native
         def writeReport(fileName: java.lang.String, err: Error): java.lang.String = js.native
+        def writeReport(fileName: Unit, err: Error): java.lang.String = js.native
       }
       
-      @js.native
       trait ProcessVersions
-        extends Dict[java.lang.String] {
+        extends StObject
+           with Dict[java.lang.String] {
         
-        var ares: java.lang.String = js.native
+        var ares: java.lang.String
         
-        var http_parser: java.lang.String = js.native
+        var http_parser: java.lang.String
         
-        var modules: java.lang.String = js.native
+        var modules: java.lang.String
         
-        var node: java.lang.String = js.native
+        var node: java.lang.String
         
-        var openssl: java.lang.String = js.native
+        var openssl: java.lang.String
         
-        var uv: java.lang.String = js.native
+        var uv: java.lang.String
         
-        var v8: java.lang.String = js.native
+        var v8: java.lang.String
         
-        var zlib: java.lang.String = js.native
+        var zlib: java.lang.String
       }
       object ProcessVersions {
         
@@ -791,40 +788,39 @@ object processMod extends Shortcut {
             Unit
           ]
       
-      @js.native
       trait ResourceUsage extends StObject {
         
-        var fsRead: Double = js.native
+        var fsRead: Double
         
-        var fsWrite: Double = js.native
+        var fsWrite: Double
         
-        var involuntaryContextSwitches: Double = js.native
+        var involuntaryContextSwitches: Double
         
-        var ipcReceived: Double = js.native
+        var ipcReceived: Double
         
-        var ipcSent: Double = js.native
+        var ipcSent: Double
         
-        var majorPageFault: Double = js.native
+        var majorPageFault: Double
         
-        var maxRSS: Double = js.native
+        var maxRSS: Double
         
-        var minorPageFault: Double = js.native
+        var minorPageFault: Double
         
-        var sharedMemorySize: Double = js.native
+        var sharedMemorySize: Double
         
-        var signalsCount: Double = js.native
+        var signalsCount: Double
         
-        var swappedOut: Double = js.native
+        var swappedOut: Double
         
-        var systemCPUTime: Double = js.native
+        var systemCPUTime: Double
         
-        var unsharedDataSize: Double = js.native
+        var unsharedDataSize: Double
         
-        var unsharedStackSize: Double = js.native
+        var unsharedStackSize: Double
         
-        var userCPUTime: Double = js.native
+        var userCPUTime: Double
         
-        var voluntaryContextSwitches: Double = js.native
+        var voluntaryContextSwitches: Double
       }
       object ResourceUsage {
         
@@ -1061,7 +1057,9 @@ object processMod extends Shortcut {
       type SignalsListener = js.Function1[/* signal */ Signals, Unit]
       
       @js.native
-      trait Socket extends ReadWriteStream {
+      trait Socket
+        extends StObject
+           with ReadWriteStream {
         
         var isTTY: js.UndefOr[`true`] = js.native
       }

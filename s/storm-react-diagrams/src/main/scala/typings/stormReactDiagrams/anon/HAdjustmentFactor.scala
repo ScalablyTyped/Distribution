@@ -2,19 +2,17 @@ package typings.stormReactDiagrams.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HAdjustmentFactor extends StObject {
   
-  var hAdjustmentFactor: Double = js.native
+  var hAdjustmentFactor: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var vAdjustmentFactor: Double = js.native
+  var vAdjustmentFactor: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object HAdjustmentFactor {
   

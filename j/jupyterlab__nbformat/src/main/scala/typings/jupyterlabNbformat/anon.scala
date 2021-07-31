@@ -3,16 +3,14 @@ package typings.jupyterlabNbformat
 import typings.jupyterlabNbformat.jupyterlabNbformatStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@jupyterlab/nbformat.@jupyterlab/nbformat.IBaseCellJupyterMetadata> */
-  @js.native
   trait PartialIBaseCellJupyterMe extends StObject {
     
-    var source_hidden: js.UndefOr[Boolean] = js.native
+    var source_hidden: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIBaseCellJupyterMe {
     
@@ -34,12 +32,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@jupyterlab/nbformat.@jupyterlab/nbformat.ICodeCellJupyterMetadata> */
-  @js.native
   trait PartialICodeCellJupyterMe extends StObject {
     
-    var outputs_hidden: js.UndefOr[Boolean] = js.native
+    var outputs_hidden: js.UndefOr[Boolean] = js.undefined
     
-    var source_hidden: js.UndefOr[Boolean] = js.native
+    var source_hidden: js.UndefOr[Boolean] = js.undefined
   }
   object PartialICodeCellJupyterMe {
     
@@ -67,20 +64,19 @@ object anon {
   }
   
   /* Inlined std.Partial<@jupyterlab/nbformat.@jupyterlab/nbformat.ICodeCellMetadata> */
-  @js.native
   trait PartialICodeCellMetadata extends StObject {
     
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
-    var jupyter: js.UndefOr[PartialICodeCellJupyterMe] = js.native
+    var jupyter: js.UndefOr[PartialICodeCellJupyterMe] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var scrolled: js.UndefOr[Boolean | auto] = js.native
+    var scrolled: js.UndefOr[Boolean | auto] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var trusted: js.UndefOr[Boolean] = js.native
+    var trusted: js.UndefOr[Boolean] = js.undefined
   }
   object PartialICodeCellMetadata {
     
@@ -135,18 +131,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@jupyterlab/nbformat.@jupyterlab/nbformat.IRawCellMetadata> */
-  @js.native
   trait PartialIRawCellMetadata extends StObject {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var jupyter: js.UndefOr[PartialIBaseCellJupyterMe] = js.native
+    var jupyter: js.UndefOr[PartialIBaseCellJupyterMe] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
-    var trusted: js.UndefOr[Boolean] = js.native
+    var trusted: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIRawCellMetadata {
     

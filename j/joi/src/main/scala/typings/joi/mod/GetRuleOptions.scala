@@ -3,19 +3,17 @@ package typings.joi.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRuleOptions extends StObject {
   
-  var args: js.UndefOr[Record[String, _]] = js.native
+  var args: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object GetRuleOptions {
   
@@ -29,7 +27,7 @@ object GetRuleOptions {
   implicit class GetRuleOptionsMutableBuilder[Self <: GetRuleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: Record[String, _]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: Record[String, js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

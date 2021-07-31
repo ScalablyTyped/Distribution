@@ -2,15 +2,13 @@ package typings.reactBootstrapTableNext.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrPage extends StObject {
   
-  var currPage: Double = js.native
+  var currPage: Double
   
-  var currSizePerPage: Double = js.native
+  var currSizePerPage: Double
 }
 object CurrPage {
   

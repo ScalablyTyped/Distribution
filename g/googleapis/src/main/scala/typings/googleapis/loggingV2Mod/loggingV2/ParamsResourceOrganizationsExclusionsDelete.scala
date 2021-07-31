@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsExclusionsDelete extends StandardParameters {
+trait ParamsResourceOrganizationsExclusionsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The resource name of an existing exclusion to delete:
@@ -25,7 +25,7 @@ trait ParamsResourceOrganizationsExclusionsDelete extends StandardParameters {
     * "folders/[FOLDER_ID]/exclusions/[EXCLUSION_ID]" Example:
     * "projects/my-project-id/exclusions/my-exclusion-id".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsExclusionsDelete {
   

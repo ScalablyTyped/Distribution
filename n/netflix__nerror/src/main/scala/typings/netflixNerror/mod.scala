@@ -6,20 +6,27 @@ import typings.netflixNerror.mod.VError.Options
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@netflix/nerror", "VError")
   @js.native
-  class VError protected () extends Error {
-    def this(message: js.UndefOr[scala.Nothing], params: js.Any*) = this()
+  class VError protected ()
+    extends StObject
+       with Error {
     def this(message: String, params: js.Any*) = this()
+    def this(message: Unit, params: js.Any*) = this()
     def this(options: Options, message: String, params: js.Any*) = this()
     def this(options: Error, message: String, params: js.Any*) = this()
     
     def cause(): js.UndefOr[Error] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   /* static members */
   object VError {
@@ -49,8 +56,8 @@ object mod {
     @JSImport("@netflix/nerror", "VError.PError")
     @js.native
     class PError protected () extends VError {
-      def this(message: js.UndefOr[scala.Nothing], params: js.Any*) = this()
       def this(message: String, params: js.Any*) = this()
+      def this(message: Unit, params: js.Any*) = this()
       def this(options: Options, message: String, params: js.Any*) = this()
       def this(options: Error, message: String, params: js.Any*) = this()
     }
@@ -64,8 +71,8 @@ object mod {
     @JSImport("@netflix/nerror", "VError.SError")
     @js.native
     class SError protected () extends VError {
-      def this(message: js.UndefOr[scala.Nothing], params: js.Any*) = this()
       def this(message: String, params: js.Any*) = this()
+      def this(message: Unit, params: js.Any*) = this()
       def this(options: Options, message: String, params: js.Any*) = this()
       def this(options: Error, message: String, params: js.Any*) = this()
     }
@@ -84,54 +91,46 @@ object mod {
     @JSImport("@netflix/nerror", "VError.WError")
     @js.native
     class WError protected () extends VError {
-      def this(message: js.UndefOr[scala.Nothing], params: js.Any*) = this()
       def this(message: String, params: js.Any*) = this()
+      def this(message: Unit, params: js.Any*) = this()
       def this(options: Options, message: String, params: js.Any*) = this()
       def this(options: Error, message: String, params: js.Any*) = this()
     }
     
-    @JSImport("@netflix/nerror", "VError.cause")
-    @js.native
-    def cause(err: Error): Error | Null = js.native
+    @scala.inline
+    def cause(err: Error): Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("cause")(err.asInstanceOf[js.Any]).asInstanceOf[Error | Null]
     
-    @JSImport("@netflix/nerror", "VError.errorForEach")
-    @js.native
-    def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    @scala.inline
+    def errorForEach(err: Error, func: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("errorForEach")(err.asInstanceOf[js.Any], func.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@netflix/nerror", "VError.errorFromList")
-    @js.native
-    def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = js.native
+    @scala.inline
+    def errorFromList[T /* <: Error */](errors: js.Array[T]): Null | T | MultiError = ^.asInstanceOf[js.Dynamic].applyDynamic("errorFromList")(errors.asInstanceOf[js.Any]).asInstanceOf[Null | T | MultiError]
     
-    @JSImport("@netflix/nerror", "VError.findCauseByName")
-    @js.native
-    def findCauseByName(err: Error, name: String): Error | Null = js.native
+    @scala.inline
+    def findCauseByName(err: Error, name: String): Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findCauseByName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Error | Null]
     
-    @JSImport("@netflix/nerror", "VError.fullStack")
-    @js.native
-    def fullStack(err: Error): String = js.native
+    @scala.inline
+    def fullStack(err: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fullStack")(err.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@netflix/nerror", "VError.hasCauseWithName")
-    @js.native
-    def hasCauseWithName(err: Error, name: String): Boolean = js.native
+    @scala.inline
+    def hasCauseWithName(err: Error, name: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasCauseWithName")(err.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("@netflix/nerror", "VError.info")
-    @js.native
-    def info(err: Error): Info = js.native
+    @scala.inline
+    def info(err: Error): Info = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(err.asInstanceOf[js.Any]).asInstanceOf[Info]
     
     type Info = StringDictionary[js.Any]
     
-    @js.native
     trait Options extends StObject {
       
-      var cause: js.UndefOr[Error | Null] = js.native
+      var cause: js.UndefOr[Error | Null] = js.undefined
       
-      var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+      var constructorOpt: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
       
-      var info: js.UndefOr[Info] = js.native
+      var info: js.UndefOr[Info] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var strict: js.UndefOr[Boolean] = js.native
+      var strict: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

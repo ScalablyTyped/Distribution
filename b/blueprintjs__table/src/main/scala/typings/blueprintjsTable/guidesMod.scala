@@ -4,7 +4,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object guidesMod {
@@ -28,18 +27,19 @@ object guidesMod {
     def shouldComponentUpdate_MGuideLayer(nextProps: IGuideLayerProps): Boolean = js.native
   }
   
-  @js.native
-  trait IGuideLayerProps extends IProps {
+  trait IGuideLayerProps
+    extends StObject
+       with IProps {
     
     /**
       *  The top-offset location of the horizontal guides
       */
-    var horizontalGuides: js.UndefOr[js.Array[Double]] = js.native
+    var horizontalGuides: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       *  The left-offset location of the vertical guides
       */
-    var verticalGuides: js.UndefOr[js.Array[Double]] = js.native
+    var verticalGuides: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object IGuideLayerProps {
     

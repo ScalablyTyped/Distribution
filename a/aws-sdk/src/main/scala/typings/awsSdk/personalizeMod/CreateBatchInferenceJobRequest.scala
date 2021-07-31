@@ -2,51 +2,49 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBatchInferenceJobRequest extends StObject {
   
   /**
     * The configuration details of a batch inference job.
     */
-  var batchInferenceJobConfig: js.UndefOr[BatchInferenceJobConfig] = js.native
+  var batchInferenceJobConfig: js.UndefOr[BatchInferenceJobConfig] = js.undefined
   
   /**
     * The ARN of the filter to apply to the batch inference job. For more information on using filters, see Using Filters with Amazon Personalize.
     */
-  var filterArn: js.UndefOr[Arn] = js.native
+  var filterArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Amazon S3 path that leads to the input file to base your recommendations on. The input material must be in JSON format.
     */
-  var jobInput: BatchInferenceJobInput = js.native
+  var jobInput: BatchInferenceJobInput
   
   /**
     * The name of the batch inference job to create.
     */
-  var jobName: Name = js.native
+  var jobName: Name
   
   /**
     * The path to the Amazon S3 bucket where the job's output will be stored.
     */
-  var jobOutput: BatchInferenceJobOutput = js.native
+  var jobOutput: BatchInferenceJobOutput
   
   /**
     * The number of recommendations to retreive.
     */
-  var numResults: js.UndefOr[NumBatchResults] = js.native
+  var numResults: js.UndefOr[NumBatchResults] = js.undefined
   
   /**
     * The ARN of the Amazon Identity and Access Management role that has permissions to read and write to your input and out Amazon S3 buckets respectively.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * The Amazon Resource Name (ARN) of the solution version that will be used to generate the batch inference recommendations.
     */
-  var solutionVersionArn: Arn = js.native
+  var solutionVersionArn: Arn
 }
 object CreateBatchInferenceJobRequest {
   

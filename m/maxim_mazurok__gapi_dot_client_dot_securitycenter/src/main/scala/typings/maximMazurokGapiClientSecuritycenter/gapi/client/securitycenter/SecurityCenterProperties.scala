@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityCenterProperties extends StObject {
   
   /** The user defined display name for this resource. */
-  var resourceDisplayName: js.UndefOr[String] = js.native
+  var resourceDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The full resource name of the Google Cloud resource this asset represents. This field is immutable after create time. See:
     * https://cloud.google.com/apis/design/resource_names#full_resource_name
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /** Owners of the Google Cloud resource. */
-  var resourceOwners: js.UndefOr[js.Array[String]] = js.native
+  var resourceOwners: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The full resource name of the immediate parent of the resource. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
-  var resourceParent: js.UndefOr[String] = js.native
+  var resourceParent: js.UndefOr[String] = js.undefined
   
   /** The user defined display name for the parent of this resource. */
-  var resourceParentDisplayName: js.UndefOr[String] = js.native
+  var resourceParentDisplayName: js.UndefOr[String] = js.undefined
   
   /** The full resource name of the project the resource belongs to. See: https://cloud.google.com/apis/design/resource_names#full_resource_name */
-  var resourceProject: js.UndefOr[String] = js.native
+  var resourceProject: js.UndefOr[String] = js.undefined
   
   /** The user defined display name for the project of this resource. */
-  var resourceProjectDisplayName: js.UndefOr[String] = js.native
+  var resourceProjectDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the Google Cloud resource. Examples include: APPLICATION, PROJECT, and ORGANIZATION. This is a case insensitive field defined by Security Command Center and/or the
     * producer of the resource and is immutable after create time.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
 }
 object SecurityCenterProperties {
   

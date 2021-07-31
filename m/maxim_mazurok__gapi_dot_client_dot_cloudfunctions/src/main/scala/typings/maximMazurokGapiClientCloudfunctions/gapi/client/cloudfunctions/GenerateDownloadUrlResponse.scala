@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudfunctions.gapi.client.cloudfunctions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenerateDownloadUrlResponse extends StObject {
   
   /** The generated Google Cloud Storage signed URL that should be used for function source code download. */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
 }
 object GenerateDownloadUrlResponse {
   

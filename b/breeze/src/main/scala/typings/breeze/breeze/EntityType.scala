@@ -2,11 +2,12 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait EntityType extends IStructuralType {
+trait EntityType
+  extends StObject
+     with IStructuralType {
   
   def addProperty(property: IProperty): Unit = js.native
   

@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,27 +25,26 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * for on an unmanaged profile have &quot;userPurchase&quot; as the
   * entitlement reason. These entitlements cannot be removed via the API.
   */
-@js.native
 trait SchemaEntitlement extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#entitlement&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product that the entitlement is for. For example,
     * &quot;app:com.google.android.gm&quot;.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The reason for the entitlement. For example, &quot;free&quot; for free
     * apps. This property is temporary: it will be replaced by the acquisition
     * kind field of group licenses.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object SchemaEntitlement {
   

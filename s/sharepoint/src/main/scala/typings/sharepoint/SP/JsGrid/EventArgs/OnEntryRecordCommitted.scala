@@ -4,17 +4,17 @@ import typings.sharepoint.SP.JsGrid.IChangeKey
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnEntryRecordCommitted extends IEventArgs {
+trait OnEntryRecordCommitted
+  extends StObject
+     with IEventArgs {
   
-  var changeKey: IChangeKey = js.native
+  var changeKey: IChangeKey
   
-  var originalRecordKey: Double = js.native
+  var originalRecordKey: Double
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object OnEntryRecordCommitted {
   

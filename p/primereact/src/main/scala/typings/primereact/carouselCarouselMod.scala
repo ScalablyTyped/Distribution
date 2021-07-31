@@ -4,7 +4,6 @@ import typings.primereact.anon.Page
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselCarouselMod {
@@ -21,46 +20,45 @@ object carouselCarouselMod {
     def this(props: CarouselProps, context: js.Any) = this()
   }
   
-  @js.native
   trait CarouselProps extends StObject {
     
-    var autoplayInterval: js.UndefOr[Double] = js.native
+    var autoplayInterval: js.UndefOr[Double] = js.undefined
     
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var containerClassName: js.UndefOr[String] = js.native
+    var containerClassName: js.UndefOr[String] = js.undefined
     
-    var contentClassName: js.UndefOr[String] = js.native
+    var contentClassName: js.UndefOr[String] = js.undefined
     
-    var footer: js.UndefOr[js.Any] = js.native
+    var footer: js.UndefOr[js.Any] = js.undefined
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var indicatorsContentClassName: js.UndefOr[String] = js.native
+    var indicatorsContentClassName: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Any] = js.native
+    var itemTemplate: js.UndefOr[js.Any] = js.undefined
     
-    var numScroll: js.UndefOr[Double] = js.native
+    var numScroll: js.UndefOr[Double] = js.undefined
     
-    var numVisible: js.UndefOr[Double] = js.native
+    var numVisible: js.UndefOr[Double] = js.undefined
     
-    var onPageChange: js.UndefOr[js.Function1[/* e */ Page, Unit]] = js.native
+    var onPageChange: js.UndefOr[js.Function1[/* e */ Page, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
-    var responsiveOptions: js.UndefOr[js.Any] = js.native
+    var responsiveOptions: js.UndefOr[js.Any] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
-    var verticalViewPortHeight: js.UndefOr[String] = js.native
+    var verticalViewPortHeight: js.UndefOr[String] = js.undefined
   }
   object CarouselProps {
     

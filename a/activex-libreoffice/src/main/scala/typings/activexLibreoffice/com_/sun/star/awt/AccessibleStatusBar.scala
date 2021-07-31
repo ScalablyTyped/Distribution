@@ -12,18 +12,17 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a status bar.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleStatusBar
-  extends XAccessibleExtendedComponent
+  extends StObject
      with XAccessibleContext
      with XAccessibleEventBroadcaster
+     with XAccessibleExtendedComponent
 object AccessibleStatusBar {
   
   @scala.inline

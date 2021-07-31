@@ -4,23 +4,21 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BadgeProps extends StObject {
   
-  var badgeContent: ReactNode = js.native
+  var badgeContent: ReactNode
   
-  var badgeStyle: js.UndefOr[CSSProperties] = js.native
+  var badgeStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
-  var secondary: js.UndefOr[Boolean] = js.native
+  var secondary: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object BadgeProps {
   

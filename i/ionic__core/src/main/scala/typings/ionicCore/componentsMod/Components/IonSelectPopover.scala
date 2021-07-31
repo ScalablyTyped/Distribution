@@ -3,31 +3,29 @@ package typings.ionicCore.componentsMod.Components
 import typings.ionicCore.selectPopoverInterfaceMod.SelectPopoverOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSelectPopover extends StObject {
   
   /**
     * Header text for the popover
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * Text for popover body
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Array of options for the popover
     */
-  var options: js.Array[SelectPopoverOption] = js.native
+  var options: js.Array[SelectPopoverOption]
   
   /**
     * Subheader text for the popover
     */
-  var subHeader: js.UndefOr[String] = js.native
+  var subHeader: js.UndefOr[String] = js.undefined
 }
 object IonSelectPopover {
   

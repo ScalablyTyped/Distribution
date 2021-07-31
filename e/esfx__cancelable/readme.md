@@ -12,7 +12,7 @@ A low-level Symbol-based API for defining a common cancellation protocol.
 | Keywords           | - |
 | # releases         | 14 |
 | # dependents       | 19 |
-| # downloads        | 156888 |
+| # downloads        | 197801 |
 | # stars            | 0 |
 
 ## Links

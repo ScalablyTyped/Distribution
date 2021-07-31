@@ -2,31 +2,29 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResyncMFADeviceRequest extends StObject {
   
   /**
     * An authentication code emitted by the device. The format for this parameter is a sequence of six digits.
     */
-  var AuthenticationCode1: authenticationCodeType = js.native
+  var AuthenticationCode1: authenticationCodeType
   
   /**
     * A subsequent authentication code emitted by the device. The format for this parameter is a sequence of six digits.
     */
-  var AuthenticationCode2: authenticationCodeType = js.native
+  var AuthenticationCode2: authenticationCodeType
   
   /**
     * Serial number that uniquely identifies the MFA device. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
-  var SerialNumber: serialNumberType = js.native
+  var SerialNumber: serialNumberType
   
   /**
     * The name of the user whose MFA device you want to resynchronize. This parameter allows (through its regex pattern) a string of characters consisting of upper and lowercase alphanumeric characters with no spaces. You can also include any of the following characters: _+=,.@-
     */
-  var UserName: existingUserNameType = js.native
+  var UserName: existingUserNameType
 }
 object ResyncMFADeviceRequest {
   

@@ -19,42 +19,40 @@ import typings.react.mod.SyntheticEvent
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Menus {
   
   type DropDownMenu = Component[DropDownMenuProps, js.Object, js.Any]
   
-  @js.native
   trait DropDownMenuProps extends StObject {
     
     // <div/> is the element that gets the 'other' properties
-    var anchorOrigin: js.UndefOr[origin] = js.native
+    var anchorOrigin: js.UndefOr[origin] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var iconButton: js.UndefOr[ReactNode] = js.native
+    var iconButton: js.UndefOr[ReactNode] = js.undefined
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var labelStyle: js.UndefOr[CSSProperties] = js.native
+    var labelStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var listStyle: js.UndefOr[CSSProperties] = js.native
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var menuItemStyle: js.UndefOr[CSSProperties] = js.native
+    var menuItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var menuStyle: js.UndefOr[CSSProperties] = js.native
+    var menuStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[
@@ -63,23 +61,23 @@ object Menus {
           /* menuItemValue */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Object, Event], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Object, Event], Unit]] = js.undefined
     
-    var openImmediately: js.UndefOr[Boolean] = js.native
+    var openImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.native
+    var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var selectionRenderer: js.UndefOr[js.Function2[/* value */ js.Any, /* menuItem */ js.Any, Unit]] = js.native
+    var selectionRenderer: js.UndefOr[js.Function2[/* value */ js.Any, /* menuItem */ js.Any, Unit]] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var targetOrigin: js.UndefOr[origin] = js.native
+    var targetOrigin: js.UndefOr[origin] = js.undefined
     
-    var underlineStyle: js.UndefOr[CSSProperties] = js.native
+    var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object DropDownMenuProps {
     
@@ -230,74 +228,77 @@ object Menus {
   
   type IconMenu = Component[IconMenuProps, js.Object, js.Any]
   
-  @js.native
   trait IconMenuProps extends StObject {
     
     // <Menu/> is the element that get the 'other' properties
-    var anchorOrigin: js.UndefOr[origin] = js.native
+    var anchorOrigin: js.UndefOr[origin] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
     
     // Other properties from <Menu/>
-    var autoWidth: js.UndefOr[Boolean] = js.native
+    var autoWidth: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clickCloseDelay: js.UndefOr[Double] = js.native
+    var clickCloseDelay: js.UndefOr[Double] = js.undefined
     
-    var desktop: js.UndefOr[Boolean] = js.native
+    var desktop: js.UndefOr[Boolean] = js.undefined
     
-    var disableAutoFocus: js.UndefOr[Boolean] = js.native
+    var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var iconButtonElement: ReactElement = js.native
+    var iconButtonElement: ReactElement
     
-    var iconStyle: js.UndefOr[CSSProperties] = js.native
+    var iconStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var initiallyKeyboardFocused: js.UndefOr[Boolean] = js.native
+    var initiallyKeyboardFocused: js.UndefOr[Boolean] = js.undefined
     
-    var listStyle: js.UndefOr[CSSProperties] = js.native
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var menuStyle: js.UndefOr[CSSProperties] = js.native
+    var menuStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_], Unit]
-      ] = js.native
+        js.Function2[
+          /* e */ SyntheticEvent[js.Object, Event], 
+          /* itemValue */ js.Any | js.Array[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
     
-    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Object, Event], Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* e */ SyntheticEvent[js.Object, Event], Unit]] = js.undefined
     
     var onItemClick: js.UndefOr[
         js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onKeyboardFocus: js.UndefOr[
         js.Function2[/* e */ FocusEvent[js.Object], /* isKeyboardFocused */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseDown: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onMouseUp: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseUp: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.native
+    var onRequestChange: js.UndefOr[js.Function2[/* opening */ Boolean, /* reason */ String, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var targetOrigin: js.UndefOr[origin] = js.native
+    var targetOrigin: js.UndefOr[origin] = js.undefined
     
-    var useLayerForClickAway: js.UndefOr[Boolean] = js.native
+    var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
     
-    var value: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var value: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
   }
   object IconMenuProps {
     
@@ -398,7 +399,9 @@ object Menus {
       def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(
+        value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -476,7 +479,7 @@ object Menus {
       def setUseLayerForClickAwayUndefined: Self = StObject.set(x, "useLayerForClickAway", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Any | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -490,24 +493,25 @@ object Menus {
   
   type MenuItem = Component[MenuItemProps, js.Object, js.Any]
   
-  @js.native
-  trait MenuItemProps extends ListItemProps {
+  trait MenuItemProps
+    extends StObject
+       with ListItemProps {
     
     // <ListItem/> is the element that get the 'other' properties
-    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     @JSName("containerElement")
-    var containerElement_MenuItemProps: js.UndefOr[ReactNode | String] = js.native
+    var containerElement_MenuItemProps: js.UndefOr[ReactNode | String] = js.undefined
     
-    var desktop: js.UndefOr[Boolean] = js.native
+    var desktop: js.UndefOr[Boolean] = js.undefined
     
-    var focusState: js.UndefOr[String] = js.native
+    var focusState: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String | ReactNode] = js.native
+    var label: js.UndefOr[String | ReactNode] = js.undefined
     
-    var menuItems: js.UndefOr[ReactNode] = js.native
+    var menuItems: js.UndefOr[ReactNode] = js.undefined
   }
   object MenuItemProps {
     
@@ -564,45 +568,48 @@ object Menus {
     }
   }
   
-  @js.native
   trait MenuProps extends StObject {
     
     // <List/> is the element that get the 'other' properties
-    var autoWidth: js.UndefOr[Boolean] = js.native
+    var autoWidth: js.UndefOr[Boolean] = js.undefined
     
-    var desktop: js.UndefOr[Boolean] = js.native
+    var desktop: js.UndefOr[Boolean] = js.undefined
     
-    var disableAutoFocus: js.UndefOr[Boolean] = js.native
+    var disableAutoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var initiallyKeyboardFocused: js.UndefOr[Boolean] = js.native
+    var initiallyKeyboardFocused: js.UndefOr[Boolean] = js.undefined
     
-    var listStyle: js.UndefOr[CSSProperties] = js.native
+    var listStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
-        js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_], Unit]
-      ] = js.native
+        js.Function2[
+          /* e */ SyntheticEvent[js.Object, Event], 
+          /* itemValue */ js.Any | js.Array[js.Any], 
+          Unit
+        ]
+      ] = js.undefined
     
-    var onEscKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+    var onEscKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
     
     var onItemClick: js.UndefOr[
         js.Function2[/* e */ SyntheticEvent[js.Object, Event], /* item */ MenuItem, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
     
-    var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.native
+    var selectedMenuItemStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var value: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
-    var valueLink: js.UndefOr[ReactLink[_ | js.Array[_]]] = js.native
+    var valueLink: js.UndefOr[ReactLink[js.Any | js.Array[js.Any]]] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object MenuProps {
     
@@ -658,7 +665,9 @@ object Menus {
       def setMultipleUndefined: Self = StObject.set(x, "multiple", js.undefined)
       
       @scala.inline
-      def setOnChange(value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[_]) => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
+      def setOnChange(
+        value: (/* e */ SyntheticEvent[js.Object, Event], /* itemValue */ js.Any | js.Array[js.Any]) => Unit
+      ): Self = StObject.set(x, "onChange", js.Any.fromFunction2(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
@@ -694,10 +703,10 @@ object Menus {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Any | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueLink(value: ReactLink[_ | js.Array[_]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
+      def setValueLink(value: ReactLink[js.Any | js.Array[js.Any]]): Self = StObject.set(x, "valueLink", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueLinkUndefined: Self = StObject.set(x, "valueLink", js.undefined)

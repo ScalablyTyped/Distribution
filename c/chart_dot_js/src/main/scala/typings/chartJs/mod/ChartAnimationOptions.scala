@@ -2,23 +2,21 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAnimationOptions extends StObject {
   
-  var animateRotate: js.UndefOr[Boolean] = js.native
+  var animateRotate: js.UndefOr[Boolean] = js.undefined
   
-  var animateScale: js.UndefOr[Boolean] = js.native
+  var animateScale: js.UndefOr[Boolean] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[Easing] = js.native
+  var easing: js.UndefOr[Easing] = js.undefined
   
-  var onComplete: js.UndefOr[js.Function1[/* chart */ js.Any, Unit]] = js.native
+  var onComplete: js.UndefOr[js.Function1[/* chart */ js.Any, Unit]] = js.undefined
   
-  var onProgress: js.UndefOr[js.Function1[/* chart */ js.Any, Unit]] = js.native
+  var onProgress: js.UndefOr[js.Function1[/* chart */ js.Any, Unit]] = js.undefined
 }
 object ChartAnimationOptions {
   

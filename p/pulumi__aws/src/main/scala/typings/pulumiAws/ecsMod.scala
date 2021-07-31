@@ -22,10 +22,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecsMod {
+  
+  @JSImport("@pulumi/aws/ecs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/ecs", "CapacityProvider")
   @js.native
@@ -44,6 +47,10 @@ object ecsMod {
   /* static members */
   object CapacityProvider {
     
+    @JSImport("@pulumi/aws/ecs", "CapacityProvider")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CapacityProvider resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,26 +60,21 @@ object ecsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs", "CapacityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
-    @JSImport("@pulumi/aws/ecs", "CapacityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
-    @JSImport("@pulumi/aws/ecs", "CapacityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CapacityProviderState): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
-    @JSImport("@pulumi/aws/ecs", "CapacityProvider.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CapacityProviderState, opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.capacityProviderMod.CapacityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.capacityProviderMod.CapacityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.capacityProviderMod.CapacityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CapacityProviderState): typings.pulumiAws.capacityProviderMod.CapacityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.capacityProviderMod.CapacityProvider]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CapacityProviderState, opts: CustomResourceOptions): typings.pulumiAws.capacityProviderMod.CapacityProvider = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.capacityProviderMod.CapacityProvider]
     
     /**
       * Returns true if the given object is an instance of CapacityProvider.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs", "CapacityProvider.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/capacityProvider.CapacityProvider */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/capacityProvider.CapacityProvider */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/capacityProvider.CapacityProvider */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ecs", "Cluster")
@@ -88,11 +90,15 @@ object ecsMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ClusterArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ClusterArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Cluster {
+    
+    @JSImport("@pulumi/aws/ecs", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
@@ -103,26 +109,21 @@ object ecsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.ecsClusterMod.Cluster = js.native
-    @JSImport("@pulumi/aws/ecs", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = js.native
-    @JSImport("@pulumi/aws/ecs", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.ecsClusterMod.Cluster = js.native
-    @JSImport("@pulumi/aws/ecs", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.ecsClusterMod.Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecsClusterMod.Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecsClusterMod.Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): typings.pulumiAws.ecsClusterMod.Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecsClusterMod.Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): typings.pulumiAws.ecsClusterMod.Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.ecsClusterMod.Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/cluster.Cluster */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ecs", "Service")
@@ -138,11 +139,15 @@ object ecsMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ServiceArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ServiceArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Service {
+    
+    @JSImport("@pulumi/aws/ecs", "Service")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Service resource's state with the given name, ID, and optional extra
@@ -153,26 +158,21 @@ object ecsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.serviceMod.Service = js.native
-    @JSImport("@pulumi/aws/ecs", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = js.native
-    @JSImport("@pulumi/aws/ecs", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.serviceMod.Service = js.native
-    @JSImport("@pulumi/aws/ecs", "Service.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.serviceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState): typings.pulumiAws.serviceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceMod.Service]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ServiceState, opts: CustomResourceOptions): typings.pulumiAws.serviceMod.Service = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.serviceMod.Service]
     
     /**
       * Returns true if the given object is an instance of Service.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs", "Service.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/service.Service */ Boolean]
   }
   
   @JSImport("@pulumi/aws/ecs", "TaskDefinition")
@@ -192,6 +192,10 @@ object ecsMod {
   /* static members */
   object TaskDefinition {
     
+    @JSImport("@pulumi/aws/ecs", "TaskDefinition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TaskDefinition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -201,53 +205,40 @@ object ecsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ecs", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskDefinitionState): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
-    @JSImport("@pulumi/aws/ecs", "TaskDefinition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.taskDefinitionMod.TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.taskDefinitionMod.TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.taskDefinitionMod.TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskDefinitionState): typings.pulumiAws.taskDefinitionMod.TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.taskDefinitionMod.TaskDefinition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskDefinitionState, opts: CustomResourceOptions): typings.pulumiAws.taskDefinitionMod.TaskDefinition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.taskDefinitionMod.TaskDefinition]
     
     /**
       * Returns true if the given object is an instance of TaskDefinition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ecs", "TaskDefinition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ecs/taskDefinition.TaskDefinition */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/ecs", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/ecs", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
   
-  @JSImport("@pulumi/aws/ecs", "getContainerDefinition")
-  @js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = js.native
-  @JSImport("@pulumi/aws/ecs", "getContainerDefinition")
-  @js.native
-  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = js.native
+  @scala.inline
+  def getContainerDefinition(args: GetContainerDefinitionArgs): js.Promise[GetContainerDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
+  @scala.inline
+  def getContainerDefinition(args: GetContainerDefinitionArgs, opts: InvokeOptions): js.Promise[GetContainerDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainerDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetContainerDefinitionResult]]
   
-  @JSImport("@pulumi/aws/ecs", "getService")
-  @js.native
-  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = js.native
-  @JSImport("@pulumi/aws/ecs", "getService")
-  @js.native
-  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = js.native
+  @scala.inline
+  def getService(args: GetServiceArgs): js.Promise[GetServiceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServiceResult]]
+  @scala.inline
+  def getService(args: GetServiceArgs, opts: InvokeOptions): js.Promise[GetServiceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServiceResult]]
   
-  @JSImport("@pulumi/aws/ecs", "getTaskDefinition")
-  @js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = js.native
-  @JSImport("@pulumi/aws/ecs", "getTaskDefinition")
-  @js.native
-  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = js.native
+  @scala.inline
+  def getTaskDefinition(args: GetTaskDefinitionArgs): js.Promise[GetTaskDefinitionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
+  @scala.inline
+  def getTaskDefinition(args: GetTaskDefinitionArgs, opts: InvokeOptions): js.Promise[GetTaskDefinitionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTaskDefinition")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTaskDefinitionResult]]
 }

@@ -2,23 +2,21 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceRedshift extends StObject {
   
   // name of the database in Redshift Cluster
-  var database: String = js.native
+  var database: String
   
   // field in Redshift source table to monitor for updates
-  var incremental_field: js.UndefOr[String] = js.native
+  var incremental_field: js.UndefOr[String] = js.undefined
   
   // schema which contains the Redshift table
-  var schema: String = js.native
+  var schema: String
   
   // name of Redshift table containing data
-  var table_name: String = js.native
+  var table_name: String
 }
 object SourceRedshift {
   

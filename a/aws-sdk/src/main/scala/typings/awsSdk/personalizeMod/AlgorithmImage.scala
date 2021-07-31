@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlgorithmImage extends StObject {
   
   /**
     * The URI of the Docker container for the algorithm image.
     */
-  var dockerURI: DockerURI = js.native
+  var dockerURI: DockerURI
   
   /**
     * The name of the algorithm image.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object AlgorithmImage {
   

@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServiceHostedMediaConfig extends MediaConfig {
+trait ServiceHostedMediaConfig
+  extends StObject
+     with MediaConfig {
   
   // The list of media to pre-fetch.
-  var preFetchMedia: js.UndefOr[NullableOption[js.Array[MediaInfo]]] = js.native
+  var preFetchMedia: js.UndefOr[NullableOption[js.Array[MediaInfo]]] = js.undefined
 }
 object ServiceHostedMediaConfig {
   

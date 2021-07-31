@@ -2,18 +2,18 @@ package typings.ranjs.mod.dist
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ranjs", "dist.ShiftedLogLogistic")
 @js.native
 class ShiftedLogLogistic ()
-  extends typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.ShiftedLogLogistic] {
+  extends StObject
+     with typings.ranjs.mod._dist.Distribution[typings.ranjs.ranjsStrings.ShiftedLogLogistic] {
   def this(mu: Double) = this()
-  def this(mu: js.UndefOr[scala.Nothing], sigma: Double) = this()
   def this(mu: Double, sigma: Double) = this()
-  def this(mu: js.UndefOr[scala.Nothing], sigma: js.UndefOr[scala.Nothing], xi: Double) = this()
-  def this(mu: js.UndefOr[scala.Nothing], sigma: Double, xi: Double) = this()
-  def this(mu: Double, sigma: js.UndefOr[scala.Nothing], xi: Double) = this()
+  def this(mu: Unit, sigma: Double) = this()
   def this(mu: Double, sigma: Double, xi: Double) = this()
+  def this(mu: Double, sigma: Unit, xi: Double) = this()
+  def this(mu: Unit, sigma: Double, xi: Double) = this()
+  def this(mu: Unit, sigma: Unit, xi: Double) = this()
 }

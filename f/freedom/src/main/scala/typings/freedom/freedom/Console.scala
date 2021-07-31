@@ -2,23 +2,21 @@ package typings.freedom.freedom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Console {
   
-  @js.native
   trait Console extends StObject {
     
-    def debug(source: String, message: String): js.Promise[Unit] = js.native
+    def debug(source: String, message: String): js.Promise[Unit]
     
-    def error(source: String, message: String): js.Promise[Unit] = js.native
+    def error(source: String, message: String): js.Promise[Unit]
     
-    def info(source: String, message: String): js.Promise[Unit] = js.native
+    def info(source: String, message: String): js.Promise[Unit]
     
-    def log(source: String, message: String): js.Promise[Unit] = js.native
+    def log(source: String, message: String): js.Promise[Unit]
     
-    def warn(source: String, message: String): js.Promise[Unit] = js.native
+    def warn(source: String, message: String): js.Promise[Unit]
   }
   object Console {
     

@@ -4,18 +4,16 @@ import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Disabled
 import typings.awsSdkClientS3Browser.awsSdkClientS3BrowserStrings.Enabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSseKmsEncryptedObjectsMod {
   
-  @js.native
   trait SseKmsEncryptedObjects extends StObject {
     
     /**
       * <p>The replication for KMS encrypted S3 objects is disabled if status is not Enabled.</p>
       */
-    var Status: Enabled | Disabled | String = js.native
+    var Status: Enabled | Disabled | String
   }
   object SseKmsEncryptedObjects {
     

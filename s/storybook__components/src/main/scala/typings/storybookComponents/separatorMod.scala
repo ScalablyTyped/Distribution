@@ -7,10 +7,13 @@ import typings.std.HTMLSpanElement
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object separatorMod {
+  
+  @JSImport("@storybook/components/dist/bar/separator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components/dist/bar/separator", "Separator")
   @js.native
@@ -20,14 +23,12 @@ object separatorMod {
     Theme
   ] = js.native
   
-  @JSImport("@storybook/components/dist/bar/separator", "interleaveSeparators")
-  @js.native
-  def interleaveSeparators(list: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def interleaveSeparators(list: js.Array[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interleaveSeparators")(list.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait SeparatorProps extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object SeparatorProps {
     

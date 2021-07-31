@@ -4,24 +4,22 @@ import typings.pubnub.pubnubStrings.channel
 import typings.pubnub.pubnubStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataIdEvent extends StObject {
   
-  var data: Id = js.native
+  var data: Id
   
-  var event: delete = js.native
+  var event: delete
   
-  var `type`: channel = js.native
+  var `type`: channel
 }
 object DataIdEvent {
   
   @scala.inline
-  def apply(data: Id, event: delete, `type`: channel): DataIdEvent = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(data: Id): DataIdEvent = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], event = "delete")
+    __obj.updateDynamic("type")("channel")
     __obj.asInstanceOf[DataIdEvent]
   }
   

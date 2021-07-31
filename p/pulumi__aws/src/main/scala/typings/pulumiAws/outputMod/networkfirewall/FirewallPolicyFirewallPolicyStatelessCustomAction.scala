@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallPolicyFirewallPolicyStatelessCustomAction extends StObject {
   
   /**
     * A configuration block describing the custom action associated with the `actionName`. See Action Definition below for details.
     */
-  var actionDefinition: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition = js.native
+  var actionDefinition: FirewallPolicyFirewallPolicyStatelessCustomActionActionDefinition
   
   /**
     * A friendly name of the custom action.
     */
-  var actionName: String = js.native
+  var actionName: String
 }
 object FirewallPolicyFirewallPolicyStatelessCustomAction {
   

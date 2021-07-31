@@ -2,35 +2,33 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalResultPoi extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var city: String = js.native
+  var city: String
   
-  var detailUrl: String = js.native
+  var detailUrl: String
   
-  var isAccurate: Boolean = js.native
+  var isAccurate: Boolean
   
-  var phoneNumber: String = js.native
+  var phoneNumber: String
   
-  var point: Point = js.native
+  var point: Point
   
-  var postcode: String = js.native
+  var postcode: String
   
-  var province: String = js.native
+  var province: String
   
-  var tags: js.Array[String] = js.native
+  var tags: js.Array[String]
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: PoiType = js.native
+  var `type`: PoiType
   
-  var url: String = js.native
+  var url: String
 }
 object LocalResultPoi {
   

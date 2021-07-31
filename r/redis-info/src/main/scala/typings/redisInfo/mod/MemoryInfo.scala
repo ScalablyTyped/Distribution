@@ -2,75 +2,73 @@ package typings.redisInfo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryInfo extends StObject {
   
-  var active_defrag_running: Flag = js.native
+  var active_defrag_running: Flag
   
-  var allocator_active: String = js.native
+  var allocator_active: String
   
-  var allocator_allocated: String = js.native
+  var allocator_allocated: String
   
-  var allocator_frag_bytes: String = js.native
+  var allocator_frag_bytes: String
   
-  var allocator_frag_ratio: String = js.native
+  var allocator_frag_ratio: String
   
-  var allocator_resident: String = js.native
+  var allocator_resident: String
   
-  var allocator_rss_bytes: String = js.native
+  var allocator_rss_bytes: String
   
-  var allocator_rss_ratio: String = js.native
+  var allocator_rss_ratio: String
   
-  var lazyfree_pending_objects: String = js.native
+  var lazyfree_pending_objects: String
   
-  var maxmemory: String = js.native
+  var maxmemory: String
   
-  var maxmemory_human: String = js.native
+  var maxmemory_human: String
   
-  var maxmemory_policy: String = js.native
+  var maxmemory_policy: String
   
-  var mem_allocator: String = js.native
+  var mem_allocator: String
   
-  var mem_fragmentation_bytes: String = js.native
+  var mem_fragmentation_bytes: String
   
-  var mem_fragmentation_ratio: String = js.native
+  var mem_fragmentation_ratio: String
   
-  var rss_overhead_bytes: String = js.native
+  var rss_overhead_bytes: String
   
-  var rss_overhead_ratio: String = js.native
+  var rss_overhead_ratio: String
   
-  var total_system_memory: String = js.native
+  var total_system_memory: String
   
-  var total_system_memory_human: String = js.native
+  var total_system_memory_human: String
   
-  var used_memory: String = js.native
+  var used_memory: String
   
-  var used_memory_dataset: String = js.native
+  var used_memory_dataset: String
   
-  var used_memory_dataset_perc: String = js.native
+  var used_memory_dataset_perc: String
   
-  var used_memory_human: String = js.native
+  var used_memory_human: String
   
-  var used_memory_lua: String = js.native
+  var used_memory_lua: String
   
-  var used_memory_lua_human: String = js.native
+  var used_memory_lua_human: String
   
-  var used_memory_overhead: String = js.native
+  var used_memory_overhead: String
   
-  var used_memory_peak: String = js.native
+  var used_memory_peak: String
   
-  var used_memory_peak_human: String = js.native
+  var used_memory_peak_human: String
   
-  var used_memory_peak_perc: String = js.native
+  var used_memory_peak_perc: String
   
-  var used_memory_rss: String = js.native
+  var used_memory_rss: String
   
-  var used_memory_rss_human: String = js.native
+  var used_memory_rss_human: String
   
-  var used_memory_startup: String = js.native
+  var used_memory_startup: String
 }
 object MemoryInfo {
   

@@ -5,24 +5,24 @@ import typings.hapi.mod.Server
 import typings.hapi.mod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glue", "compose")
+  @JSImport("glue", JSImport.Namespace)
   @js.native
-  def compose(manifest: Manifest): js.Promise[Server] = js.native
-  @JSImport("glue", "compose")
-  @js.native
-  def compose(manifest: Manifest, options: Options): js.Promise[Server] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def compose(manifest: Manifest): js.Promise[Server] = ^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Server]]
+  @scala.inline
+  def compose(manifest: Manifest, options: Options): js.Promise[Server] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(manifest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Server]]
+  
   trait Manifest extends StObject {
     
-    var register: js.UndefOr[Plugins] = js.native
+    var register: js.UndefOr[Plugins] = js.undefined
     
-    var server: ServerOptions = js.native
+    var server: ServerOptions
   }
   object Manifest {
     
@@ -46,18 +46,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     var preConnections: js.UndefOr[
         js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var preRegister: js.UndefOr[
         js.Function2[/* Server */ Server, /* next */ js.Function1[/* err */ js.Any, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var relativeTo: String = js.native
+    var relativeTo: String
   }
   object Options {
     
@@ -87,14 +86,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Plugin extends StObject {
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var plugin: String | typings.glue.anon.Options = js.native
+    var plugin: String | typings.glue.anon.Options
     
-    var routes: js.UndefOr[js.Any] = js.native
+    var routes: js.UndefOr[js.Any] = js.undefined
   }
   object Plugin {
     

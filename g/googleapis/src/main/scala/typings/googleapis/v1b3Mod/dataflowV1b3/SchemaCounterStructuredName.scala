@@ -2,25 +2,23 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies a counter within a per-job namespace. Counters whose structured
   * names are the same get merged into a single value for the job.
   */
-@js.native
 trait SchemaCounterStructuredName extends StObject {
   
   /**
     * Name of the optimized step being executed by the workers.
     */
-  var componentStepName: js.UndefOr[String] = js.native
+  var componentStepName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the stage. An execution step contains multiple component steps.
     */
-  var executionStepName: js.UndefOr[String] = js.native
+  var executionStepName: js.UndefOr[String] = js.undefined
   
   /**
     * Index of an input collection that&#39;s being read from/written to as a
@@ -29,46 +27,46 @@ trait SchemaCounterStructuredName extends StObject {
     * 3). Side inputs are identified by a pair of (original_step_name,
     * input_index). This field helps uniquely identify them.
     */
-  var inputIndex: js.UndefOr[Double] = js.native
+  var inputIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Counter name. Not necessarily globally-unique, but unique within the
     * context of the other fields. Required.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * One of the standard Origins defined above.
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
   /**
     * A string containing a more specific namespace of the counter&#39;s
     * origin.
     */
-  var originNamespace: js.UndefOr[String] = js.native
+  var originNamespace: js.UndefOr[String] = js.undefined
   
   /**
     * The step name requesting an operation, such as GBK. I.e. the ParDo
     * causing a read/write from shuffle to occur, or a read from side inputs.
     */
-  var originalRequestingStepName: js.UndefOr[String] = js.native
+  var originalRequestingStepName: js.UndefOr[String] = js.undefined
   
   /**
     * System generated name of the original step in the user&#39;s graph,
     * before optimization.
     */
-  var originalStepName: js.UndefOr[String] = js.native
+  var originalStepName: js.UndefOr[String] = js.undefined
   
   /**
     * Portion of this counter, either key or value.
     */
-  var portion: js.UndefOr[String] = js.native
+  var portion: js.UndefOr[String] = js.undefined
   
   /**
     * ID of a particular worker.
     */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object SchemaCounterStructuredName {
   

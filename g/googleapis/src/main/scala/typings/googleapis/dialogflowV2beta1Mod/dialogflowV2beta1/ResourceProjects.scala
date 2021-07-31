@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dialogflow/v2beta1", "dialogflow_v2beta1.Resource$Projects")
@@ -32,7 +31,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getAgent(): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(callback: BodyResponseCallback[SchemaGoogleCloudDialogflowV2beta1Agent]): Unit = js.native
-  def getAgent(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
+  def getAgent(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(params: ParamsResourceProjectsGetagent): GaxiosPromise[SchemaGoogleCloudDialogflowV2beta1Agent] = js.native
   def getAgent(
     params: ParamsResourceProjectsGetagent,

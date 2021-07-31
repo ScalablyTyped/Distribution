@@ -2,13 +2,11 @@ package typings.localforage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalForageDriverMethodsOptional extends StObject {
   
-  var dropInstance: js.UndefOr[LocalForageDropInstanceFn] = js.native
+  var dropInstance: js.UndefOr[LocalForageDropInstanceFn] = js.undefined
 }
 object LocalForageDriverMethodsOptional {
   

@@ -4,88 +4,86 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.BackendNodeId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeTreeSnapshot extends StObject {
   
   /**
     * Attributes of an `Element` node. Flatten name, value pairs.
     */
-  var attributes: js.UndefOr[js.Array[ArrayOfStrings]] = js.native
+  var attributes: js.UndefOr[js.Array[ArrayOfStrings]] = js.undefined
   
   /**
     * `Node`'s id, corresponds to DOM.Node.backendNodeId.
     */
-  var backendNodeId: js.UndefOr[js.Array[BackendNodeId]] = js.native
+  var backendNodeId: js.UndefOr[js.Array[BackendNodeId]] = js.undefined
   
   /**
     * The index of the document in the list of the snapshot documents.
     */
-  var contentDocumentIndex: js.UndefOr[RareIntegerData] = js.native
+  var contentDocumentIndex: js.UndefOr[RareIntegerData] = js.undefined
   
   /**
     * The selected url for nodes with a srcset attribute.
     */
-  var currentSourceURL: js.UndefOr[RareStringData] = js.native
+  var currentSourceURL: js.UndefOr[RareStringData] = js.undefined
   
   /**
     * Only set for radio and checkbox input elements, indicates if the element has been checked
     */
-  var inputChecked: js.UndefOr[RareBooleanData] = js.native
+  var inputChecked: js.UndefOr[RareBooleanData] = js.undefined
   
   /**
     * Only set for input elements, contains the input's associated text value.
     */
-  var inputValue: js.UndefOr[RareStringData] = js.native
+  var inputValue: js.UndefOr[RareStringData] = js.undefined
   
   /**
     * Whether this DOM node responds to mouse clicks. This includes nodes that have had click
     * event listeners attached via JavaScript as well as anchor tags that naturally navigate when
     * clicked.
     */
-  var isClickable: js.UndefOr[RareBooleanData] = js.native
+  var isClickable: js.UndefOr[RareBooleanData] = js.undefined
   
   /**
     * `Node`'s nodeName.
     */
-  var nodeName: js.UndefOr[js.Array[StringIndex]] = js.native
+  var nodeName: js.UndefOr[js.Array[StringIndex]] = js.undefined
   
   /**
     * `Node`'s nodeType.
     */
-  var nodeType: js.UndefOr[js.Array[integer]] = js.native
+  var nodeType: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * `Node`'s nodeValue.
     */
-  var nodeValue: js.UndefOr[js.Array[StringIndex]] = js.native
+  var nodeValue: js.UndefOr[js.Array[StringIndex]] = js.undefined
   
   /**
     * Only set for option elements, indicates if the element has been selected
     */
-  var optionSelected: js.UndefOr[RareBooleanData] = js.native
+  var optionSelected: js.UndefOr[RareBooleanData] = js.undefined
   
   /**
     * The url of the script (if any) that generates this node.
     */
-  var originURL: js.UndefOr[RareStringData] = js.native
+  var originURL: js.UndefOr[RareStringData] = js.undefined
   
   /**
     * Parent node index.
     */
-  var parentIndex: js.UndefOr[js.Array[integer]] = js.native
+  var parentIndex: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * Type of a pseudo element node.
     */
-  var pseudoType: js.UndefOr[RareStringData] = js.native
+  var pseudoType: js.UndefOr[RareStringData] = js.undefined
   
   /**
     * Only set for textarea elements, contains the text value.
     */
-  var textValue: js.UndefOr[RareStringData] = js.native
+  var textValue: js.UndefOr[RareStringData] = js.undefined
 }
 object NodeTreeSnapshot {
   

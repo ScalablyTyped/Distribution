@@ -2,25 +2,23 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metro List Response
   */
-@js.native
 trait SchemaMetrosListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#metrosListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metro collection.
     */
-  var metros: js.UndefOr[js.Array[SchemaMetro]] = js.native
+  var metros: js.UndefOr[js.Array[SchemaMetro]] = js.undefined
 }
 object SchemaMetrosListResponse {
   

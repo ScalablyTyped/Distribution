@@ -4,24 +4,22 @@ import typings.pulumiKubernetes.inputMod.core.v1.SELinuxOptions
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SELinuxStrategyOptions defines the strategy type and any options used to create the strategy.
   */
-@js.native
 trait SELinuxStrategyOptions extends StObject {
   
   /**
     * rule is the strategy that will dictate the allowable labels that may be set.
     */
-  var rule: Input[String] = js.native
+  var rule: Input[String]
   
   /**
     * seLinuxOptions required to run as; required for MustRunAs More info: https://kubernetes.io/docs/tasks/configure-pod-container/security-context/
     */
-  var seLinuxOptions: js.UndefOr[Input[SELinuxOptions]] = js.native
+  var seLinuxOptions: js.UndefOr[Input[SELinuxOptions]] = js.undefined
 }
 object SELinuxStrategyOptions {
   

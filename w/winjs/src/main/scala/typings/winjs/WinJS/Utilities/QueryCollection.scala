@@ -5,14 +5,15 @@ import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the result of a query selector, and provides various operations that perform actions over the elements of the collection.
   **/
 @js.native
-trait QueryCollection[T] extends Array[T] {
+trait QueryCollection[T]
+  extends StObject
+     with Array[T] {
   
   //#region Methods
   /**

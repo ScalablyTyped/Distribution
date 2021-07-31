@@ -2,29 +2,27 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A message describing the state of a particular execution stage.
   */
-@js.native
 trait SchemaExecutionStageState extends StObject {
   
   /**
     * The time at which the stage transitioned to this state.
     */
-  var currentStateTime: js.UndefOr[String] = js.native
+  var currentStateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the execution stage.
     */
-  var executionStageName: js.UndefOr[String] = js.native
+  var executionStageName: js.UndefOr[String] = js.undefined
   
   /**
     * Executions stage states allow the same set of values as JobState.
     */
-  var executionStageState: js.UndefOr[String] = js.native
+  var executionStageState: js.UndefOr[String] = js.undefined
 }
 object SchemaExecutionStageState {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLocalDisksOutput extends StObject {
   
   /**
     * A JSON object containing the following fields:    ListLocalDisksOutput$Disks   
     */
-  var Disks: js.UndefOr[typings.awsSdk.storagegatewayMod.Disks] = js.native
+  var Disks: js.UndefOr[typings.awsSdk.storagegatewayMod.Disks] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
 }
 object ListLocalDisksOutput {
   

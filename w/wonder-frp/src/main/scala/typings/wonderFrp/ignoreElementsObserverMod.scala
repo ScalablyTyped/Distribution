@@ -2,24 +2,27 @@ package typings.wonderFrp
 
 import typings.wonderFrp.iobserverMod.IObserver
 import typings.wonderFrp.observerMod.Observer
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/observer/IgnoreElementsObserver", JSImport.Namespace)
-@js.native
-object ignoreElementsObserverMod extends js.Object {
+object ignoreElementsObserverMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/observer/IgnoreElementsObserver", "IgnoreElementsObserver")
   @js.native
   class IgnoreElementsObserver protected () extends Observer {
     def this(currentObserver: IObserver) = this()
+    
     var _currentObserver: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object IgnoreElementsObserver extends js.Object {
-    def create(currentObserver: IObserver): IgnoreElementsObserver = js.native
+  object IgnoreElementsObserver {
+    
+    @JSImport("wonder-frp/dist/commonjs/observer/IgnoreElementsObserver", "IgnoreElementsObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(currentObserver: IObserver): IgnoreElementsObserver = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any]).asInstanceOf[IgnoreElementsObserver]
   }
-  
 }
-

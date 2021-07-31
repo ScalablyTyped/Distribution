@@ -12,7 +12,7 @@ Single component release of sticky
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 19470 |
+| # downloads        | 9252 |
 | # stars            | 0 |
 
 ## Links

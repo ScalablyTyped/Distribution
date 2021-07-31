@@ -2,66 +2,64 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A notification of one event relating to an enterprise.
   */
-@js.native
 trait SchemaNotification extends StObject {
   
   /**
     * Notifications about new app restrictions schema changes.
     */
-  var appRestrictionsSchemaChangeEvent: js.UndefOr[SchemaAppRestrictionsSchemaChangeEvent] = js.native
+  var appRestrictionsSchemaChangeEvent: js.UndefOr[SchemaAppRestrictionsSchemaChangeEvent] = js.undefined
   
   /**
     * Notifications about app updates.
     */
-  var appUpdateEvent: js.UndefOr[SchemaAppUpdateEvent] = js.native
+  var appUpdateEvent: js.UndefOr[SchemaAppUpdateEvent] = js.undefined
   
   /**
     * The ID of the enterprise for which the notification is sent. This will
     * always be present.
     */
-  var enterpriseId: js.UndefOr[String] = js.native
+  var enterpriseId: js.UndefOr[String] = js.undefined
   
   /**
     * Notifications about an app installation failure.
     */
-  var installFailureEvent: js.UndefOr[SchemaInstallFailureEvent] = js.native
+  var installFailureEvent: js.UndefOr[SchemaInstallFailureEvent] = js.undefined
   
   /**
     * Notifications about new devices.
     */
-  var newDeviceEvent: js.UndefOr[SchemaNewDeviceEvent] = js.native
+  var newDeviceEvent: js.UndefOr[SchemaNewDeviceEvent] = js.undefined
   
   /**
     * Notifications about new app permissions.
     */
-  var newPermissionsEvent: js.UndefOr[SchemaNewPermissionsEvent] = js.native
+  var newPermissionsEvent: js.UndefOr[SchemaNewPermissionsEvent] = js.undefined
   
   /**
     * Type of the notification.
     */
-  var notificationType: js.UndefOr[String] = js.native
+  var notificationType: js.UndefOr[String] = js.undefined
   
   /**
     * Notifications about changes to a product&#39;s approval status.
     */
-  var productApprovalEvent: js.UndefOr[SchemaProductApprovalEvent] = js.native
+  var productApprovalEvent: js.UndefOr[SchemaProductApprovalEvent] = js.undefined
   
   /**
     * Notifications about product availability changes.
     */
-  var productAvailabilityChangeEvent: js.UndefOr[SchemaProductAvailabilityChangeEvent] = js.native
+  var productAvailabilityChangeEvent: js.UndefOr[SchemaProductAvailabilityChangeEvent] = js.undefined
   
   /**
     * The time when the notification was published in milliseconds since
     * 1970-01-01T00:00:00Z. This will always be present.
     */
-  var timestampMillis: js.UndefOr[String] = js.native
+  var timestampMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaNotification {
   

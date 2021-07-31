@@ -6,7 +6,6 @@ import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`196608`
 import typings.activexFaxcomexlib.activexFaxcomexlibNumbers.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line:no-const-enum

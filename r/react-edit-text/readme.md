@@ -10,9 +10,9 @@ Simple editable text component for React
 | ------------------ | :-------------: |
 | Full name          | react-edit-text |
 | Keywords           | react, edit, text, react-edit-text, editable, input, textbox |
-| # releases         | 8 |
+| # releases         | 11 |
 | # dependents       | 0 |
-| # downloads        | 525 |
+| # downloads        | 1686 |
 | # stars            | 0 |
 
 ## Links

@@ -3,39 +3,37 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FlexPersistentVolumeSource represents a generic persistent volume resource that is provisioned/attached using an exec based plugin.
   */
-@js.native
 trait FlexPersistentVolumeSource extends StObject {
   
   /**
     * Driver is the name of the driver to use for this volume.
     */
-  var driver: String = js.native
+  var driver: String
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". The default filesystem depends on FlexVolume script.
     */
-  var fsType: String = js.native
+  var fsType: String
   
   /**
     * Optional: Extra command options if any.
     */
-  var options: StringDictionary[String] = js.native
+  var options: StringDictionary[String]
   
   /**
     * Optional: Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * Optional: SecretRef is reference to the secret object containing sensitive information to pass to the plugin scripts. This may be empty if no secret object is specified. If the secret object contains more than one secret, all secrets are passed to the plugin scripts.
     */
-  var secretRef: SecretReference = js.native
+  var secretRef: SecretReference
 }
 object FlexPersistentVolumeSource {
   

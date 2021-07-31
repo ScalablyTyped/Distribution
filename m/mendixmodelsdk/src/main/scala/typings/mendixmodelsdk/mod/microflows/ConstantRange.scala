@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "microflows.ConstantRange")
@@ -37,9 +36,8 @@ object ConstantRange {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ConstantRange.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange]
   
   /**
     * Creates and returns a new ConstantRange instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object ConstantRange {
     * of the parent DatabaseRetrieveSource element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ConstantRange.createInDatabaseRetrieveSourceUnderRange")
-  @js.native
-  def createInDatabaseRetrieveSourceUnderRange(container: typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = js.native
+  @scala.inline
+  def createInDatabaseRetrieveSourceUnderRange(container: typings.mendixmodelsdk.microflowsMod.microflows.DatabaseRetrieveSource): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDatabaseRetrieveSourceUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange]
   
   /**
     * Creates and returns a new ConstantRange instance in the SDK and on the server.
@@ -57,9 +54,8 @@ object ConstantRange {
     * of the parent ImportMappingCall element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ConstantRange.createInImportMappingCallUnderRange")
-  @js.native
-  def createInImportMappingCallUnderRange(container: typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = js.native
+  @scala.inline
+  def createInImportMappingCallUnderRange(container: typings.mendixmodelsdk.microflowsMod.microflows.ImportMappingCall): typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportMappingCallUnderRange")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ConstantRange]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ConstantRange.structureTypeName")

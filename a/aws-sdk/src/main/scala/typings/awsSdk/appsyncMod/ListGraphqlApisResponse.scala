@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGraphqlApisResponse extends StObject {
   
   /**
     * The GraphqlApi objects.
     */
-  var graphqlApis: js.UndefOr[GraphqlApis] = js.native
+  var graphqlApis: js.UndefOr[GraphqlApis] = js.undefined
   
   /**
     * An identifier to be passed in the next request to this operation to return the next set of items in the list.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListGraphqlApisResponse {
   

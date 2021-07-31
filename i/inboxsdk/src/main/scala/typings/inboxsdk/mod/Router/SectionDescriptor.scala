@@ -3,31 +3,29 @@ package typings.inboxsdk.mod.Router
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SectionDescriptor extends StObject {
   
-  var contentElement: js.UndefOr[HTMLElement] = js.native
+  var contentElement: js.UndefOr[HTMLElement] = js.undefined
   
-  var footerLinkText: js.UndefOr[String] = js.native
+  var footerLinkText: js.UndefOr[String] = js.undefined
   
-  var hasDropdown: js.UndefOr[Boolean] = js.native
+  var hasDropdown: js.UndefOr[Boolean] = js.undefined
   
-  var onDropdownClick: js.UndefOr[js.Function1[/* event */ SectionDropdownClickEvent, Unit]] = js.native
+  var onDropdownClick: js.UndefOr[js.Function1[/* event */ SectionDropdownClickEvent, Unit]] = js.undefined
   
-  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+  var onFooterLinkClick: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
   
-  var onTitleLinkClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTitleLinkClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var tableRows: js.UndefOr[js.Array[RowDescriptor]] = js.native
+  var tableRows: js.UndefOr[js.Array[RowDescriptor]] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var titleLinkText: js.UndefOr[String] = js.native
+  var titleLinkText: js.UndefOr[String] = js.undefined
 }
 object SectionDescriptor {
   

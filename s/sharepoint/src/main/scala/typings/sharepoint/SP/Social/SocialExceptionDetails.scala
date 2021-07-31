@@ -5,23 +5,23 @@ import typings.sharepoint.SP.SerializationContext
 import typings.sharepoint.SP.XmlWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies information about errors that the server has encountered. */
-@js.native
-trait SocialExceptionDetails extends ClientValueObject {
+trait SocialExceptionDetails
+  extends StObject
+     with ClientValueObject {
   
-  def get_internalErrorCode(): Double = js.native
+  def get_internalErrorCode(): Double
   
-  def get_internalMessage(): String = js.native
+  def get_internalMessage(): String
   
-  def get_internalStackTrace(): String = js.native
+  def get_internalStackTrace(): String
   
   /** Specifies a type name associated with the internal error if a type name is available. */
-  def get_internalTypeName(): String = js.native
+  def get_internalTypeName(): String
   
-  def get_status(): SocialStatusCode = js.native
+  def get_status(): SocialStatusCode
 }
 object SocialExceptionDetails {
   

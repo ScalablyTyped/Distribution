@@ -3,22 +3,20 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmiEphemeralBlockDevice extends StObject {
   
   /**
     * The path at which the device is exposed to created instances.
     */
-  var deviceName: Input[String] = js.native
+  var deviceName: Input[String]
   
   /**
     * A name for the ephemeral device, of the form "ephemeralN" where
     * *N* is a volume number starting from zero.
     */
-  var virtualName: Input[String] = js.native
+  var virtualName: Input[String]
 }
 object AmiEphemeralBlockDevice {
   

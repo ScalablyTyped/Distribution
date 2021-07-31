@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tagmanager/v2", "tagmanager_v2.Resource$Accounts$Containers$Workspaces$Triggers")
@@ -31,7 +30,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def create(): GaxiosPromise[SchemaTrigger] = js.native
   def create(callback: BodyResponseCallback[SchemaTrigger]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
   def create(params: ParamsResourceAccountsContainersWorkspacesTriggersCreate): GaxiosPromise[SchemaTrigger] = js.native
   def create(
     params: ParamsResourceAccountsContainersWorkspacesTriggersCreate,
@@ -63,7 +62,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceAccountsContainersWorkspacesTriggersDelete): GaxiosPromise[Unit] = js.native
   def delete(
     params: ParamsResourceAccountsContainersWorkspacesTriggersDelete,
@@ -95,7 +94,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def get(): GaxiosPromise[SchemaTrigger] = js.native
   def get(callback: BodyResponseCallback[SchemaTrigger]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
   def get(params: ParamsResourceAccountsContainersWorkspacesTriggersGet): GaxiosPromise[SchemaTrigger] = js.native
   def get(
     params: ParamsResourceAccountsContainersWorkspacesTriggersGet,
@@ -128,7 +127,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def list(): GaxiosPromise[SchemaListTriggersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListTriggersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListTriggersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListTriggersResponse] = js.native
   def list(params: ParamsResourceAccountsContainersWorkspacesTriggersList): GaxiosPromise[SchemaListTriggersResponse] = js.native
   def list(
     params: ParamsResourceAccountsContainersWorkspacesTriggersList,
@@ -161,7 +160,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def revert(): GaxiosPromise[SchemaRevertTriggerResponse] = js.native
   def revert(callback: BodyResponseCallback[SchemaRevertTriggerResponse]): Unit = js.native
-  def revert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRevertTriggerResponse] = js.native
+  def revert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRevertTriggerResponse] = js.native
   def revert(params: ParamsResourceAccountsContainersWorkspacesTriggersRevert): GaxiosPromise[SchemaRevertTriggerResponse] = js.native
   def revert(
     params: ParamsResourceAccountsContainersWorkspacesTriggersRevert,
@@ -195,7 +194,7 @@ class ResourceAccountsContainersWorkspacesTriggers protected () extends StObject
     */
   def update(): GaxiosPromise[SchemaTrigger] = js.native
   def update(callback: BodyResponseCallback[SchemaTrigger]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrigger] = js.native
   def update(params: ParamsResourceAccountsContainersWorkspacesTriggersUpdate): GaxiosPromise[SchemaTrigger] = js.native
   def update(
     params: ParamsResourceAccountsContainersWorkspacesTriggersUpdate,

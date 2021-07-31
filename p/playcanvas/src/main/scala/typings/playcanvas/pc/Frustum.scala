@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @example
   * var frustum = new pc.Frustum();
   */
-@js.native
 trait Frustum extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Frustum extends StObject {
     * @param point - The point to test.
     * @returns True if the point is inside the frustum, false otherwise.
     */
-  def containsPoint(point: Vec3): Boolean = js.native
+  def containsPoint(point: Vec3): Boolean
   
   /**
     * Tests whether a bounding sphere intersects the frustum. If the sphere is outside the frustum,
@@ -30,7 +28,7 @@ trait Frustum extends StObject {
     * @returns 0 if the bounding sphere is outside the frustum, 1 if it intersects the frustum and 2 if
     * it is contained by the frustum.
     */
-  def containsSphere(sphere: BoundingSphere): Double = js.native
+  def containsSphere(sphere: BoundingSphere): Double
   
   /**
     * Updates the frustum shape based on the supplied 4x4 matrix.
@@ -44,7 +42,7 @@ trait Frustum extends StObject {
     * frustum.setFromMat4(projMat);
     * @param matrix - The matrix describing the shape of the frustum.
     */
-  def setFromMat4(matrix: Mat4): Unit = js.native
+  def setFromMat4(matrix: Mat4): Unit
 }
 object Frustum {
   

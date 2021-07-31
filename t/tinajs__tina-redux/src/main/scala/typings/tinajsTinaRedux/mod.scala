@@ -6,25 +6,25 @@ import typings.redux.mod.Dispatch
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@tinajs/tina-redux", JSImport.Namespace)
   @js.native
-  class ^[S, A /* <: Action[_] */] protected () extends TinaRedux[S, A] {
+  class ^[S, A /* <: Action[js.Any] */] protected ()
+    extends StObject
+       with TinaRedux[S, A] {
     def this(reduxStore: Store[S, A]) = this()
   }
   
-  @js.native
   trait HOC extends StObject {
     
-    var methods: js.Object = js.native
+    var methods: js.Object
     
-    def onLoad(): Unit = js.native
+    def onLoad(): Unit
     
-    def onUnload(): Unit = js.native
+    def onUnload(): Unit
   }
   object HOC {
     
@@ -51,10 +51,10 @@ object mod {
   type MapStateToProps = js.Function1[/* state */ js.Any, js.Any]
   
   @js.native
-  trait TinaRedux[S, A /* <: Action[_] */] extends StObject {
+  trait TinaRedux[S, A /* <: Action[js.Any] */] extends StObject {
     
     def connect(): HOC = js.native
-    def connect(mapState: js.UndefOr[scala.Nothing], mapDispatch: mapDispatchToProps): HOC = js.native
+    def connect(mapState: Unit, mapDispatch: mapDispatchToProps): HOC = js.native
     def connect(mapState: MapStateToProps): HOC = js.native
     def connect(mapState: MapStateToProps, mapDispatch: mapDispatchToProps): HOC = js.native
   }

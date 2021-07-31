@@ -8,50 +8,43 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("rc-menu/es/util", "getKeyFromChildrenIndex")
+  @JSImport("rc-menu/es/util", JSImport.Namespace)
   @js.native
-  def getKeyFromChildrenIndex(child: ReactElement, menuEventKey: Key, index: Double): Key = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-menu/es/util", "getMenuIdFromSubMenuEventKey")
-  @js.native
-  def getMenuIdFromSubMenuEventKey(eventKey: String): Key = js.native
+  @scala.inline
+  def getKeyFromChildrenIndex(child: ReactElement, menuEventKey: Key, index: Double): Key = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyFromChildrenIndex")(child.asInstanceOf[js.Any], menuEventKey.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Key]
   
-  @JSImport("rc-menu/es/util", "getWidth")
-  @js.native
-  def getWidth(elem: HTMLElement): Double = js.native
-  @JSImport("rc-menu/es/util", "getWidth")
-  @js.native
-  def getWidth(elem: HTMLElement, includeMargin: Boolean): Double = js.native
+  @scala.inline
+  def getMenuIdFromSubMenuEventKey(eventKey: String): Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuIdFromSubMenuEventKey")(eventKey.asInstanceOf[js.Any]).asInstanceOf[Key]
   
-  @JSImport("rc-menu/es/util", "isMobileDevice")
-  @js.native
-  def isMobileDevice(): Boolean = js.native
+  @scala.inline
+  def getWidth(elem: HTMLElement): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWidth")(elem.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getWidth(elem: HTMLElement, includeMargin: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWidth")(elem.asInstanceOf[js.Any], includeMargin.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("rc-menu/es/util", "loopMenuItem")
-  @js.native
-  def loopMenuItem(children: ReactNode, cb: js.Function2[/* node */ ReactElement, /* index */ Double, Unit]): Unit = js.native
+  @scala.inline
+  def isMobileDevice(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobileDevice")().asInstanceOf[Boolean]
   
-  @JSImport("rc-menu/es/util", "loopMenuItemRecursively")
-  @js.native
-  def loopMenuItemRecursively(children: ReactNode, keys: js.Array[String], ret: Find): Unit = js.native
+  @scala.inline
+  def loopMenuItem(children: ReactNode, cb: js.Function2[/* node */ ReactElement, /* index */ Double, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loopMenuItem")(children.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def loopMenuItemRecursively(children: ReactNode, keys: js.Array[String], ret: Find): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loopMenuItemRecursively")(children.asInstanceOf[js.Any], keys.asInstanceOf[js.Any], ret.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("rc-menu/es/util", "menuAllProps")
   @js.native
   val menuAllProps: js.Array[String] = js.native
   
-  @JSImport("rc-menu/es/util", "noop")
-  @js.native
-  def noop(): Unit = js.native
+  @scala.inline
+  def noop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("noop")().asInstanceOf[Unit]
   
-  @JSImport("rc-menu/es/util", "setStyle")
-  @js.native
-  def setStyle_hack(elem: HTMLElement, styleProperty: hack, value: String): Unit = js.native
-  @JSImport("rc-menu/es/util", "setStyle")
-  @js.native
-  def setStyle_hack(elem: HTMLElement, styleProperty: hack, value: Double): Unit = js.native
+  @scala.inline
+  def setStyle_hack(elem: HTMLElement, styleProperty: hack, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styleProperty.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setStyle_hack(elem: HTMLElement, styleProperty: hack, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyle")(elem.asInstanceOf[js.Any], styleProperty.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyRange extends StObject {
   
   /**
     * The key that starts an optional key range for an export job. Ranges are inclusive and UTF-8 binary sorted.
     */
-  var BeginMarker: js.UndefOr[String] = js.native
+  var BeginMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The key that ends an optional key range for an export job. Ranges are inclusive and UTF-8 binary sorted.
     */
-  var EndMarker: js.UndefOr[String] = js.native
+  var EndMarker: js.UndefOr[String] = js.undefined
 }
 object KeyRange {
   

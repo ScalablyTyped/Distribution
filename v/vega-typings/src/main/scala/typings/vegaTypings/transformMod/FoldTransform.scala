@@ -5,24 +5,24 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.fold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FoldTransform extends _Transforms {
+trait FoldTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var fields: js.Array[FieldRef] | SignalRef = js.native
+  var fields: js.Array[FieldRef] | SignalRef
   
-  var `type`: fold = js.native
+  var `type`: fold
 }
 object FoldTransform {
   
   @scala.inline
-  def apply(fields: js.Array[FieldRef] | SignalRef, `type`: fold): FoldTransform = {
+  def apply(fields: js.Array[FieldRef] | SignalRef): FoldTransform = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fold")
     __obj.asInstanceOf[FoldTransform]
   }
   

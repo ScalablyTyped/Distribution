@@ -2,27 +2,25 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveSynonymsOptions extends StObject {
   
   /**
     * If the existing synonyms should be removed.
     */
-  val clearExistingSynonyms: js.UndefOr[Boolean] = js.native
+  val clearExistingSynonyms: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the saved synonyms should be forward to replicas.
     */
-  val forwardToReplicas: js.UndefOr[Boolean] = js.native
+  val forwardToReplicas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the existing synonyms should be removed.
     * @deprecated use clearExistingSynonyms
     */
-  val replaceExistingSynonyms: js.UndefOr[Boolean] = js.native
+  val replaceExistingSynonyms: js.UndefOr[Boolean] = js.undefined
 }
 object SaveSynonymsOptions {
   

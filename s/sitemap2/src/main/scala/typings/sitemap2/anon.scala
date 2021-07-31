@@ -2,21 +2,19 @@ package typings.sitemap2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Contentloc extends StObject {
     
-    var content_loc: String = js.native
+    var content_loc: String
     
-    var description: String = js.native
+    var description: String
     
-    var thumbnail_loc: String = js.native
+    var thumbnail_loc: String
     
-    var title: String = js.native
+    var title: String
   }
   object Contentloc {
     

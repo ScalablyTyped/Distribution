@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalDeviceModel extends StObject {
   
   /** The firmware version of the device. */
-  var firmwareVersion: js.UndefOr[String] = js.native
+  var firmwareVersion: js.UndefOr[String] = js.undefined
   
   /** The hardware version of the device. */
-  var hardwareVersion: js.UndefOr[String] = js.native
+  var hardwareVersion: js.UndefOr[String] = js.undefined
   
   /** The name of the device model. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The software version of the device. */
-  var softwareVersion: js.UndefOr[String] = js.native
+  var softwareVersion: js.UndefOr[String] = js.undefined
   
   /** The name of the device vendor. */
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object SasPortalDeviceModel {
   

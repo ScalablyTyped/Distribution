@@ -6,7 +6,6 @@ import typings.synaptic.mod.Neuron.SquashingFunction
 import typings.synaptic.mod.Trainer.CostFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Need this to refer to Synaptic from within the `declare global`
@@ -99,10 +98,13 @@ object global {
       extends typings.synaptic.mod.Layer.LayerConnection
     object LayerConnection {
       
-      /* static member */
-      @JSGlobal("Layer.LayerConnection.uid")
+      @JSGlobal("Layer.LayerConnection")
       @js.native
-      def uid(): Double = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /**
@@ -115,10 +117,13 @@ object global {
     /* was `typeof LayerConnection` */
     object connection {
       
-      /* static member */
-      @JSGlobal("Layer.connection.uid")
+      @JSGlobal("Layer.connection")
       @js.native
-      def uid(): Double = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /**
@@ -129,13 +134,13 @@ object global {
     object connectionType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.synaptic.mod.Layer.connectionType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.synaptic.mod.Layer.connectionType & Double] = js.native
       
-      /* 0 */ val ALL_TO_ALL: typings.synaptic.mod.Layer.connectionType.ALL_TO_ALL with Double = js.native
+      /* 0 */ val ALL_TO_ALL: typings.synaptic.mod.Layer.connectionType.ALL_TO_ALL & Double = js.native
       
-      /* 2 */ val ALL_TO_ELSE: typings.synaptic.mod.Layer.connectionType.ALL_TO_ELSE with Double = js.native
+      /* 2 */ val ALL_TO_ELSE: typings.synaptic.mod.Layer.connectionType.ALL_TO_ELSE & Double = js.native
       
-      /* 1 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.connectionType.ONE_TO_ONE with Double = js.native
+      /* 1 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.connectionType.ONE_TO_ONE & Double = js.native
     }
     
     /**
@@ -146,13 +151,13 @@ object global {
     object gateType extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.synaptic.mod.Layer.gateType with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.synaptic.mod.Layer.gateType & Double] = js.native
       
-      /* 0 */ val INPUT: typings.synaptic.mod.Layer.gateType.INPUT with Double = js.native
+      /* 0 */ val INPUT: typings.synaptic.mod.Layer.gateType.INPUT & Double = js.native
       
-      /* 2 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.gateType.ONE_TO_ONE with Double = js.native
+      /* 2 */ val ONE_TO_ONE: typings.synaptic.mod.Layer.gateType.ONE_TO_ONE & Double = js.native
       
-      /* 1 */ val OUTPUT: typings.synaptic.mod.Layer.gateType.OUTPUT with Double = js.native
+      /* 1 */ val OUTPUT: typings.synaptic.mod.Layer.gateType.OUTPUT & Double = js.native
     }
   }
   
@@ -170,20 +175,22 @@ object global {
   /* was `typeof Synaptic.Network` */
   object Network {
     
+    @JSGlobal("Network")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Rebuild a network that has been stored in a json using the method toJSON().
       */
-    @JSGlobal("Network.fromJSON")
-    @js.native
-    def fromJSON(exported: js.Any): typings.synaptic.mod.Network = js.native
+    @scala.inline
+    def fromJSON(exported: js.Any): typings.synaptic.mod.Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[typings.synaptic.mod.Network]
     
     /**
       * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
       * @returns Source code that can train a network inside a worker.
       */
-    @JSGlobal("Network.getWorkerSharedFunctions")
-    @js.native
-    def getWorkerSharedFunctions(): String = js.native
+    @scala.inline
+    def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
   }
   
   /* was `typeof Synaptic.Neuron` */
@@ -198,6 +205,10 @@ object global {
   /* was `typeof Synaptic.Neuron` */
   object Neuron {
     
+    @JSGlobal("Neuron")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSGlobal("Neuron.Connection")
     @js.native
     class Connection_ protected ()
@@ -207,10 +218,13 @@ object global {
     }
     object Connection_ {
       
-      /* static member */
-      @JSGlobal("Neuron.Connection.uid")
+      @JSGlobal("Neuron.Connection")
       @js.native
-      def uid(): Double = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
     /* was `typeof Connection` */
@@ -223,15 +237,17 @@ object global {
     /* was `typeof Connection` */
     object connection {
       
-      /* static member */
-      @JSGlobal("Neuron.connection.uid")
+      @JSGlobal("Neuron.connection")
       @js.native
-      def uid(): Double = js.native
+      val ^ : js.Any = js.native
+      
+      /* static member */
+      @scala.inline
+      def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
     }
     
-    @JSGlobal("Neuron.quantity")
-    @js.native
-    def quantity(): Connections = js.native
+    @scala.inline
+    def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
     
     object squash {
       
@@ -256,9 +272,8 @@ object global {
       val TANH: SquashingFunction = js.native
     }
     
-    @JSGlobal("Neuron.uid")
-    @js.native
-    def uid(): Double = js.native
+    @scala.inline
+    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /* was `typeof Synaptic.Trainer` */

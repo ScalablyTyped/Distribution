@@ -2,19 +2,17 @@ package typings.fuzzaldrinPlus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TagClass extends StObject {
     
-    var tagClass: js.UndefOr[String] = js.native
+    var tagClass: js.UndefOr[String] = js.undefined
     
-    var tagClose: js.UndefOr[String] = js.native
+    var tagClose: js.UndefOr[String] = js.undefined
     
-    var tagOpen: js.UndefOr[String] = js.native
+    var tagOpen: js.UndefOr[String] = js.undefined
   }
   object TagClass {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAssetResponse extends StObject {
   
   /**
     * The ARN of the asset, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId} 
     */
-  var assetArn: ARN = js.native
+  var assetArn: ARN
   
   /**
     * The ID of the asset. This ID uniquely identifies the asset within AWS IoT SiteWise and can be used with other AWS IoT SiteWise APIs.
     */
-  var assetId: ID = js.native
+  var assetId: ID
   
   /**
     * The status of the asset, which contains a state (CREATING after successfully calling this operation) and any error message.
     */
-  var assetStatus: AssetStatus = js.native
+  var assetStatus: AssetStatus
 }
 object CreateAssetResponse {
   

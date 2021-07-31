@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,14 +23,13 @@ object mod extends Shortcut {
   
   type DetectPortCallback = js.Function2[/* err */ Error, /* _port */ Double, Unit]
   
-  @js.native
   trait PortConfig extends StObject {
     
-    var callback: js.UndefOr[DetectPortCallback] = js.native
+    var callback: js.UndefOr[DetectPortCallback] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
   }
   object PortConfig {
     

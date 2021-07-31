@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceSpec extends StObject {
   
   /**
     * The instance type that the image version runs on.
     */
-  var InstanceType: js.UndefOr[AppInstanceType] = js.native
+  var InstanceType: js.UndefOr[AppInstanceType] = js.undefined
   
   /**
     * The ARN of the SageMaker image that the image version belongs to.
     */
-  var SageMakerImageArn: js.UndefOr[ImageArn] = js.native
+  var SageMakerImageArn: js.UndefOr[ImageArn] = js.undefined
   
   /**
     * The ARN of the image version created on the instance.
     */
-  var SageMakerImageVersionArn: js.UndefOr[ImageVersionArn] = js.native
+  var SageMakerImageVersionArn: js.UndefOr[ImageVersionArn] = js.undefined
 }
 object ResourceSpec {
   

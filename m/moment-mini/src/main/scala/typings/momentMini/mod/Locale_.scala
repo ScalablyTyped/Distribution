@@ -3,17 +3,19 @@ package typings.momentMini.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Locale_ extends StObject {
   
   def calendar(): String = js.native
-  def calendar(key: js.UndefOr[CalendarKey], m: js.UndefOr[scala.Nothing], now: Moment): String = js.native
-  def calendar(key: js.UndefOr[CalendarKey], m: Moment): String = js.native
-  def calendar(key: js.UndefOr[CalendarKey], m: Moment, now: Moment): String = js.native
+  def calendar(key: Unit, m: Unit, now: Moment): String = js.native
+  def calendar(key: Unit, m: Moment): String = js.native
+  def calendar(key: Unit, m: Moment, now: Moment): String = js.native
   def calendar(key: CalendarKey): String = js.native
+  def calendar(key: CalendarKey, m: Unit, now: Moment): String = js.native
+  def calendar(key: CalendarKey, m: Moment): String = js.native
+  def calendar(key: CalendarKey, m: Moment, now: Moment): String = js.native
   
   def firstDayOfWeek(): Double = js.native
   

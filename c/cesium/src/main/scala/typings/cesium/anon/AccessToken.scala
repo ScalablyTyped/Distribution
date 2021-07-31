@@ -3,15 +3,13 @@ package typings.cesium.anon
 import typings.cesium.mod.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessToken extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var server: String | Resource = js.native
+  var server: String | Resource
 }
 object AccessToken {
   

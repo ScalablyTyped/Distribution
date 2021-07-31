@@ -3,13 +3,11 @@ package typings.reactNavigation.anon
 import typings.reactNavigation.mod.NavigationScreenComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetScreen[Options, NavigationScreenPropType] extends StObject {
   
-  def getScreen(): NavigationScreenComponent[Options, NavigationScreenPropType] = js.native
+  def getScreen(): NavigationScreenComponent[Options, NavigationScreenPropType]
 }
 object GetScreen {
   
@@ -20,7 +18,7 @@ object GetScreen {
   }
   
   @scala.inline
-  implicit class GetScreenMutableBuilder[Self <: GetScreen[_, _], Options, NavigationScreenPropType] (val x: Self with (GetScreen[Options, NavigationScreenPropType])) extends AnyVal {
+  implicit class GetScreenMutableBuilder[Self <: GetScreen[?, ?], Options, NavigationScreenPropType] (val x: Self & (GetScreen[Options, NavigationScreenPropType])) extends AnyVal {
     
     @scala.inline
     def setGetScreen(value: () => NavigationScreenComponent[Options, NavigationScreenPropType]): Self = StObject.set(x, "getScreen", js.Any.fromFunction0(value))

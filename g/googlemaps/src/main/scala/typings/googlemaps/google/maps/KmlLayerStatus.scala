@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,29 +11,47 @@ sealed trait KmlLayerStatus extends StObject
 object KmlLayerStatus extends StObject {
   
   @js.native
-  sealed trait DOCUMENT_NOT_FOUND extends KmlLayerStatus
+  sealed trait DOCUMENT_NOT_FOUND
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait DOCUMENT_TOO_LARGE extends KmlLayerStatus
+  sealed trait DOCUMENT_TOO_LARGE
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait FETCH_ERROR extends KmlLayerStatus
+  sealed trait FETCH_ERROR
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait INVALID_DOCUMENT extends KmlLayerStatus
+  sealed trait INVALID_DOCUMENT
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait INVALID_REQUEST extends KmlLayerStatus
+  sealed trait INVALID_REQUEST
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait LIMITS_EXCEEDED extends KmlLayerStatus
+  sealed trait LIMITS_EXCEEDED
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait OK extends KmlLayerStatus
+  sealed trait OK
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait TIMED_OUT extends KmlLayerStatus
+  sealed trait TIMED_OUT
+    extends StObject
+       with KmlLayerStatus
   
   @js.native
-  sealed trait UNKNOWN extends KmlLayerStatus
+  sealed trait UNKNOWN
+    extends StObject
+       with KmlLayerStatus
 }

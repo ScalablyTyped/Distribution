@@ -5,7 +5,6 @@ import typings.reactFns.anon.PartialWindowSizeConfig
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object windowSizeWindowSizeMod {
@@ -13,13 +12,13 @@ object windowSizeWindowSizeMod {
   @JSImport("react-fns/dist/WindowSize/WindowSize", "WindowSize")
   @js.native
   class WindowSize protected ()
-    extends Component[WindowSizeConfig with SharedRenderProps[WindowSizeProps], WindowSizeProps, js.Any] {
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps]) = this()
+    extends Component[WindowSizeConfig & SharedRenderProps[WindowSizeProps], WindowSizeProps, js.Any] {
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: WindowSizeConfig with SharedRenderProps[WindowSizeProps], context: js.Any) = this()
+    def this(props: WindowSizeConfig & SharedRenderProps[WindowSizeProps], context: js.Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MWindowSize(): Unit = js.native
@@ -43,10 +42,9 @@ object windowSizeWindowSizeMod {
     def defaultProps_=(x: PartialWindowSizeConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait WindowSizeConfig extends StObject {
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object WindowSizeConfig {
     
@@ -67,12 +65,11 @@ object windowSizeWindowSizeMod {
     }
   }
   
-  @js.native
   trait WindowSizeProps extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object WindowSizeProps {
     

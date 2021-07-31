@@ -4,17 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.tannin.mod.TanninDomainMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[TanninDomainMetadata | (js.Tuple2[String, String])] {
+    extends StObject
+       with /* key */ StringDictionary[TanninDomainMetadata | (js.Tuple2[String, String])] {
     
     @JSName("")
-    var _empty: TanninDomainMetadata | (js.Tuple2[String, String]) = js.native
+    var _empty: TanninDomainMetadata | (js.Tuple2[String, String])
   }
   object Dictkey {
     

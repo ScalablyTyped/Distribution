@@ -8,7 +8,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a ValidationError. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ValidationError.
   * @param [properties] Properties to set
   */
-class ValidationError () extends IValidationError {
+class ValidationError ()
+  extends StObject
+     with IValidationError {
   def this(properties: IValidationError) = this()
   
   /** ValidationError entries. */
@@ -41,6 +42,10 @@ class ValidationError () extends IValidationError {
 }
 object ValidationError {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait Severity extends StObject
   /** Severity enum. */
@@ -49,27 +54,37 @@ object ValidationError {
   object Severity extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Severity with Double] = js.native
+    def apply(value: Double): js.UndefOr[Severity & Double] = js.native
     
     @js.native
-    sealed trait CRITICAL extends Severity
-    /* 4 */ val CRITICAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.CRITICAL with Double = js.native
+    sealed trait CRITICAL
+      extends StObject
+         with Severity
+    /* 4 */ val CRITICAL: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.CRITICAL & Double = js.native
     
     @js.native
-    sealed trait ERROR extends Severity
-    /* 3 */ val ERROR: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with Severity
+    /* 3 */ val ERROR: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.ERROR & Double = js.native
     
     @js.native
-    sealed trait INFO extends Severity
-    /* 1 */ val INFO: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with Severity
+    /* 1 */ val INFO: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.INFO & Double = js.native
     
     @js.native
-    sealed trait SEVERITY_UNSPECIFIED extends Severity
-    /* 0 */ val SEVERITY_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.SEVERITY_UNSPECIFIED with Double = js.native
+    sealed trait SEVERITY_UNSPECIFIED
+      extends StObject
+         with Severity
+    /* 0 */ val SEVERITY_UNSPECIFIED: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.SEVERITY_UNSPECIFIED & Double = js.native
     
     @js.native
-    sealed trait WARNING extends Severity
-    /* 2 */ val WARNING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.WARNING with Double = js.native
+    sealed trait WARNING
+      extends StObject
+         with Severity
+    /* 2 */ val WARNING: typings.dialogflow.mod.google.cloud.dialogflow.v2beta1.ValidationError.Severity.WARNING & Double = js.native
   }
   
   /**
@@ -78,12 +93,10 @@ object ValidationError {
     * @returns ValidationError instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.create")
-  @js.native
-  def create(): ValidationError = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.create")
-  @js.native
-  def create(properties: IValidationError): ValidationError = js.native
+  @scala.inline
+  def create(): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ValidationError]
+  @scala.inline
+  def create(properties: IValidationError): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
   
   /**
     * Decodes a ValidationError message from the specified reader or buffer.
@@ -94,18 +107,14 @@ object ValidationError {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decode")
-  @js.native
-  def decode(reader: Reader): ValidationError = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ValidationError = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decode")
-  @js.native
-  def decode(reader: Uint8Array): ValidationError = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ValidationError = js.native
+  @scala.inline
+  def decode(reader: Reader): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValidationError]
+  @scala.inline
+  def decode(reader: Uint8Array): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ValidationError = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ValidationError]
   
   /**
     * Decodes a ValidationError message from the specified reader or buffer, length delimited.
@@ -115,12 +124,10 @@ object ValidationError {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ValidationError = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ValidationError = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
   
   /**
     * Encodes the specified ValidationError message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ValidationError.verify|verify} messages.
@@ -129,12 +136,10 @@ object ValidationError {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.encode")
-  @js.native
-  def encode(message: IValidationError): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.encode")
-  @js.native
-  def encode(message: IValidationError, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IValidationError): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IValidationError, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ValidationError message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.ValidationError.verify|verify} messages.
@@ -143,12 +148,10 @@ object ValidationError {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValidationError): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IValidationError, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IValidationError): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IValidationError, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ValidationError message from a plain object. Also converts values to their respective internal types.
@@ -156,9 +159,8 @@ object ValidationError {
     * @returns ValidationError
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ValidationError = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ValidationError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ValidationError]
   
   /**
     * Creates a plain object from a ValidationError message. Also converts values to other types if specified.
@@ -167,12 +169,10 @@ object ValidationError {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.toObject")
-  @js.native
-  def toObject(message: ValidationError): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.toObject")
-  @js.native
-  def toObject(message: ValidationError, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ValidationError): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ValidationError, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ValidationError message.
@@ -180,7 +180,6 @@ object ValidationError {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.ValidationError.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -2,19 +2,17 @@ package typings.winrt.Windows.Globalization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguage extends StObject {
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var languageTag: String = js.native
+  var languageTag: String
   
-  var nativeName: String = js.native
+  var nativeName: String
   
-  var script: String = js.native
+  var script: String
 }
 object ILanguage {
   

@@ -2,17 +2,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccordionItemEventArgs extends ProcessingModeEventArgs {
+trait AccordionItemEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val htmlElement: js.Object = js.native
+  val htmlElement: js.Object
   
-  val htmlEvent: js.Object = js.native
+  val htmlEvent: js.Object
   
-  val item: BootstrapAccordionItem = js.native
+  val item: BootstrapAccordionItem
 }
 object AccordionItemEventArgs {
   

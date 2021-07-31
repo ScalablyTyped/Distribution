@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,168 +12,167 @@ object mod extends Shortcut {
   @js.native
   val ^ : NUnit = js.native
   
-  @js.native
   trait ConsoleRunnerOptions extends StObject {
     
     // true|false,
     // [2.x] Apartment for running tests (Default is MTA).
-    var apartment: js.UndefOr[String] = js.native
+    var apartment: js.UndefOr[String] = js.undefined
     
     // true|false,
     // [2.x] Base path to be used when loading the assemblies.
-    var basepath: js.UndefOr[String] = js.native
+    var basepath: js.UndefOr[String] = js.undefined
     
     // ['lib', 'bin'],
     // [2.x] Erase any leftover cache files and exit.
-    var cleanup: js.UndefOr[Boolean] = js.native
+    var cleanup: js.UndefOr[Boolean] = js.undefined
     
     // ['Database', 'Network'],
     // Project configuration (e.g.: Debug) to load.
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
     // true|false,
     // [3.x] Dispose each test runner after it has finished running its tests.
-    var `dispose-runners`: js.UndefOr[Boolean] = js.native
+    var `dispose-runners`: js.UndefOr[Boolean] = js.undefined
     
     // 'Single|Separate|Multiple',
     // AppDomain Usage for tests.
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     // 'TestOutput.txt',
     // File to receive test error output.
-    var err: js.UndefOr[String] = js.native
+    var err: js.UndefOr[String] = js.undefined
     
     // ['BaseLine', 'Unit'],
     // List of categories to exclude.
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     // 'TestResult.xml',
     // [3.x] Save test info rather than running tests. Name of output file.
-    var explore: js.UndefOr[String] = js.native
+    var explore: js.UndefOr[String] = js.undefined
     
     // 'None|Single|Multiple',
     // Framework version to be used for tests.
-    var framework: js.UndefOr[String] = js.native
+    var framework: js.UndefOr[String] = js.undefined
     
     // 'TestsToRun.txt',
     // List of categories to include.
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
     // true|false,
     // Label each test in stdOut.
-    var labels: js.UndefOr[Boolean] = js.native
+    var labels: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [3.x] Displays console output without color.
-    var nocolor: js.UndefOr[Boolean] = js.native
+    var nocolor: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [2.x] Do not display progress.
-    var nodots: js.UndefOr[Boolean] = js.native
+    var nodots: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [3.x] Suppress display of program information at start of run.
-    var noheader: js.UndefOr[Boolean] = js.native
+    var noheader: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [2.x] Do not display the logo.
-    var nologo: js.UndefOr[Boolean] = js.native
+    var nologo: js.UndefOr[Boolean] = js.undefined
     
     // 'TestInfo.xml',
     // Suppress XML result output.
-    var noresult: js.UndefOr[Boolean] = js.native
+    var noresult: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [2.x] Disable shadow copy when running in separate domain.
     // NOTE In 3.x, The console runner now disables shadow copy by
     // default. use new 'shadowcopy' option in 3.x to turn it on.
-    var noshadow: js.UndefOr[Boolean] = js.native
+    var noshadow: js.UndefOr[Boolean] = js.undefined
     
     // 'MTA|STA',
     // [2.x] Disable use of a separate thread for tests.
-    var nothread: js.UndefOr[Boolean] = js.native
+    var nothread: js.UndefOr[Boolean] = js.undefined
     
     // 'BuildArtifacts',
     // File to receive test output.
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     // true|false,
     // [3.x] Pause before run to allow debugging.
-    var pause: js.UndefOr[Boolean] = js.native
+    var pause: js.UndefOr[Boolean] = js.undefined
     
     // 'src',
     // [2.x] Additional directories to be probed when loading assemblies.
-    var privatebinpath: js.UndefOr[js.Array[String]] = js.native
+    var privatebinpath: js.UndefOr[js.Array[String]] = js.undefined
     
     // 'Debug',
     // Process model for tests.
-    var process: js.UndefOr[String] = js.native
+    var process: js.UndefOr[String] = js.undefined
     
     // 'TestErrors.txt',
     // Name of XML result file (Default: TestResult.xml)
-    var result: js.UndefOr[String] = js.native
+    var result: js.UndefOr[String] = js.undefined
     
     // 'TestsToRun.txt',
     // [2.x] Name of the test case(s), fixture(s) or namespace(s) to run.
     // NOTE: This has been superseded by the 'test' option above in 3.x.
-    var run: js.UndefOr[js.Array[String]] = js.native
+    var run: js.UndefOr[js.Array[String]] = js.undefined
     
     // ['TestSuite.Unit', 'TestSuite.Integration'],
     // [2.x] Name of a file containing a list of the tests to run, one per line.
     // NOTE: This has been superseded by the 'testlist' option above in 3.x.
-    var runlist: js.UndefOr[String] = js.native
+    var runlist: js.UndefOr[String] = js.undefined
     
     // 1000,
     // [3.x] Random seed used to generate test cases.
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
     
     // 'Off|Error|Warning|Info|Verbose',
     // [3.x] Tells .NET to copy loaded assemblies to the shadowcopy directory.
-    var shadowcopy: js.UndefOr[Boolean] = js.native
+    var shadowcopy: js.UndefOr[Boolean] = js.undefined
     
     // 5,
     // Stop after the first test failure or error.
-    var stoponerror: js.UndefOr[Boolean] = js.native
+    var stoponerror: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // [3.x] Turns on use of TeamCity service messages.
-    var teamcity: js.UndefOr[Boolean] = js.native
+    var teamcity: js.UndefOr[Boolean] = js.undefined
     
     // [3.x] Name of the test case(s), fixture(s) or namespace(s) to run.
-    var test: js.UndefOr[js.Array[String]] = js.native
+    var test: js.UndefOr[js.Array[String]] = js.undefined
     
     // ['TestSuite.Unit', 'TestSuite.Integration'],
     // [3.x] Name of a file containing a list of the tests to run, one per line.
-    var testist: js.UndefOr[String] = js.native
+    var testist: js.UndefOr[String] = js.undefined
     
     // true|false,
     // Timeout for each test case in milliseconds.
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     // true|false,
     // Set internal trace level.
-    var trace: js.UndefOr[String] = js.native
+    var trace: js.UndefOr[String] = js.undefined
     
     // true|false,
     // [3.x] Display additional information as the test runs.
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // Wait for input before closing console window.
     @JSName("wait")
-    var wait_FConsoleRunnerOptions: js.UndefOr[Boolean] = js.native
+    var wait_FConsoleRunnerOptions: js.UndefOr[Boolean] = js.undefined
     
     // true|false,
     // Work directory for output files.
-    var work: js.UndefOr[String] = js.native
+    var work: js.UndefOr[String] = js.undefined
     
     // 5150,
     // [3.x] Number of worker threads to be used in running tests.
-    var workers: js.UndefOr[Double] = js.native
+    var workers: js.UndefOr[Double] = js.undefined
     
     // 'net-1.1',
     // [3.x] Run tests in a 32-bit process on 64-bit systems.
-    var x86: js.UndefOr[Boolean] = js.native
+    var x86: js.UndefOr[Boolean] = js.undefined
   }
   object ConsoleRunnerOptions {
     
@@ -440,30 +438,29 @@ object mod extends Shortcut {
   
   type NUnit = js.Function1[/* options */ js.UndefOr[Options], ReadWriteStream]
   
-  @js.native
   trait Options extends StObject {
     
     // The NUnit bin folder or the full path of the console runner.
     // If not specified the NUnit bin folder must be in the `PATH`.
-    var executable: js.UndefOr[String] = js.native
+    var executable: js.UndefOr[String] = js.undefined
     
     // true|false
     // The options below map directly to the NUnit console runner. See here
     // for more info: http://www.nunit.org/index.php?p=consoleCommandLine&r=2.6.3
-    var options: js.UndefOr[ConsoleRunnerOptions] = js.native
+    var options: js.UndefOr[ConsoleRunnerOptions] = js.undefined
     
     // 'c:/Program Files/NUnit/bin'
     // [2.x] If the full path of the console runner is not specified this determines
     // what version of the console runner is used. Defaults to anycpu.
     // NOTE: This has been superseded by the 'x86' option below in 3.x.
     // http://www.nunit.org/index.php?p=nunit-console&r=2.6.3
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     // 'anycpu|x86'
     // [2.x] Output TeamCity service messages.
     // NOTE: This has been superseded by the 'teamcity' option below in 3.x.
     // https://confluence.jetbrains.com/display/TCD8/Build+Script+Interaction+with+TeamCity
-    var teamcity: js.UndefOr[Boolean] = js.native
+    var teamcity: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

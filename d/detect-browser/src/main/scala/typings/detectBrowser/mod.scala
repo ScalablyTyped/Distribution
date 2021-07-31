@@ -9,15 +9,19 @@ import typings.detectBrowser.detectBrowserStrings.node
 import typings.node.processMod.global.NodeJS.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("detect-browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("detect-browser", "BotInfo")
   @js.native
   class BotInfo ()
-    extends DetectedInfo[
+    extends StObject
+       with DetectedInfo[
           typings.detectBrowser.detectBrowserStrings.bot, 
           typings.detectBrowser.detectBrowserStrings.bot, 
           Null, 
@@ -26,71 +30,128 @@ object mod {
     
     val bot: `true` = js.native
     
+    /* CompleteClass */
+    override val name: typings.detectBrowser.detectBrowserStrings.bot = js.native
+    
+    /* CompleteClass */
+    override val os: Null = js.native
+    
+    /* CompleteClass */
+    override val `type`: typings.detectBrowser.detectBrowserStrings.bot = js.native
     @JSName("type")
     val type_BotInfo: /* "bot" */ String = js.native
+    
+    /* CompleteClass */
+    override val version: Null = js.native
   }
   
   @JSImport("detect-browser", "BrowserInfo")
   @js.native
-  class BrowserInfo protected () extends DetectedInfo[browser, Browser, OperatingSystem | Null, String] {
+  class BrowserInfo protected ()
+    extends StObject
+       with DetectedInfo[browser, Browser, OperatingSystem | Null, String] {
     def this(name: Browser, version: String) = this()
     def this(name: Browser, version: String, os: OperatingSystem) = this()
     
+    /* CompleteClass */
+    override val name: Browser = js.native
+    
+    /* CompleteClass */
+    override val os: OperatingSystem | Null = js.native
+    
+    /* CompleteClass */
+    override val `type`: browser = js.native
     @JSName("type")
     val type_BrowserInfo: /* "browser" */ String = js.native
+    
+    /* CompleteClass */
+    override val version: String = js.native
   }
   
   @JSImport("detect-browser", "NodeInfo")
   @js.native
-  class NodeInfo protected () extends DetectedInfo[node, node, Platform, String] {
+  class NodeInfo protected ()
+    extends StObject
+       with DetectedInfo[node, node, Platform, String] {
     def this(version: String) = this()
     
+    /* CompleteClass */
+    override val name: node = js.native
+    
+    /* CompleteClass */
+    override val os: Platform = js.native
+    
+    /* CompleteClass */
+    override val `type`: node = js.native
     @JSName("type")
     val type_NodeInfo: /* "node" */ String = js.native
+    
+    /* CompleteClass */
+    override val version: String = js.native
   }
   
   @JSImport("detect-browser", "ReactNativeInfo")
   @js.native
-  class ReactNativeInfo () extends DetectedInfo[`react-native`, `react-native`, Null, Null] {
+  class ReactNativeInfo ()
+    extends StObject
+       with DetectedInfo[`react-native`, `react-native`, Null, Null] {
     
+    /* CompleteClass */
+    override val name: `react-native` = js.native
+    
+    /* CompleteClass */
+    override val os: Null = js.native
+    
+    /* CompleteClass */
+    override val `type`: `react-native` = js.native
     @JSName("type")
     val type_ReactNativeInfo: /* "react-native" */ String = js.native
+    
+    /* CompleteClass */
+    override val version: Null = js.native
   }
   
   @JSImport("detect-browser", "SearchBotDeviceInfo")
   @js.native
-  class SearchBotDeviceInfo protected () extends DetectedInfo[`bot-device`, Browser, OperatingSystem | Null, String] {
+  class SearchBotDeviceInfo protected ()
+    extends StObject
+       with DetectedInfo[`bot-device`, Browser, OperatingSystem | Null, String] {
     def this(name: Browser, version: String, os: Null, bot: String) = this()
     def this(name: Browser, version: String, os: OperatingSystem, bot: String) = this()
     
     val bot: String = js.native
     
+    /* CompleteClass */
+    override val name: Browser = js.native
+    
+    /* CompleteClass */
+    override val os: OperatingSystem | Null = js.native
+    
+    /* CompleteClass */
+    override val `type`: `bot-device` = js.native
     @JSName("type")
     val type_SearchBotDeviceInfo: /* "bot-device" */ String = js.native
+    
+    /* CompleteClass */
+    override val version: String = js.native
   }
   
-  @JSImport("detect-browser", "browserName")
-  @js.native
-  def browserName(ua: String): Browser | Null = js.native
+  @scala.inline
+  def browserName(ua: String): Browser | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("browserName")(ua.asInstanceOf[js.Any]).asInstanceOf[Browser | Null]
   
-  @JSImport("detect-browser", "detect")
-  @js.native
-  def detect(): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = js.native
-  @JSImport("detect-browser", "detect")
-  @js.native
-  def detect(userAgent: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = js.native
+  @scala.inline
+  def detect(): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")().asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
+  @scala.inline
+  def detect(userAgent: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(userAgent.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | NodeInfo | ReactNativeInfo | Null]
   
-  @JSImport("detect-browser", "detectOS")
-  @js.native
-  def detectOS(ua: String): OperatingSystem | Null = js.native
+  @scala.inline
+  def detectOS(ua: String): OperatingSystem | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("detectOS")(ua.asInstanceOf[js.Any]).asInstanceOf[OperatingSystem | Null]
   
-  @JSImport("detect-browser", "getNodeVersion")
-  @js.native
-  def getNodeVersion(): NodeInfo | Null = js.native
+  @scala.inline
+  def getNodeVersion(): NodeInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeVersion")().asInstanceOf[NodeInfo | Null]
   
-  @JSImport("detect-browser", "parseUserAgent")
-  @js.native
-  def parseUserAgent(ua: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | Null = js.native
+  @scala.inline
+  def parseUserAgent(ua: String): BrowserInfo | SearchBotDeviceInfo | BotInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseUserAgent")(ua.asInstanceOf[js.Any]).asInstanceOf[BrowserInfo | SearchBotDeviceInfo | BotInfo | Null]
   
   /* Rewritten from type alias, can be one of: 
     - typings.detectBrowser.detectBrowserStrings.aol
@@ -206,16 +267,15 @@ object mod {
     def yandexbrowser: typings.detectBrowser.detectBrowserStrings.yandexbrowser = "yandexbrowser".asInstanceOf[typings.detectBrowser.detectBrowserStrings.yandexbrowser]
   }
   
-  @js.native
   trait DetectedInfo[T /* <: DetectedInfoType */, N /* <: String */, O, V] extends StObject {
     
-    val name: N = js.native
+    val name: N
     
-    val os: O = js.native
+    val os: O
     
-    val `type`: T = js.native
+    val `type`: T
     
-    val version: V = js.native
+    val version: V
   }
   object DetectedInfo {
     
@@ -227,7 +287,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DetectedInfoMutableBuilder[Self <: DetectedInfo[_, _, _, _], T /* <: DetectedInfoType */, N /* <: String */, O, V] (val x: Self with (DetectedInfo[T, N, O, V])) extends AnyVal {
+    implicit class DetectedInfoMutableBuilder[Self <: DetectedInfo[?, ?, ?, ?], T /* <: DetectedInfoType */, N /* <: String */, O, V] (val x: Self & (DetectedInfo[T, N, O, V])) extends AnyVal {
       
       @scala.inline
       def setName(value: N): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

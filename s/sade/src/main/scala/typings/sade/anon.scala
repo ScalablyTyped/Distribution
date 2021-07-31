@@ -5,18 +5,16 @@ import typings.mri.mod.DictionaryObject
 import typings.sade.sadeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<sade.sade.CommandOptions> */
-  @js.native
   trait ReadonlyCommandOptions extends StObject {
     
-    val default: js.UndefOr[Boolean] = js.native
+    val default: js.UndefOr[Boolean] = js.undefined
     
-    val alias: js.UndefOr[String | js.Array[String]] = js.native
+    val alias: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ReadonlyCommandOptions {
     
@@ -47,28 +45,27 @@ object anon {
   }
   
   /* Inlined {  lazy :true} & sade.sade.ParseOptions */
-  @js.native
   trait lazytrueParseOptions extends StObject {
     
     /** Default values for flags */
-    var default: js.UndefOr[DictionaryObject[_]] = js.native
+    var default: js.UndefOr[DictionaryObject[js.Any]] = js.undefined
     
     /** Additional aliases for specific flags */
-    var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.native
+    var alias: js.UndefOr[DictionaryObject[ArrayOrString]] = js.undefined
     
     /** A flag or array of flags whose values are boolean */
-    var boolean: js.UndefOr[ArrayOrString] = js.native
+    var boolean: js.UndefOr[ArrayOrString] = js.undefined
     
-    var `lazy`: `true` with js.UndefOr[Boolean] = js.native
+    var `lazy`: `true` & js.UndefOr[Boolean]
     
-    var string: js.UndefOr[ArrayOrString] = js.native
+    var string: js.UndefOr[ArrayOrString] = js.undefined
     
-    var unknown: js.UndefOr[js.Function1[/* flag */ String, Unit]] = js.native
+    var unknown: js.UndefOr[js.Function1[/* flag */ String, Unit]] = js.undefined
   }
   object lazytrueParseOptions {
     
     @scala.inline
-    def apply(`lazy`: `true` with js.UndefOr[Boolean]): lazytrueParseOptions = {
+    def apply(`lazy`: `true` & js.UndefOr[Boolean]): lazytrueParseOptions = {
       val __obj = js.Dynamic.literal()
       __obj.updateDynamic("lazy")(`lazy`.asInstanceOf[js.Any])
       __obj.asInstanceOf[lazytrueParseOptions]
@@ -93,13 +90,13 @@ object anon {
       def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
       
       @scala.inline
-      def setDefault(value: DictionaryObject[_]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: DictionaryObject[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
       
       @scala.inline
-      def setLazy(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
+      def setLazy(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "lazy", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setString(value: ArrayOrString): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])

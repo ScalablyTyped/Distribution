@@ -4,21 +4,19 @@ import typings.reactBootstrapTable.anon.ButtonGroupPropssearchPan
 import typings.reactBootstrapTable.anon.CloseInsertModal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolBarProps extends StObject {
   
   /**
     * Rendered components to use in the toolbar.
     */
-  var components: ButtonGroupPropssearchPan = js.native
+  var components: ButtonGroupPropssearchPan
   
   /**
     * Event callbacks to use with a custom toolbar.
     */
-  var event: CloseInsertModal = js.native
+  var event: CloseInsertModal
 }
 object ToolBarProps {
   

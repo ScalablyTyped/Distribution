@@ -2,19 +2,17 @@ package typings.rcMenu.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManualRef extends StObject {
   
-  var manualRef: js.Function0[Unit] = js.native
+  var manualRef: js.Function0[Unit]
   
-  var onMouseEnter: js.Function0[Unit] = js.native
+  var onMouseEnter: js.Function0[Unit]
   
-  var onMouseLeave: js.Function0[Unit] = js.native
+  var onMouseLeave: js.Function0[Unit]
   
-  var onSelect: js.Function0[Unit] = js.native
+  var onSelect: js.Function0[Unit]
 }
 object ManualRef {
   

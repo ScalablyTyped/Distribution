@@ -3,32 +3,30 @@ package typings.psl
 import typings.psl.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("psl", "get")
+  @JSImport("psl", JSImport.Namespace)
   @js.native
-  def get(): Null = js.native
-  @JSImport("psl", "get")
-  @js.native
-  def get(domain: String): String | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("psl", "isValid")
-  @js.native
-  def isValid(domain: String): Boolean = js.native
+  @scala.inline
+  def get(): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[Null]
+  @scala.inline
+  def get(domain: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(domain.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("psl", "parse")
-  @js.native
-  def parse(domain: String): ParsedDomain | ParseError = js.native
+  @scala.inline
+  def isValid(domain: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(domain.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def parse(domain: String): ParsedDomain | ParseError = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(domain.asInstanceOf[js.Any]).asInstanceOf[ParsedDomain | ParseError]
+  
   trait ParseError extends StObject {
     
-    var error: Code = js.native
+    var error: Code
     
-    var input: String = js.native
+    var input: String
   }
   object ParseError {
     
@@ -49,28 +47,27 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedDomain extends StObject {
     
-    var domain: String | Null = js.native
+    var domain: String | Null
     
-    var error: js.UndefOr[scala.Nothing] = js.native
+    var error: Unit
     
-    var input: String = js.native
+    var input: String
     
-    var listed: Boolean = js.native
+    var listed: Boolean
     
-    var sld: String | Null = js.native
+    var sld: String | Null
     
-    var subdomain: String | Null = js.native
+    var subdomain: String | Null
     
-    var tld: String | Null = js.native
+    var tld: String | Null
   }
   object ParsedDomain {
     
     @scala.inline
-    def apply(input: String, listed: Boolean): ParsedDomain = {
-      val __obj = js.Dynamic.literal(input = input.asInstanceOf[js.Any], listed = listed.asInstanceOf[js.Any])
+    def apply(error: Unit, input: String, listed: Boolean): ParsedDomain = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], listed = listed.asInstanceOf[js.Any], domain = null, sld = null, subdomain = null, tld = null)
       __obj.asInstanceOf[ParsedDomain]
     }
     
@@ -82,6 +79,9 @@ object mod {
       
       @scala.inline
       def setDomainNull: Self = StObject.set(x, "domain", null)
+      
+      @scala.inline
+      def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])

@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageRollMod {
@@ -32,17 +31,18 @@ object imageRollMod {
   trait ImageRoll
     extends Component[ImageRollProps, js.Any, js.Any] {
     
-    def onSelected(images: js.Array[_], _underscore: js.Any): Unit = js.native
+    def onSelected(images: js.Array[js.Any], _underscore: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait ImageRollProps extends ImageRollTexts {
+  trait ImageRollProps
+    extends StObject
+       with ImageRollTexts {
     
-    var cameraPickerProps: js.UndefOr[CameraRollPickerProps] = js.native
+    var cameraPickerProps: js.UndefOr[CameraRollPickerProps] = js.undefined
     
-    def onCancel(): Unit = js.native
+    def onCancel(): Unit
     
-    def onSelected(imgObj: js.Object): Unit = js.native
+    def onSelected(imgObj: js.Object): Unit
   }
   object ImageRollProps {
     
@@ -69,12 +69,11 @@ object imageRollMod {
     }
   }
   
-  @js.native
   trait ImageRollTexts extends StObject {
     
-    var cancelText: js.UndefOr[ReactNode] = js.native
+    var cancelText: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object ImageRollTexts {
     

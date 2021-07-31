@@ -5,7 +5,6 @@ import typings.atom.mod.ScopeDescriptor
 import typings.atom.mod.TextEditor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autocompletePlusMod {
@@ -30,20 +29,19 @@ object autocompletePlusMod {
     }
   }
   
-  @js.native
   trait AutocompleteProvider extends StObject {
     
     /**
       *  Defines the scope selector(s) (can be comma-separated) for which your provider
       *  should not be used.
       */
-    var disableForSelector: js.UndefOr[String] = js.native
+    var disableForSelector: js.UndefOr[String] = js.undefined
     
     /** Will be called if your provider is being destroyed by autocomplete+ */
-    var dispose: js.UndefOr[js.Function0[Unit]] = js.native
+    var dispose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Will not use lower priority providers when this provider is used. */
-    var excludeLowerPriority: js.UndefOr[Boolean] = js.native
+    var excludeLowerPriority: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  (experimental) Is called when a suggestion is selected by the user for
@@ -56,7 +54,7 @@ object autocompletePlusMod {
           /* suggestion */ AnySuggestion, 
           (js.Promise[AnySuggestion | Null]) | AnySuggestion | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       *  Is called when a suggestion request has been dispatched by autocomplete+ to
@@ -64,32 +62,32 @@ object autocompletePlusMod {
       *  like them displayed to the user. Returning a Promise of an array of suggestions
       *  is also supported.
       */
-    def getSuggestions(params: SuggestionsRequestedEvent): Suggestions | js.Promise[Suggestions] = js.native
+    def getSuggestions(params: SuggestionsRequestedEvent): Suggestions | js.Promise[Suggestions]
     
     /**
       *  A number to indicate its priority to be included in a suggestions request.
       *  The default provider has an inclusion priority of 0. Higher priority providers
       *  can suppress lower priority providers with excludeLowerPriority.
       */
-    var inclusionPriority: js.UndefOr[Double] = js.native
+    var inclusionPriority: js.UndefOr[Double] = js.undefined
     
     /**
       *  Function that is called when a suggestion from your provider was inserted
       *  into the buffer.
       */
-    var onDidInsertSuggestion: js.UndefOr[js.Function1[/* params */ SuggestionInsertedEvent, Unit]] = js.native
+    var onDidInsertSuggestion: js.UndefOr[js.Function1[/* params */ SuggestionInsertedEvent, Unit]] = js.undefined
     
     /**
       *  Defines the scope selector(s) (can be comma-separated) for which your provider
       *  should receive suggestion requests.
       */
-    var selector: String = js.native
+    var selector: String
     
     /**
       *  A number to determine the sort order of suggestions. The default provider has
       *  an suggestion priority of 1.
       */
-    var suggestionPriority: js.UndefOr[Double] = js.native
+    var suggestionPriority: js.UndefOr[Double] = js.undefined
   }
   object AutocompleteProvider {
     
@@ -155,16 +153,16 @@ object autocompletePlusMod {
     }
   }
   
-  @js.native
   trait SnippetSuggestion
-    extends SuggestionBase
+    extends StObject
+       with SuggestionBase
        with AnySuggestion {
     
     /**
       *  A snippet string. This will allow users to tab through function arguments
       *  or other options.
       */
-    var snippet: String = js.native
+    var snippet: String
   }
   object SnippetSuggestion {
     
@@ -182,71 +180,70 @@ object autocompletePlusMod {
     }
   }
   
-  @js.native
   trait SuggestionBase extends StObject {
     
     /**
       *  Class name for the suggestion in the suggestion list. Allows you to style your
       *  suggestion via CSS, if desired.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       *  A doc-string summary or short description of the suggestion. When specified, it
       *  will be displayed at the bottom of the suggestions list.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       *  (experimental) Description with Markdown formatting.
       *  Takes precedence over plaintext description.
       */
-    var descriptionMarkdown: js.UndefOr[String] = js.native
+    var descriptionMarkdown: js.UndefOr[String] = js.undefined
     
     /**
       *  A url to the documentation or more information about this suggestion.
       *  When specified, a More.. link will be displayed in the description area.
       */
-    var descriptionMoreURL: js.UndefOr[String] = js.native
+    var descriptionMoreURL: js.UndefOr[String] = js.undefined
     
     /**
       *  A string that will show in the UI for this suggestion.
       *  When not set, snippet || text is displayed.
       */
-    var displayText: js.UndefOr[String] = js.native
+    var displayText: js.UndefOr[String] = js.undefined
     
     /**
       *  If you want complete control over the icon shown against the suggestion.
       *  e.g. iconHTML: <i class="icon-move-right"></i>
       */
-    var iconHTML: js.UndefOr[String] = js.native
+    var iconHTML: js.UndefOr[String] = js.undefined
     
     /** This is shown before the suggestion. Useful for return values. */
-    var leftLabel: js.UndefOr[String] = js.native
+    var leftLabel: js.UndefOr[String] = js.undefined
     
     /** Use this instead of leftLabel if you want to use html for the left label. */
-    var leftLabelHTML: js.UndefOr[String] = js.native
+    var leftLabelHTML: js.UndefOr[String] = js.undefined
     
     /**
       *  The text immediately preceding the cursor, which will be replaced by the text.
       *  If not provided, the prefix passed into getSuggestions will be used.
       */
-    var replacementPrefix: js.UndefOr[String] = js.native
+    var replacementPrefix: js.UndefOr[String] = js.undefined
     
     /**
       *  An indicator (e.g. function, variable) denoting the "kind" of suggestion this
       *  represents.
       */
-    var rightLabel: js.UndefOr[String] = js.native
+    var rightLabel: js.UndefOr[String] = js.undefined
     
     /** Use this instead of rightLabel if you want to use html for the right label. */
-    var rightLabelHTML: js.UndefOr[String] = js.native
+    var rightLabelHTML: js.UndefOr[String] = js.undefined
     
     /**
       *  The suggestion type. It will be converted into an icon shown against the
       *  suggestion.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object SuggestionBase {
     
@@ -333,14 +330,13 @@ object autocompletePlusMod {
     }
   }
   
-  @js.native
   trait SuggestionInsertedEvent extends StObject {
     
-    var editor: TextEditor = js.native
+    var editor: TextEditor
     
-    var suggestion: TextSuggestion | SnippetSuggestion = js.native
+    var suggestion: TextSuggestion | SnippetSuggestion
     
-    var triggerPosition: Point = js.native
+    var triggerPosition: Point
   }
   object SuggestionInsertedEvent {
     
@@ -366,23 +362,22 @@ object autocompletePlusMod {
   
   type Suggestions = js.Array[AnySuggestion]
   
-  @js.native
   trait SuggestionsRequestedEvent extends StObject {
     
     /** Whether the autocomplete request was initiated by the user. */
-    var activatedManually: Boolean = js.native
+    var activatedManually: Boolean
     
     /** The position of the cursor. */
-    var bufferPosition: Point = js.native
+    var bufferPosition: Point
     
     /** The current TextEditor. */
-    var editor: TextEditor = js.native
+    var editor: TextEditor
     
     /** The prefix for the word immediately preceding the current cursor position. */
-    var prefix: String = js.native
+    var prefix: String
     
     /** The scope descriptor for the current cursor position. */
-    var scopeDescriptor: ScopeDescriptor = js.native
+    var scopeDescriptor: ScopeDescriptor
   }
   object SuggestionsRequestedEvent {
     
@@ -418,13 +413,13 @@ object autocompletePlusMod {
     }
   }
   
-  @js.native
   trait TextSuggestion
-    extends SuggestionBase
+    extends StObject
+       with SuggestionBase
        with AnySuggestion {
     
     /** The text which will be inserted into the editor, in place of the prefix. */
-    var text: String = js.native
+    var text: String
   }
   object TextSuggestion {
     

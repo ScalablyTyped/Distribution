@@ -11,8 +11,8 @@ JavaScript Chess Board http://chessboardjs.com
 | Full name          | chessboardjs |
 | Keywords           | chess, chessboard |
 | # releases         | 0 |
-| # dependents       | 1 |
-| # downloads        | 2391 |
+| # dependents       | 3 |
+| # downloads        | 4332 |
 | # stars            | 1 |
 
 ## Links

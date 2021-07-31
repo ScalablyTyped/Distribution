@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComputeEnvironmentsResponse extends StObject {
   
   /**
     * The list of compute environments.
     */
-  var computeEnvironments: js.UndefOr[ComputeEnvironmentDetailList] = js.native
+  var computeEnvironments: js.UndefOr[ComputeEnvironmentDetailList] = js.undefined
   
   /**
     * The nextToken value to include in a future DescribeComputeEnvironments request. When the results of a DescribeJobDefinitions request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeComputeEnvironmentsResponse {
   

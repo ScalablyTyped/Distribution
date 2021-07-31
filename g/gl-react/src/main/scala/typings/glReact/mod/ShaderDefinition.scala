@@ -2,15 +2,13 @@ package typings.glReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShaderDefinition extends StObject {
   
-  var frag: String = js.native
+  var frag: String
   
-  var vert: js.UndefOr[String] = js.native
+  var vert: js.UndefOr[String] = js.undefined
 }
 object ShaderDefinition {
   

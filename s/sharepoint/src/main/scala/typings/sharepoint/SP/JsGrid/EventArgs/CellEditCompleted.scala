@@ -4,19 +4,19 @@ import typings.sharepoint.SP.JsGrid.IChangeKey
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellEditCompleted extends IEventArgs {
+trait CellEditCompleted
+  extends StObject
+     with IEventArgs {
   
-  var bCancelled: Boolean = js.native
+  var bCancelled: Boolean
   
-  var changeKey: IChangeKey = js.native
+  var changeKey: IChangeKey
   
-  var fieldKey: String = js.native
+  var fieldKey: String
   
-  var recordKey: Double = js.native
+  var recordKey: Double
 }
 object CellEditCompleted {
   

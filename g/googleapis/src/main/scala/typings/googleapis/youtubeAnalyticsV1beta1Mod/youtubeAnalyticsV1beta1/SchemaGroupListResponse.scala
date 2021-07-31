@@ -2,23 +2,21 @@ package typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A paginated list of grouList resources returned in response to a
   * youtubeAnalytics.groupApi.list request.
   */
-@js.native
 trait SchemaGroupListResponse extends StObject {
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[SchemaGroup]] = js.native
+  var items: js.UndefOr[js.Array[SchemaGroup]] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGroupListResponse {
   

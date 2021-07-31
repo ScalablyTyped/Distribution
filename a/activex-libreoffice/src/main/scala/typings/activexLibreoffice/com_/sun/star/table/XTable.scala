@@ -12,29 +12,28 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifiable
 import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XTable
-  extends XModifiable
+  extends StObject
      with XComponent
      with XCellRange
      with XColumnRowRange
+     with XModifiable
      with XPropertySet
      with XFastPropertySet {
   
   /** stores the current column count of this table */
-  var ColumnCount: Double = js.native
+  var ColumnCount: Double
   
   /** stores the current row count of this table */
-  var RowCount: Double = js.native
+  var RowCount: Double
   
   /**
     * creates a cell cursor including the whole table
     * @see com.sun.star.table.CellCursor
     */
-  def createCursor(): XCellCursor = js.native
+  def createCursor(): XCellCursor
   
   /**
     * creates a cell cursor to travel in the given range context.
@@ -42,7 +41,7 @@ trait XTable
     * @see com.sun.star.table.CellCursor
     * @throws com::sun::star::lang::IllegalArgumentException if the given reference is empty or not a range from this table.
     */
-  def createCursorByRange(Range: XCellRange): XCellCursor = js.native
+  def createCursorByRange(Range: XCellRange): XCellCursor
 }
 object XTable {
   

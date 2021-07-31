@@ -2,31 +2,29 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerAddress extends StObject {
   
   /**
     * [Network Load Balancers] The allocation ID of the Elastic IP address for an internal-facing load balancer.
     */
-  var AllocationId: js.UndefOr[typings.awsSdk.elbv2Mod.AllocationId] = js.native
+  var AllocationId: js.UndefOr[typings.awsSdk.elbv2Mod.AllocationId] = js.undefined
   
   /**
     * [Network Load Balancers] The IPv6 address.
     */
-  var IPv6Address: js.UndefOr[typings.awsSdk.elbv2Mod.IPv6Address] = js.native
+  var IPv6Address: js.UndefOr[typings.awsSdk.elbv2Mod.IPv6Address] = js.undefined
   
   /**
     * The static IP address.
     */
-  var IpAddress: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddress] = js.native
+  var IpAddress: js.UndefOr[typings.awsSdk.elbv2Mod.IpAddress] = js.undefined
   
   /**
     * [Network Load Balancers] The private IPv4 address for an internal load balancer.
     */
-  var PrivateIPv4Address: js.UndefOr[typings.awsSdk.elbv2Mod.PrivateIPv4Address] = js.native
+  var PrivateIPv4Address: js.UndefOr[typings.awsSdk.elbv2Mod.PrivateIPv4Address] = js.undefined
 }
 object LoadBalancerAddress {
   

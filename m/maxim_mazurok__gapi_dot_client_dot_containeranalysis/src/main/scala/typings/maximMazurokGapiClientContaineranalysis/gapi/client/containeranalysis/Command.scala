@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /** Command-line arguments used when executing this command. */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Working directory (relative to project source root) used when running this command. */
-  var dir: js.UndefOr[String] = js.native
+  var dir: js.UndefOr[String] = js.undefined
   
   /** Environment variables set before running this command. */
-  var env: js.UndefOr[js.Array[String]] = js.native
+  var env: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional unique identifier for this command, used in wait_for to reference this command as a dependency. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Required. Name of the command, as presented on the command line, or if the command is packaged as a Docker container, as presented to `docker pull`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The ID(s) of the command(s) that this command depends on. */
-  var waitFor: js.UndefOr[js.Array[String]] = js.native
+  var waitFor: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Command {
   

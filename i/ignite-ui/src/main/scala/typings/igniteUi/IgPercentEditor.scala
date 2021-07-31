@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPercentEditor
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,7 +17,7 @@ trait IgPercentEditor
     * If that option is disabled, and editor has no value, then value is set to 0 (or minValue/maxValue).
     *
     */
-  var allowNullValue: js.UndefOr[Boolean] = js.native
+  var allowNullValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets visibility of the spin, clear and drop-down button. That option can be set only on initialization. Combinations like 'dropdown,spin' or 'spin,clear' are supported too.Note! This option can not be set runtime.
@@ -29,7 +28,7 @@ trait IgPercentEditor
     * "clear" A button to clear the value is located on the right side of the editor.
     * "spin" Spin buttons are located on the right side of the editor.
     */
-  var buttonType: js.UndefOr[String] = js.native
+  var buttonType: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the range that editor's value can accept.This is achieved by setting the [minValue](ui.igPercentEditor#options:minValue) and [maxValue](ui.igPercentEditor#options:maxValue) editor's options, accordingly to the lowest and highest accepted values for the defined numeric mode.
@@ -49,7 +48,7 @@ trait IgPercentEditor
     * "sbyte" the Number object is used with the limits of a signed byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igpercenteditor#options:allowNullValue).
     * "byte" the Number object is used with the limits of an unsigned byte and if the value is not set, then the null or 0 is used depending on the option [allowNullValue](ui.igpercenteditor#options:allowNullValue).
     */
-  var dataMode: js.UndefOr[String] = js.native
+  var dataMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the character, which is used as decimal separator.
@@ -58,13 +57,13 @@ trait IgPercentEditor
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
-  var decimalSeparator: js.UndefOr[String] = js.native
+  var decimalSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the disabled attribute for the input. If set to true the input is disabled, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is not submitted.
     *
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the factor which is used for the get and set of the "value" method.
@@ -74,13 +73,13 @@ trait IgPercentEditor
     * Note: this option has priority over possible regional settings.
     *
     */
-  var displayFactor: js.UndefOr[Double] = js.native
+  var displayFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets show/hide drop-down list animation duration in milliseconds.
     *
     */
-  var dropDownAnimationDuration: js.UndefOr[Double] = js.native
+  var dropDownAnimationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets whether the drop-down list element is attached to the body of the document, or to the editor container element.
@@ -89,7 +88,7 @@ trait IgPercentEditor
     * Note! This option can not be set runtime.
     *
     */
-  var dropDownAttachedToBody: js.UndefOr[Boolean] = js.native
+  var dropDownAttachedToBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the ability to limit the editor to be used only as a dropdown list. When set to true the editor input is not editable.
@@ -97,7 +96,7 @@ trait IgPercentEditor
     * Note! This option can not be set runtime.
     *
     */
-  var dropDownOnReadOnly: js.UndefOr[Boolean] = js.native
+  var dropDownOnReadOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the drop-down list opening orientation when the list gets open. If the option is set to auto the editor has priority to open the drop-down list bottom. If the space is not enough it tries to open the list top. If the space is not enough in both directions then the list gets opened at the bottom of the editor.
@@ -108,12 +107,12 @@ trait IgPercentEditor
     * "bottom" The drop-down list is opened at the bottom of the editor.
     * "top" The drop-down list is opened at the top of the editor.
     */
-  var dropDownOrientation: js.UndefOr[String] = js.native
+  var dropDownOrientation: js.UndefOr[String] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var excludeKeys: js.UndefOr[js.Any] = js.native
+  var excludeKeys: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the character, which is used as separator for groups (like thousands).
@@ -123,7 +122,7 @@ trait IgPercentEditor
     * Note: This option's value should not be equal to the value of [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) or [negativeSign](ui.igNumericEditor#options:negativeSign) options.
     *
     */
-  var groupSeparator: js.UndefOr[String] = js.native
+  var groupSeparator: js.UndefOr[String] = js.undefined
   
   /**
     * (array of number objects) Gets/Sets the number of digits in the integer part of a number, which are divided into groups.
@@ -136,7 +135,7 @@ trait IgPercentEditor
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  var groups: js.UndefOr[js.Array[_]] = js.native
+  var groups: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets the height of the control.
@@ -145,55 +144,55 @@ trait IgPercentEditor
     * Valid values:
     * "null" will fit the editor inside its parent container, if no other heights are defined.
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var includeKeys: js.UndefOr[js.Any] = js.native
+  var includeKeys: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the name attribute of the value input. This input is used to sent the value to the server. In case the target element is input and it has name attribute, but the developer has set the inputName option, so this option overwrites the value input and removes the attribute from the element.
     *
     */
-  var inputName: js.UndefOr[String] = js.native
+  var inputName: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets if the editor should only allow values from the list of items. Enabling this also causes spin actions to cycle through list items instead.
     *
     */
-  var isLimitedToListValues: js.UndefOr[Boolean] = js.native
+  var isLimitedToListValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the hover/unhover animation duration of a drop-down list item.
     *
     */
-  var listItemHoverDuration: js.UndefOr[Double] = js.native
+  var listItemHoverDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets list of items which are used as a source for the drop-down list.
     * Items in the list can be of type number.
     *
     */
-  var listItems: js.UndefOr[js.Array[_]] = js.native
+  var listItems: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets custom width of the drop-down list in pixels. If the value is equal to 0 or negative, then the width of editor is set as a drop-down width.
     *
     */
-  var listWidth: js.UndefOr[Double] = js.native
+  var listWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the maximum number of decimal places supported by the editor.
@@ -203,18 +202,18 @@ trait IgPercentEditor
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
-  var maxDecimals: js.UndefOr[Double] = js.native
+  var maxDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var maxLength: js.UndefOr[js.Any] = js.native
+  var maxLength: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the maximum value which can be entered in the editor by the end user.
     *
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the minimum number of decimal places supported by the editor.
@@ -225,13 +224,13 @@ trait IgPercentEditor
     * Note: This option supports values between 0 and 15, when dataMode is 'double' (default) and values between 0 and 7 in 'float' mode.
     *
     */
-  var minDecimals: js.UndefOr[Double] = js.native
+  var minDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the minimum value which can be entered in the editor by the end user.
     *
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the string, which is used as negative pattern. The "n" flag represents the value of number. The "-" and "()" flags are static part of pattern.
@@ -239,7 +238,7 @@ trait IgPercentEditor
     * Note: Even if the default value is null - if internationalization file is provided and it contains default values for those properties the values are implicitly set.
     *
     */
-  var negativePattern: js.UndefOr[String] = js.native
+  var negativePattern: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the character, which is used as negative sign.
@@ -248,26 +247,26 @@ trait IgPercentEditor
     * Note: This option's value should not be equal to the value of [groupSeparator](ui.igNumericEditor#options:groupSeparator) or [decimalSeparator](ui.igNumericEditor#options:decimalSeparator) options.
     *
     */
-  var negativeSign: js.UndefOr[String] = js.native
+  var negativeSign: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the representation of null value. In case of default the value for the input is set to null, which makes the input to hold an empty string
     *
     */
-  var nullValue: js.UndefOr[String | Double] = js.native
+  var nullValue: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets/Sets the symbol, which is used in display (no focus) state.
     * Note: this option has priority over possible regional settings.
     *
     */
-  var percentSymbol: js.UndefOr[String] = js.native
+  var percentSymbol: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the text which appears in the editor when it has no focus and the "value" is null or empty string.
     *
     */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the pattern for positive numeric values, which is used in display (no focus) state.
@@ -275,31 +274,31 @@ trait IgPercentEditor
     * Note: this option has priority over possible regional settings.
     *
     */
-  var positivePattern: js.UndefOr[String] = js.native
+  var positivePattern: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets if the editor should prevent form submit when enter key is pressed.
     *
     */
-  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.native
+  var preventSubmitOnEnter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the readonly attribute for the input. If set to true the input is readonly, and all buttons and interactions are disabled. On submitting the form the editor belongs to, the value is submitted.
     *
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Gets/Sets if the editor should revert it's value to the previously valid value in case the value on blur, or enter key is not valid. If the option is set to false, editor calls clear functionality.
     *
     */
-  var revertIfNotValid: js.UndefOr[Boolean] = js.native
+  var revertIfNotValid: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the last decimal place will be rounded, when the maxDecimal option is defined and applied.
@@ -307,7 +306,7 @@ trait IgPercentEditor
     * then editor will round the value and will display it as 123.457. If roundDecimals is disabled then editor value will be truncated to 123.456.
     *
     */
-  var roundDecimals: js.UndefOr[Boolean] = js.native
+  var roundDecimals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets support for scientific format.
@@ -322,7 +321,7 @@ trait IgPercentEditor
     * "E+" scientific format is enabled and the "E" character is used. The "E+" is used for positive values in display mode.
     * "e+" scientific format is enabled and the "e" character is used. The "e+" is used for positive values in display mode.
     */
-  var scientificFormat: js.UndefOr[String] = js.native
+  var scientificFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the action when the editor gets focused. The default value is selectAll.
@@ -334,20 +333,20 @@ trait IgPercentEditor
     * "atEnd" Setting this option will move the cursor at the end the text into the editor when the edit mode gets entered.
     * "browserDefault" Setting this option won't do any extra logic, but proceed with the browser default behavior.
     */
-  var selectionOnFocus: js.UndefOr[String] = js.native
+  var selectionOnFocus: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the default delta-value which is used with "spin" [buttonType](ui.igpercenteditor#options:buttonType) or [spinUp](ui.igpercenteditor#methods:spinUp) and [spinDown](ui.igpercenteditor#methods:spinDown) methods to increment or decrement value in the editor. The value can not be negative. Non integer value is supported only for dataMode double and float.
     *
     */
-  var spinDelta: js.UndefOr[Double] = js.native
+  var spinDelta: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Set the ability of the editor to automatically set value in the editor to the opposite side of the limit, when the spin action reaches minimum or maximum limit.
     * This applies to [minValue](ui.%%WidgetNameLowered%%#options:minValue) and [maxValue](ui.%%WidgetNameLowered%%#options:maxValue) or cycling through list items if [isLimitedToListValues](ui.%%WidgetNameLowered%%#options:isLimitedToListValues) is enabled.
     *
     */
-  var spinWrapAround: js.UndefOr[Boolean] = js.native
+  var spinWrapAround: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets whether the onscreen keyboard (if available on device) should be shown when the dropdown button is clicked/tapped. This option prevents initial focus or removes it when the drop button is clicked/tapped.
@@ -355,19 +354,19 @@ trait IgPercentEditor
     * Note: When drop down is opened the only way to close it will be using the drop down button.
     *
     */
-  var suppressKeyboard: js.UndefOr[Boolean] = js.native
+  var suppressKeyboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disables/Enables default notifications for basic validation scenarios built in the editors such as required list selection, value wrapping around or spin limits.
     *
     */
-  var suppressNotifications: js.UndefOr[Boolean] = js.native
+  var suppressNotifications: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets tabIndex attribute for the editor input.
     *
     */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the horizontal alignment of the text in the editor.
@@ -378,19 +377,19 @@ trait IgPercentEditor
     * "right" The text into the input gets aligned to the right.
     * "center" The text into the input gets aligned to the center.
     */
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
-  var textMode: js.UndefOr[js.Any] = js.native
-  
-  /**
-    * Removed from numeric editor options
-    */
-  var toLower: js.UndefOr[js.Any] = js.native
+  var textMode: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Removed from numeric editor options
     */
-  var toUpper: js.UndefOr[js.Any] = js.native
+  var toLower: js.UndefOr[js.Any] = js.undefined
+  
+  /**
+    * Removed from numeric editor options
+    */
+  var toUpper: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets options supported by the [igValidator](ui.igvalidator#options) widget.
@@ -398,14 +397,14 @@ trait IgPercentEditor
     * while the corresponding options of the editor prevent values violating the defined rules from being entered.
     *
     */
-  var validatorOptions: js.UndefOr[js.Any] = js.native
+  var validatorOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets value in editor. The effect of setting/getting that option depends on type of editor and on dataMode options for every type of editor.
     *
     *
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the number of the items to be shown at once when the drop-down list get opened.
@@ -414,7 +413,7 @@ trait IgPercentEditor
     * This option can not be set runtime.
     *
     */
-  var visibleItemsCount: js.UndefOr[Double] = js.native
+  var visibleItemsCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the width of the control.
@@ -423,7 +422,7 @@ trait IgPercentEditor
     * Valid values:
     * "null" will stretch to fit data, if no other widths are defined.
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgPercentEditor {
   
@@ -509,7 +508,7 @@ object IgPercentEditor {
     def setGroupSeparatorUndefined: Self = StObject.set(x, "groupSeparator", js.undefined)
     
     @scala.inline
-    def setGroups(value: js.Array[_]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
+    def setGroups(value: js.Array[js.Any]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGroupsUndefined: Self = StObject.set(x, "groups", js.undefined)
@@ -554,7 +553,7 @@ object IgPercentEditor {
     def setListItemHoverDurationUndefined: Self = StObject.set(x, "listItemHoverDuration", js.undefined)
     
     @scala.inline
-    def setListItems(value: js.Array[_]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+    def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)

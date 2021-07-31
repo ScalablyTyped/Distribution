@@ -2,19 +2,17 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaRepositoryConfigureResponseMod {
   
-  @js.native
   trait MediaRepositoryConfigureResponseCandidatesItem extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaRepositoryConfigureResponseCandidatesItem {
     
@@ -38,15 +36,14 @@ object mediaRepositoryConfigureResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureResponseFbUserTags extends StObject {
     
-    var in: js.Array[_] = js.native
+    var in: js.Array[js.Any]
   }
   object MediaRepositoryConfigureResponseFbUserTags {
     
     @scala.inline
-    def apply(in: js.Array[_]): MediaRepositoryConfigureResponseFbUserTags = {
+    def apply(in: js.Array[js.Any]): MediaRepositoryConfigureResponseFbUserTags = {
       val __obj = js.Dynamic.literal(in = in.asInstanceOf[js.Any])
       __obj.asInstanceOf[MediaRepositoryConfigureResponseFbUserTags]
     }
@@ -55,17 +52,16 @@ object mediaRepositoryConfigureResponseMod {
     implicit class MediaRepositoryConfigureResponseFbUserTagsMutableBuilder[Self <: MediaRepositoryConfigureResponseFbUserTags] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setIn(value: js.Array[_]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
+      def setIn(value: js.Array[js.Any]): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInVarargs(value: js.Any*): Self = StObject.set(x, "in", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureResponseImageVersions2 extends StObject {
     
-    var candidates: js.Array[MediaRepositoryConfigureResponseCandidatesItem] = js.native
+    var candidates: js.Array[MediaRepositoryConfigureResponseCandidatesItem]
   }
   object MediaRepositoryConfigureResponseImageVersions2 {
     
@@ -86,60 +82,59 @@ object mediaRepositoryConfigureResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureResponseMedia extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var can_viewer_reshare: Boolean = js.native
+    var can_viewer_reshare: Boolean
     
-    var can_viewer_save: Boolean = js.native
+    var can_viewer_save: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var client_cache_key: String = js.native
+    var client_cache_key: String
     
-    var code: String = js.native
+    var code: String
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_threading_enabled: Boolean = js.native
+    var comment_threading_enabled: Boolean
     
-    var device_timestamp: Double = js.native
+    var device_timestamp: Double
     
-    var fb_user_tags: MediaRepositoryConfigureResponseFbUserTags = js.native
+    var fb_user_tags: MediaRepositoryConfigureResponseFbUserTags
     
-    var filter_type: Double = js.native
+    var filter_type: Double
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var image_versions2: MediaRepositoryConfigureResponseImageVersions2 = js.native
+    var image_versions2: MediaRepositoryConfigureResponseImageVersions2
     
-    var max_num_visible_preview_comments: Double = js.native
+    var max_num_visible_preview_comments: Double
     
-    var media_type: Double = js.native
+    var media_type: Double
     
-    var organic_tracking_token: String = js.native
+    var organic_tracking_token: String
     
-    var original_height: Double = js.native
+    var original_height: Double
     
-    var original_width: Double = js.native
+    var original_width: Double
     
-    var photo_of_you: Boolean = js.native
+    var photo_of_you: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_comments: js.Array[_] = js.native
+    var preview_comments: js.Array[js.Any]
     
-    var taken_at: Double = js.native
+    var taken_at: Double
     
-    var user: MediaRepositoryConfigureResponseUser = js.native
+    var user: MediaRepositoryConfigureResponseUser
   }
   object MediaRepositoryConfigureResponseMedia {
     
@@ -168,7 +163,7 @@ object mediaRepositoryConfigureResponseMod {
       original_width: Double,
       photo_of_you: Boolean,
       pk: String,
-      preview_comments: js.Array[_],
+      preview_comments: js.Array[js.Any],
       taken_at: Double,
       user: MediaRepositoryConfigureResponseUser
     ): MediaRepositoryConfigureResponseMedia = {
@@ -249,7 +244,7 @@ object mediaRepositoryConfigureResponseMod {
       def setPk(value: String): Self = StObject.set(x, "pk", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPreview_comments(value: js.Array[_]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
+      def setPreview_comments(value: js.Array[js.Any]): Self = StObject.set(x, "preview_comments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPreview_commentsVarargs(value: js.Any*): Self = StObject.set(x, "preview_comments", js.Array(value :_*))
@@ -262,14 +257,13 @@ object mediaRepositoryConfigureResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureResponseRootObject extends StObject {
     
-    var media: MediaRepositoryConfigureResponseMedia = js.native
+    var media: MediaRepositoryConfigureResponseMedia
     
-    var status: String = js.native
+    var status: String
     
-    var upload_id: String = js.native
+    var upload_id: String
   }
   object MediaRepositoryConfigureResponseRootObject {
     
@@ -293,34 +287,33 @@ object mediaRepositoryConfigureResponseMod {
     }
   }
   
-  @js.native
   trait MediaRepositoryConfigureResponseUser extends StObject {
     
-    var allowed_commenter_type: String = js.native
+    var allowed_commenter_type: String
     
-    var can_boost_post: Boolean = js.native
+    var can_boost_post: Boolean
     
-    var can_see_organic_insights: Boolean = js.native
+    var can_see_organic_insights: Boolean
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_unpublished: Boolean = js.native
+    var is_unpublished: Boolean
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var reel_auto_archive: String = js.native
+    var reel_auto_archive: String
     
-    var show_insights_terms: Boolean = js.native
+    var show_insights_terms: Boolean
     
-    var username: String = js.native
+    var username: String
   }
   object MediaRepositoryConfigureResponseUser {
     

@@ -3,33 +3,33 @@ package typings.senchaTouch.Ext.device
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqlite {
   
-  @js.native
-  trait IDatabase extends IBase {
+  trait IDatabase
+    extends StObject
+       with IBase {
     
     /** [Method] Verifies and changes the version of the database at the same time as doing a schema update with a Ext device sqlite S
       * @param config Object The object which contains the following config options:
       */
-    var changeVersion: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var changeVersion: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the current version of the database
       * @returns String The database current version.
       */
-    var getVersion: js.UndefOr[js.Function0[String]] = js.native
+    var getVersion: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Works the same way as transaction but performs a Ext device sqlite SQLTransaction instance in a read only mode
       * @param config Object
       */
-    var readTransaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var readTransaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Performs a Ext device sqlite SQLTransaction instance in a read write mode
       * @param config Object The object which contains the following config options:
       */
-    var transaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var transaction: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IDatabase {
     
@@ -68,23 +68,24 @@ object sqlite {
     }
   }
   
-  @js.native
-  trait ISQLResultSet extends IBase {
+  trait ISQLResultSet
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the row ID of the last row that the SQL statement inserted into the database if the statement inserted any r
       * @returns Number The inserted row ID.
       */
-    var getInsertId: js.UndefOr[js.Function0[Double]] = js.native
+    var getInsertId: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns a Ext device sqlite SQLResultSetRowList instance representing rows returned by the SQL statement
       * @returns Ext.device.sqlite.SQLResultSetRowList The rows.
       */
-    var getRows: js.UndefOr[js.Function0[ISQLResultSetRowList]] = js.native
+    var getRows: js.UndefOr[js.Function0[ISQLResultSetRowList]] = js.undefined
     
     /** [Method] Returns the number of rows that were changed by the SQL statement
       * @returns Number The number of rows affected.
       */
-    var getRowsAffected: js.UndefOr[js.Function0[Double]] = js.native
+    var getRowsAffected: js.UndefOr[js.Function0[Double]] = js.undefined
   }
   object ISQLResultSet {
     
@@ -117,19 +118,20 @@ object sqlite {
     }
   }
   
-  @js.native
-  trait ISQLResultSetRowList extends IBase {
+  trait ISQLResultSetRowList
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the number of rows returned by the SQL statement
       * @returns Number The number of rows.
       */
-    var getLength: js.UndefOr[js.Function0[Double]] = js.native
+    var getLength: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns a row at specified index returned by the SQL statement
       * @param index Number This is required. The index of a row.
       * @returns Object The row.
       */
-    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], _]] = js.native
+    var item: js.UndefOr[js.Function1[/* index */ js.UndefOr[Double], js.Any]] = js.undefined
   }
   object ISQLResultSetRowList {
     
@@ -149,20 +151,21 @@ object sqlite {
       def setGetLengthUndefined: Self = StObject.set(x, "getLength", js.undefined)
       
       @scala.inline
-      def setItem(value: /* index */ js.UndefOr[Double] => _): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      def setItem(value: /* index */ js.UndefOr[Double] => js.Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
       @scala.inline
       def setItemUndefined: Self = StObject.set(x, "item", js.undefined)
     }
   }
   
-  @js.native
-  trait ISQLTransaction extends IBase {
+  trait ISQLTransaction
+    extends StObject
+       with IBase {
     
     /** [Method] Executes an SQL statement
       * @param config Object The object which contains the following config options:
       */
-    var executeSql: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.native
+    var executeSql: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISQLTransaction {
     
@@ -183,14 +186,15 @@ object sqlite {
     }
   }
   
-  @js.native
-  trait ISencha extends IBase {
+  trait ISencha
+    extends StObject
+       with IBase {
     
     /** [Method] Returns a Ext device sqlite Database instance
       * @param config Object The object which contains the following config options:
       * @returns Ext.device.sqlite.Database The opened database, null if an error occured.
       */
-    var openDatabase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], IDatabase]] = js.native
+    var openDatabase: js.UndefOr[js.Function1[/* config */ js.UndefOr[js.Any], IDatabase]] = js.undefined
   }
   object ISencha {
     

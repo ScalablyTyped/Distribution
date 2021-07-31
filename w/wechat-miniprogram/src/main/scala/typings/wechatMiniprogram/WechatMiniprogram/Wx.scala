@@ -6,7 +6,6 @@ import typings.wechatMiniprogram.WxCloud
 import typings.wechatMiniprogram.anon.USERDATAPATH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -2413,7 +2412,7 @@ trait Wx extends StObject {
   ```
   *
   * 最低基础库： `2.2.3` */
-  def nextTick(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  def nextTick(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.notifyBLECharacteristicValueChange(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.notifyBLECharacteristicValueChange.html)
   *
@@ -2455,7 +2454,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.3` */
   def offAccelerometerChange(/** 加速度数据事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offAppHide(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.offAppHide.html)
     *
@@ -2499,7 +2498,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offBLECharacteristicValueChange(/** 低功耗蓝牙设备的特征值变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offBLEConnectionStateChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-ble/wx.offBLEConnectionStateChange.html)
     *
@@ -2507,7 +2506,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offBLEConnectionStateChange(/** 低功耗蓝牙连接状态的改变事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offBLEPeripheralConnectionStateChanged(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth-peripheral/wx.offBLEPeripheralConnectionStateChanged.html)
     *
@@ -2542,7 +2541,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offBluetoothAdapterStateChange(/** 蓝牙适配器状态变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offBluetoothDeviceFound(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/bluetooth/wx.offBluetoothDeviceFound.html)
     *
@@ -2550,7 +2549,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offBluetoothDeviceFound(/** 寻找到新设备的事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offCompassChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/compass/wx.offCompassChange.html)
     *
@@ -2558,7 +2557,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.3` */
   def offCompassChange(/** 罗盘数据变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offDeviceMotionChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/motion/wx.offDeviceMotionChange.html)
     *
@@ -2566,7 +2565,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.3` */
   def offDeviceMotionChange(/** 设备方向变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offError(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.offError.html)
     *
@@ -2574,7 +2573,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.1.2` */
   def offError(/** 小程序错误事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offGetWifiList(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/wifi/wx.offGetWifiList.html)
     *
@@ -2582,7 +2581,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offGetWifiList(/** 获取到 Wi-Fi 列表数据事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offGyroscopeChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/gyroscope/wx.offGyroscopeChange.html)
     *
@@ -2590,7 +2589,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.3` */
   def offGyroscopeChange(/** 陀螺仪数据变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offHCEMessage(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/nfc/wx.offHCEMessage.html)
     *
@@ -2598,7 +2597,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.8.1` */
   def offHCEMessage(/** 接收 NFC 设备消息事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offKeyboardHeightChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ui/keyboard/wx.offKeyboardHeightChange.html)
     *
@@ -2606,7 +2605,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.2` */
   def offKeyboardHeightChange(/** 键盘高度变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offLocalServiceDiscoveryStop(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/network/mdns/wx.offLocalServiceDiscoveryStop.html)
     *
@@ -2659,7 +2658,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offMemoryWarning(/** 内存不足告警事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offNetworkStatusChange(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/device/network/wx.offNetworkStatusChange.html)
     *
@@ -2667,7 +2666,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.3` */
   def offNetworkStatusChange(/** 网络状态变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offPageNotFound(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/base/app/app-event/wx.offPageNotFound.html)
     *
@@ -2703,7 +2702,7 @@ trait Wx extends StObject {
     * 最低基础库： `2.9.3` */
   def offUserCaptureScreen(): Unit = js.native
   def offUserCaptureScreen(/** 用户主动截屏事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offVoIPChatInterrupted(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/voip/wx.offVoIPChatInterrupted.html)
     *
@@ -2711,7 +2710,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offVoIPChatInterrupted(/** 被动断开实时语音通话事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offVoIPChatMembersChanged(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/voip/wx.offVoIPChatMembersChanged.html)
     *
@@ -2719,7 +2718,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offVoIPChatMembersChanged(/** 实时语音通话成员在线状态变化事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offVoIPVideoMembersChanged(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/media/voip/wx.offVoIPVideoMembersChanged.html)
     *
@@ -2736,7 +2735,7 @@ trait Wx extends StObject {
     *
     * 最低基础库： `2.9.0` */
   def offWifiConnected(/** 连接上 Wi-Fi 的事件的回调函数 */
-  callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
   
   /** [wx.offWindowResize(function callback)](https://developers.weixin.qq.com/miniprogram/dev/api/ui/window/wx.offWindowResize.html)
     *
@@ -3744,10 +3743,14 @@ trait Wx extends StObject {
   id: Double, /** 需要上报的数值 */
   value: Double, /** 自定义维度 (选填) */
   dimensions: String): Unit = js.native
-  def reportPerformance(/** 指标 id */
-  id: Double, /** 需要上报的数值 */
-  value: Double, /** 自定义维度 (选填) */
-  dimensions: js.Array[_]): Unit = js.native
+  def reportPerformance(
+    /** 指标 id */
+  id: Double,
+    /** 需要上报的数值 */
+  value: Double,
+    /** 自定义维度 (选填) */
+  dimensions: js.Array[js.Any]
+  ): Unit = js.native
   
   /** [[RequestTask](https://developers.weixin.qq.com/miniprogram/dev/api/network/request/RequestTask.html) wx.request(Object object)](https://developers.weixin.qq.com/miniprogram/dev/api/network/request/wx.request.html)
   *

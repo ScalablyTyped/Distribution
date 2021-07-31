@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridAutoFlowProps extends StObject {
   
   val gridAutoFlow: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridAutoFlowProps {
   
@@ -28,7 +26,7 @@ object GridAutoFlowProps {
     @scala.inline
     def setGridAutoFlow(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any
         ]
     ): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object GridAutoFlowProps {
     def setGridAutoFlowUndefined: Self = StObject.set(x, "gridAutoFlow", js.undefined)
     
     @scala.inline
-    def setGridAutoFlowVarargs(value: js.Any*): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
+    def setGridAutoFlowVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridAutoFlow */ js.Any)*
+    ): Self = StObject.set(x, "gridAutoFlow", js.Array(value :_*))
   }
 }

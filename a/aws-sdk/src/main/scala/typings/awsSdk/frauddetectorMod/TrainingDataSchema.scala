@@ -2,18 +2,16 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingDataSchema extends StObject {
   
-  var labelSchema: LabelSchema = js.native
+  var labelSchema: LabelSchema
   
   /**
     * The training data schema variables.
     */
-  var modelVariables: ListOfStrings = js.native
+  var modelVariables: ListOfStrings
 }
 object TrainingDataSchema {
   

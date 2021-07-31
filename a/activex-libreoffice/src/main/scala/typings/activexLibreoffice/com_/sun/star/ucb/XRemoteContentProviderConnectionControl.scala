@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @author Stephan Bergmann
   * @version 1.0
   */
-@js.native
-trait XRemoteContentProviderConnectionControl extends XInterface {
+trait XRemoteContentProviderConnectionControl
+  extends StObject
+     with XInterface {
   
   /**
     * Enable connection control, using as a token some object implemented on the remote content provider acceptor's side.
@@ -25,7 +25,7 @@ trait XRemoteContentProviderConnectionControl extends XInterface {
     * @param Acceptor The remote content provider acceptor on the other side of the connection.
     * @param Token Some object implemented on the remote content provider acceptor's side of the connection.
     */
-  def enableConnectionControl(Acceptor: XRemoteContentProviderAcceptor, Token: XInterface): Unit = js.native
+  def enableConnectionControl(Acceptor: XRemoteContentProviderAcceptor, Token: XInterface): Unit
 }
 object XRemoteContentProviderConnectionControl {
   

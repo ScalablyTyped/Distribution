@@ -2,19 +2,17 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  val count: js.UndefOr[Double] = js.native
+  val count: js.UndefOr[Double] = js.undefined
   
-  val create_time: js.UndefOr[String] = js.native
+  val create_time: js.UndefOr[String] = js.undefined
   
-  val httpStatusCode: Double = js.native
+  val httpStatusCode: Double
   
-  val total_count: js.UndefOr[Double] = js.native
+  val total_count: js.UndefOr[Double] = js.undefined
 }
 object Response {
   

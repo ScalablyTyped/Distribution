@@ -2,74 +2,74 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebMapProperties extends MapProperties {
+trait WebMapProperties
+  extends StObject
+     with MapProperties {
   
   /**
     * The applicationProperties contains the viewing properties of the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#applicationProperties)
     */
-  var applicationProperties: js.UndefOr[ApplicationPropertiesProperties] = js.native
+  var applicationProperties: js.UndefOr[ApplicationPropertiesProperties] = js.undefined
   
   /**
     * The name of the application that authored the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringApp)
     */
-  var authoringApp: js.UndefOr[String] = js.native
+  var authoringApp: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the application that authored the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#authoringAppVersion)
     */
-  var authoringAppVersion: js.UndefOr[String] = js.native
+  var authoringAppVersion: js.UndefOr[String] = js.undefined
   
   /**
     * An array of saved geographic extents that allow end users to quickly navigate to a particular area of interest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#bookmarks)
     */
-  var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.native
+  var bookmarks: js.UndefOr[CollectionProperties[BookmarkProperties]] = js.undefined
   
   /**
     * The initial view of the WebMap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#initialViewProperties)
     */
-  var initialViewProperties: js.UndefOr[InitialViewPropertiesProperties] = js.native
+  var initialViewProperties: js.UndefOr[InitialViewPropertiesProperties] = js.undefined
   
   /**
     * The portal item from which the WebMap is loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#portalItem)
     */
-  var portalItem: js.UndefOr[PortalItemProperties] = js.native
+  var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
     * Provides multiple slides.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#presentation)
     */
-  var presentation: js.UndefOr[js.Any] = js.native
+  var presentation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The URL to the thumbnail used for the webmap.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#thumbnailUrl)
     */
-  var thumbnailUrl: js.UndefOr[String] = js.native
+  var thumbnailUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The widgets object contains widgets that are exposed to the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#widgets)
     */
-  var widgets: js.UndefOr[Widgets] = js.native
+  var widgets: js.UndefOr[Widgets] = js.undefined
 }
 object WebMapProperties {
   

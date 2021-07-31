@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteStreamResponse extends StObject {
   
   /** The result of the execution. */
-  var result: js.UndefOr[ScriptExecutionResult] = js.native
+  var result: js.UndefOr[ScriptExecutionResult] = js.undefined
 }
 object ExecuteStreamResponse {
   

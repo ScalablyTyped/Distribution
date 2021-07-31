@@ -10,9 +10,9 @@ This package is for supporting Tizen Web Device API as commonjs style.
 | ------------------ | :-------------: |
 | Full name          | tizen-common-web |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 162 |
+| # downloads        | 1028 |
 | # stars            | 0 |
 
 ## Links

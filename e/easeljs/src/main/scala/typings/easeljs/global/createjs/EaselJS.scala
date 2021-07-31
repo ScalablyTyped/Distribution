@@ -2,13 +2,13 @@ package typings.easeljs.global.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("createjs.EaselJS")
 @js.native
 class EaselJS ()
-  extends typings.easeljs.createjs.EaselJS
+  extends StObject
+     with typings.easeljs.createjs.EaselJS
 /* static members */
 object EaselJS {
   

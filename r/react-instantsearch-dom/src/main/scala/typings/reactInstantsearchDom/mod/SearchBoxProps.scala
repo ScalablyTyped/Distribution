@@ -7,33 +7,33 @@ import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchBoxProps extends CommonWidgetProps {
+trait SearchBoxProps
+  extends StObject
+     with CommonWidgetProps {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var defaultRefinement: js.UndefOr[String] = js.native
+  var defaultRefinement: js.UndefOr[String] = js.undefined
   
-  var focusShortcuts: js.UndefOr[js.Array[String]] = js.native
+  var focusShortcuts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var loadingIndicator: js.UndefOr[Element] = js.native
+  var loadingIndicator: js.UndefOr[Element] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event], _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLInputElement, Event], js.Any]] = js.undefined
   
-  var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], _]] = js.native
+  var onReset: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], js.Any]] = js.undefined
   
-  var onSubmit: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], _]] = js.native
+  var onSubmit: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLFormElement, Event], js.Any]] = js.undefined
   
-  var reset: js.UndefOr[Element] = js.native
+  var reset: js.UndefOr[Element] = js.undefined
   
-  var searchAsYouType: js.UndefOr[Boolean] = js.native
+  var searchAsYouType: js.UndefOr[Boolean] = js.undefined
   
-  var showLoadingIndicator: js.UndefOr[Boolean] = js.native
+  var showLoadingIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var submit: js.UndefOr[Element] = js.native
+  var submit: js.UndefOr[Element] = js.undefined
 }
 object SearchBoxProps {
   
@@ -74,19 +74,19 @@ object SearchBoxProps {
     def setLoadingIndicatorUndefined: Self = StObject.set(x, "loadingIndicator", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* event */ SyntheticEvent[HTMLInputElement, Event] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
     
     @scala.inline
-    def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
+    def setOnReset(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => js.Any): Self = StObject.set(x, "onReset", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
     
     @scala.inline
-    def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => _): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
+    def setOnSubmit(value: /* event */ SyntheticEvent[HTMLFormElement, Event] => js.Any): Self = StObject.set(x, "onSubmit", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)

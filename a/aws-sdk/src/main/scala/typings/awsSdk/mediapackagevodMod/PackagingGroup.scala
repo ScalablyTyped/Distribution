@@ -2,30 +2,28 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackagingGroup extends StObject {
   
   /**
     * The ARN of the PackagingGroup.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
-  var Authorization: js.UndefOr[typings.awsSdk.mediapackagevodMod.Authorization] = js.native
+  var Authorization: js.UndefOr[typings.awsSdk.mediapackagevodMod.Authorization] = js.undefined
   
   /**
     * The fully qualified domain name for Assets in the PackagingGroup.
     */
-  var DomainName: js.UndefOr[string] = js.native
+  var DomainName: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the PackagingGroup.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
-  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.mediapackagevodMod.Tags] = js.undefined
 }
 object PackagingGroup {
   

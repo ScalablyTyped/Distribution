@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientWebmasters.anon.Key
 import typings.maximMazurokGapiClientWebmasters.anon.Oauthtoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -17,18 +16,17 @@ object gapi {
     
     object webmasters {
       
-      @js.native
       trait ApiDataRow extends StObject {
         
-        var clicks: js.UndefOr[Double] = js.native
+        var clicks: js.UndefOr[Double] = js.undefined
         
-        var ctr: js.UndefOr[Double] = js.native
+        var ctr: js.UndefOr[Double] = js.undefined
         
-        var impressions: js.UndefOr[Double] = js.native
+        var impressions: js.UndefOr[Double] = js.undefined
         
-        var keys: js.UndefOr[js.Array[String]] = js.native
+        var keys: js.UndefOr[js.Array[String]] = js.undefined
         
-        var position: js.UndefOr[Double] = js.native
+        var position: js.UndefOr[Double] = js.undefined
       }
       object ApiDataRow {
         
@@ -76,14 +74,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ApiDimensionFilter extends StObject {
         
-        var dimension: js.UndefOr[String] = js.native
+        var dimension: js.UndefOr[String] = js.undefined
         
-        var expression: js.UndefOr[String] = js.native
+        var expression: js.UndefOr[String] = js.undefined
         
-        var operator: js.UndefOr[String] = js.native
+        var operator: js.UndefOr[String] = js.undefined
       }
       object ApiDimensionFilter {
         
@@ -116,12 +113,11 @@ object gapi {
         }
       }
       
-      @js.native
       trait ApiDimensionFilterGroup extends StObject {
         
-        var filters: js.UndefOr[js.Array[ApiDimensionFilter]] = js.native
+        var filters: js.UndefOr[js.Array[ApiDimensionFilter]] = js.undefined
         
-        var groupType: js.UndefOr[String] = js.native
+        var groupType: js.UndefOr[String] = js.undefined
       }
       object ApiDimensionFilterGroup {
         
@@ -151,7 +147,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait SearchAnalyticsQueryRequest extends StObject {
         
         /**
@@ -164,34 +159,34 @@ object gapi {
           * If you specify any value other than AUTO, the aggregation type in the result will match the requested type, or if you request an invalid type, you will get an error. The API will
           * never change your aggregation type if the requested type is invalid.
           */
-        var aggregationType: js.UndefOr[String] = js.native
+        var aggregationType: js.UndefOr[String] = js.undefined
         
         /**
           * [Optional] Zero or more filters to apply to the dimension grouping values; for example, 'query contains "buy"' to see only data where the query string contains the substring "buy"
           * (not case-sensitive). You can filter by a dimension without grouping by it.
           */
-        var dimensionFilterGroups: js.UndefOr[js.Array[ApiDimensionFilterGroup]] = js.native
+        var dimensionFilterGroups: js.UndefOr[js.Array[ApiDimensionFilterGroup]] = js.undefined
         
         /**
           * [Optional] Zero or more dimensions to group results by. Dimensions are the group-by values in the Search Analytics page. Dimensions are combined to create a unique row key for each
           * row. Results are grouped in the order that you supply these dimensions.
           */
-        var dimensions: js.UndefOr[js.Array[String]] = js.native
+        var dimensions: js.UndefOr[js.Array[String]] = js.undefined
         
         /** [Required] End date of the requested date range, in YYYY-MM-DD format, in PST (UTC - 8:00). Must be greater than or equal to the start date. This value is included in the range. */
-        var endDate: js.UndefOr[String] = js.native
+        var endDate: js.UndefOr[String] = js.undefined
         
         /** [Optional; Default is 1000] The maximum number of rows to return. Must be a number from 1 to 5,000 (inclusive). */
-        var rowLimit: js.UndefOr[Double] = js.native
+        var rowLimit: js.UndefOr[Double] = js.undefined
         
         /** [Optional; Default is "web"] The search type to filter for. */
-        var searchType: js.UndefOr[String] = js.native
+        var searchType: js.UndefOr[String] = js.undefined
         
         /** [Required] Start date of the requested date range, in YYYY-MM-DD format, in PST time (UTC - 8:00). Must be less than or equal to the end date. This value is included in the range. */
-        var startDate: js.UndefOr[String] = js.native
+        var startDate: js.UndefOr[String] = js.undefined
         
         /** [Optional; Default is 0] Zero-based index of the first row in the response. Must be a non-negative number. */
-        var startRow: js.UndefOr[Double] = js.native
+        var startRow: js.UndefOr[Double] = js.undefined
       }
       object SearchAnalyticsQueryRequest {
         
@@ -260,14 +255,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait SearchAnalyticsQueryResponse extends StObject {
         
         /** How the results were aggregated. */
-        var responseAggregationType: js.UndefOr[String] = js.native
+        var responseAggregationType: js.UndefOr[String] = js.undefined
         
         /** A list of rows grouped by the key values in the order given in the query. */
-        var rows: js.UndefOr[js.Array[ApiDataRow]] = js.native
+        var rows: js.UndefOr[js.Array[ApiDataRow]] = js.undefined
       }
       object SearchAnalyticsQueryResponse {
         
@@ -310,11 +304,10 @@ object gapi {
         def query(request: Fields, body: SearchAnalyticsQueryRequest): Request[SearchAnalyticsQueryResponse] = js.native
       }
       
-      @js.native
       trait SitemapsListResponse extends StObject {
         
         /** Contains detailed information about a specific URL submitted as a sitemap. */
-        var sitemap: js.UndefOr[js.Array[WmxSitemap]] = js.native
+        var sitemap: js.UndefOr[js.Array[WmxSitemap]] = js.undefined
       }
       object SitemapsListResponse {
         
@@ -358,11 +351,10 @@ object gapi {
         def submit(request: Feedpath): Request[Unit] = js.native
       }
       
-      @js.native
       trait SitesListResponse extends StObject {
         
         /** Contains permission level information about a Search Console site. For more information, see Permissions in Search Console. */
-        var siteEntry: js.UndefOr[js.Array[WmxSite]] = js.native
+        var siteEntry: js.UndefOr[js.Array[WmxSite]] = js.undefined
       }
       object SitesListResponse {
         
@@ -406,14 +398,13 @@ object gapi {
         def list(request: Oauthtoken): Request[SitesListResponse] = js.native
       }
       
-      @js.native
       trait WmxSite extends StObject {
         
         /** The user's permission level for the site. */
-        var permissionLevel: js.UndefOr[String] = js.native
+        var permissionLevel: js.UndefOr[String] = js.undefined
         
         /** The URL of the site. */
-        var siteUrl: js.UndefOr[String] = js.native
+        var siteUrl: js.UndefOr[String] = js.undefined
       }
       object WmxSite {
         
@@ -440,35 +431,34 @@ object gapi {
         }
       }
       
-      @js.native
       trait WmxSitemap extends StObject {
         
         /** The various content types in the sitemap. */
-        var contents: js.UndefOr[js.Array[WmxSitemapContent]] = js.native
+        var contents: js.UndefOr[js.Array[WmxSitemapContent]] = js.undefined
         
         /** Number of errors in the sitemap. These are issues with the sitemap itself that need to be fixed before it can be processed correctly. */
-        var errors: js.UndefOr[String] = js.native
+        var errors: js.UndefOr[String] = js.undefined
         
         /** If true, the sitemap has not been processed. */
-        var isPending: js.UndefOr[Boolean] = js.native
+        var isPending: js.UndefOr[Boolean] = js.undefined
         
         /** If true, the sitemap is a collection of sitemaps. */
-        var isSitemapsIndex: js.UndefOr[Boolean] = js.native
+        var isSitemapsIndex: js.UndefOr[Boolean] = js.undefined
         
         /** Date & time in which this sitemap was last downloaded. Date format is in RFC 3339 format (yyyy-mm-dd). */
-        var lastDownloaded: js.UndefOr[String] = js.native
+        var lastDownloaded: js.UndefOr[String] = js.undefined
         
         /** Date & time in which this sitemap was submitted. Date format is in RFC 3339 format (yyyy-mm-dd). */
-        var lastSubmitted: js.UndefOr[String] = js.native
+        var lastSubmitted: js.UndefOr[String] = js.undefined
         
         /** The url of the sitemap. */
-        var path: js.UndefOr[String] = js.native
+        var path: js.UndefOr[String] = js.undefined
         
         /** The type of the sitemap. For example: rssFeed. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
         
         /** Number of warnings for the sitemap. These are generally non-critical issues with URLs in the sitemaps. */
-        var warnings: js.UndefOr[String] = js.native
+        var warnings: js.UndefOr[String] = js.undefined
       }
       object WmxSitemap {
         
@@ -540,17 +530,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait WmxSitemapContent extends StObject {
         
         /** The number of URLs from the sitemap that were indexed (of the content type). */
-        var indexed: js.UndefOr[String] = js.native
+        var indexed: js.UndefOr[String] = js.undefined
         
         /** The number of URLs in the sitemap (of the content type). */
-        var submitted: js.UndefOr[String] = js.native
+        var submitted: js.UndefOr[String] = js.undefined
         
         /** The specific type of content in this sitemap. For example: web. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object WmxSitemapContent {
         

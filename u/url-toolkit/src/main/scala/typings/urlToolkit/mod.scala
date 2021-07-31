@@ -3,44 +3,41 @@ package typings.urlToolkit
 import typings.urlToolkit.anon.AlwaysNormalize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("url-toolkit", "buildAbsoluteURL")
+  @JSImport("url-toolkit", JSImport.Namespace)
   @js.native
-  def buildAbsoluteURL(baseURL: String, relativeURL: String): String = js.native
-  @JSImport("url-toolkit", "buildAbsoluteURL")
-  @js.native
-  def buildAbsoluteURL(baseURL: String, relativeURL: String, opts: AlwaysNormalize): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("url-toolkit", "buildURLFromParts")
-  @js.native
-  def buildURLFromParts(parts: URLParts): String = js.native
+  @scala.inline
+  def buildAbsoluteURL(baseURL: String, relativeURL: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAbsoluteURL")(baseURL.asInstanceOf[js.Any], relativeURL.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def buildAbsoluteURL(baseURL: String, relativeURL: String, opts: AlwaysNormalize): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildAbsoluteURL")(baseURL.asInstanceOf[js.Any], relativeURL.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("url-toolkit", "normalizePath")
-  @js.native
-  def normalizePath(path: String): String = js.native
+  @scala.inline
+  def buildURLFromParts(parts: URLParts): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildURLFromParts")(parts.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("url-toolkit", "parseURL")
-  @js.native
-  def parseURL(url: String): URLParts | Null = js.native
+  @scala.inline
+  def normalizePath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def parseURL(url: String): URLParts | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseURL")(url.asInstanceOf[js.Any]).asInstanceOf[URLParts | Null]
+  
   trait URLParts extends StObject {
     
-    var fragment: String = js.native
+    var fragment: String
     
-    var netLoc: String = js.native
+    var netLoc: String
     
-    var params: String = js.native
+    var params: String
     
-    var path: String = js.native
+    var path: String
     
-    var query: String = js.native
+    var query: String
     
-    var scheme: String = js.native
+    var scheme: String
   }
   object URLParts {
     

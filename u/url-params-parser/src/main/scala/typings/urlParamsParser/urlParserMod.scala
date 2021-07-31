@@ -3,46 +3,46 @@ package typings.urlParamsParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlParserMod {
   
-  @JSImport("url-params-parser/url_parser", "UrlParser")
+  @JSImport("url-params-parser/url_parser", JSImport.Namespace)
   @js.native
-  def UrlParser(urlString: String): UrlParserResult = js.native
-  @JSImport("url-params-parser/url_parser", "UrlParser")
-  @js.native
-  def UrlParser(urlString: String, namedUrl: String): UrlParserResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def UrlParser(urlString: String): UrlParserResult = ^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any]).asInstanceOf[UrlParserResult]
+  @scala.inline
+  def UrlParser(urlString: String, namedUrl: String): UrlParserResult = (^.asInstanceOf[js.Dynamic].applyDynamic("UrlParser")(urlString.asInstanceOf[js.Any], namedUrl.asInstanceOf[js.Any])).asInstanceOf[UrlParserResult]
+  
   trait UrlParserResult extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var namedParams: StringDictionary[String] = js.native
+    var namedParams: StringDictionary[String]
     
-    var namedParamsKeys: js.Array[String] = js.native
+    var namedParamsKeys: js.Array[String]
     
-    var namedParamsValues: js.Array[String] = js.native
+    var namedParamsValues: js.Array[String]
     
-    var pathNames: js.Array[String] = js.native
+    var pathNames: js.Array[String]
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var queryParams: StringDictionary[String] = js.native
+    var queryParams: StringDictionary[String]
     
-    var queryParamsKeys: js.Array[String] = js.native
+    var queryParamsKeys: js.Array[String]
     
-    var queryParamsValues: js.Array[String] = js.native
+    var queryParamsValues: js.Array[String]
     
-    var search: String = js.native
+    var search: String
   }
   object UrlParserResult {
     

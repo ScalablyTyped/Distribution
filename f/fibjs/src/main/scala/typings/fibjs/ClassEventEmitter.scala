@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Event 对象可独立创建，以用于组建自定义的事件系统：,```JavaScript,var EventEmitter = require('events');,,var e = new EventEmitter();,```
   */
 @js.native
-trait ClassEventEmitter extends ClassObject {
+trait ClassEventEmitter
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -66,7 +67,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     * 
     */
-  def eventNames(): js.Array[_] = js.native
+  def eventNames(): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -98,7 +99,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     * 
     */
-  def listeners(ev: String): js.Array[_] = js.native
+  def listeners(ev: String): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -230,7 +231,7 @@ trait ClassEventEmitter extends ClassObject {
     * 
     */
   def removeAllListeners(): js.Object = js.native
-  def removeAllListeners(evs: js.Array[_]): js.Object = js.native
+  def removeAllListeners(evs: js.Array[js.Any]): js.Object = js.native
   
   /**
     * 

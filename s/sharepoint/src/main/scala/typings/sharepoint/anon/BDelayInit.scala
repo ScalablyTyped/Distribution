@@ -2,17 +2,15 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BDelayInit extends StObject {
   
-  var bDelayInit: Boolean = js.native
+  var bDelayInit: Boolean
   
-  var separatorChar: String = js.native
+  var separatorChar: String
   
-  var singleValuePropTypeID: String = js.native
+  var singleValuePropTypeID: String
 }
 object BDelayInit {
   

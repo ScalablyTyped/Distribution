@@ -2,17 +2,15 @@ package typings.comDarktalkerCordovaScreenshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FilePath extends StObject {
     
-    var filePath: String = js.native
+    var filePath: String
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object FilePath {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait URI extends StObject {
     
-    var URI: String = js.native
+    var URI: String
   }
   object URI {
     

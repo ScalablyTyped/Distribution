@@ -2,13 +2,11 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StyleFillOpacity extends StObject {
   
-  var style: FillOpacity = js.native
+  var style: FillOpacity
 }
 object StyleFillOpacity {
   

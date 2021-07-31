@@ -2,31 +2,29 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectResult extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the created project.
     */
-  var arn: ProjectArn = js.native
+  var arn: ProjectArn
   
   /**
     * A user- or system-generated token that identifies the entity that requested project creation.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The ID of the project.
     */
-  var id: ProjectId = js.native
+  var id: ProjectId
   
   /**
     * Reserved for future use.
     */
-  var projectTemplateId: js.UndefOr[ProjectTemplateId] = js.native
+  var projectTemplateId: js.UndefOr[ProjectTemplateId] = js.undefined
 }
 object CreateProjectResult {
   

@@ -3,13 +3,14 @@ package typings.rxLiteBackpressure
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx {
   
   @js.native
-  trait ControlledObservable[T] extends Observable[T] {
+  trait ControlledObservable[T]
+    extends StObject
+       with Observable[T] {
     
     def request(): IDisposable = js.native
     def request(numberOfItems: Double): IDisposable = js.native
@@ -52,7 +53,9 @@ object Rx {
   }
   
   @js.native
-  trait PausableObservable[T] extends Observable[T] {
+  trait PausableObservable[T]
+    extends StObject
+       with Observable[T] {
     
     def pause(): Unit = js.native
     

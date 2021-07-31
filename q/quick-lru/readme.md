@@ -11,8 +11,8 @@ Simple “Least Recently Used” (LRU) cache
 | Full name          | quick-lru |
 | Keywords           | lru, quick, cache, caching, least, recently, used, fast, map, hash, buffer |
 | # releases         | 8 |
-| # dependents       | 107 |
-| # downloads        | 189804461 |
+| # dependents       | 123 |
+| # downloads        | 288451396 |
 | # stars            | 0 |
 
 ## Links

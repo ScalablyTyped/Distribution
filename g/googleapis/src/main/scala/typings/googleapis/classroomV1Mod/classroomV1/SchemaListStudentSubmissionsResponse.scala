@@ -2,25 +2,23 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response when listing student submissions.
   */
-@js.native
 trait SchemaListStudentSubmissionsResponse extends StObject {
   
   /**
     * Token identifying the next page of results to return. If empty, no
     * further results are available.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Student work that matches the request.
     */
-  var studentSubmissions: js.UndefOr[js.Array[SchemaStudentSubmission]] = js.native
+  var studentSubmissions: js.UndefOr[js.Array[SchemaStudentSubmission]] = js.undefined
 }
 object SchemaListStudentSubmissionsResponse {
   

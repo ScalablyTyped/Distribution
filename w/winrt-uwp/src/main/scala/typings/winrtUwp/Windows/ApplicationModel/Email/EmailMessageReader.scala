@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Email
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gets a batch of email messages. */
-@js.native
 trait EmailMessageReader extends StObject {
   
   /**
     * Reads a collection of email messages.
     * @return A batch of email messages.
     */
-  def readBatchAsync(): IPromiseWithIAsyncOperation[EmailMessageBatch] = js.native
+  def readBatchAsync(): IPromiseWithIAsyncOperation[EmailMessageBatch]
 }
 object EmailMessageReader {
   

@@ -2,19 +2,17 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message used in the `onVisibilityModeChanged` invocation.
   */
-@js.native
 trait VisibilityModeChangedMessage extends StObject {
   
   /**
     * Visibility changed state.
     */
-  var visibilityMode: VisibilityMode = js.native
+  var visibilityMode: VisibilityMode
 }
 object VisibilityModeChangedMessage {
   

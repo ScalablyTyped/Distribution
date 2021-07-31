@@ -2,21 +2,19 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines access rights for a single file */
-@js.native
 trait FileACL extends StObject {
   
   /** Full name of the user who owns this file, e.g. "system.user.admin" */
-  var owner: String = js.native
+  var owner: String
   
   /** Full name of the group who owns this file, e.g. "system.group.administrator" */
-  var ownerGroup: String = js.native
+  var ownerGroup: String
   
   /** Linux-type permissions defining access to this file */
-  var permissions: Double = js.native
+  var permissions: Double
 }
 object FileACL {
   

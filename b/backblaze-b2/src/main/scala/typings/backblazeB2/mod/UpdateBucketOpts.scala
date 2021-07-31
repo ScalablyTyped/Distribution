@@ -2,15 +2,15 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateBucketOpts extends CommonArgs {
+trait UpdateBucketOpts
+  extends StObject
+     with CommonArgs {
   
-  var bucketId: String = js.native
+  var bucketId: String
   
-  var bucketType: BucketType = js.native
+  var bucketType: BucketType
 }
 object UpdateBucketOpts {
   

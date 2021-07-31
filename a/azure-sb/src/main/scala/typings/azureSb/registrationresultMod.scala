@@ -2,7 +2,6 @@ package typings.azureSb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registrationresultMod {
@@ -13,12 +12,11 @@ object registrationresultMod {
       
       object Results {
         
-        @js.native
         trait RegistrationResult extends StObject {
           
-          def parse(xml: js.Object): js.Object | js.Array[js.Object] = js.native
+          def parse(xml: js.Object): js.Object | js.Array[js.Object]
           
-          def serialize(`type`: String, resource: js.Object, properties: js.Array[String]): String = js.native
+          def serialize(`type`: String, resource: js.Object, properties: js.Array[String]): String
         }
         object RegistrationResult {
           

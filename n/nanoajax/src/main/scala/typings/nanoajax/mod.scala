@@ -5,29 +5,30 @@ import typings.std.FormData
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nanoajax", "ajax")
+  @JSImport("nanoajax", JSImport.Namespace)
   @js.native
-  def ajax(params: RequestParameters, callback: Callback): XMLHttpRequest = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def ajax(params: RequestParameters, callback: Callback): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(params.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
   
   type Callback = js.Function3[/* statusCode */ Double, /* response */ String, /* request */ XMLHttpRequest, js.Any]
   
-  @js.native
   trait RequestParameters extends StObject {
     
-    var body: js.UndefOr[String | FormData] = js.native
+    var body: js.UndefOr[String | FormData] = js.undefined
     
-    var cors: js.UndefOr[Boolean] = js.native
+    var cors: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object RequestParameters {
     

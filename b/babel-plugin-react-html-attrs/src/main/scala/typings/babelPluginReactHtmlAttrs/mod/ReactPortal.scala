@@ -2,20 +2,19 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactPortal
-  extends ReactElement[js.Any, String | JSXElementConstructor[js.Any]] {
+  extends StObject
+     with ReactElement[js.Any, String | JSXElementConstructor[js.Any]] {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
 }
 object ReactPortal {
   
   @scala.inline
   def apply(props: js.Any, `type`: String | JSXElementConstructor[js.Any]): ReactPortal = {
-    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(props = props.asInstanceOf[js.Any], key = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactPortal]
   }

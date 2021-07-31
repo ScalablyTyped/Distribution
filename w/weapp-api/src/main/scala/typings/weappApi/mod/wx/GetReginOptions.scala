@@ -2,16 +2,16 @@ package typings.weappApi.mod.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetReginOptions extends CommonCallbackOptions {
+trait GetReginOptions
+  extends StObject
+     with CommonCallbackOptions {
   
   @JSName("success")
   var success_GetReginOptions: js.UndefOr[
     js.Function1[/* callback */ js.Function1[/* res */ GetReginSuccessCallbackOptions, Unit], Unit]
-  ] = js.native
+  ] = js.undefined
 }
 object GetReginOptions {
   

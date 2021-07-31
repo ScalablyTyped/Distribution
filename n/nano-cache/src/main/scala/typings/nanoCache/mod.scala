@@ -2,14 +2,15 @@ package typings.nanoCache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("nano-cache", JSImport.Namespace)
   @js.native
-  class ^ () extends NanoCache {
+  class ^ ()
+    extends StObject
+       with NanoCache {
     def this(options: Options) = this()
   }
   @JSImport("nano-cache", JSImport.Namespace)
@@ -24,14 +25,13 @@ object mod {
   @scala.inline
   def DEFAULTS__=(x: Defaults): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULTS")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait SIZE extends StObject {
     
-    var GB: Double = js.native
+    var GB: Double
     
-    var KB: Double = js.native
+    var KB: Double
     
-    var MB: Double = js.native
+    var MB: Double
   }
   object SIZE {
     
@@ -61,20 +61,19 @@ object mod {
   @scala.inline
   def singleton_=(x: NanoCache): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("singleton")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Defaults extends StObject {
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var compress: Boolean = js.native
+    var compress: Boolean
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var maxEvictBytes: Double = js.native
+    var maxEvictBytes: Double
     
-    var minFreeMem: Double = js.native
+    var minFreeMem: Double
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object Defaults {
     
@@ -113,30 +112,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Info extends StObject {
     
-    var accessed: Double = js.native
+    var accessed: Double
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var compressed: Boolean = js.native
+    var compressed: Boolean
     
-    var cost: Double = js.native
+    var cost: Double
     
-    var expires: Double = js.native
+    var expires: Double
     
-    var hits: Double = js.native
+    var hits: Double
     
-    var key: String = js.native
+    var key: String
     
-    var limit: Double = js.native
+    var limit: Double
     
-    var ttl: Double = js.native
+    var ttl: Double
     
-    var updated: Double = js.native
+    var updated: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Info {
     
@@ -219,20 +217,19 @@ object mod {
     def stats(): Stats = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var bytes: js.UndefOr[Double] = js.native
+    var bytes: js.UndefOr[Double] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var maxEvictBytes: js.UndefOr[Double] = js.native
+    var maxEvictBytes: js.UndefOr[Double] = js.undefined
     
-    var minFreeMem: js.UndefOr[Double] = js.native
+    var minFreeMem: js.UndefOr[Double] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -283,20 +280,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Stats extends StObject {
     
-    var age: Double = js.native
+    var age: Double
     
-    var bytes: Double = js.native
+    var bytes: Double
     
-    var count: Double = js.native
+    var count: Double
     
-    var evictions: Double = js.native
+    var evictions: Double
     
-    var hits: Double = js.native
+    var hits: Double
     
-    var misses: Double = js.native
+    var misses: Double
   }
   object Stats {
     

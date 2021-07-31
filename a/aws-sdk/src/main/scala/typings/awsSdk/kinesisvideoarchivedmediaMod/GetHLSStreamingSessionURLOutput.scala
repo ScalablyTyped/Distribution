@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisvideoarchivedmediaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHLSStreamingSessionURLOutput extends StObject {
   
   /**
     * The URL (containing the session token) that a media player can use to retrieve the HLS master playlist.
     */
-  var HLSStreamingSessionURL: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.HLSStreamingSessionURL] = js.native
+  var HLSStreamingSessionURL: js.UndefOr[typings.awsSdk.kinesisvideoarchivedmediaMod.HLSStreamingSessionURL] = js.undefined
 }
 object GetHLSStreamingSessionURLOutput {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placeholder extends StObject {
   
   /** The index of the placeholder. If the same placeholder types are present in the same page, they would have different index values. */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /** The object ID of this shape's parent placeholder. If unset, the parent placeholder shape does not exist, so the shape does not inherit properties from any other shape. */
-  var parentObjectId: js.UndefOr[String] = js.native
+  var parentObjectId: js.UndefOr[String] = js.undefined
   
   /** The type of the placeholder. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Placeholder {
   

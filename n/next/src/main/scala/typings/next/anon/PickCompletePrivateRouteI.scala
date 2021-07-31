@@ -4,16 +4,14 @@ import typings.react.mod.ComponentType
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<next.next/dist/next-server/lib/router/router.CompletePrivateRouteInfo, 'Component' | 'err'> */
-@js.native
 trait PickCompletePrivateRouteI extends StObject {
   
-  var Component: ComponentType[js.Object] = js.native
+  var Component: ComponentType[js.Object]
   
-  var err: js.UndefOr[Error] = js.native
+  var err: js.UndefOr[Error] = js.undefined
 }
 object PickCompletePrivateRouteI {
   

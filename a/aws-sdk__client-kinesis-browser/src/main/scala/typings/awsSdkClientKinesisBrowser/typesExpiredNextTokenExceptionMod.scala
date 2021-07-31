@@ -4,26 +4,23 @@ import typings.awsSdkClientKinesisBrowser.listShardsExceptionsUnionMod.ListShard
 import typings.awsSdkClientKinesisBrowser.listStreamConsumersExceptionsUnionMod.ListStreamConsumersExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesExpiredNextTokenExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExpiredNextTokenExceptionDetails> * / any */ @js.native
-  trait ExpiredNextTokenException
-    extends ListShardsExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ExpiredNextTokenExceptionDetails> * / any */ trait ExpiredNextTokenException
+    extends StObject
+       with ListShardsExceptionsUnion
        with ListStreamConsumersExceptionsUnion {
     
-    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredNextTokenException = js.native
+    var name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredNextTokenException
   }
   object ExpiredNextTokenException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.ExpiredNextTokenException
-    ): ExpiredNextTokenException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ExpiredNextTokenException = {
+      val __obj = js.Dynamic.literal(name = "ExpiredNextTokenException")
       __obj.asInstanceOf[ExpiredNextTokenException]
     }
     
@@ -37,13 +34,12 @@ object typesExpiredNextTokenExceptionMod {
     }
   }
   
-  @js.native
   trait ExpiredNextTokenExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ExpiredNextTokenExceptionDetails {
     

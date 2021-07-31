@@ -3,37 +3,35 @@ package typings.rcTable.interfaceMod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpandableConfig[RecordType] extends StObject {
   
-  var childrenColumnName: js.UndefOr[String] = js.native
+  var childrenColumnName: js.UndefOr[String] = js.undefined
   
-  var defaultExpandAllRows: js.UndefOr[Boolean] = js.native
+  var defaultExpandAllRows: js.UndefOr[Boolean] = js.undefined
   
-  var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.native
+  var defaultExpandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.native
+  var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
   
-  var expandIconColumnIndex: js.UndefOr[Double] = js.native
+  var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   
-  var expandRowByClick: js.UndefOr[Boolean] = js.native
+  var expandRowByClick: js.UndefOr[Boolean] = js.undefined
   
-  var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.native
+  var expandedRowClassName: js.UndefOr[RowClassName[RecordType]] = js.undefined
   
-  var expandedRowKeys: js.UndefOr[js.Array[Key]] = js.native
+  var expandedRowKeys: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.native
+  var expandedRowRender: js.UndefOr[ExpandedRowRender[RecordType]] = js.undefined
   
-  var indentSize: js.UndefOr[Double] = js.native
+  var indentSize: js.UndefOr[Double] = js.undefined
   
-  var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.native
+  var onExpand: js.UndefOr[js.Function2[/* expanded */ Boolean, /* record */ RecordType, Unit]] = js.undefined
   
-  var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.native
+  var onExpandedRowsChange: js.UndefOr[js.Function1[/* expandedKeys */ js.Array[Key], Unit]] = js.undefined
   
-  var rowExpandable: js.UndefOr[js.Function1[/* record */ RecordType, Boolean]] = js.native
+  var rowExpandable: js.UndefOr[js.Function1[/* record */ RecordType, Boolean]] = js.undefined
 }
 object ExpandableConfig {
   
@@ -44,7 +42,7 @@ object ExpandableConfig {
   }
   
   @scala.inline
-  implicit class ExpandableConfigMutableBuilder[Self <: ExpandableConfig[_], RecordType] (val x: Self with ExpandableConfig[RecordType]) extends AnyVal {
+  implicit class ExpandableConfigMutableBuilder[Self <: ExpandableConfig[?], RecordType] (val x: Self & ExpandableConfig[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])

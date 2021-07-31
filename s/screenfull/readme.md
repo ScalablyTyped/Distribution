@@ -11,9 +11,9 @@ Simple wrapper for cross-browser usage of the JavaScript Fullscreen API, which l
 | Full name          | screenfull |
 | Keywords           | browser, fullscreen |
 | # releases         | 9 |
-| # dependents       | 501 |
-| # downloads        | 11021324 |
-| # stars            | 12 |
+| # dependents       | 599 |
+| # downloads        | 14676146 |
+| # stars            | 13 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/screenfull.js#readme)

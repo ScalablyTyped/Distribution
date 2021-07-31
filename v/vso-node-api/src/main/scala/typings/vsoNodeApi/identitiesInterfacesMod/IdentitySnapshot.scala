@@ -2,21 +2,19 @@ package typings.vsoNodeApi.identitiesInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitySnapshot extends StObject {
   
-  var groups: js.Array[Identity] = js.native
+  var groups: js.Array[Identity]
   
-  var identityIds: js.Array[String] = js.native
+  var identityIds: js.Array[String]
   
-  var memberships: js.Array[GroupMembership] = js.native
+  var memberships: js.Array[GroupMembership]
   
-  var scopeId: String = js.native
+  var scopeId: String
   
-  var scopes: js.Array[IdentityScope] = js.native
+  var scopes: js.Array[IdentityScope]
 }
 object IdentitySnapshot {
   

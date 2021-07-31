@@ -5,31 +5,31 @@ import typings.reactNative.reactNativeStrings.padding
 import typings.reactNative.reactNativeStrings.position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyboardAvoidingViewProps extends ViewProps {
+trait KeyboardAvoidingViewProps
+  extends StObject
+     with ViewProps {
   
-  var behavior: js.UndefOr[height | position | padding] = js.native
+  var behavior: js.UndefOr[height | position | padding] = js.undefined
   
   /**
     * The style of the content container(View) when behavior is 'position'.
     */
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Enables or disables the KeyboardAvoidingView.
     *
     * Default is true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is the distance between the top of the user screen and the react native view,
     * may be non-zero in some use cases.
     */
-  var keyboardVerticalOffset: js.UndefOr[Double] = js.native
+  var keyboardVerticalOffset: js.UndefOr[Double] = js.undefined
 }
 object KeyboardAvoidingViewProps {
   

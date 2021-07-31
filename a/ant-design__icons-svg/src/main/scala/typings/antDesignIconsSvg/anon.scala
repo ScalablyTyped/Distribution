@@ -2,17 +2,15 @@ package typings.antDesignIconsSvg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PrimaryColor extends StObject {
     
-    var primaryColor: String = js.native
+    var primaryColor: String
     
-    var secondaryColor: String = js.native
+    var secondaryColor: String
   }
   object PrimaryColor {
     

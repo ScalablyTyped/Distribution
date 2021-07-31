@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyMetadata extends StObject {
   
   /**
     * An array of option strings supported by this setting.
     */
-  var options: js.UndefOr[js.Array[String]] = js.native
+  var options: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether the property is editable. Valid values are:
@@ -19,7 +17,7 @@ trait PropertyMetadata extends StObject {
     * - `editable`
     * - `read_only`
     */
-  var rights: js.UndefOr[String] = js.native
+  var rights: js.UndefOr[String] = js.undefined
 }
 object PropertyMetadata {
   

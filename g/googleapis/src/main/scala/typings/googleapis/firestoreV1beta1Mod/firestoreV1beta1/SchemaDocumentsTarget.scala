@@ -2,13 +2,11 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A target specified by a set of documents names.
   */
-@js.native
 trait SchemaDocumentsTarget extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaDocumentsTarget extends StObject {
     * The request will fail if any of the document is not a child resource of
     * the given `database`. Duplicate names will be elided.
     */
-  var documents: js.UndefOr[js.Array[String]] = js.native
+  var documents: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDocumentsTarget {
   

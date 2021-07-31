@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeatmapRampElement
-  extends Object
+  extends StObject
+     with Object
      with LegendElement {
   
   /**
@@ -17,21 +16,21 @@ trait HeatmapRampElement
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
     */
-  var infos: js.Array[HeatmapRampStop] = js.native
+  var infos: js.Array[HeatmapRampStop]
   
   /**
     * The title of the heatmap ramp as displayed in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
     */
-  var title: js.UndefOr[String | RampTitle] = js.native
+  var title: js.UndefOr[String | RampTitle] = js.undefined
   
   /**
     * The type of this element is always `heatmap-ramp`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend-support-ActiveLayerInfo.html#HeatmapRampElement)
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object HeatmapRampElement {
   

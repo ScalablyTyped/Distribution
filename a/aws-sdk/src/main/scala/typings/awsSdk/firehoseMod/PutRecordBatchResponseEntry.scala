@@ -2,26 +2,24 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecordBatchResponseEntry extends StObject {
   
   /**
     * The error code for an individual record result.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.firehoseMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.firehoseMod.ErrorCode] = js.undefined
   
   /**
     * The error message for an individual record result.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.firehoseMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.firehoseMod.ErrorMessage] = js.undefined
   
   /**
     * The ID of the record.
     */
-  var RecordId: js.UndefOr[PutResponseRecordId] = js.native
+  var RecordId: js.UndefOr[PutResponseRecordId] = js.undefined
 }
 object PutRecordBatchResponseEntry {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemoteworkersV1test2CommandTask extends StObject {
   
   /** The expected outputs from the task. */
-  var expectedOutputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] = js.native
+  var expectedOutputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskOutputs] = js.undefined
   
   /** The inputs to the task. */
-  var inputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] = js.native
+  var inputs: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskInputs] = js.undefined
   
   /** The timeouts of this task. */
-  var timeouts: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] = js.native
+  var timeouts: js.UndefOr[GoogleDevtoolsRemoteworkersV1test2CommandTaskTimeouts] = js.undefined
 }
 object GoogleDevtoolsRemoteworkersV1test2CommandTask {
   

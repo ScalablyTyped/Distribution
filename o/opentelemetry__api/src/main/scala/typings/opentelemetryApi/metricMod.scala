@@ -9,7 +9,6 @@ import typings.opentelemetryApi.loggerMod.Logger
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricMod {
@@ -21,21 +20,26 @@ object metricMod {
   object ValueType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ValueType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ValueType & Double] = js.native
     
     @js.native
-    sealed trait DOUBLE extends ValueType
-    /* 1 */ val DOUBLE: typings.opentelemetryApi.metricMod.ValueType.DOUBLE with Double = js.native
+    sealed trait DOUBLE
+      extends StObject
+         with ValueType
+    /* 1 */ val DOUBLE: typings.opentelemetryApi.metricMod.ValueType.DOUBLE & Double = js.native
     
     @js.native
-    sealed trait INT extends ValueType
-    /* 0 */ val INT: typings.opentelemetryApi.metricMod.ValueType.INT with Double = js.native
+    sealed trait INT
+      extends StObject
+         with ValueType
+    /* 0 */ val INT: typings.opentelemetryApi.metricMod.ValueType.INT & Double = js.native
   }
   
-  @js.native
-  trait BaseObserver extends UnboundMetric[BoundBaseObserver] {
+  trait BaseObserver
+    extends StObject
+       with UnboundMetric[BoundBaseObserver] {
     
-    def observation(value: Double): Observer = js.native
+    def observation(value: Double): Observer
   }
   object BaseObserver {
     
@@ -58,13 +62,14 @@ object metricMod {
     }
   }
   
-  @js.native
-  trait BatchMetricOptions extends MetricOptions {
+  trait BatchMetricOptions
+    extends StObject
+       with MetricOptions {
     
     /**
       * Indicates how long the batch metric should wait to update before cancel
       */
-    var maxTimeoutUpdateMS: js.UndefOr[Double] = js.native
+    var maxTimeoutUpdateMS: js.UndefOr[Double] = js.undefined
   }
   object BatchMetricOptions {
     
@@ -88,7 +93,9 @@ object metricMod {
   type BatchObserver = Metric
   
   @js.native
-  trait Counter extends UnboundMetric[BoundCounter] {
+  trait Counter
+    extends StObject
+       with UnboundMetric[BoundCounter] {
     
     /**
       * Adds the given value to the current value. Values cannot be negative.
@@ -99,13 +106,12 @@ object metricMod {
   
   type Labels = StringDictionary[String]
   
-  @js.native
   trait Metric extends StObject {
     
     /**
       * Clears all bound instruments from the Metric.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object Metric {
     
@@ -123,43 +129,42 @@ object metricMod {
     }
   }
   
-  @js.native
   trait MetricOptions extends StObject {
     
     /** The name of the component that reports the Metric. */
-    var component: js.UndefOr[String] = js.native
+    var component: js.UndefOr[String] = js.undefined
     
     /** The map of constant labels for the Metric. */
-    var constantLabels: js.UndefOr[Map[String, String]] = js.native
+    var constantLabels: js.UndefOr[Map[String, String]] = js.undefined
     
     /**
       * The description of the Metric.
       * @default ''
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates the metric is a verbose metric that is disabled by default
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * User provided logger.
       */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /**
       * The unit of the Metric values.
       * @default '1'
       */
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates the type of the recorded value.
       * @default {@link ValueType.DOUBLE}
       */
-    var valueType: js.UndefOr[ValueType] = js.native
+    var valueType: js.UndefOr[ValueType] = js.undefined
   }
   object MetricOptions {
     
@@ -218,8 +223,9 @@ object metricMod {
   
   type SumObserver = BaseObserver
   
-  @js.native
-  trait UnboundMetric[T] extends Metric {
+  trait UnboundMetric[T]
+    extends StObject
+       with Metric {
     
     /**
       * Returns a Instrument associated with specified Labels.
@@ -228,13 +234,13 @@ object metricMod {
       * @param labels key-values pairs that are associated with a specific metric
       *     that you want to record.
       */
-    def bind(labels: Labels): T = js.native
+    def bind(labels: Labels): T
     
     /**
       * Removes the Instrument from the metric, if it is present.
       * @param labels key-values pairs that are associated with a specific metric.
       */
-    def unbind(labels: Labels): Unit = js.native
+    def unbind(labels: Labels): Unit
   }
   object UnboundMetric {
     
@@ -245,7 +251,7 @@ object metricMod {
     }
     
     @scala.inline
-    implicit class UnboundMetricMutableBuilder[Self <: UnboundMetric[_], T] (val x: Self with UnboundMetric[T]) extends AnyVal {
+    implicit class UnboundMetricMutableBuilder[Self <: UnboundMetric[?], T] (val x: Self & UnboundMetric[T]) extends AnyVal {
       
       @scala.inline
       def setBind(value: Labels => T): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
@@ -256,7 +262,9 @@ object metricMod {
   }
   
   @js.native
-  trait UpDownCounter extends UnboundMetric[BoundCounter] {
+  trait UpDownCounter
+    extends StObject
+       with UnboundMetric[BoundCounter] {
     
     /**
       * Adds the given value to the current value. Values can be negative.
@@ -270,7 +278,9 @@ object metricMod {
   type ValueObserver = BaseObserver
   
   @js.native
-  trait ValueRecorder extends UnboundMetric[BoundValueRecorder] {
+  trait ValueRecorder
+    extends StObject
+       with UnboundMetric[BoundValueRecorder] {
     
     /**
       * Records the given value to this value recorder.

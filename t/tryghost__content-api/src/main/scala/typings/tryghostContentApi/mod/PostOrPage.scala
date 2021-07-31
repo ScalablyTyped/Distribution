@@ -2,64 +2,63 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostOrPage
-  extends SocialMedia
+  extends StObject
      with Identification
      with Excerpt
      with CodeInjection
      with Metadata
+     with SocialMedia
      with GhostData {
   
   // Authors - Only shown when using Include Param
-  var authors: js.UndefOr[js.Array[Author]] = js.native
+  var authors: js.UndefOr[js.Array[Author]] = js.undefined
   
-  var canonical_url: js.UndefOr[Nullable[String]] = js.native
+  var canonical_url: js.UndefOr[Nullable[String]] = js.undefined
   
-  var comment_id: js.UndefOr[String] = js.native
+  var comment_id: js.UndefOr[String] = js.undefined
   
   // Dates
-  var created_at: js.UndefOr[String] = js.native
+  var created_at: js.UndefOr[String] = js.undefined
   
   // Custom Template for posts and pages
-  var custom_template: js.UndefOr[Nullable[String]] = js.native
+  var custom_template: js.UndefOr[Nullable[String]] = js.undefined
   
   // Image
-  var feature_image: js.UndefOr[Nullable[String]] = js.native
+  var feature_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var featured: js.UndefOr[Boolean] = js.native
+  var featured: js.UndefOr[Boolean] = js.undefined
   
-  var html: js.UndefOr[Nullable[String]] = js.native
+  var html: js.UndefOr[Nullable[String]] = js.undefined
   
   // Post or Page
-  var page: js.UndefOr[Boolean] = js.native
+  var page: js.UndefOr[Boolean] = js.undefined
   
-  var plaintext: js.UndefOr[Nullable[String]] = js.native
+  var plaintext: js.UndefOr[Nullable[String]] = js.undefined
   
-  var primary_author: js.UndefOr[Nullable[Author]] = js.native
+  var primary_author: js.UndefOr[Nullable[Author]] = js.undefined
   
-  var primary_tag: js.UndefOr[Nullable[Tag]] = js.native
+  var primary_tag: js.UndefOr[Nullable[Tag]] = js.undefined
   
-  var published_at: js.UndefOr[Nullable[String]] = js.native
+  var published_at: js.UndefOr[Nullable[String]] = js.undefined
   
   // Reading time
-  var reading_time: js.UndefOr[Double] = js.native
+  var reading_time: js.UndefOr[Double] = js.undefined
   
   // Tags - Only shown when using Include param
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
   
   // Post or Page
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var updated_at: js.UndefOr[Nullable[String]] = js.native
+  var updated_at: js.UndefOr[Nullable[String]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   // Identification
-  var uuid: js.UndefOr[String] = js.native
+  var uuid: js.UndefOr[String] = js.undefined
 }
 object PostOrPage {
   

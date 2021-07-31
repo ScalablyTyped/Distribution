@@ -5,27 +5,21 @@ import typings.reactNative.reactNativeStrings.UIBackgroundFetchResultNewData
 import typings.reactNative.reactNativeStrings.UIBackgroundFetchResultNoData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FetchResult extends StObject {
   
-  var NewData: UIBackgroundFetchResultNewData = js.native
+  var NewData: UIBackgroundFetchResultNewData
   
-  var NoData: UIBackgroundFetchResultNoData = js.native
+  var NoData: UIBackgroundFetchResultNoData
   
-  var ResultFailed: UIBackgroundFetchResultFailed = js.native
+  var ResultFailed: UIBackgroundFetchResultFailed
 }
 object FetchResult {
   
   @scala.inline
-  def apply(
-    NewData: UIBackgroundFetchResultNewData,
-    NoData: UIBackgroundFetchResultNoData,
-    ResultFailed: UIBackgroundFetchResultFailed
-  ): FetchResult = {
-    val __obj = js.Dynamic.literal(NewData = NewData.asInstanceOf[js.Any], NoData = NoData.asInstanceOf[js.Any], ResultFailed = ResultFailed.asInstanceOf[js.Any])
+  def apply(): FetchResult = {
+    val __obj = js.Dynamic.literal(NewData = "UIBackgroundFetchResultNewData", NoData = "UIBackgroundFetchResultNoData", ResultFailed = "UIBackgroundFetchResultFailed")
     __obj.asInstanceOf[FetchResult]
   }
   

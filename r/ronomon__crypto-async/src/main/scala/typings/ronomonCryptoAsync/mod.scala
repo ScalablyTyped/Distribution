@@ -6,14 +6,16 @@ import typings.ronomonCryptoAsync.ronomonCryptoAsyncNumbers.`1`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-single-declare-module
 object mod {
   
-  @JSImport("@ronomon/crypto-async", "cipher")
+  @JSImport("@ronomon/crypto-async", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def cipher(
     algorithm: String,
     cipherDirection: CipherDirection,
@@ -21,9 +23,8 @@ object mod {
     iv: Buffer,
     plaintext: Buffer,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* ciphertext */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("@ronomon/crypto-async", "cipher")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cipher")(algorithm.asInstanceOf[js.Any], cipherDirection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], plaintext.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def cipher(
     algorithm: String,
     cipherDirection: CipherDirection,
@@ -39,17 +40,15 @@ object mod {
     target: Buffer,
     targetOffset: Double,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("cipher")(algorithm.asInstanceOf[js.Any], cipherDirection.asInstanceOf[js.Any], key.asInstanceOf[js.Any], keyOffset.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], iv.asInstanceOf[js.Any], ivOffset.asInstanceOf[js.Any], ivSize.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ronomon/crypto-async", "hash")
-  @js.native
+  @scala.inline
   def hash(
     algorithm: String,
     source: Buffer,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* hash */ Buffer, Unit]
-  ): Unit = js.native
-  @JSImport("@ronomon/crypto-async", "hash")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(algorithm.asInstanceOf[js.Any], source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def hash(
     algorithm: String,
     source: Buffer,
@@ -58,10 +57,9 @@ object mod {
     target: Buffer,
     targetOffset: Double,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(algorithm.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ronomon/crypto-async", "hmac")
-  @js.native
+  @scala.inline
   def hmac(
     algorithm: String,
     key: Buffer,
@@ -73,15 +71,14 @@ object mod {
     target: Buffer,
     targetOffset: Double,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* targetSize */ Double, Unit]
-  ): Unit = js.native
-  @JSImport("@ronomon/crypto-async", "hmac")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], keyOffset.asInstanceOf[js.Any], keySize.asInstanceOf[js.Any], source.asInstanceOf[js.Any], sourceOffset.asInstanceOf[js.Any], sourceSize.asInstanceOf[js.Any], target.asInstanceOf[js.Any], targetOffset.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def hmac(
     algorithm: String,
     key: Buffer,
     source: Buffer,
     cb: js.Function2[/* error */ js.UndefOr[Error], /* hmac */ Buffer, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("hmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], source.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ronomonCryptoAsync.ronomonCryptoAsyncNumbers.`0`

@@ -3,13 +3,11 @@ package typings.screeps
 import typings.screeps.screepsNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result of Object that contains all terrain for a room
   */
-@js.native
 trait RoomTerrain extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait RoomTerrain extends StObject {
     * @param y Y position in the room.
     * @return number Number of terrain mask like: TERRAIN_MASK_SWAMP | TERRAIN_MASK_WALL
     */
-  def get(x: Double, y: Double): `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP = js.native
+  def get(x: Double, y: Double): `0` | TERRAIN_MASK_WALL | TERRAIN_MASK_SWAMP
 }
 object RoomTerrain {
   

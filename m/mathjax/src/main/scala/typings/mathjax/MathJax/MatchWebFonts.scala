@@ -2,20 +2,18 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchWebFonts extends StObject {
   
   /*Initial delay before the first check for web fonts (in milliseconds).*/
-  var fontCheckDelay: js.UndefOr[Double] = js.native
+  var fontCheckDelay: js.UndefOr[Double] = js.undefined
   
   /*How long to keep looking for fonts (in milliseconds).*/
-  var fontCheckTimeout: js.UndefOr[Double] = js.native
+  var fontCheckTimeout: js.UndefOr[Double] = js.undefined
   
   /*This block controls whether to apply font size matching for each output mode.*/
-  var matchFor: js.UndefOr[MatchFor] = js.native
+  var matchFor: js.UndefOr[MatchFor] = js.undefined
 }
 object MatchWebFonts {
   

@@ -7,7 +7,6 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,14 +24,13 @@ object mod extends Shortcut {
     def apply(option: Option): ReadWriteStream = js.native
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var cheerio: js.UndefOr[Root] = js.native
+    var cheerio: js.UndefOr[Root] = js.undefined
     
-    var parserOptions: js.UndefOr[CheerioParserOptions] = js.native
+    var parserOptions: js.UndefOr[CheerioParserOptions] = js.undefined
     
-    var run: js.UndefOr[Callback] = js.native
+    var run: js.UndefOr[Callback] = js.undefined
   }
   object Option {
     

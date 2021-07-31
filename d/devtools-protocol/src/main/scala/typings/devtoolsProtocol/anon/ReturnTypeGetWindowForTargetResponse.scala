@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Browser.GetWindowForTargetRequest
 import typings.devtoolsProtocol.mod.Protocol.Browser.GetWindowForTargetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetWindowForTargetResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetWindowForTargetRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetWindowForTargetRequest]]
   
-  var returnType: GetWindowForTargetResponse = js.native
+  var returnType: GetWindowForTargetResponse
 }
 object ReturnTypeGetWindowForTargetResponse {
   

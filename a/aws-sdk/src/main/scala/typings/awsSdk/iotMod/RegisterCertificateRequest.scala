@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterCertificateRequest extends StObject {
   
   /**
     * The CA certificate used to sign the device certificate being registered.
     */
-  var caCertificatePem: js.UndefOr[CertificatePem] = js.native
+  var caCertificatePem: js.UndefOr[CertificatePem] = js.undefined
   
   /**
     * The certificate data, in PEM format.
     */
-  var certificatePem: CertificatePem = js.native
+  var certificatePem: CertificatePem
   
   /**
     * A boolean value that specifies if the certificate is set to active.
     */
-  var setAsActive: js.UndefOr[SetAsActiveFlag] = js.native
+  var setAsActive: js.UndefOr[SetAsActiveFlag] = js.undefined
   
   /**
     * The status of the register certificate request.
     */
-  var status: js.UndefOr[CertificateStatus] = js.native
+  var status: js.UndefOr[CertificateStatus] = js.undefined
 }
 object RegisterCertificateRequest {
   

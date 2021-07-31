@@ -12,19 +12,21 @@ import typings.pg.mod.PoolConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("connect-pg-simple", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     session: js.Function1[
       /* options */ js.UndefOr[SessionOptions], 
-      RequestHandler[ParamsDictionary, _, _, Query]
+      RequestHandler[ParamsDictionary, js.Any, js.Any, Query]
     ]
-  ): js.Any = js.native
+  ): js.Any = ^.asInstanceOf[js.Dynamic].apply(session.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @JSImport("connect-pg-simple", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("connect-pg-simple", "PGStore")
   @js.native
@@ -42,27 +44,26 @@ object mod {
     def touch_MPGStore(sid: String, session: SessionData, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait PGStoreOptions extends StObject {
     
-    var conObject: js.UndefOr[PoolConfig] = js.native
+    var conObject: js.UndefOr[PoolConfig] = js.undefined
     
     // not typed to avoid dependency to "pg-promise" module (which includes its own types)
-    var conString: js.UndefOr[String] = js.native
+    var conString: js.UndefOr[String] = js.undefined
     
-    var errorLog: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var errorLog: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var pgPromise: js.UndefOr[js.Object] = js.native
+    var pgPromise: js.UndefOr[js.Object] = js.undefined
     
-    var pool: js.UndefOr[Pool] = js.native
+    var pool: js.UndefOr[Pool] = js.undefined
     
-    var pruneSessionInterval: js.UndefOr[`false` | Double] = js.native
+    var pruneSessionInterval: js.UndefOr[`false` | Double] = js.undefined
     
-    var schemaName: js.UndefOr[String] = js.native
+    var schemaName: js.UndefOr[String] = js.undefined
     
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object PGStoreOptions {
     

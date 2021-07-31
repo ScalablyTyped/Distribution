@@ -3,16 +3,14 @@ package typings.openlayers.mod.olx.interaction
 import typings.openlayers.mod.MapBrowserEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Object literal with config options for interactions.
   */
-@js.native
 trait InteractionOptions extends StObject {
   
-  def handleEvent(event: MapBrowserEvent): Boolean = js.native
+  def handleEvent(event: MapBrowserEvent): Boolean
 }
 object InteractionOptions {
   

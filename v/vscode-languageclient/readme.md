@@ -10,9 +10,9 @@ VSCode Language client implementation
 | ------------------ | :-------------: |
 | Full name          | vscode-languageclient |
 | Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 58 |
-| # downloads        | 1951001 |
+| # releases         | 48 |
+| # dependents       | 67 |
+| # downloads        | 2152764 |
 | # stars            | 0 |
 
 ## Links

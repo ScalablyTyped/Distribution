@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,24 +11,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A {@link PropertySetInfoChangeEvent} object is sent to XPropertySetInfoChangeListeners.
   */
-@js.native
-trait PropertySetInfoChangeEvent extends EventObject {
+trait PropertySetInfoChangeEvent
+  extends StObject
+     with EventObject {
   
   /**
     * contains the implementation handle for the property.
     *
     * May be -1 if the implementation has no handle.
     */
-  var Handle: Double = js.native
+  var Handle: Double
   
   /** contains the name of the property. */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * contains the reason for the event.
     * @see PropertySetInfoChange
     */
-  var Reason: Double = js.native
+  var Reason: Double
 }
 object PropertySetInfoChangeEvent {
   

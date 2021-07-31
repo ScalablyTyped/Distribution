@@ -2,17 +2,17 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VertexModeEnumValues extends EmbindEnum {
+trait VertexModeEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var TriangleFan: VertexMode = js.native
+  var TriangleFan: VertexMode
   
-  var Triangles: VertexMode = js.native
+  var Triangles: VertexMode
   
-  var TrianglesStrip: VertexMode = js.native
+  var TrianglesStrip: VertexMode
 }
 object VertexModeEnumValues {
   

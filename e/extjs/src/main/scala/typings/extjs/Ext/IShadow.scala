@@ -2,23 +2,23 @@ package typings.extjs.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShadow extends IBase {
+trait IShadow
+  extends StObject
+     with IBase {
   
   /** [Method] Hides this shadow */
-  var hide: js.UndefOr[js.Function0[Unit]] = js.native
+  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns true if the shadow is visible else false */
-  var isVisible: js.UndefOr[js.Function0[Unit]] = js.native
+  var isVisible: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String) */
-  var mode: js.UndefOr[java.lang.String] = js.native
+  var mode: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Number) */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /** [Method] Direct alignment when values are already available
     * @param left Number The target element left position
@@ -34,22 +34,22 @@ trait IShadow extends IBase {
       /* height */ js.UndefOr[Double], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the opacity of the shadow
     * @param opacity Number The opacity
     */
-  var setOpacity: js.UndefOr[js.Function1[/* opacity */ js.UndefOr[Double], Unit]] = js.native
+  var setOpacity: js.UndefOr[js.Function1[/* opacity */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Adjust the z index of this shadow
     * @param zindex Number The new z-index
     */
-  var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], Unit]] = js.native
+  var setZIndex: js.UndefOr[js.Function1[/* zindex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Displays the shadow under the target element
     * @param targetEl String/HTMLElement/Ext.Element The id or element under which the shadow should display
     */
-  var show: js.UndefOr[js.Function1[/* targetEl */ js.UndefOr[js.Any], Unit]] = js.native
+  var show: js.UndefOr[js.Function1[/* targetEl */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IShadow {
   

@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextItemInView extends RenderContextInView {
+trait RenderContextItemInView
+  extends StObject
+     with RenderContextInView {
   
-  var CurrentItem: Item = js.native
+  var CurrentItem: Item
   
-  var CurrentItemIdx: Double = js.native
+  var CurrentItemIdx: Double
 }
 object RenderContextItemInView {
   

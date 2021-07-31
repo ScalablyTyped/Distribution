@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpnGatewaysResult extends StObject {
   
   /**
     * Information about one or more virtual private gateways.
     */
-  var VpnGateways: js.UndefOr[VpnGatewayList] = js.native
+  var VpnGateways: js.UndefOr[VpnGatewayList] = js.undefined
 }
 object DescribeVpnGatewaysResult {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /** The collection of elements in the group. The minimum size of a group is 2. */
-  var children: js.UndefOr[js.Array[PageElement]] = js.native
+  var children: js.UndefOr[js.Array[PageElement]] = js.undefined
 }
 object Group {
   

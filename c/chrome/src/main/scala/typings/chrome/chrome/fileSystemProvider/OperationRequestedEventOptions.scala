@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OperationRequestedEventOptions extends RequestedEventOptions {
+trait OperationRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** An ID of the request to which this operation is related. */
-  var operationRequestId: Double = js.native
+  var operationRequestId: Double
 }
 object OperationRequestedEventOptions {
   

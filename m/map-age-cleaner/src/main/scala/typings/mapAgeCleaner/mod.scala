@@ -4,24 +4,26 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("map-age-cleaner", JSImport.Default)
+  @JSImport("map-age-cleaner", JSImport.Namespace)
   @js.native
-  def default[K, V /* <: MaxAgeEntry */](map: Map[K, V]): js.Any = js.native
-  @JSImport("map-age-cleaner", JSImport.Default)
-  @js.native
-  def default[K, V](map: Map[K, V], property: String): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[K, V /* <: MaxAgeEntry */](map: Map[K, V]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def default[K, V](map: Map[K, V], property: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(map.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   type Entry = StringDictionary[js.Any]
   
-  @js.native
-  trait MaxAgeEntry extends Entry {
+  trait MaxAgeEntry
+    extends StObject
+       with Entry {
     
-    var maxAge: Double = js.native
+    var maxAge: Double
   }
   object MaxAgeEntry {
     

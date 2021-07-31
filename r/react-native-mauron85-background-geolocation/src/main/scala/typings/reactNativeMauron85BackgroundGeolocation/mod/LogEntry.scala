@@ -2,26 +2,24 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogEntry extends StObject {
   
   /** ID of log entry as stored in db. */
-  var id: Double = js.native
+  var id: Double
   
   /** Log level */
-  var level: LogLevel = js.native
+  var level: LogLevel
   
   /** Log message */
-  var message: String = js.native
+  var message: String
   
   /** Recorded stacktrace. (Android only, on iOS part of message) */
-  var stackTrace: String = js.native
+  var stackTrace: String
   
   /** Timestamp in milliseconds since beginning of UNIX epoch. */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object LogEntry {
   

@@ -5,7 +5,6 @@ import typings.reactRelay.mod.FetchPolicy
 import typings.reactRelay.useLoadMoreFunctionMod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactRelayStrings {
@@ -46,7 +45,9 @@ object reactRelayStrings {
   def ThinQueryParamsObject: ThinQueryParamsObject = "ThinQueryParamsObject".asInstanceOf[ThinQueryParamsObject]
   
   @js.native
-  sealed trait backward extends Direction
+  sealed trait backward
+    extends StObject
+       with Direction
   @scala.inline
   def backward: backward = "backward".asInstanceOf[backward]
   
@@ -56,7 +57,9 @@ object reactRelayStrings {
   def cache: cache = "cache".asInstanceOf[cache]
   
   @js.native
-  sealed trait forward extends Direction
+  sealed trait forward
+    extends StObject
+       with Direction
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   
@@ -67,7 +70,8 @@ object reactRelayStrings {
   
   @js.native
   sealed trait `network-only`
-    extends FetchPolicy
+    extends StObject
+       with FetchPolicy
        with PreloadFetchPolicy
   @scala.inline
   def `network-only`: `network-only` = "network-only".asInstanceOf[`network-only`]
@@ -89,13 +93,16 @@ object reactRelayStrings {
   
   @js.native
   sealed trait `store-and-network`
-    extends FetchPolicy
+    extends StObject
+       with FetchPolicy
        with PreloadFetchPolicy
   @scala.inline
   def `store-and-network`: `store-and-network` = "store-and-network".asInstanceOf[`store-and-network`]
   
   @js.native
-  sealed trait `store-or-network` extends PreloadFetchPolicy
+  sealed trait `store-or-network`
+    extends StObject
+       with PreloadFetchPolicy
   @scala.inline
   def `store-or-network`: `store-or-network` = "store-or-network".asInstanceOf[`store-or-network`]
 }

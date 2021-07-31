@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFleetUtilizationOutput extends StObject {
   
   /**
     * A collection of objects containing utilization information for each requested fleet ID.
     */
-  var FleetUtilization: js.UndefOr[FleetUtilizationList] = js.native
+  var FleetUtilization: js.UndefOr[FleetUtilizationList] = js.undefined
   
   /**
     * Token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object DescribeFleetUtilizationOutput {
   

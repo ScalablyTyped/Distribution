@@ -8,31 +8,29 @@ import typings.recharts.mod.LabelProps
 import typings.recharts.mod.PositionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Angle extends StObject {
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+  var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var clockWise: js.UndefOr[Boolean] = js.native
+  var clockWise: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[ReactElement | ContentRenderer[LabelProps]] = js.native
+  var content: js.UndefOr[ReactElement | ContentRenderer[LabelProps]] = js.undefined
   
-  var data: js.UndefOr[Double] = js.native
+  var data: js.UndefOr[Double] = js.undefined
   
-  var formatter: js.UndefOr[LabelFormatter] = js.native
+  var formatter: js.UndefOr[LabelFormatter] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
 }
 object Angle {
   

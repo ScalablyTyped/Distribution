@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveThingFromBillingGroupRequest extends StObject {
   
   /**
     * The ARN of the billing group.
     */
-  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.native
+  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
   
   /**
     * The name of the billing group.
     */
-  var billingGroupName: js.UndefOr[BillingGroupName] = js.native
+  var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
   
   /**
     * The ARN of the thing to be removed from the billing group.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The name of the thing to be removed from the billing group.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object RemoveThingFromBillingGroupRequest {
   

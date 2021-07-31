@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrefixList extends StObject {
   
   /**
     * The IP address range of the AWS service.
     */
-  var Cidrs: js.UndefOr[ValueStringList] = js.native
+  var Cidrs: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ID of the prefix.
     */
-  var PrefixListId: js.UndefOr[String] = js.native
+  var PrefixListId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the prefix.
     */
-  var PrefixListName: js.UndefOr[String] = js.native
+  var PrefixListName: js.UndefOr[String] = js.undefined
 }
 object PrefixList {
   

@@ -2,34 +2,32 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An index definition.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta1Index extends StObject {
   
   /**
     * The collection ID to which this index applies. Required.
     */
-  var collectionId: js.UndefOr[String] = js.native
+  var collectionId: js.UndefOr[String] = js.undefined
   
   /**
     * The fields to index.
     */
-  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta1IndexField]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaGoogleFirestoreAdminV1beta1IndexField]] = js.undefined
   
   /**
     * The resource name of the index. Output only.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the index. Output only.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1Index {
   

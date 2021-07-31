@@ -3,15 +3,22 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codeSnippetMod {
   
   @JSImport("carbon-components/components/code-snippet/code-snippet", JSImport.Default)
   @js.native
-  class default protected () extends CodeSnippet {
+  class default protected ()
+    extends StObject
+       with CodeSnippet {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleClick(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _initCodeSnippet(): Unit = js.native
   }
   object default {
     
@@ -28,12 +35,11 @@ object codeSnippetMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait CodeSnippet extends StObject {
+  - Dropped any */ trait CodeSnippet extends StObject {
     
-    def _handleClick(): Unit = js.native
+    def _handleClick(): Unit
     
-    def _initCodeSnippet(): Unit = js.native
+    def _initCodeSnippet(): Unit
   }
   object CodeSnippet {
     

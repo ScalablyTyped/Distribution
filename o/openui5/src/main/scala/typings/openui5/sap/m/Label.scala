@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.TextAlign
 import typings.openui5.sap.ui.core.TextDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Label extends Control {
+trait Label
+  extends StObject
+     with Control {
   
   /**
     * Gets current value of property <code>design</code>.Sets the design of a Label to either Standard or

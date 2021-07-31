@@ -7,7 +7,6 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributedProcessMod {
@@ -129,10 +128,29 @@ object distributedProcessMod {
     var progress_list_ : js.Any = js.native
     
     /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
       * @hidden
       */
     var resource: js.Any = js.native
     
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
     /**
       * Send an {@link Invoke} message.
       *

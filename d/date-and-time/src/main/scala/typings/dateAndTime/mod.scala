@@ -4,172 +4,140 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("date-and-time", "addDays")
+  @JSImport("date-and-time", JSImport.Namespace)
   @js.native
-  def addDays(dateObj: Date, days: Double): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("date-and-time", "addHours")
-  @js.native
-  def addHours(dateObj: Date, hours: Double): Date = js.native
+  @scala.inline
+  def addDays(dateObj: Date, days: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(dateObj.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "addMilliseconds")
-  @js.native
-  def addMilliseconds(dateObj: Date, milliseconds: Double): Date = js.native
+  @scala.inline
+  def addHours(dateObj: Date, hours: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addHours")(dateObj.asInstanceOf[js.Any], hours.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "addMinutes")
-  @js.native
-  def addMinutes(dateObj: Date, minutes: Double): Date = js.native
+  @scala.inline
+  def addMilliseconds(dateObj: Date, milliseconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMilliseconds")(dateObj.asInstanceOf[js.Any], milliseconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "addMonths")
-  @js.native
-  def addMonths(dateObj: Date, months: Double): Date = js.native
+  @scala.inline
+  def addMinutes(dateObj: Date, minutes: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMinutes")(dateObj.asInstanceOf[js.Any], minutes.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "addSeconds")
-  @js.native
-  def addSeconds(dateObj: Date, seconds: Double): Date = js.native
+  @scala.inline
+  def addMonths(dateObj: Date, months: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(dateObj.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "addYears")
-  @js.native
-  def addYears(dateObj: Date, years: Double): Date = js.native
+  @scala.inline
+  def addSeconds(dateObj: Date, seconds: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addSeconds")(dateObj.asInstanceOf[js.Any], seconds.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "compile")
-  @js.native
-  def compile(formatString: String): js.Array[String] = js.native
+  @scala.inline
+  def addYears(dateObj: Date, years: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(dateObj.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "extend")
-  @js.native
-  def extend(extension: Record[String, _]): Unit = js.native
+  @scala.inline
+  def compile(formatString: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(formatString.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("date-and-time", "format")
-  @js.native
-  def format(dateObj: Date, formatString: String): String = js.native
-  @JSImport("date-and-time", "format")
-  @js.native
-  def format(dateObj: Date, formatString: String, utc: Boolean): String = js.native
-  @JSImport("date-and-time", "format")
-  @js.native
-  def format(dateObj: Date, formatString: js.Array[String]): String = js.native
-  @JSImport("date-and-time", "format")
-  @js.native
-  def format(dateObj: Date, formatString: js.Array[String], utc: Boolean): String = js.native
+  @scala.inline
+  def extend(`extension`: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(`extension`.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("date-and-time", "isLeapYear")
-  @js.native
-  def isLeapYear(y: Double): Boolean = js.native
+  @scala.inline
+  def format(dateObj: Date, formatString: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(dateObj: Date, formatString: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(dateObj: Date, formatString: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(dateObj: Date, formatString: js.Array[String], utc: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(dateObj.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("date-and-time", "isSameDay")
-  @js.native
-  def isSameDay(date1: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def isLeapYear(y: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapYear")(y.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: String): Boolean = js.native
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: String, formatter: String): Boolean = js.native
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: String, formatter: js.Array[String]): Boolean = js.native
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: PreparseResult): Boolean = js.native
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: PreparseResult, formatter: String): Boolean = js.native
-  @JSImport("date-and-time", "isValid")
-  @js.native
-  def isValid(dateValue: PreparseResult, formatter: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def isSameDay(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-and-time", "locale")
-  @js.native
-  def locale(): String = js.native
-  @JSImport("date-and-time", "locale")
-  @js.native
-  def locale(code: js.UndefOr[scala.Nothing], locale: Record[String, _]): String = js.native
-  @JSImport("date-and-time", "locale")
-  @js.native
-  def locale(code: String): String = js.native
-  @JSImport("date-and-time", "locale")
-  @js.native
-  def locale(code: String, locale: Record[String, _]): String = js.native
+  @scala.inline
+  def isValid(dateValue: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(dateValue: String, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(dateValue: String, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(dateValue: PreparseResult): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(dateValue: PreparseResult, formatter: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(dateValue: PreparseResult, formatter: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(dateValue.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("date-and-time", "parse")
-  @js.native
-  def parse(dateString: String, formatter: String): Date = js.native
-  @JSImport("date-and-time", "parse")
-  @js.native
-  def parse(dateString: String, formatter: String, utc: Boolean): Date = js.native
-  @JSImport("date-and-time", "parse")
-  @js.native
-  def parse(dateString: String, formatter: js.Array[String]): Date = js.native
-  @JSImport("date-and-time", "parse")
-  @js.native
-  def parse(dateString: String, formatter: js.Array[String], utc: Boolean): Date = js.native
+  @scala.inline
+  def locale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")().asInstanceOf[String]
+  @scala.inline
+  def locale(code: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def locale(code: String, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def locale(code: Unit, locale: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("locale")(code.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("date-and-time", "plugin")
-  @js.native
-  def plugin(name: String): Unit = js.native
-  @JSImport("date-and-time", "plugin")
-  @js.native
-  def plugin(name: String, extension: Record[String, _]): Unit = js.native
+  @scala.inline
+  def parse(dateString: String, formatter: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def parse(dateString: String, formatter: String, utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def parse(dateString: String, formatter: js.Array[String]): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[Date]
+  @scala.inline
+  def parse(dateString: String, formatter: js.Array[String], utc: Boolean): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dateString.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("date-and-time", "preparse")
-  @js.native
-  def preparse(dateString: String, formatString: String): PreparseResult = js.native
-  @JSImport("date-and-time", "preparse")
-  @js.native
-  def preparse(dateString: String, formatString: js.Array[String]): PreparseResult = js.native
+  @scala.inline
+  def plugin(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def plugin(name: String, `extension`: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("plugin")(name.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("date-and-time", "subtract")
-  @js.native
-  def subtract(date1: Date, date2: Date): SubtractResult = js.native
+  @scala.inline
+  def preparse(dateString: String, formatString: String): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
+  @scala.inline
+  def preparse(dateString: String, formatString: js.Array[String]): PreparseResult = (^.asInstanceOf[js.Dynamic].applyDynamic("preparse")(dateString.asInstanceOf[js.Any], formatString.asInstanceOf[js.Any])).asInstanceOf[PreparseResult]
   
-  @js.native
+  @scala.inline
+  def subtract(date1: Date, date2: Date): SubtractResult = (^.asInstanceOf[js.Dynamic].applyDynamic("subtract")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[SubtractResult]
+  
   trait PreparseResult extends StObject {
     
     /** Meridiem */
-    var A: Double = js.native
+    var A: Double
     
     /** Day */
-    var D: Double = js.native
+    var D: Double
     
     /** 24-hour */
-    var H: Double = js.native
+    var H: Double
     
     /** Month */
-    var M: Double = js.native
+    var M: Double
     
     /** Millisecond */
-    var S: Double = js.native
+    var S: Double
     
     /** Year */
-    var Y: Double = js.native
+    var Y: Double
     
     /** Timezone offset */
-    var Z: Double = js.native
+    var Z: Double
     
     /** Pointer offset */
-    var _index: Double = js.native
+    var _index: Double
     
     /** Length of the date string */
-    var _length: Double = js.native
+    var _length: Double
     
     /** Token matching count */
-    var _match: Double = js.native
+    var _match: Double
     
     /** 12-hour */
-    var h: Double = js.native
+    var h: Double
     
     /** Minute */
-    var m: Double = js.native
+    var m: Double
     
     /** Second */
-    var s: Double = js.native
+    var s: Double
   }
   object PreparseResult {
     
@@ -228,18 +196,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SubtractResult extends StObject {
     
-    def toDays(): Double = js.native
+    def toDays(): Double
     
-    def toHours(): Double = js.native
+    def toHours(): Double
     
-    def toMilliseconds(): Double = js.native
+    def toMilliseconds(): Double
     
-    def toMinutes(): Double = js.native
+    def toMinutes(): Double
     
-    def toSeconds(): Double = js.native
+    def toSeconds(): Double
   }
   object SubtractResult {
     

@@ -2,13 +2,11 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisallowNonLinearStack extends StObject {
   
-  var disallowNonLinearStack: js.UndefOr[Boolean] = js.native
+  var disallowNonLinearStack: js.UndefOr[Boolean] = js.undefined
 }
 object DisallowNonLinearStack {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverrideAction extends StObject {
   
   /**
     * Override the rule action setting to count.
     */
-  var Count: js.UndefOr[CountAction] = js.native
+  var Count: js.UndefOr[CountAction] = js.undefined
   
   /**
     * Don't override the rule action setting.
     */
-  var None: js.UndefOr[NoneAction] = js.native
+  var None: js.UndefOr[NoneAction] = js.undefined
 }
 object OverrideAction {
   

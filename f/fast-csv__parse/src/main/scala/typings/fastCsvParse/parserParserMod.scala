@@ -3,7 +3,6 @@ package typings.fastCsvParse
 import typings.fastCsvParse.parserOptionsMod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserParserMod {
@@ -39,12 +38,11 @@ object parserParserMod {
     def removeBOM_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("removeBOM")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ParseResult extends StObject {
     
-    var line: String = js.native
+    var line: String
     
-    var rows: js.Array[js.Array[String]] = js.native
+    var rows: js.Array[js.Array[String]]
   }
   object ParseResult {
     

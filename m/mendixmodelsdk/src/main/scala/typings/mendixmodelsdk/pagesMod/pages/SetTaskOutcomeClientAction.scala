@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.workflows.IWorkflowTaskOutcome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -63,9 +62,8 @@ object SetTaskOutcomeClientAction {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.create")
-  @js.native
-  def create(model: IModel): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def create(model: IModel): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -76,9 +74,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInActionButtonUnderAction")
-  @js.native
-  def createInActionButtonUnderAction(container: ActionButton): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInActionButtonUnderAction(container: ActionButton): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -89,9 +86,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInActionItemUnderAction")
-  @js.native
-  def createInActionItemUnderAction(container: ActionItem): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInActionItemUnderAction(container: ActionItem): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -102,9 +98,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInAssociationWidgetUnderOnChangeAction")
-  @js.native
-  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -115,9 +110,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnChangeAction")
-  @js.native
-  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -128,9 +122,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnEnterAction")
-  @js.native
-  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -141,9 +134,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInAttributeWidgetUnderOnLeaveAction")
-  @js.native
-  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -154,9 +146,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInDivContainerUnderOnClickAction")
-  @js.native
-  def createInDivContainerUnderOnClickAction(container: DivContainer): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInDivContainerUnderOnClickAction(container: DivContainer): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderOnClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -167,9 +158,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInDynamicImageViewerUnderClickAction")
-  @js.native
-  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -180,9 +170,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInGridActionButtonUnderAction")
-  @js.native
-  def createInGridActionButtonUnderAction(container: GridActionButton): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInGridActionButtonUnderAction(container: GridActionButton): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -193,9 +182,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInListViewUnderClickAction")
-  @js.native
-  def createInListViewUnderClickAction(container: ListView): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInListViewUnderClickAction(container: ListView): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -206,9 +194,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInListViewUnderPullDownAction")
-  @js.native
-  def createInListViewUnderPullDownAction(container: ListView): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInListViewUnderPullDownAction(container: ListView): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderPullDownAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -219,9 +206,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInMenuItemUnderAction")
-  @js.native
-  def createInMenuItemUnderAction(container: MenuItem): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInMenuItemUnderAction(container: MenuItem): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -232,9 +218,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-  @js.native
-  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -245,9 +230,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInStaticImageViewerUnderClickAction")
-  @js.native
-  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -258,9 +242,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInTextBoxUnderOnEnterKeyPressAction")
-  @js.native
-  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInTextBoxUnderOnEnterKeyPressAction(container: TextBox): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTextBoxUnderOnEnterKeyPressAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /**
     * Creates and returns a new SetTaskOutcomeClientAction instance in the SDK and on the server.
@@ -271,9 +254,8 @@ object SetTaskOutcomeClientAction {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.createInWidgetValueUnderAction")
-  @js.native
-  def createInWidgetValueUnderAction(container: WidgetValue): SetTaskOutcomeClientAction = js.native
+  @scala.inline
+  def createInWidgetValueUnderAction(container: WidgetValue): SetTaskOutcomeClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[SetTaskOutcomeClientAction]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.SetTaskOutcomeClientAction.structureTypeName")

@@ -17,7 +17,6 @@ import typings.tensorflowTfjsCore.mod.DataStorage
 import typings.tensorflowTfjsCore.mod.KernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backendCpuMod {
@@ -85,19 +84,17 @@ object backendCpuMod {
     var scatter: js.Any = js.native
   }
   
-  @js.native
   trait DataId extends StObject
   
-  @js.native
   trait TensorData[D /* <: DataType */] extends StObject {
     
-    var complexTensorInfos: js.UndefOr[Imag] = js.native
+    var complexTensorInfos: js.UndefOr[Imag] = js.undefined
     
-    var dtype: D = js.native
+    var dtype: D
     
-    var refCount: Double = js.native
+    var refCount: Double
     
-    var values: js.UndefOr[BackendValues] = js.native
+    var values: js.UndefOr[BackendValues] = js.undefined
   }
   object TensorData {
     
@@ -108,7 +105,7 @@ object backendCpuMod {
     }
     
     @scala.inline
-    implicit class TensorDataMutableBuilder[Self <: TensorData[_], D /* <: DataType */] (val x: Self with TensorData[D]) extends AnyVal {
+    implicit class TensorDataMutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
       
       @scala.inline
       def setComplexTensorInfos(value: Imag): Self = StObject.set(x, "complexTensorInfos", value.asInstanceOf[js.Any])

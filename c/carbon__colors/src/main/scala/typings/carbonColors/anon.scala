@@ -2,15 +2,13 @@ package typings.carbonColors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var `0`: String = js.native
+    var `0`: String
   }
   object `0` {
     
@@ -29,28 +27,27 @@ object anon {
     }
   }
   
-  @js.native
   trait `10` extends StObject {
     
-    var `10`: String = js.native
+    var `10`: String
     
-    var `100`: String = js.native
+    var `100`: String
     
-    var `20`: String = js.native
+    var `20`: String
     
-    var `30`: String = js.native
+    var `30`: String
     
-    var `40`: String = js.native
+    var `40`: String
     
-    var `50`: String = js.native
+    var `50`: String
     
-    var `60`: String = js.native
+    var `60`: String
     
-    var `70`: String = js.native
+    var `70`: String
     
-    var `80`: String = js.native
+    var `80`: String
     
-    var `90`: String = js.native
+    var `90`: String
   }
   object `10` {
     
@@ -116,10 +113,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `100` extends StObject {
     
-    var `100`: String = js.native
+    var `100`: String
   }
   object `100` {
     
@@ -138,10 +134,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `20` extends StObject {
     
-    var `20`: String = js.native
+    var `20`: String
   }
   object `20` {
     
@@ -160,10 +155,9 @@ object anon {
     }
   }
   
-  @js.native
   trait `40` extends StObject {
     
-    var `40`: String = js.native
+    var `40`: String
   }
   object `40` {
     

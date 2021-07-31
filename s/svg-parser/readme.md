@@ -11,8 +11,8 @@ Create a JSON-friendly object from an SVG string
 | Full name          | svg-parser |
 | Keywords           | SVG, parser, JSON, object |
 | # releases         | 7 |
-| # dependents       | 21 |
-| # downloads        | 97094271 |
+| # dependents       | 27 |
+| # downloads        | 135640140 |
 | # stars            | 0 |
 
 ## Links

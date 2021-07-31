@@ -3,42 +3,40 @@ package typings.winrtUwp.Windows.ApplicationModel
 import typings.winrtUwp.Windows.System.ProcessorArchitecture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides package identification info, such as name, version, and publisher. */
-@js.native
 trait PackageId extends StObject {
   
   /** Gets the processor architecture for which the package was created. */
-  var architecture: ProcessorArchitecture = js.native
+  var architecture: ProcessorArchitecture
   
   /** Windows Phone only. Gets the value of the Author attribute for the specified application package. */
-  var author: String = js.native
+  var author: String
   
   /** Gets the family name of the package. */
-  var familyName: String = js.native
+  var familyName: String
   
   /** Gets the full name of the package. */
-  var fullName: String = js.native
+  var fullName: String
   
   /** Gets the name of the package. */
-  var name: String = js.native
+  var name: String
   
   /** Windows Phone only. Gets the value of the ProductID attribute associated with this application package. */
-  var productId: String = js.native
+  var productId: String
   
   /** Gets the publisher of the package. */
-  var publisher: String = js.native
+  var publisher: String
   
   /** Gets the publisher ID of the package. */
-  var publisherId: String = js.native
+  var publisherId: String
   
   /** Gets the resource ID of the package. */
-  var resourceId: String = js.native
+  var resourceId: String
   
   /** Gets the package version info. */
-  var version: PackageVersion = js.native
+  var version: PackageVersion
 }
 object PackageId {
   

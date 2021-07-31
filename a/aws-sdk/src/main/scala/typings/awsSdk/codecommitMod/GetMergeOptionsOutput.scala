@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMergeOptionsOutput extends StObject {
   
   /**
     * The commit ID of the merge base.
     */
-  var baseCommitId: ObjectId = js.native
+  var baseCommitId: ObjectId
   
   /**
     * The commit ID of the destination commit specifier that was used in the merge evaluation.
     */
-  var destinationCommitId: ObjectId = js.native
+  var destinationCommitId: ObjectId
   
   /**
     * The merge option or strategy used to merge the code.
     */
-  var mergeOptions: MergeOptions = js.native
+  var mergeOptions: MergeOptions
   
   /**
     * The commit ID of the source commit specifier that was used in the merge evaluation.
     */
-  var sourceCommitId: ObjectId = js.native
+  var sourceCommitId: ObjectId
 }
 object GetMergeOptionsOutput {
   

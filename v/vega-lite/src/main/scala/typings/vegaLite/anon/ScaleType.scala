@@ -3,17 +3,15 @@ package typings.vegaLite.anon
 import typings.vegaLite.channelMod.NonPositionScaleChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScaleType extends StObject {
   
-  var channel: NonPositionScaleChannel = js.native
+  var channel: NonPositionScaleChannel
   
-  var scaleType: typings.vegaLite.scaleMod.ScaleType = js.native
+  var scaleType: typings.vegaLite.scaleMod.ScaleType
   
-  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.native
+  var timeUnit: js.UndefOr[typings.vegaLite.srcTimeunitMod.TimeUnit] = js.undefined
 }
 object ScaleType {
   

@@ -9,28 +9,29 @@ import typings.vegaTypings.signalMod.NewSignal
 import typings.vegaTypings.signalMod.Signal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformsMod {
   
-  @JSImport("vega-lite/build/src/compile/selection/transforms/transforms", "forEachTransform")
+  @JSImport("vega-lite/build/src/compile/selection/transforms/transforms", JSImport.Namespace)
   @js.native
-  def forEachTransform(selCmpt: SelectionComponent[SelectionType], cb: js.Function1[/* tx */ TransformCompiler, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def forEachTransform(selCmpt: SelectionComponent[SelectionType], cb: js.Function1[/* tx */ TransformCompiler, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEachTransform")(selCmpt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait TransformCompiler extends StObject {
     
-    def has(selCmpt: SelectionComponent[SelectionType]): Boolean = js.native
+    def has(selCmpt: SelectionComponent[SelectionType]): Boolean
     
     var marks: js.UndefOr[
         js.Function3[
           /* model */ UnitModel, 
           /* selCmpt */ SelectionComponent[SelectionType], 
-          /* marks */ js.Array[_], 
-          js.Array[_]
+          /* marks */ js.Array[js.Any], 
+          js.Array[js.Any]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var modifyExpr: js.UndefOr[
         js.Function3[
@@ -39,7 +40,7 @@ object transformsMod {
           /* expr */ String, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     var parse: js.UndefOr[
         js.Function4[
@@ -49,7 +50,7 @@ object transformsMod {
           /* origDef */ SelectionDef, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var signals: js.UndefOr[
         js.Function3[
@@ -58,7 +59,7 @@ object transformsMod {
           /* signals */ js.Array[NewSignal], 
           js.Array[Signal]
         ]
-      ] = js.native
+      ] = js.undefined
     
     var topLevelSignals: js.UndefOr[
         js.Function3[
@@ -67,7 +68,7 @@ object transformsMod {
           /* signals */ js.Array[NewSignal], 
           js.Array[NewSignal]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object TransformCompiler {
     
@@ -85,7 +86,7 @@ object transformsMod {
       
       @scala.inline
       def setMarks(
-        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* marks */ js.Array[_]) => js.Array[_]
+        value: (/* model */ UnitModel, /* selCmpt */ SelectionComponent[SelectionType], /* marks */ js.Array[js.Any]) => js.Array[js.Any]
       ): Self = StObject.set(x, "marks", js.Any.fromFunction3(value))
       
       @scala.inline

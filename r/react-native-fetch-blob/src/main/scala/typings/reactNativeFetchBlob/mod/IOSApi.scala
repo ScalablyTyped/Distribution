@@ -2,24 +2,22 @@ package typings.reactNativeFetchBlob.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOSApi extends StObject {
   
   /**
     * Show options menu for interact with the file.
     * @param path This is a required field, the path to the document. The path should NOT contains any scheme prefix.
     */
-  def openDocument(path: String): Unit = js.native
+  def openDocument(path: String): Unit
   
   /**
     * Open a file in {@link https://developer.apple.com/reference/uikit/uidocumentinteractioncontroller UIDocumentInteractionController},
     * this is the default document viewer of iOS, supports several kinds of files. On Android, there's an similar method {@link android.actionViewIntent}.
     * @param path This is a required field, the path to the document. The path should NOT contains any scheme prefix.
     */
-  def previewDocument(path: String): Unit = js.native
+  def previewDocument(path: String): Unit
 }
 object IOSApi {
   

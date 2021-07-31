@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterWebhookWithThirdPartyInput extends StObject {
   
   /**
     * The name of the webhook you want to deregister.
     */
-  var webhookName: js.UndefOr[WebhookName] = js.native
+  var webhookName: js.UndefOr[WebhookName] = js.undefined
 }
 object DeregisterWebhookWithThirdPartyInput {
   

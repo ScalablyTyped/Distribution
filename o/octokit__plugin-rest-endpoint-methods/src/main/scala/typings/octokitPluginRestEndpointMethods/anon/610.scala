@@ -11,23 +11,21 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `610` extends StObject {
   
-  var parameters: RequestParameters with (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType])
   
   var response: OctokitResponse[
     ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
-  ] = js.native
+  ]
 }
 object `610` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[
       ActivityListStargazersForRepoResponseData | ActivityListStargazersForRepoResponse200Data
     ]
@@ -41,7 +39,7 @@ object `610` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[ActivityListStargazersForRepoEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

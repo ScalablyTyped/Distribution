@@ -3,21 +3,23 @@ package typings.commandLineUsage
 import typings.commandLineUsage.anon.Data
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sections: js.Array[Section]): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(sections: Section): String = ^.asInstanceOf[js.Dynamic].apply(sections.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("command-line-usage", JSImport.Namespace)
   @js.native
-  def apply(sections: js.Array[Section]): String = js.native
-  @JSImport("command-line-usage", JSImport.Namespace)
-  @js.native
-  def apply(sections: Section): String = js.native
+  val ^ : js.Any = js.native
   
   /** A Content section comprises a header and one or more lines of content. */
-  @js.native
-  trait Content extends Section {
+  trait Content
+    extends StObject
+       with Section {
     
     /**
       * Overloaded property, accepting data in one of four formats.
@@ -27,13 +29,13 @@ object mod {
       *     consistent throughout the array.
       *  4. An object with two properties - data and options. In this case, the data and options will be passed directly to the underlying table layout module for rendering.
       */
-    var content: js.UndefOr[String | (js.Array[_ | String]) | Data] = js.native
+    var content: js.UndefOr[String | (js.Array[js.Any | String]) | Data] = js.undefined
     
     /** The section header, always bold and underlined. */
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** Set to true to avoid indentation and wrapping. Useful for banners. */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object Content {
     
@@ -47,7 +49,7 @@ object mod {
     implicit class ContentMutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setContent(value: String | (js.Array[_ | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+      def setContent(value: String | (js.Array[js.Any | String]) | Data): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContentUndefined: Self = StObject.set(x, "content", js.undefined)
@@ -70,45 +72,44 @@ object mod {
   }
   
   /** Describes a command-line option. Additionally, if generating a usage guide with command-line-usage you could optionally add description and typeLabel properties to each definition. */
-  @js.native
   trait OptionDefinition extends StObject {
     
     /** getopt-style short option names. Can be any single character (unicode included) except a digit or hyphen. */
-    var alias: js.UndefOr[String] = js.native
+    var alias: js.UndefOr[String] = js.undefined
     
     /** Any values unaccounted for by an option definition will be set on the defaultOption. This flag is typically set on the most commonly-used option to make for more concise usage. */
-    var defaultOption: js.UndefOr[Boolean] = js.native
+    var defaultOption: js.UndefOr[Boolean] = js.undefined
     
     /** An initial value for the option. */
-    var defaultValue: js.UndefOr[js.Any] = js.native
+    var defaultValue: js.UndefOr[js.Any] = js.undefined
     
     /** A string describing the option. */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * When your app has a large amount of options it makes sense to organise them in groups.
       *
       * There are two automatic groups: _all (contains all options) and _none (contains options without a group specified in their definition).
       */
-    var group: js.UndefOr[String | js.Array[String]] = js.native
+    var group: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Identical to multiple but with greedy parsing disabled. */
-    var lazyMultiple: js.UndefOr[Boolean] = js.native
+    var lazyMultiple: js.UndefOr[Boolean] = js.undefined
     
     /** Set this flag if the option takes a list of values. You will receive an array of values, each passed through the type function (if specified). */
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
     /**
       * The type value is a setter function (you receive the output from this), enabling you to be specific about the type and value received.
       *
       * The most common values used are String (the default), Number and Boolean but you can use a custom function.
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** A string to replace the default type string (e.g. <string>). It's often more useful to set a more descriptive type label, like <ms>, <files>, <command>, etc.. */
-    var typeLabel: js.UndefOr[String] = js.native
+    var typeLabel: js.UndefOr[String] = js.undefined
   }
   object OptionDefinition {
     
@@ -184,25 +185,26 @@ object mod {
   }
   
   /** A OptionList section adds a table displaying details of the available options. */
-  @js.native
-  trait OptionList extends Section {
+  trait OptionList
+    extends StObject
+       with Section {
     
     /** If specified, only options from this particular group will be printed.  */
-    var group: js.UndefOr[String | js.Array[String]] = js.native
+    var group: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
     /** The names of one of more option definitions to hide from the option list.  */
-    var hide: js.UndefOr[String | js.Array[String]] = js.native
+    var hide: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** An array of option definition objects. */
-    var optionList: js.UndefOr[js.Array[OptionDefinition]] = js.native
+    var optionList: js.UndefOr[js.Array[OptionDefinition]] = js.undefined
     
     /** If true, the option alias will be displayed after the name, i.e. --verbose, -v instead of -v, --verbose). */
-    var reverseNameOrder: js.UndefOr[Boolean] = js.native
+    var reverseNameOrder: js.UndefOr[Boolean] = js.undefined
     
     /** An options object suitable for passing into table-layout. */
-    var tableOptions: js.UndefOr[js.Any] = js.native
+    var tableOptions: js.UndefOr[js.Any] = js.undefined
   }
   object OptionList {
     

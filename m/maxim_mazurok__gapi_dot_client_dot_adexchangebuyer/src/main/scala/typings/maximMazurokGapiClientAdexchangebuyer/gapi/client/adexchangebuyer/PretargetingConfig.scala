@@ -5,104 +5,102 @@ import typings.maximMazurokGapiClientAdexchangebuyer.anon.Token
 import typings.maximMazurokGapiClientAdexchangebuyer.anon.Width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PretargetingConfig extends StObject {
   
   /** The id for billing purposes, provided for reference. Leave this field blank for insert requests; the id will be generated automatically. */
-  var billingId: js.UndefOr[String] = js.native
+  var billingId: js.UndefOr[String] = js.undefined
   
   /** The config id; generated automatically. Leave this field blank for insert requests. */
-  var configId: js.UndefOr[String] = js.native
+  var configId: js.UndefOr[String] = js.undefined
   
   /** The name of the config. Must be unique. Required for all requests. */
-  var configName: js.UndefOr[String] = js.native
+  var configName: js.UndefOr[String] = js.undefined
   
   /** List must contain exactly one of PRETARGETING_CREATIVE_TYPE_HTML or PRETARGETING_CREATIVE_TYPE_VIDEO. */
-  var creativeType: js.UndefOr[js.Array[String]] = js.native
+  var creativeType: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests which allow one of these (width, height) pairs will match. All pairs must be supported ad dimensions. */
-  var dimensions: js.UndefOr[js.Array[Width]] = js.native
+  var dimensions: js.UndefOr[js.Array[Width]] = js.undefined
   
   /** Requests with any of these content labels will not match. Values are from content-labels.txt in the downloadable files section. */
-  var excludedContentLabels: js.UndefOr[js.Array[String]] = js.native
+  var excludedContentLabels: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these geo criteria ids will not match. */
-  var excludedGeoCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var excludedGeoCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these placements will not match. */
-  var excludedPlacements: js.UndefOr[js.Array[Token]] = js.native
+  var excludedPlacements: js.UndefOr[js.Array[Token]] = js.undefined
   
   /** Requests containing any of these users list ids will not match. */
-  var excludedUserLists: js.UndefOr[js.Array[String]] = js.native
+  var excludedUserLists: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these vertical ids will not match. Values are from the publisher-verticals.txt file in the downloadable files section. */
-  var excludedVerticals: js.UndefOr[js.Array[String]] = js.native
+  var excludedVerticals: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these geo criteria ids will match. */
-  var geoCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var geoCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Whether this config is active. Required for all requests. */
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
   /** The kind of the resource, i.e. "adexchangebuyer#pretargetingConfig". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Request containing any of these language codes will match. */
-  var languages: js.UndefOr[js.Array[String]] = js.native
+  var languages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The maximum QPS allocated to this pretargeting configuration, used for pretargeting-level QPS limits. By default, this is not set, which indicates that there is no QPS limit at the
     * configuration level (a global or account-level limit may still be imposed).
     */
-  var maximumQps: js.UndefOr[String] = js.native
+  var maximumQps: js.UndefOr[String] = js.undefined
   
   /**
     * Requests where the predicted viewability is below the specified decile will not match. E.g. if the buyer sets this value to 5, requests from slots where the predicted viewability is
     * below 50% will not match. If the predicted viewability is unknown this field will be ignored.
     */
-  var minimumViewabilityDecile: js.UndefOr[Double] = js.native
+  var minimumViewabilityDecile: js.UndefOr[Double] = js.undefined
   
   /** Requests containing any of these mobile carrier ids will match. Values are from mobile-carriers.csv in the downloadable files section. */
-  var mobileCarriers: js.UndefOr[js.Array[String]] = js.native
+  var mobileCarriers: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these mobile device ids will match. Values are from mobile-devices.csv in the downloadable files section. */
-  var mobileDevices: js.UndefOr[js.Array[String]] = js.native
+  var mobileDevices: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these mobile operating system version ids will match. Values are from mobile-os.csv in the downloadable files section. */
-  var mobileOperatingSystemVersions: js.UndefOr[js.Array[String]] = js.native
+  var mobileOperatingSystemVersions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these placements will match. */
-  var placements: js.UndefOr[js.Array[Token]] = js.native
+  var placements: js.UndefOr[js.Array[Token]] = js.undefined
   
   /** Requests matching any of these platforms will match. Possible values are PRETARGETING_PLATFORM_MOBILE, PRETARGETING_PLATFORM_DESKTOP, and PRETARGETING_PLATFORM_TABLET. */
-  var platforms: js.UndefOr[js.Array[String]] = js.native
+  var platforms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Creative attributes should be declared here if all creatives corresponding to this pretargeting configuration have that creative attribute. Values are from
     * pretargetable-creative-attributes.txt in the downloadable files section.
     */
-  var supportedCreativeAttributes: js.UndefOr[js.Array[String]] = js.native
+  var supportedCreativeAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Requests containing the specified type of user data will match. Possible values are HOSTED_MATCH_DATA, which means the request is cookie-targetable and has a match in the buyer's
     * hosted match table, and COOKIE_OR_IDFA, which means the request has either a targetable cookie or an iOS IDFA.
     */
-  var userIdentifierDataRequired: js.UndefOr[js.Array[String]] = js.native
+  var userIdentifierDataRequired: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these user list ids will match. */
-  var userLists: js.UndefOr[js.Array[String]] = js.native
+  var userLists: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests that allow any of these vendor ids will match. Values are from vendors.txt in the downloadable files section. */
-  var vendorTypes: js.UndefOr[js.Array[String]] = js.native
+  var vendorTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Requests containing any of these vertical ids will match. */
-  var verticals: js.UndefOr[js.Array[String]] = js.native
+  var verticals: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Video requests satisfying any of these player size constraints will match. */
-  var videoPlayerSizes: js.UndefOr[js.Array[AspectRatio]] = js.native
+  var videoPlayerSizes: js.UndefOr[js.Array[AspectRatio]] = js.undefined
 }
 object PretargetingConfig {
   

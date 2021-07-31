@@ -2,26 +2,24 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated when a product&#39;s approval status is changed.
   */
-@js.native
 trait SchemaProductApprovalEvent extends StObject {
   
   /**
     * Whether the product was approved or unapproved. This field will always be
     * present.
     */
-  var approved: js.UndefOr[String] = js.native
+  var approved: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the product (e.g. &quot;app:com.google.android.gm&quot;) for
     * which the approval status has changed. This field will always be present.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaProductApprovalEvent {
   

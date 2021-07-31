@@ -3,31 +3,29 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc workflow template resource.
   */
-@js.native
 trait SchemaWorkflowTemplate extends StObject {
   
   /**
     * Output only. The time template was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The template id.The id must contain only letters (a-z, A-Z),
     * numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with
     * underscore or hyphen. Must consist of between 3 and 50 characters..
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Directed Acyclic Graph of Jobs to submit.
     */
-  var jobs: js.UndefOr[js.Array[SchemaOrderedJob]] = js.native
+  var jobs: js.UndefOr[js.Array[SchemaOrderedJob]] = js.undefined
   
   /**
     * Optional. The labels to associate with this template. These labels will
@@ -38,31 +36,31 @@ trait SchemaWorkflowTemplate extends StObject {
     * to RFC 1035 (https://www.ietf.org/rfc/rfc1035.txt).No more than 32 labels
     * can be associated with a template.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The &quot;resource name&quot; of the template, as described
     * in https://cloud.google.com/apis/design/resource_names of the form
     * projects/{project_id}/regions/{region}/workflowTemplates/{template_id}
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Template parameters whose values are substituted into the
     * template. Values for parameters must be provided when the template is
     * instantiated.
     */
-  var parameters: js.UndefOr[js.Array[SchemaTemplateParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[SchemaTemplateParameter]] = js.undefined
   
   /**
     * Required. WorkflowTemplate scheduling information.
     */
-  var placement: js.UndefOr[SchemaWorkflowTemplatePlacement] = js.native
+  var placement: js.UndefOr[SchemaWorkflowTemplatePlacement] = js.undefined
   
   /**
     * Output only. The time template was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Used to perform a consistent read-modify-write.This field
@@ -74,7 +72,7 @@ trait SchemaWorkflowTemplate extends StObject {
     * version. The user updates other fields in the template, then returns it
     * as part of the UpdateWorkflowTemplate request.
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SchemaWorkflowTemplate {
   

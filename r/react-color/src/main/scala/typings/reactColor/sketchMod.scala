@@ -9,7 +9,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sketchMod {
@@ -25,19 +24,20 @@ object sketchMod {
   trait SketchPicker
     extends Component[SketchPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait SketchPickerProps extends ColorPickerProps[SketchPicker] {
+  trait SketchPickerProps
+    extends StObject
+       with ColorPickerProps[SketchPicker] {
     
-    var disableAlpha: js.UndefOr[Boolean] = js.native
+    var disableAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.native
+    var onSwatchHover: js.UndefOr[js.Function2[/* color */ ColorResult, /* event */ MouseEvent, Unit]] = js.undefined
     
-    var presetColors: js.UndefOr[js.Array[PresetColor]] = js.native
+    var presetColors: js.UndefOr[js.Array[PresetColor]] = js.undefined
     
     @JSName("styles")
-    var styles_SketchPickerProps: js.UndefOr[PartialClassesSketchPicke] = js.native
+    var styles_SketchPickerProps: js.UndefOr[PartialClassesSketchPicke] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object SketchPickerProps {
     
@@ -85,30 +85,29 @@ object sketchMod {
     }
   }
   
-  @js.native
   trait SketchPickerStylesProps extends StObject {
     
-    var Alpha: CSSProperties = js.native
+    var Alpha: CSSProperties
     
-    var Hue: CSSProperties = js.native
+    var Hue: CSSProperties
     
-    var Saturation: CSSProperties = js.native
+    var Saturation: CSSProperties
     
-    var activeColor: CSSProperties = js.native
+    var activeColor: CSSProperties
     
-    var alpha: CSSProperties = js.native
+    var alpha: CSSProperties
     
-    var color: CSSProperties = js.native
+    var color: CSSProperties
     
-    var controls: CSSProperties = js.native
+    var controls: CSSProperties
     
-    var hue: CSSProperties = js.native
+    var hue: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
     
-    var saturation: CSSProperties = js.native
+    var saturation: CSSProperties
     
-    var sliders: CSSProperties = js.native
+    var sliders: CSSProperties
   }
   object SketchPickerStylesProps {
     

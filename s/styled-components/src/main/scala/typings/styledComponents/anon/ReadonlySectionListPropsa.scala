@@ -60,139 +60,137 @@ import typings.styledComponents.styledComponentsStrings.white
 import typings.styledComponents.styledComponentsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.SectionListProps</ * import warning: RewrittenClass.unapply cls was tparam ItemT * / any, / * import warning: RewrittenClass.unapply cls was tparam SectionT * / any>> */
-@js.native
 trait ReadonlySectionListPropsa extends StObject {
   
-  val CellRendererComponent: js.UndefOr[ComponentType[_]] = js.native
+  val CellRendererComponent: js.UndefOr[ComponentType[js.Any]] = js.undefined
   
-  val ItemSeparatorComponent: js.UndefOr[ComponentType[_] | Null] = js.native
+  val ItemSeparatorComponent: js.UndefOr[ComponentType[js.Any] | Null] = js.undefined
   
-  val ListEmptyComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  val ListEmptyComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
-  val ListFooterComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  val ListFooterComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
-  val ListHeaderComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  val ListHeaderComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
-  val SectionSeparatorComponent: js.UndefOr[ComponentType[_] | ReactElement | Null] = js.native
+  val SectionSeparatorComponent: js.UndefOr[ComponentType[js.Any] | ReactElement | Null] = js.undefined
   
-  val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  val accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  val accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  val accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  val accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  val accessibilityHint: js.UndefOr[String] = js.native
+  val accessibilityHint: js.UndefOr[String] = js.undefined
   
-  val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  val accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  val accessibilityLabel: js.UndefOr[String] = js.native
+  val accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  val accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  val accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  val accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  val accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  val accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
-  val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  val accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  val accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  val accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  val accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  val accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  val accessible: js.UndefOr[Boolean] = js.native
+  val accessible: js.UndefOr[Boolean] = js.undefined
   
-  val alwaysBounceHorizontal: js.UndefOr[Boolean] = js.native
+  val alwaysBounceHorizontal: js.UndefOr[Boolean] = js.undefined
   
-  val alwaysBounceVertical: js.UndefOr[Boolean] = js.native
+  val alwaysBounceVertical: js.UndefOr[Boolean] = js.undefined
   
-  val automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.native
+  val automaticallyAdjustContentInsets: js.UndefOr[Boolean] = js.undefined
   
-  val bounces: js.UndefOr[Boolean] = js.native
+  val bounces: js.UndefOr[Boolean] = js.undefined
   
-  val bouncesZoom: js.UndefOr[Boolean] = js.native
+  val bouncesZoom: js.UndefOr[Boolean] = js.undefined
   
-  val canCancelContentTouches: js.UndefOr[Boolean] = js.native
+  val canCancelContentTouches: js.UndefOr[Boolean] = js.undefined
   
-  val centerContent: js.UndefOr[Boolean] = js.native
+  val centerContent: js.UndefOr[Boolean] = js.undefined
   
-  val collapsable: js.UndefOr[Boolean] = js.native
+  val collapsable: js.UndefOr[Boolean] = js.undefined
   
-  val contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val contentInset: js.UndefOr[Insets] = js.native
+  val contentInset: js.UndefOr[Insets] = js.undefined
   
-  val contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.native
+  val contentInsetAdjustmentBehavior: js.UndefOr[automatic | scrollableAxes | never | always] = js.undefined
   
-  val contentOffset: js.UndefOr[PointPropType] = js.native
+  val contentOffset: js.UndefOr[PointPropType] = js.undefined
   
-  val data: js.UndefOr[js.Any] = js.native
+  val data: js.UndefOr[js.Any] = js.undefined
   
-  val debug: js.UndefOr[Boolean] = js.native
+  val debug: js.UndefOr[Boolean] = js.undefined
   
-  val decelerationRate: js.UndefOr[fast | normal | Double] = js.native
+  val decelerationRate: js.UndefOr[fast | normal | Double] = js.undefined
   
-  val directionalLockEnabled: js.UndefOr[Boolean] = js.native
+  val directionalLockEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val disableIntervalMomentum: js.UndefOr[Boolean] = js.native
+  val disableIntervalMomentum: js.UndefOr[Boolean] = js.undefined
   
-  val disableScrollViewPanResponder: js.UndefOr[Boolean] = js.native
+  val disableScrollViewPanResponder: js.UndefOr[Boolean] = js.undefined
   
-  val disableVirtualization: js.UndefOr[Boolean] = js.native
+  val disableVirtualization: js.UndefOr[Boolean] = js.undefined
   
-  val endFillColor: js.UndefOr[ColorValue] = js.native
+  val endFillColor: js.UndefOr[ColorValue] = js.undefined
   
-  val extraData: js.UndefOr[js.Any] = js.native
+  val extraData: js.UndefOr[js.Any] = js.undefined
   
-  val fadingEdgeLength: js.UndefOr[Double] = js.native
+  val fadingEdgeLength: js.UndefOr[Double] = js.undefined
   
-  val focusable: js.UndefOr[Boolean] = js.native
+  val focusable: js.UndefOr[Boolean] = js.undefined
   
   val getItem: js.UndefOr[
     js.Function2[
       /* data */ js.Any, 
       /* index */ Double, 
-      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _
+      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.native
+  val getItemCount: js.UndefOr[js.Function1[/* data */ js.Any, Double]] = js.undefined
   
   val getItemLayout: js.UndefOr[
     js.Function2[
       /* data */ (js.Array[
         SectionListData[
-          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
         ]
       ]) | Null, 
       /* index */ Double, 
       Index
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  val hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  val hitSlop: js.UndefOr[Insets] = js.native
+  val hitSlop: js.UndefOr[Insets] = js.undefined
   
-  val horizontal: js.UndefOr[Boolean | Null] = js.native
+  val horizontal: js.UndefOr[Boolean | Null] = js.undefined
   
-  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  val importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  val indicatorStyle: js.UndefOr[default | black | white] = js.native
+  val indicatorStyle: js.UndefOr[default | black | white] = js.undefined
   
-  val initialNumToRender: js.UndefOr[Double] = js.native
+  val initialNumToRender: js.UndefOr[Double] = js.undefined
   
-  val initialScrollIndex: js.UndefOr[Double | Null] = js.native
+  val initialScrollIndex: js.UndefOr[Double | Null] = js.undefined
   
-  val invertStickyHeaders: js.UndefOr[Boolean] = js.native
+  val invertStickyHeaders: js.UndefOr[Boolean] = js.undefined
   
-  val inverted: js.UndefOr[Boolean | Null] = js.native
+  val inverted: js.UndefOr[Boolean | Null] = js.undefined
   
-  val isTVSelectable: js.UndefOr[Boolean] = js.native
+  val isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
   val keyExtractor: js.UndefOr[
     js.Function2[
@@ -200,211 +198,211 @@ trait ReadonlySectionListPropsa extends StObject {
       /* index */ Double, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.native
+  val keyboardDismissMode: js.UndefOr[none | interactive | `on-drag`] = js.undefined
   
-  val keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.native
+  val keyboardShouldPersistTaps: js.UndefOr[Boolean | always | never | handled] = js.undefined
   
-  val legacyImplementation: js.UndefOr[Boolean] = js.native
+  val legacyImplementation: js.UndefOr[Boolean] = js.undefined
   
-  val listKey: js.UndefOr[String] = js.native
+  val listKey: js.UndefOr[String] = js.undefined
   
-  val maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.native
+  val maintainVisibleContentPosition: js.UndefOr[Null | AutoscrollToTopThreshold] = js.undefined
   
-  val maxToRenderPerBatch: js.UndefOr[Double] = js.native
+  val maxToRenderPerBatch: js.UndefOr[Double] = js.undefined
   
-  val maximumZoomScale: js.UndefOr[Double] = js.native
+  val maximumZoomScale: js.UndefOr[Double] = js.undefined
   
-  val minimumZoomScale: js.UndefOr[Double] = js.native
+  val minimumZoomScale: js.UndefOr[Double] = js.undefined
   
-  val nativeID: js.UndefOr[String] = js.native
+  val nativeID: js.UndefOr[String] = js.undefined
   
-  val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  val needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
-  val nestedScrollEnabled: js.UndefOr[Boolean] = js.native
+  val nestedScrollEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  val onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  val onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  val onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.native
+  val onContentSizeChange: js.UndefOr[js.Function2[/* w */ Double, /* h */ Double, Unit]] = js.undefined
   
-  val onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.native
+  val onEndReached: js.UndefOr[(js.Function1[/* info */ DistanceFromEnd, Unit]) | Null] = js.undefined
   
-  val onEndReachedThreshold: js.UndefOr[Double | Null] = js.native
+  val onEndReachedThreshold: js.UndefOr[Double | Null] = js.undefined
   
-  val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  val onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  val onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onMomentumScrollBegin: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onMomentumScrollEnd: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.native
+  val onRefresh: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
   
-  val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onScroll: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onScrollAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+  val onScrollAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  val onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onScrollBeginDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onScrollEndDrag: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.native
+  val onScrollToIndexFailed: js.UndefOr[js.Function1[/* info */ AverageItemLength, Unit]] = js.undefined
   
-  val onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.native
+  val onScrollToTop: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[NativeScrollEvent], Unit]] = js.undefined
   
-  val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  val onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  val onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  val onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.native
+  val onViewableItemsChanged: js.UndefOr[(js.Function1[/* info */ Changed, Unit]) | Null] = js.undefined
   
-  val overScrollMode: js.UndefOr[auto | always | never] = js.native
+  val overScrollMode: js.UndefOr[auto | always | never] = js.undefined
   
-  val pagingEnabled: js.UndefOr[Boolean] = js.native
+  val pagingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val persistentScrollbar: js.UndefOr[Boolean] = js.native
+  val persistentScrollbar: js.UndefOr[Boolean] = js.undefined
   
-  val pinchGestureEnabled: js.UndefOr[Boolean] = js.native
+  val pinchGestureEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.native
+  val pointerEvents: js.UndefOr[`box-none` | none | `box-only` | auto] = js.undefined
   
-  val progressViewOffset: js.UndefOr[Double] = js.native
+  val progressViewOffset: js.UndefOr[Double] = js.undefined
   
-  val refreshControl: js.UndefOr[ReactElement] = js.native
+  val refreshControl: js.UndefOr[ReactElement] = js.undefined
   
-  val refreshing: js.UndefOr[Boolean | Null] = js.native
+  val refreshing: js.UndefOr[Boolean | Null] = js.undefined
   
-  val removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  val removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
   val renderItem: js.UndefOr[
     SectionListRenderItem[
-      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-      /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.native
+  val renderScrollComponent: js.UndefOr[js.Function1[/* props */ ScrollViewProps, ReactElement]] = js.undefined
   
   val renderSectionFooter: js.UndefOr[
     js.Function1[
       /* info */ Section[
-        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
       ], 
       ReactElement | Null
     ]
-  ] = js.native
+  ] = js.undefined
   
   val renderSectionHeader: js.UndefOr[
     js.Function1[
       /* info */ Section[
-        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
       ], 
       ReactElement | Null
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  val renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
-  val scrollEnabled: js.UndefOr[Boolean] = js.native
+  val scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val scrollEventThrottle: js.UndefOr[Double] = js.native
+  val scrollEventThrottle: js.UndefOr[Double] = js.undefined
   
-  val scrollIndicatorInsets: js.UndefOr[Insets] = js.native
+  val scrollIndicatorInsets: js.UndefOr[Insets] = js.undefined
   
-  val scrollPerfTag: js.UndefOr[String] = js.native
+  val scrollPerfTag: js.UndefOr[String] = js.undefined
   
-  val scrollToOverflowEnabled: js.UndefOr[Boolean] = js.native
+  val scrollToOverflowEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val scrollsToTop: js.UndefOr[Boolean] = js.native
+  val scrollsToTop: js.UndefOr[Boolean] = js.undefined
   
   val sections: js.Array[
     SectionListData[
-      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-      /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+      /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+      /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
     ]
-  ] = js.native
+  ]
   
-  val shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  val shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  val showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.native
+  val showsHorizontalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
-  val showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.native
+  val showsVerticalScrollIndicator: js.UndefOr[Boolean] = js.undefined
   
-  val snapToAlignment: js.UndefOr[start | center | end] = js.native
+  val snapToAlignment: js.UndefOr[start | center | end] = js.undefined
   
-  val snapToEnd: js.UndefOr[Boolean] = js.native
+  val snapToEnd: js.UndefOr[Boolean] = js.undefined
   
-  val snapToInterval: js.UndefOr[Double] = js.native
+  val snapToInterval: js.UndefOr[Double] = js.undefined
   
-  val snapToOffsets: js.UndefOr[js.Array[Double]] = js.native
+  val snapToOffsets: js.UndefOr[js.Array[Double]] = js.undefined
   
-  val snapToStart: js.UndefOr[Boolean] = js.native
+  val snapToStart: js.UndefOr[Boolean] = js.undefined
   
-  val stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.native
+  val stickyHeaderIndices: js.UndefOr[js.Array[Double]] = js.undefined
   
-  val stickySectionHeadersEnabled: js.UndefOr[Boolean] = js.native
+  val stickySectionHeadersEnabled: js.UndefOr[Boolean] = js.undefined
   
-  val style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  val style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  val testID: js.UndefOr[String] = js.native
+  val testID: js.UndefOr[String] = js.undefined
   
-  val tvParallaxMagnification: js.UndefOr[Double] = js.native
+  val tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  val tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  val tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  val tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
-  val tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  val tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   
-  val updateCellsBatchingPeriod: js.UndefOr[Double] = js.native
+  val updateCellsBatchingPeriod: js.UndefOr[Double] = js.undefined
   
-  val viewabilityConfig: js.UndefOr[ViewabilityConfig] = js.native
+  val viewabilityConfig: js.UndefOr[ViewabilityConfig] = js.undefined
   
-  val viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.native
+  val viewabilityConfigCallbackPairs: js.UndefOr[ViewabilityConfigCallbackPairs] = js.undefined
   
-  val windowSize: js.UndefOr[Double] = js.native
+  val windowSize: js.UndefOr[Double] = js.undefined
   
-  val zoomScale: js.UndefOr[Double] = js.native
+  val zoomScale: js.UndefOr[Double] = js.undefined
 }
 object ReadonlySectionListPropsa {
   
@@ -412,8 +410,8 @@ object ReadonlySectionListPropsa {
   def apply(
     sections: js.Array[
       SectionListData[
-        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+        /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+        /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
       ]
     ]
   ): ReadonlySectionListPropsa = {
@@ -545,7 +543,7 @@ object ReadonlySectionListPropsa {
     def setCanCancelContentTouchesUndefined: Self = StObject.set(x, "canCancelContentTouches", js.undefined)
     
     @scala.inline
-    def setCellRendererComponent(value: ComponentType[_]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
+    def setCellRendererComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "CellRendererComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCellRendererComponentUndefined: Self = StObject.set(x, "CellRendererComponent", js.undefined)
@@ -657,7 +655,7 @@ object ReadonlySectionListPropsa {
     
     @scala.inline
     def setGetItem(
-      value: (/* data */ js.Any, /* index */ Double) => /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _
+      value: (/* data */ js.Any, /* index */ Double) => /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any
     ): Self = StObject.set(x, "getItem", js.Any.fromFunction2(value))
     
     @scala.inline
@@ -670,8 +668,8 @@ object ReadonlySectionListPropsa {
     def setGetItemLayout(
       value: (/* data */ (js.Array[
           SectionListData[
-            /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-            /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+            /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
           ]
         ]) | Null, /* index */ Double) => Index
     ): Self = StObject.set(x, "getItemLayout", js.Any.fromFunction2(value))
@@ -752,7 +750,7 @@ object ReadonlySectionListPropsa {
     def setIsTVSelectableUndefined: Self = StObject.set(x, "isTVSelectable", js.undefined)
     
     @scala.inline
-    def setItemSeparatorComponent(value: ComponentType[_]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
+    def setItemSeparatorComponent(value: ComponentType[js.Any]): Self = StObject.set(x, "ItemSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemSeparatorComponentNull: Self = StObject.set(x, "ItemSeparatorComponent", null)
@@ -787,7 +785,7 @@ object ReadonlySectionListPropsa {
     def setLegacyImplementationUndefined: Self = StObject.set(x, "legacyImplementation", js.undefined)
     
     @scala.inline
-    def setListEmptyComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
+    def setListEmptyComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListEmptyComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListEmptyComponentNull: Self = StObject.set(x, "ListEmptyComponent", null)
@@ -796,7 +794,7 @@ object ReadonlySectionListPropsa {
     def setListEmptyComponentUndefined: Self = StObject.set(x, "ListEmptyComponent", js.undefined)
     
     @scala.inline
-    def setListFooterComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
+    def setListFooterComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListFooterComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListFooterComponentNull: Self = StObject.set(x, "ListFooterComponent", null)
@@ -805,7 +803,7 @@ object ReadonlySectionListPropsa {
     def setListFooterComponentUndefined: Self = StObject.set(x, "ListFooterComponent", js.undefined)
     
     @scala.inline
-    def setListHeaderComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
+    def setListHeaderComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "ListHeaderComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setListHeaderComponentNull: Self = StObject.set(x, "ListHeaderComponent", null)
@@ -1146,8 +1144,8 @@ object ReadonlySectionListPropsa {
     @scala.inline
     def setRenderItem(
       value: /* info */ SectionListRenderItemInfo[
-          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
         ] => ReactElement | Null
     ): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
     
@@ -1163,8 +1161,8 @@ object ReadonlySectionListPropsa {
     @scala.inline
     def setRenderSectionFooter(
       value: /* info */ Section[
-          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
         ] => ReactElement | Null
     ): Self = StObject.set(x, "renderSectionFooter", js.Any.fromFunction1(value))
     
@@ -1174,8 +1172,8 @@ object ReadonlySectionListPropsa {
     @scala.inline
     def setRenderSectionHeader(
       value: /* info */ Section[
-          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
         ] => ReactElement | Null
     ): Self = StObject.set(x, "renderSectionHeader", js.Any.fromFunction1(value))
     
@@ -1225,7 +1223,7 @@ object ReadonlySectionListPropsa {
     def setScrollsToTopUndefined: Self = StObject.set(x, "scrollsToTop", js.undefined)
     
     @scala.inline
-    def setSectionSeparatorComponent(value: ComponentType[_] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
+    def setSectionSeparatorComponent(value: ComponentType[js.Any] | ReactElement): Self = StObject.set(x, "SectionSeparatorComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSectionSeparatorComponentNull: Self = StObject.set(x, "SectionSeparatorComponent", null)
@@ -1237,14 +1235,19 @@ object ReadonlySectionListPropsa {
     def setSections(
       value: js.Array[
           SectionListData[
-            /* import warning: RewrittenClass.unapply cls was tparam ItemT */ _, 
-            /* import warning: RewrittenClass.unapply cls was tparam SectionT */ _
+            /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+            /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
           ]
         ]
     ): Self = StObject.set(x, "sections", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSectionsVarargs(value: (SectionListData[js.Any, js.Any])*): Self = StObject.set(x, "sections", js.Array(value :_*))
+    def setSectionsVarargs(
+      value: (SectionListData[
+          /* import warning: RewrittenClass.unapply cls was tparam ItemT */ js.Any, 
+          /* import warning: RewrittenClass.unapply cls was tparam SectionT */ js.Any
+        ])*
+    ): Self = StObject.set(x, "sections", js.Array(value :_*))
     
     @scala.inline
     def setShouldRasterizeIOS(value: Boolean): Self = StObject.set(x, "shouldRasterizeIOS", value.asInstanceOf[js.Any])

@@ -2,81 +2,67 @@ package typings.mockery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mockery", "deregisterAll")
+  @JSImport("mockery", JSImport.Namespace)
   @js.native
-  def deregisterAll(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mockery", "deregisterAllowable")
-  @js.native
-  def deregisterAllowable(name: String): Unit = js.native
+  @scala.inline
+  def deregisterAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAll")().asInstanceOf[Unit]
   
-  @JSImport("mockery", "deregisterAllowables")
-  @js.native
-  def deregisterAllowables(names: js.Array[String]): Unit = js.native
+  @scala.inline
+  def deregisterAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "deregisterMock")
-  @js.native
-  def deregisterMock(name: String): Unit = js.native
+  @scala.inline
+  def deregisterAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "deregisterSubstitute")
-  @js.native
-  def deregisterSubstitute(name: String): Unit = js.native
+  @scala.inline
+  def deregisterMock(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterMock")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "disable")
-  @js.native
-  def disable(): Unit = js.native
+  @scala.inline
+  def deregisterSubstitute(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deregisterSubstitute")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "enable")
-  @js.native
-  def enable(): Unit = js.native
-  @JSImport("mockery", "enable")
-  @js.native
-  def enable(args: MockeryEnableArgs): Unit = js.native
+  @scala.inline
+  def disable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disable")().asInstanceOf[Unit]
   
-  @JSImport("mockery", "registerAllowable")
-  @js.native
-  def registerAllowable(name: String): Unit = js.native
-  @JSImport("mockery", "registerAllowable")
-  @js.native
-  def registerAllowable(name: String, unhook: Boolean): Unit = js.native
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
+  @scala.inline
+  def enable(args: MockeryEnableArgs): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "registerAllowables")
-  @js.native
-  def registerAllowables(names: js.Array[String]): Unit = js.native
+  @scala.inline
+  def registerAllowable(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def registerAllowable(name: String, unhook: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowable")(name.asInstanceOf[js.Any], unhook.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mockery", "registerMock")
-  @js.native
-  def registerMock(name: String, mock: js.Any): Unit = js.native
+  @scala.inline
+  def registerAllowables(names: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAllowables")(names.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mockery", "registerSubstitute")
-  @js.native
-  def registerSubstitute(name: String, substitute: String): Unit = js.native
+  @scala.inline
+  def registerMock(name: String, mock: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerMock")(name.asInstanceOf[js.Any], mock.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mockery", "resetCache")
-  @js.native
-  def resetCache(): Unit = js.native
+  @scala.inline
+  def registerSubstitute(name: String, substitute: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerSubstitute")(name.asInstanceOf[js.Any], substitute.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mockery", "warnOnReplace")
-  @js.native
-  def warnOnReplace(value: Boolean): Unit = js.native
+  @scala.inline
+  def resetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCache")().asInstanceOf[Unit]
   
-  @JSImport("mockery", "warnOnUnregistered")
-  @js.native
-  def warnOnUnregistered(value: Boolean): Unit = js.native
+  @scala.inline
+  def warnOnReplace(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnReplace")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def warnOnUnregistered(value: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warnOnUnregistered")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait MockeryEnableArgs extends StObject {
     
-    var useCleanCache: js.UndefOr[Boolean] = js.native
+    var useCleanCache: js.UndefOr[Boolean] = js.undefined
     
-    var warnOnReplace: js.UndefOr[Boolean] = js.native
+    var warnOnReplace: js.UndefOr[Boolean] = js.undefined
     
-    var warnOnUnregistered: js.UndefOr[Boolean] = js.native
+    var warnOnUnregistered: js.UndefOr[Boolean] = js.undefined
   }
   object MockeryEnableArgs {
     

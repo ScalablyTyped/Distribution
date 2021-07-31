@@ -7,7 +7,6 @@ import typings.gun.mod.Gun.Constructor
 import typings.gun.mod.Gun.ConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gunMod extends Shortcut {
@@ -16,17 +15,18 @@ object gunMod extends Shortcut {
   @JSImport("gun/gun", JSImport.Namespace)
   @js.native
   class ^[DataType] ()
-    extends ChainReference[DataType, js.Any, pre_root] {
+    extends StObject
+       with ChainReference[DataType, js.Any, pre_root] {
     def this(options: String) = this()
     def this(options: js.Array[String]) = this()
     def this(options: ConstructorOptions) = this()
   }
   @JSImport("gun/gun", JSImport.Namespace)
   @js.native
-  val ^ : Constructor = js.native
+  val ^ : js.Object & Constructor = js.native
   
-  type _To = Constructor
+  type _To = js.Object & Constructor
   
   /* This means you don't have to write `^`, but can instead just say `gunMod.foo` */
-  override def _to: Constructor = ^
+  override def _to: js.Object & Constructor = ^
 }

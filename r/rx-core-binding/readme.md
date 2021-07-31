@@ -12,7 +12,7 @@ Core binding library for composing asynchronous and event-based operations in Ja
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 691 |
+| # downloads        | 746 |
 | # stars            | 0 |
 
 ## Links

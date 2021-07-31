@@ -13,7 +13,6 @@ import typings.chromeApps.chromeAppsStrings.window_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -27,6 +26,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'desktopCapture'
   */
 object desktopCapture {
+  
+  @JSGlobal("chrome.desktopCapture")
+  @js.native
+  val ^ : js.Any = js.native
   
   object DesktopCaptureSourceType {
     
@@ -63,9 +66,8 @@ object desktopCapture {
     * Hides desktop media picker dialog shown by chooseDesktopMedia().
     * @param desktopMediaRequestId Id returned by chooseDesktopMedia()
     */
-  @JSGlobal("chrome.desktopCapture.cancelChooseDesktopMedia")
-  @js.native
-  def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = js.native
+  @scala.inline
+  def cancelChooseDesktopMedia(desktopMediaRequestId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelChooseDesktopMedia")(desktopMediaRequestId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Shows desktop media picker UI with the specified set of sources.
@@ -75,8 +77,7 @@ object desktopCapture {
     *                 The created streamId can be used only once and expires after a few seconds when it is not used.
     * @return Request ID to be used by cancelChooseDesktopMedia
     */
-  @JSGlobal("chrome.desktopCapture.chooseDesktopMedia")
-  @js.native
+  @scala.inline
   def chooseDesktopMedia(
     sources: js.Array[
       ToStringLiteral[
@@ -89,5 +90,5 @@ object desktopCapture {
       ]
     ],
     callback: js.Function1[/* streamId */ String, Unit]
-  ): integer = js.native
+  ): integer = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseDesktopMedia")(sources.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[integer]
 }

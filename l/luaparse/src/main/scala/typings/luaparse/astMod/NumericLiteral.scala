@@ -2,24 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericLiteral
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.NumericLiteral] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.NumericLiteral]
+     with Expression {
   
-  var raw: String = js.native
+  var raw: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object NumericLiteral {
   
   @scala.inline
-  def apply(raw: String, `type`: typings.luaparse.luaparseStrings.NumericLiteral, value: Double): NumericLiteral = {
+  def apply(raw: String, value: Double): NumericLiteral = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NumericLiteral")
     __obj.asInstanceOf[NumericLiteral]
   }
   

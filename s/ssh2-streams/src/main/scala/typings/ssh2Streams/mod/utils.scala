@@ -4,21 +4,20 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
-  @JSImport("ssh2-streams", "utils.parseKey")
+  @JSImport("ssh2-streams", "utils")
   @js.native
-  def parseKey(keyData: String): ParsedKey | js.Array[ParsedKey] | Error | Null = js.native
-  @JSImport("ssh2-streams", "utils.parseKey")
-  @js.native
-  def parseKey(keyData: String, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = js.native
-  @JSImport("ssh2-streams", "utils.parseKey")
-  @js.native
-  def parseKey(keyData: Buffer): ParsedKey | js.Array[ParsedKey] | Error | Null = js.native
-  @JSImport("ssh2-streams", "utils.parseKey")
-  @js.native
-  def parseKey(keyData: Buffer, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parseKey(keyData: String): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  @scala.inline
+  def parseKey(keyData: String, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  @scala.inline
+  def parseKey(keyData: Buffer): ParsedKey | js.Array[ParsedKey] | Error | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any]).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
+  @scala.inline
+  def parseKey(keyData: Buffer, passphrase: String): ParsedKey | js.Array[ParsedKey] | Error | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseKey")(keyData.asInstanceOf[js.Any], passphrase.asInstanceOf[js.Any])).asInstanceOf[ParsedKey | js.Array[ParsedKey] | Error | Null]
 }

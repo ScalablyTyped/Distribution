@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetRangesQuery
   * @see com.sun.star.sheet.SheetCellRanges
   */
-@js.native
-trait XFormulaQuery extends XInterface {
+trait XFormulaQuery
+  extends StObject
+     with XInterface {
   
   /**
     * queries all dependent formula cells.
@@ -24,7 +24,7 @@ trait XFormulaQuery extends XInterface {
     * @param bRecursive `FALSE` = queries cells dependent from the original range(s), `TRUE` = repeats query with all found cells (finds dependents of depende
     * @returns all dependent cells of any formula cell of the current cell range(s).
     */
-  def queryDependents(bRecursive: Boolean): XSheetCellRanges = js.native
+  def queryDependents(bRecursive: Boolean): XSheetCellRanges
   
   /**
     * queries all precedent cells.
@@ -33,7 +33,7 @@ trait XFormulaQuery extends XInterface {
     * @param bRecursive `FALSE` = queries precedent cells of the original range(s), `TRUE` = repeats query with all found cells (finds precedents of precedent
     * @returns all precedent cells of any formula cell of the current cell range(s).
     */
-  def queryPrecedents(bRecursive: Boolean): XSheetCellRanges = js.native
+  def queryPrecedents(bRecursive: Boolean): XSheetCellRanges
 }
 object XFormulaQuery {
   

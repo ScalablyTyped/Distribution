@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindowPeer
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** creates a hatch window implementation. */
-@js.native
-trait XHatchWindowFactory extends XInterface {
+trait XHatchWindowFactory
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new hatch window instance.
@@ -22,7 +22,7 @@ trait XHatchWindowFactory extends XInterface {
     * @returns a new hatch window
     * @throws com::sun::star::lang::IllegalArgumentException one of arguments is illegal
     */
-  def createHatchWindowInstance(xParent: XWindowPeer, aBounds: Rectangle, aSize: Size): XHatchWindow = js.native
+  def createHatchWindowInstance(xParent: XWindowPeer, aBounds: Rectangle, aSize: Size): XHatchWindow
 }
 object XHatchWindowFactory {
   

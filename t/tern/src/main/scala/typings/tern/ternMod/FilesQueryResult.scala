@@ -2,14 +2,12 @@ package typings.tern.ternMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilesQueryResult extends StObject {
   
   /** The file names. */
-  var files: js.Array[String] = js.native
+  var files: js.Array[String]
 }
 object FilesQueryResult {
   

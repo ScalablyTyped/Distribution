@@ -2,23 +2,21 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IELangSearchDelegates extends StObject {
   
-  var langDirectionClickHandler: js.Function = js.native
+  var langDirectionClickHandler: js.Function
   
-  var langDirectionHandler: js.Function = js.native
+  var langDirectionHandler: js.Function
   
-  var searchClickHandler: js.Function = js.native
+  var searchClickHandler: js.Function
   
-  var searchHandler: js.Function = js.native
+  var searchHandler: js.Function
   
-  var selectCallback: js.Function = js.native
+  var selectCallback: js.Function
   
-  var selectHandler: js.Function = js.native
+  var selectHandler: js.Function
 }
 object IELangSearchDelegates {
   

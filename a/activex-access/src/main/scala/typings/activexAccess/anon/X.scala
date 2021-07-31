@@ -4,21 +4,19 @@ import typings.activexStdole.stdole.OLE_XPOS_PIXELS
 import typings.activexStdole.stdole.OLE_YPOS_PIXELS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait X extends StObject {
   
-  val Button: Double = js.native
+  val Button: Double
   
-  val FieldList: Double = js.native
+  val FieldList: Double
   
-  val Shift: Double = js.native
+  val Shift: Double
   
-  val X: OLE_XPOS_PIXELS = js.native
+  val X: OLE_XPOS_PIXELS
   
-  val Y: OLE_YPOS_PIXELS = js.native
+  val Y: OLE_YPOS_PIXELS
 }
 object X {
   

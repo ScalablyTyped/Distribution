@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPatchBaselineForPatchGroupRequest extends StObject {
   
   /**
     * Returns he operating system rule specified for patch groups using the patch baseline.
     */
-  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.native
+  var OperatingSystem: js.UndefOr[typings.awsSdk.ssmMod.OperatingSystem] = js.undefined
   
   /**
     * The name of the patch group whose patch baseline should be retrieved.
     */
-  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup = js.native
+  var PatchGroup: typings.awsSdk.ssmMod.PatchGroup
 }
 object GetPatchBaselineForPatchGroupRequest {
   

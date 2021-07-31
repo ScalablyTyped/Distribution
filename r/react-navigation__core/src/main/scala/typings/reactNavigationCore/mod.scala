@@ -54,10 +54,13 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-navigation/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Container component which holds the navigation state.
@@ -70,7 +73,7 @@ object mod {
     */
   @JSImport("@react-navigation/core", "BaseNavigationContainer")
   @js.native
-  val BaseNavigationContainer: ForwardRefExoticComponent[NavigationContainerProps with RefAttributes[NavigationContainerRef]] = js.native
+  val BaseNavigationContainer: ForwardRefExoticComponent[NavigationContainerProps & RefAttributes[NavigationContainerRef]] = js.native
   
   /**
     * Base router object that can be used when writing custom routers.
@@ -78,44 +81,42 @@ object mod {
     */
   object BaseRouter {
     
-    @JSImport("@react-navigation/core", "BaseRouter.getStateForAction")
+    @JSImport("@react-navigation/core", "BaseRouter")
     @js.native
-    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/core", "BaseRouter.shouldActionChangeFocus")
-    @js.native
-    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = js.native
+    @scala.inline
+    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateForAction")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State | PartialState[State] | Null]
+    
+    @scala.inline
+    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldActionChangeFocus")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object CommonActions {
     
-    @JSImport("@react-navigation/core", "CommonActions.goBack")
+    @JSImport("@react-navigation/core", "CommonActions")
     @js.native
-    def goBack(): Action = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/core", "CommonActions.navigate")
-    @js.native
-    def navigate(name: String): Action = js.native
-    @JSImport("@react-navigation/core", "CommonActions.navigate")
-    @js.native
-    def navigate(name: String, params: js.Object): Action = js.native
-    @JSImport("@react-navigation/core", "CommonActions.navigate")
-    @js.native
-    def navigate(route: KeyParams): Action = js.native
-    @JSImport("@react-navigation/core", "CommonActions.navigate")
-    @js.native
-    def navigate(route: Name): Action = js.native
+    @scala.inline
+    def goBack(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("goBack")().asInstanceOf[Action]
     
-    @JSImport("@react-navigation/core", "CommonActions.reset")
-    @js.native
-    def reset(): Action = js.native
-    @JSImport("@react-navigation/core", "CommonActions.reset")
-    @js.native
-    def reset(state: ResetState): Action = js.native
+    @scala.inline
+    def navigate(name: String): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any]).asInstanceOf[Action]
+    @scala.inline
+    def navigate(name: String, params: js.Object): Action = (^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Action]
+    @scala.inline
+    def navigate(route: KeyParams): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
+    @scala.inline
+    def navigate(route: Name): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("navigate")(route.asInstanceOf[js.Any]).asInstanceOf[Action]
     
-    @JSImport("@react-navigation/core", "CommonActions.setParams")
-    @js.native
-    def setParams(params: js.Object): Action = js.native
+    @scala.inline
+    def reset(): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Action]
+    @scala.inline
+    def reset(state: ResetState): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(state.asInstanceOf[js.Any]).asInstanceOf[Action]
+    
+    @scala.inline
+    def setParams(params: js.Object): Action = ^.asInstanceOf[js.Dynamic].applyDynamic("setParams")(params.asInstanceOf[js.Any]).asInstanceOf[Action]
   }
   
   /**
@@ -128,29 +129,27 @@ object mod {
   
   object DrawerActions {
     
-    @JSImport("@react-navigation/core", "DrawerActions.closeDrawer")
+    @JSImport("@react-navigation/core", "DrawerActions")
     @js.native
-    def closeDrawer(): DrawerActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/core", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("@react-navigation/core", "DrawerActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    @scala.inline
+    def closeDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("closeDrawer")().asInstanceOf[DrawerActionType]
     
-    @JSImport("@react-navigation/core", "DrawerActions.openDrawer")
-    @js.native
-    def openDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
     
-    @JSImport("@react-navigation/core", "DrawerActions.toggleDrawer")
-    @js.native
-    def toggleDrawer(): DrawerActionType = js.native
+    @scala.inline
+    def openDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("openDrawer")().asInstanceOf[DrawerActionType]
+    
+    @scala.inline
+    def toggleDrawer(): DrawerActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleDrawer")().asInstanceOf[DrawerActionType]
   }
   
-  @JSImport("@react-navigation/core", "DrawerRouter")
-  @js.native
-  def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = js.native
+  @scala.inline
+  def DrawerRouter(hasOpenByDefaultRest: DrawerRouterOptions): Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("DrawerRouter")(hasOpenByDefaultRest.asInstanceOf[js.Any]).asInstanceOf[Router[DrawerNavigationState[ParamListBase], DrawerActionType | CommonNavigationAction]]
   
   /**
     * Context which holds the navigation prop for a screen.
@@ -185,59 +184,61 @@ object mod {
   
   object StackActions {
     
-    @JSImport("@react-navigation/core", "StackActions.pop")
+    @JSImport("@react-navigation/core", "StackActions")
     @js.native
-    def pop(): StackActionType = js.native
-    @JSImport("@react-navigation/core", "StackActions.pop")
-    @js.native
-    def pop(count: Double): StackActionType = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/core", "StackActions.popToTop")
-    @js.native
-    def popToTop(): StackActionType = js.native
+    @scala.inline
+    def pop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[StackActionType]
+    @scala.inline
+    def pop(count: Double): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(count.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
     
-    @JSImport("@react-navigation/core", "StackActions.push")
-    @js.native
-    def push(name: String): StackActionType = js.native
-    @JSImport("@react-navigation/core", "StackActions.push")
-    @js.native
-    def push(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def popToTop(): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[StackActionType]
     
-    @JSImport("@react-navigation/core", "StackActions.replace")
-    @js.native
-    def replace(name: String): StackActionType = js.native
-    @JSImport("@react-navigation/core", "StackActions.replace")
-    @js.native
-    def replace(name: String, params: js.Object): StackActionType = js.native
+    @scala.inline
+    def push(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def push(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
+    
+    @scala.inline
+    def replace(name: String): StackActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any]).asInstanceOf[StackActionType]
+    @scala.inline
+    def replace(name: String, params: js.Object): StackActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[StackActionType]
   }
   
-  @JSImport("@react-navigation/core", "StackRouter")
-  @js.native
+  @scala.inline
   def StackRouter(options: StackRouterOptions): Router[
     StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("StackRouter")(options.asInstanceOf[js.Any]).asInstanceOf[Router[
+    StackNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | PayloadSourceTargetType | Type | PayloadSource | TargetType | PayloadSourceTarget | SourceTargetType
+  ]]
   
   object TabActions {
     
-    @JSImport("@react-navigation/core", "TabActions.jumpTo")
+    @JSImport("@react-navigation/core", "TabActions")
     @js.native
-    def jumpTo(name: String): TabActionType = js.native
-    @JSImport("@react-navigation/core", "TabActions.jumpTo")
-    @js.native
-    def jumpTo(name: String, params: js.Object): TabActionType = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def jumpTo(name: String): TabActionType = ^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any]).asInstanceOf[TabActionType]
+    @scala.inline
+    def jumpTo(name: String, params: js.Object): TabActionType = (^.asInstanceOf[js.Dynamic].applyDynamic("jumpTo")(name.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[TabActionType]
   }
   
-  @JSImport("@react-navigation/core", "TabRouter")
-  @js.native
+  @scala.inline
   def TabRouter(hasInitialRouteNameBackBehavior: TabRouterOptions): Router[
     TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
     Source | Payload | PayloadSourceTargetType | Type | TabActionType
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("TabRouter")(hasInitialRouteNameBackBehavior.asInstanceOf[js.Any]).asInstanceOf[Router[
+    TabNavigationState[Record[String, js.UndefOr[js.Object]]], 
+    Source | Payload | PayloadSourceTargetType | Type | TabActionType
+  ]]
   
-  @JSImport("@react-navigation/core", "createNavigatorFactory")
-  @js.native
-  def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[_] */](Navigator: NavigatorComponent): js.Function0[
+  @scala.inline
+  def createNavigatorFactory[State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, NavigatorComponent /* <: ComponentType[js.Any] */](Navigator: NavigatorComponent): js.Function0[
     TypedNavigator[
       Record[String, js.UndefOr[js.Object]], 
       State, 
@@ -245,63 +246,58 @@ object mod {
       EventMap, 
       NavigatorComponent
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createNavigatorFactory")(Navigator.asInstanceOf[js.Any]).asInstanceOf[js.Function0[
+    TypedNavigator[
+      Record[String, js.UndefOr[js.Object]], 
+      State, 
+      ScreenOptions, 
+      EventMap, 
+      NavigatorComponent
+    ]
+  ]]
   
-  @JSImport("@react-navigation/core", "getActionFromState")
-  @js.native
-  def getActionFromState(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = js.native
-  @JSImport("@react-navigation/core", "getActionFromState")
-  @js.native
+  @scala.inline
+  def getActionFromState(state: PartialStateNavigationSta): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
+  @scala.inline
   def getActionFromState(
     state: PartialStateNavigationSta,
     options: typings.reactNavigationCore.getActionFromStateMod.Options
-  ): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = js.native
+  ): js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActionFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NavigateAction[NavigationState[ParamListBase]] | Action]]
   
-  @JSImport("@react-navigation/core", "getFocusedRouteNameFromRoute")
-  @js.native
-  def getFocusedRouteNameFromRoute(route: (Partial[Route[String, js.UndefOr[js.Object]]]) with State): js.UndefOr[String] = js.native
+  @scala.inline
+  def getFocusedRouteNameFromRoute(route: (Partial[Route[String, js.UndefOr[js.Object]]]) & State): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFocusedRouteNameFromRoute")(route.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@react-navigation/core", "getPathFromState")
-  @js.native
-  def getPathFromState(state: typings.reactNavigationCore.getPathFromStateMod.State): String = js.native
-  @JSImport("@react-navigation/core", "getPathFromState")
-  @js.native
+  @scala.inline
+  def getPathFromState(state: typings.reactNavigationCore.getPathFromStateMod.State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def getPathFromState(
     state: typings.reactNavigationCore.getPathFromStateMod.State,
     options: typings.reactNavigationCore.getPathFromStateMod.Options
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromState")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-navigation/core", "getStateFromPath")
-  @js.native
-  def getStateFromPath(path: String): js.UndefOr[ResultState] = js.native
-  @JSImport("@react-navigation/core", "getStateFromPath")
-  @js.native
-  def getStateFromPath(path: String, options: typings.reactNavigationCore.getStateFromPathMod.Options): js.UndefOr[ResultState] = js.native
+  @scala.inline
+  def getStateFromPath(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
+  @scala.inline
+  def getStateFromPath(path: String, options: typings.reactNavigationCore.getStateFromPathMod.Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateFromPath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
   
-  @JSImport("@react-navigation/core", "useFocusEffect")
-  @js.native
-  def useFocusEffect(effect: EffectCallback): Unit = js.native
+  @scala.inline
+  def useFocusEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-navigation/core", "useIsFocused")
-  @js.native
-  def useIsFocused(): Boolean = js.native
+  @scala.inline
+  def useIsFocused(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsFocused")().asInstanceOf[Boolean]
   
-  @JSImport("@react-navigation/core", "useNavigation")
-  @js.native
-  def useNavigation[T /* <: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object] */](): T = js.native
+  @scala.inline
+  def useNavigation[T /* <: NavigationProp[ParamListBase, String, NavigationState[ParamListBase], js.Object, js.Object] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigation")().asInstanceOf[T]
   
-  @JSImport("@react-navigation/core", "useNavigationBuilder")
-  @js.native
-  def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, _] */](
-    createRouter: RouterFactory[State, _, RouterOptions],
-    options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) with RouterOptions
-  ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = js.native
+  @scala.inline
+  def useNavigationBuilder[State /* <: NavigationState[ParamListBase] */, RouterOptions /* <: DefaultRouterOptions[String] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, ScreenOptions /* <: js.Object */, EventMap /* <: Record[String, js.Any] */](
+    createRouter: RouterFactory[State, js.Any, RouterOptions],
+    options: (DefaultNavigatorOptions[ScreenOptions, ParamListBase]) & RouterOptions
+  ): Descriptors[State, EventMap, ActionHelpers, ScreenOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationBuilder")(createRouter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Descriptors[State, EventMap, ActionHelpers, ScreenOptions]]
   
-  @JSImport("@react-navigation/core", "useNavigationState")
-  @js.native
-  def useNavigationState[T](selector: Selector[T]): T = js.native
+  @scala.inline
+  def useNavigationState[T](selector: Selector[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useNavigationState")(selector.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@react-navigation/core", "useRoute")
-  @js.native
-  def useRoute[T /* <: RouteProp[ParamListBase, String] */](): T = js.native
+  @scala.inline
+  def useRoute[T /* <: RouteProp[ParamListBase, String] */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useRoute")().asInstanceOf[T]
 }

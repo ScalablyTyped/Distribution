@@ -5,10 +5,13 @@ import typings.tensorflowTfjsCore.typesMod.ModelArtifactsInfo
 import typings.tensorflowTfjsCore.typesMod.ModelStoreManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelManagementMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry")
   @js.native
@@ -29,13 +32,11 @@ object modelManagementMod {
     @scala.inline
     def getInstance_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getInstance")(x.asInstanceOf[js.Any])
     
-    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getManager")
-    @js.native
-    def getManager(scheme: String): ModelStoreManager = js.native
+    @scala.inline
+    def getManager(scheme: String): ModelStoreManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getManager")(scheme.asInstanceOf[js.Any]).asInstanceOf[ModelStoreManager]
     
-    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.getSchemes")
-    @js.native
-    def getSchemes(): js.Array[String] = js.native
+    @scala.inline
+    def getSchemes(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSchemes")().asInstanceOf[js.Array[String]]
     
     @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.instance")
     @js.native
@@ -49,9 +50,8 @@ object modelManagementMod {
       * @param saveRouter A function that maps a URL-like string onto an instance
       * of `IOHandler` with the `save` method defined or `null`.
       */
-    @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "ModelStoreManagerRegistry.registerManager")
-    @js.native
-    def registerManager(scheme: String, manager: ModelStoreManager): Unit = js.native
+    @scala.inline
+    def registerManager(scheme: String, manager: ModelStoreManager): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerManager")(scheme.asInstanceOf[js.Any], manager.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -101,9 +101,8 @@ object modelManagementMod {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "copyModel")
-  @js.native
-  def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def copyModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyModel")(sourceURL.asInstanceOf[js.Any], destURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
   /**
     * List all models stored in registered storage mediums.
@@ -140,9 +139,8 @@ object modelManagementMod {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "listModels")
-  @js.native
-  def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = js.native
+  @scala.inline
+  def listModels(): js.Promise[StringDictionary[ModelArtifactsInfo]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listModels")().asInstanceOf[js.Promise[StringDictionary[ModelArtifactsInfo]]]
   
   /**
     * Move a model from one URL to another.
@@ -190,9 +188,8 @@ object modelManagementMod {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "moveModel")
-  @js.native
-  def moveModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def moveModel(sourceURL: String, destURL: String): js.Promise[ModelArtifactsInfo] = (^.asInstanceOf[js.Dynamic].applyDynamic("moveModel")(sourceURL.asInstanceOf[js.Any], destURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ModelArtifactsInfo]]
   
   /**
     * Remove a model specified by URL from a reigstered storage medium.
@@ -227,7 +224,6 @@ object modelManagementMod {
     *   ignoreCI: true
     * }
     */
-  @JSImport("@tensorflow/tfjs-core/dist/io/model_management", "removeModel")
-  @js.native
-  def removeModel(url: String): js.Promise[ModelArtifactsInfo] = js.native
+  @scala.inline
+  def removeModel(url: String): js.Promise[ModelArtifactsInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeModel")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ModelArtifactsInfo]]
 }

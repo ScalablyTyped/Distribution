@@ -2,36 +2,34 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInternalIpAddress extends StObject {
   
   /**
     * IP CIDR address or range.
     */
-  var cidr: js.UndefOr[String] = js.native
+  var cidr: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the internal IP address.
     */
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
   /**
     * The purpose of the internal IP address if applicable.
     */
-  var purpose: js.UndefOr[String] = js.native
+  var purpose: js.UndefOr[String] = js.undefined
   
   /**
     * The region of the internal IP address if applicable.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the internal IP address.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaInternalIpAddress {
   

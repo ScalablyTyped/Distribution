@@ -2,20 +2,18 @@ package typings.keyboardKey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<std.KeyboardEvent, 'key' | 'keyCode' | 'which'> */
-  @js.native
   trait PickKeyboardEventkeykeyCo extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var keyCode: Double = js.native
+    var keyCode: Double
     
-    var which: Double = js.native
+    var which: Double
   }
   object PickKeyboardEventkeykeyCo {
     
@@ -40,16 +38,15 @@ object anon {
   }
   
   /* Inlined std.Pick<std.KeyboardEvent, 'key' | 'keyCode' | 'which' | 'shiftKey'> */
-  @js.native
   trait PickKeyboardEventkeykeyCoKey extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var keyCode: Double = js.native
+    var keyCode: Double
     
-    var shiftKey: Boolean = js.native
+    var shiftKey: Boolean
     
-    var which: Double = js.native
+    var which: Double
   }
   object PickKeyboardEventkeykeyCoKey {
     

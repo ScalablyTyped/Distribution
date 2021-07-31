@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNodeValueRequest extends StObject {
   
   /**
     * Id of the node to set value for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * New node's value.
     */
-  var value: String = js.native
+  var value: String
 }
 object SetNodeValueRequest {
   

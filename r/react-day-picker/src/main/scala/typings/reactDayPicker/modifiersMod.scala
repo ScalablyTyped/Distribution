@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modifiersMod {
@@ -21,25 +20,26 @@ object modifiersMod {
   }
   object ModifiersUtils {
     
-    @JSImport("react-day-picker/types/Modifiers", "ModifiersUtils.dayMatchesModifier")
+    @JSImport("react-day-picker/types/Modifiers", "ModifiersUtils")
     @js.native
-    def dayMatchesModifier(day: Date): Boolean = js.native
-    @JSImport("react-day-picker/types/Modifiers", "ModifiersUtils.dayMatchesModifier")
-    @js.native
-    def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = js.native
-    @JSImport("react-day-picker/types/Modifiers", "ModifiersUtils.dayMatchesModifier")
-    @js.native
-    def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-day-picker/types/Modifiers", "ModifiersUtils.getModifiersForDay")
-    @js.native
-    def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = js.native
+    @scala.inline
+    def dayMatchesModifier(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifiersForDay")(day.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
   
-  @js.native
-  trait AfterModifier extends _Modifier {
+  trait AfterModifier
+    extends StObject
+       with _Modifier {
     
-    var after: Date = js.native
+    var after: Date
   }
   object AfterModifier {
     
@@ -57,12 +57,13 @@ object modifiersMod {
     }
   }
   
-  @js.native
-  trait BeforeAfterModifier extends _Modifier {
+  trait BeforeAfterModifier
+    extends StObject
+       with _Modifier {
     
-    var after: Date = js.native
+    var after: Date
     
-    var before: Date = js.native
+    var before: Date
   }
   object BeforeAfterModifier {
     
@@ -83,10 +84,11 @@ object modifiersMod {
     }
   }
   
-  @js.native
-  trait BeforeModifier extends _Modifier {
+  trait BeforeModifier
+    extends StObject
+       with _Modifier {
     
-    var before: Date = js.native
+    var before: Date
   }
   object BeforeModifier {
     
@@ -104,13 +106,13 @@ object modifiersMod {
     }
   }
   
-  @js.native
   trait DayModifiers
-    extends /* other */ StringDictionary[js.UndefOr[Boolean]] {
+    extends StObject
+       with /* other */ StringDictionary[js.UndefOr[Boolean]] {
     
-    var outside: js.UndefOr[Boolean] = js.native
+    var outside: js.UndefOr[Boolean] = js.undefined
     
-    var today: js.UndefOr[Boolean] = js.native
+    var today: js.UndefOr[Boolean] = js.undefined
   }
   object DayModifiers {
     
@@ -137,10 +139,11 @@ object modifiersMod {
     }
   }
   
-  @js.native
-  trait DaysOfWeekModifier extends _Modifier {
+  trait DaysOfWeekModifier
+    extends StObject
+       with _Modifier {
     
-    var daysOfWeek: js.Array[Double] = js.native
+    var daysOfWeek: js.Array[Double]
   }
   object DaysOfWeekModifier {
     
@@ -171,17 +174,17 @@ object modifiersMod {
     - typings.reactDayPicker.modifiersMod.BeforeAfterModifier
     - typings.reactDayPicker.modifiersMod.DaysOfWeekModifier
     - typings.reactDayPicker.modifiersMod.FunctionModifier
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type Modifier = js.UndefOr[_Modifier | Date | FunctionModifier]
   
-  @js.native
   trait Modifiers
-    extends /* other */ StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] {
+    extends StObject
+       with /* other */ StringDictionary[js.UndefOr[Modifier | js.Array[Modifier]]] {
     
-    var outside: Modifier | js.Array[Modifier] = js.native
+    var outside: Modifier | js.Array[Modifier]
     
-    var today: Modifier | js.Array[Modifier] = js.native
+    var today: Modifier | js.Array[Modifier]
   }
   object Modifiers {
     
@@ -220,12 +223,13 @@ object modifiersMod {
     }
   }
   
-  @js.native
-  trait RangeModifier extends _Modifier {
+  trait RangeModifier
+    extends StObject
+       with _Modifier {
     
-    var from: Date = js.native
+    var from: Date
     
-    var to: Date = js.native
+    var to: Date
   }
   object RangeModifier {
     

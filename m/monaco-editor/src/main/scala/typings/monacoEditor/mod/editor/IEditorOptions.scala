@@ -54,295 +54,293 @@ import typings.monacoEditor.monacoEditorStrings.underline
 import typings.monacoEditor.monacoEditorStrings.wordWrapColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditorOptions extends StObject {
   
   /**
     * Accept suggestions on provider defined characters.
     * Defaults to true.
     */
-  var acceptSuggestionOnCommitCharacter: js.UndefOr[Boolean] = js.native
+  var acceptSuggestionOnCommitCharacter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Accept suggestions on ENTER.
     * Defaults to 'on'.
     */
-  var acceptSuggestionOnEnter: js.UndefOr[on | smart | off] = js.native
+  var acceptSuggestionOnEnter: js.UndefOr[on | smart | off] = js.undefined
   
   /**
     * Controls the number of lines in the editor that can be read out by a screen reader
     */
-  var accessibilityPageSize: js.UndefOr[Double] = js.native
+  var accessibilityPageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Configure the editor's accessibility support.
     * Defaults to 'auto'. It is best to leave this to 'auto'.
     */
-  var accessibilitySupport: js.UndefOr[auto | off | on] = js.native
+  var accessibilitySupport: js.UndefOr[auto | off | on] = js.undefined
   
   /**
     * The aria label for the editor's textarea (when it is focused).
     */
-  var ariaLabel: js.UndefOr[String] = js.native
+  var ariaLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Options for auto closing brackets.
     * Defaults to language defined behavior.
     */
-  var autoClosingBrackets: js.UndefOr[EditorAutoClosingStrategy] = js.native
+  var autoClosingBrackets: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
   
   /**
     * Options for typing over closing quotes or brackets.
     */
-  var autoClosingOvertype: js.UndefOr[EditorAutoClosingOvertypeStrategy] = js.native
+  var autoClosingOvertype: js.UndefOr[EditorAutoClosingOvertypeStrategy] = js.undefined
   
   /**
     * Options for auto closing quotes.
     * Defaults to language defined behavior.
     */
-  var autoClosingQuotes: js.UndefOr[EditorAutoClosingStrategy] = js.native
+  var autoClosingQuotes: js.UndefOr[EditorAutoClosingStrategy] = js.undefined
   
   /**
     * Controls whether the editor should automatically adjust the indentation when users type, paste, move or indent lines.
     * Defaults to advanced.
     */
-  var autoIndent: js.UndefOr[none | keep | brackets | advanced | full] = js.native
+  var autoIndent: js.UndefOr[none | keep | brackets | advanced | full] = js.undefined
   
   /**
     * Options for auto surrounding.
     * Defaults to always allowing auto surrounding.
     */
-  var autoSurround: js.UndefOr[EditorAutoSurroundStrategy] = js.native
+  var autoSurround: js.UndefOr[EditorAutoSurroundStrategy] = js.undefined
   
   /**
     * Enable that the editor will install an interval to check if its container dom node size has changed.
     * Enabling this might have a severe performance impact.
     * Defaults to false.
     */
-  var automaticLayout: js.UndefOr[Boolean] = js.native
+  var automaticLayout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Timeout for running code actions on save.
     */
-  var codeActionsOnSaveTimeout: js.UndefOr[Double] = js.native
+  var codeActionsOnSaveTimeout: js.UndefOr[Double] = js.undefined
   
   /**
     * Show code lens
     * Defaults to true.
     */
-  var codeLens: js.UndefOr[Boolean] = js.native
+  var codeLens: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable inline color decorators and color picker rendering.
     */
-  var colorDecorators: js.UndefOr[Boolean] = js.native
+  var colorDecorators: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable that the selection with the mouse and keys is doing column selection.
     * Defaults to false.
     */
-  var columnSelection: js.UndefOr[Boolean] = js.native
+  var columnSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control the behaviour of comments in the editor.
     */
-  var comments: js.UndefOr[IEditorCommentsOptions] = js.native
+  var comments: js.UndefOr[IEditorCommentsOptions] = js.undefined
   
   /**
     * Enable custom contextmenu.
     * Defaults to true.
     */
-  var contextmenu: js.UndefOr[Boolean] = js.native
+  var contextmenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Syntax highlighting is copied.
     */
-  var copyWithSyntaxHighlighting: js.UndefOr[Boolean] = js.native
+  var copyWithSyntaxHighlighting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control the cursor animation style, possible values are 'blink', 'smooth', 'phase', 'expand' and 'solid'.
     * Defaults to 'blink'.
     */
-  var cursorBlinking: js.UndefOr[blink | smooth | phase | expand | solid] = js.native
+  var cursorBlinking: js.UndefOr[blink | smooth | phase | expand | solid] = js.undefined
   
   /**
     * Enable smooth caret animation.
     * Defaults to false.
     */
-  var cursorSmoothCaretAnimation: js.UndefOr[Boolean] = js.native
+  var cursorSmoothCaretAnimation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control the cursor style, either 'block' or 'line'.
     * Defaults to 'line'.
     */
-  var cursorStyle: js.UndefOr[line | block | underline | `line-thin` | `block-outline` | `underline-thin`] = js.native
+  var cursorStyle: js.UndefOr[line | block | underline | `line-thin` | `block-outline` | `underline-thin`] = js.undefined
   
   /**
     * Controls the minimal number of visible leading and trailing lines surrounding the cursor.
     * Defaults to 0.
     */
-  var cursorSurroundingLines: js.UndefOr[Double] = js.native
+  var cursorSurroundingLines: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls when `cursorSurroundingLines` should be enforced
     * Defaults to `default`, `cursorSurroundingLines` is not enforced when cursor position is changed
     * by mouse.
     */
-  var cursorSurroundingLinesStyle: js.UndefOr[default | all] = js.native
+  var cursorSurroundingLinesStyle: js.UndefOr[default | all] = js.undefined
   
   /**
     * Control the width of the cursor when cursorStyle is set to 'line'
     */
-  var cursorWidth: js.UndefOr[Double] = js.native
+  var cursorWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls whether the definition link opens element in the peek widget.
     * Defaults to false.
     */
-  var definitionLinkOpensInPeek: js.UndefOr[Boolean] = js.native
+  var definitionLinkOpensInPeek: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the use of `transform: translate3d(0px, 0px, 0px)` for the editor margin and lines layers.
     * The usage of `transform: translate3d(0px, 0px, 0px)` acts as a hint for browsers to create an extra layer.
     * Defaults to false.
     */
-  var disableLayerHinting: js.UndefOr[Boolean] = js.native
+  var disableLayerHinting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the optimizations for monospace fonts.
     * Defaults to false.
     */
-  var disableMonospaceOptimizations: js.UndefOr[Boolean] = js.native
+  var disableMonospaceOptimizations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if the editor should allow to move selections via drag and drop.
     * Defaults to false.
     */
-  var dragAndDrop: js.UndefOr[Boolean] = js.native
+  var dragAndDrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Copying without a selection copies the current line.
     */
-  var emptySelectionClipboard: js.UndefOr[Boolean] = js.native
+  var emptySelectionClipboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Class name to be added to the editor.
     */
-  var extraEditorClassName: js.UndefOr[String] = js.native
+  var extraEditorClassName: js.UndefOr[String] = js.undefined
   
   /**
     * FastScrolling mulitplier speed when pressing `Alt`
     * Defaults to 5.
     */
-  var fastScrollSensitivity: js.UndefOr[Double] = js.native
+  var fastScrollSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * Control the behavior of the find widget.
     */
-  var find: js.UndefOr[IEditorFindOptions] = js.native
+  var find: js.UndefOr[IEditorFindOptions] = js.undefined
   
   /**
     * Display overflow widgets as `fixed`.
     * Defaults to `false`.
     */
-  var fixedOverflowWidgets: js.UndefOr[Boolean] = js.native
+  var fixedOverflowWidgets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable code folding.
     * Defaults to true.
     */
-  var folding: js.UndefOr[Boolean] = js.native
+  var folding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable highlight for folded regions.
     * Defaults to true.
     */
-  var foldingHighlight: js.UndefOr[Boolean] = js.native
+  var foldingHighlight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Selects the folding strategy. 'auto' uses the strategies contributed for the current document, 'indentation' uses the indentation based folding strategy.
     * Defaults to 'auto'.
     */
-  var foldingStrategy: js.UndefOr[auto | indentation] = js.native
+  var foldingStrategy: js.UndefOr[auto | indentation] = js.undefined
   
   /**
     * The font family
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Enable font ligatures.
     * Defaults to false.
     */
-  var fontLigatures: js.UndefOr[Boolean | String] = js.native
+  var fontLigatures: js.UndefOr[Boolean | String] = js.undefined
   
   /**
     * The font size
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The font weight
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * Enable format on paste.
     * Defaults to false.
     */
-  var formatOnPaste: js.UndefOr[Boolean] = js.native
+  var formatOnPaste: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable format on type.
     * Defaults to false.
     */
-  var formatOnType: js.UndefOr[Boolean] = js.native
+  var formatOnType: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable the rendering of the glyph margin.
     * Defaults to true in vscode and to false in monaco-editor.
     */
-  var glyphMargin: js.UndefOr[Boolean] = js.native
+  var glyphMargin: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
     */
-  var gotoLocation: js.UndefOr[IGotoLocationOptions] = js.native
+  var gotoLocation: js.UndefOr[IGotoLocationOptions] = js.undefined
   
   /**
     * Should the cursor be hidden in the overview ruler.
     * Defaults to false.
     */
-  var hideCursorInOverviewRuler: js.UndefOr[Boolean] = js.native
+  var hideCursorInOverviewRuler: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable highlighting of the active indent guide.
     * Defaults to true.
     */
-  var highlightActiveIndentGuide: js.UndefOr[Boolean] = js.native
+  var highlightActiveIndentGuide: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configure the editor's hover.
     */
-  var hover: js.UndefOr[IEditorHoverOptions] = js.native
+  var hover: js.UndefOr[IEditorHoverOptions] = js.undefined
   
   /**
     * This editor is used inside a diff editor.
     */
-  var inDiffEditor: js.UndefOr[Boolean] = js.native
+  var inDiffEditor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The letter spacing
     */
-  var letterSpacing: js.UndefOr[Double] = js.native
+  var letterSpacing: js.UndefOr[Double] = js.undefined
   
   /**
     * Control the behavior and rendering of the code action lightbulb.
     */
-  var lightbulb: js.UndefOr[IEditorLightbulbOptions] = js.native
+  var lightbulb: js.UndefOr[IEditorLightbulbOptions] = js.undefined
   
   /**
     * The width reserved for line decorations (in px).
@@ -350,12 +348,12 @@ trait IEditorOptions extends StObject {
     * You can pass in a string in the format floating point followed by "ch". e.g. 1.3ch.
     * Defaults to 10.
     */
-  var lineDecorationsWidth: js.UndefOr[Double | String] = js.native
+  var lineDecorationsWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The line height
     */
-  var lineHeight: js.UndefOr[Double] = js.native
+  var lineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Control the rendering of line numbers.
@@ -364,321 +362,321 @@ trait IEditorOptions extends StObject {
     * Otherwise, line numbers will not be rendered.
     * Defaults to `on`.
     */
-  var lineNumbers: js.UndefOr[LineNumbersType] = js.native
+  var lineNumbers: js.UndefOr[LineNumbersType] = js.undefined
   
   /**
     * Control the width of line numbers, by reserving horizontal space for rendering at least an amount of digits.
     * Defaults to 5.
     */
-  var lineNumbersMinChars: js.UndefOr[Double] = js.native
+  var lineNumbersMinChars: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable detecting links and making them clickable.
     * Defaults to true.
     */
-  var links: js.UndefOr[Boolean] = js.native
+  var links: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable highlighting of matching brackets.
     * Defaults to 'always'.
     */
-  var matchBrackets: js.UndefOr[never | near | always] = js.native
+  var matchBrackets: js.UndefOr[never | near | always] = js.undefined
   
   /**
     * Control the behavior and rendering of the minimap.
     */
-  var minimap: js.UndefOr[IEditorMinimapOptions] = js.native
+  var minimap: js.UndefOr[IEditorMinimapOptions] = js.undefined
   
   /**
     * Control the mouse pointer style, either 'text' or 'default' or 'copy'
     * Defaults to 'text'
     */
-  var mouseStyle: js.UndefOr[text | default | copy] = js.native
+  var mouseStyle: js.UndefOr[text | default | copy] = js.undefined
   
   /**
     * A multiplier to be used on the `deltaX` and `deltaY` of mouse wheel scroll events.
     * Defaults to 1.
     */
-  var mouseWheelScrollSensitivity: js.UndefOr[Double] = js.native
+  var mouseWheelScrollSensitivity: js.UndefOr[Double] = js.undefined
   
   /**
     * Zoom the font in the editor when using the mouse wheel in combination with holding Ctrl.
     * Defaults to false.
     */
-  var mouseWheelZoom: js.UndefOr[Boolean] = js.native
+  var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Merge overlapping selections.
     * Defaults to true
     */
-  var multiCursorMergeOverlapping: js.UndefOr[Boolean] = js.native
+  var multiCursorMergeOverlapping: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The modifier to be used to add multiple cursors with the mouse.
     * Defaults to 'alt'
     */
-  var multiCursorModifier: js.UndefOr[ctrlCmd | alt] = js.native
+  var multiCursorModifier: js.UndefOr[ctrlCmd | alt] = js.undefined
   
   /**
     * Configure the behaviour when pasting a text with the line count equal to the cursor count.
     * Defaults to 'spread'.
     */
-  var multiCursorPaste: js.UndefOr[spread | full] = js.native
+  var multiCursorPaste: js.UndefOr[spread | full] = js.undefined
   
   /**
     * Enable semantic occurrences highlight.
     * Defaults to true.
     */
-  var occurrencesHighlight: js.UndefOr[Boolean] = js.native
+  var occurrencesHighlight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if a border should be drawn around the overview ruler.
     * Defaults to `true`.
     */
-  var overviewRulerBorder: js.UndefOr[Boolean] = js.native
+  var overviewRulerBorder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of vertical lanes the overview ruler should render.
     * Defaults to 3.
     */
-  var overviewRulerLanes: js.UndefOr[Double] = js.native
+  var overviewRulerLanes: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the spacing around the editor.
     */
-  var padding: js.UndefOr[IEditorPaddingOptions] = js.native
+  var padding: js.UndefOr[IEditorPaddingOptions] = js.undefined
   
   /**
     * Parameter hint options.
     */
-  var parameterHints: js.UndefOr[IEditorParameterHintOptions] = js.native
+  var parameterHints: js.UndefOr[IEditorParameterHintOptions] = js.undefined
   
   /**
     * Controls whether to focus the inline editor in the peek widget by default.
     * Defaults to false.
     */
-  var peekWidgetDefaultFocus: js.UndefOr[tree | typings.monacoEditor.monacoEditorStrings.editor] = js.native
+  var peekWidgetDefaultFocus: js.UndefOr[tree | typings.monacoEditor.monacoEditorStrings.editor] = js.undefined
   
   /**
     * Enable quick suggestions (shadow suggestions)
     * Defaults to true.
     */
-  var quickSuggestions: js.UndefOr[Boolean | IQuickSuggestionsOptions] = js.native
+  var quickSuggestions: js.UndefOr[Boolean | IQuickSuggestionsOptions] = js.undefined
   
   /**
     * Quick suggestions show delay (in ms)
     * Defaults to 10 (ms)
     */
-  var quickSuggestionsDelay: js.UndefOr[Double] = js.native
+  var quickSuggestionsDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * Should the editor be read only.
     * Defaults to false.
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Rename matching regions on type.
     * Defaults to false.
     */
-  var renameOnType: js.UndefOr[Boolean] = js.native
+  var renameOnType: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable rendering of control characters.
     * Defaults to false.
     */
-  var renderControlCharacters: js.UndefOr[Boolean] = js.native
+  var renderControlCharacters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render last line number when the file ends with a newline.
     * Defaults to true.
     */
-  var renderFinalNewline: js.UndefOr[Boolean] = js.native
+  var renderFinalNewline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable rendering of indent guides.
     * Defaults to true.
     */
-  var renderIndentGuides: js.UndefOr[Boolean] = js.native
+  var renderIndentGuides: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable rendering of current line highlight.
     * Defaults to all.
     */
-  var renderLineHighlight: js.UndefOr[none | gutter | line | all] = js.native
+  var renderLineHighlight: js.UndefOr[none | gutter | line | all] = js.undefined
   
   /**
     * Control if the current line highlight should be rendered only the editor is focused.
     * Defaults to false.
     */
-  var renderLineHighlightOnlyWhenFocus: js.UndefOr[Boolean] = js.native
+  var renderLineHighlightOnlyWhenFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Should the editor render validation decorations.
     * Defaults to editable.
     */
-  var renderValidationDecorations: js.UndefOr[editable | on | off] = js.native
+  var renderValidationDecorations: js.UndefOr[editable | on | off] = js.undefined
   
   /**
     * Enable rendering of whitespace.
     * Defaults to none.
     */
-  var renderWhitespace: js.UndefOr[none | boundary | selection | trailing | all] = js.native
+  var renderWhitespace: js.UndefOr[none | boundary | selection | trailing | all] = js.undefined
   
   /**
     * When revealing the cursor, a virtual padding (px) is added to the cursor, turning it into a rectangle.
     * This virtual padding ensures that the cursor gets revealed before hitting the edge of the viewport.
     * Defaults to 30 (px).
     */
-  var revealHorizontalRightPadding: js.UndefOr[Double] = js.native
+  var revealHorizontalRightPadding: js.UndefOr[Double] = js.undefined
   
   /**
     * Render the editor selection with rounded borders.
     * Defaults to true.
     */
-  var roundedSelection: js.UndefOr[Boolean] = js.native
+  var roundedSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Render vertical lines at the specified columns.
     * Defaults to empty array.
     */
-  var rulers: js.UndefOr[js.Array[Double | IRulerOption]] = js.native
+  var rulers: js.UndefOr[js.Array[Double | IRulerOption]] = js.undefined
   
   /**
     * Enable that scrolling can go beyond the last column by a number of columns.
     * Defaults to 5.
     */
-  var scrollBeyondLastColumn: js.UndefOr[Double] = js.native
+  var scrollBeyondLastColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable that scrolling can go one screen size after the last line.
     * Defaults to true.
     */
-  var scrollBeyondLastLine: js.UndefOr[Boolean] = js.native
+  var scrollBeyondLastLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable that the editor scrolls only the predominant axis. Prevents horizontal drift when scrolling vertically on a trackpad.
     * Defaults to true.
     */
-  var scrollPredominantAxis: js.UndefOr[Boolean] = js.native
+  var scrollPredominantAxis: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control the behavior and rendering of the scrollbars.
     */
-  var scrollbar: js.UndefOr[IEditorScrollbarOptions] = js.native
+  var scrollbar: js.UndefOr[IEditorScrollbarOptions] = js.undefined
   
   /**
     * Should the corresponding line be selected when clicking on the line number?
     * Defaults to true.
     */
-  var selectOnLineNumbers: js.UndefOr[Boolean] = js.native
+  var selectOnLineNumbers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable Linux primary clipboard.
     * Defaults to true.
     */
-  var selectionClipboard: js.UndefOr[Boolean] = js.native
+  var selectionClipboard: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable selection highlight.
     * Defaults to true.
     */
-  var selectionHighlight: js.UndefOr[Boolean] = js.native
+  var selectionHighlight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls strikethrough deprecated variables.
     */
-  var showDeprecated: js.UndefOr[Boolean] = js.native
+  var showDeprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls whether the fold actions in the gutter stay always visible or hide unless the mouse is over the gutter.
     * Defaults to 'mouseover'.
     */
-  var showFoldingControls: js.UndefOr[always | mouseover] = js.native
+  var showFoldingControls: js.UndefOr[always | mouseover] = js.undefined
   
   /**
     * Controls fading out of unused variables.
     */
-  var showUnused: js.UndefOr[Boolean] = js.native
+  var showUnused: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable that the editor animates scrolling to a position.
     * Defaults to false.
     */
-  var smoothScrolling: js.UndefOr[Boolean] = js.native
+  var smoothScrolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable snippet suggestions. Default to 'true'.
     */
-  var snippetSuggestions: js.UndefOr[top | bottom | `inline` | none] = js.native
+  var snippetSuggestions: js.UndefOr[top | bottom | `inline` | none] = js.undefined
   
   /**
     * Performance guard: Stop rendering a line after x characters.
     * Defaults to 10000.
     * Use -1 to never stop rendering
     */
-  var stopRenderingLineAfter: js.UndefOr[Double] = js.native
+  var stopRenderingLineAfter: js.UndefOr[Double] = js.undefined
   
   /**
     * Suggest options.
     */
-  var suggest: js.UndefOr[ISuggestOptions] = js.native
+  var suggest: js.UndefOr[ISuggestOptions] = js.undefined
   
   /**
     * The font size for the suggest widget.
     * Defaults to the editor font size.
     */
-  var suggestFontSize: js.UndefOr[Double] = js.native
+  var suggestFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The line height for the suggest widget.
     * Defaults to the editor line height.
     */
-  var suggestLineHeight: js.UndefOr[Double] = js.native
+  var suggestLineHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Enable the suggestion box to pop-up on trigger characters.
     * Defaults to true.
     */
-  var suggestOnTriggerCharacters: js.UndefOr[Boolean] = js.native
+  var suggestOnTriggerCharacters: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The history mode for suggestions.
     */
-  var suggestSelection: js.UndefOr[first | recentlyUsed | recentlyUsedByPrefix] = js.native
+  var suggestSelection: js.UndefOr[first | recentlyUsed | recentlyUsedByPrefix] = js.undefined
   
   /**
     * Enable tab completion.
     */
-  var tabCompletion: js.UndefOr[on | off | onlySnippets] = js.native
+  var tabCompletion: js.UndefOr[on | off | onlySnippets] = js.undefined
   
   /**
     * The `tabindex` property of the editor's textarea
     */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls whether clicking on the empty content after a folded line will unfold the line.
     * Defaults to false.
     */
-  var unfoldOnClickAfterEndOfLine: js.UndefOr[Boolean] = js.native
+  var unfoldOnClickAfterEndOfLine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Remove unusual line terminators like LINE SEPARATOR (LS), PARAGRAPH SEPARATOR (PS).
     * Defaults to 'prompt'.
     */
-  var unusualLineTerminators: js.UndefOr[off | prompt | auto] = js.native
+  var unusualLineTerminators: js.UndefOr[off | prompt | auto] = js.undefined
   
   /**
     * Inserting and deleting whitespace follows tab stops.
     */
-  var useTabStops: js.UndefOr[Boolean] = js.native
+  var useTabStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A string containing the word separators used when doing word navigation.
     * Defaults to `~!@#$%^&*()-=+[{]}\\|;:\'",.<>/?
     */
-  var wordSeparators: js.UndefOr[String] = js.native
+  var wordSeparators: js.UndefOr[String] = js.undefined
   
   /**
     * Control the wrapping of the editor.
@@ -688,19 +686,19 @@ trait IEditorOptions extends StObject {
     * When `wordWrap` = "bounded", the lines will wrap at min(viewport width, wordWrapColumn).
     * Defaults to "off".
     */
-  var wordWrap: js.UndefOr[off | on | wordWrapColumn | bounded] = js.native
+  var wordWrap: js.UndefOr[off | on | wordWrapColumn | bounded] = js.undefined
   
   /**
     * Configure word wrapping characters. A break will be introduced after these characters.
     * Defaults to ' \t})]?|/&.,;¢°′″‰℃、。｡､￠，．：；？！％・･ゝゞヽヾーァィゥェォッャュョヮヵヶぁぃぅぇぉっゃゅょゎゕゖㇰㇱㇲㇳㇴㇵㇶㇷㇸㇹㇺㇻㇼㇽㇾㇿ々〻ｧｨｩｪｫｬｭｮｯｰ”〉》」』】〕）］｝｣'.
     */
-  var wordWrapBreakAfterCharacters: js.UndefOr[String] = js.native
+  var wordWrapBreakAfterCharacters: js.UndefOr[String] = js.undefined
   
   /**
     * Configure word wrapping characters. A break will be introduced before these characters.
     * Defaults to '([{‘“〈《「『【〔（［｛｢£¥＄￡￥+＋'.
     */
-  var wordWrapBreakBeforeCharacters: js.UndefOr[String] = js.native
+  var wordWrapBreakBeforeCharacters: js.UndefOr[String] = js.undefined
   
   /**
     * Control the wrapping of the editor.
@@ -710,25 +708,25 @@ trait IEditorOptions extends StObject {
     * When `wordWrap` = "bounded", the lines will wrap at min(viewport width, wordWrapColumn).
     * Defaults to 80.
     */
-  var wordWrapColumn: js.UndefOr[Double] = js.native
+  var wordWrapColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * Force word wrapping when the text appears to be of a minified/generated file.
     * Defaults to true.
     */
-  var wordWrapMinified: js.UndefOr[Boolean] = js.native
+  var wordWrapMinified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Control indentation of wrapped lines. Can be: 'none', 'same', 'indent' or 'deepIndent'.
     * Defaults to 'same' in vscode and to 'none' in monaco-editor.
     */
-  var wrappingIndent: js.UndefOr[none | same | indent | deepIndent] = js.native
+  var wrappingIndent: js.UndefOr[none | same | indent | deepIndent] = js.undefined
   
   /**
     * Controls the wrapping strategy to use.
     * Defaults to 'simple'.
     */
-  var wrappingStrategy: js.UndefOr[simple | advanced] = js.native
+  var wrappingStrategy: js.UndefOr[simple | advanced] = js.undefined
 }
 object IEditorOptions {
   

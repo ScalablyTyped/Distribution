@@ -2,33 +2,31 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0Error extends StObject {
   
   // Need to include non-intuitive error fields that Auth0 uses
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var error: LibErrorCodes | SpecErrorCodes | String = js.native
+  var error: LibErrorCodes | SpecErrorCodes | String
   
-  var errorDescription: js.UndefOr[String] = js.native
+  var errorDescription: js.UndefOr[String] = js.undefined
   
   // Auth0 is not consistent in the naming of the error description field
-  var error_description: js.UndefOr[String] = js.native
+  var error_description: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var original: js.UndefOr[js.Any] = js.native
+  var original: js.UndefOr[js.Any] = js.undefined
   
-  var policy: js.UndefOr[String] = js.native
+  var policy: js.UndefOr[String] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var statusText: js.UndefOr[String] = js.native
+  var statusText: js.UndefOr[String] = js.undefined
 }
 object Auth0Error {
   

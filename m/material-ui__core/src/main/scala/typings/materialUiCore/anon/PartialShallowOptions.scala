@@ -4,18 +4,16 @@ import typings.enzyme.mod.EnzymeSelector
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/test-utils/createShallow.ShallowOptions> */
-@js.native
 trait PartialShallowOptions extends StObject {
   
-  var dive: js.UndefOr[Boolean] = js.native
+  var dive: js.UndefOr[Boolean] = js.undefined
   
-  var shallow: js.UndefOr[Fn2] = js.native
+  var shallow: js.UndefOr[Fn2] = js.undefined
   
-  var untilSelector: js.UndefOr[EnzymeSelector] = js.native
+  var untilSelector: js.UndefOr[EnzymeSelector] = js.undefined
 }
 object PartialShallowOptions {
   

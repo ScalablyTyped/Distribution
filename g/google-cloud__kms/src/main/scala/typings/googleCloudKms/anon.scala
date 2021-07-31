@@ -6,17 +6,15 @@ import typings.googleCloudKms.mod.v1.CryptoKeyVersionTemplate
 import typings.googleProtobuf.timestampPbMod.Timestamp.AsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clientemail extends StObject {
     
-    var client_email: js.UndefOr[String] = js.native
+    var client_email: js.UndefOr[String] = js.undefined
     
-    var private_key: js.UndefOr[String] = js.native
+    var private_key: js.UndefOr[String] = js.undefined
   }
   object Clientemail {
     
@@ -44,12 +42,11 @@ object anon {
   }
   
   /* Inlined std.Partial<@google-cloud/kms.@google-cloud/kms.v1.KeyRing> */
-  @js.native
   trait PartialKeyRing extends StObject {
     
-    var createTime: js.UndefOr[AsObject] = js.native
+    var createTime: js.UndefOr[AsObject] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object PartialKeyRing {
     
@@ -77,22 +74,21 @@ object anon {
   }
   
   /* Inlined std.Partial<@google-cloud/kms.@google-cloud/kms.v1.Omit<@google-cloud/kms.@google-cloud/kms.v1.CryptoKey, 'purpose'>> & {  purpose :keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CryptoKeyPurpose * / any} */
-  @js.native
   trait PartialOmitCryptoKeypurpo extends StObject {
     
-    var createTime: js.UndefOr[AsObject] = js.native
+    var createTime: js.UndefOr[AsObject] = js.undefined
     
-    var labels: js.UndefOr[StringDictionary[String]] = js.native
+    var labels: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nextRotationTime: js.UndefOr[AsObject] = js.native
+    var nextRotationTime: js.UndefOr[AsObject] = js.undefined
     
-    var primary: js.UndefOr[CryptoKeyVersion] = js.native
+    var primary: js.UndefOr[CryptoKeyVersion] = js.undefined
     
-    var purpose: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CryptoKeyPurpose * / any */ String = js.native
+    var purpose: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof CryptoKeyPurpose * / any */ String
     
-    var versionTemplate: js.UndefOr[CryptoKeyVersionTemplate] = js.native
+    var versionTemplate: js.UndefOr[CryptoKeyVersionTemplate] = js.undefined
   }
   object PartialOmitCryptoKeypurpo {
     

@@ -5,32 +5,29 @@ import typings.std.PropertyDecorator
 import typings.validator.mod.validator.IsEmailOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isEmailMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsEmail", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsEmail", "IS_EMAIL")
   @js.native
   val IS_EMAIL: /* "isEmail" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsEmail", "IsEmail")
-  @js.native
-  def IsEmail_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsEmail", "IsEmail")
-  @js.native
-  def IsEmail_(options: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsEmail", "IsEmail")
-  @js.native
-  def IsEmail_(options: IsEmailOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsEmail", "IsEmail")
-  @js.native
-  def IsEmail_(options: IsEmailOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsEmail_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: IsEmailOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsEmail_(options: IsEmailOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsEmail")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsEmail", "isEmail")
-  @js.native
-  def isEmail(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsEmail", "isEmail")
-  @js.native
-  def isEmail(value: js.Any, options: IsEmailOptions): Boolean = js.native
+  @scala.inline
+  def isEmail(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isEmail(value: js.Any, options: IsEmailOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEmail")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

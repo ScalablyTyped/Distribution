@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,20 +22,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.XConnection
   */
-@js.native
-trait XDriver extends XInterface {
+trait XDriver
+  extends StObject
+     with XInterface {
   
   /**
     * gets the driver's major version number. Initially this should be 1.
     * @returns this driver's major version number
     */
-  val MajorVersion: Double = js.native
+  val MajorVersion: Double
   
   /**
     * gets the driver's minor version number. Initially this should be 0.
     * @returns this driver's minor version number.
     */
-  val MinorVersion: Double = js.native
+  val MinorVersion: Double
   
   /**
     * returns `TRUE` if the driver thinks that it can open a connection to the given URL. Typically drivers will return `TRUE` if they understand the
@@ -45,7 +45,7 @@ trait XDriver extends XInterface {
     * @returns `TRUE` if this driver can connect to the given URL.
     * @throws SQLException if a database access error occurs.
     */
-  def acceptsURL(url: String): Boolean = js.native
+  def acceptsURL(url: String): Boolean
   
   /**
     * attempts to make a database connection to the given URL. The driver should return `NULL` if it realizes it is the wrong kind of driver to connect to
@@ -65,19 +65,19 @@ trait XDriver extends XInterface {
     * @see com.sun.star.sdbc.ConnectionProperties
     * @throws SQLException if a database access error occurs
     */
-  def connect(url: String, info: SeqEquiv[PropertyValue]): XConnection = js.native
+  def connect(url: String, info: SeqEquiv[PropertyValue]): XConnection
   
   /**
     * gets the driver's major version number. Initially this should be 1.
     * @returns this driver's major version number
     */
-  def getMajorVersion(): Double = js.native
+  def getMajorVersion(): Double
   
   /**
     * gets the driver's minor version number. Initially this should be 0.
     * @returns this driver's minor version number.
     */
-  def getMinorVersion(): Double = js.native
+  def getMinorVersion(): Double
   
   /**
     * gets information about the possible properties for this driver.
@@ -90,7 +90,7 @@ trait XDriver extends XInterface {
     * @returns an array of {@link DriverPropertyInfo} objects describing possible properties. This array may be an empty array if no properties are required.
     * @throws SQLException if a database access error occurs.
     */
-  def getPropertyInfo(url: String, info: SeqEquiv[PropertyValue]): SafeArray[DriverPropertyInfo] = js.native
+  def getPropertyInfo(url: String, info: SeqEquiv[PropertyValue]): SafeArray[DriverPropertyInfo]
 }
 object XDriver {
   

@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.AppsAddRepoToInstallationRequestOptions
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersAppsAddRepoToInstallationEndpoint extends StObject {
   
-  var parameters: AppsAddRepoToInstallationEndpoint = js.native
+  var parameters: AppsAddRepoToInstallationEndpoint
   
-  var request: AppsAddRepoToInstallationRequestOptions = js.native
+  var request: AppsAddRepoToInstallationRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersAppsAddRepoToInstallationEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersAppsAddRepoToInstallationEndpoint {
   def apply(
     parameters: AppsAddRepoToInstallationEndpoint,
     request: AppsAddRepoToInstallationRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersAppsAddRepoToInstallationEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersAppsAddRepoToInstallationEndpoint]
@@ -39,6 +37,6 @@ object ParametersAppsAddRepoToInstallationEndpoint {
     def setRequest(value: AppsAddRepoToInstallationRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

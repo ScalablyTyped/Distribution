@@ -6,11 +6,12 @@ import typings.easeljs.anon.HandleEvent
 import typings.easeljs.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MouseEvent extends Event {
+trait MouseEvent
+  extends StObject
+     with Event {
   
   // EventDispatcher mixins
   def addEventListener(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
@@ -59,86 +60,11 @@ trait MouseEvent extends Event {
   
   // It is necessary for "arguments.callee"
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit]): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
   def on(`type`: String, listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit], scope: js.Object): js.Function = js.native
   def on(
     `type`: String,
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
     once: Boolean
   ): js.Function = js.native
   def on(
@@ -146,14 +72,6 @@ trait MouseEvent extends Event {
     listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
     scope: js.Object,
     once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Function = js.native
-  def on(
-    `type`: String,
-    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
-    scope: js.Object,
-    once: Boolean,
     data: js.Any
   ): js.Function = js.native
   def on(
@@ -162,89 +80,94 @@ trait MouseEvent extends Event {
     scope: js.Object,
     once: Boolean,
     data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Boolean,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: js.Object,
+    once: Unit,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean,
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Boolean,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
+    data: js.Any
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Function = js.native
+  def on(
+    `type`: String,
+    listener: js.Function1[/* eventObj */ js.Object, Boolean | Unit],
+    scope: Unit,
+    once: Unit,
+    data: Unit,
     useCapture: Boolean
   ): js.Function = js.native
   def on(`type`: String, listener: HandleEvent): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(`type`: String, listener: HandleEvent, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: HandleEvent,
-    scope: js.Object,
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(
     `type`: String,
@@ -254,77 +177,61 @@ trait MouseEvent extends Event {
     data: js.Any,
     useCapture: Boolean
   ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: Boolean,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: Unit,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: js.Object,
+    once: Unit,
+    data: Unit,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
+  def on(
+    `type`: String,
+    listener: HandleEvent,
+    scope: Unit,
+    once: Boolean,
+    data: js.Any,
+    useCapture: Boolean
+  ): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: HandleEvent, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
   def on(`type`: String, listener: `0`): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.UndefOr[scala.Nothing], once: Boolean, data: js.Any): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.UndefOr[scala.Nothing],
-    once: Boolean,
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
-  def on(`type`: String, listener: `0`, scope: js.Object, once: js.UndefOr[scala.Nothing], data: js.Any): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.Object,
-    once: js.UndefOr[scala.Nothing],
-    data: js.Any,
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean): js.Object = js.native
-  def on(
-    `type`: String,
-    listener: `0`,
-    scope: js.Object,
-    once: Boolean,
-    data: js.UndefOr[scala.Nothing],
-    useCapture: Boolean
-  ): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any): js.Object = js.native
   def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: js.Object, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Boolean, data: Unit, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: js.Any, useCapture: Boolean): js.Object = js.native
+  def on(`type`: String, listener: `0`, scope: Unit, once: Unit, data: Unit, useCapture: Boolean): js.Object = js.native
   
   var pointerID: Double = js.native
   

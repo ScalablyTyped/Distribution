@@ -3,43 +3,82 @@ package typings.webrtc
 import typings.std.MediaStreamError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   def getUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: js.Function1[/* stream */ MediaStream, Unit],
     errorCallback: js.Function1[/* error */ MediaStreamError, Unit]
-  ): Unit = js.native
+  ): Unit
   @JSName("getUserMedia")
-  var getUserMedia_Original: NavigatorGetUserMedia = js.native
+  var getUserMedia_Original: NavigatorGetUserMedia
   
-  val mediaDevices: MediaDevices = js.native
+  val mediaDevices: MediaDevices
   
   def mozGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: js.Function1[/* stream */ MediaStream, Unit],
     errorCallback: js.Function1[/* error */ MediaStreamError, Unit]
-  ): Unit = js.native
+  ): Unit
   @JSName("mozGetUserMedia")
-  var mozGetUserMedia_Original: NavigatorGetUserMedia = js.native
+  var mozGetUserMedia_Original: NavigatorGetUserMedia
   
   def msGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: js.Function1[/* stream */ MediaStream, Unit],
     errorCallback: js.Function1[/* error */ MediaStreamError, Unit]
-  ): Unit = js.native
+  ): Unit
   @JSName("msGetUserMedia")
-  var msGetUserMedia_Original: NavigatorGetUserMedia = js.native
+  var msGetUserMedia_Original: NavigatorGetUserMedia
   
   def webkitGetUserMedia(
     constraints: MediaStreamConstraints,
     successCallback: js.Function1[/* stream */ MediaStream, Unit],
     errorCallback: js.Function1[/* error */ MediaStreamError, Unit]
-  ): Unit = js.native
+  ): Unit
   @JSName("webkitGetUserMedia")
-  var webkitGetUserMedia_Original: NavigatorGetUserMedia = js.native
+  var webkitGetUserMedia_Original: NavigatorGetUserMedia
+}
+object Navigator {
+  
+  @scala.inline
+  def apply(
+    getUserMedia: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit,
+    mediaDevices: MediaDevices,
+    mozGetUserMedia: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit,
+    msGetUserMedia: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit,
+    webkitGetUserMedia: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit
+  ): Navigator = {
+    val __obj = js.Dynamic.literal(getUserMedia = js.Any.fromFunction3(getUserMedia), mediaDevices = mediaDevices.asInstanceOf[js.Any], mozGetUserMedia = js.Any.fromFunction3(mozGetUserMedia), msGetUserMedia = js.Any.fromFunction3(msGetUserMedia), webkitGetUserMedia = js.Any.fromFunction3(webkitGetUserMedia))
+    __obj.asInstanceOf[Navigator]
+  }
+  
+  @scala.inline
+  implicit class NavigatorMutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setGetUserMedia(
+      value: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit
+    ): Self = StObject.set(x, "getUserMedia", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setMediaDevices(value: MediaDevices): Self = StObject.set(x, "mediaDevices", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMozGetUserMedia(
+      value: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit
+    ): Self = StObject.set(x, "mozGetUserMedia", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setMsGetUserMedia(
+      value: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit
+    ): Self = StObject.set(x, "msGetUserMedia", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setWebkitGetUserMedia(
+      value: (/* constraints */ MediaStreamConstraints, /* successCallback */ js.Function1[/* stream */ MediaStream, Unit], /* errorCallback */ js.Function1[/* error */ MediaStreamError, Unit]) => Unit
+    ): Self = StObject.set(x, "webkitGetUserMedia", js.Any.fromFunction3(value))
+  }
 }

@@ -3,31 +3,29 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration and status of a managed SSL certificate.
   */
-@js.native
 trait SchemaSslCertificateManagedSslCertificate extends StObject {
   
   /**
     * [Output only] Detailed statuses of the domains specified for managed
     * certificate resource.
     */
-  var domainStatus: js.UndefOr[StringDictionary[String]] = js.native
+  var domainStatus: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The domains for which a managed SSL certificate will be generated.
     * Currently only single-domain certs are supported.
     */
-  var domains: js.UndefOr[js.Array[String]] = js.native
+  var domains: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output only] Status of the managed certificate resource.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object SchemaSslCertificateManagedSslCertificate {
   

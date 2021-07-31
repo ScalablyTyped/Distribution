@@ -2,7 +2,6 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,9 +24,9 @@ trait SafariExtension extends StObject {
   def createMenu(identifier: String): SafariExtensionMenu = js.native
   
   def createPopover(identifier: String, url: String): SafariExtensionPopover = js.native
-  def createPopover(identifier: String, url: String, width: js.UndefOr[scala.Nothing], height: Double): SafariExtensionPopover = js.native
   def createPopover(identifier: String, url: String, width: Double): SafariExtensionPopover = js.native
   def createPopover(identifier: String, url: String, width: Double, height: Double): SafariExtensionPopover = js.native
+  def createPopover(identifier: String, url: String, width: Unit, height: Double): SafariExtensionPopover = js.native
   
   var displayVersion: String = js.native
   

@@ -10,9 +10,9 @@ TypeScript typings for Cloud Data Loss Prevention (DLP) API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.dlp |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 37 |
+| # releases         | 14 |
+| # dependents       | 1 |
+| # downloads        | 1328 |
 | # stars            | 0 |
 
 ## Links

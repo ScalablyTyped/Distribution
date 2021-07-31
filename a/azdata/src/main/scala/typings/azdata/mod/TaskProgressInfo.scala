@@ -2,19 +2,17 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskProgressInfo extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var script: js.UndefOr[String] = js.native
+  var script: js.UndefOr[String] = js.undefined
   
-  var status: TaskStatus = js.native
+  var status: TaskStatus
   
-  var taskId: String = js.native
+  var taskId: String
 }
 object TaskProgressInfo {
   

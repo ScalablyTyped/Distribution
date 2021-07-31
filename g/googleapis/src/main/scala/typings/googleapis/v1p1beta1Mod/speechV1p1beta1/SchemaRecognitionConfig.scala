@@ -2,14 +2,12 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information to the recognizer that specifies how to process the
   * request.
   */
-@js.native
 trait SchemaRecognitionConfig extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaRecognitionConfig extends StObject {
     * cases and performance may vary for other use cases (e.g., phone call
     * transcription).
     */
-  var alternativeLanguageCodes: js.UndefOr[js.Array[String]] = js.native
+  var alternativeLanguageCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * *Optional* The number of channels in the input audio data. ONLY set this
@@ -36,7 +34,7 @@ trait SchemaRecognitionConfig extends StObject {
     * the first channel by default. To perform independent recognition on each
     * channel set `enable_separate_recognition_per_channel` to &#39;true&#39;.
     */
-  var audioChannelCount: js.UndefOr[Double] = js.native
+  var audioChannelCount: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* Config to enable speaker diarization and set additional
@@ -48,7 +46,7 @@ trait SchemaRecognitionConfig extends StObject {
     * requests, the diarization results will be provided only in the top
     * alternative of the FINAL SpeechRecognitionResult.
     */
-  var diarizationConfig: js.UndefOr[SchemaSpeakerDiarizationConfig] = js.native
+  var diarizationConfig: js.UndefOr[SchemaSpeakerDiarizationConfig] = js.undefined
   
   /**
     * *Optional* If set, specifies the estimated number of speakers in the
@@ -56,7 +54,7 @@ trait SchemaRecognitionConfig extends StObject {
     * enable_speaker_diarization is set to true.&quot; Note: Use
     * diarization_config instead. This field will be DEPRECATED soon.
     */
-  var diarizationSpeakerCount: js.UndefOr[Double] = js.native
+  var diarizationSpeakerCount: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* If &#39;true&#39;, adds punctuation to recognition result
@@ -67,7 +65,7 @@ trait SchemaRecognitionConfig extends StObject {
     * to all users. In the future this may be exclusively available as a
     * premium feature.
     */
-  var enableAutomaticPunctuation: js.UndefOr[Boolean] = js.native
+  var enableAutomaticPunctuation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This needs to be set to `true` explicitly and `audio_channel_count` &gt;
@@ -77,7 +75,7 @@ trait SchemaRecognitionConfig extends StObject {
     * request is billed cumulatively for all channels recognized:
     * `audio_channel_count` multiplied by the length of the audio.
     */
-  var enableSeparateRecognitionPerChannel: js.UndefOr[Boolean] = js.native
+  var enableSeparateRecognitionPerChannel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If &#39;true&#39;, enables speaker detection for each
@@ -85,28 +83,28 @@ trait SchemaRecognitionConfig extends StObject {
     * speaker_tag provided in the WordInfo. Note: Use diarization_config
     * instead. This field will be DEPRECATED soon.
     */
-  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.native
+  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If `true`, the top result includes a list of words and the
     * confidence for those words. If `false`, no word-level confidence
     * information is returned. The default is `false`.
     */
-  var enableWordConfidence: js.UndefOr[Boolean] = js.native
+  var enableWordConfidence: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* If `true`, the top result includes a list of words and the
     * start and end time offsets (timestamps) for those words. If `false`, no
     * word-level time offset information is returned. The default is `false`.
     */
-  var enableWordTimeOffsets: js.UndefOr[Boolean] = js.native
+  var enableWordTimeOffsets: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Encoding of audio data sent in all `RecognitionAudio` messages. This
     * field is optional for `FLAC` and `WAV` audio files and required for all
     * other audio formats. For details, see AudioEncoding.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * *Required* The language of the supplied audio as a
@@ -115,7 +113,7 @@ trait SchemaRecognitionConfig extends StObject {
     * Support](/speech-to-text/docs/languages) for a list of the currently
     * supported language codes.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * *Optional* Maximum number of recognition hypotheses to be returned.
@@ -125,12 +123,12 @@ trait SchemaRecognitionConfig extends StObject {
     * or `1` will return a maximum of one. If omitted, will return a maximum of
     * one.
     */
-  var maxAlternatives: js.UndefOr[Double] = js.native
+  var maxAlternatives: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* Metadata regarding this request.
     */
-  var metadata: js.UndefOr[SchemaRecognitionMetadata] = js.native
+  var metadata: js.UndefOr[SchemaRecognitionMetadata] = js.undefined
   
   /**
     * *Optional* Which model to select for the given request. Select the model
@@ -156,7 +154,7 @@ trait SchemaRecognitionConfig extends StObject {
     * example, long-form audio. Ideally the audio is high-fidelity, recorded at
     * a 16khz or greater sampling rate.&lt;/td&gt;   &lt;/tr&gt; &lt;/table&gt;
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * *Optional* If set to `true`, the server will attempt to filter out
@@ -164,7 +162,7 @@ trait SchemaRecognitionConfig extends StObject {
     * word with asterisks, e.g. &quot;f***&quot;. If set to `false` or omitted,
     * profanities won&#39;t be filtered out.
     */
-  var profanityFilter: js.UndefOr[Boolean] = js.native
+  var profanityFilter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sample rate in Hertz of the audio data sent in all `RecognitionAudio`
@@ -175,14 +173,14 @@ trait SchemaRecognitionConfig extends StObject {
     * files, but is required for all other audio formats. For details, see
     * AudioEncoding.
     */
-  var sampleRateHertz: js.UndefOr[Double] = js.native
+  var sampleRateHertz: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* array of SpeechContext. A means to provide context to assist
     * the speech recognition. For more information, see [Phrase
     * Hints](/speech-to-text/docs/basics#phrase-hints).
     */
-  var speechContexts: js.UndefOr[js.Array[SchemaSpeechContext]] = js.native
+  var speechContexts: js.UndefOr[js.Array[SchemaSpeechContext]] = js.undefined
   
   /**
     * *Optional* Set to true to use an enhanced model for speech recognition.
@@ -197,7 +195,7 @@ trait SchemaRecognitionConfig extends StObject {
     * `use_enhanced` to true and you have not enabled audio logging, then you
     * will receive an error.
     */
-  var useEnhanced: js.UndefOr[Boolean] = js.native
+  var useEnhanced: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaRecognitionConfig {
   

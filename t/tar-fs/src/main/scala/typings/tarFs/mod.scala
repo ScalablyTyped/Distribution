@@ -8,35 +8,35 @@ import typings.tarFs.tarFsStrings.link
 import typings.tarFs.tarFsStrings.symlink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tar-fs", "extract")
+  @JSImport("tar-fs", JSImport.Namespace)
   @js.native
-  def extract(cwd: String): typings.tarStream.mod.Extract_ = js.native
-  @JSImport("tar-fs", "extract")
-  @js.native
-  def extract(cwd: String, opts: ExtractOptions): typings.tarStream.mod.Extract_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tar-fs", "pack")
-  @js.native
-  def pack(cwd: String): typings.tarStream.mod.Pack_ = js.native
-  @JSImport("tar-fs", "pack")
-  @js.native
-  def pack(cwd: String, opts: PackOptions): typings.tarStream.mod.Pack_ = js.native
+  @scala.inline
+  def extract(cwd: String): typings.tarStream.mod.Extract_ = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Extract_]
+  @scala.inline
+  def extract(cwd: String, opts: ExtractOptions): typings.tarStream.mod.Extract_ = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Extract_]
   
-  @js.native
-  trait ExtractOptions extends Options {
+  @scala.inline
+  def pack(cwd: String): typings.tarStream.mod.Pack_ = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any]).asInstanceOf[typings.tarStream.mod.Pack_]
+  @scala.inline
+  def pack(cwd: String, opts: PackOptions): typings.tarStream.mod.Pack_ = (^.asInstanceOf[js.Dynamic].applyDynamic("pack")(cwd.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.tarStream.mod.Pack_]
+  
+  trait ExtractOptions
+    extends StObject
+       with Options {
     
     @JSName("filter")
-    var filter_ExtractOptions: js.UndefOr[js.Function2[/* name */ String, /* header */ js.UndefOr[Headers], Boolean]] = js.native
+    var filter_ExtractOptions: js.UndefOr[js.Function2[/* name */ String, /* header */ js.UndefOr[Headers], Boolean]] = js.undefined
     
     @JSName("ignore")
-    var ignore_ExtractOptions: js.UndefOr[js.Function2[/* name */ String, /* header */ js.UndefOr[Headers], Boolean]] = js.native
+    var ignore_ExtractOptions: js.UndefOr[js.Function2[/* name */ String, /* header */ js.UndefOr[Headers], Boolean]] = js.undefined
     
-    var strip: js.UndefOr[Double] = js.native
+    var strip: js.UndefOr[Double] = js.undefined
   }
   object ExtractOptions {
     
@@ -71,22 +71,21 @@ object mod {
   
   type Extract_ = typings.tarStream.mod.Extract_
   
-  @js.native
   trait Headers extends StObject {
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: file | directory | link | symlink = js.native
+    var `type`: file | directory | link | symlink
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object Headers {
     
@@ -131,26 +130,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var dmode: js.UndefOr[Double] = js.native
+    var dmode: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* name */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* name */ String, Boolean]] = js.undefined
     
-    var fmode: js.UndefOr[Double] = js.native
+    var fmode: js.UndefOr[Double] = js.undefined
     
-    var ignore: js.UndefOr[js.Function1[/* name */ String, Boolean]] = js.native
+    var ignore: js.UndefOr[js.Function1[/* name */ String, Boolean]] = js.undefined
     
-    var map: js.UndefOr[js.Function1[/* header */ Headers, Headers]] = js.native
+    var map: js.UndefOr[js.Function1[/* header */ Headers, Headers]] = js.undefined
     
-    var mapStream: js.UndefOr[js.Function2[/* fileStream */ ReadStream, /* header */ Headers, ReadStream]] = js.native
+    var mapStream: js.UndefOr[js.Function2[/* fileStream */ ReadStream, /* header */ Headers, ReadStream]] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -219,19 +217,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait PackOptions extends Options {
+  trait PackOptions
+    extends StObject
+       with Options {
     
-    var dereference: js.UndefOr[Boolean] = js.native
+    var dereference: js.UndefOr[Boolean] = js.undefined
     
-    var entries: js.UndefOr[js.Array[String]] = js.native
+    var entries: js.UndefOr[js.Array[String]] = js.undefined
     
     @JSName("finalize")
-    var finalize_FPackOptions: js.UndefOr[Boolean] = js.native
+    var finalize_FPackOptions: js.UndefOr[Boolean] = js.undefined
     
-    var finish: js.UndefOr[js.Function1[/* pack */ typings.tarStream.mod.Pack_, Unit]] = js.native
+    var finish: js.UndefOr[js.Function1[/* pack */ typings.tarStream.mod.Pack_, Unit]] = js.undefined
     
-    var pack: js.UndefOr[typings.tarStream.mod.Pack_] = js.native
+    var pack: js.UndefOr[typings.tarStream.mod.Pack_] = js.undefined
   }
   object PackOptions {
     

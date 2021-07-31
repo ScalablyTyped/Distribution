@@ -2,61 +2,59 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateImagePipelineRequest extends StObject {
   
   /**
     * The idempotency token used to make this request idempotent. 
     */
-  var clientToken: ClientToken = js.native
+  var clientToken: ClientToken
   
   /**
     * The description of the image pipeline. 
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration that will be used to configure and distribute images updated by this image pipeline. 
     */
-  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
+  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
     *  Collects additional information about the image being created, including the operating system (OS) version and package list. This information is used to enhance the overall experience of using EC2 Image Builder. Enabled by default. 
     */
-  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.native
+  var enhancedImageMetadataEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the image pipeline that you want to update. 
     */
-  var imagePipelineArn: ImagePipelineArn = js.native
+  var imagePipelineArn: ImagePipelineArn
   
   /**
     * The Amazon Resource Name (ARN) of the image recipe that will be used to configure images updated by this image pipeline. 
     */
-  var imageRecipeArn: ImageRecipeArn = js.native
+  var imageRecipeArn: ImageRecipeArn
   
   /**
     * The image test configuration of the image pipeline. 
     */
-  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.native
+  var imageTestsConfiguration: js.UndefOr[ImageTestsConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration that will be used to build images updated by this image pipeline. 
     */
-  var infrastructureConfigurationArn: InfrastructureConfigurationArn = js.native
+  var infrastructureConfigurationArn: InfrastructureConfigurationArn
   
   /**
     * The schedule of the image pipeline. 
     */
-  var schedule: js.UndefOr[Schedule] = js.native
+  var schedule: js.UndefOr[Schedule] = js.undefined
   
   /**
     * The status of the image pipeline. 
     */
-  var status: js.UndefOr[PipelineStatus] = js.native
+  var status: js.UndefOr[PipelineStatus] = js.undefined
 }
 object UpdateImagePipelineRequest {
   

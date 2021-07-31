@@ -3,17 +3,15 @@ package typings.reactBigCalendar.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveOptions extends StObject {
   
-  var action: NavigateAction = js.native
+  var action: NavigateAction
   
-  var date: Date = js.native
+  var date: Date
   
-  var today: Date = js.native
+  var today: Date
 }
 object MoveOptions {
   

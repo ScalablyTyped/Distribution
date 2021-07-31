@@ -11,32 +11,31 @@ import typings.solidityParserAntlr.solidityParserAntlrStrings.pure
 import typings.solidityParserAntlr.solidityParserAntlrStrings.view
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var body: js.UndefOr[Block] = js.native
+  var body: js.UndefOr[Block] = js.undefined
   
-  var isConstructor: Boolean = js.native
+  var isConstructor: Boolean
   
-  var modifiers: js.Array[ModifierInvocation] = js.native
+  var modifiers: js.Array[ModifierInvocation]
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parameters: js.Array[VariableDeclaration] = js.native
+  var parameters: js.Array[VariableDeclaration]
   
-  var returnParameters: js.UndefOr[js.Array[VariableDeclaration]] = js.native
+  var returnParameters: js.UndefOr[js.Array[VariableDeclaration]] = js.undefined
   
-  var stateMutability: js.UndefOr[pure | constant | payable | view] = js.native
+  var stateMutability: js.UndefOr[pure | constant | payable | view] = js.undefined
   
   @JSName("type")
-  var type_FunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition = js.native
+  var type_FunctionDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition
   
-  var visibility: default | external | internal | public | `private` = js.native
+  var visibility: default | external | internal | public | `private`
 }
 object FunctionDefinition {
   
@@ -45,11 +44,10 @@ object FunctionDefinition {
     isConstructor: Boolean,
     modifiers: js.Array[ModifierInvocation],
     parameters: js.Array[VariableDeclaration],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionDefinition,
     visibility: default | external | internal | public | `private`
   ): FunctionDefinition = {
     val __obj = js.Dynamic.literal(isConstructor = isConstructor.asInstanceOf[js.Any], modifiers = modifiers.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionDefinition")
     __obj.asInstanceOf[FunctionDefinition]
   }
   

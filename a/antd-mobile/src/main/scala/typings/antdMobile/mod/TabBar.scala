@@ -5,7 +5,6 @@ import typings.antdMobile.tabBarMod.default
 import typings.antdMobile.tabBarPropsTypeMod.TabBarItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "TabBar")

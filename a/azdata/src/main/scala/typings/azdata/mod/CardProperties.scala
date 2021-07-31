@@ -2,33 +2,32 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardProperties
-  extends ComponentProperties
+  extends StObject
+     with ComponentProperties
      with ComponentWithIcon {
   
-  var actions: js.UndefOr[js.Array[ActionDescriptor]] = js.native
+  var actions: js.UndefOr[js.Array[ActionDescriptor]] = js.undefined
   
   /**
     * Card Type, default: Details
     */
-  var cardType: js.UndefOr[CardType] = js.native
+  var cardType: js.UndefOr[CardType] = js.undefined
   
-  var descriptions: js.UndefOr[js.Array[CardDescriptionItem]] = js.native
+  var descriptions: js.UndefOr[js.Array[CardDescriptionItem]] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
   /**
     * Returns true if the card is selected
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[StatusIndicator] = js.native
+  var status: js.UndefOr[StatusIndicator] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CardProperties {
   

@@ -16,7 +16,6 @@ import typings.std.HTMLUListElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rateMod {
@@ -27,6 +26,10 @@ object rateMod {
     def this(props: RateProps) = this()
   }
   object default {
+    
+    @JSImport("rc-rate/es/Rate", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /* static member */
     object defaultProps {
@@ -97,9 +100,8 @@ object rateMod {
     }
     
     /* static member */
-    @JSImport("rc-rate/es/Rate", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: RateProps, state: RateState): RateState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: RateProps, state: RateState): RateState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RateState]
   }
   
   @js.native
@@ -141,46 +143,45 @@ object rateMod {
     var stars: Record[String, typings.rcRate.starMod.default] = js.native
   }
   
-  @js.native
   trait RateProps extends StObject {
     
-    var allowClear: js.UndefOr[Boolean] = js.native
+    var allowClear: js.UndefOr[Boolean] = js.undefined
     
-    var allowHalf: js.UndefOr[Boolean] = js.native
+    var allowHalf: js.UndefOr[Boolean] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var character: js.UndefOr[ReactNode] = js.native
+    var character: js.UndefOr[ReactNode] = js.undefined
     
-    var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.native
+    var characterRender: js.UndefOr[js.Function2[/* origin */ ReactElement, /* props */ StarProps, ReactNode]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var defaultValue: js.UndefOr[Double] = js.native
+    var defaultValue: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onHoverChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLUListElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object RateProps {
     
@@ -309,16 +310,15 @@ object rateMod {
     }
   }
   
-  @js.native
   trait RateState extends StObject {
     
-    var cleanedValue: Double = js.native
+    var cleanedValue: Double
     
-    var focused: Boolean = js.native
+    var focused: Boolean
     
-    var hoverValue: js.UndefOr[Double] = js.native
+    var hoverValue: js.UndefOr[Double] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object RateState {
     

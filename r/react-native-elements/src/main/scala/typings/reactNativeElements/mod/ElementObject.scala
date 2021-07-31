@@ -4,18 +4,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementObject extends StObject {
   
-  var element: ReactElement | ReactType[_] = js.native
+  var element: ReactElement | ReactType[js.Any]
 }
 object ElementObject {
   
   @scala.inline
-  def apply(element: ReactElement | ReactType[_]): ElementObject = {
+  def apply(element: ReactElement | ReactType[js.Any]): ElementObject = {
     val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any])
     __obj.asInstanceOf[ElementObject]
   }
@@ -24,6 +22,6 @@ object ElementObject {
   implicit class ElementObjectMutableBuilder[Self <: ElementObject] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setElement(value: ReactElement | ReactType[_]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    def setElement(value: ReactElement | ReactType[js.Any]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
   }
 }

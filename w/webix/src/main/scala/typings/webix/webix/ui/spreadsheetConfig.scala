@@ -4,89 +4,87 @@ import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait spreadsheetConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var bottombar: js.UndefOr[Boolean] = js.native
+  var bottombar: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[js.Any] = js.native
+  var buttons: js.UndefOr[js.Any] = js.undefined
   
-  var clipboard: js.UndefOr[Boolean] = js.native
+  var clipboard: js.UndefOr[Boolean] = js.undefined
   
-  var clipboardDecimalDelimiter: js.UndefOr[String] = js.native
+  var clipboardDecimalDelimiter: js.UndefOr[String] = js.undefined
   
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
-  var columnWidth: js.UndefOr[Double] = js.native
+  var columnWidth: js.UndefOr[Double] = js.undefined
   
-  var conditionStyle: js.UndefOr[js.Array[_]] = js.native
+  var conditionStyle: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var liveEditor: js.UndefOr[Boolean] = js.native
+  var liveEditor: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var menu: js.UndefOr[Boolean] = js.native
+  var menu: js.UndefOr[Boolean] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var resizeCell: js.UndefOr[Boolean] = js.native
+  var resizeCell: js.UndefOr[Boolean] = js.undefined
   
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
-  var rowHeight: js.UndefOr[Double] = js.native
+  var rowHeight: js.UndefOr[Double] = js.undefined
   
-  var sheetTabWidth: js.UndefOr[Double] = js.native
+  var sheetTabWidth: js.UndefOr[Double] = js.undefined
   
-  var subbar: js.UndefOr[js.Any] = js.native
+  var subbar: js.UndefOr[js.Any] = js.undefined
   
-  var toolbar: js.UndefOr[String | Boolean] = js.native
+  var toolbar: js.UndefOr[String | Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object spreadsheetConfig {
   
@@ -148,7 +146,7 @@ object spreadsheetConfig {
     def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)
     
     @scala.inline
-    def setConditionStyle(value: js.Array[_]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
+    def setConditionStyle(value: js.Array[js.Any]): Self = StObject.set(x, "conditionStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setConditionStyleUndefined: Self = StObject.set(x, "conditionStyle", js.undefined)
@@ -169,7 +167,7 @@ object spreadsheetConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

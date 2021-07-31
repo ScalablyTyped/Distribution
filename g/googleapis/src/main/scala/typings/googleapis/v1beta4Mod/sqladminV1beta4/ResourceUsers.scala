@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sqladmin/v1beta4", "sqladmin_v1beta4.Resource$Users")
@@ -33,7 +32,7 @@ class ResourceUsers protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceUsersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceUsersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -64,7 +63,7 @@ class ResourceUsers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceUsersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceUsersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -94,7 +93,7 @@ class ResourceUsers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaUsersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUsersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(params: ParamsResourceUsersList): GaxiosPromise[SchemaUsersListResponse] = js.native
   def list(params: ParamsResourceUsersList, callback: BodyResponseCallback[SchemaUsersListResponse]): Unit = js.native
   def list(
@@ -127,7 +126,7 @@ class ResourceUsers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceUsersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceUsersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

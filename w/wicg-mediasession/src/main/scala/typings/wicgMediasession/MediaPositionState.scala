@@ -2,20 +2,18 @@ package typings.wicgMediasession
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaPositionState extends StObject {
   
   // Duration of media in seconds
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   // Playback rate of media, positive for forward playback, negative for backward playback. This number should not be zero
-  var playbackRate: js.UndefOr[Double] = js.native
+  var playbackRate: js.UndefOr[Double] = js.undefined
   
   // Last reported playback position in seconds, should be positive.
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
 }
 object MediaPositionState {
   

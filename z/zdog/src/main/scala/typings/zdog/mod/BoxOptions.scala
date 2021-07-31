@@ -2,32 +2,32 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoxOptions extends RectOptions {
+trait BoxOptions
+  extends StObject
+     with RectOptions {
   
   /** @default true */
-  val bottomFace: js.UndefOr[Boolean | String] = js.native
+  val bottomFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default 1 */
-  val depth: js.UndefOr[Double] = js.native
+  val depth: js.UndefOr[Double] = js.undefined
   
   /** @default true */
-  val frontFace: js.UndefOr[Boolean | String] = js.native
+  val frontFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default true */
-  val leftFace: js.UndefOr[Boolean | String] = js.native
+  val leftFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default true */
-  val rearFace: js.UndefOr[Boolean | String] = js.native
+  val rearFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default true */
-  val rightFace: js.UndefOr[Boolean | String] = js.native
+  val rightFace: js.UndefOr[Boolean | String] = js.undefined
   
   /** @default true */
-  val topFace: js.UndefOr[Boolean | String] = js.native
+  val topFace: js.UndefOr[Boolean | String] = js.undefined
 }
 object BoxOptions {
   

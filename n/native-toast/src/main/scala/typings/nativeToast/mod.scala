@@ -16,39 +16,36 @@ import typings.nativeToast.nativeToastStrings.west
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: ToastOptions): Toast = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
+  
   @JSImport("native-toast", JSImport.Namespace)
   @js.native
-  def apply(options: ToastOptions): Toast = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("native-toast", "error")
-  @js.native
-  def error(options: ToastOptions): Toast = js.native
+  @scala.inline
+  def error(options: ToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
   
-  @JSImport("native-toast", "info")
-  @js.native
-  def info(options: ToastOptions): Toast = js.native
+  @scala.inline
+  def info(options: ToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
   
-  @JSImport("native-toast", "success")
-  @js.native
-  def success(options: ToastOptions): Toast = js.native
+  @scala.inline
+  def success(options: ToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
   
-  @JSImport("native-toast", "warning")
-  @js.native
-  def warning(options: ToastOptions): Toast = js.native
+  @scala.inline
+  def warning(options: ToastOptions): Toast = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(options.asInstanceOf[js.Any]).asInstanceOf[Toast]
   
-  @js.native
   trait Toast extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Toast {
     
@@ -72,32 +69,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ToastOptions extends StObject {
     
-    var closeOnClick: js.UndefOr[Boolean] = js.native
+    var closeOnClick: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var edge: js.UndefOr[Boolean] = js.native
+    var edge: js.UndefOr[Boolean] = js.undefined
     
-    var el: js.UndefOr[HTMLElement] = js.native
+    var el: js.UndefOr[HTMLElement] = js.undefined
     
-    var elements: js.UndefOr[js.Array[HTMLElement]] = js.native
+    var elements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
     
-    var icon: js.UndefOr[Boolean] = js.native
+    var icon: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     var position: js.UndefOr[
         center | west | east | south | `south-west` | `south-east` | north | `north-west` | `north-east`
-      ] = js.native
+      ] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[success | warning | info | error] = js.native
+    var `type`: js.UndefOr[success | warning | info | error] = js.undefined
   }
   object ToastOptions {
     

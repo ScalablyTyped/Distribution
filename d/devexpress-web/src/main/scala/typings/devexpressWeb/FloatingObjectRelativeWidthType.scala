@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,35 +17,47 @@ object FloatingObjectRelativeWidthType extends StObject {
     * Relative to inside margin.
     */
   @js.native
-  sealed trait InsideMargin extends FloatingObjectRelativeWidthType
+  sealed trait InsideMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to left margin.
     */
   @js.native
-  sealed trait LeftMargin extends FloatingObjectRelativeWidthType
+  sealed trait LeftMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to margin.
     */
   @js.native
-  sealed trait Margin extends FloatingObjectRelativeWidthType
+  sealed trait Margin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to outside margin.
     */
   @js.native
-  sealed trait OutsideMargin extends FloatingObjectRelativeWidthType
+  sealed trait OutsideMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to page.
     */
   @js.native
-  sealed trait Page extends FloatingObjectRelativeWidthType
+  sealed trait Page
+    extends StObject
+       with FloatingObjectRelativeWidthType
   
   /**
     * Relative to right margin.
     */
   @js.native
-  sealed trait RightMargin extends FloatingObjectRelativeWidthType
+  sealed trait RightMargin
+    extends StObject
+       with FloatingObjectRelativeWidthType
 }

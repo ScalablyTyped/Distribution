@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception must be used as base exception to derive specialized exceptions from it which identify a concrete error case.
   * @since OOo 2.3
   */
-@js.native
-trait CorruptedConfigurationException extends Exception {
+trait CorruptedConfigurationException
+  extends StObject
+     with Exception {
   
   /** Instead of the message part of an exception, this value describe the type of corruption more in detail. */
-  var Details: String = js.native
+  var Details: String
 }
 object CorruptedConfigurationException {
   

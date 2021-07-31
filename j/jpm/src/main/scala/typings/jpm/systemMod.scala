@@ -2,13 +2,16 @@ package typings.jpm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Query the add-on's environment and access arguments passed to it
   */
 object systemMod {
+  
+  @JSImport("sdk/system", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sdk/system", "architecture")
   @js.native
@@ -26,9 +29,8 @@ object systemMod {
   @js.native
   val env: js.Any = js.native
   
-  @JSImport("sdk/system", "exit")
-  @js.native
-  def exit(code: Double): Unit = js.native
+  @scala.inline
+  def exit(code: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exit")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("sdk/system", "id")
   @js.native
@@ -38,9 +40,8 @@ object systemMod {
   @js.native
   val name: String = js.native
   
-  @JSImport("sdk/system", "pathFor")
-  @js.native
-  def pathFor(id: String): String = js.native
+  @scala.inline
+  def pathFor(id: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathFor")(id.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("sdk/system", "platform")
   @js.native

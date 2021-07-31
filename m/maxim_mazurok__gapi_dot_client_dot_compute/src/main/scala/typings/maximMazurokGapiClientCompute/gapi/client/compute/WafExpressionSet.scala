@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WafExpressionSet extends StObject {
   
   /**
     * A list of alternate IDs. The format should be: - E.g. XSS-stable Generic suffix like "stable" is particularly useful if a policy likes to avail newer set of expressions without
     * having to change the policy. A given alias name can't be used for more than one entity set.
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of available expressions. */
-  var expressions: js.UndefOr[js.Array[WafExpressionSetExpression]] = js.native
+  var expressions: js.UndefOr[js.Array[WafExpressionSetExpression]] = js.undefined
   
   /** Google specified expression set ID. The format should be: - E.g. XSS-20170329 */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object WafExpressionSet {
   

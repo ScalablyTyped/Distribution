@@ -3,39 +3,37 @@ package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credential extends StObject {
   
-  var credentialId: String = js.native
+  var credentialId: String
   
-  var isResidentCredential: Boolean = js.native
+  var isResidentCredential: Boolean
   
   /**
     * The ECDSA P-256 private key in PKCS#8 format.
     */
-  var privateKey: String = js.native
+  var privateKey: String
   
   /**
     * Relying Party ID the credential is scoped to. Must be set when adding a
     * credential.
     */
-  var rpId: js.UndefOr[String] = js.native
+  var rpId: js.UndefOr[String] = js.undefined
   
   /**
     * Signature counter. This is incremented by one for each successful
     * assertion.
     * See https://w3c.github.io/webauthn/#signature-counter
     */
-  var signCount: integer = js.native
+  var signCount: integer
   
   /**
     * An opaque byte sequence with a maximum size of 64 bytes mapping the
     * credential to a specific user.
     */
-  var userHandle: js.UndefOr[String] = js.native
+  var userHandle: js.UndefOr[String] = js.undefined
 }
 object Credential {
   

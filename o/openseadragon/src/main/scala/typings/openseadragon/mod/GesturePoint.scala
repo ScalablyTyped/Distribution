@@ -2,39 +2,37 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GesturePoint extends StObject {
   
-  var captured: Boolean = js.native
+  var captured: Boolean
   
-  var contactPos: Point = js.native
+  var contactPos: Point
   
-  var contactTime: Double = js.native
+  var contactTime: Double
   
-  var currentPos: Point = js.native
+  var currentPos: Point
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var direction: Double = js.native
+  var direction: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var insideElement: Boolean = js.native
+  var insideElement: Boolean
   
-  var insideElementPressed: Boolean = js.native
+  var insideElementPressed: Boolean
   
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
-  var lastPos: Point = js.native
+  var lastPos: Point
   
-  var lastTime: Double = js.native
+  var lastTime: Double
   
-  var speed: Double = js.native
+  var speed: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GesturePoint {
   

@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.arangodb.anon.Threshold
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArangoSearchViewPropertiesOptions extends StObject {
   
-  var cleanupIntervalStep: js.UndefOr[Double] = js.native
+  var cleanupIntervalStep: js.UndefOr[Double] = js.undefined
   
-  var consolidationIntervalMsec: js.UndefOr[Double] = js.native
+  var consolidationIntervalMsec: js.UndefOr[Double] = js.undefined
   
-  var consolidationPolicy: js.UndefOr[Threshold] = js.native
+  var consolidationPolicy: js.UndefOr[Threshold] = js.undefined
   
-  var links: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.native
+  var links: js.UndefOr[StringDictionary[js.UndefOr[ArangoSearchViewCollectionLink]]] = js.undefined
 }
 object ArangoSearchViewPropertiesOptions {
   

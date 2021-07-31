@@ -3,22 +3,20 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a session of the USSD network protocol. */
-@js.native
 trait UssdSession extends StObject {
   
   /** Closes the USSD session with the network. */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Sends a message to a USSD session and returns a handler to retrieve the reply asynchronously.
     * @param message The message to send to the USSD session.
     * @return An asynchronous handler to retrieve the USSD response to the sent message.
     */
-  def sendMessageAndGetReplyAsync(message: UssdMessage): IPromiseWithIAsyncOperation[UssdReply] = js.native
+  def sendMessageAndGetReplyAsync(message: UssdMessage): IPromiseWithIAsyncOperation[UssdReply]
 }
 object UssdSession {
   

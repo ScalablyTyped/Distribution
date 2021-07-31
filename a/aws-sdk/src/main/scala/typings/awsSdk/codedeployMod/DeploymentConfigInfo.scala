@@ -2,41 +2,39 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentConfigInfo extends StObject {
   
   /**
     * The destination platform type for the deployment (Lambda, Server, or ECS).
     */
-  var computePlatform: js.UndefOr[ComputePlatform] = js.native
+  var computePlatform: js.UndefOr[ComputePlatform] = js.undefined
   
   /**
     * The time at which the deployment configuration was created.
     */
-  var createTime: js.UndefOr[Timestamp] = js.native
+  var createTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The deployment configuration ID.
     */
-  var deploymentConfigId: js.UndefOr[DeploymentConfigId] = js.native
+  var deploymentConfigId: js.UndefOr[DeploymentConfigId] = js.undefined
   
   /**
     * The deployment configuration name.
     */
-  var deploymentConfigName: js.UndefOr[DeploymentConfigName] = js.native
+  var deploymentConfigName: js.UndefOr[DeploymentConfigName] = js.undefined
   
   /**
     * Information about the number or percentage of minimum healthy instance.
     */
-  var minimumHealthyHosts: js.UndefOr[MinimumHealthyHosts] = js.native
+  var minimumHealthyHosts: js.UndefOr[MinimumHealthyHosts] = js.undefined
   
   /**
     * The configuration that specifies how the deployment traffic is routed. Used for deployments with a Lambda or ECS compute platform only.
     */
-  var trafficRoutingConfig: js.UndefOr[TrafficRoutingConfig] = js.native
+  var trafficRoutingConfig: js.UndefOr[TrafficRoutingConfig] = js.undefined
 }
 object DeploymentConfigInfo {
   

@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait ParagraphAlignment extends StObject
 object ParagraphAlignment extends StObject {
   
   @js.native
-  sealed trait center extends ParagraphAlignment
+  sealed trait center
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait justify extends ParagraphAlignment
+  sealed trait justify
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait left extends ParagraphAlignment
+  sealed trait left
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait right extends ParagraphAlignment
+  sealed trait right
+    extends StObject
+       with ParagraphAlignment
   
   @js.native
-  sealed trait undefined extends ParagraphAlignment
+  sealed trait undefined
+    extends StObject
+       with ParagraphAlignment
 }

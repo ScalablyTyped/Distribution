@@ -5,17 +5,15 @@ import typings.octokitTypes.endpointsMod.MigrationsUnlockRepoForAuthenticatedUse
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: MigrationsUnlockRepoForAuthenticatedUserEndpoint = js.native
+  var parameters: MigrationsUnlockRepoForAuthenticatedUserEndpoint
   
-  var request: MigrationsUnlockRepoForAuthenticatedUserRequestOptions = js.native
+  var request: MigrationsUnlockRepoForAuthenticatedUserRequestOptions
   
-  var response: OctokitResponse[_] = js.native
+  var response: OctokitResponse[js.Any]
 }
 object ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint {
   
@@ -23,7 +21,7 @@ object ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint {
   def apply(
     parameters: MigrationsUnlockRepoForAuthenticatedUserEndpoint,
     request: MigrationsUnlockRepoForAuthenticatedUserRequestOptions,
-    response: OctokitResponse[_]
+    response: OctokitResponse[js.Any]
   ): ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
     __obj.asInstanceOf[ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint]
@@ -39,6 +37,6 @@ object ParametersMigrationsUnlockRepoForAuthenticatedUserEndpoint {
     def setRequest(value: MigrationsUnlockRepoForAuthenticatedUserRequestOptions): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResponse(value: OctokitResponse[_]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+    def setResponse(value: OctokitResponse[js.Any]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }
 }

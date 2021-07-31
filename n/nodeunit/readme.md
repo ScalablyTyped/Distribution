@@ -11,7 +11,7 @@ Easy unit testing for node.js and the browser.
 | Keywords           | - |
 | # releases         | 1 |
 | # dependents       | 184 |
-| # downloads        | 1773408 |
+| # downloads        | 1797286 |
 | # stars            | 24 |
 
 ## Links

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Controller$Debuggees")
@@ -91,7 +90,7 @@ class ResourceControllerDebuggees protected () extends StObject {
     */
   def register(): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(callback: BodyResponseCallback[SchemaRegisterDebuggeeResponse]): Unit = js.native
-  def register(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
+  def register(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(params: ParamsResourceControllerDebuggeesRegister): GaxiosPromise[SchemaRegisterDebuggeeResponse] = js.native
   def register(
     params: ParamsResourceControllerDebuggeesRegister,

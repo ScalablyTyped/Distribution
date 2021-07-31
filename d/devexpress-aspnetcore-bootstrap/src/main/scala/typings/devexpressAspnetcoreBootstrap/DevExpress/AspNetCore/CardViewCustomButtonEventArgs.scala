@@ -2,15 +2,15 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewCustomButtonEventArgs extends ProcessingModeEventArgs {
+trait CardViewCustomButtonEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val buttonID: String = js.native
+  val buttonID: String
   
-  val visibleIndex: Double = js.native
+  val visibleIndex: Double
 }
 object CardViewCustomButtonEventArgs {
   

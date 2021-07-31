@@ -10,9 +10,9 @@ SMS tool that can help you properly count the length of an SMS, calculate the pa
 | ------------------ | :-------------: |
 | Full name          | smshelper |
 | Keywords           | sms, smshelper, sms-helper, smscounter, sms-counter |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 2363 |
+| # releases         | 0 |
+| # dependents       | 0 |
+| # downloads        | 3151 |
 | # stars            | 0 |
 
 ## Links

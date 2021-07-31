@@ -2,50 +2,38 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MiddlewareStack[Input /* <: js.Object */, Output /* <: js.Object */] extends Pluggable[Input, Output] {
+trait MiddlewareStack[Input /* <: js.Object */, Output /* <: js.Object */]
+  extends StObject
+     with Pluggable[Input, Output] {
   
+  /**
+    * Add middleware to the stack to be executed during the "serialize" step,
+    * optionally specifying a priority, tags and name
+    */
   /**
     * Add middleware to the stack to be executed during the "build" step,
     * optionally specifying a priority, tags and name
     */
-  def add(middleware: BuildMiddleware[Input, Output], options: BuildHandlerOptions with AbsoluteLocation): Unit = js.native
+  /**
+    * Add middleware to the stack to be executed during the "finalizeRequest" step,
+    * optionally specifying a priority, tags and name
+    */
   /**
     * Add middleware to the stack to be executed during the "deserialize" step,
     * optionally specifying a priority, tags and name
     */
   def add(
-    middleware: DeserializeMiddleware[Input, Output],
-    options: DeserializeHandlerOptions with AbsoluteLocation
-  ): Unit = js.native
-  /**
-    * Add middleware to the stack to be executed during the "finalizeRequest" step,
-    * optionally specifying a priority, tags and name
-    */
-  def add(
-    middleware: FinalizeRequestMiddleware[Input, Output],
-    options: FinalizeRequestHandlerOptions with AbsoluteLocation
+    middleware: (BuildMiddleware[Input, Output]) | (DeserializeMiddleware[Input, Output]) | (FinalizeRequestMiddleware[Input, Output]) | (InitializeMiddleware[Input, Output]) | (SerializeMiddleware[Input, Output]),
+    options: InitializeHandlerOptions & AbsoluteLocation & SerializeHandlerOptions & BuildHandlerOptions & FinalizeRequestHandlerOptions & DeserializeHandlerOptions
   ): Unit = js.native
   /**
     * Add middleware to the stack to be executed during the "initialize" step,
     * optionally specifying a priority, tags and name
     */
   def add(middleware: InitializeMiddleware[Input, Output]): Unit = js.native
-  def add(
-    middleware: InitializeMiddleware[Input, Output],
-    options: InitializeHandlerOptions with AbsoluteLocation
-  ): Unit = js.native
-  /**
-    * Add middleware to the stack to be executed during the "serialize" step,
-    * optionally specifying a priority, tags and name
-    */
-  def add(
-    middleware: SerializeMiddleware[Input, Output],
-    options: SerializeHandlerOptions with AbsoluteLocation
-  ): Unit = js.native
   
   /**
     * Add middleware to a stack position before or after a known middleware，optionally

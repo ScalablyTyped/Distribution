@@ -8,27 +8,25 @@ import typings.atom.mod.TooltipPlacement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Class extends StObject {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var delay: js.UndefOr[Hide] = js.native
+  var delay: js.UndefOr[Hide] = js.undefined
   
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
-  var keyBindingCommand: js.UndefOr[String] = js.native
+  var keyBindingCommand: js.UndefOr[String] = js.undefined
   
-  var keyBindingTarget: js.UndefOr[HTMLElement] = js.native
+  var keyBindingTarget: js.UndefOr[HTMLElement] = js.undefined
   
-  var placement: js.UndefOr[TooltipPlacement | js.Function0[TooltipPlacement]] = js.native
+  var placement: js.UndefOr[TooltipPlacement | js.Function0[TooltipPlacement]] = js.undefined
   
-  var title: js.UndefOr[String | js.Function0[String]] = js.native
+  var title: js.UndefOr[String | js.Function0[String]] = js.undefined
   
-  var trigger: js.UndefOr[click | hover | focus | manual] = js.native
+  var trigger: js.UndefOr[click | hover | focus | manual] = js.undefined
 }
 object Class {
   

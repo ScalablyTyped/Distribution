@@ -3,18 +3,16 @@ package typings.cordovaPluginFile
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface supplies information about the state of a file or directory. */
-@js.native
 trait Metadata extends StObject {
   
   /** This is the time at which the file or directory was last modified. */
-  var modificationTime: Date = js.native
+  var modificationTime: Date
   
   /** The size of the file, in bytes. This must return 0 for directories. */
-  var size: Double = js.native
+  var size: Double
 }
 object Metadata {
   

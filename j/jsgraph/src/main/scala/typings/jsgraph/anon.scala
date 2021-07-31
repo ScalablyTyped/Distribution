@@ -4,15 +4,13 @@ import typings.jsgraph.mod.DirectedGraph
 import typings.jsgraph.mod.Edge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dirgaph extends StObject {
     
-    var dirgaph: DirectedGraph = js.native
+    var dirgaph: DirectedGraph
   }
   object Dirgaph {
     
@@ -30,12 +28,11 @@ object anon {
     }
   }
   
-  @js.native
   trait E extends StObject {
     
-    var e: Edge = js.native
+    var e: Edge
     
-    var g: DirectedGraph = js.native
+    var g: DirectedGraph
   }
   object E {
     
@@ -56,12 +53,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var result: js.UndefOr[DirectedGraph] = js.native
+    var result: js.UndefOr[DirectedGraph] = js.undefined
   }
   object Error {
     
@@ -88,12 +84,11 @@ object anon {
     }
   }
   
-  @js.native
   trait G extends StObject {
     
-    var g: DirectedGraph = js.native
+    var g: DirectedGraph
     
-    var u: String = js.native
+    var u: String
   }
   object G {
     
@@ -114,10 +109,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var result: DirectedGraph = js.native
+    var result: DirectedGraph
   }
   object Result {
     

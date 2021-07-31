@@ -2,13 +2,11 @@ package typings.hapiHapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collect extends StObject {
   
-  var collect: Boolean = js.native
+  var collect: Boolean
 }
 object Collect {
   

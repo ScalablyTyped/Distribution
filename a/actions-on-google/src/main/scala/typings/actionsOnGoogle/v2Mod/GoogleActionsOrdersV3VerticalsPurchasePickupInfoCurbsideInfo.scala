@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo extends StObj
     */
   var curbsideFulfillmentType: js.UndefOr[
     GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfoCurbsideFulfillmentType
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Vehicle details of the user placing the order.
     */
-  var userVehicle: js.UndefOr[GoogleActionsOrdersV3VerticalsCommonVehicle] = js.native
+  var userVehicle: js.UndefOr[GoogleActionsOrdersV3VerticalsCommonVehicle] = js.undefined
 }
 object GoogleActionsOrdersV3VerticalsPurchasePickupInfoCurbsideInfo {
   

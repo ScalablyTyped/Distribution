@@ -9,7 +9,6 @@ import typings.storybookAddons.typesMod.DecoratorFunction
 import typings.storybookAddons.typesMod.StoryApi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,16 +24,15 @@ object mod {
     StoryApi[StoryFnReturnType]
   ]
   
-  @js.native
   trait AddonParameters extends StObject {
     
-    var displayName: js.UndefOr[String | displayNameFunc] = js.native
+    var displayName: js.UndefOr[String | displayNameFunc] = js.undefined
     
-    var enableBeautify: js.UndefOr[Boolean] = js.native
+    var enableBeautify: js.UndefOr[Boolean] = js.undefined
     
-    var onBeforeRender: js.UndefOr[js.Function1[/* domString */ String, String]] = js.native
+    var onBeforeRender: js.UndefOr[js.Function1[/* domString */ String, String]] = js.undefined
     
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
   }
   object AddonParameters {
     
@@ -81,14 +79,13 @@ object mod {
   /* augmented module */
   object storybookAddonsAugmentingMod {
     
-    @js.native
     trait ClientStoryApi[StoryFnReturnType] extends StObject {
       
-      def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType] = js.native
+      def addDecorator(decorator: DecoratorFunction[StoryFnReturnType]): StoryApi[StoryFnReturnType]
       
-      def addParameters(parameter: ParametersjsxAddonParamet): StoryApi[StoryFnReturnType] = js.native
+      def addParameters(parameter: ParametersjsxAddonParamet): StoryApi[StoryFnReturnType]
       
-      def storiesOf(kind: String, module: NodeModule): StoryApi[StoryFnReturnType] with AddWithJSX[StoryFnReturnType] = js.native
+      def storiesOf(kind: String, module: NodeModule): StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]
     }
     object ClientStoryApi {
       
@@ -96,14 +93,14 @@ object mod {
       def apply[StoryFnReturnType](
         addDecorator: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType],
         addParameters: ParametersjsxAddonParamet => StoryApi[StoryFnReturnType],
-        storiesOf: (String, NodeModule) => StoryApi[StoryFnReturnType] with AddWithJSX[StoryFnReturnType]
+        storiesOf: (String, NodeModule) => StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]
       ): ClientStoryApi[StoryFnReturnType] = {
         val __obj = js.Dynamic.literal(addDecorator = js.Any.fromFunction1(addDecorator), addParameters = js.Any.fromFunction1(addParameters), storiesOf = js.Any.fromFunction2(storiesOf))
         __obj.asInstanceOf[ClientStoryApi[StoryFnReturnType]]
       }
       
       @scala.inline
-      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[_], StoryFnReturnType] (val x: Self with ClientStoryApi[StoryFnReturnType]) extends AnyVal {
+      implicit class ClientStoryApiMutableBuilder[Self <: ClientStoryApi[?], StoryFnReturnType] (val x: Self & ClientStoryApi[StoryFnReturnType]) extends AnyVal {
         
         @scala.inline
         def setAddDecorator(value: DecoratorFunction[StoryFnReturnType] => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addDecorator", js.Any.fromFunction1(value))
@@ -112,7 +109,7 @@ object mod {
         def setAddParameters(value: ParametersjsxAddonParamet => StoryApi[StoryFnReturnType]): Self = StObject.set(x, "addParameters", js.Any.fromFunction1(value))
         
         @scala.inline
-        def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType] with AddWithJSX[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
+        def setStoriesOf(value: (String, NodeModule) => StoryApi[StoryFnReturnType] & AddWithJSX[StoryFnReturnType]): Self = StObject.set(x, "storiesOf", js.Any.fromFunction2(value))
       }
     }
   }

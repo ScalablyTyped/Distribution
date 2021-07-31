@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to insert a PAGE field displaying the current page number.
   */
-@js.native
-trait CreatePageFieldCommand extends CommandWithSimpleStateBase {
+trait CreatePageFieldCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CreatePageFieldCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CreatePageFieldCommand {
   

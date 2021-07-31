@@ -9,7 +9,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keywordTriggerMod {
@@ -29,26 +28,25 @@ object keywordTriggerMod {
     def getDropdownPrefix(): String = js.native
   }
   
-  @js.native
   trait KeywordTriggerProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getPopupContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.Array[OptionProps] = js.native
+    var options: js.Array[OptionProps]
     
-    var placement: js.UndefOr[Placement] = js.native
+    var placement: js.UndefOr[Placement] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object KeywordTriggerProps {
     

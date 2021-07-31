@@ -2,13 +2,11 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanOptions extends StObject {
   
-  var noAnimation: js.UndefOr[Boolean] = js.native
+  var noAnimation: js.UndefOr[Boolean] = js.undefined
 }
 object PanOptions {
   

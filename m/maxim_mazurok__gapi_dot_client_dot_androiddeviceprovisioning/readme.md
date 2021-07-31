@@ -10,9 +10,9 @@ TypeScript typings for Android Device Provisioning Partner API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.androiddeviceprovisioning |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 36 |
+| # releases         | 23 |
+| # dependents       | 1 |
+| # downloads        | 1756 |
 | # stars            | 0 |
 
 ## Links

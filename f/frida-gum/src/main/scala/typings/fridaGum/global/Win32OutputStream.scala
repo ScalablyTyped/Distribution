@@ -4,7 +4,6 @@ import typings.fridaGum.NativePointerValue
 import typings.fridaGum.WindowsStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Win32OutputStream")
 @js.native
 class Win32OutputStream protected ()
-  extends typings.fridaGum.OutputStream {
+  extends StObject
+     with typings.fridaGum.OutputStream {
   /**
     * Creates a new output stream from the specified Windows file handle.
     *

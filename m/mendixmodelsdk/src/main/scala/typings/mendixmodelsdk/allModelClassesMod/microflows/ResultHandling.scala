@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling")
@@ -37,9 +36,8 @@ object ResultHandling {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object ResultHandling {
     * of the parent ImportXmlAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling.createInImportXmlActionUnderResultHandling")
-  @js.native
-  def createInImportXmlActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  @scala.inline
+  def createInImportXmlActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.ImportXmlAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportXmlActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -60,9 +57,8 @@ object ResultHandling {
     *  6.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling.createInRestCallActionUnderResultHandling")
-  @js.native
-  def createInRestCallActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  @scala.inline
+  def createInRestCallActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling]
   
   /**
     * Creates and returns a new ResultHandling instance in the SDK and on the server.
@@ -70,9 +66,8 @@ object ResultHandling {
     * of the parent WebServiceCallAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling.createInWebServiceCallActionUnderResultHandling")
-  @js.native
-  def createInWebServiceCallActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderResultHandling(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderResultHandling")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ResultHandling]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "microflows.ResultHandling.structureTypeName")

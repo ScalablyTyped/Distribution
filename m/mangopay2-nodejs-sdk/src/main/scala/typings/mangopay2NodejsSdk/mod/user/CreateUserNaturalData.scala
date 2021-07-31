@@ -6,34 +6,32 @@ import typings.mangopay2NodejsSdk.mod.address.AddressData
 import typings.mangopay2NodejsSdk.typesMod.CountryISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.MakeKeysRequired<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.BaseUserNaturalData, mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.user.RequiredUserNaturalData | 'PersonType'> */
-@js.native
 trait CreateUserNaturalData extends StObject {
   
-  var Address: js.UndefOr[String | AddressData] = js.native
+  var Address: js.UndefOr[String | AddressData] = js.undefined
   
-  var Birthday: Timestamp = js.native
+  var Birthday: Timestamp
   
-  var CountryOfResidence: CountryISO = js.native
+  var CountryOfResidence: CountryISO
   
-  var Email: String = js.native
+  var Email: String
   
-  var FirstName: String = js.native
+  var FirstName: String
   
-  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.native
+  var IncomeRange: js.UndefOr[typings.mangopay2NodejsSdk.mod.user.IncomeRange] = js.undefined
   
-  var LastName: String = js.native
+  var LastName: String
   
-  var Nationality: CountryISO = js.native
+  var Nationality: CountryISO
   
-  var Occupation: js.UndefOr[String] = js.native
+  var Occupation: js.UndefOr[String] = js.undefined
   
-  var PersonType: NATURAL = js.native
+  var PersonType: NATURAL
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
 }
 object CreateUserNaturalData {
   
@@ -44,10 +42,9 @@ object CreateUserNaturalData {
     Email: String,
     FirstName: String,
     LastName: String,
-    Nationality: CountryISO,
-    PersonType: NATURAL
+    Nationality: CountryISO
   ): CreateUserNaturalData = {
-    val __obj = js.Dynamic.literal(Birthday = Birthday.asInstanceOf[js.Any], CountryOfResidence = CountryOfResidence.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], FirstName = FirstName.asInstanceOf[js.Any], LastName = LastName.asInstanceOf[js.Any], Nationality = Nationality.asInstanceOf[js.Any], PersonType = PersonType.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(Birthday = Birthday.asInstanceOf[js.Any], CountryOfResidence = CountryOfResidence.asInstanceOf[js.Any], Email = Email.asInstanceOf[js.Any], FirstName = FirstName.asInstanceOf[js.Any], LastName = LastName.asInstanceOf[js.Any], Nationality = Nationality.asInstanceOf[js.Any], PersonType = "NATURAL")
     __obj.asInstanceOf[CreateUserNaturalData]
   }
   

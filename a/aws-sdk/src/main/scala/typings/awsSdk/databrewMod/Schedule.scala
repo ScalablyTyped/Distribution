@@ -2,61 +2,59 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /**
     * The ID of the AWS account that owns the schedule.
     */
-  var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.native
+  var AccountId: js.UndefOr[typings.awsSdk.databrewMod.AccountId] = js.undefined
   
   /**
     * The date and time that the schedule was created.
     */
-  var CreateDate: js.UndefOr[Date] = js.native
+  var CreateDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The identifier (the user name) of the user who created the schedule.
     */
-  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.native
+  var CreatedBy: js.UndefOr[typings.awsSdk.databrewMod.CreatedBy] = js.undefined
   
   /**
     * The date(s) and time(s), in cron format, when the job will run.
     */
-  var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.native
+  var CronExpression: js.UndefOr[typings.awsSdk.databrewMod.CronExpression] = js.undefined
   
   /**
     * A list of jobs to be run, according to the schedule.
     */
-  var JobNames: js.UndefOr[JobNameList] = js.native
+  var JobNames: js.UndefOr[JobNameList] = js.undefined
   
   /**
     * The identifier (the user name) of the user who last modified the schedule.
     */
-  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.native
+  var LastModifiedBy: js.UndefOr[typings.awsSdk.databrewMod.LastModifiedBy] = js.undefined
   
   /**
     * The date and time when the schedule was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the schedule.
     */
-  var Name: ScheduleName = js.native
+  var Name: ScheduleName
   
   /**
     * The Amazon Resource Name (ARN) of the schedule.
     */
-  var ResourceArn: js.UndefOr[Arn] = js.native
+  var ResourceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Metadata tags that have been applied to the schedule.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object Schedule {
   

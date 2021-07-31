@@ -3,48 +3,46 @@ package typings.karmaCoverageIstanbulReporter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait CoverageIstanbulReporter extends StObject {
     
     /** Combines coverage information from multiple browsers into one report rather than outputting a report for each browser */
-    val combineBrowserReports: js.UndefOr[Boolean] = js.native
+    val combineBrowserReports: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Base output directory.
       * If you include `%browser%` in the path it will be replaced with the karma browser name.
       */
-    val dir: js.UndefOr[String] = js.native
+    val dir: js.UndefOr[String] = js.undefined
     
     /** if using webpack and pre-loaders, work around webpack breaking the source path. */
-    val fixWebpackSourcePaths: js.UndefOr[Boolean] = js.native
+    val fixWebpackSourcePaths: js.UndefOr[Boolean] = js.undefined
     
     // TODO: Add istanbul-api
     /** `instrumentation` is used to configure Istanbul API package. */
-    val instrumentation: js.UndefOr[js.Any] = js.native
+    val instrumentation: js.UndefOr[js.Any] = js.undefined
     
     // TODO: Add istanbul-api
     /** Most reporters accept additional config options. You can pass these through the `report-config` option. */
-    val `report-config`: js.UndefOr[js.Any] = js.native
+    val `report-config`: js.UndefOr[js.Any] = js.undefined
     
     /** Reports can be any that are listed {@link https://github.com/istanbuljs/istanbuljs/tree/aae256fb8b9a3d19414dcf069c592e88712c32c6/packages/istanbul-reports/lib here}. */
-    val reports: js.UndefOr[js.Array[String]] = js.native
+    val reports: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Omit files with no statements, no functions and no branches from the report. */
-    val skipFilesWithNoCoverage: js.UndefOr[Boolean] = js.native
+    val skipFilesWithNoCoverage: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enforce percentage thresholds.
       * Anything under these percentages will cause karma to fail with an exit code of 1 if not running in watch mode.
       */
-    val thresholds: js.UndefOr[ThresholdConfig] = js.native
+    val thresholds: js.UndefOr[ThresholdConfig] = js.undefined
     
     /** Output config used by istanbul for debugging. */
-    val verbose: js.UndefOr[Boolean] = js.native
+    val verbose: js.UndefOr[Boolean] = js.undefined
   }
   object CoverageIstanbulReporter {
     
@@ -116,20 +114,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Threshold extends StObject {
     
     /** @default 0 */
-    val branches: js.UndefOr[Double] = js.native
+    val branches: js.UndefOr[Double] = js.undefined
     
     /** @default 0 */
-    val functions: js.UndefOr[Double] = js.native
+    val functions: js.UndefOr[Double] = js.undefined
     
     /** @default 0 */
-    val lines: js.UndefOr[Double] = js.native
+    val lines: js.UndefOr[Double] = js.undefined
     
     /** @default 0 */
-    val statements: js.UndefOr[Double] = js.native
+    val statements: js.UndefOr[Double] = js.undefined
   }
   object Threshold {
     
@@ -168,20 +165,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ThresholdConfig extends StObject {
     
     /** Thresholds per file. */
-    val each: js.UndefOr[ThresholdsEach] = js.native
+    val each: js.UndefOr[ThresholdsEach] = js.undefined
     
     /**
       * Set to `true` to not fail the test command when thresholds are not met.
       * @default false
       */
-    val emitWarning: js.UndefOr[Boolean] = js.native
+    val emitWarning: js.UndefOr[Boolean] = js.undefined
     
     /** Thresholds for all files. */
-    val global: js.UndefOr[Threshold] = js.native
+    val global: js.UndefOr[Threshold] = js.undefined
   }
   object ThresholdConfig {
     
@@ -214,11 +210,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait ThresholdsEach extends Threshold {
+  trait ThresholdsEach
+    extends StObject
+       with Threshold {
     
     /** @default {} */
-    val overrides: js.UndefOr[StringDictionary[Threshold]] = js.native
+    val overrides: js.UndefOr[StringDictionary[Threshold]] = js.undefined
   }
   object ThresholdsEach {
     
@@ -241,11 +238,10 @@ object mod {
   
   object karmaAugmentingMod {
     
-    @js.native
     trait ConfigOptions extends StObject {
       
       /** {@link https://github.com/istanbuljs/istanbuljs/blob/aae256fb8b9a3d19414dcf069c592e88712c32c6/packages/istanbul-api/lib/config.js#L33-L39 Any of these options are valid}. */
-      val coverageIstanbulReporter: js.UndefOr[CoverageIstanbulReporter] = js.native
+      val coverageIstanbulReporter: js.UndefOr[CoverageIstanbulReporter] = js.undefined
     }
     object ConfigOptions {
       

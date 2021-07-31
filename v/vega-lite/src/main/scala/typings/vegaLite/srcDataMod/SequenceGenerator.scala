@@ -2,18 +2,17 @@ package typings.vegaLite.srcDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SequenceGenerator
-  extends Generator
-     with GeneratorBase {
+  extends StObject
+     with GeneratorBase
+     with Generator {
   
   /**
     * Generate a sequence of numbers.
     */
-  var sequence: SequenceParams = js.native
+  var sequence: SequenceParams
 }
 object SequenceGenerator {
   

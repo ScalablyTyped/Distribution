@@ -3,17 +3,17 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XText extends XCharacterData {
+trait XText
+  extends StObject
+     with XCharacterData {
   
   /**
     * Breaks this node into two nodes at the specified offset, keeping both in the tree as siblings. Throws: {@link DOMException} - INDEX_SIZE_ERR: Raised
     * if the specified offset is negative or greater than the number of 16-bit units in data. NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
     */
-  def splitText(offset: Double): XText = js.native
+  def splitText(offset: Double): XText
 }
 object XText {
   

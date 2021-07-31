@@ -2,17 +2,17 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGroupOptions extends IObjectOptions {
+trait IGroupOptions
+  extends StObject
+     with IObjectOptions {
   
   /**
     * Indicates if click, mouseover, mouseout events & hoverCursor should also check for subtargets
     * @type Boolean
     */
-  var subTargetCheck: js.UndefOr[Boolean] = js.native
+  var subTargetCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * setOnGroup is a method used for TextBox that is no more used since 2.0.0 The behavior is still
@@ -21,7 +21,7 @@ trait IGroupOptions extends IObjectOptions {
     * @since 2.0.0
     * @default
     */
-  var useSetOnGroup: js.UndefOr[Boolean] = js.native
+  var useSetOnGroup: js.UndefOr[Boolean] = js.undefined
 }
 object IGroupOptions {
   

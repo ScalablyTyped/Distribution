@@ -4,10 +4,13 @@ import typings.std.Error
 import typings.wrench.anon.Preserve
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("wrench", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("wrench", "LineReader")
   @js.native
@@ -22,45 +25,34 @@ object mod {
     def hasNextLine(): Boolean = js.native
   }
   
-  @JSImport("wrench", "chmodSyncRecursive")
-  @js.native
-  def chmodSyncRecursive(sourceDir: String, filemode: Double): Unit = js.native
+  @scala.inline
+  def chmodSyncRecursive(sourceDir: String, filemode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSyncRecursive")(sourceDir.asInstanceOf[js.Any], filemode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "chownSyncRecursive")
-  @js.native
-  def chownSyncRecursive(sourceDir: String, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def chownSyncRecursive(sourceDir: String, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSyncRecursive")(sourceDir.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "copyDirRecursive")
-  @js.native
-  def copyDirRecursive(srcDir: String, newDir: String, fn: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def copyDirRecursive(srcDir: String, newDir: String, fn: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDirRecursive")(srcDir.asInstanceOf[js.Any], newDir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "copyDirSyncRecursive")
-  @js.native
-  def copyDirSyncRecursive(sourceDir: String, newDirLocation: String): Unit = js.native
-  @JSImport("wrench", "copyDirSyncRecursive")
-  @js.native
-  def copyDirSyncRecursive(sourceDir: String, newDirLocation: String, opts: Preserve): Unit = js.native
+  @scala.inline
+  def copyDirSyncRecursive(sourceDir: String, newDirLocation: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDirSyncRecursive")(sourceDir.asInstanceOf[js.Any], newDirLocation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def copyDirSyncRecursive(sourceDir: String, newDirLocation: String, opts: Preserve): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDirSyncRecursive")(sourceDir.asInstanceOf[js.Any], newDirLocation.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "mkdirSyncRecursive")
-  @js.native
-  def mkdirSyncRecursive(path: String, mode: Double): Unit = js.native
+  @scala.inline
+  def mkdirSyncRecursive(path: String, mode: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSyncRecursive")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "readdirRecursive")
-  @js.native
-  def readdirRecursive(baseDir: String, fn: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]): Unit = js.native
+  @scala.inline
+  def readdirRecursive(baseDir: String, fn: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirRecursive")(baseDir.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "readdirSyncRecursive")
-  @js.native
-  def readdirSyncRecursive(baseDir: String): js.Array[String] = js.native
+  @scala.inline
+  def readdirSyncRecursive(baseDir: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSyncRecursive")(baseDir.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("wrench", "rmdirRecursive")
-  @js.native
-  def rmdirRecursive(path: String, fn: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def rmdirRecursive(path: String, fn: js.Function1[/* err */ Error, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirRecursive")(path.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("wrench", "rmdirSyncRecursive")
-  @js.native
-  def rmdirSyncRecursive(path: String): Unit = js.native
-  @JSImport("wrench", "rmdirSyncRecursive")
-  @js.native
-  def rmdirSyncRecursive(path: String, failSilent: Boolean): Unit = js.native
+  @scala.inline
+  def rmdirSyncRecursive(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSyncRecursive")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def rmdirSyncRecursive(path: String, failSilent: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSyncRecursive")(path.asInstanceOf[js.Any], failSilent.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

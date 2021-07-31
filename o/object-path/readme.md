@@ -10,9 +10,9 @@ Access deep object properties using a path
 | ------------------ | :-------------: |
 | Full name          | object-path |
 | Keywords           | deep, path, access, bean, get, property, dot, prop, object, obj, notation, segment, value, nested, key |
-| # releases         | 0 |
-| # dependents       | 945 |
-| # downloads        | 153966397 |
+| # releases         | 2 |
+| # dependents       | 1011 |
+| # downloads        | 198867863 |
 | # stars            | 40 |
 
 ## Links

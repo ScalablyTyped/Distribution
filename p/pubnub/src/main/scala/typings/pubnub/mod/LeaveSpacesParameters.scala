@@ -2,15 +2,15 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeaveSpacesParameters extends GetObjectsParameters {
+trait LeaveSpacesParameters
+  extends StObject
+     with GetObjectsParameters {
   
-  var spaces: js.Array[String] = js.native
+  var spaces: js.Array[String]
   
-  var userId: String = js.native
+  var userId: String
 }
 object LeaveSpacesParameters {
   

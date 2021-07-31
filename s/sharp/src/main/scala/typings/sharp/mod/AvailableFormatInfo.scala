@@ -3,17 +3,15 @@ package typings.sharp.mod
 import typings.sharp.anon.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailableFormatInfo extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var input: Buffer = js.native
+  var input: Buffer
   
-  var output: Buffer = js.native
+  var output: Buffer
 }
 object AvailableFormatInfo {
   

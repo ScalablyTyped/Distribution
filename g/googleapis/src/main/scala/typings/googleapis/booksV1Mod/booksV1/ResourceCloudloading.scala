@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/books/v1", "books_v1.Resource$Cloudloading")
@@ -30,7 +29,7 @@ class ResourceCloudloading protected () extends StObject {
     */
   def addBook(): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(callback: BodyResponseCallback[SchemaBooksCloudloadingResource]): Unit = js.native
-  def addBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
+  def addBook(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(params: ParamsResourceCloudloadingAddbook): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def addBook(
     params: ParamsResourceCloudloadingAddbook,
@@ -64,7 +63,7 @@ class ResourceCloudloading protected () extends StObject {
     */
   def deleteBook(): GaxiosPromise[Unit] = js.native
   def deleteBook(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def deleteBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def deleteBook(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def deleteBook(params: ParamsResourceCloudloadingDeletebook): GaxiosPromise[Unit] = js.native
   def deleteBook(params: ParamsResourceCloudloadingDeletebook, callback: BodyResponseCallback[Unit]): Unit = js.native
   def deleteBook(
@@ -92,7 +91,7 @@ class ResourceCloudloading protected () extends StObject {
     */
   def updateBook(): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(callback: BodyResponseCallback[SchemaBooksCloudloadingResource]): Unit = js.native
-  def updateBook(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
+  def updateBook(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(params: ParamsResourceCloudloadingUpdatebook): GaxiosPromise[SchemaBooksCloudloadingResource] = js.native
   def updateBook(
     params: ParamsResourceCloudloadingUpdatebook,

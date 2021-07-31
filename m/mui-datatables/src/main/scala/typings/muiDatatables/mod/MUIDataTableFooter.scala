@@ -2,23 +2,21 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableFooter extends StObject {
   
-  var changePage: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var changePage: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var changeRowsPerPage: js.UndefOr[js.Function1[/* e */ js.Any, _]] = js.native
+  var changeRowsPerPage: js.UndefOr[js.Function1[/* e */ js.Any, js.Any]] = js.undefined
   
-  var options: js.UndefOr[MUIDataTableOptions] = js.native
+  var options: js.UndefOr[MUIDataTableOptions] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
-  var rowsPerPage: js.UndefOr[Double] = js.native
+  var rowsPerPage: js.UndefOr[Double] = js.undefined
 }
 object MUIDataTableFooter {
   
@@ -32,13 +30,13 @@ object MUIDataTableFooter {
   implicit class MUIDataTableFooterMutableBuilder[Self <: MUIDataTableFooter] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setChangePage(value: /* e */ js.Any => _): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
+    def setChangePage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changePage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangePageUndefined: Self = StObject.set(x, "changePage", js.undefined)
     
     @scala.inline
-    def setChangeRowsPerPage(value: /* e */ js.Any => _): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
+    def setChangeRowsPerPage(value: /* e */ js.Any => js.Any): Self = StObject.set(x, "changeRowsPerPage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setChangeRowsPerPageUndefined: Self = StObject.set(x, "changeRowsPerPage", js.undefined)

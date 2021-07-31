@@ -2,13 +2,13 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdditionalPropertiesParams extends ErrorParameters {
+trait AdditionalPropertiesParams
+  extends StObject
+     with ErrorParameters {
   
-  var additionalProperty: String = js.native
+  var additionalProperty: String
 }
 object AdditionalPropertiesParams {
   

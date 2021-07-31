@@ -3,39 +3,37 @@ package typings.openseadragon.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileSourceOptions extends StObject {
   
-  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var getTileUrl: js.UndefOr[js.Function3[/* l */ Double, /* x */ Double, /* y */ Double, String]] = js.native
+  var getTileUrl: js.UndefOr[js.Function3[/* l */ Double, /* x */ Double, /* y */ Double, String]] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var maxLevel: js.UndefOr[Double] = js.native
+  var maxLevel: js.UndefOr[Double] = js.undefined
   
-  var minLevel: js.UndefOr[Double] = js.native
+  var minLevel: js.UndefOr[Double] = js.undefined
   
-  var referenceStripThumbnailUrl: js.UndefOr[String] = js.native
+  var referenceStripThumbnailUrl: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileOverlap: js.UndefOr[Double] = js.native
+  var tileOverlap: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double] = js.native
+  var tileSize: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object TileSourceOptions {
   

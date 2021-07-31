@@ -2,27 +2,25 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxAccountFolders Class */
-@js.native
 trait FaxAccountFolders extends StObject {
   
   @JSName("FAXCOMEXLib.FaxAccountFolders_typekey")
-  var FAXCOMEXLibDotFaxAccountFolders_typekey: FaxAccountFolders = js.native
+  var FAXCOMEXLibDotFaxAccountFolders_typekey: FaxAccountFolders
   
   /** Incoming archive */
-  val IncomingArchive: FaxAccountIncomingArchive = js.native
+  val IncomingArchive: FaxAccountIncomingArchive
   
   /** Incoming queue */
-  val IncomingQueue: FaxAccountIncomingQueue = js.native
+  val IncomingQueue: FaxAccountIncomingQueue
   
   /** Outgoing archive */
-  val OutgoingArchive: FaxAccountOutgoingArchive = js.native
+  val OutgoingArchive: FaxAccountOutgoingArchive
   
   /** Outgoing queue */
-  val OutgoingQueue: FaxAccountOutgoingQueue = js.native
+  val OutgoingQueue: FaxAccountOutgoingQueue
 }
 object FaxAccountFolders {
   

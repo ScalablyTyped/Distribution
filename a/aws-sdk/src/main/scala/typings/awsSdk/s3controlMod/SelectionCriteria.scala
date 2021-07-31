@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionCriteria extends StObject {
   
   /**
     * A container for the delimiter of the selection criteria being used.
     */
-  var Delimiter: js.UndefOr[StorageLensPrefixLevelDelimiter] = js.native
+  var Delimiter: js.UndefOr[StorageLensPrefixLevelDelimiter] = js.undefined
   
   /**
     * The max depth of the selection criteria
     */
-  var MaxDepth: js.UndefOr[StorageLensPrefixLevelMaxDepth] = js.native
+  var MaxDepth: js.UndefOr[StorageLensPrefixLevelMaxDepth] = js.undefined
   
   /**
     * The minimum number of storage bytes percentage whose metrics will be selected.  You must choose a value greater than or equal to 1.0. 
     */
-  var MinStorageBytesPercentage: js.UndefOr[typings.awsSdk.s3controlMod.MinStorageBytesPercentage] = js.native
+  var MinStorageBytesPercentage: js.UndefOr[typings.awsSdk.s3controlMod.MinStorageBytesPercentage] = js.undefined
 }
 object SelectionCriteria {
   

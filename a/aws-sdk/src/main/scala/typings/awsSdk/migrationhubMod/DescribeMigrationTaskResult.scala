@@ -2,16 +2,14 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeMigrationTaskResult extends StObject {
   
   /**
     * Object encapsulating information about the migration task.
     */
-  var MigrationTask: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTask] = js.native
+  var MigrationTask: js.UndefOr[typings.awsSdk.migrationhubMod.MigrationTask] = js.undefined
 }
 object DescribeMigrationTaskResult {
   

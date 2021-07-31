@@ -4,18 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "CloneVisitor")
   @js.native
-  class CloneVisitor () extends Visitor
+  class CloneVisitor ()
+    extends StObject
+       with Visitor
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "Container")
   @js.native
-  class Container protected () extends Node {
+  class Container protected ()
+    extends StObject
+       with Node {
     def this(children: js.Array[Node], sourceSpan: ParseSourceSpan) = this()
     
     var children: js.Array[Node] = js.native
@@ -23,7 +26,9 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "Icu")
   @js.native
-  class Icu protected () extends Node {
+  class Icu protected ()
+    extends StObject
+       with Node {
     def this(expression: String, `type`: String, cases: StringDictionary[Node], sourceSpan: ParseSourceSpan) = this()
     
     var cases: StringDictionary[Node] = js.native
@@ -37,7 +42,9 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "IcuPlaceholder")
   @js.native
-  class IcuPlaceholder protected () extends Node {
+  class IcuPlaceholder protected ()
+    extends StObject
+       with Node {
     def this(value: Icu, name: String, sourceSpan: ParseSourceSpan) = this()
     
     var name: String = js.native
@@ -50,7 +57,9 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "Message")
   @js.native
-  class Message protected () extends I18nMeta {
+  class Message protected ()
+    extends StObject
+       with I18nMeta {
     /**
       * @param nodes message AST
       * @param placeholders maps placeholder names to static content and their source spans
@@ -90,7 +99,9 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "Placeholder")
   @js.native
-  class Placeholder protected () extends Node {
+  class Placeholder protected ()
+    extends StObject
+       with Node {
     def this(value: String, name: String, sourceSpan: ParseSourceSpan) = this()
     
     var name: String = js.native
@@ -100,11 +111,15 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "RecurseVisitor")
   @js.native
-  class RecurseVisitor () extends Visitor
+  class RecurseVisitor ()
+    extends StObject
+       with Visitor
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "TagPlaceholder")
   @js.native
-  class TagPlaceholder protected () extends Node {
+  class TagPlaceholder protected ()
+    extends StObject
+       with Node {
     def this(
       tag: String,
       attrs: StringDictionary[String],
@@ -166,7 +181,9 @@ object i18nAstMod {
   
   @JSImport("@angular/compiler/src/i18n/i18n_ast", "Text")
   @js.native
-  class Text protected () extends Node {
+  class Text protected ()
+    extends StObject
+       with Node {
     def this(value: String, sourceSpan: ParseSourceSpan) = this()
     
     var value: String = js.native
@@ -178,14 +195,13 @@ object i18nAstMod {
   */
   trait I18nMeta extends StObject
   
-  @js.native
   trait MessagePlaceholder extends StObject {
     
     /** The source span of the placeholder */
-    var sourceSpan: ParseSourceSpan = js.native
+    var sourceSpan: ParseSourceSpan
     
     /** The text contents of the placeholder */
-    var text: String = js.native
+    var text: String
   }
   object MessagePlaceholder {
     
@@ -206,18 +222,17 @@ object i18nAstMod {
     }
   }
   
-  @js.native
   trait MessageSpan extends StObject {
     
-    var endCol: Double = js.native
+    var endCol: Double
     
-    var endLine: Double = js.native
+    var endLine: Double
     
-    var filePath: String = js.native
+    var filePath: String
     
-    var startCol: Double = js.native
+    var startCol: Double
     
-    var startLine: Double = js.native
+    var startLine: Double
   }
   object MessageSpan {
     
@@ -248,7 +263,9 @@ object i18nAstMod {
   }
   
   @js.native
-  trait Node extends I18nMeta {
+  trait Node
+    extends StObject
+       with I18nMeta {
     
     var sourceSpan: ParseSourceSpan = js.native
     

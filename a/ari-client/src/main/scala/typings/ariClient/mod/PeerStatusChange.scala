@@ -3,21 +3,21 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeerStatusChange extends Event {
+trait PeerStatusChange
+  extends StObject
+     with Event {
   
   /**
     * Endpoint.
     */
-  var endpoint: Endpoint = js.native
+  var endpoint: Endpoint
   
   /**
     * Peer.
     */
-  var peer: Peer = js.native
+  var peer: Peer
 }
 object PeerStatusChange {
   

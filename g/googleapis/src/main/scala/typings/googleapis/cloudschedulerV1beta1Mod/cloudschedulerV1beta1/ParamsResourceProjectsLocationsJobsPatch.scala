@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsJobsPatch extends StandardParameters {
+trait ParamsResourceProjectsLocationsJobsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optionally caller-specified in CreateJob, after which it becomes output
@@ -30,17 +30,17 @@ trait ParamsResourceProjectsLocationsJobsPatch extends StandardParameters {
     * `JOB_ID` can contain only letters ([A-Za-z]), numbers ([0-9]),    hyphens
     * (-), or underscores (_). The maximum length is 500 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaJob] = js.native
+  var requestBody: js.UndefOr[SchemaJob] = js.undefined
   
   /**
     * A  mask used to specify which fields of the job are being updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsJobsPatch {
   

@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.BackButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofBackButton extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): BackButton = js.native
+  def extend(proto: js.Object): BackButton
   
   /* static member */
-  var fn: BackButton = js.native
+  var fn: BackButton
 }
 object TypeofBackButton {
   

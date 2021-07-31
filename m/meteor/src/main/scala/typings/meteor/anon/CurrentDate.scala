@@ -13,57 +13,55 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentDate[T] extends StObject {
   
   @JSName("$addToSet")
-  var $addToSet: js.UndefOr[ArraysOrEach[T] with Dictionary[_]] = js.native
+  var $addToSet: js.UndefOr[ArraysOrEach[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$currentDate")
   var $currentDate: js.UndefOr[
-    (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier]
-  ] = js.native
+    (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) & Dictionary[CurrentDateModifier]
+  ] = js.undefined
   
   @JSName("$inc")
-  var $inc: js.UndefOr[(PartialMapTo[T, Double]) with Dictionary[Double]] = js.native
+  var $inc: js.UndefOr[(PartialMapTo[T, Double]) & Dictionary[Double]] = js.undefined
   
   @JSName("$max")
-  var $max: js.UndefOr[(PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])] = js.native
+  var $max: js.UndefOr[(PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])] = js.undefined
   
   @JSName("$min")
-  var $min: js.UndefOr[(PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])] = js.native
+  var $min: js.UndefOr[(PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])] = js.undefined
   
   @JSName("$mul")
-  var $mul: js.UndefOr[(PartialMapTo[T, Double]) with Dictionary[Double]] = js.native
+  var $mul: js.UndefOr[(PartialMapTo[T, Double]) & Dictionary[Double]] = js.undefined
   
   @JSName("$pop")
-  var $pop: js.UndefOr[(PartialMapTo[T, `1` | `-1`]) with (Dictionary[`1` | `-1`])] = js.native
+  var $pop: js.UndefOr[(PartialMapTo[T, `1` | `-1`]) & (Dictionary[`1` | `-1`])] = js.undefined
   
   @JSName("$pull")
-  var $pull: js.UndefOr[ElementsOf[T] with Dictionary[_]] = js.native
+  var $pull: js.UndefOr[ElementsOf[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$pullAll")
-  var $pullAll: js.UndefOr[Partial[T] with Dictionary[_]] = js.native
+  var $pullAll: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$push")
-  var $push: js.UndefOr[PushModifier[T] with Dictionary[_]] = js.native
+  var $push: js.UndefOr[PushModifier[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$rename")
-  var $rename: js.UndefOr[(PartialMapTo[T, String]) with Dictionary[String]] = js.native
+  var $rename: js.UndefOr[(PartialMapTo[T, String]) & Dictionary[String]] = js.undefined
   
   @JSName("$set")
-  var $set: js.UndefOr[Partial[T] with Dictionary[_]] = js.native
+  var $set: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$setOnInsert")
-  var $setOnInsert: js.UndefOr[Partial[T] with Dictionary[_]] = js.native
+  var $setOnInsert: js.UndefOr[Partial[T] & Dictionary[js.Any]] = js.undefined
   
   @JSName("$unset")
   var $unset: js.UndefOr[
-    (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) with Dictionary[_]
-  ] = js.native
+    (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) & Dictionary[js.Any]
+  ] = js.undefined
 }
 object CurrentDate {
   
@@ -74,57 +72,57 @@ object CurrentDate {
   }
   
   @scala.inline
-  implicit class CurrentDateMutableBuilder[Self <: CurrentDate[_], T] (val x: Self with CurrentDate[T]) extends AnyVal {
+  implicit class CurrentDateMutableBuilder[Self <: CurrentDate[?], T] (val x: Self & CurrentDate[T]) extends AnyVal {
     
     @scala.inline
-    def set$addToSet(value: ArraysOrEach[T] with Dictionary[_]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
+    def set$addToSet(value: ArraysOrEach[T] & Dictionary[js.Any]): Self = StObject.set(x, "$addToSet", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$addToSetUndefined: Self = StObject.set(x, "$addToSet", js.undefined)
     
     @scala.inline
     def set$currentDate(
-      value: (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) with Dictionary[CurrentDateModifier]
+      value: (Partial[Record[/* keyof T */ String, CurrentDateModifier]]) & Dictionary[CurrentDateModifier]
     ): Self = StObject.set(x, "$currentDate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$currentDateUndefined: Self = StObject.set(x, "$currentDate", js.undefined)
     
     @scala.inline
-    def set$inc(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = StObject.set(x, "$inc", value.asInstanceOf[js.Any])
+    def set$inc(value: (PartialMapTo[T, Double]) & Dictionary[Double]): Self = StObject.set(x, "$inc", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$incUndefined: Self = StObject.set(x, "$inc", js.undefined)
     
     @scala.inline
-    def set$max(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
+    def set$max(value: (PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])): Self = StObject.set(x, "$max", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$maxUndefined: Self = StObject.set(x, "$max", js.undefined)
     
     @scala.inline
-    def set$min(value: (PartialMapTo[T, Date | Double]) with (Dictionary[Date | Double])): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
+    def set$min(value: (PartialMapTo[T, Date | Double]) & (Dictionary[Date | Double])): Self = StObject.set(x, "$min", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$minUndefined: Self = StObject.set(x, "$min", js.undefined)
     
     @scala.inline
-    def set$mul(value: (PartialMapTo[T, Double]) with Dictionary[Double]): Self = StObject.set(x, "$mul", value.asInstanceOf[js.Any])
+    def set$mul(value: (PartialMapTo[T, Double]) & Dictionary[Double]): Self = StObject.set(x, "$mul", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$mulUndefined: Self = StObject.set(x, "$mul", js.undefined)
     
     @scala.inline
-    def set$pop(value: (PartialMapTo[T, `1` | `-1`]) with (Dictionary[`1` | `-1`])): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
+    def set$pop(value: (PartialMapTo[T, `1` | `-1`]) & (Dictionary[`1` | `-1`])): Self = StObject.set(x, "$pop", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$popUndefined: Self = StObject.set(x, "$pop", js.undefined)
     
     @scala.inline
-    def set$pull(value: ElementsOf[T] with Dictionary[_]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
+    def set$pull(value: ElementsOf[T] & Dictionary[js.Any]): Self = StObject.set(x, "$pull", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$pullAll(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
+    def set$pullAll(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$pullAll", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$pullAllUndefined: Self = StObject.set(x, "$pullAll", js.undefined)
@@ -133,22 +131,22 @@ object CurrentDate {
     def set$pullUndefined: Self = StObject.set(x, "$pull", js.undefined)
     
     @scala.inline
-    def set$push(value: PushModifier[T] with Dictionary[_]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
+    def set$push(value: PushModifier[T] & Dictionary[js.Any]): Self = StObject.set(x, "$push", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$pushUndefined: Self = StObject.set(x, "$push", js.undefined)
     
     @scala.inline
-    def set$rename(value: (PartialMapTo[T, String]) with Dictionary[String]): Self = StObject.set(x, "$rename", value.asInstanceOf[js.Any])
+    def set$rename(value: (PartialMapTo[T, String]) & Dictionary[String]): Self = StObject.set(x, "$rename", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$renameUndefined: Self = StObject.set(x, "$rename", js.undefined)
     
     @scala.inline
-    def set$set(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
+    def set$set(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$set", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def set$setOnInsert(value: Partial[T] with Dictionary[_]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
+    def set$setOnInsert(value: Partial[T] & Dictionary[js.Any]): Self = StObject.set(x, "$setOnInsert", value.asInstanceOf[js.Any])
     
     @scala.inline
     def set$setOnInsertUndefined: Self = StObject.set(x, "$setOnInsert", js.undefined)
@@ -158,7 +156,7 @@ object CurrentDate {
     
     @scala.inline
     def set$unset(
-      value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) with Dictionary[_]
+      value: (PartialMapTo[T, String | Boolean | `1` | typings.meteor.meteorNumbers.`0`]) & Dictionary[js.Any]
     ): Self = StObject.set(x, "$unset", value.asInstanceOf[js.Any])
     
     @scala.inline

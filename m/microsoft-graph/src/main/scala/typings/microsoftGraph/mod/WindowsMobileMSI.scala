@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsMobileMSI extends MobileLobApp {
+trait WindowsMobileMSI
+  extends StObject
+     with MobileLobApp {
   
   // The command line.
-  var commandLine: js.UndefOr[NullableOption[String]] = js.native
+  var commandLine: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * A boolean to control whether the app's version will be used to detect the app after it is installed on a device. Set
     * this to true for Windows Mobile MSI Line of Business (LoB) apps that use a self update feature.
     */
-  var ignoreVersionDetection: js.UndefOr[Boolean] = js.native
+  var ignoreVersionDetection: js.UndefOr[Boolean] = js.undefined
   
   // The product code.
-  var productCode: js.UndefOr[NullableOption[String]] = js.native
+  var productCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The product version of Windows Mobile MSI Line of Business (LoB) app.
-  var productVersion: js.UndefOr[NullableOption[String]] = js.native
+  var productVersion: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WindowsMobileMSI {
   

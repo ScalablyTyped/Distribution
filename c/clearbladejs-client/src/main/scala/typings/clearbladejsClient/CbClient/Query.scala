@@ -2,21 +2,19 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
-  var FILTERS: js.UndefOr[js.Array[QueryFilter]] = js.native
+  var FILTERS: js.UndefOr[js.Array[QueryFilter]] = js.undefined
   
-  var PAGENUM: js.UndefOr[Double] = js.native
+  var PAGENUM: js.UndefOr[Double] = js.undefined
   
-  var PAGESIZE: js.UndefOr[Double] = js.native
+  var PAGESIZE: js.UndefOr[Double] = js.undefined
   
-  var SELECTCOLUMNS: js.UndefOr[js.Array[String]] = js.native
+  var SELECTCOLUMNS: js.UndefOr[js.Array[String]] = js.undefined
   
-  var SORT: js.UndefOr[QuerySortDirections] = js.native
+  var SORT: js.UndefOr[QuerySortDirections] = js.undefined
 }
 object Query {
   

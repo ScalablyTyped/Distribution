@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePolicyGroupPlacementPolicy extends StObject {
   
   /** The number of availability domains instances will be spread across. If two instances are in different availability domain, they will not be put in the same low latency network */
-  var availabilityDomainCount: js.UndefOr[Double] = js.native
+  var availabilityDomainCount: js.UndefOr[Double] = js.undefined
   
   /** Specifies network collocation */
-  var collocation: js.UndefOr[String] = js.native
+  var collocation: js.UndefOr[String] = js.undefined
   
   /** Number of vms in this placement group */
-  var vmCount: js.UndefOr[Double] = js.native
+  var vmCount: js.UndefOr[Double] = js.undefined
 }
 object ResourcePolicyGroupPlacementPolicy {
   

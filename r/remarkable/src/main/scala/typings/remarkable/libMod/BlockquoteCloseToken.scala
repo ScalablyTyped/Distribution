@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.blockquote_close
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait BlockquoteCloseToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait BlockquoteCloseToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_BlockquoteCloseToken: blockquote_close = js.native
+  var type_BlockquoteCloseToken: blockquote_close
 }
 object BlockquoteCloseToken {
   
   @scala.inline
-  def apply(level: Double, `type`: blockquote_close): BlockquoteCloseToken = {
+  def apply(level: Double): BlockquoteCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("blockquote_close")
     __obj.asInstanceOf[BlockquoteCloseToken]
   }
   

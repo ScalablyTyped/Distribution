@@ -3,54 +3,52 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoRotateNumbers: MsoTriState = js.native
+  var AutoRotateNumbers: MsoTriState
   
-  var BaselineOffset: Double = js.native
+  var BaselineOffset: Double
   
-  var Bold: MsoTriState = js.native
+  var Bold: MsoTriState
   
-  val Color: ColorFormat = js.native
+  val Color: ColorFormat
   
-  val Embeddable: MsoTriState = js.native
+  val Embeddable: MsoTriState
   
-  val Embedded: MsoTriState = js.native
+  val Embedded: MsoTriState
   
-  var Emboss: MsoTriState = js.native
+  var Emboss: MsoTriState
   
-  var Italic: MsoTriState = js.native
+  var Italic: MsoTriState
   
-  var Name: String = js.native
+  var Name: String
   
-  var NameAscii: String = js.native
+  var NameAscii: String
   
-  var NameComplexScript: String = js.native
+  var NameComplexScript: String
   
-  var NameFarEast: String = js.native
+  var NameFarEast: String
   
-  var NameOther: String = js.native
+  var NameOther: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Font_typekey")
-  var PowerPointDotFont_typekey: Font = js.native
+  var PowerPointDotFont_typekey: Font
   
-  var Shadow: MsoTriState = js.native
+  var Shadow: MsoTriState
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Subscript: MsoTriState = js.native
+  var Subscript: MsoTriState
   
-  var Superscript: MsoTriState = js.native
+  var Superscript: MsoTriState
   
-  var Underline: MsoTriState = js.native
+  var Underline: MsoTriState
 }
 object Font {
   

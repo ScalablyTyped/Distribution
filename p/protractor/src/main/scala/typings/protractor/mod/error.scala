@@ -7,10 +7,13 @@ import typings.seleniumWebdriver.mod.error.MaybeLegacyResponse
 import typings.seleniumWebdriver.mod.error.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object error {
+  
+  @JSImport("protractor", "error")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Indicates a {@linkplain ./webdriver.WebElement#click click command} could
@@ -276,8 +279,8 @@ object error {
   class UnexpectedAlertOpenError ()
     extends typings.seleniumWebdriver.mod.error.UnexpectedAlertOpenError {
     def this(message: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], openAlertText: String) = this()
     def this(message: String, openAlertText: String) = this()
+    def this(message: Unit, openAlertText: String) = this()
   }
   
   /**
@@ -325,33 +328,28 @@ object error {
   /**
     * Checks a legacy response from the Selenium 2.0 wire protocol for an error.
     */
-  @JSImport("protractor", "error.checkLegacyResponse")
-  @js.native
-  def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = js.native
+  @scala.inline
+  def checkLegacyResponse(response: MaybeLegacyResponse): MaybeLegacyResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("checkLegacyResponse")(response.asInstanceOf[js.Any]).asInstanceOf[MaybeLegacyResponse]
   
   /**
     * Checks a response object from a server that adheres to the W3C WebDriver
     * protocol.
     */
-  @JSImport("protractor", "error.checkResponse")
-  @js.native
-  def checkResponse(data: Response): Response = js.native
+  @scala.inline
+  def checkResponse(data: Response): Response = ^.asInstanceOf[js.Dynamic].applyDynamic("checkResponse")(data.asInstanceOf[js.Any]).asInstanceOf[Response]
   
   /**
     * Lookup the err in table of errors.
     */
-  @JSImport("protractor", "error.encodeError")
-  @js.native
-  def encodeError(err: js.Any): Error = js.native
+  @scala.inline
+  def encodeError(err: js.Any): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeError")(err.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("protractor", "error.throwDecodedError")
-  @js.native
-  def throwDecodedError(data: String): scala.Nothing = js.native
+  @scala.inline
+  def throwDecodedError(data: String): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
   /**
     * Throws an error coded from the W3C protocol. A generic error will be thrown
     * if the provided `data` is not a valid encoded error.
     */
-  @JSImport("protractor", "error.throwDecodedError")
-  @js.native
-  def throwDecodedError(data: ErrorData): scala.Nothing = js.native
+  @scala.inline
+  def throwDecodedError(data: ErrorData): scala.Nothing = ^.asInstanceOf[js.Dynamic].applyDynamic("throwDecodedError")(data.asInstanceOf[js.Any]).asInstanceOf[scala.Nothing]
 }

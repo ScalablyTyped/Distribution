@@ -2,14 +2,12 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a political geographic division that matches the requested
   * query.
   */
-@js.native
 trait SchemaDivisionSearchResult extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaDivisionSearchResult extends StObject {
     * ocd-division/country:us/state:wy/cd:1, since Wyoming has only one
     * Congressional district.
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The name of the division.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The unique Open Civic Data identifier for this division.
     */
-  var ocdId: js.UndefOr[String] = js.native
+  var ocdId: js.UndefOr[String] = js.undefined
 }
 object SchemaDivisionSearchResult {
   

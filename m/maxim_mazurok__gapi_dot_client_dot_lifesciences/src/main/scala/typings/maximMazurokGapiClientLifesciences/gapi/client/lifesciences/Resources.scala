@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resources extends StObject {
   
   /** The list of regions allowed for VM allocation. If set, the `zones` field must not be set. */
-  var regions: js.UndefOr[js.Array[String]] = js.native
+  var regions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The virtual machine specification. */
-  var virtualMachine: js.UndefOr[VirtualMachine] = js.native
+  var virtualMachine: js.UndefOr[VirtualMachine] = js.undefined
   
   /** The list of zones allowed for VM allocation. If set, the `regions` field must not be set. */
-  var zones: js.UndefOr[js.Array[String]] = js.native
+  var zones: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Resources {
   

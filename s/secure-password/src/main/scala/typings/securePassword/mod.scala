@@ -4,14 +4,15 @@ import typings.node.Buffer
 import typings.securePassword.anon.Memlimit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("secure-password", JSImport.Namespace)
   @js.native
-  class ^ () extends SecurePassword {
+  class ^ ()
+    extends StObject
+       with SecurePassword {
     def this(opts: Memlimit) = this()
   }
   @JSImport("secure-password", JSImport.Namespace)

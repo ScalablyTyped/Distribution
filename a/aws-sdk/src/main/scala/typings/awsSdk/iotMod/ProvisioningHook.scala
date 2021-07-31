@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisioningHook extends StObject {
   
   /**
     * The payload that was sent to the target function.  Note: Only Lambda functions are currently supported.
     */
-  var payloadVersion: js.UndefOr[PayloadVersion] = js.native
+  var payloadVersion: js.UndefOr[PayloadVersion] = js.undefined
   
   /**
     * The ARN of the target function.  Note: Only Lambda functions are currently supported.
     */
-  var targetArn: TargetArn = js.native
+  var targetArn: TargetArn
 }
 object ProvisioningHook {
   

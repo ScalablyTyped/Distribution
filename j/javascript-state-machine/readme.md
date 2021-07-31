@@ -11,8 +11,8 @@ A finite state machine library
 | Full name          | javascript-state-machine |
 | Keywords           | finite state machine, state machine, server, client |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 3239483 |
+| # dependents       | 61 |
+| # downloads        | 4222429 |
 | # stars            | 19 |
 
 ## Links

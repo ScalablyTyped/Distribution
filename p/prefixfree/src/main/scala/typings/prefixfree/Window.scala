@@ -2,15 +2,13 @@ package typings.prefixfree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var PrefixFree: typings.prefixfree.PrefixFree = js.native
+  var PrefixFree: typings.prefixfree.PrefixFree
   
-  var StyleFix: typings.prefixfree.StyleFix = js.native
+  var StyleFix: typings.prefixfree.StyleFix
 }
 object Window {
   

@@ -3,7 +3,6 @@ package typings.phaser.global.Phaser
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Structs {
@@ -43,7 +42,8 @@ object Structs {
   @JSGlobal("Phaser.Structs.List")
   @js.native
   class List[T] protected ()
-    extends typings.phaser.Phaser.Structs.List[T] {
+    extends StObject
+       with typings.phaser.Phaser.Structs.List[T] {
     /**
       * 
       * @param parent The parent of this list.
@@ -65,7 +65,8 @@ object Structs {
   @JSGlobal("Phaser.Structs.Map")
   @js.native
   class Map[K, V] protected ()
-    extends typings.phaser.Phaser.Structs.Map[K, V] {
+    extends StObject
+       with typings.phaser.Phaser.Structs.Map[K, V] {
     /**
       * 
       * @param elements An optional array of key-value pairs to populate this Map with.
@@ -88,7 +89,8 @@ object Structs {
   @JSGlobal("Phaser.Structs.ProcessQueue")
   @js.native
   class ProcessQueue[T] ()
-    extends typings.phaser.Phaser.Structs.ProcessQueue[T]
+    extends StObject
+       with typings.phaser.Phaser.Structs.ProcessQueue[T]
   
   /**
     * RBush is a high-performance JavaScript library for 2D spatial indexing of points and rectangles.
@@ -105,7 +107,8 @@ object Structs {
   @JSGlobal("Phaser.Structs.RTree")
   @js.native
   class RTree ()
-    extends typings.phaser.Phaser.Structs.RTree
+    extends StObject
+       with typings.phaser.Phaser.Structs.RTree
   
   /**
     * A Set is a collection of unique elements.
@@ -117,7 +120,8 @@ object Structs {
     * @param elements An optional array of elements to insert into this Set.
     */
   class Set[T] ()
-    extends typings.phaser.Phaser.Structs.Set[T] {
+    extends StObject
+       with typings.phaser.Phaser.Structs.Set[T] {
     def this(elements: js.Array[T]) = this()
   }
   
@@ -138,42 +142,23 @@ object Structs {
     * @param parent The parent of this Size component. Can be any object with public `width` and `height` properties. Dimensions are clamped to keep them within the parent bounds where possible. Default null.
     */
   class Size ()
-    extends typings.phaser.Phaser.Structs.Size {
+    extends StObject
+       with typings.phaser.Phaser.Structs.Size {
     def this(width: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double) = this()
     def this(width: Double, height: Double) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], aspectMode: integer) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double, aspectMode: integer) = this()
-    def this(width: Double, height: js.UndefOr[scala.Nothing], aspectMode: integer) = this()
+    def this(width: Unit, height: Double) = this()
     def this(width: Double, height: Double, aspectMode: integer) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      aspectMode: js.UndefOr[scala.Nothing],
-      parent: js.Any
-    ) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      aspectMode: integer,
-      parent: js.Any
-    ) = this()
-    def this(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      aspectMode: js.UndefOr[scala.Nothing],
-      parent: js.Any
-    ) = this()
-    def this(width: js.UndefOr[scala.Nothing], height: Double, aspectMode: integer, parent: js.Any) = this()
-    def this(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      aspectMode: js.UndefOr[scala.Nothing],
-      parent: js.Any
-    ) = this()
-    def this(width: Double, height: js.UndefOr[scala.Nothing], aspectMode: integer, parent: js.Any) = this()
-    def this(width: Double, height: Double, aspectMode: js.UndefOr[scala.Nothing], parent: js.Any) = this()
+    def this(width: Double, height: Unit, aspectMode: integer) = this()
+    def this(width: Unit, height: Double, aspectMode: integer) = this()
+    def this(width: Unit, height: Unit, aspectMode: integer) = this()
+    def this(width: Double, height: Double, aspectMode: Unit, parent: js.Any) = this()
     def this(width: Double, height: Double, aspectMode: integer, parent: js.Any) = this()
+    def this(width: Double, height: Unit, aspectMode: Unit, parent: js.Any) = this()
+    def this(width: Double, height: Unit, aspectMode: integer, parent: js.Any) = this()
+    def this(width: Unit, height: Double, aspectMode: Unit, parent: js.Any) = this()
+    def this(width: Unit, height: Double, aspectMode: integer, parent: js.Any) = this()
+    def this(width: Unit, height: Unit, aspectMode: Unit, parent: js.Any) = this()
+    def this(width: Unit, height: Unit, aspectMode: integer, parent: js.Any) = this()
   }
   object Size {
     

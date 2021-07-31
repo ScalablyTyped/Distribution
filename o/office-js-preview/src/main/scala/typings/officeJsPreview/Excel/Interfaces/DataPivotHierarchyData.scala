@@ -17,11 +17,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Variance
 import typings.officeJsPreview.officeJsPreviewStrings.VarianceP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `dataPivotHierarchy.toJSON()`. */
-@js.native
 trait DataPivotHierarchyData extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var field: js.UndefOr[PivotFieldData] = js.native
+  var field: js.UndefOr[PivotFieldData] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -46,7 +44,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -54,7 +52,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[String] = js.native
+  var numberFormat: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -62,7 +60,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -70,7 +68,7 @@ trait DataPivotHierarchyData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showAs: js.UndefOr[ShowAsRule] = js.native
+  var showAs: js.UndefOr[ShowAsRule] = js.undefined
   
   /**
     *
@@ -80,7 +78,7 @@ trait DataPivotHierarchyData extends StObject {
     */
   var summarizeBy: js.UndefOr[
     AggregationFunction | Unknown_ | Automatic | Sum | Count | Average | Max | Min | Product | CountNumbers | StandardDeviation | StandardDeviationP | Variance | VarianceP
-  ] = js.native
+  ] = js.undefined
 }
 object DataPivotHierarchyData {
   

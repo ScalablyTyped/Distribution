@@ -5,10 +5,13 @@ import typings.fridaGum.ScheduledCallback
 import typings.fridaGum.ScriptRuntime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Script {
+  
+  @JSGlobal("Script")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * File name of the current script.
@@ -21,9 +24,8 @@ object Script {
     * Runs `func` on the next tick, i.e. when the current native thread exits
     * the JavaScript runtime. Any additional `params` are passed to it.
     */
-  @JSGlobal("Script.nextTick")
-  @js.native
-  def nextTick(func: ScheduledCallback, params: js.Any*): Unit = js.native
+  @scala.inline
+  def nextTick(func: ScheduledCallback, params: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("nextTick")(func.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Temporarily prevents the current script from being unloaded.
@@ -33,9 +35,8 @@ object Script {
     * Typically used in the callback of `WeakRef.bind()` when you need to
     * schedule cleanup on another thread.
     */
-  @JSGlobal("Script.pin")
-  @js.native
-  def pin(): Unit = js.native
+  @scala.inline
+  def pin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pin")().asInstanceOf[Unit]
   
   /**
     * Runtime being used.
@@ -54,12 +55,10 @@ object Script {
     * @param handler The handler to install, or `null` to uninstall a
     *                previously installed handler.
     */
-  @JSGlobal("Script.setGlobalAccessHandler")
-  @js.native
-  def setGlobalAccessHandler(): Unit = js.native
-  @JSGlobal("Script.setGlobalAccessHandler")
-  @js.native
-  def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = js.native
+  @scala.inline
+  def setGlobalAccessHandler(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")().asInstanceOf[Unit]
+  @scala.inline
+  def setGlobalAccessHandler(handler: GlobalAccessHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setGlobalAccessHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Source map of the current script.
@@ -71,7 +70,6 @@ object Script {
   /**
     * Reverses a previous `pin()` so the current script may be unloaded.
     */
-  @JSGlobal("Script.unpin")
-  @js.native
-  def unpin(): Unit = js.native
+  @scala.inline
+  def unpin(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unpin")().asInstanceOf[Unit]
 }

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Debugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepOverRequest extends StObject {
   
   /**
     * The skipList specifies location ranges that should be skipped on step over.
     */
-  var skipList: js.UndefOr[js.Array[LocationRange]] = js.native
+  var skipList: js.UndefOr[js.Array[LocationRange]] = js.undefined
 }
 object StepOverRequest {
   

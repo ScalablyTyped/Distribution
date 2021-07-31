@@ -2,14 +2,12 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-popup.SemanticUI.Popup.MetadataSettings._Impl, 'offset'> */
-@js.native
 trait PickImploffsetOffset extends StObject {
   
-  var offset: String = js.native
+  var offset: String
 }
 object PickImploffsetOffset {
   

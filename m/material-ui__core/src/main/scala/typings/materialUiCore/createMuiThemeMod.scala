@@ -21,17 +21,18 @@ import typings.materialUiCore.zIndexMod.ZIndex
 import typings.materialUiCore.zIndexMod.ZIndexOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMuiThemeMod {
   
-  @JSImport("@material-ui/core/styles/createMuiTheme", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createMuiTheme", JSImport.Namespace)
   @js.native
-  def default(): Theme = js.native
-  @JSImport("@material-ui/core/styles/createMuiTheme", JSImport.Default)
-  @js.native
-  def default(options: ThemeOptions): Theme = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Theme]
+  @scala.inline
+  def default(options: ThemeOptions): Theme = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Theme]
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.ltr
@@ -47,32 +48,31 @@ object createMuiThemeMod {
     def rtl: typings.materialUiCore.materialUiCoreStrings.rtl = "rtl".asInstanceOf[typings.materialUiCore.materialUiCoreStrings.rtl]
   }
   
-  @js.native
   trait Theme extends StObject {
     
-    var breakpoints: Breakpoints = js.native
+    var breakpoints: Breakpoints
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var mixins: Mixins = js.native
+    var mixins: Mixins
     
-    var overrides: js.UndefOr[Overrides] = js.native
+    var overrides: js.UndefOr[Overrides] = js.undefined
     
-    var palette: Palette = js.native
+    var palette: Palette
     
-    var props: js.UndefOr[ComponentsProps] = js.native
+    var props: js.UndefOr[ComponentsProps] = js.undefined
     
-    var shadows: Shadows = js.native
+    var shadows: Shadows
     
-    var shape: Shape = js.native
+    var shape: Shape
     
-    var spacing: Spacing = js.native
+    var spacing: Spacing
     
-    var transitions: Transitions = js.native
+    var transitions: Transitions
     
-    var typography: Typography = js.native
+    var typography: Typography
     
-    var zIndex: ZIndex = js.native
+    var zIndex: ZIndex
   }
   object Theme {
     
@@ -143,32 +143,31 @@ object createMuiThemeMod {
     }
   }
   
-  @js.native
   trait ThemeOptions extends StObject {
     
-    var breakpoints: js.UndefOr[BreakpointsOptions] = js.native
+    var breakpoints: js.UndefOr[BreakpointsOptions] = js.undefined
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var mixins: js.UndefOr[MixinsOptions] = js.native
+    var mixins: js.UndefOr[MixinsOptions] = js.undefined
     
-    var overrides: js.UndefOr[Overrides] = js.native
+    var overrides: js.UndefOr[Overrides] = js.undefined
     
-    var palette: js.UndefOr[PaletteOptions] = js.native
+    var palette: js.UndefOr[PaletteOptions] = js.undefined
     
-    var props: js.UndefOr[ComponentsProps] = js.native
+    var props: js.UndefOr[ComponentsProps] = js.undefined
     
-    var shadows: js.UndefOr[Shadows] = js.native
+    var shadows: js.UndefOr[Shadows] = js.undefined
     
-    var shape: js.UndefOr[ShapeOptions] = js.native
+    var shape: js.UndefOr[ShapeOptions] = js.undefined
     
-    var spacing: js.UndefOr[SpacingOptions] = js.native
+    var spacing: js.UndefOr[SpacingOptions] = js.undefined
     
-    var transitions: js.UndefOr[TransitionsOptions] = js.native
+    var transitions: js.UndefOr[TransitionsOptions] = js.undefined
     
-    var typography: js.UndefOr[TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions])] = js.native
+    var typography: js.UndefOr[TypographyOptions | (js.Function1[/* palette */ Palette, TypographyOptions])] = js.undefined
     
-    var zIndex: js.UndefOr[ZIndexOptions] = js.native
+    var zIndex: js.UndefOr[ZIndexOptions] = js.undefined
   }
   object ThemeOptions {
     

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The general concepts referenced or alluded to in the analyzed text. */
-@js.native
 trait ConceptsResult extends StObject {
   
   /** Link to the corresponding DBpedia resource. */
-  var dbpedia_resource: js.UndefOr[String] = js.native
+  var dbpedia_resource: js.UndefOr[String] = js.undefined
   
   /** Relevance score between 0 and 1. Higher scores indicate greater relevance. */
-  var relevance: js.UndefOr[Double] = js.native
+  var relevance: js.UndefOr[Double] = js.undefined
   
   /** Name of the concept. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ConceptsResult {
   

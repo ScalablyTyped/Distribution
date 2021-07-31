@@ -9,65 +9,66 @@ import typings.apidoc.anon.PostFilter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("apidoc", "createDoc")
+  @JSImport("apidoc", JSImport.Namespace)
   @js.native
-  def createDoc(options: DocOptions): Boolean | Data = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createDoc(options: DocOptions): Boolean | Data = ^.asInstanceOf[js.Dynamic].applyDynamic("createDoc")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean | Data]
+  
   trait DocOptions extends StObject {
     
-    var apiprivate: js.UndefOr[Boolean] = js.native
+    var apiprivate: js.UndefOr[Boolean] = js.undefined
     
-    var colorize: js.UndefOr[Boolean] = js.native
+    var colorize: js.UndefOr[Boolean] = js.undefined
     
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
-    var copyDefinitions: js.UndefOr[Boolean] = js.native
+    var copyDefinitions: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var excludeFilters: js.UndefOr[js.Array[String]] = js.native
+    var excludeFilters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filterBy: js.UndefOr[String | js.Array[String]] = js.native
+    var filterBy: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var filters: js.UndefOr[(Record[String, String]) | StringDictionary[PostFilter]] = js.native
+    var filters: js.UndefOr[(Record[String, String]) | StringDictionary[PostFilter]] = js.undefined
     
-    var includeFilters: js.UndefOr[js.Array[String]] = js.native
+    var includeFilters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var languages: js.UndefOr[(Record[String, String]) | StringDictionary[DocBlocksRegExp]] = js.native
+    var languages: js.UndefOr[(Record[String, String]) | StringDictionary[DocBlocksRegExp]] = js.undefined
     
-    var lineEnding: js.UndefOr[String] = js.native
+    var lineEnding: js.UndefOr[String] = js.undefined
     
-    var markdown: js.UndefOr[Boolean] = js.native
+    var markdown: js.UndefOr[Boolean] = js.undefined
     
-    var parse: js.UndefOr[Boolean] = js.native
+    var parse: js.UndefOr[Boolean] = js.undefined
     
-    var parsers: js.UndefOr[(Record[String, String]) | GetGroup] = js.native
+    var parsers: js.UndefOr[(Record[String, String]) | GetGroup] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var simulate: js.UndefOr[Boolean] = js.native
+    var simulate: js.UndefOr[Boolean] = js.undefined
     
-    var single: js.UndefOr[Boolean] = js.native
+    var single: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var templateSingleFile: js.UndefOr[String] = js.native
+    var templateSingleFile: js.UndefOr[String] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var workers: js.UndefOr[(Record[String, String]) | StringDictionary[js.Any]] = js.native
+    var workers: js.UndefOr[(Record[String, String]) | StringDictionary[js.Any]] = js.undefined
   }
   object DocOptions {
     
@@ -235,22 +236,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedFile extends StObject {
     
-    var blocks: js.Array[Global] = js.native
+    var blocks: js.Array[Global]
     
-    var extension: String = js.native
+    var `extension`: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var src: String = js.native
+    var src: String
   }
   object ParsedFile {
     
     @scala.inline
-    def apply(blocks: js.Array[Global], extension: String, filename: String, src: String): ParsedFile = {
-      val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+    def apply(blocks: js.Array[Global], `extension`: String, filename: String, src: String): ParsedFile = {
+      val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ParsedFile]
     }
     

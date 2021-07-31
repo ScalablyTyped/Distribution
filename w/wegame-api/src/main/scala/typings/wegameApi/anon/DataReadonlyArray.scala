@@ -3,13 +3,11 @@ package typings.wegameApi.anon
 import typings.wegameApi.wx.types.UserInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataReadonlyArray extends StObject {
   
-  var data: js.Array[UserInfo] = js.native
+  var data: js.Array[UserInfo]
 }
 object DataReadonlyArray {
   

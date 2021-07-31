@@ -2,37 +2,35 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesDefaultsLabels extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ChartSeriesDefaultsLabelsBorder] = js.native
+  var border: js.UndefOr[ChartSeriesDefaultsLabelsBorder] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[ChartSeriesDefaultsLabelsFrom] = js.native
+  var from: js.UndefOr[ChartSeriesDefaultsLabelsFrom] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartSeriesDefaultsLabelsMargin] = js.native
+  var margin: js.UndefOr[Double | ChartSeriesDefaultsLabelsMargin] = js.undefined
   
-  var padding: js.UndefOr[Double | ChartSeriesDefaultsLabelsPadding] = js.native
+  var padding: js.UndefOr[Double | ChartSeriesDefaultsLabelsPadding] = js.undefined
   
-  var rotation: js.UndefOr[String | Double] = js.native
+  var rotation: js.UndefOr[String | Double] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var to: js.UndefOr[ChartSeriesDefaultsLabelsTo] = js.native
+  var to: js.UndefOr[ChartSeriesDefaultsLabelsTo] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
 }
 object ChartSeriesDefaultsLabels {
   

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PubsubLocation extends StObject {
   
   /** Indicates whether the pipeline allows late-arriving data. */
-  var dropLateData: js.UndefOr[Boolean] = js.native
+  var dropLateData: js.UndefOr[Boolean] = js.undefined
   
   /** If set, contains a pubsub label from which to extract record ids. If left empty, record deduplication will be strictly best effort. */
-  var idLabel: js.UndefOr[String] = js.native
+  var idLabel: js.UndefOr[String] = js.undefined
   
   /** A pubsub subscription, in the form of "pubsub.googleapis.com/subscriptions//" */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /** If set, contains a pubsub label from which to extract record timestamps. If left empty, record timestamps will be generated upon arrival. */
-  var timestampLabel: js.UndefOr[String] = js.native
+  var timestampLabel: js.UndefOr[String] = js.undefined
   
   /** A pubsub topic, in the form of "pubsub.googleapis.com/topics//" */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
   
   /** If set, specifies the pubsub subscription that will be used for tracking custom time timestamps for watermark estimation. */
-  var trackingSubscription: js.UndefOr[String] = js.native
+  var trackingSubscription: js.UndefOr[String] = js.undefined
   
   /** If true, then the client has requested to get pubsub attributes. */
-  var withAttributes: js.UndefOr[Boolean] = js.native
+  var withAttributes: js.UndefOr[Boolean] = js.undefined
 }
 object PubsubLocation {
   

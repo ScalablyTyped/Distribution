@@ -4,74 +4,74 @@ import typings.senchaTouch.Ext.IEvented
 import typings.senchaTouch.Ext.scroll.IView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IScrollView extends IEvented {
+trait IScrollView
+  extends StObject
+     with IEvented {
   
   /** [Method] Returns the value of cls
     * @returns String
     */
-  var getCls: js.UndefOr[js.Function0[String]] = js.native
+  var getCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of element
     * @returns Object
     */
-  var getElement: js.UndefOr[js.Function0[_]] = js.native
+  var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of indicators
     * @returns Object
     */
-  var getIndicators: js.UndefOr[js.Function0[_]] = js.native
+  var getIndicators: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of indicatorsHidingDelay
     * @returns Number
     */
-  var getIndicatorsHidingDelay: js.UndefOr[js.Function0[Double]] = js.native
+  var getIndicatorsHidingDelay: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of indicatorsUi
     * @returns String
     */
-  var getIndicatorsUi: js.UndefOr[js.Function0[String]] = js.native
+  var getIndicatorsUi: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the scroller instance in this view
     * @returns Ext.scroll.View The scroller
     */
-  var getScroller: js.UndefOr[js.Function0[IView]] = js.native
+  var getScroller: js.UndefOr[js.Function0[IView]] = js.undefined
   
   /** [Config Option] (String) */
-  var indicatorsUi: js.UndefOr[String] = js.native
+  var indicatorsUi: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of cls
     * @param cls String The new value.
     */
-  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.native
+  var setCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of element
     * @param element Object The new value.
     */
-  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+  var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicators
     * @param indicators Object The new value.
     */
-  var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.native
+  var setIndicators: js.UndefOr[js.Function1[/* indicators */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicatorsHidingDelay
     * @param indicatorsHidingDelay Number The new value.
     */
-  var setIndicatorsHidingDelay: js.UndefOr[js.Function1[/* indicatorsHidingDelay */ js.UndefOr[Double], Unit]] = js.native
+  var setIndicatorsHidingDelay: js.UndefOr[js.Function1[/* indicatorsHidingDelay */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of indicatorsUi
     * @param indicatorsUi String The new value.
     */
-  var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[String], Unit]] = js.native
+  var setIndicatorsUi: js.UndefOr[js.Function1[/* indicatorsUi */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of scroller
     * @param scroller Object The new value.
     */
-  var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.native
+  var setScroller: js.UndefOr[js.Function1[/* scroller */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IScrollView {
   
@@ -91,13 +91,13 @@ object IScrollView {
     def setGetClsUndefined: Self = StObject.set(x, "getCls", js.undefined)
     
     @scala.inline
-    def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+    def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
     
     @scala.inline
-    def setGetIndicators(value: () => _): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
+    def setGetIndicators(value: () => js.Any): Self = StObject.set(x, "getIndicators", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetIndicatorsHidingDelay(value: () => Double): Self = StObject.set(x, "getIndicatorsHidingDelay", js.Any.fromFunction0(value))

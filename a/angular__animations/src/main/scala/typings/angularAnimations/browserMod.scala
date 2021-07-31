@@ -5,10 +5,13 @@ import typings.angularAnimations.mod.AnimationMetadata
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserMod {
+  
+  @JSImport("@angular/animations/browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/animations/browser", "AnimationDriver")
   @js.native
@@ -122,9 +125,8 @@ object browserMod {
   class ɵWebAnimationsStyleNormalizer ()
     extends typings.angularAnimations.browserBrowserMod.ɵWebAnimationsStyleNormalizer
   
-  @JSImport("@angular/animations/browser", "\u0275allowPreviousPlayerStylesMerge")
-  @js.native
-  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = js.native
+  @scala.inline
+  def ɵallowPreviousPlayerStylesMerge(duration: Double, delay: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275allowPreviousPlayerStylesMerge")(duration.asInstanceOf[js.Any], delay.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @JSImport("@angular/animations/browser", "\u0275angular_packages_animations_browser_browser_a")
   @js.native
@@ -149,23 +151,18 @@ object browserMod {
     def initialStylesByElement_=(x: WeakMap[js.Any, StringDictionary[js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("initialStylesByElement")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@angular/animations/browser", "\u0275containsElement")
-  @js.native
-  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = js.native
+  @scala.inline
+  def ɵcontainsElement(elm1: js.Any, elm2: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275containsElement")(elm1.asInstanceOf[js.Any], elm2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser", "\u0275invokeQuery")
-  @js.native
-  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[_] = js.native
+  @scala.inline
+  def ɵinvokeQuery(element: js.Any, selector: String, multi: Boolean): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275invokeQuery")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], multi.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@angular/animations/browser", "\u0275matchesElement")
-  @js.native
-  def ɵmatchesElement(element: js.Any, selector: String): Boolean = js.native
+  @scala.inline
+  def ɵmatchesElement(element: js.Any, selector: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("\u0275matchesElement")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser", "\u0275supportsWebAnimations")
-  @js.native
-  def ɵsupportsWebAnimations(): Boolean = js.native
+  @scala.inline
+  def ɵsupportsWebAnimations(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275supportsWebAnimations")().asInstanceOf[Boolean]
   
-  @JSImport("@angular/animations/browser", "\u0275validateStyleProperty")
-  @js.native
-  def ɵvalidateStyleProperty(prop: String): Boolean = js.native
+  @scala.inline
+  def ɵvalidateStyleProperty(prop: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275validateStyleProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

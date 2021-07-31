@@ -2,36 +2,34 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A SourceContext referring to a Gerrit project.
   */
-@js.native
 trait SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext extends StObject {
   
   /**
     * An alias, which may be a branch or tag.
     */
-  var aliasContext: js.UndefOr[SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext] = js.native
+  var aliasContext: js.UndefOr[SchemaGoogleDevtoolsContaineranalysisV1alpha1AliasContext] = js.undefined
   
   /**
     * The full project name within the host. Projects may be nested, so
     * &quot;project/subproject&quot; is a valid project name. The &quot;repo
     * name&quot; is the hostURI/project.
     */
-  var gerritProject: js.UndefOr[String] = js.native
+  var gerritProject: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of a running Gerrit instance.
     */
-  var hostUri: js.UndefOr[String] = js.native
+  var hostUri: js.UndefOr[String] = js.undefined
   
   /**
     * A revision (commit) ID.
     */
-  var revisionId: js.UndefOr[String] = js.native
+  var revisionId: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsContaineranalysisV1alpha1GerritSourceContext {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Source extends StObject {
   
   /**
     * Name of the S3 bucket.
     */
-  var bucketName: BucketName = js.native
+  var bucketName: BucketName
   
   /**
     * Key name of the bucket object that contains your unsigned code.
     */
-  var key: Key_ = js.native
+  var key: Key_
   
   /**
     * Version of your source image in your version enabled S3 bucket.
     */
-  var version: Version = js.native
+  var version: Version
 }
 object S3Source {
   

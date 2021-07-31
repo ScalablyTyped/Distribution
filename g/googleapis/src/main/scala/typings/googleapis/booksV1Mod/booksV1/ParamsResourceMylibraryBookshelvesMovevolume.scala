@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceMylibraryBookshelvesMovevolume extends StandardParameters {
+trait ParamsResourceMylibraryBookshelvesMovevolume
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * ID of bookshelf with the volume.
     */
-  var shelf: js.UndefOr[String] = js.native
+  var shelf: js.UndefOr[String] = js.undefined
   
   /**
     * String to identify the originator of this request.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * ID of volume to move.
     */
-  var volumeId: js.UndefOr[String] = js.native
+  var volumeId: js.UndefOr[String] = js.undefined
   
   /**
     * Position on shelf to move the item (0 puts the item before the current
     * first item, 1 puts it between the first and the second and so on.)
     */
-  var volumePosition: js.UndefOr[Double] = js.native
+  var volumePosition: js.UndefOr[Double] = js.undefined
 }
 object ParamsResourceMylibraryBookshelvesMovevolume {
   

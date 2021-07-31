@@ -2,17 +2,15 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Confirm extends StObject {
   
-  var confirm: Boolean = js.native
+  var confirm: Boolean
   
-  var options: Mandatory = js.native
+  var options: Mandatory
   
-  var vhost: String = js.native
+  var vhost: String
 }
 object Confirm {
   

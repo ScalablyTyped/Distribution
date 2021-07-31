@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONMappingParameters extends StObject {
   
   /**
     * Path to the top-level parent that contains the records.
     */
-  var RecordRowPath: typings.awsSdk.kinesisanalyticsMod.RecordRowPath = js.native
+  var RecordRowPath: typings.awsSdk.kinesisanalyticsMod.RecordRowPath
 }
 object JSONMappingParameters {
   

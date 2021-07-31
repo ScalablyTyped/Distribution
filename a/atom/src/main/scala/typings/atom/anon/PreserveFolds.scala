@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreserveFolds extends StObject {
   
-  var preserveFolds: js.UndefOr[Boolean] = js.native
+  var preserveFolds: js.UndefOr[Boolean] = js.undefined
   
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object PreserveFolds {
   

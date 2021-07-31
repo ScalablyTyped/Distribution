@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyDisplayOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait PropertyDisplayOptions extends StObject {
     * the display name given was 'priority', then the user sees 'priority : 1' in the search results which provides clear context to search users. This is OPTIONAL; if not given, only the
     * property values are displayed. The maximum length is 64 characters.
     */
-  var displayLabel: js.UndefOr[String] = js.native
+  var displayLabel: js.UndefOr[String] = js.undefined
 }
 object PropertyDisplayOptions {
   

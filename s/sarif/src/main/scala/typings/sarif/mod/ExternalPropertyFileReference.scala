@@ -2,31 +2,29 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExternalPropertyFileReference extends StObject {
   
   /**
     * A stable, unique identifer for the external property file in the form of a GUID.
     */
-  var guid: js.UndefOr[String] = js.native
+  var guid: js.UndefOr[String] = js.undefined
   
   /**
     * A non-negative integer specifying the number of items contained in the external property file.
     */
-  var itemCount: js.UndefOr[Double] = js.native
+  var itemCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the external property file.
     */
-  var location: js.UndefOr[ArtifactLocation] = js.native
+  var location: js.UndefOr[ArtifactLocation] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the external property file.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object ExternalPropertyFileReference {
   

@@ -27,11 +27,9 @@ import typings.semanticUiDropdown.semanticUiDropdownStrings.upward
 import typings.semanticUiDropdown.semanticUiDropdownStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl, keyof semantic-ui-dropdown.SemanticUI.DropdownSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
   var action: js.UndefOr[
@@ -42,65 +40,65 @@ trait PartialPickImplkeyofImpl extends StObject {
       /* element */ JQuery, 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var allowAdditions: js.UndefOr[Boolean] = js.native
+  var allowAdditions: js.UndefOr[Boolean] = js.undefined
   
-  var allowCategorySelection: js.UndefOr[Boolean] = js.native
+  var allowCategorySelection: js.UndefOr[Boolean] = js.undefined
   
-  var allowReselection: js.UndefOr[Boolean] = js.native
+  var allowReselection: js.UndefOr[Boolean] = js.undefined
   
-  var allowTab: js.UndefOr[Boolean] = js.native
+  var allowTab: js.UndefOr[Boolean] = js.undefined
   
-  var apiSettings: js.UndefOr[`false` | ApiSettings] = js.native
+  var apiSettings: js.UndefOr[`false` | ApiSettings] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var context: js.UndefOr[String | JQuery] = js.native
+  var context: js.UndefOr[String | JQuery] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var delay: js.UndefOr[DelaySettings] = js.native
+  var delay: js.UndefOr[DelaySettings] = js.undefined
   
-  var direction: js.UndefOr[auto | upward | downward] = js.native
+  var direction: js.UndefOr[auto | upward | downward] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var fields: js.UndefOr[FieldsSettings] = js.native
+  var fields: js.UndefOr[FieldsSettings] = js.undefined
   
-  var filterRemoteData: js.UndefOr[Boolean] = js.native
+  var filterRemoteData: js.UndefOr[Boolean] = js.undefined
   
-  var forceSelection: js.UndefOr[Boolean] = js.native
+  var forceSelection: js.UndefOr[Boolean] = js.undefined
   
-  var fullTextSearch: js.UndefOr[Boolean | exact] = js.native
+  var fullTextSearch: js.UndefOr[Boolean | exact] = js.undefined
   
-  var glyphWidth: js.UndefOr[Double] = js.native
+  var glyphWidth: js.UndefOr[Double] = js.undefined
   
-  var hideAdditions: js.UndefOr[Boolean] = js.native
+  var hideAdditions: js.UndefOr[Boolean] = js.undefined
   
-  var keepOnScreen: js.UndefOr[Boolean] = js.native
+  var keepOnScreen: js.UndefOr[Boolean] = js.undefined
   
-  var keys: js.UndefOr[KeySettings] = js.native
+  var keys: js.UndefOr[KeySettings] = js.undefined
   
-  var label: js.UndefOr[LabelSettings] = js.native
+  var label: js.UndefOr[LabelSettings] = js.undefined
   
-  var `match`: js.UndefOr[both | value | text] = js.native
+  var `match`: js.UndefOr[both | value | text] = js.undefined
   
-  var maxSelections: js.UndefOr[`false` | Double] = js.native
+  var maxSelections: js.UndefOr[`false` | Double] = js.undefined
   
-  var message: js.UndefOr[MessageSettings] = js.native
+  var message: js.UndefOr[MessageSettings] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var minCharacters: js.UndefOr[Double] = js.native
+  var minCharacters: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[String] = js.native
+  var on: js.UndefOr[String] = js.undefined
   
   var onAdd: js.UndefOr[
     js.ThisFunction3[
@@ -110,23 +108,23 @@ trait PartialPickImplkeyofImpl extends StObject {
       /* $addedChoice */ JQuery, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onChange: js.UndefOr[
     js.ThisFunction3[/* this */ JQuery, /* value */ js.Any, /* text */ String, /* $choice */ JQuery, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]] = js.undefined
   
   var onLabelCreate: js.UndefOr[
     js.ThisFunction2[/* this */ JQuery, /* value */ js.Any, /* text */ String, JQuery]
-  ] = js.native
+  ] = js.undefined
   
-  var onLabelRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit]] = js.native
+  var onLabelRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* value */ js.Any, `false` | Unit]] = js.undefined
   
-  var onLabelSelect: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]] = js.native
+  var onLabelSelect: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $selectedLabels */ JQuery, Unit]] = js.undefined
   
-  var onNoResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit]] = js.native
+  var onNoResults: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* searchValue */ js.Any, Unit]] = js.undefined
   
   var onRemove: js.UndefOr[
     js.ThisFunction3[
@@ -136,37 +134,37 @@ trait PartialPickImplkeyofImpl extends StObject {
       /* $removedChoice */ JQuery, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction0[/* this */ JQuery, `false` | Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[auto | value | `false`] = js.native
+  var placeholder: js.UndefOr[auto | value | `false`] = js.undefined
   
-  var preserveHTML: js.UndefOr[Boolean] = js.native
+  var preserveHTML: js.UndefOr[Boolean] = js.undefined
   
-  var regExp: js.UndefOr[RegExpSettings] = js.native
+  var regExp: js.UndefOr[RegExpSettings] = js.undefined
   
-  var saveRemoteData: js.UndefOr[Boolean] = js.native
+  var saveRemoteData: js.UndefOr[Boolean] = js.undefined
   
-  var selectOnKeydown: js.UndefOr[Boolean] = js.native
+  var selectOnKeydown: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var showOnFocus: js.UndefOr[Boolean] = js.native
+  var showOnFocus: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var sortSelect: js.UndefOr[Boolean] = js.native
+  var sortSelect: js.UndefOr[Boolean] = js.undefined
   
-  var transition: js.UndefOr[auto | String] = js.native
+  var transition: js.UndefOr[auto | String] = js.undefined
   
-  var useLabels: js.UndefOr[Boolean] = js.native
+  var useLabels: js.UndefOr[Boolean] = js.undefined
   
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

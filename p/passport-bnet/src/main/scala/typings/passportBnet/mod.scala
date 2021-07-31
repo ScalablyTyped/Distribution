@@ -10,17 +10,21 @@ import typings.passportOauth2.mod.VerifyFunction
 import typings.passportOauth2.mod.VerifyFunctionWithRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("passport-bnet", JSImport.Namespace)
   @js.native
-  class ^ protected () extends OAuth2Strategy {
+  class ^ protected ()
+    extends StObject
+       with OAuth2Strategy {
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
   }
+  @JSImport("passport-bnet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("passport-bnet", "Strategy")
   @js.native
@@ -30,48 +34,48 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("passport-bnet", "Strategy")
   @js.native
-  class StrategyCls protected () extends OAuth2Strategy {
+  class StrategyCls protected ()
+    extends StObject
+       with OAuth2Strategy {
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
   }
   
-  @JSImport("passport-bnet", "getHost")
-  @js.native
-  def getHost(region: String): String = js.native
+  @scala.inline
+  def getHost(region: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getHost")(region.asInstanceOf[js.Any]).asInstanceOf[String]
   
   // passport--bnet accepts any options that passport-oauth2 accepts, but add the option region and makes authorizationURL and tokenURL optional
   /* Inlined parent std.Partial<passport-oauth2.passport-oauth2._StrategyOptionsBase> */
-  @js.native
   trait BaseBnetOptions extends StObject {
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object BaseBnetOptions {
     
@@ -175,10 +179,11 @@ object mod {
   
   type BnetStrategy = typings.passportOauth2.mod.Strategy
   
-  @js.native
-  trait StrategyOptions extends BaseBnetOptions {
+  trait StrategyOptions
+    extends StObject
+       with BaseBnetOptions {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOptions {
     
@@ -199,16 +204,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends BaseBnetOptions {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with BaseBnetOptions {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(clientID: String, clientSecret: String, passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(clientID: String, clientSecret: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     

@@ -6,10 +6,13 @@ import typings.std.Error
 import typings.std.Int32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonMod {
+  
+  @JSImport("piscina/dist/src/common", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object commonState {
     
@@ -25,22 +28,19 @@ object commonMod {
     
     @JSImport("piscina/dist/src/common", "commonState.workerData")
     @js.native
-    def workerData: js.UndefOr[scala.Nothing] = js.native
+    def workerData: Unit = js.native
     @scala.inline
-    def workerData_=(x: js.UndefOr[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerData")(x.asInstanceOf[js.Any])
+    def workerData_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workerData")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("piscina/dist/src/common", "isMovable")
-  @js.native
-  def isMovable(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isMovable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMovable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("piscina/dist/src/common", "isTaskQueue")
-  @js.native
-  def isTaskQueue(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTaskQueue(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTaskQueue")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("piscina/dist/src/common", "isTransferable")
-  @js.native
-  def isTransferable(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTransferable(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTransferable")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("piscina/dist/src/common", "kFieldCount")
   @js.native
@@ -66,20 +66,18 @@ object commonMod {
   @js.native
   val kValue: js.Symbol = js.native
   
-  @JSImport("piscina/dist/src/common", "markMovable")
-  @js.native
-  def markMovable(value: js.Object): Unit = js.native
+  @scala.inline
+  def markMovable(value: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("markMovable")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait ReadyMessage extends StObject {
     
-    var ready: `true` = js.native
+    var ready: `true`
   }
   object ReadyMessage {
     
     @scala.inline
-    def apply(ready: `true`): ReadyMessage = {
-      val __obj = js.Dynamic.literal(ready = ready.asInstanceOf[js.Any])
+    def apply(): ReadyMessage = {
+      val __obj = js.Dynamic.literal(ready = true)
       __obj.asInstanceOf[ReadyMessage]
     }
     
@@ -91,14 +89,13 @@ object commonMod {
     }
   }
   
-  @js.native
   trait RequestMessage extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var task: js.Any = js.native
+    var task: js.Any
     
-    var taskId: Double = js.native
+    var taskId: Double
   }
   object RequestMessage {
     
@@ -122,20 +119,19 @@ object commonMod {
     }
   }
   
-  @js.native
   trait ResponseMessage extends StObject {
     
-    var error: Error | Null = js.native
+    var error: Error | Null
     
-    var result: js.Any = js.native
+    var result: js.Any
     
-    var taskId: Double = js.native
+    var taskId: Double
   }
   object ResponseMessage {
     
     @scala.inline
     def apply(result: js.Any, taskId: Double): ResponseMessage = {
-      val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(result = result.asInstanceOf[js.Any], taskId = taskId.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[ResponseMessage]
     }
     
@@ -156,24 +152,23 @@ object commonMod {
     }
   }
   
-  @js.native
   trait StartupMessage extends StObject {
     
-    var filename: String | Null = js.native
+    var filename: String | Null
     
-    var niceIncrement: Double = js.native
+    var niceIncrement: Double
     
-    var port: MessagePort = js.native
+    var port: MessagePort
     
-    var sharedBuffer: Int32Array = js.native
+    var sharedBuffer: Int32Array
     
-    var useAtomics: Boolean = js.native
+    var useAtomics: Boolean
   }
   object StartupMessage {
     
     @scala.inline
     def apply(niceIncrement: Double, port: MessagePort, sharedBuffer: Int32Array, useAtomics: Boolean): StartupMessage = {
-      val __obj = js.Dynamic.literal(niceIncrement = niceIncrement.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], sharedBuffer = sharedBuffer.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(niceIncrement = niceIncrement.asInstanceOf[js.Any], port = port.asInstanceOf[js.Any], sharedBuffer = sharedBuffer.asInstanceOf[js.Any], useAtomics = useAtomics.asInstanceOf[js.Any], filename = null)
       __obj.asInstanceOf[StartupMessage]
     }
     
@@ -203,16 +198,15 @@ object commonMod {
   @js.native
   trait Task extends StObject
   
-  @js.native
   trait TaskQueue extends StObject {
     
-    def push(task: Task): Unit = js.native
+    def push(task: Task): Unit
     
-    def remove(task: Task): Unit = js.native
+    def remove(task: Task): Unit
     
-    def shift(): Task | Null = js.native
+    def shift(): Task | Null
     
-    val size: Double = js.native
+    val size: Double
   }
   object TaskQueue {
     

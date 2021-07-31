@@ -2,19 +2,17 @@ package typings.libratoNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RequestCountKey extends StObject {
     
-    var requestCountKey: js.UndefOr[String] = js.native
+    var requestCountKey: js.UndefOr[String] = js.undefined
     
-    var responseTimeKey: js.UndefOr[String] = js.native
+    var responseTimeKey: js.UndefOr[String] = js.undefined
     
-    var statusCodeKey: js.UndefOr[String] = js.native
+    var statusCodeKey: js.UndefOr[String] = js.undefined
   }
   object RequestCountKey {
     

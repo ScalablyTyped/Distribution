@@ -6,33 +6,31 @@ import typings.hlsParser.mod.types.MediaInitializationSection
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Byterange extends StObject {
   
-  var byterange: js.UndefOr[typings.hlsParser.mod.Byterange] = js.native
+  var byterange: js.UndefOr[typings.hlsParser.mod.Byterange] = js.undefined
   
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
-  var discontinuity: js.UndefOr[Boolean] = js.native
+  var discontinuity: js.UndefOr[Boolean] = js.undefined
   
-  var discontinuitySequence: Double = js.native
+  var discontinuitySequence: Double
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
   
-  var map: js.UndefOr[MediaInitializationSection] = js.native
+  var map: js.UndefOr[MediaInitializationSection] = js.undefined
   
-  var mediaSequenceNumber: Double = js.native
+  var mediaSequenceNumber: Double
   
-  var programDateTime: js.UndefOr[Date] = js.native
+  var programDateTime: js.UndefOr[Date] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var uri: String = js.native
+  var uri: String
 }
 object Byterange {
   

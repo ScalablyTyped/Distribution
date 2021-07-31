@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPUUtilization extends StObject {
   
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the I/O Wait state over the last 10 seconds.
     */
-  var IOWait: js.UndefOr[NullableDouble] = js.native
+  var IOWait: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the IRQ state over the last 10 seconds.
     */
-  var IRQ: js.UndefOr[NullableDouble] = js.native
+  var IRQ: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Percentage of time that the CPU has spent in the Idle state over the last 10 seconds.
     */
-  var Idle: js.UndefOr[NullableDouble] = js.native
+  var Idle: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the Nice state over the last 10 seconds.
     */
-  var Nice: js.UndefOr[NullableDouble] = js.native
+  var Nice: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Available on Windows environments only. Percentage of time that the CPU has spent in the Privileged state over the last 10 seconds.
     */
-  var Privileged: js.UndefOr[NullableDouble] = js.native
+  var Privileged: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the SoftIRQ state over the last 10 seconds.
     */
-  var SoftIRQ: js.UndefOr[NullableDouble] = js.native
+  var SoftIRQ: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Available on Linux environments only. Percentage of time that the CPU has spent in the System state over the last 10 seconds.
     */
-  var System: js.UndefOr[NullableDouble] = js.native
+  var System: js.UndefOr[NullableDouble] = js.undefined
   
   /**
     * Percentage of time that the CPU has spent in the User state over the last 10 seconds.
     */
-  var User: js.UndefOr[NullableDouble] = js.native
+  var User: js.UndefOr[NullableDouble] = js.undefined
 }
 object CPUUtilization {
   

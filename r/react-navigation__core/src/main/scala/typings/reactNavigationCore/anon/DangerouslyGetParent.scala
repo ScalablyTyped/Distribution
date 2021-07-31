@@ -3,7 +3,6 @@ package typings.reactNavigationCore.anon
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,7 +54,7 @@ trait DangerouslyGetParent extends StObject {
   def reset(state: PartialStateReadonlykeyst): Unit = js.native
   def reset(state: Readonlykeystringindexnum): Unit = js.native
   
-  def setOptions(options: Partial[_]): Unit = js.native
+  def setOptions(options: Partial[js.Any]): Unit = js.native
   
   def setParams(): Unit = js.native
   def setParams(params: js.Object): Unit = js.native

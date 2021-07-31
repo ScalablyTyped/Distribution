@@ -5,71 +5,69 @@ import typings.googleapis.anon.BackgroundImageLink
 import typings.googleapis.anon.Limit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the user, the user&#39;s Drive, and system capabilities.
   */
-@js.native
 trait SchemaAbout extends StObject {
   
   /**
     * Whether the user has installed the requesting app.
     */
-  var appInstalled: js.UndefOr[Boolean] = js.native
+  var appInstalled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the user can create Team Drives.
     */
-  var canCreateTeamDrives: js.UndefOr[Boolean] = js.native
+  var canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A map of source MIME type to possible targets for all supported exports.
     */
-  var exportFormats: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var exportFormats: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * The currently supported folder colors as RGB hex strings.
     */
-  var folderColorPalette: js.UndefOr[js.Array[String]] = js.native
+  var folderColorPalette: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A map of source MIME type to possible targets for all supported imports.
     */
-  var importFormats: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var importFormats: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;drive#about&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A map of maximum import sizes by MIME type, in bytes.
     */
-  var maxImportSizes: js.UndefOr[StringDictionary[String]] = js.native
+  var maxImportSizes: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The maximum upload size in bytes.
     */
-  var maxUploadSize: js.UndefOr[String] = js.native
+  var maxUploadSize: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s storage quota limits and usage. All fields are measured in
     * bytes.
     */
-  var storageQuota: js.UndefOr[Limit] = js.native
+  var storageQuota: js.UndefOr[Limit] = js.undefined
   
   /**
     * A list of themes that are supported for Team Drives.
     */
-  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
+  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.undefined
   
   /**
     * The authenticated user.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaAbout {
   

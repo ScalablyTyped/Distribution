@@ -15,13 +15,12 @@ import typings.tinymce.mod.util.Observable
 import typings.tinymce.mod.util.URI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tinymce", "Editor")
 @js.native
 class Editor protected () extends Observable {
-  def this(id: String, settings: Settings_, editorManager: typings.tinymce.mod.EditorManager) = this()
+  def this(id: String, settings: Settings_, editorManager: EditorManager) = this()
   
   @JSName("$")
   var $: DomQuery = js.native
@@ -72,13 +71,13 @@ class Editor protected () extends Observable {
   def execCallback(name: String): js.Object = js.native
   
   def execCommand(cmd: String): Unit = js.native
-  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], args: js.Object): Unit = js.native
-  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  def execCommand(cmd: String, ui: js.UndefOr[scala.Nothing], value: js.Any, args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Boolean): Unit = js.native
-  def execCommand(cmd: String, ui: Boolean, value: js.UndefOr[scala.Nothing], args: js.Object): Unit = js.native
   def execCommand(cmd: String, ui: Boolean, value: js.Any): Unit = js.native
   def execCommand(cmd: String, ui: Boolean, value: js.Any, args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: Boolean, value: Unit, args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: Unit, value: js.Any): Unit = js.native
+  def execCommand(cmd: String, ui: Unit, value: js.Any, args: js.Object): Unit = js.native
+  def execCommand(cmd: String, ui: Unit, value: Unit, args: js.Object): Unit = js.native
   
   def focus(skipFocus: Boolean): Unit = js.native
   
@@ -101,9 +100,9 @@ class Editor protected () extends Observable {
   def getLang(name: String, defaultVal: String): Unit = js.native
   
   def getParam(name: String): String = js.native
-  def getParam(name: String, defaultVal: js.UndefOr[scala.Nothing], `type`: String): String = js.native
   def getParam(name: String, defaultVal: String): String = js.native
   def getParam(name: String, defaultVal: String, `type`: String): String = js.native
+  def getParam(name: String, defaultVal: Unit, `type`: String): String = js.native
   
   def getWin(): Window = js.native
   
@@ -169,7 +168,7 @@ class Editor protected () extends Observable {
   
   var undoManager: UndoManager = js.native
   
-  def uploadImages(callback: js.Function0[Unit]): js.Promise[_] = js.native
+  def uploadImages(callback: js.Function0[Unit]): js.Promise[js.Any] = js.native
   
   var windowManager: WindowManager = js.native
 }

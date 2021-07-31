@@ -2,15 +2,13 @@ package typings.lyricist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientTimestamps extends StObject {
   
-  var lyrics_updated_at: Double = js.native
+  var lyrics_updated_at: Double
   
-  var updated_by_human_at: Double = js.native
+  var updated_by_human_at: Double
 }
 object ClientTimestamps {
   

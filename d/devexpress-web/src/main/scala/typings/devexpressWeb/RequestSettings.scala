@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains control requests' settings.
   */
-@js.native
 trait RequestSettings extends StObject {
   
   /**
     * Specifies the maximum number of commands that can be sent in one request.
     */
-  var maxCommandCount: Double = js.native
+  var maxCommandCount: Double
   
   /**
     * Specifies a period before a request is sent to the server.
     */
-  var pendingPeriod: Double = js.native
+  var pendingPeriod: Double
   
   /**
     * Specifies the time that the control waits for a response before to sent a request again.
     */
-  var responseWaitingTime: Double = js.native
+  var responseWaitingTime: Double
 }
 object RequestSettings {
   

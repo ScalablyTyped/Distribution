@@ -4,16 +4,17 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentials {
   
-  @JSImport("azdata", "credentials.getProvider")
+  @JSImport("azdata", "credentials")
   @js.native
-  def getProvider(namespaceId: String): Thenable[CredentialProvider] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azdata", "credentials.registerProvider")
-  @js.native
-  def registerProvider(provider: CredentialProvider): Disposable = js.native
+  @scala.inline
+  def getProvider(namespaceId: String): Thenable[CredentialProvider] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProvider")(namespaceId.asInstanceOf[js.Any]).asInstanceOf[Thenable[CredentialProvider]]
+  
+  @scala.inline
+  def registerProvider(provider: CredentialProvider): Disposable = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProvider")(provider.asInstanceOf[js.Any]).asInstanceOf[Disposable]
 }

@@ -2,13 +2,13 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BoundingBoxAttachment extends VertexAttachment {
+trait BoundingBoxAttachment
+  extends StObject
+     with VertexAttachment {
   
-  var color: Color = js.native
+  var color: Color
 }
 object BoundingBoxAttachment {
   

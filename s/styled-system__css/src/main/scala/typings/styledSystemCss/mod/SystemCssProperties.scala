@@ -400,1125 +400,1125 @@ import typings.csstype.mod.WritingModeProperty
 import typings.csstype.mod.ZoomProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in keyof @styled-system/css.@styled-system/css.AllSystemCSSProperties ]: @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | (theme : any): @styled-system/css.@styled-system/css.ResponsiveStyleValue<@styled-system/css.@styled-system/css.AllSystemCSSProperties[K]> | @styled-system/css.@styled-system/css.SystemStyleObject} */
-@js.native
-trait SystemCssProperties extends _SystemStyleObject {
+trait SystemCssProperties
+  extends StObject
+     with _SystemStyleObject {
   
   var alignContent: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AlignContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignContentProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var alignItems: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignItemsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var alignSelf: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignSelfProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var alignTracks: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignTracksProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var alignmentBaseline: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AlignmentBaselineProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var all: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[Globals]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[Globals]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationDelay: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationDirection: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationDirectionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationDuration: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationFillMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationFillModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationIterationCount: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationIterationCountProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[AnimationIterationCountProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationName: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationNameProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationPlayState: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AnimationPlayStateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var animationTimingFunction: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AnimationTimingFunctionProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[AnimationTimingFunctionProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var appearance: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AppearanceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AppearanceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var aspectRatio: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[AspectRatioProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backdropFilter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackdropFilterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backfaceVisibility: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackfaceVisibilityProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var background: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundAttachment: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundAttachmentProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundBlendMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundBlendModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundClip: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundClipProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundImage: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundImageProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundOrigin: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundOriginProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPosition: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundPositionProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundPositionProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPositionX: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundPositionXProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundPositionXProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundPositionY: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundPositionYProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundPositionYProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundRepeat: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BackgroundRepeatProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var backgroundSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var baselineShift: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BaselineShiftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BaselineShiftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var bg: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var blockOverflow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BlockOverflowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var blockSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BlockSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BlockSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var border: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockEndColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockEndStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockEndWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockEndWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockEndWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockStartColorProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockStartColorProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockStartStyleProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockStartStyleProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStartWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockStartWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockStartWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBlockStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBlockWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBlockWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBlockWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBottomColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomLeftRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBottomLeftRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomRightRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBottomRightRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderBottomStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderBottomWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderBottomWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderBottomWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderCollapse: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderCollapseProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderEndEndRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderEndEndRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderEndEndRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderEndStartRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderEndStartRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderEndStartRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImage: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImageOutset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderImageOutsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderImageOutsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImageRepeat: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageRepeatProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImageSlice: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageSliceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImageSource: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderImageSourceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderImageWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderImageWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderImageWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineEndColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineEndStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineEndWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineEndWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineEndWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineStartColorProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineStartColorProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineStartStyleProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineStartStyleProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStartWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineStartWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineStartWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderInlineStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderInlineWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderInlineWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderInlineWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderLeftColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderLeftStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderLeftWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderLeftWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderLeftWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderRightColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderRightColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderRightStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderRightStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderRightWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderRightWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderRightWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderSpacing: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderSpacingProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderSpacingProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderStartEndRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderStartEndRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderStartEndRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderStartStartRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderStartStartRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderStartStartRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTopColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderTopColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTopLeftRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderTopLeftRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTopRightRadius: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderTopRightRadiusProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderTopRightRadiusProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTopStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BorderTopStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderTopWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderTopWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderTopWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var borderWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BorderWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BorderWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var bottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[BottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[BottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var boxDecorationBreak: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BoxDecorationBreakProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var boxShadow: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
       ]
     ]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[
         js.UndefOr[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var boxSizing: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BoxSizingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var breakAfter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakAfterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var breakBefore: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakBeforeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var breakInside: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[BreakInsideProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var captionSide: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CaptionSideProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var caretColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CaretColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CaretColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var clear: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ClearProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClearProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var clip: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var clipPath: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ClipPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipPathProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var clipRule: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ClipRuleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var color: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var colorAdjust: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorAdjustProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var colorInterpolation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorInterpolationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var colorRendering: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColorRenderingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnCount: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnCountProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnFill: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnFillProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnGap: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ColumnGapProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ColumnGapProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnRule: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ColumnRuleProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ColumnRuleProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnRuleColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnRuleStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnRuleWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ColumnRuleWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ColumnRuleWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnSpan: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ColumnSpanProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columnWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ColumnWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ColumnWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var columns: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ColumnsProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ColumnsProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var contain: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ContainProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ContainProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var content: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ContentProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var counterIncrement: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterIncrementProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var counterReset: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CounterResetProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterResetProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var counterSet: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CounterSetProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CounterSetProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var cursor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[CursorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[CursorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var direction: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[DirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DirectionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var display: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[DisplayProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DisplayProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var dominantBaseline: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[DominantBaselineProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var emptyCells: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[EmptyCellsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fill: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FillProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FillProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fillOpacity: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fillRule: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FillRuleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FillRuleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var filter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FilterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FilterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flex: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[FlexProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexBasis: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FlexBasisProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[FlexBasisProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexDirection: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexDirectionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexFlow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexFlowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexGrow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexShrink: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var flexWrap: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FlexWrapProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var float: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FloatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FloatProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var floodColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FloodColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FloodColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var floodOpacity: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var font: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontFamily: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontFamilyProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontFeatureSettings: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontFeatureSettingsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontKerning: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontKerningProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontKerningProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontLanguageOverride: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontLanguageOverrideProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontOpticalSizing: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontOpticalSizingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[FontSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontSizeAdjust: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontSizeAdjustProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontSmooth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[FontSmoothProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[FontSmoothProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontStretch: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontStretchProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontStretchProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontSynthesis: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontSynthesisProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariant: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantCaps: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantCapsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantEastAsian: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantEastAsianProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantLigatures: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantLigaturesProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantNumeric: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantNumericProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariantPosition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[FontVariantPositionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontVariationSettings: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[FontVariationSettingsProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[FontVariationSettingsProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var fontWeight: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
       ]
     ]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[
         js.UndefOr[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gap: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]) | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GapProperty[Double | String]]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var glyphOrientationVertical: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlyphOrientationVerticalProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[GlyphOrientationVerticalProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var grid: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridArea: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridAreaProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridAreaProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoColumns: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridAutoColumnsProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[GridAutoColumnsProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoFlow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridAutoFlowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridAutoRows: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridAutoRowsProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[GridAutoRowsProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridColumn: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridColumnProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridColumnEnd: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnEndProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridColumnStart: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridColumnStartProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridRow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridRowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridRowEnd: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowEndProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridRowStart: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridRowStartProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplate: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridTemplateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateAreas: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GridTemplateAreasProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateColumns: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridTemplateColumnsProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[GridTemplateColumnsProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var gridTemplateRows: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[GridTemplateRowsProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[GridTemplateRowsProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var hangingPunctuation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[HangingPunctuationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var height: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[HeightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[HeightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var hyphens: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[HyphensProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[HyphensProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var imageOrientation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageOrientationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var imageRendering: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageRenderingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var imageResolution: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ImageResolutionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var initialLetter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[InitialLetterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var inlineSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InlineSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InlineSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var inset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var insetInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[InsetInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[InsetInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var isolation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[IsolationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[IsolationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var justifyContent: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyContentProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var justifyItems: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyItemsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var justifySelf: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifySelfProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var justifyTracks: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[JustifyTracksProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var left: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[LeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[LeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var letterSpacing: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[LetterSpacingProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[LetterSpacingProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var lightingColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[LightingColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LightingColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var lineBreak: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[LineBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LineBreakProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var lineClamp: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[LineClampProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[LineClampProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var lineHeight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[LineHeightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[LineHeightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var lineHeightStep: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[LineHeightStepProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[LineHeightStepProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var listStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ListStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var listStyleImage: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleImageProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var listStylePosition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStylePositionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var listStyleType: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ListStyleTypeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var m: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1529,84 +1529,84 @@ trait SystemCssProperties extends _SystemStyleObject {
         js.UndefOr[(MarginProperty[Double | String]) | (js.Array[MarginProperty[Double | String]])]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var margin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MarginTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MarginTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginX: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1621,7 +1621,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marginY: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1636,146 +1636,146 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var marker: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MarkerProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var markerEnd: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerEndProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var markerMid: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerMidProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var markerStart: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MarkerStartProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mask: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaskProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaskProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorder: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderOutset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaskBorderOutsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaskBorderOutsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderRepeat: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderRepeatProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderSlice: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderSliceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderSource: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskBorderSourceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskBorderWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaskBorderWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaskBorderWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskClip: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskClipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskClipProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskComposite: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskCompositeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskImage: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskImageProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskImageProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskOrigin: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskOriginProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskPosition: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaskPositionProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaskPositionProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskRepeat: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskRepeatProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaskSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaskSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maskType: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaskTypeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var masonryAutoFlow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MasonryAutoFlowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mathStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MathStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MathStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maxBlockSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaxBlockSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaxBlockSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maxHeight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaxHeightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaxHeightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maxInlineSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaxInlineSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaxInlineSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maxLines: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MaxLinesProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var maxWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MaxWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MaxWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mb: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1790,39 +1790,39 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var minBlockSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MinBlockSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MinBlockSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var minHeight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MinHeightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MinHeightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var minInlineSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MinInlineSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MinInlineSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var minWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[MinWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[MinWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mixBlendMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[MixBlendModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var ml: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1837,29 +1837,29 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var motion: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var motionDistance: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var motionPath: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var motionRotation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mr: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1874,7 +1874,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mt: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1889,7 +1889,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var mx: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1904,7 +1904,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var my: js.UndefOr[
     (ResponsiveStyleValue[
@@ -1919,150 +1919,150 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var objectFit: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ObjectFitProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var objectPosition: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ObjectPositionProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ObjectPositionProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OffsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offsetAnchor: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OffsetAnchorProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OffsetAnchorProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offsetDistance: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OffsetDistanceProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offsetPath: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetPathProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offsetRotate: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var offsetRotation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OffsetRotateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var opacity: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OpacityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OpacityProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var order: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var orphans: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var outline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OutlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OutlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var outlineColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OutlineColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var outlineOffset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OutlineOffsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OutlineOffsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var outlineStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OutlineStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var outlineWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[OutlineWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OutlineWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowAnchor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowAnchorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowBlock: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowBlockProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowClipBox: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowClipBoxProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowInline: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowInlineProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowWrap: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowWrapProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowX: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowXProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowXProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overflowY: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverflowYProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverflowYProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehavior: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorBlock: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorBlockProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorBlockProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorInline: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorInlineProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorInlineProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorX: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorXProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var overscrollBehaviorY: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[OverscrollBehaviorYProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var p: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2077,84 +2077,84 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var padding: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PaddingTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PaddingTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingX: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2169,7 +2169,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paddingY: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2184,23 +2184,23 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakAfter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakAfterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakBefore: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakBeforeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pageBreakInside: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PageBreakInsideProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var paintOrder: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PaintOrderProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pb: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2215,21 +2215,21 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var perspective: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PerspectiveProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PerspectiveProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var perspectiveOrigin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[PerspectiveOriginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[PerspectiveOriginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pl: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2244,27 +2244,27 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var placeContent: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceContentProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var placeItems: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceItemsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var placeSelf: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PlaceSelfProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pointerEvents: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PointerEventsProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var position: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[PositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[PositionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pr: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2279,7 +2279,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var pt: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2294,7 +2294,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var px: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2309,7 +2309,7 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var py: js.UndefOr[
     (ResponsiveStyleValue[
@@ -2324,607 +2324,607 @@ trait SystemCssProperties extends _SystemStyleObject {
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var quotes: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[QuotesProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[QuotesProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var resize: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ResizeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ResizeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var right: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[RightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[RightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var rotate: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[RotateProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RotateProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var rowGap: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[RowGapProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[RowGapProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var rubyAlign: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyAlignProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var rubyMerge: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyMergeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var rubyPosition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[RubyPositionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scale: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScaleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScaleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollBehavior: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollBehaviorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMargin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollMarginTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPadding: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlock: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlockEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBlockStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingBlockStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInline: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInlineEnd: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineEndProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingInlineStart: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingInlineStartProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollPaddingTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollPaddingTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollPaddingTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapAlign: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapAlignProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMargin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginBottom: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginBottomProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginLeft: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginLeftProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginRight: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginRightProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapMarginTop: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ScrollMarginTopProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapStop: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapStopProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollSnapType: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollSnapTypeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarGutter: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarGutterProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var scrollbarWidth: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ScrollbarWidthProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var shapeImageThreshold: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeImageThresholdProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var shapeMargin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[ShapeMarginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[ShapeMarginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var shapeOutside: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeOutsideProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var shapeRendering: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ShapeRenderingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var stopColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[StopColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StopColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var stopOpacity: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var stroke: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[StrokeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeDasharray: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[StrokeDasharrayProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[StrokeDasharrayProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeDashoffset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[StrokeDashoffsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[StrokeDashoffsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeLinecap: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeLinecapProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeLinejoin: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[StrokeLinejoinProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeMiterlimit: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeOpacity: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var strokeWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[StrokeWidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[StrokeWidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var tabSize: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TabSizeProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TabSizeProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var tableLayout: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TableLayoutProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textAlign: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextAlignProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAlignProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textAlignLast: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAlignLastProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textAnchor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextAnchorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textCombineUpright: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextCombineUprightProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecoration: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextDecorationProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextDecorationProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationLine: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationLineProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationSkip: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationSkipProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationSkipInk: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextDecorationSkipInkProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextDecorationSkipInkProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextDecorationStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationThickness: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textDecorationWidth: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextDecorationThicknessProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasis: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisColor: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisColorProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisPosition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textEmphasisStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextEmphasisStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textIndent: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextIndentProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextIndentProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textJustify: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextJustifyProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textOrientation: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextOrientationProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textOverflow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextOverflowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textRendering: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextRenderingProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textShadow: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextShadowProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextShadowProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textSizeAdjust: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextSizeAdjustProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textTransform: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextTransformProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TextTransformProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textUnderlineOffset: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TextUnderlineOffsetProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextUnderlineOffsetProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var textUnderlinePosition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TextUnderlinePositionProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TextUnderlinePositionProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var top: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]) | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TopProperty[Double | String]]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var touchAction: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TouchActionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TouchActionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transform: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransformProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transformBox: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformBoxProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transformOrigin: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TransformOriginProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TransformOriginProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transformStyle: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransformStyleProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transition: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransitionProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransitionProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transitionDelay: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transitionDuration: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsString]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsString]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transitionProperty: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[TransitionPropertyProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var transitionTimingFunction: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[TransitionTimingFunctionProperty]] | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TransitionTimingFunctionProperty]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var translate: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[TranslateProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[TranslateProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var unicodeBidi: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[UnicodeBidiProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var userSelect: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[UserSelectProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[UserSelectProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var vectorEffect: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[VectorEffectProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var verticalAlign: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[VerticalAlignProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[VerticalAlignProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var visibility: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[VisibilityProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[VisibilityProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var whiteSpace: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WhiteSpaceProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var widows: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[GlobalsNumber]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[GlobalsNumber]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var width: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[WidthProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[WidthProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var willChange: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[WillChangeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WillChangeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var wordBreak: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[WordBreakProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WordBreakProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var wordSpacing: js.UndefOr[
     (ResponsiveStyleValue[js.UndefOr[WordSpacingProperty[Double | String]]]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[js.UndefOr[WordSpacingProperty[Double | String]]]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var wordWrap: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[WordWrapProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WordWrapProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var writingMode: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[WritingModeProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[WritingModeProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var zIndex: js.UndefOr[
     (ResponsiveStyleValue[
       js.UndefOr[
-        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+        (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
       ]
     ]) | (js.Function1[
       /* theme */ js.Any, 
       ResponsiveStyleValue[
         js.UndefOr[
-          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
         ]
       ]
     ]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
   
   var zoom: js.UndefOr[
     ResponsiveStyleValue[js.UndefOr[ZoomProperty]] | (js.Function1[/* theme */ js.Any, ResponsiveStyleValue[js.UndefOr[ZoomProperty]]]) | SystemStyleObject
-  ] = js.native
+  ] = js.undefined
 }
 object SystemCssProperties {
   
@@ -4828,13 +4828,13 @@ object SystemCssProperties {
     def setBoxShadow(
       value: (ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
           ]
         ]) | (js.Function1[
           /* theme */ js.Any, 
           ResponsiveStyleValue[
             js.UndefOr[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
             ]
           ]
         ]) | SystemStyleObject
@@ -4844,7 +4844,7 @@ object SystemCssProperties {
     def setBoxShadowFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ _) | Double
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
           ]
         ]
     ): Self = StObject.set(x, "boxShadow", js.Any.fromFunction1(value))
@@ -4856,7 +4856,11 @@ object SystemCssProperties {
     def setBoxShadowUndefined: Self = StObject.set(x, "boxShadow", js.undefined)
     
     @scala.inline
-    def setBoxShadowVarargs(value: ((js.UndefOr[js.Any | Double]) | Null)*): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
+    def setBoxShadowVarargs(
+      value: ((js.UndefOr[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.BoxShadow */ js.Any) | Double
+        ]) | Null)*
+    ): Self = StObject.set(x, "boxShadow", js.Array(value :_*))
     
     @scala.inline
     def setBoxSizing(
@@ -6035,13 +6039,13 @@ object SystemCssProperties {
     def setFontWeight(
       value: (ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
           ]
         ]) | (js.Function1[
           /* theme */ js.Any, 
           ResponsiveStyleValue[
             js.UndefOr[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
             ]
           ]
         ]) | SystemStyleObject
@@ -6051,7 +6055,7 @@ object SystemCssProperties {
     def setFontWeightFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ _) | String
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
           ]
         ]
     ): Self = StObject.set(x, "fontWeight", js.Any.fromFunction1(value))
@@ -6063,7 +6067,11 @@ object SystemCssProperties {
     def setFontWeightUndefined: Self = StObject.set(x, "fontWeight", js.undefined)
     
     @scala.inline
-    def setFontWeightVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
+    def setFontWeightVarargs(
+      value: ((js.UndefOr[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.FontWeight */ js.Any) | String
+        ]) | Null)*
+    ): Self = StObject.set(x, "fontWeight", js.Array(value :_*))
     
     @scala.inline
     def setGap(
@@ -11617,13 +11625,13 @@ object SystemCssProperties {
     def setZIndex(
       value: (ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
           ]
         ]) | (js.Function1[
           /* theme */ js.Any, 
           ResponsiveStyleValue[
             js.UndefOr[
-              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+              (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
             ]
           ]
         ]) | SystemStyleObject
@@ -11633,7 +11641,7 @@ object SystemCssProperties {
     def setZIndexFunction1(
       value: /* theme */ js.Any => ResponsiveStyleValue[
           js.UndefOr[
-            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ _) | String
+            (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
           ]
         ]
     ): Self = StObject.set(x, "zIndex", js.Any.fromFunction1(value))
@@ -11645,7 +11653,11 @@ object SystemCssProperties {
     def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     
     @scala.inline
-    def setZIndexVarargs(value: ((js.UndefOr[js.Any | String]) | Null)*): Self = StObject.set(x, "zIndex", js.Array(value :_*))
+    def setZIndexVarargs(
+      value: ((js.UndefOr[
+          (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.ZIndex */ js.Any) | String
+        ]) | Null)*
+    ): Self = StObject.set(x, "zIndex", js.Array(value :_*))
     
     @scala.inline
     def setZoom(

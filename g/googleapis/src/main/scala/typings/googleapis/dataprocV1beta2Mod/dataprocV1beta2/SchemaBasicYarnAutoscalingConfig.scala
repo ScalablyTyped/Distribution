@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Basic autoscaling configurations for YARN.
   */
-@js.native
 trait SchemaBasicYarnAutoscalingConfig extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
     * removing workers (and potentially interrupting jobs). Only applicable to
     * downscaling operations.Bounds: 0s, 1d.
     */
-  var gracefulDecommissionTimeout: js.UndefOr[String] = js.native
+  var gracefulDecommissionTimeout: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Fraction of average pending memory in the last cooldown period
@@ -27,7 +25,7 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
     * removing workers, which can be beneficial for autoscaling a single
     * job.Bounds: 0.0, 1.0.
     */
-  var scaleDownFactor: js.UndefOr[Double] = js.native
+  var scaleDownFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Minimum scale-down threshold as a fraction of total cluster
@@ -37,7 +35,7 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
     * autoscaler will scale down on any recommended change.Bounds: 0.0, 1.0.
     * Default: 0.0.
     */
-  var scaleDownMinWorkerFraction: js.UndefOr[Double] = js.native
+  var scaleDownMinWorkerFraction: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. Fraction of average pending memory in the last cooldown period
@@ -47,7 +45,7 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
     * smaller magnitude of scaling up (less aggressive scaling).Bounds:
     * 0.0, 1.0.
     */
-  var scaleUpFactor: js.UndefOr[Double] = js.native
+  var scaleUpFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Minimum scale-up threshold as a fraction of total cluster size
@@ -56,7 +54,7 @@ trait SchemaBasicYarnAutoscalingConfig extends StObject {
     * for the cluster to scale. A threshold of 0 means the autoscaler will
     * scale up on any recommended change.Bounds: 0.0, 1.0. Default: 0.0.
     */
-  var scaleUpMinWorkerFraction: js.UndefOr[Double] = js.native
+  var scaleUpMinWorkerFraction: js.UndefOr[Double] = js.undefined
 }
 object SchemaBasicYarnAutoscalingConfig {
   

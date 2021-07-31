@@ -2,21 +2,19 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/authn.html#cookie-authentication
-@js.native
 trait DatabaseAuthResponse extends StObject {
   
   // Username
-  var name: String = js.native
+  var name: String
   
   // Operation status
-  var ok: Boolean = js.native
+  var ok: Boolean
   
   // List of user roles
-  var roles: js.Array[String] = js.native
+  var roles: js.Array[String]
 }
 object DatabaseAuthResponse {
   

@@ -3,7 +3,6 @@ package typings.del
 import typings.globby.mod.GlobbyOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,18 +24,18 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(patterns: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(patterns: js.Array[String], options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  
   @JSImport("del", JSImport.Namespace)
   @js.native
-  def apply(patterns: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("del", JSImport.Namespace)
-  @js.native
-  def apply(patterns: String, options: Options): js.Promise[js.Array[String]] = js.native
-  @JSImport("del", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String]): js.Promise[js.Array[String]] = js.native
-  @JSImport("del", JSImport.Namespace)
-  @js.native
-  def apply(patterns: js.Array[String], options: Options): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously delete files and directories using glob patterns.
@@ -47,21 +46,18 @@ object mod {
   	@param options - You can specify any of the [`globby` options](https://github.com/sindresorhus/globby#options) in addition to the `del` options. In contrast to the `globby` defaults, `expandDirectories`, `onlyFiles`, and `followSymbolicLinks` are `false` by default.
   	@returns The deleted paths.
   	*/
-  @JSImport("del", "sync")
-  @js.native
-  def sync(patterns: String): js.Array[String] = js.native
-  @JSImport("del", "sync")
-  @js.native
-  def sync(patterns: String, options: Options): js.Array[String] = js.native
-  @JSImport("del", "sync")
-  @js.native
-  def sync(patterns: js.Array[String]): js.Array[String] = js.native
-  @JSImport("del", "sync")
-  @js.native
-  def sync(patterns: js.Array[String], options: Options): js.Array[String] = js.native
+  @scala.inline
+  def sync(patterns: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: String, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: js.Array[String]): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def sync(patterns: js.Array[String], options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @js.native
-  trait Options extends GlobbyOptions {
+  trait Options
+    extends StObject
+       with GlobbyOptions {
     
     /**
     		See what would be deleted.
@@ -75,13 +71,13 @@ object mod {
     		})();
     		```
     		*/
-    val dryRun: js.UndefOr[Boolean] = js.native
+    val dryRun: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Allow deleting the current working directory and outside.
     		@default false
     		*/
-    val force: js.UndefOr[Boolean] = js.native
+    val force: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -5,37 +5,35 @@ import typings.atom.atomStrings.out
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tooltip extends StObject {
   
-  def disable(): Unit = js.native
+  def disable(): Unit
   
-  val element: HTMLElement = js.native
+  val element: HTMLElement
   
-  def enable(): Unit = js.native
+  def enable(): Unit
   
-  val enabled: Boolean = js.native
+  val enabled: Boolean
   
-  def getArrowElement(): HTMLElement = js.native
+  def getArrowElement(): HTMLElement
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getTooltipElement(): HTMLElement = js.native
+  def getTooltipElement(): HTMLElement
   
-  val hoverState: in | out | Null = js.native
+  val hoverState: in | out | Null
   
-  val options: TooltipOptions = js.native
+  val options: TooltipOptions
   
-  def recalculatePosition(): Unit = js.native
+  def recalculatePosition(): Unit
   
-  val timeout: Double = js.native
+  val timeout: Double
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
   
-  def toggleEnabled(): Unit = js.native
+  def toggleEnabled(): Unit
 }
 object Tooltip {
   
@@ -54,7 +52,7 @@ object Tooltip {
     toggle: () => Unit,
     toggleEnabled: () => Unit
   ): Tooltip = {
-    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), element = element.asInstanceOf[js.Any], enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any], getArrowElement = js.Any.fromFunction0(getArrowElement), getTitle = js.Any.fromFunction0(getTitle), getTooltipElement = js.Any.fromFunction0(getTooltipElement), options = options.asInstanceOf[js.Any], recalculatePosition = js.Any.fromFunction0(recalculatePosition), timeout = timeout.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle), toggleEnabled = js.Any.fromFunction0(toggleEnabled))
+    val __obj = js.Dynamic.literal(disable = js.Any.fromFunction0(disable), element = element.asInstanceOf[js.Any], enable = js.Any.fromFunction0(enable), enabled = enabled.asInstanceOf[js.Any], getArrowElement = js.Any.fromFunction0(getArrowElement), getTitle = js.Any.fromFunction0(getTitle), getTooltipElement = js.Any.fromFunction0(getTooltipElement), options = options.asInstanceOf[js.Any], recalculatePosition = js.Any.fromFunction0(recalculatePosition), timeout = timeout.asInstanceOf[js.Any], toggle = js.Any.fromFunction0(toggle), toggleEnabled = js.Any.fromFunction0(toggleEnabled), hoverState = null)
     __obj.asInstanceOf[Tooltip]
   }
   

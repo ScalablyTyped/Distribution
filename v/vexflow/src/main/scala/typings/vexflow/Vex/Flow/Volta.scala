@@ -3,15 +3,15 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.anon.GetContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Volta extends StaveModifier {
+trait Volta
+  extends StObject
+     with StaveModifier {
   
-  def draw(stave: Stave, x: Double): Volta = js.native
+  def draw(stave: Stave, x: Double): Volta
   
-  def setShiftY(y: Double): Volta = js.native
+  def setShiftY(y: Double): Volta
 }
 object Volta {
   
@@ -35,6 +35,38 @@ object Volta {
     __obj.asInstanceOf[Volta]
   }
   
+  @js.native
+  sealed trait `type` extends StObject
+  @JSGlobal("Vex.Flow.Volta.type")
+  @js.native
+  object `type` extends StObject {
+    
+    @js.native
+    sealed trait BEGIN
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait BEGIN_END
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait END
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait MID
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait NONE
+      extends StObject
+         with `type`
+  }
+  
   @scala.inline
   implicit class VoltaMutableBuilder[Self <: Volta] (val x: Self) extends AnyVal {
     
@@ -43,27 +75,5 @@ object Volta {
     
     @scala.inline
     def setSetShiftY(value: Double => Volta): Self = StObject.set(x, "setShiftY", js.Any.fromFunction1(value))
-  }
-  
-  @js.native
-  sealed trait `type` extends StObject
-  @JSGlobal("Vex.Flow.Volta.type")
-  @js.native
-  object `type` extends StObject {
-    
-    @js.native
-    sealed trait BEGIN extends `type`
-    
-    @js.native
-    sealed trait BEGIN_END extends `type`
-    
-    @js.native
-    sealed trait END extends `type`
-    
-    @js.native
-    sealed trait MID extends `type`
-    
-    @js.native
-    sealed trait NONE extends `type`
   }
 }

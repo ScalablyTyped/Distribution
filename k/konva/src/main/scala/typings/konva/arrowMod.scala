@@ -5,7 +5,6 @@ import typings.konva.lineMod.LineConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowMod {
@@ -33,14 +32,15 @@ object arrowMod {
     var pointerWidth_Original: GetSet[Double, this.type] = js.native
   }
   
-  @js.native
-  trait ArrowConfig extends LineConfig {
+  trait ArrowConfig
+    extends StObject
+       with LineConfig {
     
-    var pointerAtBeginning: js.UndefOr[Boolean] = js.native
+    var pointerAtBeginning: js.UndefOr[Boolean] = js.undefined
     
-    var pointerLength: js.UndefOr[Double] = js.native
+    var pointerLength: js.UndefOr[Double] = js.undefined
     
-    var pointerWidth: js.UndefOr[Double] = js.native
+    var pointerWidth: js.UndefOr[Double] = js.undefined
   }
   object ArrowConfig {
     

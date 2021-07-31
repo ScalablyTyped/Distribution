@@ -4,7 +4,6 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.prex.mod.CancellationToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "SyncHost")
@@ -31,16 +30,16 @@ class SyncHost () extends HostBase {
 /* static members */
 object SyncHost {
   
-  @JSImport("grammarkdown/dist/grammarkdown", "SyncHost.forFile")
+  @JSImport("grammarkdown/dist/grammarkdown", "SyncHost")
   @js.native
-  def forFile(content: String): SyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "SyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: js.UndefOr[scala.Nothing], hostFallback: SyncHost): SyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "SyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: String): SyncSingleFileHost = js.native
-  @JSImport("grammarkdown/dist/grammarkdown", "SyncHost.forFile")
-  @js.native
-  def forFile(content: String, file: String, hostFallback: SyncHost): SyncSingleFileHost = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def forFile(content: String): SyncSingleFileHost = ^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any]).asInstanceOf[SyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: String): SyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[SyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: String, hostFallback: SyncHost): SyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[SyncSingleFileHost]
+  @scala.inline
+  def forFile(content: String, file: Unit, hostFallback: SyncHost): SyncSingleFileHost = (^.asInstanceOf[js.Dynamic].applyDynamic("forFile")(content.asInstanceOf[js.Any], file.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[SyncSingleFileHost]
 }

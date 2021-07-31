@@ -2,18 +2,16 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetChannelResponse extends StObject {
   
-  var channels: js.UndefOr[Channels] = js.native
+  var channels: js.UndefOr[Channels] = js.undefined
   
   /**
     * Each error object is related to a specific ARN in the request.
     */
-  var errors: js.UndefOr[BatchErrors] = js.native
+  var errors: js.UndefOr[BatchErrors] = js.undefined
 }
 object BatchGetChannelResponse {
   

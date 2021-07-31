@@ -10,18 +10,17 @@ import typings.got.gotStrings.send
 import typings.got.gotStrings.socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeoutError
-  extends StdError
+  extends StObject
+     with StdError
      with GotError {
   
-  var event: lookup | connect | secureConnect | socket | response | send | request = js.native
+  var event: lookup | connect | secureConnect | socket | response | send | request
   
   @JSName("name")
-  var name_TimeoutError: typings.got.gotStrings.TimeoutError = js.native
+  var name_TimeoutError: typings.got.gotStrings.TimeoutError
 }
 object TimeoutError {
   

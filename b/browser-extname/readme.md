@@ -12,7 +12,7 @@ Node.js path.extname for browsers and web-workers
 | Keywords           | - |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 399 |
+| # downloads        | 743 |
 | # stars            | 0 |
 
 ## Links

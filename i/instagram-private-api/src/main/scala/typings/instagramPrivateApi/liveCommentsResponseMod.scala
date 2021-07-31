@@ -2,39 +2,37 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveCommentsResponseMod {
   
-  @js.native
   trait LiveCommentsResponseCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var inline_composer_display_condition: String = js.native
+    var inline_composer_display_condition: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: LiveCommentsResponseUser = js.native
+    var user: LiveCommentsResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object LiveCommentsResponseCommentsItem {
     
@@ -103,36 +101,35 @@ object liveCommentsResponseMod {
     }
   }
   
-  @js.native
   trait LiveCommentsResponseRootObject extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var caption: Null = js.native
+    var caption: Null
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comment_muted: Double = js.native
+    var comment_muted: Double
     
-    var comments: js.Array[LiveCommentsResponseCommentsItem] = js.native
+    var comments: js.Array[LiveCommentsResponseCommentsItem]
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var has_more_headload_comments: Boolean = js.native
+    var has_more_headload_comments: Boolean
     
-    var is_first_fetch: String = js.native
+    var is_first_fetch: String
     
-    var live_seconds_per_comment: Double = js.native
+    var live_seconds_per_comment: Double
     
-    var media_header_display: String = js.native
+    var media_header_display: String
     
-    var status: String = js.native
+    var status: String
     
-    var system_comments: js.Array[LiveCommentsResponseSystemCommentsItem] = js.native
+    var system_comments: js.Array[LiveCommentsResponseSystemCommentsItem]
   }
   object LiveCommentsResponseRootObject {
     
@@ -210,18 +207,17 @@ object liveCommentsResponseMod {
     }
   }
   
-  @js.native
   trait LiveCommentsResponseSystemCommentsItem extends StObject {
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var pk: String = js.native
+    var pk: String
     
-    var text: String = js.native
+    var text: String
     
-    var user: LiveCommentsResponseUser = js.native
+    var user: LiveCommentsResponseUser
     
-    var user_count: Double = js.native
+    var user_count: Double
   }
   object LiveCommentsResponseSystemCommentsItem {
     
@@ -251,24 +247,23 @@ object liveCommentsResponseMod {
     }
   }
   
-  @js.native
   trait LiveCommentsResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var live_with_eligibility: js.UndefOr[String] = js.native
+    var live_with_eligibility: js.UndefOr[String] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: String = js.native
+    var profile_pic_id: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object LiveCommentsResponseUser {
     

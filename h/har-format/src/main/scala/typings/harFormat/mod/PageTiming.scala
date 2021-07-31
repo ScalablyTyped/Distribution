@@ -2,16 +2,14 @@ package typings.harFormat.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PageTiming extends StObject {
   
-  var _startRender: js.UndefOr[Double | Null] = js.native
+  var _startRender: js.UndefOr[Double | Null] = js.undefined
   
   /** A comment provided by the user or the application */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Content of the page loaded. Number of milliseconds since page load
@@ -19,7 +17,7 @@ trait PageTiming extends StObject {
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var onContentLoad: js.UndefOr[Double] = js.native
+  var onContentLoad: js.UndefOr[Double] = js.undefined
   
   /**
     * Page is loaded (`onLoad` event fired). Number of milliseconds since
@@ -27,7 +25,7 @@ trait PageTiming extends StObject {
     *
     * Use `-1` if the timing does not apply to the current request.
     */
-  var onLoad: js.UndefOr[Double] = js.native
+  var onLoad: js.UndefOr[Double] = js.undefined
 }
 object PageTiming {
   

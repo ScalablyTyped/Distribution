@@ -2,7 +2,6 @@ package typings.googlemaps.global.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("google.maps.MVCObject")
@@ -15,4 +14,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * not supported.
   */
 class MVCObject ()
-  extends typings.googlemaps.google.maps.MVCObject
+  extends StObject
+     with typings.googlemaps.google.maps.MVCObject

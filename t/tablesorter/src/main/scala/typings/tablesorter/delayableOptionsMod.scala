@@ -2,18 +2,16 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delayableOptionsMod {
   
-  @js.native
   trait DelayableOptions extends StObject {
     
     /**
       * A value indicating whether the value of the filter should be set delayed.
       */
-    var delayed: js.UndefOr[Boolean] = js.native
+    var delayed: js.UndefOr[Boolean] = js.undefined
   }
   object DelayableOptions {
     

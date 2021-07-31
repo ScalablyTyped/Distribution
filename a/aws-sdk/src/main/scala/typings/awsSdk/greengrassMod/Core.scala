@@ -2,31 +2,29 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Core extends StObject {
   
   /**
     * The ARN of the certificate associated with the core.
     */
-  var CertificateArn: string = js.native
+  var CertificateArn: string
   
   /**
     * A descriptive or arbitrary ID for the core. This value must be unique within the core definition version. Max length is 128 characters with pattern ''[a-zA-Z0-9:_-]+''.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * If true, the core's local shadow is automatically synced with the cloud.
     */
-  var SyncShadow: js.UndefOr[boolean] = js.native
+  var SyncShadow: js.UndefOr[boolean] = js.undefined
   
   /**
     * The ARN of the thing which is the core.
     */
-  var ThingArn: string = js.native
+  var ThingArn: string
 }
 object Core {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetBuildsInput extends StObject {
   
   /**
     * The IDs of the builds.
     */
-  var ids: BuildIds = js.native
+  var ids: BuildIds
 }
 object BatchGetBuildsInput {
   

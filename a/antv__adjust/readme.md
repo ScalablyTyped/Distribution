@@ -10,9 +10,9 @@ The adjust module for G2, F2.
 | ------------------ | :-------------: |
 | Full name          | @antv/adjust |
 | Keywords           | antv, adjust, g2, f2 |
-| # releases         | 7 |
-| # dependents       | 8 |
-| # downloads        | 2011487 |
+| # releases         | 6 |
+| # dependents       | 9 |
+| # downloads        | 2360455 |
 | # stars            | 0 |
 
 ## Links

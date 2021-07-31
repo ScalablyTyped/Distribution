@@ -2,16 +2,14 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationsRequest extends StObject {
   
   /**
     * One or more configuration IDs.
     */
-  var configurationIds: ConfigurationIdList = js.native
+  var configurationIds: ConfigurationIdList
 }
 object DescribeConfigurationsRequest {
   

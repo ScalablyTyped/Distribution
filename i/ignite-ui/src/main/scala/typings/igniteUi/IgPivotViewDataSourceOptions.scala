@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewDataSourceOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,32 +15,32 @@ trait IgPivotViewDataSourceOptions
   /**
     * A list of hierarchy names separated by comma (,). These will be the hierarchies in the columns of the data source.
     */
-  var columns: js.UndefOr[String] = js.native
+  var columns: js.UndefOr[String] = js.undefined
   
   /**
     * A list of hierarchy names separated by comma (,). These will be hierarchies in the filters of the data source.
     */
-  var filters: js.UndefOr[String] = js.native
+  var filters: js.UndefOr[String] = js.undefined
   
   /**
     * Settings for creating an instance of $.ig.OlapFlatDataSource.
     */
-  var flatDataOptions: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptions] = js.native
+  var flatDataOptions: js.UndefOr[IgPivotViewDataSourceOptionsFlatDataOptions] = js.undefined
   
   /**
     * A list of measure names separated by comma (,). These will be the measures of the data source.
     */
-  var measures: js.UndefOr[String] = js.native
+  var measures: js.UndefOr[String] = js.undefined
   
   /**
     * A list of hierarchy names separated by comma (,). These will be the hierarchies in the rows of the data source.
     */
-  var rows: js.UndefOr[String] = js.native
+  var rows: js.UndefOr[String] = js.undefined
   
   /**
     * Settings for creating an instance of $.ig.OlapXmlaDataSource.
     */
-  var xmlaOptions: js.UndefOr[IgPivotViewDataSourceOptionsXmlaOptions] = js.native
+  var xmlaOptions: js.UndefOr[IgPivotViewDataSourceOptionsXmlaOptions] = js.undefined
 }
 object IgPivotViewDataSourceOptions {
   

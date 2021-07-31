@@ -2,37 +2,35 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatistics extends StObject {
   
-  var completionRatio: js.UndefOr[Double] = js.native
+  var completionRatio: js.UndefOr[Double] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
-  var extract: js.UndefOr[JobStatistics4] = js.native
+  var extract: js.UndefOr[JobStatistics4] = js.undefined
   
-  var load: js.UndefOr[JobStatistics3] = js.native
+  var load: js.UndefOr[JobStatistics3] = js.undefined
   
-  var numChildJobs: js.UndefOr[String] = js.native
+  var numChildJobs: js.UndefOr[String] = js.undefined
   
-  var parentJobId: js.UndefOr[String] = js.native
+  var parentJobId: js.UndefOr[String] = js.undefined
   
-  var query: js.UndefOr[JobStatistics2] = js.native
+  var query: js.UndefOr[JobStatistics2] = js.undefined
   
-  var quotaDeferments: js.UndefOr[js.Array[String]] = js.native
+  var quotaDeferments: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reservationUsage: js.UndefOr[js.Array[JobStatisticsReservationUsage]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[JobStatisticsReservationUsage]] = js.undefined
   
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
 }
 object JobStatistics {
   

@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.ratingTypesMod.IRatingProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingBaseMod {
@@ -51,10 +50,9 @@ object ratingBaseMod {
     def defaultProps_=(x: IRatingProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IRatingState extends StObject {
     
-    var rating: js.UndefOr[Double | Null] = js.native
+    var rating: js.UndefOr[Double | Null] = js.undefined
   }
   object IRatingState {
     

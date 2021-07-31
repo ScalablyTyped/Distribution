@@ -2,13 +2,11 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerID extends StObject {
   
-  var ContainerID: String = js.native
+  var ContainerID: String
 }
 object ContainerID {
   

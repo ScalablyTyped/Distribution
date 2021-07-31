@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Feed extends StObject {
   
   /** Information about a `Feed` with a `feed_type` of `COURSE_ROSTER_CHANGES`. This field must be specified if `feed_type` is `COURSE_ROSTER_CHANGES`. */
-  var courseRosterChangesInfo: js.UndefOr[CourseRosterChangesInfo] = js.native
+  var courseRosterChangesInfo: js.UndefOr[CourseRosterChangesInfo] = js.undefined
   
   /** Information about a `Feed` with a `feed_type` of `COURSE_WORK_CHANGES`. This field must be specified if `feed_type` is `COURSE_WORK_CHANGES`. */
-  var courseWorkChangesInfo: js.UndefOr[CourseWorkChangesInfo] = js.native
+  var courseWorkChangesInfo: js.UndefOr[CourseWorkChangesInfo] = js.undefined
   
   /** The type of feed. */
-  var feedType: js.UndefOr[String] = js.native
+  var feedType: js.UndefOr[String] = js.undefined
 }
 object Feed {
   

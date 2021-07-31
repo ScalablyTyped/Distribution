@@ -2,15 +2,15 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IconsumeAndShareCard extends BaseParams {
+trait IconsumeAndShareCard
+  extends StObject
+     with BaseParams {
   
-  var cardId: String = js.native
+  var cardId: String
   
-  var code: String = js.native
+  var code: String
 }
 object IconsumeAndShareCard {
   

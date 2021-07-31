@@ -3,48 +3,46 @@ package typings.winrtUwp.Windows.UI.ViewManagement
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the title bar of an app. */
-@js.native
 trait ApplicationViewTitleBar extends StObject {
   
   /** Gets or sets the color of the title bar background. */
-  var backgroundColor: Color = js.native
+  var backgroundColor: Color
   
   /** Gets or sets the background color of the title bar buttons. */
-  var buttonBackgroundColor: Color = js.native
+  var buttonBackgroundColor: Color
   
   /** Gets or sets the foreground color of the title bar buttons. */
-  var buttonForegroundColor: Color = js.native
+  var buttonForegroundColor: Color
   
   /** Gets or sets the background color of a title bar button when the pointer is over it. */
-  var buttonHoverBackgroundColor: Color = js.native
+  var buttonHoverBackgroundColor: Color
   
   /** Gets or sets the foreground color of a title bar button when the pointer is over it. */
-  var buttonHoverForegroundColor: Color = js.native
+  var buttonHoverForegroundColor: Color
   
   /** Gets or sets the background color of a title bar button when it's inactive. */
-  var buttonInactiveBackgroundColor: Color = js.native
+  var buttonInactiveBackgroundColor: Color
   
   /** Gets or sets the foreground color of a title bar button when it's inactive. */
-  var buttonInactiveForegroundColor: Color = js.native
+  var buttonInactiveForegroundColor: Color
   
   /** Gets or sets the background color of a title bar button when it's pressed. */
-  var buttonPressedBackgroundColor: Color = js.native
+  var buttonPressedBackgroundColor: Color
   
   /** Gets or sets the foreground color of a title bar button when it's pressed. */
-  var buttonPressedForegroundColor: Color = js.native
+  var buttonPressedForegroundColor: Color
   
   /** Gets or sets the color of the title bar foreground. */
-  var foregroundColor: Color = js.native
+  var foregroundColor: Color
   
   /** Gets or sets the color of the title bar background when it's inactive. */
-  var inactiveBackgroundColor: Color = js.native
+  var inactiveBackgroundColor: Color
   
   /** Gets or sets the color of the title bar foreground when it's inactive. */
-  var inactiveForegroundColor: Color = js.native
+  var inactiveForegroundColor: Color
 }
 object ApplicationViewTitleBar {
   

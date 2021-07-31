@@ -3,15 +3,15 @@ package typings.pkcs11js.Pkcs11Js
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AesCBC extends IParams {
+trait AesCBC
+  extends StObject
+     with IParams {
   
-  var data: js.UndefOr[Buffer] = js.native
+  var data: js.UndefOr[Buffer] = js.undefined
   
-  var iv: Buffer = js.native
+  var iv: Buffer
 }
 object AesCBC {
   

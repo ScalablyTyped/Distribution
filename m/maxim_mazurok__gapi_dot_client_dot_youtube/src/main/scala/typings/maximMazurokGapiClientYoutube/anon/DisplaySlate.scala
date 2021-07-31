@@ -2,45 +2,43 @@ package typings.maximMazurokGapiClientYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplaySlate extends StObject {
   
   /** V1 error format. */
   @JSName("$.xgafv")
-  var $Dotxgafv: js.UndefOr[String] = js.native
+  var $Dotxgafv: js.UndefOr[String] = js.undefined
   
   /** OAuth access token. */
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
   /** Data format for response. */
-  var alt: js.UndefOr[String] = js.native
+  var alt: js.UndefOr[String] = js.undefined
   
   /** JSONP */
-  var callback: js.UndefOr[String] = js.native
+  var callback: js.UndefOr[String] = js.undefined
   
   /** Whether display or hide slate. */
-  var displaySlate: js.UndefOr[Boolean] = js.native
+  var displaySlate: js.UndefOr[Boolean] = js.undefined
   
   /** Selector specifying which fields to include in a partial response. */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /** Broadcast to operate. */
-  var id: String = js.native
+  var id: String
   
   /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** OAuth 2.0 token for the current user. */
-  var oauth_token: js.UndefOr[String] = js.native
+  var oauth_token: js.UndefOr[String] = js.undefined
   
   /**
     * The exact time when the actions (e.g. slate on) are executed. It is an offset from the first frame of the monitor stream. If not set, it means "now" or ASAP. This field should
     * not be set if the monitor stream is disabled, otherwise an error will be returned.
     */
-  var offsetTimeMs: js.UndefOr[String] = js.native
+  var offsetTimeMs: js.UndefOr[String] = js.undefined
   
   /**
     * *Note:* This parameter is intended exclusively for YouTube content partners. The *onBehalfOfContentOwner* parameter indicates that the request's authorization credentials
@@ -48,7 +46,7 @@ trait DisplaySlate extends StObject {
     * manage many different YouTube channels. It allows content owners to authenticate once and get access to all their video and channel data, without having to provide
     * authentication credentials for each individual channel. The CMS account that the user authenticates with must be linked to the specified YouTube content owner.
     */
-  var onBehalfOfContentOwner: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwner: js.UndefOr[String] = js.undefined
   
   /**
     * This parameter can only be used in a properly authorized request. *Note:* This parameter is intended exclusively for YouTube content partners. The
@@ -59,28 +57,28 @@ trait DisplaySlate extends StObject {
     * YouTube channels. It allows content owners to authenticate once and perform actions on behalf of the channel specified in the parameter value, without having to provide
     * authentication credentials for each separate channel.
     */
-  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.native
+  var onBehalfOfContentOwnerChannel: js.UndefOr[String] = js.undefined
   
   /**
     * The *part* parameter specifies a comma-separated list of one or more liveBroadcast resource properties that the API response will include. The part names that you can include in
     * the parameter value are id, snippet, contentDetails, and status.
     */
-  var part: String | js.Array[String] = js.native
+  var part: String | js.Array[String]
   
   /** Returns response with indentations and line breaks. */
-  var prettyPrint: js.UndefOr[Boolean] = js.native
+  var prettyPrint: js.UndefOr[Boolean] = js.undefined
   
   /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-  var quotaUser: js.UndefOr[String] = js.native
+  var quotaUser: js.UndefOr[String] = js.undefined
   
   /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-  var uploadType: js.UndefOr[String] = js.native
+  var uploadType: js.UndefOr[String] = js.undefined
   
   /** Upload protocol for media (e.g. "raw", "multipart"). */
-  var upload_protocol: js.UndefOr[String] = js.native
+  var upload_protocol: js.UndefOr[String] = js.undefined
   
   /** The wall clock time at which the action should be executed. Only one of offset_time_ms and walltime may be set at a time. */
-  var walltime: js.UndefOr[String] = js.native
+  var walltime: js.UndefOr[String] = js.undefined
 }
 object DisplaySlate {
   

@@ -3,7 +3,6 @@ package typings.yandexMaps.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yandex-maps", "Circle")
@@ -21,12 +20,12 @@ class Circle protected ()
   def this(geometry: js.Object, properties: IDataManager) = this()
   def this(
     geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]],
-    properties: js.UndefOr[scala.Nothing],
+    properties: js.Object,
     options: ICircleOptions
   ) = this()
   def this(
     geometry: js.Array[js.Array[js.Array[js.Array[ICircleGeometry]] | Double]],
-    properties: js.Object,
+    properties: Unit,
     options: ICircleOptions
   ) = this()
   def this(
@@ -34,8 +33,8 @@ class Circle protected ()
     properties: IDataManager,
     options: ICircleOptions
   ) = this()
-  def this(geometry: js.Object, properties: js.UndefOr[scala.Nothing], options: ICircleOptions) = this()
   def this(geometry: js.Object, properties: js.Object, options: ICircleOptions) = this()
+  def this(geometry: js.Object, properties: Unit, options: ICircleOptions) = this()
   def this(geometry: js.Object, properties: IDataManager, options: ICircleOptions) = this()
   
   var indices: ArrayBuffer = js.native

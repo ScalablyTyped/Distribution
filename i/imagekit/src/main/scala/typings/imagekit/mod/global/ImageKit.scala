@@ -23,7 +23,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ImageKit")
@@ -76,9 +75,9 @@ class ImageKit protected () extends StObject {
     * @param expire
     */
   def getAuthenticationParameters(): Expire = js.native
-  def getAuthenticationParameters(token: js.UndefOr[scala.Nothing], expire: Double): Expire = js.native
   def getAuthenticationParameters(token: String): Expire = js.native
   def getAuthenticationParameters(token: String, expire: Double): Expire = js.native
+  def getAuthenticationParameters(token: Unit, expire: Double): Expire = js.native
   
   /**
     * Get the file details such as tags, customCoordinates, and isPrivate properties using get file detail API.
@@ -244,12 +243,13 @@ class ImageKit protected () extends StObject {
 }
 object ImageKit {
   
-  @js.native
-  trait BulkDeleteFilesError extends Error {
+  trait BulkDeleteFilesError
+    extends StObject
+       with Error {
     
-    var help: String = js.native
+    var help: String
     
-    var missingFileIds: js.Array[String] = js.native
+    var missingFileIds: js.Array[String]
   }
   object BulkDeleteFilesError {
     
@@ -278,13 +278,12 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/delete-files-bulk}
     */
-  @js.native
   trait BulkDeleteFilesResponse extends StObject {
     
     /**
       * List of file ids of successfully deleted files
       */
-    var successfullyDeletedFileIds: js.Array[String] = js.native
+    var successfullyDeletedFileIds: js.Array[String]
   }
   object BulkDeleteFilesResponse {
     
@@ -312,19 +311,18 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/update-file-details}
     */
-  @js.native
   trait FileDetailsOptions extends StObject {
     
     /**
       * Define an important area in the image.
       * Example - 50,50,500,500
       */
-    var customCoordinates: js.UndefOr[String] = js.native
+    var customCoordinates: js.UndefOr[String] = js.undefined
     
     /**
       * Array of tags associated with the file.
       */
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
   }
   object FileDetailsOptions {
     
@@ -361,60 +359,59 @@ object ImageKit {
     * @see {@link https://docs.imagekit.io/api-reference/media-api/get-file-details}
     * @see {@link https://docs.imagekit.io/api-reference/media-api/update-file-details#understanding-response}
     */
-  @js.native
   trait FileDetailsResponse extends StObject {
     
     /**
       * Value of custom coordinates associated with the image in format x,y,width,height.
       * If customCoordinates are not defined then it is null.
       */
-    var customCoordinates: String | Null = js.native
+    var customCoordinates: String | Null
     
     /**
       * The unique fileId of the uploaded file.
       */
-    var fileId: String = js.native
+    var fileId: String
     
     /**
       * The relative path of the file. In case of image, you can use this
       * path to construct different transformations.
       */
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * The type of file, it could be either image or non-image.
       */
-    var fileType: FileType = js.native
+    var fileType: FileType
     
     /**
       * Is the file marked as private. It can be either true or false.
       */
-    var isPrivateFile: Boolean = js.native
+    var isPrivateFile: Boolean
     
     /**
       * Name of the file or folder.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Array of tags associated with the image. If no tags are set, it will be null.
       */
-    var tags: js.Array[String] | Null = js.native
+    var tags: js.Array[String] | Null
     
     /**
       * In case of an image, a small thumbnail URL.
       */
-    var thumbnail: String = js.native
+    var thumbnail: String
     
     /**
       * Type of item. It can be either file or folder.
       */
-    var `type`: Item = js.native
+    var `type`: Item
     
     /**
       * A publicly accessible URL of the file.
       */
-    var url: String = js.native
+    var url: String
   }
   object FileDetailsResponse {
     
@@ -429,7 +426,7 @@ object ImageKit {
       `type`: Item,
       url: String
     ): FileDetailsResponse = {
-      val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], customCoordinates = null, tags = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FileDetailsResponse]
     }
@@ -506,34 +503,33 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/metadata-api/get-image-metadata-for-uploaded-media-files}
     */
-  @js.native
   trait FileMetadataResponse extends StObject {
     
-    var density: Double = js.native
+    var density: Double
     
     /**
       * @see {@link https://docs.imagekit.io/api-reference/metadata-api#exif}
       */
-    var exif: Exif = js.native
+    var exif: Exif
     
-    var format: FileFormat = js.native
+    var format: FileFormat
     
-    var hasColorProfile: Boolean = js.native
+    var hasColorProfile: Boolean
     
-    var hasTransparency: Boolean = js.native
+    var hasTransparency: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
     /**
       * @see {@link https://docs.imagekit.io/api-reference/metadata-api#perceptual-hash-phash}
       */
-    var pHash: String = js.native
+    var pHash: String
     
-    var quality: Double = js.native
+    var quality: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object FileMetadataResponse {
     
@@ -637,7 +633,6 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/list-and-search-files}
     */
-  @js.native
   trait ListFileOptions extends StObject {
     
     /**
@@ -646,13 +641,13 @@ object ImageKit {
       * image - only search in image type files
       * non-image - only search in files which are not image, e.g., JS or CSS or video files.
       */
-    var fileType: js.UndefOr[FileType] = js.native
+    var fileType: js.UndefOr[FileType] = js.undefined
     
     /**
       * Whether to include folders in search results or not. By default only files are searched.
       * Accepts true and false. If this is set to true then tags and fileType parameters are ignored.
       */
-    var includeFolder: js.UndefOr[Boolean] = js.native
+    var includeFolder: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum number of results to return in response:
@@ -660,29 +655,29 @@ object ImageKit {
       * Maximum value - 1000
       * Default value - 1000
       */
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the file or folder.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Folder path if you want to limit the search within a specific folder. For example, /sales-banner/ will only search in folder sales-banner.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * The number of results to skip before returning results.
       * Minimum value - 0
       * Default value - 0
       */
-    var skip: js.UndefOr[Double] = js.native
+    var skip: js.UndefOr[Double] = js.undefined
     
     /**
       * Comma-separated list of tags. Files matching any of the tags are included in result response. If no tag is matched, the file is not included in result set.
       */
-    var tags: js.UndefOr[String] = js.native
+    var tags: js.UndefOr[String] = js.undefined
   }
   object ListFileOptions {
     
@@ -745,64 +740,63 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/list-and-search-files#response-structure-and-status-code-application-json}
     */
-  @js.native
   trait ListFileResponse extends StObject {
     
     /**
       * The date and time when the file was first uploaded. The format is `YYYY-MM-DDTHH:mm:ss.sssZ`.
       */
-    var createdAt: String = js.native
+    var createdAt: String
     
     /**
       * Value of custom coordinates associated with the image in format x,y,width,height. If customCoordinates are not defined then it is null.
       */
-    var customCoordinates: String | Null = js.native
+    var customCoordinates: String | Null
     
     /**
       * The unique fileId of the uploaded file.
       */
-    var fileId: String = js.native
+    var fileId: String
     
     /**
       * The relative path of the file. In the case of an image, you can use this
       * path to construct different transformations.
       */
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * The type of file, it could be either image or non-image.
       */
-    var fileType: FileType = js.native
+    var fileType: FileType
     
     /**
       * Is the file marked as private. It can be either true or false.
       */
-    var isPrivateFile: Boolean = js.native
+    var isPrivateFile: Boolean
     
     /**
       * Name of the file or folder.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Array of tags associated with the image. If no tags are set, it will be null.
       */
-    var tags: js.Array[String] | Null = js.native
+    var tags: js.Array[String] | Null
     
     /**
       * In case of an image, a small thumbnail URL.
       */
-    var thumbnail: String = js.native
+    var thumbnail: String
     
     /**
       * Type of item. It can be either file or folder.
       */
-    var `type`: Item = js.native
+    var `type`: Item
     
     /**
       * A publicly accessible URL of the file.
       */
-    var url: String = js.native
+    var url: String
   }
   object ListFileResponse {
     
@@ -818,7 +812,7 @@ object ImageKit {
       `type`: Item,
       url: String
     ): ListFileResponse = {
-      val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(createdAt = createdAt.asInstanceOf[js.Any], fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], thumbnail = thumbnail.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], customCoordinates = null, tags = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ListFileResponse]
     }
@@ -875,13 +869,12 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/purge-cache#response-structure-and-status-code}
     */
-  @js.native
   trait PurgeCacheResponse extends StObject {
     
     /**
       * requestId can be used to fetch the status of submitted purge request.
       */
-    var requestId: String = js.native
+    var requestId: String
   }
   object PurgeCacheResponse {
     
@@ -904,7 +897,6 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/media-api/purge-cache-status#understanding-response}
     */
-  @js.native
   trait PurgeCacheStatusResponse extends StObject {
     
     /**
@@ -912,7 +904,7 @@ object ImageKit {
       * Complete - The purge request has been successfully completed. And now you should get a fresh object.
       * Check the Age header in response to confirm this.
       */
-    var status: Pending | Completed = js.native
+    var status: Pending | Completed
   }
   object PurgeCacheStatusResponse {
     
@@ -933,213 +925,212 @@ object ImageKit {
   /**
     * @see {@link https://docs.imagekit.io/features/image-transformations}
     */
-  @js.native
   trait Transformation extends StObject {
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#aspect-ratio-ar}
       */
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#background-color-bg}
       */
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#blur-bl}
       */
-    var blur: js.UndefOr[String] = js.native
+    var blur: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#border-b}
       */
-    var border: js.UndefOr[String] = js.native
+    var border: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#color-profile-cp}
       */
-    var colorProfile: js.UndefOr[String] = js.native
+    var colorProfile: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#crop-crop-modes-and-focus}
       */
-    var crop: js.UndefOr[String] = js.native
+    var crop: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#crop-crop-modes-and-focus}
       */
-    var cropMode: js.UndefOr[String] = js.native
+    var cropMode: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#default-image-di}
       */
-    var defaultImage: js.UndefOr[String] = js.native
+    var defaultImage: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#dpr-dpr}
       */
-    var dpr: js.UndefOr[String] = js.native
+    var dpr: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/image-enhancement-and-color-manipulation#contrast-stretch-e-contrast}
       */
-    var effectContrast: js.UndefOr[String] = js.native
+    var effectContrast: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#grayscale-e-grayscale}
       */
-    var effectGray: js.UndefOr[String] = js.native
+    var effectGray: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/image-enhancement-and-color-manipulation#sharpen-e-sharpen}
       */
-    var effectSharpen: js.UndefOr[String] = js.native
+    var effectSharpen: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/image-enhancement-and-color-manipulation#unsharp-mask-e-usm}
       */
-    var effectUSM: js.UndefOr[String] = js.native
+    var effectUSM: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#focus-fo}
       */
-    var focus: js.UndefOr[String] = js.native
+    var focus: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#format-f}
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#width-w}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#lossless-webp-and-png-lo}
       */
-    var lossless: js.UndefOr[String] = js.native
+    var lossless: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#image-metadata-md}
       */
-    var metadata: js.UndefOr[String] = js.native
+    var metadata: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#named-transformation-n}
       */
-    var named: js.UndefOr[String] = js.native
+    var named: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#original-image-orig}
       */
-    var original: js.UndefOr[String] = js.native
+    var original: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-transparency-oa}
       */
-    var overlayAlpha: js.UndefOr[String] = js.native
+    var overlayAlpha: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-background-obg}
       */
-    var overlayBackground: js.UndefOr[String] = js.native
+    var overlayBackground: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-focus-ofo}
       */
-    var overlayFocus: js.UndefOr[String] = js.native
+    var overlayFocus: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-height-oh}
       */
-    var overlayHeight: js.UndefOr[String] = js.native
+    var overlayHeight: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-image-oi}
       */
-    var overlayImage: js.UndefOr[String] = js.native
+    var overlayImage: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#trimming-of-the-overlay-image}
       */
-    var overlayImageTrim: js.UndefOr[String] = js.native
+    var overlayImageTrim: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-text-ot}
       */
-    var overlayText: js.UndefOr[String] = js.native
+    var overlayText: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-text-color-otc}
       */
-    var overlayTextColor: js.UndefOr[String] = js.native
+    var overlayTextColor: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-text-size-ots}
       */
-    var overlayTextFontSize: js.UndefOr[String] = js.native
+    var overlayTextFontSize: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-text-typography-ott}
       */
-    var overlayTextTypography: js.UndefOr[String] = js.native
+    var overlayTextTypography: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-width-ow}
       */
-    var overlayWidth: js.UndefOr[String] = js.native
+    var overlayWidth: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-x-position-ox}
       */
-    var overlayX: js.UndefOr[String] = js.native
+    var overlayX: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/overlay#overlay-y-position-oy}
       */
-    var overlayY: js.UndefOr[String] = js.native
+    var overlayY: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#progressive-image-pr}
       */
-    var progressive: js.UndefOr[String] = js.native
+    var progressive: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#quality-q}
       */
-    var quality: js.UndefOr[String] = js.native
+    var quality: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#radius-r}
       */
-    var radius: js.UndefOr[String] = js.native
+    var radius: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#rotate-rt}
       */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#trim-edges-t}
       */
-    var trim: js.UndefOr[String] = js.native
+    var trim: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#height-h}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#examples-focus-using-cropped-image-coordinates}
       */
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
     /**
       * @see {@link https://docs.imagekit.io/features/image-transformations/resize-crop-and-other-transformations#examples-focus-using-cropped-image-coordinates}
       */
-    var y: js.UndefOr[String] = js.native
+    var y: js.UndefOr[String] = js.undefined
   }
   object Transformation {
     
@@ -1419,7 +1410,6 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/upload-file-api/server-side-file-upload#request-structure-multipart-form-data}
     */
-  @js.native
   trait UploadOptions extends StObject {
     
     /**
@@ -1428,7 +1418,7 @@ object ImageKit {
       * Can be used with fo-customtransformation.
       * If this field is not specified and the file is overwritten, then customCoordinates will be removed.
       */
-    var customCoordinates: js.UndefOr[String] = js.native
+    var customCoordinates: js.UndefOr[String] = js.undefined
     
     /**
       * This field accepts three kinds of values:
@@ -1438,7 +1428,7 @@ object ImageKit {
       *      Downloading file from URL might take longer, so it is recommended that you pass the binary or base64 content of the file.
       *      Pass the full URL, for example - https://www.example.com/rest-of-the-image-path.jpg.
       */
-    var file: String | Buffer = js.native
+    var file: String | Buffer
     
     /**
       * The name with which the file has to be uploaded.
@@ -1447,7 +1437,7 @@ object ImageKit {
       * - Special Characters: . _ and -
       * Any other character including space will be replaced by _
       */
-    var fileName: String = js.native
+    var fileName: String
     
     /**
       * The folder path (e.g. /images/folder/) in which the image has to be uploaded. If the folder(s) didn't exist before, a new folder(s) is created.
@@ -1457,7 +1447,7 @@ object ImageKit {
       * - Using multiple / creates a nested folder.
       * Default value - /
       */
-    var folder: js.UndefOr[String] = js.native
+    var folder: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to mark the file as private or not. This is only relevant for image type files.
@@ -1466,14 +1456,14 @@ object ImageKit {
       *      Without the signed URL, only named transformations work on private images
       * Default value - false
       */
-    var isPrivateFile: js.UndefOr[Boolean] = js.native
+    var isPrivateFile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Comma-separated values of the fields that you want ImageKit.io to return in response.
       *
       * For example, set the value of this field to tags,customCoordinates,isPrivateFile,metadata to get value of tags, customCoordinates, isPrivateFile , and metadata in the response.
       */
-    var responseFields: js.UndefOr[String] = js.native
+    var responseFields: js.UndefOr[String] = js.undefined
     
     /**
       * Set the tags while uploading the file.
@@ -1482,7 +1472,7 @@ object ImageKit {
       * - % is not allowed.
       * - If this field is not specified and the file is overwritten then the tags will be removed.
       */
-    var tags: js.UndefOr[String] = js.native
+    var tags: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to use a unique filename for this file or not.
@@ -1491,7 +1481,7 @@ object ImageKit {
       * - If set false, then the image is uploaded with the provided filename parameter and any existing file with the same name is replaced.
       * Default value - true
       */
-    var useUniqueFileName: js.UndefOr[Boolean] = js.native
+    var useUniqueFileName: js.UndefOr[Boolean] = js.undefined
   }
   object UploadOptions {
     
@@ -1553,73 +1543,72 @@ object ImageKit {
     *
     * @see {@link https://docs.imagekit.io/api-reference/upload-file-api/server-side-file-upload#response-code-and-structure-json}
     */
-  @js.native
   trait UploadResponse extends StObject {
     
     /**
       * Value of custom coordinates associated with the image in format x,y,width,height.
       */
-    var customCoordinates: String | Null = js.native
+    var customCoordinates: String | Null
     
     /**
       * Unique fileId. Store this fileld in your database, as this will be used to perform update action on this file.
       */
-    var fileId: String = js.native
+    var fileId: String
     
     /**
       * The path of the file uploaded. It includes any folder that you specified while uploading.
       */
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * Type of file. It can either be image or non-image.
       */
-    var fileType: FileType = js.native
+    var fileType: FileType
     
     /**
       * Height of the uploaded image file. Only applicable when file type is image.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Is the file marked as private. It can be either true or false.
       */
-    var isPrivateFile: Boolean = js.native
+    var isPrivateFile: Boolean
     
     /**
       * The metadata of the upload file. Use responseFields property in request to get the metadata returned in response of upload API.
       */
-    var metadata: js.UndefOr[String] = js.native
+    var metadata: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the uploaded file.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Size of the uploaded file in bytes.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Array of tags associated with the image.
       */
-    var tags: js.UndefOr[js.Array[String]] = js.native
+    var tags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * In case of an image, a small thumbnail URL.
       */
-    var thumbnailUrl: String = js.native
+    var thumbnailUrl: String
     
     /**
       * The URL of the file.
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * Width of the uploaded image file. Only applicable when file type is image.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object UploadResponse {
     
@@ -1636,7 +1625,7 @@ object ImageKit {
       url: String,
       width: Double
     ): UploadResponse = {
-      val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], thumbnailUrl = thumbnailUrl.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fileId = fileId.asInstanceOf[js.Any], filePath = filePath.asInstanceOf[js.Any], fileType = fileType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], isPrivateFile = isPrivateFile.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], size = size.asInstanceOf[js.Any], thumbnailUrl = thumbnailUrl.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], customCoordinates = null)
       __obj.asInstanceOf[UploadResponse]
     }
     
@@ -1721,48 +1710,47 @@ object ImageKit {
     }
   }
   
-  @js.native
   trait UrlOptionsBase extends StObject {
     
     /**
       * Meant to be used along with the signed parameter to specify the time in seconds from now when the URL should expire.
       * If specified, the URL contains the expiry timestamp in the URL and the image signature is modified accordingly.
       */
-    var expireSeconds: js.UndefOr[Double] = js.native
+    var expireSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * These are the other query parameters that you want to add to the final URL.
       * These can be any query parameters and not necessarily related to ImageKit.
       * Especially useful, if you want to add some versioning parameter to your URLs.
       */
-    var queryParameters: js.UndefOr[StringDictionary[String | Double]] = js.native
+    var queryParameters: js.UndefOr[StringDictionary[String | Double]] = js.undefined
     
     /**
       * Default is false. If set to true, the SDK generates a signed image URL adding the image signature to the image URL.
       * If you are creating URL using src parameter instead of path then do correct urlEndpoint for this to work.
       * Otherwise returned URL will have wrong signature.
       */
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An array of objects specifying the transformations to be applied in the URL.
       * The transformation name and the value should be specified as a key-value pair in each object.
       * @see {@link https://docs.imagekit.io/features/image-transformations/chained-transformations}
       */
-    var transformation: js.UndefOr[js.Array[Transformation]] = js.native
+    var transformation: js.UndefOr[js.Array[Transformation]] = js.undefined
     
     /**
       * Default value is path that places the transformation string as a path parameter in the URL.
       * Can also be specified as query which adds the transformation string as the query parameter tr in the URL.
       * If you use src parameter to create the URL, then the transformation string is always added as a query parameter.
       */
-    var transformationPosition: js.UndefOr[TransformationPosition] = js.native
+    var transformationPosition: js.UndefOr[TransformationPosition] = js.undefined
     
     /**
       * The base URL to be appended before the path of the image.
       * If not specified, the URL Endpoint specified at the time of SDK initialization is used.
       */
-    var urlEndpoint: js.UndefOr[String] = js.native
+    var urlEndpoint: js.UndefOr[String] = js.undefined
   }
   object UrlOptionsBase {
     
@@ -1816,18 +1804,18 @@ object ImageKit {
     }
   }
   
-  @js.native
   trait UrlOptionsPath
-    extends UrlOptionsBase
+    extends StObject
+       with UrlOptionsBase
        with UrlOptions {
     
     /**
       * Conditional. This is the path at which the image exists.
       * For example, /path/to/image.jpg. Either the path or src parameter need to be specified for URL generation.
       */
-    var path: String = js.native
+    var path: String
     
-    var src: js.UndefOr[scala.Nothing] = js.native
+    var src: js.UndefOr[scala.Nothing] = js.undefined
   }
   object UrlOptionsPath {
     
@@ -1845,19 +1833,19 @@ object ImageKit {
     }
   }
   
-  @js.native
   trait UrlOptionsSrc
-    extends UrlOptionsBase
+    extends StObject
+       with UrlOptionsBase
        with UrlOptions {
     
-    var path: js.UndefOr[scala.Nothing] = js.native
+    var path: js.UndefOr[scala.Nothing] = js.undefined
     
     /**
       * Conditional. This is the complete URL of an image already mapped to ImageKit.
       * For example, https://ik.imagekit.io/your_imagekit_id/endpoint/path/to/image.jpg.
       * Either the path or src parameter need to be specified for URL generation.
       */
-    var src: String = js.native
+    var src: String
   }
   object UrlOptionsSrc {
     

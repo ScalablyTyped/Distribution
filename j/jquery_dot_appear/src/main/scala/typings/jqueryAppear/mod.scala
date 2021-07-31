@@ -3,33 +3,31 @@ package typings.jqueryAppear
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait Options[T] extends StObject {
     
     /**
       * X accuracy
       */
-    var accX: js.UndefOr[Double] = js.native
+    var accX: js.UndefOr[Double] = js.undefined
     
     /**
       * Y accuracy
       */
-    var accY: js.UndefOr[Double] = js.native
+    var accY: js.UndefOr[Double] = js.undefined
     
     /**
       * Data to pass into callback
       */
-    var data: js.UndefOr[T] = js.native
+    var data: js.UndefOr[T] = js.undefined
     
     /**
       * Callback is called only in first appear
       */
-    var one: js.UndefOr[Boolean] = js.native
+    var one: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -40,7 +38,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setAccX(value: Double): Self = StObject.set(x, "accX", value.asInstanceOf[js.Any])

@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCostCategoryDefinitionsRequest extends StObject {
   
   /**
     *  The date when the Cost Category was effective. 
     */
-  var EffectiveOn: js.UndefOr[ZonedDateTime] = js.native
+  var EffectiveOn: js.UndefOr[ZonedDateTime] = js.undefined
   
   /**
     *  The number of entries a paginated response contains. 
     */
-  var MaxResults: js.UndefOr[CostCategoryMaxResults] = js.native
+  var MaxResults: js.UndefOr[CostCategoryMaxResults] = js.undefined
   
   /**
     *  The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size. 
     */
-  var NextToken: js.UndefOr[NextPageToken] = js.native
+  var NextToken: js.UndefOr[NextPageToken] = js.undefined
 }
 object ListCostCategoryDefinitionsRequest {
   

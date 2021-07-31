@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudHealthcareV1DicomGcsSource extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait GoogleCloudHealthcareV1DicomGcsSource extends StObject {
     * directory and its sub-directories. For example, `gs://my-bucket/my-directory/ **.dcm` imports all files with .dcm extensions in `my-directory/` and its sub-directories. '?' to match
     * 1 character All other URI formats are invalid. Files matching the wildcard are expected to contain content only, no metadata.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudHealthcareV1DicomGcsSource {
   

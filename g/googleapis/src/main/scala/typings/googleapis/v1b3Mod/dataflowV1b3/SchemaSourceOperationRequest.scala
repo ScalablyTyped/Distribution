@@ -2,48 +2,46 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A work item that represents the different operations that can be performed
   * on a user-defined Source specification.
   */
-@js.native
 trait SchemaSourceOperationRequest extends StObject {
   
   /**
     * Information about a request to get metadata about a source.
     */
-  var getMetadata: js.UndefOr[SchemaSourceGetMetadataRequest] = js.native
+  var getMetadata: js.UndefOr[SchemaSourceGetMetadataRequest] = js.undefined
   
   /**
     * User-provided name of the Read instruction for this source.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * System-defined name for the Read instruction for this source in the
     * original workflow graph.
     */
-  var originalName: js.UndefOr[String] = js.native
+  var originalName: js.UndefOr[String] = js.undefined
   
   /**
     * Information about a request to split a source.
     */
-  var split: js.UndefOr[SchemaSourceSplitRequest] = js.native
+  var split: js.UndefOr[SchemaSourceSplitRequest] = js.undefined
   
   /**
     * System-defined name of the stage containing the source operation. Unique
     * across the workflow.
     */
-  var stageName: js.UndefOr[String] = js.native
+  var stageName: js.UndefOr[String] = js.undefined
   
   /**
     * System-defined name of the Read instruction for this source. Unique
     * across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
 }
 object SchemaSourceOperationRequest {
   

@@ -3,32 +3,30 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/material/Material.MaterialPickerStylesProps> */
-@js.native
 trait PartialMaterialPickerStyl extends StObject {
   
-  var HEXinput: js.UndefOr[CSSProperties] = js.native
+  var HEXinput: js.UndefOr[CSSProperties] = js.undefined
   
-  var HEXlabel: js.UndefOr[CSSProperties] = js.native
+  var HEXlabel: js.UndefOr[CSSProperties] = js.undefined
   
-  var HEXwrap: js.UndefOr[CSSProperties] = js.native
+  var HEXwrap: js.UndefOr[CSSProperties] = js.undefined
   
-  var Hex: js.UndefOr[CSSProperties] = js.native
+  var Hex: js.UndefOr[CSSProperties] = js.undefined
   
-  var RGBinput: js.UndefOr[CSSProperties] = js.native
+  var RGBinput: js.UndefOr[CSSProperties] = js.undefined
   
-  var RGBlabel: js.UndefOr[CSSProperties] = js.native
+  var RGBlabel: js.UndefOr[CSSProperties] = js.undefined
   
-  var RGBwrap: js.UndefOr[CSSProperties] = js.native
+  var RGBwrap: js.UndefOr[CSSProperties] = js.undefined
   
-  var material: js.UndefOr[CSSProperties] = js.native
+  var material: js.UndefOr[CSSProperties] = js.undefined
   
-  var split: js.UndefOr[CSSProperties] = js.native
+  var split: js.UndefOr[CSSProperties] = js.undefined
   
-  var third: js.UndefOr[CSSProperties] = js.native
+  var third: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialMaterialPickerStyl {
   

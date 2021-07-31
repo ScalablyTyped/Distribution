@@ -3,18 +3,16 @@ package typings.intercomClient.anon
 import typings.intercomClient.intercomClientStrings.tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<intercom-client.intercom-client/Tag.Tag> */
-@js.native
 trait PartialTag extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[tag] = js.native
+  var `type`: js.UndefOr[tag] = js.undefined
 }
 object PartialTag {
   

@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * grants access to a collection of data pilot tables.
   * @see com.sun.star.sheet.Spreadsheet
   */
-@js.native
-trait XDataPilotTablesSupplier extends XInterface {
+trait XDataPilotTablesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the collection of data pilot tables.
     * @see com.sun.star.sheet.DataPilotTables
     */
-  val DataPilotTables: XDataPilotTables = js.native
+  val DataPilotTables: XDataPilotTables
   
   /**
     * Returns the collection of data pilot tables.
     * @see com.sun.star.sheet.DataPilotTables
     */
-  def getDataPilotTables(): XDataPilotTables = js.native
+  def getDataPilotTables(): XDataPilotTables
 }
 object XDataPilotTablesSupplier {
   

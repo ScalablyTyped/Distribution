@@ -11,7 +11,6 @@ import typings.html5plus.html5plusStrings.text
 import typings.html5plus.html5plusStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIToastOptions extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * 提示消息框显示的时间
@@ -41,7 +39,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var duration: js.UndefOr[long | short] = js.native
+  var duration: js.UndefOr[long | short] = js.undefined
   
   /**
     * 提示消息框上显示的图标
@@ -49,7 +47,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * 图标的高度
@@ -57,7 +55,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var iconHeight: js.UndefOr[String] = js.native
+  var iconHeight: js.UndefOr[String] = js.undefined
   
   /**
     * 图标的宽度
@@ -65,7 +63,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var iconWidth: js.UndefOr[String] = js.native
+  var iconWidth: js.UndefOr[String] = js.undefined
   
   /**
     * 富文本样式
@@ -73,7 +71,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var richTextStyle: js.UndefOr[PlusNativeObjRichTextStyles] = js.native
+  var richTextStyle: js.UndefOr[PlusNativeObjRichTextStyles] = js.undefined
   
   /**
     * 提示消息框上显示的样式
@@ -84,7 +82,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     * 提示消息框上显示的文本类型
@@ -103,7 +101,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var `type`: js.UndefOr[text | richtext] = js.native
+  var `type`: js.UndefOr[text | richtext] = js.undefined
   
   /**
     * 提示消息在屏幕中的垂直位置
@@ -114,7 +112,7 @@ trait PlusNativeUIToastOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var verticalAlign: js.UndefOr[top | center | bottom] = js.native
+  var verticalAlign: js.UndefOr[top | center | bottom] = js.undefined
 }
 object PlusNativeUIToastOptions {
   

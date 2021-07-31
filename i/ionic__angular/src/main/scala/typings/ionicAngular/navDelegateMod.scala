@@ -8,7 +8,6 @@ import typings.ionicAngular.angularDelegateMod.AngularDelegate
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navDelegateMod {
@@ -17,7 +16,7 @@ object navDelegateMod {
   @js.native
   class NavDelegate protected () extends StObject {
     def this(
-      ref: ElementRef[_],
+      ref: ElementRef[js.Any],
       resolver: ComponentFactoryResolver,
       injector: Injector,
       angularDelegate: AngularDelegate,

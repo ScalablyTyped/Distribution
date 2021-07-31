@@ -2,31 +2,29 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identity-Aware Proxy
   */
-@js.native
 trait SchemaBackendServiceIAP extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var oauth2ClientId: js.UndefOr[String] = js.native
+  var oauth2ClientId: js.UndefOr[String] = js.undefined
   
   /**
     * [Input Only] OAuth client info required to generate client id to be used
     * for IAP.
     */
-  var oauth2ClientInfo: js.UndefOr[SchemaBackendServiceIAPOAuth2ClientInfo] = js.native
+  var oauth2ClientInfo: js.UndefOr[SchemaBackendServiceIAPOAuth2ClientInfo] = js.undefined
   
-  var oauth2ClientSecret: js.UndefOr[String] = js.native
+  var oauth2ClientSecret: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] SHA256 hash value for the field oauth2_client_secret above.
     */
-  var oauth2ClientSecretSha256: js.UndefOr[String] = js.native
+  var oauth2ClientSecretSha256: js.UndefOr[String] = js.undefined
 }
 object SchemaBackendServiceIAP {
   

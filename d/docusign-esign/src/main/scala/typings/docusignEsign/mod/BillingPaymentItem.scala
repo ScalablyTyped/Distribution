@@ -2,33 +2,31 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPaymentItem extends StObject {
   
   /**
     * The total amount of the purchase.
     */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /**
     * A sender-defined description of the line item.
     *
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var paymentDate: js.UndefOr[String] = js.native
+  var paymentDate: js.UndefOr[String] = js.undefined
   
-  var paymentId: js.UndefOr[String] = js.native
+  var paymentId: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, a PDF version of the invoice is available.
     *
     * To get the PDF, make the call again and change "Accept:" in the header to "Accept: application/pdf".
     */
-  var paymentNumber: js.UndefOr[String] = js.native
+  var paymentNumber: js.UndefOr[String] = js.undefined
 }
 object BillingPaymentItem {
   

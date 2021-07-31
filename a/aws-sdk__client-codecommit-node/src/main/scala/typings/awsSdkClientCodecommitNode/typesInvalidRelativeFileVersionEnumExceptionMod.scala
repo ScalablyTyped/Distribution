@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.postCommentForComparedCommitExceptions
 import typings.awsSdkClientCodecommitNode.postCommentForPullRequestExceptionsUnionMod.PostCommentForPullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidRelativeFileVersionEnumExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRelativeFileVersionEnumExceptionDetails> * / any */ @js.native
-  trait InvalidRelativeFileVersionEnumException
-    extends PostCommentForComparedCommitExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidRelativeFileVersionEnumExceptionDetails> * / any */ trait InvalidRelativeFileVersionEnumException
+    extends StObject
+       with PostCommentForComparedCommitExceptionsUnion
        with PostCommentForPullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRelativeFileVersionEnumException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRelativeFileVersionEnumException
   }
   object InvalidRelativeFileVersionEnumException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRelativeFileVersionEnumException
-    ): InvalidRelativeFileVersionEnumException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidRelativeFileVersionEnumException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRelativeFileVersionEnumException")
       __obj.asInstanceOf[InvalidRelativeFileVersionEnumException]
     }
     
@@ -37,6 +34,5 @@ object typesInvalidRelativeFileVersionEnumExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidRelativeFileVersionEnumExceptionDetails extends StObject
 }

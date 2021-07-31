@@ -4,11 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.global
 import typings.arcgisJsApi.arcgisJsApiStrings.local
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait websceneInitialViewProperties extends Accessor {
+trait websceneInitialViewProperties
+  extends StObject
+     with Accessor {
   
   /**
     * The initial environment settings of the [WebScene](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebScene.html).

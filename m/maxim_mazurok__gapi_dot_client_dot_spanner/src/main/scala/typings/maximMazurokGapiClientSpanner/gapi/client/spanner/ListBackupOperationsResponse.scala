@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBackupOperationsResponse extends StObject {
   
   /** `next_page_token` can be sent in a subsequent ListBackupOperations call to fetch more of the matching metadata. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of matching backup long-running operations. Each operation's name will be prefixed by the backup's name and the operation's metadata will be of type CreateBackupMetadata.
     * Operations returned include those that are pending or have completed/failed/canceled within the last 7 days. Operations returned are ordered by
     * `operation.metadata.value.progress.start_time` in descending order starting from the most recently started operation.
     */
-  var operations: js.UndefOr[js.Array[Operation]] = js.native
+  var operations: js.UndefOr[js.Array[Operation]] = js.undefined
 }
 object ListBackupOperationsResponse {
   

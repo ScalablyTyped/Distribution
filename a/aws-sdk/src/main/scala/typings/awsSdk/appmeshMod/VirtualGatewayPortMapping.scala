@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayPortMapping extends StObject {
   
   /**
     * The port used for the port mapping. Specify one protocol.
     */
-  var port: PortNumber = js.native
+  var port: PortNumber
   
   /**
     * The protocol used for the port mapping.
     */
-  var protocol: VirtualGatewayPortProtocol = js.native
+  var protocol: VirtualGatewayPortProtocol
 }
 object VirtualGatewayPortMapping {
   

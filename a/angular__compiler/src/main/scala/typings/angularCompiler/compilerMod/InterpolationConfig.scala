@@ -2,7 +2,6 @@ package typings.angularCompiler.compilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/compiler", "InterpolationConfig")
@@ -14,10 +13,12 @@ class InterpolationConfig protected ()
 /* static members */
 object InterpolationConfig {
   
-  @JSImport("@angular/compiler/compiler", "InterpolationConfig.fromArray")
+  @JSImport("@angular/compiler/compiler", "InterpolationConfig")
   @js.native
-  def fromArray(): typings.angularCompiler.interpolationConfigMod.InterpolationConfig = js.native
-  @JSImport("@angular/compiler/compiler", "InterpolationConfig.fromArray")
-  @js.native
-  def fromArray(markers: js.Tuple2[String, String]): typings.angularCompiler.interpolationConfigMod.InterpolationConfig = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromArray(): typings.angularCompiler.interpolationConfigMod.InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")().asInstanceOf[typings.angularCompiler.interpolationConfigMod.InterpolationConfig]
+  @scala.inline
+  def fromArray(markers: js.Tuple2[String, String]): typings.angularCompiler.interpolationConfigMod.InterpolationConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("fromArray")(markers.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.interpolationConfigMod.InterpolationConfig]
 }

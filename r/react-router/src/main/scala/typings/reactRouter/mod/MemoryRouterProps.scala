@@ -4,21 +4,19 @@ import typings.history.mod.LocationDescriptor
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryRouterProps extends StObject {
   
   var getUserConfirmation: js.UndefOr[
     js.Function2[/* message */ String, /* callback */ js.Function1[/* ok */ Boolean, Unit], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var initialEntries: js.UndefOr[js.Array[LocationDescriptor[LocationState]]] = js.native
+  var initialEntries: js.UndefOr[js.Array[LocationDescriptor[LocationState]]] = js.undefined
   
-  var initialIndex: js.UndefOr[Double] = js.native
+  var initialIndex: js.UndefOr[Double] = js.undefined
   
-  var keyLength: js.UndefOr[Double] = js.native
+  var keyLength: js.UndefOr[Double] = js.undefined
 }
 object MemoryRouterProps {
   

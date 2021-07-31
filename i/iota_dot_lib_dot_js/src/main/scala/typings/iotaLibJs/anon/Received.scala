@@ -3,15 +3,13 @@ package typings.iotaLibJs.anon
 import typings.iotaLibJs.mod.TransactionObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Received extends StObject {
   
-  var received: js.Array[TransactionObject] = js.native
+  var received: js.Array[TransactionObject]
   
-  var sent: js.Array[TransactionObject] = js.native
+  var sent: js.Array[TransactionObject]
 }
 object Received {
   

@@ -6,12 +6,10 @@ import typings.std.Iterable
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMessageAttributeValueMod {
   
-  @js.native
   trait MessageAttributeValue extends StObject {
     
     /**
@@ -19,27 +17,27 @@ object typesMessageAttributeValueMod {
       */
     var BinaryListValues: js.UndefOr[
         (js.Array[ArrayBuffer | ArrayBufferView | String]) | (Iterable[ArrayBuffer | ArrayBufferView | String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * <p>Binary type attributes can store any binary data, such as compressed data, encrypted data, or images.</p>
       */
-    var BinaryValue: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.native
+    var BinaryValue: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
     
     /**
       * <p>Amazon SQS supports the following logical data types: <code>String</code>, <code>Number</code>, and <code>Binary</code>. For the <code>Number</code> data type, you must use <code>StringValue</code>.</p> <p>You can also append custom labels. For more information, see <a href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSDeveloperGuide/sqs-message-attributes.html">Amazon SQS Message Attributes</a> in the <i>Amazon Simple Queue Service Developer Guide</i>.</p>
       */
-    var DataType: String = js.native
+    var DataType: String
     
     /**
       * <p>Not implemented. Reserved for future use.</p>
       */
-    var StringListValues: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var StringListValues: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
     
     /**
       * <p>Strings are Unicode with UTF-8 binary encoding. For a list of code values, see <a href="http://en.wikipedia.org/wiki/ASCII#ASCII_printable_characters">ASCII Printable Characters</a>.</p>
       */
-    var StringValue: js.UndefOr[String] = js.native
+    var StringValue: js.UndefOr[String] = js.undefined
   }
   object MessageAttributeValue {
     
@@ -89,26 +87,27 @@ object typesMessageAttributeValueMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMessageAttributeValue extends MessageAttributeValue {
+  trait UnmarshalledMessageAttributeValue
+    extends StObject
+       with MessageAttributeValue {
     
     /**
       * <p>Not implemented. Reserved for future use.</p>
       */
     @JSName("BinaryListValues")
-    var BinaryListValues_UnmarshalledMessageAttributeValue: js.UndefOr[js.Array[Uint8Array]] = js.native
+    var BinaryListValues_UnmarshalledMessageAttributeValue: js.UndefOr[js.Array[Uint8Array]] = js.undefined
     
     /**
       * <p>Binary type attributes can store any binary data, such as compressed data, encrypted data, or images.</p>
       */
     @JSName("BinaryValue")
-    var BinaryValue_UnmarshalledMessageAttributeValue: js.UndefOr[Uint8Array] = js.native
+    var BinaryValue_UnmarshalledMessageAttributeValue: js.UndefOr[Uint8Array] = js.undefined
     
     /**
       * <p>Not implemented. Reserved for future use.</p>
       */
     @JSName("StringListValues")
-    var StringListValues_UnmarshalledMessageAttributeValue: js.UndefOr[js.Array[String]] = js.native
+    var StringListValues_UnmarshalledMessageAttributeValue: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledMessageAttributeValue {
     

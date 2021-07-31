@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeldAccount extends StObject {
   
   /** The account's ID as provided by the Admin SDK. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The primary email address of the account. If used as an input, this takes precedence over account ID. */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /** Output only. The first name of the account holder. */
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
   /** Output only. When the account was put on hold. */
-  var holdTime: js.UndefOr[String] = js.native
+  var holdTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The last name of the account holder. */
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
 }
 object HeldAccount {
   

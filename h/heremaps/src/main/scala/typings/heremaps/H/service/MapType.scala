@@ -4,7 +4,6 @@ import typings.heremaps.H.map.layer.MarkerTileLayer
 import typings.heremaps.H.map.layer.TileLayer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,26 +20,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property transit {H.map.layer.TileLayer=} - map tiles with public transit lines highlighted
   * @property labels {H.map.layer.TileLayer=} - transparent map tiles with labels only
   */
-@js.native
 trait MapType extends StObject {
   
-  var base: TileLayer = js.native
+  var base: TileLayer
   
-  var basenight: js.UndefOr[TileLayer | Null] = js.native
+  var basenight: js.UndefOr[TileLayer | Null] = js.undefined
   
-  var labels: TileLayer = js.native
+  var labels: TileLayer
   
-  var map: TileLayer = js.native
+  var map: TileLayer
   
-  var mapnight: js.UndefOr[TileLayer | Null] = js.native
+  var mapnight: js.UndefOr[TileLayer | Null] = js.undefined
   
-  var trafficincidents: js.UndefOr[MarkerTileLayer | Null] = js.native
+  var trafficincidents: js.UndefOr[MarkerTileLayer | Null] = js.undefined
   
-  var transit: js.UndefOr[TileLayer] = js.native
+  var transit: js.UndefOr[TileLayer] = js.undefined
   
-  var xbase: TileLayer = js.native
+  var xbase: TileLayer
   
-  var xbasenight: js.UndefOr[TileLayer | Null] = js.native
+  var xbasenight: js.UndefOr[TileLayer | Null] = js.undefined
 }
 object MapType {
   

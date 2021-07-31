@@ -4,38 +4,49 @@ import typings.reactCalendar.mod.CalendarType
 import typings.reactCalendar.mod.Detail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactCalendarStrings {
   
   @js.native
-  sealed trait Arabic extends CalendarType
+  sealed trait Arabic
+    extends StObject
+       with CalendarType
   @scala.inline
   def Arabic: Arabic = "Arabic".asInstanceOf[Arabic]
   
   @js.native
-  sealed trait Hebrew extends CalendarType
+  sealed trait Hebrew
+    extends StObject
+       with CalendarType
   @scala.inline
   def Hebrew: Hebrew = "Hebrew".asInstanceOf[Hebrew]
   
   @js.native
-  sealed trait `ISO 8601` extends CalendarType
+  sealed trait `ISO 8601`
+    extends StObject
+       with CalendarType
   @scala.inline
   def `ISO 8601`: `ISO 8601` = ("ISO 8601").asInstanceOf[`ISO 8601`]
   
   @js.native
-  sealed trait US extends CalendarType
+  sealed trait US
+    extends StObject
+       with CalendarType
   @scala.inline
   def US: US = "US".asInstanceOf[US]
   
   @js.native
-  sealed trait century extends Detail
+  sealed trait century
+    extends StObject
+       with Detail
   @scala.inline
   def century: century = "century".asInstanceOf[century]
   
   @js.native
-  sealed trait decade extends Detail
+  sealed trait decade
+    extends StObject
+       with Detail
   @scala.inline
   def decade: decade = "decade".asInstanceOf[decade]
   
@@ -45,7 +56,9 @@ object reactCalendarStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait month extends Detail
+  sealed trait month
+    extends StObject
+       with Detail
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -60,7 +73,9 @@ object reactCalendarStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait year extends Detail
+  sealed trait year
+    extends StObject
+       with Detail
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

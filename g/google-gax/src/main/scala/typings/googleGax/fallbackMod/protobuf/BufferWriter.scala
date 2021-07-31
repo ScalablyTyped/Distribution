@@ -3,7 +3,6 @@ package typings.googleGax.fallbackMod.protobuf
 import typings.protobufjs.mod.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax/build/src/fallback", "protobuf.BufferWriter")
@@ -14,12 +13,15 @@ class BufferWriter ()
 /* static members */
 object BufferWriter {
   
+  @JSImport("google-gax/build/src/fallback", "protobuf.BufferWriter")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Allocates a buffer of the specified size.
     * @param size Buffer size
     * @returns Buffer
     */
-  @JSImport("google-gax/build/src/fallback", "protobuf.BufferWriter.alloc")
-  @js.native
-  def alloc(size: Double): Buffer = js.native
+  @scala.inline
+  def alloc(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
 }

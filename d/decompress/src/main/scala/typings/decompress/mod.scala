@@ -3,72 +3,62 @@ package typings.decompress
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String, output: js.UndefOr[scala.Nothing], opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String, output: String): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String, output: String, opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String, output: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: String, output: DecompressOptions, opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, output: js.UndefOr[scala.Nothing], opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, output: String): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, output: String, opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, output: DecompressOptions): js.Promise[js.Array[File]] = js.native
-  @JSImport("decompress", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, output: DecompressOptions, opts: DecompressOptions): js.Promise[js.Array[File]] = js.native
+  @scala.inline
+  def apply(input: String): js.Promise[js.Array[File]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: String, output: String): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: String, output: String, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: String, output: Unit, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: String, output: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: String, output: DecompressOptions, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer): js.Promise[js.Array[File]] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer, output: String): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer, output: String, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer, output: Unit, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer, output: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
+  @scala.inline
+  def apply(input: Buffer, output: DecompressOptions, opts: DecompressOptions): js.Promise[js.Array[File]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], output.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[File]]]
   
+  @JSImport("decompress", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait DecompressOptions extends StObject {
     
     /**
       * Filter out files before extracting
       */
-    var filter: js.UndefOr[js.Function1[/* file */ File, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* file */ File, Boolean]] = js.undefined
     
     /**
       * Map files before extracting
       */
-    var map: js.UndefOr[js.Function1[/* file */ File, File]] = js.native
+    var map: js.UndefOr[js.Function1[/* file */ File, File]] = js.undefined
     
     /**
       * Array of plugins to use.
       * Default: [decompressTar(), decompressTarbz2(), decompressTargz(), decompressUnzip()]
       */
-    var plugins: js.UndefOr[js.Array[_]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Remove leading directory components from extracted files.
       * Default: 0
       */
-    var strip: js.UndefOr[Double] = js.native
+    var strip: js.UndefOr[Double] = js.undefined
   }
   object DecompressOptions {
     
@@ -94,7 +84,7 @@ object mod {
       def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[_]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[js.Any]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -110,18 +100,17 @@ object mod {
     }
   }
   
-  @js.native
   trait File extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: String = js.native
+    var mtime: String
     
-    var path: String = js.native
+    var path: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object File {
     

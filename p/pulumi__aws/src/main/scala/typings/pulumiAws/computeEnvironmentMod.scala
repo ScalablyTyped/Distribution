@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object computeEnvironmentMod {
@@ -85,6 +84,10 @@ object computeEnvironmentMod {
   /* static members */
   object ComputeEnvironment {
     
+    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ComputeEnvironment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -94,65 +97,59 @@ object computeEnvironmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState): ComputeEnvironment = js.native
-    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): ComputeEnvironment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComputeEnvironmentState): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ComputeEnvironmentState, opts: CustomResourceOptions): ComputeEnvironment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ComputeEnvironment]
     
     /**
       * Returns true if the given object is an instance of ComputeEnvironment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/batch/computeEnvironment", "ComputeEnvironment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/batch/computeEnvironment.ComputeEnvironment */ Boolean]
   }
   
-  @js.native
   trait ComputeEnvironmentArgs extends StObject {
     
     /**
       * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
       */
-    val computeEnvironmentName: js.UndefOr[Input[String]] = js.native
+    val computeEnvironmentName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.
       */
-    val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.native
+    val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
       */
-    val computeResources: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]] = js.native
+    val computeResources: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]] = js.undefined
     
     /**
       * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
       */
-    val serviceRole: Input[String] = js.native
+    val serviceRole: Input[String]
     
     /**
       * The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pair tags to be applied to resources that are launched in the compute environment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of compute environment. Valid items are `EC2` or `SPOT`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object ComputeEnvironmentArgs {
     
@@ -204,63 +201,62 @@ object computeEnvironmentMod {
     }
   }
   
-  @js.native
   trait ComputeEnvironmentState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the compute environment.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name for your compute environment. Up to 128 letters (uppercase and lowercase), numbers, and underscores are allowed. If omitted, this provider will assign a random, unique name.
       */
-    val computeEnvironmentName: js.UndefOr[Input[String]] = js.native
+    val computeEnvironmentName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique compute environment name beginning with the specified prefix. Conflicts with `computeEnvironmentName`.
       */
-    val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.native
+    val computeEnvironmentNamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Details of the compute resources managed by the compute environment. This parameter is required for managed compute environments. See details below.
       */
-    val computeResources: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]] = js.native
+    val computeResources: js.UndefOr[Input[typings.pulumiAws.inputMod.batch.ComputeEnvironmentComputeResources]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the underlying Amazon ECS cluster used by the compute environment.
       */
-    val ecsClusterArn: js.UndefOr[Input[String]] = js.native
+    val ecsClusterArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The full Amazon Resource Name (ARN) of the IAM role that allows AWS Batch to make calls to other AWS services on your behalf.
       */
-    val serviceRole: js.UndefOr[Input[String]] = js.native
+    val serviceRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the compute environment. If the state is `ENABLED`, then the compute environment accepts jobs from a queue and can scale out automatically based on queues. Valid items are `ENABLED` or `DISABLED`. Defaults to `ENABLED`.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The current status of the compute environment (for example, CREATING or VALID).
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A short, human-readable string to provide additional details about the current status of the compute environment.
       */
-    val statusReason: js.UndefOr[Input[String]] = js.native
+    val statusReason: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value pair tags to be applied to resources that are launched in the compute environment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The type of compute environment. Valid items are `EC2` or `SPOT`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object ComputeEnvironmentState {
     

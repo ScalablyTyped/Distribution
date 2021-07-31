@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PosStore extends StObject {
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#posStore`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Required. The street address of the store. */
-  var storeAddress: js.UndefOr[String] = js.native
+  var storeAddress: js.UndefOr[String] = js.undefined
   
   /** Required. A store identifier that is unique for the given merchant. */
-  var storeCode: js.UndefOr[String] = js.native
+  var storeCode: js.UndefOr[String] = js.undefined
 }
 object PosStore {
   

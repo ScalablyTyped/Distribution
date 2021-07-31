@@ -3,22 +3,21 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.photo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputMediaPhoto
-  extends InputMediaBase
+  extends StObject
+     with InputMediaBase
      with InputMedia {
   
-  var `type`: photo = js.native
+  var `type`: photo
 }
 object InputMediaPhoto {
   
   @scala.inline
-  def apply(media: String, `type`: photo): InputMediaPhoto = {
+  def apply(media: String): InputMediaPhoto = {
     val __obj = js.Dynamic.literal(media = media.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("photo")
     __obj.asInstanceOf[InputMediaPhoto]
   }
   

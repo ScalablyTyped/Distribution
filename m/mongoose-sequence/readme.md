@@ -10,9 +10,9 @@ Very generic autoincrement plugin for mongoose
 | ------------------ | :-------------: |
 | Full name          | mongoose-sequence |
 | Keywords           | mongoose, autoincrement, sequence, seq |
-| # releases         | 7 |
-| # dependents       | 17 |
-| # downloads        | 215469 |
+| # releases         | 6 |
+| # dependents       | 23 |
+| # downloads        | 400835 |
 | # stars            | 5 |
 
 ## Links

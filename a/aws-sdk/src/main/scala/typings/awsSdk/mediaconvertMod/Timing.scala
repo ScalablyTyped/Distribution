@@ -2,26 +2,24 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timing extends StObject {
   
   /**
     * The time, in Unix epoch format, that the transcoding job finished
     */
-  var FinishTime: js.UndefOr[timestampUnix] = js.native
+  var FinishTime: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * The time, in Unix epoch format, that transcoding for the job began.
     */
-  var StartTime: js.UndefOr[timestampUnix] = js.native
+  var StartTime: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * The time, in Unix epoch format, that you submitted the job.
     */
-  var SubmitTime: js.UndefOr[timestampUnix] = js.native
+  var SubmitTime: js.UndefOr[timestampUnix] = js.undefined
 }
 object Timing {
   

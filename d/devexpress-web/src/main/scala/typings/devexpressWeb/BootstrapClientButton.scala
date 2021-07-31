@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the BootstrapButton control.
   */
-@js.native
-trait BootstrapClientButton extends ASPxClientButton {
+trait BootstrapClientButton
+  extends StObject
+     with ASPxClientButton {
   
   /**
     * Gets the CSS class of the icon displayed within the button badge.
     */
-  def GetBadgeIconCssClass(): String = js.native
+  def GetBadgeIconCssClass(): String
   
   /**
     * Gets the text displayed within the button badge.
     */
-  def GetBadgeText(): String = js.native
+  def GetBadgeText(): String
   
   /**
     * Sets the CSS class of the icon displayed within the button badge.
     * @param cssClass A string containing the name of a CSS class.
     */
-  def SetBadgeIconCssClass(cssClass: String): Unit = js.native
+  def SetBadgeIconCssClass(cssClass: String): Unit
   
   /**
     * Sets the text displayed within the button badge.
     * @param text A String specifying the badge text.
     */
-  def SetBadgeText(text: String): Unit = js.native
+  def SetBadgeText(text: String): Unit
 }
 object BootstrapClientButton {
   

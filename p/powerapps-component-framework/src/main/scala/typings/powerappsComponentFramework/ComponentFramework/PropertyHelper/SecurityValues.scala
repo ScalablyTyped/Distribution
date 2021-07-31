@@ -2,20 +2,18 @@ package typings.powerappsComponentFramework.ComponentFramework.PropertyHelper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entity metadata security values
   */
-@js.native
 trait SecurityValues extends StObject {
   
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var readable: Boolean = js.native
+  var readable: Boolean
   
-  var secured: Boolean = js.native
+  var secured: Boolean
 }
 object SecurityValues {
   

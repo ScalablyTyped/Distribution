@@ -1,12 +1,11 @@
 package typings.chrome.global.chrome
 
 import typings.chrome.Window
-import typings.chrome.chrome.extension.FetchProperties
-import typings.chrome.chrome.extension.LastError
-import typings.chrome.chrome.extension.OnRequestEvent
+import typings.chrome.chrome.`extension`.FetchProperties
+import typings.chrome.chrome.`extension`.LastError
+import typings.chrome.chrome.`extension`.OnRequestEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -16,33 +15,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
   * Availability: Since Chrome 5.
   */
-object extension {
+object `extension` {
   
   @JSGlobal("chrome.extension")
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.extension.getBackgroundPage")
-  @js.native
-  def getBackgroundPage(): Window | Null = js.native
+  @scala.inline
+  def getBackgroundPage(): Window | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getBackgroundPage")().asInstanceOf[Window | Null]
   
-  @JSGlobal("chrome.extension.getExtensionTabs")
-  @js.native
-  def getExtensionTabs(): js.Array[Window] = js.native
-  @JSGlobal("chrome.extension.getExtensionTabs")
-  @js.native
-  def getExtensionTabs(windowId: Double): js.Array[Window] = js.native
+  @scala.inline
+  def getExtensionTabs(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")().asInstanceOf[js.Array[Window]]
+  @scala.inline
+  def getExtensionTabs(windowId: Double): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtensionTabs")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
   
-  @JSGlobal("chrome.extension.getURL")
-  @js.native
-  def getURL(path: String): String = js.native
+  @scala.inline
+  def getURL(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getURL")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("chrome.extension.getViews")
-  @js.native
-  def getViews(): js.Array[Window] = js.native
-  @JSGlobal("chrome.extension.getViews")
-  @js.native
-  def getViews(fetchProperties: FetchProperties): js.Array[Window] = js.native
+  @scala.inline
+  def getViews(): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")().asInstanceOf[js.Array[Window]]
+  @scala.inline
+  def getViews(fetchProperties: FetchProperties): js.Array[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("getViews")(fetchProperties.asInstanceOf[js.Any]).asInstanceOf[js.Array[Window]]
   
   @JSGlobal("chrome.extension.inIncognitoContext")
   @js.native
@@ -50,13 +43,11 @@ object extension {
   @scala.inline
   def inIncognitoContext_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("inIncognitoContext")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.extension.isAllowedFileSchemeAccess")
-  @js.native
-  def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isAllowedFileSchemeAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedFileSchemeAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.extension.isAllowedIncognitoAccess")
-  @js.native
-  def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isAllowedIncognitoAccess(callback: js.Function1[/* isAllowedAccess */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isAllowedIncognitoAccess")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.extension.lastError")
   @js.native
@@ -77,20 +68,15 @@ object extension {
   @scala.inline
   def onRequest_=(x: OnRequestEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onRequest")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("chrome.extension.sendRequest")
-  @js.native
-  def sendRequest(extensionId: String, request: js.Any): Unit = js.native
-  @JSGlobal("chrome.extension.sendRequest")
-  @js.native
-  def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
-  @JSGlobal("chrome.extension.sendRequest")
-  @js.native
-  def sendRequest(request: js.Any): Unit = js.native
-  @JSGlobal("chrome.extension.sendRequest")
-  @js.native
-  def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def sendRequest(extensionId: String, request: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendRequest(extensionId: String, request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(extensionId.asInstanceOf[js.Any], request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sendRequest(request: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def sendRequest(request: js.Any, responseCallback: js.Function1[/* response */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(request.asInstanceOf[js.Any], responseCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.extension.setUpdateUrlData")
-  @js.native
-  def setUpdateUrlData(data: String): Unit = js.native
+  @scala.inline
+  def setUpdateUrlData(data: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpdateUrlData")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

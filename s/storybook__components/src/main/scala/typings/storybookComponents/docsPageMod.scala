@@ -10,7 +10,6 @@ import typings.storybookComponents.anon.PickDetailedHTMLPropsHTML
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object docsPageMod {
@@ -47,12 +46,11 @@ object docsPageMod {
     Theme
   ] = js.native
   
-  @js.native
   trait DocsPageProps extends StObject {
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object DocsPageProps {
     

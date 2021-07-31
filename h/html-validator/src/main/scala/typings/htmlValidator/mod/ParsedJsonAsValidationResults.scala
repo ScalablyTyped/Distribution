@@ -2,13 +2,11 @@ package typings.htmlValidator.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedJsonAsValidationResults extends StObject {
   
-  var messages: js.Array[ValidationMessageObject] = js.native
+  var messages: js.Array[ValidationMessageObject]
 }
 object ParsedJsonAsValidationResults {
   

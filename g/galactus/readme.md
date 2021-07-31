@@ -12,7 +12,7 @@ Prunes dependencies from your package
 | Keywords           | prune, production |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 1850199 |
+| # downloads        | 2439569 |
 | # stars            | 0 |
 
 ## Links

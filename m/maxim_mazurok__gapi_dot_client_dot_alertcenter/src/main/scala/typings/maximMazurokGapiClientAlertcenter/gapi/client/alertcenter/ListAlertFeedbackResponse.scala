@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAlertFeedbackResponse extends StObject {
   
   /** The list of alert feedback. Feedback entries for each alert are ordered by creation time descending. */
-  var feedback: js.UndefOr[js.Array[AlertFeedback]] = js.native
+  var feedback: js.UndefOr[js.Array[AlertFeedback]] = js.undefined
 }
 object ListAlertFeedbackResponse {
   

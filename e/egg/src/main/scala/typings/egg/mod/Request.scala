@@ -2,12 +2,12 @@ package typings.egg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Request
-  extends typings.koa.mod.Request {
+  extends StObject
+     with typings.koa.mod.Request {
   
   // tslint:disable-line
   /**

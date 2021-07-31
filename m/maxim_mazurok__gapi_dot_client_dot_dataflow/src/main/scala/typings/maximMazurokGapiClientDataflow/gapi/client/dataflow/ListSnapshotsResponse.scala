@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSnapshotsResponse extends StObject {
   
   /** Returned snapshots. */
-  var snapshots: js.UndefOr[js.Array[Snapshot]] = js.native
+  var snapshots: js.UndefOr[js.Array[Snapshot]] = js.undefined
 }
 object ListSnapshotsResponse {
   

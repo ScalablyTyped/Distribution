@@ -9,7 +9,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formMod {
@@ -21,18 +20,18 @@ object formMod {
   
   type Form = Component[FormProps, js.Object, js.Any]
   
-  @js.native
   trait FormProps
-    extends FormHTMLAttributes[HTMLFormElement]
+    extends StObject
+       with FormHTMLAttributes[HTMLFormElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLFormElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLFormElement]] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object FormProps {
     
@@ -70,7 +69,7 @@ object formMod {
       def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

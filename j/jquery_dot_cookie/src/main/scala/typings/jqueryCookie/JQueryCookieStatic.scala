@@ -3,7 +3,6 @@ package typings.jqueryCookie
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -30,7 +29,7 @@ trait JQueryCookieStatic extends StObject {
     * @param name The name of the cookie to get
     * @param converter A conversion function to change the cookie's value to a different representation on the fly
     */
-  def apply(name: String, converter: js.Function1[/* value */ String, _]): js.Any = js.native
+  def apply(name: String, converter: js.Function1[/* value */ String, js.Any]): js.Any = js.native
   /**
     * Sets a cookie
     * @param name The name of the cookie to set

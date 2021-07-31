@@ -7,20 +7,20 @@ import typings.react.mod.MutableRefObject
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
   
-  @JSImport("@nivo/tooltip/dist/types/hooks", "useTooltip")
+  @JSImport("@nivo/tooltip/dist/types/hooks", JSImport.Namespace)
   @js.native
-  def useTooltip(): TooltipActionsContextData = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@nivo/tooltip/dist/types/hooks", "useTooltipHandlers")
-  @js.native
-  def useTooltipHandlers(container: MutableRefObject[HTMLDivElement]): Actions = js.native
+  @scala.inline
+  def useTooltip(): TooltipActionsContextData = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltip")().asInstanceOf[TooltipActionsContextData]
   
-  @JSImport("@nivo/tooltip/dist/types/hooks", "useTooltipState")
-  @js.native
-  def useTooltipState(): TooltipStateContextData = js.native
+  @scala.inline
+  def useTooltipHandlers(container: MutableRefObject[HTMLDivElement]): Actions = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipHandlers")(container.asInstanceOf[js.Any]).asInstanceOf[Actions]
+  
+  @scala.inline
+  def useTooltipState(): TooltipStateContextData = ^.asInstanceOf[js.Dynamic].applyDynamic("useTooltipState")().asInstanceOf[TooltipStateContextData]
 }

@@ -2,41 +2,39 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWindow extends StObject {
   
-  def Close(): Unit = js.native
+  def Close(): Unit
   
-  val Events: IWindowEvents = js.native
+  val Events: IWindowEvents
   
-  def Focus(): Unit = js.native
+  def Focus(): Unit
   
-  val Handle: Double = js.native
+  val Handle: Double
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val IsFocused: Boolean = js.native
+  val IsFocused: Boolean
   
-  var Maximizable: Boolean = js.native
+  var Maximizable: Boolean
   
-  def Maximize(): Unit = js.native
+  def Maximize(): Unit
   
-  var Minimizable: Boolean = js.native
+  var Minimizable: Boolean
   
-  def Minimize(): Unit = js.native
+  def Minimize(): Unit
   
-  var Resizable: Boolean = js.native
+  var Resizable: Boolean
   
-  def Restore(): Unit = js.native
+  def Restore(): Unit
   
-  def SetDefaultSize(defaultWidth: Double, defaultHeight: Double, resizeToDefault: Boolean): Unit = js.native
+  def SetDefaultSize(defaultWidth: Double, defaultHeight: Double, resizeToDefault: Boolean): Unit
   
-  var Title: String = js.native
+  var Title: String
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object IWindow {
   

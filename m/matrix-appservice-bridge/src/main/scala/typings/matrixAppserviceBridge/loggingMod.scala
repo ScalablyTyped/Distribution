@@ -9,10 +9,13 @@ import typings.matrixAppserviceBridge.matrixAppserviceBridgeStrings.warn
 import typings.winston.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggingMod {
+  
+  @JSImport("matrix-appservice-bridge/lib/components/logging", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -23,15 +26,13 @@ object loggingMod {
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configure")
     @js.native
     def configure: js.Function1[/* config */ LoggerConfig, Unit] = js.native
-    @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configure")
-    @js.native
-    def configure(config: LoggerConfig): Unit = js.native
+    @scala.inline
+    def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     @scala.inline
     def configure_=(x: js.Function1[/* config */ LoggerConfig, Unit]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("configure")(x.asInstanceOf[js.Any])
     
-    @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configured")
-    @js.native
-    def configured(): Boolean = js.native
+    @scala.inline
+    def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.configured")
     @js.native
     def configured_Fdefault: js.Function0[Boolean] = js.native
@@ -42,9 +43,8 @@ object loggingMod {
     @JSImport("matrix-appservice-bridge/lib/components/logging", "default.get")
     @js.native
     def get: js.Function1[/* name */ String, LogWrapper] = js.native
-    @JSImport("matrix-appservice-bridge/lib/components/logging", "default.get")
-    @js.native
-    def get(name: String): LogWrapper = js.native
+    @scala.inline
+    def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
     @scala.inline
     def get_=(x: js.Function1[/* name */ String, LogWrapper]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("get")(x.asInstanceOf[js.Any])
   }
@@ -74,30 +74,26 @@ object loggingMod {
     def warn(messageParts: MessagePart*): Unit = js.native
   }
   
-  @JSImport("matrix-appservice-bridge/lib/components/logging", "configure")
-  @js.native
-  def configure(config: LoggerConfig): Unit = js.native
+  @scala.inline
+  def configure(config: LoggerConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("matrix-appservice-bridge/lib/components/logging", "configured")
-  @js.native
-  def configured(): Boolean = js.native
+  @scala.inline
+  def configured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("configured")().asInstanceOf[Boolean]
   
-  @JSImport("matrix-appservice-bridge/lib/components/logging", "get")
-  @js.native
-  def get(name: String): LogWrapper = js.native
+  @scala.inline
+  def get(name: String): LogWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[LogWrapper]
   
-  @js.native
   trait LoggerConfig extends StObject {
     
-    var console: js.UndefOr[error | warn | info | debug | off] = js.native
+    var console: js.UndefOr[error | warn | info | debug | off] = js.undefined
     
-    var fileDatePattern: js.UndefOr[String] = js.native
+    var fileDatePattern: js.UndefOr[String] = js.undefined
     
-    var files: js.UndefOr[StringDictionary[error | warn | info | debug | off]] = js.native
+    var files: js.UndefOr[StringDictionary[error | warn | info | debug | off]] = js.undefined
     
-    var maxFiles: js.UndefOr[Double] = js.native
+    var maxFiles: js.UndefOr[Double] = js.undefined
     
-    var timestampFormat: js.UndefOr[String] = js.native
+    var timestampFormat: js.UndefOr[String] = js.undefined
   }
   object LoggerConfig {
     

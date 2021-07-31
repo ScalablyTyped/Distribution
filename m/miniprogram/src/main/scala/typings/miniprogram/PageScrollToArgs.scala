@@ -2,17 +2,17 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PageScrollToArgs extends AsyncCallback[Unit] {
+trait PageScrollToArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var scrollTo: js.UndefOr[Double] = js.native
+  var scrollTo: js.UndefOr[Double] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object PageScrollToArgs {
   

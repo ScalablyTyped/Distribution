@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DeviceUseStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDeviceUseStatement extends StObject {
   
-  var body: DeviceUseStatement = js.native
+  var body: DeviceUseStatement
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement
 }
 object BodyDeviceUseStatement {
   
   @scala.inline
-  def apply(
-    body: DeviceUseStatement,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.DeviceUseStatement
-  ): BodyDeviceUseStatement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DeviceUseStatement): BodyDeviceUseStatement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "DeviceUseStatement")
     __obj.asInstanceOf[BodyDeviceUseStatement]
   }
   

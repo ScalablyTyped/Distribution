@@ -2,38 +2,36 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchTemplateNetworkInterface extends StObject {
   
-  var associatePublicIpAddress: js.UndefOr[Boolean] = js.native
+  var associatePublicIpAddress: js.UndefOr[Boolean] = js.undefined
   
-  var deleteOnTermination: js.UndefOr[Boolean] = js.native
+  var deleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Description of the launch template.
     */
-  var description: String = js.native
+  var description: String
   
-  var deviceIndex: Double = js.native
+  var deviceIndex: Double
   
-  var ipv4AddressCount: Double = js.native
+  var ipv4AddressCount: Double
   
-  var ipv4Addresses: js.Array[String] = js.native
+  var ipv4Addresses: js.Array[String]
   
-  var ipv6AddressCount: Double = js.native
+  var ipv6AddressCount: Double
   
-  var ipv6Addresses: js.Array[String] = js.native
+  var ipv6Addresses: js.Array[String]
   
-  var networkInterfaceId: String = js.native
+  var networkInterfaceId: String
   
-  var privateIpAddress: String = js.native
+  var privateIpAddress: String
   
-  var securityGroups: js.Array[String] = js.native
+  var securityGroups: js.Array[String]
   
-  var subnetId: String = js.native
+  var subnetId: String
 }
 object GetLaunchTemplateNetworkInterface {
   

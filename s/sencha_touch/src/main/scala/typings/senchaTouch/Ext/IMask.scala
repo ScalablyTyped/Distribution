@@ -2,24 +2,24 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMask extends IComponent {
+trait IMask
+  extends StObject
+     with IComponent {
   
   /** [Method] Returns the value of transparent
     * @returns Boolean
     */
-  var getTransparent: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getTransparent: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Sets the value of transparent
     * @param transparent Boolean The new value.
     */
-  var setTransparent: js.UndefOr[js.Function1[/* transparent */ js.UndefOr[Boolean], Unit]] = js.native
+  var setTransparent: js.UndefOr[js.Function1[/* transparent */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
 }
 object IMask {
   

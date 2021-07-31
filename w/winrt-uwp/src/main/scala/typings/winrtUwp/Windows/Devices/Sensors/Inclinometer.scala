@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.readingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an inclinometer sensor. */
 @js.native
 trait Inclinometer extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_readingchanged(
     `type`: readingchanged,
@@ -34,7 +33,7 @@ trait Inclinometer extends StObject {
   var minimumReportInterval: Double = js.native
   
   /** Occurs each time the inclinometer reports a new sensor reading. */
-  def onreadingchanged(ev: InclinometerReadingChangedEventArgs with WinRTEvent[Inclinometer]): Unit = js.native
+  def onreadingchanged(ev: InclinometerReadingChangedEventArgs & WinRTEvent[Inclinometer]): Unit = js.native
   /** Occurs each time the inclinometer reports a new sensor reading. */
   @JSName("onreadingchanged")
   var onreadingchanged_Original: TypedEventHandler[Inclinometer, InclinometerReadingChangedEventArgs] = js.native
@@ -45,7 +44,7 @@ trait Inclinometer extends StObject {
   /** Gets the sensor reading type. */
   var readingType: SensorReadingType = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_readingchanged(
     `type`: readingchanged,

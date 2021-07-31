@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ECSService extends StObject {
   
   /**
     *  The name of the cluster that the Amazon ECS service is associated with. 
     */
-  var clusterName: js.UndefOr[ECSClusterName] = js.native
+  var clusterName: js.UndefOr[ECSClusterName] = js.undefined
   
   /**
     *  The name of the target Amazon ECS service. 
     */
-  var serviceName: js.UndefOr[ECSServiceName] = js.native
+  var serviceName: js.UndefOr[ECSServiceName] = js.undefined
 }
 object ECSService {
   

@@ -4,38 +4,36 @@ import typings.angular.mod.IScope
 import typings.uiGrid.anon.RowExpandedStateChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandable {
   
-  @js.native
   trait IGridExpandableApi[TEntity] extends StObject {
     
     // Methods
     /**
       * Collapse all subgrids.
       */
-    def collapseAllRows(): Unit = js.native
+    def collapseAllRows(): Unit
     
     /**
       * expand all subgrids
       */
-    def expandAllRows(): Unit = js.native
+    def expandAllRows(): Unit
     
     // Events
-    var on: RowExpandedStateChanged[TEntity] = js.native
+    var on: RowExpandedStateChanged[TEntity]
     
     /**
       * Toggle all subgrids
       */
-    def toggleAllRows(): Unit = js.native
+    def toggleAllRows(): Unit
     
     /**
       * Toggle a specific row
       * @param {TEntity} rowEntity The data entity for the row you want to expand
       */
-    def toggleRowExpansion(rowEntity: TEntity): Unit = js.native
+    def toggleRowExpansion(rowEntity: TEntity): Unit
   }
   object IGridExpandableApi {
     
@@ -52,7 +50,7 @@ object expandable {
     }
     
     @scala.inline
-    implicit class IGridExpandableApiMutableBuilder[Self <: IGridExpandableApi[_], TEntity] (val x: Self with IGridExpandableApi[TEntity]) extends AnyVal {
+    implicit class IGridExpandableApiMutableBuilder[Self <: IGridExpandableApi[?], TEntity] (val x: Self & IGridExpandableApi[TEntity]) extends AnyVal {
       
       @scala.inline
       def setCollapseAllRows(value: () => Unit): Self = StObject.set(x, "collapseAllRows", js.Any.fromFunction0(value))
@@ -71,7 +69,6 @@ object expandable {
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
@@ -79,35 +76,35 @@ object expandable {
       * your application, or in specific modes on this grid.
       * Defaults to true.
       */
-    var enableExpandable: js.UndefOr[Boolean] = js.native
+    var enableExpandable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show a rowHeader to provide the expandable buttons. If set to false then implies you're going to use a
       * custom method for expanding and collapsing the subgrids.
       * Defaults to true.
       */
-    var enableExpandableRowHeader: js.UndefOr[Boolean] = js.native
+    var enableExpandableRowHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Width in pixels of the expandable column. Defaults to 40
       */
-    var expandableRowHeaderWidth: js.UndefOr[Double] = js.native
+    var expandableRowHeaderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Height in pixels of the expanded subgrid.
       * Defaults to 150
       */
-    var expandableRowHeight: js.UndefOr[Double] = js.native
+    var expandableRowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * reference to the parent grid scope (the parent scope of the sub-grid element)
       */
-    var expandableRowScope: js.UndefOr[IScope | js.Object] = js.native
+    var expandableRowScope: js.UndefOr[IScope | js.Object] = js.undefined
     
     /**
       * Mandatory. The template for your expanded row
       */
-    var expandableRowTemplate: js.UndefOr[String] = js.native
+    var expandableRowTemplate: js.UndefOr[String] = js.undefined
   }
   object IGridOptions {
     
@@ -158,7 +155,6 @@ object expandable {
     }
   }
   
-  @js.native
   trait IGridRow extends StObject {
     
     /**
@@ -166,7 +162,7 @@ object expandable {
       * Defaults to false
       * @default false
       */
-    var isExpanded: js.UndefOr[Boolean] = js.native
+    var isExpanded: js.UndefOr[Boolean] = js.undefined
   }
   object IGridRow {
     

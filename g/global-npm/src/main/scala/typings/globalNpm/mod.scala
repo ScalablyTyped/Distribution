@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.Shortcut
 import typings.npm.mod.NPM.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("global-npm", JSImport.Namespace)
   @js.native
-  val ^ : GlobalNPM with Static = js.native
+  val ^ : GlobalNPM & Static = js.native
   
-  @js.native
   trait GlobalNPM extends StObject {
     
-    var GLOBAL_NPM_BIN: String = js.native
+    var GLOBAL_NPM_BIN: String
     
-    var GLOBAL_NPM_PATH: String = js.native
+    var GLOBAL_NPM_PATH: String
   }
   object GlobalNPM {
     
@@ -39,8 +37,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = GlobalNPM with Static
+  type _To = GlobalNPM & Static
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: GlobalNPM with Static = ^
+  override def _to: GlobalNPM & Static = ^
 }

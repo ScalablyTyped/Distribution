@@ -2,56 +2,54 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Partition extends StObject {
   
   /**
     * The ID of the Data Catalog in which the partition resides.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The time at which the partition was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the catalog database in which to create the partition.
     */
-  var DatabaseName: js.UndefOr[NameString] = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The last time at which the partition was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.native
+  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time at which column statistics were computed for this partition.
     */
-  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.native
+  var LastAnalyzedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * These key-value pairs define partition parameters.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * Provides information about the physical location where the partition is stored.
     */
-  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.native
+  var StorageDescriptor: js.UndefOr[typings.awsSdk.glueMod.StorageDescriptor] = js.undefined
   
   /**
     * The name of the database table in which to create the partition.
     */
-  var TableName: js.UndefOr[NameString] = js.native
+  var TableName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The values of the partition.
     */
-  var Values: js.UndefOr[ValueStringList] = js.native
+  var Values: js.UndefOr[ValueStringList] = js.undefined
 }
 object Partition {
   

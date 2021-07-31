@@ -2,21 +2,19 @@ package typings.awsSdk.accessanalyzerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortCriteria extends StObject {
   
   /**
     * The name of the attribute to sort on.
     */
-  var attributeName: js.UndefOr[String] = js.native
+  var attributeName: js.UndefOr[String] = js.undefined
   
   /**
     * The sort order, ascending or descending.
     */
-  var orderBy: js.UndefOr[OrderBy] = js.native
+  var orderBy: js.UndefOr[OrderBy] = js.undefined
 }
 object SortCriteria {
   

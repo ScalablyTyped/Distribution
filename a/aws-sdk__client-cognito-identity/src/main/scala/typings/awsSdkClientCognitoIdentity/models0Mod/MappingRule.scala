@@ -2,33 +2,31 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MappingRule extends StObject {
   
   /**
     * <p>The claim name that must be present in the token, for example, "isAdmin" or
     *          "paid".</p>
     */
-  var Claim: js.UndefOr[String] = js.native
+  var Claim: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The match condition that specifies how closely the claim value in the IdP token must
     *          match <code>Value</code>.</p>
     */
-  var MatchType: js.UndefOr[MappingRuleMatchType | String] = js.native
+  var MatchType: js.UndefOr[MappingRuleMatchType | String] = js.undefined
   
   /**
     * <p>The role ARN.</p>
     */
-  var RoleARN: js.UndefOr[String] = js.native
+  var RoleARN: js.UndefOr[String] = js.undefined
   
   /**
     * <p>A brief string that the claim must match, for example, "paid" or "yes".</p>
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object MappingRule {
   
@@ -38,9 +36,12 @@ object MappingRule {
     __obj.asInstanceOf[MappingRule]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRule.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "MappingRule")
   @js.native
-  def filterSensitiveLog(obj: MappingRule): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: MappingRule): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class MappingRuleMutableBuilder[Self <: MappingRule] (val x: Self) extends AnyVal {

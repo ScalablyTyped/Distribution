@@ -6,7 +6,6 @@ import typings.sipJs.messagesMod.IncomingRequestMessage
 import typings.sipJs.userAgentServerMod.UserAgentServer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infoUserAgentServerMod {

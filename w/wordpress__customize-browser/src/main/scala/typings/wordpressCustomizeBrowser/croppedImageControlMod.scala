@@ -5,7 +5,6 @@ import typings.wordpressCustomizeBrowser.externalMod.Cropper
 import typings.wordpressCustomizeBrowser.mediaControlMod.MediaControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object croppedImageControlMod {
@@ -30,38 +29,37 @@ object croppedImageControlMod {
     def setImageFromAttachment(attachment: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ImageSelectOptions extends StObject {
     
-    var aspectRatio: js.UndefOr[String] = js.native
+    var aspectRatio: js.UndefOr[String] = js.undefined
     
-    var handles: Boolean = js.native
+    var handles: Boolean
     
-    var imageHeight: Double = js.native
+    var imageHeight: Double
     
-    var imageWidth: Double = js.native
+    var imageWidth: Double
     
-    var instance: Boolean = js.native
+    var instance: Boolean
     
-    var keys: Boolean = js.native
+    var keys: Boolean
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var persistent: Boolean = js.native
+    var persistent: Boolean
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object ImageSelectOptions {
     

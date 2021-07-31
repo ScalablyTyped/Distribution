@@ -3,15 +3,13 @@ package typings.reactNative.anon
 import typings.reactNative.mod.ColorValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait False extends StObject {
   
-  var `false`: ColorValue = js.native
+  var `false`: ColorValue
   
-  var `true`: ColorValue = js.native
+  var `true`: ColorValue
 }
 object False {
   

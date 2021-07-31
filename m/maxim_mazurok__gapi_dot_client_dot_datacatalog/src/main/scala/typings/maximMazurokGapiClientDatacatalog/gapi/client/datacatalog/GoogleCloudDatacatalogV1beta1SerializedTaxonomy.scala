@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1SerializedTaxonomy extends StObject {
   
   /** A list of policy types that are activated for a taxonomy. */
-  var activatedPolicyTypes: js.UndefOr[js.Array[String]] = js.native
+  var activatedPolicyTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Description of the serialized taxonomy. The length of the description is limited to 2000 bytes when encoded in UTF-8. If not set, defaults to an empty description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Required. Display name of the taxonomy. Max 200 bytes when encoded in UTF-8. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Top level policy tags associated with the taxonomy if any. */
-  var policyTags: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1SerializedPolicyTag]] = js.native
+  var policyTags: js.UndefOr[js.Array[GoogleCloudDatacatalogV1beta1SerializedPolicyTag]] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1SerializedTaxonomy {
   

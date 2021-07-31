@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/healthcare/v1beta1", "healthcare_v1beta1.Resource$Projects$Locations$Datasets$Dicomstores$Studies$Series$Instances$Frames")
@@ -34,7 +33,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames p
     */
   def retrieveFrames(): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveFrames(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def retrieveFrames(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def retrieveFrames(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveFrames(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFramesRetrieveframes
   ): GaxiosPromise[SchemaHttpBody] = js.native
@@ -76,7 +75,7 @@ class ResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFrames p
     */
   def retrieveRendered(): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveRendered(callback: BodyResponseCallback[SchemaHttpBody]): Unit = js.native
-  def retrieveRendered(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
+  def retrieveRendered(params: Unit, options: MethodOptions): GaxiosPromise[SchemaHttpBody] = js.native
   def retrieveRendered(
     params: ParamsResourceProjectsLocationsDatasetsDicomstoresStudiesSeriesInstancesFramesRetrieverendered
   ): GaxiosPromise[SchemaHttpBody] = js.native

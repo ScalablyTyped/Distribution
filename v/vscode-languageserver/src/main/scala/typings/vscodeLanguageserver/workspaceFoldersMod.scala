@@ -8,7 +8,6 @@ import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.Workspac
 import typings.vscodeLanguageserverProtocol.protocolWorkspaceFoldersMod.WorkspaceFoldersChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspaceFoldersMod {
@@ -17,24 +16,46 @@ object workspaceFoldersMod {
   @js.native
   val WorkspaceFoldersFeature: Feature[_RemoteWorkspace, WorkspaceFolders] = js.native
   
-  @js.native
   trait WorkspaceFolders extends StObject {
     
-    def getWorkspaceFolders(): js.Promise[js.Array[WorkspaceFolder] | Null] = js.native
+    def getWorkspaceFolders(): js.Promise[js.Array[WorkspaceFolder] | Null]
     
-    def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _]): Disposable = js.native
+    def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, js.Any]): Disposable
+    def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, js.Any], thisArgs: js.Any): Disposable
     def onDidChangeWorkspaceFolders(
-      listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onDidChangeWorkspaceFolders(listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _], thisArgs: js.Any): Disposable = js.native
-    def onDidChangeWorkspaceFolders(
-      listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, _],
+      listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, js.Any],
       thisArgs: js.Any,
       disposables: js.Array[Disposable]
-    ): Disposable = js.native
+    ): Disposable
+    def onDidChangeWorkspaceFolders(
+      listener: js.Function1[/* e */ WorkspaceFoldersChangeEvent, js.Any],
+      thisArgs: Unit,
+      disposables: js.Array[Disposable]
+    ): Disposable
     @JSName("onDidChangeWorkspaceFolders")
-    var onDidChangeWorkspaceFolders_Original: Event[WorkspaceFoldersChangeEvent] = js.native
+    var onDidChangeWorkspaceFolders_Original: Event[WorkspaceFoldersChangeEvent]
+  }
+  object WorkspaceFolders {
+    
+    @scala.inline
+    def apply(
+      getWorkspaceFolders: () => js.Promise[js.Array[WorkspaceFolder] | Null],
+      onDidChangeWorkspaceFolders: (/* listener */ js.Function1[WorkspaceFoldersChangeEvent, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+    ): WorkspaceFolders = {
+      val __obj = js.Dynamic.literal(getWorkspaceFolders = js.Any.fromFunction0(getWorkspaceFolders), onDidChangeWorkspaceFolders = js.Any.fromFunction3(onDidChangeWorkspaceFolders))
+      __obj.asInstanceOf[WorkspaceFolders]
+    }
+    
+    @scala.inline
+    implicit class WorkspaceFoldersMutableBuilder[Self <: WorkspaceFolders] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGetWorkspaceFolders(value: () => js.Promise[js.Array[WorkspaceFolder] | Null]): Self = StObject.set(x, "getWorkspaceFolders", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setOnDidChangeWorkspaceFolders(
+        value: (/* listener */ js.Function1[WorkspaceFoldersChangeEvent, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      ): Self = StObject.set(x, "onDidChangeWorkspaceFolders", js.Any.fromFunction3(value))
+    }
   }
 }

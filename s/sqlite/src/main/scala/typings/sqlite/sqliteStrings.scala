@@ -3,13 +3,14 @@ package typings.sqlite
 import typings.sqlite.interfacesMod.ISqlite.ConfigureOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteStrings {
   
   @js.native
-  sealed trait busyTimeout extends ConfigureOption
+  sealed trait busyTimeout
+    extends StObject
+       with ConfigureOption
   @scala.inline
   def busyTimeout: busyTimeout = "busyTimeout".asInstanceOf[busyTimeout]
   
@@ -29,12 +30,16 @@ object sqliteStrings {
   def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait profile extends ConfigureOption
+  sealed trait profile
+    extends StObject
+       with ConfigureOption
   @scala.inline
   def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
-  sealed trait trace extends ConfigureOption
+  sealed trait trace
+    extends StObject
+       with ConfigureOption
   @scala.inline
   def trace: trace = "trace".asInstanceOf[trace]
 }

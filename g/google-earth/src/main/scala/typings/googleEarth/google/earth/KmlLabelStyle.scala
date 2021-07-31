@@ -2,21 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlLabelStyle extends KmlColorStyle {
+trait KmlLabelStyle
+  extends StObject
+     with KmlColorStyle {
   
   /**
     * Resizes the label.
     */
-  def getScale(): Double = js.native
+  def getScale(): Double
   
   /**
     * Resizes the label.
     */
-  def setScale(scale: Double): Unit = js.native
+  def setScale(scale: Double): Unit
 }
 object KmlLabelStyle {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssetRequest extends StObject {
   
   /**
     * The unique identifier for an asset.
     */
-  var AssetId: string = js.native
+  var AssetId: string
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string = js.native
+  var RevisionId: string
 }
 object GetAssetRequest {
   

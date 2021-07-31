@@ -3,15 +3,13 @@ package typings.atom.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeNonWordCharacters extends StObject {
   
-  var includeNonWordCharacters: js.UndefOr[Boolean] = js.native
+  var includeNonWordCharacters: js.UndefOr[Boolean] = js.undefined
   
-  var wordRegex: js.UndefOr[RegExp] = js.native
+  var wordRegex: js.UndefOr[RegExp] = js.undefined
 }
 object IncludeNonWordCharacters {
   

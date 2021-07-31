@@ -3,7 +3,6 @@ package typings.luminoWidgets.mod
 import typings.luminoWidgets.boxlayoutMod.BoxLayout.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@lumino/widgets", "BoxLayout")
@@ -19,6 +18,10 @@ class BoxLayout ()
 }
 object BoxLayout {
   
+  @JSImport("@lumino/widgets", "BoxLayout")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get the box layout size basis for the given widget.
     *
@@ -26,9 +29,8 @@ object BoxLayout {
     *
     * @returns The box layout size basis for the widget.
     */
-  @JSImport("@lumino/widgets", "BoxLayout.getSizeBasis")
-  @js.native
-  def getSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget): Double = js.native
+  @scala.inline
+  def getSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Get the box layout stretch factor for the given widget.
@@ -37,9 +39,8 @@ object BoxLayout {
     *
     * @returns The box layout stretch factor for the widget.
     */
-  @JSImport("@lumino/widgets", "BoxLayout.getStretch")
-  @js.native
-  def getStretch(widget: typings.luminoWidgets.widgetMod.Widget): Double = js.native
+  @scala.inline
+  def getStretch(widget: typings.luminoWidgets.widgetMod.Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Set the box layout size basis for the given widget.
@@ -48,9 +49,8 @@ object BoxLayout {
     *
     * @param value - The value for the size basis.
     */
-  @JSImport("@lumino/widgets", "BoxLayout.setSizeBasis")
-  @js.native
-  def setSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = js.native
+  @scala.inline
+  def setSizeBasis(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Set the box layout stretch factor for the given widget.
@@ -59,7 +59,6 @@ object BoxLayout {
     *
     * @param value - The value for the stretch factor.
     */
-  @JSImport("@lumino/widgets", "BoxLayout.setStretch")
-  @js.native
-  def setStretch(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = js.native
+  @scala.inline
+  def setStretch(widget: typings.luminoWidgets.widgetMod.Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

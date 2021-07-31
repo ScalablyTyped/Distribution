@@ -3,22 +3,20 @@ package typings.exceljs.anon
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.stream.xlsx.WorkbookStreamWriterOptions> */
-@js.native
 trait PartialWorkbookStreamWrit extends StObject {
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var stream: js.UndefOr[Stream] = js.native
+  var stream: js.UndefOr[Stream] = js.undefined
   
-  var useSharedStrings: js.UndefOr[Boolean] = js.native
+  var useSharedStrings: js.UndefOr[Boolean] = js.undefined
   
-  var useStyles: js.UndefOr[Boolean] = js.native
+  var useStyles: js.UndefOr[Boolean] = js.undefined
   
-  var zip: js.UndefOr[PartialArchiverZipOptions] = js.native
+  var zip: js.UndefOr[PartialArchiverZipOptions] = js.undefined
 }
 object PartialWorkbookStreamWrit {
   

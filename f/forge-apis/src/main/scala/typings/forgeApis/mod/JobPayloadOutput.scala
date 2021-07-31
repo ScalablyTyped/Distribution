@@ -2,13 +2,11 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobPayloadOutput extends StObject {
   
-  var formats: js.Array[JobPayloadItem] = js.native
+  var formats: js.Array[JobPayloadItem]
 }
 object JobPayloadOutput {
   

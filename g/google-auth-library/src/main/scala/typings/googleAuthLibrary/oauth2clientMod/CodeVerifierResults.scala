@@ -2,23 +2,21 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeVerifierResults extends StObject {
   
   /**
     * The code_challenge that should be sent with the `generateAuthUrl` call
     * to obtain a verifiable authentication url.
     */
-  var codeChallenge: js.UndefOr[String] = js.native
+  var codeChallenge: js.UndefOr[String] = js.undefined
   
   /**
     * The code verifier that will be used when calling `getToken` to obtain a new
     * access token.
     */
-  var codeVerifier: String = js.native
+  var codeVerifier: String
 }
 object CodeVerifierResults {
   

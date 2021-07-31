@@ -3,24 +3,24 @@ package typings.openapiTypes.mod.OpenAPIV3
 import typings.openapiTypes.openapiTypesStrings.openIdConnect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenIdSecurityScheme extends SecuritySchemeObject {
+trait OpenIdSecurityScheme
+  extends StObject
+     with SecuritySchemeObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var openIdConnectUrl: String = js.native
+  var openIdConnectUrl: String
   
-  var `type`: openIdConnect = js.native
+  var `type`: openIdConnect
 }
 object OpenIdSecurityScheme {
   
   @scala.inline
-  def apply(openIdConnectUrl: String, `type`: openIdConnect): OpenIdSecurityScheme = {
+  def apply(openIdConnectUrl: String): OpenIdSecurityScheme = {
     val __obj = js.Dynamic.literal(openIdConnectUrl = openIdConnectUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("openIdConnect")
     __obj.asInstanceOf[OpenIdSecurityScheme]
   }
   

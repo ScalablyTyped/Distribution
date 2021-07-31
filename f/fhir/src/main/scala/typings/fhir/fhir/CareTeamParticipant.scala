@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Members of the team
   */
-@js.native
-trait CareTeamParticipant extends BackboneElement {
+trait CareTeamParticipant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Who is involved
     */
-  var member: js.UndefOr[Reference] = js.native
+  var member: js.UndefOr[Reference] = js.undefined
   
   /**
     * Organization of the practitioner
     */
-  var onBehalfOf: js.UndefOr[Reference] = js.native
+  var onBehalfOf: js.UndefOr[Reference] = js.undefined
   
   /**
     * Time period of participant
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
   
   /**
     * Type of involvement
     */
-  var role: js.UndefOr[CodeableConcept] = js.native
+  var role: js.UndefOr[CodeableConcept] = js.undefined
 }
 object CareTeamParticipant {
   

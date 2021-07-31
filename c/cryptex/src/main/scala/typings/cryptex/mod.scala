@@ -3,10 +3,13 @@ package typings.cryptex
 import typings.cryptex.anon.DataKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cryptex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cryptex", "Cryptex")
   @js.native
@@ -28,50 +31,40 @@ object mod {
     def update(opts: CryptexOpts): Unit = js.native
   }
   
-  @JSImport("cryptex", "decrypt")
-  @js.native
-  def decrypt(data: String): js.Promise[String] = js.native
-  @JSImport("cryptex", "decrypt")
-  @js.native
-  def decrypt(data: String, encoding: String): js.Promise[String] = js.native
+  @scala.inline
+  def decrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def decrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("decrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("cryptex", "encrypt")
-  @js.native
-  def encrypt(data: String): js.Promise[String] = js.native
-  @JSImport("cryptex", "encrypt")
-  @js.native
-  def encrypt(data: String, encoding: String): js.Promise[String] = js.native
+  @scala.inline
+  def encrypt(data: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def encrypt(data: String, encoding: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("encrypt")(data.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("cryptex", "getSecret")
-  @js.native
-  def getSecret(secret: String): js.Promise[String] = js.native
-  @JSImport("cryptex", "getSecret")
-  @js.native
-  def getSecret(secret: String, optional: Boolean): js.Promise[String] = js.native
+  @scala.inline
+  def getSecret(secret: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def getSecret(secret: String, optional: Boolean): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecret")(secret.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("cryptex", "getSecrets")
-  @js.native
-  def getSecrets(secrets: js.Array[String]): js.Promise[js.Array[String]] = js.native
-  @JSImport("cryptex", "getSecrets")
-  @js.native
-  def getSecrets(secrets: js.Array[String], optional: Boolean): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getSecrets(secrets: js.Array[String]): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def getSecrets(secrets: js.Array[String], optional: Boolean): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSecrets")(secrets.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("cryptex", "update")
-  @js.native
-  def update(opts: CryptexOpts): Unit = js.native
+  @scala.inline
+  def update(opts: CryptexOpts): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(opts.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait CryptexConfig extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var keySource: String = js.native
+    var keySource: String
     
-    var keySourceOpts: js.UndefOr[DataKey] = js.native
+    var keySourceOpts: js.UndefOr[DataKey] = js.undefined
     
-    var secretEncoding: js.UndefOr[String] = js.native
+    var secretEncoding: js.UndefOr[String] = js.undefined
     
-    var secrets: js.Object = js.native
+    var secrets: js.Object
   }
   object CryptexConfig {
     
@@ -110,18 +103,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CryptexOpts extends StObject {
     
-    var cacheKey: js.UndefOr[Boolean] = js.native
+    var cacheKey: js.UndefOr[Boolean] = js.undefined
     
-    var cacheKeyTimeout: js.UndefOr[Double] = js.native
+    var cacheKeyTimeout: js.UndefOr[Double] = js.undefined
     
-    var config: js.UndefOr[CryptexConfig] = js.native
+    var config: js.UndefOr[CryptexConfig] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
   }
   object CryptexOpts {
     

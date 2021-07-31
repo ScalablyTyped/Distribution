@@ -18,10 +18,13 @@ import typings.typescript.mod.Symbol
 import typings.typescript.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
+  
+  @JSImport("react-docgen-typescript/lib/parser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-docgen-typescript/lib/parser", "Parser")
   @js.native
@@ -97,45 +100,34 @@ object parserMod {
   @js.native
   val defaultParserOpts: ParserOptions = js.native
   
-  @JSImport("react-docgen-typescript/lib/parser", "getDefaultExportForFile")
-  @js.native
-  def getDefaultExportForFile(source: SourceFile): String = js.native
+  @scala.inline
+  def getDefaultExportForFile(source: SourceFile): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultExportForFile")(source.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-docgen-typescript/lib/parser", "parse")
-  @js.native
-  def parse(filePathOrPaths: String): js.Array[ComponentDoc] = js.native
-  @JSImport("react-docgen-typescript/lib/parser", "parse")
-  @js.native
-  def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = js.native
-  @JSImport("react-docgen-typescript/lib/parser", "parse")
-  @js.native
-  def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = js.native
-  @JSImport("react-docgen-typescript/lib/parser", "parse")
-  @js.native
-  def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = js.native
+  @scala.inline
+  def parse(filePathOrPaths: String): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  @scala.inline
+  def parse(filePathOrPaths: String, parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
+  @scala.inline
+  def parse(filePathOrPaths: js.Array[String]): js.Array[ComponentDoc] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any]).asInstanceOf[js.Array[ComponentDoc]]
+  @scala.inline
+  def parse(filePathOrPaths: js.Array[String], parserOpts: ParserOptions): js.Array[ComponentDoc] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filePathOrPaths.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ComponentDoc]]
   
-  @JSImport("react-docgen-typescript/lib/parser", "withCompilerOptions")
-  @js.native
-  def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = js.native
-  @JSImport("react-docgen-typescript/lib/parser", "withCompilerOptions")
-  @js.native
-  def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = js.native
+  @scala.inline
+  def withCompilerOptions(compilerOptions: CompilerOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any]).asInstanceOf[FileParser]
+  @scala.inline
+  def withCompilerOptions(compilerOptions: CompilerOptions, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCompilerOptions")(compilerOptions.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @JSImport("react-docgen-typescript/lib/parser", "withCustomConfig")
-  @js.native
-  def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = js.native
+  @scala.inline
+  def withCustomConfig(tsconfigPath: String, parserOpts: ParserOptions): FileParser = (^.asInstanceOf[js.Dynamic].applyDynamic("withCustomConfig")(tsconfigPath.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[FileParser]
   
-  @JSImport("react-docgen-typescript/lib/parser", "withDefaultConfig")
-  @js.native
-  def withDefaultConfig(): FileParser = js.native
-  @JSImport("react-docgen-typescript/lib/parser", "withDefaultConfig")
-  @js.native
-  def withDefaultConfig(parserOpts: ParserOptions): FileParser = js.native
+  @scala.inline
+  def withDefaultConfig(): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")().asInstanceOf[FileParser]
+  @scala.inline
+  def withDefaultConfig(parserOpts: ParserOptions): FileParser = ^.asInstanceOf[js.Dynamic].applyDynamic("withDefaultConfig")(parserOpts.asInstanceOf[js.Any]).asInstanceOf[FileParser]
   
-  @js.native
   trait Component extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Component {
     
@@ -153,16 +145,15 @@ object parserMod {
     }
   }
   
-  @js.native
   trait ComponentDoc extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var methods: js.Array[Method] = js.native
+    var methods: js.Array[Method]
     
-    var props: Props = js.native
+    var props: Props
   }
   object ComponentDoc {
     
@@ -206,14 +197,13 @@ object parserMod {
     def parseWithProgramProvider(filePathOrPaths: js.Array[String], programProvider: js.Function0[Program]): js.Array[ComponentDoc] = js.native
   }
   
-  @js.native
   trait JSDoc extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var fullComment: String = js.native
+    var fullComment: String
     
-    var tags: StringIndexedObject[String] = js.native
+    var tags: StringIndexedObject[String]
   }
   object JSDoc {
     
@@ -237,20 +227,19 @@ object parserMod {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var docblock: String = js.native
+    var docblock: String
     
-    var modifiers: js.Array[String] = js.native
+    var modifiers: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.Array[MethodParameter] = js.native
+    var params: js.Array[MethodParameter]
     
-    var returns: js.UndefOr[Description | Null] = js.native
+    var returns: js.UndefOr[Description | Null] = js.undefined
   }
   object Method {
     
@@ -301,14 +290,13 @@ object parserMod {
     }
   }
   
-  @js.native
   trait MethodParameter extends StObject {
     
-    var description: js.UndefOr[String | Null] = js.native
+    var description: js.UndefOr[String | Null] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: MethodParameterType = js.native
+    var `type`: MethodParameterType
   }
   object MethodParameter {
     
@@ -339,10 +327,9 @@ object parserMod {
     }
   }
   
-  @js.native
   trait MethodParameterType extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object MethodParameterType {
     
@@ -360,12 +347,11 @@ object parserMod {
     }
   }
   
-  @js.native
   trait ParentType extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var name: String = js.native
+    var name: String
   }
   object ParentType {
     
@@ -386,20 +372,19 @@ object parserMod {
     }
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var componentNameResolver: js.UndefOr[ComponentNameResolver] = js.native
+    var componentNameResolver: js.UndefOr[ComponentNameResolver] = js.undefined
     
-    var propFilter: js.UndefOr[StaticPropFilter | PropFilter] = js.native
+    var propFilter: js.UndefOr[StaticPropFilter | PropFilter] = js.undefined
     
-    var savePropValueAsString: js.UndefOr[Boolean] = js.native
+    var savePropValueAsString: js.UndefOr[Boolean] = js.undefined
     
-    var shouldExtractLiteralValuesFromEnum: js.UndefOr[Boolean] = js.native
+    var shouldExtractLiteralValuesFromEnum: js.UndefOr[Boolean] = js.undefined
     
-    var shouldExtractValuesFromUnion: js.UndefOr[Boolean] = js.native
+    var shouldExtractValuesFromUnion: js.UndefOr[Boolean] = js.undefined
     
-    var shouldRemoveUndefinedFromOptional: js.UndefOr[Boolean] = js.native
+    var shouldRemoveUndefinedFromOptional: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptions {
     
@@ -455,20 +440,19 @@ object parserMod {
   
   type PropFilter = js.Function2[/* props */ PropItem, /* component */ Component, Boolean]
   
-  @js.native
   trait PropItem extends StObject {
     
-    var defaultValue: js.Any = js.native
+    var defaultValue: js.Any
     
-    var description: String = js.native
+    var description: String
     
-    var name: String = js.native
+    var name: String
     
-    var parent: js.UndefOr[ParentType] = js.native
+    var parent: js.UndefOr[ParentType] = js.undefined
     
-    var required: Boolean = js.native
+    var required: Boolean
     
-    var `type`: PropItemType = js.native
+    var `type`: PropItemType
   }
   object PropItem {
     
@@ -505,14 +489,13 @@ object parserMod {
     }
   }
   
-  @js.native
   trait PropItemType extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object PropItemType {
     
@@ -544,12 +527,11 @@ object parserMod {
   
   type Props = StringIndexedObject[PropItem]
   
-  @js.native
   trait StaticPropFilter extends StObject {
     
-    var skipPropsWithName: js.UndefOr[js.Array[String] | String] = js.native
+    var skipPropsWithName: js.UndefOr[js.Array[String] | String] = js.undefined
     
-    var skipPropsWithoutDoc: js.UndefOr[Boolean] = js.native
+    var skipPropsWithoutDoc: js.UndefOr[Boolean] = js.undefined
   }
   object StaticPropFilter {
     

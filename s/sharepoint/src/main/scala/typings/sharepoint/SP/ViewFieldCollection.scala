@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ViewFieldCollection extends ClientObjectCollection[String] {
+trait ViewFieldCollection
+  extends StObject
+     with ClientObjectCollection[String] {
   
   def add(strField: String): Unit = js.native
   

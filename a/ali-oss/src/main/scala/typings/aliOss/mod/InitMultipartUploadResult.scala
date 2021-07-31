@@ -3,21 +3,19 @@ package typings.aliOss.mod
 import typings.aliOss.anon.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitMultipartUploadResult extends StObject {
   
-  var bucket: String = js.native
+  var bucket: String
   
   // bucket name
-  var name: String = js.native
+  var name: String
   
-  var res: Headers = js.native
+  var res: Headers
   
   // object name store on OSS
-  var uploadId: String = js.native
+  var uploadId: String
 }
 object InitMultipartUploadResult {
   

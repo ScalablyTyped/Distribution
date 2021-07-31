@@ -2,16 +2,16 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 需要打开的卡券列表
   */
-@js.native
-trait OpenCardConfig extends WxBaseRequestConfig {
+trait OpenCardConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
-  var cardList: js.Array[OpenCardObj] = js.native
+  var cardList: js.Array[OpenCardObj]
 }
 object OpenCardConfig {
   

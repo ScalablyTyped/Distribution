@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEC2InstanceLimitsOutput extends StObject {
   
   /**
     * The maximum number of instances for the specified instance type.
     */
-  var EC2InstanceLimits: js.UndefOr[EC2InstanceLimitList] = js.native
+  var EC2InstanceLimits: js.UndefOr[EC2InstanceLimitList] = js.undefined
 }
 object DescribeEC2InstanceLimitsOutput {
   

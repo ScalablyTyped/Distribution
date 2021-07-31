@@ -2,24 +2,22 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of each border cell.
   */
-@js.native
 trait SchemaTableBorderCell extends StObject {
   
   /**
     * The location of the border within the border table.
     */
-  var location: js.UndefOr[SchemaTableCellLocation] = js.native
+  var location: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The border properties.
     */
-  var tableBorderProperties: js.UndefOr[SchemaTableBorderProperties] = js.native
+  var tableBorderProperties: js.UndefOr[SchemaTableBorderProperties] = js.undefined
 }
 object SchemaTableBorderCell {
   

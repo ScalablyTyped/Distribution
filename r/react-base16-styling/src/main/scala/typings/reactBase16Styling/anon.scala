@@ -5,17 +5,15 @@ import typings.base16.mod.Base16Theme
 import typings.csstype.mod.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base16Themes extends StObject {
     
-    var base16Themes: js.UndefOr[StringDictionary[Base16Theme]] = js.native
+    var base16Themes: js.UndefOr[StringDictionary[Base16Theme]] = js.undefined
     
-    var defaultBase16: js.UndefOr[Base16Theme] = js.native
+    var defaultBase16: js.UndefOr[Base16Theme] = js.undefined
   }
   object Base16Themes {
     
@@ -43,12 +41,11 @@ object anon {
   }
   
   /* Inlined std.Partial<react-base16-styling.react-base16-styling/lib/types.Styling> */
-  @js.native
   trait PartialStyling extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[Properties[String | Double]] = js.native
+    var style: js.UndefOr[Properties[String | Double]] = js.undefined
   }
   object PartialStyling {
     

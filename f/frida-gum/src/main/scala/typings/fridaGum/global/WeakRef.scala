@@ -4,7 +4,6 @@ import typings.fridaGum.WeakRefCallback
 import typings.fridaGum.WeakRefId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * native resources when a JS value is no longer needed.
   */
 object WeakRef {
+  
+  @JSGlobal("WeakRef")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Starts monitoring the lifetime of `target`. Calls `callback` as soon as
@@ -26,9 +29,8 @@ object WeakRef {
     * @param target Heap-allocated JavaScript value to monitor lifetime of.
     * @param callback Function to call when `target` gets GCed.
     */
-  @JSGlobal("WeakRef.bind")
-  @js.native
-  def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = js.native
+  @scala.inline
+  def bind(target: js.Any, callback: WeakRefCallback): WeakRefId = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(target.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WeakRefId]
   
   /**
     * Stops monitoring the value passed to `WeakRef.bind()` and calls the
@@ -36,7 +38,6 @@ object WeakRef {
     *
     * @param id ID returned by a previous call to `WeakRef.bind()`.
     */
-  @JSGlobal("WeakRef.unbind")
-  @js.native
-  def unbind(id: WeakRefId): Unit = js.native
+  @scala.inline
+  def unbind(id: WeakRefId): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

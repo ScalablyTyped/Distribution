@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsSnsTopicSubscription extends StObject {
   
   /**
     * The subscription's endpoint (format depends on the protocol).
     */
-  var Endpoint: js.UndefOr[NonEmptyString] = js.native
+  var Endpoint: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The subscription's protocol.
     */
-  var Protocol: js.UndefOr[NonEmptyString] = js.native
+  var Protocol: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsSnsTopicSubscription {
   

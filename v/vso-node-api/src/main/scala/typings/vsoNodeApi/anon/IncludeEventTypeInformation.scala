@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeEventTypeInformation extends StObject {
   
-  var includeEventTypeInformation: scala.Double = js.native
+  var includeEventTypeInformation: scala.Double
   
-  var includeGroup: scala.Double = js.native
+  var includeGroup: scala.Double
   
-  var includeUser: scala.Double = js.native
+  var includeUser: scala.Double
   
-  var includeUserAndGroup: scala.Double = js.native
+  var includeUserAndGroup: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object IncludeEventTypeInformation {
   

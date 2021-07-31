@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVpcLinkRequest extends StObject {
   
   /**
     * The description of the VPC link.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The name used to label and identify the VPC link.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The key-value map of strings. The valid character set is [a-zA-Z+-=._:/]. The tag key can be up to 128 characters and must not start with aws:. The tag value can be up to 256 characters.
     */
-  var tags: js.UndefOr[MapOfStringToString] = js.native
+  var tags: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Required] The ARN of the network load balancer of the VPC targeted by the VPC link. The network load balancer must be owned by the same AWS account of the API owner.
     */
-  var targetArns: ListOfString = js.native
+  var targetArns: ListOfString
 }
 object CreateVpcLinkRequest {
   

@@ -7,7 +7,6 @@ import typings.ndnJs.signatureMod.Signature
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataMod {
@@ -19,27 +18,37 @@ object dataMod {
   object ContentType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContentType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContentType & Double] = js.native
     
     @js.native
-    sealed trait BLOB extends ContentType
-    /* 0 */ val BLOB: typings.ndnJs.dataMod.ContentType.BLOB with Double = js.native
+    sealed trait BLOB
+      extends StObject
+         with ContentType
+    /* 0 */ val BLOB: typings.ndnJs.dataMod.ContentType.BLOB & Double = js.native
     
     @js.native
-    sealed trait KEY extends ContentType
-    /* 2 */ val KEY: typings.ndnJs.dataMod.ContentType.KEY with Double = js.native
+    sealed trait KEY
+      extends StObject
+         with ContentType
+    /* 2 */ val KEY: typings.ndnJs.dataMod.ContentType.KEY & Double = js.native
     
     @js.native
-    sealed trait LINK extends ContentType
-    /* 1 */ val LINK: typings.ndnJs.dataMod.ContentType.LINK with Double = js.native
+    sealed trait LINK
+      extends StObject
+         with ContentType
+    /* 1 */ val LINK: typings.ndnJs.dataMod.ContentType.LINK & Double = js.native
     
     @js.native
-    sealed trait NACK extends ContentType
-    /* 3 */ val NACK: typings.ndnJs.dataMod.ContentType.NACK with Double = js.native
+    sealed trait NACK
+      extends StObject
+         with ContentType
+    /* 3 */ val NACK: typings.ndnJs.dataMod.ContentType.NACK & Double = js.native
     
     @js.native
-    sealed trait OTHER_CODE extends ContentType
-    /* 0x7fff */ val OTHER_CODE: typings.ndnJs.dataMod.ContentType.OTHER_CODE with Double = js.native
+    sealed trait OTHER_CODE
+      extends StObject
+         with ContentType
+    /* 0x7fff */ val OTHER_CODE: typings.ndnJs.dataMod.ContentType.OTHER_CODE & Double = js.native
   }
   
   @JSImport("ndn-js/data", "Data")

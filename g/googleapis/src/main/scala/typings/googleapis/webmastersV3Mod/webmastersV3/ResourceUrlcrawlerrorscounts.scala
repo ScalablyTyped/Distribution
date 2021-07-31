@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/webmasters/v3", "webmasters_v3.Resource$Urlcrawlerrorscounts")
@@ -34,7 +33,7 @@ class ResourceUrlcrawlerrorscounts protected () extends StObject {
     */
   def query(): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(callback: BodyResponseCallback[SchemaUrlCrawlErrorsCountsQueryResponse]): Unit = js.native
-  def query(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
+  def query(params: Unit, options: MethodOptions): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(params: ParamsResourceUrlcrawlerrorscountsQuery): GaxiosPromise[SchemaUrlCrawlErrorsCountsQueryResponse] = js.native
   def query(
     params: ParamsResourceUrlcrawlerrorscountsQuery,

@@ -7,7 +7,6 @@ import typings.react.mod.ComponentState
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,18 +23,17 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[AddToCalendarProps, ComponentState] = js.native
   
-  @js.native
   trait AddToCalendarEvent extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var endTime: js.UndefOr[String | Date] = js.native
+    var endTime: js.UndefOr[String | Date] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var startTime: js.UndefOr[String | Date] = js.native
+    var startTime: js.UndefOr[String | Date] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AddToCalendarEvent {
     
@@ -80,34 +78,33 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait AddToCalendarProps extends StObject {
     
-    var buttonClassClosed: js.UndefOr[String] = js.native
+    var buttonClassClosed: js.UndefOr[String] = js.undefined
     
-    var buttonClassOpen: js.UndefOr[String] = js.native
+    var buttonClassOpen: js.UndefOr[String] = js.undefined
     
-    var buttonIconClass: js.UndefOr[String] = js.native
+    var buttonIconClass: js.UndefOr[String] = js.undefined
     
-    var buttonLabel: js.UndefOr[String] = js.native
+    var buttonLabel: js.UndefOr[String] = js.undefined
     
-    var buttonTemplate: js.UndefOr[js.Any] = js.native
+    var buttonTemplate: js.UndefOr[js.Any] = js.undefined
     
-    var buttonWrapperClass: js.UndefOr[String] = js.native
+    var buttonWrapperClass: js.UndefOr[String] = js.undefined
     
-    var displayItemIcons: js.UndefOr[Boolean] = js.native
+    var displayItemIcons: js.UndefOr[Boolean] = js.undefined
     
-    var dropdownClass: js.UndefOr[String] = js.native
+    var dropdownClass: js.UndefOr[String] = js.undefined
     
-    var event: AddToCalendarEvent = js.native
+    var event: AddToCalendarEvent
     
-    var listItems: js.UndefOr[js.Array[_]] = js.native
+    var listItems: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var optionsOpen: js.UndefOr[Boolean] = js.native
+    var optionsOpen: js.UndefOr[Boolean] = js.undefined
     
-    var rootClass: js.UndefOr[String] = js.native
+    var rootClass: js.UndefOr[String] = js.undefined
     
-    var useFontAwesomeIcons: js.UndefOr[Boolean] = js.native
+    var useFontAwesomeIcons: js.UndefOr[Boolean] = js.undefined
   }
   object AddToCalendarProps {
     
@@ -172,7 +169,7 @@ object mod extends Shortcut {
       def setEvent(value: AddToCalendarEvent): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setListItems(value: js.Array[_]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
+      def setListItems(value: js.Array[js.Any]): Self = StObject.set(x, "listItems", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListItemsUndefined: Self = StObject.set(x, "listItems", js.undefined)

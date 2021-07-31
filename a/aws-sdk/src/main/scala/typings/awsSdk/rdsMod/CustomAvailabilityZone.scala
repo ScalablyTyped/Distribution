@@ -2,31 +2,29 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAvailabilityZone extends StObject {
   
   /**
     * The identifier of the custom AZ. Amazon RDS generates a unique identifier when a custom AZ is created.
     */
-  var CustomAvailabilityZoneId: js.UndefOr[String] = js.native
+  var CustomAvailabilityZoneId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the custom AZ.
     */
-  var CustomAvailabilityZoneName: js.UndefOr[String] = js.native
+  var CustomAvailabilityZoneName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the custom AZ.
     */
-  var CustomAvailabilityZoneStatus: js.UndefOr[String] = js.native
+  var CustomAvailabilityZoneStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the virtual private network (VPN) between the VMware vSphere cluster and the AWS website.
     */
-  var VpnDetails: js.UndefOr[typings.awsSdk.rdsMod.VpnDetails] = js.native
+  var VpnDetails: js.UndefOr[typings.awsSdk.rdsMod.VpnDetails] = js.undefined
 }
 object CustomAvailabilityZone {
   

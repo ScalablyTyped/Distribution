@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOrganizationsLogsDelete extends StandardParameters {
+trait ParamsResourceOrganizationsLogsDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The resource name of the log to delete:
@@ -27,7 +27,7 @@ trait ParamsResourceOrganizationsLogsDelete extends StandardParameters {
     * "organizations/1234567890/logs/cloudresourcemanager.googleapis.com%2Factivity".
     * For more information about log names, see LogEntry.
     */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOrganizationsLogsDelete {
   

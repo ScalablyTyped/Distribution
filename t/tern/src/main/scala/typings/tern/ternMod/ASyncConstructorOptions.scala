@@ -4,14 +4,12 @@ import typings.std.Error
 import typings.tern.ternBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASyncConstructorOptions extends StObject {
   
   /** Indicates whether `getFile` is asynchronous. Default is `false`. */
-  var async: `true` = js.native
+  var async: `true`
   
   /**
     * Provides a way for the server to try and fetch the content of files.
@@ -25,13 +23,13 @@ trait ASyncConstructorOptions extends StObject {
       /* callback */ js.Function2[/* error */ js.UndefOr[Error], /* content */ js.UndefOr[String], Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ASyncConstructorOptions {
   
   @scala.inline
-  def apply(async: `true`): ASyncConstructorOptions = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any])
+  def apply(): ASyncConstructorOptions = {
+    val __obj = js.Dynamic.literal(async = true)
     __obj.asInstanceOf[ASyncConstructorOptions]
   }
   

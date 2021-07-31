@@ -2,38 +2,36 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A write on a document.
   */
-@js.native
 trait SchemaWrite extends StObject {
   
   /**
     * An optional precondition on the document.  The write will fail if this is
     * set and not met by the target document.
     */
-  var currentDocument: js.UndefOr[SchemaPrecondition] = js.native
+  var currentDocument: js.UndefOr[SchemaPrecondition] = js.undefined
   
   /**
     * A document name to delete. In the format:
     * `projects/{project_id}/databases/{database_id}/documents/{document_path}`.
     */
-  var delete: js.UndefOr[String] = js.native
+  var delete: js.UndefOr[String] = js.undefined
   
   /**
     * Applies a tranformation to a document. At most one `transform` per
     * document is allowed in a given request. An `update` cannot follow a
     * `transform` on the same document in a given request.
     */
-  var transform: js.UndefOr[SchemaDocumentTransform] = js.native
+  var transform: js.UndefOr[SchemaDocumentTransform] = js.undefined
   
   /**
     * A document to write.
     */
-  var update: js.UndefOr[SchemaDocument] = js.native
+  var update: js.UndefOr[SchemaDocument] = js.undefined
   
   /**
     * The fields to update in this write.  This field can be set only when the
@@ -44,7 +42,7 @@ trait SchemaWrite extends StObject {
     * in the input document, are deleted from the document on the server. The
     * field paths in this mask must not contain a reserved field name.
     */
-  var updateMask: js.UndefOr[SchemaDocumentMask] = js.native
+  var updateMask: js.UndefOr[SchemaDocumentMask] = js.undefined
 }
 object SchemaWrite {
   

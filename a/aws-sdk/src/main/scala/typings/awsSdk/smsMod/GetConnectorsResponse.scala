@@ -2,21 +2,19 @@ package typings.awsSdk.smsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetConnectorsResponse extends StObject {
   
   /**
     * Information about the registered connectors.
     */
-  var connectorList: js.UndefOr[ConnectorList] = js.native
+  var connectorList: js.UndefOr[ConnectorList] = js.undefined
   
   /**
     * The token required to retrieve the next set of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetConnectorsResponse {
   

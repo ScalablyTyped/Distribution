@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mentionsContextMod {
@@ -22,20 +21,19 @@ object mentionsContextMod {
   @js.native
   val MentionsContextProvider: Provider[MentionsContextProps] = js.native
   
-  @js.native
   trait MentionsContextProps extends StObject {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var notFoundContent: ReactNode = js.native
+    var notFoundContent: ReactNode
     
-    var onBlur: FocusEventHandler[HTMLElement] = js.native
+    var onBlur: FocusEventHandler[HTMLElement]
     
-    var onFocus: FocusEventHandler[HTMLElement] = js.native
+    var onFocus: FocusEventHandler[HTMLElement]
     
-    def selectOption(option: OptionProps): Unit = js.native
+    def selectOption(option: OptionProps): Unit
     
-    def setActiveIndex(index: Double): Unit = js.native
+    def setActiveIndex(index: Double): Unit
   }
   object MentionsContextProps {
     

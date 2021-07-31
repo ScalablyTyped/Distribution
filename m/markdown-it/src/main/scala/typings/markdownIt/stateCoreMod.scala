@@ -5,20 +5,18 @@ import typings.markdownIt.libMod.MarkdownIt
 import typings.markdownIt.tokenMod.Nesting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateCoreMod {
   
   @JSImport("markdown-it/lib/rules_core/state_core", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StateCore {
+  class ^ protected ()
+    extends StObject
+       with StateCore {
     def this(src: String, md: MarkdownIt, env: js.Any) = this()
-  }
-  
-  @js.native
-  trait StateCore extends StObject {
     
+    /* CompleteClass */
     var Token: Instantiable3[
         /* type */ String, 
         /* tag */ String, 
@@ -26,18 +24,46 @@ object stateCoreMod {
         typings.markdownIt.tokenMod.^
       ] = js.native
     
+    /* CompleteClass */
     var env: js.Any = js.native
     
+    /* CompleteClass */
     var inlineMode: Boolean = js.native
     
     /**
       * link to parser instance
       */
+    /* CompleteClass */
     var md: MarkdownIt = js.native
     
+    /* CompleteClass */
     var src: String = js.native
     
+    /* CompleteClass */
     var tokens: js.Array[typings.markdownIt.tokenMod.^] = js.native
+  }
+  
+  trait StateCore extends StObject {
+    
+    var Token: Instantiable3[
+        /* type */ String, 
+        /* tag */ String, 
+        /* nesting */ Nesting, 
+        typings.markdownIt.tokenMod.^
+      ]
+    
+    var env: js.Any
+    
+    var inlineMode: Boolean
+    
+    /**
+      * link to parser instance
+      */
+    var md: MarkdownIt
+    
+    var src: String
+    
+    var tokens: js.Array[typings.markdownIt.tokenMod.^]
   }
   object StateCore {
     

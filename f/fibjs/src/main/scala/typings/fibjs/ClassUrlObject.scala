@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 基础模块。提供 url 的格式化，解析与拼装,```JavaScript,var url = new net.Url('http://www.xici.net/');,var url = new net.Url({protocol: 'http:', hostname:'www.xici.net', pathname:'/'});,```
   */
 @js.native
-trait ClassUrlObject extends ClassObject {
+trait ClassUrlObject
+  extends StObject
+     with ClassObject {
   
   /**
     * class prop
@@ -103,9 +104,9 @@ trait ClassUrlObject extends ClassObject {
     *
     */
   def parse(url: String): Unit = js.native
-  def parse(url: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean): Unit = js.native
   def parse(url: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Unit = js.native
+  def parse(url: String, parseQueryString: Unit, slashesDenoteHost: Boolean): Unit = js.native
   
   /**
     * class prop

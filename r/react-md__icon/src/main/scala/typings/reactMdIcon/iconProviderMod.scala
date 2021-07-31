@@ -16,18 +16,24 @@ import typings.reactMdIcon.reactMdIconStrings.selected
 import typings.reactMdIcon.reactMdIconStrings.sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconProviderMod {
   
+  @JSImport("@react-md/icon/types/IconProvider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object IconProvider {
+    
+    @scala.inline
+    def apply(
+      hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort: IconProviderProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
     
     @JSImport("@react-md/icon/types/IconProvider", "IconProvider")
     @js.native
-    def apply(
-      hasChildrenBackCheckboxDownloadDropdownExpanderForwardMenuNotificationPasswordRadioSelectedSort: IconProviderProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -115,148 +121,134 @@ object iconProviderMod {
     }
   }
   
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_back(name: back): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_back(name: back, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_checkbox(name: checkbox): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_download(name: download): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_download(name: download, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_dropdown(name: dropdown): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_expander(name: expander): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_forward(name: forward): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_menu(name: menu): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_notification(name: notification): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_password(name: password): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_password(name: password, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_radio(name: radio): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_selected(name: selected): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_sort(name: sort): ReactNode = js.native
-  @JSImport("@react-md/icon/types/IconProvider", "useIcon")
-  @js.native
-  def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = js.native
+  @scala.inline
+  def useIcon_back(name: back): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_back(name: back, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @js.native
+  @scala.inline
+  def useIcon_checkbox(name: checkbox): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_checkbox(name: checkbox, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_download(name: download): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_download(name: download, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_dropdown(name: dropdown): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_dropdown(name: dropdown, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_expander(name: expander): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_expander(name: expander, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_forward(name: forward): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_forward(name: forward, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_menu(name: menu): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_menu(name: menu, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_notification(name: notification): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_notification(name: notification, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_password(name: password): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_password(name: password, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_radio(name: radio): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_radio(name: radio, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_selected(name: selected): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_selected(name: selected, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
+  @scala.inline
+  def useIcon_sort(name: sort): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def useIcon_sort(name: sort, `override`: ReactNode): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("useIcon")(name.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
+  
   trait ConfigurableIcons extends StObject {
     
     /**
       * The general icon for navigating backwards or closing an item to the left.
       */
-    var back: js.UndefOr[ReactNode] = js.native
+    var back: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for checkboxes.
       */
-    var checkbox: js.UndefOr[ReactNode] = js.native
+    var checkbox: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for downloading content.
       */
-    var download: js.UndefOr[ReactNode] = js.native
+    var download: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for dropdown menus or content that expands
       * vertically in a new material instead of inline like the `expander` icon.
       */
-    var dropdown: js.UndefOr[ReactNode] = js.native
+    var dropdown: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for expanding content vertically.
       */
-    var expander: js.UndefOr[ReactNode] = js.native
+    var expander: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon for navigating forwards or closing an item to the right.
       * This is also used internally for nested dropdown menus.
       */
-    var forward: js.UndefOr[ReactNode] = js.native
+    var forward: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for displaying a main navigation menu.
       */
-    var menu: js.UndefOr[ReactNode] = js.native
+    var menu: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon for displaying notifications. This is used internally in
       * the `BadgedButton` in the `@react-md/badge` package.
       */
-    var notification: js.UndefOr[ReactNode] = js.native
+    var notification: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon for temporarily displaying a password's field value as
       * plain text.
       */
-    var password: js.UndefOr[ReactNode] = js.native
+    var password: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for radio buttons.
       */
-    var radio: js.UndefOr[ReactNode] = js.native
+    var radio: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon to use for showing that something has been selected that
       * is not a radio or checkbox. This is used internally for the `Chip` in the
       * `@react-md/chip` package.
       */
-    var selected: js.UndefOr[ReactNode] = js.native
+    var selected: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * The general icon for sorting content. This defaults to the sort ascending
       * behavior.
       */
-    var sort: js.UndefOr[ReactNode] = js.native
+    var sort: js.UndefOr[ReactNode] = js.undefined
   }
   object ConfigurableIcons {
     
@@ -344,32 +336,31 @@ object iconProviderMod {
   }
   
   /* Inlined std.Required<@react-md/icon.@react-md/icon/types/IconProvider.ConfigurableIcons> */
-  @js.native
   trait ConfiguredIcons extends StObject {
     
-    var back: ReactNode = js.native
+    var back: ReactNode
     
-    var checkbox: ReactNode = js.native
+    var checkbox: ReactNode
     
-    var download: ReactNode = js.native
+    var download: ReactNode
     
-    var dropdown: ReactNode = js.native
+    var dropdown: ReactNode
     
-    var expander: ReactNode = js.native
+    var expander: ReactNode
     
-    var forward: ReactNode = js.native
+    var forward: ReactNode
     
-    var menu: ReactNode = js.native
+    var menu: ReactNode
     
-    var notification: ReactNode = js.native
+    var notification: ReactNode
     
-    var password: ReactNode = js.native
+    var password: ReactNode
     
-    var radio: ReactNode = js.native
+    var radio: ReactNode
     
-    var selected: ReactNode = js.native
+    var selected: ReactNode
     
-    var sort: ReactNode = js.native
+    var sort: ReactNode
   }
   object ConfiguredIcons {
     
@@ -456,15 +447,16 @@ object iconProviderMod {
     }
   }
   
-  @js.native
-  trait IconProviderProps extends ConfigurableIcons {
+  trait IconProviderProps
+    extends StObject
+       with ConfigurableIcons {
     
     /**
       * The children that should inherit the icon provider context. This is
       * required since this component is pretty much worthless to use if you don't
       * inherit the overridden icons.
       */
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object IconProviderProps {
     

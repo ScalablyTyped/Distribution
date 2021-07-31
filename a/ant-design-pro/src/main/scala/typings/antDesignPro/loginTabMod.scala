@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loginTabMod {
@@ -17,14 +16,13 @@ object loginTabMod {
   
   type LoginTab = Component[LoginTabProps, js.Any, js.Any]
   
-  @js.native
   trait LoginTabProps extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var tab: js.UndefOr[ReactNode] = js.native
+    var tab: js.UndefOr[ReactNode] = js.undefined
     
-    var tabUtil: AddTab = js.native
+    var tabUtil: AddTab
   }
   object LoginTabProps {
     

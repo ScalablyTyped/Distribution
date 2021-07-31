@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceType extends StObject {
   
   /**
     * The device attributes.
     */
-  var DeviceAttributes: js.UndefOr[AttributeListType] = js.native
+  var DeviceAttributes: js.UndefOr[AttributeListType] = js.undefined
   
   /**
     * The creation date of the device.
     */
-  var DeviceCreateDate: js.UndefOr[DateType] = js.native
+  var DeviceCreateDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The device key.
     */
-  var DeviceKey: js.UndefOr[DeviceKeyType] = js.native
+  var DeviceKey: js.UndefOr[DeviceKeyType] = js.undefined
   
   /**
     * The date in which the device was last authenticated.
     */
-  var DeviceLastAuthenticatedDate: js.UndefOr[DateType] = js.native
+  var DeviceLastAuthenticatedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The last modified date of the device.
     */
-  var DeviceLastModifiedDate: js.UndefOr[DateType] = js.native
+  var DeviceLastModifiedDate: js.UndefOr[DateType] = js.undefined
 }
 object DeviceType {
   

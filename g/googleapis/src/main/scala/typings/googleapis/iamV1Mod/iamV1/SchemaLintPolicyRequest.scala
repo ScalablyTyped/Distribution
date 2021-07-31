@@ -3,14 +3,12 @@ package typings.googleapis.iamV1Mod.iamV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to lint a Cloud IAM policy object. LintPolicy is currently
   * functional only for `lint_object` of type `condition`.
   */
-@js.native
 trait SchemaLintPolicyRequest extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaLintPolicyRequest extends StObject {
     * not yet implemented and if this field is set, it returns NOT_IMPLEMENTED
     * error.
     */
-  var binding: js.UndefOr[SchemaBinding] = js.native
+  var binding: js.UndefOr[SchemaBinding] = js.undefined
   
   /**
     * google.iam.v1.Binding.condition object to be linted.
     */
-  var condition: js.UndefOr[SchemaExpr] = js.native
+  var condition: js.UndefOr[SchemaExpr] = js.undefined
   
   /**
     * `context` contains additional *permission-controlled* data that any lint
@@ -31,7 +29,7 @@ trait SchemaLintPolicyRequest extends StObject {
     * field is non-operational and it will not be used during the lint
     * operation.
     */
-  var context: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var context: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The full resource name of the policy this lint request is about.  The
@@ -42,14 +40,14 @@ trait SchemaLintPolicyRequest extends StObject {
     * database. The candidate policy for lint has to be provided in the same
     * request object.
     */
-  var fullResourceName: js.UndefOr[String] = js.native
+  var fullResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Policy object to be linted. The functionality of linting a policy is not
     * yet implemented and if this field is set, it returns NOT_IMPLEMENTED
     * error.
     */
-  var policy: js.UndefOr[SchemaPolicy] = js.native
+  var policy: js.UndefOr[SchemaPolicy] = js.undefined
 }
 object SchemaLintPolicyRequest {
   

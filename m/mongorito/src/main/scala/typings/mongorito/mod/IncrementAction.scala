@@ -3,15 +3,15 @@ package typings.mongorito.mod
 import typings.mongorito.mod.ActionTypes.INCREMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IncrementAction extends Action {
+trait IncrementAction
+  extends StObject
+     with Action {
   
-  var fields: js.Object = js.native
+  var fields: js.Object
   
-  var `type`: INCREMENT = js.native
+  var `type`: INCREMENT
 }
 object IncrementAction {
   

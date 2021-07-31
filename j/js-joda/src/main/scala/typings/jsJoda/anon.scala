@@ -3,17 +3,15 @@ package typings.jsJoda
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ToDate extends StObject {
     
-    def toDate(): Date = js.native
+    def toDate(): Date
     
-    def toEpochMilli(): Double = js.native
+    def toEpochMilli(): Double
   }
   object ToDate {
     

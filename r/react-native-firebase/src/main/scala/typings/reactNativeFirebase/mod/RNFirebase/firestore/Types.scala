@@ -19,15 +19,13 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.server
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Types {
   
-  @js.native
   trait GetOptions extends StObject {
     
-    var source: default | server | cache = js.native
+    var source: default | server | cache
   }
   object GetOptions {
     
@@ -45,16 +43,15 @@ object Types {
     }
   }
   
-  @js.native
   trait NativeDocumentChange extends StObject {
     
-    var document: NativeDocumentSnapshot = js.native
+    var document: NativeDocumentSnapshot
     
-    var newIndex: Double = js.native
+    var newIndex: Double
     
-    var oldIndex: Double = js.native
+    var oldIndex: Double
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object NativeDocumentChange {
     
@@ -82,14 +79,13 @@ object Types {
     }
   }
   
-  @js.native
   trait NativeDocumentSnapshot extends StObject {
     
-    var data: StringDictionary[TypeMap] = js.native
+    var data: StringDictionary[TypeMap]
     
-    var metadata: SnapshotMetadata = js.native
+    var metadata: SnapshotMetadata
     
-    var path: String = js.native
+    var path: String
   }
   object NativeDocumentSnapshot {
     
@@ -169,10 +165,9 @@ object Types {
     def `array-contains`: typings.reactNativeFirebase.reactNativeFirebaseStrings.`array-contains` = "array-contains".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.`array-contains`]
   }
   
-  @js.native
   trait SetOptions extends StObject {
     
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
   }
   object SetOptions {
     
@@ -193,12 +188,11 @@ object Types {
     }
   }
   
-  @js.native
   trait SnapshotMetadata extends StObject {
     
-    var fromCache: Boolean = js.native
+    var fromCache: Boolean
     
-    var hasPendingWrites: Boolean = js.native
+    var hasPendingWrites: Boolean
   }
   object SnapshotMetadata {
     
@@ -219,12 +213,11 @@ object Types {
     }
   }
   
-  @js.native
   trait TypeMap extends StObject {
     
-    var `type`: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string = js.native
+    var `type`: array | boolean | date | documentid | fieldvalue | geopoint | `null` | number | `object` | reference | string
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object TypeMap {
     

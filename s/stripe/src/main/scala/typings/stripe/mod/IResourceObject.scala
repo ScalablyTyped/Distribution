@@ -2,13 +2,13 @@ package typings.stripe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IResourceObject extends IObject {
+trait IResourceObject
+  extends StObject
+     with IObject {
   
-  var id: String = js.native
+  var id: String
 }
 object IResourceObject {
   

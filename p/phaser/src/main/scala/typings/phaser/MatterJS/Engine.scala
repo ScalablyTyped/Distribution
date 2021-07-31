@@ -2,7 +2,6 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @class Engine
   */
-@js.native
 trait Engine extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait Engine extends StObject {
     * @type grid
     * @default a Matter.Grid instance
     */
-  var broadphase: Grid = js.native
+  var broadphase: Grid
   
   /**
     * An integer `Number` that specifies the number of constraint iterations to perform each update.
@@ -35,7 +33,7 @@ trait Engine extends StObject {
     * @type number
     * @default 2
     */
-  var constraintIterations: Double = js.native
+  var constraintIterations: Double
   
   /**
     * A flag that specifies whether the engine should allow sleeping via the `Matter.Sleeping` module.
@@ -45,17 +43,17 @@ trait Engine extends StObject {
     * @type boolean
     * @default false
     */
-  var enableSleeping: Boolean = js.native
+  var enableSleeping: Boolean
   
   /**
     * A flag that specifies whether the engine is running or not.
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * Collision pair set for this `Engine`.
     */
-  var pairs: js.Any = js.native
+  var pairs: js.Any
   
   /**
     * An integer `Number` that specifies the number of position iterations to perform each update.
@@ -65,7 +63,7 @@ trait Engine extends StObject {
     * @type number
     * @default 6
     */
-  var positionIterations: Double = js.native
+  var positionIterations: Double
   
   /**
     * An `Object` containing properties regarding the timing systems of the engine.
@@ -73,7 +71,7 @@ trait Engine extends StObject {
     * @property timing
     * @type object
     */
-  var timing: IEngineTimingOptions = js.native
+  var timing: IEngineTimingOptions
   
   /**
     * An integer `Number` that specifies the number of velocity iterations to perform each update.
@@ -83,7 +81,7 @@ trait Engine extends StObject {
     * @type number
     * @default 4
     */
-  var velocityIterations: Double = js.native
+  var velocityIterations: Double
   
   /**
     * A `World` composite object that will contain all simulated bodies and constraints.
@@ -92,7 +90,7 @@ trait Engine extends StObject {
     * @type world
     * @default a Matter.World instance
     */
-  var world: World = js.native
+  var world: World
 }
 object Engine {
   

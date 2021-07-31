@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworklo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleLongrunningListOperationsResponse extends StObject {
   
   /** The standard List next-page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of operations that matches the specified filter in the request. */
-  var operations: js.UndefOr[js.Array[GoogleLongrunningOperation]] = js.native
+  var operations: js.UndefOr[js.Array[GoogleLongrunningOperation]] = js.undefined
 }
 object GoogleLongrunningListOperationsResponse {
   

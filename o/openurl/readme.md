@@ -11,8 +11,8 @@ Open a URL via the operating system (http: in default browser, mailto: in mail c
 | Full name          | openurl |
 | Keywords           | desktop, browser |
 | # releases         | 0 |
-| # dependents       | 175 |
-| # downloads        | 37198799 |
+| # dependents       | 189 |
+| # downloads        | 39395602 |
 | # stars            | 6 |
 
 ## Links

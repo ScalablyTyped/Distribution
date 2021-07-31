@@ -7,7 +7,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorsMod {
@@ -23,7 +22,7 @@ object errorsMod {
   @JSImport("@elastic/elasticsearch/lib/errors", "ConnectionError")
   @js.native
   class ConnectionError[TResponse, TContext] protected () extends ElasticsearchClientError {
-    def this(message: String, meta: ApiResponse[Record[String, _], Context]) = this()
+    def this(message: String, meta: ApiResponse[Record[String, js.Any], Context]) = this()
     
     var meta: ApiResponse[TResponse, TContext] = js.native
   }
@@ -40,12 +39,21 @@ object errorsMod {
   
   @JSImport("@elastic/elasticsearch/lib/errors", "ElasticsearchClientError")
   @js.native
-  class ElasticsearchClientError () extends Error
+  class ElasticsearchClientError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("@elastic/elasticsearch/lib/errors", "NoLivingConnectionsError")
   @js.native
   class NoLivingConnectionsError[TResponse, TContext] protected () extends ElasticsearchClientError {
-    def this(message: String, meta: ApiResponse[Record[String, _], Context]) = this()
+    def this(message: String, meta: ApiResponse[Record[String, js.Any], Context]) = this()
     
     var meta: ApiResponse[TResponse, TContext] = js.native
   }
@@ -53,7 +61,7 @@ object errorsMod {
   @JSImport("@elastic/elasticsearch/lib/errors", "RequestAbortedError")
   @js.native
   class RequestAbortedError[TResponse, TContext] protected () extends ElasticsearchClientError {
-    def this(message: String, meta: ApiResponse[Record[String, _], Context]) = this()
+    def this(message: String, meta: ApiResponse[Record[String, js.Any], Context]) = this()
     
     var meta: ApiResponse[TResponse, TContext] = js.native
   }
@@ -61,11 +69,11 @@ object errorsMod {
   @JSImport("@elastic/elasticsearch/lib/errors", "ResponseError")
   @js.native
   class ResponseError[TResponse, TContext] protected () extends ElasticsearchClientError {
-    def this(meta: ApiResponse[Record[String, _], Context]) = this()
+    def this(meta: ApiResponse[Record[String, js.Any], Context]) = this()
     
     var body: TResponse = js.native
     
-    var headers: Record[String, _] = js.native
+    var headers: Record[String, js.Any] = js.native
     
     var meta: ApiResponse[TResponse, TContext] = js.native
     
@@ -85,7 +93,7 @@ object errorsMod {
   @JSImport("@elastic/elasticsearch/lib/errors", "TimeoutError")
   @js.native
   class TimeoutError[TResponse, TContext] protected () extends ElasticsearchClientError {
-    def this(message: String, meta: ApiResponse[Record[String, _], Context]) = this()
+    def this(message: String, meta: ApiResponse[Record[String, js.Any], Context]) = this()
     
     var meta: ApiResponse[TResponse, TContext] = js.native
   }

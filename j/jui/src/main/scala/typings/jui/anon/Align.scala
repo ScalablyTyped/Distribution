@@ -6,25 +6,23 @@ import typings.jui.juiStrings.right
 import typings.jui.juiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Align extends StObject {
   
-  var align: js.UndefOr[left | right] = js.native
+  var align: js.UndefOr[left | right] = js.undefined
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
-  var valign: js.UndefOr[top | bottom] = js.native
+  var valign: js.UndefOr[top | bottom] = js.undefined
 }
 object Align {
   
@@ -50,7 +48,7 @@ object Align {
     def setEventUndefined: Self = StObject.set(x, "event", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

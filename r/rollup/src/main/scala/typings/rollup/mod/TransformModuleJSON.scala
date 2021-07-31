@@ -3,35 +3,33 @@ package typings.rollup.mod
 import typings.rollup.rollupStrings.`no-treeshake`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rollup.rollup.PartialNull<rollup.rollup.ModuleOptions>> */
-@js.native
 trait TransformModuleJSON extends StObject {
   
-  var ast: js.UndefOr[AcornNode] = js.native
+  var ast: js.UndefOr[AcornNode] = js.undefined
   
-  var code: String = js.native
+  var code: String
   
   // note if plugins use new this.cache to opt-out auto transform cache
-  var customTransformCache: Boolean = js.native
+  var customTransformCache: Boolean
   
-  var meta: js.UndefOr[CustomPluginOptions | Null] = js.native
+  var meta: js.UndefOr[CustomPluginOptions | Null] = js.undefined
   
-  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.native
+  var moduleSideEffects: js.UndefOr[Boolean | `no-treeshake` | Null] = js.undefined
   
-  var originalCode: String = js.native
+  var originalCode: String
   
-  var originalSourcemap: ExistingDecodedSourceMap | Null = js.native
+  var originalSourcemap: ExistingDecodedSourceMap | Null
   
-  var resolvedIds: js.UndefOr[ResolvedIdMap] = js.native
+  var resolvedIds: js.UndefOr[ResolvedIdMap] = js.undefined
   
-  var sourcemapChain: js.Array[DecodedSourceMapOrMissing] = js.native
+  var sourcemapChain: js.Array[DecodedSourceMapOrMissing]
   
-  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.native
+  var syntheticNamedExports: js.UndefOr[Boolean | String | Null] = js.undefined
   
-  var transformDependencies: js.Array[String] = js.native
+  var transformDependencies: js.Array[String]
 }
 object TransformModuleJSON {
   
@@ -43,7 +41,7 @@ object TransformModuleJSON {
     sourcemapChain: js.Array[DecodedSourceMapOrMissing],
     transformDependencies: js.Array[String]
   ): TransformModuleJSON = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], customTransformCache = customTransformCache.asInstanceOf[js.Any], originalCode = originalCode.asInstanceOf[js.Any], sourcemapChain = sourcemapChain.asInstanceOf[js.Any], transformDependencies = transformDependencies.asInstanceOf[js.Any], originalSourcemap = null)
     __obj.asInstanceOf[TransformModuleJSON]
   }
   

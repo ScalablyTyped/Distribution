@@ -8,104 +8,94 @@ import typings.std.FileList
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
-  def apply(input: String, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(input: String, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: String,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: js.Array[Buffer | File | ReadableStream | String],
-    cb: js.Function2[Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: js.Array[Buffer | File | ReadableStream | String],
     opts: CreateTorrentOptions,
-    cb: js.Function2[Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
-  def apply(input: Buffer, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: Buffer, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: Buffer,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
-  def apply(input: ReadableStream, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: ReadableStream, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: ReadableStream,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
-  def apply(input: FileList, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: FileList, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: FileList,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
-  def apply(input: File, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]): Unit = js.native
-  @JSImport("create-torrent", JSImport.Namespace)
-  @js.native
+    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(input: File, cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     input: File,
     opts: CreateTorrentOptions,
-    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, _]
-  ): Unit = js.native
+    cb: js.Function2[/* err */ Error | Null, /* torrent */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("create-torrent", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CreateTorrentOptions extends StObject {
     
     // custom trackers (array of arrays of strings) (see [bep12](http://www.bittorrent.org/beps/bep_0012.html))
-    var announceList: js.UndefOr[js.Array[js.Array[String]]] = js.native
+    var announceList: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
     
     // free-form textual comments of the author
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     // name and version of program used to create torrent
-    var createdBy: js.UndefOr[String] = js.native
+    var createdBy: js.UndefOr[String] = js.undefined
     
     // creation time in UNIX epoch format (default = now)
-    var creationDate: js.UndefOr[Double] = js.native
+    var creationDate: js.UndefOr[Double] = js.undefined
     
     // add non-standard info dict entries, e.g. info.source, a convention for cross-seeding
-    var info: js.UndefOr[Record[String, String]] = js.native
+    var info: js.UndefOr[Record[String, String]] = js.undefined
     
     // name of the torrent (default = basename of `path`, or 1st file's name)
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     // force a custom piece length (number of bytes)
-    var pieceLength: js.UndefOr[Double] = js.native
+    var pieceLength: js.UndefOr[Double] = js.undefined
     
     // is this a private .torrent? (default = false)
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
     // web seed urls (see [bep19](http://www.bittorrent.org/beps/bep_0019.html))
-    var urlList: js.UndefOr[js.Array[String]] = js.native
+    var urlList: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CreateTorrentOptions {
     

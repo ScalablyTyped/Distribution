@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object RatingIndicatorVisualMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.RatingIndicatorVisualMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.RatingIndicatorVisualMode & Double] = js.native
   
-  /* 0 */ val Full: typings.openui5.sap.m.RatingIndicatorVisualMode.Full with Double = js.native
+  /* 0 */ val Full: typings.openui5.sap.m.RatingIndicatorVisualMode.Full & Double = js.native
   
-  /* 1 */ val Half: typings.openui5.sap.m.RatingIndicatorVisualMode.Half with Double = js.native
+  /* 1 */ val Half: typings.openui5.sap.m.RatingIndicatorVisualMode.Half & Double = js.native
 }

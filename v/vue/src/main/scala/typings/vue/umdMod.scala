@@ -2,7 +2,6 @@ package typings.vue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object umdMod {
@@ -10,7 +9,8 @@ object umdMod {
   @JSImport("vue/types/umd", JSImport.Namespace)
   @js.native
   class ^ ()
-    extends typings.vue.vueMod.Vue
+    extends StObject
+       with typings.vue.vueMod.Vue
   
   type AsyncComponent[Data, Methods, Computed, Props] = typings.vue.optionsMod.AsyncComponent[Data, Methods, Computed, Props]
   

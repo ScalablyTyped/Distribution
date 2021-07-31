@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.dataviz.diagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOptions extends StObject {
   
-  var from: js.UndefOr[js.Any] = js.native
+  var from: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var stroke: js.UndefOr[LineStroke] = js.native
+  var stroke: js.UndefOr[LineStroke] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.native
+  var to: js.UndefOr[js.Any] = js.undefined
 }
 object LineOptions {
   

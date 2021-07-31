@@ -2,61 +2,59 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleInstanceHealth extends StObject {
   
   /**
     * Request metrics from your application.
     */
-  var ApplicationMetrics: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationMetrics] = js.native
+  var ApplicationMetrics: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationMetrics] = js.undefined
   
   /**
     * The availability zone in which the instance runs.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Represents the causes, which provide more information about the current health status.
     */
-  var Causes: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Causes] = js.native
+  var Causes: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Causes] = js.undefined
   
   /**
     * Represents the color indicator that gives you information about the health of the EC2 instance. For more information, see Health Colors and Statuses.
     */
-  var Color: js.UndefOr[String] = js.native
+  var Color: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the most recent deployment to an instance.
     */
-  var Deployment: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Deployment] = js.native
+  var Deployment: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Deployment] = js.undefined
   
   /**
     * Returns the health status of the specified instance. For more information, see Health Colors and Statuses.
     */
-  var HealthStatus: js.UndefOr[String] = js.native
+  var HealthStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Amazon EC2 instance.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.InstanceId] = js.undefined
   
   /**
     * The instance's type.
     */
-  var InstanceType: js.UndefOr[String] = js.native
+  var InstanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the EC2 instance was launched.
     */
-  var LaunchedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.LaunchedAt] = js.native
+  var LaunchedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.LaunchedAt] = js.undefined
   
   /**
     * Operating system metrics from the instance.
     */
-  var System: js.UndefOr[SystemStatus] = js.native
+  var System: js.UndefOr[SystemStatus] = js.undefined
 }
 object SingleInstanceHealth {
   

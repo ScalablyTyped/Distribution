@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech extends StObject {
   
   /** The SSML to be synthesized. For more information, see [SSML](https://developers.google.com/actions/reference/ssml). */
-  var ssml: js.UndefOr[String] = js.native
+  var ssml: js.UndefOr[String] = js.undefined
   
   /** The raw text to be synthesized. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageTelephonySynthesizeSpeech {
   

@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsUpdateDiscussionLegacyEndpoint extends StObject {
   
   /**
     * The discussion post's body text.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var discussion_number: Double = js.native
+  var discussion_number: Double
   
-  var team_id: Double = js.native
+  var team_id: Double
   
   /**
     * The discussion post's title.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object TeamsUpdateDiscussionLegacyEndpoint {
   

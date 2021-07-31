@@ -3,21 +3,19 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.ui.format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColorCustomizeText extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var customizeText: js.UndefOr[js.Function1[/* info */ Point, String]] = js.native
+  var customizeText: js.UndefOr[js.Function1[/* info */ Point, String]] = js.undefined
   
-  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.native
+  var font: js.UndefOr[typings.devextreme.mod.DevExpress.viz.Font] = js.undefined
   
-  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.native
+  var format: js.UndefOr[typings.devextreme.mod.DevExpress.ui.format] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object BackgroundColorCustomizeText {
   

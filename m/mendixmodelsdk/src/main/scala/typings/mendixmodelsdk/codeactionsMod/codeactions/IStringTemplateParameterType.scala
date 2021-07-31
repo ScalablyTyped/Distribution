@@ -2,7 +2,6 @@ package typings.mendixmodelsdk.codeactionsMod.codeactions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.4.0: introduced
   */
 @js.native
-trait IStringTemplateParameterType extends IParameterType {
+trait IStringTemplateParameterType
+  extends StObject
+     with IParameterType {
   
   /**
     * In version 8.8.0: introduced

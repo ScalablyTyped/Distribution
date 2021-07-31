@@ -2,16 +2,14 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSlotTypeRequest extends StObject {
   
   /**
     * The name of the slot type. The name is case sensitive. 
     */
-  var name: SlotTypeName = js.native
+  var name: SlotTypeName
 }
 object DeleteSlotTypeRequest {
   

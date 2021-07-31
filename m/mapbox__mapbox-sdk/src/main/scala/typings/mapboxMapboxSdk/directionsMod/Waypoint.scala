@@ -2,10 +2,8 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Waypoint extends StObject {
   
   /**
@@ -18,24 +16,24 @@ trait Waypoint extends StObject {
     * If provided, the list of bearings must be the same length as the list of waypoints.
     * However, you can skip a coordinate and show its position in the list with the  ; separator.
     */
-  var bearing: js.UndefOr[js.Array[Double]] = js.native
+  var bearing: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Array of [ longitude, latitude ] for the snapped coordinate.
     */
-  var location: js.Array[Double] = js.native
+  var location: js.Array[Double]
   
   /**
     * String with the name of the way the coordinate snapped to.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Custom names for waypoints used for the arrival instruction in banners and voice instructions, each separated by  ; .
     * Values can be any string and total number of all characters cannot exceed 500. If provided, the list of waypoint_names must be the same
     * length as the list of waypoints, but you can skip a coordinate and show its position with the  ; separator.
     */
-  var waypointName: js.UndefOr[String] = js.native
+  var waypointName: js.UndefOr[String] = js.undefined
 }
 object Waypoint {
   

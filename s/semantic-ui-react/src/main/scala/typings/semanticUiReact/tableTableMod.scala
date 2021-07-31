@@ -30,7 +30,6 @@ import typings.semanticUiReact.tableHeaderMod.TableHeaderProps
 import typings.semanticUiReact.tableRowMod.TableRowProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableTableMod extends Shortcut {
@@ -39,61 +38,60 @@ object tableTableMod extends Shortcut {
   @js.native
   val default: TableComponent = js.native
   
-  @js.native
   trait StrictTableProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Attach table to other content */
-    var attached: js.UndefOr[Boolean | top | bottom] = js.native
+    var attached: js.UndefOr[Boolean | top | bottom] = js.undefined
     
     /** A table can reduce its complexity to increase readability. */
-    var basic: js.UndefOr[Boolean | very] = js.native
+    var basic: js.UndefOr[Boolean | very] = js.undefined
     
     /** A table may be divided each row into separate cells. */
-    var celled: js.UndefOr[Boolean | internally] = js.native
+    var celled: js.UndefOr[Boolean | internally] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A table can be collapsing, taking up only as much space as its rows. */
-    var collapsing: js.UndefOr[Boolean] = js.native
+    var collapsing: js.UndefOr[Boolean] = js.undefined
     
     /** A table can be given a color to distinguish it from other tables. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** A table can specify its column count to divide its content evenly. */
-    var columns: js.UndefOr[SemanticWIDTHS] = js.native
+    var columns: js.UndefOr[SemanticWIDTHS] = js.undefined
     
     /** A table may sometimes need to be more compact to make more rows visible at a time. */
-    var compact: js.UndefOr[Boolean | very] = js.native
+    var compact: js.UndefOr[Boolean | very] = js.undefined
     
     /** A table may be formatted to emphasize a first column that defines a rows content. */
-    var definition: js.UndefOr[Boolean] = js.native
+    var definition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A table can use fixed a special faster form of table rendering that does not resize table cells based on content.
       */
-    var fixed: js.UndefOr[Boolean] = js.native
+    var fixed: js.UndefOr[Boolean] = js.undefined
     
     /** Shorthand for a TableRow to be placed within Table.Footer. */
-    var footerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.native
+    var footerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.undefined
     
     /** Shorthand for a TableRow to be placed within Table.Header. */
-    var headerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.native
+    var headerRow: js.UndefOr[SemanticShorthandItem[TableRowProps]] = js.undefined
     
     /** Shorthand for multiple TableRows to be placed within Table.Header. */
-    var headerRows: js.UndefOr[SemanticShorthandCollection[TableRowProps]] = js.native
+    var headerRows: js.UndefOr[SemanticShorthandCollection[TableRowProps]] = js.undefined
     
     /** A table's colors can be inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** A table may sometimes need to be more padded for legibility. */
-    var padded: js.UndefOr[Boolean | very] = js.native
+    var padded: js.UndefOr[Boolean | very] = js.undefined
     
     /**
       * Mapped over `tableData` and should return shorthand for each Table.Row to be placed within Table.Body.
@@ -102,40 +100,40 @@ object tableTableMod extends Shortcut {
       * @param {number} index - The index of the current element in `tableData`.
       * @returns {*} Shorthand for a Table.Row.
       */
-    var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, _]] = js.native
+    var renderBodyRow: js.UndefOr[js.Function2[/* data */ js.Any, /* index */ Double, js.Any]] = js.undefined
     
     /** A table can have its rows appear selectable. */
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
     /** A table can specify that its cell contents should remain on a single line and not wrap. */
-    var singleLine: js.UndefOr[Boolean] = js.native
+    var singleLine: js.UndefOr[Boolean] = js.undefined
     
     /** A table can also be small or large. */
-    var size: js.UndefOr[small | large] = js.native
+    var size: js.UndefOr[small | large] = js.undefined
     
     /** A table may allow a user to sort contents by clicking on a table header. */
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
     /** A table can specify how it stacks table content responsively. */
-    var stackable: js.UndefOr[Boolean] = js.native
+    var stackable: js.UndefOr[Boolean] = js.undefined
     
     /** A table can stripe alternate rows of content with a darker color to increase contrast. */
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
     
     /** A table can be formatted to display complex structured data. */
-    var structured: js.UndefOr[Boolean] = js.native
+    var structured: js.UndefOr[Boolean] = js.undefined
     
     /** Data to be passed to the renderBodyRow function. */
-    var tableData: js.UndefOr[js.Array[_]] = js.native
+    var tableData: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** A table can adjust its text alignment. */
-    var textAlign: js.UndefOr[center | left | right] = js.native
+    var textAlign: js.UndefOr[center | left | right] = js.undefined
     
     /** A table can specify how it stacks table content responsively. */
-    var unstackable: js.UndefOr[Boolean] = js.native
+    var unstackable: js.UndefOr[Boolean] = js.undefined
     
     /** A table can adjust its text alignment. */
-    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.native
+    var verticalAlign: js.UndefOr[SemanticVERTICALALIGNMENTS] = js.undefined
   }
   object StrictTableProps {
     
@@ -264,7 +262,7 @@ object tableTableMod extends Shortcut {
       def setPaddedUndefined: Self = StObject.set(x, "padded", js.undefined)
       
       @scala.inline
-      def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
+      def setRenderBodyRow(value: (/* data */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "renderBodyRow", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRenderBodyRowUndefined: Self = StObject.set(x, "renderBodyRow", js.undefined)
@@ -312,7 +310,7 @@ object tableTableMod extends Shortcut {
       def setStructuredUndefined: Self = StObject.set(x, "structured", js.undefined)
       
       @scala.inline
-      def setTableData(value: js.Array[_]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
+      def setTableData(value: js.Array[js.Any]): Self = StObject.set(x, "tableData", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTableDataUndefined: Self = StObject.set(x, "tableData", js.undefined)
@@ -341,7 +339,9 @@ object tableTableMod extends Shortcut {
   }
   
   @js.native
-  trait TableComponent extends FunctionComponent[TableProps] {
+  trait TableComponent
+    extends StObject
+       with FunctionComponent[TableProps] {
     
     var Body: StatelessComponent[TableBodyProps] = js.native
     
@@ -356,9 +356,9 @@ object tableTableMod extends Shortcut {
     var Row: StatelessComponent[TableRowProps] = js.native
   }
   
-  @js.native
   trait TableProps
-    extends StrictTableProps
+    extends StObject
+       with StrictTableProps
        with /* key */ StringDictionary[js.Any]
   object TableProps {
     

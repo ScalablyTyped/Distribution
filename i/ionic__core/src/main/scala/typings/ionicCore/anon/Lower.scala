@@ -2,15 +2,13 @@ package typings.ionicCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lower extends StObject {
   
-  var lower: Double = js.native
+  var lower: Double
   
-  var upper: Double = js.native
+  var upper: Double
 }
 object Lower {
   

@@ -2,25 +2,23 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Background extends StObject {
   
-  var background: String = js.native
+  var background: String
   
-  var border: Double = js.native
+  var border: Double
   
-  var color: String = js.native
+  var color: String
   
-  var cursor: String = js.native
+  var cursor: String
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var outline: Double = js.native
+  var outline: Double
   
-  var padding: Double = js.native
+  var padding: Double
 }
 object Background {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.globalacceleratorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Global Accelerator resource to remove tags from. An ARN uniquely identifies a resource.
     */
-  var ResourceArn: typings.awsSdk.globalacceleratorMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.globalacceleratorMod.ResourceArn
   
   /**
     * The tag key pairs that you want to remove from the specified resources.
     */
-  var TagKeys: typings.awsSdk.globalacceleratorMod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.globalacceleratorMod.TagKeys
 }
 object UntagResourceRequest {
   

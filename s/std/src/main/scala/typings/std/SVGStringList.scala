@@ -3,13 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The SVGStringList defines a list of DOMString objects. */
 @js.native
 trait SVGStringList
-  extends /* index */ NumberDictionary[java.lang.String] {
+  extends StObject
+     with /* index */ NumberDictionary[java.lang.String] {
   
   def appendItem(newItem: java.lang.String): java.lang.String = js.native
   

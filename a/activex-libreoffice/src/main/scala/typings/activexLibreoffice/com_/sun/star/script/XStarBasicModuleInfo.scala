@@ -4,41 +4,41 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Script Module containing some scripting code in a certain scripting language
   * @deprecated Deprecated
   */
-@js.native
-trait XStarBasicModuleInfo extends XInterface {
+trait XStarBasicModuleInfo
+  extends StObject
+     with XInterface {
   
   /** returns the type of the script language as string, for example, "StarBasic" or "JavaScript". */
-  val Language: String = js.native
+  val Language: String
   
   /** returns the name of the module */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * returns the script source code as string.
     *
     * The code has to correspond with the language defined by Language.
     */
-  val Source: String = js.native
+  val Source: String
   
   /** returns the type of the script language as string, for example, "StarBasic" or "JavaScript". */
-  def getLanguage(): String = js.native
+  def getLanguage(): String
   
   /** returns the name of the module */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * returns the script source code as string.
     *
     * The code has to correspond with the language defined by Language.
     */
-  def getSource(): String = js.native
+  def getSource(): String
 }
 object XStarBasicModuleInfo {
   

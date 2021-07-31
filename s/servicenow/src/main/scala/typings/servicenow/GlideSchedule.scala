@@ -2,27 +2,25 @@ package typings.servicenow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlideSchedule extends StObject {
   
-  def add(startDate: GlideDateTime, offset: GlideDuration): GlideDateTime = js.native
+  def add(startDate: GlideDateTime, offset: GlideDuration): GlideDateTime
   
-  def duration(startDate: GlideDateTime, endDate: GlideDateTime): GlideDuration = js.native
+  def duration(startDate: GlideDateTime, endDate: GlideDateTime): GlideDuration
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def isInSchedule(time: GlideDateTime): String = js.native
+  def isInSchedule(time: GlideDateTime): String
   
-  def isValid(): Boolean = js.native
+  def isValid(): Boolean
   
-  def load(sysId: String, timeZone: String, excludeSpanId: String): Unit = js.native
+  def load(sysId: String, timeZone: String, excludeSpanId: String): Unit
   
-  def setTimeZone(tz: String): Unit = js.native
+  def setTimeZone(tz: String): Unit
   
-  def whenNext(time: GlideDateTime, timeZone: String): Double = js.native
+  def whenNext(time: GlideDateTime, timeZone: String): Double
 }
 object GlideSchedule {
   

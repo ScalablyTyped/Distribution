@@ -4,7 +4,6 @@ import typings.react.mod.PureComponent
 import typings.reactNative.mod.TextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outlineMod {
@@ -951,9 +950,7 @@ object outlineMod {
     
     @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.export")
     @js.native
-    def export: Double = js.native
-    @scala.inline
-    def export_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("export")(x.asInstanceOf[js.Any])
+    val `export`: Double = js.native
     
     @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.eye")
     @js.native
@@ -1410,6 +1407,10 @@ object outlineMod {
     def ie: Double = js.native
     @scala.inline
     def ie_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ie")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.import")
+    @js.native
+    val `import`: Double = js.native
     
     @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.inbox")
     @js.native
@@ -2766,24 +2767,21 @@ object outlineMod {
     
     @scala.inline
     def zoomOut_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zoom-out")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@ant-design/icons-react-native/lib/outline", "outlineGlyphMap.import")
-    @js.native
-    val `import`: Double = js.native
   }
   
   @js.native
   trait IconOutline
     extends PureComponent[IconOutlineProps, js.Object, js.Any]
   
-  @js.native
-  trait IconOutlineProps extends TextProps {
+  trait IconOutlineProps
+    extends StObject
+       with TextProps {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var name: OutlineGlyphMapType = js.native
+    var name: OutlineGlyphMapType
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object IconOutlineProps {
     
@@ -2955,7 +2953,7 @@ object outlineMod {
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`expand-alt`
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.expand
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.experiment
-    - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.export
+    - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`export`
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.`eye-invisible`
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.eye
     - typings.antDesignIconsReactNative.antDesignIconsReactNativeStrings.facebook

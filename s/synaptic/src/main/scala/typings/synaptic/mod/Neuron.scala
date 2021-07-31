@@ -7,7 +7,6 @@ import typings.synaptic.mod.Neuron.Connection_
 import typings.synaptic.mod.Neuron.SquashingFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("synaptic", "Neuron")
@@ -52,9 +51,9 @@ class Neuron () extends StObject {
     * Hardcodes the behavior of the neuron into an optimized function.
     */
   def optimize(): Activationsentences = js.native
-  def optimize(optimized: js.UndefOr[scala.Nothing], layer: js.Any): Activationsentences = js.native
   def optimize(optimized: js.Any): Activationsentences = js.native
   def optimize(optimized: js.Any, layer: js.Any): Activationsentences = js.native
+  def optimize(optimized: Unit, layer: js.Any): Activationsentences = js.native
   
   /**
     * A neuron can project a connection to another neuron. Neurons can also self-connect.
@@ -94,6 +93,10 @@ class Neuron () extends StObject {
 /* static members */
 object Neuron {
   
+  @JSImport("synaptic", "Neuron")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("synaptic", "Neuron.Connection")
   @js.native
   class Connection_ protected () extends StObject {
@@ -114,10 +117,13 @@ object Neuron {
   }
   object Connection_ {
     
-    /* static member */
-    @JSImport("synaptic", "Neuron.Connection.uid")
+    @JSImport("synaptic", "Neuron.Connection")
     @js.native
-    def uid(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
   /* was `typeof Connection` */
@@ -130,15 +136,17 @@ object Neuron {
   /* was `typeof Connection` */
   object connection {
     
-    /* static member */
-    @JSImport("synaptic", "Neuron.connection.uid")
+    @JSImport("synaptic", "Neuron.connection")
     @js.native
-    def uid(): Double = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   }
   
-  @JSImport("synaptic", "Neuron.quantity")
-  @js.native
-  def quantity(): Connections = js.native
+  @scala.inline
+  def quantity(): Connections = ^.asInstanceOf[js.Dynamic].applyDynamic("quantity")().asInstanceOf[Connections]
   
   object squash {
     
@@ -163,9 +171,8 @@ object Neuron {
     val TANH: SquashingFunction = js.native
   }
   
-  @JSImport("synaptic", "Neuron.uid")
-  @js.native
-  def uid(): Double = js.native
+  @scala.inline
+  def uid(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("uid")().asInstanceOf[Double]
   
   type SquashingFunction = js.Function2[/* x */ Double, /* derivate */ Boolean, Double]
 }

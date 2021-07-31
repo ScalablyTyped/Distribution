@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSystemTemplateRequest extends StObject {
   
   /**
     * The ID of the system to get. This ID must be in the user's namespace. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:system:SYSTEMNAME 
     */
-  var id: Urn = js.native
+  var id: Urn
   
   /**
     * The number that specifies the revision of the system to get.
     */
-  var revisionNumber: js.UndefOr[Version] = js.native
+  var revisionNumber: js.UndefOr[Version] = js.undefined
 }
 object GetSystemTemplateRequest {
   

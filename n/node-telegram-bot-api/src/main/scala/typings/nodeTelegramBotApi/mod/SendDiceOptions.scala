@@ -2,13 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendDiceOptions extends SendBasicOptions {
+trait SendDiceOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var emoji: js.UndefOr[String] = js.native
+  var emoji: js.UndefOr[String] = js.undefined
 }
 object SendDiceOptions {
   

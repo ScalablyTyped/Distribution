@@ -2,13 +2,11 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaxDocuments extends StObject {
   
-  var IND: js.UndefOr[INDTaxDocuments] = js.native
+  var IND: js.UndefOr[INDTaxDocuments] = js.undefined
 }
 object TaxDocuments {
   

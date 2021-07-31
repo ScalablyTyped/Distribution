@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryError extends StObject {
   
   /** Message that describes the error. The maximum allowable length of the message is 8192 characters. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** Error codes. Matches the definition of HTTP status codes. */
-  var httpStatusCode: js.UndefOr[Double] = js.native
+  var httpStatusCode: js.UndefOr[Double] = js.undefined
   
   /** Type of error. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object RepositoryError {
   

@@ -4,51 +4,49 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Change extends StObject {
   
   /**
     * The author of the change.
     */
-  var author: IdentityRef = js.native
+  var author: IdentityRef
   
   /**
     * The type of change. "commit", "changeset", etc.
     */
-  var changeType: String = js.native
+  var changeType: String
   
   /**
     * The location of a user-friendly representation of the resource.
     */
-  var displayUri: String = js.native
+  var displayUri: String
   
   /**
     * Something that identifies the change. For a commit, this would be the SHA1. For a TFVC changeset, this would be the changeset id.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The location of the full representation of the resource.
     */
-  var location: String = js.native
+  var location: String
   
   /**
     * A description of the change. This might be a commit message or changeset description.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The person or process that pushed the change.
     */
-  var pusher: String = js.native
+  var pusher: String
   
   /**
     * A timestamp for the change.
     */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object Change {
   

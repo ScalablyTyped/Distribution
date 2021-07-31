@@ -4,39 +4,37 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ajv.anon.Copy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompilationContext extends StObject {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var baseId: String = js.native
+  var baseId: String
   
-  var compositeRule: Boolean = js.native
+  var compositeRule: Boolean
   
-  var dataLevel: Double = js.native
+  var dataLevel: Double
   
-  var dataPathArr: js.Array[String] = js.native
+  var dataPathArr: js.Array[String]
   
-  var formats: StringDictionary[js.UndefOr[FormatDefinition]] = js.native
+  var formats: StringDictionary[js.UndefOr[FormatDefinition]]
   
-  var keywords: StringDictionary[js.UndefOr[KeywordDefinition]] = js.native
+  var keywords: StringDictionary[js.UndefOr[KeywordDefinition]]
   
-  var level: Double = js.native
+  var level: Double
   
-  var opts: Options = js.native
+  var opts: Options
   
-  var schema: js.Any = js.native
+  var schema: js.Any
   
-  var schemaPath: String = js.native
+  var schemaPath: String
   
-  var self: Ajv = js.native
+  var self: Ajv
   
-  var util: Copy = js.native
+  var util: Copy
   
-  def validate(schema: js.Object): Boolean = js.native
+  def validate(schema: js.Object): Boolean
 }
 object CompilationContext {
   

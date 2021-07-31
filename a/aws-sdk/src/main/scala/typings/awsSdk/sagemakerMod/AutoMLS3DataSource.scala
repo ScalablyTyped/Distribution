@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLS3DataSource extends StObject {
   
   /**
     * The data type.
     */
-  var S3DataType: AutoMLS3DataType = js.native
+  var S3DataType: AutoMLS3DataType
   
   /**
     * The URL to the Amazon S3 data source.
     */
-  var S3Uri: typings.awsSdk.sagemakerMod.S3Uri = js.native
+  var S3Uri: typings.awsSdk.sagemakerMod.S3Uri
 }
 object AutoMLS3DataSource {
   

@@ -3,11 +3,12 @@ package typings.canvaskitWasm.mod
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkFont extends EmbindObject[SkFont] {
+trait SkFont
+  extends StObject
+     with EmbindObject[SkFont] {
   
   /**
     * Retrieves the bounds for each glyph in glyphs.
@@ -19,8 +20,8 @@ trait SkFont extends EmbindObject[SkFont] {
     * @param output - if provided, the results will be copied into this array.
     */
   def getGlyphBounds(glyphs: InputGlyphIDArray): Float32Array = js.native
-  def getGlyphBounds(glyphs: InputGlyphIDArray, paint: js.UndefOr[scala.Nothing], output: Float32Array): Float32Array = js.native
   def getGlyphBounds(glyphs: InputGlyphIDArray, paint: Null, output: Float32Array): Float32Array = js.native
+  def getGlyphBounds(glyphs: InputGlyphIDArray, paint: Unit, output: Float32Array): Float32Array = js.native
   def getGlyphBounds(glyphs: InputGlyphIDArray, paint: SkPaint): Float32Array = js.native
   def getGlyphBounds(glyphs: InputGlyphIDArray, paint: SkPaint, output: Float32Array): Float32Array = js.native
   
@@ -32,9 +33,9 @@ trait SkFont extends EmbindObject[SkFont] {
     * @param output - if provided, the results will be copied into this array.
     */
   def getGlyphIDs(str: String): GlyphIDArray = js.native
-  def getGlyphIDs(str: String, numCodePoints: js.UndefOr[scala.Nothing], output: TypedArray): GlyphIDArray = js.native
   def getGlyphIDs(str: String, numCodePoints: Double): GlyphIDArray = js.native
   def getGlyphIDs(str: String, numCodePoints: Double, output: TypedArray): GlyphIDArray = js.native
+  def getGlyphIDs(str: String, numCodePoints: Unit, output: TypedArray): GlyphIDArray = js.native
   
   /**
     * Retrieves the advanceX measurements for each glyph.
@@ -45,8 +46,8 @@ trait SkFont extends EmbindObject[SkFont] {
     * @param output - if provided, the results will be copied into this array.
     */
   def getGlyphWidths(glyphs: InputGlyphIDArray): Float32Array = js.native
-  def getGlyphWidths(glyphs: InputGlyphIDArray, paint: js.UndefOr[scala.Nothing], output: Float32Array): Float32Array = js.native
   def getGlyphWidths(glyphs: InputGlyphIDArray, paint: Null, output: Float32Array): Float32Array = js.native
+  def getGlyphWidths(glyphs: InputGlyphIDArray, paint: Unit, output: Float32Array): Float32Array = js.native
   def getGlyphWidths(glyphs: InputGlyphIDArray, paint: SkPaint): Float32Array = js.native
   def getGlyphWidths(glyphs: InputGlyphIDArray, paint: SkPaint, output: Float32Array): Float32Array = js.native
   

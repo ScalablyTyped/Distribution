@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointsResponse extends StObject {
   
   /**
     * List of endpoints.
     */
-  var Endpoints: typings.awsSdk.dynamodbMod.Endpoints = js.native
+  var Endpoints: typings.awsSdk.dynamodbMod.Endpoints
 }
 object DescribeEndpointsResponse {
   

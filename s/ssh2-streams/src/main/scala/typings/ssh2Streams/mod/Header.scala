@@ -2,31 +2,29 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
   /**
     * Any text that comes after the software name/version.
     */
-  var comments: String = js.native
+  var comments: String
   
   /**
     * (Client-only) An optional greeting message presented by the server.
     */
-  var greeting: js.UndefOr[String] = js.native
+  var greeting: js.UndefOr[String] = js.undefined
   
   /**
     * The raw identification string sent by the remote party.
     */
-  var identRaw: String = js.native
+  var identRaw: String
   
   /**
     * Contains various version information parsed from identRaw.
     */
-  var versions: Versions = js.native
+  var versions: Versions
 }
 object Header {
   

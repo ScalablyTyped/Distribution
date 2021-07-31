@@ -2,21 +2,19 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutSnapshotBlockResponse extends StObject {
   
   /**
     * The SHA256 checksum generated for the block data by Amazon EBS.
     */
-  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.native
+  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.undefined
   
   /**
     * The algorithm used by Amazon EBS to generate the checksum.
     */
-  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.native
+  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.undefined
 }
 object PutSnapshotBlockResponse {
   

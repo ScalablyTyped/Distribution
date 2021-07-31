@@ -2,45 +2,43 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The intended behavior and status information of a domain.
   */
-@js.native
 trait SchemaDomain extends StObject {
   
   /**
     * Required. The domain name of the association.
     */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the domain should redirect with the provided parameters.
     */
-  var domainRedirect: js.UndefOr[SchemaDomainRedirect] = js.native
+  var domainRedirect: js.UndefOr[SchemaDomainRedirect] = js.undefined
   
   /**
     * Output only. Information about the provisioning of certificates and the
     * health of the DNS resolution for the domain.
     */
-  var provisioning: js.UndefOr[SchemaDomainProvisioning] = js.native
+  var provisioning: js.UndefOr[SchemaDomainProvisioning] = js.undefined
   
   /**
     * Required. The site name of the association.
     */
-  var site: js.UndefOr[String] = js.native
+  var site: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Additional status of the domain association.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which the domain was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDomain {
   

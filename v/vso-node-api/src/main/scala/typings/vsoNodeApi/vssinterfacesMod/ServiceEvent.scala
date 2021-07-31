@@ -3,36 +3,34 @@ package typings.vsoNodeApi.vssinterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceEvent extends StObject {
   
   /**
     * This is the id of the type. Constants that will be used by subscribers to identify/filter events being published on a topic.
     */
-  var eventType: String = js.native
+  var eventType: String
   
   /**
     * This is the service that published this event.
     */
-  var publisher: Publisher = js.native
+  var publisher: Publisher
   
   /**
     * The resource object that carries specific information about the event. The object must have the ServiceEventObject applied for serialization/deserialization to work.
     */
-  var resource: js.Any = js.native
+  var resource: js.Any
   
   /**
     * This dictionary carries the context descriptors along with their ids.
     */
-  var resourceContainers: StringDictionary[js.Any] = js.native
+  var resourceContainers: StringDictionary[js.Any]
   
   /**
     * This is the version of the resource.
     */
-  var resourceVersion: String = js.native
+  var resourceVersion: String
 }
 object ServiceEvent {
   

@@ -2,91 +2,89 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignerEmailNotifications extends StObject {
   
   /**
     * When set to **true**, the user receives agent notification emails.
     */
-  var agentNotification: js.UndefOr[String] = js.native
+  var agentNotification: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notifications of carbon copy deliveries.
     */
-  var carbonCopyNotification: js.UndefOr[String] = js.native
+  var carbonCopyNotification: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notifications of certified deliveries.
     */
-  var certifiedDeliveryNotification: js.UndefOr[String] = js.native
+  var certifiedDeliveryNotification: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives only comments that mention their own user name.
     */
-  var commentsOnlyPrivateAndMention: js.UndefOr[String] = js.native
+  var commentsOnlyPrivateAndMention: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives all comments.
     */
-  var commentsReceiveAll: js.UndefOr[String] = js.native
+  var commentsReceiveAll: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that document markup has been activated.
     */
-  var documentMarkupActivation: js.UndefOr[String] = js.native
+  var documentMarkupActivation: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that the envelope has been activated.
     */
-  var envelopeActivation: js.UndefOr[String] = js.native
+  var envelopeActivation: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification when the envelope has been completed.
     */
-  var envelopeComplete: js.UndefOr[String] = js.native
+  var envelopeComplete: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that the envelope has been corrected.
     */
-  var envelopeCorrected: js.UndefOr[String] = js.native
+  var envelopeCorrected: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that the envelope has been declined.
     */
-  var envelopeDeclined: js.UndefOr[String] = js.native
+  var envelopeDeclined: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that the envelope has been voided.
     */
-  var envelopeVoided: js.UndefOr[String] = js.native
+  var envelopeVoided: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var faxReceived: js.UndefOr[String] = js.native
+  var faxReceived: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification if offline signing failed.
     */
-  var offlineSigningFailed: js.UndefOr[String] = js.native
+  var offlineSigningFailed: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives an email notification when a document purge occurs.
     */
-  var purgeDocuments: js.UndefOr[String] = js.native
+  var purgeDocuments: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that the envelope has been reassigned.
     */
-  var reassignedSigner: js.UndefOr[String] = js.native
+  var reassignedSigner: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the user receives notification that he or she is a member of the signing group.
     */
-  var whenSigningGroupMember: js.UndefOr[String] = js.native
+  var whenSigningGroupMember: js.UndefOr[String] = js.undefined
 }
 object SignerEmailNotifications {
   

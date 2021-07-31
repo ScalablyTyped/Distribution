@@ -10,13 +10,13 @@ Test for shallow equality between two objects or arrays.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/is-shallow-equal |
 | Keywords           | wordpress, gutenberg, shallow, shallow-equal, shallowequal |
-| # releases         | 13 |
+| # releases         | 15 |
 | # dependents       | 15 |
-| # downloads        | 682683 |
+| # downloads        | 1040607 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/is-shallow-equal/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/is-shallow-equal/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fis-shallow-equal)

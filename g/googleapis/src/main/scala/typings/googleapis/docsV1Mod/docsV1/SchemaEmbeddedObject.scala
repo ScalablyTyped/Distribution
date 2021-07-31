@@ -2,73 +2,71 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An embedded object in the document.
   */
-@js.native
 trait SchemaEmbeddedObject extends StObject {
   
   /**
     * The description of the embedded object. The `title` and `description` are
     * both combined to display alt text.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The properties of an embedded drawing.
     */
-  var embeddedDrawingProperties: js.UndefOr[SchemaEmbeddedDrawingProperties] = js.native
+  var embeddedDrawingProperties: js.UndefOr[SchemaEmbeddedDrawingProperties] = js.undefined
   
   /**
     * The border of the embedded object.
     */
-  var embeddedObjectBorder: js.UndefOr[SchemaEmbeddedObjectBorder] = js.native
+  var embeddedObjectBorder: js.UndefOr[SchemaEmbeddedObjectBorder] = js.undefined
   
   /**
     * The properties of an image.
     */
-  var imageProperties: js.UndefOr[SchemaImageProperties] = js.native
+  var imageProperties: js.UndefOr[SchemaImageProperties] = js.undefined
   
   /**
     * A reference to the external linked source content. For example, it
     * contains a reference to the source Sheets chart when the embedded object
     * is a linked chart.  If unset, then the embedded object is not linked.
     */
-  var linkedContentReference: js.UndefOr[SchemaLinkedContentReference] = js.native
+  var linkedContentReference: js.UndefOr[SchemaLinkedContentReference] = js.undefined
   
   /**
     * The bottom margin of the embedded object.
     */
-  var marginBottom: js.UndefOr[SchemaDimension] = js.native
+  var marginBottom: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The left margin of the embedded object.
     */
-  var marginLeft: js.UndefOr[SchemaDimension] = js.native
+  var marginLeft: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The right margin of the embedded object.
     */
-  var marginRight: js.UndefOr[SchemaDimension] = js.native
+  var marginRight: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The top margin of the embedded object.
     */
-  var marginTop: js.UndefOr[SchemaDimension] = js.native
+  var marginTop: js.UndefOr[SchemaDimension] = js.undefined
   
   /**
     * The size of the embedded object.
     */
-  var size: js.UndefOr[SchemaSize] = js.native
+  var size: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * The title of the embedded object. The `title` and `description` are both
     * combined to display alt text.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaEmbeddedObject {
   

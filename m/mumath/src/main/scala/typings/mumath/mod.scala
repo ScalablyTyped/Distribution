@@ -2,61 +2,50 @@ package typings.mumath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mumath", "clamp")
+  @JSImport("mumath", JSImport.Namespace)
   @js.native
-  def clamp(value: Double, left: Double, right: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mumath", "closest")
-  @js.native
-  def closest(value: Double, list: js.Array[Double]): Double = js.native
+  @scala.inline
+  def clamp(value: Double, left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "isMultiple")
-  @js.native
-  def isMultiple(a: Double, b: Double): Boolean = js.native
-  @JSImport("mumath", "isMultiple")
-  @js.native
-  def isMultiple(a: Double, b: Double, eps: Double): Boolean = js.native
+  @scala.inline
+  def closest(value: Double, list: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("closest")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "len")
-  @js.native
-  def len(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def isMultiple(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isMultiple(a: Double, b: Double, eps: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isMultiple")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], eps.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("mumath", "lerp")
-  @js.native
-  def lerp(x: Double, y: Double, ratio: Double): Double = js.native
+  @scala.inline
+  def len(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("len")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "mod")
-  @js.native
-  def mod(value: Double, max: Double): Double = js.native
-  @JSImport("mumath", "mod")
-  @js.native
-  def mod(value: Double, max: Double, min: Double): Double = js.native
+  @scala.inline
+  def lerp(x: Double, y: Double, ratio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lerp")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "order")
-  @js.native
-  def order(value: Double): Double = js.native
+  @scala.inline
+  def mod(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def mod(value: Double, max: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("mod")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "precision")
-  @js.native
-  def precision(value: Double): Double = js.native
+  @scala.inline
+  def order(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("order")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("mumath", "round")
-  @js.native
-  def round(value: Double): Double = js.native
-  @JSImport("mumath", "round")
-  @js.native
-  def round(value: Double, step: Double): Double = js.native
+  @scala.inline
+  def precision(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("precision")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("mumath", "scale")
-  @js.native
-  def scale(value: Double, list: js.Array[Double]): Double = js.native
+  @scala.inline
+  def round(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("round")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def round(value: Double, step: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("round")(value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("mumath", "within")
-  @js.native
-  def within(value: Double, left: Double, right: Double): Double = js.native
+  @scala.inline
+  def scale(value: Double, list: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(value.asInstanceOf[js.Any], list.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def within(value: Double, left: Double, right: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(value.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

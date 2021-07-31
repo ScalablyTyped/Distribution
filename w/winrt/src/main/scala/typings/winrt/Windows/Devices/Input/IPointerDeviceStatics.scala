@@ -3,15 +3,13 @@ package typings.winrt.Windows.Devices.Input
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerDeviceStatics extends StObject {
   
-  def getPointerDevice(pointerId: Double): PointerDevice = js.native
+  def getPointerDevice(pointerId: Double): PointerDevice
   
-  def getPointerDevices(): IVectorView[PointerDevice] = js.native
+  def getPointerDevices(): IVectorView[PointerDevice]
 }
 object IPointerDeviceStatics {
   

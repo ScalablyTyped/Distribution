@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkedResource extends Entity {
+trait LinkedResource
+  extends StObject
+     with Entity {
   
   // Field indicating the app name of the source that is sending the linkedResource.
-  var applicationName: js.UndefOr[NullableOption[String]] = js.native
+  var applicationName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Field indicating the title of the linkedResource.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Id of the object that is associated with this task on the third-party/partner system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Deep link to the linkedResource.
-  var webUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webUrl: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object LinkedResource {
   

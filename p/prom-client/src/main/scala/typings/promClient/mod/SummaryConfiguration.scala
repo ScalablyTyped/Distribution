@@ -2,29 +2,27 @@ package typings.promClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummaryConfiguration[T /* <: String */] extends StObject {
   
-  var ageBuckets: js.UndefOr[Double] = js.native
+  var ageBuckets: js.UndefOr[Double] = js.undefined
   
-  var aggregator: js.UndefOr[Aggregator] = js.native
+  var aggregator: js.UndefOr[Aggregator] = js.undefined
   
-  var compressCount: js.UndefOr[Double] = js.native
+  var compressCount: js.UndefOr[Double] = js.undefined
   
-  var help: String = js.native
+  var help: String
   
-  var labelNames: js.UndefOr[js.Array[T]] = js.native
+  var labelNames: js.UndefOr[js.Array[T]] = js.undefined
   
-  var maxAgeSeconds: js.UndefOr[Double] = js.native
+  var maxAgeSeconds: js.UndefOr[Double] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var percentiles: js.UndefOr[js.Array[Double]] = js.native
+  var percentiles: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var registers: js.UndefOr[js.Array[Registry]] = js.native
+  var registers: js.UndefOr[js.Array[Registry]] = js.undefined
 }
 object SummaryConfiguration {
   
@@ -35,7 +33,7 @@ object SummaryConfiguration {
   }
   
   @scala.inline
-  implicit class SummaryConfigurationMutableBuilder[Self <: SummaryConfiguration[_], T /* <: String */] (val x: Self with SummaryConfiguration[T]) extends AnyVal {
+  implicit class SummaryConfigurationMutableBuilder[Self <: SummaryConfiguration[?], T /* <: String */] (val x: Self & SummaryConfiguration[T]) extends AnyVal {
     
     @scala.inline
     def setAgeBuckets(value: Double): Self = StObject.set(x, "ageBuckets", value.asInstanceOf[js.Any])

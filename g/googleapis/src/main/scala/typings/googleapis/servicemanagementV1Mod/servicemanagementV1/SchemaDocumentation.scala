@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,13 +42,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `suppress_warning` does not directly affect documentation and is documented
   * together with service config validation.
   */
-@js.native
 trait SchemaDocumentation extends StObject {
   
   /**
     * The URL to the root of documentation.
     */
-  var documentationRootUrl: js.UndefOr[String] = js.native
+  var documentationRootUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Declares a single overview page. For example:
@@ -61,25 +59,25 @@ trait SchemaDocumentation extends StObject {
     * &lt;/code&gt;&lt;/pre&gt; Note: you cannot specify both `overview` field
     * and `pages` field.
     */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /**
     * The top level pages for the documentation set.
     */
-  var pages: js.UndefOr[js.Array[SchemaPage]] = js.native
+  var pages: js.UndefOr[js.Array[SchemaPage]] = js.undefined
   
   /**
     * A list of documentation rules that apply to individual API elements.
     * **NOTE:** All service configuration rules follow &quot;last one
     * wins&quot; order.
     */
-  var rules: js.UndefOr[js.Array[SchemaDocumentationRule]] = js.native
+  var rules: js.UndefOr[js.Array[SchemaDocumentationRule]] = js.undefined
   
   /**
     * A short summary of what the service does. Can only be provided by plain
     * text.
     */
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
 }
 object SchemaDocumentation {
   

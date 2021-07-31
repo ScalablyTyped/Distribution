@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LicenseResourceCommitment extends StObject {
   
   /** The number of licenses purchased. */
-  var amount: js.UndefOr[String] = js.native
+  var amount: js.UndefOr[String] = js.undefined
   
   /** Specifies the core range of the instance for which this license applies. */
-  var coresPerLicense: js.UndefOr[String] = js.native
+  var coresPerLicense: js.UndefOr[String] = js.undefined
   
   /** Any applicable license URI. */
-  var license: js.UndefOr[String] = js.native
+  var license: js.UndefOr[String] = js.undefined
 }
 object LicenseResourceCommitment {
   

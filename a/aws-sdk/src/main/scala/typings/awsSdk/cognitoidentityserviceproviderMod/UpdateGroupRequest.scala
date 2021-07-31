@@ -2,36 +2,34 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGroupRequest extends StObject {
   
   /**
     * A string containing the new description of the group.
     */
-  var Description: js.UndefOr[DescriptionType] = js.native
+  var Description: js.UndefOr[DescriptionType] = js.undefined
   
   /**
     * The name of the group.
     */
-  var GroupName: GroupNameType = js.native
+  var GroupName: GroupNameType
   
   /**
     * The new precedence value for the group. For more information about this parameter, see CreateGroup.
     */
-  var Precedence: js.UndefOr[PrecedenceType] = js.native
+  var Precedence: js.UndefOr[PrecedenceType] = js.undefined
   
   /**
     * The new role ARN for the group. This is used for setting the cognito:roles and cognito:preferred_role claims in the token.
     */
-  var RoleArn: js.UndefOr[ArnType] = js.native
+  var RoleArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
 }
 object UpdateGroupRequest {
   

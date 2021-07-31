@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosTest extends StObject {
   
   /** Information about the application under test. */
-  var iosAppInfo: js.UndefOr[IosAppInfo] = js.native
+  var iosAppInfo: js.UndefOr[IosAppInfo] = js.undefined
   
   /** An iOS Robo test. */
-  var iosRoboTest: js.UndefOr[js.Any] = js.native
+  var iosRoboTest: js.UndefOr[js.Any] = js.undefined
   
   /** An iOS test loop. */
-  var iosTestLoop: js.UndefOr[IosTestLoop] = js.native
+  var iosTestLoop: js.UndefOr[IosTestLoop] = js.undefined
   
   /** An iOS XCTest. */
-  var iosXcTest: js.UndefOr[IosXcTest] = js.native
+  var iosXcTest: js.UndefOr[IosXcTest] = js.undefined
   
   /** Max time a test is allowed to run before it is automatically cancelled. */
-  var testTimeout: js.UndefOr[Duration] = js.native
+  var testTimeout: js.UndefOr[Duration] = js.undefined
 }
 object IosTest {
   

@@ -3,28 +3,27 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallbackType
-  extends AbstractBase
+  extends StObject
+     with AbstractBase
      with IDLRootType {
   
   /** A list of arguments, as in function paramters. */
-  var arguments: js.Array[Argument] = js.native
+  var arguments: js.Array[Argument]
   
   /** An IDL Type describing what the callback returns. */
-  var idlType: IDLTypeDescription = js.native
+  var idlType: IDLTypeDescription
   
   /** The name of the callback. */
-  var name: String = js.native
+  var name: String
   
   @JSName("parent")
-  var parent_CallbackType: Null = js.native
+  var parent_CallbackType: Null
   
   @JSName("type")
-  var type_CallbackType: callback = js.native
+  var type_CallbackType: callback
 }
 object CallbackType {
   
@@ -34,11 +33,10 @@ object CallbackType {
     extAttrs: js.Array[ExtendedAttribute],
     idlType: IDLTypeDescription,
     name: String,
-    parent: Null,
-    `type`: callback
+    parent: Null
   ): CallbackType = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("callback")
     __obj.asInstanceOf[CallbackType]
   }
   

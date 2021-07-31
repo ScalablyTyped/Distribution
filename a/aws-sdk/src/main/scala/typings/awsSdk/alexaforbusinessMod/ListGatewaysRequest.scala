@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGatewaysRequest extends StObject {
   
   /**
     * The gateway group ARN for which to list gateways.
     */
-  var GatewayGroupArn: js.UndefOr[Arn] = js.native
+  var GatewayGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The maximum number of gateway summaries to return. The default is 50.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxResults] = js.undefined
   
   /**
     * The token used to paginate though multiple pages of gateway summaries.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NextToken] = js.undefined
 }
 object ListGatewaysRequest {
   

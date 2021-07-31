@@ -2,18 +2,16 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/input/Input.InputState> */
-@js.native
 trait PartialInputState extends StObject {
   
-  var focused: js.UndefOr[Boolean] = js.native
+  var focused: js.UndefOr[Boolean] = js.undefined
   
-  var prevValue: js.UndefOr[js.Any] = js.native
+  var prevValue: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object PartialInputState {
   

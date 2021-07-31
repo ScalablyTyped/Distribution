@@ -5,7 +5,6 @@ import typings.semanticUiReact.iconGroupMod.IconGroupProps
 import typings.semanticUiReact.iconMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("semantic-ui-react", "Icon")

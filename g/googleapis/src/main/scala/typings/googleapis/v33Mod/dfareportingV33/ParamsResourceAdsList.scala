@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAdsList extends StandardParameters {
+trait ParamsResourceAdsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Select only active ads.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only ads with this advertiser ID.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only archived ads.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only ads with these audience segment IDs.
     */
-  var audienceSegmentIds: js.UndefOr[js.Array[String]] = js.native
+  var audienceSegmentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only ads with these campaign IDs.
     */
-  var campaignIds: js.UndefOr[js.Array[String]] = js.native
+  var campaignIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select default ads with the specified compatibility. Applicable when type
@@ -50,65 +50,65 @@ trait ParamsResourceAdsList extends StandardParameters {
     * rendering in mobile apps. IN_STREAM_VIDEO refers to rendering an
     * in-stream video ads developed with the VAST standard.
     */
-  var compatibility: js.UndefOr[String] = js.native
+  var compatibility: js.UndefOr[String] = js.undefined
   
   /**
     * Select only ads with these creative IDs assigned.
     */
-  var creativeIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only ads with these creative optimization configuration IDs.
     */
-  var creativeOptimizationConfigurationIds: js.UndefOr[js.Array[String]] = js.native
+  var creativeOptimizationConfigurationIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only dynamic click trackers. Applicable when type is
     * AD_SERVING_CLICK_TRACKER. If true, select dynamic click trackers. If
     * false, select static click trackers. Leave unset to select both.
     */
-  var dynamicClickTracker: js.UndefOr[Boolean] = js.native
+  var dynamicClickTracker: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only ads with these IDs.
     */
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only ads with these landing page IDs.
     */
-  var landingPageIds: js.UndefOr[js.Array[String]] = js.native
+  var landingPageIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Maximum number of results to return.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Select only ads with this event tag override ID.
     */
-  var overriddenEventTagId: js.UndefOr[String] = js.native
+  var overriddenEventTagId: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the nextPageToken from the previous result page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Select only ads with these placement IDs assigned.
     */
-  var placementIds: js.UndefOr[js.Array[String]] = js.native
+  var placementIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only ads whose list targeting expression use these remarketing
     * list IDs.
     */
-  var remarketingListIds: js.UndefOr[js.Array[String]] = js.native
+  var remarketingListIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allows searching for objects by name or ID. Wildcards (*) are allowed.
@@ -118,37 +118,37 @@ trait ParamsResourceAdsList extends StandardParameters {
     * For example, a search string of "ad" will match objects with name "my
     * ad", "ad 2015", or simply "ad".
     */
-  var searchString: js.UndefOr[String] = js.native
+  var searchString: js.UndefOr[String] = js.undefined
   
   /**
     * Select only ads with these size IDs.
     */
-  var sizeIds: js.UndefOr[js.Array[String]] = js.native
+  var sizeIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Field by which to sort the list.
     */
-  var sortField: js.UndefOr[String] = js.native
+  var sortField: js.UndefOr[String] = js.undefined
   
   /**
     * Order of sorted results.
     */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * Select only ads that are SSL-compliant.
     */
-  var sslCompliant: js.UndefOr[Boolean] = js.native
+  var sslCompliant: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only ads that require SSL.
     */
-  var sslRequired: js.UndefOr[Boolean] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Select only ads with these types.
     */
-  var `type`: js.UndefOr[js.Array[String]] = js.native
+  var `type`: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceAdsList {
   

@@ -2,13 +2,11 @@ package typings.vegaTypings.encodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encodable[T] extends StObject {
   
-  var encode: js.UndefOr[Encode[T]] = js.native
+  var encode: js.UndefOr[Encode[T]] = js.undefined
 }
 object Encodable {
   
@@ -19,7 +17,7 @@ object Encodable {
   }
   
   @scala.inline
-  implicit class EncodableMutableBuilder[Self <: Encodable[_], T] (val x: Self with Encodable[T]) extends AnyVal {
+  implicit class EncodableMutableBuilder[Self <: Encodable[?], T] (val x: Self & Encodable[T]) extends AnyVal {
     
     @scala.inline
     def setEncode(value: Encode[T]): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])

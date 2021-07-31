@@ -2,25 +2,23 @@ package typings.storybookReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderColor: String = js.native
+  var borderColor: String
   
-  var buttonActiveTextColor: String = js.native
+  var buttonActiveTextColor: String
   
-  var buttonTextColor: String = js.native
+  var buttonTextColor: String
   
-  var headerTextColor: String = js.native
+  var headerTextColor: String
   
-  var labelColor: String = js.native
+  var labelColor: String
   
-  var previewBorderColor: String = js.native
+  var previewBorderColor: String
 }
 object BackgroundColor {
   

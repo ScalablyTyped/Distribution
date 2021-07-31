@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDashboard.SelectedTabPageChanged event.
   */
-@js.native
-trait ASPxClientSelectedTabPageChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSelectedTabPageChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the tab page that was selected.
     */
-  var PreviousPage: String = js.native
+  var PreviousPage: String
   
   /**
     * Gets the tab page that is selected.
     */
-  var SelectedPage: String = js.native
+  var SelectedPage: String
   
   /**
     * Gets the name of the tab container that contains the selected tab page.
     */
-  var TabContainerName: String = js.native
+  var TabContainerName: String
 }
 object ASPxClientSelectedTabPageChangedEventArgs {
   

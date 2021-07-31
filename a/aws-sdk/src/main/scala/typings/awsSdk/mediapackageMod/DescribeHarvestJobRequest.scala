@@ -2,16 +2,14 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHarvestJobRequest extends StObject {
   
   /**
     * The ID of the HarvestJob.
     */
-  var Id: string = js.native
+  var Id: string
 }
 object DescribeHarvestJobRequest {
   

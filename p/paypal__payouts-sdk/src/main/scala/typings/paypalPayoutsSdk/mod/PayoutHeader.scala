@@ -7,21 +7,19 @@ import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.PROCESSING
 import typings.paypalPayoutsSdk.paypalPayoutsSdkStrings.SUCCESS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PayoutHeader extends StObject {
   
-  var batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS = js.native
+  var batch_status: CANCELED | DENIED | PENDING | PROCESSING | SUCCESS
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var payout_batch_id: String = js.native
+  var payout_batch_id: String
   
-  var sender_batch_header: PayoutSenderBatchHeader = js.native
+  var sender_batch_header: PayoutSenderBatchHeader
   
-  var time_created: js.UndefOr[String] = js.native
+  var time_created: js.UndefOr[String] = js.undefined
 }
 object PayoutHeader {
   

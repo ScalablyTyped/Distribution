@@ -3,22 +3,22 @@ package typings.siesta.Siesta.Test.Action
 import typings.siesta.Siesta.Test.IAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-@js.native
-trait Wait extends IAction {
+trait Wait
+  extends StObject
+     with IAction {
   
-  var args: js.UndefOr[js.Array[_]] = js.native
+  var args: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var waitFor: js.UndefOr[String] = js.native
+  var waitFor: js.UndefOr[String] = js.undefined
 }
 object Wait {
   
@@ -32,7 +32,7 @@ object Wait {
   implicit class WaitMutableBuilder[Self <: Wait] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+    def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

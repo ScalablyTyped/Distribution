@@ -2,24 +2,22 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An API Error returned by the Instant Games SDK
   */
-@js.native
 trait APIError extends StObject {
   
   /**
     * The relevant error code
     */
-  var code: ErrorCodeType = js.native
+  var code: ErrorCodeType
   
   /**
     * A message describing the error
     */
-  var message: String = js.native
+  var message: String
 }
 object APIError {
   

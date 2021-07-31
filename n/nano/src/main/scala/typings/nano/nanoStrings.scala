@@ -3,108 +3,147 @@ package typings.nano
 import typings.nano.mod.MangoOperator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nanoStrings {
   
   @js.native
-  sealed trait $all extends MangoOperator
+  sealed trait $all
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $all: $all = "$all".asInstanceOf[$all]
   
   @js.native
-  sealed trait $allMatch extends MangoOperator
+  sealed trait $allMatch
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $allMatch: $allMatch = "$allMatch".asInstanceOf[$allMatch]
   
   @js.native
-  sealed trait $and extends MangoOperator
+  sealed trait $and
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $and: $and = "$and".asInstanceOf[$and]
   
   @js.native
-  sealed trait $elemMatch extends MangoOperator
+  sealed trait $elemMatch
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $elemMatch: $elemMatch = "$elemMatch".asInstanceOf[$elemMatch]
   
   @js.native
-  sealed trait $eq extends MangoOperator
+  sealed trait $eq
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $eq: $eq = "$eq".asInstanceOf[$eq]
   
   @js.native
-  sealed trait $exists extends MangoOperator
+  sealed trait $exists
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $exists: $exists = "$exists".asInstanceOf[$exists]
   
   @js.native
-  sealed trait $gt extends MangoOperator
+  sealed trait $gt
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $gt: $gt = "$gt".asInstanceOf[$gt]
   
   @js.native
-  sealed trait $gte extends MangoOperator
+  sealed trait $gte
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $gte: $gte = "$gte".asInstanceOf[$gte]
   
   @js.native
-  sealed trait $in extends MangoOperator
+  sealed trait $in
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $in: $in = "$in".asInstanceOf[$in]
   
   @js.native
-  sealed trait $lt extends MangoOperator
+  sealed trait $lt
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $lt: $lt = "$lt".asInstanceOf[$lt]
   
   @js.native
-  sealed trait $lte extends MangoOperator
+  sealed trait $lte
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $lte: $lte = "$lte".asInstanceOf[$lte]
   
   @js.native
-  sealed trait $mod extends MangoOperator
+  sealed trait $mod
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $mod: $mod = "$mod".asInstanceOf[$mod]
   
   @js.native
-  sealed trait $ne extends MangoOperator
+  sealed trait $ne
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $ne: $ne = "$ne".asInstanceOf[$ne]
   
   @js.native
-  sealed trait $nin extends MangoOperator
+  sealed trait $nin
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $nin: $nin = "$nin".asInstanceOf[$nin]
   
   @js.native
-  sealed trait $nor extends MangoOperator
+  sealed trait $nor
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $nor: $nor = "$nor".asInstanceOf[$nor]
   
   @js.native
-  sealed trait $not extends MangoOperator
+  sealed trait $not
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $not: $not = "$not".asInstanceOf[$not]
   
   @js.native
-  sealed trait $or extends MangoOperator
+  sealed trait $or
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $or: $or = "$or".asInstanceOf[$or]
   
   @js.native
-  sealed trait $regex extends MangoOperator
+  sealed trait $regex
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $regex: $regex = "$regex".asInstanceOf[$regex]
   
   @js.native
-  sealed trait $size extends MangoOperator
+  sealed trait $size
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $size: $size = "$size".asInstanceOf[$size]
   
   @js.native
-  sealed trait $type extends MangoOperator
+  sealed trait $type
+    extends StObject
+       with MangoOperator
   @scala.inline
   def $type: $type = "$type".asInstanceOf[$type]
   

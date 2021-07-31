@@ -10,9 +10,9 @@ Returns the last result from an async iterator
 | ------------------ | :-------------: |
 | Full name          | it-last |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 96824 |
+| # releases         | 6 |
+| # dependents       | 19 |
+| # downloads        | 364151 |
 | # stars            | 0 |
 
 ## Links

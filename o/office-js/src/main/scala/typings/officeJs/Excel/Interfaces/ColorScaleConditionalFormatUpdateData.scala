@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.ConditionalColorScaleCriteria
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ColorScaleConditionalFormat object, for use in `colorScaleConditionalFormat.set({ ... })`. */
-@js.native
 trait ColorScaleConditionalFormatUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ColorScaleConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.native
+  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined
 }
 object ColorScaleConditionalFormatUpdateData {
   

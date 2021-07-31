@@ -9,9 +9,9 @@ Typings are for version 9.0.5
 | ------------------ | :-------------: |
 | Full name          | next-server |
 | Keywords           | - |
-| # releases         | 253 |
+| # releases         | 185 |
 | # dependents       | 10 |
-| # downloads        | 3685049 |
+| # downloads        | 2458965 |
 | # stars            | 0 |
 
 ## Links

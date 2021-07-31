@@ -11,8 +11,8 @@ Accessible React button dropdown menu.
 | Full name          | @reach/menu-button |
 | Keywords           | - |
 | # releases         | 47 |
-| # dependents       | 40 |
-| # downloads        | 2412024 |
+| # dependents       | 44 |
+| # downloads        | 6318683 |
 | # stars            | 0 |
 
 ## Links

@@ -3,21 +3,19 @@ package typings.jpm.anon
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentScriptOptions extends StObject {
   
-  var contentScript: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScript: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.native
+  var contentScriptFile: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentScriptOptions: js.UndefOr[js.Object] = js.native
+  var contentScriptOptions: js.UndefOr[js.Object] = js.undefined
   
-  var onError: js.UndefOr[js.Function1[/* error */ Error, _]] = js.native
+  var onError: js.UndefOr[js.Function1[/* error */ Error, js.Any]] = js.undefined
   
-  var onMessage: js.UndefOr[js.Function1[/* message */ String, _]] = js.native
+  var onMessage: js.UndefOr[js.Function1[/* message */ String, js.Any]] = js.undefined
 }
 object ContentScriptOptions {
   
@@ -55,13 +53,13 @@ object ContentScriptOptions {
     def setContentScriptVarargs(value: String*): Self = StObject.set(x, "contentScript", js.Array(value :_*))
     
     @scala.inline
-    def setOnError(value: /* error */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+    def setOnError(value: /* error */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
     
     @scala.inline
-    def setOnMessage(value: /* message */ String => _): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
+    def setOnMessage(value: /* message */ String => js.Any): Self = StObject.set(x, "onMessage", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)

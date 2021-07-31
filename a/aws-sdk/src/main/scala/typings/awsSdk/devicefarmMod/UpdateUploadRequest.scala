@@ -2,31 +2,29 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUploadRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the uploaded test spec.
     */
-  var arn: AmazonResourceName = js.native
+  var arn: AmazonResourceName
   
   /**
     * The upload's content type (for example, application/x-yaml).
     */
-  var contentType: js.UndefOr[ContentType] = js.native
+  var contentType: js.UndefOr[ContentType] = js.undefined
   
   /**
     * Set to true if the YAML file has changed and must be updated. Otherwise, set to false.
     */
-  var editContent: js.UndefOr[Boolean] = js.native
+  var editContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The upload's test spec file name. The name must not contain any forward slashes (/). The test spec file name must end with the .yaml or .yml file extension.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object UpdateUploadRequest {
   

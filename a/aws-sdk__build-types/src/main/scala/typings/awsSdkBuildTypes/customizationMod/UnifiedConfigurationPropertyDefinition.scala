@@ -3,20 +3,19 @@ package typings.awsSdkBuildTypes.customizationMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.unified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.awsSdkBuildTypes.customizationMod.ConfigurationPropertyDefinitionRuntimeAttributes because var conflicts: imports. Inlined required, default, normalize, apply */ @js.native
-trait UnifiedConfigurationPropertyDefinition
-  extends ConfigurationPropertyDefinitionSharedAttributes
+- typings.awsSdkBuildTypes.customizationMod.ConfigurationPropertyDefinitionRuntimeAttributes because var conflicts: imports. Inlined required, default, normalize, apply */ trait UnifiedConfigurationPropertyDefinition
+  extends StObject
+     with ConfigurationPropertyDefinitionSharedAttributes
      with ConfigurationPropertyDefinition {
   
   /**
     * The default (if any) to use should the user not supply a value for this
     * property.
     */
-  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.native
+  var default: js.UndefOr[DefaultValue | DefaultProvider] = js.undefined
   
   /**
     * A string containing a valid TypeScript expression that evaluates to a
@@ -31,7 +30,7 @@ trait UnifiedConfigurationPropertyDefinition
     * imported package.
     */
   @JSName("apply")
-  var apply: js.UndefOr[String] = js.native
+  var apply: js.UndefOr[String] = js.undefined
   
   /**
     * A string containing a valid TypeScript expression that evaluates to a
@@ -47,21 +46,21 @@ trait UnifiedConfigurationPropertyDefinition
     * If an imported type is used, it must be referred to as a property of the
     * imported package.
     */
-  var normalize: js.UndefOr[String] = js.native
+  var normalize: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the user must supply a value for this property.
     */
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var `type`: unified = js.native
+  var `type`: unified
 }
 object UnifiedConfigurationPropertyDefinition {
   
   @scala.inline
-  def apply(documentation: String, inputType: String, required: Boolean, `type`: unified): UnifiedConfigurationPropertyDefinition = {
+  def apply(documentation: String, inputType: String, required: Boolean): UnifiedConfigurationPropertyDefinition = {
     val __obj = js.Dynamic.literal(documentation = documentation.asInstanceOf[js.Any], inputType = inputType.asInstanceOf[js.Any], required = required.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("unified")
     __obj.asInstanceOf[UnifiedConfigurationPropertyDefinition]
   }
   

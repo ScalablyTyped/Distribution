@@ -7,43 +7,41 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GoldenLayout {
   
-  @js.native
   trait BrowserWindow extends StObject {
     
     /**
       * Closes the popout
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Returns the GoldenLayout instance from the child window
       */
-    def getGlInstance(): typings.openfin.GoldenLayout.GoldenLayout = js.native
+    def getGlInstance(): typings.openfin.GoldenLayout.GoldenLayout
     
     /**
       * Returns the native Window object
       */
-    def getWindow(): Window = js.native
+    def getWindow(): Window
     
     /**
       * True if the window has been opened and its GoldenLayout instance initialised.
       */
-    var isInitialised: Boolean = js.native
+    var isInitialised: Boolean
     
     /**
       * Returns the popout to its original position as specified in parentId and indexInParent
       */
-    def popIn(): Unit = js.native
+    def popIn(): Unit
     
     /**
       * Creates a window configuration object from the Popout.
       */
-    def toConfig(): Content = js.native
+    def toConfig(): Content
   }
   object BrowserWindow {
     
@@ -84,19 +82,20 @@ object GoldenLayout {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ @js.native
-  trait ComponentConfig extends ItemConfig {
+  - typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ trait ComponentConfig
+    extends StObject
+       with ItemConfig {
     
     /**
       * The name of the component as specified in layout.registerComponent. Mandatory if type is 'component'.
       */
-    var componentName: String = js.native
+    var componentName: String
     
     /**
       * A serialisable object. Will be passed to the component constructor function and will be the value returned by
       * container.getState().
       */
-    var componentState: js.UndefOr[js.Any] = js.native
+    var componentState: js.UndefOr[js.Any] = js.undefined
   }
   object ComponentConfig {
     
@@ -121,16 +120,15 @@ object GoldenLayout {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var content: js.UndefOr[js.Array[ItemConfigType]] = js.native
+    var content: js.UndefOr[js.Array[ItemConfigType]] = js.undefined
     
-    var dimensions: js.UndefOr[Dimensions] = js.native
+    var dimensions: js.UndefOr[Dimensions] = js.undefined
     
-    var labels: js.UndefOr[Labels] = js.native
+    var labels: js.UndefOr[Labels] = js.undefined
     
-    var settings: js.UndefOr[Settings] = js.native
+    var settings: js.UndefOr[Settings] = js.undefined
   }
   object Config {
     
@@ -173,7 +171,9 @@ object GoldenLayout {
   }
   
   @js.native
-  trait Container extends EventEmitter {
+  trait Container
+    extends StObject
+       with EventEmitter {
     
     /**
       * Closes the container or returns false if that is not possible
@@ -266,7 +266,9 @@ object GoldenLayout {
   }
   
   @js.native
-  trait ContentItem extends EventEmitter {
+  trait ContentItem
+    extends StObject
+       with EventEmitter {
     
     var _splitter: js.Any = js.native
     
@@ -296,28 +298,13 @@ object GoldenLayout {
       * @param skipSelf If true, the method will only be invoked on the item's children, but not on the item itself. Default: false
       */
     def callDownwards(functionName: String): Unit = js.native
-    def callDownwards(
-      functionName: String,
-      functionArguments: js.UndefOr[scala.Nothing],
-      bottomUp: js.UndefOr[scala.Nothing],
-      skipSelf: Boolean
-    ): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.UndefOr[scala.Nothing], bottomUp: Boolean): Unit = js.native
-    def callDownwards(
-      functionName: String,
-      functionArguments: js.UndefOr[scala.Nothing],
-      bottomUp: Boolean,
-      skipSelf: Boolean
-    ): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[_]): Unit = js.native
-    def callDownwards(
-      functionName: String,
-      functionArguments: js.Array[_],
-      bottomUp: js.UndefOr[scala.Nothing],
-      skipSelf: Boolean
-    ): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[_], bottomUp: Boolean): Unit = js.native
-    def callDownwards(functionName: String, functionArguments: js.Array[_], bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[js.Any]): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: js.Array[js.Any], bottomUp: Unit, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Boolean, skipSelf: Boolean): Unit = js.native
+    def callDownwards(functionName: String, functionArguments: Unit, bottomUp: Unit, skipSelf: Boolean): Unit = js.native
     
     /**
       * The item's inner element. Can be the same as the outer element.
@@ -506,7 +493,6 @@ object GoldenLayout {
     var `type`: String = js.native
   }
   
-  @js.native
   trait Dimensions extends StObject {
     
     /**
@@ -514,38 +500,38 @@ object GoldenLayout {
       * than the visible one, making it safe to set this to small values without affecting usability.
       * Default: 5
       */
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of the element that appears when an item is dragged (in pixel).
       * Default: 200
       */
-    var dragProxyHeight: js.UndefOr[Double] = js.native
+    var dragProxyHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The width of the element that appears when an item is dragged (in pixel).
       * Default: 300
       */
-    var dragProxyWidth: js.UndefOr[Double] = js.native
+    var dragProxyWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The height of the header elements in pixel. This can be changed, but your theme's header css needs to be
       * adjusted accordingly.
       * Default: 20
       */
-    var headerHeight: js.UndefOr[Double] = js.native
+    var headerHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum height an item can be resized to (in pixel).
       * Default: 10
       */
-    var minItemHeight: js.UndefOr[Double] = js.native
+    var minItemHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum width an item can be resized to (in pixel).
       * Default: 10
       */
-    var minItemWidth: js.UndefOr[Double] = js.native
+    var minItemWidth: js.UndefOr[Double] = js.undefined
   }
   object Dimensions {
     
@@ -599,22 +585,22 @@ object GoldenLayout {
   @js.native
   trait EventEmitter extends StObject {
     
-    def emit(eventName: String, arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], argN: js.Any*): Unit = js.native
-    def emit(eventName: String, arg1: js.UndefOr[scala.Nothing], arg2: js.Any, argN: js.Any*): Unit = js.native
-    def emit(eventName: String, arg1: js.Any, arg2: js.UndefOr[scala.Nothing], argN: js.Any*): Unit = js.native
     /**
       * Notify listeners of an event and pass arguments along
       * @param eventName The name of the event to emit
       */
     def emit(eventName: String, arg1: js.Any, arg2: js.Any, argN: js.Any*): Unit = js.native
+    def emit(eventName: String, arg1: js.Any, arg2: Unit, argN: js.Any*): Unit = js.native
+    def emit(eventName: String, arg1: Unit, arg2: js.Any, argN: js.Any*): Unit = js.native
+    def emit(eventName: String, arg1: Unit, arg2: Unit, argN: js.Any*): Unit = js.native
     
     /**
       * Alias for unbind
       */
     def off(eventName: String): Unit = js.native
-    def off(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
     def off(eventName: String, callback: js.Function): Unit = js.native
     def off(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
+    def off(eventName: String, callback: Unit, context: js.Any): Unit = js.native
     
     /**
       * Subscribe to an event
@@ -625,13 +611,13 @@ object GoldenLayout {
     def on(eventName: String, callback: js.Function): Unit = js.native
     def on(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
     
-    def trigger(eventName: String, arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], argN: js.Any*): Unit = js.native
-    def trigger(eventName: String, arg1: js.UndefOr[scala.Nothing], arg2: js.Any, argN: js.Any*): Unit = js.native
-    def trigger(eventName: String, arg1: js.Any, arg2: js.UndefOr[scala.Nothing], argN: js.Any*): Unit = js.native
     /**
       * Alias for emit
       */
     def trigger(eventName: String, arg1: js.Any, arg2: js.Any, argN: js.Any*): Unit = js.native
+    def trigger(eventName: String, arg1: js.Any, arg2: Unit, argN: js.Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Unit, arg2: js.Any, argN: js.Any*): Unit = js.native
+    def trigger(eventName: String, arg1: Unit, arg2: Unit, argN: js.Any*): Unit = js.native
     
     /**
       * Unsubscribes either all listeners if just an eventName is provided, just a specific callback if invoked with
@@ -642,13 +628,15 @@ object GoldenLayout {
       * @param context The value of the this pointer in the callback function
       */
     def unbind(eventName: String): Unit = js.native
-    def unbind(eventName: String, callback: js.UndefOr[scala.Nothing], context: js.Any): Unit = js.native
     def unbind(eventName: String, callback: js.Function): Unit = js.native
     def unbind(eventName: String, callback: js.Function, context: js.Any): Unit = js.native
+    def unbind(eventName: String, callback: Unit, context: js.Any): Unit = js.native
   }
   
   @js.native
-  trait GoldenLayout extends EventEmitter {
+  trait GoldenLayout
+    extends StObject
+       with EventEmitter {
     
     var _dragProxy: js.Any = js.native
     
@@ -672,7 +660,7 @@ object GoldenLayout {
       * @param parent A parent item
       */
     def createContentItem(): ContentItem = js.native
-    def createContentItem(itemConfiguration: js.UndefOr[scala.Nothing], parent: ContentItem): ContentItem = js.native
+    def createContentItem(itemConfiguration: Unit, parent: ContentItem): ContentItem = js.native
     def createContentItem(itemConfiguration: ItemConfigType): ContentItem = js.native
     def createContentItem(itemConfiguration: ItemConfigType, parent: ContentItem): ContentItem = js.native
     
@@ -688,14 +676,9 @@ object GoldenLayout {
     def createDragSource(element: HTMLElement, itemConfiguration: ItemConfigType): js.Object = js.native
     
     def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft): Unit = js.native
-    def createPopout(
-      configOrContentItem: ContentItem,
-      dimensions: HeightLeft,
-      parentId: js.UndefOr[scala.Nothing],
-      indexInParent: Double
-    ): Unit = js.native
     def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft, parentId: String): Unit = js.native
     def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft, parentId: String, indexInParent: Double): Unit = js.native
+    def createPopout(configOrContentItem: ContentItem, dimensions: HeightLeft, parentId: Unit, indexInParent: Double): Unit = js.native
     /**
       * Creates a new popout window with configOrContentItem as contents at the position specified in dimensions
       * @param configOrContentItem   The content item or config that will be created in the new window. If a item is
@@ -708,12 +691,6 @@ object GoldenLayout {
       * @param indexInParent The index at which the child window's contents will be appended to. Default: null
       */
     def createPopout(configOrContentItem: ItemConfigType, dimensions: HeightLeft): Unit = js.native
-    def createPopout(
-      configOrContentItem: ItemConfigType,
-      dimensions: HeightLeft,
-      parentId: js.UndefOr[scala.Nothing],
-      indexInParent: Double
-    ): Unit = js.native
     def createPopout(configOrContentItem: ItemConfigType, dimensions: HeightLeft, parentId: String): Unit = js.native
     def createPopout(
       configOrContentItem: ItemConfigType,
@@ -721,6 +698,7 @@ object GoldenLayout {
       parentId: String,
       indexInParent: Double
     ): Unit = js.native
+    def createPopout(configOrContentItem: ItemConfigType, dimensions: HeightLeft, parentId: Unit, indexInParent: Double): Unit = js.native
     
     /**
       * Destroys the layout. Recursively calls destroy on all components and content items, removes all event
@@ -810,9 +788,9 @@ object GoldenLayout {
       * @param height The outer height the layout should be resized to. Default: The container elements height
       */
     def updateSize(): Unit = js.native
-    def updateSize(width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
     def updateSize(width: Double): Unit = js.native
     def updateSize(width: Double, height: Double): Unit = js.native
+    def updateSize(width: Unit, height: Double): Unit = js.native
     
     /**
       * The current outer width of the layout in pixels.
@@ -879,46 +857,47 @@ object GoldenLayout {
     var tabsContainer: JQuery[HTMLElement] = js.native
   }
   
-  @js.native
-  trait ItemConfig extends ItemConfigType {
+  trait ItemConfig
+    extends StObject
+       with ItemConfigType {
     
     /**
       * An array of configurations for items that will be created as children of this item.
       */
-    var content: js.UndefOr[js.Array[ItemConfigType]] = js.native
+    var content: js.UndefOr[js.Array[ItemConfigType]] = js.undefined
     
     /**
       * The height of this item, relative to the other children of its parent in percent
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * A String or an Array of Strings. Used to retrieve the item using item.getItemsById()
       */
-    var id: js.UndefOr[String | js.Array[String]] = js.native
+    var id: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Determines if the item is closable. If false, the x on the items tab will be hidden and container.close()
       * will return false
       * Default: true
       */
-    var isClosable: js.UndefOr[Boolean] = js.native
+    var isClosable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The title of the item as displayed on its tab and on popout windows
       * Default: componentName or ''
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /**
       * The type of the item. Possible values are 'row', 'column', 'stack', 'component' and 'react-component'.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The width of this item, relative to the other children of its parent in percent
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ItemConfig {
     
@@ -1009,32 +988,31 @@ object GoldenLayout {
     }
   }
   
-  @js.native
   trait Labels extends StObject {
     
     /**
       * The tooltip text that appears when hovering over the close icon.
       * Default: 'close'
       */
-    var close: js.UndefOr[String] = js.native
+    var close: js.UndefOr[String] = js.undefined
     
     /**
       * The tooltip text that appears when hovering over the maximise icon.
       * Default: 'maximise'
       */
-    var maximise: js.UndefOr[String] = js.native
+    var maximise: js.UndefOr[String] = js.undefined
     
     /**
       * The tooltip text that appears when hovering over the minimise icon.
       * Default: 'minimise'
       */
-    var minimise: js.UndefOr[String] = js.native
+    var minimise: js.UndefOr[String] = js.undefined
     
     /**
       * The tooltip text that appears when hovering over the popout icon.
       * Default: 'open in new window'
       */
-    var popout: js.UndefOr[String] = js.native
+    var popout: js.UndefOr[String] = js.undefined
   }
   object Labels {
     
@@ -1074,18 +1052,19 @@ object GoldenLayout {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ @js.native
-  trait ReactComponentConfig extends ItemConfig {
+  - typings.openfin.GoldenLayout.ItemConfigType because Already inherited */ trait ReactComponentConfig
+    extends StObject
+       with ItemConfig {
     
     /**
       * The name of the component as specified in layout.registerComponent. Mandatory if type is 'react-component'
       */
-    var component: String = js.native
+    var component: String
     
     /**
       * Properties that will be passed to the component and accessible using this.props.
       */
-    var props: js.UndefOr[js.Any] = js.native
+    var props: js.UndefOr[js.Any] = js.undefined
   }
   object ReactComponentConfig {
     
@@ -1110,7 +1089,6 @@ object GoldenLayout {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
@@ -1118,7 +1096,7 @@ object GoldenLayout {
       * If false, the popout call will fail silently.
       * Default: true
       */
-    var blockedPopoutsThrowError: js.UndefOr[Boolean] = js.native
+    var blockedPopoutsThrowError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if all popouts should be closed when the page that created them is closed. Popouts don't have a
@@ -1126,58 +1104,58 @@ object GoldenLayout {
       * addition, any changes made to popouts won't be stored after the parent is closed.
       * Default: true
       */
-    var closePopoutsOnUnload: js.UndefOr[Boolean] = js.native
+    var closePopoutsOnUnload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Constrains the area in which items can be dragged to the layout's container. Will be set to false
       * automatically when layout.createDragSource() is called.
       * Default: true
       */
-    var constrainDragToContainer: js.UndefOr[Boolean] = js.native
+    var constrainDragToContainer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turns headers on or off. If false, the layout will be displayed with splitters only.
       * Default: true
       */
-    var hasHeaders: js.UndefOr[Boolean] = js.native
+    var hasHeaders: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Decides what will be opened in a new window if the user clicks the popout icon. If true the entire stack will
       * be transferred to the new window, if false only the active component will be opened.
       * Default: false
       */
-    var popoutWholeStack: js.UndefOr[Boolean] = js.native
+    var popoutWholeStack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the user can re-arrange the layout by dragging items by their tabs to the desired location.
       * Default: true
       */
-    var reorderEnabled: js.UndefOr[Boolean] = js.native
+    var reorderEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the user can select items by clicking on their header. This sets the value of layout.selectedItem to
       * the clicked item, highlights its header and the layout emits a 'selectionChanged' event.
       * Default: false
       */
-    var selectionEnabled: js.UndefOr[Boolean] = js.native
+    var selectionEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if the close icon should be displayed in the header-bar.
       * Default: true
       */
-    var showCloseIcon: js.UndefOr[Boolean] = js.native
+    var showCloseIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if the maximise icon should be displayed in the header-bar.
       * Default: true
       */
-    var showMaximiseIcon: js.UndefOr[Boolean] = js.native
+    var showMaximiseIcon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies if the popout icon should be displayed in the header-bar.
       * Default: true
       */
-    var showPopoutIcon: js.UndefOr[Boolean] = js.native
+    var showPopoutIcon: js.UndefOr[Boolean] = js.undefined
   }
   object Settings {
     
@@ -1252,52 +1230,51 @@ object GoldenLayout {
     }
   }
   
-  @js.native
   trait Tab extends StObject {
     
-    var _dragListener: EventEmitter = js.native
+    var _dragListener: EventEmitter
     
     /**
       * The (jQuery) DOM element that closes the tab
       */
-    var closeElement: JQuery[HTMLElement] = js.native
+    var closeElement: JQuery[HTMLElement]
     
     /**
       * A reference to the content item this tab relates to
       */
-    var contentItem: ContentItem = js.native
+    var contentItem: ContentItem
     
     /**
       * The tabs outer (jQuery) DOM element
       */
-    var element: JQuery[HTMLElement] = js.native
+    var element: JQuery[HTMLElement]
     
     /**
       * A reference to the header this tab is a child of
       */
-    var header: Header = js.native
+    var header: Header
     
     /**
       * True if this tab is the selected tab
       */
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
     /**
       * Sets this tab's active state. To programmatically switch tabs, use header.setActiveContentItem( item ) instead.
       * @param isActive Whether the tab is active
       */
-    def setActive(isActive: Boolean): Unit = js.native
+    def setActive(isActive: Boolean): Unit
     
     /**
       * Sets the tab's title. Does not affect the contentItem's title!
       * @param title The new title
       */
-    def setTitle(title: String): Unit = js.native
+    def setTitle(title: String): Unit
     
     /**
       * The (jQuery) DOM element containing the title
       */
-    var titleElement: JQuery[HTMLElement] = js.native
+    var titleElement: JQuery[HTMLElement]
   }
   object Tab {
     

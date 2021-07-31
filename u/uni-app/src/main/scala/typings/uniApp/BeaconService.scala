@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BeaconService extends StObject {
   
   /**
     * 服务目前是否可用
     */
-  var available: js.UndefOr[Boolean] = js.native
+  var available: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 目前是否处于搜索状态
     */
-  var discovering: js.UndefOr[Boolean] = js.native
+  var discovering: js.UndefOr[Boolean] = js.undefined
 }
 object BeaconService {
   

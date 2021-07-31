@@ -12,7 +12,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isoFSMod {
@@ -29,18 +28,21 @@ object isoFSMod {
       */
     def this(data: Buffer) = this()
     def this(data: Buffer, name: String) = this()
-    def this(data: Buffer, name: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
     def this(data: Buffer, name: String, deprecateMsg: Boolean) = this()
+    def this(data: Buffer, name: Unit, deprecateMsg: Boolean) = this()
   }
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/IsoFS", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates an IsoFS instance with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/IsoFS", "default.Create")
-    @js.native
-    def Create(opts: IsoFSOptions, cb: BFSCallback[IsoFS]): Unit = js.native
+    @scala.inline
+    def Create(opts: IsoFSOptions, cb: BFSCallback[IsoFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/IsoFS", "default.Name")
     @js.native
@@ -50,9 +52,8 @@ object isoFSMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/IsoFS", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -85,7 +86,7 @@ object isoFSMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -197,12 +198,11 @@ object isoFSMod {
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
-  @js.native
   trait IsoFSOptions extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object IsoFSOptions {
     

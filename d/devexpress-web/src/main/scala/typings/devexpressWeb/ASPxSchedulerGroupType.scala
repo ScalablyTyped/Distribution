@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the SchedulerGroupType enumeration.
   */
-@js.native
 trait ASPxSchedulerGroupType extends StObject {
   
   /**
     * Gets a string representation equivalent of SchedulerGroupType.Date enumeration for use in client scripts.
     */
-  var Date: String = js.native
+  var Date: String
   
   /**
     * Gets a string representation equivalent of SchedulerGroupType.None enumeration for use in client scripts.
     */
-  var None: String = js.native
+  var None: String
   
   /**
     * Gets a string representation equivalent of SchedulerGroupType.Resource enumeration for use in client scripts.
     */
-  var Resource: String = js.native
+  var Resource: String
 }
 object ASPxSchedulerGroupType {
   

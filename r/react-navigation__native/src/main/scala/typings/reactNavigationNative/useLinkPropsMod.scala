@@ -4,21 +4,22 @@ import typings.reactNavigationNative.anon.AccessibilityRole
 import typings.reactNavigationRouters.typesMod.NavigationAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLinkPropsMod {
   
-  @JSImport("@react-navigation/native/lib/typescript/src/useLinkProps", JSImport.Default)
+  @JSImport("@react-navigation/native/lib/typescript/src/useLinkProps", JSImport.Namespace)
   @js.native
-  def default(hasToAction: Props): AccessibilityRole = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasToAction: Props): AccessibilityRole = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasToAction.asInstanceOf[js.Any]).asInstanceOf[AccessibilityRole]
+  
   trait Props extends StObject {
     
-    var action: js.UndefOr[NavigationAction] = js.native
+    var action: js.UndefOr[NavigationAction] = js.undefined
     
-    var to: String = js.native
+    var to: String
   }
   object Props {
     

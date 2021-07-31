@@ -12,7 +12,7 @@ Typings are for version 1.1
 | Keywords           | pinyin |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 4785 |
+| # downloads        | 3379 |
 | # stars            | 1 |
 
 ## Links

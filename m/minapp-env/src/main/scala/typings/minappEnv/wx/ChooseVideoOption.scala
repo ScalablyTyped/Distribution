@@ -7,10 +7,8 @@ import typings.minappEnv.minappEnvStrings.camera
 import typings.minappEnv.minappEnvStrings.front
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseVideoOption extends StObject {
   
   /** 默认拉起的是前置或者后置摄像头。部分 Android 手机下由于系统 ROM 不支持无法生效
@@ -18,31 +16,31 @@ trait ChooseVideoOption extends StObject {
     * 可选值：
     * - 'back': 默认拉起后置摄像头;
     * - 'front': 默认拉起前置摄像头; */
-  var camera: js.UndefOr[back | front] = js.native
+  var camera: js.UndefOr[back | front] = js.undefined
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[ChooseVideoCompleteCallback] = js.native
+  var complete: js.UndefOr[ChooseVideoCompleteCallback] = js.undefined
   
   /** 是否压缩所选择的视频文件
     *
     * 最低基础库： `1.6.0` */
-  var compressed: js.UndefOr[Boolean] = js.native
+  var compressed: js.UndefOr[Boolean] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[ChooseVideoFailCallback] = js.native
+  var fail: js.UndefOr[ChooseVideoFailCallback] = js.undefined
   
   /** 拍摄视频最长拍摄时间，单位秒 */
-  var maxDuration: js.UndefOr[Double] = js.native
+  var maxDuration: js.UndefOr[Double] = js.undefined
   
   /** 视频选择的来源
     *
     * 可选值：
     * - 'album': 从相册选择视频;
     * - 'camera': 使用相机拍摄视频; */
-  var sourceType: js.UndefOr[Array[album | camera]] = js.native
+  var sourceType: js.UndefOr[Array[album | camera]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[ChooseVideoSuccessCallback] = js.native
+  var success: js.UndefOr[ChooseVideoSuccessCallback] = js.undefined
 }
 object ChooseVideoOption {
   

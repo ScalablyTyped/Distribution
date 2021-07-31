@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateResolverEndpointIpAddressRequest extends StObject {
   
   /**
     * Either the IPv4 address that you want to add to a Resolver endpoint or a subnet ID. If you specify a subnet ID, Resolver chooses an IP address for you from the available IPs in the specified subnet.
     */
-  var IpAddress: IpAddressUpdate = js.native
+  var IpAddress: IpAddressUpdate
   
   /**
     * The ID of the Resolver endpoint that you want to associate IP addresses with.
     */
-  var ResolverEndpointId: ResourceId = js.native
+  var ResolverEndpointId: ResourceId
 }
 object AssociateResolverEndpointIpAddressRequest {
   

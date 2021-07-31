@@ -3,14 +3,12 @@ package typings.semanticUiSidebar.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-sidebar.SemanticUI.Sidebar.RegExpSettings._Impl, 'ios'> */
-@js.native
 trait PickImpliosIos extends StObject {
   
-  var ios: RegExp = js.native
+  var ios: RegExp
 }
 object PickImpliosIos {
   

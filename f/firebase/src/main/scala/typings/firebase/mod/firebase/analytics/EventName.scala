@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,85 +11,139 @@ sealed trait EventName extends StObject
 object EventName extends StObject {
   
   @js.native
-  sealed trait ADD_PAYMENT_INFO extends EventName
+  sealed trait ADD_PAYMENT_INFO
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait ADD_SHIPPING_INFO extends EventName
+  sealed trait ADD_SHIPPING_INFO
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait ADD_TO_CART extends EventName
+  sealed trait ADD_TO_CART
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait ADD_TO_WISHLIST extends EventName
+  sealed trait ADD_TO_WISHLIST
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait BEGIN_CHECKOUT extends EventName
-  
-  /** @deprecated */
-  @js.native
-  sealed trait CHECKOUT_PROGRESS extends EventName
-  
-  @js.native
-  sealed trait EXCEPTION extends EventName
-  
-  @js.native
-  sealed trait GENERATE_LEAD extends EventName
-  
-  @js.native
-  sealed trait LOGIN extends EventName
-  
-  @js.native
-  sealed trait PAGE_VIEW extends EventName
-  
-  @js.native
-  sealed trait PURCHASE extends EventName
-  
-  @js.native
-  sealed trait REFUND extends EventName
-  
-  @js.native
-  sealed trait REMOVE_FROM_CART extends EventName
-  
-  @js.native
-  sealed trait SCREEN_VIEW extends EventName
-  
-  @js.native
-  sealed trait SEARCH extends EventName
-  
-  @js.native
-  sealed trait SELECT_CONTENT extends EventName
-  
-  @js.native
-  sealed trait SELECT_ITEM extends EventName
-  
-  @js.native
-  sealed trait SELECT_PROMOTION extends EventName
+  sealed trait BEGIN_CHECKOUT
+    extends StObject
+       with EventName
   
   /** @deprecated */
   @js.native
-  sealed trait SET_CHECKOUT_OPTION extends EventName
+  sealed trait CHECKOUT_PROGRESS
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait SHARE extends EventName
+  sealed trait EXCEPTION
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait SIGN_UP extends EventName
+  sealed trait GENERATE_LEAD
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait TIMING_COMPLETE extends EventName
+  sealed trait LOGIN
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait VIEW_CART extends EventName
+  sealed trait PAGE_VIEW
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait VIEW_ITEM extends EventName
+  sealed trait PURCHASE
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait VIEW_ITEM_LIST extends EventName
+  sealed trait REFUND
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait VIEW_PROMOTION extends EventName
+  sealed trait REMOVE_FROM_CART
+    extends StObject
+       with EventName
   
   @js.native
-  sealed trait VIEW_SEARCH_RESULTS extends EventName
+  sealed trait SCREEN_VIEW
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SEARCH
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SELECT_CONTENT
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SELECT_ITEM
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SELECT_PROMOTION
+    extends StObject
+       with EventName
+  
+  /** @deprecated */
+  @js.native
+  sealed trait SET_CHECKOUT_OPTION
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SHARE
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait SIGN_UP
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait TIMING_COMPLETE
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait VIEW_CART
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait VIEW_ITEM
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait VIEW_ITEM_LIST
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait VIEW_PROMOTION
+    extends StObject
+       with EventName
+  
+  @js.native
+  sealed trait VIEW_SEARCH_RESULTS
+    extends StObject
+       with EventName
 }

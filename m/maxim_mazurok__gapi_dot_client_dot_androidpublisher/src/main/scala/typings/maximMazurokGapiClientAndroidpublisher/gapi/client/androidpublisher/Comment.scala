@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /** A comment from a developer. */
-  var developerComment: js.UndefOr[DeveloperComment] = js.native
+  var developerComment: js.UndefOr[DeveloperComment] = js.undefined
   
   /** A comment from a user. */
-  var userComment: js.UndefOr[UserComment] = js.native
+  var userComment: js.UndefOr[UserComment] = js.undefined
 }
 object Comment {
   

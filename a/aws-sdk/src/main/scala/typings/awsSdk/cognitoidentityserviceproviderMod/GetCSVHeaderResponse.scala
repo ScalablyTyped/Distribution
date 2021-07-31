@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCSVHeaderResponse extends StObject {
   
   /**
     * The header information for the .csv file for the user import job.
     */
-  var CSVHeader: js.UndefOr[ListOfStringTypes] = js.native
+  var CSVHeader: js.UndefOr[ListOfStringTypes] = js.undefined
   
   /**
     * The user pool ID for the user pool that the users are to be imported into.
     */
-  var UserPoolId: js.UndefOr[UserPoolIdType] = js.native
+  var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
 }
 object GetCSVHeaderResponse {
   

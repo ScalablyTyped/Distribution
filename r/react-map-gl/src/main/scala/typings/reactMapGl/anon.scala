@@ -7,17 +7,15 @@ import typings.reactMapGl.mod.PositionInput
 import typings.reactMapGl.mod.ViewportProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DeltaScaleX extends StObject {
     
-    var deltaScaleX: js.UndefOr[Double] = js.native
+    var deltaScaleX: js.UndefOr[Double] = js.undefined
     
-    var deltaScaleY: js.UndefOr[Double] = js.native
+    var deltaScaleY: js.UndefOr[Double] = js.undefined
   }
   object DeltaScaleX {
     
@@ -44,12 +42,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -70,16 +67,15 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxPitch extends StObject {
     
-    var maxPitch: js.UndefOr[Double] = js.native
+    var maxPitch: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minPitch: js.UndefOr[Double] = js.native
+    var minPitch: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
   }
   object MaxPitch {
     
@@ -118,12 +114,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object Message {
     
@@ -145,32 +140,31 @@ object anon {
   }
   
   /* Inlined std.Partial<react-map-gl.react-map-gl.MapState> */
-  @js.native
   trait PartialMapState extends StObject {
     
-    var constructor: js.UndefOr[js.Function1[/* props */ MapStateProps, js.Any]] = js.native
+    var constructor: js.UndefOr[js.Function1[/* props */ MapStateProps, js.Any]] = js.undefined
     
-    var getInteractiveState: js.UndefOr[js.Function0[InteractiveState]] = js.native
+    var getInteractiveState: js.UndefOr[js.Function0[InteractiveState]] = js.undefined
     
-    var getViewportProps: js.UndefOr[js.Function0[ViewportProps]] = js.native
+    var getViewportProps: js.UndefOr[js.Function0[ViewportProps]] = js.undefined
     
-    var pan: js.UndefOr[js.Function1[/* input */ PositionInputstartPosnumb, MapState]] = js.native
+    var pan: js.UndefOr[js.Function1[/* input */ PositionInputstartPosnumb, MapState]] = js.undefined
     
-    var panEnd: js.UndefOr[js.Function0[MapState]] = js.native
+    var panEnd: js.UndefOr[js.Function0[MapState]] = js.undefined
     
-    var panStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.native
+    var panStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.undefined
     
-    var rotate: js.UndefOr[js.Function1[/* input */ DeltaScaleX, MapState]] = js.native
+    var rotate: js.UndefOr[js.Function1[/* input */ DeltaScaleX, MapState]] = js.undefined
     
-    var rotateEnd: js.UndefOr[js.Function0[MapState]] = js.native
+    var rotateEnd: js.UndefOr[js.Function0[MapState]] = js.undefined
     
-    var rotateStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.native
+    var rotateStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.undefined
     
-    var zoom: js.UndefOr[js.Function1[/* input */ PositionInputscalenumbers, MapState]] = js.native
+    var zoom: js.UndefOr[js.Function1[/* input */ PositionInputscalenumbers, MapState]] = js.undefined
     
-    var zoomEnd: js.UndefOr[js.Function0[MapState]] = js.native
+    var zoomEnd: js.UndefOr[js.Function0[MapState]] = js.undefined
     
-    var zoomStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.native
+    var zoomStart: js.UndefOr[js.Function1[/* input */ PositionInput, MapState]] = js.undefined
   }
   object PartialMapState {
     
@@ -258,14 +252,13 @@ object anon {
   }
   
   /* Inlined react-map-gl.react-map-gl.PositionInput & {  scale :number,   startPos :[number, number] | undefined} */
-  @js.native
   trait PositionInputscalenumbers extends StObject {
     
-    var pos: js.Tuple2[Double, Double] = js.native
+    var pos: js.Tuple2[Double, Double]
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var startPos: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var startPos: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object PositionInputscalenumbers {
     
@@ -293,12 +286,11 @@ object anon {
   }
   
   /* Inlined react-map-gl.react-map-gl.PositionInput & {  startPos :[number, number] | undefined} */
-  @js.native
   trait PositionInputstartPosnumb extends StObject {
     
-    var pos: js.Tuple2[Double, Double] = js.native
+    var pos: js.Tuple2[Double, Double]
     
-    var startPos: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var startPos: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object PositionInputstartPosnumb {
     
@@ -322,12 +314,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

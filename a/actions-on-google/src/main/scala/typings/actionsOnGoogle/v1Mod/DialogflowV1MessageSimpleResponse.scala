@@ -1,26 +1,24 @@
 package typings.actionsOnGoogle.v1Mod
 
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.actionsOnGoogleStrings.simple_response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageSimpleResponse
-  extends DialogflowV1BaseGoogleMessage[simple_response]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[simple_response]
      with DialogflowV1Message {
   
-  var displayText: js.UndefOr[String] = js.native
+  var displayText: js.UndefOr[String] = js.undefined
   
-  var textToSpeech: js.UndefOr[String] = js.native
+  var textToSpeech: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageSimpleResponse {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageSimpleResponse = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageSimpleResponse = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageSimpleResponse]
   }
   

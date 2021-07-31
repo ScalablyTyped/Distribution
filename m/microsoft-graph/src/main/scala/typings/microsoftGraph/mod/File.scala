@@ -2,22 +2,20 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   // Hashes of the file's binary content, if available. Read-only.
-  var hashes: js.UndefOr[NullableOption[Hashes]] = js.native
+  var hashes: js.UndefOr[NullableOption[Hashes]] = js.undefined
   
   /**
     * The MIME type for the file. This is determined by logic on the server and might not be the value provided when the file
     * was uploaded. Read-only.
     */
-  var mimeType: js.UndefOr[NullableOption[String]] = js.native
+  var mimeType: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var processingMetadata: js.UndefOr[NullableOption[Boolean]] = js.native
+  var processingMetadata: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object File {
   

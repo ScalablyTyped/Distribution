@@ -2,16 +2,14 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetHttpsProxiesSetQuicOverrideRequest extends StObject {
   
   /**
     * QUIC policy for the TargetHttpsProxy resource.
     */
-  var quicOverride: js.UndefOr[String] = js.native
+  var quicOverride: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetHttpsProxiesSetQuicOverrideRequest {
   

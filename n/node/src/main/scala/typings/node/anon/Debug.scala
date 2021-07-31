@@ -2,27 +2,25 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Debug extends StObject {
   
-  var debug: Boolean = js.native
+  var debug: Boolean
   
-  var inspector: Boolean = js.native
+  var inspector: Boolean
   
-  var ipv6: Boolean = js.native
+  var ipv6: Boolean
   
-  var tls: Boolean = js.native
+  var tls: Boolean
   
-  var tls_alpn: Boolean = js.native
+  var tls_alpn: Boolean
   
-  var tls_ocsp: Boolean = js.native
+  var tls_ocsp: Boolean
   
-  var tls_sni: Boolean = js.native
+  var tls_sni: Boolean
   
-  var uv: Boolean = js.native
+  var uv: Boolean
 }
 object Debug {
   

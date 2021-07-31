@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListExportsInput extends StObject {
   
   /**
     * Maximum number of results to return per page.
     */
-  var MaxResults: js.UndefOr[ListExportsMaxLimit] = js.native
+  var MaxResults: js.UndefOr[ListExportsMaxLimit] = js.undefined
   
   /**
     * An optional string that, if supplied, must be copied from the output of a previous call to ListExports. When provided in this manner, the API fetches the next page of results.
     */
-  var NextToken: js.UndefOr[ExportNextToken] = js.native
+  var NextToken: js.UndefOr[ExportNextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) associated with the exported table.
     */
-  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.native
+  var TableArn: js.UndefOr[typings.awsSdk.dynamodbMod.TableArn] = js.undefined
 }
 object ListExportsInput {
   

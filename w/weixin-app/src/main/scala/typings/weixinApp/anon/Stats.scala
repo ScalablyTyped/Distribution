@@ -3,13 +3,11 @@ package typings.weixinApp.anon
 import typings.weixinApp.wx.Stat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
-  var stats: Stat = js.native
+  var stats: Stat
 }
 object Stats {
   

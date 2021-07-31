@@ -2,31 +2,29 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsVPCSecurityGroupViolation extends StObject {
   
   /**
     * List of rules specified in the security group of the AWS Firewall Manager policy that partially match the ViolationTarget rule.
     */
-  var PartialMatches: js.UndefOr[typings.awsSdk.fmsMod.PartialMatches] = js.native
+  var PartialMatches: js.UndefOr[typings.awsSdk.fmsMod.PartialMatches] = js.undefined
   
   /**
     * Remediation options for the rule specified in the ViolationTarget.
     */
-  var PossibleSecurityGroupRemediationActions: js.UndefOr[SecurityGroupRemediationActions] = js.native
+  var PossibleSecurityGroupRemediationActions: js.UndefOr[SecurityGroupRemediationActions] = js.undefined
   
   /**
     * The security group rule that is being evaluated.
     */
-  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.native
+  var ViolationTarget: js.UndefOr[typings.awsSdk.fmsMod.ViolationTarget] = js.undefined
   
   /**
     * A description of the security group that violates the policy.
     */
-  var ViolationTargetDescription: js.UndefOr[LengthBoundedString] = js.native
+  var ViolationTargetDescription: js.UndefOr[LengthBoundedString] = js.undefined
 }
 object AwsVPCSecurityGroupViolation {
   

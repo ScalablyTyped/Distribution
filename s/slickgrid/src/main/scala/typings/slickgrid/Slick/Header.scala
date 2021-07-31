@@ -2,13 +2,11 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
-  var buttons: js.Array[HeaderButton] = js.native
+  var buttons: js.Array[HeaderButton]
 }
 object Header {
   

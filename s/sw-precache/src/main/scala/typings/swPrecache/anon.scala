@@ -7,21 +7,19 @@ import typings.swToolbox.mod.Request
 import typings.swToolbox.mod.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Handler extends StObject {
     
-    var handler: typings.swPrecache.mod.Handler = js.native
+    var handler: typings.swPrecache.mod.Handler
     
-    var method: js.UndefOr[Method] = js.native
+    var method: js.UndefOr[Method] = js.undefined
     
-    var options: js.UndefOr[Options_] = js.native
+    var options: js.UndefOr[Options_] = js.undefined
     
-    var urlPattern: RegExp | String = js.native
+    var urlPattern: RegExp | String
   }
   object Handler {
     

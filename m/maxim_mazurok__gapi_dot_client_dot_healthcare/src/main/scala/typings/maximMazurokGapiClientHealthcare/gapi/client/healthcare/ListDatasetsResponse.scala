@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetsResponse extends StObject {
   
   /** The first page of datasets. */
-  var datasets: js.UndefOr[js.Array[Dataset]] = js.native
+  var datasets: js.UndefOr[js.Array[Dataset]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListDatasetsResponse {
   

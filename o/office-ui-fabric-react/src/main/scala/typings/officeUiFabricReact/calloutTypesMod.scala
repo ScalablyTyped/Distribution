@@ -21,54 +21,52 @@ import typings.uifabricReactHooks.useTargetMod.Target
 import typings.uifabricUtilities.irectangleMod.IRectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calloutTypesMod {
   
-  @js.native
   trait ICalloutContentStyleProps extends StObject {
     
     /**
       * Background color for the beak and callout.
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * Width of Callout beak
       */
-    var beakWidth: js.UndefOr[Double] = js.native
+    var beakWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Max width for callout including borders.
       */
-    var calloutMaxWidth: js.UndefOr[Double] = js.native
+    var calloutMaxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Width for callout including borders.
       */
-    var calloutWidth: js.UndefOr[Double] = js.native
+    var calloutWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * CSS class to apply to the callout.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Whether or not to clip content of the callout,
       * if it overflows vertically.
       */
-    var overflowYHidden: js.UndefOr[Boolean] = js.native
+    var overflowYHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callout positioning data
       */
-    var positions: js.UndefOr[ICalloutPositionedInfo] = js.native
+    var positions: js.UndefOr[ICalloutPositionedInfo] = js.undefined
     
     /**
       * Theme to apply to the calloutContent.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ICalloutContentStyleProps {
     
@@ -128,33 +126,32 @@ object calloutTypesMod {
     }
   }
   
-  @js.native
   trait ICalloutContentStyles extends StObject {
     
     /**
       * Style for callout beak.
       */
-    var beak: IStyle = js.native
+    var beak: IStyle
     
     /**
       * Style for callout beak curtain.
       */
-    var beakCurtain: IStyle = js.native
+    var beakCurtain: IStyle
     
     /**
       * Style for content component of the callout.
       */
-    var calloutMain: IStyle = js.native
+    var calloutMain: IStyle
     
     /**
       * Style for wrapper of Callout component.
       */
-    var container: IStyle = js.native
+    var container: IStyle
     
     /**
       * Style for callout container root element.
       */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ICalloutContentStyles {
     
@@ -214,41 +211,42 @@ object calloutTypesMod {
     }
   }
   
-  @js.native
-  trait ICalloutProps extends HTMLAttributes[HTMLDivElement] {
+  trait ICalloutProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * If true the positioning logic will prefer to flip edges rather than to nudge the rectangle to fit within bounds,
       * thus making sure the element aligns perfectly with target's alignment edge
       */
-    var alignTargetEdge: js.UndefOr[Boolean] = js.native
+    var alignTargetEdge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines the element id referencing the element containing the description for the callout.
       */
-    var ariaDescribedBy: js.UndefOr[String] = js.native
+    var ariaDescribedBy: js.UndefOr[String] = js.undefined
     
     /**
       * Accessible label text for callout.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       *  Defines the element id referencing the element containing label text for callout.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * The background color of the Callout in hex format ie. #ffffff.
       * @defaultvalue $ms-color-white
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * The width of the beak.
       * @defaultvalue 16
       */
-    var beakWidth: js.UndefOr[Double] = js.native
+    var beakWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * The bounding rectangle (or callback that returns a rectangle) for which  the contextual menu can appear in.
@@ -259,45 +257,45 @@ object calloutTypesMod {
           /* targetWindow */ js.UndefOr[Window], 
           js.UndefOr[IRectangle]
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Set max height of callout
       * When not set the callout will expand with contents up to the bottom of the screen
       */
-    var calloutMaxHeight: js.UndefOr[Double] = js.native
+    var calloutMaxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom width for callout including borders. If value is 0, no width is applied.
       * @defaultvalue 0
       */
-    var calloutMaxWidth: js.UndefOr[Double] = js.native
+    var calloutMaxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom width for callout including borders. If value is 0, no width is applied.
       * @defaultvalue 0
       */
-    var calloutWidth: js.UndefOr[Double] = js.native
+    var calloutWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If true the position returned will have the menu element cover the target.
       * If false then it will position next to the target;
       * @defaultvalue false
       */
-    var coverTarget: js.UndefOr[Boolean] = js.native
+    var coverTarget: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How the element should be positioned
       * @defaultvalue DirectionalHint.BottomAutoEdge
       */
-    var directionalHint: js.UndefOr[DirectionalHint] = js.native
+    var directionalHint: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * If true the position will not change sides in an attempt to fit the callout within bounds.
       * It will still attempt to align it to whatever bounds are given.
       * @defaultvalue false
       */
-    var directionalHintFixed: js.UndefOr[Boolean] = js.native
+    var directionalHintFixed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * How the element should be positioned in RTL layouts.
@@ -305,63 +303,63 @@ object calloutTypesMod {
       * This means that `DirectionalHint.BottomLeft` will change to `DirectionalHint.BottomRight` but
       * `DirectionalHint.LeftAuto` will not change.
       */
-    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.native
+    var directionalHintForRTL: js.UndefOr[DirectionalHint] = js.undefined
     
     /**
       * If true then the callout will dismiss when the target element is clicked
       * @defaultvalue false
       */
-    var dismissOnTargetClick: js.UndefOr[Boolean] = js.native
+    var dismissOnTargetClick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true do not render on a new layer. If false render on a new layer.
       */
-    var doNotLayer: js.UndefOr[Boolean] = js.native
+    var doNotLayer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the final height of the content.
       * To be used when expanding the content dynamically so that callout can adjust its position.
       */
-    var finalHeight: js.UndefOr[Double] = js.native
+    var finalHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * The gap between the Callout and the target
       * @defaultvalue 0
       */
-    var gapSpace: js.UndefOr[Double] = js.native
+    var gapSpace: js.UndefOr[Double] = js.undefined
     
     /**
       * Manually set OverflowYHidden style prop to true on calloutMain element
       * A variety of callout load animations will need this to hide the scollbar that can appear
       */
-    var hideOverflow: js.UndefOr[Boolean] = js.native
+    var hideOverflow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then the beak is visible. If false it will not be shown.
       * @defaultvalue true
       */
-    var isBeakVisible: js.UndefOr[Boolean] = js.native
+    var isBeakVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional props to pass to the Layer component hosting the panel.
       */
-    var layerProps: js.UndefOr[ILayerProps] = js.native
+    var layerProps: js.UndefOr[ILayerProps] = js.undefined
     
     /**
       * The minimum distance the callout will be away from the edge of the screen.
       *  @defaultvalue 8
       */
-    var minPagePadding: js.UndefOr[Double] = js.native
+    var minPagePadding: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback when the Callout tries to close.
       */
-    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* ev */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /**
       * Optional callback when the layer content has mounted.
       */
-    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLayerMounted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional callback that is called once the callout has been correctly positioned.
@@ -369,7 +367,7 @@ object calloutTypesMod {
       * final edge of the target that it positioned against, the beak position, and the beaks relationship to the
       * edges of the callout.
       */
-    var onPositioned: js.UndefOr[js.Function1[/* positions */ js.UndefOr[ICalloutPositionedInfo], Unit]] = js.native
+    var onPositioned: js.UndefOr[js.Function1[/* positions */ js.UndefOr[ICalloutPositionedInfo], Unit]] = js.undefined
     
     /**
       * Called when the component is unmounting, and focus needs to be restored.
@@ -378,13 +376,13 @@ object calloutTypesMod {
       * contains focus. If this is provided, focus will not be restored automatically,
       * you'll need to call originalElement.focus()
       */
-    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.native
+    var onRestoreFocus: js.UndefOr[js.Function1[/* options */ ContainsFocus, Unit]] = js.undefined
     
     /**
       * Callback when the Callout body is scrolled.
       */
     @JSName("onScroll")
-    var onScroll_ICalloutProps: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScroll_ICalloutProps: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If defined, then takes priority over preventDismissOnLostFocus, preventDismissOnResize,
@@ -397,28 +395,28 @@ object calloutTypesMod {
           /* ev */ Event | FocusEvent[Element] | KeyboardEvent[Element] | (MouseEvent[Element, NativeMouseEvent]), 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true then the callout will not dismiss when it loses focus
       * @defaultvalue false
       * @deprecated use preventDismissOnEvent callback instead
       */
-    var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.native
+    var preventDismissOnLostFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then the callout will not dismiss on resize
       * @defaultvalue false
       * @deprecated use preventDismissOnEvent callback instead
       */
-    var preventDismissOnResize: js.UndefOr[Boolean] = js.native
+    var preventDismissOnResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then the callout will not dismiss on scroll
       * @defaultvalue false
       * @deprecated use preventDismissOnEvent callback instead
       */
-    var preventDismissOnScroll: js.UndefOr[Boolean] = js.native
+    var preventDismissOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then the callout will attempt to focus the first focusable element that it contains.
@@ -427,13 +425,13 @@ object calloutTypesMod {
       * focusable items.
       * @returns True if focus was set, false if it was not.
       */
-    var setInitialFocus: js.UndefOr[Boolean] = js.native
+    var setInitialFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true then the callout will dismiss when the window gets focus
       * @defaultvalue false
       */
-    var shouldDismissOnWindowFocus: js.UndefOr[Boolean] = js.native
+    var shouldDismissOnWindowFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, when this component is unmounted, focus will be restored to the element that had focus when the component
@@ -441,7 +439,7 @@ object calloutTypesMod {
       * @defaultvalue true
       * @deprecated use onRestoreFocus callback instead
       */
-    var shouldRestoreFocus: js.UndefOr[Boolean] = js.native
+    var shouldRestoreFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the component will be updated even when hidden=true.
@@ -450,24 +448,24 @@ object calloutTypesMod {
       * This might be helpful though if your updates are small and you want the
       * callout to be revealed fast to the user when hidden is set to false.
       */
-    var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.native
+    var shouldUpdateWhenHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional styles for the component.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ICalloutContentStyleProps, ICalloutContentStyles]] = js.undefined
     
     /**
       * The target that the Callout should try to position itself based on.
       * It can be either an Element a querySelector string of a valid Element
       * or a MouseEvent. If MouseEvent is given then the origin point of the event will be used.
       */
-    var target: js.UndefOr[Target] = js.native
+    var target: js.UndefOr[Target] = js.undefined
     
     /**
       * Optional theme for component
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ICalloutProps {
     

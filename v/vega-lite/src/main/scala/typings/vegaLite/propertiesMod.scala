@@ -70,10 +70,13 @@ import typings.vegaTypings.valuesMod.StrokeCapValue
 import typings.vegaTypings.valuesMod.TextBaselineValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertiesMod {
+  
+  @JSImport("vega-lite/build/src/compile/axis/properties", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* Inlined {[ k in keyof vega-lite.vega-lite/build/src/compile/axis/component.AxisComponentProps ]:? (params : vega-lite.vega-lite/build/src/compile/axis/properties.AxisRuleParams): vega-lite.vega-lite/build/src/compile/axis/component.AxisComponentProps[k]} */
   object axisRules {
@@ -987,193 +990,158 @@ object propertiesMod {
     def zindex_=(x: js.UndefOr[js.Function1[/* params */ AxisRuleParams, js.UndefOr[Double]]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zindex")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultGrid")
-  @js.native
-  def defaultGrid(scaleType: ScaleType, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): Boolean = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultGrid")
-  @js.native
-  def defaultGrid_binned(scaleType: ScaleType, fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): Boolean = js.native
+  @scala.inline
+  def defaultGrid(scaleType: ScaleType, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGrid")(scaleType.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_x(angle: Double, orient: AxisOrient, channel: x): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_x(angle: Double, orient: SignalRef, channel: x): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_x(angle: SignalRef, orient: AxisOrient, channel: x): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_x(angle: SignalRef, orient: SignalRef, channel: x): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_y(angle: Double, orient: AxisOrient, channel: y): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_y(angle: Double, orient: SignalRef, channel: y): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_y(angle: SignalRef, orient: AxisOrient, channel: y): Align | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelAlign")
-  @js.native
-  def defaultLabelAlign_y(angle: SignalRef, orient: SignalRef, channel: y): Align | SignalRef = js.native
+  @scala.inline
+  def defaultGrid_binned(scaleType: ScaleType, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGrid")(scaleType.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y): bottom | middle | top | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelBaseline")
-  @js.native
-  def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = js.native
+  @scala.inline
+  def defaultLabelAlign_x(angle: Double, orient: AxisOrient, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_x(angle: Double, orient: SignalRef, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_x(angle: SignalRef, orient: AxisOrient, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_x(angle: SignalRef, orient: SignalRef, channel: x): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelFlush")
-  @js.native
-  def defaultLabelFlush(`type`: Type, channel: PositionScaleChannel): Boolean = js.native
+  @scala.inline
+  def defaultLabelAlign_y(angle: Double, orient: AxisOrient, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_y(angle: Double, orient: SignalRef, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_y(angle: SignalRef, orient: AxisOrient, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
+  @scala.inline
+  def defaultLabelAlign_y(angle: SignalRef, orient: SignalRef, channel: y): Align | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelAlign")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Align | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelOverlap")
-  @js.native
-  def defaultLabelOverlap(`type`: Type, scaleType: ScaleType, hasTimeUnit: Boolean): `true` | greedy = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultLabelOverlap")
-  @js.native
-  def defaultLabelOverlap(`type`: Type, scaleType: ScaleType, hasTimeUnit: Boolean, sort: Sort[String]): `true` | greedy = js.native
+  @scala.inline
+  def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: Double, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: Double, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: SignalRef, orient: AxisOrient, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_x(angle: SignalRef, orient: SignalRef, channel: x, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultOrient")
-  @js.native
-  def defaultOrient(channel: PositionScaleChannel): left | bottom = js.native
+  @scala.inline
+  def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: Double, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: Double, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: SignalRef, orient: AxisOrient, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
+  @scala.inline
+  def defaultLabelBaseline_y(angle: SignalRef, orient: SignalRef, channel: y, alwaysIncludeMiddle: Boolean): bottom | middle | top | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelBaseline")(angle.asInstanceOf[js.Any], orient.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], alwaysIncludeMiddle.asInstanceOf[js.Any])).asInstanceOf[bottom | middle | top | Signal]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultTickCount")
-  @js.native
-  def defaultTickCount(hasFieldOrDatumDefScaleTypeSizeValues: FieldOrDatumDef): Signal = js.native
+  @scala.inline
+  def defaultLabelFlush(`type`: Type, channel: PositionScaleChannel): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelFlush")(`type`.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultZindex")
-  @js.native
-  def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `1` | `0` = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "defaultZindex")
-  @js.native
-  def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): `1` | `0` = js.native
+  @scala.inline
+  def defaultLabelOverlap(`type`: Type, scaleType: ScaleType, hasTimeUnit: Boolean): `true` | greedy = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelOverlap")(`type`.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], hasTimeUnit.asInstanceOf[js.Any])).asInstanceOf[`true` | greedy]
+  @scala.inline
+  def defaultLabelOverlap(`type`: Type, scaleType: ScaleType, hasTimeUnit: Boolean, sort: Sort[String]): `true` | greedy = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultLabelOverlap")(`type`.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], hasTimeUnit.asInstanceOf[js.Any], sort.asInstanceOf[js.Any])).asInstanceOf[`true` | greedy]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getFieldDefTitle")
-  @js.native
-  def getFieldDefTitle_x(model: UnitModel, channel: x): String | js.Array[String] | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getFieldDefTitle")
-  @js.native
-  def getFieldDefTitle_y(model: UnitModel, channel: y): String | js.Array[String] | SignalRef = js.native
+  @scala.inline
+  def defaultOrient(channel: PositionScaleChannel): left | bottom = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOrient")(channel.asInstanceOf[js.Any]).asInstanceOf[left | bottom]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getLabelAngle")
-  @js.native
+  @scala.inline
+  def defaultTickCount(hasFieldOrDatumDefScaleTypeSizeVals: FieldOrDatumDef): Signal = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTickCount")(hasFieldOrDatumDefScaleTypeSizeVals.asInstanceOf[js.Any]).asInstanceOf[Signal]
+  
+  @scala.inline
+  def defaultZindex(mark: Mark, fieldDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
+  
+  @scala.inline
+  def defaultZindex_binned(mark: Mark, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): `1` | `0` = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultZindex")(mark.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[`1` | `0`]
+  
+  @scala.inline
+  def getFieldDefTitle_x(model: UnitModel, channel: x): String | js.Array[String] | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String] | SignalRef]
+  
+  @scala.inline
+  def getFieldDefTitle_y(model: UnitModel, channel: y): String | js.Array[String] | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldDefTitle")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String] | SignalRef]
+  
+  @scala.inline
   def getLabelAngle(
     fieldOrDatumDef: PositionDatumDef[String],
     axis: AxisInternal,
     channel: PositionScaleChannel,
     styleConfig: StyleConfigIndex[SignalRef]
-  ): Double | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getLabelAngle")
-  @js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getLabelAngle")(fieldOrDatumDef.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], styleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  @scala.inline
   def getLabelAngle(
     fieldOrDatumDef: PositionDatumDef[String],
     axis: AxisInternal,
     channel: PositionScaleChannel,
     styleConfig: StyleConfigIndex[SignalRef],
     axisConfigs: AxisConfigs
-  ): Double | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getLabelAngle")
-  @js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getLabelAngle")(fieldOrDatumDef.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], styleConfig.asInstanceOf[js.Any], axisConfigs.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  @scala.inline
   def getLabelAngle(
     fieldOrDatumDef: PositionFieldDef[String],
     axis: AxisInternal,
     channel: PositionScaleChannel,
     styleConfig: StyleConfigIndex[SignalRef]
-  ): Double | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "getLabelAngle")
-  @js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getLabelAngle")(fieldOrDatumDef.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], styleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  @scala.inline
   def getLabelAngle(
     fieldOrDatumDef: PositionFieldDef[String],
     axis: AxisInternal,
     channel: PositionScaleChannel,
     styleConfig: StyleConfigIndex[SignalRef],
     axisConfigs: AxisConfigs
-  ): Double | SignalRef = js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("getLabelAngle")(fieldOrDatumDef.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], styleConfig.asInstanceOf[js.Any], axisConfigs.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "gridScale")
-  @js.native
-  def gridScale(model: UnitModel, channel: PositionScaleChannel): String = js.native
+  @scala.inline
+  def gridScale(model: UnitModel, channel: PositionScaleChannel): String = (^.asInstanceOf[js.Dynamic].applyDynamic("gridScale")(model.asInstanceOf[js.Any], channel.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "normalizeAngleExpr")
-  @js.native
-  def normalizeAngleExpr(angle: SignalRef): String = js.native
+  @scala.inline
+  def normalizeAngleExpr(angle: SignalRef): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeAngleExpr")(angle.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/compile/axis/properties", "values")
-  @js.native
+  @scala.inline
   def values(
     axis: AxisInternal,
     fieldOrDatumDef: DatumDef[String, PrimitiveValue | DateTime | ExprRef | SignalRef]
-  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = js.native
-  @JSImport("vega-lite/build/src/compile/axis/properties", "values")
-  @js.native
-  def values_binned(axis: AxisInternal, fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = js.native
+  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(axis.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
   
-  @js.native
+  @scala.inline
+  def values_binned(
+    axis: AxisInternal,
+    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+  ): SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal]) = (^.asInstanceOf[js.Dynamic].applyDynamic("values")(axis.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[SignalRef | (js.Array[String | Double | Boolean | DateTime | Signal])]
+  
   trait AxisRuleParams extends StObject {
     
-    var axis: AxisInternal = js.native
+    var axis: AxisInternal
     
-    var channel: PositionScaleChannel = js.native
+    var channel: PositionScaleChannel
     
-    var config: Config[ExprRef | SignalRef] = js.native
+    var config: Config[ExprRef | SignalRef]
     
-    var fieldOrDatumDef: PositionFieldDef[String] | PositionDatumDef[String] = js.native
+    var fieldOrDatumDef: PositionFieldDef[String] | PositionDatumDef[String]
     
-    var labelAngle: Double | SignalRef = js.native
+    var labelAngle: Double | SignalRef
     
-    var mark: Mark = js.native
+    var mark: Mark
     
-    var model: UnitModel = js.native
+    var model: UnitModel
     
-    var orient: Orient | SignalRef = js.native
+    var orient: Orient | SignalRef
     
-    var scaleType: ScaleType = js.native
+    var scaleType: ScaleType
   }
   object AxisRuleParams {
     

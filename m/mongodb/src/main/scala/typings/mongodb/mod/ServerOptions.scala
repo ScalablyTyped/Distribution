@@ -2,45 +2,45 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerOptions extends SSLOptions {
+trait ServerOptions
+  extends StObject
+     with SSLOptions {
   
   /**
     * @default false
     */
-  var domainsEnabled: js.UndefOr[Boolean] = js.native
+  var domainsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a file sync write concern
     * @default false
     */
-  var fsync: js.UndefOr[Boolean] = js.native
+  var fsync: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The High availability period for replicaset inquiry
     * @default 10000
     */
-  var haInterval: js.UndefOr[scala.Double] = js.native
+  var haInterval: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Enable command monitoring for this client
     * @default false
     */
-  var monitorCommands: js.UndefOr[Boolean] = js.native
+  var monitorCommands: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default true
     */
-  var monitoring: js.UndefOr[Boolean] = js.native
+  var monitoring: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Will wait # milliseconds between retries
     * @default 1000
     */
-  var reconnectInterval: js.UndefOr[scala.Double] = js.native
+  var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * If you're connected to a single server or mongos proxy (as opposed to a replica set),
@@ -49,12 +49,12 @@ trait ServerOptions extends SSLOptions {
     * reconnectFailed event.
     * @default 30
     */
-  var reconnectTries: js.UndefOr[scala.Double] = js.native
+  var reconnectTries: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Socket Options
     */
-  var socketOptions: js.UndefOr[SocketOptions] = js.native
+  var socketOptions: js.UndefOr[SocketOptions] = js.undefined
 }
 object ServerOptions {
   

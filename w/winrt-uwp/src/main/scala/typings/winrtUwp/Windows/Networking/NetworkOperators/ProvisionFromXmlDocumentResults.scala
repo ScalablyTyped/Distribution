@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results object returned to the application when the provisioning operation has completed. */
-@js.native
 trait ProvisionFromXmlDocumentResults extends StObject {
   
   /** Determines whether all elements specified in the provisioning XML were applied. */
-  var allElementsProvisioned: Boolean = js.native
+  var allElementsProvisioned: Boolean
   
   /** Indicates which elements in the provisioning profile could not be successfully provisioned. */
-  var provisionResultsXml: String = js.native
+  var provisionResultsXml: String
 }
 object ProvisionFromXmlDocumentResults {
   

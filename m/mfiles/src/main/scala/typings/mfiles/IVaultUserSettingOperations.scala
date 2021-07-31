@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultUserSettingOperations extends StObject {
   
-  def ChangeVaultLanguage(Language: Double): Unit = js.native
+  def ChangeVaultLanguage(Language: Double): Unit
   
-  def GetSubstituteUsers(): IUserOrUserGroupIDs = js.native
+  def GetSubstituteUsers(): IUserOrUserGroupIDs
   
-  def GetVaultLanguage(): Double = js.native
+  def GetVaultLanguage(): Double
   
-  def GetVaultLanguageCode(): String = js.native
+  def GetVaultLanguageCode(): String
   
-  def SetSubstituteUsers(UserOrUserGroupIDs: IUserOrUserGroupIDs): Unit = js.native
+  def SetSubstituteUsers(UserOrUserGroupIDs: IUserOrUserGroupIDs): Unit
 }
 object IVaultUserSettingOperations {
   

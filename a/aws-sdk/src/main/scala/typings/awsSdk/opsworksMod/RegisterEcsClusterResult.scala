@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterEcsClusterResult extends StObject {
   
   /**
     * The cluster's ARN.
     */
-  var EcsClusterArn: js.UndefOr[String] = js.native
+  var EcsClusterArn: js.UndefOr[String] = js.undefined
 }
 object RegisterEcsClusterResult {
   

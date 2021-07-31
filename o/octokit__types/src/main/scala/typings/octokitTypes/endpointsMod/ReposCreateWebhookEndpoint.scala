@@ -2,35 +2,33 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreateWebhookEndpoint extends StObject {
   
   /**
     * Determines if notifications are sent when the webhook is triggered. Set to `true` to send notifications.
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Key/value pairs to provide settings for this webhook. [These are defined below](https://developer.github.com/v3/repos/hooks/#create-hook-config-params).
     */
-  var config: ReposCreateWebhookParamsConfig = js.native
+  var config: ReposCreateWebhookParamsConfig
   
   /**
     * Determines what [events](https://developer.github.com/webhooks/event-payloads) the hook is triggered for.
     */
-  var events: js.UndefOr[js.Array[String]] = js.native
+  var events: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Use `web` to create a webhook. Default: `web`. This parameter only accepts the value `web`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposCreateWebhookEndpoint {
   

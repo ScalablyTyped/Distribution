@@ -8,52 +8,50 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mangopay2-nodejs-sdk.mangopay2-nodejs-sdk.settlementTransfer.SettlementTransferData> */
-@js.native
 trait PartialSettlementTransfer extends StObject {
   
-  var AuthorId: js.UndefOr[String] = js.native
+  var AuthorId: js.UndefOr[String] = js.undefined
   
-  var CreationDate: js.UndefOr[Double] = js.native
+  var CreationDate: js.UndefOr[Double] = js.undefined
   
-  var CreditedFunds: js.UndefOr[MoneyData] = js.native
+  var CreditedFunds: js.UndefOr[MoneyData] = js.undefined
   
-  var CreditedUserId: js.UndefOr[String] = js.native
+  var CreditedUserId: js.UndefOr[String] = js.undefined
   
-  var CreditedWalletId: js.UndefOr[String] = js.native
+  var CreditedWalletId: js.UndefOr[String] = js.undefined
   
-  var DebitedFunds: js.UndefOr[MoneyData] = js.native
+  var DebitedFunds: js.UndefOr[MoneyData] = js.undefined
   
-  var DebitedWalletId: js.UndefOr[String] = js.native
+  var DebitedWalletId: js.UndefOr[String] = js.undefined
   
-  var ExecutionDate: js.UndefOr[Timestamp] = js.native
+  var ExecutionDate: js.UndefOr[Timestamp] = js.undefined
   
-  var Fees: js.UndefOr[MoneyData] = js.native
+  var Fees: js.UndefOr[MoneyData] = js.undefined
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
-  var InitialTransactionId: js.UndefOr[String] = js.native
+  var InitialTransactionId: js.UndefOr[String] = js.undefined
   
-  var InitialTransactionType: js.UndefOr[TransactionType] = js.native
+  var InitialTransactionType: js.UndefOr[TransactionType] = js.undefined
   
-  var Nature: js.UndefOr[SETTLEMENT] = js.native
+  var Nature: js.UndefOr[SETTLEMENT] = js.undefined
   
-  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.refund.RefundReason] = js.native
+  var RefundReason: js.UndefOr[typings.mangopay2NodejsSdk.mod.refund.RefundReason] = js.undefined
   
-  var RepudiationId: js.UndefOr[String] = js.native
+  var RepudiationId: js.UndefOr[String] = js.undefined
   
-  var ResultCode: js.UndefOr[String] = js.native
+  var ResultCode: js.UndefOr[String] = js.undefined
   
-  var ResultMessage: js.UndefOr[String] = js.native
+  var ResultMessage: js.UndefOr[String] = js.undefined
   
-  var Status: js.UndefOr[TransactionStatus] = js.native
+  var Status: js.UndefOr[TransactionStatus] = js.undefined
   
-  var Tag: js.UndefOr[String] = js.native
+  var Tag: js.UndefOr[String] = js.undefined
   
-  var Type: js.UndefOr[TransactionType] = js.native
+  var Type: js.UndefOr[TransactionType] = js.undefined
 }
 object PartialSettlementTransfer {
   

@@ -2,69 +2,67 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The format of a cell.
   */
-@js.native
 trait SchemaCellFormat extends StObject {
   
   /**
     * The background color of the cell.
     */
-  var backgroundColor: js.UndefOr[SchemaColor] = js.native
+  var backgroundColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * The borders of the cell.
     */
-  var borders: js.UndefOr[SchemaBorders] = js.native
+  var borders: js.UndefOr[SchemaBorders] = js.undefined
   
   /**
     * The horizontal alignment of the value in the cell.
     */
-  var horizontalAlignment: js.UndefOr[String] = js.native
+  var horizontalAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * How a hyperlink, if it exists, should be displayed in the cell.
     */
-  var hyperlinkDisplayType: js.UndefOr[String] = js.native
+  var hyperlinkDisplayType: js.UndefOr[String] = js.undefined
   
   /**
     * A format describing how number values should be represented to the user.
     */
-  var numberFormat: js.UndefOr[SchemaNumberFormat] = js.native
+  var numberFormat: js.UndefOr[SchemaNumberFormat] = js.undefined
   
   /**
     * The padding of the cell.
     */
-  var padding: js.UndefOr[SchemaPadding] = js.native
+  var padding: js.UndefOr[SchemaPadding] = js.undefined
   
   /**
     * The direction of the text in the cell.
     */
-  var textDirection: js.UndefOr[String] = js.native
+  var textDirection: js.UndefOr[String] = js.undefined
   
   /**
     * The format of the text in the cell (unless overridden by a format run).
     */
-  var textFormat: js.UndefOr[SchemaTextFormat] = js.native
+  var textFormat: js.UndefOr[SchemaTextFormat] = js.undefined
   
   /**
     * The rotation applied to text in a cell
     */
-  var textRotation: js.UndefOr[SchemaTextRotation] = js.native
+  var textRotation: js.UndefOr[SchemaTextRotation] = js.undefined
   
   /**
     * The vertical alignment of the value in the cell.
     */
-  var verticalAlignment: js.UndefOr[String] = js.native
+  var verticalAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * The wrap strategy for the value in the cell.
     */
-  var wrapStrategy: js.UndefOr[String] = js.native
+  var wrapStrategy: js.UndefOr[String] = js.undefined
 }
 object SchemaCellFormat {
   

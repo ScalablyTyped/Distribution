@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoverInputSchemaRequest extends StObject {
   
   /**
     * The InputProcessingConfiguration to use to preprocess the records before discovering the schema of the records.
     */
-  var InputProcessingConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputProcessingConfiguration] = js.native
+  var InputProcessingConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputProcessingConfiguration] = js.undefined
   
   /**
     * The point at which you want Kinesis Data Analytics to start reading records from the specified streaming source discovery purposes.
     */
-  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputStartingPositionConfiguration] = js.native
+  var InputStartingPositionConfiguration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputStartingPositionConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the streaming source.
     */
-  var ResourceARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN] = js.native
+  var ResourceARN: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ResourceARN] = js.undefined
   
   /**
     * Specify this parameter to discover a schema from data in an Amazon S3 object.
     */
-  var S3Configuration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3Configuration] = js.native
+  var S3Configuration: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.S3Configuration] = js.undefined
   
   /**
     * The ARN of the role that is used to access the streaming source.
     */
-  var ServiceExecutionRole: RoleARN = js.native
+  var ServiceExecutionRole: RoleARN
 }
 object DiscoverInputSchemaRequest {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,14 +21,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * keep human-readable input human-friendly where possible. Strings that already conform to the naming conventions should be left unchanged or minimally
   * modified.
   */
-@js.native
-trait XStringEscape extends XInterface {
+trait XStringEscape
+  extends StObject
+     with XInterface {
   
   /** encodes an arbitrary string into an escaped form compatible with some naming rules. */
-  def escapeString(aString: String): String = js.native
+  def escapeString(aString: String): String
   
   /** decodes an escaped string into the original form. */
-  def unescapeString(aEscapedString: String): String = js.native
+  def unescapeString(aEscapedString: String): String
 }
 object XStringEscape {
   

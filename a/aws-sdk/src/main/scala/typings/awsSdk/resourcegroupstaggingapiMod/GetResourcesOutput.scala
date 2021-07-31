@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourcesOutput extends StObject {
   
   /**
     * A string that indicates that the response contains more data than can be returned in a single response. To receive additional data, specify this string for the PaginationToken value in a subsequent request.
     */
-  var PaginationToken: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.PaginationToken] = js.native
+  var PaginationToken: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.PaginationToken] = js.undefined
   
   /**
     * A list of resource ARNs and the tags (keys and values) associated with each.
     */
-  var ResourceTagMappingList: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ResourceTagMappingList] = js.native
+  var ResourceTagMappingList: js.UndefOr[typings.awsSdk.resourcegroupstaggingapiMod.ResourceTagMappingList] = js.undefined
 }
 object GetResourcesOutput {
   

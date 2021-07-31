@@ -12,7 +12,7 @@ ES2015 (ES6) Number.isInteger polyfill
 | Keywords           | es2015, es6, Number, isInteger, polyfill |
 | # releases         | 0 |
 | # dependents       | 44 |
-| # downloads        | 11415686 |
+| # downloads        | 11969927 |
 | # stars            | 2 |
 
 ## Links

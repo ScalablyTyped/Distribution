@@ -3,31 +3,29 @@ package typings.nextServer.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmpBindInitData extends StObject {
   
-  var ampBindInitData: Boolean = js.native
+  var ampBindInitData: Boolean
   
-  var assetPrefix: js.UndefOr[String] = js.native
+  var assetPrefix: js.UndefOr[String] = js.undefined
   
-  var buildId: String = js.native
+  var buildId: String
   
-  var canonicalBase: String = js.native
+  var canonicalBase: String
   
-  var dev: js.UndefOr[Boolean] = js.native
+  var dev: js.UndefOr[Boolean] = js.undefined
   
-  var documentMiddlewareEnabled: Boolean = js.native
+  var documentMiddlewareEnabled: Boolean
   
-  var generateEtags: Boolean = js.native
+  var generateEtags: Boolean
   
-  var poweredByHeader: Boolean = js.native
+  var poweredByHeader: Boolean
   
-  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var runtimeConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var staticMarkup: Boolean = js.native
+  var staticMarkup: Boolean
 }
 object AmpBindInitData {
   

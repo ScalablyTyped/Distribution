@@ -2,22 +2,20 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetDimensionProperties extends StObject {
   
   /**
     * @see https://developers.google.com/sheets/api/reference/rest/v4/spreadsheets.developerMetadata#DeveloperMetadata
     */
-  var developerMetadata: js.Array[DeveloperMetadata] = js.native
+  var developerMetadata: js.Array[DeveloperMetadata]
   
-  var hiddenByFilter: Boolean = js.native
+  var hiddenByFilter: Boolean
   
-  var hiddenByUser: Boolean = js.native
+  var hiddenByUser: Boolean
   
-  var pixelSize: Double = js.native
+  var pixelSize: Double
 }
 object WorksheetDimensionProperties {
   

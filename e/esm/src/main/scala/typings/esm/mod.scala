@@ -9,40 +9,40 @@ import typings.node.NodeModule
 import typings.node.NodeRequire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(mod: NodeModule): NodeRequire = ^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  @scala.inline
+  def apply(mod: NodeModule, options: PartialOptions): NodeRequire = (^.asInstanceOf[js.Dynamic].apply(mod.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NodeRequire]
+  
   @JSImport("esm", JSImport.Namespace)
   @js.native
-  def apply(mod: NodeModule): NodeRequire = js.native
-  @JSImport("esm", JSImport.Namespace)
-  @js.native
-  def apply(mod: NodeModule, options: PartialOptions): NodeRequire = js.native
+  val ^ : js.Any = js.native
   
   object Options {
     
-    @js.native
     trait Esm extends StObject {
       
-      var cache: Boolean = js.native
+      var cache: Boolean
       
-      var dedefault: Boolean = js.native
+      var dedefault: Boolean
       
-      var esModule: Boolean = js.native
+      var esModule: Boolean
       
-      var extensions: Boolean = js.native
+      var extensions: Boolean
       
-      var mutableNamespace: Boolean = js.native
+      var mutableNamespace: Boolean
       
-      var namedExports: Boolean = js.native
+      var namedExports: Boolean
       
-      var paths: Boolean = js.native
+      var paths: Boolean
       
-      var topLevelReturn: Boolean = js.native
+      var topLevelReturn: Boolean
       
-      var vars: Boolean = js.native
+      var vars: Boolean
     }
     object Esm {
       
@@ -94,20 +94,19 @@ object mod {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
-      var await: Boolean = js.native
+      var await: Boolean
       
-      var cjs: Boolean | PartialEsm = js.native
+      var cjs: Boolean | PartialEsm
       
-      var force: Boolean = js.native
+      var force: Boolean
       
-      var mainFields: js.Array[String] = js.native
+      var mainFields: js.Array[String]
       
-      var mode: auto | all | strict = js.native
+      var mode: auto | all | strict
       
-      var wasm: Boolean = js.native
+      var wasm: Boolean
     }
     object Options {
       

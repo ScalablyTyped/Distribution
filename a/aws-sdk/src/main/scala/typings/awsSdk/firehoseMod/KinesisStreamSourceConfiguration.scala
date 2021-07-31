@@ -2,21 +2,19 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisStreamSourceConfiguration extends StObject {
   
   /**
     * The ARN of the source Kinesis data stream. For more information, see Amazon Kinesis Data Streams ARN Format.
     */
-  var KinesisStreamARN: typings.awsSdk.firehoseMod.KinesisStreamARN = js.native
+  var KinesisStreamARN: typings.awsSdk.firehoseMod.KinesisStreamARN
   
   /**
     * The ARN of the role that provides access to the source Kinesis data stream. For more information, see AWS Identity and Access Management (IAM) ARN Format.
     */
-  var RoleARN: typings.awsSdk.firehoseMod.RoleARN = js.native
+  var RoleARN: typings.awsSdk.firehoseMod.RoleARN
 }
 object KinesisStreamSourceConfiguration {
   

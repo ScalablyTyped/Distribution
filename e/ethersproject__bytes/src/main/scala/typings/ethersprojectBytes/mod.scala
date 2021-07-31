@@ -7,127 +7,99 @@ import typings.std.ArrayLike
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@ethersproject/bytes", "arrayify")
+  @JSImport("@ethersproject/bytes", JSImport.Namespace)
   @js.native
-  def arrayify(value: Double): Uint8Array = js.native
-  @JSImport("@ethersproject/bytes", "arrayify")
-  @js.native
-  def arrayify(value: Double, options: DataOptions): Uint8Array = js.native
-  @JSImport("@ethersproject/bytes", "arrayify")
-  @js.native
-  def arrayify(value: BytesLike): Uint8Array = js.native
-  @JSImport("@ethersproject/bytes", "arrayify")
-  @js.native
-  def arrayify(value: BytesLike, options: DataOptions): Uint8Array = js.native
-  @JSImport("@ethersproject/bytes", "arrayify")
-  @js.native
-  def arrayify(value: Hexable): Uint8Array = js.native
-  @JSImport("@ethersproject/bytes", "arrayify")
-  @js.native
-  def arrayify(value: Hexable, options: DataOptions): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ethersproject/bytes", "concat")
-  @js.native
-  def concat(items: js.Array[BytesLike]): Uint8Array = js.native
+  @scala.inline
+  def arrayify(value: Double): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def arrayify(value: Double, options: DataOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def arrayify(value: BytesLike): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def arrayify(value: BytesLike, options: DataOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
+  @scala.inline
+  def arrayify(value: Hexable): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def arrayify(value: Hexable, options: DataOptions): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
-  @JSImport("@ethersproject/bytes", "hexConcat")
-  @js.native
-  def hexConcat(items: js.Array[BytesLike]): String = js.native
+  @scala.inline
+  def concat(items: js.Array[BytesLike]): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(items.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
   
-  @JSImport("@ethersproject/bytes", "hexDataLength")
-  @js.native
-  def hexDataLength(data: BytesLike): Double = js.native
+  @scala.inline
+  def hexConcat(items: js.Array[BytesLike]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexConcat")(items.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "hexDataSlice")
-  @js.native
-  def hexDataSlice(data: BytesLike, offset: Double): String = js.native
-  @JSImport("@ethersproject/bytes", "hexDataSlice")
-  @js.native
-  def hexDataSlice(data: BytesLike, offset: Double, endOffset: Double): String = js.native
+  @scala.inline
+  def hexDataLength(data: BytesLike): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hexDataLength")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@ethersproject/bytes", "hexStripZeros")
-  @js.native
-  def hexStripZeros(value: BytesLike): String = js.native
+  @scala.inline
+  def hexDataSlice(data: BytesLike, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexDataSlice")(data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hexDataSlice(data: BytesLike, offset: Double, endOffset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexDataSlice")(data.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], endOffset.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "hexValue")
-  @js.native
-  def hexValue(value: Double): String = js.native
-  @JSImport("@ethersproject/bytes", "hexValue")
-  @js.native
-  def hexValue(value: BytesLike): String = js.native
-  @JSImport("@ethersproject/bytes", "hexValue")
-  @js.native
-  def hexValue(value: Hexable): String = js.native
+  @scala.inline
+  def hexStripZeros(value: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexStripZeros")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "hexZeroPad")
-  @js.native
-  def hexZeroPad(value: BytesLike, length: Double): String = js.native
+  @scala.inline
+  def hexValue(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hexValue(value: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hexValue(value: Hexable): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexValue")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: Double): String = js.native
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: Double, options: DataOptions): String = js.native
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: BytesLike): String = js.native
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: BytesLike, options: DataOptions): String = js.native
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: Hexable): String = js.native
-  @JSImport("@ethersproject/bytes", "hexlify")
-  @js.native
-  def hexlify(value: Hexable, options: DataOptions): String = js.native
+  @scala.inline
+  def hexZeroPad(value: BytesLike, length: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexZeroPad")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "isBytes")
-  @js.native
-  def isBytes(value: js.Any): /* is @ethersproject/bytes.@ethersproject/bytes.Bytes */ Boolean = js.native
+  @scala.inline
+  def hexlify(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hexlify(value: Double, options: DataOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hexlify(value: BytesLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hexlify(value: BytesLike, options: DataOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def hexlify(value: Hexable): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hexlify(value: Hexable, options: DataOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hexlify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "isBytesLike")
-  @js.native
-  def isBytesLike(value: js.Any): /* is @ethersproject/bytes.@ethersproject/bytes.BytesLike */ Boolean = js.native
+  @scala.inline
+  def isBytes(value: js.Any): /* is @ethersproject/bytes.@ethersproject/bytes.Bytes */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBytes")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bytes.@ethersproject/bytes.Bytes */ Boolean]
   
-  @JSImport("@ethersproject/bytes", "isHexString")
-  @js.native
-  def isHexString(value: js.Any): Boolean = js.native
-  @JSImport("@ethersproject/bytes", "isHexString")
-  @js.native
-  def isHexString(value: js.Any, length: Double): Boolean = js.native
+  @scala.inline
+  def isBytesLike(value: js.Any): /* is @ethersproject/bytes.@ethersproject/bytes.BytesLike */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBytesLike")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/bytes.@ethersproject/bytes.BytesLike */ Boolean]
   
-  @JSImport("@ethersproject/bytes", "joinSignature")
-  @js.native
-  def joinSignature(signature: SignatureLike): String = js.native
+  @scala.inline
+  def isHexString(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHexString")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isHexString(value: js.Any, length: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isHexString")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/bytes", "splitSignature")
-  @js.native
-  def splitSignature(signature: SignatureLike): Signature = js.native
+  @scala.inline
+  def joinSignature(signature: SignatureLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinSignature")(signature.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ethersproject/bytes", "stripZeros")
-  @js.native
-  def stripZeros(value: BytesLike): Uint8Array = js.native
+  @scala.inline
+  def splitSignature(signature: SignatureLike): Signature = ^.asInstanceOf[js.Dynamic].applyDynamic("splitSignature")(signature.asInstanceOf[js.Any]).asInstanceOf[Signature]
   
-  @JSImport("@ethersproject/bytes", "zeroPad")
-  @js.native
-  def zeroPad(value: BytesLike, length: Double): Uint8Array = js.native
+  @scala.inline
+  def stripZeros(value: BytesLike): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("stripZeros")(value.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def zeroPad(value: BytesLike, length: Double): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("zeroPad")(value.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
   
   type Bytes = ArrayLike[Double]
   
   type BytesLike = Bytes | String
   
-  @js.native
   trait DataOptions extends StObject {
     
-    var allowMissingPrefix: js.UndefOr[Boolean] = js.native
+    var allowMissingPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var hexPad: js.UndefOr[left | right | Null] = js.native
+    var hexPad: js.UndefOr[left | right | Null] = js.undefined
   }
   object DataOptions {
     
@@ -157,10 +129,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Hexable extends StObject {
     
-    def toHexString(): String = js.native
+    def toHexString(): String
   }
   object Hexable {
     
@@ -178,18 +149,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Signature extends StObject {
     
-    var _vs: String = js.native
+    var _vs: String
     
-    var r: String = js.native
+    var r: String
     
-    var recoveryParam: Double = js.native
+    var recoveryParam: Double
     
-    var s: String = js.native
+    var s: String
     
-    var v: Double = js.native
+    var v: Double
   }
   object Signature {
     

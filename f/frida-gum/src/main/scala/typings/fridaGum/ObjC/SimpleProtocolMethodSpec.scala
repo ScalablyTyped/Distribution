@@ -2,26 +2,26 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleProtocolMethodSpec extends ProtocolMethodSpec {
+trait SimpleProtocolMethodSpec
+  extends StObject
+     with ProtocolMethodSpec {
   
   /**
     * Argument types.
     */
-  var argTypes: js.Array[String] = js.native
+  var argTypes: js.Array[String]
   
   /**
     * Whether this method is required or optional. Default is required.
     */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return type.
     */
-  var retType: String = js.native
+  var retType: String
 }
 object SimpleProtocolMethodSpec {
   

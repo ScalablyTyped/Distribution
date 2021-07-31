@@ -14,46 +14,44 @@ import typings.wegameApi.wegameApiStrings.mp3
 import typings.wegameApi.wx.types.AudioSourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioSource extends StObject {
   
   /**
     * 指定录音的音频源，可通过 wx.getAvailableAudioSources() 获取当前可用的音频源，默认值auto
     */
-  var audioSource: js.UndefOr[AudioSourceType] = js.native
+  var audioSource: js.UndefOr[AudioSourceType] = js.undefined
   
   /**
     * 录音的时长，单位 ms，最大值 600000（10 分钟），默认值60000（1 分钟）
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 编码码率
     */
-  var encodeBitRate: Double = js.native
+  var encodeBitRate: Double
   
   /**
     * 音频格式
     */
-  var format: mp3 | aac = js.native
+  var format: mp3 | aac
   
   /**
     * 指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调
     */
-  var frameSize: Double = js.native
+  var frameSize: Double
   
   /**
     * 录音通道数
     */
-  var numberOfChannels: typings.wegameApi.wegameApiNumbers.`1` | typings.wegameApi.wegameApiNumbers.`2` = js.native
+  var numberOfChannels: typings.wegameApi.wegameApiNumbers.`1` | typings.wegameApi.wegameApiNumbers.`2`
   
   /**
     * 采样率
     */
-  var sampleRate: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000` = js.native
+  var sampleRate: `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`
 }
 object AudioSource {
   

@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plusDomainsMod {
+  
+  @JSImport("googleapis/build/src/apis/plusDomains", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object plusDomainsMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/plusDomains", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/plusDomains", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object plusDomainsMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/plusDomains", "plusDomains")
-  @js.native
-  def plusDomains(options: Options): Plusdomains = js.native
-  @JSImport("googleapis/build/src/apis/plusDomains", "plusDomains")
-  @js.native
-  def plusDomains_v1(version: v1): Plusdomains = js.native
+  @scala.inline
+  def plusDomains(options: Options): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(options.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
+  
+  @scala.inline
+  def plusDomains_v1(version: v1): Plusdomains = ^.asInstanceOf[js.Dynamic].applyDynamic("plusDomains")(version.asInstanceOf[js.Any]).asInstanceOf[Plusdomains]
 }

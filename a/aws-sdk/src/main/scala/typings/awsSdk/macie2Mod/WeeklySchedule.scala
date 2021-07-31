@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeeklySchedule extends StObject {
   
   /**
     * The day of the week when Amazon Macie runs the job.
     */
-  var dayOfWeek: js.UndefOr[DayOfWeek] = js.native
+  var dayOfWeek: js.UndefOr[DayOfWeek] = js.undefined
 }
 object WeeklySchedule {
   

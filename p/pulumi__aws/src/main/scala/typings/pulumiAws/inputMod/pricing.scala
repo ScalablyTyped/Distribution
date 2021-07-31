@@ -2,23 +2,21 @@ package typings.pulumiAws.inputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pricing {
   
-  @js.native
   trait GetProductFilter extends StObject {
     
     /**
       * The product attribute name that you want to filter on.
       */
-    var field: String = js.native
+    var field: String
     
     /**
       * The product attribute value that you want to filter on.
       */
-    var value: String = js.native
+    var value: String
   }
   object GetProductFilter {
     

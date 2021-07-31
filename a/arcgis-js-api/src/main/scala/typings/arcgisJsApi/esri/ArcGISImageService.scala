@@ -28,7 +28,6 @@ import typings.arcgisJsApi.arcgisJsApiStrings.unknown
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -74,8 +73,8 @@ trait ArcGISImageService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#fetchImage)
     */
-  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[_] = js.native
-  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): js.Promise[_] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double): js.Promise[js.Any] = js.native
+  def fetchImage(extent: Extent, width: Double, height: Double, options: ArcGISImageServiceFetchImageOptions): js.Promise[js.Any] = js.native
   
   /**
     * An array of fields in the layer.
@@ -103,8 +102,8 @@ trait ArcGISImageService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#getCatalogItemICSInfo)
     */
-  def getCatalogItemICSInfo(rasterId: Double): js.Promise[_] = js.native
-  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[_] = js.native
+  def getCatalogItemICSInfo(rasterId: Double): js.Promise[js.Any] = js.native
+  def getCatalogItemICSInfo(rasterId: Double, abortOptions: AbortSignal): js.Promise[js.Any] = js.native
   
   /**
     * Get the [raster info](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-RasterInfo.html) of a [catalog item](https://developers.arcgis.com/rest/services-reference/raster-catalog-item.htm) in an image service.

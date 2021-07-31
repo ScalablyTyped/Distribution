@@ -2,13 +2,13 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AppLicense extends ClientValueObject {
+trait AppLicense
+  extends StObject
+     with ClientValueObject {
   
-  def get_rawXMLLicenseToken(): String = js.native
+  def get_rawXMLLicenseToken(): String
 }
 object AppLicense {
   

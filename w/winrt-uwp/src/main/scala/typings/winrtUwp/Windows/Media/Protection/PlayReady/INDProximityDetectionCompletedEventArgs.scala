@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides arguments for the PlayReady-ND ProximityDetectionCompleted event. Apps fire this event after they complete the proximity detection process. */
-@js.native
 trait INDProximityDetectionCompletedEventArgs extends StObject {
   
   /** Gets the number of retries that occurred during a proximity detection operation. */
-  var proximityDetectionRetryCount: Double = js.native
+  var proximityDetectionRetryCount: Double
 }
 object INDProximityDetectionCompletedEventArgs {
   

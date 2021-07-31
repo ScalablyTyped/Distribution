@@ -2,21 +2,21 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnSortEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnSortEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var multiColumnSort: Boolean = js.native
+  var multiColumnSort: Boolean
   
-  var sortAsc: Boolean = js.native
+  var sortAsc: Boolean
   
   // Single column returned
-  var sortCol: js.UndefOr[Column[T]] = js.native
+  var sortCol: js.UndefOr[Column[T]] = js.undefined
   
   // Multiple columns returned
-  var sortCols: js.UndefOr[js.Array[SortColumn[T]]] = js.native
+  var sortCols: js.UndefOr[js.Array[SortColumn[T]]] = js.undefined
 }
 object OnSortEventArgs {
   
@@ -27,7 +27,7 @@ object OnSortEventArgs {
   }
   
   @scala.inline
-  implicit class OnSortEventArgsMutableBuilder[Self <: OnSortEventArgs[_], T /* <: SlickData */] (val x: Self with OnSortEventArgs[T]) extends AnyVal {
+  implicit class OnSortEventArgsMutableBuilder[Self <: OnSortEventArgs[?], T /* <: SlickData */] (val x: Self & OnSortEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setMultiColumnSort(value: Boolean): Self = StObject.set(x, "multiColumnSort", value.asInstanceOf[js.Any])

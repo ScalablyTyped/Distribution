@@ -2,36 +2,34 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the settings of the line numbering. */
-@js.native
 trait LineNumberingProperties extends StObject {
   
   /** The name of the character style that is used for the line number. */
-  var CharStyleName: String = js.native
+  var CharStyleName: String
   
   /** If `TRUE` , empty lines are counted. */
-  var CountEmptyLines: Boolean = js.native
+  var CountEmptyLines: Boolean
   
   /** If `TRUE` , lines in frames are included in counting. */
-  var CountLinesInFrames: Boolean = js.native
+  var CountLinesInFrames: Boolean
   
   /** specifies the distance between the line number and the start or end of the text area. */
-  var Distance: Double = js.native
+  var Distance: Double
   
   /** Line numbers are shown on every **Interval** th line. */
-  var Interval: Double = js.native
+  var Interval: Double
   
   /** If `TRUE` , line numbering is used. */
-  var IsOn: Boolean = js.native
+  var IsOn: Boolean
   
   /** specifies the position of the line number (constant LineNumberPositions left/right/inside/outside). */
-  var NumberPosition: Double = js.native
+  var NumberPosition: Double
   
   /** specifies the type of the numbering. */
-  var NumberingType: Double = js.native
+  var NumberingType: Double
   
   /**
     * specifies if the line numbering should start from the beginning at each page.
@@ -39,13 +37,13 @@ trait LineNumberingProperties extends StObject {
     * If set to `FALSE` the line numbering will be continuous.
     * @since OOo 2.0
     */
-  var RestartAtEachPage: Boolean = js.native
+  var RestartAtEachPage: Boolean
   
   /** The line separator is shown every **SeparatorInterval** th line. */
-  var SeparatorInterval: Double = js.native
+  var SeparatorInterval: Double
   
   /** specifies the string that is used for the line separator. */
-  var SeparatorText: String = js.native
+  var SeparatorText: String
 }
 object LineNumberingProperties {
   

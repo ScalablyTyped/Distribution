@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotTables
   * @see com.sun.star.sheet.DataPilotTable
   */
-@js.native
-trait XDataPilotTables extends XNameAccess {
+trait XDataPilotTables
+  extends StObject
+     with XNameAccess {
   
   /**
     * creates a data pilot descriptor.
@@ -25,7 +25,7 @@ trait XDataPilotTables extends XNameAccess {
     * This descriptor can be used with XDataPilotTables::addTable().
     * @see com.sun.star.sheet.DataPilotDescriptor
     */
-  def createDataPilotDescriptor(): XDataPilotDescriptor = js.native
+  def createDataPilotDescriptor(): XDataPilotDescriptor
   
   /**
     * creates a new data pilot table and adds it to the collection.
@@ -34,10 +34,10 @@ trait XDataPilotTables extends XNameAccess {
     * @param xDescriptor the descriptor containing the settings of the data pilot table.
     * @see com.sun.star.sheet.DataPilotDescriptor
     */
-  def insertNewByName(aName: String, OutputAddress: CellAddress, xDescriptor: XDataPilotDescriptor): Unit = js.native
+  def insertNewByName(aName: String, OutputAddress: CellAddress, xDescriptor: XDataPilotDescriptor): Unit
   
   /** deletes a data pilot table from the collection. */
-  def removeByName(aName: String): Unit = js.native
+  def removeByName(aName: String): Unit
 }
 object XDataPilotTables {
   

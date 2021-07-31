@@ -30,74 +30,74 @@ import typings.csstype.mod.TextAnchorProperty
 import typings.csstype.mod.VectorEffectProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.csstype.mod.SvgProperties because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined textAnchor, shapeRendering, markerStart, strokeLinecap, strokeDashoffset, lightingColor, fillOpacity, colorRendering, floodColor, strokeWidth, strokeOpacity, strokeLinejoin, stroke, markerEnd, stopColor, clip, dominantBaseline, baselineShift, stopOpacity, fillRule, clipRule, colorInterpolation, marker, fill, glyphOrientationVertical, alignmentBaseline, vectorEffect, strokeDasharray, markerMid, strokeMiterlimit, floodOpacity */ @js.native
-trait CSSProperties extends StandardProperties[Double | String] {
+- typings.csstype.mod.SvgProperties because var conflicts: clipPath, color, cursor, direction, display, filter, font, fontFamily, fontSize, fontSizeAdjust, fontStretch, fontStyle, fontVariant, fontWeight, imageRendering, letterSpacing, lineHeight, mask, opacity, overflow, paintOrder, pointerEvents, textDecoration, textRendering, unicodeBidi, visibility, whiteSpace, wordSpacing, writingMode. Inlined textAnchor, shapeRendering, markerStart, strokeLinecap, strokeDashoffset, lightingColor, fillOpacity, colorRendering, floodColor, strokeWidth, strokeOpacity, strokeLinejoin, stroke, markerEnd, stopColor, clip, dominantBaseline, baselineShift, stopOpacity, fillRule, clipRule, colorInterpolation, marker, fill, glyphOrientationVertical, alignmentBaseline, vectorEffect, strokeDasharray, markerMid, strokeMiterlimit, floodOpacity */ trait CSSProperties
+  extends StObject
+     with StandardProperties[Double | String] {
   
-  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.native
+  var alignmentBaseline: js.UndefOr[AlignmentBaselineProperty] = js.undefined
   
-  var baselineShift: js.UndefOr[BaselineShiftProperty[Double | String]] = js.native
+  var baselineShift: js.UndefOr[BaselineShiftProperty[Double | String]] = js.undefined
   
-  var clip: js.UndefOr[ClipProperty] = js.native
+  var clip: js.UndefOr[ClipProperty] = js.undefined
   
-  var clipRule: js.UndefOr[ClipRuleProperty] = js.native
+  var clipRule: js.UndefOr[ClipRuleProperty] = js.undefined
   
-  var colorInterpolation: js.UndefOr[ColorInterpolationProperty] = js.native
+  var colorInterpolation: js.UndefOr[ColorInterpolationProperty] = js.undefined
   
-  var colorRendering: js.UndefOr[ColorRenderingProperty] = js.native
+  var colorRendering: js.UndefOr[ColorRenderingProperty] = js.undefined
   
-  var dominantBaseline: js.UndefOr[DominantBaselineProperty] = js.native
+  var dominantBaseline: js.UndefOr[DominantBaselineProperty] = js.undefined
   
-  var fill: js.UndefOr[FillProperty] = js.native
+  var fill: js.UndefOr[FillProperty] = js.undefined
   
-  var fillOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var fillOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var fillRule: js.UndefOr[FillRuleProperty] = js.native
+  var fillRule: js.UndefOr[FillRuleProperty] = js.undefined
   
-  var floodColor: js.UndefOr[FloodColorProperty] = js.native
+  var floodColor: js.UndefOr[FloodColorProperty] = js.undefined
   
-  var floodOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var floodOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty] = js.native
+  var glyphOrientationVertical: js.UndefOr[GlyphOrientationVerticalProperty] = js.undefined
   
-  var lightingColor: js.UndefOr[LightingColorProperty] = js.native
+  var lightingColor: js.UndefOr[LightingColorProperty] = js.undefined
   
-  var marker: js.UndefOr[MarkerProperty] = js.native
+  var marker: js.UndefOr[MarkerProperty] = js.undefined
   
-  var markerEnd: js.UndefOr[MarkerEndProperty] = js.native
+  var markerEnd: js.UndefOr[MarkerEndProperty] = js.undefined
   
-  var markerMid: js.UndefOr[MarkerMidProperty] = js.native
+  var markerMid: js.UndefOr[MarkerMidProperty] = js.undefined
   
-  var markerStart: js.UndefOr[MarkerStartProperty] = js.native
+  var markerStart: js.UndefOr[MarkerStartProperty] = js.undefined
   
-  var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.native
+  var shapeRendering: js.UndefOr[ShapeRenderingProperty] = js.undefined
   
-  var stopColor: js.UndefOr[StopColorProperty] = js.native
+  var stopColor: js.UndefOr[StopColorProperty] = js.undefined
   
-  var stopOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var stopOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var stroke: js.UndefOr[StrokeProperty] = js.native
+  var stroke: js.UndefOr[StrokeProperty] = js.undefined
   
-  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[Double | String]] = js.native
+  var strokeDasharray: js.UndefOr[StrokeDasharrayProperty[Double | String]] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[Double | String]] = js.native
+  var strokeDashoffset: js.UndefOr[StrokeDashoffsetProperty[Double | String]] = js.undefined
   
-  var strokeLinecap: js.UndefOr[StrokeLinecapProperty] = js.native
+  var strokeLinecap: js.UndefOr[StrokeLinecapProperty] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty] = js.native
+  var strokeLinejoin: js.UndefOr[StrokeLinejoinProperty] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[GlobalsNumber] = js.native
+  var strokeMiterlimit: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var strokeOpacity: js.UndefOr[GlobalsNumber] = js.native
+  var strokeOpacity: js.UndefOr[GlobalsNumber] = js.undefined
   
-  var strokeWidth: js.UndefOr[StrokeWidthProperty[Double | String]] = js.native
+  var strokeWidth: js.UndefOr[StrokeWidthProperty[Double | String]] = js.undefined
   
-  var textAnchor: js.UndefOr[TextAnchorProperty] = js.native
+  var textAnchor: js.UndefOr[TextAnchorProperty] = js.undefined
   
-  var vectorEffect: js.UndefOr[VectorEffectProperty] = js.native
+  var vectorEffect: js.UndefOr[VectorEffectProperty] = js.undefined
 }
 object CSSProperties {
   

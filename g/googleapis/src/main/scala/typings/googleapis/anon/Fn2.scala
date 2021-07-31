@@ -5,7 +5,6 @@ import typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1.Adexchangebuyer2
 import typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

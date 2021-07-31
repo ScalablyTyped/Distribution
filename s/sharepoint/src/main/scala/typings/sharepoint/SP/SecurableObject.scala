@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SecurableObject extends ClientObject {
+trait SecurableObject
+  extends StObject
+     with ClientObject {
   
   def breakRoleInheritance(copyRoleAssignments: Boolean, clearSubscopes: Boolean): Unit = js.native
   

@@ -2,31 +2,29 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartExportTaskRequest extends StObject {
   
   /**
     * The end timestamp for exported data from the single Application Discovery Agent selected in the filters. If no value is specified, exported data includes the most recent data collected by the agent.
     */
-  var endTime: js.UndefOr[TimeStamp] = js.native
+  var endTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * The file format for the returned export data. Default value is CSV. Note: The GRAPHML option has been deprecated. 
     */
-  var exportDataFormat: js.UndefOr[ExportDataFormats] = js.native
+  var exportDataFormat: js.UndefOr[ExportDataFormats] = js.undefined
   
   /**
     * If a filter is present, it selects the single agentId of the Application Discovery Agent for which data is exported. The agentId can be found in the results of the DescribeAgents API or CLI. If no filter is present, startTime and endTime are ignored and exported data includes both Agentless Discovery Connector data and summary data from Application Discovery agents. 
     */
-  var filters: js.UndefOr[ExportFilters] = js.native
+  var filters: js.UndefOr[ExportFilters] = js.undefined
   
   /**
     * The start timestamp for exported data from the single Application Discovery Agent selected in the filters. If no value is specified, data is exported starting from the first data collected by the agent.
     */
-  var startTime: js.UndefOr[TimeStamp] = js.native
+  var startTime: js.UndefOr[TimeStamp] = js.undefined
 }
 object StartExportTaskRequest {
   

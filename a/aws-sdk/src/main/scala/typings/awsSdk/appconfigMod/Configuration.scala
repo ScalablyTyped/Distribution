@@ -2,26 +2,24 @@ package typings.awsSdk.appconfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /**
     * The configuration version.
     */
-  var ConfigurationVersion: js.UndefOr[Version] = js.native
+  var ConfigurationVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The content of the configuration or the configuration data.
     */
-  var Content: js.UndefOr[_Blob] = js.native
+  var Content: js.UndefOr[_Blob] = js.undefined
   
   /**
     * A standard MIME type describing the format of the configuration content. For more information, see Content-Type.
     */
-  var ContentType: js.UndefOr[String] = js.native
+  var ContentType: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

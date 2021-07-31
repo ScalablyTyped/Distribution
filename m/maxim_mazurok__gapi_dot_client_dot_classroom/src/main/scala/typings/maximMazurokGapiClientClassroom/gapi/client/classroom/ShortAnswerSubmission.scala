@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShortAnswerSubmission extends StObject {
   
   /** Student response to a short-answer question. */
-  var answer: js.UndefOr[String] = js.native
+  var answer: js.UndefOr[String] = js.undefined
 }
 object ShortAnswerSubmission {
   

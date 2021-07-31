@@ -3,17 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxDraggable extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var hint: js.UndefOr[js.Function | String | JQuery] = js.native
+  var hint: js.UndefOr[js.Function | String | JQuery] = js.undefined
   
-  var placeholder: js.UndefOr[js.Function | String | JQuery] = js.native
+  var placeholder: js.UndefOr[js.Function | String | JQuery] = js.undefined
 }
 object ListBoxDraggable {
   

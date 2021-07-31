@@ -2,61 +2,59 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MedicalTranscriptionJobSummary extends StObject {
   
   /**
     * A timestamp that shows when the job was completed.
     */
-  var CompletionTime: js.UndefOr[DateTime] = js.native
+  var CompletionTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * A timestamp that shows when the medical transcription job was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * If the TranscriptionJobStatus field is FAILED, a description of the error.
     */
-  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.native
+  var FailureReason: js.UndefOr[typings.awsSdk.transcribeserviceMod.FailureReason] = js.undefined
   
   /**
     * The language of the transcript in the source audio file.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.transcribeserviceMod.LanguageCode] = js.undefined
   
   /**
     * The name of a medical transcription job.
     */
-  var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.native
+  var MedicalTranscriptionJobName: js.UndefOr[TranscriptionJobName] = js.undefined
   
   /**
     * Indicates the location of the transcription job's output. The CUSTOMER_BUCKET is the S3 location provided in the OutputBucketName field when the 
     */
-  var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.native
+  var OutputLocationType: js.UndefOr[typings.awsSdk.transcribeserviceMod.OutputLocationType] = js.undefined
   
   /**
     * The medical specialty of the transcription job. Primary care is the only valid value.
     */
-  var Specialty: js.UndefOr[typings.awsSdk.transcribeserviceMod.Specialty] = js.native
+  var Specialty: js.UndefOr[typings.awsSdk.transcribeserviceMod.Specialty] = js.undefined
   
   /**
     * A timestamp that shows when the job began processing.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The status of the medical transcription job.
     */
-  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.native
+  var TranscriptionJobStatus: js.UndefOr[typings.awsSdk.transcribeserviceMod.TranscriptionJobStatus] = js.undefined
   
   /**
     * The speech of the clinician in the input audio.
     */
-  var Type: js.UndefOr[typings.awsSdk.transcribeserviceMod.Type] = js.native
+  var Type: js.UndefOr[typings.awsSdk.transcribeserviceMod.Type] = js.undefined
 }
 object MedicalTranscriptionJobSummary {
   

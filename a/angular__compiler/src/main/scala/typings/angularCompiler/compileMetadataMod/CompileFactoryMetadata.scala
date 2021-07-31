@@ -2,13 +2,13 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompileFactoryMetadata extends CompileIdentifierMetadata {
+trait CompileFactoryMetadata
+  extends StObject
+     with CompileIdentifierMetadata {
   
-  var diDeps: js.Array[CompileDiDependencyMetadata] = js.native
+  var diDeps: js.Array[CompileDiDependencyMetadata]
 }
 object CompileFactoryMetadata {
   

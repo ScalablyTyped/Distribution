@@ -7,25 +7,23 @@ import typings.nodeForge.nodeForgeStrings.aes192
 import typings.nodeForge.nodeForgeStrings.aes256
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Algorithm extends StObject {
   
-  var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.native
+  var algorithm: js.UndefOr[aes128 | aes192 | aes256 | `3des`] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var generateLocalKeyId: js.UndefOr[Boolean] = js.native
+  var generateLocalKeyId: js.UndefOr[Boolean] = js.undefined
   
-  var localKeyId: js.UndefOr[Hex] = js.native
+  var localKeyId: js.UndefOr[Hex] = js.undefined
   
-  var saltSize: js.UndefOr[Double] = js.native
+  var saltSize: js.UndefOr[Double] = js.undefined
   
-  var useMac: js.UndefOr[Boolean] = js.native
+  var useMac: js.UndefOr[Boolean] = js.undefined
 }
 object Algorithm {
   

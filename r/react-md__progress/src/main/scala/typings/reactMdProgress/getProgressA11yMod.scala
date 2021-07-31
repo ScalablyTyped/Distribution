@@ -3,28 +3,29 @@ package typings.reactMdProgress
 import typings.reactMdProgress.reactMdProgressBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getProgressA11yMod {
   
-  @JSImport("@react-md/progress/types/getProgressA11y", "getProgressA11y")
+  @JSImport("@react-md/progress/types/getProgressA11y", JSImport.Namespace)
   @js.native
-  def getProgressA11y(progressId: String, progressing: Boolean): js.UndefOr[ProgressA11y] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getProgressA11y(progressId: String, progressing: Boolean): js.UndefOr[ProgressA11y] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProgressA11y")(progressId.asInstanceOf[js.Any], progressing.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ProgressA11y]]
+  
   trait ProgressA11y extends StObject {
     
-    var `aria-busy`: `true` = js.native
+    var `aria-busy`: `true`
     
-    var `aria-describedby`: String = js.native
+    var `aria-describedby`: String
   }
   object ProgressA11y {
     
     @scala.inline
-    def apply(`aria-busy`: `true`, `aria-describedby`: String): ProgressA11y = {
+    def apply(`aria-describedby`: String): ProgressA11y = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("aria-busy")(`aria-busy`.asInstanceOf[js.Any])
+      __obj.updateDynamic("aria-busy")(true)
       __obj.updateDynamic("aria-describedby")(`aria-describedby`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProgressA11y]
     }

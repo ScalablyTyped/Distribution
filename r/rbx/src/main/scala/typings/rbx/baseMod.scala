@@ -18,24 +18,26 @@ import typings.std.Partial
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
+  
+  @JSImport("rbx/base", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rbx/base", "Generic")
   @js.native
   val Generic: ForwardRefAsExoticComponent[PreferHelpersPropsOverrid, ElementType[js.Any]] = js.native
   
-  @JSImport("rbx/base", "forwardRefAs")
-  @js.native
-  def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[_] */](
-    factory: RefForwardingComponent[HTMLElement | SVGElement | ComponentType[js.Object], TOwnProps with AsReactType],
+  @scala.inline
+  def forwardRefAs[TOwnProps, TDefaultComponent /* <: ReactType[js.Any] */](
+    factory: RefForwardingComponent[HTMLElement | SVGElement | ComponentType[js.Object], TOwnProps & AsReactType],
     defaultProps: Partial[
       Prefer[
-        (PropsWithoutRef[TOwnProps with `0`[TDefaultComponent]]) with RefAttributes[FromReactType[TDefaultComponent]], 
+        (PropsWithoutRef[TOwnProps & `0`[TDefaultComponent]]) & RefAttributes[FromReactType[TDefaultComponent]], 
         ComponentPropsWithoutRef[TDefaultComponent]
       ]
     ]
-  ): ForwardRefAsExoticComponent[TOwnProps, TDefaultComponent] = js.native
+  ): ForwardRefAsExoticComponent[TOwnProps, TDefaultComponent] = (^.asInstanceOf[js.Dynamic].applyDynamic("forwardRefAs")(factory.asInstanceOf[js.Any], defaultProps.asInstanceOf[js.Any])).asInstanceOf[ForwardRefAsExoticComponent[TOwnProps, TDefaultComponent]]
 }

@@ -2,21 +2,19 @@ package typings.webvrApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VRDisplayCapabilities extends StObject {
   
-  val canPresent: Boolean = js.native
+  val canPresent: Boolean
   
-  val hasExternalDisplay: Boolean = js.native
+  val hasExternalDisplay: Boolean
   
-  val hasOrientation: Boolean = js.native
+  val hasOrientation: Boolean
   
-  val hasPosition: Boolean = js.native
+  val hasPosition: Boolean
   
-  val maxLayers: Double = js.native
+  val maxLayers: Double
 }
 object VRDisplayCapabilities {
   

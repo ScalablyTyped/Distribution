@@ -2,20 +2,18 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/magellan.html#javascript-reference
-@js.native
 trait Magellan extends StObject {
   
-  def calcPoints(): Unit = js.native
+  def calcPoints(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def reflow(): Unit = js.native
+  def reflow(): Unit
   
-  def scrollToLoc(location: String): Unit = js.native
+  def scrollToLoc(location: String): Unit
 }
 object Magellan {
   

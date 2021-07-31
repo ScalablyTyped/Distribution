@@ -2,29 +2,27 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartsResult extends StObject {
   
-  var PartNumberMarker: Double = js.native
+  var PartNumberMarker: Double
   
-  var bucket: String = js.native
+  var bucket: String
   
-  var isTruncated: Boolean = js.native
+  var isTruncated: Boolean
   
-  var maxParts: Double = js.native
+  var maxParts: Double
   
-  var name: String = js.native
+  var name: String
   
-  var nextPartNumberMarker: Double = js.native
+  var nextPartNumberMarker: Double
   
-  var parts: js.Array[ObjectPart] = js.native
+  var parts: js.Array[ObjectPart]
   
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
   
-  var uploadId: String = js.native
+  var uploadId: String
 }
 object ListPartsResult {
   

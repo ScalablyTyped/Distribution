@@ -2,91 +2,157 @@ package typings.stackframe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("stackframe/stackframe", JSImport.Namespace)
   @js.native
-  class ^ protected () extends StackFrame {
+  class ^ protected ()
+    extends StObject
+       with StackFrame {
     def this(obj: StackFrameOptions) = this()
+    
+    /* CompleteClass */
+    override def getArgs(): js.UndefOr[js.Array[js.Any]] = js.native
+    
+    /* CompleteClass */
+    override def getColumnNumber(): js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    override def getEvalOrigin(): js.UndefOr[StackFrame] = js.native
+    
+    /* CompleteClass */
+    override def getFileName(): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def getFunctionName(): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def getIsConstructor(): js.UndefOr[Boolean] = js.native
+    
+    /* CompleteClass */
+    override def getIsEval(): js.UndefOr[Boolean] = js.native
+    
+    /* CompleteClass */
+    override def getIsNative(): js.UndefOr[Boolean] = js.native
+    
+    /* CompleteClass */
+    override def getIsToplevel(): js.UndefOr[Boolean] = js.native
+    
+    /* CompleteClass */
+    override def getLineNumber(): js.UndefOr[Double] = js.native
+    
+    /* CompleteClass */
+    override def getSource(): js.UndefOr[String] = js.native
+    
+    /* CompleteClass */
+    override def setArgs(args: js.Array[js.Any]): Unit = js.native
+    
+    /* CompleteClass */
+    override def setColumnNumber(columnNumber: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setEvalOrigin(stackframe: StackFrame): Unit = js.native
+    
+    /* CompleteClass */
+    override def setFileName(fileName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setFunctionName(functionName: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setIsConstructor(isConstructor: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setIsEval(isEval: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setIsNative(isNative: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setIsToplevel(isToplevel: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def setLineNumber(lineNumber: Double): Unit = js.native
+    
+    /* CompleteClass */
+    override def setSource(source: String): Unit = js.native
   }
   
-  @js.native
   trait StackFrame extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var evalOrigin: js.UndefOr[StackFrame] = js.native
+    var evalOrigin: js.UndefOr[StackFrame] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    def getArgs(): js.UndefOr[js.Array[_]] = js.native
+    def getArgs(): js.UndefOr[js.Array[js.Any]]
     
-    def getColumnNumber(): js.UndefOr[Double] = js.native
+    def getColumnNumber(): js.UndefOr[Double]
     
-    def getEvalOrigin(): js.UndefOr[StackFrame] = js.native
+    def getEvalOrigin(): js.UndefOr[StackFrame]
     
-    def getFileName(): js.UndefOr[String] = js.native
+    def getFileName(): js.UndefOr[String]
     
-    def getFunctionName(): js.UndefOr[String] = js.native
+    def getFunctionName(): js.UndefOr[String]
     
-    def getIsConstructor(): js.UndefOr[Boolean] = js.native
+    def getIsConstructor(): js.UndefOr[Boolean]
     
-    def getIsEval(): js.UndefOr[Boolean] = js.native
+    def getIsEval(): js.UndefOr[Boolean]
     
-    def getIsNative(): js.UndefOr[Boolean] = js.native
+    def getIsNative(): js.UndefOr[Boolean]
     
-    def getIsToplevel(): js.UndefOr[Boolean] = js.native
+    def getIsToplevel(): js.UndefOr[Boolean]
     
-    def getLineNumber(): js.UndefOr[Double] = js.native
+    def getLineNumber(): js.UndefOr[Double]
     
-    def getSource(): js.UndefOr[String] = js.native
+    def getSource(): js.UndefOr[String]
     
-    var isConstructor: js.UndefOr[Boolean] = js.native
+    var isConstructor: js.UndefOr[Boolean] = js.undefined
     
-    var isEval: js.UndefOr[Boolean] = js.native
+    var isEval: js.UndefOr[Boolean] = js.undefined
     
-    var isNative: js.UndefOr[Boolean] = js.native
+    var isNative: js.UndefOr[Boolean] = js.undefined
     
-    var isToplevel: js.UndefOr[Boolean] = js.native
+    var isToplevel: js.UndefOr[Boolean] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
-    def setArgs(args: js.Array[_]): Unit = js.native
+    def setArgs(args: js.Array[js.Any]): Unit
     
-    def setColumnNumber(columnNumber: Double): Unit = js.native
+    def setColumnNumber(columnNumber: Double): Unit
     
-    def setEvalOrigin(stackframe: StackFrame): Unit = js.native
+    def setEvalOrigin(stackframe: StackFrame): Unit
     
-    def setFileName(fileName: String): Unit = js.native
+    def setFileName(fileName: String): Unit
     
-    def setFunctionName(functionName: String): Unit = js.native
+    def setFunctionName(functionName: String): Unit
     
-    def setIsConstructor(isConstructor: Boolean): Unit = js.native
+    def setIsConstructor(isConstructor: Boolean): Unit
     
-    def setIsEval(isEval: Boolean): Unit = js.native
+    def setIsEval(isEval: Boolean): Unit
     
-    def setIsNative(isNative: Boolean): Unit = js.native
+    def setIsNative(isNative: Boolean): Unit
     
-    def setIsToplevel(isToplevel: Boolean): Unit = js.native
+    def setIsToplevel(isToplevel: Boolean): Unit
     
-    def setLineNumber(lineNumber: Double): Unit = js.native
+    def setLineNumber(lineNumber: Double): Unit
     
-    def setSource(source: String): Unit = js.native
+    def setSource(source: String): Unit
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object StackFrame {
     
     @scala.inline
     def apply(
-      getArgs: () => js.UndefOr[js.Array[_]],
+      getArgs: () => js.UndefOr[js.Array[js.Any]],
       getColumnNumber: () => js.UndefOr[Double],
       getEvalOrigin: () => js.UndefOr[StackFrame],
       getFileName: () => js.UndefOr[String],
@@ -97,7 +163,7 @@ object mod {
       getIsToplevel: () => js.UndefOr[Boolean],
       getLineNumber: () => js.UndefOr[Double],
       getSource: () => js.UndefOr[String],
-      setArgs: js.Array[_] => Unit,
+      setArgs: js.Array[js.Any] => Unit,
       setColumnNumber: Double => Unit,
       setEvalOrigin: StackFrame => Unit,
       setFileName: String => Unit,
@@ -117,7 +183,7 @@ object mod {
     implicit class StackFrameMutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)
@@ -150,7 +216,7 @@ object mod {
       def setFunctionNameUndefined: Self = StObject.set(x, "functionName", js.undefined)
       
       @scala.inline
-      def setGetArgs(value: () => js.UndefOr[js.Array[_]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
+      def setGetArgs(value: () => js.UndefOr[js.Array[js.Any]]): Self = StObject.set(x, "getArgs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetColumnNumber(value: () => js.UndefOr[Double]): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
@@ -213,7 +279,7 @@ object mod {
       def setLineNumberUndefined: Self = StObject.set(x, "lineNumber", js.undefined)
       
       @scala.inline
-      def setSetArgs(value: js.Array[_] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
+      def setSetArgs(value: js.Array[js.Any] => Unit): Self = StObject.set(x, "setArgs", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSetColumnNumber(value: Double => Unit): Self = StObject.set(x, "setColumnNumber", js.Any.fromFunction1(value))
@@ -253,30 +319,29 @@ object mod {
     }
   }
   
-  @js.native
   trait StackFrameOptions extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var columnNumber: js.UndefOr[Double] = js.native
+    var columnNumber: js.UndefOr[Double] = js.undefined
     
-    var evalOrigin: js.UndefOr[StackFrame] = js.native
+    var evalOrigin: js.UndefOr[StackFrame] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var functionName: js.UndefOr[String] = js.native
+    var functionName: js.UndefOr[String] = js.undefined
     
-    var isConstructor: js.UndefOr[Boolean] = js.native
+    var isConstructor: js.UndefOr[Boolean] = js.undefined
     
-    var isEval: js.UndefOr[Boolean] = js.native
+    var isEval: js.UndefOr[Boolean] = js.undefined
     
-    var isNative: js.UndefOr[Boolean] = js.native
+    var isNative: js.UndefOr[Boolean] = js.undefined
     
-    var isToplevel: js.UndefOr[Boolean] = js.native
+    var isToplevel: js.UndefOr[Boolean] = js.undefined
     
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object StackFrameOptions {
     
@@ -290,7 +355,7 @@ object mod {
     implicit class StackFrameOptionsMutableBuilder[Self <: StackFrameOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextLine extends StObject {
   
-  def end(): Double = js.native
+  def end(): Double
   
-  def endIncludingLineBreak(): Double = js.native
+  def endIncludingLineBreak(): Double
   
-  def extent(): TextSpan = js.native
+  def extent(): TextSpan
   
-  def extentIncludingLineBreak(): TextSpan = js.native
+  def extentIncludingLineBreak(): TextSpan
   
-  def lineNumber(): Double = js.native
+  def lineNumber(): Double
   
-  def start(): Double = js.native
+  def start(): Double
 }
 object ITextLine {
   

@@ -3,21 +3,19 @@ package typings.wordpressApiFetch.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var image_meta: js.UndefOr[Aperture] = js.native
+  var image_meta: js.UndefOr[Aperture] = js.undefined
   
-  var sizes: Record[String, File] = js.native
+  var sizes: Record[String, File]
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Height {
   

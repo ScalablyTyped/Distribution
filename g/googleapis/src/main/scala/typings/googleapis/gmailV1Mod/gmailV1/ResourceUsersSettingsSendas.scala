@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings$Sendas")
@@ -39,7 +38,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaSendAs] = js.native
   def create(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def create(params: ParamsResourceUsersSettingsSendasCreate): GaxiosPromise[SchemaSendAs] = js.native
   def create(params: ParamsResourceUsersSettingsSendasCreate, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def create(
@@ -71,7 +70,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersSettingsSendasDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -102,7 +101,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSendAs] = js.native
   def get(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def get(params: ParamsResourceUsersSettingsSendasGet): GaxiosPromise[SchemaSendAs] = js.native
   def get(params: ParamsResourceUsersSettingsSendasGet, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def get(
@@ -133,7 +132,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListSendAsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListSendAsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(params: ParamsResourceUsersSettingsSendasList): GaxiosPromise[SchemaListSendAsResponse] = js.native
   def list(
     params: ParamsResourceUsersSettingsSendasList,
@@ -171,7 +170,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaSendAs] = js.native
   def patch(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def patch(params: ParamsResourceUsersSettingsSendasPatch): GaxiosPromise[SchemaSendAs] = js.native
   def patch(params: ParamsResourceUsersSettingsSendasPatch, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def patch(
@@ -207,7 +206,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaSendAs] = js.native
   def update(callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSendAs] = js.native
   def update(params: ParamsResourceUsersSettingsSendasUpdate): GaxiosPromise[SchemaSendAs] = js.native
   def update(params: ParamsResourceUsersSettingsSendasUpdate, callback: BodyResponseCallback[SchemaSendAs]): Unit = js.native
   def update(
@@ -240,7 +239,7 @@ class ResourceUsersSettingsSendas protected () extends StObject {
     */
   def verify(): GaxiosPromise[Unit] = js.native
   def verify(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def verify(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def verify(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def verify(params: ParamsResourceUsersSettingsSendasVerify): GaxiosPromise[Unit] = js.native
   def verify(params: ParamsResourceUsersSettingsSendasVerify, callback: BodyResponseCallback[Unit]): Unit = js.native
   def verify(

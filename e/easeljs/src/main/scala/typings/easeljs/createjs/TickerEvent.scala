@@ -2,24 +2,22 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickerEvent extends StObject {
   
-  var delta: Double = js.native
+  var delta: Double
   
-  var paused: Boolean = js.native
+  var paused: Boolean
   
-  var runTime: Double = js.native
+  var runTime: Double
   
   // properties
-  var target: js.Object = js.native
+  var target: js.Object
   
-  var time: Double = js.native
+  var time: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object TickerEvent {
   

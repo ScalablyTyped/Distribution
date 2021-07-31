@@ -2,15 +2,13 @@ package typings.ckeditorCkeditor5Engine.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  def error(arg: js.Any*): String = js.native
+  def error(arg: js.Any*): String
   
-  def log(arg: js.Any*): String = js.native
+  def log(arg: js.Any*): String
 }
 object Error {
   

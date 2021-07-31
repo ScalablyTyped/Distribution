@@ -2,19 +2,17 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportOptions extends StObject {
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var projectionMatrix: js.UndefOr[ViewMatrix] = js.native
+  var projectionMatrix: js.UndefOr[ViewMatrix] = js.undefined
   
-  var viewMatrix: js.UndefOr[ViewMatrix] = js.native
+  var viewMatrix: js.UndefOr[ViewMatrix] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ViewportOptions {
   

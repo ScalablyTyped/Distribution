@@ -13,29 +13,27 @@ import typings.std.SVGSVGElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-drag", "drag")
+  @JSImport("d3-drag", JSImport.Namespace)
   @js.native
-  def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-drag", "dragDisable")
-  @js.native
-  def dragDisable(window: Window): Unit = js.native
+  @scala.inline
+  def drag[GElement /* <: DraggedElementBaseType */, Datum](): DragBehavior[GElement, Datum, Datum | SubjectPosition] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Datum | SubjectPosition]]
   
-  @JSImport("d3-drag", "dragEnable")
-  @js.native
-  def dragEnable(window: Window): Unit = js.native
-  @JSImport("d3-drag", "dragEnable")
-  @js.native
-  def dragEnable(window: Window, noClick: Boolean): Unit = js.native
+  @scala.inline
+  def dragDisable(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragDisable")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("d3-drag", "drag")
-  @js.native
-  def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = js.native
+  @scala.inline
+  def dragEnable(window: Window): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def dragEnable(window: Window, noClick: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dragEnable")(window.asInstanceOf[js.Any], noClick.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def drag_GElement_DraggedElementBaseTypeDatumSubject[GElement /* <: DraggedElementBaseType */, Datum, Subject](): DragBehavior[GElement, Datum, Subject] = ^.asInstanceOf[js.Dynamic].applyDynamic("drag")().asInstanceOf[DragBehavior[GElement, Datum, Subject]]
   
   @js.native
   trait D3DragEvent[GElement /* <: DraggedElementBaseType */, Datum, Subject] extends StObject {
@@ -139,7 +137,7 @@ object mod {
     /**
       * The DragBehavior associated with the event
       */
-    def target(selection: Selection_[GElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def target(selection: Selection_[GElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
     /**
       * The DragBehavior associated with the event
       */
@@ -175,7 +173,7 @@ object mod {
       * @param selection A D3 selection of elements.
       * @param args Optional arguments to be passed in.
       */
-    def apply(selection: Selection_[GElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def apply(selection: Selection_[GElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
     
     /**
       * Return the current click distance threshold, which defaults to zero.
@@ -358,18 +356,17 @@ object mod {
   
   type DraggedElementBaseType = Element
   
-  @js.native
   trait SubjectPosition extends StObject {
     
     /**
       * x-coordinate
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * y-coordinate
       */
-    var y: Double = js.native
+    var y: Double
   }
   object SubjectPosition {
     

@@ -2,24 +2,27 @@ package typings.wonderFrp
 
 import typings.wonderFrp.coreSchedulerMod.Scheduler
 import typings.wonderFrp.streamBaseStreamMod.BaseStream
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/es2015/stream/IntervalRequestStream", JSImport.Namespace)
-@js.native
-object streamIntervalRequestStreamMod extends js.Object {
+object streamIntervalRequestStreamMod {
+  
+  @JSImport("wonder-frp/dist/es2015/stream/IntervalRequestStream", "IntervalRequestStream")
   @js.native
   class IntervalRequestStream protected () extends BaseStream {
     def this(scheduler: Scheduler) = this()
+    
     var _isEnd: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object IntervalRequestStream extends js.Object {
-    def create(scheduler: Scheduler): IntervalRequestStream = js.native
+  object IntervalRequestStream {
+    
+    @JSImport("wonder-frp/dist/es2015/stream/IntervalRequestStream", "IntervalRequestStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(scheduler: Scheduler): IntervalRequestStream = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(scheduler.asInstanceOf[js.Any]).asInstanceOf[IntervalRequestStream]
   }
-  
 }
-

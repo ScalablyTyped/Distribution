@@ -2,33 +2,31 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GF256 extends StObject {
   
-  val One: GF256Poly = js.native
+  val One: GF256Poly
   
-  val Zero: GF256Poly = js.native
+  val Zero: GF256Poly
   
-  def buildMonomial(degree: Double, coefficient: Double): GF256Poly = js.native
+  def buildMonomial(degree: Double, coefficient: Double): GF256Poly
   
-  def exp(a: Double): Double = js.native
+  def exp(a: Double): Double
   
-  var expTable: js.Array[Double] = js.native
+  var expTable: js.Array[Double]
   
-  def inverse(a: Double): Double = js.native
+  def inverse(a: Double): Double
   
-  def log(a: Double): Double = js.native
+  def log(a: Double): Double
   
-  var logTable: js.Array[Double] = js.native
+  var logTable: js.Array[Double]
   
-  def multiply(a: Double, b: Double): Double = js.native
+  def multiply(a: Double, b: Double): Double
   
-  var one: GF256Poly = js.native
+  var one: GF256Poly
   
-  var zero: GF256Poly = js.native
+  var zero: GF256Poly
 }
 object GF256 {
   

@@ -5,29 +5,27 @@ import typings.octokitTypes.octokitTypesStrings.COMMENT
 import typings.octokitTypes.octokitTypesStrings.REQUEST_CHANGES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsSubmitReviewEndpoint extends StObject {
   
   /**
     * The body text of the pull request review
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The review action you want to perform. The review actions include: `APPROVE`, `REQUEST_CHANGES`, or `COMMENT`. When you leave this blank, the API returns _HTTP 422 (Unrecognizable entity)_ and sets the review action state to `PENDING`, which means you will need to re-submit the pull request review using a review action.
     */
-  var event: APPROVE | REQUEST_CHANGES | COMMENT = js.native
+  var event: APPROVE | REQUEST_CHANGES | COMMENT
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
   
-  var review_id: Double = js.native
+  var review_id: Double
 }
 object PullsSubmitReviewEndpoint {
   

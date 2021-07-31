@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "Request")
@@ -118,11 +117,11 @@ class Request protected () extends StObject {
     It is recommended to use Sort objects when possible.
     */
   def sort(): Request = js.native
-  def sort(fieldName: js.UndefOr[scala.Nothing], order: String): Request = js.native
   def sort(fieldName: String): Request = js.native
   def sort(fieldName: String, order: String): Request = js.native
-  def sort(fieldName: js.Array[_]): Request = js.native
-  def sort(fieldName: js.Array[_], order: String): Request = js.native
+  def sort(fieldName: js.Array[js.Any]): Request = js.native
+  def sort(fieldName: js.Array[js.Any], order: String): Request = js.native
+  def sort(fieldName: Unit, order: String): Request = js.native
   def sort(fieldName: Sort): Request = js.native
   def sort(fieldName: Sort, order: String): Request = js.native
   

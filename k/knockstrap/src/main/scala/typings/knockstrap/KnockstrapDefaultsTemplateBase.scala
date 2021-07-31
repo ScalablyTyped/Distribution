@@ -2,15 +2,13 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapDefaultsTemplateBase extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var templateEngine: KnockstrapStringTemplateEngine = js.native
+  var templateEngine: KnockstrapStringTemplateEngine
 }
 object KnockstrapDefaultsTemplateBase {
   

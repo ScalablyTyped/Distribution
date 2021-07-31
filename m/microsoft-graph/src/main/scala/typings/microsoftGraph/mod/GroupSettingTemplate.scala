@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupSettingTemplate extends DirectoryObject {
+trait GroupSettingTemplate
+  extends StObject
+     with DirectoryObject {
   
   // Description of the template.
-  var description: js.UndefOr[NullableOption[String]] = js.native
+  var description: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Display name of the template.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Collection of settingTemplateValues that list the set of available settings, defaults and types that make up this
     * template.
     */
-  var values: js.UndefOr[js.Array[SettingTemplateValue]] = js.native
+  var values: js.UndefOr[js.Array[SettingTemplateValue]] = js.undefined
 }
 object GroupSettingTemplate {
   

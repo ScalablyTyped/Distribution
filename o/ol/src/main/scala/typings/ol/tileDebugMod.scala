@@ -4,7 +4,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tileDebugMod {
@@ -25,16 +24,15 @@ object tileDebugMod {
     def getImage(): HTMLCanvasElement = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.native
+    var tileGrid: js.UndefOr[typings.ol.tilegridTileGridMod.default] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
     
-    var zDirection: js.UndefOr[Double] = js.native
+    var zDirection: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

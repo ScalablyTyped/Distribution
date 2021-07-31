@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientUploadControlTextChangedEventArgs")
 @js.native
 class ASPxClientUploadControlTextChangedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientUploadControlTextChangedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientUploadControlTextChangedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientUploadControlTextChangedEventArgs class.
     * @param inputIndex An integer value that specifies the file input element's index within the ASPxUploadControl.UploadedFiles collection.
     */
   def this(inputIndex: Double) = this()
+  
+  /**
+    * Gets the index of a file input element within the ASPxUploadControl.
+    */
+  /* CompleteClass */
+  var inputIndex: Double = js.native
 }

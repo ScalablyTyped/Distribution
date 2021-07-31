@@ -2,15 +2,13 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Caissuer extends StObject {
   
-  var caissuer: js.Array[String] = js.native
+  var caissuer: js.Array[String]
   
-  var ocsp: js.Array[String] = js.native
+  var ocsp: js.Array[String]
 }
 object Caissuer {
   

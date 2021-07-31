@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyAttributeDescription extends StObject {
   
   /**
     * The name of the attribute.
     */
-  var AttributeName: js.UndefOr[typings.awsSdk.elbMod.AttributeName] = js.native
+  var AttributeName: js.UndefOr[typings.awsSdk.elbMod.AttributeName] = js.undefined
   
   /**
     * The value of the attribute.
     */
-  var AttributeValue: js.UndefOr[typings.awsSdk.elbMod.AttributeValue] = js.native
+  var AttributeValue: js.UndefOr[typings.awsSdk.elbMod.AttributeValue] = js.undefined
 }
 object PolicyAttributeDescription {
   

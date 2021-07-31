@@ -3,31 +3,29 @@ package typings.reactTable.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseGlobalFiltersInstanceProps[D /* <: js.Object */] extends StObject {
   
-  var flatRows: js.Array[Row[D]] = js.native
+  var flatRows: js.Array[Row[D]]
   
-  var globalFilteredFlatRows: js.Array[Row[D]] = js.native
+  var globalFilteredFlatRows: js.Array[Row[D]]
   
-  var globalFilteredRows: js.Array[Row[D]] = js.native
+  var globalFilteredRows: js.Array[Row[D]]
   
-  var globalFilteredRowsById: Record[String, Row[D]] = js.native
+  var globalFilteredRowsById: Record[String, Row[D]]
   
-  var preGlobalFilteredFlatRows: js.Array[Row[D]] = js.native
+  var preGlobalFilteredFlatRows: js.Array[Row[D]]
   
-  var preGlobalFilteredRows: js.Array[Row[D]] = js.native
+  var preGlobalFilteredRows: js.Array[Row[D]]
   
-  var preGlobalFilteredRowsById: Record[String, Row[D]] = js.native
+  var preGlobalFilteredRowsById: Record[String, Row[D]]
   
-  var rows: js.Array[Row[D]] = js.native
+  var rows: js.Array[Row[D]]
   
-  var rowsById: Record[String, Row[D]] = js.native
+  var rowsById: Record[String, Row[D]]
   
-  def setGlobalFilter(filterValue: FilterValue): Unit = js.native
+  def setGlobalFilter(filterValue: FilterValue): Unit
 }
 object UseGlobalFiltersInstanceProps {
   
@@ -49,7 +47,7 @@ object UseGlobalFiltersInstanceProps {
   }
   
   @scala.inline
-  implicit class UseGlobalFiltersInstancePropsMutableBuilder[Self <: UseGlobalFiltersInstanceProps[_], D /* <: js.Object */] (val x: Self with UseGlobalFiltersInstanceProps[D]) extends AnyVal {
+  implicit class UseGlobalFiltersInstancePropsMutableBuilder[Self <: UseGlobalFiltersInstanceProps[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersInstanceProps[D]) extends AnyVal {
     
     @scala.inline
     def setFlatRows(value: js.Array[Row[D]]): Self = StObject.set(x, "flatRows", value.asInstanceOf[js.Any])

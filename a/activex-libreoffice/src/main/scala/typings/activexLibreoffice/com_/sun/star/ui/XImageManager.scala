@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * An image manager controls a number of image sets which are specified by a {@link ImageType} .
   */
-@js.native
 trait XImageManager
-  extends XUIConfigurationPersistence
+  extends StObject
+     with XUIConfigurationPersistence
      with XUIConfiguration
      with XComponent
      with XInitialization {
@@ -30,7 +29,7 @@ trait XImageManager
     * @param nImageType specifies the image type for this operation.
     * @returns all command URLs within the images manager that have an image associated.
     */
-  def getAllImageNames(nImageType: Double): SafeArray[String] = js.native
+  def getAllImageNames(nImageType: Double): SafeArray[String]
   
   /**
     * retrieves the associated images of command URLs.
@@ -38,7 +37,7 @@ trait XImageManager
     * @param aCommandURLSequence a sequence of command URLs for which the images are requested.
     * @returns a sequence of graphics object which are associated with the provided command URLs. If an unknown command URL is provided or a command URL has no
     */
-  def getImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String]): SafeArray[XGraphic] = js.native
+  def getImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String]): SafeArray[XGraphic]
   
   /**
     * determines if a command URL has an associated image.
@@ -46,7 +45,7 @@ trait XImageManager
     * @param CommandURL a command URL that should be checked for an associated image.
     * @returns `TRUE` if an image is associated, otherwise `FALSE` .
     */
-  def hasImage(nImageType: Double, CommandURL: String): Boolean = js.native
+  def hasImage(nImageType: Double, CommandURL: String): Boolean
   
   /**
     * inserts new image/command associations to a image manager.
@@ -54,14 +53,14 @@ trait XImageManager
     * @param aCommandURLSequence a sequence of command URLs which specify which commands get an new image.
     * @param aGraphicSequence a sequence of graphic objects which should be associated with the provided command URLs.  If an association is already present i
     */
-  def insertImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String], aGraphicSequence: SeqEquiv[XGraphic]): Unit = js.native
+  def insertImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String], aGraphicSequence: SeqEquiv[XGraphic]): Unit
   
   /**
     * removes associated images to a command URL.
     * @param nImageType specifies the image type for this association operation.
     * @param CommandURLs a sequence of command URLs for which the images should be removed.  If the **aCommandURLSequence** contains an invalid command URL a
     */
-  def removeImages(nImageType: Double, CommandURLs: SeqEquiv[String]): Unit = js.native
+  def removeImages(nImageType: Double, CommandURLs: SeqEquiv[String]): Unit
   
   /**
     * replaces the associated images of command URLs.
@@ -69,14 +68,14 @@ trait XImageManager
     * @param aCommandURLSequence a sequence of command URLs for which images should be replaced.
     * @param aGraphicsSequence a sequence of graphic objects which should replace the old images of the provided command URLs.  If a command URL cannot be fou
     */
-  def replaceImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String], aGraphicsSequence: SeqEquiv[XGraphic]): Unit = js.native
+  def replaceImages(nImageType: Double, aCommandURLSequence: SeqEquiv[String], aGraphicsSequence: SeqEquiv[XGraphic]): Unit
   
   /**
     * resets the image manager to default data.
     *
     * This means that all user images of the instance will be removed.
     */
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object XImageManager {
   
@@ -89,7 +88,7 @@ object XImageManager {
     getAllImageNames: Double => SafeArray[String],
     getImages: (Double, SeqEquiv[String]) => SafeArray[XGraphic],
     hasImage: (Double, String) => Boolean,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     insertImages: (Double, SeqEquiv[String], SeqEquiv[XGraphic]) => Unit,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,

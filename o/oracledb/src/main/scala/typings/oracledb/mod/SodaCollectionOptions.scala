@@ -2,10 +2,8 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SodaCollectionOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SodaCollectionOptions extends StObject {
     * @see https://oracle.github.io/node-oracledb/doc/api.html#sodaclientkeys
     * @see https://www.oracle.com/pls/topic/lookup?ctx=dblatest&id=GUID-49EFF3D3-9FAB-4DA6-BDE2-2650383566A3
     */
-  var metaData: js.UndefOr[SodaMetadata] = js.native
+  var metaData: js.UndefOr[SodaMetadata] = js.undefined
   
   /**
     * If mode is SODA_COLL_MAP_MODE, the collection will be stored in an externally,
@@ -28,7 +26,7 @@ trait SodaCollectionOptions extends StObject {
     *
     * Most users will leave mode undefined.
     */
-  var mode: js.UndefOr[Double] = js.native
+  var mode: js.UndefOr[Double] = js.undefined
 }
 object SodaCollectionOptions {
   

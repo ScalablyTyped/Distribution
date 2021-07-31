@@ -2,65 +2,63 @@ package typings.firebase.mod.firebase.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventParams extends StObject {
   
-  var affiliation: js.UndefOr[String] = js.native
+  var affiliation: js.UndefOr[String] = js.undefined
   
-  var checkout_option: js.UndefOr[String] = js.native
+  var checkout_option: js.UndefOr[String] = js.undefined
   
-  var checkout_step: js.UndefOr[Double] = js.native
+  var checkout_step: js.UndefOr[Double] = js.undefined
   
-  var content_id: js.UndefOr[String] = js.native
+  var content_id: js.UndefOr[String] = js.undefined
   
-  var content_type: js.UndefOr[String] = js.native
+  var content_type: js.UndefOr[String] = js.undefined
   
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var event_category: String = js.native
+  var event_category: String
   
-  var event_label: js.UndefOr[String] = js.native
+  var event_label: js.UndefOr[String] = js.undefined
   
-  var fatal: js.UndefOr[Boolean] = js.native
+  var fatal: js.UndefOr[Boolean] = js.undefined
   
-  var item_list_id: js.UndefOr[String] = js.native
+  var item_list_id: js.UndefOr[String] = js.undefined
   
-  var item_list_name: js.UndefOr[String] = js.native
+  var item_list_name: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[Item]] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
   
-  var payment_type: js.UndefOr[String] = js.native
+  var payment_type: js.UndefOr[String] = js.undefined
   
-  var promotion_id: js.UndefOr[String] = js.native
+  var promotion_id: js.UndefOr[String] = js.undefined
   
-  var promotion_name: js.UndefOr[String] = js.native
+  var promotion_name: js.UndefOr[String] = js.undefined
   
-  var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+  var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
   
-  var screen_name: js.UndefOr[String] = js.native
+  var screen_name: js.UndefOr[String] = js.undefined
   
-  var search_term: js.UndefOr[String] = js.native
+  var search_term: js.UndefOr[String] = js.undefined
   
-  var shipping: js.UndefOr[Currency] = js.native
+  var shipping: js.UndefOr[Currency] = js.undefined
   
-  var shipping_tier: js.UndefOr[String] = js.native
+  var shipping_tier: js.UndefOr[String] = js.undefined
   
-  var tax: js.UndefOr[Currency] = js.native
+  var tax: js.UndefOr[Currency] = js.undefined
   
-  var transaction_id: js.UndefOr[String] = js.native
+  var transaction_id: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object EventParams {
   

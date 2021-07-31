@@ -3,17 +3,40 @@ package typings.playable
 import typings.playable.anon.Screen
 import typings.playable.mainUiBlockTypesMod.IMainUIBlock
 import typings.playable.mainUiBlockTypesMod.IMainUIBlockViewConfig
+import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mainUiBlockMod {
   
   @JSImport("playable/dist/src/modules/ui/main-ui-block/main-ui-block", JSImport.Default)
   @js.native
-  class default protected () extends MainUIBlock {
+  class default protected ()
+    extends StObject
+       with MainUIBlock {
     def this(dependencies: Screen) = this()
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def disableShowingContent(): Unit = js.native
+    
+    /* CompleteClass */
+    override def enableShowingContent(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    override def setShouldAlwaysShow(flag: Boolean): Unit = js.native
+    
+    /* CompleteClass */
+    override def show(): Unit = js.native
   }
   object default {
     
@@ -45,7 +68,9 @@ object mainUiBlockMod {
   }
   
   @js.native
-  trait MainUIBlock extends IMainUIBlock {
+  trait MainUIBlock
+    extends StObject
+       with IMainUIBlock {
     
     var _bindEvents: js.Any = js.native
     

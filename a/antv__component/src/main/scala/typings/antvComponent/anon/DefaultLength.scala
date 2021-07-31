@@ -2,19 +2,17 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultLength extends StObject {
   
-  var defaultLength: Double = js.native
+  var defaultLength: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var style: FillString = js.native
+  var style: FillString
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object DefaultLength {
   

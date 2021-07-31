@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableLocalSecondaryIndex extends StObject {
   
   /**
     * The name of the index
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Only required with `INCLUDE` as a
     * projection type; a list of attributes to project into the index. These
     * do not need to be defined as attributes on the table.
     */
-  var nonKeyAttributes: js.UndefOr[js.Array[String]] = js.native
+  var nonKeyAttributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * One of `ALL`, `INCLUDE` or `KEYS_ONLY`
@@ -27,12 +25,12 @@ trait TableLocalSecondaryIndex extends StObject {
     * projects only the keys specified in the _non_key_attributes_
     * parameter.
     */
-  var projectionType: String = js.native
+  var projectionType: String
   
   /**
     * The name of the range key; must be defined
     */
-  var rangeKey: String = js.native
+  var rangeKey: String
 }
 object TableLocalSecondaryIndex {
   

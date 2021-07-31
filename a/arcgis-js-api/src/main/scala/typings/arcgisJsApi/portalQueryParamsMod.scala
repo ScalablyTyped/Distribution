@@ -6,24 +6,25 @@ import typings.arcgisJsApi.esri.PortalQueryParamsConstructor
 import typings.arcgisJsApi.esri.PortalQueryParamsProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalQueryParamsMod extends Shortcut {
   
   @JSImport("esri/portal/PortalQueryParams", JSImport.Namespace)
   @js.native
-  val ^ : PortalQueryParamsConstructor = js.native
+  val ^ : js.Object & PortalQueryParamsConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/portal/PortalQueryParams", JSImport.Namespace)
   @js.native
-  class Class () extends PortalQueryParams {
+  class Class ()
+    extends StObject
+       with PortalQueryParams {
     def this(properties: PortalQueryParamsProperties) = this()
   }
   
-  type _To = PortalQueryParamsConstructor
+  type _To = js.Object & PortalQueryParamsConstructor
   
   /* This means you don't have to write `^`, but can instead just say `portalQueryParamsMod.foo` */
-  override def _to: PortalQueryParamsConstructor = ^
+  override def _to: js.Object & PortalQueryParamsConstructor = ^
 }

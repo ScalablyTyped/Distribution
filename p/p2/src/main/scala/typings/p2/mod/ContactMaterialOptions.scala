@@ -2,25 +2,23 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactMaterialOptions extends StObject {
   
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
-  var frictionRelaxation: js.UndefOr[Double] = js.native
+  var frictionRelaxation: js.UndefOr[Double] = js.undefined
   
-  var frictionStiffness: js.UndefOr[Double] = js.native
+  var frictionStiffness: js.UndefOr[Double] = js.undefined
   
-  var relaxation: js.UndefOr[Double] = js.native
+  var relaxation: js.UndefOr[Double] = js.undefined
   
-  var restitution: js.UndefOr[Double] = js.native
+  var restitution: js.UndefOr[Double] = js.undefined
   
-  var stiffness: js.UndefOr[Double] = js.native
+  var stiffness: js.UndefOr[Double] = js.undefined
   
-  var surfaceVelocity: js.UndefOr[Double] = js.native
+  var surfaceVelocity: js.UndefOr[Double] = js.undefined
 }
 object ContactMaterialOptions {
   

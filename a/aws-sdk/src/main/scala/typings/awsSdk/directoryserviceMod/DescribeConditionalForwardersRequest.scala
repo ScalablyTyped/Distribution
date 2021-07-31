@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConditionalForwardersRequest extends StObject {
   
   /**
     * The directory ID for which to get the list of associated conditional forwarders.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The fully qualified domain names (FQDN) of the remote domains for which to get the list of associated conditional forwarders. If this member is null, all conditional forwarders are returned.
     */
-  var RemoteDomainNames: js.UndefOr[typings.awsSdk.directoryserviceMod.RemoteDomainNames] = js.native
+  var RemoteDomainNames: js.UndefOr[typings.awsSdk.directoryserviceMod.RemoteDomainNames] = js.undefined
 }
 object DescribeConditionalForwardersRequest {
   

@@ -2,20 +2,18 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Matches extends StObject {
   
   /** URLs to match and handle */
-  var matches: js.Array[String] = js.native
+  var matches: js.Array[String]
   
   /**
     * The title field is reserved for future use in all relevant UI elements.
     * It should describe the action that the app performs when launched with this type of URL handler.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Matches {
   

@@ -1,24 +1,22 @@
 package typings.actionsOnGoogle.v1Mod
 
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.actionsOnGoogleStrings.suggestion_chips
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageSuggestions
-  extends DialogflowV1BaseGoogleMessage[suggestion_chips]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[suggestion_chips]
      with DialogflowV1Message {
   
-  var suggestions: js.UndefOr[js.Array[DialogflowV1MessageSuggestion]] = js.native
+  var suggestions: js.UndefOr[js.Array[DialogflowV1MessageSuggestion]] = js.undefined
 }
 object DialogflowV1MessageSuggestions {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageSuggestions = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageSuggestions = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageSuggestions]
   }
   

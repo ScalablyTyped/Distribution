@@ -11,7 +11,6 @@ import typings.typeorm.relationJoinColumnBuilderMod.RelationJoinColumnBuilder
 import typings.typeorm.tableMetadataArgsMod.TableMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityMetadataBuilderMod {

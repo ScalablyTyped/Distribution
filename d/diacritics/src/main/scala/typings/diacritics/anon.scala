@@ -2,17 +2,15 @@ package typings.diacritics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Base extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var chars: String = js.native
+    var chars: String
   }
   object Base {
     

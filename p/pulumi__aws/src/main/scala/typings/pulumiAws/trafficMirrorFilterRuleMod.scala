@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trafficMirrorFilterRuleMod {
@@ -80,6 +79,10 @@ object trafficMirrorFilterRuleMod {
   /* static members */
   object TrafficMirrorFilterRule {
     
+    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TrafficMirrorFilterRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -89,82 +92,76 @@ object trafficMirrorFilterRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TrafficMirrorFilterRule = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TrafficMirrorFilterRule = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState): TrafficMirrorFilterRule = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState, opts: CustomResourceOptions): TrafficMirrorFilterRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TrafficMirrorFilterRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilterRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TrafficMirrorFilterRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilterRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState): TrafficMirrorFilterRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilterRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorFilterRuleState, opts: CustomResourceOptions): TrafficMirrorFilterRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorFilterRule]
     
     /**
       * Returns true if the given object is an instance of TrafficMirrorFilterRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorFilterRule", "TrafficMirrorFilterRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilterRule.TrafficMirrorFilterRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilterRule.TrafficMirrorFilterRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorFilterRule.TrafficMirrorFilterRule */ Boolean]
   }
   
-  @js.native
   trait TrafficMirrorFilterRuleArgs extends StObject {
     
     /**
       * A description of the traffic mirror filter rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The destination CIDR block to assign to the Traffic Mirror rule.
       */
-    val destinationCidrBlock: Input[String] = js.native
+    val destinationCidrBlock: Input[String]
     
     /**
       * The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
       */
     val destinationPortRange: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleDestinationPortRange]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
       */
-    val protocol: js.UndefOr[Input[Double]] = js.native
+    val protocol: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
       */
-    val ruleAction: Input[String] = js.native
+    val ruleAction: Input[String]
     
     /**
       * The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
       */
-    val ruleNumber: Input[Double] = js.native
+    val ruleNumber: Input[Double]
     
     /**
       * The source CIDR block to assign to the Traffic Mirror rule.
       */
-    val sourceCidrBlock: Input[String] = js.native
+    val sourceCidrBlock: Input[String]
     
     /**
       * The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
       */
-    val sourcePortRange: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleSourcePortRange]] = js.native
+    val sourcePortRange: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleSourcePortRange]] = js.undefined
     
     /**
       * The direction of traffic to be captured. Valid values are `ingress` and `egress`
       */
-    val trafficDirection: Input[String] = js.native
+    val trafficDirection: Input[String]
     
     /**
       * ID of the traffic mirror filter to which this rule should be added
       */
-    val trafficMirrorFilterId: Input[String] = js.native
+    val trafficMirrorFilterId: Input[String]
   }
   object TrafficMirrorFilterRuleArgs {
     
@@ -228,60 +225,59 @@ object trafficMirrorFilterRuleMod {
     }
   }
   
-  @js.native
   trait TrafficMirrorFilterRuleState extends StObject {
     
     /**
       * A description of the traffic mirror filter rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The destination CIDR block to assign to the Traffic Mirror rule.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The destination port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
       */
     val destinationPortRange: js.UndefOr[
         Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleDestinationPortRange]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The protocol number, for example 17 (UDP), to assign to the Traffic Mirror rule. For information about the protocol value, see [Protocol Numbers](https://www.iana.org/assignments/protocol-numbers/protocol-numbers.xhtml) on the Internet Assigned Numbers Authority (IANA) website.
       */
-    val protocol: js.UndefOr[Input[Double]] = js.native
+    val protocol: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The action to take (accept | reject) on the filtered traffic. Valid values are `accept` and `reject`
       */
-    val ruleAction: js.UndefOr[Input[String]] = js.native
+    val ruleAction: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of the Traffic Mirror rule. This number must be unique for each Traffic Mirror rule in a given direction. The rules are processed in ascending order by rule number.
       */
-    val ruleNumber: js.UndefOr[Input[Double]] = js.native
+    val ruleNumber: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The source CIDR block to assign to the Traffic Mirror rule.
       */
-    val sourceCidrBlock: js.UndefOr[Input[String]] = js.native
+    val sourceCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The source port range. Supported only when the protocol is set to TCP(6) or UDP(17). See Traffic mirror port range documented below
       */
-    val sourcePortRange: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleSourcePortRange]] = js.native
+    val sourcePortRange: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.TrafficMirrorFilterRuleSourcePortRange]] = js.undefined
     
     /**
       * The direction of traffic to be captured. Valid values are `ingress` and `egress`
       */
-    val trafficDirection: js.UndefOr[Input[String]] = js.native
+    val trafficDirection: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the traffic mirror filter to which this rule should be added
       */
-    val trafficMirrorFilterId: js.UndefOr[Input[String]] = js.native
+    val trafficMirrorFilterId: js.UndefOr[Input[String]] = js.undefined
   }
   object TrafficMirrorFilterRuleState {
     

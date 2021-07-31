@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait WidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends St
     *   - String values are passed as raw CSS values.
     *   - And arrays are converted to responsive width styles.
     */
-  var width: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var width: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object WidthProps {
   
@@ -27,7 +25,7 @@ object WidthProps {
   }
   
   @scala.inline
-  implicit class WidthPropsMutableBuilder[Self <: WidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (WidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class WidthPropsMutableBuilder[Self <: WidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (WidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])

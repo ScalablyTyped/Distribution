@@ -2,64 +2,62 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `listFeedback` operation. */
-@js.native
 trait ListFeedbackParams extends StObject {
   
   /** An optional string in the format `YYYY-MM-DD` that filters the output to include only feedback that was added after the specified date. */
-  var after: js.UndefOr[String] = js.native
+  var after: js.UndefOr[String] = js.undefined
   
   /** An optional string in the format `YYYY-MM-DD` that filters the output to include only feedback that was added before the specified date. */
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
   
   /** An optional string in the form of a comma-separated list of categories. If this is specified, the service filters the output to include only feedback that has at least one category from the list added. */
-  var category_added: js.UndefOr[String] = js.native
+  var category_added: js.UndefOr[String] = js.undefined
   
   /** An optional string in the form of a comma-separated list of categories. If this is specified, the service filters the output to include only feedback that has at least one category from the list unchanged. */
-  var category_not_changed: js.UndefOr[String] = js.native
+  var category_not_changed: js.UndefOr[String] = js.undefined
   
   /** An optional string in the form of a comma-separated list of categories. If this is specified, the service filters the output to include only feedback that has at least one category from the list removed. */
-  var category_removed: js.UndefOr[String] = js.native
+  var category_removed: js.UndefOr[String] = js.undefined
   
   /** An optional string that returns the set of documents after the previous set. Use this parameter with the `page_limit` parameter. */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /** An optional string that filters the output to include only feedback from the document with the specified `document_title`. */
-  var document_title: js.UndefOr[String] = js.native
+  var document_title: js.UndefOr[String] = js.undefined
   
   /** An optional string that filters the output to include only feedback with the specified feedback type. The only permitted value is `element_classification`. */
-  var feedback_type: js.UndefOr[String] = js.native
+  var feedback_type: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** An optional boolean value. If specified as `true`, the `pagination` object in the output includes a value called `total` that gives the total count of feedback created. */
-  var include_total: js.UndefOr[Boolean] = js.native
+  var include_total: js.UndefOr[Boolean] = js.undefined
   
   /** An optional string that filters the output to include only feedback with the specified `model_id`. The only permitted value is `contracts`. */
-  var model_id: js.UndefOr[String] = js.native
+  var model_id: js.UndefOr[String] = js.undefined
   
   /** An optional string that filters the output to include only feedback with the specified `model_version`. */
-  var model_version: js.UndefOr[String] = js.native
+  var model_version: js.UndefOr[String] = js.undefined
   
   /** An optional integer specifying the number of documents that you want the service to return. */
-  var page_limit: js.UndefOr[Double] = js.native
+  var page_limit: js.UndefOr[Double] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** An optional comma-separated list of fields in the document to sort on. You can optionally specify the sort direction by prefixing the value of the field with `-` for descending order or `+` for ascending order (the default). Currently permitted sorting fields are `created`, `user_id`, and `document_title`. */
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
   /** An optional string of comma-separated `nature`:`party` pairs. If this is specified, the service filters the output to include only feedback that has at least one `nature`:`party` pair from the list removed. */
-  var type_added: js.UndefOr[String] = js.native
+  var type_added: js.UndefOr[String] = js.undefined
   
   /** An optional string of comma-separated `nature`:`party` pairs. If this is specified, the service filters the output to include only feedback that has at least one `nature`:`party` pair from the list unchanged. */
-  var type_not_changed: js.UndefOr[String] = js.native
+  var type_not_changed: js.UndefOr[String] = js.undefined
   
   /** An optional string of comma-separated `nature`:`party` pairs. If this is specified, the service filters the output to include only feedback that has at least one `nature`:`party` pair from the list removed. */
-  var type_removed: js.UndefOr[String] = js.native
+  var type_removed: js.UndefOr[String] = js.undefined
 }
 object ListFeedbackParams {
   

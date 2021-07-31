@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Managedconfigurationssettings")
@@ -32,7 +31,7 @@ class ResourceManagedconfigurationssettings protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaManagedConfigurationsSettingsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(params: ParamsResourceManagedconfigurationssettingsList): GaxiosPromise[SchemaManagedConfigurationsSettingsListResponse] = js.native
   def list(
     params: ParamsResourceManagedconfigurationssettingsList,

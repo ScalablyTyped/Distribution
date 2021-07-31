@@ -10,9 +10,9 @@ OpenTelemetry Core provides default and no-op implementations of the OpenTelemet
 | ------------------ | :-------------: |
 | Full name          | @opentelemetry/core |
 | Keywords           | opentelemetry, nodejs, browser, tracing, profiling, metrics, stats |
-| # releases         | 30 |
-| # dependents       | 72 |
-| # downloads        | 888585 |
+| # releases         | 51 |
+| # dependents       | 99 |
+| # downloads        | 6591365 |
 | # stars            | 0 |
 
 ## Links

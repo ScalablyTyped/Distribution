@@ -2,16 +2,14 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of the license configuration.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
 }
 object ListTagsForResourceRequest {
   

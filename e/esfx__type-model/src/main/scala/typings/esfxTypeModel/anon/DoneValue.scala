@@ -3,23 +3,21 @@ package typings.esfxTypeModel.anon
 import typings.esfxTypeModel.esfxTypeModelBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoneValue extends StObject {
   
-  var done: `true` = js.native
+  var done: `true`
   
   var value: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: infer U */ js.Any
-  ] = js.native
+  ] = js.undefined
 }
 object DoneValue {
   
   @scala.inline
-  def apply(done: `true`): DoneValue = {
-    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any])
+  def apply(): DoneValue = {
+    val __obj = js.Dynamic.literal(done = true)
     __obj.asInstanceOf[DoneValue]
   }
   

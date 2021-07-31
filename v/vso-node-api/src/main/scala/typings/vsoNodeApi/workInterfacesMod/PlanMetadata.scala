@@ -4,31 +4,29 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanMetadata extends StObject {
   
   /**
     * Identity of the creator of the plan
     */
-  var createdByIdentity: IdentityRef = js.native
+  var createdByIdentity: IdentityRef
   
   /**
     * Description of plan
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Last modified date of the plan
     */
-  var modifiedDate: Date = js.native
+  var modifiedDate: Date
   
   /**
     * Bit flag indicating set of permissions a user has to the plan.
     */
-  var userPermissions: PlanUserPermissions = js.native
+  var userPermissions: PlanUserPermissions
 }
 object PlanMetadata {
   

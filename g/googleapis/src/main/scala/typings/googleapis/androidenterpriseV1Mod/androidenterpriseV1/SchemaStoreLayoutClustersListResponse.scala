@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The store page resources for the enterprise.
   */
-@js.native
 trait SchemaStoreLayoutClustersListResponse extends StObject {
   
   /**
     * A store cluster of an enterprise.
     */
-  var cluster: js.UndefOr[js.Array[SchemaStoreCluster]] = js.native
+  var cluster: js.UndefOr[js.Array[SchemaStoreCluster]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#storeLayoutClustersListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaStoreLayoutClustersListResponse {
   

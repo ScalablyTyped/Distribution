@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolEmailConfiguration extends StObject {
   
   /**
     * The email delivery method to use. `COGNITO_DEFAULT` for the default email functionality built into Cognito or `DEVELOPER` to use your Amazon SES configuration.
     */
-  var emailSendingAccount: js.UndefOr[Input[String]] = js.native
+  var emailSendingAccount: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Sender’s email address or sender’s display name with their email address (e.g. `john@example.com`, `John Smith <john@example.com>` or `\"John Smith Ph.D.\" <john@example.com>`). Escaped double quotes are required around display names that contain certain characters as specified in [RFC 5322](https://tools.ietf.org/html/rfc5322).
     */
-  var fromEmailAddress: js.UndefOr[Input[String]] = js.native
+  var fromEmailAddress: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The REPLY-TO email address.
     */
-  var replyToEmailAddress: js.UndefOr[Input[String]] = js.native
+  var replyToEmailAddress: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the SES verified email identity to to use. Required if `emailSendingAccount` is set to `DEVELOPER`.
     */
-  var sourceArn: js.UndefOr[Input[String]] = js.native
+  var sourceArn: js.UndefOr[Input[String]] = js.undefined
 }
 object UserPoolEmailConfiguration {
   

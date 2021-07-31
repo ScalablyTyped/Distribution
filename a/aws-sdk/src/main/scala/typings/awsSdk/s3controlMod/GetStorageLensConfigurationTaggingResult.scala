@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageLensConfigurationTaggingResult extends StObject {
   
   /**
     * The tags of S3 Storage Lens configuration requested.
     */
-  var Tags: js.UndefOr[StorageLensTags] = js.native
+  var Tags: js.UndefOr[StorageLensTags] = js.undefined
 }
 object GetStorageLensConfigurationTaggingResult {
   

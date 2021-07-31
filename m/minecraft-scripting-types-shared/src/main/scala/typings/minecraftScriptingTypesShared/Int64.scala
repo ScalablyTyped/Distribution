@@ -2,15 +2,13 @@ package typings.minecraftScriptingTypesShared
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Int64 extends StObject {
   
-  var `64bit_high`: Double = js.native
+  var `64bit_high`: Double
   
-  var `64bit_low`: Double = js.native
+  var `64bit_low`: Double
 }
 object Int64 {
   

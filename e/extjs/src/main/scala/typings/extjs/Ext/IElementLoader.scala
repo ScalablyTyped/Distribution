@@ -3,70 +3,70 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IElementLoader extends IObservable {
+trait IElementLoader
+  extends StObject
+     with IObservable {
   
   /** [Method] Aborts the active load request */
-  var abort: js.UndefOr[js.Function0[Unit]] = js.native
+  var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Object) */
-  var ajaxOptions: js.UndefOr[js.Any] = js.native
+  var ajaxOptions: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var autoLoad: js.UndefOr[js.Any] = js.native
+  var autoLoad: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var baseParams: js.UndefOr[js.Any] = js.native
+  var baseParams: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var callback: js.UndefOr[js.Any] = js.native
+  var callback: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Destroys the loader  */
-  var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+  var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var failure: js.UndefOr[js.Any] = js.native
+  var failure: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the target of this loader
     * @returns Ext.Component The target or null if none exists.
     */
-  var getTarget: js.UndefOr[js.Function0[IComponent]] = js.native
+  var getTarget: js.UndefOr[js.Function0[IComponent]] = js.undefined
   
   /** [Method] Checks whether the loader is automatically refreshing
     * @returns Boolean True if the loader is automatically refreshing
     */
-  var isAutoRefreshing: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isAutoRefreshing: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isLoader: js.UndefOr[Boolean] = js.native
+  var isLoader: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Loads new data from the server
     * @param options Object The options for the request. They can be any configuration option that can be specified for the class, with the exception of the target option. Note that any options passed to the method will override any class defaults.
     */
-  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+  var load: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean/String) */
-  var loadMask: js.UndefOr[js.Any] = js.native
+  var loadMask: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var renderer: js.UndefOr[js.Any] = js.native
+  var renderer: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var scope: js.UndefOr[js.Any] = js.native
+  var scope: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var scripts: js.UndefOr[Boolean] = js.native
+  var scripts: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets an Ext Element as the target of this loader
     * @param target String/HTMLElement/Ext.Element The element or its ID.
     */
-  var setTarget: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTarget: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Automatically refreshes the content over a specified period
     * @param interval Number The interval to refresh in ms.
@@ -74,19 +74,19 @@ trait IElementLoader extends IObservable {
     */
   var startAutoRefresh: js.UndefOr[
     js.Function2[/* interval */ js.UndefOr[Double], /* options */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Clears any auto refresh  */
-  var stopAutoRefresh: js.UndefOr[js.Function0[Unit]] = js.native
+  var stopAutoRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var success: js.UndefOr[js.Any] = js.native
+  var success: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (HTMLElement/Ext.Element/String) */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var url: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object IElementLoader {
   

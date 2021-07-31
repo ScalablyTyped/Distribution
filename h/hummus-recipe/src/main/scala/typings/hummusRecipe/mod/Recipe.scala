@@ -2,7 +2,6 @@ package typings.hummusRecipe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,9 +22,9 @@ trait Recipe extends StObject {
   def createPage(pageWidth: Double, pageHeight: Double): Recipe = js.native
   
   def custom(): Recipe = js.native
-  def custom(key: js.UndefOr[scala.Nothing], value: String): Recipe = js.native
   def custom(key: String): Recipe = js.native
   def custom(key: String, value: String): Recipe = js.native
+  def custom(key: Unit, value: String): Recipe = js.native
   
   def editPage(pageNumber: Double): Recipe = js.native
   

@@ -8,84 +8,82 @@ import typings.googleapis.anon.`11`
 import typings.googleapis.anon.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A bucket.
   */
-@js.native
 trait SchemaBucket extends StObject {
   
   /**
     * Access controls on the bucket.
     */
-  var acl: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.native
+  var acl: js.UndefOr[js.Array[SchemaBucketAccessControl]] = js.undefined
   
   /**
     * The bucket&#39;s Cross-Origin Resource Sharing (CORS) configuration.
     */
-  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.native
+  var cors: js.UndefOr[js.Array[MaxAgeSeconds]] = js.undefined
   
   /**
     * Default access controls to apply to new objects when no ACL is provided.
     */
-  var defaultObjectAcl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.native
+  var defaultObjectAcl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.undefined
   
   /**
     * HTTP 1.1 Entity tag for the bucket.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the bucket.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For buckets, this is always storage#bucket.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket&#39;s lifecycle configuration. See object lifecycle management
     * for more information.
     */
-  var lifecycle: js.UndefOr[`11`] = js.native
+  var lifecycle: js.UndefOr[`11`] = js.undefined
   
   /**
     * The location of the bucket. Object data for objects in the bucket resides
     * in physical storage within this region. Typical values are US and EU.
     * Defaults to US. See the developer&#39;s guide for the authoritative list.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket&#39;s logging configuration, which defines the destination
     * bucket and optional name prefix for the current bucket&#39;s logs.
     */
-  var logging: js.UndefOr[LogBucket] = js.native
+  var logging: js.UndefOr[LogBucket] = js.undefined
   
   /**
     * The metadata generation of this bucket.
     */
-  var metageneration: js.UndefOr[String] = js.native
+  var metageneration: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the bucket.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the bucket. This is always the project team&#39;s owner
     * group.
     */
-  var owner: js.UndefOr[Entity] = js.native
+  var owner: js.UndefOr[Entity] = js.undefined
   
   /**
     * The URI of this bucket.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket&#39;s storage class. This defines how objects in the bucket
@@ -93,22 +91,22 @@ trait SchemaBucket extends StObject {
     * are STANDARD and DURABLE_REDUCED_AVAILABILITY. Defaults to STANDARD. See
     * the developer&#39;s guide for the authoritative list.
     */
-  var storageClass: js.UndefOr[String] = js.native
+  var storageClass: js.UndefOr[String] = js.undefined
   
   /**
     * Creation time of the bucket in RFC 3339 format.
     */
-  var timeCreated: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.undefined
   
   /**
     * The bucket&#39;s versioning configuration.
     */
-  var versioning: js.UndefOr[`9`] = js.native
+  var versioning: js.UndefOr[`9`] = js.undefined
   
   /**
     * The bucket&#39;s website configuration.
     */
-  var website: js.UndefOr[MainPageSuffix] = js.native
+  var website: js.UndefOr[MainPageSuffix] = js.undefined
 }
 object SchemaBucket {
   

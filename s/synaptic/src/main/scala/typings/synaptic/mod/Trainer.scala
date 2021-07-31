@@ -11,7 +11,6 @@ import typings.synaptic.mod.Trainer.TrainingSet
 import typings.synaptic.mod.Trainer.XOROptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("synaptic", "Trainer")
@@ -87,28 +86,27 @@ object Trainer {
   
   type CostFunction = js.Function2[/* targetValues */ js.Array[Double], /* outputValues */ js.Array[Double], Double]
   
-  @js.native
   trait DSROptions extends StObject {
     
-    var cost: js.UndefOr[CostFunction] = js.native
+    var cost: js.UndefOr[CostFunction] = js.undefined
     
-    var distractors: js.UndefOr[js.Array[Double]] = js.native
+    var distractors: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[Double] = js.native
+    var log: js.UndefOr[Double] = js.undefined
     
-    var prompts: js.UndefOr[js.Array[Double]] = js.native
+    var prompts: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
     
-    var schedule: js.UndefOr[TrainingScheduleOptions] = js.native
+    var schedule: js.UndefOr[TrainingScheduleOptions] = js.undefined
     
-    var success: js.UndefOr[Double] = js.native
+    var success: js.UndefOr[Double] = js.undefined
     
-    var targets: js.UndefOr[js.Array[Double]] = js.native
+    var targets: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object DSROptions {
     
@@ -192,16 +190,15 @@ object Trainer {
     }
   }
   
-  @js.native
   trait DSRTrainingResult extends StObject {
     
-    var error: Double = js.native
+    var error: Double
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var success: js.Any = js.native
+    var success: js.Any
     
-    var time: Double = js.native
+    var time: Double
   }
   object DSRTrainingResult {
     
@@ -228,18 +225,17 @@ object Trainer {
     }
   }
   
-  @js.native
   trait ERGOptions extends StObject {
     
-    var cost: js.UndefOr[CostFunction] = js.native
+    var cost: js.UndefOr[CostFunction] = js.undefined
     
-    var error: js.UndefOr[Double] = js.native
+    var error: js.UndefOr[Double] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[Double] = js.native
+    var log: js.UndefOr[Double] = js.undefined
     
-    var rate: js.UndefOr[Double] = js.native
+    var rate: js.UndefOr[Double] = js.undefined
   }
   object ERGOptions {
     
@@ -284,18 +280,17 @@ object Trainer {
     }
   }
   
-  @js.native
   trait ERGTrainingResult extends StObject {
     
-    var error: Double = js.native
+    var error: Double
     
-    var generate: js.Any = js.native
+    var generate: js.Any
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var test: js.Any = js.native
+    var test: js.Any
     
-    var time: Double = js.native
+    var time: Double
   }
   object ERGTrainingResult {
     
@@ -325,45 +320,44 @@ object Trainer {
     }
   }
   
-  @js.native
   trait TrainingOptions extends StObject {
     
     /**
       * You can set what cost function to use for the training, there are three built-in cost functions (Trainer.cost.CROSS_ENTROPY, Trainer.cost.MSE and Trainer.cost.BINARY) to choose from cross-entropy or mean squared error. You can also use you own cost function(targetValues, outputValues).
       */
-    var cost: js.UndefOr[CostFunction] = js.native
+    var cost: js.UndefOr[CostFunction] = js.undefined
     
     /**
       * Minimum error.
       */
-    var error: js.UndefOr[Double] = js.native
+    var error: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of iterations.
       */
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
     /**
       * This commands the trainer to console.log the error and iterations every X number of iterations.
       */
-    var log: js.UndefOr[Double] = js.native
+    var log: js.UndefOr[Double] = js.undefined
     
     /**
       * Learning rate to train the network. It can be a static rate (just a number), dynamic (an array of numbers, which will transition from one to the next one according to the number of iterations) or a callback function: (iterations, error) => rate.
       */
     var rate: js.UndefOr[
         Double | js.Array[Double] | (js.Function2[/* iterations */ Double, /* error */ Double, Double])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * You can create custom scheduled tasks that will be executed every X number of iterations. It can be used to create custom logs, or to compute analytics based on the data passed to the task (data object includes error, iterations and the current learning rate). If the returned value of the task is true, the training will be aborted. This can be used to create special conditions to stop the training (i.e. if the error starts to increase).
       */
-    var schedule: js.UndefOr[TrainingScheduleOptions] = js.native
+    var schedule: js.UndefOr[TrainingScheduleOptions] = js.undefined
     
     /**
       * If true, the training set is shuffled after every iteration, this is useful for training data sequences which order is not meaningful to networks with context memory, like LSTM's.
       */
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
   }
   object TrainingOptions {
     
@@ -428,12 +422,11 @@ object Trainer {
     }
   }
   
-  @js.native
   trait TrainingPair extends StObject {
     
-    var input: js.Array[Double] = js.native
+    var input: js.Array[Double]
     
-    var output: js.Array[Double] = js.native
+    var output: js.Array[Double]
   }
   object TrainingPair {
     
@@ -460,14 +453,13 @@ object Trainer {
     }
   }
   
-  @js.native
   trait TrainingResult extends StObject {
     
-    var error: Double = js.native
+    var error: Double
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var time: Double = js.native
+    var time: Double
   }
   object TrainingResult {
     
@@ -491,17 +483,16 @@ object Trainer {
     }
   }
   
-  @js.native
   trait TrainingScheduleDoData extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var iterations: js.Any = js.native
+    var iterations: js.Any
     
     /**
       * The current learning rate.
       */
-    var rate: js.Any = js.native
+    var rate: js.Any
   }
   object TrainingScheduleDoData {
     
@@ -525,12 +516,11 @@ object Trainer {
     }
   }
   
-  @js.native
   trait TrainingScheduleOptions extends StObject {
     
-    def `do`(data: TrainingScheduleDoData): Boolean | Unit = js.native
+    def `do`(data: TrainingScheduleDoData): Boolean | Unit
     
-    var every: Double = js.native
+    var every: Double
   }
   object TrainingScheduleOptions {
     
@@ -554,16 +544,15 @@ object Trainer {
   
   type TrainingSet = js.Array[TrainingPair]
   
-  @js.native
   trait XOROptions extends StObject {
     
-    var cost: js.UndefOr[CostFunction] = js.native
+    var cost: js.UndefOr[CostFunction] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[Double] = js.native
+    var log: js.UndefOr[Double] = js.undefined
     
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
   }
   object XOROptions {
     

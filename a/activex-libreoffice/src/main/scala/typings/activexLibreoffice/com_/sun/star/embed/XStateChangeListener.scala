@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events when an embedded object changes it's state. */
-@js.native
-trait XStateChangeListener extends XEventListener {
+trait XStateChangeListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called just before the object changes state.
@@ -22,7 +22,7 @@ trait XStateChangeListener extends XEventListener {
     * @param nNewState specifies the new state of the object
     * @throws com::sun::star::embed::WrongStateException the state change is unexpected by listener
     */
-  def changingState(aEvent: EventObject, nOldState: Double, nNewState: Double): Unit = js.native
+  def changingState(aEvent: EventObject, nOldState: Double, nNewState: Double): Unit
   
   /**
     * is called after the object has changed state.
@@ -30,7 +30,7 @@ trait XStateChangeListener extends XEventListener {
     * @param nOldState specifies the old state of the object
     * @param nNewState specifies the new state of the object
     */
-  def stateChanged(aEvent: EventObject, nOldState: Double, nNewState: Double): Unit = js.native
+  def stateChanged(aEvent: EventObject, nOldState: Double, nNewState: Double): Unit
 }
 object XStateChangeListener {
   

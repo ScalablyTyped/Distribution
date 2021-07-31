@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumeSessionRequest extends StObject {
   
   /**
     * The ID of the disconnected session to resume.
     */
-  var SessionId: typings.awsSdk.ssmMod.SessionId = js.native
+  var SessionId: typings.awsSdk.ssmMod.SessionId
 }
 object ResumeSessionRequest {
   

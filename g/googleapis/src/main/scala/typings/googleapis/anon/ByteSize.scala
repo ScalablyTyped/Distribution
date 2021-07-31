@@ -2,25 +2,23 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteSize extends StObject {
   
-  var byteSize: js.UndefOr[Double] = js.native
+  var byteSize: js.UndefOr[Double] = js.undefined
   
-  var contextLink: js.UndefOr[String] = js.native
+  var contextLink: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var thumbnailHeight: js.UndefOr[Double] = js.native
+  var thumbnailHeight: js.UndefOr[Double] = js.undefined
   
-  var thumbnailLink: js.UndefOr[String] = js.native
+  var thumbnailLink: js.UndefOr[String] = js.undefined
   
-  var thumbnailWidth: js.UndefOr[Double] = js.native
+  var thumbnailWidth: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ByteSize {
   

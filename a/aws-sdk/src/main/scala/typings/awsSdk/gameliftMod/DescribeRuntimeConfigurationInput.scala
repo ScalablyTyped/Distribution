@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRuntimeConfigurationInput extends StObject {
   
   /**
     * A unique identifier for a fleet to get the runtime configuration for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
 }
 object DescribeRuntimeConfigurationInput {
   

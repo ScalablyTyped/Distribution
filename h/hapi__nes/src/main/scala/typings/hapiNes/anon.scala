@@ -6,21 +6,19 @@ import typings.hapiNes.clientMod.Client
 import typings.hapiNes.clientMod.Client.ClientOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var explanation: String = js.native
+    var explanation: String
     
-    var reason: String = js.native
+    var reason: String
     
-    var wasClean: Boolean = js.native
+    var wasClean: Boolean
   }
   object Code {
     
@@ -49,6 +47,7 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* url */ String, Client]
+    extends StObject
+       with Instantiable1[/* url */ String, Client]
        with Instantiable2[/* url */ String, /* options */ ClientOptions, Client]
 }

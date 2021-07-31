@@ -4,27 +4,25 @@ import typings.c3.anon.HeightNumber
 import typings.c3.anon.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubchartOptions extends StObject {
   
-  var axis: js.UndefOr[`2`] = js.native
+  var axis: js.UndefOr[`2`] = js.undefined
   
   /**
     * Set callback for brush event.
     * Specified function receives the current zoomed x domain.
     */
-  var onbrush: js.UndefOr[js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]] = js.native
+  var onbrush: js.UndefOr[js.ThisFunction1[/* this */ ChartAPI, /* domain */ Domain, Unit]] = js.undefined
   
   /**
     * Show sub chart on the bottom of the chart.
     * Defaults to `false`.
     */
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[HeightNumber] = js.native
+  var size: js.UndefOr[HeightNumber] = js.undefined
 }
 object SubchartOptions {
   

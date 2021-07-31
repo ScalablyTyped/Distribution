@@ -2,23 +2,21 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
-  var bio: String = js.native
+  var bio: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var pro_expiration: js.Any = js.native
+  var pro_expiration: js.Any
   
-  var reputation: Double = js.native
+  var reputation: Double
   
-  var url: String = js.native
+  var url: String
 }
 object Account {
   

@@ -2,52 +2,45 @@ package typings.rcEasyui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeHelper {
   
-  @JSImport("rc-easyui", "treeHelper.adjustCheck")
+  @JSImport("rc-easyui", "treeHelper")
   @js.native
-  def adjustCheck(e: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-easyui", "treeHelper.calcNodeState")
-  @js.native
-  def calcNodeState(e: js.Any): js.Any = js.native
+  @scala.inline
+  def adjustCheck(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("adjustCheck")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def calcNodeState(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("calcNodeState")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("rc-easyui", "treeHelper.cascadeCheck")
   @js.native
   val cascadeCheck: Boolean = js.native
   
-  @JSImport("rc-easyui", "treeHelper.checkNode")
-  @js.native
-  def checkNode(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def checkNode(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkNode")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.findNode")
-  @js.native
-  def findNode(e: js.Any, t: js.Any, n: js.Any): js.Any = js.native
+  @scala.inline
+  def findNode(e: js.Any, t: js.Any, n: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("rc-easyui", "treeHelper.forNodes")
-  @js.native
-  def forNodes(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def forNodes(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forNodes")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.setCheckState")
-  @js.native
-  def setCheckState(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def setCheckState(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCheckState")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.setChildCheckbox")
-  @js.native
-  def setChildCheckbox(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def setChildCheckbox(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setChildCheckbox")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.setParentCheckbox")
-  @js.native
-  def setParentCheckbox(e: js.Any): Unit = js.native
+  @scala.inline
+  def setParentCheckbox(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setParentCheckbox")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.uncheckAllNodes")
-  @js.native
-  def uncheckAllNodes(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def uncheckAllNodes(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uncheckAllNodes")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rc-easyui", "treeHelper.uncheckNode")
-  @js.native
-  def uncheckNode(e: js.Any, t: js.Any): Unit = js.native
+  @scala.inline
+  def uncheckNode(e: js.Any, t: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("uncheckNode")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

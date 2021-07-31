@@ -2,19 +2,17 @@ package typings.nextServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: js.UndefOr[typings.std.Error | Null] = js.native
+  var error: js.UndefOr[typings.std.Error | Null] = js.undefined
   
-  var isLoading: js.UndefOr[Boolean] = js.native
+  var isLoading: js.UndefOr[Boolean] = js.undefined
   
-  var pastDelay: js.UndefOr[Boolean] = js.native
+  var pastDelay: js.UndefOr[Boolean] = js.undefined
   
-  var timedOut: js.UndefOr[Boolean] = js.native
+  var timedOut: js.UndefOr[Boolean] = js.undefined
 }
 object Error {
   

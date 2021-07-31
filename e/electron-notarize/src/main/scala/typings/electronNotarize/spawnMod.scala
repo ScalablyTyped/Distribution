@@ -3,36 +3,34 @@ package typings.electronNotarize
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spawnMod {
   
-  @JSImport("electron-notarize/lib/spawn", "spawn")
+  @JSImport("electron-notarize/lib/spawn", JSImport.Namespace)
   @js.native
-  def spawn(cmd: String): js.Promise[SpawnResult] = js.native
-  @JSImport("electron-notarize/lib/spawn", "spawn")
-  @js.native
-  def spawn(cmd: String, args: js.UndefOr[scala.Nothing], opts: SpawnOptions): js.Promise[SpawnResult] = js.native
-  @JSImport("electron-notarize/lib/spawn", "spawn")
-  @js.native
-  def spawn(cmd: String, args: js.Array[String]): js.Promise[SpawnResult] = js.native
-  @JSImport("electron-notarize/lib/spawn", "spawn")
-  @js.native
-  def spawn(cmd: String, args: js.Array[String], opts: SpawnOptions): js.Promise[SpawnResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def spawn(cmd: String): js.Promise[SpawnResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SpawnResult]]
+  @scala.inline
+  def spawn(cmd: String, args: js.Array[String]): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  @scala.inline
+  def spawn(cmd: String, args: js.Array[String], opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  @scala.inline
+  def spawn(cmd: String, args: Unit, opts: SpawnOptions): js.Promise[SpawnResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(cmd.asInstanceOf[js.Any], args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SpawnResult]]
+  
   trait SpawnResult extends StObject {
     
-    var code: Double | Null = js.native
+    var code: Double | Null
     
-    var output: String = js.native
+    var output: String
   }
   object SpawnResult {
     
     @scala.inline
     def apply(output: String): SpawnResult = {
-      val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any], code = null)
       __obj.asInstanceOf[SpawnResult]
     }
     

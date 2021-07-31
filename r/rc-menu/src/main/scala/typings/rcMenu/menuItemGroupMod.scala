@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemGroupMod {
@@ -52,28 +51,27 @@ object menuItemGroupMod {
     def renderInnerMenuItem(item: ReactElement): ReactElement = js.native
   }
   
-  @js.native
   trait MenuItemGroupProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var onClick: js.UndefOr[MenuClickEventHandler] = js.native
+    var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
     
     var renderMenuItem: js.UndefOr[
         js.Function3[/* item */ ReactElement, /* index */ Double, /* key */ String, ReactElement]
-      ] = js.native
+      ] = js.undefined
     
-    var rootPrefixCls: js.UndefOr[String] = js.native
+    var rootPrefixCls: js.UndefOr[String] = js.undefined
     
-    var subMenuKey: js.UndefOr[String] = js.native
+    var subMenuKey: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object MenuItemGroupProps {
     

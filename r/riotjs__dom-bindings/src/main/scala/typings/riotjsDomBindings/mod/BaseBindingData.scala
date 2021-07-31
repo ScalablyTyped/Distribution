@@ -2,19 +2,17 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseBindingData extends StObject {
   
-  var evaluate: js.UndefOr[js.Function1[/* scope */ js.Any, _]] = js.native
+  var evaluate: js.UndefOr[js.Function1[/* scope */ js.Any, js.Any]] = js.undefined
   
-  var redundantAttribute: js.UndefOr[String] = js.native
+  var redundantAttribute: js.UndefOr[String] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[BindingType] = js.native
+  var `type`: js.UndefOr[BindingType] = js.undefined
 }
 object BaseBindingData {
   
@@ -28,7 +26,7 @@ object BaseBindingData {
   implicit class BaseBindingDataMutableBuilder[Self <: BaseBindingData] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEvaluate(value: /* scope */ js.Any => _): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
+    def setEvaluate(value: /* scope */ js.Any => js.Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     
     @scala.inline
     def setEvaluateUndefined: Self = StObject.set(x, "evaluate", js.undefined)

@@ -4,7 +4,6 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,7 +32,6 @@ object utils {
     * @class
     * @memberof PIXI.utils
     */
-  @js.native
   trait CanvasRenderTarget extends StObject {
     
     /**
@@ -41,27 +39,27 @@ object utils {
       *
       * @member {HTMLCanvasElement} PIXI.utils.CanvasRenderTarget#canvas
       */
-    var canvas: HTMLCanvasElement = js.native
+    var canvas: HTMLCanvasElement
     
     /**
       * A CanvasRenderingContext2D object representing a two-dimensional rendering context.
       *
       * @member {CanvasRenderingContext2D} PIXI.utils.CanvasRenderTarget#context
       */
-    var context: CanvasRenderingContext2D = js.native
+    var context: CanvasRenderingContext2D
     
     /**
       * Destroys this canvas.
       *
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * The height of the canvas buffer in pixels.
       *
       * @member {number}
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Resizes the canvas to the specified width and height.
@@ -69,14 +67,14 @@ object utils {
       * @param {number} width - the new width of the canvas
       * @param {number} height - the new height of the canvas
       */
-    def resize(width: Double, height: Double): Unit = js.native
+    def resize(width: Double, height: Double): Unit
     
     /**
       * The width of the canvas buffer in pixels.
       *
       * @member {number}
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CanvasRenderTarget {
     
@@ -120,42 +118,41 @@ object utils {
     * @memberof PIXI.utils
     * @interface DecomposedDataUri
     */
-  @js.native
   trait DecomposedDataUri extends StObject {
     
     /**
       * @memberof PIXI.utils.DecomposedDataUri#
       * @member {string} charset
       */
-    var charset: String = js.native
+    var charset: String
     
     /**
       * The actual data
       * @memberof PIXI.utils.DecomposedDataUri#
       * @member {string} data
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * Data encoding, eg. `base64`
       * @memberof PIXI.utils.DecomposedDataUri#
       * @member {string} encoding
       */
-    var encoding: String = js.native
+    var encoding: String
     
     /**
       * type, eg. `image`
       * @memberof PIXI.utils.DecomposedDataUri#
       * @member {string} mediaType
       */
-    var mediaType: String = js.native
+    var mediaType: String
     
     /**
       * Sub type, eg. `png`
       * @memberof PIXI.utils.DecomposedDataUri#
       * @member {string} subType
       */
-    var subType: String = js.native
+    var subType: String
   }
   object DecomposedDataUri {
     
@@ -247,21 +244,21 @@ object utils {
       */
     //tslint:disable-next-line:ban-types forbidden-types
     def off(event: String): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def off(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def off(event: String, fn: js.Function): this.type = js.native
-    def off(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def off(event: String, fn: js.Function, context: js.Any): this.type = js.native
     def off(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any): this.type = js.native
+    def off(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def off(event: js.Symbol): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def off(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: js.Function): this.type = js.native
-    def off(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def off(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
     def off(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def off(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     
     /**
       * Add a listener for a given event.
@@ -312,20 +309,20 @@ object utils {
       */
     //tslint:disable-next-line:ban-types forbidden-types
     def removeListener(event: String): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def removeListener(event: String, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def removeListener(event: String, fn: js.Function): this.type = js.native
-    def removeListener(event: String, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def removeListener(event: String, fn: js.Function, context: js.Any): this.type = js.native
     def removeListener(event: String, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: js.Any): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: String, fn: Unit, context: Unit, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.UndefOr[scala.Nothing], context: js.Any, once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function): this.type = js.native
-    def removeListener(event: js.Symbol, fn: js.Function, context: js.UndefOr[scala.Nothing], once: Boolean): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function, context: js.Any): this.type = js.native
     def removeListener(event: js.Symbol, fn: js.Function, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: js.Function, context: Unit, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: js.Any): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: js.Any, once: Boolean): this.type = js.native
+    def removeListener(event: js.Symbol, fn: Unit, context: Unit, once: Boolean): this.type = js.native
   }
 }

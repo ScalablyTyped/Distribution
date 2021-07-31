@@ -3,22 +3,21 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ExportSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSpecifier_
-  extends Node
+  extends StObject
+     with Node
      with ModuleSpecifier {
   
-  var exported: Identifier_ = js.native
+  var exported: Identifier_
   
-  var imported: Identifier_ = js.native
+  var imported: Identifier_
   
-  var local: Identifier_ = js.native
+  var local: Identifier_
   
   @JSName("type")
-  var type_ExportSpecifier_ : ExportSpecifier = js.native
+  var type_ExportSpecifier_ : ExportSpecifier
 }
 object ExportSpecifier_ {
   
@@ -29,11 +28,10 @@ object ExportSpecifier_ {
     imported: Identifier_,
     loc: SourceLocation,
     local: Identifier_,
-    start: Double,
-    `type`: ExportSpecifier
+    start: Double
   ): ExportSpecifier_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], imported = imported.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], local = local.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ExportSpecifier")
     __obj.asInstanceOf[ExportSpecifier_]
   }
   

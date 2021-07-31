@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Charts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,62 +14,102 @@ sealed trait ChartType extends StObject
 object ChartType extends StObject {
   
   @js.native
-  sealed trait AREA extends ChartType
+  sealed trait AREA
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait BAR extends ChartType
+  sealed trait BAR
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait BUBBLE extends ChartType
+  sealed trait BUBBLE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait CANDLESTICK extends ChartType
+  sealed trait CANDLESTICK
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait COLUMN extends ChartType
+  sealed trait COLUMN
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait COMBO extends ChartType
+  sealed trait COMBO
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait GAUGE extends ChartType
+  sealed trait GAUGE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait GEO extends ChartType
+  sealed trait GEO
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait HISTOGRAM extends ChartType
+  sealed trait HISTOGRAM
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait LINE extends ChartType
+  sealed trait LINE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait ORG extends ChartType
+  sealed trait ORG
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait PIE extends ChartType
+  sealed trait PIE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait RADAR extends ChartType
+  sealed trait RADAR
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait SCATTER extends ChartType
+  sealed trait SCATTER
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait SPARKLINE extends ChartType
+  sealed trait SPARKLINE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait STEPPED_AREA extends ChartType
+  sealed trait STEPPED_AREA
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait TABLE extends ChartType
+  sealed trait TABLE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait TIMELINE extends ChartType
+  sealed trait TIMELINE
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait TREEMAP extends ChartType
+  sealed trait TREEMAP
+    extends StObject
+       with ChartType
   
   @js.native
-  sealed trait WATERFALL extends ChartType
+  sealed trait WATERFALL
+    extends StObject
+       with ChartType
 }

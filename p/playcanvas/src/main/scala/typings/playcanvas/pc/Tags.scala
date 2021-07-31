@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Note: Tags are used as addition of `pc.Entity` and `pc.Asset` as `tags` field.
   */
 @js.native
-trait Tags extends EventHandler {
+trait Tags
+  extends StObject
+     with EventHandler {
   
   /**
     * Add a tag, duplicates are ignored. Can be array or comma separated arguments for multiple tags.

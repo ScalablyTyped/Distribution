@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `slicerItem.toJSON()`. */
-@js.native
 trait SlicerItemData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SlicerItemData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var hasData: js.UndefOr[Boolean] = js.native
+  var hasData: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -25,7 +23,7 @@ trait SlicerItemData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait SlicerItemData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait SlicerItemData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SlicerItemData {
   

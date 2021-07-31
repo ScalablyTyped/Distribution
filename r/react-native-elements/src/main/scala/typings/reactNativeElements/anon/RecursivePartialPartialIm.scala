@@ -37,132 +37,130 @@ import typings.reactNativeElements.reactNativeElementsStrings.scale
 import typings.reactNativeElements.reactNativeElementsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.ImageProps>> */
-@js.native
 trait RecursivePartialPartialIm extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[_]]]] = js.native
+  var ImageComponent: js.UndefOr[RecursivePartial[js.UndefOr[ComponentType[js.Any]]]] = js.undefined
   
-  var PlaceholderContent: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.native
+  var PlaceholderContent: js.UndefOr[RecursivePartial[js.UndefOr[ReactElement]]] = js.undefined
   
-  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.native
+  var accessibilityActions: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[AccessibilityActionInfo]]]] = js.undefined
   
   var accessibilityComponentType: js.UndefOr[
     RecursivePartial[js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked]]
-  ] = js.native
+  ] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityElementsHidden: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityHint: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var accessibilityLabel: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.native
+  var accessibilityLiveRegion: js.UndefOr[RecursivePartial[js.UndefOr[none | polite | assertive]]] = js.undefined
   
-  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.native
+  var accessibilityRole: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityRole]]] = js.undefined
   
-  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.native
+  var accessibilityState: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityState]]] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.native
+  var accessibilityTraits: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]]]] = js.undefined
   
-  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.native
+  var accessibilityValue: js.UndefOr[RecursivePartial[js.UndefOr[AccessibilityValue]]] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessibilityViewIsModal: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var accessible: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var blurRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var blurRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var borderBottomLeftRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var borderBottomRightRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var borderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var borderRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var borderTopLeftRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var borderTopRightRadius: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var capInsets: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.native
+  var capInsets: js.UndefOr[RecursivePartial[js.UndefOr[Insets]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var defaultSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource | Double]]] = js.native
+  var defaultSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource | Double]]] = js.undefined
   
-  var fadeDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var fadeDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var height: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.native
+  var importantForAccessibility: js.UndefOr[RecursivePartial[js.UndefOr[auto | yes | no | `no-hide-descendants`]]] = js.undefined
   
-  var loadingIndicatorSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource]]] = js.native
+  var loadingIndicatorSource: js.UndefOr[RecursivePartial[js.UndefOr[ImageURISource]]] = js.undefined
   
   var onAccessibilityAction: js.UndefOr[
     RecursivePartial[js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]]]
-  ] = js.native
+  ] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onAccessibilityEscape: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onAccessibilityTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onError: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* error */ NativeSyntheticEvent[ImageErrorEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.native
+  var onLayout: js.UndefOr[RecursivePartial[js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]]]] = js.undefined
   
   var onLoad: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageLoadEventData], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onLoadEnd: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLoadEnd: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onLoadStart: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLoadStart: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onMagicTap: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPartialLoad: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPartialLoad: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
   var onProgress: js.UndefOr[
     RecursivePartial[
       js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[ImageProgressEventDataIOS], Unit]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var placeholderStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var placeholderStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var progressiveRenderingEnabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var progressiveRenderingEnabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var resizeMethod: js.UndefOr[RecursivePartial[js.UndefOr[auto | resize | scale]]] = js.native
+  var resizeMethod: js.UndefOr[RecursivePartial[js.UndefOr[auto | resize | scale]]] = js.undefined
   
-  var resizeMode: js.UndefOr[RecursivePartial[js.UndefOr[ImageResizeMode]]] = js.native
+  var resizeMode: js.UndefOr[RecursivePartial[js.UndefOr[ImageResizeMode]]] = js.undefined
   
-  var source: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.native
+  var source: js.UndefOr[RecursivePartial[js.UndefOr[ImageSourcePropType]]] = js.undefined
   
-  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ImageStyle]]]] = js.native
+  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ImageStyle]]]] = js.undefined
   
-  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var testID: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var transition: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var transition: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var transitionDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var transitionDuration: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var width: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
 }
 object RecursivePartialPartialIm {
   
@@ -326,7 +324,7 @@ object RecursivePartialPartialIm {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[_]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
+    def setImageComponent(value: RecursivePartial[js.UndefOr[ComponentType[js.Any]]]): Self = StObject.set(x, "ImageComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImageComponentUndefined: Self = StObject.set(x, "ImageComponent", js.undefined)

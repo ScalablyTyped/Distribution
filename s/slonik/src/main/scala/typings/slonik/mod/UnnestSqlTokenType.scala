@@ -2,17 +2,17 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UnnestSqlTokenType extends _SqlTokenType {
+trait UnnestSqlTokenType
+  extends StObject
+     with _SqlTokenType {
   
-  var columnTypes: js.Array[String] = js.native
+  var columnTypes: js.Array[String]
   
-  var tuples: js.Array[js.Array[ValueExpressionType]] = js.native
+  var tuples: js.Array[js.Array[ValueExpressionType]]
   
-  var `type`: js.Symbol = js.native
+  var `type`: js.Symbol
 }
 object UnnestSqlTokenType {
   

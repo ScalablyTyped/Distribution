@@ -21,21 +21,29 @@ import typings.std.Iterator
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object policies {
+  
+  @JSImport("cassandra-driver/lib/policies", "policies")
+  @js.native
+  val ^ : js.Any = js.native
   
   object addressResolution {
     
     @JSImport("cassandra-driver/lib/policies", "policies.addressResolution.EC2MultiRegionTranslator")
     @js.native
-    class EC2MultiRegionTranslator () extends AddressTranslator
+    class EC2MultiRegionTranslator ()
+      extends StObject
+         with AddressTranslator {
+      
+      /* CompleteClass */
+      override def translate(address: String, port: Double, callback: js.Function): Unit = js.native
+    }
     
-    @js.native
     trait AddressTranslator extends StObject {
       
-      def translate(address: String, port: Double, callback: js.Function): Unit = js.native
+      def translate(address: String, port: Double, callback: js.Function): Unit
     }
     object AddressTranslator {
       
@@ -54,32 +62,25 @@ object policies {
     }
   }
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultAddressTranslator")
-  @js.native
-  def defaultAddressTranslator(): AddressTranslator = js.native
+  @scala.inline
+  def defaultAddressTranslator(): AddressTranslator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultAddressTranslator")().asInstanceOf[AddressTranslator]
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultLoadBalancingPolicy")
-  @js.native
-  def defaultLoadBalancingPolicy(): LoadBalancingPolicy = js.native
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultLoadBalancingPolicy")
-  @js.native
-  def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = js.native
+  @scala.inline
+  def defaultLoadBalancingPolicy(): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")().asInstanceOf[LoadBalancingPolicy]
+  @scala.inline
+  def defaultLoadBalancingPolicy(localDc: String): LoadBalancingPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultLoadBalancingPolicy")(localDc.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingPolicy]
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultReconnectionPolicy")
-  @js.native
-  def defaultReconnectionPolicy(): ReconnectionPolicy = js.native
+  @scala.inline
+  def defaultReconnectionPolicy(): ReconnectionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultReconnectionPolicy")().asInstanceOf[ReconnectionPolicy]
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultRetryPolicy")
-  @js.native
-  def defaultRetryPolicy(): RetryPolicy = js.native
+  @scala.inline
+  def defaultRetryPolicy(): RetryPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRetryPolicy")().asInstanceOf[RetryPolicy]
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultSpeculativeExecutionPolicy")
-  @js.native
-  def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = js.native
+  @scala.inline
+  def defaultSpeculativeExecutionPolicy(): SpeculativeExecutionPolicy = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultSpeculativeExecutionPolicy")().asInstanceOf[SpeculativeExecutionPolicy]
   
-  @JSImport("cassandra-driver/lib/policies", "policies.defaultTimestampGenerator")
-  @js.native
-  def defaultTimestampGenerator(): TimestampGenerator = js.native
+  @scala.inline
+  def defaultTimestampGenerator(): TimestampGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultTimestampGenerator")().asInstanceOf[TimestampGenerator]
   
   object loadBalancing {
     
@@ -114,7 +115,7 @@ object policies {
       def newQueryPlan(
         keyspace: String,
         executionOptions: ExecutionOptions,
-        callback: js.Function2[/* error */ Error, /* iterator */ Iterator[Host, _, js.UndefOr[scala.Nothing]], Unit]
+        callback: js.Function2[/* error */ Error, /* iterator */ Iterator[Host, js.Any, Unit], Unit]
       ): Unit = js.native
     }
     
@@ -139,31 +140,43 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.reconnection.ConstantReconnectionPolicy")
     @js.native
-    class ConstantReconnectionPolicy protected () extends ReconnectionPolicy {
+    class ConstantReconnectionPolicy protected ()
+      extends StObject
+         with ReconnectionPolicy {
       def this(delay: Double) = this()
+      
+      /* CompleteClass */
+      override def getOptions(): Map[String, js.Object] = js.native
+      
+      /* CompleteClass */
+      override def newSchedule(): Iterator[Double, js.Any, Unit] = js.native
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.reconnection.ExponentialReconnectionPolicy")
     @js.native
-    class ExponentialReconnectionPolicy protected () extends ReconnectionPolicy {
+    class ExponentialReconnectionPolicy protected ()
+      extends StObject
+         with ReconnectionPolicy {
       def this(baseDelay: Double, maxDelay: Double) = this()
       def this(baseDelay: Double, maxDelay: Double, startWithNoDelay: Boolean) = this()
+      
+      /* CompleteClass */
+      override def getOptions(): Map[String, js.Object] = js.native
+      
+      /* CompleteClass */
+      override def newSchedule(): Iterator[Double, js.Any, Unit] = js.native
     }
     
-    @js.native
     trait ReconnectionPolicy extends StObject {
       
-      def getOptions(): Map[String, js.Object] = js.native
+      def getOptions(): Map[String, js.Object]
       
-      def newSchedule(): Iterator[Double, _, js.UndefOr[scala.Nothing]] = js.native
+      def newSchedule(): Iterator[Double, js.Any, Unit]
     }
     object ReconnectionPolicy {
       
       @scala.inline
-      def apply(
-        getOptions: () => Map[String, js.Object],
-        newSchedule: () => Iterator[Double, _, js.UndefOr[scala.Nothing]]
-      ): ReconnectionPolicy = {
+      def apply(getOptions: () => Map[String, js.Object], newSchedule: () => Iterator[Double, js.Any, Unit]): ReconnectionPolicy = {
         val __obj = js.Dynamic.literal(getOptions = js.Any.fromFunction0(getOptions), newSchedule = js.Any.fromFunction0(newSchedule))
         __obj.asInstanceOf[ReconnectionPolicy]
       }
@@ -175,7 +188,7 @@ object policies {
         def setGetOptions(value: () => Map[String, js.Object]): Self = StObject.set(x, "getOptions", js.Any.fromFunction0(value))
         
         @scala.inline
-        def setNewSchedule(value: () => Iterator[Double, _, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
+        def setNewSchedule(value: () => Iterator[Double, js.Any, Unit]): Self = StObject.set(x, "newSchedule", js.Any.fromFunction0(value))
       }
     }
   }
@@ -221,19 +234,25 @@ object policies {
       object retryDecision extends StObject {
         
         @JSBracketAccess
-        def apply(value: Double): js.UndefOr[retryDecision with Double] = js.native
+        def apply(value: Double): js.UndefOr[retryDecision & Double] = js.native
         
         @js.native
-        sealed trait ignore extends retryDecision
-        /* 0 */ val ignore: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.ignore with Double = js.native
+        sealed trait ignore
+          extends StObject
+             with retryDecision
+        /* 0 */ val ignore: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.ignore & Double = js.native
         
         @js.native
-        sealed trait rethrow extends retryDecision
-        /* 1 */ val rethrow: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.rethrow with Double = js.native
+        sealed trait rethrow
+          extends StObject
+             with retryDecision
+        /* 1 */ val rethrow: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.rethrow & Double = js.native
         
         @js.native
-        sealed trait retry extends retryDecision
-        /* 2 */ val retry: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.retry with Double = js.native
+        sealed trait retry
+          extends StObject
+             with retryDecision
+        /* 2 */ val retry: typings.cassandraDriver.policiesMod.policies.retry.RetryDecision.retryDecision.retry & Double = js.native
       }
     }
     
@@ -272,13 +291,17 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.speculativeExecution.ConstantSpeculativeExecutionPolicy")
     @js.native
-    class ConstantSpeculativeExecutionPolicy protected () extends SpeculativeExecutionPolicy {
+    class ConstantSpeculativeExecutionPolicy protected ()
+      extends StObject
+         with SpeculativeExecutionPolicy {
       def this(delay: Double, maxSpeculativeExecutions: Double) = this()
     }
     
     @JSImport("cassandra-driver/lib/policies", "policies.speculativeExecution.NoSpeculativeExecutionPolicy")
     @js.native
-    class NoSpeculativeExecutionPolicy () extends SpeculativeExecutionPolicy
+    class NoSpeculativeExecutionPolicy ()
+      extends StObject
+         with SpeculativeExecutionPolicy
     
     @js.native
     trait SpeculativeExecutionPolicy extends StObject {
@@ -298,16 +321,20 @@ object policies {
     
     @JSImport("cassandra-driver/lib/policies", "policies.timestampGeneration.MonotonicTimestampGenerator")
     @js.native
-    class MonotonicTimestampGenerator protected () extends TimestampGenerator {
+    class MonotonicTimestampGenerator protected ()
+      extends StObject
+         with TimestampGenerator {
       def this(warningThreshold: Double, minLogInterval: Double) = this()
       
       def getDate(): Double = js.native
+      
+      /* CompleteClass */
+      override def next(client: Client): Long | Double = js.native
     }
     
-    @js.native
     trait TimestampGenerator extends StObject {
       
-      def next(client: Client): Long | Double = js.native
+      def next(client: Client): Long | Double
     }
     object TimestampGenerator {
       

@@ -10,9 +10,9 @@ A ReactJS component that creates a pagination.
 | ------------------ | :-------------: |
 | Full name          | react-paginate |
 | Keywords           | react-component, paginate, paginator, pagination |
-| # releases         | 11 |
-| # dependents       | 126 |
-| # downloads        | 8183691 |
+| # releases         | 6 |
+| # dependents       | 142 |
+| # downloads        | 9776456 |
 | # stars            | 8 |
 
 ## Links

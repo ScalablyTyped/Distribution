@@ -2,17 +2,15 @@ package typings.anydbSql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Column extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var table: String = js.native
+    var table: String
   }
   object Column {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Emit extends StObject {
     
-    def emit(`type`: String, args: js.Any*): Unit = js.native
+    def emit(`type`: String, args: js.Any*): Unit
     
-    def on(eventName: String, handler: js.Function): Unit = js.native
+    def on(eventName: String, handler: js.Function): Unit
   }
   object Emit {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var many: js.UndefOr[Boolean] = js.native
+    var many: js.UndefOr[Boolean] = js.undefined
   }
   object From {
     
@@ -88,10 +84,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Having[T] extends StObject {
     
-    def having(nodes: js.Any*): T = js.native
+    def having(nodes: js.Any*): T
   }
   object Having {
     
@@ -102,17 +97,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class HavingMutableBuilder[Self <: Having[_], T] (val x: Self with Having[T]) extends AnyVal {
+    implicit class HavingMutableBuilder[Self <: Having[?], T] (val x: Self & Having[T]) extends AnyVal {
       
       @scala.inline
       def setHaving(value: /* repeated */ js.Any => T): Self = StObject.set(x, "having", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait LOWER extends StObject {
     
-    def LOWER(c: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String] = js.native
+    def LOWER(c: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
   }
   object LOWER {
     
@@ -130,12 +124,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RTRIM extends StObject {
     
-    def LOWER(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String] = js.native
+    def LOWER(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
     
-    def RTRIM(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String] = js.native
+    def RTRIM(name: typings.anydbSql.mod.Column[String]): typings.anydbSql.mod.Column[String]
   }
   object RTRIM {
     
@@ -159,12 +152,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RowCount[T] extends StObject {
     
-    var rowCount: Double = js.native
+    var rowCount: Double
     
-    var rows: js.Array[T] = js.native
+    var rows: js.Array[T]
   }
   object RowCount {
     
@@ -175,7 +167,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class RowCountMutableBuilder[Self <: RowCount[_], T] (val x: Self with RowCount[T]) extends AnyVal {
+    implicit class RowCountMutableBuilder[Self <: RowCount[?], T] (val x: Self & RowCount[T]) extends AnyVal {
       
       @scala.inline
       def setRowCount(value: Double): Self = StObject.set(x, "rowCount", value.asInstanceOf[js.Any])

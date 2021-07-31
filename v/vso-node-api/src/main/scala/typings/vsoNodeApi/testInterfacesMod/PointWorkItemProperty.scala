@@ -3,13 +3,11 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.anon.ValueAny
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointWorkItemProperty extends StObject {
   
-  var workItem: ValueAny = js.native
+  var workItem: ValueAny
 }
 object PointWorkItemProperty {
   

@@ -2,10 +2,8 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Components extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Components extends StObject {
     * a template router (see the generated file for more info).
     *   config.rest.components = {};
     */
-  var components: js.Any = js.native
+  var components: js.Any
 }
 object Components {
   

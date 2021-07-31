@@ -4,19 +4,19 @@ import typings.rxjs.typesMod.ObservableInput
 import typings.rxjs.typesMod.OperatorFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object switchMapToMod {
   
-  @JSImport("rxjs/internal/operators/switchMapTo", "switchMapTo")
+  @JSImport("rxjs/internal/operators/switchMapTo", JSImport.Namespace)
   @js.native
-  def switchMapTo[R](observable: ObservableInput[R]): OperatorFunction[_, R] = js.native
-  @JSImport("rxjs/internal/operators/switchMapTo", "switchMapTo")
-  @js.native
-  def switchMapTo[T, R](observable: ObservableInput[R], resultSelector: js.UndefOr[scala.Nothing]): OperatorFunction[T, R] = js.native
-  @JSImport("rxjs/internal/operators/switchMapTo", "switchMapTo")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def switchMapTo[R](observable: ObservableInput[R]): OperatorFunction[js.Any, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any]).asInstanceOf[OperatorFunction[js.Any, R]]
+  @scala.inline
+  def switchMapTo[T, R](observable: ObservableInput[R], resultSelector: Unit): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
+  @scala.inline
   def switchMapTo[T, I, R](
     observable: ObservableInput[I],
     resultSelector: js.Function4[
@@ -26,5 +26,5 @@ object switchMapToMod {
       /* innerIndex */ Double, 
       R
     ]
-  ): OperatorFunction[T, R] = js.native
+  ): OperatorFunction[T, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("switchMapTo")(observable.asInstanceOf[js.Any], resultSelector.asInstanceOf[js.Any])).asInstanceOf[OperatorFunction[T, R]]
 }

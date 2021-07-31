@@ -2,7 +2,6 @@ package typings.tedious.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,7 +24,7 @@ trait BulkLoad extends StObject {
     * Adds a row to the bulk insert. This method accepts arguments in three different formats:
     * @param columnArray    An array representing the values of each column in the same order which they were added to the bulkLoad object.
     */
-  def addRow(columnArray: js.Array[_]): Unit = js.native
+  def addRow(columnArray: js.Array[js.Any]): Unit = js.native
   /**
     * Adds a row to the bulk insert. This method accepts arguments in three different formats:
     * @param rowObj An object of key/value pairs representing column name (or objName) and value.

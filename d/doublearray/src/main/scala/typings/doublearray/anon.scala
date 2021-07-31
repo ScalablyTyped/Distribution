@@ -2,19 +2,17 @@ package typings.doublearray
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait All extends StObject {
     
-    var all: Double = js.native
+    var all: Double
     
-    var efficiency: Double = js.native
+    var efficiency: Double
     
-    var unused: Double = js.native
+    var unused: Double
   }
   object All {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartAuditMitigationActionsTaskResponse extends StObject {
   
   /**
     * The unique identifier for the audit mitigation task. This matches the taskId that you specified in the request.
     */
-  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.native
+  var taskId: js.UndefOr[AuditMitigationActionsTaskId] = js.undefined
 }
 object StartAuditMitigationActionsTaskResponse {
   

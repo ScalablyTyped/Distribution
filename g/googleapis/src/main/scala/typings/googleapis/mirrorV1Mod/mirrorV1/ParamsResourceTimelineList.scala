@@ -6,51 +6,51 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTimelineList extends StandardParameters {
+trait ParamsResourceTimelineList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * If provided, only items with the given bundleId will be returned.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * If true, tombstone records for deleted items will be returned.
     */
-  var includeDeleted: js.UndefOr[Boolean] = js.native
+  var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of items to include in the response, used for paging.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Controls the order in which timeline items are returned.
     */
-  var orderBy: js.UndefOr[String] = js.native
+  var orderBy: js.UndefOr[String] = js.undefined
   
   /**
     * Token for the page of results to return.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * If true, only pinned items will be returned.
     */
-  var pinnedOnly: js.UndefOr[Boolean] = js.native
+  var pinnedOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If provided, only items with the given sourceItemId will be returned.
     */
-  var sourceItemId: js.UndefOr[String] = js.native
+  var sourceItemId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTimelineList {
   

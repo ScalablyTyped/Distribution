@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalFormat object, for use in `conditionalFormat.set({ ... })`. */
-@js.native
 trait ConditionalFormatUpdateData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var cellValue: js.UndefOr[CellValueConditionalFormatUpdateData] = js.native
+  var cellValue: js.UndefOr[CellValueConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -25,7 +23,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatUpdateData] = js.native
+  var cellValueOrNullObject: js.UndefOr[CellValueConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var colorScale: js.UndefOr[ColorScaleConditionalFormatUpdateData] = js.native
+  var colorScale: js.UndefOr[ColorScaleConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatUpdateData] = js.native
+  var colorScaleOrNullObject: js.UndefOr[ColorScaleConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var custom: js.UndefOr[CustomConditionalFormatUpdateData] = js.native
+  var custom: js.UndefOr[CustomConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -57,7 +55,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var customOrNullObject: js.UndefOr[CustomConditionalFormatUpdateData] = js.native
+  var customOrNullObject: js.UndefOr[CustomConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var dataBar: js.UndefOr[DataBarConditionalFormatUpdateData] = js.native
+  var dataBar: js.UndefOr[DataBarConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatUpdateData] = js.native
+  var dataBarOrNullObject: js.UndefOr[DataBarConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var iconSet: js.UndefOr[IconSetConditionalFormatUpdateData] = js.native
+  var iconSet: js.UndefOr[IconSetConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatUpdateData] = js.native
+  var iconSetOrNullObject: js.UndefOr[IconSetConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var preset: js.UndefOr[PresetCriteriaConditionalFormatUpdateData] = js.native
+  var preset: js.UndefOr[PresetCriteriaConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatUpdateData] = js.native
+  var presetOrNullObject: js.UndefOr[PresetCriteriaConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -117,7 +115,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -126,7 +124,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var stopIfTrue: js.UndefOr[Boolean] = js.native
+  var stopIfTrue: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -135,7 +133,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var textComparison: js.UndefOr[TextConditionalFormatUpdateData] = js.native
+  var textComparison: js.UndefOr[TextConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -144,7 +142,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatUpdateData] = js.native
+  var textComparisonOrNullObject: js.UndefOr[TextConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -153,7 +151,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var topBottom: js.UndefOr[TopBottomConditionalFormatUpdateData] = js.native
+  var topBottom: js.UndefOr[TopBottomConditionalFormatUpdateData] = js.undefined
   
   /**
     *
@@ -162,7 +160,7 @@ trait ConditionalFormatUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatUpdateData] = js.native
+  var topBottomOrNullObject: js.UndefOr[TopBottomConditionalFormatUpdateData] = js.undefined
 }
 object ConditionalFormatUpdateData {
   

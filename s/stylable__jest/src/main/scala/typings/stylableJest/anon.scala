@@ -17,15 +17,13 @@ import typings.stylableJest.stylableJestStrings.namespace
 import typings.stylableJest.stylableJestStrings.production
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Instrument extends StObject {
     
-    var instrument: Boolean = js.native
+    var instrument: Boolean
   }
   object Instrument {
     
@@ -44,18 +42,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@stylable/module-utils.@stylable/module-utils.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var injectCSS: js.UndefOr[Boolean] = js.native
+    var injectCSS: js.UndefOr[Boolean] = js.undefined
     
-    var renderableOnly: js.UndefOr[Boolean] = js.native
+    var renderableOnly: js.UndefOr[Boolean] = js.undefined
     
-    var runtimePath: js.UndefOr[String] = js.native
+    var runtimePath: js.UndefOr[String] = js.undefined
     
-    var runtimeStylesheetId: js.UndefOr[module | namespace] = js.native
+    var runtimeStylesheetId: js.UndefOr[module | namespace] = js.undefined
     
-    var staticImports: js.UndefOr[js.Array[String]] = js.native
+    var staticImports: js.UndefOr[js.Array[String]] = js.undefined
   }
   object PartialOptions {
     
@@ -104,36 +101,35 @@ object anon {
   }
   
   /* Inlined std.Partial<@stylable/core.@stylable/core.StylableConfig> */
-  @js.native
   trait PartialStylableConfig extends StObject {
     
-    var cssParser: js.UndefOr[CssParser] = js.native
+    var cssParser: js.UndefOr[CssParser] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var diagnostics: js.UndefOr[Diagnostics] = js.native
+    var diagnostics: js.UndefOr[Diagnostics] = js.undefined
     
-    var fileSystem: js.UndefOr[MinimalFS] = js.native
+    var fileSystem: js.UndefOr[MinimalFS] = js.undefined
     
-    var hooks: js.UndefOr[TransformHooks] = js.native
+    var hooks: js.UndefOr[TransformHooks] = js.undefined
     
-    var mode: js.UndefOr[production | development] = js.native
+    var mode: js.UndefOr[production | development] = js.undefined
     
-    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.native
+    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.undefined
     
-    var optimizer: js.UndefOr[IStylableOptimizer] = js.native
+    var optimizer: js.UndefOr[IStylableOptimizer] = js.undefined
     
-    var projectRoot: js.UndefOr[String] = js.native
+    var projectRoot: js.UndefOr[String] = js.undefined
     
-    var requireModule: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var requireModule: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
     
-    var resolveModule: js.UndefOr[ModuleResolver] = js.native
+    var resolveModule: js.UndefOr[ModuleResolver] = js.undefined
     
-    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.native
+    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.undefined
     
-    var resolveOptions: js.UndefOr[Dictkey] = js.native
+    var resolveOptions: js.UndefOr[Dictkey] = js.undefined
     
-    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.native
+    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.undefined
   }
   object PartialStylableConfig {
     
@@ -201,7 +197,7 @@ object anon {
       def setProjectRootUndefined: Self = StObject.set(x, "projectRoot", js.undefined)
       
       @scala.inline
-      def setRequireModule(value: /* path */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+      def setRequireModule(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)

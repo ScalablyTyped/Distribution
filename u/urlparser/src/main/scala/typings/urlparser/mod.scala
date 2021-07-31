@@ -6,7 +6,6 @@ import typings.urlparser.anon.Hostname
 import typings.urlparser.anon.Params
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,14 +14,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : UrlParser = js.native
   
-  @js.native
   trait UrlData extends StObject {
     
-    var host: Hostname = js.native
+    var host: Hostname
     
-    var path: Base = js.native
+    var path: Base
     
-    var query: Params = js.native
+    var query: Params
   }
   object UrlData {
     

@@ -6,38 +6,32 @@ import typings.std.MethodDecorator
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debounceAllMod {
   
-  @JSImport("lodash-decorators/debounceAll", JSImport.Default)
+  @JSImport("lodash-decorators/debounceAll", JSImport.Namespace)
   @js.native
-  def default(args: js.Any*): MethodDecorator with PropertyDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lodash-decorators/debounceAll", "DebounceAll")
-  @js.native
-  def DebounceAll_(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "DebounceAll")
-  @js.native
-  def DebounceAll_(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def default(args: js.Any*): MethodDecorator & PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(args.asInstanceOf[js.Any]).asInstanceOf[MethodDecorator & PropertyDecorator]
   
-  @JSImport("lodash-decorators/debounceAll", "debounceAll")
-  @js.native
-  def debounceAll(): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "debounceAll")
-  @js.native
-  def debounceAll(wait: js.UndefOr[scala.Nothing], options: DebounceOptions): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "debounceAll")
-  @js.native
-  def debounceAll(wait: Double): LodashMethodDecorator = js.native
-  @JSImport("lodash-decorators/debounceAll", "debounceAll")
-  @js.native
-  def debounceAll(wait: Double, options: DebounceOptions): LodashMethodDecorator = js.native
+  @scala.inline
+  def DebounceAll_(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Double, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def DebounceAll_(wait: Unit, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("DebounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  
+  @scala.inline
+  def debounceAll(): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")().asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Double): LodashMethodDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any]).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Double, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
+  @scala.inline
+  def debounceAll(wait: Unit, options: DebounceOptions): LodashMethodDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("debounceAll")(wait.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[LodashMethodDecorator]
 }

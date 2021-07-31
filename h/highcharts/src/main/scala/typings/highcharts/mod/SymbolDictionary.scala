@@ -3,24 +3,23 @@ package typings.highcharts.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolDictionary
-  extends /* key */ StringDictionary[js.UndefOr[js.Function]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[js.Function]] {
   
-  var arc: js.UndefOr[js.Function] = js.native
+  var arc: js.UndefOr[js.Function] = js.undefined
   
-  var callout: js.UndefOr[js.Function] = js.native
+  var callout: js.UndefOr[js.Function] = js.undefined
   
-  var circle: js.UndefOr[js.Function] = js.native
+  var circle: js.UndefOr[js.Function] = js.undefined
   
-  var diamond: js.UndefOr[js.Function] = js.native
+  var diamond: js.UndefOr[js.Function] = js.undefined
   
-  var square: js.UndefOr[js.Function] = js.native
+  var square: js.UndefOr[js.Function] = js.undefined
   
-  var triangle: js.UndefOr[js.Function] = js.native
+  var triangle: js.UndefOr[js.Function] = js.undefined
 }
 object SymbolDictionary {
   

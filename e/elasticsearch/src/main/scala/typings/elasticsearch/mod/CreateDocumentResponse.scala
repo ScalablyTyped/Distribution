@@ -2,25 +2,23 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDocumentResponse extends StObject {
   
-  var _id: String = js.native
+  var _id: String
   
-  var _index: String = js.native
+  var _index: String
   
-  var _shards: ShardsResponse = js.native
+  var _shards: ShardsResponse
   
-  var _type: String = js.native
+  var _type: String
   
-  var _version: Double = js.native
+  var _version: Double
   
-  var created: Boolean = js.native
+  var created: Boolean
   
-  var result: String = js.native
+  var result: String
 }
 object CreateDocumentResponse {
   

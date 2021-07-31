@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceAggregatedAssociationOverview extends StObject {
   
   /**
     * Detailed status information about the aggregated associations.
     */
-  var DetailedStatus: js.UndefOr[StatusName] = js.native
+  var DetailedStatus: js.UndefOr[StatusName] = js.undefined
   
   /**
     * The number of associations for the instance(s).
     */
-  var InstanceAssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.InstanceAssociationStatusAggregatedCount] = js.native
+  var InstanceAssociationStatusAggregatedCount: js.UndefOr[typings.awsSdk.ssmMod.InstanceAssociationStatusAggregatedCount] = js.undefined
 }
 object InstanceAggregatedAssociationOverview {
   

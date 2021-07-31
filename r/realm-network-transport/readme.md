@@ -9,10 +9,10 @@ Implements cross-platform fetching used by Realm JS
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | realm-network-transport |
-| Keywords           | database, db, react, react-native, persistence, localstorage, sqlite, asyncstorage, rocksdb, leveldb, realm |
-| # releases         | 6 |
-| # dependents       | 0 |
-| # downloads        | 11509 |
+| Keywords           | - |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 62541 |
 | # stars            | 0 |
 
 ## Links

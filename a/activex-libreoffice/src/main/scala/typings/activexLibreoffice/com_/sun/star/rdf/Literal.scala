@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.rdf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,28 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XRepository
   * @since OOo 3.0
   */
-@js.native
-trait Literal extends XLiteral {
+trait Literal
+  extends StObject
+     with XLiteral {
   
   /**
     * creates a plain literal RDF node.
     * @param Value the string value of the literal
     */
-  def create(Value: String): Unit = js.native
+  def create(Value: String): Unit
   
   /**
     * creates a literal RDF node with a language.
     * @param Value the string value of the literal
     * @param Language the language of the literal
     */
-  def createWithLanguage(Value: String, Language: String): Unit = js.native
+  def createWithLanguage(Value: String, Language: String): Unit
   
   /**
     * creates a typed literal RDF node.
     * @param Value the string value of the literal
     * @param Type the data type of the literal
     */
-  def createWithType(Value: String, Type: XURI): Unit = js.native
+  def createWithType(Value: String, Type: XURI): Unit
 }
 object Literal {
   

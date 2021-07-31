@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeViewSelectionChangeEvent[T] extends StObject {
   
   /**
     * Selected elements.
     */
-  val selection: js.Array[T] = js.native
+  val selection: js.Array[T]
 }
 object TreeViewSelectionChangeEvent {
   
@@ -22,7 +20,7 @@ object TreeViewSelectionChangeEvent {
   }
   
   @scala.inline
-  implicit class TreeViewSelectionChangeEventMutableBuilder[Self <: TreeViewSelectionChangeEvent[_], T] (val x: Self with TreeViewSelectionChangeEvent[T]) extends AnyVal {
+  implicit class TreeViewSelectionChangeEventMutableBuilder[Self <: TreeViewSelectionChangeEvent[?], T] (val x: Self & TreeViewSelectionChangeEvent[T]) extends AnyVal {
     
     @scala.inline
     def setSelection(value: js.Array[T]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])

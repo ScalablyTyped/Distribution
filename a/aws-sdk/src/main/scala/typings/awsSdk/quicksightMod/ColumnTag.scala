@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnTag extends StObject {
   
   /**
     * A description for a column.
     */
-  var ColumnDescription: js.UndefOr[typings.awsSdk.quicksightMod.ColumnDescription] = js.native
+  var ColumnDescription: js.UndefOr[typings.awsSdk.quicksightMod.ColumnDescription] = js.undefined
   
   /**
     * A geospatial role for a column.
     */
-  var ColumnGeographicRole: js.UndefOr[GeoSpatialDataRole] = js.native
+  var ColumnGeographicRole: js.UndefOr[GeoSpatialDataRole] = js.undefined
 }
 object ColumnTag {
   

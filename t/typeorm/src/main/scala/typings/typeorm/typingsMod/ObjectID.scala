@@ -3,7 +3,6 @@ package typings.typeorm.typingsMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/browser/driver/mongodb/typings", "ObjectID")
@@ -42,24 +41,25 @@ class ObjectID () extends StObject {
 /* static members */
 object ObjectID {
   
+  @JSImport("typeorm/browser/driver/mongodb/typings", "ObjectID")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates an ObjectID from a hex string representation of an ObjectID.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "ObjectID.createFromHexString")
-  @js.native
-  def createFromHexString(hexString: String): ObjectID = js.native
+  @scala.inline
+  def createFromHexString(hexString: String): ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[ObjectID]
   
   /**
     * Creates an ObjectID from a second based number, with the rest of the ObjectID zeroed out. Used for comparisons or sorting the ObjectID.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "ObjectID.createFromTime")
-  @js.native
-  def createFromTime(time: scala.Double): ObjectID = js.native
+  @scala.inline
+  def createFromTime(time: scala.Double): ObjectID = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[ObjectID]
   
   /**
     * Checks if a value is a valid bson ObjectId.
     */
-  @JSImport("typeorm/browser/driver/mongodb/typings", "ObjectID.isValid")
-  @js.native
-  def isValid(id: js.Any): Boolean = js.native
+  @scala.inline
+  def isValid(id: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -2,30 +2,28 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This reservation type allows to pre allocate specific instance
   * configuration.
   */
-@js.native
 trait SchemaAllocationSpecificSKUReservation extends StObject {
   
   /**
     * Specifies number of resources that are allocated.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * [OutputOnly] Indicates how many resource are in use.
     */
-  var inUseCount: js.UndefOr[String] = js.native
+  var inUseCount: js.UndefOr[String] = js.undefined
   
   /**
     * The instance properties for this specific sku reservation.
     */
-  var instanceProperties: js.UndefOr[SchemaAllocationSpecificSKUAllocationReservedInstanceProperties] = js.native
+  var instanceProperties: js.UndefOr[SchemaAllocationSpecificSKUAllocationReservedInstanceProperties] = js.undefined
 }
 object SchemaAllocationSpecificSKUReservation {
   

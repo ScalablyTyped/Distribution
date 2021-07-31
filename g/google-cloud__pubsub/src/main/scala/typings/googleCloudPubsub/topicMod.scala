@@ -1,10 +1,9 @@
 package typings.googleCloudPubsub
 
-import org.scalablytyped.runtime.StringDictionary
 import typings.googleCloudPubsub.anon.FnCall
 import typings.googleCloudPubsub.iamMod.IAM
-import typings.googleCloudPubsub.protosMod.google.protobuf.ITimestamp
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IListTopicSubscriptionsResponse
+import typings.googleCloudPubsub.protosMod.google.pubsub.v1.IPubsubMessage
 import typings.googleCloudPubsub.protosMod.google.pubsub.v1.ITopic
 import typings.googleCloudPubsub.publisherMod.Attributes
 import typings.googleCloudPubsub.publisherMod.PublishCallback
@@ -26,16 +25,10 @@ import typings.googleCloudPubsub.subscriptionMod.CreateSubscriptionOptions
 import typings.googleCloudPubsub.subscriptionMod.CreateSubscriptionResponse
 import typings.googleCloudPubsub.subscriptionMod.Subscription
 import typings.googleCloudPubsub.subscriptionMod.SubscriptionOptions
-import typings.googleGax.bundleExecutorMod.BundleOptions
-import typings.googleGax.gaxMod.BackoffSettings
 import typings.googleGax.gaxMod.CallOptions
-import typings.googleGax.gaxMod.RetryOptions
-import typings.googleGax.gaxMod.RetryRequestOptions
 import typings.node.Buffer
-import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicMod {
@@ -195,6 +188,10 @@ object topicMod {
   /* static members */
   object Topic {
     
+    @JSImport("@google-cloud/pubsub/build/src/topic", "Topic")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Format the name of a topic. A Topic's full name is in the format of
       * 'projects/{projectId}/topics/{topicName}'.
@@ -203,9 +200,8 @@ object topicMod {
       *
       * @return {string}
       */
-    @JSImport("@google-cloud/pubsub/build/src/topic", "Topic.formatName_")
-    @js.native
-    def formatName_(projectId: String, name: String): String = js.native
+    @scala.inline
+    def formatName_(projectId: String, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatName_")(projectId.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CreateTopicCallback = TopicCallback
@@ -218,37 +214,11 @@ object topicMod {
   
   type GetTopicMetadataResponse = MetadataResponse
   
-  /* Inlined google-gax.google-gax.CallOptions & {  autoCreate :boolean | undefined} */
-  @js.native
-  trait GetTopicOptions extends StObject {
+  trait GetTopicOptions
+    extends StObject
+       with CallOptions {
     
-    var apiName: js.UndefOr[String] = js.native
-    
-    var autoCreate: js.UndefOr[Boolean] = js.native
-    
-    var autoPaginate: js.UndefOr[Boolean] = js.native
-    
-    var bundleOptions: js.UndefOr[BundleOptions | Null] = js.native
-    
-    var isBundling: js.UndefOr[Boolean] = js.native
-    
-    var longrunning: js.UndefOr[BackoffSettings] = js.native
-    
-    var maxResults: js.UndefOr[Double] = js.native
-    
-    var maxRetries: js.UndefOr[Double] = js.native
-    
-    var otherArgs: js.UndefOr[StringDictionary[js.Any]] = js.native
-    
-    var pageSize: js.UndefOr[Double] = js.native
-    
-    var pageToken: js.UndefOr[String] = js.native
-    
-    var retry: js.UndefOr[RetryOptions | Null] = js.native
-    
-    var retryRequestOptions: js.UndefOr[RetryRequestOptions] = js.native
-    
-    var timeout: js.UndefOr[Double] = js.native
+    var autoCreate: js.UndefOr[Boolean] = js.undefined
   }
   object GetTopicOptions {
     
@@ -262,94 +232,10 @@ object topicMod {
     implicit class GetTopicOptionsMutableBuilder[Self <: GetTopicOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setApiNameUndefined: Self = StObject.set(x, "apiName", js.undefined)
-      
-      @scala.inline
       def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAutoCreateUndefined: Self = StObject.set(x, "autoCreate", js.undefined)
-      
-      @scala.inline
-      def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoPaginateUndefined: Self = StObject.set(x, "autoPaginate", js.undefined)
-      
-      @scala.inline
-      def setBundleOptions(value: BundleOptions): Self = StObject.set(x, "bundleOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBundleOptionsNull: Self = StObject.set(x, "bundleOptions", null)
-      
-      @scala.inline
-      def setBundleOptionsUndefined: Self = StObject.set(x, "bundleOptions", js.undefined)
-      
-      @scala.inline
-      def setIsBundling(value: Boolean): Self = StObject.set(x, "isBundling", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIsBundlingUndefined: Self = StObject.set(x, "isBundling", js.undefined)
-      
-      @scala.inline
-      def setLongrunning(value: BackoffSettings): Self = StObject.set(x, "longrunning", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLongrunningUndefined: Self = StObject.set(x, "longrunning", js.undefined)
-      
-      @scala.inline
-      def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxResultsUndefined: Self = StObject.set(x, "maxResults", js.undefined)
-      
-      @scala.inline
-      def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMaxRetriesUndefined: Self = StObject.set(x, "maxRetries", js.undefined)
-      
-      @scala.inline
-      def setOtherArgs(value: StringDictionary[js.Any]): Self = StObject.set(x, "otherArgs", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOtherArgsUndefined: Self = StObject.set(x, "otherArgs", js.undefined)
-      
-      @scala.inline
-      def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageSizeUndefined: Self = StObject.set(x, "pageSize", js.undefined)
-      
-      @scala.inline
-      def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageTokenUndefined: Self = StObject.set(x, "pageToken", js.undefined)
-      
-      @scala.inline
-      def setRetry(value: RetryOptions): Self = StObject.set(x, "retry", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRetryNull: Self = StObject.set(x, "retry", null)
-      
-      @scala.inline
-      def setRetryRequestOptions(value: RetryRequestOptions): Self = StObject.set(x, "retryRequestOptions", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRetryRequestOptionsUndefined: Self = StObject.set(x, "retryRequestOptions", js.undefined)
-      
-      @scala.inline
-      def setRetryUndefined: Self = StObject.set(x, "retry", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
     }
   }
   
@@ -359,26 +245,11 @@ object topicMod {
   
   type GetTopicSubscriptionsResponse = PagedResponse[Subscription, IListTopicSubscriptionsResponse]
   
-  /* Inlined @google-cloud/pubsub.@google-cloud/pubsub/build/src/publisher.PubsubMessage & {  json :any | undefined} */
-  @js.native
-  trait MessageOptions extends StObject {
+  trait MessageOptions
+    extends StObject
+       with IPubsubMessage {
     
-    /** PubsubMessage attributes */
-    var attributes: js.UndefOr[StringDictionary[String] | Null] = js.native
-    
-    /** PubsubMessage data */
-    var data: js.UndefOr[Uint8Array | String | Null] = js.native
-    
-    var json: js.UndefOr[js.Any] = js.native
-    
-    /** PubsubMessage messageId */
-    var messageId: js.UndefOr[String | Null] = js.native
-    
-    /** PubsubMessage orderingKey */
-    var orderingKey: js.UndefOr[String | Null] = js.native
-    
-    /** PubsubMessage publishTime */
-    var publishTime: js.UndefOr[ITimestamp | Null] = js.native
+    var json: js.UndefOr[js.Any] = js.undefined
   }
   object MessageOptions {
     
@@ -392,55 +263,10 @@ object topicMod {
     implicit class MessageOptionsMutableBuilder[Self <: MessageOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAttributesNull: Self = StObject.set(x, "attributes", null)
-      
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
-      
-      @scala.inline
-      def setData(value: Uint8Array | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDataNull: Self = StObject.set(x, "data", null)
-      
-      @scala.inline
-      def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
-      
-      @scala.inline
       def setJson(value: js.Any): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJsonUndefined: Self = StObject.set(x, "json", js.undefined)
-      
-      @scala.inline
-      def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMessageIdNull: Self = StObject.set(x, "messageId", null)
-      
-      @scala.inline
-      def setMessageIdUndefined: Self = StObject.set(x, "messageId", js.undefined)
-      
-      @scala.inline
-      def setOrderingKey(value: String): Self = StObject.set(x, "orderingKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOrderingKeyNull: Self = StObject.set(x, "orderingKey", null)
-      
-      @scala.inline
-      def setOrderingKeyUndefined: Self = StObject.set(x, "orderingKey", js.undefined)
-      
-      @scala.inline
-      def setPublishTime(value: ITimestamp): Self = StObject.set(x, "publishTime", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPublishTimeNull: Self = StObject.set(x, "publishTime", null)
-      
-      @scala.inline
-      def setPublishTimeUndefined: Self = StObject.set(x, "publishTime", js.undefined)
     }
   }
   

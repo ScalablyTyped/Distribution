@@ -5,24 +5,24 @@ import typings.antDesignReactNative.portalHostMod.Operation
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyType extends Operation {
+trait KeyType
+  extends StObject
+     with Operation {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var key: Double = js.native
+  var key: Double
   
-  var `type`: update = js.native
+  var `type`: update
 }
 object KeyType {
   
   @scala.inline
-  def apply(key: Double, `type`: update): KeyType = {
+  def apply(key: Double): KeyType = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("update")
     __obj.asInstanceOf[KeyType]
   }
   

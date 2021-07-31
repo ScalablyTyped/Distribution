@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSecondarySourceGitSubmodulesConfig extends StObject {
   
   /**
     * If set to true, fetches Git submodules for the AWS CodeBuild build project.
     */
-  var fetchSubmodules: Boolean = js.native
+  var fetchSubmodules: Boolean
 }
 object ProjectSecondarySourceGitSubmodulesConfig {
   

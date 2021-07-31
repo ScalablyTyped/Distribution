@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * What operations are supported?
   */
-@js.native
-trait CapabilityStatementRestResourceInteraction extends BackboneElement {
+trait CapabilityStatementRestResourceInteraction
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'documentation'.
     */
-  var _documentation: js.UndefOr[Element] = js.native
+  var _documentation: js.UndefOr[Element] = js.undefined
   
   /**
     * read | vread | update | patch | delete | history-instance | history-type | create | search-type
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Anything special about operation behavior
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
 }
 object CapabilityStatementRestResourceInteraction {
   

@@ -3,29 +3,27 @@ package typings.auth0Lock
 import typings.auth0Lock.anon.Aud
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthResult extends StObject {
   
-  var accessToken: String = js.native
+  var accessToken: String
   
-  var appState: js.UndefOr[js.Any] = js.native
+  var appState: js.UndefOr[js.Any] = js.undefined
   
-  var expiresIn: Double = js.native
+  var expiresIn: Double
   
-  var idToken: String = js.native
+  var idToken: String
   
-  var idTokenPayload: Aud = js.native
+  var idTokenPayload: Aud
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: String = js.native
+  var state: String
   
-  var tokenType: String = js.native
+  var tokenType: String
 }
 object AuthResult {
   

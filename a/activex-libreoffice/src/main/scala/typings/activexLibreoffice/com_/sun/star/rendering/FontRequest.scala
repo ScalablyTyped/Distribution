@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Leave the {@link FontInfo.FamilyName} and {@link FontInfo.StyleName} empty, if font selection should only happen via the PANOSE description.
   * @since OOo 2.0
   */
-@js.native
 trait FontRequest extends StObject {
   
   /**
@@ -33,14 +31,14 @@ trait FontRequest extends StObject {
     * transformation during text output equals the identity transform. This also applies to all query methods, for both {@link XCanvasFont} and {@link
     * XTextLayout} .
     */
-  var CellSize: Double = js.native
+  var CellSize: Double
   
   /**
     * The description of the font.
     *
     * This member contains the description of the font as returned by the font listing methods.
     */
-  var FontDescription: FontInfo = js.native
+  var FontDescription: FontInfo
   
   /**
     * The locale this font should be able to render.
@@ -48,7 +46,7 @@ trait FontRequest extends StObject {
     * This member supplements the FontInfo::UnicodeRange0 entry with a specific locale; this is e.g. important when selecting between traditional and
     * simplified Chinese is necessary (since the letters have the same Unicode ranges and character values).
     */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /**
     * This value specifies the size of the font in the writing direction (i.e. width for horizontal writing, and height for vertical writing).
@@ -58,7 +56,7 @@ trait FontRequest extends StObject {
     * This member and the cellSize member are mutually exclusive, one of them has to be set to 0 (which means don't care). For distorted fonts, the font
     * matrix must be used.
     */
-  var ReferenceAdvancement: Double = js.native
+  var ReferenceAdvancement: Double
 }
 object FontRequest {
   

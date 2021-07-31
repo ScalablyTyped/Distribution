@@ -4,7 +4,6 @@ import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.autoscalingSlashv1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1 {
@@ -12,23 +11,22 @@ object v1 {
   /**
     * CrossVersionObjectReference contains enough information to let you identify the referred resource.
     */
-  @js.native
   trait CrossVersionObjectReference extends StObject {
     
     /**
       * API version of the referent
       */
-    var apiVersion: String = js.native
+    var apiVersion: String
     
     /**
       * Kind of the referent; More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds"
       */
-    var kind: String = js.native
+    var kind: String
     
     /**
       * Name of the referent; More info: http://kubernetes.io/docs/user-guide/identifiers#names
       */
-    var name: String = js.native
+    var name: String
   }
   object CrossVersionObjectReference {
     
@@ -55,45 +53,38 @@ object v1 {
   /**
     * configuration of a horizontal pod autoscaler.
     */
-  @js.native
   trait HorizontalPodAutoscaler extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    var apiVersion: autoscalingSlashv1 = js.native
+    var apiVersion: autoscalingSlashv1
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler = js.native
+    var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler
     
     /**
       * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    var metadata: ObjectMeta = js.native
+    var metadata: ObjectMeta
     
     /**
       * behaviour of autoscaler. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#spec-and-status.
       */
-    var spec: HorizontalPodAutoscalerSpec = js.native
+    var spec: HorizontalPodAutoscalerSpec
     
     /**
       * current information about the autoscaler.
       */
-    var status: HorizontalPodAutoscalerStatus = js.native
+    var status: HorizontalPodAutoscalerStatus
   }
   object HorizontalPodAutoscaler {
     
     @scala.inline
-    def apply(
-      apiVersion: autoscalingSlashv1,
-      kind: typings.pulumiKubernetes.pulumiKubernetesStrings.HorizontalPodAutoscaler,
-      metadata: ObjectMeta,
-      spec: HorizontalPodAutoscalerSpec,
-      status: HorizontalPodAutoscalerStatus
-    ): HorizontalPodAutoscaler = {
-      val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(metadata: ObjectMeta, spec: HorizontalPodAutoscalerSpec, status: HorizontalPodAutoscalerStatus): HorizontalPodAutoscaler = {
+      val __obj = js.Dynamic.literal(apiVersion = "autoscaling/v1", kind = "HorizontalPodAutoscaler", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[HorizontalPodAutoscaler]
     }
     
@@ -120,28 +111,27 @@ object v1 {
   /**
     * specification of a horizontal pod autoscaler.
     */
-  @js.native
   trait HorizontalPodAutoscalerSpec extends StObject {
     
     /**
       * upper limit for the number of pods that can be set by the autoscaler; cannot be smaller than MinReplicas.
       */
-    var maxReplicas: Double = js.native
+    var maxReplicas: Double
     
     /**
       * minReplicas is the lower limit for the number of replicas to which the autoscaler can scale down.  It defaults to 1 pod.  minReplicas is allowed to be 0 if the alpha feature gate HPAScaleToZero is enabled and at least one Object or External metric is configured.  Scaling is active as long as at least one metric value is available.
       */
-    var minReplicas: Double = js.native
+    var minReplicas: Double
     
     /**
       * reference to scaled resource; horizontal pod autoscaler will learn the current resource consumption and will set the desired number of pods by using its Scale subresource.
       */
-    var scaleTargetRef: CrossVersionObjectReference = js.native
+    var scaleTargetRef: CrossVersionObjectReference
     
     /**
       * target average CPU utilization (represented as a percentage of requested CPU) over all the pods; if not specified the default autoscaling policy will be used.
       */
-    var targetCPUUtilizationPercentage: Double = js.native
+    var targetCPUUtilizationPercentage: Double
   }
   object HorizontalPodAutoscalerSpec {
     
@@ -176,33 +166,32 @@ object v1 {
   /**
     * current status of a horizontal pod autoscaler
     */
-  @js.native
   trait HorizontalPodAutoscalerStatus extends StObject {
     
     /**
       * current average CPU utilization over all pods, represented as a percentage of requested CPU, e.g. 70 means that an average pod is using now 70% of its requested CPU.
       */
-    var currentCPUUtilizationPercentage: Double = js.native
+    var currentCPUUtilizationPercentage: Double
     
     /**
       * current number of replicas of pods managed by this autoscaler.
       */
-    var currentReplicas: Double = js.native
+    var currentReplicas: Double
     
     /**
       * desired number of replicas of pods managed by this autoscaler.
       */
-    var desiredReplicas: Double = js.native
+    var desiredReplicas: Double
     
     /**
       * last time the HorizontalPodAutoscaler scaled the number of pods; used by the autoscaler to control how often the number of pods is changed.
       */
-    var lastScaleTime: String = js.native
+    var lastScaleTime: String
     
     /**
       * most recent generation observed by this autoscaler.
       */
-    var observedGeneration: Double = js.native
+    var observedGeneration: Double
   }
   object HorizontalPodAutoscalerStatus {
     

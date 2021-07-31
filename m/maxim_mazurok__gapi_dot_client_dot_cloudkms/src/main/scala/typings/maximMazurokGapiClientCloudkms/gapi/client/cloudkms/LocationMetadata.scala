@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationMetadata extends StObject {
   
   /** Indicates whether CryptoKeys with protection_level EXTERNAL can be created in this location. */
-  var ekmAvailable: js.UndefOr[Boolean] = js.native
+  var ekmAvailable: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates whether CryptoKeys with protection_level HSM can be created in this location. */
-  var hsmAvailable: js.UndefOr[Boolean] = js.native
+  var hsmAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object LocationMetadata {
   

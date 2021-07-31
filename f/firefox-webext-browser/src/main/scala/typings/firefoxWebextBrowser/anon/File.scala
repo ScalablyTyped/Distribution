@@ -4,13 +4,13 @@ import typings.firefoxWebextBrowser.browser.extensionTypes.ExtensionFileOrCode
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait File extends ExtensionFileOrCode {
+trait File
+  extends StObject
+     with ExtensionFileOrCode {
   
-  var file: ExtensionURL = js.native
+  var file: ExtensionURL
 }
 object File {
   

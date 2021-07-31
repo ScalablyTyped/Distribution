@@ -5,10 +5,13 @@ import typings.plottable.interfacesMod.Point
 import typings.plottable.scaleMod.TransformableScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interactionsMod {
+  
+  @JSImport("plottable/build/src/interactions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("plottable/build/src/interactions", "Click")
   @js.native
@@ -17,9 +20,12 @@ object interactionsMod {
   /* static members */
   object Click {
     
-    @JSImport("plottable/build/src/interactions", "Click._pointsEqual")
+    @JSImport("plottable/build/src/interactions", "Click")
     @js.native
-    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def _pointsEqual(p1: js.Any, p2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointsEqual")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("plottable/build/src/interactions", "Drag")
@@ -59,9 +65,9 @@ object interactionsMod {
     */
   class PanZoom ()
     extends typings.plottable.panZoomInteractionMod.PanZoom {
-    def this(xScale: TransformableScale[_, Double]) = this()
-    def this(xScale: js.UndefOr[scala.Nothing], yScale: TransformableScale[_, Double]) = this()
-    def this(xScale: TransformableScale[_, Double], yScale: TransformableScale[_, Double]) = this()
+    def this(xScale: TransformableScale[js.Any, Double]) = this()
+    def this(xScale: Unit, yScale: TransformableScale[js.Any, Double]) = this()
+    def this(xScale: TransformableScale[js.Any, Double], yScale: TransformableScale[js.Any, Double]) = this()
   }
   /* static members */
   object PanZoom {
@@ -79,13 +85,11 @@ object interactionsMod {
     @scala.inline
     def _PIXELS_PER_LINE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_PIXELS_PER_LINE")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/interactions", "PanZoom._pointDistance")
-    @js.native
-    def _pointDistance(point1: js.Any, point2: js.Any): js.Any = js.native
+    @scala.inline
+    def _pointDistance(point1: js.Any, point2: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_pointDistance")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("plottable/build/src/interactions", "PanZoom.centerPoint")
-    @js.native
-    def centerPoint(point1: Point, point2: Point): X = js.native
+    @scala.inline
+    def centerPoint(point1: Point, point2: Point): X = (^.asInstanceOf[js.Dynamic].applyDynamic("centerPoint")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any])).asInstanceOf[X]
   }
   
   @JSImport("plottable/build/src/interactions", "Pointer")
@@ -93,7 +97,6 @@ object interactionsMod {
   class Pointer ()
     extends typings.plottable.pointerInteractionMod.Pointer
   
-  @JSImport("plottable/build/src/interactions", "zoomOut")
-  @js.native
-  def zoomOut(value: Double, zoom: Double, center: Double): Double = js.native
+  @scala.inline
+  def zoomOut(value: Double, zoom: Double, center: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("zoomOut")(value.asInstanceOf[js.Any], zoom.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

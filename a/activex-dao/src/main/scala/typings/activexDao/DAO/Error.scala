@@ -2,24 +2,22 @@ package typings.activexDao.DAO
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
   @JSName("DAO.Error_typekey")
-  var DAODotError_typekey: Error = js.native
+  var DAODotError_typekey: Error
   
-  val Description: String = js.native
+  val Description: String
   
-  val HelpContext: Double = js.native
+  val HelpContext: Double
   
-  val HelpFile: String = js.native
+  val HelpFile: String
   
-  val Number: Double = js.native
+  val Number: Double
   
-  val Source: String = js.native
+  val Source: String
 }
 object Error {
   

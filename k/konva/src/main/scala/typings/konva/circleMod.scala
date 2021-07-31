@@ -5,7 +5,6 @@ import typings.konva.shapeMod.ShapeConfig
 import typings.konva.typesMod.GetSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod {
@@ -31,10 +30,11 @@ object circleMod {
     def setWidth(width: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait CircleConfig extends ShapeConfig {
+  trait CircleConfig
+    extends StObject
+       with ShapeConfig {
     
-    var radius: Double = js.native
+    var radius: Double
   }
   object CircleConfig {
     

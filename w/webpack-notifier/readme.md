@@ -10,9 +10,9 @@ webpack + node-notifier = build status system notifications
 | ------------------ | :-------------: |
 | Full name          | webpack-notifier |
 | Keywords           | webpack, notify, notification, node-notifier, notifier, build |
-| # releases         | 6 |
-| # dependents       | 96 |
-| # downloads        | 15700094 |
+| # releases         | 8 |
+| # dependents       | 99 |
+| # downloads        | 17149800 |
 | # stars            | 22 |
 
 ## Links

@@ -2,26 +2,24 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * (Optional) Specifies the maximum number of tag objects to return in the response. The default value is 100.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.efsMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.efsMod.MaxResults] = js.undefined
   
   /**
     * You can use NextToken in a subsequent request to fetch the next page of access point descriptions if the response payload was paginated.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * Specifies the EFS resource you want to retrieve tags for. You can retrieve tags for EFS file systems and access points using this API endpoint.
     */
-  var ResourceId: typings.awsSdk.efsMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.efsMod.ResourceId
 }
 object ListTagsForResourceRequest {
   

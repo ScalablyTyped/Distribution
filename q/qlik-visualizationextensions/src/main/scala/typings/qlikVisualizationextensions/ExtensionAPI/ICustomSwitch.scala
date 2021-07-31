@@ -3,23 +3,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.switch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICustomSwitch extends StObject {
   
-  var component: switch = js.native
+  var component: switch
   
-  var defaultValue: Boolean = js.native
+  var defaultValue: Boolean
   
-  var options: valueOrfunc[ICustomControlOption] = js.native
+  var options: valueOrfunc[ICustomControlOption]
 }
 object ICustomSwitch {
   
   @scala.inline
-  def apply(component: switch, defaultValue: Boolean, options: valueOrfunc[ICustomControlOption]): ICustomSwitch = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], defaultValue = defaultValue.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
+  def apply(defaultValue: Boolean, options: valueOrfunc[ICustomControlOption]): ICustomSwitch = {
+    val __obj = js.Dynamic.literal(component = "switch", defaultValue = defaultValue.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any])
     __obj.asInstanceOf[ICustomSwitch]
   }
   

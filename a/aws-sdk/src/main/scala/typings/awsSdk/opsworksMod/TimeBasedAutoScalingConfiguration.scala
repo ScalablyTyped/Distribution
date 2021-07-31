@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeBasedAutoScalingConfiguration extends StObject {
   
   /**
     * A WeeklyAutoScalingSchedule object with the instance schedule.
     */
-  var AutoScalingSchedule: js.UndefOr[WeeklyAutoScalingSchedule] = js.native
+  var AutoScalingSchedule: js.UndefOr[WeeklyAutoScalingSchedule] = js.undefined
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
 }
 object TimeBasedAutoScalingConfiguration {
   

@@ -2,13 +2,11 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoFenceMaxNumber extends StObject {
   
-  var geoFenceMaxNumber: Double = js.native
+  var geoFenceMaxNumber: Double
 }
 object GeoFenceMaxNumber {
   

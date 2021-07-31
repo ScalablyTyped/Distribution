@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetContentDeliveryDestination extends StObject {
   
   /**
     * Configuration information for delivery of dataset contents to AWS IoT Events.
     */
-  var iotEventsDestinationConfiguration: js.UndefOr[IotEventsDestinationConfiguration] = js.native
+  var iotEventsDestinationConfiguration: js.UndefOr[IotEventsDestinationConfiguration] = js.undefined
   
   /**
     * Configuration information for delivery of dataset contents to Amazon S3.
     */
-  var s3DestinationConfiguration: js.UndefOr[S3DestinationConfiguration] = js.native
+  var s3DestinationConfiguration: js.UndefOr[S3DestinationConfiguration] = js.undefined
 }
 object DatasetContentDeliveryDestination {
   

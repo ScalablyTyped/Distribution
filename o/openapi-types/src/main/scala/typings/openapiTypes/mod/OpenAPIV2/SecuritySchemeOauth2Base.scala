@@ -7,25 +7,25 @@ import typings.openapiTypes.openapiTypesStrings.oauth2
 import typings.openapiTypes.openapiTypesStrings.password
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecuritySchemeOauth2Base extends SecuritySchemeObjectBase {
+trait SecuritySchemeOauth2Base
+  extends StObject
+     with SecuritySchemeObjectBase {
   
-  var flow: `implicit` | password | application | accessCode = js.native
+  var flow: `implicit` | password | application | accessCode
   
-  var scopes: ScopesObject = js.native
+  var scopes: ScopesObject
   
   @JSName("type")
-  var type_SecuritySchemeOauth2Base: oauth2 = js.native
+  var type_SecuritySchemeOauth2Base: oauth2
 }
 object SecuritySchemeOauth2Base {
   
   @scala.inline
-  def apply(flow: `implicit` | password | application | accessCode, scopes: ScopesObject, `type`: oauth2): SecuritySchemeOauth2Base = {
+  def apply(flow: `implicit` | password | application | accessCode, scopes: ScopesObject): SecuritySchemeOauth2Base = {
     val __obj = js.Dynamic.literal(flow = flow.asInstanceOf[js.Any], scopes = scopes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[SecuritySchemeOauth2Base]
   }
   

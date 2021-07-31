@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDomains.gapi.client.domains
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactSettings extends StObject {
   
   /** Required. The administrative contact for the `Registration`. */
-  var adminContact: js.UndefOr[Contact] = js.native
+  var adminContact: js.UndefOr[Contact] = js.undefined
   
   /** Required. Privacy setting for the contacts associated with the `Registration`. */
-  var privacy: js.UndefOr[String] = js.native
+  var privacy: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The registrant contact for the `Registration`. *Caution: Anyone with access to this email address, phone number, and/or postal address can take control of the domain.*
     * *Warning: For new `Registration`s, the registrant will receive an email confirmation that they must complete within 15 days to avoid domain suspension.*
     */
-  var registrantContact: js.UndefOr[Contact] = js.native
+  var registrantContact: js.UndefOr[Contact] = js.undefined
   
   /** Required. The technical contact for the `Registration`. */
-  var technicalContact: js.UndefOr[Contact] = js.native
+  var technicalContact: js.UndefOr[Contact] = js.undefined
 }
 object ContactSettings {
   

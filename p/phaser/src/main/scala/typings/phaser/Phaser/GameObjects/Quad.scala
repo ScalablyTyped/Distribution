@@ -2,7 +2,6 @@ package typings.phaser.Phaser.GameObjects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * change their alpha and color values. The quad itself can be moved by adjusting the `x` and `y` properties.
   */
 @js.native
-trait Quad extends Mesh {
+trait Quad
+  extends StObject
+     with Mesh {
   
   /**
     * The bottom-left alpha value of this Quad.

@@ -26,7 +26,6 @@ import typings.reactNotificationSystem.reactNotificationSystemStrings.tr
 import typings.reactNotificationSystem.reactNotificationSystemStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -40,14 +39,13 @@ object mod extends Shortcut {
   }
   @JSImport("react-notification-system", JSImport.Namespace)
   @js.native
-  val ^ : ClassicComponentClass[Attributes] = js.native
+  val ^ : js.Object & ClassicComponentClass[Attributes] = js.native
   
-  @js.native
   trait ActionObject extends StObject {
     
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var label: String = js.native
+    var label: String
   }
   object ActionObject {
     
@@ -71,14 +69,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait Attributes extends ClassAttributes[System] {
+  trait Attributes
+    extends StObject
+       with ClassAttributes[System] {
     
-    var allowHTML: js.UndefOr[Boolean] = js.native
+    var allowHTML: js.UndefOr[Boolean] = js.undefined
     
-    var noAnimation: js.UndefOr[Boolean] = js.native
+    var noAnimation: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Style | Boolean] = js.native
+    var style: js.UndefOr[Style | Boolean] = js.undefined
   }
   object Attributes {
     
@@ -113,22 +112,21 @@ object mod extends Shortcut {
   
   type CallBackFunction = js.Function1[/* notification */ Notification, Unit]
   
-  @js.native
   trait ContainersStyle extends StObject {
     
-    var DefaultStyle: CSSProperties = js.native
+    var DefaultStyle: CSSProperties
     
-    var bc: js.UndefOr[CSSProperties] = js.native
+    var bc: js.UndefOr[CSSProperties] = js.undefined
     
-    var bl: js.UndefOr[CSSProperties] = js.native
+    var bl: js.UndefOr[CSSProperties] = js.undefined
     
-    var br: js.UndefOr[CSSProperties] = js.native
+    var br: js.UndefOr[CSSProperties] = js.undefined
     
-    var tc: js.UndefOr[CSSProperties] = js.native
+    var tc: js.UndefOr[CSSProperties] = js.undefined
     
-    var tl: js.UndefOr[CSSProperties] = js.native
+    var tl: js.UndefOr[CSSProperties] = js.undefined
     
-    var tr: js.UndefOr[CSSProperties] = js.native
+    var tr: js.UndefOr[CSSProperties] = js.undefined
   }
   object ContainersStyle {
     
@@ -182,18 +180,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ItemStyle extends StObject {
     
-    var DefaultStyle: js.UndefOr[CSSProperties] = js.native
+    var DefaultStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var error: js.UndefOr[CSSProperties] = js.native
+    var error: js.UndefOr[CSSProperties] = js.undefined
     
-    var info: js.UndefOr[CSSProperties] = js.native
+    var info: js.UndefOr[CSSProperties] = js.undefined
     
-    var success: js.UndefOr[CSSProperties] = js.native
+    var success: js.UndefOr[CSSProperties] = js.undefined
     
-    var warning: js.UndefOr[CSSProperties] = js.native
+    var warning: js.UndefOr[CSSProperties] = js.undefined
   }
   object ItemStyle {
     
@@ -238,30 +235,29 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Notification extends StObject {
     
-    var action: js.UndefOr[ActionObject] = js.native
+    var action: js.UndefOr[ActionObject] = js.undefined
     
-    var autoDismiss: js.UndefOr[Double] = js.native
+    var autoDismiss: js.UndefOr[Double] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var dismissible: js.UndefOr[both | button | click | hide | none | Boolean] = js.native
+    var dismissible: js.UndefOr[both | button | click | hide | none | Boolean] = js.undefined
     
-    var level: js.UndefOr[error | warning | info | success] = js.native
+    var level: js.UndefOr[error | warning | info | success] = js.undefined
     
-    var message: js.UndefOr[String | Element] = js.native
+    var message: js.UndefOr[String | Element] = js.undefined
     
-    var onAdd: js.UndefOr[CallBackFunction] = js.native
+    var onAdd: js.UndefOr[CallBackFunction] = js.undefined
     
-    var onRemove: js.UndefOr[CallBackFunction] = js.native
+    var onRemove: js.UndefOr[CallBackFunction] = js.undefined
     
-    var position: js.UndefOr[tr | tl | tc | br | bl | bc] = js.native
+    var position: js.UndefOr[tr | tl | tc | br | bl | bc] = js.undefined
     
-    var title: js.UndefOr[String | Element] = js.native
+    var title: js.UndefOr[String | Element] = js.undefined
     
-    var uid: js.UndefOr[Double | String] = js.native
+    var uid: js.UndefOr[Double | String] = js.undefined
   }
   object Notification {
     
@@ -342,10 +338,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
   }
   object State {
     
@@ -366,24 +361,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var Action: js.UndefOr[ItemStyle] = js.native
+    var Action: js.UndefOr[ItemStyle] = js.undefined
     
-    var ActionWrapper: js.UndefOr[WrapperStyle] = js.native
+    var ActionWrapper: js.UndefOr[WrapperStyle] = js.undefined
     
-    var Containers: js.UndefOr[ContainersStyle] = js.native
+    var Containers: js.UndefOr[ContainersStyle] = js.undefined
     
-    var Dismiss: js.UndefOr[ItemStyle] = js.native
+    var Dismiss: js.UndefOr[ItemStyle] = js.undefined
     
-    var MessageWrapper: js.UndefOr[WrapperStyle] = js.native
+    var MessageWrapper: js.UndefOr[WrapperStyle] = js.undefined
     
-    var NotificationItem: js.UndefOr[ItemStyle] = js.native
+    var NotificationItem: js.UndefOr[ItemStyle] = js.undefined
     
-    var Title: js.UndefOr[ItemStyle] = js.native
+    var Title: js.UndefOr[ItemStyle] = js.undefined
     
-    var Wrapper: js.UndefOr[js.Any] = js.native
+    var Wrapper: js.UndefOr[js.Any] = js.undefined
   }
   object Style {
     
@@ -463,10 +457,9 @@ object mod extends Shortcut {
     def removeNotification(uidOrNotification: Notification): Unit = js.native
   }
   
-  @js.native
   trait WrapperStyle extends StObject {
     
-    var DefaultStyle: js.UndefOr[CSSProperties] = js.native
+    var DefaultStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object WrapperStyle {
     
@@ -487,8 +480,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = ClassicComponentClass[Attributes]
+  type _To = js.Object & ClassicComponentClass[Attributes]
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: ClassicComponentClass[Attributes] = ^
+  override def _to: js.Object & ClassicComponentClass[Attributes] = ^
 }

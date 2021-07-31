@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEmbeddedObjectRequest extends StObject {
   
   /** The ID of the embedded object to delete. */
-  var objectId: js.UndefOr[Double] = js.native
+  var objectId: js.UndefOr[Double] = js.undefined
 }
 object DeleteEmbeddedObjectRequest {
   

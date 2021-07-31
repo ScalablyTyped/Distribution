@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationInputsKinesisStream extends StObject {
   
   /**
     * The ARN of the Kinesis Stream.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
   
   /**
     * The ARN of the IAM Role used to access the stream.
     */
-  var roleArn: String = js.native
+  var roleArn: String
 }
 object AnalyticsApplicationInputsKinesisStream {
   

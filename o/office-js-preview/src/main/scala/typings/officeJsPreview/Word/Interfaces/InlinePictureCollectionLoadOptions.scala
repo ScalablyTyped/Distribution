@@ -2,7 +2,6 @@ package typings.officeJsPreview.Word.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: WordApi 1.1]
   */
-@js.native
 trait InlinePictureCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var altTextDescription: js.UndefOr[Boolean] = js.native
+  var altTextDescription: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var altTextTitle: js.UndefOr[Boolean] = js.native
+  var altTextTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var hyperlink: js.UndefOr[Boolean] = js.native
+  var hyperlink: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     * [Api set: WordApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var imageFormat: js.UndefOr[Boolean] = js.native
+  var imageFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var lockAspectRatio: js.UndefOr[Boolean] = js.native
+  var lockAspectRatio: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.2]
     */
-  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.native
+  var paragraph: js.UndefOr[ParagraphLoadOptions] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControl: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.native
+  var parentContentControlOrNullObject: js.UndefOr[ContentControlLoadOptions] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTable: js.UndefOr[TableLoadOptions] = js.native
+  var parentTable: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCell: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -115,7 +113,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.native
+  var parentTableCellOrNullObject: js.UndefOr[TableCellLoadOptions] = js.undefined
   
   /**
     *
@@ -123,7 +121,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.native
+  var parentTableOrNullObject: js.UndefOr[TableLoadOptions] = js.undefined
   
   /**
     *
@@ -131,7 +129,7 @@ trait InlinePictureCollectionLoadOptions extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object InlinePictureCollectionLoadOptions {
   

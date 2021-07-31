@@ -2,7 +2,6 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * seconds and 1 microsecond should be expressed in JSON format as
   * &quot;3.000001s&quot;.
   */
-@js.native
 trait SchemaDuration extends StObject {
   
   /**
@@ -45,14 +43,14 @@ trait SchemaDuration extends StObject {
     * same sign as the `seconds` field. Must be from -999,999,999 to
     * +999,999,999 inclusive.
     */
-  var nanos: js.UndefOr[Double] = js.native
+  var nanos: js.UndefOr[Double] = js.undefined
   
   /**
     * Signed seconds of the span of time. Must be from -315,576,000,000 to
     * +315,576,000,000 inclusive. Note: these bounds are computed from: 60
     * sec/min * 60 min/hr * 24 hr/day * 365.25 days/year * 10000 years
     */
-  var seconds: js.UndefOr[String] = js.native
+  var seconds: js.UndefOr[String] = js.undefined
 }
 object SchemaDuration {
   

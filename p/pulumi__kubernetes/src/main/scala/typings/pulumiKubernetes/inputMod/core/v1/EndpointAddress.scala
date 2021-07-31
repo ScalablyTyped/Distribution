@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EndpointAddress is a tuple that describes single IP address.
   */
-@js.native
 trait EndpointAddress extends StObject {
   
   /**
     * The Hostname of this endpoint
     */
-  var hostname: js.UndefOr[Input[String]] = js.native
+  var hostname: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The IP of this endpoint. May not be loopback (127.0.0.0/8), link-local (169.254.0.0/16), or link-local multicast ((224.0.0.0/24). IPv6 is also accepted but not fully supported on all platforms. Also, certain kubernetes components, like kube-proxy, are not IPv6 ready.
     */
-  var ip: Input[String] = js.native
+  var ip: Input[String]
   
   /**
     * Optional: Node hosting this endpoint. This can be used to determine endpoints local to a node.
     */
-  var nodeName: js.UndefOr[Input[String]] = js.native
+  var nodeName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Reference to object providing the endpoint.
     */
-  var targetRef: js.UndefOr[Input[ObjectReference]] = js.native
+  var targetRef: js.UndefOr[Input[ObjectReference]] = js.undefined
 }
 object EndpointAddress {
   

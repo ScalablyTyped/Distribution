@@ -11,7 +11,6 @@ import typings.reactMic.reactMicStrings.sinewave
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,45 +27,44 @@ object mod {
     def this(props: ReactMicProps, context: js.Any) = this()
   }
   
-  @js.native
   trait ReactMicProps extends StObject {
     
     /** Enables/disables auto gain control, defaults -> false */
-    var autoGainControl: js.UndefOr[Boolean] = js.native
+    var autoGainControl: js.UndefOr[Boolean] = js.undefined
     
     /** Background color */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specify 1 for mono, defaults -> 2 (stereo) */
-    var channelCount: js.UndefOr[`1` | `2`] = js.native
+    var channelCount: js.UndefOr[`1` | `2`] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Enables/disables echo cancellation, defaults -> false */
-    var echoCancellation: js.UndefOr[Boolean] = js.native
+    var echoCancellation: js.UndefOr[Boolean] = js.undefined
     
     /** defaults -> "audio/webm".  Set to "audio/wav" for WAV or "audio/mp3" for MP3 audio format (available in React-Mic-Gold) */
-    var mimeType: js.UndefOr[audioSlashwebm | audioSlashwav] = js.native
+    var mimeType: js.UndefOr[audioSlashwebm | audioSlashwav] = js.undefined
     
     /** Enables/disables background noise suppression, defaults -> false */
-    var noiseSuppression: js.UndefOr[Boolean] = js.native
+    var noiseSuppression: js.UndefOr[Boolean] = js.undefined
     
     /** Callback that is executed when chunk of audio is available */
-    var onData: js.UndefOr[js.Function1[/* recordedData */ Blob, Unit]] = js.native
+    var onData: js.UndefOr[js.Function1[/* recordedData */ Blob, Unit]] = js.undefined
     
     /** Callback that is executed when audio stops recording */
-    var onStop: js.UndefOr[js.Function1[/* recordedData */ ReactMicStopEvent, Unit]] = js.native
+    var onStop: js.UndefOr[js.Function1[/* recordedData */ ReactMicStopEvent, Unit]] = js.undefined
     
     /** Available in React-Mic-Plus upgrade only */
-    var pause: js.UndefOr[Boolean] = js.native
+    var pause: js.UndefOr[Boolean] = js.undefined
     
     /** Set to true to begin recording */
-    var record: js.UndefOr[Boolean] = js.native
+    var record: js.UndefOr[Boolean] = js.undefined
     
     /** Sound wave color */
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var visualSetting: js.UndefOr[sinewave | frequencyBars] = js.native
+    var visualSetting: js.UndefOr[sinewave | frequencyBars] = js.undefined
   }
   object ReactMicProps {
     
@@ -159,18 +157,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ReactMicStopEvent extends StObject {
     
-    var blob: Blob = js.native
+    var blob: Blob
     
-    var blobURL: String = js.native
+    var blobURL: String
     
-    var option: AudioBitsPerSecond = js.native
+    var option: AudioBitsPerSecond
     
-    var startTime: Double = js.native
+    var startTime: Double
     
-    var stopTime: Double = js.native
+    var stopTime: Double
   }
   object ReactMicStopEvent {
     

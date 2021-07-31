@@ -3,13 +3,11 @@ package typings.reactNativeMaterialUi.anon
 import typings.reactNativeMaterialUi.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsContainer extends StObject {
   
-  var actionsContainer: js.UndefOr[ViewStyle] = js.native
+  var actionsContainer: js.UndefOr[ViewStyle] = js.undefined
 }
 object ActionsContainer {
   

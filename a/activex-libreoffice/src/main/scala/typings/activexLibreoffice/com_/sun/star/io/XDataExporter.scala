@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Exporter objects are registered for specific components and data types.
   */
-@js.native
-trait XDataExporter extends XInterface {
+trait XDataExporter
+  extends StObject
+     with XInterface {
   
   /** cancels the export process. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /** exports data for a component into an output stream. */
-  def exportData(aOutputStream: XOutputStream, Component: XComponent, aListener: XDataTransferEventListener): Unit = js.native
+  def exportData(aOutputStream: XOutputStream, Component: XComponent, aListener: XDataTransferEventListener): Unit
 }
 object XDataExporter {
   

@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Networking.Connectivity.NetworkAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HotspotAuthenticationContext extends IHotspotAuthenticationContext
+trait HotspotAuthenticationContext
+  extends StObject
+     with IHotspotAuthenticationContext
 object HotspotAuthenticationContext {
   
   @scala.inline

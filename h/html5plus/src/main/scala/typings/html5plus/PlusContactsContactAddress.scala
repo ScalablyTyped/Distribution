@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
   */
-@js.native
 trait PlusContactsContactAddress extends StObject {
   
   /**
@@ -19,56 +17,56 @@ trait PlusContactsContactAddress extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * 完整地址，由其它字段组合而成
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var formatted: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.undefined
   
   /**
     * 城市或地区
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var locality: js.UndefOr[String] = js.native
+  var locality: js.UndefOr[String] = js.undefined
   
   /**
     * 邮政编码
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var postalCode: js.UndefOr[String] = js.native
+  var postalCode: js.UndefOr[String] = js.undefined
   
   /**
     * 是否为首选项
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var preferred: js.UndefOr[Boolean] = js.native
+  var preferred: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 省或地区
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * 完整的街道地址
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var streetAddress: js.UndefOr[String] = js.native
+  var streetAddress: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人地址类型，如“home”表示家庭地址、“company”表示单位地址
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PlusContactsContactAddress {
   

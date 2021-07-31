@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localGatewayRouteMod {
@@ -43,6 +42,10 @@ object localGatewayRouteMod {
   /* static members */
   object LocalGatewayRoute {
     
+    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LocalGatewayRoute resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object localGatewayRouteMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID]): LocalGatewayRoute = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): LocalGatewayRoute = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteState): LocalGatewayRoute = js.native
-    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LocalGatewayRouteState, opts: CustomResourceOptions): LocalGatewayRoute = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocalGatewayRouteState): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LocalGatewayRouteState, opts: CustomResourceOptions): LocalGatewayRoute = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[LocalGatewayRoute]
     
     /**
       * Returns true if the given object is an instance of LocalGatewayRoute.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/localGatewayRoute", "LocalGatewayRoute.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/localGatewayRoute.LocalGatewayRoute */ Boolean]
   }
   
-  @js.native
   trait LocalGatewayRouteArgs extends StObject {
     
     /**
       * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
       */
-    val destinationCidrBlock: Input[String] = js.native
+    val destinationCidrBlock: Input[String]
     
     /**
       * Identifier of EC2 Local Gateway Route Table.
       */
-    val localGatewayRouteTableId: Input[String] = js.native
+    val localGatewayRouteTableId: Input[String]
     
     /**
       * Identifier of EC2 Local Gateway Virtual Interface Group.
       */
-    val localGatewayVirtualInterfaceGroupId: Input[String] = js.native
+    val localGatewayVirtualInterfaceGroupId: Input[String]
   }
   object LocalGatewayRouteArgs {
     
@@ -118,23 +115,22 @@ object localGatewayRouteMod {
     }
   }
   
-  @js.native
   trait LocalGatewayRouteState extends StObject {
     
     /**
       * IPv4 CIDR range used for destination matches. Routing decisions are based on the most specific match.
       */
-    val destinationCidrBlock: js.UndefOr[Input[String]] = js.native
+    val destinationCidrBlock: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Local Gateway Route Table.
       */
-    val localGatewayRouteTableId: js.UndefOr[Input[String]] = js.native
+    val localGatewayRouteTableId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of EC2 Local Gateway Virtual Interface Group.
       */
-    val localGatewayVirtualInterfaceGroupId: js.UndefOr[Input[String]] = js.native
+    val localGatewayVirtualInterfaceGroupId: js.UndefOr[Input[String]] = js.undefined
   }
   object LocalGatewayRouteState {
     

@@ -2,29 +2,27 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object with survival game info
   */
-@js.native
 trait SurvivalGameInfo extends StObject {
   
   /**
     * Current score.
     */
-  var score: Double = js.native
+  var score: Double
   
   /**
     * Time to the next wave of invaders.
     */
-  var timeToWave: Double = js.native
+  var timeToWave: Double
   
   /**
     * The number of the next wave.
     */
-  var wave: Double = js.native
+  var wave: Double
 }
 object SurvivalGameInfo {
   

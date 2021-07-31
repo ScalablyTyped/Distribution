@@ -4,71 +4,69 @@ import typings.std.HTMLElement
 import typings.webix.webix.EventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait dbllistConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var buttons: js.UndefOr[String | Boolean] = js.native
+  var buttons: js.UndefOr[String | Boolean] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var labelBottomLeft: js.UndefOr[String] = js.native
+  var labelBottomLeft: js.UndefOr[String] = js.undefined
   
-  var labelBottomRight: js.UndefOr[String] = js.native
+  var labelBottomRight: js.UndefOr[String] = js.undefined
   
-  var labelLeft: js.UndefOr[String] = js.native
+  var labelLeft: js.UndefOr[String] = js.undefined
   
-  var labelRight: js.UndefOr[String] = js.native
+  var labelRight: js.UndefOr[String] = js.undefined
   
-  var list: js.UndefOr[js.Any] = js.native
+  var list: js.UndefOr[js.Any] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[_]] = js.native
+  var value: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object dbllistConfig {
   
@@ -112,7 +110,7 @@ object dbllistConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -247,7 +245,7 @@ object dbllistConfig {
     def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setValue(value: String | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: String | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

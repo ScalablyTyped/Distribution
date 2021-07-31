@@ -2,10 +2,8 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxAge extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MaxAge extends StObject {
     * By default, no maximum age is set and the preview session finishes
     * when the client shuts down (browser is closed).
     */
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
 }
 object MaxAge {
   

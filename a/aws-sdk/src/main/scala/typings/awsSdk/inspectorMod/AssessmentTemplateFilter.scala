@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentTemplateFilter extends StObject {
   
   /**
     * For a record to match a filter, the value specified for this data type property must inclusively match any value between the specified minimum and maximum values of the durationInSeconds property of the AssessmentTemplate data type.
     */
-  var durationRange: js.UndefOr[DurationRange] = js.native
+  var durationRange: js.UndefOr[DurationRange] = js.undefined
   
   /**
     * For a record to match a filter, an explicit value or a string that contains a wildcard that is specified for this data type property must match the value of the assessmentTemplateName property of the AssessmentTemplate data type.
     */
-  var namePattern: js.UndefOr[NamePattern] = js.native
+  var namePattern: js.UndefOr[NamePattern] = js.undefined
   
   /**
     * For a record to match a filter, the values that are specified for this data type property must be contained in the list of values of the rulesPackageArns property of the AssessmentTemplate data type.
     */
-  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.native
+  var rulesPackageArns: js.UndefOr[FilterRulesPackageArnList] = js.undefined
 }
 object AssessmentTemplateFilter {
   

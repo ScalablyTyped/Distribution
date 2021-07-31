@@ -2,21 +2,24 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "JsonMetadataClass")
 @js.native
 class JsonMetadataClass protected () extends StObject {
-  def this(name: String, properties: js.Array[_]) = this()
-  def this(name: String, properties: js.Array[_], creator: js.Function1[/* json */ js.UndefOr[js.Any], _]) = this()
-  def this(name: String, properties: js.Array[_], creator: js.UndefOr[scala.Nothing], parentName: String) = this()
+  def this(name: String, properties: js.Array[js.Any]) = this()
   def this(
     name: String,
-    properties: js.Array[_],
-    creator: js.Function1[/* json */ js.UndefOr[js.Any], _],
+    properties: js.Array[js.Any],
+    creator: js.Function1[/* json */ js.UndefOr[js.Any], js.Any]
+  ) = this()
+  def this(
+    name: String,
+    properties: js.Array[js.Any],
+    creator: js.Function1[/* json */ js.UndefOr[js.Any], js.Any],
     parentName: String
   ) = this()
+  def this(name: String, properties: js.Array[js.Any], creator: Unit, parentName: String) = this()
   
   def createProperty(propInfo: js.Any): JsonObjectProperty = js.native
   

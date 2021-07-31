@@ -3,37 +3,37 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait ImageToken extends ContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait ImageToken
+  extends StObject
+     with ContentToken {
   
   /**
     * Image alt.
     */
-  var alt: String = js.native
+  var alt: String
   
   /**
     * Image url.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * Image title.
     */
-  var title: String = js.native
+  var title: String
   
   @JSName("type")
-  var type_ImageToken: image = js.native
+  var type_ImageToken: image
 }
 object ImageToken {
   
   @scala.inline
-  def apply(alt: String, level: Double, src: String, title: String, `type`: image): ImageToken = {
+  def apply(alt: String, level: Double, src: String, title: String): ImageToken = {
     val __obj = js.Dynamic.literal(alt = alt.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("image")
     __obj.asInstanceOf[ImageToken]
   }
   

@@ -2,17 +2,15 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDimension extends StObject {
   
-  var autoFitHeight: js.UndefOr[Boolean] = js.native
+  var autoFitHeight: js.UndefOr[Boolean] = js.undefined
   
-  var outerHeight: js.UndefOr[Double] = js.native
+  var outerHeight: js.UndefOr[Double] = js.undefined
   
-  var outerWidth: js.UndefOr[Double] = js.native
+  var outerWidth: js.UndefOr[Double] = js.undefined
 }
 object IDimension {
   

@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,77 +11,127 @@ sealed trait MarkerType extends StObject
 object MarkerType extends StObject {
   
   @js.native
-  sealed trait arabic extends MarkerType
+  sealed trait arabic
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait arabicAbjad extends MarkerType
+  sealed trait arabicAbjad
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait arabicDictionary extends MarkerType
+  sealed trait arabicDictionary
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait arabicWide extends MarkerType
+  sealed trait arabicWide
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait blackCircleWingding extends MarkerType
+  sealed trait blackCircleWingding
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait bullet extends MarkerType
+  sealed trait bullet
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait circledNumber extends MarkerType
+  sealed trait circledNumber
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait devanagariConsonant extends MarkerType
+  sealed trait devanagariConsonant
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait devanagariNumeric extends MarkerType
+  sealed trait devanagariNumeric
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait devanagariVowel extends MarkerType
+  sealed trait devanagariVowel
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait hebrew extends MarkerType
+  sealed trait hebrew
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait japanKorea extends MarkerType
+  sealed trait japanKorea
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait japanSimplifiedChinese extends MarkerType
+  sealed trait japanSimplifiedChinese
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait lowercaseEnglishLetter extends MarkerType
+  sealed trait lowercaseEnglishLetter
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait lowercaseRoman extends MarkerType
+  sealed trait lowercaseRoman
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait none extends MarkerType
+  sealed trait none
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait simplifiedChinese extends MarkerType
+  sealed trait simplifiedChinese
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait thaiAlphabetic extends MarkerType
+  sealed trait thaiAlphabetic
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait thaiNumeric extends MarkerType
+  sealed trait thaiNumeric
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait traditionalChinese extends MarkerType
+  sealed trait traditionalChinese
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait undefined extends MarkerType
+  sealed trait undefined
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait unicodeSequence extends MarkerType
+  sealed trait unicodeSequence
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait uppercaseEnglishLetter extends MarkerType
+  sealed trait uppercaseEnglishLetter
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait uppercaseRoman extends MarkerType
+  sealed trait uppercaseRoman
+    extends StObject
+       with MarkerType
   
   @js.native
-  sealed trait whiteCircleWingding extends MarkerType
+  sealed trait whiteCircleWingding
+    extends StObject
+       with MarkerType
 }

@@ -2,29 +2,27 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analytics extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  def getCount(filter: QueryFilter, callback: CbCallback): Unit = js.native
+  def getCount(filter: QueryFilter, callback: CbCallback): Unit
   
-  def getEventList(filter: QueryFilter, callback: CbCallback): Unit = js.native
+  def getEventList(filter: QueryFilter, callback: CbCallback): Unit
   
-  def getEventTotals(filter: QueryFilter, callback: CbCallback): Unit = js.native
+  def getEventTotals(filter: QueryFilter, callback: CbCallback): Unit
   
-  def getStorage(filter: QueryFilter, callback: CbCallback): Unit = js.native
+  def getStorage(filter: QueryFilter, callback: CbCallback): Unit
   
-  def getUserEvents(filter: QueryFilter, callback: CbCallback): Unit = js.native
+  def getUserEvents(filter: QueryFilter, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Analytics {
   

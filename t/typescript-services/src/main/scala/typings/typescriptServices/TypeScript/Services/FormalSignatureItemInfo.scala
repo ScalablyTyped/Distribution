@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript.Services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormalSignatureItemInfo extends StObject {
   
-  var docComment: String = js.native
+  var docComment: String
   
-  var parameters: js.Array[FormalParameterInfo] = js.native
+  var parameters: js.Array[FormalParameterInfo]
   
-  var signatureInfo: String = js.native
+  var signatureInfo: String
   
-  var typeParameters: js.Array[FormalTypeParameterInfo] = js.native
+  var typeParameters: js.Array[FormalTypeParameterInfo]
 }
 object FormalSignatureItemInfo {
   

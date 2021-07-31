@@ -4,74 +4,74 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Tile extends Object {
+trait Tile
+  extends StObject
+     with Object {
   
   /**
     * The bounds of the tile as an array of four numbers that be readily converted to an [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) object.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var bounds: js.Array[Double] = js.native
+  var bounds: js.Array[Double]
   
   /**
     * The column identifier.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var col: Double = js.native
+  var col: Double
   
   /**
     * The coordinates of the top-left corner of the tile as an array of two numbers.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var coords: js.Array[Double] = js.native
+  var coords: js.Array[Double]
   
   /**
     * The tile string identifier in the format `level/row/col/world`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The level identifier of the [LOD](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LOD.html) to which the tile belongs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * The number of map units per pixel in the tile.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var resolution: Double = js.native
+  var resolution: Double
   
   /**
     * The row identifier.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var row: Double = js.native
+  var row: Double
   
   /**
     * The map scale at the tile's level.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * When the projection allows world wrapping (e.g.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-2d-layers-BaseLayerView2D.html#Tile)
     */
-  var world: Double = js.native
+  var world: Double
 }
 object Tile {
   

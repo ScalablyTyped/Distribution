@@ -3,26 +3,25 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TunnelMetaData
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var build: js.UndefOr[String] = js.native
+  var build: js.UndefOr[String] = js.undefined
   
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
-  var git_version: js.UndefOr[String] = js.native
+  var git_version: js.UndefOr[String] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
-  var nofile_limit: js.UndefOr[Double] = js.native
+  var nofile_limit: js.UndefOr[Double] = js.undefined
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
-  var release: js.UndefOr[String] = js.native
+  var release: js.UndefOr[String] = js.undefined
 }
 object TunnelMetaData {
   

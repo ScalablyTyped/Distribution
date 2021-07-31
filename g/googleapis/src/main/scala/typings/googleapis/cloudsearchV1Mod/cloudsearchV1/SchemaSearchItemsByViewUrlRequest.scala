@@ -2,27 +2,25 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSearchItemsByViewUrlRequest extends StObject {
   
   /**
     * Common debug options.
     */
-  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.native
+  var debugOptions: js.UndefOr[SchemaDebugOptions] = js.undefined
   
   /**
     * The next_page_token value returned from a previous request, if any.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Specify the full view URL to find the corresponding item. The maximum
     * length is 2048 characters.
     */
-  var viewUrl: js.UndefOr[String] = js.native
+  var viewUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchItemsByViewUrlRequest {
   

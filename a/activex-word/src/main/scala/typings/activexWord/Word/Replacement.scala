@@ -2,40 +2,38 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replacement extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def ClearFormatting(): Unit = js.native
+  def ClearFormatting(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var Font: typings.activexWord.Word.Font = js.native
+  var Font: typings.activexWord.Word.Font
   
-  val Frame: typings.activexWord.Word.Frame = js.native
+  val Frame: typings.activexWord.Word.Frame
   
-  var Highlight: Double = js.native
+  var Highlight: Double
   
-  var LanguageID: WdLanguageID = js.native
+  var LanguageID: WdLanguageID
   
-  var LanguageIDFarEast: WdLanguageID = js.native
+  var LanguageIDFarEast: WdLanguageID
   
-  var NoProofing: Double = js.native
+  var NoProofing: Double
   
-  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat = js.native
+  var ParagraphFormat: typings.activexWord.Word.ParagraphFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Style: js.Any = js.native
+  var Style: js.Any
   
-  var Text: String = js.native
+  var Text: String
   
   @JSName("Word.Replacement_typekey")
-  var WordDotReplacement_typekey: Replacement = js.native
+  var WordDotReplacement_typekey: Replacement
 }
 object Replacement {
   

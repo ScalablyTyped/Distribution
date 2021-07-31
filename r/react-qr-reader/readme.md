@@ -10,9 +10,9 @@ A react component for reading QR codes from the webcam.
 | ------------------ | :-------------: |
 | Full name          | react-qr-reader |
 | Keywords           | react, qr, qrcode, qrreader |
-| # releases         | 5 |
+| # releases         | 3 |
 | # dependents       | 29 |
-| # downloads        | 637077 |
+| # downloads        | 857553 |
 | # stars            | 4 |
 
 ## Links

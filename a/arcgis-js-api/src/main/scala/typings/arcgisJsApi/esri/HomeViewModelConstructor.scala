@@ -4,10 +4,10 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait HomeViewModelConstructor
-  extends Instantiable0[HomeViewModel]
+  extends StObject
+     with Instantiable0[HomeViewModel]
      with Instantiable1[/* properties */ HomeViewModelProperties, HomeViewModel]

@@ -10,9 +10,9 @@ Typings are for version 1.0
 | ------------------ | :-------------: |
 | Full name          | phoneformat.js |
 | Keywords           | - |
-| # releases         | 4 |
+| # releases         | 3 |
 | # dependents       | 3 |
-| # downloads        | 148139 |
+| # downloads        | 125184 |
 | # stars            | 0 |
 
 ## Links

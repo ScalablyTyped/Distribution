@@ -2,16 +2,16 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Expression[T]
-  extends Writeable
+  extends StObject
+     with Writeable
      with Operation[T]
      with HasFields[Expression[Double]] {
   
-  def apply(prop: String): Expression[_] = js.native
+  def apply(prop: String): Expression[js.Any] = js.native
   
   def default(value: T): Expression[T] = js.native
   
@@ -31,7 +31,7 @@ trait Expression[T]
   def div(n: Double): Expression[Double] = js.native
   
   def eq(v: js.Any): Expression[Boolean] = js.native
-  def eq(v: Expression[_]): Expression[Boolean] = js.native
+  def eq(v: Expression[js.Any]): Expression[Boolean] = js.native
   
   def ge(value: T): Expression[Boolean] = js.native
   
@@ -48,7 +48,7 @@ trait Expression[T]
   def mul(n: Double): Expression[Double] = js.native
   
   def ne(v: js.Any): Expression[Boolean] = js.native
-  def ne(v: Expression[_]): Expression[Boolean] = js.native
+  def ne(v: Expression[js.Any]): Expression[Boolean] = js.native
   
   def not(): Expression[Boolean] = js.native
   

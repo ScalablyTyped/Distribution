@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -108,9 +107,8 @@ object Workflow {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Workflow.createIn")
-  @js.native
-  def createIn(container: IFolderBase): Workflow = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): Workflow = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Workflow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Workflow.structureTypeName")

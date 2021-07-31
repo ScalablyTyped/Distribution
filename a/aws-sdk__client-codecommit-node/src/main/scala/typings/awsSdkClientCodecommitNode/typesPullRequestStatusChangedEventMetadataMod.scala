@@ -4,18 +4,16 @@ import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CLOS
 import typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.OPEN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesPullRequestStatusChangedEventMetadataMod {
   
-  @js.native
   trait PullRequestStatusChangedEventMetadata extends StObject {
     
     /**
       * <p>The changed status of the pull request.</p>
       */
-    var pullRequestStatus: js.UndefOr[OPEN | CLOSED | String] = js.native
+    var pullRequestStatus: js.UndefOr[OPEN | CLOSED | String] = js.undefined
   }
   object PullRequestStatusChangedEventMetadata {
     

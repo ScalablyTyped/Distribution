@@ -6,24 +6,23 @@ import typings.reactNativeWindowsCli.runWindowsOptionsMod.BuildConfig
 import typings.reactNativeWindowsCli.runWindowsOptionsMod.RunWindowsOptions_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deployMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/deploy", "deployToDesktop")
+  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/deploy", JSImport.Namespace)
   @js.native
-  def deployToDesktop(options: RunWindowsOptions_, verbose: Boolean, config: Config, buildTools: default): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/deploy", "deployToDevice")
-  @js.native
-  def deployToDevice(options: RunWindowsOptions_, verbose: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def deployToDesktop(options: RunWindowsOptions_, verbose: Boolean, config: Config, buildTools: default): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deployToDesktop")(options.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any], config.asInstanceOf[js.Any], buildTools.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/deploy", "getBuildConfiguration")
-  @js.native
-  def getBuildConfiguration(options: RunWindowsOptions_): BuildConfig = js.native
+  @scala.inline
+  def deployToDevice(options: RunWindowsOptions_, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("deployToDevice")(options.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/runWindows/utils/deploy", "startServerInNewWindow")
-  @js.native
-  def startServerInNewWindow(options: RunWindowsOptions_, verbose: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def getBuildConfiguration(options: RunWindowsOptions_): BuildConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getBuildConfiguration")(options.asInstanceOf[js.Any]).asInstanceOf[BuildConfig]
+  
+  @scala.inline
+  def startServerInNewWindow(options: RunWindowsOptions_, verbose: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("startServerInNewWindow")(options.asInstanceOf[js.Any], verbose.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

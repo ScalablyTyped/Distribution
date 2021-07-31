@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeParameterList extends AST {
+trait TypeParameterList
+  extends StObject
+     with AST {
   
-  var typeParameters: ISeparatedSyntaxList2 = js.native
+  var typeParameters: ISeparatedSyntaxList2
 }
 object TypeParameterList {
   

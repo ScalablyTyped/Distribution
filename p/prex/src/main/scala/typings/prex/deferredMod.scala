@@ -3,7 +3,6 @@ package typings.prex
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deferredMod {
@@ -31,7 +30,7 @@ object deferredMod {
     /**
       * Creates a NodeJS-style callback that can be used to resolve or reject the promise with multiple values.
       */
-    def createCallback[A /* <: js.Array[_] */](selector: js.Function1[/* args */ A, T]): js.Function2[/* err */ js.UndefOr[Error | Null], /* args */ A, Unit] = js.native
+    def createCallback[A /* <: js.Array[js.Any] */](selector: js.Function1[/* args */ A, T]): js.Function2[/* err */ js.UndefOr[Error | Null], /* args */ A, Unit] = js.native
     
     /**
       * Gets the promise.

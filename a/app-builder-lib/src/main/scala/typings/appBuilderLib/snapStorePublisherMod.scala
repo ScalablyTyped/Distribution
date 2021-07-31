@@ -6,7 +6,6 @@ import typings.electronPublish.mod.PublishContext
 import typings.electronPublish.mod.Publisher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapStorePublisherMod {
@@ -22,14 +21,15 @@ object snapStorePublisherMod {
     val providerName_FSnapStorePublisher: /* "snapStore" */ String = js.native
   }
   
-  @js.native
-  trait SnapStoreOptions extends PublishConfiguration {
+  trait SnapStoreOptions
+    extends StObject
+       with PublishConfiguration {
     
     /**
       * The list of channels the snap would be released.
       * @default ["edge"]
       */
-    val channels: js.UndefOr[String | js.Array[String] | Null] = js.native
+    val channels: js.UndefOr[String | js.Array[String] | Null] = js.undefined
   }
   object SnapStoreOptions {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDomainNameserversRequest extends StObject {
   
   /**
     * The name of the domain that you want to change name servers for.
     */
-  var DomainName: typings.awsSdk.route53domainsMod.DomainName = js.native
+  var DomainName: typings.awsSdk.route53domainsMod.DomainName
   
   /**
     * The authorization key for .fi domains
     */
-  var FIAuthKey: js.UndefOr[typings.awsSdk.route53domainsMod.FIAuthKey] = js.native
+  var FIAuthKey: js.UndefOr[typings.awsSdk.route53domainsMod.FIAuthKey] = js.undefined
   
   /**
     * A list of new name servers for the domain.
     */
-  var Nameservers: NameserverList = js.native
+  var Nameservers: NameserverList
 }
 object UpdateDomainNameserversRequest {
   

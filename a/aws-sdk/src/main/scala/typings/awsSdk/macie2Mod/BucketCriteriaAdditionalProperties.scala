@@ -2,47 +2,45 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketCriteriaAdditionalProperties extends StObject {
   
   /**
     * An equal to condition to apply to a specified attribute value for buckets.
     */
   @JSName("eq")
-  var eq_FBucketCriteriaAdditionalProperties: js.UndefOr[listOfString] = js.native
+  var eq_FBucketCriteriaAdditionalProperties: js.UndefOr[listOfString] = js.undefined
   
   /**
     * A greater than condition to apply to a specified attribute value for buckets.
     */
-  var gt: js.UndefOr[long] = js.native
+  var gt: js.UndefOr[long] = js.undefined
   
   /**
     * A greater than or equal to condition to apply to a specified attribute value for buckets.
     */
-  var gte: js.UndefOr[long] = js.native
+  var gte: js.UndefOr[long] = js.undefined
   
   /**
     * A less than condition to apply to a specified attribute value for buckets.
     */
-  var lt: js.UndefOr[long] = js.native
+  var lt: js.UndefOr[long] = js.undefined
   
   /**
     * A less than or equal to condition to apply to a specified attribute value for buckets.
     */
-  var lte: js.UndefOr[long] = js.native
+  var lte: js.UndefOr[long] = js.undefined
   
   /**
     * A not equal to condition to apply to a specified attribute value for buckets.
     */
-  var neq: js.UndefOr[listOfString] = js.native
+  var neq: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The prefix of the buckets to include in the results.
     */
-  var prefix: js.UndefOr[string] = js.native
+  var prefix: js.UndefOr[string] = js.undefined
 }
 object BucketCriteriaAdditionalProperties {
   

@@ -2,19 +2,17 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for client certificates on the cluster.
   */
-@js.native
 trait SchemaClientCertificateConfig extends StObject {
   
   /**
     * Issue a client certificate.
     */
-  var issueClientCertificate: js.UndefOr[Boolean] = js.native
+  var issueClientCertificate: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaClientCertificateConfig {
   

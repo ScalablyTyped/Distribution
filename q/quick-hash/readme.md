@@ -12,7 +12,7 @@ Murmur hash optimized for performance, not collision avoidance.
 | Keywords           | hash, murmur, murmur hash, fast, performance, quick |
 | # releases         | 0 |
 | # dependents       | 6 |
-| # downloads        | 6287 |
+| # downloads        | 8240 |
 | # stars            | 2 |
 
 ## Links

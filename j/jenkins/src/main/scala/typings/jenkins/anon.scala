@@ -11,7 +11,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -40,16 +39,15 @@ object anon {
     def remove(name: String, job: String, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   }
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var crumbIssuer: js.UndefOr[Boolean] = js.native
+    var crumbIssuer: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var promisify: js.UndefOr[`false`] = js.native
+    var promisify: js.UndefOr[`false`] = js.undefined
   }
   object BaseUrl {
     
@@ -121,14 +119,13 @@ object anon {
     def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Cancel extends StObject {
     
-    def cancel(n: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def cancel(n: Double, callback: js.Function1[/* err */ Error, Unit]): Unit
     
-    def item(n: Double, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def item(n: Double, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
     
-    def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
   }
   object Cancel {
     
@@ -184,14 +181,14 @@ object anon {
   @js.native
   trait Copy extends StObject {
     
-    def build(name: String): js.Promise[_] = js.native
-    def build(name: String, parameters: js.UndefOr[scala.Nothing], token: String): js.Promise[_] = js.native
-    def build(name: String, parameters: js.Any): js.Promise[_] = js.native
-    def build(name: String, parameters: js.Any, token: String): js.Promise[_] = js.native
-    def build(opts: JobBuildOptions): js.Promise[_] = js.native
+    def build(name: String): js.Promise[js.Any] = js.native
+    def build(name: String, parameters: js.Any): js.Promise[js.Any] = js.native
+    def build(name: String, parameters: js.Any, token: String): js.Promise[js.Any] = js.native
+    def build(name: String, parameters: Unit, token: String): js.Promise[js.Any] = js.native
+    def build(opts: JobBuildOptions): js.Promise[js.Any] = js.native
     
-    def config(name: String): js.Promise[_] = js.native
-    def config(name: String, xml: String): js.Promise[_] = js.native
+    def config(name: String): js.Promise[js.Any] = js.native
+    def config(name: String, xml: String): js.Promise[js.Any] = js.native
     
     def copy(name: String, from: String): js.Promise[Unit] = js.native
     
@@ -205,15 +202,15 @@ object anon {
     
     def exists(name: String): js.Promise[Boolean] = js.native
     
-    def get(name: String): js.Promise[_] = js.native
+    def get(name: String): js.Promise[js.Any] = js.native
     
-    def list(): js.Promise[_] = js.native
+    def list(): js.Promise[js.Any] = js.native
   }
   
   @js.native
   trait Create extends StObject {
     
-    def config(name: String): js.Promise[_] = js.native
+    def config(name: String): js.Promise[js.Any] = js.native
     
     def create(name: String): js.Promise[Unit] = js.native
     
@@ -229,28 +226,27 @@ object anon {
     
     def exists(name: String): js.Promise[Boolean] = js.native
     
-    def get(name: String): js.Promise[_] = js.native
+    def get(name: String): js.Promise[js.Any] = js.native
     
-    def list(): js.Promise[_] = js.native
-    def list(full: Boolean): js.Promise[_] = js.native
+    def list(): js.Promise[js.Any] = js.native
+    def list(full: Boolean): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait CrumbIssuer extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var crumbIssuer: js.UndefOr[Boolean] = js.native
+    var crumbIssuer: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var promisify: `true` = js.native
+    var promisify: `true`
   }
   object CrumbIssuer {
     
     @scala.inline
-    def apply(promisify: `true`): CrumbIssuer = {
-      val __obj = js.Dynamic.literal(promisify = promisify.asInstanceOf[js.Any])
+    def apply(): CrumbIssuer = {
+      val __obj = js.Dynamic.literal(promisify = true)
       __obj.asInstanceOf[CrumbIssuer]
     }
     
@@ -280,12 +276,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Delay extends StObject {
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[text | html] = js.native
+    var `type`: js.UndefOr[text | html] = js.undefined
   }
   object Delay {
     
@@ -317,8 +312,8 @@ object anon {
     
     def add(name: String, job: String): js.Promise[Unit] = js.native
     
-    def config(name: String): js.Promise[_] = js.native
-    def config(name: String, xml: String): js.Promise[_] = js.native
+    def config(name: String): js.Promise[js.Any] = js.native
+    def config(name: String, xml: String): js.Promise[js.Any] = js.native
     
     @JSName("create")
     def create_list(name: String, `type`: list): js.Promise[Unit] = js.native
@@ -329,9 +324,9 @@ object anon {
     
     def exists(name: String): js.Promise[Boolean] = js.native
     
-    def get(name: String): js.Promise[_] = js.native
+    def get(name: String): js.Promise[js.Any] = js.native
     
-    def list(): js.Promise[_] = js.native
+    def list(): js.Promise[js.Any] = js.native
     
     def remove(name: String, job: String): js.Promise[Unit] = js.native
   }
@@ -393,19 +388,22 @@ object anon {
     def term(name: String, n: Double, callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Item extends StObject {
     
-    def cancel(n: Double): js.Promise[Unit] = js.native
+    def cancel(n: Double): js.Promise[Unit]
     
-    def item(n: Double): js.Promise[_] = js.native
+    def item(n: Double): js.Promise[js.Any]
     
-    def list(): js.Promise[_] = js.native
+    def list(): js.Promise[js.Any]
   }
   object Item {
     
     @scala.inline
-    def apply(cancel: Double => js.Promise[Unit], item: Double => js.Promise[_], list: () => js.Promise[_]): Item = {
+    def apply(
+      cancel: Double => js.Promise[Unit],
+      item: Double => js.Promise[js.Any],
+      list: () => js.Promise[js.Any]
+    ): Item = {
       val __obj = js.Dynamic.literal(cancel = js.Any.fromFunction1(cancel), item = js.Any.fromFunction1(item), list = js.Any.fromFunction0(list))
       __obj.asInstanceOf[Item]
     }
@@ -417,56 +415,50 @@ object anon {
       def setCancel(value: Double => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setItem(value: Double => js.Promise[_]): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
+      def setItem(value: Double => js.Promise[js.Any]): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setList(value: () => js.Promise[_]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
+      def setList(value: () => js.Promise[js.Any]): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
   trait Log extends StObject {
     
-    def get(name: String, n: Double): js.Promise[_] = js.native
+    def get(name: String, n: Double): js.Promise[js.Any] = js.native
     
-    def log(name: String, n: Double): js.Promise[_] = js.native
-    def log(
-      name: String,
-      n: Double,
-      start: js.UndefOr[scala.Nothing],
-      `type`: js.UndefOr[scala.Nothing],
-      meta: Boolean
-    ): js.Promise[_] = js.native
-    def log(name: String, n: Double, start: Double): js.Promise[_] = js.native
-    def log(name: String, n: Double, start: Double, `type`: js.UndefOr[scala.Nothing], meta: Boolean): js.Promise[_] = js.native
+    def log(name: String, n: Double): js.Promise[js.Any] = js.native
+    def log(name: String, n: Double, start: Double): js.Promise[js.Any] = js.native
+    def log(name: String, n: Double, start: Double, `type`: Unit, meta: Boolean): js.Promise[js.Any] = js.native
+    def log(name: String, n: Double, start: Unit, `type`: Unit, meta: Boolean): js.Promise[js.Any] = js.native
     
-    def logStream(name: String, n: Double): js.Promise[_] = js.native
-    def logStream(name: String, n: Double, `type`: js.UndefOr[scala.Nothing], delay: Double): js.Promise[_] = js.native
+    def logStream(name: String, n: Double): js.Promise[js.Any] = js.native
+    def logStream(name: String, n: Double, `type`: Unit, delay: Double): js.Promise[js.Any] = js.native
     @JSName("logStream")
-    def logStream_html(name: String, n: Double, `type`: html): js.Promise[_] = js.native
+    def logStream_html(name: String, n: Double, `type`: html): js.Promise[js.Any] = js.native
     @JSName("logStream")
-    def logStream_html(name: String, n: Double, `type`: html, delay: Double): js.Promise[_] = js.native
+    def logStream_html(name: String, n: Double, `type`: html, delay: Double): js.Promise[js.Any] = js.native
     @JSName("logStream")
-    def logStream_text(name: String, n: Double, `type`: text): js.Promise[_] = js.native
+    def logStream_text(name: String, n: Double, `type`: text): js.Promise[js.Any] = js.native
     @JSName("logStream")
-    def logStream_text(name: String, n: Double, `type`: text, delay: Double): js.Promise[_] = js.native
+    def logStream_text(name: String, n: Double, `type`: text, delay: Double): js.Promise[js.Any] = js.native
     
     @JSName("log")
-    def log_html(name: String, n: Double, start: js.UndefOr[scala.Nothing], `type`: html): js.Promise[_] = js.native
+    def log_html(name: String, n: Double, start: Double, `type`: html): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_html(name: String, n: Double, start: js.UndefOr[scala.Nothing], `type`: html, meta: Boolean): js.Promise[_] = js.native
+    def log_html(name: String, n: Double, start: Double, `type`: html, meta: Boolean): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_html(name: String, n: Double, start: Double, `type`: html): js.Promise[_] = js.native
+    def log_html(name: String, n: Double, start: Unit, `type`: html): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_html(name: String, n: Double, start: Double, `type`: html, meta: Boolean): js.Promise[_] = js.native
+    def log_html(name: String, n: Double, start: Unit, `type`: html, meta: Boolean): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_text(name: String, n: Double, start: js.UndefOr[scala.Nothing], `type`: text): js.Promise[_] = js.native
+    def log_text(name: String, n: Double, start: Double, `type`: text): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_text(name: String, n: Double, start: js.UndefOr[scala.Nothing], `type`: text, meta: Boolean): js.Promise[_] = js.native
+    def log_text(name: String, n: Double, start: Double, `type`: text, meta: Boolean): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_text(name: String, n: Double, start: Double, `type`: text): js.Promise[_] = js.native
+    def log_text(name: String, n: Double, start: Unit, `type`: text): js.Promise[js.Any] = js.native
     @JSName("log")
-    def log_text(name: String, n: Double, start: Double, `type`: text, meta: Boolean): js.Promise[_] = js.native
+    def log_text(name: String, n: Double, start: Unit, `type`: text, meta: Boolean): js.Promise[js.Any] = js.native
     
     def stop(name: String, n: Double): js.Promise[Unit] = js.native
     

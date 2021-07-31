@@ -2,16 +2,14 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpheaderextensionparameters
-@js.native
 trait RTCRtpHeaderExtensionParameters extends StObject {
   
   //uri: string;
   //id: number;
-  var encrypted: js.UndefOr[Boolean] = js.native
+  var encrypted: js.UndefOr[Boolean] = js.undefined
 }
 object RTCRtpHeaderExtensionParameters {
   

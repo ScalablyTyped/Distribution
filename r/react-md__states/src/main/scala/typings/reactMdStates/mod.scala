@@ -11,10 +11,13 @@ import typings.reactTransitionGroup.csstransitionMod.CSSTransitionClassNames
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@react-md/states", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/states", "DEFAULT_RIPPLE_CLASSNAMES")
   @js.native
@@ -26,9 +29,12 @@ object mod {
   
   object StatesConfig {
     
+    @scala.inline
+    def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/states", "StatesConfig")
     @js.native
-    def apply(hasRippleTimeoutRippleClassNamesDisableRippleDisableProgrammaticRippleChildren: StatesConfigProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -72,14 +78,11 @@ object mod {
   @js.native
   val StatesConfigContext: Context[StatesConfigContextType] = js.native
   
-  @JSImport("@react-md/states", "useInteractionStates")
-  @js.native
-  def useInteractionStates[E /* <: HTMLElement */](): ReturnValue[E] = js.native
-  @JSImport("@react-md/states", "useInteractionStates")
-  @js.native
-  def useInteractionStates[E /* <: HTMLElement */](options: InteractionStatesOptions[E]): ReturnValue[E] = js.native
+  @scala.inline
+  def useInteractionStates[E /* <: HTMLElement */](): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useInteractionStates")().asInstanceOf[ReturnValue[E]]
+  @scala.inline
+  def useInteractionStates[E /* <: HTMLElement */](options: InteractionStatesOptions[E]): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useInteractionStates")(options.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
   
-  @JSImport("@react-md/states", "useStatesConfigContext")
-  @js.native
-  def useStatesConfigContext(): StatesConfigContextType = js.native
+  @scala.inline
+  def useStatesConfigContext(): StatesConfigContextType = ^.asInstanceOf[js.Dynamic].applyDynamic("useStatesConfigContext")().asInstanceOf[StatesConfigContextType]
 }

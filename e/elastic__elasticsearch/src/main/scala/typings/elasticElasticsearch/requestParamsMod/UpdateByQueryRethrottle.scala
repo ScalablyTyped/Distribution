@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateByQueryRethrottle extends Generic {
+trait UpdateByQueryRethrottle
+  extends StObject
+     with Generic {
   
-  var requests_per_second: Double = js.native
+  var requests_per_second: Double
   
-  var task_id: String = js.native
+  var task_id: String
 }
 object UpdateByQueryRethrottle {
   

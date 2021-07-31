@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBillingGroupRequest extends StObject {
   
   /**
     * The name you wish to give to the billing group.
     */
-  var billingGroupName: BillingGroupName = js.native
+  var billingGroupName: BillingGroupName
   
   /**
     * The properties of the billing group.
     */
-  var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.native
+  var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.undefined
   
   /**
     * Metadata which can be used to manage the billing group.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateBillingGroupRequest {
   

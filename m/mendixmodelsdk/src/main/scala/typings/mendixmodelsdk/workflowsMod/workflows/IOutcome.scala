@@ -4,7 +4,6 @@ import typings.mendixmodelsdk.baseModelMod.IModel
 import typings.mendixmodelsdk.elementsMod.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.15.0: introduced
   */
 @js.native
-trait IOutcome extends IElement {
+trait IOutcome
+  extends StObject
+     with IElement {
   
   val containerAsExclusiveSplitActivity: IExclusiveSplitActivity = js.native
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateSessionsResponse extends StObject {
   
   /** The freshly created sessions. */
-  var session: js.UndefOr[js.Array[Session]] = js.native
+  var session: js.UndefOr[js.Array[Session]] = js.undefined
 }
 object BatchCreateSessionsResponse {
   

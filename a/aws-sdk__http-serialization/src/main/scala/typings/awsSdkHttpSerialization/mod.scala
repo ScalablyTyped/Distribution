@@ -6,51 +6,49 @@ import typings.awsSdkTypes.httpMod.HttpResponse
 import typings.awsSdkTypes.httpMod.QueryParameterBag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/http-serialization", "parseRequest")
+  @JSImport("@aws-sdk/http-serialization", JSImport.Namespace)
   @js.native
-  def parseRequest(serialized: String): DerivedHttpRequest = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/http-serialization", "parseResponse")
-  @js.native
-  def parseResponse(serialized: String): HttpResponse = js.native
+  @scala.inline
+  def parseRequest(serialized: String): DerivedHttpRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRequest")(serialized.asInstanceOf[js.Any]).asInstanceOf[DerivedHttpRequest]
   
-  @JSImport("@aws-sdk/http-serialization", "serializeRequest")
-  @js.native
-  def serializeRequest(request: HttpRequest): String = js.native
+  @scala.inline
+  def parseResponse(serialized: String): HttpResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("parseResponse")(serialized.asInstanceOf[js.Any]).asInstanceOf[HttpResponse]
   
-  @JSImport("@aws-sdk/http-serialization", "serializeResponse")
-  @js.native
-  def serializeResponse(response: HttpResponse): String = js.native
+  @scala.inline
+  def serializeRequest(request: HttpRequest): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeRequest")(request.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def serializeResponse(response: HttpResponse): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serializeResponse")(response.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Inlined std.Partial<@aws-sdk/types.@aws-sdk/types.HttpRequest> & @aws-sdk/types.@aws-sdk/types.HttpMessage & {  method :string} */
-  @js.native
   trait DerivedHttpRequest extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[HeaderBag] with HeaderBag = js.native
+    var headers: js.UndefOr[HeaderBag] & HeaderBag
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] with String = js.native
+    var method: js.UndefOr[String] & String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[QueryParameterBag] = js.native
+    var query: js.UndefOr[QueryParameterBag] = js.undefined
   }
   object DerivedHttpRequest {
     
     @scala.inline
-    def apply(headers: js.UndefOr[HeaderBag] with HeaderBag, method: js.UndefOr[String] with String): DerivedHttpRequest = {
+    def apply(headers: js.UndefOr[HeaderBag] & HeaderBag, method: js.UndefOr[String] & String): DerivedHttpRequest = {
       val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any])
       __obj.asInstanceOf[DerivedHttpRequest]
     }
@@ -65,7 +63,7 @@ object mod {
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def setHeaders(value: js.UndefOr[HeaderBag] with HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: js.UndefOr[HeaderBag] & HeaderBag): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
@@ -74,7 +72,7 @@ object mod {
       def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
       
       @scala.inline
-      def setMethod(value: js.UndefOr[String] with String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+      def setMethod(value: js.UndefOr[String] & String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])

@@ -2,30 +2,28 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The top-level message sent by the client for the `Recognize` method.
   */
-@js.native
 trait SchemaRecognizeRequest extends StObject {
   
   /**
     * *Required* The audio data to be recognized.
     */
-  var audio: js.UndefOr[SchemaRecognitionAudio] = js.native
+  var audio: js.UndefOr[SchemaRecognitionAudio] = js.undefined
   
   /**
     * *Required* Provides information to the recognizer that specifies how to
     * process the request.
     */
-  var config: js.UndefOr[SchemaRecognitionConfig] = js.native
+  var config: js.UndefOr[SchemaRecognitionConfig] = js.undefined
   
   /**
     * *Optional* The name of the model to use for recognition.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaRecognizeRequest {
   

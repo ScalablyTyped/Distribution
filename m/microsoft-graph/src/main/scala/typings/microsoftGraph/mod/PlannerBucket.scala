@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlannerBucket extends Entity {
+trait PlannerBucket
+  extends StObject
+     with Entity {
   
   // Name of the bucket.
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   // Hint used to order items of this type in a list view. The format is defined as outlined here.
-  var orderHint: js.UndefOr[NullableOption[String]] = js.native
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Plan ID to which the bucket belongs.
-  var planId: js.UndefOr[NullableOption[String]] = js.native
+  var planId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Read-only. Nullable. The collection of tasks in the bucket.
-  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.native
+  var tasks: js.UndefOr[NullableOption[js.Array[PlannerTask]]] = js.undefined
 }
 object PlannerBucket {
   

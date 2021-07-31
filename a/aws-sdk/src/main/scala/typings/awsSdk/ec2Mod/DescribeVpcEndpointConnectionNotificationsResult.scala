@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVpcEndpointConnectionNotificationsResult extends StObject {
   
   /**
     * One or more notifications.
     */
-  var ConnectionNotificationSet: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationSet] = js.native
+  var ConnectionNotificationSet: js.UndefOr[typings.awsSdk.ec2Mod.ConnectionNotificationSet] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeVpcEndpointConnectionNotificationsResult {
   

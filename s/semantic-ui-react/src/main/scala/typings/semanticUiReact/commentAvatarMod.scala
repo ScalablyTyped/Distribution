@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentAvatarMod extends Shortcut {
@@ -14,9 +13,9 @@ object commentAvatarMod extends Shortcut {
   @js.native
   val default: StatelessComponent[CommentAvatarProps] = js.native
   
-  @js.native
   trait CommentAvatarProps
-    extends StrictCommentAvatarProps
+    extends StObject
+       with StrictCommentAvatarProps
        with /* key */ StringDictionary[js.Any]
   object CommentAvatarProps {
     
@@ -27,17 +26,16 @@ object commentAvatarMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictCommentAvatarProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Specifies the URL of the image. */
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object StrictCommentAvatarProps {
     

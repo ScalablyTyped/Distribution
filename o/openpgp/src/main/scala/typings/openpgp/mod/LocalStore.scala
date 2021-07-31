@@ -2,7 +2,6 @@ package typings.openpgp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openpgp", "LocalStore")
@@ -19,25 +18,25 @@ class LocalStore protected () extends StObject {
     * Load the private keys from HTML5 local storage.
     * @returns array of keys retrieved from localstore
     */
-  def loadPrivate(): js.Array[_] = js.native
+  def loadPrivate(): js.Array[js.Any] = js.native
   
   /**
     * Load the public keys from HTML5 local storage.
     * @returns array of keys retrieved from localstore
     */
-  def loadPublic(): js.Array[_] = js.native
+  def loadPublic(): js.Array[js.Any] = js.native
   
   /**
     * Saves the current state of the private keys to HTML5 local storage.
     * The key array gets stringified using JSON
     * @param keys array of keys to save in localstore
     */
-  def storePrivate(keys: js.Array[_]): Unit = js.native
+  def storePrivate(keys: js.Array[js.Any]): Unit = js.native
   
   /**
     * Saves the current state of the public keys to HTML5 local storage.
     * The key array gets stringified using JSON
     * @param keys array of keys to save in localstore
     */
-  def storePublic(keys: js.Array[_]): Unit = js.native
+  def storePublic(keys: js.Array[js.Any]): Unit = js.native
 }

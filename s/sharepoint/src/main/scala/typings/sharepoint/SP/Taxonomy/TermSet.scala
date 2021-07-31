@@ -4,11 +4,12 @@ import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.StringResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TermSet extends TermSetItem {
+trait TermSet
+  extends StObject
+     with TermSetItem {
   
   def addStakeholder(stakeholderName: String): Unit = js.native
   

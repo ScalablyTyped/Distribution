@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of creating a named range.
   */
-@js.native
 trait SchemaCreateNamedRangeResponse extends StObject {
   
   /**
     * The ID of the created named range.
     */
-  var namedRangeId: js.UndefOr[String] = js.native
+  var namedRangeId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateNamedRangeResponse {
   

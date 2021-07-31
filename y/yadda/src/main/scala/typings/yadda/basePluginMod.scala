@@ -4,38 +4,31 @@ import typings.yadda.libMod.Feature
 import typings.yadda.libMod.Scenario
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basePluginMod {
   
   object global {
     
-    @JSGlobal("featureFile")
-    @js.native
-    def featureFile(file: String, iterator: js.Function1[/* feature */ Feature, Unit]): Unit = js.native
+    @scala.inline
+    def featureFile(file: String, iterator: js.Function1[/* feature */ Feature, Unit]): Unit = (js.Dynamic.global.applyDynamic("featureFile")(file.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("featureFiles")
-    @js.native
-    def featureFiles(files: js.Array[String], iterator: js.Function1[/* feature */ Feature, Unit]): Unit = js.native
+    @scala.inline
+    def featureFiles(files: js.Array[String], iterator: js.Function1[/* feature */ Feature, Unit]): Unit = (js.Dynamic.global.applyDynamic("featureFiles")(files.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("scenario")
-    @js.native
-    def scenario(scenario: Scenario, iterator: js.Function1[/* scenario */ Scenario, Unit]): Unit = js.native
+    @scala.inline
+    def scenario(scenario: Scenario, iterator: js.Function1[/* scenario */ Scenario, Unit]): Unit = (js.Dynamic.global.applyDynamic("scenario")(scenario.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("scenarios")
-    @js.native
-    def scenarios(scenarios: js.Array[Scenario], iterator: js.Function1[/* scenario */ Scenario, Unit]): Unit = js.native
+    @scala.inline
+    def scenarios(scenarios: js.Array[Scenario], iterator: js.Function1[/* scenario */ Scenario, Unit]): Unit = (js.Dynamic.global.applyDynamic("scenarios")(scenarios.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("step")
-    @js.native
-    def step(step: String, iterator: js.Function2[/* step */ String, /* done */ js.Function0[Unit], Unit]): Unit = js.native
+    @scala.inline
+    def step(step: String, iterator: js.Function2[/* step */ String, /* done */ js.Function0[Unit], Unit]): Unit = (js.Dynamic.global.applyDynamic("step")(step.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("steps")
-    @js.native
+    @scala.inline
     def steps(
       steps: js.Array[String],
       iterator: js.Function2[/* step */ String, /* done */ js.Function0[Unit], Unit]
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("steps")(steps.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

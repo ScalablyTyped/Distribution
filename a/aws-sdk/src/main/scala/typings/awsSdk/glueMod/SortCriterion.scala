@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortCriterion extends StObject {
   
   /**
     * The name of the field on which to sort.
     */
-  var FieldName: js.UndefOr[ValueString] = js.native
+  var FieldName: js.UndefOr[ValueString] = js.undefined
   
   /**
     * An ascending or descending sort.
     */
-  var Sort: js.UndefOr[typings.awsSdk.glueMod.Sort] = js.native
+  var Sort: js.UndefOr[typings.awsSdk.glueMod.Sort] = js.undefined
 }
 object SortCriterion {
   

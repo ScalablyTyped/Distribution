@@ -3,14 +3,15 @@ package typings.mapboxSphericalmercator
 import typings.mapboxSphericalmercator.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@mapbox/sphericalmercator", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SphericalMercator {
+  class ^ protected ()
+    extends StObject
+       with SphericalMercator {
     def this(options: Size) = this()
   }
   
@@ -36,9 +37,9 @@ object mod {
   trait SphericalMercator extends StObject {
     
     def bbox(x: Double, y: Double, zoom: Double): BoundingBox = js.native
-    def bbox(x: Double, y: Double, zoom: Double, tms_style: js.UndefOr[scala.Nothing], srs: Projection): BoundingBox = js.native
     def bbox(x: Double, y: Double, zoom: Double, tms_style: Boolean): BoundingBox = js.native
     def bbox(x: Double, y: Double, zoom: Double, tms_style: Boolean, srs: Projection): BoundingBox = js.native
+    def bbox(x: Double, y: Double, zoom: Double, tms_style: Unit, srs: Projection): BoundingBox = js.native
     
     def convert(bbox: BoundingBox): BoundingBox = js.native
     def convert(bbox: BoundingBox, to: Projection): BoundingBox = js.native
@@ -52,21 +53,20 @@ object mod {
     def px(ll: LatLngPoint, zoom: Double): XYPoint = js.native
     
     def xyz(bbox: BoundingBox, zoom: Double): XYBounds = js.native
-    def xyz(bbox: BoundingBox, zoom: Double, tms_style: js.UndefOr[scala.Nothing], srs: Projection): XYBounds = js.native
     def xyz(bbox: BoundingBox, zoom: Double, tms_style: Boolean): XYBounds = js.native
     def xyz(bbox: BoundingBox, zoom: Double, tms_style: Boolean, srs: Projection): XYBounds = js.native
+    def xyz(bbox: BoundingBox, zoom: Double, tms_style: Unit, srs: Projection): XYBounds = js.native
   }
   
-  @js.native
   trait XYBounds extends StObject {
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
   }
   object XYBounds {
     

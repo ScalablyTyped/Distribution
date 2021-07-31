@@ -2,15 +2,13 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  var loc: SourceLocation = js.native
+  var loc: SourceLocation
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Node {
   

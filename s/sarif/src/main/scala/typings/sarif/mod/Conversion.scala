@@ -2,31 +2,29 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Conversion extends StObject {
   
   /**
     * The locations of the analysis tool's per-run log files.
     */
-  var analysisToolLogFiles: js.UndefOr[js.Array[ArtifactLocation]] = js.native
+  var analysisToolLogFiles: js.UndefOr[js.Array[ArtifactLocation]] = js.undefined
   
   /**
     * An invocation object that describes the invocation of the converter.
     */
-  var invocation: js.UndefOr[Invocation] = js.native
+  var invocation: js.UndefOr[Invocation] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the conversion.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A tool object that describes the converter.
     */
-  var tool: Tool = js.native
+  var tool: Tool
 }
 object Conversion {
   

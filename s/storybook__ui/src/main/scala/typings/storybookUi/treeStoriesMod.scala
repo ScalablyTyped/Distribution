@@ -7,10 +7,13 @@ import typings.storybookUi.anon.HighlightedRef
 import typings.storybookUi.anon.Layout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/components/sidebar/Tree.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -49,11 +52,9 @@ object treeStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Tree.stories", "Full")
-  @js.native
-  def Full(): Element = js.native
+  @scala.inline
+  def Full(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Full")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/components/sidebar/Tree.stories", "SingleStoryComponents")
-  @js.native
-  def SingleStoryComponents(): Element = js.native
+  @scala.inline
+  def SingleStoryComponents(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SingleStoryComponents")().asInstanceOf[Element]
 }

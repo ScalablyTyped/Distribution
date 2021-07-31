@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyContactGroupMembersRequest extends StObject {
   
   /**
     * Optional. The resource names of the contact people to add in the form of `people/{person_id}`. The total number of resource names in `resource_names_to_add` and
     * `resource_names_to_remove` must be less than or equal to 1000.
     */
-  var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.native
+  var resourceNamesToAdd: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The resource names of the contact people to remove in the form of `people/{person_id}`. The total number of resource names in `resource_names_to_add` and
     * `resource_names_to_remove` must be less than or equal to 1000.
     */
-  var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.native
+  var resourceNamesToRemove: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyContactGroupMembersRequest {
   

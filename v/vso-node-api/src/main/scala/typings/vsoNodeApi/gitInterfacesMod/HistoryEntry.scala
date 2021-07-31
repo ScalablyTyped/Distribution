@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryEntry[T] extends StObject {
   
   /**
     * The Change list (changeset/commit/shelveset) for this point in history
     */
-  var changeList: ChangeList[T] = js.native
+  var changeList: ChangeList[T]
   
   /**
     * The change made to the item from this change list (only relevant for File history, not folders)
     */
-  var itemChangeType: VersionControlChangeType = js.native
+  var itemChangeType: VersionControlChangeType
   
   /**
     * The path of the item at this point in history (only relevant for File history, not folders)
     */
-  var serverItem: String = js.native
+  var serverItem: String
 }
 object HistoryEntry {
   
@@ -32,7 +30,7 @@ object HistoryEntry {
   }
   
   @scala.inline
-  implicit class HistoryEntryMutableBuilder[Self <: HistoryEntry[_], T] (val x: Self with HistoryEntry[T]) extends AnyVal {
+  implicit class HistoryEntryMutableBuilder[Self <: HistoryEntry[?], T] (val x: Self & HistoryEntry[T]) extends AnyVal {
     
     @scala.inline
     def setChangeList(value: ChangeList[T]): Self = StObject.set(x, "changeList", value.asInstanceOf[js.Any])

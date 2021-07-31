@@ -12,7 +12,6 @@ import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,21 +19,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This one tries to balance the amount of data and consumability.
   * It is specifically geared towards urban public transport, with frequent trains and homogenous travels.
   */
-@js.native
 trait Schedule extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking = js.native
+  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
   
-  var route: String = js.native
+  var route: String
   
-  var sequence: js.Array[ArrivalDeparture] = js.native
+  var sequence: js.Array[ArrivalDeparture]
   
   /** array of Unix timestamps */
-  var starts: js.Array[String] = js.native
+  var starts: js.Array[String]
   
-  var `type`: schedule = js.native
+  var `type`: schedule
 }
 object Schedule {
   
@@ -44,11 +42,10 @@ object Schedule {
     mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking,
     route: String,
     sequence: js.Array[ArrivalDeparture],
-    starts: js.Array[String],
-    `type`: schedule
+    starts: js.Array[String]
   ): Schedule = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], starts = starts.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("schedule")
     __obj.asInstanceOf[Schedule]
   }
   

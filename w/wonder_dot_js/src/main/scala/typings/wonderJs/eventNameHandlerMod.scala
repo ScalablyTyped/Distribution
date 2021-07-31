@@ -1,114 +1,116 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/object/EventNameHandler", JSImport.Namespace)
-@js.native
-object eventNameHandlerMod extends js.Object {
-  @js.native
-  sealed trait EEventName extends js.Object
+object eventNameHandlerMod {
   
   @js.native
-  class EventNameHandler () extends js.Object
-  
+  sealed trait EEventName extends StObject
+  @JSImport("wonder.js/dist/es2015/event/object/EventNameHandler", "EEventName")
   @js.native
-  object EEventName extends js.Object {
-    @js.native
-    sealed trait CLICK extends EEventName
-    
-    @js.native
-    sealed trait KEYDOWN extends EEventName
-    
-    @js.native
-    sealed trait KEYPRESS extends EEventName
-    
-    @js.native
-    sealed trait KEYUP extends EEventName
-    
-    @js.native
-    sealed trait MOUSEDOWN extends EEventName
-    
-    @js.native
-    sealed trait MOUSEDRAG extends EEventName
-    
-    @js.native
-    sealed trait MOUSEMOVE extends EEventName
-    
-    @js.native
-    sealed trait MOUSEOUT extends EEventName
-    
-    @js.native
-    sealed trait MOUSEOVER extends EEventName
-    
-    @js.native
-    sealed trait MOUSEUP extends EEventName
-    
-    @js.native
-    sealed trait MOUSEWHEEL extends EEventName
-    
-    @js.native
-    sealed trait TOUCHDOWN extends EEventName
-    
-    @js.native
-    sealed trait TOUCHMOVE extends EEventName
-    
-    @js.native
-    sealed trait TOUCHUP extends EEventName
+  object EEventName extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EEventName with Double] = js.native
-    /* 0 */ @js.native
-    object CLICK extends TopLevel[CLICK with Double]
+    def apply(value: Double): js.UndefOr[EEventName & Double] = js.native
     
-    /* 11 */ @js.native
-    object KEYDOWN extends TopLevel[KEYDOWN with Double]
+    @js.native
+    sealed trait CLICK
+      extends StObject
+         with EEventName
+    /* 0 */ val CLICK: typings.wonderJs.eventNameHandlerMod.EEventName.CLICK & Double = js.native
     
-    /* 13 */ @js.native
-    object KEYPRESS extends TopLevel[KEYPRESS with Double]
+    @js.native
+    sealed trait KEYDOWN
+      extends StObject
+         with EEventName
+    /* 11 */ val KEYDOWN: typings.wonderJs.eventNameHandlerMod.EEventName.KEYDOWN & Double = js.native
     
-    /* 12 */ @js.native
-    object KEYUP extends TopLevel[KEYUP with Double]
+    @js.native
+    sealed trait KEYPRESS
+      extends StObject
+         with EEventName
+    /* 13 */ val KEYPRESS: typings.wonderJs.eventNameHandlerMod.EEventName.KEYPRESS & Double = js.native
     
-    /* 5 */ @js.native
-    object MOUSEDOWN extends TopLevel[MOUSEDOWN with Double]
+    @js.native
+    sealed trait KEYUP
+      extends StObject
+         with EEventName
+    /* 12 */ val KEYUP: typings.wonderJs.eventNameHandlerMod.EEventName.KEYUP & Double = js.native
     
-    /* 7 */ @js.native
-    object MOUSEDRAG extends TopLevel[MOUSEDRAG with Double]
+    @js.native
+    sealed trait MOUSEDOWN
+      extends StObject
+         with EEventName
+    /* 5 */ val MOUSEDOWN: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEDOWN & Double = js.native
     
-    /* 4 */ @js.native
-    object MOUSEMOVE extends TopLevel[MOUSEMOVE with Double]
+    @js.native
+    sealed trait MOUSEDRAG
+      extends StObject
+         with EEventName
+    /* 7 */ val MOUSEDRAG: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEDRAG & Double = js.native
     
-    /* 3 */ @js.native
-    object MOUSEOUT extends TopLevel[MOUSEOUT with Double]
+    @js.native
+    sealed trait MOUSEMOVE
+      extends StObject
+         with EEventName
+    /* 4 */ val MOUSEMOVE: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEMOVE & Double = js.native
     
-    /* 1 */ @js.native
-    object MOUSEOVER extends TopLevel[MOUSEOVER with Double]
+    @js.native
+    sealed trait MOUSEOUT
+      extends StObject
+         with EEventName
+    /* 3 */ val MOUSEOUT: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEOUT & Double = js.native
     
-    /* 2 */ @js.native
-    object MOUSEUP extends TopLevel[MOUSEUP with Double]
+    @js.native
+    sealed trait MOUSEOVER
+      extends StObject
+         with EEventName
+    /* 1 */ val MOUSEOVER: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEOVER & Double = js.native
     
-    /* 6 */ @js.native
-    object MOUSEWHEEL extends TopLevel[MOUSEWHEEL with Double]
+    @js.native
+    sealed trait MOUSEUP
+      extends StObject
+         with EEventName
+    /* 2 */ val MOUSEUP: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEUP & Double = js.native
     
-    /* 10 */ @js.native
-    object TOUCHDOWN extends TopLevel[TOUCHDOWN with Double]
+    @js.native
+    sealed trait MOUSEWHEEL
+      extends StObject
+         with EEventName
+    /* 6 */ val MOUSEWHEEL: typings.wonderJs.eventNameHandlerMod.EEventName.MOUSEWHEEL & Double = js.native
     
-    /* 9 */ @js.native
-    object TOUCHMOVE extends TopLevel[TOUCHMOVE with Double]
+    @js.native
+    sealed trait TOUCHDOWN
+      extends StObject
+         with EEventName
+    /* 10 */ val TOUCHDOWN: typings.wonderJs.eventNameHandlerMod.EEventName.TOUCHDOWN & Double = js.native
     
-    /* 8 */ @js.native
-    object TOUCHUP extends TopLevel[TOUCHUP with Double]
+    @js.native
+    sealed trait TOUCHMOVE
+      extends StObject
+         with EEventName
+    /* 9 */ val TOUCHMOVE: typings.wonderJs.eventNameHandlerMod.EEventName.TOUCHMOVE & Double = js.native
     
+    @js.native
+    sealed trait TOUCHUP
+      extends StObject
+         with EEventName
+    /* 8 */ val TOUCHUP: typings.wonderJs.eventNameHandlerMod.EEventName.TOUCHUP & Double = js.native
   }
   
-  /* static members */
+  @JSImport("wonder.js/dist/es2015/event/object/EventNameHandler", "EventNameHandler")
   @js.native
-  object EventNameHandler extends js.Object {
-    def handleEventName(domEventName: EEventName): js.Any = js.native
+  class EventNameHandler () extends StObject
+  /* static members */
+  object EventNameHandler {
+    
+    @JSImport("wonder.js/dist/es2015/event/object/EventNameHandler", "EventNameHandler")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def handleEventName(domEventName: EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("handleEventName")(domEventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
-  
 }
-

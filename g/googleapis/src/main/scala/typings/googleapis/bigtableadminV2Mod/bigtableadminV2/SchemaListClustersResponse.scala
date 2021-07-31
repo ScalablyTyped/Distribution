@@ -2,19 +2,17 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for BigtableInstanceAdmin.ListClusters.
   */
-@js.native
 trait SchemaListClustersResponse extends StObject {
   
   /**
     * The list of requested clusters.
     */
-  var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.native
+  var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.undefined
   
   /**
     * Locations from which Cluster information could not be retrieved, due to
@@ -23,12 +21,12 @@ trait SchemaListClustersResponse extends StObject {
     * information returned. Values are of the form
     * `projects/&lt;project&gt;/locations/&lt;zone_id&gt;`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * DEPRECATED: This field is unused and ignored.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListClustersResponse {
   

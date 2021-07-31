@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to modify a floating object's outline width.
   */
-@js.native
-trait ChangeFloatingObjectOutlineWidthCommand extends CommandBase {
+trait ChangeFloatingObjectOutlineWidthCommand
+  extends StObject
+     with CommandBase {
   
   /**
     * Executes the ChangeFloatingObjectOutlineWidthCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param width An integer value specifying the outline width.
     */
-  def execute(width: Double): Boolean = js.native
+  def execute(width: Double): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[Double] = js.native
+  def getState(): CommandState[Double]
 }
 object ChangeFloatingObjectOutlineWidthCommand {
   

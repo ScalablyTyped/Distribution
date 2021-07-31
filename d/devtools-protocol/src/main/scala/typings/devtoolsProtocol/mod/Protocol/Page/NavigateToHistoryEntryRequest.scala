@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateToHistoryEntryRequest extends StObject {
   
   /**
     * Unique id of the entry to navigate to.
     */
-  var entryId: integer = js.native
+  var entryId: integer
 }
 object NavigateToHistoryEntryRequest {
   

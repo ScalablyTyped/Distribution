@@ -7,12 +7,11 @@ import typings.winrt.Windows.Graphics.Printing.IPrintTaskOptionsCoreUIConfigurat
 import typings.winrt.Windows.Graphics.Printing.PrintPageDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrintTaskOptionDetails
-  extends IPrintTaskOptionDetails
+  extends StObject
+     with IPrintTaskOptionDetails
      with IPrintTaskOptionsCore
      with IPrintTaskOptionsCoreUIConfiguration
 object PrintTaskOptionDetails {

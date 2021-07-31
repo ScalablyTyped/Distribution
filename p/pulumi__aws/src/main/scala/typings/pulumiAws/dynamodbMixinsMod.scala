@@ -16,7 +16,6 @@ import typings.pulumiPulumi.outputMod.Input
 import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamodbMixinsMod {
@@ -38,10 +37,9 @@ object dynamodbMixinsMod {
     val table: Table = js.native
   }
   
-  @js.native
   trait TableEvent extends StObject {
     
-    var Records: js.Array[TableEventRecord] = js.native
+    var Records: js.Array[TableEventRecord]
   }
   object TableEvent {
     
@@ -64,22 +62,21 @@ object dynamodbMixinsMod {
   
   type TableEventHandler = EventHandler[TableEvent, Unit]
   
-  @js.native
   trait TableEventRecord extends StObject {
     
-    var awsRegion: String = js.native
+    var awsRegion: String
     
-    var dynamodb: ApproximateCreationDateTime = js.native
+    var dynamodb: ApproximateCreationDateTime
     
-    var eventID: String = js.native
+    var eventID: String
     
-    var eventName: INSERT | MODIFY | REMOVE = js.native
+    var eventName: INSERT | MODIFY | REMOVE
     
-    var eventSource: String = js.native
+    var eventSource: String
     
-    var eventVersion: String = js.native
+    var eventVersion: String
     
-    var userIdentity: PrincipalId = js.native
+    var userIdentity: PrincipalId
   }
   object TableEventRecord {
     
@@ -123,50 +120,49 @@ object dynamodbMixinsMod {
     }
   }
   
-  @js.native
   trait TableEventSubscriptionArgs extends StObject {
     
     /**
       * The largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to `100` for DynamoDB.
       */
-    val batchSize: js.UndefOr[Double] = js.native
+    val batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * If the function returns an error, split the batch in two and retry. Defaults to `false`.
       */
-    val bisectBatchOnFunctionError: js.UndefOr[Boolean] = js.native
+    val bisectBatchOnFunctionError: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An Amazon SQS queue or Amazon SNS topic destination for failed records.
       */
-    val destinationConfig: js.UndefOr[Input[EventSourceMappingDestinationConfig]] = js.native
+    val destinationConfig: js.UndefOr[Input[EventSourceMappingDestinationConfig]] = js.undefined
     
     /**
       * The maximum amount of time to gather records before invoking the function, in seconds. Records will continue to buffer
       * until either maximum_batching_window_in_seconds expires or batch_size has been met. Defaults to as soon as records
       * are available in the stream. If the batch it reads from the stream only has one record in it, Lambda only sends one record to the function.
       */
-    val maximumBatchingWindowInSeconds: js.UndefOr[Double] = js.native
+    val maximumBatchingWindowInSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum age of a record that Lambda sends to a function for processing. Minimum of `60`, maximum and default of `604800`
       */
-    val maximumRecordAgeInSeconds: js.UndefOr[Double] = js.native
+    val maximumRecordAgeInSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The maximum number of times to retry when the function returns an error. Minimum of `0`, maximum and default of `10000`.
       */
-    val maximumRetryAttempts: js.UndefOr[Double] = js.native
+    val maximumRetryAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of batches to process from each shard concurrently. Minimum and default of `1`, maximum of `10`
       */
-    val parallelizationFactor: js.UndefOr[Double] = js.native
+    val parallelizationFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * The position in the stream where AWS Lambda should start reading. Must be one of either `TRIM_HORIZON` or `LATEST`.
       */
-    val startingPosition: TRIM_HORIZON | LATEST = js.native
+    val startingPosition: TRIM_HORIZON | LATEST
   }
   object TableEventSubscriptionArgs {
     

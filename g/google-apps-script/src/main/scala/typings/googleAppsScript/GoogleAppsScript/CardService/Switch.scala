@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,18 +17,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *             .setOnChangeAction(CardService.newAction()
   *                 .setFunctionName("handleSwitchChange")));
   */
-@js.native
 trait Switch extends StObject {
   
-  def setControlType(`type`: SwitchControlType): Switch = js.native
+  def setControlType(`type`: SwitchControlType): Switch
   
-  def setFieldName(fieldName: String): Switch = js.native
+  def setFieldName(fieldName: String): Switch
   
-  def setOnChangeAction(action: Action): Switch = js.native
+  def setOnChangeAction(action: Action): Switch
   
-  def setSelected(selected: Boolean): Switch = js.native
+  def setSelected(selected: Boolean): Switch
   
-  def setValue(value: String): Switch = js.native
+  def setValue(value: String): Switch
 }
 object Switch {
   

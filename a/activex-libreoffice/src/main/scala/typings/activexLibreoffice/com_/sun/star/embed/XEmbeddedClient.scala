@@ -4,26 +4,26 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.util.XCloseable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common functionality for embedded clients. */
-@js.native
-trait XEmbeddedClient extends XComponentSupplier {
+trait XEmbeddedClient
+  extends StObject
+     with XComponentSupplier {
   
   /**
     * asks client to let the object store itself.
     * @throws com::sun::star::uno::ObjectSaveVetoException in case container chants to avoid saving of object
     * @throws com::sun::star::uno::Exception in case of problems during saving
     */
-  def saveObject(): Unit = js.native
+  def saveObject(): Unit
   
   /**
     * An object can use this method to notify the client when the object outplace window becomes visible or invisible.
     * @param bVisible visibility state of the window
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def visibilityChanged(bVisible: Boolean): Unit = js.native
+  def visibilityChanged(bVisible: Boolean): Unit
 }
 object XEmbeddedClient {
   

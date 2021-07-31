@@ -2,19 +2,17 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
-  var bucket: Arn = js.native
+  var bucket: Arn
   
-  var configurationId: String = js.native
+  var configurationId: String
   
-  var `object`: ETag = js.native
+  var `object`: ETag
   
-  var s3SchemaVersion: String = js.native
+  var s3SchemaVersion: String
 }
 object Bucket {
   

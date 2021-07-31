@@ -4,11 +4,11 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2PulleyJointDef extends b2JointDef {
+trait b2PulleyJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * Initialize the bodies, anchors, and length using the world anchors.
@@ -19,52 +19,52 @@ trait b2PulleyJointDef extends b2JointDef {
     * @param anchorA Anchor A.
     * @param anchorB Anchor B.
     **/
-  def Initialize(bA: b2Body, bB: b2Body, gaA: b2Vec2, gaB: b2Vec2, anchorA: b2Vec2, anchorB: b2Vec2): Unit = js.native
+  def Initialize(bA: b2Body, bB: b2Body, gaA: b2Vec2, gaB: b2Vec2, anchorA: b2Vec2, anchorB: b2Vec2): Unit
   
   /**
     * The first ground anchor in world coordinates. This point never moves.
     **/
-  var groundAnchorA: b2Vec2 = js.native
+  var groundAnchorA: b2Vec2
   
   /**
     * The second ground anchor in world coordinates. This point never moves.
     **/
-  var groundAnchorB: b2Vec2 = js.native
+  var groundAnchorB: b2Vec2
   
   /**
     * The a reference length for the segment attached to bodyA.
     **/
-  var lengthA: Double = js.native
+  var lengthA: Double
   
   /**
     * The a reference length for the segment attached to bodyB.
     **/
-  var lengthB: Double = js.native
+  var lengthB: Double
   
   /**
     * The local anchor point relative to body1's origin.
     **/
-  var localAnchorA: b2Vec2 = js.native
+  var localAnchorA: b2Vec2
   
   /**
     * The local anchor point relative to body2's origin.
     **/
-  var localAnchorB: b2Vec2 = js.native
+  var localAnchorB: b2Vec2
   
   /**
     * The maximum length of the segment attached to bodyA.
     **/
-  var maxLengthA: Double = js.native
+  var maxLengthA: Double
   
   /**
     * The maximum length of the segment attached to bodyB.
     **/
-  var maxLengthB: Double = js.native
+  var maxLengthB: Double
   
   /**
     * The pulley ratio, used to simulate a block-and-tackle.
     **/
-  var ratio: Double = js.native
+  var ratio: Double
 }
 object b2PulleyJointDef {
   

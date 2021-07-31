@@ -2,40 +2,48 @@ package typings.nextAuth
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.nextAuth.mod.User
-import typings.node.NodeJS.WritableStream
-import typings.node.anon.End
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
   type GenericObject = StringDictionary[js.Any]
   
-  @js.native
-  trait NextApiRequest
-    extends IncomingMessage
-       with GenericObject {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - typings.nextAuth.utilsMod.GenericObject because Inheritance from two classes. Inlined  */ @js.native
+  trait NextApiRequest extends IncomingMessage {
     
     var body: js.Any = js.native
     
     var cookies: StringDictionary[String] = js.native
     
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T): T = js.native
-    /* InferMemberOverrides */
-    override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
-    
     var query: StringDictionary[String | js.Array[String]] = js.native
   }
   
-  @js.native
-  trait NextApiResponse[T]
-    extends ServerResponse
-       with GenericObject {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - typings.nextAuth.utilsMod.GenericObject because Inheritance from two classes. Inlined  */ @js.native
+  trait NextApiResponse[T] extends ServerResponse {
     
     var json: Send[T] = js.native
     
@@ -46,14 +54,13 @@ object utilsMod {
   
   type Send[T] = js.Function1[/* body */ T, Unit]
   
-  @js.native
   trait SessionBase extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var expires: String = js.native
+    var expires: String
     
-    var user: User = js.native
+    var user: User
   }
   object SessionBase {
     

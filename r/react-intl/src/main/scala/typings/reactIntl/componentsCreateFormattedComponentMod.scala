@@ -18,49 +18,51 @@ import typings.reactIntl.reactIntlStrings.formatNumber
 import typings.reactIntl.reactIntlStrings.formatTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsCreateFormattedComponentMod {
   
+  @JSImport("react-intl/src/components/createFormattedComponent", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-intl/src/components/createFormattedComponent", "FormattedNumberParts")
   @js.native
-  val FormattedNumberParts: FC[FormatNumberOptions with Value] = js.native
+  val FormattedNumberParts: FC[FormatNumberOptions & Value] = js.native
   
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedComponent")
-  @js.native
-  def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions with `0`] = js.native
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedComponent")
-  @js.native
-  def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions with `3`] = js.native
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedComponent")
-  @js.native
-  def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions with `2`] = js.native
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedComponent")
-  @js.native
-  def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions with `1`] = js.native
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedComponent")
-  @js.native
-  def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions with `0`] = js.native
+  @scala.inline
+  def createFormattedComponent_formatDate(name: formatDate): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
   
-  @JSImport("react-intl/src/components/createFormattedComponent", "createFormattedDateTimePartsComponent")
-  @js.native
+  @scala.inline
+  def createFormattedComponent_formatDisplayName(name: formatDisplayName): FC[FormatDisplayNameOptions & `3`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDisplayNameOptions & `3`]]
+  
+  @scala.inline
+  def createFormattedComponent_formatList(name: formatList): FC[FormatListOptions & `2`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatListOptions & `2`]]
+  
+  @scala.inline
+  def createFormattedComponent_formatNumber(name: formatNumber): FC[FormatNumberOptions & `1`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatNumberOptions & `1`]]
+  
+  @scala.inline
+  def createFormattedComponent_formatTime(name: formatTime): FC[FormatDateOptions & `0`] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[FormatDateOptions & `0`]]
+  
+  @scala.inline
   def createFormattedDateTimePartsComponent[Name /* <: formatDate | formatTime */](name: Name): FC[
-    (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/src/components/createFormattedComponent.Formatter[Name] */ js.Any) with `4`[Name]
-  ] = js.native
+    (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/src/components/createFormattedComponent.Formatter[Name] */ js.Any) & `4`[Name]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFormattedDateTimePartsComponent")(name.asInstanceOf[js.Any]).asInstanceOf[FC[
+    (/* import warning: importer.ImportType#apply Failed type conversion: react-intl.react-intl/src/components/createFormattedComponent.Formatter[Name] */ js.Any) & `4`[Name]
+  ]]
   
-  @js.native
   trait Formatter extends StObject {
     
-    var formatDate: FormatDateOptions = js.native
+    var formatDate: FormatDateOptions
     
-    var formatDisplayName: FormatDisplayNameOptions = js.native
+    var formatDisplayName: FormatDisplayNameOptions
     
-    var formatList: FormatListOptions = js.native
+    var formatList: FormatListOptions
     
-    var formatNumber: FormatNumberOptions = js.native
+    var formatNumber: FormatNumberOptions
     
-    var formatTime: FormatDateOptions = js.native
+    var formatTime: FormatDateOptions
   }
   object Formatter {
     

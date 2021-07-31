@@ -2,17 +2,15 @@ package typings.stickySession
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Env extends StObject {
     
-    val env: js.UndefOr[js.Any] = js.native
+    val env: js.UndefOr[js.Any] = js.undefined
     
-    val workers: js.UndefOr[Double] = js.native
+    val workers: js.UndefOr[Double] = js.undefined
   }
   object Env {
     

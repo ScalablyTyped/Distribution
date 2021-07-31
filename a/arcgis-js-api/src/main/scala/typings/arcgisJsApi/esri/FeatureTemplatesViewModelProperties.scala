@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTemplatesViewModelProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait FeatureTemplatesViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#filterFunction)
     */
-  var filterFunction: js.UndefOr[FilterFunction] = js.native
+  var filterFunction: js.UndefOr[FilterFunction] = js.undefined
   
   /**
     * It is possible to group [template items](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-TemplateItem.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#groupBy)
     */
-  var groupBy: js.UndefOr[String | GroupByFunction] = js.native
+  var groupBy: js.UndefOr[String | GroupByFunction] = js.undefined
   
   /**
     * An array of [Featurelayers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html) that are associated with the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTemplates-FeatureTemplatesViewModel.html#layers)
     */
-  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.native
+  var layers: js.UndefOr[js.Array[FeatureLayerProperties]] = js.undefined
 }
 object FeatureTemplatesViewModelProperties {
   

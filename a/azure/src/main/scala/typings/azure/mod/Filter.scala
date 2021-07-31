@@ -2,13 +2,11 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  def handle(requestOptions: js.Any, next: js.Function): Unit = js.native
+  def handle(requestOptions: js.Any, next: js.Function): Unit
 }
 object Filter {
   

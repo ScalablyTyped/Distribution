@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,4 +23,9 @@ trait DataMarks extends StObject {
   def removeCss(id: String, css: String, silent: Boolean): Unit = js.native
   def removeCss(id: Double, css: String): Unit = js.native
   def removeCss(id: Double, css: String, silent: Boolean): Unit = js.native
+}
+object DataMarks {
+  
+  @scala.inline
+  def apply: DataMarks = ^.asInstanceOf[js.Dynamic].selectDynamic("DataMarks").asInstanceOf[DataMarks]
 }

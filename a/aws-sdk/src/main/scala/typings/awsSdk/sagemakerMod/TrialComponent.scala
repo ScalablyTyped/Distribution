@@ -2,92 +2,90 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialComponent extends StObject {
   
-  var CreatedBy: js.UndefOr[UserContext] = js.native
+  var CreatedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the component was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the component as displayed. If DisplayName isn't specified, TrialComponentName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * When the component ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The input artifacts of the component.
     */
-  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
-  var LastModifiedBy: js.UndefOr[UserContext] = js.native
+  var LastModifiedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the component was last modified.
     */
-  var LastModifiedTime: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The metrics for the component.
     */
-  var Metrics: js.UndefOr[TrialComponentMetricSummaries] = js.native
+  var Metrics: js.UndefOr[TrialComponentMetricSummaries] = js.undefined
   
   /**
     * The output artifacts of the component.
     */
-  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
   /**
     * The hyperparameters of the component.
     */
-  var Parameters: js.UndefOr[TrialComponentParameters] = js.native
+  var Parameters: js.UndefOr[TrialComponentParameters] = js.undefined
   
   /**
     * An array of the parents of the component. A parent is a trial the component is associated with and the experiment the trial is part of. A component might not have any parents.
     */
-  var Parents: js.UndefOr[typings.awsSdk.sagemakerMod.Parents] = js.native
+  var Parents: js.UndefOr[typings.awsSdk.sagemakerMod.Parents] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) and job type of the source of the component.
     */
-  var Source: js.UndefOr[TrialComponentSource] = js.native
+  var Source: js.UndefOr[TrialComponentSource] = js.undefined
   
   /**
     * Details of the source of the component.
     */
-  var SourceDetail: js.UndefOr[TrialComponentSourceDetail] = js.native
+  var SourceDetail: js.UndefOr[TrialComponentSourceDetail] = js.undefined
   
   /**
     * When the component started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
-  var Status: js.UndefOr[TrialComponentStatus] = js.native
+  var Status: js.UndefOr[TrialComponentStatus] = js.undefined
   
   /**
     * The list of tags that are associated with the component. You can use Search API to search on the tags.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial component.
     */
-  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.native
+  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.undefined
   
   /**
     * The name of the trial component.
     */
-  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.undefined
 }
 object TrialComponent {
   

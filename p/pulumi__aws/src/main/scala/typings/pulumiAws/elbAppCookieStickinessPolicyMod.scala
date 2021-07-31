@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elbAppCookieStickinessPolicyMod {
@@ -51,6 +50,10 @@ object elbAppCookieStickinessPolicyMod {
   /* static members */
   object AppCookieStickinessPolicy {
     
+    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AppCookieStickinessPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,53 +63,47 @@ object elbAppCookieStickinessPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AppCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AppCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): AppCookieStickinessPolicy = js.native
-    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): AppCookieStickinessPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AppCookieStickinessPolicyState, opts: CustomResourceOptions): AppCookieStickinessPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AppCookieStickinessPolicy]
     
     /**
       * Returns true if the given object is an instance of AppCookieStickinessPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elb/appCookieStickinessPolicy", "AppCookieStickinessPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elb/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elb/appCookieStickinessPolicy.AppCookieStickinessPolicy */ Boolean]
   }
   
-  @js.native
   trait AppCookieStickinessPolicyArgs extends StObject {
     
     /**
       * The application cookie whose lifetime the ELB's cookie should follow.
       */
-    val cookieName: Input[String] = js.native
+    val cookieName: Input[String]
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: Input[Double] = js.native
+    val lbPort: Input[Double]
     
     /**
       * The name of load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: Input[String] = js.native
+    val loadBalancer: Input[String]
     
     /**
       * The name of the stickiness policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object AppCookieStickinessPolicyArgs {
     
@@ -136,31 +133,30 @@ object elbAppCookieStickinessPolicyMod {
     }
   }
   
-  @js.native
   trait AppCookieStickinessPolicyState extends StObject {
     
     /**
       * The application cookie whose lifetime the ELB's cookie should follow.
       */
-    val cookieName: js.UndefOr[Input[String]] = js.native
+    val cookieName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The load balancer port to which the policy
       * should be applied. This must be an active listener on the load
       * balancer.
       */
-    val lbPort: js.UndefOr[Input[Double]] = js.native
+    val lbPort: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The name of load balancer to which the policy
       * should be attached.
       */
-    val loadBalancer: js.UndefOr[Input[String]] = js.native
+    val loadBalancer: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the stickiness policy.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object AppCookieStickinessPolicyState {
     

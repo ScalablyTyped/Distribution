@@ -13,29 +13,29 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.t
 import typings.elasticElasticsearch.elasticElasticsearchStrings.tb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatAllocation extends Generic {
+trait CatAllocation
+  extends StObject
+     with Generic {
   
-  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.native
+  var bytes: js.UndefOr[b | k | kb | m | mb | g | gb | t | tb | p | pb] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var h: js.UndefOr[String | js.Array[String]] = js.native
+  var h: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var help: js.UndefOr[Boolean] = js.native
+  var help: js.UndefOr[Boolean] = js.undefined
   
-  var local: js.UndefOr[Boolean] = js.native
+  var local: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var node_id: js.UndefOr[String | js.Array[String]] = js.native
+  var node_id: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var s: js.UndefOr[String | js.Array[String]] = js.native
+  var s: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var v: js.UndefOr[Boolean] = js.native
+  var v: js.UndefOr[Boolean] = js.undefined
 }
 object CatAllocation {
   

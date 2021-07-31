@@ -11,8 +11,8 @@ Parses every stack trace into a nicely formatted array of hashes.
 | Full name          | stacktrace-parser |
 | Keywords           | errors, stacktrace, parser, exceptions |
 | # releases         | 7 |
-| # dependents       | 136 |
-| # downloads        | 25060854 |
+| # dependents       | 167 |
+| # downloads        | 44517405 |
 | # stars            | 1 |
 
 ## Links

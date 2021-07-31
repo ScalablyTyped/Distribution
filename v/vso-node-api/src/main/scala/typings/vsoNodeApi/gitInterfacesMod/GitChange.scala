@@ -2,26 +2,26 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitChange extends Change[GitItem] {
+trait GitChange
+  extends StObject
+     with Change[GitItem] {
   
   /**
     * ID of the change within the group of changes.
     */
-  var changeId: Double = js.native
+  var changeId: Double
   
   /**
     * New Content template to be used when pushing new changes.
     */
-  var newContentTemplate: GitTemplate = js.native
+  var newContentTemplate: GitTemplate
   
   /**
     * Original path of item if different from current path.
     */
-  var originalPath: String = js.native
+  var originalPath: String
 }
 object GitChange {
   

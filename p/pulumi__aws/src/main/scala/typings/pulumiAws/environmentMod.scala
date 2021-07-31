@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object environmentMod {
@@ -163,6 +162,10 @@ object environmentMod {
   /* static members */
   object Environment {
     
+    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Environment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -172,59 +175,53 @@ object environmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Environment = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Environment = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EnvironmentState): Environment = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): Environment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Environment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EnvironmentState): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Environment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EnvironmentState, opts: CustomResourceOptions): Environment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Environment]
     
     /**
       * Returns true if the given object is an instance of Environment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/environment", "Environment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/environment.Environment */ Boolean]
   }
   
-  @js.native
   trait EnvironmentArgs extends StObject {
     
     /**
       * Name of the application that contains the version
       * to be deployed
       */
-    val application: Input[String | Application] = js.native
+    val application: Input[String | Application]
     
     /**
       * Prefix to use for the fully qualified DNS name of
       * the Environment.
       */
-    val cnamePrefix: js.UndefOr[Input[String]] = js.native
+    val cnamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Short description of the Environment
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for this Environment. This name is used
       * in the application URL
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the Elastic Beanstalk [Platform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn)
       * to use in deployment
       */
-    val platformArn: js.UndefOr[Input[String]] = js.native
+    val platformArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time between polling the AWS API to
@@ -232,7 +229,7 @@ object environmentMod {
       * for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
       * use the default behavior, which is an exponential backoff
       */
-    val pollInterval: js.UndefOr[Input[String]] = js.native
+    val pollInterval: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Option settings to configure the new Environment. These
@@ -241,36 +238,36 @@ object environmentMod {
       */
     val settings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.EnvironmentSetting]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A solution stack to base your environment
       * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
       */
-    val solutionStackName: js.UndefOr[Input[String]] = js.native
+    val solutionStackName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of tags to apply to the Environment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the Elastic Beanstalk Configuration
       * template to use in deployment
       */
-    val templateName: js.UndefOr[Input[String]] = js.native
+    val templateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Elastic Beanstalk Environment tier. Valid values are `Worker`
       * or `WebServer`. If tier is left blank `WebServer` will be used.
       */
-    val tier: js.UndefOr[Input[String]] = js.native
+    val tier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Elastic Beanstalk Application Version
       * to use in deployment.
       */
-    val version: js.UndefOr[Input[ApplicationVersion]] = js.native
+    val version: js.UndefOr[Input[ApplicationVersion]] = js.undefined
     
     /**
       * The maximum
@@ -278,7 +275,7 @@ object environmentMod {
       * wait for an Elastic Beanstalk Environment to be in a ready state before timing
       * out.
       */
-    val waitForReadyTimeout: js.UndefOr[Input[String]] = js.native
+    val waitForReadyTimeout: js.UndefOr[Input[String]] = js.undefined
   }
   object EnvironmentArgs {
     
@@ -371,7 +368,6 @@ object environmentMod {
     }
   }
   
-  @js.native
   trait EnvironmentState extends StObject {
     
     /**
@@ -383,68 +379,68 @@ object environmentMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.EnvironmentAllSetting]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Name of the application that contains the version
       * to be deployed
       */
-    val application: js.UndefOr[Input[String | Application]] = js.native
+    val application: js.UndefOr[Input[String | Application]] = js.undefined
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autoscaling groups used by this Environment.
       */
-    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val autoscalingGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Fully qualified DNS name for this Environment.
       */
-    val cname: js.UndefOr[Input[String]] = js.native
+    val cname: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Prefix to use for the fully qualified DNS name of
       * the Environment.
       */
-    val cnamePrefix: js.UndefOr[Input[String]] = js.native
+    val cnamePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Short description of the Environment
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URL to the Load Balancer for this Environment
       */
-    val endpointUrl: js.UndefOr[Input[String]] = js.native
+    val endpointUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Instances used by this Environment.
       */
-    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val instances: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Launch configurations in use by this Environment.
       */
-    val launchConfigurations: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val launchConfigurations: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Elastic load balancers in use by this Environment.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A unique name for this Environment. This name is used
       * in the application URL
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [ARN](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html) of the Elastic Beanstalk [Platform](https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/aws-properties-beanstalk-environment.html#cfn-beanstalk-environment-platformarn)
       * to use in deployment
       */
-    val platformArn: js.UndefOr[Input[String]] = js.native
+    val platformArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time between polling the AWS API to
@@ -452,12 +448,12 @@ object environmentMod {
       * for any `create` or `update` action. Minimum `10s`, maximum `180s`. Omit this to
       * use the default behavior, which is an exponential backoff
       */
-    val pollInterval: js.UndefOr[Input[String]] = js.native
+    val pollInterval: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * SQS queues in use by this Environment.
       */
-    val queues: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val queues: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Option settings to configure the new Environment. These
@@ -466,41 +462,41 @@ object environmentMod {
       */
     val settings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.elasticbeanstalk.EnvironmentSetting]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A solution stack to base your environment
       * off of. Example stacks can be found in the [Amazon API documentation](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/concepts.platforms.html)
       */
-    val solutionStackName: js.UndefOr[Input[String]] = js.native
+    val solutionStackName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A set of tags to apply to the Environment.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name of the Elastic Beanstalk Configuration
       * template to use in deployment
       */
-    val templateName: js.UndefOr[Input[String]] = js.native
+    val templateName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Elastic Beanstalk Environment tier. Valid values are `Worker`
       * or `WebServer`. If tier is left blank `WebServer` will be used.
       */
-    val tier: js.UndefOr[Input[String]] = js.native
+    val tier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Autoscaling triggers in use by this Environment.
       */
-    val triggers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val triggers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of the Elastic Beanstalk Application Version
       * to use in deployment.
       */
-    val version: js.UndefOr[Input[ApplicationVersion]] = js.native
+    val version: js.UndefOr[Input[ApplicationVersion]] = js.undefined
     
     /**
       * The maximum
@@ -508,7 +504,7 @@ object environmentMod {
       * wait for an Elastic Beanstalk Environment to be in a ready state before timing
       * out.
       */
-    val waitForReadyTimeout: js.UndefOr[Input[String]] = js.native
+    val waitForReadyTimeout: js.UndefOr[Input[String]] = js.undefined
   }
   object EnvironmentState {
     

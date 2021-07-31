@@ -3,27 +3,26 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.functionCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionCallExpression
-  extends BaseExpression
+  extends StObject
+     with BaseExpression
      with _Expression {
   
-  var args: js.Array[Expression] = js.native
+  var args: js.Array[Expression]
   
-  var function: String = js.native
+  var function: String
   
   @JSName("type")
-  var type_FunctionCallExpression: functionCall = js.native
+  var type_FunctionCallExpression: functionCall
 }
 object FunctionCallExpression {
   
   @scala.inline
-  def apply(args: js.Array[Expression], function: String, `type`: functionCall): FunctionCallExpression = {
+  def apply(args: js.Array[Expression], function: String): FunctionCallExpression = {
     val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("functionCall")
     __obj.asInstanceOf[FunctionCallExpression]
   }
   

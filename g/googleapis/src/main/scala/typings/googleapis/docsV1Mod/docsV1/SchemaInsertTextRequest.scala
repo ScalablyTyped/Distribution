@@ -2,20 +2,18 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts text at the specified location.
   */
-@js.native
 trait SchemaInsertTextRequest extends StObject {
   
   /**
     * Inserts the text at the end of a header, footer, footnote or the document
     * body.
     */
-  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.native
+  var endOfSegmentLocation: js.UndefOr[SchemaEndOfSegmentLocation] = js.undefined
   
   /**
     * Inserts the text at a specific index in the document.  Text must be
@@ -24,7 +22,7 @@ trait SchemaInsertTextRequest extends StObject {
     * and its preceding paragraph). The text must be inserted in the preceding
     * paragraph.
     */
-  var location: js.UndefOr[SchemaLocation] = js.native
+  var location: js.UndefOr[SchemaLocation] = js.undefined
   
   /**
     * The text to be inserted.  Inserting a newline character will implicitly
@@ -38,7 +36,7 @@ trait SchemaInsertTextRequest extends StObject {
     * Basic Multilingual Plane Private Use Area (U+E000-U+F8FF) will be
     * stripped out of the inserted text.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SchemaInsertTextRequest {
   

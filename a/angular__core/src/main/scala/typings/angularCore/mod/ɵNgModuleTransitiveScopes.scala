@@ -3,23 +3,21 @@ package typings.angularCore.mod
 import typings.angularCore.anon.Directives
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵNgModuleTransitiveScopes extends StObject {
   
-  var compilation: Directives = js.native
+  var compilation: Directives
   
-  var exported: Directives = js.native
+  var exported: Directives
   
-  var schemas: js.Array[SchemaMetadata] | Null = js.native
+  var schemas: js.Array[SchemaMetadata] | Null
 }
 object ɵNgModuleTransitiveScopes {
   
   @scala.inline
   def apply(compilation: Directives, exported: Directives): ɵNgModuleTransitiveScopes = {
-    val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compilation = compilation.asInstanceOf[js.Any], exported = exported.asInstanceOf[js.Any], schemas = null)
     __obj.asInstanceOf[ɵNgModuleTransitiveScopes]
   }
   

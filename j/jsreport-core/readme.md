@@ -10,9 +10,9 @@ javascript based business reporting
 | ------------------ | :-------------: |
 | Full name          | jsreport-core |
 | Keywords           | report, business, javascript |
-| # releases         | 19 |
-| # dependents       | 10 |
-| # downloads        | 270618 |
+| # releases         | 17 |
+| # dependents       | 11 |
+| # downloads        | 257139 |
 | # stars            | 3 |
 
 ## Links

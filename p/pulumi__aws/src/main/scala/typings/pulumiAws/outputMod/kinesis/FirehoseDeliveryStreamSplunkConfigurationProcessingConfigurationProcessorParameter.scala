@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter extends StObject {
   
   /**
     * Parameter name. Valid Values: `LambdaArn`, `NumberOfRetries`, `RoleArn`, `BufferSizeInMBs`, `BufferIntervalInSeconds`
     */
-  var parameterName: String = js.native
+  var parameterName: String
   
   /**
     * Parameter value. Must be between 1 and 512 length (inclusive). When providing a Lambda ARN, you should specify the resource version as well.
     */
-  var parameterValue: String = js.native
+  var parameterValue: String
 }
 object FirehoseDeliveryStreamSplunkConfigurationProcessingConfigurationProcessorParameter {
   

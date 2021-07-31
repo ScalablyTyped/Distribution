@@ -2,15 +2,13 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVideoRating extends StObject {
   
-  var rating: js.UndefOr[String] = js.native
+  var rating: js.UndefOr[String] = js.undefined
   
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoRating {
   

@@ -2,51 +2,49 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaFlags extends StObject {
   
   /**
     * Whether the media element can be rotated.
     */
-  var canRotate: Boolean = js.native
+  var canRotate: Boolean
   
   /**
     * Whether the media element's controls are toggleable.
     */
-  var canToggleControls: Boolean = js.native
+  var canToggleControls: Boolean
   
   /**
     * Whether the media element has audio.
     */
-  var hasAudio: Boolean = js.native
+  var hasAudio: Boolean
   
   /**
     * Whether the media element has crashed.
     */
-  var inError: Boolean = js.native
+  var inError: Boolean
   
   /**
     * Whether the media element's controls are visible.
     */
-  var isControlsVisible: Boolean = js.native
+  var isControlsVisible: Boolean
   
   /**
     * Whether the media element is looping.
     */
-  var isLooping: Boolean = js.native
+  var isLooping: Boolean
   
   /**
     * Whether the media element is muted.
     */
-  var isMuted: Boolean = js.native
+  var isMuted: Boolean
   
   /**
     * Whether the media element is paused.
     */
-  var isPaused: Boolean = js.native
+  var isPaused: Boolean
 }
 object MediaFlags {
   

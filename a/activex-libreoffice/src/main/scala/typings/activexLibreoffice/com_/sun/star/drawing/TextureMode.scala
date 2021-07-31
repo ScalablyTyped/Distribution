@@ -5,7 +5,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`1`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The TextureMode defines in which way the texture color data replaces the object color data. */

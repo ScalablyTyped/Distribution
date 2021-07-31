@@ -6,10 +6,13 @@ import typings.storybookUi.anon.Layout
 import typings.storybookUi.distMod.RootProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appStoriesMod {
+  
+  @JSImport("@storybook/ui/dist/app.stories", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -36,11 +39,9 @@ object appStoriesMod {
     def title_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("title")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/ui/dist/app.stories", "Default")
-  @js.native
-  def Default_(): Element = js.native
+  @scala.inline
+  def Default_(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Default")().asInstanceOf[Element]
   
-  @JSImport("@storybook/ui/dist/app.stories", "LoadingState")
-  @js.native
-  def LoadingState(): Element = js.native
+  @scala.inline
+  def LoadingState(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("LoadingState")().asInstanceOf[Element]
 }

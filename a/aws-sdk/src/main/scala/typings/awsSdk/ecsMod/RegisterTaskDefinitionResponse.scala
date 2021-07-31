@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterTaskDefinitionResponse extends StObject {
   
   /**
     * The list of tags associated with the task definition.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
   
   /**
     * The full description of the registered task definition.
     */
-  var taskDefinition: js.UndefOr[TaskDefinition] = js.native
+  var taskDefinition: js.UndefOr[TaskDefinition] = js.undefined
 }
 object RegisterTaskDefinitionResponse {
   

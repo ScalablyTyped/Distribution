@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.Encodable
 import typings.vegaTypings.vegaTypingsStrings.arc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArcMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[ArcEncodeEntry]
      with Mark {
   
-  var `type`: arc = js.native
+  var `type`: arc
 }
 object ArcMark {
   
   @scala.inline
-  def apply(`type`: arc): ArcMark = {
+  def apply(): ArcMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("arc")
     __obj.asInstanceOf[ArcMark]
   }
   

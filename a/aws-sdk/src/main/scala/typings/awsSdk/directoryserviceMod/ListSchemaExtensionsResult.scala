@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSchemaExtensionsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value for the NextToken parameter in a subsequent call to ListSchemaExtensions to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * Information about the schema extensions applied to the directory.
     */
-  var SchemaExtensionsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionsInfo] = js.native
+  var SchemaExtensionsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.SchemaExtensionsInfo] = js.undefined
 }
 object ListSchemaExtensionsResult {
   

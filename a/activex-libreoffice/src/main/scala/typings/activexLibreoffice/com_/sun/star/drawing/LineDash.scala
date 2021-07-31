@@ -2,30 +2,28 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A {@link LineDash} defines a non-continuous line. */
-@js.native
 trait LineDash extends StObject {
   
   /** This is the length of a single dash. */
-  var DashLen: Double = js.native
+  var DashLen: Double
   
   /** This is the number of dashes. */
-  var Dashes: Double = js.native
+  var Dashes: Double
   
   /** This is the distance between the dots. */
-  var Distance: Double = js.native
+  var Distance: Double
   
   /** This is the length of a dot. */
-  var DotLen: Double = js.native
+  var DotLen: Double
   
   /** This is the number of dots in this {@link LineDash} . */
-  var Dots: Double = js.native
+  var Dots: Double
   
   /** This sets the style of this {@link LineDash} . */
-  var Style: DashStyle = js.native
+  var Style: DashStyle
 }
 object LineDash {
   

@@ -2,11 +2,12 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IEditSession extends OptionProvider {
+trait IEditSession
+  extends StObject
+     with OptionProvider {
   
   /**
     * If `text` contains either the newline (`\n`) or carriage-return ('\r') characters, `$autoNewLine` stores that value.
@@ -138,13 +139,13 @@ trait IEditSession extends OptionProvider {
   def findMatchingBracket(position: Position): Unit = js.native
   
   def foldAll(): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double, depth: Double): Unit = js.native
   def foldAll(startRow: Double): Unit = js.native
-  def foldAll(startRow: Double, endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double, depth: Double): Unit = js.native
+  def foldAll(startRow: Double, endRow: Unit, depth: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Double, depth: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Unit, depth: Double): Unit = js.native
   
   /**
     * Gets the range of a word, including its right whitespace.
@@ -210,7 +211,7 @@ trait IEditSession extends OptionProvider {
     * Returns an array containing the IDs of all the markers, either front or back.
     * @param inFront If `true`, indicates you only want front markers; `false` indicates only back markers
     **/
-  def getMarkers(inFront: Boolean): js.Array[_] = js.native
+  def getMarkers(inFront: Boolean): js.Array[js.Any] = js.native
   
   /**
     * Returns the current text mode.
@@ -410,7 +411,7 @@ trait IEditSession extends OptionProvider {
     **/
   def moveText(fromRange: Range, toPosition: js.Any): Range = js.native
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, _]): Unit = js.native
+  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
   
   /**
     * Reloads all the tokens on the current session. This function calls [[BackgroundTokenizer.start `BackgroundTokenizer.start ()`]] to all the rows; it also emits the `'tokenizerUpdate'` event.
@@ -428,7 +429,7 @@ trait IEditSession extends OptionProvider {
     * @param deltas An array of previous changes
     * @param dontSelect {:dontSelect}
     **/
-  def redoChanges(deltas: js.Array[_], dontSelect: Boolean): Range = js.native
+  def redoChanges(deltas: js.Array[js.Any], dontSelect: Boolean): Range = js.native
   
   /**
     * Removes the `range` from the document.
@@ -486,7 +487,7 @@ trait IEditSession extends OptionProvider {
     * Sets a breakpoint on every row number given by `rows`. This function also emites the `'changeBreakpoint'` event.
     * @param rows An array of row indices
     **/
-  def setBreakpoints(rows: js.Array[_]): Unit = js.native
+  def setBreakpoints(rows: js.Array[js.Any]): Unit = js.native
   
   /**
     * Sets the `EditSession` to point to a new `Document`. If a `BackgroundTokenizer` exists, it also points to `doc`.
@@ -580,7 +581,7 @@ trait IEditSession extends OptionProvider {
     * @param deltas An array of previous changes
     * @param dontSelect [If `true`, doesn't select the range of where the change occured]{: #dontSelect}
     **/
-  def undoChanges(deltas: js.Array[_], dontSelect: Boolean): Range = js.native
+  def undoChanges(deltas: js.Array[js.Any], dontSelect: Boolean): Range = js.native
   
   def unfold(arg1: js.Any, arg2: Boolean): Unit = js.native
 }

@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides for access to a container of groups, typically used for a database definition object. */
-@js.native
-trait XGroupsSupplier extends XInterface {
+trait XGroupsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of groups.
     * @returns the groups
     */
-  val Groups: XNameAccess = js.native
+  val Groups: XNameAccess
   
   /**
     * returns the container of groups.
     * @returns the groups
     */
-  def getGroups(): XNameAccess = js.native
+  def getGroups(): XNameAccess
 }
 object XGroupsSupplier {
   

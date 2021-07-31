@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LintPolicyResponse extends StObject {
   
   /** List of lint results sorted by `severity` in descending order. */
-  var lintResults: js.UndefOr[js.Array[LintResult]] = js.native
+  var lintResults: js.UndefOr[js.Array[LintResult]] = js.undefined
 }
 object LintPolicyResponse {
   

@@ -2,10 +2,8 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Recorded extends StObject {
   
   /**
@@ -14,11 +12,11 @@ trait Recorded extends StObject {
     * @param {Recorded} other Recorded object to check for equality.
     * @returns {Boolean} true if both objects are equal; false otherwise.
     */
-  def equals(other: Recorded): Boolean = js.native
+  def equals(other: Recorded): Boolean
   
-  var time: Double = js.native
+  var time: Double
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Recorded {
   

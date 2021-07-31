@@ -2,33 +2,31 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
   // events
-  var afterchartdraw: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterchartdraw: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var aftergriddraw: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.native
+  var aftergriddraw: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.undefined
   
-  var beforegriddraw: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.native
+  var beforegriddraw: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.undefined
   
-  var beforetoolbarcreated: js.UndefOr[js.Function1[/* toolbar */ Toolbar, Unit]] = js.native
+  var beforetoolbarcreated: js.UndefOr[js.Function1[/* toolbar */ Toolbar, Unit]] = js.undefined
   
-  var cellclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.native
+  var cellclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.undefined
   
-  var celldoubleclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.native
+  var celldoubleclick: js.UndefOr[js.Function1[/* cell */ CellData, Unit]] = js.undefined
   
-  var chartclick: js.UndefOr[js.Function1[/* data */ ChartData, Unit]] = js.native
+  var chartclick: js.UndefOr[js.Function1[/* data */ ChartData, Unit]] = js.undefined
   
-  var componentFolder: js.UndefOr[String] = js.native
+  var componentFolder: js.UndefOr[String] = js.undefined
   
   // other
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var customizeCell: js.UndefOr[js.Function2[/* cell */ CellBuilder, /* data */ CellData, Unit]] = js.native
+  var customizeCell: js.UndefOr[js.Function2[/* cell */ CellBuilder, /* data */ CellData, Unit]] = js.undefined
   
   var customizeContextMenu: js.UndefOr[
     js.Function3[
@@ -37,82 +35,82 @@ trait Params extends StObject {
       /* viewType */ String, 
       js.Array[ContextMenuItem]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var datachanged: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.native
+  var datachanged: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.undefined
   
-  var dataerror: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.native
+  var dataerror: js.UndefOr[js.Function1[/* param */ js.Object, Unit]] = js.undefined
   
-  var datafilecancelled: js.UndefOr[js.Function0[Unit]] = js.native
+  var datafilecancelled: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var dataloaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var dataloaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var exportcomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var exportcomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var exportstart: js.UndefOr[js.Function0[Unit]] = js.native
+  var exportstart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fieldslistclose: js.UndefOr[js.Function0[Unit]] = js.native
+  var fieldslistclose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fieldslistopen: js.UndefOr[js.Function0[Unit]] = js.native
+  var fieldslistopen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var filterclose: js.UndefOr[js.Function0[Unit]] = js.native
+  var filterclose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var filteropen: js.UndefOr[js.Function0[Unit]] = js.native
+  var filteropen: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var global: js.UndefOr[Report] = js.native
+  var global: js.UndefOr[Report] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var licenseKey: js.UndefOr[String] = js.native
+  var licenseKey: js.UndefOr[String] = js.undefined
   
-  var loadingdata: js.UndefOr[js.Function0[Unit]] = js.native
+  var loadingdata: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var loadinglocalization: js.UndefOr[js.Function0[Unit]] = js.native
+  var loadinglocalization: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var loadingolapstructure: js.UndefOr[js.Function0[Unit]] = js.native
+  var loadingolapstructure: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var loadingreportfile: js.UndefOr[js.Function0[Unit]] = js.native
+  var loadingreportfile: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var localizationerror: js.UndefOr[js.Function0[Unit]] = js.native
+  var localizationerror: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var localizationloaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var localizationloaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var olapstructureerror: js.UndefOr[js.Function0[Unit]] = js.native
+  var olapstructureerror: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var olapstructureloaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var olapstructureloaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var openingreportfile: js.UndefOr[js.Function0[Unit]] = js.native
+  var openingreportfile: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var printcomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var printcomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var printstart: js.UndefOr[js.Function0[Unit]] = js.native
+  var printstart: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var querycomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var querycomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var queryerror: js.UndefOr[js.Function0[Unit]] = js.native
+  var queryerror: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var report: js.UndefOr[Report | String] = js.native
+  var report: js.UndefOr[Report | String] = js.undefined
   
-  var reportchange: js.UndefOr[js.Function0[Unit]] = js.native
+  var reportchange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var reportcomplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var reportcomplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var reportfilecancelled: js.UndefOr[js.Function0[Unit]] = js.native
+  var reportfilecancelled: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var reportfileerror: js.UndefOr[js.Function0[Unit]] = js.native
+  var reportfileerror: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var reportfileloaded: js.UndefOr[js.Function0[Unit]] = js.native
+  var reportfileloaded: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var runningquery: js.UndefOr[js.Function0[Unit]] = js.native
+  var runningquery: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   // params
-  var toolbar: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[Boolean] = js.undefined
   
-  var update: js.UndefOr[js.Function0[Unit]] = js.native
+  var update: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object Params {
   

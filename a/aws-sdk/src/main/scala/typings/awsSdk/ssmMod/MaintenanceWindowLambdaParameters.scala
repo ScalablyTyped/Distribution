@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowLambdaParameters extends StObject {
   
   /**
     * Pass client-specific information to the Lambda function that you are invoking. You can then process the client information in your Lambda function as you choose through the context variable.
     */
-  var ClientContext: js.UndefOr[MaintenanceWindowLambdaClientContext] = js.native
+  var ClientContext: js.UndefOr[MaintenanceWindowLambdaClientContext] = js.undefined
   
   /**
     * JSON to provide to your Lambda function as input.
     */
-  var Payload: js.UndefOr[MaintenanceWindowLambdaPayload] = js.native
+  var Payload: js.UndefOr[MaintenanceWindowLambdaPayload] = js.undefined
   
   /**
     * (Optional) Specify a Lambda function version or alias name. If you specify a function version, the action uses the qualified function ARN to invoke a specific Lambda function. If you specify an alias name, the action uses the alias ARN to invoke the Lambda function version to which the alias points.
     */
-  var Qualifier: js.UndefOr[MaintenanceWindowLambdaQualifier] = js.native
+  var Qualifier: js.UndefOr[MaintenanceWindowLambdaQualifier] = js.undefined
 }
 object MaintenanceWindowLambdaParameters {
   

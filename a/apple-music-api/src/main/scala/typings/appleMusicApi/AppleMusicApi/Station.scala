@@ -3,36 +3,36 @@ package typings.appleMusicApi.AppleMusicApi
 import typings.appleMusicApi.appleMusicApiStrings.stations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/station
-@js.native
-trait Station extends Resource {
+trait Station
+  extends StObject
+     with Resource {
   
-  var artwork: Artwork = js.native
+  var artwork: Artwork
   
-  var durationInMillis: js.UndefOr[Double] = js.native
+  var durationInMillis: js.UndefOr[Double] = js.undefined
   
-  var editorialNotes: js.UndefOr[EditorialNotes] = js.native
+  var editorialNotes: js.UndefOr[EditorialNotes] = js.undefined
   
-  var episodeNumber: js.UndefOr[Double] = js.native
+  var episodeNumber: js.UndefOr[Double] = js.undefined
   
-  var isLive: Boolean = js.native
+  var isLive: Boolean
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_Station: stations = js.native
+  var type_Station: stations
   
-  var url: String = js.native
+  var url: String
 }
 object Station {
   
   @scala.inline
-  def apply(artwork: Artwork, id: String, isLive: Boolean, name: String, `type`: stations, url: String): Station = {
+  def apply(artwork: Artwork, id: String, isLive: Boolean, name: String, url: String): Station = {
     val __obj = js.Dynamic.literal(artwork = artwork.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], isLive = isLive.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stations")
     __obj.asInstanceOf[Station]
   }
   

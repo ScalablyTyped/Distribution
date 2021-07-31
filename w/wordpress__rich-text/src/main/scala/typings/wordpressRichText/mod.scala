@@ -12,205 +12,161 @@ import typings.wordpressRichText.anon.TypeofimportedSelectors
 import typings.wordpressRichText.wordpressRichTextStrings.`coreSlashrich-text`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/rich-text", "applyFormat")
+  @JSImport("@wordpress/rich-text", JSImport.Namespace)
   @js.native
-  def applyFormat(value: Value, format: Format): Value = js.native
-  @JSImport("@wordpress/rich-text", "applyFormat")
-  @js.native
-  def applyFormat(value: Value, format: Format, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "applyFormat")
-  @js.native
-  def applyFormat(value: Value, format: Format, startIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "applyFormat")
-  @js.native
-  def applyFormat(value: Value, format: Format, startIndex: Double, endIndex: Double): Value = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/rich-text", "concat")
-  @js.native
-  def concat(values: Value*): Value = js.native
+  @scala.inline
+  def applyFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def applyFormat(value: Value, format: Format, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def applyFormat(value: Value, format: Format, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def applyFormat(value: Value, format: Format, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("applyFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "create")
-  @js.native
-  def create(): Value = js.native
-  @JSImport("@wordpress/rich-text", "create")
-  @js.native
-  def create(args: Element): Value = js.native
-  @JSImport("@wordpress/rich-text", "create")
-  @js.native
-  def create(args: Html): Value = js.native
-  @JSImport("@wordpress/rich-text", "create")
-  @js.native
-  def create(args: Text): Value = js.native
+  @scala.inline
+  def concat(values: Value*): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "getActiveFormat")
-  @js.native
-  def getActiveFormat(value: Value, formatType: String): js.UndefOr[Format] = js.native
+  @scala.inline
+  def create(): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Value]
+  @scala.inline
+  def create(args: Element): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def create(args: Html): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def create(args: Text): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(args.asInstanceOf[js.Any]).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "getActiveObject")
-  @js.native
-  def getActiveObject(value: Value): js.UndefOr[js.Object] = js.native
+  @scala.inline
+  def getActiveFormat(value: Value, formatType: String): js.UndefOr[Format] = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Format]]
   
-  @JSImport("@wordpress/rich-text", "getTextContent")
-  @js.native
-  def getTextContent(value: Value): String = js.native
+  @scala.inline
+  def getActiveObject(value: Value): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveObject")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
   
-  @JSImport("@wordpress/rich-text", "insert")
-  @js.native
-  def insert(value: Value, valueToInsert: Value): Value = js.native
-  @JSImport("@wordpress/rich-text", "insert")
-  @js.native
-  def insert(value: Value, valueToInsert: Value, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "insert")
-  @js.native
-  def insert(value: Value, valueToInsert: Value, startIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "insert")
-  @js.native
-  def insert(value: Value, valueToInsert: Value, startIndex: Double, endIndex: Double): Value = js.native
+  @scala.inline
+  def getTextContent(value: Value): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/rich-text", "insertObject")
-  @js.native
-  def insertObject(value: Value, formatToInsert: Format): Value = js.native
+  @scala.inline
+  def insert(value: Value, valueToInsert: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def insert(value: Value, valueToInsert: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def insert(value: Value, valueToInsert: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def insert(value: Value, valueToInsert: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(value.asInstanceOf[js.Any], valueToInsert.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "isCollapsed")
-  @js.native
-  def isCollapsed(value: Value): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def insertObject(value: Value, formatToInsert: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("insertObject")(value.asInstanceOf[js.Any], formatToInsert.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "isEmpty")
-  @js.native
-  def isEmpty(value: Value): Boolean = js.native
+  @scala.inline
+  def isCollapsed(value: Value): js.UndefOr[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCollapsed")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Boolean]]
   
-  @JSImport("@wordpress/rich-text", "join")
-  @js.native
-  def join(values: js.Array[Value]): Value = js.native
-  @JSImport("@wordpress/rich-text", "join")
-  @js.native
-  def join(values: js.Array[Value], separator: String): Value = js.native
-  @JSImport("@wordpress/rich-text", "join")
-  @js.native
-  def join(values: js.Array[Value], separator: Value): Value = js.native
+  @scala.inline
+  def isEmpty(value: Value): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@wordpress/rich-text", "registerFormatType")
-  @js.native
-  def registerFormatType(name: String, config: FormatConfiguration): js.UndefOr[NamedFormatConfiguration] = js.native
+  @scala.inline
+  def join(values: js.Array[Value]): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def join(values: js.Array[Value], separator: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def join(values: js.Array[Value], separator: Value): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("join")(values.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "remove")
-  @js.native
-  def remove(value: Value): Value = js.native
-  @JSImport("@wordpress/rich-text", "remove")
-  @js.native
-  def remove(value: Value, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "remove")
-  @js.native
-  def remove(value: Value, startIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "remove")
-  @js.native
-  def remove(value: Value, startIndex: Double, endIndex: Double): Value = js.native
+  @scala.inline
+  def registerFormatType(name: String, config: FormatConfiguration): js.UndefOr[NamedFormatConfiguration] = (^.asInstanceOf[js.Dynamic].applyDynamic("registerFormatType")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
-  @JSImport("@wordpress/rich-text", "removeFormat")
-  @js.native
-  def removeFormat(value: Value, formatType: String): Value = js.native
-  @JSImport("@wordpress/rich-text", "removeFormat")
-  @js.native
-  def removeFormat(value: Value, formatType: String, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "removeFormat")
-  @js.native
-  def removeFormat(value: Value, formatType: String, startIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "removeFormat")
-  @js.native
-  def removeFormat(value: Value, formatType: String, startIndex: Double, endIndex: Double): Value = js.native
+  @scala.inline
+  def remove(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def remove(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def remove(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def remove(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "replace")
-  @js.native
-  def replace(value: Value, pattern: String, replacement: String): Value = js.native
-  @JSImport("@wordpress/rich-text", "replace")
-  @js.native
+  @scala.inline
+  def removeFormat(value: Value, formatType: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def removeFormat(value: Value, formatType: String, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def removeFormat(value: Value, formatType: String, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def removeFormat(value: Value, formatType: String, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("removeFormat")(value.asInstanceOf[js.Any], formatType.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  
+  @scala.inline
+  def replace(value: Value, pattern: String, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
   def replace(
     value: Value,
     pattern: String,
     replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
-  ): Value = js.native
-  @JSImport("@wordpress/rich-text", "replace")
-  @js.native
-  def replace(value: Value, pattern: RegExp, replacement: String): Value = js.native
-  @JSImport("@wordpress/rich-text", "replace")
-  @js.native
+  ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def replace(value: Value, pattern: RegExp, replacement: String): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
   def replace(
     value: Value,
     pattern: RegExp,
     replacement: js.Function2[/* match */ String, /* repeated */ js.Any, String]
-  ): Value = js.native
+  ): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(value.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], replacement.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "slice")
-  @js.native
-  def slice(value: Value): Value = js.native
-  @JSImport("@wordpress/rich-text", "slice")
-  @js.native
-  def slice(value: Value, startIndex: js.UndefOr[scala.Nothing], endIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "slice")
-  @js.native
-  def slice(value: Value, startIndex: Double): Value = js.native
-  @JSImport("@wordpress/rich-text", "slice")
-  @js.native
-  def slice(value: Value, startIndex: Double, endIndex: Double): Value = js.native
+  @scala.inline
+  def slice(value: Value): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def slice(value: Value, startIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def slice(value: Value, startIndex: Double, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
+  @scala.inline
+  def slice(value: Value, startIndex: Unit, endIndex: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(value.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value): js.Array[Value] = js.native
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value, separator: js.UndefOr[scala.Nothing], limit: Double): js.Array[Value] = js.native
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value, separator: String): js.Array[Value] = js.native
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value, separator: String, limit: Double): js.Array[Value] = js.native
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value, separator: Double): js.Array[Value] = js.native
-  @JSImport("@wordpress/rich-text", "split")
-  @js.native
-  def split(value: Value, separator: Double, limit: Double): js.Array[Value] = js.native
+  @scala.inline
+  def split(value: Value): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def split(value: Value, separator: String): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def split(value: Value, separator: String, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def split(value: Value, separator: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def split(value: Value, separator: Double, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+  @scala.inline
+  def split(value: Value, separator: Unit, limit: Double): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(value.asInstanceOf[js.Any], separator.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
   
-  @JSImport("@wordpress/rich-text", "toHTMLString")
-  @js.native
-  def toHTMLString(args: MultilineTag): String = js.native
+  @scala.inline
+  def toHTMLString(args: MultilineTag): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHTMLString")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@wordpress/rich-text", "toggleFormat")
-  @js.native
-  def toggleFormat(value: Value, format: Format): Value = js.native
+  @scala.inline
+  def toggleFormat(value: Value, format: Format): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("toggleFormat")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Value]
   
-  @JSImport("@wordpress/rich-text", "unregisterFormatType")
-  @js.native
-  def unregisterFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = js.native
+  @scala.inline
+  def unregisterFormatType(name: String): js.UndefOr[NamedFormatConfiguration] = ^.asInstanceOf[js.Dynamic].applyDynamic("unregisterFormatType")(name.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NamedFormatConfiguration]]
   
   /* augmented module */
   object wordpressDataAugmentingMod {
     
-    @JSImport("@wordpress/data", "dispatch")
+    @JSImport("@wordpress/data", JSImport.Namespace)
     @js.native
-    def dispatch_corerichtext(key: `coreSlashrich-text`): TypeofimportedActions = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@wordpress/data", "select")
-    @js.native
-    def select_corerichtext(key: `coreSlashrich-text`): TypeofimportedSelectors = js.native
+    @scala.inline
+    def dispatch_corerichtext(key: `coreSlashrich-text`): TypeofimportedActions = ^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedActions]
+    
+    @scala.inline
+    def select_corerichtext(key: `coreSlashrich-text`): TypeofimportedSelectors = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(key.asInstanceOf[js.Any]).asInstanceOf[TypeofimportedSelectors]
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var attributes: js.UndefOr[Record[String, String]] = js.native
+    var attributes: js.UndefOr[Record[String, String]] = js.undefined
     
-    var `object`: js.UndefOr[Boolean] = js.native
+    var `object`: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var unregisteredAttributes: js.UndefOr[Record[String, String]] = js.native
+    var unregisteredAttributes: js.UndefOr[Record[String, String]] = js.undefined
   }
   object Format {
     
@@ -247,7 +203,6 @@ object mod {
     }
   }
   
-  @js.native
   trait FormatConfiguration extends StObject {
     
     /**
@@ -255,31 +210,31 @@ object mod {
       *
       * { className: 'class' } => <tag class={<className attr here>}></tag>
       */
-    var attributes: js.UndefOr[Record[String, String]] = js.native
+    var attributes: js.UndefOr[Record[String, String]] = js.undefined
     
-    var className: String | Null = js.native
+    var className: String | Null
     
-    var edit: ComponentType[FormatProps] = js.native
+    var edit: ComponentType[FormatProps]
     
     var keywords: js.UndefOr[
         js.Array[String] | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String])
-      ] = js.native
+      ] = js.undefined
     
-    var `object`: js.UndefOr[Boolean] = js.native
+    var `object`: js.UndefOr[Boolean] = js.undefined
     
-    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String = js.native
+    var tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String
     
-    var title: String = js.native
+    var title: String
   }
   object FormatConfiguration {
     
     @scala.inline
     def apply(
       edit: ComponentType[FormatProps],
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
       title: String
     ): FormatConfiguration = {
-      val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)
       __obj.asInstanceOf[FormatConfiguration]
     }
     
@@ -318,7 +273,7 @@ object mod {
       
       @scala.inline
       def setTagName(
-        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String
+        value: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String
       ): Self = StObject.set(x, "tagName", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -326,16 +281,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FormatProps extends StObject {
     
-    var activeAttributes: Record[String, String] = js.native
+    var activeAttributes: Record[String, String]
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    def onChange(value: Value): Unit = js.native
+    def onChange(value: Value): Unit
     
-    var value: Value = js.native
+    var value: Value
   }
   object FormatProps {
     
@@ -362,10 +316,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait NamedFormatConfiguration extends FormatConfiguration {
+  trait NamedFormatConfiguration
+    extends StObject
+       with FormatConfiguration {
     
-    var name: String = js.native
+    var name: String
   }
   object NamedFormatConfiguration {
     
@@ -373,10 +328,10 @@ object mod {
     def apply(
       edit: ComponentType[FormatProps],
       name: String,
-      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) with String,
+      tagName: (/* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any) & String,
       title: String
     ): NamedFormatConfiguration = {
-      val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(edit = edit.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tagName = tagName.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], className = null)
       __obj.asInstanceOf[NamedFormatConfiguration]
     }
     
@@ -388,20 +343,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var activeFormats: js.UndefOr[js.Array[Format]] = js.native
+    var activeFormats: js.UndefOr[js.Array[Format]] = js.undefined
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var formats: js.Array[js.UndefOr[js.Array[Format]]] = js.native
+    var formats: js.Array[js.UndefOr[js.Array[Format]]]
     
-    var replacements: js.Array[js.UndefOr[js.Array[Format]]] = js.native
+    var replacements: js.Array[js.UndefOr[js.Array[Format]]]
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object Value {
     

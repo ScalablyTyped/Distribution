@@ -2,14 +2,12 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarState extends StObject {
   
   /** Gets the Viz object associated with the toolbar. */
-  def getViz(): Viz = js.native
+  def getViz(): Viz
   
   /**
     * Gets a value indicating whether the specified toolbar button is enabled.
@@ -17,7 +15,7 @@ trait ToolbarState extends StObject {
     * Currently, only Undo and Redo are supported.
     * Checking this property with a toolbar button that is not supported causes an InvalidToolbarButtonName error.
     */
-  def isButtonEnabled(toolbarButtonName: ToolbarButtonName): Boolean = js.native
+  def isButtonEnabled(toolbarButtonName: ToolbarButtonName): Boolean
 }
 object ToolbarState {
   

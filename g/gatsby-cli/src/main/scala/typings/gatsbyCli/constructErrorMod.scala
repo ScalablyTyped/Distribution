@@ -7,12 +7,14 @@ import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredError
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constructErrorMod {
   
-  @JSImport("gatsby-cli/lib/structured-errors/construct-error", JSImport.Default)
+  @JSImport("gatsby-cli/lib/structured-errors/construct-error", JSImport.Namespace)
   @js.native
-  def default(hasDetails: IConstructError, suppliedErrorMap: Record[ErrorId, IErrorMapEntry]): IStructuredError = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(hasHasIdOtherDetails: IConstructError, suppliedErrorMap: Record[ErrorId, IErrorMapEntry]): IStructuredError = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasHasIdOtherDetails.asInstanceOf[js.Any], suppliedErrorMap.asInstanceOf[js.Any])).asInstanceOf[IStructuredError]
 }

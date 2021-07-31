@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object samplingRuleMod {
@@ -99,6 +98,10 @@ object samplingRuleMod {
   /* static members */
   object SamplingRule {
     
+    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SamplingRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -108,95 +111,89 @@ object samplingRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SamplingRule = js.native
-    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SamplingRule = js.native
-    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SamplingRuleState): SamplingRule = js.native
-    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SamplingRuleState, opts: CustomResourceOptions): SamplingRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SamplingRuleState): SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SamplingRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SamplingRuleState, opts: CustomResourceOptions): SamplingRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SamplingRule]
     
     /**
       * Returns true if the given object is an instance of SamplingRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/xray/samplingRule", "SamplingRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/xray/samplingRule.SamplingRule */ Boolean]
   }
   
-  @js.native
   trait SamplingRuleArgs extends StObject {
     
     /**
       * Matches attributes derived from the request.
       */
-    val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The percentage of matching requests to instrument, after the reservoir is exhausted.
       */
-    val fixedRate: Input[Double] = js.native
+    val fixedRate: Input[Double]
     
     /**
       * Matches the hostname from a request URL.
       */
-    val host: Input[String] = js.native
+    val host: Input[String]
     
     /**
       * Matches the HTTP method of a request.
       */
-    val httpMethod: Input[String] = js.native
+    val httpMethod: Input[String]
     
     /**
       * The priority of the sampling rule.
       */
-    val priority: Input[Double] = js.native
+    val priority: Input[Double]
     
     /**
       * A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
       */
-    val reservoirSize: Input[Double] = js.native
+    val reservoirSize: Input[Double]
     
     /**
       * Matches the ARN of the AWS resource on which the service runs.
       */
-    val resourceArn: Input[String] = js.native
+    val resourceArn: Input[String]
     
     /**
       * The name of the sampling rule.
       */
-    val ruleName: js.UndefOr[Input[String]] = js.native
+    val ruleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Matches the `name` that the service uses to identify itself in segments.
       */
-    val serviceName: Input[String] = js.native
+    val serviceName: Input[String]
     
     /**
       * Matches the `origin` that the service uses to identify its type in segments.
       */
-    val serviceType: Input[String] = js.native
+    val serviceType: Input[String]
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Matches the path from a request URL.
       */
-    val urlPath: Input[String] = js.native
+    val urlPath: Input[String]
     
     /**
       * The version of the sampling rule format (`1` )
       */
-    val version: Input[Double] = js.native
+    val version: Input[Double]
   }
   object SamplingRuleArgs {
     
@@ -270,78 +267,77 @@ object samplingRuleMod {
     }
   }
   
-  @js.native
   trait SamplingRuleState extends StObject {
     
     /**
       * The ARN of the sampling rule.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Matches attributes derived from the request.
       */
-    val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val attributes: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The percentage of matching requests to instrument, after the reservoir is exhausted.
       */
-    val fixedRate: js.UndefOr[Input[Double]] = js.native
+    val fixedRate: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Matches the hostname from a request URL.
       */
-    val host: js.UndefOr[Input[String]] = js.native
+    val host: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Matches the HTTP method of a request.
       */
-    val httpMethod: js.UndefOr[Input[String]] = js.native
+    val httpMethod: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The priority of the sampling rule.
       */
-    val priority: js.UndefOr[Input[Double]] = js.native
+    val priority: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A fixed number of matching requests to instrument per second, prior to applying the fixed rate. The reservoir is not used directly by services, but applies to all services using the rule collectively.
       */
-    val reservoirSize: js.UndefOr[Input[Double]] = js.native
+    val reservoirSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Matches the ARN of the AWS resource on which the service runs.
       */
-    val resourceArn: js.UndefOr[Input[String]] = js.native
+    val resourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the sampling rule.
       */
-    val ruleName: js.UndefOr[Input[String]] = js.native
+    val ruleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Matches the `name` that the service uses to identify itself in segments.
       */
-    val serviceName: js.UndefOr[Input[String]] = js.native
+    val serviceName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Matches the `origin` that the service uses to identify its type in segments.
       */
-    val serviceType: js.UndefOr[Input[String]] = js.native
+    val serviceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Matches the path from a request URL.
       */
-    val urlPath: js.UndefOr[Input[String]] = js.native
+    val urlPath: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the sampling rule format (`1` )
       */
-    val version: js.UndefOr[Input[Double]] = js.native
+    val version: js.UndefOr[Input[Double]] = js.undefined
   }
   object SamplingRuleState {
     

@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationRevisionRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DescribeConfigurationRevisionRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies an MSK configuration and all of its revisions.
     
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * 
     A string that uniquely identifies a revision of an MSK configuration.
     
     */
-  var Revision: long = js.native
+  var Revision: long
 }
 object DescribeConfigurationRevisionRequest {
   

@@ -2,19 +2,17 @@ package typings.cssGlobalVariables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Autoprefix extends StObject {
     
-    var autoprefix: js.UndefOr[Boolean] = js.native
+    var autoprefix: js.UndefOr[Boolean] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var normalize: js.UndefOr[js.Function1[/* name */ String, String]] = js.native
+    var normalize: js.UndefOr[js.Function1[/* name */ String, String]] = js.undefined
   }
   object Autoprefix {
     

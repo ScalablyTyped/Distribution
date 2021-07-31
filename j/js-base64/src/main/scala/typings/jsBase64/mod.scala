@@ -3,10 +3,13 @@ package typings.jsBase64
 import typings.jsBase64.mod.global.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("js-base64", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Base64 extends StObject {
@@ -104,9 +107,8 @@ object mod {
   @js.native
   val fromUint8Array: js.Function2[/* uint8Array */ Uint8Array, /* uriSafe */ js.UndefOr[Boolean], String] = js.native
   
-  @JSImport("js-base64", "noConflict")
-  @js.native
-  def noConflict(): typings.jsBase64.mod.Base64 = js.native
+  @scala.inline
+  def noConflict(): typings.jsBase64.mod.Base64 = ^.asInstanceOf[js.Dynamic].applyDynamic("noConflict")().asInstanceOf[typings.jsBase64.mod.Base64]
   
   @JSImport("js-base64", "toBase64")
   @js.native

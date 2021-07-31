@@ -2,7 +2,6 @@ package typings.officeJs.Visio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set:  1.1]
   */
-@js.native
 trait Highlight extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait Highlight extends StObject {
     *
     * [Api set:  1.1]
     */
-  var color: String = js.native
+  var color: String
   
   /**
     *
@@ -28,7 +26,7 @@ trait Highlight extends StObject {
     *
     * [Api set:  1.1]
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Highlight {
   

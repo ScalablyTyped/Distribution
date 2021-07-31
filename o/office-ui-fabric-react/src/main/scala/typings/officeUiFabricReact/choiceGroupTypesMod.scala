@@ -17,23 +17,21 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object choiceGroupTypesMod {
   
-  @js.native
   trait IChoiceGroup extends StObject {
     
     /**
       * Gets the current checked option.
       */
-    var checkedOption: js.UndefOr[IChoiceGroupOption] = js.native
+    var checkedOption: js.UndefOr[IChoiceGroupOption] = js.undefined
     
     /**
       * Sets focus to the checked option or the first enabled option in the ChoiceGroup.
       */
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object IChoiceGroup {
     
@@ -57,70 +55,71 @@ object choiceGroupTypesMod {
     }
   }
   
-  @js.native
-  trait IChoiceGroupOption extends InputHTMLAttributes[HTMLElement | HTMLInputElement] {
+  trait IChoiceGroupOption
+    extends StObject
+       with InputHTMLAttributes[HTMLElement | HTMLInputElement] {
     
     /**
       * Aria label of the option for the benefit of screen reader users.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Props for an icon to display with this option.
       */
-    var iconProps: js.UndefOr[IIconProps] = js.native
+    var iconProps: js.UndefOr[IIconProps] = js.undefined
     
     /**
       * Alt text if the option is an image.
       * @default '' (empty string)
       */
-    var imageAlt: js.UndefOr[String] = js.native
+    var imageAlt: js.UndefOr[String] = js.undefined
     
     /**
       * The width and height of the image in px for choice field.
       * @defaultvalue `{ width: 32, height: 32 }`
       */
-    var imageSize: js.UndefOr[Height] = js.native
+    var imageSize: js.UndefOr[Height] = js.undefined
     
     /**
       * Image to display with this option.
       */
-    var imageSrc: js.UndefOr[String] = js.native
+    var imageSrc: js.UndefOr[String] = js.undefined
     
     /**
       * A required key to uniquely identify the option.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * ID used on the option's label.
       */
-    var labelId: js.UndefOr[String] = js.native
+    var labelId: js.UndefOr[String] = js.undefined
     
     /**
       * Used to customize option rendering.
       */
-    var onRenderField: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.native
+    var onRenderField: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.undefined
     
     /**
       * Used to customize label rendering.
       */
-    var onRenderLabel: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.native
+    var onRenderLabel: js.UndefOr[IRenderFunction[IChoiceGroupOption]] = js.undefined
     
     /**
       * The src of image for choice field which is selected.
       */
-    var selectedImageSrc: js.UndefOr[String] = js.native
+    var selectedImageSrc: js.UndefOr[String] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IChoiceGroupOptionStyleProps, IChoiceGroupOptionStyles]] = js.undefined
     
     /**
       * The text string for the option.
       */
-    var text: String = js.native
+    var text: String
   }
   object IChoiceGroupOption {
     
@@ -208,29 +207,30 @@ object choiceGroupTypesMod {
     }
   }
   
-  @js.native
-  trait IChoiceGroupProps extends InputHTMLAttributes[HTMLElement | HTMLInputElement] {
+  trait IChoiceGroupProps
+    extends StObject
+       with InputHTMLAttributes[HTMLElement | HTMLInputElement] {
     
     /**
       * ID of an element to use as the aria label for this ChoiceGroup.
       */
-    var ariaLabelledBy: js.UndefOr[String] = js.native
+    var ariaLabelledBy: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IChoiceGroup interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IChoiceGroup]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IChoiceGroup]] = js.undefined
     
     /**
       * The key of the option that will be initially checked.
       */
-    var defaultSelectedKey: js.UndefOr[String | Double] = js.native
+    var defaultSelectedKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Descriptive label for the choice group.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * A callback for receiving a notification when the choice has been changed.
@@ -242,7 +242,7 @@ object choiceGroupTypesMod {
           /* option */ js.UndefOr[IChoiceGroupOption], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Deprecated and will be removed by 07/17/2017. Use `onChange` instead.
@@ -254,28 +254,28 @@ object choiceGroupTypesMod {
           /* evt */ js.UndefOr[FormEvent[HTMLElement | HTMLInputElement]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The options for the choice group.
       */
-    var options: js.UndefOr[js.Array[IChoiceGroupOption]] = js.native
+    var options: js.UndefOr[js.Array[IChoiceGroupOption]] = js.undefined
     
     /**
       * The key of the selected option. If you provide this, you must maintain selection
       * state by observing onChange events and passing a new value in when changed.
       */
-    var selectedKey: js.UndefOr[String | Double] = js.native
+    var selectedKey: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IChoiceGroupStyleProps, IChoiceGroupStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IChoiceGroupStyleProps, IChoiceGroupStyles]] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IChoiceGroupProps {
     
@@ -363,14 +363,13 @@ object choiceGroupTypesMod {
     }
   }
   
-  @js.native
   trait IChoiceGroupStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var optionsContainIconOrImage: js.UndefOr[Boolean] = js.native
+    var optionsContainIconOrImage: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IChoiceGroupStyleProps {
     
@@ -400,24 +399,23 @@ object choiceGroupTypesMod {
     }
   }
   
-  @js.native
   trait IChoiceGroupStyles extends StObject {
     
     /**
       * The actual root of the component.
       * @deprecated Styles will be merged with `root` in a future release.
       */
-    var applicationRole: js.UndefOr[IStyle] = js.native
+    var applicationRole: js.UndefOr[IStyle] = js.undefined
     
-    var flexContainer: js.UndefOr[IStyle] = js.native
+    var flexContainer: js.UndefOr[IStyle] = js.undefined
     
-    var label: js.UndefOr[IStyle] = js.native
+    var label: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Not currently the actual root of the component (will be fixed in a future release).
       * For now, to style the actual root, use `applicationRole`.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IChoiceGroupStyles {
     

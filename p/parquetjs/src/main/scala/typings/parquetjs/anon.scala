@@ -4,45 +4,44 @@ import typings.node.Buffer
 import typings.nodeInt64.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Codec extends StObject {
     
-    var codec: Double | Null = js.native
+    var codec: Double | Null
     
-    var data_page_offset: ^ | Null = js.native
+    var data_page_offset: ^ | Null
     
-    var dictionary_page_offset: ^ | Null = js.native
+    var dictionary_page_offset: ^ | Null
     
-    var encoding_stats: js.Any = js.native
+    var encoding_stats: js.Any
     
-    var encodings: js.Array[Double] | Null = js.native
+    var encodings: js.Array[Double] | Null
     
-    var index_page_offset: ^ | Null = js.native
+    var index_page_offset: ^ | Null
     
-    var key_value_metadata: js.Array[Key] | Null = js.native
+    var key_value_metadata: js.Array[Key] | Null
     
-    var num_values: ^ | Null = js.native
+    var num_values: ^ | Null
     
-    var path_in_schema: (js.Array[js.Array[String] | String]) | Null = js.native
+    var path_in_schema: (js.Array[js.Array[String] | String]) | Null
     
-    var statistics: js.Any = js.native
+    var statistics: js.Any
     
-    var total_compressed_size: ^ | Null = js.native
+    var total_compressed_size: ^ | Null
     
-    var total_uncompressed_size: ^ | Null = js.native
+    var total_uncompressed_size: ^ | Null
     
-    var `type`: Double | Null = js.native
+    var `type`: Double | Null
   }
   object Codec {
     
     @scala.inline
     def apply(encoding_stats: js.Any, statistics: js.Any): Codec = {
-      val __obj = js.Dynamic.literal(encoding_stats = encoding_stats.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(encoding_stats = encoding_stats.asInstanceOf[js.Any], statistics = statistics.asInstanceOf[js.Any], codec = null, data_page_offset = null, dictionary_page_offset = null, encodings = null, index_page_offset = null, key_value_metadata = null, num_values = null, path_in_schema = null, total_compressed_size = null, total_uncompressed_size = null)
+      __obj.updateDynamic("type")(null)
       __obj.asInstanceOf[Codec]
     }
     
@@ -132,22 +131,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Columns extends StObject {
     
-    var columns: js.Any = js.native
+    var columns: js.Any
     
-    var num_rows: Double = js.native
+    var num_rows: Double
     
-    var sorting_columns: Null | js.Array[String] = js.native
+    var sorting_columns: Null | js.Array[String]
     
-    var total_byte_size: Double = js.native
+    var total_byte_size: Double
   }
   object Columns {
     
     @scala.inline
     def apply(columns: js.Any, num_rows: Double, total_byte_size: Double): Columns = {
-      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(columns = columns.asInstanceOf[js.Any], num_rows = num_rows.asInstanceOf[js.Any], total_byte_size = total_byte_size.asInstanceOf[js.Any], sorting_columns = null)
       __obj.asInstanceOf[Columns]
     }
     
@@ -174,16 +172,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var dlevels: js.Array[Double] = js.native
+    var dlevels: js.Array[Double]
     
-    var rlevels: js.Array[Double] = js.native
+    var rlevels: js.Array[Double]
     
-    var values: js.Array[Buffer] = js.native
+    var values: js.Array[Buffer]
   }
   object Count {
     
@@ -219,12 +216,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object Key {
     

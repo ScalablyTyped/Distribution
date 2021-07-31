@@ -3,7 +3,6 @@ package typings.nightwatch.mod
 import typings.nightwatch.anon.ELEMENT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -35,7 +34,7 @@ trait WebDriverProtocolElements extends StObject {
     * }
     */
   def element(
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
@@ -77,10 +76,10 @@ trait WebDriverProtocolElements extends StObject {
     *   }
     * }
     */
-  def elementIdElement(id: String, using: LocateStrategy, value: String): this.type = js.native
+  def elementIdElement(id: String, `using`: LocateStrategy, value: String): this.type = js.native
   def elementIdElement(
     id: String,
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[ELEMENT], Unit]
   ): this.type = js.native
@@ -102,10 +101,10 @@ trait WebDriverProtocolElements extends StObject {
     *   }
     * }
     */
-  def elementIdElements(id: String, using: LocateStrategy, value: String): this.type = js.native
+  def elementIdElements(id: String, `using`: LocateStrategy, value: String): this.type = js.native
   def elementIdElements(
     id: String,
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 
@@ -174,7 +173,7 @@ trait WebDriverProtocolElements extends StObject {
     * }
     */
   def elements(
-    using: LocateStrategy,
+    `using`: LocateStrategy,
     value: String,
     callback: js.ThisFunction1[
       /* this */ NightwatchAPI, 

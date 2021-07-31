@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransactionList extends StObject {
   
   /** TransactionList transactions */
-  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.native
+  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.undefined
 }
 object ITransactionList {
   

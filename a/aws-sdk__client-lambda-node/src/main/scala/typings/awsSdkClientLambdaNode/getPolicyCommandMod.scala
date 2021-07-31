@@ -7,16 +7,18 @@ import typings.awsSdkClientLambdaNode.typesGetPolicyInputMod.GetPolicyInput
 import typings.awsSdkClientLambdaNode.typesGetPolicyOutputMod.GetPolicyOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPolicyCommandMod {
   
   @JSImport("@aws-sdk/client-lambda-node/commands/GetPolicyCommand", "GetPolicyCommand")
   @js.native
-  class GetPolicyCommand protected () extends Command[
+  class GetPolicyCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetPolicyInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object getPolicyCommandMod {
         ] {
     def this(input: GetPolicyInput) = this()
     
+    /* CompleteClass */
+    override val input: GetPolicyInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetPolicyInput, GetPolicyOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: LambdaResolvedConfiguration
+    ): Handler[GetPolicyInput, GetPolicyOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: LambdaResolvedConfiguration,
+      options: js.Any
     ): Handler[GetPolicyInput, GetPolicyOutput] = js.native
   }
 }

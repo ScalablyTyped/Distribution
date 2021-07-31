@@ -4,26 +4,26 @@ import typings.reactNavigationRouters.reactNavigationRoutersStrings.REPLACE
 import typings.reactNavigationRouters.stackRouterMod.StackActionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PayloadSource extends StackActionType {
+trait PayloadSource
+  extends StObject
+     with StackActionType {
   
-  var payload: Name = js.native
+  var payload: Name
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: REPLACE = js.native
+  var `type`: REPLACE
 }
 object PayloadSource {
   
   @scala.inline
-  def apply(payload: Name, `type`: REPLACE): PayloadSource = {
+  def apply(payload: Name): PayloadSource = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("REPLACE")
     __obj.asInstanceOf[PayloadSource]
   }
   

@@ -4,18 +4,17 @@ import typings.parameter.parameterStrings.`object`
 import typings.parameter.parameterStrings.objectQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRuleObject
-  extends ParameterRuleBase
+  extends StObject
+     with ParameterRuleBase
      with _ParameterRuleItem {
   
-  var rule: js.UndefOr[ParameterRules] = js.native
+  var rule: js.UndefOr[ParameterRules] = js.undefined
   
   @JSName("type")
-  var type_ParameterRuleObject: `object` | objectQuestionmark = js.native
+  var type_ParameterRuleObject: `object` | objectQuestionmark
 }
 object ParameterRuleObject {
   

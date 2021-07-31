@@ -4,21 +4,19 @@ import typings.jose.joseBooleans.`true`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined jose.jose.JWT.DecodeOptions & {  complete :true} */
-  @js.native
   trait DecodeOptionscompletetrue extends StObject {
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
   }
   object DecodeOptionscompletetrue {
     
     @scala.inline
-    def apply(complete: js.UndefOr[Boolean] with `true`): DecodeOptionscompletetrue = {
+    def apply(complete: js.UndefOr[Boolean] & `true`): DecodeOptionscompletetrue = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecodeOptionscompletetrue]
     }
@@ -27,26 +25,25 @@ object anon {
     implicit class DecodeOptionscompletetrueMutableBuilder[Self <: DecodeOptionscompletetrue] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     }
   }
   
   /* Inlined jose.jose.JWE.DecryptOptions & {  complete :true} */
-  @js.native
   trait DecryptOptionscompletetru extends StObject {
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var contentEncryptionAlgorithms: js.UndefOr[js.Array[String]] = js.native
+    var contentEncryptionAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var keyManagementAlgorithms: js.UndefOr[js.Array[String]] = js.native
+    var keyManagementAlgorithms: js.UndefOr[js.Array[String]] = js.undefined
   }
   object DecryptOptionscompletetru {
     
     @scala.inline
-    def apply(complete: js.UndefOr[Boolean] with `true`): DecryptOptionscompletetru = {
+    def apply(complete: js.UndefOr[Boolean] & `true`): DecryptOptionscompletetru = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[DecryptOptionscompletetru]
     }
@@ -55,7 +52,7 @@ object anon {
     implicit class DecryptOptionscompletetruMutableBuilder[Self <: DecryptOptionscompletetru] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContentEncryptionAlgorithms(value: js.Array[String]): Self = StObject.set(x, "contentEncryptionAlgorithms", value.asInstanceOf[js.Any])
@@ -87,19 +84,18 @@ object anon {
   }
   
   /* Inlined jose.jose.JWS.VerifyOptions & {  complete :true} */
-  @js.native
   trait VerifyOptionscompletetrue extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
   }
   object VerifyOptionscompletetrue {
     
     @scala.inline
-    def apply(complete: js.UndefOr[Boolean] with `true`): VerifyOptionscompletetrue = {
+    def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrue = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrue]
     }
@@ -117,7 +113,7 @@ object anon {
       def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
@@ -131,41 +127,40 @@ object anon {
   }
   
   /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} */
-  @js.native
   trait VerifyOptionscompletetrueAlgorithms extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var clockTolerance: js.UndefOr[String] = js.native
+    var clockTolerance: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.native
+    var ignoreExp: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreIat: js.UndefOr[Boolean] = js.native
+    var ignoreIat: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNbf: js.UndefOr[Boolean] = js.native
+    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: js.UndefOr[String | js.Array[String]] = js.native
+    var issuer: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var maxTokenAge: js.UndefOr[String] = js.native
+    var maxTokenAge: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object VerifyOptionscompletetrueAlgorithms {
     
     @scala.inline
-    def apply(complete: js.UndefOr[Boolean] with `true`): VerifyOptionscompletetrueAlgorithms = {
+    def apply(complete: js.UndefOr[Boolean] & `true`): VerifyOptionscompletetrueAlgorithms = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrueAlgorithms]
     }
@@ -198,7 +193,7 @@ object anon {
       def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
@@ -269,48 +264,47 @@ object anon {
   }
   
   /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.IdTokenVerifyOptions */
-  @js.native
   trait VerifyOptionscompletetrueAudience extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var clockTolerance: js.UndefOr[String] = js.native
+    var clockTolerance: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.native
+    var ignoreExp: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreIat: js.UndefOr[Boolean] = js.native
+    var ignoreIat: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNbf: js.UndefOr[Boolean] = js.native
+    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var maxAuthAge: js.UndefOr[String] = js.native
+    var maxAuthAge: js.UndefOr[String] = js.undefined
     
-    var maxTokenAge: js.UndefOr[String] = js.native
+    var maxTokenAge: js.UndefOr[String] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object VerifyOptionscompletetrueAudience {
     
     @scala.inline
     def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] with `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])
+      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
+      complete: js.UndefOr[Boolean] & `true`,
+      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     ): VerifyOptionscompletetrueAudience = {
       val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrueAudience]
@@ -329,7 +323,7 @@ object anon {
       def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
       @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
@@ -338,7 +332,7 @@ object anon {
       def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
@@ -368,7 +362,7 @@ object anon {
       def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
       @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
@@ -415,44 +409,43 @@ object anon {
   }
   
   /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.LogoutTokenVerifyOptions */
-  @js.native
   trait VerifyOptionscompletetrueClockTolerance extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var clockTolerance: js.UndefOr[String] = js.native
+    var clockTolerance: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.native
+    var ignoreExp: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreIat: js.UndefOr[Boolean] = js.native
+    var ignoreIat: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNbf: js.UndefOr[Boolean] = js.native
+    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var maxTokenAge: js.UndefOr[String] = js.native
+    var maxTokenAge: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object VerifyOptionscompletetrueClockTolerance {
     
     @scala.inline
     def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] with `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])
+      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
+      complete: js.UndefOr[Boolean] & `true`,
+      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     ): VerifyOptionscompletetrueClockTolerance = {
       val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrueClockTolerance]
@@ -471,7 +464,7 @@ object anon {
       def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
       @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
@@ -480,7 +473,7 @@ object anon {
       def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
@@ -510,7 +503,7 @@ object anon {
       def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
       @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])
@@ -545,46 +538,45 @@ object anon {
   }
   
   /* Inlined jose.jose.JWT.VerifyOptions & {  complete :true} & jose.jose.JWT.AccessTokenVerifyOptions */
-  @js.native
   trait VerifyOptionscompletetrueComplete extends StObject {
     
-    var algorithms: js.UndefOr[js.Array[String]] = js.native
+    var algorithms: js.UndefOr[js.Array[String]] = js.undefined
     
-    var audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var clockTolerance: js.UndefOr[String] = js.native
+    var clockTolerance: js.UndefOr[String] = js.undefined
     
-    var complete: js.UndefOr[Boolean] with `true` = js.native
+    var complete: js.UndefOr[Boolean] & `true`
     
-    var crit: js.UndefOr[js.Array[String]] = js.native
+    var crit: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreExp: js.UndefOr[Boolean] = js.native
+    var ignoreExp: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreIat: js.UndefOr[Boolean] = js.native
+    var ignoreIat: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreNbf: js.UndefOr[Boolean] = js.native
+    var ignoreNbf: js.UndefOr[Boolean] = js.undefined
     
-    var issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]) = js.native
+    var issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     
-    var jti: js.UndefOr[String] = js.native
+    var jti: js.UndefOr[String] = js.undefined
     
-    var maxAuthAge: js.UndefOr[String] = js.native
+    var maxAuthAge: js.UndefOr[String] = js.undefined
     
-    var maxTokenAge: js.UndefOr[String] = js.native
+    var maxTokenAge: js.UndefOr[String] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var typ: js.UndefOr[String] = js.native
+    var typ: js.UndefOr[String] = js.undefined
   }
   object VerifyOptionscompletetrueComplete {
     
     @scala.inline
     def apply(
-      audience: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String]),
-      complete: js.UndefOr[Boolean] with `true`,
-      issuer: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])
+      audience: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String]),
+      complete: js.UndefOr[Boolean] & `true`,
+      issuer: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])
     ): VerifyOptionscompletetrueComplete = {
       val __obj = js.Dynamic.literal(audience = audience.asInstanceOf[js.Any], complete = complete.asInstanceOf[js.Any], issuer = issuer.asInstanceOf[js.Any])
       __obj.asInstanceOf[VerifyOptionscompletetrueComplete]
@@ -603,7 +595,7 @@ object anon {
       def setAlgorithmsVarargs(value: String*): Self = StObject.set(x, "algorithms", js.Array(value :_*))
       
       @scala.inline
-      def setAudience(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      def setAudience(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setClockTolerance(value: String): Self = StObject.set(x, "clockTolerance", value.asInstanceOf[js.Any])
@@ -612,7 +604,7 @@ object anon {
       def setClockToleranceUndefined: Self = StObject.set(x, "clockTolerance", js.undefined)
       
       @scala.inline
-      def setComplete(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrit(value: js.Array[String]): Self = StObject.set(x, "crit", value.asInstanceOf[js.Any])
@@ -642,7 +634,7 @@ object anon {
       def setIgnoreNbfUndefined: Self = StObject.set(x, "ignoreNbf", js.undefined)
       
       @scala.inline
-      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) with (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
+      def setIssuer(value: (js.UndefOr[String | js.Array[String]]) & (String | js.Array[String])): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setJti(value: String): Self = StObject.set(x, "jti", value.asInstanceOf[js.Any])

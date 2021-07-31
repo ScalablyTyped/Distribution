@@ -3,66 +3,64 @@ package typings.typeorm.typingsMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
   /**
     * Ensure we check server identify during SSL, set to false to disable checking. Only works for Node 0.12.x or higher. You can pass in a boolean or your own checkServerIdentity override function.
     */
-  var checkServerIdentity: js.UndefOr[Boolean | js.Function] = js.native
+  var checkServerIdentity: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Number of connections in the connection pool for each server instance, set to 5 as default for legacy reasons.
     */
-  var poolSize: js.UndefOr[scala.Double] = js.native
+  var poolSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Server will wait # milliseconds between retries.
     */
-  var reconnectInterval: js.UndefOr[scala.Double] = js.native
+  var reconnectInterval: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Server attempt to reconnect #times.
     */
-  var reconnectTries: js.UndefOr[scala.Double] = js.native
+  var reconnectTries: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Socket options.
     */
-  var socketOptions: js.UndefOr[SocketOptions] = js.native
+  var socketOptions: js.UndefOr[SocketOptions] = js.undefined
   
   /**
     * Use ssl connection (needs to have a mongod server with ssl support).
     */
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of valid certificates either as Buffers or Strings (needs to have a mongod server with ssl support, 2.4 or higher).
     */
-  var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.native
+  var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.undefined
   
   /**
     * String or buffer containing the certificate we wish to present (needs to have a mongod server with ssl support, 2.4 or higher).
     */
-  var sslCert: js.UndefOr[Buffer | String] = js.native
+  var sslCert: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * String or buffer containing the certificate private key we wish to present (needs to have a mongod server with ssl support, 2.4 or higher).
     */
-  var sslKey: js.UndefOr[Buffer | String] = js.native
+  var sslKey: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * String or buffer containing the certificate password (needs to have a mongod server with ssl support, 2.4 or higher).
     */
-  var sslPass: js.UndefOr[Buffer | String] = js.native
+  var sslPass: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * Validate mongod server certificate against ca (needs to have a mongod server with ssl support, 2.4 or higher).
     */
-  var sslValidate: js.UndefOr[js.Object] = js.native
+  var sslValidate: js.UndefOr[js.Object] = js.undefined
 }
 object ServerOptions {
   

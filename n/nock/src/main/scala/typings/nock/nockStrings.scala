@@ -3,7 +3,6 @@ package typings.nock
 import typings.nock.mod.BackMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nockStrings {
@@ -34,7 +33,9 @@ object nockStrings {
   def drain: drain = "drain".asInstanceOf[drain]
   
   @js.native
-  sealed trait dryrun extends BackMode
+  sealed trait dryrun
+    extends StObject
+       with BackMode
   @scala.inline
   def dryrun: dryrun = "dryrun".asInstanceOf[dryrun]
   
@@ -54,7 +55,9 @@ object nockStrings {
   def information: information = "information".asInstanceOf[information]
   
   @js.native
-  sealed trait lockdown extends BackMode
+  sealed trait lockdown
+    extends StObject
+       with BackMode
   @scala.inline
   def lockdown: lockdown = "lockdown".asInstanceOf[lockdown]
   
@@ -64,7 +67,9 @@ object nockStrings {
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait record extends BackMode
+  sealed trait record
+    extends StObject
+       with BackMode
   @scala.inline
   def record: record = "record".asInstanceOf[record]
   
@@ -94,7 +99,9 @@ object nockStrings {
   def upgrade: upgrade = "upgrade".asInstanceOf[upgrade]
   
   @js.native
-  sealed trait wild extends BackMode
+  sealed trait wild
+    extends StObject
+       with BackMode
   @scala.inline
   def wild: wild = "wild".asInstanceOf[wild]
 }

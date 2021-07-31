@@ -2,28 +2,26 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMeetingRoomConfiguration extends StObject {
   
-  var EndOfMeetingReminder: js.UndefOr[CreateEndOfMeetingReminder] = js.native
+  var EndOfMeetingReminder: js.UndefOr[CreateEndOfMeetingReminder] = js.undefined
   
   /**
     * Settings to automatically book a room for a configured duration if it's free when joining a meeting with Alexa.
     */
-  var InstantBooking: js.UndefOr[CreateInstantBooking] = js.native
+  var InstantBooking: js.UndefOr[CreateInstantBooking] = js.undefined
   
   /**
     * Settings for requiring a check in when a room is reserved. Alexa can cancel a room reservation if it's not checked into to make the room available for others. Users can check in by joining the meeting with Alexa or an AVS device, or by saying “Alexa, check in.”
     */
-  var RequireCheckIn: js.UndefOr[CreateRequireCheckIn] = js.native
+  var RequireCheckIn: js.UndefOr[CreateRequireCheckIn] = js.undefined
   
   /**
     * Whether room utilization metrics are enabled or not.
     */
-  var RoomUtilizationMetricsEnabled: js.UndefOr[Boolean] = js.native
+  var RoomUtilizationMetricsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object CreateMeetingRoomConfiguration {
   

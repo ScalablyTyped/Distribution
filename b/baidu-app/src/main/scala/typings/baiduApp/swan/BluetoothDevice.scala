@@ -3,34 +3,32 @@ package typings.baiduApp.swan
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 蓝牙设备信息
   */
-@js.native
 trait BluetoothDevice extends StObject {
   
   /**
     * int 当前蓝牙设备的信号强度
     */
-  var RSSI: Double = js.native
+  var RSSI: Double
   
   /**
     * 当前蓝牙设备的广播内容
     */
-  var advertisData: ArrayBuffer = js.native
+  var advertisData: ArrayBuffer
   
   /**
     * 用于区分设备的 id
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 蓝牙设备名称，某些设备可能没有
     */
-  var name: String = js.native
+  var name: String
 }
 object BluetoothDevice {
   

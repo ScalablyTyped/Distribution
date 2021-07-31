@@ -2,29 +2,27 @@ package typings.jsmediatags.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShortcutTags extends StObject {
   
-  var album: js.UndefOr[String] = js.native
+  var album: js.UndefOr[String] = js.undefined
   
-  var artist: js.UndefOr[String] = js.native
+  var artist: js.UndefOr[String] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var genre: js.UndefOr[String] = js.native
+  var genre: js.UndefOr[String] = js.undefined
   
-  var lyrics: js.UndefOr[String] = js.native
+  var lyrics: js.UndefOr[String] = js.undefined
   
-  var picture: js.UndefOr[PictureType] = js.native
+  var picture: js.UndefOr[PictureType] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var track: js.UndefOr[String] = js.native
+  var track: js.UndefOr[String] = js.undefined
   
-  var year: js.UndefOr[String] = js.native
+  var year: js.UndefOr[String] = js.undefined
 }
 object ShortcutTags {
   

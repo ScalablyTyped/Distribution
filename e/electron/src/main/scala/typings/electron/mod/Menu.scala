@@ -3,7 +3,6 @@ package typings.electron.mod
 import typings.electron.Electron.MenuItemConstructorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("electron", "Menu")
@@ -12,8 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Menu
   */
 class Menu ()
-  extends typings.electron.Electron.Menu
+  extends StObject
+     with typings.electron.Electron.Menu
 object Menu {
+  
+  @JSImport("electron", "Menu")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Generally, the `template` is an array of `options` for constructing a MenuItem.
@@ -23,9 +27,8 @@ object Menu {
     * become properties of the constructed menu items.
     */
   /* static member */
-  @JSImport("electron", "Menu.buildFromTemplate")
-  @js.native
-  def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = js.native
+  @scala.inline
+  def buildFromTemplate(template: js.Array[MenuItemConstructorOptions | typings.electron.Electron.MenuItem]): typings.electron.Electron.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("buildFromTemplate")(template.asInstanceOf[js.Any]).asInstanceOf[typings.electron.Electron.Menu]
   
   /**
     * The application menu, if set, or `null`, if not set.
@@ -34,9 +37,8 @@ object Menu {
     * removal of menu items. Instance properties can still be dynamically modified.
     */
   /* static member */
-  @JSImport("electron", "Menu.getApplicationMenu")
-  @js.native
-  def getApplicationMenu(): typings.electron.Electron.Menu | Null = js.native
+  @scala.inline
+  def getApplicationMenu(): typings.electron.Electron.Menu | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getApplicationMenu")().asInstanceOf[typings.electron.Electron.Menu | Null]
   
   /**
     * Sends the `action` to the first responder of application. This is used for
@@ -49,9 +51,8 @@ object Menu {
     * @platform darwin
     */
   /* static member */
-  @JSImport("electron", "Menu.sendActionToFirstResponder")
-  @js.native
-  def sendActionToFirstResponder(action: String): Unit = js.native
+  @scala.inline
+  def sendActionToFirstResponder(action: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendActionToFirstResponder")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets `menu` as the application menu on macOS. On Windows and Linux, the `menu`
@@ -71,10 +72,8 @@ object Menu {
     * `Help`.
     */
   /* static member */
-  @JSImport("electron", "Menu.setApplicationMenu")
-  @js.native
-  def setApplicationMenu(): Unit = js.native
-  @JSImport("electron", "Menu.setApplicationMenu")
-  @js.native
-  def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = js.native
+  @scala.inline
+  def setApplicationMenu(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")().asInstanceOf[Unit]
+  @scala.inline
+  def setApplicationMenu(menu: typings.electron.Electron.Menu): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setApplicationMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

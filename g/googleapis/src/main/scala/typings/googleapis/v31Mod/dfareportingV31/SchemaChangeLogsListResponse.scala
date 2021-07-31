@@ -2,30 +2,28 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Change Log List Response
   */
-@js.native
 trait SchemaChangeLogsListResponse extends StObject {
   
   /**
     * Change log collection.
     */
-  var changeLogs: js.UndefOr[js.Array[SchemaChangeLog]] = js.native
+  var changeLogs: js.UndefOr[js.Array[SchemaChangeLog]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#changeLogsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Pagination token to be used for the next list operation.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaChangeLogsListResponse {
   

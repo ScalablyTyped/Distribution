@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,7 @@ object mod {
   @js.native
   class MDCDrawer protected ()
     extends typings.materialDrawer.componentMod.MDCDrawer {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialDrawer.foundationMod.MDCDismissibleDrawerFoundation,
@@ -33,9 +32,12 @@ object mod {
   /* static members */
   object MDCDrawer {
     
-    @JSImport("@material/drawer", "MDCDrawer.attachTo")
+    @JSImport("@material/drawer", "MDCDrawer")
     @js.native
-    def attachTo(root: Element): typings.materialDrawer.componentMod.MDCDrawer = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialDrawer.componentMod.MDCDrawer = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDrawer.componentMod.MDCDrawer]
   }
   
   @JSImport("@material/drawer", "MDCModalDrawerFoundation")
@@ -150,8 +152,11 @@ object mod {
   
   object util {
     
-    @JSImport("@material/drawer", "util.createFocusTrapInstance")
+    @JSImport("@material/drawer", "util")
     @js.native
-    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDrawerFocusTrapFactory): FocusTrap = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDrawerFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
   }
 }

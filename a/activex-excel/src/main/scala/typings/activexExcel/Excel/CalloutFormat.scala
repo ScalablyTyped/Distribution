@@ -6,48 +6,46 @@ import typings.activexOffice.Office.MsoCalloutType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutFormat extends StObject {
   
-  var Accent: MsoTriState = js.native
+  var Accent: MsoTriState
   
-  var Angle: MsoCalloutAngleType = js.native
+  var Angle: MsoCalloutAngleType
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoAttach: MsoTriState = js.native
+  var AutoAttach: MsoTriState
   
-  val AutoLength: MsoTriState = js.native
+  val AutoLength: MsoTriState
   
-  def AutomaticLength(): Unit = js.native
+  def AutomaticLength(): Unit
   
-  var Border: MsoTriState = js.native
+  var Border: MsoTriState
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def CustomDrop(Drop: Double): Unit = js.native
+  def CustomDrop(Drop: Double): Unit
   
-  def CustomLength(Length: Double): Unit = js.native
+  def CustomLength(Length: Double): Unit
   
-  val Drop: Double = js.native
+  val Drop: Double
   
-  val DropType: MsoCalloutDropType = js.native
+  val DropType: MsoCalloutDropType
   
   @JSName("Excel.CalloutFormat_typekey")
-  var ExcelDotCalloutFormat_typekey: CalloutFormat = js.native
+  var ExcelDotCalloutFormat_typekey: CalloutFormat
   
-  var Gap: Double = js.native
+  var Gap: Double
   
-  val Length: Double = js.native
+  val Length: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def PresetDrop(DropType: MsoCalloutDropType): Unit = js.native
+  def PresetDrop(DropType: MsoCalloutDropType): Unit
   
-  var Type: MsoCalloutType = js.native
+  var Type: MsoCalloutType
 }
 object CalloutFormat {
   

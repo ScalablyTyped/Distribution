@@ -2,21 +2,19 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Release` is a particular [collection of configurations and
   * files](sites.versions) that is set to be public at a particular time.
   */
-@js.native
 trait SchemaRelease extends StObject {
   
   /**
     * The deploy description when the release was created. The value can be up
     * to 512&amp;nbsp;characters.
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The unique identifier for the release, in the format:
@@ -24,28 +22,28 @@ trait SchemaRelease extends StObject {
     * This name is provided in the response body when you call the
     * [`CreateRelease`](sites.releases/create) endpoint.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which the version is set to be public.
     */
-  var releaseTime: js.UndefOr[String] = js.native
+  var releaseTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Identifies the user who created the release.
     */
-  var releaseUser: js.UndefOr[SchemaActingUser] = js.native
+  var releaseUser: js.UndefOr[SchemaActingUser] = js.undefined
   
   /**
     * Explains the reason for the release. &lt;br&gt;Specify a value for this
     * field only when creating a `SITE_DISABLE` type release.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Output only.  The configuration and content that was released.
     */
-  var version: js.UndefOr[SchemaVersion] = js.native
+  var version: js.UndefOr[SchemaVersion] = js.undefined
 }
 object SchemaRelease {
   

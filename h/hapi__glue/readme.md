@@ -10,9 +10,9 @@ Server composer for hapi.js
 | ------------------ | :-------------: |
 | Full name          | @hapi/glue |
 | Keywords           | server, pack, composer, manifest, hapi |
-| # releases         | 8 |
-| # dependents       | 9 |
-| # downloads        | 326353 |
+| # releases         | 7 |
+| # dependents       | 10 |
+| # downloads        | 400420 |
 | # stars            | 0 |
 
 ## Links

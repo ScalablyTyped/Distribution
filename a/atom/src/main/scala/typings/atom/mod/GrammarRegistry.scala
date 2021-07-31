@@ -3,10 +3,8 @@ package typings.atom.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrammarRegistry extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait GrammarRegistry extends StObject {
     *  @return Returns a Disposable on which `.dispose()` can be called to remove
     *  the grammar.
     */
-  def addGrammar(grammar: Grammar): Disposable = js.native
+  def addGrammar(grammar: Grammar): Disposable
   
   /**
     *  Force a TextBuffer to use a different grammar than the one that would otherwise
@@ -27,13 +25,13 @@ trait GrammarRegistry extends StObject {
     *  @return Returns a boolean that indicates whether the language was successfully
     * found.
     */
-  def assignLanguageMode(buffer: TextBuffer, languageId: String): Boolean = js.native
+  def assignLanguageMode(buffer: TextBuffer, languageId: String): Boolean
   
   /**
     *  Remove any language mode override that has been set for the given TextBuffer.
     *  This will assign to the buffer the best language mode available.
     */
-  def autoAssignLanguageMode(buffer: TextBuffer): Unit = js.native
+  def autoAssignLanguageMode(buffer: TextBuffer): Unit
   
   /**
     *  Convert compact tags representation into convenient, space-inefficient tokens.
@@ -41,7 +39,7 @@ trait GrammarRegistry extends StObject {
     *  @param tags The tags returned from a call to Grammar::tokenizeLine().
     *  @return An array of Token instances decoded from the given tags.
     */
-  def decodeTokens(lineText: String, tags: js.Array[Double | String]): js.Array[GrammarToken] = js.native
+  def decodeTokens(lineText: String, tags: js.Array[Double | String]): js.Array[GrammarToken]
   
   /**
     *  Returns a number representing how well the grammar matches the
@@ -50,21 +48,21 @@ trait GrammarRegistry extends StObject {
     *  @param filePath A string file path.
     *  @param contents A string of text for that file path.
     */
-  def getGrammarScore(grammar: Grammar, filePath: String, contents: String): Double = js.native
+  def getGrammarScore(grammar: Grammar, filePath: String, contents: String): Double
   
   // Managing Grammars
   /**
     *  Get all the grammars in this registry.
     *  @return A non-empty array of Grammar instances.
     */
-  def getGrammars(): js.Array[Grammar] = js.native
+  def getGrammars(): js.Array[Grammar]
   
   /**
     *  Get a grammar with the given scope name.
     *  @param scopeName A string such as `source.js`.
     *  @return A Grammar or undefined.
     */
-  def grammarForScopeName(scopeName: String): js.UndefOr[Grammar] = js.native
+  def grammarForScopeName(scopeName: String): js.UndefOr[Grammar]
   
   /**
     *  Read a grammar asynchronously and add it to the registry.
@@ -75,14 +73,14 @@ trait GrammarRegistry extends StObject {
   def loadGrammar(
     grammarPath: String,
     callback: js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     *  Read a grammar synchronously and add it to this registry.
     *  @param grammarPath The absolute file path to the grammar.
     *  @return The newly loaded Grammar.
     */
-  def loadGrammarSync(grammarPath: String): Grammar = js.native
+  def loadGrammarSync(grammarPath: String): Grammar
   
   /**
     *  Set a TextBuffer's language mode based on its path and content, and continue
@@ -92,7 +90,7 @@ trait GrammarRegistry extends StObject {
     *  @return A Disposable that can be used to stop updating the buffer's
     *  language mode.
     */
-  def maintainLanguageMode(buffer: TextBuffer): Disposable = js.native
+  def maintainLanguageMode(buffer: TextBuffer): Disposable
   
   // Event Subscription
   /**
@@ -100,14 +98,14 @@ trait GrammarRegistry extends StObject {
     *  @param callback The callback to be invoked whenever a grammar is added.
     *  @return A Disposable on which `.dispose()` can be called to unsubscribe.
     */
-  def onDidAddGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable = js.native
+  def onDidAddGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable
   
   /**
     *  Invoke the given callback when a grammar is removed from the registry.
     *  @param callback The callback to be invoked whenever a grammar is removed.
     *  @return A Disposable on which `.dispose()` can be called to unsubscribe.
     */
-  def onDidRemoveGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable = js.native
+  def onDidRemoveGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable
   
   /**
     *  Invoke the given callback when a grammar is updated due to a grammar it
@@ -115,7 +113,7 @@ trait GrammarRegistry extends StObject {
     *  @param callback The callback to be invoked whenever a grammar is updated.
     *  @return A Disposable on which `.dispose()` can be called to unsubscribe.
     */
-  def onDidUpdateGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable = js.native
+  def onDidUpdateGrammar(callback: js.Function1[/* grammar */ Grammar, Unit]): Disposable
   
   /**
     *  Read a grammar asynchronously but don't add it to the registry.
@@ -125,28 +123,28 @@ trait GrammarRegistry extends StObject {
   def readGrammar(
     grammarPath: String,
     callback: js.Function2[/* error */ Error | Null, /* grammar */ js.UndefOr[Grammar], Unit]
-  ): Unit = js.native
+  ): Unit
   
   /**
     *  Read a grammar synchronously but don't add it to the registry.
     *  @param grammarPath The absolute file path to a grammar.
     *  @return The newly loaded Grammar.
     */
-  def readGrammarSync(grammarPath: String): Grammar = js.native
+  def readGrammarSync(grammarPath: String): Grammar
   
   /**
     *  Remove the given grammar from this registry.
     *  @param grammar The grammar to remove. This should be a grammar previously
     *  added to the registry from ::addGrammar.
     */
-  def removeGrammar(grammar: Grammar): Unit = js.native
+  def removeGrammar(grammar: Grammar): Unit
   
   /**
     *  Remove the grammar with the given scope name.
     *  @param scopeName A string such as `source.js`.
     *  @return Returns the removed Grammar or undefined.
     */
-  def removeGrammarForScopeName(scopeName: String): js.UndefOr[Grammar] = js.native
+  def removeGrammarForScopeName(scopeName: String): js.UndefOr[Grammar]
   
   /**
     *  Select a grammar for the given file path and file contents.
@@ -156,7 +154,7 @@ trait GrammarRegistry extends StObject {
     *  @param filePath A string file path.
     *  @param fileContents A string of text for that file path.
     */
-  def selectGrammar(filePath: String, fileContents: String): Grammar = js.native
+  def selectGrammar(filePath: String, fileContents: String): Grammar
 }
 object GrammarRegistry {
   

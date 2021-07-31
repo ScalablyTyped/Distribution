@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateContributorInsightsInput extends StObject {
   
   /**
     * Represents the contributor insights action.
     */
-  var ContributorInsightsAction: typings.awsSdk.dynamodbMod.ContributorInsightsAction = js.native
+  var ContributorInsightsAction: typings.awsSdk.dynamodbMod.ContributorInsightsAction
   
   /**
     * The global secondary index name, if applicable.
     */
-  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.native
+  var IndexName: js.UndefOr[typings.awsSdk.dynamodbMod.IndexName] = js.undefined
   
   /**
     * The name of the table.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object UpdateContributorInsightsInput {
   

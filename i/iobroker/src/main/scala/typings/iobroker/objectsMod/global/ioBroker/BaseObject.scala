@@ -3,39 +3,37 @@ package typings.iobroker.objectsMod.global.ioBroker
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseObject extends StObject {
   
   /** The ID of this object */
-  var _id: String = js.native
+  var _id: String
   
-  var acl: js.UndefOr[ObjectACL] = js.native
+  var acl: js.UndefOr[ObjectACL] = js.undefined
   
-  var common: Record[String, _] = js.native
+  var common: Record[String, js.Any]
   
-  var enums: js.UndefOr[Record[String, String]] = js.native
+  var enums: js.UndefOr[Record[String, String]] = js.undefined
   
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   // specified in the derived interfaces
   // Ideally we would limit this to JSON-serializable objects, but TypeScript doesn't allow this
   // without bugging users to change their code --> https://github.com/microsoft/TypeScript/issues/15300
-  var native: Record[String, _] = js.native
+  var native: Record[String, js.Any]
   
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
-  var `type`: ObjectType = js.native
+  var `type`: ObjectType
   
   /** The user who created or updated this object */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object BaseObject {
   
   @scala.inline
-  def apply(_id: String, common: Record[String, _], native: Record[String, _], `type`: ObjectType): BaseObject = {
+  def apply(_id: String, common: Record[String, js.Any], native: Record[String, js.Any], `type`: ObjectType): BaseObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseObject]
@@ -51,7 +49,7 @@ object BaseObject {
     def setAclUndefined: Self = StObject.set(x, "acl", js.undefined)
     
     @scala.inline
-    def setCommon(value: Record[String, _]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
+    def setCommon(value: Record[String, js.Any]): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnums(value: Record[String, String]): Self = StObject.set(x, "enums", value.asInstanceOf[js.Any])
@@ -66,7 +64,7 @@ object BaseObject {
     def setFromUndefined: Self = StObject.set(x, "from", js.undefined)
     
     @scala.inline
-    def setNative(value: Record[String, _]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
+    def setNative(value: Record[String, js.Any]): Self = StObject.set(x, "native", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTs(value: Double): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])

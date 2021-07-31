@@ -2,46 +2,44 @@ package typings.awsSdk.kinesisvideoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the signaling channel.
     */
-  var ChannelARN: js.UndefOr[ResourceARN] = js.native
+  var ChannelARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The name of the signaling channel.
     */
-  var ChannelName: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelName] = js.native
+  var ChannelName: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelName] = js.undefined
   
   /**
     * Current status of the signaling channel.
     */
-  var ChannelStatus: js.UndefOr[Status] = js.native
+  var ChannelStatus: js.UndefOr[Status] = js.undefined
   
   /**
     * The type of the signaling channel.
     */
-  var ChannelType: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelType] = js.native
+  var ChannelType: js.UndefOr[typings.awsSdk.kinesisvideoMod.ChannelType] = js.undefined
   
   /**
     * The time at which the signaling channel was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A structure that contains the configuration for the SINGLE_MASTER channel type.
     */
-  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.native
+  var SingleMasterConfiguration: js.UndefOr[typings.awsSdk.kinesisvideoMod.SingleMasterConfiguration] = js.undefined
   
   /**
     * The current version of the signaling channel.
     */
-  var Version: js.UndefOr[typings.awsSdk.kinesisvideoMod.Version] = js.native
+  var Version: js.UndefOr[typings.awsSdk.kinesisvideoMod.Version] = js.undefined
 }
 object ChannelInfo {
   

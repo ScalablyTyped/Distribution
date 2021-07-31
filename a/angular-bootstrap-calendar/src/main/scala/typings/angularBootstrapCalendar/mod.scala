@@ -7,7 +7,6 @@ import typings.moment.momentMod.Moment
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -17,26 +16,25 @@ object mod {
     
     object calendar {
       
-      @js.native
       trait ICalendarCell extends StObject {
         
-        var badgeTotal: Double = js.native
+        var badgeTotal: Double
         
-        var date: Moment = js.native
+        var date: Moment
         
-        var events: js.Array[IEvent] = js.native
+        var events: js.Array[IEvent]
         
-        var inMonth: Boolean = js.native
+        var inMonth: Boolean
         
-        var isFuture: Boolean = js.native
+        var isFuture: Boolean
         
-        var isPast: Boolean = js.native
+        var isPast: Boolean
         
-        var isToday: Boolean = js.native
+        var isToday: Boolean
         
-        var isWeekend: Boolean = js.native
+        var isWeekend: Boolean
         
-        var label: Double = js.native
+        var label: Double
       }
       object ICalendarCell {
         
@@ -91,26 +89,25 @@ object mod {
         }
       }
       
-      @js.native
       trait ICalendarConfig extends StObject {
         
-        var allDateFormats: Angular = js.native
+        var allDateFormats: Angular
         
-        var dateFormats: IDateFormats = js.native
+        var dateFormats: IDateFormats
         
-        var dateFormatter: String = js.native
+        var dateFormatter: String
         
-        var displayAllMonthEvents: Boolean = js.native
+        var displayAllMonthEvents: Boolean
         
-        var displayEventEndTimes: Boolean = js.native
+        var displayEventEndTimes: Boolean
         
-        var i18nStrings: WeekNumber = js.native
+        var i18nStrings: WeekNumber
         
-        var showTimesOnWeekView: Boolean = js.native
+        var showTimesOnWeekView: Boolean
         
-        var templates: CalendarDayView = js.native
+        var templates: CalendarDayView
         
-        var titleFormats: ITitleFormats = js.native
+        var titleFormats: ITitleFormats
       }
       object ICalendarConfig {
         
@@ -162,20 +159,19 @@ object mod {
         }
       }
       
-      @js.native
       trait IDateFormats extends StObject {
         
-        var datetime: String = js.native
+        var datetime: String
         
-        var day: String = js.native
+        var day: String
         
-        var hour: String = js.native
+        var hour: String
         
-        var month: String = js.native
+        var month: String
         
-        var time: String = js.native
+        var time: String
         
-        var weekDay: String = js.native
+        var weekDay: String
       }
       object IDateFormats {
         
@@ -208,78 +204,77 @@ object mod {
         }
       }
       
-      @js.native
       trait IEvent extends StObject {
         
         /**
           * Actions of the Event
           */
-        var actions: js.UndefOr[js.Array[IEventAction]] = js.native
+        var actions: js.UndefOr[js.Array[IEventAction]] = js.undefined
         
         /**
           * If set the event will display as all-day event
           */
-        var allDay: js.UndefOr[Boolean] = js.native
+        var allDay: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Color of the Event
           */
-        var color: js.UndefOr[IEventColor] = js.native
+        var color: js.UndefOr[IEventColor] = js.undefined
         
         /**
           * A CSS class (or more, just separate with spaces) that will be added to the event when it is displayed on each view. Useful for marking an event as selected / active etc
           */
-        var cssClass: js.UndefOr[String] = js.native
+        var cssClass: js.UndefOr[String] = js.undefined
         
         /**
           * If delete-event-html is set and this field is explicitly set to false then dont make it deleteable
           */
-        var deletable: js.UndefOr[Boolean] = js.native
+        var deletable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Allow an event to be dragged and dropped
           */
-        var draggable: js.UndefOr[Boolean] = js.native
+        var draggable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If edit-event-html is set and this field is explicitly set to false then dont make it editable.
           */
-        var editable: js.UndefOr[Boolean] = js.native
+        var editable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Optional - a javascript date object for when the event ends
           */
-        var endsAt: js.UndefOr[Date] = js.native
+        var endsAt: js.UndefOr[Date] = js.undefined
         
         /**
           * If set to false then will not count towards the badge total amount on the month and year view
           */
-        var incrementsBadgeTotal: js.UndefOr[Boolean] = js.native
+        var incrementsBadgeTotal: js.UndefOr[Boolean] = js.undefined
         
         /**
           * If set the event will recur on the given period. Valid values are year or month
           */
-        var recursOn: js.UndefOr[String] = js.native
+        var recursOn: js.UndefOr[String] = js.undefined
         
         /**
           * Allow an event to be resizable
           */
-        var resizable: js.UndefOr[Boolean] = js.native
+        var resizable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * A javascript date object for when the event starts
           */
-        var startsAt: Date = js.native
+        var startsAt: Date
         
         /**
           * The title of the event
           */
-        var title: String = js.native
+        var title: String
         
         /**
           * The type of the event (determines its color). Can be important, warning, info, inverse, success or special
           */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object IEvent {
         
@@ -375,24 +370,23 @@ object mod {
         }
       }
       
-      @js.native
       trait IEventAction extends StObject {
         
         /**
           * CSS class to be added to the action element
           */
-        var cssClass: js.UndefOr[String] = js.native
+        var cssClass: js.UndefOr[String] = js.undefined
         
         /**
           * The label of the action
           */
-        var label: String = js.native
+        var label: String
         
         /**
           * The action that occurs when it's clicked
           * @param args - the IEvent whose action was clicked
           */
-        def onClick(args: js.Any): Unit = js.native
+        def onClick(args: js.Any): Unit
       }
       object IEventAction {
         
@@ -419,18 +413,17 @@ object mod {
         }
       }
       
-      @js.native
       trait IEventColor extends StObject {
         
         /**
           * The primary color of the event, should be darker than secondary
           */
-        var primary: String = js.native
+        var primary: String
         
         /**
           * The secondary color of the event, should be lighter than primary
           */
-        var secondary: String = js.native
+        var secondary: String
       }
       object IEventColor {
         
@@ -451,12 +444,11 @@ object mod {
         }
       }
       
-      @js.native
       trait IFormats extends StObject {
         
-        var date: IDateFormats = js.native
+        var date: IDateFormats
         
-        var title: ITitleFormats = js.native
+        var title: ITitleFormats
       }
       object IFormats {
         
@@ -477,16 +469,15 @@ object mod {
         }
       }
       
-      @js.native
       trait ITitleFormats extends StObject {
         
-        var day: String = js.native
+        var day: String
         
-        var month: String = js.native
+        var month: String
         
-        var week: String = js.native
+        var week: String
         
-        var year: String = js.native
+        var year: String
       }
       object ITitleFormats {
         

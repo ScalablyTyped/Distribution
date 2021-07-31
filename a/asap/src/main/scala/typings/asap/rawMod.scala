@@ -2,7 +2,6 @@ package typings.asap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rawMod {
@@ -11,21 +10,22 @@ object rawMod {
     * Executes a task as soon as possible.
     * @param task Function or any object that implements `call()`.
     */
+  @scala.inline
+  def apply(task: Task): Unit = ^.asInstanceOf[js.Dynamic].apply(task.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   @JSImport("asap/raw", JSImport.Namespace)
   @js.native
-  def apply(task: Task): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Flushes the event queue.
     */
-  @JSImport("asap/raw", "requestFlush")
-  @js.native
-  def requestFlush(): Unit = js.native
+  @scala.inline
+  def requestFlush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestFlush")().asInstanceOf[Unit]
   
-  @js.native
   trait Task extends StObject {
     
-    def call(args: js.Any*): js.Any = js.native
+    def call(args: js.Any*): js.Any
   }
   object Task {
     

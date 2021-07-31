@@ -4,27 +4,25 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcShelvesetRef extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var comment: String = js.native
+  var comment: String
   
-  var commentTruncated: Boolean = js.native
+  var commentTruncated: Boolean
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var url: String = js.native
+  var url: String
 }
 object TfvcShelvesetRef {
   

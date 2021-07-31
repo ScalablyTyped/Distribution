@@ -2,16 +2,14 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOrganizationResponse extends StObject {
   
   /**
     * The organization ID.
     */
-  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.native
+  var OrganizationId: js.UndefOr[typings.awsSdk.workmailMod.OrganizationId] = js.undefined
 }
 object CreateOrganizationResponse {
   

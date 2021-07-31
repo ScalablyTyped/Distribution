@@ -5,23 +5,21 @@ import typings.reduxLittleRouter.mod.ObjectLiteral
 import typings.reduxLittleRouter.mod.Routes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BaseUrl extends StObject {
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var passRouterStateToReducer: js.UndefOr[Boolean] = js.native
+    var passRouterStateToReducer: js.UndefOr[Boolean] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var query: ObjectLiteral[String] = js.native
+    var query: ObjectLiteral[String]
     
-    var url: String = js.native
+    var url: String
   }
   object BaseUrl {
     
@@ -54,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var options: UpdateRoutes = js.native
+    var options: UpdateRoutes
     
-    var routes: Routes = js.native
+    var routes: Routes
   }
   object Options {
     
@@ -80,14 +77,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: String = js.native
+    var path: String
     
-    var query: ObjectLiteral[String] = js.native
+    var query: ObjectLiteral[String]
     
-    var url: String = js.native
+    var url: String
   }
   object Path {
     
@@ -111,12 +107,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Payload extends StObject {
     
-    var payload: Location = js.native
+    var payload: Location
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Payload {
     
@@ -138,10 +133,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UpdateRoutes extends StObject {
     
-    var updateRoutes: Boolean = js.native
+    var updateRoutes: Boolean
   }
   object UpdateRoutes {
     

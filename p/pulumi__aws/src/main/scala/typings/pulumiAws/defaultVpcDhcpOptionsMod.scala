@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultVpcDhcpOptionsMod {
@@ -25,7 +24,7 @@ object defaultVpcDhcpOptionsMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DefaultVpcDhcpOptionsArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DefaultVpcDhcpOptionsArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -62,6 +61,10 @@ object defaultVpcDhcpOptionsMod {
   /* static members */
   object DefaultVpcDhcpOptions {
     
+    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DefaultVpcDhcpOptions resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,45 +74,39 @@ object defaultVpcDhcpOptionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DefaultVpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultVpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState): DefaultVpcDhcpOptions = js.native
-    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState, opts: CustomResourceOptions): DefaultVpcDhcpOptions = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DefaultVpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultVpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultVpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultVpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState): DefaultVpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultVpcDhcpOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultVpcDhcpOptionsState, opts: CustomResourceOptions): DefaultVpcDhcpOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultVpcDhcpOptions]
     
     /**
       * Returns true if the given object is an instance of DefaultVpcDhcpOptions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/defaultVpcDhcpOptions", "DefaultVpcDhcpOptions.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultVpcDhcpOptions.DefaultVpcDhcpOptions */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultVpcDhcpOptions.DefaultVpcDhcpOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultVpcDhcpOptions.DefaultVpcDhcpOptions */ Boolean]
   }
   
-  @js.native
   trait DefaultVpcDhcpOptionsArgs extends StObject {
     
     /**
       * List of NETBIOS name servers.
       */
-    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see [RFC 2132](http://www.ietf.org/rfc/rfc2132.txt).
       */
-    val netbiosNodeType: js.UndefOr[Input[String]] = js.native
+    val netbiosNodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DefaultVpcDhcpOptionsArgs {
     
@@ -145,39 +142,38 @@ object defaultVpcDhcpOptionsMod {
     }
   }
   
-  @js.native
   trait DefaultVpcDhcpOptionsState extends StObject {
     
     /**
       * The ARN of the DHCP Options Set.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
-    val domainNameServers: js.UndefOr[Input[String]] = js.native
+    val domainNameServers: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of NETBIOS name servers.
       */
-    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val netbiosNameServers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The NetBIOS node type (1, 2, 4, or 8). AWS recommends to specify 2 since broadcast and multicast are not supported in their network. For more information about these node types, see [RFC 2132](http://www.ietf.org/rfc/rfc2132.txt).
       */
-    val netbiosNodeType: js.UndefOr[Input[String]] = js.native
+    val netbiosNodeType: js.UndefOr[Input[String]] = js.undefined
     
-    val ntpServers: js.UndefOr[Input[String]] = js.native
+    val ntpServers: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the DHCP options set.
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DefaultVpcDhcpOptionsState {
     

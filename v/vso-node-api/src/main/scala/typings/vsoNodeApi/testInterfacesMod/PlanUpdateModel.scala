@@ -3,45 +3,43 @@ package typings.vsoNodeApi.testInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanUpdateModel extends StObject {
   
-  var area: ShallowReference = js.native
+  var area: ShallowReference
   
-  var automatedTestEnvironment: TestEnvironment = js.native
+  var automatedTestEnvironment: TestEnvironment
   
-  var automatedTestSettings: TestSettings = js.native
+  var automatedTestSettings: TestSettings
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildDefinition: ShallowReference = js.native
+  var buildDefinition: ShallowReference
   
-  var configurationIds: js.Array[Double] = js.native
+  var configurationIds: js.Array[Double]
   
-  var description: String = js.native
+  var description: String
   
-  var endDate: String = js.native
+  var endDate: String
   
-  var iteration: String = js.native
+  var iteration: String
   
-  var manualTestEnvironment: TestEnvironment = js.native
+  var manualTestEnvironment: TestEnvironment
   
-  var manualTestSettings: TestSettings = js.native
+  var manualTestSettings: TestSettings
   
-  var name: String = js.native
+  var name: String
   
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
-  var releaseEnvironmentDefinition: ReleaseEnvironmentDefinitionReference = js.native
+  var releaseEnvironmentDefinition: ReleaseEnvironmentDefinitionReference
   
-  var startDate: String = js.native
+  var startDate: String
   
-  var state: String = js.native
+  var state: String
   
-  var status: String = js.native
+  var status: String
 }
 object PlanUpdateModel {
   

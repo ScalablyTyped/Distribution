@@ -9,29 +9,27 @@ import typings.react.mod.TouchEvent
 import typings.react.mod.TouchEventHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChipProps extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var containerElement: js.UndefOr[ReactNode | String] = js.native
+  var containerElement: js.UndefOr[ReactNode | String] = js.undefined
   
-  var deleteIconStyle: js.UndefOr[CSSProperties] = js.native
+  var deleteIconStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var labelColor: js.UndefOr[String] = js.native
+  var labelColor: js.UndefOr[String] = js.undefined
   
-  var labelStyle: js.UndefOr[CSSProperties] = js.native
+  var labelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[Chip]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[Chip]] = js.undefined
   
-  var onRequestDelete: js.UndefOr[TouchEventHandler[Chip]] = js.native
+  var onRequestDelete: js.UndefOr[TouchEventHandler[Chip]] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object ChipProps {
   

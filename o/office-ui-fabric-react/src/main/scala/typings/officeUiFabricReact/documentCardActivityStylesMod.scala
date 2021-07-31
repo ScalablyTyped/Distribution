@@ -4,10 +4,13 @@ import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardAct
 import typings.officeUiFabricReact.documentCardActivityTypesMod.IDocumentCardActivityStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardActivityStylesMod {
+  
+  @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object DocumentCardActivityGlobalClassNames {
     
@@ -58,7 +61,6 @@ object documentCardActivityStylesMod {
     def root_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("root")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("office-ui-fabric-react/lib/components/DocumentCard/DocumentCardActivity.styles", "getStyles")
-  @js.native
-  def getStyles(props: IDocumentCardActivityStyleProps): IDocumentCardActivityStyles = js.native
+  @scala.inline
+  def getStyles(props: IDocumentCardActivityStyleProps): IDocumentCardActivityStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IDocumentCardActivityStyles]
 }

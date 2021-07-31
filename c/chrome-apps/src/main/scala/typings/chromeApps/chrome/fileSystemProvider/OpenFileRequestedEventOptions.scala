@@ -8,11 +8,11 @@ import typings.chromeApps.chromeAppsStrings.WRITE
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenFileRequestedEventOptions extends FilePathRequestedEventOptions {
+trait OpenFileRequestedEventOptions
+  extends StObject
+     with FilePathRequestedEventOptions {
   
   /**
     * Whether the file will be used for reading or writing.
@@ -25,7 +25,7 @@ trait OpenFileRequestedEventOptions extends FilePathRequestedEventOptions {
       /* keyof chrome-apps.anon.READ */ typings.chromeApps.chromeAppsStrings.READ | WRITE, 
       typings.chromeApps.chromeAppsStrings.READ | WRITE
     ]
-  ] = js.native
+  ]
 }
 object OpenFileRequestedEventOptions {
   

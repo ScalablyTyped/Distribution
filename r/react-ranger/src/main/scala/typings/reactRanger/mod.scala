@@ -9,27 +9,28 @@ import typings.reactRanger.anon.GetPercentageForValue
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-ranger", "useRanger")
+  @JSImport("react-ranger", JSImport.Namespace)
   @js.native
-  def useRanger(options: RangerOptions): Ranger = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useRanger(options: RangerOptions): Ranger = ^.asInstanceOf[js.Dynamic].applyDynamic("useRanger")(options.asInstanceOf[js.Any]).asInstanceOf[Ranger]
+  
   trait HandleProps extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    def onMouseDown(event: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+    def onMouseDown(event: MouseEvent[Element, NativeMouseEvent]): Unit
     
-    def onTouchStart(event: TouchEvent[Element]): Unit = js.native
+    def onTouchStart(event: TouchEvent[Element]): Unit
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
     
-    var tabIndex: Double = js.native
+    var tabIndex: Double
   }
   object HandleProps {
     
@@ -70,8 +71,8 @@ object mod {
     
     var activeHandleIndex: Double | Null = js.native
     
-    def getTrackProps[T](): T with TrackProps = js.native
-    def getTrackProps[T](props: T): T with TrackProps = js.native
+    def getTrackProps[T](): T & TrackProps = js.native
+    def getTrackProps[T](props: T): T & TrackProps = js.native
     
     var handles: js.Array[RangerHandle] = js.native
     
@@ -85,34 +86,33 @@ object mod {
     
     var active: Boolean = js.native
     
-    def getHandleProps[T](): T with HandleProps = js.native
-    def getHandleProps[T](props: T): T with HandleProps = js.native
+    def getHandleProps[T](): T & HandleProps = js.native
+    def getHandleProps[T](props: T): T & HandleProps = js.native
     
     var value: Double = js.native
   }
   
-  @js.native
   trait RangerOptions extends StObject {
     
-    var interpolator: js.UndefOr[GetPercentageForValue] = js.native
+    var interpolator: js.UndefOr[GetPercentageForValue] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var onDrag: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onDrag: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
-    var stepSize: Double = js.native
+    var stepSize: Double
     
-    var steps: js.UndefOr[js.Array[Double]] = js.native
+    var steps: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var tickSize: js.UndefOr[Double] = js.native
+    var tickSize: js.UndefOr[Double] = js.undefined
     
-    var ticks: js.UndefOr[js.Array[Double]] = js.native
+    var ticks: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object RangerOptions {
     
@@ -187,8 +187,8 @@ object mod {
   @js.native
   trait RangerSegment extends StObject {
     
-    def getSegmentProps[T](): T with SegmentProps = js.native
-    def getSegmentProps[T](props: T): T with SegmentProps = js.native
+    def getSegmentProps[T](): T & SegmentProps = js.native
+    def getSegmentProps[T](props: T): T & SegmentProps = js.native
     
     var value: Double = js.native
   }
@@ -196,18 +196,17 @@ object mod {
   @js.native
   trait RangerTick extends StObject {
     
-    def getTickProps[T](): T with TickProps = js.native
-    def getTickProps[T](props: T): T with TickProps = js.native
+    def getTickProps[T](): T & TickProps = js.native
+    def getTickProps[T](props: T): T & TickProps = js.native
     
     var value: Double = js.native
   }
   
-  @js.native
   trait SegmentProps extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object SegmentProps {
     
@@ -228,12 +227,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TickProps extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object TickProps {
     
@@ -254,12 +252,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TrackProps extends StObject {
     
-    var key: Key = js.native
+    var key: Key
     
-    var style: CSSProperties = js.native
+    var style: CSSProperties
   }
   object TrackProps {
     

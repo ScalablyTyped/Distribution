@@ -4,17 +4,25 @@ import typings.react.mod.ComponentType
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createHigherOrderComponentMod {
   
+  @JSImport("@wordpress/compose/utils/create-higher-order-component", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // tslint:disable:no-unnecessary-generics
   // prettier-ignore
-  @JSImport("@wordpress/compose/utils/create-higher-order-component", JSImport.Default)
-  @js.native
+  @scala.inline
   def default[EP](
-    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[_], ComponentType[_]],
+    mapComponentToEnhancedComponent: js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]],
     modifierName: String
-  ): js.Function1[/* component */ ComponentType[_], ComponentType[Omit[_, /* keyof EP */ String]]] = js.native
+  ): js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(mapComponentToEnhancedComponent.asInstanceOf[js.Any], modifierName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[
+    /* component */ ComponentType[js.Any], 
+    ComponentType[Omit[js.Any, /* keyof EP */ String]]
+  ]]
 }

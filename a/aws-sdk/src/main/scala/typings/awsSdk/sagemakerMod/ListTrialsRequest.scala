@@ -2,51 +2,49 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTrialsRequest extends StObject {
   
   /**
     * A filter that returns only trials created after the specified time.
     */
-  var CreatedAfter: js.UndefOr[Timestamp] = js.native
+  var CreatedAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only trials created before the specified time.
     */
-  var CreatedBefore: js.UndefOr[Timestamp] = js.native
+  var CreatedBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A filter that returns only trials that are part of the specified experiment.
     */
-  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.native
+  var ExperimentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * The maximum number of trials to return in the response. The default value is 10.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the previous call to ListTrials didn't return the full set of trials, the call returns a token for getting the next set of trials.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The property used to sort results. The default value is CreationTime.
     */
-  var SortBy: js.UndefOr[SortTrialsBy] = js.native
+  var SortBy: js.UndefOr[SortTrialsBy] = js.undefined
   
   /**
     * The sort order. The default value is Descending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A filter that returns only trials that are associated with the specified trial component.
     */
-  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.undefined
 }
 object ListTrialsRequest {
   

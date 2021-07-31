@@ -5,7 +5,6 @@ import typings.webcola.linklengthsMod.LinkLengthAccessor
 import typings.webcola.rectangleMod.Rectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
@@ -17,19 +16,25 @@ object layoutMod {
   object EventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EventType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EventType & Double] = js.native
     
     @js.native
-    sealed trait end extends EventType
-    /* 2 */ val end: typings.webcola.layoutMod.EventType.end with Double = js.native
+    sealed trait end
+      extends StObject
+         with EventType
+    /* 2 */ val end: typings.webcola.layoutMod.EventType.end & Double = js.native
     
     @js.native
-    sealed trait start extends EventType
-    /* 0 */ val start: typings.webcola.layoutMod.EventType.start with Double = js.native
+    sealed trait start
+      extends StObject
+         with EventType
+    /* 0 */ val start: typings.webcola.layoutMod.EventType.start & Double = js.native
     
     @js.native
-    sealed trait tick extends EventType
-    /* 1 */ val tick: typings.webcola.layoutMod.EventType.tick with Double = js.native
+    sealed trait tick
+      extends StObject
+         with EventType
+    /* 1 */ val tick: typings.webcola.layoutMod.EventType.tick & Double = js.native
   }
   
   @JSImport("webcola/dist/src/layout", "Layout")
@@ -84,8 +89,8 @@ object layoutMod {
     def avoidOverlaps(): Boolean = js.native
     def avoidOverlaps(v: Boolean): this.type = js.native
     
-    def constraints(): js.Array[_] = js.native
-    def constraints(c: js.Array[_]): this.type = js.native
+    def constraints(): js.Array[js.Any] = js.native
+    def constraints(c: js.Array[js.Any]): this.type = js.native
     
     def convergenceThreshold(): Double = js.native
     def convergenceThreshold(x: Double): this.type = js.native
@@ -148,7 +153,7 @@ object layoutMod {
     
     def resume(): this.type = js.native
     
-    def routeEdge(edge: js.Any, ah: Double, draw: js.Any): js.Array[_] = js.native
+    def routeEdge(edge: js.Any, ah: Double, draw: js.Any): js.Array[js.Any] = js.native
     
     var separateOverlappingComponents: js.Any = js.native
     
@@ -182,54 +187,41 @@ object layoutMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("webcola/dist/src/layout", "Layout.drag")
-    @js.native
-    def drag(d: Group, position: X): Unit = js.native
-    @JSImport("webcola/dist/src/layout", "Layout.drag")
-    @js.native
-    def drag(d: Node, position: X): Unit = js.native
+    @scala.inline
+    def drag(d: Group, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def drag(d: Node, position: X): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drag")(d.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("webcola/dist/src/layout", "Layout.dragEnd")
-    @js.native
-    def dragEnd(d: js.Any): Unit = js.native
+    @scala.inline
+    def dragEnd(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragEnd")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("webcola/dist/src/layout", "Layout.dragOrigin")
-    @js.native
-    def dragOrigin(d: Group): X = js.native
-    @JSImport("webcola/dist/src/layout", "Layout.dragOrigin")
-    @js.native
-    def dragOrigin(d: Node): X = js.native
+    @scala.inline
+    def dragOrigin(d: Group): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
+    @scala.inline
+    def dragOrigin(d: Node): X = ^.asInstanceOf[js.Dynamic].applyDynamic("dragOrigin")(d.asInstanceOf[js.Any]).asInstanceOf[X]
     
-    @JSImport("webcola/dist/src/layout", "Layout.dragStart")
-    @js.native
-    def dragStart(d: Group): Unit = js.native
-    @JSImport("webcola/dist/src/layout", "Layout.dragStart")
-    @js.native
-    def dragStart(d: Node): Unit = js.native
+    @scala.inline
+    def dragStart(d: Group): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def dragStart(d: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dragStart")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("webcola/dist/src/layout", "Layout.getSourceIndex")
-    @js.native
-    def getSourceIndex(e: Link[Node | Double]): Double = js.native
+    @scala.inline
+    def getSourceIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("webcola/dist/src/layout", "Layout.getTargetIndex")
-    @js.native
-    def getTargetIndex(e: Link[Node | Double]): Double = js.native
+    @scala.inline
+    def getTargetIndex(e: Link[Node | Double]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getTargetIndex")(e.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("webcola/dist/src/layout", "Layout.linkId")
-    @js.native
-    def linkId(e: Link[Node | Double]): String = js.native
+    @scala.inline
+    def linkId(e: Link[Node | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("linkId")(e.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("webcola/dist/src/layout", "Layout.mouseOut")
-    @js.native
-    def mouseOut(d: js.Any): Unit = js.native
+    @scala.inline
+    def mouseOut(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOut")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("webcola/dist/src/layout", "Layout.mouseOver")
-    @js.native
-    def mouseOver(d: js.Any): Unit = js.native
+    @scala.inline
+    def mouseOver(d: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mouseOver")(d.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("webcola/dist/src/layout", "Layout.setLinkLength")
-    @js.native
-    def setLinkLength(link: Link[Node | Double], length: Double): Unit = js.native
+    @scala.inline
+    def setLinkLength(link: Link[Node | Double], length: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLinkLength")(link.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("webcola/dist/src/layout", "Layout.stopNode")
     @js.native
@@ -244,16 +236,15 @@ object layoutMod {
     def storeOffset_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("storeOffset")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait Event extends StObject {
     
-    var alpha: Double = js.native
+    var alpha: Double
     
-    var listener: js.UndefOr[js.Function0[Unit]] = js.native
+    var listener: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stress: js.UndefOr[Double] = js.native
+    var stress: js.UndefOr[Double] = js.undefined
     
-    var `type`: EventType = js.native
+    var `type`: EventType
   }
   object Event {
     
@@ -287,16 +278,15 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
-    var bounds: js.UndefOr[Rectangle] = js.native
+    var bounds: js.UndefOr[Rectangle] = js.undefined
     
-    var groups: js.UndefOr[js.Array[Group]] = js.native
+    var groups: js.UndefOr[js.Array[Group]] = js.undefined
     
-    var leaves: js.UndefOr[js.Array[Node]] = js.native
+    var leaves: js.UndefOr[js.Array[Node]] = js.undefined
     
-    var padding: Double = js.native
+    var padding: Double
   }
   object Group {
     
@@ -338,20 +328,19 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait InputNode extends StObject {
     
-    var fixed: js.UndefOr[Double] = js.native
+    var fixed: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object InputNode {
     
@@ -402,16 +391,15 @@ object layoutMod {
     }
   }
   
-  @js.native
   trait Link[NodeRefType] extends StObject {
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var source: NodeRefType = js.native
+    var source: NodeRefType
     
-    var target: NodeRefType = js.native
+    var target: NodeRefType
     
-    var weight: js.UndefOr[Double] = js.native
+    var weight: js.UndefOr[Double] = js.undefined
   }
   object Link {
     
@@ -422,7 +410,7 @@ object layoutMod {
     }
     
     @scala.inline
-    implicit class LinkMutableBuilder[Self <: Link[_], NodeRefType] (val x: Self with Link[NodeRefType]) extends AnyVal {
+    implicit class LinkMutableBuilder[Self <: Link[?], NodeRefType] (val x: Self & Link[NodeRefType]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
@@ -444,24 +432,46 @@ object layoutMod {
     }
   }
   
-  @js.native
-  trait LinkLengthTypeAccessor extends LinkLengthAccessor[Link[Node | Double]] {
+  trait LinkLengthTypeAccessor
+    extends StObject
+       with LinkLengthAccessor[Link[Node | Double]] {
     
-    def getType(t: Link[Node | Double]): Double = js.native
+    def getType(t: Link[Node | Double]): Double
     @JSName("getType")
-    var getType_Original: LinkNumericPropertyAccessor = js.native
+    var getType_Original: LinkNumericPropertyAccessor
+  }
+  object LinkLengthTypeAccessor {
+    
+    @scala.inline
+    def apply(
+      getSourceIndex: Link[Node | Double] => Double,
+      getTargetIndex: Link[Node | Double] => Double,
+      getType: /* t */ Link[Node | Double] => Double,
+      setLength: (Link[Node | Double], Double) => Unit
+    ): LinkLengthTypeAccessor = {
+      val __obj = js.Dynamic.literal(getSourceIndex = js.Any.fromFunction1(getSourceIndex), getTargetIndex = js.Any.fromFunction1(getTargetIndex), getType = js.Any.fromFunction1(getType), setLength = js.Any.fromFunction2(setLength))
+      __obj.asInstanceOf[LinkLengthTypeAccessor]
+    }
+    
+    @scala.inline
+    implicit class LinkLengthTypeAccessorMutableBuilder[Self <: LinkLengthTypeAccessor] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGetType(value: /* t */ Link[Node | Double] => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))
+    }
   }
   
   type LinkNumericPropertyAccessor = js.Function1[/* t */ Link[Node | Double], Double]
   
-  @js.native
-  trait Node extends InputNode {
+  trait Node
+    extends StObject
+       with InputNode {
     
     @JSName("x")
-    var x_Node: Double = js.native
+    var x_Node: Double
     
     @JSName("y")
-    var y_Node: Double = js.native
+    var y_Node: Double
   }
   object Node {
     

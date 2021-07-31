@@ -11,8 +11,8 @@ The lodash method `_.unescape` exported as a module.
 | Full name          | lodash.unescape |
 | Keywords           | lodash-modularized, unescape |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 112671286 |
+| # dependents       | 55 |
+| # downloads        | 88322635 |
 | # stars            | 1 |
 
 ## Links

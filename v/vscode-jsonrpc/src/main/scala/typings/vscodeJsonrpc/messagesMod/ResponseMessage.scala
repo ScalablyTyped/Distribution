@@ -2,33 +2,33 @@ package typings.vscodeJsonrpc.messagesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResponseMessage extends Message {
+trait ResponseMessage
+  extends StObject
+     with Message {
   
   /**
     * The error object in case a request fails.
     */
-  var error: js.UndefOr[ResponseErrorLiteral[_]] = js.native
+  var error: js.UndefOr[ResponseErrorLiteral[js.Any]] = js.undefined
   
   /**
     * The request id.
     */
-  var id: Double | String | Null = js.native
+  var id: Double | String | Null
   
   /**
     * The result of a request. This member is REQUIRED on success.
     * This member MUST NOT exist if there was an error invoking the method.
     */
-  var result: js.UndefOr[String | Double | Boolean | js.Object | Null] = js.native
+  var result: js.UndefOr[String | Double | Boolean | js.Object | Null] = js.undefined
 }
 object ResponseMessage {
   
   @scala.inline
   def apply(jsonrpc: String): ResponseMessage = {
-    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], id = null)
     __obj.asInstanceOf[ResponseMessage]
   }
   
@@ -36,7 +36,7 @@ object ResponseMessage {
   implicit class ResponseMessageMutableBuilder[Self <: ResponseMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setError(value: ResponseErrorLiteral[_]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
+    def setError(value: ResponseErrorLiteral[js.Any]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)

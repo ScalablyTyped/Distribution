@@ -2,15 +2,13 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gateway extends StObject {
   
-  var gateway: String = js.native
+  var gateway: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object Gateway {
   

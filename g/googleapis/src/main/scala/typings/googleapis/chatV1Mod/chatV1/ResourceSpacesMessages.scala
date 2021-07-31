@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/chat/v1", "chat_v1.Resource$Spaces$Messages")
@@ -32,7 +31,7 @@ class ResourceSpacesMessages protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaMessage] = js.native
   def create(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def create(params: ParamsResourceSpacesMessagesCreate): GaxiosPromise[SchemaMessage] = js.native
   def create(params: ParamsResourceSpacesMessagesCreate, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def create(
@@ -61,7 +60,7 @@ class ResourceSpacesMessages protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSpacesMessagesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceSpacesMessagesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -90,7 +89,7 @@ class ResourceSpacesMessages protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMessage] = js.native
   def get(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def get(params: ParamsResourceSpacesMessagesGet): GaxiosPromise[SchemaMessage] = js.native
   def get(params: ParamsResourceSpacesMessagesGet, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def get(
@@ -121,7 +120,7 @@ class ResourceSpacesMessages protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaMessage] = js.native
   def update(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def update(params: ParamsResourceSpacesMessagesUpdate): GaxiosPromise[SchemaMessage] = js.native
   def update(params: ParamsResourceSpacesMessagesUpdate, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def update(

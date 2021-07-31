@@ -2,21 +2,19 @@ package typings.awsSdk.applicationautoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutScalingPolicyResponse extends StObject {
   
   /**
     * The CloudWatch alarms created for the target tracking scaling policy.
     */
-  var Alarms: js.UndefOr[typings.awsSdk.applicationautoscalingMod.Alarms] = js.native
+  var Alarms: js.UndefOr[typings.awsSdk.applicationautoscalingMod.Alarms] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resulting scaling policy.
     */
-  var PolicyARN: ResourceIdMaxLen1600 = js.native
+  var PolicyARN: ResourceIdMaxLen1600
 }
 object PutScalingPolicyResponse {
   

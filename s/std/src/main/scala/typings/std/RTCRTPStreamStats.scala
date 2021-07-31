@@ -2,33 +2,33 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCRTPStreamStats extends RTCStats {
+trait RTCRTPStreamStats
+  extends StObject
+     with RTCStats {
   
-  var associateStatsId: js.UndefOr[java.lang.String] = js.native
+  var associateStatsId: js.UndefOr[java.lang.String] = js.undefined
   
-  var codecId: js.UndefOr[java.lang.String] = js.native
+  var codecId: js.UndefOr[java.lang.String] = js.undefined
   
-  var firCount: js.UndefOr[Double] = js.native
+  var firCount: js.UndefOr[Double] = js.undefined
   
-  var isRemote: js.UndefOr[scala.Boolean] = js.native
+  var isRemote: js.UndefOr[scala.Boolean] = js.undefined
   
-  var mediaTrackId: js.UndefOr[java.lang.String] = js.native
+  var mediaTrackId: js.UndefOr[java.lang.String] = js.undefined
   
-  var mediaType: js.UndefOr[java.lang.String] = js.native
+  var mediaType: js.UndefOr[java.lang.String] = js.undefined
   
-  var nackCount: js.UndefOr[Double] = js.native
+  var nackCount: js.UndefOr[Double] = js.undefined
   
-  var pliCount: js.UndefOr[Double] = js.native
+  var pliCount: js.UndefOr[Double] = js.undefined
   
-  var sliCount: js.UndefOr[Double] = js.native
+  var sliCount: js.UndefOr[Double] = js.undefined
   
-  var ssrc: js.UndefOr[java.lang.String] = js.native
+  var ssrc: js.UndefOr[java.lang.String] = js.undefined
   
-  var transportId: js.UndefOr[java.lang.String] = js.native
+  var transportId: js.UndefOr[java.lang.String] = js.undefined
 }
 object RTCRTPStreamStats {
   

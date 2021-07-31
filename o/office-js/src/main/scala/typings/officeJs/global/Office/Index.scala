@@ -2,7 +2,6 @@ package typings.officeJs.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Index extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJs.Office.Index with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJs.Office.Index & Double] = js.native
   
-  /* 0 */ val First: typings.officeJs.Office.Index.First with Double = js.native
+  /* 0 */ val First: typings.officeJs.Office.Index.First & Double = js.native
   
-  /* 1 */ val Last: typings.officeJs.Office.Index.Last with Double = js.native
+  /* 1 */ val Last: typings.officeJs.Office.Index.Last & Double = js.native
   
-  /* 2 */ val Next: typings.officeJs.Office.Index.Next with Double = js.native
+  /* 2 */ val Next: typings.officeJs.Office.Index.Next & Double = js.native
   
-  /* 3 */ val Previous: typings.officeJs.Office.Index.Previous with Double = js.native
+  /* 3 */ val Previous: typings.officeJs.Office.Index.Previous & Double = js.native
 }

@@ -5,30 +5,28 @@ import typings.octokitTypes.octokitTypesStrings.oldest
 import typings.octokitTypes.octokitTypesStrings.stargazers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListForksEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * The sort order. Can be either `newest`, `oldest`, or `stargazers`.
     */
-  var sort: js.UndefOr[newest | oldest | stargazers] = js.native
+  var sort: js.UndefOr[newest | oldest | stargazers] = js.undefined
 }
 object ReposListForksEndpoint {
   

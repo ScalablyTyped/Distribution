@@ -11,10 +11,13 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layerLayerMod {
+  
+  @JSImport("ol/layer/Layer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/layer/Layer", JSImport.Default)
   @js.native
@@ -22,9 +25,8 @@ object layerLayerMod {
     def this(options: Options) = this()
   }
   
-  @JSImport("ol/layer/Layer", "inView")
-  @js.native
-  def inView(layerState: State, viewState: typings.ol.viewMod.State): Boolean = js.native
+  @scala.inline
+  def inView(layerState: State, viewState: typings.ol.viewMod.State): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inView")(layerState.asInstanceOf[js.Any], viewState.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   @js.native
   trait Layer[SourceType /* <: typings.ol.sourceSourceMod.default */]
@@ -93,32 +95,31 @@ object layerLayerMod {
     def un_prerender(`type`: prerender, listener: js.Function1[/* evt */ typings.ol.renderEventMod.default, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.native
+    var map: js.UndefOr[typings.ol.pluggableMapMod.default] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var minZoom: js.UndefOr[Double] = js.native
+    var minZoom: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var render: js.UndefOr[RenderFunction] = js.native
+    var render: js.UndefOr[RenderFunction] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceSourceMod.default] = js.native
+    var source: js.UndefOr[typings.ol.sourceSourceMod.default] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -207,30 +208,29 @@ object layerLayerMod {
   
   type RenderFunction = js.Function1[/* p0 */ FrameState, HTMLElement]
   
-  @js.native
   trait State extends StObject {
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var layer: Layer[typings.ol.sourceSourceMod.default] = js.native
+    var layer: Layer[typings.ol.sourceSourceMod.default]
     
-    var managed: Boolean = js.native
+    var managed: Boolean
     
-    var maxResolution: Double = js.native
+    var maxResolution: Double
     
-    var maxZoom: Double = js.native
+    var maxZoom: Double
     
-    var minResolution: Double = js.native
+    var minResolution: Double
     
-    var minZoom: Double = js.native
+    var minZoom: Double
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var sourceState: typings.ol.stateMod.State = js.native
+    var sourceState: typings.ol.stateMod.State
     
-    var visible: Boolean = js.native
+    var visible: Boolean
     
-    var zIndex: Double = js.native
+    var zIndex: Double
   }
   object State {
     

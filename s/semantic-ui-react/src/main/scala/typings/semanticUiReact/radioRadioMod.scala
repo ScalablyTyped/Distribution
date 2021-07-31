@@ -6,7 +6,6 @@ import typings.react.mod.StatelessComponent
 import typings.semanticUiReact.checkboxCheckboxMod.StrictCheckboxProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioRadioMod extends Shortcut {
@@ -15,9 +14,9 @@ object radioRadioMod extends Shortcut {
   @js.native
   val default: StatelessComponent[RadioProps] = js.native
   
-  @js.native
   trait RadioProps
-    extends StrictRadioProps
+    extends StObject
+       with StrictRadioProps
        with /* key */ StringDictionary[js.Any]
   object RadioProps {
     
@@ -28,8 +27,9 @@ object radioRadioMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrictRadioProps extends StrictCheckboxProps
+  trait StrictRadioProps
+    extends StObject
+       with StrictCheckboxProps
   object StrictRadioProps {
     
     @scala.inline

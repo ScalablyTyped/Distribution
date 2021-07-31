@@ -4,15 +4,13 @@ import typings.exceljs.anon.Col
 import typings.exceljs.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagePosition extends StObject {
   
-  var ext: Height = js.native
+  var ext: Height
   
-  var tl: Col = js.native
+  var tl: Col
 }
 object ImagePosition {
   

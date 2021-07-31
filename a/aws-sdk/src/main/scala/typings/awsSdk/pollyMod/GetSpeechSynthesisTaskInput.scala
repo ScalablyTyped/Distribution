@@ -2,16 +2,14 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSpeechSynthesisTaskInput extends StObject {
   
   /**
     * The Amazon Polly generated identifier for a speech synthesis task.
     */
-  var TaskId: typings.awsSdk.pollyMod.TaskId = js.native
+  var TaskId: typings.awsSdk.pollyMod.TaskId
 }
 object GetSpeechSynthesisTaskInput {
   

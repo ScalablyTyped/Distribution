@@ -10,9 +10,9 @@ The Material Components for the web toolbar component
 | ------------------ | :-------------: |
 | Full name          | @material/toolbar |
 | Keywords           | material components, material design, toolbar |
-| # releases         | 18 |
+| # releases         | 12 |
 | # dependents       | 21 |
-| # downloads        | 688428 |
+| # downloads        | 606618 |
 | # stars            | 0 |
 
 ## Links

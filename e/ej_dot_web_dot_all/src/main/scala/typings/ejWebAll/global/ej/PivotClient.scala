@@ -4,13 +4,13 @@ import typings.ejWebAll.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("ej.PivotClient")
 @js.native
 class PivotClient protected ()
-  extends typings.ejWebAll.ej.PivotClient {
+  extends StObject
+     with typings.ejWebAll.ej.PivotClient {
   def this(element: JQuery) = this()
   def this(element: Element) = this()
   def this(element: JQuery, options: typings.ejWebAll.ej.Model) = this()
@@ -27,13 +27,13 @@ object PivotClient {
   object ClientExportMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.ClientExportMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.ClientExportMode & Double] = js.native
     
-    /* 0 */ val ChartAndGrid: typings.ejWebAll.ej.PivotClient.ClientExportMode.ChartAndGrid with Double = js.native
+    /* 0 */ val ChartAndGrid: typings.ejWebAll.ej.PivotClient.ClientExportMode.ChartAndGrid & Double = js.native
     
-    /* 1 */ val ChartOnly: typings.ejWebAll.ej.PivotClient.ClientExportMode.ChartOnly with Double = js.native
+    /* 1 */ val ChartOnly: typings.ejWebAll.ej.PivotClient.ClientExportMode.ChartOnly & Double = js.native
     
-    /* 2 */ val GridOnly: typings.ejWebAll.ej.PivotClient.ClientExportMode.GridOnly with Double = js.native
+    /* 2 */ val GridOnly: typings.ejWebAll.ej.PivotClient.ClientExportMode.GridOnly & Double = js.native
   }
   
   @JSGlobal("ej.PivotClient.ControlPlacement")
@@ -41,11 +41,11 @@ object PivotClient {
   object ControlPlacement extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.ControlPlacement with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.ControlPlacement & Double] = js.native
     
-    /* 0 */ val Tab: typings.ejWebAll.ej.PivotClient.ControlPlacement.Tab with Double = js.native
+    /* 0 */ val Tab: typings.ejWebAll.ej.PivotClient.ControlPlacement.Tab & Double = js.native
     
-    /* 1 */ val Tile: typings.ejWebAll.ej.PivotClient.ControlPlacement.Tile with Double = js.native
+    /* 1 */ val Tile: typings.ejWebAll.ej.PivotClient.ControlPlacement.Tile & Double = js.native
   }
   
   @JSGlobal("ej.PivotClient.DefaultView")
@@ -53,11 +53,11 @@ object PivotClient {
   object DefaultView extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.DefaultView with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.DefaultView & Double] = js.native
     
-    /* 0 */ val Chart: typings.ejWebAll.ej.PivotClient.DefaultView.Chart with Double = js.native
+    /* 0 */ val Chart: typings.ejWebAll.ej.PivotClient.DefaultView.Chart & Double = js.native
     
-    /* 1 */ val Grid: typings.ejWebAll.ej.PivotClient.DefaultView.Grid with Double = js.native
+    /* 1 */ val Grid: typings.ejWebAll.ej.PivotClient.DefaultView.Grid & Double = js.native
   }
   
   @JSGlobal("ej.PivotClient.DisplayMode")
@@ -65,13 +65,13 @@ object PivotClient {
   object DisplayMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.DisplayMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.ejWebAll.ej.PivotClient.DisplayMode & Double] = js.native
     
-    /* 2 */ val ChartAndGrid: typings.ejWebAll.ej.PivotClient.DisplayMode.ChartAndGrid with Double = js.native
+    /* 2 */ val ChartAndGrid: typings.ejWebAll.ej.PivotClient.DisplayMode.ChartAndGrid & Double = js.native
     
-    /* 0 */ val ChartOnly: typings.ejWebAll.ej.PivotClient.DisplayMode.ChartOnly with Double = js.native
+    /* 0 */ val ChartOnly: typings.ejWebAll.ej.PivotClient.DisplayMode.ChartOnly & Double = js.native
     
-    /* 1 */ val GridOnly: typings.ejWebAll.ej.PivotClient.DisplayMode.GridOnly with Double = js.native
+    /* 1 */ val GridOnly: typings.ejWebAll.ej.PivotClient.DisplayMode.GridOnly & Double = js.native
   }
   
   /* static member */

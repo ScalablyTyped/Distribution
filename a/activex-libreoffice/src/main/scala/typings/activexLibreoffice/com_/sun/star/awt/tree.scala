@@ -21,7 +21,6 @@ import typings.activexLibreoffice.com_.sun.star.view.XSelectionChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tree {
@@ -31,11 +30,12 @@ object tree {
     * @see XTreeExpansionListener
     * @see XTreeControl
     */
-  @js.native
-  trait ExpandVetoException extends Exception {
+  trait ExpandVetoException
+    extends StObject
+       with Exception {
     
     /** The event that the exception was created for. */
-    var Event: TreeExpansionEvent = js.native
+    var Event: TreeExpansionEvent
   }
   object ExpandVetoException {
     
@@ -95,15 +95,16 @@ object tree {
   type TreeControl = XTreeControl
   
   /** specifies the standard model of a {@link TreeControl} . */
-  @js.native
-  trait TreeControlModel extends UnoControlModel {
+  trait TreeControlModel
+    extends StObject
+       with UnoControlModel {
     
     /**
       * Specifies the {@link XTreeDataModel} that is providing the hierarchical data.
       *
       * You can implement your own instance of {@link XTreeDataModel} or use the {@link MutableTreeDataModel} .
       */
-    var DataModel: XTreeDataModel = js.native
+    var DataModel: XTreeDataModel
     
     /**
       * Specifies whether the nodes of the tree are editable.
@@ -112,7 +113,7 @@ object tree {
       * @see XTreeControl.startEditingAtNode()
       * @see XTreeEditListener
       */
-    var Editable: Boolean = js.native
+    var Editable: Boolean
     
     /**
       * Specifies what happens when editing is interrupted by selecting another node in the tree, a change in the tree's data, or by some other means.
@@ -122,7 +123,7 @@ object tree {
       *
       * The default value is `FALSE`
       */
-    var InvokesStopNodeEditing: Boolean = js.native
+    var InvokesStopNodeEditing: Boolean
     
     /**
       * Specifies if the root node of the tree is displayed.
@@ -132,7 +133,7 @@ object tree {
       *
       * The default value is `TRUE`
       */
-    var RootDisplayed: Boolean = js.native
+    var RootDisplayed: Boolean
     
     /**
       * Specifies the height of each row, in pixels.
@@ -141,14 +142,14 @@ object tree {
       *
       * The default value is 0
       */
-    var RowHeight: Double = js.native
+    var RowHeight: Double
     
     /**
       * Specifies the selection mode that is enabled for this tree.
       *
       * The default value is com::sun::star::view::SelectionType::NONE
       */
-    var SelectionType: typings.activexLibreoffice.com_.sun.star.view.SelectionType = js.native
+    var SelectionType: typings.activexLibreoffice.com_.sun.star.view.SelectionType
     
     /**
       * Specifies whether the node handles should be displayed.
@@ -157,14 +158,21 @@ object tree {
       *
       * The default value is `TRUE`
       */
-    var ShowsHandles: Boolean = js.native
+    var ShowsHandles: Boolean
     
     /**
       * Specifies whether the node handles should also be displayed at root level.
       *
       * The default value is `TRUE`
       */
-    var ShowsRootHandles: Boolean = js.native
+    var ShowsRootHandles: Boolean
+    
+    /**
+      * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object which supplies this interface.
+      * @returns NULL if the implementation cannot or will not provide information about the properties; otherwise the interface {@link XPropertySetInfo} is returned.
+      */
+    /* InferMemberOverrides */
+    override def getPropertySetInfo(): XPropertySetInfo
   }
   object TreeControlModel {
     
@@ -199,7 +207,7 @@ object tree {
       firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
       getPropertySetInfo: () => XPropertySetInfo,
       getPropertyValue: String => js.Any,
-      getPropertyValues: SeqEquiv[String] => SafeArray[_],
+      getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
       getServiceName: () => String,
       queryInterface: `type` => js.Any,
       read: XObjectInputStream => Unit,
@@ -209,7 +217,7 @@ object tree {
       removePropertyChangeListener: (String, XPropertyChangeListener) => Unit,
       removeVetoableChangeListener: (String, XVetoableChangeListener) => Unit,
       setPropertyValue: (String, js.Any) => Unit,
-      setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit,
+      setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit,
       write: XObjectOutputStream => Unit
     ): TreeControlModel = {
       val __obj = js.Dynamic.literal(DataModel = DataModel.asInstanceOf[js.Any], DefaultControl = DefaultControl.asInstanceOf[js.Any], Editable = Editable.asInstanceOf[js.Any], Height = Height.asInstanceOf[js.Any], InvokesStopNodeEditing = InvokesStopNodeEditing.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], PositionX = PositionX.asInstanceOf[js.Any], PositionY = PositionY.asInstanceOf[js.Any], PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], RootDisplayed = RootDisplayed.asInstanceOf[js.Any], RowHeight = RowHeight.asInstanceOf[js.Any], SelectionType = SelectionType.asInstanceOf[js.Any], ServiceName = ServiceName.asInstanceOf[js.Any], ShowsHandles = ShowsHandles.asInstanceOf[js.Any], ShowsRootHandles = ShowsRootHandles.asInstanceOf[js.Any], Step = Step.asInstanceOf[js.Any], TabIndex = TabIndex.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Width = Width.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addEventListener = js.Any.fromFunction1(addEventListener), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), addPropertyChangeListener = js.Any.fromFunction2(addPropertyChangeListener), addVetoableChangeListener = js.Any.fromFunction2(addVetoableChangeListener), createClone = js.Any.fromFunction0(createClone), dispose = js.Any.fromFunction0(dispose), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValue = js.Any.fromFunction1(getPropertyValue), getPropertyValues = js.Any.fromFunction1(getPropertyValues), getServiceName = js.Any.fromFunction0(getServiceName), queryInterface = js.Any.fromFunction1(queryInterface), read = js.Any.fromFunction1(read), release = js.Any.fromFunction0(release), removeEventListener = js.Any.fromFunction1(removeEventListener), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), removePropertyChangeListener = js.Any.fromFunction2(removePropertyChangeListener), removeVetoableChangeListener = js.Any.fromFunction2(removeVetoableChangeListener), setPropertyValue = js.Any.fromFunction2(setPropertyValue), setPropertyValues = js.Any.fromFunction2(setPropertyValues), write = js.Any.fromFunction1(write))
@@ -224,6 +232,9 @@ object tree {
       
       @scala.inline
       def setEditable(value: Boolean): Self = StObject.set(x, "Editable", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
       
       @scala.inline
       def setInvokesStopNodeEditing(value: Boolean): Self = StObject.set(x, "InvokesStopNodeEditing", value.asInstanceOf[js.Any])
@@ -252,22 +263,23 @@ object tree {
     * @see XTreeControl
     * @see XTreeDataModelListener
     */
-  @js.native
-  trait TreeDataModelEvent extends EventObject {
+  trait TreeDataModelEvent
+    extends StObject
+       with EventObject {
     
     /**
       * contains the changed, added or removed nodes.
       *
       * All nodes must have {@link ParentNode} as parent.
       */
-    var Nodes: SafeArray[XTreeNode] = js.native
+    var Nodes: SafeArray[XTreeNode]
     
     /**
       * holds the parent node for changed, added or removed nodes.
       *
       * If this is null, {@link Nodes} must contain only the root node
       */
-    var ParentNode: XTreeNode = js.native
+    var ParentNode: XTreeNode
   }
   object TreeDataModelEvent {
     
@@ -293,10 +305,11 @@ object tree {
     * @see XTreeExpansionListener
     * @see XTreeControl
     */
-  @js.native
-  trait TreeExpansionEvent extends EventObject {
+  trait TreeExpansionEvent
+    extends StObject
+       with EventObject {
     
-    var Node: XTreeNode = js.native
+    var Node: XTreeNode
   }
   object TreeExpansionEvent {
     
@@ -319,8 +332,9 @@ object tree {
     *
     * Note that only {@link XTreeNode} created from the same instance with {@link createNode()} are valid nodes for this instance.
     */
-  @js.native
-  trait XMutableTreeDataModel extends XTreeDataModel {
+  trait XMutableTreeDataModel
+    extends StObject
+       with XTreeDataModel {
     
     /**
       * creates a new tree node with the given value and given settings.
@@ -330,14 +344,14 @@ object tree {
       * @see XTreeNode.getDisplayValue()
       * @see XTreeNode.hasChildrenOnDemand()
       */
-    def createNode(DisplayValue: js.Any, ChildrenOnDemand: Boolean): XMutableTreeNode = js.native
+    def createNode(DisplayValue: js.Any, ChildrenOnDemand: Boolean): XMutableTreeNode
     
     /**
       * changes the root node of this model to **RootNode** .
       * @param RootNode the {@link XMutableTreeNode} that becomes the new root node of this model.
       * @throws com::sun::star::lang::IllegalArgumentException if **RootNode** is not a valid node of this {@link XTreeDataModel} .
       */
-    def setRoot(RootNode: XMutableTreeNode): Unit = js.native
+    def setRoot(RootNode: XMutableTreeNode): Unit
   }
   object XMutableTreeDataModel {
     
@@ -372,21 +386,22 @@ object tree {
   }
   
   /** Represents a mutable tree node as used by the {@link MutableTreeDataModel} */
-  @js.native
-  trait XMutableTreeNode extends XTreeNode {
+  trait XMutableTreeNode
+    extends StObject
+       with XTreeNode {
     
     /**
       * Stores an implementation dependent value.
       *
       * You can use this attribute to store data for this node that is independent of the display value
       */
-    var DataValue: js.Any = js.native
+    var DataValue: js.Any
     
     /**
       * appends **ChildNode** to this instance.
       * @throws com::sun::star::lang::IllegalArgumentException if **ChildNode** is not a valid node of the corresponding {@link XTreeDataModel} .
       */
-    def appendChild(ChildNode: XMutableTreeNode): Unit = js.native
+    def appendChild(ChildNode: XMutableTreeNode): Unit
     
     /**
       * inserts **ChildNode** to this instance at the given index.
@@ -395,44 +410,44 @@ object tree {
       * @throws com::sun::star::lang::IllegalArgumentException if **ChildNode** is not a valid node of the corresponding {@link XTreeDataModel} .
       * @throws com::sun::star::lang::IndexOutOfBoundsException if **Index** is less than 0 or greater then {@link XTreeNode.getChildCount()} .
       */
-    def insertChildByIndex(Index: Double, ChildNode: XMutableTreeNode): Unit = js.native
+    def insertChildByIndex(Index: Double, ChildNode: XMutableTreeNode): Unit
     
     /**
       * removes the node from this instance at the specified index.
       * @param Index the index of the node to be removed from this instance.
       * @throws com::sun::star::lang::IndexOutOfBoundsException if **Index** is less than 0 or greater then {@link XTreeNode.getChildCount()} .
       */
-    def removeChildByIndex(Index: Double): Unit = js.native
+    def removeChildByIndex(Index: Double): Unit
     
     /**
       * The URL for a graphic that is rendered to visualize collapsed non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultCollapsedGraphicURL} is used.
       */
-    def setCollapsedGraphicURL(URL: String): Unit = js.native
+    def setCollapsedGraphicURL(URL: String): Unit
     
     /** sets the display value of this node */
-    def setDisplayValue(Value: js.Any): Unit = js.native
+    def setDisplayValue(Value: js.Any): Unit
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultExpandedGraphicURL} is used.
       */
-    def setExpandedGraphicURL(URL: String): Unit = js.native
+    def setExpandedGraphicURL(URL: String): Unit
     
     /**
       * Changes if the children of this node are created on demand.
       * @see XTreeNode.hasChildrenOnDemand()
       */
-    def setHasChildrenOnDemand(ChildrenOnDemand: Boolean): Unit = js.native
+    def setHasChildrenOnDemand(ChildrenOnDemand: Boolean): Unit
     
     /**
       * The URL for a graphic that is rendered before the text part of this node.
       *
       * If this URL is empty, no graphic is rendered.
       */
-    def setNodeGraphicURL(URL: String): Unit = js.native
+    def setNodeGraphicURL(URL: String): Unit
   }
   object XMutableTreeNode {
     
@@ -503,41 +518,42 @@ object tree {
     * An interface to a control that displays a set of hierarchical data as an outline.
     * @see TreeControl
     */
-  @js.native
-  trait XTreeControl extends XMultiSelectionSupplier {
+  trait XTreeControl
+    extends StObject
+       with XMultiSelectionSupplier {
     
     /**
       * If the given URL points to a loadable graphic, the graphic is rendered before collapsed non leaf nodes.
       *
       * This can be overridden for individual nodes by {@link XTreeNode.getCollapsedGraphicURL()}
       */
-    var DefaultCollapsedGraphicURL: String = js.native
+    var DefaultCollapsedGraphicURL: String
     
     /**
       * If the given URL points to a loadable graphic, the graphic is rendered before expanded non leaf nodes.
       *
       * This can be overridden for individual nodes by {@link XTreeNode.getExpandedGraphicURL()}
       */
-    var DefaultExpandedGraphicURL: String = js.native
+    var DefaultExpandedGraphicURL: String
     
     /**
       * Adds a {@link XTreeEditListener} .
       * @param Listener a {@link XTreeEditListener} that will be notified before and after a tree node is edited.
       */
-    def addTreeEditListener(Listener: XTreeEditListener): Unit = js.native
+    def addTreeEditListener(Listener: XTreeEditListener): Unit
     
     /**
       * Adds a listener for TreeExpansion events.
       * @param Listener a {@link XTreeExpansionListener} that will be notified when a tree node is expanded or collapsed.
       */
-    def addTreeExpansionListener(Listener: XTreeExpansionListener): Unit = js.native
+    def addTreeExpansionListener(Listener: XTreeExpansionListener): Unit
     
     /**
       * Cancels the current editing session.
       *
       * Has no effect if the tree isn't being edited.
       */
-    def cancelEditing(): Unit = js.native
+    def cancelEditing(): Unit
     
     /**
       * Ensures that **Node** is collapsed.
@@ -545,7 +561,7 @@ object tree {
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       * @throws ExpandVetoException if collapsing **Node** failed because at least one of the registered {@link XTreeExpansionListener} raised a {@link ExpandVet
       */
-    def collapseNode(Node: XTreeNode): Unit = js.native
+    def collapseNode(Node: XTreeNode): Unit
     
     /**
       * Ensures that **Node** is expanded and visible.
@@ -555,7 +571,7 @@ object tree {
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       * @throws ExpandVetoException if expanding **Node** failed because at least one of the registered {@link XTreeExpansionListener} raised a {@link ExpandVeto
       */
-    def expandNode(Node: XTreeNode): Unit = js.native
+    def expandNode(Node: XTreeNode): Unit
     
     /**
       * Returns the node that is closest to x,y.
@@ -566,7 +582,7 @@ object tree {
       * @param y an integer giving the number of pixels vertically from the top edge of the controls display area
       * @returns the {@link XTreeNode} for the node closest to that location, null if nothing is viewable or there is no model
       */
-    def getClosestNodeForLocation(x: Double, y: Double): XTreeNode = js.native
+    def getClosestNodeForLocation(x: Double, y: Double): XTreeNode
     
     /**
       * Returns the node at the specified location.
@@ -574,14 +590,14 @@ object tree {
       * @param y an integer giving the number of pixels vertically from the top edge of the controls display area
       * @returns the {@link XTreeNode} for the node at that location, or 0 if there is no node at the given position
       */
-    def getNodeForLocation(x: Double, y: Double): XTreeNode = js.native
+    def getNodeForLocation(x: Double, y: Double): XTreeNode
     
     /**
       * returns the rectangle occupied by the visual representation of the given node
       * @param Node the node whose geometry should be obtained
       * @throws com::sun::star::lang::IllegalArgumentException if the given node is `NULL` , or does not belong to the tree's data model
       */
-    def getNodeRect(Node: XTreeNode): Rectangle = js.native
+    def getNodeRect(Node: XTreeNode): Rectangle
     
     /**
       * Returns `TRUE` if one of tree's nodes is being currently edited.
@@ -589,7 +605,7 @@ object tree {
       * The node that is being edited can be obtained using {@link com.sun.star.view.XSelectionSupplier.getSelection()} .
       * @returns `TRUE` if the user is currently editing a node
       */
-    def isEditing(): Boolean = js.native
+    def isEditing(): Boolean
     
     /**
       * Returns `TRUE` if **Node** is currently collapsed.
@@ -597,7 +613,7 @@ object tree {
       * @returns `TRUE` if **Node** or at least one of its parent nodes are collapsed, `FALSE` if **Node** and all of its parent nodes are expanded
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       */
-    def isNodeCollapsed(Node: XTreeNode): Boolean = js.native
+    def isNodeCollapsed(Node: XTreeNode): Boolean
     
     /**
       * Returns `TRUE` if **Node** is currently expanded.
@@ -605,7 +621,7 @@ object tree {
       * @returns `FALSE` if **Node** or at least one of its parent nodes are collapsed, `TRUE` if **Node** and all of its parent nodes are expanded.
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       */
-    def isNodeExpanded(Node: XTreeNode): Boolean = js.native
+    def isNodeExpanded(Node: XTreeNode): Boolean
     
     /**
       * Returns `TRUE` if **Node** is currently visible.
@@ -614,7 +630,7 @@ object tree {
       * @returns `TRUE` if **Node** is visible, otherwise `FALSE`
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       */
-    def isNodeVisible(Node: XTreeNode): Boolean = js.native
+    def isNodeVisible(Node: XTreeNode): Boolean
     
     /**
       * Ensures that **Node** is currently visible.
@@ -624,19 +640,19 @@ object tree {
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       * @throws ExpandVetoException if **Node** can't be made visible since at least one of the parent nodes are collapsed and expanding failed because at least
       */
-    def makeNodeVisible(Node: XTreeNode): Unit = js.native
+    def makeNodeVisible(Node: XTreeNode): Unit
     
     /**
       * Removes a {@link XTreeEditListener} .
       * @param Listener the {@link XTreeEditListener} to remove
       */
-    def removeTreeEditListener(Listener: XTreeEditListener): Unit = js.native
+    def removeTreeEditListener(Listener: XTreeEditListener): Unit
     
     /**
       * Removes a listener for TreeExpansion events.
       * @param Listener the {@link XTreeExpansionListener} to remove.
       */
-    def removeTreeExpansionListener(Listener: XTreeExpansionListener): Unit = js.native
+    def removeTreeExpansionListener(Listener: XTreeExpansionListener): Unit
     
     /**
       * Selects **Node** and initiates editing.
@@ -647,7 +663,7 @@ object tree {
       * @param Node the {@link XTreeNode} identifying a node.
       * @throws com::sun::star::lang::IllegalArgumentException if **Node** is not a valid node of the corresponding {@link XTreeDataModel} .
       */
-    def startEditingAtNode(Node: XTreeNode): Unit = js.native
+    def startEditingAtNode(Node: XTreeNode): Unit
     
     /**
       * Ends the current editing session.
@@ -657,7 +673,7 @@ object tree {
       * Has no effect if the tree isn't being edited.
       * @returns `TRUE` if editing was in progress and is now stopped, `FALSE` if editing was not in progress
       */
-    def stopEditing(): Boolean = js.native
+    def stopEditing(): Boolean
   }
   object XTreeControl {
     
@@ -772,8 +788,9 @@ object tree {
     *
     * If you do not need your own model implementation, you can also use the {@link MutableTreeDataModel} .
     */
-  @js.native
-  trait XTreeDataModel extends XComponent {
+  trait XTreeDataModel
+    extends StObject
+       with XComponent {
     
     /**
       * Returns the root of the tree.
@@ -781,13 +798,13 @@ object tree {
       * Returns null only if the tree has no nodes.
       * @returns the root of the tree
       */
-    val Root: XTreeNode = js.native
+    val Root: XTreeNode
     
     /**
       * Adds a listener for the {@link TreeDataModelEvent} posted after the tree changes.
       * @param Listener the listener to add.
       */
-    def addTreeDataModelListener(Listener: XTreeDataModelListener): Unit = js.native
+    def addTreeDataModelListener(Listener: XTreeDataModelListener): Unit
     
     /**
       * Returns the root of the tree.
@@ -795,13 +812,13 @@ object tree {
       * Returns null only if the tree has no nodes.
       * @returns the root of the tree
       */
-    def getRoot(): XTreeNode = js.native
+    def getRoot(): XTreeNode
     
     /**
       * Removes a listener previously added with {@link addTreeDataModelListener()} .
       * @param Listener the listener to remove.
       */
-    def removeTreeDataModelListener(Listener: XTreeDataModelListener): Unit = js.native
+    def removeTreeDataModelListener(Listener: XTreeDataModelListener): Unit
   }
   object XTreeDataModel {
     
@@ -847,8 +864,9 @@ object tree {
     *
     * .
     */
-  @js.native
-  trait XTreeDataModelListener extends XEventListener {
+  trait XTreeDataModelListener
+    extends StObject
+       with XEventListener {
     
     /**
       * Invoked after a node (or a set of siblings) has changed in some way. The node(s) have not changed locations in the tree or altered their children
@@ -858,14 +876,14 @@ object tree {
       *
       * To indicate the root has changed, {@link TreeDataModelEvent.Nodes} will contain the root node and {@link TreeDataModelEvent.ParentNode} will be empty.
       */
-    def treeNodesChanged(Event: TreeDataModelEvent): Unit = js.native
+    def treeNodesChanged(Event: TreeDataModelEvent): Unit
     
     /**
       * Invoked after nodes have been inserted into the tree.
       *
       * Use {@link TreeDataModelEvent.ParentNode} to get the parent of the new node(s). {@link TreeDataModelEvent.Nodes} contains the new node(s).
       */
-    def treeNodesInserted(Event: TreeDataModelEvent): Unit = js.native
+    def treeNodesInserted(Event: TreeDataModelEvent): Unit
     
     /**
       * Invoked after nodes have been removed from the tree.
@@ -876,14 +894,14 @@ object tree {
       * Use {@link TreeDataModelEvent.ParentNode} to get the former parent of the deleted node(s). {@link TreeDataModelEvent.Nodes} contains the removed
       * node(s).
       */
-    def treeNodesRemoved(Event: TreeDataModelEvent): Unit = js.native
+    def treeNodesRemoved(Event: TreeDataModelEvent): Unit
     
     /**
       * Invoked after the tree has drastically changed structure from a given node down.
       *
       * Use {@link TreeDataModelEvent.ParentNode} to get the node which structure has changed. {@link TreeDataModelEvent.Nodes} is empty.
       */
-    def treeStructureChanged(Event: TreeDataModelEvent): Unit = js.native
+    def treeStructureChanged(Event: TreeDataModelEvent): Unit
   }
   object XTreeDataModelListener {
     
@@ -925,8 +943,9 @@ object tree {
     *
     * You have to set the {@link TreeControlModel.Editable} property to `TRUE` before a tree supports editing.
     */
-  @js.native
-  trait XTreeEditListener extends XEventListener {
+  trait XTreeEditListener
+    extends StObject
+       with XEventListener {
     
     /**
       * This method is called from the {@link TreeControl} implementation when editing of **Node** is finished and was not canceled.
@@ -935,7 +954,7 @@ object tree {
       * @param Node the {@link XTreeNode} for that an edit request was fired by calling {@link XTreeControl.startEditingAtNode()}
       * @param NewText the text that was entered by the user.
       */
-    def nodeEdited(Node: XTreeNode, NewText: String): Unit = js.native
+    def nodeEdited(Node: XTreeNode, NewText: String): Unit
     
     /**
       * This method is called from the {@link TreeControl} implementation when editing of **Node** is requested by calling {@link
@@ -943,7 +962,7 @@ object tree {
       * @param Node the {@link XTreeNode} for that an edit request was fired by calling {@link XTreeControl.startEditingAtNode()}
       * @throws VetoException if thrown the editing will not start.
       */
-    def nodeEditing(Node: XTreeNode): Unit = js.native
+    def nodeEditing(Node: XTreeNode): Unit
   }
   object XTreeEditListener {
     
@@ -976,33 +995,34 @@ object tree {
     * @see XTreeControl.addTreeExpansionListener
     * @see XTreeControl.removeTreeExpansionListener
     */
-  @js.native
-  trait XTreeExpansionListener extends XEventListener {
+  trait XTreeExpansionListener
+    extends StObject
+       with XEventListener {
     
     /**
       * Invoked when a node with children on demand is about to be expanded.
       *
       * This event is invoked before the {@link treeExpanding()} event.
       */
-    def requestChildNodes(Event: TreeExpansionEvent): Unit = js.native
+    def requestChildNodes(Event: TreeExpansionEvent): Unit
     
     /** Called whenever a node in the tree has been successfully collapsed. */
-    def treeCollapsed(Event: TreeExpansionEvent): Unit = js.native
+    def treeCollapsed(Event: TreeExpansionEvent): Unit
     
     /**
       * Invoked whenever a node in the tree is about to be collapsed.
       * @throws ExpandVetoException to notify the calling {@link XTreeControl} that collapsing {@link TreeExpansionEvent.Node} should fail.
       */
-    def treeCollapsing(Event: TreeExpansionEvent): Unit = js.native
+    def treeCollapsing(Event: TreeExpansionEvent): Unit
     
     /** Called whenever a node in the tree has been successfully expanded. */
-    def treeExpanded(Event: TreeExpansionEvent): Unit = js.native
+    def treeExpanded(Event: TreeExpansionEvent): Unit
     
     /**
       * Invoked whenever a node in the tree is about to be expanded.
       * @throws ExpandVetoException to notify the calling {@link XTreeControl} that expanding {@link TreeExpansionEvent.Node} should fail.
       */
-    def treeExpanding(Event: TreeExpansionEvent): Unit = js.native
+    def treeExpanding(Event: TreeExpansionEvent): Unit
   }
   object XTreeExpansionListener {
     
@@ -1049,80 +1069,79 @@ object tree {
     *
     * Each {@link XTreeNode} in a {@link XTreeDataModel} must be unique.
     */
-  @js.native
   trait XTreeNode extends StObject {
     
     /** Returns the number of child nodes. */
-    val ChildCount: Double = js.native
+    val ChildCount: Double
     
     /**
       * The URL for a graphic that is rendered to visualize collapsed non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultCollapsedGraphicURL} is used.
       */
-    val CollapsedGraphicURL: String = js.native
+    val CollapsedGraphicURL: String
     
     /** If not empty, the textual representation of this any is used as the text part of this node. */
-    val DisplayValue: js.Any = js.native
+    val DisplayValue: js.Any
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultExpandedGraphicURL} is used.
       */
-    val ExpandedGraphicURL: String = js.native
+    val ExpandedGraphicURL: String
     
     /**
       * The URL for a graphic that is rendered before the text part of this node.
       *
       * If this URL is empty, no graphic is rendered.
       */
-    val NodeGraphicURL: String = js.native
+    val NodeGraphicURL: String
     
     /** Returns the parent node of this node. */
-    val Parent: XTreeNode = js.native
+    val Parent: XTreeNode
     
     /**
       * Returns the child tree node at **Index** .
       * @throws com::sun::star::lang::IndexOutOfBoundsException if **Index** is less than 0 or equal or greater then {@link getChildCount()} .
       */
-    def getChildAt(Index: Double): XTreeNode = js.native
+    def getChildAt(Index: Double): XTreeNode
     
     /** Returns the number of child nodes. */
-    def getChildCount(): Double = js.native
+    def getChildCount(): Double
     
     /**
       * The URL for a graphic that is rendered to visualize collapsed non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultCollapsedGraphicURL} is used.
       */
-    def getCollapsedGraphicURL(): String = js.native
+    def getCollapsedGraphicURL(): String
     
     /** If not empty, the textual representation of this any is used as the text part of this node. */
-    def getDisplayValue(): js.Any = js.native
+    def getDisplayValue(): js.Any
     
     /**
       * The URL for a graphic that is rendered to visualize expanded non leaf nodes.
       *
       * If **URL** is empty, {@link XTreeControl.DefaultExpandedGraphicURL} is used.
       */
-    def getExpandedGraphicURL(): String = js.native
+    def getExpandedGraphicURL(): String
     
     /**
       * Returns the index of **Node** in this instances children.
       * @returns The child index of **Node** , or -1 if **Node** is no child of this instance.
       */
-    def getIndex(Node: XTreeNode): Double = js.native
+    def getIndex(Node: XTreeNode): Double
     
     /**
       * The URL for a graphic that is rendered before the text part of this node.
       *
       * If this URL is empty, no graphic is rendered.
       */
-    def getNodeGraphicURL(): String = js.native
+    def getNodeGraphicURL(): String
     
     /** Returns the parent node of this node. */
-    def getParent(): XTreeNode = js.native
+    def getParent(): XTreeNode
     
     /**
       * Returns `TRUE` if the children of this node are created on demand.
@@ -1130,7 +1149,7 @@ object tree {
       * A {@link TreeControl} will handle a node that returns `TRUE` always like a node that has child nodes, even if {@link getChildCount()} returns 0.
       * @see TreeExpansionListener;
       */
-    def hasChildrenOnDemand(): Boolean = js.native
+    def hasChildrenOnDemand(): Boolean
   }
   object XTreeNode {
     

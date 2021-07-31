@@ -2,18 +2,16 @@ package typings.muiDatatables.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<mui-datatables.mui-datatables.MUIDataTableTextLabelsSelectedRows> */
-@js.native
 trait PartialMUIDataTableTextLaDelete extends StObject {
   
-  var delete: js.UndefOr[String] = js.native
+  var delete: js.UndefOr[String] = js.undefined
   
-  var deleteAria: js.UndefOr[String] = js.native
+  var deleteAria: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PartialMUIDataTableTextLaDelete {
   

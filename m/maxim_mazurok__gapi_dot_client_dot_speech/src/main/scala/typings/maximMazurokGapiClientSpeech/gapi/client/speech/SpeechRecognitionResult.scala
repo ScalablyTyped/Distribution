@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeechRecognitionResult extends StObject {
   
   /**
     * May contain one or more recognition hypotheses (up to the maximum specified in `max_alternatives`). These alternatives are ordered in terms of accuracy, with the top (first)
     * alternative being the most probable, as ranked by the recognizer.
     */
-  var alternatives: js.UndefOr[js.Array[SpeechRecognitionAlternative]] = js.native
+  var alternatives: js.UndefOr[js.Array[SpeechRecognitionAlternative]] = js.undefined
   
   /**
     * For multi-channel audio, this is the channel number corresponding to the recognized result for the audio from that channel. For audio_channel_count = N, its output values can range
     * from '1' to 'N'.
     */
-  var channelTag: js.UndefOr[Double] = js.native
+  var channelTag: js.UndefOr[Double] = js.undefined
 }
 object SpeechRecognitionResult {
   

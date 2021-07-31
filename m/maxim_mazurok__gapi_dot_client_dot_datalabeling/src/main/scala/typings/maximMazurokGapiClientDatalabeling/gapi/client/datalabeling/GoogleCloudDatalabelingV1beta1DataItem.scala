@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1DataItem extends StObject {
   
   /** The image payload, a container of the image bytes/uri. */
-  var imagePayload: js.UndefOr[GoogleCloudDatalabelingV1beta1ImagePayload] = js.native
+  var imagePayload: js.UndefOr[GoogleCloudDatalabelingV1beta1ImagePayload] = js.undefined
   
   /** Output only. Name of the data item, in format of: projects/{project_id}/datasets/{dataset_id}/dataItems/{data_item_id} */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The text payload, a container of text content. */
-  var textPayload: js.UndefOr[GoogleCloudDatalabelingV1beta1TextPayload] = js.native
+  var textPayload: js.UndefOr[GoogleCloudDatalabelingV1beta1TextPayload] = js.undefined
   
   /** The video payload, a container of the video uri. */
-  var videoPayload: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoPayload] = js.native
+  var videoPayload: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoPayload] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1DataItem {
   

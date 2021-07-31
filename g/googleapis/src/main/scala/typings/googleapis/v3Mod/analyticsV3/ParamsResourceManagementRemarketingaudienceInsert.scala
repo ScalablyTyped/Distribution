@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceManagementRemarketingaudienceInsert extends StandardParameters {
+trait ParamsResourceManagementRemarketingaudienceInsert
+  extends StObject
+     with StandardParameters {
   
   /**
     * The account ID for which to create the remarketing audience.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaRemarketingAudience] = js.native
+  var requestBody: js.UndefOr[SchemaRemarketingAudience] = js.undefined
   
   /**
     * Web property ID for which to create the remarketing audience.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceManagementRemarketingaudienceInsert {
   

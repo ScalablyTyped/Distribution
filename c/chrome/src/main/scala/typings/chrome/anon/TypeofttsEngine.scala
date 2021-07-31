@@ -4,19 +4,17 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.ttsEngine.TtsEngineSpeakEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofttsEngine extends StObject {
   
-  var onPause: Event[js.Function0[Unit]] = js.native
+  var onPause: Event[js.Function0[Unit]]
   
-  var onResume: Event[js.Function0[Unit]] = js.native
+  var onResume: Event[js.Function0[Unit]]
   
-  var onSpeak: TtsEngineSpeakEvent = js.native
+  var onSpeak: TtsEngineSpeakEvent
   
-  var onStop: Event[js.Function0[Unit]] = js.native
+  var onStop: Event[js.Function0[Unit]]
 }
 object TypeofttsEngine {
   

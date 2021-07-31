@@ -2,25 +2,23 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingStats extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  def getAveragePayloadSize(topic: String, start: Double, stop: Double, callback: CbCallback): Unit = js.native
+  def getAveragePayloadSize(topic: String, start: Double, stop: Double, callback: CbCallback): Unit
   
-  def getCurrentSubscribers(topic: String, callback: CbCallback): Unit = js.native
+  def getCurrentSubscribers(topic: String, callback: CbCallback): Unit
   
-  def getOpenConnections(callback: CbCallback): Unit = js.native
+  def getOpenConnections(callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object MessagingStats {
   

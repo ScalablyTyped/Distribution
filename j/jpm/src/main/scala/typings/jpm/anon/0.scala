@@ -2,13 +2,11 @@ package typings.jpm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var script: js.UndefOr[Boolean] = js.native
+  var script: js.UndefOr[Boolean] = js.undefined
 }
 object `0` {
   

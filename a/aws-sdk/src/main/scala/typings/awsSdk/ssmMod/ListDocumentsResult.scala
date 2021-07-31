@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDocumentsResult extends StObject {
   
   /**
     * The names of the Systems Manager documents.
     */
-  var DocumentIdentifiers: js.UndefOr[DocumentIdentifierList] = js.native
+  var DocumentIdentifiers: js.UndefOr[DocumentIdentifierList] = js.undefined
   
   /**
     * The token to use when requesting the next set of items. If there are no additional items to return, the string is empty.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.ssmMod.NextToken] = js.undefined
 }
 object ListDocumentsResult {
   

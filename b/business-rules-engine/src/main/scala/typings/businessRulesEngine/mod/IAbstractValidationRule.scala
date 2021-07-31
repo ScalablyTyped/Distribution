@@ -4,33 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAbstractValidationRule[T] extends StObject {
   
-  var Children: StringDictionary[IAbstractValidationRule[_]] = js.native
+  var Children: StringDictionary[IAbstractValidationRule[js.Any]]
   
-  var Rules: StringDictionary[IPropertyValidationRule[T]] = js.native
+  var Rules: StringDictionary[IPropertyValidationRule[T]]
   
-  def Validate(context: T): IValidationResult = js.native
+  def Validate(context: T): IValidationResult
   
-  def ValidateAll(context: T): Promise[IValidationResult] = js.native
+  def ValidateAll(context: T): Promise[IValidationResult]
   
-  def ValidateAsync(context: T): Promise[IValidationResult] = js.native
+  def ValidateAsync(context: T): Promise[IValidationResult]
   
-  def ValidateProperty(context: T, propName: String): Unit = js.native
+  def ValidateProperty(context: T, propName: String): Unit
   
-  var ValidationResult: IValidationResult = js.native
+  var ValidationResult: IValidationResult
   
-  var Validators: StringDictionary[IValidator] = js.native
+  var Validators: StringDictionary[IValidator]
 }
 object IAbstractValidationRule {
   
   @scala.inline
   def apply[T](
-    Children: StringDictionary[IAbstractValidationRule[_]],
+    Children: StringDictionary[IAbstractValidationRule[js.Any]],
     Rules: StringDictionary[IPropertyValidationRule[T]],
     Validate: T => IValidationResult,
     ValidateAll: T => Promise[IValidationResult],
@@ -44,10 +42,10 @@ object IAbstractValidationRule {
   }
   
   @scala.inline
-  implicit class IAbstractValidationRuleMutableBuilder[Self <: IAbstractValidationRule[_], T] (val x: Self with IAbstractValidationRule[T]) extends AnyVal {
+  implicit class IAbstractValidationRuleMutableBuilder[Self <: IAbstractValidationRule[?], T] (val x: Self & IAbstractValidationRule[T]) extends AnyVal {
     
     @scala.inline
-    def setChildren(value: StringDictionary[IAbstractValidationRule[_]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
+    def setChildren(value: StringDictionary[IAbstractValidationRule[js.Any]]): Self = StObject.set(x, "Children", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRules(value: StringDictionary[IPropertyValidationRule[T]]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])

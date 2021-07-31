@@ -12,7 +12,7 @@ async nexttickmethod as module.
 | Keywords           | async, async-modularized, nexttick |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 78288 |
+| # downloads        | 104925 |
 | # stars            | 0 |
 
 ## Links

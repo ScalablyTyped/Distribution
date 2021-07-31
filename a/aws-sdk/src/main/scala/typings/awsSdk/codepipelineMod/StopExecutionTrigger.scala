@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopExecutionTrigger extends StObject {
   
   /**
     * The user-specified reason the pipeline was stopped.
     */
-  var reason: js.UndefOr[StopPipelineExecutionReason] = js.native
+  var reason: js.UndefOr[StopPipelineExecutionReason] = js.undefined
 }
 object StopExecutionTrigger {
   

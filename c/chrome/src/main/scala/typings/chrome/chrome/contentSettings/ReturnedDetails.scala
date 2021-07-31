@@ -2,14 +2,12 @@ package typings.chrome.chrome.contentSettings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnedDetails extends StObject {
   
   /** The content setting. See the description of the individual ContentSetting objects for the possible values. */
-  var setting: js.Any = js.native
+  var setting: js.Any
 }
 object ReturnedDetails {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateQuantumTaskResponse extends StObject {
   
   /**
     * The ARN of the task created by the request.
     */
-  var quantumTaskArn: QuantumTaskArn = js.native
+  var quantumTaskArn: QuantumTaskArn
 }
 object CreateQuantumTaskResponse {
   

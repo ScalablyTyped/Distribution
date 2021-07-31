@@ -8,19 +8,22 @@ import typings.reactMdTransition.typesMod.TransitionOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTransitionMod {
   
-  @JSImport("@react-md/transition/types/useTransition", "useTransition")
+  @JSImport("@react-md/transition/types/useTransition", JSImport.Namespace)
   @js.native
-  def useTransition[E /* <: HTMLElement */](
-    hasAppearRepaintTemporaryTransitionInTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedRef: TransitionOptions[E]
-  ): TransitionReturnValue[E] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait TransitionReturnValue[E /* <: HTMLElement */] extends TransitionState {
+  @scala.inline
+  def useTransition[E /* <: HTMLElement */](
+    hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef: TransitionOptions[E]
+  ): TransitionReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransition")(hasAppearRepaintTemporaryTransitionInPropTimeoutOnEnterOnEnteringOnEnteredOnExitOnExitingOnExitedPropRef.asInstanceOf[js.Any]).asInstanceOf[TransitionReturnValue[E]]
+  
+  trait TransitionReturnValue[E /* <: HTMLElement */]
+    extends StObject
+       with TransitionState {
     
     /**
       * A dispatch function that cna update the transition state manually. This
@@ -39,7 +42,7 @@ object useTransitionMod {
       * Note: This **should be dispatched during the render** to get the correct
       * timing.
       */
-    var dispatch: Dispatch[TransitionAction] = js.native
+    var dispatch: Dispatch[TransitionAction]
     
     /**
       * A ref that must be passed to a DOM node for the transition to work. This
@@ -48,7 +51,7 @@ object useTransitionMod {
       * it seems like too much work to make it conditional for those types for
       * transitions.
       */
-    var ref: RefCallback[E] = js.native
+    var ref: RefCallback[E]
   }
   object TransitionReturnValue {
     
@@ -65,7 +68,7 @@ object useTransitionMod {
     }
     
     @scala.inline
-    implicit class TransitionReturnValueMutableBuilder[Self <: TransitionReturnValue[_], E /* <: HTMLElement */] (val x: Self with TransitionReturnValue[E]) extends AnyVal {
+    implicit class TransitionReturnValueMutableBuilder[Self <: TransitionReturnValue[?], E /* <: HTMLElement */] (val x: Self & TransitionReturnValue[E]) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: TransitionAction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
@@ -75,7 +78,6 @@ object useTransitionMod {
     }
   }
   
-  @js.native
   trait TransitionState extends StObject {
     
     /**
@@ -84,20 +86,20 @@ object useTransitionMod {
       * automatically set to `false` after the first transition if `appear` was
       * `true`.
       */
-    var appearing: Boolean = js.native
+    var appearing: Boolean
     
     /**
       * Boolean if the component should be rendered in the DOM. This will always be
       * `true` if the `temporary` option is omitted or `false`. Otherwise, it will
       * be `true` during the transitions and entered.
       */
-    var rendered: Boolean = js.native
+    var rendered: Boolean
     
     /**
       * The current stage for the transition. This probably won't be used too much
       * unless you want to apply custom classnames based on the stage.
       */
-    var stage: TransitionStage = js.native
+    var stage: TransitionStage
   }
   object TransitionState {
     

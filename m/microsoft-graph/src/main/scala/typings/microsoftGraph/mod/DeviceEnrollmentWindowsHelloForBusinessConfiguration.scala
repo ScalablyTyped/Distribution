@@ -2,47 +2,47 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceEnrollmentWindowsHelloForBusinessConfiguration extends DeviceEnrollmentConfiguration {
+trait DeviceEnrollmentWindowsHelloForBusinessConfiguration
+  extends StObject
+     with DeviceEnrollmentConfiguration {
   
   // Not yet documented. Possible values are: notConfigured, enabled, disabled.
-  var enhancedBiometricsState: js.UndefOr[Enablement] = js.native
+  var enhancedBiometricsState: js.UndefOr[Enablement] = js.undefined
   
   // Not yet documented
-  var pinExpirationInDays: js.UndefOr[Double] = js.native
+  var pinExpirationInDays: js.UndefOr[Double] = js.undefined
   
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
+  var pinLowercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
   
   // Not yet documented
-  var pinMaximumLength: js.UndefOr[Double] = js.native
+  var pinMaximumLength: js.UndefOr[Double] = js.undefined
   
   // Not yet documented
-  var pinMinimumLength: js.UndefOr[Double] = js.native
+  var pinMinimumLength: js.UndefOr[Double] = js.undefined
   
   // Not yet documented
-  var pinPreviousBlockCount: js.UndefOr[Double] = js.native
+  var pinPreviousBlockCount: js.UndefOr[Double] = js.undefined
   
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
+  var pinSpecialCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
   
   // Not yet documented. Possible values are: allowed, required, disallowed.
-  var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.native
+  var pinUppercaseCharactersUsage: js.UndefOr[WindowsHelloForBusinessPinUsage] = js.undefined
   
   // Not yet documented
-  var remotePassportEnabled: js.UndefOr[Boolean] = js.native
+  var remotePassportEnabled: js.UndefOr[Boolean] = js.undefined
   
   // Not yet documented
-  var securityDeviceRequired: js.UndefOr[Boolean] = js.native
+  var securityDeviceRequired: js.UndefOr[Boolean] = js.undefined
   
   // Not yet documented. Possible values are: notConfigured, enabled, disabled.
-  var state: js.UndefOr[Enablement] = js.native
+  var state: js.UndefOr[Enablement] = js.undefined
   
   // Not yet documented
-  var unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.native
+  var unlockWithBiometricsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceEnrollmentWindowsHelloForBusinessConfiguration {
   

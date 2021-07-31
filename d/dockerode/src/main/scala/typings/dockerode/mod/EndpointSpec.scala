@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointSpec extends StObject {
   
-  var Mode: js.UndefOr[String] = js.native
+  var Mode: js.UndefOr[String] = js.undefined
   
-  var Ports: js.UndefOr[js.Array[PortConfig]] = js.native
+  var Ports: js.UndefOr[js.Array[PortConfig]] = js.undefined
 }
 object EndpointSpec {
   

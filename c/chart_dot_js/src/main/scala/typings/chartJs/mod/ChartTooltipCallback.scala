@@ -2,10 +2,8 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartTooltipCallback extends StObject {
   
   var afterBody: js.UndefOr[
@@ -14,7 +12,7 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var afterFooter: js.UndefOr[
     js.Function2[
@@ -22,11 +20,11 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var afterLabel: js.UndefOr[
     js.Function2[/* tooltipItem */ ChartTooltipItem, /* data */ ChartData, String | js.Array[String]]
-  ] = js.native
+  ] = js.undefined
   
   var afterTitle: js.UndefOr[
     js.Function2[
@@ -34,7 +32,7 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeBody: js.UndefOr[
     js.Function2[
@@ -42,7 +40,7 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeFooter: js.UndefOr[
     js.Function2[
@@ -50,11 +48,11 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeLabel: js.UndefOr[
     js.Function2[/* tooltipItem */ ChartTooltipItem, /* data */ ChartData, String | js.Array[String]]
-  ] = js.native
+  ] = js.undefined
   
   var beforeTitle: js.UndefOr[
     js.Function2[
@@ -62,7 +60,7 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var footer: js.UndefOr[
     js.Function2[
@@ -70,23 +68,17 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var label: js.UndefOr[
     js.Function2[/* tooltipItem */ ChartTooltipItem, /* data */ ChartData, String | js.Array[String]]
-  ] = js.native
+  ] = js.undefined
   
   var labelColor: js.UndefOr[
-    js.Function2[
-      /* tooltipItem */ ChartTooltipItem, 
-      /* chart */ typings.chartJs.mod.Chart, 
-      ChartTooltipLabelColor
-    ]
-  ] = js.native
+    js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ Chart, ChartTooltipLabelColor]
+  ] = js.undefined
   
-  var labelTextColor: js.UndefOr[
-    js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart, String]
-  ] = js.native
+  var labelTextColor: js.UndefOr[js.Function2[/* tooltipItem */ ChartTooltipItem, /* chart */ Chart, String]] = js.undefined
   
   var title: js.UndefOr[
     js.Function2[
@@ -94,7 +86,7 @@ trait ChartTooltipCallback extends StObject {
       /* data */ ChartData, 
       String | js.Array[String]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ChartTooltipCallback {
   
@@ -165,15 +157,13 @@ object ChartTooltipCallback {
     def setLabel(value: (/* tooltipItem */ ChartTooltipItem, /* data */ ChartData) => String | js.Array[String]): Self = StObject.set(x, "label", js.Any.fromFunction2(value))
     
     @scala.inline
-    def setLabelColor(
-      value: (/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart) => ChartTooltipLabelColor
-    ): Self = StObject.set(x, "labelColor", js.Any.fromFunction2(value))
+    def setLabelColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ Chart) => ChartTooltipLabelColor): Self = StObject.set(x, "labelColor", js.Any.fromFunction2(value))
     
     @scala.inline
     def setLabelColorUndefined: Self = StObject.set(x, "labelColor", js.undefined)
     
     @scala.inline
-    def setLabelTextColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ typings.chartJs.mod.Chart) => String): Self = StObject.set(x, "labelTextColor", js.Any.fromFunction2(value))
+    def setLabelTextColor(value: (/* tooltipItem */ ChartTooltipItem, /* chart */ Chart) => String): Self = StObject.set(x, "labelTextColor", js.Any.fromFunction2(value))
     
     @scala.inline
     def setLabelTextColorUndefined: Self = StObject.set(x, "labelTextColor", js.undefined)

@@ -12,130 +12,130 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipCreateRendererParams extends Object {
+trait relationshipCreateRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The [named string](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap) or basemap object of the Esri basemap that will be paired with the output visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var basemap: js.UndefOr[String | Basemap] = js.native
+  var basemap: js.UndefOr[String | Basemap] = js.undefined
   
   /**
     * The method for classifying each field's data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var classificationMethod: js.UndefOr[quantile | `equal-interval` | `natural-breaks`] = js.native
+  var classificationMethod: js.UndefOr[quantile | `equal-interval` | `natural-breaks`] = js.undefined
   
   /**
     * **This option only applies to generating renderers for mesh SceneLayers**.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var colorMixMode: js.UndefOr[String] = js.native
+  var colorMixMode: js.UndefOr[String] = js.undefined
   
   /**
     * Enables the `defaultSymbol` on the renderer and assigns it to features with no value or that fall outside of the prescribed class breaks.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.native
+  var defaultSymbolEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to add edges to the output renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var edgesType: js.UndefOr[String] = js.native
+  var edgesType: js.UndefOr[String] = js.undefined
   
   /**
     * A numeric field that will be used to explore its relationship with `field2`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var field1: relationshipCreateRendererParamsField1 = js.native
+  var field1: relationshipCreateRendererParamsField1
   
   /**
     * A numeric field that will be used to explore its relationship with `field1`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var field2: relationshipCreateRendererParamsField2 = js.native
+  var field2: relationshipCreateRendererParamsField2
   
   /**
     * Determines the orientation of the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var focus: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[String] = js.undefined
   
   /**
     * The layer for which the visualization is generated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Provides options for modifying [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) properties describing the visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var legendOptions: js.UndefOr[relationshipCreateRendererParamsLegendOptions] = js.native
+  var legendOptions: js.UndefOr[relationshipCreateRendererParamsLegendOptions] = js.undefined
   
   /**
     * Indicates the number of classes by which to break up the values of each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var numClasses: js.UndefOr[Double] = js.native
+  var numClasses: js.UndefOr[Double] = js.undefined
   
   /**
     * For polygon layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var outlineOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In authoring apps, the user may select a pre-defined relationship scheme.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var relationshipScheme: js.UndefOr[RelationshipScheme] = js.native
+  var relationshipScheme: js.UndefOr[RelationshipScheme] = js.undefined
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * For point and polyline layers only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.native
+  var sizeOptimizationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of symbol to generate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.native
+  var symbolType: js.UndefOr[`2d` | `3d-flat` | `3d-volumetric` | `3d-volumetric-uniform`] = js.undefined
   
   /**
     * The view instance in which the visualization will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: View = js.native
+  var view: View
 }
 object relationshipCreateRendererParams {
   

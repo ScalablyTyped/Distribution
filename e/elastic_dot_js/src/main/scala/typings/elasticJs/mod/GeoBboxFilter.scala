@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoBboxFilter")
 @js.native
-class GeoBboxFilter protected () extends Filter {
+class GeoBboxFilter protected ()
+  extends StObject
+     with Filter {
   /*
     Filter results to those which are contained within the defined bounding box.
     */

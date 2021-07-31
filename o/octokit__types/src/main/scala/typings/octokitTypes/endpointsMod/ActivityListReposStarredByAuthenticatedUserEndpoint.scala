@@ -6,31 +6,29 @@ import typings.octokitTypes.octokitTypesStrings.desc
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityListReposStarredByAuthenticatedUserEndpoint extends StObject {
   
   /**
     * One of `asc` (ascending) or `desc` (descending).
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * One of `created` (when the repository was starred) or `updated` (when it was last pushed to).
     */
-  var sort: js.UndefOr[created | updated] = js.native
+  var sort: js.UndefOr[created | updated] = js.undefined
 }
 object ActivityListReposStarredByAuthenticatedUserEndpoint {
   

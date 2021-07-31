@@ -4,15 +4,13 @@ import typings.ionicCore.interfaceMod.NavOutletElement
 import typings.ionicCore.interfaceMod.RouteID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ids extends StObject {
   
-  var ids: js.Array[RouteID] = js.native
+  var ids: js.Array[RouteID]
   
-  var outlet: js.UndefOr[NavOutletElement] = js.native
+  var outlet: js.UndefOr[NavOutletElement] = js.undefined
 }
 object Ids {
   

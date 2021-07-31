@@ -3,27 +3,27 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormStrings.dependenciesUpdate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DependenciesUpdateInfo extends NotifyInfo {
+trait DependenciesUpdateInfo
+  extends StObject
+     with NotifyInfo {
   
   /**
     * Contains all the related `InternalNamePath[]`.
     * a <- b <- c : change `a`
     * relatedFields=[a, b, c]
     */
-  var relatedFields: js.Array[InternalNamePath] = js.native
+  var relatedFields: js.Array[InternalNamePath]
   
-  var `type`: dependenciesUpdate = js.native
+  var `type`: dependenciesUpdate
 }
 object DependenciesUpdateInfo {
   
   @scala.inline
-  def apply(relatedFields: js.Array[InternalNamePath], `type`: dependenciesUpdate): DependenciesUpdateInfo = {
+  def apply(relatedFields: js.Array[InternalNamePath]): DependenciesUpdateInfo = {
     val __obj = js.Dynamic.literal(relatedFields = relatedFields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dependenciesUpdate")
     __obj.asInstanceOf[DependenciesUpdateInfo]
   }
   

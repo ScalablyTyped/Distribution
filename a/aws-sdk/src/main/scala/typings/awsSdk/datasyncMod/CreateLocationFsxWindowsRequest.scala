@@ -2,46 +2,44 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocationFsxWindowsRequest extends StObject {
   
   /**
     * The name of the Windows domain that the FSx for Windows server belongs to.
     */
-  var Domain: js.UndefOr[SmbDomain] = js.native
+  var Domain: js.UndefOr[SmbDomain] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the FSx for Windows file system.
     */
-  var FsxFilesystemArn: typings.awsSdk.datasyncMod.FsxFilesystemArn = js.native
+  var FsxFilesystemArn: typings.awsSdk.datasyncMod.FsxFilesystemArn
   
   /**
     * The password of the user who has the permissions to access files and folders in the FSx for Windows file system.
     */
-  var Password: SmbPassword = js.native
+  var Password: SmbPassword
   
   /**
     * The Amazon Resource Names (ARNs) of the security groups that are to use to configure the FSx for Windows file system.
     */
-  var SecurityGroupArns: Ec2SecurityGroupArnList = js.native
+  var SecurityGroupArns: Ec2SecurityGroupArnList
   
   /**
     * A subdirectory in the location’s path. This subdirectory in the Amazon FSx for Windows file system is used to read data from the Amazon FSx for Windows source location or write data to the FSx for Windows destination.
     */
-  var Subdirectory: js.UndefOr[FsxWindowsSubdirectory] = js.native
+  var Subdirectory: js.UndefOr[FsxWindowsSubdirectory] = js.undefined
   
   /**
     * The key-value pair that represents a tag that you want to add to the resource. The value can be an empty string. This value helps you manage, filter, and search for your resources. We recommend that you create a name tag for your location.
     */
-  var Tags: js.UndefOr[InputTagList] = js.native
+  var Tags: js.UndefOr[InputTagList] = js.undefined
   
   /**
     * The user who has the permissions to access files and folders in the FSx for Windows file system.
     */
-  var User: SmbUser = js.native
+  var User: SmbUser
 }
 object CreateLocationFsxWindowsRequest {
   

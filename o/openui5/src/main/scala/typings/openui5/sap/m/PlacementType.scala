@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,59 +14,97 @@ sealed trait PlacementType extends StObject
 object PlacementType extends StObject {
   
   @js.native
-  sealed trait Auto extends PlacementType
+  sealed trait Auto
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Bottom extends PlacementType
+  sealed trait Bottom
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Horizontal extends PlacementType
+  sealed trait Horizontal
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait HorizontalPreferedLeft extends PlacementType
+  sealed trait HorizontalPreferedLeft
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait HorizontalPreferedRight extends PlacementType
+  sealed trait HorizontalPreferedRight
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait HorizontalPreferredLeft extends PlacementType
+  sealed trait HorizontalPreferredLeft
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait HorizontalPreferredRight extends PlacementType
+  sealed trait HorizontalPreferredRight
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Left extends PlacementType
+  sealed trait Left
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait PreferredBottomOrFlip extends PlacementType
+  sealed trait PreferredBottomOrFlip
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait PreferredLeftOrFlip extends PlacementType
+  sealed trait PreferredLeftOrFlip
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait PreferredRightOrFlip extends PlacementType
+  sealed trait PreferredRightOrFlip
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait PreferredTopOrFlip extends PlacementType
+  sealed trait PreferredTopOrFlip
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Right extends PlacementType
+  sealed trait Right
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Top extends PlacementType
+  sealed trait Top
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait Vertical extends PlacementType
+  sealed trait Vertical
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait VerticalPreferedBottom extends PlacementType
+  sealed trait VerticalPreferedBottom
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait VerticalPreferedTop extends PlacementType
+  sealed trait VerticalPreferedTop
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait VerticalPreferredBottom extends PlacementType
+  sealed trait VerticalPreferredBottom
+    extends StObject
+       with PlacementType
   
   @js.native
-  sealed trait VerticalPreferredTop extends PlacementType
+  sealed trait VerticalPreferredTop
+    extends StObject
+       with PlacementType
 }

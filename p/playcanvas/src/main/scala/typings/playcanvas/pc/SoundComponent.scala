@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param entity - The entity that the Component is attached to.
   */
 @js.native
-trait SoundComponent extends Component {
+trait SoundComponent
+  extends StObject
+     with Component {
   
   /**
     * Creates a new {@link pc.SoundSlot} with the specified name.

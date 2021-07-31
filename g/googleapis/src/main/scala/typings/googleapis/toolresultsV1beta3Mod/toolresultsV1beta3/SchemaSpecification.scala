@@ -2,19 +2,17 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The details about how to run the execution.
   */
-@js.native
 trait SchemaSpecification extends StObject {
   
   /**
     * An Android mobile test execution specification.
     */
-  var androidTest: js.UndefOr[SchemaAndroidTest] = js.native
+  var androidTest: js.UndefOr[SchemaAndroidTest] = js.undefined
 }
 object SchemaSpecification {
   

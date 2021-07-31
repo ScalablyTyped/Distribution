@@ -3,21 +3,19 @@ package typings.mongodb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeStreamEvents[TSchema /* <: StringDictionary[js.Any] */] extends StObject {
   
-  def change(doc: ChangeEvent[TSchema]): Unit = js.native
+  def change(doc: ChangeEvent[TSchema]): Unit
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def end(): Unit = js.native
+  def end(): Unit
   
-  def error(err: MongoError): Unit = js.native
+  def error(err: MongoError): Unit
   
-  def resumeTokenChanged(newToken: ResumeToken): Unit = js.native
+  def resumeTokenChanged(newToken: ResumeToken): Unit
 }
 object ChangeStreamEvents {
   
@@ -34,7 +32,7 @@ object ChangeStreamEvents {
   }
   
   @scala.inline
-  implicit class ChangeStreamEventsMutableBuilder[Self <: ChangeStreamEvents[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeStreamEvents[TSchema]) extends AnyVal {
+  implicit class ChangeStreamEventsMutableBuilder[Self <: ChangeStreamEvents[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeStreamEvents[TSchema]) extends AnyVal {
     
     @scala.inline
     def setChange(value: ChangeEvent[TSchema] => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))

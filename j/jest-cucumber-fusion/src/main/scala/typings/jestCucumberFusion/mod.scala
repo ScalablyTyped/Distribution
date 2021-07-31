@@ -4,66 +4,57 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-cucumber-fusion", "After")
+  @JSImport("jest-cucumber-fusion", JSImport.Namespace)
   @js.native
-  def After(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-cucumber-fusion", "And")
-  @js.native
-  def And(name: String, callback: CallBack): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "And")
-  @js.native
-  def And(name: RegExp, callback: CallBack): Unit = js.native
+  @scala.inline
+  def After(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("After")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "Before")
-  @js.native
-  def Before(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = js.native
+  @scala.inline
+  def And(name: String, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def And(name: RegExp, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("And")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "But")
-  @js.native
-  def But(name: String, callback: CallBack): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "But")
-  @js.native
-  def But(name: RegExp, callback: CallBack): Unit = js.native
+  @scala.inline
+  def Before(callback: js.Function0[Unit | js.Promise[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Before")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "Fusion")
-  @js.native
-  def Fusion(feature: String): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "Fusion")
-  @js.native
+  @scala.inline
+  def But(name: String, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def But(name: RegExp, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("But")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def Fusion(feature: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Fusion")(feature.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
   def Fusion_1(
     feature: String,
     options: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<jest-cucumber-fusion.anon.FnCall>[1] */ js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Fusion")(feature.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "Given")
-  @js.native
-  def Given(name: String, callback: CallBack): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "Given")
-  @js.native
-  def Given(name: RegExp, callback: CallBack): Unit = js.native
+  @scala.inline
+  def Given(name: String, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def Given(name: RegExp, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Given")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "Then")
-  @js.native
-  def Then(name: String, callback: CallBack): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "Then")
-  @js.native
-  def Then(name: RegExp, callback: CallBack): Unit = js.native
+  @scala.inline
+  def Then(name: String, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def Then(name: RegExp, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Then")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jest-cucumber-fusion", "When")
-  @js.native
-  def When(name: String, callback: CallBack): Unit = js.native
-  @JSImport("jest-cucumber-fusion", "When")
-  @js.native
-  def When(name: RegExp, callback: CallBack): Unit = js.native
+  @scala.inline
+  def When(name: String, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def When(name: RegExp, callback: CallBack): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("When")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  type CallBack = js.Function1[
-    /* repeated */ String | (js.Array[Record[String, String]]), 
-    Unit | js.Promise[Unit]
-  ]
+  @js.native
+  trait CallBack extends StObject {
+    
+    def apply(args: (String | (js.Array[Record[String, String]]))*): Unit | js.Promise[Unit] = js.native
+  }
 }

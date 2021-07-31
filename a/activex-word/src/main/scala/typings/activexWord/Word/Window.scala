@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,9 +18,9 @@ trait Window extends StObject {
   var Caption: String = js.native
   
   def Close(): Unit = js.native
-  def Close(SaveChanges: js.UndefOr[scala.Nothing], RouteDocument: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any): Unit = js.native
   def Close(SaveChanges: js.Any, RouteDocument: js.Any): Unit = js.native
+  def Close(SaveChanges: Unit, RouteDocument: js.Any): Unit = js.native
   
   val Creator: Double = js.native
   
@@ -64,26 +63,21 @@ trait Window extends StObject {
   val Index: Double = js.native
   
   def LargeScroll(): Unit = js.native
-  def LargeScroll(
-    Down: js.UndefOr[scala.Nothing],
-    Up: js.UndefOr[scala.Nothing],
-    ToRight: js.UndefOr[scala.Nothing],
-    ToLeft: js.Any
-  ): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any): Unit = js.native
-  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
   def LargeScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: Unit, ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: js.Any, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: js.Any, ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def LargeScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
   
   var Left: Double = js.native
   
@@ -92,9 +86,9 @@ trait Window extends StObject {
   val Next: Window = js.native
   
   def PageScroll(): Unit = js.native
-  def PageScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
   def PageScroll(Down: js.Any): Unit = js.native
   def PageScroll(Down: js.Any, Up: js.Any): Unit = js.native
+  def PageScroll(Down: Unit, Up: js.Any): Unit = js.native
   
   val Panes: typings.activexWord.Word.Panes = js.native
   
@@ -173,26 +167,21 @@ trait Window extends StObject {
   var ShowSourceDocuments: WdShowSourceDocuments = js.native
   
   def SmallScroll(): Unit = js.native
-  def SmallScroll(
-    Down: js.UndefOr[scala.Nothing],
-    Up: js.UndefOr[scala.Nothing],
-    ToRight: js.UndefOr[scala.Nothing],
-    ToLeft: js.Any
-  ): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: js.UndefOr[scala.Nothing], Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.UndefOr[scala.Nothing], ToRight: js.Any, ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any): Unit = js.native
-  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.UndefOr[scala.Nothing], ToLeft: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any): Unit = js.native
   def SmallScroll(Down: js.Any, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: Unit, ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: js.Any, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: js.Any, ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: js.Any, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: js.Any, ToRight: Unit, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: js.Any, ToLeft: js.Any): Unit = js.native
+  def SmallScroll(Down: Unit, Up: Unit, ToRight: Unit, ToLeft: js.Any): Unit = js.native
   
   var Split: Boolean = js.native
   

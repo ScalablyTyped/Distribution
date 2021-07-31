@@ -2,7 +2,6 @@ package typings.playerframework.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Microsoft {
@@ -19,7 +18,8 @@ object Microsoft {
         @JSGlobal("Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource")
         @js.native
         class RemoteAdSource ()
-          extends typings.playerframework.Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource
+          extends StObject
+             with typings.playerframework.Microsoft.PlayerFramework.Js.Advertising.RemoteAdSource
       }
     }
   }
@@ -29,7 +29,8 @@ object Microsoft {
     @JSGlobal("Microsoft.VideoAdvertising.Extensions")
     @js.native
     class Extensions ()
-      extends typings.playerframework.Microsoft.VideoAdvertising.Extensions
+      extends StObject
+         with typings.playerframework.Microsoft.VideoAdvertising.Extensions
     object Extensions {
       
       @JSGlobal("Microsoft.VideoAdvertising.Extensions")
@@ -47,7 +48,8 @@ object Microsoft {
     @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")
     @js.native
     class VastAdPayloadHandler ()
-      extends typings.playerframework.Microsoft.VideoAdvertising.VastAdPayloadHandler
+      extends StObject
+         with typings.playerframework.Microsoft.VideoAdvertising.VastAdPayloadHandler
     object VastAdPayloadHandler {
       
       @JSGlobal("Microsoft.VideoAdvertising.VastAdPayloadHandler")

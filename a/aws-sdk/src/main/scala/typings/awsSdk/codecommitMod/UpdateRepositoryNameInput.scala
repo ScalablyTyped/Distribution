@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRepositoryNameInput extends StObject {
   
   /**
     * The new name for the repository.
     */
-  var newName: RepositoryName = js.native
+  var newName: RepositoryName
   
   /**
     * The current name of the repository.
     */
-  var oldName: RepositoryName = js.native
+  var oldName: RepositoryName
 }
 object UpdateRepositoryNameInput {
   

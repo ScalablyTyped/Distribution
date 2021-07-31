@@ -4,24 +4,24 @@ import typings.awsSdkClientSqsNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListQueuesOutputMod {
   
-  @js.native
-  trait ListQueuesOutput extends OutputTypesUnion {
+  trait ListQueuesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of queue URLs, up to 1,000 entries.</p>
       */
-    var QueueUrls: js.UndefOr[js.Array[String]] = js.native
+    var QueueUrls: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ListQueuesOutput {
     

@@ -3,22 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttributeRightHandSideInteger extends ExtendedAttributeRightHandSideBase {
+trait ExtendedAttributeRightHandSideInteger
+  extends StObject
+     with ExtendedAttributeRightHandSideBase {
   
-  var `type`: integer = js.native
+  var `type`: integer
   
-  var value: String = js.native
+  var value: String
 }
 object ExtendedAttributeRightHandSideInteger {
   
   @scala.inline
-  def apply(`type`: integer, value: String): ExtendedAttributeRightHandSideInteger = {
+  def apply(value: String): ExtendedAttributeRightHandSideInteger = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("integer")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideInteger]
   }
   

@@ -2,16 +2,14 @@ package typings.firefoxWebextBrowser.browser.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains start and end timestamps. */
-@js.native
 trait CertificateInfoValidity extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var start: Double = js.native
+  var start: Double
 }
 object CertificateInfoValidity {
   

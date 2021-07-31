@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.ssm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersAutomationParameters extends StObject {
   
   /**
     * The version of an Automation document to use during task execution.
     */
-  var documentVersion: js.UndefOr[String] = js.native
+  var documentVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The parameters for the RUN_COMMAND task execution. Documented below.
     */
   var parameters: js.UndefOr[
     js.Array[MaintenanceWindowTaskTaskInvocationParametersAutomationParametersParameter]
-  ] = js.native
+  ] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersAutomationParameters {
   

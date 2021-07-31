@@ -2,61 +2,59 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkillDetails extends StObject {
   
   /**
     * The details about what the skill supports organized as bullet points.
     */
-  var BulletPoints: js.UndefOr[typings.awsSdk.alexaforbusinessMod.BulletPoints] = js.native
+  var BulletPoints: js.UndefOr[typings.awsSdk.alexaforbusinessMod.BulletPoints] = js.undefined
   
   /**
     * The details about the developer that published the skill.
     */
-  var DeveloperInfo: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeveloperInfo] = js.native
+  var DeveloperInfo: js.UndefOr[typings.awsSdk.alexaforbusinessMod.DeveloperInfo] = js.undefined
   
   /**
     * The URL of the end user license agreement.
     */
-  var EndUserLicenseAgreement: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EndUserLicenseAgreement] = js.native
+  var EndUserLicenseAgreement: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EndUserLicenseAgreement] = js.undefined
   
   /**
     * The generic keywords associated with the skill that can be used to find a skill.
     */
-  var GenericKeywords: js.UndefOr[typings.awsSdk.alexaforbusinessMod.GenericKeywords] = js.native
+  var GenericKeywords: js.UndefOr[typings.awsSdk.alexaforbusinessMod.GenericKeywords] = js.undefined
   
   /**
     * The phrase used to trigger the skill.
     */
-  var InvocationPhrase: js.UndefOr[typings.awsSdk.alexaforbusinessMod.InvocationPhrase] = js.native
+  var InvocationPhrase: js.UndefOr[typings.awsSdk.alexaforbusinessMod.InvocationPhrase] = js.undefined
   
   /**
     * The updates added in bullet points.
     */
-  var NewInThisVersionBulletPoints: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NewInThisVersionBulletPoints] = js.native
+  var NewInThisVersionBulletPoints: js.UndefOr[typings.awsSdk.alexaforbusinessMod.NewInThisVersionBulletPoints] = js.undefined
   
   /**
     * The description of the product.
     */
-  var ProductDescription: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProductDescription] = js.native
+  var ProductDescription: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ProductDescription] = js.undefined
   
   /**
     * The date when the skill was released.
     */
-  var ReleaseDate: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ReleaseDate] = js.native
+  var ReleaseDate: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ReleaseDate] = js.undefined
   
   /**
     *  This member has been deprecated.  The list of reviews for the skill, including Key and Value pair.
     */
-  var Reviews: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Reviews] = js.native
+  var Reviews: js.UndefOr[typings.awsSdk.alexaforbusinessMod.Reviews] = js.undefined
   
   /**
     * The types of skills.
     */
-  var SkillTypes: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillTypes] = js.native
+  var SkillTypes: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillTypes] = js.undefined
 }
 object SkillDetails {
   

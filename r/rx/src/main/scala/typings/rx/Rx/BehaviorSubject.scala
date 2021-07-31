@@ -2,11 +2,12 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BehaviorSubject[T] extends Subject[T] {
+trait BehaviorSubject[T]
+  extends StObject
+     with Subject[T] {
   
   /**
     * Gets the current value or throws an exception.

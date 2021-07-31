@@ -8,7 +8,6 @@ import typings.officeJs.OfficeExtension.UpdateOptions
 import typings.officeJs.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait TableRow extends ClientObject {
+trait TableRow
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -90,5 +91,5 @@ trait TableRow extends ClientObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var values: js.Array[js.Array[_]] = js.native
+  var values: js.Array[js.Array[js.Any]] = js.native
 }

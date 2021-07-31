@@ -4,7 +4,6 @@ import typings.sqlite.sqlite3Mod.Database
 import typings.sqlite.sqlite3Mod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteMod {
@@ -15,9 +14,12 @@ object sqliteMod {
   /* static members */
   object default {
     
-    @JSImport("keya/out/node/sqlite", "default.stores")
+    @JSImport("keya/out/node/sqlite", JSImport.Default)
     @js.native
-    def stores(): js.Promise[js.Array[String]] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def stores(): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stores")().asInstanceOf[js.Promise[js.Array[String]]]
   }
   
   @js.native

@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetShowDebugBordersRequest extends StObject {
   
   /**
     * True for showing debug borders
     */
-  var show: Boolean = js.native
+  var show: Boolean
 }
 object SetShowDebugBordersRequest {
   

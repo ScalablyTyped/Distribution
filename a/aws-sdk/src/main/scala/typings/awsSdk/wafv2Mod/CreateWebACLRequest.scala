@@ -2,46 +2,44 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWebACLRequest extends StObject {
   
   /**
     * The action to perform if none of the Rules contained in the WebACL match. 
     */
-  var DefaultAction: typings.awsSdk.wafv2Mod.DefaultAction = js.native
+  var DefaultAction: typings.awsSdk.wafv2Mod.DefaultAction
   
   /**
     * A description of the Web ACL that helps with identification. You cannot change the description of a Web ACL after you create it.
     */
-  var Description: js.UndefOr[EntityDescription] = js.native
+  var Description: js.UndefOr[EntityDescription] = js.undefined
   
   /**
     * The name of the Web ACL. You cannot change the name of a Web ACL after you create it.
     */
-  var Name: EntityName = js.native
+  var Name: EntityName
   
   /**
     * The Rule statements used to identify the web requests that you want to allow, block, or count. Each rule includes one top-level statement that AWS WAF uses to identify matching web requests, and parameters that govern how AWS WAF handles them. 
     */
-  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.native
+  var Rules: js.UndefOr[typings.awsSdk.wafv2Mod.Rules] = js.undefined
   
   /**
     * Specifies whether this is for an AWS CloudFront distribution or for a regional application. A regional application can be an Application Load Balancer (ALB), an API Gateway REST API, or an AppSync GraphQL API.  To work with CloudFront, you must also specify the Region US East (N. Virginia) as follows:    CLI - Specify the Region when you use the CloudFront scope: --scope=CLOUDFRONT --region=us-east-1.    API and SDKs - For all calls, use the Region endpoint us-east-1.   
     */
-  var Scope: typings.awsSdk.wafv2Mod.Scope = js.native
+  var Scope: typings.awsSdk.wafv2Mod.Scope
   
   /**
     * An array of key:value pairs to associate with the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * Defines and enables Amazon CloudWatch metrics and web request sample collection. 
     */
-  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig = js.native
+  var VisibilityConfig: typings.awsSdk.wafv2Mod.VisibilityConfig
 }
 object CreateWebACLRequest {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,11 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Various meaningful errors are derived from this exception.
   * @since OOo 3.3
   */
-@js.native
-trait InteractiveLockingException extends ClassifiedInteractionRequest {
+trait InteractiveLockingException
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /** The Url of the resource this exception is related to. */
-  var Url: String = js.native
+  var Url: String
 }
 object InteractiveLockingException {
   

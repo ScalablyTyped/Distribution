@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeDoubleClickEventUIParam extends StObject {
   
   /**
     * Gets a reference to the bindings object for the level at which the double clicked node is located.
     */
-  var binding: js.UndefOr[js.Any] = js.native
+  var binding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the node data.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the jQuery element of the double clicked node.
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the data-path attribute of the double clicked node.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object NodeDoubleClickEventUIParam {
   

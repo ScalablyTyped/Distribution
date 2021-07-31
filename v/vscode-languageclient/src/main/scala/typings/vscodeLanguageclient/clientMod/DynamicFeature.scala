@@ -5,7 +5,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.InitializeParams
 import typings.vscodeLanguageserverProtocol.protocolMod.ServerCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,9 +40,9 @@ trait DynamicFeature[RO] extends StObject {
     * @param documentSelector the document selector pass to the client's constuctor.
     *  May be `undefined` if the client was created without a selector.
     */
-  def initialize(capabilities: ServerCapabilities[_]): Unit = js.native
+  def initialize(capabilities: ServerCapabilities[js.Any]): Unit = js.native
   def initialize(
-    capabilities: ServerCapabilities[_],
+    capabilities: ServerCapabilities[js.Any],
     documentSelector: typings.vscodeLanguageserverProtocol.protocolMod.DocumentSelector
   ): Unit = js.native
   

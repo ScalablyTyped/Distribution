@@ -11,30 +11,29 @@ import typings.reactNativeTouchId.reactNativeTouchIdStrings.RCTTouchIDNotSupport
 import typings.reactNativeTouchId.reactNativeTouchIdStrings.RCTTouchIDUnknownError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-touch-id", "authenticate")
+  @JSImport("react-native-touch-id", JSImport.Namespace)
   @js.native
-  def authenticate(reason: String): js.Promise[Boolean | TouchIDError] = js.native
-  @JSImport("react-native-touch-id", "authenticate")
-  @js.native
-  def authenticate(reason: String, config: AuthenticateConfig): js.Promise[Boolean | TouchIDError] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-touch-id", "isSupported")
-  @js.native
-  def isSupported(): js.Promise[Boolean | String | TouchIDError] = js.native
+  @scala.inline
+  def authenticate(reason: String): js.Promise[Boolean | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean | TouchIDError]]
+  @scala.inline
+  def authenticate(reason: String, config: AuthenticateConfig): js.Promise[Boolean | TouchIDError] = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(reason.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean | TouchIDError]]
   
-  @js.native
+  @scala.inline
+  def isSupported(): js.Promise[Boolean | String | TouchIDError] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean | String | TouchIDError]]
+  
   trait AuthenticateConfig extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fallbackTitle: String = js.native
+    var fallbackTitle: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object AuthenticateConfig {
     
@@ -64,14 +63,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TouchIDError extends StObject {
     
-    var details: js.Any = js.native
+    var details: js.Any
     
-    var message: String = js.native
+    var message: String
     
-    var name: LAErrorAuthenticationFailed | LAErrorUserCancel | LAErrorUserFallback | LAErrorSystemCancel | LAErrorPasscodeNotSet | LAErrorTouchIDNotAvailable | LAErrorTouchIDNotEnrolled | RCTTouchIDUnknownError | RCTTouchIDNotSupported = js.native
+    var name: LAErrorAuthenticationFailed | LAErrorUserCancel | LAErrorUserFallback | LAErrorSystemCancel | LAErrorPasscodeNotSet | LAErrorTouchIDNotAvailable | LAErrorTouchIDNotEnrolled | RCTTouchIDUnknownError | RCTTouchIDNotSupported
   }
   object TouchIDError {
     

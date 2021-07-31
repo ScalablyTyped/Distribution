@@ -2,7 +2,6 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * geographic coordinate.
   */
 @js.native
-trait CircleOverlay extends Overlay {
+trait CircleOverlay
+  extends StObject
+     with Overlay {
   
   /**
     * The coordinate of the circle overlay's center.

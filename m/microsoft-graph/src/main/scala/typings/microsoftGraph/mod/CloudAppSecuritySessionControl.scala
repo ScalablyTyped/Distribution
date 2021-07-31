@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CloudAppSecuritySessionControl extends ConditionalAccessSessionControl {
+trait CloudAppSecuritySessionControl
+  extends StObject
+     with ConditionalAccessSessionControl {
   
   /**
     * Possible values are: mcasConfigured, monitorOnly, blockDownloads, unknownFutureValue. For more information, see Deploy
     * Conditional Access App Control for featured apps.
     */
-  var cloudAppSecurityType: js.UndefOr[NullableOption[CloudAppSecuritySessionControlType]] = js.native
+  var cloudAppSecurityType: js.UndefOr[NullableOption[CloudAppSecuritySessionControlType]] = js.undefined
 }
 object CloudAppSecuritySessionControl {
   

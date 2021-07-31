@@ -2,13 +2,11 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppOnline extends StObject {
   
-  var appOnline: Boolean = js.native
+  var appOnline: Boolean
 }
 object AppOnline {
   

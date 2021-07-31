@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.antDesignProUtils.anon.Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversionSubmitValueMod {
+  
+  @JSImport("@ant-design/pro-utils/lib/conversionSubmitValue", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * 这里主要是来转化一下数据
@@ -17,16 +20,13 @@ object conversionSubmitValueMod {
     * @param dateFormatter
     * @param proColumnsMap
     */
-  @JSImport("@ant-design/pro-utils/lib/conversionSubmitValue", JSImport.Default)
-  @js.native
-  def default[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any]): T = js.native
-  @JSImport("@ant-design/pro-utils/lib/conversionSubmitValue", JSImport.Default)
-  @js.native
-  def default[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any], parentKey: String): T = js.native
+  @scala.inline
+  def default[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any], valueTypeMap.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def default[T](value: T, dateFormatter: DateFormatter, valueTypeMap: StringDictionary[js.Any], parentKey: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any], dateFormatter.asInstanceOf[js.Any], valueTypeMap.asInstanceOf[js.Any], parentKey.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@ant-design/pro-utils/lib/conversionSubmitValue", "isPlainObject")
-  @js.native
-  def isPlainObject(o: Constructor): Boolean = js.native
+  @scala.inline
+  def isPlainObject(o: Constructor): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(o.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.antDesignProUtils.antDesignProUtilsBooleans.`false`

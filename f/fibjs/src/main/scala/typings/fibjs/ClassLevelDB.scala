@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 用以创建和管理字典对象，创建方法：,```JavaScript,var db = require("db");,var test = new db.openLevelDB("test.db");,```
   */
 @js.native
-trait ClassLevelDB extends ClassObject {
+trait ClassLevelDB
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -113,7 +114,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     * 
     */
-  def mget(keys: js.Array[_]): js.Array[_] = js.native
+  def mget(keys: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /**
     * 
@@ -123,7 +124,7 @@ trait ClassLevelDB extends ClassObject {
     * 
     * 
     */
-  def mremove(keys: js.Array[_]): Unit = js.native
+  def mremove(keys: js.Array[js.Any]): Unit = js.native
   
   /**
     * 

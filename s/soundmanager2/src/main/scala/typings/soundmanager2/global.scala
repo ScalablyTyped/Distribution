@@ -3,7 +3,6 @@ package typings.soundmanager2
 import typings.soundmanager2.soundmanager.SoundManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -20,6 +19,7 @@ object global {
     @JSGlobal("soundmanager.SMSound")
     @js.native
     class SMSound ()
-      extends typings.soundmanager2.soundmanager.SMSound
+      extends StObject
+         with typings.soundmanager2.soundmanager.SMSound
   }
 }

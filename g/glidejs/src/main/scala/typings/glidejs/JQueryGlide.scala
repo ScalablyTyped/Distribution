@@ -2,63 +2,61 @@ package typings.glidejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryGlide {
   
-  @js.native
   trait IGlideApi extends StObject {
     
     /**
       * Append arrows to specifed target (eq. 'body', '.class', '#id')
       */
-    def arrows(target: String): Unit = js.native
+    def arrows(target: String): Unit
     
     /**
       * Returning current slide number
       */
-    def current(): Double = js.native
+    def current(): Double
     
     /**
       * Destroy and cleanup slider
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Jump to current slide
       */
-    def jump(distance: Double, callback: js.Function): Unit = js.native
+    def jump(distance: Double, callback: js.Function): Unit
     
     /**
       * Append navigation to specifed target (eq. 'body', '.class', '#id')
       */
-    def nav(target: String): Unit = js.native
+    def nav(target: String): Unit
     
     /**
       * Slide one forward
       */
-    def next(callback: js.Function): Unit = js.native
+    def next(callback: js.Function): Unit
     
     /**
       * Stopping autoplay
       */
-    def pause(): Unit = js.native
+    def pause(): Unit
     
     /**
       * Starting autoplay
       */
-    def play(): Unit = js.native
+    def play(): Unit
     
     /**
       * Slide one backward
       */
-    def prev(callback: js.Function): Unit = js.native
+    def prev(callback: js.Function): Unit
     
     /**
       * Rebuild and recalculate dimensions of slider elements
       */
-    def reinit(): Unit = js.native
+    def reinit(): Unit
   }
   object IGlideApi {
     
@@ -114,63 +112,62 @@ object JQueryGlide {
     }
   }
   
-  @js.native
   trait IGlideOptions extends StObject {
     
     /**
       * Default: function () {}
       * {Function} Callback after plugin init
       */
-    var afterInit: js.UndefOr[js.Function] = js.native
+    var afterInit: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Default: function() {}
       * {Function} Callback after slide change
       */
-    var afterTransition: js.UndefOr[js.Function] = js.native
+    var afterTransition: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Default: 500
       * Animation time in ms
       * @type {number}
       */
-    var animationDuration: js.UndefOr[Double] = js.native
+    var animationDuration: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: cubic-bezier(0.165, 0.840, 0.440, 1.000)
       * cubic-bezier(0.165, 0.840, 0.440, 1.000)
       */
-    var animationTimingFunc: js.UndefOr[String] = js.native
+    var animationTimingFunc: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'slider-arrow--left'
       * {String} Left arrow
       */
-    var arrowLeftClass: js.UndefOr[String] = js.native
+    var arrowLeftClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'prev'
       * {String} Left arrow text
       */
-    var arrowLeftText: js.UndefOr[String] = js.native
+    var arrowLeftText: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'slider-arrow'
       * {String} Main class for both arrows
       */
-    var arrowMainClass: js.UndefOr[String] = js.native
+    var arrowMainClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'slider-arrow--right'
       * {String} Right arrow
       */
-    var arrowRightClass: js.UndefOr[String] = js.native
+    var arrowRightClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'next'
       * {String} Right arrow text
       */
-    var arrowRightText: js.UndefOr[String] = js.native
+    var arrowRightText: js.UndefOr[String] = js.undefined
     
     /**
       * Default: true
@@ -179,47 +176,47 @@ object JQueryGlide {
       * False for not appending arrows
       * Id or class name (e.g. '.class-name') for appending to specific HTML markup
       */
-    var arrows: js.UndefOr[js.Any] = js.native
+    var arrows: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Default: 'slider-arrows'
       * {String} Arrows wrapper class
       */
-    var arrowsWrapperClass: js.UndefOr[String] = js.native
+    var arrowsWrapperClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 4000
       * {Int or Bool} False for turning off autoplay
       */
-    var autoplay: js.UndefOr[js.Any] = js.native
+    var autoplay: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Default: function () {}
       * {Function} Callback before plugin init
       */
-    var beforeInit: js.UndefOr[js.Function] = js.native
+    var beforeInit: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Default: function () {}
       * {Function} Callback before slide change
       */
-    var beforeTransition: js.UndefOr[js.Function] = js.native
+    var beforeTransition: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Default: true {Bool} Circular play (Animation continues without starting over once it reaches the last slide)
       */
-    var circular: js.UndefOr[Boolean] = js.native
+    var circular: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true {Bool} Pause autoplay on mouseover slider
       */
-    var hoverpause: js.UndefOr[Boolean] = js.native
+    var hoverpause: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true
       * {Bool} Slide on left / right keyboard arrows press
       */
-    var keyboard: js.UndefOr[Boolean] = js.native
+    var keyboard: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true
@@ -228,37 +225,37 @@ object JQueryGlide {
       * False for not appending arrows
       * Id or class name (e.g. '.class-name') for appending to specific HTML markup
       */
-    var navigation: js.UndefOr[js.Any] = js.native
+    var navigation: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Default: true
       * {Bool} Center bullet navigation
       */
-    var navigationCenter: js.UndefOr[Boolean] = js.native
+    var navigationCenter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: 'slider-nav'
       * {String} Navigation class
       */
-    var navigationClass: js.UndefOr[String] = js.native
+    var navigationClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'slider-nav__item--current'
       * {String} Current navigation item class
       */
-    var navigationCurrentItemClass: js.UndefOr[String] = js.native
+    var navigationCurrentItemClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 'slider-nav__item'
       * {String} Navigation item class
       */
-    var navigationItemClass: js.UndefOr[String] = js.native
+    var navigationItemClass: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 60
       * {Int or Bool} Touch settings
       */
-    var touchDistance: js.UndefOr[js.Any] = js.native
+    var touchDistance: js.UndefOr[js.Any] = js.undefined
   }
   object IGlideOptions {
     

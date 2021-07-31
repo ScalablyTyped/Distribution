@@ -2,37 +2,35 @@ package typings.stripeV2.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeStatic extends StObject {
   
-  var applePay: StripeApplePay = js.native
+  var applePay: StripeApplePay
   
-  var bankAccount: StripeBankAccount = js.native
+  var bankAccount: StripeBankAccount
   
-  var card: StripeCard = js.native
+  var card: StripeCard
   
-  def cardType(cardNumber: String): StripeCardDataBrand = js.native
+  def cardType(cardNumber: String): StripeCardDataBrand
   
   def createToken(
     data: StripeCardTokenData,
     responseHandler: js.Function2[/* status */ Double, /* response */ StripeCardTokenResponse, Unit]
-  ): Unit = js.native
+  ): Unit
   
   def getToken(
     token: String,
     responseHandler: js.Function2[/* status */ Double, /* response */ StripeCardTokenResponse, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def setPublishableKey(key: String): Unit = js.native
+  def setPublishableKey(key: String): Unit
   
-  def validateCVC(cardCVC: String): Boolean = js.native
+  def validateCVC(cardCVC: String): Boolean
   
-  def validateCardNumber(cardNumber: String): Boolean = js.native
+  def validateCardNumber(cardNumber: String): Boolean
   
-  def validateExpiry(month: String, year: String): Boolean = js.native
+  def validateExpiry(month: String, year: String): Boolean
 }
 object StripeStatic {
   

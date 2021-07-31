@@ -6,7 +6,6 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.sourceSourceMod.AttributionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object osmMod {
@@ -25,28 +24,27 @@ object osmMod {
   trait OSM
     extends typings.ol.xyzMod.default
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var maxZoom: js.UndefOr[Double] = js.native
+    var maxZoom: js.UndefOr[Double] = js.undefined
     
-    var opaque: js.UndefOr[Boolean] = js.native
+    var opaque: js.UndefOr[Boolean] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var tileLoadFunction: js.UndefOr[LoadFunction] = js.native
+    var tileLoadFunction: js.UndefOr[LoadFunction] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

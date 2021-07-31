@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealtimeTimeRange extends StObject {
   
   /** The start timestamp of the real-time RTB metrics aggregation. */
-  var startTimestamp: js.UndefOr[String] = js.native
+  var startTimestamp: js.UndefOr[String] = js.undefined
 }
 object RealtimeTimeRange {
   

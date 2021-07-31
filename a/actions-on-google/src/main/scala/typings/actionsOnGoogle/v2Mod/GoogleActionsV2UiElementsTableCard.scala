@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2UiElementsTableCard extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait GoogleActionsV2UiElementsTableCard extends StObject {
     * Currently at most 1 button is supported.
     * Optional.
     */
-  var buttons: js.UndefOr[js.Array[GoogleActionsV2UiElementsButton]] = js.native
+  var buttons: js.UndefOr[js.Array[GoogleActionsV2UiElementsButton]] = js.undefined
   
   /**
     * Headers and alignment of columns.
     */
-  var columnProperties: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardColumnProperties]] = js.native
+  var columnProperties: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardColumnProperties]] = js.undefined
   
   /**
     * Image associated with the table. Optional.
     */
-  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var image: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Row data of the table. The first 3 rows are guaranteed to be shown but
@@ -32,17 +30,17 @@ trait GoogleActionsV2UiElementsTableCard extends StObject {
     * the WEB_BROWSER capability, you can point the user to
     * a web page with more data.
     */
-  var rows: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardRow]] = js.native
+  var rows: js.UndefOr[js.Array[GoogleActionsV2UiElementsTableCardRow]] = js.undefined
   
   /**
     * Subtitle for the table. Optional.
     */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /**
     * Overall title of the table. Optional but must be set if subtitle is set.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2UiElementsTableCard {
   

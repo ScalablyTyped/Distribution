@@ -8,7 +8,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responsiveResponsiveMod {
@@ -61,10 +60,11 @@ object responsiveResponsiveMod {
   
   type Responsive = Component[ResponsiveProps, js.Object, js.Any]
   
-  @js.native
-  trait ResponsiveOnUpdateData extends ResponsiveProps {
+  trait ResponsiveOnUpdateData
+    extends StObject
+       with ResponsiveProps {
     
-    var width: Double = js.native
+    var width: Double
   }
   object ResponsiveOnUpdateData {
     
@@ -82,9 +82,9 @@ object responsiveResponsiveMod {
     }
   }
   
-  @js.native
   trait ResponsiveProps
-    extends StrictResponsiveProps
+    extends StObject
+       with StrictResponsiveProps
        with /* key */ StringDictionary[js.Any]
   object ResponsiveProps {
     
@@ -95,12 +95,11 @@ object responsiveResponsiveMod {
     }
   }
   
-  @js.native
   trait ResponsiveWidthShorthand extends StObject {
     
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
   }
   object ResponsiveWidthShorthand {
     
@@ -127,29 +126,28 @@ object responsiveResponsiveMod {
     }
   }
   
-  @js.native
   trait StrictResponsiveProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Fires callbacks immediately after mount. */
-    var fireOnMount: js.UndefOr[Boolean] = js.native
+    var fireOnMount: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called to get width of screen. Defaults to using `window.innerWidth` when in a browser;
       * otherwise, assumes a width of 0.
       */
-    var getWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** The maximum width at which content will be displayed. */
-    var maxWidth: js.UndefOr[Double | String] = js.native
+    var maxWidth: js.UndefOr[Double | String] = js.undefined
     
     /** The minimum width at which content will be displayed. */
-    var minWidth: js.UndefOr[Double | String] = js.native
+    var minWidth: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Called on update.
@@ -163,7 +161,7 @@ object responsiveResponsiveMod {
           /* data */ ResponsiveOnUpdateData, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object StrictResponsiveProps {
     

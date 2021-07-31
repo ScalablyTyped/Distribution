@@ -3,42 +3,42 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to move paragraph by paragraph. */
-@js.native
-trait XParagraphCursor extends XTextCursor {
+trait XParagraphCursor
+  extends StObject
+     with XTextCursor {
   
   /**
     * moves the cursor to the end of the current paragraph.
     * @returns `TRUE` if the cursor is now at the end of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoEndOfParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the next paragraph.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoNextParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the previous paragraph.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoPreviousParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the current paragraph.
     * @returns `TRUE` if the cursor is now at the start of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoStartOfParagraph(bExpand: Boolean): Boolean
   
   /** determines if the cursor is positioned at the end of a paragraph. */
-  def isEndOfParagraph(): Boolean = js.native
+  def isEndOfParagraph(): Boolean
   
   /** determines if the cursor is positioned at the start of a paragraph. */
-  def isStartOfParagraph(): Boolean = js.native
+  def isStartOfParagraph(): Boolean
 }
 object XParagraphCursor {
   

@@ -3,51 +3,43 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PersistentVolumeClaim is a user's request for and claim to a persistent volume
   */
-@js.native
 trait PersistentVolumeClaim extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1 = js.native
+  var apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolumeClaim = js.native
+  var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolumeClaim
   
   /**
     * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
     */
-  var metadata: ObjectMeta = js.native
+  var metadata: ObjectMeta
   
   /**
     * Spec defines the desired characteristics of a volume requested by a pod author. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
     */
-  var spec: PersistentVolumeClaimSpec = js.native
+  var spec: PersistentVolumeClaimSpec
   
   /**
     * Status represents the current information/status of a persistent volume claim. Read-only. More info: https://kubernetes.io/docs/concepts/storage/persistent-volumes#persistentvolumeclaims
     */
-  var status: PersistentVolumeClaimStatus = js.native
+  var status: PersistentVolumeClaimStatus
 }
 object PersistentVolumeClaim {
   
   @scala.inline
-  def apply(
-    apiVersion: typings.pulumiKubernetes.pulumiKubernetesStrings.v1,
-    kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PersistentVolumeClaim,
-    metadata: ObjectMeta,
-    spec: PersistentVolumeClaimSpec,
-    status: PersistentVolumeClaimStatus
-  ): PersistentVolumeClaim = {
-    val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+  def apply(metadata: ObjectMeta, spec: PersistentVolumeClaimSpec, status: PersistentVolumeClaimStatus): PersistentVolumeClaim = {
+    val __obj = js.Dynamic.literal(apiVersion = "v1", kind = "PersistentVolumeClaim", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
     __obj.asInstanceOf[PersistentVolumeClaim]
   }
   

@@ -3,17 +3,15 @@ package typings.storybookUi.anon
 import typings.storybookUi.sidebarTypesMod.SearchItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var item: SearchItem = js.native
+  var item: SearchItem
   
-  var matches: js.Array[Indices] = js.native
+  var matches: js.Array[Indices]
   
-  var score: Double = js.native
+  var score: Double
 }
 object Item {
   

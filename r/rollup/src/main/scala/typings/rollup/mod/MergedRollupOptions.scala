@@ -2,13 +2,13 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MergedRollupOptions extends InputOptions {
+trait MergedRollupOptions
+  extends StObject
+     with InputOptions {
   
-  var output: js.Array[OutputOptions] = js.native
+  var output: js.Array[OutputOptions]
 }
 object MergedRollupOptions {
   

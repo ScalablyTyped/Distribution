@@ -3,38 +3,45 @@ package typings.leakage
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("leakage", "MemoryLeakError")
   @js.native
-  class MemoryLeakError () extends Error
+  class MemoryLeakError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   object iterate {
     
-    @JSImport("leakage", "iterate")
-    @js.native
-    def apply(iteratorFn: js.Function0[Unit]): Result = js.native
-    @JSImport("leakage", "iterate")
-    @js.native
-    def apply(iteratorFn: js.Function0[Unit], options: IterateOptions): Result = js.native
+    @scala.inline
+    def apply(iteratorFn: js.Function0[Unit]): Result = ^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[Result]
+    @scala.inline
+    def apply(iteratorFn: js.Function0[Unit], options: IterateOptions): Result = (^.asInstanceOf[js.Dynamic].apply(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Result]
     
-    @JSImport("leakage", "iterate.async")
+    @JSImport("leakage", "iterate")
     @js.native
-    def async(iteratorFn: js.Function0[js.Promise[Unit]]): js.Promise[Result] = js.native
-    @JSImport("leakage", "iterate.async")
-    @js.native
-    def async(iteratorFn: js.Function0[js.Promise[Unit]], options: IterateOptions): js.Promise[Result] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def async(iteratorFn: js.Function0[js.Promise[Unit]]): js.Promise[Result] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Result]]
+    @scala.inline
+    def async(iteratorFn: js.Function0[js.Promise[Unit]], options: IterateOptions): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(iteratorFn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
   }
   
-  @js.native
   trait IterateOptions extends StObject {
     
-    var gcollections: js.UndefOr[Double] = js.native
+    var gcollections: js.UndefOr[Double] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
   }
   object IterateOptions {
     
@@ -66,7 +73,7 @@ object mod {
     
     var gcollections: Double = js.native
     
-    var heapDiffs: js.Array[_] = js.native
+    var heapDiffs: js.Array[js.Any] = js.native
     
     var iterations: Double = js.native
     

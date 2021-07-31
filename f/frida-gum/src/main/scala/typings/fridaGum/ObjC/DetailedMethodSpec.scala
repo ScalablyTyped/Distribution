@@ -2,21 +2,21 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DetailedMethodSpec[I] extends MethodSpec[I] {
+trait DetailedMethodSpec[I]
+  extends StObject
+     with MethodSpec[I] {
   
   /**
     * Implementation.
     */
-  var implementation: I = js.native
+  var implementation: I
   
   /**
     * Signature.
     */
-  var types: String = js.native
+  var types: String
 }
 object DetailedMethodSpec {
   
@@ -27,7 +27,7 @@ object DetailedMethodSpec {
   }
   
   @scala.inline
-  implicit class DetailedMethodSpecMutableBuilder[Self <: DetailedMethodSpec[_], I] (val x: Self with DetailedMethodSpec[I]) extends AnyVal {
+  implicit class DetailedMethodSpecMutableBuilder[Self <: DetailedMethodSpec[?], I] (val x: Self & DetailedMethodSpec[I]) extends AnyVal {
     
     @scala.inline
     def setImplementation(value: I): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])

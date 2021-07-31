@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInstancesHealthResult extends StObject {
   
   /**
     * Detailed health information about each instance. The output differs slightly between Linux and Windows environments. There is a difference in the members that are supported under the &lt;CPUUtilization&gt; type.
     */
-  var InstanceHealthList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.InstanceHealthList] = js.native
+  var InstanceHealthList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.InstanceHealthList] = js.undefined
   
   /**
     * Pagination token for the next page of results, if available.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.NextToken] = js.undefined
   
   /**
     * The date and time that the health information was retrieved.
     */
-  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.native
+  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.undefined
 }
 object DescribeInstancesHealthResult {
   

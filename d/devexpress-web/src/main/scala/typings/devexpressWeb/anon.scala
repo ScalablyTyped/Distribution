@@ -2,17 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ModifyPdfDocument extends StObject {
     
-    var modifyPdfDocument: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.native
+    var modifyPdfDocument: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.undefined
     
-    var modifyPdfPage: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.native
+    var modifyPdfPage: js.UndefOr[js.Function1[/* pdfDocument */ js.Any, Unit]] = js.undefined
   }
   object ModifyPdfDocument {
     

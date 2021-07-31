@@ -2,21 +2,19 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/server/common.html#get--_db_updates
-@js.native
 trait DatabaseUpdatesResultItem extends StObject {
   
   // Database name.
-  var db_name: String = js.native
+  var db_name: String
   
   // Update sequence of the event.
-  var seq: js.Any = js.native
+  var seq: js.Any
   
   // A database event is one of created, updated, deleted.
-  var `type`: String = js.native
+  var `type`: String
 }
 object DatabaseUpdatesResultItem {
   

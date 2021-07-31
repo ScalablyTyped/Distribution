@@ -2,66 +2,64 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobExecution extends StObject {
   
   /**
     * The estimated number of seconds that remain before the job execution status will be changed to TIMED_OUT. The timeout interval can be anywhere between 1 minute and 7 days (1 to 10080 minutes). The actual job execution timeout can occur up to 60 seconds later than the estimated duration. This value will not be included if the job execution has reached a terminal status.
     */
-  var approximateSecondsBeforeTimedOut: js.UndefOr[ApproximateSecondsBeforeTimedOut] = js.native
+  var approximateSecondsBeforeTimedOut: js.UndefOr[ApproximateSecondsBeforeTimedOut] = js.undefined
   
   /**
     * A string (consisting of the digits "0" through "9") which identifies this particular job execution on this particular device. It can be used in commands which return or update job execution information. 
     */
-  var executionNumber: js.UndefOr[ExecutionNumber] = js.native
+  var executionNumber: js.UndefOr[ExecutionNumber] = js.undefined
   
   /**
     * Will be true if the job execution was canceled with the optional force parameter set to true.
     */
-  var forceCanceled: js.UndefOr[Forced] = js.native
+  var forceCanceled: js.UndefOr[Forced] = js.undefined
   
   /**
     * The unique identifier you assigned to the job when it was created.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution was queued.
     */
-  var queuedAt: js.UndefOr[DateType] = js.native
+  var queuedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job execution started.
     */
-  var startedAt: js.UndefOr[DateType] = js.native
+  var startedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The status of the job execution (IN_PROGRESS, QUEUED, FAILED, SUCCEEDED, TIMED_OUT, CANCELED, or REJECTED).
     */
-  var status: js.UndefOr[JobExecutionStatus] = js.native
+  var status: js.UndefOr[JobExecutionStatus] = js.undefined
   
   /**
     * A collection of name/value pairs that describe the status of the job execution.
     */
-  var statusDetails: js.UndefOr[JobExecutionStatusDetails] = js.native
+  var statusDetails: js.UndefOr[JobExecutionStatusDetails] = js.undefined
   
   /**
     * The ARN of the thing on which the job execution is running.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The version of the job execution. Job execution versions are incremented each time they are updated by a device.
     */
-  var versionNumber: js.UndefOr[VersionNumber] = js.native
+  var versionNumber: js.UndefOr[VersionNumber] = js.undefined
 }
 object JobExecution {
   

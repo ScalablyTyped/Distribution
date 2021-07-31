@@ -11,8 +11,8 @@ Convert HSL colors to RGB colors in hex format.
 | Full name          | hsl-to-hex |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 2 |
-| # downloads        | 220733 |
+| # dependents       | 4 |
+| # downloads        | 400235 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteIPSetRequest extends StObject {
   
   /**
     * The unique ID of the detector associated with the IPSet.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The unique ID of the IPSet to delete.
     */
-  var IpSetId: String = js.native
+  var IpSetId: String
 }
 object DeleteIPSetRequest {
   

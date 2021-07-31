@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalSnapshots extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var approvalSnapshots: scala.Double = js.native
+  var approvalSnapshots: scala.Double
   
-  var automatedApprovals: scala.Double = js.native
+  var automatedApprovals: scala.Double
   
-  var manualApprovals: scala.Double = js.native
+  var manualApprovals: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object ApprovalSnapshots {
   

@@ -2,33 +2,31 @@ package typings.sendgrid.mod.SendGrid.Helpers.Mail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  def getContent(): String = js.native
+  def getContent(): String
   
-  def getContentId(): String = js.native
+  def getContentId(): String
   
-  def getDisposition(): String = js.native
+  def getDisposition(): String
   
-  def getFilename(): String = js.native
+  def getFilename(): String
   
-  def getType(): String = js.native
+  def getType(): String
   
-  def setContent(content: String): Unit = js.native
+  def setContent(content: String): Unit
   
-  def setContentId(contentId: String): Unit = js.native
+  def setContentId(contentId: String): Unit
   
-  def setDisposition(disposition: String): Unit = js.native
+  def setDisposition(disposition: String): Unit
   
-  def setFilename(filename: String): Unit = js.native
+  def setFilename(filename: String): Unit
   
-  def setType(`type`: String): Unit = js.native
+  def setType(`type`: String): Unit
   
-  def toJSON(): typings.sendgrid.anon.Content = js.native
+  def toJSON(): typings.sendgrid.anon.Content
 }
 object Attachment {
   

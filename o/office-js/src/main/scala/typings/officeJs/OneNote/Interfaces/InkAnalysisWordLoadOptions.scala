@@ -2,7 +2,6 @@ package typings.officeJs.OneNote.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.1]
   */
-@js.native
 trait InkAnalysisWordLoadOptions extends StObject {
   
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait InkAnalysisWordLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait InkAnalysisWordLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var languageId: js.UndefOr[Boolean] = js.native
+  var languageId: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait InkAnalysisWordLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var line: js.UndefOr[InkAnalysisLineLoadOptions] = js.native
+  var line: js.UndefOr[InkAnalysisLineLoadOptions] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait InkAnalysisWordLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var strokePointers: js.UndefOr[Boolean] = js.native
+  var strokePointers: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait InkAnalysisWordLoadOptions extends StObject {
     *
     * [Api set: OneNoteApi 1.1]
     */
-  var wordAlternates: js.UndefOr[Boolean] = js.native
+  var wordAlternates: js.UndefOr[Boolean] = js.undefined
 }
 object InkAnalysisWordLoadOptions {
   

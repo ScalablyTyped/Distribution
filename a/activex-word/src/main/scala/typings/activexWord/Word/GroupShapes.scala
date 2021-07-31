@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupShapes extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): Shape = js.native
+  def Item(Index: js.Any): Shape
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Range(Index: js.Any): ShapeRange = js.native
+  def Range(Index: js.Any): ShapeRange
   
   @JSName("Word.GroupShapes_typekey")
-  var WordDotGroupShapes_typekey: GroupShapes = js.native
+  var WordDotGroupShapes_typekey: GroupShapes
 }
 object GroupShapes {
   

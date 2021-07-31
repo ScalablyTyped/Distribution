@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAssociatedPropertyDef extends StObject {
   
-  def Clone(): IAssociatedPropertyDef = js.native
+  def Clone(): IAssociatedPropertyDef
   
-  var PropertyDef: MFBuiltInPropertyDef | Double = js.native
+  var PropertyDef: MFBuiltInPropertyDef | Double
   
-  var Required: Boolean = js.native
+  var Required: Boolean
 }
 object IAssociatedPropertyDef {
   

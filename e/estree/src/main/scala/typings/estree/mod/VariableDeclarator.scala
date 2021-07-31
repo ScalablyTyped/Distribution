@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariableDeclarator
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var id: Pattern = js.native
+  var id: Pattern
   
-  var init: js.UndefOr[Expression | Null] = js.native
+  var init: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_VariableDeclarator: typings.estree.estreeStrings.VariableDeclarator = js.native
+  var type_VariableDeclarator: typings.estree.estreeStrings.VariableDeclarator
 }
 object VariableDeclarator {
   
   @scala.inline
-  def apply(id: Pattern, `type`: typings.estree.estreeStrings.VariableDeclarator): VariableDeclarator = {
+  def apply(id: Pattern): VariableDeclarator = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("VariableDeclarator")
     __obj.asInstanceOf[VariableDeclarator]
   }
   

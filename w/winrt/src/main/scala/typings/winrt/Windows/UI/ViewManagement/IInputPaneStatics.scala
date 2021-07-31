@@ -2,13 +2,11 @@ package typings.winrt.Windows.UI.ViewManagement
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInputPaneStatics extends StObject {
   
-  def getForCurrentView(): InputPane = js.native
+  def getForCurrentView(): InputPane
 }
 object IInputPaneStatics {
   

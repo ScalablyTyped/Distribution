@@ -4,7 +4,6 @@ import typings.htmlToText.mod.Formatter
 import typings.htmlToText.mod.LeafFormatter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {

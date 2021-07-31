@@ -9,43 +9,41 @@ import typings.reactDates.mod.ScrollableOrientationShape
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DayAriaLabelFormat extends StObject {
   
-  var dayAriaLabelFormat: js.UndefOr[String] = js.native
+  var dayAriaLabelFormat: js.UndefOr[String] = js.undefined
   
-  var enableOutsideDays: js.UndefOr[Boolean] = js.native
+  var enableOutsideDays: js.UndefOr[Boolean] = js.undefined
   
-  var firstDayOfWeek: js.UndefOr[DayOfWeekShape | Null] = js.native
+  var firstDayOfWeek: js.UndefOr[DayOfWeekShape | Null] = js.undefined
   
-  var focusedDate: js.UndefOr[Moment | Null] = js.native
+  var focusedDate: js.UndefOr[Moment | Null] = js.undefined
   
-  var horizontalMonthPadding: js.UndefOr[Double] = js.native
+  var horizontalMonthPadding: js.UndefOr[Double] = js.undefined
   
-  var isVisible: js.UndefOr[Boolean] = js.native
+  var isVisible: js.UndefOr[Boolean] = js.undefined
   
-  var modifiers: js.UndefOr[Record[String, ModifiersShape]] = js.native
+  var modifiers: js.UndefOr[Record[String, ModifiersShape]] = js.undefined
   
-  var month: js.UndefOr[Moment] = js.native
+  var month: js.UndefOr[Moment] = js.undefined
   
   // indicates focusable day
   // i18n
-  var monthFormat: js.UndefOr[String] = js.native
+  var monthFormat: js.UndefOr[String] = js.undefined
   
-  var onMonthSelect: js.UndefOr[js.Function2[/* currentMonth */ Moment, /* newMonthVal */ String, Unit]] = js.native
+  var onMonthSelect: js.UndefOr[js.Function2[/* currentMonth */ Moment, /* newMonthVal */ String, Unit]] = js.undefined
   
-  var onYearSelect: js.UndefOr[js.Function2[/* currentMonth */ Moment, /* newMonthVal */ String, Unit]] = js.native
+  var onYearSelect: js.UndefOr[js.Function2[/* currentMonth */ Moment, /* newMonthVal */ String, Unit]] = js.undefined
   
-  var orientation: js.UndefOr[ScrollableOrientationShape] = js.native
+  var orientation: js.UndefOr[ScrollableOrientationShape] = js.undefined
   
-  var renderCalendarDay: js.UndefOr[js.Function1[/* props */ CalendarDayShape, ReactNode]] = js.native
+  var renderCalendarDay: js.UndefOr[js.Function1[/* props */ CalendarDayShape, ReactNode]] = js.undefined
   
-  var setMonthTitleHeight: js.UndefOr[(js.Function1[/* captionHeight */ Double, Unit]) | Null] = js.native
+  var setMonthTitleHeight: js.UndefOr[(js.Function1[/* captionHeight */ Double, Unit]) | Null] = js.undefined
   
-  var verticalBorderSpacing: js.UndefOr[Double] = js.native
+  var verticalBorderSpacing: js.UndefOr[Double] = js.undefined
 }
 object DayAriaLabelFormat {
   

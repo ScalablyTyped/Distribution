@@ -3,13 +3,13 @@ package typings.videoJs.mod.videojs
 import typings.videoJs.mod.videojs.TextTrack.Kind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CaptionSettingsMenuItemOptions extends TextTrackMenuItemOptions {
+trait CaptionSettingsMenuItemOptions
+  extends StObject
+     with TextTrackMenuItemOptions {
   
-  var kind: Kind = js.native
+  var kind: Kind
 }
 object CaptionSettingsMenuItemOptions {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClassifierRequest extends StObject {
   
   /**
     * A CsvClassifier object with updated fields.
     */
-  var CsvClassifier: js.UndefOr[UpdateCsvClassifierRequest] = js.native
+  var CsvClassifier: js.UndefOr[UpdateCsvClassifierRequest] = js.undefined
   
   /**
     * A GrokClassifier object with updated fields.
     */
-  var GrokClassifier: js.UndefOr[UpdateGrokClassifierRequest] = js.native
+  var GrokClassifier: js.UndefOr[UpdateGrokClassifierRequest] = js.undefined
   
   /**
     * A JsonClassifier object with updated fields.
     */
-  var JsonClassifier: js.UndefOr[UpdateJsonClassifierRequest] = js.native
+  var JsonClassifier: js.UndefOr[UpdateJsonClassifierRequest] = js.undefined
   
   /**
     * An XMLClassifier object with updated fields.
     */
-  var XMLClassifier: js.UndefOr[UpdateXMLClassifierRequest] = js.native
+  var XMLClassifier: js.UndefOr[UpdateXMLClassifierRequest] = js.undefined
 }
 object UpdateClassifierRequest {
   

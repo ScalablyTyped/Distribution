@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountAttributesResult extends StObject {
   
   /**
     * Information about the account attributes.
     */
-  var AccountAttributes: js.UndefOr[AccountAttributeList] = js.native
+  var AccountAttributes: js.UndefOr[AccountAttributeList] = js.undefined
 }
 object DescribeAccountAttributesResult {
   

@@ -9,7 +9,6 @@ import typings.appBuilderLib.platformPackagerMod.PlatformPackager
 import typings.lazyVal.mod.Lazy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object macPackagerMod {
@@ -31,10 +30,10 @@ object macPackagerMod {
     
     val codeSigningInfo: Lazy[CodeSigningInfo] = js.native
     
-    /* protected */ def doFlat(appPath: String, outFile: String, identity: Identity): js.Promise[_] = js.native
-    /* protected */ def doFlat(appPath: String, outFile: String, identity: Identity, keychain: String): js.Promise[_] = js.native
+    /* protected */ def doFlat(appPath: String, outFile: String, identity: Identity): js.Promise[js.Any] = js.native
+    /* protected */ def doFlat(appPath: String, outFile: String, identity: Identity, keychain: String): js.Promise[js.Any] = js.native
     
-    /* protected */ def doSign(opts: SignOptions): js.Promise[_] = js.native
+    /* protected */ def doSign(opts: SignOptions): js.Promise[js.Any] = js.native
     
     var sign: js.Any = js.native
   }

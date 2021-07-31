@@ -2,17 +2,15 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Has extends StObject {
   
   /**
     * Empties the story metadata store.
     * @since 2.29.0
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * Removes the specified key, and its associated value, from the story metadata store.
@@ -22,7 +20,7 @@ trait Has extends StObject {
     * // Removes 'achievements' from the metadata store.
     * State.metadata.delete('achievements');
     */
-  def delete(key: String): Unit = js.native
+  def delete(key: String): Unit
   
   /**
     * Returns the value associated with the specified key from the story metadata store.
@@ -32,7 +30,7 @@ trait Has extends StObject {
     * // Returns the value of 'achievements' from the metadata store.
     * var playerAchievements = State.metadata.get('achievements');
     */
-  def get(key: String): js.Any = js.native
+  def get(key: String): js.Any
   
   /**
     * Returns whether the specified key exists within the story metadata store.
@@ -44,7 +42,7 @@ trait Has extends StObject {
     *         // do something
     * }
     */
-  def has(key: String): Boolean = js.native
+  def has(key: String): Boolean
   
   /**
     * Sets the specified key and value within the story metadata store, which causes them to persist over story and browser
@@ -69,13 +67,13 @@ trait Has extends StObject {
     * // Sets 'ngplus', with the given value, in the metadata store.
     * State.metadata.set('ngplus', true);
     */
-  def set(key: String, value: js.Any): Unit = js.native
+  def set(key: String, value: js.Any): Unit
   
   /**
     * Returns the size of the story metadata store—i.e., the number of stored pairs.
     * @since 2.29.0
     */
-  val size: Double = js.native
+  val size: Double
 }
 object Has {
   

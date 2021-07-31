@@ -20,7 +20,6 @@ import typings.activexOffice.Office.SmartArtQuickStyle
 import typings.activexOffice.Office.SmartArtQuickStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -101,9 +100,9 @@ trait Application extends StObject {
     * @param number [ContextID=0]
     */
   def Help(): Unit = js.native
-  def Help(HelpFile: js.UndefOr[scala.Nothing], ContextID: Double): Unit = js.native
   def Help(HelpFile: String): Unit = js.native
   def Help(HelpFile: String, ContextID: Double): Unit = js.native
+  def Help(HelpFile: Unit, ContextID: Double): Unit = js.native
   
   val IsSandboxed: Boolean = js.native
   

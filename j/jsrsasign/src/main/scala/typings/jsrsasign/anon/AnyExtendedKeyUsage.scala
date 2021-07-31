@@ -2,169 +2,167 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnyExtendedKeyUsage extends StObject {
   
-  var MD2withRSA: String = js.native
+  var MD2withRSA: String
   
-  var MD4withRSA: String = js.native
+  var MD4withRSA: String
   
-  var MD5withRSA: String = js.native
+  var MD5withRSA: String
   
-  var SHA1withDSA: String = js.native
+  var SHA1withDSA: String
   
-  var SHA1withECDSA: String = js.native
+  var SHA1withECDSA: String
   
-  var SHA1withRSA: String = js.native
+  var SHA1withRSA: String
   
-  var SHA224withDSA: String = js.native
+  var SHA224withDSA: String
   
-  var SHA224withECDSA: String = js.native
+  var SHA224withECDSA: String
   
-  var SHA224withRSA: String = js.native
+  var SHA224withRSA: String
   
-  var SHA256withDSA: String = js.native
+  var SHA256withDSA: String
   
-  var SHA256withECDSA: String = js.native
+  var SHA256withECDSA: String
   
-  var SHA256withRSA: String = js.native
+  var SHA256withRSA: String
   
-  var SHA384withECDSA: String = js.native
+  var SHA384withECDSA: String
   
-  var SHA384withRSA: String = js.native
+  var SHA384withRSA: String
   
-  var SHA512withECDSA: String = js.native
+  var SHA512withECDSA: String
   
-  var SHA512withRSA: String = js.native
+  var SHA512withRSA: String
   
-  var anyExtendedKeyUsage: String = js.native
+  var anyExtendedKeyUsage: String
   
-  var authenticated: String = js.native
+  var authenticated: String
   
-  var authorityInfoAccess: String = js.native
+  var authorityInfoAccess: String
   
-  var authorityKeyIdentifier: String = js.native
+  var authorityKeyIdentifier: String
   
-  var basicConstraints: String = js.native
+  var basicConstraints: String
   
-  var businessCategory: String = js.native
+  var businessCategory: String
   
-  var cRLDistributionPoints: String = js.native
+  var cRLDistributionPoints: String
   
-  var caIssuers: String = js.native
+  var caIssuers: String
   
-  var certificatePolicies: String = js.native
+  var certificatePolicies: String
   
-  var clientAuth: String = js.native
+  var clientAuth: String
   
-  var codeSigning: String = js.native
+  var codeSigning: String
   
-  var commonName: String = js.native
+  var commonName: String
   
-  var countryName: String = js.native
+  var countryName: String
   
-  var data: String = js.native
+  var data: String
   
-  var des: String = js.native
+  var des: String
   
-  var digested: String = js.native
+  var digested: String
   
-  var distinguishedName: String = js.native
+  var distinguishedName: String
   
-  var domainComponent: String = js.native
+  var domainComponent: String
   
-  var dsa: String = js.native
+  var dsa: String
   
-  var ecPublicKey: String = js.native
+  var ecPublicKey: String
   
-  var emailAddress: String = js.native
+  var emailAddress: String
   
-  var emailProtection: String = js.native
+  var emailProtection: String
   
-  var encrypted: String = js.native
+  var encrypted: String
   
-  var enveloped: String = js.native
+  var enveloped: String
   
-  var extKeyUsage: String = js.native
+  var extKeyUsage: String
   
-  var extensionRequest: String = js.native
+  var extensionRequest: String
   
-  var issuerAltName: String = js.native
+  var issuerAltName: String
   
-  var jurisdictionOfIncorporationC: String = js.native
+  var jurisdictionOfIncorporationC: String
   
-  var jurisdictionOfIncorporationL: String = js.native
+  var jurisdictionOfIncorporationL: String
   
-  var jurisdictionOfIncorporationSP: String = js.native
+  var jurisdictionOfIncorporationSP: String
   
-  var keyUsage: String = js.native
+  var keyUsage: String
   
-  var localityName: String = js.native
+  var localityName: String
   
-  var md2: String = js.native
+  var md2: String
   
-  var md5: String = js.native
+  var md5: String
   
-  var nameConstraints: String = js.native
+  var nameConstraints: String
   
-  var ocsp: String = js.native
+  var ocsp: String
   
-  var ocspSigning: String = js.native
+  var ocspSigning: String
   
-  var organizationName: String = js.native
+  var organizationName: String
   
-  var organizationalUnitName: String = js.native
+  var organizationalUnitName: String
   
-  var pkcs5PBES2: String = js.native
+  var pkcs5PBES2: String
   
-  var pkcs5PBKDF2: String = js.native
+  var pkcs5PBKDF2: String
   
-  var policyConstraints: String = js.native
+  var policyConstraints: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var ripemd160: String = js.native
+  var ripemd160: String
   
-  var rsaEncryption: String = js.native
+  var rsaEncryption: String
   
-  var secp256k1: String = js.native
+  var secp256k1: String
   
-  var secp256r1: String = js.native
+  var secp256r1: String
   
-  var secp384r1: String = js.native
+  var secp384r1: String
   
-  var serverAuth: String = js.native
+  var serverAuth: String
   
-  var sha1: String = js.native
+  var sha1: String
   
-  var sha224: String = js.native
+  var sha224: String
   
-  var sha256: String = js.native
+  var sha256: String
   
-  var sha384: String = js.native
+  var sha384: String
   
-  var sha512: String = js.native
+  var sha512: String
   
-  var signed: String = js.native
+  var signed: String
   
-  var stateOrProvinceName: String = js.native
+  var stateOrProvinceName: String
   
-  var streetAddress: String = js.native
+  var streetAddress: String
   
-  var subjectAltName: String = js.native
+  var subjectAltName: String
   
-  var subjectKeyIdentifier: String = js.native
+  var subjectKeyIdentifier: String
   
-  var surname: String = js.native
+  var surname: String
   
-  var timeStamping: String = js.native
+  var timeStamping: String
   
-  var tstinfo: String = js.native
+  var tstinfo: String
   
-  var userId: String = js.native
+  var userId: String
 }
 object AnyExtendedKeyUsage {
   

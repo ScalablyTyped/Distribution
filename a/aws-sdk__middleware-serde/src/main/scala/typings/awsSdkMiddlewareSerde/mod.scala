@@ -11,30 +11,30 @@ import typings.awsSdkTypes.serdeMod.RequestSerializer
 import typings.awsSdkTypes.serdeMod.ResponseDeserializer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/middleware-serde", "deserializerMiddleware")
+  @JSImport("@aws-sdk/middleware-serde", JSImport.Namespace)
   @js.native
-  def deserializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, RuntimeUtils](options: RuntimeUtils, deserializer: ResponseDeserializer[_, _, RuntimeUtils]): DeserializeMiddleware[Input, Output] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def deserializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, RuntimeUtils](options: RuntimeUtils, deserializer: ResponseDeserializer[js.Any, js.Any, RuntimeUtils]): DeserializeMiddleware[Input, Output] = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializerMiddleware")(options.asInstanceOf[js.Any], deserializer.asInstanceOf[js.Any])).asInstanceOf[DeserializeMiddleware[Input, Output]]
   
   @JSImport("@aws-sdk/middleware-serde", "deserializerMiddlewareOption")
   @js.native
   val deserializerMiddlewareOption: DeserializeHandlerOptions = js.native
   
-  @JSImport("@aws-sdk/middleware-serde", "getSerdePlugin")
-  @js.native
+  @scala.inline
   def getSerdePlugin[InputType /* <: js.Object */, SerDeContext /* <: EndpointBearer */, OutputType /* <: MetadataBearer */](
     config: SerDeContext,
-    serializer: RequestSerializer[_, SerDeContext],
-    deserializer: ResponseDeserializer[OutputType, _, SerDeContext]
-  ): Pluggable[InputType, OutputType] = js.native
+    serializer: RequestSerializer[js.Any, SerDeContext],
+    deserializer: ResponseDeserializer[OutputType, js.Any, SerDeContext]
+  ): Pluggable[InputType, OutputType] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSerdePlugin")(config.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any], deserializer.asInstanceOf[js.Any])).asInstanceOf[Pluggable[InputType, OutputType]]
   
-  @JSImport("@aws-sdk/middleware-serde", "serializerMiddleware")
-  @js.native
-  def serializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, RuntimeUtils /* <: EndpointBearer */](options: RuntimeUtils, serializer: RequestSerializer[_, RuntimeUtils]): SerializeMiddleware[Input, Output] = js.native
+  @scala.inline
+  def serializerMiddleware[Input /* <: js.Object */, Output /* <: js.Object */, RuntimeUtils /* <: EndpointBearer */](options: RuntimeUtils, serializer: RequestSerializer[js.Any, RuntimeUtils]): SerializeMiddleware[Input, Output] = (^.asInstanceOf[js.Dynamic].applyDynamic("serializerMiddleware")(options.asInstanceOf[js.Any], serializer.asInstanceOf[js.Any])).asInstanceOf[SerializeMiddleware[Input, Output]]
   
   @JSImport("@aws-sdk/middleware-serde", "serializerMiddlewareOption")
   @js.native

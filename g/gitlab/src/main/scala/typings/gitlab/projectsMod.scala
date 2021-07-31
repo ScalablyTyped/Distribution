@@ -15,7 +15,6 @@ import typings.gitlab.usersMod.UserSchema
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectsMod {
@@ -41,9 +40,9 @@ object projectsMod {
     def edit(projectId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def events(projectId: String): js.Promise[GetResponse] = js.native
-    def events(projectId: String, options: BaseRequestOptions with EventOptions): js.Promise[GetResponse] = js.native
+    def events(projectId: String, options: BaseRequestOptions & EventOptions): js.Promise[GetResponse] = js.native
     def events(projectId: Double): js.Promise[GetResponse] = js.native
-    def events(projectId: Double, options: BaseRequestOptions with EventOptions): js.Promise[GetResponse] = js.native
+    def events(projectId: Double, options: BaseRequestOptions & EventOptions): js.Promise[GetResponse] = js.native
     
     def fork(projectId: String): js.Promise[js.Object] = js.native
     def fork(projectId: String, hasForkedFromIdOptions: forkedFromIdnumberundefin): js.Promise[js.Object] = js.native
@@ -129,24 +128,23 @@ object projectsMod {
     def upload(projectId: js.Any, content: js.Any, hasMetadataSudo: metadataUploadMetadataund): js.Promise[js.Object] = js.native
   }
   
-  @js.native
   trait NamespaceInfoSchema extends StObject {
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var full_path: String = js.native
+    var full_path: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var kind: String = js.native
+    var kind: String
     
-    var name: String = js.native
+    var name: String
     
-    var parent_id: js.UndefOr[Double] = js.native
+    var parent_id: js.UndefOr[Double] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var web_url: String = js.native
+    var web_url: String
   }
   object NamespaceInfoSchema {
     
@@ -196,118 +194,117 @@ object projectsMod {
     }
   }
   
-  @js.native
   trait ProjectSchema extends StObject {
     
-    var archived: Boolean = js.native
+    var archived: Boolean
     
-    var auto_cancel_pending_pipelines: js.UndefOr[String] = js.native
+    var auto_cancel_pending_pipelines: js.UndefOr[String] = js.undefined
     
-    var auto_devops_deploy_strategy: String = js.native
+    var auto_devops_deploy_strategy: String
     
-    var auto_devops_enabled: Boolean = js.native
+    var auto_devops_enabled: Boolean
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var build_coverage_regex: js.UndefOr[String] = js.native
+    var build_coverage_regex: js.UndefOr[String] = js.undefined
     
-    var build_timeout: Double = js.native
+    var build_timeout: Double
     
-    var builds_access_level: String = js.native
+    var builds_access_level: String
     
-    var ci_config_path: js.UndefOr[String] = js.native
+    var ci_config_path: js.UndefOr[String] = js.undefined
     
-    var ci_default_git_depth: Double = js.native
+    var ci_default_git_depth: Double
     
-    var container_registry_enabled: Boolean = js.native
+    var container_registry_enabled: Boolean
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var creator_id: Double = js.native
+    var creator_id: Double
     
-    var default_branch: String = js.native
+    var default_branch: String
     
-    var description: String = js.native
+    var description: String
     
-    var empty_repo: Boolean = js.native
+    var empty_repo: Boolean
     
-    var forks_count: Double = js.native
+    var forks_count: Double
     
-    var http_url_to_repo: String = js.native
+    var http_url_to_repo: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var import_status: String = js.native
+    var import_status: String
     
-    var issues_access_level: String = js.native
+    var issues_access_level: String
     
-    var issues_enabled: Boolean = js.native
+    var issues_enabled: Boolean
     
-    var jobs_enabled: Boolean = js.native
+    var jobs_enabled: Boolean
     
-    var last_activity_at: Date = js.native
+    var last_activity_at: Date
     
-    var lfs_enabled: Boolean = js.native
+    var lfs_enabled: Boolean
     
-    var merge_method: String = js.native
+    var merge_method: String
     
-    var merge_requests_access_level: String = js.native
+    var merge_requests_access_level: String
     
-    var merge_requests_enabled: Boolean = js.native
+    var merge_requests_enabled: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var name_with_namespace: String = js.native
+    var name_with_namespace: String
     
-    var namespace: NamespaceInfoSchema = js.native
+    var namespace: NamespaceInfoSchema
     
-    var only_allow_merge_if_all_discussions_are_resolved: Boolean = js.native
+    var only_allow_merge_if_all_discussions_are_resolved: Boolean
     
-    var only_allow_merge_if_pipeline_succeeds: Boolean = js.native
+    var only_allow_merge_if_pipeline_succeeds: Boolean
     
-    var open_issues_count: Double = js.native
+    var open_issues_count: Double
     
-    var owner: UserSchema = js.native
+    var owner: UserSchema
     
-    var path: String = js.native
+    var path: String
     
-    var path_with_namespace: String = js.native
+    var path_with_namespace: String
     
-    var printing_merge_request_link_enabled: Boolean = js.native
+    var printing_merge_request_link_enabled: Boolean
     
-    var public_jobs: Boolean = js.native
+    var public_jobs: Boolean
     
-    var readme_url: String = js.native
+    var readme_url: String
     
-    var remove_source_branch_after_merge: Boolean = js.native
+    var remove_source_branch_after_merge: Boolean
     
-    var repository_access_level: String = js.native
+    var repository_access_level: String
     
-    var request_access_enabled: Boolean = js.native
+    var request_access_enabled: Boolean
     
-    var resolve_outdated_diff_discussions: Boolean = js.native
+    var resolve_outdated_diff_discussions: Boolean
     
-    var shared_runners_enabled: Boolean = js.native
+    var shared_runners_enabled: Boolean
     
-    var shared_with_groups: js.Array[GroupSchema] = js.native
+    var shared_with_groups: js.Array[GroupSchema]
     
-    var snippets_access_level: String = js.native
+    var snippets_access_level: String
     
-    var snippets_enabled: Boolean = js.native
+    var snippets_enabled: Boolean
     
-    var ssh_url_to_repo: String = js.native
+    var ssh_url_to_repo: String
     
-    var star_count: Double = js.native
+    var star_count: Double
     
-    var tag_list: js.Array[String] = js.native
+    var tag_list: js.Array[String]
     
-    var visibility: String = js.native
+    var visibility: String
     
-    var web_url: String = js.native
+    var web_url: String
     
-    var wiki_access_level: String = js.native
+    var wiki_access_level: String
     
-    var wiki_enabled: Boolean = js.native
+    var wiki_enabled: Boolean
   }
   object ProjectSchema {
     

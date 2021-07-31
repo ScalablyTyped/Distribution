@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/drive/v2", "drive_v2.Resource$Files")
@@ -39,7 +38,7 @@ class ResourceFiles protected () extends StObject {
     */
   def copy(): GaxiosPromise[SchemaFile] = js.native
   def copy(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def copy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def copy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def copy(params: ParamsResourceFilesCopy): GaxiosPromise[SchemaFile] = js.native
   def copy(params: ParamsResourceFilesCopy, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def copy(
@@ -71,7 +70,7 @@ class ResourceFiles protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceFilesDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceFilesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -95,7 +94,7 @@ class ResourceFiles protected () extends StObject {
     */
   def emptyTrash(): GaxiosPromise[Unit] = js.native
   def emptyTrash(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def emptyTrash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def emptyTrash(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def emptyTrash(params: ParamsResourceFilesEmptytrash): GaxiosPromise[Unit] = js.native
   def emptyTrash(params: ParamsResourceFilesEmptytrash, callback: BodyResponseCallback[Unit]): Unit = js.native
   def emptyTrash(
@@ -125,18 +124,18 @@ class ResourceFiles protected () extends StObject {
     * @param {callback} callback The callback that handles the response.
     * @return {object} Request object
     */
-  def export(): GaxiosPromise[Unit] = js.native
-  def export(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def export(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def export(params: ParamsResourceFilesExport): GaxiosPromise[Unit] = js.native
-  def export(params: ParamsResourceFilesExport, callback: BodyResponseCallback[Unit]): Unit = js.native
-  def export(
+  def `export`(): GaxiosPromise[Unit] = js.native
+  def `export`(callback: BodyResponseCallback[Unit]): Unit = js.native
+  def `export`(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def `export`(params: ParamsResourceFilesExport): GaxiosPromise[Unit] = js.native
+  def `export`(params: ParamsResourceFilesExport, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def `export`(
     params: ParamsResourceFilesExport,
     options: BodyResponseCallback[Unit],
     callback: BodyResponseCallback[Unit]
   ): Unit = js.native
-  def export(params: ParamsResourceFilesExport, options: MethodOptions): GaxiosPromise[Unit] = js.native
-  def export(params: ParamsResourceFilesExport, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
+  def `export`(params: ParamsResourceFilesExport, options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def `export`(params: ParamsResourceFilesExport, options: MethodOptions, callback: BodyResponseCallback[Unit]): Unit = js.native
   
   /**
     * drive.files.generateIds
@@ -154,7 +153,7 @@ class ResourceFiles protected () extends StObject {
     */
   def generateIds(): GaxiosPromise[SchemaGeneratedIds] = js.native
   def generateIds(callback: BodyResponseCallback[SchemaGeneratedIds]): Unit = js.native
-  def generateIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGeneratedIds] = js.native
+  def generateIds(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGeneratedIds] = js.native
   def generateIds(params: ParamsResourceFilesGenerateids): GaxiosPromise[SchemaGeneratedIds] = js.native
   def generateIds(params: ParamsResourceFilesGenerateids, callback: BodyResponseCallback[SchemaGeneratedIds]): Unit = js.native
   def generateIds(
@@ -188,7 +187,7 @@ class ResourceFiles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaFile] = js.native
   def get(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet): GaxiosPromise[SchemaFile] = js.native
   def get(params: ParamsResourceFilesGet, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def get(
@@ -225,7 +224,7 @@ class ResourceFiles protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaFile] = js.native
   def insert(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def insert(params: ParamsResourceFilesInsert): GaxiosPromise[SchemaFile] = js.native
   def insert(params: ParamsResourceFilesInsert, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def insert(
@@ -264,7 +263,7 @@ class ResourceFiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaFileList] = js.native
   def list(callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFileList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceFilesList): GaxiosPromise[SchemaFileList] = js.native
   def list(params: ParamsResourceFilesList, callback: BodyResponseCallback[SchemaFileList]): Unit = js.native
   def list(
@@ -309,7 +308,7 @@ class ResourceFiles protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaFile] = js.native
   def patch(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def patch(params: ParamsResourceFilesPatch): GaxiosPromise[SchemaFile] = js.native
   def patch(params: ParamsResourceFilesPatch, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def patch(
@@ -339,7 +338,7 @@ class ResourceFiles protected () extends StObject {
     */
   def touch(): GaxiosPromise[SchemaFile] = js.native
   def touch(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def touch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def touch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def touch(params: ParamsResourceFilesTouch): GaxiosPromise[SchemaFile] = js.native
   def touch(params: ParamsResourceFilesTouch, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def touch(
@@ -371,7 +370,7 @@ class ResourceFiles protected () extends StObject {
     */
   def trash(): GaxiosPromise[SchemaFile] = js.native
   def trash(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def trash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def trash(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def trash(params: ParamsResourceFilesTrash): GaxiosPromise[SchemaFile] = js.native
   def trash(params: ParamsResourceFilesTrash, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def trash(
@@ -401,7 +400,7 @@ class ResourceFiles protected () extends StObject {
     */
   def untrash(): GaxiosPromise[SchemaFile] = js.native
   def untrash(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def untrash(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def untrash(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def untrash(params: ParamsResourceFilesUntrash): GaxiosPromise[SchemaFile] = js.native
   def untrash(params: ParamsResourceFilesUntrash, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def untrash(
@@ -448,7 +447,7 @@ class ResourceFiles protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaFile] = js.native
   def update(callback: BodyResponseCallback[SchemaFile]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaFile] = js.native
   def update(params: ParamsResourceFilesUpdate): GaxiosPromise[SchemaFile] = js.native
   def update(params: ParamsResourceFilesUpdate, callback: BodyResponseCallback[SchemaFile]): Unit = js.native
   def update(
@@ -483,7 +482,7 @@ class ResourceFiles protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaChannel] = js.native
   def watch(callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceFilesWatch): GaxiosPromise[SchemaChannel] = js.native
   def watch(params: ParamsResourceFilesWatch, callback: BodyResponseCallback[SchemaChannel]): Unit = js.native
   def watch(

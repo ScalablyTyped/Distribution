@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,35 +21,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [layers] - Layer ID array. Default is [pc.LAYERID_WORLD]. The whole batch group will belong
   * to these layers. Layers of source models will be ignored.
   */
-@js.native
 trait BatchGroup extends StObject {
   
   /**
     * Whether objects within this batch group should support transforming at runtime.
     */
-  var dynamic: Boolean = js.native
+  var dynamic: Boolean
   
   /**
     * Unique id. Can be assigned to model and element components.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Layer ID array. Default is [pc.LAYERID_WORLD]. The whole batch group will belong
     to these layers. Layers of source models will be ignored.
     */
-  var layers: js.UndefOr[js.Array[Double]] = js.native
+  var layers: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Maximum size of any dimension of a bounding box around batched objects.
     {@link pc.BatchManager#prepare} will split objects into local groups based on this size.
     */
-  var maxAabbSize: Double = js.native
+  var maxAabbSize: Double
   
   /**
     * Name of the group.
     */
-  var name: String = js.native
+  var name: String
 }
 object BatchGroup {
   

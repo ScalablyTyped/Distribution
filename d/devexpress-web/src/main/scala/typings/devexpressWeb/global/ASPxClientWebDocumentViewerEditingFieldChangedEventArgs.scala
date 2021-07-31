@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientWebDocumentViewerEditingFieldChangedEventArgs")
 @js.native
 class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientWebDocumentViewerEditingFieldChangedEventArgs {
   /**
     * Creates a new instance of the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs class with the specified settings.
     * @param field An editing field whose value has been changed. This value is assigned to the ASPxClientWebDocumentViewerEditingFieldChangedEventArgs.Field property.
@@ -23,4 +23,22 @@ class ASPxClientWebDocumentViewerEditingFieldChangedEventArgs protected ()
     oldValue: js.Any,
     newValue: js.Any
   ) = this()
+  
+  /**
+    * Gets an editing field whose value has been changed.
+    */
+  /* CompleteClass */
+  var Field: typings.devexpressWeb.ASPxClientWebDocumentViewerEditingField = js.native
+  
+  /**
+    * Provides access to a new value of an editing field.
+    */
+  /* CompleteClass */
+  var NewValue: js.Any = js.native
+  
+  /**
+    * Provides access to a previous value of an editing field.
+    */
+  /* CompleteClass */
+  var OldValue: js.Any = js.native
 }

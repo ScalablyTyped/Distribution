@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,16 +13,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : NodeAPI = js.native
   
-  @js.native
   trait AsyncOptions extends StObject {
     
-    var asyncSuffix: js.UndefOr[String] = js.native
+    var asyncSuffix: js.UndefOr[String] = js.undefined
     
-    var promiseSuffix: js.UndefOr[String] = js.native
+    var promiseSuffix: js.UndefOr[String] = js.undefined
     
-    var promisify: js.UndefOr[Promisify] = js.native
+    var promisify: js.UndefOr[Promisify] = js.undefined
     
-    var syncSuffix: String = js.native
+    var syncSuffix: String
   }
   object AsyncOptions {
     
@@ -67,11 +65,11 @@ object mod extends Shortcut {
     
     var asyncOptions: AsyncOptions = js.native
     
-    def callMethod(instance: js.Any, methodName: String, args: js.Array[_], callback: Callback[_]): Unit = js.native
+    def callMethod(instance: js.Any, methodName: String, args: js.Array[js.Any], callback: Callback[js.Any]): Unit = js.native
     
     def callMethodSync(instance: js.Any, methodName: String, args: js.Any*): js.Any = js.native
     
-    def callStaticMethod(className: String, methodName: String, args: (js.Any | Callback[_])*): Unit = js.native
+    def callStaticMethod(className: String, methodName: String, args: (js.Any | Callback[js.Any])*): Unit = js.native
     
     def callStaticMethodSync(className: String, methodName: String, args: js.Any*): js.Any = js.native
     
@@ -92,7 +90,7 @@ object mod extends Shortcut {
     
     var nativeBindingLocation: String = js.native
     
-    def newArray[T](className: String, arg: js.Array[_]): js.Any = js.native
+    def newArray[T](className: String, arg: js.Array[js.Any]): js.Any = js.native
     
     def newByte(`val`: Double): js.Any = js.native
     
@@ -105,7 +103,7 @@ object mod extends Shortcut {
     
     def newInstance(className: String, args: js.Any*): Unit = js.native
     
-    def newInstanceP(className: String, args: js.Any*): js.Promise[_] = js.native
+    def newInstanceP(className: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     def newInstanceSync(className: String, args: js.Any*): js.Any = js.native
     

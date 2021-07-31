@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
   /**
     * The system ID or number code of the error.
     */
-  var code: js.UndefOr[Code] = js.native
+  var code: js.UndefOr[Code] = js.undefined
   
   /**
     * The text of the error message.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
 }
 object ErrorDetails {
   

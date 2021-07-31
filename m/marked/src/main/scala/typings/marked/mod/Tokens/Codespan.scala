@@ -4,24 +4,24 @@ import typings.marked.markedStrings.codespan
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Codespan extends Token {
+trait Codespan
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: codespan = js.native
+  var `type`: codespan
 }
 object Codespan {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: codespan): Codespan = {
+  def apply(raw: String, text: String): Codespan = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("codespan")
     __obj.asInstanceOf[Codespan]
   }
   

@@ -4,21 +4,19 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.DevExpress.ui.dxDropDownButton
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreviousItem extends StObject {
   
-  var component: js.UndefOr[dxDropDownButton] = js.native
+  var component: js.UndefOr[dxDropDownButton] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var previousItem: js.UndefOr[js.Any] = js.native
+  var previousItem: js.UndefOr[js.Any] = js.undefined
 }
 object PreviousItem {
   

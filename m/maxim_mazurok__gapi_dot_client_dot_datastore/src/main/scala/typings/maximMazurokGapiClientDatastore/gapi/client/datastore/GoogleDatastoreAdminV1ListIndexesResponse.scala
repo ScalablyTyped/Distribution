@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDatastoreAdminV1ListIndexesResponse extends StObject {
   
   /** The indexes. */
-  var indexes: js.UndefOr[js.Array[GoogleDatastoreAdminV1Index]] = js.native
+  var indexes: js.UndefOr[js.Array[GoogleDatastoreAdminV1Index]] = js.undefined
   
   /** The standard List next-page token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object GoogleDatastoreAdminV1ListIndexesResponse {
   

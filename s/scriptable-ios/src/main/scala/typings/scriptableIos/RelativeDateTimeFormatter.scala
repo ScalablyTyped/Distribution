@@ -3,7 +3,6 @@ package typings.scriptableIos
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The formatter creates a textual representation of the time between two points in time.
   * @see https://docs.scriptable.app/relativedatetimeformatter/#-new-relativedatetimeformatter
   */
-@js.native
 trait RelativeDateTimeFormatter extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait RelativeDateTimeFormatter extends StObject {
     * The locale should be specified using a string identifier, e.g. "en", "it" or "da". When no locale is set, the formatter will use the current locale of the device.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#locale
     */
-  var locale: String = js.native
+  var locale: String
   
   /**
     * _Creates a localized string communicating the amount of time between two dates._
@@ -32,7 +30,7 @@ trait RelativeDateTimeFormatter extends StObject {
     * @param referenceDate - The reference date that `date` is relative to.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-string
     */
-  def string(date: Date, referenceDate: Date): String = js.native
+  def string(date: Date, referenceDate: Date): String
   
   /**
     * _Prefers named dates and times._
@@ -43,7 +41,7 @@ trait RelativeDateTimeFormatter extends StObject {
     * When no named representation is found the formatter will fallback to using the numeric style.
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-usenameddatetimestyle
     */
-  def useNamedDateTimeStyle(): Unit = js.native
+  def useNamedDateTimeStyle(): Unit
   
   /**
     * _Prefers numeric dates and times._
@@ -52,7 +50,7 @@ trait RelativeDateTimeFormatter extends StObject {
     * ago" instead of "yesteday".
     * @see https://docs.scriptable.app/relativedatetimeformatter/#-usenumericdatetimestyle
     */
-  def useNumericDateTimeStyle(): Unit = js.native
+  def useNumericDateTimeStyle(): Unit
 }
 object RelativeDateTimeFormatter {
   

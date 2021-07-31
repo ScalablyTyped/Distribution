@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactable.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -85,12 +84,11 @@ object mod {
   
   type FilterMethodType = js.Function1[/* text */ String, Unit]
   
-  @js.native
   trait KeyLabelObject extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var label: String = js.native
+    var label: String
   }
   object KeyLabelObject {
     
@@ -125,38 +123,37 @@ object mod {
     def desc: typings.reactable.reactableStrings.desc = "desc".asInstanceOf[typings.reactable.reactableStrings.desc]
   }
   
-  @js.native
   trait TableComponentProperties[T] extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var columns: js.UndefOr[js.Array[ColumnsType]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnsType]] = js.undefined
     
-    var currentPage: js.UndefOr[Double] = js.native
+    var currentPage: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Array[T]] = js.native
+    var data: js.UndefOr[js.Array[T]] = js.undefined
     
-    var defaultSort: js.UndefOr[Column] = js.native
+    var defaultSort: js.UndefOr[Column] = js.undefined
     
-    var filterBy: js.UndefOr[String] = js.native
+    var filterBy: js.UndefOr[String] = js.undefined
     
-    var filterable: js.UndefOr[js.Array[String]] = js.native
+    var filterable: js.UndefOr[js.Array[String]] = js.undefined
     
-    var hideFilterInput: js.UndefOr[Boolean] = js.native
+    var hideFilterInput: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemsPerPage: js.UndefOr[Double] = js.native
+    var itemsPerPage: js.UndefOr[Double] = js.undefined
     
-    var noDataText: js.UndefOr[String] = js.native
+    var noDataText: js.UndefOr[String] = js.undefined
     
-    var onFilter: js.UndefOr[FilterMethodType] = js.native
+    var onFilter: js.UndefOr[FilterMethodType] = js.undefined
     
-    var pageButtonLimit: js.UndefOr[Double] = js.native
+    var pageButtonLimit: js.UndefOr[Double] = js.undefined
     
-    var sortBy: js.UndefOr[Boolean] = js.native
+    var sortBy: js.UndefOr[Boolean] = js.undefined
     
-    var sortable: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var sortable: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   }
   object TableComponentProperties {
     
@@ -167,7 +164,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TableComponentPropertiesMutableBuilder[Self <: TableComponentProperties[_], T] (val x: Self with TableComponentProperties[T]) extends AnyVal {
+    implicit class TableComponentPropertiesMutableBuilder[Self <: TableComponentProperties[?], T] (val x: Self & TableComponentProperties[T]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -273,14 +270,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TdProperties extends StObject {
     
-    var column: String = js.native
+    var column: String
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object TdProperties {
     
@@ -310,12 +306,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ThProperties extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var column: String = js.native
+    var column: String
   }
   object ThProperties {
     
@@ -339,12 +334,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TrProperties[T] extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[T] = js.native
+    var data: js.UndefOr[T] = js.undefined
   }
   object TrProperties {
     
@@ -355,7 +349,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TrPropertiesMutableBuilder[Self <: TrProperties[_], T] (val x: Self with TrProperties[T]) extends AnyVal {
+    implicit class TrPropertiesMutableBuilder[Self <: TrProperties[?], T] (val x: Self & TrProperties[T]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])

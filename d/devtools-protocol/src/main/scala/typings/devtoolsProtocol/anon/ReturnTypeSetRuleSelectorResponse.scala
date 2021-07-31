@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.SetRuleSelectorRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.SetRuleSelectorResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSetRuleSelectorResponse extends StObject {
   
-  var paramsType: js.Array[SetRuleSelectorRequest] = js.native
+  var paramsType: js.Array[SetRuleSelectorRequest]
   
-  var returnType: SetRuleSelectorResponse = js.native
+  var returnType: SetRuleSelectorResponse
 }
 object ReturnTypeSetRuleSelectorResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRange extends StObject {
   
   /**
     * A date range unit for the date filter.
     */
-  var Unit: js.UndefOr[DateRangeUnit] = js.native
+  var Unit: js.UndefOr[DateRangeUnit] = js.undefined
   
   /**
     * A date range value for the date filter.
     */
-  var Value: js.UndefOr[Integer] = js.native
+  var Value: js.UndefOr[Integer] = js.undefined
 }
 object DateRange {
   

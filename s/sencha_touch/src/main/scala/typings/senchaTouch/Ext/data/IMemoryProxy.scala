@@ -3,24 +3,24 @@ package typings.senchaTouch.Ext.data
 import typings.senchaTouch.Ext.data.proxy.IClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMemoryProxy extends IClient {
+trait IMemoryProxy
+  extends StObject
+     with IClient {
   
   /** [Config Option] (Object) */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Returns the value of data
     * @returns Object
     */
-  var getData: js.UndefOr[js.Function0[_]] = js.native
+  var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Sets the value of data
     * @param data Object The new value.
     */
-  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
 }
 object IMemoryProxy {
   
@@ -40,7 +40,7 @@ object IMemoryProxy {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+    def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)

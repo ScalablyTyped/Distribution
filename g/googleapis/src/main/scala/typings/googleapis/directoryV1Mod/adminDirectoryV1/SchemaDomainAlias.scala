@@ -2,45 +2,43 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Domain Alias object in Directory API.
   */
-@js.native
 trait SchemaDomainAlias extends StObject {
   
   /**
     * The creation time of the domain alias. (Read-only).
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The domain alias name.
     */
-  var domainAliasName: js.UndefOr[String] = js.native
+  var domainAliasName: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The parent domain name that the domain alias is associated with. This can
     * either be a primary or secondary domain name within a customer.
     */
-  var parentDomainName: js.UndefOr[String] = js.native
+  var parentDomainName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the verification state of a domain alias. (Read-only)
     */
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDomainAlias {
   

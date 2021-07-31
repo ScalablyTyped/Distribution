@@ -3,15 +3,13 @@ package typings.wordpressCustomizeBrowser
 import typings.wordpressCustomizeBrowser.themesPanelMod.ThemesPanel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelConstructorMod {
   
-  @js.native
   trait PanelConstructor extends StObject {
     
-    var themes: ThemesPanel = js.native
+    var themes: ThemesPanel
   }
   object PanelConstructor {
     

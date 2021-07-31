@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.CellAnnotation
   * @see com.sun.star.sheet.SheetCell
   */
-@js.native
-trait XSheetAnnotations extends XIndexAccess {
+trait XSheetAnnotations
+  extends StObject
+     with XIndexAccess {
   
   /**
     * creates a new annotation.
@@ -23,7 +23,7 @@ trait XSheetAnnotations extends XIndexAccess {
     * @param aPosition contains the address of the cell that will contain the annotation.
     * @param aText contains the annotation text.
     */
-  def insertNew(aPosition: CellAddress, aText: String): Unit = js.native
+  def insertNew(aPosition: CellAddress, aText: String): Unit
   
   /**
     * removes a cell annotation from the collection.
@@ -31,7 +31,7 @@ trait XSheetAnnotations extends XIndexAccess {
     * This method removes the annotation from its cell and from the collection.
     * @param nIndex is the index of the annotation in the collection.
     */
-  def removeByIndex(nIndex: Double): Unit = js.native
+  def removeByIndex(nIndex: Double): Unit
 }
 object XSheetAnnotations {
   

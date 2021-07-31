@@ -8,33 +8,42 @@ import typings.elasticsearch.mod.VersionType
 import typings.elasticsearch.mod._Refresh
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticsearchStrings {
   
   @js.native
-  sealed trait AND extends DefaultOperator
+  sealed trait AND
+    extends StObject
+       with DefaultOperator
   @scala.inline
   def AND: AND = "AND".asInstanceOf[AND]
   
   @js.native
-  sealed trait OR extends DefaultOperator
+  sealed trait OR
+    extends StObject
+       with DefaultOperator
   @scala.inline
   def OR: OR = "OR".asInstanceOf[OR]
   
   @js.native
-  sealed trait _empty extends _Refresh
+  sealed trait _empty
+    extends StObject
+       with _Refresh
   @scala.inline
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait abort extends Conflicts
+  sealed trait abort
+    extends StObject
+       with Conflicts
   @scala.inline
   def abort: abort = "abort".asInstanceOf[abort]
   
   @js.native
-  sealed trait all extends ExpandWildcards
+  sealed trait all
+    extends StObject
+       with ExpandWildcards
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
@@ -44,7 +53,9 @@ object elasticsearchStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait b extends CatBytes
+  sealed trait b
+    extends StObject
+       with CatBytes
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   
@@ -54,7 +65,9 @@ object elasticsearchStrings {
   def blocked: blocked = "blocked".asInstanceOf[blocked]
   
   @js.native
-  sealed trait closed extends ExpandWildcards
+  sealed trait closed
+    extends StObject
+       with ExpandWildcards
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
   
@@ -84,27 +97,37 @@ object elasticsearchStrings {
   def dfs_query_then_fetch: dfs_query_then_fetch = "dfs_query_then_fetch".asInstanceOf[dfs_query_then_fetch]
   
   @js.native
-  sealed trait external extends VersionType
+  sealed trait external
+    extends StObject
+       with VersionType
   @scala.inline
   def external: external = "external".asInstanceOf[external]
   
   @js.native
-  sealed trait external_gte extends VersionType
+  sealed trait external_gte
+    extends StObject
+       with VersionType
   @scala.inline
   def external_gte: external_gte = "external_gte".asInstanceOf[external_gte]
   
   @js.native
-  sealed trait force extends VersionType
+  sealed trait force
+    extends StObject
+       with VersionType
   @scala.inline
   def force: force = "force".asInstanceOf[force]
   
   @js.native
-  sealed trait g extends CatBytes
+  sealed trait g
+    extends StObject
+       with CatBytes
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   
   @js.native
-  sealed trait gb extends CatBytes
+  sealed trait gb
+    extends StObject
+       with CatBytes
   @scala.inline
   def gb: gb = "gb".asInstanceOf[gb]
   
@@ -134,17 +157,23 @@ object elasticsearchStrings {
   def indices: indices = "indices".asInstanceOf[indices]
   
   @js.native
-  sealed trait internal extends VersionType
+  sealed trait internal
+    extends StObject
+       with VersionType
   @scala.inline
   def internal: internal = "internal".asInstanceOf[internal]
   
   @js.native
-  sealed trait k extends CatBytes
+  sealed trait k
+    extends StObject
+       with CatBytes
   @scala.inline
   def k: k = "k".asInstanceOf[k]
   
   @js.native
-  sealed trait kb extends CatBytes
+  sealed trait kb
+    extends StObject
+       with CatBytes
   @scala.inline
   def kb: kb = "kb".asInstanceOf[kb]
   
@@ -159,12 +188,16 @@ object elasticsearchStrings {
   def low: low = "low".asInstanceOf[low]
   
   @js.native
-  sealed trait m extends CatBytes
+  sealed trait m
+    extends StObject
+       with CatBytes
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   
   @js.native
-  sealed trait mb extends CatBytes
+  sealed trait mb
+    extends StObject
+       with CatBytes
   @scala.inline
   def mb: mb = "mb".asInstanceOf[mb]
   
@@ -184,7 +217,9 @@ object elasticsearchStrings {
   def nodes: nodes = "nodes".asInstanceOf[nodes]
   
   @js.native
-  sealed trait none extends ExpandWildcards
+  sealed trait none
+    extends StObject
+       with ExpandWildcards
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -194,12 +229,16 @@ object elasticsearchStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait open extends ExpandWildcards
+  sealed trait open
+    extends StObject
+       with ExpandWildcards
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait p extends CatBytes
+  sealed trait p
+    extends StObject
+       with CatBytes
   @scala.inline
   def p: p = "p".asInstanceOf[p]
   
@@ -209,7 +248,9 @@ object elasticsearchStrings {
   def parents: parents = "parents".asInstanceOf[parents]
   
   @js.native
-  sealed trait pb extends CatBytes
+  sealed trait pb
+    extends StObject
+       with CatBytes
   @scala.inline
   def pb: pb = "pb".asInstanceOf[pb]
   
@@ -219,7 +260,9 @@ object elasticsearchStrings {
   def popular: popular = "popular".asInstanceOf[popular]
   
   @js.native
-  sealed trait proceed extends Conflicts
+  sealed trait proceed
+    extends StObject
+       with Conflicts
   @scala.inline
   def proceed: proceed = "proceed".asInstanceOf[proceed]
   
@@ -244,12 +287,16 @@ object elasticsearchStrings {
   def shards: shards = "shards".asInstanceOf[shards]
   
   @js.native
-  sealed trait t extends CatBytes
+  sealed trait t
+    extends StObject
+       with CatBytes
   @scala.inline
   def t: t = "t".asInstanceOf[t]
   
   @js.native
-  sealed trait tb extends CatBytes
+  sealed trait tb
+    extends StObject
+       with CatBytes
   @scala.inline
   def tb: tb = "tb".asInstanceOf[tb]
   
@@ -262,7 +309,9 @@ object elasticsearchStrings {
   sealed trait wait extends StObject
   
   @js.native
-  sealed trait wait_for extends _Refresh
+  sealed trait wait_for
+    extends StObject
+       with _Refresh
   @scala.inline
   def wait_for: wait_for = "wait_for".asInstanceOf[wait_for]
   

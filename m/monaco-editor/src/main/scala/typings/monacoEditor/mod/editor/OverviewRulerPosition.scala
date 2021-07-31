@@ -2,31 +2,29 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverviewRulerPosition extends StObject {
   
   /**
     * Height of the overview ruler
     */
-  val height: Double = js.native
+  val height: Double
   
   /**
     * Right position for the overview ruler
     */
-  val right: Double = js.native
+  val right: Double
   
   /**
     * Top position for the overview ruler
     */
-  val top: Double = js.native
+  val top: Double
   
   /**
     * Width of the overview ruler
     */
-  val width: Double = js.native
+  val width: Double
 }
 object OverviewRulerPosition {
   

@@ -3,14 +3,12 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A [`header`](/docs/hosting/full-config#headers) defines custom headers to
   * add to a response should the request URL path match the pattern.
   */
-@js.native
 trait SchemaHeader extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaHeader extends StObject {
     * pattern](/docs/hosting/full-config#glob_pattern_matching) to match
     * against the request URL path.
     */
-  var glob: js.UndefOr[String] = js.native
+  var glob: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The additional headers to add to the response.
     */
-  var headers: js.UndefOr[StringDictionary[String]] = js.native
+  var headers: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaHeader {
   

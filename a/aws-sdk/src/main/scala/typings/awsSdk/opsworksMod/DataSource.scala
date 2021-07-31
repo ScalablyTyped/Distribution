@@ -2,26 +2,24 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource extends StObject {
   
   /**
     * The data source's ARN.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The database name.
     */
-  var DatabaseName: js.UndefOr[String] = js.native
+  var DatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * The data source's type, AutoSelectOpsworksMysqlInstance, OpsworksMysqlInstance, RdsDbInstance, or None.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object DataSource {
   

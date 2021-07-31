@@ -4,18 +4,18 @@ import typings.std.PropertyDecorator
 import typings.typeorm.optionsJoinColumnOptionsMod.JoinColumnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relationsJoinColumnMod {
   
-  @JSImport("typeorm/decorator/relations/JoinColumn", "JoinColumn")
+  @JSImport("typeorm/decorator/relations/JoinColumn", JSImport.Namespace)
   @js.native
-  def JoinColumn(): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/JoinColumn", "JoinColumn")
-  @js.native
-  def JoinColumn(options: js.Array[JoinColumnOptions]): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/relations/JoinColumn", "JoinColumn")
-  @js.native
-  def JoinColumn(options: JoinColumnOptions): PropertyDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def JoinColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def JoinColumn(options: js.Array[JoinColumnOptions]): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def JoinColumn(options: JoinColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("JoinColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

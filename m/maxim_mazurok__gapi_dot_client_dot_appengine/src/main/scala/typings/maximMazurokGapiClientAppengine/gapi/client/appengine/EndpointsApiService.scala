@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointsApiService extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait EndpointsApiService extends StObject {
     * is used to give the configuration ID and is required in this case.Endpoints also has a rollout strategy called RolloutStrategy.MANAGED. When using this, Endpoints fetches the latest
     * configuration and does not need the configuration ID. In this case, config_id must be omitted.
     */
-  var configId: js.UndefOr[String] = js.native
+  var configId: js.UndefOr[String] = js.undefined
   
   /** Enable or disable trace sampling. By default, this is set to false for enabled. */
-  var disableTraceSampling: js.UndefOr[Boolean] = js.native
+  var disableTraceSampling: js.UndefOr[Boolean] = js.undefined
   
   /** Endpoints service name which is the name of the "service" resource in the Service Management API. For example "myapi.endpoints.myproject.cloud.goog" */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Endpoints rollout strategy. If FIXED, config_id must be specified. If MANAGED, config_id must be omitted. */
-  var rolloutStrategy: js.UndefOr[String] = js.native
+  var rolloutStrategy: js.UndefOr[String] = js.undefined
 }
 object EndpointsApiService {
   

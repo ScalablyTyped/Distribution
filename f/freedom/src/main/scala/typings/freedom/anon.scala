@@ -3,15 +3,13 @@ package typings.freedom
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Channel extends StObject {
     
-    var channel: String = js.native
+    var channel: String
   }
   object Channel {
     
@@ -29,10 +27,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RemoveEventListener extends StObject {
     
-    def removeEventListener(s: String, f: js.Function, b: Boolean): Unit = js.native
+    def removeEventListener(s: String, f: js.Function, b: Boolean): Unit
   }
   object RemoveEventListener {
     
@@ -50,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stream extends StObject {
     
-    var stream: Double = js.native
+    var stream: Double
   }
   object Stream {
     
@@ -71,10 +67,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Views extends StObject {
     
-    var views: StringDictionary[js.Object] = js.native
+    var views: StringDictionary[js.Object]
   }
   object Views {
     

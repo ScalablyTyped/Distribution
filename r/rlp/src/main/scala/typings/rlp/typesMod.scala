@@ -6,17 +6,15 @@ import typings.std.Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Decoded extends StObject {
     
-    var data: Buffer | js.Array[Buffer] = js.native
+    var data: Buffer | js.Array[Buffer]
     
-    var remainder: Buffer = js.native
+    var remainder: Buffer
   }
   object Decoded {
     
@@ -43,5 +41,7 @@ object typesMod {
   type Input = Buffer | String | Double | js.BigInt | Uint8Array | ^ | List | Null
   
   @js.native
-  trait List extends Array[Input]
+  trait List
+    extends StObject
+       with Array[Input]
 }

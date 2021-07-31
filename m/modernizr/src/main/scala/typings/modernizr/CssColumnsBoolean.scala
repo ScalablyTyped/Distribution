@@ -3,33 +3,33 @@ package typings.modernizr
 import typings.std.Boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CssColumnsBoolean extends Boolean {
+trait CssColumnsBoolean
+  extends StObject
+     with Boolean {
   
-  var breakafter: scala.Boolean = js.native
+  var breakafter: scala.Boolean
   
-  var breakbefore: scala.Boolean = js.native
+  var breakbefore: scala.Boolean
   
-  var breakinside: scala.Boolean = js.native
+  var breakinside: scala.Boolean
   
-  var fill: scala.Boolean = js.native
+  var fill: scala.Boolean
   
-  var gap: scala.Boolean = js.native
+  var gap: scala.Boolean
   
-  var rule: scala.Boolean = js.native
+  var rule: scala.Boolean
   
-  var rulecolor: scala.Boolean = js.native
+  var rulecolor: scala.Boolean
   
-  var rulestyle: scala.Boolean = js.native
+  var rulestyle: scala.Boolean
   
-  var rulewidth: scala.Boolean = js.native
+  var rulewidth: scala.Boolean
   
-  var span: scala.Boolean = js.native
+  var span: scala.Boolean
   
-  var width: scala.Boolean = js.native
+  var width: scala.Boolean
 }
 object CssColumnsBoolean {
   

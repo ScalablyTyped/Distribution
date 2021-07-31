@@ -10,9 +10,9 @@ Cloud Datastore Client Library for Node.js
 | ------------------ | :-------------: |
 | Full name          | @google-cloud/datastore |
 | Keywords           | google apis client, google api client, google apis, google api, google, google cloud platform, google cloud, cloud, google datastore, datastore |
-| # releases         | 29 |
-| # dependents       | 132 |
-| # downloads        | 3571301 |
+| # releases         | 33 |
+| # dependents       | 134 |
+| # downloads        | 3476243 |
 | # stars            | 3 |
 
 ## Links

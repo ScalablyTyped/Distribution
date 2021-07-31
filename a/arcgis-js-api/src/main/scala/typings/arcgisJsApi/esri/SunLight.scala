@@ -5,32 +5,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SunLight extends Object {
+trait SunLight
+  extends StObject
+     with Object {
   
   /**
     * The ambient light color and intensity.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
     */
-  var ambient: ColorAndIntensity = js.native
+  var ambient: ColorAndIntensity
   
   /**
     * The diffuse light color and intensity.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
     */
-  var diffuse: ColorAndIntensity = js.native
+  var diffuse: ColorAndIntensity
   
   /**
     * The incident light direction in render coordinates.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-3d-externalRenderers.html#SunLight)
     */
-  var direction: ArrayLike[Double] = js.native
+  var direction: ArrayLike[Double]
 }
 object SunLight {
   

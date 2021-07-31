@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.slider
 import typings.arcgisJsApi.arcgisJsApiStrings.toggle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ActionBase extends Accessor {
+trait ActionBase
+  extends StObject
+     with Accessor {
   
   /**
     * Set this property to `true` to display a spinner icon.

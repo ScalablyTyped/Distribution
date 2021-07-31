@@ -2,14 +2,12 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  Additional information returned to client, such as debugging
   * information.
   */
-@js.native
 trait SchemaResponseMetadata extends StObject {
   
   /**
@@ -17,18 +15,18 @@ trait SchemaResponseMetadata extends StObject {
     * invocation if multiple algorithms are used. The default value is empty.
     * For search response only.
     */
-  var experimentIdList: js.UndefOr[js.Array[Double]] = js.native
+  var experimentIdList: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * For search response only. Indicates the mode of a performed search.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * A unique id associated with this call. This id is logged for tracking
     * purposes.
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
 }
 object SchemaResponseMetadata {
   

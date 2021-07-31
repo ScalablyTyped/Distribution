@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,75 +15,74 @@ object mod {
   
   type ReactWOW = Component[ReactWOWProps, js.Object, js.Any]
   
-  @js.native
   trait ReactWOWProps extends StObject {
     
     /**
       * Animation css class.
       * @default animated
       */
-    var animateClass: js.UndefOr[String] = js.native
+    var animateClass: js.UndefOr[String] = js.undefined
     
     /**
       * Animation name.
       * @see https://daneden.github.io/animate.css/
       */
-    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any = js.native
+    var animation: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 76 */ js.Any
     
     /**
       * The callback is fired every time an animation is stoped.
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Content you want to apply the animation to.
       */
-    var children: Element = js.native
+    var children: Element
     
     /**
       * Animation delay.
       */
-    var delay: js.UndefOr[String] = js.native
+    var delay: js.UndefOr[String] = js.undefined
     
     /**
       * Disable the animation.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Animation duration.
       */
-    var duration: js.UndefOr[String] = js.native
+    var duration: js.UndefOr[String] = js.undefined
     
     /**
       * Animation iteration count.
       */
-    var iteration: js.UndefOr[String] = js.native
+    var iteration: js.UndefOr[String] = js.undefined
     
     /**
       * Distance to the element when triggering the animation.
       * @default 0
       */
-    var offset: js.UndefOr[Double | js.Array[Double]] = js.native
+    var offset: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
     /**
       * If your components inside a overflow container, set this to true.
       * @default false
       */
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Listen and react to resize event.
       * @default true
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Listen and react to scroll event.
       * @default true
       */
-    var scroll: js.UndefOr[Boolean] = js.native
+    var scroll: js.UndefOr[Boolean] = js.undefined
   }
   object ReactWOWProps {
     

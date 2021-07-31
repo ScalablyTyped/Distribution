@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudiot/v1", "cloudiot_v1.Resource$Projects$Locations$Registries$Groups$Devices$Configversions")
@@ -33,7 +32,7 @@ class ResourceProjectsLocationsRegistriesGroupsDevicesConfigversions protected (
     */
   def list(): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDeviceConfigVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesConfigversionsList): GaxiosPromise[SchemaListDeviceConfigVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsRegistriesGroupsDevicesConfigversionsList,

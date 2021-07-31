@@ -2,15 +2,13 @@ package typings.reactNative.mod.Animated
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationConfig extends StObject {
   
-  var isInteraction: js.UndefOr[Boolean] = js.native
+  var isInteraction: js.UndefOr[Boolean] = js.undefined
   
-  var useNativeDriver: Boolean = js.native
+  var useNativeDriver: Boolean
 }
 object AnimationConfig {
   

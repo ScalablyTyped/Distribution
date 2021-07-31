@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingPolicyDescription extends StObject {
   
   /**
     * The upper and lower EC2 instance limits for an automatic scaling policy. Automatic scaling activity will not cause an instance group to grow above or below these limits.
     */
-  var Constraints: js.UndefOr[ScalingConstraints] = js.native
+  var Constraints: js.UndefOr[ScalingConstraints] = js.undefined
   
   /**
     * The scale-in and scale-out rules that comprise the automatic scaling policy.
     */
-  var Rules: js.UndefOr[ScalingRuleList] = js.native
+  var Rules: js.UndefOr[ScalingRuleList] = js.undefined
   
   /**
     * The status of an automatic scaling policy. 
     */
-  var Status: js.UndefOr[AutoScalingPolicyStatus] = js.native
+  var Status: js.UndefOr[AutoScalingPolicyStatus] = js.undefined
 }
 object AutoScalingPolicyDescription {
   

@@ -5,19 +5,17 @@ import typings.std.Blob
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Util {
   
-  @js.native
   trait EventSource extends StObject {
     
-    def addListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource = js.native
+    def addListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource
     
-    def dispatch(event: js.Object): Boolean = js.native
+    def dispatch(event: js.Object): Boolean
     
-    def removeListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource = js.native
+    def removeListener(listener: js.Function1[/* event */ js.Any, Unit]): EventSource
   }
   object EventSource {
     
@@ -45,10 +43,9 @@ object Util {
     }
   }
   
-  @js.native
   trait Oauth extends StObject {
     
-    def checkAuthStateParam(stateParam: String): Boolean = js.native
+    def checkAuthStateParam(stateParam: String): Boolean
   }
   object Oauth {
     

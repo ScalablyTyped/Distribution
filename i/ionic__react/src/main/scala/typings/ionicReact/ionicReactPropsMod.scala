@@ -3,19 +3,17 @@ package typings.ionicReact
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicReactPropsMod {
   
-  @js.native
   trait IonicReactProps extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object IonicReactProps {
     

@@ -2,7 +2,6 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * expected to know the metadata key/value pairs associated with each threat
   * type.
   */
-@js.native
 trait SchemaThreatEntryMetadata extends StObject {
   
   /**
     * The metadata entries.
     */
-  var entries: js.UndefOr[js.Array[SchemaMetadataEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaMetadataEntry]] = js.undefined
 }
 object SchemaThreatEntryMetadata {
   

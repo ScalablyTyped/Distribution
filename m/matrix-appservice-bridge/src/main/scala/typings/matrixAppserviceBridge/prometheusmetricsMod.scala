@@ -12,7 +12,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prometheusmetricsMod {
@@ -142,24 +141,23 @@ object prometheusmetricsMod {
     def AgeCounters_=(x: Instantiable1[/* counterPeriods */ js.UndefOr[js.Array[String]], AgeCounters]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("AgeCounters")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait BridgeGaugesCounts extends StObject {
     
-    var matrixGhosts: js.UndefOr[Double] = js.native
+    var matrixGhosts: js.UndefOr[Double] = js.undefined
     
-    var matrixRoomConfigs: js.UndefOr[Double] = js.native
+    var matrixRoomConfigs: js.UndefOr[Double] = js.undefined
     
-    var matrixRoomsByAge: js.UndefOr[AgeCounters] = js.native
+    var matrixRoomsByAge: js.UndefOr[AgeCounters] = js.undefined
     
-    var matrixUsersByAge: js.UndefOr[AgeCounters] = js.native
+    var matrixUsersByAge: js.UndefOr[AgeCounters] = js.undefined
     
-    var remoteGhosts: js.UndefOr[Double] = js.native
+    var remoteGhosts: js.UndefOr[Double] = js.undefined
     
-    var remoteRoomConfigs: js.UndefOr[Double] = js.native
+    var remoteRoomConfigs: js.UndefOr[Double] = js.undefined
     
-    var remoteRoomsByAge: js.UndefOr[AgeCounters] = js.native
+    var remoteRoomsByAge: js.UndefOr[AgeCounters] = js.undefined
     
-    var remoteUsersByAge: js.UndefOr[AgeCounters] = js.native
+    var remoteUsersByAge: js.UndefOr[AgeCounters] = js.undefined
   }
   object BridgeGaugesCounts {
     
@@ -224,16 +222,15 @@ object prometheusmetricsMod {
   
   type CollectorFunction = js.Function0[Unit]
   
-  @js.native
   trait CounterOpts extends StObject {
     
-    var help: String = js.native
+    var help: String
     
-    var labels: js.UndefOr[js.Array[String]] = js.native
+    var labels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
   }
   object CounterOpts {
     
@@ -269,18 +266,17 @@ object prometheusmetricsMod {
     }
   }
   
-  @js.native
   trait GagueOpts extends StObject {
     
-    var help: String = js.native
+    var help: String
     
-    var labels: js.UndefOr[js.Array[String]] = js.native
+    var labels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var refresh: js.UndefOr[js.Function1[/* gauge */ Gauge[String], Unit]] = js.native
+    var refresh: js.UndefOr[js.Function1[/* gauge */ Gauge[String], Unit]] = js.undefined
   }
   object GagueOpts {
     

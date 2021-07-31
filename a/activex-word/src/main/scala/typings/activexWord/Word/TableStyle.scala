@@ -2,50 +2,48 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableStyle extends StObject {
   
-  var Alignment: WdRowAlignment = js.native
+  var Alignment: WdRowAlignment
   
-  var AllowBreakAcrossPage: Double = js.native
+  var AllowBreakAcrossPage: Double
   
-  var AllowPageBreaks: Boolean = js.native
+  var AllowPageBreaks: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  var BottomPadding: Double = js.native
+  var BottomPadding: Double
   
-  var ColumnStripe: Double = js.native
+  var ColumnStripe: Double
   
-  def Condition(ConditionCode: WdConditionCode): ConditionalStyle = js.native
+  def Condition(ConditionCode: WdConditionCode): ConditionalStyle
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var LeftIndent: Double = js.native
+  var LeftIndent: Double
   
-  var LeftPadding: Double = js.native
+  var LeftPadding: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var RightPadding: Double = js.native
+  var RightPadding: Double
   
-  var RowStripe: Double = js.native
+  var RowStripe: Double
   
-  val Shading: typings.activexWord.Word.Shading = js.native
+  val Shading: typings.activexWord.Word.Shading
   
-  var Spacing: Double = js.native
+  var Spacing: Double
   
-  var TableDirection: WdTableDirection = js.native
+  var TableDirection: WdTableDirection
   
-  var TopPadding: Double = js.native
+  var TopPadding: Double
   
   @JSName("Word.TableStyle_typekey")
-  var WordDotTableStyle_typekey: TableStyle = js.native
+  var WordDotTableStyle_typekey: TableStyle
 }
 object TableStyle {
   

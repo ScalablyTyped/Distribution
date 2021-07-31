@@ -6,7 +6,6 @@ import typings.chromeApps.chrome.gcm.OutgoingMessage
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -29,6 +28,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @requires Permissions: 'gcm'
   */
 object gcm {
+  
+  @JSGlobal("chrome.gcm")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The maximum size (in bytes) of all key/value pairs in a message.
@@ -61,9 +64,8 @@ object gcm {
     * function(string registrationId) {...};
     * Parameter registrationId: A registration ID assigned to the application by the GCM.
     */
-  @JSGlobal("chrome.gcm.register")
-  @js.native
-  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def register(senderIds: js.Array[String], callback: js.Function1[/* registrationId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(senderIds.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sends a message according to its contents.
@@ -73,9 +75,8 @@ object gcm {
     * function(string messageId) {...};
     * Parameter messageId: The ID of the message that the callback was issued for.
     */
-  @JSGlobal("chrome.gcm.send")
-  @js.native
-  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = js.native
+  @scala.inline
+  def send(message: OutgoingMessage, callback: js.Function1[/* messageId */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(message.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Unregisters the application from GCM.
@@ -83,7 +84,6 @@ object gcm {
     * The callback parameter should be a function that looks like this:
     * function() {...};
     */
-  @JSGlobal("chrome.gcm.unregister")
-  @js.native
-  def unregister(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def unregister(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

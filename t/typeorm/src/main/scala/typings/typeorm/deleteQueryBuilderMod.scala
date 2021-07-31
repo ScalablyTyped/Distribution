@@ -7,7 +7,6 @@ import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.whereExpressionMod.WhereExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteQueryBuilderMod {
@@ -18,9 +17,9 @@ object deleteQueryBuilderMod {
     extends QueryBuilder[Entity]
        with WhereExpression {
     def this(connectionOrQueryBuilder: Connection) = this()
-    def this(connectionOrQueryBuilder: QueryBuilder[_]) = this()
+    def this(connectionOrQueryBuilder: QueryBuilder[js.Any]) = this()
     def this(connectionOrQueryBuilder: Connection, queryRunner: QueryRunner) = this()
-    def this(connectionOrQueryBuilder: QueryBuilder[_], queryRunner: QueryRunner) = this()
+    def this(connectionOrQueryBuilder: QueryBuilder[js.Any], queryRunner: QueryRunner) = this()
     
     /**
       * Creates DELETE express used to perform query.

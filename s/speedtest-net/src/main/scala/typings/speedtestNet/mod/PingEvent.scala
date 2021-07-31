@@ -4,31 +4,30 @@ import typings.speedtestNet.speedtestNetStrings.ping
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sent when the test is in the ping phase. */
-@js.native
 trait PingEvent
-  extends BaseEvent
+  extends StObject
+     with BaseEvent
      with SpeedTestEvent {
   
-  var ping: PingData = js.native
+  var ping: PingData
   
   /** Indicates the overall progress of the test as a fraction (0 to 1). */
-  var progress: Double = js.native
+  var progress: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   @JSName("type")
-  var type_PingEvent: ping = js.native
+  var type_PingEvent: ping
 }
 object PingEvent {
   
   @scala.inline
-  def apply(ping: PingData, progress: Double, timestamp: Date, `type`: ping): PingEvent = {
+  def apply(ping: PingData, progress: Double, timestamp: Date): PingEvent = {
     val __obj = js.Dynamic.literal(ping = ping.asInstanceOf[js.Any], progress = progress.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ping")
     __obj.asInstanceOf[PingEvent]
   }
   

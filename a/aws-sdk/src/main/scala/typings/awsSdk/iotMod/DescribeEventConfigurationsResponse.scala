@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEventConfigurationsResponse extends StObject {
   
   /**
     * The creation date of the event configuration.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The event configurations.
     */
-  var eventConfigurations: js.UndefOr[EventConfigurations] = js.native
+  var eventConfigurations: js.UndefOr[EventConfigurations] = js.undefined
   
   /**
     * The date the event configurations were last modified.
     */
-  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastModifiedDate: js.UndefOr[LastModifiedDate] = js.undefined
 }
 object DescribeEventConfigurationsResponse {
   

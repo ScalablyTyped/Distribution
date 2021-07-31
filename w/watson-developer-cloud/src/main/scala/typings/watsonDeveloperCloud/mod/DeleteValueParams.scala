@@ -2,25 +2,23 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `deleteValue` operation. */
-@js.native
 trait DeleteValueParams extends StObject {
   
   /** The name of the entity. */
-  var entity: String = js.native
+  var entity: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The text of the entity value. */
-  var value: String = js.native
+  var value: String
   
   /** Unique identifier of the workspace. */
-  var workspace_id: String = js.native
+  var workspace_id: String
 }
 object DeleteValueParams {
   

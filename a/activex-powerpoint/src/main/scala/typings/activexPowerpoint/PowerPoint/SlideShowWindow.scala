@@ -3,36 +3,34 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideShowWindow extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  val Active: MsoTriState = js.native
+  val Active: MsoTriState
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var Height: Double = js.native
+  var Height: Double
   
-  val IsFullScreen: MsoTriState = js.native
+  val IsFullScreen: MsoTriState
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.SlideShowWindow_typekey")
-  var PowerPointDotSlideShowWindow_typekey: SlideShowWindow = js.native
+  var PowerPointDotSlideShowWindow_typekey: SlideShowWindow
   
-  val Presentation: typings.activexPowerpoint.PowerPoint.Presentation = js.native
+  val Presentation: typings.activexPowerpoint.PowerPoint.Presentation
   
-  var Top: Double = js.native
+  var Top: Double
   
-  val View: SlideShowView = js.native
+  val View: SlideShowView
   
-  var Width: Double = js.native
+  var Width: Double
 }
 object SlideShowWindow {
   

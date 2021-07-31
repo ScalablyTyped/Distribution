@@ -2,19 +2,17 @@ package typings.d3Sankey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined d3-sankey.d3-sankey.SankeyLink<{}, {}> */
-  @js.native
   trait SankeyLink extends StObject {
     
     /**
       * Link's zero-based index within the array of links calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's source node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -25,7 +23,7 @@ object anon {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding source node object.
       */
-    var source: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]) = js.native
+    var source: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])
     
     /**
       * Link's target node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -36,27 +34,27 @@ object anon {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding target node object.
       */
-    var target: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object]) = js.native
+    var target: Double | String | (typings.d3Sankey.mod.SankeyNode[js.Object, js.Object])
     
     /**
       * Link's numeric value
       */
-    var value: Double = js.native
+    var value: Double
     
     /**
       * Link's width (proportional to its value) calculated by Sankey layout generator.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical starting position (at source node) calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical end position (at target node) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyLink {
     
@@ -109,13 +107,12 @@ object anon {
   }
   
   /* Inlined d3-sankey.d3-sankey.SankeyLink<{}, {}> */
-  @js.native
   trait SankeyLinkIndex extends StObject {
     
     /**
       * Link's zero-based index within the array of links calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's source node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -126,7 +123,7 @@ object anon {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding source node object.
       */
-    var source: Double | String | SankeyNodeDepth = js.native
+    var source: Double | String | SankeyNodeDepth
     
     /**
       * Link's target node. For convenience, when initializing a Sankey layout using the default node id accessor,
@@ -137,27 +134,27 @@ object anon {
       * Once the Sankey generator is invoked to return the Sankey graph object,
       * the numeric index will be replaced with the corresponding target node object.
       */
-    var target: Double | String | SankeyNodeDepth = js.native
+    var target: Double | String | SankeyNodeDepth
     
     /**
       * Link's numeric value
       */
-    var value: Double = js.native
+    var value: Double
     
     /**
       * Link's width (proportional to its value) calculated by Sankey layout generator.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical starting position (at source node) calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Link's vertical end position (at target node) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyLinkIndex {
     
@@ -210,61 +207,60 @@ object anon {
   }
   
   /* Inlined d3-sankey.d3-sankey.SankeyNode<{}, {}> */
-  @js.native
   trait SankeyNode extends StObject {
     
     /**
       * Node’s zero-based graph depth, derived from the graph topology calculated by Sankey layout generator.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based graph height, derived from the graph topology calculated by Sankey layout generator.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based index within the array of nodes calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of outgoing links which have this node as their source.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var sourceLinks: js.UndefOr[js.Array[SankeyLink]] = js.native
+    var sourceLinks: js.UndefOr[js.Array[SankeyLink]] = js.undefined
     
     /**
       * Array of incoming links which have this node as their target.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var targetLinks: js.UndefOr[js.Array[SankeyLink]] = js.native
+    var targetLinks: js.UndefOr[js.Array[SankeyLink]] = js.undefined
     
     /**
       * Node's value calculated by Sankey layout Generator;
       * the sum of link.value for the node’s incoming links.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum horizontal position (derived from the node.depth) calculated by Sankey layout generator.
       */
-    var x0: js.UndefOr[Double] = js.native
+    var x0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s maximum horizontal position (node.x0 + sankey.nodeWidth) calculated by Sankey layout generator.
       */
-    var x1: js.UndefOr[Double] = js.native
+    var x1: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum vertical position calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's maximum vertical position (node.y1 - node.y0 is proportional to node.value) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyNode {
     
@@ -346,61 +342,60 @@ object anon {
   }
   
   /* Inlined d3-sankey.d3-sankey.SankeyNode<{}, {}> */
-  @js.native
   trait SankeyNodeDepth extends StObject {
     
     /**
       * Node’s zero-based graph depth, derived from the graph topology calculated by Sankey layout generator.
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based graph height, derived from the graph topology calculated by Sankey layout generator.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s zero-based index within the array of nodes calculated by Sankey layout generator.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of outgoing links which have this node as their source.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var sourceLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.native
+    var sourceLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.undefined
     
     /**
       * Array of incoming links which have this node as their target.
       * This property is calculated internally by the Sankey layout generator.
       */
-    var targetLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.native
+    var targetLinks: js.UndefOr[js.Array[typings.d3Sankey.mod.SankeyLink[js.Object, js.Object]]] = js.undefined
     
     /**
       * Node's value calculated by Sankey layout Generator;
       * the sum of link.value for the node’s incoming links.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum horizontal position (derived from the node.depth) calculated by Sankey layout generator.
       */
-    var x0: js.UndefOr[Double] = js.native
+    var x0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node’s maximum horizontal position (node.x0 + sankey.nodeWidth) calculated by Sankey layout generator.
       */
-    var x1: js.UndefOr[Double] = js.native
+    var x1: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's minimum vertical position calculated by Sankey layout generator.
       */
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
     /**
       * Node's maximum vertical position (node.y1 - node.y0 is proportional to node.value) calculated by Sankey layout generator.
       */
-    var y1: js.UndefOr[Double] = js.native
+    var y1: js.UndefOr[Double] = js.undefined
   }
   object SankeyNodeDepth {
     

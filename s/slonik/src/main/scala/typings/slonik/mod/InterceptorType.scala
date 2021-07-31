@@ -2,10 +2,8 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterceptorType extends StObject {
   
   var afterPoolConnection: js.UndefOr[
@@ -14,7 +12,7 @@ trait InterceptorType extends StObject {
       /* connection */ DatabasePoolConnectionType, 
       MaybePromiseType[Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var afterQueryExecution: js.UndefOr[
     js.Function3[
@@ -23,14 +21,14 @@ trait InterceptorType extends StObject {
       /* result */ QueryResultType[QueryResultRowType[String]], 
       MaybePromiseType[Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforePoolConnection: js.UndefOr[
     js.Function1[
       /* connectionContext */ PoolContextType, 
       MaybePromiseType[js.UndefOr[DatabasePoolType | Null]]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforePoolConnectionRelease: js.UndefOr[
     js.Function2[
@@ -38,7 +36,7 @@ trait InterceptorType extends StObject {
       /* connection */ DatabasePoolConnectionType, 
       MaybePromiseType[Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeQueryExecution: js.UndefOr[
     js.Function2[
@@ -46,7 +44,7 @@ trait InterceptorType extends StObject {
       /* query */ QueryType, 
       MaybePromiseType[QueryResultType[QueryResultRowType[String]] | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeQueryResult: js.UndefOr[
     js.Function3[
@@ -55,11 +53,11 @@ trait InterceptorType extends StObject {
       /* result */ QueryResultType[QueryResultRowType[String]], 
       MaybePromiseType[Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var beforeTransformQuery: js.UndefOr[
     js.Function2[/* queryContext */ QueryContextType, /* query */ QueryType, MaybePromiseType[Null]]
-  ] = js.native
+  ] = js.undefined
   
   var queryExecutionError: js.UndefOr[
     js.Function3[
@@ -68,11 +66,11 @@ trait InterceptorType extends StObject {
       /* error */ SlonikError, 
       MaybePromiseType[Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
   var transformQuery: js.UndefOr[
     js.Function2[/* queryContext */ QueryContextType, /* query */ QueryType, QueryType]
-  ] = js.native
+  ] = js.undefined
   
   var transformRow: js.UndefOr[
     js.Function4[
@@ -82,7 +80,7 @@ trait InterceptorType extends StObject {
       /* fields */ js.Array[FieldType], 
       QueryResultRowType[String]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object InterceptorType {
   

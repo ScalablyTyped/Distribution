@@ -2,51 +2,49 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReviewActionDetail extends StObject {
   
   /**
     * The unique identifier for the action.
     */
-  var ActionId: js.UndefOr[EntityId] = js.native
+  var ActionId: js.UndefOr[EntityId] = js.undefined
   
   /**
     *  The nature of the action itself. The Review Policy is responsible for examining the HIT and Assignments, emitting results, and deciding which other actions will be necessary. 
     */
-  var ActionName: js.UndefOr[String] = js.native
+  var ActionName: js.UndefOr[String] = js.undefined
   
   /**
     *  The date when the action was completed.
     */
-  var CompleteTime: js.UndefOr[Timestamp] = js.native
+  var CompleteTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  Present only when the Results have a FAILED Status.
     */
-  var ErrorCode: js.UndefOr[String] = js.native
+  var ErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     *  A description of the outcome of the review.
     */
-  var Result: js.UndefOr[String] = js.native
+  var Result: js.UndefOr[String] = js.undefined
   
   /**
     *  The current disposition of the action: INTENDED, SUCCEEDED, FAILED, or CANCELLED. 
     */
-  var Status: js.UndefOr[ReviewActionStatus] = js.native
+  var Status: js.UndefOr[ReviewActionStatus] = js.undefined
   
   /**
     *  The specific HITId or AssignmentID targeted by the action.
     */
-  var TargetId: js.UndefOr[EntityId] = js.native
+  var TargetId: js.UndefOr[EntityId] = js.undefined
   
   /**
     *  The type of object in TargetId.
     */
-  var TargetType: js.UndefOr[String] = js.native
+  var TargetType: js.UndefOr[String] = js.undefined
 }
 object ReviewActionDetail {
   

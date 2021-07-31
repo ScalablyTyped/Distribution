@@ -9,77 +9,67 @@ import typings.firebaseAppTypes.privateMod.FirebaseNamespace
 import typings.firebaseInstallationsTypes.mod.FirebaseInstallations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@firebase/analytics", "factory")
+  @JSImport("@firebase/analytics", JSImport.Namespace)
   @js.native
-  def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/analytics", "getGlobalVars")
-  @js.native
-  def getGlobalVars(): DynamicConfigPromisesList = js.native
+  @scala.inline
+  def factory(app: FirebaseApp, installations: FirebaseInstallations): FirebaseAnalytics = (^.asInstanceOf[js.Dynamic].applyDynamic("factory")(app.asInstanceOf[js.Any], installations.asInstanceOf[js.Any])).asInstanceOf[FirebaseAnalytics]
   
-  @JSImport("@firebase/analytics", "registerAnalytics")
-  @js.native
-  def registerAnalytics(instance: FirebaseNamespace): Unit = js.native
+  @scala.inline
+  def getGlobalVars(): DynamicConfigPromisesList = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVars")().asInstanceOf[DynamicConfigPromisesList]
   
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(
-    newGlobalInitDone: js.UndefOr[scala.Nothing],
-    newInitializationPromisesMap: js.UndefOr[scala.Nothing],
-    newDynamicPromises: js.Array[scala.Nothing]
-  ): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(newGlobalInitDone: js.UndefOr[scala.Nothing], newInitializationPromisesMap: js.Object): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(
-    newGlobalInitDone: js.UndefOr[scala.Nothing],
-    newInitializationPromisesMap: js.Object,
-    newDynamicPromises: js.Array[scala.Nothing]
-  ): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(newGlobalInitDone: Boolean): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(
-    newGlobalInitDone: Boolean,
-    newInitializationPromisesMap: js.UndefOr[scala.Nothing],
-    newDynamicPromises: js.Array[scala.Nothing]
-  ): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
-  def resetGlobalVars(newGlobalInitDone: Boolean, newInitializationPromisesMap: js.Object): Unit = js.native
-  @JSImport("@firebase/analytics", "resetGlobalVars")
-  @js.native
+  @scala.inline
+  def registerAnalytics(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAnalytics")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def resetGlobalVars(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")().asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(newGlobalInitDone: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(newGlobalInitDone: Boolean, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def resetGlobalVars(
     newGlobalInitDone: Boolean,
     newInitializationPromisesMap: js.Object,
     newDynamicPromises: js.Array[scala.Nothing]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(
+    newGlobalInitDone: Boolean,
+    newInitializationPromisesMap: Unit,
+    newDynamicPromises: js.Array[scala.Nothing]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(newGlobalInitDone: Unit, newInitializationPromisesMap: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(
+    newGlobalInitDone: Unit,
+    newInitializationPromisesMap: js.Object,
+    newDynamicPromises: js.Array[scala.Nothing]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def resetGlobalVars(
+    newGlobalInitDone: Unit,
+    newInitializationPromisesMap: Unit,
+    newDynamicPromises: js.Array[scala.Nothing]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetGlobalVars")(newGlobalInitDone.asInstanceOf[js.Any], newInitializationPromisesMap.asInstanceOf[js.Any], newDynamicPromises.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/analytics", "settings")
-  @js.native
-  def settings(options: SettingsOptions): Unit = js.native
+  @scala.inline
+  def settings(options: SettingsOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("settings")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Define extension behavior of `registerAnalytics`
     */
   object firebaseAppTypesAugmentingMod {
     
-    @js.native
     trait FirebaseApp extends StObject {
       
-      def analytics(): FirebaseAnalytics = js.native
+      def analytics(): FirebaseAnalytics
     }
     object FirebaseApp {
       

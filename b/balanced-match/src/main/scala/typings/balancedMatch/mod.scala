@@ -3,7 +3,6 @@ package typings.balancedMatch
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,63 +20,58 @@ object mod {
     * the first match that was closed will be used.
     * For example, `{{a}` will match `['{', 'a', '']` and `{a}}` will match `['', 'a', '}']`
     */
+  @scala.inline
+  def apply(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def apply(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def apply(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def apply(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].apply(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  
   @JSImport("balanced-match", JSImport.Namespace)
   @js.native
-  def apply(a: String, b: String, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", JSImport.Namespace)
-  @js.native
-  def apply(a: String, b: RegExp, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", JSImport.Namespace)
-  @js.native
-  def apply(a: RegExp, b: String, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", JSImport.Namespace)
-  @js.native
-  def apply(a: RegExp, b: RegExp, str: String): Output | Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * For the first non-nested matching pair of `a` and `b` in `str`,
     * return an array with indexes: `[ <a index>, <b index> ]`.
     */
-  @JSImport("balanced-match", "range")
-  @js.native
-  def range(a: String, b: String, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", "range")
-  @js.native
-  def range(a: String, b: RegExp, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", "range")
-  @js.native
-  def range(a: RegExp, b: String, str: String): Output | Unit = js.native
-  @JSImport("balanced-match", "range")
-  @js.native
-  def range(a: RegExp, b: RegExp, str: String): Output | Unit = js.native
+  @scala.inline
+  def range(a: String, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def range(a: String, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def range(a: RegExp, b: String, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
+  @scala.inline
+  def range(a: RegExp, b: RegExp, str: String): Output | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[Output | Unit]
   
-  @js.native
   trait Output extends StObject {
     
     /**
       * The match, a and b not included
       */
-    var body: String = js.native
+    var body: String
     
     /**
       * The index of the matching b
       */
-    var end: Double = js.native
+    var end: Double
     
     /**
       * The postscript, a and b not included
       */
-    var post: String = js.native
+    var post: String
     
     /**
       * The preamble, a and b not included
       */
-    var pre: String = js.native
+    var pre: String
     
     /**
       * The index of the first match of a
       */
-    var start: Double = js.native
+    var start: Double
   }
   object Output {
     

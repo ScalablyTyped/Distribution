@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The definition for an object within a data source.
   */
-@js.native
 trait SchemaObjectDefinition extends StObject {
   
   /**
@@ -20,18 +18,18 @@ trait SchemaObjectDefinition extends StObject {
     * only contain letters (A-Z, a-z) or numbers (0-9). The maximum length is
     * 256 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The optional object-specific options.
     */
-  var options: js.UndefOr[SchemaObjectOptions] = js.native
+  var options: js.UndefOr[SchemaObjectOptions] = js.undefined
   
   /**
     * The property definitions for the object. The maximum number of elements
     * is 1000.
     */
-  var propertyDefinitions: js.UndefOr[js.Array[SchemaPropertyDefinition]] = js.native
+  var propertyDefinitions: js.UndefOr[js.Array[SchemaPropertyDefinition]] = js.undefined
 }
 object SchemaObjectDefinition {
   

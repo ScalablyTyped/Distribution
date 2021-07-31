@@ -6,47 +6,47 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation extends StandardParameters {
+trait ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The binding id for which to return the last operation
     */
-  var bindingId: js.UndefOr[String] = js.native
+  var bindingId: js.UndefOr[String] = js.undefined
   
   /**
     * The instance id that the binding is bound to.
     */
-  var instanceId: js.UndefOr[String] = js.native
+  var instanceId: js.UndefOr[String] = js.undefined
   
   /**
     * If `operation` was returned during mutation operation, this field must be
     * populated with the provided value.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
   
   /**
     * Parent must match `projects/[PROJECT_ID]/brokers/[BROKER_ID]`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Plan id.
     */
-  var planId: js.UndefOr[String] = js.native
+  var planId: js.UndefOr[String] = js.undefined
   
   /**
     * Service id.
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsBrokersV2ServiceInstancesServiceBindingsGetlastOperation {
   

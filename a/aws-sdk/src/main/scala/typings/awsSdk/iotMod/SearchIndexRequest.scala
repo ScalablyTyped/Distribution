@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchIndexRequest extends StObject {
   
   /**
     * The search index name.
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The maximum number of results to return at one time.
     */
-  var maxResults: js.UndefOr[QueryMaxResults] = js.native
+  var maxResults: js.UndefOr[QueryMaxResults] = js.undefined
   
   /**
     * The token used to get the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The search query string.
     */
-  var queryString: QueryString = js.native
+  var queryString: QueryString
   
   /**
     * The query version.
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
 }
 object SearchIndexRequest {
   

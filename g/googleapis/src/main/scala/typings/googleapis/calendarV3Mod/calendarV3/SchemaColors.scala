@@ -3,10 +3,8 @@ package typings.googleapis.calendarV3Mod.calendarV3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaColors extends StObject {
   
   /**
@@ -14,25 +12,25 @@ trait SchemaColors extends StObject {
     * definition. A calendarListEntry resource refers to one of these color IDs
     * in its color field. Read-only.
     */
-  var calendar: js.UndefOr[StringDictionary[SchemaColorDefinition]] = js.native
+  var calendar: js.UndefOr[StringDictionary[SchemaColorDefinition]] = js.undefined
   
   /**
     * A global palette of event colors, mapping from the color ID to its
     * definition. An event resource may refer to one of these color IDs in its
     * color field. Read-only.
     */
-  var event: js.UndefOr[StringDictionary[SchemaColorDefinition]] = js.native
+  var event: js.UndefOr[StringDictionary[SchemaColorDefinition]] = js.undefined
   
   /**
     * Type of the resource (&quot;calendar#colors&quot;).
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Last modification time of the color palette (as a RFC3339 timestamp).
     * Read-only.
     */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object SchemaColors {
   

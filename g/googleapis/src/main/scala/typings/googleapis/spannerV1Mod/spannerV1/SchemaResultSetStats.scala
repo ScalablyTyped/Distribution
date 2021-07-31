@@ -3,19 +3,17 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional statistics about a ResultSet or PartialResultSet.
   */
-@js.native
 trait SchemaResultSetStats extends StObject {
   
   /**
     * QueryPlan for the query associated with this result.
     */
-  var queryPlan: js.UndefOr[SchemaQueryPlan] = js.native
+  var queryPlan: js.UndefOr[SchemaQueryPlan] = js.undefined
   
   /**
     * Aggregated statistics from the execution of the query. Only present when
@@ -24,18 +22,18 @@ trait SchemaResultSetStats extends StObject {
     * &quot;elapsed_time&quot;: &quot;1.22 secs&quot;, &quot;cpu_time&quot;:
     * &quot;1.19 secs&quot;     }
     */
-  var queryStats: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var queryStats: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Standard DML returns an exact count of rows that were modified.
     */
-  var rowCountExact: js.UndefOr[String] = js.native
+  var rowCountExact: js.UndefOr[String] = js.undefined
   
   /**
     * Partitioned DML does not offer exactly-once semantics, so it returns a
     * lower bound of the rows modified.
     */
-  var rowCountLowerBound: js.UndefOr[String] = js.native
+  var rowCountLowerBound: js.UndefOr[String] = js.undefined
 }
 object SchemaResultSetStats {
   

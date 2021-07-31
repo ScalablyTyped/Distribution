@@ -6,25 +6,23 @@ import typings.grommet.baseMod.ExtendValue
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Xsmall extends StObject {
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var large: js.UndefOr[MaxWidth] = js.native
+  var large: js.UndefOr[MaxWidth] = js.undefined
   
-  var medium: js.UndefOr[MaxWidth] = js.native
+  var medium: js.UndefOr[MaxWidth] = js.undefined
   
-  var small: js.UndefOr[MaxWidth] = js.native
+  var small: js.UndefOr[MaxWidth] = js.undefined
   
-  var xlarge: js.UndefOr[MaxWidth] = js.native
+  var xlarge: js.UndefOr[MaxWidth] = js.undefined
   
-  var xsmall: js.UndefOr[MaxWidth] = js.native
+  var xsmall: js.UndefOr[MaxWidth] = js.undefined
   
-  var xxlarge: js.UndefOr[MaxWidth] = js.native
+  var xxlarge: js.UndefOr[MaxWidth] = js.undefined
 }
 object Xsmall {
   
@@ -38,10 +36,10 @@ object Xsmall {
   implicit class XsmallMutableBuilder[Self <: Xsmall] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

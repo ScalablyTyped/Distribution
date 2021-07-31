@@ -28,10 +28,13 @@ import typings.vegaLite.vegaLiteStrings.ticks
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorbarMod {
+  
+  @JSImport("vega-lite/build/src/compositemark/errorbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compositemark/errorbar", "ERRORBAR")
   @js.native
@@ -45,17 +48,15 @@ object errorbarMod {
   @js.native
   val errorBarNormalizer: CompositeMarkNormalizer[errorbar] = js.native
   
-  @JSImport("vega-lite/build/src/compositemark/errorbar", "errorBarParams")
-  @js.native
-  def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: GenericCompositeMarkDef[M] with (ErrorBarDef | ErrorBandDef) */](
+  @scala.inline
+  def errorBarParams[M /* <: ErrorBar | ErrorBand */, MD /* <: GenericCompositeMarkDef[M] & (ErrorBarDef | ErrorBandDef) */](
     spec: GenericUnitSpec[ErrorEncoding[String], M | MD],
     compositeMark: M,
     config: Config[ExprRef | SignalRef]
-  ): ContinuousAxisChannelDef[MD, M] = js.native
+  ): ContinuousAxisChannelDef[MD, M] = (^.asInstanceOf[js.Dynamic].applyDynamic("errorBarParams")(spec.asInstanceOf[js.Any], compositeMark.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[ContinuousAxisChannelDef[MD, M]]
   
-  @JSImport("vega-lite/build/src/compositemark/errorbar", "normalizeErrorBar")
-  @js.native
-  def normalizeErrorBar(spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef], hasConfig: NormalizerParams): NormalizedLayerSpec | NormalizedUnitSpec = js.native
+  @scala.inline
+  def normalizeErrorBar(spec: GenericUnitSpec[ErrorEncoding[String], ErrorBar | ErrorBarDef], hasConfig: NormalizerParams): NormalizedLayerSpec | NormalizedUnitSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeErrorBar")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec | NormalizedUnitSpec]
   
   type ErrorBar = errorbar
   
@@ -74,8 +75,7 @@ object errorbarMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ @js.native
-  trait ErrorBarConfig extends StObject {
+  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorBarPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ trait ErrorBarConfig extends StObject {
     
     /**
       * The center of the errorbar. Available options include:
@@ -85,7 +85,7 @@ object errorbarMod {
       * __Default value:__ `"mean"`.
       * @hidden
       */
-    var center: js.UndefOr[ErrorBarCenter] = js.native
+    var center: js.UndefOr[ErrorBarCenter] = js.undefined
     
     /**
       * The extent of the rule. Available options include:
@@ -96,13 +96,13 @@ object errorbarMod {
       *
       * __Default value:__ `"stderr"`.
       */
-    var extent: js.UndefOr[ErrorBarExtent] = js.native
+    var extent: js.UndefOr[ErrorBarExtent] = js.undefined
     
     /** Size of the ticks of an error bar */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Thickness of the ticks and the bar of an error bar */
-    var thickness: js.UndefOr[Double] = js.native
+    var thickness: js.UndefOr[Double] = js.undefined
   }
   object ErrorBarConfig {
     
@@ -141,13 +141,12 @@ object errorbarMod {
     }
   }
   
-  @js.native
   trait ErrorBarConfigMixins extends StObject {
     
     /**
       * ErrorBar Config
       */
-    var errorbar: js.UndefOr[ErrorBarConfig] = js.native
+    var errorbar: js.UndefOr[ErrorBarConfig] = js.undefined
   }
   object ErrorBarConfigMixins {
     
@@ -168,7 +167,7 @@ object errorbarMod {
     }
   }
   
-  type ErrorBarDef = GenericCompositeMarkDef[ErrorBar] with ErrorBarConfig with `4`
+  type ErrorBarDef = GenericCompositeMarkDef[ErrorBar] & ErrorBarConfig & `4`
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.ci
@@ -201,44 +200,43 @@ object errorbarMod {
   type ErrorBarPartsMixins = PartsMixins[ErrorBarPart]
   
   /* Inlined std.Pick<vega-lite.vega-lite/build/src/encoding.Encoding<F>, vega-lite.vega-lite/build/src/channel.PositionChannel | 'color' | 'detail' | 'opacity'> & vega-lite.vega-lite/build/src/compositemark/errorbar.ErrorExtraEncoding<F> */
-  @js.native
   trait ErrorEncoding[F /* <: Field */] extends StObject {
     
-    var color: js.UndefOr[ColorDef[F]] = js.native
+    var color: js.UndefOr[ColorDef[F]] = js.undefined
     
     var detail: js.UndefOr[
         (FieldDefWithoutScale[F, StandardType]) | (js.Array[FieldDefWithoutScale[F, StandardType]])
-      ] = js.native
+      ] = js.undefined
     
-    var opacity: js.UndefOr[NumericMarkPropDef[F]] = js.native
+    var opacity: js.UndefOr[NumericMarkPropDef[F]] = js.undefined
     
-    var x: js.UndefOr[PositionDef[F]] = js.native
+    var x: js.UndefOr[PositionDef[F]] = js.undefined
     
-    var x2: js.UndefOr[Position2Def[F]] = js.native
+    var x2: js.UndefOr[Position2Def[F]] = js.undefined
     
     /**
       * Error value of x coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var xError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var xError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
     /**
       * Secondary error value of x coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var xError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var xError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
-    var y: js.UndefOr[PositionDef[F]] = js.native
+    var y: js.UndefOr[PositionDef[F]] = js.undefined
     
-    var y2: js.UndefOr[Position2Def[F]] = js.native
+    var y2: js.UndefOr[Position2Def[F]] = js.undefined
     
     /**
       * Error value of y coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var yError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var yError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
     /**
       * Secondary error value of y coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var yError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var yError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
   }
   object ErrorEncoding {
     
@@ -249,7 +247,7 @@ object errorbarMod {
     }
     
     @scala.inline
-    implicit class ErrorEncodingMutableBuilder[Self <: ErrorEncoding[_], F /* <: Field */] (val x: Self with ErrorEncoding[F]) extends AnyVal {
+    implicit class ErrorEncodingMutableBuilder[Self <: ErrorEncoding[?], F /* <: Field */] (val x: Self & ErrorEncoding[F]) extends AnyVal {
       
       @scala.inline
       def setColor(value: ColorDef[F]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -322,28 +320,27 @@ object errorbarMod {
     }
   }
   
-  @js.native
   trait ErrorExtraEncoding[F /* <: Field */] extends StObject {
     
     /**
       * Error value of x coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var xError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var xError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
     /**
       * Secondary error value of x coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var xError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var xError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
     /**
       * Error value of y coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var yError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var yError: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
     
     /**
       * Secondary error value of y coordinates for error specified `"errorbar"` and `"errorband"`.
       */
-    var yError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.native
+    var yError2: js.UndefOr[SecondaryFieldDef[F] | ValueDef[Double]] = js.undefined
   }
   object ErrorExtraEncoding {
     
@@ -354,7 +351,7 @@ object errorbarMod {
     }
     
     @scala.inline
-    implicit class ErrorExtraEncodingMutableBuilder[Self <: ErrorExtraEncoding[_], F /* <: Field */] (val x: Self with ErrorExtraEncoding[F]) extends AnyVal {
+    implicit class ErrorExtraEncodingMutableBuilder[Self <: ErrorExtraEncoding[?], F /* <: Field */] (val x: Self & ErrorExtraEncoding[F]) extends AnyVal {
       
       @scala.inline
       def setXError(value: SecondaryFieldDef[F] | ValueDef[Double]): Self = StObject.set(x, "xError", value.asInstanceOf[js.Any])

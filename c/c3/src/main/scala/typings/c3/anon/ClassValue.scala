@@ -2,17 +2,15 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassValue extends StObject {
   
   /** If provided, will remove all gridlines with this class. */
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
   /** If provided, will remove all gridlines at this value. */
-  var value: js.UndefOr[Double | String] = js.native
+  var value: js.UndefOr[Double | String] = js.undefined
 }
 object ClassValue {
   

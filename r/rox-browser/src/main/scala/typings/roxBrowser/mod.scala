@@ -5,10 +5,13 @@ import typings.roxBrowser.roxBrowserStrings.verbose
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rox-browser", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("rox-browser", "Configuration")
   @js.native
@@ -33,8 +36,8 @@ object mod {
   @js.native
   class Flag () extends StObject {
     def this(defaultValue: Boolean) = this()
-    def this(defaultValue: js.UndefOr[scala.Nothing], options: RoxFlagOptions) = this()
     def this(defaultValue: Boolean, options: RoxFlagOptions) = this()
+    def this(defaultValue: Unit, options: RoxFlagOptions) = this()
     
     // Default value of the Flag
     val defaultValue: Boolean = js.native
@@ -57,23 +60,31 @@ object mod {
   object RoxFetcherStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RoxFetcherStatus with String] = js.native
+    def apply(value: String): js.UndefOr[RoxFetcherStatus & String] = js.native
     
     @js.native
-    sealed trait AppliedFromCache extends RoxFetcherStatus
-    /* "APPLIED_FROM_CACHE" */ val AppliedFromCache: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromCache with String = js.native
+    sealed trait AppliedFromCache
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_CACHE" */ val AppliedFromCache: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromCache & String = js.native
     
     @js.native
-    sealed trait AppliedFromEmbedded extends RoxFetcherStatus
-    /* "APPLIED_FROM_EMBEDDED" */ val AppliedFromEmbedded: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromEmbedded with String = js.native
+    sealed trait AppliedFromEmbedded
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_EMBEDDED" */ val AppliedFromEmbedded: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromEmbedded & String = js.native
     
     @js.native
-    sealed trait AppliedFromNetwork extends RoxFetcherStatus
-    /* "APPLIED_FROM_NETWORK" */ val AppliedFromNetwork: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromNetwork with String = js.native
+    sealed trait AppliedFromNetwork
+      extends StObject
+         with RoxFetcherStatus
+    /* "APPLIED_FROM_NETWORK" */ val AppliedFromNetwork: typings.roxBrowser.mod.RoxFetcherStatus.AppliedFromNetwork & String = js.native
     
     @js.native
-    sealed trait ErrorFetchFailed extends RoxFetcherStatus
-    /* "ERROR_FETCH_FAILED" */ val ErrorFetchFailed: typings.roxBrowser.mod.RoxFetcherStatus.ErrorFetchFailed with String = js.native
+    sealed trait ErrorFetchFailed
+      extends StObject
+         with RoxFetcherStatus
+    /* "ERROR_FETCH_FAILED" */ val ErrorFetchFailed: typings.roxBrowser.mod.RoxFetcherStatus.ErrorFetchFailed & String = js.native
   }
   
   @js.native
@@ -83,19 +94,25 @@ object mod {
   object RoxFlagFreezeLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RoxFlagFreezeLevel with String] = js.native
+    def apply(value: String): js.UndefOr[RoxFlagFreezeLevel & String] = js.native
     
     @js.native
-    sealed trait None extends RoxFlagFreezeLevel
-    /* "none" */ val None: typings.roxBrowser.mod.RoxFlagFreezeLevel.None with String = js.native
+    sealed trait None
+      extends StObject
+         with RoxFlagFreezeLevel
+    /* "none" */ val None: typings.roxBrowser.mod.RoxFlagFreezeLevel.None & String = js.native
     
     @js.native
-    sealed trait UntilForeground extends RoxFlagFreezeLevel
-    /* "untilForeground" */ val UntilForeground: typings.roxBrowser.mod.RoxFlagFreezeLevel.UntilForeground with String = js.native
+    sealed trait UntilForeground
+      extends StObject
+         with RoxFlagFreezeLevel
+    /* "untilForeground" */ val UntilForeground: typings.roxBrowser.mod.RoxFlagFreezeLevel.UntilForeground & String = js.native
     
     @js.native
-    sealed trait UntilLaunch extends RoxFlagFreezeLevel
-    /* "untilLaunch" */ val UntilLaunch: typings.roxBrowser.mod.RoxFlagFreezeLevel.UntilLaunch with String = js.native
+    sealed trait UntilLaunch
+      extends StObject
+         with RoxFlagFreezeLevel
+    /* "untilLaunch" */ val UntilLaunch: typings.roxBrowser.mod.RoxFlagFreezeLevel.UntilLaunch & String = js.native
   }
   
   @js.native
@@ -105,23 +122,31 @@ object mod {
   object RoxOverridesPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[RoxOverridesPosition with String] = js.native
+    def apply(value: String): js.UndefOr[RoxOverridesPosition & String] = js.native
     
     @js.native
-    sealed trait BottomLeft extends RoxOverridesPosition
-    /* "bottom left" */ val BottomLeft: typings.roxBrowser.mod.RoxOverridesPosition.BottomLeft with String = js.native
+    sealed trait BottomLeft
+      extends StObject
+         with RoxOverridesPosition
+    /* "bottom left" */ val BottomLeft: typings.roxBrowser.mod.RoxOverridesPosition.BottomLeft & String = js.native
     
     @js.native
-    sealed trait BottomRight extends RoxOverridesPosition
-    /* "bottom right" */ val BottomRight: typings.roxBrowser.mod.RoxOverridesPosition.BottomRight with String = js.native
+    sealed trait BottomRight
+      extends StObject
+         with RoxOverridesPosition
+    /* "bottom right" */ val BottomRight: typings.roxBrowser.mod.RoxOverridesPosition.BottomRight & String = js.native
     
     @js.native
-    sealed trait TopLeft extends RoxOverridesPosition
-    /* "top left" */ val TopLeft: typings.roxBrowser.mod.RoxOverridesPosition.TopLeft with String = js.native
+    sealed trait TopLeft
+      extends StObject
+         with RoxOverridesPosition
+    /* "top left" */ val TopLeft: typings.roxBrowser.mod.RoxOverridesPosition.TopLeft & String = js.native
     
     @js.native
-    sealed trait TopRight extends RoxOverridesPosition
-    /* "top right" */ val TopRight: typings.roxBrowser.mod.RoxOverridesPosition.TopRight with String = js.native
+    sealed trait TopRight
+      extends StObject
+         with RoxOverridesPosition
+    /* "top right" */ val TopRight: typings.roxBrowser.mod.RoxOverridesPosition.TopRight & String = js.native
   }
   
   @JSImport("rox-browser", "Variant")
@@ -146,30 +171,29 @@ object mod {
   
   object dynamicApi {
     
+    @JSImport("rox-browser", "dynamicApi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Getting boolean value of a flag
       */
-    @JSImport("rox-browser", "dynamicApi.isEnabled")
-    @js.native
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = js.native
-    @JSImport("rox-browser", "dynamicApi.isEnabled")
-    @js.native
-    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = js.native
+    @scala.inline
+    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isEnabled(nameSpacedFlagName: String, defaultValue: Boolean, context: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Getting string value of a Variant flag
       */
-    @JSImport("rox-browser", "dynamicApi.value")
-    @js.native
-    def value(nameSpacedFlagName: String, defaultValue: String): String = js.native
-    @JSImport("rox-browser", "dynamicApi.value")
-    @js.native
-    def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = js.native
+    @scala.inline
+    def value(nameSpacedFlagName: String, defaultValue: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def value(nameSpacedFlagName: String, defaultValue: String, context: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("value")(nameSpacedFlagName.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @JSImport("rox-browser", "fetch")
-  @js.native
-  def fetch(): Unit = js.native
+  @scala.inline
+  def fetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fetch")().asInstanceOf[Unit]
   
   @JSImport("rox-browser", "flags")
   @js.native
@@ -177,34 +201,34 @@ object mod {
   
   object overrides {
     
+    @JSImport("rox-browser", "overrides")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Clears all override values
       */
-    @JSImport("rox-browser", "overrides.clearAllOverrides")
-    @js.native
-    def clearAllOverrides(): Unit = js.native
+    @scala.inline
+    def clearAllOverrides(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAllOverrides")().asInstanceOf[Unit]
     
     /**
       * Clears the override value from the flag (and the disk).
       *
       * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-clearoverride-
       */
-    @JSImport("rox-browser", "overrides.clearOverride")
-    @js.native
-    def clearOverride(nameSpacedFlagName: String): Unit = js.native
+    @scala.inline
+    def clearOverride(nameSpacedFlagName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rox-browser", "overrides.getOriginalValue")
-    @js.native
-    def getOriginalValue(nameSpacedFlagName: String): String = js.native
+    @scala.inline
+    def getOriginalValue(nameSpacedFlagName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getOriginalValue")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * full flag name including namespace
       *
       * https://support.rollout.io/docs/javascript-browser-api#section--rox-overrides-hasoverride-
       */
-    @JSImport("rox-browser", "overrides.hasOverride")
-    @js.native
-    def hasOverride(nameSpacedFlagName: String): Boolean = js.native
+    @scala.inline
+    def hasOverride(nameSpacedFlagName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasOverride")(nameSpacedFlagName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Sets an override value on a specific flag, this function accepts two parameters flag name (
@@ -216,80 +240,63 @@ object mod {
       *
       * Note that for boolean flag we still give the value as a string.
       */
-    @JSImport("rox-browser", "overrides.setOverride")
-    @js.native
-    def setOverride(nameSpacedFlagName: String, value: String): Unit = js.native
+    @scala.inline
+    def setOverride(nameSpacedFlagName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setOverride")(nameSpacedFlagName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("rox-browser", "register")
-  @js.native
-  def register(namespace: String, roxContainer: RoxContainer): Unit = js.native
+  @scala.inline
+  def register(namespace: String, roxContainer: RoxContainer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(namespace.asInstanceOf[js.Any], roxContainer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setContext")
-  @js.native
-  def setContext(globalContext: js.Any): Unit = js.native
+  @scala.inline
+  def setContext(globalContext: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(globalContext.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setCustomBooleanProperty")
-  @js.native
-  def setCustomBooleanProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Boolean]): Unit = js.native
-  @JSImport("rox-browser", "setCustomBooleanProperty")
-  @js.native
-  def setCustomBooleanProperty(name: String, value: Boolean): Unit = js.native
+  @scala.inline
+  def setCustomBooleanProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomBooleanProperty(name: String, value: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomBooleanProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setCustomNumberProperty")
-  @js.native
-  def setCustomNumberProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Double]): Unit = js.native
-  @JSImport("rox-browser", "setCustomNumberProperty")
-  @js.native
-  def setCustomNumberProperty(name: String, value: Double): Unit = js.native
+  @scala.inline
+  def setCustomNumberProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], Double]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomNumberProperty(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomNumberProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setCustomStringProperty")
-  @js.native
-  def setCustomStringProperty(name: String, value: String): Unit = js.native
-  @JSImport("rox-browser", "setCustomStringProperty")
-  @js.native
-  def setCustomStringProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], String]): Unit = js.native
+  @scala.inline
+  def setCustomStringProperty(name: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setCustomStringProperty(name: String, value: js.Function1[/* context */ js.UndefOr[js.Any], String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCustomStringProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setDynamicCustomPropertyRule")
-  @js.native
-  def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = js.native
+  @scala.inline
+  def setDynamicCustomPropertyRule(handler: js.Function2[/* propName */ String, /* context */ js.Any, Double | String | Boolean]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDynamicCustomPropertyRule")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "setup")
-  @js.native
-  def setup(apiKey: String): js.Promise[_] = js.native
-  @JSImport("rox-browser", "setup")
-  @js.native
-  def setup(apiKey: String, options: RoxSetupOptions): js.Promise[_] = js.native
+  @scala.inline
+  def setup(apiKey: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def setup(apiKey: String, options: RoxSetupOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("setup")(apiKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("rox-browser", "showOverrides")
-  @js.native
-  def showOverrides(): Unit = js.native
-  @JSImport("rox-browser", "showOverrides")
-  @js.native
-  def showOverrides(position: RoxOverridesPosition): Unit = js.native
+  @scala.inline
+  def showOverrides(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showOverrides")().asInstanceOf[Unit]
+  @scala.inline
+  def showOverrides(position: RoxOverridesPosition): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showOverrides")(position.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rox-browser", "unfreeze")
-  @js.native
-  def unfreeze(): Unit = js.native
-  @JSImport("rox-browser", "unfreeze")
-  @js.native
-  def unfreeze(namespace: String): Unit = js.native
+  @scala.inline
+  def unfreeze(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")().asInstanceOf[Unit]
+  @scala.inline
+  def unfreeze(namespace: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unfreeze")(namespace.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type BasicType[T] = String | Double | Boolean
   
   type RoxContainer = StringDictionary[Flag | Configuration[js.Any] | Variant[String]]
   
-  @js.native
   trait RoxExperiment extends StObject {
     
-    var identifier: String = js.native
+    var identifier: String
     
-    var isArchived: Boolean = js.native
+    var isArchived: Boolean
     
-    var labels: js.Array[String] = js.native
+    var labels: js.Array[String]
     
     //  experiment id
-    var name: String = js.native
+    var name: String
   }
   object RoxExperiment {
     
@@ -319,16 +326,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxFetcherResult extends StObject {
     
-    var creationDate: Date = js.native
+    var creationDate: Date
     
-    var errorDetails: js.UndefOr[String] = js.native
+    var errorDetails: js.UndefOr[String] = js.undefined
     
-    var fetcherStatus: RoxFetcherStatus = js.native
+    var fetcherStatus: RoxFetcherStatus
     
-    var hasChanges: Boolean = js.native
+    var hasChanges: Boolean
   }
   object RoxFetcherResult {
     
@@ -358,10 +364,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxFlagOptions extends StObject {
     
-    var freeze: js.UndefOr[RoxFlagFreezeLevel] = js.native
+    var freeze: js.UndefOr[RoxFlagFreezeLevel] = js.undefined
   }
   object RoxFlagOptions {
     
@@ -382,12 +387,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxReporting extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object RoxReporting {
     
@@ -408,19 +412,18 @@ object mod {
     }
   }
   
-  @js.native
   trait RoxSetupOptions extends StObject {
     
     // https://support.rollout.io/docs/javascript-browser-api#section-configurationfetchedhandler
-    var configurationFetchedHandler: js.UndefOr[js.Function1[/* fetcherResult */ RoxFetcherResult, Unit]] = js.native
+    var configurationFetchedHandler: js.UndefOr[js.Function1[/* fetcherResult */ RoxFetcherResult, Unit]] = js.undefined
     
-    var debugLevel: js.UndefOr[verbose] = js.native
+    var debugLevel: js.UndefOr[verbose] = js.undefined
     
-    var devModeSecret: js.UndefOr[String] = js.native
+    var devModeSecret: js.UndefOr[String] = js.undefined
     
-    var disableNetworkFetch: js.UndefOr[Boolean] = js.native
+    var disableNetworkFetch: js.UndefOr[Boolean] = js.undefined
     
-    var freeze: js.UndefOr[RoxFlagFreezeLevel] = js.native
+    var freeze: js.UndefOr[RoxFlagFreezeLevel] = js.undefined
     
     // https://support.rollout.io/docs/javascript-browser-api#section-using-the-impressionhandler-option
     var impressionHandler: js.UndefOr[
@@ -430,18 +433,18 @@ object mod {
           /* context */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
     /**
       * Set Roxy's URL for automated tests or local development.
       *
       * https://support.rollout.io/docs/microservices-automated-testing-and-local-development
       */
-    var roxy: js.UndefOr[String] = js.native
+    var roxy: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object RoxSetupOptions {
     

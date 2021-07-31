@@ -2,34 +2,32 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelp extends StObject {
   
   /**
     * The active parameter of the active signature. Set to `null`
     * if the active signature has no parameters.
     */
-  var activeParameter: Double | Null = js.native
+  var activeParameter: Double | Null
   
   /**
     * The active signature. Set to `null` if no
     * signatures exist.
     */
-  var activeSignature: Double | Null = js.native
+  var activeSignature: Double | Null
   
   /**
     * One or more signatures.
     */
-  var signatures: js.Array[SignatureInformation] = js.native
+  var signatures: js.Array[SignatureInformation]
 }
 object SignatureHelp {
   
   @scala.inline
   def apply(signatures: js.Array[SignatureInformation]): SignatureHelp = {
-    val __obj = js.Dynamic.literal(signatures = signatures.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(signatures = signatures.asInstanceOf[js.Any], activeParameter = null, activeSignature = null)
     __obj.asInstanceOf[SignatureHelp]
   }
   

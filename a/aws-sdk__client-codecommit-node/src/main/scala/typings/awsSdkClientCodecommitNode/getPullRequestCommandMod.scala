@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesGetPullRequestInputMod.GetPullReq
 import typings.awsSdkClientCodecommitNode.typesGetPullRequestOutputMod.GetPullRequestOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPullRequestCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/GetPullRequestCommand", "GetPullRequestCommand")
   @js.native
-  class GetPullRequestCommand protected () extends Command[
+  class GetPullRequestCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetPullRequestInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object getPullRequestCommandMod {
         ] {
     def this(input: GetPullRequestInput) = this()
     
+    /* CompleteClass */
+    override val input: GetPullRequestInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetPullRequestInput, GetPullRequestOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[GetPullRequestInput, GetPullRequestOutput] = js.native
   }
 }

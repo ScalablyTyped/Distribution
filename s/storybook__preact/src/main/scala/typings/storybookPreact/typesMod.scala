@@ -11,27 +11,27 @@ import typings.storybookAddons.typesMod.StoryApi
 import typings.storybookAddons.typesMod.StoryKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait ClientApi extends ClientStoryApi[StoryFnPreactReturnType] {
+  trait ClientApi
+    extends StObject
+       with ClientStoryApi[StoryFnPreactReturnType] {
     
-    def clearDecorators(): Unit = js.native
+    def clearDecorators(): Unit
     
-    def configure(loader: Loadable, module: NodeModule): Unit = js.native
+    def configure(loader: Loadable, module: NodeModule): Unit
     
-    def forceReRender(): Unit = js.native
+    def forceReRender(): Unit
     
-    def getStorybook(): js.Array[IStorybookSection] = js.native
+    def getStorybook(): js.Array[IStorybookSection]
     
-    def load(args: js.Any*): Unit = js.native
+    def load(args: js.Any*): Unit
     
-    def raw(): js.Any = js.native
+    def raw(): js.Any
     
-    def setAddon(addon: js.Any): Unit = js.native
+    def setAddon(addon: js.Any): Unit
   }
   object ClientApi {
     
@@ -78,12 +78,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IStorybookSection extends StObject {
     
-    var kind: String = js.native
+    var kind: String
     
-    var stories: js.Array[IStorybookStory] = js.native
+    var stories: js.Array[IStorybookStory]
   }
   object IStorybookSection {
     
@@ -107,12 +106,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IStorybookStory extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    def render(): js.Any = js.native
+    def render(): js.Any
   }
   object IStorybookStory {
     
@@ -133,12 +131,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ShowErrorArgs extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var title: String = js.native
+    var title: String
   }
   object ShowErrorArgs {
     

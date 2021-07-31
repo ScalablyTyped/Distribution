@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultNetworkAclMod {
@@ -73,6 +72,10 @@ object defaultNetworkAclMod {
   /* static members */
   object DefaultNetworkAcl {
     
+    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DefaultNetworkAcl resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -82,57 +85,51 @@ object defaultNetworkAclMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DefaultNetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultNetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultNetworkAclState): DefaultNetworkAcl = js.native
-    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultNetworkAclState, opts: CustomResourceOptions): DefaultNetworkAcl = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DefaultNetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultNetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultNetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultNetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultNetworkAclState): DefaultNetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultNetworkAcl]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultNetworkAclState, opts: CustomResourceOptions): DefaultNetworkAcl = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultNetworkAcl]
     
     /**
       * Returns true if the given object is an instance of DefaultNetworkAcl.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/defaultNetworkAcl", "DefaultNetworkAcl.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultNetworkAcl.DefaultNetworkAcl */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/defaultNetworkAcl.DefaultNetworkAcl */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/defaultNetworkAcl.DefaultNetworkAcl */ Boolean]
   }
   
-  @js.native
   trait DefaultNetworkAclArgs extends StObject {
     
     /**
       * The Network ACL ID to manage. This
       * attribute is exported from `aws.ec2.Vpc`, or manually found via the AWS Console.
       */
-    val defaultNetworkAclId: Input[String] = js.native
+    val defaultNetworkAclId: Input[String]
     
     /**
       * Specifies an egress rule. Parameters defined below.
       */
-    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclEgress]]]] = js.native
+    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclEgress]]]] = js.undefined
     
     /**
       * Specifies an ingress rule. Parameters defined below.
       */
-    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclIngress]]]] = js.native
+    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclIngress]]]] = js.undefined
     
     /**
       * A list of Subnet IDs to apply the ACL to. See the
       * notes below on managing Subnets in the Default Network ACL
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DefaultNetworkAclArgs {
     
@@ -183,50 +180,49 @@ object defaultNetworkAclMod {
     }
   }
   
-  @js.native
   trait DefaultNetworkAclState extends StObject {
     
     /**
       * The ARN of the Default Network ACL
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Network ACL ID to manage. This
       * attribute is exported from `aws.ec2.Vpc`, or manually found via the AWS Console.
       */
-    val defaultNetworkAclId: js.UndefOr[Input[String]] = js.native
+    val defaultNetworkAclId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies an egress rule. Parameters defined below.
       */
-    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclEgress]]]] = js.native
+    val egress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclEgress]]]] = js.undefined
     
     /**
       * Specifies an ingress rule. Parameters defined below.
       */
-    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclIngress]]]] = js.native
+    val ingress: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.DefaultNetworkAclIngress]]]] = js.undefined
     
     /**
       * The ID of the AWS account that owns the Default Network ACL
       */
-    val ownerId: js.UndefOr[Input[String]] = js.native
+    val ownerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of Subnet IDs to apply the ACL to. See the
       * notes below on managing Subnets in the Default Network ACL
       */
-    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The ID of the associated VPC
       */
-    val vpcId: js.UndefOr[Input[String]] = js.native
+    val vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object DefaultNetworkAclState {
     

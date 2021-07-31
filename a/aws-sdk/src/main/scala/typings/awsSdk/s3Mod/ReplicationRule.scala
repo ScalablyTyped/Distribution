@@ -2,50 +2,48 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationRule extends StObject {
   
-  var DeleteMarkerReplication: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarkerReplication] = js.native
+  var DeleteMarkerReplication: js.UndefOr[typings.awsSdk.s3Mod.DeleteMarkerReplication] = js.undefined
   
   /**
     * A container for information about the replication destination and its configurations including enabling the S3 Replication Time Control (S3 RTC).
     */
-  var Destination: typings.awsSdk.s3Mod.Destination = js.native
+  var Destination: typings.awsSdk.s3Mod.Destination
   
   /**
     * 
     */
-  var ExistingObjectReplication: js.UndefOr[typings.awsSdk.s3Mod.ExistingObjectReplication] = js.native
+  var ExistingObjectReplication: js.UndefOr[typings.awsSdk.s3Mod.ExistingObjectReplication] = js.undefined
   
-  var Filter: js.UndefOr[ReplicationRuleFilter] = js.native
+  var Filter: js.UndefOr[ReplicationRuleFilter] = js.undefined
   
   /**
     * A unique identifier for the rule. The maximum value is 255 characters.
     */
-  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.native
+  var ID: js.UndefOr[typings.awsSdk.s3Mod.ID] = js.undefined
   
   /**
     * An object key name prefix that identifies the object or objects to which the rule applies. The maximum prefix length is 1,024 characters. To include all objects in a bucket, specify an empty string. 
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * The priority associated with the rule. If you specify multiple rules in a replication configuration, Amazon S3 prioritizes the rules to prevent conflicts when filtering. If two or more rules identify the same object based on a specified filter, the rule with higher priority takes precedence. For example:   Same object quality prefix-based filter criteria if prefixes you specified in multiple rules overlap    Same object qualify tag-based filter criteria specified in multiple rules   For more information, see Replication in the Amazon Simple Storage Service Developer Guide.
     */
-  var Priority: js.UndefOr[typings.awsSdk.s3Mod.Priority] = js.native
+  var Priority: js.UndefOr[typings.awsSdk.s3Mod.Priority] = js.undefined
   
   /**
     * A container that describes additional filters for identifying the source objects that you want to replicate. You can choose to enable or disable the replication of these objects. Currently, Amazon S3 supports only the filter that you can specify for objects created with server-side encryption using a customer master key (CMK) stored in AWS Key Management Service (SSE-KMS).
     */
-  var SourceSelectionCriteria: js.UndefOr[typings.awsSdk.s3Mod.SourceSelectionCriteria] = js.native
+  var SourceSelectionCriteria: js.UndefOr[typings.awsSdk.s3Mod.SourceSelectionCriteria] = js.undefined
   
   /**
     * Specifies whether the rule is enabled.
     */
-  var Status: ReplicationRuleStatus = js.native
+  var Status: ReplicationRuleStatus
 }
 object ReplicationRule {
   

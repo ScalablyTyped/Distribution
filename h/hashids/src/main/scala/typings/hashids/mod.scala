@@ -2,18 +2,19 @@ package typings.hashids
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("hashids", JSImport.Default)
   @js.native
-  class default protected () extends Hashids {
+  class default protected ()
+    extends StObject
+       with Hashids {
     def this(salt: String) = this()
     def this(salt: String, minHashLength: Double) = this()
-    def this(salt: String, minHashLength: js.UndefOr[scala.Nothing], alphabet: String) = this()
     def this(salt: String, minHashLength: Double, alphabet: String) = this()
+    def this(salt: String, minHashLength: Unit, alphabet: String) = this()
   }
   
   @js.native

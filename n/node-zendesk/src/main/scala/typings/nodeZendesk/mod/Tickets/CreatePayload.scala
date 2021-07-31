@@ -2,13 +2,11 @@ package typings.nodeZendesk.mod.Tickets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePayload extends StObject {
   
-  val ticket: CreateModel = js.native
+  val ticket: CreateModel
 }
 object CreatePayload {
   

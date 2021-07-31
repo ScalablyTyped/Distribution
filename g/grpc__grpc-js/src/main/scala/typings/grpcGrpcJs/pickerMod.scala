@@ -12,7 +12,6 @@ import typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE
 import typings.grpcGrpcJs.subchannelMod.Subchannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerMod {
@@ -24,23 +23,31 @@ object pickerMod {
   object PickResultType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PickResultType with Double] = js.native
+    def apply(value: Double): js.UndefOr[PickResultType & Double] = js.native
     
     @js.native
-    sealed trait COMPLETE extends PickResultType
-    /* 0 */ val COMPLETE: typings.grpcGrpcJs.pickerMod.PickResultType.COMPLETE with Double = js.native
+    sealed trait COMPLETE
+      extends StObject
+         with PickResultType
+    /* 0 */ val COMPLETE: typings.grpcGrpcJs.pickerMod.PickResultType.COMPLETE & Double = js.native
     
     @js.native
-    sealed trait DROP extends PickResultType
-    /* 3 */ val DROP: typings.grpcGrpcJs.pickerMod.PickResultType.DROP with Double = js.native
+    sealed trait DROP
+      extends StObject
+         with PickResultType
+    /* 3 */ val DROP: typings.grpcGrpcJs.pickerMod.PickResultType.DROP & Double = js.native
     
     @js.native
-    sealed trait QUEUE extends PickResultType
-    /* 1 */ val QUEUE: typings.grpcGrpcJs.pickerMod.PickResultType.QUEUE with Double = js.native
+    sealed trait QUEUE
+      extends StObject
+         with PickResultType
+    /* 1 */ val QUEUE: typings.grpcGrpcJs.pickerMod.PickResultType.QUEUE & Double = js.native
     
     @js.native
-    sealed trait TRANSIENT_FAILURE extends PickResultType
-    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE with Double = js.native
+    sealed trait TRANSIENT_FAILURE
+      extends StObject
+         with PickResultType
+    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE & Double = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/picker", "QueuePicker")
@@ -57,26 +64,32 @@ object pickerMod {
   
   @JSImport("@grpc/grpc-js/build/src/picker", "UnavailablePicker")
   @js.native
-  class UnavailablePicker () extends Picker {
+  class UnavailablePicker ()
+    extends StObject
+       with Picker {
     def this(status: StatusObject) = this()
+    
+    /* CompleteClass */
+    override def pick(pickArgs: PickArgs): PickResult = js.native
     
     var status: js.Any = js.native
   }
   
-  @js.native
-  trait CompletePickResult extends PickResult {
+  trait CompletePickResult
+    extends StObject
+       with PickResult {
     
     @JSName("pickResultType")
-    var pickResultType_CompletePickResult: COMPLETE = js.native
+    var pickResultType_CompletePickResult: COMPLETE
     
     @JSName("status")
-    var status_CompletePickResult: Null = js.native
+    var status_CompletePickResult: Null
   }
   object CompletePickResult {
     
     @scala.inline
     def apply(pickResultType: COMPLETE, status: Null): CompletePickResult = {
-      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], extraFilterFactory = null, onCallStarted = null, subchannel = null)
       __obj.asInstanceOf[CompletePickResult]
     }
     
@@ -91,23 +104,24 @@ object pickerMod {
     }
   }
   
-  @js.native
-  trait DropCallPickResult extends PickResult {
+  trait DropCallPickResult
+    extends StObject
+       with PickResult {
     
     @JSName("extraFilterFactory")
-    var extraFilterFactory_DropCallPickResult: Null = js.native
+    var extraFilterFactory_DropCallPickResult: Null
     
     @JSName("onCallStarted")
-    var onCallStarted_DropCallPickResult: Null = js.native
+    var onCallStarted_DropCallPickResult: Null
     
     @JSName("pickResultType")
-    var pickResultType_DropCallPickResult: DROP = js.native
+    var pickResultType_DropCallPickResult: DROP
     
     @JSName("status")
-    var status_DropCallPickResult: StatusObject = js.native
+    var status_DropCallPickResult: StatusObject
     
     @JSName("subchannel")
-    var subchannel_DropCallPickResult: Null = js.native
+    var subchannel_DropCallPickResult: Null
   }
   object DropCallPickResult {
     
@@ -143,10 +157,9 @@ object pickerMod {
     }
   }
   
-  @js.native
   trait PickArgs extends StObject {
     
-    var metadata: Metadata = js.native
+    var metadata: Metadata
   }
   object PickArgs {
     
@@ -164,7 +177,6 @@ object pickerMod {
     }
   }
   
-  @js.native
   trait PickResult extends StObject {
     
     /**
@@ -172,30 +184,30 @@ object pickerMod {
       * provided by the load balancer to be used with the call. For technical
       * reasons filters from this factory will not see sendMetadata events.
       */
-    var extraFilterFactory: FilterFactory[Filter] | Null = js.native
+    var extraFilterFactory: FilterFactory[Filter] | Null
     
-    var onCallStarted: js.Function0[Unit] | Null = js.native
+    var onCallStarted: js.Function0[Unit] | Null
     
-    var pickResultType: PickResultType = js.native
+    var pickResultType: PickResultType
     
     /**
       * The status object to end the call with. Populated if and only if
       * `pickResultType` is TRANSIENT_FAILURE.
       */
-    var status: StatusObject | Null = js.native
+    var status: StatusObject | Null
     
     /**
       * The subchannel to use as the transport for the call. Only meaningful if
       * `pickResultType` is COMPLETE. If null, indicates that the call should be
       * dropped.
       */
-    var subchannel: Subchannel | Null = js.native
+    var subchannel: Subchannel | Null
   }
   object PickResult {
     
     @scala.inline
     def apply(pickResultType: PickResultType): PickResult = {
-      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(pickResultType = pickResultType.asInstanceOf[js.Any], extraFilterFactory = null, onCallStarted = null, status = null, subchannel = null)
       __obj.asInstanceOf[PickResult]
     }
     
@@ -231,10 +243,9 @@ object pickerMod {
     }
   }
   
-  @js.native
   trait Picker extends StObject {
     
-    def pick(pickArgs: PickArgs): PickResult = js.native
+    def pick(pickArgs: PickArgs): PickResult
   }
   object Picker {
     
@@ -252,23 +263,24 @@ object pickerMod {
     }
   }
   
-  @js.native
-  trait QueuePickResult extends PickResult {
+  trait QueuePickResult
+    extends StObject
+       with PickResult {
     
     @JSName("extraFilterFactory")
-    var extraFilterFactory_QueuePickResult: Null = js.native
+    var extraFilterFactory_QueuePickResult: Null
     
     @JSName("onCallStarted")
-    var onCallStarted_QueuePickResult: Null = js.native
+    var onCallStarted_QueuePickResult: Null
     
     @JSName("pickResultType")
-    var pickResultType_QueuePickResult: QUEUE = js.native
+    var pickResultType_QueuePickResult: QUEUE
     
     @JSName("status")
-    var status_QueuePickResult: Null = js.native
+    var status_QueuePickResult: Null
     
     @JSName("subchannel")
-    var subchannel_QueuePickResult: Null = js.native
+    var subchannel_QueuePickResult: Null
   }
   object QueuePickResult {
     
@@ -304,23 +316,24 @@ object pickerMod {
     }
   }
   
-  @js.native
-  trait TransientFailurePickResult extends PickResult {
+  trait TransientFailurePickResult
+    extends StObject
+       with PickResult {
     
     @JSName("extraFilterFactory")
-    var extraFilterFactory_TransientFailurePickResult: Null = js.native
+    var extraFilterFactory_TransientFailurePickResult: Null
     
     @JSName("onCallStarted")
-    var onCallStarted_TransientFailurePickResult: Null = js.native
+    var onCallStarted_TransientFailurePickResult: Null
     
     @JSName("pickResultType")
-    var pickResultType_TransientFailurePickResult: TRANSIENT_FAILURE = js.native
+    var pickResultType_TransientFailurePickResult: TRANSIENT_FAILURE
     
     @JSName("status")
-    var status_TransientFailurePickResult: StatusObject = js.native
+    var status_TransientFailurePickResult: StatusObject
     
     @JSName("subchannel")
-    var subchannel_TransientFailurePickResult: Null = js.native
+    var subchannel_TransientFailurePickResult: Null
   }
   object TransientFailurePickResult {
     

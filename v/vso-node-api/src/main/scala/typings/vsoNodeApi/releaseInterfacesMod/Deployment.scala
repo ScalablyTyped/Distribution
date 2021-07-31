@@ -4,116 +4,114 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deployment extends StObject {
   
   /**
     * Gets links to access the deployment.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Gets attempt number.
     */
-  var attempt: Double = js.native
+  var attempt: Double
   
   /**
     * Gets the date on which deployment is complete.
     */
-  var completedOn: Date = js.native
+  var completedOn: Date
   
   /**
     * Gets the list of condition associated with deployment.
     */
-  var conditions: js.Array[Condition] = js.native
+  var conditions: js.Array[Condition]
   
   /**
     * Gets release definition environment id.
     */
-  var definitionEnvironmentId: Double = js.native
+  var definitionEnvironmentId: Double
   
   /**
     * Gets status of the deployment.
     */
-  var deploymentStatus: DeploymentStatus = js.native
+  var deploymentStatus: DeploymentStatus
   
   /**
     * Gets the unique identifier for deployment.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Gets the identity who last modified the deployment.
     */
-  var lastModifiedBy: IdentityRef = js.native
+  var lastModifiedBy: IdentityRef
   
   /**
     * Gets the date on which deployment is last modified.
     */
-  var lastModifiedOn: Date = js.native
+  var lastModifiedOn: Date
   
   /**
     * Gets operation status of deployment.
     */
-  var operationStatus: DeploymentOperationStatus = js.native
+  var operationStatus: DeploymentOperationStatus
   
   /**
     * Gets list of PostDeployApprovals.
     */
-  var postDeployApprovals: js.Array[ReleaseApproval] = js.native
+  var postDeployApprovals: js.Array[ReleaseApproval]
   
   /**
     * Gets list of PreDeployApprovals.
     */
-  var preDeployApprovals: js.Array[ReleaseApproval] = js.native
+  var preDeployApprovals: js.Array[ReleaseApproval]
   
   /**
     * Gets the date on which deployment is queued.
     */
-  var queuedOn: Date = js.native
+  var queuedOn: Date
   
   /**
     * Gets reason of deployment.
     */
-  var reason: DeploymentReason = js.native
+  var reason: DeploymentReason
   
   /**
     * Gets the reference of release.
     */
-  var release: ReleaseReference = js.native
+  var release: ReleaseReference
   
   /**
     * Gets releaseDefinitionReference which specifies the reference of the release definition to which the deployment is associated.
     */
-  var releaseDefinition: ReleaseDefinitionShallowReference = js.native
+  var releaseDefinition: ReleaseDefinitionShallowReference
   
   /**
     * Gets releaseEnvironmentReference which specifies the reference of the release environment to which the deployment is associated.
     */
-  var releaseEnvironment: ReleaseEnvironmentShallowReference = js.native
+  var releaseEnvironment: ReleaseEnvironmentShallowReference
   
   /**
     * Gets the identity who requested.
     */
-  var requestedBy: IdentityRef = js.native
+  var requestedBy: IdentityRef
   
   /**
     * Gets the identity for whom deployment is requested.
     */
-  var requestedFor: IdentityRef = js.native
+  var requestedFor: IdentityRef
   
   /**
     * Gets the date on which deployment is scheduled.
     */
-  var scheduledDeploymentTime: Date = js.native
+  var scheduledDeploymentTime: Date
   
   /**
     * Gets the date on which deployment is started.
     */
-  var startedOn: Date = js.native
+  var startedOn: Date
 }
 object Deployment {
   

@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceusageMod {
+  
+  @JSImport("googleapis/build/src/apis/serviceusage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object serviceusageMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/serviceusage", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/serviceusage", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object serviceusageMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/serviceusage", "serviceusage")
-  @js.native
-  def serviceusage(options: Options): Serviceusage = js.native
-  @JSImport("googleapis/build/src/apis/serviceusage", "serviceusage")
-  @js.native
-  def serviceusage(options: typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Options): typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage = js.native
-  @JSImport("googleapis/build/src/apis/serviceusage", "serviceusage")
-  @js.native
-  def serviceusage_v1(version: v1): Serviceusage = js.native
-  @JSImport("googleapis/build/src/apis/serviceusage", "serviceusage")
-  @js.native
-  def serviceusage_v1beta1(version: v1beta1): typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage = js.native
+  @scala.inline
+  def serviceusage(options: Options): Serviceusage = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceusage")(options.asInstanceOf[js.Any]).asInstanceOf[Serviceusage]
+  @scala.inline
+  def serviceusage(options: typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Options): typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceusage")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage]
+  
+  @scala.inline
+  def serviceusage_v1(version: v1): Serviceusage = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceusage")(version.asInstanceOf[js.Any]).asInstanceOf[Serviceusage]
+  
+  @scala.inline
+  def serviceusage_v1beta1(version: v1beta1): typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage = ^.asInstanceOf[js.Dynamic].applyDynamic("serviceusage")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1.Serviceusage]
 }

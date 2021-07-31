@@ -2,17 +2,15 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationResult[T] extends StObject {
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var errors: js.UndefOr[js.Any] = js.native
+  var errors: js.UndefOr[js.Any] = js.undefined
   
-  var value: T = js.native
+  var value: T
 }
 object ValidationResult {
   
@@ -23,7 +21,7 @@ object ValidationResult {
   }
   
   @scala.inline
-  implicit class ValidationResultMutableBuilder[Self <: ValidationResult[_], T] (val x: Self with ValidationResult[T]) extends AnyVal {
+  implicit class ValidationResultMutableBuilder[Self <: ValidationResult[?], T] (val x: Self & ValidationResult[T]) extends AnyVal {
     
     @scala.inline
     def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

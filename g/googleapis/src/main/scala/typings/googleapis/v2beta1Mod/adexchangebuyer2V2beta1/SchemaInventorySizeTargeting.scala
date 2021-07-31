@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This targeting does not apply to Programmatic Guaranteed and Preferred
   * Deals in Ad Manager.
   */
-@js.native
 trait SchemaInventorySizeTargeting extends StObject {
   
   /**
     * A list of inventory sizes to be excluded.
     */
-  var excludedInventorySizes: js.UndefOr[js.Array[SchemaAdSize]] = js.native
+  var excludedInventorySizes: js.UndefOr[js.Array[SchemaAdSize]] = js.undefined
   
   /**
     * A list of inventory sizes to be included.
     */
-  var targetedInventorySizes: js.UndefOr[js.Array[SchemaAdSize]] = js.native
+  var targetedInventorySizes: js.UndefOr[js.Array[SchemaAdSize]] = js.undefined
 }
 object SchemaInventorySizeTargeting {
   

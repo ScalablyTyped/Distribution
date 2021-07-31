@@ -2,17 +2,15 @@ package typings.prismReactRenderer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrismLib extends StObject {
   
-  def highlight(code: String, grammar: PrismGrammar, language: Language): String = js.native
+  def highlight(code: String, grammar: PrismGrammar, language: Language): String
   
-  var languages: LanguageDict = js.native
+  var languages: LanguageDict
   
-  def tokenize(code: String, grammar: PrismGrammar, language: Language): js.Array[PrismToken | String] = js.native
+  def tokenize(code: String, grammar: PrismGrammar, language: Language): js.Array[PrismToken | String]
 }
 object PrismLib {
   

@@ -2,7 +2,6 @@ package typings.jqueryEasyLoading
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQueryEasyLoading {
@@ -29,7 +28,6 @@ object JQueryEasyLoading {
     def toggle: typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle = "toggle".asInstanceOf[typings.jqueryEasyLoading.jqueryEasyLoadingStrings.toggle]
   }
   
-  @js.native
   trait LoadingObject extends StObject {
     
     /**
@@ -37,59 +35,59 @@ object JQueryEasyLoading {
       *
       * @return {Boolean}
       */
-    def active(): Boolean = js.native
+    def active(): Boolean
     
     /**
       * Attach some internal methods to external events
       * e.g. overlay click, window resize etc
       */
-    def attachMethodsToExternalEvents(): Unit = js.native
+    def attachMethodsToExternalEvents(): Unit
     
     /**
       * Attach the handlers defined on `options` for the respective events
       */
-    def attachOptionsHandlers(): Unit = js.native
+    def attachOptionsHandlers(): Unit
     
     /**
       * Calculate the z-index for the default overlay element
       * Return the z-index passed as setting to the plugin or calculate it
       * based on the target's z-index
       */
-    def calcZIndex(): Double = js.native
+    def calcZIndex(): Double
     
     /**
       * Return a new default overlay
       *
       * @return {jQuery} A new overlay already appended to the page's body
       */
-    def createOerlay(): JQuery = js.native
+    def createOerlay(): JQuery
     
     /**
       * Initializes the overlay and attach handlers to the appropriate events
       */
-    def init(): Unit = js.native
+    def init(): Unit
     
     /**
       * Reposition the overlay on the top of the target element
       * This method needs to be called if the target element changes position
       *  or dimension
       */
-    def resize(): Unit = js.native
+    def resize(): Unit
     
     /**
       * Trigger the `loading.start` event and turn on the loading state
       */
-    def start(): Unit = js.native
+    def start(): Unit
     
     /**
       * Trigger the `loading.stop` event and turn off the loading state
       */
-    def stop(): Unit = js.native
+    def stop(): Unit
     
     /**
       * Toggle the state of the loading overlay
       */
-    def toggle(): Unit = js.native
+    def toggle(): Unit
   }
   object LoadingObject {
     
@@ -145,19 +143,18 @@ object JQueryEasyLoading {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Class(es) to be applied to the overlay element when the loading state is stopped
       */
-    var hiddenClass: js.UndefOr[String] = js.native
+    var hiddenClass: js.UndefOr[String] = js.undefined
     
     /**
       * Message to be rendered on the overlay content
       * Has no effect if a custom overlay is defined
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * Function to be executed when the overlay is clicked
@@ -165,7 +162,7 @@ object JQueryEasyLoading {
       *
       * The function is attached to the `loading.click` event
       */
-    var onClick: js.UndefOr[js.Function] = js.native
+    var onClick: js.UndefOr[js.Function] = js.undefined
     
     /**
       * Function to be executed when the loading state is started
@@ -173,7 +170,7 @@ object JQueryEasyLoading {
       *
       * The function is attached to the `loading.start` event
       */
-    var onStart: js.UndefOr[js.Function1[/* loading */ LoadingObject, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* loading */ LoadingObject, Unit]] = js.undefined
     
     /**
       * Function to be executed when the loading state is stopped
@@ -181,29 +178,29 @@ object JQueryEasyLoading {
       *
       * The function is attached to the `loading.stop` event
       */
-    var onStop: js.UndefOr[js.Function1[/* loading */ LoadingObject, Unit]] = js.native
+    var onStop: js.UndefOr[js.Function1[/* loading */ LoadingObject, Unit]] = js.undefined
     
     /**
       * jQuery element to be used as overlay
       * If not defined, a default overlay will be created
       */
-    var overlay: js.UndefOr[JQuery] = js.native
+    var overlay: js.UndefOr[JQuery] = js.undefined
     
     /**
       * Class(es) to be applied to the overlay element when the loading state is started
       */
-    var shownClass: js.UndefOr[String] = js.native
+    var shownClass: js.UndefOr[String] = js.undefined
     
     /**
       * Set to false to not start the loading state when initialized
       */
-    var start: js.UndefOr[Boolean] = js.native
+    var start: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to true to stop the loading state if the overlay is clicked
       * This options does NOT override the onClick event
       */
-    var stoppable: js.UndefOr[Boolean] = js.native
+    var stoppable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Theme to be applied on the loading element
@@ -215,7 +212,7 @@ object JQueryEasyLoading {
       *
       * Has no effect if a custom overlay is defined
       */
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
     /**
       * z-index to be used by the default overlay
@@ -223,7 +220,7 @@ object JQueryEasyLoading {
       * target's z-index
       * Has no effect if a custom overlay is defined
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -304,7 +301,6 @@ object JQueryEasyLoading {
     }
   }
   
-  @js.native
   trait Static extends StObject {
     
     /**
@@ -313,7 +309,7 @@ object JQueryEasyLoading {
       *
       * @param {Object} options Custom options to override the plugin defaults
       */
-    def setDefaults(options: Options): Unit = js.native
+    def setDefaults(options: Options): Unit
   }
   object Static {
     

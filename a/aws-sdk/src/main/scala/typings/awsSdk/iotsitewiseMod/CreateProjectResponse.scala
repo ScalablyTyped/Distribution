@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectResponse extends StObject {
   
   /**
     * The ARN of the project, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:project/${ProjectId} 
     */
-  var projectArn: ARN = js.native
+  var projectArn: ARN
   
   /**
     * The ID of the project.
     */
-  var projectId: ID = js.native
+  var projectId: ID
 }
 object CreateProjectResponse {
   

@@ -2,19 +2,17 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpVer extends StObject {
   
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
-  var ipVer: js.UndefOr[Double] = js.native
+  var ipVer: js.UndefOr[Double] = js.undefined
   
-  var netType: js.UndefOr[String] = js.native
+  var netType: js.UndefOr[String] = js.undefined
   
-  var port: Double = js.native
+  var port: Double
 }
 object IpVer {
   

@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.marko.attributeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
   
   @JSImport("marko/src/compiler/taglib-loader/Tag", JSImport.Namespace)
   @js.native
-  class ^ () extends Tag {
+  class ^ ()
+    extends StObject
+       with Tag {
     def this(filePath: String) = this()
   }
   

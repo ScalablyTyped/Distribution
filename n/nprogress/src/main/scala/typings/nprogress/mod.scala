@@ -8,7 +8,6 @@ import typings.nprogress.nprogressStrings.translate3d
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -53,30 +52,29 @@ object mod extends Shortcut {
     var version: String = js.native
   }
   
-  @js.native
   trait NProgressOptions extends StObject {
     
-    var barSelector: String = js.native
+    var barSelector: String
     
-    var easing: String = js.native
+    var easing: String
     
-    var minimum: Double = js.native
+    var minimum: Double
     
-    var parent: String = js.native
+    var parent: String
     
-    var positionUsing: String = js.native
+    var positionUsing: String
     
-    var showSpinner: Boolean = js.native
+    var showSpinner: Boolean
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var spinnerSelector: String = js.native
+    var spinnerSelector: String
     
-    var template: String = js.native
+    var template: String
     
-    var trickle: Boolean = js.native
+    var trickle: Boolean
     
-    var trickleSpeed: Double = js.native
+    var trickleSpeed: Double
   }
   object NProgressOptions {
     

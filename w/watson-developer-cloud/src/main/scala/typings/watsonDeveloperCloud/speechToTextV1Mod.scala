@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object speechToTextV1Mod {
@@ -34,7 +33,7 @@ object speechToTextV1Mod {
   trait SpeechToTextV1
     extends typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.^ {
     
-    def recognize(params: js.Any, callback: js.Any): Unit | js.Promise[_] = js.native
+    def recognize(params: js.Any, callback: js.Any): Unit | js.Promise[js.Any] = js.native
     
     /**
       * Use the recognize function with a single 2-way stream over websockets

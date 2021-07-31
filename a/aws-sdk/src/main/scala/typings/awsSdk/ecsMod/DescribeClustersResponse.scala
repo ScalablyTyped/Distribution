@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeClustersResponse extends StObject {
   
   /**
     * The list of clusters.
     */
-  var clusters: js.UndefOr[Clusters] = js.native
+  var clusters: js.UndefOr[Clusters] = js.undefined
   
   /**
     * Any failures associated with the call.
     */
-  var failures: js.UndefOr[Failures] = js.native
+  var failures: js.UndefOr[Failures] = js.undefined
 }
 object DescribeClustersResponse {
   

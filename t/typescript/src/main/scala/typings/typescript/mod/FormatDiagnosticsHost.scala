@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatDiagnosticsHost extends StObject {
   
-  def getCanonicalFileName(fileName: java.lang.String): java.lang.String = js.native
+  def getCanonicalFileName(fileName: java.lang.String): java.lang.String
   
-  def getCurrentDirectory(): java.lang.String = js.native
+  def getCurrentDirectory(): java.lang.String
   
-  def getNewLine(): java.lang.String = js.native
+  def getNewLine(): java.lang.String
 }
 object FormatDiagnosticsHost {
   

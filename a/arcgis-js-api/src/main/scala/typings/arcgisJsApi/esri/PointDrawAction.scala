@@ -5,11 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`cursor-update`
 import typings.arcgisJsApi.arcgisJsApiStrings.`draw-complete`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PointDrawAction extends DrawAction {
+trait PointDrawAction
+  extends StObject
+     with DrawAction {
   
   /**
     * Completes drawing the [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometry and fires the [draw-complete](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-draw-PointDrawAction.html#event-draw-complete) event.

@@ -2,21 +2,19 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Learnset extends StObject {
   
-  var egg_move: js.UndefOr[Boolean] = js.native
+  var egg_move: js.UndefOr[Boolean] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var move: String = js.native
+  var move: String
   
-  var tm: js.UndefOr[String] = js.native
+  var tm: js.UndefOr[String] = js.undefined
   
-  var variations: js.UndefOr[js.Array[String]] = js.native
+  var variations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Learnset {
   

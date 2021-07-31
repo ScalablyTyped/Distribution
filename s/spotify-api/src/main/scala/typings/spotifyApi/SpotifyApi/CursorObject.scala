@@ -2,19 +2,17 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cursor object
   * [cursor object](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait CursorObject extends StObject {
   
-  var after: String = js.native
+  var after: String
   
-  var before: js.UndefOr[String] = js.native
+  var before: js.UndefOr[String] = js.undefined
 }
 object CursorObject {
   

@@ -2,24 +2,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Source. */
-@js.native
 trait ISource extends StObject {
   
   /** Source data */
-  var data: js.UndefOr[String | Null] = js.native
+  var data: js.UndefOr[String | Null] = js.undefined
   
   /** Source media */
-  var media: js.UndefOr[IMedia | Null] = js.native
+  var media: js.UndefOr[IMedia | Null] = js.undefined
   
   /**
     * The [URI](https://en.wikipedia.org/wiki/Uniform_Resource_Identifier)
     * of the source, typically a file path relative to the root directory
     */
-  var uri: js.UndefOr[String | Null] = js.native
+  var uri: js.UndefOr[String | Null] = js.undefined
 }
 object ISource {
   

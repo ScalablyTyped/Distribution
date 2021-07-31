@@ -3,15 +3,13 @@ package typings.typeorm.anon
 import typings.typeorm.subjectMod.Subject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subjects extends StObject {
   
-  var subjects: js.Array[Subject] = js.native
+  var subjects: js.Array[Subject]
   
-  var target: js.Function | String = js.native
+  var target: js.Function | String
 }
 object Subjects {
   

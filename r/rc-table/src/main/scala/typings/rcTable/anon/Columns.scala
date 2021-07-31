@@ -17,35 +17,33 @@ import typings.std.HTMLElement
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns[RecordType] extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var columns: js.UndefOr[ColumnsType[RecordType]] = js.native
+  var columns: js.UndefOr[ColumnsType[RecordType]] = js.undefined
   
-  var direction: js.UndefOr[ltr | rtl] = js.native
+  var direction: js.UndefOr[ltr | rtl] = js.undefined
   
-  var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.native
+  var expandIcon: js.UndefOr[RenderExpandIcon[RecordType]] = js.undefined
   
-  var expandIconColumnIndex: js.UndefOr[Double] = js.native
+  var expandIconColumnIndex: js.UndefOr[Double] = js.undefined
   
-  var expandRowByClick: js.UndefOr[Boolean] = js.native
+  var expandRowByClick: js.UndefOr[Boolean] = js.undefined
   
-  var expandable: Boolean = js.native
+  var expandable: Boolean
   
-  var expandedKeys: Set[Key] = js.native
+  var expandedKeys: Set[Key]
   
-  var getRowKey: GetRowKey[RecordType] = js.native
+  var getRowKey: GetRowKey[RecordType]
   
-  var onTriggerExpand: TriggerEventHandler[RecordType] = js.native
+  var onTriggerExpand: TriggerEventHandler[RecordType]
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var rowExpandable: js.UndefOr[js.Function1[/* record */ RecordType, Boolean]] = js.native
+  var rowExpandable: js.UndefOr[js.Function1[/* record */ RecordType, Boolean]] = js.undefined
 }
 object Columns {
   
@@ -61,7 +59,7 @@ object Columns {
   }
   
   @scala.inline
-  implicit class ColumnsMutableBuilder[Self <: Columns[_], RecordType] (val x: Self with Columns[RecordType]) extends AnyVal {
+  implicit class ColumnsMutableBuilder[Self <: Columns[?], RecordType] (val x: Self & Columns[RecordType]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

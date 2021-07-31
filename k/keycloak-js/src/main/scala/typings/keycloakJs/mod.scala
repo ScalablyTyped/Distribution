@@ -13,7 +13,6 @@ import typings.keycloakJs.keycloakJsStrings.none
 import typings.keycloakJs.keycloakJsStrings.success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,15 +21,16 @@ object mod {
     * Creates a new Keycloak client instance.
     * @param config A configuration object or path to a JSON config file.
     */
+  @scala.inline
+  def apply(): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[KeycloakInstance]
+  @scala.inline
+  def apply(config: String): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
+  @scala.inline
+  def apply(config: KeycloakConfig): KeycloakInstance = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[KeycloakInstance]
+  
   @JSImport("keycloak-js", JSImport.Namespace)
   @js.native
-  def apply(): KeycloakInstance = js.native
-  @JSImport("keycloak-js", JSImport.Namespace)
-  @js.native
-  def apply(config: String): KeycloakInstance = js.native
-  @JSImport("keycloak-js", JSImport.Namespace)
-  @js.native
-  def apply(config: KeycloakConfig): KeycloakInstance = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait KeycloakAdapter extends StObject {
@@ -49,23 +49,22 @@ object mod {
     def register(options: KeycloakRegisterOptions): KeycloakPromise[Unit, Unit] = js.native
   }
   
-  @js.native
   trait KeycloakConfig extends StObject {
     
     /**
     		 * Client identifier, example: 'myapp'
     		 */
-    var clientId: String = js.native
+    var clientId: String
     
     /**
     		 * Name of the realm, for example: 'myrealm'
     		 */
-    var realm: String = js.native
+    var realm: String
     
     /**
     		 * URL to the Keycloak server, for example: http://keycloak-server/auth
     		 */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object KeycloakConfig {
     
@@ -92,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait KeycloakError extends StObject {
     
-    var error: String = js.native
+    var error: String
     
-    var error_description: String = js.native
+    var error_description: String
   }
   object KeycloakError {
     
@@ -136,7 +134,6 @@ object mod {
     def standard: typings.keycloakJs.keycloakJsStrings.standard = "standard".asInstanceOf[typings.keycloakJs.keycloakJsStrings.standard]
   }
   
-  @js.native
   trait KeycloakInitOptions extends StObject {
     
     /**
@@ -171,60 +168,60 @@ object mod {
     		 * });
     		 * ```
     		 */
-    var adapter: js.UndefOr[default | cordova | `cordova-native` | KeycloakAdapter] = js.native
+    var adapter: js.UndefOr[default | cordova | `cordova-native` | KeycloakAdapter] = js.undefined
     
     /**
     		 * Set to enable/disable monitoring login state.
     		 * @default true
     		 */
-    var checkLoginIframe: js.UndefOr[Boolean] = js.native
+    var checkLoginIframe: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * Set the interval to check login state (in seconds).
     		 * @default 5
     		 */
-    var checkLoginIframeInterval: js.UndefOr[Double] = js.native
+    var checkLoginIframeInterval: js.UndefOr[Double] = js.undefined
     
     /**
     		 * Enables logging messages from Keycloak to the console.
     		 * @default false
     		 */
-    var enableLogging: js.UndefOr[Boolean] = js.native
+    var enableLogging: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * Set the OpenID Connect flow.
     		 * @default standard
     		 */
-    var flow: js.UndefOr[KeycloakFlow] = js.native
+    var flow: js.UndefOr[KeycloakFlow] = js.undefined
     
     /**
     		 * Set an initial value for the id token (only together with `token` or
     		 * `refreshToken`).
     		 */
-    var idToken: js.UndefOr[String] = js.native
+    var idToken: js.UndefOr[String] = js.undefined
     
     /**
     		 * Specifies an action to do on load.
     		 */
-    var onLoad: js.UndefOr[KeycloakOnLoad] = js.native
+    var onLoad: js.UndefOr[KeycloakOnLoad] = js.undefined
     
     /**
     		 * Configures the Proof Key for Code Exchange (PKCE) method to use.
     		 * The currently allowed method is 'S256'.
     		 * If not configured, PKCE will not be used.
     		 */
-    var pkceMethod: js.UndefOr[KeycloakPkceMethod] = js.native
+    var pkceMethod: js.UndefOr[KeycloakPkceMethod] = js.undefined
     
     /**
     		 * Specifies a default uri to redirect to after login or logout.
     		 * This is currently supported for adapter 'cordova-native' and 'default'
     		 */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
     /**
     		 * Set an initial value for the refresh token.
     		 */
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
     /**
     		 * Set the OpenID Connect response mode to send to Keycloak upon login.
@@ -233,39 +230,39 @@ object mod {
     		 *                   added in URL fragment. This is generally safer and
     		 *                   recommended over query.
     		 */
-    var responseMode: js.UndefOr[KeycloakResponseMode] = js.native
+    var responseMode: js.UndefOr[KeycloakResponseMode] = js.undefined
     
     /**
     		 * Specifies whether the silent check-sso should fallback to "non-silent"
     		 * check-sso when 3rd party cookies are blocked by the browser. Defaults
     		 * to true.
     		 */
-    var silentCheckSsoFallback: js.UndefOr[Boolean] = js.native
+    var silentCheckSsoFallback: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * Specifies an uri to redirect to after silent check-sso.
     		 * Silent check-sso will only happen, when this redirect uri is given and
     		 * the specified uri is available whithin the application.
     		 */
-    var silentCheckSsoRedirectUri: js.UndefOr[String] = js.native
+    var silentCheckSsoRedirectUri: js.UndefOr[String] = js.undefined
     
     /**
     		 * Set an initial value for skew between local time and Keycloak server in
     		 * seconds (only together with `token` or `refreshToken`).
     		 */
-    var timeSkew: js.UndefOr[Double] = js.native
+    var timeSkew: js.UndefOr[Double] = js.undefined
     
     /**
     		 * Set an initial value for the token.
     		 */
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
     /**
     		 * Adds a [cryptographic nonce](https://en.wikipedia.org/wiki/Cryptographic_nonce)
     		 * to verify that the authentication response matches the request.
     		 * @default true
     		 */
-    var useNonce: js.UndefOr[Boolean] = js.native
+    var useNonce: js.UndefOr[Boolean] = js.undefined
   }
   object KeycloakInitOptions {
     
@@ -669,14 +666,13 @@ object mod {
     var userInfo: js.UndefOr[js.Object] = js.native
   }
   
-  @js.native
   trait KeycloakLoginOptions extends StObject {
     
     /**
     		 * If value is `'register'` then user is redirected to registration page,
     		 * otherwise to login page.
     		 */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /**
     		 * Specifies arguments that are passed to the Cordova in-app-browser (if applicable).
@@ -684,23 +680,23 @@ object mod {
     		 * All available options are defined at https://cordova.apache.org/docs/en/latest/reference/cordova-plugin-inappbrowser/.
     		 * Example of use: { zoom: "no", hardwareback: "yes" }
     		 */
-    var cordovaOptions: js.UndefOr[StringDictionary[String]] = js.native
+    var cordovaOptions: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
     		 * Used to tell Keycloak which IDP the user wants to authenticate with.
     		 */
-    var idpHint: js.UndefOr[String] = js.native
+    var idpHint: js.UndefOr[String] = js.undefined
     
     /**
     		 * Sets the 'ui_locales' query param in compliance with section 3.1.2.1
       * of the OIDC 1.0 specification.
     		 */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /**
     		 * Used to pre-fill the username/email field on the login form.
     		 */
-    var loginHint: js.UndefOr[String] = js.native
+    var loginHint: js.UndefOr[String] = js.undefined
     
     /**
     		 * Used just if user is already authenticated. Specifies maximum time since
@@ -708,7 +704,7 @@ object mod {
     		 * longer time than `'maxAge'`, the SSO is ignored and he will need to
     		 * authenticate again.
     		 */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
     /**
     		 * By default the login screen is displayed if the user is not logged into
@@ -717,17 +713,17 @@ object mod {
     		 * this option to `'none'`. To always require re-authentication and ignore
     		 * SSO, set this option to `'login'`.
     		 */
-    var prompt: js.UndefOr[none | login] = js.native
+    var prompt: js.UndefOr[none | login] = js.undefined
     
     /**
     		 * Specifies the uri to redirect to after login.
     		 */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
     /**
     		 * @private Undocumented.
     		 */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object KeycloakLoginOptions {
     
@@ -796,13 +792,12 @@ object mod {
     }
   }
   
-  @js.native
   trait KeycloakLogoutOptions extends StObject {
     
     /**
     		 * Specifies the uri to redirect to after logout.
     		 */
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
   }
   object KeycloakLogoutOptions {
     
@@ -839,26 +834,25 @@ object mod {
   
   type KeycloakPkceMethod = S256
   
-  @js.native
   trait KeycloakProfile extends StObject {
     
-    var createdTimestamp: js.UndefOr[Double] = js.native
+    var createdTimestamp: js.UndefOr[Double] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var emailVerified: js.UndefOr[Boolean] = js.native
+    var emailVerified: js.UndefOr[Boolean] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
-    var totp: js.UndefOr[Boolean] = js.native
+    var totp: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object KeycloakProfile {
     
@@ -949,24 +943,23 @@ object mod {
   type KeycloakPromiseCallback[T] = js.Function1[/* result */ T, Unit]
   
   /* Inlined parent std.Omit<keycloak-js.keycloak-js.KeycloakLoginOptions, 'action'> */
-  @js.native
   trait KeycloakRegisterOptions extends StObject {
     
-    var cordovaOptions: js.UndefOr[StringDictionary[String]] = js.native
+    var cordovaOptions: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var idpHint: js.UndefOr[String] = js.native
+    var idpHint: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var loginHint: js.UndefOr[String] = js.native
+    var loginHint: js.UndefOr[String] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var prompt: js.UndefOr[none | login] = js.native
+    var prompt: js.UndefOr[none | login] = js.undefined
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
   }
   object KeycloakRegisterOptions {
     
@@ -1063,10 +1056,9 @@ object mod {
     def `id_token token`: typings.keycloakJs.keycloakJsStrings.`id_token token` = ("id_token token").asInstanceOf[typings.keycloakJs.keycloakJsStrings.`id_token token`]
   }
   
-  @js.native
   trait KeycloakRoles extends StObject {
     
-    var roles: js.Array[String] = js.native
+    var roles: js.Array[String]
   }
   object KeycloakRoles {
     
@@ -1087,22 +1079,21 @@ object mod {
     }
   }
   
-  @js.native
   trait KeycloakTokenParsed extends StObject {
     
-    var exp: js.UndefOr[Double] = js.native
+    var exp: js.UndefOr[Double] = js.undefined
     
-    var iat: js.UndefOr[Double] = js.native
+    var iat: js.UndefOr[Double] = js.undefined
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
-    var realm_access: js.UndefOr[KeycloakRoles] = js.native
+    var realm_access: js.UndefOr[KeycloakRoles] = js.undefined
     
-    var resource_access: js.UndefOr[KeycloakResourceAccess] = js.native
+    var resource_access: js.UndefOr[KeycloakResourceAccess] = js.undefined
     
-    var session_state: js.UndefOr[String] = js.native
+    var session_state: js.UndefOr[String] = js.undefined
     
-    var sub: js.UndefOr[String] = js.native
+    var sub: js.UndefOr[String] = js.undefined
   }
   object KeycloakTokenParsed {
     

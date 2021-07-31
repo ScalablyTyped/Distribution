@@ -3,15 +3,13 @@ package typings.chrome.chrome.cast.media
 import typings.chrome.chrome.cast.Volume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeRequest extends StObject {
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var volume: Volume = js.native
+  var volume: Volume
 }
 object VolumeRequest {
   

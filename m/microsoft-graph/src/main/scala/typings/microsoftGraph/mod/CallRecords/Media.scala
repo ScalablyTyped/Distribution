@@ -3,29 +3,27 @@ package typings.microsoftGraph.mod.CallRecords
 import typings.microsoftGraph.mod.NullableOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Media extends StObject {
   
   // Device information associated with the callee endpoint of this media.
-  var calleeDevice: js.UndefOr[NullableOption[DeviceInfo]] = js.native
+  var calleeDevice: js.UndefOr[NullableOption[DeviceInfo]] = js.undefined
   
   // Network information associated with the callee endpoint of this media.
-  var calleeNetwork: js.UndefOr[NullableOption[NetworkInfo]] = js.native
+  var calleeNetwork: js.UndefOr[NullableOption[NetworkInfo]] = js.undefined
   
   // Device information associated with the caller endpoint of this media.
-  var callerDevice: js.UndefOr[NullableOption[DeviceInfo]] = js.native
+  var callerDevice: js.UndefOr[NullableOption[DeviceInfo]] = js.undefined
   
   // Network information associated with the caller endpoint of this media.
-  var callerNetwork: js.UndefOr[NullableOption[NetworkInfo]] = js.native
+  var callerNetwork: js.UndefOr[NullableOption[NetworkInfo]] = js.undefined
   
   // How the media was identified during media negotiation stage.
-  var label: js.UndefOr[NullableOption[String]] = js.native
+  var label: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Network streams associated with this media.
-  var streams: js.UndefOr[NullableOption[js.Array[MediaStream]]] = js.native
+  var streams: js.UndefOr[NullableOption[js.Array[MediaStream]]] = js.undefined
 }
 object Media {
   

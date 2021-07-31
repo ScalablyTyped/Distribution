@@ -2,32 +2,30 @@ package typings.jsonPatchGen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json-patch-gen", JSImport.Namespace)
-  @js.native
-  def apply(): js.Array[JsonPatch] = js.native
-  @JSImport("json-patch-gen", JSImport.Namespace)
-  @js.native
-  def apply(obj1: js.Object): js.Array[JsonPatch] = js.native
-  @JSImport("json-patch-gen", JSImport.Namespace)
-  @js.native
-  def apply(obj1: js.Object, obj2: js.Object): js.Array[JsonPatch] = js.native
-  @JSImport("json-patch-gen", JSImport.Namespace)
-  @js.native
-  def apply(obj1: Null, obj2: js.Object): js.Array[JsonPatch] = js.native
+  @scala.inline
+  def apply(): js.Array[JsonPatch] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Array[JsonPatch]]
+  @scala.inline
+  def apply(obj1: js.Object): js.Array[JsonPatch] = ^.asInstanceOf[js.Dynamic].apply(obj1.asInstanceOf[js.Any]).asInstanceOf[js.Array[JsonPatch]]
+  @scala.inline
+  def apply(obj1: js.Object, obj2: js.Object): js.Array[JsonPatch] = (^.asInstanceOf[js.Dynamic].apply(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Array[JsonPatch]]
+  @scala.inline
+  def apply(obj1: Null, obj2: js.Object): js.Array[JsonPatch] = (^.asInstanceOf[js.Dynamic].apply(obj1.asInstanceOf[js.Any], obj2.asInstanceOf[js.Any])).asInstanceOf[js.Array[JsonPatch]]
   
+  @JSImport("json-patch-gen", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait JsonPatch extends StObject {
     
-    var op: PatchOperation = js.native
+    var op: PatchOperation
     
-    var path: String = js.native
+    var path: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object JsonPatch {
     

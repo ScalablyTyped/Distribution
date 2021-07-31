@@ -5,23 +5,22 @@ import typings.vegaTypings.encodeMod.TrailEncodeEntry
 import typings.vegaTypings.vegaTypingsStrings.trail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrailMark
-  extends BaseMark
+  extends StObject
+     with BaseMark
      with Encodable[TrailEncodeEntry]
      with Mark {
   
-  var `type`: trail = js.native
+  var `type`: trail
 }
 object TrailMark {
   
   @scala.inline
-  def apply(`type`: trail): TrailMark = {
+  def apply(): TrailMark = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("trail")
     __obj.asInstanceOf[TrailMark]
   }
   

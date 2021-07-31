@@ -6,12 +6,13 @@ import typings.std.CanvasRenderingContext2D
 import typings.std.SVGGradientElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "Gradient")
 @js.native
-class Gradient protected () extends IGradientOptions {
+class Gradient protected ()
+  extends StObject
+     with IGradientOptions {
   /**
     * Constructor
     * @param {Object} options Options object with type, coords, gradientUnits and colorStops
@@ -59,6 +60,10 @@ class Gradient protected () extends IGradientOptions {
 /* static members */
 object Gradient {
   
+  @JSImport("fabric/fabric-impl", "Gradient")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns {@link fabric.Gradient} instance from its object representation
     * @static
@@ -66,12 +71,10 @@ object Gradient {
     * @param {Object} obj
     * @param {Object} [options] Options object
     */
-  @JSImport("fabric/fabric-impl", "Gradient.forObject")
-  @js.native
-  def forObject(obj: js.Any): Gradient = js.native
-  @JSImport("fabric/fabric-impl", "Gradient.forObject")
-  @js.native
-  def forObject(obj: js.Any, options: IGradientOptions): Gradient = js.native
+  @scala.inline
+  def forObject(obj: js.Any): Gradient = ^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any]).asInstanceOf[Gradient]
+  @scala.inline
+  def forObject(obj: js.Any, options: IGradientOptions): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("forObject")(obj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Gradient]
   
   /**
     * Returns {@link fabric.Gradient} instance from an SVG element
@@ -83,7 +86,6 @@ object Gradient {
     * @see http://www.w3.org/TR/SVG/pservers.html#LinearGradientElement
     * @see http://www.w3.org/TR/SVG/pservers.html#RadialGradientElement
     */
-  @JSImport("fabric/fabric-impl", "Gradient.fromElement")
-  @js.native
-  def fromElement(el: SVGGradientElement, instance: Object): Gradient = js.native
+  @scala.inline
+  def fromElement(el: SVGGradientElement, instance: Object): Gradient = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(el.asInstanceOf[js.Any], instance.asInstanceOf[js.Any])).asInstanceOf[Gradient]
 }

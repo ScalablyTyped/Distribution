@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAssignmentResponse extends StObject {
   
   /**
     *  The assignment. The response includes one Assignment element. 
     */
-  var Assignment: js.UndefOr[typings.awsSdk.mturkMod.Assignment] = js.native
+  var Assignment: js.UndefOr[typings.awsSdk.mturkMod.Assignment] = js.undefined
   
   /**
     *  The HIT associated with this assignment. The response includes one HIT element.
     */
-  var HIT: js.UndefOr[typings.awsSdk.mturkMod.HIT] = js.native
+  var HIT: js.UndefOr[typings.awsSdk.mturkMod.HIT] = js.undefined
 }
 object GetAssignmentResponse {
   

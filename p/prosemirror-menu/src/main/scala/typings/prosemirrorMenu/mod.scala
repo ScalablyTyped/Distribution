@@ -15,7 +15,6 @@ import typings.std.Event
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,7 @@ object mod {
   
   @JSImport("prosemirror-menu", "Dropdown")
   @js.native
-  class Dropdown[S /* <: Schema[_, _] */] protected () extends StObject {
+  class Dropdown[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     /**
       * Create a dropdown wrapping the elements. Options may include
       * the following properties:
@@ -56,7 +55,7 @@ object mod {
   
   @JSImport("prosemirror-menu", "DropdownSubmenu")
   @js.native
-  class DropdownSubmenu[S /* <: Schema[_, _] */] protected () extends StObject {
+  class DropdownSubmenu[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     /**
       * Creates a submenu for the given group of menu elements. The
       * following options are recognized:
@@ -75,7 +74,7 @@ object mod {
   
   @JSImport("prosemirror-menu", "MenuItem")
   @js.native
-  class MenuItem[S /* <: Schema[_, _] */] protected () extends StObject {
+  class MenuItem[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     def this(spec: MenuItemSpec[S]) = this()
     
     /**
@@ -91,9 +90,8 @@ object mod {
     var spec: MenuItemSpec[S] = js.native
   }
   
-  @JSImport("prosemirror-menu", "blockTypeItem")
-  @js.native
-  def blockTypeItem[S /* <: Schema[_, _] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = js.native
+  @scala.inline
+  def blockTypeItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("blockTypeItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
   @JSImport("prosemirror-menu", "joinUpItem")
   @js.native
@@ -107,17 +105,14 @@ object mod {
   @scala.inline
   def liftItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("liftItem")(x.asInstanceOf[js.Any])
   
-  @JSImport("prosemirror-menu", "menuBar")
-  @js.native
-  def menuBar[S /* <: Schema[_, _] */](options: Content[S]): Plugin[S, _] = js.native
+  @scala.inline
+  def menuBar[S /* <: Schema[js.Any, js.Any] */](options: Content[S]): Plugin[S, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBar")(options.asInstanceOf[js.Any]).asInstanceOf[Plugin[S, js.Any]]
   
-  @JSImport("prosemirror-menu", "redoItem")
-  @js.native
-  def redoItem(p: StringDictionary[js.Any]): MenuItem[_] = js.native
+  @scala.inline
+  def redoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("redoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
   
-  @JSImport("prosemirror-menu", "renderGrouped")
-  @js.native
-  def renderGrouped[S /* <: Schema[_, _] */](view: EditorView[S], content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]): DomUpdate[S] = js.native
+  @scala.inline
+  def renderGrouped[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], content: js.Array[MenuElement[S] | js.Array[MenuElement[S]]]): DomUpdate[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("renderGrouped")(view.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[DomUpdate[S]]
   
   @JSImport("prosemirror-menu", "selectParentNodeItem")
   @js.native
@@ -125,16 +120,13 @@ object mod {
   @scala.inline
   def selectParentNodeItem_=(x: MenuItem[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selectParentNodeItem")(x.asInstanceOf[js.Any])
   
-  @JSImport("prosemirror-menu", "undoItem")
-  @js.native
-  def undoItem(p: StringDictionary[js.Any]): MenuItem[_] = js.native
+  @scala.inline
+  def undoItem(p: StringDictionary[js.Any]): MenuItem[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("undoItem")(p.asInstanceOf[js.Any]).asInstanceOf[MenuItem[js.Any]]
   
-  @JSImport("prosemirror-menu", "wrapItem")
-  @js.native
-  def wrapItem[S /* <: Schema[_, _] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = js.native
+  @scala.inline
+  def wrapItem[S /* <: Schema[js.Any, js.Any] */](nodeType: NodeType[S], options: StringDictionary[js.Any]): MenuItem[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapItem")(nodeType.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MenuItem[S]]
   
-  @js.native
-  trait MenuElement[S /* <: Schema[_, _] */] extends StObject {
+  trait MenuElement[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
     /**
       * Render the element for display in the menu. Must return a DOM
@@ -142,51 +134,50 @@ object mod {
       * a new state. The `update` function will return false if the
       * update hid the entire element.
       */
-    def render(pm: EditorView[S]): Dom[S] = js.native
+    def render(pm: EditorView[S]): Dom[S]
   }
   object MenuElement {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](render: EditorView[S] => Dom[S]): MenuElement[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](render: EditorView[S] => Dom[S]): MenuElement[S] = {
       val __obj = js.Dynamic.literal(render = js.Any.fromFunction1(render))
       __obj.asInstanceOf[MenuElement[S]]
     }
     
     @scala.inline
-    implicit class MenuElementMutableBuilder[Self <: MenuElement[_], S /* <: Schema[_, _] */] (val x: Self with MenuElement[S]) extends AnyVal {
+    implicit class MenuElementMutableBuilder[Self <: MenuElement[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MenuElement[S]) extends AnyVal {
       
       @scala.inline
       def setRender(value: EditorView[S] => Dom[S]): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
-  trait MenuItemSpec[S /* <: Schema[_, _] */] extends StObject {
+  trait MenuItemSpec[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
     /**
       * A predicate function to determine whether the item is 'active' (for
       * example, the item for toggling the strong mark might be active then
       * the cursor is in strong text).
       */
-    var active: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.native
+    var active: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
     
     /**
       * Optionally adds a CSS class to the item's DOM representation.
       */
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
     /**
       * Optionally adds a string of inline CSS to the item's DOM
       * representation.
       */
-    var css: js.UndefOr[String] = js.native
+    var css: js.UndefOr[String] = js.undefined
     
     /**
       * Function that is used to determine if the item is enabled. If
       * given and returning false, the item will be given a disabled
       * styling.
       */
-    var enable: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.native
+    var enable: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
     
     /**
       * Describes an icon to show for this item. The object may specify
@@ -199,47 +190,47 @@ object mod {
       * optional `css` property giving additional CSS styling for the
       * text. _Or_ it may contain `dom` property containing a DOM node.
       */
-    var icon: js.UndefOr[StringDictionary[js.Any] | Null] = js.native
+    var icon: js.UndefOr[StringDictionary[js.Any] | Null] = js.undefined
     
     /**
       * Makes the item show up as a text label. Mostly useful for items
       * wrapped in a [drop-down](#menu.Dropdown) or similar menu. The object
       * should have a `label` property providing the text to display.
       */
-    var label: js.UndefOr[String | Null] = js.native
+    var label: js.UndefOr[String | Null] = js.undefined
     
     /**
       * A function that renders the item. You must provide either this,
       * [`icon`](#menu.MenuItemSpec.icon), or [`label`](#MenuItemSpec.label).
       */
-    var render: js.UndefOr[(js.Function1[/* p */ EditorView[S], Node]) | Null] = js.native
+    var render: js.UndefOr[(js.Function1[/* p */ EditorView[S], Node]) | Null] = js.undefined
     
     /**
       * The function to execute when the menu item is activated.
       */
-    def run(p1: EditorState[S], p2: js.Function1[/* p */ Transaction[S], Unit], p3: EditorView[S], p4: Event): Unit = js.native
+    def run(p1: EditorState[S], p2: js.Function1[/* p */ Transaction[S], Unit], p3: EditorView[S], p4: Event): Unit
     
     /**
       * Optional function that is used to determine whether the item is
       * appropriate at the moment. Deselected items will be hidden.
       */
-    var select: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.native
+    var select: js.UndefOr[(js.Function1[/* p */ EditorState[S], Boolean]) | Null] = js.undefined
     
     /**
       * Defines DOM title (mouseover) text for the item.
       */
-    var title: js.UndefOr[String | (js.Function1[/* p */ EditorState[S], String]) | Null] = js.native
+    var title: js.UndefOr[String | (js.Function1[/* p */ EditorState[S], String]) | Null] = js.undefined
   }
   object MenuItemSpec {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): MenuItemSpec[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](run: (EditorState[S], js.Function1[/* p */ Transaction[S], Unit], EditorView[S], Event) => Unit): MenuItemSpec[S] = {
       val __obj = js.Dynamic.literal(run = js.Any.fromFunction4(run))
       __obj.asInstanceOf[MenuItemSpec[S]]
     }
     
     @scala.inline
-    implicit class MenuItemSpecMutableBuilder[Self <: MenuItemSpec[_], S /* <: Schema[_, _] */] (val x: Self with MenuItemSpec[S]) extends AnyVal {
+    implicit class MenuItemSpecMutableBuilder[Self <: MenuItemSpec[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & MenuItemSpec[S]) extends AnyVal {
       
       @scala.inline
       def setActive(value: /* p */ EditorState[S] => Boolean): Self = StObject.set(x, "active", js.Any.fromFunction1(value))

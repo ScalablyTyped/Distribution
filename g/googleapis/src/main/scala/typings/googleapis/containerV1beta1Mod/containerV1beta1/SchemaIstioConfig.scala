@@ -2,24 +2,22 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options for Istio addon.
   */
-@js.native
 trait SchemaIstioConfig extends StObject {
   
   /**
     * The specified Istio auth mode, either none, or mutual TLS.
     */
-  var auth: js.UndefOr[String] = js.native
+  var auth: js.UndefOr[String] = js.undefined
   
   /**
     * Whether Istio is enabled for this cluster.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaIstioConfig {
   

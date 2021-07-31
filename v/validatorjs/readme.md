@@ -9,16 +9,16 @@ Validation library inspired by Laravel's Validator
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | validatorjs |
-| Keywords           | validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |
-| # releases         | 9 |
-| # dependents       | 90 |
-| # downloads        | 1447117 |
+| Keywords           | codedungeon, validatorjs, validator.js, data validation, validator, validate, validation, data, laravel, laravel-validator-for-js |
+| # releases         | 12 |
+| # dependents       | 93 |
+| # downloads        | 1575763 |
 | # stars            | 16 |
 
 ## Links
-- [Homepage](https://github.com/skaterdav85/validatorjs#readme)
-- [Bugs](https://github.com/skaterdav85/validatorjs/issues?labels=bug&milestone=1&page=1&state=open)
-- [Repository](https://github.com/skaterdav85/validatorjs)
+- [Homepage](https://github.com/mikeerickson/validatorjs#readme)
+- [Bugs](https://github.com/mikeerickson/validatorjs/issues?labels=bug&milestone=1&page=1&state=open)
+- [Repository](https://github.com/mikeerickson/validatorjs)
 - [Npm](https://www.npmjs.com/package/validatorjs)
     
 

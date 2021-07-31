@@ -2,26 +2,24 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a seller of inventory. Each seller is identified by a unique Ad
   * Manager account ID.
   */
-@js.native
 trait SchemaSeller extends StObject {
   
   /**
     * The unique ID for the seller. The seller fills in this field. The seller
     * account ID is then available to buyer in the product.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional sub-account ID for the seller.
     */
-  var subAccountId: js.UndefOr[String] = js.native
+  var subAccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaSeller {
   

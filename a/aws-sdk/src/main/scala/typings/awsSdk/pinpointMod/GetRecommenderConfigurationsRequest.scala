@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRecommenderConfigurationsRequest extends StObject {
   
   /**
     * The maximum number of items to include in each page of a paginated response. This parameter is not supported for application, campaign, and journey metrics.
     */
-  var PageSize: js.UndefOr[string] = js.native
+  var PageSize: js.UndefOr[string] = js.undefined
   
   /**
     * The NextToken string that specifies which page of results to return in a paginated response.
     */
-  var Token: js.UndefOr[string] = js.native
+  var Token: js.UndefOr[string] = js.undefined
 }
 object GetRecommenderConfigurationsRequest {
   

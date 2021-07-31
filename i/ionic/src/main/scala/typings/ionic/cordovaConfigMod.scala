@@ -7,10 +7,13 @@ import typings.ionic.definitionsMod.CordovaPackageJson
 import typings.ionic.definitionsMod.ResourcesPlatform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cordovaConfigMod {
+  
+  @JSImport("ionic/lib/integrations/cordova/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ionic/lib/integrations/cordova/config", "CordovaConfig")
   @js.native
@@ -71,21 +74,22 @@ object cordovaConfigMod {
   /* static members */
   object CordovaConfig {
     
-    @JSImport("ionic/lib/integrations/cordova/config", "CordovaConfig.load")
+    @JSImport("ionic/lib/integrations/cordova/config", "CordovaConfig")
     @js.native
-    def load(configXmlPath: String, packageJsonPath: String): js.Promise[CordovaConfig] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def load(configXmlPath: String, packageJsonPath: String): js.Promise[CordovaConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(configXmlPath.asInstanceOf[js.Any], packageJsonPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CordovaConfig]]
   }
   
-  @JSImport("ionic/lib/integrations/cordova/config", "loadCordovaConfig")
-  @js.native
-  def loadCordovaConfig(integration: RequiredProjectIntegratio): js.Promise[CordovaConfig] = js.native
+  @scala.inline
+  def loadCordovaConfig(integration: RequiredProjectIntegratio): js.Promise[CordovaConfig] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadCordovaConfig")(integration.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CordovaConfig]]
   
-  @js.native
   trait ConfiguredPlatform extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var spec: js.UndefOr[String] = js.native
+    var spec: js.UndefOr[String] = js.undefined
   }
   object ConfiguredPlatform {
     

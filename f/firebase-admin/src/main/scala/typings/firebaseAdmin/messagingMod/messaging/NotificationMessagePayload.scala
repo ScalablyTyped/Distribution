@@ -3,12 +3,11 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationMessagePayload
-  extends /* key */ StringDictionary[js.UndefOr[String]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[String]] {
   
   /**
     * The value of the badge on the home screen app icon.
@@ -19,14 +18,14 @@ trait NotificationMessagePayload
     *
     * **Platforms:** iOS
     */
-  var badge: js.UndefOr[String] = js.native
+  var badge: js.UndefOr[String] = js.undefined
   
   /**
     * The notification's body text.
     *
     * **Platforms:** iOS, Android, Web
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Variable string values to be used in place of the format specifiers in
@@ -47,7 +46,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** iOS, Android
     */
-  var bodyLocArgs: js.UndefOr[String] = js.native
+  var bodyLocArgs: js.UndefOr[String] = js.undefined
   
   /**
     * The key to the body string in the app's string resources to use to localize
@@ -64,7 +63,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** iOS, Android
     */
-  var bodyLocKey: js.UndefOr[String] = js.native
+  var bodyLocKey: js.UndefOr[String] = js.undefined
   
   /**
     * Action associated with a user click on the notification. If specified, an
@@ -73,14 +72,14 @@ trait NotificationMessagePayload
     *
     *   * **Platforms:** Android
     */
-  var clickAction: js.UndefOr[String] = js.native
+  var clickAction: js.UndefOr[String] = js.undefined
   
   /**
     * The notification icon's color, expressed in `#rrggbb` format.
     *
     * **Platforms:** Android
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * The notification's icon.
@@ -93,7 +92,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** Android, Web
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The sound to be played when the device receives a notification. Supports
@@ -103,7 +102,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** Android
     */
-  var sound: js.UndefOr[String] = js.native
+  var sound: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier used to replace existing notifications in the notification drawer.
@@ -115,14 +114,14 @@ trait NotificationMessagePayload
     *
     * **Platforms:** Android
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     * The notification's title.
     *
     * **Platforms:** iOS, Android, Web
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Variable string values to be used in place of the format specifiers in
@@ -143,7 +142,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** iOS, Android
     */
-  var titleLocArgs: js.UndefOr[String] = js.native
+  var titleLocArgs: js.UndefOr[String] = js.undefined
   
   /**
     * The key to the title string in the app's string resources to use to localize
@@ -161,7 +160,7 @@ trait NotificationMessagePayload
     *
     * **Platforms:** iOS, Android
     */
-  var titleLocKey: js.UndefOr[String] = js.native
+  var titleLocKey: js.UndefOr[String] = js.undefined
 }
 object NotificationMessagePayload {
   

@@ -2,31 +2,29 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementInfo extends StObject {
   
-  var attributes: js.Any = js.native
+  var attributes: js.Any
   
-  var height: Double = js.native
+  var height: Double
   
-  var html: String = js.native
+  var html: String
   
-  var nodeName: String = js.native
+  var nodeName: String
   
-  var tag: String = js.native
+  var tag: String
   
-  var text: String = js.native
+  var text: String
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object ElementInfo {
   

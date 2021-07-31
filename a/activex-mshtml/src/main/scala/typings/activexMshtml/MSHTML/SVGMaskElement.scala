@@ -2,50 +2,48 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGMaskElement extends StObject {
   
   @JSName("MSHTML.SVGMaskElement_typekey")
-  var MSHTMLDotSVGMaskElement_typekey: SVGMaskElement = js.native
+  var MSHTMLDotSVGMaskElement_typekey: SVGMaskElement
   
-  val className: SVGAnimatedString = js.native
+  val className: SVGAnimatedString
   
-  val externalResourcesRequired: SVGAnimatedBoolean = js.native
+  val externalResourcesRequired: SVGAnimatedBoolean
   
-  var focusable: SVGAnimatedEnumeration = js.native
+  var focusable: SVGAnimatedEnumeration
   
-  def hasExtension(extension: String): Boolean = js.native
+  def hasExtension(`extension`: String): Boolean
   
-  var height: SVGAnimatedLength = js.native
+  var height: SVGAnimatedLength
   
-  var maskContentUnits: SVGAnimatedEnumeration = js.native
+  var maskContentUnits: SVGAnimatedEnumeration
   
-  var maskUnits: SVGAnimatedEnumeration = js.native
+  var maskUnits: SVGAnimatedEnumeration
   
-  var ownerSVGElement: ISVGSVGElement = js.native
+  var ownerSVGElement: ISVGSVGElement
   
-  val requiredExtensions: SVGStringList = js.native
+  val requiredExtensions: SVGStringList
   
-  val requiredFeatures: SVGStringList = js.native
+  val requiredFeatures: SVGStringList
   
-  val systemLanguage: SVGStringList = js.native
+  val systemLanguage: SVGStringList
   
-  var viewportElement: ISVGElement = js.native
+  var viewportElement: ISVGElement
   
-  var width: SVGAnimatedLength = js.native
+  var width: SVGAnimatedLength
   
-  var x: SVGAnimatedLength = js.native
+  var x: SVGAnimatedLength
   
-  var xmlbase: String = js.native
+  var xmlbase: String
   
-  var xmllang: String = js.native
+  var xmllang: String
   
-  var xmlspace: String = js.native
+  var xmlspace: String
   
-  var y: SVGAnimatedLength = js.native
+  var y: SVGAnimatedLength
 }
 object SVGMaskElement {
   

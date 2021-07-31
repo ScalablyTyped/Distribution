@@ -2,30 +2,28 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The &lt;intent-filter&gt; section of an &lt;activity&gt; tag.
   * https://developer.android.com/guide/topics/manifest/intent-filter-element.html
   */
-@js.native
 trait SchemaIntentFilter extends StObject {
   
   /**
     * The android:name value of the &lt;action&gt; tag.
     */
-  var actionNames: js.UndefOr[js.Array[String]] = js.native
+  var actionNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The android:name value of the &lt;category&gt; tag.
     */
-  var categoryNames: js.UndefOr[js.Array[String]] = js.native
+  var categoryNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The android:mimeType value of the &lt;data&gt; tag.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
 }
 object SchemaIntentFilter {
   

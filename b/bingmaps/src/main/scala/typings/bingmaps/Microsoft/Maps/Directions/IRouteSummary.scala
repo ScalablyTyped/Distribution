@@ -3,32 +3,30 @@ package typings.bingmaps.Microsoft.Maps.Directions
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouteSummary extends StObject {
   
   /** The total travel distance of the route */
-  var distance: Double = js.native
+  var distance: Double
   
   /** The cost of the route. This property is only returned if the routeMode of the IDirectionsRequestOptions is set to transit and the map culture is set to ja-jp. */
-  var monetaryCost: Double = js.native
+  var monetaryCost: Double
   
   /** The location of the northeast corner of bounding box that defines the best map view of the route. */
-  var northEast: Location = js.native
+  var northEast: Location
   
   /** The location of the southwest corner of bounding box that defines the best map view of the route. */
-  var southWest: Location = js.native
+  var southWest: Location
   
   /** The total travel time, in seconds, for the route. */
-  var time: Double = js.native
+  var time: Double
   
   /**
     * The total travel time, in seconds, taking into account traffic delays, for the route.
     * This property is 0 if the avoidTraffic property of the IDirectionsRequestOptions is set to false.
     */
-  var timeWithTraffic: Double = js.native
+  var timeWithTraffic: Double
 }
 object IRouteSummary {
   

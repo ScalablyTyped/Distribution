@@ -3,29 +3,29 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XEntity extends XNode {
+trait XEntity
+  extends StObject
+     with XNode {
   
   /** For unparsed entities, the name of the notation for the entity. */
-  val NotationName: String = js.native
+  val NotationName: String
   
   /** The public identifier associated with the entity, if specified. */
-  val PublicId: String = js.native
+  val PublicId: String
   
   /** The system identifier associated with the entity, if specified. */
-  val SystemId: String = js.native
+  val SystemId: String
   
   /** For unparsed entities, the name of the notation for the entity. */
-  def getNotationName(): String = js.native
+  def getNotationName(): String
   
   /** The public identifier associated with the entity, if specified. */
-  def getPublicId(): String = js.native
+  def getPublicId(): String
   
   /** The system identifier associated with the entity, if specified. */
-  def getSystemId(): String = js.native
+  def getSystemId(): String
 }
 object XEntity {
   

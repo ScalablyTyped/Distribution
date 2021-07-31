@@ -1,86 +1,84 @@
 package typings.formik
 
 import typings.formik.typesMod.FormikProps
+import typings.formik.typesMod.SharedRenderProps
 import typings.react.mod.ComponentType
-import typings.react.mod.ReactNode
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldArrayMod {
+  
+  @JSImport("formik/dist/FieldArray", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("formik/dist/FieldArray", "FieldArray")
   @js.native
   val FieldArray: ComponentType[FieldArrayConfig] = js.native
   
-  @JSImport("formik/dist/FieldArray", "insert")
-  @js.native
-  def insert(arrayLike: ArrayLike[_], index: Double, value: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def insert(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("formik/dist/FieldArray", "move")
-  @js.native
-  def move(array: js.Array[_], from: Double, to: Double): js.Array[_] = js.native
+  @scala.inline
+  def move(array: js.Array[js.Any], from: Double, to: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("formik/dist/FieldArray", "replace")
-  @js.native
-  def replace(arrayLike: ArrayLike[_], index: Double, value: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def replace(arrayLike: ArrayLike[js.Any], index: Double, value: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(arrayLike.asInstanceOf[js.Any], index.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("formik/dist/FieldArray", "swap")
-  @js.native
-  def swap(arrayLike: ArrayLike[_], indexA: Double, indexB: Double): js.Array[_] = js.native
+  @scala.inline
+  def swap(arrayLike: ArrayLike[js.Any], indexA: Double, indexB: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("swap")(arrayLike.asInstanceOf[js.Any], indexA.asInstanceOf[js.Any], indexB.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
   trait ArrayHelpers extends StObject {
     
     /** Curried fn to insert an element at a given index into the array */
-    def handleInsert(index: Double, value: js.Any): js.Function0[Unit] = js.native
+    def handleInsert(index: Double, value: js.Any): js.Function0[Unit]
     
     /** Imperatively move an element in an array to another index */
-    def handleMove(from: Double, to: Double): js.Function0[Unit] = js.native
+    def handleMove(from: Double, to: Double): js.Function0[Unit]
     
     /** Curried fn to remove a value from the end of the array */
-    def handlePop(): js.Function0[Unit] = js.native
+    def handlePop(): js.Function0[Unit]
     
     /** Curried fn to add a value to the end of an array */
-    def handlePush(obj: js.Any): js.Function0[Unit] = js.native
+    def handlePush(obj: js.Any): js.Function0[Unit]
     
     /** Curried fn to remove an element at an index of an array */
-    def handleRemove(index: Double): js.Function0[Unit] = js.native
+    def handleRemove(index: Double): js.Function0[Unit]
     
     /** Curried fn to replace an element at a given index into the array */
-    def handleReplace(index: Double, value: js.Any): js.Function0[Unit] = js.native
+    def handleReplace(index: Double, value: js.Any): js.Function0[Unit]
     
     /** Curried fn to swap two values in an array */
-    def handleSwap(indexA: Double, indexB: Double): js.Function0[Unit] = js.native
+    def handleSwap(indexA: Double, indexB: Double): js.Function0[Unit]
     
     /** Curried fn to add an element to the beginning of an array */
-    def handleUnshift(value: js.Any): js.Function0[Unit] = js.native
+    def handleUnshift(value: js.Any): js.Function0[Unit]
     
     /** Imperatively insert an element at a given index into the array */
-    def insert(index: Double, value: js.Any): Unit = js.native
+    def insert(index: Double, value: js.Any): Unit
     
     /** Imperatively move an element in an array to another index */
-    def move(from: Double, to: Double): Unit = js.native
+    def move(from: Double, to: Double): Unit
     
     /** Imperatively remove and return value from the end of the array */
-    def pop[T](): js.UndefOr[T] = js.native
+    def pop[T](): js.UndefOr[T]
     
     /** Imperatively add a value to the end of an array */
-    def push(obj: js.Any): Unit = js.native
+    def push(obj: js.Any): Unit
     
     /** Imperatively remove and element at an index of an array */
-    def remove[T](index: Double): js.UndefOr[T] = js.native
+    def remove[T](index: Double): js.UndefOr[T]
     
     /** Imperatively replace a value at an index of an array  */
-    def replace(index: Double, value: js.Any): Unit = js.native
+    def replace(index: Double, value: js.Any): Unit
     
     /** Imperatively swap two values in an array */
-    def swap(indexA: Double, indexB: Double): Unit = js.native
+    def swap(indexA: Double, indexB: Double): Unit
     
     /** Imperatively add an element to the beginning of an array and return its length */
-    def unshift(value: js.Any): Double = js.native
+    def unshift(value: js.Any): Double
   }
   object ArrayHelpers {
     
@@ -160,30 +158,15 @@ object fieldArrayMod {
     }
   }
   
-  /* Inlined {  name :string,   validateOnChange :boolean | undefined} & formik.formik/dist/types.SharedRenderProps<formik.formik/dist/FieldArray.FieldArrayRenderProps> */
-  @js.native
-  trait FieldArrayConfig extends StObject {
-    
-    /**
-      * Children render function <Field name>{props => ...}</Field>)
-      */
-    var children: js.UndefOr[js.Function1[/* props */ FieldArrayRenderProps, ReactNode]] = js.native
-    
-    /**
-      * Field component to render. Can either be a string like 'select' or a component.
-      */
-    var component: js.UndefOr[String | (ComponentType[FieldArrayRenderProps | Unit])] = js.native
+  trait FieldArrayConfig
+    extends StObject
+       with SharedRenderProps[FieldArrayRenderProps] {
     
     /** Really the path to the array field to be updated */
-    var name: String = js.native
-    
-    /**
-      * Render prop (works like React router's <Route render={props =>} />)
-      */
-    var render: js.UndefOr[js.Function1[/* props */ FieldArrayRenderProps, ReactNode]] = js.native
+    var name: String
     
     /** Should field array validate the form AFTER array updates/changes? */
-    var validateOnChange: js.UndefOr[Boolean] = js.native
+    var validateOnChange: js.UndefOr[Boolean] = js.undefined
   }
   object FieldArrayConfig {
     
@@ -197,25 +180,7 @@ object fieldArrayMod {
     implicit class FieldArrayConfigMutableBuilder[Self <: FieldArrayConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: /* props */ FieldArrayRenderProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setComponent(value: String | (ComponentType[FieldArrayRenderProps | Unit])): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)
-      
-      @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRender(value: /* props */ FieldArrayRenderProps => ReactNode): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRenderUndefined: Self = StObject.set(x, "render", js.undefined)
       
       @scala.inline
       def setValidateOnChange(value: Boolean): Self = StObject.set(x, "validateOnChange", value.asInstanceOf[js.Any])
@@ -225,67 +190,19 @@ object fieldArrayMod {
     }
   }
   
-  /* Inlined formik.formik/dist/FieldArray.ArrayHelpers & {  form :formik.formik/dist/types.FormikProps<any>,   name :string} */
-  @js.native
-  trait FieldArrayRenderProps extends StObject {
+  trait FieldArrayRenderProps
+    extends StObject
+       with ArrayHelpers {
     
-    var form: FormikProps[_] = js.native
+    var form: FormikProps[js.Any]
     
-    /** Curried fn to insert an element at a given index into the array */
-    def handleInsert(index: Double, value: js.Any): js.Function0[Unit] = js.native
-    
-    /** Imperatively move an element in an array to another index */
-    def handleMove(from: Double, to: Double): js.Function0[Unit] = js.native
-    
-    /** Curried fn to remove a value from the end of the array */
-    def handlePop(): js.Function0[Unit] = js.native
-    
-    /** Curried fn to add a value to the end of an array */
-    def handlePush(obj: js.Any): js.Function0[Unit] = js.native
-    
-    /** Curried fn to remove an element at an index of an array */
-    def handleRemove(index: Double): js.Function0[Unit] = js.native
-    
-    /** Curried fn to replace an element at a given index into the array */
-    def handleReplace(index: Double, value: js.Any): js.Function0[Unit] = js.native
-    
-    /** Curried fn to swap two values in an array */
-    def handleSwap(indexA: Double, indexB: Double): js.Function0[Unit] = js.native
-    
-    /** Curried fn to add an element to the beginning of an array */
-    def handleUnshift(value: js.Any): js.Function0[Unit] = js.native
-    
-    /** Imperatively insert an element at a given index into the array */
-    def insert(index: Double, value: js.Any): Unit = js.native
-    
-    /** Imperatively move an element in an array to another index */
-    def move(from: Double, to: Double): Unit = js.native
-    
-    var name: String = js.native
-    
-    /** Imperatively remove and return value from the end of the array */
-    def pop[T](): js.UndefOr[T] = js.native
-    
-    /** Imperatively add a value to the end of an array */
-    def push(obj: js.Any): Unit = js.native
-    
-    /** Imperatively remove and element at an index of an array */
-    def remove[T](index: Double): js.UndefOr[T] = js.native
-    
-    /** Imperatively replace a value at an index of an array  */
-    def replace(index: Double, value: js.Any): Unit = js.native
-    
-    /** Imperatively swap two values in an array */
-    def swap(indexA: Double, indexB: Double): Unit = js.native
-    
-    /** Imperatively add an element to the beginning of an array and return its length */
-    def unshift(value: js.Any): Double = js.native
+    var name: String
   }
   object FieldArrayRenderProps {
     
     @scala.inline
     def apply(
-      form: FormikProps[_],
+      form: FormikProps[js.Any],
       handleInsert: (Double, js.Any) => js.Function0[Unit],
       handleMove: (Double, Double) => js.Function0[Unit],
       handlePop: () => js.Function0[Unit],
@@ -312,58 +229,10 @@ object fieldArrayMod {
     implicit class FieldArrayRenderPropsMutableBuilder[Self <: FieldArrayRenderProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setForm(value: FormikProps[_]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHandleInsert(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleInsert", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setHandleMove(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleMove", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setHandlePop(value: () => js.Function0[Unit]): Self = StObject.set(x, "handlePop", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setHandlePush(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handlePush", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setHandleRemove(value: Double => js.Function0[Unit]): Self = StObject.set(x, "handleRemove", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setHandleReplace(value: (Double, js.Any) => js.Function0[Unit]): Self = StObject.set(x, "handleReplace", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setHandleSwap(value: (Double, Double) => js.Function0[Unit]): Self = StObject.set(x, "handleSwap", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setHandleUnshift(value: js.Any => js.Function0[Unit]): Self = StObject.set(x, "handleUnshift", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setInsert(value: (Double, js.Any) => Unit): Self = StObject.set(x, "insert", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setMove(value: (Double, Double) => Unit): Self = StObject.set(x, "move", js.Any.fromFunction2(value))
+      def setForm(value: FormikProps[js.Any]): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPop(value: () => js.UndefOr[js.Any]): Self = StObject.set(x, "pop", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setPush(value: js.Any => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRemove(value: Double => js.UndefOr[js.Any]): Self = StObject.set(x, "remove", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setReplace(value: (Double, js.Any) => Unit): Self = StObject.set(x, "replace", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setSwap(value: (Double, Double) => Unit): Self = StObject.set(x, "swap", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setUnshift(value: js.Any => Double): Self = StObject.set(x, "unshift", js.Any.fromFunction1(value))
     }
   }
 }

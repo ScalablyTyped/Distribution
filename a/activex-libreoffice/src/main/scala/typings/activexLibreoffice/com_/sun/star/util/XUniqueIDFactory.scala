@@ -4,14 +4,14 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** creates IDs which are unique within the container. */
-@js.native
-trait XUniqueIDFactory extends XInterface {
+trait XUniqueIDFactory
+  extends StObject
+     with XInterface {
   
-  def createUniqueID(): String = js.native
+  def createUniqueID(): String
 }
 object XUniqueIDFactory {
   

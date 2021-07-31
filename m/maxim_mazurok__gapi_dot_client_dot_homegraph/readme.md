@@ -10,9 +10,9 @@ TypeScript typings for HomeGraph API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.homegraph |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 41 |
+| # downloads        | 1071 |
 | # stars            | 0 |
 
 ## Links

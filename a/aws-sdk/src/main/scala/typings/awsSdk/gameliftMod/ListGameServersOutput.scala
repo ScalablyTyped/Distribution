@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListGameServersOutput extends StObject {
   
   /**
     * A collection of game server objects that match the request.
     */
-  var GameServers: js.UndefOr[typings.awsSdk.gameliftMod.GameServers] = js.native
+  var GameServers: js.UndefOr[typings.awsSdk.gameliftMod.GameServers] = js.undefined
   
   /**
     * A token that indicates where to resume retrieving results on the next call to this operation. If no token is returned, these results represent the end of the list.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object ListGameServersOutput {
   

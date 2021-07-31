@@ -10,9 +10,9 @@ Typings are for version 0.6.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/app-types |
 | Keywords           | - |
-| # releases         | 1130 |
+| # releases         | 1307 |
 | # dependents       | 50 |
-| # downloads        | 59348606 |
+| # downloads        | 64683175 |
 | # stars            | 0 |
 
 ## Links

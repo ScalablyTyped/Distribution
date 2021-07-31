@@ -4,19 +4,160 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.expressUseragent.mod.Details
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useragentMod {
   
   @JSImport("koa-useragent/dist/lib/useragent", JSImport.Default)
   @js.native
-  class default () extends UserAgent {
+  class default ()
+    extends StObject
+       with UserAgent {
     def this(source: String) = this()
+    
+    /* CompleteClass */
+    var browser: String = js.native
+    
+    /* CompleteClass */
+    var geoIp: StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    var isAmaya: Boolean = js.native
+    
+    /* CompleteClass */
+    var isAndroid: Boolean = js.native
+    
+    /* CompleteClass */
+    var isAndroidTablet: Boolean = js.native
+    
+    /* CompleteClass */
+    var isBada: Boolean = js.native
+    
+    /* CompleteClass */
+    var isBlackberry: Boolean = js.native
+    
+    /* CompleteClass */
+    var isBot: Boolean = js.native
+    
+    /* CompleteClass */
+    var isCaptive: Boolean = js.native
+    
+    /* CompleteClass */
+    var isChrome: Boolean = js.native
+    
+    /* CompleteClass */
+    var isChromeOS: Boolean = js.native
+    
+    /* CompleteClass */
+    var isCurl: Boolean = js.native
+    
+    /* CompleteClass */
+    var isDesktop: Boolean = js.native
+    
+    /* CompleteClass */
+    var isEdge: Boolean = js.native
+    
+    /* CompleteClass */
+    var isEpiphany: Boolean = js.native
+    
+    /* CompleteClass */
+    var isFirefox: Boolean = js.native
+    
+    /* CompleteClass */
+    var isFlock: Boolean = js.native
+    
+    /* CompleteClass */
+    var isIE: Boolean = js.native
+    
+    /* CompleteClass */
+    var isIECompatibilityMode: Boolean = js.native
+    
+    /* CompleteClass */
+    var isKindleFire: Boolean = js.native
+    
+    /* CompleteClass */
+    var isKonqueror: Boolean = js.native
+    
+    /* CompleteClass */
+    var isLinux: Boolean = js.native
+    
+    /* CompleteClass */
+    var isLinux64: Boolean = js.native
+    
+    /* CompleteClass */
+    var isMac: Boolean = js.native
+    
+    /* CompleteClass */
+    var isMobile: Boolean = js.native
+    
+    /* CompleteClass */
+    var isOmniWeb: Boolean = js.native
+    
+    /* CompleteClass */
+    var isOpera: Boolean = js.native
+    
+    /* CompleteClass */
+    var isRaspberry: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSafari: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSamsung: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSeaMonkey: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSilk: Boolean = js.native
+    
+    /* CompleteClass */
+    var isSmartTV: Boolean = js.native
+    
+    /* CompleteClass */
+    var isTablet: Boolean = js.native
+    
+    /* CompleteClass */
+    var isWebkit: Boolean = js.native
+    
+    /* CompleteClass */
+    var isWinJs: Boolean = js.native
+    
+    /* CompleteClass */
+    var isWindows: Boolean = js.native
+    
+    /* CompleteClass */
+    var isWindowsPhone: Boolean = js.native
+    
+    /* CompleteClass */
+    var isiPad: Boolean = js.native
+    
+    /* CompleteClass */
+    var isiPhone: Boolean = js.native
+    
+    /* CompleteClass */
+    var isiPod: Boolean = js.native
+    
+    /* CompleteClass */
+    var os: String = js.native
+    
+    /* CompleteClass */
+    var platform: String = js.native
+    
+    /* CompleteClass */
+    var silkAccelerated: Boolean = js.native
+    
+    /* CompleteClass */
+    var source: String = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
   }
   
   @js.native
-  trait UserAgent extends Details {
+  trait UserAgent
+    extends StObject
+       with Details {
     
     def SilkAccelerated: Boolean = js.native
     

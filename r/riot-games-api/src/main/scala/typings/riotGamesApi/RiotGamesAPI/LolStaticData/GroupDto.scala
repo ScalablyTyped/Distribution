@@ -2,15 +2,13 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupDto extends StObject {
   
-  var MaxGroupOwnable: String = js.native
+  var MaxGroupOwnable: String
   
-  var key: String = js.native
+  var key: String
 }
 object GroupDto {
   

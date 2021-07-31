@@ -2,19 +2,17 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlNodeSelector extends StObject {
   
-  def selectNodes(xpath: String): XmlNodeList = js.native
+  def selectNodes(xpath: String): XmlNodeList
   
-  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList = js.native
+  def selectNodesNS(xpath: String, namespaces: js.Any): XmlNodeList
   
-  def selectSingleNode(xpath: String): IXmlNode = js.native
+  def selectSingleNode(xpath: String): IXmlNode
   
-  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode = js.native
+  def selectSingleNodeNS(xpath: String, namespaces: js.Any): IXmlNode
 }
 object IXmlNodeSelector {
   

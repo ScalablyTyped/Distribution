@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreadthFirst extends StObject {
   
-  var breadthFirst: js.UndefOr[Boolean] = js.native
+  var breadthFirst: js.UndefOr[Boolean] = js.undefined
   
-  var deep: js.UndefOr[Boolean] = js.native
+  var deep: js.UndefOr[Boolean] = js.undefined
 }
 object BreadthFirst {
   

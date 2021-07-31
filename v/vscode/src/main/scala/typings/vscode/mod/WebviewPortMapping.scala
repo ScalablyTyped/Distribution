@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebviewPortMapping extends StObject {
   
   /**
     * Destination port. The `webviewPort` is resolved to this port.
     */
-  val extensionHostPort: Double = js.native
+  val extensionHostPort: Double
   
   /**
     * Localhost port to remap inside the webview.
     */
-  val webviewPort: Double = js.native
+  val webviewPort: Double
 }
 object WebviewPortMapping {
   

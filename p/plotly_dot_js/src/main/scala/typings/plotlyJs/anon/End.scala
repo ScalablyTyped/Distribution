@@ -2,17 +2,15 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait End extends StObject {
   
-  var end: Double | String = js.native
+  var end: Double | String
   
-  var size: Double | String = js.native
+  var size: Double | String
   
-  var start: Double | String = js.native
+  var start: Double | String
 }
 object End {
   

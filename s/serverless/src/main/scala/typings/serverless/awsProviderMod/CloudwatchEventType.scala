@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudwatchEventType extends StObject {
   
-  var detail: Detail = js.native
+  var detail: Detail
   
-  var `detail-type`: js.Array[String] = js.native
+  var `detail-type`: js.Array[String]
   
-  var source: js.Array[String] = js.native
+  var source: js.Array[String]
 }
 object CloudwatchEventType {
   

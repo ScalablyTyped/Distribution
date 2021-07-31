@@ -21,7 +21,6 @@ import typings.ionicCore.tabBarInterfaceMod.TabButtonLayout
 import typings.ionicCore.virtualScrollInterfaceMod.CellType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicCoreStrings {
@@ -32,12 +31,16 @@ object ionicCoreStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait A extends _KnobName
+  sealed trait A
+    extends StObject
+       with _KnobName
   @scala.inline
   def A: A = "A".asInstanceOf[A]
   
   @js.native
-  sealed trait B extends _KnobName
+  sealed trait B
+    extends StObject
+       with _KnobName
   @scala.inline
   def B: B = "B".asInstanceOf[B]
   
@@ -67,7 +70,9 @@ object ionicCoreStrings {
   def _zoneGate: _zoneGate = "_zoneGate".asInstanceOf[_zoneGate]
   
   @js.native
-  sealed trait `action-sheet` extends SelectInterface
+  sealed trait `action-sheet`
+    extends StObject
+       with SelectInterface
   @scala.inline
   def `action-sheet`: `action-sheet` = "action-sheet".asInstanceOf[`action-sheet`]
   
@@ -82,42 +87,58 @@ object ionicCoreStrings {
   def actionSheetLeave: actionSheetLeave = "actionSheetLeave".asInstanceOf[actionSheetLeave]
   
   @js.native
-  sealed trait `additional-name` extends AutocompleteTypes
+  sealed trait `additional-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `additional-name`: `additional-name` = "additional-name".asInstanceOf[`additional-name`]
   
   @js.native
-  sealed trait `address-level1` extends AutocompleteTypes
+  sealed trait `address-level1`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-level1`: `address-level1` = "address-level1".asInstanceOf[`address-level1`]
   
   @js.native
-  sealed trait `address-level2` extends AutocompleteTypes
+  sealed trait `address-level2`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-level2`: `address-level2` = "address-level2".asInstanceOf[`address-level2`]
   
   @js.native
-  sealed trait `address-level3` extends AutocompleteTypes
+  sealed trait `address-level3`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-level3`: `address-level3` = "address-level3".asInstanceOf[`address-level3`]
   
   @js.native
-  sealed trait `address-level4` extends AutocompleteTypes
+  sealed trait `address-level4`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-level4`: `address-level4` = "address-level4".asInstanceOf[`address-level4`]
   
   @js.native
-  sealed trait `address-line1` extends AutocompleteTypes
+  sealed trait `address-line1`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-line1`: `address-line1` = "address-line1".asInstanceOf[`address-line1`]
   
   @js.native
-  sealed trait `address-line2` extends AutocompleteTypes
+  sealed trait `address-line2`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-line2`: `address-line2` = "address-line2".asInstanceOf[`address-line2`]
   
   @js.native
-  sealed trait `address-line3` extends AutocompleteTypes
+  sealed trait `address-line3`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `address-line3`: `address-line3` = "address-line3".asInstanceOf[`address-line3`]
   
@@ -127,7 +148,9 @@ object ionicCoreStrings {
   def `after-edge`: `after-edge` = "after-edge".asInstanceOf[`after-edge`]
   
   @js.native
-  sealed trait alert extends SelectInterface
+  sealed trait alert
+    extends StObject
+       with SelectInterface
   @scala.inline
   def alert: alert = "alert".asInstanceOf[alert]
   
@@ -147,12 +170,16 @@ object ionicCoreStrings {
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
-  sealed trait alternate extends AnimationDirection
+  sealed trait alternate
+    extends StObject
+       with AnimationDirection
   @scala.inline
   def alternate: alternate = "alternate".asInstanceOf[alternate]
   
   @js.native
-  sealed trait `alternate-reverse` extends AnimationDirection
+  sealed trait `alternate-reverse`
+    extends StObject
+       with AnimationDirection
   @scala.inline
   def `alternate-reverse`: `alternate-reverse` = "alternate-reverse".asInstanceOf[`alternate-reverse`]
   
@@ -162,7 +189,9 @@ object ionicCoreStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait android extends Platforms
+  sealed trait android
+    extends StObject
+       with Platforms
   @scala.inline
   def android: android = "android".asInstanceOf[android]
   
@@ -177,13 +206,16 @@ object ionicCoreStrings {
   def async: async = "async".asInstanceOf[async]
   
   @js.native
-  sealed trait auto extends AnimationFill
+  sealed trait auto
+    extends StObject
+       with AnimationFill
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
   sealed trait back
-    extends NavDirection
+    extends StObject
+       with NavDirection
        with RouterDirection
   @scala.inline
   def back: back = "back".asInstanceOf[back]
@@ -204,7 +236,9 @@ object ionicCoreStrings {
   def backButtonText: backButtonText = "backButtonText".asInstanceOf[backButtonText]
   
   @js.native
-  sealed trait backwards extends AnimationFill
+  sealed trait backwards
+    extends StObject
+       with AnimationFill
   @scala.inline
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   
@@ -214,22 +248,30 @@ object ionicCoreStrings {
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait bday extends AutocompleteTypes
+  sealed trait bday
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def bday: bday = "bday".asInstanceOf[bday]
   
   @js.native
-  sealed trait `bday-day` extends AutocompleteTypes
+  sealed trait `bday-day`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `bday-day`: `bday-day` = "bday-day".asInstanceOf[`bday-day`]
   
   @js.native
-  sealed trait `bday-month` extends AutocompleteTypes
+  sealed trait `bday-month`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `bday-month`: `bday-month` = "bday-month".asInstanceOf[`bday-month`]
   
   @js.native
-  sealed trait `bday-year` extends AutocompleteTypes
+  sealed trait `bday-year`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `bday-year`: `bday-year` = "bday-year".asInstanceOf[`bday-year`]
   
@@ -249,12 +291,16 @@ object ionicCoreStrings {
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait body extends ListenTargetOptions
+  sealed trait body
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait both extends AnimationFill
+  sealed trait both
+    extends StObject
+       with AnimationFill
   @scala.inline
   def both: both = "both".asInstanceOf[both]
   
@@ -269,7 +315,9 @@ object ionicCoreStrings {
   def bounded: bounded = "bounded".asInstanceOf[bounded]
   
   @js.native
-  sealed trait bubbles extends SpinnerTypes
+  sealed trait bubbles
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def bubbles: bubbles = "bubbles".asInstanceOf[bubbles]
   
@@ -289,57 +337,79 @@ object ionicCoreStrings {
   def cancel: cancel = "cancel".asInstanceOf[cancel]
   
   @js.native
-  sealed trait capacitor extends Platforms
+  sealed trait capacitor
+    extends StObject
+       with Platforms
   @scala.inline
   def capacitor: capacitor = "capacitor".asInstanceOf[capacitor]
   
   @js.native
-  sealed trait `cc-additional-name` extends AutocompleteTypes
+  sealed trait `cc-additional-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-additional-name`: `cc-additional-name` = "cc-additional-name".asInstanceOf[`cc-additional-name`]
   
   @js.native
-  sealed trait `cc-csc` extends AutocompleteTypes
+  sealed trait `cc-csc`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-csc`: `cc-csc` = "cc-csc".asInstanceOf[`cc-csc`]
   
   @js.native
-  sealed trait `cc-exp` extends AutocompleteTypes
+  sealed trait `cc-exp`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-exp`: `cc-exp` = "cc-exp".asInstanceOf[`cc-exp`]
   
   @js.native
-  sealed trait `cc-exp-month` extends AutocompleteTypes
+  sealed trait `cc-exp-month`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-exp-month`: `cc-exp-month` = "cc-exp-month".asInstanceOf[`cc-exp-month`]
   
   @js.native
-  sealed trait `cc-exp-year` extends AutocompleteTypes
+  sealed trait `cc-exp-year`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-exp-year`: `cc-exp-year` = "cc-exp-year".asInstanceOf[`cc-exp-year`]
   
   @js.native
-  sealed trait `cc-family-name` extends AutocompleteTypes
+  sealed trait `cc-family-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-family-name`: `cc-family-name` = "cc-family-name".asInstanceOf[`cc-family-name`]
   
   @js.native
-  sealed trait `cc-given-name` extends AutocompleteTypes
+  sealed trait `cc-given-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-given-name`: `cc-given-name` = "cc-given-name".asInstanceOf[`cc-given-name`]
   
   @js.native
-  sealed trait `cc-name` extends AutocompleteTypes
+  sealed trait `cc-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-name`: `cc-name` = "cc-name".asInstanceOf[`cc-name`]
   
   @js.native
-  sealed trait `cc-number` extends AutocompleteTypes
+  sealed trait `cc-number`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-number`: `cc-number` = "cc-number".asInstanceOf[`cc-number`]
   
   @js.native
-  sealed trait `cc-type` extends AutocompleteTypes
+  sealed trait `cc-type`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `cc-type`: `cc-type` = "cc-type".asInstanceOf[`cc-type`]
   
@@ -359,12 +429,16 @@ object ionicCoreStrings {
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait circles extends SpinnerTypes
+  sealed trait circles
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def circles: circles = "circles".asInstanceOf[circles]
   
   @js.native
-  sealed trait circular extends SpinnerTypes
+  sealed trait circular
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def circular: circular = "circular".asInstanceOf[circular]
   
@@ -379,47 +453,65 @@ object ionicCoreStrings {
   def condense: condense = "condense".asInstanceOf[condense]
   
   @js.native
-  sealed trait cordova extends Platforms
+  sealed trait cordova
+    extends StObject
+       with Platforms
   @scala.inline
   def cordova: cordova = "cordova".asInstanceOf[cordova]
   
   @js.native
-  sealed trait country extends AutocompleteTypes
+  sealed trait country
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def country: country = "country".asInstanceOf[country]
   
   @js.native
-  sealed trait `country-name` extends AutocompleteTypes
+  sealed trait `country-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `country-name`: `country-name` = "country-name".asInstanceOf[`country-name`]
   
   @js.native
-  sealed trait crescent extends SpinnerTypes
+  sealed trait crescent
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def crescent: crescent = "crescent".asInstanceOf[crescent]
   
   @js.native
-  sealed trait `current-password` extends AutocompleteTypes
+  sealed trait `current-password`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `current-password`: `current-password` = "current-password".asInstanceOf[`current-password`]
   
   @js.native
-  sealed trait danger extends PredefinedColors
+  sealed trait danger
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def danger: danger = "danger".asInstanceOf[danger]
   
   @js.native
-  sealed trait dark extends PredefinedColors
+  sealed trait dark
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def dark: dark = "dark".asInstanceOf[dark]
   
   @js.native
-  sealed trait date extends TextFieldTypes
+  sealed trait date
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait `datetime-local` extends TextFieldTypes
+  sealed trait `datetime-local`
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
   
@@ -429,7 +521,9 @@ object ionicCoreStrings {
   def decimal: decimal = "decimal".asInstanceOf[decimal]
   
   @js.native
-  sealed trait desktop extends Platforms
+  sealed trait desktop
+    extends StObject
+       with Platforms
   @scala.inline
   def desktop: desktop = "desktop".asInstanceOf[desktop]
   
@@ -444,7 +538,9 @@ object ionicCoreStrings {
   def determinate: determinate = "determinate".asInstanceOf[determinate]
   
   @js.native
-  sealed trait document extends ListenTargetOptions
+  sealed trait document
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def document: document = "document".asInstanceOf[document]
   
@@ -454,7 +550,9 @@ object ionicCoreStrings {
   def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait dots extends SpinnerTypes
+  sealed trait dots
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def dots: dots = "dots".asInstanceOf[dots]
   
@@ -464,20 +562,24 @@ object ionicCoreStrings {
   def eager: eager = "eager".asInstanceOf[eager]
   
   @js.native
-  sealed trait electron extends Platforms
+  sealed trait electron
+    extends StObject
+       with Platforms
   @scala.inline
   def electron: electron = "electron".asInstanceOf[electron]
   
   @js.native
   sealed trait email
-    extends AutocompleteTypes
+    extends StObject
+       with AutocompleteTypes
        with TextFieldTypes
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
   @js.native
   sealed trait end
-    extends AnimationPlayTo
+    extends StObject
+       with AnimationPlayTo
        with Side
   @scala.inline
   def end: end = "end".asInstanceOf[end]
@@ -508,7 +610,9 @@ object ionicCoreStrings {
   def `false`: `false` = "false".asInstanceOf[`false`]
   
   @js.native
-  sealed trait `family-name` extends AutocompleteTypes
+  sealed trait `family-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `family-name`: `family-name` = "family-name".asInstanceOf[`family-name`]
   
@@ -528,19 +632,24 @@ object ionicCoreStrings {
   def focus: focus = "focus".asInstanceOf[focus]
   
   @js.native
-  sealed trait footer extends CellType
+  sealed trait footer
+    extends StObject
+       with CellType
   @scala.inline
   def footer: footer = "footer".asInstanceOf[footer]
   
   @js.native
   sealed trait forward
-    extends NavDirection
+    extends StObject
+       with NavDirection
        with RouterDirection
   @scala.inline
   def forward: forward = "forward".asInstanceOf[forward]
   
   @js.native
-  sealed trait forwards extends AnimationFill
+  sealed trait forwards
+    extends StObject
+       with AnimationFill
   @scala.inline
   def forwards: forwards = "forwards".asInstanceOf[forwards]
   
@@ -550,7 +659,9 @@ object ionicCoreStrings {
   def full: full = "full".asInstanceOf[full]
   
   @js.native
-  sealed trait `given-name` extends AutocompleteTypes
+  sealed trait `given-name`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `given-name`: `given-name` = "given-name".asInstanceOf[`given-name`]
   
@@ -575,7 +686,9 @@ object ionicCoreStrings {
   def hardwareBackButton: hardwareBackButton = "hardwareBackButton".asInstanceOf[hardwareBackButton]
   
   @js.native
-  sealed trait header extends CellType
+  sealed trait header
+    extends StObject
+       with CellType
   @scala.inline
   def header: header = "header".asInstanceOf[header]
   
@@ -595,23 +708,30 @@ object ionicCoreStrings {
   def high: high = "high".asInstanceOf[high]
   
   @js.native
-  sealed trait `honorific-prefix` extends AutocompleteTypes
+  sealed trait `honorific-prefix`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `honorific-prefix`: `honorific-prefix` = "honorific-prefix".asInstanceOf[`honorific-prefix`]
   
   @js.native
-  sealed trait `honorific-suffix` extends AutocompleteTypes
+  sealed trait `honorific-suffix`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `honorific-suffix`: `honorific-suffix` = "honorific-suffix".asInstanceOf[`honorific-suffix`]
   
   @js.native
-  sealed trait hybrid extends Platforms
+  sealed trait hybrid
+    extends StObject
+       with Platforms
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
   sealed trait `icon-bottom`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
@@ -619,7 +739,8 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `icon-end`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
@@ -627,7 +748,8 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `icon-hide`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
@@ -635,7 +757,8 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `icon-start`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
@@ -643,7 +766,8 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `icon-top`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
@@ -655,7 +779,9 @@ object ionicCoreStrings {
   def ideographic: ideographic = "ideographic".asInstanceOf[ideographic]
   
   @js.native
-  sealed trait impp extends AutocompleteTypes
+  sealed trait impp
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def impp: impp = "impp".asInstanceOf[impp]
   
@@ -696,18 +822,23 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait ios
-    extends Mode
+    extends StObject
+       with Mode
        with Platforms
   @scala.inline
   def ios: ios = "ios".asInstanceOf[ios]
   
   @js.native
-  sealed trait ipad extends Platforms
+  sealed trait ipad
+    extends StObject
+       with Platforms
   @scala.inline
   def ipad: ipad = "ipad".asInstanceOf[ipad]
   
   @js.native
-  sealed trait iphone extends Platforms
+  sealed trait iphone
+    extends StObject
+       with Platforms
   @scala.inline
   def iphone: iphone = "iphone".asInstanceOf[iphone]
   
@@ -717,7 +848,9 @@ object ionicCoreStrings {
   def isolated: isolated = "isolated".asInstanceOf[isolated]
   
   @js.native
-  sealed trait item extends CellType
+  sealed trait item
+    extends StObject
+       with CellType
   @scala.inline
   def item: item = "item".asInstanceOf[item]
   
@@ -728,14 +861,17 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait `label-hide`
-    extends SegmentButtonLayout
+    extends StObject
+       with SegmentButtonLayout
        with typings.ionicCore.segmentInterfaceMod.SegmentButtonLayout
        with TabButtonLayout
   @scala.inline
   def `label-hide`: `label-hide` = "label-hide".asInstanceOf[`label-hide`]
   
   @js.native
-  sealed trait language extends AutocompleteTypes
+  sealed trait language
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def language: language = "language".asInstanceOf[language]
   
@@ -750,7 +886,9 @@ object ionicCoreStrings {
   def `lazy`: `lazy` = "lazy".asInstanceOf[`lazy`]
   
   @js.native
-  sealed trait light extends PredefinedColors
+  sealed trait light
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def light: light = "light".asInstanceOf[light]
   
@@ -760,12 +898,16 @@ object ionicCoreStrings {
   def `linear-rGB`: `linear-rGB` = "linear-rGB".asInstanceOf[`linear-rGB`]
   
   @js.native
-  sealed trait lines extends SpinnerTypes
+  sealed trait lines
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def lines: lines = "lines".asInstanceOf[lines]
   
   @js.native
-  sealed trait `lines-small` extends SpinnerTypes
+  sealed trait `lines-small`
+    extends StObject
+       with SpinnerTypes
   @scala.inline
   def `lines-small`: `lines-small` = "lines-small".asInstanceOf[`lines-small`]
   
@@ -795,7 +937,9 @@ object ionicCoreStrings {
   def mathematical: mathematical = "mathematical".asInstanceOf[mathematical]
   
   @js.native
-  sealed trait md extends Mode
+  sealed trait md
+    extends StObject
+       with Mode
   @scala.inline
   def md: md = "md".asInstanceOf[md]
   
@@ -805,7 +949,9 @@ object ionicCoreStrings {
   def medial: medial = "medial".asInstanceOf[medial]
   
   @js.native
-  sealed trait medium extends PredefinedColors
+  sealed trait medium
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
@@ -830,12 +976,16 @@ object ionicCoreStrings {
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait mobile extends Platforms
+  sealed trait mobile
+    extends StObject
+       with Platforms
   @scala.inline
   def mobile: mobile = "mobile".asInstanceOf[mobile]
   
   @js.native
-  sealed trait mobileweb extends Platforms
+  sealed trait mobileweb
+    extends StObject
+       with Platforms
   @scala.inline
   def mobileweb: mobileweb = "mobileweb".asInstanceOf[mobileweb]
   
@@ -855,12 +1005,16 @@ object ionicCoreStrings {
   def mode: mode = "mode".asInstanceOf[mode]
   
   @js.native
-  sealed trait month extends TextFieldTypes
+  sealed trait month
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait name extends AutocompleteTypes
+  sealed trait name
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
@@ -875,7 +1029,9 @@ object ionicCoreStrings {
   def never: never = "never".asInstanceOf[never]
   
   @js.native
-  sealed trait `new-password` extends AutocompleteTypes
+  sealed trait `new-password`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `new-password`: `new-password` = "new-password".asInstanceOf[`new-password`]
   
@@ -885,7 +1041,9 @@ object ionicCoreStrings {
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait nickname extends AutocompleteTypes
+  sealed trait nickname
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def nickname: nickname = "nickname".asInstanceOf[nickname]
   
@@ -895,7 +1053,9 @@ object ionicCoreStrings {
   def no: no = "no".asInstanceOf[no]
   
   @js.native
-  sealed trait none extends AnimationFill
+  sealed trait none
+    extends StObject
+       with AnimationFill
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -905,12 +1065,16 @@ object ionicCoreStrings {
   def nonzero: nonzero = "nonzero".asInstanceOf[nonzero]
   
   @js.native
-  sealed trait normal extends AnimationDirection
+  sealed trait normal
+    extends StObject
+       with AnimationDirection
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait number extends TextFieldTypes
+  sealed trait number
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -920,27 +1084,37 @@ object ionicCoreStrings {
   def numeric: numeric = "numeric".asInstanceOf[numeric]
   
   @js.native
-  sealed trait off extends AutocompleteTypes
+  sealed trait off
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait on extends AutocompleteTypes
+  sealed trait on
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait `one-time-code` extends AutocompleteTypes
+  sealed trait `one-time-code`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `one-time-code`: `one-time-code` = "one-time-code".asInstanceOf[`one-time-code`]
   
   @js.native
-  sealed trait organization extends AutocompleteTypes
+  sealed trait organization
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def organization: organization = "organization".asInstanceOf[organization]
   
   @js.native
-  sealed trait `organization-title` extends AutocompleteTypes
+  sealed trait `organization-title`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `organization-title`: `organization-title` = "organization-title".asInstanceOf[`organization-title`]
   
@@ -950,7 +1124,9 @@ object ionicCoreStrings {
   def outline: outline = "outline".asInstanceOf[outline]
   
   @js.native
-  sealed trait password extends TextFieldTypes
+  sealed trait password
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   
@@ -960,12 +1136,16 @@ object ionicCoreStrings {
   def persistConfig: persistConfig = "persistConfig".asInstanceOf[persistConfig]
   
   @js.native
-  sealed trait phablet extends Platforms
+  sealed trait phablet
+    extends StObject
+       with Platforms
   @scala.inline
   def phablet: phablet = "phablet".asInstanceOf[phablet]
   
   @js.native
-  sealed trait photo extends AutocompleteTypes
+  sealed trait photo
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def photo: photo = "photo".asInstanceOf[photo]
   
@@ -980,7 +1160,9 @@ object ionicCoreStrings {
   def pickerLeave: pickerLeave = "pickerLeave".asInstanceOf[pickerLeave]
   
   @js.native
-  sealed trait popover extends SelectInterface
+  sealed trait popover
+    extends StObject
+       with SelectInterface
   @scala.inline
   def popover: popover = "popover".asInstanceOf[popover]
   
@@ -995,7 +1177,9 @@ object ionicCoreStrings {
   def popoverLeave: popoverLeave = "popoverLeave".asInstanceOf[popoverLeave]
   
   @js.native
-  sealed trait `postal-code` extends AutocompleteTypes
+  sealed trait `postal-code`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `postal-code`: `postal-code` = "postal-code".asInstanceOf[`postal-code`]
   
@@ -1005,12 +1189,16 @@ object ionicCoreStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait primary extends PredefinedColors
+  sealed trait primary
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait pwa extends Platforms
+  sealed trait pwa
+    extends StObject
+       with Platforms
   @scala.inline
   def pwa: pwa = "pwa".asInstanceOf[pwa]
   
@@ -1040,7 +1228,9 @@ object ionicCoreStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait reverse extends AnimationDirection
+  sealed trait reverse
+    extends StObject
+       with AnimationDirection
   @scala.inline
   def reverse: reverse = "reverse".asInstanceOf[reverse]
   
@@ -1050,7 +1240,9 @@ object ionicCoreStrings {
   def rippleEffect: rippleEffect = "rippleEffect".asInstanceOf[rippleEffect]
   
   @js.native
-  sealed trait root extends RouterDirection
+  sealed trait root
+    extends StObject
+       with RouterDirection
   @scala.inline
   def root: root = "root".asInstanceOf[root]
   
@@ -1070,7 +1262,9 @@ object ionicCoreStrings {
   def sanitizerEnabled: sanitizerEnabled = "sanitizerEnabled".asInstanceOf[sanitizerEnabled]
   
   @js.native
-  sealed trait scale extends RefresherAnimationType
+  sealed trait scale
+    extends StObject
+       with RefresherAnimationType
   @scala.inline
   def scale: scale = "scale".asInstanceOf[scale]
   
@@ -1085,12 +1279,16 @@ object ionicCoreStrings {
   def scrollPadding: scrollPadding = "scrollPadding".asInstanceOf[scrollPadding]
   
   @js.native
-  sealed trait search extends TextFieldTypes
+  sealed trait search
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait secondary extends PredefinedColors
+  sealed trait secondary
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
@@ -1105,7 +1303,9 @@ object ionicCoreStrings {
   def send: send = "send".asInstanceOf[send]
   
   @js.native
-  sealed trait sex extends AutocompleteTypes
+  sealed trait sex
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def sex: sex = "sex".asInstanceOf[sex]
   
@@ -1141,7 +1341,8 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait start
-    extends AnimationPlayTo
+    extends StObject
+       with AnimationPlayTo
        with Side
   @scala.inline
   def start: start = "start".asInstanceOf[start]
@@ -1152,7 +1353,9 @@ object ionicCoreStrings {
   def statusTap: statusTap = "statusTap".asInstanceOf[statusTap]
   
   @js.native
-  sealed trait `street-address` extends AutocompleteTypes
+  sealed trait `street-address`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `street-address`: `street-address` = "street-address".asInstanceOf[`street-address`]
   
@@ -1162,7 +1365,9 @@ object ionicCoreStrings {
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait success extends PredefinedColors
+  sealed trait success
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -1187,39 +1392,52 @@ object ionicCoreStrings {
   def tabButtonLayout: tabButtonLayout = "tabButtonLayout".asInstanceOf[tabButtonLayout]
   
   @js.native
-  sealed trait tablet extends Platforms
+  sealed trait tablet
+    extends StObject
+       with Platforms
   @scala.inline
   def tablet: tablet = "tablet".asInstanceOf[tablet]
   
   @js.native
   sealed trait tel
-    extends AutocompleteTypes
+    extends StObject
+       with AutocompleteTypes
        with TextFieldTypes
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait `tel-area-code` extends AutocompleteTypes
+  sealed trait `tel-area-code`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `tel-area-code`: `tel-area-code` = "tel-area-code".asInstanceOf[`tel-area-code`]
   
   @js.native
-  sealed trait `tel-country-code` extends AutocompleteTypes
+  sealed trait `tel-country-code`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `tel-country-code`: `tel-country-code` = "tel-country-code".asInstanceOf[`tel-country-code`]
   
   @js.native
-  sealed trait `tel-extension` extends AutocompleteTypes
+  sealed trait `tel-extension`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `tel-extension`: `tel-extension` = "tel-extension".asInstanceOf[`tel-extension`]
   
   @js.native
-  sealed trait `tel-local` extends AutocompleteTypes
+  sealed trait `tel-local`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `tel-local`: `tel-local` = "tel-local".asInstanceOf[`tel-local`]
   
   @js.native
-  sealed trait `tel-national` extends AutocompleteTypes
+  sealed trait `tel-national`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `tel-national`: `tel-national` = "tel-national".asInstanceOf[`tel-national`]
   
@@ -1229,12 +1447,16 @@ object ionicCoreStrings {
   def terminal: terminal = "terminal".asInstanceOf[terminal]
   
   @js.native
-  sealed trait tertiary extends PredefinedColors
+  sealed trait tertiary
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def tertiary: tertiary = "tertiary".asInstanceOf[tertiary]
   
   @js.native
-  sealed trait text extends TextFieldTypes
+  sealed trait text
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -1254,7 +1476,9 @@ object ionicCoreStrings {
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait time extends TextFieldTypes
+  sealed trait time
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
@@ -1274,17 +1498,23 @@ object ionicCoreStrings {
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait `transaction-amount` extends AutocompleteTypes
+  sealed trait `transaction-amount`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `transaction-amount`: `transaction-amount` = "transaction-amount".asInstanceOf[`transaction-amount`]
   
   @js.native
-  sealed trait `transaction-currency` extends AutocompleteTypes
+  sealed trait `transaction-currency`
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def `transaction-currency`: `transaction-currency` = "transaction-currency".asInstanceOf[`transaction-currency`]
   
   @js.native
-  sealed trait translate extends RefresherAnimationType
+  sealed trait translate
+    extends StObject
+       with RefresherAnimationType
   @scala.inline
   def translate: translate = "translate".asInstanceOf[translate]
   
@@ -1300,28 +1530,37 @@ object ionicCoreStrings {
   
   @js.native
   sealed trait url
-    extends AutocompleteTypes
+    extends StObject
+       with AutocompleteTypes
        with TextFieldTypes
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
   @js.native
-  sealed trait username extends AutocompleteTypes
+  sealed trait username
+    extends StObject
+       with AutocompleteTypes
   @scala.inline
   def username: username = "username".asInstanceOf[username]
   
   @js.native
-  sealed trait warning extends PredefinedColors
+  sealed trait warning
+    extends StObject
+       with PredefinedColors
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait week extends TextFieldTypes
+  sealed trait week
+    extends StObject
+       with TextFieldTypes
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait window extends ListenTargetOptions
+  sealed trait window
+    extends StObject
+       with ListenTargetOptions
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   

@@ -2,61 +2,59 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashFrame extends StObject {
   
-  var actionScript: js.Any = js.native
+  var actionScript: js.Any
   
-  var duration: js.Any = js.native
+  var duration: js.Any
   
-  var elements: js.Array[FlashElement] = js.native
+  var elements: js.Array[FlashElement]
   
-  def getCustomEase(): js.Any = js.native
+  def getCustomEase(): js.Any
   
-  var hasCustomEase: js.Any = js.native
+  var hasCustomEase: js.Any
   
-  var labelType: js.Any = js.native
+  var labelType: js.Any
   
-  var motionTweenOrientToPath: js.Any = js.native
+  var motionTweenOrientToPath: js.Any
   
-  var motionTweenRotate: js.Any = js.native
+  var motionTweenRotate: js.Any
   
-  var motionTweenRotateTimes: js.Any = js.native
+  var motionTweenRotateTimes: js.Any
   
-  var motionTweenScale: js.Any = js.native
+  var motionTweenScale: js.Any
   
-  var motionTweenSnap: js.Any = js.native
+  var motionTweenSnap: js.Any
   
-  var motionTweenSync: js.Any = js.native
+  var motionTweenSync: js.Any
   
-  var name: js.Any = js.native
+  var name: js.Any
   
-  def setCustomEase(): js.Any = js.native
+  def setCustomEase(): js.Any
   
-  var shapeTweenBlend: js.Any = js.native
+  var shapeTweenBlend: js.Any
   
-  var soundEffect: js.Any = js.native
+  var soundEffect: js.Any
   
-  var soundLibraryItem: FlashSoundItem = js.native
+  var soundLibraryItem: FlashSoundItem
   
-  var soundLoop: js.Any = js.native
+  var soundLoop: js.Any
   
-  var soundLoopMode: js.Any = js.native
+  var soundLoopMode: js.Any
   
-  var soundName: js.Any = js.native
+  var soundName: js.Any
   
-  var soundSync: js.Any = js.native
+  var soundSync: js.Any
   
-  var startFrame: js.Any = js.native
+  var startFrame: js.Any
   
-  var tweenEasing: js.Any = js.native
+  var tweenEasing: js.Any
   
-  var tweenType: js.Any = js.native
+  var tweenType: js.Any
   
-  var useSingleEaseCurve: js.Any = js.native
+  var useSingleEaseCurve: js.Any
 }
 object FlashFrame {
   

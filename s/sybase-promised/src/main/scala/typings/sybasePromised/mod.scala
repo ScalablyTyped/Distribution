@@ -2,33 +2,42 @@ package typings.sybasePromised
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sybase-promised", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SybasePromised {
+  class ^ protected ()
+    extends StObject
+       with SybasePromised {
     def this(options: ConnectionOptions) = this()
+    
+    /* CompleteClass */
+    override def connect(): js.Promise[this.type] = js.native
+    
+    /* CompleteClass */
+    override def disconnect(): Unit = js.native
+    
+    /* CompleteClass */
+    override def query(sql: String): js.Promise[js.Array[js.Any]] = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var dbname: String = js.native
+    var dbname: String
     
-    var host: String = js.native
+    var host: String
     
-    var logTiming: js.UndefOr[Boolean] = js.native
+    var logTiming: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var pathToJavaBtidge: js.UndefOr[String] = js.native
+    var pathToJavaBtidge: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var username: String = js.native
+    var username: String
   }
   object ConnectionOptions {
     
@@ -70,14 +79,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SybasePromised extends StObject {
     
-    def connect(): js.Promise[this.type] = js.native
+    def connect(): js.Promise[this.type]
     
-    def disconnect(): Unit = js.native
+    def disconnect(): Unit
     
-    def query(sql: String): js.Promise[js.Array[_]] = js.native
+    def query(sql: String): js.Promise[js.Array[js.Any]]
   }
   object SybasePromised {
     
@@ -85,7 +93,7 @@ object mod {
     def apply(
       connect: () => js.Promise[SybasePromised],
       disconnect: () => Unit,
-      query: String => js.Promise[js.Array[_]]
+      query: String => js.Promise[js.Array[js.Any]]
     ): SybasePromised = {
       val __obj = js.Dynamic.literal(connect = js.Any.fromFunction0(connect), disconnect = js.Any.fromFunction0(disconnect), query = js.Any.fromFunction1(query))
       __obj.asInstanceOf[SybasePromised]
@@ -101,7 +109,7 @@ object mod {
       def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setQuery(value: String => js.Promise[js.Array[_]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
+      def setQuery(value: String => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "query", js.Any.fromFunction1(value))
     }
   }
 }

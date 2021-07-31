@@ -3,20 +3,18 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBlock extends StObject {
   
   /** Block batches */
-  var batches: js.UndefOr[js.Array[IBatch] | Null] = js.native
+  var batches: js.UndefOr[js.Array[IBatch] | Null] = js.undefined
   
   /** Block header */
-  var header: js.UndefOr[Uint8Array | Null] = js.native
+  var header: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Block headerSignature */
-  var headerSignature: js.UndefOr[String | Null] = js.native
+  var headerSignature: js.UndefOr[String | Null] = js.undefined
 }
 object IBlock {
   

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassedSizeSliderBreaks extends Object {
+trait ClassedSizeSliderBreaks
+  extends StObject
+     with Object {
   
   /**
     * The max value of the break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#breaks)
     */
-  var max: Double = js.native
+  var max: Double
   
   /**
     * The min value of the break.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#breaks)
     */
-  var min: Double = js.native
+  var min: Double
   
   /**
     * The size in points of the symbol representing features with values within the given `min` and `max`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-ClassedSizeSlider.html#breaks)
     */
-  var size: Double = js.native
+  var size: Double
 }
 object ClassedSizeSliderBreaks {
   

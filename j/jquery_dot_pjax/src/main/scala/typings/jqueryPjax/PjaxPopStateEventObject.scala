@@ -3,19 +3,19 @@ package typings.jqueryPjax
 import typings.jquery.JQuery.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for pjax:popstate event.
   */
-@js.native
-trait PjaxPopStateEventObject extends Event {
+trait PjaxPopStateEventObject
+  extends StObject
+     with Event {
   
   /**
     * Navigation direction. Could be "back" or "forward".
     */
-  var direction: String = js.native
+  var direction: String
 }
 object PjaxPopStateEventObject {
   

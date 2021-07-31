@@ -1,7 +1,6 @@
 package typings.semanticUiReactEventStack
 
 import typings.react.mod.RefObject
-import typings.semanticUiReactEventStack.anon.Called
 import typings.std.Document
 import typings.std.EventListener
 import typings.std.HTMLElement
@@ -9,12 +8,15 @@ import typings.std.Map
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  type CallableEventListener = EventListener with Called
+  @js.native
+  trait CallableEventListener extends EventListener {
+    
+    var called: js.UndefOr[Boolean] = js.native
+  }
   
   type EventListeners = js.Array[CallableEventListener]
   
@@ -24,12 +26,11 @@ object typesMod {
   
   type InputTargetElement = Boolean | String | TargetElement | RefObject[TargetElement]
   
-  @js.native
   trait Options extends StObject {
     
-    var pool: js.UndefOr[String] = js.native
+    var pool: js.UndefOr[String] = js.undefined
     
-    var target: js.UndefOr[InputTargetElement] = js.native
+    var target: js.UndefOr[InputTargetElement] = js.undefined
   }
   object Options {
     

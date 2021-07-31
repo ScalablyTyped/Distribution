@@ -2,17 +2,15 @@ package typings.keya
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key[T] extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: T = js.native
+    var value: T
   }
   object Key {
     
@@ -23,7 +21,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeyMutableBuilder[Self <: Key[_], T] (val x: Self with Key[T]) extends AnyVal {
+    implicit class KeyMutableBuilder[Self <: Key[?], T] (val x: Self & Key[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value[T] extends StObject {
     
-    var key: js.Any = js.native
+    var key: js.Any
     
-    var value: T = js.native
+    var value: T
   }
   object Value {
     
@@ -49,7 +46,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ValueMutableBuilder[Self <: Value[_], T] (val x: Self with Value[T]) extends AnyVal {
+    implicit class ValueMutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       @scala.inline
       def setKey(value: js.Any): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

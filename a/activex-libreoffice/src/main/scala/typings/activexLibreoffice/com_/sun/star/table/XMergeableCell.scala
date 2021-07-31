@@ -3,30 +3,30 @@ package typings.activexLibreoffice.com_.sun.star.table
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access information about a cell that is mergeable with other sells.
   * @see com.sun.star.table.Cell
   */
-@js.native
-trait XMergeableCell extends XCell {
+trait XMergeableCell
+  extends StObject
+     with XCell {
   
   /** returns the number of rows this cell spans. */
-  val ColumnSpan: Double = js.native
+  val ColumnSpan: Double
   
   /** returns the number of columns this cell spans. */
-  val RowSpan: Double = js.native
+  val RowSpan: Double
   
   /** returns the number of rows this cell spans. */
-  def getColumnSpan(): Double = js.native
+  def getColumnSpan(): Double
   
   /** returns the number of columns this cell spans. */
-  def getRowSpan(): Double = js.native
+  def getRowSpan(): Double
   
   /** returns `TRUE` if this cell is merged with another cell. */
-  def isMerged(): Boolean = js.native
+  def isMerged(): Boolean
 }
 object XMergeableCell {
   

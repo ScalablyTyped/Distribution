@@ -2,13 +2,11 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenIDConnectProviderListEntry extends StObject {
   
-  var Arn: js.UndefOr[arnType] = js.native
+  var Arn: js.UndefOr[arnType] = js.undefined
 }
 object OpenIDConnectProviderListEntry {
   

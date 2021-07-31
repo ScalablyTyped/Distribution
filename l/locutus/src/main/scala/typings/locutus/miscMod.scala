@@ -2,25 +2,23 @@ package typings.locutus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miscMod {
   
-  @JSImport("locutus/php/misc", "pack")
+  @JSImport("locutus/php/misc", JSImport.Namespace)
   @js.native
-  def pack(args: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("locutus/php/misc", "uniqid")
-  @js.native
-  def uniqid(): js.Any = js.native
-  @JSImport("locutus/php/misc", "uniqid")
-  @js.native
-  def uniqid(prefix: js.UndefOr[scala.Nothing], moreEntropy: js.Any): js.Any = js.native
-  @JSImport("locutus/php/misc", "uniqid")
-  @js.native
-  def uniqid(prefix: js.Any): js.Any = js.native
-  @JSImport("locutus/php/misc", "uniqid")
-  @js.native
-  def uniqid(prefix: js.Any, moreEntropy: js.Any): js.Any = js.native
+  @scala.inline
+  def pack(args: js.Any*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def uniqid(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqid")().asInstanceOf[js.Any]
+  @scala.inline
+  def uniqid(prefix: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("uniqid")(prefix.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def uniqid(prefix: js.Any, moreEntropy: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqid")(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def uniqid(prefix: Unit, moreEntropy: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("uniqid")(prefix.asInstanceOf[js.Any], moreEntropy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

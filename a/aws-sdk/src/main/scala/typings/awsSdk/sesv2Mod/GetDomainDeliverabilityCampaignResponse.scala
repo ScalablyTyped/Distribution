@@ -2,16 +2,14 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainDeliverabilityCampaignResponse extends StObject {
   
   /**
     * An object that contains the deliverability data for the campaign.
     */
-  var DomainDeliverabilityCampaign: typings.awsSdk.sesv2Mod.DomainDeliverabilityCampaign = js.native
+  var DomainDeliverabilityCampaign: typings.awsSdk.sesv2Mod.DomainDeliverabilityCampaign
 }
 object GetDomainDeliverabilityCampaignResponse {
   

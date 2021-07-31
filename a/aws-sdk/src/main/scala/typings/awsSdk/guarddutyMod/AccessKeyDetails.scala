@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessKeyDetails extends StObject {
   
   /**
     * The access key ID of the user.
     */
-  var AccessKeyId: js.UndefOr[String] = js.native
+  var AccessKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The principal ID of the user.
     */
-  var PrincipalId: js.UndefOr[String] = js.native
+  var PrincipalId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user.
     */
-  var UserName: js.UndefOr[String] = js.native
+  var UserName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the user.
     */
-  var UserType: js.UndefOr[String] = js.native
+  var UserType: js.UndefOr[String] = js.undefined
 }
 object AccessKeyDetails {
   

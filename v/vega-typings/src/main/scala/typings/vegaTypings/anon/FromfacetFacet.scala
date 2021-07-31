@@ -4,16 +4,16 @@ import typings.vegaTypings.markMod.Facet
 import typings.vegaTypings.markMod.FromFacet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-typings.vega-typings/types/spec/mark.From & {  facet :vega-typings.vega-typings/types/spec/mark.Facet} */
-@js.native
-trait FromfacetFacet extends FromFacet {
+trait FromfacetFacet
+  extends StObject
+     with FromFacet {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
-  var facet: Facet = js.native
+  var facet: Facet
 }
 object FromfacetFacet {
   

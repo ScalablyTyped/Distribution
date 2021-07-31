@@ -3,21 +3,19 @@ package typings.jqueryui.JQueryUI
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderEvents extends StObject {
   
-  var change: js.UndefOr[SliderEvent] = js.native
+  var change: js.UndefOr[SliderEvent] = js.undefined
   
-  var create: js.UndefOr[SliderEvent] = js.native
+  var create: js.UndefOr[SliderEvent] = js.undefined
   
-  var slide: js.UndefOr[SliderEvent] = js.native
+  var slide: js.UndefOr[SliderEvent] = js.undefined
   
-  var start: js.UndefOr[SliderEvent] = js.native
+  var start: js.UndefOr[SliderEvent] = js.undefined
   
-  var stop: js.UndefOr[SliderEvent] = js.native
+  var stop: js.UndefOr[SliderEvent] = js.undefined
 }
 object SliderEvents {
   

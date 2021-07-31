@@ -3,17 +3,15 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValue extends StObject {
   
-  def Clone(): IPropertyValue = js.native
+  def Clone(): IPropertyValue
   
-  def CloneFrom(PropertyValue: IPropertyValue): Unit = js.native
+  def CloneFrom(PropertyValue: IPropertyValue): Unit
   
-  def GetValueAsLocalizedText(): String = js.native
+  def GetValueAsLocalizedText(): String
   
   def GetValueAsText(
     Localized: Boolean,
@@ -22,15 +20,15 @@ trait IPropertyValue extends StObject {
     LongDateFormat: Boolean,
     NoSeconds: Boolean,
     NumericValueAsKilobytes: Boolean
-  ): String = js.native
+  ): String
   
-  def GetValueAsUnlocalizedText(): String = js.native
+  def GetValueAsUnlocalizedText(): String
   
-  var PropertyDef: MFBuiltInPropertyDef | Double = js.native
+  var PropertyDef: MFBuiltInPropertyDef | Double
   
-  var TypedValue: ITypedValue = js.native
+  var TypedValue: ITypedValue
   
-  var Value: ITypedValue = js.native
+  var Value: ITypedValue
 }
 object IPropertyValue {
   

@@ -2,31 +2,29 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagnosticInfo extends StObject {
   
-  var code: Double = js.native
+  var code: Double
   
-  var diagnosticIndex: Double = js.native
+  var diagnosticIndex: Double
   
-  var formattedMessage: js.UndefOr[String] = js.native
+  var formattedMessage: js.UndefOr[String] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var messageArguments: js.UndefOr[js.Array[_]] = js.native
+  var messageArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var node: js.UndefOr[Node2[SyntaxKind]] = js.native
+  var node: js.UndefOr[Node2[SyntaxKind]] = js.undefined
   
-  var pos: Double = js.native
+  var pos: Double
   
-  var range: js.UndefOr[Range2] = js.native
+  var range: js.UndefOr[Range2] = js.undefined
   
-  var sourceFile: js.UndefOr[SourceFile] = js.native
+  var sourceFile: js.UndefOr[SourceFile] = js.undefined
   
-  var warning: Boolean = js.native
+  var warning: Boolean
 }
 object DiagnosticInfo {
   
@@ -55,7 +53,7 @@ object DiagnosticInfo {
     def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMessageArguments(value: js.Array[_]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
+    def setMessageArguments(value: js.Array[js.Any]): Self = StObject.set(x, "messageArguments", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMessageArgumentsUndefined: Self = StObject.set(x, "messageArguments", js.undefined)

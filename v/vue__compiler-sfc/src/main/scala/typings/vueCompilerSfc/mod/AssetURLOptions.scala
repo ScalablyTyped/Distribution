@@ -2,24 +2,22 @@ package typings.vueCompilerSfc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetURLOptions extends StObject {
   
   /**
     * If base is provided, instead of transforming relative asset urls into
     * imports, they will be directly rewritten to absolute urls.
     */
-  var base: js.UndefOr[String | Null] = js.native
+  var base: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If true, also processes absolute urls.
     */
-  var includeAbsolute: js.UndefOr[Boolean] = js.native
+  var includeAbsolute: js.UndefOr[Boolean] = js.undefined
   
-  var tags: js.UndefOr[AssetURLTagConfig] = js.native
+  var tags: js.UndefOr[AssetURLTagConfig] = js.undefined
 }
 object AssetURLOptions {
   

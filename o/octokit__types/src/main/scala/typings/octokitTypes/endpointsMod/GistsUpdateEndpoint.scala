@@ -2,23 +2,21 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GistsUpdateEndpoint extends StObject {
   
   /**
     * A descriptive name for this gist.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The filenames and content that make up this gist.
     */
-  var files: js.UndefOr[GistsUpdateParamsFiles] = js.native
+  var files: js.UndefOr[GistsUpdateParamsFiles] = js.undefined
   
-  var gist_id: String = js.native
+  var gist_id: String
 }
 object GistsUpdateEndpoint {
   

@@ -3,21 +3,19 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanPreventDefaultData extends StObject {
   
-  var canPreventDefault: `true` = js.native
+  var canPreventDefault: `true`
   
-  var data: Action = js.native
+  var data: Action
 }
 object CanPreventDefaultData {
   
   @scala.inline
-  def apply(canPreventDefault: `true`, data: Action): CanPreventDefaultData = {
-    val __obj = js.Dynamic.literal(canPreventDefault = canPreventDefault.asInstanceOf[js.Any], data = data.asInstanceOf[js.Any])
+  def apply(data: Action): CanPreventDefaultData = {
+    val __obj = js.Dynamic.literal(canPreventDefault = true, data = data.asInstanceOf[js.Any])
     __obj.asInstanceOf[CanPreventDefaultData]
   }
   

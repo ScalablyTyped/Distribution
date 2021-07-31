@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeElasticLoadBalancersResult extends StObject {
   
   /**
     * A list of ElasticLoadBalancer objects that describe the specified Elastic Load Balancing instances.
     */
-  var ElasticLoadBalancers: js.UndefOr[typings.awsSdk.opsworksMod.ElasticLoadBalancers] = js.native
+  var ElasticLoadBalancers: js.UndefOr[typings.awsSdk.opsworksMod.ElasticLoadBalancers] = js.undefined
 }
 object DescribeElasticLoadBalancersResult {
   

@@ -2,7 +2,6 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * BackendService resource, based on the &quot;longest-match&quot; of the
   * URL&#39;s host and path.
   */
-@js.native
 trait SchemaUrlMap extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * defaultRouteAction takes effect when none of the  hostRules match. The
@@ -27,7 +25,7 @@ trait SchemaUrlMap extends StObject {
     * defaultRouteAction cannot contain any  weightedBackendServices. Only one
     * of defaultRouteAction or defaultUrlRedirect must be set.
     */
-  var defaultRouteAction: js.UndefOr[SchemaHttpRouteAction] = js.native
+  var defaultRouteAction: js.UndefOr[SchemaHttpRouteAction] = js.undefined
   
   /**
     * The full or partial URL of the defaultService resource to which traffic
@@ -40,20 +38,20 @@ trait SchemaUrlMap extends StObject {
     * defaultService, defaultUrlRedirect  or
     * defaultRouteAction.weightedBackendService must be set.
     */
-  var defaultService: js.UndefOr[String] = js.native
+  var defaultService: js.UndefOr[String] = js.undefined
   
   /**
     * When none of the specified hostRules match, the request is redirected to
     * a URL specified by defaultUrlRedirect. If defaultUrlRedirect is
     * specified, defaultService or defaultRouteAction must not be set.
     */
-  var defaultUrlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.native
+  var defaultUrlRedirect: js.UndefOr[SchemaHttpRedirectAction] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Fingerprint of this resource. A hash of the contents stored in this
@@ -63,30 +61,30 @@ trait SchemaUrlMap extends StObject {
     * with error 412 conditionNotMet.  To see the latest fingerprint, make a
     * get() request to retrieve a UrlMap.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies changes to request and response headers that need to take
     * effect for the selected backendService. The headerAction specified here
     * take effect after headerAction specified under pathMatcher.
     */
-  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.native
+  var headerAction: js.UndefOr[SchemaHttpHeaderAction] = js.undefined
   
   /**
     * The list of HostRules to use against the URL.
     */
-  var hostRules: js.UndefOr[js.Array[SchemaHostRule]] = js.native
+  var hostRules: js.UndefOr[js.Array[SchemaHostRule]] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#urlMaps for url maps.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -97,12 +95,12 @@ trait SchemaUrlMap extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The list of named PathMatchers to use against the URL.
     */
-  var pathMatchers: js.UndefOr[js.Array[SchemaPathMatcher]] = js.native
+  var pathMatchers: js.UndefOr[js.Array[SchemaPathMatcher]] = js.undefined
   
   /**
     * [Output Only] URL of the region where the regional URL map resides. This
@@ -110,19 +108,19 @@ trait SchemaUrlMap extends StObject {
     * as part of the HTTP request URL. It is not settable as a field in the
     * request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * The list of expected URL mapping tests. Request to update this UrlMap
     * will succeed only if all of the test cases pass. You can specify a
     * maximum of 100 tests per UrlMap.
     */
-  var tests: js.UndefOr[js.Array[SchemaUrlMapTest]] = js.native
+  var tests: js.UndefOr[js.Array[SchemaUrlMapTest]] = js.undefined
 }
 object SchemaUrlMap {
   

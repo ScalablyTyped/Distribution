@@ -2,17 +2,15 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HierarchicalDataSource extends StObject {
   
-  def dataAt(path: js.Object, keyspath: js.Object): Unit = js.native
+  def dataAt(path: js.Object, keyspath: js.Object): Unit
   
-  def dataBind(callback: js.Object, callee: js.Object): Unit = js.native
+  def dataBind(callback: js.Object, callee: js.Object): Unit
   
-  def root(): Unit = js.native
+  def root(): Unit
 }
 object HierarchicalDataSource {
   

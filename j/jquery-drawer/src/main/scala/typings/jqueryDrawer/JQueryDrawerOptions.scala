@@ -3,17 +3,15 @@ package typings.jqueryDrawer
 import typings.iscroll.IScrollOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryDrawerOptions extends StObject {
   
-  var `class`: js.UndefOr[JQueryDrawerClassOptions] = js.native
+  var `class`: js.UndefOr[JQueryDrawerClassOptions] = js.undefined
   
-  var iscroll: js.UndefOr[IScrollOptions] = js.native
+  var iscroll: js.UndefOr[IScrollOptions] = js.undefined
   
-  var showOverlay: js.UndefOr[Boolean] = js.native
+  var showOverlay: js.UndefOr[Boolean] = js.undefined
 }
 object JQueryDrawerOptions {
   

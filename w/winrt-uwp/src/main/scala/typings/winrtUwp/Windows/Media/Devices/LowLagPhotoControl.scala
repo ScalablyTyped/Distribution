@@ -5,37 +5,35 @@ import typings.winrtUwp.Windows.Media.MediaProperties.MediaRatio
 import typings.winrtUwp.Windows.Media.MediaProperties.MediaThumbnailFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for managing the low shutter lag photo capture mode on the capture device. */
-@js.native
 trait LowLagPhotoControl extends StObject {
   
   /** Gets or sets the desired size for thumbnails, which is the largest length of the image, either width or height. */
-  var desiredThumbnailSize: Double = js.native
+  var desiredThumbnailSize: Double
   
   /**
     * Gets the current frame rate at which pictures can be taken.
     * @return The current frame rate.
     */
-  def getCurrentFrameRate(): MediaRatio = js.native
+  def getCurrentFrameRate(): MediaRatio
   
   /**
     * Gets the highest frame rate supported when video and photos are being captured concurrently.
     * @param captureProperties The media encoding properties.
     * @return The highest concurrent frames per second.
     */
-  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio = js.native
+  def getHighestConcurrentFrameRate(captureProperties: IMediaEncodingProperties): MediaRatio
   
   /** Gets a value that specifies if hardware acceleration is supported for thumbnails. */
-  var hardwareAcceleratedThumbnailSupported: Double = js.native
+  var hardwareAcceleratedThumbnailSupported: Double
   
   /** Gets a value that enables and disables thumbnail support. */
-  var thumbnailEnabled: Boolean = js.native
+  var thumbnailEnabled: Boolean
   
   /** Gets or sets the media format for the thumbnails. */
-  var thumbnailFormat: MediaThumbnailFormat = js.native
+  var thumbnailFormat: MediaThumbnailFormat
 }
 object LowLagPhotoControl {
   

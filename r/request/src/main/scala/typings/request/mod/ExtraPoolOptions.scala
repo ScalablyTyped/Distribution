@@ -2,13 +2,13 @@ package typings.request.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtraPoolOptions extends PoolOptions {
+trait ExtraPoolOptions
+  extends StObject
+     with PoolOptions {
   
-  var maxSockets: js.UndefOr[Double] = js.native
+  var maxSockets: js.UndefOr[Double] = js.undefined
 }
 object ExtraPoolOptions {
   

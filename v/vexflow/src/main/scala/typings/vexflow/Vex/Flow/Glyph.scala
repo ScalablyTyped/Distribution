@@ -5,33 +5,31 @@ import typings.vexflow.anon.Cache
 import typings.vexflow.anon.Xmax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Glyph extends StObject {
   
-  def getContext(): IRenderContext = js.native
+  def getContext(): IRenderContext
   
-  def getMetrics(): Xmax = js.native
+  def getMetrics(): Xmax
   
-  def render(ctx: IRenderContext, x_pos: Double, y_pos: Double): Unit = js.native
+  def render(ctx: IRenderContext, x_pos: Double, y_pos: Double): Unit
   
-  def renderToStave(x: Double): Unit = js.native
+  def renderToStave(x: Double): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def setContext(context: IRenderContext): Glyph = js.native
+  def setContext(context: IRenderContext): Glyph
   
-  def setOptions(options: Cache): Unit = js.native
+  def setOptions(options: Cache): Unit
   
-  def setStave(stave: Stave): Glyph = js.native
+  def setStave(stave: Stave): Glyph
   
-  def setWidth(width: Double): Glyph = js.native
+  def setWidth(width: Double): Glyph
   
-  def setXShift(x_shift: Double): Glyph = js.native
+  def setXShift(x_shift: Double): Glyph
   
-  def setYShift(y_shift: Double): Glyph = js.native
+  def setYShift(y_shift: Double): Glyph
 }
 object Glyph {
   

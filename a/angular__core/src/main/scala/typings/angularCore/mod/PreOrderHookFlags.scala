@@ -6,7 +6,6 @@ import typings.angularCore.angularCoreNumbers.`65535`
 import typings.angularCore.angularCoreNumbers.`65536`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** More flags associated with an LView (saved in LView[PREORDER_HOOK_FLAGS]) */

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1InputConfig extends StObject {
   
   /** Optional. The type of annotation to be performed on this data. You must specify this field if you are using this InputConfig in an EvaluationJob. */
-  var annotationType: js.UndefOr[String] = js.native
+  var annotationType: js.UndefOr[String] = js.undefined
   
   /** Source located in BigQuery. You must specify this field if you are using this InputConfig in an EvaluationJob. */
-  var bigquerySource: js.UndefOr[GoogleCloudDatalabelingV1beta1BigQuerySource] = js.native
+  var bigquerySource: js.UndefOr[GoogleCloudDatalabelingV1beta1BigQuerySource] = js.undefined
   
   /**
     * Optional. Metadata about annotations for the input. You must specify this field if you are using this InputConfig in an EvaluationJob for a model version that performs
     * classification.
     */
-  var classificationMetadata: js.UndefOr[GoogleCloudDatalabelingV1beta1ClassificationMetadata] = js.native
+  var classificationMetadata: js.UndefOr[GoogleCloudDatalabelingV1beta1ClassificationMetadata] = js.undefined
   
   /** Required. Data type must be specifed when user tries to import data. */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /** Source located in Cloud Storage. */
-  var gcsSource: js.UndefOr[GoogleCloudDatalabelingV1beta1GcsSource] = js.native
+  var gcsSource: js.UndefOr[GoogleCloudDatalabelingV1beta1GcsSource] = js.undefined
   
   /** Required for text import, as language code must be specified. */
-  var textMetadata: js.UndefOr[GoogleCloudDatalabelingV1beta1TextMetadata] = js.native
+  var textMetadata: js.UndefOr[GoogleCloudDatalabelingV1beta1TextMetadata] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1InputConfig {
   

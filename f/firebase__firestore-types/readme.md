@@ -10,9 +10,9 @@ Typings are for version 2.0.0
 | ------------------ | :-------------: |
 | Full name          | @firebase/firestore-types |
 | Keywords           | - |
-| # releases         | 1141 |
-| # dependents       | 21 |
-| # downloads        | 31246834 |
+| # releases         | 1300 |
+| # dependents       | 24 |
+| # downloads        | 36131520 |
 | # stars            | 0 |
 
 ## Links

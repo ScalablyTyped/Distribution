@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePresignedNotebookInstanceUrlInput extends StObject {
   
   /**
     * The name of the notebook instance.
     */
-  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName = js.native
+  var NotebookInstanceName: typings.awsSdk.sagemakerMod.NotebookInstanceName
   
   /**
     * The duration of the session, in seconds. The default is 12 hours.
     */
-  var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.SessionExpirationDurationInSeconds] = js.native
+  var SessionExpirationDurationInSeconds: js.UndefOr[typings.awsSdk.sagemakerMod.SessionExpirationDurationInSeconds] = js.undefined
 }
 object CreatePresignedNotebookInstanceUrlInput {
   

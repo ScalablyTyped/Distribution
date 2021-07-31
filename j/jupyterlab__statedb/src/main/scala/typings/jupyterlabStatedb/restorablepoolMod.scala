@@ -7,7 +7,6 @@ import typings.luminoDisposable.mod.IObservableDisposable
 import typings.luminoSignaling.mod.ISignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object restorablepoolMod {
@@ -15,7 +14,8 @@ object restorablepoolMod {
   @JSImport("@jupyterlab/statedb/lib/restorablepool", "RestorablePool")
   @js.native
   class RestorablePool[T /* <: IObservableDisposable */] protected ()
-    extends IObjectPool[T]
+    extends StObject
+       with IObjectPool[T]
        with IRestorable[T, js.Any] {
     /**
       * Create a new restorable pool.
@@ -61,6 +61,14 @@ object restorablepoolMod {
     def add(obj: T): js.Promise[Unit] = js.native
     
     /**
+      * A signal emitted when an object is added.
+      *
+      * ####
+      * This signal does not emit if an object is added using `inject()`.
+      */
+    /* CompleteClass */
+    override val added: ISignal[this.type, T] = js.native
+    /**
       * A signal emitted when an object object is added.
       *
       * #### Notes
@@ -70,6 +78,20 @@ object restorablepoolMod {
     @JSName("added")
     def added_MRestorablePool: ISignal[this.type, T] = js.native
     
+    /**
+      * The current object.
+      */
+    /* CompleteClass */
+    override val current: T | Null = js.native
+    
+    /**
+      * A signal emitted when the current object changes.
+      *
+      * #### Notes
+      * If the last object being tracked is disposed, `null` will be emitted.
+      */
+    /* CompleteClass */
+    override val currentChanged: ISignal[this.type, T | Null] = js.native
     /**
       * A signal emitted when the current widget changes.
       */
@@ -90,6 +112,55 @@ object restorablepoolMod {
     def current_MRestorablePool: T | Null = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
+      * Filter the objects in the pool based on a predicate.
+      *
+      * @param fn - The function by which to filter.
+      */
+    /* CompleteClass */
+    override def filter(fn: js.Function1[T, Boolean]): js.Array[T] = js.native
+    
+    /**
+      * Find the first object in the pool that satisfies a filter function.
+      *
+      * @param - fn The filter function to call on each object.
+      *
+      * #### Notes
+      * If nothing is found, the value returned is `undefined`.
+      */
+    /* CompleteClass */
+    override def find(fn: js.Function1[T, Boolean]): js.UndefOr[T] = js.native
+    
+    /**
+      * Iterate through each object in the pool.
+      *
+      * @param fn - The function to call on each object.
+      */
+    /* CompleteClass */
+    override def forEach(fn: js.Function1[T, Unit]): Unit = js.native
+    
+    /**
+      * Check if this pool has the specified object.
+      *
+      * @param obj - The object whose existence is being checked.
+      */
+    /* CompleteClass */
+    override def has(obj: T): Boolean = js.native
+    
+    /**
       * Inject an object into the restorable pool without the pool handling its
       * restoration lifecycle.
       *
@@ -97,6 +168,14 @@ object restorablepoolMod {
       */
     def inject(obj: T): js.Promise[Unit] = js.native
     
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     /**
       * Test whether the pool is disposed.
       */
@@ -108,6 +187,22 @@ object restorablepoolMod {
       */
     val namespace: String = js.native
     
+    /**
+      * Restore the objects in this restorable collection.
+      *
+      * @param options - The configuration options that describe restoration.
+      *
+      * @returns A promise that settles when restored with `any` results.
+      *
+      */
+    /* CompleteClass */
+    override def restore(options: typings.jupyterlabStatedb.interfacesMod.IRestorable.IOptions[T]): js.Promise[js.Any] = js.native
+    
+    /**
+      * A promise that settles when the collection has been restored.
+      */
+    /* CompleteClass */
+    override val restored: js.Promise[js.Any] = js.native
     /**
       * A promise resolved when the restorable pool has been restored.
       */
@@ -124,9 +219,19 @@ object restorablepoolMod {
     /**
       * The number of objects held by the pool.
       */
+    /* CompleteClass */
+    override val size: Double = js.native
+    /**
+      * The number of objects held by the pool.
+      */
     @JSName("size")
     def size_MRestorablePool: Double = js.native
     
+    /**
+      * A signal emitted when an object is updated.
+      */
+    /* CompleteClass */
+    override val updated: ISignal[this.type, T] = js.native
     /**
       * A signal emitted when an object is updated.
       */
@@ -138,13 +243,12 @@ object restorablepoolMod {
     /**
       * The instantiation options for the restorable pool.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * A namespace designating objects from this pool.
         */
-      var namespace: String = js.native
+      var namespace: String
     }
     object IOptions {
       

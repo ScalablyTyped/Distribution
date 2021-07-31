@@ -3,15 +3,13 @@ package typings.stylableWebpackPlugin.anon
 import typings.stylableWebpackPlugin.typesMod.StylableModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogicModule extends StObject {
   
-  var logicModule: StylableModule = js.native
+  var logicModule: StylableModule
   
-  var stylableModule: StylableModule = js.native
+  var stylableModule: StylableModule
 }
 object LogicModule {
   

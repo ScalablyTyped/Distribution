@@ -3,7 +3,6 @@ package typings.phonegapNfc
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PhoneGapNfc {
@@ -11,44 +10,43 @@ object PhoneGapNfc {
   /**
     * The Ndef object.
     */
-  @js.native
   trait Ndef extends StObject {
     
     // "Sp"
-    var RTD_ALTERNATIVE_CARRIER: js.Array[Double] = js.native
+    var RTD_ALTERNATIVE_CARRIER: js.Array[Double]
     
     // "ac"
-    var RTD_HANDOVER_CARRIER: js.Array[Double] = js.native
+    var RTD_HANDOVER_CARRIER: js.Array[Double]
     
     // "Hc"
-    var RTD_HANDOVER_REQUEST: js.Array[Double] = js.native
+    var RTD_HANDOVER_REQUEST: js.Array[Double]
     
     // "Hr"
-    var RTD_HANDOVER_SELECT: js.Array[Double] = js.native
+    var RTD_HANDOVER_SELECT: js.Array[Double]
     
     // "U"
-    var RTD_SMART_POSTER: js.Array[Double] = js.native
+    var RTD_SMART_POSTER: js.Array[Double]
     
-    var RTD_TEXT: js.Array[Double] = js.native
+    var RTD_TEXT: js.Array[Double]
     
     // "T"
-    var RTD_URI: js.Array[Double] = js.native
+    var RTD_URI: js.Array[Double]
     
-    var TNF_ABSOLUTE_URI: Double = js.native
+    var TNF_ABSOLUTE_URI: Double
     
-    var TNF_EMPTY: Double = js.native
+    var TNF_EMPTY: Double
     
-    var TNF_EXTERNAL_TYPE: Double = js.native
+    var TNF_EXTERNAL_TYPE: Double
     
-    var TNF_MIME_MEDIA: Double = js.native
+    var TNF_MIME_MEDIA: Double
     
-    var TNF_RESERVED: Double = js.native
+    var TNF_RESERVED: Double
     
-    var TNF_UNCHANGED: Double = js.native
+    var TNF_UNCHANGED: Double
     
-    var TNF_UNKNOWN: Double = js.native
+    var TNF_UNKNOWN: Double
     
-    var TNF_WELL_KNOWN: Double = js.native
+    var TNF_WELL_KNOWN: Double
     
     /**
       * Helper that creates a NdefRecord containing an absolute URI.
@@ -75,7 +73,7 @@ object PhoneGapNfc {
       *
       * @return NdefRecord
       */
-    def absoluteUriRecord(uri: String, payload: js.Array[Double], id: js.Array[Double]): NdefRecord = js.native
+    def absoluteUriRecord(uri: String, payload: js.Array[Double], id: js.Array[Double]): NdefRecord
     
     /**
       * Helper that creates an Android Application Record (AAR).
@@ -83,7 +81,7 @@ object PhoneGapNfc {
       * @param packageName android package name
       *
       */
-    def androidApplicationRecord(packageName: String): NdefRecord = js.native
+    def androidApplicationRecord(packageName: String): NdefRecord
     
     /**
       * Decodes an array bytes into an NDEF Message
@@ -94,7 +92,7 @@ object PhoneGapNfc {
       *
       * @see NFC Data Exchange Format (NDEF) http://www.nfc-forum.org/specs/spec_list/
       */
-    def decodeMessage(bytes: js.Array[Double]): js.Array[NdefRecord] = js.native
+    def decodeMessage(bytes: js.Array[Double]): js.Array[NdefRecord]
     
     /**
       * Decode the bit flags from a TNF Byte.
@@ -103,13 +101,13 @@ object PhoneGapNfc {
       *
       *  See NFC Data Exchange Format (NDEF) Specification Section 3.2 RecordLayout
       */
-    def decodeTnf(tnf_byte: Double): js.Any = js.native
+    def decodeTnf(tnf_byte: Double): js.Any
     
     /**
       * Helper that creates an empty NdefRecord.
       *
       */
-    def emptyRecord(): NdefRecord = js.native
+    def emptyRecord(): NdefRecord
     
     /**
       * Encodes an NDEF Message into bytes that can be written to a NFC tag.
@@ -120,7 +118,7 @@ object PhoneGapNfc {
       *
       * @see NFC Data Exchange Format (NDEF) http://www.nfc-forum.org/specs/spec_list/
       */
-    def encodeMessage(ndefRecords: js.Array[NdefRecord]): js.Array[Double] = js.native
+    def encodeMessage(ndefRecords: js.Array[NdefRecord]): js.Array[Double]
     
     /**
       * Encode NDEF bit flags into a TNF Byte.
@@ -129,7 +127,7 @@ object PhoneGapNfc {
       *
       *  See NFC Data Exchange Format (NDEF) Specification Section 3.2 RecordLayout
       */
-    def encodeTnf(mb: Double, me: Double, cf: Double, sr: Double, il: Double, tnf: Double): Double = js.native
+    def encodeTnf(mb: Double, me: Double, cf: Double, sr: Double, il: Double, tnf: Double): Double
     
     /**
       * Helper that creates a NdefRecordcontaining an mimeMediaRecord.
@@ -138,7 +136,7 @@ object PhoneGapNfc {
       * @param payload byte[]
       * @param id byte[] (optional)
       */
-    def mimeMediaRecord(mimeType: String, payload: js.Array[Double], id: js.Array[Double]): NdefRecord = js.native
+    def mimeMediaRecord(mimeType: String, payload: js.Array[Double], id: js.Array[Double]): NdefRecord
     
     /**
       * Creates a JSON representation of a NdefRecord.
@@ -152,7 +150,7 @@ object PhoneGapNfc {
       *
       * @see Ndef.textRecord, Ndef.uriRecord and Ndef.mimeMediaRecord for examples
       */
-    def record(tnf: Double, `type`: js.Array[Double], id: js.Array[Double], payload: js.Array[Double]): NdefRecord = js.native
+    def record(tnf: Double, `type`: js.Array[Double], id: js.Array[Double], payload: js.Array[Double]): NdefRecord
     
     /**
       * Helper that creates an NDEF record containing an Smart Poster.
@@ -162,9 +160,9 @@ object PhoneGapNfc {
       *
       * @return NdefRecord
       */
-    def smartPoster(ndefRecords: js.Array[NdefRecord], id: js.Array[Double]): NdefRecord = js.native
+    def smartPoster(ndefRecords: js.Array[NdefRecord], id: js.Array[Double]): NdefRecord
     
-    var textHelper: TextHelper = js.native
+    var textHelper: TextHelper
     
     /**
       * Helper that creates an NdefRecord containing plain text.
@@ -175,17 +173,17 @@ object PhoneGapNfc {
       *
       * @return NdefRecord
       */
-    def textRecord(text: String, languageCode: String, id: js.Array[Double]): NdefRecord = js.native
+    def textRecord(text: String, languageCode: String, id: js.Array[Double]): NdefRecord
     
     /**
       * Convert TNF to String for user friendly display
       *
       *@param tnf tnf byte
       */
-    def tnfToString(tnf: Double): String = js.native
+    def tnfToString(tnf: Double): String
     
     // "Hs"
-    var uriHelper: UriHelper = js.native
+    var uriHelper: UriHelper
     
     /**
       * Helper that creates a NdefRecord containing a URI.
@@ -195,7 +193,7 @@ object PhoneGapNfc {
       *
       * @return NdefRecord
       */
-    def uriRecord(uri: String, id: js.Array[Double]): NdefRecord = js.native
+    def uriRecord(uri: String, id: js.Array[Double]): NdefRecord
   }
   object Ndef {
     
@@ -352,28 +350,27 @@ object PhoneGapNfc {
     }
   }
   
-  @js.native
   trait NdefRecord extends StObject {
     
     /**
       * byte array, containing zero to 255 bytes, must not be null
       */
-    var id: js.Array[Double] = js.native
+    var id: js.Array[Double]
     
     /**
       * byte array, containing zero to (2 ** 32 - 1) bytes, must not be null
       */
-    var payload: js.Array[Double] = js.native
+    var payload: js.Array[Double]
     
     /**
       * 3-bit TNF (Type Name Format) - use one of the TNF_* constants
       */
-    var tnf: Double = js.native
+    var tnf: Double
     
     /**
       * byte array, containing zero to 255 bytes, must not be null
       */
-    var `type`: js.Array[Double] = js.native
+    var `type`: js.Array[Double]
   }
   object NdefRecord {
     
@@ -410,16 +407,17 @@ object PhoneGapNfc {
     }
   }
   
-  @js.native
-  trait NdefTag extends Tag {
+  trait NdefTag
+    extends StObject
+       with Tag {
     
-    var canMakeReadOnly: Boolean = js.native
+    var canMakeReadOnly: Boolean
     
-    var isWritable: Boolean = js.native
+    var isWritable: Boolean
     
-    var maxSize: Double = js.native
+    var maxSize: Double
     
-    var ndefMessage: js.Array[NdefRecord] = js.native
+    var ndefMessage: js.Array[NdefRecord]
   }
   object NdefTag {
     
@@ -460,7 +458,9 @@ object PhoneGapNfc {
   }
   
   @js.native
-  trait NdefTagEvent extends TagEvent {
+  trait NdefTagEvent
+    extends StObject
+       with TagEvent {
     
     @JSName("tag")
     var tag_NdefTagEvent: NdefTag = js.native
@@ -470,7 +470,9 @@ object PhoneGapNfc {
     * The Nfc object.
     */
   @js.native
-  trait Nfc extends Util {
+  trait Nfc
+    extends StObject
+       with Util {
     
     /**
       * Function nfc.addMimeTypeListener registers the callback for ndef-mime events.
@@ -482,14 +484,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit]): Unit = js.native
-    def addMimeTypeListener(
-      mimeType: String,
-      callback: js.Function0[Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit], win: js.Function0[Unit]): Unit = js.native
     def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def addMimeTypeListener(mimeType: String, callback: js.Function0[Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.addNdefFormatableListener registers the callback for ndef-formatable events.
@@ -501,17 +498,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def addNdefFormatableListener(callback: js.Function1[/* event */ NdefTagEvent, Unit]): Unit = js.native
-    def addNdefFormatableListener(
-      callback: js.Function1[/* event */ NdefTagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def addNdefFormatableListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def addNdefFormatableListener(
       callback: js.Function1[/* event */ NdefTagEvent, Unit],
       win: js.Function0[Unit],
       fail: js.Function0[Unit]
     ): Unit = js.native
+    def addNdefFormatableListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.addNdefListener registers the callback for ndef events.
@@ -523,17 +516,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def addNdefListener(callback: js.Function1[/* event */ NdefTagEvent, Unit]): Unit = js.native
-    def addNdefListener(
-      callback: js.Function1[/* event */ NdefTagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def addNdefListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def addNdefListener(
       callback: js.Function1[/* event */ NdefTagEvent, Unit],
       win: js.Function0[Unit],
       fail: js.Function0[Unit]
     ): Unit = js.native
+    def addNdefListener(callback: js.Function1[/* event */ NdefTagEvent, Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.addTagDiscoveredListener registers the callback for tag events.
@@ -543,17 +532,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def addTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
-    def addTagDiscoveredListener(
-      callback: js.Function1[/* event */ TagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def addTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def addTagDiscoveredListener(
       callback: js.Function1[/* event */ TagEvent, Unit],
       win: js.Function0[Unit],
       fail: js.Function0[Unit]
     ): Unit = js.native
+    def addTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.enabled explicitly checks to see if the phone has NFC and if NFC is enabled.
@@ -568,9 +553,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called when NFC is disabled or missing.
       */
     def enabled(): Unit = js.native
-    def enabled(win: js.UndefOr[scala.Nothing], fail: js.Function1[/* status */ String, Unit]): Unit = js.native
     def enabled(win: js.Function1[/* status */ String, Unit]): Unit = js.native
     def enabled(win: js.Function1[/* status */ String, Unit], fail: js.Function1[/* status */ String, Unit]): Unit = js.native
+    def enabled(win: Unit, fail: js.Function1[/* status */ String, Unit]): Unit = js.native
     
     /**
       * Function nfc.erase erases a tag by writing an empty message.
@@ -580,9 +565,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def erase(): Unit = js.native
-    def erase(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def erase(win: js.Function0[Unit]): Unit = js.native
     def erase(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def erase(win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.handover shares files to a NFC peer using handover. Files are sent by specifying a file:// or context:// URI or a list of URIs.
@@ -594,13 +579,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def handover(uris: String): Unit = js.native
-    def handover(uris: String, win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def handover(uris: String, win: js.Function0[Unit]): Unit = js.native
     def handover(uris: String, win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def handover(uris: String, win: Unit, fail: js.Function0[Unit]): Unit = js.native
     def handover(uris: js.Array[String]): Unit = js.native
-    def handover(uris: js.Array[String], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def handover(uris: js.Array[String], win: js.Function0[Unit]): Unit = js.native
     def handover(uris: js.Array[String], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def handover(uris: js.Array[String], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.makeReadOnly make a NFC tag read only.
@@ -610,9 +595,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def makeReadOnly(): Unit = js.native
-    def makeReadOnly(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def makeReadOnly(win: js.Function0[Unit]): Unit = js.native
     def makeReadOnly(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def makeReadOnly(win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Removes the previously registered event listener added via nfc.addMimeTypeListener
@@ -622,17 +607,17 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error during removal.
       */
     def removeMimeTypeListener(mimeType: String, callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
-    def removeMimeTypeListener(
-      mimeType: String,
-      callback: js.Function1[/* event */ TagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def removeMimeTypeListener(mimeType: String, callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def removeMimeTypeListener(
       mimeType: String,
       callback: js.Function1[/* event */ TagEvent, Unit],
       win: js.Function0[Unit],
+      fail: js.Function0[Unit]
+    ): Unit = js.native
+    def removeMimeTypeListener(
+      mimeType: String,
+      callback: js.Function1[/* event */ TagEvent, Unit],
+      win: Unit,
       fail: js.Function0[Unit]
     ): Unit = js.native
     
@@ -643,17 +628,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error during removal.
       */
     def removeNdefListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
-    def removeNdefListener(
-      callback: js.Function1[/* event */ TagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def removeNdefListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def removeNdefListener(
       callback: js.Function1[/* event */ TagEvent, Unit],
       win: js.Function0[Unit],
       fail: js.Function0[Unit]
     ): Unit = js.native
+    def removeNdefListener(callback: js.Function1[/* event */ TagEvent, Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Removes the previously registered event listener added via nfc.addTagDiscoveredListener
@@ -662,17 +643,13 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error during removal.
       */
     def removeTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit]): Unit = js.native
-    def removeTagDiscoveredListener(
-      callback: js.Function1[/* event */ TagEvent, Unit],
-      win: js.UndefOr[scala.Nothing],
-      fail: js.Function0[Unit]
-    ): Unit = js.native
     def removeTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: js.Function0[Unit]): Unit = js.native
     def removeTagDiscoveredListener(
       callback: js.Function1[/* event */ TagEvent, Unit],
       win: js.Function0[Unit],
       fail: js.Function0[Unit]
     ): Unit = js.native
+    def removeTagDiscoveredListener(callback: js.Function1[/* event */ TagEvent, Unit], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.share writes an NdefMessage via peer-to-peer.
@@ -682,9 +659,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def share(ndefMessage: js.Array[NdefRecord]): Unit = js.native
-    def share(ndefMessage: js.Array[NdefRecord], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def share(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit]): Unit = js.native
     def share(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def share(ndefMessage: js.Array[NdefRecord], win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function showSettings opens the NFC settings for the operating system.
@@ -692,9 +669,9 @@ object PhoneGapNfc {
       * @param fail Error callback function, invoked when error occurs.
       */
     def showSettings(): Unit = js.native
-    def showSettings(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def showSettings(win: js.Function0[Unit]): Unit = js.native
     def showSettings(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def showSettings(win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.stopHandover stops sharing data via peer-to-peer.
@@ -702,9 +679,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def stopHandover(): Unit = js.native
-    def stopHandover(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def stopHandover(win: js.Function0[Unit]): Unit = js.native
     def stopHandover(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def stopHandover(win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.unshare stops sharing data via peer-to-peer.
@@ -712,9 +689,9 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def unshare(): Unit = js.native
-    def unshare(win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def unshare(win: js.Function0[Unit]): Unit = js.native
     def unshare(win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def unshare(win: Unit, fail: js.Function0[Unit]): Unit = js.native
     
     /**
       * Function nfc.write writes an NdefMessage to a NFC tag.
@@ -727,21 +704,20 @@ object PhoneGapNfc {
       * @param fail The callback that is called if there was an error.
       */
     def write(ndefMessage: js.Array[NdefRecord]): Unit = js.native
-    def write(ndefMessage: js.Array[NdefRecord], win: js.UndefOr[scala.Nothing], fail: js.Function0[Unit]): Unit = js.native
     def write(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit]): Unit = js.native
     def write(ndefMessage: js.Array[NdefRecord], win: js.Function0[Unit], fail: js.Function0[Unit]): Unit = js.native
+    def write(ndefMessage: js.Array[NdefRecord], win: Unit, fail: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var id: js.Array[Double] = js.native
+    var id: js.Array[Double]
     
-    var techTypes: js.Array[String] = js.native
+    var techTypes: js.Array[String]
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Tag {
     
@@ -776,19 +752,20 @@ object PhoneGapNfc {
   }
   
   @js.native
-  trait TagEvent extends Event {
+  trait TagEvent
+    extends StObject
+       with Event {
     
     var tag: Tag = js.native
   }
   
-  @js.native
   trait TextHelper extends StObject {
     
     /**
       * Decode a URI payload bytes
       * @param data
       */
-    def decodePayload(data: js.Any): String = js.native
+    def decodePayload(data: js.Any): String
     
     /**
       * Encode text payload
@@ -796,7 +773,7 @@ object PhoneGapNfc {
       * @param lang
       * @param encoding
       */
-    def encodePayload(text: String, lang: String, encoding: String): js.Array[Double] = js.native
+    def encodePayload(text: String, lang: String, encoding: String): js.Array[Double]
   }
   object TextHelper {
     
@@ -817,26 +794,25 @@ object PhoneGapNfc {
     }
   }
   
-  @js.native
   trait UriHelper extends StObject {
     
     /**
       * Decode a URI payload bytes
       * @param data
       */
-    def decodePayload(data: js.Any): String = js.native
+    def decodePayload(data: js.Any): String
     
     /**
       * shorten a URI with standard prefix
       * @param uri
       */
-    def encodePayload(uri: String): js.Array[Double] = js.native
+    def encodePayload(uri: String): js.Array[Double]
     
     /**
       * URI identifier codes from URI Record Type Definition NFCForum-TS-RTD_URI_1.0 2006-07-24
       * index in array matches code in the spec
       */
-    var protocols: js.Array[String] = js.native
+    var protocols: js.Array[String]
   }
   object UriHelper {
     
@@ -867,26 +843,25 @@ object PhoneGapNfc {
     }
   }
   
-  @js.native
   trait Util extends StObject {
     
     /**
       * Convert bytes to hexadecimal string
       * @param bytes
       */
-    def bytesToHexString(bytes: js.Array[Double]): String = js.native
+    def bytesToHexString(bytes: js.Array[Double]): String
     
     /**
       * Convert bytes to string
       * @param bytes
       */
-    def bytesToString(bytes: js.Array[Double]): String = js.native
+    def bytesToString(bytes: js.Array[Double]): String
     
     /**
       * Convert string to bytes
       * @param string
       */
-    def stringToBytes(string: String): js.Array[Double] = js.native
+    def stringToBytes(string: String): js.Array[Double]
   }
   object Util {
     
@@ -917,16 +892,15 @@ object PhoneGapNfc {
   /**
     * Global object NFC.
     */
-  @js.native
   trait Window extends StObject {
     
-    def fireNfcTagEvent(event: TagEvent, tagAsJson: String): Unit = js.native
+    def fireNfcTagEvent(event: TagEvent, tagAsJson: String): Unit
     
-    var ndef: Ndef = js.native
+    var ndef: Ndef
     
-    var nfc: Nfc = js.native
+    var nfc: Nfc
     
-    var util: Util = js.native
+    var util: Util
   }
   object Window {
     

@@ -37,168 +37,166 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.stretch
 import typings.tuyaPanelKit.tuyaPanelKitStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.PickerViewProps, 'children'> */
-@js.native
 trait TimerPickerProps extends StObject {
   
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none_ | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none_ | polite | assertive] = js.undefined
   
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var collapsable: js.UndefOr[Boolean] = js.native
+  var collapsable: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var dividerColor: js.UndefOr[String] = js.native
+  var dividerColor: js.UndefOr[String] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var endTime: js.UndefOr[Double] = js.native
+  var endTime: js.UndefOr[Double] = js.undefined
   
-  var focusable: js.UndefOr[Boolean] = js.native
+  var focusable: js.UndefOr[Boolean] = js.undefined
   
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  var hitSlop: js.UndefOr[Insets] = js.native
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var is12Hours: js.UndefOr[Boolean] = js.native
+  var is12Hours: js.UndefOr[Boolean] = js.undefined
   
-  var isTVSelectable: js.UndefOr[Boolean] = js.native
+  var isTVSelectable: js.UndefOr[Boolean] = js.undefined
   
-  var itemAlign: js.UndefOr[`flex-end` | center | `flex-start` | baseline | stretch] = js.native
+  var itemAlign: js.UndefOr[`flex-end` | center | `flex-start` | baseline | stretch] = js.undefined
   
-  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var itemTextColor: js.UndefOr[String] = js.native
+  var itemTextColor: js.UndefOr[String] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[dialog | dropdown] = js.native
+  var mode: js.UndefOr[dialog | dropdown] = js.undefined
   
-  var nativeID: js.UndefOr[String] = js.native
+  var nativeID: js.UndefOr[String] = js.undefined
   
-  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.native
+  var needsOffscreenAlphaCompositing: js.UndefOr[Boolean] = js.undefined
   
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderGrant: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderReject: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderRelease: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onResponderTerminate: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onResponderTerminationRequest: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponder: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+  var onStartShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
   
-  var onTimerChange: js.UndefOr[js.Function2[/* startTime */ Double, /* endTime */ Double, Unit]] = js.native
+  var onTimerChange: js.UndefOr[js.Function2[/* startTime */ Double, /* endTime */ Double, Unit]] = js.undefined
   
-  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchCancel: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEnd: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchEndCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchMove: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onTouchStart: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onValueChange: js.UndefOr[js.Function2[/* value */ String | Double, /* index */ Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function2[/* value */ String | Double, /* index */ Double, Unit]] = js.undefined
   
-  var pickerFontColor: js.UndefOr[String] = js.native
+  var pickerFontColor: js.UndefOr[String] = js.undefined
   
-  var pointerEvents: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.native
+  var pointerEvents: js.UndefOr[`box-none` | none_ | `box-only` | auto] = js.undefined
   
-  var prefixPosition: js.UndefOr[js.Array[String] | left | right] = js.native
+  var prefixPosition: js.UndefOr[js.Array[String] | left | right] = js.undefined
   
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
-  var removeClippedSubviews: js.UndefOr[Boolean] = js.native
+  var removeClippedSubviews: js.UndefOr[Boolean] = js.undefined
   
-  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.native
+  var renderToHardwareTextureAndroid: js.UndefOr[Boolean] = js.undefined
   
-  var selectedItemTextColor: js.UndefOr[String] = js.native
+  var selectedItemTextColor: js.UndefOr[String] = js.undefined
   
-  var selectedValue: js.UndefOr[String | Double | Boolean] = js.native
+  var selectedValue: js.UndefOr[String | Double | Boolean] = js.undefined
   
-  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.native
+  var shouldRasterizeIOS: js.UndefOr[Boolean] = js.undefined
   
-  var singlePicker: js.UndefOr[Boolean] = js.native
+  var singlePicker: js.UndefOr[Boolean] = js.undefined
   
-  var startTime: js.UndefOr[Double] = js.native
+  var startTime: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var symbol: js.UndefOr[String] = js.native
+  var symbol: js.UndefOr[String] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var testId: js.UndefOr[String] = js.native
+  var testId: js.UndefOr[String] = js.undefined
   
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
   
-  var theme: js.UndefOr[DividerColor] = js.native
+  var theme: js.UndefOr[DividerColor] = js.undefined
   
-  var tvParallaxMagnification: js.UndefOr[Double] = js.native
+  var tvParallaxMagnification: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceX: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.native
+  var tvParallaxShiftDistanceY: js.UndefOr[Double] = js.undefined
   
-  var tvParallaxTiltAngle: js.UndefOr[Double] = js.native
+  var tvParallaxTiltAngle: js.UndefOr[Double] = js.undefined
   
-  var visibleItemCount: js.UndefOr[Double] = js.native
+  var visibleItemCount: js.UndefOr[Double] = js.undefined
 }
 object TimerPickerProps {
   

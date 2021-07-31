@@ -2,37 +2,35 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accountsurl extends StObject {
   
-  var accounts_url: String = js.native
+  var accounts_url: String
   
-  var bullets: js.Array[String] = js.native
+  var bullets: js.Array[String]
   
-  var description: String = js.native
+  var description: String
   
-  var has_free_trial: Boolean = js.native
+  var has_free_trial: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var monthly_price_in_cents: Double = js.native
+  var monthly_price_in_cents: Double
   
-  var name: String = js.native
+  var name: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var price_model: String = js.native
+  var price_model: String
   
-  var state: String = js.native
+  var state: String
   
-  var unit_name: String = js.native
+  var unit_name: String
   
-  var url: String = js.native
+  var url: String
   
-  var yearly_price_in_cents: Double = js.native
+  var yearly_price_in_cents: Double
 }
 object Accountsurl {
   

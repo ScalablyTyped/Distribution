@@ -2,21 +2,19 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorSearchResults[TDoc] extends StObject {
   
-  var error: js.Any = js.native
+  var error: js.Any
   
-  var isSearchStalled: Boolean = js.native
+  var isSearchStalled: Boolean
   
-  var results: AllSearchResults[TDoc] = js.native
+  var results: AllSearchResults[TDoc]
   
-  var searching: Boolean = js.native
+  var searching: Boolean
   
-  var searchingForFacetValues: Boolean = js.native
+  var searchingForFacetValues: Boolean
 }
 object ConnectorSearchResults {
   
@@ -33,7 +31,7 @@ object ConnectorSearchResults {
   }
   
   @scala.inline
-  implicit class ConnectorSearchResultsMutableBuilder[Self <: ConnectorSearchResults[_], TDoc] (val x: Self with ConnectorSearchResults[TDoc]) extends AnyVal {
+  implicit class ConnectorSearchResultsMutableBuilder[Self <: ConnectorSearchResults[?], TDoc] (val x: Self & ConnectorSearchResults[TDoc]) extends AnyVal {
     
     @scala.inline
     def setError(value: js.Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])

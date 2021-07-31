@@ -3,33 +3,31 @@ package typings.musicmetadata
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MM {
   
-  @js.native
   trait Metadata extends StObject {
     
-    var album: String = js.native
+    var album: String
     
-    var albumartist: js.Array[String] = js.native
+    var albumartist: js.Array[String]
     
-    var artist: js.Array[String] = js.native
+    var artist: js.Array[String]
     
-    var disk: NoOf = js.native
+    var disk: NoOf
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var genre: js.Array[String] = js.native
+    var genre: js.Array[String]
     
-    var picture: js.Array[Picture] = js.native
+    var picture: js.Array[Picture]
     
-    var title: String = js.native
+    var title: String
     
-    var track: NoOf = js.native
+    var track: NoOf
     
-    var year: String = js.native
+    var year: String
   }
   object Metadata {
     
@@ -97,12 +95,11 @@ object MM {
     }
   }
   
-  @js.native
   trait NoOf extends StObject {
     
-    var no: Double = js.native
+    var no: Double
     
-    var of: Double = js.native
+    var of: Double
   }
   object NoOf {
     
@@ -123,12 +120,11 @@ object MM {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var duration: js.UndefOr[Boolean] = js.native
+    var duration: js.UndefOr[Boolean] = js.undefined
     
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -155,12 +151,11 @@ object MM {
     }
   }
   
-  @js.native
   trait Picture extends StObject {
     
-    var data: Buffer = js.native
+    var data: Buffer
     
-    var format: String = js.native
+    var format: String
   }
   object Picture {
     

@@ -11,7 +11,6 @@ import typings.hafasClient.hafasClientStrings.walking
 import typings.hafasClient.hafasClientStrings.watercraft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,20 +18,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example: Even though S-Bahn and U-Bahn in Berlin are both trains, they have different operators, service patterns,
   * stations and look different. Therefore, they are two distinct products subway and suburban.
   */
-@js.native
 trait ProductType extends StObject {
   
-  var default: Boolean = js.native
+  var default: Boolean
   
-  var bitmasks: js.Array[Double] = js.native
+  var bitmasks: js.Array[Double]
   
-  var id: String = js.native
+  var id: String
   
-  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking = js.native
+  var mode: train | bus | watercraft | taxi | gondola | aircraft | car | bicycle | walking
   
-  var name: String = js.native
+  var name: String
   
-  var short: String = js.native
+  var short: String
 }
 object ProductType {
   

@@ -2,25 +2,23 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitTabOptions extends StObject {
   
-  var active: js.UndefOr[Double] = js.native
+  var active: js.UndefOr[Double] = js.undefined
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var connect: js.UndefOr[String] = js.native
+  var connect: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var media: js.UndefOr[Double | String] = js.native
+  var media: js.UndefOr[Double | String] = js.undefined
   
-  var swiping: js.UndefOr[Boolean] = js.native
+  var swiping: js.UndefOr[Boolean] = js.undefined
   
-  var toggle: js.UndefOr[String] = js.native
+  var toggle: js.UndefOr[String] = js.undefined
 }
 object UIkitTabOptions {
   

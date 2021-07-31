@@ -2,14 +2,12 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the Xrm.Panel API
   * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-panel External Link: Xrm.Panel}
   */
-@js.native
 trait Panel extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Panel extends StObject {
     * @remarks  This method is only supported for the web client.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/xrm-panel/loadpanel External Link: loadPanel (Client-side reference)}
     */
-  def loadPanel(url: String, title: String): Unit = js.native
+  def loadPanel(url: String, title: String): Unit
 }
 object Panel {
   

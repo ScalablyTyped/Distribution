@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends StObject {
   
   /**
     * Optional. Exclude instance from maintenance. When true, rollout service will not attempt maintenance on the instance. Rollout service will include the instance in reported rollout
     * progress as not attempted.
     */
-  var exclude: js.UndefOr[Boolean] = js.native
+  var exclude: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The MaintenancePolicies that have been attached to the instance. The key must be of the type name of the oneof policy name defined in MaintenancePolicy, and the embedded
@@ -23,8 +21,8 @@ trait GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings extends
   var maintenancePolicies: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.MaintenancePolicy}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
   
@@ -47,7 +45,7 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings {
     def setMaintenancePolicies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.file.gapi.client.file.MaintenancePolicy}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSettings & TopLevel[js.Any]
     ): Self = StObject.set(x, "maintenancePolicies", value.asInstanceOf[js.Any])
     
     @scala.inline

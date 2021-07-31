@@ -3,44 +3,41 @@ package typings.fixturifyProject
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fixturify-project", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Project {
+  class ^ protected ()
+    extends StObject
+       with Project {
     def this(name: String) = this()
     def this(name: String, version: String) = this()
-    def this(name: String, version: js.UndefOr[scala.Nothing], cb: js.Function1[/* project */ Project, Unit]) = this()
     def this(name: String, version: String, cb: js.Function1[/* project */ Project, Unit]) = this()
-    def this(name: String, version: js.UndefOr[scala.Nothing], cb: js.UndefOr[scala.Nothing], root: String) = this()
-    def this(
-      name: String,
-      version: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* project */ Project, Unit],
-      root: String
-    ) = this()
-    def this(name: String, version: String, cb: js.UndefOr[scala.Nothing], root: String) = this()
+    def this(name: String, version: Unit, cb: js.Function1[/* project */ Project, Unit]) = this()
     def this(name: String, version: String, cb: js.Function1[/* project */ Project, Unit], root: String) = this()
+    def this(name: String, version: String, cb: Unit, root: String) = this()
+    def this(name: String, version: Unit, cb: js.Function1[/* project */ Project, Unit], root: String) = this()
+    def this(name: String, version: Unit, cb: Unit, root: String) = this()
   }
+  @JSImport("fixturify-project", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("fixturify-project", "fromDir")
-  @js.native
-  def fromDir(root: String): Project = js.native
-  @JSImport("fixturify-project", "fromDir")
-  @js.native
-  def fromDir(root: String, name: String): Project = js.native
+  @scala.inline
+  def fromDir(root: String): Project = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any]).asInstanceOf[Project]
+  @scala.inline
+  def fromDir(root: String, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromDir")(root.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
   
   /* static member */
-  @JSImport("fixturify-project", "fromJSON")
-  @js.native
-  def fromJSON(json: DirJSON, name: String): Project = js.native
+  @scala.inline
+  def fromJSON(json: DirJSON, name: String): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Project]
   
-  @js.native
-  trait DirJSON extends /* filename */ StringDictionary[DirJSON | String]
+  trait DirJSON
+    extends StObject
+       with /* filename */ StringDictionary[DirJSON | String]
   object DirJSON {
     
     @scala.inline
@@ -62,22 +59,22 @@ object mod {
     var _tmp: js.Any = js.native
     
     def addDependency(name: String): Project = js.native
-    def addDependency(name: String, version: js.UndefOr[scala.Nothing], cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDependency(name: String, version: String): Project = js.native
     def addDependency(name: String, version: String, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
+    def addDependency(name: String, version: Unit, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDependency(name: Project): Project = js.native
-    def addDependency(name: Project, version: js.UndefOr[scala.Nothing], cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDependency(name: Project, version: String): Project = js.native
     def addDependency(name: Project, version: String, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
+    def addDependency(name: Project, version: Unit, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     
     def addDevDependency(name: String): Project = js.native
-    def addDevDependency(name: String, version: js.UndefOr[scala.Nothing], cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDevDependency(name: String, version: String): Project = js.native
     def addDevDependency(name: String, version: String, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
+    def addDevDependency(name: String, version: Unit, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDevDependency(name: Project): Project = js.native
-    def addDevDependency(name: Project, version: js.UndefOr[scala.Nothing], cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     def addDevDependency(name: Project, version: String): Project = js.native
     def addDevDependency(name: Project, version: String, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
+    def addDevDependency(name: Project, version: Unit, cb: js.Function1[/* project */ this.type, Unit]): Project = js.native
     
     val baseDir: String = js.native
     

@@ -11,24 +11,22 @@ import typings.reactSelect.anon.GetPortalPlacement
 import typings.reactSelect.reactSelectStrings.auto
 import typings.reactSelect.reactSelectStrings.bottom
 import typings.reactSelect.reactSelectStrings.top
-import typings.reactSelect.selectMod.Props
-import typings.reactSelect.typesMod.ActionTypes
-import typings.reactSelect.typesMod.ClassNamesState
 import typings.reactSelect.typesMod.CommonProps
 import typings.reactSelect.typesMod.InnerRef
 import typings.reactSelect.typesMod.MenuPlacement
 import typings.reactSelect.typesMod.MenuPosition
 import typings.reactSelect.typesMod.OptionTypeBase
-import typings.reactSelect.typesMod.OptionsType
-import typings.reactSelect.typesMod.ValueType
 import typings.reactSelect.utilsMod.RectType
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
+  
+  @JSImport("react-select/src/components/Menu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-select/src/components/Menu", JSImport.Default)
   @js.native
@@ -69,9 +67,9 @@ object menuMod {
       */
     def this(props: MenuProps[OptionType], context: js.Any) = this()
     
-    def getPlacement(ref: Ref[_]): Unit = js.native
+    def getPlacement(ref: Ref[js.Any]): Unit = js.native
     
-    def getState(): MenuProps[OptionType] with MenuState = js.native
+    def getState(): MenuProps[OptionType] & MenuState = js.native
   }
   /* static members */
   object Menu {
@@ -125,46 +123,48 @@ object menuMod {
   @js.native
   val NoOptionsMessage: ComponentType[NoticeProps[js.Any]] = js.native
   
-  @JSImport("react-select/src/components/Menu", "getMenuPlacement")
-  @js.native
-  def getMenuPlacement(args: PlacementArgs): MenuState = js.native
+  @scala.inline
+  def getMenuPlacement(args: PlacementArgs): MenuState = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenuPlacement")(args.asInstanceOf[js.Any]).asInstanceOf[MenuState]
   
-  @JSImport("react-select/src/components/Menu", "loadingMessageCSS")
-  @js.native
-  def loadingMessageCSS(): CSSProperties = js.native
+  @scala.inline
+  def loadingMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("loadingMessageCSS")().asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/Menu", "menuCSS")
-  @js.native
-  def menuCSS(state: MenuState): CSSProperties = js.native
+  @scala.inline
+  def menuCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/Menu", "menuListCSS")
-  @js.native
-  def menuListCSS(state: MenuState): CSSProperties = js.native
+  @scala.inline
+  def menuListCSS(state: MenuState): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuListCSS")(state.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/Menu", "menuPortalCSS")
-  @js.native
-  def menuPortalCSS(args: PortalStyleArgs): CSSProperties = js.native
+  @scala.inline
+  def menuPortalCSS(args: PortalStyleArgs): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("menuPortalCSS")(args.asInstanceOf[js.Any]).asInstanceOf[CSSProperties]
   
-  @JSImport("react-select/src/components/Menu", "noOptionsMessageCSS")
-  @js.native
-  def noOptionsMessageCSS(): CSSProperties = js.native
+  @scala.inline
+  def noOptionsMessageCSS(): CSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("noOptionsMessageCSS")().asInstanceOf[CSSProperties]
   
-  type MenuListComponentProps[OptionType /* <: OptionTypeBase */] = CommonProps[OptionType] with MenuListProps with MenuListState
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - typings.reactSelect.menuMod.MenuListState because var conflicts: isMulti. Inlined maxHeight */ @js.native
+  trait MenuListComponentProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType]
+       with MenuListProps {
+    
+    /* Set the max height of the Menu component  */
+    var maxHeight: Double = js.native
+  }
   
-  @js.native
   trait MenuListProps extends StObject {
     
     /** The children to be rendered. */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /** Inner ref to DOM Node */
-    var innerRef: InnerRef = js.native
+    var innerRef: InnerRef
   }
   object MenuListProps {
     
     @scala.inline
     def apply(): MenuListProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(innerRef = null)
       __obj.asInstanceOf[MenuListProps]
     }
     
@@ -191,14 +191,13 @@ object menuMod {
   // ==============================
   // Menu List
   // ==============================
-  @js.native
   trait MenuListState extends StObject {
     
     /** Set classname for isMulti */
-    var isMulti: Boolean = js.native
+    var isMulti: Boolean
     
     /* Set the max height of the Menu component  */
-    var maxHeight: Double = js.native
+    var maxHeight: Double
   }
   object MenuListState {
     
@@ -219,61 +218,32 @@ object menuMod {
     }
   }
   
-  /* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  appendTo :std.HTMLElement,   children :react.react.ReactNode,   controlElement :std.HTMLElement,   menuPlacement :react-select.react-select/src/types.MenuPlacement,   menuPosition :react-select.react-select/src/types.MenuPosition} */
   @js.native
-  trait MenuPortalProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait MenuPortalProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType] {
     
     var appendTo: HTMLElement = js.native
     
     var children: ReactNode = js.native
     
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
     // ideally Menu<MenuProps>
     var controlElement: HTMLElement = js.native
-    
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
-    
-    var isMulti: Boolean = js.native
     
     var menuPlacement: MenuPlacement = js.native
     
     var menuPosition: MenuPosition = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
   }
   
-  @js.native
   trait MenuPortalState extends StObject {
     
-    var placement: bottom | top | Null = js.native
+    var placement: bottom | top | Null
   }
   object MenuPortalState {
     
     @scala.inline
     def apply(): MenuPortalState = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(placement = null)
       __obj.asInstanceOf[MenuPortalState]
     }
     
@@ -288,42 +258,22 @@ object menuMod {
     }
   }
   
-  /* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactElement, getPortalPlacement (state : react-select.react-select/src/components/Menu.MenuState): void,   innerProps :object,   innerRef :react-select.react-select/src/types.InnerRef,   maxMenuHeight :number,   menuPlacement :react-select.react-select/src/types.MenuPlacement,   menuPosition :react-select.react-select/src/types.MenuPosition,   minMenuHeight :number,   menuShouldScrollIntoView :boolean} */
   @js.native
-  trait MenuProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait MenuProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType] {
     
     /** The children to be rendered. */
     var children: ReactElement = js.native
     
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    
     /** Callback to update the portal after possible flip. */
     def getPortalPlacement(state: MenuState): Unit = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
     
     /** Props to be passed to the menu wrapper. */
     var innerProps: js.Object = js.native
     
     /** Reference to the internal element, consumed by the MenuPlacer component */
     var innerRef: InnerRef = js.native
-    
-    var isMulti: Boolean = js.native
     
     /** Set the maximum height of the menu. */
     var maxMenuHeight: Double = js.native
@@ -339,28 +289,19 @@ object menuMod {
     
     /** Set the minimum height of the menu. */
     var minMenuHeight: Double = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
   }
   
-  @js.native
   trait MenuState extends StObject {
     
-    var maxHeight: Double = js.native
+    var maxHeight: Double
     
-    var placement: bottom | top | Null = js.native
+    var placement: bottom | top | Null
   }
   object MenuState {
     
     @scala.inline
     def apply(maxHeight: Double): MenuState = {
-      val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(maxHeight = maxHeight.asInstanceOf[js.Any], placement = null)
       __obj.asInstanceOf[MenuState]
     }
     
@@ -378,60 +319,31 @@ object menuMod {
     }
   }
   
-  /* Inlined react-select.react-select/src/types.CommonProps<OptionType> & {  children :react.react.ReactNode,   innerProps :{[key: string] : any}} */
   @js.native
-  trait NoticeProps[OptionType /* <: OptionTypeBase */] extends StObject {
+  trait NoticeProps[OptionType /* <: OptionTypeBase */]
+    extends StObject
+       with CommonProps[OptionType] {
     
     /** The children to be rendered. */
     var children: ReactNode = js.native
     
-    var className: js.UndefOr[String] = js.native
-    
-    def clearValue(): Unit = js.native
-    
-    def cx(): String = js.native
-    def cx(state: js.UndefOr[ClassNamesState], className: String): String = js.native
-    def cx(state: ClassNamesState): String = js.native
-    
-    /*
-      Get the styles of a particular part of the select. Pass in the name of the
-      property as the first argument, and the current props as the second argument.
-      See the `styles` object for the properties available.
-      */
-    def getStyles(name: String, props: js.Any): js.Object = js.native
-    
-    def getValue(): ValueType[OptionType] = js.native
-    
-    var hasValue: Boolean = js.native
-    
     /** Props to be passed on to the wrapper. */
     var innerProps: StringDictionary[js.Any] = js.native
-    
-    var isMulti: Boolean = js.native
-    
-    var options: OptionsType[OptionType] = js.native
-    
-    def selectOption(option: OptionType): Unit = js.native
-    
-    var selectProps: Props[OptionType] = js.native
-    
-    def setValue(value: ValueType[OptionType], action: ActionTypes): Unit = js.native
   }
   
-  @js.native
   trait PlacementArgs extends StObject {
     
-    var isFixedPosition: Boolean = js.native
+    var isFixedPosition: Boolean
     
-    var maxHeight: Double = js.native
+    var maxHeight: Double
     
-    var menuEl: Ref[_] = js.native
+    var menuEl: Ref[js.Any]
     
-    var minHeight: Double = js.native
+    var minHeight: Double
     
-    var placement: bottom | top | auto = js.native
+    var placement: bottom | top | auto
     
-    var shouldScroll: Boolean = js.native
+    var shouldScroll: Boolean
   }
   object PlacementArgs {
     
@@ -443,7 +355,7 @@ object menuMod {
       placement: bottom | top | auto,
       shouldScroll: Boolean
     ): PlacementArgs = {
-      val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(isFixedPosition = isFixedPosition.asInstanceOf[js.Any], maxHeight = maxHeight.asInstanceOf[js.Any], minHeight = minHeight.asInstanceOf[js.Any], placement = placement.asInstanceOf[js.Any], shouldScroll = shouldScroll.asInstanceOf[js.Any], menuEl = null)
       __obj.asInstanceOf[PlacementArgs]
     }
     
@@ -457,10 +369,10 @@ object menuMod {
       def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMenuEl(value: Ref[_]): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
+      def setMenuEl(value: Ref[js.Any]): Self = StObject.set(x, "menuEl", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMenuElFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "menuEl", js.Any.fromFunction1(value))
+      def setMenuElFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "menuEl", js.Any.fromFunction1(value))
       
       @scala.inline
       def setMenuElNull: Self = StObject.set(x, "menuEl", null)
@@ -476,14 +388,13 @@ object menuMod {
     }
   }
   
-  @js.native
   trait PortalStyleArgs extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var position: MenuPosition = js.native
+    var position: MenuPosition
     
-    var rect: RectType = js.native
+    var rect: RectType
   }
   object PortalStyleArgs {
     

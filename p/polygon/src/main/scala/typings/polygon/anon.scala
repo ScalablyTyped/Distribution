@@ -3,21 +3,19 @@ package typings.polygon
 import typings.vec2.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object H {
     
@@ -44,16 +42,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Height {
     
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var position: ^ = js.native
+    var position: ^
     
-    var radius: Double = js.native
+    var radius: Double
   }
   object Position {
     
@@ -106,12 +102,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     
@@ -132,16 +127,15 @@ object anon {
     }
   }
   
-  @js.native
   trait X1 extends StObject {
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object X1 {
     

@@ -2,33 +2,31 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CascadesEnabled extends StObject {
   
-  var cascadesEnabled: js.UndefOr[Boolean] = js.native
+  var cascadesEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var darkness: js.UndefOr[Double] = js.native
+  var darkness: js.UndefOr[Double] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var isPointLight: js.UndefOr[Boolean] = js.native
+  var isPointLight: js.UndefOr[Boolean] = js.undefined
   
-  var lightCamera: typings.cesium.mod.Camera = js.native
+  var lightCamera: typings.cesium.mod.Camera
   
-  var maximumDistance: js.UndefOr[Double] = js.native
+  var maximumDistance: js.UndefOr[Double] = js.undefined
   
-  var normalOffset: js.UndefOr[Boolean] = js.native
+  var normalOffset: js.UndefOr[Boolean] = js.undefined
   
-  var numberOfCascades: js.UndefOr[Double] = js.native
+  var numberOfCascades: js.UndefOr[Double] = js.undefined
   
-  var pointLightRadius: js.UndefOr[Double] = js.native
+  var pointLightRadius: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var softShadows: js.UndefOr[Boolean] = js.native
+  var softShadows: js.UndefOr[Boolean] = js.undefined
 }
 object CascadesEnabled {
   

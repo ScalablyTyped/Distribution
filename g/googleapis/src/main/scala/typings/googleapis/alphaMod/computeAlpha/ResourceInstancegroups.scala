@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Instancegroups")
@@ -34,7 +33,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def addInstances(): GaxiosPromise[SchemaOperation] = js.native
   def addInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def addInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def addInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def addInstances(params: ParamsResourceInstancegroupsAddinstances): GaxiosPromise[SchemaOperation] = js.native
   def addInstances(params: ParamsResourceInstancegroupsAddinstances, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def addInstances(
@@ -67,7 +66,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaInstanceGroupAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaInstanceGroupAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceInstancegroupsAggregatedlist): GaxiosPromise[SchemaInstanceGroupAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceInstancegroupsAggregatedlist,
@@ -106,7 +105,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancegroupsDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceInstancegroupsDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -138,7 +137,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaInstanceGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(params: ParamsResourceInstancegroupsGet): GaxiosPromise[SchemaInstanceGroup] = js.native
   def get(params: ParamsResourceInstancegroupsGet, callback: BodyResponseCallback[SchemaInstanceGroup]): Unit = js.native
   def get(
@@ -171,7 +170,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancegroupsInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceInstancegroupsInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -206,7 +205,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaInstanceGroupList] = js.native
   def list(callback: BodyResponseCallback[SchemaInstanceGroupList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupList] = js.native
   def list(params: ParamsResourceInstancegroupsList): GaxiosPromise[SchemaInstanceGroupList] = js.native
   def list(params: ParamsResourceInstancegroupsList, callback: BodyResponseCallback[SchemaInstanceGroupList]): Unit = js.native
   def list(
@@ -242,7 +241,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def listInstances(): GaxiosPromise[SchemaInstanceGroupsListInstances] = js.native
   def listInstances(callback: BodyResponseCallback[SchemaInstanceGroupsListInstances]): Unit = js.native
-  def listInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaInstanceGroupsListInstances] = js.native
+  def listInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaInstanceGroupsListInstances] = js.native
   def listInstances(params: ParamsResourceInstancegroupsListinstances): GaxiosPromise[SchemaInstanceGroupsListInstances] = js.native
   def listInstances(
     params: ParamsResourceInstancegroupsListinstances,
@@ -282,7 +281,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def removeInstances(): GaxiosPromise[SchemaOperation] = js.native
   def removeInstances(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def removeInstances(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def removeInstances(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def removeInstances(params: ParamsResourceInstancegroupsRemoveinstances): GaxiosPromise[SchemaOperation] = js.native
   def removeInstances(
     params: ParamsResourceInstancegroupsRemoveinstances,
@@ -318,7 +317,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def setNamedPorts(): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setNamedPorts(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setNamedPorts(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(params: ParamsResourceInstancegroupsSetnamedports): GaxiosPromise[SchemaOperation] = js.native
   def setNamedPorts(params: ParamsResourceInstancegroupsSetnamedports, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setNamedPorts(
@@ -350,7 +349,7 @@ class ResourceInstancegroups protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceInstancegroupsTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceInstancegroupsTestiampermissions,

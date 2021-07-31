@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.std.EventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * listeners on Element.
   */
 @js.native
-trait RElement extends RNode {
+trait RElement
+  extends StObject
+     with RNode {
   
   def addEventListener(`type`: String, listener: EventListener): Unit = js.native
   def addEventListener(`type`: String, listener: EventListener, useCapture: Boolean): Unit = js.native
@@ -23,7 +24,7 @@ trait RElement extends RNode {
   def removeAttribute(name: String): Unit = js.native
   
   def removeEventListener(`type`: String): Unit = js.native
-  def removeEventListener(`type`: String, listener: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
+  def removeEventListener(`type`: String, listener: Unit, options: Boolean): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener): Unit = js.native
   def removeEventListener(`type`: String, listener: EventListener, options: Boolean): Unit = js.native
   

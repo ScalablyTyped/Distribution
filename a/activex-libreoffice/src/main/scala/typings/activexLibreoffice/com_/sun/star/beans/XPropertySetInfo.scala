@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,27 +14,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The specification only describes the properties, it does not contain any values.
   */
-@js.native
-trait XPropertySetInfo extends XInterface {
+trait XPropertySetInfo
+  extends StObject
+     with XInterface {
   
   /** @returns a sequence with all property descriptors which are specified within this {@link XPropertySetInfo} . */
-  val Properties: SafeArray[Property] = js.native
+  val Properties: SafeArray[Property]
   
   /** @returns a sequence with all property descriptors which are specified within this {@link XPropertySetInfo} . */
-  def getProperties(): SafeArray[Property] = js.native
+  def getProperties(): SafeArray[Property]
   
   /**
     * @param aName specifies the name of the property.
     * @returns the property with the specified name from the object.
     * @throws UnknownPropertyException if the property does not exist.
     */
-  def getPropertyByName(aName: String): Property = js.native
+  def getPropertyByName(aName: String): Property
   
   /**
     * @param Name specifies the name of the property.
     * @returns `TRUE` if a property with the specified name exist; otherwise `FALSE` is returned.
     */
-  def hasPropertyByName(Name: String): Boolean = js.native
+  def hasPropertyByName(Name: String): Boolean
 }
 object XPropertySetInfo {
   

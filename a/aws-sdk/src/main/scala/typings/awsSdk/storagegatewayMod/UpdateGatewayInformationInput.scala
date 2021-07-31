@@ -2,25 +2,23 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGatewayInformationInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon CloudWatch log group that you want to use to monitor and log events in the gateway. For more information, see What is Amazon CloudWatch Logs? 
     */
-  var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.native
+  var CloudWatchLogGroupARN: js.UndefOr[typings.awsSdk.storagegatewayMod.CloudWatchLogGroupARN] = js.undefined
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
-  var GatewayName: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayName] = js.native
+  var GatewayName: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayName] = js.undefined
   
   /**
     * A value that indicates the time zone of the gateway.
     */
-  var GatewayTimezone: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayTimezone] = js.native
+  var GatewayTimezone: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayTimezone] = js.undefined
 }
 object UpdateGatewayInformationInput {
   

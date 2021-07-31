@@ -3,24 +3,22 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 import typings.googleapis.anon.Index
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Respone of uploading accounts in batch.
   */
-@js.native
 trait SchemaUploadAccountResponse extends StObject {
   
   /**
     * The error encountered while processing the account info.
     */
-  var error: js.UndefOr[js.Array[Index]] = js.native
+  var error: js.UndefOr[js.Array[Index]] = js.undefined
   
   /**
     * The fixed string &quot;identitytoolkit#UploadAccountResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaUploadAccountResponse {
   

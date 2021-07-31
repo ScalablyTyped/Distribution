@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object planMod {
@@ -61,6 +60,10 @@ object planMod {
   /* static members */
   object Plan {
     
+    @JSImport("@pulumi/aws/backup/plan", "Plan")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Plan resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,29 +73,23 @@ object planMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/backup/plan", "Plan.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Plan = js.native
-    @JSImport("@pulumi/aws/backup/plan", "Plan.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Plan = js.native
-    @JSImport("@pulumi/aws/backup/plan", "Plan.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlanState): Plan = js.native
-    @JSImport("@pulumi/aws/backup/plan", "Plan.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): Plan = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlanState): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Plan]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PlanState, opts: CustomResourceOptions): Plan = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Plan]
     
     /**
       * Returns true if the given object is an instance of Plan.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/backup/plan", "Plan.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/plan.Plan */ Boolean]
   }
   
-  @js.native
   trait PlanArgs extends StObject {
     
     /**
@@ -100,22 +97,22 @@ object planMod {
       */
     val advancedBackupSettings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The display name of a backup plan.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A rule object that specifies a scheduled task that is used to back up a selection of resources.
       */
-    val rules: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]] = js.native
+    val rules: Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]
     
     /**
       * Metadata that you can assign to help organize the plans you create.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PlanArgs {
     
@@ -157,7 +154,6 @@ object planMod {
     }
   }
   
-  @js.native
   trait PlanState extends StObject {
     
     /**
@@ -165,32 +161,32 @@ object planMod {
       */
     val advancedBackupSettings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanAdvancedBackupSetting]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN of the backup plan.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The display name of a backup plan.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A rule object that specifies a scheduled task that is used to back up a selection of resources.
       */
-    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]] = js.native
+    val rules: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.PlanRule]]]] = js.undefined
     
     /**
       * Metadata that you can assign to help organize the plans you create.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Unique, randomly generated, Unicode, UTF-8 encoded string that serves as the version ID of the backup plan.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object PlanState {
     

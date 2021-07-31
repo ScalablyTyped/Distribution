@@ -8,7 +8,6 @@ import typings.frctlFractal.mod.fractal.core.mixins.ConfigurableEmitter
 import typings.frctlFractal.mod.fractal.web.Web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@frctl/fractal", "Fractal")

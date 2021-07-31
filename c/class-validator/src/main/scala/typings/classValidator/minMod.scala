@@ -4,23 +4,23 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object minMod {
+  
+  @JSImport("class-validator/types/decorator/number/Min", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/number/Min", "MIN")
   @js.native
   val MIN: /* "min" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/number/Min", "Min")
-  @js.native
-  def Min_(minValue: Double): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/number/Min", "Min")
-  @js.native
-  def Min_(minValue: Double, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def Min_(minValue: Double): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def Min_(minValue: Double, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("Min")(minValue.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/number/Min", "min")
-  @js.native
-  def min(num: js.Any, min: Double): Boolean = js.native
+  @scala.inline
+  def min(num: js.Any, min: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(num.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

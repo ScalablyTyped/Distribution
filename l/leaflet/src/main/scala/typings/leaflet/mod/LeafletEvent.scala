@@ -3,24 +3,24 @@ package typings.leaflet.mod
 import typings.leaflet.mod.DomEvent._PropagableEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeafletEvent extends _PropagableEvent {
+trait LeafletEvent
+  extends StObject
+     with _PropagableEvent {
   
   /**
     * @deprecated The same as {@link LeafletEvent.propagatedFrom propagatedFrom}.
     */
-  var layer: js.Any = js.native
+  var layer: js.Any
   
-  var propagatedFrom: js.Any = js.native
+  var propagatedFrom: js.Any
   
-  var sourceTarget: js.Any = js.native
+  var sourceTarget: js.Any
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object LeafletEvent {
   

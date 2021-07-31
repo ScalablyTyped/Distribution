@@ -5,14 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import typings.activexLibreoffice.com_.sun.star.beans.StringPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * serializes a DOM tree by generating FastSAX events.
   * @since OOo 3.1
   */
-@js.native
 trait XFastSAXSerializable extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait XFastSAXSerializable extends StObject {
     tokenHandler: XFastTokenHandler,
     namespaces: SeqEquiv[StringPair],
     registerNamespaces: SeqEquiv[Pair[String, Double]]
-  ): Unit = js.native
+  ): Unit
 }
 object XFastSAXSerializable {
   

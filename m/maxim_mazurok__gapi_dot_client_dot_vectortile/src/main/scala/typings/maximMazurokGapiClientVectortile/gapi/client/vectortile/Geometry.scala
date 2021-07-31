@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
   /** The areas present in this geometry. */
-  var areas: js.UndefOr[js.Array[Area]] = js.native
+  var areas: js.UndefOr[js.Array[Area]] = js.undefined
   
   /** The extruded areas present in this geometry. */
-  var extrudedAreas: js.UndefOr[js.Array[ExtrudedArea]] = js.native
+  var extrudedAreas: js.UndefOr[js.Array[ExtrudedArea]] = js.undefined
   
   /** The lines present in this geometry. */
-  var lines: js.UndefOr[js.Array[Line]] = js.native
+  var lines: js.UndefOr[js.Array[Line]] = js.undefined
   
   /** The modeled volumes present in this geometry. */
-  var modeledVolumes: js.UndefOr[js.Array[ModeledVolume]] = js.native
+  var modeledVolumes: js.UndefOr[js.Array[ModeledVolume]] = js.undefined
 }
 object Geometry {
   

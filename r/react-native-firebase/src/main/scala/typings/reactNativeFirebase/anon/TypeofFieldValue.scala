@@ -4,26 +4,24 @@ import typings.reactNativeFirebase.mod.RNFirebase.firestore.AnyJs
 import typings.reactNativeFirebase.mod.RNFirebase.firestore.FieldValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofFieldValue extends StObject {
   
   /* static member */
-  def arrayRemove(elements: AnyJs*): FieldValue = js.native
+  def arrayRemove(elements: AnyJs*): FieldValue
   
   /* static member */
-  def arrayUnion(elements: AnyJs*): FieldValue = js.native
+  def arrayUnion(elements: AnyJs*): FieldValue
   
   /* static member */
-  def delete(): FieldValue = js.native
+  def delete(): FieldValue
   
   /* static member */
-  def increment(n: Double): FieldValue = js.native
+  def increment(n: Double): FieldValue
   
   /* static member */
-  def serverTimestamp(): FieldValue = js.native
+  def serverTimestamp(): FieldValue
 }
 object TypeofFieldValue {
   

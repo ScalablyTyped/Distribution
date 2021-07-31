@@ -3,7 +3,6 @@ package typings.parse.mod.global.Parse
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,39 +10,40 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Push {
   
-  @JSGlobal("Parse.Push.send")
+  @JSGlobal("Parse.Push")
   @js.native
-  def send[T](data: PushData): js.Promise[T] = js.native
-  @JSGlobal("Parse.Push.send")
-  @js.native
-  def send[T](data: PushData, options: SendOptions): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def send[T](data: PushData): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def send[T](data: PushData, options: SendOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
   trait PushData extends StObject {
     
-    var alert: js.UndefOr[String] = js.native
+    var alert: js.UndefOr[String] = js.undefined
     
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
-    var channels: js.UndefOr[js.Array[String]] = js.native
+    var channels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var content_available: js.UndefOr[js.Any] = js.native
+    var content_available: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var expiration_interval: js.UndefOr[Double] = js.native
+    var expiration_interval: js.UndefOr[Double] = js.undefined
     
-    var expiration_time: js.UndefOr[Date] = js.native
+    var expiration_time: js.UndefOr[Date] = js.undefined
     
-    var notification: js.UndefOr[js.Any] = js.native
+    var notification: js.UndefOr[js.Any] = js.undefined
     
-    var push_time: js.UndefOr[Date] = js.native
+    var push_time: js.UndefOr[Date] = js.undefined
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var where: js.UndefOr[Query[typings.parse.mod.global.Parse.Installation[Attributes]]] = js.native
+    var where: js.UndefOr[Query[Installation[Attributes]]] = js.undefined
   }
   object PushData {
     
@@ -126,19 +126,20 @@ object Push {
       def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
       
       @scala.inline
-      def setWhere(value: Query[typings.parse.mod.global.Parse.Installation[Attributes]]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
+      def setWhere(value: Query[Installation[Attributes]]): Self = StObject.set(x, "where", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWhereUndefined: Self = StObject.set(x, "where", js.undefined)
     }
   }
   
-  @js.native
-  trait SendOptions extends UseMasterKeyOption {
+  trait SendOptions
+    extends StObject
+       with UseMasterKeyOption {
     
-    var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var success: js.UndefOr[js.Function0[Unit]] = js.native
+    var success: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object SendOptions {
     

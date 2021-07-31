@@ -2,13 +2,11 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataParam extends StObject {
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
 }
 object MetadataParam {
   

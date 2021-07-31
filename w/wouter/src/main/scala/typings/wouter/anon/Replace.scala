@@ -2,13 +2,11 @@ package typings.wouter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Replace extends StObject {
   
-  var replace: js.UndefOr[Boolean] = js.native
+  var replace: js.UndefOr[Boolean] = js.undefined
 }
 object Replace {
   

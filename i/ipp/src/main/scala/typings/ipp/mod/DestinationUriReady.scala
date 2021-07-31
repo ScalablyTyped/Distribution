@@ -2,31 +2,29 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationUriReady extends StObject {
   
-  var `destination-attributes`: js.UndefOr[js.Array[js.Object]] = js.native
+  var `destination-attributes`: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var `destination-attributes-supported`: js.UndefOr[js.Array[String]] = js.native
+  var `destination-attributes-supported`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `destination-info`: js.UndefOr[String] = js.native
+  var `destination-info`: js.UndefOr[String] = js.undefined
   
-  var `destination-is-directory`: js.UndefOr[Boolean] = js.native
+  var `destination-is-directory`: js.UndefOr[Boolean] = js.undefined
   
-  var `destination-mandatory-access-attributes`: js.UndefOr[js.Array[String]] = js.native
+  var `destination-mandatory-access-attributes`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `destination-name`: js.UndefOr[String] = js.native
+  var `destination-name`: js.UndefOr[String] = js.undefined
   
-  var `destination-oauth-scope`: js.UndefOr[js.Array[String]] = js.native
+  var `destination-oauth-scope`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `destination-oauth-token`: js.UndefOr[js.Array[String]] = js.native
+  var `destination-oauth-token`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var `destination-oauth-uri`: js.UndefOr[String] = js.native
+  var `destination-oauth-uri`: js.UndefOr[String] = js.undefined
   
-  var `destination-uri`: js.UndefOr[String] = js.native
+  var `destination-uri`: js.UndefOr[String] = js.undefined
 }
 object DestinationUriReady {
   

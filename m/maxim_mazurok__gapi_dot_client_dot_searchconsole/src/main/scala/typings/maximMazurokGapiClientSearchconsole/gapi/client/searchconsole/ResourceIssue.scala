@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIssue extends StObject {
   
   /** Describes a blocked resource issue. */
-  var blockedResource: js.UndefOr[BlockedResource] = js.native
+  var blockedResource: js.UndefOr[BlockedResource] = js.undefined
 }
 object ResourceIssue {
   

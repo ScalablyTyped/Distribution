@@ -4,13 +4,11 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var style: StyleProp[ViewStyle] = js.native
+  var style: StyleProp[ViewStyle]
 }
 object Style {
   

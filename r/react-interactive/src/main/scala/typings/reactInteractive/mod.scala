@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactInteractive.anon.As
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -122,14 +121,13 @@ object mod {
   
   type Interactive = Component[InteractiveProps, js.Object, js.Any]
   
-  type InteractiveProps = FocusProps with ActiveProps with As
+  type InteractiveProps = FocusProps & ActiveProps & As
   
-  @js.native
   trait State extends StObject {
     
-    var focus: Focus = js.native
+    var focus: Focus
     
-    var iState: IState = js.native
+    var iState: IState
   }
   object State {
     

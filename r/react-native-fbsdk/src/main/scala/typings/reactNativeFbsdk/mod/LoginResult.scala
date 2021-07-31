@@ -2,19 +2,17 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginResult extends StObject {
   
-  var declinedPermissions: js.UndefOr[js.Array[Permissions]] = js.native
+  var declinedPermissions: js.UndefOr[js.Array[Permissions]] = js.undefined
   
-  var error: js.Any = js.native
+  var error: js.Any
   
-  var grantedPermissions: js.UndefOr[js.Array[Permissions]] = js.native
+  var grantedPermissions: js.UndefOr[js.Array[Permissions]] = js.undefined
   
-  var isCancelled: Boolean = js.native
+  var isCancelled: Boolean
 }
 object LoginResult {
   

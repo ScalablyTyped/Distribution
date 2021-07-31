@@ -4,41 +4,39 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.RGBA
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightRectRequest extends StObject {
   
   /**
     * The highlight fill color (default: transparent).
     */
-  var color: js.UndefOr[RGBA] = js.native
+  var color: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Rectangle height
     */
-  var height: integer = js.native
+  var height: integer
   
   /**
     * The highlight outline color (default: transparent).
     */
-  var outlineColor: js.UndefOr[RGBA] = js.native
+  var outlineColor: js.UndefOr[RGBA] = js.undefined
   
   /**
     * Rectangle width
     */
-  var width: integer = js.native
+  var width: integer
   
   /**
     * X coordinate
     */
-  var x: integer = js.native
+  var x: integer
   
   /**
     * Y coordinate
     */
-  var y: integer = js.native
+  var y: integer
 }
 object HighlightRectRequest {
   

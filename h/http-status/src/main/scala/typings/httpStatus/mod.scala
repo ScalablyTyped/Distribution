@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,612 +12,613 @@ object mod extends Shortcut {
   @js.native
   val ^ : HttpStatus = js.native
   
-  @js.native
-  trait HttpStatus extends /* key */ StringDictionary[String | Double | HttpStatusClasses | HttpStatusExtra] {
+  trait HttpStatus
+    extends StObject
+       with /* key */ StringDictionary[String | Double | HttpStatusClasses | HttpStatusExtra] {
     
-    val `100`: String = js.native
+    val `100`: String
     
-    val `100_CLASS`: String = js.native
+    val `100_CLASS`: String
     
-    val `100_MESSAGE`: String = js.native
+    val `100_MESSAGE`: String
     
-    val `100_NAME`: String = js.native
+    val `100_NAME`: String
     
-    val `101`: String = js.native
+    val `101`: String
     
-    val `101_CLASS`: String = js.native
+    val `101_CLASS`: String
     
-    val `101_MESSAGE`: String = js.native
+    val `101_MESSAGE`: String
     
-    val `101_NAME`: String = js.native
+    val `101_NAME`: String
     
-    val `200`: String = js.native
+    val `200`: String
     
-    val `200_CLASS`: String = js.native
+    val `200_CLASS`: String
     
-    val `200_MESSAGE`: String = js.native
+    val `200_MESSAGE`: String
     
-    val `200_NAME`: String = js.native
+    val `200_NAME`: String
     
-    val `201`: String = js.native
+    val `201`: String
     
-    val `201_CLASS`: String = js.native
+    val `201_CLASS`: String
     
-    val `201_MESSAGE`: String = js.native
+    val `201_MESSAGE`: String
     
-    val `201_NAME`: String = js.native
+    val `201_NAME`: String
     
-    val `202`: String = js.native
+    val `202`: String
     
-    val `202_CLASS`: String = js.native
+    val `202_CLASS`: String
     
-    val `202_MESSAGE`: String = js.native
+    val `202_MESSAGE`: String
     
-    val `202_NAME`: String = js.native
+    val `202_NAME`: String
     
-    val `203`: String = js.native
+    val `203`: String
     
-    val `203_CLASS`: String = js.native
+    val `203_CLASS`: String
     
-    val `203_MESSAGE`: String = js.native
+    val `203_MESSAGE`: String
     
-    val `203_NAME`: String = js.native
+    val `203_NAME`: String
     
-    val `204`: String = js.native
+    val `204`: String
     
-    val `204_CLASS`: String = js.native
+    val `204_CLASS`: String
     
-    val `204_MESSAGE`: String = js.native
+    val `204_MESSAGE`: String
     
-    val `204_NAME`: String = js.native
+    val `204_NAME`: String
     
-    val `205`: String = js.native
+    val `205`: String
     
-    val `205_CLASS`: String = js.native
+    val `205_CLASS`: String
     
-    val `205_MESSAGE`: String = js.native
+    val `205_MESSAGE`: String
     
-    val `205_NAME`: String = js.native
+    val `205_NAME`: String
     
-    val `206`: String = js.native
+    val `206`: String
     
-    val `206_CLASS`: String = js.native
+    val `206_CLASS`: String
     
-    val `206_MESSAGE`: String = js.native
+    val `206_MESSAGE`: String
     
-    val `206_NAME`: String = js.native
+    val `206_NAME`: String
     
-    val `207`: String = js.native
+    val `207`: String
     
-    val `207_CLASS`: String = js.native
+    val `207_CLASS`: String
     
-    val `207_MESSAGE`: String = js.native
+    val `207_MESSAGE`: String
     
-    val `207_NAME`: String = js.native
+    val `207_NAME`: String
     
-    val `208`: String = js.native
+    val `208`: String
     
-    val `208_CLASS`: String = js.native
+    val `208_CLASS`: String
     
-    val `208_MESSAGE`: String = js.native
+    val `208_MESSAGE`: String
     
-    val `208_NAME`: String = js.native
+    val `208_NAME`: String
     
-    val `226`: String = js.native
+    val `226`: String
     
-    val `226_CLASS`: String = js.native
+    val `226_CLASS`: String
     
-    val `226_MESSAGE`: String = js.native
+    val `226_MESSAGE`: String
     
-    val `226_NAME`: String = js.native
+    val `226_NAME`: String
     
-    val `300`: String = js.native
+    val `300`: String
     
-    val `300_CLASS`: String = js.native
+    val `300_CLASS`: String
     
-    val `300_MESSAGE`: String = js.native
+    val `300_MESSAGE`: String
     
-    val `300_NAME`: String = js.native
+    val `300_NAME`: String
     
-    val `301`: String = js.native
+    val `301`: String
     
-    val `301_CLASS`: String = js.native
+    val `301_CLASS`: String
     
-    val `301_MESSAGE`: String = js.native
+    val `301_MESSAGE`: String
     
-    val `301_NAME`: String = js.native
+    val `301_NAME`: String
     
-    val `302`: String = js.native
+    val `302`: String
     
-    val `302_CLASS`: String = js.native
+    val `302_CLASS`: String
     
-    val `302_MESSAGE`: String = js.native
+    val `302_MESSAGE`: String
     
-    val `302_NAME`: String = js.native
+    val `302_NAME`: String
     
-    val `303`: String = js.native
+    val `303`: String
     
-    val `303_CLASS`: String = js.native
+    val `303_CLASS`: String
     
-    val `303_MESSAGE`: String = js.native
+    val `303_MESSAGE`: String
     
-    val `303_NAME`: String = js.native
+    val `303_NAME`: String
     
-    val `304`: String = js.native
+    val `304`: String
     
-    val `304_CLASS`: String = js.native
+    val `304_CLASS`: String
     
-    val `304_MESSAGE`: String = js.native
+    val `304_MESSAGE`: String
     
-    val `304_NAME`: String = js.native
+    val `304_NAME`: String
     
-    val `305`: String = js.native
+    val `305`: String
     
-    val `305_CLASS`: String = js.native
+    val `305_CLASS`: String
     
-    val `305_MESSAGE`: String = js.native
+    val `305_MESSAGE`: String
     
-    val `305_NAME`: String = js.native
+    val `305_NAME`: String
     
-    val `306`: String = js.native
+    val `306`: String
     
-    val `306_CLASS`: String = js.native
+    val `306_CLASS`: String
     
-    val `306_MESSAGE`: String = js.native
+    val `306_MESSAGE`: String
     
-    val `306_NAME`: String = js.native
+    val `306_NAME`: String
     
-    val `307`: String = js.native
+    val `307`: String
     
-    val `307_CLASS`: String = js.native
+    val `307_CLASS`: String
     
-    val `307_MESSAGE`: String = js.native
+    val `307_MESSAGE`: String
     
-    val `307_NAME`: String = js.native
+    val `307_NAME`: String
     
-    val `308`: String = js.native
+    val `308`: String
     
-    val `308_CLASS`: String = js.native
+    val `308_CLASS`: String
     
-    val `308_MESSAGE`: String = js.native
+    val `308_MESSAGE`: String
     
-    val `308_NAME`: String = js.native
+    val `308_NAME`: String
     
-    val `400`: String = js.native
+    val `400`: String
     
-    val `400_CLASS`: String = js.native
+    val `400_CLASS`: String
     
-    val `400_MESSAGE`: String = js.native
+    val `400_MESSAGE`: String
     
-    val `400_NAME`: String = js.native
+    val `400_NAME`: String
     
-    val `401`: String = js.native
+    val `401`: String
     
-    val `401_CLASS`: String = js.native
+    val `401_CLASS`: String
     
-    val `401_MESSAGE`: String = js.native
+    val `401_MESSAGE`: String
     
-    val `401_NAME`: String = js.native
+    val `401_NAME`: String
     
-    val `402`: String = js.native
+    val `402`: String
     
-    val `402_CLASS`: String = js.native
+    val `402_CLASS`: String
     
-    val `402_MESSAGE`: String = js.native
+    val `402_MESSAGE`: String
     
-    val `402_NAME`: String = js.native
+    val `402_NAME`: String
     
-    val `403`: String = js.native
+    val `403`: String
     
-    val `403_CLASS`: String = js.native
+    val `403_CLASS`: String
     
-    val `403_MESSAGE`: String = js.native
+    val `403_MESSAGE`: String
     
-    val `403_NAME`: String = js.native
+    val `403_NAME`: String
     
-    val `404`: String = js.native
+    val `404`: String
     
-    val `404_CLASS`: String = js.native
+    val `404_CLASS`: String
     
-    val `404_MESSAGE`: String = js.native
+    val `404_MESSAGE`: String
     
-    val `404_NAME`: String = js.native
+    val `404_NAME`: String
     
-    val `405`: String = js.native
+    val `405`: String
     
-    val `405_CLASS`: String = js.native
+    val `405_CLASS`: String
     
-    val `405_MESSAGE`: String = js.native
+    val `405_MESSAGE`: String
     
-    val `405_NAME`: String = js.native
+    val `405_NAME`: String
     
-    val `406`: String = js.native
+    val `406`: String
     
-    val `406_CLASS`: String = js.native
+    val `406_CLASS`: String
     
-    val `406_MESSAGE`: String = js.native
+    val `406_MESSAGE`: String
     
-    val `406_NAME`: String = js.native
+    val `406_NAME`: String
     
-    val `407`: String = js.native
+    val `407`: String
     
-    val `407_CLASS`: String = js.native
+    val `407_CLASS`: String
     
-    val `407_MESSAGE`: String = js.native
+    val `407_MESSAGE`: String
     
-    val `407_NAME`: String = js.native
+    val `407_NAME`: String
     
-    val `408`: String = js.native
+    val `408`: String
     
-    val `408_CLASS`: String = js.native
+    val `408_CLASS`: String
     
-    val `408_MESSAGE`: String = js.native
+    val `408_MESSAGE`: String
     
-    val `408_NAME`: String = js.native
+    val `408_NAME`: String
     
-    val `409`: String = js.native
+    val `409`: String
     
-    val `409_CLASS`: String = js.native
+    val `409_CLASS`: String
     
-    val `409_MESSAGE`: String = js.native
+    val `409_MESSAGE`: String
     
-    val `409_NAME`: String = js.native
+    val `409_NAME`: String
     
-    val `410`: String = js.native
+    val `410`: String
     
-    val `410_CLASS`: String = js.native
+    val `410_CLASS`: String
     
-    val `410_MESSAGE`: String = js.native
+    val `410_MESSAGE`: String
     
-    val `410_NAME`: String = js.native
+    val `410_NAME`: String
     
-    val `411`: String = js.native
+    val `411`: String
     
-    val `411_CLASS`: String = js.native
+    val `411_CLASS`: String
     
-    val `411_MESSAGE`: String = js.native
+    val `411_MESSAGE`: String
     
-    val `411_NAME`: String = js.native
+    val `411_NAME`: String
     
-    val `412`: String = js.native
+    val `412`: String
     
-    val `412_CLASS`: String = js.native
+    val `412_CLASS`: String
     
-    val `412_MESSAGE`: String = js.native
+    val `412_MESSAGE`: String
     
-    val `412_NAME`: String = js.native
+    val `412_NAME`: String
     
-    val `413`: String = js.native
+    val `413`: String
     
-    val `413_CLASS`: String = js.native
+    val `413_CLASS`: String
     
-    val `413_MESSAGE`: String = js.native
+    val `413_MESSAGE`: String
     
-    val `413_NAME`: String = js.native
+    val `413_NAME`: String
     
-    val `414`: String = js.native
+    val `414`: String
     
-    val `414_CLASS`: String = js.native
+    val `414_CLASS`: String
     
-    val `414_MESSAGE`: String = js.native
+    val `414_MESSAGE`: String
     
-    val `414_NAME`: String = js.native
+    val `414_NAME`: String
     
-    val `415`: String = js.native
+    val `415`: String
     
-    val `415_CLASS`: String = js.native
+    val `415_CLASS`: String
     
-    val `415_MESSAGE`: String = js.native
+    val `415_MESSAGE`: String
     
-    val `415_NAME`: String = js.native
+    val `415_NAME`: String
     
-    val `416`: String = js.native
+    val `416`: String
     
-    val `416_CLASS`: String = js.native
+    val `416_CLASS`: String
     
-    val `416_MESSAGE`: String = js.native
+    val `416_MESSAGE`: String
     
-    val `416_NAME`: String = js.native
+    val `416_NAME`: String
     
-    val `417`: String = js.native
+    val `417`: String
     
-    val `417_CLASS`: String = js.native
+    val `417_CLASS`: String
     
-    val `417_MESSAGE`: String = js.native
+    val `417_MESSAGE`: String
     
-    val `417_NAME`: String = js.native
+    val `417_NAME`: String
     
-    val `418`: String = js.native
+    val `418`: String
     
-    val `418_CLASS`: String = js.native
+    val `418_CLASS`: String
     
-    val `418_MESSAGE`: String = js.native
+    val `418_MESSAGE`: String
     
-    val `418_NAME`: String = js.native
+    val `418_NAME`: String
     
-    val `421`: String = js.native
+    val `421`: String
     
-    val `421_CLASS`: String = js.native
+    val `421_CLASS`: String
     
-    val `421_MESSAGE`: String = js.native
+    val `421_MESSAGE`: String
     
-    val `421_NAME`: String = js.native
+    val `421_NAME`: String
     
-    val `422`: String = js.native
+    val `422`: String
     
-    val `422_CLASS`: String = js.native
+    val `422_CLASS`: String
     
-    val `422_MESSAGE`: String = js.native
+    val `422_MESSAGE`: String
     
-    val `422_NAME`: String = js.native
+    val `422_NAME`: String
     
-    val `423`: String = js.native
+    val `423`: String
     
-    val `423_CLASS`: String = js.native
+    val `423_CLASS`: String
     
-    val `423_MESSAGE`: String = js.native
+    val `423_MESSAGE`: String
     
-    val `423_NAME`: String = js.native
+    val `423_NAME`: String
     
-    val `424`: String = js.native
+    val `424`: String
     
-    val `424_CLASS`: String = js.native
+    val `424_CLASS`: String
     
-    val `424_MESSAGE`: String = js.native
+    val `424_MESSAGE`: String
     
-    val `424_NAME`: String = js.native
+    val `424_NAME`: String
     
-    val `426`: String = js.native
+    val `426`: String
     
-    val `426_CLASS`: String = js.native
+    val `426_CLASS`: String
     
-    val `426_MESSAGE`: String = js.native
+    val `426_MESSAGE`: String
     
-    val `426_NAME`: String = js.native
+    val `426_NAME`: String
     
-    val `428`: String = js.native
+    val `428`: String
     
-    val `428_CLASS`: String = js.native
+    val `428_CLASS`: String
     
-    val `428_MESSAGE`: String = js.native
+    val `428_MESSAGE`: String
     
-    val `428_NAME`: String = js.native
+    val `428_NAME`: String
     
-    val `429`: String = js.native
+    val `429`: String
     
-    val `429_CLASS`: String = js.native
+    val `429_CLASS`: String
     
-    val `429_MESSAGE`: String = js.native
+    val `429_MESSAGE`: String
     
-    val `429_NAME`: String = js.native
+    val `429_NAME`: String
     
-    val `431`: String = js.native
+    val `431`: String
     
-    val `431_CLASS`: String = js.native
+    val `431_CLASS`: String
     
-    val `431_MESSAGE`: String = js.native
+    val `431_MESSAGE`: String
     
-    val `431_NAME`: String = js.native
+    val `431_NAME`: String
     
-    val `451`: String = js.native
+    val `451`: String
     
-    val `451_CLASS`: String = js.native
+    val `451_CLASS`: String
     
-    val `451_MESSAGE`: String = js.native
+    val `451_MESSAGE`: String
     
-    val `451_NAME`: String = js.native
+    val `451_NAME`: String
     
-    val `500`: String = js.native
+    val `500`: String
     
-    val `500_CLASS`: String = js.native
+    val `500_CLASS`: String
     
-    val `500_MESSAGE`: String = js.native
+    val `500_MESSAGE`: String
     
-    val `500_NAME`: String = js.native
+    val `500_NAME`: String
     
-    val `501`: String = js.native
+    val `501`: String
     
-    val `501_CLASS`: String = js.native
+    val `501_CLASS`: String
     
-    val `501_MESSAGE`: String = js.native
+    val `501_MESSAGE`: String
     
-    val `501_NAME`: String = js.native
+    val `501_NAME`: String
     
-    val `502`: String = js.native
+    val `502`: String
     
-    val `503`: String = js.native
+    val `503`: String
     
-    val `503_CLASS`: String = js.native
+    val `503_CLASS`: String
     
-    val `503_MESSAGE`: String = js.native
+    val `503_MESSAGE`: String
     
-    val `503_NAME`: String = js.native
+    val `503_NAME`: String
     
-    val `504`: String = js.native
+    val `504`: String
     
-    val `504_CLASS`: String = js.native
+    val `504_CLASS`: String
     
-    val `504_MESSAGE`: String = js.native
+    val `504_MESSAGE`: String
     
-    val `504_NAME`: String = js.native
+    val `504_NAME`: String
     
-    val `505`: String = js.native
+    val `505`: String
     
-    val `505_CLASS`: String = js.native
+    val `505_CLASS`: String
     
-    val `505_MESSAGE`: String = js.native
+    val `505_MESSAGE`: String
     
-    val `505_NAME`: String = js.native
+    val `505_NAME`: String
     
-    val `506`: String = js.native
+    val `506`: String
     
-    val `506_CLASS`: String = js.native
+    val `506_CLASS`: String
     
-    val `506_MESSAGE`: String = js.native
+    val `506_MESSAGE`: String
     
-    val `506_NAME`: String = js.native
+    val `506_NAME`: String
     
-    val `507`: String = js.native
+    val `507`: String
     
-    val `507_CLASS`: String = js.native
+    val `507_CLASS`: String
     
-    val `507_MESSAGE`: String = js.native
+    val `507_MESSAGE`: String
     
-    val `507_NAME`: String = js.native
+    val `507_NAME`: String
     
-    val `508`: String = js.native
+    val `508`: String
     
-    val `508_CLASS`: String = js.native
+    val `508_CLASS`: String
     
-    val `508_MESSAGE`: String = js.native
+    val `508_MESSAGE`: String
     
-    val `508_NAME`: String = js.native
+    val `508_NAME`: String
     
-    val `510`: String = js.native
+    val `510`: String
     
-    val `510_CLASS`: String = js.native
+    val `510_CLASS`: String
     
-    val `510_MESSAGE`: String = js.native
+    val `510_MESSAGE`: String
     
-    val `510_NAME`: String = js.native
+    val `510_NAME`: String
     
-    val `511`: String = js.native
+    val `511`: String
     
-    val `511_CLASS`: String = js.native
+    val `511_CLASS`: String
     
-    val `511_MESSAGE`: String = js.native
+    val `511_MESSAGE`: String
     
-    val `511_NAME`: String = js.native
+    val `511_NAME`: String
     
-    val ACCEPTED: Double = js.native
+    val ACCEPTED: Double
     
-    val ALREADY_REPORTED: Double = js.native
+    val ALREADY_REPORTED: Double
     
-    val BAD_GATEWAY: Double = js.native
+    val BAD_GATEWAY: Double
     
-    val BAD_REQUEST: Double = js.native
+    val BAD_REQUEST: Double
     
-    val CONFLICT: Double = js.native
+    val CONFLICT: Double
     
-    val CONTINUE: Double = js.native
+    val CONTINUE: Double
     
-    val CREATED: Double = js.native
+    val CREATED: Double
     
-    val EXPECTATION_FAILED: Double = js.native
+    val EXPECTATION_FAILED: Double
     
-    val FAILED_DEPENDENCY: Double = js.native
+    val FAILED_DEPENDENCY: Double
     
-    val FORBIDDEN: Double = js.native
+    val FORBIDDEN: Double
     
-    val FOUND: Double = js.native
+    val FOUND: Double
     
-    val GATEWAY_TIMEOUT: Double = js.native
+    val GATEWAY_TIMEOUT: Double
     
-    val GONE: Double = js.native
+    val GONE: Double
     
-    val HTTP_VERSION_NOT_SUPPORTED: Double = js.native
+    val HTTP_VERSION_NOT_SUPPORTED: Double
     
-    val IM_A_TEAPOT: Double = js.native
+    val IM_A_TEAPOT: Double
     
-    val IM_USED: Double = js.native
+    val IM_USED: Double
     
-    val INSUFFICIENT_STORAGE: Double = js.native
+    val INSUFFICIENT_STORAGE: Double
     
-    val INTERNAL_SERVER_ERROR: Double = js.native
+    val INTERNAL_SERVER_ERROR: Double
     
-    val LENGTH_REQUIRED: Double = js.native
+    val LENGTH_REQUIRED: Double
     
-    val LOCKED: Double = js.native
+    val LOCKED: Double
     
-    val LOOP_DETECTED: Double = js.native
+    val LOOP_DETECTED: Double
     
-    val METHOD_NOT_ALLOWED: Double = js.native
+    val METHOD_NOT_ALLOWED: Double
     
-    val MISDIRECTED_REQUEST: Double = js.native
+    val MISDIRECTED_REQUEST: Double
     
-    val MOVED_PERMANENTLY: Double = js.native
+    val MOVED_PERMANENTLY: Double
     
-    val MULTIPLE_CHOICES: Double = js.native
+    val MULTIPLE_CHOICES: Double
     
-    val MULTI_STATUS: Double = js.native
+    val MULTI_STATUS: Double
     
-    val NETWORK_AUTHENTICATION_REQUIRED: Double = js.native
+    val NETWORK_AUTHENTICATION_REQUIRED: Double
     
-    val NON_AUTHORITATIVE_INFORMATION: Double = js.native
+    val NON_AUTHORITATIVE_INFORMATION: Double
     
-    val NOT_ACCEPTABLE: Double = js.native
+    val NOT_ACCEPTABLE: Double
     
-    val NOT_EXTENDED: Double = js.native
+    val NOT_EXTENDED: Double
     
-    val NOT_FOUND: Double = js.native
+    val NOT_FOUND: Double
     
-    val NOT_IMPLEMENTED: Double = js.native
+    val NOT_IMPLEMENTED: Double
     
-    val NOT_MODIFIED: Double = js.native
+    val NOT_MODIFIED: Double
     
-    val NO_CONTENT: Double = js.native
+    val NO_CONTENT: Double
     
-    val OK: Double = js.native
+    val OK: Double
     
-    val PARTIAL_CONTENT: Double = js.native
+    val PARTIAL_CONTENT: Double
     
-    val PAYMENT_REQUIRED: Double = js.native
+    val PAYMENT_REQUIRED: Double
     
-    val PERMANENT_REDIRECT: Double = js.native
+    val PERMANENT_REDIRECT: Double
     
-    val PRECONDITION_FAILED: Double = js.native
+    val PRECONDITION_FAILED: Double
     
-    val PRECONDITION_REQUIRED: Double = js.native
+    val PRECONDITION_REQUIRED: Double
     
-    val PROXY_AUTHENTICATION_REQUIRED: Double = js.native
+    val PROXY_AUTHENTICATION_REQUIRED: Double
     
-    val REQUESTED_RANGE_NOT_SATISFIABLE: Double = js.native
+    val REQUESTED_RANGE_NOT_SATISFIABLE: Double
     
-    val REQUEST_ENTITY_TOO_LARGE: Double = js.native
+    val REQUEST_ENTITY_TOO_LARGE: Double
     
-    val REQUEST_HEADER_FIELDS_TOO_LARGE: Double = js.native
+    val REQUEST_HEADER_FIELDS_TOO_LARGE: Double
     
-    val REQUEST_TIMEOUT: Double = js.native
+    val REQUEST_TIMEOUT: Double
     
-    val REQUEST_URI_TOO_LONG: Double = js.native
+    val REQUEST_URI_TOO_LONG: Double
     
-    val RESET_CONTENT: Double = js.native
+    val RESET_CONTENT: Double
     
-    val SEE_OTHER: Double = js.native
+    val SEE_OTHER: Double
     
-    val SERVICE_UNAVAILABLE: Double = js.native
+    val SERVICE_UNAVAILABLE: Double
     
-    val SWITCHING_PROTOCOLS: Double = js.native
+    val SWITCHING_PROTOCOLS: Double
     
-    val SWITCH_PROXY: Double = js.native
+    val SWITCH_PROXY: Double
     
-    val TEMPORARY_REDIRECT: Double = js.native
+    val TEMPORARY_REDIRECT: Double
     
-    val TOO_MANY_REQUESTS: Double = js.native
+    val TOO_MANY_REQUESTS: Double
     
-    val UNAUTHORIZED: Double = js.native
+    val UNAUTHORIZED: Double
     
-    val UNAVAILABLE_FOR_LEGAL_REASONS: Double = js.native
+    val UNAVAILABLE_FOR_LEGAL_REASONS: Double
     
-    val UNPROCESSABLE_ENTITY: Double = js.native
+    val UNPROCESSABLE_ENTITY: Double
     
-    val UNSUPPORTED_MEDIA_TYPE: Double = js.native
+    val UNSUPPORTED_MEDIA_TYPE: Double
     
-    val UPGRADE_REQUIRED: Double = js.native
+    val UPGRADE_REQUIRED: Double
     
-    val USE_PROXY: Double = js.native
+    val USE_PROXY: Double
     
-    val VARIANT_ALSO_NEGOTIATES: Double = js.native
+    val VARIANT_ALSO_NEGOTIATES: Double
     
-    val _CLASS: String = js.native
+    val _CLASS: String
     
-    val _MESSAGE: String = js.native
+    val _MESSAGE: String
     
-    val _NAME: String = js.native
+    val _NAME: String
     
-    var classes: HttpStatusClasses = js.native
+    var classes: HttpStatusClasses
     
-    var extra: HttpStatusExtra = js.native
+    var extra: HttpStatusExtra
   }
   object HttpStatus {
     
@@ -2031,48 +2031,49 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HttpStatusClasses extends /* key */ StringDictionary[String | Double] {
+  trait HttpStatusClasses
+    extends StObject
+       with /* key */ StringDictionary[String | Double] {
     
-    val `1xx`: String = js.native
+    val `1xx`: String
     
-    val `1xx_MESSAGE`: String = js.native
+    val `1xx_MESSAGE`: String
     
-    val `1xx_NAME`: String = js.native
+    val `1xx_NAME`: String
     
-    val `2xx`: String = js.native
+    val `2xx`: String
     
-    val `2xx_MESSAGE`: String = js.native
+    val `2xx_MESSAGE`: String
     
-    val `2xx_NAME`: String = js.native
+    val `2xx_NAME`: String
     
-    val `3xx`: String = js.native
+    val `3xx`: String
     
-    val `3xx_MESSAGE`: String = js.native
+    val `3xx_MESSAGE`: String
     
-    val `3xx_NAME`: String = js.native
+    val `3xx_NAME`: String
     
-    val `4xx`: String = js.native
+    val `4xx`: String
     
-    val `4xx_MESSAGE`: String = js.native
+    val `4xx_MESSAGE`: String
     
-    val `4xx_NAME`: String = js.native
+    val `4xx_NAME`: String
     
-    val `5xx`: String = js.native
+    val `5xx`: String
     
-    val `5xx_MESSAGE`: String = js.native
+    val `5xx_MESSAGE`: String
     
-    val `5xx_NAME`: String = js.native
+    val `5xx_NAME`: String
     
-    val CLIENT_ERROR: String = js.native
+    val CLIENT_ERROR: String
     
-    val INFORMATIONAL: String = js.native
+    val INFORMATIONAL: String
     
-    val REDIRECTION: String = js.native
+    val REDIRECTION: String
     
-    val SERVER_ERROR: String = js.native
+    val SERVER_ERROR: String
     
-    val SUCCESSFUL: String = js.native
+    val SUCCESSFUL: String
   }
   object HttpStatusClasses {
     
@@ -2183,88 +2184,87 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HttpStatusCloudfare extends StObject {
     
-    val `520`: String = js.native
+    val `520`: String
     
-    val `520_CLASS`: String = js.native
+    val `520_CLASS`: String
     
-    val `520_MESSAGE`: String = js.native
+    val `520_MESSAGE`: String
     
-    val `520_NAME`: String = js.native
+    val `520_NAME`: String
     
-    val `521`: String = js.native
+    val `521`: String
     
-    val `521_CLASS`: String = js.native
+    val `521_CLASS`: String
     
-    val `521_MESSAGE`: String = js.native
+    val `521_MESSAGE`: String
     
-    val `521_NAME`: String = js.native
+    val `521_NAME`: String
     
-    val `522`: String = js.native
+    val `522`: String
     
-    val `522_CLASS`: String = js.native
+    val `522_CLASS`: String
     
-    val `522_MESSAGE`: String = js.native
+    val `522_MESSAGE`: String
     
-    val `522_NAME`: String = js.native
+    val `522_NAME`: String
     
-    val `523`: String = js.native
+    val `523`: String
     
-    val `523_CLASS`: String = js.native
+    val `523_CLASS`: String
     
-    val `523_MESSAGE`: String = js.native
+    val `523_MESSAGE`: String
     
-    val `523_NAME`: String = js.native
+    val `523_NAME`: String
     
-    val `524`: String = js.native
+    val `524`: String
     
-    val `524_CLASS`: String = js.native
+    val `524_CLASS`: String
     
-    val `524_MESSAGE`: String = js.native
+    val `524_MESSAGE`: String
     
-    val `524_NAME`: String = js.native
+    val `524_NAME`: String
     
-    val `525`: String = js.native
+    val `525`: String
     
-    val `525_CLASS`: String = js.native
+    val `525_CLASS`: String
     
-    val `525_MESSAGE`: String = js.native
+    val `525_MESSAGE`: String
     
-    val `525_NAME`: String = js.native
+    val `525_NAME`: String
     
-    val `526`: String = js.native
+    val `526`: String
     
-    val `526_CLASS`: String = js.native
+    val `526_CLASS`: String
     
-    val `526_MESSAGE`: String = js.native
+    val `526_MESSAGE`: String
     
-    val `526_NAME`: String = js.native
+    val `526_NAME`: String
     
-    val `527`: String = js.native
+    val `527`: String
     
-    val `527_CLASS`: String = js.native
+    val `527_CLASS`: String
     
-    val `527_MESSAGE`: String = js.native
+    val `527_MESSAGE`: String
     
-    val `527_NAME`: String = js.native
+    val `527_NAME`: String
     
-    val A_TIMEOUT_OCCURRED: Double = js.native
+    val A_TIMEOUT_OCCURRED: Double
     
-    val CONNECTION_TIMED_OUT: Double = js.native
+    val CONNECTION_TIMED_OUT: Double
     
-    val INVALID_SSL_CERTIFICATE: Double = js.native
+    val INVALID_SSL_CERTIFICATE: Double
     
-    val ORIGIN_IS_UNREACHABLE: Double = js.native
+    val ORIGIN_IS_UNREACHABLE: Double
     
-    val RAILGUN_ERROR: Double = js.native
+    val RAILGUN_ERROR: Double
     
-    val SSL_HANDSHAKE_FAILED: Double = js.native
+    val SSL_HANDSHAKE_FAILED: Double
     
-    val UNKNOWN_ERROR: Double = js.native
+    val UNKNOWN_ERROR: Double
     
-    val WEB_SERVER_IS_DOWN: Double = js.native
+    val WEB_SERVER_IS_DOWN: Double
   }
   object HttpStatusCloudfare {
     
@@ -2472,16 +2472,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait HttpStatusExtra extends StObject {
     
-    val cloudflare: HttpStatusCloudfare = js.native
+    val cloudflare: HttpStatusCloudfare
     
-    val iis: HttpStatusIis = js.native
+    val iis: HttpStatusIis
     
-    val nginx: HttpStatusNginx = js.native
+    val nginx: HttpStatusNginx
     
-    val unofficial: HttpStatusUnofficial = js.native
+    val unofficial: HttpStatusUnofficial
   }
   object HttpStatusExtra {
     
@@ -2513,38 +2512,39 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HttpStatusIis extends /* key */ StringDictionary[String | Double] {
+  trait HttpStatusIis
+    extends StObject
+       with /* key */ StringDictionary[String | Double] {
     
-    val `440`: String = js.native
+    val `440`: String
     
-    val `440_CLASS`: String = js.native
+    val `440_CLASS`: String
     
-    val `440_MESSAGE`: String = js.native
+    val `440_MESSAGE`: String
     
-    val `440_NAME`: String = js.native
+    val `440_NAME`: String
     
-    val `449`: String = js.native
+    val `449`: String
     
-    val `449_CLASS`: String = js.native
+    val `449_CLASS`: String
     
-    val `449_MESSAGE`: String = js.native
+    val `449_MESSAGE`: String
     
-    val `449_NAME`: String = js.native
+    val `449_NAME`: String
     
-    val `451`: String = js.native
+    val `451`: String
     
-    val `451_CLASS`: String = js.native
+    val `451_CLASS`: String
     
-    val `451_MESSAGE`: String = js.native
+    val `451_MESSAGE`: String
     
-    val `451_NAME`: String = js.native
+    val `451_NAME`: String
     
-    val LOGIN_TIME_OUT: Double = js.native
+    val LOGIN_TIME_OUT: Double
     
-    val REDIRECT: Double = js.native
+    val REDIRECT: Double
     
-    val RETRY_WITH: Double = js.native
+    val RETRY_WITH: Double
   }
   object HttpStatusIis {
     
@@ -2632,68 +2632,69 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HttpStatusNginx extends /* key */ StringDictionary[String | Double] {
+  trait HttpStatusNginx
+    extends StObject
+       with /* key */ StringDictionary[String | Double] {
     
-    val `444`: String = js.native
+    val `444`: String
     
-    val `444_CLASS`: String = js.native
+    val `444_CLASS`: String
     
-    val `444_MESSAGE`: String = js.native
+    val `444_MESSAGE`: String
     
-    val `444_NAME`: String = js.native
+    val `444_NAME`: String
     
-    val `494`: String = js.native
+    val `494`: String
     
-    val `494_CLASS`: String = js.native
+    val `494_CLASS`: String
     
-    val `494_MESSAGE`: String = js.native
+    val `494_MESSAGE`: String
     
-    val `494_NAME`: String = js.native
+    val `494_NAME`: String
     
-    val `495`: String = js.native
+    val `495`: String
     
-    val `495_CLASS`: String = js.native
+    val `495_CLASS`: String
     
-    val `495_MESSAGE`: String = js.native
+    val `495_MESSAGE`: String
     
-    val `495_NAME`: String = js.native
+    val `495_NAME`: String
     
-    val `496`: String = js.native
+    val `496`: String
     
-    val `496_CLASS`: String = js.native
+    val `496_CLASS`: String
     
-    val `496_MESSAGE`: String = js.native
+    val `496_MESSAGE`: String
     
-    val `496_NAME`: String = js.native
+    val `496_NAME`: String
     
-    val `497`: String = js.native
+    val `497`: String
     
-    val `497_CLASS`: String = js.native
+    val `497_CLASS`: String
     
-    val `497_MESSAGE`: String = js.native
+    val `497_MESSAGE`: String
     
-    val `497_NAME`: String = js.native
+    val `497_NAME`: String
     
-    val `499`: String = js.native
+    val `499`: String
     
-    val `499_CLASS`: String = js.native
+    val `499_CLASS`: String
     
-    val `499_MESSAGE`: String = js.native
+    val `499_MESSAGE`: String
     
-    val `499_NAME`: String = js.native
+    val `499_NAME`: String
     
-    val CLIENT_CLOSED_REQUEST: Double = js.native
+    val CLIENT_CLOSED_REQUEST: Double
     
-    val HTTP_REQUEST_SENT_TO_HTTPS_PORT: Double = js.native
+    val HTTP_REQUEST_SENT_TO_HTTPS_PORT: Double
     
-    val NO_RESPONSE: Double = js.native
+    val NO_RESPONSE: Double
     
-    val REQUEST_HEADER_TOO_LARGE: Double = js.native
+    val REQUEST_HEADER_TOO_LARGE: Double
     
-    val SSL_CERTIFICATE_ERROR: Double = js.native
+    val SSL_CERTIFICATE_ERROR: Double
     
-    val SSL_CERTIFICATE_REQUIRED: Double = js.native
+    val SSL_CERTIFICATE_REQUIRED: Double
   }
   object HttpStatusNginx {
     
@@ -2853,88 +2854,89 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HttpStatusUnofficial extends /* key */ StringDictionary[String | Double] {
+  trait HttpStatusUnofficial
+    extends StObject
+       with /* key */ StringDictionary[String | Double] {
     
-    val `103`: String = js.native
+    val `103`: String
     
-    val `103_CLASS`: String = js.native
+    val `103_CLASS`: String
     
-    val `103_MESSAGE`: String = js.native
+    val `103_MESSAGE`: String
     
-    val `103_NAME`: String = js.native
+    val `103_NAME`: String
     
-    val `420`: String = js.native
+    val `420`: String
     
-    val `420_CLASS`: String = js.native
+    val `420_CLASS`: String
     
-    val `420_MESSAGE`: String = js.native
+    val `420_MESSAGE`: String
     
-    val `420_NAME`: String = js.native
+    val `420_NAME`: String
     
-    val `450`: String = js.native
+    val `450`: String
     
-    val `450_CLASS`: String = js.native
+    val `450_CLASS`: String
     
-    val `450_MESSAGE`: String = js.native
+    val `450_MESSAGE`: String
     
-    val `450_NAME`: String = js.native
+    val `450_NAME`: String
     
-    val `498`: String = js.native
+    val `498`: String
     
-    val `498_CLASS`: String = js.native
+    val `498_CLASS`: String
     
-    val `498_MESSAGE`: String = js.native
+    val `498_MESSAGE`: String
     
-    val `498_NAME`: String = js.native
+    val `498_NAME`: String
     
-    val `499`: String = js.native
+    val `499`: String
     
-    val `499_CLASS`: String = js.native
+    val `499_CLASS`: String
     
-    val `499_MESSAGE`: String = js.native
+    val `499_MESSAGE`: String
     
-    val `499_NAME`: String = js.native
+    val `499_NAME`: String
     
-    val `509`: String = js.native
+    val `509`: String
     
-    val `509_CLASS`: String = js.native
+    val `509_CLASS`: String
     
-    val `509_MESSAGE`: String = js.native
+    val `509_MESSAGE`: String
     
-    val `509_NAME`: String = js.native
+    val `509_NAME`: String
     
-    val `530`: String = js.native
+    val `530`: String
     
-    val `530_CLASS`: String = js.native
+    val `530_CLASS`: String
     
-    val `530_MESSAGE`: String = js.native
+    val `530_MESSAGE`: String
     
-    val `530_NAME`: String = js.native
+    val `530_NAME`: String
     
-    val `598`: String = js.native
+    val `598`: String
     
-    val `598_CLASS`: String = js.native
+    val `598_CLASS`: String
     
-    val `598_MESSAGE`: String = js.native
+    val `598_MESSAGE`: String
     
-    val `598_NAME`: String = js.native
+    val `598_NAME`: String
     
-    val BANDWIDTH_LIMIT_EXCEEDED: Double = js.native
+    val BANDWIDTH_LIMIT_EXCEEDED: Double
     
-    val BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: Double = js.native
+    val BLOCKED_BY_WINDOWS_PARENTAL_CONTROLS: Double
     
-    val CHECKPOINT: Double = js.native
+    val CHECKPOINT: Double
     
-    val ENHANCE_YOUR_CALM: Double = js.native
+    val ENHANCE_YOUR_CALM: Double
     
-    val INVALID_TOKEN: Double = js.native
+    val INVALID_TOKEN: Double
     
-    val NETWORK_READ_TIMEOUT_ERROR: Double = js.native
+    val NETWORK_READ_TIMEOUT_ERROR: Double
     
-    val SITE_IS_FROZEN: Double = js.native
+    val SITE_IS_FROZEN: Double
     
-    val TOKEN_REQUIRED: Double = js.native
+    val TOKEN_REQUIRED: Double
   }
   object HttpStatusUnofficial {
     

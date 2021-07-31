@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TrainingExampleList. */
-@js.native
 trait TrainingExampleList extends StObject {
   
   /** Array of training examples. */
-  var examples: js.UndefOr[js.Array[TrainingExample]] = js.native
+  var examples: js.UndefOr[js.Array[TrainingExample]] = js.undefined
 }
 object TrainingExampleList {
   

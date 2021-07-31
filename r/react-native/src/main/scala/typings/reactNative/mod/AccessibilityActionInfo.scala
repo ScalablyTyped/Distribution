@@ -2,16 +2,14 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :react-native.react-native.AccessibilityActionName | string,   label :string | undefined}> */
-@js.native
 trait AccessibilityActionInfo extends StObject {
   
-  val label: js.UndefOr[String] = js.native
+  val label: js.UndefOr[String] = js.undefined
   
-  val name: AccessibilityActionName | String = js.native
+  val name: AccessibilityActionName | String
 }
 object AccessibilityActionInfo {
   

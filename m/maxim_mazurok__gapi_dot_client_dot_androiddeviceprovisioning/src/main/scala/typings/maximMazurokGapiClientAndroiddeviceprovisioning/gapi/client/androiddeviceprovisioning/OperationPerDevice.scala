@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationPerDevice extends StObject {
   
   /** A copy of the original device-claim request received by the server. */
-  var claim: js.UndefOr[PartnerClaim] = js.native
+  var claim: js.UndefOr[PartnerClaim] = js.undefined
   
   /** The processing result for each device. */
-  var result: js.UndefOr[PerDeviceStatusInBatch] = js.native
+  var result: js.UndefOr[PerDeviceStatusInBatch] = js.undefined
   
   /** A copy of the original device-unclaim request received by the server. */
-  var unclaim: js.UndefOr[PartnerUnclaim] = js.native
+  var unclaim: js.UndefOr[PartnerUnclaim] = js.undefined
   
   /** A copy of the original metadata-update request received by the server. */
-  var updateMetadata: js.UndefOr[UpdateMetadataArguments] = js.native
+  var updateMetadata: js.UndefOr[UpdateMetadataArguments] = js.undefined
 }
 object OperationPerDevice {
   

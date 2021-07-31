@@ -11,7 +11,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.processMod.global.NodeJS.Process
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,10 +24,9 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait LaunchOptions extends StObject {
     
-    var completion: js.UndefOr[String] = js.native
+    var completion: js.UndefOr[String] = js.undefined
     
     /**
       * Don't search for a config, use the one provided.
@@ -36,13 +34,13 @@ object mod {
       * unless an alternate location is explicitly specified using `cwd`.
       * @default null
       */
-    var configPath: js.UndefOr[String] = js.native
+    var configPath: js.UndefOr[String] = js.undefined
     
     /**
       * Change the current working directory for this launch. Relative paths are calculated against `process.cwd()`.
       * @default process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Allows you to force node or V8 flags during the launch.
@@ -53,14 +51,14 @@ object mod {
       */
     var forcedFlags: js.UndefOr[
         String | js.Array[String] | (js.Function1[/* env */ LiftoffEnv, String | js.Array[String]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string or array of modules to attempt requiring from the local
       * working directory before invoking the launch callback.
       * @default null
       */
-    var require: js.UndefOr[String | js.Array[_]] = js.native
+    var require: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   }
   object LaunchOptions {
     
@@ -104,7 +102,7 @@ object mod {
       def setForcedFlagsVarargs(value: String*): Self = StObject.set(x, "forcedFlags", js.Array(value :_*))
       
       @scala.inline
-      def setRequire(value: String | js.Array[_]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
+      def setRequire(value: String | js.Array[js.Any]): Self = StObject.set(x, "require", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRequireUndefined: Self = StObject.set(x, "require", js.undefined)
@@ -210,48 +208,47 @@ object mod {
     def removeListener_respawn(event: respawn, listener: js.Function2[/* flags */ js.Array[String], /* child */ Process, Unit]): this.type = js.native
   }
   
-  @js.native
   trait LiftoffEnv extends StObject {
     
     /**
       * the base directory of your configuration file (if found)
       */
-    var configBase: js.UndefOr[String] = js.native
+    var configBase: js.UndefOr[String] = js.undefined
     
     /**
       * an object of filepaths for each found config file (filepath values will be null if not found)
       */
-    var configFiles: js.UndefOr[StringDictionary[StringDictionary[String | Null]]] = js.native
+    var configFiles: js.UndefOr[StringDictionary[StringDictionary[String | Null]]] = js.undefined
     
     /**
       * the config files searched for
       */
-    var configNameSearch: js.Array[String] = js.native
+    var configNameSearch: js.Array[String]
     
     /**
       * the full path to your configuration file (if found)
       */
-    var configPath: js.UndefOr[String] = js.native
+    var configPath: js.UndefOr[String] = js.undefined
     
     /**
       * the current working directory
       */
-    var cwd: String = js.native
+    var cwd: String
     
     /**
       * the contents of the local module's package.json (if found)
       */
-    var modulePackage: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var modulePackage: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * the full path to the local module your project relies on (if found)
       */
-    var modulePath: js.UndefOr[String] = js.native
+    var modulePath: js.UndefOr[String] = js.undefined
     
     /**
       * an array of modules that liftoff tried to pre-load
       */
-    var require: js.Array[String] = js.native
+    var require: js.Array[String]
   }
   object LiftoffEnv {
     
@@ -311,14 +308,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * A method to handle bash/zsh/whatever completions.
       * @default null
       */
-    var completions: js.UndefOr[js.Function1[/* completion */ String, _]] = js.native
+    var completions: js.UndefOr[js.Function1[/* completion */ String, js.Any]] = js.undefined
     
     /**
       * An object of configuration files to find. Each property is keyed by the
@@ -326,13 +322,13 @@ object mod {
       * of path arguments keyed by unique names.
       * @default null
       */
-    var configFiles: js.UndefOr[StringDictionary[StringDictionary[String | PathSpec]]] = js.native
+    var configFiles: js.UndefOr[StringDictionary[StringDictionary[String | PathSpec]]] = js.undefined
     
     /**
       * Sets the name of the configuration file Liftoff will attempt to find. Case-insensitive.
       * @default null
       */
-    var configName: js.UndefOr[String] = js.native
+    var configName: js.UndefOr[String] = js.undefined
     
     /**
       * Set extensions to include when searching for a configuration file.
@@ -340,25 +336,25 @@ object mod {
       * the module name should be specified as the value for the key.
       * @default {".js":null,".json":null}
       */
-    var extensions: js.UndefOr[Extensions_] = js.native
+    var extensions: js.UndefOr[Extensions_] = js.undefined
     
     /**
       * Sets which module your application expects to find locally when being run.
       * @default null
       */
-    var moduleName: js.UndefOr[String] = js.native
+    var moduleName: js.UndefOr[String] = js.undefined
     
     /**
       * Sugar for setting processTitle, moduleName, configName automatically.
       * @default null
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Sets what the process title will be.
       * @default null
       */
-    var processTitle: js.UndefOr[String] = js.native
+    var processTitle: js.UndefOr[String] = js.undefined
     
     /**
       * Any flag specified here will be applied to node, not your program.
@@ -370,7 +366,7 @@ object mod {
       */
     var v8flags: js.UndefOr[
         js.Array[String] | (js.Function1[/* cb */ js.Function2[/* err */ js.Any, /* flags */ js.Array[String], Unit], Unit])
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -384,7 +380,7 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCompletions(value: /* completion */ String => _): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
+      def setCompletions(value: /* completion */ String => js.Any): Self = StObject.set(x, "completions", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCompletionsUndefined: Self = StObject.set(x, "completions", js.undefined)

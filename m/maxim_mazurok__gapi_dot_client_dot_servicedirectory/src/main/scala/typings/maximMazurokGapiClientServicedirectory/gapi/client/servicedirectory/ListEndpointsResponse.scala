@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientServicedirectory.gapi.client.servicedirect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEndpointsResponse extends StObject {
   
   /** The list of endpoints. */
-  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.native
+  var endpoints: js.UndefOr[js.Array[Endpoint]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListEndpointsResponse {
   

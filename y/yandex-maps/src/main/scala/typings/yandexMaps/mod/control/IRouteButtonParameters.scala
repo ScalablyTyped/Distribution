@@ -4,15 +4,13 @@ import typings.yandexMaps.anon.AdjustMapMargin
 import typings.yandexMaps.anon.Expanded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRouteButtonParameters extends StObject {
   
-  var options: js.UndefOr[AdjustMapMargin] = js.native
+  var options: js.UndefOr[AdjustMapMargin] = js.undefined
   
-  var state: js.UndefOr[Expanded] = js.native
+  var state: js.UndefOr[Expanded] = js.undefined
 }
 object IRouteButtonParameters {
   

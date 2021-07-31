@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/webview/#-new-webview
   */
 class WebView ()
-  extends typings.scriptableIos.WebView
+  extends StObject
+     with typings.scriptableIos.WebView
 object WebView {
+  
+  @JSGlobal("WebView")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Loads a file and renders it._
@@ -41,18 +45,14 @@ object WebView {
     * @see https://docs.scriptable.app/webview/#loadfile
     */
   /* static member */
-  @JSGlobal("WebView.loadFile")
-  @js.native
-  def loadFile(fileURL: String): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadFile")
-  @js.native
-  def loadFile(fileURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadFile")
-  @js.native
-  def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadFile")
-  @js.native
-  def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def loadFile(fileURL: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadFile")(fileURL.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadFile(fileURL: String, preferredSize: Unit, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFile")(fileURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFile")(fileURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadFile(fileURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadFile")(fileURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Loads HTML and renders it._
@@ -63,40 +63,22 @@ object WebView {
     * @see https://docs.scriptable.app/webview/#loadhtml
     */
   /* static member */
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(
-    html: String,
-    baseURL: js.UndefOr[scala.Nothing],
-    preferredSize: js.UndefOr[scala.Nothing],
-    fullscreen: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String, baseURL: js.UndefOr[scala.Nothing], preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(
-    html: String,
-    baseURL: js.UndefOr[scala.Nothing],
-    preferredSize: typings.scriptableIos.Size,
-    fullscreen: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String, baseURL: String): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String, baseURL: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadHTML")
-  @js.native
-  def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def loadHTML(html: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: String, preferredSize: Unit, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: Unit, preferredSize: Unit, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: Unit, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadHTML(html: String, baseURL: Unit, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadHTML")(html.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * _Loads URL in web view and presents the web view._
@@ -108,16 +90,12 @@ object WebView {
     * @see https://docs.scriptable.app/webview/#loadurl
     */
   /* static member */
-  @JSGlobal("WebView.loadURL")
-  @js.native
-  def loadURL(url: String): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadURL")
-  @js.native
-  def loadURL(url: String, preferredSize: js.UndefOr[scala.Nothing], fullscreen: Boolean): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadURL")
-  @js.native
-  def loadURL(url: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = js.native
-  @JSGlobal("WebView.loadURL")
-  @js.native
-  def loadURL(url: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def loadURL(url: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadURL(url: String, preferredSize: Unit, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadURL")(url.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadURL(url: String, preferredSize: typings.scriptableIos.Size): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadURL")(url.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def loadURL(url: String, preferredSize: typings.scriptableIos.Size, fullscreen: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadURL")(url.asInstanceOf[js.Any], preferredSize.asInstanceOf[js.Any], fullscreen.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
 }

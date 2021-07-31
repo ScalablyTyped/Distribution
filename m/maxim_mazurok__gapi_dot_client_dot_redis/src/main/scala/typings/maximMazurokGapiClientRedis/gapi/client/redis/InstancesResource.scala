@@ -13,7 +13,6 @@ import typings.maximMazurokGapiClientRedis.anon.QuotaUser
 import typings.maximMazurokGapiClientRedis.anon.Resource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,12 +31,12 @@ trait InstancesResource extends StObject {
   def delete(): Request[Operation] = js.native
   def delete(request: Callback): Request[Operation] = js.native
   
-  def export(request: Callback, body: ExportInstanceRequest): Request[Operation] = js.native
+  def `export`(request: Callback, body: ExportInstanceRequest): Request[Operation] = js.native
   /**
     * Export Redis instance data into a Redis RDB format file in Cloud Storage. Redis will continue serving during this operation. The returned operation is automatically deleted after a
     * few hours, so there is no need to call DeleteOperation.
     */
-  def export(request: Fields): Request[Operation] = js.native
+  def `export`(request: Fields): Request[Operation] = js.native
   
   def failover(request: Callback, body: FailoverInstanceRequest): Request[Operation] = js.native
   /** Initiates a failover of the primary node to current replica node for a specific STANDARD tier Cloud Memorystore for Redis instance. */

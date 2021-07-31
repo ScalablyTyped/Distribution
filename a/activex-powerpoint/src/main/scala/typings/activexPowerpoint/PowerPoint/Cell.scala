@@ -2,30 +2,28 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cell extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Borders: typings.activexPowerpoint.PowerPoint.Borders = js.native
+  val Borders: typings.activexPowerpoint.PowerPoint.Borders
   
-  def Merge(MergeTo: Cell): Unit = js.native
+  def Merge(MergeTo: Cell): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Cell_typekey")
-  var PowerPointDotCell_typekey: Cell = js.native
+  var PowerPointDotCell_typekey: Cell
   
-  def Select(): Unit = js.native
+  def Select(): Unit
   
-  val Selected: Boolean = js.native
+  val Selected: Boolean
   
-  val Shape: typings.activexPowerpoint.PowerPoint.Shape = js.native
+  val Shape: typings.activexPowerpoint.PowerPoint.Shape
   
-  def Split(NumRows: Double, NumColumns: Double): Unit = js.native
+  def Split(NumRows: Double, NumColumns: Double): Unit
 }
 object Cell {
   

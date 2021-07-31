@@ -3,34 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ArrayPattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayPattern_
-  extends Node
+  extends StObject
+     with Node
      with LVal
      with Pattern {
   
-  var elements: js.Array[Expression] = js.native
+  var elements: js.Array[Expression]
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
   
   @JSName("type")
-  var type_ArrayPattern_ : ArrayPattern = js.native
+  var type_ArrayPattern_ : ArrayPattern
 }
 object ArrayPattern_ {
   
   @scala.inline
-  def apply(
-    elements: js.Array[Expression],
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ArrayPattern
-  ): ArrayPattern_ = {
+  def apply(elements: js.Array[Expression], end: Double, loc: SourceLocation, start: Double): ArrayPattern_ = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayPattern")
     __obj.asInstanceOf[ArrayPattern_]
   }
   

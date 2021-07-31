@@ -9,13 +9,11 @@ import typings.speedtestNet.speedtestNetStrings.testStart
 import typings.speedtestNet.speedtestNetStrings.upload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseEvent extends StObject {
   
-  var `type`: config | log | testStart | ping | download | upload | result = js.native
+  var `type`: config | log | testStart | ping | download | upload | result
 }
 object BaseEvent {
   

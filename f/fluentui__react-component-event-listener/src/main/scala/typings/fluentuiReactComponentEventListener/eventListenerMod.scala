@@ -99,20 +99,22 @@ import typings.fluentuiReactComponentEventListener.fluentuiReactComponentEventLi
 import typings.fluentuiReactComponentEventListener.typesMod.EventListenerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventListenerMod {
   
   object EventListener {
     
-    @JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", "EventListener")
-    @js.native
+    @scala.inline
     def apply(
       props: EventListenerOptions[
           abort | animationcancel | animationend | animationiteration | animationstart | auxclick | blur | cancel | canplay | canplaythrough | change | click | close | contextmenu | copy | cuechange | cut | dblclick | drag | dragend | dragenter | dragexit | dragleave | dragover | dragstart | drop | durationchange | emptied | ended | error | focus | focusin | focusout | fullscreenchange | fullscreenerror | gotpointercapture | input | invalid | keydown | keypress | keyup | load | loadeddata | loadedmetadata | loadstart | lostpointercapture | mousedown | mouseenter | mouseleave | mousemove | mouseout | mouseover | mouseup | paste | pause | play | playing | pointercancel | pointerdown | pointerenter | pointerleave | pointerlockchange | pointerlockerror | pointermove | pointerout | pointerover | pointerup | progress | ratechange | readystatechange | reset | resize | scroll | securitypolicyviolation | seeked | seeking | select | selectionchange | selectstart | stalled | submit | suspend | timeupdate | toggle | touchcancel | touchend | touchmove | touchstart | transitioncancel | transitionend | transitionrun | transitionstart | visibilitychange | volumechange | waiting | wheel
         ]
-    ): Null = js.native
+    ): Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Null]
+    
+    @JSImport("@fluentui/react-component-event-listener/dist/es/EventListener", "EventListener")
+    @js.native
+    val ^ : js.Any = js.native
     
     object defaultProps {
       

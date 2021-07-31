@@ -7,16 +7,18 @@ import typings.awsSdkClientCodecommitNode.typesDeleteFileInputMod.DeleteFileInpu
 import typings.awsSdkClientCodecommitNode.typesDeleteFileOutputMod.DeleteFileOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deleteFileCommandMod {
   
   @JSImport("@aws-sdk/client-codecommit-node/commands/DeleteFileCommand", "DeleteFileCommand")
   @js.native
-  class DeleteFileCommand protected () extends Command[
+  class DeleteFileCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DeleteFileInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object deleteFileCommandMod {
         ] {
     def this(input: DeleteFileInput) = this()
     
+    /* CompleteClass */
+    override val input: DeleteFileInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DeleteFileInput, DeleteFileOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: CodeCommitResolvedConfiguration
+    ): Handler[DeleteFileInput, DeleteFileOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: CodeCommitResolvedConfiguration,
+      options: js.Any
     ): Handler[DeleteFileInput, DeleteFileOutput] = js.native
   }
 }

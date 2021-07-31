@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteGlobalSecondaryIndexAction extends StObject {
   
   /**
     * The name of the global secondary index to be deleted.
     */
-  var IndexName: typings.awsSdk.dynamodbMod.IndexName = js.native
+  var IndexName: typings.awsSdk.dynamodbMod.IndexName
 }
 object DeleteGlobalSecondaryIndexAction {
   

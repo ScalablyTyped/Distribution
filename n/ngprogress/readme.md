@@ -10,9 +10,9 @@ slim, site-wide progressbar for AngularJS
 | ------------------ | :-------------: |
 | Full name          | ngprogress |
 | Keywords           | angular, ng-progress, ngProgress, angular, progress, bar |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 43630 |
+| # downloads        | 47185 |
 | # stars            | 0 |
 
 ## Links

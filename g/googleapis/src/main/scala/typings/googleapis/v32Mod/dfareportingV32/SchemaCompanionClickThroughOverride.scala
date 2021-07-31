@@ -2,24 +2,22 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Companion Click-through override.
   */
-@js.native
 trait SchemaCompanionClickThroughOverride extends StObject {
   
   /**
     * Click-through URL of this companion click-through override.
     */
-  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.native
+  var clickThroughUrl: js.UndefOr[SchemaClickThroughUrl] = js.undefined
   
   /**
     * ID of the creative for this companion click-through override.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
 }
 object SchemaCompanionClickThroughOverride {
   

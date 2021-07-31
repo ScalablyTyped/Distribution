@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "BatchManager")
 @js.native
 class BatchManager protected ()
-  extends typings.playcanvas.pc.BatchManager {
+  extends StObject
+     with typings.playcanvas.pc.BatchManager {
   def this(
     device: typings.playcanvas.pc.GraphicsDevice,
     root: typings.playcanvas.pc.Entity,

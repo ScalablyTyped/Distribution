@@ -6,7 +6,6 @@ import typings.sylvester.Sylvester.PlaneStatic
 import typings.sylvester.Sylvester.VectorStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -17,18 +16,14 @@ object global {
   * @param Array<number>|Vector anchor The anchor vector.
   * @param Array<number>|Vector direction The direction vector.
   */
-  @JSGlobal("$L")
-  @js.native
-  def L(anchor: js.Array[Double], direction: js.Array[Double]): Line = js.native
-  @JSGlobal("$L")
-  @js.native
-  def L(anchor: js.Array[Double], direction: Vector): Line = js.native
-  @JSGlobal("$L")
-  @js.native
-  def L(anchor: Vector, direction: js.Array[Double]): Line = js.native
-  @JSGlobal("$L")
-  @js.native
-  def L(anchor: Vector, direction: Vector): Line = js.native
+  @scala.inline
+  def L(anchor: js.Array[Double], direction: js.Array[Double]): Line = (js.Dynamic.global.applyDynamic("$L")(anchor.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Line]
+  @scala.inline
+  def L(anchor: js.Array[Double], direction: Vector): Line = (js.Dynamic.global.applyDynamic("$L")(anchor.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Line]
+  @scala.inline
+  def L(anchor: Vector, direction: js.Array[Double]): Line = (js.Dynamic.global.applyDynamic("$L")(anchor.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Line]
+  @scala.inline
+  def L(anchor: Vector, direction: Vector): Line = (js.Dynamic.global.applyDynamic("$L")(anchor.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[Line]
   
   @JSGlobal("Line")
   @js.native
@@ -41,15 +36,12 @@ object global {
   *
   * @param {Array<number>|Array<Array<number>>|Vector|Matrix} elements The elements.
   */
-  @JSGlobal("$M")
-  @js.native
-  def M(elements: js.Array[js.Array[Double] | Double]): Matrix = js.native
-  @JSGlobal("$M")
-  @js.native
-  def M(elements: Matrix): Matrix = js.native
-  @JSGlobal("$M")
-  @js.native
-  def M(elements: Vector): Matrix = js.native
+  @scala.inline
+  def M(elements: js.Array[js.Array[Double] | Double]): Matrix = js.Dynamic.global.applyDynamic("$M")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  @scala.inline
+  def M(elements: Matrix): Matrix = js.Dynamic.global.applyDynamic("$M")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
+  @scala.inline
+  def M(elements: Vector): Matrix = js.Dynamic.global.applyDynamic("$M")(elements.asInstanceOf[js.Any]).asInstanceOf[Matrix]
   
   @JSGlobal("Matrix")
   @js.native
@@ -63,12 +55,10 @@ object global {
   * @param {Array<number>|Vector} anchor The anchor vector.
   * @param {Array<number>|Vector} normal The normal vector.
   */
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], normal: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], normal: Vector): Plane = js.native
+  @scala.inline
+  def P(anchor: js.Array[Double], normal: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: js.Array[Double], normal: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
   /**
     * Constructor function.
     *
@@ -76,36 +66,26 @@ object global {
     * @param {Array<number>|Vector} v1 The first direction vector.
     * @param {Array<number>|Vecotr} v2 The second direction vector.
     */
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], v1: js.Array[Double], v2: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], v1: js.Array[Double], v2: Vector): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], v1: Vector, v2: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: js.Array[Double], v1: Vector, v2: Vector): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, normal: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, normal: Vector): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, v1: js.Array[Double], v2: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, v1: js.Array[Double], v2: Vector): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, v1: Vector, v2: js.Array[Double]): Plane = js.native
-  @JSGlobal("$P")
-  @js.native
-  def P(anchor: Vector, v1: Vector, v2: Vector): Plane = js.native
+  @scala.inline
+  def P(anchor: js.Array[Double], v1: js.Array[Double], v2: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: js.Array[Double], v1: js.Array[Double], v2: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: js.Array[Double], v1: Vector, v2: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: js.Array[Double], v1: Vector, v2: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, normal: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, normal: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], normal.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, v1: js.Array[Double], v2: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, v1: js.Array[Double], v2: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, v1: Vector, v2: js.Array[Double]): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
+  @scala.inline
+  def P(anchor: Vector, v1: Vector, v2: Vector): Plane = (js.Dynamic.global.applyDynamic("$P")(anchor.asInstanceOf[js.Any], v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[Plane]
   
   @JSGlobal("Plane")
   @js.native
@@ -132,17 +112,15 @@ object global {
     def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   }
   
-  @JSGlobal("$V")
-  @js.native
-  def V(elements: js.Array[Double]): Vector = js.native
+  @scala.inline
+  def V(elements: js.Array[Double]): Vector = js.Dynamic.global.applyDynamic("$V")(elements.asInstanceOf[js.Any]).asInstanceOf[Vector]
   /**
   * Constructor function.
   *
   * @param {Vector|Array<number} elements The elements.
   */
-  @JSGlobal("$V")
-  @js.native
-  def V(elements: Vector): Vector = js.native
+  @scala.inline
+  def V(elements: Vector): Vector = js.Dynamic.global.applyDynamic("$V")(elements.asInstanceOf[js.Any]).asInstanceOf[Vector]
   
   @JSGlobal("Vector")
   @js.native

@@ -4,17 +4,16 @@ import typings.react.mod.DOMAttributes
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FooterDropDownSectionProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[FooterDropDownSection] {
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var title: ReactNode = js.native
+  var title: ReactNode
 }
 object FooterDropDownSectionProps {
   

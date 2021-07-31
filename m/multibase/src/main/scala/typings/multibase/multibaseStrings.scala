@@ -5,14 +5,14 @@ import typings.multibase.mod.BaseCode
 import typings.multibase.mod.BaseNameOrCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multibaseStrings {
   
   @js.native
   sealed trait `0`
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -23,7 +23,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait `7`
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -34,7 +35,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait `9`
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -45,7 +47,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait B
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -56,7 +59,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait C
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -67,7 +71,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait F
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -78,7 +83,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait K
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -89,7 +95,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait M
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -100,7 +107,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait Null
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -111,7 +119,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait T
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -122,7 +131,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait U
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -133,7 +143,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait V
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -144,7 +155,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait Z
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -155,7 +167,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait b_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -166,7 +179,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base10
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -176,7 +190,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base16
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -186,7 +201,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base16upper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -196,7 +212,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base2
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -206,7 +223,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -216,7 +234,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32hex
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -226,7 +245,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32hexpad
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -236,7 +256,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32hexpadupper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -246,7 +267,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32hexupper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -256,7 +278,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32pad
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -266,7 +289,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32padupper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -276,7 +300,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32upper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -286,7 +311,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base32z
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -296,7 +322,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base36
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -306,7 +333,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base36upper
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -316,7 +344,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base58btc
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -326,7 +355,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base58flickr
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -336,7 +366,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base64
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -346,7 +377,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base64pad
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -356,7 +388,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base64url
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -366,7 +399,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base64urlpad
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -376,7 +410,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait base8
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -386,7 +421,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait c_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -397,7 +433,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait f_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -408,7 +445,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait h
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -419,7 +457,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait identity
-    extends BaseName
+    extends StObject
+       with BaseName
        with typings.multibase.typesMod.BaseName
        with typings.multibase.constantsMod.BaseName
        with BaseNameOrCode
@@ -429,7 +468,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait k_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -440,7 +480,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait m_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -451,7 +492,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait t_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -462,7 +504,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait u_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -473,7 +516,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait v_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode
@@ -484,7 +528,8 @@ object multibaseStrings {
   
   @js.native
   sealed trait z_
-    extends BaseCode
+    extends StObject
+       with BaseCode
        with typings.multibase.baseMod.BaseCode
        with typings.multibase.typesMod.BaseCode
        with typings.multibase.constantsMod.BaseCode

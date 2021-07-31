@@ -12,7 +12,7 @@ How similar are these two strings?
 | Keywords           | string, text, similarity, comparison, levenshtein, distance, spelling |
 | # releases         | 3 |
 | # dependents       | 19 |
-| # downloads        | 89046 |
+| # downloads        | 121897 |
 | # stars            | 3 |
 
 ## Links

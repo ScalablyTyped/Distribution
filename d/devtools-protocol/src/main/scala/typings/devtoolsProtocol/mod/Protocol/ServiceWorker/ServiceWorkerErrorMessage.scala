@@ -3,23 +3,21 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerErrorMessage extends StObject {
   
-  var columnNumber: integer = js.native
+  var columnNumber: integer
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var lineNumber: integer = js.native
+  var lineNumber: integer
   
-  var registrationId: RegistrationID = js.native
+  var registrationId: RegistrationID
   
-  var sourceURL: String = js.native
+  var sourceURL: String
   
-  var versionId: String = js.native
+  var versionId: String
 }
 object ServiceWorkerErrorMessage {
   

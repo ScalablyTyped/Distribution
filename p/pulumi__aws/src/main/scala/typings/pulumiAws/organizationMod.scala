@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationMod {
@@ -27,7 +26,7 @@ object organizationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: OrganizationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: OrganizationArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -83,6 +82,10 @@ object organizationMod {
   /* static members */
   object Organization {
     
+    @JSImport("@pulumi/aws/organizations/organization", "Organization")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Organization resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -92,45 +95,39 @@ object organizationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/organizations/organization", "Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Organization = js.native
-    @JSImport("@pulumi/aws/organizations/organization", "Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Organization = js.native
-    @JSImport("@pulumi/aws/organizations/organization", "Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationState): Organization = js.native
-    @JSImport("@pulumi/aws/organizations/organization", "Organization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): Organization = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationState): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Organization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: OrganizationState, opts: CustomResourceOptions): Organization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Organization]
     
     /**
       * Returns true if the given object is an instance of Organization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/organizations/organization", "Organization.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/organization.Organization */ Boolean]
   }
   
-  @js.native
   trait OrganizationArgs extends StObject {
     
     /**
       * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `featureSet` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
       */
-    val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `BACKUP_POLICY`, `SERVICE_CONTROL_POLICY`, and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
       */
-    val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specify "ALL" (default) or "CONSOLIDATED_BILLING".
       */
-    val featureSet: js.UndefOr[Input[String]] = js.native
+    val featureSet: js.UndefOr[Input[String]] = js.undefined
   }
   object OrganizationArgs {
     
@@ -169,7 +166,6 @@ object organizationMod {
     }
   }
   
-  @js.native
   trait OrganizationState extends StObject {
     
     /**
@@ -177,42 +173,42 @@ object organizationMod {
       */
     val accounts: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationAccount]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * ARN of the root
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of AWS service principal names for which you want to enable integration with your organization. This is typically in the form of a URL, such as service-abbreviation.amazonaws.com. Organization must have `featureSet` set to `ALL`. For additional information, see the [AWS Organizations User Guide](https://docs.aws.amazon.com/organizations/latest/userguide/orgs_integrate_services.html).
       */
-    val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val awsServiceAccessPrincipals: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of Organizations policy types to enable in the Organization Root. Organization must have `featureSet` set to `ALL`. For additional information about valid policy types (e.g. `BACKUP_POLICY`, `SERVICE_CONTROL_POLICY`, and `TAG_POLICY`), see the [AWS Organizations API Reference](https://docs.aws.amazon.com/organizations/latest/APIReference/API_EnablePolicyType.html).
       */
-    val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val enabledPolicyTypes: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Specify "ALL" (default) or "CONSOLIDATED_BILLING".
       */
-    val featureSet: js.UndefOr[Input[String]] = js.native
+    val featureSet: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ARN of the master account
       */
-    val masterAccountArn: js.UndefOr[Input[String]] = js.native
+    val masterAccountArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Email address of the master account
       */
-    val masterAccountEmail: js.UndefOr[Input[String]] = js.native
+    val masterAccountEmail: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Identifier of the master account
       */
-    val masterAccountId: js.UndefOr[Input[String]] = js.native
+    val masterAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of organization accounts excluding the master account. For a list including the master account, see the `accounts` attribute. All elements have these attributes:
@@ -221,14 +217,14 @@ object organizationMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationNonMasterAccount]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * List of organization roots. All elements have these attributes:
       */
     val roots: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.organizations.OrganizationRoot]]]
-      ] = js.native
+      ] = js.undefined
   }
   object OrganizationState {
     

@@ -2,14 +2,12 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableColumnCollection object, for use in `tableColumnCollection.set({ ... })`. */
-@js.native
 trait TableColumnCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[TableColumnData]] = js.native
+  var items: js.UndefOr[js.Array[TableColumnData]] = js.undefined
 }
 object TableColumnCollectionUpdateData {
   

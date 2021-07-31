@@ -5,28 +5,28 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A data series represents the object that has all the knowledge to be rendered as a visual data series. */
-@js.native
-trait XDataSeries extends XInterface {
+trait XDataSeries
+  extends StObject
+     with XInterface {
   
   /**
     * @param nIndex specifies the index of the data point within the series. The first index is 0.
     * @returns the element at the specified index.
     * @throws com::sun::star::lang::IndexOutOfBoundException if the index is not valid.
     */
-  def getDataPointByIndex(nIndex: Double): XPropertySet = js.native
+  def getDataPointByIndex(nIndex: Double): XPropertySet
   
   /** all data point formatting are cleared */
-  def resetAllDataPoints(): Unit = js.native
+  def resetAllDataPoints(): Unit
   
   /**
     * the formatting of the specified data point is cleared
     * @param nIndex specifies the index of the data point within the series. The first index is 0.
     */
-  def resetDataPoint(nIndex: Double): Unit = js.native
+  def resetDataPoint(nIndex: Double): Unit
 }
 object XDataSeries {
   

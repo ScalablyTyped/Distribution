@@ -3,28 +3,26 @@ package typings.nano.mod
 import typings.nano.anon.Doc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentSearchResponse[V] extends StObject {
   
   // token which if supplied to a subsequent search will return the next page of results.
-  var bookmark: String = js.native
+  var bookmark: String
   
   // facet counts
-  var counts: js.UndefOr[js.Object] = js.native
+  var counts: js.UndefOr[js.Object] = js.undefined
   
-  var highlights: js.UndefOr[js.Object] = js.native
+  var highlights: js.UndefOr[js.Object] = js.undefined
   
   // facet range results
-  var ranges: js.UndefOr[js.Object] = js.native
+  var ranges: js.UndefOr[js.Object] = js.undefined
   
   //  Array of search results
-  var rows: js.Array[Doc[V]] = js.native
+  var rows: js.Array[Doc[V]]
   
   // Number of documents in the search resykts
-  var total_rows: Double = js.native
+  var total_rows: Double
 }
 object DocumentSearchResponse {
   
@@ -35,7 +33,7 @@ object DocumentSearchResponse {
   }
   
   @scala.inline
-  implicit class DocumentSearchResponseMutableBuilder[Self <: DocumentSearchResponse[_], V] (val x: Self with DocumentSearchResponse[V]) extends AnyVal {
+  implicit class DocumentSearchResponseMutableBuilder[Self <: DocumentSearchResponse[?], V] (val x: Self & DocumentSearchResponse[V]) extends AnyVal {
     
     @scala.inline
     def setBookmark(value: String): Self = StObject.set(x, "bookmark", value.asInstanceOf[js.Any])

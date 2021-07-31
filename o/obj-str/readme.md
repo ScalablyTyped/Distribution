@@ -10,9 +10,9 @@ A tiny library for serializing Object values to Strings.
 | ------------------ | :-------------: |
 | Full name          | obj-str |
 | Keywords           | react, preact, classes, classname, classnames, object, object-keys, object-string, object-values, serialize |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 226435 |
+| # downloads        | 237768 |
 | # stars            | 1 |
 
 ## Links

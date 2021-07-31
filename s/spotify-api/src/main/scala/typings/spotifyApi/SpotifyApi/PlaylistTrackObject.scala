@@ -2,23 +2,21 @@ package typings.spotifyApi.SpotifyApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Track Object in Playlists
   * [](https://developer.spotify.com/web-api/object-model/)
   */
-@js.native
 trait PlaylistTrackObject extends StObject {
   
-  var added_at: String = js.native
+  var added_at: String
   
-  var added_by: UserObjectPublic = js.native
+  var added_by: UserObjectPublic
   
-  var is_local: Boolean = js.native
+  var is_local: Boolean
   
-  var track: TrackObjectFull = js.native
+  var track: TrackObjectFull
 }
 object PlaylistTrackObject {
   

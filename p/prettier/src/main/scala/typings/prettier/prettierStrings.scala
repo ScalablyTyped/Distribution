@@ -4,7 +4,6 @@ import typings.prettier.mod.BuiltInParserName
 import typings.prettier.mod.SupportOptionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object prettierStrings {
@@ -35,7 +34,9 @@ object prettierStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait angular extends BuiltInParserName
+  sealed trait angular
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def angular: angular = "angular".asInstanceOf[angular]
   
@@ -55,22 +56,30 @@ object prettierStrings {
   def avoid: avoid = "avoid".asInstanceOf[avoid]
   
   @js.native
-  sealed trait babel extends BuiltInParserName
+  sealed trait babel
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def babel: babel = "babel".asInstanceOf[babel]
   
   @js.native
-  sealed trait `babel-flow` extends BuiltInParserName
+  sealed trait `babel-flow`
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def `babel-flow`: `babel-flow` = "babel-flow".asInstanceOf[`babel-flow`]
   
   @js.native
-  sealed trait `babel-ts` extends BuiltInParserName
+  sealed trait `babel-ts`
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def `babel-ts`: `babel-ts` = "babel-ts".asInstanceOf[`babel-ts`]
   
   @js.native
-  sealed trait boolean extends SupportOptionType
+  sealed trait boolean
+    extends StObject
+       with SupportOptionType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -80,7 +89,9 @@ object prettierStrings {
   def `break-parent`: `break-parent` = "break-parent".asInstanceOf[`break-parent`]
   
   @js.native
-  sealed trait choice extends SupportOptionType
+  sealed trait choice
+    extends StObject
+       with SupportOptionType
   @scala.inline
   def choice: choice = "choice".asInstanceOf[choice]
   
@@ -105,7 +116,9 @@ object prettierStrings {
   def crlf: crlf = "crlf".asInstanceOf[crlf]
   
   @js.native
-  sealed trait css extends BuiltInParserName
+  sealed trait css
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def css: css = "css".asInstanceOf[css]
   
@@ -125,12 +138,16 @@ object prettierStrings {
   def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait flow extends BuiltInParserName
+  sealed trait flow
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
-  sealed trait graphql extends BuiltInParserName
+  sealed trait graphql
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def graphql: graphql = "graphql".asInstanceOf[graphql]
   
@@ -140,7 +157,9 @@ object prettierStrings {
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait html extends BuiltInParserName
+  sealed trait html
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def html: html = "html".asInstanceOf[html]
   
@@ -160,27 +179,37 @@ object prettierStrings {
   def indent: indent = "indent".asInstanceOf[indent]
   
   @js.native
-  sealed trait int extends SupportOptionType
+  sealed trait int
+    extends StObject
+       with SupportOptionType
   @scala.inline
   def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait json extends BuiltInParserName
+  sealed trait json
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
   @js.native
-  sealed trait `json-stringify` extends BuiltInParserName
+  sealed trait `json-stringify`
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def `json-stringify`: `json-stringify` = "json-stringify".asInstanceOf[`json-stringify`]
   
   @js.native
-  sealed trait json5 extends BuiltInParserName
+  sealed trait json5
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def json5: json5 = "json5".asInstanceOf[json5]
   
   @js.native
-  sealed trait less extends BuiltInParserName
+  sealed trait less
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def less: less = "less".asInstanceOf[less]
   
@@ -205,17 +234,23 @@ object prettierStrings {
   def `line-suffix-boundary`: `line-suffix-boundary` = "line-suffix-boundary".asInstanceOf[`line-suffix-boundary`]
   
   @js.native
-  sealed trait lwc extends BuiltInParserName
+  sealed trait lwc
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def lwc: lwc = "lwc".asInstanceOf[lwc]
   
   @js.native
-  sealed trait markdown extends BuiltInParserName
+  sealed trait markdown
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def markdown: markdown = "markdown".asInstanceOf[markdown]
   
   @js.native
-  sealed trait mdx extends BuiltInParserName
+  sealed trait mdx
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def mdx: mdx = "mdx".asInstanceOf[mdx]
   
@@ -235,7 +270,9 @@ object prettierStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait path extends SupportOptionType
+  sealed trait path
+    extends StObject
+       with SupportOptionType
   @scala.inline
   def path: path = "path".asInstanceOf[path]
   
@@ -250,7 +287,9 @@ object prettierStrings {
   def root: root = "root".asInstanceOf[root]
   
   @js.native
-  sealed trait scss extends BuiltInParserName
+  sealed trait scss
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def scss: scss = "scss".asInstanceOf[scss]
   
@@ -265,17 +304,23 @@ object prettierStrings {
   def trim: trim = "trim".asInstanceOf[trim]
   
   @js.native
-  sealed trait typescript extends BuiltInParserName
+  sealed trait typescript
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def typescript: typescript = "typescript".asInstanceOf[typescript]
   
   @js.native
-  sealed trait vue extends BuiltInParserName
+  sealed trait vue
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def vue: vue = "vue".asInstanceOf[vue]
   
   @js.native
-  sealed trait yaml extends BuiltInParserName
+  sealed trait yaml
+    extends StObject
+       with BuiltInParserName
   @scala.inline
   def yaml: yaml = "yaml".asInstanceOf[yaml]
 }

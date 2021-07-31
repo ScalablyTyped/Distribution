@@ -2,13 +2,13 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AsyncRefOperationProgressNotification extends AsyncRefOperationCommitLevelEventNotification {
+trait AsyncRefOperationProgressNotification
+  extends StObject
+     with AsyncRefOperationCommitLevelEventNotification {
   
-  var progress: Double = js.native
+  var progress: Double
 }
 object AsyncRefOperationProgressNotification {
   

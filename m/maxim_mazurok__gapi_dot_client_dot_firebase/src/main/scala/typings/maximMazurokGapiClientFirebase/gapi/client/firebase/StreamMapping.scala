@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamMapping extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait StreamMapping extends StObject {
     * projects/PROJECT_IDENTIFIER/iosApps/APP_ID or projects/PROJECT_IDENTIFIER /webApps/APP_ID Refer to the `FirebaseProject` [`name`](../projects#FirebaseProject.FIELDS.name) field for
     * details about PROJECT_IDENTIFIER values.
     */
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
   /**
     * Applicable for Firebase Web Apps only. The unique Google-assigned identifier of the Google Analytics web stream associated with the Firebase Web App. Firebase SDKs use this ID to
     * interact with Google Analytics APIs. Learn more about this ID and Google Analytics web streams in the [Analytics documentation](https://support.google.com/analytics/topic/9303475).
     */
-  var measurementId: js.UndefOr[String] = js.native
+  var measurementId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique Google-assigned identifier of the Google Analytics data stream associated with the Firebase App. Learn more about Google Analytics data streams in the [Analytics
     * documentation](https://support.google.com/analytics/answer/9303323).
     */
-  var streamId: js.UndefOr[String] = js.native
+  var streamId: js.UndefOr[String] = js.undefined
 }
 object StreamMapping {
   

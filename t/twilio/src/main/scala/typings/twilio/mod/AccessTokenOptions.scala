@@ -2,17 +2,15 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessTokenOptions extends StObject {
   
-  var identity: String = js.native
+  var identity: String
   
-  var nbf: Double = js.native
+  var nbf: Double
   
-  var ttl: Double = js.native
+  var ttl: Double
 }
 object AccessTokenOptions {
   

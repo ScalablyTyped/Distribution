@@ -2,25 +2,23 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extra extends StObject {
   
-  var fname: String = js.native
+  var fname: String
   
   // 用来放置自定义变量
-  var mimeType: js.Array[String] | Null = js.native
+  var mimeType: js.Array[String] | Null
   
   // 文件原文件名
-  var params: js.Any = js.native
+  var params: js.Any
 }
 object Extra {
   
   @scala.inline
   def apply(fname: String, params: js.Any): Extra = {
-    val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fname = fname.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], mimeType = null)
     __obj.asInstanceOf[Extra]
   }
   

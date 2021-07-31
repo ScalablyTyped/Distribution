@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerCertificateSummary extends StObject {
   
   /**
     * The ARN of the server certificate.
     */
-  var serverCertificateArn: js.UndefOr[AcmCertificateArn] = js.native
+  var serverCertificateArn: js.UndefOr[AcmCertificateArn] = js.undefined
   
   /**
     * The status of the server certificate.
     */
-  var serverCertificateStatus: js.UndefOr[ServerCertificateStatus] = js.native
+  var serverCertificateStatus: js.UndefOr[ServerCertificateStatus] = js.undefined
   
   /**
     * Details that explain the status of the server certificate.
     */
-  var serverCertificateStatusDetail: js.UndefOr[ServerCertificateStatusDetail] = js.native
+  var serverCertificateStatusDetail: js.UndefOr[ServerCertificateStatusDetail] = js.undefined
 }
 object ServerCertificateSummary {
   

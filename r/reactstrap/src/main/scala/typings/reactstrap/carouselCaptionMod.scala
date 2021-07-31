@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselCaptionMod {
@@ -20,16 +19,16 @@ object carouselCaptionMod {
   
   type CarouselCaption = Component[CarouselCaptionProps, js.Object, js.Any]
   
-  @js.native
   trait CarouselCaptionProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var captionHeader: js.UndefOr[ReactNode] = js.native
+    var captionHeader: js.UndefOr[ReactNode] = js.undefined
     
-    var captionText: ReactNode = js.native
+    var captionText: ReactNode
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
   }
   object CarouselCaptionProps {
     

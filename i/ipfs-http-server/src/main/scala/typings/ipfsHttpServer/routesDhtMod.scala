@@ -4,7 +4,6 @@ import typings.ipfsHttpServer.anon.HandlerMethod
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routesDhtMod {
@@ -13,34 +12,38 @@ object routesDhtMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "concat")
-  @js.native
-  def concat(items: (js.Array[HandlerMethod] | HandlerMethod)*): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def concat(items: (js.Array[HandlerMethod] | HandlerMethod)*): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("concat")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "copyWithin")
-  @js.native
-  def copyWithin(target: Double, start: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "copyWithin")
-  @js.native
-  def copyWithin(target: Double, start: Double, end: Double): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def copyWithin(target: Double, start: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(target.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def copyWithin(target: Double, start: Double, end: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyWithin")(target.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "entries")
-  @js.native
-  def entries(): IterableIterator[js.Tuple2[Double, HandlerMethod]] = js.native
+  @scala.inline
+  def entries(): IterableIterator[js.Tuple2[Double, HandlerMethod]] = ^.asInstanceOf[js.Dynamic].applyDynamic("entries")().asInstanceOf[IterableIterator[js.Tuple2[Double, HandlerMethod]]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "every")
-  @js.native
+  @scala.inline
   def every(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _]
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "every")
-  @js.native
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
   def every(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _],
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ],
     thisArg: js.Any
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "every")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
   def every_S_HandlerMethod[S /* <: HandlerMethod */](
     predicate: js.Function3[
       /* value */ HandlerMethod, 
@@ -48,9 +51,8 @@ object routesDhtMod {
       /* array */ js.Array[HandlerMethod], 
       /* is S */ Boolean
     ]
-  ): /* is std.Array<S> */ Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "every")
-  @js.native
+  ): /* is std.Array<S> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<S> */ Boolean]
+  @scala.inline
   def every_S_HandlerMethod[S /* <: HandlerMethod */](
     predicate: js.Function3[
       /* value */ HandlerMethod, 
@@ -59,34 +61,38 @@ object routesDhtMod {
       /* is S */ Boolean
     ],
     thisArg: js.Any
-  ): /* is std.Array<S> */ Boolean = js.native
+  ): /* is std.Array<S> */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[/* is std.Array<S> */ Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "fill")
-  @js.native
-  def fill(value: HandlerMethod): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "fill")
-  @js.native
-  def fill(value: HandlerMethod, start: js.UndefOr[scala.Nothing], end: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "fill")
-  @js.native
-  def fill(value: HandlerMethod, start: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "fill")
-  @js.native
-  def fill(value: HandlerMethod, start: Double, end: Double): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def fill(value: HandlerMethod): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def fill(value: HandlerMethod, start: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def fill(value: HandlerMethod, start: Double, end: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def fill(value: HandlerMethod, start: Unit, end: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("fill")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "filter")
-  @js.native
+  @scala.inline
   def filter(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _]
-  ): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "filter")
-  @js.native
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ]
+  ): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
   def filter(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _],
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ],
     thisArg: js.Any
-  ): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "filter")
-  @js.native
+  ): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  
+  @scala.inline
   def filter_S_1_HandlerMethod[S_1 /* <: HandlerMethod */](
     predicate: js.Function3[
       /* value */ HandlerMethod, 
@@ -94,9 +100,8 @@ object routesDhtMod {
       /* array */ js.Array[HandlerMethod], 
       /* is S_1 */ Boolean
     ]
-  ): js.Array[S_1] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "filter")
-  @js.native
+  ): js.Array[S_1] = ^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.Array[S_1]]
+  @scala.inline
   def filter_S_1_HandlerMethod[S_1 /* <: HandlerMethod */](
     predicate: js.Function3[
       /* value */ HandlerMethod, 
@@ -105,21 +110,28 @@ object routesDhtMod {
       /* is S_1 */ Boolean
     ],
     thisArg: js.Any
-  ): js.Array[S_1] = js.native
+  ): js.Array[S_1] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[S_1]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "find")
-  @js.native
+  @scala.inline
   def find(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* obj */ js.Array[HandlerMethod], _]
-  ): js.UndefOr[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "find")
-  @js.native
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* obj */ js.Array[HandlerMethod], 
+      js.Any
+    ]
+  ): js.UndefOr[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[HandlerMethod]]
+  @scala.inline
   def find(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* obj */ js.Array[HandlerMethod], _],
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* obj */ js.Array[HandlerMethod], 
+      js.Any
+    ],
     thisArg: js.Any
-  ): js.UndefOr[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "find")
-  @js.native
+  ): js.UndefOr[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[HandlerMethod]]
+  @scala.inline
   def find[S_2 /* <: HandlerMethod */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -128,9 +140,8 @@ object routesDhtMod {
       /* obj */ js.Array[HandlerMethod], 
       /* is S_2 */ Boolean
     ]
-  ): js.UndefOr[S_2] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "find")
-  @js.native
+  ): js.UndefOr[S_2] = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[S_2]]
+  @scala.inline
   def find[S_2 /* <: HandlerMethod */](
     predicate: js.ThisFunction3[
       /* this */ Unit, 
@@ -140,22 +151,29 @@ object routesDhtMod {
       /* is S_2 */ Boolean
     ],
     thisArg: js.Any
-  ): js.UndefOr[S_2] = js.native
+  ): js.UndefOr[S_2] = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[S_2]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "findIndex")
-  @js.native
+  @scala.inline
   def findIndex(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* obj */ js.Array[HandlerMethod], _]
-  ): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "findIndex")
-  @js.native
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* obj */ js.Array[HandlerMethod], 
+      js.Any
+    ]
+  ): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
   def findIndex(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* obj */ js.Array[HandlerMethod], _],
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* obj */ js.Array[HandlerMethod], 
+      js.Any
+    ],
     thisArg: js.Any
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findIndex")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "forEach")
-  @js.native
+  @scala.inline
   def forEach(
     callbackfn: js.Function3[
       /* value */ HandlerMethod, 
@@ -163,9 +181,8 @@ object routesDhtMod {
       /* array */ js.Array[HandlerMethod], 
       Unit
     ]
-  ): Unit = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "forEach")
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def forEach(
     callbackfn: js.Function3[
       /* value */ HandlerMethod, 
@@ -174,39 +191,30 @@ object routesDhtMod {
       Unit
     ],
     thisArg: js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forEach")(callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "includes")
-  @js.native
-  def includes(searchElement: HandlerMethod): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "includes")
-  @js.native
-  def includes(searchElement: HandlerMethod, fromIndex: Double): Boolean = js.native
+  @scala.inline
+  def includes(searchElement: HandlerMethod): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def includes(searchElement: HandlerMethod, fromIndex: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("includes")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "indexOf")
-  @js.native
-  def indexOf(searchElement: HandlerMethod): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "indexOf")
-  @js.native
-  def indexOf(searchElement: HandlerMethod, fromIndex: Double): Double = js.native
+  @scala.inline
+  def indexOf(searchElement: HandlerMethod): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def indexOf(searchElement: HandlerMethod, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("indexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "join")
-  @js.native
-  def join(): String = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "join")
-  @js.native
-  def join(separator: String): String = js.native
+  @scala.inline
+  def join(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")().asInstanceOf[String]
+  @scala.inline
+  def join(separator: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(separator.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "keys")
-  @js.native
-  def keys(): IterableIterator[Double] = js.native
+  @scala.inline
+  def keys(): IterableIterator[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")().asInstanceOf[IterableIterator[Double]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: HandlerMethod): Double = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "lastIndexOf")
-  @js.native
-  def lastIndexOf(searchElement: HandlerMethod, fromIndex: Double): Double = js.native
+  @scala.inline
+  def lastIndexOf(searchElement: HandlerMethod): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def lastIndexOf(searchElement: HandlerMethod, fromIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lastIndexOf")(searchElement.asInstanceOf[js.Any], fromIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   @JSImport("ipfs-http-server/dist/src/api/routes/dht", "length")
   @js.native
@@ -214,28 +222,23 @@ object routesDhtMod {
   @scala.inline
   def length_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("length")(x.asInstanceOf[js.Any])
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "map")
-  @js.native
+  @scala.inline
   def map[U](
     callbackfn: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], U]
-  ): js.Array[U] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "map")
-  @js.native
+  ): js.Array[U] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[js.Array[U]]
+  @scala.inline
   def map[U](
     callbackfn: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], U],
     thisArg: js.Any
-  ): js.Array[U] = js.native
+  ): js.Array[U] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(callbackfn.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[js.Array[U]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "pop")
-  @js.native
-  def pop(): js.UndefOr[HandlerMethod] = js.native
+  @scala.inline
+  def pop(): js.UndefOr[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[js.UndefOr[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "push")
-  @js.native
-  def push(items: HandlerMethod*): Double = js.native
+  @scala.inline
+  def push(items: HandlerMethod*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduce")
-  @js.native
+  @scala.inline
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ HandlerMethod, 
@@ -244,9 +247,8 @@ object routesDhtMod {
       /* array */ js.Array[HandlerMethod], 
       HandlerMethod
     ]
-  ): HandlerMethod = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduce")
-  @js.native
+  ): HandlerMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[HandlerMethod]
+  @scala.inline
   def reduce(
     callbackfn: js.Function4[
       /* previousValue */ HandlerMethod, 
@@ -256,9 +258,8 @@ object routesDhtMod {
       HandlerMethod
     ],
     initialValue: HandlerMethod
-  ): HandlerMethod = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduce")
-  @js.native
+  ): HandlerMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[HandlerMethod]
+  @scala.inline
   def reduce[U_1](
     callbackfn: js.Function4[
       /* previousValue */ U_1, 
@@ -268,10 +269,9 @@ object routesDhtMod {
       U_1
     ],
     initialValue: U_1
-  ): U_1 = js.native
+  ): U_1 = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U_1]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduceRight")
-  @js.native
+  @scala.inline
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ HandlerMethod, 
@@ -280,9 +280,8 @@ object routesDhtMod {
       /* array */ js.Array[HandlerMethod], 
       HandlerMethod
     ]
-  ): HandlerMethod = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduceRight")
-  @js.native
+  ): HandlerMethod = ^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any]).asInstanceOf[HandlerMethod]
+  @scala.inline
   def reduceRight(
     callbackfn: js.Function4[
       /* previousValue */ HandlerMethod, 
@@ -292,9 +291,8 @@ object routesDhtMod {
       HandlerMethod
     ],
     initialValue: HandlerMethod
-  ): HandlerMethod = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reduceRight")
-  @js.native
+  ): HandlerMethod = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[HandlerMethod]
+  @scala.inline
   def reduceRight[U_2](
     callbackfn: js.Function4[
       /* previousValue */ U_2, 
@@ -304,71 +302,64 @@ object routesDhtMod {
       U_2
     ],
     initialValue: U_2
-  ): U_2 = js.native
+  ): U_2 = (^.asInstanceOf[js.Dynamic].applyDynamic("reduceRight")(callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[U_2]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "reverse")
-  @js.native
-  def reverse(): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def reverse(): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("reverse")().asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "shift")
-  @js.native
-  def shift(): js.UndefOr[HandlerMethod] = js.native
+  @scala.inline
+  def shift(): js.UndefOr[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("shift")().asInstanceOf[js.UndefOr[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "slice")
-  @js.native
-  def slice(): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "slice")
-  @js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "slice")
-  @js.native
-  def slice(start: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "slice")
-  @js.native
-  def slice(start: Double, end: Double): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def slice(): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")().asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def slice(start: Double): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def slice(start: Double, end: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def slice(start: Unit, end: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("slice")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "some")
-  @js.native
+  @scala.inline
   def some(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _]
-  ): Boolean = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "some")
-  @js.native
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ]
+  ): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("some")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
   def some(
-    predicate: js.Function3[/* value */ HandlerMethod, /* index */ Double, /* array */ js.Array[HandlerMethod], _],
+    predicate: js.Function3[
+      /* value */ HandlerMethod, 
+      /* index */ Double, 
+      /* array */ js.Array[HandlerMethod], 
+      js.Any
+    ],
     thisArg: js.Any
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("some")(predicate.asInstanceOf[js.Any], thisArg.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "sort")
-  @js.native
-  def sort(): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "sort")
-  @js.native
-  def sort(compareFn: js.Function2[/* a */ HandlerMethod, /* b */ HandlerMethod, Double]): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def sort(): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")().asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def sort(compareFn: js.Function2[/* a */ HandlerMethod, /* b */ HandlerMethod, Double]): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("sort")(compareFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "splice")
-  @js.native
-  def splice(start: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "splice")
-  @js.native
-  def splice(start: Double, deleteCount: Double): js.Array[HandlerMethod] = js.native
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "splice")
-  @js.native
-  def splice(start: Double, deleteCount: Double, items: HandlerMethod*): js.Array[HandlerMethod] = js.native
+  @scala.inline
+  def splice(start: Double): js.Array[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any]).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def splice(start: Double, deleteCount: Double): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
+  @scala.inline
+  def splice(start: Double, deleteCount: Double, items: HandlerMethod*): js.Array[HandlerMethod] = (^.asInstanceOf[js.Dynamic].applyDynamic("splice")(start.asInstanceOf[js.Any], deleteCount.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[js.Array[HandlerMethod]]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "toLocaleString")
-  @js.native
-  def toLocaleString_(): String = js.native
+  @scala.inline
+  def toLocaleString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocaleString")().asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "toString")
-  @js.native
-  def toString_(): String = js.native
+  @scala.inline
+  def toString_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")().asInstanceOf[String]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "unshift")
-  @js.native
-  def unshift(items: HandlerMethod*): Double = js.native
+  @scala.inline
+  def unshift(items: HandlerMethod*): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unshift")(items.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/dht", "values")
-  @js.native
-  def values(): IterableIterator[HandlerMethod] = js.native
+  @scala.inline
+  def values(): IterableIterator[HandlerMethod] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[IterableIterator[HandlerMethod]]
 }

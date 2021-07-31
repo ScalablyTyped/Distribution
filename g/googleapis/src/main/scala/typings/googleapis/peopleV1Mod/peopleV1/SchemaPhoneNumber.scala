@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s phone number.
   */
-@js.native
 trait SchemaPhoneNumber extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaPhoneNumber extends StObject {
     * E.164](https://law.resource.org/pub/us/cfr/ibr/004/itu-t.E.164.1.2008.pdf)
     * form of the phone number.
     */
-  var canonicalForm: js.UndefOr[String] = js.native
+  var canonicalForm: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only type of the phone number translated and formatted in the
     * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the phone number.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The type of the phone number. The type can be custom or one of these
@@ -35,12 +33,12 @@ trait SchemaPhoneNumber extends StObject {
     * * `otherFax` * `pager` * `workMobile` * `workPager` * `main` *
     * `googleVoice` * `other`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaPhoneNumber {
   

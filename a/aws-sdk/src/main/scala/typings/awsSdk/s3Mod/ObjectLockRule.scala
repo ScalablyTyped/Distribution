@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectLockRule extends StObject {
   
   /**
     * The default retention period that you want to apply to new objects placed in the specified bucket.
     */
-  var DefaultRetention: js.UndefOr[typings.awsSdk.s3Mod.DefaultRetention] = js.native
+  var DefaultRetention: js.UndefOr[typings.awsSdk.s3Mod.DefaultRetention] = js.undefined
 }
 object ObjectLockRule {
   

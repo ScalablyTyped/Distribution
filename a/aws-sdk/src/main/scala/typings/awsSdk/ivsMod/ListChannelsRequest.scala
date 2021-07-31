@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListChannelsRequest extends StObject {
   
   /**
     * Filters the channel list to match the specified name.
     */
-  var filterByName: js.UndefOr[ChannelName] = js.native
+  var filterByName: js.UndefOr[ChannelName] = js.undefined
   
   /**
     * Maximum number of channels to return.
     */
-  var maxResults: js.UndefOr[MaxChannelResults] = js.native
+  var maxResults: js.UndefOr[MaxChannelResults] = js.undefined
   
   /**
     * The first channel to retrieve. This is used for pagination; see the nextToken response field.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListChannelsRequest {
   

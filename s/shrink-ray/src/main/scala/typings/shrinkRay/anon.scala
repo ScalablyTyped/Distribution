@@ -15,21 +15,19 @@ import typings.shrinkRay.shrinkRayNumbers.`8`
 import typings.shrinkRay.shrinkRayNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lgblock extends StObject {
     
-    var lgblock: Double = js.native
+    var lgblock: Double
     
-    var lgwin: Double = js.native
+    var lgwin: Double
     
-    var mode: `0` | `1` | `2` = js.native
+    var mode: `0` | `1` | `2`
     
-    var quality: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` = js.native
+    var quality: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11`
   }
   object Lgblock {
     
@@ -62,24 +60,23 @@ object anon {
   }
   
   /* Inlined std.Partial<{  flush :number | undefined,   finishFlush :number | undefined,   chunkSize :number | undefined,   windowBits :number | undefined,   strategy :number | undefined,   dictionary :any | undefined,   level :-1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9,   memLevel :1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}> */
-  @js.native
   trait Partialflushnumberundefin extends StObject {
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
     
-    var dictionary: js.UndefOr[js.Any] = js.native
+    var dictionary: js.UndefOr[js.Any] = js.undefined
     
-    var finishFlush: js.UndefOr[Double] = js.native
+    var finishFlush: js.UndefOr[Double] = js.undefined
     
-    var flush: js.UndefOr[Double] = js.native
+    var flush: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+    var level: js.UndefOr[`-1` | `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
     
-    var memLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.native
+    var memLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`] = js.undefined
     
-    var strategy: js.UndefOr[Double] = js.native
+    var strategy: js.UndefOr[Double] = js.undefined
     
-    var windowBits: js.UndefOr[Double] = js.native
+    var windowBits: js.UndefOr[Double] = js.undefined
   }
   object Partialflushnumberundefin {
     

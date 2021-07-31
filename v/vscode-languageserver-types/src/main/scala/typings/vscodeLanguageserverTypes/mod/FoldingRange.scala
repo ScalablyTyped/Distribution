@@ -2,38 +2,36 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldingRange extends StObject {
   
   /**
     * The zero-based character offset before the folded range ends. If not defined, defaults to the length of the end line.
     */
-  var endCharacter: js.UndefOr[Double] = js.native
+  var endCharacter: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based line number where the folded range ends.
     */
-  var endLine: Double = js.native
+  var endLine: Double
   
   /**
     * Describes the kind of the folding range such as `comment' or 'region'. The kind
     * is used to categorize folding ranges and used by commands like 'Fold all comments'. See
     * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The zero-based character offset from where the folded range starts. If not defined, defaults to the length of the start line.
     */
-  var startCharacter: js.UndefOr[Double] = js.native
+  var startCharacter: js.UndefOr[Double] = js.undefined
   
   /**
     * The zero-based line number from where the folded range starts.
     */
-  var startLine: Double = js.native
+  var startLine: Double
 }
 object FoldingRange {
   
@@ -43,63 +41,35 @@ object FoldingRange {
     __obj.asInstanceOf[FoldingRange]
   }
   
+  @JSImport("vscode-languageserver-types", "FoldingRange")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new FoldingRange literal.
     */
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(startLine: Double, endLine: Double): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(
-    startLine: Double,
-    endLine: Double,
-    startCharacter: js.UndefOr[scala.Nothing],
-    endCharacter: js.UndefOr[scala.Nothing],
-    kind: String
-  ): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(
-    startLine: Double,
-    endLine: Double,
-    startCharacter: js.UndefOr[scala.Nothing],
-    endCharacter: Double
-  ): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(
-    startLine: Double,
-    endLine: Double,
-    startCharacter: js.UndefOr[scala.Nothing],
-    endCharacter: Double,
-    kind: String
-  ): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(startLine: Double, endLine: Double, startCharacter: Double): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(
-    startLine: Double,
-    endLine: Double,
-    startCharacter: Double,
-    endCharacter: js.UndefOr[scala.Nothing],
-    kind: String
-  ): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): FoldingRange = js.native
-  @JSImport("vscode-languageserver-types", "FoldingRange.create")
-  @js.native
-  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): FoldingRange = js.native
+  @scala.inline
+  def create(startLine: Double, endLine: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Double, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Double, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
+  @scala.inline
+  def create(startLine: Double, endLine: Double, startCharacter: Unit, endCharacter: Unit, kind: String): FoldingRange = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(startLine.asInstanceOf[js.Any], endLine.asInstanceOf[js.Any], startCharacter.asInstanceOf[js.Any], endCharacter.asInstanceOf[js.Any], kind.asInstanceOf[js.Any])).asInstanceOf[FoldingRange]
   
   /**
     * Checks whether the given literal conforms to the [FoldingRange](#FoldingRange) interface.
     */
-  @JSImport("vscode-languageserver-types", "FoldingRange.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.FoldingRange */ Boolean]
   
   @scala.inline
   implicit class FoldingRangeMutableBuilder[Self <: FoldingRange] (val x: Self) extends AnyVal {

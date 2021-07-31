@@ -56,7 +56,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalMod {
@@ -555,9 +554,8 @@ object globalMod {
       *   @param n number to compute
       *   @return absolute value of given number
       */
-    @JSGlobal("abs")
-    @js.native
-    def abs(n: Double): Double = js.native
+    @scala.inline
+    def abs(n: Double): Double = js.Dynamic.global.applyDynamic("abs")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   The system variable accelerationX always contains
@@ -601,16 +599,13 @@ object globalMod {
       *   returned
       *   @return the arc cosine of the given value
       */
-    @JSGlobal("acos")
-    @js.native
-    def acos(value: Double): Double = js.native
+    @scala.inline
+    def acos(value: Double): Double = js.Dynamic.global.applyDynamic("acos")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("alpha")
-    @js.native
-    def alpha(color: String): Double = js.native
-    @JSGlobal("alpha")
-    @js.native
-    def alpha(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def alpha(color: String): Double = js.Dynamic.global.applyDynamic("alpha")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def alpha(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("alpha")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the alpha value from a color or pixel
       *   array.
@@ -618,30 +613,26 @@ object globalMod {
       *   CSS color
       *   @return the alpha value
       */
-    @JSGlobal("alpha")
-    @js.native
-    def alpha(color: Color): Double = js.native
+    @scala.inline
+    def alpha(color: Color): Double = js.Dynamic.global.applyDynamic("alpha")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Creates an ambient light with a color
       *   @param color the ambient light color
       *   @chainable
       */
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(color: Color): ^ = js.native
+    @scala.inline
+    def ambientLight(color: Color): ^ = js.Dynamic.global.applyDynamic("ambientLight")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Creates an ambient light with a color
       *   @param gray a gray value
       *   @param [alpha] the alpha value
       *   @chainable
       */
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(gray: Double): ^ = js.native
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(gray: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def ambientLight(gray: Double): ^ = js.Dynamic.global.applyDynamic("ambientLight")(gray.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def ambientLight(gray: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("ambientLight")(gray.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates an ambient light with a color
       *   @param v1 red or hue value relative to the current
@@ -653,33 +644,28 @@ object globalMod {
       *   @param [alpha] the alpha value
       *   @chainable
       */
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def ambientLight(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("ambientLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientLight(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("ambientLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates an ambient light with a color
       *   @param value a color string
       *   @chainable
       */
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(value: String): ^ = js.native
+    @scala.inline
+    def ambientLight(value: String): ^ = js.Dynamic.global.applyDynamic("ambientLight")(value.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Creates an ambient light with a color
       *   @param values an array containing the
       *   red,green,blue & and alpha components of the color
       *   @chainable
       */
-    @JSGlobal("ambientLight")
-    @js.native
-    def ambientLight(values: js.Array[Double]): ^ = js.native
+    @scala.inline
+    def ambientLight(values: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("ambientLight")(values.asInstanceOf[js.Any]).asInstanceOf[^]
     
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(color: String): ^ = js.native
+    @scala.inline
+    def ambientMaterial(color: String): ^ = js.Dynamic.global.applyDynamic("ambientMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Ambient material for geometry with a given color.
       *   You can view all possible materials in this
@@ -688,12 +674,10 @@ object globalMod {
       *   string
       *   @chainable
       */
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(color: js.Array[Double]): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(color: Color): ^ = js.native
+    @scala.inline
+    def ambientMaterial(color: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("ambientMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(color: Color): ^ = js.Dynamic.global.applyDynamic("ambientMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Ambient material for geometry with a given color.
       *   You can view all possible materials in this
@@ -705,39 +689,30 @@ object globalMod {
       *   @param [a] opacity
       *   @chainable
       */
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("ambientMaterial")
-    @js.native
-    def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
+    @scala.inline
+    def ambientMaterial(v1: Double): ^ = js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Double, v3: Unit, a: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Unit, v3: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Unit, v3: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ambientMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): ^ = (js.Dynamic.global.applyDynamic("ambientMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets the current mode of p5 to given mode. Default
       *   mode is RADIANS.
       *   @param mode either RADIANS or DEGREES
       */
-    @JSGlobal("angleMode")
-    @js.native
-    def angleMode(mode: ANGLE_MODE): Unit = js.native
+    @scala.inline
+    def angleMode(mode: ANGLE_MODE): Unit = js.Dynamic.global.applyDynamic("angleMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Adds a value to the end of an array. Extends the
@@ -746,9 +721,8 @@ object globalMod {
       *   @param value to be added to the Array
       *   @return the array that was appended to
       */
-    @JSGlobal("append")
-    @js.native
-    def append(array: js.Array[_], value: js.Any): js.Array[_] = js.native
+    @scala.inline
+    def append(array: js.Array[js.Any], value: js.Any): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("append")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Multiplies the current matrix by the one specified
@@ -774,9 +748,8 @@ object globalMod {
       *   multiplied
       *   @chainable
       */
-    @JSGlobal("applyMatrix")
-    @js.native
-    def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): ^ = js.native
+    @scala.inline
+    def applyMatrix(a: Double, b: Double, c: Double, d: Double, e: Double, f: Double): ^ = (js.Dynamic.global.applyDynamic("applyMatrix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], e.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Draw an arc to the screen. If called with only x,
@@ -810,11 +783,9 @@ object globalMod {
       *   value is 25.
       *   @chainable
       */
-    @JSGlobal("arc")
-    @js.native
-    def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): ^ = js.native
-    @JSGlobal("arc")
-    @js.native
+    @scala.inline
+    def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double): ^ = (js.Dynamic.global.applyDynamic("arc")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
     def arc(
       x: Double,
       y: Double,
@@ -822,12 +793,22 @@ object globalMod {
       h: Double,
       start: Double,
       stop: Double,
-      mode: js.UndefOr[ARC_MODE],
+      mode: Unit,
       detail: Double
-    ): ^ = js.native
-    @JSGlobal("arc")
-    @js.native
-    def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("arc")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def arc(x: Double, y: Double, w: Double, h: Double, start: Double, stop: Double, mode: ARC_MODE): ^ = (js.Dynamic.global.applyDynamic("arc")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def arc(
+      x: Double,
+      y: Double,
+      w: Double,
+      h: Double,
+      start: Double,
+      stop: Double,
+      mode: ARC_MODE,
+      detail: Double
+    ): ^ = (js.Dynamic.global.applyDynamic("arc")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Copies an array (or part of an array) to another
@@ -853,12 +834,10 @@ object globalMod {
       *   @param [length] number of Array elements to be
       *   copied
       */
-    @JSGlobal("arrayCopy")
-    @js.native
-    def arrayCopy(src: js.Array[_], dst: js.Array[_]): Unit = js.native
-    @JSGlobal("arrayCopy")
-    @js.native
-    def arrayCopy(src: js.Array[_], dst: js.Array[_], length: Double): Unit = js.native
+    @scala.inline
+    def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any]): Unit = (js.Dynamic.global.applyDynamic("arrayCopy")(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def arrayCopy(src: js.Array[js.Any], dst: js.Array[js.Any], length: Double): Unit = (js.Dynamic.global.applyDynamic("arrayCopy")(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Copies an array (or part of an array) to another
       *   array. The src array is copied to the dst array,
@@ -887,9 +866,14 @@ object globalMod {
       *   @param length number of Array elements to be
       *   copied
       */
-    @JSGlobal("arrayCopy")
-    @js.native
-    def arrayCopy(src: js.Array[_], srcPosition: Double, dst: js.Array[_], dstPosition: Double, length: Double): Unit = js.native
+    @scala.inline
+    def arrayCopy(
+      src: js.Array[js.Any],
+      srcPosition: Double,
+      dst: js.Array[js.Any],
+      dstPosition: Double,
+      length: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("arrayCopy")(src.asInstanceOf[js.Any], srcPosition.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], dstPosition.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   The inverse of sin(), returns the arc sine of a
@@ -900,9 +884,8 @@ object globalMod {
       *   returned
       *   @return the arc sine of the given value
       */
-    @JSGlobal("asin")
-    @js.native
-    def asin(value: Double): Double = js.native
+    @scala.inline
+    def asin(value: Double): Double = js.Dynamic.global.applyDynamic("asin")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   The inverse of tan(), returns the arc tangent of a
@@ -913,9 +896,8 @@ object globalMod {
       *   returned
       *   @return the arc tangent of the given value
       */
-    @JSGlobal("atan")
-    @js.native
-    def atan(value: Double): Double = js.native
+    @scala.inline
+    def atan(value: Double): Double = js.Dynamic.global.applyDynamic("atan")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Calculates the angle (in radians) from a specified
@@ -931,9 +913,8 @@ object globalMod {
       *   @param x x-coordinate of the point
       *   @return the arc tangent of the given point
       */
-    @JSGlobal("atan2")
-    @js.native
-    def atan2(y: Double, x: Double): Double = js.native
+    @scala.inline
+    def atan2(y: Double, x: Double): Double = (js.Dynamic.global.applyDynamic("atan2")(y.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   The background() function sets the color used for
@@ -971,12 +952,10 @@ object globalMod {
       *   current color range (default is 0-255)
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(colorstring: String): ^ = js.native
-    @JSGlobal("background")
-    @js.native
-    def background(colorstring: String, a: Double): ^ = js.native
+    @scala.inline
+    def background(colorstring: String): ^ = js.Dynamic.global.applyDynamic("background")(colorstring.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def background(colorstring: String, a: Double): ^ = (js.Dynamic.global.applyDynamic("background")(colorstring.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   The background() function sets the color used for
       *   the background of the p5.js canvas. The default
@@ -1010,9 +989,8 @@ object globalMod {
       *   function
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(color: Color): ^ = js.native
+    @scala.inline
+    def background(color: Color): ^ = js.Dynamic.global.applyDynamic("background")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   The background() function sets the color used for
       *   the background of the p5.js canvas. The default
@@ -1048,12 +1026,10 @@ object globalMod {
       *   current color range (default is 0-255)
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(gray: Double): ^ = js.native
-    @JSGlobal("background")
-    @js.native
-    def background(gray: Double, a: Double): ^ = js.native
+    @scala.inline
+    def background(gray: Double): ^ = js.Dynamic.global.applyDynamic("background")(gray.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def background(gray: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("background")(gray.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   The background() function sets the color used for
       *   the background of the p5.js canvas. The default
@@ -1090,12 +1066,10 @@ object globalMod {
       *   current color range (default is 0-255)
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(image: Image): ^ = js.native
-    @JSGlobal("background")
-    @js.native
-    def background(image: Image, a: Double): ^ = js.native
+    @scala.inline
+    def background(image: Image): ^ = js.Dynamic.global.applyDynamic("background")(image.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def background(image: Image, a: Double): ^ = (js.Dynamic.global.applyDynamic("background")(image.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   The background() function sets the color used for
       *   the background of the p5.js canvas. The default
@@ -1135,12 +1109,10 @@ object globalMod {
       *   current color range (default is 0-255)
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("background")
-    @js.native
-    def background(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
+    @scala.inline
+    def background(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("background")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def background(v1: Double, v2: Double, v3: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("background")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   The background() function sets the color used for
       *   the background of the p5.js canvas. The default
@@ -1174,9 +1146,8 @@ object globalMod {
       *   blue and alpha components of the color
       *   @chainable
       */
-    @JSGlobal("background")
-    @js.native
-    def background(values: js.Array[Double]): ^ = js.native
+    @scala.inline
+    def background(values: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("background")(values.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Use the beginContour() and endContour() functions
@@ -1197,9 +1168,8 @@ object globalMod {
       *   rect() within.
       *   @chainable
       */
-    @JSGlobal("beginContour")
-    @js.native
-    def beginContour(): ^ = js.native
+    @scala.inline
+    def beginContour(): ^ = js.Dynamic.global.applyDynamic("beginContour")().asInstanceOf[^]
     
     /**
       *   Using the beginShape() and endShape() functions
@@ -1227,12 +1197,10 @@ object globalMod {
       *   TRIANGLE_FAN TRIANGLE_STRIP, QUADS, or QUAD_STRIP
       *   @chainable
       */
-    @JSGlobal("beginShape")
-    @js.native
-    def beginShape(): ^ = js.native
-    @JSGlobal("beginShape")
-    @js.native
-    def beginShape(kind: BEGIN_KIND): ^ = js.native
+    @scala.inline
+    def beginShape(): ^ = js.Dynamic.global.applyDynamic("beginShape")().asInstanceOf[^]
+    @scala.inline
+    def beginShape(kind: BEGIN_KIND): ^ = js.Dynamic.global.applyDynamic("beginShape")(kind.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Draws a cubic Bezier curve on the screen. These
@@ -1260,9 +1228,8 @@ object globalMod {
       *   @param y4 y-coordinate for the second anchor point
       *   @chainable
       */
-    @JSGlobal("bezier")
-    @js.native
-    def bezier(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = js.native
+    @scala.inline
+    def bezier(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = (js.Dynamic.global.applyDynamic("bezier")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Draws a cubic Bezier curve on the screen. These
       *   curves are defined by a series of anchor and
@@ -1294,8 +1261,7 @@ object globalMod {
       *   @param z4 z-coordinate for the second anchor point
       *   @chainable
       */
-    @JSGlobal("bezier")
-    @js.native
+    @scala.inline
     def bezier(
       x1: Double,
       y1: Double,
@@ -1309,7 +1275,7 @@ object globalMod {
       x4: Double,
       y4: Double,
       z4: Double
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("bezier")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], z3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], z4.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets the resolution at which Beziers display. The
@@ -1321,9 +1287,8 @@ object globalMod {
       *   @param detail resolution of the curves
       *   @chainable
       */
-    @JSGlobal("bezierDetail")
-    @js.native
-    def bezierDetail(detail: Double): ^ = js.native
+    @scala.inline
+    def bezierDetail(detail: Double): ^ = js.Dynamic.global.applyDynamic("bezierDetail")(detail.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Evaluates the Bezier at position t for points a,
@@ -1341,9 +1306,8 @@ object globalMod {
       *   @param t value between 0 and 1
       *   @return the value of the Bezier at position t
       */
-    @JSGlobal("bezierPoint")
-    @js.native
-    def bezierPoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+    @scala.inline
+    def bezierPoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = (js.Dynamic.global.applyDynamic("bezierPoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Evaluates the tangent to the Bezier at position t
@@ -1358,9 +1322,8 @@ object globalMod {
       *   @param t value between 0 and 1
       *   @return the tangent at position t
       */
-    @JSGlobal("bezierTangent")
-    @js.native
-    def bezierTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+    @scala.inline
+    def bezierTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = (js.Dynamic.global.applyDynamic("bezierTangent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Specifies vertex coordinates for Bezier curves.
@@ -1387,9 +1350,8 @@ object globalMod {
       *   @param y4 y-coordinate for the anchor point
       *   @chainable
       */
-    @JSGlobal("bezierVertex")
-    @js.native
-    def bezierVertex(x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = js.native
+    @scala.inline
+    def bezierVertex(x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = (js.Dynamic.global.applyDynamic("bezierVertex")(x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Specifies vertex coordinates for Bezier curves.
       *   Each call to bezierVertex() defines the position
@@ -1421,8 +1383,7 @@ object globalMod {
       *   WebGL mode)
       *   @chainable
       */
-    @JSGlobal("bezierVertex")
-    @js.native
+    @scala.inline
     def bezierVertex(
       x2: Double,
       y2: Double,
@@ -1433,7 +1394,7 @@ object globalMod {
       x4: Double,
       y4: Double,
       z4: Double
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("bezierVertex")(x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], z3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], z4.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Copies a region of pixels from one image to
@@ -1457,8 +1418,7 @@ object globalMod {
       *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
       *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.
       */
-    @JSGlobal("blend")
-    @js.native
+    @scala.inline
     def blend(
       srcImage: Image,
       sx: Double,
@@ -1470,7 +1430,7 @@ object globalMod {
       dw: Double,
       dh: Double,
       blendMode: BLEND_MODE
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("blend")(srcImage.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dw.asInstanceOf[js.Any], dh.asInstanceOf[js.Any], blendMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Copies a region of pixels from one image to
       *   another, using a specified blend mode to do the
@@ -1492,8 +1452,7 @@ object globalMod {
       *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
       *   SOFT_LIGHT, DODGE, BURN, ADD or NORMAL.
       */
-    @JSGlobal("blend")
-    @js.native
+    @scala.inline
     def blend(
       sx: Double,
       sy: Double,
@@ -1504,7 +1463,7 @@ object globalMod {
       dw: Double,
       dh: Double,
       blendMode: UNKNOWN_P5_CONSTANT
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("blend")(sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dw.asInstanceOf[js.Any], dh.asInstanceOf[js.Any], blendMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Blends the pixels in the display window according
@@ -1553,16 +1512,13 @@ object globalMod {
       *   EXCLUSION, SCREEN, REPLACE, OVERLAY, HARD_LIGHT,
       *   SOFT_LIGHT, DODGE, BURN, ADD, or SUBTRACT
       */
-    @JSGlobal("blendMode")
-    @js.native
-    def blendMode(mode: BLEND_MODE): Unit = js.native
+    @scala.inline
+    def blendMode(mode: BLEND_MODE): Unit = js.Dynamic.global.applyDynamic("blendMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("blue")
-    @js.native
-    def blue(color: String): Double = js.native
-    @JSGlobal("blue")
-    @js.native
-    def blue(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def blue(color: String): Double = js.Dynamic.global.applyDynamic("blue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def blue(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("blue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the blue value from a color or pixel
       *   array.
@@ -1570,9 +1526,8 @@ object globalMod {
       *   CSS color
       *   @return the blue value
       */
-    @JSGlobal("blue")
-    @js.native
-    def blue(color: Color): Double = js.native
+    @scala.inline
+    def blue(color: Color): Double = js.Dynamic.global.applyDynamic("blue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Converts a number or string to its boolean
@@ -1586,18 +1541,14 @@ object globalMod {
       *   @param n value to parse
       *   @return boolean representation of value
       */
-    @JSGlobal("boolean")
-    @js.native
-    def boolean(n: String): Boolean = js.native
-    @JSGlobal("boolean")
-    @js.native
-    def boolean(n: js.Array[_]): Boolean = js.native
-    @JSGlobal("boolean")
-    @js.native
-    def boolean(n: Boolean): Boolean = js.native
-    @JSGlobal("boolean")
-    @js.native
-    def boolean(n: Double): Boolean = js.native
+    @scala.inline
+    def boolean(n: String): Boolean = js.Dynamic.global.applyDynamic("boolean")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def boolean(n: js.Array[js.Any]): Boolean = js.Dynamic.global.applyDynamic("boolean")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def boolean(n: Boolean): Boolean = js.Dynamic.global.applyDynamic("boolean")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def boolean(n: Double): Boolean = js.Dynamic.global.applyDynamic("boolean")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       *   Draw a box with given width, height and depth
@@ -1610,195 +1561,75 @@ object globalMod {
       *   subdivisions in y-dimension
       *   @chainable
       */
-    @JSGlobal("box")
-    @js.native
-    def box(): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: js.UndefOr[scala.Nothing], Height: js.UndefOr[scala.Nothing], depth: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: Double,
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: js.UndefOr[scala.Nothing],
-      depth: Double,
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: js.UndefOr[scala.Nothing], Height: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: Double,
-      depth: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: Double,
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: Double,
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: js.UndefOr[scala.Nothing],
-      Height: Double,
-      depth: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: js.UndefOr[scala.Nothing], Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: Double,
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: Double,
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: Double,
-      Height: js.UndefOr[scala.Nothing],
-      depth: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: Double,
-      Height: js.UndefOr[scala.Nothing],
-      depth: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: js.UndefOr[scala.Nothing], depth: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(
-      width: Double,
-      Height: Double,
-      depth: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: Double, detailX: Double): ^ = js.native
-    @JSGlobal("box")
-    @js.native
-    def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = js.native
+    @scala.inline
+    def box(): ^ = js.Dynamic.global.applyDynamic("box")().asInstanceOf[^]
+    @scala.inline
+    def box(width: Double): ^ = js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Double, depth: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Double, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Double, depth: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def box(width: Unit, Height: Unit, depth: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("box")(width.asInstanceOf[js.Any], Height.asInstanceOf[js.Any], depth.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
     
-    @JSGlobal("brightness")
-    @js.native
-    def brightness(color: String): Double = js.native
-    @JSGlobal("brightness")
-    @js.native
-    def brightness(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def brightness(color: String): Double = js.Dynamic.global.applyDynamic("brightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def brightness(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("brightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the HSB brightness value from a color or
       *   pixel array.
@@ -1806,9 +1637,8 @@ object globalMod {
       *   CSS color
       *   @return the brightness value
       */
-    @JSGlobal("brightness")
-    @js.native
-    def brightness(color: Color): Double = js.native
+    @scala.inline
+    def brightness(color: Color): Double = js.Dynamic.global.applyDynamic("brightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Converts a number, string representation of a
@@ -1822,15 +1652,12 @@ object globalMod {
       *   @param n value to parse
       *   @return byte representation of value
       */
-    @JSGlobal("byte")
-    @js.native
-    def byte(n: String): Double = js.native
-    @JSGlobal("byte")
-    @js.native
-    def byte(n: Boolean): Double = js.native
-    @JSGlobal("byte")
-    @js.native
-    def byte(n: Double): Double = js.native
+    @scala.inline
+    def byte(n: String): Double = js.Dynamic.global.applyDynamic("byte")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def byte(n: Boolean): Double = js.Dynamic.global.applyDynamic("byte")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def byte(n: Double): Double = js.Dynamic.global.applyDynamic("byte")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Converts a number, string representation of a
       *   number, or boolean to its byte representation. A
@@ -1843,9 +1670,8 @@ object globalMod {
       *   @param ns values to parse
       *   @return array of byte representation of values
       */
-    @JSGlobal("byte")
-    @js.native
-    def byte(ns: js.Array[_]): js.Array[Double] = js.native
+    @scala.inline
+    def byte(ns: js.Array[js.Any]): js.Array[Double] = js.Dynamic.global.applyDynamic("byte")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       *   Sets the camera position for a 3D sketch.
@@ -1873,8 +1699,7 @@ object globalMod {
       *   camera
       *   @chainable
       */
-    @JSGlobal("camera")
-    @js.native
+    @scala.inline
     def camera(
       x: js.UndefOr[Double],
       y: js.UndefOr[Double],
@@ -1885,7 +1710,7 @@ object globalMod {
       upX: js.UndefOr[Double],
       upY: js.UndefOr[Double],
       upZ: js.UndefOr[Double]
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("camera")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], centerX.asInstanceOf[js.Any], centerY.asInstanceOf[js.Any], centerZ.asInstanceOf[js.Any], upX.asInstanceOf[js.Any], upY.asInstanceOf[js.Any], upZ.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Calculates the closest int value that is greater
@@ -1895,9 +1720,8 @@ object globalMod {
       *   @param n number to round up
       *   @return rounded up number
       */
-    @JSGlobal("ceil")
-    @js.native
-    def ceil(n: Double): Double = js.native
+    @scala.inline
+    def ceil(n: Double): Double = js.Dynamic.global.applyDynamic("ceil")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   The .changed() function is called when the value
@@ -1909,12 +1733,10 @@ object globalMod {
       *   fire.
       *   @chainable
       */
-    @JSGlobal("changed")
-    @js.native
-    def changed(fxn: js.Function1[/* repeated */ js.Any, _]): ^ = js.native
-    @JSGlobal("changed")
-    @js.native
-    def changed(fxn: Boolean): ^ = js.native
+    @scala.inline
+    def changed(fxn: js.Function1[/* repeated */ js.Any, js.Any]): ^ = js.Dynamic.global.applyDynamic("changed")(fxn.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def changed(fxn: Boolean): ^ = js.Dynamic.global.applyDynamic("changed")(fxn.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Converts a number or string to its corresponding
@@ -1928,12 +1750,10 @@ object globalMod {
       *   @param n value to parse
       *   @return string representation of value
       */
-    @JSGlobal("char")
-    @js.native
-    def char(n: String): String = js.native
-    @JSGlobal("char")
-    @js.native
-    def char(n: Double): String = js.native
+    @scala.inline
+    def char(n: String): String = js.Dynamic.global.applyDynamic("char")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def char(n: Double): String = js.Dynamic.global.applyDynamic("char")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     /**
       *   Converts a number or string to its corresponding
       *   single-character string representation. If a
@@ -1946,9 +1766,8 @@ object globalMod {
       *   @param ns values to parse
       *   @return array of string representation of values
       */
-    @JSGlobal("char")
-    @js.native
-    def char(ns: js.Array[_]): js.Array[String] = js.native
+    @scala.inline
+    def char(ns: js.Array[js.Any]): js.Array[String] = js.Dynamic.global.applyDynamic("char")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       *   Draws a circle to the screen. A circle is a simple
@@ -1966,9 +1785,8 @@ object globalMod {
       *   @param d diameter of the circle.
       *   @chainable
       */
-    @JSGlobal("circle")
-    @js.native
-    def circle(x: Double, y: Double, d: Double): ^ = js.native
+    @scala.inline
+    def circle(x: Double, y: Double, d: Double): ^ = (js.Dynamic.global.applyDynamic("circle")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], d.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Clears the pixels within a buffer. This function
@@ -1981,17 +1799,15 @@ object globalMod {
       *   make all of the pixels 100% transparent.
       *   @chainable
       */
-    @JSGlobal("clear")
-    @js.native
-    def clear(): ^ = js.native
+    @scala.inline
+    def clear(): ^ = js.Dynamic.global.applyDynamic("clear")().asInstanceOf[^]
     
     /**
       *   Clears all local storage items set with
       *   storeItem() for the current domain.
       */
-    @JSGlobal("clearStorage")
-    @js.native
-    def clearStorage(): Unit = js.native
+    @scala.inline
+    def clearStorage(): Unit = js.Dynamic.global.applyDynamic("clearStorage")().asInstanceOf[Unit]
     
     /**
       *   Creates colors for storing in variables of the
@@ -2015,9 +1831,8 @@ object globalMod {
       *   number value as a second argument is not
       *   supported, the RGBA form should be used.
       */
-    @JSGlobal("color")
-    @js.native
-    def color(color: Color): Color = js.native
+    @scala.inline
+    def color(color: Color): Color = js.Dynamic.global.applyDynamic("color")(color.asInstanceOf[js.Any]).asInstanceOf[Color]
     /**
       *   Creates colors for storing in variables of the
       *   color datatype. The parameters are interpreted as
@@ -2045,12 +1860,10 @@ object globalMod {
       *   color range (default is 0-255)
       *   @return resulting color
       */
-    @JSGlobal("color")
-    @js.native
-    def color(gray: Double): Color = js.native
-    @JSGlobal("color")
-    @js.native
-    def color(gray: Double, alpha: Double): Color = js.native
+    @scala.inline
+    def color(gray: Double): Color = js.Dynamic.global.applyDynamic("color")(gray.asInstanceOf[js.Any]).asInstanceOf[Color]
+    @scala.inline
+    def color(gray: Double, alpha: Double): Color = (js.Dynamic.global.applyDynamic("color")(gray.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
     /**
       *   Creates colors for storing in variables of the
       *   color datatype. The parameters are interpreted as
@@ -2081,12 +1894,10 @@ object globalMod {
       *   @param [alpha] alpha value relative to current
       *   color range (default is 0-255)
       */
-    @JSGlobal("color")
-    @js.native
-    def color(v1: Double, v2: Double, v3: Double): Color = js.native
-    @JSGlobal("color")
-    @js.native
-    def color(v1: Double, v2: Double, v3: Double, alpha: Double): Color = js.native
+    @scala.inline
+    def color(v1: Double, v2: Double, v3: Double): Color = (js.Dynamic.global.applyDynamic("color")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Color]
+    @scala.inline
+    def color(v1: Double, v2: Double, v3: Double, alpha: Double): Color = (js.Dynamic.global.applyDynamic("color")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Color]
     /**
       *   Creates colors for storing in variables of the
       *   color datatype. The parameters are interpreted as
@@ -2110,9 +1921,8 @@ object globalMod {
       *   supported, the RGBA form should be used.
       *   @param value a color string
       */
-    @JSGlobal("color")
-    @js.native
-    def color(value: String): Color = js.native
+    @scala.inline
+    def color(value: String): Color = js.Dynamic.global.applyDynamic("color")(value.asInstanceOf[js.Any]).asInstanceOf[Color]
     /**
       *   Creates colors for storing in variables of the
       *   color datatype. The parameters are interpreted as
@@ -2137,9 +1947,8 @@ object globalMod {
       *   @param values an array containing the
       *   red,green,blue & and alpha components of the color
       */
-    @JSGlobal("color")
-    @js.native
-    def color(values: js.Array[Double]): Color = js.native
+    @scala.inline
+    def color(values: js.Array[Double]): Color = js.Dynamic.global.applyDynamic("color")(values.asInstanceOf[js.Any]).asInstanceOf[Color]
     
     /**
       *   colorMode() changes the way p5.js interprets color
@@ -2160,12 +1969,10 @@ object globalMod {
       *   @param [max] range for all values
       *   @chainable
       */
-    @JSGlobal("colorMode")
-    @js.native
-    def colorMode(mode: COLOR_MODE): ^ = js.native
-    @JSGlobal("colorMode")
-    @js.native
-    def colorMode(mode: COLOR_MODE, max: Double): ^ = js.native
+    @scala.inline
+    def colorMode(mode: COLOR_MODE): ^ = js.Dynamic.global.applyDynamic("colorMode")(mode.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def colorMode(mode: COLOR_MODE, max: Double): ^ = (js.Dynamic.global.applyDynamic("colorMode")(mode.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   colorMode() changes the way p5.js interprets color
       *   data. By default, the parameters for fill(),
@@ -2192,12 +1999,10 @@ object globalMod {
       *   @param [maxA] range for the alpha
       *   @chainable
       */
-    @JSGlobal("colorMode")
-    @js.native
-    def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double): ^ = js.native
-    @JSGlobal("colorMode")
-    @js.native
-    def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double, maxA: Double): ^ = js.native
+    @scala.inline
+    def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double): ^ = (js.Dynamic.global.applyDynamic("colorMode")(mode.asInstanceOf[js.Any], max1.asInstanceOf[js.Any], max2.asInstanceOf[js.Any], max3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def colorMode(mode: UNKNOWN_P5_CONSTANT, max1: Double, max2: Double, max3: Double, maxA: Double): ^ = (js.Dynamic.global.applyDynamic("colorMode")(mode.asInstanceOf[js.Any], max1.asInstanceOf[js.Any], max2.asInstanceOf[js.Any], max3.asInstanceOf[js.Any], maxA.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Concatenates two arrays, maps to Array.concat().
@@ -2206,9 +2011,8 @@ object globalMod {
       *   @param b second Array to concatenate
       *   @return concatenated array
       */
-    @JSGlobal("concat")
-    @js.native
-    def concat(a: js.Array[_], b: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def concat(a: js.Array[js.Any], b: js.Array[js.Any]): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("concat")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Draw a cone with given radius and height
@@ -2221,188 +2025,70 @@ object globalMod {
       *   @param [cap] whether to draw the base of the cone
       *   @chainable
       */
-    @JSGlobal("cone")
-    @js.native
-    def cone(): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double,
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double,
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: js.UndefOr[scala.Nothing], height: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double,
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: js.UndefOr[scala.Nothing],
-      height: Double,
-      detailX: Double,
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double,
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: Double,
-      height: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(
-      radius: Double,
-      height: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: js.UndefOr[scala.Nothing],
-      cap: Boolean
-    ): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double, cap: Boolean): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: Double, detailY: js.UndefOr[scala.Nothing], cap: Boolean): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("cone")
-    @js.native
-    def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = js.native
+    @scala.inline
+    def cone(): ^ = js.Dynamic.global.applyDynamic("cone")().asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double): ^ = js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Double, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Unit, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Double, detailX: Unit, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Double, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Double, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Unit, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Double, height: Unit, detailX: Unit, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Double, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Double, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Unit, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Double, detailX: Unit, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Double, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Double, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Double, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def cone(radius: Unit, height: Unit, detailX: Unit, detailY: Unit, cap: Boolean): ^ = (js.Dynamic.global.applyDynamic("cone")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], cap.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Constrains a value between a minimum and maximum
@@ -2412,12 +2098,10 @@ object globalMod {
       *   @param high maximum limit
       *   @return constrained number
       */
-    @JSGlobal("constrain")
-    @js.native
-    def constrain(n: Double, low: Double, high: Double): Double = js.native
+    @scala.inline
+    def constrain(n: Double, low: Double, high: Double): Double = (js.Dynamic.global.applyDynamic("constrain")(n.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSGlobal("copy")
-    @js.native
+    @scala.inline
     def copy(
       srcImage: Element,
       sx: Double,
@@ -2428,7 +2112,7 @@ object globalMod {
       dy: Double,
       dw: Double,
       dh: Double
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("copy")(srcImage.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dw.asInstanceOf[js.Any], dh.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Copies a region of the canvas to another region of
       *   the canvas and copies a region of pixels from an
@@ -2451,8 +2135,7 @@ object globalMod {
       *   @param dw destination image width
       *   @param dh destination image height
       */
-    @JSGlobal("copy")
-    @js.native
+    @scala.inline
     def copy(
       srcImage: Image,
       sx: Double,
@@ -2463,7 +2146,7 @@ object globalMod {
       dy: Double,
       dw: Double,
       dh: Double
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("copy")(srcImage.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dw.asInstanceOf[js.Any], dh.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Copies a region of the canvas to another region of
       *   the canvas and copies a region of pixels from an
@@ -2485,9 +2168,8 @@ object globalMod {
       *   @param dw destination image width
       *   @param dh destination image height
       */
-    @JSGlobal("copy")
-    @js.native
-    def copy(sx: Double, sy: Double, sw: Double, sh: Double, dx: Double, dy: Double, dw: Double, dh: Double): Unit = js.native
+    @scala.inline
+    def copy(sx: Double, sy: Double, sw: Double, sh: Double, dx: Double, dy: Double, dw: Double, dh: Double): Unit = (js.Dynamic.global.applyDynamic("copy")(sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sw.asInstanceOf[js.Any], sh.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dw.asInstanceOf[js.Any], dh.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Calculates the cosine of an angle. This function
@@ -2496,9 +2178,8 @@ object globalMod {
       *   @param angle the angle
       *   @return the cosine of the angle
       */
-    @JSGlobal("cos")
-    @js.native
-    def cos(angle: Double): Double = js.native
+    @scala.inline
+    def cos(angle: Double): Double = js.Dynamic.global.applyDynamic("cos")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Creates an <a></a> element in the DOM for
@@ -2511,12 +2192,10 @@ object globalMod {
       *   could be _blank, _self, _parent, _top.
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createA")
-    @js.native
-    def createA(href: String, html: String): Element = js.native
-    @JSGlobal("createA")
-    @js.native
-    def createA(href: String, html: String, target: String): Element = js.native
+    @scala.inline
+    def createA(href: String, html: String): Element = (js.Dynamic.global.applyDynamic("createA")(href.asInstanceOf[js.Any], html.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createA(href: String, html: String, target: String): Element = (js.Dynamic.global.applyDynamic("createA")(href.asInstanceOf[js.Any], html.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a hidden HTML5 <audio> element in the DOM
@@ -2539,24 +2218,18 @@ object globalMod {
       *   buffering of content
       *   @return pointer to audio p5.Element
       */
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(): MediaElement = js.native
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(src: js.UndefOr[scala.Nothing], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(src: String): MediaElement = js.native
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(src: js.Array[String]): MediaElement = js.native
-    @JSGlobal("createAudio")
-    @js.native
-    def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+    @scala.inline
+    def createAudio(): MediaElement = js.Dynamic.global.applyDynamic("createAudio")().asInstanceOf[MediaElement]
+    @scala.inline
+    def createAudio(src: String): MediaElement = js.Dynamic.global.applyDynamic("createAudio")(src.asInstanceOf[js.Any]).asInstanceOf[MediaElement]
+    @scala.inline
+    def createAudio(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = (js.Dynamic.global.applyDynamic("createAudio")(src.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MediaElement]
+    @scala.inline
+    def createAudio(src: js.Array[String]): MediaElement = js.Dynamic.global.applyDynamic("createAudio")(src.asInstanceOf[js.Any]).asInstanceOf[MediaElement]
+    @scala.inline
+    def createAudio(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = (js.Dynamic.global.applyDynamic("createAudio")(src.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MediaElement]
+    @scala.inline
+    def createAudio(src: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = (js.Dynamic.global.applyDynamic("createAudio")(src.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MediaElement]
     
     /**
       *   Creates a <button></button> element in the DOM.
@@ -2568,12 +2241,10 @@ object globalMod {
       *   @param [value] value of the button
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createButton")
-    @js.native
-    def createButton(label: String): Element = js.native
-    @JSGlobal("createButton")
-    @js.native
-    def createButton(label: String, value: String): Element = js.native
+    @scala.inline
+    def createButton(label: String): Element = js.Dynamic.global.applyDynamic("createButton")(label.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createButton(label: String, value: String): Element = (js.Dynamic.global.applyDynamic("createButton")(label.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a new p5.Camera object and tells the
@@ -2581,9 +2252,8 @@ object globalMod {
       *   object.
       *   @return The newly created camera object.
       */
-    @JSGlobal("createCamera")
-    @js.native
-    def createCamera(): Camera = js.native
+    @scala.inline
+    def createCamera(): Camera = js.Dynamic.global.applyDynamic("createCamera")().asInstanceOf[Camera]
     
     /**
       *   Creates a canvas element in the document, and sets
@@ -2605,12 +2275,10 @@ object globalMod {
       *   @param h height of the canvas
       *   @param [renderer] either P2D or WEBGL
       */
-    @JSGlobal("createCanvas")
-    @js.native
-    def createCanvas(w: Double, h: Double): Renderer = js.native
-    @JSGlobal("createCanvas")
-    @js.native
-    def createCanvas(w: Double, h: Double, renderer: RENDERER_): Renderer = js.native
+    @scala.inline
+    def createCanvas(w: Double, h: Double): Renderer = (js.Dynamic.global.applyDynamic("createCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Renderer]
+    @scala.inline
+    def createCanvas(w: Double, h: Double, renderer: RENDERER_): Renderer = (js.Dynamic.global.applyDynamic("createCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).asInstanceOf[Renderer]
     
     /**
       *   Creates a new HTML5 <video> element that contains
@@ -2637,24 +2305,18 @@ object globalMod {
       *   stream has loaded
       *   @return capture video p5.Element
       */
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: String): Element = js.native
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: String, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: js.Object): Element = js.native
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: TYPE): Element = js.native
-    @JSGlobal("createCapture")
-    @js.native
-    def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+    @scala.inline
+    def createCapture(`type`: String): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createCapture(`type`: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createCapture(`type`: js.Object): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createCapture(`type`: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createCapture(`type`: TYPE): Element = js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createCapture(`type`: TYPE, callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = (js.Dynamic.global.applyDynamic("createCapture")(`type`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a checkbox <input></input> element in the
@@ -2665,18 +2327,14 @@ object globalMod {
       *   true, unchecked is false
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createCheckbox")
-    @js.native
-    def createCheckbox(): Element = js.native
-    @JSGlobal("createCheckbox")
-    @js.native
-    def createCheckbox(label: js.UndefOr[scala.Nothing], value: Boolean): Element = js.native
-    @JSGlobal("createCheckbox")
-    @js.native
-    def createCheckbox(label: String): Element = js.native
-    @JSGlobal("createCheckbox")
-    @js.native
-    def createCheckbox(label: String, value: Boolean): Element = js.native
+    @scala.inline
+    def createCheckbox(): Element = js.Dynamic.global.applyDynamic("createCheckbox")().asInstanceOf[Element]
+    @scala.inline
+    def createCheckbox(label: String): Element = js.Dynamic.global.applyDynamic("createCheckbox")(label.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createCheckbox(label: String, value: Boolean): Element = (js.Dynamic.global.applyDynamic("createCheckbox")(label.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createCheckbox(label: Unit, value: Boolean): Element = (js.Dynamic.global.applyDynamic("createCheckbox")(label.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a colorPicker element in the DOM for color
@@ -2687,15 +2345,12 @@ object globalMod {
       *   @param [value] default color of element
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createColorPicker")
-    @js.native
-    def createColorPicker(): Element = js.native
-    @JSGlobal("createColorPicker")
-    @js.native
-    def createColorPicker(value: String): Element = js.native
-    @JSGlobal("createColorPicker")
-    @js.native
-    def createColorPicker(value: Color): Element = js.native
+    @scala.inline
+    def createColorPicker(): Element = js.Dynamic.global.applyDynamic("createColorPicker")().asInstanceOf[Element]
+    @scala.inline
+    def createColorPicker(value: String): Element = js.Dynamic.global.applyDynamic("createColorPicker")(value.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createColorPicker(value: Color): Element = js.Dynamic.global.applyDynamic("createColorPicker")(value.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       *   Creates a <div></div> element in the DOM with
@@ -2704,12 +2359,10 @@ object globalMod {
       *   @param [html] inner HTML for element created
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createDiv")
-    @js.native
-    def createDiv(): Element = js.native
-    @JSGlobal("createDiv")
-    @js.native
-    def createDiv(html: String): Element = js.native
+    @scala.inline
+    def createDiv(): Element = js.Dynamic.global.applyDynamic("createDiv")().asInstanceOf[Element]
+    @scala.inline
+    def createDiv(html: String): Element = js.Dynamic.global.applyDynamic("createDiv")(html.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       *   Creates element with given tag in the DOM with
@@ -2720,12 +2373,10 @@ object globalMod {
       *   the element
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createElement")
-    @js.native
-    def createElement(tag: String): Element = js.native
-    @JSGlobal("createElement")
-    @js.native
-    def createElement(tag: String, content: String): Element = js.native
+    @scala.inline
+    def createElement(tag: String): Element = js.Dynamic.global.applyDynamic("createElement")(tag.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createElement(tag: String, content: String): Element = (js.Dynamic.global.applyDynamic("createElement")(tag.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates an <input></input> element in the DOM of
@@ -2738,18 +2389,14 @@ object globalMod {
       *   @return pointer to p5.Element holding created DOM
       *   element
       */
-    @JSGlobal("createFileInput")
-    @js.native
-    def createFileInput(): Element = js.native
-    @JSGlobal("createFileInput")
-    @js.native
-    def createFileInput(callback: js.UndefOr[scala.Nothing], multiple: String): Element = js.native
-    @JSGlobal("createFileInput")
-    @js.native
-    def createFileInput(callback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
-    @JSGlobal("createFileInput")
-    @js.native
-    def createFileInput(callback: js.Function1[/* repeated */ js.Any, _], multiple: String): Element = js.native
+    @scala.inline
+    def createFileInput(): Element = js.Dynamic.global.applyDynamic("createFileInput")().asInstanceOf[Element]
+    @scala.inline
+    def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any]): Element = js.Dynamic.global.applyDynamic("createFileInput")(callback.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createFileInput(callback: js.Function1[/* repeated */ js.Any, js.Any], multiple: String): Element = (js.Dynamic.global.applyDynamic("createFileInput")(callback.asInstanceOf[js.Any], multiple.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createFileInput(callback: Unit, multiple: String): Element = (js.Dynamic.global.applyDynamic("createFileInput")(callback.asInstanceOf[js.Any], multiple.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates and returns a new p5.Renderer object. Use
@@ -2762,12 +2409,10 @@ object globalMod {
       *   defaults to p2d
       *   @return offscreen graphics buffer
       */
-    @JSGlobal("createGraphics")
-    @js.native
-    def createGraphics(w: Double, h: Double): Graphics = js.native
-    @JSGlobal("createGraphics")
-    @js.native
-    def createGraphics(w: Double, h: Double, renderer: RENDERER_): Graphics = js.native
+    @scala.inline
+    def createGraphics(w: Double, h: Double): Graphics = (js.Dynamic.global.applyDynamic("createGraphics")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Graphics]
+    @scala.inline
+    def createGraphics(w: Double, h: Double, renderer: RENDERER_): Graphics = (js.Dynamic.global.applyDynamic("createGraphics")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], renderer.asInstanceOf[js.Any])).asInstanceOf[Graphics]
     
     /**
       *   Creates a new p5.Image (the datatype for storing
@@ -2794,9 +2439,8 @@ object globalMod {
       *   @param height height in pixels
       *   @return the p5.Image object
       */
-    @JSGlobal("createImage")
-    @js.native
-    def createImage(width: Double, height: Double): Image = js.native
+    @scala.inline
+    def createImage(width: Double, height: Double): Image = (js.Dynamic.global.applyDynamic("createImage")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Image]
     
     /**
       *   Creates an <img> element in the DOM with given src
@@ -2809,22 +2453,14 @@ object globalMod {
       *   once image data is loaded
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createImg")
-    @js.native
-    def createImg(src: String): Element = js.native
-    @JSGlobal("createImg")
-    @js.native
-    def createImg(
-      src: String,
-      alt: js.UndefOr[scala.Nothing],
-      successCallback: js.Function1[/* repeated */ js.Any, _]
-    ): Element = js.native
-    @JSGlobal("createImg")
-    @js.native
-    def createImg(src: String, alt: String): Element = js.native
-    @JSGlobal("createImg")
-    @js.native
-    def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, _]): Element = js.native
+    @scala.inline
+    def createImg(src: String): Element = js.Dynamic.global.applyDynamic("createImg")(src.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createImg(src: String, alt: String): Element = (js.Dynamic.global.applyDynamic("createImg")(src.asInstanceOf[js.Any], alt.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createImg(src: String, alt: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = (js.Dynamic.global.applyDynamic("createImg")(src.asInstanceOf[js.Any], alt.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createImg(src: String, alt: Unit, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): Element = (js.Dynamic.global.applyDynamic("createImg")(src.asInstanceOf[js.Any], alt.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Element]
     /**
       *   Creates an <img> element in the DOM with given src
       *   and alternate text. Appends to the container node
@@ -2833,9 +2469,8 @@ object globalMod {
       *   @param successCallback callback to be called once
       *   image data is loaded
       */
-    @JSGlobal("createImg")
-    @js.native
-    def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, _]): js.Object | Element = js.native
+    @scala.inline
+    def createImg(src: String, successCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | Element = (js.Dynamic.global.applyDynamic("createImg")(src.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | Element]
     
     /**
       *   Creates an <input></input> element in the DOM for
@@ -2847,34 +2482,28 @@ object globalMod {
       *   Defaults to text
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createInput")
-    @js.native
-    def createInput(): Element = js.native
-    @JSGlobal("createInput")
-    @js.native
-    def createInput(value: js.UndefOr[scala.Nothing], `type`: String): Element = js.native
-    @JSGlobal("createInput")
-    @js.native
-    def createInput(value: String): Element = js.native
-    @JSGlobal("createInput")
-    @js.native
-    def createInput(value: String, `type`: String): Element = js.native
+    @scala.inline
+    def createInput(): Element = js.Dynamic.global.applyDynamic("createInput")().asInstanceOf[Element]
+    @scala.inline
+    def createInput(value: String): Element = js.Dynamic.global.applyDynamic("createInput")(value.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createInput(value: String, `type`: String): Element = (js.Dynamic.global.applyDynamic("createInput")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createInput(value: Unit, `type`: String): Element = (js.Dynamic.global.applyDynamic("createInput")(value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a new instance of p5.NumberDict using the
       *   key-value pair or object you provide.
       */
-    @JSGlobal("createNumberDict")
-    @js.native
-    def createNumberDict(key: Double, value: Double): NumberDict = js.native
+    @scala.inline
+    def createNumberDict(key: Double, value: Double): NumberDict = (js.Dynamic.global.applyDynamic("createNumberDict")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[NumberDict]
     /**
       *   Creates a new instance of p5.NumberDict using the
       *   key-value pair or object you provide.
       *   @param object object
       */
-    @JSGlobal("createNumberDict")
-    @js.native
-    def createNumberDict(`object`: js.Object): NumberDict = js.native
+    @scala.inline
+    def createNumberDict(`object`: js.Object): NumberDict = js.Dynamic.global.applyDynamic("createNumberDict")(`object`.asInstanceOf[js.Any]).asInstanceOf[NumberDict]
     
     /**
       *   Creates a <p></p> element in the DOM with given
@@ -2884,12 +2513,10 @@ object globalMod {
       *   @param [html] inner HTML for element created
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createP")
-    @js.native
-    def createP(): Element = js.native
-    @JSGlobal("createP")
-    @js.native
-    def createP(html: String): Element = js.native
+    @scala.inline
+    def createP(): Element = js.Dynamic.global.applyDynamic("createP")().asInstanceOf[Element]
+    @scala.inline
+    def createP(html: String): Element = js.Dynamic.global.applyDynamic("createP")(html.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       *   Creates a radio button <input></input> element in
@@ -2901,12 +2528,10 @@ object globalMod {
       *   and input field respectively
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createRadio")
-    @js.native
-    def createRadio(): Element = js.native
-    @JSGlobal("createRadio")
-    @js.native
-    def createRadio(divId: String): Element = js.native
+    @scala.inline
+    def createRadio(): Element = js.Dynamic.global.applyDynamic("createRadio")().asInstanceOf[Element]
+    @scala.inline
+    def createRadio(divId: String): Element = js.Dynamic.global.applyDynamic("createRadio")(divId.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       *   Creates a dropdown menu <select></select> element
@@ -2916,9 +2541,8 @@ object globalMod {
       *   @param [multiple] true if dropdown should support
       *   multiple selections
       */
-    @JSGlobal("createSelect")
-    @js.native
-    def createSelect(): Element = js.native
+    @scala.inline
+    def createSelect(): Element = js.Dynamic.global.applyDynamic("createSelect")().asInstanceOf[Element]
     /**
       *   Creates a dropdown menu <select></select> element
       *   in the DOM. It also helps to assign select-box
@@ -2926,16 +2550,13 @@ object globalMod {
       *   select box
       *   @param existing DOM select element
       */
-    @JSGlobal("createSelect")
-    @js.native
-    def createSelect(existing: js.Object): Element = js.native
-    @JSGlobal("createSelect")
-    @js.native
-    def createSelect(multiple: Boolean): Element = js.native
+    @scala.inline
+    def createSelect(existing: js.Object): Element = js.Dynamic.global.applyDynamic("createSelect")(existing.asInstanceOf[js.Any]).asInstanceOf[Element]
+    @scala.inline
+    def createSelect(multiple: Boolean): Element = js.Dynamic.global.applyDynamic("createSelect")(multiple.asInstanceOf[js.Any]).asInstanceOf[Element]
     
-    @JSGlobal("createShader")
-    @js.native
-    def createShader(vertSrc: String, fragSrc: String): Shader = js.native
+    @scala.inline
+    def createShader(vertSrc: String, fragSrc: String): Shader = (js.Dynamic.global.applyDynamic("createShader")(vertSrc.asInstanceOf[js.Any], fragSrc.asInstanceOf[js.Any])).asInstanceOf[Shader]
     
     /**
       *   Creates a slider <input></input> element in the
@@ -2951,18 +2572,14 @@ object globalMod {
       *   value)
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createSlider")
-    @js.native
-    def createSlider(min: Double, max: Double): Element = js.native
-    @JSGlobal("createSlider")
-    @js.native
-    def createSlider(min: Double, max: Double, value: js.UndefOr[scala.Nothing], step: Double): Element = js.native
-    @JSGlobal("createSlider")
-    @js.native
-    def createSlider(min: Double, max: Double, value: Double): Element = js.native
-    @JSGlobal("createSlider")
-    @js.native
-    def createSlider(min: Double, max: Double, value: Double, step: Double): Element = js.native
+    @scala.inline
+    def createSlider(min: Double, max: Double): Element = (js.Dynamic.global.applyDynamic("createSlider")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createSlider(min: Double, max: Double, value: Double): Element = (js.Dynamic.global.applyDynamic("createSlider")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createSlider(min: Double, max: Double, value: Double, step: Double): Element = (js.Dynamic.global.applyDynamic("createSlider")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Element]
+    @scala.inline
+    def createSlider(min: Double, max: Double, value: Unit, step: Double): Element = (js.Dynamic.global.applyDynamic("createSlider")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], value.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Element]
     
     /**
       *   Creates a <span></span> element in the DOM with
@@ -2971,28 +2588,24 @@ object globalMod {
       *   @param [html] inner HTML for element created
       *   @return pointer to p5.Element holding created node
       */
-    @JSGlobal("createSpan")
-    @js.native
-    def createSpan(): Element = js.native
-    @JSGlobal("createSpan")
-    @js.native
-    def createSpan(html: String): Element = js.native
+    @scala.inline
+    def createSpan(): Element = js.Dynamic.global.applyDynamic("createSpan")().asInstanceOf[Element]
+    @scala.inline
+    def createSpan(html: String): Element = js.Dynamic.global.applyDynamic("createSpan")(html.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     /**
       *   Creates a new instance of p5.StringDict using the
       *   key-value pair or the object you provide.
       */
-    @JSGlobal("createStringDict")
-    @js.native
-    def createStringDict(key: String, value: String): StringDict = js.native
+    @scala.inline
+    def createStringDict(key: String, value: String): StringDict = (js.Dynamic.global.applyDynamic("createStringDict")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[StringDict]
     /**
       *   Creates a new instance of p5.StringDict using the
       *   key-value pair or the object you provide.
       *   @param object object
       */
-    @JSGlobal("createStringDict")
-    @js.native
-    def createStringDict(`object`: js.Object): StringDict = js.native
+    @scala.inline
+    def createStringDict(`object`: js.Object): StringDict = js.Dynamic.global.applyDynamic("createStringDict")(`object`.asInstanceOf[js.Any]).asInstanceOf[StringDict]
     
     /**
       *   Creates a new p5.Vector (the datatype for storing
@@ -3004,30 +2617,22 @@ object globalMod {
       *   @param [y] y component of the vector
       *   @param [z] z component of the vector
       */
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: js.UndefOr[scala.Nothing], y: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: js.UndefOr[scala.Nothing], y: Double, z: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: Double, y: Double): Vector = js.native
-    @JSGlobal("createVector")
-    @js.native
-    def createVector(x: Double, y: Double, z: Double): Vector = js.native
+    @scala.inline
+    def createVector(): Vector = js.Dynamic.global.applyDynamic("createVector")().asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Double): Vector = js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Double, y: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Double, y: Double, z: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Double, y: Unit, z: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Unit, y: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Unit, y: Double, z: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Vector]
+    @scala.inline
+    def createVector(x: Unit, y: Unit, z: Double): Vector = (js.Dynamic.global.applyDynamic("createVector")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
     /**
       *   Creates an HTML5 <video> element in the DOM for
@@ -3052,25 +2657,19 @@ object globalMod {
       *   buffering of content
       *   @return pointer to video p5.Element
       */
-    @JSGlobal("createVideo")
-    @js.native
-    def createVideo(src: String): MediaElement = js.native
-    @JSGlobal("createVideo")
-    @js.native
-    def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
-    @JSGlobal("createVideo")
-    @js.native
-    def createVideo(src: js.Array[String]): MediaElement = js.native
-    @JSGlobal("createVideo")
-    @js.native
-    def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): MediaElement = js.native
+    @scala.inline
+    def createVideo(src: String): MediaElement = js.Dynamic.global.applyDynamic("createVideo")(src.asInstanceOf[js.Any]).asInstanceOf[MediaElement]
+    @scala.inline
+    def createVideo(src: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = (js.Dynamic.global.applyDynamic("createVideo")(src.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MediaElement]
+    @scala.inline
+    def createVideo(src: js.Array[String]): MediaElement = js.Dynamic.global.applyDynamic("createVideo")(src.asInstanceOf[js.Any]).asInstanceOf[MediaElement]
+    @scala.inline
+    def createVideo(src: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): MediaElement = (js.Dynamic.global.applyDynamic("createVideo")(src.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[MediaElement]
     
-    @JSGlobal("createWriter")
-    @js.native
-    def createWriter(name: String): PrintWriter = js.native
-    @JSGlobal("createWriter")
-    @js.native
-    def createWriter(name: String, extension: String): PrintWriter = js.native
+    @scala.inline
+    def createWriter(name: String): PrintWriter = js.Dynamic.global.applyDynamic("createWriter")(name.asInstanceOf[js.Any]).asInstanceOf[PrintWriter]
+    @scala.inline
+    def createWriter(name: String, `extension`: String): PrintWriter = (js.Dynamic.global.applyDynamic("createWriter")(name.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[PrintWriter]
     
     /**
       *   Sets the cursor to a predefined symbol or an
@@ -3091,30 +2690,22 @@ object globalMod {
       *   @param [y] the vertical active spot of the cursor
       *   (must be less than 32)
       */
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: String): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: String, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: String, x: Double): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: String, x: Double, y: Double): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: CURSOR_TYPE): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: CURSOR_TYPE, x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: CURSOR_TYPE, x: Double): Unit = js.native
-    @JSGlobal("cursor")
-    @js.native
-    def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = js.native
+    @scala.inline
+    def cursor(`type`: String): Unit = js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: String, x: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: String, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: String, x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: CURSOR_TYPE): Unit = js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: CURSOR_TYPE, x: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: CURSOR_TYPE, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def cursor(`type`: CURSOR_TYPE, x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("cursor")(`type`.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Draws a curved line on the screen between two
@@ -3143,9 +2734,8 @@ object globalMod {
       *   point
       *   @chainable
       */
-    @JSGlobal("curve")
-    @js.native
-    def curve(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = js.native
+    @scala.inline
+    def curve(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = (js.Dynamic.global.applyDynamic("curve")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Draws a curved line on the screen between two
       *   points, given as the middle four parameters. The
@@ -3179,8 +2769,7 @@ object globalMod {
       *   point
       *   @chainable
       */
-    @JSGlobal("curve")
-    @js.native
+    @scala.inline
     def curve(
       x1: Double,
       y1: Double,
@@ -3194,7 +2783,7 @@ object globalMod {
       x4: Double,
       y4: Double,
       z4: Double
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("curve")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], z3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], z4.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets the resolution at which curves display. The
@@ -3206,9 +2795,8 @@ object globalMod {
       *   @param resolution resolution of the curves
       *   @chainable
       */
-    @JSGlobal("curveDetail")
-    @js.native
-    def curveDetail(resolution: Double): ^ = js.native
+    @scala.inline
+    def curveDetail(resolution: Double): ^ = js.Dynamic.global.applyDynamic("curveDetail")(resolution.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Evaluates the curve at position t for points a, b,
@@ -3226,9 +2814,8 @@ object globalMod {
       *   @param t value between 0 and 1
       *   @return bezier value at position t
       */
-    @JSGlobal("curvePoint")
-    @js.native
-    def curvePoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+    @scala.inline
+    def curvePoint(a: Double, b: Double, c: Double, d: Double, t: Double): Double = (js.Dynamic.global.applyDynamic("curvePoint")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Evaluates the tangent to the curve at position t
@@ -3242,9 +2829,8 @@ object globalMod {
       *   @param t value between 0 and 1
       *   @return the tangent at position t
       */
-    @JSGlobal("curveTangent")
-    @js.native
-    def curveTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = js.native
+    @scala.inline
+    def curveTangent(a: Double, b: Double, c: Double, d: Double, t: Double): Double = (js.Dynamic.global.applyDynamic("curveTangent")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], c.asInstanceOf[js.Any], d.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Modifies the quality of forms created with curve()
@@ -3262,9 +2848,8 @@ object globalMod {
       *   original vertices
       *   @chainable
       */
-    @JSGlobal("curveTightness")
-    @js.native
-    def curveTightness(amount: Double): ^ = js.native
+    @scala.inline
+    def curveTightness(amount: Double): ^ = js.Dynamic.global.applyDynamic("curveTightness")(amount.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Specifies vertex coordinates for curves. This
@@ -3308,12 +2893,10 @@ object globalMod {
       *   mode)
       *   @chainable
       */
-    @JSGlobal("curveVertex")
-    @js.native
-    def curveVertex(x: Double, y: Double): ^ = js.native
-    @JSGlobal("curveVertex")
-    @js.native
-    def curveVertex(x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def curveVertex(x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("curveVertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def curveVertex(x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("curveVertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Draw a cylinder with given radius and height
@@ -3330,8 +2913,7 @@ object globalMod {
       *   cylinder
       *   @chainable
       */
-    @JSGlobal("cylinder")
-    @js.native
+    @scala.inline
     def cylinder(
       radius: js.UndefOr[Double],
       height: js.UndefOr[Double],
@@ -3339,7 +2921,7 @@ object globalMod {
       detailY: js.UndefOr[Double],
       bottomCap: js.UndefOr[Boolean],
       topCap: js.UndefOr[Boolean]
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("cylinder")(radius.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any], bottomCap.asInstanceOf[js.Any], topCap.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   p5.js communicates with the clock on your
@@ -3347,9 +2929,8 @@ object globalMod {
       *   day as a value from 1 - 31.
       *   @return the current day
       */
-    @JSGlobal("day")
-    @js.native
-    def day(): Double = js.native
+    @scala.inline
+    def day(): Double = js.Dynamic.global.applyDynamic("day")().asInstanceOf[Double]
     
     /**
       *   debugMode() helps visualize 3D space by adding a
@@ -3373,9 +2954,8 @@ object globalMod {
       *   along with orbitControl to allow full view of the
       *   grid.
       */
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(): Unit = js.native
+    @scala.inline
+    def debugMode(): Unit = js.Dynamic.global.applyDynamic("debugMode")().asInstanceOf[Unit]
     /**
       *   debugMode() helps visualize 3D space by adding a
       *   grid to indicate where the ‘ground’ is in a sketch
@@ -3402,8 +2982,7 @@ object globalMod {
       *   grid
       *   @param [axesSize] size of axes icon
       */
-    @JSGlobal("debugMode")
-    @js.native
+    @scala.inline
     def debugMode(
       gridSize: js.UndefOr[Double],
       gridDivisions: js.UndefOr[Double],
@@ -3414,7 +2993,7 @@ object globalMod {
       axesXOff: js.UndefOr[Double],
       axesYOff: js.UndefOr[Double],
       axesZOff: js.UndefOr[Double]
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], gridXOff.asInstanceOf[js.Any], gridYOff.asInstanceOf[js.Any], gridZOff.asInstanceOf[js.Any], axesSize.asInstanceOf[js.Any], axesXOff.asInstanceOf[js.Any], axesYOff.asInstanceOf[js.Any], axesZOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   debugMode() helps visualize 3D space by adding a
       *   grid to indicate where the ‘ground’ is in a sketch
@@ -3438,9 +3017,8 @@ object globalMod {
       *   grid.
       *   @param mode either GRID or AXES
       */
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: DEBUG_MODE): Unit = js.native
+    @scala.inline
+    def debugMode(mode: DEBUG_MODE): Unit = js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       *   debugMode() helps visualize 3D space by adding a
       *   grid to indicate where the ‘ground’ is in a sketch
@@ -3497,263 +3075,17 @@ object globalMod {
       *   @param [yOff] Y axis offset from origin (0,0,0)
       *   @param [zOff] Z axis offset from origin (0,0,0)
       */
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: js.UndefOr[scala.Nothing], gridDivisions: Double): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: Double,
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: Double,
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: js.UndefOr[scala.Nothing],
-      gridDivisions: Double,
-      xOff: Double,
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: js.UndefOr[scala.Nothing],
-      xOff: Double,
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: Double,
-      xOff: js.UndefOr[scala.Nothing],
-      yOff: Double,
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(
-      mode: UNKNOWN_P5_CONSTANT,
-      gridSize: Double,
-      gridDivisions: Double,
-      xOff: Double,
-      yOff: js.UndefOr[scala.Nothing],
-      zOff: Double
-    ): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
-    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double, yOff: Double): Unit = js.native
-    @JSGlobal("debugMode")
-    @js.native
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT): Unit = js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Double, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def debugMode(
       mode: UNKNOWN_P5_CONSTANT,
       gridSize: Double,
@@ -3761,7 +3093,164 @@ object globalMod {
       xOff: Double,
       yOff: Double,
       zOff: Double
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Double,
+      xOff: Double,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Double, xOff: Unit, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Double,
+      xOff: Unit,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Double,
+      xOff: Unit,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Double, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Unit,
+      xOff: Double,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Unit,
+      xOff: Double,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Double, gridDivisions: Unit, xOff: Unit, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Unit,
+      xOff: Unit,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Double,
+      gridDivisions: Unit,
+      xOff: Unit,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Double, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Double,
+      xOff: Double,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Double,
+      xOff: Double,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Double, xOff: Unit, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Double,
+      xOff: Unit,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Double,
+      xOff: Unit,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Double, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Unit,
+      xOff: Double,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Unit,
+      xOff: Double,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(mode: UNKNOWN_P5_CONSTANT, gridSize: Unit, gridDivisions: Unit, xOff: Unit, yOff: Double): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Unit,
+      xOff: Unit,
+      yOff: Double,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debugMode(
+      mode: UNKNOWN_P5_CONSTANT,
+      gridSize: Unit,
+      gridDivisions: Unit,
+      xOff: Unit,
+      yOff: Unit,
+      zOff: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("debugMode")(mode.asInstanceOf[js.Any], gridSize.asInstanceOf[js.Any], gridDivisions.asInstanceOf[js.Any], xOff.asInstanceOf[js.Any], yOff.asInstanceOf[js.Any], zOff.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Converts a radian measurement to its corresponding
@@ -3774,9 +3263,8 @@ object globalMod {
       *   degrees
       *   @return the converted angle
       */
-    @JSGlobal("degrees")
-    @js.native
-    def degrees(radians: Double): Double = js.native
+    @scala.inline
+    def degrees(radians: Double): Double = js.Dynamic.global.applyDynamic("degrees")(radians.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   The system variable deltaTime contains the time
@@ -3800,9 +3288,8 @@ object globalMod {
       *   to 0.5. The threshold value can be changed using
       *   setMoveThreshold().
       */
-    @JSGlobal("deviceMoved")
-    @js.native
-    def deviceMoved(): Unit = js.native
+    @scala.inline
+    def deviceMoved(): Unit = js.Dynamic.global.applyDynamic("deviceMoved")().asInstanceOf[Unit]
     
     /**
       *   The system variable deviceOrientation always
@@ -3825,9 +3312,8 @@ object globalMod {
       *   30. The threshold value can be changed using
       *   setShakeThreshold().
       */
-    @JSGlobal("deviceShaken")
-    @js.native
-    def deviceShaken(): Unit = js.native
+    @scala.inline
+    def deviceShaken(): Unit = js.Dynamic.global.applyDynamic("deviceShaken")().asInstanceOf[Unit]
     
     /**
       *   The deviceTurned() function is called when the
@@ -3838,16 +3324,13 @@ object globalMod {
       *   to trigger on any axis: X, Y or Z by comparing the
       *   turnAxis variable to 'X', 'Y' or 'Z'.
       */
-    @JSGlobal("deviceTurned")
-    @js.native
-    def deviceTurned(): Unit = js.native
+    @scala.inline
+    def deviceTurned(): Unit = js.Dynamic.global.applyDynamic("deviceTurned")().asInstanceOf[Unit]
     
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: String, position: Vector): ^ = js.native
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: String, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def directionalLight(color: String, position: Vector): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def directionalLight(color: String, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a directional light with a color and a
       *   direction
@@ -3856,9 +3339,8 @@ object globalMod {
       *   @param position the direction of the light
       *   @chainable
       */
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: js.Array[Double], position: Vector): ^ = js.native
+    @scala.inline
+    def directionalLight(color: js.Array[Double], position: Vector): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a directional light with a color and a
       *   direction
@@ -3869,15 +3351,12 @@ object globalMod {
       *   @param z z axis direction
       *   @chainable
       */
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: js.Array[Double], x: Double, y: Double, z: Double): ^ = js.native
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: Color, position: Vector): ^ = js.native
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(color: Color, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def directionalLight(color: js.Array[Double], x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def directionalLight(color: Color, position: Vector): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def directionalLight(color: Color, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a directional light with a color and a
       *   direction
@@ -3888,9 +3367,8 @@ object globalMod {
       *   @param position the direction of the light
       *   @chainable
       */
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): ^ = js.native
+    @scala.inline
+    def directionalLight(v1: Double, v2: Double, v3: Double, position: Vector): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a directional light with a color and a
       *   direction
@@ -3903,18 +3381,16 @@ object globalMod {
       *   @param z z axis direction
       *   @chainable
       */
-    @JSGlobal("directionalLight")
-    @js.native
-    def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def directionalLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("directionalLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Returns the pixel density of the current display
       *   the sketch is running on.
       *   @return current pixel density of the display
       */
-    @JSGlobal("displayDensity")
-    @js.native
-    def displayDensity(): Double = js.native
+    @scala.inline
+    def displayDensity(): Double = js.Dynamic.global.applyDynamic("displayDensity")().asInstanceOf[Double]
     
     /**
       *   System variable that stores the height of the
@@ -3951,9 +3427,8 @@ object globalMod {
       *   @param y2 y-coordinate of the second point
       *   @return distance between the two points
       */
-    @JSGlobal("dist")
-    @js.native
-    def dist(x1: Double, y1: Double, x2: Double, y2: Double): Double = js.native
+    @scala.inline
+    def dist(x1: Double, y1: Double, x2: Double, y2: Double): Double = (js.Dynamic.global.applyDynamic("dist")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       *   Calculates the distance between two points, in
       *   either two or three dimensions.
@@ -3965,9 +3440,8 @@ object globalMod {
       *   @param z2 z-coordinate of the second point
       *   @return distance between the two points
       */
-    @JSGlobal("dist")
-    @js.native
-    def dist(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): Double = js.native
+    @scala.inline
+    def dist(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): Double = (js.Dynamic.global.applyDynamic("dist")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   The doubleClicked() function is executed every
@@ -3982,12 +3456,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("doubleClicked")
-    @js.native
-    def doubleClicked(): Unit = js.native
-    @JSGlobal("doubleClicked")
-    @js.native
-    def doubleClicked(event: js.Object): Unit = js.native
+    @scala.inline
+    def doubleClicked(): Unit = js.Dynamic.global.applyDynamic("doubleClicked")().asInstanceOf[Unit]
+    @scala.inline
+    def doubleClicked(event: js.Object): Unit = js.Dynamic.global.applyDynamic("doubleClicked")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Draws an ellipse (oval) to the screen. An ellipse
@@ -4005,12 +3477,10 @@ object globalMod {
       *   @param [h] height of the ellipse.
       *   @chainable
       */
-    @JSGlobal("ellipse")
-    @js.native
-    def ellipse(x: Double, y: Double, w: Double): ^ = js.native
-    @JSGlobal("ellipse")
-    @js.native
-    def ellipse(x: Double, y: Double, w: Double, h: Double): ^ = js.native
+    @scala.inline
+    def ellipse(x: Double, y: Double, w: Double): ^ = (js.Dynamic.global.applyDynamic("ellipse")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipse(x: Double, y: Double, w: Double, h: Double): ^ = (js.Dynamic.global.applyDynamic("ellipse")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Draws an ellipse (oval) to the screen. An ellipse
       *   with equal width and height is a circle. By
@@ -4028,9 +3498,8 @@ object globalMod {
       *   @param detail number of radial sectors to draw
       *   (for WebGL mode)
       */
-    @JSGlobal("ellipse")
-    @js.native
-    def ellipse(x: Double, y: Double, w: Double, h: Double, detail: Double): Unit = js.native
+    @scala.inline
+    def ellipse(x: Double, y: Double, w: Double, h: Double, detail: Double): Unit = (js.Dynamic.global.applyDynamic("ellipse")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], detail.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Modifies the location from which ellipses are
@@ -4067,9 +3536,8 @@ object globalMod {
       *   CORNERS
       *   @chainable
       */
-    @JSGlobal("ellipseMode")
-    @js.native
-    def ellipseMode(mode: ELLIPSE_MODE): ^ = js.native
+    @scala.inline
+    def ellipseMode(mode: ELLIPSE_MODE): ^ = js.Dynamic.global.applyDynamic("ellipseMode")(mode.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Draw an ellipsoid with given radius
@@ -4086,212 +3554,70 @@ object globalMod {
       *   browser.
       *   @chainable
       */
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: js.UndefOr[scala.Nothing], radiusz: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: Double,
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: Double,
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: Double,
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: Double,
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: Double,
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: Double,
-      radiusz: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: js.UndefOr[scala.Nothing], radiusy: Double, radiusz: Double, detailX: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: js.UndefOr[scala.Nothing],
-      radiusy: Double,
-      radiusz: Double,
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: js.UndefOr[scala.Nothing], radiusz: Double, detailX: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: js.UndefOr[scala.Nothing],
-      radiusz: Double,
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: Double,
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: Double,
-      radiusz: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(
-      radiusx: Double,
-      radiusy: Double,
-      radiusz: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): ^ = js.native
-    @JSGlobal("ellipsoid")
-    @js.native
-    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): ^ = js.native
+    @scala.inline
+    def ellipsoid(): ^ = js.Dynamic.global.applyDynamic("ellipsoid")().asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double): ^ = js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Double, radiusz: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Double, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Double, radiusz: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def ellipsoid(radiusx: Unit, radiusy: Unit, radiusz: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("ellipsoid")(radiusx.asInstanceOf[js.Any], radiusy.asInstanceOf[js.Any], radiusz.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Use the beginContour() and endContour() functions
@@ -4312,9 +3638,8 @@ object globalMod {
       *   rect() within.
       *   @chainable
       */
-    @JSGlobal("endContour")
-    @js.native
-    def endContour(): ^ = js.native
+    @scala.inline
+    def endContour(): ^ = js.Dynamic.global.applyDynamic("endContour")().asInstanceOf[^]
     
     /**
       *   The endShape() function is the companion to
@@ -4328,12 +3653,10 @@ object globalMod {
       *   @param [mode] use CLOSE to close the shape
       *   @chainable
       */
-    @JSGlobal("endShape")
-    @js.native
-    def endShape(): ^ = js.native
-    @JSGlobal("endShape")
-    @js.native
-    def endShape(mode: END_MODE): ^ = js.native
+    @scala.inline
+    def endShape(): ^ = js.Dynamic.global.applyDynamic("endShape")().asInstanceOf[^]
+    @scala.inline
+    def endShape(mode: END_MODE): ^ = js.Dynamic.global.applyDynamic("endShape")(mode.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Returns Euler's number e (2.71828...) raised to
@@ -4341,9 +3664,8 @@ object globalMod {
       *   @param n exponent to raise
       *   @return e^n
       */
-    @JSGlobal("exp")
-    @js.native
-    def exp(n: Double): Double = js.native
+    @scala.inline
+    def exp(n: Double): Double = js.Dynamic.global.applyDynamic("exp")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Sets the color used to fill shapes. For example,
@@ -4366,9 +3688,8 @@ object globalMod {
       *   @param color the fill color
       *   @chainable
       */
-    @JSGlobal("fill")
-    @js.native
-    def fill(color: Color): ^ = js.native
+    @scala.inline
+    def fill(color: Color): ^ = js.Dynamic.global.applyDynamic("fill")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Sets the color used to fill shapes. For example,
       *   if you run fill(204, 102, 0), all shapes drawn
@@ -4390,12 +3711,10 @@ object globalMod {
       *   @param gray a gray value
       *   @chainable
       */
-    @JSGlobal("fill")
-    @js.native
-    def fill(gray: Double): ^ = js.native
-    @JSGlobal("fill")
-    @js.native
-    def fill(gray: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def fill(gray: Double): ^ = js.Dynamic.global.applyDynamic("fill")(gray.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def fill(gray: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("fill")(gray.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Sets the color used to fill shapes. For example,
       *   if you run fill(204, 102, 0), all shapes drawn
@@ -4422,12 +3741,10 @@ object globalMod {
       *   current color range
       *   @chainable
       */
-    @JSGlobal("fill")
-    @js.native
-    def fill(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("fill")
-    @js.native
-    def fill(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def fill(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("fill")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def fill(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("fill")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Sets the color used to fill shapes. For example,
       *   if you run fill(204, 102, 0), all shapes drawn
@@ -4449,9 +3766,8 @@ object globalMod {
       *   @param value a color string
       *   @chainable
       */
-    @JSGlobal("fill")
-    @js.native
-    def fill(value: String): ^ = js.native
+    @scala.inline
+    def fill(value: String): ^ = js.Dynamic.global.applyDynamic("fill")(value.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Sets the color used to fill shapes. For example,
       *   if you run fill(204, 102, 0), all shapes drawn
@@ -4474,9 +3790,8 @@ object globalMod {
       *   red,green,blue & and alpha components of the color
       *   @chainable
       */
-    @JSGlobal("fill")
-    @js.native
-    def fill(values: js.Array[Double]): ^ = js.native
+    @scala.inline
+    def fill(values: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("fill")(values.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Applies a filter to the canvas.
@@ -4537,12 +3852,10 @@ object globalMod {
       *   @param [filterParam] an optional parameter unique
       *   to each filter, see above
       */
-    @JSGlobal("filter")
-    @js.native
-    def filter(filterType: FILTER_TYPE): Unit = js.native
-    @JSGlobal("filter")
-    @js.native
-    def filter(filterType: FILTER_TYPE, filterParam: Double): Unit = js.native
+    @scala.inline
+    def filter(filterType: FILTER_TYPE): Unit = js.Dynamic.global.applyDynamic("filter")(filterType.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def filter(filterType: FILTER_TYPE, filterParam: Double): Unit = (js.Dynamic.global.applyDynamic("filter")(filterType.asInstanceOf[js.Any], filterParam.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Converts a string to its floating point
@@ -4555,9 +3868,8 @@ object globalMod {
       *   @param str float string to parse
       *   @return floating point representation of string
       */
-    @JSGlobal("float")
-    @js.native
-    def float(str: String): Double = js.native
+    @scala.inline
+    def float(str: String): Double = js.Dynamic.global.applyDynamic("float")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Calculates the closest int value that is less than
@@ -4566,9 +3878,8 @@ object globalMod {
       *   @param n number to round down
       *   @return rounded down number
       */
-    @JSGlobal("floor")
-    @js.native
-    def floor(n: Double): Double = js.native
+    @scala.inline
+    def floor(n: Double): Double = js.Dynamic.global.applyDynamic("floor")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Confirms if the window a p5.js program is in is
@@ -4619,9 +3930,8 @@ object globalMod {
       *   current framerate.
       *   @return current frameRate
       */
-    @JSGlobal("frameRate")
-    @js.native
-    def frameRate(): Double = js.native
+    @scala.inline
+    def frameRate(): Double = js.Dynamic.global.applyDynamic("frameRate")().asInstanceOf[Double]
     /**
       *   Specifies the number of frames to be displayed
       *   every second. For example, the function call
@@ -4649,9 +3959,8 @@ object globalMod {
       *   second
       *   @chainable
       */
-    @JSGlobal("frameRate")
-    @js.native
-    def frameRate(fps: Double): ^ = js.native
+    @scala.inline
+    def frameRate(fps: Double): ^ = js.Dynamic.global.applyDynamic("frameRate")(fps.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Returns the closest MIDI note value for a given
@@ -4660,9 +3969,8 @@ object globalMod {
       *   above Middle C is 440Hz
       *   @return MIDI note value
       */
-    @JSGlobal("freqToMidi")
-    @js.native
-    def freqToMidi(frequency: Double): Double = js.native
+    @scala.inline
+    def freqToMidi(frequency: Double): Double = js.Dynamic.global.applyDynamic("freqToMidi")(frequency.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   If argument is given, sets the sketch to
@@ -4676,12 +3984,10 @@ object globalMod {
       *   fullscreen mode or not
       *   @return current fullscreen state
       */
-    @JSGlobal("fullscreen")
-    @js.native
-    def fullscreen(): Boolean = js.native
-    @JSGlobal("fullscreen")
-    @js.native
-    def fullscreen(`val`: Boolean): Boolean = js.native
+    @scala.inline
+    def fullscreen(): Boolean = js.Dynamic.global.applyDynamic("fullscreen")().asInstanceOf[Boolean]
+    @scala.inline
+    def fullscreen(`val`: Boolean): Boolean = js.Dynamic.global.applyDynamic("fullscreen")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       *   Get a region of pixels, or a single pixel, from
@@ -4720,9 +4026,8 @@ object globalMod {
       *   p5.Image.get()
       *   @return the whole p5.Image
       */
-    @JSGlobal("get")
-    @js.native
-    def get(): Image = js.native
+    @scala.inline
+    def get(): Image = js.Dynamic.global.applyDynamic("get")().asInstanceOf[Image]
     /**
       *   Get a region of pixels, or a single pixel, from
       *   the canvas. Returns an array of [R,G,B,A] values
@@ -4763,9 +4068,8 @@ object globalMod {
       *   @return color of pixel at x,y in array format [R,
       *   G, B, A]
       */
-    @JSGlobal("get")
-    @js.native
-    def get(x: Double, y: Double): js.Array[Double] = js.native
+    @scala.inline
+    def get(x: Double, y: Double): js.Array[Double] = (js.Dynamic.global.applyDynamic("get")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     /**
       *   Get a region of pixels, or a single pixel, from
       *   the canvas. Returns an array of [R,G,B,A] values
@@ -4807,9 +4111,8 @@ object globalMod {
       *   @param h height
       *   @return the rectangle p5.Image
       */
-    @JSGlobal("get")
-    @js.native
-    def get(x: Double, y: Double, w: Double, h: Double): Image = js.native
+    @scala.inline
+    def get(x: Double, y: Double, w: Double, h: Double): Image = (js.Dynamic.global.applyDynamic("get")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Image]
     
     /**
       *   Returns the value of an item that was stored in
@@ -4818,40 +4121,34 @@ object globalMod {
       *   local storage
       *   @return Value of stored item
       */
-    @JSGlobal("getItem")
-    @js.native
-    def getItem(key: String): Double | js.Object | String | Boolean | Color = js.native
+    @scala.inline
+    def getItem(key: String): Double | js.Object | String | Boolean | Color = js.Dynamic.global.applyDynamic("getItem")(key.asInstanceOf[js.Any]).asInstanceOf[Double | js.Object | String | Boolean | Color]
     
     /**
       *   Gets the current URL.
       *   @return url
       */
-    @JSGlobal("getURL")
-    @js.native
-    def getURL(): String = js.native
+    @scala.inline
+    def getURL(): String = js.Dynamic.global.applyDynamic("getURL")().asInstanceOf[String]
     
     /**
       *   Gets the current URL params as an Object.
       *   @return URL params
       */
-    @JSGlobal("getURLParams")
-    @js.native
-    def getURLParams(): js.Object = js.native
+    @scala.inline
+    def getURLParams(): js.Object = js.Dynamic.global.applyDynamic("getURLParams")().asInstanceOf[js.Object]
     
     /**
       *   Gets the current URL path as an array.
       *   @return path components
       */
-    @JSGlobal("getURLPath")
-    @js.native
-    def getURLPath(): js.Array[String] = js.native
+    @scala.inline
+    def getURLPath(): js.Array[String] = js.Dynamic.global.applyDynamic("getURLPath")().asInstanceOf[js.Array[String]]
     
-    @JSGlobal("green")
-    @js.native
-    def green(color: String): Double = js.native
-    @JSGlobal("green")
-    @js.native
-    def green(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def green(color: String): Double = js.Dynamic.global.applyDynamic("green")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def green(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("green")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the green value from a color or pixel
       *   array.
@@ -4859,9 +4156,8 @@ object globalMod {
       *   CSS color
       *   @return the green value
       */
-    @JSGlobal("green")
-    @js.native
-    def green(color: Color): Double = js.native
+    @scala.inline
+    def green(color: Color): Double = js.Dynamic.global.applyDynamic("green")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   System variable that stores the height of the
@@ -4889,12 +4185,10 @@ object globalMod {
       *   @param n value to parse
       *   @return hexadecimal string representation of value
       */
-    @JSGlobal("hex")
-    @js.native
-    def hex(n: Double): String = js.native
-    @JSGlobal("hex")
-    @js.native
-    def hex(n: Double, digits: Double): String = js.native
+    @scala.inline
+    def hex(n: Double): String = js.Dynamic.global.applyDynamic("hex")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def hex(n: Double, digits: Double): String = (js.Dynamic.global.applyDynamic("hex")(n.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Converts a number to a string in its equivalent
       *   hexadecimal notation. If a second parameter is
@@ -4907,12 +4201,10 @@ object globalMod {
       *   @return hexadecimal string representation of
       *   values
       */
-    @JSGlobal("hex")
-    @js.native
-    def hex(ns: js.Array[Double]): js.Array[String] = js.native
-    @JSGlobal("hex")
-    @js.native
-    def hex(ns: js.Array[Double], digits: Double): js.Array[String] = js.native
+    @scala.inline
+    def hex(ns: js.Array[Double]): js.Array[String] = js.Dynamic.global.applyDynamic("hex")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def hex(ns: js.Array[Double], digits: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("hex")(ns.asInstanceOf[js.Any], digits.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   p5.js communicates with the clock on your
@@ -4920,9 +4212,8 @@ object globalMod {
       *   hour as a value from 0 - 23.
       *   @return the current hour
       */
-    @JSGlobal("hour")
-    @js.native
-    def hour(): Double = js.native
+    @scala.inline
+    def hour(): Double = js.Dynamic.global.applyDynamic("hour")().asInstanceOf[Double]
     
     /**
       *   Method for executing an HTTP request. If data type
@@ -4950,267 +4241,230 @@ object globalMod {
       *   the operation completes successfully or rejects
       *   with the error after one occurs.
       */
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: js.UndefOr[scala.Nothing], datatype: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: js.UndefOr[scala.Nothing],
-      datatype: String,
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: String): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: String, datatype: String): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(
-      path: String,
-      method: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
+    @scala.inline
+    def httpDo(path: String): js.Promise[js.Any] = js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: String): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: String, datatype: String): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: String, datatype: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpDo(
       path: String,
       method: String,
       datatype: String,
       data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpDo(
       path: String,
       method: String,
       datatype: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpDo(
       path: String,
       method: String,
       datatype: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: String,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: String,
+      datatype: Unit,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: Unit, datatype: String): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: Unit, datatype: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: String,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, method: Unit, datatype: Unit, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(
+      path: String,
+      method: Unit,
+      datatype: Unit,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], method.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     /**
       *   Method for executing an HTTP request. If data type
       *   is not specified, p5 will try to guess based on
@@ -5231,28 +4485,24 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, options: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
+    @scala.inline
+    def httpDo(path: String, options: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpDo(
       path: String,
       options: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
-    def httpDo(path: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpDo")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpDo(
       path: String,
       options: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpDo")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       *   Method for executing an HTTP GET request. If data
@@ -5277,9 +4527,8 @@ object globalMod {
       *   the operation completes successfully or rejects
       *   with the error after one occurs.
       */
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String): js.Promise[_] = js.native
+    @scala.inline
+    def httpGet(path: String): js.Promise[js.Any] = js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     /**
       *   Method for executing an HTTP GET request. If data
       *   type is not specified, p5 will try to guess based
@@ -5297,16 +4546,14 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+    @scala.inline
+    def httpGet(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     /**
       *   Method for executing an HTTP GET request. If data
       *   type is not specified, p5 will try to guess based
@@ -5325,211 +4572,175 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+    @scala.inline
+    def httpGet(path: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: String): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: String): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       datatype: String,
       data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       datatype: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: String,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       datatype: String,
       data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
-    def httpGet(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpGet")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpGet(
       path: String,
       datatype: String,
       data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: String,
+      data: Boolean,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: String,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: Boolean,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpGet(
+      path: String,
+      datatype: Unit,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpGet")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
     /**
       *   Method for executing an HTTP POST request. If data
@@ -5550,9 +4761,8 @@ object globalMod {
       *   the operation completes successfully or rejects
       *   with the error after one occurs.
       */
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String): js.Promise[_] = js.native
+    @scala.inline
+    def httpPost(path: String): js.Promise[js.Any] = js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
     /**
       *   Method for executing an HTTP POST request. If data
       *   type is not specified, p5 will try to guess based
@@ -5566,16 +4776,14 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+    @scala.inline
+    def httpPost(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     /**
       *   Method for executing an HTTP POST request. If data
       *   type is not specified, p5 will try to guess based
@@ -5590,218 +4798,180 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+    @scala.inline
+    def httpPost(path: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: js.UndefOr[scala.Nothing], data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: js.UndefOr[scala.Nothing],
-      data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: String): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(
-      path: String,
-      datatype: String,
-      data: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: String, data: js.Object): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: String): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: String, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       datatype: String,
       data: js.Object,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: String, data: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       datatype: String,
       data: js.Object,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: String, data: Boolean): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: String,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: String, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       datatype: String,
       data: Boolean,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
-    def httpPost(path: String, datatype: String, data: Boolean, callback: js.Function1[/* repeated */ js.Any, _]): js.Promise[_] = js.native
-    @JSGlobal("httpPost")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
     def httpPost(
       path: String,
       datatype: String,
       data: Boolean,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Promise[_] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: String,
+      data: Boolean,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: String, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: String,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: String,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: Unit, data: js.Object): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: js.Object,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: Unit, data: Boolean): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: Unit, data: Boolean, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: Boolean,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: Boolean,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(path: String, datatype: Unit, data: Unit, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def httpPost(
+      path: String,
+      datatype: Unit,
+      data: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Promise[js.Any] = (js.Dynamic.global.applyDynamic("httpPost")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSGlobal("hue")
-    @js.native
-    def hue(color: String): Double = js.native
-    @JSGlobal("hue")
-    @js.native
-    def hue(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def hue(color: String): Double = js.Dynamic.global.applyDynamic("hue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def hue(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("hue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the hue value from a color or pixel
       *   array. Hue exists in both HSB and HSL. This
@@ -5816,28 +4986,12 @@ object globalMod {
       *   CSS color
       *   @return the hue
       */
-    @JSGlobal("hue")
-    @js.native
-    def hue(color: Color): Double = js.native
+    @scala.inline
+    def hue(color: Color): Double = js.Dynamic.global.applyDynamic("hue")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("image")
-    @js.native
-    def image(img: Element, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(
-      img: Element,
-      dx: Double,
-      dy: Double,
-      dWidth: Double,
-      dHeight: Double,
-      sx: Double,
-      sy: Double,
-      sWidth: js.UndefOr[scala.Nothing],
-      sHeight: Double
-    ): Unit = js.native
-    @JSGlobal("image")
-    @js.native
+    @scala.inline
+    def image(img: Element, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def image(
       img: Element,
       dx: Double,
@@ -5847,9 +5001,8 @@ object globalMod {
       sx: Double,
       sy: Double,
       sWidth: Double
-    ): Unit = js.native
-    @JSGlobal("image")
-    @js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def image(
       img: Element,
       dx: Double,
@@ -5860,19 +5013,27 @@ object globalMod {
       sy: Double,
       sWidth: Double,
       sHeight: Double
-    ): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Element, x: Double, y: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Element, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Element, x: Double, y: Double, width: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any], sHeight.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(
+      img: Element,
+      dx: Double,
+      dy: Double,
+      dWidth: Double,
+      dHeight: Double,
+      sx: Double,
+      sy: Double,
+      sWidth: Unit,
+      sHeight: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any], sHeight.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Element, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Element, x: Double, y: Double, width: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Element, x: Double, y: Double, width: Double, height: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Element, x: Double, y: Double, width: Unit, height: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Draw an image to the p5.js canvas. This function
       *   can be used with different numbers of parameters.
@@ -5913,24 +5074,9 @@ object globalMod {
       *   the source image to draw into the destination
       *   rectangle
       */
-    @JSGlobal("image")
-    @js.native
-    def image(img: Image, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(
-      img: Image,
-      dx: Double,
-      dy: Double,
-      dWidth: Double,
-      dHeight: Double,
-      sx: Double,
-      sy: Double,
-      sWidth: js.UndefOr[scala.Nothing],
-      sHeight: Double
-    ): Unit = js.native
-    @JSGlobal("image")
-    @js.native
+    @scala.inline
+    def image(img: Image, dx: Double, dy: Double, dWidth: Double, dHeight: Double, sx: Double, sy: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def image(
       img: Image,
       dx: Double,
@@ -5940,9 +5086,8 @@ object globalMod {
       sx: Double,
       sy: Double,
       sWidth: Double
-    ): Unit = js.native
-    @JSGlobal("image")
-    @js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def image(
       img: Image,
       dx: Double,
@@ -5953,7 +5098,19 @@ object globalMod {
       sy: Double,
       sWidth: Double,
       sHeight: Double
-    ): Unit = js.native
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any], sHeight.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(
+      img: Image,
+      dx: Double,
+      dy: Double,
+      dWidth: Double,
+      dHeight: Double,
+      sx: Double,
+      sy: Double,
+      sWidth: Unit,
+      sHeight: Double
+    ): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], dx.asInstanceOf[js.Any], dy.asInstanceOf[js.Any], dWidth.asInstanceOf[js.Any], dHeight.asInstanceOf[js.Any], sx.asInstanceOf[js.Any], sy.asInstanceOf[js.Any], sWidth.asInstanceOf[js.Any], sHeight.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Draw an image to the p5.js canvas. This function
       *   can be used with different numbers of parameters.
@@ -5980,18 +5137,14 @@ object globalMod {
       *   @param [width] the width to draw the image
       *   @param [height] the height to draw the image
       */
-    @JSGlobal("image")
-    @js.native
-    def image(img: Image, x: Double, y: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Image, x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Image, x: Double, y: Double, width: Double): Unit = js.native
-    @JSGlobal("image")
-    @js.native
-    def image(img: Image, x: Double, y: Double, width: Double, height: Double): Unit = js.native
+    @scala.inline
+    def image(img: Image, x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Image, x: Double, y: Double, width: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Image, x: Double, y: Double, width: Double, height: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def image(img: Image, x: Double, y: Double, width: Unit, height: Double): Unit = (js.Dynamic.global.applyDynamic("image")(img.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Set image mode. Modifies the location from which
@@ -6014,9 +5167,8 @@ object globalMod {
       *   are used to set the image's width and height.
       *   @param mode either CORNER, CORNERS, or CENTER
       */
-    @JSGlobal("imageMode")
-    @js.native
-    def imageMode(mode: IMAGE_MODE): Unit = js.native
+    @scala.inline
+    def imageMode(mode: IMAGE_MODE): Unit = js.Dynamic.global.applyDynamic("imageMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The .input() function is called when any user
@@ -6031,12 +5183,10 @@ object globalMod {
       *   will no longer fire.
       *   @chainable
       */
-    @JSGlobal("input")
-    @js.native
-    def input(fxn: js.Function1[/* repeated */ js.Any, _]): ^ = js.native
-    @JSGlobal("input")
-    @js.native
-    def input(fxn: Boolean): ^ = js.native
+    @scala.inline
+    def input(fxn: js.Function1[/* repeated */ js.Any, js.Any]): ^ = js.Dynamic.global.applyDynamic("input")(fxn.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def input(fxn: Boolean): ^ = js.Dynamic.global.applyDynamic("input")(fxn.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Converts a boolean, string, or float to its
@@ -6048,24 +5198,18 @@ object globalMod {
       *   10)
       *   @return integer representation of value
       */
-    @JSGlobal("int")
-    @js.native
-    def int(n: String): Double = js.native
-    @JSGlobal("int")
-    @js.native
-    def int(n: String, radix: Double): Double = js.native
-    @JSGlobal("int")
-    @js.native
-    def int(n: Boolean): Double = js.native
-    @JSGlobal("int")
-    @js.native
-    def int(n: Boolean, radix: Double): Double = js.native
-    @JSGlobal("int")
-    @js.native
-    def int(n: Double): Double = js.native
-    @JSGlobal("int")
-    @js.native
-    def int(n: Double, radix: Double): Double = js.native
+    @scala.inline
+    def int(n: String): Double = js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def int(n: String, radix: Double): Double = (js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def int(n: Boolean): Double = js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def int(n: Boolean, radix: Double): Double = (js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def int(n: Double): Double = js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def int(n: Double, radix: Double): Double = (js.Dynamic.global.applyDynamic("int")(n.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       *   Converts a boolean, string, or float to its
       *   integer representation. When an array of values is
@@ -6074,9 +5218,8 @@ object globalMod {
       *   @param ns values to parse
       *   @return integer representation of values
       */
-    @JSGlobal("int")
-    @js.native
-    def int(ns: js.Array[_]): js.Array[Double] = js.native
+    @scala.inline
+    def int(ns: js.Array[js.Any]): js.Array[Double] = js.Dynamic.global.applyDynamic("int")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       *   Combines an array of Strings into one String, each
@@ -6089,9 +5232,8 @@ object globalMod {
       *   item
       *   @return joined String
       */
-    @JSGlobal("join")
-    @js.native
-    def join(list: js.Array[_], separator: String): String = js.native
+    @scala.inline
+    def join(list: js.Array[js.Any], separator: String): String = (js.Dynamic.global.applyDynamic("join")(list.asInstanceOf[js.Any], separator.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *   The system variable key always contains the value
@@ -6131,9 +5273,8 @@ object globalMod {
       *   @param code The key to check for.
       *   @return whether key is down or not
       */
-    @JSGlobal("keyIsDown")
-    @js.native
-    def keyIsDown(code: Double): Boolean = js.native
+    @scala.inline
+    def keyIsDown(code: Double): Boolean = js.Dynamic.global.applyDynamic("keyIsDown")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       *   The boolean system variable keyIsPressed is true
@@ -6177,9 +5318,8 @@ object globalMod {
       *   default behavior for this event, add "return
       *   false" to the end of the method.
       */
-    @JSGlobal("keyPressed")
-    @js.native
-    def keyPressed(): Unit = js.native
+    @scala.inline
+    def keyPressed(): Unit = js.Dynamic.global.applyDynamic("keyPressed")().asInstanceOf[Unit]
     
     /**
       *   The keyReleased() function is called once every
@@ -6189,9 +5329,8 @@ object globalMod {
       *   To prevent any default behavior for this event,
       *   add "return false" to the end of the method.
       */
-    @JSGlobal("keyReleased")
-    @js.native
-    def keyReleased(): Unit = js.native
+    @scala.inline
+    def keyReleased(): Unit = js.Dynamic.global.applyDynamic("keyReleased")().asInstanceOf[Unit]
     
     /**
       *   The keyTyped() function is called once every time
@@ -6213,9 +5352,8 @@ object globalMod {
       *   default behavior for this event, add "return
       *   false" to the end of the method.
       */
-    @JSGlobal("keyTyped")
-    @js.native
-    def keyTyped(): Unit = js.native
+    @scala.inline
+    def keyTyped(): Unit = js.Dynamic.global.applyDynamic("keyTyped")().asInstanceOf[Unit]
     
     @scala.inline
     def key_=(x: String): Unit = js.Dynamic.global.updateDynamic("key")(x.asInstanceOf[js.Any])
@@ -6237,9 +5375,8 @@ object globalMod {
       *   @param amt number
       *   @return lerped value
       */
-    @JSGlobal("lerp")
-    @js.native
-    def lerp(start: Double, stop: Double, amt: Double): Double = js.native
+    @scala.inline
+    def lerp(start: Double, stop: Double, amt: Double): Double = (js.Dynamic.global.applyDynamic("lerp")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], amt.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Blends two colors to find a third color somewhere
@@ -6259,9 +5396,8 @@ object globalMod {
       *   @param amt number between 0 and 1
       *   @return interpolated color
       */
-    @JSGlobal("lerpColor")
-    @js.native
-    def lerpColor(c1: Color, c2: Color, amt: Double): Color = js.native
+    @scala.inline
+    def lerpColor(c1: Color, c2: Color, amt: Double): Color = (js.Dynamic.global.applyDynamic("lerpColor")(c1.asInstanceOf[js.Any], c2.asInstanceOf[js.Any], amt.asInstanceOf[js.Any])).asInstanceOf[Color]
     
     /**
       *   Sets the falloff rates for point lights. It
@@ -6281,16 +5417,13 @@ object globalMod {
       *   falloff
       *   @chainable
       */
-    @JSGlobal("lightFalloff")
-    @js.native
-    def lightFalloff(constant: Double, linear: Double, quadratic: Double): ^ = js.native
+    @scala.inline
+    def lightFalloff(constant: Double, linear: Double, quadratic: Double): ^ = (js.Dynamic.global.applyDynamic("lightFalloff")(constant.asInstanceOf[js.Any], linear.asInstanceOf[js.Any], quadratic.asInstanceOf[js.Any])).asInstanceOf[^]
     
-    @JSGlobal("lightness")
-    @js.native
-    def lightness(color: String): Double = js.native
-    @JSGlobal("lightness")
-    @js.native
-    def lightness(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def lightness(color: String): Double = js.Dynamic.global.applyDynamic("lightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def lightness(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("lightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the HSL lightness value from a color or
       *   pixel array.
@@ -6298,9 +5431,8 @@ object globalMod {
       *   CSS color
       *   @return the lightness
       */
-    @JSGlobal("lightness")
-    @js.native
-    def lightness(color: Color): Double = js.native
+    @scala.inline
+    def lightness(color: Color): Double = js.Dynamic.global.applyDynamic("lightness")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Sets the default ambient and directional light.
@@ -6313,9 +5445,8 @@ object globalMod {
       *   loop.
       *   @chainable
       */
-    @JSGlobal("lights")
-    @js.native
-    def lights(): ^ = js.native
+    @scala.inline
+    def lights(): ^ = js.Dynamic.global.applyDynamic("lights")().asInstanceOf[^]
     
     /**
       *   Draws a line (a direct path between two points) to
@@ -6332,9 +5463,8 @@ object globalMod {
       *   @param y2 the y-coordinate of the second point
       *   @chainable
       */
-    @JSGlobal("line")
-    @js.native
-    def line(x1: Double, y1: Double, x2: Double, y2: Double): ^ = js.native
+    @scala.inline
+    def line(x1: Double, y1: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("line")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Draws a line (a direct path between two points) to
       *   the screen. The version of line() with four
@@ -6352,9 +5482,8 @@ object globalMod {
       *   @param z2 the z-coordinate of the second point
       *   @chainable
       */
-    @JSGlobal("line")
-    @js.native
-    def line(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): ^ = js.native
+    @scala.inline
+    def line(x1: Double, y1: Double, z1: Double, x2: Double, y2: Double, z2: Double): ^ = (js.Dynamic.global.applyDynamic("line")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   This method is suitable for fetching files up to
@@ -6367,26 +5496,18 @@ object globalMod {
       *   @return an object whose 'bytes' property will be
       *   the loaded buffer
       */
-    @JSGlobal("loadBytes")
-    @js.native
-    def loadBytes(file: String): js.Object = js.native
-    @JSGlobal("loadBytes")
-    @js.native
+    @scala.inline
+    def loadBytes(file: String): js.Object = js.Dynamic.global.applyDynamic("loadBytes")(file.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadBytes")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
     def loadBytes(
       file: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
-    @JSGlobal("loadBytes")
-    @js.native
-    def loadBytes(file: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-    @JSGlobal("loadBytes")
-    @js.native
-    def loadBytes(
-      file: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object = (js.Dynamic.global.applyDynamic("loadBytes")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def loadBytes(file: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadBytes")(file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       *   Loads an opentype font file (.otf, .ttf) from a
@@ -6404,22 +5525,18 @@ object globalMod {
       *   error occurs
       *   @return p5.Font object
       */
-    @JSGlobal("loadFont")
-    @js.native
-    def loadFont(path: String): Font = js.native
-    @JSGlobal("loadFont")
-    @js.native
-    def loadFont(path: String, callback: js.UndefOr[scala.Nothing], onError: js.Function1[/* repeated */ js.Any, _]): Font = js.native
-    @JSGlobal("loadFont")
-    @js.native
-    def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, _]): Font = js.native
-    @JSGlobal("loadFont")
-    @js.native
+    @scala.inline
+    def loadFont(path: String): Font = js.Dynamic.global.applyDynamic("loadFont")(path.asInstanceOf[js.Any]).asInstanceOf[Font]
+    @scala.inline
+    def loadFont(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Font = (js.Dynamic.global.applyDynamic("loadFont")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Font]
+    @scala.inline
     def loadFont(
       path: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      onError: js.Function1[/* repeated */ js.Any, _]
-    ): Font = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      onError: js.Function1[/* repeated */ js.Any, js.Any]
+    ): Font = (js.Dynamic.global.applyDynamic("loadFont")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Font]
+    @scala.inline
+    def loadFont(path: String, callback: Unit, onError: js.Function1[/* repeated */ js.Any, js.Any]): Font = (js.Dynamic.global.applyDynamic("loadFont")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[Font]
     
     /**
       *   Loads an image from a path and creates a p5.Image
@@ -6443,26 +5560,18 @@ object globalMod {
       *   if the image fails to load.
       *   @return the p5.Image object
       */
-    @JSGlobal("loadImage")
-    @js.native
-    def loadImage(path: String): Image = js.native
-    @JSGlobal("loadImage")
-    @js.native
+    @scala.inline
+    def loadImage(path: String): Image = js.Dynamic.global.applyDynamic("loadImage")(path.asInstanceOf[js.Any]).asInstanceOf[Image]
+    @scala.inline
+    def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, js.Any]): Image = (js.Dynamic.global.applyDynamic("loadImage")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Image]
+    @scala.inline
     def loadImage(
       path: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Image = js.native
-    @JSGlobal("loadImage")
-    @js.native
-    def loadImage(path: String, successCallback: js.Function1[/* p1 */ Image, _]): Image = js.native
-    @JSGlobal("loadImage")
-    @js.native
-    def loadImage(
-      path: String,
-      successCallback: js.Function1[/* p1 */ Image, _],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Image = js.native
+      successCallback: js.Function1[/* p1 */ Image, js.Any],
+      failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    ): Image = (js.Dynamic.global.applyDynamic("loadImage")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Image]
+    @scala.inline
+    def loadImage(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Image = (js.Dynamic.global.applyDynamic("loadImage")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Image]
     
     /**
       *   Loads a JSON file from a file or a URL, and
@@ -6490,9 +5599,8 @@ object globalMod {
       *   argument
       *   @return JSON data
       */
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String): js.Object | js.Array[_] = js.native
+    @scala.inline
+    def loadJSON(path: String): js.Object | js.Array[js.Any] = js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any]).asInstanceOf[js.Object | js.Array[js.Any]]
     /**
       *   Loads a JSON file from a file or a URL, and
       *   returns an Object. Note that even if the JSON file
@@ -6515,16 +5623,14 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+    @scala.inline
+    def loadJSON(path: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
     /**
       *   Loads a JSON file from a file or a URL, and
       *   returns an Object. Note that even if the JSON file
@@ -6548,141 +5654,122 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, datatype: String): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+    @scala.inline
+    def loadJSON(path: String, datatype: String): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
       datatype: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, datatype: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
       datatype: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, jsonpOptions: js.UndefOr[scala.Nothing], datatype: String): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: String,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.UndefOr[scala.Nothing],
-      datatype: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.Object,
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.Object,
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(
-      path: String,
-      jsonpOptions: js.Object,
-      datatype: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
-    def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(path: String, jsonpOptions: js.Object): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(path: String, jsonpOptions: js.Object, datatype: String): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
       jsonpOptions: js.Object,
       datatype: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
       jsonpOptions: js.Object,
       datatype: String,
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
-    @JSGlobal("loadJSON")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
     def loadJSON(
       path: String,
       jsonpOptions: js.Object,
       datatype: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object | js.Array[_] = js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: js.Object,
+      datatype: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: js.Object,
+      datatype: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: js.Object,
+      datatype: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(path: String, jsonpOptions: Unit, datatype: String): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: String,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: String,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: String,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
+    @scala.inline
+    def loadJSON(
+      path: String,
+      jsonpOptions: Unit,
+      datatype: Unit,
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object | js.Array[js.Any] = (js.Dynamic.global.applyDynamic("loadJSON")(path.asInstanceOf[js.Any], jsonpOptions.asInstanceOf[js.Any], datatype.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object | js.Array[js.Any]]
     
     /**
       *   Load a 3d model from an OBJ or STL file.  One of
@@ -6707,9 +5794,8 @@ object globalMod {
       *   if the model fails to load.
       *   @return the p5.Geometry object
       */
-    @JSGlobal("loadModel")
-    @js.native
-    def loadModel(path: String): Geometry = js.native
+    @scala.inline
+    def loadModel(path: String): Geometry = js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any]).asInstanceOf[Geometry]
     /**
       *   Load a 3d model from an OBJ or STL file.  One of
       *   the limitations of the OBJ and STL format is that
@@ -6735,45 +5821,34 @@ object globalMod {
       *   if the model fails to load.
       *   @return the p5.Geometry object
       */
-    @JSGlobal("loadModel")
-    @js.native
-    def loadModel(path: String, normalize: Boolean): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
+    @scala.inline
+    def loadModel(path: String, normalize: Boolean): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], normalize.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
+    def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], normalize.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
     def loadModel(
       path: String,
       normalize: Boolean,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
-    def loadModel(path: String, normalize: Boolean, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
+      successCallback: js.Function1[/* p1 */ Geometry, js.Any],
+      failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    ): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], normalize.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
     def loadModel(
       path: String,
       normalize: Boolean,
-      successCallback: js.Function1[/* p1 */ Geometry, _],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
+      successCallback: Unit,
+      failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    ): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], normalize.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
+    def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, js.Any]): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
     def loadModel(
       path: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
-    def loadModel(path: String, successCallback: js.Function1[/* p1 */ Geometry, _]): Geometry = js.native
-    @JSGlobal("loadModel")
-    @js.native
-    def loadModel(
-      path: String,
-      successCallback: js.Function1[/* p1 */ Geometry, _],
-      failureCallback: js.Function1[/* p1 */ Event, _]
-    ): Geometry = js.native
+      successCallback: js.Function1[/* p1 */ Geometry, js.Any],
+      failureCallback: js.Function1[/* p1 */ Event, js.Any]
+    ): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
+    @scala.inline
+    def loadModel(path: String, successCallback: Unit, failureCallback: js.Function1[/* p1 */ Event, js.Any]): Geometry = (js.Dynamic.global.applyDynamic("loadModel")(path.asInstanceOf[js.Any], successCallback.asInstanceOf[js.Any], failureCallback.asInstanceOf[js.Any])).asInstanceOf[Geometry]
     
     /**
       *   Loads the pixel data for the display window into
@@ -6782,9 +5857,8 @@ object globalMod {
       *   Note that only changes made with set() or direct
       *   manipulation of pixels[] will occur.
       */
-    @JSGlobal("loadPixels")
-    @js.native
-    def loadPixels(): Unit = js.native
+    @scala.inline
+    def loadPixels(): Unit = js.Dynamic.global.applyDynamic("loadPixels")().asInstanceOf[Unit]
     
     /**
       *   Loads a custom shader from the provided vertex and
@@ -6808,28 +5882,24 @@ object globalMod {
       *   @return a shader object created from the provided
       *   vertex and fragment shader files.
       */
-    @JSGlobal("loadShader")
-    @js.native
-    def loadShader(vertFilename: String, fragFilename: String): Shader = js.native
-    @JSGlobal("loadShader")
-    @js.native
+    @scala.inline
+    def loadShader(vertFilename: String, fragFilename: String): Shader = (js.Dynamic.global.applyDynamic("loadShader")(vertFilename.asInstanceOf[js.Any], fragFilename.asInstanceOf[js.Any])).asInstanceOf[Shader]
+    @scala.inline
+    def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Shader = (js.Dynamic.global.applyDynamic("loadShader")(vertFilename.asInstanceOf[js.Any], fragFilename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Shader]
+    @scala.inline
     def loadShader(
       vertFilename: String,
       fragFilename: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): Shader = js.native
-    @JSGlobal("loadShader")
-    @js.native
-    def loadShader(vertFilename: String, fragFilename: String, callback: js.Function1[/* repeated */ js.Any, _]): Shader = js.native
-    @JSGlobal("loadShader")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): Shader = (js.Dynamic.global.applyDynamic("loadShader")(vertFilename.asInstanceOf[js.Any], fragFilename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Shader]
+    @scala.inline
     def loadShader(
       vertFilename: String,
       fragFilename: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): Shader = js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): Shader = (js.Dynamic.global.applyDynamic("loadShader")(vertFilename.asInstanceOf[js.Any], fragFilename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[Shader]
     
     /**
       *   Reads the contents of a file and creates a String
@@ -6859,26 +5929,18 @@ object globalMod {
       *   argument
       *   @return Array of Strings
       */
-    @JSGlobal("loadStrings")
-    @js.native
-    def loadStrings(filename: String): js.Array[String] = js.native
-    @JSGlobal("loadStrings")
-    @js.native
+    @scala.inline
+    def loadStrings(filename: String): js.Array[String] = js.Dynamic.global.applyDynamic("loadStrings")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = (js.Dynamic.global.applyDynamic("loadStrings")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
     def loadStrings(
       filename: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Array[String] = js.native
-    @JSGlobal("loadStrings")
-    @js.native
-    def loadStrings(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Array[String] = js.native
-    @JSGlobal("loadStrings")
-    @js.native
-    def loadStrings(
-      filename: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Array[String] = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Array[String] = (js.Dynamic.global.applyDynamic("loadStrings")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def loadStrings(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Array[String] = (js.Dynamic.global.applyDynamic("loadStrings")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Reads the contents of a file or URL and creates a
@@ -6927,26 +5989,18 @@ object globalMod {
       *   there is an error, response is passed in as first
       *   argument
       */
-    @JSGlobal("loadTable")
-    @js.native
-    def loadTable(filename: String): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
+    @scala.inline
+    def loadTable(filename: String): js.Object = js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
     def loadTable(
       filename: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
-    def loadTable(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
-    def loadTable(
-      filename: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def loadTable(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     /**
       *   Reads the contents of a file or URL and creates a
       *   p5.Table object with its values. If a file is
@@ -6996,28 +6050,24 @@ object globalMod {
       *   argument
       *   @return Table object containing data
       */
-    @JSGlobal("loadTable")
-    @js.native
-    def loadTable(filename: String, options: String): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
+    @scala.inline
+    def loadTable(filename: String, options: String): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
     def loadTable(
       filename: String,
       options: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
-    def loadTable(filename: String, options: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-    @JSGlobal("loadTable")
-    @js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
     def loadTable(
       filename: String,
       options: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
+      callback: Unit,
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object = (js.Dynamic.global.applyDynamic("loadTable")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       *   Reads the contents of a file and creates an XML
@@ -7051,26 +6101,18 @@ object globalMod {
       *   argument
       *   @return XML object containing data
       */
-    @JSGlobal("loadXML")
-    @js.native
-    def loadXML(filename: String): js.Object = js.native
-    @JSGlobal("loadXML")
-    @js.native
+    @scala.inline
+    def loadXML(filename: String): js.Object = js.Dynamic.global.applyDynamic("loadXML")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+    @scala.inline
+    def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadXML")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
     def loadXML(
       filename: String,
-      callback: js.UndefOr[scala.Nothing],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
-    @JSGlobal("loadXML")
-    @js.native
-    def loadXML(filename: String, callback: js.Function1[/* repeated */ js.Any, _]): js.Object = js.native
-    @JSGlobal("loadXML")
-    @js.native
-    def loadXML(
-      filename: String,
-      callback: js.Function1[/* repeated */ js.Any, _],
-      errorCallback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Object = js.native
+      callback: js.Function1[/* repeated */ js.Any, js.Any],
+      errorCallback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Object = (js.Dynamic.global.applyDynamic("loadXML")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+    @scala.inline
+    def loadXML(filename: String, callback: Unit, errorCallback: js.Function1[/* repeated */ js.Any, js.Any]): js.Object = (js.Dynamic.global.applyDynamic("loadXML")(filename.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[js.Object]
     
     /**
       *   Calculates the natural logarithm (the base-e
@@ -7080,9 +6122,8 @@ object globalMod {
       *   @param n number greater than 0
       *   @return natural logarithm of n
       */
-    @JSGlobal("log")
-    @js.native
-    def log(n: Double): Double = js.native
+    @scala.inline
+    def log(n: Double): Double = js.Dynamic.global.applyDynamic("log")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   By default, p5.js loops through draw()
@@ -7092,9 +6133,8 @@ object globalMod {
       *   resumed with loop(). Avoid calling loop() from
       *   inside setup().
       */
-    @JSGlobal("loop")
-    @js.native
-    def loop(): Unit = js.native
+    @scala.inline
+    def loop(): Unit = js.Dynamic.global.applyDynamic("loop")().asInstanceOf[Unit]
     
     /**
       *   Calculates the magnitude (or length) of a vector.
@@ -7108,9 +6148,8 @@ object globalMod {
       *   @param b second value
       *   @return magnitude of vector from (0,0) to (a,b)
       */
-    @JSGlobal("mag")
-    @js.native
-    def mag(a: Double, b: Double): Double = js.native
+    @scala.inline
+    def mag(a: Double, b: Double): Double = (js.Dynamic.global.applyDynamic("mag")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Re-maps a number from one range to another.  In
@@ -7131,12 +6170,39 @@ object globalMod {
       *   newly mapped range
       *   @return remapped number
       */
-    @JSGlobal("map")
-    @js.native
-    def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double): Double = js.native
-    @JSGlobal("map")
-    @js.native
-    def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double, withinBounds: Boolean): Double = js.native
+    @scala.inline
+    def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double): Double = (js.Dynamic.global.applyDynamic("map")(value.asInstanceOf[js.Any], start1.asInstanceOf[js.Any], stop1.asInstanceOf[js.Any], start2.asInstanceOf[js.Any], stop2.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def map(value: Double, start1: Double, stop1: Double, start2: Double, stop2: Double, withinBounds: Boolean): Double = (js.Dynamic.global.applyDynamic("map")(value.asInstanceOf[js.Any], start1.asInstanceOf[js.Any], stop1.asInstanceOf[js.Any], start2.asInstanceOf[js.Any], stop2.asInstanceOf[js.Any], withinBounds.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    /**
+      *   This function is used to apply a regular
+      *   expression to a piece of text, and return matching
+      *   groups (elements found inside parentheses) as a
+      *   String array. If there are no matches, a null
+      *   value will be returned. If no groups are specified
+      *   in the regular expression, but the sequence
+      *   matches, an array of length 1 (with the matched
+      *   text as the first element of the array) will be
+      *   returned.  To use the function, first check to see
+      *   if the result is null. If the result is null, then
+      *   the sequence did not match at all. If the sequence
+      *   did match, an array is returned.
+      *
+      *
+      *   If there are groups (specified by sets of
+      *   parentheses) in the regular expression, then the
+      *   contents of each will be returned in the array.
+      *   Element [0] of a regular expression match returns
+      *   the entire matching string, and the match groups
+      *   start at element [1] (the first group is [1], the
+      *   second [2], and so on).
+      *   @param str the String to be searched
+      *   @param regexp the regexp to be used for matching
+      *   @return Array of Strings found
+      */
+    @scala.inline
+    def `match`(str: String, regexp: String): js.Array[String] = (js.Dynamic.global.applyDynamic("match")(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   This function is used to apply a regular
@@ -7166,9 +6232,8 @@ object globalMod {
       *   @param regexp the regexp to be used for matching
       *   @return 2d Array of Strings found
       */
-    @JSGlobal("matchAll")
-    @js.native
-    def matchAll(str: String, regexp: String): js.Array[String] = js.native
+    @scala.inline
+    def matchAll(str: String, regexp: String): js.Array[String] = (js.Dynamic.global.applyDynamic("matchAll")(str.asInstanceOf[js.Any], regexp.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Determines the largest value in a sequence of
@@ -7179,9 +6244,8 @@ object globalMod {
       *   @param n1 Number to compare
       *   @return maximum Number
       */
-    @JSGlobal("max")
-    @js.native
-    def max(n0: Double, n1: Double): Double = js.native
+    @scala.inline
+    def max(n0: Double, n1: Double): Double = (js.Dynamic.global.applyDynamic("max")(n0.asInstanceOf[js.Any], n1.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       *   Determines the largest value in a sequence of
       *   numbers, and then returns that value. max()
@@ -7189,9 +6253,8 @@ object globalMod {
       *   Array of any length.
       *   @param nums Numbers to compare
       */
-    @JSGlobal("max")
-    @js.native
-    def max(nums: js.Array[Double]): Double = js.native
+    @scala.inline
+    def max(nums: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("max")(nums.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Returns the frequency value of a MIDI note value.
@@ -7201,9 +6264,8 @@ object globalMod {
       *   @param midiNote The number of a MIDI note
       *   @return Frequency value of the given MIDI note
       */
-    @JSGlobal("midiToFreq")
-    @js.native
-    def midiToFreq(midiNote: Double): Double = js.native
+    @scala.inline
+    def midiToFreq(midiNote: Double): Double = js.Dynamic.global.applyDynamic("midiToFreq")(midiNote.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Returns the number of milliseconds (thousandths of
@@ -7213,9 +6275,8 @@ object globalMod {
       *   @return the number of milliseconds since starting
       *   the program
       */
-    @JSGlobal("millis")
-    @js.native
-    def millis(): Double = js.native
+    @scala.inline
+    def millis(): Double = js.Dynamic.global.applyDynamic("millis")().asInstanceOf[Double]
     
     /**
       *   Determines the smallest value in a sequence of
@@ -7226,9 +6287,8 @@ object globalMod {
       *   @param n1 Number to compare
       *   @return minimum Number
       */
-    @JSGlobal("min")
-    @js.native
-    def min(n0: Double, n1: Double): Double = js.native
+    @scala.inline
+    def min(n0: Double, n1: Double): Double = (js.Dynamic.global.applyDynamic("min")(n0.asInstanceOf[js.Any], n1.asInstanceOf[js.Any])).asInstanceOf[Double]
     /**
       *   Determines the smallest value in a sequence of
       *   numbers, and then returns that value. min()
@@ -7236,9 +6296,8 @@ object globalMod {
       *   Array of any length.
       *   @param nums Numbers to compare
       */
-    @JSGlobal("min")
-    @js.native
-    def min(nums: js.Array[Double]): Double = js.native
+    @scala.inline
+    def min(nums: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("min")(nums.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   p5.js communicates with the clock on your
@@ -7246,17 +6305,15 @@ object globalMod {
       *   current minute as a value from 0 - 59.
       *   @return the current minute
       */
-    @JSGlobal("minute")
-    @js.native
-    def minute(): Double = js.native
+    @scala.inline
+    def minute(): Double = js.Dynamic.global.applyDynamic("minute")().asInstanceOf[Double]
     
     /**
       *   Render a 3d model to the screen.
       *   @param model Loaded 3d model to be rendered
       */
-    @JSGlobal("model")
-    @js.native
-    def model(model: Geometry): Unit = js.native
+    @scala.inline
+    def model(model: Geometry): Unit = js.Dynamic.global.applyDynamic("model")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   p5.js communicates with the clock on your
@@ -7264,9 +6321,8 @@ object globalMod {
       *   month as a value from 1 - 12.
       *   @return the current month
       */
-    @JSGlobal("month")
-    @js.native
-    def month(): Double = js.native
+    @scala.inline
+    def month(): Double = js.Dynamic.global.applyDynamic("month")().asInstanceOf[Double]
     
     /**
       *   Processing automatically tracks if the mouse
@@ -7299,12 +6355,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("mouseClicked")
-    @js.native
-    def mouseClicked(): Unit = js.native
-    @JSGlobal("mouseClicked")
-    @js.native
-    def mouseClicked(event: js.Object): Unit = js.native
+    @scala.inline
+    def mouseClicked(): Unit = js.Dynamic.global.applyDynamic("mouseClicked")().asInstanceOf[Unit]
+    @scala.inline
+    def mouseClicked(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mouseClicked")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The mouseDragged() function is called once every
@@ -7319,12 +6373,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("mouseDragged")
-    @js.native
-    def mouseDragged(): Unit = js.native
-    @JSGlobal("mouseDragged")
-    @js.native
-    def mouseDragged(event: js.Object): Unit = js.native
+    @scala.inline
+    def mouseDragged(): Unit = js.Dynamic.global.applyDynamic("mouseDragged")().asInstanceOf[Unit]
+    @scala.inline
+    def mouseDragged(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mouseDragged")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The boolean system variable mouseIsPressed is true
@@ -7346,12 +6398,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("mouseMoved")
-    @js.native
-    def mouseMoved(): Unit = js.native
-    @JSGlobal("mouseMoved")
-    @js.native
-    def mouseMoved(event: js.Object): Unit = js.native
+    @scala.inline
+    def mouseMoved(): Unit = js.Dynamic.global.applyDynamic("mouseMoved")().asInstanceOf[Unit]
+    @scala.inline
+    def mouseMoved(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mouseMoved")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The mousePressed() function is called once after
@@ -7368,12 +6418,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("mousePressed")
-    @js.native
-    def mousePressed(): Unit = js.native
-    @JSGlobal("mousePressed")
-    @js.native
-    def mousePressed(event: js.Object): Unit = js.native
+    @scala.inline
+    def mousePressed(): Unit = js.Dynamic.global.applyDynamic("mousePressed")().asInstanceOf[Unit]
+    @scala.inline
+    def mousePressed(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mousePressed")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The mouseReleased() function is called every time
@@ -7387,12 +6435,10 @@ object globalMod {
       *   @param [event] optional MouseEvent callback
       *   argument.
       */
-    @JSGlobal("mouseReleased")
-    @js.native
-    def mouseReleased(): Unit = js.native
-    @JSGlobal("mouseReleased")
-    @js.native
-    def mouseReleased(event: js.Object): Unit = js.native
+    @scala.inline
+    def mouseReleased(): Unit = js.Dynamic.global.applyDynamic("mouseReleased")().asInstanceOf[Unit]
+    @scala.inline
+    def mouseReleased(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mouseReleased")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The function mouseWheel() is executed every time a
@@ -7417,12 +6463,10 @@ object globalMod {
       *   @param [event] optional WheelEvent callback
       *   argument.
       */
-    @JSGlobal("mouseWheel")
-    @js.native
-    def mouseWheel(): Unit = js.native
-    @JSGlobal("mouseWheel")
-    @js.native
-    def mouseWheel(event: js.Object): Unit = js.native
+    @scala.inline
+    def mouseWheel(): Unit = js.Dynamic.global.applyDynamic("mouseWheel")().asInstanceOf[Unit]
+    @scala.inline
+    def mouseWheel(event: js.Object): Unit = js.Dynamic.global.applyDynamic("mouseWheel")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The system variable mouseX always contains the
@@ -7454,33 +6498,24 @@ object globalMod {
     @scala.inline
     def mouseY_=(x: Double): Unit = js.Dynamic.global.updateDynamic("mouseY")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: js.UndefOr[scala.Nothing], right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: String, right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: String, right: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: Double, right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: String, left: Double, right: Double): String = js.native
+    @scala.inline
+    def nf(num: String): String = js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: String, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: String, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: Double, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: Double, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: Unit, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: String, left: Unit, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings. There are two versions: one for
@@ -7502,33 +6537,24 @@ object globalMod {
       *   the decimal point
       *   @return formatted String
       */
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: js.UndefOr[scala.Nothing], right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: String, right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: String, right: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: Double): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: Double, right: String): String = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(num: Double, left: Double, right: Double): String = js.native
+    @scala.inline
+    def nf(num: Double): String = js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: String, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: String, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: Double, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: Double, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: Unit, right: String): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nf(num: Double, left: Unit, right: Double): String = (js.Dynamic.global.applyDynamic("nf")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings. There are two versions: one for
@@ -7550,43 +6576,31 @@ object globalMod {
       *   the decimal point
       *   @return formatted Strings
       */
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_]): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: String): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: String): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: String, right: String): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: String, right: Double): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: Double): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: Double, right: String): js.Array[String] = js.native
-    @JSGlobal("nf")
-    @js.native
-    def nf(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+    @scala.inline
+    def nf(nums: js.Array[js.Any]): js.Array[String] = js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: String): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: String, right: String): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: String, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: Double, right: String): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: Unit, right: String): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nf(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nf")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: String): String = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: String, right: String): String = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: String, right: Double): String = js.native
+    @scala.inline
+    def nfc(num: String): String = js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nfc(num: String, right: String): String = (js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfc(num: String, right: Double): String = (js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings and placing appropriate commas to mark
@@ -7599,15 +6613,12 @@ object globalMod {
       *   the decimal point
       *   @return formatted String
       */
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: Double): String = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: Double, right: String): String = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(num: Double, right: Double): String = js.native
+    @scala.inline
+    def nfc(num: Double): String = js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nfc(num: Double, right: String): String = (js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfc(num: Double, right: Double): String = (js.Dynamic.global.applyDynamic("nfc")(num.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings and placing appropriate commas to mark
@@ -7620,15 +6631,12 @@ object globalMod {
       *   the decimal point
       *   @return formatted Strings
       */
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(nums: js.Array[_]): js.Array[String] = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(nums: js.Array[_], right: String): js.Array[String] = js.native
-    @JSGlobal("nfc")
-    @js.native
-    def nfc(nums: js.Array[_], right: Double): js.Array[String] = js.native
+    @scala.inline
+    def nfc(nums: js.Array[js.Any]): js.Array[String] = js.Dynamic.global.applyDynamic("nfc")(nums.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfc(nums: js.Array[js.Any], right: String): js.Array[String] = (js.Dynamic.global.applyDynamic("nfc")(nums.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfc(nums: js.Array[js.Any], right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfc")(nums.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Utility function for formatting numbers into
@@ -7645,18 +6653,14 @@ object globalMod {
       *   the decimal point
       *   @return formatted String
       */
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(num: Double): String = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(num: Double, left: Double): String = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(num: Double, left: Double, right: Double): String = js.native
+    @scala.inline
+    def nfp(num: Double): String = js.Dynamic.global.applyDynamic("nfp")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nfp(num: Double, left: Double): String = (js.Dynamic.global.applyDynamic("nfp")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfp(num: Double, left: Double, right: Double): String = (js.Dynamic.global.applyDynamic("nfp")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfp(num: Double, left: Unit, right: Double): String = (js.Dynamic.global.applyDynamic("nfp")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings. Similar to nf() but puts a "+" in front
@@ -7672,18 +6676,14 @@ object globalMod {
       *   the decimal point
       *   @return formatted Strings
       */
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(nums: js.Array[Double]): js.Array[String] = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(nums: js.Array[Double], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(nums: js.Array[Double], left: Double): js.Array[String] = js.native
-    @JSGlobal("nfp")
-    @js.native
-    def nfp(nums: js.Array[Double], left: Double, right: Double): js.Array[String] = js.native
+    @scala.inline
+    def nfp(nums: js.Array[Double]): js.Array[String] = js.Dynamic.global.applyDynamic("nfp")(nums.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfp(nums: js.Array[Double], left: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfp")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfp(nums: js.Array[Double], left: Double, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfp")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfp(nums: js.Array[Double], left: Unit, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfp")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Utility function for formatting numbers into
@@ -7715,18 +6715,14 @@ object globalMod {
       *   the decimal point
       *   @return formatted String
       */
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(num: Double): String = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(num: Double, left: js.UndefOr[scala.Nothing], right: Double): String = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(num: Double, left: Double): String = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(num: Double, left: Double, right: Double): String = js.native
+    @scala.inline
+    def nfs(num: Double): String = js.Dynamic.global.applyDynamic("nfs")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def nfs(num: Double, left: Double): String = (js.Dynamic.global.applyDynamic("nfs")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfs(num: Double, left: Double, right: Double): String = (js.Dynamic.global.applyDynamic("nfs")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def nfs(num: Double, left: Unit, right: Double): String = (js.Dynamic.global.applyDynamic("nfs")(num.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[String]
     /**
       *   Utility function for formatting numbers into
       *   strings. Similar to nf() but puts an additional
@@ -7757,40 +6753,33 @@ object globalMod {
       *   the decimal point
       *   @return formatted Strings
       */
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(nums: js.Array[_]): js.Array[String] = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(nums: js.Array[_], left: js.UndefOr[scala.Nothing], right: Double): js.Array[String] = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(nums: js.Array[_], left: Double): js.Array[String] = js.native
-    @JSGlobal("nfs")
-    @js.native
-    def nfs(nums: js.Array[_], left: Double, right: Double): js.Array[String] = js.native
+    @scala.inline
+    def nfs(nums: js.Array[js.Any]): js.Array[String] = js.Dynamic.global.applyDynamic("nfs")(nums.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfs(nums: js.Array[js.Any], left: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfs")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfs(nums: js.Array[js.Any], left: Double, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfs")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def nfs(nums: js.Array[js.Any], left: Unit, right: Double): js.Array[String] = (js.Dynamic.global.applyDynamic("nfs")(nums.asInstanceOf[js.Any], left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Removes the default canvas for a p5 sketch that
       *   doesn't require a canvas
       */
-    @JSGlobal("noCanvas")
-    @js.native
-    def noCanvas(): Unit = js.native
+    @scala.inline
+    def noCanvas(): Unit = js.Dynamic.global.applyDynamic("noCanvas")().asInstanceOf[Unit]
     
     /**
       *   Hides the cursor from view.
       */
-    @JSGlobal("noCursor")
-    @js.native
-    def noCursor(): Unit = js.native
+    @scala.inline
+    def noCursor(): Unit = js.Dynamic.global.applyDynamic("noCursor")().asInstanceOf[Unit]
     
     /**
       *   Turns off debugMode() in a 3D sketch.
       */
-    @JSGlobal("noDebugMode")
-    @js.native
-    def noDebugMode(): Unit = js.native
+    @scala.inline
+    def noDebugMode(): Unit = js.Dynamic.global.applyDynamic("noDebugMode")().asInstanceOf[Unit]
     
     /**
       *   Disables filling geometry. If both noStroke() and
@@ -7798,9 +6787,8 @@ object globalMod {
       *   screen.
       *   @chainable
       */
-    @JSGlobal("noFill")
-    @js.native
-    def noFill(): ^ = js.native
+    @scala.inline
+    def noFill(): ^ = js.Dynamic.global.applyDynamic("noFill")().asInstanceOf[^]
     
     /**
       *   Stops p5.js from continuously executing the code
@@ -7823,9 +6811,8 @@ object globalMod {
       *   noLoop() has been specified. Otherwise, the sketch
       *   would enter an odd state until loop() was called.
       */
-    @JSGlobal("noLoop")
-    @js.native
-    def noLoop(): Unit = js.native
+    @scala.inline
+    def noLoop(): Unit = js.Dynamic.global.applyDynamic("noLoop")().asInstanceOf[Unit]
     
     /**
       *   Draws all geometry with jagged (aliased) edges.
@@ -7837,9 +6824,8 @@ object globalMod {
       *   smooth (antialiased) edges on your geometry.
       *   @chainable
       */
-    @JSGlobal("noSmooth")
-    @js.native
-    def noSmooth(): ^ = js.native
+    @scala.inline
+    def noSmooth(): ^ = js.Dynamic.global.applyDynamic("noSmooth")().asInstanceOf[^]
     
     /**
       *   Disables drawing the stroke (outline). If both
@@ -7847,18 +6833,16 @@ object globalMod {
       *   be drawn to the screen.
       *   @chainable
       */
-    @JSGlobal("noStroke")
-    @js.native
-    def noStroke(): ^ = js.native
+    @scala.inline
+    def noStroke(): ^ = js.Dynamic.global.applyDynamic("noStroke")().asInstanceOf[^]
     
     /**
       *   Removes the current fill value for displaying
       *   images and reverts to displaying images with their
       *   original hues.
       */
-    @JSGlobal("noTint")
-    @js.native
-    def noTint(): Unit = js.native
+    @scala.inline
+    def noTint(): Unit = js.Dynamic.global.applyDynamic("noTint")().asInstanceOf[Unit]
     
     /**
       *   Returns the Perlin noise value at specified
@@ -7907,18 +6891,14 @@ object globalMod {
       *   @return Perlin noise value (between 0 and 1) at
       *   specified coordinates
       */
-    @JSGlobal("noise")
-    @js.native
-    def noise(x: Double): Double = js.native
-    @JSGlobal("noise")
-    @js.native
-    def noise(x: Double, y: js.UndefOr[scala.Nothing], z: Double): Double = js.native
-    @JSGlobal("noise")
-    @js.native
-    def noise(x: Double, y: Double): Double = js.native
-    @JSGlobal("noise")
-    @js.native
-    def noise(x: Double, y: Double, z: Double): Double = js.native
+    @scala.inline
+    def noise(x: Double): Double = js.Dynamic.global.applyDynamic("noise")(x.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def noise(x: Double, y: Double): Double = (js.Dynamic.global.applyDynamic("noise")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def noise(x: Double, y: Double, z: Double): Double = (js.Dynamic.global.applyDynamic("noise")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def noise(x: Double, y: Unit, z: Double): Double = (js.Dynamic.global.applyDynamic("noise")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Adjusts the character and level of detail produced
@@ -7948,9 +6928,8 @@ object globalMod {
       *   noise
       *   @param falloff falloff factor for each octave
       */
-    @JSGlobal("noiseDetail")
-    @js.native
-    def noiseDetail(lod: Double, falloff: Double): Unit = js.native
+    @scala.inline
+    def noiseDetail(lod: Double, falloff: Double): Unit = (js.Dynamic.global.applyDynamic("noiseDetail")(lod.asInstanceOf[js.Any], falloff.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Sets the seed value for noise(). By default,
@@ -7960,9 +6939,8 @@ object globalMod {
       *   each time the software is run.
       *   @param seed the seed value
       */
-    @JSGlobal("noiseSeed")
-    @js.native
-    def noiseSeed(seed: Double): Unit = js.native
+    @scala.inline
+    def noiseSeed(seed: Double): Unit = js.Dynamic.global.applyDynamic("noiseSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Normalizes a number from another range into a
@@ -7978,18 +6956,16 @@ object globalMod {
       *   range
       *   @return normalized number
       */
-    @JSGlobal("norm")
-    @js.native
-    def norm(value: Double, start: Double, stop: Double): Double = js.native
+    @scala.inline
+    def norm(value: Double, start: Double, stop: Double): Double = (js.Dynamic.global.applyDynamic("norm")(value.asInstanceOf[js.Any], start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Normal material for geometry. You can view all
       *   possible materials in this example.
       *   @chainable
       */
-    @JSGlobal("normalMaterial")
-    @js.native
-    def normalMaterial(): ^ = js.native
+    @scala.inline
+    def normalMaterial(): ^ = js.Dynamic.global.applyDynamic("normalMaterial")().asInstanceOf[^]
     
     /**
       *   Allows movement around a 3D sketch using a mouse
@@ -8012,18 +6988,14 @@ object globalMod {
       *   movement along Y axis
       *   @chainable
       */
-    @JSGlobal("orbitControl")
-    @js.native
-    def orbitControl(): ^ = js.native
-    @JSGlobal("orbitControl")
-    @js.native
-    def orbitControl(sensitivityX: js.UndefOr[scala.Nothing], sensitivityY: Double): ^ = js.native
-    @JSGlobal("orbitControl")
-    @js.native
-    def orbitControl(sensitivityX: Double): ^ = js.native
-    @JSGlobal("orbitControl")
-    @js.native
-    def orbitControl(sensitivityX: Double, sensitivityY: Double): ^ = js.native
+    @scala.inline
+    def orbitControl(): ^ = js.Dynamic.global.applyDynamic("orbitControl")().asInstanceOf[^]
+    @scala.inline
+    def orbitControl(sensitivityX: Double): ^ = js.Dynamic.global.applyDynamic("orbitControl")(sensitivityX.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def orbitControl(sensitivityX: Double, sensitivityY: Double): ^ = (js.Dynamic.global.applyDynamic("orbitControl")(sensitivityX.asInstanceOf[js.Any], sensitivityY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def orbitControl(sensitivityX: Unit, sensitivityY: Double): ^ = (js.Dynamic.global.applyDynamic("orbitControl")(sensitivityX.asInstanceOf[js.Any], sensitivityY.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets an orthographic projection for the camera in
@@ -8047,8 +7019,7 @@ object globalMod {
       *   @param [far] camera frustum far plane
       *   @chainable
       */
-    @JSGlobal("ortho")
-    @js.native
+    @scala.inline
     def ortho(
       left: js.UndefOr[Double],
       right: js.UndefOr[Double],
@@ -8056,7 +7027,7 @@ object globalMod {
       top: js.UndefOr[Double],
       near: js.UndefOr[Double],
       far: js.UndefOr[Double]
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("ortho")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any], bottom.asInstanceOf[js.Any], top.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   The system variable pAccelerationX always contains
@@ -8159,59 +7130,38 @@ object globalMod {
       *   @param [far] frustum far plane length
       *   @chainable
       */
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(
-      fovy: js.UndefOr[scala.Nothing],
-      aspect: js.UndefOr[scala.Nothing],
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: js.UndefOr[scala.Nothing], aspect: Double, near: Double, far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: js.UndefOr[scala.Nothing], near: Double, far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: Double, near: js.UndefOr[scala.Nothing], far: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: Double, near: Double): ^ = js.native
-    @JSGlobal("perspective")
-    @js.native
-    def perspective(fovy: Double, aspect: Double, near: Double, far: Double): ^ = js.native
+    @scala.inline
+    def perspective(): ^ = js.Dynamic.global.applyDynamic("perspective")().asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double): ^ = js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Double, near: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Double, near: Double, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Double, near: Unit, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Unit, near: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Unit, near: Double, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Double, aspect: Unit, near: Unit, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Double, near: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Double, near: Double, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Double, near: Unit, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Unit, near: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Unit, near: Double, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def perspective(fovy: Unit, aspect: Unit, near: Unit, far: Double): ^ = (js.Dynamic.global.applyDynamic("perspective")(fovy.asInstanceOf[js.Any], aspect.asInstanceOf[js.Any], near.asInstanceOf[js.Any], far.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets the pixel scaling for high pixel density
@@ -8221,9 +7171,8 @@ object globalMod {
       *   returns the current pixel density of the sketch.
       *   @return current pixel density of the sketch
       */
-    @JSGlobal("pixelDensity")
-    @js.native
-    def pixelDensity(): Double = js.native
+    @scala.inline
+    def pixelDensity(): Double = js.Dynamic.global.applyDynamic("pixelDensity")().asInstanceOf[Double]
     /**
       *   Sets the pixel scaling for high pixel density
       *   displays. By default pixel density is set to match
@@ -8234,9 +7183,8 @@ object globalMod {
       *   scale
       *   @chainable
       */
-    @JSGlobal("pixelDensity")
-    @js.native
-    def pixelDensity(`val`: Double): ^ = js.native
+    @scala.inline
+    def pixelDensity(`val`: Double): ^ = js.Dynamic.global.applyDynamic("pixelDensity")(`val`.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Uint8ClampedArray containing the values for all
@@ -8298,74 +7246,38 @@ object globalMod {
       *   subdivisions in y-dimension
       *   @chainable
       */
-    @JSGlobal("plane")
-    @js.native
-    def plane(): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: js.UndefOr[scala.Nothing], height: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: js.UndefOr[scala.Nothing], height: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: Double, detailX: Double): ^ = js.native
-    @JSGlobal("plane")
-    @js.native
-    def plane(width: Double, height: Double, detailX: Double, detailY: Double): ^ = js.native
+    @scala.inline
+    def plane(): ^ = js.Dynamic.global.applyDynamic("plane")().asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double): ^ = js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Double, height: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def plane(width: Unit, height: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("plane")(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   The system variable pmouseX always contains the
@@ -8410,19 +7322,15 @@ object globalMod {
       *   @param [z] the z-coordinate (for WebGL mode)
       *   @chainable
       */
-    @JSGlobal("point")
-    @js.native
-    def point(x: Double, y: Double): ^ = js.native
-    @JSGlobal("point")
-    @js.native
-    def point(x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def point(x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def point(x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: String, position: Vector): ^ = js.native
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: String, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def pointLight(color: String, position: Vector): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def pointLight(color: String, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a point light with a color and a light
       *   position
@@ -8431,9 +7339,8 @@ object globalMod {
       *   @param position the position of the light
       *   @chainable
       */
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: js.Array[Double], position: Vector): ^ = js.native
+    @scala.inline
+    def pointLight(color: js.Array[Double], position: Vector): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a point light with a color and a light
       *   position
@@ -8444,15 +7351,12 @@ object globalMod {
       *   @param z z axis position
       *   @chainable
       */
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): ^ = js.native
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: Color, position: Vector): ^ = js.native
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(color: Color, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def pointLight(color: js.Array[Double], x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def pointLight(color: Color, position: Vector): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def pointLight(color: Color, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("pointLight")(color.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a point light with a color and a light
       *   position
@@ -8463,9 +7367,8 @@ object globalMod {
       *   @param position the position of the light
       *   @chainable
       */
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): ^ = js.native
+    @scala.inline
+    def pointLight(v1: Double, v2: Double, v3: Double, position: Vector): ^ = (js.Dynamic.global.applyDynamic("pointLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Creates a point light with a color and a light
       *   position
@@ -8478,9 +7381,8 @@ object globalMod {
       *   @param z z axis position
       *   @chainable
       */
-    @JSGlobal("pointLight")
-    @js.native
-    def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def pointLight(v1: Double, v2: Double, v3: Double, x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("pointLight")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   The push() function saves the current drawing
@@ -8510,9 +7412,8 @@ object globalMod {
       *   specularMaterial(), shininess(), normalMaterial()
       *   and shader().
       */
-    @JSGlobal("pop")
-    @js.native
-    def pop(): Unit = js.native
+    @scala.inline
+    def pop(): Unit = js.Dynamic.global.applyDynamic("pop")().asInstanceOf[Unit]
     
     /**
       *   Facilitates exponential expressions. The pow()
@@ -8525,9 +7426,8 @@ object globalMod {
       *   @param e power by which to raise the base
       *   @return n^e
       */
-    @JSGlobal("pow")
-    @js.native
-    def pow(n: Double, e: Double): Double = js.native
+    @scala.inline
+    def pow(n: Double, e: Double): Double = (js.Dynamic.global.applyDynamic("pow")(n.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   The print() function writes to the console area of
@@ -8544,9 +7444,8 @@ object globalMod {
       *   @param contents any combination of Number, String,
       *   Object, Boolean, Array to print
       */
-    @JSGlobal("print")
-    @js.native
-    def print(contents: js.Any): Unit = js.native
+    @scala.inline
+    def print(contents: js.Any): Unit = js.Dynamic.global.applyDynamic("print")(contents.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The push() function saves the current drawing
@@ -8576,9 +7475,8 @@ object globalMod {
       *   specularMaterial(), shininess(), normalMaterial()
       *   and shader().
       */
-    @JSGlobal("push")
-    @js.native
-    def push(): Unit = js.native
+    @scala.inline
+    def push(): Unit = js.Dynamic.global.applyDynamic("push")().asInstanceOf[Unit]
     
     /**
       *   The system variable pwinMouseX always contains the
@@ -8628,9 +7526,8 @@ object globalMod {
       *   @param y4 the y-coordinate of the fourth point
       *   @chainable
       */
-    @JSGlobal("quad")
-    @js.native
-    def quad(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = js.native
+    @scala.inline
+    def quad(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double, x4: Double, y4: Double): ^ = (js.Dynamic.global.applyDynamic("quad")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Draw a quad. A quad is a quadrilateral, a four
       *   sided polygon. It is similar to a rectangle, but
@@ -8655,8 +7552,7 @@ object globalMod {
       *   @param z4 the z-coordinate of the fourth point
       *   @chainable
       */
-    @JSGlobal("quad")
-    @js.native
+    @scala.inline
     def quad(
       x1: Double,
       y1: Double,
@@ -8670,7 +7566,7 @@ object globalMod {
       x4: Double,
       y4: Double,
       z4: Double
-    ): ^ = js.native
+    ): ^ = (js.Dynamic.global.applyDynamic("quad")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], z1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], z2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], z3.asInstanceOf[js.Any], x4.asInstanceOf[js.Any], y4.asInstanceOf[js.Any], z4.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Specifies vertex coordinates for quadratic Bezier
@@ -8697,9 +7593,8 @@ object globalMod {
       *   WebGL mode)
       *   @chainable
       */
-    @JSGlobal("quadraticVertex")
-    @js.native
-    def quadraticVertex(cx: Double, cy: Double, cz: Double, x3: Double, y3: Double, z3: Double): ^ = js.native
+    @scala.inline
+    def quadraticVertex(cx: Double, cy: Double, cz: Double, x3: Double, y3: Double, z3: Double): ^ = (js.Dynamic.global.applyDynamic("quadraticVertex")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], cz.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any], z3.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Specifies vertex coordinates for quadratic Bezier
       *   curves. Each call to quadraticVertex() defines the
@@ -8721,9 +7616,8 @@ object globalMod {
       *   @param y3 y-coordinate for the anchor point
       *   @chainable
       */
-    @JSGlobal("quadraticVertex")
-    @js.native
-    def quadraticVertex(cx: Double, cy: Double, x3: Double, y3: Double): ^ = js.native
+    @scala.inline
+    def quadraticVertex(cx: Double, cy: Double, x3: Double, y3: Double): ^ = (js.Dynamic.global.applyDynamic("quadraticVertex")(cx.asInstanceOf[js.Any], cy.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Converts a degree measurement to its corresponding
@@ -8736,9 +7630,8 @@ object globalMod {
       *   radians
       *   @return the converted angle
       */
-    @JSGlobal("radians")
-    @js.native
-    def radians(degrees: Double): Double = js.native
+    @scala.inline
+    def radians(degrees: Double): Double = js.Dynamic.global.applyDynamic("radians")(degrees.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Return a random floating-point number. Takes
@@ -8761,9 +7654,8 @@ object globalMod {
       *   @param [max] the upper bound (exclusive)
       *   @return the random number
       */
-    @JSGlobal("random")
-    @js.native
-    def random(): Double = js.native
+    @scala.inline
+    def random(): Double = js.Dynamic.global.applyDynamic("random")().asInstanceOf[Double]
     /**
       *   Return a random floating-point number. Takes
       *   either 0, 1 or 2 arguments.
@@ -8784,18 +7676,14 @@ object globalMod {
       *   @param choices the array to choose from
       *   @return the random element from the array
       */
-    @JSGlobal("random")
-    @js.native
-    def random(choices: js.Array[_]): js.Any = js.native
-    @JSGlobal("random")
-    @js.native
-    def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
-    @JSGlobal("random")
-    @js.native
-    def random(min: Double): Double = js.native
-    @JSGlobal("random")
-    @js.native
-    def random(min: Double, max: Double): Double = js.native
+    @scala.inline
+    def random(choices: js.Array[js.Any]): js.Any = js.Dynamic.global.applyDynamic("random")(choices.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def random(min: Double): Double = js.Dynamic.global.applyDynamic("random")(min.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def random(min: Double, max: Double): Double = (js.Dynamic.global.applyDynamic("random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def random(min: Unit, max: Double): Double = (js.Dynamic.global.applyDynamic("random")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Returns a random number fitting a Gaussian, or
@@ -8819,9 +7707,8 @@ object globalMod {
       *   @param sd the standard deviation
       *   @return the random number
       */
-    @JSGlobal("randomGaussian")
-    @js.native
-    def randomGaussian(mean: Double, sd: Double): Double = js.native
+    @scala.inline
+    def randomGaussian(mean: Double, sd: Double): Double = (js.Dynamic.global.applyDynamic("randomGaussian")(mean.asInstanceOf[js.Any], sd.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *   Sets the seed value for random(). By default,
@@ -8831,9 +7718,8 @@ object globalMod {
       *   each time the software is run.
       *   @param seed the seed value
       */
-    @JSGlobal("randomSeed")
-    @js.native
-    def randomSeed(seed: Double): Unit = js.native
+    @scala.inline
+    def randomSeed(seed: Double): Unit = js.Dynamic.global.applyDynamic("randomSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Draws a rectangle to the screen. A rectangle is a
@@ -8884,125 +7770,38 @@ object globalMod {
       *   y-direction (for WebGL mode)
       *   @chainable
       */
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: Double,
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: Double,
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: Double,
-      br: Double,
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: Double,
-      tr: js.UndefOr[scala.Nothing],
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: Double,
-      tr: js.UndefOr[scala.Nothing],
-      br: Double,
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(
-      x: Double,
-      y: Double,
-      w: Double,
-      h: Double,
-      tl: Double,
-      tr: Double,
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): ^ = js.native
-    @JSGlobal("rect")
-    @js.native
-    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Double, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Double, tr: Unit, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Double, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rect(x: Double, y: Double, w: Double, h: Double, tl: Unit, tr: Unit, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("rect")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Modifies the location from which rectangles are
@@ -9038,16 +7837,13 @@ object globalMod {
       *   RADIUS
       *   @chainable
       */
-    @JSGlobal("rectMode")
-    @js.native
-    def rectMode(mode: RECT_MODE): ^ = js.native
+    @scala.inline
+    def rectMode(mode: RECT_MODE): ^ = js.Dynamic.global.applyDynamic("rectMode")(mode.asInstanceOf[js.Any]).asInstanceOf[^]
     
-    @JSGlobal("red")
-    @js.native
-    def red(color: String): Double = js.native
-    @JSGlobal("red")
-    @js.native
-    def red(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def red(color: String): Double = js.Dynamic.global.applyDynamic("red")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def red(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("red")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the red value from a color or pixel
       *   array.
@@ -9055,9 +7851,8 @@ object globalMod {
       *   CSS color
       *   @return the red value
       */
-    @JSGlobal("red")
-    @js.native
-    def red(color: Color): Double = js.native
+    @scala.inline
+    def red(color: Color): Double = js.Dynamic.global.applyDynamic("red")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Executes the code within draw() one time. This
@@ -9082,12 +7877,10 @@ object globalMod {
       *   @param [n] Redraw for n-times. The default value
       *   is 1.
       */
-    @JSGlobal("redraw")
-    @js.native
-    def redraw(): Unit = js.native
-    @JSGlobal("redraw")
-    @js.native
-    def redraw(n: Double): Unit = js.native
+    @scala.inline
+    def redraw(): Unit = js.Dynamic.global.applyDynamic("redraw")().asInstanceOf[Unit]
+    @scala.inline
+    def redraw(n: Double): Unit = js.Dynamic.global.applyDynamic("redraw")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Removes all elements created by p5, except any
@@ -9095,25 +7888,22 @@ object globalMod {
       *   or createGraphics. Event handlers are removed, and
       *   element is removed from the DOM.
       */
-    @JSGlobal("removeElements")
-    @js.native
-    def removeElements(): Unit = js.native
+    @scala.inline
+    def removeElements(): Unit = js.Dynamic.global.applyDynamic("removeElements")().asInstanceOf[Unit]
     
     /**
       *   Removes an item that was stored with storeItem()
       */
-    @JSGlobal("removeItem")
-    @js.native
-    def removeItem(key: String): Unit = js.native
+    @scala.inline
+    def removeItem(key: String): Unit = js.Dynamic.global.applyDynamic("removeItem")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Replaces the current matrix with the identity
       *   matrix.
       *   @chainable
       */
-    @JSGlobal("resetMatrix")
-    @js.native
-    def resetMatrix(): ^ = js.native
+    @scala.inline
+    def resetMatrix(): ^ = js.Dynamic.global.applyDynamic("resetMatrix")().asInstanceOf[^]
     
     /**
       *   This function restores the default shaders in
@@ -9122,9 +7912,8 @@ object globalMod {
       *   shaders. Should be run after shader().
       *   @chainable
       */
-    @JSGlobal("resetShader")
-    @js.native
-    def resetShader(): ^ = js.native
+    @scala.inline
+    def resetShader(): ^ = js.Dynamic.global.applyDynamic("resetShader")().asInstanceOf[^]
     
     /**
       *   Resizes the canvas to given width and height. The
@@ -9136,12 +7925,10 @@ object globalMod {
       *   @param [noRedraw] don't redraw the canvas
       *   immediately
       */
-    @JSGlobal("resizeCanvas")
-    @js.native
-    def resizeCanvas(w: Double, h: Double): Unit = js.native
-    @JSGlobal("resizeCanvas")
-    @js.native
-    def resizeCanvas(w: Double, h: Double, noRedraw: Boolean): Unit = js.native
+    @scala.inline
+    def resizeCanvas(w: Double, h: Double): Unit = (js.Dynamic.global.applyDynamic("resizeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def resizeCanvas(w: Double, h: Double, noRedraw: Boolean): Unit = (js.Dynamic.global.applyDynamic("resizeCanvas")(w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], noRedraw.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Reverses the order of an array, maps to
@@ -9149,9 +7936,8 @@ object globalMod {
       *   @param list Array to reverse
       *   @return the reversed list
       */
-    @JSGlobal("reverse")
-    @js.native
-    def reverse(list: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def reverse(list: js.Array[js.Any]): js.Array[js.Any] = js.Dynamic.global.applyDynamic("reverse")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Rotates a shape the amount specified by the angle
@@ -9177,15 +7963,12 @@ object globalMod {
       *   @param [axis] (in 3d) the axis to rotate around
       *   @chainable
       */
-    @JSGlobal("rotate")
-    @js.native
-    def rotate(angle: Double): ^ = js.native
-    @JSGlobal("rotate")
-    @js.native
-    def rotate(angle: Double, axis: js.Array[Double]): ^ = js.native
-    @JSGlobal("rotate")
-    @js.native
-    def rotate(angle: Double, axis: Vector): ^ = js.native
+    @scala.inline
+    def rotate(angle: Double): ^ = js.Dynamic.global.applyDynamic("rotate")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def rotate(angle: Double, axis: js.Array[Double]): ^ = (js.Dynamic.global.applyDynamic("rotate")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def rotate(angle: Double, axis: Vector): ^ = (js.Dynamic.global.applyDynamic("rotate")(angle.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Rotates around X axis.
@@ -9193,9 +7976,8 @@ object globalMod {
       *   radians or degrees, depending on current angleMode
       *   @chainable
       */
-    @JSGlobal("rotateX")
-    @js.native
-    def rotateX(angle: Double): ^ = js.native
+    @scala.inline
+    def rotateX(angle: Double): ^ = js.Dynamic.global.applyDynamic("rotateX")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Rotates around Y axis.
@@ -9203,9 +7985,8 @@ object globalMod {
       *   radians or degrees, depending on current angleMode
       *   @chainable
       */
-    @JSGlobal("rotateY")
-    @js.native
-    def rotateY(angle: Double): ^ = js.native
+    @scala.inline
+    def rotateY(angle: Double): ^ = js.Dynamic.global.applyDynamic("rotateY")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Rotates around Z axis. Webgl mode only.
@@ -9213,9 +7994,8 @@ object globalMod {
       *   radians or degrees, depending on current angleMode
       *   @chainable
       */
-    @JSGlobal("rotateZ")
-    @js.native
-    def rotateZ(angle: Double): ^ = js.native
+    @scala.inline
+    def rotateZ(angle: Double): ^ = js.Dynamic.global.applyDynamic("rotateZ")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   The system variable rotationX always contains the
@@ -9271,9 +8051,8 @@ object globalMod {
       *   @param n number to round
       *   @return rounded number
       */
-    @JSGlobal("round")
-    @js.native
-    def round(n: Double): Double = js.native
+    @scala.inline
+    def round(n: Double): Double = js.Dynamic.global.applyDynamic("round")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Returns a number representing the sample rate, in
@@ -9284,16 +8063,13 @@ object globalMod {
       *   44100, or twice the range of human hearing.
       *   @return samplerate samples per second
       */
-    @JSGlobal("sampleRate")
-    @js.native
-    def sampleRate(): Double = js.native
+    @scala.inline
+    def sampleRate(): Double = js.Dynamic.global.applyDynamic("sampleRate")().asInstanceOf[Double]
     
-    @JSGlobal("saturation")
-    @js.native
-    def saturation(color: String): Double = js.native
-    @JSGlobal("saturation")
-    @js.native
-    def saturation(color: js.Array[Double]): Double = js.native
+    @scala.inline
+    def saturation(color: String): Double = js.Dynamic.global.applyDynamic("saturation")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def saturation(color: js.Array[Double]): Double = js.Dynamic.global.applyDynamic("saturation")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Extracts the saturation value from a color or
       *   pixel array. Saturation is scaled differently in
@@ -9306,9 +8082,8 @@ object globalMod {
       *   CSS color
       *   @return the saturation value
       */
-    @JSGlobal("saturation")
-    @js.native
-    def saturation(color: Color): Double = js.native
+    @scala.inline
+    def saturation(color: Color): Double = js.Dynamic.global.applyDynamic("saturation")(color.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Save an image, text, json, csv, wav, or html.
@@ -9366,60 +8141,42 @@ object globalMod {
       *   indicates that the output will be optimized for
       *   filesize, rather than readability.
       */
-    @JSGlobal("save")
-    @js.native
-    def save(): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.UndefOr[scala.Nothing], filename: String, options: Boolean): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String, filename: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String, filename: String, options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: String, filename: String, options: Boolean): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object, filename: js.UndefOr[scala.Nothing], options: Boolean): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object, filename: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object, filename: String, options: String): Unit = js.native
-    @JSGlobal("save")
-    @js.native
-    def save(objectOrFilename: js.Object, filename: String, options: Boolean): Unit = js.native
+    @scala.inline
+    def save(): Unit = js.Dynamic.global.applyDynamic("save")().asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String): Unit = js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String, filename: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String, filename: String, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String, filename: String, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String, filename: Unit, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: String, filename: Unit, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object): Unit = js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object, filename: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object, filename: String, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object, filename: String, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object, filename: Unit, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: js.Object, filename: Unit, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: Unit, filename: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: Unit, filename: String, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: Unit, filename: String, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: Unit, filename: Unit, options: String): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def save(objectOrFilename: Unit, filename: Unit, options: Boolean): Unit = (js.Dynamic.global.applyDynamic("save")(objectOrFilename.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Save the current canvas as an image. The browser
@@ -9427,18 +8184,14 @@ object globalMod {
       *   the user with a dialogue window.
       *   @param [extension] 'jpg' or 'png'
       */
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(filename: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(filename: String, extension: String): Unit = js.native
+    @scala.inline
+    def saveCanvas(): Unit = js.Dynamic.global.applyDynamic("saveCanvas")().asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(filename: String): Unit = js.Dynamic.global.applyDynamic("saveCanvas")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(filename: String, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(filename: Unit, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Save the current canvas as an image. The browser
       *   will either save the file immediately, or prompt
@@ -9447,30 +8200,22 @@ object globalMod {
       *   specific html5 canvas (optional)
       *   @param [extension] 'jpg' or 'png'
       */
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: Element): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: Element, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: Element, filename: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: Element, filename: String, extension: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: HTMLCanvasElement): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: js.UndefOr[scala.Nothing], extension: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String): Unit = js.native
-    @JSGlobal("saveCanvas")
-    @js.native
-    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, extension: String): Unit = js.native
+    @scala.inline
+    def saveCanvas(selectedCanvas: Element): Unit = js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: Element, filename: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: Element, filename: String, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: Element, filename: Unit, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: HTMLCanvasElement): Unit = js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: String, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveCanvas(selectedCanvas: HTMLCanvasElement, filename: Unit, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveCanvas")(selectedCanvas.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Capture a sequence of frames that can be used to
@@ -9499,18 +8244,16 @@ object globalMod {
       *   Each object has three properties: imageData - an
       *   image/octet-stream, filename and extension.
       */
-    @JSGlobal("saveFrames")
-    @js.native
-    def saveFrames(filename: String, extension: String, duration: Double, framerate: Double): Unit = js.native
-    @JSGlobal("saveFrames")
-    @js.native
+    @scala.inline
+    def saveFrames(filename: String, `extension`: String, duration: Double, framerate: Double): Unit = (js.Dynamic.global.applyDynamic("saveFrames")(filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], framerate.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def saveFrames(
       filename: String,
-      extension: String,
+      `extension`: String,
       duration: Double,
       framerate: Double,
-      callback: js.Function1[/* p1 */ js.Array[_], _]
-    ): Unit = js.native
+      callback: js.Function1[/* p1 */ js.Array[js.Any], js.Any]
+    ): Unit = (js.Dynamic.global.applyDynamic("saveFrames")(filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], framerate.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Writes the contents of an Array or a JSON object
@@ -9521,18 +8264,14 @@ object globalMod {
       *   spaces from the output file to optimize filesize
       *   (but not readability).
       */
-    @JSGlobal("saveJSON")
-    @js.native
-    def saveJSON(json: js.Array[_], filename: String): Unit = js.native
-    @JSGlobal("saveJSON")
-    @js.native
-    def saveJSON(json: js.Array[_], filename: String, optimize: Boolean): Unit = js.native
-    @JSGlobal("saveJSON")
-    @js.native
-    def saveJSON(json: js.Object, filename: String): Unit = js.native
-    @JSGlobal("saveJSON")
-    @js.native
-    def saveJSON(json: js.Object, filename: String, optimize: Boolean): Unit = js.native
+    @scala.inline
+    def saveJSON(json: js.Array[js.Any], filename: String): Unit = (js.Dynamic.global.applyDynamic("saveJSON")(json.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveJSON(json: js.Array[js.Any], filename: String, optimize: Boolean): Unit = (js.Dynamic.global.applyDynamic("saveJSON")(json.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], optimize.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveJSON(json: js.Object, filename: String): Unit = (js.Dynamic.global.applyDynamic("saveJSON")(json.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveJSON(json: js.Object, filename: String, optimize: Boolean): Unit = (js.Dynamic.global.applyDynamic("saveJSON")(json.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], optimize.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Save a p5.SoundFile as a .wav file. The browser
@@ -9543,9 +8282,8 @@ object globalMod {
       *   save
       *   @param fileName name of the resulting .wav file.
       */
-    @JSGlobal("saveSound")
-    @js.native
-    def saveSound(soundFile: SoundFile, fileName: String): Unit = js.native
+    @scala.inline
+    def saveSound(soundFile: SoundFile, fileName: String): Unit = (js.Dynamic.global.applyDynamic("saveSound")(soundFile.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Writes an array of Strings to a text file, one
@@ -9556,12 +8294,10 @@ object globalMod {
       *   @param filename filename for output
       *   @param [extension] the filename's extension
       */
-    @JSGlobal("saveStrings")
-    @js.native
-    def saveStrings(list: js.Array[String], filename: String): Unit = js.native
-    @JSGlobal("saveStrings")
-    @js.native
-    def saveStrings(list: js.Array[String], filename: String, extension: String): Unit = js.native
+    @scala.inline
+    def saveStrings(list: js.Array[String], filename: String): Unit = (js.Dynamic.global.applyDynamic("saveStrings")(list.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveStrings(list: js.Array[String], filename: String, `extension`: String): Unit = (js.Dynamic.global.applyDynamic("saveStrings")(list.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Writes the contents of a Table object to a file.
@@ -9576,25 +8312,19 @@ object globalMod {
       *   @param [options] can be one of "tsv", "csv", or
       *   "html"
       */
-    @JSGlobal("saveTable")
-    @js.native
-    def saveTable(Table: Table, filename: String): Unit = js.native
-    @JSGlobal("saveTable")
-    @js.native
-    def saveTable(Table: Table, filename: String, options: String): Unit = js.native
+    @scala.inline
+    def saveTable(Table: Table, filename: String): Unit = (js.Dynamic.global.applyDynamic("saveTable")(Table.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def saveTable(Table: Table, filename: String, options: String): Unit = (js.Dynamic.global.applyDynamic("saveTable")(Table.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: js.Array[Double]): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: js.Array[Double], y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: js.Array[Double], y: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: js.Array[Double], y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def scale(s: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def scale(s: js.Array[Double], y: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: js.Array[Double], y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: js.Array[Double], y: Unit, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Increases or decreases the size of a shape by
       *   expanding and contracting vertices. Objects always
@@ -9623,18 +8353,14 @@ object globalMod {
       *   z-axis (webgl only)
       *   @chainable
       */
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Double, y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Double, y: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def scale(s: Double): ^ = js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Double, y: Unit, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Increases or decreases the size of a shape by
       *   expanding and contracting vertices. Objects always
@@ -9658,18 +8384,14 @@ object globalMod {
       *   object
       *   @chainable
       */
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Vector): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Vector, y: js.UndefOr[scala.Nothing], z: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Vector, y: Double): ^ = js.native
-    @JSGlobal("scale")
-    @js.native
-    def scale(s: Vector, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def scale(s: Vector): ^ = js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Vector, y: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Vector, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def scale(s: Vector, y: Unit, z: Double): ^ = (js.Dynamic.global.applyDynamic("scale")(s.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   p5.js communicates with the clock on your
@@ -9677,9 +8399,8 @@ object globalMod {
       *   current second as a value from 0 - 59.
       *   @return the current second
       */
-    @JSGlobal("second")
-    @js.native
-    def second(): Double = js.native
+    @scala.inline
+    def second(): Double = js.Dynamic.global.applyDynamic("second")().asInstanceOf[Double]
     
     /**
       *   Searches the page for an element with the given
@@ -9697,18 +8418,14 @@ object globalMod {
       *   to search within
       *   @return p5.Element containing node found
       */
-    @JSGlobal("select")
-    @js.native
-    def select(name: String): Element | Null = js.native
-    @JSGlobal("select")
-    @js.native
-    def select(name: String, container: String): Element | Null = js.native
-    @JSGlobal("select")
-    @js.native
-    def select(name: String, container: Element): Element | Null = js.native
-    @JSGlobal("select")
-    @js.native
-    def select(name: String, container: HTMLElement): Element | Null = js.native
+    @scala.inline
+    def select(name: String): Element | Null = js.Dynamic.global.applyDynamic("select")(name.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    @scala.inline
+    def select(name: String, container: String): Element | Null = (js.Dynamic.global.applyDynamic("select")(name.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    @scala.inline
+    def select(name: String, container: Element): Element | Null = (js.Dynamic.global.applyDynamic("select")(name.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+    @scala.inline
+    def select(name: String, container: HTMLElement): Element | Null = (js.Dynamic.global.applyDynamic("select")(name.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
     
     /**
       *   Searches the page for elements with the given
@@ -9725,19 +8442,15 @@ object globalMod {
       *   @return Array of p5.Elements containing nodes
       *   found
       */
-    @JSGlobal("selectAll")
-    @js.native
-    def selectAll(name: String): js.Array[Element] = js.native
-    @JSGlobal("selectAll")
-    @js.native
-    def selectAll(name: String, container: String): js.Array[Element] = js.native
+    @scala.inline
+    def selectAll(name: String): js.Array[Element] = js.Dynamic.global.applyDynamic("selectAll")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Element]]
+    @scala.inline
+    def selectAll(name: String, container: String): js.Array[Element] = (js.Dynamic.global.applyDynamic("selectAll")(name.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[js.Array[Element]]
     
-    @JSGlobal("set")
-    @js.native
-    def set(x: Double, y: Double, c: js.Array[Double]): Unit = js.native
-    @JSGlobal("set")
-    @js.native
-    def set(x: Double, y: Double, c: js.Object): Unit = js.native
+    @scala.inline
+    def set(x: Double, y: Double, c: js.Array[Double]): Unit = (js.Dynamic.global.applyDynamic("set")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def set(x: Double, y: Double, c: js.Object): Unit = (js.Dynamic.global.applyDynamic("set")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Changes the color of any pixel, or writes an image
       *   directly to the display window. The x and y
@@ -9770,9 +8483,8 @@ object globalMod {
       *   @param c insert a grayscale value | a pixel array
       *   | a p5.Color object | a p5.Image to copy
       */
-    @JSGlobal("set")
-    @js.native
-    def set(x: Double, y: Double, c: Double): Unit = js.native
+    @scala.inline
+    def set(x: Double, y: Double, c: Double): Unit = (js.Dynamic.global.applyDynamic("set")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Set attributes for the WebGL Drawing context. This
@@ -9823,9 +8535,8 @@ object globalMod {
       *   @param key Name of attribute
       *   @param value New value of named attribute
       */
-    @JSGlobal("setAttributes")
-    @js.native
-    def setAttributes(key: String, value: Boolean): Unit = js.native
+    @scala.inline
+    def setAttributes(key: String, value: Boolean): Unit = (js.Dynamic.global.applyDynamic("setAttributes")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Set attributes for the WebGL Drawing context. This
       *   is a way of adjusting how the WebGL renderer works
@@ -9874,18 +8585,16 @@ object globalMod {
       *   false
       *   @param obj object with key-value pairs
       */
-    @JSGlobal("setAttributes")
-    @js.native
-    def setAttributes(obj: js.Object): Unit = js.native
+    @scala.inline
+    def setAttributes(obj: js.Object): Unit = js.Dynamic.global.applyDynamic("setAttributes")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Sets rendererGL's current camera to a p5.Camera
       *   object. Allows switching between multiple cameras.
       *   @param cam p5.Camera object
       */
-    @JSGlobal("setCamera")
-    @js.native
-    def setCamera(cam: Camera): Unit = js.native
+    @scala.inline
+    def setCamera(cam: Camera): Unit = js.Dynamic.global.applyDynamic("setCamera")(cam.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The setMoveThreshold() function is used to set the
@@ -9893,9 +8602,8 @@ object globalMod {
       *   The default threshold is set to 0.5.
       *   @param value The threshold value
       */
-    @JSGlobal("setMoveThreshold")
-    @js.native
-    def setMoveThreshold(value: Double): Unit = js.native
+    @scala.inline
+    def setMoveThreshold(value: Double): Unit = js.Dynamic.global.applyDynamic("setMoveThreshold")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The setShakeThreshold() function is used to set
@@ -9903,9 +8611,8 @@ object globalMod {
       *   function. The default threshold is set to 30.
       *   @param value The threshold value
       */
-    @JSGlobal("setShakeThreshold")
-    @js.native
-    def setShakeThreshold(value: Double): Unit = js.native
+    @scala.inline
+    def setShakeThreshold(value: Double): Unit = js.Dynamic.global.applyDynamic("setShakeThreshold")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The shader() function lets the user provide a
@@ -9916,12 +8623,10 @@ object globalMod {
       *   rendering shapes.
       *   @chainable
       */
-    @JSGlobal("shader")
-    @js.native
-    def shader(): ^ = js.native
-    @JSGlobal("shader")
-    @js.native
-    def shader(s: Shader): ^ = js.native
+    @scala.inline
+    def shader(): ^ = js.Dynamic.global.applyDynamic("shader")().asInstanceOf[^]
+    @scala.inline
+    def shader(s: Shader): ^ = js.Dynamic.global.applyDynamic("shader")(s.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Shears a shape around the x-axis the amount
@@ -9947,9 +8652,8 @@ object globalMod {
       *   or degrees, depending on current angleMode
       *   @chainable
       */
-    @JSGlobal("shearX")
-    @js.native
-    def shearX(angle: Double): ^ = js.native
+    @scala.inline
+    def shearX(angle: Double): ^ = js.Dynamic.global.applyDynamic("shearX")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Shears a shape around the y-axis the amount
@@ -9975,9 +8679,8 @@ object globalMod {
       *   or degrees, depending on current angleMode
       *   @chainable
       */
-    @JSGlobal("shearY")
-    @js.native
-    def shearY(angle: Double): ^ = js.native
+    @scala.inline
+    def shearY(angle: Double): ^ = js.Dynamic.global.applyDynamic("shearY")(angle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets the amount of gloss in the surface of shapes.
@@ -9987,9 +8690,8 @@ object globalMod {
       *   @param shine Degree of Shininess. Defaults to 1.
       *   @chainable
       */
-    @JSGlobal("shininess")
-    @js.native
-    def shininess(shine: Double): ^ = js.native
+    @scala.inline
+    def shininess(shine: Double): ^ = js.Dynamic.global.applyDynamic("shininess")(shine.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Decreases an array by one element and returns the
@@ -9997,9 +8699,8 @@ object globalMod {
       *   @param list Array to shorten
       *   @return shortened Array
       */
-    @JSGlobal("shorten")
-    @js.native
-    def shorten(list: js.Array[_]): js.Array[_] = js.native
+    @scala.inline
+    def shorten(list: js.Array[js.Any]): js.Array[js.Any] = js.Dynamic.global.applyDynamic("shorten")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Randomizes the order of the elements of an array.
@@ -10008,12 +8709,10 @@ object globalMod {
       *   @param [bool] modify passed array
       *   @return shuffled Array
       */
-    @JSGlobal("shuffle")
-    @js.native
-    def shuffle(array: js.Array[_]): js.Array[_] = js.native
-    @JSGlobal("shuffle")
-    @js.native
-    def shuffle(array: js.Array[_], bool: Boolean): js.Array[_] = js.native
+    @scala.inline
+    def shuffle(array: js.Array[js.Any]): js.Array[js.Any] = js.Dynamic.global.applyDynamic("shuffle")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def shuffle(array: js.Array[js.Any], bool: Boolean): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("shuffle")(array.asInstanceOf[js.Any], bool.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Calculates the sine of an angle. This function
@@ -10022,9 +8721,8 @@ object globalMod {
       *   @param angle the angle
       *   @return the sine of the angle
       */
-    @JSGlobal("sin")
-    @js.native
-    def sin(angle: Double): Double = js.native
+    @scala.inline
+    def sin(angle: Double): Double = js.Dynamic.global.applyDynamic("sin")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Draws all geometry with smooth (anti-aliased)
@@ -10037,9 +8735,8 @@ object globalMod {
       *   smooth (antialiased) edges on your geometry.
       *   @chainable
       */
-    @JSGlobal("smooth")
-    @js.native
-    def smooth(): ^ = js.native
+    @scala.inline
+    def smooth(): ^ = js.Dynamic.global.applyDynamic("smooth")().asInstanceOf[^]
     
     /**
       *   Sorts an array of numbers from smallest to
@@ -10055,12 +8752,10 @@ object globalMod {
       *   starting from 0
       *   @return the sorted list
       */
-    @JSGlobal("sort")
-    @js.native
-    def sort(list: js.Array[_]): js.Array[_] = js.native
-    @JSGlobal("sort")
-    @js.native
-    def sort(list: js.Array[_], count: Double): js.Array[_] = js.native
+    @scala.inline
+    def sort(list: js.Array[js.Any]): js.Array[js.Any] = js.Dynamic.global.applyDynamic("sort")(list.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def sort(list: js.Array[js.Any], count: Double): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("sort")(list.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   List the SoundFile formats that you will include.
@@ -10070,16 +8765,13 @@ object globalMod {
       *   a free online file converter.
       *   @param [formats] i.e. 'mp3', 'wav', 'ogg'
       */
-    @JSGlobal("soundFormats")
-    @js.native
-    def soundFormats(): Unit = js.native
-    @JSGlobal("soundFormats")
-    @js.native
-    def soundFormats(formats: String): Unit = js.native
+    @scala.inline
+    def soundFormats(): Unit = js.Dynamic.global.applyDynamic("soundFormats")().asInstanceOf[Unit]
+    @scala.inline
+    def soundFormats(formats: String): Unit = js.Dynamic.global.applyDynamic("soundFormats")(formats.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(color: String): ^ = js.native
+    @scala.inline
+    def specularMaterial(color: String): ^ = js.Dynamic.global.applyDynamic("specularMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Specular material for geometry with a given color.
       *   You can view all possible materials in this
@@ -10087,12 +8779,10 @@ object globalMod {
       *   @param color color Array, or CSS color string
       *   @chainable
       */
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(color: js.Array[Double]): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(color: Color): ^ = js.native
+    @scala.inline
+    def specularMaterial(color: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("specularMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(color: Color): ^ = js.Dynamic.global.applyDynamic("specularMaterial")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Specular material for geometry with a given color.
       *   You can view all possible materials in this
@@ -10104,30 +8794,22 @@ object globalMod {
       *   @param [a] opacity
       *   @chainable
       */
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: js.UndefOr[scala.Nothing], v3: Double, a: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: Double, v3: js.UndefOr[scala.Nothing], a: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("specularMaterial")
-    @js.native
-    def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = js.native
+    @scala.inline
+    def specularMaterial(v1: Double): ^ = js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Double, v3: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Double, v3: Unit, a: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Unit, v3: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Unit, v3: Double, a: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def specularMaterial(v1: Double, v2: Unit, v3: Unit, a: Double): ^ = (js.Dynamic.global.applyDynamic("specularMaterial")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Draw a sphere with given radius
@@ -10138,30 +8820,22 @@ object globalMod {
       *   segments the smoother geometry default is 16
       *   @chainable
       */
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: js.UndefOr[scala.Nothing], detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: Double, detailX: Double): ^ = js.native
-    @JSGlobal("sphere")
-    @js.native
-    def sphere(radius: Double, detailX: Double, detailY: Double): ^ = js.native
+    @scala.inline
+    def sphere(): ^ = js.Dynamic.global.applyDynamic("sphere")().asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Double): ^ = js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def sphere(radius: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("sphere")(radius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Inserts a value or an array of values into an
@@ -10179,9 +8853,8 @@ object globalMod {
       *   data
       *   @return the list
       */
-    @JSGlobal("splice")
-    @js.native
-    def splice(list: js.Array[_], value: js.Any, position: Double): js.Array[_] = js.native
+    @scala.inline
+    def splice(list: js.Array[js.Any], value: js.Any, position: Double): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("splice")(list.asInstanceOf[js.Any], value.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   The split() function maps to String.split(), it
@@ -10198,9 +8871,8 @@ object globalMod {
       *   @param delim the String used to separate the data
       *   @return Array of Strings
       */
-    @JSGlobal("split")
-    @js.native
-    def split(value: String, delim: String): js.Array[String] = js.native
+    @scala.inline
+    def split(value: String, delim: String): js.Array[String] = (js.Dynamic.global.applyDynamic("split")(value.asInstanceOf[js.Any], delim.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   The splitTokens() function splits a String at one
@@ -10216,12 +8888,10 @@ object globalMod {
       *   will be used as separators
       *   @return Array of Strings
       */
-    @JSGlobal("splitTokens")
-    @js.native
-    def splitTokens(value: String): js.Array[String] = js.native
-    @JSGlobal("splitTokens")
-    @js.native
-    def splitTokens(value: String, delim: String): js.Array[String] = js.native
+    @scala.inline
+    def splitTokens(value: String): js.Array[String] = js.Dynamic.global.applyDynamic("splitTokens")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+    @scala.inline
+    def splitTokens(value: String, delim: String): js.Array[String] = (js.Dynamic.global.applyDynamic("splitTokens")(value.asInstanceOf[js.Any], delim.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       *   Squares a number (multiplies a number by itself).
@@ -10231,9 +8901,8 @@ object globalMod {
       *   @param n number to square
       *   @return squared number
       */
-    @JSGlobal("sq")
-    @js.native
-    def sq(n: Double): Double = js.native
+    @scala.inline
+    def sq(n: Double): Double = js.Dynamic.global.applyDynamic("sq")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Calculates the square root of a number. The square
@@ -10244,9 +8913,8 @@ object globalMod {
       *   @param n non-negative number to square root
       *   @return square root of number
       */
-    @JSGlobal("sqrt")
-    @js.native
-    def sqrt(n: Double): Double = js.native
+    @scala.inline
+    def sqrt(n: Double): Double = js.Dynamic.global.applyDynamic("sqrt")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Draws a square to the screen. A square is a
@@ -10276,93 +8944,38 @@ object globalMod {
       *   @param [bl] optional radius of bottom-left corner.
       *   @chainable
       */
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(
-      x: Double,
-      y: Double,
-      s: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(
-      x: Double,
-      y: Double,
-      s: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: Double
-    ): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(
-      x: Double,
-      y: Double,
-      s: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: js.UndefOr[scala.Nothing],
-      br: Double,
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(
-      x: Double,
-      y: Double,
-      s: Double,
-      tl: js.UndefOr[scala.Nothing],
-      tr: Double,
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: js.UndefOr[scala.Nothing], tr: Double, br: Double, bl: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(
-      x: Double,
-      y: Double,
-      s: Double,
-      tl: Double,
-      tr: js.UndefOr[scala.Nothing],
-      br: js.UndefOr[scala.Nothing],
-      bl: Double
-    ): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: js.UndefOr[scala.Nothing], br: Double, bl: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: js.UndefOr[scala.Nothing], bl: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): ^ = js.native
-    @JSGlobal("square")
-    @js.native
-    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = js.native
+    @scala.inline
+    def square(x: Double, y: Double, s: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Double, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Double, tr: Unit, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Double, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Double, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def square(x: Double, y: Double, s: Double, tl: Unit, tr: Unit, br: Unit, bl: Double): ^ = (js.Dynamic.global.applyDynamic("square")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], s.asInstanceOf[js.Any], tl.asInstanceOf[js.Any], tr.asInstanceOf[js.Any], br.asInstanceOf[js.Any], bl.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Stores a value in local storage under the key
@@ -10374,21 +8987,16 @@ object globalMod {
       *   personal information should not be stored in local
       *   storage.
       */
-    @JSGlobal("storeItem")
-    @js.native
-    def storeItem(key: String, value: String): Unit = js.native
-    @JSGlobal("storeItem")
-    @js.native
-    def storeItem(key: String, value: js.Object): Unit = js.native
-    @JSGlobal("storeItem")
-    @js.native
-    def storeItem(key: String, value: Boolean): Unit = js.native
-    @JSGlobal("storeItem")
-    @js.native
-    def storeItem(key: String, value: Double): Unit = js.native
-    @JSGlobal("storeItem")
-    @js.native
-    def storeItem(key: String, value: Color): Unit = js.native
+    @scala.inline
+    def storeItem(key: String, value: String): Unit = (js.Dynamic.global.applyDynamic("storeItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def storeItem(key: String, value: js.Object): Unit = (js.Dynamic.global.applyDynamic("storeItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def storeItem(key: String, value: Boolean): Unit = (js.Dynamic.global.applyDynamic("storeItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def storeItem(key: String, value: Double): Unit = (js.Dynamic.global.applyDynamic("storeItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def storeItem(key: String, value: Color): Unit = (js.Dynamic.global.applyDynamic("storeItem")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Converts a boolean, string or number to its string
@@ -10398,18 +9006,14 @@ object globalMod {
       *   @param n value to parse
       *   @return string representation of value
       */
-    @JSGlobal("str")
-    @js.native
-    def str(n: String): String = js.native
-    @JSGlobal("str")
-    @js.native
-    def str(n: js.Array[_]): String = js.native
-    @JSGlobal("str")
-    @js.native
-    def str(n: Boolean): String = js.native
-    @JSGlobal("str")
-    @js.native
-    def str(n: Double): String = js.native
+    @scala.inline
+    def str(n: String): String = js.Dynamic.global.applyDynamic("str")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def str(n: js.Array[js.Any]): String = js.Dynamic.global.applyDynamic("str")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def str(n: Boolean): String = js.Dynamic.global.applyDynamic("str")(n.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def str(n: Double): String = js.Dynamic.global.applyDynamic("str")(n.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       *   Sets the color used to draw lines and borders
@@ -10430,9 +9034,8 @@ object globalMod {
       *   @param color the stroke color
       *   @chainable
       */
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(color: Color): ^ = js.native
+    @scala.inline
+    def stroke(color: Color): ^ = js.Dynamic.global.applyDynamic("stroke")(color.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Sets the color used to draw lines and borders
       *   around shapes. This color is either specified in
@@ -10452,12 +9055,10 @@ object globalMod {
       *   @param gray a gray value
       *   @chainable
       */
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(gray: Double): ^ = js.native
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(gray: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def stroke(gray: Double): ^ = js.Dynamic.global.applyDynamic("stroke")(gray.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def stroke(gray: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("stroke")(gray.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Sets the color used to draw lines and borders
       *   around shapes. This color is either specified in
@@ -10482,12 +9083,10 @@ object globalMod {
       *   current color range
       *   @chainable
       */
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(v1: Double, v2: Double, v3: Double): ^ = js.native
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = js.native
+    @scala.inline
+    def stroke(v1: Double, v2: Double, v3: Double): ^ = (js.Dynamic.global.applyDynamic("stroke")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def stroke(v1: Double, v2: Double, v3: Double, alpha: Double): ^ = (js.Dynamic.global.applyDynamic("stroke")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Sets the color used to draw lines and borders
       *   around shapes. This color is either specified in
@@ -10507,9 +9106,8 @@ object globalMod {
       *   @param value a color string
       *   @chainable
       */
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(value: String): ^ = js.native
+    @scala.inline
+    def stroke(value: String): ^ = js.Dynamic.global.applyDynamic("stroke")(value.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Sets the color used to draw lines and borders
       *   around shapes. This color is either specified in
@@ -10530,9 +9128,8 @@ object globalMod {
       *   red,green,blue & and alpha components of the color
       *   @chainable
       */
-    @JSGlobal("stroke")
-    @js.native
-    def stroke(values: js.Array[Double]): ^ = js.native
+    @scala.inline
+    def stroke(values: js.Array[Double]): ^ = js.Dynamic.global.applyDynamic("stroke")(values.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets the style for rendering line endings. These
@@ -10543,9 +9140,8 @@ object globalMod {
       *   @param cap either SQUARE, PROJECT, or ROUND
       *   @chainable
       */
-    @JSGlobal("strokeCap")
-    @js.native
-    def strokeCap(cap: STROKE_CAP): ^ = js.native
+    @scala.inline
+    def strokeCap(cap: STROKE_CAP): ^ = js.Dynamic.global.applyDynamic("strokeCap")(cap.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets the style of the joints which connect line
@@ -10556,9 +9152,8 @@ object globalMod {
       *   @param join either MITER, BEVEL, ROUND
       *   @chainable
       */
-    @JSGlobal("strokeJoin")
-    @js.native
-    def strokeJoin(join: STROKE_JOIN): ^ = js.native
+    @scala.inline
+    def strokeJoin(join: STROKE_JOIN): ^ = js.Dynamic.global.applyDynamic("strokeJoin")(join.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets the width of the stroke used for lines,
@@ -10567,9 +9162,8 @@ object globalMod {
       *   @param weight the weight (in pixels) of the stroke
       *   @chainable
       */
-    @JSGlobal("strokeWeight")
-    @js.native
-    def strokeWeight(weight: Double): ^ = js.native
+    @scala.inline
+    def strokeWeight(weight: Double): ^ = js.Dynamic.global.applyDynamic("strokeWeight")(weight.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Extracts an array of elements from an existing
@@ -10586,12 +9180,10 @@ object globalMod {
       *   @param [count] number of values to extract
       *   @return Array of extracted elements
       */
-    @JSGlobal("subset")
-    @js.native
-    def subset(list: js.Array[_], start: Double): js.Array[_] = js.native
-    @JSGlobal("subset")
-    @js.native
-    def subset(list: js.Array[_], start: Double, count: Double): js.Array[_] = js.native
+    @scala.inline
+    def subset(list: js.Array[js.Any], start: Double): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("subset")(list.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+    @scala.inline
+    def subset(list: js.Array[js.Any], start: Double, count: Double): js.Array[js.Any] = (js.Dynamic.global.applyDynamic("subset")(list.asInstanceOf[js.Any], start.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
     
     /**
       *   Calculates the tangent of an angle. This function
@@ -10600,9 +9192,8 @@ object globalMod {
       *   @param angle the angle
       *   @return the tangent of the angle
       */
-    @JSGlobal("tan")
-    @js.native
-    def tan(angle: Double): Double = js.native
+    @scala.inline
+    def tan(angle: Double): Double = js.Dynamic.global.applyDynamic("tan")(angle.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       *   Draws text to the screen. Displays the information
@@ -10645,66 +9236,46 @@ object globalMod {
       *   box, see rectMode() for more info
       *   @chainable
       */
-    @JSGlobal("text")
-    @js.native
-    def text(str: String, x: Double, y: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: String, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: String, x: Double, y: Double, x2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: String, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Array[_], x: Double, y: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Array[_], x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Array[_], x: Double, y: Double, x2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Array[_], x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Object, x: Double, y: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Object, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Object, x: Double, y: Double, x2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Boolean, x: Double, y: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Boolean, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Boolean, x: Double, y: Double, x2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Double, x: Double, y: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Double, x: Double, y: Double, x2: js.UndefOr[scala.Nothing], y2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Double, x: Double, y: Double, x2: Double): ^ = js.native
-    @JSGlobal("text")
-    @js.native
-    def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): ^ = js.native
+    @scala.inline
+    def text(str: String, x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: String, x: Double, y: Double, x2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: String, x: Double, y: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: String, x: Double, y: Double, x2: Unit, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Array[js.Any], x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Array[js.Any], x: Double, y: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Array[js.Any], x: Double, y: Double, x2: Unit, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Object, x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Object, x: Double, y: Double, x2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Object, x: Double, y: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: js.Object, x: Double, y: Double, x2: Unit, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Boolean, x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Boolean, x: Double, y: Double, x2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Boolean, x: Double, y: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Boolean, x: Double, y: Double, x2: Unit, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Double, x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Double, x: Double, y: Double, x2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Double, x: Double, y: Double, x2: Double, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def text(str: Double, x: Double, y: Double, x2: Unit, y2: Double): ^ = (js.Dynamic.global.applyDynamic("text")(str.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets the current alignment for drawing text.
@@ -10722,9 +9293,8 @@ object globalMod {
       *   value and the top of edge of the text to the y
       *   value.
       */
-    @JSGlobal("textAlign")
-    @js.native
-    def textAlign(): js.Object = js.native
+    @scala.inline
+    def textAlign(): js.Object = js.Dynamic.global.applyDynamic("textAlign")().asInstanceOf[js.Object]
     /**
       *   Sets the current alignment for drawing text.
       *   Accepts two arguments: horizAlign (LEFT, CENTER,
@@ -10746,12 +9316,10 @@ object globalMod {
       *   BOTTOM, CENTER, or BASELINE
       *   @chainable
       */
-    @JSGlobal("textAlign")
-    @js.native
-    def textAlign(horizAlign: HORIZ_ALIGN): ^ = js.native
-    @JSGlobal("textAlign")
-    @js.native
-    def textAlign(horizAlign: HORIZ_ALIGN, vertAlign: VERT_ALIGN): ^ = js.native
+    @scala.inline
+    def textAlign(horizAlign: HORIZ_ALIGN): ^ = js.Dynamic.global.applyDynamic("textAlign")(horizAlign.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def textAlign(horizAlign: HORIZ_ALIGN, vertAlign: VERT_ALIGN): ^ = (js.Dynamic.global.applyDynamic("textAlign")(horizAlign.asInstanceOf[js.Any], vertAlign.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Returns the ascent of the current font at its
@@ -10759,9 +9327,8 @@ object globalMod {
       *   in pixels, of the tallest character above the
       *   baseline.
       */
-    @JSGlobal("textAscent")
-    @js.native
-    def textAscent(): Double = js.native
+    @scala.inline
+    def textAscent(): Double = js.Dynamic.global.applyDynamic("textAscent")().asInstanceOf[Double]
     
     /**
       *   Returns the descent of the current font at its
@@ -10769,9 +9336,8 @@ object globalMod {
       *   in pixels, of the character with the longest
       *   descender below the baseline.
       */
-    @JSGlobal("textDescent")
-    @js.native
-    def textDescent(): Double = js.native
+    @scala.inline
+    def textDescent(): Double = js.Dynamic.global.applyDynamic("textDescent")().asInstanceOf[Double]
     
     /**
       *   Sets the current font that will be drawn with the
@@ -10779,15 +9345,12 @@ object globalMod {
       *   loadFont() are supported.
       *   @return the current font
       */
-    @JSGlobal("textFont")
-    @js.native
-    def textFont(): js.Object = js.native
-    @JSGlobal("textFont")
-    @js.native
-    def textFont(font: String): ^ = js.native
-    @JSGlobal("textFont")
-    @js.native
-    def textFont(font: String, size: Double): ^ = js.native
+    @scala.inline
+    def textFont(): js.Object = js.Dynamic.global.applyDynamic("textFont")().asInstanceOf[js.Object]
+    @scala.inline
+    def textFont(font: String): ^ = js.Dynamic.global.applyDynamic("textFont")(font.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def textFont(font: String, size: Double): ^ = (js.Dynamic.global.applyDynamic("textFont")(font.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   Sets the current font that will be drawn with the
       *   text() function.  WEBGL: Only fonts loaded via
@@ -10798,21 +9361,18 @@ object globalMod {
       *   @param [size] the font size to use
       *   @chainable
       */
-    @JSGlobal("textFont")
-    @js.native
-    def textFont(font: js.Object): ^ = js.native
-    @JSGlobal("textFont")
-    @js.native
-    def textFont(font: js.Object, size: Double): ^ = js.native
+    @scala.inline
+    def textFont(font: js.Object): ^ = js.Dynamic.global.applyDynamic("textFont")(font.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def textFont(font: js.Object, size: Double): ^ = (js.Dynamic.global.applyDynamic("textFont")(font.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Sets/gets the spacing, in pixels, between lines of
       *   text. This setting will be used in all subsequent
       *   calls to the text() function.
       */
-    @JSGlobal("textLeading")
-    @js.native
-    def textLeading(): Double = js.native
+    @scala.inline
+    def textLeading(): Double = js.Dynamic.global.applyDynamic("textLeading")().asInstanceOf[Double]
     /**
       *   Sets/gets the spacing, in pixels, between lines of
       *   text. This setting will be used in all subsequent
@@ -10821,18 +9381,16 @@ object globalMod {
       *   between lines
       *   @chainable
       */
-    @JSGlobal("textLeading")
-    @js.native
-    def textLeading(leading: Double): ^ = js.native
+    @scala.inline
+    def textLeading(leading: Double): ^ = js.Dynamic.global.applyDynamic("textLeading")(leading.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets/gets the current font size. This size will be
       *   used in all subsequent calls to the text()
       *   function. Font size is measured in pixels.
       */
-    @JSGlobal("textSize")
-    @js.native
-    def textSize(): Double = js.native
+    @scala.inline
+    def textSize(): Double = js.Dynamic.global.applyDynamic("textSize")().asInstanceOf[Double]
     /**
       *   Sets/gets the current font size. This size will be
       *   used in all subsequent calls to the text()
@@ -10841,9 +9399,8 @@ object globalMod {
       *   pixels
       *   @chainable
       */
-    @JSGlobal("textSize")
-    @js.native
-    def textSize(theSize: Double): ^ = js.native
+    @scala.inline
+    def textSize(theSize: Double): ^ = js.Dynamic.global.applyDynamic("textSize")(theSize.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets/gets the style of the text for system fonts
@@ -10852,9 +9409,8 @@ object globalMod {
       *   non-system fonts (opentype, truetype, etc.) please
       *   load styled fonts instead.
       */
-    @JSGlobal("textStyle")
-    @js.native
-    def textStyle(): String = js.native
+    @scala.inline
+    def textStyle(): String = js.Dynamic.global.applyDynamic("textStyle")().asInstanceOf[String]
     /**
       *   Sets/gets the style of the text for system fonts
       *   to NORMAL, ITALIC, BOLD or BOLDITALIC. Note: this
@@ -10865,22 +9421,19 @@ object globalMod {
       *   ITALIC, BOLD or BOLDITALIC
       *   @chainable
       */
-    @JSGlobal("textStyle")
-    @js.native
-    def textStyle(theStyle: THE_STYLE): ^ = js.native
+    @scala.inline
+    def textStyle(theStyle: THE_STYLE): ^ = js.Dynamic.global.applyDynamic("textStyle")(theStyle.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Calculates and returns the width of any character
       *   or text string.
       *   @param theText the String of characters to measure
       */
-    @JSGlobal("textWidth")
-    @js.native
-    def textWidth(theText: String): Double = js.native
+    @scala.inline
+    def textWidth(theText: String): Double = js.Dynamic.global.applyDynamic("textWidth")(theText.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSGlobal("texture")
-    @js.native
-    def texture(tex: Graphics): ^ = js.native
+    @scala.inline
+    def texture(tex: Graphics): ^ = js.Dynamic.global.applyDynamic("texture")(tex.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Texture for geometry. You can view other possible
       *   materials in this example.
@@ -10888,12 +9441,10 @@ object globalMod {
       *   texture
       *   @chainable
       */
-    @JSGlobal("texture")
-    @js.native
-    def texture(tex: Image): ^ = js.native
-    @JSGlobal("texture")
-    @js.native
-    def texture(tex: MediaElement): ^ = js.native
+    @scala.inline
+    def texture(tex: Image): ^ = js.Dynamic.global.applyDynamic("texture")(tex.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def texture(tex: MediaElement): ^ = js.Dynamic.global.applyDynamic("texture")(tex.asInstanceOf[js.Any]).asInstanceOf[^]
     
     /**
       *   Sets the coordinate space for texture mapping. The
@@ -10908,9 +9459,8 @@ object globalMod {
       *   (1,1) (0,1).
       *   @param mode either IMAGE or NORMAL
       */
-    @JSGlobal("textureMode")
-    @js.native
-    def textureMode(mode: TEXTURE_MODE): Unit = js.native
+    @scala.inline
+    def textureMode(mode: TEXTURE_MODE): Unit = js.Dynamic.global.applyDynamic("textureMode")(mode.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Sets the global texture wrapping mode. This
@@ -10936,12 +9486,10 @@ object globalMod {
       *   @param wrapX either CLAMP, REPEAT, or MIRROR
       *   @param [wrapY] either CLAMP, REPEAT, or MIRROR
       */
-    @JSGlobal("textureWrap")
-    @js.native
-    def textureWrap(wrapX: WRAP_X): Unit = js.native
-    @JSGlobal("textureWrap")
-    @js.native
-    def textureWrap(wrapX: WRAP_X, wrapY: WRAP_Y): Unit = js.native
+    @scala.inline
+    def textureWrap(wrapX: WRAP_X): Unit = js.Dynamic.global.applyDynamic("textureWrap")(wrapX.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def textureWrap(wrapX: WRAP_X, wrapY: WRAP_Y): Unit = (js.Dynamic.global.applyDynamic("textureWrap")(wrapX.asInstanceOf[js.Any], wrapY.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   Sets the fill value for displaying images. Images
@@ -10960,9 +9508,8 @@ object globalMod {
       *   by colorMode(). The default maximum value is 255.
       *   @param color the tint color
       */
-    @JSGlobal("tint")
-    @js.native
-    def tint(color: Color): Unit = js.native
+    @scala.inline
+    def tint(color: Color): Unit = js.Dynamic.global.applyDynamic("tint")(color.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       *   Sets the fill value for displaying images. Images
       *   can be tinted to specified colors or made
@@ -10980,12 +9527,10 @@ object globalMod {
       *   by colorMode(). The default maximum value is 255.
       *   @param gray a gray value
       */
-    @JSGlobal("tint")
-    @js.native
-    def tint(gray: Double): Unit = js.native
-    @JSGlobal("tint")
-    @js.native
-    def tint(gray: Double, alpha: Double): Unit = js.native
+    @scala.inline
+    def tint(gray: Double): Unit = js.Dynamic.global.applyDynamic("tint")(gray.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def tint(gray: Double, alpha: Double): Unit = (js.Dynamic.global.applyDynamic("tint")(gray.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Sets the fill value for displaying images. Images
       *   can be tinted to specified colors or made
@@ -11008,12 +9553,10 @@ object globalMod {
       *   @param v3 blue or brightness value relative to the
       *   current color range
       */
-    @JSGlobal("tint")
-    @js.native
-    def tint(v1: Double, v2: Double, v3: Double): Unit = js.native
-    @JSGlobal("tint")
-    @js.native
-    def tint(v1: Double, v2: Double, v3: Double, alpha: Double): Unit = js.native
+    @scala.inline
+    def tint(v1: Double, v2: Double, v3: Double): Unit = (js.Dynamic.global.applyDynamic("tint")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def tint(v1: Double, v2: Double, v3: Double, alpha: Double): Unit = (js.Dynamic.global.applyDynamic("tint")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any], v3.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *   Sets the fill value for displaying images. Images
       *   can be tinted to specified colors or made
@@ -11031,9 +9574,8 @@ object globalMod {
       *   by colorMode(). The default maximum value is 255.
       *   @param value a color string
       */
-    @JSGlobal("tint")
-    @js.native
-    def tint(value: String): Unit = js.native
+    @scala.inline
+    def tint(value: String): Unit = js.Dynamic.global.applyDynamic("tint")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
     /**
       *   Sets the fill value for displaying images. Images
       *   can be tinted to specified colors or made
@@ -11052,9 +9594,8 @@ object globalMod {
       *   @param values an array containing the
       *   red,green,blue & and alpha components of the color
       */
-    @JSGlobal("tint")
-    @js.native
-    def tint(values: js.Array[Double]): Unit = js.native
+    @scala.inline
+    def tint(values: js.Array[Double]): Unit = js.Dynamic.global.applyDynamic("tint")(values.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   Draw a torus with given radius and tube radius
@@ -11068,74 +9609,38 @@ object globalMod {
       *   geometry default is 16
       *   @chainable
       */
-    @JSGlobal("torus")
-    @js.native
-    def torus(): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(
-      radius: js.UndefOr[scala.Nothing],
-      tubeRadius: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(
-      radius: js.UndefOr[scala.Nothing],
-      tubeRadius: js.UndefOr[scala.Nothing],
-      detailX: Double,
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(
-      radius: js.UndefOr[scala.Nothing],
-      tubeRadius: Double,
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: js.UndefOr[scala.Nothing], tubeRadius: Double, detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(
-      radius: Double,
-      tubeRadius: js.UndefOr[scala.Nothing],
-      detailX: js.UndefOr[scala.Nothing],
-      detailY: Double
-    ): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: js.UndefOr[scala.Nothing], detailX: Double, detailY: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: Double, detailX: js.UndefOr[scala.Nothing], detailY: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: Double, detailX: Double): ^ = js.native
-    @JSGlobal("torus")
-    @js.native
-    def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): ^ = js.native
+    @scala.inline
+    def torus(): ^ = js.Dynamic.global.applyDynamic("torus")().asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double): ^ = js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any]).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Double, tubeRadius: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Double, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Double, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Double, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Unit, detailX: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Unit, detailX: Double, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def torus(radius: Unit, tubeRadius: Unit, detailX: Unit, detailY: Double): ^ = (js.Dynamic.global.applyDynamic("torus")(radius.asInstanceOf[js.Any], tubeRadius.asInstanceOf[js.Any], detailX.asInstanceOf[js.Any], detailY.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   The touchEnded() function is called every time a
@@ -11149,12 +9654,10 @@ object globalMod {
       *   @param [event] optional TouchEvent callback
       *   argument.
       */
-    @JSGlobal("touchEnded")
-    @js.native
-    def touchEnded(): Unit = js.native
-    @JSGlobal("touchEnded")
-    @js.native
-    def touchEnded(event: js.Object): Unit = js.native
+    @scala.inline
+    def touchEnded(): Unit = js.Dynamic.global.applyDynamic("touchEnded")().asInstanceOf[Unit]
+    @scala.inline
+    def touchEnded(event: js.Object): Unit = js.Dynamic.global.applyDynamic("touchEnded")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The touchMoved() function is called every time a
@@ -11168,12 +9671,10 @@ object globalMod {
       *   @param [event] optional TouchEvent callback
       *   argument.
       */
-    @JSGlobal("touchMoved")
-    @js.native
-    def touchMoved(): Unit = js.native
-    @JSGlobal("touchMoved")
-    @js.native
-    def touchMoved(event: js.Object): Unit = js.native
+    @scala.inline
+    def touchMoved(): Unit = js.Dynamic.global.applyDynamic("touchMoved")().asInstanceOf[Unit]
+    @scala.inline
+    def touchMoved(event: js.Object): Unit = js.Dynamic.global.applyDynamic("touchMoved")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The touchStarted() function is called once after
@@ -11187,12 +9688,10 @@ object globalMod {
       *   @param [event] optional TouchEvent callback
       *   argument.
       */
-    @JSGlobal("touchStarted")
-    @js.native
-    def touchStarted(): Unit = js.native
-    @JSGlobal("touchStarted")
-    @js.native
-    def touchStarted(event: js.Object): Unit = js.native
+    @scala.inline
+    def touchStarted(): Unit = js.Dynamic.global.applyDynamic("touchStarted")().asInstanceOf[Unit]
+    @scala.inline
+    def touchStarted(event: js.Object): Unit = js.Dynamic.global.applyDynamic("touchStarted")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *   The system variable touches[] contains an array of
@@ -11226,9 +9725,8 @@ object globalMod {
       *   @param vector the vector to translate by
       *   @chainable
       */
-    @JSGlobal("translate")
-    @js.native
-    def translate(vector: Vector): ^ = js.native
+    @scala.inline
+    def translate(vector: Vector): ^ = js.Dynamic.global.applyDynamic("translate")(vector.asInstanceOf[js.Any]).asInstanceOf[^]
     /**
       *   Specifies an amount to displace objects within the
       *   display window. The x parameter specifies
@@ -11248,12 +9746,10 @@ object globalMod {
       *   only)
       *   @chainable
       */
-    @JSGlobal("translate")
-    @js.native
-    def translate(x: Double, y: Double): ^ = js.native
-    @JSGlobal("translate")
-    @js.native
-    def translate(x: Double, y: Double, z: Double): ^ = js.native
+    @scala.inline
+    def translate(x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("translate")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def translate(x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("translate")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   A triangle is a plane created by connecting three
@@ -11269,9 +9765,8 @@ object globalMod {
       *   @param y3 y-coordinate of the third point
       *   @chainable
       */
-    @JSGlobal("triangle")
-    @js.native
-    def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): ^ = js.native
+    @scala.inline
+    def triangle(x1: Double, y1: Double, x2: Double, y2: Double, x3: Double, y3: Double): ^ = (js.Dynamic.global.applyDynamic("triangle")(x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], x2.asInstanceOf[js.Any], y2.asInstanceOf[js.Any], x3.asInstanceOf[js.Any], y3.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   Removes whitespace characters from the beginning
@@ -11282,9 +9777,8 @@ object globalMod {
       *   @param str a String to be trimmed
       *   @return a trimmed String
       */
-    @JSGlobal("trim")
-    @js.native
-    def trim(str: String): String = js.native
+    @scala.inline
+    def trim(str: String): String = js.Dynamic.global.applyDynamic("trim")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     /**
       *   Removes whitespace characters from the beginning
       *   and end of a String. In addition to standard
@@ -11294,9 +9788,8 @@ object globalMod {
       *   @param strs an Array of Strings to be trimmed
       *   @return an Array of trimmed Strings
       */
-    @JSGlobal("trim")
-    @js.native
-    def trim(strs: js.Array[_]): js.Array[String] = js.native
+    @scala.inline
+    def trim(strs: js.Array[js.Any]): js.Array[String] = js.Dynamic.global.applyDynamic("trim")(strs.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
     
     /**
       *   When a device is rotated, the axis that triggers
@@ -11319,9 +9812,8 @@ object globalMod {
       *   @param n value to parse
       *   @return integer representation of value
       */
-    @JSGlobal("unchar")
-    @js.native
-    def unchar(n: String): Double = js.native
+    @scala.inline
+    def unchar(n: String): Double = js.Dynamic.global.applyDynamic("unchar")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Converts a single-character string to its
       *   corresponding integer representation. When an
@@ -11331,9 +9823,8 @@ object globalMod {
       *   @param ns values to parse
       *   @return integer representation of values
       */
-    @JSGlobal("unchar")
-    @js.native
-    def unchar(ns: js.Array[_]): js.Array[Double] = js.native
+    @scala.inline
+    def unchar(ns: js.Array[js.Any]): js.Array[Double] = js.Dynamic.global.applyDynamic("unchar")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       *   Converts a string representation of a hexadecimal
@@ -11345,9 +9836,8 @@ object globalMod {
       *   @return integer representation of hexadecimal
       *   value
       */
-    @JSGlobal("unhex")
-    @js.native
-    def unhex(n: String): Double = js.native
+    @scala.inline
+    def unhex(n: String): Double = js.Dynamic.global.applyDynamic("unhex")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
     /**
       *   Converts a string representation of a hexadecimal
       *   number to its equivalent integer value. When an
@@ -11358,9 +9848,8 @@ object globalMod {
       *   @return integer representations of hexadecimal
       *   value
       */
-    @JSGlobal("unhex")
-    @js.native
-    def unhex(ns: js.Array[_]): js.Array[Double] = js.native
+    @scala.inline
+    def unhex(ns: js.Array[js.Any]): js.Array[Double] = js.Dynamic.global.applyDynamic("unhex")(ns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
     
     /**
       *   Updates the display window with the data in the
@@ -11379,59 +9868,38 @@ object globalMod {
       *   @param [w] width of region to update
       *   @param [h] height of region to update
       */
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      w: js.UndefOr[scala.Nothing],
-      h: Double
-    ): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: js.UndefOr[scala.Nothing], y: Double, w: Double, h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: js.UndefOr[scala.Nothing], w: Double, h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: Double, w: js.UndefOr[scala.Nothing], h: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: Double, w: Double): Unit = js.native
-    @JSGlobal("updatePixels")
-    @js.native
-    def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = js.native
+    @scala.inline
+    def updatePixels(): Unit = js.Dynamic.global.applyDynamic("updatePixels")().asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double): Unit = js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Double, w: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Double, w: Double, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Double, w: Unit, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Unit, w: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Unit, w: Double, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Double, y: Unit, w: Unit, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Double, w: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Double, w: Double, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Double, w: Unit, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Unit, w: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Unit, w: Double, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def updatePixels(x: Unit, y: Unit, w: Unit, h: Double): Unit = (js.Dynamic.global.applyDynamic("updatePixels")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *   All shapes are constructed by connecting a series
@@ -11443,9 +9911,8 @@ object globalMod {
       *   @param y y-coordinate of the vertex
       *   @chainable
       */
-    @JSGlobal("vertex")
-    @js.native
-    def vertex(x: Double, y: Double): ^ = js.native
+    @scala.inline
+    def vertex(x: Double, y: Double): ^ = (js.Dynamic.global.applyDynamic("vertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[^]
     /**
       *   All shapes are constructed by connecting a series
       *   of vertices. vertex() is used to specify the
@@ -11459,18 +9926,14 @@ object globalMod {
       *   @param [v] the vertex's texture v-coordinate
       *   @chainable
       */
-    @JSGlobal("vertex")
-    @js.native
-    def vertex(x: Double, y: Double, z: Double): ^ = js.native
-    @JSGlobal("vertex")
-    @js.native
-    def vertex(x: Double, y: Double, z: Double, u: js.UndefOr[scala.Nothing], v: Double): ^ = js.native
-    @JSGlobal("vertex")
-    @js.native
-    def vertex(x: Double, y: Double, z: Double, u: Double): ^ = js.native
-    @JSGlobal("vertex")
-    @js.native
-    def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): ^ = js.native
+    @scala.inline
+    def vertex(x: Double, y: Double, z: Double): ^ = (js.Dynamic.global.applyDynamic("vertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def vertex(x: Double, y: Double, z: Double, u: Double): ^ = (js.Dynamic.global.applyDynamic("vertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], u.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def vertex(x: Double, y: Double, z: Double, u: Double, v: Double): ^ = (js.Dynamic.global.applyDynamic("vertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[^]
+    @scala.inline
+    def vertex(x: Double, y: Double, z: Double, u: Unit, v: Double): ^ = (js.Dynamic.global.applyDynamic("vertex")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any], u.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[^]
     
     /**
       *   System variable that stores the width of the
@@ -11525,9 +9988,8 @@ object globalMod {
       *   place to resize the canvas or do any other
       *   adjustments to accommodate the new window size.
       */
-    @JSGlobal("windowResized")
-    @js.native
-    def windowResized(): Unit = js.native
+    @scala.inline
+    def windowResized(): Unit = js.Dynamic.global.applyDynamic("windowResized")().asInstanceOf[Unit]
     
     /**
       *   System variable that stores the width of the inner
@@ -11545,38 +10007,7 @@ object globalMod {
       *   year as an integer (2014, 2015, 2016, etc).
       *   @return the current year
       */
-    @JSGlobal("year")
-    @js.native
-    def year(): Double = js.native
-    
-    /**
-      *   This function is used to apply a regular
-      *   expression to a piece of text, and return matching
-      *   groups (elements found inside parentheses) as a
-      *   String array. If there are no matches, a null
-      *   value will be returned. If no groups are specified
-      *   in the regular expression, but the sequence
-      *   matches, an array of length 1 (with the matched
-      *   text as the first element of the array) will be
-      *   returned.  To use the function, first check to see
-      *   if the result is null. If the result is null, then
-      *   the sequence did not match at all. If the sequence
-      *   did match, an array is returned.
-      *
-      *
-      *   If there are groups (specified by sets of
-      *   parentheses) in the regular expression, then the
-      *   contents of each will be returned in the array.
-      *   Element [0] of a regular expression match returns
-      *   the entire matching string, and the match groups
-      *   start at element [1] (the first group is [1], the
-      *   second [2], and so on).
-      *   @param str the String to be searched
-      *   @param regexp the regexp to be used for matching
-      *   @return Array of Strings found
-      */
-    @JSGlobal("match")
-    @js.native
-    def `match`(str: String, regexp: String): js.Array[String] = js.native
+    @scala.inline
+    def year(): Double = js.Dynamic.global.applyDynamic("year")().asInstanceOf[Double]
   }
 }

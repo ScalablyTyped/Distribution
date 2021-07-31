@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThingRegistrationTaskReportsResponse extends StObject {
   
   /**
     * The token to use to get the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The type of task report.
     */
-  var reportType: js.UndefOr[ReportType] = js.native
+  var reportType: js.UndefOr[ReportType] = js.undefined
   
   /**
     * Links to the task resources.
     */
-  var resourceLinks: js.UndefOr[S3FileUrlList] = js.native
+  var resourceLinks: js.UndefOr[S3FileUrlList] = js.undefined
 }
 object ListThingRegistrationTaskReportsResponse {
   

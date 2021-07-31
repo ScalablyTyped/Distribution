@@ -2,34 +2,32 @@ package typings.jqueryClientsidelogging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientSideLoggingObject extends StObject {
   
   // The variable to send the log message through as.
-  var client_info: js.UndefOr[ClientSideLoggingClientInfoObject] = js.native
+  var client_info: js.UndefOr[ClientSideLoggingClientInfoObject] = js.undefined
   
-  var error_url: js.UndefOr[String] = js.native
+  var error_url: js.UndefOr[String] = js.undefined
   
   // Whether or not to send native js errors as well (using window.onerror).
-  var hijack_console: js.UndefOr[Boolean] = js.native
+  var hijack_console: js.UndefOr[Boolean] = js.undefined
   
   // The url to which errors logs are sent
-  var info_url: js.UndefOr[String] = js.native
+  var info_url: js.UndefOr[String] = js.undefined
   
   // The url to which standard logs are sent
-  var log_level: js.UndefOr[Double] = js.native
+  var log_level: js.UndefOr[Double] = js.undefined
   
   // The url to which info logs are sent
-  var log_url: js.UndefOr[String] = js.native
+  var log_url: js.UndefOr[String] = js.undefined
   
   // The level at which to log. This allows you to keep the calls to the logging in your code and just change this variable to log varying degrees. 1 = only error, 2 = error & log, 3 = error, log & info
-  var native_error: js.UndefOr[Boolean] = js.native
+  var native_error: js.UndefOr[Boolean] = js.undefined
   
   // Hijacks the default console functionality (ie: all your console.error/info/log are belong to us).
-  var query_var: js.UndefOr[String] = js.native
+  var query_var: js.UndefOr[String] = js.undefined
 }
 object ClientSideLoggingObject {
   

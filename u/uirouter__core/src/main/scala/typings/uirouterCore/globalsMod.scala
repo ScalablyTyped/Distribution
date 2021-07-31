@@ -8,14 +8,15 @@ import typings.uirouterCore.stateParamsMod.StateParams
 import typings.uirouterCore.transitionTransitionMod.Transition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object globalsMod {
   
   @JSImport("@uirouter/core/lib/globals", "UIRouterGlobals")
   @js.native
-  class UIRouterGlobals () extends Disposable {
+  class UIRouterGlobals ()
+    extends StObject
+       with Disposable {
     
     /**
       * Current state (internal object)

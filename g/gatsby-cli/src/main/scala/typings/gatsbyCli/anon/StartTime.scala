@@ -4,19 +4,17 @@ import typings.gatsbyCli.constantsMod.ActivityStatuses
 import typings.gatsbyCli.constantsMod.ActivityTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartTime extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var startTime: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var startTime: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var status: ActivityStatuses = js.native
+  var status: ActivityStatuses
   
-  var `type`: ActivityTypes = js.native
+  var `type`: ActivityTypes
 }
 object StartTime {
   

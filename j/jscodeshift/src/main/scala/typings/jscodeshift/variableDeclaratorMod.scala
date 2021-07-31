@@ -3,18 +3,20 @@ package typings.jscodeshift
 import typings.jscodeshift.collectionMod.Collection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object variableDeclaratorMod {
+  
+  @JSImport("jscodeshift/src/collections/VariableDeclarator", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("jscodeshift/src/collections/VariableDeclarator", "filters")
   @js.native
   val filters: FilterMethods = js.native
   
-  @JSImport("jscodeshift/src/collections/VariableDeclarator", "register")
-  @js.native
-  def register(): Unit = js.native
+  @scala.inline
+  def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   
   type ASTPath[N] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NodePath<N, N> */ js.Any
   
@@ -40,21 +42,20 @@ object variableDeclaratorMod {
       * Finds all variable declarators, optionally filtered by name.
       */
     def findVariableDeclarators(): Collection[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ js.Any
       ] = js.native
     def findVariableDeclarators(name: String): Collection[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.VariableDeclarator */ js.Any
       ] = js.native
   }
   
-  @js.native
   trait TransformMethods[N] extends StObject {
     
     /**
       * Renames a variable and all its occurrences.
       * This method only applies to VariableDeclarator typed collections.
       */
-    def renameTo(newName: String): Collection[N] = js.native
+    def renameTo(newName: String): Collection[N]
   }
   object TransformMethods {
     
@@ -65,7 +66,7 @@ object variableDeclaratorMod {
     }
     
     @scala.inline
-    implicit class TransformMethodsMutableBuilder[Self <: TransformMethods[_], N] (val x: Self with TransformMethods[N]) extends AnyVal {
+    implicit class TransformMethodsMutableBuilder[Self <: TransformMethods[?], N] (val x: Self & TransformMethods[N]) extends AnyVal {
       
       @scala.inline
       def setRenameTo(value: String => Collection[N]): Self = StObject.set(x, "renameTo", js.Any.fromFunction1(value))

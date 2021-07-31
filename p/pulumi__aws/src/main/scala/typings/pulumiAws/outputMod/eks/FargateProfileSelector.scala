@@ -3,21 +3,19 @@ package typings.pulumiAws.outputMod.eks
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FargateProfileSelector extends StObject {
   
   /**
     * Key-value map of Kubernetes labels for selection.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Kubernetes namespace for selection.
     */
-  var namespace: String = js.native
+  var namespace: String
 }
 object FargateProfileSelector {
   

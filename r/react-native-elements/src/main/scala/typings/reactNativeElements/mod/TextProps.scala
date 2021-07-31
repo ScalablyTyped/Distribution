@@ -4,53 +4,52 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextProps
-  extends typings.reactNative.mod.TextProps
+  extends StObject
+     with typings.reactNative.mod.TextProps
      with _HeaderSubComponent {
   
   /**
     * font size 40
     */
-  var h1: js.UndefOr[Boolean] = js.native
+  var h1: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h1` is set
     */
-  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h1Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 34
     */
-  var h2: js.UndefOr[Boolean] = js.native
+  var h2: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h2` is set
     */
-  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h2Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 28
     */
-  var h3: js.UndefOr[Boolean] = js.native
+  var h3: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h3` is set
     */
-  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h3Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * font size 22
     */
-  var h4: js.UndefOr[Boolean] = js.native
+  var h4: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Styling for when `h4` is set
     */
-  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var h4Style: js.UndefOr[StyleProp[TextStyle]] = js.undefined
 }
 object TextProps {
   

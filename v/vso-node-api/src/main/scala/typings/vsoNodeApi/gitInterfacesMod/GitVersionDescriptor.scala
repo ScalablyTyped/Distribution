@@ -2,26 +2,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitVersionDescriptor extends StObject {
   
   /**
     * Version string identifier (name of tag/branch, SHA1 of commit)
     */
-  var version: String = js.native
+  var version: String
   
   /**
     * Version options - Specify additional modifiers to version (e.g Previous)
     */
-  var versionOptions: GitVersionOptions = js.native
+  var versionOptions: GitVersionOptions
   
   /**
     * Version type (branch, tag, or commit). Determines how Id is interpreted
     */
-  var versionType: GitVersionType = js.native
+  var versionType: GitVersionType
 }
 object GitVersionDescriptor {
   

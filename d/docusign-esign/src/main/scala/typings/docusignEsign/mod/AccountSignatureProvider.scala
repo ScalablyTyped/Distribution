@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountSignatureProvider extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var isRequired: js.UndefOr[String] = js.native
+  var isRequired: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderDisplayName: js.UndefOr[String] = js.native
+  var signatureProviderDisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderId: js.UndefOr[String] = js.native
+  var signatureProviderId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of an Electronic or Standards Based Signature (digital signature) provider for the signer to use. For details,
@@ -38,12 +36,12 @@ trait AccountSignatureProvider extends StObject {
     *
     *
     */
-  var signatureProviderName: js.UndefOr[String] = js.native
+  var signatureProviderName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var signatureProviderOptionsMetadata: js.UndefOr[js.Array[/* Reserved for DocuSign. */ AccountSignatureProviderOption]] = js.native
+  var signatureProviderOptionsMetadata: js.UndefOr[js.Array[/* Reserved for DocuSign. */ AccountSignatureProviderOption]] = js.undefined
   
   /**
     * Reserved for DocuSign.
@@ -52,7 +50,7 @@ trait AccountSignatureProvider extends StObject {
     js.Array[
       /* Contains additional information that a specific signature provider requires. */ SignatureProviderRequiredOption
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object AccountSignatureProvider {
   

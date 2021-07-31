@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Paste From Word dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorPasteFromWordDialog extends ASPxClientHtmlEditorDialogBase {
+trait ASPxClientHtmlEditorPasteFromWordDialog
+  extends StObject
+     with ASPxClientHtmlEditorDialogBase {
   
   /**
     * Provides access to the client object of the "Remove font family" check box in the Html Editor's Flash dialog.
     */
-  def GetRemoveFontFamilyCheckBox(): ASPxClientCheckBox = js.native
+  def GetRemoveFontFamilyCheckBox(): ASPxClientCheckBox
 }
 object ASPxClientHtmlEditorPasteFromWordDialog {
   

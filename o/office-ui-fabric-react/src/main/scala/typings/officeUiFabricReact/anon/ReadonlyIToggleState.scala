@@ -2,14 +2,12 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/Toggle/Toggle.base.IToggleState> */
-@js.native
 trait ReadonlyIToggleState extends StObject {
   
-  val checked: Boolean = js.native
+  val checked: Boolean
 }
 object ReadonlyIToggleState {
   

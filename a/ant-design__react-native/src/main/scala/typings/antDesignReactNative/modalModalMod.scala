@@ -16,7 +16,6 @@ import typings.reactNative.mod.View
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalModalMod {
@@ -103,9 +102,8 @@ object modalModalMod {
       @scala.inline
       def maskClosable_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("maskClosable")(x.asInstanceOf[js.Any])
       
-      @JSImport("@ant-design/react-native/lib/modal/Modal", "default.defaultProps.onClose")
-      @js.native
-      def onClose(): Unit = js.native
+      @scala.inline
+      def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/modal/Modal", "default.defaultProps.operation")
       @js.native
@@ -190,16 +188,16 @@ object modalModalMod {
     def saveRoot(root: js.Any): Unit = js.native
   }
   
-  @js.native
   trait ModalProps
-    extends ModalPropsType[TextStyle]
+    extends StObject
+       with ModalPropsType[TextStyle]
        with WithThemeStyles[ModalStyle] {
     
-    var bodyStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var bodyStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var onRequestClose: js.UndefOr[CallbackOnBackHandler] = js.native
+    var onRequestClose: js.UndefOr[CallbackOnBackHandler] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object ModalProps {
     

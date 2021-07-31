@@ -3,22 +3,22 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.decimal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttributeRightHandSideDecimal extends ExtendedAttributeRightHandSideBase {
+trait ExtendedAttributeRightHandSideDecimal
+  extends StObject
+     with ExtendedAttributeRightHandSideBase {
   
-  var `type`: decimal = js.native
+  var `type`: decimal
   
-  var value: String = js.native
+  var value: String
 }
 object ExtendedAttributeRightHandSideDecimal {
   
   @scala.inline
-  def apply(`type`: decimal, value: String): ExtendedAttributeRightHandSideDecimal = {
+  def apply(value: String): ExtendedAttributeRightHandSideDecimal = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("decimal")
     __obj.asInstanceOf[ExtendedAttributeRightHandSideDecimal]
   }
   

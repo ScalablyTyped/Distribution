@@ -2,19 +2,17 @@ package typings.activexVbide
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CancelDefault extends StObject {
     
-    val CancelDefault: Boolean = js.native
+    val CancelDefault: Boolean
     
-    val CommandBarControl: js.Any = js.native
+    val CommandBarControl: js.Any
     
-    val handled: Boolean = js.native
+    val handled: Boolean
   }
   object CancelDefault {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Reference extends StObject {
     
-    val Reference: typings.activexVbide.VBIDE.Reference = js.native
+    val Reference: typings.activexVbide.VBIDE.Reference
   }
   object Reference {
     

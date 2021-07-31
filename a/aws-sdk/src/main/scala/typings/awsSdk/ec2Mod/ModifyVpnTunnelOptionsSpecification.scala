@@ -2,101 +2,99 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyVpnTunnelOptionsSpecification extends StObject {
   
   /**
     * The action to take after DPD timeout occurs. Specify restart to restart the IKE initiation. Specify clear to end the IKE session. Valid Values: clear | none | restart  Default: clear 
     */
-  var DPDTimeoutAction: js.UndefOr[String] = js.native
+  var DPDTimeoutAction: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seconds after which a DPD timeout occurs. Constraints: A value between 0 and 30. Default: 30 
     */
-  var DPDTimeoutSeconds: js.UndefOr[Integer] = js.native
+  var DPDTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IKE versions that are permitted for the VPN tunnel. Valid values: ikev1 | ikev2 
     */
-  var IKEVersions: js.UndefOr[IKEVersionsRequestList] = js.native
+  var IKEVersions: js.UndefOr[IKEVersionsRequestList] = js.undefined
   
   /**
     * One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 1 IKE negotiations. Valid values: 2 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 
     */
-  var Phase1DHGroupNumbers: js.UndefOr[Phase1DHGroupNumbersRequestList] = js.native
+  var Phase1DHGroupNumbers: js.UndefOr[Phase1DHGroupNumbersRequestList] = js.undefined
   
   /**
     * One or more encryption algorithms that are permitted for the VPN tunnel for phase 1 IKE negotiations. Valid values: AES128 | AES256 | AES128-GCM-16 | AES256-GCM-16 
     */
-  var Phase1EncryptionAlgorithms: js.UndefOr[Phase1EncryptionAlgorithmsRequestList] = js.native
+  var Phase1EncryptionAlgorithms: js.UndefOr[Phase1EncryptionAlgorithmsRequestList] = js.undefined
   
   /**
     * One or more integrity algorithms that are permitted for the VPN tunnel for phase 1 IKE negotiations. Valid values: SHA1 | SHA2-256 | SHA2-384 | SHA2-512 
     */
-  var Phase1IntegrityAlgorithms: js.UndefOr[Phase1IntegrityAlgorithmsRequestList] = js.native
+  var Phase1IntegrityAlgorithms: js.UndefOr[Phase1IntegrityAlgorithmsRequestList] = js.undefined
   
   /**
     * The lifetime for phase 1 of the IKE negotiation, in seconds. Constraints: A value between 900 and 28,800. Default: 28800 
     */
-  var Phase1LifetimeSeconds: js.UndefOr[Integer] = js.native
+  var Phase1LifetimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * One or more Diffie-Hellman group numbers that are permitted for the VPN tunnel for phase 2 IKE negotiations. Valid values: 2 | 5 | 14 | 15 | 16 | 17 | 18 | 19 | 20 | 21 | 22 | 23 | 24 
     */
-  var Phase2DHGroupNumbers: js.UndefOr[Phase2DHGroupNumbersRequestList] = js.native
+  var Phase2DHGroupNumbers: js.UndefOr[Phase2DHGroupNumbersRequestList] = js.undefined
   
   /**
     * One or more encryption algorithms that are permitted for the VPN tunnel for phase 2 IKE negotiations. Valid values: AES128 | AES256 | AES128-GCM-16 | AES256-GCM-16 
     */
-  var Phase2EncryptionAlgorithms: js.UndefOr[Phase2EncryptionAlgorithmsRequestList] = js.native
+  var Phase2EncryptionAlgorithms: js.UndefOr[Phase2EncryptionAlgorithmsRequestList] = js.undefined
   
   /**
     * One or more integrity algorithms that are permitted for the VPN tunnel for phase 2 IKE negotiations. Valid values: SHA1 | SHA2-256 | SHA2-384 | SHA2-512 
     */
-  var Phase2IntegrityAlgorithms: js.UndefOr[Phase2IntegrityAlgorithmsRequestList] = js.native
+  var Phase2IntegrityAlgorithms: js.UndefOr[Phase2IntegrityAlgorithmsRequestList] = js.undefined
   
   /**
     * The lifetime for phase 2 of the IKE negotiation, in seconds. Constraints: A value between 900 and 3,600. The value must be less than the value for Phase1LifetimeSeconds. Default: 3600 
     */
-  var Phase2LifetimeSeconds: js.UndefOr[Integer] = js.native
+  var Phase2LifetimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The pre-shared key (PSK) to establish initial authentication between the virtual private gateway and the customer gateway. Constraints: Allowed characters are alphanumeric characters, periods (.), and underscores (_). Must be between 8 and 64 characters in length and cannot start with zero (0).
     */
-  var PreSharedKey: js.UndefOr[String] = js.native
+  var PreSharedKey: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of the rekey window (determined by RekeyMarginTimeSeconds) during which the rekey time is randomly selected. Constraints: A value between 0 and 100. Default: 100 
     */
-  var RekeyFuzzPercentage: js.UndefOr[Integer] = js.native
+  var RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined
   
   /**
     * The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the VPN connection performs an IKE rekey. The exact time of the rekey is randomly selected based on the value for RekeyFuzzPercentage. Constraints: A value between 60 and half of Phase2LifetimeSeconds. Default: 540 
     */
-  var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.native
+  var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of packets in an IKE replay window. Constraints: A value between 64 and 2048. Default: 1024 
     */
-  var ReplayWindowSize: js.UndefOr[Integer] = js.native
+  var ReplayWindowSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The action to take when the establishing the tunnel for the VPN connection. By default, your customer gateway device must initiate the IKE negotiation and bring up the tunnel. Specify start for AWS to initiate the IKE negotiation. Valid Values: add | start  Default: add 
     */
-  var StartupAction: js.UndefOr[String] = js.native
+  var StartupAction: js.UndefOr[String] = js.undefined
   
   /**
     * The range of inside IPv4 addresses for the tunnel. Any specified CIDR blocks must be unique across all VPN connections that use the same virtual private gateway.  Constraints: A size /30 CIDR block from the 169.254.0.0/16 range. The following CIDR blocks are reserved and cannot be used:    169.254.0.0/30     169.254.1.0/30     169.254.2.0/30     169.254.3.0/30     169.254.4.0/30     169.254.5.0/30     169.254.169.252/30   
     */
-  var TunnelInsideCidr: js.UndefOr[String] = js.native
+  var TunnelInsideCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The range of inside IPv6 addresses for the tunnel. Any specified CIDR blocks must be unique across all VPN connections that use the same transit gateway. Constraints: A size /126 CIDR block from the local fd00::/8 range.
     */
-  var TunnelInsideIpv6Cidr: js.UndefOr[String] = js.native
+  var TunnelInsideIpv6Cidr: js.UndefOr[String] = js.undefined
 }
 object ModifyVpnTunnelOptionsSpecification {
   

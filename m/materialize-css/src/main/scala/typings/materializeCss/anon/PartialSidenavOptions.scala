@@ -6,28 +6,26 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<materialize-css.M.SidenavOptions> */
-@js.native
 trait PartialSidenavOptions extends StObject {
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var edge: js.UndefOr[left | right] = js.native
+  var edge: js.UndefOr[left | right] = js.undefined
   
-  var inDuration: js.UndefOr[Double] = js.native
+  var inDuration: js.UndefOr[Double] = js.undefined
   
-  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.native
+  var onCloseEnd: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.undefined
   
-  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.native
+  var onCloseStart: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.undefined
   
-  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.native
+  var onOpenEnd: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.undefined
   
-  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.native
+  var onOpenStart: js.UndefOr[js.ThisFunction1[/* this */ Sidenav, /* elem */ Element, Unit]] = js.undefined
   
-  var outDuration: js.UndefOr[Double] = js.native
+  var outDuration: js.UndefOr[Double] = js.undefined
 }
 object PartialSidenavOptions {
   

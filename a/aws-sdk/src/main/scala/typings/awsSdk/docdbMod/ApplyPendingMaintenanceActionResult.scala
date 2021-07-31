@@ -2,13 +2,11 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyPendingMaintenanceActionResult extends StObject {
   
-  var ResourcePendingMaintenanceActions: js.UndefOr[typings.awsSdk.docdbMod.ResourcePendingMaintenanceActions] = js.native
+  var ResourcePendingMaintenanceActions: js.UndefOr[typings.awsSdk.docdbMod.ResourcePendingMaintenanceActions] = js.undefined
 }
 object ApplyPendingMaintenanceActionResult {
   

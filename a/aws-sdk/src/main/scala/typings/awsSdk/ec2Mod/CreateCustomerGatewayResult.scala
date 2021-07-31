@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomerGatewayResult extends StObject {
   
   /**
     * Information about the customer gateway.
     */
-  var CustomerGateway: js.UndefOr[typings.awsSdk.ec2Mod.CustomerGateway] = js.native
+  var CustomerGateway: js.UndefOr[typings.awsSdk.ec2Mod.CustomerGateway] = js.undefined
 }
 object CreateCustomerGatewayResult {
   

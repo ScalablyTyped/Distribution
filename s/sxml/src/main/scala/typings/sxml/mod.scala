@@ -2,7 +2,6 @@ package typings.sxml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -41,28 +40,22 @@ object mod {
       @scala.inline
       def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
       
-      @JSImport("sxml", "default.XML.decode_property")
-      @js.native
-      def decodeProperty(str: String): String = js.native
+      @scala.inline
+      def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("sxml", "default.XML.decode_value")
-      @js.native
-      def decodeValue(str: String): String = js.native
+      @scala.inline
+      def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("sxml", "default.XML.encode_property")
-      @js.native
-      def encodeProperty(str: String): String = js.native
+      @scala.inline
+      def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("sxml", "default.XML.encode_value")
-      @js.native
-      def encodeValue(str: String): String = js.native
+      @scala.inline
+      def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
       
-      @JSImport("sxml", "default.XML.head")
-      @js.native
-      def head(): String = js.native
-      @JSImport("sxml", "default.XML.head")
-      @js.native
-      def head(encoding: String): String = js.native
+      @scala.inline
+      def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+      @scala.inline
+      def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
     }
     
     @JSImport("sxml", "default.XMLList")
@@ -103,28 +96,22 @@ object mod {
     @scala.inline
     def _Repeat_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_Repeat")(x.asInstanceOf[js.Any])
     
-    @JSImport("sxml", "XML.decode_property")
-    @js.native
-    def decodeProperty(str: String): String = js.native
+    @scala.inline
+    def decodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sxml", "XML.decode_value")
-    @js.native
-    def decodeValue(str: String): String = js.native
+    @scala.inline
+    def decodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sxml", "XML.encode_property")
-    @js.native
-    def encodeProperty(str: String): String = js.native
+    @scala.inline
+    def encodeProperty(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_property")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sxml", "XML.encode_value")
-    @js.native
-    def encodeValue(str: String): String = js.native
+    @scala.inline
+    def encodeValue(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode_value")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("sxml", "XML.head")
-    @js.native
-    def head(): String = js.native
-    @JSImport("sxml", "XML.head")
-    @js.native
-    def head(encoding: String): String = js.native
+    @scala.inline
+    def head(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")().asInstanceOf[String]
+    @scala.inline
+    def head(encoding: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(encoding.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @JSImport("sxml", "XMLList")

@@ -2,15 +2,13 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var params: js.Any = js.native
+  var params: js.Any
   
-  var route: View = js.native
+  var route: View
 }
 object Params {
   

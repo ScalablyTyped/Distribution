@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstanceFleetsOutput extends StObject {
   
   /**
     * The list of instance fleets for the cluster and given filters.
     */
-  var InstanceFleets: js.UndefOr[InstanceFleetList] = js.native
+  var InstanceFleets: js.UndefOr[InstanceFleetList] = js.undefined
   
   /**
     * The pagination token that indicates the next set of results to retrieve.
     */
-  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.emrMod.Marker] = js.undefined
 }
 object ListInstanceFleetsOutput {
   

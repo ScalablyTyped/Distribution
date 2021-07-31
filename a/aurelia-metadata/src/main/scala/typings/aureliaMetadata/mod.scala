@@ -3,10 +3,13 @@ package typings.aureliaMetadata
 import typings.std.PropertyDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("aurelia-metadata", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("aurelia-metadata", "Origin")
   @js.native
@@ -31,14 +34,17 @@ object mod {
   /* static members */
   object Origin {
     
+    @JSImport("aurelia-metadata", "Origin")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the Origin metadata for the specified function.
       * @param fn The function to inspect for Origin metadata.
       * @return Returns the Origin metadata.
       */
-    @JSImport("aurelia-metadata", "Origin.get")
-    @js.native
-    def get(fn: js.Function): Origin = js.native
+    @scala.inline
+    def get(fn: js.Function): Origin = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(fn.asInstanceOf[js.Any]).asInstanceOf[Origin]
     
     /**
       * Set the Origin metadata for the specified function.
@@ -46,65 +52,43 @@ object mod {
       * @param fn The Origin metadata to store on the function.
       * @return Returns the Origin metadata.
       */
-    @JSImport("aurelia-metadata", "Origin.set")
-    @js.native
-    def set(fn: js.Function, origin: Origin): Unit = js.native
+    @scala.inline
+    def set(fn: js.Function, origin: Origin): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(fn.asInstanceOf[js.Any], origin.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("aurelia-metadata", "decorators")
-  @js.native
-  def decorators(rest: js.Function*): DecoratorApplicator = js.native
+  @scala.inline
+  def decorators(rest: js.Function*): DecoratorApplicator = ^.asInstanceOf[js.Dynamic].applyDynamic("decorators")(rest.asInstanceOf[js.Any]).asInstanceOf[DecoratorApplicator]
   
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(
-    optionsOrTarget: js.UndefOr[scala.Nothing],
-    maybeKey: js.UndefOr[scala.Nothing],
-    maybeDescriptor: js.Object
-  ): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(optionsOrTarget: js.UndefOr[scala.Nothing], maybeKey: String): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(optionsOrTarget: js.UndefOr[scala.Nothing], maybeKey: String, maybeDescriptor: js.Object): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(optionsOrTarget: DeprecatedOptions): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(
-    optionsOrTarget: DeprecatedOptions,
-    maybeKey: js.UndefOr[scala.Nothing],
-    maybeDescriptor: js.Object
-  ): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String): js.Any = js.native
-  @JSImport("aurelia-metadata", "deprecated")
-  @js.native
-  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String, maybeDescriptor: js.Object): js.Any = js.native
+  @scala.inline
+  def deprecated(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")().asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: Unit, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: Unit, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: Unit, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: DeprecatedOptions): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: String, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deprecated(optionsOrTarget: DeprecatedOptions, maybeKey: Unit, maybeDescriptor: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(optionsOrTarget.asInstanceOf[js.Any], maybeKey.asInstanceOf[js.Any], maybeDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("aurelia-metadata", "metadata")
   @js.native
   val metadata: MetadataType = js.native
   
-  @JSImport("aurelia-metadata", "mixin")
-  @js.native
-  def mixin(behavior: js.Object): js.Any = js.native
+  @scala.inline
+  def mixin(behavior: js.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("mixin")(behavior.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("aurelia-metadata", "protocol")
-  @js.native
-  def protocol(name: String): js.Any = js.native
-  @JSImport("aurelia-metadata", "protocol")
-  @js.native
-  def protocol(name: String, options: js.Function1[/* target */ js.Any, String | Boolean]): js.Any = js.native
-  @JSImport("aurelia-metadata", "protocol")
-  @js.native
-  def protocol(name: String, options: ProtocolOptions): js.Any = js.native
+  @scala.inline
+  def protocol(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def protocol(name: String, options: js.Function1[/* target */ js.Any, String | Boolean]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def protocol(name: String, options: ProtocolOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("protocol")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @js.native
   trait DecoratorApplicator extends StObject {
@@ -116,23 +100,22 @@ object mod {
       * @param descriptor If applying to a method, you may supply an initial descriptor to pass to the decorators.
       */
     def on(target: js.Any): js.Any = js.native
-    def on(target: js.Any, key: js.UndefOr[scala.Nothing], descriptor: PropertyDescriptor): js.Any = js.native
     def on(target: js.Any, key: String): js.Any = js.native
     def on(target: js.Any, key: String, descriptor: PropertyDescriptor): js.Any = js.native
+    def on(target: js.Any, key: Unit, descriptor: PropertyDescriptor): js.Any = js.native
   }
   
-  @js.native
   trait DeprecatedOptions extends StObject {
     
     /**
       * Specifies whether or not the deprecation should throw an error.
       */
-    var error: Boolean = js.native
+    var error: Boolean
     
     /**
       * Specifies a custom deprecation message.
       */
-    var message: String = js.native
+    var message: String
   }
   object DeprecatedOptions {
     
@@ -214,19 +197,18 @@ object mod {
     var resource: String = js.native
   }
   
-  @js.native
   trait ProtocolOptions extends StObject {
     
     /**
       * A function which has the opportunity to compose additional behavior into the decorated class when the protocol is applied.
       */
-    var compose: js.UndefOr[js.Function1[/* target */ js.Any, Unit]] = js.native
+    var compose: js.UndefOr[js.Function1[/* target */ js.Any, Unit]] = js.undefined
     
     /**
       * A function that will be run to validate the decorated class when the protocol is applied. It is also used to validate adhoc instances.
       * If the validation fails, a message should be returned which directs the developer in how to address the issue.
       */
-    var validate: js.UndefOr[js.Function1[/* target */ js.Any, String | Boolean]] = js.native
+    var validate: js.UndefOr[js.Function1[/* target */ js.Any, String | Boolean]] = js.undefined
   }
   object ProtocolOptions {
     

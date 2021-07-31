@@ -24,10 +24,8 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.voice_recognition
 import typings.wechatMiniprogram.wechatMiniprogramStrings.wav
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderManagerStartOption extends StObject {
   
   /** 指定录音的音频输入源，可通过 [wx.getAvailableAudioSources()](https://developers.weixin.qq.com/miniprogram/dev/api/media/audio/wx.getAvailableAudioSources.html) 获取当前可用的音频源
@@ -44,13 +42,13 @@ trait RecorderManagerStartOption extends StObject {
     * 最低基础库： `2.1.0` */
   var audioSource: js.UndefOr[
     auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition
-  ] = js.native
+  ] = js.undefined
   
   /** 录音的时长，单位 ms，最大值 600000（10 分钟） */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 编码码率，有效值见下表格 */
-  var encodeBitRate: js.UndefOr[Double] = js.native
+  var encodeBitRate: js.UndefOr[Double] = js.undefined
   
   /** 音频格式
     *
@@ -59,17 +57,17 @@ trait RecorderManagerStartOption extends StObject {
     * - 'aac': aac 格式;
     * - 'wav': wav 格式;
     * - 'PCM': pcm 格式; */
-  var format: js.UndefOr[mp3 | aac | wav | PCM] = js.native
+  var format: js.UndefOr[mp3 | aac | wav | PCM] = js.undefined
   
   /** 指定帧大小，单位 KB。传入 frameSize 后，每录制指定帧大小的内容后，会回调录制的文件内容，不指定则不会回调。暂仅支持 mp3 格式。 */
-  var frameSize: js.UndefOr[Double] = js.native
+  var frameSize: js.UndefOr[Double] = js.undefined
   
   /** 录音通道数
     *
     * 可选值：
     * - 1: 1 个通道;
     * - 2: 2 个通道; */
-  var numberOfChannels: js.UndefOr[`1` | `2`] = js.native
+  var numberOfChannels: js.UndefOr[`1` | `2`] = js.undefined
   
   /** 采样率
     *
@@ -85,7 +83,7 @@ trait RecorderManagerStartOption extends StObject {
     * - 48000: 48000 采样率; */
   var sampleRate: js.UndefOr[
     `8000` | `11025` | `12000` | `16000` | `22050` | `24000` | `32000` | `44100` | `48000`
-  ] = js.native
+  ] = js.undefined
 }
 object RecorderManagerStartOption {
   

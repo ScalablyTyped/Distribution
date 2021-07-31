@@ -3,22 +3,20 @@ package typings.mirrorx.mod
 import typings.mirrorx.mirrorxStrings.`@@routerSlashCALL_HISTORY_METHOD`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouterAction extends StObject {
   
-  var payload: LocationActionPayload = js.native
+  var payload: LocationActionPayload
   
-  var `type`: `@@routerSlashCALL_HISTORY_METHOD` = js.native
+  var `type`: `@@routerSlashCALL_HISTORY_METHOD`
 }
 object RouterAction {
   
   @scala.inline
-  def apply(payload: LocationActionPayload, `type`: `@@routerSlashCALL_HISTORY_METHOD`): RouterAction = {
+  def apply(payload: LocationActionPayload): RouterAction = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("@@router/CALL_HISTORY_METHOD")
     __obj.asInstanceOf[RouterAction]
   }
   

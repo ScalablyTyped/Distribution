@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupNameAndArn extends StObject {
   
   /**
     * The group ARN.
     */
-  var groupArn: js.UndefOr[ThingGroupArn] = js.native
+  var groupArn: js.UndefOr[ThingGroupArn] = js.undefined
   
   /**
     * The group name.
     */
-  var groupName: js.UndefOr[ThingGroupName] = js.native
+  var groupName: js.UndefOr[ThingGroupName] = js.undefined
 }
 object GroupNameAndArn {
   

@@ -3,19 +3,17 @@ package typings.awsLambda.anon
 import typings.awsLambda.commonMod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientMetadata extends StObject {
   
-  var clientMetadata: js.UndefOr[StringMap] = js.native
+  var clientMetadata: js.UndefOr[StringMap] = js.undefined
   
-  var codeParameter: String = js.native
+  var codeParameter: String
   
-  var userAttributes: StringMap = js.native
+  var userAttributes: StringMap
   
-  var usernameParameter: String = js.native
+  var usernameParameter: String
 }
 object ClientMetadata {
   

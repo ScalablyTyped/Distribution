@@ -3,13 +3,13 @@ package typings.tuyaPanelKit.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupCustomProps extends PopupProps {
+trait PopupCustomProps
+  extends StObject
+     with PopupProps {
   
-  var content: ReactNode = js.native
+  var content: ReactNode
 }
 object PopupCustomProps {
   

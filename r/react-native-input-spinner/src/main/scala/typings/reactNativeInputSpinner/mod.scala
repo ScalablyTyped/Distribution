@@ -8,7 +8,6 @@ import typings.reactNativeInputSpinner.reactNativeInputSpinnerStrings.float
 import typings.reactNativeInputSpinner.reactNativeInputSpinnerStrings.int
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,104 +19,103 @@ object mod {
   
   type InputSpinner = Component[ReactNativeInputSpinnerProps, js.Object, js.Any]
   
-  @js.native
   trait ReactNativeInputSpinnerProps extends StObject {
     
-    var activeOpacity: js.UndefOr[Double] = js.native
+    var activeOpacity: js.UndefOr[Double] = js.undefined
     
-    var append: js.UndefOr[ReactElement] = js.native
+    var append: js.UndefOr[ReactElement] = js.undefined
     
-    var arrows: js.UndefOr[Boolean] = js.native
+    var arrows: js.UndefOr[Boolean] = js.undefined
     
-    var background: js.UndefOr[String] = js.native
+    var background: js.UndefOr[String] = js.undefined
     
-    var buttonFontFamily: js.UndefOr[String] = js.native
+    var buttonFontFamily: js.UndefOr[String] = js.undefined
     
-    var buttonFontSize: js.UndefOr[Double] = js.native
+    var buttonFontSize: js.UndefOr[Double] = js.undefined
     
-    var buttonLeftDisabled: js.UndefOr[Boolean] = js.native
+    var buttonLeftDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var buttonLeftImage: js.UndefOr[ReactElement] = js.native
+    var buttonLeftImage: js.UndefOr[ReactElement] = js.undefined
     
-    var buttonLeftText: js.UndefOr[String] = js.native
+    var buttonLeftText: js.UndefOr[String] = js.undefined
     
-    var buttonPressLeftImage: js.UndefOr[ReactElement] = js.native
+    var buttonPressLeftImage: js.UndefOr[ReactElement] = js.undefined
     
-    var buttonPressRightImage: js.UndefOr[ReactElement] = js.native
+    var buttonPressRightImage: js.UndefOr[ReactElement] = js.undefined
     
-    var buttonPressStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var buttonPressStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var buttonPressTextColor: js.UndefOr[String] = js.native
+    var buttonPressTextColor: js.UndefOr[String] = js.undefined
     
-    var buttonRightDisabled: js.UndefOr[Boolean] = js.native
+    var buttonRightDisabled: js.UndefOr[Boolean] = js.undefined
     
-    var buttonRightImage: js.UndefOr[ReactElement] = js.native
+    var buttonRightImage: js.UndefOr[ReactElement] = js.undefined
     
-    var buttonRightText: js.UndefOr[String] = js.native
+    var buttonRightText: js.UndefOr[String] = js.undefined
     
-    var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var buttonStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var buttonTextColor: js.UndefOr[String] = js.native
+    var buttonTextColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var colorLeft: js.UndefOr[String] = js.native
+    var colorLeft: js.UndefOr[String] = js.undefined
     
-    var colorMax: js.UndefOr[String] = js.native
+    var colorMax: js.UndefOr[String] = js.undefined
     
-    var colorMin: js.UndefOr[String] = js.native
+    var colorMin: js.UndefOr[String] = js.undefined
     
-    var colorPress: js.UndefOr[String] = js.native
+    var colorPress: js.UndefOr[String] = js.undefined
     
-    var colorRight: js.UndefOr[String] = js.native
+    var colorRight: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var initialValue: js.UndefOr[Double] = js.native
+    var initialValue: js.UndefOr[Double] = js.undefined
     
-    var inputStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var inputStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var max: js.UndefOr[String | Double] = js.native
+    var max: js.UndefOr[String | Double] = js.undefined
     
-    var min: js.UndefOr[String | Double] = js.native
+    var min: js.UndefOr[String | Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], _]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* val */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var onDecrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+    var onDecrease: js.UndefOr[js.Function1[/* val */ js.Any, js.Any]] = js.undefined
     
-    var onIncrease: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+    var onIncrease: js.UndefOr[js.Function1[/* val */ js.Any, js.Any]] = js.undefined
     
-    var onMax: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+    var onMax: js.UndefOr[js.Function1[/* val */ js.Any, js.Any]] = js.undefined
     
-    var onMin: js.UndefOr[js.Function1[/* val */ js.Any, _]] = js.native
+    var onMin: js.UndefOr[js.Function1[/* val */ js.Any, js.Any]] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
     
-    var prepend: js.UndefOr[ReactElement] = js.native
+    var prepend: js.UndefOr[ReactElement] = js.undefined
     
-    var rounded: js.UndefOr[Boolean] = js.native
+    var rounded: js.UndefOr[Boolean] = js.undefined
     
-    var showBorder: js.UndefOr[Boolean] = js.native
+    var showBorder: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[String | Double] = js.native
+    var step: js.UndefOr[String | Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[int | float] = js.native
+    var `type`: js.UndefOr[int | float] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object ReactNativeInputSpinnerProps {
     
@@ -338,31 +336,31 @@ object mod {
       def setMinUndefined: Self = StObject.set(x, "min", js.undefined)
       
       @scala.inline
-      def setOnChange(value: /* val */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+      def setOnChange(value: /* val */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnDecrease(value: /* val */ js.Any => _): Self = StObject.set(x, "onDecrease", js.Any.fromFunction1(value))
+      def setOnDecrease(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "onDecrease", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnDecreaseUndefined: Self = StObject.set(x, "onDecrease", js.undefined)
       
       @scala.inline
-      def setOnIncrease(value: /* val */ js.Any => _): Self = StObject.set(x, "onIncrease", js.Any.fromFunction1(value))
+      def setOnIncrease(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "onIncrease", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnIncreaseUndefined: Self = StObject.set(x, "onIncrease", js.undefined)
       
       @scala.inline
-      def setOnMax(value: /* val */ js.Any => _): Self = StObject.set(x, "onMax", js.Any.fromFunction1(value))
+      def setOnMax(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "onMax", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMaxUndefined: Self = StObject.set(x, "onMax", js.undefined)
       
       @scala.inline
-      def setOnMin(value: /* val */ js.Any => _): Self = StObject.set(x, "onMin", js.Any.fromFunction1(value))
+      def setOnMin(value: /* val */ js.Any => js.Any): Self = StObject.set(x, "onMin", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMinUndefined: Self = StObject.set(x, "onMin", js.undefined)

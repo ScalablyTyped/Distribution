@@ -4,10 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.httpMod.OutgoingHttpHeaders
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("gcp-metadata", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gcp-metadata", "BASE_PATH")
   @js.native
@@ -37,46 +40,36 @@ object mod {
   @js.native
   val SECONDARY_HOST_ADDRESS: /* "http://metadata.google.internal." */ String = js.native
   
-  @JSImport("gcp-metadata", "instance")
-  @js.native
-  def instance[T](): js.Promise[T] = js.native
-  @JSImport("gcp-metadata", "instance")
-  @js.native
-  def instance[T](options: String): js.Promise[T] = js.native
-  @JSImport("gcp-metadata", "instance")
-  @js.native
-  def instance[T](options: Options): js.Promise[T] = js.native
+  @scala.inline
+  def instance[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def instance[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def instance[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("gcp-metadata", "isAvailable")
-  @js.native
-  def isAvailable(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isAvailable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("gcp-metadata", "project")
-  @js.native
-  def project[T](): js.Promise[T] = js.native
-  @JSImport("gcp-metadata", "project")
-  @js.native
-  def project[T](options: String): js.Promise[T] = js.native
-  @JSImport("gcp-metadata", "project")
-  @js.native
-  def project[T](options: Options): js.Promise[T] = js.native
+  @scala.inline
+  def project[T](): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")().asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def project[T](options: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def project[T](options: Options): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("project")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("gcp-metadata", "requestTimeout")
-  @js.native
-  def requestTimeout(): Double = js.native
+  @scala.inline
+  def requestTimeout(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("requestTimeout")().asInstanceOf[Double]
   
-  @JSImport("gcp-metadata", "resetIsAvailableCache")
-  @js.native
-  def resetIsAvailableCache(): Unit = js.native
+  @scala.inline
+  def resetIsAvailableCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetIsAvailableCache")().asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var params: js.UndefOr[StringDictionary[String]] = js.native
+    var params: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
   }
   object Options {
     

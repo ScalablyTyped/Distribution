@@ -2,25 +2,23 @@ package typings.procfsStats.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemoryStat extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var dt: String = js.native
+  var dt: String
   
-  var lib: String = js.native
+  var lib: String
   
-  var resident: String = js.native
+  var resident: String
   
-  var share: String = js.native
+  var share: String
   
-  var size: String = js.native
+  var size: String
   
-  var text: String = js.native
+  var text: String
 }
 object MemoryStat {
   

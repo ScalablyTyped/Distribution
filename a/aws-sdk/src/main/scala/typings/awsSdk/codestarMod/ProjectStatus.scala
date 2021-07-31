@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectStatus extends StObject {
   
   /**
     * In the case of a project creation or deletion failure, a reason for the failure.
     */
-  var reason: js.UndefOr[Reason] = js.native
+  var reason: js.UndefOr[Reason] = js.undefined
   
   /**
     * The phase of completion for a project creation or deletion.
     */
-  var state: State = js.native
+  var state: State
 }
 object ProjectStatus {
   

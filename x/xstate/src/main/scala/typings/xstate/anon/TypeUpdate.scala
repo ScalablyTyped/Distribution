@@ -3,13 +3,11 @@ package typings.xstate.anon
 import typings.xstate.typesMod.ActionTypes.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeUpdate extends StObject {
   
-  var `type`: Update = js.native
+  var `type`: Update
 }
 object TypeUpdate {
   

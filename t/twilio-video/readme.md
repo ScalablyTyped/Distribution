@@ -10,9 +10,9 @@ Twilio Video JavaScript Library
 | ------------------ | :-------------: |
 | Full name          | twilio-video |
 | Keywords           | twilio, webrtc, library, javascript, video, rooms |
-| # releases         | 42 |
-| # dependents       | 11 |
-| # downloads        | 1520665 |
+| # releases         | 41 |
+| # dependents       | 15 |
+| # downloads        | 2540771 |
 | # stars            | 0 |
 
 ## Links

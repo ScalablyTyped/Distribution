@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserResponse extends StObject {
   
   // user that was created
-  var data: js.UndefOr[User] = js.native
+  var data: js.UndefOr[User] = js.undefined
 }
 object CreateUserResponse {
   

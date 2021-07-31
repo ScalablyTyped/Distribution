@@ -6,7 +6,6 @@ import typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E62-B078-1
 import typings.activexShell.activexShellStrings.`LeftcurlybracketEFA24E64-B078-11d0-89E4-00C04FC9E26ERightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // tslint:disable-next-line no-const-enum

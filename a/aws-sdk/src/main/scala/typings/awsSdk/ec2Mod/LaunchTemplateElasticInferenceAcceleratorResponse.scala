@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateElasticInferenceAcceleratorResponse extends StObject {
   
   /**
     *  The number of elastic inference accelerators to attach to the instance.  Default: 1
     */
-  var Count: js.UndefOr[Integer] = js.native
+  var Count: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The type of elastic inference accelerator. The possible values are eia1.medium, eia1.large, and eia1.xlarge. 
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object LaunchTemplateElasticInferenceAcceleratorResponse {
   

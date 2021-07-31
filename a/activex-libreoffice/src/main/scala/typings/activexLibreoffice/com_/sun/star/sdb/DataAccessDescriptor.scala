@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XResultSet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which ones optional. Additionally, it's free to specify any additional requirements about the relations of properties.
   * @since OOo 1.1.2
   */
-@js.native
 trait DataAccessDescriptor extends StObject {
   
   /**
@@ -35,7 +33,7 @@ trait DataAccessDescriptor extends StObject {
     * If no ActiveConnection is given, then a {@link DataSourceName} is required.
     * @see DataSourceName
     */
-  var ActiveConnection: XConnection = js.native
+  var ActiveConnection: XConnection
   
   /**
     * specifies how to interpret {@link Selection}
@@ -49,7 +47,7 @@ trait DataAccessDescriptor extends StObject {
     * @see com.sun.star.sdbc.XResultSet
     * @see com.sun.star.sdb.XResultSetAccess
     */
-  var BookmarkSelection: Boolean = js.native
+  var BookmarkSelection: Boolean
   
   /**
     * specifies a column object
@@ -60,7 +58,7 @@ trait DataAccessDescriptor extends StObject {
     * The object will at least support the {@link com.sun.star.sdbcx.Column} service, but more often it will even be a {@link Column} from the {@link
     * com.sun.star.sdb} module.
     */
-  var Column: XPropertySet = js.native
+  var Column: XPropertySet
   
   /**
     * specifies a column name.
@@ -68,7 +66,7 @@ trait DataAccessDescriptor extends StObject {
     * This property is usually used together with the {@link Command} and {@link CommandType} properties.
     * @see Column
     */
-  var ColumnName: String = js.native
+  var ColumnName: String
   
   /**
     * specifies the command to execute to retrieve a result set.
@@ -76,7 +74,7 @@ trait DataAccessDescriptor extends StObject {
     * This property is only meaningful together with the {@link CommandType} property, thus either **both** or **none** of them are present.
     * @see CommandType
     */
-  var Command: String = js.native
+  var Command: String
   
   /**
     * specifies the type of the command to be executed to retrieve a result set.
@@ -86,7 +84,7 @@ trait DataAccessDescriptor extends StObject {
     * This property is only meaningful together with the {@link Command} property, thus either **both** or **none** of them are present.
     * @see com.sun.star.sdb.CommandType
     */
-  var CommandType: Double = js.native
+  var CommandType: Double
   
   /**
     * specifies additional info to use when creating a connection from a `ConnectionResource`
@@ -96,7 +94,7 @@ trait DataAccessDescriptor extends StObject {
     *
     * If the sequence is empty, it is ignored.
     */
-  var ConnectionInfo: SafeArray[PropertyValue] = js.native
+  var ConnectionInfo: SafeArray[PropertyValue]
   
   /**
     * specifies the database URL which locates a database driver.
@@ -105,7 +103,7 @@ trait DataAccessDescriptor extends StObject {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var ConnectionResource: String = js.native
+  var ConnectionResource: String
   
   /**
     * specifies the name of the datasource to access.
@@ -115,7 +113,7 @@ trait DataAccessDescriptor extends StObject {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var DataSourceName: String = js.native
+  var DataSourceName: String
   
   /**
     * specifies the URL of the database file.
@@ -125,7 +123,7 @@ trait DataAccessDescriptor extends StObject {
     * @see com.sun.star.sdb.DatabaseContext
     * @see ActiveConnection
     */
-  var DatabaseLocation: String = js.native
+  var DatabaseLocation: String
   
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
@@ -136,7 +134,7 @@ trait DataAccessDescriptor extends StObject {
     * This property is usually present together with the {@link Command} and {@link CommandType} properties, and is evaluated if and only if {@link
     * CommandType} equals {@link CommandType.COMMAND} .
     */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
   
   /**
     * specifies an additional filter to optionally use.
@@ -150,28 +148,28 @@ trait DataAccessDescriptor extends StObject {
     * @see com.sun.star.sdb.RowSet
     * @see ResultSet
     */
-  var Filter: String = js.native
+  var Filter: String
   
   /**
     * specifies an additional `GROUP BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `GROUP BY` itself is not part of this property.
     */
-  var GroupBy: String = js.native
+  var GroupBy: String
   
   /**
     * specifies an additional `HAVING` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `HAVING` itself is not part of this property.
     */
-  var HavingClause: String = js.native
+  var HavingClause: String
   
   /**
     * specifies an additional `ORDER BY` clause which should be applied on top of the given {@link Command} .
     *
     * The keyword `ORDER BY` itself is not part of this property.
     */
-  var Order: String = js.native
+  var Order: String
   
   /**
     * specifies an already existent result set to use.
@@ -187,7 +185,7 @@ trait DataAccessDescriptor extends StObject {
     * com.sun.star.sdb.RowSet} . This becomes important in conjunction with the {@link Selection} property.
     * @see com.sun.star.sdb.XResultSetAccess
     */
-  var ResultSet: XResultSet = js.native
+  var ResultSet: XResultSet
   
   /**
     * specifies a selection to confine the records in a result set.
@@ -202,7 +200,7 @@ trait DataAccessDescriptor extends StObject {
     * If the elements specify bookmarks, and a {@link ResultSet} has been specified, then this result set is required to support the {@link
     * com.sun.star.sdbcx.XRowLocate} interface.
     */
-  var Selection: SafeArray[_] = js.native
+  var Selection: SafeArray[js.Any]
 }
 object DataAccessDescriptor {
   
@@ -224,7 +222,7 @@ object DataAccessDescriptor {
     HavingClause: String,
     Order: String,
     ResultSet: XResultSet,
-    Selection: SafeArray[_]
+    Selection: SafeArray[js.Any]
   ): DataAccessDescriptor = {
     val __obj = js.Dynamic.literal(ActiveConnection = ActiveConnection.asInstanceOf[js.Any], BookmarkSelection = BookmarkSelection.asInstanceOf[js.Any], Column = Column.asInstanceOf[js.Any], ColumnName = ColumnName.asInstanceOf[js.Any], Command = Command.asInstanceOf[js.Any], CommandType = CommandType.asInstanceOf[js.Any], ConnectionInfo = ConnectionInfo.asInstanceOf[js.Any], ConnectionResource = ConnectionResource.asInstanceOf[js.Any], DataSourceName = DataSourceName.asInstanceOf[js.Any], DatabaseLocation = DatabaseLocation.asInstanceOf[js.Any], EscapeProcessing = EscapeProcessing.asInstanceOf[js.Any], Filter = Filter.asInstanceOf[js.Any], GroupBy = GroupBy.asInstanceOf[js.Any], HavingClause = HavingClause.asInstanceOf[js.Any], Order = Order.asInstanceOf[js.Any], ResultSet = ResultSet.asInstanceOf[js.Any], Selection = Selection.asInstanceOf[js.Any])
     __obj.asInstanceOf[DataAccessDescriptor]
@@ -282,6 +280,6 @@ object DataAccessDescriptor {
     def setResultSet(value: XResultSet): Self = StObject.set(x, "ResultSet", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSelection(value: SafeArray[_]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
+    def setSelection(value: SafeArray[js.Any]): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
   }
 }

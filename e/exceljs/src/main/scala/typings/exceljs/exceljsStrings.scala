@@ -12,108 +12,147 @@ import typings.exceljs.mod.TimePeriodTypes
 import typings.exceljs.mod.WorksheetState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exceljsStrings {
   
   @js.native
-  sealed trait `3Arrows` extends IconSetTypes
+  sealed trait `3Arrows`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Arrows`: `3Arrows` = "3Arrows".asInstanceOf[`3Arrows`]
   
   @js.native
-  sealed trait `3ArrowsGray` extends IconSetTypes
+  sealed trait `3ArrowsGray`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3ArrowsGray`: `3ArrowsGray` = "3ArrowsGray".asInstanceOf[`3ArrowsGray`]
   
   @js.native
-  sealed trait `3Flags` extends IconSetTypes
+  sealed trait `3Flags`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Flags`: `3Flags` = "3Flags".asInstanceOf[`3Flags`]
   
   @js.native
-  sealed trait `3Signs` extends IconSetTypes
+  sealed trait `3Signs`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Signs`: `3Signs` = "3Signs".asInstanceOf[`3Signs`]
   
   @js.native
-  sealed trait `3Stars` extends IconSetTypes
+  sealed trait `3Stars`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Stars`: `3Stars` = "3Stars".asInstanceOf[`3Stars`]
   
   @js.native
-  sealed trait `3Symbols` extends IconSetTypes
+  sealed trait `3Symbols`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Symbols`: `3Symbols` = "3Symbols".asInstanceOf[`3Symbols`]
   
   @js.native
-  sealed trait `3Symbols2` extends IconSetTypes
+  sealed trait `3Symbols2`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Symbols2`: `3Symbols2` = "3Symbols2".asInstanceOf[`3Symbols2`]
   
   @js.native
-  sealed trait `3TrafficLights1` extends IconSetTypes
+  sealed trait `3TrafficLights1`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3TrafficLights1`: `3TrafficLights1` = "3TrafficLights1".asInstanceOf[`3TrafficLights1`]
   
   @js.native
-  sealed trait `3TrafficLights2` extends IconSetTypes
+  sealed trait `3TrafficLights2`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3TrafficLights2`: `3TrafficLights2` = "3TrafficLights2".asInstanceOf[`3TrafficLights2`]
   
   @js.native
-  sealed trait `3Triangles` extends IconSetTypes
+  sealed trait `3Triangles`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `3Triangles`: `3Triangles` = "3Triangles".asInstanceOf[`3Triangles`]
   
   @js.native
-  sealed trait `4Arrows` extends IconSetTypes
+  sealed trait `4Arrows`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `4Arrows`: `4Arrows` = "4Arrows".asInstanceOf[`4Arrows`]
   
   @js.native
-  sealed trait `4ArrowsGray` extends IconSetTypes
+  sealed trait `4ArrowsGray`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `4ArrowsGray`: `4ArrowsGray` = "4ArrowsGray".asInstanceOf[`4ArrowsGray`]
   
   @js.native
-  sealed trait `4Rating` extends IconSetTypes
+  sealed trait `4Rating`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `4Rating`: `4Rating` = "4Rating".asInstanceOf[`4Rating`]
   
   @js.native
-  sealed trait `4RedToBlack` extends IconSetTypes
+  sealed trait `4RedToBlack`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `4RedToBlack`: `4RedToBlack` = "4RedToBlack".asInstanceOf[`4RedToBlack`]
   
   @js.native
-  sealed trait `4TrafficLights` extends IconSetTypes
+  sealed trait `4TrafficLights`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `4TrafficLights`: `4TrafficLights` = "4TrafficLights".asInstanceOf[`4TrafficLights`]
   
   @js.native
-  sealed trait `5Arrows` extends IconSetTypes
+  sealed trait `5Arrows`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `5Arrows`: `5Arrows` = "5Arrows".asInstanceOf[`5Arrows`]
   
   @js.native
-  sealed trait `5ArrowsGray` extends IconSetTypes
+  sealed trait `5ArrowsGray`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `5ArrowsGray`: `5ArrowsGray` = "5ArrowsGray".asInstanceOf[`5ArrowsGray`]
   
   @js.native
-  sealed trait `5Boxes` extends IconSetTypes
+  sealed trait `5Boxes`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `5Boxes`: `5Boxes` = "5Boxes".asInstanceOf[`5Boxes`]
   
   @js.native
-  sealed trait `5Quarters` extends IconSetTypes
+  sealed trait `5Quarters`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `5Quarters`: `5Quarters` = "5Quarters".asInstanceOf[`5Quarters`]
   
   @js.native
-  sealed trait `5Rating` extends IconSetTypes
+  sealed trait `5Rating`
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def `5Rating`: `5Rating` = "5Rating".asInstanceOf[`5Rating`]
   
@@ -133,7 +172,9 @@ object exceljsStrings {
   def NA: NA = "NA".asInstanceOf[NA]
   
   @js.native
-  sealed trait NoIcons extends IconSetTypes
+  sealed trait NoIcons
+    extends StObject
+       with IconSetTypes
   @scala.inline
   def NoIcons: NoIcons = "NoIcons".asInstanceOf[NoIcons]
   
@@ -493,7 +534,9 @@ object exceljsStrings {
   def aboveAverage: aboveAverage = "aboveAverage".asInstanceOf[aboveAverage]
   
   @js.native
-  sealed trait absolute extends CommentEditAs
+  sealed trait absolute
+    extends StObject
+       with CommentEditAs
   @scala.inline
   def absolute: absolute = "absolute".asInstanceOf[absolute]
   
@@ -518,12 +561,16 @@ object exceljsStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait autoMax extends CfvoTypes
+  sealed trait autoMax
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def autoMax: autoMax = "autoMax".asInstanceOf[autoMax]
   
   @js.native
-  sealed trait autoMin extends CfvoTypes
+  sealed trait autoMin
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def autoMin: autoMin = "autoMin".asInstanceOf[autoMin]
   
@@ -534,7 +581,8 @@ object exceljsStrings {
   
   @js.native
   sealed trait between
-    extends CellIsOperators
+    extends StObject
+       with CellIsOperators
        with DataValidationOperator
   @scala.inline
   def between: between = "between".asInstanceOf[between]
@@ -585,17 +633,23 @@ object exceljsStrings {
   def colorScale: colorScale = "colorScale".asInstanceOf[colorScale]
   
   @js.native
-  sealed trait containsBlanks extends ContainsTextOperators
+  sealed trait containsBlanks
+    extends StObject
+       with ContainsTextOperators
   @scala.inline
   def containsBlanks: containsBlanks = "containsBlanks".asInstanceOf[containsBlanks]
   
   @js.native
-  sealed trait containsErrors extends ContainsTextOperators
+  sealed trait containsErrors
+    extends StObject
+       with ContainsTextOperators
   @scala.inline
   def containsErrors: containsErrors = "containsErrors".asInstanceOf[containsErrors]
   
   @js.native
-  sealed trait containsText extends ContainsTextOperators
+  sealed trait containsText
+    extends StObject
+       with ContainsTextOperators
   @scala.inline
   def containsText: containsText = "containsText".asInstanceOf[containsText]
   
@@ -620,37 +674,51 @@ object exceljsStrings {
   def custom: custom = "custom".asInstanceOf[custom]
   
   @js.native
-  sealed trait darkDown extends FillPatterns
+  sealed trait darkDown
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkDown: darkDown = "darkDown".asInstanceOf[darkDown]
   
   @js.native
-  sealed trait darkGray extends FillPatterns
+  sealed trait darkGray
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkGray: darkGray = "darkGray".asInstanceOf[darkGray]
   
   @js.native
-  sealed trait darkGrid extends FillPatterns
+  sealed trait darkGrid
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkGrid: darkGrid = "darkGrid".asInstanceOf[darkGrid]
   
   @js.native
-  sealed trait darkHorizontal extends FillPatterns
+  sealed trait darkHorizontal
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkHorizontal: darkHorizontal = "darkHorizontal".asInstanceOf[darkHorizontal]
   
   @js.native
-  sealed trait darkTrellis extends FillPatterns
+  sealed trait darkTrellis
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkTrellis: darkTrellis = "darkTrellis".asInstanceOf[darkTrellis]
   
   @js.native
-  sealed trait darkUp extends FillPatterns
+  sealed trait darkUp
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkUp: darkUp = "darkUp".asInstanceOf[darkUp]
   
   @js.native
-  sealed trait darkVertical extends FillPatterns
+  sealed trait darkVertical
+    extends StObject
+       with FillPatterns
   @scala.inline
   def darkVertical: darkVertical = "darkVertical".asInstanceOf[darkVertical]
   
@@ -660,12 +728,16 @@ object exceljsStrings {
   def dash: dash = "dash".asInstanceOf[dash]
   
   @js.native
-  sealed trait dashDot extends BorderStyle
+  sealed trait dashDot
+    extends StObject
+       with BorderStyle
   @scala.inline
   def dashDot: dashDot = "dashDot".asInstanceOf[dashDot]
   
   @js.native
-  sealed trait dashDotDot extends BorderStyle
+  sealed trait dashDotDot
+    extends StObject
+       with BorderStyle
   @scala.inline
   def dashDotDot: dashDotDot = "dashDotDot".asInstanceOf[dashDotDot]
   
@@ -695,12 +767,16 @@ object exceljsStrings {
   def distributed: distributed = "distributed".asInstanceOf[distributed]
   
   @js.native
-  sealed trait dotted extends BorderStyle
+  sealed trait dotted
+    extends StObject
+       with BorderStyle
   @scala.inline
   def dotted: dotted = "dotted".asInstanceOf[dotted]
   
   @js.native
-  sealed trait double extends BorderStyle
+  sealed trait double
+    extends StObject
+       with BorderStyle
   @scala.inline
   def double: double = "double".asInstanceOf[double]
   
@@ -721,7 +797,8 @@ object exceljsStrings {
   
   @js.native
   sealed trait equal
-    extends CellIsOperators
+    extends StObject
+       with CellIsOperators
        with DataValidationOperator
   @scala.inline
   def equal: equal = "equal".asInstanceOf[equal]
@@ -737,7 +814,9 @@ object exceljsStrings {
   def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait formula extends CfvoTypes
+  sealed trait formula
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def formula: formula = "formula".asInstanceOf[formula]
   
@@ -757,34 +836,45 @@ object exceljsStrings {
   def gradient: gradient = "gradient".asInstanceOf[gradient]
   
   @js.native
-  sealed trait gray0625 extends FillPatterns
+  sealed trait gray0625
+    extends StObject
+       with FillPatterns
   @scala.inline
   def gray0625: gray0625 = "gray0625".asInstanceOf[gray0625]
   
   @js.native
-  sealed trait gray125 extends FillPatterns
+  sealed trait gray125
+    extends StObject
+       with FillPatterns
   @scala.inline
   def gray125: gray125 = "gray125".asInstanceOf[gray125]
   
   @js.native
   sealed trait greaterThan
-    extends CellIsOperators
+    extends StObject
+       with CellIsOperators
        with DataValidationOperator
   @scala.inline
   def greaterThan: greaterThan = "greaterThan".asInstanceOf[greaterThan]
   
   @js.native
-  sealed trait greaterThanOrEqual extends DataValidationOperator
+  sealed trait greaterThanOrEqual
+    extends StObject
+       with DataValidationOperator
   @scala.inline
   def greaterThanOrEqual: greaterThanOrEqual = "greaterThanOrEqual".asInstanceOf[greaterThanOrEqual]
   
   @js.native
-  sealed trait hair extends BorderStyle
+  sealed trait hair
+    extends StObject
+       with BorderStyle
   @scala.inline
   def hair: hair = "hair".asInstanceOf[hair]
   
   @js.native
-  sealed trait hidden extends WorksheetState
+  sealed trait hidden
+    extends StObject
+       with WorksheetState
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -819,17 +909,23 @@ object exceljsStrings {
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait last7Days extends TimePeriodTypes
+  sealed trait last7Days
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def last7Days: last7Days = "last7Days".asInstanceOf[last7Days]
   
   @js.native
-  sealed trait lastMonth extends TimePeriodTypes
+  sealed trait lastMonth
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def lastMonth: lastMonth = "lastMonth".asInstanceOf[lastMonth]
   
   @js.native
-  sealed trait lastWeek extends TimePeriodTypes
+  sealed trait lastWeek
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
   
@@ -845,48 +941,65 @@ object exceljsStrings {
   
   @js.native
   sealed trait lessThan
-    extends CellIsOperators
+    extends StObject
+       with CellIsOperators
        with DataValidationOperator
   @scala.inline
   def lessThan: lessThan = "lessThan".asInstanceOf[lessThan]
   
   @js.native
-  sealed trait lessThanOrEqual extends DataValidationOperator
+  sealed trait lessThanOrEqual
+    extends StObject
+       with DataValidationOperator
   @scala.inline
   def lessThanOrEqual: lessThanOrEqual = "lessThanOrEqual".asInstanceOf[lessThanOrEqual]
   
   @js.native
-  sealed trait lightDown extends FillPatterns
+  sealed trait lightDown
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightDown: lightDown = "lightDown".asInstanceOf[lightDown]
   
   @js.native
-  sealed trait lightGray extends FillPatterns
+  sealed trait lightGray
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightGray: lightGray = "lightGray".asInstanceOf[lightGray]
   
   @js.native
-  sealed trait lightGrid extends FillPatterns
+  sealed trait lightGrid
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightGrid: lightGrid = "lightGrid".asInstanceOf[lightGrid]
   
   @js.native
-  sealed trait lightHorizontal extends FillPatterns
+  sealed trait lightHorizontal
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightHorizontal: lightHorizontal = "lightHorizontal".asInstanceOf[lightHorizontal]
   
   @js.native
-  sealed trait lightTrellis extends FillPatterns
+  sealed trait lightTrellis
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightTrellis: lightTrellis = "lightTrellis".asInstanceOf[lightTrellis]
   
   @js.native
-  sealed trait lightUp extends FillPatterns
+  sealed trait lightUp
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightUp: lightUp = "lightUp".asInstanceOf[lightUp]
   
   @js.native
-  sealed trait lightVertical extends FillPatterns
+  sealed trait lightVertical
+    extends StObject
+       with FillPatterns
   @scala.inline
   def lightVertical: lightVertical = "lightVertical".asInstanceOf[lightVertical]
   
@@ -906,32 +1019,44 @@ object exceljsStrings {
   def major: major = "major".asInstanceOf[major]
   
   @js.native
-  sealed trait max extends CfvoTypes
+  sealed trait max
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def max: max = "max".asInstanceOf[max]
   
   @js.native
-  sealed trait medium extends BorderStyle
+  sealed trait medium
+    extends StObject
+       with BorderStyle
   @scala.inline
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait mediumDashDot extends BorderStyle
+  sealed trait mediumDashDot
+    extends StObject
+       with BorderStyle
   @scala.inline
   def mediumDashDot: mediumDashDot = "mediumDashDot".asInstanceOf[mediumDashDot]
   
   @js.native
-  sealed trait mediumDashDotDot extends BorderStyle
+  sealed trait mediumDashDotDot
+    extends StObject
+       with BorderStyle
   @scala.inline
   def mediumDashDotDot: mediumDashDotDot = "mediumDashDotDot".asInstanceOf[mediumDashDotDot]
   
   @js.native
-  sealed trait mediumDashed extends BorderStyle
+  sealed trait mediumDashed
+    extends StObject
+       with BorderStyle
   @scala.inline
   def mediumDashed: mediumDashed = "mediumDashed".asInstanceOf[mediumDashed]
   
   @js.native
-  sealed trait mediumGray extends FillPatterns
+  sealed trait mediumGray
+    extends StObject
+       with FillPatterns
   @scala.inline
   def mediumGray: mediumGray = "mediumGray".asInstanceOf[mediumGray]
   
@@ -941,7 +1066,9 @@ object exceljsStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait min extends CfvoTypes
+  sealed trait min
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def min: min = "min".asInstanceOf[min]
   
@@ -951,17 +1078,23 @@ object exceljsStrings {
   def minor: minor = "minor".asInstanceOf[minor]
   
   @js.native
-  sealed trait nextMonth extends TimePeriodTypes
+  sealed trait nextMonth
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def nextMonth: nextMonth = "nextMonth".asInstanceOf[nextMonth]
   
   @js.native
-  sealed trait nextWeek extends TimePeriodTypes
+  sealed trait nextWeek
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def nextWeek: nextWeek = "nextWeek".asInstanceOf[nextWeek]
   
   @js.native
-  sealed trait none_ extends FillPatterns
+  sealed trait none_
+    extends StObject
+       with FillPatterns
   @scala.inline
   def none_ : none_ = "none".asInstanceOf[none_]
   
@@ -971,32 +1104,44 @@ object exceljsStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait notBetween extends DataValidationOperator
+  sealed trait notBetween
+    extends StObject
+       with DataValidationOperator
   @scala.inline
   def notBetween: notBetween = "notBetween".asInstanceOf[notBetween]
   
   @js.native
-  sealed trait notContainsBlanks extends ContainsTextOperators
+  sealed trait notContainsBlanks
+    extends StObject
+       with ContainsTextOperators
   @scala.inline
   def notContainsBlanks: notContainsBlanks = "notContainsBlanks".asInstanceOf[notContainsBlanks]
   
   @js.native
-  sealed trait notContainsErrors extends ContainsTextOperators
+  sealed trait notContainsErrors
+    extends StObject
+       with ContainsTextOperators
   @scala.inline
   def notContainsErrors: notContainsErrors = "notContainsErrors".asInstanceOf[notContainsErrors]
   
   @js.native
-  sealed trait notEqual extends DataValidationOperator
+  sealed trait notEqual
+    extends StObject
+       with DataValidationOperator
   @scala.inline
   def notEqual: notEqual = "notEqual".asInstanceOf[notEqual]
   
   @js.native
-  sealed trait num extends CfvoTypes
+  sealed trait num
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def num: num = "num".asInstanceOf[num]
   
   @js.native
-  sealed trait oneCells extends CommentEditAs
+  sealed trait oneCells
+    extends StObject
+       with CommentEditAs
   @scala.inline
   def oneCells: oneCells = "oneCells".asInstanceOf[oneCells]
   
@@ -1026,12 +1171,16 @@ object exceljsStrings {
   def pattern: pattern = "pattern".asInstanceOf[pattern]
   
   @js.native
-  sealed trait percent extends CfvoTypes
+  sealed trait percent
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def percent: percent = "percent".asInstanceOf[percent]
   
   @js.native
-  sealed trait percentile extends CfvoTypes
+  sealed trait percentile
+    extends StObject
+       with CfvoTypes
   @scala.inline
   def percentile: percentile = "percentile".asInstanceOf[percentile]
   
@@ -1076,12 +1225,16 @@ object exceljsStrings {
   def singleAccounting: singleAccounting = "singleAccounting".asInstanceOf[singleAccounting]
   
   @js.native
-  sealed trait slantDashDot extends BorderStyle
+  sealed trait slantDashDot
+    extends StObject
+       with BorderStyle
   @scala.inline
   def slantDashDot: slantDashDot = "slantDashDot".asInstanceOf[slantDashDot]
   
   @js.native
-  sealed trait solid extends FillPatterns
+  sealed trait solid
+    extends StObject
+       with FillPatterns
   @scala.inline
   def solid: solid = "solid".asInstanceOf[solid]
   
@@ -1116,22 +1269,30 @@ object exceljsStrings {
   def textLength: textLength = "textLength".asInstanceOf[textLength]
   
   @js.native
-  sealed trait thick extends BorderStyle
+  sealed trait thick
+    extends StObject
+       with BorderStyle
   @scala.inline
   def thick: thick = "thick".asInstanceOf[thick]
   
   @js.native
-  sealed trait thin extends BorderStyle
+  sealed trait thin
+    extends StObject
+       with BorderStyle
   @scala.inline
   def thin: thin = "thin".asInstanceOf[thin]
   
   @js.native
-  sealed trait thisMonth extends TimePeriodTypes
+  sealed trait thisMonth
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def thisMonth: thisMonth = "thisMonth".asInstanceOf[thisMonth]
   
   @js.native
-  sealed trait thisWeek extends TimePeriodTypes
+  sealed trait thisWeek
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def thisWeek: thisWeek = "thisWeek".asInstanceOf[thisWeek]
   
@@ -1141,12 +1302,16 @@ object exceljsStrings {
   def timePeriod: timePeriod = "timePeriod".asInstanceOf[timePeriod]
   
   @js.native
-  sealed trait today extends TimePeriodTypes
+  sealed trait today
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def today: today = "today".asInstanceOf[today]
   
   @js.native
-  sealed trait tomorrow extends TimePeriodTypes
+  sealed trait tomorrow
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def tomorrow: tomorrow = "tomorrow".asInstanceOf[tomorrow]
   
@@ -1171,7 +1336,9 @@ object exceljsStrings {
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
-  sealed trait twoCells extends CommentEditAs
+  sealed trait twoCells
+    extends StObject
+       with CommentEditAs
   @scala.inline
   def twoCells: twoCells = "twoCells".asInstanceOf[twoCells]
   
@@ -1186,12 +1353,16 @@ object exceljsStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait veryHidden extends WorksheetState
+  sealed trait veryHidden
+    extends StObject
+       with WorksheetState
   @scala.inline
   def veryHidden: veryHidden = "veryHidden".asInstanceOf[veryHidden]
   
   @js.native
-  sealed trait visible extends WorksheetState
+  sealed trait visible
+    extends StObject
+       with WorksheetState
   @scala.inline
   def visible: visible = "visible".asInstanceOf[visible]
   
@@ -1201,7 +1372,9 @@ object exceljsStrings {
   def whole: whole = "whole".asInstanceOf[whole]
   
   @js.native
-  sealed trait yesterday extends TimePeriodTypes
+  sealed trait yesterday
+    extends StObject
+       with TimePeriodTypes
   @scala.inline
   def yesterday: yesterday = "yesterday".asInstanceOf[yesterday]
 }

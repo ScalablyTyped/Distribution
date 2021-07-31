@@ -11,7 +11,6 @@ import typings.kdbxweb.anon.HistoryMaxItems
 import typings.kdbxweb.anon.None
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Consts {

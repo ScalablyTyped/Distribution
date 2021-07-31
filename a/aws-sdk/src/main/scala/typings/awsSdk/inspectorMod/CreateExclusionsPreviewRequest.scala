@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateExclusionsPreviewRequest extends StObject {
   
   /**
     * The ARN that specifies the assessment template for which you want to create an exclusions preview.
     */
-  var assessmentTemplateArn: Arn = js.native
+  var assessmentTemplateArn: Arn
 }
 object CreateExclusionsPreviewRequest {
   

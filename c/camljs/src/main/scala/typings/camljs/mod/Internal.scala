@@ -2,7 +2,6 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("camljs", "Internal")
@@ -10,31 +9,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Internal () extends StObject
 object Internal {
   
-  /* static member */
-  @JSImport("camljs", "Internal.createExpression")
+  @JSImport("camljs", "Internal")
   @js.native
-  def createExpression(): IFieldExpression = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("camljs", "Internal.createRawQuery")
-  @js.native
-  def createRawQuery(xml: String): IRawQuery = js.native
+  @scala.inline
+  def createExpression(): IFieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createExpression")().asInstanceOf[IFieldExpression]
   
   /* static member */
-  @JSImport("camljs", "Internal.createView")
-  @js.native
-  def createView(): IView = js.native
-  @JSImport("camljs", "Internal.createView")
-  @js.native
-  def createView(viewFields: js.Array[ViewField]): IView = js.native
+  @scala.inline
+  def createRawQuery(xml: String): IRawQuery = ^.asInstanceOf[js.Dynamic].applyDynamic("createRawQuery")(xml.asInstanceOf[js.Any]).asInstanceOf[IRawQuery]
   
   /* static member */
-  @JSImport("camljs", "Internal.createViewFields")
-  @js.native
-  def createViewFields(viewFields: js.Array[String]): IFinalizableToString = js.native
+  @scala.inline
+  def createView(): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")().asInstanceOf[IView]
+  @scala.inline
+  def createView(viewFields: js.Array[ViewField]): IView = ^.asInstanceOf[js.Dynamic].applyDynamic("createView")(viewFields.asInstanceOf[js.Any]).asInstanceOf[IView]
   
   /* static member */
-  @JSImport("camljs", "Internal.createWhere")
-  @js.native
-  def createWhere(): IFieldExpression = js.native
+  @scala.inline
+  def createViewFields(viewFields: js.Array[String]): IFinalizableToString = ^.asInstanceOf[js.Dynamic].applyDynamic("createViewFields")(viewFields.asInstanceOf[js.Any]).asInstanceOf[IFinalizableToString]
+  
+  /* static member */
+  @scala.inline
+  def createWhere(): IFieldExpression = ^.asInstanceOf[js.Dynamic].applyDynamic("createWhere")().asInstanceOf[IFieldExpression]
 }

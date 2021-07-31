@@ -8,90 +8,72 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("asar", "createPackage")
+  @JSImport("asar", JSImport.Namespace)
   @js.native
-  def createPackage(src: String, dest: String): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("asar", "createPackageFromFiles")
-  @js.native
-  def createPackageFromFiles(src: String, dest: String, filenames: js.Array[String]): js.Promise[Unit] = js.native
-  @JSImport("asar", "createPackageFromFiles")
-  @js.native
-  def createPackageFromFiles(
-    src: String,
-    dest: String,
-    filenames: js.Array[String],
-    metadata: js.UndefOr[scala.Nothing],
-    options: CreateOptions
-  ): js.Promise[Unit] = js.native
-  @JSImport("asar", "createPackageFromFiles")
-  @js.native
-  def createPackageFromFiles(src: String, dest: String, filenames: js.Array[String], metadata: InputMetadata): js.Promise[Unit] = js.native
-  @JSImport("asar", "createPackageFromFiles")
-  @js.native
+  @scala.inline
+  def createPackage(src: String, dest: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackage")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def createPackageFromFiles(src: String, dest: String, filenames: js.Array[String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackageFromFiles")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], filenames.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def createPackageFromFiles(src: String, dest: String, filenames: js.Array[String], metadata: Unit, options: CreateOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackageFromFiles")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], filenames.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def createPackageFromFiles(src: String, dest: String, filenames: js.Array[String], metadata: InputMetadata): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackageFromFiles")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], filenames.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def createPackageFromFiles(
     src: String,
     dest: String,
     filenames: js.Array[String],
     metadata: InputMetadata,
     options: CreateOptions
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackageFromFiles")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], filenames.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("asar", "createPackageWithOptions")
-  @js.native
-  def createPackageWithOptions(src: String, dest: String, options: CreateOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def createPackageWithOptions(src: String, dest: String, options: CreateOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPackageWithOptions")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("asar", "extractAll")
-  @js.native
-  def extractAll(archive: String, dest: String): Unit = js.native
+  @scala.inline
+  def extractAll(archive: String, dest: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("extractAll")(archive.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("asar", "extractFile")
-  @js.native
-  def extractFile(archive: String, filename: String): Buffer = js.native
+  @scala.inline
+  def extractFile(archive: String, filename: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFile")(archive.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("asar", "listPackage")
-  @js.native
-  def listPackage(archive: String): js.Array[String] = js.native
-  @JSImport("asar", "listPackage")
-  @js.native
-  def listPackage(archive: String, options: ListOptions): js.Array[String] = js.native
+  @scala.inline
+  def listPackage(archive: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listPackage")(archive.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def listPackage(archive: String, options: ListOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listPackage")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("asar", "statFile")
-  @js.native
-  def statFile(archive: String, filename: String): Metadata = js.native
-  @JSImport("asar", "statFile")
-  @js.native
-  def statFile(archive: String, filename: String, followLinks: Boolean): Metadata = js.native
+  @scala.inline
+  def statFile(archive: String, filename: String): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("statFile")(archive.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Metadata]
+  @scala.inline
+  def statFile(archive: String, filename: String, followLinks: Boolean): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("statFile")(archive.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], followLinks.asInstanceOf[js.Any])).asInstanceOf[Metadata]
   
-  @JSImport("asar", "uncache")
-  @js.native
-  def uncache(archive: String): Boolean = js.native
+  @scala.inline
+  def uncache(archive: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("uncache")(archive.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("asar", "uncacheAll")
-  @js.native
-  def uncacheAll(): Unit = js.native
+  @scala.inline
+  def uncacheAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("uncacheAll")().asInstanceOf[Unit]
   
-  @js.native
   trait CreateOptions extends StObject {
     
-    var dot: js.UndefOr[Boolean] = js.native
+    var dot: js.UndefOr[Boolean] = js.undefined
     
-    var globOptions: js.UndefOr[IOptions] = js.native
+    var globOptions: js.UndefOr[IOptions] = js.undefined
     
-    var ordering: js.UndefOr[String] = js.native
+    var ordering: js.UndefOr[String] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[js.Function1[/* filePath */ String, ReadWriteStream | Unit]] = js.native
+    var transform: js.UndefOr[js.Function1[/* filePath */ String, ReadWriteStream | Unit]] = js.undefined
     
-    var unpack: js.UndefOr[String] = js.native
+    var unpack: js.UndefOr[String] = js.undefined
     
-    var unpackDir: js.UndefOr[String] = js.native
+    var unpackDir: js.UndefOr[String] = js.undefined
   }
   object CreateOptions {
     
@@ -148,13 +130,12 @@ object mod {
     }
   }
   
-  /* Inlined asar.asar.EntryMetadata & {  files :{[property: string] : asar.asar.EntryMetadata}} */
-  @js.native
-  trait DirectoryMetadata extends Metadata {
+  trait DirectoryMetadata
+    extends StObject
+       with EntryMetadata
+       with Metadata {
     
-    var files: StringDictionary[EntryMetadata] = js.native
-    
-    var unpacked: Boolean = js.native
+    var files: StringDictionary[EntryMetadata]
   }
   object DirectoryMetadata {
     
@@ -169,16 +150,12 @@ object mod {
       
       @scala.inline
       def setFiles(value: StringDictionary[EntryMetadata]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setUnpacked(value: Boolean): Self = StObject.set(x, "unpacked", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait EntryMetadata extends StObject {
     
-    var unpacked: Boolean = js.native
+    var unpacked: Boolean
   }
   object EntryMetadata {
     
@@ -196,17 +173,16 @@ object mod {
     }
   }
   
-  /* Inlined asar.asar.EntryMetadata & {  executable :true | undefined,   offset :number | undefined,   size :number | undefined} */
-  @js.native
-  trait FileMetadata extends Metadata {
+  trait FileMetadata
+    extends StObject
+       with EntryMetadata
+       with Metadata {
     
-    var executable: js.UndefOr[`true`] = js.native
+    var executable: js.UndefOr[`true`] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
-    
-    var unpacked: Boolean = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object FileMetadata {
     
@@ -236,9 +212,6 @@ object mod {
       
       @scala.inline
       def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      @scala.inline
-      def setUnpacked(value: Boolean): Self = StObject.set(x, "unpacked", value.asInstanceOf[js.Any])
     }
   }
   
@@ -262,10 +235,11 @@ object mod {
     def link: typings.asar.asarStrings.link = "link".asInstanceOf[typings.asar.asarStrings.link]
   }
   
-  @js.native
-  trait LinkMetadata extends Metadata {
+  trait LinkMetadata
+    extends StObject
+       with Metadata {
     
-    var link: String = js.native
+    var link: String
   }
   object LinkMetadata {
     
@@ -283,10 +257,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
-    var isPack: Boolean = js.native
+    var isPack: Boolean
   }
   object ListOptions {
     

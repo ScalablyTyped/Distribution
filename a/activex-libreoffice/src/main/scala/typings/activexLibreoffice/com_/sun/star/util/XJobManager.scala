@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manage cancelable jobs. */
-@js.native
-trait XJobManager extends XInterface {
+trait XJobManager
+  extends StObject
+     with XInterface {
   
   /** cancel all registered jobs. */
-  def cancelAllJobs(): Unit = js.native
+  def cancelAllJobs(): Unit
   
   /** registers a cancelable job. */
-  def registerJob(Job: XCancellable): Unit = js.native
+  def registerJob(Job: XCancellable): Unit
   
   /** deregisters a cancelable jobs. */
-  def releaseJob(Job: XCancellable): Unit = js.native
+  def releaseJob(Job: XCancellable): Unit
 }
 object XJobManager {
   

@@ -21,7 +21,6 @@ import typings.node.Buffer
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
@@ -35,39 +34,44 @@ object metadataMod {
     object IndexKind extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[IndexKind with Double] = js.native
+      def apply(value: Double): js.UndefOr[IndexKind & Double] = js.native
       
       @js.native
-      sealed trait composites extends IndexKind
-      /* 1 */ val composites: typings.cassandraDriver.metadataMod.metadata.IndexKind.composites with Double = js.native
+      sealed trait composites
+        extends StObject
+           with IndexKind
+      /* 1 */ val composites: typings.cassandraDriver.metadataMod.metadata.IndexKind.composites & Double = js.native
       
       @js.native
-      sealed trait custom extends IndexKind
-      /* 0 */ val custom: typings.cassandraDriver.metadataMod.metadata.IndexKind.custom with Double = js.native
+      sealed trait custom
+        extends StObject
+           with IndexKind
+      /* 0 */ val custom: typings.cassandraDriver.metadataMod.metadata.IndexKind.custom & Double = js.native
       
       @js.native
-      sealed trait keys extends IndexKind
-      /* 0 */ val keys: typings.cassandraDriver.metadataMod.metadata.IndexKind.keys with Double = js.native
+      sealed trait keys
+        extends StObject
+           with IndexKind
+      /* 0 */ val keys: typings.cassandraDriver.metadataMod.metadata.IndexKind.keys & Double = js.native
     }
     
-    @js.native
     trait Aggregate extends StObject {
       
-      var argumentTypes: js.Array[Code] = js.native
+      var argumentTypes: js.Array[Code]
       
-      var finalFunction: String = js.native
+      var finalFunction: String
       
-      var initCondition: String = js.native
+      var initCondition: String
       
-      var keyspaceName: String = js.native
+      var keyspaceName: String
       
-      var returnType: String = js.native
+      var returnType: String
       
-      var signature: js.Array[String] = js.native
+      var signature: js.Array[String]
       
-      var stateFunction: String = js.native
+      var stateFunction: String
       
-      var stateType: String = js.native
+      var stateType: String
     }
     object Aggregate {
       
@@ -121,14 +125,13 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait ClientState extends StObject {
       
-      def getConnectedHosts(): js.Array[Host] = js.native
+      def getConnectedHosts(): js.Array[Host]
       
-      def getInFlightQueries(host: Host): Double = js.native
+      def getInFlightQueries(host: Host): Double
       
-      def getOpenConnections(host: Host): Double = js.native
+      def getOpenConnections(host: Host): Double
     }
     object ClientState {
       
@@ -156,12 +159,11 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait ColumnInfo extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var `type`: DataTypeInfo = js.native
+      var `type`: DataTypeInfo
     }
     object ColumnInfo {
       
@@ -183,52 +185,51 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait DataCollection extends StObject {
       
-      var bloomFilterFalsePositiveChance: Double = js.native
+      var bloomFilterFalsePositiveChance: Double
       
-      var caching: String = js.native
+      var caching: String
       
-      var clusteringKeys: js.Array[ColumnInfo] = js.native
+      var clusteringKeys: js.Array[ColumnInfo]
       
-      var clusteringOrder: js.Array[String] = js.native
+      var clusteringOrder: js.Array[String]
       
-      var columns: js.Array[ColumnInfo] = js.native
+      var columns: js.Array[ColumnInfo]
       
-      var columnsByName: StringDictionary[ColumnInfo] = js.native
+      var columnsByName: StringDictionary[ColumnInfo]
       
-      var comment: String = js.native
+      var comment: String
       
-      var compactionClass: String = js.native
+      var compactionClass: String
       
-      var compactionOptions: StringDictionary[js.Any] = js.native
+      var compactionOptions: StringDictionary[js.Any]
       
-      var compression: Dictoption = js.native
+      var compression: Dictoption
       
-      var crcCheckChange: js.UndefOr[Double] = js.native
+      var crcCheckChange: js.UndefOr[Double] = js.undefined
       
-      var defaultTtl: Double = js.native
+      var defaultTtl: Double
       
-      var extensions: StringDictionary[js.Any] = js.native
+      var extensions: StringDictionary[js.Any]
       
-      var gcGraceSeconds: Double = js.native
+      var gcGraceSeconds: Double
       
-      var localReadRepairChance: Double = js.native
+      var localReadRepairChance: Double
       
-      var maxIndexInterval: js.UndefOr[Double] = js.native
+      var maxIndexInterval: js.UndefOr[Double] = js.undefined
       
-      var minIndexInterval: js.UndefOr[Double] = js.native
+      var minIndexInterval: js.UndefOr[Double] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var partitionKeys: js.Array[ColumnInfo] = js.native
+      var partitionKeys: js.Array[ColumnInfo]
       
-      var populateCacheOnFlush: Boolean = js.native
+      var populateCacheOnFlush: Boolean
       
-      var readRepairChance: Double = js.native
+      var readRepairChance: Double
       
-      var speculativeRetry: String = js.native
+      var speculativeRetry: String
     }
     object DataCollection {
       
@@ -350,14 +351,13 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait DataTypeInfo extends StObject {
       
-      var code: dataTypes = js.native
+      var code: dataTypes
       
-      var info: String | DataTypeInfo | js.Array[DataTypeInfo] = js.native
+      var info: String | DataTypeInfo | js.Array[DataTypeInfo]
       
-      var options: Frozen = js.native
+      var options: Frozen
     }
     object DataTypeInfo {
       
@@ -384,22 +384,21 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait Index extends StObject {
       
-      def isCompositesKind(): Boolean = js.native
+      def isCompositesKind(): Boolean
       
-      def isCustomKind(): Boolean = js.native
+      def isCustomKind(): Boolean
       
-      def isKeysKind(): Boolean = js.native
+      def isKeysKind(): Boolean
       
-      var kind: IndexKind = js.native
+      var kind: IndexKind
       
-      var name: String = js.native
+      var name: String
       
-      var options: js.Object = js.native
+      var options: js.Object
       
-      var target: String = js.native
+      var target: String
     }
     object Index {
       
@@ -443,14 +442,15 @@ object metadataMod {
       }
     }
     
-    @js.native
-    trait MaterializedView extends DataCollection {
+    trait MaterializedView
+      extends StObject
+         with DataCollection {
       
-      var includeAllColumns: Boolean = js.native
+      var includeAllColumns: Boolean
       
-      var tableName: String = js.native
+      var tableName: String
       
-      var whereClause: String = js.native
+      var whereClause: String
     }
     object MaterializedView {
       
@@ -563,22 +563,21 @@ object metadataMod {
       def refreshKeyspaces(waitReconnect: Boolean, callback: EmptyCallback): Unit = js.native
     }
     
-    @js.native
     trait QueryTrace extends StObject {
       
-      var clientAddress: String = js.native
+      var clientAddress: String
       
-      var coordinator: InetAddress = js.native
+      var coordinator: InetAddress
       
-      var duration: Double = js.native
+      var duration: Double
       
-      var events: js.Array[Activity] = js.native
+      var events: js.Array[Activity]
       
-      var parameters: StringDictionary[js.Any] = js.native
+      var parameters: StringDictionary[js.Any]
       
-      var requestType: String = js.native
+      var requestType: String
       
-      var startedAt: Double | Long = js.native
+      var startedAt: Double | Long
     }
     object QueryTrace {
       
@@ -625,26 +624,25 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait SchemaFunction extends StObject {
       
-      var argumentNames: js.Array[String] = js.native
+      var argumentNames: js.Array[String]
       
-      var argumentTypes: js.Array[Code] = js.native
+      var argumentTypes: js.Array[Code]
       
-      var body: String = js.native
+      var body: String
       
-      var calledOnNullInput: Boolean = js.native
+      var calledOnNullInput: Boolean
       
-      var keyspaceName: String = js.native
+      var keyspaceName: String
       
-      var language: String = js.native
+      var language: String
       
-      var name: String = js.native
+      var name: String
       
-      var returnType: String = js.native
+      var returnType: String
       
-      var signature: js.Array[String] = js.native
+      var signature: js.Array[String]
     }
     object SchemaFunction {
       
@@ -705,22 +703,23 @@ object metadataMod {
       }
     }
     
-    @js.native
-    trait TableMetadata extends DataCollection {
+    trait TableMetadata
+      extends StObject
+         with DataCollection {
       
-      var cdc: js.UndefOr[Boolean] = js.native
+      var cdc: js.UndefOr[Boolean] = js.undefined
       
-      var indexInterval: js.UndefOr[Double] = js.native
+      var indexInterval: js.UndefOr[Double] = js.undefined
       
-      var indexes: js.Array[Index] = js.native
+      var indexes: js.Array[Index]
       
-      var isCompact: Boolean = js.native
+      var isCompact: Boolean
       
-      var memtableFlushPeriod: Double = js.native
+      var memtableFlushPeriod: Double
       
-      var replicateOnWrite: Boolean = js.native
+      var replicateOnWrite: Boolean
       
-      var virtual: Boolean = js.native
+      var virtual: Boolean
     }
     object TableMetadata {
       
@@ -790,12 +789,11 @@ object metadataMod {
       }
     }
     
-    @js.native
     trait Udt extends StObject {
       
-      var fields: js.Array[ColumnInfo] = js.native
+      var fields: js.Array[ColumnInfo]
       
-      var name: String = js.native
+      var name: String
     }
     object Udt {
       

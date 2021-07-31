@@ -2,30 +2,28 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLSnippets extends StObject {
   
   /*HTML that gives the download link for the STIX fonts only. (Used in place of fonts when the HTML-CSS option
     * for availableFonts only includes the STIX fonts.)
     */
-  var STIXfonts: js.UndefOr[String] = js.native
+  var STIXfonts: js.UndefOr[String] = js.undefined
   
   /*HTML that gives the download link for the MathJax TeX fonts only. (Used in place of fonts when the HTML-CSS
     * option for availableFonts only includes the TeX fonts.)
     */
-  var TeXfonts: js.UndefOr[String] = js.native
+  var TeXfonts: js.UndefOr[String] = js.undefined
   
   /*The HTML for the close box in the FontWarning message.*/
-  var closeBox: js.UndefOr[String] = js.native
+  var closeBox: js.UndefOr[String] = js.undefined
   
   /*HTML that includes links to the MathJax and STIX font download pages.*/
-  var fonts: js.UndefOr[String] = js.native
+  var fonts: js.UndefOr[String] = js.undefined
   
   /*The HTML for a paragraph suggesting an upgrade to a more modern browser that supports web fonts.*/
-  var webfonts: js.UndefOr[String] = js.native
+  var webfonts: js.UndefOr[String] = js.undefined
 }
 object HTMLSnippets {
   

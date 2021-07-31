@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1VideoContext extends StObject {
   
   /** Config for EXPLICIT_CONTENT_DETECTION. */
-  var explicitContentDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig] = js.native
+  var explicitContentDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1ExplicitContentDetectionConfig] = js.undefined
   
   /** Config for FACE_DETECTION. */
-  var faceDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1FaceDetectionConfig] = js.native
+  var faceDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1FaceDetectionConfig] = js.undefined
   
   /** Config for LABEL_DETECTION. */
-  var labelDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1LabelDetectionConfig] = js.native
+  var labelDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1LabelDetectionConfig] = js.undefined
   
   /** Config for OBJECT_TRACKING. */
-  var objectTrackingConfig: js.UndefOr[GoogleCloudVideointelligenceV1ObjectTrackingConfig] = js.native
+  var objectTrackingConfig: js.UndefOr[GoogleCloudVideointelligenceV1ObjectTrackingConfig] = js.undefined
   
   /** Config for PERSON_DETECTION. */
-  var personDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1PersonDetectionConfig] = js.native
+  var personDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1PersonDetectionConfig] = js.undefined
   
   /** Video segments to annotate. The segments may overlap and are not required to be contiguous or span the whole video. If unspecified, each video is treated as a single segment. */
-  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1VideoSegment]] = js.native
+  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1VideoSegment]] = js.undefined
   
   /** Config for SHOT_CHANGE_DETECTION. */
-  var shotChangeDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1ShotChangeDetectionConfig] = js.native
+  var shotChangeDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1ShotChangeDetectionConfig] = js.undefined
   
   /** Config for SPEECH_TRANSCRIPTION. */
-  var speechTranscriptionConfig: js.UndefOr[GoogleCloudVideointelligenceV1SpeechTranscriptionConfig] = js.native
+  var speechTranscriptionConfig: js.UndefOr[GoogleCloudVideointelligenceV1SpeechTranscriptionConfig] = js.undefined
   
   /** Config for TEXT_DETECTION. */
-  var textDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1TextDetectionConfig] = js.native
+  var textDetectionConfig: js.UndefOr[GoogleCloudVideointelligenceV1TextDetectionConfig] = js.undefined
 }
 object GoogleCloudVideointelligenceV1VideoContext {
   

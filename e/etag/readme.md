@@ -10,9 +10,9 @@ Create simple HTTP ETags
 | ------------------ | :-------------: |
 | Full name          | etag |
 | Keywords           | etag, http, res |
-| # releases         | 1 |
-| # dependents       | 647 |
-| # downloads        | 565638584 |
+| # releases         | 0 |
+| # dependents       | 704 |
+| # downloads        | 662989098 |
 | # stars            | 20 |
 
 ## Links

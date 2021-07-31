@@ -3,17 +3,15 @@ package typings.cssTree.mod
 import typings.cssTree.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CssLocation extends StObject {
   
-  var end: Column = js.native
+  var end: Column
   
-  var source: String = js.native
+  var source: String
   
-  var start: Column = js.native
+  var start: Column
 }
 object CssLocation {
   

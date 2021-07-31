@@ -5,10 +5,8 @@ import typings.electron.electronStrings.everything
 import typings.electron.electronStrings.includeSensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartLoggingOptions extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait StartLoggingOptions extends StObject {
     * authentication data. Setting it to `everything` will include all bytes
     * transferred on sockets. Can be `default`, `includeSensitive` or `everything`.
     */
-  var captureMode: js.UndefOr[default | includeSensitive | everything] = js.native
+  var captureMode: js.UndefOr[default | includeSensitive | everything] = js.undefined
   
   /**
     * When the log grows beyond this size, logging will automatically stop. Defaults
     * to unlimited.
     */
-  var maxFileSize: js.UndefOr[Double] = js.native
+  var maxFileSize: js.UndefOr[Double] = js.undefined
 }
 object StartLoggingOptions {
   

@@ -2,20 +2,18 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new slide.
   */
-@js.native
 trait SchemaCreateSlideRequest extends StObject {
   
   /**
     * The optional zero-based index indicating where to insert the slides.  If
     * you don&#39;t specify an index, the new slide is created at the end.
     */
-  var insertionIndex: js.UndefOr[Double] = js.native
+  var insertionIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -26,7 +24,7 @@ trait SchemaCreateSlideRequest extends StObject {
     * must not be less than 5 or greater than 50.  If you don&#39;t specify an
     * ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional list of object ID mappings from the placeholder(s) on the
@@ -34,7 +32,7 @@ trait SchemaCreateSlideRequest extends StObject {
     * that specified layout. Can only be used when `slide_layout_reference` is
     * specified.
     */
-  var placeholderIdMappings: js.UndefOr[js.Array[SchemaLayoutPlaceholderIdMapping]] = js.native
+  var placeholderIdMappings: js.UndefOr[js.Array[SchemaLayoutPlaceholderIdMapping]] = js.undefined
   
   /**
     * Layout reference of the slide to be inserted, based on the *current
@@ -45,7 +43,7 @@ trait SchemaCreateSlideRequest extends StObject {
     * error is returned.  If you don&#39;t specify a layout reference, then the
     * new slide will use the predefined layout `BLANK`.
     */
-  var slideLayoutReference: js.UndefOr[SchemaLayoutReference] = js.native
+  var slideLayoutReference: js.UndefOr[SchemaLayoutReference] = js.undefined
 }
 object SchemaCreateSlideRequest {
   

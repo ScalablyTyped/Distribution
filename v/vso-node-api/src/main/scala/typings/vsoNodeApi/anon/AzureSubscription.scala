@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureSubscription extends StObject {
   
-  var azureSubscription: scala.Double = js.native
+  var azureSubscription: scala.Double
   
-  var chef: scala.Double = js.native
+  var chef: scala.Double
   
-  var custom: scala.Double = js.native
+  var custom: scala.Double
   
-  var generic: scala.Double = js.native
+  var generic: scala.Double
 }
 object AzureSubscription {
   

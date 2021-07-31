@@ -2,21 +2,19 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResults extends StObject {
   
-  var disconnected: Boolean = js.native
+  var disconnected: Boolean
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var exitCode: Double = js.native
+  var exitCode: Double
   
-  var failed: Double = js.native
+  var failed: Double
   
-  var success: Double = js.native
+  var success: Double
 }
 object TestResults {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentParameter extends StObject {
   
   /**
     * If specified, the default values for the parameters. Parameters without a default value are required. Parameters with a default value are optional.
     */
-  var DefaultValue: js.UndefOr[DocumentParameterDefaultValue] = js.native
+  var DefaultValue: js.UndefOr[DocumentParameterDefaultValue] = js.undefined
   
   /**
     * A description of what the parameter does, how to use it, the default value, and whether or not the parameter is optional.
     */
-  var Description: js.UndefOr[DocumentParameterDescrption] = js.native
+  var Description: js.UndefOr[DocumentParameterDescrption] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var Name: js.UndefOr[DocumentParameterName] = js.native
+  var Name: js.UndefOr[DocumentParameterName] = js.undefined
   
   /**
     * The type of parameter. The type can be either String or StringList.
     */
-  var Type: js.UndefOr[DocumentParameterType] = js.native
+  var Type: js.UndefOr[DocumentParameterType] = js.undefined
 }
 object DocumentParameter {
   

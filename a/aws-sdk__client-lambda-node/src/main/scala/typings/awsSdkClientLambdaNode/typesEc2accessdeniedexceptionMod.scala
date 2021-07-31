@@ -3,22 +3,22 @@ package typings.awsSdkClientLambdaNode
 import typings.awsSdkClientLambdaNode.invokeExceptionsUnionMod.InvokeExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEc2accessdeniedexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EC2AccessDeniedExceptionDetails> * / any */ @js.native
-  trait EC2AccessDeniedException extends InvokeExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_EC2AccessDeniedExceptionDetails> * / any */ trait EC2AccessDeniedException
+    extends StObject
+       with InvokeExceptionsUnion {
     
-    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2AccessDeniedException = js.native
+    var name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2AccessDeniedException
   }
   object EC2AccessDeniedException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.EC2AccessDeniedException): EC2AccessDeniedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): EC2AccessDeniedException = {
+      val __obj = js.Dynamic.literal(name = "EC2AccessDeniedException")
       __obj.asInstanceOf[EC2AccessDeniedException]
     }
     
@@ -30,18 +30,17 @@ object typesEc2accessdeniedexceptionMod {
     }
   }
   
-  @js.native
   trait EC2AccessDeniedExceptionDetails extends StObject {
     
     /**
       * _String shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * _String shape
       */
-    var Type: js.UndefOr[String] = js.native
+    var Type: js.UndefOr[String] = js.undefined
   }
   object EC2AccessDeniedExceptionDetails {
     

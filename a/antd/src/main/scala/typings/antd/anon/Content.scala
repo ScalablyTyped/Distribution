@@ -3,17 +3,15 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: ReactNode = js.native
+  var content: ReactNode
   
-  var ellipsis: Boolean = js.native
+  var ellipsis: Boolean
   
-  var text: String = js.native
+  var text: String
 }
 object Content {
   

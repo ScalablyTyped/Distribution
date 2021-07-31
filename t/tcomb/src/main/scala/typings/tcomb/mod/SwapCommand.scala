@@ -3,14 +3,14 @@ package typings.tcomb.mod
 import typings.tcomb.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SwapCommand extends Command {
+trait SwapCommand
+  extends StObject
+     with Command {
   
   @JSName("$swap")
-  var $swap: From = js.native
+  var $swap: From
 }
 object SwapCommand {
   

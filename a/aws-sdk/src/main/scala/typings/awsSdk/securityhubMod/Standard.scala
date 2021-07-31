@@ -2,31 +2,29 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Standard extends StObject {
   
   /**
     * A description of the standard.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Whether the standard is enabled by default. When Security Hub is enabled from the console, if a standard is enabled by default, the check box for that standard is selected by default. When Security Hub is enabled using the EnableSecurityHub API operation, the standard is enabled by default unless EnableDefaultStandards is set to false.
     */
-  var EnabledByDefault: js.UndefOr[Boolean] = js.native
+  var EnabledByDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the standard.
     */
-  var Name: js.UndefOr[NonEmptyString] = js.native
+  var Name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The ARN of a standard.
     */
-  var StandardsArn: js.UndefOr[NonEmptyString] = js.native
+  var StandardsArn: js.UndefOr[NonEmptyString] = js.undefined
 }
 object Standard {
   

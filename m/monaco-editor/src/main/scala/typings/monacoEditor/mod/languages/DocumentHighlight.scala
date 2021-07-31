@@ -3,21 +3,19 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.IRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentHighlight extends StObject {
   
   /**
     * The highlight kind, default is [text](#DocumentHighlightKind.Text).
     */
-  var kind: js.UndefOr[DocumentHighlightKind] = js.native
+  var kind: js.UndefOr[DocumentHighlightKind] = js.undefined
   
   /**
     * The range this highlight applies to.
     */
-  var range: IRange = js.native
+  var range: IRange
 }
 object DocumentHighlight {
   

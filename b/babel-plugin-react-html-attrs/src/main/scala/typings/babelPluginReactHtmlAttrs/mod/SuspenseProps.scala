@@ -3,23 +3,21 @@ package typings.babelPluginReactHtmlAttrs.mod
 import typings.std.NonNullable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspenseProps extends StObject {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   /** A fallback react tree to show when a Suspense child (like React.lazy) suspends */
-  var fallback: NonNullable[ReactNode] | Null = js.native
+  var fallback: NonNullable[ReactNode] | Null
   
   /**
     * Tells React whether to “skip” revealing this boundary during the initial load.
     * This API will likely be removed in a future release.
     */
   // NOTE: this is unflagged and is respected even in stable builds
-  var unstable_avoidThisFallback: js.UndefOr[Boolean] = js.native
+  var unstable_avoidThisFallback: js.UndefOr[Boolean] = js.undefined
 }
 object SuspenseProps {
   
@@ -46,6 +44,9 @@ object SuspenseProps {
     
     @scala.inline
     def setFallbackNull: Self = StObject.set(x, "fallback", null)
+    
+    @scala.inline
+    def setFallbackUndefined: Self = StObject.set(x, "fallback", js.undefined)
     
     @scala.inline
     def setUnstable_avoidThisFallback(value: Boolean): Self = StObject.set(x, "unstable_avoidThisFallback", value.asInstanceOf[js.Any])

@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyzeSentimentResponse extends StObject {
   
   /** The overall sentiment of the input document. */
-  var documentSentiment: js.UndefOr[Sentiment] = js.native
+  var documentSentiment: js.UndefOr[Sentiment] = js.undefined
   
   /**
     * The language of the text, which will be the same as the language specified in the request or, if not specified, the automatically-detected language. See Document.language field for
     * more details.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** The sentiment for all the sentences in the document. */
-  var sentences: js.UndefOr[js.Array[Sentence]] = js.native
+  var sentences: js.UndefOr[js.Array[Sentence]] = js.undefined
 }
 object AnalyzeSentimentResponse {
   

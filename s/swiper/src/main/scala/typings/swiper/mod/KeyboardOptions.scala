@@ -2,15 +2,13 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardOptions extends StObject {
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var onlyInViewport: js.UndefOr[Boolean] = js.native
+  var onlyInViewport: js.UndefOr[Boolean] = js.undefined
 }
 object KeyboardOptions {
   

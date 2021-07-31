@@ -6,19 +6,17 @@ import typings.std.RTCDataChannelInit
 import typings.std.RTCPeerConnection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroovyCompatibility extends StObject {
   
-  var groovyCompatibility: js.UndefOr[Boolean] = js.native
+  var groovyCompatibility: js.UndefOr[Boolean] = js.undefined
   
-  var transportLibrary: js.UndefOr[websocket | socketDotio | RTCPeerConnection] = js.native
+  var transportLibrary: js.UndefOr[websocket | socketDotio | RTCPeerConnection] = js.undefined
   
-  var transportOptions: js.UndefOr[RTCDataChannelInit] = js.native
+  var transportOptions: js.UndefOr[RTCDataChannelInit] = js.undefined
   
-  var url: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object GroovyCompatibility {
   

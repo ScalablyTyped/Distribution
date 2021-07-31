@@ -5,7 +5,6 @@ import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.EntityQueryExpression
 import typings.microsoftSdkSoap.mod.global.Sdk.Mdq.IEntityMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,12 +20,12 @@ class RetrieveMetadataChangesRequest protected () extends OrganizationRequest {
   def this(query: EntityQueryExpression, clientVersionStamp: java.lang.String) = this()
   def this(
     query: EntityQueryExpression,
-    clientVersionStamp: js.UndefOr[scala.Nothing],
+    clientVersionStamp: java.lang.String,
     deletedMetadataFilters: DeletedMetadataFilters
   ) = this()
   def this(
     query: EntityQueryExpression,
-    clientVersionStamp: java.lang.String,
+    clientVersionStamp: Unit,
     deletedMetadataFilters: DeletedMetadataFilters
   ) = this()
   

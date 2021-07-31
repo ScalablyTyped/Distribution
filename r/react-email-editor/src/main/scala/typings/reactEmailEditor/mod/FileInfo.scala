@@ -3,15 +3,13 @@ package typings.reactEmailEditor.mod
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileInfo extends StObject {
   
-  val accepted: js.Array[File] = js.native
+  val accepted: js.Array[File]
   
-  val attachments: js.Array[File] = js.native
+  val attachments: js.Array[File]
 }
 object FileInfo {
   

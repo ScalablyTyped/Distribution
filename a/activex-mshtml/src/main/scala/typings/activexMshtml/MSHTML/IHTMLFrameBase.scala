@@ -2,32 +2,30 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLFrameBase extends StObject {
   
   @JSName("MSHTML.IHTMLFrameBase_typekey")
-  var MSHTMLDotIHTMLFrameBase_typekey: IHTMLFrameBase = js.native
+  var MSHTMLDotIHTMLFrameBase_typekey: IHTMLFrameBase
   
-  var border: js.Any = js.native
+  var border: js.Any
   
-  var frameBorder: String = js.native
+  var frameBorder: String
   
-  var frameSpacing: js.Any = js.native
+  var frameSpacing: js.Any
   
-  var marginHeight: js.Any = js.native
+  var marginHeight: js.Any
   
-  var marginWidth: js.Any = js.native
+  var marginWidth: js.Any
   
-  var name: String = js.native
+  var name: String
   
-  var noResize: Boolean = js.native
+  var noResize: Boolean
   
-  var scrolling: String = js.native
+  var scrolling: String
   
-  var src: String = js.native
+  var src: String
 }
 object IHTMLFrameBase {
   

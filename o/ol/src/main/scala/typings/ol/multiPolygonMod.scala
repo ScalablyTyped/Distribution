@@ -4,7 +4,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiPolygonMod {
@@ -19,7 +18,7 @@ object multiPolygonMod {
     ) = this()
     def this(
       coordinates: js.Array[js.Array[js.Array[Coordinate]] | Double | typings.ol.polygonMod.default],
-      opt_layout: js.UndefOr[scala.Nothing],
+      opt_layout: Unit,
       opt_endss: js.Array[js.Array[Double]]
     ) = this()
     def this(

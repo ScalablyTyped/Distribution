@@ -2,15 +2,13 @@ package typings.invityApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountryInfo extends StObject {
   
-  var country: String = js.native
+  var country: String
   
-  var fiatCurrency: js.UndefOr[String] = js.native
+  var fiatCurrency: js.UndefOr[String] = js.undefined
 }
 object CountryInfo {
   

@@ -5,15 +5,13 @@ import typings.react.mod.RefCallback
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ref extends StObject {
   
-  var ref: RefCallback[HTMLElement] = js.native
+  var ref: RefCallback[HTMLElement]
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object Ref {
   

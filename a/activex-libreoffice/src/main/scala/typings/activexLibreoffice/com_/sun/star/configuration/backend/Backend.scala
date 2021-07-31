@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A layer contains data for multiple components associated to a single entity.
   * @since OOo 1.1.2
   */
-@js.native
 trait Backend
-  extends XSchemaSupplier
+  extends StObject
+     with XSchemaSupplier
      with XBackend
      with XBackendEntities
 object Backend {

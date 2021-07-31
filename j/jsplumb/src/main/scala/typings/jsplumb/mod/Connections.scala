@@ -2,17 +2,15 @@ package typings.jsplumb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connections extends StObject {
   
-  def detach(): Unit = js.native
+  def detach(): Unit
   
-  def each(e: js.Function1[/* c */ Connection, Unit]): Unit = js.native
+  def each(e: js.Function1[/* c */ Connection, Unit]): Unit
   
-  var length: Double = js.native
+  var length: Double
 }
 object Connections {
   

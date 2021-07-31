@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Createdat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsListOrgSecretsResponseData extends StObject {
   
-  var secrets: js.Array[Createdat] = js.native
+  var secrets: js.Array[Createdat]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object ActionsListOrgSecretsResponseData {
   

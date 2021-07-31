@@ -2,19 +2,17 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupInterval extends StObject {
   
-  var groupInterval: js.UndefOr[String | Double] = js.native
+  var groupInterval: js.UndefOr[String | Double] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double | typings.std.Date] = js.native
+  var value: js.UndefOr[String | Double | typings.std.Date] = js.undefined
   
-  var valueText: js.UndefOr[String] = js.native
+  var valueText: js.UndefOr[String] = js.undefined
 }
 object GroupInterval {
   

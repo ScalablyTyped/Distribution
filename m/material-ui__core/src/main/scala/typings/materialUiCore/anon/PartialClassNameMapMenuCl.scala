@@ -2,14 +2,12 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Menu/Menu.MenuClassKey>> */
-@js.native
 trait PartialClassNameMapMenuCl extends StObject {
   
-  var paper: js.UndefOr[String] = js.native
+  var paper: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapMenuCl {
   

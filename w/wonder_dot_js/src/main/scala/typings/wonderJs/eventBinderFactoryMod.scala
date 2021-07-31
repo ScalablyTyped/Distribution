@@ -1,21 +1,23 @@
 package typings.wonderJs
 
 import typings.wonderJs.eventNameHandlerMod.EEventName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/event/factory/EventBinderFactory", JSImport.Namespace)
-@js.native
-object eventBinderFactoryMod extends js.Object {
-  @js.native
-  class EventBinderFactory () extends js.Object
+object eventBinderFactoryMod {
   
+  @JSImport("wonder.js/dist/es2015/event/factory/EventBinderFactory", "EventBinderFactory")
+  @js.native
+  class EventBinderFactory () extends StObject
   /* static members */
-  @js.native
-  object EventBinderFactory extends js.Object {
-    def createEventBinder(eventName: EEventName): js.Any = js.native
+  object EventBinderFactory {
+    
+    @JSImport("wonder.js/dist/es2015/event/factory/EventBinderFactory", "EventBinderFactory")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def createEventBinder(eventName: EEventName): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createEventBinder")(eventName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
-  
 }
-

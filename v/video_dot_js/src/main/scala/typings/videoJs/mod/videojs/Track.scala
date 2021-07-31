@@ -2,7 +2,6 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see {@link https://html.spec.whatwg.org/multipage/embedded-content.html}
   */
 @js.native
-trait Track extends EventTarget {
+trait Track
+  extends StObject
+     with EventTarget {
   
   /**
     * The id of this track. Cannot be changed after creation.

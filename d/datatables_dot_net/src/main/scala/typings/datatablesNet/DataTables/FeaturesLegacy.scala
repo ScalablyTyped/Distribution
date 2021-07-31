@@ -2,33 +2,31 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeaturesLegacy extends StObject {
   
-  var bAutoWidth: Boolean = js.native
+  var bAutoWidth: Boolean
   
-  var bDeferRender: Boolean = js.native
+  var bDeferRender: Boolean
   
-  var bFilter: Boolean = js.native
+  var bFilter: Boolean
   
-  var bInfo: Boolean = js.native
+  var bInfo: Boolean
   
-  var bLengthChange: Boolean = js.native
+  var bLengthChange: Boolean
   
-  var bPaginate: Boolean = js.native
+  var bPaginate: Boolean
   
-  var bProcessing: Boolean = js.native
+  var bProcessing: Boolean
   
-  var bServerSide: Boolean = js.native
+  var bServerSide: Boolean
   
-  var bSort: Boolean = js.native
+  var bSort: Boolean
   
-  var bSortClasses: Boolean = js.native
+  var bSortClasses: Boolean
   
-  var bStateSave: Boolean = js.native
+  var bStateSave: Boolean
 }
 object FeaturesLegacy {
   

@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.model
 import typings.openui5.sap.ui.base.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Sorter extends Object {
+trait Sorter
+  extends StObject
+     with Object {
   
   /**
     * Compares two valuesThis is the default comparator function used for clientside sorting, if no custom

@@ -2,21 +2,19 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FocusOnUpDown extends StObject {
   
-  var focusOnUpDown: Boolean = js.native
+  var focusOnUpDown: Boolean
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
-  var showNumber: Boolean = js.native
+  var showNumber: Boolean
   
-  var step: Double = js.native
+  var step: Double
 }
 object FocusOnUpDown {
   

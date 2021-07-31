@@ -9,79 +9,67 @@ import typings.vegaLite.srcTimeunitMod.TimeUnitParams
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object srcPredicateMod {
   
-  @JSImport("vega-lite/build/src/predicate", "fieldFilterExpression")
+  @JSImport("vega-lite/build/src/predicate", JSImport.Namespace)
   @js.native
-  def fieldFilterExpression(predicate: FieldPredicate): String = js.native
-  @JSImport("vega-lite/build/src/predicate", "fieldFilterExpression")
-  @js.native
-  def fieldFilterExpression(predicate: FieldPredicate, useInRange: Boolean): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/predicate", "fieldValidPredicate")
-  @js.native
-  def fieldValidPredicate(fieldExpr: String): String = js.native
-  @JSImport("vega-lite/build/src/predicate", "fieldValidPredicate")
-  @js.native
-  def fieldValidPredicate(fieldExpr: String, valid: Boolean): String = js.native
+  @scala.inline
+  def fieldFilterExpression(predicate: FieldPredicate): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fieldFilterExpression(predicate: FieldPredicate, useInRange: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldFilterExpression")(predicate.asInstanceOf[js.Any], useInRange.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldEqualPredicate")
-  @js.native
-  def isFieldEqualPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = js.native
+  @scala.inline
+  def fieldValidPredicate(fieldExpr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fieldValidPredicate(fieldExpr: String, valid: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fieldValidPredicate")(fieldExpr.asInstanceOf[js.Any], valid.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldGTEPredicate")
-  @js.native
-  def isFieldGTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldEqualPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldEqualPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldEqualPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldGTPredicate")
-  @js.native
-  def isFieldGTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldGTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTEPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldLTEPredicate")
-  @js.native
-  def isFieldLTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldGTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldGTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldGTPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldLTPredicate")
-  @js.native
-  def isFieldLTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldLTEPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTEPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTEPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldOneOfPredicate")
-  @js.native
-  def isFieldOneOfPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldLTPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldLTPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldLTPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldPredicate")
-  @js.native
-  def isFieldPredicate(predicate: Predicate): Boolean = js.native
+  @scala.inline
+  def isFieldOneOfPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldOneOfPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldOneOfPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldRangePredicate")
-  @js.native
-  def isFieldRangePredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldPredicate(predicate: Predicate): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isFieldValidPredicate")
-  @js.native
-  def isFieldValidPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldRangePredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldRangePredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldRangePredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "isSelectionPredicate")
-  @js.native
-  def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean = js.native
+  @scala.inline
+  def isFieldValidPredicate(predicate: js.Any): /* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFieldValidPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.FieldValidPredicate */ Boolean]
   
-  @JSImport("vega-lite/build/src/predicate", "normalizePredicate")
-  @js.native
-  def normalizePredicate(f: Predicate): Predicate = js.native
+  @scala.inline
+  def isSelectionPredicate(predicate: LogicalComposition[Predicate]): /* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSelectionPredicate")(predicate.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/predicate.SelectionPredicate */ Boolean]
   
-  @js.native
+  @scala.inline
+  def normalizePredicate(f: Predicate): Predicate = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizePredicate")(f.asInstanceOf[js.Any]).asInstanceOf[Predicate]
+  
   trait FieldEqualPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * The value that the field should be equal to.
       */
-    var equal: String | Double | Boolean | DateTime | ExprRef | SignalRef = js.native
+    var equal: String | Double | Boolean | DateTime | ExprRef | SignalRef
   }
   object FieldEqualPredicate {
     
@@ -99,16 +87,16 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldGTEPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * The value that the field should be greater than or equals to.
       */
-    var gte: String | Double | DateTime | ExprRef | SignalRef = js.native
+    var gte: String | Double | DateTime | ExprRef | SignalRef
   }
   object FieldGTEPredicate {
     
@@ -126,16 +114,16 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldGTPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * The value that the field should be greater than.
       */
-    var gt: String | Double | DateTime | ExprRef | SignalRef = js.native
+    var gt: String | Double | DateTime | ExprRef | SignalRef
   }
   object FieldGTPredicate {
     
@@ -153,16 +141,16 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldLTEPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * The value that the field should be less than or equals to.
       */
-    var lte: String | Double | DateTime | ExprRef | SignalRef = js.native
+    var lte: String | Double | DateTime | ExprRef | SignalRef
   }
   object FieldLTEPredicate {
     
@@ -180,16 +168,16 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldLTPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * The value that the field should be less than.
       */
-    var lt: String | Double | DateTime | ExprRef | SignalRef = js.native
+    var lt: String | Double | DateTime | ExprRef | SignalRef
   }
   object FieldLTPredicate {
     
@@ -207,9 +195,9 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldOneOfPredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
@@ -217,7 +205,7 @@ object srcPredicateMod {
       * A set of values that the `field`'s value should be a member of,
       * for a data item included in the filtered data.
       */
-    var oneOf: js.Array[Boolean | DateTime | Double | String] = js.native
+    var oneOf: js.Array[Boolean | DateTime | Double | String]
   }
   object FieldOneOfPredicate {
     
@@ -303,18 +291,17 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldPredicateBase extends StObject {
     
     /**
       * Field to be tested.
       */
-    var field: FieldName = js.native
+    var field: FieldName
     
     /**
       * Time unit for the field to be tested.
       */
-    var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.native
+    var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.undefined
   }
   object FieldPredicateBase {
     
@@ -338,9 +325,9 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldRangePredicate
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
@@ -350,7 +337,7 @@ object srcPredicateMod {
       * @maxItems 2
       * @minItems 2
       */
-    var range: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef = js.native
+    var range: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef
   }
   object FieldRangePredicate {
     
@@ -374,16 +361,16 @@ object srcPredicateMod {
     }
   }
   
-  @js.native
   trait FieldValidPredicate_
-    extends FieldPredicateBase
+    extends StObject
+       with FieldPredicateBase
        with FieldPredicate
        with _Predicate {
     
     /**
       * If set to true the field's value has to be valid, meaning both not `null` and not [`NaN`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/NaN).
       */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object FieldValidPredicate_ {
     
@@ -415,13 +402,14 @@ object srcPredicateMod {
   */
   type Predicate = _Predicate | String
   
-  @js.native
-  trait SelectionPredicate extends _Predicate {
+  trait SelectionPredicate
+    extends StObject
+       with _Predicate {
     
     /**
       * Filter using a selection name or a logical composition of selection names.
       */
-    var selection: LogicalComposition[String] = js.native
+    var selection: LogicalComposition[String]
   }
   object SelectionPredicate {
     

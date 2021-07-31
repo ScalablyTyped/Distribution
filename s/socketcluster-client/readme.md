@@ -10,9 +10,9 @@ SocketCluster JavaScript client
 | ------------------ | :-------------: |
 | Full name          | socketcluster-client |
 | Keywords           | websocket, realtime, client, socketcluster |
-| # releases         | 13 |
-| # dependents       | 70 |
-| # downloads        | 2708952 |
+| # releases         | 10 |
+| # dependents       | 74 |
+| # downloads        | 2464838 |
 | # stars            | 1 |
 
 ## Links

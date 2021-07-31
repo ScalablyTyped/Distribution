@@ -2,26 +2,24 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Space extends StObject {
   
   /**
     * Set space between bars in bar charts
     */
-  var space: js.UndefOr[Double] = js.native
+  var space: js.UndefOr[Double] = js.undefined
   
   /**
     * Change the width of bars. If ratio is specified, change the width of bar chart by ratio.
     */
-  var width: js.UndefOr[Double | Ratio] = js.native
+  var width: js.UndefOr[Double | Ratio] = js.undefined
   
   /**
     * Set if min or max value will be 0 on bar chart.
     */
-  var zerobased: js.UndefOr[Boolean] = js.native
+  var zerobased: js.UndefOr[Boolean] = js.undefined
 }
 object Space {
   

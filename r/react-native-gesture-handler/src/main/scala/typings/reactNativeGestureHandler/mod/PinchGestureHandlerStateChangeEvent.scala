@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PinchGestureHandlerStateChangeEvent extends GestureHandlerStateChangeEvent {
+trait PinchGestureHandlerStateChangeEvent
+  extends StObject
+     with GestureHandlerStateChangeEvent {
   
   @JSName("nativeEvent")
-  var nativeEvent_PinchGestureHandlerStateChangeEvent: GestureHandlerStateChangeNativeEvent with PinchGestureHandlerEventExtra = js.native
+  var nativeEvent_PinchGestureHandlerStateChangeEvent: GestureHandlerStateChangeNativeEvent & PinchGestureHandlerEventExtra
 }
 object PinchGestureHandlerStateChangeEvent {
   
   @scala.inline
-  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent with PinchGestureHandlerEventExtra): PinchGestureHandlerStateChangeEvent = {
+  def apply(nativeEvent: GestureHandlerStateChangeNativeEvent & PinchGestureHandlerEventExtra): PinchGestureHandlerStateChangeEvent = {
     val __obj = js.Dynamic.literal(nativeEvent = nativeEvent.asInstanceOf[js.Any])
     __obj.asInstanceOf[PinchGestureHandlerStateChangeEvent]
   }
@@ -23,6 +23,6 @@ object PinchGestureHandlerStateChangeEvent {
   implicit class PinchGestureHandlerStateChangeEventMutableBuilder[Self <: PinchGestureHandlerStateChangeEvent] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent with PinchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
+    def setNativeEvent(value: GestureHandlerStateChangeNativeEvent & PinchGestureHandlerEventExtra): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
   }
 }

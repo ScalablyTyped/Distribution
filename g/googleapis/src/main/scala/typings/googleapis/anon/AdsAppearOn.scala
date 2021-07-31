@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdsAppearOn extends StObject {
   
-  var adsAppearOn: js.UndefOr[String] = js.native
+  var adsAppearOn: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var siteLanguage: js.UndefOr[String] = js.native
+  var siteLanguage: js.UndefOr[String] = js.undefined
 }
 object AdsAppearOn {
   

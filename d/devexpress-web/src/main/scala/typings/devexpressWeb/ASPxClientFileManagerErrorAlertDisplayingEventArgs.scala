@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ErrorAlertDisplaying event.
   */
-@js.native
-trait ASPxClientFileManagerErrorAlertDisplayingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerErrorAlertDisplayingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   
   /**
     * Gets or sets the errors description.
     */
-  var errorText: String = js.native
+  var errorText: String
   
   /**
     * Gets or sets a value specifying whether an alert message is displayed when the event fires.
     */
-  var showAlert: Boolean = js.native
+  var showAlert: Boolean
 }
 object ASPxClientFileManagerErrorAlertDisplayingEventArgs {
   

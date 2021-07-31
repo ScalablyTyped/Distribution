@@ -4,46 +4,40 @@ import typings.react.mod.ReactNode
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-from-dom", JSImport.Default)
+  @JSImport("react-from-dom", JSImport.Namespace)
   @js.native
-  def default(input: String): ReactNode | Node = js.native
-  @JSImport("react-from-dom", JSImport.Default)
-  @js.native
-  def default(input: String, options: Options): ReactNode | Node = js.native
-  @JSImport("react-from-dom", JSImport.Default)
-  @js.native
-  def default(input: Node): ReactNode | Node = js.native
-  @JSImport("react-from-dom", JSImport.Default)
-  @js.native
-  def default(input: Node, options: Options): ReactNode | Node = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-from-dom", "convertFromNode")
-  @js.native
-  def convertFromNode(input: Node): ReactNode = js.native
-  @JSImport("react-from-dom", "convertFromNode")
-  @js.native
-  def convertFromNode(input: Node, options: Options): ReactNode = js.native
+  @scala.inline
+  def default(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  @scala.inline
+  def default(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
+  @scala.inline
+  def default(input: Node): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  @scala.inline
+  def default(input: Node, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
   
-  @JSImport("react-from-dom", "convertFromString")
-  @js.native
-  def convertFromString(input: String): ReactNode | Node = js.native
-  @JSImport("react-from-dom", "convertFromString")
-  @js.native
-  def convertFromString(input: String, options: Options): ReactNode | Node = js.native
+  @scala.inline
+  def convertFromNode(input: Node): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def convertFromNode(input: Node, options: Options): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromNode")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @js.native
+  @scala.inline
+  def convertFromString(input: String): ReactNode | Node = ^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any]).asInstanceOf[ReactNode | Node]
+  @scala.inline
+  def convertFromString(input: String, options: Options): ReactNode | Node = (^.asInstanceOf[js.Dynamic].applyDynamic("convertFromString")(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReactNode | Node]
+  
   trait Action extends StObject {
     
-    def condition(node: Node, key: String, level: Double): Boolean = js.native
+    def condition(node: Node, key: String, level: Double): Boolean
     
-    var post: js.UndefOr[js.Function3[/* node */ Node, /* key */ String, /* level */ Double, ReactNode]] = js.native
+    var post: js.UndefOr[js.Function3[/* node */ Node, /* key */ String, /* level */ Double, ReactNode]] = js.undefined
     
-    var pre: js.UndefOr[js.Function3[/* node */ Node, /* key */ String, /* level */ Double, Node]] = js.native
+    var pre: js.UndefOr[js.Function3[/* node */ Node, /* key */ String, /* level */ Double, Node]] = js.undefined
   }
   object Action {
     
@@ -73,20 +67,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var actions: js.UndefOr[js.Array[Action]] = js.native
+    var actions: js.UndefOr[js.Array[Action]] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var nodeOnly: js.UndefOr[Boolean] = js.native
+    var nodeOnly: js.UndefOr[Boolean] = js.undefined
     
-    var selector: js.UndefOr[String] = js.native
+    var selector: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Options {
     

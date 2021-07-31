@@ -2,30 +2,34 @@ package typings.ink.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveFocusId extends StObject {
   
-  var activeFocusId: js.UndefOr[scala.Nothing] = js.native
+  var activeFocusId: Unit
   
-  var error: js.UndefOr[scala.Nothing] = js.native
+  var error: Unit
   
-  var focusables: js.Array[scala.Nothing] = js.native
+  var focusables: js.Array[scala.Nothing]
   
-  var isFocusEnabled: Boolean = js.native
+  var isFocusEnabled: Boolean
 }
 object ActiveFocusId {
   
   @scala.inline
-  def apply(focusables: js.Array[scala.Nothing], isFocusEnabled: Boolean): ActiveFocusId = {
-    val __obj = js.Dynamic.literal(focusables = focusables.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
+  def apply(activeFocusId: Unit, error: Unit, focusables: js.Array[scala.Nothing], isFocusEnabled: Boolean): ActiveFocusId = {
+    val __obj = js.Dynamic.literal(activeFocusId = activeFocusId.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], focusables = focusables.asInstanceOf[js.Any], isFocusEnabled = isFocusEnabled.asInstanceOf[js.Any])
     __obj.asInstanceOf[ActiveFocusId]
   }
   
   @scala.inline
   implicit class ActiveFocusIdMutableBuilder[Self <: ActiveFocusId] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setActiveFocusId(value: Unit): Self = StObject.set(x, "activeFocusId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setError(value: Unit): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFocusables(value: js.Array[scala.Nothing]): Self = StObject.set(x, "focusables", value.asInstanceOf[js.Any])

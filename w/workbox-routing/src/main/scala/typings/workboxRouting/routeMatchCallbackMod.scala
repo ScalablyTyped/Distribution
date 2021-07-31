@@ -4,23 +4,21 @@ import typings.std.Request
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeMatchCallbackMod {
   
   type RouteMatchCallback[R] = js.Function1[/* options */ RouteMatchCallbackOptions, R]
   
-  @js.native
   trait RouteMatchCallbackOptions extends StObject {
     
     var event: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ExtendableEvent */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var request: js.UndefOr[Request] = js.native
+    var request: js.UndefOr[Request] = js.undefined
     
-    var url: URL = js.native
+    var url: URL
   }
   object RouteMatchCallbackOptions {
     

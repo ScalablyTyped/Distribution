@@ -4,7 +4,6 @@ import typings.jqueryui.JQuery
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,8 +15,8 @@ trait UI extends StObject {
   def accordion(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def accordion(options: AccordionOptions): JQuery = js.native
   def accordion(options: WidgetOptions): JQuery = js.native
-  def accordion[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def accordion[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def accordion[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def accordion[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("accordion")
   var accordion_Original: Accordion = js.native
   
@@ -27,8 +26,8 @@ trait UI extends StObject {
   def autocomplete(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def autocomplete(options: AccordionOptions): JQuery = js.native
   def autocomplete(options: WidgetOptions): JQuery = js.native
-  def autocomplete[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def autocomplete[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def autocomplete[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def autocomplete[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("autocomplete")
   var autocomplete_Original: Autocomplete = js.native
   
@@ -38,8 +37,8 @@ trait UI extends StObject {
   def button(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def button(options: AccordionOptions): JQuery = js.native
   def button(options: WidgetOptions): JQuery = js.native
-  def button[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def button[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def button[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def button[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("button")
   var button_Original: Button = js.native
   
@@ -49,8 +48,8 @@ trait UI extends StObject {
   def buttonset(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def buttonset(options: AccordionOptions): JQuery = js.native
   def buttonset(options: WidgetOptions): JQuery = js.native
-  def buttonset[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def buttonset[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def buttonset[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def buttonset[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("buttonset")
   var buttonset_Original: Button = js.native
   
@@ -60,8 +59,8 @@ trait UI extends StObject {
   def datepicker(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def datepicker(options: AccordionOptions): JQuery = js.native
   def datepicker(options: WidgetOptions): JQuery = js.native
-  def datepicker[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def datepicker[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def datepicker[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def datepicker[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("datepicker")
   var datepicker_Original: Datepicker = js.native
   
@@ -71,8 +70,8 @@ trait UI extends StObject {
   def dialog(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def dialog(options: AccordionOptions): JQuery = js.native
   def dialog(options: WidgetOptions): JQuery = js.native
-  def dialog[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def dialog[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def dialog[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def dialog[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("dialog")
   var dialog_Original: Dialog = js.native
   
@@ -84,8 +83,8 @@ trait UI extends StObject {
   def menu(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def menu(options: AccordionOptions): JQuery = js.native
   def menu(options: WidgetOptions): JQuery = js.native
-  def menu[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def menu[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def menu[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def menu[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("menu")
   var menu_Original: Menu = js.native
   
@@ -100,8 +99,8 @@ trait UI extends StObject {
   def progressbar(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def progressbar(options: AccordionOptions): JQuery = js.native
   def progressbar(options: WidgetOptions): JQuery = js.native
-  def progressbar[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def progressbar[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def progressbar[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def progressbar[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("progressbar")
   var progressbar_Original: Progressbar = js.native
   
@@ -111,8 +110,8 @@ trait UI extends StObject {
   def selectmenu(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def selectmenu(options: AccordionOptions): JQuery = js.native
   def selectmenu(options: WidgetOptions): JQuery = js.native
-  def selectmenu[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def selectmenu[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def selectmenu[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def selectmenu[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("selectmenu")
   var selectmenu_Original: SelectMenu = js.native
   
@@ -122,8 +121,8 @@ trait UI extends StObject {
   def slider(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def slider(options: AccordionOptions): JQuery = js.native
   def slider(options: WidgetOptions): JQuery = js.native
-  def slider[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def slider[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def slider[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def slider[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("slider")
   var slider_Original: Slider = js.native
   
@@ -133,8 +132,8 @@ trait UI extends StObject {
   def spinner(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def spinner(options: AccordionOptions): JQuery = js.native
   def spinner(options: WidgetOptions): JQuery = js.native
-  def spinner[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def spinner[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def spinner[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def spinner[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("spinner")
   var spinner_Original: Spinner = js.native
   
@@ -144,8 +143,8 @@ trait UI extends StObject {
   def tabs(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def tabs(options: AccordionOptions): JQuery = js.native
   def tabs(options: WidgetOptions): JQuery = js.native
-  def tabs[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def tabs[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def tabs[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def tabs[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("tabs")
   var tabs_Original: Tabs = js.native
   
@@ -155,8 +154,8 @@ trait UI extends StObject {
   def tooltip(optionLiteral: String, options: WidgetOptions): js.Any = js.native
   def tooltip(options: AccordionOptions): JQuery = js.native
   def tooltip(options: WidgetOptions): JQuery = js.native
-  def tooltip[T](name: String, base: js.Function, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
-  def tooltip[T](name: String, prototype: T with (ThisType[T with WidgetCommonProperties])): JQuery = js.native
+  def tooltip[T](name: String, base: js.Function, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
+  def tooltip[T](name: String, prototype: T & (ThisType[T & WidgetCommonProperties])): JQuery = js.native
   @JSName("tooltip")
   var tooltip_Original: Tooltip = js.native
   

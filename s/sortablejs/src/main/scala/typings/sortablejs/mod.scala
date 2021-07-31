@@ -84,14 +84,15 @@ import typings.std.NodeListOf
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sortablejs", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Sortable {
+  class ^ protected ()
+    extends StObject
+       with Sortable {
     /**
       * Sortable's main constructor.
       * @param element Any variety of HTMLElement.
@@ -145,12 +146,10 @@ object mod {
     * @param options Sortable options object.
     */
   /* static member */
-  @JSImport("sortablejs", "create")
-  @js.native
-  def create(element: HTMLElement): Sortable = js.native
-  @JSImport("sortablejs", "create")
-  @js.native
-  def create(element: HTMLElement, options: Options): Sortable = js.native
+  @scala.inline
+  def create(element: HTMLElement): Sortable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any]).asInstanceOf[Sortable]
+  @scala.inline
+  def create(element: HTMLElement, options: Options): Sortable = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Sortable]
   
   /** The element being dragged. */
   /* static member */
@@ -162,9 +161,8 @@ object mod {
   
   /** Get the Sortable instance on an element. */
   /* static member */
-  @JSImport("sortablejs", "get")
-  @js.native
-  def get(element: HTMLElement): js.UndefOr[Sortable] = js.native
+  @scala.inline
+  def get(element: HTMLElement): js.UndefOr[Sortable] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Sortable]]
   
   /** The ghost element.*/
   /* static member */
@@ -183,9 +181,8 @@ object mod {
     * Sortable.mount(new MultiDrag(), new AutoScroll())
     */
   /* static member */
-  @JSImport("sortablejs", "mount")
-  @js.native
-  def mount(sortablePlugins: SortablePlugin*): Unit = js.native
+  @scala.inline
+  def mount(sortablePlugins: SortablePlugin*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(sortablePlugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("sortablejs", "utils")
@@ -200,24 +197,23 @@ object mod {
   @js.native
   val version: String = js.native
   
-  @js.native
   trait DOMRect extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object DOMRect {
     
@@ -279,7 +275,6 @@ object mod {
     def vertical: typings.sortablejs.sortablejsStrings.vertical = "vertical".asInstanceOf[typings.sortablejs.sortablejsStrings.vertical]
   }
   
-  @js.native
   trait GroupOptions extends StObject {
     
     /**
@@ -293,7 +288,7 @@ object mod {
           /* event */ SortableEvent, 
           Boolean | String | js.Array[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * a canonical version of put, created by Sortable
@@ -306,12 +301,12 @@ object mod {
           /* event */ SortableEvent, 
           Boolean | String | clone | js.Array[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * group name
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * ability to move from the list. clone — copy the item, rather than move.
@@ -324,7 +319,7 @@ object mod {
           /* event */ SortableEvent, 
           PullResult
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * whether elements can be added from other lists, or an array of group names from which elements can be taken.
@@ -337,12 +332,12 @@ object mod {
           /* event */ SortableEvent, 
           PutResult
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * revert cloned element to initial position after moving to a another list.
       */
-    var revertClone: js.UndefOr[Boolean] = js.native
+    var revertClone: js.UndefOr[Boolean] = js.undefined
   }
   object GroupOptions {
     
@@ -427,7 +422,9 @@ object mod {
   }
   
   @js.native
-  trait MoveEvent extends Event {
+  trait MoveEvent
+    extends StObject
+       with Event {
     
     var dragged: HTMLElement = js.native
     
@@ -447,9 +444,9 @@ object mod {
     var willInsertAfter: js.UndefOr[Boolean] = js.native
   }
   
-  @js.native
   trait Options
-    extends SortableOptions
+    extends StObject
+       with SortableOptions
        with AutoScrollOptions
        with MultiDragOptions
        with OnSpillOptions
@@ -922,7 +919,9 @@ object mod {
   }
   
   @js.native
-  trait SortableEvent extends Event {
+  trait SortableEvent
+    extends StObject
+       with Event {
     
     @JSName("clone")
     var clone_FSortableEvent: HTMLElement = js.native
@@ -992,30 +991,29 @@ object mod {
     var to: HTMLElement = js.native
   }
   
-  @js.native
   trait SortableOptions extends StObject {
     
     /**
       * ms, animation speed moving items when sorting, `0` — without animation
       */
-    var animation: js.UndefOr[Double] = js.native
+    var animation: js.UndefOr[Double] = js.undefined
     
     /**
       * Class name for the chosen item
       */
-    var chosenClass: js.UndefOr[String] = js.native
+    var chosenClass: js.UndefOr[String] = js.undefined
     
-    var dataIdAttr: js.UndefOr[String] = js.native
+    var dataIdAttr: js.UndefOr[String] = js.undefined
     
     /**
       * time in milliseconds to define when the sorting should start
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Only delay if user is using touch
       */
-    var delayOnTouchOnly: js.UndefOr[Boolean] = js.native
+    var delayOnTouchOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Direction of Sortable
@@ -1023,26 +1021,26 @@ object mod {
       */
     var direction: js.UndefOr[
         (js.Function3[/* evt */ SortableEvent, /* target */ HTMLElement, /* dragEl */ HTMLElement, Direction]) | Direction
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Disables the sortable if set to true.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name for the dragging item
       */
-    var dragClass: js.UndefOr[String] = js.native
+    var dragClass: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies which items inside the element should be draggable
       */
-    var draggable: js.UndefOr[String] = js.native
+    var draggable: js.UndefOr[String] = js.undefined
     
-    var dragoverBubble: js.UndefOr[Boolean] = js.native
+    var dragoverBubble: js.UndefOr[Boolean] = js.undefined
     
-    var dropBubble: js.UndefOr[Boolean] = js.native
+    var dropBubble: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Easing for animation. Defaults to null.
@@ -1069,30 +1067,30 @@ object mod {
       * | 'initial'
       * | 'inherit'
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * distance mouse must be from empty sortable
       * to insert drag element into it
       */
-    var emptyInsertThreshold: js.UndefOr[Double] = js.native
+    var emptyInsertThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Class name for the cloned DOM Element when using forceFallback
       */
-    var fallbackClass: js.UndefOr[String] = js.native
+    var fallbackClass: js.UndefOr[String] = js.undefined
     
-    var fallbackOffset: js.UndefOr[X] = js.native
+    var fallbackOffset: js.UndefOr[X] = js.undefined
     
     /**
       * Appends the cloned DOM Element into the Document's Body
       */
-    var fallbackOnBody: js.UndefOr[Boolean] = js.native
+    var fallbackOnBody: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify in pixels how far the mouse should move before it's considered as a drag.
       */
-    var fallbackTolerance: js.UndefOr[Double] = js.native
+    var fallbackTolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * Selectors that do not lead to dragging (String or Function)
@@ -1105,136 +1103,136 @@ object mod {
           /* sortable */ Sortable, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * ignore the HTML5 DnD behaviour and force the fallback to kick in
       */
-    var forceFallback: js.UndefOr[Boolean] = js.native
+    var forceFallback: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Class name for the drop placeholder
       */
-    var ghostClass: js.UndefOr[String] = js.native
+    var ghostClass: js.UndefOr[String] = js.undefined
     
     /**
       * To drag elements from one list into another, both lists must have the same group value.
       * You can also define whether lists can give away, give and keep a copy (clone), and receive elements.
       */
-    var group: js.UndefOr[String | GroupOptions] = js.native
+    var group: js.UndefOr[String | GroupOptions] = js.undefined
     
     /**
       * Drag handle selector within list items
       */
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
-    var ignore: js.UndefOr[String] = js.native
+    var ignore: js.UndefOr[String] = js.undefined
     
     /**
       * Will always use inverted swap zone if set to true
       */
-    var invertSwap: js.UndefOr[Boolean] = js.native
+    var invertSwap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Threshold of the inverted swap zone
       * (will be set to `swapThreshold` value by default)
       */
-    var invertedSwapThreshold: js.UndefOr[Double] = js.native
+    var invertedSwapThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * Element is dropped into the list from another list
       */
-    var onAdd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onAdd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Called when dragging element changes position
       */
-    var onChange: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* evt */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Element is chosen
       */
-    var onChoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onChoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Created a clone of an element
       */
-    var onClone: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onClone: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Element dragging ended
       */
-    var onEnd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onEnd: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Attempt to drag a filtered element
       */
-    var onFilter: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onFilter: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Event when you move an item in the list or between lists
       */
     var onMove: js.UndefOr[
         js.Function2[/* evt */ MoveEvent, /* originalEvent */ Event, Boolean | `-1` | `1` | Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Element is removed from the list into another list
       */
-    var onRemove: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Called by any change to the list (add / update / remove)
       */
-    var onSort: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onSort: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Element dragging started
       */
-    var onStart: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onStart: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Element is unchosen
       */
-    var onUnchoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onUnchoose: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Changed sorting within list
       */
-    var onUpdate: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function1[/* event */ SortableEvent, Unit]] = js.undefined
     
     /**
       * Call `event.preventDefault()` when triggered `filter`
       */
-    var preventOnFilter: js.UndefOr[Boolean] = js.native
+    var preventOnFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Remove the clone element when it is not showing,
       * rather than just hiding it
       */
-    var removeCloneOnHide: js.UndefOr[Boolean] = js.native
+    var removeCloneOnHide: js.UndefOr[Boolean] = js.undefined
     
     var setData: js.UndefOr[
         js.Function2[/* dataTransfer */ DataTransfer, /* draggedElement */ HTMLElement, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * sorting inside list
       */
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
     
-    var store: js.UndefOr[Get] = js.native
+    var store: js.UndefOr[Get] = js.undefined
     
     /**
       * Threshold of the swap zone.
       * Defaults to `1`
       */
-    var swapThreshold: js.UndefOr[Double] = js.native
+    var swapThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * How many *pixels* the point should move before cancelling a delayed drag event
       */
-    var touchStartThreshold: js.UndefOr[Double] = js.native
+    var touchStartThreshold: js.UndefOr[Double] = js.undefined
   }
   object SortableOptions {
     

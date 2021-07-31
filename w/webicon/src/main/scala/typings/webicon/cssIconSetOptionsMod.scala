@@ -4,34 +4,34 @@ import typings.webicon.cssClassConfigMod.CssClassConfig
 import typings.webicon.iconMod.Icon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssIconSetOptionsMod {
   
-  @js.native
-  trait CssIconSetOptions extends Icon {
+  trait CssIconSetOptions
+    extends StObject
+       with Icon {
     
     /**
       * An alias of the `className`-property.
       */
     var `class`: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Either a text-pattern or a callback which provides a css-classname.
       *
       * The symbols `?` and `%` in the text-pattern are replaced by the icon-id.
       */
-    var className: js.UndefOr[CssClassConfig] = js.native
+    var className: js.UndefOr[CssClassConfig] = js.undefined
     
     /**
       * An alias of the `className`-property.
       */
     var cssClass: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['className'] */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object CssIconSetOptions {
     

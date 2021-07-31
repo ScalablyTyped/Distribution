@@ -2,37 +2,35 @@ package typings.nodeRedRuntime.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistentSettings extends StObject {
   
-  def available(): Boolean = js.native
+  def available(): Boolean
   
-  def delete(prop: String): js.Promise[Unit] = js.native
+  def delete(prop: String): js.Promise[Unit]
   
-  def disableNodeSettings(types: js.Array[String]): Unit = js.native
+  def disableNodeSettings(types: js.Array[String]): Unit
   
-  def enableNodeSettings(types: js.Array[String]): Unit = js.native
+  def enableNodeSettings(types: js.Array[String]): Unit
   
-  def exportNodeSettings(safeSettings: js.Object): js.Object = js.native
+  def exportNodeSettings(safeSettings: js.Object): js.Object
   
-  def get(prop: String): js.Any = js.native
+  def get(prop: String): js.Any
   
-  def getUserSettings(username: String): js.Object = js.native
+  def getUserSettings(username: String): js.Object
   
-  def init(settings: LocalSettings): Unit = js.native
+  def init(settings: LocalSettings): Unit
   
-  def load(storage: StorageModule): Unit = js.native
+  def load(storage: StorageModule): Unit
   
-  def registerNodeSettings(`type`: String, opts: js.Object): Unit = js.native
+  def registerNodeSettings(`type`: String, opts: js.Object): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def set(prop: String, value: js.Any): js.Promise[Unit] = js.native
+  def set(prop: String, value: js.Any): js.Promise[Unit]
   
-  def setUserSettings(username: String, settings: js.Object): js.Promise[Unit] = js.native
+  def setUserSettings(username: String, settings: js.Object): js.Promise[Unit]
 }
 object PersistentSettings {
   

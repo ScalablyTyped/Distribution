@@ -4,21 +4,19 @@ import typings.winrtUwp.Windows.Storage.Provider.CachedFileTarget
 import typings.winrtUwp.Windows.Storage.Provider.FileUpdateRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details about the cached file operation that invoked the trigger. */
-@js.native
 trait CachedFileUpdaterTriggerDetails extends StObject {
   
   /** Gets whether the system can display UI allowing the user to launch provider app in response to the cached file updater trigger. */
-  var canRequestUserInput: Boolean = js.native
+  var canRequestUserInput: Boolean
   
   /** Gets the FileUpdateRequest object associated with the cached file update. */
-  var updateRequest: FileUpdateRequest = js.native
+  var updateRequest: FileUpdateRequest
   
   /** Gets the CachedFileTarget object associated with cached file update that indicates whether the local or remote file should be updated. */
-  var updateTarget: CachedFileTarget = js.native
+  var updateTarget: CachedFileTarget
 }
 object CachedFileUpdaterTriggerDetails {
   

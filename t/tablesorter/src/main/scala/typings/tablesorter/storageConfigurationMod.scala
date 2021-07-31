@@ -3,38 +3,36 @@ package typings.tablesorter
 import typings.tablesorter.storageTypeMod.StorageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageConfigurationMod {
   
-  @js.native
   trait StorageConfiguration extends StObject {
     
     /**
       * The `data-attribute`-name to automatically get the id of the table from.
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
     /**
       * The id of the storage to save to.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * The `data-attribute`-name to automatically get the url of the table from.
       */
-    var page: js.UndefOr[String] = js.native
+    var page: js.UndefOr[String] = js.undefined
     
     /**
       * The medium to save the storage to.
       */
-    var storageType: js.UndefOr[StorageType] = js.native
+    var storageType: js.UndefOr[StorageType] = js.undefined
     
     /**
       * The url to save the storage to.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object StorageConfiguration {
     

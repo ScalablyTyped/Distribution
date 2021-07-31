@@ -15,7 +15,6 @@ import typings.reactRecaptcha.reactRecaptchaStrings.normal
 import typings.reactRecaptcha.reactRecaptchaStrings.onload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -50,40 +49,39 @@ object mod {
     def reset(): Unit = js.native
   }
   
-  @js.native
   trait RecaptchaProps extends StObject {
     
-    var badge: js.UndefOr[bottomright | bottomleft | `inline`] = js.native
+    var badge: js.UndefOr[bottomright | bottomleft | `inline`] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var elementID: js.UndefOr[String] = js.native
+    var elementID: js.UndefOr[String] = js.undefined
     
-    var expiredCallback: js.UndefOr[js.Function0[_]] = js.native
+    var expiredCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var expiredCallbackName: js.UndefOr[String] = js.native
+    var expiredCallbackName: js.UndefOr[String] = js.undefined
     
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
-    var onloadCallback: js.UndefOr[js.Function0[_]] = js.native
+    var onloadCallback: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onloadCallbackName: js.UndefOr[String] = js.native
+    var onloadCallbackName: js.UndefOr[String] = js.undefined
     
-    var render: js.UndefOr[onload | explicit] = js.native
+    var render: js.UndefOr[onload | explicit] = js.undefined
     
-    var sitekey: js.UndefOr[String] = js.native
+    var sitekey: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[normal | compact | invisible] = js.native
+    var size: js.UndefOr[normal | compact | invisible] = js.undefined
     
-    var tabindex: js.UndefOr[Double | String] = js.native
+    var tabindex: js.UndefOr[Double | String] = js.undefined
     
-    var theme: js.UndefOr[dark | light] = js.native
+    var theme: js.UndefOr[dark | light] = js.undefined
     
-    var `type`: js.UndefOr[audio | image] = js.native
+    var `type`: js.UndefOr[audio | image] = js.undefined
     
-    var verifyCallback: js.UndefOr[js.Function1[/* response */ String, _]] = js.native
+    var verifyCallback: js.UndefOr[js.Function1[/* response */ String, js.Any]] = js.undefined
     
-    var verifyCallbackName: js.UndefOr[String] = js.native
+    var verifyCallbackName: js.UndefOr[String] = js.undefined
   }
   object RecaptchaProps {
     
@@ -115,7 +113,7 @@ object mod {
       def setElementIDUndefined: Self = StObject.set(x, "elementID", js.undefined)
       
       @scala.inline
-      def setExpiredCallback(value: () => _): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
+      def setExpiredCallback(value: () => js.Any): Self = StObject.set(x, "expiredCallback", js.Any.fromFunction0(value))
       
       @scala.inline
       def setExpiredCallbackName(value: String): Self = StObject.set(x, "expiredCallbackName", value.asInstanceOf[js.Any])
@@ -133,7 +131,7 @@ object mod {
       def setHlUndefined: Self = StObject.set(x, "hl", js.undefined)
       
       @scala.inline
-      def setOnloadCallback(value: () => _): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
+      def setOnloadCallback(value: () => js.Any): Self = StObject.set(x, "onloadCallback", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnloadCallbackName(value: String): Self = StObject.set(x, "onloadCallbackName", value.asInstanceOf[js.Any])
@@ -181,7 +179,7 @@ object mod {
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
       
       @scala.inline
-      def setVerifyCallback(value: /* response */ String => _): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
+      def setVerifyCallback(value: /* response */ String => js.Any): Self = StObject.set(x, "verifyCallback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setVerifyCallbackName(value: String): Self = StObject.set(x, "verifyCallbackName", value.asInstanceOf[js.Any])

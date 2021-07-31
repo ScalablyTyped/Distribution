@@ -9,16 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the {@link ModuleUIConfigurationManager} service.
   * @since LibreOffice 4.2
   */
-@js.native
 trait XModuleUIConfigurationManager2
-  extends XUIConfigurationPersistence
+  extends StObject
+     with XUIConfigurationPersistence
      with XUIConfigurationManager
      with XModuleUIConfigurationManager
      with XUIConfiguration

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
   */
-@js.native
 trait PlusContactsContactName extends StObject {
   
   /**
@@ -19,42 +17,42 @@ trait PlusContactsContactName extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人的完整名称，由其它字段组合生成
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var formatted: js.UndefOr[String] = js.native
+  var formatted: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人的名
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人的前缀（如Mr.或Dr.）
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var honorificPrefix: js.UndefOr[String] = js.native
+  var honorificPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人的后缀
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var honorificSuffix: js.UndefOr[String] = js.native
+  var honorificSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * 联系人的中间名
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/contacts.html](http://www.html5plus.org/doc/zh_cn/contacts.html)
     */
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
 }
 object PlusContactsContactName {
   

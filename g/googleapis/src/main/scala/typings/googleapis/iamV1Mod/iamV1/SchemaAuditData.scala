@@ -2,20 +2,18 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Audit log information specific to Cloud IAM. This message is serialized as
   * an `Any` type in the `ServiceData` message of an `AuditLog` message.
   */
-@js.native
 trait SchemaAuditData extends StObject {
   
   /**
     * Policy delta between the original policy and the newly set policy.
     */
-  var policyDelta: js.UndefOr[SchemaPolicyDelta] = js.native
+  var policyDelta: js.UndefOr[SchemaPolicyDelta] = js.undefined
 }
 object SchemaAuditData {
   

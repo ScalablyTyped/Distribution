@@ -5,13 +5,15 @@ import typings.node.Buffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html-docx-js", "asBlob")
+  @JSImport("html-docx-js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def asBlob(
     /**
     * An HTML formatted string. It should be a complete, valid HTML
@@ -20,9 +22,8 @@ object mod {
     * CSS rules in `style` tags.
     */
   html: String
-  ): Blob | Buffer = js.native
-  @JSImport("html-docx-js", "asBlob")
-  @js.native
+  ): Blob | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("asBlob")(html.asInstanceOf[js.Any]).asInstanceOf[Blob | Buffer]
+  @scala.inline
   def asBlob(
     /**
     * An HTML formatted string. It should be a complete, valid HTML
@@ -33,5 +34,5 @@ object mod {
   html: String,
     /** Additional options for controlling page setup for the document. */
   options: Margins
-  ): Blob | Buffer = js.native
+  ): Blob | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("asBlob")(html.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Blob | Buffer]
 }

@@ -2,17 +2,15 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var method: String = js.native
+  var method: String
   
-  var request: String = js.native
+  var request: String
 }
 object Error {
   

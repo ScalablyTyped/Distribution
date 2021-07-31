@@ -6,10 +6,13 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsNode.nodejsKernelBackendMod.NodeJSKernelBackend
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tensorboardMod {
+  
+  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "SummaryFileWriter")
   @js.native
@@ -42,33 +45,20 @@ object tensorboardMod {
     def scalar(name: String, value: Scalar, step: Double, description: String): Unit = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(
-    logdir: String,
-    maxQueue: js.UndefOr[scala.Nothing],
-    flushMillis: js.UndefOr[scala.Nothing],
-    filenameSuffix: String
-  ): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: js.UndefOr[scala.Nothing], flushMillis: Double): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: js.UndefOr[scala.Nothing], flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: js.UndefOr[scala.Nothing], filenameSuffix: String): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter_ = js.native
-  @JSImport("@tensorflow/tfjs-node/dist/tensorboard", "summaryFileWriter")
-  @js.native
-  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = js.native
+  @scala.inline
+  def summaryFileWriter(logdir: String): SummaryFileWriter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any]).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Double, flushMillis: Unit, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Double): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Double, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
+  @scala.inline
+  def summaryFileWriter(logdir: String, maxQueue: Unit, flushMillis: Unit, filenameSuffix: String): SummaryFileWriter_ = (^.asInstanceOf[js.Dynamic].applyDynamic("summaryFileWriter")(logdir.asInstanceOf[js.Any], maxQueue.asInstanceOf[js.Any], flushMillis.asInstanceOf[js.Any], filenameSuffix.asInstanceOf[js.Any])).asInstanceOf[SummaryFileWriter_]
 }

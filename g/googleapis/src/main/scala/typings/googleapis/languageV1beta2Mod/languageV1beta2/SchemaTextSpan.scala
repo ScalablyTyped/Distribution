@@ -2,25 +2,23 @@ package typings.googleapis.languageV1beta2Mod.languageV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an output piece of text.
   */
-@js.native
 trait SchemaTextSpan extends StObject {
   
   /**
     * The API calculates the beginning offset of the content in the original
     * document according to the EncodingType specified in the API request.
     */
-  var beginOffset: js.UndefOr[Double] = js.native
+  var beginOffset: js.UndefOr[Double] = js.undefined
   
   /**
     * The content of the output text.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
 }
 object SchemaTextSpan {
   

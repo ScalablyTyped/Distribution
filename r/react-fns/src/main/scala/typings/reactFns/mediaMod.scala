@@ -5,7 +5,6 @@ import typings.reactFns.mediaMediaMod.MediaProps
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaMod {

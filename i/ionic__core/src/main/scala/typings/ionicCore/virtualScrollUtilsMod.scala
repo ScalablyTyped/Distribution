@@ -11,578 +11,537 @@ import typings.std.HTMLElement
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualScrollUtilsMod {
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
+  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", JSImport.Namespace)
   @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: js.UndefOr[scala.Nothing],
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: js.UndefOr[scala.Nothing],
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: js.UndefOr[scala.Nothing],
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: js.UndefOr[scala.Nothing],
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: js.UndefOr[scala.Nothing],
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcCells")
-  @js.native
-  def calcCells(
-    items: js.Array[_],
-    itemHeight: ItemHeightFn,
-    headerHeight: HeaderHeightFn,
-    footerHeight: FooterHeightFn,
-    headerFn: HeaderFn,
-    footerFn: HeaderFn,
-    approxHeaderHeight: Double,
-    approxFooterHeight: Double,
-    approxItemHeight: Double,
-    j: Double,
-    offset: Double,
-    len: Double
-  ): js.Array[Cell] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "calcHeightIndex")
-  @js.native
-  def calcHeightIndex(buf: Uint32Array, cells: js.Array[Cell], index: Double): Double = js.native
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: Unit,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: Unit,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: Unit,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: Unit,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: Unit,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
+  @scala.inline
+  def calcCells(
+    items: js.Array[js.Any],
+    itemHeight: ItemHeightFn,
+    headerHeight: HeaderHeightFn,
+    footerHeight: FooterHeightFn,
+    headerFn: HeaderFn,
+    footerFn: HeaderFn,
+    approxHeaderHeight: Double,
+    approxFooterHeight: Double,
+    approxItemHeight: Double,
+    j: Double,
+    offset: Double,
+    len: Double
+  ): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcCells")(items.asInstanceOf[js.Any], itemHeight.asInstanceOf[js.Any], headerHeight.asInstanceOf[js.Any], footerHeight.asInstanceOf[js.Any], headerFn.asInstanceOf[js.Any], footerFn.asInstanceOf[js.Any], approxHeaderHeight.asInstanceOf[js.Any], approxFooterHeight.asInstanceOf[js.Any], approxItemHeight.asInstanceOf[js.Any], j.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "doRender")
-  @js.native
+  @scala.inline
+  def calcHeightIndex(buf: Uint32Array, cells: js.Array[Cell], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeightIndex")(buf.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
   def doRender(
     el: HTMLElement,
     nodeRender: ItemRenderFn,
     dom: js.Array[VirtualNode],
     updateCellHeight: js.Function2[/* cell */ Cell, /* node */ HTMLElement, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doRender")(el.asInstanceOf[js.Any], nodeRender.asInstanceOf[js.Any], dom.asInstanceOf[js.Any], updateCellHeight.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "findCellIndex")
-  @js.native
-  def findCellIndex(cells: js.Array[Cell], index: Double): Double = js.native
+  @scala.inline
+  def findCellIndex(cells: js.Array[Cell], index: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findCellIndex")(cells.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "getRange")
-  @js.native
-  def getRange(heightIndex: Uint32Array, viewport: Viewport, buffer: Double): Range = js.native
+  @scala.inline
+  def getRange(heightIndex: Uint32Array, viewport: Viewport, buffer: Double): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("getRange")(heightIndex.asInstanceOf[js.Any], viewport.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Range]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "getShouldUpdate")
-  @js.native
-  def getShouldUpdate(dirtyIndex: Double, currentRange: Range, range: Range): Boolean = js.native
+  @scala.inline
+  def getShouldUpdate(dirtyIndex: Double, currentRange: Range, range: Range): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("getShouldUpdate")(dirtyIndex.asInstanceOf[js.Any], currentRange.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "getViewport")
-  @js.native
-  def getViewport(scrollTop: Double, vierportHeight: Double, margin: Double): Viewport = js.native
+  @scala.inline
+  def getViewport(scrollTop: Double, vierportHeight: Double, margin: Double): Viewport = (^.asInstanceOf[js.Dynamic].applyDynamic("getViewport")(scrollTop.asInstanceOf[js.Any], vierportHeight.asInstanceOf[js.Any], margin.asInstanceOf[js.Any])).asInstanceOf[Viewport]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "inplaceUpdate")
-  @js.native
-  def inplaceUpdate(dst: js.Array[Cell], src: js.Array[Cell], offset: Double): js.Array[Cell] = js.native
+  @scala.inline
+  def inplaceUpdate(dst: js.Array[Cell], src: js.Array[Cell], offset: Double): js.Array[Cell] = (^.asInstanceOf[js.Dynamic].applyDynamic("inplaceUpdate")(dst.asInstanceOf[js.Any], src.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Array[Cell]]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "positionForIndex")
-  @js.native
-  def positionForIndex(index: Double, cells: js.Array[Cell], heightIndex: Uint32Array): Double = js.native
+  @scala.inline
+  def positionForIndex(index: Double, cells: js.Array[Cell], heightIndex: Uint32Array): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("positionForIndex")(index.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], heightIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "resizeBuffer")
-  @js.native
-  def resizeBuffer(buf: js.UndefOr[scala.Nothing], len: Double): Uint32Array = js.native
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "resizeBuffer")
-  @js.native
-  def resizeBuffer(buf: Uint32Array, len: Double): Uint32Array = js.native
+  @scala.inline
+  def resizeBuffer(buf: Unit, len: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBuffer")(buf.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
+  @scala.inline
+  def resizeBuffer(buf: Uint32Array, len: Double): Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBuffer")(buf.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Uint32Array]
   
-  @JSImport("@ionic/core/dist/types/components/virtual-scroll/virtual-scroll-utils", "updateVDom")
-  @js.native
-  def updateVDom(dom: js.Array[VirtualNode], heightIndex: Uint32Array, cells: js.Array[Cell], range: Range): Unit = js.native
+  @scala.inline
+  def updateVDom(dom: js.Array[VirtualNode], heightIndex: Uint32Array, cells: js.Array[Cell], range: Range): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateVDom")(dom.asInstanceOf[js.Any], heightIndex.asInstanceOf[js.Any], cells.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Range extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Range {
     
@@ -603,12 +562,11 @@ object virtualScrollUtilsMod {
     }
   }
   
-  @js.native
   trait Viewport extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Viewport {
     

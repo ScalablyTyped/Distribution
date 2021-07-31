@@ -2,20 +2,18 @@ package typings.extendedListbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBoxSearchBarButtonOptions extends StObject {
   
   /** css class for the i-tag of the button */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** callback for button click */
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** determines if the button is visible */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ListBoxSearchBarButtonOptions {
   

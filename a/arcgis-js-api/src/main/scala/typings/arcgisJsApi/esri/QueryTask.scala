@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QueryTask extends Task {
+trait QueryTask
+  extends StObject
+     with Task {
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer specified in the [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html#url).
@@ -23,10 +24,10 @@ trait QueryTask extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html#executeAttachmentQuery)
     */
-  def executeAttachmentQuery(attachmentQuery: AttachmentQuery): js.Promise[_] = js.native
-  def executeAttachmentQuery(attachmentQuery: AttachmentQueryProperties): js.Promise[_] = js.native
-  def executeAttachmentQuery(attachmentQuery: AttachmentQueryProperties, requestOptions: js.Any): js.Promise[_] = js.native
-  def executeAttachmentQuery(attachmentQuery: AttachmentQuery, requestOptions: js.Any): js.Promise[_] = js.native
+  def executeAttachmentQuery(attachmentQuery: AttachmentQuery): js.Promise[js.Any] = js.native
+  def executeAttachmentQuery(attachmentQuery: AttachmentQueryProperties): js.Promise[js.Any] = js.native
+  def executeAttachmentQuery(attachmentQuery: AttachmentQueryProperties, requestOptions: js.Any): js.Promise[js.Any] = js.native
+  def executeAttachmentQuery(attachmentQuery: AttachmentQuery, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Gets a count of the number of features that satisfy the input query.
@@ -43,8 +44,8 @@ trait QueryTask extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html#executeForExtent)
     */
-  def executeForExtent(params: Query): js.Promise[_] = js.native
-  def executeForExtent(params: Query, requestOptions: js.Any): js.Promise[_] = js.native
+  def executeForExtent(params: Query): js.Promise[js.Any] = js.native
+  def executeForExtent(params: Query, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the layer specified in the [url](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html#url).
@@ -61,10 +62,10 @@ trait QueryTask extends Task {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-QueryTask.html#executeRelationshipQuery)
     */
-  def executeRelationshipQuery(relationshipQuery: RelationshipQuery): js.Promise[_] = js.native
-  def executeRelationshipQuery(relationshipQuery: RelationshipQueryProperties): js.Promise[_] = js.native
-  def executeRelationshipQuery(relationshipQuery: RelationshipQueryProperties, requestOptions: js.Any): js.Promise[_] = js.native
-  def executeRelationshipQuery(relationshipQuery: RelationshipQuery, requestOptions: js.Any): js.Promise[_] = js.native
+  def executeRelationshipQuery(relationshipQuery: RelationshipQuery): js.Promise[js.Any] = js.native
+  def executeRelationshipQuery(relationshipQuery: RelationshipQueryProperties): js.Promise[js.Any] = js.native
+  def executeRelationshipQuery(relationshipQuery: RelationshipQueryProperties, requestOptions: js.Any): js.Promise[js.Any] = js.native
+  def executeRelationshipQuery(relationshipQuery: RelationshipQuery, requestOptions: js.Any): js.Promise[js.Any] = js.native
   
   /**
     * Specify the geodatabase version to query.

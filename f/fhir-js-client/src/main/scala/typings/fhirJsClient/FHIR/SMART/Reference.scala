@@ -2,16 +2,14 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reference within a resource
   */
-@js.native
 trait Reference extends StObject {
   
-  var reference: String = js.native
+  var reference: String
 }
 object Reference {
   

@@ -3,10 +3,8 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NgModule extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait NgModule extends StObject {
     * this module is bootstrapped. The components listed here
     * are automatically added to `entryComponents`.
     */
-  var bootstrap: js.UndefOr[js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]] = js.native
+  var bootstrap: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
   
   /**
     * The set of components, directives, and pipes ([declarables](guide/glossary#declarable))
@@ -42,7 +40,7 @@ trait NgModule extends StObject {
     * }
     * ```
     */
-  var declarations: js.UndefOr[js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]] = js.native
+  var declarations: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
   
   /**
     * The set of components to compile when this NgModule is defined,
@@ -59,7 +57,7 @@ trait NgModule extends StObject {
     * @see [Entry Components](guide/entry-components)
     * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
     */
-  var entryComponents: js.UndefOr[js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]] = js.native
+  var entryComponents: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
   
   /**
     * The set of components, directives, and pipes declared in this
@@ -91,14 +89,14 @@ trait NgModule extends StObject {
     * }
     * ```
     */
-  var exports: js.UndefOr[js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]] = js.native
+  var exports: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
   
   /**
     * A name or path that uniquely identifies this NgModule in `getModuleFactory`.
     * If left `undefined`, the NgModule is not registered with
     * `getModuleFactory`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The set of NgModules whose exported [declarables](guide/glossary#declarable)
@@ -127,9 +125,7 @@ trait NgModule extends StObject {
     * ```
     *
     */
-  var imports: js.UndefOr[
-    js.Array[typings.angularCore.mod.Type[_] | ModuleWithProviders[js.Object] | js.Array[_]]
-  ] = js.native
+  var imports: js.UndefOr[js.Array[Type[js.Any] | ModuleWithProviders[js.Object] | js.Array[js.Any]]] = js.undefined
   
   /**
     * When present, this module is ignored by the AOT compiler.
@@ -137,7 +133,7 @@ trait NgModule extends StObject {
     * at run time, in the browser.
     * To ensure the correct behavior, the app must import `@angular/compiler`.
     */
-  var jit: js.UndefOr[`true`] = js.native
+  var jit: js.UndefOr[`true`] = js.undefined
   
   /**
     * The set of injectable objects that are available in the injector
@@ -186,7 +182,7 @@ trait NgModule extends StObject {
     * }
     * ```
     */
-  var providers: js.UndefOr[js.Array[Provider]] = js.native
+  var providers: js.UndefOr[js.Array[Provider]] = js.undefined
   
   /**
     * The set of schemas that declare elements to be allowed in the NgModule.
@@ -198,7 +194,7 @@ trait NgModule extends StObject {
     * @security When using one of `NO_ERRORS_SCHEMA` or `CUSTOM_ELEMENTS_SCHEMA`
     * you must ensure that allowed elements and properties securely escape inputs.
     */
-  var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[_]]] = js.native
+  var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[js.Any]]] = js.undefined
 }
 object NgModule {
   
@@ -210,40 +206,40 @@ object NgModule {
   implicit class NgModuleMutableBuilder[Self <: NgModule] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBootstrap(value: js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
+    def setBootstrap(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBootstrapUndefined: Self = StObject.set(x, "bootstrap", js.undefined)
     
     @scala.inline
-    def setBootstrapVarargs(value: (typings.angularCore.mod.Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
+    def setBootstrapVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "bootstrap", js.Array(value :_*))
     
     @scala.inline
-    def setDeclarations(value: js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+    def setDeclarations(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
     
     @scala.inline
-    def setDeclarationsVarargs(value: (typings.angularCore.mod.Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "declarations", js.Array(value :_*))
+    def setDeclarationsVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "declarations", js.Array(value :_*))
     
     @scala.inline
-    def setEntryComponents(value: js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
+    def setEntryComponents(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
     
     @scala.inline
-    def setEntryComponentsVarargs(value: (typings.angularCore.mod.Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
+    def setEntryComponentsVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
-    def setExports(value: js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
+    def setExports(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExportsUndefined: Self = StObject.set(x, "exports", js.undefined)
     
     @scala.inline
-    def setExportsVarargs(value: (typings.angularCore.mod.Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "exports", js.Array(value :_*))
+    def setExportsVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "exports", js.Array(value :_*))
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -252,13 +248,13 @@ object NgModule {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setImports(value: js.Array[typings.angularCore.mod.Type[_] | ModuleWithProviders[js.Object] | js.Array[_]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+    def setImports(value: js.Array[Type[js.Any] | ModuleWithProviders[js.Object] | js.Array[js.Any]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
     
     @scala.inline
-    def setImportsVarargs(value: (typings.angularCore.mod.Type[js.Any] | ModuleWithProviders[js.Object] | js.Array[js.Any])*): Self = StObject.set(x, "imports", js.Array(value :_*))
+    def setImportsVarargs(value: (Type[js.Any] | ModuleWithProviders[js.Object] | js.Array[js.Any])*): Self = StObject.set(x, "imports", js.Array(value :_*))
     
     @scala.inline
     def setJit(value: `true`): Self = StObject.set(x, "jit", value.asInstanceOf[js.Any])
@@ -276,7 +272,7 @@ object NgModule {
     def setProvidersVarargs(value: Provider*): Self = StObject.set(x, "providers", js.Array(value :_*))
     
     @scala.inline
-    def setSchemas(value: js.Array[SchemaMetadata | js.Array[_]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    def setSchemas(value: js.Array[SchemaMetadata | js.Array[js.Any]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)

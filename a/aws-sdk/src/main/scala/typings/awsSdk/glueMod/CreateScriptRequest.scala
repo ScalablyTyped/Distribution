@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateScriptRequest extends StObject {
   
   /**
     * A list of the edges in the DAG.
     */
-  var DagEdges: js.UndefOr[typings.awsSdk.glueMod.DagEdges] = js.native
+  var DagEdges: js.UndefOr[typings.awsSdk.glueMod.DagEdges] = js.undefined
   
   /**
     * A list of the nodes in the DAG.
     */
-  var DagNodes: js.UndefOr[typings.awsSdk.glueMod.DagNodes] = js.native
+  var DagNodes: js.UndefOr[typings.awsSdk.glueMod.DagNodes] = js.undefined
   
   /**
     * The programming language of the resulting code from the DAG.
     */
-  var Language: js.UndefOr[typings.awsSdk.glueMod.Language] = js.native
+  var Language: js.UndefOr[typings.awsSdk.glueMod.Language] = js.undefined
 }
 object CreateScriptRequest {
   

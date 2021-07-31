@@ -4,46 +4,45 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleSpecification
-  extends // Allow anything: in general any property that is passed as locale spec is
+  extends StObject
+     with // Allow anything: in general any property that is passed as locale spec is
 // put in the locale object so it can be used by locale functions
 /* x */ StringDictionary[js.Any] {
   
-  var calendar: js.UndefOr[CalendarSpec] = js.native
+  var calendar: js.UndefOr[CalendarSpec] = js.undefined
   
-  var invalidDate: js.UndefOr[String] = js.native
+  var invalidDate: js.UndefOr[String] = js.undefined
   
-  var isPM: js.UndefOr[js.Function1[/* input */ String, Boolean]] = js.native
+  var isPM: js.UndefOr[js.Function1[/* input */ String, Boolean]] = js.undefined
   
-  var longDateFormat: js.UndefOr[LongDateFormatSpec] = js.native
+  var longDateFormat: js.UndefOr[LongDateFormatSpec] = js.undefined
   
   var meridiem: js.UndefOr[
     js.Function3[/* hour */ Double, /* minute */ Double, /* isLower */ Boolean, String]
-  ] = js.native
+  ] = js.undefined
   
-  var meridiemParse: js.UndefOr[RegExp] = js.native
+  var meridiemParse: js.UndefOr[RegExp] = js.undefined
   
-  var months: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.native
+  var months: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.undefined
   
-  var monthsShort: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.native
+  var monthsShort: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.undefined
   
-  var ordinal: js.UndefOr[js.Function1[/* n */ Double, String]] = js.native
+  var ordinal: js.UndefOr[js.Function1[/* n */ Double, String]] = js.undefined
   
-  var ordinalParse: js.UndefOr[RegExp] = js.native
+  var ordinalParse: js.UndefOr[RegExp] = js.undefined
   
-  var relativeTime: js.UndefOr[RelativeTimeSpec] = js.native
+  var relativeTime: js.UndefOr[RelativeTimeSpec] = js.undefined
   
-  var week: js.UndefOr[WeekSpec] = js.native
+  var week: js.UndefOr[WeekSpec] = js.undefined
   
-  var weekdays: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.native
+  var weekdays: js.UndefOr[js.Array[String] | StandaloneFormatSpec | MonthWeekdayFn] = js.undefined
   
-  var weekdaysMin: js.UndefOr[js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn] = js.native
+  var weekdaysMin: js.UndefOr[js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn] = js.undefined
   
-  var weekdaysShort: js.UndefOr[js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn] = js.native
+  var weekdaysShort: js.UndefOr[js.Array[String] | StandaloneFormatSpec | WeekdaySimpleFn] = js.undefined
 }
 object LocaleSpecification {
   

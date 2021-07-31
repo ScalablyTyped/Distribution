@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.softbreak
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait SoftbreakToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait SoftbreakToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_SoftbreakToken: softbreak = js.native
+  var type_SoftbreakToken: softbreak
 }
 object SoftbreakToken {
   
   @scala.inline
-  def apply(level: Double, `type`: softbreak): SoftbreakToken = {
+  def apply(level: Double): SoftbreakToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("softbreak")
     __obj.asInstanceOf[SoftbreakToken]
   }
   

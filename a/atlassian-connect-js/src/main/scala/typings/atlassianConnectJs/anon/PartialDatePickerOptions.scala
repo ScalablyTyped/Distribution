@@ -4,22 +4,20 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<atlassian-connect-js.AP.jira.DatePickerOptions> */
-@js.native
 trait PartialDatePickerOptions extends StObject {
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var element: js.UndefOr[HTMLElement] = js.native
+  var element: js.UndefOr[HTMLElement] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function2[/* isoDate */ String, /* date */ Date, Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function2[/* isoDate */ String, /* date */ Date, Unit]] = js.undefined
   
-  var position: js.UndefOr[Left] = js.native
+  var position: js.UndefOr[Left] = js.undefined
   
-  var showTime: js.UndefOr[Boolean] = js.native
+  var showTime: js.UndefOr[Boolean] = js.undefined
 }
 object PartialDatePickerOptions {
   

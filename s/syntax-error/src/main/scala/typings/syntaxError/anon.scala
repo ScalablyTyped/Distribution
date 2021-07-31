@@ -2,28 +2,26 @@ package typings.syntaxError
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.SyntaxError & {  line :number,   column :number,   annotated :string, inspect (): string} */
-  @js.native
   trait SyntaxErrorlinenumbercolu extends StObject {
     
-    var annotated: String = js.native
+    var annotated: String
     
-    var column: Double = js.native
+    var column: Double
     
-    def inspect(): String = js.native
+    def inspect(): String
     
-    var line: Double = js.native
+    var line: Double
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
     
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
   }
   object SyntaxErrorlinenumbercolu {
     

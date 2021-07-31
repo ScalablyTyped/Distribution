@@ -10,9 +10,9 @@ This package is used internally by Apollo Server and not meant to be consumed di
 | ------------------ | :-------------: |
 | Full name          | apollo-server-env |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 58 |
-| # downloads        | 49342361 |
+| # releases         | 15 |
+| # dependents       | 65 |
+| # downloads        | 59564489 |
 | # stars            | 0 |
 
 ## Links

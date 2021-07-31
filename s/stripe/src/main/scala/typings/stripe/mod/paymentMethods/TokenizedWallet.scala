@@ -2,14 +2,12 @@ package typings.stripe.mod.paymentMethods
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenizedWallet extends StObject {
   
   /** (For tokenized numbers only.) The last four digits of the device account number. */
-  var dynamic_last4: js.UndefOr[String] = js.native
+  var dynamic_last4: js.UndefOr[String] = js.undefined
 }
 object TokenizedWallet {
   

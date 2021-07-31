@@ -5,7 +5,6 @@ import typings.react.mod.Props
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,46 +13,49 @@ object mod {
   @js.native
   class ^ ()
     extends Component[InfiniteProps, js.Object, js.Any]
+  @JSImport("react-infinite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("react-infinite", "containerHeightScaleFactor")
-  @js.native
-  def containerHeightScaleFactor(n: Double): js.Any = js.native
+  @scala.inline
+  def containerHeightScaleFactor(n: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("containerHeightScaleFactor")(n.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @js.native
   trait Infinite
     extends Component[InfiniteProps, js.Object, js.Any]
   
-  @js.native
-  trait InfiniteProps extends Props[Infinite] {
+  trait InfiniteProps
+    extends StObject
+       with Props[Infinite] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var containerHeight: js.UndefOr[Double] = js.native
+    var containerHeight: js.UndefOr[Double] = js.undefined
     
-    var displayBottomUpwards: js.UndefOr[Boolean] = js.native
+    var displayBottomUpwards: js.UndefOr[Boolean] = js.undefined
     
-    var elementHeight: Double | js.Array[Double] = js.native
+    var elementHeight: Double | js.Array[Double]
     
-    var handleScroll: js.UndefOr[js.Function1[/* node */ ReactElement, Unit]] = js.native
+    var handleScroll: js.UndefOr[js.Function1[/* node */ ReactElement, Unit]] = js.undefined
     
-    var infiniteLoadBeginBottomOffset: js.UndefOr[Double] = js.native
+    var infiniteLoadBeginBottomOffset: js.UndefOr[Double] = js.undefined
     
-    var infiniteLoadBeginEdgeOffset: js.UndefOr[Double] = js.native
+    var infiniteLoadBeginEdgeOffset: js.UndefOr[Double] = js.undefined
     
-    var isInfiniteLoading: js.UndefOr[Boolean] = js.native
+    var isInfiniteLoading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingSpinnerDelegate: js.UndefOr[ReactElement] = js.native
+    var loadingSpinnerDelegate: js.UndefOr[ReactElement] = js.undefined
     
-    var onInfiniteLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInfiniteLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preloadAdditionalHeight: js.UndefOr[Double | js.Object] = js.native
+    var preloadAdditionalHeight: js.UndefOr[Double | js.Object] = js.undefined
     
-    var preloadBatchSize: js.UndefOr[Double | js.Object] = js.native
+    var preloadBatchSize: js.UndefOr[Double | js.Object] = js.undefined
     
-    var timeScrollStateLastsForAfterUserScrolls: js.UndefOr[Double] = js.native
+    var timeScrollStateLastsForAfterUserScrolls: js.UndefOr[Double] = js.undefined
     
-    var useWindowAsScrollContainer: js.UndefOr[Boolean] = js.native
+    var useWindowAsScrollContainer: js.UndefOr[Boolean] = js.undefined
   }
   object InfiniteProps {
     

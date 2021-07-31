@@ -2,27 +2,25 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseArtifact extends StObject {
   
-  var artifactProvider: ArtifactProvider = js.native
+  var artifactProvider: ArtifactProvider
   
-  var artifactType: String = js.native
+  var artifactType: String
   
-  var definitionData: String = js.native
+  var definitionData: String
   
-  var definitionId: Double = js.native
+  var definitionId: Double
   
-  var description: String = js.native
+  var description: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var releaseId: Double = js.native
+  var releaseId: Double
 }
 object ReleaseArtifact {
   

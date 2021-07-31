@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PublicKeyCredentialUserEntity extends PublicKeyCredentialEntity {
+trait PublicKeyCredentialUserEntity
+  extends StObject
+     with PublicKeyCredentialEntity {
   
-  var displayName: java.lang.String = js.native
+  var displayName: java.lang.String
   
-  var id: BufferSource = js.native
+  var id: BufferSource
 }
 object PublicKeyCredentialUserEntity {
   

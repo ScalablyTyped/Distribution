@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,9 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The configuration changes are read from a {@link XLayer} and stored into a {@link Backend} .
   * @since OOo 1.1.2
   */
-@js.native
 trait Importer
-  extends XLayerImporter
+  extends StObject
+     with XLayerImporter
      with XInitialization
 object Importer {
   
@@ -27,7 +26,7 @@ object Importer {
     getTargetBackend: () => XBackend,
     importLayer: XLayer => Unit,
     importLayerForEntity: (XLayer, String) => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setTargetBackend: XBackend => Unit

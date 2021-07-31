@@ -2,23 +2,21 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEndpointItemResponseMod {
   
-  @js.native
   trait EndpointItemResponse extends StObject {
     
     /**
       * A custom message associated with the registration of an endpoint when issuing a response.
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
     
     /**
       * The status code associated with the merging of an endpoint when issuing a response.
       */
-    var StatusCode: js.UndefOr[Double] = js.native
+    var StatusCode: js.UndefOr[Double] = js.undefined
   }
   object EndpointItemResponse {
     

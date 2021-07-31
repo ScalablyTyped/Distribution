@@ -3,16 +3,14 @@ package typings.reactColor.anon
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-color.react-color/lib/components/alpha/Alpha.AlphaPickerStylesProps> */
-@js.native
 trait PartialAlphaPickerStylesP extends StObject {
   
-  var alpha: js.UndefOr[CSSProperties] = js.native
+  var alpha: js.UndefOr[CSSProperties] = js.undefined
   
-  var picker: js.UndefOr[CSSProperties] = js.native
+  var picker: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialAlphaPickerStylesP {
   

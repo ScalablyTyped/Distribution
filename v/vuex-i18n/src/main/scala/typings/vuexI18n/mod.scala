@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vue.pluginMod.PluginObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -88,12 +87,12 @@ object mod {
       * to the function directly to the translateInLanguage function
       */
     def translate(key: String, defaultValue: String): js.UndefOr[String] = js.native
-    def translate(key: String, defaultValue: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
     def translate(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
     def translate(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
-    def translate(key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
+    def translate(key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     def translate(key: String, options: js.Any): js.UndefOr[String] = js.native
     def translate(key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translate(key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     
     /**
       * get localized string from store in a given language if available.
@@ -103,22 +102,17 @@ object mod {
       * get localized string from store in a given language if available.
       */
     def translateIn(locale: String, key: String, defaultValue: String): js.UndefOr[String] = js.native
-    def translateIn(
-      locale: String,
-      key: String,
-      defaultValue: String,
-      options: js.UndefOr[scala.Nothing],
-      pluralization: Double
-    ): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
-    def translateIn(locale: String, key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, options: js.Any): js.UndefOr[String] = js.native
     def translateIn(locale: String, key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+    def translateIn(locale: String, key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait Translations extends /* key */ StringDictionary[String | Translations]
+  trait Translations
+    extends StObject
+       with /* key */ StringDictionary[String | Translations]
   object Translations {
     
     @scala.inline
@@ -128,20 +122,19 @@ object mod {
     }
   }
   
-  @js.native
   trait i18nState extends StObject {
     
-    var fallback: String | Null = js.native
+    var fallback: String | Null
     
-    var locale: String | Null = js.native
+    var locale: String | Null
     
-    var translations: StringDictionary[Translations] = js.native
+    var translations: StringDictionary[Translations]
   }
   object i18nState {
     
     @scala.inline
     def apply(translations: StringDictionary[Translations]): i18nState = {
-      val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(translations = translations.asInstanceOf[js.Any], fallback = null, locale = null)
       __obj.asInstanceOf[i18nState]
     }
     
@@ -178,23 +171,22 @@ object mod {
       @JSName("$t")
       def $t(key: String, defaultValue: String): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, defaultValue: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
-      @JSName("$t")
       def $t(key: String, defaultValue: String, options: js.Any): js.UndefOr[String] = js.native
       @JSName("$t")
       def $t(key: String, defaultValue: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
       @JSName("$t")
-      def $t(key: String, options: js.UndefOr[scala.Nothing], pluralization: Double): js.UndefOr[String] = js.native
+      def $t(key: String, defaultValue: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
       @JSName("$t")
       def $t(key: String, options: js.Any): js.UndefOr[String] = js.native
       @JSName("$t")
       def $t(key: String, options: js.Any, pluralization: Double): js.UndefOr[String] = js.native
+      @JSName("$t")
+      def $t(key: String, options: Unit, pluralization: Double): js.UndefOr[String] = js.native
     }
     
-    @js.native
     trait VueConstructor[V /* <: Vue */] extends StObject {
       
-      var i18n: Ii18n = js.native
+      var i18n: Ii18n
     }
     object VueConstructor {
       
@@ -205,7 +197,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class VueConstructorMutableBuilder[Self <: VueConstructor[_], V /* <: Vue */] (val x: Self with VueConstructor[V]) extends AnyVal {
+      implicit class VueConstructorMutableBuilder[Self <: VueConstructor[?], V /* <: Vue */] (val x: Self & VueConstructor[V]) extends AnyVal {
         
         @scala.inline
         def setI18n(value: Ii18n): Self = StObject.set(x, "i18n", value.asInstanceOf[js.Any])

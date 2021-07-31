@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TerminateInstanceInAutoScalingGroupType extends StObject {
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: XmlStringMaxLen19 = js.native
+  var InstanceId: XmlStringMaxLen19
   
   /**
     * Indicates whether terminating the instance also decrements the size of the Auto Scaling group.
     */
-  var ShouldDecrementDesiredCapacity: typings.awsSdk.autoscalingMod.ShouldDecrementDesiredCapacity = js.native
+  var ShouldDecrementDesiredCapacity: typings.awsSdk.autoscalingMod.ShouldDecrementDesiredCapacity
 }
 object TerminateInstanceInAutoScalingGroupType {
   

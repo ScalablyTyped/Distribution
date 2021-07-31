@@ -2,59 +2,55 @@ package typings.easyXHeaders
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
   
-  @JSImport("url", "format")
+  @JSImport("url", JSImport.Namespace)
   @js.native
-  def format(url: UrlOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String): Url = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: js.UndefOr[scala.Nothing], slashesDenoteHost: Boolean): Url = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: Boolean): Url = js.native
-  @JSImport("url", "parse")
-  @js.native
-  def parse(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url = js.native
+  @scala.inline
+  def format(url: UrlOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(url.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("url", "resolve")
-  @js.native
-  def resolve(from: String, to: String): String = js.native
+  @scala.inline
+  def parse(urlStr: String): Url = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any]).asInstanceOf[Url]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any])).asInstanceOf[Url]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Boolean, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
+  @scala.inline
+  def parse(urlStr: String, parseQueryString: Unit, slashesDenoteHost: Boolean): Url = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(urlStr.asInstanceOf[js.Any], parseQueryString.asInstanceOf[js.Any], slashesDenoteHost.asInstanceOf[js.Any])).asInstanceOf[Url]
   
-  @js.native
+  @scala.inline
+  def resolve(from: String, to: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Url extends StObject {
     
-    var auth: String = js.native
+    var auth: String
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var href: String = js.native
+    var href: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathname: String = js.native
+    var pathname: String
     
-    var port: String = js.native
+    var port: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var query: js.Any = js.native
+    var query: js.Any
     
-    var search: String = js.native
+    var search: String
     
     // string | Object
-    var slashes: Boolean = js.native
+    var slashes: Boolean
   }
   object Url {
     
@@ -122,28 +118,27 @@ object urlMod {
     }
   }
   
-  @js.native
   trait UrlOptions extends StObject {
     
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var query: js.UndefOr[js.Any] = js.native
+    var query: js.UndefOr[js.Any] = js.undefined
     
-    var search: js.UndefOr[String] = js.native
+    var search: js.UndefOr[String] = js.undefined
   }
   object UrlOptions {
     

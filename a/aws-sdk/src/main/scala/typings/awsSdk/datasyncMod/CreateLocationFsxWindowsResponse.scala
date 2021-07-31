@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocationFsxWindowsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the FSx for Windows file system location that is created.
     */
-  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.native
+  var LocationArn: js.UndefOr[typings.awsSdk.datasyncMod.LocationArn] = js.undefined
 }
 object CreateLocationFsxWindowsResponse {
   

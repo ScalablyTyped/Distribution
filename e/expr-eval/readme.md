@@ -11,8 +11,8 @@ Mathematical expression evaluator
 | Full name          | expr-eval |
 | Keywords           | expression, math, evaluate, eval, function, parser |
 | # releases         | 5 |
-| # dependents       | 59 |
-| # downloads        | 720726 |
+| # dependents       | 61 |
+| # downloads        | 925852 |
 | # stars            | 2 |
 
 ## Links

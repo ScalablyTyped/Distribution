@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartFlowRequest extends StObject {
   
   /**
     * The ARN of the flow that you want to start.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
 }
 object StartFlowRequest {
   

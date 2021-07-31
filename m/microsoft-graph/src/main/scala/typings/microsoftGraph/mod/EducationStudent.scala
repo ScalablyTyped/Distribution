@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EducationStudent extends StObject {
   
   // Birth date of the student.
-  var birthDate: js.UndefOr[NullableOption[String]] = js.native
+  var birthDate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ID of the student in the source system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The possible values are: female, male, other, unknownFutureValue.
-  var gender: js.UndefOr[NullableOption[EducationGender]] = js.native
+  var gender: js.UndefOr[NullableOption[EducationGender]] = js.undefined
   
   // Current grade level of the student.
-  var grade: js.UndefOr[NullableOption[String]] = js.native
+  var grade: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Year the student is graduating from the school.
-  var graduationYear: js.UndefOr[NullableOption[String]] = js.native
+  var graduationYear: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Student Number.
-  var studentNumber: js.UndefOr[NullableOption[String]] = js.native
+  var studentNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EducationStudent {
   

@@ -1,25 +1,23 @@
 package typings.actionsOnGoogle.v1Mod
 
 import typings.actionsOnGoogle.actionsOnGoogleStrings.custom_payload
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageGooglePayload
-  extends DialogflowV1BaseGoogleMessage[custom_payload]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[custom_payload]
      with DialogflowV1Message {
   
-  var payload: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var payload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
 }
 object DialogflowV1MessageGooglePayload {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageGooglePayload = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageGooglePayload = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageGooglePayload]
   }
   
@@ -27,7 +25,7 @@ object DialogflowV1MessageGooglePayload {
   implicit class DialogflowV1MessageGooglePayloadMutableBuilder[Self <: DialogflowV1MessageGooglePayload] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setPayload(value: ApiClientObjectMap[_]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+    def setPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)

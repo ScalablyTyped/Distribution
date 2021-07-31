@@ -3,15 +3,13 @@ package typings.natural.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexTokenizerOptions extends StObject {
   
-  var discardEmpty: js.UndefOr[Boolean] = js.native
+  var discardEmpty: js.UndefOr[Boolean] = js.undefined
   
-  var pattern: js.UndefOr[RegExp] = js.native
+  var pattern: js.UndefOr[RegExp] = js.undefined
 }
 object RegexTokenizerOptions {
   

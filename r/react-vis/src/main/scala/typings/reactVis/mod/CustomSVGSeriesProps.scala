@@ -2,18 +2,18 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CustomSVGSeriesProps extends AbstractSeriesProps[CustomSVGSeriesPoint] {
+trait CustomSVGSeriesProps
+  extends StObject
+     with AbstractSeriesProps[CustomSVGSeriesPoint] {
   
-  var customComponent: js.UndefOr[String | (js.Function1[/* row */ js.Any, _])] = js.native
+  var customComponent: js.UndefOr[String | (js.Function1[/* row */ js.Any, js.Any])] = js.undefined
   
   // default: 'circle'
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
 }
 object CustomSVGSeriesProps {
   
@@ -27,10 +27,10 @@ object CustomSVGSeriesProps {
   implicit class CustomSVGSeriesPropsMutableBuilder[Self <: CustomSVGSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCustomComponent(value: String | (js.Function1[/* row */ js.Any, _])): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
+    def setCustomComponent(value: String | (js.Function1[/* row */ js.Any, js.Any])): Self = StObject.set(x, "customComponent", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCustomComponentFunction1(value: /* row */ js.Any => _): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
+    def setCustomComponentFunction1(value: /* row */ js.Any => js.Any): Self = StObject.set(x, "customComponent", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCustomComponentUndefined: Self = StObject.set(x, "customComponent", js.undefined)

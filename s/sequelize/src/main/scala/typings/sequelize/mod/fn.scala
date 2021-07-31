@@ -2,17 +2,15 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 //  Utils
 // ~~~~~~~
-@js.native
 trait fn extends StObject {
   
   @JSName("clone")
-  var clone_Ffn: fnStatic = js.native
+  var clone_Ffn: fnStatic
 }
 object fn {
   

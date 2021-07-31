@@ -2,15 +2,15 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpdateOptions extends ReplaceOptions {
+trait UpdateOptions
+  extends StObject
+     with ReplaceOptions {
   
-  var keepNull: js.UndefOr[Boolean] = js.native
+  var keepNull: js.UndefOr[Boolean] = js.undefined
   
-  var mergeObjects: js.UndefOr[Boolean] = js.native
+  var mergeObjects: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateOptions {
   

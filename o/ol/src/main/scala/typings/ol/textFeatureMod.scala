@@ -4,7 +4,6 @@ import typings.ol.featureMod.ReadOptions
 import typings.ol.featureMod.WriteOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textFeatureMod {

@@ -28,54 +28,52 @@ import typings.stylableCore.typesMod.ParsedValue
 import typings.stylableCore.typesMod.StateParsedValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableValueParsersMod {
   
+  @JSImport("@stylable/core/cjs/stylable-value-parsers", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object SBTypesParsers {
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-extends")
+    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers")
     @js.native
-    def stExtends(value: String): Ast = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-global")
-    @js.native
-    def stGlobal(decl: Declaration, _diagnostics: Diagnostics): js.Any = js.native
+    @scala.inline
+    def stExtends(value: String): Ast = ^.asInstanceOf[js.Dynamic].applyDynamic("-st-extends")(value.asInstanceOf[js.Any]).asInstanceOf[Ast]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-mixin")
-    @js.native
-    def stMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = js.native
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-mixin")
-    @js.native
+    @scala.inline
+    def stGlobal(decl: Declaration, _diagnostics: Diagnostics): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-global")(decl.asInstanceOf[js.Any], _diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def stMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
+    @scala.inline
     def stMixin(
       mixinNode: Declaration,
       strategy: js.Function1[/* type */ String, named | args],
       diagnostics: Diagnostics
-    ): js.Array[MixinValue] = js.native
+    ): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-named")
-    @js.native
-    def stNamed(value: String, node: Declaration, diagnostics: Diagnostics): KeyframesMap = js.native
+    @scala.inline
+    def stNamed(value: String, node: Declaration, diagnostics: Diagnostics): KeyframesMap = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-named")(value.asInstanceOf[js.Any], node.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[KeyframesMap]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-partial-mixin")
-    @js.native
-    def stPartialMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = js.native
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-partial-mixin")
-    @js.native
+    @scala.inline
+    def stPartialMixin(mixinNode: Declaration, strategy: js.Function1[/* type */ String, named | args]): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-partial-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
+    @scala.inline
     def stPartialMixin(
       mixinNode: Declaration,
       strategy: js.Function1[/* type */ String, named | args],
       diagnostics: Diagnostics
-    ): js.Array[MixinValue] = js.native
+    ): js.Array[MixinValue] = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-partial-mixin")(mixinNode.asInstanceOf[js.Any], strategy.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[js.Array[MixinValue]]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-root")
-    @js.native
-    def stRoot(value: String): Boolean = js.native
+    @scala.inline
+    def stRoot(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("-st-root")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "SBTypesParsers.-st-states")
-    @js.native
-    def stStates(value: String, decl: Declaration, diagnostics: Diagnostics): MappedStates = js.native
+    @scala.inline
+    def stStates(value: String, decl: Declaration, diagnostics: Diagnostics): MappedStates = (^.asInstanceOf[js.Dynamic].applyDynamic("-st-states")(value.asInstanceOf[js.Any], decl.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[MappedStates]
   }
   
   @JSImport("@stylable/core/cjs/stylable-value-parsers", "STYLABLE_NAMED_MATCHER")
@@ -86,67 +84,38 @@ object stylableValueParsersMod {
   @js.native
   val STYLABLE_VALUE_MATCHER: RegExp = js.native
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: js.UndefOr[scala.Nothing],
-    _reportWarning: js.UndefOr[scala.Nothing],
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: js.UndefOr[scala.Nothing], _reportWarning: ReportWarning): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: js.UndefOr[scala.Nothing],
-    _reportWarning: ReportWarning,
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(
-    node: ParsedValue,
-    allowComments: Boolean,
-    _reportWarning: js.UndefOr[scala.Nothing],
-    perserveQuotes: Boolean
-  ): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning): js.Array[String] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getFormatterArgs")
-  @js.native
-  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = js.native
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: Unit, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Boolean, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: Unit, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: ReportWarning): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFormatterArgs(node: ParsedValue, allowComments: Unit, _reportWarning: ReportWarning, perserveQuotes: Boolean): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFormatterArgs")(node.asInstanceOf[js.Any], allowComments.asInstanceOf[js.Any], _reportWarning.asInstanceOf[js.Any], perserveQuotes.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getNamedArgs")
-  @js.native
-  def getNamedArgs(node: ParsedValue): js.Array[js.Array[ParsedValue]] = js.native
+  @scala.inline
+  def getNamedArgs(node: ParsedValue): js.Array[js.Array[ParsedValue]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamedArgs")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[ParsedValue]]]
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getStringValue")
-  @js.native
-  def getStringValue(nodes: js.Array[ParsedValue]): String = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "getStringValue")
-  @js.native
-  def getStringValue(nodes: ParsedValue): String = js.native
+  @scala.inline
+  def getStringValue(nodes: js.Array[ParsedValue]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringValue")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getStringValue(nodes: ParsedValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getStringValue")(nodes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "groupValues")
-  @js.native
-  def groupValues(nodes: js.Array[_]): js.Array[_] = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "groupValues")
-  @js.native
-  def groupValues(nodes: js.Array[_], divType: String): js.Array[_] = js.native
+  @scala.inline
+  def groupValues(nodes: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("groupValues")(nodes.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def groupValues(nodes: js.Array[js.Any], divType: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("groupValues")(nodes.asInstanceOf[js.Any], divType.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "listOptions")
-  @js.native
-  def listOptions(node: js.Any): js.Array[String] = js.native
+  @scala.inline
+  def listOptions(node: js.Any): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listOptions")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
   @JSImport("@stylable/core/cjs/stylable-value-parsers", "mixinDeclRegExp")
   @js.native
@@ -157,6 +126,10 @@ object stylableValueParsersMod {
     @JSImport("@stylable/core/cjs/stylable-value-parsers", "rootValueMapping")
     @js.native
     val ^ : js.Any = js.native
+    
+    @JSImport("@stylable/core/cjs/stylable-value-parsers", "rootValueMapping.import")
+    @js.native
+    val `import`: Colonimport = js.native
     
     @JSImport("@stylable/core/cjs/stylable-value-parsers", "rootValueMapping.namespace")
     @js.native
@@ -175,10 +148,6 @@ object stylableValueParsersMod {
     def vars: Colonvars = js.native
     @scala.inline
     def vars_=(x: Colonvars): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("vars")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "rootValueMapping.import")
-    @js.native
-    val `import`: Colonimport = js.native
   }
   
   @JSImport("@stylable/core/cjs/stylable-value-parsers", "stValues")
@@ -191,33 +160,29 @@ object stylableValueParsersMod {
   
   object strategies {
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "strategies.args")
+    @JSImport("@stylable/core/cjs/stylable-value-parsers", "strategies")
     @js.native
-    def args(node: js.Any): js.Array[Value] = js.native
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "strategies.args")
-    @js.native
-    def args(node: js.Any, reportWarning: ReportWarning): js.Array[Value] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "strategies.named")
-    @js.native
-    def named(node: js.Any): Record[String, String] = js.native
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "strategies.named")
-    @js.native
-    def named(node: js.Any, reportWarning: ReportWarning): Record[String, String] = js.native
+    @scala.inline
+    def args(node: js.Any): js.Array[Value] = ^.asInstanceOf[js.Dynamic].applyDynamic("args")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Value]]
+    @scala.inline
+    def args(node: js.Any, reportWarning: ReportWarning): js.Array[Value] = (^.asInstanceOf[js.Dynamic].applyDynamic("args")(node.asInstanceOf[js.Any], reportWarning.asInstanceOf[js.Any])).asInstanceOf[js.Array[Value]]
+    
+    @scala.inline
+    def named(node: js.Any): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("named")(node.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+    @scala.inline
+    def named(node: js.Any, reportWarning: ReportWarning): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("named")(node.asInstanceOf[js.Any], reportWarning.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   }
   
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double): Boolean = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: js.UndefOr[scala.Nothing], allowed: js.Array[String]): Boolean = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String): Boolean = js.native
-  @JSImport("@stylable/core/cjs/stylable-value-parsers", "validateAllowedNodesUntil")
-  @js.native
-  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String, allowed: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: String, allowed: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def validateAllowedNodesUntil(node: ParsedValue, i: Double, untilType: Unit, allowed: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validateAllowedNodesUntil")(node.asInstanceOf[js.Any], i.asInstanceOf[js.Any], untilType.asInstanceOf[js.Any], allowed.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object valueMapping {
     
@@ -230,6 +195,10 @@ object stylableValueParsersMod {
     def default: `-st-default` = js.native
     @scala.inline
     def default_=(x: `-st-default`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
+    
+    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueMapping.extends")
+    @js.native
+    val `extends`: `-st-extends` = js.native
     
     @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueMapping.from")
     @js.native
@@ -272,37 +241,32 @@ object stylableValueParsersMod {
     def states: `-st-states` = js.native
     @scala.inline
     def states_=(x: `-st-states`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("states")(x.asInstanceOf[js.Any])
-    
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueMapping.extends")
-    @js.native
-    val `extends`: `-st-extends` = js.native
   }
   
   object valueParserWarnings {
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueParserWarnings.CSS_MIXIN_FORCE_NAMED_PARAMS")
+    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueParserWarnings")
     @js.native
-    def CSS_MIXIN_FORCE_NAMED_PARAMS(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueParserWarnings.INVALID_NAMED_IMPORT_AS")
-    @js.native
-    def INVALID_NAMED_IMPORT_AS(name: String): String = js.native
+    @scala.inline
+    def CSS_MIXIN_FORCE_NAMED_PARAMS(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CSS_MIXIN_FORCE_NAMED_PARAMS")().asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueParserWarnings.INVALID_NESTED_KEYFRAMES")
-    @js.native
-    def INVALID_NESTED_KEYFRAMES(name: String): String = js.native
+    @scala.inline
+    def INVALID_NAMED_IMPORT_AS(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NAMED_IMPORT_AS")(name.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/stylable-value-parsers", "valueParserWarnings.VALUE_CANNOT_BE_STRING")
-    @js.native
-    def VALUE_CANNOT_BE_STRING(): String = js.native
+    @scala.inline
+    def INVALID_NESTED_KEYFRAMES(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("INVALID_NESTED_KEYFRAMES")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def VALUE_CANNOT_BE_STRING(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("VALUE_CANNOT_BE_STRING")().asInstanceOf[String]
   }
   
-  @js.native
   trait ArgValue extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object ArgValue {
     
@@ -324,18 +288,17 @@ object stylableValueParsersMod {
     }
   }
   
-  @js.native
   trait ExtendsValue extends StObject {
     
-    var args: js.Array[js.Array[ArgValue]] | Null = js.native
+    var args: js.Array[js.Array[ArgValue]] | Null
     
-    var symbolName: String = js.native
+    var symbolName: String
   }
   object ExtendsValue {
     
     @scala.inline
     def apply(symbolName: String): ExtendsValue = {
-      val __obj = js.Dynamic.literal(symbolName = symbolName.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(symbolName = symbolName.asInstanceOf[js.Any], args = null)
       __obj.asInstanceOf[ExtendsValue]
     }
     
@@ -358,14 +321,13 @@ object stylableValueParsersMod {
   
   type MappedStates = StringDictionary[StateParsedValue | String | Null]
   
-  @js.native
   trait MixinValue extends StObject {
     
-    var options: js.Array[Value] | (Record[String, String]) = js.native
+    var options: js.Array[Value] | (Record[String, String])
     
-    var partial: js.UndefOr[Boolean] = js.native
+    var partial: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object MixinValue {
     
@@ -398,14 +360,13 @@ object stylableValueParsersMod {
   
   type ReportWarning = js.Function2[/* message */ String, /* options */ js.UndefOr[Word], Unit]
   
-  @js.native
   trait TypedClass extends StObject {
     
-    var `-st-extends`: js.UndefOr[String] = js.native
+    var `-st-extends`: js.UndefOr[String] = js.undefined
     
-    var `-st-root`: js.UndefOr[Boolean] = js.native
+    var `-st-root`: js.UndefOr[Boolean] = js.undefined
     
-    var `-st-states`: js.UndefOr[js.Array[String] | MappedStates] = js.native
+    var `-st-states`: js.UndefOr[js.Array[String] | MappedStates] = js.undefined
   }
   object TypedClass {
     

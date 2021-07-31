@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNotesResponse extends StObject {
   
   /** The next pagination token in the list response. It should be used as `page_token` for the following request. An empty value means no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The notes requested. */
-  var notes: js.UndefOr[js.Array[Note]] = js.native
+  var notes: js.UndefOr[js.Array[Note]] = js.undefined
 }
 object ListNotesResponse {
   

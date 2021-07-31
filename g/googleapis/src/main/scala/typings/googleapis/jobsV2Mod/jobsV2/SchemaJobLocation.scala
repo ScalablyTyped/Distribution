@@ -2,20 +2,18 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Output only.  A resource that represents a location with full geographic
   * information.
   */
-@js.native
 trait SchemaJobLocation extends StObject {
   
   /**
     * An object representing a latitude/longitude pair.
     */
-  var latLng: js.UndefOr[SchemaLatLng] = js.native
+  var latLng: js.UndefOr[SchemaLatLng] = js.undefined
   
   /**
     * The type of a location, which corresponds to the address lines field of
@@ -23,7 +21,7 @@ trait SchemaJobLocation extends StObject {
     * type of LocationType#NEIGHBORHOOD, and &quot;Kansas City, KS, USA&quot;
     * has a type of LocationType#LOCALITY.
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * Postal address of the location that includes human readable information,
@@ -31,7 +29,7 @@ trait SchemaJobLocation extends StObject {
     * postal service can deliver items to a premises, P.O. Box, or other
     * delivery location.
     */
-  var postalAddress: js.UndefOr[SchemaPostalAddress] = js.native
+  var postalAddress: js.UndefOr[SchemaPostalAddress] = js.undefined
   
   /**
     * Radius in meters of the job location. This value is derived from the
@@ -40,7 +38,7 @@ trait SchemaJobLocation extends StObject {
     * example, currently, &quot;Mountain View, CA, USA&quot; has a radius of
     * 7885.79 meters.
     */
-  var radiusMeters: js.UndefOr[Double] = js.native
+  var radiusMeters: js.UndefOr[Double] = js.undefined
 }
 object SchemaJobLocation {
   

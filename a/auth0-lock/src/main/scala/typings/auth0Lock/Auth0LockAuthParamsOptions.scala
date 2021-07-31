@@ -2,28 +2,26 @@ package typings.auth0Lock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://auth0.com/docs/libraries/lock/v10/sending-authentication-parameters
-@js.native
 trait Auth0LockAuthParamsOptions extends StObject {
   
-  var access_token: js.UndefOr[js.Any] = js.native
+  var access_token: js.UndefOr[js.Any] = js.undefined
   
-  var connection_scope: js.UndefOr[js.Any] = js.native
+  var connection_scope: js.UndefOr[js.Any] = js.undefined
   
-  var device: js.UndefOr[js.Any] = js.native
+  var device: js.UndefOr[js.Any] = js.undefined
   
-  var nonce: js.UndefOr[js.Any] = js.native
+  var nonce: js.UndefOr[js.Any] = js.undefined
   
-  var protocol: js.UndefOr[js.Any] = js.native
+  var protocol: js.UndefOr[js.Any] = js.undefined
   
-  var request_id: js.UndefOr[js.Any] = js.native
+  var request_id: js.UndefOr[js.Any] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Auth0LockAuthParamsOptions {
   

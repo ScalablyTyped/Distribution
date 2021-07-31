@@ -2,36 +2,34 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapReduceOptions extends StObject {
   
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   @JSName("finalize")
-  var finalize_FMapReduceOptions: js.UndefOr[js.Function | String] = js.native
+  var finalize_FMapReduceOptions: js.UndefOr[js.Function | String] = js.undefined
   
-  var jsMode: js.UndefOr[Boolean] = js.native
+  var jsMode: js.UndefOr[Boolean] = js.undefined
   
-  var keeptemp: js.UndefOr[Boolean] = js.native
+  var keeptemp: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[scala.Double] = js.native
+  var limit: js.UndefOr[scala.Double] = js.undefined
   
-  var out: js.UndefOr[js.Object] = js.native
+  var out: js.UndefOr[js.Object] = js.undefined
   
-  var query: js.UndefOr[js.Object] = js.native
+  var query: js.UndefOr[js.Object] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var scope: js.UndefOr[js.Object] = js.native
+  var scope: js.UndefOr[js.Object] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object MapReduceOptions {
   

@@ -3,41 +3,39 @@ package typings.ionicReact.anon
 import typings.ionicReact.ionLifeCycleContextMod.LifeCycleCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentCanBeDestroyed extends StObject {
   
-  def componentCanBeDestroyed(): Unit = js.native
+  def componentCanBeDestroyed(): Unit
   
-  var componentCanBeDestroyedCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var componentCanBeDestroyedCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  def ionViewDidEnter(): Unit = js.native
+  def ionViewDidEnter(): Unit
   
-  var ionViewDidEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+  var ionViewDidEnterCallbacks: js.Array[LifeCycleCallback]
   
-  def ionViewDidLeave(): Unit = js.native
+  def ionViewDidLeave(): Unit
   
-  var ionViewDidLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+  var ionViewDidLeaveCallbacks: js.Array[LifeCycleCallback]
   
-  def ionViewWillEnter(): Unit = js.native
+  def ionViewWillEnter(): Unit
   
-  var ionViewWillEnterCallbacks: js.Array[LifeCycleCallback] = js.native
+  var ionViewWillEnterCallbacks: js.Array[LifeCycleCallback]
   
-  def ionViewWillLeave(): Unit = js.native
+  def ionViewWillLeave(): Unit
   
-  var ionViewWillLeaveCallbacks: js.Array[LifeCycleCallback] = js.native
+  var ionViewWillLeaveCallbacks: js.Array[LifeCycleCallback]
   
-  def onComponentCanBeDestroyed(callback: js.Function0[Unit]): Unit = js.native
+  def onComponentCanBeDestroyed(callback: js.Function0[Unit]): Unit
   
-  def onIonViewDidEnter(callback: LifeCycleCallback): Unit = js.native
+  def onIonViewDidEnter(callback: LifeCycleCallback): Unit
   
-  def onIonViewDidLeave(callback: LifeCycleCallback): Unit = js.native
+  def onIonViewDidLeave(callback: LifeCycleCallback): Unit
   
-  def onIonViewWillEnter(callback: LifeCycleCallback): Unit = js.native
+  def onIonViewWillEnter(callback: LifeCycleCallback): Unit
   
-  def onIonViewWillLeave(callback: LifeCycleCallback): Unit = js.native
+  def onIonViewWillLeave(callback: LifeCycleCallback): Unit
 }
 object ComponentCanBeDestroyed {
   

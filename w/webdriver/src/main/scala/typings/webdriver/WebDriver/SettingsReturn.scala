@@ -1,111 +1,150 @@
 package typings.webdriver.WebDriver
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SettingsReturn extends ProtocolCommandResponse {
-  var actionAcknowledgmentTimeout: js.UndefOr[Double] = js.native
-  var allowInvisibleElements: js.UndefOr[Boolean] = js.native
-  var elementResponseAttributes: js.UndefOr[String] = js.native
-  var enableNotificationListener: js.UndefOr[Boolean] = js.native
-  var ignoreUnimportantViews: js.UndefOr[Boolean] = js.native
-  var keyInjectionDelay: js.UndefOr[Double] = js.native
-  var mjpegScalingFactor: js.UndefOr[Double] = js.native
-  var mjpegServerFramerate: js.UndefOr[Double] = js.native
-  var mjpegServerScreenshotQuality: js.UndefOr[Double] = js.native
-  var normalizeTagNames: js.UndefOr[Boolean] = js.native
-  var screenshotQuality: js.UndefOr[Double] = js.native
-  var scrollAcknowledgmentTimeout: js.UndefOr[Double] = js.native
-  var shouldUseCompactResponses: js.UndefOr[Boolean] = js.native
-  var shutdownOnPowerDisconnect: js.UndefOr[Boolean] = js.native
-  var waitForIdleTimeout: js.UndefOr[Double] = js.native
-  var waitForSelectorTimeout: js.UndefOr[Double] = js.native
+trait SettingsReturn
+  extends StObject
+     with ProtocolCommandResponse {
+  
+  var actionAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined
+  
+  var allowInvisibleElements: js.UndefOr[Boolean] = js.undefined
+  
+  var elementResponseAttributes: js.UndefOr[String] = js.undefined
+  
+  var enableNotificationListener: js.UndefOr[Boolean] = js.undefined
+  
+  var ignoreUnimportantViews: js.UndefOr[Boolean] = js.undefined
+  
+  var keyInjectionDelay: js.UndefOr[Double] = js.undefined
+  
+  var mjpegScalingFactor: js.UndefOr[Double] = js.undefined
+  
+  var mjpegServerFramerate: js.UndefOr[Double] = js.undefined
+  
+  var mjpegServerScreenshotQuality: js.UndefOr[Double] = js.undefined
+  
+  var normalizeTagNames: js.UndefOr[Boolean] = js.undefined
+  
+  var screenshotQuality: js.UndefOr[Double] = js.undefined
+  
+  var scrollAcknowledgmentTimeout: js.UndefOr[Double] = js.undefined
+  
+  var shouldUseCompactResponses: js.UndefOr[Boolean] = js.undefined
+  
+  var shutdownOnPowerDisconnect: js.UndefOr[Boolean] = js.undefined
+  
+  var waitForIdleTimeout: js.UndefOr[Double] = js.undefined
+  
+  var waitForSelectorTimeout: js.UndefOr[Double] = js.undefined
 }
-
 object SettingsReturn {
+  
   @scala.inline
   def apply(): SettingsReturn = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[SettingsReturn]
   }
-  @scala.inline
-  implicit class SettingsReturnOps[Self <: SettingsReturn] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setActionAcknowledgmentTimeout(value: Double): Self = this.set("actionAcknowledgmentTimeout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteActionAcknowledgmentTimeout: Self = this.set("actionAcknowledgmentTimeout", js.undefined)
-    @scala.inline
-    def setAllowInvisibleElements(value: Boolean): Self = this.set("allowInvisibleElements", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteAllowInvisibleElements: Self = this.set("allowInvisibleElements", js.undefined)
-    @scala.inline
-    def setElementResponseAttributes(value: String): Self = this.set("elementResponseAttributes", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteElementResponseAttributes: Self = this.set("elementResponseAttributes", js.undefined)
-    @scala.inline
-    def setEnableNotificationListener(value: Boolean): Self = this.set("enableNotificationListener", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteEnableNotificationListener: Self = this.set("enableNotificationListener", js.undefined)
-    @scala.inline
-    def setIgnoreUnimportantViews(value: Boolean): Self = this.set("ignoreUnimportantViews", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteIgnoreUnimportantViews: Self = this.set("ignoreUnimportantViews", js.undefined)
-    @scala.inline
-    def setKeyInjectionDelay(value: Double): Self = this.set("keyInjectionDelay", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteKeyInjectionDelay: Self = this.set("keyInjectionDelay", js.undefined)
-    @scala.inline
-    def setMjpegScalingFactor(value: Double): Self = this.set("mjpegScalingFactor", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMjpegScalingFactor: Self = this.set("mjpegScalingFactor", js.undefined)
-    @scala.inline
-    def setMjpegServerFramerate(value: Double): Self = this.set("mjpegServerFramerate", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMjpegServerFramerate: Self = this.set("mjpegServerFramerate", js.undefined)
-    @scala.inline
-    def setMjpegServerScreenshotQuality(value: Double): Self = this.set("mjpegServerScreenshotQuality", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteMjpegServerScreenshotQuality: Self = this.set("mjpegServerScreenshotQuality", js.undefined)
-    @scala.inline
-    def setNormalizeTagNames(value: Boolean): Self = this.set("normalizeTagNames", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteNormalizeTagNames: Self = this.set("normalizeTagNames", js.undefined)
-    @scala.inline
-    def setScreenshotQuality(value: Double): Self = this.set("screenshotQuality", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteScreenshotQuality: Self = this.set("screenshotQuality", js.undefined)
-    @scala.inline
-    def setScrollAcknowledgmentTimeout(value: Double): Self = this.set("scrollAcknowledgmentTimeout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteScrollAcknowledgmentTimeout: Self = this.set("scrollAcknowledgmentTimeout", js.undefined)
-    @scala.inline
-    def setShouldUseCompactResponses(value: Boolean): Self = this.set("shouldUseCompactResponses", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteShouldUseCompactResponses: Self = this.set("shouldUseCompactResponses", js.undefined)
-    @scala.inline
-    def setShutdownOnPowerDisconnect(value: Boolean): Self = this.set("shutdownOnPowerDisconnect", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteShutdownOnPowerDisconnect: Self = this.set("shutdownOnPowerDisconnect", js.undefined)
-    @scala.inline
-    def setWaitForIdleTimeout(value: Double): Self = this.set("waitForIdleTimeout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWaitForIdleTimeout: Self = this.set("waitForIdleTimeout", js.undefined)
-    @scala.inline
-    def setWaitForSelectorTimeout(value: Double): Self = this.set("waitForSelectorTimeout", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteWaitForSelectorTimeout: Self = this.set("waitForSelectorTimeout", js.undefined)
-  }
   
+  @scala.inline
+  implicit class SettingsReturnMutableBuilder[Self <: SettingsReturn] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setActionAcknowledgmentTimeout(value: Double): Self = StObject.set(x, "actionAcknowledgmentTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setActionAcknowledgmentTimeoutUndefined: Self = StObject.set(x, "actionAcknowledgmentTimeout", js.undefined)
+    
+    @scala.inline
+    def setAllowInvisibleElements(value: Boolean): Self = StObject.set(x, "allowInvisibleElements", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAllowInvisibleElementsUndefined: Self = StObject.set(x, "allowInvisibleElements", js.undefined)
+    
+    @scala.inline
+    def setElementResponseAttributes(value: String): Self = StObject.set(x, "elementResponseAttributes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setElementResponseAttributesUndefined: Self = StObject.set(x, "elementResponseAttributes", js.undefined)
+    
+    @scala.inline
+    def setEnableNotificationListener(value: Boolean): Self = StObject.set(x, "enableNotificationListener", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEnableNotificationListenerUndefined: Self = StObject.set(x, "enableNotificationListener", js.undefined)
+    
+    @scala.inline
+    def setIgnoreUnimportantViews(value: Boolean): Self = StObject.set(x, "ignoreUnimportantViews", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIgnoreUnimportantViewsUndefined: Self = StObject.set(x, "ignoreUnimportantViews", js.undefined)
+    
+    @scala.inline
+    def setKeyInjectionDelay(value: Double): Self = StObject.set(x, "keyInjectionDelay", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setKeyInjectionDelayUndefined: Self = StObject.set(x, "keyInjectionDelay", js.undefined)
+    
+    @scala.inline
+    def setMjpegScalingFactor(value: Double): Self = StObject.set(x, "mjpegScalingFactor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMjpegScalingFactorUndefined: Self = StObject.set(x, "mjpegScalingFactor", js.undefined)
+    
+    @scala.inline
+    def setMjpegServerFramerate(value: Double): Self = StObject.set(x, "mjpegServerFramerate", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMjpegServerFramerateUndefined: Self = StObject.set(x, "mjpegServerFramerate", js.undefined)
+    
+    @scala.inline
+    def setMjpegServerScreenshotQuality(value: Double): Self = StObject.set(x, "mjpegServerScreenshotQuality", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMjpegServerScreenshotQualityUndefined: Self = StObject.set(x, "mjpegServerScreenshotQuality", js.undefined)
+    
+    @scala.inline
+    def setNormalizeTagNames(value: Boolean): Self = StObject.set(x, "normalizeTagNames", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNormalizeTagNamesUndefined: Self = StObject.set(x, "normalizeTagNames", js.undefined)
+    
+    @scala.inline
+    def setScreenshotQuality(value: Double): Self = StObject.set(x, "screenshotQuality", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScreenshotQualityUndefined: Self = StObject.set(x, "screenshotQuality", js.undefined)
+    
+    @scala.inline
+    def setScrollAcknowledgmentTimeout(value: Double): Self = StObject.set(x, "scrollAcknowledgmentTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScrollAcknowledgmentTimeoutUndefined: Self = StObject.set(x, "scrollAcknowledgmentTimeout", js.undefined)
+    
+    @scala.inline
+    def setShouldUseCompactResponses(value: Boolean): Self = StObject.set(x, "shouldUseCompactResponses", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShouldUseCompactResponsesUndefined: Self = StObject.set(x, "shouldUseCompactResponses", js.undefined)
+    
+    @scala.inline
+    def setShutdownOnPowerDisconnect(value: Boolean): Self = StObject.set(x, "shutdownOnPowerDisconnect", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShutdownOnPowerDisconnectUndefined: Self = StObject.set(x, "shutdownOnPowerDisconnect", js.undefined)
+    
+    @scala.inline
+    def setWaitForIdleTimeout(value: Double): Self = StObject.set(x, "waitForIdleTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWaitForIdleTimeoutUndefined: Self = StObject.set(x, "waitForIdleTimeout", js.undefined)
+    
+    @scala.inline
+    def setWaitForSelectorTimeout(value: Double): Self = StObject.set(x, "waitForSelectorTimeout", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWaitForSelectorTimeoutUndefined: Self = StObject.set(x, "waitForSelectorTimeout", js.undefined)
+  }
 }
-

@@ -5,7 +5,6 @@ import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import typings.firebaseDatabase.serverActionsMod.ServerActions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object persistentConnectionMod {

@@ -7,39 +7,38 @@ import typings.typeorm.oracleConnectionCredentialsOptionsMod.OracleConnectionCre
 import typings.typeorm.typeormStrings.oracle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object oracleConnectionOptionsMod {
   
-  @js.native
   trait OracleConnectionOptions
-    extends BaseConnectionOptions
+    extends StObject
+       with BaseConnectionOptions
        with OracleConnectionCredentialsOptions
        with ConnectionOptions {
     
     /**
       * Replication setup.
       */
-    val replication: js.UndefOr[Slaves] = js.native
+    val replication: js.UndefOr[Slaves] = js.undefined
     
     /**
       * Schema name. By default is "public".
       */
-    val schema: js.UndefOr[String] = js.native
+    val schema: js.UndefOr[String] = js.undefined
     
     /**
       * Database type.
       */
     @JSName("type")
-    val type_OracleConnectionOptions: oracle = js.native
+    val type_OracleConnectionOptions: oracle
   }
   object OracleConnectionOptions {
     
     @scala.inline
-    def apply(`type`: oracle): OracleConnectionOptions = {
+    def apply(): OracleConnectionOptions = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("oracle")
       __obj.asInstanceOf[OracleConnectionOptions]
     }
     

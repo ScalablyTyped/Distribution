@@ -4,7 +4,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-binding", "BindingEngine")
@@ -14,9 +13,9 @@ class BindingEngine () extends StObject {
   /**
     * Gets an observer for collection mutation.
     */
-  def collectionObserver(collection: js.Array[_]): CollectionObserver = js.native
-  def collectionObserver(collection: Map[_, _]): CollectionObserver = js.native
-  def collectionObserver(collection: Set[_]): CollectionObserver = js.native
+  def collectionObserver(collection: js.Array[js.Any]): CollectionObserver = js.native
+  def collectionObserver(collection: Map[js.Any, js.Any]): CollectionObserver = js.native
+  def collectionObserver(collection: Set[js.Any]): CollectionObserver = js.native
   
   /**
     * Creates a binding expression for the specified target property and source expression.
@@ -26,12 +25,7 @@ class BindingEngine () extends StObject {
     * @param lookupFunctions Lookup functions for value converter and binding behavior resources.
     */
   def createBindingExpression(targetProperty: String, sourceExpression: String): BindingExpression = js.native
-  def createBindingExpression(
-    targetProperty: String,
-    sourceExpression: String,
-    mode: js.UndefOr[scala.Nothing],
-    lookupFunctions: LookupFunctions
-  ): BindingExpression = js.native
+  def createBindingExpression(targetProperty: String, sourceExpression: String, mode: Unit, lookupFunctions: LookupFunctions): BindingExpression = js.native
   def createBindingExpression(targetProperty: String, sourceExpression: String, mode: bindingMode): BindingExpression = js.native
   def createBindingExpression(
     targetProperty: String,

@@ -2,7 +2,6 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait IHTMLTableSection extends StObject {
   def insertRow(index: Double): js.Any = js.native
   
   def rows(): js.Any = js.native
-  def rows(name: js.UndefOr[scala.Nothing], index: js.Any): js.Any = js.native
   def rows(name: js.Any): js.Any = js.native
   def rows(name: js.Any, index: js.Any): js.Any = js.native
+  def rows(name: Unit, index: js.Any): js.Any = js.native
   @JSName("rows")
   val rows_Original: IHTMLElementCollection = js.native
   

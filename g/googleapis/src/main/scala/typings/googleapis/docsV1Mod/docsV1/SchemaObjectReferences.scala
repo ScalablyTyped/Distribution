@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of object IDs.
   */
-@js.native
 trait SchemaObjectReferences extends StObject {
   
   /**
     * The object IDs.
     */
-  var objectIds: js.UndefOr[js.Array[String]] = js.native
+  var objectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaObjectReferences {
   

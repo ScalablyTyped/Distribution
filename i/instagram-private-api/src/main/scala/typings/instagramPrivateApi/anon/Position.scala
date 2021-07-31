@@ -2,15 +2,13 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Position extends StObject {
   
-  var position: js.Tuple2[Double, Double] = js.native
+  var position: js.Tuple2[Double, Double]
   
-  var user_id: Double | String = js.native
+  var user_id: Double | String
 }
 object Position {
   

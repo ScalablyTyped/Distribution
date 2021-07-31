@@ -3,28 +3,26 @@ package typings.fhirJsClient
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Any extends StObject {
     
     /**
       * Returns the valueQuantity value as number. (As it is)
       */
-    def any(valueQuantity: js.Any): Double = js.native
+    def any(valueQuantity: js.Any): Double
     
     /**
       * Converts the valueQuantity passed into cm based on the code
       */
-    def cm(valueQuantity: js.Any): Double = js.native
+    def cm(valueQuantity: js.Any): Double
     
     /**
       * Converts the valueQuantity passed into kg based on the code
       */
-    def kg(valueQuantity: js.Any): Double = js.native
+    def kg(valueQuantity: js.Any): Double
   }
   object Any {
     
@@ -48,9 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait DictpropName
-    extends /**
+    extends StObject
+       with /**
     * Making this interface extendable since this is not a complete type definition of FHIR Resource
     */
   /* propName */ StringDictionary[js.Any] {
@@ -59,7 +57,7 @@ object anon {
       * Type: dateTime    Only include resource versions that were current at some point during the time period specified
       * in the date time value (may be more than one)
       */
-    var _at: js.UndefOr[String] = js.native
+    var _at: js.UndefOr[String] = js.undefined
     
     /**
       * To specify alternative response formats by their MIME-types.
@@ -69,7 +67,7 @@ object anon {
       * to mean the JSON format, and the codes ttl and text/turtle SHALL be interpreted to mean the Turtle RDF format.
       * In addition, the values html and text/html are allowed.
       */
-    var _format: js.UndefOr[String] = js.native
+    var _format: js.UndefOr[String] = js.undefined
   }
   object DictpropName {
     

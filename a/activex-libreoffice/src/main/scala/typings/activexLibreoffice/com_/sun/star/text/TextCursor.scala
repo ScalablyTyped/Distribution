@@ -28,7 +28,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XSortable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,18 +40,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.text.XTextCursor because var conflicts: String. Inlined collapseToEnd, collapseToStart, goLeft, goRight, gotoEnd, gotoRange, gotoStart, isCollapsed
 - typings.activexLibreoffice.com_.sun.star.text.XParagraphCursor because var conflicts: String. Inlined gotoEndOfParagraph, gotoNextParagraph, gotoPreviousParagraph, gotoStartOfParagraph, isEndOfParagraph, isStartOfParagraph
 - typings.activexLibreoffice.com_.sun.star.text.XSentenceCursor because var conflicts: String. Inlined gotoEndOfSentence, gotoNextSentence, gotoPreviousSentence, gotoStartOfSentence, isEndOfSentence, isStartOfSentence
-- typings.activexLibreoffice.com_.sun.star.text.XWordCursor because var conflicts: String. Inlined gotoEndOfWord, gotoNextWord, gotoPreviousWord, gotoStartOfWord, isEndOfWord, isStartOfWord */ @js.native
-trait TextCursor
-  extends TextRange
+- typings.activexLibreoffice.com_.sun.star.text.XWordCursor because var conflicts: String. Inlined gotoEndOfWord, gotoNextWord, gotoPreviousWord, gotoStartOfWord, isEndOfWord, isStartOfWord */ trait TextCursor
+  extends StObject
+     with TextRange
      with XMultiPropertyStates
      with XDocumentInsertable
      with XSortable {
   
   /** sets the start of the position to the end. */
-  def collapseToEnd(): Unit = js.native
+  def collapseToEnd(): Unit
   
   /** sets the end of the position to the start. */
-  def collapseToStart(): Unit = js.native
+  def collapseToStart(): Unit
   
   /**
     * @param aPropertyName contains the sequence of property names.
@@ -60,7 +59,7 @@ trait TextCursor
     * @throws UnknownPropertyException if one property does not exist.
     */
   /* InferMemberOverrides */
-  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState] = js.native
+  override def getPropertyStates(aPropertyName: SeqEquiv[String]): SafeArray[PropertyState]
   
   /**
     * moves the cursor the specified number of characters to the left.
@@ -68,7 +67,7 @@ trait TextCursor
     * @param bExpand specifies if the current selection of the cursor should be expanded or not.
     * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
     */
-  def goLeft(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goLeft(nCount: Double, bExpand: Boolean): Boolean
   
   /**
     * moves the cursor the specified number of characters to the right.
@@ -76,40 +75,40 @@ trait TextCursor
     * @param bExpand specifies if the current selection of the cursor should be expanded or not.
     * @returns `TRUE` if the command was successfully completed. `FALSE` otherwise.  Note: Even if the command was not completed successfully it may be complete
     */
-  def goRight(nCount: Double, bExpand: Boolean): Boolean = js.native
+  def goRight(nCount: Double, bExpand: Boolean): Boolean
   
   /** moves the cursor to the end of the text. */
-  def gotoEnd(bExpand: Boolean): Unit = js.native
+  def gotoEnd(bExpand: Boolean): Unit
   
   /**
     * moves the cursor to the end of the current paragraph.
     * @returns `TRUE` if the cursor is now at the end of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoEndOfParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the end of the current sentence.
     * @returns `TRUE` if the cursor is now at the end of a sentence, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfSentence(Expand: Boolean): Boolean = js.native
+  def gotoEndOfSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the end of the current word.
     * @returns `TRUE` if the cursor is now at the end of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfWord(bExpand: Boolean): Boolean = js.native
+  def gotoEndOfWord(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the next paragraph.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoNextParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the next sentence.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextSentence(Expand: Boolean): Boolean = js.native
+  def gotoNextSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the next word.
@@ -118,19 +117,19 @@ trait TextCursor
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextWord(bExpand: Boolean): Boolean = js.native
+  def gotoNextWord(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the previous paragraph.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoPreviousParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the previous sentence.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousSentence(Expand: Boolean): Boolean = js.native
+  def gotoPreviousSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the previous word.
@@ -139,52 +138,52 @@ trait TextCursor
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousWord(bExpand: Boolean): Boolean = js.native
+  def gotoPreviousWord(bExpand: Boolean): Boolean
   
   /** moves or expands the cursor to a specified {@link TextRange} . */
-  def gotoRange(xRange: XTextRange, bExpand: Boolean): Unit = js.native
+  def gotoRange(xRange: XTextRange, bExpand: Boolean): Unit
   
   /** moves the cursor to the start of the text. */
-  def gotoStart(bExpand: Boolean): Unit = js.native
+  def gotoStart(bExpand: Boolean): Unit
   
   /**
     * moves the cursor to the start of the current paragraph.
     * @returns `TRUE` if the cursor is now at the start of a paragraph, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfParagraph(bExpand: Boolean): Boolean = js.native
+  def gotoStartOfParagraph(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the current sentence.
     * @returns `TRUE` if the cursor is now at the start of a sentence, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfSentence(Expand: Boolean): Boolean = js.native
+  def gotoStartOfSentence(Expand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the current word.
     * @returns `TRUE` if the cursor is now at the start of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfWord(bExpand: Boolean): Boolean = js.native
+  def gotoStartOfWord(bExpand: Boolean): Boolean
   
   /** determines if the start and end positions are the same. */
-  def isCollapsed(): Boolean = js.native
+  def isCollapsed(): Boolean
   
   /** determines if the cursor is positioned at the end of a paragraph. */
-  def isEndOfParagraph(): Boolean = js.native
+  def isEndOfParagraph(): Boolean
   
   /** determines if the cursor is positioned at the end of a sentence. */
-  def isEndOfSentence(): Boolean = js.native
+  def isEndOfSentence(): Boolean
   
   /** determines if the cursor is positioned at the end of a word. */
-  def isEndOfWord(): Boolean = js.native
+  def isEndOfWord(): Boolean
   
   /** determines if the cursor is positioned at the start of a paragraph. */
-  def isStartOfParagraph(): Boolean = js.native
+  def isStartOfParagraph(): Boolean
   
   /** determines if the cursor is positioned at the start of a sentence. */
-  def isStartOfSentence(): Boolean = js.native
+  def isStartOfSentence(): Boolean
   
   /** determines if the cursor is positioned at the start of a word. */
-  def isStartOfWord(): Boolean = js.native
+  def isStartOfWord(): Boolean
 }
 object TextCursor {
   
@@ -349,7 +348,7 @@ object TextCursor {
     getAvailableServiceNames: () => SafeArray[String],
     getEnd: () => XTextRange,
     getPropertyDefault: String => js.Any,
-    getPropertyDefaults: SeqEquiv[String] => SafeArray[_],
+    getPropertyDefaults: SeqEquiv[String] => SafeArray[js.Any],
     getPropertySetInfo: () => XPropertySetInfo,
     getPropertyState: String => PropertyState,
     getPropertyStates: SeqEquiv[String] => SafeArray[PropertyState],

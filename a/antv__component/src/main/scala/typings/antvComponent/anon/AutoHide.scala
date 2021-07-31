@@ -2,21 +2,19 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHide extends StObject {
   
-  var autoEllipsis: Boolean = js.native
+  var autoEllipsis: Boolean
   
-  var autoHide: Boolean = js.native
+  var autoHide: Boolean
   
-  var autoRotate: Boolean = js.native
+  var autoRotate: Boolean
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var style: FontWeight = js.native
+  var style: FontWeight
 }
 object AutoHide {
   

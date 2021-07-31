@@ -3,7 +3,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,19 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * responses later than the given token, then a response containing only an
   * up-to-date token, to use in the next request.
   */
-@js.native
 trait SchemaWriteRequest extends StObject {
   
   /**
     * Labels associated with this write request.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The ID of the write stream to resume. This may only be set in the first
     * message. When left empty, a new write stream will be created.
     */
-  var streamId: js.UndefOr[String] = js.native
+  var streamId: js.UndefOr[String] = js.undefined
   
   /**
     * A stream token that was previously sent by the server.  The client should
@@ -38,14 +36,14 @@ trait SchemaWriteRequest extends StObject {
     * stream. To resume a stream at a specific point, set this field and the
     * `stream_id` field.  Leave this field unset when creating a new stream.
     */
-  var streamToken: js.UndefOr[String] = js.native
+  var streamToken: js.UndefOr[String] = js.undefined
   
   /**
     * The writes to apply.  Always executed atomically and in order. This must
     * be empty on the first request. This may be empty on the last request.
     * This must not be empty on all other requests.
     */
-  var writes: js.UndefOr[js.Array[SchemaWrite]] = js.native
+  var writes: js.UndefOr[js.Array[SchemaWrite]] = js.undefined
 }
 object SchemaWriteRequest {
   

@@ -5,13 +5,14 @@ import typings.openui5.sap.ui.model.Context
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object base {
   
   @js.native
-  trait Event extends Object {
+  trait Event
+    extends StObject
+       with Object {
     
     /**
       * Cancel bubbling of the event.<b>Note:</b> This function only has an effect if the bubbling of the
@@ -52,7 +53,9 @@ object base {
   }
   
   @js.native
-  trait EventProvider extends Object {
+  trait EventProvider
+    extends StObject
+       with Object {
     
     /**
       * Attaches an event handler to the event with the given identifier.
@@ -119,26 +122,7 @@ object base {
       * <code>true</code> if the default action should be executed, <code>false</code> otherwise.
       */
     def fireEvent(sEventId: String): EventProvider | Boolean = js.native
-    def fireEvent(
-      sEventId: String,
-      mParameters: js.UndefOr[scala.Nothing],
-      bAllowPreventDefault: js.UndefOr[scala.Nothing],
-      bEnableEventBubbling: Boolean
-    ): EventProvider | Boolean = js.native
-    def fireEvent(sEventId: String, mParameters: js.UndefOr[scala.Nothing], bAllowPreventDefault: Boolean): EventProvider | Boolean = js.native
-    def fireEvent(
-      sEventId: String,
-      mParameters: js.UndefOr[scala.Nothing],
-      bAllowPreventDefault: Boolean,
-      bEnableEventBubbling: Boolean
-    ): EventProvider | Boolean = js.native
     def fireEvent(sEventId: String, mParameters: js.Any): EventProvider | Boolean = js.native
-    def fireEvent(
-      sEventId: String,
-      mParameters: js.Any,
-      bAllowPreventDefault: js.UndefOr[scala.Nothing],
-      bEnableEventBubbling: Boolean
-    ): EventProvider | Boolean = js.native
     def fireEvent(sEventId: String, mParameters: js.Any, bAllowPreventDefault: Boolean): EventProvider | Boolean = js.native
     def fireEvent(
       sEventId: String,
@@ -146,6 +130,10 @@ object base {
       bAllowPreventDefault: Boolean,
       bEnableEventBubbling: Boolean
     ): EventProvider | Boolean = js.native
+    def fireEvent(sEventId: String, mParameters: js.Any, bAllowPreventDefault: Unit, bEnableEventBubbling: Boolean): EventProvider | Boolean = js.native
+    def fireEvent(sEventId: String, mParameters: Unit, bAllowPreventDefault: Boolean): EventProvider | Boolean = js.native
+    def fireEvent(sEventId: String, mParameters: Unit, bAllowPreventDefault: Boolean, bEnableEventBubbling: Boolean): EventProvider | Boolean = js.native
+    def fireEvent(sEventId: String, mParameters: Unit, bAllowPreventDefault: Unit, bEnableEventBubbling: Boolean): EventProvider | Boolean = js.native
     
     /**
       * Returns the parent in the eventing hierarchy of this object.Per default this returns null, but if
@@ -164,11 +152,12 @@ object base {
     def hasListeners(sEventId: String): Boolean = js.native
   }
   
-  @js.native
   trait Interface extends StObject
   
   @js.native
-  trait ManagedObject extends EventProvider {
+  trait ManagedObject
+    extends StObject
+       with EventProvider {
     
     /**
       * Adds some entity <code>oObject</code> to the aggregation identified by
@@ -393,9 +382,9 @@ object base {
       * @returns reference to the newly created clone
       */
     def clone(sIdSuffix: String): ManagedObject = js.native
-    def clone(sIdSuffix: String, aLocalIds: js.UndefOr[scala.Nothing], oOptions: js.Any): ManagedObject = js.native
     def clone(sIdSuffix: String, aLocalIds: js.Array[String]): ManagedObject = js.native
     def clone(sIdSuffix: String, aLocalIds: js.Array[String], oOptions: js.Any): ManagedObject = js.native
+    def clone(sIdSuffix: String, aLocalIds: Unit, oOptions: js.Any): ManagedObject = js.native
     
     def create(vData: js.Any, oKeyInfo: js.Any): Unit = js.native
     def create(vData: js.Any, oKeyInfo: js.Any, oScope: js.Any): Unit = js.native
@@ -554,7 +543,7 @@ object base {
       */
     def fireValidationSuccess(mArguments: js.Any): ManagedObject = js.native
     
-    def getAggregation(sAggregationName: String, oDefaultForCreation: js.Array[_]): ManagedObject | js.Array[_] = js.native
+    def getAggregation(sAggregationName: String, oDefaultForCreation: js.Array[js.Any]): ManagedObject | js.Array[js.Any] = js.native
     /**
       * Returns the aggregated object(s) for the named aggregation of this ManagedObject.If the aggregation
       * does not contain any objects(s), the given <code>oDefaultForCreation</code>(or <code>null</code>) is
@@ -569,7 +558,7 @@ object base {
       * @returns the aggregation array in case of 0..n-aggregations or the managed object or null in case of
       * 0..1-aggregations
       */
-    def getAggregation(sAggregationName: String, oDefaultForCreation: ManagedObject): ManagedObject | js.Array[_] = js.native
+    def getAggregation(sAggregationName: String, oDefaultForCreation: ManagedObject): ManagedObject | js.Array[js.Any] = js.native
     
     /**
       * Returns the content of the association wit hthe given name.For associations of cardinality 0..1, a
@@ -763,7 +752,7 @@ object base {
       * @param sName The property name
       * @param aMessages The messages
       */
-    def propagateMessages(sName: String, aMessages: js.Array[_]): Unit = js.native
+    def propagateMessages(sName: String, aMessages: js.Array[js.Any]): Unit = js.native
     
     def removeAggregation(sAggregationName: String, vObject: String): ManagedObject = js.native
     def removeAggregation(sAggregationName: String, vObject: String, bSuppressInvalidate: Boolean): ManagedObject = js.native
@@ -803,8 +792,8 @@ object base {
       * @param bSuppressInvalidate if true, this ManagedObject is not marked as changed
       * @returns an array of the removed elements (might be empty)
       */
-    def removeAllAggregation(sAggregationName: String): js.Array[_] = js.native
-    def removeAllAggregation(sAggregationName: String, bSuppressInvalidate: Boolean): js.Array[_] = js.native
+    def removeAllAggregation(sAggregationName: String): js.Array[js.Any] = js.native
+    def removeAllAggregation(sAggregationName: String, bSuppressInvalidate: Boolean): js.Array[js.Any] = js.native
     
     /**
       * Removes all the objects in the 0..n-association named <code>sAssociationName</code> and returns an
@@ -817,8 +806,8 @@ object base {
       * @param bSuppressInvalidate if true, this ManagedObject is not marked as changed
       * @returns an array with the IDs of the removed objects (might be empty)
       */
-    def removeAllAssociation(sAssociationName: String): js.Array[_] = js.native
-    def removeAllAssociation(sAssociationName: String, bSuppressInvalidate: Boolean): js.Array[_] = js.native
+    def removeAllAssociation(sAssociationName: String): js.Array[js.Any] = js.native
+    def removeAllAssociation(sAssociationName: String, bSuppressInvalidate: Boolean): js.Array[js.Any] = js.native
     
     def removeAssociation(sAssociationName: String, vObject: String): Unit = js.native
     def removeAssociation(sAssociationName: String, vObject: String, bSuppressInvalidate: Boolean): Unit = js.native
@@ -1011,7 +1000,6 @@ object base {
     def validateProperty(sPropertyName: String, oValue: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait Metadata extends StObject {
     
     /**
@@ -1019,52 +1007,52 @@ object base {
       * ancestors.
       * @returns array with names of all public methods provided by the described class and its ancestors
       */
-    def getAllPublicMethods(): js.Array[String] = js.native
+    def getAllPublicMethods(): js.Array[String]
     
     /**
       * Returns the fully qualified name of the described class
       * @returns name of the described class
       */
-    def getName(): String = js.native
+    def getName(): String
     
     /**
       * Returns the metadata object of the base class of the described classor null if the class has no
       * (documented) base class.
       * @returns metadata of the base class
       */
-    def getParent(): Metadata = js.native
+    def getParent(): Metadata
     
     /**
       * Returns an array with the names of the public methods declared by the described class.
       * @returns array with names of public methods declared by the described class
       */
-    def getPublicMethods(): js.Array[String] = js.native
+    def getPublicMethods(): js.Array[String]
     
     /**
       * Returns whether the described class is abstract
       * @returns whether the class is abstract
       */
-    def isAbstract(): Boolean = js.native
+    def isAbstract(): Boolean
     
     /**
       * Whether the described class is deprecated and should not be used any more
       * @since 1.26.4
       * @returns whether the class is considered deprecated
       */
-    def isDeprecated(): Boolean = js.native
+    def isDeprecated(): Boolean
     
     /**
       * Returns whether the described class is final
       * @returns whether the class is final
       */
-    def isFinal(): Boolean = js.native
+    def isFinal(): Boolean
     
     /**
       * Checks whether the described class or one of its ancestor classes implements the given interface.
       * @param sInterface name of the interface to test for (in dot notation)
       * @returns whether this class implements the interface
       */
-    def isInstanceOf(sInterface: String): Boolean = js.native
+    def isInstanceOf(sInterface: String): Boolean
   }
   object Metadata {
     
@@ -1150,7 +1138,9 @@ object base {
   }
   
   @js.native
-  trait ObjectPool extends Object {
+  trait ObjectPool
+    extends StObject
+       with Object {
     
     /**
       * Borrows a free object from the pool. Any arguments to this methodare forwarded to the init method of
@@ -1172,7 +1162,6 @@ object base {
     * Contract for objects that can be pooled by ObjectPool
     * @resource sap/ui/base/ObjectPool.js
     */
-  @js.native
   trait Poolable extends StObject {
     
     /**
@@ -1181,14 +1170,14 @@ object base {
       * any arguments to {@link sap.ui.base.ObjectPool#borrowObject}all arguments will be propagated to this
       * method.
       */
-    def init(): Unit = js.native
+    def init(): Unit
     
     /**
       * Called by the object pool when an instance is returned to the pool.While no specific implementation
       * is required, poolable objects in generalshould clean all caller specific state (set to null) in this
       * method toavoid memory leaks and to enforce garbage collection of the caller state.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object Poolable {
     

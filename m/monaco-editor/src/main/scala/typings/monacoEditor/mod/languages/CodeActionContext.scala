@@ -3,21 +3,19 @@ package typings.monacoEditor.mod.languages
 import typings.monacoEditor.mod.editor.IMarkerData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeActionContext extends StObject {
   
   /**
     * An array of diagnostics.
     */
-  val markers: js.Array[IMarkerData] = js.native
+  val markers: js.Array[IMarkerData]
   
   /**
     * Requested kind of actions to return.
     */
-  val only: js.UndefOr[String] = js.native
+  val only: js.UndefOr[String] = js.undefined
 }
 object CodeActionContext {
   

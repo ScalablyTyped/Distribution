@@ -7,14 +7,16 @@ import typings.redux.mod.MiddlewareAPI
 import typings.reduxPromiseListener.mod.ReduxPromiseListener.PromiseListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-promise-listener", JSImport.Default)
+  @JSImport("redux-promise-listener", JSImport.Namespace)
   @js.native
-  def default(): PromiseListener = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): PromiseListener = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[PromiseListener]
   
   object ReduxPromiseListener {
     
@@ -29,20 +31,19 @@ object mod {
       def unsubscribe(): Unit = js.native
     }
     
-    @js.native
     trait Config[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] extends StObject {
       
-      var getError: js.UndefOr[js.Function1[/* action */ RejectAction, _]] = js.native
+      var getError: js.UndefOr[js.Function1[/* action */ RejectAction, js.Any]] = js.undefined
       
-      var getPayload: js.UndefOr[js.Function1[/* action */ ResolveAction, TReturn]] = js.native
+      var getPayload: js.UndefOr[js.Function1[/* action */ ResolveAction, TReturn]] = js.undefined
       
-      var reject: String | ActionMatcher = js.native
+      var reject: String | ActionMatcher
       
-      var resolve: String | ActionMatcher = js.native
+      var resolve: String | ActionMatcher
       
-      var setPayload: js.UndefOr[js.Function2[/* action */ StartAction, /* payload */ js.Any, AnyAction]] = js.native
+      var setPayload: js.UndefOr[js.Function2[/* action */ StartAction, /* payload */ js.Any, AnyAction]] = js.undefined
       
-      var start: String = js.native
+      var start: String
     }
     object Config {
       
@@ -53,10 +54,10 @@ object mod {
       }
       
       @scala.inline
-      implicit class ConfigMutableBuilder[Self <: Config[_, _, _, _], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] (val x: Self with (Config[StartAction, ResolveAction, RejectAction, TReturn])) extends AnyVal {
+      implicit class ConfigMutableBuilder[Self <: Config[?, ?, ?, ?], StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn] (val x: Self & (Config[StartAction, ResolveAction, RejectAction, TReturn])) extends AnyVal {
         
         @scala.inline
-        def setGetError(value: /* action */ RejectAction => _): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
+        def setGetError(value: /* action */ RejectAction => js.Any): Self = StObject.set(x, "getError", js.Any.fromFunction1(value))
         
         @scala.inline
         def setGetErrorUndefined: Self = StObject.set(x, "getError", js.undefined)
@@ -90,17 +91,39 @@ object mod {
       }
     }
     
-    @js.native
     trait PromiseListener extends StObject {
       
       def createAsyncFunction[StartAction /* <: AnyAction */, ResolveAction /* <: AnyAction */, RejectAction /* <: AnyAction */, TReturn](
         // tslint:disable-next-line no-unnecessary-generics
       config: Config[StartAction, ResolveAction, RejectAction, TReturn]
-      ): AsyncFunction[TReturn] = js.native
+      ): AsyncFunction[TReturn]
       
-      def middleware(api: MiddlewareAPI[Dispatch[AnyAction], AnyAction]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ _, _]] = js.native
+      def middleware(api: MiddlewareAPI[Dispatch[AnyAction], AnyAction]): js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
       @JSName("middleware")
-      var middleware_Original: Middleware[js.Object, AnyAction, Dispatch[AnyAction]] = js.native
+      var middleware_Original: Middleware[js.Object, AnyAction, Dispatch[AnyAction]]
+    }
+    object PromiseListener {
+      
+      @scala.inline
+      def apply(
+        createAsyncFunction: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any],
+        middleware: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+      ): PromiseListener = {
+        val __obj = js.Dynamic.literal(createAsyncFunction = js.Any.fromFunction1(createAsyncFunction), middleware = js.Any.fromFunction1(middleware))
+        __obj.asInstanceOf[PromiseListener]
+      }
+      
+      @scala.inline
+      implicit class PromiseListenerMutableBuilder[Self <: PromiseListener] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setCreateAsyncFunction(value: Config[js.Any, js.Any, js.Any, js.Any] => AsyncFunction[js.Any]): Self = StObject.set(x, "createAsyncFunction", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setMiddleware(
+          value: /* api */ MiddlewareAPI[Dispatch[AnyAction], AnyAction] => js.Function1[/* next */ Dispatch[AnyAction], js.Function1[/* action */ js.Any, js.Any]]
+        ): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      }
     }
   }
 }

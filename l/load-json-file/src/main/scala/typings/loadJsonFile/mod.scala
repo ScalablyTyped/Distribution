@@ -2,7 +2,6 @@ package typings.loadJsonFile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,12 +18,14 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply[T](filePath: String): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def apply[T](filePath: String, options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
   @JSImport("load-json-file", JSImport.Namespace)
   @js.native
-  def apply[T](filePath: String): js.Promise[T] = js.native
-  @JSImport("load-json-file", JSImport.Namespace)
-  @js.native
-  def apply[T](filePath: String, options: Options): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Read and parse a JSON file.
@@ -36,28 +37,25 @@ object mod {
   	//=> {foo: true}
   	```
   	*/
-  @JSImport("load-json-file", "sync")
-  @js.native
-  def sync[T](filePath: String): T = js.native
-  @JSImport("load-json-file", "sync")
-  @js.native
-  def sync[T](filePath: String, options: Options): T = js.native
+  @scala.inline
+  def sync[T](filePath: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def sync[T](filePath: String, options: Options): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filePath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   type BeforeParse = js.Function1[/* data */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Applies a function to the JSON string before parsing.
     		*/
-    val beforeParse: js.UndefOr[BeforeParse] = js.native
+    val beforeParse: js.UndefOr[BeforeParse] = js.undefined
     
     /**
     		Prescribes how the value originally produced by parsing is transformed, before being returned.
     		See the [`JSON.parse` docs](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse#Using_the_reviver_parameter) for more.
     		*/
-    val reviver: js.UndefOr[Reviver] = js.native
+    val reviver: js.UndefOr[Reviver] = js.undefined
   }
   object Options {
     

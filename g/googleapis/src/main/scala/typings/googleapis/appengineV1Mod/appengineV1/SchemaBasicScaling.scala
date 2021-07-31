@@ -2,7 +2,6 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,19 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * idle. Basic scaling is ideal for work that is intermittent or driven by
   * user activity.
   */
-@js.native
 trait SchemaBasicScaling extends StObject {
   
   /**
     * Duration of time after the last request that an instance must wait before
     * the instance is shut down.
     */
-  var idleTimeout: js.UndefOr[String] = js.native
+  var idleTimeout: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of instances to create for this version.
     */
-  var maxInstances: js.UndefOr[Double] = js.native
+  var maxInstances: js.UndefOr[Double] = js.undefined
 }
 object SchemaBasicScaling {
   

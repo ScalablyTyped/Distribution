@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "ForwardRenderer")
 @js.native
 class ForwardRenderer protected ()
-  extends typings.playcanvas.pc.ForwardRenderer {
+  extends StObject
+     with typings.playcanvas.pc.ForwardRenderer {
   def this(graphicsDevice: typings.playcanvas.pc.GraphicsDevice) = this()
 }

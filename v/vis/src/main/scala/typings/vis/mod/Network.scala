@@ -6,7 +6,6 @@ import typings.vis.anon.Edges
 import typings.vis.anon.FromId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vis", "Network")
@@ -86,9 +85,9 @@ class Network protected () extends StObject {
     * @param [options] optional cluster options
     */
   def clusterByHubsize(): Unit = js.native
-  def clusterByHubsize(hubsize: js.UndefOr[scala.Nothing], options: ClusterOptions): Unit = js.native
   def clusterByHubsize(hubsize: Double): Unit = js.native
   def clusterByHubsize(hubsize: Double, options: ClusterOptions): Unit = js.native
+  def clusterByHubsize(hubsize: Unit, options: ClusterOptions): Unit = js.native
   
   /**
     * This method will cluster all nodes with 1 edge with their respective connected node.

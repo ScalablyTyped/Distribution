@@ -3,10 +3,13 @@ package typings.nodeTimecodes
 import typings.nodeTimecodes.anon.Framerate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-timecodes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -23,24 +26,20 @@ object mod {
     @JSImport("node-timecodes", "default.fromSeconds")
     @js.native
     def fromSeconds: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String] = js.native
-    @JSImport("node-timecodes", "default.fromSeconds")
-    @js.native
-    def fromSeconds(seconds: Double): String = js.native
-    @JSImport("node-timecodes", "default.fromSeconds")
-    @js.native
-    def fromSeconds(seconds: Double, option: TimecodeOptions): String = js.native
+    @scala.inline
+    def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
     @scala.inline
     def fromSeconds_=(x: js.Function2[/* seconds */ Double, /* option */ js.UndefOr[TimecodeOptions], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fromSeconds")(x.asInstanceOf[js.Any])
     
     @JSImport("node-timecodes", "default.toSeconds")
     @js.native
     def toSeconds: js.Function2[/* timecode */ String, /* frameRate */ js.UndefOr[Double], Double] = js.native
-    @JSImport("node-timecodes", "default.toSeconds")
-    @js.native
-    def toSeconds(timecode: String): Double = js.native
-    @JSImport("node-timecodes", "default.toSeconds")
-    @js.native
-    def toSeconds(timecode: String, frameRate: Double): Double = js.native
+    @scala.inline
+    def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
     @scala.inline
     def toSeconds_=(x: js.Function2[/* timecode */ String, /* frameRate */ js.UndefOr[Double], Double]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("toSeconds")(x.asInstanceOf[js.Any])
   }
@@ -58,26 +57,21 @@ object mod {
     def framerate_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("framerate")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("node-timecodes", "fromSeconds")
-  @js.native
-  def fromSeconds(seconds: Double): String = js.native
-  @JSImport("node-timecodes", "fromSeconds")
-  @js.native
-  def fromSeconds(seconds: Double, option: TimecodeOptions): String = js.native
+  @scala.inline
+  def fromSeconds(seconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def fromSeconds(seconds: Double, option: TimecodeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fromSeconds")(seconds.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-timecodes", "toSeconds")
-  @js.native
-  def toSeconds(timecode: String): Double = js.native
-  @JSImport("node-timecodes", "toSeconds")
-  @js.native
-  def toSeconds(timecode: String, frameRate: Double): Double = js.native
+  @scala.inline
+  def toSeconds(timecode: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def toSeconds(timecode: String, frameRate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("toSeconds")(timecode.asInstanceOf[js.Any], frameRate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait TimecodeOptions extends StObject {
     
-    var frameRate: js.UndefOr[Double] = js.native
+    var frameRate: js.UndefOr[Double] = js.undefined
     
-    var ms: js.UndefOr[Boolean] = js.native
+    var ms: js.UndefOr[Boolean] = js.undefined
   }
   object TimecodeOptions {
     

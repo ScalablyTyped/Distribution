@@ -8,7 +8,6 @@ import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3outpostsMod {
@@ -22,18 +21,16 @@ object s3outpostsMod {
     def this(options: ClientConfiguration) = this()
   }
   
-  @js.native
   trait Blob extends StObject
   
   type CidrBlock = String
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.s3outpostsMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.s3outpostsMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -54,25 +51,27 @@ object s3outpostsMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
-  
   @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
+  
   trait CreateEndpointRequest extends StObject {
     
     /**
       * The ID of the AWS Outpost. 
       */
-    var OutpostId: typings.awsSdk.s3outpostsMod.OutpostId = js.native
+    var OutpostId: typings.awsSdk.s3outpostsMod.OutpostId
     
     /**
       * The ID of the security group to use with the endpoint.
       */
-    var SecurityGroupId: typings.awsSdk.s3outpostsMod.SecurityGroupId = js.native
+    var SecurityGroupId: typings.awsSdk.s3outpostsMod.SecurityGroupId
     
     /**
       * The ID of the subnet in the selected VPC.
       */
-    var SubnetId: typings.awsSdk.s3outpostsMod.SubnetId = js.native
+    var SubnetId: typings.awsSdk.s3outpostsMod.SubnetId
   }
   object CreateEndpointRequest {
     
@@ -96,13 +95,12 @@ object s3outpostsMod {
     }
   }
   
-  @js.native
   trait CreateEndpointResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: js.UndefOr[typings.awsSdk.s3outpostsMod.EndpointArn] = js.native
+    var EndpointArn: js.UndefOr[typings.awsSdk.s3outpostsMod.EndpointArn] = js.undefined
   }
   object CreateEndpointResult {
     
@@ -125,18 +123,17 @@ object s3outpostsMod {
   
   type CreationTime = Date
   
-  @js.native
   trait DeleteEndpointRequest extends StObject {
     
     /**
       * The ID of the end point.
       */
-    var EndpointId: typings.awsSdk.s3outpostsMod.EndpointId = js.native
+    var EndpointId: typings.awsSdk.s3outpostsMod.EndpointId
     
     /**
       * The ID of the AWS Outpost. 
       */
-    var OutpostId: typings.awsSdk.s3outpostsMod.OutpostId = js.native
+    var OutpostId: typings.awsSdk.s3outpostsMod.OutpostId
   }
   object DeleteEndpointRequest {
     
@@ -157,38 +154,37 @@ object s3outpostsMod {
     }
   }
   
-  @js.native
   trait Endpoint extends StObject {
     
     /**
       * The VPC CIDR committed by this endpoint.
       */
-    var CidrBlock: js.UndefOr[typings.awsSdk.s3outpostsMod.CidrBlock] = js.native
+    var CidrBlock: js.UndefOr[typings.awsSdk.s3outpostsMod.CidrBlock] = js.undefined
     
     /**
       * The time the endpoint was created.
       */
-    var CreationTime: js.UndefOr[typings.awsSdk.s3outpostsMod.CreationTime] = js.native
+    var CreationTime: js.UndefOr[typings.awsSdk.s3outpostsMod.CreationTime] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the endpoint.
       */
-    var EndpointArn: js.UndefOr[typings.awsSdk.s3outpostsMod.EndpointArn] = js.native
+    var EndpointArn: js.UndefOr[typings.awsSdk.s3outpostsMod.EndpointArn] = js.undefined
     
     /**
       * The network interface of the endpoint.
       */
-    var NetworkInterfaces: js.UndefOr[typings.awsSdk.s3outpostsMod.NetworkInterfaces] = js.native
+    var NetworkInterfaces: js.UndefOr[typings.awsSdk.s3outpostsMod.NetworkInterfaces] = js.undefined
     
     /**
       * The ID of the AWS Outpost.
       */
-    var OutpostsId: js.UndefOr[OutpostId] = js.native
+    var OutpostsId: js.UndefOr[OutpostId] = js.undefined
     
     /**
       * The status of the endpoint.
       */
-    var Status: js.UndefOr[EndpointStatus] = js.native
+    var Status: js.UndefOr[EndpointStatus] = js.undefined
   }
   object Endpoint {
     
@@ -255,18 +251,17 @@ object s3outpostsMod {
   
   type Endpoints = js.Array[Endpoint]
   
-  @js.native
   trait ListEndpointsRequest extends StObject {
     
     /**
       * The max number of endpoints that can be returned on the request.
       */
-    var MaxResults: js.UndefOr[typings.awsSdk.s3outpostsMod.MaxResults] = js.native
+    var MaxResults: js.UndefOr[typings.awsSdk.s3outpostsMod.MaxResults] = js.undefined
     
     /**
       * The next endpoint requested in the list.
       */
-    var NextToken: js.UndefOr[typings.awsSdk.s3outpostsMod.NextToken] = js.native
+    var NextToken: js.UndefOr[typings.awsSdk.s3outpostsMod.NextToken] = js.undefined
   }
   object ListEndpointsRequest {
     
@@ -293,18 +288,17 @@ object s3outpostsMod {
     }
   }
   
-  @js.native
   trait ListEndpointsResult extends StObject {
     
     /**
       * Returns an array of endpoints associated with AWS Outpost.
       */
-    var Endpoints: js.UndefOr[typings.awsSdk.s3outpostsMod.Endpoints] = js.native
+    var Endpoints: js.UndefOr[typings.awsSdk.s3outpostsMod.Endpoints] = js.undefined
     
     /**
       * The next endpoint returned in the list.
       */
-    var NextToken: js.UndefOr[typings.awsSdk.s3outpostsMod.NextToken] = js.native
+    var NextToken: js.UndefOr[typings.awsSdk.s3outpostsMod.NextToken] = js.undefined
   }
   object ListEndpointsResult {
     
@@ -336,13 +330,12 @@ object s3outpostsMod {
   
   type MaxResults = Double
   
-  @js.native
   trait NetworkInterface extends StObject {
     
     /**
       * The ID for the network interface.
       */
-    var NetworkInterfaceId: js.UndefOr[typings.awsSdk.s3outpostsMod.NetworkInterfaceId] = js.native
+    var NetworkInterfaceId: js.UndefOr[typings.awsSdk.s3outpostsMod.NetworkInterfaceId] = js.undefined
   }
   object NetworkInterface {
     
@@ -375,7 +368,7 @@ object s3outpostsMod {
   trait S3Outposts extends Service {
     
     @JSName("config")
-    var config_S3Outposts: ConfigBase with ClientConfiguration = js.native
+    var config_S3Outposts: ConfigBase & ClientConfiguration = js.native
     
     /**
       * S3 on Outposts access points simplify managing data access at scale for shared datasets in Amazon S3 on Outposts. S3 on Outposts uses endpoints to connect to Outposts buckets so that you can perform actions within your virtual private cloud (VPC).  This action creates an endpoint and associates it with the specified Outpost.   Related actions include:    DeleteEndpoint     ListEndpoints   

@@ -2,32 +2,30 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interior extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Color: js.Any = js.native
+  var Color: js.Any
   
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var InvertIfNegative: js.Any = js.native
+  var InvertIfNegative: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Pattern: js.Any = js.native
+  var Pattern: js.Any
   
-  var PatternColor: js.Any = js.native
+  var PatternColor: js.Any
   
-  var PatternColorIndex: js.Any = js.native
+  var PatternColorIndex: js.Any
   
   @JSName("Word.Interior_typekey")
-  var WordDotInterior_typekey: Interior = js.native
+  var WordDotInterior_typekey: Interior
 }
 object Interior {
   

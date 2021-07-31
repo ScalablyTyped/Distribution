@@ -6,21 +6,19 @@ import typings.openlayers.mod.StyleFunction
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtentOptions extends StObject {
   
-  var boxStyle: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var boxStyle: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
   
-  var extent: js.UndefOr[Extent_] = js.native
+  var extent: js.UndefOr[Extent_] = js.undefined
   
-  var pixelTolerance: js.UndefOr[Double] = js.native
+  var pixelTolerance: js.UndefOr[Double] = js.undefined
   
-  var pointerStyle: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var pointerStyle: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object ExtentOptions {
   

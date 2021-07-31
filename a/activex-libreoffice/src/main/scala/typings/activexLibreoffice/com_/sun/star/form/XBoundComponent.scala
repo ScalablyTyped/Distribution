@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.form
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A commit may fail if an {@link XUpdateListener} vetoes the it.
   * @see com.sun.star.form.XUpdateListener
   */
-@js.native
-trait XBoundComponent extends XUpdateBroadcaster {
+trait XBoundComponent
+  extends StObject
+     with XUpdateBroadcaster {
   
   /**
     * commits the content of the component into the data source it is bound to.
     * @returns `TRUE` when the commitment was successful, otherwise `FALSE` .
     */
-  def commit(): Boolean = js.native
+  def commit(): Boolean
 }
 object XBoundComponent {
   

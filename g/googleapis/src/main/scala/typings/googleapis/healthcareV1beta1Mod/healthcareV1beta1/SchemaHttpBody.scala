@@ -3,7 +3,6 @@ package typings.googleapis.healthcareV1beta1Mod.healthcareV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,25 +25,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * how the request and response bodies are handled, all other features will
   * continue to work unchanged.
   */
-@js.native
 trait SchemaHttpBody extends StObject {
   
   /**
     * The HTTP Content-Type header value specifying the content type of the
     * body.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP request/response body as raw binary.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * Application specific response metadata. Must be set in the first response
     * for streaming APIs.
     */
-  var extensions: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var extensions: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
 }
 object SchemaHttpBody {
   
@@ -70,7 +68,7 @@ object SchemaHttpBody {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setExtensions(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)

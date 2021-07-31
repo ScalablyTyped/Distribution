@@ -2,26 +2,24 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateVocabularyFilterRequest extends StObject {
   
   /**
     * The Amazon S3 location of a text file used as input to create the vocabulary filter. Only use characters from the character set defined for custom vocabularies. For a list of character sets, see Character Sets for Custom Vocabularies. The specified file must be less than 50 KB of UTF-8 characters. If you provide the location of a list of words in the VocabularyFilterFileUri parameter, you can't use the Words parameter.
     */
-  var VocabularyFilterFileUri: js.UndefOr[Uri] = js.native
+  var VocabularyFilterFileUri: js.UndefOr[Uri] = js.undefined
   
   /**
     * The name of the vocabulary filter to update. If you try to update a vocabulary filter with the same name as another vocabulary filter, you get a ConflictException error.
     */
-  var VocabularyFilterName: typings.awsSdk.transcribeserviceMod.VocabularyFilterName = js.native
+  var VocabularyFilterName: typings.awsSdk.transcribeserviceMod.VocabularyFilterName
   
   /**
     * The words to use in the vocabulary filter. Only use characters from the character set defined for custom vocabularies. For a list of character sets, see Character Sets for Custom Vocabularies. If you provide a list of words in the Words parameter, you can't use the VocabularyFilterFileUri parameter.
     */
-  var Words: js.UndefOr[typings.awsSdk.transcribeserviceMod.Words] = js.native
+  var Words: js.UndefOr[typings.awsSdk.transcribeserviceMod.Words] = js.undefined
 }
 object UpdateVocabularyFilterRequest {
   

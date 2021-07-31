@@ -5,21 +5,19 @@ import typings.gestalt.gestaltStrings.lg
 import typings.gestalt.gestaltStrings.md
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabsProps extends StObject {
   
-  var activeTabIndex: Double = js.native
+  var activeTabIndex: Double
   
-  def onChange(args: ActiveTabIndex): Unit = js.native
+  def onChange(args: ActiveTabIndex): Unit
   
-  var size: js.UndefOr[md | lg] = js.native
+  var size: js.UndefOr[md | lg] = js.undefined
   
-  var tabs: js.Array[typings.gestalt.anon.Text] = js.native
+  var tabs: js.Array[typings.gestalt.anon.Text]
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object TabsProps {
   

@@ -12,78 +12,64 @@ import typings.relayRuntime.relayStoreTypesMod.RequestDescriptor
 import typings.relayRuntime.relayStoreTypesMod.SingularReaderSelector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayModernSelectorMod {
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "areEqualSelectors")
+  @JSImport("relay-runtime/lib/store/RelayModernSelector", JSImport.Namespace)
   @js.native
-  def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "createNormalizationSelector")
-  @js.native
-  def createNormalizationSelector(node: NormalizationSelectableNode, dataID: DataID, variables: Variables): NormalizationSelector = js.native
+  @scala.inline
+  def areEqualSelectors(thisSelector: SingularReaderSelector, thatSelector: SingularReaderSelector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("areEqualSelectors")(thisSelector.asInstanceOf[js.Any], thatSelector.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "createReaderSelector")
-  @js.native
-  def createReaderSelector(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = js.native
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "createReaderSelector")
-  @js.native
+  @scala.inline
+  def createNormalizationSelector(node: NormalizationSelectableNode, dataID: DataID, variables: Variables): NormalizationSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createNormalizationSelector")(node.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any])).asInstanceOf[NormalizationSelector]
+  
+  @scala.inline
+  def createReaderSelector(fragment: ReaderFragment, dataID: DataID, variables: Variables, request: RequestDescriptor): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createReaderSelector")(fragment.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], request.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
+  @scala.inline
   def createReaderSelector(
     fragment: ReaderFragment,
     dataID: DataID,
     variables: Variables,
     request: RequestDescriptor,
     isWithinUnmatchedTypeRefinement: Boolean
-  ): SingularReaderSelector = js.native
+  ): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("createReaderSelector")(fragment.asInstanceOf[js.Any], dataID.asInstanceOf[js.Any], variables.asInstanceOf[js.Any], request.asInstanceOf[js.Any], isWithinUnmatchedTypeRefinement.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getDataIDsFromFragment")
-  @js.native
-  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Any): DataID | js.Array[DataID] = js.native
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getDataIDsFromFragment")
-  @js.native
-  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Array[_]): DataID | js.Array[DataID] = js.native
+  @scala.inline
+  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Any): DataID | js.Array[DataID] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[DataID | js.Array[DataID]]
+  @scala.inline
+  def getDataIDsFromFragment(fragment: ReaderFragment, item: js.Array[js.Any]): DataID | js.Array[DataID] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[DataID | js.Array[DataID]]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getDataIDsFromObject")
-  @js.native
-  def getDataIDsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[DataID | js.Array[DataID]] = js.native
+  @scala.inline
+  def getDataIDsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[DataID | js.Array[DataID]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDataIDsFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[DataID | js.Array[DataID]]]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getPluralSelector")
-  @js.native
-  def getPluralSelector(fragment: ReaderFragment, items: js.Array[_]): PluralReaderSelector = js.native
+  @scala.inline
+  def getPluralSelector(fragment: ReaderFragment, items: js.Array[js.Any]): PluralReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getPluralSelector")(fragment.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[PluralReaderSelector]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getSelector")
-  @js.native
-  def getSelector(fragment: ReaderFragment, item: js.Any): ReaderSelector = js.native
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getSelector")
-  @js.native
-  def getSelector(fragment: ReaderFragment, item: js.Array[_]): ReaderSelector = js.native
+  @scala.inline
+  def getSelector(fragment: ReaderFragment, item: js.Any): ReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[ReaderSelector]
+  @scala.inline
+  def getSelector(fragment: ReaderFragment, item: js.Array[js.Any]): ReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[ReaderSelector]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getSelectorsFromObject")
-  @js.native
-  def getSelectorsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[ReaderSelector] = js.native
+  @scala.inline
+  def getSelectorsFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): StringDictionary[ReaderSelector] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSelectorsFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[ReaderSelector]]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getSingularSelector")
-  @js.native
-  def getSingularSelector(fragment: ReaderFragment, item: js.Any): SingularReaderSelector = js.native
+  @scala.inline
+  def getSingularSelector(fragment: ReaderFragment, item: js.Any): SingularReaderSelector = (^.asInstanceOf[js.Dynamic].applyDynamic("getSingularSelector")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[SingularReaderSelector]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getVariablesFromFragment")
-  @js.native
-  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Any): Variables = js.native
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getVariablesFromFragment")
-  @js.native
-  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Array[_]): Variables = js.native
+  @scala.inline
+  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Any): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
+  @scala.inline
+  def getVariablesFromFragment(fragment: ReaderFragment, item: js.Array[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getVariablesFromObject")
-  @js.native
-  def getVariablesFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): Variables = js.native
+  @scala.inline
+  def getVariablesFromObject(fragments: StringDictionary[ReaderFragment], `object`: StringDictionary[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromObject")(fragments.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getVariablesFromPluralFragment")
-  @js.native
-  def getVariablesFromPluralFragment(fragment: ReaderFragment, items: js.Array[_]): Variables = js.native
+  @scala.inline
+  def getVariablesFromPluralFragment(fragment: ReaderFragment, items: js.Array[js.Any]): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromPluralFragment")(fragment.asInstanceOf[js.Any], items.asInstanceOf[js.Any])).asInstanceOf[Variables]
   
-  @JSImport("relay-runtime/lib/store/RelayModernSelector", "getVariablesFromSingularFragment")
-  @js.native
-  def getVariablesFromSingularFragment(fragment: ReaderFragment, item: js.Any): Variables = js.native
+  @scala.inline
+  def getVariablesFromSingularFragment(fragment: ReaderFragment, item: js.Any): Variables = (^.asInstanceOf[js.Dynamic].applyDynamic("getVariablesFromSingularFragment")(fragment.asInstanceOf[js.Any], item.asInstanceOf[js.Any])).asInstanceOf[Variables]
 }

@@ -2,17 +2,15 @@ package typings.dc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key extends StObject {
     
-    var key: js.Any = js.native
+    var key: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Key {
     

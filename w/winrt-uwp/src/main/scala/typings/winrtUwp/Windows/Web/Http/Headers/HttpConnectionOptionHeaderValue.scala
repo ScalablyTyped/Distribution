@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents connection information used in the Connection HTTP header on an HTTP request. */
-@js.native
 trait HttpConnectionOptionHeaderValue extends StObject {
   
   /** Gets the value of the connection-token in the Connection HTTP header. */
-  var token: String = js.native
+  var token: String
 }
 object HttpConnectionOptionHeaderValue {
   

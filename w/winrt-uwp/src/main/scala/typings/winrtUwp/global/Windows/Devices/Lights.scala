@@ -3,7 +3,6 @@ package typings.winrtUwp.global.Windows.Devices
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for accessing and controlling lamp devices. */
@@ -13,8 +12,13 @@ object Lights {
   @JSGlobal("Windows.Devices.Lights.Lamp")
   @js.native
   abstract class Lamp ()
-    extends typings.winrtUwp.Windows.Devices.Lights.Lamp
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Lights.Lamp
   object Lamp {
+    
+    @JSGlobal("Windows.Devices.Lights.Lamp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Gets a Lamp object representing the lamp device with the specified ID.
@@ -22,32 +26,35 @@ object Lights {
       * @return An asynchronous operation that returns a Lamp object upon successful completion.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Lights.Lamp.fromIdAsync")
-    @js.native
-    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp] = js.native
+    @scala.inline
+    def fromIdAsync(deviceId: String): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromIdAsync")(deviceId.asInstanceOf[js.Any]).asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp]]
     
     /**
       * Gets a Lamp object representing the default lamp for the device.
       * @return An asynchronous operation that returns a Lamp object upon successful completion.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Lights.Lamp.getDefaultAsync")
-    @js.native
-    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp] = js.native
+    @scala.inline
+    def getDefaultAsync(): IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultAsync")().asInstanceOf[IPromiseWithIAsyncOperation[typings.winrtUwp.Windows.Devices.Lights.Lamp]]
     
     /**
       * Returns the class selection string that you can use to enumerate lamp devices.
       * @return The class selection string for lamp devices.
       */
     /* static member */
-    @JSGlobal("Windows.Devices.Lights.Lamp.getDeviceSelector")
-    @js.native
-    def getDeviceSelector(): String = js.native
+    @scala.inline
+    def getDeviceSelector(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeviceSelector")().asInstanceOf[String]
   }
   
   /** Provides data for the AvailabilityChanged event. */
   @JSGlobal("Windows.Devices.Lights.LampAvailabilityChangedEventArgs")
   @js.native
   abstract class LampAvailabilityChangedEventArgs ()
-    extends typings.winrtUwp.Windows.Devices.Lights.LampAvailabilityChangedEventArgs
+    extends StObject
+       with typings.winrtUwp.Windows.Devices.Lights.LampAvailabilityChangedEventArgs {
+    
+    /** Gets a value indicating whether the lamp device that triggered the event is available. */
+    /* CompleteClass */
+    var isAvailable: Boolean = js.native
+  }
 }

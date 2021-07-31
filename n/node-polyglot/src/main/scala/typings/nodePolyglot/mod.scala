@@ -4,44 +4,42 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodePolyglot.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-polyglot", JSImport.Namespace)
   @js.native
-  class ^ () extends Polyglot {
+  class ^ ()
+    extends StObject
+       with Polyglot {
     def this(options: PolyglotOptions) = this()
   }
+  @JSImport("node-polyglot", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String): String = js.native
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String, options: js.UndefOr[scala.Nothing], locale: String): String = js.native
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String, options: Double): String = js.native
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String, options: Double, locale: String): String = js.native
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String, options: InterpolationOptions): String = js.native
-  @JSImport("node-polyglot", "transformPhrase")
-  @js.native
-  def transformPhrase(phrase: String, options: InterpolationOptions, locale: String): String = js.native
+  @scala.inline
+  def transformPhrase(phrase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def transformPhrase(phrase: String, options: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def transformPhrase(phrase: String, options: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def transformPhrase(phrase: String, options: Unit, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def transformPhrase(phrase: String, options: InterpolationOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def transformPhrase(phrase: String, options: InterpolationOptions, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformPhrase")(phrase.asInstanceOf[js.Any], options.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait InterpolationOptions
-    extends /* interpolationKey */ StringDictionary[js.Any] {
+    extends StObject
+       with /* interpolationKey */ StringDictionary[js.Any] {
     
     @JSName("_")
-    var _underscore: js.UndefOr[String] = js.native
+    var _underscore: js.UndefOr[String] = js.undefined
     
-    var smart_count: js.UndefOr[Double | Length] = js.native
+    var smart_count: js.UndefOr[Double | Length] = js.undefined
   }
   object InterpolationOptions {
     
@@ -68,12 +66,11 @@ object mod {
     }
   }
   
-  @js.native
   trait InterpolationTokenOptions extends StObject {
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object InterpolationTokenOptions {
     
@@ -100,12 +97,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PluralRules extends StObject {
     
-    var pluralTypeToLanguages: StringDictionary[js.Array[String]] = js.native
+    var pluralTypeToLanguages: StringDictionary[js.Array[String]]
     
-    var pluralTypes: StringDictionary[js.Function1[/* n */ Double, Double]] = js.native
+    var pluralTypes: StringDictionary[js.Function1[/* n */ Double, Double]]
   }
   object PluralRules {
     
@@ -152,24 +148,23 @@ object mod {
     def unset(phrases: js.Any, prefix: String): Unit = js.native
   }
   
-  @js.native
   trait PolyglotOptions extends StObject {
     
-    var allowMissing: js.UndefOr[Boolean] = js.native
+    var allowMissing: js.UndefOr[Boolean] = js.undefined
     
-    var interpolation: js.UndefOr[InterpolationTokenOptions] = js.native
+    var interpolation: js.UndefOr[InterpolationTokenOptions] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     var onMissingKey: js.UndefOr[
         js.Function3[/* key */ String, /* options */ InterpolationOptions, /* locale */ String, String]
-      ] = js.native
+      ] = js.undefined
     
-    var phrases: js.UndefOr[js.Any] = js.native
+    var phrases: js.UndefOr[js.Any] = js.undefined
     
-    var pluralRules: js.UndefOr[PluralRules] = js.native
+    var pluralRules: js.UndefOr[PluralRules] = js.undefined
     
-    var warn: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var warn: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
   }
   object PolyglotOptions {
     

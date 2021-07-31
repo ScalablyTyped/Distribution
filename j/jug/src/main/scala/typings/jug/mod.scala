@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jug", "vertex")
   @js.native
-  class vertex () extends Vertex {
+  class vertex ()
+    extends StObject
+       with Vertex {
     def this(obj: VertexData) = this()
   }
   
@@ -37,7 +38,9 @@ object mod extends Shortcut {
     * Graph constructor function.
     */
   @js.native
-  trait GraphConstructor extends Instantiable0[Graph]
+  trait GraphConstructor
+    extends StObject
+       with Instantiable0[Graph]
   
   /**
     * Represents one node of a graph.
@@ -133,7 +136,8 @@ object mod extends Shortcut {
     */
   @js.native
   trait VertexConstructor
-    extends Instantiable0[Vertex]
+    extends StObject
+       with Instantiable0[Vertex]
        with Instantiable1[/* obj */ VertexData, Vertex]
   
   /**
@@ -141,16 +145,15 @@ object mod extends Shortcut {
     */
   type VertexData = js.Object
   
-  @js.native
   trait VertexStructure extends StObject {
     
-    var data: VertexData = js.native
+    var data: VertexData
     
-    var edge: js.Array[Vertex] = js.native
+    var edge: js.Array[Vertex]
     
-    var level: Double = js.native
+    var level: Double
     
-    var parent: Vertex = js.native
+    var parent: Vertex
   }
   object VertexStructure {
     

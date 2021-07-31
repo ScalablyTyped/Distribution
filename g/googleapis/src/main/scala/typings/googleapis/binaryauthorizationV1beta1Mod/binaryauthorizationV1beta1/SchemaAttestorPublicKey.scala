@@ -2,14 +2,12 @@ package typings.googleapis.binaryauthorizationV1beta1Mod.binaryauthorizationV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An attestor public key that will be used to verify attestations signed by
   * this attestor.
   */
-@js.native
 trait SchemaAttestorPublicKey extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaAttestorPublicKey extends StObject {
     * represented as upper-case hex.  If `id` is provided by the caller, it
     * will be overwritten by the API-calculated ID.
     */
-  var asciiArmoredPgpPublicKey: js.UndefOr[String] = js.native
+  var asciiArmoredPgpPublicKey: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A descriptive comment. This field may be updated.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this public key. Signatures verified by BinAuthz must include
@@ -35,7 +33,7 @@ trait SchemaAttestorPublicKey extends StObject {
     * this field can be imposed based on which public key type is encapsulated.
     * See the documentation on `public_key` cases below for details.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A raw PKIX SubjectPublicKeyInfo format public key.  NOTE: `id` may be
@@ -43,7 +41,7 @@ trait SchemaAttestorPublicKey extends StObject {
     * it MUST be a valid RFC3986 URI. If `id` is left blank, a default one will
     * be computed based on the digest of the DER encoding of the public key.
     */
-  var pkixPublicKey: js.UndefOr[SchemaPkixPublicKey] = js.native
+  var pkixPublicKey: js.UndefOr[SchemaPkixPublicKey] = js.undefined
 }
 object SchemaAttestorPublicKey {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeLimitsOutput extends StObject {
   
   /**
     * The maximum total read capacity units that your account allows you to provision across all of your tables in this Region.
     */
-  var AccountMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var AccountMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The maximum total write capacity units that your account allows you to provision across all of your tables in this Region.
     */
-  var AccountMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var AccountMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The maximum read capacity units that your account allows you to provision for a new table that you are creating in this Region, including the read capacity units provisioned for its global secondary indexes (GSIs).
     */
-  var TableMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var TableMaxReadCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
   
   /**
     * The maximum write capacity units that your account allows you to provision for a new table that you are creating in this Region, including the write capacity units provisioned for its global secondary indexes (GSIs).
     */
-  var TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.native
+  var TableMaxWriteCapacityUnits: js.UndefOr[PositiveLongObject] = js.undefined
 }
 object DescribeLimitsOutput {
   

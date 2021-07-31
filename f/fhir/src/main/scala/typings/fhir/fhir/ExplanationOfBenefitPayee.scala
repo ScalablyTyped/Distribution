@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Party to be paid any benefits payable
   */
-@js.native
-trait ExplanationOfBenefitPayee extends BackboneElement {
+trait ExplanationOfBenefitPayee
+  extends StObject
+     with BackboneElement {
   
   /**
     * Party to receive the payable
     */
-  var party: js.UndefOr[Reference] = js.native
+  var party: js.UndefOr[Reference] = js.undefined
   
   /**
     * organization | patient | practitioner | relatedperson
     */
-  var resourceType: js.UndefOr[CodeableConcept] = js.native
+  var resourceType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Type of party: Subscriber, Provider, other
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ExplanationOfBenefitPayee {
   

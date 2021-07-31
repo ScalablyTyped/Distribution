@@ -3,44 +3,42 @@ package typings.nano.mod
 import typings.nano.anon.Active
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://docs.couchdb.org/en/latest/api/database/common.html#get--db
-@js.native
 trait DatabaseGetResponse extends StObject {
   
   // Set to true if the database compaction routine is operating on this database.
-  var compact_running: Boolean = js.native
+  var compact_running: Boolean
   
   // The number of bytes of live data inside the database file.
-  var data_size: Double = js.native
+  var data_size: Double
   
   // The name of the database.
-  var db_name: String = js.native
+  var db_name: String
   
   // The version of the physical format used for the data when it is stored on disk.
-  var disk_format_version: Double = js.native
+  var disk_format_version: Double
   
   // The length of the database file on disk. Views indexes are not included in the calculation.
-  var disk_size: Double = js.native
+  var disk_size: Double
   
   // A count of the documents in the specified database.
-  var doc_count: Double = js.native
+  var doc_count: Double
   
   // Number of deleted documents
-  var doc_del_count: Double = js.native
+  var doc_del_count: Double
   
   // Timestamp of when the database was opened, expressed in microseconds since the epoch.
-  var instance_start_time: String = js.native
+  var instance_start_time: String
   
   // The number of purge operations on the database.
-  var purge_seq: Double = js.native
+  var purge_seq: Double
   
-  var sizes: Active = js.native
+  var sizes: Active
   
   // The current number of updates to the database.
-  var update_seq: Double = js.native
+  var update_seq: Double
 }
 object DatabaseGetResponse {
   

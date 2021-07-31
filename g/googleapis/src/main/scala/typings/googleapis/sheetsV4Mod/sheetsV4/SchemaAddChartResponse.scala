@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of adding a chart to a spreadsheet.
   */
-@js.native
 trait SchemaAddChartResponse extends StObject {
   
   /**
     * The newly added chart.
     */
-  var chart: js.UndefOr[SchemaEmbeddedChart] = js.native
+  var chart: js.UndefOr[SchemaEmbeddedChart] = js.undefined
 }
 object SchemaAddChartResponse {
   

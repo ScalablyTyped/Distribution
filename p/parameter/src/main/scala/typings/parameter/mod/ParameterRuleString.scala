@@ -5,35 +5,34 @@ import typings.parameter.parameterStrings.stringQuestionmark
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRuleString
-  extends ParameterRuleBase
+  extends StObject
+     with ParameterRuleBase
      with _ParameterRuleItem {
   
   /**
     * Allow empty string, default to false. If rule.required set to false, allowEmpty will be set to true by default.
     * @alias ParameterRuleString.empty
     */
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Alias of allowEmpty
     */
-  var empty: js.UndefOr[Boolean] = js.native
+  var empty: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[RegExp] = js.native
+  var format: js.UndefOr[RegExp] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var trim: js.UndefOr[Boolean] = js.native
+  var trim: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_ParameterRuleString: string | stringQuestionmark = js.native
+  var type_ParameterRuleString: string | stringQuestionmark
 }
 object ParameterRuleString {
   

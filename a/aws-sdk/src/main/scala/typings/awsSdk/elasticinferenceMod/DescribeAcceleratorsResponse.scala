@@ -2,21 +2,19 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAcceleratorsResponse extends StObject {
   
   /**
     *  The details of the Elastic Inference Accelerators. 
     */
-  var acceleratorSet: js.UndefOr[ElasticInferenceAcceleratorSet] = js.native
+  var acceleratorSet: js.UndefOr[ElasticInferenceAcceleratorSet] = js.undefined
   
   /**
     *  A token to specify where to start paginating. This is the NextToken from a previously truncated response. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeAcceleratorsResponse {
   

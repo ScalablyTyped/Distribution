@@ -4,17 +4,15 @@ import typings.sweValidation.anon.Id
 import typings.sweValidation.anon.Sex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait cin extends StObject {
     
-    var corporation: Id = js.native
+    var corporation: Id
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object cin {
     
@@ -33,12 +31,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ssn extends StObject {
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var person: js.UndefOr[Sex] = js.native
+    var person: js.UndefOr[Sex] = js.undefined
   }
   object ssn {
     

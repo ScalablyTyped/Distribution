@@ -4,38 +4,32 @@ import typings.braintreeWebDropIn.anon.CardHolderName
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.ApplePayCard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait applePayPaymentMethodPayload extends PaymentMethodPayload {
+trait applePayPaymentMethodPayload
+  extends StObject
+     with PaymentMethodPayload {
   
-  var binData: typings.braintreeWebDropIn.mod.binData = js.native
+  var binData: typings.braintreeWebDropIn.mod.binData
   
-  var description: String = js.native
+  var description: String
   
-  var details: CardHolderName = js.native
+  var details: CardHolderName
   
-  var deviceData: js.UndefOr[String] = js.native
+  var deviceData: js.UndefOr[String] = js.undefined
   
-  var nonce: String = js.native
+  var nonce: String
   
-  var `type`: ApplePayCard = js.native
+  var `type`: ApplePayCard
   
-  var vaulted: js.UndefOr[Boolean] = js.native
+  var vaulted: js.UndefOr[Boolean] = js.undefined
 }
 object applePayPaymentMethodPayload {
   
   @scala.inline
-  def apply(
-    binData: binData,
-    description: String,
-    details: CardHolderName,
-    nonce: String,
-    `type`: ApplePayCard
-  ): applePayPaymentMethodPayload = {
+  def apply(binData: binData, description: String, details: CardHolderName, nonce: String): applePayPaymentMethodPayload = {
     val __obj = js.Dynamic.literal(binData = binData.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ApplePayCard")
     __obj.asInstanceOf[applePayPaymentMethodPayload]
   }
   

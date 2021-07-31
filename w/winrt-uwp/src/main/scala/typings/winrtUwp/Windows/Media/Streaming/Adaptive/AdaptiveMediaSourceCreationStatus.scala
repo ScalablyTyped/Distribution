@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,29 +13,43 @@ object AdaptiveMediaSourceCreationStatus extends StObject {
   
   /** The creation of the AdaptiveMediaSource object failed as the result of a failure in downloading the adaptive streaming manifest. */
   @js.native
-  sealed trait manifestDownloadFailure extends AdaptiveMediaSourceCreationStatus
+  sealed trait manifestDownloadFailure
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The creation of the AdaptiveMediaSource object failed as the result of a failure in parsing the adaptive streaming manifest. */
   @js.native
-  sealed trait manifestParseFailure extends AdaptiveMediaSourceCreationStatus
+  sealed trait manifestParseFailure
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The AdaptiveMediaSource object was successfully created. */
   @js.native
-  sealed trait success extends AdaptiveMediaSourceCreationStatus
+  sealed trait success
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The creation of the AdaptiveMediaSource object failed because of an unknown failure. */
   @js.native
-  sealed trait unknownFailure extends AdaptiveMediaSourceCreationStatus
+  sealed trait unknownFailure
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The creation of the AdaptiveMediaSource object failed because the content of the adaptive streaming manifest is unsupported. */
   @js.native
-  sealed trait unsupportedManifestContentType extends AdaptiveMediaSourceCreationStatus
+  sealed trait unsupportedManifestContentType
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The creation of the AdaptiveMediaSource object failed because the profile of the adaptive streaming manifest is unsupported. */
   @js.native
-  sealed trait unsupportedManifestProfile extends AdaptiveMediaSourceCreationStatus
+  sealed trait unsupportedManifestProfile
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
   
   /** The creation of the AdaptiveMediaSource object failed because the version of the adaptive streaming manifest is unsupported. */
   @js.native
-  sealed trait unsupportedManifestVersion extends AdaptiveMediaSourceCreationStatus
+  sealed trait unsupportedManifestVersion
+    extends StObject
+       with AdaptiveMediaSourceCreationStatus
 }

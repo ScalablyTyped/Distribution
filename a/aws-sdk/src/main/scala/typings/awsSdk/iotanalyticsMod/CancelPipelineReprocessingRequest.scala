@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelPipelineReprocessingRequest extends StObject {
   
   /**
     * The name of pipeline for which data reprocessing is canceled.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
   
   /**
     * The ID of the reprocessing task (returned by StartPipelineReprocessing).
     */
-  var reprocessingId: ReprocessingId = js.native
+  var reprocessingId: ReprocessingId
 }
 object CancelPipelineReprocessingRequest {
   

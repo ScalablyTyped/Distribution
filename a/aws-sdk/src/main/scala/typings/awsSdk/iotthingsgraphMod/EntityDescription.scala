@@ -2,36 +2,34 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityDescription extends StObject {
   
   /**
     * The entity ARN.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time at which the entity was created.
     */
-  var createdAt: js.UndefOr[Timestamp] = js.native
+  var createdAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The definition document of the entity.
     */
-  var definition: js.UndefOr[DefinitionDocument] = js.native
+  var definition: js.UndefOr[DefinitionDocument] = js.undefined
   
   /**
     * The entity ID.
     */
-  var id: js.UndefOr[Urn] = js.native
+  var id: js.UndefOr[Urn] = js.undefined
   
   /**
     * The entity type.
     */
-  var `type`: js.UndefOr[EntityType] = js.native
+  var `type`: js.UndefOr[EntityType] = js.undefined
 }
 object EntityDescription {
   

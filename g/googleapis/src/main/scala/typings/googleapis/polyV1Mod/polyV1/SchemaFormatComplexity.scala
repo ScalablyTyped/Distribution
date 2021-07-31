@@ -2,13 +2,11 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information on the complexity of this Format.
   */
-@js.native
 trait SchemaFormatComplexity extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaFormatComplexity extends StObject {
     * format_type. This hint allows you to sort formats from the most-detailed
     * (0) to least-detailed (integers greater than 0).
     */
-  var lodHint: js.UndefOr[Double] = js.native
+  var lodHint: js.UndefOr[Double] = js.undefined
   
   /**
     * The estimated number of triangles.
     */
-  var triangleCount: js.UndefOr[String] = js.native
+  var triangleCount: js.UndefOr[String] = js.undefined
 }
 object SchemaFormatComplexity {
   

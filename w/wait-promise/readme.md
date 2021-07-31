@@ -11,8 +11,8 @@ Make a promise, waiting for a specified amount of time, util something is done.
 | Full name          | wait-promise |
 | Keywords           | promise, node, wait, before, after, every, and, until, till, async |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 213021 |
+| # dependents       | 9 |
+| # downloads        | 190842 |
 | # stars            | 0 |
 
 ## Links

@@ -5,25 +5,24 @@ import typings.awsSdkClientCodecommitNode.getCommentExceptionsUnionMod.GetCommen
 import typings.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommentDeletedExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentDeletedExceptionDetails> * / any */ @js.native
-  trait CommentDeletedException
-    extends DeleteCommentContentExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentDeletedExceptionDetails> * / any */ trait CommentDeletedException
+    extends StObject
+       with DeleteCommentContentExceptionsUnion
        with GetCommentExceptionsUnion
        with UpdateCommentExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDeletedException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDeletedException
   }
   object CommentDeletedException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDeletedException): CommentDeletedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommentDeletedException = {
+      val __obj = js.Dynamic.literal(name = "CommentDeletedException")
       __obj.asInstanceOf[CommentDeletedException]
     }
     
@@ -37,6 +36,5 @@ object typesCommentDeletedExceptionMod {
     }
   }
   
-  @js.native
   trait CommentDeletedExceptionDetails extends StObject
 }

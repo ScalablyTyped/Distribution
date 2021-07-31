@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelAuditDetails extends StObject {
   
   /** Whether or not the channel respects the community guidelines. */
-  var communityGuidelinesGoodStanding: js.UndefOr[Boolean] = js.native
+  var communityGuidelinesGoodStanding: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the channel has any unresolved claims. */
-  var contentIdClaimsGoodStanding: js.UndefOr[Boolean] = js.native
+  var contentIdClaimsGoodStanding: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the channel has any copyright strikes. */
-  var copyrightStrikesGoodStanding: js.UndefOr[Boolean] = js.native
+  var copyrightStrikesGoodStanding: js.UndefOr[Boolean] = js.undefined
 }
 object ChannelAuditDetails {
   

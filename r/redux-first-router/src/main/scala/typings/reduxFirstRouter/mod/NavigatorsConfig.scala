@@ -4,10 +4,8 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigatorsConfig[TKeys, TState] extends StObject {
   
   def actionToNavigation(
@@ -16,18 +14,18 @@ trait NavigatorsConfig[TKeys, TState] extends StObject {
     // TODO check this
   navigationAction: Nullable[NavigationAction],
     route: Nullable[Route[TKeys, TState]]
-  ): js.Object = js.native
+  ): js.Object
   
   def navigationToAction(
     navigators: Navigators[TState],
     store: Store[TState, AnyAction],
     routesMap: RoutesMap[TKeys, TState],
     action: js.Object
-  ): typings.reduxFirstRouter.anon.Action = js.native
+  ): typings.reduxFirstRouter.anon.Action
   
-  var navigators: Navigators[TState] = js.native
+  var navigators: Navigators[TState]
   
-  def patchNavigators(navigators: Navigators[TState]): Unit = js.native
+  def patchNavigators(navigators: Navigators[TState]): Unit
 }
 object NavigatorsConfig {
   
@@ -43,7 +41,7 @@ object NavigatorsConfig {
   }
   
   @scala.inline
-  implicit class NavigatorsConfigMutableBuilder[Self <: NavigatorsConfig[_, _], TKeys, TState] (val x: Self with (NavigatorsConfig[TKeys, TState])) extends AnyVal {
+  implicit class NavigatorsConfigMutableBuilder[Self <: NavigatorsConfig[?, ?], TKeys, TState] (val x: Self & (NavigatorsConfig[TKeys, TState])) extends AnyVal {
     
     @scala.inline
     def setActionToNavigation(

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowIdentityForTarget extends StObject {
   
   /**
     * The name of the maintenance window.
     */
-  var Name: js.UndefOr[MaintenanceWindowName] = js.native
+  var Name: js.UndefOr[MaintenanceWindowName] = js.undefined
   
   /**
     * The ID of the maintenance window.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }
 object MaintenanceWindowIdentityForTarget {
   

@@ -2,12 +2,13 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "DebugAdapterExecutable")
 @js.native
-class DebugAdapterExecutable protected () extends DebugAdapterDescriptor {
+class DebugAdapterExecutable protected ()
+  extends StObject
+     with DebugAdapterDescriptor {
   /**
     * Creates a description for a debug adapter based on an executable program.
     *
@@ -17,8 +18,8 @@ class DebugAdapterExecutable protected () extends DebugAdapterDescriptor {
     */
   def this(command: String) = this()
   def this(command: String, args: js.Array[String]) = this()
-  def this(command: String, args: js.UndefOr[scala.Nothing], options: DebugAdapterExecutableOptions) = this()
   def this(command: String, args: js.Array[String], options: DebugAdapterExecutableOptions) = this()
+  def this(command: String, args: Unit, options: DebugAdapterExecutableOptions) = this()
   
   /**
     * The arguments passed to the debug adapter executable. Defaults to an empty array.

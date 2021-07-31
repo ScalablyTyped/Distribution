@@ -24,7 +24,6 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -43,7 +42,9 @@ object Events {
     * The following example code forwards all log messages to the embedder's console without regard for log level or other properties.
     */
   @js.native
-  trait ConsoleMessageEvent extends Event {
+  trait ConsoleMessageEvent
+    extends StObject
+       with Event {
     
     /**
       * The severity level of the log message.
@@ -103,7 +104,9 @@ object Events {
     * The default behavior is to cancel the dialog.
     */
   @js.native
-  trait DialogEvent extends Event {
+  trait DialogEvent
+    extends StObject
+       with Event {
     
     /**
       * An interface that can be used to respond to the guest's modal request.
@@ -146,7 +149,9 @@ object Events {
     * Fired when the process rendering the guest web content has exited.
     */
   @js.native
-  trait ExitEvent extends Event {
+  trait ExitEvent
+    extends StObject
+       with Event {
     
     /** Chrome's internal ID of the process that exited. */
     var processID: integer = js.native
@@ -185,7 +190,9 @@ object Events {
     * This might happen multiple times for a single find request as matches are found.
     */
   @js.native
-  trait FindUpdateEvent extends Event {
+  trait FindUpdateEvent
+    extends StObject
+       with Event {
     
     /**
       * The ordinal number of the current active match,
@@ -235,7 +242,9 @@ object Events {
     * loadabort will be fired and then the webview will be navigated to 'about:blank'.
     */
   @js.native
-  trait LoadAbortEvent extends Event {
+  trait LoadAbortEvent
+    extends StObject
+       with Event {
     
     /**
       * Unique chrome.integer ID for the type of abort.
@@ -310,7 +319,9 @@ object Events {
     * Fired when a load has committed. This includes navigation within the current document as well as subframe document-level loads, but does not include asynchronous resource loads.
     */
   @js.native
-  trait LoadCommitEvent extends Event {
+  trait LoadCommitEvent
+    extends StObject
+       with Event {
     
     /** Whether the load is top-level or in a subframe. */
     var isTopLevel: Boolean = js.native
@@ -322,17 +333,16 @@ object Events {
   /**
     * Fired when a top-level load request has redirected to a different URL.
     */
-  @js.native
   trait LoadRedirectEvent extends StObject {
     
     /** Whether or not the redirect happened at top-level or in a subframe. */
-    var isTopLevel: Boolean = js.native
+    var isTopLevel: Boolean
     
     /** The new URL after the redirect. */
-    var newUrl: String = js.native
+    var newUrl: String
     
     /** The requested URL before the redirect. */
-    var oldUrl: String = js.native
+    var oldUrl: String
   }
   object LoadRedirectEvent {
     
@@ -360,7 +370,9 @@ object Events {
     * Fired when a load has begun.
     */
   @js.native
-  trait LoadStartEvent extends Event {
+  trait LoadStartEvent
+    extends StObject
+       with Event {
     
     /** Whether the load is top-level or in a subframe. */
     var isTopLevel: Boolean = js.native
@@ -397,7 +409,9 @@ object Events {
     * });
     */
   @js.native
-  trait NewWindowEvent extends Event {
+  trait NewWindowEvent
+    extends StObject
+       with Event {
     
     /** The initial height requested for the new window. */
     var initialHeight: integer = js.native
@@ -436,7 +450,9 @@ object Events {
     * webview.addEventListener('permissionrequest', (e) => { if (e.permission === 'media') e.request.allow(); });
     */
   @js.native
-  trait PermissionRequestEvent extends Event {
+  trait PermissionRequestEvent
+    extends StObject
+       with Event {
     
     /** The type of permission being requested. */
     var permission: RequestedPermission = js.native
@@ -496,7 +512,9 @@ object Events {
     * });
     */
   @js.native
-  trait ResponsiveEvent extends Event {
+  trait ResponsiveEvent
+    extends StObject
+       with Event {
     
     /** Chrome's internal ID of the process that became responsive. */
     var processID: integer = js.native
@@ -507,7 +525,9 @@ object Events {
     * Only fires if autosize is enabled.
     */
   @js.native
-  trait SizeChangedEvent extends Event {
+  trait SizeChangedEvent
+    extends StObject
+       with Event {
     
     /** New height of embedded web content. */
     var newHeight: integer = js.native
@@ -527,50 +547,53 @@ object Events {
     * This event will be generated once with a matching responsive event if the guest begins to respond again.
     */
   @js.native
-  trait UnresponsiveEvent extends Event {
+  trait UnresponsiveEvent
+    extends StObject
+       with Event {
     
     /** Chrome's internal ID of the process that has become unresponsive. */
     var processID: integer = js.native
   }
   
-  @js.native
-  trait WebViewElementEventMap extends HTMLElementEventMap {
+  trait WebViewElementEventMap
+    extends StObject
+       with HTMLElementEventMap {
     
     @JSName("close")
-    var close_WebViewElementEventMap: CloseEvent = js.native
+    var close_WebViewElementEventMap: CloseEvent
     
-    var consolemessage: ConsoleMessageEvent = js.native
+    var consolemessage: ConsoleMessageEvent
     
-    var contentload: ContentLoadEvent = js.native
+    var contentload: ContentLoadEvent
     
-    var dialog: DialogEvent = js.native
+    var dialog: DialogEvent
     
-    var exit: ExitEvent = js.native
+    var exit: ExitEvent
     
-    var findupdate: FindUpdateEvent = js.native
+    var findupdate: FindUpdateEvent
     
-    var loadabort: LoadAbortEvent = js.native
+    var loadabort: LoadAbortEvent
     
-    var loadcommit: LoadCommitEvent = js.native
+    var loadcommit: LoadCommitEvent
     
-    var loadredirect: LoadRedirectEvent = js.native
+    var loadredirect: LoadRedirectEvent
     
     @JSName("loadstart")
-    var loadstart_WebViewElementEventMap: LoadStartEvent = js.native
+    var loadstart_WebViewElementEventMap: LoadStartEvent
     
-    var loadstop: LoadStopEvent = js.native
+    var loadstop: LoadStopEvent
     
-    var newwindow: NewWindowEvent = js.native
+    var newwindow: NewWindowEvent
     
-    var permissionrequest: PermissionRequestEvent = js.native
+    var permissionrequest: PermissionRequestEvent
     
-    var responsive: ResponsiveEvent = js.native
+    var responsive: ResponsiveEvent
     
-    var sizechanged: SizeChangedEvent = js.native
+    var sizechanged: SizeChangedEvent
     
-    var unresponsive: UnresponsiveEvent = js.native
+    var unresponsive: UnresponsiveEvent
     
-    var zoomchange: ZoomChangeEvent = js.native
+    var zoomchange: ZoomChangeEvent
   }
   object WebViewElementEventMap {
     
@@ -781,7 +804,9 @@ object Events {
   
   /** Fired when the page's zoom changes. */
   @js.native
-  trait ZoomChangeEvent extends Event {
+  trait ZoomChangeEvent
+    extends StObject
+       with Event {
     
     /** The new zoom factor that the page was zoomed to. */
     var newzoomFactor: double = js.native

@@ -6,10 +6,13 @@ import typings.std.Int32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distTypesMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait Rank extends StObject
@@ -18,61 +21,72 @@ object distTypesMod {
   object Rank extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Rank with String] = js.native
+    def apply(value: String): js.UndefOr[Rank & String] = js.native
     
     @js.native
-    sealed trait R0 extends Rank
-    /* "R0" */ val R0: typings.tensorflowTfjsCore.distTypesMod.Rank.R0 with String = js.native
+    sealed trait R0
+      extends StObject
+         with Rank
+    /* "R0" */ val R0: typings.tensorflowTfjsCore.distTypesMod.Rank.R0 & String = js.native
     
     @js.native
-    sealed trait R1 extends Rank
-    /* "R1" */ val R1: typings.tensorflowTfjsCore.distTypesMod.Rank.R1 with String = js.native
+    sealed trait R1
+      extends StObject
+         with Rank
+    /* "R1" */ val R1: typings.tensorflowTfjsCore.distTypesMod.Rank.R1 & String = js.native
     
     @js.native
-    sealed trait R2 extends Rank
-    /* "R2" */ val R2: typings.tensorflowTfjsCore.distTypesMod.Rank.R2 with String = js.native
+    sealed trait R2
+      extends StObject
+         with Rank
+    /* "R2" */ val R2: typings.tensorflowTfjsCore.distTypesMod.Rank.R2 & String = js.native
     
     @js.native
-    sealed trait R3 extends Rank
-    /* "R3" */ val R3: typings.tensorflowTfjsCore.distTypesMod.Rank.R3 with String = js.native
+    sealed trait R3
+      extends StObject
+         with Rank
+    /* "R3" */ val R3: typings.tensorflowTfjsCore.distTypesMod.Rank.R3 & String = js.native
     
     @js.native
-    sealed trait R4 extends Rank
-    /* "R4" */ val R4: typings.tensorflowTfjsCore.distTypesMod.Rank.R4 with String = js.native
+    sealed trait R4
+      extends StObject
+         with Rank
+    /* "R4" */ val R4: typings.tensorflowTfjsCore.distTypesMod.Rank.R4 & String = js.native
     
     @js.native
-    sealed trait R5 extends Rank
-    /* "R5" */ val R5: typings.tensorflowTfjsCore.distTypesMod.Rank.R5 with String = js.native
+    sealed trait R5
+      extends StObject
+         with Rank
+    /* "R5" */ val R5: typings.tensorflowTfjsCore.distTypesMod.Rank.R5 & String = js.native
     
     @js.native
-    sealed trait R6 extends Rank
-    /* "R6" */ val R6: typings.tensorflowTfjsCore.distTypesMod.Rank.R6 with String = js.native
+    sealed trait R6
+      extends StObject
+         with Rank
+    /* "R6" */ val R6: typings.tensorflowTfjsCore.distTypesMod.Rank.R6 & String = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/types", "sumOutType")
-  @js.native
-  def sumOutType(`type`: DataType): DataType = js.native
+  @scala.inline
+  def sumOutType(`type`: DataType): DataType = ^.asInstanceOf[js.Dynamic].applyDynamic("sumOutType")(`type`.asInstanceOf[js.Any]).asInstanceOf[DataType]
   
-  @JSImport("@tensorflow/tfjs-core/dist/types", "upcastType")
-  @js.native
-  def upcastType(typeA: DataType, typeB: DataType): DataType = js.native
+  @scala.inline
+  def upcastType(typeA: DataType, typeB: DataType): DataType = (^.asInstanceOf[js.Dynamic].applyDynamic("upcastType")(typeA.asInstanceOf[js.Any], typeB.asInstanceOf[js.Any])).asInstanceOf[DataType]
   
-  @js.native
   trait ArrayMap extends StObject {
     
-    var R0: Double = js.native
+    var R0: Double
     
-    var R1: js.Array[Double] = js.native
+    var R1: js.Array[Double]
     
-    var R2: js.Array[js.Array[Double]] = js.native
+    var R2: js.Array[js.Array[Double]]
     
-    var R3: js.Array[js.Array[js.Array[Double]]] = js.native
+    var R3: js.Array[js.Array[js.Array[Double]]]
     
-    var R4: js.Array[js.Array[js.Array[js.Array[Double]]]] = js.native
+    var R4: js.Array[js.Array[js.Array[js.Array[Double]]]]
     
-    var R5: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]] = js.native
+    var R5: js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]
     
-    var R6: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]] = js.native
+    var R6: js.Array[js.Array[js.Array[js.Array[js.Array[js.Array[Double]]]]]]
   }
   object ArrayMap {
     
@@ -145,18 +159,17 @@ object distTypesMod {
   */
   trait DataType extends StObject
   
-  @js.native
   trait DataTypeMap extends StObject {
     
-    var bool: Uint8Array = js.native
+    var bool: Uint8Array
     
-    var complex64: Float32Array = js.native
+    var complex64: Float32Array
     
-    var float32: Float32Array = js.native
+    var float32: Float32Array
     
-    var int32: Int32Array = js.native
+    var int32: Int32Array
     
-    var string: js.Array[String] = js.native
+    var string: js.Array[String]
   }
   object DataTypeMap {
     
@@ -373,14 +386,13 @@ object distTypesMod {
     def int32: typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32 = "int32".asInstanceOf[typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32]
   }
   
-  @js.native
   trait PixelData extends StObject {
     
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PixelData {
     
@@ -404,8 +416,9 @@ object distTypesMod {
     }
   }
   
-  @js.native
-  trait RecursiveArray[T /* <: js.Any */] extends /* index */ NumberDictionary[T | RecursiveArray[T]]
+  trait RecursiveArray[T /* <: js.Any */]
+    extends StObject
+       with /* index */ NumberDictionary[T | RecursiveArray[T]]
   object RecursiveArray {
     
     @scala.inline
@@ -419,22 +432,21 @@ object distTypesMod {
   
   type ScalarLike = Double | Boolean | String | Uint8Array
   
-  @js.native
   trait ShapeMap extends StObject {
     
-    var R0: js.Array[Double] = js.native
+    var R0: js.Array[Double]
     
-    var R1: js.Array[Double] = js.native
+    var R1: js.Array[Double]
     
-    var R2: js.Tuple2[Double, Double] = js.native
+    var R2: js.Tuple2[Double, Double]
     
-    var R3: js.Tuple3[Double, Double, Double] = js.native
+    var R3: js.Tuple3[Double, Double, Double]
     
-    var R4: js.Tuple4[Double, Double, Double, Double] = js.native
+    var R4: js.Tuple4[Double, Double, Double, Double]
     
-    var R5: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+    var R5: js.Tuple5[Double, Double, Double, Double, Double]
     
-    var R6: js.Tuple6[Double, Double, Double, Double, Double, Double] = js.native
+    var R6: js.Tuple6[Double, Double, Double, Double, Double, Double]
   }
   object ShapeMap {
     
@@ -484,18 +496,17 @@ object distTypesMod {
     }
   }
   
-  @js.native
   trait SingleValueMap extends StObject {
     
-    var bool: Boolean = js.native
+    var bool: Boolean
     
-    var complex64: Double = js.native
+    var complex64: Double
     
-    var float32: Double = js.native
+    var float32: Double
     
-    var int32: Double = js.native
+    var int32: Double
     
-    var string: String = js.native
+    var string: String
   }
   object SingleValueMap {
     

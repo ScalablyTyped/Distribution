@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.reelsMediaFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReelsMediaFeedResponsePollSticker extends StObject {
   
-  var finished: Boolean = js.native
+  var finished: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var is_shared_result: Boolean = js.native
+  var is_shared_result: Boolean
   
-  var poll_id: Double = js.native
+  var poll_id: Double
   
-  var promotion_tallies: Null = js.native
+  var promotion_tallies: Null
   
-  var question: String = js.native
+  var question: String
   
-  var tallies: js.Array[ReelsMediaFeedResponseTalliesItem] = js.native
+  var tallies: js.Array[ReelsMediaFeedResponseTalliesItem]
   
-  var viewer_can_vote: Boolean = js.native
+  var viewer_can_vote: Boolean
   
-  var viewer_vote: js.UndefOr[Double] = js.native
+  var viewer_vote: js.UndefOr[Double] = js.undefined
 }
 object ReelsMediaFeedResponsePollSticker {
   

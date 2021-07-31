@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditRevertCellParams extends IEditRowOperationParams {
+trait EditRevertCellParams
+  extends StObject
+     with IEditRowOperationParams {
   
-  var columnId: Double = js.native
+  var columnId: Double
 }
 object EditRevertCellParams {
   

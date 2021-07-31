@@ -4,14 +4,15 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noteMod {
   
   @JSImport("@ionic/core/dist/types/components/note/note", "Note")
   @js.native
-  class Note () extends ComponentInterface {
+  class Note ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

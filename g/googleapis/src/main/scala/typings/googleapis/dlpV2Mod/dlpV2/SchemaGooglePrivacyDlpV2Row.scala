@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGooglePrivacyDlpV2Row extends StObject {
   
-  var values: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.native
+  var values: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2Value]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Row {
   

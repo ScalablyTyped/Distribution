@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to exchange content with a target app asynchronously. */
-@js.native
 trait DataRequestDeferral extends StObject {
   
   /** Indicates that the content for an asynchronous share is ready for a target app, or that an error in the sharing operation occurred. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object DataRequestDeferral {
   

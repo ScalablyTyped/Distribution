@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFormationStackRecordSourceInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export snapshot record.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the record.
     */
-  var name: js.UndefOr[NonEmptyString] = js.native
+  var name: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., ExportSnapshotRecord).
     */
-  var resourceType: js.UndefOr[CloudFormationStackRecordSourceType] = js.native
+  var resourceType: js.UndefOr[CloudFormationStackRecordSourceType] = js.undefined
 }
 object CloudFormationStackRecordSourceInfo {
   

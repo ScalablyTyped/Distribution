@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see AssociationOptionsHasMany
   * @see AssociationOptionsBelongsToMany
   */
-@js.native
-trait AssociationOptionsManyToMany extends AssociationOptions
+trait AssociationOptionsManyToMany
+  extends StObject
+     with AssociationOptions
 object AssociationOptionsManyToMany {
   
   @scala.inline

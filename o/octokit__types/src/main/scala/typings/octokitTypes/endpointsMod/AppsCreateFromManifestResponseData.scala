@@ -3,37 +3,35 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Avatarurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCreateFromManifestResponseData extends StObject {
   
-  var client_id: String = js.native
+  var client_id: String
   
-  var client_secret: String = js.native
+  var client_secret: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var description: String = js.native
+  var description: String
   
-  var external_url: String = js.native
+  var external_url: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var owner: Avatarurl = js.native
+  var owner: Avatarurl
   
-  var pem: String = js.native
+  var pem: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var webhook_secret: String = js.native
+  var webhook_secret: String
 }
 object AppsCreateFromManifestResponseData {
   

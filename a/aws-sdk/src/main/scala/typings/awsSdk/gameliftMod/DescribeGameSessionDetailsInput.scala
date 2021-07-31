@@ -2,41 +2,39 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGameSessionDetailsInput extends StObject {
   
   /**
     * A unique identifier for an alias associated with the fleet to retrieve all game sessions for. You can use either the alias ID or ARN value.
     */
-  var AliasId: js.UndefOr[AliasIdOrArn] = js.native
+  var AliasId: js.UndefOr[AliasIdOrArn] = js.undefined
   
   /**
     * A unique identifier for a fleet to retrieve all game sessions active on the fleet. You can use either the fleet ID or ARN value.
     */
-  var FleetId: js.UndefOr[FleetIdOrArn] = js.native
+  var FleetId: js.UndefOr[FleetIdOrArn] = js.undefined
   
   /**
     * A unique identifier for the game session to retrieve. 
     */
-  var GameSessionId: js.UndefOr[ArnStringModel] = js.native
+  var GameSessionId: js.UndefOr[ArnStringModel] = js.undefined
   
   /**
     * The maximum number of results to return. Use this parameter with NextToken to get results as a set of sequential pages.
     */
-  var Limit: js.UndefOr[PositiveInteger] = js.native
+  var Limit: js.UndefOr[PositiveInteger] = js.undefined
   
   /**
     * Token that indicates the start of the next sequential page of results. Use the token that is returned with a previous call to this operation. To start at the beginning of the result set, do not specify a value.
     */
-  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.native
+  var NextToken: js.UndefOr[NonZeroAndMaxString] = js.undefined
   
   /**
     * Game session status to filter results on. Possible game session statuses include ACTIVE, TERMINATED, ACTIVATING and TERMINATING (the last two are transitory). 
     */
-  var StatusFilter: js.UndefOr[NonZeroAndMaxString] = js.native
+  var StatusFilter: js.UndefOr[NonZeroAndMaxString] = js.undefined
 }
 object DescribeGameSessionDetailsInput {
   

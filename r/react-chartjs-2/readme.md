@@ -10,15 +10,15 @@ react-chartjs-2
 | ------------------ | :-------------: |
 | Full name          | react-chartjs-2 |
 | Keywords           | chart, chart-js, chart.js, react-chartjs-2, react chart.js |
-| # releases         | 6 |
-| # dependents       | 199 |
-| # downloads        | 11165517 |
+| # releases         | 8 |
+| # dependents       | 229 |
+| # downloads        | 13869927 |
 | # stars            | 8 |
 
 ## Links
-- [Homepage](https://github.com/jerairrest/react-chartjs-2)
-- [Bugs](https://github.com/jerairrest/react-chartjs-2/issues)
-- [Repository](https://github.com/jerairrest/react-chartjs-2)
+- [Homepage](https://github.com/reactchartjs/react-chartjs-2)
+- [Bugs](https://github.com/reactchartjs/react-chartjs-2/issues)
+- [Repository](https://github.com/reactchartjs/react-chartjs-2)
 - [Npm](https://www.npmjs.com/package/react-chartjs-2)
     
 

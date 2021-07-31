@@ -4,7 +4,6 @@ import typings.inquirer.mod.ui.BottomBarOptions
 import typings.through.mod.ThroughStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bottomBarMod {

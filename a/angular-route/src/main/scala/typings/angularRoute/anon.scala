@@ -4,20 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictindex
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
     @JSName("$scope")
-    var $scope: IScope = js.native
+    var $scope: IScope
     
     @JSName("$template")
-    var $template: String = js.native
+    var $template: String
   }
   object Dictindex {
     

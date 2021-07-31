@@ -3,29 +3,27 @@ package typings.lyricist.anon
 import typings.lyricist.mod.ClientTimestamps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apipath extends StObject {
   
-  var api_path: String = js.native
+  var api_path: String
   
-  var client_timestamps: ClientTimestamps = js.native
+  var client_timestamps: ClientTimestamps
   
-  var context: String = js.native
+  var context: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var image_url: String = js.native
+  var image_url: String
   
-  var link_title: String = js.native
+  var link_title: String
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var url: String = js.native
+  var url: String
 }
 object Apipath {
   

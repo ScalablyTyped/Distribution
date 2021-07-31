@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   // user email, must be unique
-  var email: String = js.native
+  var email: String
   
   // List of roles for a given user
-  var roles: js.UndefOr[js.Array[String]] = js.native
+  var roles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CreateUserRequest {
   

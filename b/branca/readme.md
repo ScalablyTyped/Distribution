@@ -11,8 +11,8 @@ Authenticated and encrypted API tokens using modern crypto
 | Full name          | branca |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 6696 |
+| # dependents       | 5 |
+| # downloads        | 9151 |
 | # stars            | 0 |
 
 ## Links

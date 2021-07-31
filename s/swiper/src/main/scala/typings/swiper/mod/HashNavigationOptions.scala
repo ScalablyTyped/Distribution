@@ -2,10 +2,8 @@ package typings.swiper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HashNavigationOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HashNavigationOptions extends StObject {
     *
     * @default     false
     */
-  var replaceState: js.UndefOr[Boolean] = js.native
+  var replaceState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true to enable also navigation through slides (when hashnav
@@ -22,7 +20,7 @@ trait HashNavigationOptions extends StObject {
     *
     * @default false
     */
-  var watchState: js.UndefOr[Boolean] = js.native
+  var watchState: js.UndefOr[Boolean] = js.undefined
 }
 object HashNavigationOptions {
   

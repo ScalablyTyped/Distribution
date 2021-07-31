@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerSideEncryptionConfiguration extends StObject {
   
   /**
     * The identifier of the AWS KMS customer master key (CMK). Amazon Kendra doesn't support asymmetric CMKs.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.kendraMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.kendraMod.KmsKeyId] = js.undefined
 }
 object ServerSideEncryptionConfiguration {
   

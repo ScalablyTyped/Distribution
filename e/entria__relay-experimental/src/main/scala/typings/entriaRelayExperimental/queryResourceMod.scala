@@ -13,18 +13,19 @@ import typings.relayRuntime.relayStoreTypesMod.Snapshot
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryResourceMod {
   
-  @JSImport("@entria/relay-experimental/lib/QueryResource", "createQueryResource")
+  @JSImport("@entria/relay-experimental/lib/QueryResource", JSImport.Namespace)
   @js.native
-  def createQueryResource(environment: Environment): QueryResource = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@entria/relay-experimental/lib/QueryResource", "getQueryResourceForEnvironment")
-  @js.native
-  def getQueryResourceForEnvironment(environment: Environment): QueryResourceImpl = js.native
+  @scala.inline
+  def createQueryResource(environment: Environment): QueryResource = ^.asInstanceOf[js.Dynamic].applyDynamic("createQueryResource")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResource]
+  
+  @scala.inline
+  def getQueryResourceForEnvironment(environment: Environment): QueryResourceImpl = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueryResourceForEnvironment")(environment.asInstanceOf[js.Any]).asInstanceOf[QueryResourceImpl]
   
   /* Rewritten from type alias, can be one of: 
     - typings.entriaRelayExperimental.entriaRelayExperimentalStrings.`store-only`
@@ -87,7 +88,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: Null,
       maybeRenderPolicy: Null,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: String
     ): QueryResult = js.native
     def prepare(
@@ -95,7 +96,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: Null,
       maybeRenderPolicy: Null,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: Double
     ): QueryResult = js.native
     def prepare(
@@ -132,7 +133,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: Null,
       maybeRenderPolicy: RenderPolicy,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: String
     ): QueryResult = js.native
     def prepare(
@@ -140,7 +141,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: Null,
       maybeRenderPolicy: RenderPolicy,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: Double
     ): QueryResult = js.native
     def prepare(
@@ -176,7 +177,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: FetchPolicy,
       maybeRenderPolicy: Null,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: String
     ): QueryResult = js.native
     def prepare(
@@ -184,7 +185,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: FetchPolicy,
       maybeRenderPolicy: Null,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: Double
     ): QueryResult = js.native
     def prepare(
@@ -221,7 +222,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: FetchPolicy,
       maybeRenderPolicy: RenderPolicy,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: String
     ): QueryResult = js.native
     def prepare(
@@ -229,7 +230,7 @@ object queryResourceMod {
       fetchObservable: Observable[GraphQLResponse],
       maybeFetchPolicy: FetchPolicy,
       maybeRenderPolicy: RenderPolicy,
-      observer: js.UndefOr[scala.Nothing],
+      observer: Unit,
       cacheKeyBuster: Double
     ): QueryResult = js.native
     def prepare(
@@ -264,16 +265,15 @@ object queryResourceMod {
     def retain(queryResult: QueryResult): Disposable = js.native
   }
   
-  @js.native
   trait QueryResult extends StObject {
     
-    var cacheKey: String = js.native
+    var cacheKey: String
     
-    var fragmentNode: ReaderFragment = js.native
+    var fragmentNode: ReaderFragment
     
-    var fragmentRef: FragmentPointer = js.native
+    var fragmentRef: FragmentPointer
     
-    var operation: OperationDescriptor = js.native
+    var operation: OperationDescriptor
   }
   object QueryResult {
     

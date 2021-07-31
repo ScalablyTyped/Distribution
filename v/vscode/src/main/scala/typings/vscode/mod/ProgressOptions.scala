@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.anon.ViewId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProgressOptions extends StObject {
   
   /**
@@ -15,18 +13,18 @@ trait ProgressOptions extends StObject {
     * `ProgressLocation.Notification` is supporting to show a cancel
     * button.
     */
-  var cancellable: js.UndefOr[Boolean] = js.native
+  var cancellable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The location at which progress should show.
     */
-  var location: ProgressLocation | ViewId = js.native
+  var location: ProgressLocation | ViewId
   
   /**
     * A human-readable string which will be used to describe the
     * operation.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ProgressOptions {
   

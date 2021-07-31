@@ -2,25 +2,23 @@ package typings.reactWeui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValue extends StObject {
   
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var showValue: Boolean = js.native
+  var showValue: Boolean
   
-  var snapToValue: Boolean = js.native
+  var snapToValue: Boolean
   
-  var step: Double = js.native
+  var step: Double
 }
 object DefaultValue {
   

@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgToolbarMethods extends StObject {
   
   /**
@@ -14,36 +12,36 @@ trait IgToolbarMethods extends StObject {
     * @param index The index of the item.
     * @param activated The activate property value.
     */
-  def activateItem(index: js.Object, activated: js.Object): Unit = js.native
+  def activateItem(index: js.Object, activated: js.Object): Unit
   
   /**
     * Add item to widget item array
     *
     * @param item The item to be added.
     */
-  def addItem(item: js.Object): Unit = js.native
+  def addItem(item: js.Object): Unit
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
   /**
     * Deactivate all buttons.
     */
-  def deactivateAll(): Unit = js.native
+  def deactivateAll(): Unit
   
   /**
     * Destroy the widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Disable item matching provided index.
@@ -51,26 +49,26 @@ trait IgToolbarMethods extends StObject {
     * @param index The index of the item.
     * @param disabled The disabled property value.
     */
-  def disableItem(index: js.Object, disabled: js.Object): Unit = js.native
+  def disableItem(index: js.Object, disabled: js.Object): Unit
   
   /**
     * Gets the item by matching the provided index.
     *
     * @param index The index of the item.
     */
-  def getItem(index: js.Object): js.Object = js.native
+  def getItem(index: js.Object): js.Object
   
   /**
     * Remove the item matching provided index.
     *
     * @param index The index of the item.
     */
-  def removeItem(index: js.Object): js.Object = js.native
+  def removeItem(index: js.Object): js.Object
   
   /**
     * Returns the element on which the widget was instantiated
     */
-  def widget(): Unit = js.native
+  def widget(): Unit
 }
 object IgToolbarMethods {
   

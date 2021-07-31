@@ -1,6 +1,5 @@
 package typings.gatsbyCoreUtils
 
-import typings.configstore.mod.^
 import typings.gatsbyCoreUtils.serviceLockMod.UnlockFn
 import typings.gatsbyCoreUtils.siteMetadataMod.ISiteMetadata
 import typings.node.NodeRequire
@@ -9,94 +8,74 @@ import typings.node.urlMod.URL_
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gatsby-core-utils", "cpuCoreCount")
+  @JSImport("gatsby-core-utils", JSImport.Namespace)
   @js.native
-  def cpuCoreCount(): Double = js.native
-  @JSImport("gatsby-core-utils", "cpuCoreCount")
-  @js.native
-  def cpuCoreCount(ignoreEnvVar: Boolean): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-core-utils", "createContentDigest")
-  @js.native
-  def createContentDigest(input: String): String = js.native
-  @JSImport("gatsby-core-utils", "createContentDigest")
-  @js.native
-  def createContentDigest(input: js.Any): String = js.native
-  @JSImport("gatsby-core-utils", "createContentDigest")
-  @js.native
-  def createContentDigest(input: BinaryLike): String = js.native
+  @scala.inline
+  def cpuCoreCount(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")().asInstanceOf[Double]
+  @scala.inline
+  def cpuCoreCount(ignoreEnvVar: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("cpuCoreCount")(ignoreEnvVar.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("gatsby-core-utils", "createRequireFromPath")
-  @js.native
-  def createRequireFromPath(path: String): NodeRequire = js.native
-  @JSImport("gatsby-core-utils", "createRequireFromPath")
-  @js.native
-  def createRequireFromPath(path: URL_): NodeRequire = js.native
+  @scala.inline
+  def createContentDigest(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createContentDigest(input: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createContentDigest(input: BinaryLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createContentDigest")(input.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("gatsby-core-utils", "createServiceLock")
-  @js.native
-  def createServiceLock(programPath: String, serviceName: String, content: Record[String, _]): js.Promise[UnlockFn | Null] = js.native
+  @scala.inline
+  def createRequireFromPath(path: String): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
+  @scala.inline
+  def createRequireFromPath(path: URL_): NodeRequire = ^.asInstanceOf[js.Dynamic].applyDynamic("createRequireFromPath")(path.asInstanceOf[js.Any]).asInstanceOf[NodeRequire]
   
-  @JSImport("gatsby-core-utils", "getCIName")
-  @js.native
-  def getCIName(): String | Null = js.native
+  @scala.inline
+  def createServiceLock(programPath: String, serviceName: String, content: Record[String, js.Any]): js.Promise[UnlockFn | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createServiceLock")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[js.Promise[UnlockFn | Null]]
   
-  @JSImport("gatsby-core-utils", "getConfigStore")
-  @js.native
-  def getConfigStore(): ^ = js.native
+  @scala.inline
+  def getCIName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCIName")().asInstanceOf[String | Null]
   
-  @JSImport("gatsby-core-utils", "getGatsbyVersion")
-  @js.native
-  def getGatsbyVersion(): String = js.native
+  @scala.inline
+  def getConfigStore(): typings.configstore.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigStore")().asInstanceOf[typings.configstore.mod.^]
   
-  @JSImport("gatsby-core-utils", "getService")
-  @js.native
-  def getService[T](programPath: String, serviceName: String): js.Promise[T | Null] = js.native
-  @JSImport("gatsby-core-utils", "getService")
-  @js.native
-  def getService[T](programPath: String, serviceName: String, ignoreLockfile: Boolean): js.Promise[T | Null] = js.native
+  @scala.inline
+  def getGatsbyVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getGatsbyVersion")().asInstanceOf[String]
   
-  @JSImport("gatsby-core-utils", "getServices")
-  @js.native
-  def getServices(programPath: String): js.Promise[_] = js.native
+  @scala.inline
+  def getService[T](programPath: String, serviceName: String): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
+  @scala.inline
+  def getService[T](programPath: String, serviceName: String, ignoreLockfile: Boolean): js.Promise[T | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(programPath.asInstanceOf[js.Any], serviceName.asInstanceOf[js.Any], ignoreLockfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T | Null]]
   
-  @JSImport("gatsby-core-utils", "getSiteMetadata")
-  @js.native
-  def getSiteMetadata(sitePath: String): js.Promise[ISiteMetadata | Null] = js.native
+  @scala.inline
+  def getServices(programPath: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServices")(programPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("gatsby-core-utils", "getTermProgram")
-  @js.native
-  def getTermProgram(): js.UndefOr[String] = js.native
+  @scala.inline
+  def getSiteMetadata(sitePath: String): js.Promise[ISiteMetadata | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSiteMetadata")(sitePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ISiteMetadata | Null]]
   
-  @JSImport("gatsby-core-utils", "isCI")
-  @js.native
-  def isCI(): Boolean = js.native
+  @scala.inline
+  def getTermProgram(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTermProgram")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("gatsby-core-utils", "isNodeInternalModulePath")
-  @js.native
-  def isNodeInternalModulePath(fileName: String): Boolean = js.native
+  @scala.inline
+  def isCI(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCI")().asInstanceOf[Boolean]
   
-  @JSImport("gatsby-core-utils", "joinPath")
-  @js.native
-  def joinPath(paths: String*): String = js.native
+  @scala.inline
+  def isNodeInternalModulePath(fileName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeInternalModulePath")(fileName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("gatsby-core-utils", "slash")
-  @js.native
-  def slash(path: String): String = js.native
+  @scala.inline
+  def joinPath(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("joinPath")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("gatsby-core-utils", "updateSiteMetadata")
-  @js.native
-  def updateSiteMetadata(metadata: ISiteMetadata): js.Promise[Unit] = js.native
-  @JSImport("gatsby-core-utils", "updateSiteMetadata")
-  @js.native
-  def updateSiteMetadata(metadata: ISiteMetadata, merge: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def slash(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("slash")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("gatsby-core-utils", "urlResolve")
-  @js.native
-  def urlResolve(segments: String*): String = js.native
+  @scala.inline
+  def updateSiteMetadata(metadata: ISiteMetadata): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSiteMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def updateSiteMetadata(metadata: ISiteMetadata, merge: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSiteMetadata")(metadata.asInstanceOf[js.Any], merge.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def urlResolve(segments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlResolve")(segments.asInstanceOf[js.Any]).asInstanceOf[String]
 }

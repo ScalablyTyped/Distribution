@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("siema", JSImport.Default)
   @js.native
-  class default () extends Siema {
+  class default ()
+    extends StObject
+       with Siema {
     def this(options: SiemaOptions) = this()
   }
   
@@ -26,9 +27,9 @@ object mod {
     var currentSlide: Double = js.native
     
     def destroy(): Unit = js.native
-    def destroy(restoreMarkup: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def destroy(restoreMarkup: Boolean): Unit = js.native
     def destroy(restoreMarkup: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def destroy(restoreMarkup: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     def goTo(index: Double): Unit = js.native
     def goTo(index: Double, callback: js.Function0[Unit]): Unit = js.native
@@ -37,9 +38,9 @@ object mod {
     def insert(item: HTMLElement, index: Double, callback: js.Function0[Unit]): Unit = js.native
     
     def next(): Unit = js.native
-    def next(index: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def next(index: Double): Unit = js.native
     def next(index: Double, callback: js.Function0[Unit]): Unit = js.native
+    def next(index: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     var perPage: Double = js.native
     
@@ -47,40 +48,39 @@ object mod {
     def prepend(item: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
     
     def prev(): Unit = js.native
-    def prev(index: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def prev(index: Double): Unit = js.native
     def prev(index: Double, callback: js.Function0[Unit]): Unit = js.native
+    def prev(index: Unit, callback: js.Function0[Unit]): Unit = js.native
     
     def remove(index: Double): Unit = js.native
     def remove(index: Double, callback: js.Function0[Unit]): Unit = js.native
   }
   
-  @js.native
   trait SiemaOptions extends StObject {
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var loop: js.UndefOr[Boolean] = js.native
+    var loop: js.UndefOr[Boolean] = js.undefined
     
-    var multipleDrag: js.UndefOr[Boolean] = js.native
+    var multipleDrag: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var perPage: js.UndefOr[Double | PageInterface] = js.native
+    var perPage: js.UndefOr[Double | PageInterface] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var selector: js.UndefOr[String | HTMLElement] = js.native
+    var selector: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object SiemaOptions {
     

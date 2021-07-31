@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SheetControlsOption extends StObject {
   
   /**
     * Visibility state.
     */
-  var VisibilityState: js.UndefOr[DashboardUIState] = js.native
+  var VisibilityState: js.UndefOr[DashboardUIState] = js.undefined
 }
 object SheetControlsOption {
   

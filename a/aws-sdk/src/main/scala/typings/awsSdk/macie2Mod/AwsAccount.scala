@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsAccount extends StObject {
   
   /**
     * The unique identifier for the AWS account.
     */
-  var accountId: js.UndefOr[string] = js.native
+  var accountId: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the entity that performed the action.
     */
-  var principalId: js.UndefOr[string] = js.native
+  var principalId: js.UndefOr[string] = js.undefined
 }
 object AwsAccount {
   

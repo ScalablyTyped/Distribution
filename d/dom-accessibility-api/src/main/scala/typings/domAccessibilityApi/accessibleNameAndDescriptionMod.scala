@@ -5,32 +5,32 @@ import typings.domAccessibilityApi.domAccessibilityApiStrings.name
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accessibleNameAndDescriptionMod {
   
-  @JSImport("dom-accessibility-api/dist/accessible-name-and-description", "computeTextAlternative")
+  @JSImport("dom-accessibility-api/dist/accessible-name-and-description", JSImport.Namespace)
   @js.native
-  def computeTextAlternative(root: Element): String = js.native
-  @JSImport("dom-accessibility-api/dist/accessible-name-and-description", "computeTextAlternative")
-  @js.native
-  def computeTextAlternative(root: Element, options: ComputeTextAlternativeOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def computeTextAlternative(root: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def computeTextAlternative(root: Element, options: ComputeTextAlternativeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeTextAlternative")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ComputeTextAlternativeOptions extends StObject {
     
-    var compute: js.UndefOr[description | name] = js.native
+    var compute: js.UndefOr[description | name] = js.undefined
     
     /**
       * Set to true if window.computedStyle supports the second argument.
       * This should be false in JSDOM. Otherwise JSDOM will log console errors.
       */
-    var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.native
+    var computedStyleSupportsPseudoElements: js.UndefOr[Boolean] = js.undefined
     
     var getComputedStyle: js.UndefOr[
         /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof window.getComputedStyle */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ComputeTextAlternativeOptions {
     

@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.nearest
 import typings.arcgisJsApi.arcgisJsApiStrings.wcs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WCSLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ImageryTileMixin
      with PortalLayer
      with ScaleRangeLayer {

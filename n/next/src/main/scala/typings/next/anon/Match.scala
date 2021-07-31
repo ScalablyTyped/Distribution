@@ -4,15 +4,13 @@ import typings.next.nextBooleans.`false`
 import typings.next.serverRouterMod.RouteMatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Match extends StObject {
   
-  var `match`: RouteMatch = js.native
+  var `match`: RouteMatch
   
-  var page: String = js.native
+  var page: String
 }
 object Match {
   

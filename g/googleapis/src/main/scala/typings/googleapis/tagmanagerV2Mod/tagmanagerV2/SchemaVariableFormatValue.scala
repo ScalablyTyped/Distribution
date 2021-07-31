@@ -2,37 +2,35 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaVariableFormatValue extends StObject {
   
   /**
     * The option to convert a string-type variable value to either lowercase or
     * uppercase.
     */
-  var caseConversionType: js.UndefOr[String] = js.native
+  var caseConversionType: js.UndefOr[String] = js.undefined
   
   /**
     * The value to convert if a variable value is false.
     */
-  var convertFalseToValue: js.UndefOr[SchemaParameter] = js.native
+  var convertFalseToValue: js.UndefOr[SchemaParameter] = js.undefined
   
   /**
     * The value to convert if a variable value is null.
     */
-  var convertNullToValue: js.UndefOr[SchemaParameter] = js.native
+  var convertNullToValue: js.UndefOr[SchemaParameter] = js.undefined
   
   /**
     * The value to convert if a variable value is true.
     */
-  var convertTrueToValue: js.UndefOr[SchemaParameter] = js.native
+  var convertTrueToValue: js.UndefOr[SchemaParameter] = js.undefined
   
   /**
     * The value to convert if a variable value is undefined.
     */
-  var convertUndefinedToValue: js.UndefOr[SchemaParameter] = js.native
+  var convertUndefinedToValue: js.UndefOr[SchemaParameter] = js.undefined
 }
 object SchemaVariableFormatValue {
   

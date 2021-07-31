@@ -2,24 +2,22 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for listing occurrences for a note.
   */
-@js.native
 trait SchemaListNoteOccurrencesResponse extends StObject {
   
   /**
     * Token to provide to skip to a particular spot in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The occurrences attached to the specified note.
     */
-  var occurrences: js.UndefOr[js.Array[SchemaOccurrence]] = js.native
+  var occurrences: js.UndefOr[js.Array[SchemaOccurrence]] = js.undefined
 }
 object SchemaListNoteOccurrencesResponse {
   

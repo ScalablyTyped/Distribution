@@ -2,25 +2,23 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Commit extends StObject {
   
-  var author: Gravatarid = js.native
+  var author: Gravatarid
   
-  var commit: Tree = js.native
+  var commit: Tree
   
-  var committer: Gravatarid = js.native
+  var committer: Gravatarid
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var parents: js.Array[ShaUrl] = js.native
+  var parents: js.Array[ShaUrl]
   
-  var sha: String = js.native
+  var sha: String
   
-  var url: String = js.native
+  var url: String
 }
 object Commit {
   

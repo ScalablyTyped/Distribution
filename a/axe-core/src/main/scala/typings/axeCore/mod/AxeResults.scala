@@ -2,31 +2,29 @@ package typings.axeCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxeResults extends StObject {
   
-  var inapplicable: js.Array[Result] = js.native
+  var inapplicable: js.Array[Result]
   
-  var incomplete: js.Array[Result] = js.native
+  var incomplete: js.Array[Result]
   
-  var passes: js.Array[Result] = js.native
+  var passes: js.Array[Result]
   
-  var testEngine: TestEngine = js.native
+  var testEngine: TestEngine
   
-  var testEnvironment: TestEnvironment = js.native
+  var testEnvironment: TestEnvironment
   
-  var testRunner: TestRunner = js.native
+  var testRunner: TestRunner
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var toolOptions: RunOptions = js.native
+  var toolOptions: RunOptions
   
-  var url: String = js.native
+  var url: String
   
-  var violations: js.Array[Result] = js.native
+  var violations: js.Array[Result]
 }
 object AxeResults {
   

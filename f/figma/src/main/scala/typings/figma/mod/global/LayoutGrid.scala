@@ -2,14 +2,12 @@ package typings.figma.mod.global
 
 import typings.figma.figmaStrings.CENTER
 import typings.figma.figmaStrings.COLUMNS
-import typings.figma.figmaStrings.GRID
 import typings.figma.figmaStrings.MAX
 import typings.figma.figmaStrings.MIN
 import typings.figma.figmaStrings.ROWS
 import typings.figma.figmaStrings.STRETCH
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -20,8 +18,8 @@ trait LayoutGrid extends StObject
 object LayoutGrid {
   
   @scala.inline
-  def GridLayoutGrid(pattern: GRID, sectionSize: Double): typings.figma.mod.global.GridLayoutGrid = {
-    val __obj = js.Dynamic.literal(pattern = pattern.asInstanceOf[js.Any], sectionSize = sectionSize.asInstanceOf[js.Any])
+  def GridLayoutGrid(sectionSize: Double): typings.figma.mod.global.GridLayoutGrid = {
+    val __obj = js.Dynamic.literal(pattern = "GRID", sectionSize = sectionSize.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.figma.mod.global.GridLayoutGrid]
   }
   

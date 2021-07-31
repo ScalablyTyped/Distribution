@@ -4,7 +4,6 @@ import typings.squareConnect.squareConnectStrings.TAX_SUBTOTAL_PHASE
 import typings.squareConnect.squareConnectStrings.TAX_TOTAL_PHASE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogTax")

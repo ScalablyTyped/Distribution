@@ -2,23 +2,21 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectWrapper extends StObject {
   
-  var control: String = js.native
+  var control: String
   
-  var onError: String = js.native
+  var onError: String
   
-  var other: String = js.native
+  var other: String
   
-  var root: String = js.native
+  var root: String
   
-  var selectWrapper: String = js.native
+  var selectWrapper: String
   
-  var small: String = js.native
+  var small: String
 }
 object SelectWrapper {
   

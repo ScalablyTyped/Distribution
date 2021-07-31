@@ -3,18 +3,16 @@ package typings.algoliasearch.anon
 import typings.algoliaClientAnalytics.mod.GetABTestsResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Promise<@algolia/client-analytics.@algolia/client-analytics.GetABTestsResponse>> */
-@js.native
 trait ReadonlyPromiseGetABTests extends StObject {
   
-  def `catch`[TResult](): js.Promise[GetABTestsResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[GetABTestsResponse | TResult]
   
-  def `finally`(): js.Promise[GetABTestsResponse] = js.native
+  def `finally`(): js.Promise[GetABTestsResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyPromiseGetABTests {
   

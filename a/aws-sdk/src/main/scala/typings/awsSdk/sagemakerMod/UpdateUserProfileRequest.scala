@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserProfileRequest extends StObject {
   
   /**
     * The domain ID.
     */
-  var DomainId: typings.awsSdk.sagemakerMod.DomainId = js.native
+  var DomainId: typings.awsSdk.sagemakerMod.DomainId
   
   /**
     * The user profile name.
     */
-  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName = js.native
+  var UserProfileName: typings.awsSdk.sagemakerMod.UserProfileName
   
   /**
     * A collection of settings.
     */
-  var UserSettings: js.UndefOr[typings.awsSdk.sagemakerMod.UserSettings] = js.native
+  var UserSettings: js.UndefOr[typings.awsSdk.sagemakerMod.UserSettings] = js.undefined
 }
 object UpdateUserProfileRequest {
   

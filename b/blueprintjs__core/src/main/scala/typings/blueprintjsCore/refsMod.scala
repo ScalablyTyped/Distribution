@@ -3,54 +3,49 @@ package typings.blueprintjsCore
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refsMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "getRef")
+  @JSImport("@blueprintjs/core/lib/esm/common/refs", JSImport.Namespace)
   @js.native
-  def getRef[T](): T | Null = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "getRef")
-  @js.native
-  def getRef[T](ref: T): T | Null = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "getRef")
-  @js.native
-  def getRef[T](ref: IRefObject[T]): T | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "isRefCallback")
-  @js.native
-  def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "isRefCallback")
-  @js.native
-  def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = js.native
+  @scala.inline
+  def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
+  @scala.inline
+  def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  @scala.inline
+  def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "isRefObject")
-  @js.native
-  def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/refs", "isRefObject")
-  @js.native
-  def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = js.native
+  @scala.inline
+  def isRefCallback[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
+  @scala.inline
+  def isRefCallback[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefCallback")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefCallback<T> */ Boolean]
+  
+  @scala.inline
+  def isRefObject[T /* <: HTMLElement */](): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")().asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
+  @scala.inline
+  def isRefObject[T /* <: HTMLElement */](value: IRef[T]): /* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @blueprintjs/core.@blueprintjs/core/lib/esm/common/refs.IRefObject<T> */ Boolean]
   
   type IRef[T] = IRefObject[T] | IRefCallback[T]
   
   type IRefCallback[T] = js.Function1[/* ref */ T | Null, js.Any]
   
-  @js.native
   trait IRefObject[T] extends StObject {
     
-    var current: T | Null = js.native
+    var current: T | Null
   }
   object IRefObject {
     
     @scala.inline
     def apply[T](): IRefObject[T] = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[IRefObject[T]]
     }
     
     @scala.inline
-    implicit class IRefObjectMutableBuilder[Self <: IRefObject[_], T] (val x: Self with IRefObject[T]) extends AnyVal {
+    implicit class IRefObjectMutableBuilder[Self <: IRefObject[?], T] (val x: Self & IRefObject[T]) extends AnyVal {
       
       @scala.inline
       def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])

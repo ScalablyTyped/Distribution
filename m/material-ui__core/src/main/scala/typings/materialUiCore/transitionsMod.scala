@@ -1,15 +1,17 @@
 package typings.materialUiCore
 
-import org.scalablytyped.runtime.Shortcut
 import typings.materialUiCore.anon.PartialDuration
 import typings.materialUiCore.anon.PartialEasing
 import typings.materialUiCore.anon.Partialdurationnumberstri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object transitionsMod extends Shortcut {
+object transitionsMod {
+  
+  @JSImport("@material-ui/core/styles/transitions", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // export type TransitionsOptions = DeepPartial<Transitions>;
   @JSImport("@material-ui/core/styles/transitions", JSImport.Default)
@@ -24,26 +26,24 @@ object transitionsMod extends Shortcut {
   @js.native
   val easing: Easing_ = js.native
   
-  @JSImport("@material-ui/core/styles/transitions", "formatMs")
-  @js.native
-  def formatMs(milliseconds: Double): String = js.native
+  @scala.inline
+  def formatMs(milliseconds: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMs")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Duration_ extends StObject {
     
-    var complex: Double = js.native
+    var complex: Double
     
-    var enteringScreen: Double = js.native
+    var enteringScreen: Double
     
-    var leavingScreen: Double = js.native
+    var leavingScreen: Double
     
-    var short: Double = js.native
+    var short: Double
     
-    var shorter: Double = js.native
+    var shorter: Double
     
-    var shortest: Double = js.native
+    var shortest: Double
     
-    var standard: Double = js.native
+    var standard: Double
   }
   object Duration_ {
     
@@ -87,16 +87,15 @@ object transitionsMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Easing_ extends StObject {
     
-    var easeIn: String = js.native
+    var easeIn: String
     
-    var easeInOut: String = js.native
+    var easeInOut: String
     
-    var easeOut: String = js.native
+    var easeOut: String
     
-    var sharp: String = js.native
+    var sharp: String
   }
   object Easing_ {
     
@@ -138,7 +137,6 @@ object transitionsMod extends Shortcut {
     def getAutoHeightDuration(height: Double): Double = js.native
   }
   
-  @js.native
   trait TransitionsOptions extends StObject {
     
     var create: js.UndefOr[
@@ -147,13 +145,13 @@ object transitionsMod extends Shortcut {
           /* options */ js.UndefOr[Partialdurationnumberstri], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var duration: js.UndefOr[PartialDuration] = js.native
+    var duration: js.UndefOr[PartialDuration] = js.undefined
     
-    var easing: js.UndefOr[PartialEasing] = js.native
+    var easing: js.UndefOr[PartialEasing] = js.undefined
     
-    var getAutoHeightDuration: js.UndefOr[js.Function1[/* height */ Double, Double]] = js.native
+    var getAutoHeightDuration: js.UndefOr[js.Function1[/* height */ Double, Double]] = js.undefined
   }
   object TransitionsOptions {
     
@@ -193,9 +191,4 @@ object transitionsMod extends Shortcut {
       def setGetAutoHeightDurationUndefined: Self = StObject.set(x, "getAutoHeightDuration", js.undefined)
     }
   }
-  
-  type _To = Transitions
-  
-  /* This means you don't have to write `default`, but can instead just say `transitionsMod.foo` */
-  override def _to: Transitions = default
 }

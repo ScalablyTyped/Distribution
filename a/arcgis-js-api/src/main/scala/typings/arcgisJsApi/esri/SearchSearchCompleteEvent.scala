@@ -2,21 +2,19 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSearchCompleteEvent extends StObject {
   
-  var activeSourceIndex: Double = js.native
+  var activeSourceIndex: Double
   
-  var errors: js.Array[Error] = js.native
+  var errors: js.Array[Error]
   
-  var numResults: Double = js.native
+  var numResults: Double
   
-  var results: js.Array[SearchSearchCompleteEventResults] = js.native
+  var results: js.Array[SearchSearchCompleteEventResults]
   
-  var searchTerm: String = js.native
+  var searchTerm: String
 }
 object SearchSearchCompleteEvent {
   

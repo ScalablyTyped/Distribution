@@ -2,7 +2,6 @@ package typings.angularCompiler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler", "VariableAst")
@@ -20,7 +19,10 @@ class VariableAst protected ()
 /* static members */
 object VariableAst {
   
-  @JSImport("@angular/compiler", "VariableAst.fromParsedVariable")
+  @JSImport("@angular/compiler", "VariableAst")
   @js.native
-  def fromParsedVariable(v: typings.angularCompiler.astMod.ParsedVariable): typings.angularCompiler.templateAstMod.VariableAst = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromParsedVariable(v: typings.angularCompiler.astMod.ParsedVariable): typings.angularCompiler.templateAstMod.VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[typings.angularCompiler.templateAstMod.VariableAst]
 }

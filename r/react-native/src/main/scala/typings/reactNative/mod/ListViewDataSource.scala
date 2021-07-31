@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ListViewDataSource
-  extends /**
+  extends StObject
+     with /**
   * You can provide custom extraction and `hasChanged` functions for section
   * headers and rows.  If absent, data will be extracted with the
   * `defaultGetRowData` and `defaultGetSectionHeaderData` functions.
@@ -52,8 +52,8 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     * handle merging of old and new data separately and then pass that into
     * this function as the `dataBlob`.
     */
-  def cloneWithRows(dataBlob: js.Array[_]): ListViewDataSource = js.native
-  def cloneWithRows(dataBlob: js.Array[_], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: js.Array[js.Any]): ListViewDataSource = js.native
+  def cloneWithRows(dataBlob: js.Array[js.Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRows(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
   def cloneWithRows(dataBlob: StringDictionary[js.Any], rowIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   
@@ -68,28 +68,28 @@ Instantiable1[/* onAsset */ DataSourceAssetCallback, ListViewDataSource] {
     *
     * Note: this returns a new object!
     */
-  def cloneWithRowsAndSections(dataBlob: js.Array[_]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: js.Array[js.Any]): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: js.Array[js.Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: js.Array[_],
-    sectionIdentities: js.UndefOr[scala.Nothing],
-    rowIdentities: js.Array[js.Array[String | Double]]
-  ): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(dataBlob: js.Array[_], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(
-    dataBlob: js.Array[_],
+    dataBlob: js.Array[js.Any],
     sectionIdentities: js.Array[String | Double],
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
-  def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
-    dataBlob: StringDictionary[js.Any],
-    sectionIdentities: js.UndefOr[scala.Nothing],
+    dataBlob: js.Array[js.Any],
+    sectionIdentities: Unit,
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(dataBlob: StringDictionary[js.Any], sectionIdentities: js.Array[String | Double]): ListViewDataSource = js.native
   def cloneWithRowsAndSections(
     dataBlob: StringDictionary[js.Any],
     sectionIdentities: js.Array[String | Double],
+    rowIdentities: js.Array[js.Array[String | Double]]
+  ): ListViewDataSource = js.native
+  def cloneWithRowsAndSections(
+    dataBlob: StringDictionary[js.Any],
+    sectionIdentities: Unit,
     rowIdentities: js.Array[js.Array[String | Double]]
   ): ListViewDataSource = js.native
   

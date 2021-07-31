@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigqueryreservation.gapi.client.bigqueryre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSlotPoolMetadata extends StObject {
   
   /** Resource name of the slot pool that is being created. E.g., projects/myproject/locations/us-central1/reservations/foo/slotPools/123 */
-  var slotPool: js.UndefOr[String] = js.native
+  var slotPool: js.UndefOr[String] = js.undefined
 }
 object CreateSlotPoolMetadata {
   

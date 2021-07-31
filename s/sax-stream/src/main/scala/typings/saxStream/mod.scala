@@ -3,63 +3,64 @@ package typings.saxStream
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Transform = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("sax-stream", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Transform = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Size of internal transform stream buffer - defaults to 350 objects.
       */
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, then lowercase tag names and attribute names in loose mode, rather than uppercasing them.
       */
-    var lowercase: js.UndefOr[Boolean] = js.native
+    var lowercase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, then turn any whitespace into a single space.
       */
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default to false, if true makes sax parser to accept valid XML only.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, only parse predefined XML entities (&amp;, &apos;, &gt;, &lt;, and &quot;).
       */
-    var strictEntities: js.UndefOr[Boolean] = js.native
+    var strictEntities: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Name of the tag to select objects from XML file, an Array of tag names can be used -
       * when multiple tags are specified stream pushes `{ tag, record }` tuples.
       */
-    var tag: String | js.Array[String] = js.native
+    var tag: String | js.Array[String]
     
     /**
       * If false, then don't track line/col/position.
       */
-    var trackPosition: js.UndefOr[Boolean] = js.native
+    var trackPosition: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not to trim text and comment nodes.
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, then namespaces are supported.
       */
-    var xmlns: js.UndefOr[Boolean] = js.native
+    var xmlns: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHumanLoopRequest extends StObject {
   
   /**
     * The name of the human loop that you want information about.
     */
-  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
+  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName
 }
 object DescribeHumanLoopRequest {
   

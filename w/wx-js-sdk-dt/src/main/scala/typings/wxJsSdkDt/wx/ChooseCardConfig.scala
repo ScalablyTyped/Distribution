@@ -3,52 +3,52 @@ package typings.wxJsSdkDt.wx
 import typings.wxJsSdkDt.anon.CardList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChooseCardConfig extends WxBaseRequestConfig {
+trait ChooseCardConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 卡券Id
     */
-  var cardId: js.UndefOr[String] = js.native
+  var cardId: js.UndefOr[String] = js.undefined
   
   /**
     * 卡券签名
     */
-  var cardSign: String = js.native
+  var cardSign: String
   
   /**
     * 卡券类型
     */
-  var cardType: js.UndefOr[String] = js.native
+  var cardType: js.UndefOr[String] = js.undefined
   
   /**
     * 卡券签名随机串
     */
-  var nonceStr: String = js.native
+  var nonceStr: String
   
   /**
     * 门店Id
     */
-  var shopId: js.UndefOr[String] = js.native
+  var shopId: js.UndefOr[String] = js.undefined
   
   /**
     * 签名方式，默认'SHA1'
     */
-  var signType: String = js.native
+  var signType: String
   
   /**
     * var cardList= res.cardList; 用户选中的卡券列表信息
     */
   @JSName("success")
-  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.native
+  var success_ChooseCardConfig: js.UndefOr[js.Function1[/* res */ CardList, Unit]] = js.undefined
   
   /**
     * 卡券签名时间戳
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object ChooseCardConfig {
   

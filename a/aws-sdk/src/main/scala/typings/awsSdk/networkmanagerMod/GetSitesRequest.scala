@@ -2,31 +2,29 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSitesRequest extends StObject {
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * One or more site IDs. The maximum is 10.
     */
-  var SiteIds: js.UndefOr[StringList] = js.native
+  var SiteIds: js.UndefOr[StringList] = js.undefined
 }
 object GetSitesRequest {
   

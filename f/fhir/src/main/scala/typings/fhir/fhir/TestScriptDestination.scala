@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An abstract server representing a destination or receiver in a message exchange
   */
-@js.native
-trait TestScriptDestination extends BackboneElement {
+trait TestScriptDestination
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'index'.
     */
-  var _index: js.UndefOr[Element] = js.native
+  var _index: js.UndefOr[Element] = js.undefined
   
   /**
     * The index of the abstract destination server starting at 1
     */
-  var index: integer = js.native
+  var index: integer
   
   /**
     * FHIR-Server | FHIR-SDC-FormManager | FHIR-SDC-FormReceiver | FHIR-SDC-FormProcessor
     */
-  var profile: Coding = js.native
+  var profile: Coding
 }
 object TestScriptDestination {
   

@@ -2,13 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidChangeConfigurationRegistrationOptions extends StObject {
   
-  var section: js.UndefOr[String | js.Array[String]] = js.native
+  var section: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object DidChangeConfigurationRegistrationOptions {
   

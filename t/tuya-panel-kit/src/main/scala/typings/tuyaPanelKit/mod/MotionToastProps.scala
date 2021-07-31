@@ -6,30 +6,28 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Delay
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Omit<tuya-panel-kit.tuya-panel-kit.MotionProps, 'onHide'> */
-@js.native
 trait MotionToastProps extends StObject {
   
-  var animationConfig: js.UndefOr[Delay] = js.native
+  var animationConfig: js.UndefOr[Delay] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var hideDuration: js.UndefOr[Double] = js.native
+  var hideDuration: js.UndefOr[Double] = js.undefined
   
-  var initScale: js.UndefOr[Double] = js.native
+  var initScale: js.UndefOr[Double] = js.undefined
   
-  var onFinish: js.UndefOr[js.Function0[Unit]] = js.native
+  var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var showDuration: js.UndefOr[Double] = js.native
+  var showDuration: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object MotionToastProps {
   

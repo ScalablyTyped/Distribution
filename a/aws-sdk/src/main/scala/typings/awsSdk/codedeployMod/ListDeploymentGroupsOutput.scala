@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDeploymentGroupsOutput extends StObject {
   
   /**
     * The application name.
     */
-  var applicationName: js.UndefOr[ApplicationName] = js.native
+  var applicationName: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * A list of deployment group names.
     */
-  var deploymentGroups: js.UndefOr[DeploymentGroupsList] = js.native
+  var deploymentGroups: js.UndefOr[DeploymentGroupsList] = js.undefined
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list deployment groups call to return the next set of deployment groups in the list.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDeploymentGroupsOutput {
   

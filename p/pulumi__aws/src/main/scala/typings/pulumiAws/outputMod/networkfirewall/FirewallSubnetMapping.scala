@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallSubnetMapping extends StObject {
   
   /**
     * The unique identifier for the subnet.
     */
-  var subnetId: String = js.native
+  var subnetId: String
 }
 object FirewallSubnetMapping {
   

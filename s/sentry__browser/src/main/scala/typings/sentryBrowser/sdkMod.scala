@@ -11,17 +11,18 @@ import typings.sentryCore.mod.Integrations.FunctionToString
 import typings.sentryCore.mod.Integrations.InboundFilters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sdkMod {
   
-  @JSImport("@sentry/browser/dist/sdk", "close")
+  @JSImport("@sentry/browser/dist/sdk", JSImport.Namespace)
   @js.native
-  def close(): js.Thenable[Boolean] = js.native
-  @JSImport("@sentry/browser/dist/sdk", "close")
-  @js.native
-  def close(timeout: Double): js.Thenable[Boolean] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def close(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Thenable[Boolean]]
+  @scala.inline
+  def close(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
   @JSImport("@sentry/browser/dist/sdk", "defaultIntegrations")
   @js.native
@@ -29,40 +30,30 @@ object sdkMod {
     FunctionToString | InboundFilters | GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | UserAgent
   ] = js.native
   
-  @JSImport("@sentry/browser/dist/sdk", "flush")
-  @js.native
-  def flush(): js.Thenable[Boolean] = js.native
-  @JSImport("@sentry/browser/dist/sdk", "flush")
-  @js.native
-  def flush(timeout: Double): js.Thenable[Boolean] = js.native
+  @scala.inline
+  def flush(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Thenable[Boolean]]
+  @scala.inline
+  def flush(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
-  @JSImport("@sentry/browser/dist/sdk", "forceLoad")
-  @js.native
-  def forceLoad(): Unit = js.native
+  @scala.inline
+  def forceLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLoad")().asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/sdk", "init")
-  @js.native
-  def init(): Unit = js.native
-  @JSImport("@sentry/browser/dist/sdk", "init")
-  @js.native
-  def init(options: BrowserOptions): Unit = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  @scala.inline
+  def init(options: BrowserOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/sdk", "lastEventId")
-  @js.native
-  def lastEventId(): js.UndefOr[String] = js.native
+  @scala.inline
+  def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@sentry/browser/dist/sdk", "onLoad")
-  @js.native
-  def onLoad(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def onLoad(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/sdk", "showReportDialog")
-  @js.native
-  def showReportDialog(): Unit = js.native
-  @JSImport("@sentry/browser/dist/sdk", "showReportDialog")
-  @js.native
-  def showReportDialog(options: ReportDialogOptions): Unit = js.native
+  @scala.inline
+  def showReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")().asInstanceOf[Unit]
+  @scala.inline
+  def showReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/sdk", "wrap")
-  @js.native
-  def wrap(fn: js.Function1[/* args */ js.Any, _]): js.Any = js.native
+  @scala.inline
+  def wrap(fn: js.Function1[/* args */ js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

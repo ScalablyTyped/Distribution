@@ -2,19 +2,17 @@ package typings.actionsOnGoogle.v1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageOptionItem extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[DialogflowV1MessageImage] = js.native
+  var image: js.UndefOr[DialogflowV1MessageImage] = js.undefined
   
-  var optionInfo: js.UndefOr[DialogflowV1MessageOptionInfo] = js.native
+  var optionInfo: js.UndefOr[DialogflowV1MessageOptionInfo] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageOptionItem {
   

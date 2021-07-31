@@ -2,14 +2,12 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseInvoiceSuccessCallbackResult extends StObject {
   
   /** 用户选中的发票列表 */
-  var invoiceInfo: InvoiceInfo = js.native
+  var invoiceInfo: InvoiceInfo
 }
 object ChooseInvoiceSuccessCallbackResult {
   

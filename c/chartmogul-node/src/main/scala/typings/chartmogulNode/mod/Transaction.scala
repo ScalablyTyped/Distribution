@@ -2,27 +2,28 @@ package typings.chartmogulNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Transaction {
   
-  @JSImport("chartmogul-node", "Transaction.create")
+  @JSImport("chartmogul-node", "Transaction")
   @js.native
-  def create(config: Config, uuid: String, data: typings.chartmogulNode.mod.Transaction.Transaction): js.Promise[typings.chartmogulNode.mod.Transaction.Transaction] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(config: Config, uuid: String, data: typings.chartmogulNode.mod.Transaction.Transaction): js.Promise[typings.chartmogulNode.mod.Transaction.Transaction] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.chartmogulNode.mod.Transaction.Transaction]]
+  
   trait Transaction extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var external_id: js.UndefOr[String] = js.native
+    var external_id: js.UndefOr[String] = js.undefined
     
-    var result: String = js.native
+    var result: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
   }
   object Transaction {
     

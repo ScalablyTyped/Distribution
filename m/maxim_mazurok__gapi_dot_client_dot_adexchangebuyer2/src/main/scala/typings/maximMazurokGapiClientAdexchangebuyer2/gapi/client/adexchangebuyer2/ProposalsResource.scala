@@ -14,7 +14,6 @@ import typings.maximMazurokGapiClientAdexchangebuyer2.anon.ProposalIdQuotaUser
 import typings.maximMazurokGapiClientAdexchangebuyer2.anon.QuotaUserResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

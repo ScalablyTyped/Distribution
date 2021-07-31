@@ -7,26 +7,24 @@ import typings.aframe.mod.Schema_
 import typings.aframe.mod.System
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<aframe.aframe.System<any>> */
-@js.native
 trait PartialSystemany extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var el: js.UndefOr[Entity[ObjectMap[Component[_, System[_]]]]] = js.native
+  var el: js.UndefOr[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]] = js.undefined
   
-  var init: js.UndefOr[js.Function0[Unit]] = js.native
+  var init: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pause: js.UndefOr[js.Function0[Unit]] = js.native
+  var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var play: js.UndefOr[js.Function0[Unit]] = js.native
+  var play: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var schema: js.UndefOr[Schema_[_]] = js.native
+  var schema: js.UndefOr[Schema_[js.Any]] = js.undefined
   
-  var tick: js.UndefOr[js.Function2[/* t */ Double, /* dt */ Double, Unit]] = js.native
+  var tick: js.UndefOr[js.Function2[/* t */ Double, /* dt */ Double, Unit]] = js.undefined
 }
 object PartialSystemany {
   
@@ -46,7 +44,7 @@ object PartialSystemany {
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setElUndefined: Self = StObject.set(x, "el", js.undefined)
@@ -70,7 +68,7 @@ object PartialSystemany {
     def setPlayUndefined: Self = StObject.set(x, "play", js.undefined)
     
     @scala.inline
-    def setSchema(value: Schema_[_]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)

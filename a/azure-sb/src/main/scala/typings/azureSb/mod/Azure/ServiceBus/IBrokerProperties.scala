@@ -2,31 +2,29 @@ package typings.azureSb.mod.Azure.ServiceBus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBrokerProperties extends StObject {
   
-  var CorrelationId: String = js.native
+  var CorrelationId: String
   
-  var Label: String = js.native
+  var Label: String
   
-  var MessageId: String = js.native
+  var MessageId: String
   
-  var PartitionKey: String = js.native
+  var PartitionKey: String
   
-  var ReplyTo: String = js.native
+  var ReplyTo: String
   
-  var ReplyToSessionId: String = js.native
+  var ReplyToSessionId: String
   
-  var ScheduledEnqueueTimeUtc: String = js.native
+  var ScheduledEnqueueTimeUtc: String
   
-  var SessionId: String = js.native
+  var SessionId: String
   
-  var TimeToLive: String = js.native
+  var TimeToLive: String
   
-  var To: String = js.native
+  var To: String
 }
 object IBrokerProperties {
   

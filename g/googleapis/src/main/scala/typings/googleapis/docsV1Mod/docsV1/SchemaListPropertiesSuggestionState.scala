@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * been changed in this suggestion. For any field set to true, there is a new
   * suggested value.
   */
-@js.native
 trait SchemaListPropertiesSuggestionState extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SchemaListPropertiesSuggestionState extends StObject {
     * nesting level suggestion states are returned in ascending order of the
     * nesting level with the least nested returned first.
     */
-  var nestingLevelsSuggestionStates: js.UndefOr[js.Array[SchemaNestingLevelSuggestionState]] = js.native
+  var nestingLevelsSuggestionStates: js.UndefOr[js.Array[SchemaNestingLevelSuggestionState]] = js.undefined
 }
 object SchemaListPropertiesSuggestionState {
   

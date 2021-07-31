@@ -2,38 +2,36 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A contact group.
   */
-@js.native
 trait SchemaContactGroup extends StObject {
   
   /**
     * The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the
     * resource. Used for web cache validation.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only name translated and formatted in the viewer&#39;s account
     * locale or the `Accept-Language` HTTP header locale for system groups
     * names. Group names set by the owner are the same as name.
     */
-  var formattedName: js.UndefOr[String] = js.native
+  var formattedName: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only contact group type.
     */
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of contacts in the group irrespective of max members in
     * specified in the request.
     */
-  var memberCount: js.UndefOr[Double] = js.native
+  var memberCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The list of contact person resource names that are members of the contact
@@ -41,25 +39,25 @@ trait SchemaContactGroup extends StObject {
     * updated through the
     * [ModifyContactGroupMembers](/people/api/rest/v1/contactgroups/members/modify).
     */
-  var memberResourceNames: js.UndefOr[js.Array[String]] = js.native
+  var memberResourceNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Metadata about the contact group.
     */
-  var metadata: js.UndefOr[SchemaContactGroupMetadata] = js.native
+  var metadata: js.UndefOr[SchemaContactGroupMetadata] = js.undefined
   
   /**
     * The contact group name set by the group owner or a system provided name
     * for system groups.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The resource name for the contact group, assigned by the server. An ASCII
     * string, in the form of
     * `contactGroups/`&lt;var&gt;contact_group_id&lt;/var&gt;.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
 }
 object SchemaContactGroup {
   

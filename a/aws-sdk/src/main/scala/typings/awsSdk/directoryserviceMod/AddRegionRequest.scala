@@ -2,23 +2,21 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddRegionRequest extends StObject {
   
   /**
     * The identifier of the directory to which you want to add Region replication.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The name of the Region where you want to add domain controllers for replication. For example, us-east-1.
     */
-  var RegionName: typings.awsSdk.directoryserviceMod.RegionName = js.native
+  var RegionName: typings.awsSdk.directoryserviceMod.RegionName
   
-  var VPCSettings: DirectoryVpcSettings = js.native
+  var VPCSettings: DirectoryVpcSettings
 }
 object AddRegionRequest {
   

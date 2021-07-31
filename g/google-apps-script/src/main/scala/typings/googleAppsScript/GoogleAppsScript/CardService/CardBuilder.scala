@@ -2,24 +2,22 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for Card objects.
   */
-@js.native
 trait CardBuilder extends StObject {
   
-  def addCardAction(cardAction: CardAction): CardBuilder = js.native
+  def addCardAction(cardAction: CardAction): CardBuilder
   
-  def addSection(section: CardSection): CardBuilder = js.native
+  def addSection(section: CardSection): CardBuilder
   
-  def build(): Card = js.native
+  def build(): Card
   
-  def setHeader(cardHeader: CardHeader): CardBuilder = js.native
+  def setHeader(cardHeader: CardHeader): CardBuilder
   
-  def setName(name: String): CardBuilder = js.native
+  def setName(name: String): CardBuilder
 }
 object CardBuilder {
   

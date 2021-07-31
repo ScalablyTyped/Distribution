@@ -6,11 +6,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Hidden
 import typings.officeJsPreview.officeJsPreviewStrings.Tags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ContentControl object, for use in `contentControl.set({ ... })`. */
-@js.native
 trait ContentControlUpdateData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var appearance: js.UndefOr[ContentControlAppearance | BoundingBox | Tags | Hidden] = js.native
+  var appearance: js.UndefOr[ContentControlAppearance | BoundingBox | Tags | Hidden] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var cannotDelete: js.UndefOr[Boolean] = js.native
+  var cannotDelete: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var cannotEdit: js.UndefOr[Boolean] = js.native
+  var cannotEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var font: js.UndefOr[FontUpdateData] = js.native
+  var font: js.UndefOr[FontUpdateData] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var placeholderText: js.UndefOr[String] = js.native
+  var placeholderText: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var removeWhenEdited: js.UndefOr[Boolean] = js.native
+  var removeWhenEdited: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -85,7 +83,7 @@ trait ContentControlUpdateData extends StObject {
     */
   var styleBuiltIn: js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 150 */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -93,7 +91,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var tag: js.UndefOr[String] = js.native
+  var tag: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -101,7 +99,7 @@ trait ContentControlUpdateData extends StObject {
     *
     * [Api set: WordApi 1.1]
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ContentControlUpdateData {
   

@@ -1,29 +1,28 @@
 package typings.iobroker.objectsMod.global.ioBroker
 
-import typings.iobroker.iobrokerStrings.enum
+import typings.iobroker.iobrokerStrings.`enum`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumObject
-  extends BaseObject
+  extends StObject
+     with BaseObject
      with AnyObject {
   
   @JSName("common")
-  var common_EnumObject: EnumCommon = js.native
+  var common_EnumObject: EnumCommon
   
   @JSName("type")
-  var type_EnumObject: enum = js.native
+  var type_EnumObject: `enum`
 }
 object EnumObject {
   
   @scala.inline
-  def apply(_id: String, common: EnumCommon, native: Record[String, _], `type`: enum): EnumObject = {
+  def apply(_id: String, common: EnumCommon, native: Record[String, js.Any]): EnumObject = {
     val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], common = common.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("enum")
     __obj.asInstanceOf[EnumObject]
   }
   
@@ -34,6 +33,6 @@ object EnumObject {
     def setCommon(value: EnumCommon): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setType(value: enum): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(value: `enum`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }
 }

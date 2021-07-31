@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResumeGameServerGroupInput extends StObject {
   
   /**
     * A unique identifier for the game server group. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * The activity to resume for this game server group.
     */
-  var ResumeActions: GameServerGroupActions = js.native
+  var ResumeActions: GameServerGroupActions
 }
 object ResumeGameServerGroupInput {
   

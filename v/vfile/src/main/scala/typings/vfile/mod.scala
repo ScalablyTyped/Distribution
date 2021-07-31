@@ -9,14 +9,13 @@ import typings.unist.mod.Position
 import typings.vfileMessage.mod.VFileMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("vfile", JSImport.Namespace)
   @js.native
-  val ^ : VFile = js.native
+  val ^ : js.Object & VFile = js.native
   
   /**
     * Encodings supported by the buffer class
@@ -75,7 +74,8 @@ object mod extends Shortcut {
   
   @js.native
   trait VFile
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with _VFileCompatible {
     
     /**
@@ -89,8 +89,7 @@ object mod extends Shortcut {
       * @param options If `options` is `string` or `Buffer`, treats it as `{contents: options}`. If `options` is a `VFile`, returns it. All other options are set on the newly created `vfile`.
       */
     def apply[F /* <: VFile */](): F = js.native
-    def apply[F /* <: VFile */](input: F): F = js.native
-    def apply[F /* <: VFile */](input: VFileContents): F = js.native
+    def apply[F /* <: VFile */](input: F | VFileContents): F = js.native
     def apply[F /* <: VFile */](input: VFileOptions): F = js.native
     
     /**
@@ -138,7 +137,7 @@ object mod extends Shortcut {
       * @param ruleId Category of message.
       */
     def fail(reason: String): scala.Nothing = js.native
-    def fail(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): scala.Nothing = js.native
+    def fail(reason: String, position: Unit, ruleId: String): scala.Nothing = js.native
     def fail(reason: String, position: Node): scala.Nothing = js.native
     def fail(reason: String, position: Node, ruleId: String): scala.Nothing = js.native
     def fail(reason: String, position: Point): scala.Nothing = js.native
@@ -159,7 +158,7 @@ object mod extends Shortcut {
       * @param ruleId Category of message.
       */
     def info(reason: String): VFileMessage = js.native
-    def info(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): VFileMessage = js.native
+    def info(reason: String, position: Unit, ruleId: String): VFileMessage = js.native
     def info(reason: String, position: Node): VFileMessage = js.native
     def info(reason: String, position: Node, ruleId: String): VFileMessage = js.native
     def info(reason: String, position: Point): VFileMessage = js.native
@@ -176,7 +175,7 @@ object mod extends Shortcut {
       * @param ruleId Category of message.
       */
     def message(reason: String): VFileMessage = js.native
-    def message(reason: String, position: js.UndefOr[scala.Nothing], ruleId: String): VFileMessage = js.native
+    def message(reason: String, position: Unit, ruleId: String): VFileMessage = js.native
     def message(reason: String, position: Node): VFileMessage = js.native
     def message(reason: String, position: Node, ruleId: String): VFileMessage = js.native
     def message(reason: String, position: Point): VFileMessage = js.native
@@ -219,26 +218,26 @@ object mod extends Shortcut {
     */
   type VFileContents = String | Uint8Array
   
-  @js.native
   trait VFileOptions
-    extends /* key */ StringDictionary[js.Any]
+    extends StObject
+       with /* key */ StringDictionary[js.Any]
        with _VFileCompatible {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
-    var contents: js.UndefOr[VFileContents] = js.native
+    var contents: js.UndefOr[VFileContents] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var dirname: js.UndefOr[String] = js.native
+    var dirname: js.UndefOr[String] = js.undefined
     
-    var extname: js.UndefOr[String] = js.native
+    var extname: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var stem: js.UndefOr[String] = js.native
+    var stem: js.UndefOr[String] = js.undefined
   }
   object VFileOptions {
     
@@ -303,10 +302,10 @@ object mod extends Shortcut {
   
   type VFileReporter[T] = js.Function2[/* files */ js.Array[VFile], /* options */ T, String]
   
-  type _To = VFile
+  type _To = js.Object & VFile
   
   trait _VFileCompatible extends StObject
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: VFile = ^
+  override def _to: js.Object & VFile = ^
 }

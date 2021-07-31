@@ -3,15 +3,13 @@ package typings.reactCalendarTimeline.mod
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interval extends StObject {
   
-  var endTime: Moment = js.native
+  var endTime: Moment
   
-  var startTime: Moment = js.native
+  var startTime: Moment
 }
 object Interval {
   

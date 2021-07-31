@@ -2,31 +2,29 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Address extends StObject {
   
   /**
     * 发送消息的 socket 的地址
     */
-  var address: String = js.native
+  var address: String
   
   /**
     * 使用的协议族，为 IPv4 或者 IPv6
     */
-  var family: String = js.native
+  var family: String
   
   /**
     * 端口号
     */
-  var port: Double = js.native
+  var port: Double
   
   /**
     * message 的大小，单位：字节
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Address {
   

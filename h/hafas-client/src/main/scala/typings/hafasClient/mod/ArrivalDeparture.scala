@@ -2,15 +2,13 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrivalDeparture extends StObject {
   
-  var arrival: js.UndefOr[Double] = js.native
+  var arrival: js.UndefOr[Double] = js.undefined
   
-  var departure: js.UndefOr[Double] = js.native
+  var departure: js.UndefOr[Double] = js.undefined
 }
 object ArrivalDeparture {
   

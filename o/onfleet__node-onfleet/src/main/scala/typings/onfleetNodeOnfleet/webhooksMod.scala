@@ -30,14 +30,25 @@ import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskUpdated
 import typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.WorkerDuty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhooksMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Webhooks", JSImport.Namespace)
   @js.native
-  class ^ () extends Webhook
+  class ^ ()
+    extends StObject
+       with Webhook {
+    
+    /* CompleteClass */
+    override def create(webhook: OnfleetWebhook): js.Promise[WebhookResult] = js.native
+    
+    /* CompleteClass */
+    override def deleteOne(id: String): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def get(): js.Promise[js.Array[GetWebhookResult]] = js.native
+  }
   
   @js.native
   sealed trait WebhookTriggerName extends StObject
@@ -46,69 +57,98 @@ object webhooksMod {
   object WebhookTriggerName extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[WebhookTriggerName with String] = js.native
+    def apply(value: String): js.UndefOr[WebhookTriggerName & String] = js.native
     
     @js.native
-    sealed trait SmsRecipientResponseMissed extends WebhookTriggerName
-    /* "smsRecipientResponseMissed" */ val SmsRecipientResponseMissed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.SmsRecipientResponseMissed with String = js.native
+    sealed trait SmsRecipientResponseMissed
+      extends StObject
+         with WebhookTriggerName
+    /* "smsRecipientResponseMissed" */ val SmsRecipientResponseMissed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.SmsRecipientResponseMissed & String = js.native
     
     @js.native
-    sealed trait TaskArrival extends WebhookTriggerName
-    /* "taskArrival" */ val TaskArrival: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskArrival with String = js.native
+    sealed trait TaskArrival
+      extends StObject
+         with WebhookTriggerName
+    /* "taskArrival" */ val TaskArrival: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskArrival & String = js.native
     
     @js.native
-    sealed trait TaskAssigned extends WebhookTriggerName
-    /* "taskAssigned" */ val TaskAssigned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskAssigned with String = js.native
+    sealed trait TaskAssigned
+      extends StObject
+         with WebhookTriggerName
+    /* "taskAssigned" */ val TaskAssigned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskAssigned & String = js.native
     
     @js.native
-    sealed trait TaskCloned extends WebhookTriggerName
-    /* "taskCloned" */ val TaskCloned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCloned with String = js.native
+    sealed trait TaskCloned
+      extends StObject
+         with WebhookTriggerName
+    /* "taskCloned" */ val TaskCloned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCloned & String = js.native
     
     @js.native
-    sealed trait TaskCompleted extends WebhookTriggerName
-    /* "taskCompleted" */ val TaskCompleted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCompleted with String = js.native
+    sealed trait TaskCompleted
+      extends StObject
+         with WebhookTriggerName
+    /* "taskCompleted" */ val TaskCompleted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCompleted & String = js.native
     
     @js.native
-    sealed trait TaskCreated extends WebhookTriggerName
-    /* "taskCreated" */ val TaskCreated: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCreated with String = js.native
+    sealed trait TaskCreated
+      extends StObject
+         with WebhookTriggerName
+    /* "taskCreated" */ val TaskCreated: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskCreated & String = js.native
     
     @js.native
-    sealed trait TaskDelayed extends WebhookTriggerName
-    /* "taskDelayed" */ val TaskDelayed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDelayed with String = js.native
+    sealed trait TaskDelayed
+      extends StObject
+         with WebhookTriggerName
+    /* "taskDelayed" */ val TaskDelayed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDelayed & String = js.native
     
     @js.native
-    sealed trait TaskDeleted extends WebhookTriggerName
-    /* "taskDeleted" */ val TaskDeleted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDeleted with String = js.native
+    sealed trait TaskDeleted
+      extends StObject
+         with WebhookTriggerName
+    /* "taskDeleted" */ val TaskDeleted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskDeleted & String = js.native
     
     @js.native
-    sealed trait TaskEta extends WebhookTriggerName
-    /* "taskEta" */ val TaskEta: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskEta with String = js.native
+    sealed trait TaskEta
+      extends StObject
+         with WebhookTriggerName
+    /* "taskEta" */ val TaskEta: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskEta & String = js.native
     
     @js.native
-    sealed trait TaskFailed extends WebhookTriggerName
-    /* "taskFailed" */ val TaskFailed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskFailed with String = js.native
+    sealed trait TaskFailed
+      extends StObject
+         with WebhookTriggerName
+    /* "taskFailed" */ val TaskFailed: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskFailed & String = js.native
     
     @js.native
-    sealed trait TaskStarted extends WebhookTriggerName
-    /* "taskStarted" */ val TaskStarted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskStarted with String = js.native
+    sealed trait TaskStarted
+      extends StObject
+         with WebhookTriggerName
+    /* "taskStarted" */ val TaskStarted: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskStarted & String = js.native
     
     @js.native
-    sealed trait TaskUnassigned extends WebhookTriggerName
-    /* "taskUnassigned" */ val TaskUnassigned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskUnassigned with String = js.native
+    sealed trait TaskUnassigned
+      extends StObject
+         with WebhookTriggerName
+    /* "taskUnassigned" */ val TaskUnassigned: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskUnassigned & String = js.native
     
     @js.native
-    sealed trait TaskUpdated extends WebhookTriggerName
-    /* "taskUpdated" */ val TaskUpdated: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskUpdated with String = js.native
+    sealed trait TaskUpdated
+      extends StObject
+         with WebhookTriggerName
+    /* "taskUpdated" */ val TaskUpdated: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.TaskUpdated & String = js.native
     
     @js.native
-    sealed trait WorkerDuty extends WebhookTriggerName
-    /* "workerDuty" */ val WorkerDuty: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.WorkerDuty with String = js.native
+    sealed trait WorkerDuty
+      extends StObject
+         with WebhookTriggerName
+    /* "workerDuty" */ val WorkerDuty: typings.onfleetNodeOnfleet.webhooksMod.WebhookTriggerName.WorkerDuty & String = js.native
   }
   
-  @js.native
-  trait GetWebhookResult extends WebhookResult {
+  trait GetWebhookResult
+    extends StObject
+       with WebhookResult {
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
   }
   object GetWebhookResult {
     
@@ -132,14 +172,13 @@ object webhooksMod {
     }
   }
   
-  @js.native
   trait OnfleetWebhook extends StObject {
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14` = js.native
+    var trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`
     
-    var url: String = js.native
+    var url: String
   }
   object OnfleetWebhook {
     
@@ -169,14 +208,13 @@ object webhooksMod {
     }
   }
   
-  @js.native
   trait Webhook extends StObject {
     
-    def create(webhook: OnfleetWebhook): js.Promise[WebhookResult] = js.native
+    def create(webhook: OnfleetWebhook): js.Promise[WebhookResult]
     
-    def deleteOne(id: String): js.Promise[Unit] = js.native
+    def deleteOne(id: String): js.Promise[Unit]
     
-    def get(): js.Promise[js.Array[GetWebhookResult]] = js.native
+    def get(): js.Promise[js.Array[GetWebhookResult]]
   }
   object Webhook {
     
@@ -204,16 +242,15 @@ object webhooksMod {
     }
   }
   
-  @js.native
   trait WebhookResult extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var id: String = js.native
+    var id: String
     
-    var trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14` = js.native
+    var trigger: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `12` | `13` | `14`
     
-    var url: String = js.native
+    var url: String
   }
   object WebhookResult {
     
@@ -265,86 +302,86 @@ object webhooksMod {
   object WebhookTriggerType {
     
     @scala.inline
-    def TriggerId(triggerId: `0`, triggerName: TaskStarted): typings.onfleetNodeOnfleet.anon.TriggerId = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerId(triggerName: TaskStarted): typings.onfleetNodeOnfleet.anon.TriggerId = {
+      val __obj = js.Dynamic.literal(triggerId = 0, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerId]
     }
     
     @scala.inline
-    def TriggerIdTriggerName(triggerId: `2`, triggerName: TaskArrival): typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerIdTriggerName(triggerName: TaskArrival): typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName = {
+      val __obj = js.Dynamic.literal(triggerId = 2, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerIdTriggerName]
     }
     
     @scala.inline
-    def TriggerName(triggerId: `1`, triggerName: TaskEta): typings.onfleetNodeOnfleet.anon.TriggerName = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerName(triggerName: TaskEta): typings.onfleetNodeOnfleet.anon.TriggerName = {
+      val __obj = js.Dynamic.literal(triggerId = 1, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerName]
     }
     
     @scala.inline
-    def TriggerNameSmsRecipientResponseMissed(triggerId: `14`, triggerName: SmsRecipientResponseMissed): typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameSmsRecipientResponseMissed(triggerName: SmsRecipientResponseMissed): typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed = {
+      val __obj = js.Dynamic.literal(triggerId = 14, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameSmsRecipientResponseMissed]
     }
     
     @scala.inline
-    def TriggerNameTaskAssigned(triggerId: `9`, triggerName: TaskAssigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskAssigned(triggerName: TaskAssigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned = {
+      val __obj = js.Dynamic.literal(triggerId = 9, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskAssigned]
     }
     
     @scala.inline
-    def TriggerNameTaskCloned(triggerId: `13`, triggerName: TaskCloned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskCloned(triggerName: TaskCloned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned = {
+      val __obj = js.Dynamic.literal(triggerId = 13, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCloned]
     }
     
     @scala.inline
-    def TriggerNameTaskCompleted(triggerId: `3`, triggerName: TaskCompleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskCompleted(triggerName: TaskCompleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted = {
+      val __obj = js.Dynamic.literal(triggerId = 3, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCompleted]
     }
     
     @scala.inline
-    def TriggerNameTaskCreated(triggerId: `6`, triggerName: TaskCreated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskCreated(triggerName: TaskCreated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated = {
+      val __obj = js.Dynamic.literal(triggerId = 6, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskCreated]
     }
     
     @scala.inline
-    def TriggerNameTaskDelayed(triggerId: `12`, triggerName: TaskDelayed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskDelayed(triggerName: TaskDelayed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed = {
+      val __obj = js.Dynamic.literal(triggerId = 12, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskDelayed]
     }
     
     @scala.inline
-    def TriggerNameTaskDeleted(triggerId: `8`, triggerName: TaskDeleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskDeleted(triggerName: TaskDeleted): typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted = {
+      val __obj = js.Dynamic.literal(triggerId = 8, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskDeleted]
     }
     
     @scala.inline
-    def TriggerNameTaskFailed(triggerId: `4`, triggerName: TaskFailed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskFailed(triggerName: TaskFailed): typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed = {
+      val __obj = js.Dynamic.literal(triggerId = 4, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskFailed]
     }
     
     @scala.inline
-    def TriggerNameTaskUnassigned(triggerId: `10`, triggerName: TaskUnassigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskUnassigned(triggerName: TaskUnassigned): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned = {
+      val __obj = js.Dynamic.literal(triggerId = 10, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskUnassigned]
     }
     
     @scala.inline
-    def TriggerNameTaskUpdated(triggerId: `7`, triggerName: TaskUpdated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameTaskUpdated(triggerName: TaskUpdated): typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated = {
+      val __obj = js.Dynamic.literal(triggerId = 7, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameTaskUpdated]
     }
     
     @scala.inline
-    def TriggerNameWorkerDuty(triggerId: `5`, triggerName: WorkerDuty): typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty = {
-      val __obj = js.Dynamic.literal(triggerId = triggerId.asInstanceOf[js.Any], triggerName = triggerName.asInstanceOf[js.Any])
+    def TriggerNameWorkerDuty(triggerName: WorkerDuty): typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty = {
+      val __obj = js.Dynamic.literal(triggerId = 5, triggerName = triggerName.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.onfleetNodeOnfleet.anon.TriggerNameWorkerDuty]
     }
   }

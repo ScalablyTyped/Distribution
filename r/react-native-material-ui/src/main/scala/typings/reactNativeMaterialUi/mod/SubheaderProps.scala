@@ -3,19 +3,17 @@ package typings.reactNativeMaterialUi.mod
 import typings.reactNativeMaterialUi.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubheaderProps extends StObject {
   
-  var inset: js.UndefOr[Boolean] = js.native
+  var inset: js.UndefOr[Boolean] = js.undefined
   
-  var lines: js.UndefOr[Double] = js.native
+  var lines: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[Text] = js.native
+  var style: js.UndefOr[Text] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object SubheaderProps {
   

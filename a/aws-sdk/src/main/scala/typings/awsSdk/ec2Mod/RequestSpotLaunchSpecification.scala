@@ -2,91 +2,89 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestSpotLaunchSpecification extends StObject {
   
   /**
     * Deprecated.
     */
-  var AddressingType: js.UndefOr[String] = js.native
+  var AddressingType: js.UndefOr[String] = js.undefined
   
   /**
     * One or more block device mapping entries. You can't specify both a snapshot ID and an encryption value. This is because only blank volumes can be encrypted on creation. If a snapshot is the basis for a volume, it is not blank and its encryption status is used for the volume encryption status.
     */
-  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.native
+  var BlockDeviceMappings: js.UndefOr[BlockDeviceMappingList] = js.undefined
   
   /**
     * Indicates whether the instance is optimized for EBS I/O. This optimization provides dedicated throughput to Amazon EBS and an optimized configuration stack to provide optimal EBS I/O performance. This optimization isn't available with all instance types. Additional usage charges apply when using an EBS Optimized instance. Default: false 
     */
-  var EbsOptimized: js.UndefOr[Boolean] = js.native
+  var EbsOptimized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.native
+  var IamInstanceProfile: js.UndefOr[IamInstanceProfileSpecification] = js.undefined
   
   /**
     * The ID of the AMI.
     */
-  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.ec2Mod.ImageId] = js.undefined
   
   /**
     * The instance type.
     */
-  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.native
+  var InstanceType: js.UndefOr[typings.awsSdk.ec2Mod.InstanceType] = js.undefined
   
   /**
     * The ID of the kernel.
     */
-  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.native
+  var KernelId: js.UndefOr[typings.awsSdk.ec2Mod.KernelId] = js.undefined
   
   /**
     * The name of the key pair.
     */
-  var KeyName: js.UndefOr[KeyPairName] = js.native
+  var KeyName: js.UndefOr[KeyPairName] = js.undefined
   
   /**
     * Indicates whether basic or detailed monitoring is enabled for the instance. Default: Disabled
     */
-  var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.native
+  var Monitoring: js.UndefOr[RunInstancesMonitoringEnabled] = js.undefined
   
   /**
     * One or more network interfaces. If you specify a network interface, you must specify subnet IDs and security group IDs using the network interface.
     */
-  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.native
+  var NetworkInterfaces: js.UndefOr[InstanceNetworkInterfaceSpecificationList] = js.undefined
   
   /**
     * The placement information for the instance.
     */
-  var Placement: js.UndefOr[SpotPlacement] = js.native
+  var Placement: js.UndefOr[SpotPlacement] = js.undefined
   
   /**
     * The ID of the RAM disk.
     */
-  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.native
+  var RamdiskId: js.UndefOr[typings.awsSdk.ec2Mod.RamdiskId] = js.undefined
   
   /**
     * One or more security group IDs.
     */
-  var SecurityGroupIds: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupIdList] = js.native
+  var SecurityGroupIds: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupIdList] = js.undefined
   
   /**
     * One or more security groups. When requesting instances in a VPC, you must specify the IDs of the security groups. When requesting instances in EC2-Classic, you can specify the names or the IDs of the security groups.
     */
-  var SecurityGroups: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupList] = js.native
+  var SecurityGroups: js.UndefOr[RequestSpotLaunchSpecificationSecurityGroupList] = js.undefined
   
   /**
     * The IDs of the subnets in which to launch the instance. To specify multiple subnets, separate them using commas; for example, "subnet-1234abcdeexample1, subnet-0987cdef6example2".
     */
-  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.native
+  var SubnetId: js.UndefOr[typings.awsSdk.ec2Mod.SubnetId] = js.undefined
   
   /**
     * The Base64-encoded user data for the instance. User data is limited to 16 KB.
     */
-  var UserData: js.UndefOr[String] = js.native
+  var UserData: js.UndefOr[String] = js.undefined
 }
 object RequestSpotLaunchSpecification {
   

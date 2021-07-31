@@ -2,20 +2,18 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VPC access connector specification.
   */
-@js.native
 trait SchemaVpcAccessConnector extends StObject {
   
   /**
     * Full Serverless VPC Access Connector name e.g.
     * /projects/my-project/locations/us-central1/connectors/c1.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaVpcAccessConnector {
   

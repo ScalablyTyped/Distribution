@@ -3,12 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends a {@link XSimpleText} by the capability of inserting XTextContents. */
-@js.native
-trait XText extends XSimpleText {
+trait XText
+  extends StObject
+     with XSimpleText {
   
   /**
     * inserts a content, such as a text table, text frame or text field.
@@ -19,13 +19,13 @@ trait XText extends XSimpleText {
     * @param xContent the text content to be inserted.
     * @param bAbsorb specifies whether the text spanned by **xRange** will be replaced. If `TRUE` then the content of **xRange** will be replaced by **xConten
     */
-  def insertTextContent(xRange: XTextRange, xContent: XTextContent, bAbsorb: Boolean): Unit = js.native
+  def insertTextContent(xRange: XTextRange, xContent: XTextContent, bAbsorb: Boolean): Unit
   
   /**
     * removes the specified content from the text object.
     * @param xContent the content that is to be removed.
     */
-  def removeTextContent(xContent: XTextContent): Unit = js.native
+  def removeTextContent(xContent: XTextContent): Unit
 }
 object XText {
   

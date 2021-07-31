@@ -2,19 +2,17 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Depth extends StObject {
   
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
-  var isComponent: js.UndefOr[Boolean] = js.native
+  var isComponent: js.UndefOr[Boolean] = js.undefined
   
-  var isExpandable: js.UndefOr[Boolean] = js.native
+  var isExpandable: js.UndefOr[Boolean] = js.undefined
   
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
 }
 object Depth {
   

@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectMeta extends StObject {
   
   /**
@@ -16,27 +14,27 @@ trait ObjectMeta extends StObject {
   var annotations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported The name of the cluster which the object belongs to. This is used to distinguish resources with
     * same name and namespace in different clusters. This field is not set anywhere right now and apiserver is going to ignore it if set in create or update request.
     */
-  var clusterName: js.UndefOr[String] = js.native
+  var clusterName: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) CreationTimestamp is a timestamp representing the server time when this object was created. It is not guaranteed to be set in happens-before order across separate
     * operations. Clients may not set this value. It is represented in RFC3339 form and is in UTC. Populated by the system. Read-only. Null for lists. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Number of seconds allowed for this object to gracefully terminate before it will be removed from
     * the system. Only set when deletionTimestamp is also set. May only be shortened. Read-only.
     */
-  var deletionGracePeriodSeconds: js.UndefOr[Double] = js.native
+  var deletionGracePeriodSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported DeletionTimestamp is RFC 3339 date and time at which this resource will be deleted. This field is
@@ -48,13 +46,13 @@ trait ObjectMeta extends StObject {
     * still exist after this timestamp, until an administrator or automated process can determine the resource is fully terminated. If not set, graceful deletion of the object has not
     * been requested. Populated by the system when a graceful deletion is requested. Read-only. More info: https://git.k8s.io/community/contributors/devel/api-conventions.md#metadata
     */
-  var deletionTimestamp: js.UndefOr[String] = js.native
+  var deletionTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Must be empty before the object is deleted from the registry. Each entry is an identifier for the
     * responsible component that will remove the entry from the list. If the deletionTimestamp of the object is non-nil, entries in this list can only be removed. +patchStrategy=merge
     */
-  var finalizers: js.UndefOr[js.Array[String]] = js.native
+  var finalizers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported GenerateName is an optional prefix, used by the server, to generate a unique name ONLY IF the Name
@@ -64,10 +62,10 @@ trait ObjectMeta extends StObject {
     * could not be found in the time allotted, and the client should retry (optionally after the time indicated in the Retry-After header). Applied only if Name is not specified. More
     * info: https://git.k8s.io/community/contributors/devel/api-conventions.md#idempotency string generateName = 2;
     */
-  var generateName: js.UndefOr[String] = js.native
+  var generateName: js.UndefOr[String] = js.undefined
   
   /** (Optional) A sequence number representing a specific generation of the desired state. Populated by the system. Read-only. */
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Optional) Map of string keys and values that can be used to organize and categorize (scope and select) objects. May match selectors of replication controllers and routes. More
@@ -76,24 +74,24 @@ trait ObjectMeta extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Name must be unique within a namespace, within a Cloud Run region. Is required when creating resources, although some resources may allow a client to request the generation of an
     * appropriate name automatically. Name is primarily intended for creation idempotence and configuration definition. Cannot be updated. More info:
     * http://kubernetes.io/docs/user-guide/identifiers#names +optional
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Namespace defines the space within each name must be unique, within a Cloud Run region. In Cloud Run the namespace must be equal to either the project ID or project number. */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported List of objects that own this object. If ALL objects in the list have been deleted, this object
     * will be garbage collected.
     */
-  var ownerReferences: js.UndefOr[js.Array[OwnerReference]] = js.native
+  var ownerReferences: js.UndefOr[js.Array[OwnerReference]] = js.undefined
   
   /**
     * (Optional) An opaque value that represents the internal version of this object that can be used by clients to determine when objects have changed. May be used for optimistic
@@ -101,16 +99,16 @@ trait ObjectMeta extends StObject {
     * may only be valid for a particular resource or set of resources. Populated by the system. Read-only. Value must be treated as opaque by clients. More info:
     * https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#concurrency-control-and-consistency
     */
-  var resourceVersion: js.UndefOr[String] = js.native
+  var resourceVersion: js.UndefOr[String] = js.undefined
   
   /** (Optional) SelfLink is a URL representing this object. Populated by the system. Read-only. string selfLink = 4; */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) UID is the unique in time and space value for this object. It is typically generated by the server on successful creation of a resource and is not allowed to change on
     * PUT operations. Populated by the system. Read-only. More info: http://kubernetes.io/docs/user-guide/identifiers#uids
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object ObjectMeta {
   
@@ -127,7 +125,7 @@ object ObjectMeta {
     def setAnnotations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta & TopLevel[js.Any]
     ): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -182,7 +180,7 @@ object ObjectMeta {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRun.maximMazurokGapiClientRunStrings.ObjectMeta & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

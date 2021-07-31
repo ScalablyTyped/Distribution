@@ -2,15 +2,13 @@ package typings.ionicAngular
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaMod {
   
-  @js.native
   trait Schema extends StObject {
     
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
   }
   object Schema {
     

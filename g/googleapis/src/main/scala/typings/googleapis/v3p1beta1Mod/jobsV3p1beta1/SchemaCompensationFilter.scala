@@ -2,36 +2,34 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Filter on job compensation type and amount.
   */
-@js.native
 trait SchemaCompensationFilter extends StObject {
   
   /**
     * Optional.  Whether to include jobs whose compensation range is
     * unspecified.
     */
-  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.native
+  var includeJobsWithUnspecifiedCompensationRange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional.  Compensation range.
     */
-  var range: js.UndefOr[SchemaCompensationRange] = js.native
+  var range: js.UndefOr[SchemaCompensationRange] = js.undefined
   
   /**
     * Required.  Type of filter.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  Specify desired `base compensation entry&#39;s`
     * CompensationInfo.CompensationUnit.
     */
-  var units: js.UndefOr[js.Array[String]] = js.native
+  var units: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaCompensationFilter {
   

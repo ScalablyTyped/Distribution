@@ -2,7 +2,6 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,17 +11,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * http://js.cytoscape.org/#eles.betweennessCentrality
   */
-@js.native
 trait SearchBetweennessOptions extends StObject {
   
   /**
     * A boolean indicating whether the directed indegree and outdegree centrality is calculated (true) or
     * whether the undirected centrality is calculated (false, default).
     */
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
   /**  A function that returns the weight for the edge. */
-  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.native
+  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.undefined
 }
 object SearchBetweennessOptions {
   

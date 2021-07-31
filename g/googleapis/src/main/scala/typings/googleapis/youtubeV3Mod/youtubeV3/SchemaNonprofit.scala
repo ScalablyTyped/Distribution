@@ -2,24 +2,22 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Nonprofit information.
   */
-@js.native
 trait SchemaNonprofit extends StObject {
   
   /**
     * Id of the nonprofit.
     */
-  var nonprofitId: js.UndefOr[SchemaNonprofitId] = js.native
+  var nonprofitId: js.UndefOr[SchemaNonprofitId] = js.undefined
   
   /**
     * Legal name of the nonprofit.
     */
-  var nonprofitLegalName: js.UndefOr[String] = js.native
+  var nonprofitLegalName: js.UndefOr[String] = js.undefined
 }
 object SchemaNonprofit {
   

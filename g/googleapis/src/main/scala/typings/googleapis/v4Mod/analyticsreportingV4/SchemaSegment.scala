@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * subset of the Analytics data. For example, of the entire set of users, one
   * Segment might be users from a particular country or city.
   */
-@js.native
 trait SchemaSegment extends StObject {
   
   /**
     * A dynamic segment definition in the request.
     */
-  var dynamicSegment: js.UndefOr[SchemaDynamicSegment] = js.native
+  var dynamicSegment: js.UndefOr[SchemaDynamicSegment] = js.undefined
   
   /**
     * The segment ID of a built-in or custom segment, for example `gaid::-3`.
     */
-  var segmentId: js.UndefOr[String] = js.native
+  var segmentId: js.UndefOr[String] = js.undefined
 }
 object SchemaSegment {
   

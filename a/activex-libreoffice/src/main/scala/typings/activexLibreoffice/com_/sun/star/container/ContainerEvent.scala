@@ -4,28 +4,28 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is fired when an element is inserted in a container.
   * @see XContainerListener
   */
-@js.native
-trait ContainerEvent extends EventObject {
+trait ContainerEvent
+  extends StObject
+     with EventObject {
   
   /**
     * It contains the accessor to the element which is inserted or removed.
     *
     * The type and the value of the accessor depends on the service.
     */
-  var Accessor: js.Any = js.native
+  var Accessor: js.Any
   
   /** This contains the element that was inserted or removed. */
-  var Element: js.Any = js.native
+  var Element: js.Any
   
   /** This contains the replaced element. */
-  var ReplacedElement: js.Any = js.native
+  var ReplacedElement: js.Any
 }
 object ContainerEvent {
   

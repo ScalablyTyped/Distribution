@@ -3,7 +3,6 @@ package typings.guacamoleClient.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "StaticHTTPTunnel")
@@ -19,6 +18,6 @@ class StaticHTTPTunnel protected ()
     */
   def this(url: String) = this()
   def this(url: String, crossDomain: Boolean) = this()
-  def this(url: String, crossDomain: js.UndefOr[scala.Nothing], extraTunnelHeaders: Record[String, String]) = this()
   def this(url: String, crossDomain: Boolean, extraTunnelHeaders: Record[String, String]) = this()
+  def this(url: String, crossDomain: Unit, extraTunnelHeaders: Record[String, String]) = this()
 }

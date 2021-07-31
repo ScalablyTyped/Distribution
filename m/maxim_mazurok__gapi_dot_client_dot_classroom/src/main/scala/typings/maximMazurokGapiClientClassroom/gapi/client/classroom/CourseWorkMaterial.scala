@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CourseWorkMaterial extends StObject {
   
   /** Absolute link to this course work material in the Classroom web UI. This is only populated if `state` is `PUBLISHED`. Read-only. */
-  var alternateLink: js.UndefOr[String] = js.native
+  var alternateLink: js.UndefOr[String] = js.undefined
   
   /** Assignee mode of the course work material. If unspecified, the default value is `ALL_STUDENTS`. */
-  var assigneeMode: js.UndefOr[String] = js.native
+  var assigneeMode: js.UndefOr[String] = js.undefined
   
   /** Identifier of the course. Read-only. */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /** Timestamp when this course work material was created. Read-only. */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /** Identifier for the user that created the course work material. Read-only. */
-  var creatorUserId: js.UndefOr[String] = js.native
+  var creatorUserId: js.UndefOr[String] = js.undefined
   
   /** Optional description of this course work material. The text must be a valid UTF-8 string containing no more than 30,000 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Classroom-assigned identifier of this course work material, unique per course. Read-only. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifiers of students with access to the course work material. This field is set only if `assigneeMode` is `INDIVIDUAL_STUDENTS`. If the `assigneeMode` is `INDIVIDUAL_STUDENTS`,
     * then only students specified in this field can see the course work material.
     */
-  var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.native
+  var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
   
   /** Additional materials. A course work material must have no more than 20 material items. */
-  var materials: js.UndefOr[js.Array[Material]] = js.native
+  var materials: js.UndefOr[js.Array[Material]] = js.undefined
   
   /** Optional timestamp when this course work material is scheduled to be published. */
-  var scheduledTime: js.UndefOr[String] = js.native
+  var scheduledTime: js.UndefOr[String] = js.undefined
   
   /** Status of this course work material. If unspecified, the default state is `DRAFT`. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Title of this course work material. The title must be a valid UTF-8 string containing between 1 and 3000 characters. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Identifier for the topic that this course work material is associated with. Must match an existing topic in the course. */
-  var topicId: js.UndefOr[String] = js.native
+  var topicId: js.UndefOr[String] = js.undefined
   
   /** Timestamp of the most recent change to this course work material. Read-only. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object CourseWorkMaterial {
   

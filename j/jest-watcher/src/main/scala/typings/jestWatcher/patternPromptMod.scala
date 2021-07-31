@@ -5,14 +5,15 @@ import typings.jestWatcher.typesMod.ScrollOptions
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patternPromptMod {
   
   @JSImport("jest-watcher/build/PatternPrompt", JSImport.Default)
   @js.native
-  class default protected () extends PatternPrompt {
+  class default protected ()
+    extends StObject
+       with PatternPrompt {
     def this(pipe: WritableStream, prompt: typings.jestWatcher.promptMod.default) = this()
   }
   

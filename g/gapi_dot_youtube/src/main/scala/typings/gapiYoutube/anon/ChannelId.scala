@@ -3,51 +3,49 @@ package typings.gapiYoutube.anon
 import typings.gapiYoutube.GoogleApiYouTubeThumbnailResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelId extends StObject {
   
   /**
     * The ID that YouTube uses to uniquely identify the channel associated with the activity.
     */
-  var channelId: String = js.native
+  var channelId: String
   
   /**
     * Channel title for the channel responsible for this activity
     */
-  var channelTitle: String = js.native
+  var channelTitle: String
   
   /**
     * The description of the resource primarily associated with the activity.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The group ID associated with the activity.
     */
-  var groupId: String = js.native
+  var groupId: String
   
   /**
     * The date and time that the activity occurred. The value is specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var publishedAt: String = js.native
+  var publishedAt: String
   
   /**
     * A map of thumbnail images associated with the resource that is primarily associated with the activity.
     */
-  var thumbnails: GoogleApiYouTubeThumbnailResource = js.native
+  var thumbnails: GoogleApiYouTubeThumbnailResource
   
   /**
     * The title of the resource primarily associated with the activity.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * The type of activity that the resource describes.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ChannelId {
   

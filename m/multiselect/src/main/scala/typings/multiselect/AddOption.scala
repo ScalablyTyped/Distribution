@@ -2,19 +2,17 @@ package typings.multiselect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddOption extends StObject {
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var nested: js.UndefOr[String] = js.native
+  var nested: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var value: String = js.native
+  var value: String
 }
 object AddOption {
   

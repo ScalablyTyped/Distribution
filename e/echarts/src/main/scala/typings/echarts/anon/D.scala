@@ -1,11 +1,10 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait D extends js.Object {
+trait D extends StObject {
   
   /**
     * Alias of
@@ -15,7 +14,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.d
     */
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the shape of the element.
@@ -23,7 +22,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.height
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * If
@@ -53,7 +52,7 @@ trait D extends js.Object {
     * "center"
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.layout
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * [SVG PathData](http://www.w3.org/TR/SVG/paths.html#PathData)
@@ -80,7 +79,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.pathData
     */
-  var pathData: js.UndefOr[String] = js.native
+  var pathData: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the shape of the element.
@@ -88,7 +87,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.width
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
   /**
     * The x value of the left-top corner of the element
@@ -97,7 +96,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.x
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * The y value of the left-top corner of the element
@@ -106,7 +105,7 @@ trait D extends js.Object {
     *
     * @see https://echarts.apache.org/en/option.html#series-custom.renderItem.return_path.shape.y
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object D {
   
@@ -117,60 +116,48 @@ object D {
   }
   
   @scala.inline
-  implicit class DOps[Self <: D] (val x: Self) extends AnyVal {
+  implicit class DMutableBuilder[Self <: D] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setDUndefined: Self = StObject.set(x, "d", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = this.set("d", value.asInstanceOf[js.Any])
+    def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def deleteD: Self = this.set("d", js.undefined)
+    def setLayout(value: String): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHeight(value: Double): Self = this.set("height", value.asInstanceOf[js.Any])
+    def setLayoutUndefined: Self = StObject.set(x, "layout", js.undefined)
     
     @scala.inline
-    def deleteHeight: Self = this.set("height", js.undefined)
+    def setPathData(value: String): Self = StObject.set(x, "pathData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLayout(value: String): Self = this.set("layout", value.asInstanceOf[js.Any])
+    def setPathDataUndefined: Self = StObject.set(x, "pathData", js.undefined)
     
     @scala.inline
-    def deleteLayout: Self = this.set("layout", js.undefined)
+    def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPathData(value: String): Self = this.set("pathData", value.asInstanceOf[js.Any])
+    def setWidthUndefined: Self = StObject.set(x, "width", js.undefined)
     
     @scala.inline
-    def deletePathData: Self = this.set("pathData", js.undefined)
+    def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWidth(value: Double): Self = this.set("width", value.asInstanceOf[js.Any])
+    def setXUndefined: Self = StObject.set(x, "x", js.undefined)
     
     @scala.inline
-    def deleteWidth: Self = this.set("width", js.undefined)
+    def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setX(value: Double): Self = this.set("x", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteX: Self = this.set("x", js.undefined)
-    
-    @scala.inline
-    def setY(value: Double): Self = this.set("y", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteY: Self = this.set("y", js.undefined)
+    def setYUndefined: Self = StObject.set(x, "y", js.undefined)
   }
 }

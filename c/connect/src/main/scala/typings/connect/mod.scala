@@ -5,7 +5,6 @@ import typings.node.httpMod.ServerResponse
 import typings.node.netMod.Socket
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,9 +13,12 @@ object mod {
     * Create a new connect server.
     * @public
     */
+  @scala.inline
+  def apply(): Server = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Server]
+  
   @JSImport("connect", JSImport.Namespace)
   @js.native
-  def apply(): Server = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("connect", "IncomingMessage")
   @js.native
@@ -42,7 +44,9 @@ object mod {
   type NextHandleFunction = js.Function3[/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ NextFunction, Unit]
   
   @js.native
-  trait Server extends EventEmitter {
+  trait Server
+    extends StObject
+       with EventEmitter {
     
     def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse): Unit = js.native
     def apply(req: typings.node.httpMod.IncomingMessage, res: ServerResponse, next: js.Function): Unit = js.native
@@ -84,20 +88,15 @@ object mod {
       * @api public
       */
     def listen(port: Double): typings.node.httpMod.Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): typings.node.httpMod.Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): typings.node.httpMod.Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function): typings.node.httpMod.Server = js.native
     def listen(port: Double, hostname: String): typings.node.httpMod.Server = js.native
-    def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function): typings.node.httpMod.Server = js.native
     def listen(port: Double, hostname: String, backlog: Double): typings.node.httpMod.Server = js.native
     def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, callback: js.Function): typings.node.httpMod.Server = js.native
     def listen(port: Double, hostname: String, callback: js.Function): typings.node.httpMod.Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): typings.node.httpMod.Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, callback: js.Function): typings.node.httpMod.Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, callback: js.Function): typings.node.httpMod.Server = js.native
+    def listen(port: Double, hostname: Unit, callback: js.Function): typings.node.httpMod.Server = js.native
     
     var route: String = js.native
     
@@ -122,12 +121,11 @@ object mod {
   
   type ServerHandle = HandleFunction | typings.node.httpMod.Server
   
-  @js.native
   trait ServerStackItem extends StObject {
     
-    var handle: ServerHandle = js.native
+    var handle: ServerHandle
     
-    var route: String = js.native
+    var route: String
   }
   object ServerStackItem {
     

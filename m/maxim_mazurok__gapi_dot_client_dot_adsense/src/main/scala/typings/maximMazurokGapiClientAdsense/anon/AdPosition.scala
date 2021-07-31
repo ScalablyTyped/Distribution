@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAdsense.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdPosition extends StObject {
   
   /** The position of the ads relative to the feed entries. */
-  var adPosition: js.UndefOr[String] = js.native
+  var adPosition: js.UndefOr[String] = js.undefined
   
   /** The frequency at which ads should appear in the feed (i.e. every N entries). */
-  var frequency: js.UndefOr[Double] = js.native
+  var frequency: js.UndefOr[Double] = js.undefined
   
   /** The minimum length an entry should be in order to have attached ads. */
-  var minimumWordCount: js.UndefOr[Double] = js.native
+  var minimumWordCount: js.UndefOr[Double] = js.undefined
   
   /** The type of ads which should appear. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AdPosition {
   

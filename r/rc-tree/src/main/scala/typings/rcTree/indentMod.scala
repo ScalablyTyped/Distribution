@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object indentMod extends Shortcut {
@@ -13,16 +12,15 @@ object indentMod extends Shortcut {
   @js.native
   val default: FC[IndentProps] = js.native
   
-  @js.native
   trait IndentProps extends StObject {
     
-    var isEnd: js.Array[Boolean] = js.native
+    var isEnd: js.Array[Boolean]
     
-    var isStart: js.Array[Boolean] = js.native
+    var isStart: js.Array[Boolean]
     
-    var level: Double = js.native
+    var level: Double
     
-    var prefixCls: String = js.native
+    var prefixCls: String
   }
   object IndentProps {
     

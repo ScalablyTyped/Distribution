@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedScalingPolicy extends StObject {
   
   /**
     * The EC2 unit limits for a managed scaling policy. The managed scaling activity of a cluster is not allowed to go above or below these limits. The limit only applies to the core and task nodes. The master node cannot be scaled after initial configuration.
     */
-  var ComputeLimits: js.UndefOr[typings.awsSdk.emrMod.ComputeLimits] = js.native
+  var ComputeLimits: js.UndefOr[typings.awsSdk.emrMod.ComputeLimits] = js.undefined
 }
 object ManagedScalingPolicy {
   

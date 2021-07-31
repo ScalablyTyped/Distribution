@@ -2,76 +2,74 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProfileRequest extends StObject {
   
   /**
     * The valid address for the room.
     */
-  var Address: typings.awsSdk.alexaforbusinessMod.Address = js.native
+  var Address: typings.awsSdk.alexaforbusinessMod.Address
   
   /**
     * The user-specified token that is used during the creation of a profile.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The distance unit to be used by devices in the profile.
     */
-  var DistanceUnit: typings.awsSdk.alexaforbusinessMod.DistanceUnit = js.native
+  var DistanceUnit: typings.awsSdk.alexaforbusinessMod.DistanceUnit
   
   /**
     * The locale of the room profile. (This is currently only available to a limited preview audience.)
     */
-  var Locale: js.UndefOr[DeviceLocale] = js.native
+  var Locale: js.UndefOr[DeviceLocale] = js.undefined
   
   /**
     * The maximum volume limit for a room profile.
     */
-  var MaxVolumeLimit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxVolumeLimit] = js.native
+  var MaxVolumeLimit: js.UndefOr[typings.awsSdk.alexaforbusinessMod.MaxVolumeLimit] = js.undefined
   
   /**
     * The meeting room settings of a room profile.
     */
-  var MeetingRoomConfiguration: js.UndefOr[CreateMeetingRoomConfiguration] = js.native
+  var MeetingRoomConfiguration: js.UndefOr[CreateMeetingRoomConfiguration] = js.undefined
   
   /**
     * Whether PSTN calling is enabled.
     */
-  var PSTNEnabled: js.UndefOr[Boolean] = js.native
+  var PSTNEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of a room profile.
     */
-  var ProfileName: typings.awsSdk.alexaforbusinessMod.ProfileName = js.native
+  var ProfileName: typings.awsSdk.alexaforbusinessMod.ProfileName
   
   /**
     * Whether room profile setup is enabled.
     */
-  var SetupModeDisabled: js.UndefOr[Boolean] = js.native
+  var SetupModeDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tags for the profile.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The temperature unit to be used by devices in the profile.
     */
-  var TemperatureUnit: typings.awsSdk.alexaforbusinessMod.TemperatureUnit = js.native
+  var TemperatureUnit: typings.awsSdk.alexaforbusinessMod.TemperatureUnit
   
   /**
     * The time zone used by a room profile.
     */
-  var Timezone: typings.awsSdk.alexaforbusinessMod.Timezone = js.native
+  var Timezone: typings.awsSdk.alexaforbusinessMod.Timezone
   
   /**
     * A wake word for Alexa, Echo, Amazon, or a computer.
     */
-  var WakeWord: typings.awsSdk.alexaforbusinessMod.WakeWord = js.native
+  var WakeWord: typings.awsSdk.alexaforbusinessMod.WakeWord
 }
 object CreateProfileRequest {
   

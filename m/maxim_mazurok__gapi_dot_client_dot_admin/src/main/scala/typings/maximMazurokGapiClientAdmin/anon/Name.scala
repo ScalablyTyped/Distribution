@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdmin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait Name extends StObject {
     * eventName, the API's response returns all activities which contain that eventName. It is possible that the returned activities will have other eventName properties in addition
     * to the one requested. For more information about eventName properties, see the list of event names for various applications above in applicationName.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Parameter value pairs for various applications. For more information about eventName parameters, see the list of event names for various applications above in applicationName. */
-  var parameters: js.UndefOr[js.Array[BoolValue]] = js.native
+  var parameters: js.UndefOr[js.Array[BoolValue]] = js.undefined
   
   /**
     * Type of event. The G Suite service or feature that an administrator changes is identified in the type property which identifies an event using the eventName property. For a full
     * list of the API's type categories, see the list of event names for various applications above in applicationName.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Name {
   

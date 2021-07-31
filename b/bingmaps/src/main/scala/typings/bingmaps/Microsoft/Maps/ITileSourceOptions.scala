@@ -2,23 +2,21 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITileSourceOptions extends StObject {
   
   /**
     * A bounding box that specifies where tiles are available.
     * Note: This will not crop tiles to the specific bounding box, it limits the tiles it loads to those that intersect this bounding box.
     */
-  var bounds: js.UndefOr[LocationRect] = js.native
+  var bounds: js.UndefOr[LocationRect] = js.undefined
   
   /** The maximum zoom level tiles that tiles should be rendered at. */
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
   /** The minimum zoom level tiles that tiles should be rendered at. */
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. This can be a string or a callback function that constructs the URLs used to retrieve tiles from the tile source.
@@ -27,7 +25,7 @@ trait ITileSourceOptions extends StObject {
     * Besides using formatted tile URLs, you can also specify a callback function as the uriConstructor. This is useful if you need to be able to
     * build custom tile URL’s that may require some additional calculations for a tile.
     */
-  var uriConstructor: String | (js.Function1[/* tile */ PyramidTileId, String]) = js.native
+  var uriConstructor: String | (js.Function1[/* tile */ PyramidTileId, String])
 }
 object ITileSourceOptions {
   

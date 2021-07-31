@@ -2,26 +2,24 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUnicodeHandling extends StObject {
   
   /**
     * Getter/setter for active Unicode version.
     */
-  var activeVersion: String = js.native
+  var activeVersion: String
   
   /**
     * Register a custom Unicode version provider.
     */
-  def register(provider: IUnicodeVersionProvider): Unit = js.native
+  def register(provider: IUnicodeVersionProvider): Unit
   
   /**
     * Registered Unicode versions.
     */
-  val versions: js.Array[String] = js.native
+  val versions: js.Array[String]
 }
 object IUnicodeHandling {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getGroupMod {
   
-  @JSImport("@pulumi/aws/autoscaling/getGroup", "getGroup")
+  @JSImport("@pulumi/aws/autoscaling/getGroup", JSImport.Namespace)
   @js.native
-  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = js.native
-  @JSImport("@pulumi/aws/autoscaling/getGroup", "getGroup")
-  @js.native
-  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getGroup(args: GetGroupArgs): js.Promise[GetGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGroupResult]]
+  @scala.inline
+  def getGroup(args: GetGroupArgs, opts: InvokeOptions): js.Promise[GetGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGroupResult]]
+  
   trait GetGroupArgs extends StObject {
     
     /**
       * Specify the exact name of the desired autoscaling group.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetGroupArgs {
     
@@ -39,97 +39,96 @@ object getGroupMod {
     }
   }
   
-  @js.native
   trait GetGroupResult extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the Auto Scaling group.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * One or more Availability Zones for the group.
       */
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
-    val defaultCooldown: Double = js.native
+    val defaultCooldown: Double
     
     /**
       * The desired size of the group.
       */
-    val desiredCapacity: Double = js.native
+    val desiredCapacity: Double
     
     /**
       * The amount of time, in seconds, that Amazon EC2 Auto Scaling waits before checking the health status of an EC2 instance that has come into service.
       */
-    val healthCheckGracePeriod: Double = js.native
+    val healthCheckGracePeriod: Double
     
     /**
       * The service to use for the health checks. The valid values are EC2 and ELB.
       */
-    val healthCheckType: String = js.native
+    val healthCheckType: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the associated launch configuration.
       */
-    val launchConfiguration: String = js.native
+    val launchConfiguration: String
     
     /**
       * One or more load balancers associated with the group.
       */
-    val loadBalancers: js.Array[String] = js.native
+    val loadBalancers: js.Array[String]
     
     /**
       * The maximum size of the group.
       */
-    val maxSize: Double = js.native
+    val maxSize: Double
     
     /**
       * The minimum size of the group.
       */
-    val minSize: Double = js.native
+    val minSize: Double
     
     /**
       * Name of the Auto Scaling Group.
       */
-    val name: String = js.native
+    val name: String
     
-    val newInstancesProtectedFromScaleIn: Boolean = js.native
+    val newInstancesProtectedFromScaleIn: Boolean
     
     /**
       * The name of the placement group into which to launch your instances, if any. For more information, see Placement Groups (http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/placement-groups.html) in the Amazon Elastic Compute Cloud User Guide.
       */
-    val placementGroup: String = js.native
+    val placementGroup: String
     
     /**
       * The Amazon Resource Name (ARN) of the service-linked role that the Auto Scaling group uses to call other AWS services on your behalf.
       */
-    val serviceLinkedRoleArn: String = js.native
+    val serviceLinkedRoleArn: String
     
     /**
       * The current state of the group when DeleteAutoScalingGroup is in progress.
       */
-    val status: String = js.native
+    val status: String
     
     /**
       * The Amazon Resource Names (ARN) of the target groups for your load balancer.
       */
-    val targetGroupArns: js.Array[String] = js.native
+    val targetGroupArns: js.Array[String]
     
     /**
       * The termination policies for the group.
       */
-    val terminationPolicies: js.Array[String] = js.native
+    val terminationPolicies: js.Array[String]
     
     /**
       * VPC ID for the group.
       */
-    val vpcZoneIdentifier: String = js.native
+    val vpcZoneIdentifier: String
   }
   object GetGroupResult {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * Maximum number of tags to return.
     */
-  var maxResults: js.UndefOr[MaxTagResults] = js.native
+  var maxResults: js.UndefOr[MaxTagResults] = js.undefined
   
   /**
     * The first tag to retrieve. This is used for pagination; see the nextToken response field.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the resource to be retrieved.
     */
-  var resourceArn: ResourceArn = js.native
+  var resourceArn: ResourceArn
 }
 object ListTagsForResourceRequest {
   

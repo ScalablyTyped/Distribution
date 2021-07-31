@@ -3,61 +3,59 @@ package typings.flexmonster.mod
 import typings.flexmonster.anon.Charts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Toolbar extends StObject {
   
   // Charts tab
-  def chartsHandler(`type`: String): Unit = js.native
+  def chartsHandler(`type`: String): Unit
   
-  def chartsMultipleHandler(): Unit = js.native
+  def chartsMultipleHandler(): Unit
   
-  def conditionalFormattingHandler(): Unit = js.native
+  def conditionalFormattingHandler(): Unit
   
   // Connect tab
-  def connectLocalCSVHandler(): Unit = js.native
+  def connectLocalCSVHandler(): Unit
   
-  def connectLocalJSONHandler(): Unit = js.native
+  def connectLocalJSONHandler(): Unit
   
-  def connectOLAP(): Unit = js.native
+  def connectOLAP(): Unit
   
-  def connectRemoteCSV(): Unit = js.native
+  def connectRemoteCSV(): Unit
   
-  def connectRemoteJSON(): Unit = js.native
+  def connectRemoteJSON(): Unit
   
-  def exportHandler(`type`: String): Unit = js.native
+  def exportHandler(`type`: String): Unit
   
   // Fields tab
-  def fieldsHandler(): Unit = js.native
+  def fieldsHandler(): Unit
   
   // Format tab
-  def formatCellsHandler(): Unit = js.native
+  def formatCellsHandler(): Unit
   
   // Fullscreen tab
-  def fullscreenHandler(): Unit = js.native
+  def fullscreenHandler(): Unit
   
-  def getTabs(): js.Array[ToolbarTab] = js.native
+  def getTabs(): js.Array[ToolbarTab]
   
   // Grid tab
-  def gridHandler(): Unit = js.native
+  def gridHandler(): Unit
   
-  var icons: Charts = js.native
+  var icons: Charts
   
   // Open tab
-  def openLocalReport(): Unit = js.native
+  def openLocalReport(): Unit
   
-  def openRemoteReport(): Unit = js.native
+  def openRemoteReport(): Unit
   
   // Options tab
-  def optionsHandler(): Unit = js.native
+  def optionsHandler(): Unit
   
   // Export tab
-  def printHandler(): Unit = js.native
+  def printHandler(): Unit
   
   // Save tab
-  def saveHandler(): Unit = js.native
+  def saveHandler(): Unit
 }
 object Toolbar {
   

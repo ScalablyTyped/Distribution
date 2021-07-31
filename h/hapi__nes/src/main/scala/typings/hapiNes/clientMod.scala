@@ -8,7 +8,6 @@ import typings.hapiNes.clientMod.Client.Handler
 import typings.hapiNes.hapiNesBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -19,14 +18,14 @@ object clientMod {
     def this(url: String) = this()
     def this(url: String, options: ClientOptions) = this()
     
-    def connect(): js.Promise[_] = js.native
-    def connect(options: ClientConnectOptions): js.Promise[_] = js.native
+    def connect(): js.Promise[js.Any] = js.native
+    def connect(options: ClientConnectOptions): js.Promise[js.Any] = js.native
     
-    def disconnect(): js.Promise[_] = js.native
+    def disconnect(): js.Promise[js.Any] = js.native
     
     var id: js.Any = js.native
     
-    def message(message: js.Any): js.Promise[_] = js.native
+    def message(message: js.Any): js.Promise[js.Any] = js.native
     
     def onConnect(): Unit = js.native
     
@@ -41,30 +40,29 @@ object clientMod {
     def reauthenticate(auth: js.Any): js.Promise[`true`] = js.native
     
     // can be `null | number` but also the "socket" value from websocket message data.
-    def request(options: String): js.Promise[_] = js.native
-    def request(options: ClientRequestOptions): js.Promise[_] = js.native
+    def request(options: String): js.Promise[js.Any] = js.native
+    def request(options: ClientRequestOptions): js.Promise[js.Any] = js.native
     
-    def subscribe(path: String, handler: Handler): js.Promise[_] = js.native
+    def subscribe(path: String, handler: Handler): js.Promise[js.Any] = js.native
     
     def subscriptions(): js.Array[String] = js.native
     
-    def unsubscribe(path: String): js.Promise[_] = js.native
-    def unsubscribe(path: String, handler: Handler): js.Promise[_] = js.native
+    def unsubscribe(path: String): js.Promise[js.Any] = js.native
+    def unsubscribe(path: String, handler: Handler): js.Promise[js.Any] = js.native
   }
   object Client {
     
-    @js.native
     trait ClientConnectOptions extends StObject {
       
-      var auth: js.UndefOr[js.Any] = js.native
+      var auth: js.UndefOr[js.Any] = js.undefined
       
-      var delay: js.UndefOr[Double] = js.native
+      var delay: js.UndefOr[Double] = js.undefined
       
-      var maxDelay: js.UndefOr[Double] = js.native
+      var maxDelay: js.UndefOr[Double] = js.undefined
       
-      var retries: js.UndefOr[Double] = js.native
+      var retries: js.UndefOr[Double] = js.undefined
       
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
     }
     object ClientConnectOptions {
       
@@ -109,12 +107,11 @@ object clientMod {
       }
     }
     
-    @js.native
     trait ClientOptions extends StObject {
       
-      var timeout: js.UndefOr[Double | Boolean] = js.native
+      var timeout: js.UndefOr[Double | Boolean] = js.undefined
       
-      var ws: js.UndefOr[js.Any] = js.native
+      var ws: js.UndefOr[js.Any] = js.undefined
     }
     object ClientOptions {
       
@@ -141,16 +138,15 @@ object clientMod {
       }
     }
     
-    @js.native
     trait ClientRequestOptions extends StObject {
       
-      var headers: js.UndefOr[js.Object] = js.native
+      var headers: js.UndefOr[js.Object] = js.undefined
       
-      var method: js.UndefOr[String] = js.native
+      var method: js.UndefOr[String] = js.undefined
       
-      var path: String = js.native
+      var path: String
       
-      var payload: js.UndefOr[js.Any] = js.native
+      var payload: js.UndefOr[js.Any] = js.undefined
     }
     object ClientRequestOptions {
       
@@ -186,10 +182,9 @@ object clientMod {
       }
     }
     
-    @js.native
     trait ClientSubscribeFlags extends StObject {
       
-      var revoked: js.UndefOr[Boolean] = js.native
+      var revoked: js.UndefOr[Boolean] = js.undefined
     }
     object ClientSubscribeFlags {
       

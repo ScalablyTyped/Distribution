@@ -2,32 +2,30 @@ package typings.minecraftScriptingTypesClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This event is used to turn various levels of logging on and off for client scripts. Note that turning logging on/off is not limited to the script that broadcasted the event. It will affect ALL client scripts including those in other Behavior Packs that are applied to the world. See the Debugging section for more information on logging.
   */
-@js.native
 trait IScriptLoggerConfigParameters extends StObject {
   
   /**
     * Set to true to log any scripting errors that occur on the client
     * @default false
     */
-  var log_errors: Boolean = js.native
+  var log_errors: Boolean
   
   /**
     * Set to true to log any general scripting information that occurs on the client. This includes any logging done with client.log()
     * @default false
     */
-  var log_information: Boolean = js.native
+  var log_information: Boolean
   
   /**
     * Set to true to log any scripting warnings that occur on the client
     * @default false
     */
-  var log_warnings: Boolean = js.native
+  var log_warnings: Boolean
 }
 object IScriptLoggerConfigParameters {
   

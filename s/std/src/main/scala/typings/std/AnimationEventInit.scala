@@ -2,17 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimationEventInit extends EventInit {
+trait AnimationEventInit
+  extends StObject
+     with EventInit {
   
-  var animationName: js.UndefOr[java.lang.String] = js.native
+  var animationName: js.UndefOr[java.lang.String] = js.undefined
   
-  var elapsedTime: js.UndefOr[Double] = js.native
+  var elapsedTime: js.UndefOr[Double] = js.undefined
   
-  var pseudoElement: js.UndefOr[java.lang.String] = js.native
+  var pseudoElement: js.UndefOr[java.lang.String] = js.undefined
 }
 object AnimationEventInit {
   

@@ -3,26 +3,25 @@ package typings.regexpp.astMod
 import typings.regexpp.regexppStrings.lookahead
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookaheadAssertion
-  extends LookaroundAssertion
+  extends StObject
      with NodeBase
+     with LookaroundAssertion
      with QuantifiableElement {
   
-  var alternatives: js.Array[Alternative] = js.native
+  var alternatives: js.Array[Alternative]
   
-  var kind: lookahead = js.native
+  var kind: lookahead
   
-  var negate: Boolean = js.native
+  var negate: Boolean
   
   @JSName("parent")
-  var parent_LookaheadAssertion: Alternative | Quantifier = js.native
+  var parent_LookaheadAssertion: Alternative | Quantifier
   
   @JSName("type")
-  var type_LookaheadAssertion: typings.regexpp.regexppStrings.Assertion = js.native
+  var type_LookaheadAssertion: typings.regexpp.regexppStrings.Assertion
 }
 object LookaheadAssertion {
   
@@ -30,15 +29,13 @@ object LookaheadAssertion {
   def apply(
     alternatives: js.Array[Alternative],
     end: Double,
-    kind: lookahead,
     negate: Boolean,
     parent: Alternative | Quantifier,
     raw: String,
-    start: Double,
-    `type`: typings.regexpp.regexppStrings.Assertion
+    start: Double
   ): LookaheadAssertion = {
-    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(alternatives = alternatives.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], kind = "lookahead", negate = negate.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], raw = raw.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Assertion")
     __obj.asInstanceOf[LookaheadAssertion]
   }
   

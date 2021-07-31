@@ -3,74 +3,72 @@ package typings.openapiTypes.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IJsonSchema extends StObject {
   
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
-  var additionalItems: js.UndefOr[Boolean | IJsonSchema] = js.native
+  var additionalItems: js.UndefOr[Boolean | IJsonSchema] = js.undefined
   
-  var additionalProperties: js.UndefOr[Boolean | IJsonSchema] = js.native
+  var additionalProperties: js.UndefOr[Boolean | IJsonSchema] = js.undefined
   
-  var allOf: js.UndefOr[js.Array[IJsonSchema]] = js.native
+  var allOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   
-  var anyOf: js.UndefOr[js.Array[IJsonSchema]] = js.native
+  var anyOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   
-  var definitions: js.UndefOr[StringDictionary[IJsonSchema]] = js.native
+  var definitions: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
   
-  var dependencies: js.UndefOr[StringDictionary[IJsonSchema | js.Array[String]]] = js.native
+  var dependencies: js.UndefOr[StringDictionary[IJsonSchema | js.Array[String]]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var enum: js.UndefOr[js.Array[_]] = js.native
+  var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var exclusiveMaximum: js.UndefOr[Boolean] = js.native
+  var exclusiveMaximum: js.UndefOr[Boolean] = js.undefined
   
-  var exclusiveMinimum: js.UndefOr[Boolean] = js.native
+  var exclusiveMinimum: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[IJsonSchema | js.Array[IJsonSchema]] = js.native
+  var items: js.UndefOr[IJsonSchema | js.Array[IJsonSchema]] = js.undefined
   
-  var maxItems: js.UndefOr[Double] = js.native
+  var maxItems: js.UndefOr[Double] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
-  var maxProperties: js.UndefOr[Double] = js.native
+  var maxProperties: js.UndefOr[Double] = js.undefined
   
-  var maximum: js.UndefOr[Double] = js.native
+  var maximum: js.UndefOr[Double] = js.undefined
   
-  var minItems: js.UndefOr[Double] = js.native
+  var minItems: js.UndefOr[Double] = js.undefined
   
-  var minLength: js.UndefOr[Double] = js.native
+  var minLength: js.UndefOr[Double] = js.undefined
   
-  var minProperties: js.UndefOr[Double] = js.native
+  var minProperties: js.UndefOr[Double] = js.undefined
   
-  var minimum: js.UndefOr[Double] = js.native
+  var minimum: js.UndefOr[Double] = js.undefined
   
-  var multipleOf: js.UndefOr[Double] = js.native
+  var multipleOf: js.UndefOr[Double] = js.undefined
   
-  var not: js.UndefOr[IJsonSchema] = js.native
+  var not: js.UndefOr[IJsonSchema] = js.undefined
   
-  var oneOf: js.UndefOr[js.Array[IJsonSchema]] = js.native
+  var oneOf: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   
-  var pattern: js.UndefOr[String] = js.native
+  var pattern: js.UndefOr[String] = js.undefined
   
-  var patternProperties: js.UndefOr[StringDictionary[IJsonSchema]] = js.native
+  var patternProperties: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
   
-  var properties: js.UndefOr[StringDictionary[IJsonSchema]] = js.native
+  var properties: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
   
-  var required: js.UndefOr[js.Array[String]] = js.native
+  var required: js.UndefOr[js.Array[String]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var uniqueItems: js.UndefOr[Boolean] = js.native
+  var uniqueItems: js.UndefOr[Boolean] = js.undefined
 }
 object IJsonSchema {
   
@@ -138,7 +136,7 @@ object IJsonSchema {
     def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
     
     @scala.inline
-    def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+    def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)

@@ -12,7 +12,7 @@ Duo two-factor authentication for Node.js web applications
 | Keywords           | Duo Security, Two-Factor Authentication |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 64237 |
+| # downloads        | 105734 |
 | # stars            | 0 |
 
 ## Links

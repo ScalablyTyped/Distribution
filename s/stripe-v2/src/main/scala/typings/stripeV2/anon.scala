@@ -2,23 +2,21 @@ package typings.stripeV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bankname extends StObject {
     
-    var bank_name: String = js.native
+    var bank_name: String
     
-    var country: String = js.native
+    var country: String
     
-    var last4: Double = js.native
+    var last4: Double
     
-    var `object`: String = js.native
+    var `object`: String
     
-    var validated: Boolean = js.native
+    var validated: Boolean
   }
   object Bankname {
     
@@ -49,10 +47,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     

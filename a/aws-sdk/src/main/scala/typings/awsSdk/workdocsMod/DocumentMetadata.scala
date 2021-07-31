@@ -2,51 +2,49 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentMetadata extends StObject {
   
   /**
     * The time when the document was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the creator.
     */
-  var CreatorId: js.UndefOr[IdType] = js.native
+  var CreatorId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var Id: js.UndefOr[ResourceIdType] = js.native
+  var Id: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * List of labels on the document.
     */
-  var Labels: js.UndefOr[SharedLabels] = js.native
+  var Labels: js.UndefOr[SharedLabels] = js.undefined
   
   /**
     * The latest version of the document.
     */
-  var LatestVersionMetadata: js.UndefOr[DocumentVersionMetadata] = js.native
+  var LatestVersionMetadata: js.UndefOr[DocumentVersionMetadata] = js.undefined
   
   /**
     * The time when the document was updated.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: js.UndefOr[ResourceIdType] = js.native
+  var ParentFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The resource state.
     */
-  var ResourceState: js.UndefOr[ResourceStateType] = js.native
+  var ResourceState: js.UndefOr[ResourceStateType] = js.undefined
 }
 object DocumentMetadata {
   

@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,26 +14,42 @@ sealed trait RangeValueType extends StObject
 object RangeValueType extends StObject {
   
   @js.native
-  sealed trait boolean extends RangeValueType
+  sealed trait boolean
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait double extends RangeValueType
+  sealed trait double
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait empty extends RangeValueType
+  sealed trait empty
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait error extends RangeValueType
+  sealed trait error
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait integer extends RangeValueType
+  sealed trait integer
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait richValue extends RangeValueType
+  sealed trait richValue
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait string extends RangeValueType
+  sealed trait string
+    extends StObject
+       with RangeValueType
   
   @js.native
-  sealed trait unknown extends RangeValueType
+  sealed trait unknown
+    extends StObject
+       with RangeValueType
 }

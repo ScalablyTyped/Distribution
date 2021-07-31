@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneService extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait SceneService extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#copyright)
     */
-  var copyright: String = js.native
+  var copyright: String
   
   /**
     * The layer ID, or layer index, of a Scene Service layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#layerId)
     */
-  var layerId: Double = js.native
+  var layerId: Double
   
   /**
     * The spatial reference of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#spatialReference)
     */
-  var spatialReference: SpatialReference = js.native
+  var spatialReference: SpatialReference
   
   /**
     * The URL of the REST endpoint of the layer or scene service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#url)
     */
-  var url: String = js.native
+  var url: String
   
   /**
     * The version of the scene service specification used for this service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-SceneService.html#version)
     */
-  val version: SceneServiceVersion = js.native
+  val version: SceneServiceVersion
 }
 object SceneService {
   

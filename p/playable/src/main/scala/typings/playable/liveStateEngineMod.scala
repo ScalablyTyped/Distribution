@@ -4,14 +4,15 @@ import typings.playable.liveStateMod.LiveState
 import typings.playable.playbackEngineTypesMod.ILiveStateEngineDependencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object liveStateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/live-state-engine", JSImport.Default)
   @js.native
-  class default protected () extends LiveStateEngine {
+  class default protected ()
+    extends StObject
+       with LiveStateEngine {
     def this(hasEventEmitterEngine: ILiveStateEngineDependencies) = this()
   }
   object default {

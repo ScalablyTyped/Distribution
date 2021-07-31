@@ -2,17 +2,17 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TabSwitchEvent extends TableauEvent {
+trait TabSwitchEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the name of the sheet that is currently active. */
-  def getNewSheetName(): String = js.native
+  def getNewSheetName(): String
   
   /** Gets the name of the sheet that was active before the tab switch event occurred. */
-  def getOldSheetName(): String = js.native
+  def getOldSheetName(): String
 }
 object TabSwitchEvent {
   

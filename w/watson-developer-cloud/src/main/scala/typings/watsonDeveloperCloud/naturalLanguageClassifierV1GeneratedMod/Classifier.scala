@@ -2,33 +2,31 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A classifier for natural language phrases. */
-@js.native
 trait Classifier extends StObject {
   
   /** Unique identifier for this classifier. */
-  var classifier_id: String = js.native
+  var classifier_id: String
   
   /** Date and time (UTC) the classifier was created. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The language used for the classifier. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** User-supplied name for the classifier. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The state of the classifier. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** Additional detail about the status. */
-  var status_description: js.UndefOr[String] = js.native
+  var status_description: js.UndefOr[String] = js.undefined
   
   /** Link to the classifier. */
-  var url: String = js.native
+  var url: String
 }
 object Classifier {
   

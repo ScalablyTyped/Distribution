@@ -12,7 +12,7 @@ Used to get random Car Names
 | Keywords           | car, names, random, all |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 1235 |
+| # downloads        | 1145 |
 | # stars            | 1 |
 
 ## Links

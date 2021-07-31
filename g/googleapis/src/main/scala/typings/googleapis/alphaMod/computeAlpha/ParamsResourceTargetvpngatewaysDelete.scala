@@ -5,26 +5,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceTargetvpngatewaysDelete extends StandardParameters {
+trait ParamsResourceTargetvpngatewaysDelete
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the region for this request.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * An optional request ID to identify requests. Specify a unique request ID
@@ -38,12 +38,12 @@ trait ParamsResourceTargetvpngatewaysDelete extends StandardParameters {
     * the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the target VPN gateway to delete.
     */
-  var targetVpnGateway: js.UndefOr[String] = js.native
+  var targetVpnGateway: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceTargetvpngatewaysDelete {
   

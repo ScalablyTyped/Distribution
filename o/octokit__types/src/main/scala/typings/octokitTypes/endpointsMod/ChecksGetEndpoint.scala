@@ -1,27 +1,25 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`2`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.antiope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  owner :string,   repo :string,   check_run_id :number} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'antiope'> */
-@js.native
-trait ChecksGetEndpoint extends StObject {
+trait ChecksGetEndpoint
+  extends StObject
+     with RequiredPreview[antiope] {
   
-  var check_run_id: Double = js.native
+  var check_run_id: Double
   
-  var mediaType: `2` = js.native
+  var owner: String
   
-  var owner: String = js.native
-  
-  var repo: String = js.native
+  var repo: String
 }
 object ChecksGetEndpoint {
   
   @scala.inline
-  def apply(check_run_id: Double, mediaType: `2`, owner: String, repo: String): ChecksGetEndpoint = {
+  def apply(check_run_id: Double, mediaType: `0`[antiope], owner: String, repo: String): ChecksGetEndpoint = {
     val __obj = js.Dynamic.literal(check_run_id = check_run_id.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], owner = owner.asInstanceOf[js.Any], repo = repo.asInstanceOf[js.Any])
     __obj.asInstanceOf[ChecksGetEndpoint]
   }
@@ -31,9 +29,6 @@ object ChecksGetEndpoint {
     
     @scala.inline
     def setCheck_run_id(value: Double): Self = StObject.set(x, "check_run_id", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setMediaType(value: `2`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])

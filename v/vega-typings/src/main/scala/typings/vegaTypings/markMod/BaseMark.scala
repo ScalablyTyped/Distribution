@@ -5,37 +5,35 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.transformMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseMark extends StObject {
   
-  var aria: js.UndefOr[Boolean] = js.native
+  var aria: js.UndefOr[Boolean] = js.undefined
   
-  var clip: js.UndefOr[Clip] = js.native
+  var clip: js.UndefOr[Clip] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var from: js.UndefOr[From] = js.native
+  var from: js.UndefOr[From] = js.undefined
   
-  var interactive: js.UndefOr[Boolean | SignalRef] = js.native
+  var interactive: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[js.Array[OnMarkTrigger]] = js.native
+  var on: js.UndefOr[js.Array[OnMarkTrigger]] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var sort: js.UndefOr[Compare] = js.native
+  var sort: js.UndefOr[Compare] = js.undefined
   
-  var style: js.UndefOr[String | js.Array[String]] = js.native
+  var style: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var transform: js.UndefOr[js.Array[Transforms]] = js.native
+  var transform: js.UndefOr[js.Array[Transforms]] = js.undefined
   
-  var zindex: js.UndefOr[Double] = js.native
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 object BaseMark {
   

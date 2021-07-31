@@ -4,16 +4,18 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listItemTextMod {
   
   object ListItemText {
     
+    @scala.inline
+    def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list/types/ListItemText", "ListItemText")
     @js.native
-    def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -48,32 +50,31 @@ object listItemTextMod {
     }
   }
   
-  @js.native
   trait ListItemTextProps extends StObject {
     
     /**
       * The main text children to display. This will be stacked above the
       * `secondaryText` if it was provided.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional `className` to apply to the `<span>` surrounding the `children`.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional secondary text to display that will be stacked below the
       * `children`. This also applies some styles to make the text less prominent
       * than the `children`.
       */
-    var secondaryText: js.UndefOr[ReactNode] = js.native
+    var secondaryText: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * An optional `className` to apply to the `<span>` surrounding the
       * `secondaryText` if it was provided.
       */
-    var secondaryTextClassName: js.UndefOr[String] = js.native
+    var secondaryTextClassName: js.UndefOr[String] = js.undefined
   }
   object ListItemTextProps {
     

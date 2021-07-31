@@ -4,21 +4,19 @@ import typings.breeze.breeze.EntityQuery
 import typings.breeze.breeze.HttpResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityManager extends StObject {
   
-  var entityManager: typings.breeze.breeze.EntityManager = js.native
+  var entityManager: typings.breeze.breeze.EntityManager
   
-  var httpResponse: HttpResponse = js.native
+  var httpResponse: HttpResponse
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var query: EntityQuery = js.native
+  var query: EntityQuery
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
 }
 object EntityManager {
   

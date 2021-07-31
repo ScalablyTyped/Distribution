@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartHCEOptions extends StObject {
   
   /**
     * 需要注册到系统的 AID 列表，每个 AID 为 String 类型
     */
-  var aid_list: js.UndefOr[js.Array[_]] = js.native
+  var aid_list: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 接口调用结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用失败的回调函数
     */
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 接口调用成功的回调函数
     */
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object StartHCEOptions {
   
@@ -40,7 +38,7 @@ object StartHCEOptions {
   implicit class StartHCEOptionsMutableBuilder[Self <: StartHCEOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAid_list(value: js.Array[_]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
+    def setAid_list(value: js.Array[js.Any]): Self = StObject.set(x, "aid_list", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAid_listUndefined: Self = StObject.set(x, "aid_list", js.undefined)

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/analytics/v3", "analytics_v3.Resource$Management$Custommetrics")
@@ -32,7 +31,7 @@ class ResourceManagementCustommetrics protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCustomMetric] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomMetric]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
   def get(params: ParamsResourceManagementCustommetricsGet): GaxiosPromise[SchemaCustomMetric] = js.native
   def get(
     params: ParamsResourceManagementCustommetricsGet,
@@ -66,7 +65,7 @@ class ResourceManagementCustommetrics protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCustomMetric] = js.native
   def insert(callback: BodyResponseCallback[SchemaCustomMetric]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
   def insert(params: ParamsResourceManagementCustommetricsInsert): GaxiosPromise[SchemaCustomMetric] = js.native
   def insert(
     params: ParamsResourceManagementCustommetricsInsert,
@@ -101,7 +100,7 @@ class ResourceManagementCustommetrics protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCustomMetrics] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomMetrics]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomMetrics] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomMetrics] = js.native
   def list(params: ParamsResourceManagementCustommetricsList): GaxiosPromise[SchemaCustomMetrics] = js.native
   def list(
     params: ParamsResourceManagementCustommetricsList,
@@ -138,7 +137,7 @@ class ResourceManagementCustommetrics protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaCustomMetric] = js.native
   def patch(callback: BodyResponseCallback[SchemaCustomMetric]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
   def patch(params: ParamsResourceManagementCustommetricsPatch): GaxiosPromise[SchemaCustomMetric] = js.native
   def patch(
     params: ParamsResourceManagementCustommetricsPatch,
@@ -174,7 +173,7 @@ class ResourceManagementCustommetrics protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaCustomMetric] = js.native
   def update(callback: BodyResponseCallback[SchemaCustomMetric]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomMetric] = js.native
   def update(params: ParamsResourceManagementCustommetricsUpdate): GaxiosPromise[SchemaCustomMetric] = js.native
   def update(
     params: ParamsResourceManagementCustommetricsUpdate,

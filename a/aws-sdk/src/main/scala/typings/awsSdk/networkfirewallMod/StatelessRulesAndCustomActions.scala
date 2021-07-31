@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatelessRulesAndCustomActions extends StObject {
   
   /**
     * Defines an array of individual custom action definitions that are available for use by the stateless rules in this StatelessRulesAndCustomActions specification. You name each custom action that you define, and then you can use it by name in your StatelessRule RuleDefinition Actions specification.
     */
-  var CustomActions: js.UndefOr[typings.awsSdk.networkfirewallMod.CustomActions] = js.native
+  var CustomActions: js.UndefOr[typings.awsSdk.networkfirewallMod.CustomActions] = js.undefined
   
   /**
     * Defines the set of stateless rules for use in a stateless rule group. 
     */
-  var StatelessRules: typings.awsSdk.networkfirewallMod.StatelessRules = js.native
+  var StatelessRules: typings.awsSdk.networkfirewallMod.StatelessRules
 }
 object StatelessRulesAndCustomActions {
   

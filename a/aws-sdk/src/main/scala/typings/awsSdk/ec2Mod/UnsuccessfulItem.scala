@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnsuccessfulItem extends StObject {
   
   /**
     * Information about the error.
     */
-  var Error: js.UndefOr[UnsuccessfulItemError] = js.native
+  var Error: js.UndefOr[UnsuccessfulItemError] = js.undefined
   
   /**
     * The ID of the resource.
     */
-  var ResourceId: js.UndefOr[String] = js.native
+  var ResourceId: js.UndefOr[String] = js.undefined
 }
 object UnsuccessfulItem {
   

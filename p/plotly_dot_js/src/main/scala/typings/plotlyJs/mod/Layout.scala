@@ -40,178 +40,176 @@ import typings.plotlyJs.plotlyJsStrings.y
 import typings.plotlyJs.plotlyJsStrings.zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  var annotations: js.Array[PartialAnnotationsAlign] = js.native
+  var annotations: js.Array[PartialAnnotationsAlign]
   
-  var autosize: Boolean = js.native
+  var autosize: Boolean
   
-  var bargap: Double = js.native
+  var bargap: Double
   
-  var bargroupgap: Double = js.native
+  var bargroupgap: Double
   
-  var barmode: stack | group | overlay | relative = js.native
+  var barmode: stack | group | overlay | relative
   
-  var barnorm: _empty | fraction | percent = js.native
+  var barnorm: _empty | fraction | percent
   
-  var calendar: Calendar = js.native
+  var calendar: Calendar
   
-  var colorway: js.Array[String] = js.native
-  
-  // TODO
-  var dragmode: zoom | pan | select | lasso | orbit | turntable | `false` = js.native
-  
-  var font: PartialFont = js.native
-  
-  var grid: Partialrowsnumberroworder = js.native
-  
-  var height: Double = js.native
-  
-  var hiddenlabels: js.Array[String] = js.native
-  
-  var hidesources: Boolean = js.native
-  
-  var hoverdistance: Double = js.native
-  
-  var hoverlabel: PartialHoverLabel = js.native
-  
-  var hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false` = js.native
-  
-  var images: js.Array[PartialImage] = js.native
-  
-  var legend: PartialLegend = js.native
+  var colorway: js.Array[String]
   
   // TODO
-  var mapbox: PartialMapbox = js.native
+  var dragmode: zoom | pan | select | lasso | orbit | turntable | `false`
   
-  var margin: PartialMargin = js.native
+  var font: PartialFont
   
-  var orientation: Double = js.native
+  var grid: Partialrowsnumberroworder
   
-  var paper_bgcolor: Color = js.native
+  var height: Double
   
-  var plot_bgcolor: Color = js.native
+  var hiddenlabels: js.Array[String]
   
-  var polar: PartialPolarLayout = js.native
+  var hidesources: Boolean
   
-  var polar2: PartialPolarLayout = js.native
+  var hoverdistance: Double
   
-  var polar3: PartialPolarLayout = js.native
+  var hoverlabel: PartialHoverLabel
   
-  var polar4: PartialPolarLayout = js.native
+  var hovermode: closest | x | y | (`x unified`) | (`y unified`) | `false`
   
-  var polar5: PartialPolarLayout = js.native
+  var images: js.Array[PartialImage]
   
-  var polar6: PartialPolarLayout = js.native
-  
-  var polar7: PartialPolarLayout = js.native
-  
-  var polar8: PartialPolarLayout = js.native
-  
-  var polar9: PartialPolarLayout = js.native
-  
-  var radialaxis: PartialAxis = js.native
-  
-  var scene: PartialScene = js.native
-  
-  var selectdirection: h | v | d | any = js.native
-  
-  var separators: String = js.native
-  
-  var shapes: js.Array[PartialShape] = js.native
-  
-  var showlegend: Boolean = js.native
+  var legend: PartialLegend
   
   // TODO
-  var sliders: js.Array[PartialSlider] = js.native
+  var mapbox: PartialMapbox
   
-  var subplot: String = js.native
+  var margin: PartialMargin
   
-  var template: Template = js.native
+  var orientation: Double
   
-  var title: String | PartialtextstringfontPart = js.native
+  var paper_bgcolor: Color
   
-  var titlefont: PartialFont = js.native
+  var plot_bgcolor: Color
   
-  var transition: Transition = js.native
+  var polar: PartialPolarLayout
   
-  var width: Double = js.native
+  var polar2: PartialPolarLayout
   
-  var xaxis: PartialLayoutAxisAnchor = js.native
+  var polar3: PartialPolarLayout
   
-  var xaxis2: PartialLayoutAxisAnchor = js.native
+  var polar4: PartialPolarLayout
   
-  var xaxis3: PartialLayoutAxisAnchor = js.native
+  var polar5: PartialPolarLayout
   
-  var xaxis4: PartialLayoutAxisAnchor = js.native
+  var polar6: PartialPolarLayout
   
-  var xaxis5: PartialLayoutAxisAnchor = js.native
+  var polar7: PartialPolarLayout
   
-  var xaxis6: PartialLayoutAxisAnchor = js.native
+  var polar8: PartialPolarLayout
   
-  var xaxis7: PartialLayoutAxisAnchor = js.native
+  var polar9: PartialPolarLayout
   
-  var xaxis8: PartialLayoutAxisAnchor = js.native
+  var radialaxis: PartialAxis
   
-  var xaxis9: PartialLayoutAxisAnchor = js.native
+  var scene: PartialScene
+  
+  var selectdirection: h | v | d | any
+  
+  var separators: String
+  
+  var shapes: js.Array[PartialShape]
+  
+  var showlegend: Boolean
+  
+  // TODO
+  var sliders: js.Array[PartialSlider]
+  
+  var subplot: String
+  
+  var template: Template
+  
+  var title: String | PartialtextstringfontPart
+  
+  var titlefont: PartialFont
+  
+  var transition: Transition
+  
+  var width: Double
+  
+  var xaxis: PartialLayoutAxisAnchor
+  
+  var xaxis2: PartialLayoutAxisAnchor
+  
+  var xaxis3: PartialLayoutAxisAnchor
+  
+  var xaxis4: PartialLayoutAxisAnchor
+  
+  var xaxis5: PartialLayoutAxisAnchor
+  
+  var xaxis6: PartialLayoutAxisAnchor
+  
+  var xaxis7: PartialLayoutAxisAnchor
+  
+  var xaxis8: PartialLayoutAxisAnchor
+  
+  var xaxis9: PartialLayoutAxisAnchor
   
   @JSName("xaxis.autorange")
-  var xaxisDotautorange: Boolean = js.native
+  var xaxisDotautorange: Boolean
   
   @JSName("xaxis.range")
-  var xaxisDotrange: js.Tuple2[Datum, Datum] = js.native
+  var xaxisDotrange: js.Tuple2[Datum, Datum]
   
   @JSName("xaxis.range[0]")
-  var `xaxisDotrange[0]`: Datum = js.native
+  var `xaxisDotrange[0]`: Datum
   
   @JSName("xaxis.range[1]")
-  var `xaxisDotrange[1]`: Datum = js.native
+  var `xaxisDotrange[1]`: Datum
   
   @JSName("xaxis.title")
-  var xaxisDottitle: String = js.native
+  var xaxisDottitle: String
   
   @JSName("xaxis.type")
-  var xaxisDottype: AxisType = js.native
+  var xaxisDottype: AxisType
   
-  var yaxis: PartialLayoutAxisAnchor = js.native
+  var yaxis: PartialLayoutAxisAnchor
   
-  var yaxis2: PartialLayoutAxisAnchor = js.native
+  var yaxis2: PartialLayoutAxisAnchor
   
-  var yaxis3: PartialLayoutAxisAnchor = js.native
+  var yaxis3: PartialLayoutAxisAnchor
   
-  var yaxis4: PartialLayoutAxisAnchor = js.native
+  var yaxis4: PartialLayoutAxisAnchor
   
-  var yaxis5: PartialLayoutAxisAnchor = js.native
+  var yaxis5: PartialLayoutAxisAnchor
   
-  var yaxis6: PartialLayoutAxisAnchor = js.native
+  var yaxis6: PartialLayoutAxisAnchor
   
-  var yaxis7: PartialLayoutAxisAnchor = js.native
+  var yaxis7: PartialLayoutAxisAnchor
   
-  var yaxis8: PartialLayoutAxisAnchor = js.native
+  var yaxis8: PartialLayoutAxisAnchor
   
-  var yaxis9: PartialLayoutAxisAnchor = js.native
+  var yaxis9: PartialLayoutAxisAnchor
   
   @JSName("yaxis.autorange")
-  var yaxisDotautorange: Boolean = js.native
+  var yaxisDotautorange: Boolean
   
   @JSName("yaxis.range")
-  var yaxisDotrange: js.Tuple2[Datum, Datum] = js.native
+  var yaxisDotrange: js.Tuple2[Datum, Datum]
   
   @JSName("yaxis.range[0]")
-  var `yaxisDotrange[0]`: Datum = js.native
+  var `yaxisDotrange[0]`: Datum
   
   @JSName("yaxis.range[1]")
-  var `yaxisDotrange[1]`: Datum = js.native
+  var `yaxisDotrange[1]`: Datum
   
   @JSName("yaxis.title")
-  var yaxisDottitle: String = js.native
+  var yaxisDottitle: String
   
   @JSName("yaxis.type")
-  var yaxisDottype: AxisType = js.native
+  var yaxisDottype: AxisType
 }
 object Layout {
   
@@ -299,6 +297,10 @@ object Layout {
     __obj.updateDynamic("yaxis.range")(yaxisDotrange.asInstanceOf[js.Any])
     __obj.updateDynamic("yaxis.title")(yaxisDottitle.asInstanceOf[js.Any])
     __obj.updateDynamic("yaxis.type")(yaxisDottype.asInstanceOf[js.Any])
+    __obj.updateDynamic("xaxis.range[0]")(null)
+    __obj.updateDynamic("xaxis.range[1]")(null)
+    __obj.updateDynamic("yaxis.range[0]")(null)
+    __obj.updateDynamic("yaxis.range[1]")(null)
     __obj.asInstanceOf[Layout]
   }
   

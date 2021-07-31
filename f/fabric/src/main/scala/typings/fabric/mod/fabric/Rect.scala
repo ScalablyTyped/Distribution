@@ -4,7 +4,6 @@ import typings.fabric.fabricImplMod.IRectOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Rect")
@@ -38,18 +37,15 @@ object Rect {
     * @param element Element to parse
     * @param [options] Options object
     */
-  @JSImport("fabric", "fabric.Rect.fromElement")
-  @js.native
-  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Rect = js.native
-  @JSImport("fabric", "fabric.Rect.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, options: IRectOptions): typings.fabric.fabricImplMod.Rect = js.native
+  @scala.inline
+  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Rect]
+  @scala.inline
+  def fromElement(element: SVGElement, options: IRectOptions): typings.fabric.fabricImplMod.Rect = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Rect]
   
   /**
     * Returns Rect instance from an object representation
     * @param object Object to create an instance from
     */
-  @JSImport("fabric", "fabric.Rect.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Rect = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Rect]
 }

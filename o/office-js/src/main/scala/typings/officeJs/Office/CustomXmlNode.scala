@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,7 +32,7 @@ trait CustomXmlNode extends StObject {
     */
   def getNodeValueAsync(): Unit = js.native
   def getNodeValueAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getNodeValueAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getNodeValueAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getNodeValueAsync(options: AsyncContextOptions): Unit = js.native
   def getNodeValueAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -53,7 +52,7 @@ trait CustomXmlNode extends StObject {
   def getNodesAsync(xPath: String, callback: js.Function1[/* result */ AsyncResult[js.Array[this.type]], Unit]): Unit = js.native
   def getNodesAsync(
     xPath: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[this.type]], Unit]
   ): Unit = js.native
   def getNodesAsync(xPath: String, options: AsyncContextOptions): Unit = js.native
@@ -76,7 +75,7 @@ trait CustomXmlNode extends StObject {
     */
   def getTextAsync(): Unit = js.native
   def getTextAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getTextAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getTextAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getTextAsync(options: AsyncContextOptions): Unit = js.native
   def getTextAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -93,7 +92,7 @@ trait CustomXmlNode extends StObject {
     */
   def getXmlAsync(): Unit = js.native
   def getXmlAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getXmlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getXmlAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -120,11 +119,7 @@ trait CustomXmlNode extends StObject {
     */
   def setNodeValueAsync(value: String): Unit = js.native
   def setNodeValueAsync(value: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setNodeValueAsync(
-    value: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setNodeValueAsync(value: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setNodeValueAsync(value: String, options: AsyncContextOptions): Unit = js.native
   def setNodeValueAsync(
     value: String,
@@ -145,11 +140,7 @@ trait CustomXmlNode extends StObject {
     */
   def setTextAsync(text: String): Unit = js.native
   def setTextAsync(text: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setTextAsync(
-    text: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setTextAsync(text: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setTextAsync(text: String, options: AsyncContextOptions): Unit = js.native
   def setTextAsync(
     text: String,
@@ -170,11 +161,7 @@ trait CustomXmlNode extends StObject {
     */
   def setXmlAsync(xml: String): Unit = js.native
   def setXmlAsync(xml: String, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def setXmlAsync(
-    xml: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setXmlAsync(xml: String, options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def setXmlAsync(xml: String, options: AsyncContextOptions): Unit = js.native
   def setXmlAsync(
     xml: String,

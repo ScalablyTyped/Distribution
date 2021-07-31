@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.prettier.anon.PartialRequiredOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Plugin[T] extends StObject {
   
-  var defaultOptions: js.UndefOr[PartialRequiredOptions] = js.native
+  var defaultOptions: js.UndefOr[PartialRequiredOptions] = js.undefined
   
-  var languages: js.UndefOr[js.Array[SupportLanguage]] = js.native
+  var languages: js.UndefOr[js.Array[SupportLanguage]] = js.undefined
   
-  var options: js.UndefOr[SupportOptions] = js.native
+  var options: js.UndefOr[SupportOptions] = js.undefined
   
-  var parsers: js.UndefOr[StringDictionary[Parser[T]]] = js.native
+  var parsers: js.UndefOr[StringDictionary[Parser[T]]] = js.undefined
   
-  var printers: js.UndefOr[StringDictionary[Printer[T]]] = js.native
+  var printers: js.UndefOr[StringDictionary[Printer[T]]] = js.undefined
 }
 object Plugin {
   
@@ -29,7 +27,7 @@ object Plugin {
   }
   
   @scala.inline
-  implicit class PluginMutableBuilder[Self <: Plugin[_], T] (val x: Self with Plugin[T]) extends AnyVal {
+  implicit class PluginMutableBuilder[Self <: Plugin[?], T] (val x: Self & Plugin[T]) extends AnyVal {
     
     @scala.inline
     def setDefaultOptions(value: PartialRequiredOptions): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])

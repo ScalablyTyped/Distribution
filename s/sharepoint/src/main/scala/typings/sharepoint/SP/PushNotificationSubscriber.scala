@@ -3,11 +3,12 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PushNotificationSubscriber extends ClientObject {
+trait PushNotificationSubscriber
+  extends StObject
+     with ClientObject {
   
   def get_customArgs(): String = js.native
   

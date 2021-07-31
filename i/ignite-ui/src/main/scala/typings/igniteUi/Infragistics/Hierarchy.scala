@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hierarchy extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait Hierarchy extends StObject {
     *
     * @param value
     */
-  def allMember(value: js.Object): String = js.native
+  def allMember(value: js.Object): String
   
   /**
     * Returns the caption of the hierarchy used when displaying the name of the hierarchy to the user.
     *
     * @param value
     */
-  def caption(value: js.Object): String = js.native
+  def caption(value: js.Object): String
   
   /**
     * Returns the unique name of the default member for the hierarchy.
     *
     * @param value
     */
-  def defaultMember(value: js.Object): String = js.native
+  def defaultMember(value: js.Object): String
   
   /**
     * Returns a user-friendly description of the hierarchy.
     *
     * @param value
     */
-  def description(value: js.Object): String = js.native
+  def description(value: js.Object): String
   
   /**
     * Returns the unique name of the dimension that contains the hierarchy.
     *
     * @param value
     */
-  def dimensionUniqueName(value: js.Object): String = js.native
+  def dimensionUniqueName(value: js.Object): String
   
   /**
     * Returns the hierarchy display folder path to be used when displaying the hierarchy in the user interface.
@@ -49,7 +47,7 @@ trait Hierarchy extends StObject {
     *
     * @param value
     */
-  def hierarchyDisplayFolder(value: js.Object): String = js.native
+  def hierarchyDisplayFolder(value: js.Object): String
   
   /**
     * Returns the source of the hierarchy which is a value from the $.ig.HierarchyOrigin enumeration.
@@ -65,21 +63,21 @@ trait Hierarchy extends StObject {
     *
     * @param value
     */
-  def hierarchyOrigin(value: js.Object): Double = js.native
+  def hierarchyOrigin(value: js.Object): Double
   
   /**
     * Returns the name of the hierarchy.
     *
     * @param value
     */
-  def name(value: js.Object): String = js.native
+  def name(value: js.Object): String
   
   /**
     * Returns the unique name of the hierarchy.
     *
     * @param value
     */
-  def uniqueName(value: js.Object): String = js.native
+  def uniqueName(value: js.Object): String
 }
 object Hierarchy {
   

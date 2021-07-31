@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Example:      experimental:       authorization:         provider:
   * firebaserules.googleapis.com
   */
-@js.native
 trait SchemaAuthorizationConfig extends StObject {
   
   /**
     * The name of the authorization provider, such as
     * firebaserules.googleapis.com.
     */
-  var provider: js.UndefOr[String] = js.native
+  var provider: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthorizationConfig {
   

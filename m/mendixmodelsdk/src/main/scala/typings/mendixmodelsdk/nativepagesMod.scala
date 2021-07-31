@@ -50,7 +50,6 @@ import typings.mendixmodelsdk.versionChecksMod.IStructureVersionInfo
 import typings.mendixmodelsdk.versionChecksMod.StructureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativepagesMod {
@@ -121,9 +120,8 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.create")
-      @js.native
-      def create(model: IModel): BottomBarItem = js.native
+      @scala.inline
+      def create(model: IModel): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
       
       /**
         * Creates and returns a new BottomBarItem instance in the SDK and on the server.
@@ -134,9 +132,8 @@ object nativepagesMod {
         *  8.0.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.createIn")
-      @js.native
-      def createIn(container: NativeNavigationProfile): BottomBarItem = js.native
+      @scala.inline
+      def createIn(container: NativeNavigationProfile): BottomBarItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BottomBarItem]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.BottomBarItem.structureTypeName")
@@ -204,9 +201,8 @@ object nativepagesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.createIn")
-      @js.native
-      def createIn(container: IFolderBase): NativeLayout = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): NativeLayout = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayout]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayout.structureTypeName")
@@ -265,9 +261,8 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.create")
-      @js.native
-      def create(model: IModel): NativeLayoutCallArgument = js.native
+      @scala.inline
+      def create(model: IModel): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
       
       /**
         * Creates and returns a new NativeLayoutCallArgument instance in the SDK and on the server.
@@ -278,9 +273,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.createIn")
-      @js.native
-      def createIn(container: NativePage): NativeLayoutCallArgument = js.native
+      @scala.inline
+      def createIn(container: NativePage): NativeLayoutCallArgument = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativeLayoutCallArgument]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativeLayoutCallArgument.structureTypeName")
@@ -360,9 +354,8 @@ object nativepagesMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.createIn")
-      @js.native
-      def createIn(container: IFolderBase): NativePage = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): NativePage = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NativePage]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePage.structureTypeName")
@@ -422,9 +415,8 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.create")
-      @js.native
-      def create(model: IModel): NativePageClientAction = js.native
+      @scala.inline
+      def create(model: IModel): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -435,9 +427,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInActionButtonUnderAction")
-      @js.native
-      def createInActionButtonUnderAction(container: ActionButton): NativePageClientAction = js.native
+      @scala.inline
+      def createInActionButtonUnderAction(container: ActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -448,9 +439,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInActionItemUnderAction")
-      @js.native
-      def createInActionItemUnderAction(container: ActionItem): NativePageClientAction = js.native
+      @scala.inline
+      def createInActionItemUnderAction(container: ActionItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInActionItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -461,9 +451,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAssociationWidgetUnderOnChangeAction")
-      @js.native
-      def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NativePageClientAction = js.native
+      @scala.inline
+      def createInAssociationWidgetUnderOnChangeAction(container: AssociationWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAssociationWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -474,9 +463,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnChangeAction")
-      @js.native
-      def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NativePageClientAction = js.native
+      @scala.inline
+      def createInAttributeWidgetUnderOnChangeAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -487,9 +475,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnEnterAction")
-      @js.native
-      def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NativePageClientAction = js.native
+      @scala.inline
+      def createInAttributeWidgetUnderOnEnterAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnEnterAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -500,9 +487,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInAttributeWidgetUnderOnLeaveAction")
-      @js.native
-      def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NativePageClientAction = js.native
+      @scala.inline
+      def createInAttributeWidgetUnderOnLeaveAction(container: AttributeWidget): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderOnLeaveAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -513,9 +499,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInDynamicImageViewerUnderClickAction")
-      @js.native
-      def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NativePageClientAction = js.native
+      @scala.inline
+      def createInDynamicImageViewerUnderClickAction(container: DynamicImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDynamicImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -526,9 +511,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInGridActionButtonUnderAction")
-      @js.native
-      def createInGridActionButtonUnderAction(container: GridActionButton): NativePageClientAction = js.native
+      @scala.inline
+      def createInGridActionButtonUnderAction(container: GridActionButton): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGridActionButtonUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -539,9 +523,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInListViewUnderClickAction")
-      @js.native
-      def createInListViewUnderClickAction(container: ListView): NativePageClientAction = js.native
+      @scala.inline
+      def createInListViewUnderClickAction(container: ListView): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -552,9 +535,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInMenuItemUnderAction")
-      @js.native
-      def createInMenuItemUnderAction(container: MenuItem): NativePageClientAction = js.native
+      @scala.inline
+      def createInMenuItemUnderAction(container: MenuItem): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -565,9 +547,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInReferenceSetSelectorUnderOnChangeAction")
-      @js.native
-      def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NativePageClientAction = js.native
+      @scala.inline
+      def createInReferenceSetSelectorUnderOnChangeAction(container: ReferenceSetSelector): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSetSelectorUnderOnChangeAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -578,9 +559,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInStaticImageViewerUnderClickAction")
-      @js.native
-      def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NativePageClientAction = js.native
+      @scala.inline
+      def createInStaticImageViewerUnderClickAction(container: StaticImageViewer): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInStaticImageViewerUnderClickAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /**
         * Creates and returns a new NativePageClientAction instance in the SDK and on the server.
@@ -591,9 +571,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.createInWidgetValueUnderAction")
-      @js.native
-      def createInWidgetValueUnderAction(container: WidgetValue): NativePageClientAction = js.native
+      @scala.inline
+      def createInWidgetValueUnderAction(container: WidgetValue): NativePageClientAction = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderAction")(container.asInstanceOf[js.Any]).asInstanceOf[NativePageClientAction]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePageClientAction.structureTypeName")
@@ -642,9 +621,8 @@ object nativepagesMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.create")
-      @js.native
-      def create(model: IModel): NativePlaceholder = js.native
+      @scala.inline
+      def create(model: IModel): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -655,9 +633,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInBuildingBlockUnderWidgets")
-      @js.native
-      def createInBuildingBlockUnderWidgets(container: BuildingBlock): NativePlaceholder = js.native
+      @scala.inline
+      def createInBuildingBlockUnderWidgets(container: BuildingBlock): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -668,9 +645,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDataViewUnderFooterWidgets")
-      @js.native
-      def createInDataViewUnderFooterWidgets(container: DataView): NativePlaceholder = js.native
+      @scala.inline
+      def createInDataViewUnderFooterWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -681,9 +657,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDataViewUnderWidgets")
-      @js.native
-      def createInDataViewUnderWidgets(container: DataView): NativePlaceholder = js.native
+      @scala.inline
+      def createInDataViewUnderWidgets(container: DataView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -694,9 +669,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInDivContainerUnderWidgets")
-      @js.native
-      def createInDivContainerUnderWidgets(container: DivContainer): NativePlaceholder = js.native
+      @scala.inline
+      def createInDivContainerUnderWidgets(container: DivContainer): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -707,9 +681,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInGroupBoxUnderWidgets")
-      @js.native
-      def createInGroupBoxUnderWidgets(container: GroupBox): NativePlaceholder = js.native
+      @scala.inline
+      def createInGroupBoxUnderWidgets(container: GroupBox): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -720,9 +693,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInHeaderUnderLeftWidgets")
-      @js.native
-      def createInHeaderUnderLeftWidgets(container: Header): NativePlaceholder = js.native
+      @scala.inline
+      def createInHeaderUnderLeftWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -733,9 +705,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInHeaderUnderRightWidgets")
-      @js.native
-      def createInHeaderUnderRightWidgets(container: Header): NativePlaceholder = js.native
+      @scala.inline
+      def createInHeaderUnderRightWidgets(container: Header): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -746,9 +717,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutCallArgumentUnderWidgets")
-      @js.native
-      def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): NativePlaceholder = js.native
+      @scala.inline
+      def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -759,9 +729,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutGridColumnUnderWidgets")
-      @js.native
-      def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): NativePlaceholder = js.native
+      @scala.inline
+      def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -772,9 +741,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInLayoutUnderWidgets")
-      @js.native
-      def createInLayoutUnderWidgets(container: Layout): NativePlaceholder = js.native
+      @scala.inline
+      def createInLayoutUnderWidgets(container: Layout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -785,9 +753,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInListViewTemplateUnderWidgets")
-      @js.native
-      def createInListViewTemplateUnderWidgets(container: ListViewTemplate): NativePlaceholder = js.native
+      @scala.inline
+      def createInListViewTemplateUnderWidgets(container: ListViewTemplate): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -798,9 +765,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInListViewUnderWidgets")
-      @js.native
-      def createInListViewUnderWidgets(container: ListView): NativePlaceholder = js.native
+      @scala.inline
+      def createInListViewUnderWidgets(container: ListView): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -811,9 +777,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutCallArgumentUnderWidgets")
-      @js.native
-      def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NativePlaceholder = js.native
+      @scala.inline
+      def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -824,9 +789,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutUnderHeaderWidget")
-      @js.native
-      def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): NativePlaceholder = js.native
+      @scala.inline
+      def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -837,9 +801,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNativeLayoutUnderWidgets")
-      @js.native
-      def createInNativeLayoutUnderWidgets(container: NativeLayout): NativePlaceholder = js.native
+      @scala.inline
+      def createInNativeLayoutUnderWidgets(container: NativeLayout): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -850,9 +813,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInNavigationListItemUnderWidgets")
-      @js.native
-      def createInNavigationListItemUnderWidgets(container: NavigationListItem): NativePlaceholder = js.native
+      @scala.inline
+      def createInNavigationListItemUnderWidgets(container: NavigationListItem): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -863,9 +825,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInScrollContainerRegionUnderWidgets")
-      @js.native
-      def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): NativePlaceholder = js.native
+      @scala.inline
+      def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -876,9 +837,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSnippetUnderWidgets")
-      @js.native
-      def createInSnippetUnderWidgets(container: Snippet): NativePlaceholder = js.native
+      @scala.inline
+      def createInSnippetUnderWidgets(container: Snippet): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -889,9 +849,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSplitPaneUnderFirstWidgets")
-      @js.native
-      def createInSplitPaneUnderFirstWidgets(container: SplitPane): NativePlaceholder = js.native
+      @scala.inline
+      def createInSplitPaneUnderFirstWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -902,9 +861,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInSplitPaneUnderSecondWidgets")
-      @js.native
-      def createInSplitPaneUnderSecondWidgets(container: SplitPane): NativePlaceholder = js.native
+      @scala.inline
+      def createInSplitPaneUnderSecondWidgets(container: SplitPane): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -915,9 +873,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTabPageUnderWidgets")
-      @js.native
-      def createInTabPageUnderWidgets(container: TabPage): NativePlaceholder = js.native
+      @scala.inline
+      def createInTabPageUnderWidgets(container: TabPage): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -928,9 +885,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTableCellUnderWidgets")
-      @js.native
-      def createInTableCellUnderWidgets(container: TableCell): NativePlaceholder = js.native
+      @scala.inline
+      def createInTableCellUnderWidgets(container: TableCell): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /**
         * Creates and returns a new NativePlaceholder instance in the SDK and on the server.
@@ -941,9 +897,8 @@ object nativepagesMod {
         *  7.23.0 to 7.23.0
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.createInTemplateGridContentsUnderWidgets")
-      @js.native
-      def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): NativePlaceholder = js.native
+      @scala.inline
+      def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): NativePlaceholder = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[NativePlaceholder]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/nativepages", "nativepages.NativePlaceholder.structureTypeName")
@@ -969,7 +924,9 @@ object nativepagesMod {
       * In version 7.21.0: introduced
       */
     @js.native
-    trait INativeLayout extends IFormBase
+    trait INativeLayout
+      extends StObject
+         with IFormBase
     
     /**
       * NOTE: This class is experimental and is subject to change in newer Model SDK versions.
@@ -980,6 +937,8 @@ object nativepagesMod {
       * In version 7.21.0: introduced
       */
     @js.native
-    trait INativePage extends IFormBase
+    trait INativePage
+      extends StObject
+         with IFormBase
   }
 }

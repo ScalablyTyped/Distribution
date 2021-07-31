@@ -2,17 +2,18 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait KVOArray extends KVO {
+trait KVOArray
+  extends StObject
+     with KVO {
   
   def clear(): Unit = js.native
   
   def forEach(callback: js.Function2[/* element */ js.Any, /* index */ Double, Unit]): Unit = js.native
   
-  def getArray(): js.Array[_] = js.native
+  def getArray(): js.Array[js.Any] = js.native
   
   def getAt(index: Double): js.Any = js.native
   
@@ -32,6 +33,6 @@ trait KVOArray extends KVO {
   
   def setAt(index: Double, element: js.Any): Unit = js.native
   
-  def splice(startIndex: Double, deleteCount: Double): js.Array[_] = js.native
-  def splice(startIndex: Double, deleteCount: Double, element: js.Any): js.Array[_] = js.native
+  def splice(startIndex: Double, deleteCount: Double): js.Array[js.Any] = js.native
+  def splice(startIndex: Double, deleteCount: Double, element: js.Any): js.Array[js.Any] = js.native
 }

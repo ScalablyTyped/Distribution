@@ -11,7 +11,6 @@ import typings.sentryTypes.sessionMod.Session
 import typings.sentryTypes.severityMod.Severity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -28,7 +27,7 @@ object clientMod {
       * @returns The event id
       */
     def captureEvent(event: Event): js.UndefOr[String] = js.native
-    def captureEvent(event: Event, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureEvent(event: Event, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureEvent(event: Event, hint: EventHint): js.UndefOr[String] = js.native
     def captureEvent(event: Event, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
@@ -41,7 +40,7 @@ object clientMod {
       * @returns The event id
       */
     def captureException(exception: js.Any): js.UndefOr[String] = js.native
-    def captureException(exception: js.Any, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureException(exception: js.Any, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureException(exception: js.Any, hint: EventHint): js.UndefOr[String] = js.native
     def captureException(exception: js.Any, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     
@@ -55,11 +54,11 @@ object clientMod {
       * @returns The event id
       */
     def captureMessage(message: String): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: js.UndefOr[scala.Nothing], hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Unit, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Unit, hint: EventHint): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Unit, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity): js.UndefOr[String] = js.native
-    def captureMessage(message: String, level: Severity, hint: js.UndefOr[scala.Nothing], scope: Scope): js.UndefOr[String] = js.native
+    def captureMessage(message: String, level: Severity, hint: Unit, scope: Scope): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint): js.UndefOr[String] = js.native
     def captureMessage(message: String, level: Severity, hint: EventHint, scope: Scope): js.UndefOr[String] = js.native
     

@@ -3,13 +3,11 @@ package typings.emotionReact.anon
 import typings.emotionSerialize.mod.Interpolation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Css extends StObject {
   
-  var css: js.UndefOr[Interpolation[typings.emotionReact.emotionReactMod.Theme]] = js.native
+  var css: js.UndefOr[Interpolation[typings.emotionReact.emotionReactMod.Theme]] = js.undefined
 }
 object Css {
   

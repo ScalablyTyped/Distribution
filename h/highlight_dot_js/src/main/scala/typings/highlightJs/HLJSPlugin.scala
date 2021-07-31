@@ -2,24 +2,22 @@ package typings.highlightJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in highlight.js.PluginEvent ]:? any} */
-@js.native
 trait HLJSPlugin extends StObject {
   
   @JSName("after:highlight")
-  var afterColonhighlight: js.UndefOr[js.Any] = js.native
+  var afterColonhighlight: js.UndefOr[js.Any] = js.undefined
   
   @JSName("after:highlightBlock")
-  var afterColonhighlightBlock: js.UndefOr[js.Any] = js.native
+  var afterColonhighlightBlock: js.UndefOr[js.Any] = js.undefined
   
   @JSName("before:highlight")
-  var beforeColonhighlight: js.UndefOr[js.Any] = js.native
+  var beforeColonhighlight: js.UndefOr[js.Any] = js.undefined
   
   @JSName("before:highlightBlock")
-  var beforeColonhighlightBlock: js.UndefOr[js.Any] = js.native
+  var beforeColonhighlightBlock: js.UndefOr[js.Any] = js.undefined
 }
 object HLJSPlugin {
   

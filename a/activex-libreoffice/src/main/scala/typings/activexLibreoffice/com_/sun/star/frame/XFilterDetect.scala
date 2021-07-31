@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link com.sun.star.document.XExtendedFilterDetection} instead of this
   * @deprecated Deprecated
   */
-@js.native
-trait XFilterDetect extends XInterface {
+trait XFilterDetect
+  extends StObject
+     with XInterface {
   
-  def getContentType(URL: String): String = js.native
+  def getContentType(URL: String): String
   
-  def useExternBrowser(URL: String): Boolean = js.native
+  def useExternBrowser(URL: String): Boolean
 }
 object XFilterDetect {
   

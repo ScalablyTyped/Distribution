@@ -2,20 +2,18 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DimensionItemLayout...
   */
-@js.native
 trait IDimensionItemLayout extends StObject {
   
-  var qData: Null = js.native
+  var qData: Null
   
-  var qInfo: INxInfo = js.native
+  var qInfo: INxInfo
   
-  var qMeta: INxMetaTitleDescriptionTag = js.native
+  var qMeta: INxMetaTitleDescriptionTag
 }
 object IDimensionItemLayout {
   

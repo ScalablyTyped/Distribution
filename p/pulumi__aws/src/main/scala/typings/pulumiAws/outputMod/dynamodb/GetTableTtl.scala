@@ -2,15 +2,13 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableTtl extends StObject {
   
-  var attributeName: String = js.native
+  var attributeName: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object GetTableTtl {
   

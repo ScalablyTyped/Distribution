@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationResponse extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait DescribeConfigurationResponse extends StObject {
     The Amazon Resource Name (ARN) of the configuration.
     
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The time when the configuration was created.
     
     */
-  var CreationTime: js.UndefOr[timestampIso8601] = js.native
+  var CreationTime: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * 
     The description of the configuration.
     
     */
-  var Description: js.UndefOr[string] = js.native
+  var Description: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The versions of Apache Kafka with which you can use this MSK configuration.
     
     */
-  var KafkaVersions: js.UndefOr[listOfString] = js.native
+  var KafkaVersions: js.UndefOr[listOfString] = js.undefined
   
   /**
     * 
     Latest revision of the configuration.
     
     */
-  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.native
+  var LatestRevision: js.UndefOr[ConfigurationRevision] = js.undefined
   
   /**
     * 
     The name of the configuration.
     
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * 
     The state of the configuration. The possible states are ACTIVE, DELETING, and DELETE_FAILED. 
     
     */
-  var State: js.UndefOr[ConfigurationState] = js.native
+  var State: js.UndefOr[ConfigurationState] = js.undefined
 }
 object DescribeConfigurationResponse {
   

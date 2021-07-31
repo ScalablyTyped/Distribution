@@ -5,69 +5,69 @@ import typings.mangopay2NodejsSdk.mod.entityBase.EntityBaseData
 import typings.mangopay2NodejsSdk.typesMod.CurrencyISO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object card {
   
-  @js.native
-  trait CardData extends EntityBaseData {
+  trait CardData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * Whether the card is active or not
       */
-    var Active: Boolean = js.native
+    var Active: Boolean
     
     /**
       * A partially obfuscated version of the credit card number
       */
-    var Alias: String = js.native
+    var Alias: String
     
     /**
       * The bank code
       */
-    var BankCode: String = js.native
+    var BankCode: String
     
     /**
       * The provider of the card
       */
-    var CardProvider: String = js.native
+    var CardProvider: String
     
     /**
       * The type of card
       */
-    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType = js.native
+    var CardType: typings.mangopay2NodejsSdk.mod.card.CardType
     
     /**
       * The Country of the Address
       */
-    var Country: String = js.native
+    var Country: String
     
     /**
       * The currency - should be ISO_4217 format
       */
-    var Currency: CurrencyISO = js.native
+    var Currency: CurrencyISO
     
     /**
       * The expiry date of the card - must be in format MMYY
       */
-    var ExpirationDate: String = js.native
+    var ExpirationDate: String
     
     /**
       * A unique representation of a 16-digits card number
       */
-    var Fingerprint: String = js.native
+    var Fingerprint: String
     
     /**
       * The card product type - more info
       */
-    var Product: String = js.native
+    var Product: String
     
     /**
       * Whether the card is valid or not. Once they process (or attempt to process) a payment with the card we are able to indicate if it is "valid" or "invalid".
       * If they didn’t process a payment yet the "Validity" stay at "unknown".
       */
-    var Validity: CardValidity = js.native
+    var Validity: CardValidity
   }
   object CardData {
     
@@ -204,12 +204,11 @@ object card {
     def VALID: typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID = "VALID".asInstanceOf[typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.VALID]
   }
   
-  @js.native
   trait UpdateCard extends StObject {
     
-    var Active: js.UndefOr[`false`] = js.native
+    var Active: js.UndefOr[`false`] = js.undefined
     
-    var Id: String = js.native
+    var Id: String
   }
   object UpdateCard {
     

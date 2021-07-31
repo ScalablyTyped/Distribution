@@ -16,7 +16,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object emrClusterMod {
@@ -177,6 +176,10 @@ object emrClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/emr/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -186,160 +189,154 @@ object emrClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/emr/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/emr/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/emr/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/emr/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/emr/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/emr/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/emr/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * A JSON string for selecting additional features such as adding proxy information. Note: Currently there is no API to retrieve the value of this argument after EMR cluster creation from provider, therefore this provider cannot detect drift from the actual EMR cluster if its value is changed outside this provider.
       */
-    val additionalInfo: js.UndefOr[Input[String]] = js.native
+    val additionalInfo: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of applications for the cluster. Valid values are: `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub` (as of EMR 5.14.0). Case insensitive
       */
-    val applications: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val applications: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * An IAM role for automatic scaling policies. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate EC2 instances in an instance group.
       */
-    val autoscalingRole: js.UndefOr[Input[String]] = js.native
+    val autoscalingRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Ordered list of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below.
       */
-    val bootstrapActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterBootstrapAction]]]] = js.native
+    val bootstrapActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterBootstrapAction]]]] = js.undefined
     
     /**
       * A configuration classification that applies when provisioning cluster instances, which can include configurations for applications and software that run on the cluster. List of `configuration` blocks.
       */
-    val configurations: js.UndefOr[Input[String]] = js.native
+    val configurations: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON string for supplying list of configurations for the EMR cluster.
       */
-    val configurationsJson: js.UndefOr[Input[String]] = js.native
+    val configurationsJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Fleet](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) for the core node type. Cannot be specified if any `coreInstanceGroup` configuration blocks are set. Detailed below.
       */
-    val coreInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceFleet]] = js.native
+    val coreInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceFleet]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [core node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-core).
       */
-    val coreInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceGroup]] = js.native
+    val coreInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceGroup]] = js.undefined
     
     /**
       * A custom Amazon Linux AMI for the cluster (instead of an EMR-owned AMI). Available in Amazon EMR version 5.7.0 and later.
       */
-    val customAmiId: js.UndefOr[Input[String]] = js.native
+    val customAmiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Size in GiB of the EBS root device volume of the Linux AMI that is used for each EC2 instance. Available in Amazon EMR version 4.x and later.
       */
-    val ebsRootVolumeSize: js.UndefOr[Input[Double]] = js.native
+    val ebsRootVolumeSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Attributes for the EC2 instances running the job flow. Defined below
       */
-    val ec2Attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterEc2Attributes]] = js.native
+    val ec2Attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterEc2Attributes]] = js.undefined
     
     /**
       * Switch on/off run cluster with no steps or when all steps are complete (default is on)
       */
-    val keepJobFlowAliveWhenNoSteps: js.UndefOr[Input[Boolean]] = js.native
+    val keepJobFlowAliveWhenNoSteps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Kerberos configuration for the cluster. Defined below
       */
-    val kerberosAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterKerberosAttributes]] = js.native
+    val kerberosAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterKerberosAttributes]] = js.undefined
     
     /**
       * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
       */
-    val logUri: js.UndefOr[Input[String]] = js.native
+    val logUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Fleet](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) for the master node type. Cannot be specified if any `masterInstanceGroup` configuration blocks are set. Detailed below.
       */
-    val masterInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceFleet]] = js.native
+    val masterInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceFleet]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [master node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-master).
       */
-    val masterInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceGroup]] = js.native
+    val masterInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceGroup]] = js.undefined
     
     /**
       * Friendly name given to the instance fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The release label for the Amazon EMR release
       */
-    val releaseLabel: Input[String] = js.native
+    val releaseLabel: Input[String]
     
     /**
       * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an `instance group` is resized.
       */
-    val scaleDownBehavior: js.UndefOr[Input[String]] = js.native
+    val scaleDownBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The security configuration name to attach to the EMR cluster. Only valid for EMR clusters with `releaseLabel` 4.8.0 or greater
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role that will be assumed by the Amazon EMR service to access AWS resources
       */
-    val serviceRole: Input[String] = js.native
+    val serviceRole: Input[String]
     
     /**
       * The number of steps that can be executed concurrently. You can specify a maximum of 256 steps. Only valid for EMR clusters with `releaseLabel` 5.28.0 or greater. (default is 1)
       */
-    val stepConcurrencyLevel: js.UndefOr[Input[Double]] = js.native
+    val stepConcurrencyLevel: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if other steps are being managed outside of this provider.
       */
-    val steps: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterStep]]]] = js.native
+    val steps: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterStep]]]] = js.undefined
     
     /**
       * list of tags to apply to the EMR Cluster
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Switch on/off termination protection (default is `false`, except when using multiple master nodes). Before attempting to destroy the resource when termination protection is enabled, this configuration must be applied with its value set to `false`.
       */
-    val terminationProtection: js.UndefOr[Input[Boolean]] = js.native
+    val terminationProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether the job flow is visible to all IAM users of the AWS account associated with the job flow. Default `true`
       */
-    val visibleToAllUsers: js.UndefOr[Input[Boolean]] = js.native
+    val visibleToAllUsers: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ClusterArgs {
     
@@ -513,148 +510,147 @@ object emrClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
       * A JSON string for selecting additional features such as adding proxy information. Note: Currently there is no API to retrieve the value of this argument after EMR cluster creation from provider, therefore this provider cannot detect drift from the actual EMR cluster if its value is changed outside this provider.
       */
-    val additionalInfo: js.UndefOr[Input[String]] = js.native
+    val additionalInfo: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of applications for the cluster. Valid values are: `Flink`, `Hadoop`, `Hive`, `Mahout`, `Pig`, `Spark`, and `JupyterHub` (as of EMR 5.14.0). Case insensitive
       */
-    val applications: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val applications: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An IAM role for automatic scaling policies. The IAM role provides permissions that the automatic scaling feature requires to launch and terminate EC2 instances in an instance group.
       */
-    val autoscalingRole: js.UndefOr[Input[String]] = js.native
+    val autoscalingRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Ordered list of bootstrap actions that will be run before Hadoop is started on the cluster nodes. Defined below.
       */
-    val bootstrapActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterBootstrapAction]]]] = js.native
+    val bootstrapActions: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterBootstrapAction]]]] = js.undefined
     
-    val clusterState: js.UndefOr[Input[String]] = js.native
+    val clusterState: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration classification that applies when provisioning cluster instances, which can include configurations for applications and software that run on the cluster. List of `configuration` blocks.
       */
-    val configurations: js.UndefOr[Input[String]] = js.native
+    val configurations: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A JSON string for supplying list of configurations for the EMR cluster.
       */
-    val configurationsJson: js.UndefOr[Input[String]] = js.native
+    val configurationsJson: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Fleet](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) for the core node type. Cannot be specified if any `coreInstanceGroup` configuration blocks are set. Detailed below.
       */
-    val coreInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceFleet]] = js.native
+    val coreInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceFleet]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [core node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-core).
       */
-    val coreInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceGroup]] = js.native
+    val coreInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterCoreInstanceGroup]] = js.undefined
     
     /**
       * A custom Amazon Linux AMI for the cluster (instead of an EMR-owned AMI). Available in Amazon EMR version 5.7.0 and later.
       */
-    val customAmiId: js.UndefOr[Input[String]] = js.native
+    val customAmiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Size in GiB of the EBS root device volume of the Linux AMI that is used for each EC2 instance. Available in Amazon EMR version 4.x and later.
       */
-    val ebsRootVolumeSize: js.UndefOr[Input[Double]] = js.native
+    val ebsRootVolumeSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Attributes for the EC2 instances running the job flow. Defined below
       */
-    val ec2Attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterEc2Attributes]] = js.native
+    val ec2Attributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterEc2Attributes]] = js.undefined
     
     /**
       * Switch on/off run cluster with no steps or when all steps are complete (default is on)
       */
-    val keepJobFlowAliveWhenNoSteps: js.UndefOr[Input[Boolean]] = js.native
+    val keepJobFlowAliveWhenNoSteps: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Kerberos configuration for the cluster. Defined below
       */
-    val kerberosAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterKerberosAttributes]] = js.native
+    val kerberosAttributes: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterKerberosAttributes]] = js.undefined
     
     /**
       * S3 bucket to write the log files of the job flow. If a value is not provided, logs are not created
       */
-    val logUri: js.UndefOr[Input[String]] = js.native
+    val logUri: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Fleet](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-fleet.html) for the master node type. Cannot be specified if any `masterInstanceGroup` configuration blocks are set. Detailed below.
       */
-    val masterInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceFleet]] = js.native
+    val masterInstanceFleet: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceFleet]] = js.undefined
     
     /**
       * Configuration block to use an [Instance Group](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-instance-group-configuration.html#emr-plan-instance-groups) for the [master node type](https://docs.aws.amazon.com/emr/latest/ManagementGuide/emr-master-core-task-nodes.html#emr-plan-master).
       */
-    val masterInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceGroup]] = js.native
+    val masterInstanceGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.emr.ClusterMasterInstanceGroup]] = js.undefined
     
     /**
       * The public DNS name of the master EC2 instance.
       * * `core_instance_group.0.id` - Core node type Instance Group ID, if using Instance Group for this node type.
       */
-    val masterPublicDns: js.UndefOr[Input[String]] = js.native
+    val masterPublicDns: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Friendly name given to the instance fleet.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The release label for the Amazon EMR release
       */
-    val releaseLabel: js.UndefOr[Input[String]] = js.native
+    val releaseLabel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The way that individual Amazon EC2 instances terminate when an automatic scale-in activity occurs or an `instance group` is resized.
       */
-    val scaleDownBehavior: js.UndefOr[Input[String]] = js.native
+    val scaleDownBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The security configuration name to attach to the EMR cluster. Only valid for EMR clusters with `releaseLabel` 4.8.0 or greater
       */
-    val securityConfiguration: js.UndefOr[Input[String]] = js.native
+    val securityConfiguration: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * IAM role that will be assumed by the Amazon EMR service to access AWS resources
       */
-    val serviceRole: js.UndefOr[Input[String]] = js.native
+    val serviceRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of steps that can be executed concurrently. You can specify a maximum of 256 steps. Only valid for EMR clusters with `releaseLabel` 5.28.0 or greater. (default is 1)
       */
-    val stepConcurrencyLevel: js.UndefOr[Input[Double]] = js.native
+    val stepConcurrencyLevel: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * List of steps to run when creating the cluster. Defined below. It is highly recommended to utilize [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) if other steps are being managed outside of this provider.
       */
-    val steps: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterStep]]]] = js.native
+    val steps: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.emr.ClusterStep]]]] = js.undefined
     
     /**
       * list of tags to apply to the EMR Cluster
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Switch on/off termination protection (default is `false`, except when using multiple master nodes). Before attempting to destroy the resource when termination protection is enabled, this configuration must be applied with its value set to `false`.
       */
-    val terminationProtection: js.UndefOr[Input[Boolean]] = js.native
+    val terminationProtection: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Whether the job flow is visible to all IAM users of the AWS account associated with the job flow. Default `true`
       */
-    val visibleToAllUsers: js.UndefOr[Input[Boolean]] = js.native
+    val visibleToAllUsers: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object ClusterState {
     

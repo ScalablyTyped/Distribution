@@ -2,18 +2,16 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectByHeapObjectIdRequest extends StObject {
   
   /**
     * Symbolic group name that can be used to release multiple objects.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
-  var objectId: HeapSnapshotObjectId = js.native
+  var objectId: HeapSnapshotObjectId
 }
 object GetObjectByHeapObjectIdRequest {
   

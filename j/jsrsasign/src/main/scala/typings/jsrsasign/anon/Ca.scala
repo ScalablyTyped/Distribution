@@ -2,15 +2,13 @@ package typings.jsrsasign.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ca extends StObject {
   
-  var ca: Boolean = js.native
+  var ca: Boolean
   
-  var critical: Boolean = js.native
+  var critical: Boolean
 }
 object Ca {
   

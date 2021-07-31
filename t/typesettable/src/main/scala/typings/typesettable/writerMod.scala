@@ -7,7 +7,6 @@ import typings.typesettable.measurersMod.AbstractMeasurer
 import typings.typesettable.wrappersMod.Wrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object writerMod {
@@ -15,8 +14,8 @@ object writerMod {
   @JSImport("typesettable/build/src/writers/writer", "Writer")
   @js.native
   class Writer protected () extends StObject {
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[_]) = this()
-    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[_], _wrapper: Wrapper) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any]) = this()
+    def this(_measurer: AbstractMeasurer, _penFactory: IPenFactoryContext[js.Any], _wrapper: Wrapper) = this()
     
     var _measurer: js.Any = js.native
     
@@ -26,7 +25,7 @@ object writerMod {
     
     def measurer(newMeasurer: AbstractMeasurer): Writer = js.native
     
-    def penFactory(newPenFactory: IPenFactoryContext[_]): Writer = js.native
+    def penFactory(newPenFactory: IPenFactoryContext[js.Any]): Writer = js.native
     
     def wrapper(newWrapper: Wrapper): Writer = js.native
     
@@ -35,7 +34,7 @@ object writerMod {
       * default container will be used.
       */
     def write[T](text: String, width: Double, height: Double): Unit = js.native
-    def write[T](text: String, width: Double, height: Double, options: js.UndefOr[scala.Nothing], container: T): Unit = js.native
+    def write[T](text: String, width: Double, height: Double, options: Unit, container: T): Unit = js.native
     def write[T](text: String, width: Double, height: Double, options: IWriteOptions): Unit = js.native
     def write[T](text: String, width: Double, height: Double, options: IWriteOptions, container: T): Unit = js.native
     
@@ -74,13 +73,12 @@ object writerMod {
     def YOffsetFactor_=(x: KinIYAlignnumber): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("YOffsetFactor")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPen extends StObject {
     
     /**
       * Called once all the lines have been written
       */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Called once for each line of text in the block.
@@ -88,7 +86,7 @@ object writerMod {
       * `xOffset` and `yOffset` are assumed to be in an independent text-aligned
       * coordinate space.
       */
-    def write(line: String, width: Double, anchor: IXAlign, xOffset: Double, yOffset: Double): Unit = js.native
+    def write(line: String, width: Double, anchor: IXAlign, xOffset: Double, yOffset: Double): Unit
   }
   object IPen {
     
@@ -114,18 +112,17 @@ object writerMod {
   
   type IPenFactory[T] = js.Function3[/* text */ String, /* transform */ ITransform, /* container */ js.UndefOr[T], IPen]
   
-  @js.native
   trait ITransform extends StObject {
     
     /**
       * Rotation in degrees.
       */
-    var rotate: Double = js.native
+    var rotate: Double
     
     /**
       * Translation in pixels.
       */
-    var translate: js.Tuple2[Double, Double] = js.native
+    var translate: js.Tuple2[Double, Double]
   }
   object ITransform {
     
@@ -146,7 +143,6 @@ object writerMod {
     }
   }
   
-  @js.native
   trait IWriteOptions extends StObject {
     
     /**
@@ -156,7 +152,7 @@ object writerMod {
       *
       * @default 0
       */
-    var textRotation: js.UndefOr[Double] = js.native
+    var textRotation: js.UndefOr[Double] = js.undefined
     
     /**
       * An optional shear angle. Shearing allows the rotation and re-alignment of
@@ -166,21 +162,21 @@ object writerMod {
       *
       * @default 0
       */
-    var textShear: js.UndefOr[Double] = js.native
+    var textShear: js.UndefOr[Double] = js.undefined
     
     /**
       * The x-alignment of text.
       *
       * @default "left"
       */
-    var xAlign: js.UndefOr[IXAlign] = js.native
+    var xAlign: js.UndefOr[IXAlign] = js.undefined
     
     /**
       * The y-alignment of text.
       *
       * @default "top"
       */
-    var yAlign: js.UndefOr[IYAlign] = js.native
+    var yAlign: js.UndefOr[IYAlign] = js.undefined
   }
   object IWriteOptions {
     

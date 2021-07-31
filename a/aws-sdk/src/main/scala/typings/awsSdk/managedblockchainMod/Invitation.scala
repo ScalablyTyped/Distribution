@@ -2,33 +2,31 @@ package typings.awsSdk.managedblockchainMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invitation extends StObject {
   
   /**
     * The date and time that the invitation was created.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date and time that the invitation expires. This is the CreationDate plus the ProposalDurationInHours that is specified in the ProposalThresholdPolicy. After this date and time, the invitee can no longer create a member and join the network using this InvitationId.
     */
-  var ExpirationDate: js.UndefOr[Timestamp] = js.native
+  var ExpirationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier for the invitation.
     */
-  var InvitationId: js.UndefOr[ResourceIdString] = js.native
+  var InvitationId: js.UndefOr[ResourceIdString] = js.undefined
   
-  var NetworkSummary: js.UndefOr[typings.awsSdk.managedblockchainMod.NetworkSummary] = js.native
+  var NetworkSummary: js.UndefOr[typings.awsSdk.managedblockchainMod.NetworkSummary] = js.undefined
   
   /**
     * The status of the invitation:    PENDING - The invitee has not created a member to join the network, and the invitation has not yet expired.    ACCEPTING - The invitee has begun creating a member, and creation has not yet completed.    ACCEPTED - The invitee created a member and joined the network using the InvitationID.    REJECTED - The invitee rejected the invitation.    EXPIRED - The invitee neither created a member nor rejected the invitation before the ExpirationDate.  
     */
-  var Status: js.UndefOr[InvitationStatus] = js.native
+  var Status: js.UndefOr[InvitationStatus] = js.undefined
 }
 object Invitation {
   

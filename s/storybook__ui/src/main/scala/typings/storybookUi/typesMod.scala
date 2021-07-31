@@ -1,31 +1,33 @@
 package typings.storybookUi
 
+import typings.history.mod.LocationState
+import typings.reachRouter.mod.WindowLocation
 import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import typings.std.Record
 import typings.storybookApi.mod.API
+import typings.storybookApi.refsMod.Refs
 import typings.storybookApi.storiesMod.Group
 import typings.storybookApi.storiesMod.Story
+import typings.storybookApi.urlMod.QueryParams
 import typings.storybookUi.anon.IsFullscreenIsToolshown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait ApplyWrappersProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var storyId: String = js.native
+    var storyId: String
     
-    var viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any = js.native
+    var viewMode: typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String]
     
-    var wrappers: js.Array[Wrapper] = js.native
+    var wrappers: js.Array[Wrapper]
   }
   object ApplyWrappersProps {
     
@@ -34,7 +36,7 @@ object typesMod {
       active: Boolean,
       id: String,
       storyId: String,
-      viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any,
+      viewMode: typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String],
       wrappers: js.Array[Wrapper]
     ): ApplyWrappersProps = {
       val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], storyId = storyId.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any], wrappers = wrappers.asInstanceOf[js.Any])
@@ -54,9 +56,7 @@ object typesMod {
       def setStoryId(value: String): Self = StObject.set(x, "storyId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setViewMode(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-      ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      def setViewMode(value: typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWrappers(value: js.Array[Wrapper]): Self = StObject.set(x, "wrappers", value.asInstanceOf[js.Any])
@@ -68,7 +68,7 @@ object typesMod {
   
   type CustomCanvasRenderer = js.Function6[
     /* storyId */ String, 
-    /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ /* viewMode */ js.Any, 
+    /* viewMode */ typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String], 
     /* id */ String, 
     /* baseUrl */ String, 
     /* scale */ Double, 
@@ -76,33 +76,32 @@ object typesMod {
     ReactNode
   ]
   
-  @js.native
   trait FramesRendererProps extends StObject {
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var queryParams: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any = js.native
+    var queryParams: QueryParams
     
-    var refId: String = js.native
+    var refId: String
     
-    var refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any = js.native
+    var refs: Refs
     
-    var scale: Double = js.native
+    var scale: Double
     
-    var story: Story | Group = js.native
+    var story: Story | Group
     
-    var storyId: String = js.native
+    var storyId: String
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
   }
   object FramesRendererProps {
     
     @scala.inline
     def apply(
       baseUrl: String,
-      queryParams: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any,
+      queryParams: QueryParams,
       refId: String,
-      refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any,
+      refs: Refs,
       scale: Double,
       story: Story | Group,
       storyId: String,
@@ -119,17 +118,13 @@ object typesMod {
       def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setQueryParams(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any
-      ): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRefId(value: String): Self = StObject.set(x, "refId", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefs(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any
-      ): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
@@ -145,36 +140,35 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PreviewProps extends StObject {
     
-    var api: API = js.native
+    var api: API
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var customCanvas: js.UndefOr[CustomCanvasRenderer] = js.native
+    var customCanvas: js.UndefOr[CustomCanvasRenderer] = js.undefined
     
-    var description: String = js.native
+    var description: String
     
-    var docsOnly: Boolean = js.native
+    var docsOnly: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var location: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['location'] */ js.Any = js.native
+    var location: WindowLocation[LocationState]
     
-    var options: IsFullscreenIsToolshown = js.native
+    var options: IsFullscreenIsToolshown
     
-    var path: String = js.native
+    var path: String
     
-    var queryParams: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any = js.native
+    var queryParams: QueryParams
     
-    var refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any = js.native
+    var refs: Refs
     
-    var story: Group | Story = js.native
+    var story: Group | Story
     
-    var viewMode: ViewMode = js.native
+    var viewMode: ViewMode
     
-    var withLoader: Boolean = js.native
+    var withLoader: Boolean
   }
   object PreviewProps {
     
@@ -185,11 +179,11 @@ object typesMod {
       description: String,
       docsOnly: Boolean,
       id: String,
-      location: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['location'] */ js.Any,
+      location: WindowLocation[LocationState],
       options: IsFullscreenIsToolshown,
       path: String,
-      queryParams: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any,
-      refs: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any,
+      queryParams: QueryParams,
+      refs: Refs,
       story: Group | Story,
       viewMode: ViewMode,
       withLoader: Boolean
@@ -209,7 +203,7 @@ object typesMod {
       
       @scala.inline
       def setCustomCanvas(
-        value: (/* storyId */ String, /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ /* viewMode */ js.Any, /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
+        value: (/* storyId */ String, /* viewMode */ typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String], /* id */ String, /* baseUrl */ String, /* scale */ Double, /* queryParams */ Record[String, js.Any]) => ReactNode
       ): Self = StObject.set(x, "customCanvas", js.Any.fromFunction6(value))
       
       @scala.inline
@@ -225,9 +219,7 @@ object typesMod {
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLocation(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['location'] */ js.Any
-      ): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
+      def setLocation(value: WindowLocation[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOptions(value: IsFullscreenIsToolshown): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
@@ -236,14 +228,10 @@ object typesMod {
       def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setQueryParams(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['customQueryParams'] */ js.Any
-      ): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
+      def setQueryParams(value: QueryParams): Self = StObject.set(x, "queryParams", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefs(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['refs'] */ js.Any
-      ): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
+      def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStory(value: Group | Story): Self = StObject.set(x, "story", value.asInstanceOf[js.Any])
@@ -256,12 +244,11 @@ object typesMod {
     }
   }
   
-  type ViewMode = /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
+  type ViewMode = typings.storybookApi.modulesStoriesMod.ViewMode & js.UndefOr[String]
   
-  @js.native
   trait Wrapper extends StObject {
     
-    var render: FunctionComponent[WrapperProps] = js.native
+    var render: FunctionComponent[WrapperProps]
   }
   object Wrapper {
     
@@ -279,18 +266,17 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WrapperProps extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var id: String = js.native
+    var id: String
     
-    var index: Double = js.native
+    var index: Double
     
-    var storyId: String = js.native
+    var storyId: String
   }
   object WrapperProps {
     

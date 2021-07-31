@@ -10,10 +10,13 @@ import typings.seleniumWebdriver.remoteMod.DriverService
 import typings.seleniumWebdriver.remoteMod.DriverService.Builder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chromeMod {
+  
+  @JSImport("selenium-webdriver/chrome", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/chrome", "Driver")
   @js.native
@@ -31,6 +34,10 @@ object chromeMod {
   /* static members */
   object Driver {
     
+    @JSImport("selenium-webdriver/chrome", "Driver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new session with the ChromeDriver.
       *
@@ -42,33 +49,24 @@ object chromeMod {
       *     default.
       * @return {!Driver} A new driver instance.
       */
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: js.UndefOr[scala.Nothing], opt_service: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options, opt_service: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: Options, opt_service: DriverService): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: CreateSessionCapabilities): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = js.native
-    @JSImport("selenium-webdriver/chrome", "Driver.createSession")
-    @js.native
-    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = js.native
+    @scala.inline
+    def createSession(): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")().asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Unit, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Unit, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: Options, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: CreateSessionCapabilities): Driver = ^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any]).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: CreateSessionCapabilities, opt_service: Executor): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
+    @scala.inline
+    def createSession(opt_config: CreateSessionCapabilities, opt_service: DriverService): Driver = (^.asInstanceOf[js.Dynamic].applyDynamic("createSession")(opt_config.asInstanceOf[js.Any], opt_service.asInstanceOf[js.Any])).asInstanceOf[Driver]
   }
   
   @JSImport("selenium-webdriver/chrome", "Options")
@@ -307,15 +305,18 @@ object chromeMod {
   /* static members */
   object Options {
     
+    @JSImport("selenium-webdriver/chrome", "Options")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Extracts the ChromeDriver specific options from the given capabilities
       * object.
       * @param {!webdriver.Capabilities} capabilities The capabilities object.
       * @return {!Options} The ChromeDriver options.
       */
-    @JSImport("selenium-webdriver/chrome", "Options.fromCapabilities")
-    @js.native
-    def fromCapabilities(capabilities: Capabilities): Options = js.native
+    @scala.inline
+    def fromCapabilities(capabilities: Capabilities): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCapabilities")(capabilities.asInstanceOf[js.Any]).asInstanceOf[Options]
   }
   
   @JSImport("selenium-webdriver/chrome", "ServiceBuilder")
@@ -364,30 +365,27 @@ object chromeMod {
     def setNumHttpThreads(n: Double): this.type = js.native
   }
   
-  @JSImport("selenium-webdriver/chrome", "getDefaultService")
-  @js.native
-  def getDefaultService(): DriverService = js.native
+  @scala.inline
+  def getDefaultService(): DriverService = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultService")().asInstanceOf[DriverService]
   
-  @JSImport("selenium-webdriver/chrome", "setDefaultService")
-  @js.native
-  def setDefaultService(service: DriverService): Unit = js.native
+  @scala.inline
+  def setDefaultService(service: DriverService): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultService")(service.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait IOptionsValues extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var binary: js.UndefOr[String] = js.native
+    var binary: js.UndefOr[String] = js.undefined
     
-    var detach: Boolean = js.native
+    var detach: Boolean
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
     
-    var localState: js.UndefOr[js.Any] = js.native
+    var localState: js.UndefOr[js.Any] = js.undefined
     
-    var logFile: js.UndefOr[String] = js.native
+    var logFile: js.UndefOr[String] = js.undefined
     
-    var prefs: js.UndefOr[js.Any] = js.native
+    var prefs: js.UndefOr[js.Any] = js.undefined
   }
   object IOptionsValues {
     
@@ -441,18 +439,17 @@ object chromeMod {
     }
   }
   
-  @js.native
   trait IPerfLoggingPrefs extends StObject {
     
-    var bufferUsageReportingInterval: Double = js.native
+    var bufferUsageReportingInterval: Double
     
-    var enableNetwork: Boolean = js.native
+    var enableNetwork: Boolean
     
-    var enablePage: Boolean = js.native
+    var enablePage: Boolean
     
-    var enableTimeline: Boolean = js.native
+    var enableTimeline: Boolean
     
-    var tracingCategories: String = js.native
+    var tracingCategories: String
   }
   object IPerfLoggingPrefs {
     

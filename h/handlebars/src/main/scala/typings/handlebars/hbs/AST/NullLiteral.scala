@@ -2,21 +2,21 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullLiteral extends Node {
+trait NullLiteral
+  extends StObject
+     with Node {
   
   @JSName("type")
-  var type_NullLiteral: typings.handlebars.handlebarsStrings.NullLiteral = js.native
+  var type_NullLiteral: typings.handlebars.handlebarsStrings.NullLiteral
 }
 object NullLiteral {
   
   @scala.inline
-  def apply(loc: SourceLocation, `type`: typings.handlebars.handlebarsStrings.NullLiteral): NullLiteral = {
+  def apply(loc: SourceLocation): NullLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NullLiteral")
     __obj.asInstanceOf[NullLiteral]
   }
   

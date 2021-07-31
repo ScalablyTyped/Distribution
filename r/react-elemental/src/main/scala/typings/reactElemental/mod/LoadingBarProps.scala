@@ -3,21 +3,19 @@ package typings.reactElemental.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingBarProps extends StObject {
   
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
-  val delay: js.UndefOr[Double] = js.native
+  val delay: js.UndefOr[Double] = js.undefined
   
-  val duration: js.UndefOr[Double] = js.native
+  val duration: js.UndefOr[Double] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val thickness: js.UndefOr[Double] = js.native
+  val thickness: js.UndefOr[Double] = js.undefined
 }
 object LoadingBarProps {
   

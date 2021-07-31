@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionRecord extends StObject {
   
   /**
     *  Specifies the identifier of the given flow run. 
     */
-  var executionId: js.UndefOr[ExecutionId] = js.native
+  var executionId: js.UndefOr[ExecutionId] = js.undefined
   
   /**
     *  Describes the result of the given flow run. 
     */
-  var executionResult: js.UndefOr[ExecutionResult] = js.native
+  var executionResult: js.UndefOr[ExecutionResult] = js.undefined
   
   /**
     *  Specifies the flow run status and whether it is in progress, has completed successfully, or has failed. 
     */
-  var executionStatus: js.UndefOr[ExecutionStatus] = js.native
+  var executionStatus: js.UndefOr[ExecutionStatus] = js.undefined
   
   /**
     *  Specifies the time of the most recent update. 
     */
-  var lastUpdatedAt: js.UndefOr[Date] = js.native
+  var lastUpdatedAt: js.UndefOr[Date] = js.undefined
   
   /**
     *  Specifies the start time of the flow run. 
     */
-  var startedAt: js.UndefOr[Date] = js.native
+  var startedAt: js.UndefOr[Date] = js.undefined
 }
 object ExecutionRecord {
   

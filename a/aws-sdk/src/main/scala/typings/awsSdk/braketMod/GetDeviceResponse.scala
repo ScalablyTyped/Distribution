@@ -2,41 +2,39 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDeviceResponse extends StObject {
   
   /**
     * The ARN of the device.
     */
-  var deviceArn: DeviceArn = js.native
+  var deviceArn: DeviceArn
   
   /**
     * Details about the capabilities of the device.
     */
-  var deviceCapabilities: JsonValue = js.native
+  var deviceCapabilities: JsonValue
   
   /**
     * The name of the device.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * The status of the device.
     */
-  var deviceStatus: DeviceStatus = js.native
+  var deviceStatus: DeviceStatus
   
   /**
     * The type of the device.
     */
-  var deviceType: DeviceType = js.native
+  var deviceType: DeviceType
   
   /**
     * The name of the partner company for the device.
     */
-  var providerName: String = js.native
+  var providerName: String
 }
 object GetDeviceResponse {
   

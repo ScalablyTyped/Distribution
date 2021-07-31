@@ -13,12 +13,12 @@ import typings.openjscad.anon.Class
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait CSG
-  extends CxG
+  extends StObject
+     with CxG
      with ICenter {
   
   var cachedBoundingBox: js.Array[Vector3D] = js.native
@@ -47,9 +47,9 @@ trait CSG
   def intersect(csg: CSG): CSG = js.native
   
   def intersectSub(csg: CSG): CSG = js.native
-  def intersectSub(csg: CSG, retesselate: js.UndefOr[scala.Nothing], canonicalize: Boolean): CSG = js.native
   def intersectSub(csg: CSG, retesselate: Boolean): CSG = js.native
   def intersectSub(csg: CSG, retesselate: Boolean, canonicalize: Boolean): CSG = js.native
+  def intersectSub(csg: CSG, retesselate: Unit, canonicalize: Boolean): CSG = js.native
   
   def invert(): CSG = js.native
   
@@ -88,7 +88,7 @@ trait CSG
   
   def toPolygons(): js.Array[Polygon] = js.native
   
-  def toTriangles(): js.Array[_] = js.native
+  def toTriangles(): js.Array[js.Any] = js.native
   
   def toX3D(): Blob = js.native
   
@@ -100,14 +100,16 @@ trait CSG
   def unionForNonIntersecting(csg: CSG): CSG = js.native
   
   def unionSub(csg: CSG): CSG = js.native
-  def unionSub(csg: CSG, retesselate: js.UndefOr[scala.Nothing], canonicalize: Boolean): CSG = js.native
   def unionSub(csg: CSG, retesselate: Boolean): CSG = js.native
   def unionSub(csg: CSG, retesselate: Boolean, canonicalize: Boolean): CSG = js.native
+  def unionSub(csg: CSG, retesselate: Unit, canonicalize: Boolean): CSG = js.native
 }
 object CSG {
   
   @js.native
-  trait Connector extends CxG {
+  trait Connector
+    extends StObject
+       with CxG {
     
     def axisLine(): Line3D = js.native
     
@@ -124,20 +126,19 @@ object CSG {
     var point: Vector3D = js.native
   }
   
-  @js.native
   trait ConnectorList extends StObject {
     
-    def appendConnector(conn: Connector): Unit = js.native
+    def appendConnector(conn: Connector): Unit
     
-    var closed: Boolean = js.native
+    var closed: Boolean
     
-    var connectors_ : js.Array[Connector] = js.native
+    var connectors_ : js.Array[Connector]
     
-    def followWith(cagish: js.Any): CSG = js.native
+    def followWith(cagish: js.Any): CSG
     
-    def setClosed(bool: Boolean): Unit = js.native
+    def setClosed(bool: Boolean): Unit
     
-    def verify(): Unit = js.native
+    def verify(): Unit
   }
   object ConnectorList {
     
@@ -180,14 +181,15 @@ object CSG {
     }
   }
   
-  @js.native
-  trait IArcOptions extends ICircleOptions {
+  trait IArcOptions
+    extends StObject
+       with ICircleOptions {
     
-    var endangle: js.UndefOr[Double] = js.native
+    var endangle: js.UndefOr[Double] = js.undefined
     
-    var maketangent: js.UndefOr[Boolean] = js.native
+    var maketangent: js.UndefOr[Boolean] = js.undefined
     
-    var startangle: js.UndefOr[Double] = js.native
+    var startangle: js.UndefOr[Double] = js.undefined
   }
   object IArcOptions {
     
@@ -220,10 +222,11 @@ object CSG {
     }
   }
   
-  @js.native
-  trait ICircleOptions extends IRadiusOptions {
+  trait ICircleOptions
+    extends StObject
+       with IRadiusOptions {
     
-    var center: js.UndefOr[Vector2D | js.Array[Double]] = js.native
+    var center: js.UndefOr[Vector2D | js.Array[Double]] = js.undefined
   }
   object ICircleOptions {
     
@@ -247,18 +250,19 @@ object CSG {
     }
   }
   
-  @js.native
-  trait IEllpiticalArcOptions extends IRadiusOptions {
+  trait IEllpiticalArcOptions
+    extends StObject
+       with IRadiusOptions {
     
-    var clockwise: js.UndefOr[Boolean] = js.native
+    var clockwise: js.UndefOr[Boolean] = js.undefined
     
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
-    var xaxisrotation: js.UndefOr[Double] = js.native
+    var xaxisrotation: js.UndefOr[Double] = js.undefined
     
-    var xradius: js.UndefOr[Double] = js.native
+    var xradius: js.UndefOr[Double] = js.undefined
     
-    var yradius: js.UndefOr[Double] = js.native
+    var yradius: js.UndefOr[Double] = js.undefined
   }
   object IEllpiticalArcOptions {
     
@@ -303,12 +307,11 @@ object CSG {
     }
   }
   
-  @js.native
   trait IRadiusOptions extends StObject {
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
   }
   object IRadiusOptions {
     
@@ -335,16 +338,15 @@ object CSG {
     }
   }
   
-  @js.native
   trait IRectangleOptions extends StObject {
     
-    var center: js.UndefOr[Vector2D] = js.native
+    var center: js.UndefOr[Vector2D] = js.undefined
     
-    var corner1: js.UndefOr[Vector2D] = js.native
+    var corner1: js.UndefOr[Vector2D] = js.undefined
     
-    var corner2: js.UndefOr[Vector2D] = js.native
+    var corner2: js.UndefOr[Vector2D] = js.undefined
     
-    var radius: js.UndefOr[Vector2D] = js.native
+    var radius: js.UndefOr[Vector2D] = js.undefined
   }
   object IRectangleOptions {
     
@@ -383,12 +385,11 @@ object CSG {
     }
   }
   
-  @js.native
   trait IRoundRectangleOptions extends StObject {
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
-    var roundradius: Double = js.native
+    var roundradius: Double
   }
   object IRoundRectangleOptions {
     
@@ -413,7 +414,9 @@ object CSG {
   }
   
   @js.native
-  trait Line2D extends CxG {
+  trait Line2D
+    extends StObject
+       with CxG {
     
     def absDistanceToPoint(point: Vector2D): Double = js.native
     
@@ -435,7 +438,9 @@ object CSG {
   }
   
   @js.native
-  trait Line3D extends CxG {
+  trait Line3D
+    extends StObject
+       with CxG {
     
     def closestPointOnLine(point: Vector3D): Vector3D = js.native
     
@@ -452,26 +457,25 @@ object CSG {
     def reverse(): Line3D = js.native
   }
   
-  @js.native
   trait Matrix4x4 extends StObject {
     
-    var elements: js.Array[Double] = js.native
+    var elements: js.Array[Double]
     
-    def isMirroring(): Boolean = js.native
+    def isMirroring(): Boolean
     
-    def leftMultiply1x2Vector(v: Vector2D): Vector2D = js.native
+    def leftMultiply1x2Vector(v: Vector2D): Vector2D
     
-    def leftMultiply1x3Vector(v: Vector3D): Vector3D = js.native
+    def leftMultiply1x3Vector(v: Vector3D): Vector3D
     
-    def minus(m: Matrix4x4): Matrix4x4 = js.native
+    def minus(m: Matrix4x4): Matrix4x4
     
-    def multiply(m: Matrix4x4): Matrix4x4 = js.native
+    def multiply(m: Matrix4x4): Matrix4x4
     
-    def plus(m: Matrix4x4): Matrix4x4 = js.native
+    def plus(m: Matrix4x4): Matrix4x4
     
-    def rightMultiply1x2Vector(v: Vector2D): Vector2D = js.native
+    def rightMultiply1x2Vector(v: Vector2D): Vector2D
     
-    def rightMultiply1x3Vector(v: Vector3D): Vector3D = js.native
+    def rightMultiply1x3Vector(v: Vector3D): Vector3D
   }
   object Matrix4x4 {
     
@@ -526,28 +530,27 @@ object CSG {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    def addPolygonTreeNodes(polygontreenodes: js.Array[PolygonTreeNode]): Unit = js.native
+    def addPolygonTreeNodes(polygontreenodes: js.Array[PolygonTreeNode]): Unit
     
-    var back: js.Any = js.native
+    var back: js.Any
     
-    def clipPolygons(polygontreenodes: js.Array[PolygonTreeNode], alsoRemovecoplanarFront: Boolean): Unit = js.native
+    def clipPolygons(polygontreenodes: js.Array[PolygonTreeNode], alsoRemovecoplanarFront: Boolean): Unit
     
-    def clipTo(tree: Tree, alsoRemovecoplanarFront: Boolean): Unit = js.native
+    def clipTo(tree: Tree, alsoRemovecoplanarFront: Boolean): Unit
     
-    var front: js.Any = js.native
+    var front: js.Any
     
-    def getParentPlaneNormals(normals: js.Array[Vector3D], maxdepth: Double): Unit = js.native
+    def getParentPlaneNormals(normals: js.Array[Vector3D], maxdepth: Double): Unit
     
-    def invert(): Unit = js.native
+    def invert(): Unit
     
-    var parent: Node = js.native
+    var parent: Node
     
-    var plane: Plane = js.native
+    var plane: Plane
     
-    var polygontreenodes: js.Array[PolygonTreeNode] = js.native
+    var polygontreenodes: js.Array[PolygonTreeNode]
   }
   object Node {
     
@@ -607,7 +610,9 @@ object CSG {
   }
   
   @js.native
-  trait OrthoNormalBasis extends CxG {
+  trait OrthoNormalBasis
+    extends StObject
+       with CxG {
     
     def getInverseProjectionMatrix(): Matrix4x4 = js.native
     
@@ -631,7 +636,9 @@ object CSG {
   }
   
   @js.native
-  trait Path2D extends CxG {
+  trait Path2D
+    extends StObject
+       with CxG {
     
     def appendArc(endpoint: Vector2D, options: IEllpiticalArcOptions): Path2D = js.native
     
@@ -659,7 +666,9 @@ object CSG {
   }
   
   @js.native
-  trait Plane extends CxG {
+  trait Plane
+    extends StObject
+       with CxG {
     
     def equals(n: Plane): Boolean = js.native
     
@@ -687,7 +696,9 @@ object CSG {
   }
   
   @js.native
-  trait Polygon extends CxG {
+  trait Polygon
+    extends StObject
+       with CxG {
     
     /**
       *
@@ -715,7 +726,7 @@ object CSG {
     
     def getSignedVolume(): Double = js.native
     
-    def getTetraFeatures(features: js.Any): js.Array[_] = js.native
+    def getTetraFeatures(features: js.Any): js.Array[js.Any] = js.native
     
     var plane: Plane = js.native
     
@@ -740,16 +751,15 @@ object CSG {
   }
   object Polygon {
     
-    @js.native
     trait Shared extends StObject {
       
-      var color: js.Any = js.native
+      var color: js.Any
       
-      def getHash(): js.Any = js.native
+      def getHash(): js.Any
       
-      def getTag(): js.Any = js.native
+      def getTag(): js.Any
       
-      var tag: js.Any = js.native
+      var tag: js.Any
     }
     object Shared {
       
@@ -779,7 +789,6 @@ object CSG {
   
   type Polygon2D = CAG
   
-  @js.native
   trait PolygonTreeNode extends StObject {
     
     def _splitByPlane(
@@ -788,35 +797,35 @@ object CSG {
       coplanarbacknodes: js.Any,
       frontnodes: js.Any,
       backnodes: js.Any
-    ): Unit = js.native
+    ): Unit
     
-    def addChild(polygon: Polygon): PolygonTreeNode = js.native
+    def addChild(polygon: Polygon): PolygonTreeNode
     
-    def addPolygons(polygons: js.Any): Unit = js.native
+    def addPolygons(polygons: js.Any): Unit
     
-    var children: js.Any = js.native
+    var children: js.Any
     
-    def getPolygon(): Polygon = js.native
+    def getPolygon(): Polygon
     
-    def getPolygons(result: js.Array[Polygon]): Unit = js.native
+    def getPolygons(result: js.Array[Polygon]): Unit
     
-    def invert(): Unit = js.native
+    def invert(): Unit
     
-    def invertSub(): Unit = js.native
+    def invertSub(): Unit
     
-    def isRemoved(): Boolean = js.native
+    def isRemoved(): Boolean
     
-    def isRootNode(): Boolean = js.native
+    def isRootNode(): Boolean
     
-    var parent: js.Any = js.native
+    var parent: js.Any
     
-    var polygon: Polygon = js.native
+    var polygon: Polygon
     
-    def recursivelyInvalidatePolygon(): Unit = js.native
+    def recursivelyInvalidatePolygon(): Unit
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    var removed: Boolean = js.native
+    var removed: Boolean
     
     def splitByPlane(
       plane: js.Any,
@@ -824,7 +833,7 @@ object CSG {
       coplanarbacknodes: js.Any,
       frontnodes: js.Any,
       backnodes: js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object PolygonTreeNode {
     
@@ -904,36 +913,35 @@ object CSG {
     }
   }
   
-  @js.native
   trait Properties extends StObject {
     
-    def _merge(otherproperties: Properties): Properties = js.native
+    def _merge(otherproperties: Properties): Properties
     
-    def _transform(matrix4x4: Matrix4x4): Properties = js.native
+    def _transform(matrix4x4: Matrix4x4): Properties
     
-    var center: js.Any = js.native
+    var center: js.Any
     
-    var cube: Properties = js.native
+    var cube: Properties
     
-    var cylinder: Properties = js.native
+    var cylinder: Properties
     
-    var end: js.Any = js.native
+    var end: js.Any
     
-    var facecenters: js.Array[_] = js.native
+    var facecenters: js.Array[js.Any]
     
-    var facepoint: js.Any = js.native
+    var facepoint: js.Any
     
-    var facepointH: js.Any = js.native
+    var facepointH: js.Any
     
-    var facepointH90: js.Any = js.native
+    var facepointH90: js.Any
     
-    var roundedCube: Properties = js.native
+    var roundedCube: Properties
     
-    var roundedCylinder: js.Any = js.native
+    var roundedCylinder: js.Any
     
-    var sphere: Properties = js.native
+    var sphere: Properties
     
-    var start: js.Any = js.native
+    var start: js.Any
   }
   object Properties {
     
@@ -945,7 +953,7 @@ object CSG {
       cube: Properties,
       cylinder: Properties,
       end: js.Any,
-      facecenters: js.Array[_],
+      facecenters: js.Array[js.Any],
       facepoint: js.Any,
       facepointH: js.Any,
       facepointH90: js.Any,
@@ -974,7 +982,7 @@ object CSG {
       def setEnd(value: js.Any): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFacecenters(value: js.Array[_]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
+      def setFacecenters(value: js.Array[js.Any]): Self = StObject.set(x, "facecenters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFacecentersVarargs(value: js.Any*): Self = StObject.set(x, "facecenters", js.Array(value :_*))
@@ -1026,7 +1034,9 @@ object CSG {
   }
   
   @js.native
-  trait Vector2D extends CxG {
+  trait Vector2D
+    extends StObject
+       with CxG {
     
     def abs(): Vector2D = js.native
     
@@ -1080,7 +1090,9 @@ object CSG {
   }
   
   @js.native
-  trait Vector3D extends CxG {
+  trait Vector3D
+    extends StObject
+       with CxG {
     
     def abs(): Vector3D = js.native
     
@@ -1128,7 +1140,9 @@ object CSG {
   }
   
   @js.native
-  trait Vertex extends CxG {
+  trait Vertex
+    extends StObject
+       with CxG {
     
     def flipped(): Vertex = js.native
     
@@ -1141,24 +1155,23 @@ object CSG {
     var tag: Double = js.native
   }
   
-  @js.native
   trait fuzzyCSGFactory extends StObject {
     
-    def getCSG(sourcecsg: CSG): CSG = js.native
+    def getCSG(sourcecsg: CSG): CSG
     
-    def getPlane(sourceplane: Plane): Plane = js.native
+    def getPlane(sourceplane: Plane): Plane
     
-    def getPolygon(sourcepolygon: Polygon): Polygon = js.native
+    def getPolygon(sourcepolygon: Polygon): Polygon
     
-    def getPolygonShared(sourceshared: Shared): Shared = js.native
+    def getPolygonShared(sourceshared: Shared): Shared
     
-    def getVertex(sourcevertex: Vertex): Vertex = js.native
+    def getVertex(sourcevertex: Vertex): Vertex
     
-    var planefactory: fuzzyFactory = js.native
+    var planefactory: fuzzyFactory
     
-    var polygonsharedfactory: js.Any = js.native
+    var polygonsharedfactory: js.Any
     
-    var vertexfactory: fuzzyFactory = js.native
+    var vertexfactory: fuzzyFactory
   }
   object fuzzyCSGFactory {
     
@@ -1206,14 +1219,13 @@ object CSG {
     }
   }
   
-  @js.native
   trait fuzzyFactory extends StObject {
     
-    def lookupOrCreate(els: js.Any, creatorCallback: js.Any): js.Any = js.native
+    def lookupOrCreate(els: js.Any, creatorCallback: js.Any): js.Any
     
-    var lookuptable: js.Any = js.native
+    var lookuptable: js.Any
     
-    var multiplier: Double = js.native
+    var multiplier: Double
   }
   object fuzzyFactory {
     

@@ -2,21 +2,19 @@ package typings.backlogJs.mod.Option.Project
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchVersionsParams extends StObject {
   
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var releaseDueDate: js.UndefOr[String] = js.native
+  var releaseDueDate: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
 }
 object PatchVersionsParams {
   

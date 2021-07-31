@@ -8,14 +8,15 @@ import typings.gaugejs.anon.StaticZoneOptionsheightnu
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("gaugejs", "Gauge")
   @js.native
-  class Gauge protected () extends BaseGauge {
+  class Gauge protected ()
+    extends StObject
+       with BaseGauge {
     /**
       * Creates a new gauge renderer for the given canvas element.
       * @param canvas The canvas element to render to.
@@ -35,7 +36,9 @@ object mod {
   }
   
   @js.native
-  trait BaseGauge extends ValueUpdater {
+  trait BaseGauge
+    extends StObject
+       with ValueUpdater {
     
     /**
       * Sets the minimum gauge value (prefer over gauge.minValue)
@@ -58,30 +61,29 @@ object mod {
     def setTextField(textField: TextRendererElement): TextRenderer = js.native
   }
   
-  @js.native
   trait BaseOptions extends StObject {
     
-    var angle: Double = js.native
+    var angle: Double
     
-    var colorStart: String = js.native
+    var colorStart: String
     
-    var colorStop: String = js.native
+    var colorStop: String
     
-    var generateGradient: Boolean = js.native
+    var generateGradient: Boolean
     
-    var highDpiSupport: Boolean = js.native
+    var highDpiSupport: Boolean
     
-    var limitMax: Boolean = js.native
+    var limitMax: Boolean
     
-    var limitMin: Boolean = js.native
+    var limitMin: Boolean
     
-    var lineWidth: Double = js.native
+    var lineWidth: Double
     
-    var pointer: PointerOptions = js.native
+    var pointer: PointerOptions
     
-    var radiusScale: Double = js.native
+    var radiusScale: Double
     
-    var strokeColor: String = js.native
+    var strokeColor: String
   }
   object BaseOptions {
     
@@ -141,19 +143,20 @@ object mod {
     }
   }
   
-  @js.native
-  trait GaugeOptions extends BaseOptions {
+  trait GaugeOptions
+    extends StObject
+       with BaseOptions {
     
-    var percentColors: js.UndefOr[js.Array[js.Tuple2[Double, String]]] = js.native
+    var percentColors: js.UndefOr[js.Array[js.Tuple2[Double, String]]] = js.undefined
     
     @JSName("pointer")
-    var pointer_GaugeOptions: PointerOptionsiconPathstr = js.native
+    var pointer_GaugeOptions: PointerOptionsiconPathstr
     
-    var renderTicks: js.UndefOr[DivColor] = js.native
+    var renderTicks: js.UndefOr[DivColor] = js.undefined
     
-    var staticLabels: js.UndefOr[Color] = js.native
+    var staticLabels: js.UndefOr[Color] = js.undefined
     
-    var staticZones: js.UndefOr[js.Array[StaticZoneOptions | StaticZoneOptionsheightnu]] = js.native
+    var staticZones: js.UndefOr[js.Array[StaticZoneOptions | StaticZoneOptionsheightnu]] = js.undefined
   }
   object GaugeOptions {
     
@@ -213,14 +216,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PointerOptions extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var length: Double = js.native
+    var length: Double
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
   }
   object PointerOptions {
     
@@ -244,14 +246,13 @@ object mod {
     }
   }
   
-  @js.native
   trait StaticZoneOptions extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var strokeStyle: String = js.native
+    var strokeStyle: String
   }
   object StaticZoneOptions {
     
@@ -275,10 +276,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TextRenderer extends StObject {
     
-    /* private */ def render(gauge: Gauge): String = js.native
+    /* private */ def render(gauge: Gauge): String
   }
   object TextRenderer {
     
@@ -296,12 +296,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TextRendererElement extends StObject {
     
-    var innerHTML: String = js.native
+    var innerHTML: String
     
-    var style: FontSize = js.native
+    var style: FontSize
   }
   object TextRendererElement {
     

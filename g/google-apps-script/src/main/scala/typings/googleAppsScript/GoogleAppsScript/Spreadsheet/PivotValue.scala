@@ -2,30 +2,28 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify value groups in pivot tables.
   */
-@js.native
 trait PivotValue extends StObject {
   
-  def getDisplayType(): PivotValueDisplayType = js.native
+  def getDisplayType(): PivotValueDisplayType
   
-  def getFormula(): String | Null = js.native
+  def getFormula(): String | Null
   
-  def getPivotTable(): PivotTable = js.native
+  def getPivotTable(): PivotTable
   
-  def getSummarizedBy(): PivotTableSummarizeFunction = js.native
+  def getSummarizedBy(): PivotTableSummarizeFunction
   
-  def setDisplayName(name: String): PivotValue = js.native
+  def setDisplayName(name: String): PivotValue
   
-  def setFormula(formula: String): PivotValue = js.native
+  def setFormula(formula: String): PivotValue
   
-  def showAs(displayType: PivotValueDisplayType): PivotValue = js.native
+  def showAs(displayType: PivotValueDisplayType): PivotValue
   
-  def summarizeBy(summarizeFunction: PivotTableSummarizeFunction): PivotValue = js.native
+  def summarizeBy(summarizeFunction: PivotTableSummarizeFunction): PivotValue
 }
 object PivotValue {
   

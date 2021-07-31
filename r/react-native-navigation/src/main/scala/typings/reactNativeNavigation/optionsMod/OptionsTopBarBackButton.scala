@@ -2,79 +2,77 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarBackButton extends StObject {
   
   /**
     * Overrides the text that's read by the screen reader when the user interacts with the back button
     * #### (Android specific)
     */
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Back button icon and text color
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the font family for the back button
     * #### (iOS specific)
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Set subtitle font size
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style for a text
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Image to show as the back button
     */
-  var icon: js.UndefOr[ImageResource] = js.native
+  var icon: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Button id for reference press event
     * #### (Android specific)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Show title or just the icon
     * #### (iOS specific)
     */
-  var showTitle: js.UndefOr[Boolean] = js.native
+  var showTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set testID for reference in E2E tests
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Set the back button title
     * #### (iOS specific)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Weither the back button is visible or not
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsTopBarBackButton {
   

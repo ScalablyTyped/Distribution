@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMembersRequest extends StObject {
   
   /**
     * A list of account ID and email address pairs of the accounts that you want to associate with the master GuardDuty account.
     */
-  var AccountDetails: typings.awsSdk.guarddutyMod.AccountDetails = js.native
+  var AccountDetails: typings.awsSdk.guarddutyMod.AccountDetails
   
   /**
     * The unique ID of the detector of the GuardDuty account that you want to associate member accounts with.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object CreateMembersRequest {
   

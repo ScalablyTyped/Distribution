@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,18 +22,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {iam_principal=[value of IAMContext.principal]}  At this time we do not
   * support multiple field names (though this may be supported in the future).
   */
-@js.native
 trait SchemaLogConfigCounterOptions extends StObject {
   
   /**
     * The field value to attribute.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The metric to update.
     */
-  var metric: js.UndefOr[String] = js.native
+  var metric: js.UndefOr[String] = js.undefined
 }
 object SchemaLogConfigCounterOptions {
   

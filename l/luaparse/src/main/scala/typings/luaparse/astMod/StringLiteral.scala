@@ -2,24 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringLiteral
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.StringLiteral] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.StringLiteral]
+     with Expression {
   
-  var raw: String = js.native
+  var raw: String
   
-  var value: String = js.native
+  var value: String
 }
 object StringLiteral {
   
   @scala.inline
-  def apply(raw: String, `type`: typings.luaparse.luaparseStrings.StringLiteral, value: String): StringLiteral = {
+  def apply(raw: String, value: String): StringLiteral = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[StringLiteral]
   }
   

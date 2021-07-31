@@ -10,42 +10,40 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.pointMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/Keytip.IKeytipProps> */
-@js.native
 trait PartialIKeytipProps extends StObject {
   
-  var calloutProps: js.UndefOr[ICalloutProps] = js.native
+  var calloutProps: js.UndefOr[ICalloutProps] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var hasDynamicChildren: js.UndefOr[Boolean] = js.native
+  var hasDynamicChildren: js.UndefOr[Boolean] = js.undefined
   
-  var hasMenu: js.UndefOr[Boolean] = js.native
+  var hasMenu: js.UndefOr[Boolean] = js.undefined
   
-  var keySequences: js.UndefOr[js.Array[String]] = js.native
+  var keySequences: js.UndefOr[js.Array[String]] = js.undefined
   
-  var offset: js.UndefOr[Point] = js.native
+  var offset: js.UndefOr[Point] = js.undefined
   
   var onExecute: js.UndefOr[
     js.Function2[/* executeTarget */ HTMLElement | Null, /* target */ HTMLElement | Null, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onReturn: js.UndefOr[
     js.Function2[/* executeTarget */ HTMLElement | Null, /* target */ HTMLElement | Null, scala.Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var overflowSetSequence: js.UndefOr[js.Array[String]] = js.native
+  var overflowSetSequence: js.UndefOr[js.Array[String]] = js.undefined
   
-  var styles: js.UndefOr[IStyleFunctionOrObject[IKeytipStyleProps, IKeytipStyles]] = js.native
+  var styles: js.UndefOr[IStyleFunctionOrObject[IKeytipStyleProps, IKeytipStyles]] = js.undefined
   
-  var theme: js.UndefOr[ITheme] = js.native
+  var theme: js.UndefOr[ITheme] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PartialIKeytipProps {
   

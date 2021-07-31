@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property materials - Array of assets of materials in the GLB container.
   * @param data - The loaded GLB data.
   */
-@js.native
 trait ContainerResource extends StObject {
   
   /**
     * Array of assets of animations in the GLB container.
     */
-  var animations: js.Array[Asset] = js.native
+  var animations: js.Array[Asset]
   
   /**
     * Array of assets of materials in the GLB container.
     */
-  var materials: js.Array[Asset] = js.native
+  var materials: js.Array[Asset]
   
   /**
     * Array of assets of textures in the GLB container.
     */
-  var textures: js.Array[Asset] = js.native
+  var textures: js.Array[Asset]
 }
 object ContainerResource {
   

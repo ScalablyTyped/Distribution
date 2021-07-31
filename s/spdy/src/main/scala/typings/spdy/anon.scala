@@ -3,17 +3,15 @@ package typings.spdy
 import typings.spdy.mod.server.Protocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoSpdy31 extends StObject {
     
-    var autoSpdy31: js.UndefOr[Boolean] = js.native
+    var autoSpdy31: js.UndefOr[Boolean] = js.undefined
     
-    var windowSize: js.UndefOr[Double] = js.native
+    var windowSize: js.UndefOr[Double] = js.undefined
   }
   object AutoSpdy31 {
     
@@ -40,16 +38,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Connection extends StObject {
     
-    var connection: js.UndefOr[AutoSpdy31] = js.native
+    var connection: js.UndefOr[AutoSpdy31] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+    var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
     
-    var `x-forwarded-for`: js.UndefOr[Boolean] = js.native
+    var `x-forwarded-for`: js.UndefOr[Boolean] = js.undefined
   }
   object Connection {
     
@@ -91,18 +88,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Plain extends StObject {
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[String]] = js.native
+    var protocols: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ssl: js.UndefOr[Boolean] = js.native
+    var ssl: js.UndefOr[Boolean] = js.undefined
     
-    var `x-forwarded-for`: js.UndefOr[String] = js.native
+    var `x-forwarded-for`: js.UndefOr[String] = js.undefined
   }
   object Plain {
     

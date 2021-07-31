@@ -2,15 +2,16 @@ package typings.reactDnd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useCollectorMod {
   
-  @JSImport("react-dnd/lib/hooks/internal/useCollector", "useCollector")
+  @JSImport("react-dnd/lib/hooks/internal/useCollector", JSImport.Namespace)
   @js.native
-  def useCollector[T, S](monitor: T, collect: js.Function1[/* monitor */ T, S]): js.Tuple2[S, js.Function0[Unit]] = js.native
-  @JSImport("react-dnd/lib/hooks/internal/useCollector", "useCollector")
-  @js.native
-  def useCollector[T, S](monitor: T, collect: js.Function1[/* monitor */ T, S], onUpdate: js.Function0[Unit]): js.Tuple2[S, js.Function0[Unit]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useCollector[T, S](monitor: T, collect: js.Function1[/* monitor */ T, S]): js.Tuple2[S, js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollector")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[S, js.Function0[Unit]]]
+  @scala.inline
+  def useCollector[T, S](monitor: T, collect: js.Function1[/* monitor */ T, S], onUpdate: js.Function0[Unit]): js.Tuple2[S, js.Function0[Unit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useCollector")(monitor.asInstanceOf[js.Any], collect.asInstanceOf[js.Any], onUpdate.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[S, js.Function0[Unit]]]
 }

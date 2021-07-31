@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/appengine/v1beta", "appengine_v1beta.Resource$Apps$Locations")
@@ -31,7 +30,7 @@ class ResourceAppsLocations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaLocation] = js.native
   def get(callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLocation] = js.native
   def get(params: ParamsResourceAppsLocationsGet): GaxiosPromise[SchemaLocation] = js.native
   def get(params: ParamsResourceAppsLocationsGet, callback: BodyResponseCallback[SchemaLocation]): Unit = js.native
   def get(
@@ -63,7 +62,7 @@ class ResourceAppsLocations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListLocationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(params: ParamsResourceAppsLocationsList): GaxiosPromise[SchemaListLocationsResponse] = js.native
   def list(
     params: ParamsResourceAppsLocationsList,

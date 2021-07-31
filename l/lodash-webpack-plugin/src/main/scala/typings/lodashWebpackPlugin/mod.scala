@@ -3,53 +3,53 @@ package typings.lodashWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("lodash-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
   type LodashModuleReplacementPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
-    var caching: js.UndefOr[Boolean] = js.native
+    var caching: js.UndefOr[Boolean] = js.undefined
     
-    var chaining: js.UndefOr[Boolean] = js.native
+    var chaining: js.UndefOr[Boolean] = js.undefined
     
-    var cloning: js.UndefOr[Boolean] = js.native
+    var cloning: js.UndefOr[Boolean] = js.undefined
     
-    var coercions: js.UndefOr[Boolean] = js.native
+    var coercions: js.UndefOr[Boolean] = js.undefined
     
-    var collections: js.UndefOr[Boolean] = js.native
+    var collections: js.UndefOr[Boolean] = js.undefined
     
-    var currying: js.UndefOr[Boolean] = js.native
+    var currying: js.UndefOr[Boolean] = js.undefined
     
-    var deburring: js.UndefOr[Boolean] = js.native
+    var deburring: js.UndefOr[Boolean] = js.undefined
     
-    var exotics: js.UndefOr[Boolean] = js.native
+    var exotics: js.UndefOr[Boolean] = js.undefined
     
-    var flattening: js.UndefOr[Boolean] = js.native
+    var flattening: js.UndefOr[Boolean] = js.undefined
     
-    var guards: js.UndefOr[Boolean] = js.native
+    var guards: js.UndefOr[Boolean] = js.undefined
     
-    var memoizing: js.UndefOr[Boolean] = js.native
+    var memoizing: js.UndefOr[Boolean] = js.undefined
     
-    var metadata: js.UndefOr[Boolean] = js.native
+    var metadata: js.UndefOr[Boolean] = js.undefined
     
-    var paths: js.UndefOr[Boolean] = js.native
+    var paths: js.UndefOr[Boolean] = js.undefined
     
-    var placeholders: js.UndefOr[Boolean] = js.native
+    var placeholders: js.UndefOr[Boolean] = js.undefined
     
-    var shorthands: js.UndefOr[Boolean] = js.native
+    var shorthands: js.UndefOr[Boolean] = js.undefined
     
-    var unicode: js.UndefOr[Boolean] = js.native
+    var unicode: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

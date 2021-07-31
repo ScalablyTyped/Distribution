@@ -2,28 +2,26 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transformoptions extends StObject {
   
-  var scaleX: Double = js.native
+  var scaleX: Double
   
   // 水平缩放
-  var scaleY: Double = js.native
+  var scaleY: Double
   
   // 垂直缩放
-  var skewX: Double = js.native
+  var skewX: Double
   
   // 水平倾斜
-  var skewY: Double = js.native
+  var skewY: Double
   
   // 垂直倾斜
-  var translateX: Double = js.native
+  var translateX: Double
   
   // 水平移动
-  var translateY: Double = js.native
+  var translateY: Double
 }
 object Transformoptions {
   

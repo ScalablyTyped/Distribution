@@ -3,13 +3,11 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeightedTargetLbConfig extends StObject {
   
-  var targets: Map[String, WeightedTarget] = js.native
+  var targets: Map[String, WeightedTarget]
 }
 object WeightedTargetLbConfig {
   

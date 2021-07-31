@@ -2,242 +2,173 @@ package typings.cson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cson", "createCSONString")
+  @JSImport("cson", JSImport.Namespace)
   @js.native
-  def createCSONString(data: js.Any): String = js.native
-  @JSImport("cson", "createCSONString")
-  @js.native
-  def createCSONString(data: js.Any, opts: js.UndefOr[scala.Nothing], next: js.Any): String = js.native
-  @JSImport("cson", "createCSONString")
-  @js.native
-  def createCSONString(data: js.Any, opts: js.Object): String = js.native
-  @JSImport("cson", "createCSONString")
-  @js.native
-  def createCSONString(data: js.Any, opts: js.Object, next: js.Any): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cson", "createJSONString")
-  @js.native
-  def createJSONString(data: js.Any): String = js.native
-  @JSImport("cson", "createJSONString")
-  @js.native
-  def createJSONString(data: js.Any, opts: js.UndefOr[scala.Nothing], next: js.Any): String = js.native
-  @JSImport("cson", "createJSONString")
-  @js.native
-  def createJSONString(data: js.Any, opts: js.Object): String = js.native
-  @JSImport("cson", "createJSONString")
-  @js.native
-  def createJSONString(data: js.Any, opts: js.Object, next: js.Any): String = js.native
+  @scala.inline
+  def createCSONString(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createCSONString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createCSONString(data: js.Any, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createCSONString(data: js.Any, opts: js.Object, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createCSONString(data: js.Any, opts: Unit, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cson", "createString")
-  @js.native
-  def createString(data: js.Any): String = js.native
-  @JSImport("cson", "createString")
-  @js.native
-  def createString(data: js.Any, opts: js.UndefOr[scala.Nothing], next: js.Any): String = js.native
-  @JSImport("cson", "createString")
-  @js.native
-  def createString(data: js.Any, opts: js.Object): String = js.native
-  @JSImport("cson", "createString")
-  @js.native
-  def createString(data: js.Any, opts: js.Object, next: js.Any): String = js.native
+  @scala.inline
+  def createJSONString(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createJSONString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createJSONString(data: js.Any, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createJSONString(data: js.Any, opts: js.Object, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createJSONString(data: js.Any, opts: Unit, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cson", "load")
-  @js.native
-  def load(filePath: String): js.Any = js.native
-  @JSImport("cson", "load")
-  @js.native
-  def load(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "load")
-  @js.native
-  def load(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "load")
-  @js.native
-  def load(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def createString(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def createString(data: js.Any, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createString(data: js.Any, opts: js.Object, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def createString(data: js.Any, opts: Unit, next: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("cson", "parse")
-  @js.native
-  def parse(data: String): js.Any = js.native
-  @JSImport("cson", "parse")
-  @js.native
-  def parse(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parse")
-  @js.native
-  def parse(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parse")
-  @js.native
-  def parse(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def load(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def load(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def load(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def load(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseCSFile")
-  @js.native
-  def parseCSFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "parseCSFile")
-  @js.native
-  def parseCSFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseCSFile")
-  @js.native
-  def parseCSFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseCSFile")
-  @js.native
-  def parseCSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parse(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseCSONFile")
-  @js.native
-  def parseCSONFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "parseCSONFile")
-  @js.native
-  def parseCSONFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseCSONFile")
-  @js.native
-  def parseCSONFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseCSONFile")
-  @js.native
-  def parseCSONFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseCSFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseCSONString")
-  @js.native
-  def parseCSONString(data: String): js.Any = js.native
-  @JSImport("cson", "parseCSONString")
-  @js.native
-  def parseCSONString(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseCSONString")
-  @js.native
-  def parseCSONString(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseCSONString")
-  @js.native
-  def parseCSONString(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseCSONFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseCSString")
-  @js.native
-  def parseCSString(data: String): js.Any = js.native
-  @JSImport("cson", "parseCSString")
-  @js.native
-  def parseCSString(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseCSString")
-  @js.native
-  def parseCSString(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseCSString")
-  @js.native
-  def parseCSString(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseCSONString(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONString")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONString(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONString(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSONString(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseJSFile")
-  @js.native
-  def parseJSFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "parseJSFile")
-  @js.native
-  def parseJSFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseJSFile")
-  @js.native
-  def parseJSFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseJSFile")
-  @js.native
-  def parseJSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseCSString(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseCSString")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSString(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSString(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseCSString(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseCSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseJSONFile")
-  @js.native
-  def parseJSONFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "parseJSONFile")
-  @js.native
-  def parseJSONFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseJSONFile")
-  @js.native
-  def parseJSONFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseJSONFile")
-  @js.native
-  def parseJSONFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseJSFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseJSONString")
-  @js.native
-  def parseJSONString(data: String): js.Any = js.native
-  @JSImport("cson", "parseJSONString")
-  @js.native
-  def parseJSONString(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseJSONString")
-  @js.native
-  def parseJSONString(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseJSONString")
-  @js.native
-  def parseJSONString(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseJSONFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseJSString")
-  @js.native
-  def parseJSString(data: String): js.Any = js.native
-  @JSImport("cson", "parseJSString")
-  @js.native
-  def parseJSString(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseJSString")
-  @js.native
-  def parseJSString(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseJSString")
-  @js.native
-  def parseJSString(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseJSONString(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONString")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONString(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONString(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSONString(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSONString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "parseString")
-  @js.native
-  def parseString(data: String): js.Any = js.native
-  @JSImport("cson", "parseString")
-  @js.native
-  def parseString(data: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "parseString")
-  @js.native
-  def parseString(data: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "parseString")
-  @js.native
-  def parseString(data: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseJSString(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJSString")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSString(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSString(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseJSString(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseJSString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "requireCSFile")
-  @js.native
-  def requireCSFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "requireCSFile")
-  @js.native
-  def requireCSFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "requireCSFile")
-  @js.native
-  def requireCSFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "requireCSFile")
-  @js.native
-  def requireCSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def parseString(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseString(data: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseString(data: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseString(data: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "requireFile")
-  @js.native
-  def requireFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "requireFile")
-  @js.native
-  def requireFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "requireFile")
-  @js.native
-  def requireFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "requireFile")
-  @js.native
-  def requireFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def requireCSFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireCSFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def requireCSFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireCSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireCSFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireCSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "requireJSFile")
-  @js.native
-  def requireJSFile(filePath: String): js.Any = js.native
-  @JSImport("cson", "requireJSFile")
-  @js.native
-  def requireJSFile(filePath: String, opts: js.UndefOr[scala.Nothing], next: js.Any): js.Any = js.native
-  @JSImport("cson", "requireJSFile")
-  @js.native
-  def requireJSFile(filePath: String, opts: js.Object): js.Any = js.native
-  @JSImport("cson", "requireJSFile")
-  @js.native
-  def requireJSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = js.native
+  @scala.inline
+  def requireFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def requireFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cson", "stringify")
-  @js.native
-  def stringify(data: js.Any): String = js.native
-  @JSImport("cson", "stringify")
-  @js.native
-  def stringify(data: js.Any, opts: js.UndefOr[scala.Nothing], indent: js.Any): String = js.native
-  @JSImport("cson", "stringify")
-  @js.native
-  def stringify(data: js.Any, opts: js.Object): String = js.native
-  @JSImport("cson", "stringify")
-  @js.native
-  def stringify(data: js.Any, opts: js.Object, indent: js.Any): String = js.native
+  @scala.inline
+  def requireJSFile(filePath: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("requireJSFile")(filePath.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def requireJSFile(filePath: String, opts: js.Object): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireJSFile(filePath: String, opts: js.Object, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def requireJSFile(filePath: String, opts: Unit, next: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("requireJSFile")(filePath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: js.Any, opts: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: js.Any, opts: js.Object, indent: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: js.Any, opts: Unit, indent: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], indent.asInstanceOf[js.Any])).asInstanceOf[String]
 }

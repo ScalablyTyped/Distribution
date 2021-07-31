@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message containing information of one individual backend.
   */
-@js.native
 trait SchemaBackend extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaBackend extends StObject {
     * Internal Load Balancing, the default and only supported mode is
     * CONNECTION.
     */
-  var balancingMode: js.UndefOr[String] = js.native
+  var balancingMode: js.UndefOr[String] = js.undefined
   
   /**
     * A multiplier applied to the group&#39;s maximum servicing capacity (based
@@ -28,19 +26,19 @@ trait SchemaBackend extends StObject {
     * offering 0% of its available Capacity. Valid range is [0.0,1.0].  This
     * cannot be used for internal load balancing.
     */
-  var capacityScaler: js.UndefOr[Double] = js.native
+  var capacityScaler: js.UndefOr[Double] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This field designates whether this is a failover backend. More than one
     * failover backend can be configured for a given BackendService.
     */
-  var failover: js.UndefOr[Boolean] = js.native
+  var failover: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The fully-qualified URL of an Instance Group or Network Endpoint Group
@@ -59,7 +57,7 @@ trait SchemaBackend extends StObject {
     * Network Endpoint Groups are not supported for INTERNAL load balancing
     * scheme.
     */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * The max number of simultaneous connections for the group. Can be used
@@ -67,7 +65,7 @@ trait SchemaBackend extends StObject {
     * mode, either maxConnections or maxConnectionsPerInstance must be set.
     * This cannot be used for internal load balancing.
     */
-  var maxConnections: js.UndefOr[Double] = js.native
+  var maxConnections: js.UndefOr[Double] = js.undefined
   
   /**
     * The max number of simultaneous connections that a single backend network
@@ -76,7 +74,7 @@ trait SchemaBackend extends StObject {
     * CONNECTION mode, either maxConnections or maxConnectionsPerEndpoint must
     * be set.  This cannot be used for internal load balancing.
     */
-  var maxConnectionsPerEndpoint: js.UndefOr[Double] = js.native
+  var maxConnectionsPerEndpoint: js.UndefOr[Double] = js.undefined
   
   /**
     * The max number of simultaneous connections that a single backend instance
@@ -85,7 +83,7 @@ trait SchemaBackend extends StObject {
     * mode, either maxConnections or maxConnectionsPerInstance must be set.
     * This cannot be used for internal load balancing.
     */
-  var maxConnectionsPerInstance: js.UndefOr[Double] = js.native
+  var maxConnectionsPerInstance: js.UndefOr[Double] = js.undefined
   
   /**
     * The max requests per second (RPS) of the group. Can be used with either
@@ -93,7 +91,7 @@ trait SchemaBackend extends StObject {
     * mode, either maxRate or maxRatePerInstance must be set.  This cannot be
     * used for internal load balancing.
     */
-  var maxRate: js.UndefOr[Double] = js.native
+  var maxRate: js.UndefOr[Double] = js.undefined
   
   /**
     * The max requests per second (RPS) that a single backend network endpoint
@@ -102,7 +100,7 @@ trait SchemaBackend extends StObject {
     * maxRatePerEndpoint must be set.  This cannot be used for internal load
     * balancing.
     */
-  var maxRatePerEndpoint: js.UndefOr[Double] = js.native
+  var maxRatePerEndpoint: js.UndefOr[Double] = js.undefined
   
   /**
     * The max requests per second (RPS) that a single backend instance can
@@ -111,14 +109,14 @@ trait SchemaBackend extends StObject {
     * maxRatePerInstance must be set.  This cannot be used for internal load
     * balancing.
     */
-  var maxRatePerInstance: js.UndefOr[Double] = js.native
+  var maxRatePerInstance: js.UndefOr[Double] = js.undefined
   
   /**
     * Used when balancingMode is UTILIZATION. This ratio defines the CPU
     * utilization target for the group. The default is 0.8. Valid range is
     * [0.0, 1.0].  This cannot be used for internal load balancing.
     */
-  var maxUtilization: js.UndefOr[Double] = js.native
+  var maxUtilization: js.UndefOr[Double] = js.undefined
 }
 object SchemaBackend {
   

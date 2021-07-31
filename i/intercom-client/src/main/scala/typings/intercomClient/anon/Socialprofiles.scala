@@ -4,22 +4,20 @@ import typings.intercomClient.intercomClientStrings.social_profileDotlist
 import typings.intercomClient.userMod.SocialProfile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Socialprofiles extends StObject {
   
-  var social_profiles: js.Array[SocialProfile] = js.native
+  var social_profiles: js.Array[SocialProfile]
   
-  var `type`: social_profileDotlist = js.native
+  var `type`: social_profileDotlist
 }
 object Socialprofiles {
   
   @scala.inline
-  def apply(social_profiles: js.Array[SocialProfile], `type`: social_profileDotlist): Socialprofiles = {
+  def apply(social_profiles: js.Array[SocialProfile]): Socialprofiles = {
     val __obj = js.Dynamic.literal(social_profiles = social_profiles.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("social_profile.list")
     __obj.asInstanceOf[Socialprofiles]
   }
   

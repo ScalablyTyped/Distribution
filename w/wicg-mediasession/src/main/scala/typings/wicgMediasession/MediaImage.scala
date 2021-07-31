@@ -2,20 +2,18 @@ package typings.wicgMediasession
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaImage extends StObject {
   
   // Specify the MediaImage object’s sizes. It follows the spec of sizes attribute in HTML link element.
-  var sizes: js.UndefOr[String] = js.native
+  var sizes: js.UndefOr[String] = js.undefined
   
   // URL from which the user agent can fetch the image’s data.
-  var src: String = js.native
+  var src: String
   
   // A hint as to the media type of the image.
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MediaImage {
   

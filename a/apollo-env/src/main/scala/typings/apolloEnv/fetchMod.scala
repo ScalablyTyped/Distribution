@@ -11,7 +11,6 @@ import typings.nodeFetch.mod.ResponseInit
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fetchMod {
@@ -21,8 +20,8 @@ object fetchMod {
   class Body ()
     extends typings.apolloEnv.fetchFetchMod.Body {
     def this(body: js.Any) = this()
-    def this(body: js.UndefOr[scala.Nothing], opts: Size) = this()
     def this(body: js.Any, opts: Size) = this()
+    def this(body: Unit, opts: Size) = this()
   }
   
   @JSImport("apollo-env/lib/fetch", "Headers")
@@ -45,18 +44,21 @@ object fetchMod {
   class Response ()
     extends typings.apolloEnv.fetchFetchMod.Response {
     def this(body: BodyInit) = this()
-    def this(body: js.UndefOr[BodyInit], init: ResponseInit) = this()
+    def this(body: Unit, init: ResponseInit) = this()
+    def this(body: BodyInit, init: ResponseInit) = this()
   }
   /* static members */
   object Response {
     
-    @JSImport("apollo-env/lib/fetch", "Response.error")
+    @JSImport("apollo-env/lib/fetch", "Response")
     @js.native
-    def error(): typings.nodeFetch.mod.Response = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("apollo-env/lib/fetch", "Response.redirect")
-    @js.native
-    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = js.native
+    @scala.inline
+    def error(): typings.nodeFetch.mod.Response = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[typings.nodeFetch.mod.Response]
+    
+    @scala.inline
+    def redirect(url: String, status: Double): typings.nodeFetch.mod.Response = (^.asInstanceOf[js.Dynamic].applyDynamic("redirect")(url.asInstanceOf[js.Any], status.asInstanceOf[js.Any])).asInstanceOf[typings.nodeFetch.mod.Response]
   }
   
   @JSImport("apollo-env/lib/fetch", "URL")
@@ -81,15 +83,16 @@ object fetchMod {
   
   object fetch {
     
-    @JSImport("apollo-env/lib/fetch", "fetch")
-    @js.native
-    def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = js.native
-    @JSImport("apollo-env/lib/fetch", "fetch")
-    @js.native
-    def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = js.native
+    @scala.inline
+    def apply(url: RequestInfo): js.Promise[typings.nodeFetch.mod.Response] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
+    @scala.inline
+    def apply(url: RequestInfo, init: RequestInit): js.Promise[typings.nodeFetch.mod.Response] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.nodeFetch.mod.Response]]
     
-    @JSImport("apollo-env/lib/fetch", "fetch.isRedirect")
+    @JSImport("apollo-env/lib/fetch", "fetch")
     @js.native
-    def isRedirect(code: Double): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isRedirect(code: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRedirect")(code.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

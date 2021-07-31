@@ -2,31 +2,29 @@ package typings.googleapis.resellerV1Mod.resellerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a subscription list.
   */
-@js.native
 trait SchemaSubscriptions extends StObject {
   
   /**
     * Identifies the resource as a collection of subscriptions. Value:
     * reseller#subscriptions
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. Provide
     * this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The subscriptions in this page of results.
     */
-  var subscriptions: js.UndefOr[js.Array[SchemaSubscription]] = js.native
+  var subscriptions: js.UndefOr[js.Array[SchemaSubscription]] = js.undefined
 }
 object SchemaSubscriptions {
   

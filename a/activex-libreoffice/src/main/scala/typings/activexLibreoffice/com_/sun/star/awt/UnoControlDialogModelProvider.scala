@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies a service to load a dialog model and allows to access the control models inside
   * @since OOo 3.3
   */
-@js.native
-trait UnoControlDialogModelProvider extends XNameContainer {
+trait UnoControlDialogModelProvider
+  extends StObject
+     with XNameContainer {
   
   /** Creates a new dialog model */
-  def create(URL: String): Unit = js.native
+  def create(URL: String): Unit
 }
 object UnoControlDialogModelProvider {
   

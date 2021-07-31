@@ -2,7 +2,6 @@ package typings.asana.mod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * establishing credentials and applying them to outgoing requests.
   * @constructor
   */
-@js.native
 trait Authenticator extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait Authenticator extends StObject {
     *     completed and `authenticateRequest` calls can expect to succeed.
     * @return
     */
-  def establishCredentials(): typings.bluebird.mod.^[Unit] = js.native
+  def establishCredentials(): typings.bluebird.mod.^[Unit]
   
   /**
     * Attempts to refresh credentials, if possible, given the current credentials.
@@ -31,7 +29,7 @@ trait Authenticator extends StObject {
     *     resolves to `false`.
     * @return
     */
-  def refreshCredentials(): typings.bluebird.mod.^[Boolean] = js.native
+  def refreshCredentials(): typings.bluebird.mod.^[Boolean]
 }
 object Authenticator {
   

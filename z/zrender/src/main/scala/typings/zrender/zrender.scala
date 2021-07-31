@@ -5,7 +5,6 @@ import typings.zrender.anon.AddColorStop
 import typings.zrender.anon.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zrender {
@@ -19,7 +18,8 @@ object zrender {
     */
   @js.native
   trait LinearGradient
-    extends Instantiable6[
+    extends StObject
+       with Instantiable6[
           /* x */ js.UndefOr[X], 
           /* y */ js.UndefOr[Y], 
           /* x2 */ js.UndefOr[X2], 

@@ -4,41 +4,39 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenOptions extends StObject {
   
   /**
     * Lifetime of generated access tokens in seconds (default = 1 hour)
     */
-  var accessTokenLifetime: js.UndefOr[Double] = js.native
+  var accessTokenLifetime: js.UndefOr[Double] = js.undefined
   
   /**
     * Allow extended attributes to be set on the returned token
     */
-  var allowExtendedTokenAttributes: js.UndefOr[Boolean] = js.native
+  var allowExtendedTokenAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Always revoke the used refresh token and issue a new one for the refresh_token grant.
     */
-  var alwaysIssueNewRefreshToken: js.UndefOr[Boolean] = js.native
+  var alwaysIssueNewRefreshToken: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional supported grant types.
     */
-  var extendedGrantTypes: js.UndefOr[StringDictionary[Instantiable1[/* options */ TokenOptions, AbstractGrantType]]] = js.native
+  var extendedGrantTypes: js.UndefOr[StringDictionary[Instantiable1[/* options */ TokenOptions, AbstractGrantType]]] = js.undefined
   
   /**
     * Lifetime of generated refresh tokens in seconds (default = 2 weeks)
     */
-  var refreshTokenLifetime: js.UndefOr[Double] = js.native
+  var refreshTokenLifetime: js.UndefOr[Double] = js.undefined
   
   /**
     * Require a client secret. Defaults to true for all grant types.
     */
-  var requireClientAuthentication: js.UndefOr[js.Object] = js.native
+  var requireClientAuthentication: js.UndefOr[js.Object] = js.undefined
 }
 object TokenOptions {
   

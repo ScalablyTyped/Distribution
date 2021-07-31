@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPolicyAttachmentsResponse extends StObject {
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * A list of ObjectIdentifiers to which the policy is attached.
     */
-  var ObjectIdentifiers: js.UndefOr[ObjectIdentifierList] = js.native
+  var ObjectIdentifiers: js.UndefOr[ObjectIdentifierList] = js.undefined
 }
 object ListPolicyAttachmentsResponse {
   

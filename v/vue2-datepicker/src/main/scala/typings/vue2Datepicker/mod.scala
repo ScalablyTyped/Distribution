@@ -7,7 +7,6 @@ import typings.vue2Datepicker.anon.AppendToBody
 import typings.vue2Datepicker.anon.FirstDayOfWeek
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,20 +25,19 @@ object mod {
   
   object Datepicker {
     
-    @js.native
     trait Lang extends StObject {
       
-      var days: js.UndefOr[js.Array[String]] = js.native
+      var days: js.UndefOr[js.Array[String]] = js.undefined
       
-      var formatLocale: FirstDayOfWeek = js.native
+      var formatLocale: FirstDayOfWeek
       
-      var monthBeforeYear: Boolean = js.native
+      var monthBeforeYear: Boolean
       
-      var monthFormat: String = js.native
+      var monthFormat: String
       
-      var months: js.UndefOr[js.Array[String]] = js.native
+      var months: js.UndefOr[js.Array[String]] = js.undefined
       
-      var yearFormat: String = js.native
+      var yearFormat: String
     }
     object Lang {
       
@@ -84,12 +82,11 @@ object mod {
       }
     }
     
-    @js.native
     trait Shortcuts extends StObject {
       
-      def onClick(): js.Any = js.native
+      def onClick(): js.Any
       
-      var text: String = js.native
+      var text: String
     }
     object Shortcuts {
       
@@ -110,16 +107,15 @@ object mod {
       }
     }
     
-    @js.native
     trait TimePickerOptions extends StObject {
       
-      var end: String = js.native
+      var end: String
       
-      var format: String = js.native
+      var format: String
       
-      var start: String = js.native
+      var start: String
       
-      var step: String = js.native
+      var step: String
     }
     object TimePickerOptions {
       
@@ -146,16 +142,15 @@ object mod {
       }
     }
     
-    @js.native
     trait ValueType extends StObject {
       
-      var date: Date = js.native
+      var date: Date
       
-      var format: String = js.native
+      var format: String
       
-      var timestamp: Double = js.native
+      var timestamp: Double
       
-      var token: String = js.native
+      var token: String
     }
     object ValueType {
       

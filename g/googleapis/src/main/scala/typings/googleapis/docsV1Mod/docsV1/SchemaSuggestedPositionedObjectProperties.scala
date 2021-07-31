@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A suggested change to PositionedObjectProperties.
   */
-@js.native
 trait SchemaSuggestedPositionedObjectProperties extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait SchemaSuggestedPositionedObjectProperties extends StObject {
     * positioned_object_properties_suggestion_state to see which fields have
     * changed and their new values.
     */
-  var positionedObjectProperties: js.UndefOr[SchemaPositionedObjectProperties] = js.native
+  var positionedObjectProperties: js.UndefOr[SchemaPositionedObjectProperties] = js.undefined
   
   /**
     * A mask that indicates which of the fields on the base
     * PositionedObjectProperties have been changed in this suggestion.
     */
-  var positionedObjectPropertiesSuggestionState: js.UndefOr[SchemaPositionedObjectPropertiesSuggestionState] = js.native
+  var positionedObjectPropertiesSuggestionState: js.UndefOr[SchemaPositionedObjectPropertiesSuggestionState] = js.undefined
 }
 object SchemaSuggestedPositionedObjectProperties {
   

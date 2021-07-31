@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * identifying the message, and structured data associated with the message
   * for programmatic consumption.
   */
-@js.native
 trait SchemaStructuredMessage extends StObject {
   
   /**
     * Identifier for this message type.  Used by external systems to
     * internationalize or personalize message.
     */
-  var messageKey: js.UndefOr[String] = js.native
+  var messageKey: js.UndefOr[String] = js.undefined
   
   /**
     * Human-readable version of message.
     */
-  var messageText: js.UndefOr[String] = js.native
+  var messageText: js.UndefOr[String] = js.undefined
   
   /**
     * The structured data associated with this message.
     */
-  var parameters: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
 }
 object SchemaStructuredMessage {
   

@@ -2,27 +2,25 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsRequestReviewersEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * An array of user `login`s that will be requested.
     */
-  var reviewers: js.UndefOr[js.Array[String]] = js.native
+  var reviewers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An array of team `slug`s that will be requested.
     */
-  var team_reviewers: js.UndefOr[js.Array[String]] = js.native
+  var team_reviewers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PullsRequestReviewersEndpoint {
   

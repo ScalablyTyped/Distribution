@@ -16,23 +16,21 @@ import typings.tablesorter.pagerOutputProcessorMod.PagerOutputProcessor
 import typings.tablesorter.tablesorterConfigurationStoreMod.TablesorterConfigurationStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerConfigurationMod {
   
-  @js.native
   trait PagerConfiguration[TElement] extends StObject {
     
     /**
       * Handles errors caused by an ajax-request.
       */
-    var ajaxError: js.UndefOr[AjaxErrorHandler[TElement]] = js.native
+    var ajaxError: js.UndefOr[AjaxErrorHandler[TElement]] = js.undefined
     
     /**
       * The settings for the api-interaction of the pager.
       */
-    var ajaxObject: js.UndefOr[JQueryAjaxSettings] = js.native
+    var ajaxObject: js.UndefOr[JQueryAjaxSettings] = js.undefined
     
     /**
       * Processes the ajax-result for the `pager`-widget.
@@ -49,7 +47,7 @@ object pagerConfigurationMod {
       * @return
       * The data for the pager to show.
       */
-    var ajaxProcessing: js.UndefOr[AjaxDataProcessor[TElement]] = js.native
+    var ajaxProcessing: js.UndefOr[AjaxDataProcessor[TElement]] = js.undefined
     
     /**
       * The url to query data from.
@@ -64,77 +62,77 @@ object pagerConfigurationMod {
       * | `{sortList:name}` or `{sort:name}`     | A GET-variable called `name` containing the current sorting.           |
       * | `{filterList:name}` or `{filter:name}` | A GET-variable called `name` containing all currently applied filters. |
       */
-    var ajaxUrl: js.UndefOr[String] = js.native
+    var ajaxUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The selector for querying the pager-container.
       */
-    var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * A value indicating whether to split child-rows on page-breaks.
       */
-    var countChildRows: js.UndefOr[Boolean] = js.native
+    var countChildRows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The css-class to apply to disabled pager-controls.
       */
-    var cssDisabled: js.UndefOr[String] = js.native
+    var cssDisabled: js.UndefOr[String] = js.undefined
     
     /**
       * The css-class to apply to the table-row which displays the error-message in case of an ajax-error.
       */
-    var cssErrorRow: js.UndefOr[String] = js.native
+    var cssErrorRow: js.UndefOr[String] = js.undefined
     
     /**
       * The selector for querying the control to jump to the first page.
       */
-    var cssFirst: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssFirst: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the dropdown-control to jump to a specific page.
       */
-    var cssGoto: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssGoto: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the last page.
       */
-    var cssLast: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssLast: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the next page.
       */
-    var cssNext: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssNext: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the container to print the output to.
       */
-    var cssPageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssPageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to set the page-size.
       */
-    var cssPageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssPageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the previous page.
       */
-    var cssPrev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var cssPrev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * Pre-processes the url for `ajax`.
       */
-    var customAjaxUrl: js.UndefOr[AjaxUrlProcessor[TElement]] = js.native
+    var customAjaxUrl: js.UndefOr[AjaxUrlProcessor[TElement]] = js.undefined
     
     /**
       * A value indicating whether the table should always have the same number of rows even if there is a lesser number of records to show.
       */
-    var fixedHeight: js.UndefOr[Boolean] = js.native
+    var fixedHeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial amount of rows to show.
       */
-    var initialRows: js.UndefOr[PagerInitialRows] = js.native
+    var initialRows: js.UndefOr[PagerInitialRows] = js.undefined
     
     /**
       * The output to display in the output-area.
@@ -154,47 +152,47 @@ object pagerConfigurationMod {
       * | `{filteredRows}`   | The amount of filtered rows.                 |
       * | `{totalRows}`      | The total amount of rows.                    |
       */
-    var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.native
+    var output: js.UndefOr[String | PagerOutputProcessor[TElement]] = js.undefined
     
     /**
       * The number of the first page to show.
       */
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of the first page to show after applying a filter.
       */
-    var pageReset: js.UndefOr[Double | Boolean] = js.native
+    var pageReset: js.UndefOr[Double | Boolean] = js.undefined
     
     /**
       * A value indicating whether an ajax-request should be executed after the initialization of the table.
       */
-    var processAjaxOnInit: js.UndefOr[Boolean] = js.native
+    var processAjaxOnInit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether to remove the rows while performing sortings for speed up.
       */
-    var removeRows: js.UndefOr[Boolean] = js.native
+    var removeRows: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether to save the current page locally.
       */
-    var savePages: js.UndefOr[Boolean] = js.native
+    var savePages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The initial page-size.
       */
-    var size: js.UndefOr[PageSize] = js.native
+    var size: js.UndefOr[PageSize] = js.undefined
     
     /**
       * The key to of the local storage to save data to.
       */
-    var storageKey: js.UndefOr[String] = js.native
+    var storageKey: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the `cssDisabled` class should be applied to non-applicable buttons.
       */
-    var updateArrows: js.UndefOr[Boolean] = js.native
+    var updateArrows: js.UndefOr[Boolean] = js.undefined
   }
   object PagerConfiguration {
     
@@ -205,7 +203,7 @@ object pagerConfigurationMod {
     }
     
     @scala.inline
-    implicit class PagerConfigurationMutableBuilder[Self <: PagerConfiguration[_], TElement] (val x: Self with PagerConfiguration[TElement]) extends AnyVal {
+    implicit class PagerConfigurationMutableBuilder[Self <: PagerConfiguration[?], TElement] (val x: Self & PagerConfiguration[TElement]) extends AnyVal {
       
       @scala.inline
       def setAjaxError(

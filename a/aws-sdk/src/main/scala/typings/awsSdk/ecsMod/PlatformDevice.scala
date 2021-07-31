@@ -2,21 +2,19 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformDevice extends StObject {
   
   /**
     * The ID for the GPU(s) on the container instance. The available GPU IDs can also be obtained on the container instance in the /var/lib/ecs/gpu/nvidia_gpu_info.json file.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The type of device that is available on the container instance. The only supported value is GPU.
     */
-  var `type`: PlatformDeviceType = js.native
+  var `type`: PlatformDeviceType
 }
 object PlatformDevice {
   

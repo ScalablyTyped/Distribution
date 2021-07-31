@@ -2,31 +2,29 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResourceRequest extends StObject {
   
   /**
     * The resource's booking options to be updated.
     */
-  var BookingOptions: js.UndefOr[typings.awsSdk.workmailMod.BookingOptions] = js.native
+  var BookingOptions: js.UndefOr[typings.awsSdk.workmailMod.BookingOptions] = js.undefined
   
   /**
     * The name of the resource to be updated.
     */
-  var Name: js.UndefOr[ResourceName] = js.native
+  var Name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The identifier associated with the organization for which the resource is updated.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier of the resource to be updated.
     */
-  var ResourceId: typings.awsSdk.workmailMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.workmailMod.ResourceId
 }
 object UpdateResourceRequest {
   

@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the cells or to sub-ranges of all sheets.
   * @see com.sun.star.sheet.Spreadsheets
   */
-@js.native
-trait XCellRangesAccess extends XInterface {
+trait XCellRangesAccess
+  extends StObject
+     with XInterface {
   
   /**
     * Returns a single cell within the range.
@@ -26,7 +26,7 @@ trait XCellRangesAccess extends XInterface {
     * @see com.sun.star.table.Cell
     * @throws com::sun::star::lang::IndexOutOfBoundsException if an index is outside the dimensions of this range.
     */
-  def getCellByPosition(nColumn: Double, nRow: Double, nSheet: Double): XCell = js.native
+  def getCellByPosition(nColumn: Double, nRow: Double, nSheet: Double): XCell
   
   /**
     * Returns a sub-range of cells within the range.
@@ -39,7 +39,7 @@ trait XCellRangesAccess extends XInterface {
     * @see com.sun.star.table.CellRange
     * @throws com::sun::star::lang::IndexOutOfBoundsException if an index is outside the dimensions of this range.
     */
-  def getCellRangeByPosition(nLeft: Double, nTop: Double, nRight: Double, nBottom: Double, nSheet: Double): XCellRange = js.native
+  def getCellRangeByPosition(nLeft: Double, nTop: Double, nRight: Double, nBottom: Double, nSheet: Double): XCellRange
   
   /**
     * Returns a sub-range of cells within the range.
@@ -50,7 +50,7 @@ trait XCellRangesAccess extends XInterface {
     * @returns the specified cell ranges.
     * @see com.sun.star.table.CellRange
     */
-  def getCellRangesByName(aRange: String): SafeArray[XCellRange] = js.native
+  def getCellRangesByName(aRange: String): SafeArray[XCellRange]
 }
 object XCellRangesAccess {
   

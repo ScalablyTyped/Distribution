@@ -2,16 +2,14 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // language/parser.js
-@js.native
 trait ParseOptions extends StObject {
   
-  var noLocation: js.UndefOr[Boolean] = js.native
+  var noLocation: js.UndefOr[Boolean] = js.undefined
   
-  var noSource: js.UndefOr[Boolean] = js.native
+  var noSource: js.UndefOr[Boolean] = js.undefined
 }
 object ParseOptions {
   

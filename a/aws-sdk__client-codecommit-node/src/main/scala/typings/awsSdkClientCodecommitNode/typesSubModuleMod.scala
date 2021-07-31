@@ -2,28 +2,26 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSubModuleMod {
   
-  @js.native
   trait SubModule extends StObject {
     
     /**
       * <p>The fully qualified path to the folder that contains the reference to the submodule.</p>
       */
-    var absolutePath: js.UndefOr[String] = js.native
+    var absolutePath: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The commit ID that contains the reference to the submodule.</p>
       */
-    var commitId: js.UndefOr[String] = js.native
+    var commitId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The relative path of the submodule from the folder where the query originated.</p>
       */
-    var relativePath: js.UndefOr[String] = js.native
+    var relativePath: js.UndefOr[String] = js.undefined
   }
   object SubModule {
     

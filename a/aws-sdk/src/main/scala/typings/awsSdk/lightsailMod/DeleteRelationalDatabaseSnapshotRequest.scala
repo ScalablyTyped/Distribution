@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRelationalDatabaseSnapshotRequest extends StObject {
   
   /**
     * The name of the database snapshot that you are deleting.
     */
-  var relationalDatabaseSnapshotName: ResourceName = js.native
+  var relationalDatabaseSnapshotName: ResourceName
 }
 object DeleteRelationalDatabaseSnapshotRequest {
   

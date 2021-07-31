@@ -15,7 +15,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distributionMod {
@@ -25,43 +24,42 @@ object distributionMod {
   @js.native
   class Distribution protected ()
     extends Component[
-          DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Distribution", "Distribution")
   @js.native
   val Distribution: ComponentClass[
-    DistributionProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    DistributionProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait DistributionProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var basis: js.UndefOr[BasisType] = js.native
+    var basis: js.UndefOr[BasisType] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var gap: js.UndefOr[GapType] = js.native
+    var gap: js.UndefOr[GapType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var values: js.Array[ColorValue] = js.native
+    var values: js.Array[ColorValue]
   }
   object DistributionProps {
     
@@ -93,7 +91,7 @@ object distributionMod {
       def setBasisUndefined: Self = StObject.set(x, "basis", js.undefined)
       
       @scala.inline
-      def setChildren(value: /* repeated */ js.Any => _): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)

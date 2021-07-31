@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeRecipientTabs extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [approve]:		      https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/approve
     *
     */
-  var approveTabs: js.UndefOr[js.Array[Approve]] = js.native
+  var approveTabs: js.UndefOr[js.Array[Approve]] = js.undefined
   
   /**
     * A list of
@@ -37,13 +35,13 @@ trait EnvelopeRecipientTabs extends StObject {
     * [checkbox]:  https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/checkbox
     *
     */
-  var checkboxTabs: js.UndefOr[js.Array[Checkbox]] = js.native
+  var checkboxTabs: js.UndefOr[js.Array[Checkbox]] = js.undefined
   
   /**
     * An array of tabs that represents a collection of comments in a comment thread. For example, if a recipient has questions about the content of a document,
     * they can add a comment to the document and control who else can see the comment. This value can't be set.
     */
-  var commentThreadTabs: js.UndefOr[js.Array[CommentThread]] = js.native
+  var commentThreadTabs: js.UndefOr[js.Array[CommentThread]] = js.undefined
   
   /**
     * A list of
@@ -57,7 +55,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [company]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/company
     *
     */
-  var companyTabs: js.UndefOr[js.Array[Company]] = js.native
+  var companyTabs: js.UndefOr[js.Array[Company]] = js.undefined
   
   /**
     * A list of
@@ -69,7 +67,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [dateSigned]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/dateSigned
     *
     */
-  var dateSignedTabs: js.UndefOr[js.Array[DateSigned]] = js.native
+  var dateSignedTabs: js.UndefOr[js.Array[DateSigned]] = js.undefined
   
   /**
     * A list of
@@ -84,7 +82,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [date]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/date
     *
     */
-  var dateTabs: js.UndefOr[js.Array[Date]] = js.native
+  var dateTabs: js.UndefOr[js.Array[Date]] = js.undefined
   
   /**
     * A list of
@@ -96,9 +94,9 @@ trait EnvelopeRecipientTabs extends StObject {
     * [decline]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/decline
     *
     */
-  var declineTabs: js.UndefOr[js.Array[Decline]] = js.native
+  var declineTabs: js.UndefOr[js.Array[Decline]] = js.undefined
   
-  var drawTabs: js.UndefOr[js.Array[Draw]] = js.native
+  var drawTabs: js.UndefOr[js.Array[Draw]] = js.undefined
   
   /**
     * A list of
@@ -110,7 +108,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [emailAddress]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/emailAddress
     *
     */
-  var emailAddressTabs: js.UndefOr[js.Array[EmailAddress]] = js.native
+  var emailAddressTabs: js.UndefOr[js.Array[EmailAddress]] = js.undefined
   
   /**
     * A list of
@@ -129,7 +127,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [email]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/email
     *
     */
-  var emailTabs: js.UndefOr[js.Array[Email]] = js.native
+  var emailTabs: js.UndefOr[js.Array[Email]] = js.undefined
   
   /**
     * A list of
@@ -141,7 +139,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [envelopeId]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/envelopeId
     *
     */
-  var envelopeIdTabs: js.UndefOr[js.Array[EnvelopeId]] = js.native
+  var envelopeIdTabs: js.UndefOr[js.Array[EnvelopeId]] = js.undefined
   
   /**
     * A list of
@@ -154,7 +152,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [firstName]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/firstName
     *
     */
-  var firstNameTabs: js.UndefOr[js.Array[FirstName]] = js.native
+  var firstNameTabs: js.UndefOr[js.Array[FirstName]] = js.undefined
   
   /**
     * A list of [Formula tabs][formulaTab].
@@ -172,7 +170,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [formulaTab]:	    	https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/formulaTab
     *
     */
-  var formulaTabs: js.UndefOr[js.Array[FormulaTab]] = js.native
+  var formulaTabs: js.UndefOr[js.Array[FormulaTab]] = js.undefined
   
   /**
     * A list of
@@ -184,7 +182,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [fullName]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/fullName
     *
     */
-  var fullNameTabs: js.UndefOr[js.Array[FullName]] = js.native
+  var fullNameTabs: js.UndefOr[js.Array[FullName]] = js.undefined
   
   /**
     * A list of
@@ -195,7 +193,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [initialHere]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/initialHere
     *
     */
-  var initialHereTabs: js.UndefOr[js.Array[InitialHere]] = js.native
+  var initialHereTabs: js.UndefOr[js.Array[InitialHere]] = js.undefined
   
   /**
     * A list of
@@ -207,14 +205,14 @@ trait EnvelopeRecipientTabs extends StObject {
     * [lastName]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/lastName
     *
     */
-  var lastNameTabs: js.UndefOr[js.Array[LastName]] = js.native
+  var lastNameTabs: js.UndefOr[js.Array[LastName]] = js.undefined
   
   /**
     * A list of [List tabs][list].
     * A List tab enables the recipient to choose from a list of options. You specify the options in the `listItems` property. This value can't be set.
     * [list]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/list
     */
-  var listTabs: js.UndefOr[js.Array[List]] = js.native
+  var listTabs: js.UndefOr[js.Array[List]] = js.undefined
   
   /**
     * A list of  [Notarize tabs][notarize].
@@ -226,7 +224,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [notarize]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/notarize
     *
     */
-  var notarizeTabs: js.UndefOr[js.Array[Notarize]] = js.native
+  var notarizeTabs: js.UndefOr[js.Array[Notarize]] = js.undefined
   
   /**
     * A list of
@@ -237,7 +235,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [note]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/note
     *
     */
-  var noteTabs: js.UndefOr[js.Array[Note]] = js.native
+  var noteTabs: js.UndefOr[js.Array[Note]] = js.undefined
   
   /**
     * A list of
@@ -246,12 +244,12 @@ trait EnvelopeRecipientTabs extends StObject {
     * [number]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/number
     */
   // tslint:disable-next-line: ban-types
-  var numberTabs: js.UndefOr[js.Array[Number]] = js.native
+  var numberTabs: js.UndefOr[js.Array[Number]] = js.undefined
   
   /**
     * This type of tab enables the recipient to strike through document text. This value can't be set.
     */
-  var polyLineOverlayTabs: js.UndefOr[js.Array[PolyLineOverlay]] = js.native
+  var polyLineOverlayTabs: js.UndefOr[js.Array[PolyLineOverlay]] = js.undefined
   
   /**
     * A list of [Radio Group tabs][radioGroup].
@@ -259,7 +257,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * buttons associated with the group. Only one radio button can be selected in a group. This value can be set.
     * [radioGroup]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/radioGroup
     */
-  var radioGroupTabs: js.UndefOr[js.Array[RadioGroup]] = js.native
+  var radioGroupTabs: js.UndefOr[js.Array[RadioGroup]] = js.undefined
   
   /**
     * A list of
@@ -270,7 +268,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [signHere]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/signHere
     *
     */
-  var signHereTabs: js.UndefOr[js.Array[SignHere]] = js.native
+  var signHereTabs: js.UndefOr[js.Array[SignHere]] = js.undefined
   
   /**
     * A list of
@@ -282,7 +280,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [signerAttachment]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/signerAttachment
     *
     */
-  var signerAttachmentTabs: js.UndefOr[js.Array[SignerAttachment]] = js.native
+  var signerAttachmentTabs: js.UndefOr[js.Array[SignerAttachment]] = js.undefined
   
   /**
     * A list of [Smart Section](https://www.docusign.com/blog/dsdev-deep-dive-responsive-smart-sections/) tabs.
@@ -291,7 +289,7 @@ trait EnvelopeRecipientTabs extends StObject {
     *
     * **Note**: Smart Sections are a premium feature. Responsive signing must also be enabled for your account.
     */
-  var smartSectionTabs: js.UndefOr[js.Array[SmartSection]] = js.native
+  var smartSectionTabs: js.UndefOr[js.Array[SmartSection]] = js.undefined
   
   /**
     * A list of
@@ -304,12 +302,12 @@ trait EnvelopeRecipientTabs extends StObject {
     * [ssn]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/ssn
     *
     */
-  var ssnTabs: js.UndefOr[js.Array[Ssn]] = js.native
+  var ssnTabs: js.UndefOr[js.Array[Ssn]] = js.undefined
   
   /**
     * An array of `tabGroup` items that contain information about tab groups. To assign a tab to a `tabGroup`, you assign the `tabGroupLabel` to the `Tab.TabGroupLabels` array.
     */
-  var tabGroups: js.UndefOr[js.Array[TabGroup]] = js.native
+  var tabGroups: js.UndefOr[js.Array[TabGroup]] = js.undefined
   
   /**
     * A list of
@@ -320,7 +318,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [text]: https://developers.docusign.com/esign-rest-api/reference/EnvelopeRecipientTabs/create/#/definitions/text
     *
     */
-  var textTabs: js.UndefOr[js.Array[Text]] = js.native
+  var textTabs: js.UndefOr[js.Array[Text]] = js.undefined
   
   /**
     * A list of
@@ -332,7 +330,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [title]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/title
     *
     */
-  var titleTabs: js.UndefOr[js.Array[Title]] = js.native
+  var titleTabs: js.UndefOr[js.Array[Title]] = js.undefined
   
   /**
     * A list of
@@ -347,7 +345,7 @@ trait EnvelopeRecipientTabs extends StObject {
     js.Array[
       /* This tab is used with the Approve tab to handle supplemental documents. */ View
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of
@@ -360,7 +358,7 @@ trait EnvelopeRecipientTabs extends StObject {
     * [zip]: https://developers.docusign.com/esign-rest-api/reference/Envelopes/EnvelopeRecipientTabs/create/#/definitions/zip
     *
     */
-  var zipTabs: js.UndefOr[js.Array[Zip]] = js.native
+  var zipTabs: js.UndefOr[js.Array[Zip]] = js.undefined
 }
 object EnvelopeRecipientTabs {
   

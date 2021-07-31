@@ -23,7 +23,6 @@ import typings.std.Error
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageMod {
@@ -33,12 +32,11 @@ object pageMod {
   class default ()
     extends Component[Props, js.Object, js.Any]
   
-  @js.native
   trait LoadingProcessData extends StObject {
     
-    var loaded: Double = js.native
+    var loaded: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object LoadingProcessData {
     
@@ -59,20 +57,19 @@ object pageMod {
     }
   }
   
-  @js.native
   trait PDFPageItem extends StObject {
     
-    var _transport: js.Object = js.native
+    var _transport: js.Object
     
-    var commonObjs: js.Object = js.native
+    var commonObjs: js.Object
     
-    def getAnnotations(args: js.Any*): js.Any = js.native
+    def getAnnotations(args: js.Any*): js.Any
     
-    def getTextContent(args: js.Any*): js.Any = js.native
+    def getTextContent(args: js.Any*): js.Any
     
-    def getViewport(args: js.Any*): js.Any = js.native
+    def getViewport(args: js.Any*): js.Any
     
-    def render(args: js.Any*): js.Any = js.native
+    def render(args: js.Any*): js.Any
   }
   object PDFPageItem {
     
@@ -112,17 +109,17 @@ object pageMod {
     }
   }
   
-  @js.native
   trait PDFPageProxy
-    extends typings.pdfjsDist.mod.PDFPageProxy {
+    extends StObject
+       with typings.pdfjsDist.mod.PDFPageProxy {
     
-    var height: Double = js.native
+    var height: Double
     
-    var originalHeight: Double = js.native
+    var originalHeight: Double
     
-    var originalWidth: Double = js.native
+    var originalWidth: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object PDFPageProxy {
     
@@ -166,26 +163,25 @@ object pageMod {
   
   type Page = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
     /**
       * Defines custom class name(s), that will be added to rendered element.
       * @default 'react-pdf__Page'
       */
-    var className: js.UndefOr[String | js.Array[String]] = js.native
+    var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * A function that customizes how a text layer is rendered.
       * Passes itext item and index for item.
       */
-    var customTextRenderer: js.UndefOr[js.Function1[/* layer */ TextLayerItemInternal, Element]] = js.native
+    var customTextRenderer: js.UndefOr[js.Function1[/* layer */ TextLayerItemInternal, Element]] = js.undefined
     
     /**
       * Defines what the component should display in case of an error.
       * @default 'Failed to load PDF file.'
       */
-    var error: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var error: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Defines the height of the page.
@@ -193,121 +189,121 @@ object pageMod {
       * If you define `width` and `height` at the same time, `height` will be ignored.
       * If you define `height` and `scale` at the same time, the height will be multiplied by a given factor.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * A function that behaves like ref,
       * but it's passed to main `<div>` rendered by `<Page>` component.
       */
-    var inputRef: js.UndefOr[LegacyRef[HTMLDivElement]] = js.native
+    var inputRef: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
     /**
       * Defines what the component should display while loading.
       * @default 'Loading page…'
       */
-    var loading: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var loading: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Defines what the component should display in case of no data.
       * @default 'No page specified.'
       */
-    var noData: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var noData: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Function called in case of an error while loading annotations.
       */
-    var onGetAnnotationsError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onGetAnnotationsError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called when annotations are successfully loaded.
       */
-    var onGetAnnotationsSuccess: js.UndefOr[js.Function1[/* annotations */ js.Any, Unit]] = js.native
+    var onGetAnnotationsSuccess: js.UndefOr[js.Function1[/* annotations */ js.Any, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading text layer items.
       */
-    var onGetTextError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onGetTextError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called when text layer items are successfully loaded.
       */
-    var onGetTextSuccess: js.UndefOr[js.Function1[/* items */ js.Array[TextItem], Unit]] = js.native
+    var onGetTextSuccess: js.UndefOr[js.Function1[/* items */ js.Array[TextItem], Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading the page.
       */
-    var onLoadError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onLoadError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called, potentially multiple times, as the loading progresses.
       */
-    var onLoadProgress: js.UndefOr[js.Function1[/* data */ LoadingProcessData, Unit]] = js.native
+    var onLoadProgress: js.UndefOr[js.Function1[/* data */ LoadingProcessData, Unit]] = js.undefined
     
     /**
       * Function called when the page is successfully loaded.
       */
-    var onLoadSuccess: js.UndefOr[js.Function1[/* page */ PDFPageProxy, Unit]] = js.native
+    var onLoadSuccess: js.UndefOr[js.Function1[/* page */ PDFPageProxy, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while rendering the page.
       */
-    var onRenderError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onRenderError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called when the page is successfully rendered on the screen.
       */
-    var onRenderSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRenderSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Defines which page from PDF file should be displayed.
       * @default 0
       */
-    var pageIndex: js.UndefOr[Double] = js.native
+    var pageIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines which page from PDF file should be displayed.
       * If provided, pageIndex prop will be ignored.
       * @default 1
       */
-    var pageNumber: js.UndefOr[Double] = js.native
+    var pageNumber: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines whether annotations (e.g. links) should be rendered.
       * @default true
       */
-    var renderAnnotationLayer: js.UndefOr[Boolean] = js.native
+    var renderAnnotationLayer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines whether interactive forms should be rendered.
       * `renderAnnotationLayer` prop must be set to true.
       * @default false
       */
-    var renderInteractiveForms: js.UndefOr[Boolean] = js.native
+    var renderInteractiveForms: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines the rendering mode of the page.
       * @default 'canvas'
       */
-    var renderMode: js.UndefOr[canvas | svg | none] = js.native
+    var renderMode: js.UndefOr[canvas | svg | none] = js.undefined
     
     /**
       * Defines whether a text layer should be rendered.
       * @default true
       */
-    var renderTextLayer: js.UndefOr[Boolean] = js.native
+    var renderTextLayer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines the rotation of the page in degrees.
       * 90 = rotated to the right, 180 = upside down, 270 = rotated to the left.
       * Defaults to page's default setting, usually 0.
       */
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines the scale in which PDF file should be rendered.
       * @default 1.0
       */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines the width of the page.
@@ -315,7 +311,7 @@ object pageMod {
       * If you define `width` and `height` at the same time, `height` will be ignored.
       * If you define `width` and `scale` at the same time, the width will be multiplied by a given factor.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Props {
     
@@ -500,20 +496,19 @@ object pageMod {
   
   type RenderFunction = js.Function0[Element]
   
-  @js.native
   trait TextItem extends StObject {
     
-    var dir: String = js.native
+    var dir: String
     
-    var fontName: String = js.native
+    var fontName: String
     
-    var height: Double = js.native
+    var height: Double
     
-    var str: String = js.native
+    var str: String
     
-    var transform: js.Array[Double] = js.native
+    var transform: js.Array[Double]
     
-    var width: Double = js.native
+    var width: Double
   }
   object TextItem {
     
@@ -556,24 +551,23 @@ object pageMod {
     }
   }
   
-  @js.native
   trait TextLayerItemInternal extends StObject {
     
-    var fontName: String = js.native
+    var fontName: String
     
-    var itemIndex: Double = js.native
+    var itemIndex: Double
     
-    var page: PDFPageItem = js.native
+    var page: PDFPageItem
     
-    var rotate: js.UndefOr[`0` | `90` | `180` | `270`] = js.native
+    var rotate: js.UndefOr[`0` | `90` | `180` | `270`] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var str: String = js.native
+    var str: String
     
-    var transform: js.Array[Double] = js.native
+    var transform: js.Array[Double]
     
-    var width: Double = js.native
+    var width: Double
   }
   object TextLayerItemInternal {
     

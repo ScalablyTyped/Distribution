@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait urlUtils extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait urlUtils extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#addProxyRule)
     */
-  def addProxyRule(rule: urlUtilsAddProxyRuleRule): Double = js.native
+  def addProxyRule(rule: urlUtilsAddProxyRuleRule): Double
   
   /**
     * Returns the proxy rule that matches the given URL.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#getProxyRule)
     */
-  def getProxyRule(url: String): js.Any = js.native
+  def getProxyRule(url: String): js.Any
   
   /**
     * Converts the URL arguments to an object representation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-urlUtils.html#urlToObject)
     */
-  def urlToObject(url: String): js.Any = js.native
+  def urlToObject(url: String): js.Any
 }
 object urlUtils {
   

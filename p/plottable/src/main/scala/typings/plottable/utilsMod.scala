@@ -32,31 +32,33 @@ import typings.std.Record
 import typings.std.SVGRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
+  @JSImport("plottable/build/src/utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   object Array {
     
-    @JSImport("plottable/build/src/utils", "Array.add")
+    @JSImport("plottable/build/src/utils", "Array")
     @js.native
-    def add(aList: js.Array[Double], bList: js.Array[Double]): js.Array[Double] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/utils", "Array.createFilledArray")
-    @js.native
-    def createFilledArray[T](value: T, count: Double): js.Array[T] = js.native
-    @JSImport("plottable/build/src/utils", "Array.createFilledArray")
-    @js.native
-    def createFilledArray[T](value: js.Function1[/* index */ js.UndefOr[Double], T], count: Double): js.Array[T] = js.native
+    @scala.inline
+    def add(aList: js.Array[Double], bList: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(aList.asInstanceOf[js.Any], bList.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("plottable/build/src/utils", "Array.flatten")
-    @js.native
-    def flatten[T](a: js.Array[js.Array[T]]): js.Array[T] = js.native
+    @scala.inline
+    def createFilledArray[T](value: T, count: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilledArray")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+    @scala.inline
+    def createFilledArray[T](value: js.Function1[/* index */ js.UndefOr[Double], T], count: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilledArray")(value.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
     
-    @JSImport("plottable/build/src/utils", "Array.uniq")
-    @js.native
-    def uniq[T](arr: js.Array[T]): js.Array[T] = js.native
+    @scala.inline
+    def flatten[T](a: js.Array[js.Array[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(a.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+    
+    @scala.inline
+    def uniq[T](arr: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("uniq")(arr.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
   
   @JSImport("plottable/build/src/utils", "Bucket")
@@ -73,17 +75,18 @@ object utilsMod {
   
   object Color {
     
-    @JSImport("plottable/build/src/utils", "Color.colorTest")
+    @JSImport("plottable/build/src/utils", "Color")
     @js.native
-    def colorTest(colorTester: SimpleSelection[_], className: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/utils", "Color.contrast")
-    @js.native
-    def contrast(a: String, b: String): Double = js.native
+    @scala.inline
+    def colorTest(colorTester: SimpleSelection[js.Any], className: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("colorTest")(colorTester.asInstanceOf[js.Any], className.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("plottable/build/src/utils", "Color.lightenColor")
-    @js.native
-    def lightenColor(color: String, factor: Double): String = js.native
+    @scala.inline
+    def contrast(a: String, b: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrast")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def lightenColor(color: String, factor: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("lightenColor")(color.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object DOM {
@@ -98,92 +101,68 @@ object utilsMod {
     @scala.inline
     def SCREEN_REFRESH_RATE_MILLISECONDS_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SCREEN_REFRESH_RATE_MILLISECONDS")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/utils", "DOM.clientRectInside")
-    @js.native
-    def clientRectInside(innerClientRect: ClientRect, outerClientRect: ClientRect): Boolean = js.native
+    @scala.inline
+    def clientRectInside(innerClientRect: ClientRect, outerClientRect: ClientRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clientRectInside")(innerClientRect.asInstanceOf[js.Any], outerClientRect.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "DOM.clientRectsOverlap")
-    @js.native
-    def clientRectsOverlap(clientRectA: ClientRect, clientRectB: ClientRect): Boolean = js.native
+    @scala.inline
+    def clientRectsOverlap(clientRectA: ClientRect, clientRectB: ClientRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("clientRectsOverlap")(clientRectA.asInstanceOf[js.Any], clientRectB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "DOM.contains")
-    @js.native
-    def contains(parent: Element, child: Element): Boolean = js.native
+    @scala.inline
+    def contains(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "DOM.elementBBox")
-    @js.native
-    def elementBBox(element: SimpleSelection[_]): SVGRect = js.native
+    @scala.inline
+    def elementBBox(element: SimpleSelection[js.Any]): SVGRect = ^.asInstanceOf[js.Dynamic].applyDynamic("elementBBox")(element.asInstanceOf[js.Any]).asInstanceOf[SVGRect]
     
-    @JSImport("plottable/build/src/utils", "DOM.elementHeight")
-    @js.native
-    def elementHeight(elementOrSelection: Selection_[Element, _, _, _]): Double = js.native
-    @JSImport("plottable/build/src/utils", "DOM.elementHeight")
-    @js.native
-    def elementHeight(elementOrSelection: Element): Double = js.native
+    @scala.inline
+    def elementHeight(elementOrSelection: Selection_[Element, js.Any, js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementHeight")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def elementHeight(elementOrSelection: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementHeight")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "DOM.elementWidth")
-    @js.native
-    def elementWidth(elementOrSelection: Selection_[Element, _, _, _]): Double = js.native
-    @JSImport("plottable/build/src/utils", "DOM.elementWidth")
-    @js.native
-    def elementWidth(elementOrSelection: Element): Double = js.native
+    @scala.inline
+    def elementWidth(elementOrSelection: Selection_[Element, js.Any, js.Any, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementWidth")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def elementWidth(elementOrSelection: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("elementWidth")(elementOrSelection.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "DOM.entityBounds")
-    @js.native
-    def entityBounds(element: Element): IEntityBounds = js.native
+    @scala.inline
+    def entityBounds(element: Element): IEntityBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(element.asInstanceOf[js.Any]).asInstanceOf[IEntityBounds]
     
-    @JSImport("plottable/build/src/utils", "DOM.expandRect")
-    @js.native
-    def expandRect(rect: ClientRect, amount: Double): Left = js.native
+    @scala.inline
+    def expandRect(rect: ClientRect, amount: Double): Left = (^.asInstanceOf[js.Dynamic].applyDynamic("expandRect")(rect.asInstanceOf[js.Any], amount.asInstanceOf[js.Any])).asInstanceOf[Left]
     
-    @JSImport("plottable/build/src/utils", "DOM.getElementTransform")
-    @js.native
-    def getElementTransform(elem: Element): ICssTransformMatrix | Null = js.native
+    @scala.inline
+    def getElementTransform(elem: Element): ICssTransformMatrix | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTransform")(elem.asInstanceOf[js.Any]).asInstanceOf[ICssTransformMatrix | Null]
     
-    @JSImport("plottable/build/src/utils", "DOM.getHtmlElementAncestors")
-    @js.native
-    def getHtmlElementAncestors(elem: Element): js.Array[HTMLElement] = js.native
+    @scala.inline
+    def getHtmlElementAncestors(elem: Element): js.Array[HTMLElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHtmlElementAncestors")(elem.asInstanceOf[js.Any]).asInstanceOf[js.Array[HTMLElement]]
     
-    @JSImport("plottable/build/src/utils", "DOM.getRotate")
-    @js.native
-    def getRotate(el: SimpleSelection[_]): Double = js.native
+    @scala.inline
+    def getRotate(el: SimpleSelection[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getRotate")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "DOM.getScaleValues")
-    @js.native
-    def getScaleValues(el: SimpleSelection[_]): js.Tuple2[Double, Double] = js.native
+    @scala.inline
+    def getScaleValues(el: SimpleSelection[js.Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     
-    @JSImport("plottable/build/src/utils", "DOM.getTranslateValues")
-    @js.native
-    def getTranslateValues(el: SimpleSelection[_]): js.Tuple2[Double, Double] = js.native
+    @scala.inline
+    def getTranslateValues(el: SimpleSelection[js.Any]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslateValues")(el.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
     
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect): Boolean = js.native
-    @JSImport("plottable/build/src/utils", "DOM.intersectsBBox")
-    @js.native
-    def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = js.native
+    @scala.inline
+    def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Double, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Double, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Range, yValOrRange: Double, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def intersectsBBox(xValOrRange: Range, yValOrRange: Range, bbox: SVGRect, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("intersectsBBox")(xValOrRange.asInstanceOf[js.Any], yValOrRange.asInstanceOf[js.Any], bbox.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "DOM.requestAnimationFramePolyfill")
-    @js.native
-    def requestAnimationFramePolyfill(callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def requestAnimationFramePolyfill(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("requestAnimationFramePolyfill")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("plottable/build/src/utils", "EntityStore")
@@ -198,12 +177,14 @@ object utilsMod {
   
   object Math {
     
-    @JSImport("plottable/build/src/utils", "Math.applyTransform")
+    @JSImport("plottable/build/src/utils", "Math")
     @js.native
-    def applyTransform(a: ICssTransformMatrix, p: Point): Point = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/utils", "Math.boundsIntersects")
-    @js.native
+    @scala.inline
+    def applyTransform(a: ICssTransformMatrix, p: Point): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("applyTransform")(a.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Point]
+    
+    @scala.inline
     def boundsIntersects(
       aX: Double,
       aY: Double,
@@ -213,100 +194,86 @@ object utilsMod {
       bY: Double,
       bWidth: Double,
       bHeight: Double
-    ): Boolean = js.native
+    ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boundsIntersects")(aX.asInstanceOf[js.Any], aY.asInstanceOf[js.Any], aWidth.asInstanceOf[js.Any], aHeight.asInstanceOf[js.Any], bX.asInstanceOf[js.Any], bY.asInstanceOf[js.Any], bWidth.asInstanceOf[js.Any], bHeight.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "Math.clamp")
-    @js.native
-    def clamp(x: Double, min: Double, max: Double): Double = js.native
+    @scala.inline
+    def clamp(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "Math.degreesToRadians")
-    @js.native
-    def degreesToRadians(degree: Double): Double = js.native
+    @scala.inline
+    def degreesToRadians(degree: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("degreesToRadians")(degree.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "Math.distanceSquared")
-    @js.native
-    def distanceSquared(p1: Point, p2: Point): Double = js.native
+    @scala.inline
+    def distanceSquared(p1: Point, p2: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquared")(p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("plottable/build/src/utils", "Math.getCumulativeTransform")
-    @js.native
-    def getCumulativeTransform(element: Element): ICssTransformMatrix = js.native
+    @scala.inline
+    def getCumulativeTransform(element: Element): ICssTransformMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("getCumulativeTransform")(element.asInstanceOf[js.Any]).asInstanceOf[ICssTransformMatrix]
     
-    @JSImport("plottable/build/src/utils", "Math.inRange")
-    @js.native
-    def inRange(x: Double, a: Double, b: Double): Boolean = js.native
+    @scala.inline
+    def inRange(x: Double, a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("inRange")(x.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "Math.invertMatrix")
-    @js.native
-    def invertMatrix(a: ICssTransformMatrix): ICssTransformMatrix = js.native
+    @scala.inline
+    def invertMatrix(a: ICssTransformMatrix): ICssTransformMatrix = ^.asInstanceOf[js.Dynamic].applyDynamic("invertMatrix")(a.asInstanceOf[js.Any]).asInstanceOf[ICssTransformMatrix]
     
-    @JSImport("plottable/build/src/utils", "Math.isNaN")
-    @js.native
-    def isNaN(n: js.Any): Boolean = js.native
+    @scala.inline
+    def isNaN(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNaN")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "Math.isValidNumber")
-    @js.native
-    def isValidNumber(n: js.Any): Boolean = js.native
+    @scala.inline
+    def isValidNumber(n: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidNumber")(n.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("plottable/build/src/utils", "Math.max")
-    @js.native
-    def max[C](array: js.Array[C], defaultValue: C): C = js.native
-    @JSImport("plottable/build/src/utils", "Math.max")
-    @js.native
+    @scala.inline
+    def max[C](array: js.Array[C], defaultValue: C): C = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[C]
+    @scala.inline
     def max[T, C](
       array: js.Array[T],
       accessor: js.Function2[/* t */ js.UndefOr[T], /* i */ js.UndefOr[Double], C],
       defaultValue: C
-    ): C = js.native
+    ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[C]
     
-    @JSImport("plottable/build/src/utils", "Math.min")
-    @js.native
-    def min[C](array: js.Array[C], defaultValue: C): C = js.native
-    @JSImport("plottable/build/src/utils", "Math.min")
-    @js.native
+    @scala.inline
+    def min[C](array: js.Array[C], defaultValue: C): C = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[C]
+    @scala.inline
     def min[T, C](
       array: js.Array[T],
       accessor: js.Function2[/* t */ js.UndefOr[T], /* i */ js.UndefOr[Double], C],
       defaultValue: C
-    ): C = js.native
+    ): C = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(array.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], defaultValue.asInstanceOf[js.Any])).asInstanceOf[C]
     
-    @JSImport("plottable/build/src/utils", "Math.multiplyMatrix")
-    @js.native
-    def multiplyMatrix(a: ICssTransformMatrix, b: ICssTransformMatrix): ICssTransformMatrix = js.native
+    @scala.inline
+    def multiplyMatrix(a: ICssTransformMatrix, b: ICssTransformMatrix): ICssTransformMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyMatrix")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ICssTransformMatrix]
     
-    @JSImport("plottable/build/src/utils", "Math.multiplyTranslate")
-    @js.native
-    def multiplyTranslate(a: ICssTransformMatrix, v: ITranslateVector): ICssTransformMatrix = js.native
+    @scala.inline
+    def multiplyTranslate(a: ICssTransformMatrix, v: ITranslateVector): ICssTransformMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("multiplyTranslate")(a.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[ICssTransformMatrix]
     
-    @JSImport("plottable/build/src/utils", "Math.premultiplyTranslate")
-    @js.native
-    def premultiplyTranslate(v: ITranslateVector, b: ICssTransformMatrix): ICssTransformMatrix = js.native
+    @scala.inline
+    def premultiplyTranslate(v: ITranslateVector, b: ICssTransformMatrix): ICssTransformMatrix = (^.asInstanceOf[js.Dynamic].applyDynamic("premultiplyTranslate")(v.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[ICssTransformMatrix]
     
-    @JSImport("plottable/build/src/utils", "Math.range")
-    @js.native
-    def range(start: Double, stop: Double): js.Array[Double] = js.native
-    @JSImport("plottable/build/src/utils", "Math.range")
-    @js.native
-    def range(start: Double, stop: Double, step: Double): js.Array[Double] = js.native
+    @scala.inline
+    def range(start: Double, stop: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+    @scala.inline
+    def range(start: Double, stop: Double, step: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("plottable/build/src/utils", "Math.within")
-    @js.native
-    def within(p: Point, bounds: Bounds): Boolean = js.native
+    @scala.inline
+    def within(p: Point, bounds: Bounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(p.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object RTree {
+    
+    @JSImport("plottable/build/src/utils", "RTree")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("plottable/build/src/utils", "RTree.QueryPredicateResult")
     @js.native
     object QueryPredicateResult extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.plottable.rTreeMod.QueryPredicateResult with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.plottable.rTreeMod.QueryPredicateResult & Double] = js.native
       
-      /* 1 */ val FAIL: typings.plottable.rTreeMod.QueryPredicateResult.FAIL with Double = js.native
+      /* 1 */ val FAIL: typings.plottable.rTreeMod.QueryPredicateResult.FAIL & Double = js.native
       
-      /* 0 */ val PASS: typings.plottable.rTreeMod.QueryPredicateResult.PASS with Double = js.native
+      /* 0 */ val PASS: typings.plottable.rTreeMod.QueryPredicateResult.PASS & Double = js.native
       
-      /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.rTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE with Double = js.native
+      /* 2 */ val PASS_AND_OVERWRITE: typings.plottable.rTreeMod.QueryPredicateResult.PASS_AND_OVERWRITE & Double = js.native
     }
     
     @JSImport("plottable/build/src/utils", "RTree.RTree")
@@ -314,8 +281,8 @@ object utilsMod {
     class RTree[T] ()
       extends typings.plottable.rTreeMod.RTree[T] {
       def this(maxNodeChildren: Double) = this()
-      def this(maxNodeChildren: js.UndefOr[scala.Nothing], splitStrategy: IRTreeSplitStrategy) = this()
       def this(maxNodeChildren: Double, splitStrategy: IRTreeSplitStrategy) = this()
+      def this(maxNodeChildren: Unit, splitStrategy: IRTreeSplitStrategy) = this()
     }
     
     @JSImport("plottable/build/src/utils", "RTree.RTreeBounds")
@@ -327,15 +294,18 @@ object utilsMod {
     /* static members */
     object RTreeBounds {
       
+      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Returns the orthogonal absolute distance in the x-dimension from point
         * `p` to the farthest edge of `bounds`.
         *
         * If `p.x` is inside the bounds returns `0`.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.absoluteDistanceToFarEdgeX")
-      @js.native
-      def absoluteDistanceToFarEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def absoluteDistanceToFarEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the y-dimension from point
@@ -343,9 +313,8 @@ object utilsMod {
         *
         * If `p.y` is inside the bounds returns `0`.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.absoluteDistanceToFarEdgeY")
-      @js.native
-      def absoluteDistanceToFarEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def absoluteDistanceToFarEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToFarEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the x-dimension from point
@@ -353,9 +322,8 @@ object utilsMod {
         *
         * If `p.x` is inside the bounds returns `0`.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.absoluteDistanceToNearEdgeX")
-      @js.native
-      def absoluteDistanceToNearEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def absoluteDistanceToNearEdgeX(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeX")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the orthogonal absolute distance in the y-dimension from point
@@ -363,17 +331,14 @@ object utilsMod {
         *
         * If `p.y` is inside the bounds returns `0`.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.absoluteDistanceToNearEdgeY")
-      @js.native
-      def absoluteDistanceToNearEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def absoluteDistanceToNearEdgeY(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("absoluteDistanceToNearEdgeY")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.bounds")
-      @js.native
-      def bounds(bounds: Bounds): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def bounds(bounds: Bounds): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("bounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.distanceSquaredToFarEdge")
-      @js.native
-      def distanceSquaredToFarEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def distanceSquaredToFarEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToFarEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /**
         * Returns the distance squared from `p` to the nearest edge of `bounds`. If
@@ -381,60 +346,50 @@ object utilsMod {
         *
         * https://gamedev.stackexchange.com/questions/44483/how-do-i-calculate-distance-between-a-point-and-an-axis-aligned-rectangle
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.distanceSquaredToNearEdge")
-      @js.native
-      def distanceSquaredToNearEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = js.native
+      @scala.inline
+      def distanceSquaredToNearEdge(bounds: typings.plottable.rTreeMod.RTreeBounds, p: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceSquaredToNearEdge")(bounds.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[Double]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.entityBounds")
-      @js.native
-      def entityBounds(bounds: IEntityBounds): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def entityBounds(bounds: IEntityBounds): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("entityBounds")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
       /**
         * Returns true if `a` overlaps `b` in the x and y axes.
         *
         * Touching counts as overlap.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.isBoundsOverlapBounds")
-      @js.native
-      def isBoundsOverlapBounds(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = js.native
+      @scala.inline
+      def isBoundsOverlapBounds(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapBounds")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Returns true if `a` overlaps `b` in the x axis only.
         *
         * Touching counts as overlap.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.isBoundsOverlapX")
-      @js.native
-      def isBoundsOverlapX(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = js.native
+      @scala.inline
+      def isBoundsOverlapX(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapX")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
       /**
         * Returns true if `a` overlaps `b` in the y axis only.
         *
         * Touching counts as overlap.
         */
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.isBoundsOverlapY")
-      @js.native
-      def isBoundsOverlapY(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = js.native
+      @scala.inline
+      def isBoundsOverlapY(a: typings.plottable.rTreeMod.RTreeBounds, b: typings.plottable.rTreeMod.RTreeBounds): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoundsOverlapY")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.pointPair")
-      @js.native
-      def pointPair(p0: Point, p1: Point): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def pointPair(p0: Point, p1: Point): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("pointPair")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.points")
-      @js.native
-      def points(points: js.Array[Point]): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def points(points: js.Array[Point]): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("points")(points.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.union")
-      @js.native
-      def union(b0: typings.plottable.rTreeMod.RTreeBounds, b1: typings.plottable.rTreeMod.RTreeBounds): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def union(b0: typings.plottable.rTreeMod.RTreeBounds, b1: typings.plottable.rTreeMod.RTreeBounds): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("union")(b0.asInstanceOf[js.Any], b1.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.unionAll")
-      @js.native
-      def unionAll(bounds: js.Array[typings.plottable.rTreeMod.RTreeBounds]): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def unionAll(bounds: js.Array[typings.plottable.rTreeMod.RTreeBounds]): typings.plottable.rTreeMod.RTreeBounds = ^.asInstanceOf[js.Dynamic].applyDynamic("unionAll")(bounds.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeBounds.xywh")
-      @js.native
-      def xywh(x: Double, y: Double, w: Double, h: Double): typings.plottable.rTreeMod.RTreeBounds = js.native
+      @scala.inline
+      def xywh(x: Double, y: Double, w: Double, h: Double): typings.plottable.rTreeMod.RTreeBounds = (^.asInstanceOf[js.Dynamic].applyDynamic("xywh")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeBounds]
     }
     
     @JSImport("plottable/build/src/utils", "RTree.RTreeNode")
@@ -446,22 +401,27 @@ object utilsMod {
     /* static members */
     object RTreeNode {
       
-      @JSImport("plottable/build/src/utils", "RTree.RTreeNode.valueNode")
+      @JSImport("plottable/build/src/utils", "RTree.RTreeNode")
       @js.native
-      def valueNode[T](bounds: typings.plottable.rTreeMod.RTreeBounds, value: T): typings.plottable.rTreeMod.RTreeNode[T] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def valueNode[T](bounds: typings.plottable.rTreeMod.RTreeBounds, value: T): typings.plottable.rTreeMod.RTreeNode[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("valueNode")(bounds.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.plottable.rTreeMod.RTreeNode[T]]
     }
     
-    @JSImport("plottable/build/src/utils", "RTree.createMinimizingNodePredicate")
-    @js.native
-    def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ typings.plottable.rTreeMod.RTreeNode[T], QueryPredicateResult] = js.native
+    @scala.inline
+    def createMinimizingNodePredicate[T](point: Point, nearFn: IDistanceFunction, farFn: IDistanceFunction): js.Function1[/* node */ typings.plottable.rTreeMod.RTreeNode[T], QueryPredicateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("createMinimizingNodePredicate")(point.asInstanceOf[js.Any], nearFn.asInstanceOf[js.Any], farFn.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* node */ typings.plottable.rTreeMod.RTreeNode[T], QueryPredicateResult]]
     
-    @JSImport("plottable/build/src/utils", "RTree.createNodeSort")
-    @js.native
+    @scala.inline
     def createNodeSort[T](point: Point, distanceFn: IDistanceFunction): js.Function2[
         /* a */ typings.plottable.rTreeMod.RTreeNode[T], 
         /* b */ typings.plottable.rTreeMod.RTreeNode[T], 
         Double
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("createNodeSort")(point.asInstanceOf[js.Any], distanceFn.asInstanceOf[js.Any])).asInstanceOf[js.Function2[
+        /* a */ typings.plottable.rTreeMod.RTreeNode[T], 
+        /* b */ typings.plottable.rTreeMod.RTreeNode[T], 
+        Double
+      ]]
   }
   
   @JSImport("plottable/build/src/utils", "Set")
@@ -470,6 +430,10 @@ object utilsMod {
     extends typings.plottable.setMod.Set[T]
   
   object Stacking {
+    
+    @JSImport("plottable/build/src/utils", "Stacking")
+    @js.native
+    val ^ : js.Any = js.native
     
     object IStackingOrder {
       
@@ -492,27 +456,23 @@ object utilsMod {
     
     @JSImport("plottable/build/src/utils", "Stacking.normalizeKey")
     @js.native
-    val normalizeKey: (js.Function1[/* key */ js.Any, String]) with MemoizedFunction = js.native
+    val normalizeKey: (js.Function1[/* key */ js.Any, String]) & MemoizedFunction = js.native
     
-    @JSImport("plottable/build/src/utils", "Stacking.stack")
-    @js.native
-    def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[_], valueAccessor: IAccessor[Double]): StackingResult = js.native
-    @JSImport("plottable/build/src/utils", "Stacking.stack")
-    @js.native
+    @scala.inline
+    def stack(datasets: js.Array[Dataset], keyAccessor: IAccessor[js.Any], valueAccessor: IAccessor[Double]): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
+    @scala.inline
     def stack(
       datasets: js.Array[Dataset],
-      keyAccessor: IAccessor[_],
+      keyAccessor: IAccessor[js.Any],
       valueAccessor: IAccessor[Double],
       stackingOrder: IStackingOrder
-    ): StackingResult = js.native
+    ): StackingResult = (^.asInstanceOf[js.Dynamic].applyDynamic("stack")(datasets.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], valueAccessor.asInstanceOf[js.Any], stackingOrder.asInstanceOf[js.Any])).asInstanceOf[StackingResult]
     
-    @JSImport("plottable/build/src/utils", "Stacking.stackedExtent")
-    @js.native
-    def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[_], filter: IAccessor[Boolean]): js.Array[Double] = js.native
+    @scala.inline
+    def stackedExtent(stackingResult: StackingResult, keyAccessor: IAccessor[js.Any], filter: IAccessor[Boolean]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtent")(stackingResult.asInstanceOf[js.Any], keyAccessor.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
     
-    @JSImport("plottable/build/src/utils", "Stacking.stackedExtents")
-    @js.native
-    def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = js.native
+    @scala.inline
+    def stackedExtents[D](stackingResult: GenericStackingResult[D]): MaximumExtents[D] = ^.asInstanceOf[js.Dynamic].applyDynamic("stackedExtents")(stackingResult.asInstanceOf[js.Any]).asInstanceOf[MaximumExtents[D]]
   }
   
   @JSImport("plottable/build/src/utils", "Translator")
@@ -524,48 +484,46 @@ object utilsMod {
   /* static members */
   object Translator {
     
+    @JSImport("plottable/build/src/utils", "Translator")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Is the event's target part of the given component's DOM tree?
       */
-    @JSImport("plottable/build/src/utils", "Translator.isEventInside")
-    @js.native
-    def isEventInside(component: Component, e: Event): Boolean = js.native
+    @scala.inline
+    def isEventInside(component: Component, e: Event): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isEventInside")(component.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object Window {
     
-    @JSImport("plottable/build/src/utils", "Window.debounce")
+    @JSImport("plottable/build/src/utils", "Window")
     @js.native
-    def debounce[T /* <: js.Function */](msec: Double, callback: T): T = js.native
-    @JSImport("plottable/build/src/utils", "Window.debounce")
-    @js.native
-    def debounce[T /* <: js.Function */](msec: Double, callback: T, context: js.Any): T = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("plottable/build/src/utils", "Window.deprecated")
-    @js.native
-    def deprecated(callingMethod: String, version: String): Unit = js.native
-    @JSImport("plottable/build/src/utils", "Window.deprecated")
-    @js.native
-    def deprecated(callingMethod: String, version: String, message: String): Unit = js.native
+    @scala.inline
+    def debounce[T /* <: js.Function */](msec: Double, callback: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(msec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def debounce[T /* <: js.Function */](msec: Double, callback: T, context: js.Any): T = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(msec.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("plottable/build/src/utils", "Window.setTimeout")
-    @js.native
-    def setTimeout(f: js.Function, time: Double, args: js.Any*): Double = js.native
+    @scala.inline
+    def deprecated(callingMethod: String, version: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def deprecated(callingMethod: String, version: String, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deprecated")(callingMethod.asInstanceOf[js.Any], version.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("plottable/build/src/utils", "Window.warn")
-    @js.native
-    def warn(warning: String): Unit = js.native
+    @scala.inline
+    def setTimeout(f: js.Function, time: Double, args: js.Any*): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("setTimeout")(f.asInstanceOf[js.Any], time.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def warn(warning: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(warning.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("plottable/build/src/utils", "assign")
-  @js.native
-  def assign[T /* <: Record[_, _] */](objs: Partial[T]*): T = js.native
+  @scala.inline
+  def assign[T /* <: Record[js.Any, js.Any] */](objs: Partial[T]*): T = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(objs.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("plottable/build/src/utils", "coerceExternalD3")
-  @js.native
-  def coerceExternalD3[S /* <: Selection_[_, _, _, _] */](externalD3Selection: S): S = js.native
+  @scala.inline
+  def coerceExternalD3[S /* <: Selection_[js.Any, js.Any, js.Any, js.Any] */](externalD3Selection: S): S = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceExternalD3")(externalD3Selection.asInstanceOf[js.Any]).asInstanceOf[S]
   
-  @JSImport("plottable/build/src/utils", "getTranslator")
-  @js.native
-  def getTranslator(component: Component): typings.plottable.transformAwareTranslatorMod.Translator = js.native
+  @scala.inline
+  def getTranslator(component: Component): typings.plottable.transformAwareTranslatorMod.Translator = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslator")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.transformAwareTranslatorMod.Translator]
 }

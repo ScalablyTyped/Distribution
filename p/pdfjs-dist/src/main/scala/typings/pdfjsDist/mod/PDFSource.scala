@@ -8,10 +8,8 @@ import typings.std.BufferSource
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFSource extends StObject {
   
   /**
@@ -20,24 +18,24 @@ trait PDFSource extends StObject {
     * for environments without `XMLHttpRequest` support, such as e.g. Node.js.
     * The default value is {DOMCMapReaderFactory}.
     */
-  var CMapReaderFactory: js.UndefOr[js.Any] = js.native
+  var CMapReaderFactory: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies if the Adobe CMaps are
     * binary packed. */
-  var cMapPacked: js.UndefOr[Boolean] = js.native
+  var cMapPacked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The URL where the predefined
     * Adobe CMaps are located. Include trailing slash. */
-  var cMapUrl: js.UndefOr[String] = js.native
+  var cMapUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Binary PDF data. Use typed arrays
     * (Uint8Array) to improve the memory usage. If PDF data is BASE64-encoded,
     * use atob() to convert it to a binary string first.
     */
-  var data: js.UndefOr[Uint8Array | BufferSource | String] = js.native
+  var data: js.UndefOr[Uint8Array | BufferSource | String] = js.undefined
   
   /**
     * Disable pre-fetching of PDF
@@ -47,14 +45,14 @@ trait PDFSource extends StObject {
     *   NOTE: It is also necessary to disable streaming, see above,
     *         in order for disabling of pre-fetching to work correctly.
     */
-  var disableAutoFetch: js.UndefOr[Boolean] = js.native
+  var disableAutoFetch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable the use of
     *   `URL.createObjectURL`, for compatibility with older browsers.
     *   The default value is `false`.
     */
-  var disableCreateObjectURL: js.UndefOr[Boolean] = js.native
+  var disableCreateObjectURL: js.UndefOr[Boolean] = js.undefined
   
   /**
     * By default fonts are
@@ -62,7 +60,7 @@ trait PDFSource extends StObject {
     *   fonts will be rendered using a built-in font renderer that constructs the
     *   glyphs with primitive path commands. The default value is `false`.
     */
-  var disableFontFace: js.UndefOr[Boolean] = js.native
+  var disableFontFace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable range request loading
@@ -70,52 +68,52 @@ trait PDFSource extends StObject {
     *   requests, then the PDF will be fetched in chunks.
     *   The default value is `false`.
     */
-  var disableRange: js.UndefOr[Boolean] = js.native
+  var disableRange: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disable streaming of PDF file
     *   data. By default PDF.js attempts to load PDFs in chunks.
     *   The default value is `false`.
     */
-  var disableStream: js.UndefOr[Boolean] = js.native
+  var disableStream: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The base URL of the document,
     * used when attempting to recover valid absolute URLs for annotations, and
     * outline items, that (incorrectly) only specify relative URLs.
     */
-  var docBaseUrl: js.UndefOr[String] = js.native
+  var docBaseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Basic authentication headers.
     */
-  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.native
+  var httpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /*
     * A typed array with the first portion or
     * all of the pdf data. Used by the extension since some data is already
     * loaded before the switch to range requests.  */
-  var initialData: js.UndefOr[Uint8Array | BufferSource] = js.native
+  var initialData: js.UndefOr[Uint8Array | BufferSource] = js.undefined
   
   /**
     * Determines if we can eval
     * strings as JS. Primarily used to improve performance of font rendering,
     * and when parsing PDF functions. The default value is `true`.
     */
-  var isEvalSupported: js.UndefOr[Boolean] = js.native
+  var isEvalSupported: js.UndefOr[Boolean] = js.undefined
   
   /*
     * The PDF file length. It's used for progress
     * reports and range requests operations.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum allowed image size
     * in total pixels, i.e. width * height. Images above this value will not be
     * rendered. Use -1 for no limit, which is also the default value.
     */
-  var maxImageSize: js.UndefOr[Double] = js.native
+  var maxImageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Strategy for
@@ -127,27 +125,27 @@ trait PDFSource extends StObject {
     * and 'none' where JPEG images will be decoded entirely by PDF.js.
     * The default value is 'decode'.
     */
-  var nativeImageDecoderSupport: js.UndefOr[decode | display | none] = js.native
+  var nativeImageDecoderSupport: js.UndefOr[decode | display | none] = js.undefined
   
   /**
     * For decrypting password-protected PDFs.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Enables special hooks for debugging
     * PDF.js (see `web/debugger.js`). The default value is `false`.
     */
-  var pdfBug: js.UndefOr[Boolean] = js.native
+  var pdfBug: js.UndefOr[Boolean] = js.undefined
   
   /** range */
-  var range: js.UndefOr[PDFDataRangeTransport] = js.native
+  var range: js.UndefOr[PDFDataRangeTransport] = js.undefined
   
   /**
     * Optional parameter to specify
     * maximum number of bytes fetched per range request. The default value is
     * 2^16 = 65536. */
-  var rangeChunkSize: js.UndefOr[Double] = js.native
+  var rangeChunkSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Reject certain promises, e.g.
@@ -155,29 +153,29 @@ trait PDFSource extends StObject {
     * PDF data cannot be successfully parsed, instead of attempting to recover
     * whatever possible of the data. The default value is `false`.
     */
-  var stopAtErrors: js.UndefOr[Boolean] = js.native
+  var stopAtErrors: js.UndefOr[Boolean] = js.undefined
   
   /** The URL of the PDF. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Controls the logging level; the
     * constants from {VerbosityLevel} should be used.
     */
-  var verbosity: js.UndefOr[Double] = js.native
+  var verbosity: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether or not cross-site
     * Access-Control requests should be made using credentials such as cookies
     * or authorization headers. The default is false.
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The worker that will be used for
     * the loading and parsing of the PDF data.
     */
-  var worker: js.UndefOr[PDFWorker] = js.native
+  var worker: js.UndefOr[PDFWorker] = js.undefined
 }
 object PDFSource {
   

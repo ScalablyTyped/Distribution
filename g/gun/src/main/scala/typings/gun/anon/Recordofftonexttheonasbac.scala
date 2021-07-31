@@ -2,30 +2,28 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'off' | 'to' | 'next' | 'the' | 'on' | 'as' | 'back' | 'rid' | 'id', any> */
-@js.native
 trait Recordofftonexttheonasbac extends StObject {
   
-  var as: js.Any = js.native
+  var as: js.Any
   
-  var back: js.Any = js.native
+  var back: js.Any
   
-  var id: js.Any = js.native
+  var id: js.Any
   
-  var next: js.Any = js.native
+  var next: js.Any
   
-  var off: js.Any = js.native
+  var off: js.Any
   
-  var on: js.Any = js.native
+  var on: js.Any
   
-  var rid: js.Any = js.native
+  var rid: js.Any
   
-  var the: js.Any = js.native
+  var the: js.Any
   
-  var to: js.Any = js.native
+  var to: js.Any
 }
 object Recordofftonexttheonasbac {
   

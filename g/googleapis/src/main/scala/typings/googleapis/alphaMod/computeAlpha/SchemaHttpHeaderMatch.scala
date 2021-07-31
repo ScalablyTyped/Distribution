@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * matchRule criteria for request header matches.
   */
-@js.native
 trait SchemaHttpHeaderMatch extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaHttpHeaderMatch extends StObject {
     * exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
     * rangeMatch must be set.
     */
-  var exactMatch: js.UndefOr[String] = js.native
+  var exactMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the HTTP header to match. For matching against the HTTP
@@ -24,7 +22,7 @@ trait SchemaHttpHeaderMatch extends StObject {
     * &quot;:authority&quot;. For matching a request&#39;s method, use the
     * headerName &quot;:method&quot;.
     */
-  var headerName: js.UndefOr[String] = js.native
+  var headerName: js.UndefOr[String] = js.undefined
   
   /**
     * If set to false, the headerMatch is considered a match if the match
@@ -32,14 +30,14 @@ trait SchemaHttpHeaderMatch extends StObject {
     * match if the match criteria above are NOT met. The default setting is
     * false.
     */
-  var invertMatch: js.UndefOr[Boolean] = js.native
+  var invertMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the header must start with the contents of prefixMatch. Only
     * one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
     * rangeMatch must be set.
     */
-  var prefixMatch: js.UndefOr[String] = js.native
+  var prefixMatch: js.UndefOr[String] = js.undefined
   
   /**
     * A header with the contents of headerName must exist. The match takes
@@ -47,7 +45,7 @@ trait SchemaHttpHeaderMatch extends StObject {
     * one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
     * rangeMatch must be set.
     */
-  var presentMatch: js.UndefOr[Boolean] = js.native
+  var presentMatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The header value must be an integer and its value must be in the range
@@ -57,7 +55,7 @@ trait SchemaHttpHeaderMatch extends StObject {
     * -3someString will not match.   Only one of exactMatch, prefixMatch,
     * suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var rangeMatch: js.UndefOr[SchemaInt64RangeMatch] = js.native
+  var rangeMatch: js.UndefOr[SchemaInt64RangeMatch] = js.undefined
   
   /**
     * The value of the header must match the regualar expression specified in
@@ -68,14 +66,14 @@ trait SchemaHttpHeaderMatch extends StObject {
     * header&#39;s port specifier. Only one of exactMatch, prefixMatch,
     * suffixMatch, regexMatch, presentMatch or rangeMatch must be set.
     */
-  var regexMatch: js.UndefOr[String] = js.native
+  var regexMatch: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the header must end with the contents of suffixMatch. Only
     * one of exactMatch, prefixMatch, suffixMatch, regexMatch, presentMatch or
     * rangeMatch must be set.
     */
-  var suffixMatch: js.UndefOr[String] = js.native
+  var suffixMatch: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpHeaderMatch {
   

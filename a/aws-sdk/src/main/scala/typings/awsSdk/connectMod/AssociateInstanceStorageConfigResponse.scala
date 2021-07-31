@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateInstanceStorageConfigResponse extends StObject {
   
   /**
     * The existing association identifier that uniquely identifies the resource type and storage config for the given instance ID.
     */
-  var AssociationId: js.UndefOr[typings.awsSdk.connectMod.AssociationId] = js.native
+  var AssociationId: js.UndefOr[typings.awsSdk.connectMod.AssociationId] = js.undefined
 }
 object AssociateInstanceStorageConfigResponse {
   

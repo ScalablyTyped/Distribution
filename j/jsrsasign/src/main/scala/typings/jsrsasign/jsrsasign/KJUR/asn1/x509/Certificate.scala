@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,8 +28,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * //     signatureAlgorithm   AlgorithmIdentifier,
   * //     signature            BIT STRING  }
   */
-@js.native
-trait Certificate extends ASN1Object {
+trait Certificate
+  extends StObject
+     with ASN1Object {
   
   /**
     * get PEM formatted certificate string after signed
@@ -40,7 +40,7 @@ trait Certificate extends ASN1Object {
     * cert.sign();
     * var sPEM = cert.getPEMString();
     */
-  def getPEMString(): String = js.native
+  def getPEMString(): String
   
   /**
     * set signature value internally by hex string
@@ -48,7 +48,7 @@ trait Certificate extends ASN1Object {
     * var cert = new KJUR.asn1.x509.Certificate({'tbscertobj': tbs});
     * cert.setSignatureHex('01020304');
     */
-  def setSignatureHex(sigHex: String): Unit = js.native
+  def setSignatureHex(sigHex: String): Unit
   
   /**
     * sign TBSCertificate and set signature value internally
@@ -56,7 +56,7 @@ trait Certificate extends ASN1Object {
     * var cert = new KJUR.asn1.x509.Certificate({tbscertobj: tbs, prvkeyobj: prvKey});
     * cert.sign();
     */
-  def sign(): Unit = js.native
+  def sign(): Unit
 }
 object Certificate {
   

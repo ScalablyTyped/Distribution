@@ -7,23 +7,23 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.none
 import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenPointInTime extends Generic {
+trait OpenPointInTime
+  extends StObject
+     with Generic {
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var keep_alive: js.UndefOr[String] = js.native
+  var keep_alive: js.UndefOr[String] = js.undefined
   
-  var preference: js.UndefOr[String] = js.native
+  var preference: js.UndefOr[String] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
 }
 object OpenPointInTime {
   

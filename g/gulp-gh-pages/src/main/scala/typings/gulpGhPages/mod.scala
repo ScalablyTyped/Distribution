@@ -3,34 +3,34 @@ package typings.gulpGhPages
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-gh-pages", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-gh-pages", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-gh-pages", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var branch: js.UndefOr[String] = js.native
+    var branch: js.UndefOr[String] = js.undefined
     
-    var cacheDir: js.UndefOr[String] = js.native
+    var cacheDir: js.UndefOr[String] = js.undefined
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var origin: js.UndefOr[String] = js.native
+    var origin: js.UndefOr[String] = js.undefined
     
-    var push: js.UndefOr[Boolean] = js.native
+    var push: js.UndefOr[Boolean] = js.undefined
     
-    var remoteUrl: js.UndefOr[String] = js.native
+    var remoteUrl: js.UndefOr[String] = js.undefined
   }
   object Options {
     

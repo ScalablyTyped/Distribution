@@ -2,134 +2,134 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Only allow data when
   */
-@js.native
-trait QuestionnaireItemEnableWhen extends BackboneElement {
+trait QuestionnaireItemEnableWhen
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'answerBoolean'.
     */
-  var _answerBoolean: js.UndefOr[Element] = js.native
+  var _answerBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerDate'.
     */
-  var _answerDate: js.UndefOr[Element] = js.native
+  var _answerDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerDateTime'.
     */
-  var _answerDateTime: js.UndefOr[Element] = js.native
+  var _answerDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerDecimal'.
     */
-  var _answerDecimal: js.UndefOr[Element] = js.native
+  var _answerDecimal: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerInteger'.
     */
-  var _answerInteger: js.UndefOr[Element] = js.native
+  var _answerInteger: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerString'.
     */
-  var _answerString: js.UndefOr[Element] = js.native
+  var _answerString: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerTime'.
     */
-  var _answerTime: js.UndefOr[Element] = js.native
+  var _answerTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'answerUri'.
     */
-  var _answerUri: js.UndefOr[Element] = js.native
+  var _answerUri: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'hasAnswer'.
     */
-  var _hasAnswer: js.UndefOr[Element] = js.native
+  var _hasAnswer: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'question'.
     */
-  var _question: js.UndefOr[Element] = js.native
+  var _question: js.UndefOr[Element] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerAttachment: js.UndefOr[Attachment] = js.native
+  var answerAttachment: js.UndefOr[Attachment] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerBoolean: js.UndefOr[Boolean] = js.native
+  var answerBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerCoding: js.UndefOr[Coding] = js.native
+  var answerCoding: js.UndefOr[Coding] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerDate: js.UndefOr[date] = js.native
+  var answerDate: js.UndefOr[date] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerDateTime: js.UndefOr[dateTime] = js.native
+  var answerDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerDecimal: js.UndefOr[decimal] = js.native
+  var answerDecimal: js.UndefOr[decimal] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerInteger: js.UndefOr[integer] = js.native
+  var answerInteger: js.UndefOr[integer] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerQuantity: js.UndefOr[Quantity] = js.native
+  var answerQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerReference: js.UndefOr[Reference] = js.native
+  var answerReference: js.UndefOr[Reference] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerString: js.UndefOr[String] = js.native
+  var answerString: js.UndefOr[String] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerTime: js.UndefOr[time] = js.native
+  var answerTime: js.UndefOr[time] = js.undefined
   
   /**
     * Value question must have
     */
-  var answerUri: js.UndefOr[uri] = js.native
+  var answerUri: js.UndefOr[uri] = js.undefined
   
   /**
     * Enable when answered or not
     */
-  var hasAnswer: js.UndefOr[Boolean] = js.native
+  var hasAnswer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Question that determines whether item is enabled
     */
-  var question: String = js.native
+  var question: String
 }
 object QuestionnaireItemEnableWhen {
   

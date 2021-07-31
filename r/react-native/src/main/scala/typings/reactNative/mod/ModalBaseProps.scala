@@ -5,16 +5,14 @@ import typings.reactNative.reactNativeStrings.none
 import typings.reactNative.reactNativeStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalBaseProps extends StObject {
   
   /**
     * @deprecated Use animationType instead
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The `animationType` prop controls how the modal animates.
@@ -23,29 +21,29 @@ trait ModalBaseProps extends StObject {
     * - `fade` fades into view
     * - `none` appears without an animation
     */
-  var animationType: js.UndefOr[none | slide | fade] = js.native
+  var animationType: js.UndefOr[none | slide | fade] = js.undefined
   
   /**
     * The `onRequestClose` prop allows passing a function that will be called once the modal has been dismissed.
     * _On the Android platform, this is a required function._
     */
-  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.native
+  var onRequestClose: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The `onShow` prop allows passing a function that will be called once the modal has been shown.
     */
-  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[_], Unit]] = js.native
+  var onShow: js.UndefOr[js.Function1[/* event */ NativeSyntheticEvent[js.Any], Unit]] = js.undefined
   
   /**
     * The `transparent` prop determines whether your modal will fill the entire view.
     * Setting this to `true` will render the modal over a transparent background.
     */
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The `visible` prop determines whether your modal is visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ModalBaseProps {
   
@@ -77,7 +75,7 @@ object ModalBaseProps {
     def setOnRequestCloseUndefined: Self = StObject.set(x, "onRequestClose", js.undefined)
     
     @scala.inline
-    def setOnShow(value: /* event */ NativeSyntheticEvent[_] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
+    def setOnShow(value: /* event */ NativeSyntheticEvent[js.Any] => Unit): Self = StObject.set(x, "onShow", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnShowUndefined: Self = StObject.set(x, "onShow", js.undefined)

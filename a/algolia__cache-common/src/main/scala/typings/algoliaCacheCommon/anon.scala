@@ -2,27 +2,25 @@ package typings.algoliaCacheCommon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.Promise<any>> */
-  @js.native
   trait ReadonlyPromiseany extends StObject {
     
-    def `catch`[TResult](): js.Promise[_ | TResult] = js.native
+    def `catch`[TResult](): js.Promise[js.Any | TResult]
     
-    def `finally`(): js.Promise[_] = js.native
+    def `finally`(): js.Promise[js.Any]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromiseany {
     
     @scala.inline
     def apply(
-      `catch`: () => js.Promise[_ | js.Any],
-      `finally`: () => js.Promise[_],
+      `catch`: () => js.Promise[js.Any | js.Any],
+      `finally`: () => js.Promise[js.Any],
       `then`: () => js.Promise[js.Any | js.Any]
     ): ReadonlyPromiseany = {
       val __obj = js.Dynamic.literal()
@@ -36,10 +34,10 @@ object anon {
     implicit class ReadonlyPromiseanyMutableBuilder[Self <: ReadonlyPromiseany] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCatch(value: () => js.Promise[_ | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
+      def setCatch(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setFinally(value: () => js.Promise[_]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
+      def setFinally(value: () => js.Promise[js.Any]): Self = StObject.set(x, "finally", js.Any.fromFunction0(value))
       
       @scala.inline
       def setThen(value: () => js.Promise[js.Any | js.Any]): Self = StObject.set(x, "then", js.Any.fromFunction0(value))
@@ -47,14 +45,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<std.Promise<void>> */
-  @js.native
   trait ReadonlyPromisevoid extends StObject {
     
-    def `catch`[TResult](): js.Promise[Unit | TResult] = js.native
+    def `catch`[TResult](): js.Promise[Unit | TResult]
     
-    def `finally`(): js.Promise[Unit] = js.native
+    def `finally`(): js.Promise[Unit]
     
-    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
   }
   object ReadonlyPromisevoid {
     

@@ -7,7 +7,6 @@ import typings.sipJs.outgoingResponseMod.OutgoingResponse
 import typings.sipJs.outgoingResponseMod.ResponseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object incomingRequestMod {
@@ -59,7 +58,6 @@ object incomingRequestMod {
     def trying(options: ResponseOptions): OutgoingResponse = js.native
   }
   
-  @js.native
   trait IncomingRequestDelegate extends StObject {
     
     /**
@@ -73,13 +71,13 @@ object incomingRequestMod {
       * receiving a "message" (as apposed to a "uas").
       * @param message - Incoming CANCEL request message.
       */
-    var onCancel: js.UndefOr[js.Function1[/* message */ IncomingRequestMessage, Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function1[/* message */ IncomingRequestMessage, Unit]] = js.undefined
     
     /**
       * A transport error occurred attempted to send a response.
       * @param error - Transport error.
       */
-    var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.native
+    var onTransportError: js.UndefOr[js.Function1[/* error */ TransportError, Unit]] = js.undefined
   }
   object IncomingRequestDelegate {
     

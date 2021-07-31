@@ -3,24 +3,22 @@ package typings.powerappsComponentFramework.ComponentFramework
 import typings.powerappsComponentFramework.ComponentFramework.FactoryApi.Popup.PopupService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for the context.factory
   */
-@js.native
 trait Factory extends StObject {
   
   /**
     * Gets the popup service which help create Popup and manage Popup easily
     */
-  def getPopupService(): PopupService = js.native
+  def getPopupService(): PopupService
   
   /**
     * Requests re-rendering of the control with updated data.
     */
-  def requestRender(): Unit = js.native
+  def requestRender(): Unit
 }
 object Factory {
   

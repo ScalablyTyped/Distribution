@@ -2,13 +2,11 @@ package typings.ink.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShowCursor extends StObject {
   
-  var showCursor: js.UndefOr[Boolean] = js.native
+  var showCursor: js.UndefOr[Boolean] = js.undefined
 }
 object ShowCursor {
   

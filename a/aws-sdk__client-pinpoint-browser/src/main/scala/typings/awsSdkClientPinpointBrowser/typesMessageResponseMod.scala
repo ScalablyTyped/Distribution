@@ -8,35 +8,33 @@ import typings.awsSdkClientPinpointBrowser.typesMessageResultMod.UnmarshalledMes
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMessageResponseMod {
   
-  @js.native
   trait MessageResponse extends StObject {
     
     /**
       * Application id of the message.
       */
-    var ApplicationId: js.UndefOr[String] = js.native
+    var ApplicationId: js.UndefOr[String] = js.undefined
     
     /**
       * A map containing a multi part response for each address, with the endpointId as the key and the result as the value.
       */
     var EndpointResult: js.UndefOr[
         StringDictionary[EndpointMessageResult] | (Iterable[js.Tuple2[String, EndpointMessageResult]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Original request Id for which this message was delivered.
       */
-    var RequestId: js.UndefOr[String] = js.native
+    var RequestId: js.UndefOr[String] = js.undefined
     
     /**
       * A map containing a multi part response for each address, with the address as the key(Email address, phone number or push token) and the result as the value.
       */
-    var Result: js.UndefOr[StringDictionary[MessageResult] | (Iterable[js.Tuple2[String, MessageResult]])] = js.native
+    var Result: js.UndefOr[StringDictionary[MessageResult] | (Iterable[js.Tuple2[String, MessageResult]])] = js.undefined
   }
   object MessageResponse {
     
@@ -77,20 +75,21 @@ object typesMessageResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMessageResponse extends MessageResponse {
+  trait UnmarshalledMessageResponse
+    extends StObject
+       with MessageResponse {
     
     /**
       * A map containing a multi part response for each address, with the endpointId as the key and the result as the value.
       */
     @JSName("EndpointResult")
-    var EndpointResult_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledEndpointMessageResult]] = js.native
+    var EndpointResult_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledEndpointMessageResult]] = js.undefined
     
     /**
       * A map containing a multi part response for each address, with the address as the key(Email address, phone number or push token) and the result as the value.
       */
     @JSName("Result")
-    var Result_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledMessageResult]] = js.native
+    var Result_UnmarshalledMessageResponse: js.UndefOr[StringDictionary[UnmarshalledMessageResult]] = js.undefined
   }
   object UnmarshalledMessageResponse {
     

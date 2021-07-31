@@ -9,7 +9,6 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,18 +36,17 @@ object mod {
     def this(props: Props, context: js.Any) = this()
   }
   
-  @js.native
   trait InputState extends StObject {
     
-    var selection: Selection | Null = js.native
+    var selection: Selection | Null
     
-    var value: String = js.native
+    var value: String
   }
   object InputState {
     
     @scala.inline
     def apply(value: String): InputState = {
-      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], selection = null)
       __obj.asInstanceOf[InputState]
     }
     
@@ -66,18 +64,17 @@ object mod {
     }
   }
   
-  @js.native
   trait MaskOptions extends StObject {
     
-    var alwaysShowMask: Boolean = js.native
+    var alwaysShowMask: Boolean
     
-    var formatChars: Record[String, String] = js.native
+    var formatChars: Record[String, String]
     
-    var mask: String | (js.Array[String | RegExp]) = js.native
+    var mask: String | (js.Array[String | RegExp])
     
-    var maskChar: String = js.native
+    var maskChar: String
     
-    var permanents: js.Array[Double] = js.native
+    var permanents: js.Array[Double]
   }
   object MaskOptions {
     
@@ -119,13 +116,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait Props extends InputHTMLAttributes[HTMLInputElement] {
+  trait Props
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
     /**
       * Show mask even in empty input without focus.
       */
-    var alwaysShowMask: js.UndefOr[Boolean] = js.native
+    var alwaysShowMask: js.UndefOr[Boolean] = js.undefined
     
     /**
       * In case you need to implement more complex masking behavior, you can provide
@@ -140,7 +138,7 @@ object mod {
           /* maskOptions */ MaskOptions, 
           InputState
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Defines format characters with characters as keys and corresponding RegExp string as values. Default ones:
@@ -151,12 +149,12 @@ object mod {
       *   "*": "[A-Za-z0-9]"
       * }```
       */
-    var formatChars: js.UndefOr[StringDictionary[String]] = js.native
+    var formatChars: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Use inputRef instead of ref if you need input node to manage focus, selection, etc.
       */
-    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.native
+    var inputRef: js.UndefOr[Ref[HTMLInputElement]] = js.undefined
     
     /**
       * Mask string. Format characters are:
@@ -167,12 +165,12 @@ object mod {
       * Any character can be escaped with backslash, which usually will appear as double backslash in JS strings.
       * For example, German phone mask with unremoveable prefix +49 will look like `mask="+4\\9 99 999 99"` or `mask={"+4\\\\9 99 999 99"}`
       */
-    var mask: String | (js.Array[String | RegExp]) = js.native
+    var mask: String | (js.Array[String | RegExp])
     
     /**
       * Character to cover unfilled editable parts of mask. Default character is "_". If set to null, unfilled parts will be empty, like in ordinary input.
       */
-    var maskChar: js.UndefOr[String | Null] = js.native
+    var maskChar: js.UndefOr[String | Null] = js.undefined
   }
   object Props {
     
@@ -234,12 +232,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Selection extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object Selection {
     

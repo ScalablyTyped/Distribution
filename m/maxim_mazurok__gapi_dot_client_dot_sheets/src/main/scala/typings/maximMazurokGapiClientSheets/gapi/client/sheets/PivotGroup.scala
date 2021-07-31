@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGroup extends StObject {
   
   /** The reference to the data source column this grouping is based on. */
-  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.native
+  var dataSourceColumnReference: js.UndefOr[DataSourceColumnReference] = js.undefined
   
   /** The count limit on rows or columns to apply to this pivot group. */
-  var groupLimit: js.UndefOr[PivotGroupLimit] = js.native
+  var groupLimit: js.UndefOr[PivotGroupLimit] = js.undefined
   
   /** The group rule to apply to this row/column group. */
-  var groupRule: js.UndefOr[PivotGroupRule] = js.native
+  var groupRule: js.UndefOr[PivotGroupRule] = js.undefined
   
   /**
     * The labels to use for the row/column groups which can be customized. For example, in the following pivot table, the row label is `Region` (which could be renamed to `State`) and the
@@ -24,7 +22,7 @@ trait PivotGroup extends StObject {
     * | Pen | Paper | +--------------+---------+-------+ | New York | 345 | 98 | | Oregon | 234 | 123 | | Tennessee | 531 | 415 | +--------------+---------+-------+ | Grand Total | 1110 |
     * 636 | +--------------+---------+-------+
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * True if the headings in this pivot group should be repeated. This is only valid for row groupings and is ignored by columns. By default, we minimize repitition of headings by not
@@ -32,25 +30,25 @@ trait PivotGroup extends StObject {
     * rows. Setting repeat_headings to true would cause "Q1" to be repeated for "Feb" and "Mar". +--------------+ | Q1 | Jan | | | Feb | | | Mar | +--------+-----+ | Q1 Total |
     * +--------------+
     */
-  var repeatHeadings: js.UndefOr[Boolean] = js.native
+  var repeatHeadings: js.UndefOr[Boolean] = js.undefined
   
   /** True if the pivot table should include the totals for this grouping. */
-  var showTotals: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.undefined
   
   /** The order the values in this group should be sorted. */
-  var sortOrder: js.UndefOr[String] = js.native
+  var sortOrder: js.UndefOr[String] = js.undefined
   
   /**
     * The column offset of the source range that this grouping is based on. For example, if the source was `C10:E15`, a `sourceColumnOffset` of `0` means this group refers to column `C`,
     * whereas the offset `1` would refer to column `D`.
     */
-  var sourceColumnOffset: js.UndefOr[Double] = js.native
+  var sourceColumnOffset: js.UndefOr[Double] = js.undefined
   
   /** The bucket of the opposite pivot group to sort by. If not specified, sorting is alphabetical by this group's values. */
-  var valueBucket: js.UndefOr[PivotGroupSortValueBucket] = js.native
+  var valueBucket: js.UndefOr[PivotGroupSortValueBucket] = js.undefined
   
   /** Metadata about values in the grouping. */
-  var valueMetadata: js.UndefOr[js.Array[PivotGroupValueMetadata]] = js.native
+  var valueMetadata: js.UndefOr[js.Array[PivotGroupValueMetadata]] = js.undefined
 }
 object PivotGroup {
   

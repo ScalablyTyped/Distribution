@@ -2,26 +2,24 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedReflectiveProvider extends StObject {
   
   /**
     * A key, usually a `Type<any>`.
     */
-  var key: ReflectiveKey = js.native
+  var key: ReflectiveKey
   
   /**
     * Indicates if the provider is a multi-provider or a regular provider.
     */
-  var multiProvider: Boolean = js.native
+  var multiProvider: Boolean
   
   /**
     * Factory function which can return an instance of an object represented by a key.
     */
-  var resolvedFactories: js.Array[ResolvedReflectiveFactory] = js.native
+  var resolvedFactories: js.Array[ResolvedReflectiveFactory]
 }
 object ResolvedReflectiveProvider {
   

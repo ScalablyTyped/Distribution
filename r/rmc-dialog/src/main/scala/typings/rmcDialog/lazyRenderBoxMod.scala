@@ -3,7 +3,6 @@ package typings.rmcDialog
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lazyRenderBoxMod {
@@ -12,18 +11,17 @@ object lazyRenderBoxMod {
   @js.native
   class default () extends LazyRenderBox
   
-  @js.native
   trait ILazyRenderBoxPropTypes extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var hiddenClassName: js.UndefOr[String] = js.native
+    var hiddenClassName: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object ILazyRenderBoxPropTypes {
     

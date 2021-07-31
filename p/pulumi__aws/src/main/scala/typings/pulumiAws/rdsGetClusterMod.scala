@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsGetClusterMod {
   
-  @JSImport("@pulumi/aws/rds/getCluster", "getCluster")
+  @JSImport("@pulumi/aws/rds/getCluster", JSImport.Namespace)
   @js.native
-  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = js.native
-  @JSImport("@pulumi/aws/rds/getCluster", "getCluster")
-  @js.native
-  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCluster(args: GetClusterArgs): js.Promise[GetClusterResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetClusterResult]]
+  @scala.inline
+  def getCluster(args: GetClusterArgs, opts: InvokeOptions): js.Promise[GetClusterResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCluster")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetClusterResult]]
+  
   trait GetClusterArgs extends StObject {
     
     /**
       * The cluster identifier of the RDS cluster.
       */
-    val clusterIdentifier: String = js.native
+    val clusterIdentifier: String
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetClusterArgs {
     
@@ -48,69 +48,68 @@ object rdsGetClusterMod {
     }
   }
   
-  @js.native
   trait GetClusterResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val availabilityZones: js.Array[String] = js.native
+    val availabilityZones: js.Array[String]
     
-    val backtrackWindow: Double = js.native
+    val backtrackWindow: Double
     
-    val backupRetentionPeriod: Double = js.native
+    val backupRetentionPeriod: Double
     
-    val clusterIdentifier: String = js.native
+    val clusterIdentifier: String
     
-    val clusterMembers: js.Array[String] = js.native
+    val clusterMembers: js.Array[String]
     
-    val clusterResourceId: String = js.native
+    val clusterResourceId: String
     
-    val databaseName: String = js.native
+    val databaseName: String
     
-    val dbClusterParameterGroupName: String = js.native
+    val dbClusterParameterGroupName: String
     
-    val dbSubnetGroupName: String = js.native
+    val dbSubnetGroupName: String
     
-    val enabledCloudwatchLogsExports: js.Array[String] = js.native
+    val enabledCloudwatchLogsExports: js.Array[String]
     
-    val endpoint: String = js.native
+    val endpoint: String
     
-    val engine: String = js.native
+    val engine: String
     
-    val engineVersion: String = js.native
+    val engineVersion: String
     
-    val finalSnapshotIdentifier: String = js.native
+    val finalSnapshotIdentifier: String
     
-    val hostedZoneId: String = js.native
+    val hostedZoneId: String
     
-    val iamDatabaseAuthenticationEnabled: Boolean = js.native
+    val iamDatabaseAuthenticationEnabled: Boolean
     
-    val iamRoles: js.Array[String] = js.native
+    val iamRoles: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
-    val masterUsername: String = js.native
+    val masterUsername: String
     
-    val port: Double = js.native
+    val port: Double
     
-    val preferredBackupWindow: String = js.native
+    val preferredBackupWindow: String
     
-    val preferredMaintenanceWindow: String = js.native
+    val preferredMaintenanceWindow: String
     
-    val readerEndpoint: String = js.native
+    val readerEndpoint: String
     
-    val replicationSourceIdentifier: String = js.native
+    val replicationSourceIdentifier: String
     
-    val storageEncrypted: Boolean = js.native
+    val storageEncrypted: Boolean
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcSecurityGroupIds: js.Array[String] = js.native
+    val vpcSecurityGroupIds: js.Array[String]
   }
   object GetClusterResult {
     

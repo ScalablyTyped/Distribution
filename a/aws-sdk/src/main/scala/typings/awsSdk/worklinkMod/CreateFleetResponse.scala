@@ -2,16 +2,14 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFleetResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the fleet.
     */
-  var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.native
+  var FleetArn: js.UndefOr[typings.awsSdk.worklinkMod.FleetArn] = js.undefined
 }
 object CreateFleetResponse {
   

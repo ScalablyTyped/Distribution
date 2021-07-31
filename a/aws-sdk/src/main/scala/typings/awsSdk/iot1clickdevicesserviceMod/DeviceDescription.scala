@@ -2,48 +2,46 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceDescription extends StObject {
   
   /**
     * The ARN of the device.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * An array of zero or more elements of DeviceAttribute objects providing
     user specified device attributes.
     */
-  var Attributes: js.UndefOr[DeviceAttributes] = js.native
+  var Attributes: js.UndefOr[DeviceAttributes] = js.undefined
   
   /**
     * The unique identifier of the device.
     */
-  var DeviceId: js.UndefOr[string] = js.native
+  var DeviceId: js.UndefOr[string] = js.undefined
   
   /**
     * A Boolean value indicating whether or not the device is enabled.
     */
-  var Enabled: js.UndefOr[boolean] = js.native
+  var Enabled: js.UndefOr[boolean] = js.undefined
   
   /**
     * A value between 0 and 1 inclusive, representing the fraction of life remaining for the
     device.
     */
-  var RemainingLife: js.UndefOr[doubleMin0Max100] = js.native
+  var RemainingLife: js.UndefOr[doubleMin0Max100] = js.undefined
   
   /**
     * The tags currently associated with the AWS IoT 1-Click device.
     */
-  var Tags: js.UndefOr[mapOfString] = js.native
+  var Tags: js.UndefOr[mapOfString] = js.undefined
   
   /**
     * The type of the device, such as "button".
     */
-  var Type: js.UndefOr[string] = js.native
+  var Type: js.UndefOr[string] = js.undefined
 }
 object DeviceDescription {
   

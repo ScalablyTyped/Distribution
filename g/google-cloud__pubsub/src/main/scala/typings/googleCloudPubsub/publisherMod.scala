@@ -15,7 +15,6 @@ import typings.opentelemetryApi.spanMod.Span
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publisherMod {
@@ -95,16 +94,15 @@ object publisherMod {
   
   type PublishCallback = RequestCallback[String, Unit]
   
-  @js.native
   trait PublishOptions extends StObject {
     
-    var batching: js.UndefOr[BatchPublishOptions] = js.native
+    var batching: js.UndefOr[BatchPublishOptions] = js.undefined
     
-    var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.native
+    var enableOpenTelemetryTracing: js.UndefOr[Boolean] = js.undefined
     
-    var gaxOpts: js.UndefOr[CallOptions] = js.native
+    var gaxOpts: js.UndefOr[CallOptions] = js.undefined
     
-    var messageOrdering: js.UndefOr[Boolean] = js.native
+    var messageOrdering: js.UndefOr[Boolean] = js.undefined
   }
   object PublishOptions {
     

@@ -12,7 +12,6 @@ import typings.std.Date
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object singleMonthMod {
@@ -36,18 +35,17 @@ object singleMonthMod {
     def defaultProps_=(x: PropsType): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PropsType extends StObject {
     
-    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.native
+    var getDateExtra: js.UndefOr[js.Function1[/* date */ Date, ExtraData]] = js.undefined
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var monthData: MonthData = js.native
+    var monthData: MonthData
     
-    var onCellClick: js.UndefOr[js.Function2[/* data */ CellData, /* monthData */ MonthData, Unit]] = js.native
+    var onCellClick: js.UndefOr[js.Function2[/* data */ CellData, /* monthData */ MonthData, Unit]] = js.undefined
     
-    var rowSize: js.UndefOr[normal | xl] = js.native
+    var rowSize: js.UndefOr[normal | xl] = js.undefined
   }
   object PropsType {
     

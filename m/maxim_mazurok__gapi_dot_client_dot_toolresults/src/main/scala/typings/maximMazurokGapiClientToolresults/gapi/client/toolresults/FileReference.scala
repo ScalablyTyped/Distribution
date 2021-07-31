@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileReference extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait FileReference extends StObject {
     * version-specific info, gs://mybucket/path/to/test.xml#1360383693690000 An INVALID_ARGUMENT error will be returned if the URI format is not supported. - In response: always set - In
     * create/update request: always set
     */
-  var fileUri: js.UndefOr[String] = js.native
+  var fileUri: js.UndefOr[String] = js.undefined
 }
 object FileReference {
   

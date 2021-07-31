@@ -14,7 +14,6 @@ import typings.winrtUwp.winrtUwpStrings.orientationchanged
 import typings.winrtUwp.winrtUwpStrings.stereoenabledchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains components to determine aspects of a physical display. */
@@ -24,7 +23,8 @@ object Display {
   @JSGlobal("Windows.Graphics.Display.DisplayInformation")
   @js.native
   abstract class DisplayInformation ()
-    extends typings.winrtUwp.Windows.Graphics.Display.DisplayInformation
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Display.DisplayInformation
   object DisplayInformation {
     
     @JSGlobal("Windows.Graphics.Display.DisplayInformation")
@@ -32,16 +32,15 @@ object Display {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayInformation.addEventListener")
-    @js.native
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayInformation.addEventListener")
-    @js.native
+    @scala.inline
     def addEventListener_displaycontentsinvalidated(
       `type`: displaycontentsinvalidated,
-      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, _]
-    ): Unit = js.native
+      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets and sets the preferred orientation of the app. */
     /* static member */
@@ -56,9 +55,8 @@ object Display {
       * @return A DisplayInformation object that contains the current physical display information.
       */
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayInformation.getForCurrentView")
-    @js.native
-    def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Display.DisplayInformation = js.native
+    @scala.inline
+    def getForCurrentView(): typings.winrtUwp.Windows.Graphics.Display.DisplayInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("getForCurrentView")().asInstanceOf[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation]
     
     /** Occurs when the display requires redrawing. */
     /* static member */
@@ -69,16 +67,15 @@ object Display {
     def ondisplaycontentsinvalidated_=(x: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ondisplaycontentsinvalidated")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayInformation.removeEventListener")
-    @js.native
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayInformation.removeEventListener")
-    @js.native
+    @scala.inline
     def removeEventListener_displaycontentsinvalidated(
       `type`: displaycontentsinvalidated,
-      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, _]
-    ): Unit = js.native
+      listener: TypedEventHandler[typings.winrtUwp.Windows.Graphics.Display.DisplayInformation, js.Any]
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /** Describes the orientation of a rectangular monitor. */
@@ -87,24 +84,25 @@ object Display {
   object DisplayOrientations extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations & Double] = js.native
     
-    /* 1 */ val landscape: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.landscape with Double = js.native
+    /* 1 */ val landscape: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.landscape & Double = js.native
     
-    /* 3 */ val landscapeFlipped: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.landscapeFlipped with Double = js.native
+    /* 3 */ val landscapeFlipped: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.landscapeFlipped & Double = js.native
     
-    /* 0 */ val none: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.none with Double = js.native
+    /* 0 */ val none: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.none & Double = js.native
     
-    /* 2 */ val portrait: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.portrait with Double = js.native
+    /* 2 */ val portrait: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.portrait & Double = js.native
     
-    /* 4 */ val portraitFlipped: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.portraitFlipped with Double = js.native
+    /* 4 */ val portraitFlipped: typings.winrtUwp.Windows.Graphics.Display.DisplayOrientations.portraitFlipped & Double = js.native
   }
   
   /** Provides various properties that are related to the physical display. */
   @JSGlobal("Windows.Graphics.Display.DisplayProperties")
   @js.native
   abstract class DisplayProperties ()
-    extends typings.winrtUwp.Windows.Graphics.Display.DisplayProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Graphics.Display.DisplayProperties
   object DisplayProperties {
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties")
@@ -112,29 +110,28 @@ object Display {
     val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def addEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def addEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener_logicaldpichanged(`type`: logicaldpichanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def addEventListener_logicaldpichanged(`type`: logicaldpichanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener_orientationchanged(`type`: orientationchanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def addEventListener_orientationchanged(`type`: orientationchanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.addEventListener")
-    @js.native
-    def addEventListener_stereoenabledchanged(`type`: stereoenabledchanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def addEventListener_stereoenabledchanged(`type`: stereoenabledchanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets and sets the preferred orientation of the app. */
     /* static member */
@@ -157,9 +154,8 @@ object Display {
       * @return Object that manages the asynchronous retrieval of the color profile.
       */
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.getColorProfileAsync")
-    @js.native
-    def getColorProfileAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream] = js.native
+    @scala.inline
+    def getColorProfileAsync(): IPromiseWithIAsyncOperation[IRandomAccessStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorProfileAsync")().asInstanceOf[IPromiseWithIAsyncOperation[IRandomAccessStream]]
     
     /** Gets the pixels per logical inch of the current environment. */
     /* static member */
@@ -218,29 +214,28 @@ object Display {
     def onstereoenabledchanged_=(x: DisplayPropertiesEventHandler): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onstereoenabledchanged")(x.asInstanceOf[js.Any])
     
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    @scala.inline
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def removeEventListener_colorprofilechanged(`type`: colorprofilechanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def removeEventListener_displaycontentsinvalidated(`type`: displaycontentsinvalidated, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener_logicaldpichanged(`type`: logicaldpichanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def removeEventListener_logicaldpichanged(`type`: logicaldpichanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener_orientationchanged(`type`: orientationchanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def removeEventListener_orientationchanged(`type`: orientationchanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     /* static member */
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.removeEventListener")
-    @js.native
-    def removeEventListener_stereoenabledchanged(`type`: stereoenabledchanged, listener: DisplayPropertiesEventHandler): Unit = js.native
+    @scala.inline
+    def removeEventListener_stereoenabledchanged(`type`: stereoenabledchanged, listener: DisplayPropertiesEventHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(`type`.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Gets the scale factor of the immersive environment. */
     /* static member */
@@ -265,40 +260,40 @@ object Display {
   object ResolutionScale extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.ResolutionScale with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Graphics.Display.ResolutionScale & Double] = js.native
     
-    /* 0 */ val invalid: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.invalid with Double = js.native
+    /* 0 */ val invalid: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.invalid & Double = js.native
     
-    /* 1 */ val scale100Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale100Percent with Double = js.native
+    /* 1 */ val scale100Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale100Percent & Double = js.native
     
-    /* 2 */ val scale120Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale120Percent with Double = js.native
+    /* 2 */ val scale120Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale120Percent & Double = js.native
     
-    /* 3 */ val scale125Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale125Percent with Double = js.native
+    /* 3 */ val scale125Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale125Percent & Double = js.native
     
-    /* 4 */ val scale140Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale140Percent with Double = js.native
+    /* 4 */ val scale140Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale140Percent & Double = js.native
     
-    /* 5 */ val scale150Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale150Percent with Double = js.native
+    /* 5 */ val scale150Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale150Percent & Double = js.native
     
-    /* 6 */ val scale160Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale160Percent with Double = js.native
+    /* 6 */ val scale160Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale160Percent & Double = js.native
     
-    /* 7 */ val scale175Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale175Percent with Double = js.native
+    /* 7 */ val scale175Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale175Percent & Double = js.native
     
-    /* 8 */ val scale180Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale180Percent with Double = js.native
+    /* 8 */ val scale180Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale180Percent & Double = js.native
     
-    /* 9 */ val scale200Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale200Percent with Double = js.native
+    /* 9 */ val scale200Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale200Percent & Double = js.native
     
-    /* 10 */ val scale225Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale225Percent with Double = js.native
+    /* 10 */ val scale225Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale225Percent & Double = js.native
     
-    /* 11 */ val scale250Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale250Percent with Double = js.native
+    /* 11 */ val scale250Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale250Percent & Double = js.native
     
-    /* 12 */ val scale300Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale300Percent with Double = js.native
+    /* 12 */ val scale300Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale300Percent & Double = js.native
     
-    /* 13 */ val scale350Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale350Percent with Double = js.native
+    /* 13 */ val scale350Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale350Percent & Double = js.native
     
-    /* 14 */ val scale400Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale400Percent with Double = js.native
+    /* 14 */ val scale400Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale400Percent & Double = js.native
     
-    /* 15 */ val scale450Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale450Percent with Double = js.native
+    /* 15 */ val scale450Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale450Percent & Double = js.native
     
-    /* 16 */ val scale500Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale500Percent with Double = js.native
+    /* 16 */ val scale500Percent: typings.winrtUwp.Windows.Graphics.Display.ResolutionScale.scale500Percent & Double = js.native
   }
 }

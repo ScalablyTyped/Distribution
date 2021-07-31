@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,8 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @extends PIXI.FillStyle
   */
-@js.native
-trait LineStyle extends FillStyle {
+trait LineStyle
+  extends StObject
+     with FillStyle {
   
   /**
     * The alignment of any lines drawn (0.5 = middle, 1 = outer, 0 = inner).
@@ -20,7 +20,7 @@ trait LineStyle extends FillStyle {
     * @member {number} PIXI.LineStyle#alignment
     * @default 0.5
     */
-  var alignment: Double = js.native
+  var alignment: Double
   
   /**
     * Line cap style.
@@ -28,7 +28,7 @@ trait LineStyle extends FillStyle {
     * @member {PIXI.LINE_CAP} PIXI.LineStyle#cap
     * @default PIXI.LINE_CAP.BUTT
     */
-  var cap: LINE_CAP = js.native
+  var cap: LINE_CAP
   
   /**
     * Line join style.
@@ -36,7 +36,7 @@ trait LineStyle extends FillStyle {
     * @member {PIXI.LINE_JOIN} PIXI.LineStyle#join
     * @default PIXI.LINE_JOIN.MITER
     */
-  var join: LINE_JOIN = js.native
+  var join: LINE_JOIN
   
   /**
     * Miter limit.
@@ -44,7 +44,7 @@ trait LineStyle extends FillStyle {
     * @member {number} PIXI.LineStyle#miterLimit
     * @default 10
     */
-  var miterLimit: Double = js.native
+  var miterLimit: Double
   
   /**
     * If true the lines will be draw using LINES instead of TRIANGLE_STRIP
@@ -52,7 +52,7 @@ trait LineStyle extends FillStyle {
     * @member {boolean} PIXI.LineStyle#native
     * @default false
     */
-  var native: Boolean = js.native
+  var native: Boolean
   
   /**
     * The width (thickness) of any lines drawn.
@@ -60,7 +60,7 @@ trait LineStyle extends FillStyle {
     * @member {number} PIXI.LineStyle#width
     * @default 0
     */
-  var width: Double = js.native
+  var width: Double
 }
 object LineStyle {
   

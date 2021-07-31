@@ -2,19 +2,17 @@ package typings.wordpressComponents.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateErrorNotice extends StObject {
   
-  def createErrorNotice(message: String): Unit = js.native
+  def createErrorNotice(message: String): Unit
   
-  def createNotice(notice: PartialNoticePickNoticeco): Unit = js.native
+  def createNotice(notice: PartialNoticePickNoticeco): Unit
   
-  def removeAllNotices(): Unit = js.native
+  def removeAllNotices(): Unit
   
-  def removeNotice(noticeId: String): Unit = js.native
+  def removeNotice(noticeId: String): Unit
 }
 object CreateErrorNotice {
   

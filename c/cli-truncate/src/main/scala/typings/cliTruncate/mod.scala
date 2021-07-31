@@ -5,7 +5,6 @@ import typings.cliTruncate.cliTruncateStrings.middle
 import typings.cliTruncate.cliTruncateStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -38,21 +37,22 @@ object mod {
   //=> 'Lorem ipsum dolor sit amet, consectetuer adipiscing…'
   ```
   */
-  @JSImport("cli-truncate", JSImport.Namespace)
-  @js.native
-  def apply(text: String, columns: Double): String = js.native
-  @JSImport("cli-truncate", JSImport.Namespace)
-  @js.native
-  def apply(text: String, columns: Double, options: Options): String = js.native
+  @scala.inline
+  def apply(text: String, columns: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(text: String, columns: Double, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], columns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("cli-truncate", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Position to truncate the string.
     		@default 'end'
     		*/
-    val position: js.UndefOr[start | middle | end] = js.native
+    val position: js.UndefOr[start | middle | end] = js.undefined
     
     /**
     		Truncate the string from a whitespace if it is within 3 characters from the actual breaking point.
@@ -67,7 +67,7 @@ object mod {
     		//=> 'unico…'
     		````
     		*/
-    val preferTruncationOnSpace: js.UndefOr[Boolean] = js.native
+    val preferTruncationOnSpace: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Add a space between the text and the ellipsis.
@@ -84,7 +84,7 @@ object mod {
     		//=> 'uni … s'
     		```
     		*/
-    val space: js.UndefOr[Boolean] = js.native
+    val space: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

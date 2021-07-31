@@ -2,35 +2,33 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionsMixin extends StObject {
   
-  var addRegion: js.Any = js.native
+  var addRegion: js.Any
   
-  var addRegions: js.Any = js.native
+  var addRegions: js.Any
   
-  var detachChildView: js.Any = js.native
+  var detachChildView: js.Any
   
-  var emptyRegions: js.Any = js.native
+  var emptyRegions: js.Any
   
-  var getChildView: js.Any = js.native
+  var getChildView: js.Any
   
-  var getRegion: js.Any = js.native
+  var getRegion: js.Any
   
-  var getRegions: js.Any = js.native
+  var getRegions: js.Any
   
-  var hasRegion: js.Any = js.native
+  var hasRegion: js.Any
   
-  var regionClass: js.Any = js.native
+  var regionClass: js.Any
   
-  var removeRegion: js.Any = js.native
+  var removeRegion: js.Any
   
-  var removeRegions: js.Any = js.native
+  var removeRegions: js.Any
   
-  var showChildView: js.Any = js.native
+  var showChildView: js.Any
 }
 object RegionsMixin {
   

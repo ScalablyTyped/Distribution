@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindDevicesByDeviceIdentifierRequest extends StObject {
   
   /** Required. Required. The device identifier to search for. */
-  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.native
+  var deviceIdentifier: js.UndefOr[DeviceIdentifier] = js.undefined
   
   /** Required. The maximum number of devices to show in a page of results. Must be between 1 and 100 inclusive. */
-  var limit: js.UndefOr[String] = js.native
+  var limit: js.UndefOr[String] = js.undefined
   
   /** A token specifying which result page to return. */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object FindDevicesByDeviceIdentifierRequest {
   

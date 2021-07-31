@@ -11,7 +11,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -67,146 +66,120 @@ object mod {
   
   object DateUtils {
     
-    @JSImport("react-day-picker", "DateUtils.addDayToRange")
+    @JSImport("react-day-picker", "DateUtils")
     @js.native
-    def addDayToRange(day: Date, range: RangeModifier): RangeModifier = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-day-picker", "DateUtils.addMonths")
-    @js.native
-    def addMonths(d: Date, n: Double): Date = js.native
+    @scala.inline
+    def addDayToRange(day: Date, range: RangeModifier): RangeModifier = (^.asInstanceOf[js.Dynamic].applyDynamic("addDayToRange")(day.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[RangeModifier]
     
-    @JSImport("react-day-picker", "DateUtils.clone")
-    @js.native
-    def clone_(d: Date): Date = js.native
+    @scala.inline
+    def addMonths(d: Date, n: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(d.asInstanceOf[js.Any], n.asInstanceOf[js.Any])).asInstanceOf[Date]
     
-    @JSImport("react-day-picker", "DateUtils.isDate")
-    @js.native
-    def isDate(d: Date): Boolean = js.native
+    @scala.inline
+    def clone_(d: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(d.asInstanceOf[js.Any]).asInstanceOf[Date]
     
-    @JSImport("react-day-picker", "DateUtils.isDayAfter")
-    @js.native
-    def isDayAfter(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isDate(d: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(d.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isDayBefore")
-    @js.native
-    def isDayBefore(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isDayAfter(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayAfter")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isDayBetween")
-    @js.native
-    def isDayBetween(day: Date, begin: Date, end: Date): Boolean = js.native
+    @scala.inline
+    def isDayBefore(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayBefore")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isDayInRange")
-    @js.native
-    def isDayInRange(day: Date, range: RangeModifier): Boolean = js.native
+    @scala.inline
+    def isDayBetween(day: Date, begin: Date, end: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayBetween")(day.asInstanceOf[js.Any], begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isFutureDay")
-    @js.native
-    def isFutureDay(day: Date): Boolean = js.native
+    @scala.inline
+    def isDayInRange(day: Date, range: RangeModifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDayInRange")(day.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isPastDay")
-    @js.native
-    def isPastDay(day: Date): Boolean = js.native
+    @scala.inline
+    def isFutureDay(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFutureDay")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isSameDay")
-    @js.native
-    def isSameDay(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isPastDay(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPastDay")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("react-day-picker", "DateUtils.isSameMonth")
-    @js.native
-    def isSameMonth(day1: Date, day2: Date): Boolean = js.native
+    @scala.inline
+    def isSameDay(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameDay")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def isSameMonth(day1: Date, day2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isSameMonth")(day1.asInstanceOf[js.Any], day2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   object LocaleUtils {
     
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
+    @JSImport("react-day-picker", "LocaleUtils")
     @js.native
-    def formatDate(date: Date): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
-    @js.native
-    def formatDate(date: Date, format: js.UndefOr[scala.Nothing], locale: String): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
-    @js.native
-    def formatDate(date: Date, format: String): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
-    @js.native
-    def formatDate(date: Date, format: String, locale: String): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
-    @js.native
-    def formatDate(date: Date, format: js.Array[String]): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDate")
-    @js.native
-    def formatDate(date: Date, format: js.Array[String], locale: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-day-picker", "LocaleUtils.formatDay")
-    @js.native
-    def formatDay(day: Date): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatDay")
-    @js.native
-    def formatDay(day: Date, locale: String): String = js.native
+    @scala.inline
+    def formatDate(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatDate(date: Date, format: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def formatDate(date: Date, format: String, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def formatDate(date: Date, format: js.Array[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def formatDate(date: Date, format: js.Array[String], locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def formatDate(date: Date, format: Unit, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDate")(date.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-day-picker", "LocaleUtils.formatMonthTitle")
-    @js.native
-    def formatMonthTitle(month: Date): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatMonthTitle")
-    @js.native
-    def formatMonthTitle(month: Date, locale: String): String = js.native
+    @scala.inline
+    def formatDay(day: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(day.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatDay(day: Date, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatDay")(day.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-day-picker", "LocaleUtils.formatWeekdayLong")
-    @js.native
-    def formatWeekdayLong(weekday: Double): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatWeekdayLong")
-    @js.native
-    def formatWeekdayLong(weekday: Double, locale: String): String = js.native
+    @scala.inline
+    def formatMonthTitle(month: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthTitle")(month.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatMonthTitle(month: Date, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatMonthTitle")(month.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-day-picker", "LocaleUtils.formatWeekdayShort")
-    @js.native
-    def formatWeekdayShort(weekday: Double): String = js.native
-    @JSImport("react-day-picker", "LocaleUtils.formatWeekdayShort")
-    @js.native
-    def formatWeekdayShort(weekday: Double, locale: String): String = js.native
+    @scala.inline
+    def formatWeekdayLong(weekday: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWeekdayLong")(weekday.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatWeekdayLong(weekday: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatWeekdayLong")(weekday.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-day-picker", "LocaleUtils.getFirstDayOfWeek")
-    @js.native
-    def getFirstDayOfWeek(): Double = js.native
-    @JSImport("react-day-picker", "LocaleUtils.getFirstDayOfWeek")
-    @js.native
-    def getFirstDayOfWeek(locale: String): Double = js.native
+    @scala.inline
+    def formatWeekdayShort(weekday: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatWeekdayShort")(weekday.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def formatWeekdayShort(weekday: Double, locale: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatWeekdayShort")(weekday.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("react-day-picker", "LocaleUtils.getMonths")
-    @js.native
-    def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
-    @JSImport("react-day-picker", "LocaleUtils.getMonths")
-    @js.native
-    def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    @scala.inline
+    def getFirstDayOfWeek(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstDayOfWeek")().asInstanceOf[Double]
+    @scala.inline
+    def getFirstDayOfWeek(locale: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstDayOfWeek")(locale.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("react-day-picker", "LocaleUtils.parseDate")
-    @js.native
-    def parseDate(str: String): Date = js.native
-    @JSImport("react-day-picker", "LocaleUtils.parseDate")
-    @js.native
-    def parseDate(str: String, format: js.UndefOr[scala.Nothing], locale: String): Date = js.native
-    @JSImport("react-day-picker", "LocaleUtils.parseDate")
-    @js.native
-    def parseDate(str: String, format: String): Date = js.native
-    @JSImport("react-day-picker", "LocaleUtils.parseDate")
-    @js.native
-    def parseDate(str: String, format: String, locale: String): Date = js.native
+    @scala.inline
+    def getMonths(): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonths")().asInstanceOf[js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]]
+    @scala.inline
+    def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonths")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]]
+    
+    @scala.inline
+    def parseDate(str: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any]).asInstanceOf[Date]
+    @scala.inline
+    def parseDate(str: String, format: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def parseDate(str: String, format: String, locale: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Date]
+    @scala.inline
+    def parseDate(str: String, format: Unit, locale: String): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("parseDate")(str.asInstanceOf[js.Any], format.asInstanceOf[js.Any], locale.asInstanceOf[js.Any])).asInstanceOf[Date]
   }
   
   object ModifiersUtils {
     
-    @JSImport("react-day-picker", "ModifiersUtils.dayMatchesModifier")
+    @JSImport("react-day-picker", "ModifiersUtils")
     @js.native
-    def dayMatchesModifier(day: Date): Boolean = js.native
-    @JSImport("react-day-picker", "ModifiersUtils.dayMatchesModifier")
-    @js.native
-    def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = js.native
-    @JSImport("react-day-picker", "ModifiersUtils.dayMatchesModifier")
-    @js.native
-    def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-day-picker", "ModifiersUtils.getModifiersForDay")
-    @js.native
-    def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = js.native
+    @scala.inline
+    def dayMatchesModifier(day: Date): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def dayMatchesModifier(day: Date, modifier: js.Array[Modifier]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def dayMatchesModifier(day: Date, modifier: Modifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("dayMatchesModifier")(day.asInstanceOf[js.Any], modifier.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def getModifiersForDay(day: Date, modifiers: Record[String, Modifier | js.Array[Modifier]]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModifiersForDay")(day.asInstanceOf[js.Any], modifiers.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   }
 }

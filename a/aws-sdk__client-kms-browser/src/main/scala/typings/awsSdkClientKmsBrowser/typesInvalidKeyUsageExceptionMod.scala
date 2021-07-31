@@ -6,26 +6,25 @@ import typings.awsSdkClientKmsBrowser.generateDataKeyWithoutPlaintextExceptionsU
 import typings.awsSdkClientKmsBrowser.reEncryptExceptionsUnionMod.ReEncryptExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidKeyUsageExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidKeyUsageExceptionDetails> * / any */ @js.native
-  trait InvalidKeyUsageException
-    extends EncryptExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidKeyUsageExceptionDetails> * / any */ trait InvalidKeyUsageException
+    extends StObject
+       with EncryptExceptionsUnion
        with GenerateDataKeyExceptionsUnion
        with GenerateDataKeyWithoutPlaintextExceptionsUnion
        with ReEncryptExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidKeyUsageException = js.native
+    var name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidKeyUsageException
   }
   object InvalidKeyUsageException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.InvalidKeyUsageException): InvalidKeyUsageException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidKeyUsageException = {
+      val __obj = js.Dynamic.literal(name = "InvalidKeyUsageException")
       __obj.asInstanceOf[InvalidKeyUsageException]
     }
     
@@ -37,13 +36,12 @@ object typesInvalidKeyUsageExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidKeyUsageExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object InvalidKeyUsageExceptionDetails {
     

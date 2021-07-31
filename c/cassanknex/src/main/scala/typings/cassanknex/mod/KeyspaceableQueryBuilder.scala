@@ -2,17 +2,15 @@ package typings.cassanknex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyspaceableQueryBuilder extends StObject {
   
-  def withDurableWrites(durableWrites: Boolean): this.type = js.native
+  def withDurableWrites(durableWrites: Boolean): this.type
   
-  def withNetworkTopologyStrategy(strategy: MappedDict[Double]): this.type = js.native
+  def withNetworkTopologyStrategy(strategy: MappedDict[Double]): this.type
   
-  def withSimpleStrategy(replicas: Double): this.type = js.native
+  def withSimpleStrategy(replicas: Double): this.type
 }
 object KeyspaceableQueryBuilder {
   

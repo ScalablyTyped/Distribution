@@ -4,17 +4,15 @@ import typings.activexWord.Word.Application
 import typings.activexWord.Word.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Word.Application")
-  var WordDotApplication: Application = js.native
+  var WordDotApplication: Application
   
   @JSName("Word.Document")
-  var WordDotDocument: Document = js.native
+  var WordDotDocument: Document
 }
 object ActiveXObjectNameMap {
   

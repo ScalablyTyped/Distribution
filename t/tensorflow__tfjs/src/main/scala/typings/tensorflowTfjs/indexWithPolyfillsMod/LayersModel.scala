@@ -3,7 +3,6 @@ package typings.tensorflowTfjs.indexWithPolyfillsMod
 import typings.tensorflowTfjsLayers.containerMod.ContainerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs/dist/index_with_polyfills", "LayersModel")

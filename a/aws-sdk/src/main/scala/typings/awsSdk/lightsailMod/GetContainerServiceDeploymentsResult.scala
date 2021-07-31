@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContainerServiceDeploymentsResult extends StObject {
   
   /**
     * An array of objects that describe deployments for a container service.
     */
-  var deployments: js.UndefOr[ContainerServiceDeploymentList] = js.native
+  var deployments: js.UndefOr[ContainerServiceDeploymentList] = js.undefined
 }
 object GetContainerServiceDeploymentsResult {
   

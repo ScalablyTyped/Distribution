@@ -2,13 +2,11 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthSetting extends StObject {
   
-  var authSetting: keyinScopeboolean = js.native
+  var authSetting: keyinScopeboolean
 }
 object AuthSetting {
   

@@ -2,7 +2,6 @@ package typings.imurmurhash
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,18 @@ object mod {
     * This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one.
     * If this constraint cannot be met, you can use new to create a new state object
     */
+  @scala.inline
+  def apply(): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[MurmurHash3]
+  @scala.inline
+  def apply(text: String): MurmurHash3 = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[MurmurHash3]
+  @scala.inline
+  def apply(text: String, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
+  @scala.inline
+  def apply(text: Unit, seed: Double): MurmurHash3 = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], seed.asInstanceOf[js.Any])).asInstanceOf[MurmurHash3]
+  
   @JSImport("imurmurhash", JSImport.Namespace)
   @js.native
-  def apply(): MurmurHash3 = js.native
-  @JSImport("imurmurhash", JSImport.Namespace)
-  @js.native
-  def apply(text: js.UndefOr[scala.Nothing], seed: Double): MurmurHash3 = js.native
-  @JSImport("imurmurhash", JSImport.Namespace)
-  @js.native
-  def apply(text: String): MurmurHash3 = js.native
-  @JSImport("imurmurhash", JSImport.Namespace)
-  @js.native
-  def apply(text: String, seed: Double): MurmurHash3 = js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("imurmurhash", JSImport.Namespace)
@@ -37,10 +36,12 @@ object mod {
     * This is safe to use as long as the object is only used from a single thread and no other hashes are created while operating on this one.
     * If this constraint cannot be met, you can use new to create a new state object
     */
-  class Class () extends MurmurHash3 {
+  class Class ()
+    extends StObject
+       with MurmurHash3 {
     def this(text: String) = this()
-    def this(text: js.UndefOr[scala.Nothing], seed: Double) = this()
     def this(text: String, seed: Double) = this()
+    def this(text: Unit, seed: Double) = this()
   }
   
   @js.native

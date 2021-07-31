@@ -2,61 +2,59 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAccessControlRuleRequest extends StObject {
   
   /**
     * Access protocol actions to include in the rule. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
     */
-  var Actions: js.UndefOr[ActionsList] = js.native
+  var Actions: js.UndefOr[ActionsList] = js.undefined
   
   /**
     * The rule description.
     */
-  var Description: AccessControlRuleDescription = js.native
+  var Description: AccessControlRuleDescription
   
   /**
     * The rule effect.
     */
-  var Effect: AccessControlRuleEffect = js.native
+  var Effect: AccessControlRuleEffect
   
   /**
     * IPv4 CIDR ranges to include in the rule.
     */
-  var IpRanges: js.UndefOr[IpRangeList] = js.native
+  var IpRanges: js.UndefOr[IpRangeList] = js.undefined
   
   /**
     * The rule name.
     */
-  var Name: AccessControlRuleName = js.native
+  var Name: AccessControlRuleName
   
   /**
     * Access protocol actions to exclude from the rule. Valid values include ActiveSync, AutoDiscover, EWS, IMAP, SMTP, WindowsOutlook, and WebMail.
     */
-  var NotActions: js.UndefOr[ActionsList] = js.native
+  var NotActions: js.UndefOr[ActionsList] = js.undefined
   
   /**
     * IPv4 CIDR ranges to exclude from the rule.
     */
-  var NotIpRanges: js.UndefOr[IpRangeList] = js.native
+  var NotIpRanges: js.UndefOr[IpRangeList] = js.undefined
   
   /**
     * User IDs to exclude from the rule.
     */
-  var NotUserIds: js.UndefOr[UserIdList] = js.native
+  var NotUserIds: js.UndefOr[UserIdList] = js.undefined
   
   /**
     * The identifier of the organization.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * User IDs to include in the rule.
     */
-  var UserIds: js.UndefOr[UserIdList] = js.native
+  var UserIds: js.UndefOr[UserIdList] = js.undefined
 }
 object PutAccessControlRuleRequest {
   

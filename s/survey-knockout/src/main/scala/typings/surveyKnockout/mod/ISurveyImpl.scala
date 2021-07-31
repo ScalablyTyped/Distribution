@@ -2,17 +2,15 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISurveyImpl extends StObject {
   
-  def geSurveyData(): ISurveyData = js.native
+  def geSurveyData(): ISurveyData
   
-  def getSurvey(): ISurvey = js.native
+  def getSurvey(): ISurvey
   
-  def getTextProcessor(): ITextProcessor = js.native
+  def getTextProcessor(): ITextProcessor
 }
 object ISurveyImpl {
   

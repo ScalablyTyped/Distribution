@@ -4,15 +4,13 @@ import typings.braintreeWebDropIn.braintreeWebDropInStrings.CreditCard
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.PayPalAccount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodRequestablePayload extends StObject {
   
-  var paymentMethodIsSelected: Boolean = js.native
+  var paymentMethodIsSelected: Boolean
   
-  var `type`: CreditCard | PayPalAccount = js.native
+  var `type`: CreditCard | PayPalAccount
 }
 object PaymentMethodRequestablePayload {
   

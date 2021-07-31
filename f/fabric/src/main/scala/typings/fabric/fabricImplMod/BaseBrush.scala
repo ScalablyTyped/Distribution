@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "BaseBrush")
@@ -31,7 +30,7 @@ class BaseBrush () extends StObject {
   /**
     * Stroke Dash Array.
     */
-  var strokeDashArray: js.Array[_] = js.native
+  var strokeDashArray: js.Array[js.Any] = js.native
   
   /**
     * Line endings style of a brush (one of "butt", "round", "square")

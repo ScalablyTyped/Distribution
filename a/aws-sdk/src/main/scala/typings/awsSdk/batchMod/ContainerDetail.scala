@@ -2,131 +2,129 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerDetail extends StObject {
   
   /**
     * The command that is passed to the container.
     */
-  var command: js.UndefOr[StringList] = js.native
+  var command: js.UndefOr[StringList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the container instance on which the container is running.
     */
-  var containerInstanceArn: js.UndefOr[String] = js.native
+  var containerInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * The environment variables to pass to a container.  Environment variables must not start with AWS_BATCH; this naming convention is reserved for variables that are set by the AWS Batch service. 
     */
-  var environment: js.UndefOr[EnvironmentVariables] = js.native
+  var environment: js.UndefOr[EnvironmentVariables] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the execution role that AWS Batch can assume. For more information, see AWS Batch execution IAM role.
     */
-  var executionRoleArn: js.UndefOr[String] = js.native
+  var executionRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The exit code to return upon completion.
     */
-  var exitCode: js.UndefOr[Integer] = js.native
+  var exitCode: js.UndefOr[Integer] = js.undefined
   
   /**
     * The image used to start the container.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type of the underlying host infrastructure of a multi-node parallel job.
     */
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) associated with the job upon execution.
     */
-  var jobRoleArn: js.UndefOr[String] = js.native
+  var jobRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * Linux-specific modifications that are applied to the container, such as details for device mappings.
     */
-  var linuxParameters: js.UndefOr[LinuxParameters] = js.native
+  var linuxParameters: js.UndefOr[LinuxParameters] = js.undefined
   
   /**
     * The log configuration specification for the container. This parameter maps to LogConfig in the Create a container section of the Docker Remote API and the --log-driver option to docker run. By default, containers use the same logging driver that the Docker daemon uses. However the container may use a different logging driver than the Docker daemon by specifying a log driver with this parameter in the container definition. To use a different logging driver for a container, the log system must be configured properly on the container instance (or on a different log server for remote logging options). For more information on the options for different supported log drivers, see Configure logging drivers in the Docker documentation.  AWS Batch currently supports a subset of the logging drivers available to the Docker daemon (shown in the LogConfiguration data type). Additional log drivers may be available in future releases of the Amazon ECS container agent.  This parameter requires version 1.18 of the Docker Remote API or greater on your container instance. To check the Docker Remote API version on your container instance, log into your container instance and run the following command: sudo docker version | grep "Server API version"   The Amazon ECS container agent running on a container instance must register the logging drivers available on that instance with the ECS_AVAILABLE_LOGGING_DRIVERS environment variable before containers placed on that instance can use these log configuration options. For more information, see Amazon ECS Container Agent Configuration in the Amazon Elastic Container Service Developer Guide. 
     */
-  var logConfiguration: js.UndefOr[LogConfiguration] = js.native
+  var logConfiguration: js.UndefOr[LogConfiguration] = js.undefined
   
   /**
     * The name of the CloudWatch Logs log stream associated with the container. The log group for AWS Batch jobs is /aws/batch/job. Each container attempt receives a log stream name when they reach the RUNNING status.
     */
-  var logStreamName: js.UndefOr[String] = js.native
+  var logStreamName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of MiB of memory reserved for the job. This is a required parameter.
     */
-  var memory: js.UndefOr[Integer] = js.native
+  var memory: js.UndefOr[Integer] = js.undefined
   
   /**
     * The mount points for data volumes in your container.
     */
-  var mountPoints: js.UndefOr[MountPoints] = js.native
+  var mountPoints: js.UndefOr[MountPoints] = js.undefined
   
   /**
     * The network interfaces associated with the job.
     */
-  var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.native
+  var networkInterfaces: js.UndefOr[NetworkInterfaceList] = js.undefined
   
   /**
     * When this parameter is true, the container is given elevated privileges on the host container instance (similar to the root user).
     */
-  var privileged: js.UndefOr[Boolean] = js.native
+  var privileged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When this parameter is true, the container is given read-only access to its root file system.
     */
-  var readonlyRootFilesystem: js.UndefOr[Boolean] = js.native
+  var readonlyRootFilesystem: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A short (255 max characters) human-readable string to provide additional details about a running or stopped container.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The type and amount of a resource to assign to a container. Currently, the only supported resource is GPU.
     */
-  var resourceRequirements: js.UndefOr[ResourceRequirements] = js.native
+  var resourceRequirements: js.UndefOr[ResourceRequirements] = js.undefined
   
   /**
     * The secrets to pass to the container. For more information, see Specifying Sensitive Data in the Amazon Elastic Container Service Developer Guide.
     */
-  var secrets: js.UndefOr[SecretList] = js.native
+  var secrets: js.UndefOr[SecretList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon ECS task that is associated with the container job. Each container attempt receives a task ARN when they reach the STARTING status.
     */
-  var taskArn: js.UndefOr[String] = js.native
+  var taskArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of ulimit values to set in the container.
     */
-  var ulimits: js.UndefOr[Ulimits] = js.native
+  var ulimits: js.UndefOr[Ulimits] = js.undefined
   
   /**
     * The user name to use inside the container.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /**
     * The number of VCPUs allocated for the job. This is a required parameter.
     */
-  var vcpus: js.UndefOr[Integer] = js.native
+  var vcpus: js.UndefOr[Integer] = js.undefined
   
   /**
     * A list of volumes associated with the job.
     */
-  var volumes: js.UndefOr[Volumes] = js.native
+  var volumes: js.UndefOr[Volumes] = js.undefined
 }
 object ContainerDetail {
   

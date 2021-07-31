@@ -2,15 +2,13 @@ package typings.pkcs11js.Pkcs11Js
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyPair extends StObject {
   
-  var privateKey: Handle = js.native
+  var privateKey: Handle
   
-  var publicKey: Handle = js.native
+  var publicKey: Handle
 }
 object KeyPair {
   

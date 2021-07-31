@@ -2,24 +2,22 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for parameter validation.
   */
-@js.native
 trait SchemaParameterValidation extends StObject {
   
   /**
     * Validation based on regular expressions.
     */
-  var regex: js.UndefOr[SchemaRegexValidation] = js.native
+  var regex: js.UndefOr[SchemaRegexValidation] = js.undefined
   
   /**
     * Validation based on a list of allowed values.
     */
-  var values: js.UndefOr[SchemaValueValidation] = js.native
+  var values: js.UndefOr[SchemaValueValidation] = js.undefined
 }
 object SchemaParameterValidation {
   

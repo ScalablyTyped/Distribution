@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -39,14 +38,22 @@ sealed trait PageNavigationType extends StObject
 object PageNavigationType extends StObject {
   
   @js.native
-  sealed trait CONTINUE extends PageNavigationType
+  sealed trait CONTINUE
+    extends StObject
+       with PageNavigationType
   
   @js.native
-  sealed trait GO_TO_PAGE extends PageNavigationType
+  sealed trait GO_TO_PAGE
+    extends StObject
+       with PageNavigationType
   
   @js.native
-  sealed trait RESTART extends PageNavigationType
+  sealed trait RESTART
+    extends StObject
+       with PageNavigationType
   
   @js.native
-  sealed trait SUBMIT extends PageNavigationType
+  sealed trait SUBMIT
+    extends StObject
+       with PageNavigationType
 }

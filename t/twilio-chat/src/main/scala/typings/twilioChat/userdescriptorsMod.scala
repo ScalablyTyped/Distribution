@@ -6,7 +6,6 @@ import typings.twilioChat.userdescriptorMod.UserDescriptor
 import typings.twilioChat.usersMod.Users
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userdescriptorsMod {
@@ -26,12 +25,11 @@ object userdescriptorsMod {
     var url: js.Any = js.native
   }
   
-  @js.native
   trait UserDescriptorsServices extends StObject {
     
-    var network: Network = js.native
+    var network: Network
     
-    var users: Users = js.native
+    var users: Users
   }
   object UserDescriptorsServices {
     

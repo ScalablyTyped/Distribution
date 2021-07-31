@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketLogging extends StObject {
   
   /**
     * The name of the bucket that will receive the log objects.
     */
-  var targetBucket: Input[String] = js.native
+  var targetBucket: Input[String]
   
   /**
     * To specify a key prefix for log objects.
     */
-  var targetPrefix: js.UndefOr[Input[String]] = js.native
+  var targetPrefix: js.UndefOr[Input[String]] = js.undefined
 }
 object BucketLogging {
   

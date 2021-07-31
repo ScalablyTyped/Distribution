@@ -2,36 +2,34 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationSubnetGroup extends StObject {
   
   /**
     * A description for the replication subnet group.
     */
-  var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.native
+  var ReplicationSubnetGroupDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of the replication instance subnet group.
     */
-  var ReplicationSubnetGroupIdentifier: js.UndefOr[String] = js.native
+  var ReplicationSubnetGroupIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the subnet group.
     */
-  var SubnetGroupStatus: js.UndefOr[String] = js.native
+  var SubnetGroupStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The subnets that are in the subnet group.
     */
-  var Subnets: js.UndefOr[SubnetList] = js.native
+  var Subnets: js.UndefOr[SubnetList] = js.undefined
   
   /**
     * The ID of the VPC.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object ReplicationSubnetGroup {
   

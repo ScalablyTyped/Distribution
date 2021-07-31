@@ -2,17 +2,15 @@ package typings.vexflow.Vex.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoiceGroup extends StObject {
   
-  def addVoice(voice: Voice): Unit = js.native
+  def addVoice(voice: Voice): Unit
   
-  def getModifierContexts(): js.Array[ModifierContext] = js.native
+  def getModifierContexts(): js.Array[ModifierContext]
   
-  def getVoices(): js.Array[Voice] = js.native
+  def getVoices(): js.Array[Voice]
 }
 object VoiceGroup {
   

@@ -2,14 +2,12 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<@storybook/ui.@storybook/ui/dist/settings/release_notes.ReleaseNotesProps, 'isLoaded' | 'setLoaded' | 'didHitMaxWaitTime'> */
-@js.native
 trait OmitReleaseNotesPropsisLo extends StObject {
   
-  var version: String = js.native
+  var version: String
 }
 object OmitReleaseNotesPropsisLo {
   

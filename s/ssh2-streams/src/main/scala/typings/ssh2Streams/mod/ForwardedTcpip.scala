@@ -2,19 +2,17 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardedTcpip extends StObject {
   
-  var bindAddr: String = js.native
+  var bindAddr: String
   
-  var bindPort: Double = js.native
+  var bindPort: Double
   
-  var remoteAddr: String = js.native
+  var remoteAddr: String
   
-  var remotePort: Double = js.native
+  var remotePort: Double
 }
 object ForwardedTcpip {
   

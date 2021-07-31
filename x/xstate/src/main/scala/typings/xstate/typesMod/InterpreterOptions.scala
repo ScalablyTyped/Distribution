@@ -6,14 +6,13 @@ import typings.xstate.interpreterMod.Clock
 import typings.xstate.interpreterMod.Interpreter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterpreterOptions
-  extends /* option */ StringDictionary[js.Any] {
+  extends StObject
+     with /* option */ StringDictionary[js.Any] {
   
-  var clock: Clock = js.native
+  var clock: Clock
   
   /**
     * If `true`, defers processing of sent events until the service
@@ -22,28 +21,28 @@ trait InterpreterOptions
     *
     * Default: `true`
     */
-  var deferEvents: Boolean = js.native
+  var deferEvents: Boolean
   
   /**
     * If `true`, states and events will be logged to Redux DevTools.
     *
     * Default: `false`
     */
-  var devTools: Boolean | js.Object = js.native
+  var devTools: Boolean | js.Object
   
   /**
     * Whether state actions should be executed immediately upon transition. Defaults to `true`.
     */
-  var execute: Boolean = js.native
+  var execute: Boolean
   
   /**
     * The custom `id` for referencing this service.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  def logger(args: js.Any*): Unit = js.native
+  def logger(args: js.Any*): Unit
   
-  var parent: js.UndefOr[Interpreter[_, _, _, ContextAny]] = js.native
+  var parent: js.UndefOr[Interpreter[js.Any, js.Any, js.Any, ContextAny]] = js.undefined
 }
 object InterpreterOptions {
   
@@ -84,7 +83,7 @@ object InterpreterOptions {
     def setLogger(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "logger", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParent(value: Interpreter[_, _, _, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: Interpreter[js.Any, js.Any, js.Any, ContextAny]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)

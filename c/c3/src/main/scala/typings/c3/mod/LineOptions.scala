@@ -3,10 +3,8 @@ package typings.c3.mod
 import typings.c3.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineOptions extends StObject {
   
   /**
@@ -14,9 +12,9 @@ trait LineOptions extends StObject {
     * If `true` set, the region of null data will be connected without any data point.
     * If `false` set, the region of null data will not be connected and get empty.
     */
-  var connectNull: js.UndefOr[Boolean] = js.native
+  var connectNull: js.UndefOr[Boolean] = js.undefined
   
-  var step: js.UndefOr[`3`] = js.native
+  var step: js.UndefOr[`3`] = js.undefined
 }
 object LineOptions {
   

@@ -2,17 +2,15 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Logging extends StObject {
   
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
   
-  var schema: js.UndefOr[String] = js.native
+  var schema: js.UndefOr[String] = js.undefined
   
-  var schemaDelimeter: js.UndefOr[String] = js.native
+  var schemaDelimeter: js.UndefOr[String] = js.undefined
 }
 object Logging {
   

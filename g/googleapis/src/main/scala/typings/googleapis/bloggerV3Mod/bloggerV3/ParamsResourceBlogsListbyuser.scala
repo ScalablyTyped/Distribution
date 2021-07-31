@@ -6,47 +6,47 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceBlogsListbyuser extends StandardParameters {
+trait ParamsResourceBlogsListbyuser
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Whether the response is a list of blogs with per-user information instead
     * of just blogs.
     */
-  var fetchUserInfo: js.UndefOr[Boolean] = js.native
+  var fetchUserInfo: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User access types for blogs to include in the results, e.g. AUTHOR will
     * return blogs where the user has author level access. If no roles are
     * specified, defaults to ADMIN and AUTHOR roles.
     */
-  var role: js.UndefOr[js.Array[String]] = js.native
+  var role: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Blog statuses to include in the result (default: Live blogs only). Note
     * that ADMIN access is required to view deleted blogs.
     */
-  var status: js.UndefOr[js.Array[String]] = js.native
+  var status: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ID of the user whose blogs are to be fetched. Either the word 'self'
     * (sans quote marks) or the user's profile identifier.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * Access level with which to view the blogs. Note that some fields require
     * elevated access.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceBlogsListbyuser {
   

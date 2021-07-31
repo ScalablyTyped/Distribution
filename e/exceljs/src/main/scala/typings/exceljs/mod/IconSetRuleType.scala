@@ -3,32 +3,31 @@ package typings.exceljs.mod
 import typings.exceljs.exceljsStrings.iconSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconSetRuleType
-  extends ConditionalFormattingBaseRule
+  extends StObject
+     with ConditionalFormattingBaseRule
      with ConditionalFormattingRule {
   
-  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.native
+  var cfvo: js.UndefOr[js.Array[Cvfo]] = js.undefined
   
-  var custom: js.UndefOr[Boolean] = js.native
+  var custom: js.UndefOr[Boolean] = js.undefined
   
-  var iconSet: js.UndefOr[IconSetTypes] = js.native
+  var iconSet: js.UndefOr[IconSetTypes] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var showValue: js.UndefOr[Boolean] = js.native
+  var showValue: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: iconSet = js.native
+  var `type`: iconSet
 }
 object IconSetRuleType {
   
   @scala.inline
-  def apply(priority: Double, `type`: iconSet): IconSetRuleType = {
+  def apply(priority: Double): IconSetRuleType = {
     val __obj = js.Dynamic.literal(priority = priority.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("iconSet")
     __obj.asInstanceOf[IconSetRuleType]
   }
   

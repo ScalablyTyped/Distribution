@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.AllowInInput
 import typings.blueprintjsCore.hotkeyMod.IHotkeyProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Hotkey")

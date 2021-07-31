@@ -5,41 +5,39 @@ import typings.kendoUi.kendoUiStrings.horizontal
 import typings.kendoUi.kendoUiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormOptions extends StObject {
   
-  var buttonsTemplate: js.UndefOr[String | js.Function] = js.native
+  var buttonsTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ FormChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ FormChangeEvent, Unit]] = js.undefined
   
-  var clear: js.UndefOr[js.Function1[/* e */ FormClearEvent, Unit]] = js.native
+  var clear: js.UndefOr[js.Function1[/* e */ FormClearEvent, Unit]] = js.undefined
   
-  var focusFirst: js.UndefOr[Boolean] = js.native
+  var focusFirst: js.UndefOr[Boolean] = js.undefined
   
-  var formData: js.UndefOr[FormData] = js.native
+  var formData: js.UndefOr[FormData] = js.undefined
   
-  var formatLabel: js.UndefOr[js.Function] = js.native
+  var formatLabel: js.UndefOr[js.Function] = js.undefined
   
-  var grid: js.UndefOr[FormGridOptions] = js.native
+  var grid: js.UndefOr[FormGridOptions] = js.undefined
   
-  var items: js.UndefOr[js.Array[FormItem]] = js.native
+  var items: js.UndefOr[js.Array[FormItem]] = js.undefined
   
-  var layout: js.UndefOr[String | grid] = js.native
+  var layout: js.UndefOr[String | grid] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String | horizontal | vertical] = js.native
+  var orientation: js.UndefOr[String | horizontal | vertical] = js.undefined
   
-  var submit: js.UndefOr[js.Function1[/* e */ FormSubmitEvent, Unit]] = js.native
+  var submit: js.UndefOr[js.Function1[/* e */ FormSubmitEvent, Unit]] = js.undefined
   
-  var validatable: js.UndefOr[FormValidatable] = js.native
+  var validatable: js.UndefOr[FormValidatable] = js.undefined
   
-  var validate: js.UndefOr[js.Function1[/* e */ FormValidateEvent, Unit]] = js.native
+  var validate: js.UndefOr[js.Function1[/* e */ FormValidateEvent, Unit]] = js.undefined
   
-  var validateField: js.UndefOr[js.Function1[/* e */ FormValidateFieldEvent, Unit]] = js.native
+  var validateField: js.UndefOr[js.Function1[/* e */ FormValidateFieldEvent, Unit]] = js.undefined
 }
 object FormOptions {
   

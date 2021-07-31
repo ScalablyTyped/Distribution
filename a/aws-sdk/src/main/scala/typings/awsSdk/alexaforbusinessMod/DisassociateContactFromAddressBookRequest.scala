@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateContactFromAddressBookRequest extends StObject {
   
   /**
     * The ARN of the address from which to disassociate the contact.
     */
-  var AddressBookArn: Arn = js.native
+  var AddressBookArn: Arn
   
   /**
     * The ARN of the contact to disassociate from an address book.
     */
-  var ContactArn: Arn = js.native
+  var ContactArn: Arn
 }
 object DisassociateContactFromAddressBookRequest {
   

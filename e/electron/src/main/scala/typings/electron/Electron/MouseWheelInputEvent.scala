@@ -3,41 +3,41 @@ package typings.electron.Electron
 import typings.electron.electronStrings.mouseWheel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseWheelInputEvent extends MouseInputEvent {
+trait MouseWheelInputEvent
+  extends StObject
+     with MouseInputEvent {
   
   // Docs: https://electronjs.org/docs/api/structures/mouse-wheel-input-event
-  var accelerationRatioX: js.UndefOr[Double] = js.native
+  var accelerationRatioX: js.UndefOr[Double] = js.undefined
   
-  var accelerationRatioY: js.UndefOr[Double] = js.native
+  var accelerationRatioY: js.UndefOr[Double] = js.undefined
   
-  var canScroll: js.UndefOr[Boolean] = js.native
+  var canScroll: js.UndefOr[Boolean] = js.undefined
   
-  var deltaX: js.UndefOr[Double] = js.native
+  var deltaX: js.UndefOr[Double] = js.undefined
   
-  var deltaY: js.UndefOr[Double] = js.native
+  var deltaY: js.UndefOr[Double] = js.undefined
   
-  var hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.native
+  var hasPreciseScrollingDeltas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of the event, can be `mouseWheel`.
     */
   @JSName("type")
-  var type_MouseWheelInputEvent: mouseWheel = js.native
+  var type_MouseWheelInputEvent: mouseWheel
   
-  var wheelTicksX: js.UndefOr[Double] = js.native
+  var wheelTicksX: js.UndefOr[Double] = js.undefined
   
-  var wheelTicksY: js.UndefOr[Double] = js.native
+  var wheelTicksY: js.UndefOr[Double] = js.undefined
 }
 object MouseWheelInputEvent {
   
   @scala.inline
-  def apply(`type`: mouseWheel, x: Double, y: Double): MouseWheelInputEvent = {
+  def apply(x: Double, y: Double): MouseWheelInputEvent = {
     val __obj = js.Dynamic.literal(x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("mouseWheel")
     __obj.asInstanceOf[MouseWheelInputEvent]
   }
   

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveViewVideoViewabilityMetricConfig extends StObject {
   
   /** Required. The display name of the custom metric. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum visible video duration required (in seconds) in order for an impression to be recorded. You must specify minimum_duration, minimum_quartile or both. If both are
     * specified, an impression meets the metric criteria if either requirement is met (whichever happens first).
     */
-  var minimumDuration: js.UndefOr[String] = js.native
+  var minimumDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum visible video duration required, based on the video quartiles, in order for an impression to be recorded. You must specify minimum_duration, minimum_quartile or both. If
     * both are specified, an impression meets the metric criteria if either requirement is met (whichever happens first).
     */
-  var minimumQuartile: js.UndefOr[String] = js.native
+  var minimumQuartile: js.UndefOr[String] = js.undefined
   
   /** Required. The minimum percentage of the video ad's pixels visible on the screen in order for an impression to be recorded. */
-  var minimumViewability: js.UndefOr[String] = js.native
+  var minimumViewability: js.UndefOr[String] = js.undefined
   
   /** Required. The minimum percentage of the video ad's volume required in order for an impression to be recorded. */
-  var minimumVolume: js.UndefOr[String] = js.native
+  var minimumVolume: js.UndefOr[String] = js.undefined
 }
 object ActiveViewVideoViewabilityMetricConfig {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationGroupUpdate extends StObject {
   
   /**
     * The parameters required for creating a replica for the table.
     */
-  var Create: js.UndefOr[CreateReplicationGroupMemberAction] = js.native
+  var Create: js.UndefOr[CreateReplicationGroupMemberAction] = js.undefined
   
   /**
     * The parameters required for deleting a replica for the table.
     */
-  var Delete: js.UndefOr[DeleteReplicationGroupMemberAction] = js.native
+  var Delete: js.UndefOr[DeleteReplicationGroupMemberAction] = js.undefined
   
   /**
     * The parameters required for updating a replica for the table.
     */
-  var Update: js.UndefOr[UpdateReplicationGroupMemberAction] = js.native
+  var Update: js.UndefOr[UpdateReplicationGroupMemberAction] = js.undefined
 }
 object ReplicationGroupUpdate {
   

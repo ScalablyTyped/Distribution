@@ -12,48 +12,48 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a reference field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait GetReference extends TextField_ {
+trait GetReference
+  extends StObject
+     with TextField_ {
   
   /**
     * contains the current content of the text field.
     *
     * This property is especially useful for import/export purposes.
     */
-  var CurrentPresentation: String = js.native
+  var CurrentPresentation: String
   
   /**
     * contains the type of the reference.
     * @see com.sun.star.text.ReferenceFieldPart
     */
-  var ReferenceFieldPart: Double = js.native
+  var ReferenceFieldPart: Double
   
   /**
     * contains the source of the reference.
     * @see com.sun.star.text.ReferenceFieldSource
     */
-  var ReferenceFieldSource: Double = js.native
+  var ReferenceFieldSource: Double
   
   /**
     * contains the sequence number of a set expression field that is used as sequence field or the value of the ReferenceId property of a footnote or
     * endnote.
     * @see com.sun.star.text.Footnote
     */
-  var SequenceNumber: Double = js.native
+  var SequenceNumber: Double
   
   /**
     * contains the name of the source.
     *
     * Depending on the property {@link ReferenceFieldSource} it may be the name of a bookmark, a reference mark.
     */
-  var SourceName: String = js.native
+  var SourceName: String
 }
 object GetReference {
   

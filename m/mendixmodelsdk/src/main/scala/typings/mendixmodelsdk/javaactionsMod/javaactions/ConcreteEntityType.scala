@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,9 +72,8 @@ object ConcreteEntityType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.create")
-  @js.native
-  def create(model: IModel): ConcreteEntityType = js.native
+  @scala.inline
+  def create(model: IModel): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -86,9 +84,8 @@ object ConcreteEntityType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): ConcreteEntityType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -99,9 +96,8 @@ object ConcreteEntityType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.createInJavaActionParameterUnderJavaType")
-  @js.native
-  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): ConcreteEntityType = js.native
+  @scala.inline
+  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -112,9 +108,8 @@ object ConcreteEntityType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.createInJavaActionUnderJavaReturnType")
-  @js.native
-  def createInJavaActionUnderJavaReturnType(container: JavaAction): ConcreteEntityType = js.native
+  @scala.inline
+  def createInJavaActionUnderJavaReturnType(container: JavaAction): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /**
     * Creates and returns a new ConcreteEntityType instance in the SDK and on the server.
@@ -125,9 +120,8 @@ object ConcreteEntityType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.createInListTypeUnderParameter")
-  @js.native
-  def createInListTypeUnderParameter(container: ListType): ConcreteEntityType = js.native
+  @scala.inline
+  def createInListTypeUnderParameter(container: ListType): ConcreteEntityType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListTypeUnderParameter")(container.asInstanceOf[js.Any]).asInstanceOf[ConcreteEntityType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ConcreteEntityType.structureTypeName")

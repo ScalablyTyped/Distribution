@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeletePhotosResponse extends StObject {
   
   /** The status for the operation to delete a single Photo in the batch request. */
-  var status: js.UndefOr[js.Array[Status]] = js.native
+  var status: js.UndefOr[js.Array[Status]] = js.undefined
 }
 object BatchDeletePhotosResponse {
   

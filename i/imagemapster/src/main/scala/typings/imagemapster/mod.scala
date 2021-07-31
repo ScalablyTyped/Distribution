@@ -34,7 +34,6 @@ import typings.imagemapster.mod.global.ImageMapster.Unbind
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,8 +42,9 @@ object mod {
     
     object ImageMapster {
       
-      @js.native
-      trait AreaRenderingOptions extends RenderingOptions {
+      trait AreaRenderingOptions
+        extends StObject
+           with RenderingOptions {
         
         /**
           * when rendering an area or area group, also render the areas in the
@@ -68,7 +68,7 @@ object mod {
           * menu to display when the hotspot is moused over, but when it's
           * hidden, mousing over the menu area itself should have no effect.
           */
-        var includeKeys: js.UndefOr[String] = js.native
+        var includeKeys: js.UndefOr[String] = js.undefined
         
         /**
           * the area is a mask rather than a highlighted area.
@@ -120,9 +120,9 @@ object mod {
           * effect, for any area as desired.
           *
           */
-        var isMask: js.UndefOr[Boolean] = js.native
+        var isMask: js.UndefOr[Boolean] = js.undefined
         
-        var key: String = js.native
+        var key: String
         
         /**
           * tool tip data for an area
@@ -134,7 +134,7 @@ object mod {
           * using this option you must use a jQuery object. Any string will be
           * treated as plain text (and special characters rendered correctly).
           */
-        var toolTip: js.UndefOr[String] = js.native
+        var toolTip: js.UndefOr[String] = js.undefined
       }
       object AreaRenderingOptions {
         
@@ -180,22 +180,21 @@ object mod {
       
       type Keys = keys
       
-      @js.native
       trait OnClickData extends StObject {
         
-        var e: JQueryEventObject = js.native
+        var e: JQueryEventObject
         
         /**
           * mapKey for this area
           */
-        var key: String = js.native
+        var key: String
         
         /**
           * $(item) from boundList
           */
-        var listTarget: js.UndefOr[JQuery] = js.native
+        var listTarget: js.UndefOr[JQuery] = js.undefined
         
-        var selected: Boolean = js.native
+        var selected: Boolean
       }
       object OnClickData {
         
@@ -225,30 +224,29 @@ object mod {
         }
       }
       
-      @js.native
       trait OnGetListData extends StObject {
         
         /**
           * array of areas that make up this group
           */
-        var area: js.Array[_] = js.native
+        var area: js.Array[js.Any]
         
         /**
           * primary mapKey for this area or area group
           */
-        var key: String = js.native
+        var key: String
         
-        var options: AreaRenderingOptions = js.native
+        var options: AreaRenderingOptions
         
         /**
           * mapValue for this area or group
           */
-        var value: String = js.native
+        var value: String
       }
       object OnGetListData {
         
         @scala.inline
-        def apply(area: js.Array[_], key: String, options: AreaRenderingOptions, value: String): OnGetListData = {
+        def apply(area: js.Array[js.Any], key: String, options: AreaRenderingOptions, value: String): OnGetListData = {
           val __obj = js.Dynamic.literal(area = area.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
           __obj.asInstanceOf[OnGetListData]
         }
@@ -257,7 +255,7 @@ object mod {
         implicit class OnGetListDataMutableBuilder[Self <: OnGetListData] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setArea(value: js.Array[_]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
+          def setArea(value: js.Array[js.Any]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setAreaVarargs(value: js.Any*): Self = StObject.set(x, "area", js.Array(value :_*))
@@ -273,22 +271,21 @@ object mod {
         }
       }
       
-      @js.native
       trait OnMouseData extends StObject {
         
-        var e: JQueryEventObject = js.native
+        var e: JQueryEventObject
         
         /**
           * area key
           */
-        var key: String = js.native
+        var key: String
         
-        var options: AreaRenderingOptions = js.native
+        var options: AreaRenderingOptions
         
         /**
           * true if area is currently selected
           */
-        var selected: Boolean = js.native
+        var selected: Boolean
       }
       object OnMouseData {
         
@@ -315,25 +312,24 @@ object mod {
         }
       }
       
-      @js.native
       trait OnShowToolTipData extends StObject {
         
-        var areaOptions: AreaRenderingOptions = js.native
+        var areaOptions: AreaRenderingOptions
         
         /**
           * map key for this area
           */
-        var key: String = js.native
+        var key: String
         
         /**
           * current state of the area
           */
-        var selected: Boolean = js.native
+        var selected: Boolean
         
         /**
           * jQuery object of the tooltip container
           */
-        var toolTip: JQuery = js.native
+        var toolTip: JQuery
       }
       object OnShowToolTipData {
         
@@ -360,20 +356,19 @@ object mod {
         }
       }
       
-      @js.native
       trait OnStateChangeData extends StObject {
         
         /**
           * map key
           */
-        var key: String = js.native
+        var key: String
         
         /**
           * indicating the current state (following the event)
           */
-        var selected: Boolean = js.native
+        var selected: Boolean
         
-        var state: highlight | select = js.native
+        var state: highlight | select
       }
       object OnStateChangeData {
         
@@ -397,8 +392,9 @@ object mod {
         }
       }
       
-      @js.native
-      trait Options extends RenderingOptions {
+      trait Options
+        extends StObject
+           with RenderingOptions {
         
         /**
           *
@@ -406,7 +402,7 @@ object mod {
           * a "key" property identifying a valid mapKey, and additional
           * rendering options specific to that area or group
           */
-        var areas: js.UndefOr[js.Array[AreaRenderingOptions]] = js.native
+        var areas: js.UndefOr[js.Array[AreaRenderingOptions]] = js.undefined
         
         /**
           * a jQuery object whose elements are bound to the map.
@@ -417,7 +413,7 @@ object mod {
           * attribute. If more than one element in the list has the same value,
           * the action will affect all matching elements.
           */
-        var boundList: js.UndefOr[JQuery] = js.native
+        var boundList: js.UndefOr[JQuery] = js.undefined
         
         /**
           * Clicking on a link should cause the browser to navigate to the href
@@ -435,7 +431,7 @@ object mod {
           * you can include it on just one, and clicking any area will cause the
           * appropraite navigation.
           */
-        var clickNavigate: js.UndefOr[Boolean] = js.native
+        var clickNavigate: js.UndefOr[Boolean] = js.undefined
         
         /**
           * time (in milliseconds) to wait for images to load before giving up
@@ -447,7 +443,7 @@ object mod {
           * will give up. If you have particularly large pages or images, you
           * may want to increase this to account for long load times.
           */
-        var configTimeout: js.UndefOr[Double] = js.native
+        var configTimeout: js.UndefOr[Double] = js.undefined
         
         /**
           * an attribute on items in a boundList that corresponds to the value
@@ -458,7 +454,7 @@ object mod {
           * imageMap mapKey tag. Any item in the boundList with missing or
           * mismatched data will be ignored.
           */
-        var listKey: js.UndefOr[String] = js.native
+        var listKey: js.UndefOr[String] = js.undefined
         
         /**
           * attribute to set or remove when an area is selected or deselected
@@ -467,7 +463,7 @@ object mod {
           * this attribute on the list element that matches that area based on
           * their respective keys.
           */
-        var listSelectedAttribute: js.UndefOr[String] = js.native
+        var listSelectedAttribute: js.UndefOr[String] = js.undefined
         
         /**
           * a class to add or remove when an area is selected or deselected
@@ -477,7 +473,7 @@ object mod {
           * used to easily create any kind of associated action when areas on
           * the map are changed.
           */
-        var listSelectedClass: js.UndefOr[String] = js.native
+        var listSelectedClass: js.UndefOr[String] = js.undefined
         
         /**
           * an attribute identifying each imagemap area.
@@ -511,7 +507,7 @@ object mod {
           * of each group. When the area is physically moused over, the first
           * key listed will identify the group that's effective for that action.
           */
-        var mapKey: js.UndefOr[String] = js.native
+        var mapKey: js.UndefOr[String] = js.undefined
         
         /**
           * an attribute on each area tag containing additional descriptive
@@ -533,7 +529,7 @@ object mod {
           * If there are grouped areas (areas with the same key), then the value
           * from the first area found with data in this attribute will be used.
           */
-        var mapValue: js.UndefOr[String] = js.native
+        var mapValue: js.UndefOr[String] = js.undefined
         
         /**
           * delay removing highlight when mouse exits an area (1.2.5b36)
@@ -562,7 +558,7 @@ object mod {
           * is intended to help keep the higlights active for imagemaps that are
           * sparse, or have very small areas.
           */
-        var mouseoutDelay: js.UndefOr[Double] = js.native
+        var mouseoutDelay: js.UndefOr[Double] = js.undefined
         
         /**
           * Treat areas containing the onhref attribute (or missing the href
@@ -587,7 +583,7 @@ object mod {
           * different color. This can be specified for each area (see the
           * fillColorMask option below) to create the best possible effect.
           */
-        var noHrefIsMask: js.UndefOr[Boolean] = js.native
+        var noHrefIsMask: js.UndefOr[Boolean] = js.undefined
         
         /**
           * callback when a hotspot area is clicked. Return false to cancel
@@ -602,7 +598,7 @@ object mod {
           * This can be used to perform additional actions on a click without
           * binding another event and having to obtain information manually.
           */
-        var onClick: js.UndefOr[js.Function1[/* data */ OnClickData, Unit]] = js.native
+        var onClick: js.UndefOr[js.Function1[/* data */ OnClickData, Unit]] = js.undefined
         
         /**
           * a callback when the mapster has finished initial configuration
@@ -620,7 +616,7 @@ object mod {
           * because the alternate image is loaded by the client at configure
           * time to ensure it is available immediately when needed.
           */
-        var onConfigured: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.native
+        var onConfigured: js.UndefOr[js.Function1[/* success */ Boolean, Unit]] = js.undefined
         
         /**
           * a callback on mapster initialization that provides summary data
@@ -634,7 +630,7 @@ object mod {
           * that make up the bound list, the same as if it was assigned
           * manually.
           */
-        var onGetList: js.UndefOr[js.Function1[/* data */ OnGetListData, JQuery]] = js.native
+        var onGetList: js.UndefOr[js.Function1[/* data */ OnGetListData, JQuery]] = js.undefined
         
         /**
           * callback when mouse leavesd a bound area.
@@ -642,14 +638,14 @@ object mod {
           * Callback when the mouse leaves a bound area. The data structure
           * passed to the callback is the same as onMouseover.
           */
-        var onMouseout: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.native
+        var onMouseout: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.undefined
         
         /**
           * callback when mouse enters a bound area.
           *
           * This function is called when the mouse enters a bound area.
           */
-        var onMouseover: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.native
+        var onMouseover: js.UndefOr[js.Function1[/* data */ OnMouseData, Unit]] = js.undefined
         
         /**
           * callback when a toolTip is created
@@ -657,7 +653,7 @@ object mod {
           * This can be used to control tooltip closing behavior directly, if
           * desired.
           */
-        var onShowToolTip: js.UndefOr[js.Function1[/* data */ OnShowToolTipData, Unit]] = js.native
+        var onShowToolTip: js.UndefOr[js.Function1[/* data */ OnShowToolTipData, Unit]] = js.undefined
         
         /**
           * callback when area state is changed (either highlight or select).
@@ -665,7 +661,7 @@ object mod {
           * onStateChange can be used to get more specific information than the
           * mouseover or click events.
           */
-        var onStateChange: js.UndefOr[js.Function1[/* data */ OnStateChangeData, Unit]] = js.native
+        var onStateChange: js.UndefOr[js.Function1[/* data */ OnStateChangeData, Unit]] = js.undefined
         
         /**
           * Automatically scale imagemaps to match the size of a
@@ -686,7 +682,7 @@ object mod {
           * If this behavior is not desired for some reason, this can be
           * disabled by setting this option to false.
           */
-        var scaleMap: js.UndefOr[Boolean] = js.native
+        var scaleMap: js.UndefOr[Boolean] = js.undefined
         
         /**
           * enable tooltips
@@ -699,7 +695,7 @@ object mod {
           * rather enables tooltips for the entire map. At the item level, only
           * the presence of tooltip data is necessary for a tooltip to appear.
           */
-        var showToolTip: js.UndefOr[Boolean] = js.native
+        var showToolTip: js.UndefOr[Boolean] = js.undefined
         
         /**
           * sort the values before calling onGetList
@@ -708,7 +704,7 @@ object mod {
           * ascending order by the area value from mapValue. If "desc" is
           * passed, the list will be sorted in descending order.
           */
-        var sortList: js.UndefOr[Boolean | asc | desc] = js.native
+        var sortList: js.UndefOr[Boolean | asc | desc] = js.undefined
         
         /**
           * specify the behavior that causes a toolTip to close.
@@ -735,7 +731,7 @@ object mod {
           * tooltips never closing, leaving it to you to close them manually
           * though the tooltip method.
           */
-        var toolTipClose: js.UndefOr[js.Array[ToolTipCloseEvent]] = js.native
+        var toolTipClose: js.UndefOr[js.Array[ToolTipCloseEvent]] = js.undefined
         
         /**
           * HTML describing the popup that will be created for tooltips.
@@ -750,18 +746,18 @@ object mod {
           * it can't be placed within the image, it will be placed in the
           * lower-right corner and extend outside the image.
           */
-        var toolTipContainer: js.UndefOr[String | JQuery] = js.native
+        var toolTipContainer: js.UndefOr[String | JQuery] = js.undefined
         
         /**
           * add "classname" class to the wrapper created around the image, or
           * copy classes from the image if "true"
           */
-        var wrapClass: js.UndefOr[String | Boolean] = js.native
+        var wrapClass: js.UndefOr[String | Boolean] = js.undefined
         
         /**
           * add CSS to the wrapper created around the image
           */
-        var wrapCss: js.UndefOr[String | Boolean] = js.native
+        var wrapCss: js.UndefOr[String | Boolean] = js.undefined
       }
       object Options {
         
@@ -934,7 +930,6 @@ object mod {
       
       type Rebind = rebind
       
-      @js.native
       trait RenderingOptions extends StObject {
         
         /**
@@ -958,49 +953,49 @@ object mod {
           * fill/stroke effect, which may be different from when you're using an
           * alternate image.
           */
-        var altImage: js.UndefOr[String] = js.native
+        var altImage: js.UndefOr[String] = js.undefined
         
-        var altImageFill: js.UndefOr[Boolean] = js.native
+        var altImageFill: js.UndefOr[Boolean] = js.undefined
         
-        var altImageOpacity: js.UndefOr[Double] = js.native
+        var altImageOpacity: js.UndefOr[Double] = js.undefined
         
-        var altImageStroke: js.UndefOr[Boolean] = js.native
+        var altImageStroke: js.UndefOr[Boolean] = js.undefined
         
         /**
           * fade effect - can only be applied to "render_highlight".
           *
           * Use a fade effect when highlighting areas on mouseover.
           */
-        var fade: js.UndefOr[Boolean] = js.native
+        var fade: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The duration of the fade-in effect, in milliseconds.
           */
-        var fadeDuration: js.UndefOr[Double] = js.native
+        var fadeDuration: js.UndefOr[Double] = js.undefined
         
         /**
           * Areas should be flood-filled when moused over or highlighted.
           */
-        var fill: js.UndefOr[Boolean] = js.native
+        var fill: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The color used for flood fill.
           */
-        var fillColor: js.UndefOr[String] = js.native
+        var fillColor: js.UndefOr[String] = js.undefined
         
-        var fillColorMask: js.UndefOr[String] = js.native
+        var fillColorMask: js.UndefOr[String] = js.undefined
         
         /**
           * The opacity of the fill. This is a number from 0 to 1.
           */
-        var fillOpacity: js.UndefOr[Double] = js.native
+        var fillOpacity: js.UndefOr[Double] = js.undefined
         
         /**
           * highlight areas on mouseover. When null (default), the behavior is
           * disabled for mobile browsers. You can explicitly enable or disable
           * it by setting this option to a boolean value.
           */
-        var highlight: js.UndefOr[Boolean] = js.native
+        var highlight: js.UndefOr[Boolean] = js.undefined
         
         /**
           * the map or area on the map can be deselected.
@@ -1013,7 +1008,7 @@ object mod {
           * items to be selected if this is the default state (or the only
           * selected item is deselected programatically).
           */
-        var isDeselectable: js.UndefOr[Boolean] = js.native
+        var isDeselectable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * the map or an area on the map can be selected (or deselected).
@@ -1025,7 +1020,7 @@ object mod {
           * whether that individual area (or group) can be selected. By default,
           * the map and all areas are selectable.
           */
-        var isSelectable: js.UndefOr[Boolean] = js.native
+        var isSelectable: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The options below control the way highlighted areas are rendered.
@@ -1038,9 +1033,9 @@ object mod {
           * object. They can also be applied to one or the other situations
           * specifically using the render_highlight and render_select options.
           */
-        var render_highlight: js.UndefOr[String | RenderingOptions] = js.native
+        var render_highlight: js.UndefOr[String | RenderingOptions] = js.undefined
         
-        var render_select: js.UndefOr[String | RenderingOptions] = js.native
+        var render_select: js.UndefOr[String | RenderingOptions] = js.undefined
         
         /**
           * initial selection state of an area.
@@ -1049,7 +1044,7 @@ object mod {
           * creating a new mapster, use this option for a specific area (see
           * above).
           */
-        var selected: js.UndefOr[Boolean] = js.native
+        var selected: js.UndefOr[Boolean] = js.undefined
         
         /**
           * only one area can be selected at a time
@@ -1061,7 +1056,7 @@ object mod {
           * programatically, only one (or zero) areas can ever be selected when
           * this option is true.
           */
-        var singleSelect: js.UndefOr[Boolean] = js.native
+        var singleSelect: js.UndefOr[Boolean] = js.undefined
         
         /**
           * the map or area is permanently in a selected or deselected state.
@@ -1077,27 +1072,27 @@ object mod {
           * Note that when setting states programatically, this option will not
           * be honored; it only affects user interaction.
           */
-        var staticState: js.UndefOr[Boolean] = js.native
+        var staticState: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Areas should be outlined when moused over or highlighted.
           */
-        var stroke: js.UndefOr[Boolean] = js.native
+        var stroke: js.UndefOr[Boolean] = js.undefined
         
         /**
           * The color of the outline.
           */
-        var strokeColor: js.UndefOr[String] = js.native
+        var strokeColor: js.UndefOr[String] = js.undefined
         
         /**
           * The opacity of the outline.
           */
-        var strokeOpacity: js.UndefOr[Double] = js.native
+        var strokeOpacity: js.UndefOr[Double] = js.undefined
         
         /**
           * The width of the outline.
           */
-        var strokeWidth: js.UndefOr[Double] = js.native
+        var strokeWidth: js.UndefOr[Double] = js.undefined
       }
       object RenderingOptions {
         
@@ -1354,9 +1349,9 @@ object mod {
         * to the area.
         */
       def mapster(method: GetOptions): Options | AreaRenderingOptions = js.native
-      def mapster(method: GetOptions, key: js.UndefOr[scala.Nothing], effective: Boolean): Options | AreaRenderingOptions = js.native
       def mapster(method: GetOptions, key: String): Options | AreaRenderingOptions = js.native
       def mapster(method: GetOptions, key: String, effective: Boolean): Options | AreaRenderingOptions = js.native
+      def mapster(method: GetOptions, key: Unit, effective: Boolean): Options | AreaRenderingOptions = js.native
       def mapster(method: Get, key: String): String | Boolean = js.native
       /**
         * highlight: highlight, clear, or return highlight state

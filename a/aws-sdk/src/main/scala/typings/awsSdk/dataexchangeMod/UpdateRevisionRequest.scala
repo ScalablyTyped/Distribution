@@ -2,31 +2,29 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRevisionRequest extends StObject {
   
   /**
     * An optional comment about the revision.
     */
-  var Comment: js.UndefOr[stringMin0Max16384] = js.native
+  var Comment: js.UndefOr[stringMin0Max16384] = js.undefined
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
   
   /**
     * Finalizing a revision tells AWS Data Exchange that your changes to the assets in the revision are complete. After it's in this read-only state, you can publish the revision to your products.
     */
-  var Finalized: js.UndefOr[boolean] = js.native
+  var Finalized: js.UndefOr[boolean] = js.undefined
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string = js.native
+  var RevisionId: string
 }
 object UpdateRevisionRequest {
   

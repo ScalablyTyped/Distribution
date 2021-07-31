@@ -2,81 +2,79 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparklineSeriesItem extends StObject {
   
-  var aggregate: js.UndefOr[String | js.Function] = js.native
+  var aggregate: js.UndefOr[String | js.Function] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[SparklineSeriesItemBorder] = js.native
+  var border: js.UndefOr[SparklineSeriesItemBorder] = js.undefined
   
-  var categoryField: js.UndefOr[String] = js.native
+  var categoryField: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | js.Function] = js.native
+  var color: js.UndefOr[String | js.Function] = js.undefined
   
-  var colorField: js.UndefOr[String] = js.native
+  var colorField: js.UndefOr[String] = js.undefined
   
-  var connectors: js.UndefOr[SparklineSeriesItemConnectors] = js.native
+  var connectors: js.UndefOr[SparklineSeriesItemConnectors] = js.undefined
   
-  var currentField: js.UndefOr[String] = js.native
+  var currentField: js.UndefOr[String] = js.undefined
   
-  var dashType: js.UndefOr[String] = js.native
+  var dashType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var explodeField: js.UndefOr[String] = js.native
+  var explodeField: js.UndefOr[String] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var highlight: js.UndefOr[SparklineSeriesItemHighlight] = js.native
+  var highlight: js.UndefOr[SparklineSeriesItemHighlight] = js.undefined
   
-  var labels: js.UndefOr[SparklineSeriesItemLabels] = js.native
+  var labels: js.UndefOr[SparklineSeriesItemLabels] = js.undefined
   
-  var line: js.UndefOr[String | SparklineSeriesItemLine] = js.native
+  var line: js.UndefOr[String | SparklineSeriesItemLine] = js.undefined
   
-  var markers: js.UndefOr[SparklineSeriesItemMarkers] = js.native
+  var markers: js.UndefOr[SparklineSeriesItemMarkers] = js.undefined
   
-  var missingValues: js.UndefOr[String] = js.native
+  var missingValues: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var negativeColor: js.UndefOr[String] = js.native
+  var negativeColor: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[SparklineSeriesItemNotes] = js.native
+  var notes: js.UndefOr[SparklineSeriesItemNotes] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var overlay: js.UndefOr[SparklineSeriesItemOverlay] = js.native
+  var overlay: js.UndefOr[SparklineSeriesItemOverlay] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[Boolean | String | SparklineSeriesItemStack] = js.native
+  var stack: js.UndefOr[Boolean | String | SparklineSeriesItemStack] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[SparklineSeriesItemTarget] = js.native
+  var target: js.UndefOr[SparklineSeriesItemTarget] = js.undefined
   
-  var targetField: js.UndefOr[String] = js.native
+  var targetField: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[SparklineSeriesItemTooltip] = js.native
+  var tooltip: js.UndefOr[SparklineSeriesItemTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object SparklineSeriesItem {
   

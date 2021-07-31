@@ -2,29 +2,48 @@ package typings.bayesClassifier
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bayes-classifier", JSImport.Namespace)
   @js.native
-  class ^ () extends BayesClassifier
+  class ^ ()
+    extends StObject
+       with BayesClassifier {
+    
+    /* CompleteClass */
+    override def addDocument(doc: String, label: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def addDocuments(docs: js.Array[String], label: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def classify(doc: String): String = js.native
+    
+    /* CompleteClass */
+    override def getClassifications(doc: String): Classifications = js.native
+    
+    /* CompleteClass */
+    override def restore(classifier: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def train(): Unit = js.native
+  }
   
-  @js.native
   trait BayesClassifier extends StObject {
     
-    def addDocument(doc: String, label: String): Unit = js.native
+    def addDocument(doc: String, label: String): Unit
     
-    def addDocuments(docs: js.Array[String], label: String): Unit = js.native
+    def addDocuments(docs: js.Array[String], label: String): Unit
     
-    def classify(doc: String): String = js.native
+    def classify(doc: String): String
     
-    def getClassifications(doc: String): Classifications = js.native
+    def getClassifications(doc: String): Classifications
     
-    def restore(classifier: js.Any): Unit = js.native
+    def restore(classifier: js.Any): Unit
     
-    def train(): Unit = js.native
+    def train(): Unit
   }
   object BayesClassifier {
     
@@ -64,12 +83,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Classifications extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object Classifications {
     

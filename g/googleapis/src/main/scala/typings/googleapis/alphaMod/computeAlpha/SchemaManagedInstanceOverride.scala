@@ -3,13 +3,11 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Overrides of stateful properties for a given instance
   */
-@js.native
 trait SchemaManagedInstanceOverride extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaManagedInstanceOverride extends StObject {
     * https://cloud.google.com/compute/docs/disks/ However, compute API defines
     * the limit at 140, so this is what we check.
     */
-  var disks: js.UndefOr[js.Array[SchemaManagedInstanceOverrideDiskOverride]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaManagedInstanceOverrideDiskOverride]] = js.undefined
   
   /**
     * Metadata overrides defined for this instance. TODO(b/69785416) validate
     * the total length is &lt;9 KB
     */
-  var metadata: js.UndefOr[js.Array[Key]] = js.native
+  var metadata: js.UndefOr[js.Array[Key]] = js.undefined
   
   /**
     * [Output Only] Indicates where does the override come from.
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedInstanceOverride {
   

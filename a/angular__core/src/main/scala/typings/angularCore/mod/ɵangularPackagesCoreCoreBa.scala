@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Console
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "\u0275angular_packages_core_core_ba")
@@ -23,7 +22,7 @@ abstract class ɵangularPackagesCoreCoreBa () extends StObject {
   
   def nodeIndex: Double | Null = js.native
   
-  def providerTokens: js.Array[_] = js.native
+  def providerTokens: js.Array[js.Any] = js.native
   
   def references: StringDictionary[js.Any] = js.native
   

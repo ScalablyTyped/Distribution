@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,14 +12,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : IRev = js.native
   
-  @js.native
   trait IOptions extends StObject {
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     
@@ -60,9 +58,9 @@ object mod extends Shortcut {
     
     def manifest(): ReadWriteStream = js.native
     def manifest(options: IOptions): ReadWriteStream = js.native
-    def manifest(path: js.UndefOr[scala.Nothing], options: IOptions): ReadWriteStream = js.native
     def manifest(path: String): ReadWriteStream = js.native
     def manifest(path: String, options: IOptions): ReadWriteStream = js.native
+    def manifest(path: Unit, options: IOptions): ReadWriteStream = js.native
   }
   
   type _To = IRev

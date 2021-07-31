@@ -2,28 +2,22 @@ package typings.almostEqual
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(value: Double, other: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(value: Double, other: Double, absoluteTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(value: Double, other: Double, absoluteTolerance: Double, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(value: Double, other: Double, absoluteTolerance: Unit, relativeTolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], other.asInstanceOf[js.Any], absoluteTolerance.asInstanceOf[js.Any], relativeTolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   @JSImport("almost-equal", JSImport.Namespace)
   @js.native
-  def apply(value: Double, other: Double): Boolean = js.native
-  @JSImport("almost-equal", JSImport.Namespace)
-  @js.native
-  def apply(
-    value: Double,
-    other: Double,
-    absoluteTolerance: js.UndefOr[scala.Nothing],
-    relativeTolerance: Double
-  ): Boolean = js.native
-  @JSImport("almost-equal", JSImport.Namespace)
-  @js.native
-  def apply(value: Double, other: Double, absoluteTolerance: Double): Boolean = js.native
-  @JSImport("almost-equal", JSImport.Namespace)
-  @js.native
-  def apply(value: Double, other: Double, absoluteTolerance: Double, relativeTolerance: Double): Boolean = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("almost-equal", "DBL_EPSILON")
   @js.native

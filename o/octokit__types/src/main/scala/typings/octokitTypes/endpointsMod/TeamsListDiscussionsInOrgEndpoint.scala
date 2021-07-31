@@ -4,31 +4,29 @@ import typings.octokitTypes.octokitTypesStrings.asc
 import typings.octokitTypes.octokitTypesStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsListDiscussionsInOrgEndpoint extends StObject {
   
   /**
     * Sorts the discussion comments by the date they were created. To return the oldest comments first, set to `asc`. Can be one of `asc` or `desc`.
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
-  var team_slug: String = js.native
+  var team_slug: String
 }
 object TeamsListDiscussionsInOrgEndpoint {
   

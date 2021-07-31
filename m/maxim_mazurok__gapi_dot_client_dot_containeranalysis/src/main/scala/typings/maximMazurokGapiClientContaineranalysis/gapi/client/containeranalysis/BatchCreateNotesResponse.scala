@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateNotesResponse extends StObject {
   
   /** The notes that were created. */
-  var notes: js.UndefOr[js.Array[Note]] = js.native
+  var notes: js.UndefOr[js.Array[Note]] = js.undefined
 }
 object BatchCreateNotesResponse {
   

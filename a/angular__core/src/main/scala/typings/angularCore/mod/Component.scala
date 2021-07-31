@@ -2,11 +2,11 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Component extends Directive {
+trait Component
+  extends StObject
+     with Directive {
   
   /**
     * One or more animation `trigger()` calls, containing
@@ -14,7 +14,7 @@ trait Component extends Directive {
     * See the [Animations guide](/guide/animations) and animations API documentation.
     *
     */
-  var animations: js.UndefOr[js.Array[_]] = js.native
+  var animations: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * The change-detection strategy to use for this component.
@@ -25,7 +25,7 @@ trait Component extends Directive {
     * - `ChangeDetectionStrategy#OnPush` sets the strategy to `CheckOnce` (on demand).
     * - `ChangeDetectionStrategy#Default` sets the strategy to `CheckAlways`.
     */
-  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.native
+  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   
   /**
     * An encapsulation policy for the template and CSS styles. One of:
@@ -41,7 +41,7 @@ trait Component extends Directive {
     * If the policy is set to `ViewEncapsulation.Emulated` and the component has no `styles`
     * or `styleUrls` specified, the policy is automatically switched to `ViewEncapsulation.None`.
     */
-  var encapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  var encapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
   /**
     * A set of components that should be compiled along with
@@ -50,12 +50,12 @@ trait Component extends Directive {
     * {@link ComponentFactoryResolver}.
     * @deprecated Since 9.0.0. With Ivy, this property is no longer necessary.
     */
-  var entryComponents: js.UndefOr[js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]] = js.native
+  var entryComponents: js.UndefOr[js.Array[Type[js.Any] | js.Array[js.Any]]] = js.undefined
   
   /**
     * Overrides the default encapsulation start and end delimiters (`{{` and `}}`)
     */
-  var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.native
+  var interpolation: js.UndefOr[js.Tuple2[String, String]] = js.undefined
   
   /**
     * The module ID of the module that contains the component.
@@ -64,7 +64,7 @@ trait Component extends Directive {
     * In CommonJS, this can  be set to `module.id`.
     *
     */
-  var moduleId: js.UndefOr[String] = js.native
+  var moduleId: js.UndefOr[String] = js.undefined
   
   /**
     * True to preserve or false to remove potentially superfluous whitespace characters
@@ -72,40 +72,40 @@ trait Component extends Directive {
     * character class in JavaScript regular expressions. Default is false, unless
     * overridden in compiler options.
     */
-  var preserveWhitespaces: js.UndefOr[Boolean] = js.native
+  var preserveWhitespaces: js.UndefOr[Boolean] = js.undefined
   
   /**
     * One or more relative paths or absolute URLs for files containing CSS stylesheets to use
     * in this component.
     */
-  var styleUrls: js.UndefOr[js.Array[String]] = js.native
+  var styleUrls: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * One or more inline CSS stylesheets to use
     * in this component.
     */
-  var styles: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An inline template for an Angular component. If provided,
     * do not supply a template file using `templateUrl`.
     *
     */
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
   /**
     * The relative path or absolute URL of a template file for an Angular component.
     * If provided, do not supply an inline template using `template`.
     *
     */
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the set of injectable objects that are visible to its view DOM children.
     * See [example](#injecting-a-class-with-a-view-provider).
     *
     */
-  var viewProviders: js.UndefOr[js.Array[Provider]] = js.native
+  var viewProviders: js.UndefOr[js.Array[Provider]] = js.undefined
 }
 object Component {
   
@@ -117,7 +117,7 @@ object Component {
   implicit class ComponentMutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAnimations(value: js.Array[_]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
+    def setAnimations(value: js.Array[js.Any]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAnimationsUndefined: Self = StObject.set(x, "animations", js.undefined)
@@ -138,13 +138,13 @@ object Component {
     def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
     
     @scala.inline
-    def setEntryComponents(value: js.Array[typings.angularCore.mod.Type[_] | js.Array[_]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
+    def setEntryComponents(value: js.Array[Type[js.Any] | js.Array[js.Any]]): Self = StObject.set(x, "entryComponents", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEntryComponentsUndefined: Self = StObject.set(x, "entryComponents", js.undefined)
     
     @scala.inline
-    def setEntryComponentsVarargs(value: (typings.angularCore.mod.Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
+    def setEntryComponentsVarargs(value: (Type[js.Any] | js.Array[js.Any])*): Self = StObject.set(x, "entryComponents", js.Array(value :_*))
     
     @scala.inline
     def setInterpolation(value: js.Tuple2[String, String]): Self = StObject.set(x, "interpolation", value.asInstanceOf[js.Any])

@@ -2,74 +2,74 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fridaGum.CpuContext because Already inherited */ @js.native
-trait Arm64CpuContext extends PortableCpuContext {
+- typings.fridaGum.CpuContext because Already inherited */ trait Arm64CpuContext
+  extends StObject
+     with PortableCpuContext {
   
-  var fp: NativePointer = js.native
+  var fp: NativePointer
   
-  var lr: NativePointer = js.native
+  var lr: NativePointer
   
-  var x0: NativePointer = js.native
+  var x0: NativePointer
   
-  var x1: NativePointer = js.native
+  var x1: NativePointer
   
-  var x10: NativePointer = js.native
+  var x10: NativePointer
   
-  var x11: NativePointer = js.native
+  var x11: NativePointer
   
-  var x12: NativePointer = js.native
+  var x12: NativePointer
   
-  var x13: NativePointer = js.native
+  var x13: NativePointer
   
-  var x14: NativePointer = js.native
+  var x14: NativePointer
   
-  var x15: NativePointer = js.native
+  var x15: NativePointer
   
-  var x16: NativePointer = js.native
+  var x16: NativePointer
   
-  var x17: NativePointer = js.native
+  var x17: NativePointer
   
-  var x18: NativePointer = js.native
+  var x18: NativePointer
   
-  var x19: NativePointer = js.native
+  var x19: NativePointer
   
-  var x2: NativePointer = js.native
+  var x2: NativePointer
   
-  var x20: NativePointer = js.native
+  var x20: NativePointer
   
-  var x21: NativePointer = js.native
+  var x21: NativePointer
   
-  var x22: NativePointer = js.native
+  var x22: NativePointer
   
-  var x23: NativePointer = js.native
+  var x23: NativePointer
   
-  var x24: NativePointer = js.native
+  var x24: NativePointer
   
-  var x25: NativePointer = js.native
+  var x25: NativePointer
   
-  var x26: NativePointer = js.native
+  var x26: NativePointer
   
-  var x27: NativePointer = js.native
+  var x27: NativePointer
   
-  var x28: NativePointer = js.native
+  var x28: NativePointer
   
-  var x3: NativePointer = js.native
+  var x3: NativePointer
   
-  var x4: NativePointer = js.native
+  var x4: NativePointer
   
-  var x5: NativePointer = js.native
+  var x5: NativePointer
   
-  var x6: NativePointer = js.native
+  var x6: NativePointer
   
-  var x7: NativePointer = js.native
+  var x7: NativePointer
   
-  var x8: NativePointer = js.native
+  var x8: NativePointer
   
-  var x9: NativePointer = js.native
+  var x9: NativePointer
 }
 object Arm64CpuContext {
   

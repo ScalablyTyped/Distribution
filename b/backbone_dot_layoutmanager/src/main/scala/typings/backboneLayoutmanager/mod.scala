@@ -8,7 +8,6 @@ import typings.backbone.mod.ViewOptions
 import typings.jquery.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -16,7 +15,7 @@ object mod {
   
   @JSImport("backbone", "Layout")
   @js.native
-  class Layout[TModel /* <: Model[_, ModelSetOptions, js.Object] */] () extends View[TModel] {
+  class Layout[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] () extends View[TModel] {
     def this(options: LayoutOptions[TModel]) = this()
     
     def afterRender(): Unit = js.native
@@ -34,8 +33,8 @@ object mod {
     def getView(): js.Any = js.native
     def getView(fn: js.Any): js.Any = js.native
     
-    def getViews(): js.Array[_] = js.native
-    def getViews(fn: js.Any): js.Array[_] = js.native
+    def getViews(): js.Array[js.Any] = js.native
+    def getViews(fn: js.Any): js.Array[js.Any] = js.native
     
     def insertView(selector: js.Any): js.Any = js.native
     def insertView(selector: js.Any, view: js.Any): js.Any = js.native
@@ -43,7 +42,7 @@ object mod {
     // return view;
     def insertViews(views: js.Any): Layout[TModel] = js.native
     
-    def promise(): JQueryPromise[_] = js.native
+    def promise(): JQueryPromise[js.Any] = js.native
     
     def removeView(fn: js.Any): Layout[TModel] = js.native
     
@@ -65,35 +64,32 @@ object mod {
   /* static members */
   object Layout {
     
-    @JSImport("backbone", "Layout.cache")
+    @JSImport("backbone", "Layout")
     @js.native
-    def cache(path: String): js.Any = js.native
-    @JSImport("backbone", "Layout.cache")
-    @js.native
-    def cache(path: String, contents: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("backbone", "Layout.cleanViews")
-    @js.native
-    def cleanViews(views: js.Any): Unit = js.native
+    @scala.inline
+    def cache(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def cache(path: String, contents: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cache")(path.asInstanceOf[js.Any], contents.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("backbone", "Layout.configure")
-    @js.native
-    def configure(options: LayoutManagerOptions): Unit = js.native
+    @scala.inline
+    def cleanViews(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanViews")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("backbone", "Layout.setupView")
-    @js.native
-    def setupView(views: js.Any): Unit = js.native
-    @JSImport("backbone", "Layout.setupView")
-    @js.native
-    def setupView(views: js.Any, options: LayoutOptions[Model[_, ModelSetOptions, js.Object]]): Unit = js.native
+    @scala.inline
+    def configure(options: LayoutManagerOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setupView(views: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setupView(views: js.Any, options: LayoutOptions[Model[js.Any, ModelSetOptions, js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupView")(views.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait LayoutManagerOptions extends StObject {
     
-    var el: js.UndefOr[Boolean] = js.native
+    var el: js.UndefOr[Boolean] = js.undefined
     
-    var manage: js.UndefOr[Boolean] = js.native
+    var manage: js.UndefOr[Boolean] = js.undefined
   }
   object LayoutManagerOptions {
     
@@ -120,23 +116,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait LayoutOptions[TModel /* <: Model[_, ModelSetOptions, js.Object] */] extends ViewOptions[TModel] {
+  trait LayoutOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */]
+    extends StObject
+       with ViewOptions[TModel] {
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var views: js.UndefOr[StringDictionary[View[TModel]]] = js.native
+    var views: js.UndefOr[StringDictionary[View[TModel]]] = js.undefined
   }
   object LayoutOptions {
     
     @scala.inline
-    def apply[TModel /* <: Model[_, ModelSetOptions, js.Object] */](): LayoutOptions[TModel] = {
+    def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): LayoutOptions[TModel] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[LayoutOptions[TModel]]
     }
     
     @scala.inline
-    implicit class LayoutOptionsMutableBuilder[Self <: LayoutOptions[_], TModel /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with LayoutOptions[TModel]) extends AnyVal {
+    implicit class LayoutOptionsMutableBuilder[Self <: LayoutOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & LayoutOptions[TModel]) extends AnyVal {
       
       @scala.inline
       def setTemplate(value: String): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])

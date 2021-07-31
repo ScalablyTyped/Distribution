@@ -2,23 +2,21 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTablePagination extends StObject {
   
   def changeRowsPerPage(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type any is not an array type */ args: js.Any
-  ): js.Any = js.native
+  ): js.Any
   
-  var count: Double = js.native
+  var count: Double
   
-  var options: MUIDataTableOptions = js.native
+  var options: MUIDataTableOptions
   
-  var page: Double = js.native
+  var page: Double
   
-  var rowsPerPage: Double = js.native
+  var rowsPerPage: Double
 }
 object MUIDataTablePagination {
   

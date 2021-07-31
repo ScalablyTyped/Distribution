@@ -2,17 +2,15 @@ package typings.amapJsApiPlaceSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cpid extends StObject {
   
-  var cpid: String = js.native
+  var cpid: String
   
-  var floor: String = js.native
+  var floor: String
   
-  var truefloor: String = js.native
+  var truefloor: String
 }
 object Cpid {
   

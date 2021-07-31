@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * An implementation of this service in general does not need to buffer data itself.
   * @see com.sun.star.io.ObjectInputStream
   */
-@js.native
 trait DataInputStream
-  extends XDataInputStream
+  extends StObject
+     with XDataInputStream
      with XActiveDataSink
      with XConnectable
 object DataInputStream {

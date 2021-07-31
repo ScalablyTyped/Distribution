@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionQueryRequest extends StObject {
   
   /**
@@ -17,8 +15,8 @@ trait PartitionQueryRequest extends StObject {
   var paramTypes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Parameter names and values that bind to placeholders in the SQL string. A parameter placeholder consists of the `@` character followed by the parameter name (for example,
@@ -28,11 +26,11 @@ trait PartitionQueryRequest extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Additional options that affect how many partitions are created. */
-  var partitionOptions: js.UndefOr[PartitionOptions] = js.native
+  var partitionOptions: js.UndefOr[PartitionOptions] = js.undefined
   
   /**
     * Required. The query request to generate partitions for. The request will fail if the query is not root partitionable. The query plan of a root partitionable query has a single
@@ -40,10 +38,10 @@ trait PartitionQueryRequest extends StObject {
     * then unions all results. This must not contain DML commands, such as INSERT, UPDATE, or DELETE. Use ExecuteStreamingSql with a PartitionedDml transaction for large,
     * partition-friendly DML operations.
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /** Read only snapshot transactions are supported, read/write and single use transactions are not. */
-  var transaction: js.UndefOr[TransactionSelector] = js.native
+  var transaction: js.UndefOr[TransactionSelector] = js.undefined
 }
 object PartitionQueryRequest {
   
@@ -60,7 +58,7 @@ object PartitionQueryRequest {
     def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -70,7 +68,7 @@ object PartitionQueryRequest {
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.PartitionQueryRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline

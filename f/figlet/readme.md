@@ -10,10 +10,10 @@ Creates ASCII Art from text. A full implementation of the FIGfont spec.
 | ------------------ | :-------------: |
 | Full name          | figlet |
 | Keywords           | figlet, ascii, art, banner, ansi |
-| # releases         | 8 |
-| # dependents       | 3057 |
-| # downloads        | 18920030 |
-| # stars            | 71 |
+| # releases         | 7 |
+| # dependents       | 3500 |
+| # downloads        | 25875083 |
+| # stars            | 72 |
 
 ## Links
 - [Homepage](https://github.com/patorjk/figlet.js#readme)

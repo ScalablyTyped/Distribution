@@ -2,31 +2,29 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecordLifecycleActionHeartbeatType extends StObject {
   
   /**
     * The name of the Auto Scaling group.
     */
-  var AutoScalingGroupName: ResourceName = js.native
+  var AutoScalingGroupName: ResourceName
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.native
+  var InstanceId: js.UndefOr[XmlStringMaxLen19] = js.undefined
   
   /**
     * A token that uniquely identifies a specific lifecycle action associated with an instance. Amazon EC2 Auto Scaling sends this token to the notification target that you specified when you created the lifecycle hook.
     */
-  var LifecycleActionToken: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleActionToken] = js.native
+  var LifecycleActionToken: js.UndefOr[typings.awsSdk.autoscalingMod.LifecycleActionToken] = js.undefined
   
   /**
     * The name of the lifecycle hook.
     */
-  var LifecycleHookName: AsciiStringMaxLen255 = js.native
+  var LifecycleHookName: AsciiStringMaxLen255
 }
 object RecordLifecycleActionHeartbeatType {
   

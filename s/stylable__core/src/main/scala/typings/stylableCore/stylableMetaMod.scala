@@ -20,7 +20,6 @@ import typings.stylableCore.stylableValueParsersMod.MappedStates
 import typings.stylableCore.stylableValueParsersMod.MixinValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableMetaMod {
@@ -83,20 +82,21 @@ object stylableMetaMod {
     var vars: js.Array[VarSymbol] = js.native
   }
   
-  @js.native
-  trait CSSVarSymbol extends StylableSymbol {
+  trait CSSVarSymbol
+    extends StObject
+       with StylableSymbol {
     
-    var _kind: cssVar = js.native
+    var _kind: cssVar
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object CSSVarSymbol {
     
     @scala.inline
-    def apply(_kind: cssVar, name: String): CSSVarSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(name: String): CSSVarSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "cssVar", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSSVarSymbol]
     }
     
@@ -117,24 +117,24 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait ClassSymbol
-    extends StylableDirectives
+    extends StObject
+       with StylableDirectives
        with StylableSymbol {
     
-    var _kind: `class` = js.native
+    var _kind: `class`
     
-    var alias: js.UndefOr[ImportSymbol] = js.native
+    var alias: js.UndefOr[ImportSymbol] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var scoped: js.UndefOr[String] = js.native
+    var scoped: js.UndefOr[String] = js.undefined
   }
   object ClassSymbol {
     
     @scala.inline
-    def apply(_kind: `class`, name: String): ClassSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(name: String): ClassSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "class", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ClassSymbol]
     }
     
@@ -161,22 +161,22 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait ElementSymbol
-    extends StylableDirectives
+    extends StObject
+       with StylableDirectives
        with StylableSymbol {
     
-    var _kind: element = js.native
+    var _kind: element
     
-    var alias: js.UndefOr[ImportSymbol] = js.native
+    var alias: js.UndefOr[ImportSymbol] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object ElementSymbol {
     
     @scala.inline
-    def apply(_kind: element, name: String): ElementSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(name: String): ElementSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "element", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[ElementSymbol]
     }
     
@@ -197,24 +197,25 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
-  trait ImportSymbol extends StylableSymbol {
+  trait ImportSymbol
+    extends StObject
+       with StylableSymbol {
     
-    var _kind: `import` = js.native
+    var _kind: `import`
     
-    var context: String = js.native
+    var context: String
     
-    var `import`: Imported = js.native
+    var `import`: Imported
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: named | default = js.native
+    var `type`: named | default
   }
   object ImportSymbol {
     
     @scala.inline
-    def apply(_kind: `import`, context: String, `import`: Imported, name: String, `type`: named | default): ImportSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(context: String, `import`: Imported, name: String, `type`: named | default): ImportSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "import", context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ImportSymbol]
@@ -240,22 +241,21 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait Imported extends StObject {
     
-    var context: String = js.native
+    var context: String
     
-    var defaultExport: String = js.native
+    var defaultExport: String
     
-    var from: String = js.native
+    var from: String
     
-    var fromRelative: String = js.native
+    var fromRelative: String
     
-    var keyframes: Record[String, String] = js.native
+    var keyframes: Record[String, String]
     
-    var named: Record[String, String] = js.native
+    var named: Record[String, String]
     
-    var rule: Rule_ = js.native
+    var rule: Rule_
   }
   object Imported {
     
@@ -299,22 +299,23 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
-  trait KeyframesSymbol extends StylableSymbol {
+  trait KeyframesSymbol
+    extends StObject
+       with StylableSymbol {
     
-    var _kind: keyframes = js.native
+    var _kind: keyframes
     
-    var alias: String = js.native
+    var alias: String
     
-    var `import`: js.UndefOr[Imported] = js.native
+    var `import`: js.UndefOr[Imported] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object KeyframesSymbol {
     
     @scala.inline
-    def apply(_kind: keyframes, alias: String, name: String): KeyframesSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(alias: String, name: String): KeyframesSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "keyframes", alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[KeyframesSymbol]
     }
     
@@ -338,12 +339,11 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait RefedMixin extends StObject {
     
-    var mixin: MixinValue = js.native
+    var mixin: MixinValue
     
-    var ref: ImportSymbol | ClassSymbol = js.native
+    var ref: ImportSymbol | ClassSymbol
   }
   object RefedMixin {
     
@@ -364,12 +364,11 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait SimpleSelector extends StObject {
     
-    var node: Rule_ | Root_ = js.native
+    var node: Rule_ | Root_
     
-    var symbol: ClassSymbol | ElementSymbol = js.native
+    var symbol: ClassSymbol | ElementSymbol
   }
   object SimpleSelector {
     
@@ -390,16 +389,15 @@ object stylableMetaMod {
     }
   }
   
-  @js.native
   trait StylableDirectives extends StObject {
     
-    var `-st-extends`: js.UndefOr[ImportSymbol | ClassSymbol | ElementSymbol] = js.native
+    var `-st-extends`: js.UndefOr[ImportSymbol | ClassSymbol | ElementSymbol] = js.undefined
     
-    var `-st-global`: js.UndefOr[js.Array[SelectorAstNode]] = js.native
+    var `-st-global`: js.UndefOr[js.Array[SelectorAstNode]] = js.undefined
     
-    var `-st-root`: js.UndefOr[Boolean] = js.native
+    var `-st-root`: js.UndefOr[Boolean] = js.undefined
     
-    var `-st-states`: js.UndefOr[MappedStates] = js.native
+    var `-st-states`: js.UndefOr[MappedStates] = js.undefined
   }
   object StylableDirectives {
     
@@ -453,64 +451,65 @@ object stylableMetaMod {
   object StylableSymbol {
     
     @scala.inline
-    def CSSVarSymbol(_kind: cssVar, name: String): typings.stylableCore.stylableMetaMod.CSSVarSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def CSSVarSymbol(name: String): typings.stylableCore.stylableMetaMod.CSSVarSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "cssVar", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.CSSVarSymbol]
     }
     
     @scala.inline
-    def ClassSymbol(_kind: `class`, name: String): typings.stylableCore.stylableMetaMod.ClassSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def ClassSymbol(name: String): typings.stylableCore.stylableMetaMod.ClassSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "class", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ClassSymbol]
     }
     
     @scala.inline
-    def ElementSymbol(_kind: element, name: String): typings.stylableCore.stylableMetaMod.ElementSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def ElementSymbol(name: String): typings.stylableCore.stylableMetaMod.ElementSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "element", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ElementSymbol]
     }
     
     @scala.inline
-    def ImportSymbol(_kind: `import`, context: String, `import`: Imported, name: String, `type`: named | default): typings.stylableCore.stylableMetaMod.ImportSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def ImportSymbol(context: String, `import`: Imported, name: String, `type`: named | default): typings.stylableCore.stylableMetaMod.ImportSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "import", context = context.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("import")(`import`.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.ImportSymbol]
     }
     
     @scala.inline
-    def KeyframesSymbol(_kind: keyframes, alias: String, name: String): typings.stylableCore.stylableMetaMod.KeyframesSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def KeyframesSymbol(alias: String, name: String): typings.stylableCore.stylableMetaMod.KeyframesSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "keyframes", alias = alias.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.KeyframesSymbol]
     }
     
     @scala.inline
-    def VarSymbol(_kind: `var`, name: String, node: Node, text: String, value: String): typings.stylableCore.stylableMetaMod.VarSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def VarSymbol(name: String, node: Node, text: String, value: String): typings.stylableCore.stylableMetaMod.VarSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "var", name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = null)
       __obj.asInstanceOf[typings.stylableCore.stylableMetaMod.VarSymbol]
     }
   }
   
-  @js.native
-  trait VarSymbol extends StylableSymbol {
+  trait VarSymbol
+    extends StObject
+       with StylableSymbol {
     
-    var _kind: `var` = js.native
+    var _kind: `var`
     
-    var name: String = js.native
+    var name: String
     
-    var node: Node = js.native
+    var node: Node
     
-    var text: String = js.native
+    var text: String
     
-    var value: String = js.native
+    var value: String
     
-    var valueType: String | Null = js.native
+    var valueType: String | Null
   }
   object VarSymbol {
     
     @scala.inline
-    def apply(_kind: `var`, name: String, node: Node, text: String, value: String): VarSymbol = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(name: String, node: Node, text: String, value: String): VarSymbol = {
+      val __obj = js.Dynamic.literal(_kind = "var", name = name.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], valueType = null)
       __obj.asInstanceOf[VarSymbol]
     }
     

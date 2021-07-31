@@ -9,27 +9,28 @@ import typings.storybookUi.sidebarTypesMod.Highlight
 import typings.storybookUi.sidebarTypesMod.Selection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useHighlightedMod {
   
-  @JSImport("@storybook/ui/dist/components/sidebar/useHighlighted", "useHighlighted")
+  @JSImport("@storybook/ui/dist/components/sidebar/useHighlighted", JSImport.Namespace)
   @js.native
-  def useHighlighted(hasContainerRefIsLoadingIsBrowsingDatasetSelected: HighlightedProps): js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useHighlighted(hasContainerRefIsLoadingIsBrowsingDatasetSelected: HighlightedProps): js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHighlighted")(hasContainerRefIsLoadingIsBrowsingDatasetSelected.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Highlight, Dispatch[SetStateAction[Highlight]], MutableRefObject[Highlight]]]
+  
   trait HighlightedProps extends StObject {
     
-    var containerRef: MutableRefObject[HTMLElement] = js.native
+    var containerRef: MutableRefObject[HTMLElement]
     
-    var dataset: CombinedDataset = js.native
+    var dataset: CombinedDataset
     
-    var isBrowsing: Boolean = js.native
+    var isBrowsing: Boolean
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
-    var selected: Selection = js.native
+    var selected: Selection
   }
   object HighlightedProps {
     
@@ -40,7 +41,7 @@ object useHighlightedMod {
       isBrowsing: Boolean,
       isLoading: Boolean
     ): HighlightedProps = {
-      val __obj = js.Dynamic.literal(containerRef = containerRef.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(containerRef = containerRef.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isLoading = isLoading.asInstanceOf[js.Any], selected = null)
       __obj.asInstanceOf[HighlightedProps]
     }
     

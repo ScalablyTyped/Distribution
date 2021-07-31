@@ -2,26 +2,24 @@ package typings.awsSdk.servicecatalogappregistryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationRequest extends StObject {
   
   /**
     * The name or ID of the application that will be updated.
     */
-  var application: ApplicationSpecifier = js.native
+  var application: ApplicationSpecifier
   
   /**
     * The new description of the application.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The new name of the application. The name must be unique in the region in which you are updating the application.
     */
-  var name: js.UndefOr[Name] = js.native
+  var name: js.UndefOr[Name] = js.undefined
 }
 object UpdateApplicationRequest {
   

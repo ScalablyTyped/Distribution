@@ -3,16 +3,14 @@ package typings.vsoNodeApi.workInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogFields extends StObject {
   
   /**
     * Field Type (e.g. Order, Activity) to Field Reference Name map
     */
-  var typeFields: StringDictionary[String] = js.native
+  var typeFields: StringDictionary[String]
 }
 object BacklogFields {
   

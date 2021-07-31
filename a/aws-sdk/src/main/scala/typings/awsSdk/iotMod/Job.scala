@@ -2,101 +2,99 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Job extends StObject {
   
   /**
     * Configuration for criteria to abort the job.
     */
-  var abortConfig: js.UndefOr[AbortConfig] = js.native
+  var abortConfig: js.UndefOr[AbortConfig] = js.undefined
   
   /**
     * If the job was updated, describes the reason for the update.
     */
-  var comment: js.UndefOr[Comment] = js.native
+  var comment: js.UndefOr[Comment] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job was completed.
     */
-  var completedAt: js.UndefOr[DateType] = js.native
+  var completedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.native
+  var createdAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * A short text description of the job.
     */
-  var description: js.UndefOr[JobDescription] = js.native
+  var description: js.UndefOr[JobDescription] = js.undefined
   
   /**
     * Will be true if the job was canceled with the optional force parameter set to true.
     */
-  var forceCanceled: js.UndefOr[Forced] = js.native
+  var forceCanceled: js.UndefOr[Forced] = js.undefined
   
   /**
     * An ARN identifying the job with format "arn:aws:iot:region:account:job/jobId".
     */
-  var jobArn: js.UndefOr[JobArn] = js.native
+  var jobArn: js.UndefOr[JobArn] = js.undefined
   
   /**
     * Allows you to create a staged rollout of a job.
     */
-  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.native
+  var jobExecutionsRolloutConfig: js.UndefOr[JobExecutionsRolloutConfig] = js.undefined
   
   /**
     * The unique identifier you assigned to this job when it was created.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * Details about the job process.
     */
-  var jobProcessDetails: js.UndefOr[JobProcessDetails] = js.native
+  var jobProcessDetails: js.UndefOr[JobProcessDetails] = js.undefined
   
   /**
     * The time, in seconds since the epoch, when the job was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * Configuration for pre-signed S3 URLs.
     */
-  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.native
+  var presignedUrlConfig: js.UndefOr[PresignedUrlConfig] = js.undefined
   
   /**
     * If the job was updated, provides the reason code for the update.
     */
-  var reasonCode: js.UndefOr[ReasonCode] = js.native
+  var reasonCode: js.UndefOr[ReasonCode] = js.undefined
   
   /**
     * The status of the job, one of IN_PROGRESS, CANCELED, DELETION_IN_PROGRESS or COMPLETED. 
     */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /**
     * Specifies whether the job will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the job (SNAPSHOT). If continuous, the job may also be run on a thing when a change is detected in a target. For example, a job will run on a device when the thing representing the device is added to a target group, even after the job was completed by all things originally in the group. 
     */
-  var targetSelection: js.UndefOr[TargetSelection] = js.native
+  var targetSelection: js.UndefOr[TargetSelection] = js.undefined
   
   /**
     * A list of IoT things and thing groups to which the job should be sent.
     */
-  var targets: js.UndefOr[JobTargets] = js.native
+  var targets: js.UndefOr[JobTargets] = js.undefined
   
   /**
     * Specifies the amount of time each device has to finish its execution of the job. A timer is started when the job execution status is set to IN_PROGRESS. If the job execution status is not set to another terminal state before the timer expires, it will be automatically set to TIMED_OUT.
     */
-  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.native
+  var timeoutConfig: js.UndefOr[TimeoutConfig] = js.undefined
 }
 object Job {
   

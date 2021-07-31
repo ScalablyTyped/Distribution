@@ -2,16 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SolutionBuilder[T /* <: BuilderProgram */] extends StObject {
   
   def build(): ExitStatus = js.native
-  def build(project: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): ExitStatus = js.native
   def build(project: java.lang.String): ExitStatus = js.native
   def build(project: java.lang.String, cancellationToken: CancellationToken): ExitStatus = js.native
+  def build(project: Unit, cancellationToken: CancellationToken): ExitStatus = js.native
   
   def buildReferences(project: java.lang.String): ExitStatus = js.native
   def buildReferences(project: java.lang.String, cancellationToken: CancellationToken): ExitStatus = js.native

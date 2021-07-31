@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateConfiguration extends StObject {
   
   /**
     * Indicates whether a TLS/SSL certificate was generated for a fleet.     
     */
-  var CertificateType: typings.awsSdk.gameliftMod.CertificateType = js.native
+  var CertificateType: typings.awsSdk.gameliftMod.CertificateType
 }
 object CertificateConfiguration {
   

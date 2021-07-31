@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementContentEditable extends StObject {
   
-  var contentEditable: java.lang.String = js.native
+  var contentEditable: java.lang.String
   
-  var enterKeyHint: java.lang.String = js.native
+  var enterKeyHint: java.lang.String
   
-  var inputMode: java.lang.String = js.native
+  var inputMode: java.lang.String
   
-  val isContentEditable: scala.Boolean = js.native
+  val isContentEditable: scala.Boolean
 }
 object ElementContentEditable {
   

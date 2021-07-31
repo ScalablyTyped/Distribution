@@ -16,10 +16,13 @@ import typings.tensorflowTfjsLayers.regularizersMod.Regularizer
 import typings.tensorflowTfjsLayers.variablesMod.LayerVariable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topologyMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "InputSpec")
   @js.native
@@ -111,112 +114,84 @@ object topologyMod {
       * @doc {heading: 'Models', 'subheading': 'Classes'}
       */
     /* protected */ def addWeight(name: String, shape: Shape): LayerVariable = js.native
+    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Unit, regularizer: Unit, trainable: Boolean): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
-      trainable: Boolean
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
+      dtype: Unit,
+      initializer: Unit,
+      regularizer: Unit,
       trainable: Boolean,
       constraint: Constraint
     ): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: Regularizer
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: Regularizer,
-      trainable: js.UndefOr[scala.Nothing],
+      dtype: Unit,
+      initializer: Unit,
+      regularizer: Unit,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
+    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Unit, regularizer: Regularizer): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
+      dtype: Unit,
+      initializer: Unit,
       regularizer: Regularizer,
       trainable: Boolean
     ): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: js.UndefOr[scala.Nothing],
+      dtype: Unit,
+      initializer: Unit,
       regularizer: Regularizer,
       trainable: Boolean,
       constraint: Constraint
     ): LayerVariable = js.native
-    /* protected */ def addWeight(name: String, shape: Shape, dtype: js.UndefOr[scala.Nothing], initializer: Initializer): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
+      dtype: Unit,
+      initializer: Unit,
+      regularizer: Regularizer,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
+    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Initializer): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
+      dtype: Unit,
       initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
+      regularizer: Unit,
       trainable: Boolean
     ): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
+      dtype: Unit,
       initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
+      regularizer: Unit,
       trainable: Boolean,
       constraint: Constraint
     ): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
+      dtype: Unit,
       initializer: Initializer,
-      regularizer: Regularizer
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
-      initializer: Initializer,
-      regularizer: Regularizer,
-      trainable: js.UndefOr[scala.Nothing],
+      regularizer: Unit,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
+    /* protected */ def addWeight(name: String, shape: Shape, dtype: Unit, initializer: Initializer, regularizer: Regularizer): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
+      dtype: Unit,
       initializer: Initializer,
       regularizer: Regularizer,
       trainable: Boolean
@@ -224,10 +199,19 @@ object topologyMod {
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
-      dtype: js.UndefOr[scala.Nothing],
+      dtype: Unit,
       initializer: Initializer,
       regularizer: Regularizer,
       trainable: Boolean,
+      constraint: Constraint
+    ): LayerVariable = js.native
+    /* protected */ def addWeight(
+      name: String,
+      shape: Shape,
+      dtype: Unit,
+      initializer: Initializer,
+      regularizer: Regularizer,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
     /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType): LayerVariable = js.native
@@ -235,25 +219,16 @@ object topologyMod {
       name: String,
       shape: Shape,
       dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
+      initializer: Unit,
+      regularizer: Unit,
       trainable: Boolean
     ): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
       dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: js.UndefOr[scala.Nothing],
+      initializer: Unit,
+      regularizer: Unit,
       trainable: Boolean,
       constraint: Constraint
     ): LayerVariable = js.native
@@ -261,23 +236,17 @@ object topologyMod {
       name: String,
       shape: Shape,
       dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: Regularizer
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
-      regularizer: Regularizer,
-      trainable: js.UndefOr[scala.Nothing],
+      initializer: Unit,
+      regularizer: Unit,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
+    /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Unit, regularizer: Regularizer): LayerVariable = js.native
     /* protected */ def addWeight(
       name: String,
       shape: Shape,
       dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
+      initializer: Unit,
       regularizer: Regularizer,
       trainable: Boolean
     ): LayerVariable = js.native
@@ -285,9 +254,18 @@ object topologyMod {
       name: String,
       shape: Shape,
       dtype: DataType,
-      initializer: js.UndefOr[scala.Nothing],
+      initializer: Unit,
       regularizer: Regularizer,
       trainable: Boolean,
+      constraint: Constraint
+    ): LayerVariable = js.native
+    /* protected */ def addWeight(
+      name: String,
+      shape: Shape,
+      dtype: DataType,
+      initializer: Unit,
+      regularizer: Regularizer,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
     /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer): LayerVariable = js.native
@@ -296,16 +274,7 @@ object topologyMod {
       shape: Shape,
       dtype: DataType,
       initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
+      regularizer: Unit,
       trainable: Boolean
     ): LayerVariable = js.native
     /* protected */ def addWeight(
@@ -313,8 +282,17 @@ object topologyMod {
       shape: Shape,
       dtype: DataType,
       initializer: Initializer,
-      regularizer: js.UndefOr[scala.Nothing],
+      regularizer: Unit,
       trainable: Boolean,
+      constraint: Constraint
+    ): LayerVariable = js.native
+    /* protected */ def addWeight(
+      name: String,
+      shape: Shape,
+      dtype: DataType,
+      initializer: Initializer,
+      regularizer: Unit,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
     /* protected */ def addWeight(name: String, shape: Shape, dtype: DataType, initializer: Initializer, regularizer: Regularizer): LayerVariable = js.native
@@ -324,15 +302,6 @@ object topologyMod {
       dtype: DataType,
       initializer: Initializer,
       regularizer: Regularizer,
-      trainable: js.UndefOr[scala.Nothing],
-      constraint: Constraint
-    ): LayerVariable = js.native
-    /* protected */ def addWeight(
-      name: String,
-      shape: Shape,
-      dtype: DataType,
-      initializer: Initializer,
-      regularizer: Regularizer,
       trainable: Boolean
     ): LayerVariable = js.native
     /* protected */ def addWeight(
@@ -342,6 +311,15 @@ object topologyMod {
       initializer: Initializer,
       regularizer: Regularizer,
       trainable: Boolean,
+      constraint: Constraint
+    ): LayerVariable = js.native
+    /* protected */ def addWeight(
+      name: String,
+      shape: Shape,
+      dtype: DataType,
+      initializer: Initializer,
+      regularizer: Regularizer,
+      trainable: Unit,
       constraint: Constraint
     ): LayerVariable = js.native
     
@@ -752,6 +730,10 @@ object topologyMod {
   /* static members */
   object Layer {
     
+    @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Layer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Converts a layer and its index to a unique (immutable type) name.
       * This function is used internally with `this.containerNodes`.
@@ -761,9 +743,8 @@ object topologyMod {
       *
       * @returns The unique name.
       */
-    @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Layer.nodeKey")
-    @js.native
-    def nodeKey(layer: Layer, nodeIndex: Double): String = js.native
+    @scala.inline
+    def nodeKey(layer: Layer, nodeIndex: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("nodeKey")(layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "Node")
@@ -862,7 +843,7 @@ object topologyMod {
       sourceLayer: Layer,
       inputs: js.Array[SymbolicTensor],
       callArgs: Kwargs,
-      name: js.UndefOr[scala.Nothing],
+      name: String,
       outputTensorIndex: Double
     ) = this()
     def this(
@@ -871,7 +852,7 @@ object topologyMod {
       sourceLayer: Layer,
       inputs: js.Array[SymbolicTensor],
       callArgs: Kwargs,
-      name: String,
+      name: Unit,
       outputTensorIndex: Double
     ) = this()
     
@@ -909,33 +890,28 @@ object topologyMod {
     var tensorIndex: Double = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "getSourceInputs")
-  @js.native
-  def getSourceInputs(tensor: SymbolicTensor): js.Array[SymbolicTensor] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "getSourceInputs")
-  @js.native
-  def getSourceInputs(tensor: SymbolicTensor, layer: js.UndefOr[scala.Nothing], nodeIndex: Double): js.Array[SymbolicTensor] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "getSourceInputs")
-  @js.native
-  def getSourceInputs(tensor: SymbolicTensor, layer: Layer): js.Array[SymbolicTensor] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/engine/topology", "getSourceInputs")
-  @js.native
-  def getSourceInputs(tensor: SymbolicTensor, layer: Layer, nodeIndex: Double): js.Array[SymbolicTensor] = js.native
+  @scala.inline
+  def getSourceInputs(tensor: SymbolicTensor): js.Array[SymbolicTensor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any]).asInstanceOf[js.Array[SymbolicTensor]]
+  @scala.inline
+  def getSourceInputs(tensor: SymbolicTensor, layer: Unit, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
+  @scala.inline
+  def getSourceInputs(tensor: SymbolicTensor, layer: Layer): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
+  @scala.inline
+  def getSourceInputs(tensor: SymbolicTensor, layer: Layer, nodeIndex: Double): js.Array[SymbolicTensor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourceInputs")(tensor.asInstanceOf[js.Any], layer.asInstanceOf[js.Any], nodeIndex.asInstanceOf[js.Any])).asInstanceOf[js.Array[SymbolicTensor]]
   
   type CallHook = js.Function2[/* inputs */ Tensor[Rank] | js.Array[Tensor[Rank]], /* kwargs */ Kwargs, Unit]
   
-  @js.native
   trait DisposeResult extends StObject {
     
     /**
       * Number of variables dispose in this dispose call.
       */
-    var numDisposedVariables: Double = js.native
+    var numDisposedVariables: Double
     
     /**
       * Reference count after the dispose call.
       */
-    var refCountAfterDispose: Double = js.native
+    var refCountAfterDispose: Double
   }
   object DisposeResult {
     
@@ -956,26 +932,25 @@ object topologyMod {
     }
   }
   
-  @js.native
   trait InputSpecArgs extends StObject {
     
     /** Dictionary mapping integer axes to a specific dimension value. */
-    var axes: js.UndefOr[NumberDictionary[Double]] = js.native
+    var axes: js.UndefOr[NumberDictionary[Double]] = js.undefined
     
     /** Expected datatype of the input. */
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** Maximum rank of the input. */
-    var maxNDim: js.UndefOr[Double] = js.native
+    var maxNDim: js.UndefOr[Double] = js.undefined
     
     /** Minimum rank of the input. */
-    var minNDim: js.UndefOr[Double] = js.native
+    var minNDim: js.UndefOr[Double] = js.undefined
     
     /** Expected rank of the input. */
-    var ndim: js.UndefOr[Double] = js.native
+    var ndim: js.UndefOr[Double] = js.undefined
     
     /** Expected shape of the input (may include null for unchecked axes). */
-    var shape: js.UndefOr[Shape] = js.native
+    var shape: js.UndefOr[Shape] = js.undefined
   }
   object InputSpecArgs {
     
@@ -1029,7 +1004,6 @@ object topologyMod {
     }
   }
   
-  @js.native
   trait LayerArgs extends StObject {
     
     /**
@@ -1038,24 +1012,24 @@ object topologyMod {
       * `batchInputShape` will be used. This argument is only applicable to input
       * layers (the first layer of a model).
       */
-    var batchInputShape: js.UndefOr[Shape] = js.native
+    var batchInputShape: js.UndefOr[Shape] = js.undefined
     
     /**
       * If `inputShape` is specified and `batchInputShape` is *not* specified,
       * `batchSize` is used to construct the `batchInputShape`: `[batchSize,
       * ...inputShape]`
       */
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The data-type for this layer. Defaults to 'float32'.
       * This argument is only applicable to input layers (the first layer of a
       * model).
       */
-    var dtype: js.UndefOr[DataType] = js.native
+    var dtype: js.UndefOr[DataType] = js.undefined
     
     /** Legacy support. Do not use for new code. */
-    var inputDType: js.UndefOr[DataType] = js.native
+    var inputDType: js.UndefOr[DataType] = js.undefined
     
     /**
       * If defined, will be used to create an input layer to insert before this
@@ -1063,21 +1037,21 @@ object topologyMod {
       * `batchInputShape` will be used. This argument is only applicable to input
       * layers (the first layer of a model).
       */
-    var inputShape: js.UndefOr[Shape] = js.native
+    var inputShape: js.UndefOr[Shape] = js.undefined
     
     /** Name for this layer. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the weights of this layer are updatable by `fit`.
       * Defaults to true.
       */
-    var trainable: js.UndefOr[Boolean] = js.native
+    var trainable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial weight values of the layer.
       */
-    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.native
+    var weights: js.UndefOr[js.Array[Tensor[Rank]]] = js.undefined
   }
   object LayerArgs {
     
@@ -1149,23 +1123,22 @@ object topologyMod {
     }
   }
   
-  @js.native
   trait NodeArgs extends StObject {
     
     /**
       * A list of layers, the same length as `inputTensors`, the layers from where
       * `inputTensors` originate.
       */
-    var inboundLayers: js.Array[Layer] = js.native
+    var inboundLayers: js.Array[Layer]
     
     /** List of input masks (a mask can be a tensor, or null). */
-    var inputMasks: js.Array[Tensor[Rank]] = js.native
+    var inputMasks: js.Array[Tensor[Rank]]
     
     /** List of input shape tuples. */
-    var inputShapes: Shape | js.Array[Shape] = js.native
+    var inputShapes: Shape | js.Array[Shape]
     
     /** List of input tensors. */
-    var inputTensors: js.Array[SymbolicTensor] = js.native
+    var inputTensors: js.Array[SymbolicTensor]
     
     /**
       * A list of integers, the same length as `inboundLayers`. `nodeIndices[i]` is
@@ -1173,22 +1146,22 @@ object topologyMod {
       * might have several nodes, e.g. if the layer is being shared with a
       * different data stream).
       */
-    var nodeIndices: js.Array[Double] = js.native
+    var nodeIndices: js.Array[Double]
     
     /**
       * The layer that takes `inputTensors` and turns them into `outputTensors`.
       * (the node gets created when the `call` method of the layer is called).
       */
-    var outboundLayer: Layer = js.native
+    var outboundLayer: Layer
     
     /** List of output masks (a mask can be a tensor, or null). */
-    var outputMasks: js.Array[Tensor[Rank]] = js.native
+    var outputMasks: js.Array[Tensor[Rank]]
     
     /** List of output shape tuples. */
-    var outputShapes: Shape | js.Array[Shape] = js.native
+    var outputShapes: Shape | js.Array[Shape]
     
     /** List of output tensors. */
-    var outputTensors: js.Array[SymbolicTensor] = js.native
+    var outputTensors: js.Array[SymbolicTensor]
     
     /**
       * A list of integers, the same length as `inboundLayers`. `tensorIndices[i]`
@@ -1196,7 +1169,7 @@ object topologyMod {
       * (necessary since each inbound layer might have multiple tensor outputs,
       * with each one being independently manipulable).
       */
-    var tensorIndices: js.Array[Double] = js.native
+    var tensorIndices: js.Array[Double]
   }
   object NodeArgs {
     

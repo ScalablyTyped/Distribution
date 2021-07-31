@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputLossBehavior extends StObject {
   
   /**
     * Documentation update needed
     */
-  var BlackFrameMsec: js.UndefOr[integerMin0Max1000000] = js.native
+  var BlackFrameMsec: js.UndefOr[integerMin0Max1000000] = js.undefined
   
   /**
     * When input loss image type is "color" this field specifies the color to use. Value: 6 hex characters representing the values of RGB.
     */
-  var InputLossImageColor: js.UndefOr[stringMin6Max6] = js.native
+  var InputLossImageColor: js.UndefOr[stringMin6Max6] = js.undefined
   
   /**
     * When input loss image type is "slate" these fields specify the parameters for accessing the slate.
     */
-  var InputLossImageSlate: js.UndefOr[InputLocation] = js.native
+  var InputLossImageSlate: js.UndefOr[InputLocation] = js.undefined
   
   /**
     * Indicates whether to substitute a solid color or a slate into the output after input loss exceeds blackFrameMsec.
     */
-  var InputLossImageType: js.UndefOr[typings.awsSdk.medialiveMod.InputLossImageType] = js.native
+  var InputLossImageType: js.UndefOr[typings.awsSdk.medialiveMod.InputLossImageType] = js.undefined
   
   /**
     * Documentation update needed
     */
-  var RepeatFrameMsec: js.UndefOr[integerMin0Max1000000] = js.native
+  var RepeatFrameMsec: js.UndefOr[integerMin0Max1000000] = js.undefined
 }
 object InputLossBehavior {
   

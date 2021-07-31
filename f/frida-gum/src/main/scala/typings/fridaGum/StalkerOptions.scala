@@ -3,7 +3,6 @@ package typings.fridaGum
 import typings.fridaGum.anon.Block
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,19 +14,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * don't need; i.e. avoid putting your logic in `onCallSummary` and leaving
   * `onReceive` in there as an empty callback.
   */
-@js.native
 trait StalkerOptions extends StObject {
   
   /**
     * User data to be passed to `StalkerNativeEventCallback` and `StalkerNativeTransformCallback`.
     */
-  var data: js.UndefOr[NativePointerValue] = js.native
+  var data: js.UndefOr[NativePointerValue] = js.undefined
   
   /**
     * Which events, if any, should be generated and periodically delivered to
     * `onReceive()` and/or `onCallSummary()`.
     */
-  var events: js.UndefOr[Block] = js.native
+  var events: js.UndefOr[Block] = js.undefined
   
   /**
     * Callback that periodically receives a summary of `call` events that
@@ -41,7 +39,7 @@ trait StalkerOptions extends StObject {
     * @param summary Key-value mapping of call target to number of calls, in
     *                the current time window.
     */
-  var onCallSummary: js.UndefOr[js.Function1[/* summary */ StalkerCallSummary, Unit]] = js.native
+  var onCallSummary: js.UndefOr[js.Function1[/* summary */ StalkerCallSummary, Unit]] = js.undefined
   
   /**
     * C callback that processes events as they occur, allowing synchronous
@@ -54,7 +52,7 @@ trait StalkerOptions extends StObject {
     *
     * Note that this precludes usage of `onReceive()` and `onCallSummary()`.
     */
-  var onEvent: js.UndefOr[StalkerNativeEventCallback] = js.native
+  var onEvent: js.UndefOr[StalkerNativeEventCallback] = js.undefined
   
   /**
     * Callback that periodically receives batches of events.
@@ -63,14 +61,14 @@ trait StalkerOptions extends StObject {
     *               See `gumevent.h` for details about the format.
     *               Use `Stalker.parse()` to examine the data.
     */
-  var onReceive: js.UndefOr[js.Function1[/* events */ ArrayBuffer, Unit]] = js.native
+  var onReceive: js.UndefOr[js.Function1[/* events */ ArrayBuffer, Unit]] = js.undefined
   
   /**
     * Callback that transforms each basic block compiled whenever Stalker
     * wants to recompile a basic block of the code that's about to be executed
     * by the stalked thread.
     */
-  var transform: js.UndefOr[StalkerTransformCallback] = js.native
+  var transform: js.UndefOr[StalkerTransformCallback] = js.undefined
 }
 object StalkerOptions {
   

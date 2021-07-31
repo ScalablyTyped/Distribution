@@ -14,10 +14,13 @@ import typings.node.vmMod.Context
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object replMod {
+  
+  @JSImport("repl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Provides a customizable Read-Eval-Print-Loop (REPL).
@@ -269,10 +272,18 @@ object replMod {
     */
   @JSImport("repl", "Recoverable")
   @js.native
-  class Recoverable protected () extends Error {
+  class Recoverable protected ()
+    extends StObject
+       with Error {
     def this(err: Error) = this()
     
     var err: Error = js.native
+    
+    /* CompleteClass */
+    var message: java.lang.String = js.native
+    
+    /* CompleteClass */
+    var name: java.lang.String = js.native
   }
   
   /**
@@ -281,15 +292,12 @@ object replMod {
     * @param options The options for the `REPLServer`. If `options` is a string, then it specifies
     * the input prompt.
     */
-  @JSImport("repl", "start")
-  @js.native
-  def start(): REPLServer = js.native
-  @JSImport("repl", "start")
-  @js.native
-  def start(options: java.lang.String): REPLServer = js.native
-  @JSImport("repl", "start")
-  @js.native
-  def start(options: ReplOptions): REPLServer = js.native
+  @scala.inline
+  def start(): REPLServer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[REPLServer]
+  @scala.inline
+  def start(options: java.lang.String): REPLServer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[REPLServer]
+  @scala.inline
+  def start(options: ReplOptions): REPLServer = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(options.asInstanceOf[js.Any]).asInstanceOf[REPLServer]
   
   /**
     * This is the default "writer" value, if none is passed in the REPL options,
@@ -297,25 +305,45 @@ object replMod {
     */
   @JSImport("repl", "writer")
   @js.native
-  val writer: REPLWriter with Options = js.native
+  val writer: REPLWriter & Options = js.native
   
-  @js.native
   trait REPLCommand extends StObject {
     
     /**
       * The function to execute, optionally accepting a single string argument.
       */
-    def action(text: java.lang.String): Unit = js.native
+    def action(text: java.lang.String): Unit
     /**
       * The function to execute, optionally accepting a single string argument.
       */
     @JSName("action")
-    var action_Original: REPLCommandAction = js.native
+    var action_Original: REPLCommandAction
     
     /**
       * Help text to be displayed when `.help` is entered.
       */
-    var help: js.UndefOr[java.lang.String] = js.native
+    var help: js.UndefOr[java.lang.String] = js.undefined
+  }
+  object REPLCommand {
+    
+    @scala.inline
+    def apply(action: REPLCommandAction): REPLCommand = {
+      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+      __obj.asInstanceOf[REPLCommand]
+    }
+    
+    @scala.inline
+    implicit class REPLCommandMutableBuilder[Self <: REPLCommand] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAction(value: REPLCommandAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHelp(value: java.lang.String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHelpUndefined: Self = StObject.set(x, "help", js.undefined)
+    }
   }
   
   type REPLCommandAction = js.ThisFunction1[/* this */ REPLServer, /* text */ java.lang.String, Unit]
@@ -331,7 +359,6 @@ object replMod {
   
   type REPLWriter = js.ThisFunction1[/* this */ REPLServer, /* obj */ js.Any, java.lang.String]
   
-  @js.native
   trait ReplOptions extends StObject {
     
     /**
@@ -339,14 +366,14 @@ object replMod {
       * pressed. This cannot be used together with a custom `eval` function.
       * Default: `false`.
       */
-    var breakEvalOnSigint: js.UndefOr[Boolean] = js.native
+    var breakEvalOnSigint: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional function used for custom Tab auto completion.
       *
       * @see https://nodejs.org/dist/latest-v11.x/docs/api/readline.html#readline_use_of_the_completer_function
       */
-    var completer: js.UndefOr[Completer | AsyncCompleter] = js.native
+    var completer: js.UndefOr[Completer | AsyncCompleter] = js.undefined
     
     /**
       * The function to be used when evaluating each given line of input.
@@ -357,38 +384,38 @@ object replMod {
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_default_evaluation
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_custom_evaluation_functions
       */
-    var eval: js.UndefOr[REPLEval] = js.native
+    var eval: js.UndefOr[REPLEval] = js.undefined
     
     /**
       * If `true`, specifies that the default writer will not output the return value of a
       * command if it evaluates to `undefined`.
       * Default: `false`.
       */
-    var ignoreUndefined: js.UndefOr[Boolean] = js.native
+    var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The `Readable` stream from which REPL input will be read.
       * Default: `process.stdin`
       */
-    var input: js.UndefOr[ReadableStream] = js.native
+    var input: js.UndefOr[ReadableStream] = js.undefined
     
     /**
       * The `Writable` stream to which REPL output will be written.
       * Default: `process.stdout`
       */
-    var output: js.UndefOr[WritableStream] = js.native
+    var output: js.UndefOr[WritableStream] = js.undefined
     
     /**
       * Defines if the repl prints output previews or not.
       * @default `true` Always `false` in case `terminal` is falsy.
       */
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The input prompt to display.
       * Default: `"> "`
       */
-    var prompt: js.UndefOr[java.lang.String] = js.native
+    var prompt: js.UndefOr[java.lang.String] = js.undefined
     
     /**
       * A flag that specifies whether the default evaluator executes all JavaScript commands in
@@ -398,7 +425,7 @@ object replMod {
       * - `repl.REPL_MODE_STRICT` - evaluates expressions in strict mode. This is equivalent to
       *   prefacing every repl statement with `'use strict'`.
       */
-    var replMode: js.UndefOr[js.Symbol] = js.native
+    var replMode: js.UndefOr[js.Symbol] = js.undefined
     
     /**
       * If `true`, specifies that the output should be treated as a TTY terminal, and have
@@ -406,7 +433,7 @@ object replMod {
       * Default: checking the value of the `isTTY` property on the output stream upon
       * instantiation.
       */
-    var terminal: js.UndefOr[Boolean] = js.native
+    var terminal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, specifies that the default `writer` function should include ANSI color
@@ -414,7 +441,7 @@ object replMod {
       * effect.
       * Default: the REPL instance's `terminal` value.
       */
-    var useColors: js.UndefOr[Boolean] = js.native
+    var useColors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If `true`, specifies that the default evaluation function will use the JavaScript
@@ -422,7 +449,7 @@ object replMod {
       * instance. The node CLI REPL sets this value to `true`.
       * Default: `false`.
       */
-    var useGlobal: js.UndefOr[Boolean] = js.native
+    var useGlobal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The function to invoke to format the output of each command before writing to `output`.
@@ -430,7 +457,7 @@ object replMod {
       *
       * @see https://nodejs.org/dist/latest-v10.x/docs/api/repl.html#repl_customizing_repl_output
       */
-    var writer: js.UndefOr[REPLWriter] = js.native
+    var writer: js.UndefOr[REPLWriter] = js.undefined
   }
   object ReplOptions {
     

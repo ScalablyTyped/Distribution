@@ -2,13 +2,11 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration parameters of autoscaling based on queuing system.
   */
-@js.native
 trait SchemaAutoscalingPolicyQueueBasedScaling extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaAutoscalingPolicyQueueBasedScaling extends StObject {
     * The autoscaler will also take into account incoming tasks when
     * calculating when to scale.
     */
-  var acceptableBacklogPerInstance: js.UndefOr[Double] = js.native
+  var acceptableBacklogPerInstance: js.UndefOr[Double] = js.undefined
   
   /**
     * Configuration for Cloud Pub/Sub subscription queue.
     */
-  var cloudPubSub: js.UndefOr[SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub] = js.native
+  var cloudPubSub: js.UndefOr[SchemaAutoscalingPolicyQueueBasedScalingCloudPubSub] = js.undefined
   
   /**
     * The scaling algorithm will also calculate throughput estimates on its
@@ -31,7 +29,7 @@ trait SchemaAutoscalingPolicyQueueBasedScaling extends StObject {
     * account your value as well as automatic estimates when deciding how to
     * scale.
     */
-  var singleWorkerThroughputPerSec: js.UndefOr[Double] = js.native
+  var singleWorkerThroughputPerSec: js.UndefOr[Double] = js.undefined
 }
 object SchemaAutoscalingPolicyQueueBasedScaling {
   

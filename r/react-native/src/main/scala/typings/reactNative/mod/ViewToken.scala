@@ -2,27 +2,25 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewToken extends StObject {
   
-  var index: Double | Null = js.native
+  var index: Double | Null
   
-  var isViewable: Boolean = js.native
+  var isViewable: Boolean
   
-  var item: js.Any = js.native
+  var item: js.Any
   
-  var key: String = js.native
+  var key: String
   
-  var section: js.UndefOr[js.Any] = js.native
+  var section: js.UndefOr[js.Any] = js.undefined
 }
 object ViewToken {
   
   @scala.inline
   def apply(isViewable: Boolean, item: js.Any, key: String): ViewToken = {
-    val __obj = js.Dynamic.literal(isViewable = isViewable.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isViewable = isViewable.asInstanceOf[js.Any], item = item.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], index = null)
     __obj.asInstanceOf[ViewToken]
   }
   

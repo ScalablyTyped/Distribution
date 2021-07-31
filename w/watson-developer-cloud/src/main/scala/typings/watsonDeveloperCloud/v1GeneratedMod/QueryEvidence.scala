@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Description of evidence location supporting Knoweldge Graph query result. */
-@js.native
 trait QueryEvidence extends StObject {
   
   /** The docuemnt ID (as indexed in Discovery) of the evidence location. */
-  var document_id: js.UndefOr[String] = js.native
+  var document_id: js.UndefOr[String] = js.undefined
   
   /** The end location of the evidence in the identified field. This value is inclusive. */
-  var end_offset: js.UndefOr[Double] = js.native
+  var end_offset: js.UndefOr[Double] = js.undefined
   
   /** An array of entity objects that show evidence of the result. */
-  var entities: js.UndefOr[js.Array[QueryEvidenceEntity]] = js.native
+  var entities: js.UndefOr[js.Array[QueryEvidenceEntity]] = js.undefined
   
   /** The field of the document where the supporting evidence was identified. */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** The start location of the evidence in the identified field. This value is inclusive. */
-  var start_offset: js.UndefOr[Double] = js.native
+  var start_offset: js.UndefOr[Double] = js.undefined
 }
 object QueryEvidence {
   

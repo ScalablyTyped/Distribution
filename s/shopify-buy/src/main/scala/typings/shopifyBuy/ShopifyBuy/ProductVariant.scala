@@ -2,79 +2,79 @@ package typings.shopifyBuy.ShopifyBuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProductVariant extends GraphModel {
+trait ProductVariant
+  extends StObject
+     with GraphModel {
   
   /**
     * Variant in stock. Always true if inventory tracking is disabled.
     */
-  var available: Boolean = js.native
+  var available: Boolean
   
   /*
     * Get a checkout url for a specific product variant.
     * You can optionally pass a quantity.
     * If no quantity is passed then quantity will default to 1.
     */
-  def checkoutUrl(quantitiy: Double): String = js.native
+  def checkoutUrl(quantitiy: Double): String
   
   /**
     * Compare at price for variant. The compareAtPrice would be the price of the
     * product previously before the product went on sale.
     */
-  var compareAtPrice: String = js.native
+  var compareAtPrice: String
   
   /**
     * Price of variant, formatted according to shop currency format string. For instance "$10.00"
     */
-  var formattedPrice: String = js.native
+  var formattedPrice: String
   
   /**
     * Variant weight in grams. If no weight is defined grams will be 0.
     */
-  var grams: Double = js.native
+  var grams: Double
   
   /**
     * Variant unique ID
     */
-  var id: String | Double = js.native
+  var id: String | Double
   
   /**
     * Image for variant
     */
-  var image: Image = js.native
+  var image: Image
   
   /**
     * Image variants available for a variant.
     */
-  var imageVariant: js.Array[ImageVariant] = js.native
+  var imageVariant: js.Array[ImageVariant]
   
   /**
     * Option values associated with this variant, ex {name: "color", value: "Blue"}
     */
-  var optionValues: js.Array[OptionValue] = js.native
+  var optionValues: js.Array[OptionValue]
   
   /**
     * Price of the variant. The price will be in the following form: "10.00"
     */
-  var price: String = js.native
+  var price: String
   
   /**
     * ID of product variant belongs to
     */
-  var productId: String | Double = js.native
+  var productId: String | Double
   
   /**
     * Title of product variant belongs to
     */
-  var productTitle: String = js.native
+  var productTitle: String
   
   /**
     * Title of variant
     */
-  var title: String = js.native
+  var title: String
 }
 object ProductVariant {
   

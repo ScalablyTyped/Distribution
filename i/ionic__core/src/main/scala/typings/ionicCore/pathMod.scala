@@ -6,36 +6,32 @@ import typings.std.History
 import typings.std.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pathMod {
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "chainToPath")
+  @JSImport("@ionic/core/dist/types/components/router/utils/path", JSImport.Namespace)
   @js.native
-  def chainToPath(chain: RouteChain): js.Array[String] | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "generatePath")
-  @js.native
-  def generatePath(segments: js.Array[String]): String = js.native
+  @scala.inline
+  def chainToPath(chain: RouteChain): js.Array[String] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("chainToPath")(chain.asInstanceOf[js.Any]).asInstanceOf[js.Array[String] | Null]
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "parsePath")
-  @js.native
-  def parsePath(): js.Array[String] = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "parsePath")
-  @js.native
-  def parsePath(path: String): js.Array[String] = js.native
+  @scala.inline
+  def generatePath(segments: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generatePath")(segments.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "readPath")
-  @js.native
-  def readPath(loc: Location, root: String, useHash: Boolean): js.Array[String] | Null = js.native
+  @scala.inline
+  def parsePath(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def parsePath(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parsePath")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "removePrefix")
-  @js.native
-  def removePrefix(prefix: js.Array[String], path: js.Array[String]): js.Array[String] | Null = js.native
+  @scala.inline
+  def readPath(loc: Location, root: String, useHash: Boolean): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("readPath")(loc.asInstanceOf[js.Any], root.asInstanceOf[js.Any], useHash.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
   
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "writePath")
-  @js.native
+  @scala.inline
+  def removePrefix(prefix: js.Array[String], path: js.Array[String]): js.Array[String] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("removePrefix")(prefix.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Array[String] | Null]
+  
+  @scala.inline
   def writePath(
     history: History,
     root: String,
@@ -43,9 +39,8 @@ object pathMod {
     path: js.Array[String],
     direction: RouterDirection,
     state: Double
-  ): Unit = js.native
-  @JSImport("@ionic/core/dist/types/components/router/utils/path", "writePath")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePath")(history.asInstanceOf[js.Any], root.asInstanceOf[js.Any], useHash.asInstanceOf[js.Any], path.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def writePath(
     history: History,
     root: String,
@@ -54,5 +49,5 @@ object pathMod {
     direction: RouterDirection,
     state: Double,
     queryString: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePath")(history.asInstanceOf[js.Any], root.asInstanceOf[js.Any], useHash.asInstanceOf[js.Any], path.asInstanceOf[js.Any], direction.asInstanceOf[js.Any], state.asInstanceOf[js.Any], queryString.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

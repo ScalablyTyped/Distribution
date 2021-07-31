@@ -5,26 +5,26 @@ import typings.vscodeLanguageserverTypes.mod.Range
 import typings.vscodeLanguageserverTypes.mod.TextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DocumentRangeFormattingParams extends WorkDoneProgressParams {
+trait DocumentRangeFormattingParams
+  extends StObject
+     with WorkDoneProgressParams {
   
   /**
     * The format options
     */
-  var options: FormattingOptions = js.native
+  var options: FormattingOptions
   
   /**
     * The range to format
     */
-  var range: Range = js.native
+  var range: Range
   
   /**
     * The document to format.
     */
-  var textDocument: TextDocumentIdentifier = js.native
+  var textDocument: TextDocumentIdentifier
 }
 object DocumentRangeFormattingParams {
   

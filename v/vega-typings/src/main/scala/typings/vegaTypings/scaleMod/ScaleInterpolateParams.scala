@@ -6,15 +6,15 @@ import typings.vegaTypings.vegaTypingsStrings.cubehelix
 import typings.vegaTypings.vegaTypingsStrings.rgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScaleInterpolateParams extends ScaleInterpolate {
+trait ScaleInterpolateParams
+  extends StObject
+     with ScaleInterpolate {
   
-  var gamma: js.UndefOr[Double | SignalRef] = js.native
+  var gamma: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var `type`: rgb | cubehelix | `cubehelix-long` | SignalRef = js.native
+  var `type`: rgb | cubehelix | `cubehelix-long` | SignalRef
 }
 object ScaleInterpolateParams {
   

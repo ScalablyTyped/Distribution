@@ -8,27 +8,27 @@ import typings.osrsJsonApi.anon.Hunter
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object ge {
     
-    @JSImport("osrs-json-api", "ge.getGraph")
+    @JSImport("osrs-json-api", "ge")
     @js.native
-    def getGraph(id: Double): js.Promise[Graph] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("osrs-json-api", "ge.getItem")
-    @js.native
-    def getItem(id: Double): js.Promise[Item] = js.native
+    @scala.inline
+    def getGraph(id: Double): js.Promise[Graph] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGraph")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Graph]]
     
-    @js.native
+    @scala.inline
+    def getItem(id: Double): js.Promise[Item] = ^.asInstanceOf[js.Dynamic].applyDynamic("getItem")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Item]]
+    
     trait Graph extends StObject {
       
-      var average: TimestampPriceRecord = js.native
+      var average: TimestampPriceRecord
       
-      var daily: TimestampPriceRecord = js.native
+      var daily: TimestampPriceRecord
     }
     object Graph {
       
@@ -49,10 +49,9 @@ object mod {
       }
     }
     
-    @js.native
     trait Item extends StObject {
       
-      var item: Current = js.native
+      var item: Current
     }
     object Item {
       
@@ -72,12 +71,11 @@ object mod {
     
     type TimestampPriceRecord = Record[String, Double]
     
-    @js.native
     trait TrendPriceObject extends StObject {
       
-      var price: Double = js.native
+      var price: Double
       
-      var trend: String = js.native
+      var trend: String
     }
     object TrendPriceObject {
       
@@ -101,12 +99,14 @@ object mod {
   
   object hiscores {
     
-    @JSImport("osrs-json-api", "hiscores.getPlayer")
+    @JSImport("osrs-json-api", "hiscores")
     @js.native
-    def getPlayer(rsn: String): js.Promise[Player] = js.native
-    @JSImport("osrs-json-api", "hiscores.getPlayer")
-    @js.native
-    def getPlayer(rsn: String, gamemode: Gamemodes): js.Promise[Player] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getPlayer(rsn: String): js.Promise[Player] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlayer")(rsn.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Player]]
+    @scala.inline
+    def getPlayer(rsn: String, gamemode: Gamemodes): js.Promise[Player] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPlayer")(rsn.asInstanceOf[js.Any], gamemode.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Player]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.osrsJsonApi.osrsJsonApiStrings.main
@@ -142,18 +142,17 @@ object mod {
       def uim: typings.osrsJsonApi.osrsJsonApiStrings.uim = "uim".asInstanceOf[typings.osrsJsonApi.osrsJsonApiStrings.uim]
     }
     
-    @js.native
     trait Player extends StObject {
       
-      var bh: Hunter = js.native
+      var bh: Hunter
       
-      var bosses: AbyssalSire = js.native
+      var bosses: AbyssalSire
       
-      var clues: All = js.native
+      var clues: All
       
-      var lms: RankScoreObject = js.native
+      var lms: RankScoreObject
       
-      var skills: Agility = js.native
+      var skills: Agility
     }
     object Player {
       
@@ -183,14 +182,13 @@ object mod {
       }
     }
     
-    @js.native
     trait RankLevelXpObject extends StObject {
       
-      var level: Double = js.native
+      var level: Double
       
-      var rank: String = js.native
+      var rank: String
       
-      var xp: Double = js.native
+      var xp: Double
     }
     object RankLevelXpObject {
       
@@ -214,12 +212,11 @@ object mod {
       }
     }
     
-    @js.native
     trait RankScoreObject extends StObject {
       
-      var rank: Double = js.native
+      var rank: Double
       
-      var score: Double = js.native
+      var score: Double
     }
     object RankScoreObject {
       

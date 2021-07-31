@@ -2,25 +2,24 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HexLiteral
-  extends AssemblyItem
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with AssemblyItem {
   
   @JSName("type")
-  var type_HexLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral = js.native
+  var type_HexLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral
   
-  var value: String = js.native
+  var value: String
 }
 object HexLiteral {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.HexLiteral, value: String): HexLiteral = {
+  def apply(value: String): HexLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("HexLiteral")
     __obj.asInstanceOf[HexLiteral]
   }
   

@@ -2,32 +2,30 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides contains information about a MIME type associated with a particular plugin. NavigatorPlugins.mimeTypes returns an array of this object. */
-@js.native
 trait MimeType extends StObject {
   
   /**
     * Returns the MIME type's description.
     */
-  val description: java.lang.String = js.native
+  val description: java.lang.String
   
   /**
     * Returns the Plugin object that implements this MIME type.
     */
-  val enabledPlugin: Plugin = js.native
+  val enabledPlugin: Plugin
   
   /**
     * Returns the MIME type's typical file extensions, in a comma-separated list.
     */
-  val suffixes: java.lang.String = js.native
+  val suffixes: java.lang.String
   
   /**
     * Returns the MIME type.
     */
-  val `type`: java.lang.String = js.native
+  val `type`: java.lang.String
 }
 object MimeType {
   

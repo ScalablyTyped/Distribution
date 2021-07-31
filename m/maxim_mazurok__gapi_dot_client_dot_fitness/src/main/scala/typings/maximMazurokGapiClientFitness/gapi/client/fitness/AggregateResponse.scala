@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFitness.gapi.client.fitness
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregateResponse extends StObject {
   
   /** A list of buckets containing the aggregated data. */
-  var bucket: js.UndefOr[js.Array[AggregateBucket]] = js.native
+  var bucket: js.UndefOr[js.Array[AggregateBucket]] = js.undefined
 }
 object AggregateResponse {
   

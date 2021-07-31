@@ -4,34 +4,34 @@ import typings.awsSdkClientKinesisBrowser.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateShardCountOutputMod {
   
-  @js.native
-  trait UpdateShardCountOutput extends OutputTypesUnion {
+  trait UpdateShardCountOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The current number of shards.</p>
       */
-    var CurrentShardCount: js.UndefOr[Double] = js.native
+    var CurrentShardCount: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The name of the stream.</p>
       */
-    var StreamName: js.UndefOr[String] = js.native
+    var StreamName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The updated number of shards.</p>
       */
-    var TargetShardCount: js.UndefOr[Double] = js.native
+    var TargetShardCount: js.UndefOr[Double] = js.undefined
   }
   object UpdateShardCountOutput {
     

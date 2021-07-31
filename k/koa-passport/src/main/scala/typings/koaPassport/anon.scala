@@ -3,7 +3,6 @@ package typings.koaPassport
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -48,10 +47,9 @@ object anon {
     ): Unit = js.native
   }
   
-  @js.native
   trait PauseStream extends StObject {
     
-    var pauseStream: Boolean = js.native
+    var pauseStream: Boolean
   }
   object PauseStream {
     
@@ -69,10 +67,9 @@ object anon {
     }
   }
   
-  @js.native
   trait UserProperty extends StObject {
     
-    var userProperty: String = js.native
+    var userProperty: String
   }
   object UserProperty {
     

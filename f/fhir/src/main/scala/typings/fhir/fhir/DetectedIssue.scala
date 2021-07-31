@@ -2,95 +2,95 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Clinical issue with action
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait DetectedIssue extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait DetectedIssue
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'detail'.
     */
-  var _detail: js.UndefOr[Element] = js.native
+  var _detail: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'reference'.
     */
-  var _reference: js.UndefOr[Element] = js.native
+  var _reference: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'severity'.
     */
-  var _severity: js.UndefOr[Element] = js.native
+  var _severity: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * The provider or device that identified the issue
     */
-  var author: js.UndefOr[Reference] = js.native
+  var author: js.UndefOr[Reference] = js.undefined
   
   /**
     * Issue Category, e.g. drug-drug, duplicate therapy, etc.
     */
-  var category: js.UndefOr[CodeableConcept] = js.native
+  var category: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * When identified
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Description and context
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * Unique id for the detected issue
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Problem resource
     */
-  var implicated: js.UndefOr[js.Array[Reference]] = js.native
+  var implicated: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Step taken to address
     */
-  var mitigation: js.UndefOr[js.Array[DetectedIssueMitigation]] = js.native
+  var mitigation: js.UndefOr[js.Array[DetectedIssueMitigation]] = js.undefined
   
   /**
     * Associated patient
     */
-  var patient: js.UndefOr[Reference] = js.native
+  var patient: js.UndefOr[Reference] = js.undefined
   
   /**
     * Authority for issue
     */
-  var reference: js.UndefOr[uri] = js.native
+  var reference: js.UndefOr[uri] = js.undefined
   
   /**
     * high | moderate | low
     */
-  var severity: js.UndefOr[code] = js.native
+  var severity: js.UndefOr[code] = js.undefined
   
   /**
     * registered | preliminary | final | amended +
     */
-  var status: code = js.native
+  var status: code
 }
 object DetectedIssue {
   

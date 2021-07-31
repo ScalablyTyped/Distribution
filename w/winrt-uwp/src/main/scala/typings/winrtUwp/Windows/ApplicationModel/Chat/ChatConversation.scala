@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.remoteparticipantcomposingchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a conversation in a chat client. */
 @js.native
 trait ChatConversation extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_remoteparticipantcomposingchanged(
     `type`: remoteparticipantcomposingchanged,
@@ -79,7 +78,7 @@ trait ChatConversation extends StObject {
   def notifyRemoteParticipantComposing(transportId: String, participantAddress: String, isComposing: Boolean): Unit = js.native
   
   /** Occurs when the remote user has started or finished typing. */
-  def onremoteparticipantcomposingchanged(ev: RemoteParticipantComposingChangedEventArgs with WinRTEvent[ChatConversation]): Unit = js.native
+  def onremoteparticipantcomposingchanged(ev: RemoteParticipantComposingChangedEventArgs & WinRTEvent[ChatConversation]): Unit = js.native
   /** Occurs when the remote user has started or finished typing. */
   @JSName("onremoteparticipantcomposingchanged")
   var onremoteparticipantcomposingchanged_Original: TypedEventHandler[ChatConversation, RemoteParticipantComposingChangedEventArgs] = js.native
@@ -87,7 +86,7 @@ trait ChatConversation extends StObject {
   /** Gets a list of all the participants in the conversation. */
   var participants: IVector[String] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_remoteparticipantcomposingchanged(
     `type`: remoteparticipantcomposingchanged,

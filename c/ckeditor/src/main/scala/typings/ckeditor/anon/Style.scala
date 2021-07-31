@@ -2,17 +2,15 @@ package typings.ckeditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Style extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var style: String = js.native
+  var style: String
   
-  var width: String = js.native
+  var width: String
 }
 object Style {
   

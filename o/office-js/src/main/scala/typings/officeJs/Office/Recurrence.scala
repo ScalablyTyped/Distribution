@@ -3,7 +3,6 @@ package typings.officeJs.Office
 import typings.officeJs.Office.MailboxEnums.RecurrenceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,10 +80,7 @@ trait Recurrence extends StObject {
     *                `asyncResult`, which is an `Office.AsyncResult` object. The `value` property of the result is a `Recurrence` object.
     */
   def getAsync(): Unit = js.native
-  def getAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]
-  ): Unit = js.native
+  def getAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[this.type], Unit]): Unit = js.native
   def getAsync(options: AsyncContextOptions): Unit = js.native
   def getAsync(
     options: AsyncContextOptions,
@@ -171,7 +167,7 @@ trait Recurrence extends StObject {
   def setAsync(recurrencePattern: Recurrence): Unit = js.native
   def setAsync(
     recurrencePattern: Recurrence,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def setAsync(recurrencePattern: Recurrence, options: AsyncContextOptions): Unit = js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortCriterion extends StObject {
   
   /**
     * The finding attribute used to sort findings.
     */
-  var Field: js.UndefOr[NonEmptyString] = js.native
+  var Field: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The order used to sort findings.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.securityhubMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.securityhubMod.SortOrder] = js.undefined
 }
 object SortCriterion {
   

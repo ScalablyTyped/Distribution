@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeToolbox event.
   */
-@js.native
-trait ASPxClientReportDesignerCustomizeToolboxEventArgs extends ASPxClientEventArgs {
+trait ASPxClientReportDesignerCustomizeToolboxEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides information about all controls available in the Toolbox.
     */
-  var ControlsFactory: ASPxDesignerControlsFactory = js.native
+  var ControlsFactory: ASPxDesignerControlsFactory
 }
 object ASPxClientReportDesignerCustomizeToolboxEventArgs {
   

@@ -4,30 +4,28 @@ import typings.octokitTypes.responseHeadersMod.ResponseHeaders
 import typings.octokitTypes.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object octokitResponseMod {
   
-  @js.native
   trait OctokitResponse[T] extends StObject {
     
     /**
       *  This is the data you would see in https://developer.Octokit.com/v3/
       */
-    var data: T = js.native
+    var data: T
     
-    var headers: ResponseHeaders = js.native
+    var headers: ResponseHeaders
     
     /**
       * http response code
       */
-    var status: Double = js.native
+    var status: Double
     
     /**
       * URL of response after all redirects
       */
-    var url: Url = js.native
+    var url: Url
   }
   object OctokitResponse {
     
@@ -38,7 +36,7 @@ object octokitResponseMod {
     }
     
     @scala.inline
-    implicit class OctokitResponseMutableBuilder[Self <: OctokitResponse[_], T] (val x: Self with OctokitResponse[T]) extends AnyVal {
+    implicit class OctokitResponseMutableBuilder[Self <: OctokitResponse[?], T] (val x: Self & OctokitResponse[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocaleOptions extends StObject {
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var numberingSystem: js.UndefOr[NumberingSystem] = js.native
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
   
-  var outputCalendar: js.UndefOr[CalendarSystem] = js.native
+  var outputCalendar: js.UndefOr[CalendarSystem] = js.undefined
 }
 object LocaleOptions {
   

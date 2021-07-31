@@ -2,7 +2,6 @@ package typings.skinTone
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,9 +31,12 @@ object mod {
   //=> '🦄'
   ```
   */
+  @scala.inline
+  def apply(emoji: String, tone: Tone): String = (^.asInstanceOf[js.Dynamic].apply(emoji.asInstanceOf[js.Any], tone.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("skin-tone", JSImport.Namespace)
   @js.native
-  def apply(emoji: String, tone: Tone): String = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.skinTone.skinToneStrings.none

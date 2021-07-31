@@ -3,30 +3,29 @@ package typings.vueInbrowserCompilerUtils.typesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentDoc
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var docsBlocks: js.UndefOr[js.Array[String]] = js.native
+  var docsBlocks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var events: js.UndefOr[js.Array[EventDescriptor]] = js.native
+  var events: js.UndefOr[js.Array[EventDescriptor]] = js.undefined
   
-  var exportName: String = js.native
+  var exportName: String
   
-  var methods: js.UndefOr[js.Array[MethodDescriptor]] = js.native
+  var methods: js.UndefOr[js.Array[MethodDescriptor]] = js.undefined
   
-  var props: js.UndefOr[js.Array[PropDescriptor]] = js.native
+  var props: js.UndefOr[js.Array[PropDescriptor]] = js.undefined
   
-  var slots: js.UndefOr[js.Array[SlotDescriptor]] = js.native
+  var slots: js.UndefOr[js.Array[SlotDescriptor]] = js.undefined
   
-  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.native
+  var tags: js.UndefOr[StringDictionary[js.Array[BlockTag]]] = js.undefined
 }
 object ComponentDoc {
   

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see FormulaMapGroupSpecialOffset.PUSH
   * @since OOo 3.1
   */
-@js.native
 trait ExternalReference extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ExternalReference extends StObject {
     * @see com.sun.star.sheet.ExternalDocLink
     * @see com.sun.star.sheet.ExternalDocLink.TokenIndex
     */
-  var Index: Double = js.native
+  var Index: Double
   
   /**
     * Name of the sheet that the external reference points to.
@@ -41,7 +39,7 @@ trait ExternalReference extends StObject {
     * @see com.sun.star.sheet.SingleReference
     * @see com.sun.star.sheet.ComplexReference
     */
-  var Reference: js.Any = js.native
+  var Reference: js.Any
 }
 object ExternalReference {
   

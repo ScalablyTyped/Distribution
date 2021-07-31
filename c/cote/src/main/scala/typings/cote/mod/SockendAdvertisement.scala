@@ -2,18 +2,18 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.cote.mod.Advertisement because Already inherited
-- typings.cote.mod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts */ @js.native
-trait SockendAdvertisement extends ResponderAdvertisement {
+- typings.cote.mod.PublisherAdvertisement because var conflicts: key, name, namespace. Inlined broadcasts */ trait SockendAdvertisement
+  extends StObject
+     with ResponderAdvertisement {
   
   /**
     * Event types that a Publisher can publish.
     */
-  var broadcasts: js.UndefOr[js.Array[String]] = js.native
+  var broadcasts: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SockendAdvertisement {
   

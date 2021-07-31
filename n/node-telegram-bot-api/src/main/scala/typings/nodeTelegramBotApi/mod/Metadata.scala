@@ -2,13 +2,11 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metadata extends StObject {
   
-  var `type`: js.UndefOr[MessageType] = js.native
+  var `type`: js.UndefOr[MessageType] = js.undefined
 }
 object Metadata {
   

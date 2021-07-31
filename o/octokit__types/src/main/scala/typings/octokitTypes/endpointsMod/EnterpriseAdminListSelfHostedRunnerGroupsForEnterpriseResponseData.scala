@@ -3,15 +3,13 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Runnersurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData extends StObject {
   
-  var runner_groups: js.Array[Runnersurl] = js.native
+  var runner_groups: js.Array[Runnersurl]
   
-  var total_count: Double = js.native
+  var total_count: Double
 }
 object EnterpriseAdminListSelfHostedRunnerGroupsForEnterpriseResponseData {
   

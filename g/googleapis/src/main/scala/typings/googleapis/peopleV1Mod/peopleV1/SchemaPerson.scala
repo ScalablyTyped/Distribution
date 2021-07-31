@@ -2,7 +2,6 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,172 +11,171 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * non-empty field is guaranteed to have exactly one field with
   * `metadata.primary` set to true.
   */
-@js.native
 trait SchemaPerson extends StObject {
   
   /**
     * The person&#39;s street addresses.
     */
-  var addresses: js.UndefOr[js.Array[SchemaAddress]] = js.native
+  var addresses: js.UndefOr[js.Array[SchemaAddress]] = js.undefined
   
   /**
     * **DEPRECATED** (Please use `person.ageRanges` instead)**  The
     * person&#39;s read-only age range.
     */
-  var ageRange: js.UndefOr[String] = js.native
+  var ageRange: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s read-only age ranges.
     */
-  var ageRanges: js.UndefOr[js.Array[SchemaAgeRangeType]] = js.native
+  var ageRanges: js.UndefOr[js.Array[SchemaAgeRangeType]] = js.undefined
   
   /**
     * The person&#39;s biographies.
     */
-  var biographies: js.UndefOr[js.Array[SchemaBiography]] = js.native
+  var biographies: js.UndefOr[js.Array[SchemaBiography]] = js.undefined
   
   /**
     * The person&#39;s birthdays.
     */
-  var birthdays: js.UndefOr[js.Array[SchemaBirthday]] = js.native
+  var birthdays: js.UndefOr[js.Array[SchemaBirthday]] = js.undefined
   
   /**
     * The person&#39;s bragging rights.
     */
-  var braggingRights: js.UndefOr[js.Array[SchemaBraggingRights]] = js.native
+  var braggingRights: js.UndefOr[js.Array[SchemaBraggingRights]] = js.undefined
   
   /**
     * The person&#39;s read-only cover photos.
     */
-  var coverPhotos: js.UndefOr[js.Array[SchemaCoverPhoto]] = js.native
+  var coverPhotos: js.UndefOr[js.Array[SchemaCoverPhoto]] = js.undefined
   
   /**
     * The person&#39;s email addresses.
     */
-  var emailAddresses: js.UndefOr[js.Array[SchemaEmailAddress]] = js.native
+  var emailAddresses: js.UndefOr[js.Array[SchemaEmailAddress]] = js.undefined
   
   /**
     * The [HTTP entity tag](https://en.wikipedia.org/wiki/HTTP_ETag) of the
     * resource. Used for web cache validation.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s events.
     */
-  var events: js.UndefOr[js.Array[SchemaEvent]] = js.native
+  var events: js.UndefOr[js.Array[SchemaEvent]] = js.undefined
   
   /**
     * The person&#39;s genders.
     */
-  var genders: js.UndefOr[js.Array[SchemaGender]] = js.native
+  var genders: js.UndefOr[js.Array[SchemaGender]] = js.undefined
   
   /**
     * The person&#39;s instant messaging clients.
     */
-  var imClients: js.UndefOr[js.Array[SchemaImClient]] = js.native
+  var imClients: js.UndefOr[js.Array[SchemaImClient]] = js.undefined
   
   /**
     * The person&#39;s interests.
     */
-  var interests: js.UndefOr[js.Array[SchemaInterest]] = js.native
+  var interests: js.UndefOr[js.Array[SchemaInterest]] = js.undefined
   
   /**
     * The person&#39;s locale preferences.
     */
-  var locales: js.UndefOr[js.Array[SchemaLocale]] = js.native
+  var locales: js.UndefOr[js.Array[SchemaLocale]] = js.undefined
   
   /**
     * The person&#39;s read-only group memberships.
     */
-  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.native
+  var memberships: js.UndefOr[js.Array[SchemaMembership]] = js.undefined
   
   /**
     * Read-only metadata about the person.
     */
-  var metadata: js.UndefOr[SchemaPersonMetadata] = js.native
+  var metadata: js.UndefOr[SchemaPersonMetadata] = js.undefined
   
   /**
     * The person&#39;s names.
     */
-  var names: js.UndefOr[js.Array[SchemaName]] = js.native
+  var names: js.UndefOr[js.Array[SchemaName]] = js.undefined
   
   /**
     * The person&#39;s nicknames.
     */
-  var nicknames: js.UndefOr[js.Array[SchemaNickname]] = js.native
+  var nicknames: js.UndefOr[js.Array[SchemaNickname]] = js.undefined
   
   /**
     * The person&#39;s occupations.
     */
-  var occupations: js.UndefOr[js.Array[SchemaOccupation]] = js.native
+  var occupations: js.UndefOr[js.Array[SchemaOccupation]] = js.undefined
   
   /**
     * The person&#39;s past or current organizations.
     */
-  var organizations: js.UndefOr[js.Array[SchemaOrganization]] = js.native
+  var organizations: js.UndefOr[js.Array[SchemaOrganization]] = js.undefined
   
   /**
     * The person&#39;s phone numbers.
     */
-  var phoneNumbers: js.UndefOr[js.Array[SchemaPhoneNumber]] = js.native
+  var phoneNumbers: js.UndefOr[js.Array[SchemaPhoneNumber]] = js.undefined
   
   /**
     * The person&#39;s read-only photos.
     */
-  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.native
+  var photos: js.UndefOr[js.Array[SchemaPhoto]] = js.undefined
   
   /**
     * The person&#39;s relations.
     */
-  var relations: js.UndefOr[js.Array[SchemaRelation]] = js.native
+  var relations: js.UndefOr[js.Array[SchemaRelation]] = js.undefined
   
   /**
     * The person&#39;s read-only relationship interests.
     */
-  var relationshipInterests: js.UndefOr[js.Array[SchemaRelationshipInterest]] = js.native
+  var relationshipInterests: js.UndefOr[js.Array[SchemaRelationshipInterest]] = js.undefined
   
   /**
     * The person&#39;s read-only relationship statuses.
     */
-  var relationshipStatuses: js.UndefOr[js.Array[SchemaRelationshipStatus]] = js.native
+  var relationshipStatuses: js.UndefOr[js.Array[SchemaRelationshipStatus]] = js.undefined
   
   /**
     * The person&#39;s residences.
     */
-  var residences: js.UndefOr[js.Array[SchemaResidence]] = js.native
+  var residences: js.UndefOr[js.Array[SchemaResidence]] = js.undefined
   
   /**
     * The resource name for the person, assigned by the server. An ASCII string
     * with a max length of 27 characters, in the form of
     * `people/`&lt;var&gt;person_id&lt;/var&gt;.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s SIP addresses.
     */
-  var sipAddresses: js.UndefOr[js.Array[SchemaSipAddress]] = js.native
+  var sipAddresses: js.UndefOr[js.Array[SchemaSipAddress]] = js.undefined
   
   /**
     * The person&#39;s skills.
     */
-  var skills: js.UndefOr[js.Array[SchemaSkill]] = js.native
+  var skills: js.UndefOr[js.Array[SchemaSkill]] = js.undefined
   
   /**
     * The person&#39;s read-only taglines.
     */
-  var taglines: js.UndefOr[js.Array[SchemaTagline]] = js.native
+  var taglines: js.UndefOr[js.Array[SchemaTagline]] = js.undefined
   
   /**
     * The person&#39;s associated URLs.
     */
-  var urls: js.UndefOr[js.Array[SchemaUrl]] = js.native
+  var urls: js.UndefOr[js.Array[SchemaUrl]] = js.undefined
   
   /**
     * The person&#39;s user defined data.
     */
-  var userDefined: js.UndefOr[js.Array[SchemaUserDefined]] = js.native
+  var userDefined: js.UndefOr[js.Array[SchemaUserDefined]] = js.undefined
 }
 object SchemaPerson {
   

@@ -2,42 +2,40 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationOutput extends StObject {
   
   /**
     * Describes the data format when records are written to the destination.
     */
-  var destinationSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema = js.native
+  var destinationSchema: ApplicationApplicationConfigurationSqlApplicationConfigurationOutputDestinationSchema
   
   /**
     * Identifies a [Kinesis Data Firehose delivery stream](https://www.terraform.io/docs/providers/aws/r/kinesis_firehose_delivery_stream.html) as the destination.
     */
   var kinesisFirehoseOutput: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisFirehoseOutput
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Identifies a [Kinesis data stream](https://www.terraform.io/docs/providers/aws/r/kinesis_stream.html) as the destination.
     */
   var kinesisStreamsOutput: js.UndefOr[
     ApplicationApplicationConfigurationSqlApplicationConfigurationOutputKinesisStreamsOutput
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Identifies a [Lambda function](https://www.terraform.io/docs/providers/aws/r/lambda_function.html) as the destination.
     */
-  var lambdaOutput: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput] = js.native
+  var lambdaOutput: js.UndefOr[ApplicationApplicationConfigurationSqlApplicationConfigurationOutputLambdaOutput] = js.undefined
   
   /**
     * The name of the in-application stream.
     */
-  var name: String = js.native
+  var name: String
   
-  var outputId: String = js.native
+  var outputId: String
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationOutput {
   

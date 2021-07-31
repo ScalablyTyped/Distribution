@@ -5,40 +5,38 @@ import typings.googleAppsScript.GoogleAppsScript.Base.Weekday
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for clock triggers.
   */
-@js.native
 trait ClockTriggerBuilder extends StObject {
   
-  def after(durationMilliseconds: Integer): ClockTriggerBuilder = js.native
+  def after(durationMilliseconds: Integer): ClockTriggerBuilder
   
-  def at(date: Date): ClockTriggerBuilder = js.native
+  def at(date: Date): ClockTriggerBuilder
   
-  def atDate(year: Integer, month: Integer, day: Integer): ClockTriggerBuilder = js.native
+  def atDate(year: Integer, month: Integer, day: Integer): ClockTriggerBuilder
   
-  def atHour(hour: Integer): ClockTriggerBuilder = js.native
+  def atHour(hour: Integer): ClockTriggerBuilder
   
-  def create(): Trigger = js.native
+  def create(): Trigger
   
-  def everyDays(n: Integer): ClockTriggerBuilder = js.native
+  def everyDays(n: Integer): ClockTriggerBuilder
   
-  def everyHours(n: Integer): ClockTriggerBuilder = js.native
+  def everyHours(n: Integer): ClockTriggerBuilder
   
-  def everyMinutes(n: Integer): ClockTriggerBuilder = js.native
+  def everyMinutes(n: Integer): ClockTriggerBuilder
   
-  def everyWeeks(n: Integer): ClockTriggerBuilder = js.native
+  def everyWeeks(n: Integer): ClockTriggerBuilder
   
-  def inTimezone(timezone: String): ClockTriggerBuilder = js.native
+  def inTimezone(timezone: String): ClockTriggerBuilder
   
-  def nearMinute(minute: Integer): ClockTriggerBuilder = js.native
+  def nearMinute(minute: Integer): ClockTriggerBuilder
   
-  def onMonthDay(day: Integer): ClockTriggerBuilder = js.native
+  def onMonthDay(day: Integer): ClockTriggerBuilder
   
-  def onWeekDay(day: Weekday): ClockTriggerBuilder = js.native
+  def onWeekDay(day: Weekday): ClockTriggerBuilder
 }
 object ClockTriggerBuilder {
   

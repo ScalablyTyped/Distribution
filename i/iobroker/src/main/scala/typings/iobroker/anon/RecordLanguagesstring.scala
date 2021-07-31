@@ -2,32 +2,30 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<iobroker.iobroker/objects.<global>.ioBroker.Languages, string> */
-@js.native
 trait RecordLanguagesstring extends StObject {
   
-  var de: String = js.native
+  var de: String
   
-  var en: String = js.native
+  var en: String
   
-  var es: String = js.native
+  var es: String
   
-  var fr: String = js.native
+  var fr: String
   
-  var it: String = js.native
+  var it: String
   
-  var nl: String = js.native
+  var nl: String
   
-  var pl: String = js.native
+  var pl: String
   
-  var pt: String = js.native
+  var pt: String
   
-  var ru: String = js.native
+  var ru: String
   
-  var `zh-cn`: String = js.native
+  var `zh-cn`: String
 }
 object RecordLanguagesstring {
   

@@ -11,27 +11,25 @@ import typings.grommet.grommetStrings.xxsmall
 import typings.grommet.utilsMod.ColorType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anchor extends StObject {
   
-  var anchor: js.UndefOr[DiagramConnectionAnchor] = js.native
+  var anchor: js.UndefOr[DiagramConnectionAnchor] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var fromTarget: String | js.Object = js.native
+  var fromTarget: String | js.Object
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[xsmall | small | medium | large | String] = js.native
+  var offset: js.UndefOr[xsmall | small | medium | large | String] = js.undefined
   
-  var thickness: js.UndefOr[hair | xxsmall | xsmall | small | medium | large | String] = js.native
+  var thickness: js.UndefOr[hair | xxsmall | xsmall | small | medium | large | String] = js.undefined
   
-  var toTarget: String | js.Object = js.native
+  var toTarget: String | js.Object
   
-  var `type`: js.UndefOr[DiagramConnectionType] = js.native
+  var `type`: js.UndefOr[DiagramConnectionType] = js.undefined
 }
 object Anchor {
   

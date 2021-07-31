@@ -22,7 +22,6 @@ import typings.stormReactDiagrams.nodeModelMod.NodeModel
 import typings.stormReactDiagrams.portModelMod.PortModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diagramEngineMod {
@@ -41,7 +40,7 @@ object diagramEngineMod {
     
     def calculateRoutingMatrix(): Unit = js.native
     
-    def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]): Boolean = js.native
+    def canEntityRepaint(baseModel: BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]): Boolean = js.native
     
     var canvas: Element = js.native
     
@@ -51,7 +50,7 @@ object diagramEngineMod {
     
     var diagramModel: DiagramModel = js.native
     
-    def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[_]], BaseModelListener]]): Unit = js.native
+    def enableRepaintEntities(entities: js.Array[BaseModel[BaseEntity[BaseListener[js.Any]], BaseModelListener]]): Unit = js.native
     
     def generateWidgetForLink(link: LinkModel[LinkModelListener]): typings.react.mod.global.JSX.Element | Null = js.native
     
@@ -142,7 +141,7 @@ object diagramEngineMod {
       * Checks to see if a model is locked by running through
       * its parents to see if they are locked first
       */
-    def isModelLocked(model: BaseEntity[BaseListener[_]]): Boolean = js.native
+    def isModelLocked(model: BaseEntity[BaseListener[js.Any]]): Boolean = js.native
     
     def isSmartRoutingEnabled(): Boolean = js.native
     
@@ -211,19 +210,19 @@ object diagramEngineMod {
     def zoomToFit(): Unit = js.native
   }
   
-  @js.native
   trait DiagramEngineListener
-    extends BaseListener[js.Any] {
+    extends StObject
+       with BaseListener[js.Any] {
     
-    var labelFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.native
+    var labelFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var linkFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.native
+    var linkFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var nodeFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.native
+    var nodeFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var portFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.native
+    var portFactoriesUpdated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var repaintCanvas: js.UndefOr[js.Function0[Unit]] = js.native
+    var repaintCanvas: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object DiagramEngineListener {
     

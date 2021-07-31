@@ -2,31 +2,29 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceFlowConfig extends StObject {
   
   /**
     *  The name of the connector profile. This name must be unique for each connector profile in the AWS account. 
     */
-  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.native
+  var connectorProfileName: js.UndefOr[ConnectorProfileName] = js.undefined
   
   /**
     *  The type of connector, such as Salesforce, Amplitude, and so on. 
     */
-  var connectorType: ConnectorType = js.native
+  var connectorType: ConnectorType
   
   /**
     *  Defines the configuration for a scheduled incremental data pull. If a valid configuration is provided, the fields specified in the configuration are used when querying for the incremental data pull. 
     */
-  var incrementalPullConfig: js.UndefOr[IncrementalPullConfig] = js.native
+  var incrementalPullConfig: js.UndefOr[IncrementalPullConfig] = js.undefined
   
   /**
     *  Specifies the information that is required to query a particular source connector. 
     */
-  var sourceConnectorProperties: SourceConnectorProperties = js.native
+  var sourceConnectorProperties: SourceConnectorProperties
 }
 object SourceFlowConfig {
   

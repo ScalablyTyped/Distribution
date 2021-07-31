@@ -2,26 +2,24 @@ package typings.telebot.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Interval extends StObject {
   
   // Optional. Use polling.
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   // Optional. Update polling timeout (0 - short polling).
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   // Optional. Reconnecting timeout (in ms).
-  var proxy: js.UndefOr[String] = js.native
+  var proxy: js.UndefOr[String] = js.undefined
   
   // Optional. Limits the number of updates to be retrieved.
-  var retryTimeout: js.UndefOr[Double] = js.native
+  var retryTimeout: js.UndefOr[Double] = js.undefined
   
   // Optional. How often check updates (in ms).
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object Interval {
   

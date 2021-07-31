@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.GetFlattenedDocumentRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.GetFlattenedDocumentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetFlattenedDocumentResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetFlattenedDocumentRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetFlattenedDocumentRequest]]
   
-  var returnType: GetFlattenedDocumentResponse = js.native
+  var returnType: GetFlattenedDocumentResponse
 }
 object ReturnTypeGetFlattenedDocumentResponse {
   

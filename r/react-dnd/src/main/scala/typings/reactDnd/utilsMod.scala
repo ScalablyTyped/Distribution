@@ -3,28 +3,26 @@ package typings.reactDnd
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("react-dnd/lib/decorators/utils", "checkDecoratorArguments")
+  @JSImport("react-dnd/lib/decorators/utils", JSImport.Namespace)
   @js.native
-  def checkDecoratorArguments(functionName: String, signature: String, args: js.Any*): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-dnd/lib/decorators/utils", "getDecoratedComponent")
-  @js.native
-  def getDecoratedComponent(instanceRef: RefObject[_]): js.Any = js.native
+  @scala.inline
+  def checkDecoratorArguments(functionName: String, signature: String, args: js.Any*): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkDecoratorArguments")(functionName.asInstanceOf[js.Any], signature.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-dnd/lib/decorators/utils", "isClassComponent")
-  @js.native
-  def isClassComponent(Component: js.Any): Boolean = js.native
+  @scala.inline
+  def getDecoratedComponent(instanceRef: RefObject[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDecoratedComponent")(instanceRef.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-dnd/lib/decorators/utils", "isRefForwardingComponent")
-  @js.native
-  def isRefForwardingComponent(C: js.Any): Boolean = js.native
+  @scala.inline
+  def isClassComponent(Component: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isClassComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-dnd/lib/decorators/utils", "isRefable")
-  @js.native
-  def isRefable(C: js.Any): Boolean = js.native
+  @scala.inline
+  def isRefForwardingComponent(C: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefForwardingComponent")(C.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isRefable(C: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRefable")(C.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

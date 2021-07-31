@@ -5,19 +5,19 @@ import typings.elasticsearch.elasticsearchStrings.red
 import typings.elasticsearch.elasticsearchStrings.yellow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatIndicesParams extends CatCommonParams {
+trait CatIndicesParams
+  extends StObject
+     with CatCommonParams {
   
-  var bytes: js.UndefOr[CatBytes] = js.native
+  var bytes: js.UndefOr[CatBytes] = js.undefined
   
-  var health: js.UndefOr[green | yellow | red] = js.native
+  var health: js.UndefOr[green | yellow | red] = js.undefined
   
-  var index: js.UndefOr[NameList] = js.native
+  var index: js.UndefOr[NameList] = js.undefined
   
-  var pri: js.UndefOr[Boolean] = js.native
+  var pri: js.UndefOr[Boolean] = js.undefined
 }
 object CatIndicesParams {
   

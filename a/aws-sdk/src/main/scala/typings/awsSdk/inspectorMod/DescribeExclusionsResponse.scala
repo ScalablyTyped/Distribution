@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExclusionsResponse extends StObject {
   
   /**
     * Information about the exclusions.
     */
-  var exclusions: ExclusionMap = js.native
+  var exclusions: ExclusionMap
   
   /**
     * Exclusion details that cannot be described. An error code is provided for each failed item.
     */
-  var failedItems: FailedItems = js.native
+  var failedItems: FailedItems
 }
 object DescribeExclusionsResponse {
   

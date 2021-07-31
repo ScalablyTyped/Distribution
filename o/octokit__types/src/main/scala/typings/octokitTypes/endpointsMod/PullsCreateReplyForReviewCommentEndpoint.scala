@@ -2,24 +2,22 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullsCreateReplyForReviewCommentEndpoint extends StObject {
   
   /**
     * The text of the review comment.
     */
-  var body: String = js.native
+  var body: String
   
-  var comment_id: Double = js.native
+  var comment_id: Double
   
-  var owner: String = js.native
+  var owner: String
   
-  var pull_number: Double = js.native
+  var pull_number: Double
   
-  var repo: String = js.native
+  var repo: String
 }
 object PullsCreateReplyForReviewCommentEndpoint {
   

@@ -2,23 +2,21 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Calendar extends StObject {
   
-  var calendar: FirstDayOfWeek = js.native
+  var calendar: FirstDayOfWeek
   
-  var day: String = js.native
+  var day: String
   
-  var hour: String = js.native
+  var hour: String
   
-  var minute: String = js.native
+  var minute: String
   
-  var month: String = js.native
+  var month: String
   
-  var year: String = js.native
+  var year: String
 }
 object Calendar {
   

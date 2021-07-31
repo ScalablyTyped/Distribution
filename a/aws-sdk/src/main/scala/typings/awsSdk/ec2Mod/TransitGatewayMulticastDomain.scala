@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayMulticastDomain extends StObject {
   
   /**
     * The time the transit gateway multicast domain was created.
     */
-  var CreationTime: js.UndefOr[DateTime] = js.native
+  var CreationTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The state of the transit gateway multicast domain.
     */
-  var State: js.UndefOr[TransitGatewayMulticastDomainState] = js.native
+  var State: js.UndefOr[TransitGatewayMulticastDomainState] = js.undefined
   
   /**
     * The tags for the transit gateway multicast domain.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the transit gateway.
     */
-  var TransitGatewayId: js.UndefOr[String] = js.native
+  var TransitGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.native
+  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayMulticastDomain {
   

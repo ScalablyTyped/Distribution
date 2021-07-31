@@ -2,23 +2,21 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top extends StObject {
   
-  var WebkitTransform: String = js.native
+  var WebkitTransform: String
   
-  var left: Double = js.native
+  var left: Double
   
-  var msTransform: String = js.native
+  var msTransform: String
   
-  var position: String = js.native
+  var position: String
   
-  var top: String = js.native
+  var top: String
   
-  var transform: String = js.native
+  var transform: String
 }
 object Top {
   

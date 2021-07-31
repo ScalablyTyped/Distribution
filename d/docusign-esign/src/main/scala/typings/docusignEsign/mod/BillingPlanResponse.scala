@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingPlanResponse extends StObject {
   
   /**
     * An object that contains details about the billing plan.
     */
-  var billingPlan: js.UndefOr[/* Contains information about a billing plan. */ BillingPlan] = js.native
+  var billingPlan: js.UndefOr[/* Contains information about a billing plan. */ BillingPlan] = js.undefined
   
   /**
     * A list of billing plans that the current billing plan can be rolled into.
     */
-  var successorPlans: js.UndefOr[js.Array[/* Contains information about a billing plan. */ BillingPlan]] = js.native
+  var successorPlans: js.UndefOr[js.Array[/* Contains information about a billing plan. */ BillingPlan]] = js.undefined
 }
 object BillingPlanResponse {
   

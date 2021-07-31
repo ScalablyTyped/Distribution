@@ -2,23 +2,21 @@ package typings.vsoNodeApi.workItemTrackingProcessInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Section extends StObject {
   
-  var groups: js.Array[Group] = js.native
+  var groups: js.Array[Group]
   
   /**
     * The id for the layout node.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value indicating whether this layout node has been overridden by a child layout.
     */
-  var overridden: Boolean = js.native
+  var overridden: Boolean
 }
 object Section {
   

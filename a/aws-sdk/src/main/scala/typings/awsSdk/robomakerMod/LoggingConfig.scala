@@ -2,16 +2,14 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingConfig extends StObject {
   
   /**
     * A boolean indicating whether to record all ROS topics.
     */
-  var recordAllRosTopics: BoxedBoolean = js.native
+  var recordAllRosTopics: BoxedBoolean
 }
 object LoggingConfig {
   

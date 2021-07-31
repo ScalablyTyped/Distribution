@@ -12,7 +12,6 @@ import typings.gitlab.usersMod.UserSchema
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deploymentsMod {
@@ -38,36 +37,35 @@ object deploymentsMod {
     def show(projectId: Double, deploymentId: Double, options: Sudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait Deployable extends StObject {
     
-    var commit: js.UndefOr[CommitSchema] = js.native
+    var commit: js.UndefOr[CommitSchema] = js.undefined
     
-    var coverage: js.UndefOr[String] = js.native
+    var coverage: js.UndefOr[String] = js.undefined
     
-    var created_at: js.UndefOr[Date] = js.native
+    var created_at: js.UndefOr[Date] = js.undefined
     
-    var finished_at: js.UndefOr[Date] = js.native
+    var finished_at: js.UndefOr[Date] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pipeline: js.UndefOr[PipelineSchema] = js.native
+    var pipeline: js.UndefOr[PipelineSchema] = js.undefined
     
-    var ref: String = js.native
+    var ref: String
     
-    var runner: js.UndefOr[RunnerSchema] = js.native
+    var runner: js.UndefOr[RunnerSchema] = js.undefined
     
-    var stage: js.UndefOr[String] = js.native
+    var stage: js.UndefOr[String] = js.undefined
     
-    var started_at: js.UndefOr[Date] = js.native
+    var started_at: js.UndefOr[Date] = js.undefined
     
-    var status: js.UndefOr[DeploymentStatus] = js.native
+    var status: js.UndefOr[DeploymentStatus] = js.undefined
     
-    var tag: Boolean = js.native
+    var tag: Boolean
     
-    var user: js.UndefOr[UserSchema] = js.native
+    var user: js.UndefOr[UserSchema] = js.undefined
   }
   object Deployable {
     
@@ -154,18 +152,17 @@ object deploymentsMod {
     }
   }
   
-  @js.native
   trait DeploymentSchema extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var iid: Double = js.native
+    var iid: Double
     
-    var ref: String = js.native
+    var ref: String
     
-    var sha: String = js.native
+    var sha: String
     
-    var user: UserSchema = js.native
+    var user: UserSchema
   }
   object DeploymentSchema {
     

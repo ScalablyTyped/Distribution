@@ -3,24 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a CMIS document version. */
-@js.native
 trait CmisVersion extends StObject {
   
   /** contains the author that created the version. */
-  var Author: String = js.native
+  var Author: String
   
   /** contains the comment the author has left. */
-  var Comment: String = js.native
+  var Comment: String
   
   /** unique ID of the Cmis version */
-  var Id: String = js.native
+  var Id: String
   
   /** specifies the time when the revision was created. */
-  var TimeStamp: DateTime = js.native
+  var TimeStamp: DateTime
 }
 object CmisVersion {
   

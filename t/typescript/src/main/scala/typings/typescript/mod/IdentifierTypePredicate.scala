@@ -2,23 +2,22 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentifierTypePredicate
-  extends TypePredicateBase
+  extends StObject
+     with TypePredicateBase
      with TypePredicate {
   
   @JSName("kind")
-  var kind_IdentifierTypePredicate: typings.typescript.mod.TypePredicateKind.Identifier = js.native
+  var kind_IdentifierTypePredicate: typings.typescript.mod.TypePredicateKind.Identifier
   
-  var parameterIndex: Double = js.native
+  var parameterIndex: Double
   
-  var parameterName: java.lang.String = js.native
+  var parameterName: java.lang.String
   
   @JSName("type")
-  var type_IdentifierTypePredicate: Type = js.native
+  var type_IdentifierTypePredicate: Type
 }
 object IdentifierTypePredicate {
   

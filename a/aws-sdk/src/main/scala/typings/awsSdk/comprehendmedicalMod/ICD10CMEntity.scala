@@ -2,61 +2,59 @@ package typings.awsSdk.comprehendmedicalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICD10CMEntity extends StObject {
   
   /**
     * The detected attributes that relate to the entity. An extracted segment of the text that is an attribute of an entity, or otherwise related to an entity, such as the nature of a medical condition.
     */
-  var Attributes: js.UndefOr[ICD10CMAttributeList] = js.native
+  var Attributes: js.UndefOr[ICD10CMAttributeList] = js.undefined
   
   /**
     * The 0-based character offset in the input text that shows where the entity begins. The offset returns the UTF-8 code point in the string.
     */
-  var BeginOffset: js.UndefOr[Integer] = js.native
+  var BeginOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     *  The category of the entity. InferICD10CM detects entities in the MEDICAL_CONDITION category. 
     */
-  var Category: js.UndefOr[ICD10CMEntityCategory] = js.native
+  var Category: js.UndefOr[ICD10CMEntityCategory] = js.undefined
   
   /**
     * The 0-based character offset in the input text that shows where the entity ends. The offset returns the UTF-8 code point in the string.
     */
-  var EndOffset: js.UndefOr[Integer] = js.native
+  var EndOffset: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ICD-10-CM concepts that the entity could refer to, along with a score indicating the likelihood of the match.
     */
-  var ICD10CMConcepts: js.UndefOr[ICD10CMConceptList] = js.native
+  var ICD10CMConcepts: js.UndefOr[ICD10CMConceptList] = js.undefined
   
   /**
     * The numeric identifier for the entity. This is a monotonically increasing id unique within this response rather than a global unique identifier.
     */
-  var Id: js.UndefOr[Integer] = js.native
+  var Id: js.UndefOr[Integer] = js.undefined
   
   /**
     * The level of confidence that Amazon Comprehend Medical has in the accuracy of the detection.
     */
-  var Score: js.UndefOr[Float] = js.native
+  var Score: js.UndefOr[Float] = js.undefined
   
   /**
     * The segment of input text that is matched to the detected entity.
     */
-  var Text: js.UndefOr[OntologyLinkingBoundedLengthString] = js.native
+  var Text: js.UndefOr[OntologyLinkingBoundedLengthString] = js.undefined
   
   /**
     * Provides Contextual information for the entity. The traits recognized by InferICD10CM are DIAGNOSIS, SIGN, SYMPTOM, and NEGATION. 
     */
-  var Traits: js.UndefOr[ICD10CMTraitList] = js.native
+  var Traits: js.UndefOr[ICD10CMTraitList] = js.undefined
   
   /**
     * Describes the specific type of entity with category of entities. InferICD10CM detects entities of the type DX_NAME.
     */
-  var Type: js.UndefOr[ICD10CMEntityType] = js.native
+  var Type: js.UndefOr[ICD10CMEntityType] = js.undefined
 }
 object ICD10CMEntity {
   

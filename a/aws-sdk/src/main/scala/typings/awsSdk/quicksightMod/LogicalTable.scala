@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogicalTable extends StObject {
   
   /**
     * A display name for the logical table.
     */
-  var Alias: LogicalTableAlias = js.native
+  var Alias: LogicalTableAlias
   
   /**
     * Transform operations that act on this logical table.
     */
-  var DataTransforms: js.UndefOr[TransformOperationList] = js.native
+  var DataTransforms: js.UndefOr[TransformOperationList] = js.undefined
   
   /**
     * Source of this logical table.
     */
-  var Source: LogicalTableSource = js.native
+  var Source: LogicalTableSource
 }
 object LogicalTable {
   

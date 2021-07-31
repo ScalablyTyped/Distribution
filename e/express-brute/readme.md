@@ -11,8 +11,8 @@ A brute-force protection middleware for express routes that rate limits incoming
 | Full name          | express-brute |
 | Keywords           | brute, force, bruteforce, attack, fibonacci, rate, limit, security |
 | # releases         | 0 |
-| # dependents       | 45 |
-| # downloads        | 966292 |
+| # dependents       | 49 |
+| # downloads        | 1220361 |
 | # stars            | 44 |
 
 ## Links

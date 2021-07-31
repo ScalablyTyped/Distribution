@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartnerRevenueModel extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait PartnerRevenueModel extends StObject {
     * markup_type is set to be `PARTNER_REVENUE_MODEL_MARKUP_TYPE_TOTAL_MEDIA_COST_MARKUP`, this field represents the total media cost percent markup in millis. For example, 100
     * represents 0.1% (decimal 0.001).
     */
-  var markupAmount: js.UndefOr[String] = js.native
+  var markupAmount: js.UndefOr[String] = js.undefined
   
   /** Required. The markup type of the partner revenue model. */
-  var markupType: js.UndefOr[String] = js.native
+  var markupType: js.UndefOr[String] = js.undefined
 }
 object PartnerRevenueModel {
   

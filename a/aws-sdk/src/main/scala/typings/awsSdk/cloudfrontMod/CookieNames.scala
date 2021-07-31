@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieNames extends StObject {
   
   /**
     * A list of cookie names.
     */
-  var Items: js.UndefOr[CookieNameList] = js.native
+  var Items: js.UndefOr[CookieNameList] = js.undefined
   
   /**
     * The number of cookie names in the Items list.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object CookieNames {
   

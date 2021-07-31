@@ -11,7 +11,6 @@ import typings.ionic.ionicAngularMod.IonicAngularProject
 import typings.ionic.libDoctorMod.Ailment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicAngularAilmentsMod {
@@ -100,11 +99,12 @@ object ionicAngularAilmentsMod {
     var latestVersion: js.UndefOr[String] = js.native
   }
   
-  @js.native
-  trait IonicAngularAilmentDeps extends AilmentDeps {
+  trait IonicAngularAilmentDeps
+    extends StObject
+       with AilmentDeps {
     
     @JSName("project")
-    val project_IonicAngularAilmentDeps: IonicAngularProject = js.native
+    val project_IonicAngularAilmentDeps: IonicAngularProject
   }
   object IonicAngularAilmentDeps {
     

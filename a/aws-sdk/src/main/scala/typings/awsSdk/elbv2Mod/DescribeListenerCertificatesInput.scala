@@ -2,26 +2,24 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeListenerCertificatesInput extends StObject {
   
   /**
     * The Amazon Resource Names (ARN) of the listener.
     */
-  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn = js.native
+  var ListenerArn: typings.awsSdk.elbv2Mod.ListenerArn
   
   /**
     * The marker for the next set of results. (You received this marker from a previous call.)
     */
-  var Marker: js.UndefOr[typings.awsSdk.elbv2Mod.Marker] = js.native
+  var Marker: js.UndefOr[typings.awsSdk.elbv2Mod.Marker] = js.undefined
   
   /**
     * The maximum number of results to return with this call.
     */
-  var PageSize: js.UndefOr[typings.awsSdk.elbv2Mod.PageSize] = js.native
+  var PageSize: js.UndefOr[typings.awsSdk.elbv2Mod.PageSize] = js.undefined
 }
 object DescribeListenerCertificatesInput {
   

@@ -2,13 +2,11 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSnapshotResult extends StObject {
   
-  var Snapshot: js.UndefOr[typings.awsSdk.elasticacheMod.Snapshot] = js.native
+  var Snapshot: js.UndefOr[typings.awsSdk.elasticacheMod.Snapshot] = js.undefined
 }
 object DeleteSnapshotResult {
   

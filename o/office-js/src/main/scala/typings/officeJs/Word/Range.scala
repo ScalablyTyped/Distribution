@@ -25,7 +25,6 @@ import typings.officeJs.officeJsStrings.Start
 import typings.officeJs.officeJsStrings.Whole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.1]
   */
 @js.native
-trait Range extends ClientObject {
+trait Range
+  extends StObject
+     with ClientObject {
   
   /**
     * Clears the contents of the range object. The user can perform the undo operation on the cleared content.
@@ -630,26 +631,7 @@ trait Range extends ClientObject {
     * @param trimSpacing Optional. Indicates whether to trim spacing characters (spaces, tabs, column breaks, and paragraph end marks) from the start and end of the ranges returned in the range collection. Default is false which indicates that spacing characters at the start and end of the ranges are included in the range collection.
     */
   def split(delimiters: js.Array[String]): RangeCollection = js.native
-  def split(
-    delimiters: js.Array[String],
-    multiParagraphs: js.UndefOr[scala.Nothing],
-    trimDelimiters: js.UndefOr[scala.Nothing],
-    trimSpacing: Boolean
-  ): RangeCollection = js.native
-  def split(delimiters: js.Array[String], multiParagraphs: js.UndefOr[scala.Nothing], trimDelimiters: Boolean): RangeCollection = js.native
-  def split(
-    delimiters: js.Array[String],
-    multiParagraphs: js.UndefOr[scala.Nothing],
-    trimDelimiters: Boolean,
-    trimSpacing: Boolean
-  ): RangeCollection = js.native
   def split(delimiters: js.Array[String], multiParagraphs: Boolean): RangeCollection = js.native
-  def split(
-    delimiters: js.Array[String],
-    multiParagraphs: Boolean,
-    trimDelimiters: js.UndefOr[scala.Nothing],
-    trimSpacing: Boolean
-  ): RangeCollection = js.native
   def split(delimiters: js.Array[String], multiParagraphs: Boolean, trimDelimiters: Boolean): RangeCollection = js.native
   def split(
     delimiters: js.Array[String],
@@ -657,6 +639,10 @@ trait Range extends ClientObject {
     trimDelimiters: Boolean,
     trimSpacing: Boolean
   ): RangeCollection = js.native
+  def split(delimiters: js.Array[String], multiParagraphs: Boolean, trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
+  def split(delimiters: js.Array[String], multiParagraphs: Unit, trimDelimiters: Boolean): RangeCollection = js.native
+  def split(delimiters: js.Array[String], multiParagraphs: Unit, trimDelimiters: Boolean, trimSpacing: Boolean): RangeCollection = js.native
+  def split(delimiters: js.Array[String], multiParagraphs: Unit, trimDelimiters: Unit, trimSpacing: Boolean): RangeCollection = js.native
   
   /**
     *

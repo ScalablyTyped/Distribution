@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.RadialGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofRadialGauge extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): RadialGauge = js.native
+  def extend(proto: js.Object): RadialGauge
   
   /* static member */
-  var fn: RadialGauge = js.native
+  var fn: RadialGauge
 }
 object TypeofRadialGauge {
   

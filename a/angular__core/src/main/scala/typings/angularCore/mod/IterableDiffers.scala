@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "IterableDiffers")
@@ -20,12 +19,14 @@ class IterableDiffers protected () extends StObject {
 /* static members */
 object IterableDiffers {
   
-  @JSImport("@angular/core", "IterableDiffers.create")
+  @JSImport("@angular/core", "IterableDiffers")
   @js.native
-  def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = js.native
-  @JSImport("@angular/core", "IterableDiffers.create")
-  @js.native
-  def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(factories: js.Array[IterableDifferFactory]): IterableDiffers = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any]).asInstanceOf[IterableDiffers]
+  @scala.inline
+  def create(factories: js.Array[IterableDifferFactory], parent: IterableDiffers): IterableDiffers = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(factories.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[IterableDiffers]
   
   /**
     * Takes an array of {@link IterableDifferFactory} and returns a provider used to extend the
@@ -47,7 +48,6 @@ object IterableDiffers {
     * })
     * ```
     */
-  @JSImport("@angular/core", "IterableDiffers.extend")
-  @js.native
-  def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = js.native
+  @scala.inline
+  def extend(factories: js.Array[IterableDifferFactory]): StaticProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(factories.asInstanceOf[js.Any]).asInstanceOf[StaticProvider]
 }

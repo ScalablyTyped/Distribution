@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to invoke the Search Panel allowing end-users to search text and navigate through search results.
   */
-@js.native
-trait OpenFindPanelCommand extends CommandWithSimpleStateBase {
+trait OpenFindPanelCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the OpenFindPanelCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object OpenFindPanelCommand {
   

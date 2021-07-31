@@ -1,26 +1,25 @@
 package typings.csv2json
 
-import typings.pumpify.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("csv2json", JSImport.Namespace)
-  @js.native
-  def apply(): ^ = js.native
-  @JSImport("csv2json", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ^ = js.native
+  @scala.inline
+  def apply(): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[typings.pumpify.mod.^]
+  @scala.inline
+  def apply(options: Options): typings.pumpify.mod.^ = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[typings.pumpify.mod.^]
   
+  @JSImport("csv2json", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var dynamicTyping: js.UndefOr[Boolean] = js.native
+    var dynamicTyping: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object Options {
     

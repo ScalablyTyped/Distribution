@@ -5,21 +5,22 @@ import typings.react.mod.global.JSX.Element
 import typings.reactNavigationNative.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themeProviderMod {
   
-  @JSImport("@react-navigation/native/lib/typescript/src/theming/ThemeProvider", JSImport.Default)
+  @JSImport("@react-navigation/native/lib/typescript/src/theming/ThemeProvider", JSImport.Namespace)
   @js.native
-  def default(hasValueChildren: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasValueChildren: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasValueChildren.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var value: Theme = js.native
+    var value: Theme
   }
   object Props {
     

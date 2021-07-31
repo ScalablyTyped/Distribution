@@ -4,14 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.atlassianCrowdClient.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
   
   @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
   @js.native
-  class ^ protected () extends User {
+  class ^ protected ()
+    extends StObject
+       with User {
     def this(firstname: String, lastname: String, displayname: String, email: String, username: String) = this()
     def this(
       firstname: String,
@@ -27,15 +28,6 @@ object userMod {
       displayname: String,
       email: String,
       username: String,
-      password: js.UndefOr[scala.Nothing],
-      active: Boolean
-    ) = this()
-    def this(
-      firstname: String,
-      lastname: String,
-      displayname: String,
-      email: String,
-      username: String,
       password: String,
       active: Boolean
     ) = this()
@@ -45,29 +37,8 @@ object userMod {
       displayname: String,
       email: String,
       username: String,
-      password: js.UndefOr[scala.Nothing],
-      active: js.UndefOr[scala.Nothing],
-      attributes: js.Any
-    ) = this()
-    def this(
-      firstname: String,
-      lastname: String,
-      displayname: String,
-      email: String,
-      username: String,
-      password: js.UndefOr[scala.Nothing],
-      active: Boolean,
-      attributes: js.Any
-    ) = this()
-    def this(
-      firstname: String,
-      lastname: String,
-      displayname: String,
-      email: String,
-      username: String,
-      password: String,
-      active: js.UndefOr[scala.Nothing],
-      attributes: js.Any
+      password: Unit,
+      active: Boolean
     ) = this()
     def this(
       firstname: String,
@@ -79,33 +50,88 @@ object userMod {
       active: Boolean,
       attributes: js.Any
     ) = this()
+    def this(
+      firstname: String,
+      lastname: String,
+      displayname: String,
+      email: String,
+      username: String,
+      password: String,
+      active: Unit,
+      attributes: js.Any
+    ) = this()
+    def this(
+      firstname: String,
+      lastname: String,
+      displayname: String,
+      email: String,
+      username: String,
+      password: Unit,
+      active: Boolean,
+      attributes: js.Any
+    ) = this()
+    def this(
+      firstname: String,
+      lastname: String,
+      displayname: String,
+      email: String,
+      username: String,
+      password: Unit,
+      active: Unit,
+      attributes: js.Any
+    ) = this()
+    
+    /* CompleteClass */
+    override val active: Boolean = js.native
+    
+    /* CompleteClass */
+    override val attributes: StringDictionary[js.Any] = js.native
+    
+    /* CompleteClass */
+    override val displayname: String = js.native
+    
+    /* CompleteClass */
+    override val email: String = js.native
+    
+    /* CompleteClass */
+    override val firstname: String = js.native
+    
+    /* CompleteClass */
+    override val lastname: String = js.native
+    
+    /* CompleteClass */
+    override def toCrowd(): UserObj = js.native
+    
+    /* CompleteClass */
+    override val username: String = js.native
   }
+  @JSImport("atlassian-crowd-client/lib/models/user", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("atlassian-crowd-client/lib/models/user", "fromCrowd")
-  @js.native
-  def fromCrowd(userObj: UserObj): User = js.native
+  @scala.inline
+  def fromCrowd(userObj: UserObj): User = ^.asInstanceOf[js.Dynamic].applyDynamic("fromCrowd")(userObj.asInstanceOf[js.Any]).asInstanceOf[User]
   
-  @js.native
   trait User extends StObject {
     
-    val active: Boolean = js.native
+    val active: Boolean
     
-    val attributes: StringDictionary[js.Any] = js.native
+    val attributes: StringDictionary[js.Any]
     
-    val displayname: String = js.native
+    val displayname: String
     
-    val email: String = js.native
+    val email: String
     
-    val firstname: String = js.native
+    val firstname: String
     
-    val lastname: String = js.native
+    val lastname: String
     
-    val password: js.UndefOr[String] = js.native
+    val password: js.UndefOr[String] = js.undefined
     
-    def toCrowd(): UserObj = js.native
+    def toCrowd(): UserObj
     
-    val username: String = js.native
+    val username: String
   }
   object User {
     
@@ -159,22 +185,21 @@ object userMod {
     }
   }
   
-  @js.native
   trait UserObj extends StObject {
     
-    val active: Boolean = js.native
+    val active: Boolean
     
-    val `display-name`: String = js.native
+    val `display-name`: String
     
-    val email: String = js.native
+    val email: String
     
-    val `first-name`: String = js.native
+    val `first-name`: String
     
-    val `last-name`: String = js.native
+    val `last-name`: String
     
-    val name: String = js.native
+    val name: String
     
-    val password: js.UndefOr[Value] = js.native
+    val password: js.UndefOr[Value] = js.undefined
   }
   object UserObj {
     

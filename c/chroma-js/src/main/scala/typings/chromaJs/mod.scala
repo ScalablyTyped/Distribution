@@ -35,7 +35,6 @@ import typings.chromaJs.chromaJsStrings.screen
 import typings.chromaJs.chromaJsStrings.temperature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -92,7 +91,7 @@ object mod extends Shortcut {
       * channel.
       */
     def average(colors: js.Array[String | Color]): Color = js.native
-    def average(colors: js.Array[String | Color], colorSpace: js.UndefOr[scala.Nothing], weights: js.Array[Double]): Color = js.native
+    def average(colors: js.Array[String | Color], colorSpace: Unit, weights: js.Array[Double]): Color = js.native
     def average(colors: js.Array[String | Color], colorSpace: InterpolationMode): Color = js.native
     def average(colors: js.Array[String | Color], colorSpace: InterpolationMode, weights: js.Array[Double]): Color = js.native
     
@@ -194,21 +193,21 @@ object mod extends Shortcut {
       * The parameters L (default 1) and C (default 1) are weighting factors for lightness and chromacity.
       */
     def deltaE(color1: String, color2: String): Double = js.native
-    def deltaE(color1: String, color2: String, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
     def deltaE(color1: String, color2: String, L: Double): Double = js.native
     def deltaE(color1: String, color2: String, L: Double, C: Double): Double = js.native
+    def deltaE(color1: String, color2: String, L: Unit, C: Double): Double = js.native
     def deltaE(color1: String, color2: Color): Double = js.native
-    def deltaE(color1: String, color2: Color, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
     def deltaE(color1: String, color2: Color, L: Double): Double = js.native
     def deltaE(color1: String, color2: Color, L: Double, C: Double): Double = js.native
+    def deltaE(color1: String, color2: Color, L: Unit, C: Double): Double = js.native
     def deltaE(color1: Color, color2: String): Double = js.native
-    def deltaE(color1: Color, color2: String, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
     def deltaE(color1: Color, color2: String, L: Double): Double = js.native
     def deltaE(color1: Color, color2: String, L: Double, C: Double): Double = js.native
+    def deltaE(color1: Color, color2: String, L: Unit, C: Double): Double = js.native
     def deltaE(color1: Color, color2: Color): Double = js.native
-    def deltaE(color1: Color, color2: Color, L: js.UndefOr[scala.Nothing], C: Double): Double = js.native
     def deltaE(color1: Color, color2: Color, L: Double): Double = js.native
     def deltaE(color1: Color, color2: Color, L: Double, C: Double): Double = js.native
+    def deltaE(color1: Color, color2: Color, L: Unit, C: Double): Double = js.native
     
     /**
       * Computes the eucledian distance between two colors in a given color space (default is 'lab').
@@ -263,21 +262,21 @@ object mod extends Shortcut {
       * Alias for {@see mix}.
       */
     def interpolate(color1: String, color2: String): Color = js.native
-    def interpolate(color1: String, color2: String, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: String, color2: String, f: Double): Color = js.native
     def interpolate(color1: String, color2: String, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def interpolate(color1: String, color2: String, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: String, color2: Color): Color = js.native
-    def interpolate(color1: String, color2: Color, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: String, color2: Color, f: Double): Color = js.native
     def interpolate(color1: String, color2: Color, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def interpolate(color1: String, color2: Color, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: Color, color2: String): Color = js.native
-    def interpolate(color1: Color, color2: String, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: Color, color2: String, f: Double): Color = js.native
     def interpolate(color1: Color, color2: String, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def interpolate(color1: Color, color2: String, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: Color, color2: Color): Color = js.native
-    def interpolate(color1: Color, color2: Color, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def interpolate(color1: Color, color2: Color, f: Double): Color = js.native
     def interpolate(color1: Color, color2: Color, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def interpolate(color1: Color, color2: Color, f: Unit, colorSpace: InterpolationMode): Color = js.native
     
     def lab(lightness: Double, a: Double, b: Double): Color = js.native
     def lab(lightness: Double, a: Double, b: Double, alpha: Double): Color = js.native
@@ -311,21 +310,21 @@ object mod extends Shortcut {
       * @example chroma.mix('red', 'blue', 0.5, 'hsl') // => #ff00ff
       */
     def mix(color1: String, color2: String): Color = js.native
-    def mix(color1: String, color2: String, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def mix(color1: String, color2: String, f: Double): Color = js.native
     def mix(color1: String, color2: String, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def mix(color1: String, color2: String, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def mix(color1: String, color2: Color): Color = js.native
-    def mix(color1: String, color2: Color, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def mix(color1: String, color2: Color, f: Double): Color = js.native
     def mix(color1: String, color2: Color, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def mix(color1: String, color2: Color, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def mix(color1: Color, color2: String): Color = js.native
-    def mix(color1: Color, color2: String, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def mix(color1: Color, color2: String, f: Double): Color = js.native
     def mix(color1: Color, color2: String, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def mix(color1: Color, color2: String, f: Unit, colorSpace: InterpolationMode): Color = js.native
     def mix(color1: Color, color2: Color): Color = js.native
-    def mix(color1: Color, color2: Color, f: js.UndefOr[scala.Nothing], colorSpace: InterpolationMode): Color = js.native
     def mix(color1: Color, color2: Color, f: Double): Color = js.native
     def mix(color1: Color, color2: Color, f: Double, colorSpace: InterpolationMode): Color = js.native
+    def mix(color1: Color, color2: Color, f: Unit, colorSpace: InterpolationMode): Color = js.native
     
     /**
       * Returns a random color.
@@ -500,27 +499,27 @@ object mod extends Shortcut {
     def luminance(l: Double, colorSpace: InterpolationMode): Color = js.native
     
     def mix(targetColor: String): Color = js.native
-    def mix(
-      targetColor: String,
-      f: js.UndefOr[scala.Nothing],
-      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
-    ): Color = js.native
     def mix(targetColor: String, f: Double): Color = js.native
     def mix(
       targetColor: String,
       f: Double,
       colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
     ): Color = js.native
-    def mix(targetColor: Color): Color = js.native
     def mix(
-      targetColor: Color,
-      f: js.UndefOr[scala.Nothing],
+      targetColor: String,
+      f: Unit,
       colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
     ): Color = js.native
+    def mix(targetColor: Color): Color = js.native
     def mix(targetColor: Color, f: Double): Color = js.native
     def mix(
       targetColor: Color,
       f: Double,
+      colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
+    ): Color = js.native
+    def mix(
+      targetColor: Color,
+      f: Unit,
       colorSpace: rgb | rgba | hsl | hsv | hsi | lab | lch | hcl | cmyk | gl
     ): Color = js.native
     
@@ -589,28 +588,27 @@ object mod extends Shortcut {
     def temperature(): Double = js.native
   }
   
-  @js.native
   trait ColorSpaces extends StObject {
     
-    var cmyk: js.Tuple4[Double, Double, Double, Double] = js.native
+    var cmyk: js.Tuple4[Double, Double, Double, Double]
     
-    var gl: js.Tuple4[Double, Double, Double, Double] = js.native
+    var gl: js.Tuple4[Double, Double, Double, Double]
     
-    var hcl: js.Tuple3[Double, Double, Double] = js.native
+    var hcl: js.Tuple3[Double, Double, Double]
     
-    var hsi: js.Tuple3[Double, Double, Double] = js.native
+    var hsi: js.Tuple3[Double, Double, Double]
     
-    var hsl: js.Tuple3[Double, Double, Double] = js.native
+    var hsl: js.Tuple3[Double, Double, Double]
     
-    var hsv: js.Tuple3[Double, Double, Double] = js.native
+    var hsv: js.Tuple3[Double, Double, Double]
     
-    var lab: js.Tuple3[Double, Double, Double] = js.native
+    var lab: js.Tuple3[Double, Double, Double]
     
-    var lch: js.Tuple3[Double, Double, Double] = js.native
+    var lch: js.Tuple3[Double, Double, Double]
     
-    var rgb: js.Tuple3[Double, Double, Double] = js.native
+    var rgb: js.Tuple3[Double, Double, Double]
     
-    var rgba: js.Tuple4[Double, Double, Double, Double] = js.native
+    var rgba: js.Tuple4[Double, Double, Double, Double]
   }
   object ColorSpaces {
     
@@ -666,33 +664,32 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Cubehelix extends StObject {
     
     /**
       * gamma factor can be used to emphasise low or high intensity values, default=1
       */
-    def gamma(g: Double): Cubehelix = js.native
+    def gamma(g: Double): Cubehelix
     
     /**
       * lightness range: default: [0,1] (black -> white)
       */
-    def lightness(l: js.Array[Double]): Cubehelix = js.native
+    def lightness(l: js.Array[Double]): Cubehelix
     
     /**
       * number (and direction) of hue rotations (e.g. 1=360°, 1.5=`540°``), default=-1.5
       */
-    def rotations(r: Double): Cubehelix = js.native
+    def rotations(r: Double): Cubehelix
     
     /**
       * You can call cubehelix.scale() to use the cube-helix through the chroma.scale interface.
       */
-    def scale(): Scale[Color] = js.native
+    def scale(): Scale[Color]
     
     /**
       * Set start color for hue rotation, default=300
       */
-    def start(s: Double): Cubehelix = js.native
+    def start(s: Double): Cubehelix
   }
   object Cubehelix {
     
@@ -790,93 +787,93 @@ object mod extends Shortcut {
     def colors(): js.Array[Color] = js.native
     def colors(c: Double): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_alpha(c: js.UndefOr[scala.Nothing], format: alpha): js.Array[Color] = js.native
-    @JSName("colors")
     def colors_alpha(c: Double, format: alpha): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_brighten(c: js.UndefOr[scala.Nothing], format: brighten): js.Array[Color] = js.native
+    def colors_alpha(c: Unit, format: alpha): js.Array[Color] = js.native
     @JSName("colors")
     def colors_brighten(c: Double, format: brighten): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_cmyk(c: js.UndefOr[scala.Nothing], format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+    def colors_brighten(c: Unit, format: brighten): js.Array[Color] = js.native
     @JSName("colors")
     def colors_cmyk(c: Double, format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_darken(c: js.UndefOr[scala.Nothing], format: darken): js.Array[Color] = js.native
+    def colors_cmyk(c: Unit, format: cmyk): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_darken(c: Double, format: darken): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_desaturate(c: js.UndefOr[scala.Nothing], format: desaturate): js.Array[Color] = js.native
+    def colors_darken(c: Unit, format: darken): js.Array[Color] = js.native
     @JSName("colors")
     def colors_desaturate(c: Double, format: desaturate): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_gl(c: js.UndefOr[scala.Nothing], format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+    def colors_desaturate(c: Unit, format: desaturate): js.Array[Color] = js.native
     @JSName("colors")
     def colors_gl(c: Double, format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_hcl(c: js.UndefOr[scala.Nothing], format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_gl(c: Unit, format: gl): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_hcl(c: Double, format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_hex(c: js.UndefOr[scala.Nothing], format: hex): js.Array[String] = js.native
+    def colors_hcl(c: Unit, format: hcl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_hex(c: Double, format: hex): js.Array[String] = js.native
     @JSName("colors")
-    def colors_hsi(c: js.UndefOr[scala.Nothing], format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_hex(c: Unit, format: hex): js.Array[String] = js.native
     @JSName("colors")
     def colors_hsi(c: Double, format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_hsl(c: js.UndefOr[scala.Nothing], format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_hsi(c: Unit, format: hsi): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_hsl(c: Double, format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_hsv(c: js.UndefOr[scala.Nothing], format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_hsl(c: Unit, format: hsl): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_hsv(c: Double, format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_lab(c: js.UndefOr[scala.Nothing], format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_hsv(c: Unit, format: hsv): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_lab(c: Double, format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_lch(c: js.UndefOr[scala.Nothing], format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_lab(c: Unit, format: lab): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_lch(c: Double, format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_luminance(c: js.UndefOr[scala.Nothing], format: luminance): js.Array[Double] = js.native
+    def colors_lch(c: Unit, format: lch): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_luminance(c: Double, format: luminance): js.Array[Double] = js.native
     @JSName("colors")
-    def colors_name(c: js.UndefOr[scala.Nothing], format: name): js.Array[String] = js.native
+    def colors_luminance(c: Unit, format: luminance): js.Array[Double] = js.native
     @JSName("colors")
     def colors_name(c: Double, format: name): js.Array[String] = js.native
     @JSName("colors")
-    def colors_rgb(c: js.UndefOr[scala.Nothing], format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
+    def colors_name(c: Unit, format: name): js.Array[String] = js.native
     @JSName("colors")
     def colors_rgb(c: Double, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_rgba(c: js.UndefOr[scala.Nothing], format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
+    def colors_rgb(c: Unit, format: rgb): js.Array[js.Tuple3[Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_rgba(c: Double, format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
-    def colors_saturate(c: js.UndefOr[scala.Nothing], format: saturate): js.Array[Color] = js.native
+    def colors_rgba(c: Unit, format: rgba): js.Array[js.Tuple4[Double, Double, Double, Double]] = js.native
     @JSName("colors")
     def colors_saturate(c: Double, format: saturate): js.Array[Color] = js.native
     @JSName("colors")
-    def colors_temperature(c: js.UndefOr[scala.Nothing], format: temperature): js.Array[Double] = js.native
+    def colors_saturate(c: Unit, format: saturate): js.Array[Color] = js.native
     @JSName("colors")
     def colors_temperature(c: Double, format: temperature): js.Array[Double] = js.native
+    @JSName("colors")
+    def colors_temperature(c: Unit, format: temperature): js.Array[Double] = js.native
     
     def correctLightness(): this.type = js.native
     def correctLightness(enable: Boolean): this.type = js.native
     
     def domain(): this.type = js.native
-    def domain(d: js.UndefOr[scala.Nothing], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
-    def domain(d: js.UndefOr[scala.Nothing], n: Double): this.type = js.native
-    def domain(d: js.UndefOr[scala.Nothing], n: Double, mode: String): this.type = js.native
     def domain(d: js.Array[Double]): this.type = js.native
-    def domain(d: js.Array[Double], n: js.UndefOr[scala.Nothing], mode: String): this.type = js.native
     def domain(d: js.Array[Double], n: Double): this.type = js.native
     def domain(d: js.Array[Double], n: Double, mode: String): this.type = js.native
+    def domain(d: js.Array[Double], n: Unit, mode: String): this.type = js.native
+    def domain(d: Unit, n: Double): this.type = js.native
+    def domain(d: Unit, n: Double, mode: String): this.type = js.native
+    def domain(d: Unit, n: Unit, mode: String): this.type = js.native
     
     def gamma(g: Double): this.type = js.native
     

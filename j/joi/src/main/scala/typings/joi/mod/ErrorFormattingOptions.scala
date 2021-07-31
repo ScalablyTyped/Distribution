@@ -6,10 +6,8 @@ import typings.joi.joiStrings.key
 import typings.joi.joiStrings.path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorFormattingOptions extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait ErrorFormattingOptions extends StObject {
     *
     * @default false
     */
-  var escapeHtml: js.UndefOr[Boolean] = js.native
+  var escapeHtml: js.UndefOr[Boolean] = js.undefined
   
   /**
     * defines the value used to set the label context variable.
     */
-  var label: js.UndefOr[path | key | `false`] = js.native
+  var label: js.UndefOr[path | key | `false`] = js.undefined
   
   /**
     * The preferred language code for error messages.
@@ -32,14 +30,14 @@ trait ErrorFormattingOptions extends StObject {
     * Note that references to the value are usually not what you want as they move around the value structure relative to where the error happens.
     * Instead, either use the global context, or the absolute value (e.g. `Joi.ref('/variable')`)
     */
-  var language: js.UndefOr[/* keyof joi.joi.LanguageMessages */ String] = js.native
+  var language: js.UndefOr[/* keyof joi.joi.LanguageMessages */ String] = js.undefined
   
   /**
     * when false, skips rendering error templates. Useful when error messages are generated elsewhere to save processing time.
     *
     * @default true
     */
-  var render: js.UndefOr[Boolean] = js.native
+  var render: js.UndefOr[Boolean] = js.undefined
   
   /**
     * when true, the main error will possess a stack trace, otherwise it will be disabled.
@@ -47,14 +45,14 @@ trait ErrorFormattingOptions extends StObject {
     *
     * @default false
     */
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
   
   /**
     * overrides the way values are wrapped (e.g. `[]` arround arrays, `""` around labels).
     * Each key can be set to a string with one (same character before and after the value) or two characters (first character
     * before and second character after), or `false` to disable wrapping.
     */
-  var wrap: js.UndefOr[Array] = js.native
+  var wrap: js.UndefOr[Array] = js.undefined
 }
 object ErrorFormattingOptions {
   

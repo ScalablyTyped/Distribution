@@ -3,7 +3,6 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.instaStickerMod.InstaSticker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pollStickerMod {
@@ -28,12 +27,11 @@ object pollStickerMod {
     var viewerVote: js.UndefOr[Double] = js.native
   }
   
-  @js.native
   trait PollStickerTallie extends StObject {
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object PollStickerTallie {
     

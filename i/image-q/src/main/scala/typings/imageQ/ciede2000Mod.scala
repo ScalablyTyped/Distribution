@@ -4,7 +4,6 @@ import typings.imageQ.abstractDistanceCalculatorMod.AbstractDistanceCalculator
 import typings.imageQ.anon.A
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ciede2000Mod {
@@ -18,25 +17,24 @@ object ciede2000Mod {
   /* static members */
   object CIEDE2000 {
     
-    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._calculateRT")
+    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000")
     @js.native
-    def _calculateRT(ahp: js.Any, aCp: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._calculateT")
-    @js.native
-    def _calculateT(ahp: js.Any): js.Any = js.native
+    @scala.inline
+    def _calculateRT(ahp: js.Any, aCp: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calculateRT")(ahp.asInstanceOf[js.Any], aCp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._calculate_ahp")
-    @js.native
-    def _calculate_ahp(C1pC2p: js.Any, h_bar: js.Any, h1p: js.Any, h2p: js.Any): js.Any = js.native
+    @scala.inline
+    def _calculateT(ahp: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("_calculateT")(ahp.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._calculate_dHp")
-    @js.native
-    def _calculate_dHp(C1pC2p: js.Any, h_bar: js.Any, h2p: js.Any, h1p: js.Any): js.Any = js.native
+    @scala.inline
+    def _calculate_ahp(C1pC2p: js.Any, h_bar: js.Any, h1p: js.Any, h2p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calculate_ahp")(C1pC2p.asInstanceOf[js.Any], h_bar.asInstanceOf[js.Any], h1p.asInstanceOf[js.Any], h2p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._calculatehp")
-    @js.native
-    def _calculatehp(b: js.Any, ap: js.Any): js.Any = js.native
+    @scala.inline
+    def _calculate_dHp(C1pC2p: js.Any, h_bar: js.Any, h2p: js.Any, h1p: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calculate_dHp")(C1pC2p.asInstanceOf[js.Any], h_bar.asInstanceOf[js.Any], h2p.asInstanceOf[js.Any], h1p.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def _calculatehp(b: js.Any, ap: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_calculatehp")(b.asInstanceOf[js.Any], ap.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("image-q/dist/distance/ciede2000", "CIEDE2000._deg180InRad")
     @js.native

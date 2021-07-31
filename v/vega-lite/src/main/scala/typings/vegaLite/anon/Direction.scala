@@ -5,21 +5,19 @@ import typings.vegaTypings.legendMod.LegendOrient
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: Orientation = js.native
+  var direction: Orientation
   
-  var legendConfig: typings.vegaLite.legendMod.LegendConfig[SignalRef] = js.native
+  var legendConfig: typings.vegaLite.legendMod.LegendConfig[SignalRef]
   
-  var model: typings.vegaLite.modelMod.Model = js.native
+  var model: typings.vegaLite.modelMod.Model
   
-  var orient: LegendOrient = js.native
+  var orient: LegendOrient
   
-  var scaleType: typings.vegaLite.scaleMod.ScaleType = js.native
+  var scaleType: typings.vegaLite.scaleMod.ScaleType
 }
 object Direction {
   

@@ -3,11 +3,9 @@ package typings.officeJsPreview.Excel.Interfaces
 import typings.officeJsPreview.Excel.ConditionalColorScaleCriteria
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `colorScaleConditionalFormat.toJSON()`. */
-@js.native
 trait ColorScaleConditionalFormatData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ColorScaleConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.native
+  var criteria: js.UndefOr[ConditionalColorScaleCriteria] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait ColorScaleConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var threeColorScale: js.UndefOr[Boolean] = js.native
+  var threeColorScale: js.UndefOr[Boolean] = js.undefined
 }
 object ColorScaleConditionalFormatData {
   

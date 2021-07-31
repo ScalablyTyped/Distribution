@@ -3,26 +3,25 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashINIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.reactNavigation.mod._NavigationAction because Already inherited */ @js.native
-trait NavigationInitAction
-  extends NavigationStackAction
+- typings.reactNavigation.mod._NavigationAction because Already inherited */ trait NavigationInitAction
+  extends StObject
      with NavigationInitActionPayload
+     with NavigationStackAction
      with NavigationTabAction {
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var `type`: NavigationSlashINIT = js.native
+  var `type`: NavigationSlashINIT
 }
 object NavigationInitAction {
   
   @scala.inline
-  def apply(`type`: NavigationSlashINIT): NavigationInitAction = {
+  def apply(): NavigationInitAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/INIT")
     __obj.asInstanceOf[NavigationInitAction]
   }
   

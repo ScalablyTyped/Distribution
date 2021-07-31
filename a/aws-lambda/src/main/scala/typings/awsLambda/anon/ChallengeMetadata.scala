@@ -3,17 +3,15 @@ package typings.awsLambda.anon
 import typings.awsLambda.commonMod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChallengeMetadata extends StObject {
   
-  var challengeMetadata: String = js.native
+  var challengeMetadata: String
   
-  var privateChallengeParameters: StringMap = js.native
+  var privateChallengeParameters: StringMap
   
-  var publicChallengeParameters: StringMap = js.native
+  var publicChallengeParameters: StringMap
 }
 object ChallengeMetadata {
   

@@ -2,17 +2,15 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabMetadataList extends StObject {
   
   /**
     * A list of tabs, which are represented graphically as symbols on documents at the time of signing. Tabs show recipients where to sign, initial, or enter data.
     * They may also display data to the recipients.
     */
-  var tabs: js.UndefOr[js.Array[TabMetadata]] = js.native
+  var tabs: js.UndefOr[js.Array[TabMetadata]] = js.undefined
 }
 object TabMetadataList {
   

@@ -4,7 +4,6 @@ import typings.ol.eventsMod.EventsKey
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlControlMod {
@@ -51,14 +50,13 @@ object controlControlMod {
     def setTarget(target: HTMLElement): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.native
+    var render: js.UndefOr[js.Function1[/* p0 */ typings.ol.mapEventMod.default, Unit]] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
   }
   object Options {
     

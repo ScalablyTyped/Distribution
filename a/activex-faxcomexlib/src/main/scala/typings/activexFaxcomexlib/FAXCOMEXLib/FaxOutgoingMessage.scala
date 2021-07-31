@@ -3,33 +3,33 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxOutgoingMessage Class */
-@js.native
-trait FaxOutgoingMessage extends IFaxOutgoingMessage {
+trait FaxOutgoingMessage
+  extends StObject
+     with IFaxOutgoingMessage {
   
   @JSName("FAXCOMEXLib.FaxOutgoingMessage_typekey")
-  var FAXCOMEXLibDotFaxOutgoingMessage_typekey: FaxOutgoingMessage = js.native
+  var FAXCOMEXLibDotFaxOutgoingMessage_typekey: FaxOutgoingMessage
   
   /** Has Cover page */
-  val HasCoverPage: Boolean = js.native
+  val HasCoverPage: Boolean
   
   /** Read flag on the message */
-  var Read: Boolean = js.native
+  var Read: Boolean
   
   /** Address of the receipt */
-  val ReceiptAddress: String = js.native
+  val ReceiptAddress: String
   
   /** Type of the receipt */
-  val ReceiptType: FAX_RECEIPT_TYPE_ENUM = js.native
+  val ReceiptType: FAX_RECEIPT_TYPE_ENUM
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
 }
 object FaxOutgoingMessage {
   

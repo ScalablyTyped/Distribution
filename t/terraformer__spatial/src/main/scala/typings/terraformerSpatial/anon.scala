@@ -2,21 +2,19 @@ package typings.terraformerSpatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait H extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object H {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Href extends StObject {
     
-    var href: String = js.native
+    var href: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Href {
     

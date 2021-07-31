@@ -2,33 +2,31 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScheduledJobTrigger extends StObject {
   
-  var BeginDay: Double = js.native
+  var BeginDay: Double
   
-  var BeginMonth: Double = js.native
+  var BeginMonth: Double
   
-  var BeginYear: Double = js.native
+  var BeginYear: Double
   
-  def Clone(): IScheduledJobTrigger = js.native
+  def Clone(): IScheduledJobTrigger
   
-  var EndDay: Double = js.native
+  var EndDay: Double
   
-  var EndMonth: Double = js.native
+  var EndMonth: Double
   
-  var EndYear: Double = js.native
+  var EndYear: Double
   
-  var StartHour: Double = js.native
+  var StartHour: Double
   
-  var StartMinute: Double = js.native
+  var StartMinute: Double
   
-  var Type: ITriggerType = js.native
+  var Type: ITriggerType
   
-  var ValidEndDate: Boolean = js.native
+  var ValidEndDate: Boolean
 }
 object IScheduledJobTrigger {
   

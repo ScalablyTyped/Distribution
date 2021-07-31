@@ -3,14 +3,14 @@ package typings.jsonLogicJs.anon
 import typings.jsonLogicJs.mod._RulesLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Any extends _RulesLogic {
+trait Any
+  extends StObject
+     with _RulesLogic {
   
   @JSName("!")
-  var Exclamationmark: js.Any = js.native
+  var Exclamationmark: js.Any
 }
 object Any {
   

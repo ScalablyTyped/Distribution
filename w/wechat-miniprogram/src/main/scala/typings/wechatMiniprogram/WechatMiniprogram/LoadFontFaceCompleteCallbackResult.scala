@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadFontFaceCompleteCallbackResult extends StObject {
   
   /** 加载字体结果 */
-  var status: String = js.native
+  var status: String
 }
 object LoadFontFaceCompleteCallbackResult {
   

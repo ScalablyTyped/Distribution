@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Stream 为基础对象，用于为流处理定义标准借口，不能独立创建
   */
 @js.native
-trait ClassStream extends ClassObject {
+trait ClassStream
+  extends StObject
+     with ClassObject {
   
   /**
     * 

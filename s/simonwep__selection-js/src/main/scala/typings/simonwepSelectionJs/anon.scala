@@ -3,17 +3,15 @@ package typings.simonwepSelectionJs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Added extends StObject {
     
-    var added: js.Array[Element] = js.native
+    var added: js.Array[Element]
     
-    var removed: js.Array[Element] = js.native
+    var removed: js.Array[Element]
   }
   object Added {
     

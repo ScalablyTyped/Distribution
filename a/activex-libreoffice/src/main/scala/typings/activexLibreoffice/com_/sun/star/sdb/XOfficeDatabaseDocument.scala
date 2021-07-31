@@ -8,18 +8,17 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XDataSource
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** simplifies the accessing of data sources, and it's corresponding database document and forms, and reports. */
-@js.native
 trait XOfficeDatabaseDocument
-  extends XFormDocumentsSupplier
+  extends StObject
+     with XFormDocumentsSupplier
      with XReportDocumentsSupplier
      with XDocumentSubStorageSupplier {
   
   /** provides access to the one and only {@link DataSource} associated with this document */
-  var DataSource: XDataSource = js.native
+  var DataSource: XDataSource
 }
 object XOfficeDatabaseDocument {
   

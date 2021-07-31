@@ -2,171 +2,169 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesItem extends StObject {
   
-  var aggregate: js.UndefOr[String | js.Function] = js.native
+  var aggregate: js.UndefOr[String | js.Function] = js.undefined
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ChartSeriesItemBorder] = js.native
+  var border: js.UndefOr[ChartSeriesItemBorder] = js.undefined
   
-  var categoryAxis: js.UndefOr[String] = js.native
+  var categoryAxis: js.UndefOr[String] = js.undefined
   
-  var categoryField: js.UndefOr[String] = js.native
+  var categoryField: js.UndefOr[String] = js.undefined
   
-  var closeField: js.UndefOr[String] = js.native
+  var closeField: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | js.Function] = js.native
+  var color: js.UndefOr[String | js.Function] = js.undefined
   
-  var colorField: js.UndefOr[String] = js.native
+  var colorField: js.UndefOr[String] = js.undefined
   
-  var connectors: js.UndefOr[ChartSeriesItemConnectors] = js.native
+  var connectors: js.UndefOr[ChartSeriesItemConnectors] = js.undefined
   
-  var currentField: js.UndefOr[String] = js.native
+  var currentField: js.UndefOr[String] = js.undefined
   
-  var dashType: js.UndefOr[String] = js.native
+  var dashType: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var downColor: js.UndefOr[String | js.Function] = js.native
+  var downColor: js.UndefOr[String | js.Function] = js.undefined
   
-  var downColorField: js.UndefOr[String] = js.native
+  var downColorField: js.UndefOr[String] = js.undefined
   
-  var dynamicHeight: js.UndefOr[Boolean] = js.native
+  var dynamicHeight: js.UndefOr[Boolean] = js.undefined
   
-  var dynamicSlope: js.UndefOr[Boolean] = js.native
+  var dynamicSlope: js.UndefOr[Boolean] = js.undefined
   
-  var errorBars: js.UndefOr[ChartSeriesItemErrorBars] = js.native
+  var errorBars: js.UndefOr[ChartSeriesItemErrorBars] = js.undefined
   
-  var errorHighField: js.UndefOr[String] = js.native
+  var errorHighField: js.UndefOr[String] = js.undefined
   
-  var errorLowField: js.UndefOr[String] = js.native
+  var errorLowField: js.UndefOr[String] = js.undefined
   
-  var explodeField: js.UndefOr[String] = js.native
+  var explodeField: js.UndefOr[String] = js.undefined
   
-  var extremes: js.UndefOr[ChartSeriesItemExtremes] = js.native
+  var extremes: js.UndefOr[ChartSeriesItemExtremes] = js.undefined
   
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
-  var fromField: js.UndefOr[String] = js.native
+  var fromField: js.UndefOr[String] = js.undefined
   
-  var gap: js.UndefOr[Double] = js.native
+  var gap: js.UndefOr[Double] = js.undefined
   
-  var highField: js.UndefOr[String] = js.native
+  var highField: js.UndefOr[String] = js.undefined
   
-  var highlight: js.UndefOr[ChartSeriesItemHighlight] = js.native
+  var highlight: js.UndefOr[ChartSeriesItemHighlight] = js.undefined
   
-  var holeSize: js.UndefOr[Double] = js.native
+  var holeSize: js.UndefOr[Double] = js.undefined
   
-  var labels: js.UndefOr[ChartSeriesItemLabels] = js.native
+  var labels: js.UndefOr[ChartSeriesItemLabels] = js.undefined
   
-  var line: js.UndefOr[String | ChartSeriesItemLine] = js.native
+  var line: js.UndefOr[String | ChartSeriesItemLine] = js.undefined
   
-  var lowField: js.UndefOr[String] = js.native
+  var lowField: js.UndefOr[String] = js.undefined
   
-  var lowerField: js.UndefOr[String] = js.native
+  var lowerField: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartSeriesItemMargin] = js.native
+  var margin: js.UndefOr[Double | ChartSeriesItemMargin] = js.undefined
   
-  var markers: js.UndefOr[ChartSeriesItemMarkers] = js.native
+  var markers: js.UndefOr[ChartSeriesItemMarkers] = js.undefined
   
-  var maxSize: js.UndefOr[Double] = js.native
+  var maxSize: js.UndefOr[Double] = js.undefined
   
-  var meanField: js.UndefOr[String] = js.native
+  var meanField: js.UndefOr[String] = js.undefined
   
-  var medianField: js.UndefOr[String] = js.native
+  var medianField: js.UndefOr[String] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
-  var missingValues: js.UndefOr[String] = js.native
+  var missingValues: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var neckRatio: js.UndefOr[Double] = js.native
+  var neckRatio: js.UndefOr[Double] = js.undefined
   
-  var negativeColor: js.UndefOr[String] = js.native
+  var negativeColor: js.UndefOr[String] = js.undefined
   
-  var negativeValues: js.UndefOr[ChartSeriesItemNegativeValues] = js.native
+  var negativeValues: js.UndefOr[ChartSeriesItemNegativeValues] = js.undefined
   
-  var noteTextField: js.UndefOr[String] = js.native
+  var noteTextField: js.UndefOr[String] = js.undefined
   
-  var notes: js.UndefOr[ChartSeriesItemNotes] = js.native
+  var notes: js.UndefOr[ChartSeriesItemNotes] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var openField: js.UndefOr[String] = js.native
+  var openField: js.UndefOr[String] = js.undefined
   
-  var outliers: js.UndefOr[ChartSeriesItemOutliers] = js.native
+  var outliers: js.UndefOr[ChartSeriesItemOutliers] = js.undefined
   
-  var outliersField: js.UndefOr[String] = js.native
+  var outliersField: js.UndefOr[String] = js.undefined
   
-  var overlay: js.UndefOr[ChartSeriesItemOverlay] = js.native
+  var overlay: js.UndefOr[ChartSeriesItemOverlay] = js.undefined
   
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
-  var q1Field: js.UndefOr[String] = js.native
+  var q1Field: js.UndefOr[String] = js.undefined
   
-  var q3Field: js.UndefOr[String] = js.native
+  var q3Field: js.UndefOr[String] = js.undefined
   
-  var segmentSpacing: js.UndefOr[Double] = js.native
+  var segmentSpacing: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var sizeField: js.UndefOr[String] = js.native
+  var sizeField: js.UndefOr[String] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var stack: js.UndefOr[Boolean | String | ChartSeriesItemStack] = js.native
+  var stack: js.UndefOr[Boolean | String | ChartSeriesItemStack] = js.undefined
   
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var summaryField: js.UndefOr[String] = js.native
+  var summaryField: js.UndefOr[String] = js.undefined
   
-  var target: js.UndefOr[ChartSeriesItemTarget] = js.native
+  var target: js.UndefOr[ChartSeriesItemTarget] = js.undefined
   
-  var targetField: js.UndefOr[String] = js.native
+  var targetField: js.UndefOr[String] = js.undefined
   
-  var toField: js.UndefOr[String] = js.native
+  var toField: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[ChartSeriesItemTooltip] = js.native
+  var tooltip: js.UndefOr[ChartSeriesItemTooltip] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var upperField: js.UndefOr[String] = js.native
+  var upperField: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var visibleInLegend: js.UndefOr[Boolean] = js.native
+  var visibleInLegend: js.UndefOr[Boolean] = js.undefined
   
-  var visibleInLegendField: js.UndefOr[String] = js.native
+  var visibleInLegendField: js.UndefOr[String] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[String] = js.native
+  var xAxis: js.UndefOr[String] = js.undefined
   
-  var xErrorHighField: js.UndefOr[String] = js.native
+  var xErrorHighField: js.UndefOr[String] = js.undefined
   
-  var xErrorLowField: js.UndefOr[String] = js.native
+  var xErrorLowField: js.UndefOr[String] = js.undefined
   
-  var xField: js.UndefOr[String] = js.native
+  var xField: js.UndefOr[String] = js.undefined
   
-  var yAxis: js.UndefOr[String] = js.native
+  var yAxis: js.UndefOr[String] = js.undefined
   
-  var yErrorHighField: js.UndefOr[String] = js.native
+  var yErrorHighField: js.UndefOr[String] = js.undefined
   
-  var yErrorLowField: js.UndefOr[String] = js.native
+  var yErrorLowField: js.UndefOr[String] = js.undefined
   
-  var yField: js.UndefOr[String] = js.native
+  var yField: js.UndefOr[String] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object ChartSeriesItem {
   

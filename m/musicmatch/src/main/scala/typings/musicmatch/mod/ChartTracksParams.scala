@@ -2,15 +2,15 @@ package typings.musicmatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartTracksParams extends Pageable {
+trait ChartTracksParams
+  extends StObject
+     with Pageable {
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var f_has_lyrics: js.UndefOr[TBoolean] = js.native
+  var f_has_lyrics: js.UndefOr[TBoolean] = js.undefined
 }
 object ChartTracksParams {
   

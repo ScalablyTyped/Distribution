@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreencastVisibilityChangedEvent extends StObject {
   
   /**
     * True if the page is visible.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ScreencastVisibilityChangedEvent {
   

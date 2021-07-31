@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CylinderGraphics")
@@ -14,7 +13,7 @@ class CylinderGraphics () extends StObject {
   
   def clone(result: CylinderGraphics): CylinderGraphics = js.native
   
-  var definitionChanged: Event[js.Array[_]] = js.native
+  var definitionChanged: Event[js.Array[js.Any]] = js.native
   
   var fill: Property = js.native
   

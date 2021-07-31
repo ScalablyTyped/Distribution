@@ -5,28 +5,27 @@ import typings.badgin.anon.PartialOptionsFavicon
 import typings.badgin.anon.PartialOptionsIndicator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("badgin", "clear")
+  @JSImport("badgin", JSImport.Namespace)
   @js.native
-  def clear(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("badgin", "set")
-  @js.native
-  def set(value: Value): Unit = js.native
-  @JSImport("badgin", "set")
-  @js.native
-  def set(value: Value, options: PartialOptionsFavicon): Unit = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def set(value: Value): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def set(value: Value, options: PartialOptionsFavicon): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Interface extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def set(value: Value): Unit = js.native
+    def set(value: Value): Unit
   }
   object Interface {
     
@@ -65,14 +64,13 @@ object mod {
     def Title: typings.badgin.badginStrings.Title = "Title".asInstanceOf[typings.badgin.badginStrings.Title]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var favicon: PartialOptions = js.native
+    var favicon: PartialOptions
     
-    var method: Method = js.native
+    var method: Method
     
-    var title: PartialOptionsIndicator = js.native
+    var title: PartialOptionsIndicator
   }
   object Options {
     

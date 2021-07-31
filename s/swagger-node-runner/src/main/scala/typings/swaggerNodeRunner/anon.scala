@@ -5,7 +5,6 @@ import typings.swaggerNodeRunner.mod.SwaggerSecurityHandlers
 import typings.swaggerNodeRunner.mod.SwaggerToolsMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -26,14 +25,13 @@ object anon {
     var attributes: Name = js.native
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**  Name of Plugin (e.g. `swagger-node-runner`) */
-    var name: String = js.native
+    var name: String
     
     /** Version of Plugin */
-    var version: String = js.native
+    var version: String
   }
   object Name {
     
@@ -54,10 +52,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var path: js.Any = js.native
+    var path: js.Any
   }
   object Path {
     
@@ -75,7 +72,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Register extends StObject {
     
     /**
@@ -89,19 +85,33 @@ object anon {
       * Hapi plugin `register` implementation.
       * @see {@link https://hapijs.com/tutorials/plugins|Hapi Docs}
       */
-    def register(server: Server, options: js.Any, next: js.Function0[Unit]): Unit = js.native
+    def register(server: Server, options: js.Any, next: js.Function0[Unit]): Unit
     /**
       * Hapi plugin `register` implementation.
       * @see {@link https://hapijs.com/tutorials/plugins|Hapi Docs}
       */
     @JSName("register")
-    var register_Original: Call = js.native
+    var register_Original: Call
+  }
+  object Register {
+    
+    @scala.inline
+    def apply(register: Call): Register = {
+      val __obj = js.Dynamic.literal(register = register.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Register]
+    }
+    
+    @scala.inline
+    implicit class RegisterMutableBuilder[Self <: Register] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setRegister(value: Call): Self = StObject.set(x, "register", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Swagger extends StObject {
     
-    var swagger: Path = js.native
+    var swagger: Path
   }
   object Swagger {
     
@@ -130,7 +140,7 @@ object anon {
       *
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-metadata.js|Git Source}
       */
-    def swaggerMetadata(rlOrSO: js.Any, apiDeclarations: js.Array[_]): SwaggerToolsMiddleware = js.native
+    def swaggerMetadata(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any]): SwaggerToolsMiddleware = js.native
     
     /**
       *  Middleware for using Swagger information to route requests to handlers.
@@ -160,8 +170,8 @@ object anon {
       *
       * @see {@link https://github.com/apigee-127/swagger-tools/blob/master/middleware/swagger-ui.js|Github Source}
       */
-    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[_]): SwaggerToolsMiddleware = js.native
-    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[_], options: js.Any): SwaggerToolsMiddleware = js.native
+    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any]): SwaggerToolsMiddleware = js.native
+    def swaggerUi(rlOrSO: js.Any, apiDeclarations: js.Array[js.Any], options: js.Any): SwaggerToolsMiddleware = js.native
     
     /**
       * Middleware for using Swagger information to validate API requests/responses.type

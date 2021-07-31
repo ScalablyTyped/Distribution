@@ -2,10 +2,8 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackSettings extends StObject {
   
   //width: number;
@@ -17,7 +15,7 @@ trait MediaTrackSettings extends StObject {
   //sampleRate: number;
   //sampleSize: number;
   //echoCancellation: boolean;
-  var latency: js.UndefOr[Double] = js.native
+  var latency: js.UndefOr[Double] = js.undefined
 }
 object MediaTrackSettings {
   

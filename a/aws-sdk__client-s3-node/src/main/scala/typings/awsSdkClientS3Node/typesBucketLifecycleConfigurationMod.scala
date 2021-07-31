@@ -5,18 +5,16 @@ import typings.awsSdkClientS3Node.typesLifecycleRuleMod.UnmarshalledLifecycleRul
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBucketLifecycleConfigurationMod {
   
-  @js.native
   trait BucketLifecycleConfiguration extends StObject {
     
     /**
       * _LifecycleRules shape
       */
-    var Rules: js.Array[LifecycleRule] | Iterable[LifecycleRule] = js.native
+    var Rules: js.Array[LifecycleRule] | Iterable[LifecycleRule]
   }
   object BucketLifecycleConfiguration {
     
@@ -37,14 +35,15 @@ object typesBucketLifecycleConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledBucketLifecycleConfiguration extends BucketLifecycleConfiguration {
+  trait UnmarshalledBucketLifecycleConfiguration
+    extends StObject
+       with BucketLifecycleConfiguration {
     
     /**
       * _LifecycleRules shape
       */
     @JSName("Rules")
-    var Rules_UnmarshalledBucketLifecycleConfiguration: js.Array[UnmarshalledLifecycleRule] = js.native
+    var Rules_UnmarshalledBucketLifecycleConfiguration: js.Array[UnmarshalledLifecycleRule]
   }
   object UnmarshalledBucketLifecycleConfiguration {
     

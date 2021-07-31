@@ -2,23 +2,21 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderButton extends StObject {
   
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var handler: js.UndefOr[js.Function] = js.native
+  var handler: js.UndefOr[js.Function] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var showOnHover: js.UndefOr[Boolean] = js.native
+  var showOnHover: js.UndefOr[Boolean] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object HeaderButton {
   

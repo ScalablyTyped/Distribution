@@ -2,44 +2,42 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveResultsRequestParams extends StObject {
   
-  var batchIndex: Double = js.native
+  var batchIndex: Double
   
-  var columnEndIndex: Double = js.native
+  var columnEndIndex: Double
   
-  var columnStartIndex: Double = js.native
+  var columnStartIndex: Double
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var filePath: String = js.native
+  var filePath: String
   
-  var formatted: js.UndefOr[Boolean] = js.native
+  var formatted: js.UndefOr[Boolean] = js.undefined
   
-  var includeHeaders: js.UndefOr[Boolean] = js.native
+  var includeHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var lineSeperator: js.UndefOr[String] = js.native
+  var lineSeperator: js.UndefOr[String] = js.undefined
   
-  var ownerUri: String = js.native
+  var ownerUri: String
   
   /**
     * 'csv', 'json', 'excel', 'xml'
     */
-  var resultFormat: String = js.native
+  var resultFormat: String
   
-  var resultSetIndex: Double = js.native
+  var resultSetIndex: Double
   
-  var rowEndIndex: Double = js.native
+  var rowEndIndex: Double
   
-  var rowStartIndex: Double = js.native
+  var rowStartIndex: Double
   
-  var textIdentifier: js.UndefOr[String] = js.native
+  var textIdentifier: js.UndefOr[String] = js.undefined
 }
 object SaveResultsRequestParams {
   

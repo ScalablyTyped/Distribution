@@ -4,27 +4,25 @@ import typings.winrt.Windows.Devices.Input.PointerDevice
 import typings.winrt.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPointerPoint extends StObject {
   
-  var frameId: Double = js.native
+  var frameId: Double
   
-  var isInContact: Boolean = js.native
+  var isInContact: Boolean
   
-  var pointerDevice: PointerDevice = js.native
+  var pointerDevice: PointerDevice
   
-  var pointerId: Double = js.native
+  var pointerId: Double
   
-  var position: Point = js.native
+  var position: Point
   
-  var properties: PointerPointProperties = js.native
+  var properties: PointerPointProperties
   
-  var rawPosition: Point = js.native
+  var rawPosition: Point
   
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object IPointerPoint {
   

@@ -9,7 +9,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -115,22 +114,21 @@ object mod {
   
   type AttrFn = js.Function1[/* chunk */ Chunk, js.Object]
   
-  @js.native
   trait Chunk extends StObject {
     
-    var chunk: String = js.native
+    var chunk: String
     
-    var filename: String = js.native
+    var filename: String
     
-    var linkType: String = js.native
+    var linkType: String
     
-    var path: String = js.native
+    var path: String
     
-    var scriptType: String = js.native
+    var scriptType: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object Chunk {
     
@@ -175,10 +173,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ChunkExtractorManagerProps extends StObject {
     
-    var extractor: ChunkExtractor = js.native
+    var extractor: ChunkExtractor
   }
   object ChunkExtractorManagerProps {
     
@@ -196,5 +193,5 @@ object mod {
     }
   }
   
-  type ChunkExtractorOptions = Entrypoints with (StatsFile | Stats)
+  type ChunkExtractorOptions = Entrypoints & (StatsFile | Stats)
 }

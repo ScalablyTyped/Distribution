@@ -2,21 +2,19 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddNotificationChannelsRequest extends StObject {
   
   /**
     * One or 2 channels to report to when anomalies are detected.
     */
-  var channels: Channels = js.native
+  var channels: Channels
   
   /**
     * The name of the profiling group that we are setting up notifications for.
     */
-  var profilingGroupName: ProfilingGroupName = js.native
+  var profilingGroupName: ProfilingGroupName
 }
 object AddNotificationChannelsRequest {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLinksRequest extends StObject {
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * One or more link IDs. The maximum is 10.
     */
-  var LinkIds: js.UndefOr[StringList] = js.native
+  var LinkIds: js.UndefOr[StringList] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The link provider.
     */
-  var Provider: js.UndefOr[String] = js.native
+  var Provider: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the site.
     */
-  var SiteId: js.UndefOr[String] = js.native
+  var SiteId: js.UndefOr[String] = js.undefined
   
   /**
     * The link type.
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object GetLinksRequest {
   

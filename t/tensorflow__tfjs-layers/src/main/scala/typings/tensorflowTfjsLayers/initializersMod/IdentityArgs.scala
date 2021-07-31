@@ -2,16 +2,14 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityArgs extends StObject {
   
   /**
     * Multiplicative factor to apply to the identity matrix.
     */
-  var gain: js.UndefOr[Double] = js.native
+  var gain: js.UndefOr[Double] = js.undefined
 }
 object IdentityArgs {
   

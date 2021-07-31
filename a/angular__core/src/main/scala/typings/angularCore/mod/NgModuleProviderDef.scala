@@ -2,21 +2,19 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NgModuleProviderDef extends StObject {
   
-  var deps: js.Array[DepDef] = js.native
+  var deps: js.Array[DepDef]
   
-  var flags: ɵNodeFlags = js.native
+  var flags: ɵNodeFlags
   
-  var index: Double = js.native
+  var index: Double
   
-  var token: js.Any = js.native
+  var token: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object NgModuleProviderDef {
   

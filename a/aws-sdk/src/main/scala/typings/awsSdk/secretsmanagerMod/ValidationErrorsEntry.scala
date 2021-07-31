@@ -2,21 +2,19 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationErrorsEntry extends StObject {
   
   /**
     * Checks the name of the policy.
     */
-  var CheckName: js.UndefOr[NameType] = js.native
+  var CheckName: js.UndefOr[NameType] = js.undefined
   
   /**
     * Displays error messages if validation encounters problems during validation of the resource policy.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.secretsmanagerMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.secretsmanagerMod.ErrorMessage] = js.undefined
 }
 object ValidationErrorsEntry {
   

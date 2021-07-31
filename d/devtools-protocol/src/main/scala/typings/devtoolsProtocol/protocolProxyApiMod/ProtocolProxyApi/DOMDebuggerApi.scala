@@ -12,56 +12,54 @@ import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetInstrumentationBreak
 import typings.devtoolsProtocol.mod.Protocol.DOMDebugger.SetXHRBreakpointRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMDebuggerApi extends StObject {
   
   /**
     * Returns event listeners of the given object.
     */
-  def getEventListeners(params: GetEventListenersRequest): js.Promise[GetEventListenersResponse] = js.native
+  def getEventListeners(params: GetEventListenersRequest): js.Promise[GetEventListenersResponse]
   
   /**
     * Removes DOM breakpoint that was set using `setDOMBreakpoint`.
     */
-  def removeDOMBreakpoint(params: RemoveDOMBreakpointRequest): js.Promise[Unit] = js.native
+  def removeDOMBreakpoint(params: RemoveDOMBreakpointRequest): js.Promise[Unit]
   
   /**
     * Removes breakpoint on particular DOM event.
     */
-  def removeEventListenerBreakpoint(params: RemoveEventListenerBreakpointRequest): js.Promise[Unit] = js.native
+  def removeEventListenerBreakpoint(params: RemoveEventListenerBreakpointRequest): js.Promise[Unit]
   
   /**
     * Removes breakpoint on particular native event.
     */
-  def removeInstrumentationBreakpoint(params: RemoveInstrumentationBreakpointRequest): js.Promise[Unit] = js.native
+  def removeInstrumentationBreakpoint(params: RemoveInstrumentationBreakpointRequest): js.Promise[Unit]
   
   /**
     * Removes breakpoint from XMLHttpRequest.
     */
-  def removeXHRBreakpoint(params: RemoveXHRBreakpointRequest): js.Promise[Unit] = js.native
+  def removeXHRBreakpoint(params: RemoveXHRBreakpointRequest): js.Promise[Unit]
   
   /**
     * Sets breakpoint on particular operation with DOM.
     */
-  def setDOMBreakpoint(params: SetDOMBreakpointRequest): js.Promise[Unit] = js.native
+  def setDOMBreakpoint(params: SetDOMBreakpointRequest): js.Promise[Unit]
   
   /**
     * Sets breakpoint on particular DOM event.
     */
-  def setEventListenerBreakpoint(params: SetEventListenerBreakpointRequest): js.Promise[Unit] = js.native
+  def setEventListenerBreakpoint(params: SetEventListenerBreakpointRequest): js.Promise[Unit]
   
   /**
     * Sets breakpoint on particular native event.
     */
-  def setInstrumentationBreakpoint(params: SetInstrumentationBreakpointRequest): js.Promise[Unit] = js.native
+  def setInstrumentationBreakpoint(params: SetInstrumentationBreakpointRequest): js.Promise[Unit]
   
   /**
     * Sets breakpoint on XMLHttpRequest.
     */
-  def setXHRBreakpoint(params: SetXHRBreakpointRequest): js.Promise[Unit] = js.native
+  def setXHRBreakpoint(params: SetXHRBreakpointRequest): js.Promise[Unit]
 }
 object DOMDebuggerApi {
   

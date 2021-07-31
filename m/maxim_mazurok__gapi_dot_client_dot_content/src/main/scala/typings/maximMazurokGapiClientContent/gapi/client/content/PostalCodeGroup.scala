@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostalCodeGroup extends StObject {
   
   /** The CLDR territory code of the country the postal code group applies to. Required. */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The name of the postal code group, referred to in headers. Required. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** A range of postal codes. Required. */
-  var postalCodeRanges: js.UndefOr[js.Array[PostalCodeRange]] = js.native
+  var postalCodeRanges: js.UndefOr[js.Array[PostalCodeRange]] = js.undefined
 }
 object PostalCodeGroup {
   

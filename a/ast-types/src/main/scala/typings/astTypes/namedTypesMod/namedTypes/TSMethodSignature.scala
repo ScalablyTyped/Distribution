@@ -18,15 +18,14 @@ import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
 /* Inlined parent ast-types.ast-types/gen/namedTypes.namedTypes.TSHasOptionalTypeParameters */
 /* Inlined parent ast-types.ast-types/gen/namedTypes.namedTypes.TSHasOptionalTypeAnnotation */
-@js.native
 trait TSMethodSignature
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with NodeKind
      with PrintableKind
@@ -34,23 +33,23 @@ trait TSMethodSignature
      with TSHasOptionalTypeAnnotationKind
      with TSHasOptionalTypeParametersKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var computed: js.UndefOr[Boolean] = js.native
+  var computed: js.UndefOr[Boolean] = js.undefined
   
-  var key: ExpressionKind = js.native
+  var key: ExpressionKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
   
-  var parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind] = js.native
+  var parameters: js.Array[IdentifierKind | RestElementKind | ArrayPatternKind | ObjectPatternKind]
   
-  var `type`: typings.astTypes.astTypesStrings.TSMethodSignature = js.native
+  var `type`: typings.astTypes.astTypesStrings.TSMethodSignature
   
-  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.native
+  var typeAnnotation: js.UndefOr[TSTypeAnnotationKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object TSMethodSignature {
   

@@ -3,10 +3,8 @@ package typings.dynatable.JQueryDynatable
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Readers extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait Readers extends StObject {
     *    return $(cell).html();
     * };
     */
-  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ js.Any, _]] = js.native
+  var _attributeReader: js.UndefOr[js.Function2[/* cell */ Element, /* record */ js.Any, js.Any]] = js.undefined
   
   /**
     * Function that interprets the row into data
@@ -40,7 +38,9 @@ trait Readers extends StObject {
     *     //...
     * };
     */
-  var _rowReader: js.UndefOr[js.Function3[/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any, _]] = js.native
+  var _rowReader: js.UndefOr[
+    js.Function3[/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any, js.Any]
+  ] = js.undefined
 }
 object Readers {
   
@@ -54,13 +54,13 @@ object Readers {
   implicit class ReadersMutableBuilder[Self <: Readers] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def set_attributeReader(value: (/* cell */ Element, /* record */ js.Any) => _): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
+    def set_attributeReader(value: (/* cell */ Element, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_attributeReader", js.Any.fromFunction2(value))
     
     @scala.inline
     def set_attributeReaderUndefined: Self = StObject.set(x, "_attributeReader", js.undefined)
     
     @scala.inline
-    def set_rowReader(value: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => _): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
+    def set_rowReader(value: (/* index */ Double, /* thisRef */ js.Any, /* record */ js.Any) => js.Any): Self = StObject.set(x, "_rowReader", js.Any.fromFunction3(value))
     
     @scala.inline
     def set_rowReaderUndefined: Self = StObject.set(x, "_rowReader", js.undefined)

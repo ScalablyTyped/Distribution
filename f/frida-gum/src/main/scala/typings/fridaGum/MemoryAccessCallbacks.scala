@@ -2,16 +2,14 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Callbacks to be notified synchronously on memory access.
   */
-@js.native
 trait MemoryAccessCallbacks extends StObject {
   
-  def onAccess(details: MemoryAccessDetails): Unit = js.native
+  def onAccess(details: MemoryAccessDetails): Unit
 }
 object MemoryAccessCallbacks {
   

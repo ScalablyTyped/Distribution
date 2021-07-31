@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketPolicy extends StObject {
   
   /**
     * Specifies whether the bucket policy allows the general public to have read access to the bucket.
     */
-  var allowsPublicReadAccess: js.UndefOr[boolean] = js.native
+  var allowsPublicReadAccess: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether the bucket policy allows the general public to have write access to the bucket.
     */
-  var allowsPublicWriteAccess: js.UndefOr[boolean] = js.native
+  var allowsPublicWriteAccess: js.UndefOr[boolean] = js.undefined
 }
 object BucketPolicy {
   

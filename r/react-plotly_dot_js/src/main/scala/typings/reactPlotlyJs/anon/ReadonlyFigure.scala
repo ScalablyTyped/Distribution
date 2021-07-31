@@ -4,18 +4,16 @@ import typings.plotlyJs.mod.Data
 import typings.plotlyJs.mod.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-plotly.js.react-plotly.js.Figure> */
-@js.native
 trait ReadonlyFigure extends StObject {
   
-  val data: js.Array[Data] = js.native
+  val data: js.Array[Data]
   
-  val frames: js.UndefOr[js.Array[Frame] | Null] = js.native
+  val frames: js.UndefOr[js.Array[Frame] | Null] = js.undefined
   
-  val layout: PartialLayout = js.native
+  val layout: PartialLayout
 }
 object ReadonlyFigure {
   

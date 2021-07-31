@@ -27,25 +27,23 @@ import typings.appBuilderLib.winOptionsMod.WindowsConfiguration
 import typings.builderUtil.archMod.Arch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationMod {
   
-  @js.native
   trait AfterPackContext extends StObject {
     
-    val appOutDir: String = js.native
+    val appOutDir: String
     
-    val arch: Arch = js.native
+    val arch: Arch
     
-    val electronPlatformName: String = js.native
+    val electronPlatformName: String
     
-    val outDir: String = js.native
+    val outDir: String
     
-    val packager: PlatformPackager[_] = js.native
+    val packager: PlatformPackager[js.Any]
     
-    val targets: js.Array[Target] = js.native
+    val targets: js.Array[Target]
   }
   object AfterPackContext {
     
@@ -55,7 +53,7 @@ object configurationMod {
       arch: Arch,
       electronPlatformName: String,
       outDir: String,
-      packager: PlatformPackager[_],
+      packager: PlatformPackager[js.Any],
       targets: js.Array[Target]
     ): AfterPackContext = {
       val __obj = js.Dynamic.literal(appOutDir = appOutDir.asInstanceOf[js.Any], arch = arch.asInstanceOf[js.Any], electronPlatformName = electronPlatformName.asInstanceOf[js.Any], outDir = outDir.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], targets = targets.asInstanceOf[js.Any])
@@ -78,7 +76,7 @@ object configurationMod {
       def setOutDir(value: String): Self = StObject.set(x, "outDir", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPackager(value: PlatformPackager[_]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTargets(value: js.Array[Target]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
@@ -88,165 +86,170 @@ object configurationMod {
     }
   }
   
-  @js.native
-  trait Configuration extends PlatformSpecificBuildOptions {
+  trait Configuration
+    extends StObject
+       with PlatformSpecificBuildOptions {
     
     /**
       * The function (or path to file or module id) to be [run after all artifacts are build](#afterAllArtifactBuild).
       */
     val afterAllArtifactBuild: js.UndefOr[
         (js.Function1[/* context */ BuildResult, js.Promise[js.Array[String]] | js.Array[String]]) | String | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be [run after pack](#afterpack) (but before pack into distributable format and sign).
       */
     val afterPack: js.UndefOr[
-        (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | String | Null
-      ] = js.native
+        (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String | Null
+      ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be [run after pack and sign](#aftersign) (but before pack into distributable format).
       */
     val afterSign: js.UndefOr[
-        (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | String | Null
-      ] = js.native
+        (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String | Null
+      ] = js.undefined
     
-    val apk: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.native
+    val apk: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
     
     /**
       * AppImage options.
       */
-    val appImage: js.UndefOr[AppImageOptions | Null] = js.native
+    val appImage: js.UndefOr[AppImageOptions | Null] = js.undefined
     
-    val appx: js.UndefOr[AppXOptions | Null] = js.native
+    val appx: js.UndefOr[AppXOptions | Null] = js.undefined
     
     /**
       * Appx manifest created on disk - not packed into .appx package yet.
       */
-    val appxManifestCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[_] | _]) | String | Null] = js.native
+    val appxManifestCreated: js.UndefOr[(js.Function1[/* path */ String, js.Promise[js.Any] | js.Any]) | String | Null] = js.undefined
     
     /**
       * The function (or path to file or module id) to be run on artifact build completed.
       */
-    val artifactBuildCompleted: js.UndefOr[(js.Function1[/* context */ ArtifactCreated, js.Promise[_] | _]) | String | Null] = js.native
+    val artifactBuildCompleted: js.UndefOr[
+        (js.Function1[/* context */ ArtifactCreated, js.Promise[js.Any] | js.Any]) | String | Null
+      ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be run on artifact build start.
       */
     val artifactBuildStarted: js.UndefOr[
-        (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[_] | _]) | String | Null
-      ] = js.native
+        (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[js.Any] | js.Any]) | String | Null
+      ] = js.undefined
     
     /**
       * The function (or path to file or module id) to be run before dependencies are installed or rebuilt. Works when `npmRebuild` is set to `true`. Resolving to `false` will skip dependencies install or rebuild.
       *
       * If provided and `node_modules` are missing, it will not invoke production dependencies check.
       */
-    val beforeBuild: js.UndefOr[(js.Function1[/* context */ BeforeBuildContext, js.Promise[_]]) | String | Null] = js.native
+    val beforeBuild: js.UndefOr[
+        (js.Function1[/* context */ BeforeBuildContext, js.Promise[js.Any]]) | String | Null
+      ] = js.undefined
     
     /**
       * Whether to build the application native dependencies from source.
       * @default false
       */
-    var buildDependenciesFromSource: js.UndefOr[Boolean] = js.native
+    var buildDependenciesFromSource: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The build version. Maps to the `CFBundleVersion` on macOS, and `FileVersion` metadata property on Windows. Defaults to the `version`.
       * If `TRAVIS_BUILD_NUMBER` or `APPVEYOR_BUILD_NUMBER` or `CIRCLE_BUILD_NUM` or `BUILD_NUMBER` or `bamboo.buildNumber` or `CI_PIPELINE_IID` env defined, it will be used as a build version (`version.build_number`).
       */
-    val buildVersion: js.UndefOr[String | Null] = js.native
+    val buildVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The human-readable copyright line for the app.
       * @default Copyright © year ${author}
       */
-    val copyright: js.UndefOr[String | Null] = js.native
+    val copyright: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Debian package options.
       */
-    val deb: js.UndefOr[DebOptions | Null] = js.native
+    val deb: js.UndefOr[DebOptions | Null] = js.undefined
     
-    val directories: js.UndefOr[MetadataDirectories | Null] = js.native
+    val directories: js.UndefOr[MetadataDirectories | Null] = js.undefined
     
     /**
       * macOS DMG options.
       */
-    val dmg: js.UndefOr[DmgOptions | Null] = js.native
+    val dmg: js.UndefOr[DmgOptions | Null] = js.undefined
     
     /**
       * Whether to use [electron-compile](http://github.com/electron/electron-compile) to compile app. Defaults to `true` if `electron-compile` in the dependencies. And `false` if in the `devDependencies` or doesn't specified.
       */
-    val electronCompile: js.UndefOr[Boolean] = js.native
+    val electronCompile: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to custom Electron build (e.g. `~/electron/out/R`).
       */
-    val electronDist: js.UndefOr[String] = js.native
+    val electronDist: js.UndefOr[String] = js.undefined
     
     /**
       * The [electron-download](https://github.com/electron-userland/electron-download#usage) options.
       */
-    val electronDownload: js.UndefOr[ElectronDownloadOptions] = js.native
+    val electronDownload: js.UndefOr[ElectronDownloadOptions] = js.undefined
     
     /**
       * The version of electron you are packaging for. Defaults to version of `electron`, `electron-prebuilt` or `electron-prebuilt-compile` dependency.
       */
-    var electronVersion: js.UndefOr[String | Null] = js.native
+    var electronVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The name of a built-in configuration preset or path to config file (relative to project dir). Currently, only `react-cra` is supported.
       *
       * If `react-scripts` in the app dependencies, `react-cra` will be set automatically. Set to `null` to disable automatic detection.
       */
-    var `extends`: js.UndefOr[String | Null] = js.native
+    var `extends`: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Inject properties to `package.json`.
       */
-    val extraMetadata: js.UndefOr[js.Any] = js.native
+    val extraMetadata: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The framework name. One of `electron`, `proton`, `libui`. Defaults to `electron`.
       */
-    val framework: js.UndefOr[String | Null] = js.native
+    val framework: js.UndefOr[String | Null] = js.undefined
     
-    val freebsd: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.native
+    val freebsd: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
     
     /**
       * Whether to include PDB files.
       * @default false
       */
-    val includePdb: js.UndefOr[Boolean] = js.native
+    val includePdb: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *libui-based frameworks only* The version of LaunchUI you are packaging for. Applicable for Windows only. Defaults to version suitable for used framework version.
       */
-    val launchUiVersion: js.UndefOr[Boolean | String | Null] = js.native
+    val launchUiVersion: js.UndefOr[Boolean | String | Null] = js.undefined
     
     /**
       * Options related to how build Linux targets.
       */
-    val linux: js.UndefOr[LinuxConfiguration | Null] = js.native
+    val linux: js.UndefOr[LinuxConfiguration | Null] = js.undefined
     
     /**
       * Options related to how build macOS targets.
       */
-    val mac: js.UndefOr[MacConfiguration | Null] = js.native
+    val mac: js.UndefOr[MacConfiguration | Null] = js.undefined
     
     /**
       * MAS (Mac Application Store) options.
       */
-    val mas: js.UndefOr[MasConfiguration | Null] = js.native
+    val mas: js.UndefOr[MasConfiguration | Null] = js.undefined
     
     /**
       * MAS (Mac Application Store) development options (`mas-dev` target).
       */
-    val masDev: js.UndefOr[MasConfiguration | Null] = js.native
+    val masDev: js.UndefOr[MasConfiguration | Null] = js.undefined
     
     /** @private */
-    val msi: js.UndefOr[MsiOptions | Null] = js.native
+    val msi: js.UndefOr[MsiOptions | Null] = js.undefined
     
     /**
       * Whether to execute `node-gyp rebuild` before starting to package the app.
@@ -254,76 +257,76 @@ object configurationMod {
       * Don't [use](https://github.com/electron-userland/electron-builder/issues/683#issuecomment-241214075) [npm](http://electron.atom.io/docs/tutorial/using-native-node-modules/#using-npm) (neither `.npmrc`) for configuring electron headers. Use `electron-builder node-gyp-rebuild` instead.
       * @default false
       */
-    val nodeGypRebuild: js.UndefOr[Boolean] = js.native
+    val nodeGypRebuild: js.UndefOr[Boolean] = js.undefined
     
     /**
       * *libui-based frameworks only* The version of NodeJS you are packaging for.
       * You can set it to `current` to set the Node.js version that you use to run.
       */
-    val nodeVersion: js.UndefOr[String | Null] = js.native
+    val nodeVersion: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Additional command line arguments to use when installing app native deps.
       */
-    val npmArgs: js.UndefOr[js.Array[String] | String | Null] = js.native
+    val npmArgs: js.UndefOr[js.Array[String] | String | Null] = js.undefined
     
     /**
       * Whether to [rebuild](https://docs.npmjs.com/cli/rebuild) native dependencies before starting to package the app.
       * @default true
       */
-    val npmRebuild: js.UndefOr[Boolean] = js.native
+    val npmRebuild: js.UndefOr[Boolean] = js.undefined
     
-    val nsis: js.UndefOr[NsisOptions | Null] = js.native
+    val nsis: js.UndefOr[NsisOptions | Null] = js.undefined
     
-    val nsisWeb: js.UndefOr[NsisWebOptions | Null] = js.native
+    val nsisWeb: js.UndefOr[NsisWebOptions | Null] = js.undefined
     
     /**
       * The function (or path to file or module id) to be [run on each node module](#onnodemodulefile) file.
       */
-    val onNodeModuleFile: js.UndefOr[(js.Function1[/* file */ String, Unit]) | String | Null] = js.native
+    val onNodeModuleFile: js.UndefOr[(js.Function1[/* file */ String, Unit]) | String | Null] = js.undefined
     
-    val p5p: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.native
+    val p5p: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
     
-    val pacman: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.native
+    val pacman: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
     
     /**
       * macOS PKG options.
       */
-    val pkg: js.UndefOr[PkgOptions | Null] = js.native
+    val pkg: js.UndefOr[PkgOptions | Null] = js.undefined
     
-    val portable: js.UndefOr[PortableOptions | Null] = js.native
+    val portable: js.UndefOr[PortableOptions | Null] = js.undefined
     
     /**
       * As [name](#Metadata-name), but allows you to specify a product name for your executable which contains spaces and other special characters not allowed in the [name property](https://docs.npmjs.com/files/package.json#name).
       */
-    val productName: js.UndefOr[String | Null] = js.native
+    val productName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * Whether to build using Electron Build Service if target not supported on current OS.
       * @default true
       */
-    val remoteBuild: js.UndefOr[Boolean] = js.native
+    val remoteBuild: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to remove `scripts` field from `package.json` files.
       *
       * @default true
       */
-    val removePackageScripts: js.UndefOr[Boolean] = js.native
+    val removePackageScripts: js.UndefOr[Boolean] = js.undefined
     
-    val rpm: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.native
+    val rpm: js.UndefOr[LinuxTargetSpecificOptions | Null] = js.undefined
     
     /**
       * Snap options.
       */
-    val snap: js.UndefOr[SnapOptions | Null] = js.native
+    val snap: js.UndefOr[SnapOptions | Null] = js.undefined
     
-    val squirrelWindows: js.UndefOr[SquirrelWindowsOptions | Null] = js.native
+    val squirrelWindows: js.UndefOr[SquirrelWindowsOptions | Null] = js.undefined
     
     /**
       * Options related to how build Windows targets.
       */
-    val win: js.UndefOr[WindowsConfiguration | Null] = js.native
+    val win: js.UndefOr[WindowsConfiguration | Null] = js.undefined
   }
   object Configuration {
     
@@ -351,10 +354,10 @@ object configurationMod {
       def setAfterAllArtifactBuildUndefined: Self = StObject.set(x, "afterAllArtifactBuild", js.undefined)
       
       @scala.inline
-      def setAfterPack(value: (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | String): Self = StObject.set(x, "afterPack", value.asInstanceOf[js.Any])
+      def setAfterPack(value: (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "afterPack", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAfterPackFunction1(value: /* context */ AfterPackContext => js.Promise[_] | _): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
+      def setAfterPackFunction1(value: /* context */ AfterPackContext => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "afterPack", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterPackNull: Self = StObject.set(x, "afterPack", null)
@@ -363,10 +366,10 @@ object configurationMod {
       def setAfterPackUndefined: Self = StObject.set(x, "afterPack", js.undefined)
       
       @scala.inline
-      def setAfterSign(value: (js.Function1[/* context */ AfterPackContext, js.Promise[_] | _]) | String): Self = StObject.set(x, "afterSign", value.asInstanceOf[js.Any])
+      def setAfterSign(value: (js.Function1[/* context */ AfterPackContext, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "afterSign", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAfterSignFunction1(value: /* context */ AfterPackContext => js.Promise[_] | _): Self = StObject.set(x, "afterSign", js.Any.fromFunction1(value))
+      def setAfterSignFunction1(value: /* context */ AfterPackContext => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "afterSign", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAfterSignNull: Self = StObject.set(x, "afterSign", null)
@@ -396,10 +399,10 @@ object configurationMod {
       def setAppx(value: AppXOptions): Self = StObject.set(x, "appx", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAppxManifestCreated(value: (js.Function1[/* path */ String, js.Promise[_] | _]) | String): Self = StObject.set(x, "appxManifestCreated", value.asInstanceOf[js.Any])
+      def setAppxManifestCreated(value: (js.Function1[/* path */ String, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "appxManifestCreated", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAppxManifestCreatedFunction1(value: /* path */ String => js.Promise[_] | _): Self = StObject.set(x, "appxManifestCreated", js.Any.fromFunction1(value))
+      def setAppxManifestCreatedFunction1(value: /* path */ String => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "appxManifestCreated", js.Any.fromFunction1(value))
       
       @scala.inline
       def setAppxManifestCreatedNull: Self = StObject.set(x, "appxManifestCreated", null)
@@ -414,10 +417,10 @@ object configurationMod {
       def setAppxUndefined: Self = StObject.set(x, "appx", js.undefined)
       
       @scala.inline
-      def setArtifactBuildCompleted(value: (js.Function1[/* context */ ArtifactCreated, js.Promise[_] | _]) | String): Self = StObject.set(x, "artifactBuildCompleted", value.asInstanceOf[js.Any])
+      def setArtifactBuildCompleted(value: (js.Function1[/* context */ ArtifactCreated, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "artifactBuildCompleted", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setArtifactBuildCompletedFunction1(value: /* context */ ArtifactCreated => js.Promise[_] | _): Self = StObject.set(x, "artifactBuildCompleted", js.Any.fromFunction1(value))
+      def setArtifactBuildCompletedFunction1(value: /* context */ ArtifactCreated => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "artifactBuildCompleted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setArtifactBuildCompletedNull: Self = StObject.set(x, "artifactBuildCompleted", null)
@@ -426,10 +429,10 @@ object configurationMod {
       def setArtifactBuildCompletedUndefined: Self = StObject.set(x, "artifactBuildCompleted", js.undefined)
       
       @scala.inline
-      def setArtifactBuildStarted(value: (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[_] | _]) | String): Self = StObject.set(x, "artifactBuildStarted", value.asInstanceOf[js.Any])
+      def setArtifactBuildStarted(value: (js.Function1[/* context */ ArtifactBuildStarted, js.Promise[js.Any] | js.Any]) | String): Self = StObject.set(x, "artifactBuildStarted", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setArtifactBuildStartedFunction1(value: /* context */ ArtifactBuildStarted => js.Promise[_] | _): Self = StObject.set(x, "artifactBuildStarted", js.Any.fromFunction1(value))
+      def setArtifactBuildStartedFunction1(value: /* context */ ArtifactBuildStarted => js.Promise[js.Any] | js.Any): Self = StObject.set(x, "artifactBuildStarted", js.Any.fromFunction1(value))
       
       @scala.inline
       def setArtifactBuildStartedNull: Self = StObject.set(x, "artifactBuildStarted", null)
@@ -438,10 +441,10 @@ object configurationMod {
       def setArtifactBuildStartedUndefined: Self = StObject.set(x, "artifactBuildStarted", js.undefined)
       
       @scala.inline
-      def setBeforeBuild(value: (js.Function1[/* context */ BeforeBuildContext, js.Promise[_]]) | String): Self = StObject.set(x, "beforeBuild", value.asInstanceOf[js.Any])
+      def setBeforeBuild(value: (js.Function1[/* context */ BeforeBuildContext, js.Promise[js.Any]]) | String): Self = StObject.set(x, "beforeBuild", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBeforeBuildFunction1(value: /* context */ BeforeBuildContext => js.Promise[_]): Self = StObject.set(x, "beforeBuild", js.Any.fromFunction1(value))
+      def setBeforeBuildFunction1(value: /* context */ BeforeBuildContext => js.Promise[js.Any]): Self = StObject.set(x, "beforeBuild", js.Any.fromFunction1(value))
       
       @scala.inline
       def setBeforeBuildNull: Self = StObject.set(x, "beforeBuild", null)
@@ -778,13 +781,12 @@ object configurationMod {
     }
   }
   
-  @js.native
   trait MetadataDirectories extends StObject {
     
     /**
       * The application directory (containing the application package.json), defaults to `app`, `www` or working directory.
       */
-    val app: js.UndefOr[String | Null] = js.native
+    val app: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The path to build resources.
@@ -792,13 +794,13 @@ object configurationMod {
       * Please note — build resources are not packed into the app. If you need to use some files, e.g. as tray icon, please include required files explicitly: `"files": ["**\/ *", "build/icon.*"]`
       * @default build
       */
-    val buildResources: js.UndefOr[String | Null] = js.native
+    val buildResources: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The output directory. [File macros](/file-patterns#file-macros) are supported.
       * @default dist
       */
-    val output: js.UndefOr[String | Null] = js.native
+    val output: js.UndefOr[String | Null] = js.undefined
   }
   object MetadataDirectories {
     

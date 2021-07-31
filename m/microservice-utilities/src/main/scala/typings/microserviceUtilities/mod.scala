@@ -3,7 +3,6 @@ package typings.microserviceUtilities
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,12 +25,12 @@ object mod {
     ) = this()
     def this(
       logFunction: js.Function1[/* msg */ js.Any, Unit],
-      tokenResolverFunction: js.UndefOr[scala.Nothing],
+      tokenResolverFunction: js.Function0[js.Promise[String]],
       configuration: PlatformClientConfiguration
     ) = this()
     def this(
       logFunction: js.Function1[/* msg */ js.Any, Unit],
-      tokenResolverFunction: js.Function0[js.Promise[String]],
+      tokenResolverFunction: Unit,
       configuration: PlatformClientConfiguration
     ) = this()
     
@@ -39,9 +38,9 @@ object mod {
     def delete[T](url: String, headers: StringDictionary[String]): js.Promise[PlatformClientResponse[T]] = js.native
     
     def get[T](url: String): js.Promise[PlatformClientResponse[T]] = js.native
-    def get[T](url: String, headers: js.UndefOr[scala.Nothing], `type`: String): js.Promise[PlatformClientResponse[T]] = js.native
     def get[T](url: String, headers: StringDictionary[String]): js.Promise[PlatformClientResponse[T]] = js.native
     def get[T](url: String, headers: StringDictionary[String], `type`: String): js.Promise[PlatformClientResponse[T]] = js.native
+    def get[T](url: String, headers: Unit, `type`: String): js.Promise[PlatformClientResponse[T]] = js.native
     
     def head[T](url: String): js.Promise[PlatformClientResponse[T]] = js.native
     def head[T](url: String, headers: StringDictionary[String]): js.Promise[PlatformClientResponse[T]] = js.native
@@ -78,12 +77,11 @@ object mod {
     def getTokenWithoutCache(): js.Promise[String] = js.native
   }
   
-  @js.native
   trait AuthorizerConfiguration extends StObject {
     
-    var authorizerContextResolver: js.UndefOr[String] = js.native
+    var authorizerContextResolver: js.UndefOr[String] = js.undefined
     
-    var jwkKeyListUrl: String = js.native
+    var jwkKeyListUrl: String
   }
   object AuthorizerConfiguration {
     
@@ -107,12 +105,11 @@ object mod {
     }
   }
   
-  @js.native
   trait AuthorizerPolicy extends StObject {
     
-    var policyDocument: js.Object = js.native
+    var policyDocument: js.Object
     
-    var principalId: String = js.native
+    var principalId: String
   }
   object AuthorizerPolicy {
     
@@ -133,10 +130,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PlatformClientConfiguration extends StObject {
     
-    var client: js.Object = js.native
+    var client: js.Object
   }
   object PlatformClientConfiguration {
     
@@ -154,20 +150,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PlatformClientResponse[T] extends StObject {
     
-    var config: js.Object = js.native
+    var config: js.Object
     
-    var data: js.UndefOr[T] = js.native
+    var data: js.UndefOr[T] = js.undefined
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var request: js.UndefOr[js.Any] = js.native
+    var request: js.UndefOr[js.Any] = js.undefined
     
-    var status: Double = js.native
+    var status: Double
     
-    var statusText: String = js.native
+    var statusText: String
   }
   object PlatformClientResponse {
     
@@ -178,7 +173,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PlatformClientResponseMutableBuilder[Self <: PlatformClientResponse[_], T] (val x: Self with PlatformClientResponse[T]) extends AnyVal {
+    implicit class PlatformClientResponseMutableBuilder[Self <: PlatformClientResponse[?], T] (val x: Self & PlatformClientResponse[T]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: js.Object): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -206,14 +201,13 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestLoggerConfiguration extends StObject {
     
-    var extendErrorObjects: js.UndefOr[Boolean] = js.native
+    var extendErrorObjects: js.UndefOr[Boolean] = js.undefined
     
-    var jsonSpace: js.UndefOr[Double] = js.native
+    var jsonSpace: js.UndefOr[Double] = js.undefined
     
-    var logFunction: js.UndefOr[js.Function1[/* msg */ js.Any, Unit]] = js.native
+    var logFunction: js.UndefOr[js.Function1[/* msg */ js.Any, Unit]] = js.undefined
   }
   object RequestLoggerConfiguration {
     
@@ -246,16 +240,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ServiceTokenProviderConfiguration extends StObject {
     
-    var audience: String = js.native
+    var audience: String
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var encryptedClientSecret: String = js.native
+    var encryptedClientSecret: String
     
-    var tokenEndpoint: String = js.native
+    var tokenEndpoint: String
   }
   object ServiceTokenProviderConfiguration {
     

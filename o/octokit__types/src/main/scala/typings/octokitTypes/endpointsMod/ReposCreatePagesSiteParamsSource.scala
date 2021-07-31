@@ -4,15 +4,13 @@ import typings.octokitTypes.octokitTypesStrings.Slash
 import typings.octokitTypes.octokitTypesStrings.Slashdocs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposCreatePagesSiteParamsSource extends StObject {
   
-  var branch: String = js.native
+  var branch: String
   
-  var path: js.UndefOr[Slash | Slashdocs] = js.native
+  var path: js.UndefOr[Slash | Slashdocs] = js.undefined
 }
 object ReposCreatePagesSiteParamsSource {
   

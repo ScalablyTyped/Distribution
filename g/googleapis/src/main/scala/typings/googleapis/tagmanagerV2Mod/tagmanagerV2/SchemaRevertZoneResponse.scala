@@ -2,13 +2,11 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of reverting a zone in a workspace.
   */
-@js.native
 trait SchemaRevertZoneResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRevertZoneResponse extends StObject {
     * workspace synchronization operation. If no zone is present, that means
     * the zone was deleted in the latest container version.
     */
-  var zone: js.UndefOr[SchemaZone] = js.native
+  var zone: js.UndefOr[SchemaZone] = js.undefined
 }
 object SchemaRevertZoneResponse {
   

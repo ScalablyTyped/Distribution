@@ -3,23 +3,28 @@ package typings.stompit
 import typings.stompit.clientMod.Ack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stompitStrings {
   
   @js.native
-  sealed trait auto extends Ack
+  sealed trait auto
+    extends StObject
+       with Ack
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait client extends Ack
+  sealed trait client
+    extends StObject
+       with Ack
   @scala.inline
   def client: client = "client".asInstanceOf[client]
   
   @js.native
-  sealed trait `client-individual` extends Ack
+  sealed trait `client-individual`
+    extends StObject
+       with Ack
   @scala.inline
   def `client-individual`: `client-individual` = "client-individual".asInstanceOf[`client-individual`]
   

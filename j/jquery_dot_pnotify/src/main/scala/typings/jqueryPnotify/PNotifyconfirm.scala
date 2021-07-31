@@ -2,46 +2,44 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PNotifyconfirm extends StObject {
   
   /**
     * Where to align the buttons. (right, center, left, justify)
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * The buttons to display, and their callbacks.
     */
-  var buttons: js.UndefOr[js.Array[PNotifyconfirmButton]] = js.native
+  var buttons: js.UndefOr[js.Array[PNotifyconfirmButton]] = js.undefined
   
   /**
     * Make a confirmation box.
     */
-  var confirm: js.UndefOr[Boolean] = js.native
+  var confirm: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Make a prompt.
     */
-  var prompt: js.UndefOr[Boolean] = js.native
+  var prompt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Classes to add to the input element of the prompt.
     */
-  var prompt_class: js.UndefOr[String] = js.native
+  var prompt_class: js.UndefOr[String] = js.undefined
   
   /**
     * The default value of the prompt.
     */
-  var prompt_default: js.UndefOr[String] = js.native
+  var prompt_default: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the prompt should accept multiple lines of text.
     */
-  var prompt_multi_line: js.UndefOr[Boolean] = js.native
+  var prompt_multi_line: js.UndefOr[Boolean] = js.undefined
 }
 object PNotifyconfirm {
   

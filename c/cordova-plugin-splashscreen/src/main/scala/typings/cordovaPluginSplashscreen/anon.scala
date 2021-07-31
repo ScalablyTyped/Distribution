@@ -2,19 +2,17 @@ package typings.cordovaPluginSplashscreen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Hide extends StObject {
     
     /** Dismiss the splash screen. */
-    def hide(): Unit = js.native
+    def hide(): Unit
     
     /** Displays the splash screen. */
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object Hide {
     

@@ -2,24 +2,22 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGCoreAttributes extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var tabindex: js.UndefOr[Double] = js.native
+  var tabindex: js.UndefOr[Double] = js.undefined
   
   @JSName("xml:base")
-  var xmlColonbase: js.UndefOr[String] = js.native
+  var xmlColonbase: js.UndefOr[String] = js.undefined
   
   @JSName("xml:lang")
-  var xmlColonlang: js.UndefOr[String] = js.native
+  var xmlColonlang: js.UndefOr[String] = js.undefined
   
   @JSName("xml:space")
-  var xmlColonspace: js.UndefOr[String] = js.native
+  var xmlColonspace: js.UndefOr[String] = js.undefined
 }
 object SVGCoreAttributes {
   

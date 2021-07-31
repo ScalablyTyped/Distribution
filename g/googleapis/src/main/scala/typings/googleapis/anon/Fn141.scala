@@ -5,7 +5,6 @@ import typings.googleapis.urlshortenerV1Mod.urlshortenerV1.Options
 import typings.googleapis.urlshortenerV1Mod.urlshortenerV1.Urlshortener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

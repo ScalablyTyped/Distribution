@@ -2,38 +2,36 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Module extends StObject {
   
   /**
     * Base address.
     */
-  var base: NativePointer = js.native
+  var base: NativePointer
   
   /**
     * Enumerates exports of module.
     */
-  def enumerateExports(): js.Array[ModuleExportDetails] = js.native
+  def enumerateExports(): js.Array[ModuleExportDetails]
   
   /**
     * Enumerates imports of module.
     */
-  def enumerateImports(): js.Array[ModuleImportDetails] = js.native
+  def enumerateImports(): js.Array[ModuleImportDetails]
   
   /**
     * Enumerates memory ranges of module with the `name` as seen in `Process#enumerateModules()`.
     *
     * @param protection Minimum protection of ranges to include.
     */
-  def enumerateRanges(protection: PageProtection): js.Array[RangeDetails] = js.native
+  def enumerateRanges(protection: PageProtection): js.Array[RangeDetails]
   
   /**
     * Enumerates symbols of module.
     */
-  def enumerateSymbols(): js.Array[ModuleSymbolDetails] = js.native
+  def enumerateSymbols(): js.Array[ModuleSymbolDetails]
   
   /**
     * Looks up the absolute address of the export named `exportName`.
@@ -42,7 +40,7 @@ trait Module extends StObject {
     *
     * @param exportName Export name to find the address of.
     */
-  def findExportByName(exportName: String): NativePointer | Null = js.native
+  def findExportByName(exportName: String): NativePointer | Null
   
   /**
     * Looks up the absolute address of the export named `exportName`.
@@ -51,22 +49,22 @@ trait Module extends StObject {
     *
     * @param exportName Export name to find the address of.
     */
-  def getExportByName(exportName: String): NativePointer = js.native
+  def getExportByName(exportName: String): NativePointer
   
   /**
     * Canonical module name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Full filesystem path.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Size in bytes.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object Module {
   

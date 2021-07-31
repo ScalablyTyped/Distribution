@@ -3,15 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaletteEditor extends StObject {
   
-  def init(): Unit = js.native
+  def init(): Unit
   
-  def install(entry: js.Object, container: js.Object, done: js.Function1[/* ret */ Error | js.Object, Unit]): Unit = js.native
+  def install(entry: js.Object, container: js.Object, done: js.Function1[/* ret */ Error | js.Object, Unit]): Unit
 }
 object PaletteEditor {
   

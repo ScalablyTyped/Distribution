@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagespeedVersion extends StObject {
   
   /** The major version number of PageSpeed used to generate these results. */
-  var major: js.UndefOr[String] = js.native
+  var major: js.UndefOr[String] = js.undefined
   
   /** The minor version number of PageSpeed used to generate these results. */
-  var minor: js.UndefOr[String] = js.native
+  var minor: js.UndefOr[String] = js.undefined
 }
 object PagespeedVersion {
   

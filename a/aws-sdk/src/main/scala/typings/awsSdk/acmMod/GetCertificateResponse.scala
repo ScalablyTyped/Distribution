@@ -2,21 +2,19 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCertificateResponse extends StObject {
   
   /**
     * The ACM-issued certificate corresponding to the ARN specified as input.
     */
-  var Certificate: js.UndefOr[CertificateBody] = js.native
+  var Certificate: js.UndefOr[CertificateBody] = js.undefined
   
   /**
     * Certificates forming the requested certificate's chain of trust. The chain consists of the certificate of the issuing CA and the intermediate certificates of any other subordinate CAs. 
     */
-  var CertificateChain: js.UndefOr[typings.awsSdk.acmMod.CertificateChain] = js.native
+  var CertificateChain: js.UndefOr[typings.awsSdk.acmMod.CertificateChain] = js.undefined
 }
 object GetCertificateResponse {
   

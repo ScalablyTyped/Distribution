@@ -4,18 +4,17 @@ import typings.parameter.parameterStrings.id
 import typings.parameter.parameterStrings.idQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterRuleID
-  extends ParameterRuleBase
+  extends StObject
+     with ParameterRuleBase
      with _ParameterRuleItem {
   
-  var allowEmpty: js.UndefOr[Boolean] = js.native
+  var allowEmpty: js.UndefOr[Boolean] = js.undefined
   
   @JSName("type")
-  var type_ParameterRuleID: id | idQuestionmark = js.native
+  var type_ParameterRuleID: id | idQuestionmark
 }
 object ParameterRuleID {
   

@@ -2,13 +2,13 @@ package typings.styledSystemCss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EmotionLabel extends _SystemStyleObject {
+trait EmotionLabel
+  extends StObject
+     with _SystemStyleObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object EmotionLabel {
   

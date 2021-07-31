@@ -3,50 +3,49 @@ package typings.baiduApp.swan
 import typings.baiduApp.anon.Cancel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 取消按钮的文字颜色，默认为"#000000"
     */
-  var cancelColor: js.UndefOr[String] = js.native
+  var cancelColor: js.UndefOr[String] = js.undefined
   
   /**
     * 取消按钮的文字，默认为"取消"，最多 4 个字符
     */
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
   /**
     * 确定按钮的文字颜色，默认为"#3CC51F"
     */
-  var confirmColor: js.UndefOr[String] = js.native
+  var confirmColor: js.UndefOr[String] = js.undefined
   
   /**
     * 确定按钮的文字，默认为"确定"，最多 4 个字符
     */
-  var confirmText: js.UndefOr[String] = js.native
+  var confirmText: js.UndefOr[String] = js.undefined
   
   /**
     * 提示的内容
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * 是否显示取消按钮，默认为 true
     */
-  var showCancel: js.UndefOr[Boolean] = js.native
+  var showCancel: js.UndefOr[Boolean] = js.undefined
   
   @JSName("success")
-  var success_ModalOptions: js.UndefOr[js.Function1[/* res */ Cancel, Unit]] = js.native
+  var success_ModalOptions: js.UndefOr[js.Function1[/* res */ Cancel, Unit]] = js.undefined
   
   /**
     * 提示的标题
     */
-  var title: String = js.native
+  var title: String
 }
 object ModalOptions {
   

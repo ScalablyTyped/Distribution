@@ -10,9 +10,9 @@ The component module for antv
 | ------------------ | :-------------: |
 | Full name          | @antv/component |
 | Keywords           | - |
-| # releases         | 93 |
-| # dependents       | 5 |
-| # downloads        | 2337390 |
+| # releases         | 99 |
+| # dependents       | 6 |
+| # downloads        | 2765780 |
 | # stars            | 0 |
 
 ## Links

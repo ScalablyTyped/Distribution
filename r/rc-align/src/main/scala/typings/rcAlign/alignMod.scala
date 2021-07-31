@@ -10,31 +10,29 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alignMod extends Shortcut {
   
   @JSImport("rc-align/es/Align", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[AlignProps with RefAttributes[RefAlign]] = js.native
+  val default: ForwardRefExoticComponent[AlignProps & RefAttributes[RefAlign]] = js.native
   
-  @js.native
   trait AlignProps extends StObject {
     
-    var align: AlignType = js.native
+    var align: AlignType
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var monitorBufferTime: js.UndefOr[Double] = js.native
+    var monitorBufferTime: js.UndefOr[Double] = js.undefined
     
-    var monitorWindowResize: js.UndefOr[Boolean] = js.native
+    var monitorWindowResize: js.UndefOr[Boolean] = js.undefined
     
-    var onAlign: js.UndefOr[OnAlign] = js.native
+    var onAlign: js.UndefOr[OnAlign] = js.undefined
     
-    var target: TargetType = js.native
+    var target: TargetType
   }
   object AlignProps {
     
@@ -87,10 +85,9 @@ object alignMod extends Shortcut {
   
   type OnAlign = js.Function2[/* source */ HTMLElement, /* result */ AlignResult, Unit]
   
-  @js.native
   trait RefAlign extends StObject {
     
-    def forceAlign(): Unit = js.native
+    def forceAlign(): Unit
   }
   object RefAlign {
     
@@ -108,8 +105,8 @@ object alignMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[AlignProps with RefAttributes[RefAlign]]
+  type _To = ForwardRefExoticComponent[AlignProps & RefAttributes[RefAlign]]
   
   /* This means you don't have to write `default`, but can instead just say `alignMod.foo` */
-  override def _to: ForwardRefExoticComponent[AlignProps with RefAttributes[RefAlign]] = default
+  override def _to: ForwardRefExoticComponent[AlignProps & RefAttributes[RefAlign]] = default
 }

@@ -4,164 +4,132 @@ import typings.typescriptServices.TypeScript.IASTSpan
 import typings.typescriptServices.TypeScript.IParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ASTHelpers {
   
-  @JSImport("typescript-services", "ASTHelpers.docComments")
+  @JSImport("typescript-services", "ASTHelpers")
   @js.native
-  def docComments(ast: typings.typescriptServices.TypeScript.AST): js.Array[typings.typescriptServices.TypeScript.Comment] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typescript-services", "ASTHelpers.enumIsElided")
-  @js.native
-  def enumIsElided(declaration: typings.typescriptServices.TypeScript.EnumDeclaration): Boolean = js.native
+  @scala.inline
+  def docComments(ast: typings.typescriptServices.TypeScript.AST): js.Array[typings.typescriptServices.TypeScript.Comment] = ^.asInstanceOf[js.Dynamic].applyDynamic("docComments")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Comment]]
   
-  @JSImport("typescript-services", "ASTHelpers.getAstAtPosition")
-  @js.native
-  def getAstAtPosition(script: typings.typescriptServices.TypeScript.AST, pos: Double): typings.typescriptServices.TypeScript.AST = js.native
-  @JSImport("typescript-services", "ASTHelpers.getAstAtPosition")
-  @js.native
-  def getAstAtPosition(
-    script: typings.typescriptServices.TypeScript.AST,
-    pos: Double,
-    useTrailingTriviaAsLimChar: js.UndefOr[scala.Nothing],
-    forceInclusive: Boolean
-  ): typings.typescriptServices.TypeScript.AST = js.native
-  @JSImport("typescript-services", "ASTHelpers.getAstAtPosition")
-  @js.native
+  @scala.inline
+  def enumIsElided(declaration: typings.typescriptServices.TypeScript.EnumDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("enumIsElided")(declaration.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def getAstAtPosition(script: typings.typescriptServices.TypeScript.AST, pos: Double): typings.typescriptServices.TypeScript.AST = (^.asInstanceOf[js.Dynamic].applyDynamic("getAstAtPosition")(script.asInstanceOf[js.Any], pos.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.AST]
+  @scala.inline
   def getAstAtPosition(
     script: typings.typescriptServices.TypeScript.AST,
     pos: Double,
     useTrailingTriviaAsLimChar: Boolean
-  ): typings.typescriptServices.TypeScript.AST = js.native
-  @JSImport("typescript-services", "ASTHelpers.getAstAtPosition")
-  @js.native
+  ): typings.typescriptServices.TypeScript.AST = (^.asInstanceOf[js.Dynamic].applyDynamic("getAstAtPosition")(script.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], useTrailingTriviaAsLimChar.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.AST]
+  @scala.inline
   def getAstAtPosition(
     script: typings.typescriptServices.TypeScript.AST,
     pos: Double,
     useTrailingTriviaAsLimChar: Boolean,
     forceInclusive: Boolean
-  ): typings.typescriptServices.TypeScript.AST = js.native
+  ): typings.typescriptServices.TypeScript.AST = (^.asInstanceOf[js.Dynamic].applyDynamic("getAstAtPosition")(script.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], useTrailingTriviaAsLimChar.asInstanceOf[js.Any], forceInclusive.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.AST]
+  @scala.inline
+  def getAstAtPosition(
+    script: typings.typescriptServices.TypeScript.AST,
+    pos: Double,
+    useTrailingTriviaAsLimChar: Unit,
+    forceInclusive: Boolean
+  ): typings.typescriptServices.TypeScript.AST = (^.asInstanceOf[js.Dynamic].applyDynamic("getAstAtPosition")(script.asInstanceOf[js.Any], pos.asInstanceOf[js.Any], useTrailingTriviaAsLimChar.asInstanceOf[js.Any], forceInclusive.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.AST]
   
-  @JSImport("typescript-services", "ASTHelpers.getEnclosingMemberVariableDeclaration")
-  @js.native
-  def getEnclosingMemberVariableDeclaration(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.MemberVariableDeclaration = js.native
+  @scala.inline
+  def getEnclosingMemberVariableDeclaration(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.MemberVariableDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnclosingMemberVariableDeclaration")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.MemberVariableDeclaration]
   
-  @JSImport("typescript-services", "ASTHelpers.getEnclosingModuleDeclaration")
-  @js.native
-  def getEnclosingModuleDeclaration(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ModuleDeclaration = js.native
+  @scala.inline
+  def getEnclosingModuleDeclaration(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ModuleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnclosingModuleDeclaration")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclaration]
   
-  @JSImport("typescript-services", "ASTHelpers.getEnclosingParameterForInitializer")
-  @js.native
-  def getEnclosingParameterForInitializer(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.Parameter = js.native
+  @scala.inline
+  def getEnclosingParameterForInitializer(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.Parameter = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnclosingParameterForInitializer")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.Parameter]
   
-  @JSImport("typescript-services", "ASTHelpers.getExtendsHeritageClause")
-  @js.native
-  def getExtendsHeritageClause(clauses: typings.typescriptServices.TypeScript.ISyntaxList2): typings.typescriptServices.TypeScript.HeritageClause = js.native
+  @scala.inline
+  def getExtendsHeritageClause(clauses: typings.typescriptServices.TypeScript.ISyntaxList2): typings.typescriptServices.TypeScript.HeritageClause = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtendsHeritageClause")(clauses.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.HeritageClause]
   
-  @JSImport("typescript-services", "ASTHelpers.getImplementsHeritageClause")
-  @js.native
-  def getImplementsHeritageClause(clauses: typings.typescriptServices.TypeScript.ISyntaxList2): typings.typescriptServices.TypeScript.HeritageClause = js.native
+  @scala.inline
+  def getImplementsHeritageClause(clauses: typings.typescriptServices.TypeScript.ISyntaxList2): typings.typescriptServices.TypeScript.HeritageClause = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplementsHeritageClause")(clauses.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.HeritageClause]
   
-  @JSImport("typescript-services", "ASTHelpers.getModuleDeclarationFromNameAST")
-  @js.native
-  def getModuleDeclarationFromNameAST(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ModuleDeclaration = js.native
+  @scala.inline
+  def getModuleDeclarationFromNameAST(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ModuleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleDeclarationFromNameAST")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ModuleDeclaration]
   
-  @JSImport("typescript-services", "ASTHelpers.getModuleNames")
-  @js.native
-  def getModuleNames(name: typings.typescriptServices.TypeScript.AST): js.Array[typings.typescriptServices.TypeScript.Identifier] = js.native
-  @JSImport("typescript-services", "ASTHelpers.getModuleNames")
-  @js.native
+  @scala.inline
+  def getModuleNames(name: typings.typescriptServices.TypeScript.AST): js.Array[typings.typescriptServices.TypeScript.Identifier] = ^.asInstanceOf[js.Dynamic].applyDynamic("getModuleNames")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Identifier]]
+  @scala.inline
   def getModuleNames(
     name: typings.typescriptServices.TypeScript.AST,
     result: js.Array[typings.typescriptServices.TypeScript.Identifier]
-  ): js.Array[typings.typescriptServices.TypeScript.Identifier] = js.native
+  ): js.Array[typings.typescriptServices.TypeScript.Identifier] = (^.asInstanceOf[js.Dynamic].applyDynamic("getModuleNames")(name.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.Identifier]]
   
-  @JSImport("typescript-services", "ASTHelpers.getNameOfIdenfierOrQualifiedName")
-  @js.native
-  def getNameOfIdenfierOrQualifiedName(name: typings.typescriptServices.TypeScript.AST): String = js.native
+  @scala.inline
+  def getNameOfIdenfierOrQualifiedName(name: typings.typescriptServices.TypeScript.AST): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameOfIdenfierOrQualifiedName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typescript-services", "ASTHelpers.getParameterList")
-  @js.native
-  def getParameterList(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ParameterList = js.native
+  @scala.inline
+  def getParameterList(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.ParameterList = ^.asInstanceOf[js.Dynamic].applyDynamic("getParameterList")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.ParameterList]
   
-  @JSImport("typescript-services", "ASTHelpers.getType")
-  @js.native
-  def getType(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.AST = js.native
+  @scala.inline
+  def getType(ast: typings.typescriptServices.TypeScript.AST): typings.typescriptServices.TypeScript.AST = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(ast.asInstanceOf[js.Any]).asInstanceOf[typings.typescriptServices.TypeScript.AST]
   
-  @JSImport("typescript-services", "ASTHelpers.getVariableDeclaratorModifiers")
-  @js.native
-  def getVariableDeclaratorModifiers(variableDeclarator: typings.typescriptServices.TypeScript.VariableDeclarator): js.Array[typings.typescriptServices.TypeScript.PullElementFlags] = js.native
+  @scala.inline
+  def getVariableDeclaratorModifiers(variableDeclarator: typings.typescriptServices.TypeScript.VariableDeclarator): js.Array[typings.typescriptServices.TypeScript.PullElementFlags] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVariableDeclaratorModifiers")(variableDeclarator.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.typescriptServices.TypeScript.PullElementFlags]]
   
-  @JSImport("typescript-services", "ASTHelpers.isCallExpression")
-  @js.native
-  def isCallExpression(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isCallExpression(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCallExpression")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isCallExpressionTarget")
-  @js.native
-  def isCallExpressionTarget(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isCallExpressionTarget(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCallExpressionTarget")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isDeclarationAST")
-  @js.native
-  def isDeclarationAST(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isDeclarationAST(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeclarationAST")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isDeclarationASTOrDeclarationNameAST")
-  @js.native
-  def isDeclarationASTOrDeclarationNameAST(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isDeclarationASTOrDeclarationNameAST(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDeclarationASTOrDeclarationNameAST")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isIntegerLiteralAST")
-  @js.native
-  def isIntegerLiteralAST(expression: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isIntegerLiteralAST(expression: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerLiteralAST")(expression.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isLastNameOfModule")
-  @js.native
+  @scala.inline
   def isLastNameOfModule(
     ast: typings.typescriptServices.TypeScript.ModuleDeclaration,
     astName: typings.typescriptServices.TypeScript.AST
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isLastNameOfModule")(ast.asInstanceOf[js.Any], astName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isNameOfFunction")
-  @js.native
-  def isNameOfFunction(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isNameOfFunction(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameOfFunction")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isNameOfMemberAccessExpression")
-  @js.native
-  def isNameOfMemberAccessExpression(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isNameOfMemberAccessExpression(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameOfMemberAccessExpression")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isNameOfMemberFunction")
-  @js.native
-  def isNameOfMemberFunction(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isNameOfMemberFunction(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNameOfMemberFunction")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isRightSideOfQualifiedName")
-  @js.native
-  def isRightSideOfQualifiedName(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def isRightSideOfQualifiedName(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRightSideOfQualifiedName")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.isValidAstNode")
-  @js.native
-  def isValidAstNode(ast: IASTSpan): Boolean = js.native
+  @scala.inline
+  def isValidAstNode(ast: IASTSpan): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAstNode")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.moduleIsElided")
-  @js.native
-  def moduleIsElided(declaration: typings.typescriptServices.TypeScript.ModuleDeclaration): Boolean = js.native
+  @scala.inline
+  def moduleIsElided(declaration: typings.typescriptServices.TypeScript.ModuleDeclaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("moduleIsElided")(declaration.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.parametersFromIdentifier")
-  @js.native
-  def parametersFromIdentifier(id: typings.typescriptServices.TypeScript.Identifier): IParameters = js.native
+  @scala.inline
+  def parametersFromIdentifier(id: typings.typescriptServices.TypeScript.Identifier): IParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parametersFromIdentifier")(id.asInstanceOf[js.Any]).asInstanceOf[IParameters]
   
-  @JSImport("typescript-services", "ASTHelpers.parametersFromParameter")
-  @js.native
-  def parametersFromParameter(parameter: typings.typescriptServices.TypeScript.Parameter): IParameters = js.native
+  @scala.inline
+  def parametersFromParameter(parameter: typings.typescriptServices.TypeScript.Parameter): IParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parametersFromParameter")(parameter.asInstanceOf[js.Any]).asInstanceOf[IParameters]
   
-  @JSImport("typescript-services", "ASTHelpers.parametersFromParameterList")
-  @js.native
-  def parametersFromParameterList(list: typings.typescriptServices.TypeScript.ParameterList): IParameters = js.native
+  @scala.inline
+  def parametersFromParameterList(list: typings.typescriptServices.TypeScript.ParameterList): IParameters = ^.asInstanceOf[js.Dynamic].applyDynamic("parametersFromParameterList")(list.asInstanceOf[js.Any]).asInstanceOf[IParameters]
   
-  @JSImport("typescript-services", "ASTHelpers.parentIsModuleDeclaration")
-  @js.native
-  def parentIsModuleDeclaration(ast: typings.typescriptServices.TypeScript.AST): Boolean = js.native
+  @scala.inline
+  def parentIsModuleDeclaration(ast: typings.typescriptServices.TypeScript.AST): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("parentIsModuleDeclaration")(ast.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("typescript-services", "ASTHelpers.scriptIsElided")
-  @js.native
-  def scriptIsElided(sourceUnit: typings.typescriptServices.TypeScript.SourceUnit): Boolean = js.native
+  @scala.inline
+  def scriptIsElided(sourceUnit: typings.typescriptServices.TypeScript.SourceUnit): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("scriptIsElided")(sourceUnit.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

@@ -106,7 +106,6 @@ import typings.semanticUiVisibility.semanticUiVisibilityStrings.verbose
 import typings.semanticUiVisibility.semanticUiVisibilityStrings.zIndex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -148,97 +147,97 @@ object SemanticUI {
       */
     def apply(behavior: `is on screen`): Boolean = js.native
     def apply(behavior: destroy): JQuery = js.native
-    def apply(behavior: setting, name: `type`, value: js.UndefOr[scala.Nothing]): `false` | image | fixed = js.native
+    def apply(behavior: setting, name: `type`, value: Unit): `false` | image | fixed = js.native
     def apply(behavior: setting, name: `type`, value: `false`): JQuery = js.native
     def apply(behavior: setting, name: `type`, value: fixed): JQuery = js.native
     def apply(behavior: setting, name: `type`, value: image): JQuery = js.native
-    def apply(behavior: setting, name: checkOnRefresh, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: checkOnRefresh, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
+    def apply(behavior: setting, name: checkOnRefresh, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): String | JQuery = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
-    def apply(behavior: setting, name: continuous, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: continuous, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: continuous, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: includeMargin, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: includeMargin, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: initialCheck, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: includeMargin, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: initialCheck, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: initialCheck, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: observeChanges, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: observeChanges, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: offset, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: observeChanges, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: offset, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: onAllLoaded, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: offset, value: Unit): Double = js.native
     def apply(behavior: setting, name: onAllLoaded, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomPassedReverse, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onAllLoaded, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onBottomPassedReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomPassed, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onBottomPassedReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onBottomPassed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomVisibleReverse, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onBottomPassed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onBottomVisibleReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onBottomVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onBottomVisibleReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onBottomVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onFixed, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onBottomVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onFixed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onLoad, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onFixed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onLoad, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOffScreen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onLoad, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onOffScreen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onOnScreen, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onOffScreen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onOnScreen, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onPassingReverse, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onOnScreen, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onPassingReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onPassing, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onPassingReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onPassing, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onRefresh, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onPassing, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onRefresh, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopPassedReverse, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onRefresh, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onTopPassedReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopPassed, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onTopPassedReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onTopPassed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopVisibleReverse, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onTopPassed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onTopVisibleReverse, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onTopVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onTopVisibleReverse, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onTopVisible, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onUnfixed, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onTopVisible, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onUnfixed, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onUpdate, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit] = js.native
+    def apply(behavior: setting, name: onUnfixed, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(
       behavior: setting,
       name: onUpdate,
       value: js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit]
     ): JQuery = js.native
-    def apply(behavior: setting, name: once, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onUpdate, value: Unit): js.ThisFunction1[/* this */ JQuery, /* calculations */ ElementCalculations, Unit] = js.native
     def apply(behavior: setting, name: once, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: once, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: refreshOnLoad, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: refreshOnLoad, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: refreshOnResize, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: refreshOnLoad, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: refreshOnResize, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: refreshOnResize, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: throttle, value: js.UndefOr[scala.Nothing]): `false` | Double = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: throttle, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: throttle, value: Unit): `false` | Double = js.native
     def apply(behavior: setting, name: throttle, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: transition, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
     def apply(behavior: setting, name: transition, value: String): JQuery = js.native
+    def apply(behavior: setting, name: transition, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: transition, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: zIndex, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: zIndex, value: Double): JQuery = js.native
+    def apply(behavior: setting, name: zIndex, value: Unit): Double = js.native
     def apply(behavior: setting, value: VisibilitySettings): JQuery = js.native
     def apply(settings: VisibilitySettings): JQuery = js.native
     
@@ -247,15 +246,14 @@ object SemanticUI {
   object Visibility {
     
     /* Inlined semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings.Param */
-    @js.native
     trait ClassNameSettings extends StObject {
       
-      var fixed: String with js.UndefOr[String] = js.native
+      var fixed: String & js.UndefOr[String]
     }
     object ClassNameSettings {
       
       @scala.inline
-      def apply(fixed: String with js.UndefOr[String]): ClassNameSettings = {
+      def apply(fixed: String & js.UndefOr[String]): ClassNameSettings = {
         val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
         __obj.asInstanceOf[ClassNameSettings]
       }
@@ -264,16 +262,15 @@ object SemanticUI {
       implicit class ClassNameSettingsMutableBuilder[Self <: ClassNameSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setFixed(value: String with js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+        def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'fixed'
           */
-        var fixed: String = js.native
+        var fixed: String
       }
       object Impl {
         
@@ -292,15 +289,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl, 'fixed'> & std.Partial<std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl, keyof semantic-ui-visibility.SemanticUI.Visibility.ClassNameSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var fixed: String with js.UndefOr[String] = js.native
+        var fixed: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(fixed: String with js.UndefOr[String]): Param = {
+        def apply(fixed: String & js.UndefOr[String]): Param = {
           val __obj = js.Dynamic.literal(fixed = fixed.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
@@ -309,37 +305,38 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setFixed(value: String with js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
+          def setFixed(value: String & js.UndefOr[String]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
         }
       }
     }
     
-    @js.native
-    trait ElementCalculations extends ElementPosition {
+    trait ElementCalculations
+      extends StObject
+         with ElementPosition {
       
-      var bottom: Double = js.native
+      var bottom: Double
       
-      var bottomPassed: Boolean = js.native
+      var bottomPassed: Boolean
       
-      var bottomVisible: Boolean = js.native
+      var bottomVisible: Boolean
       
-      var margin: js.UndefOr[Bottom] = js.native
+      var margin: js.UndefOr[Bottom] = js.undefined
       
-      var offScreen: Boolean = js.native
+      var offScreen: Boolean
       
-      var onScreen: Boolean = js.native
+      var onScreen: Boolean
       
-      var passing: Boolean = js.native
+      var passing: Boolean
       
-      var percentagePassed: Double = js.native
+      var percentagePassed: Double
       
-      var pixelsPassed: Double = js.native
+      var pixelsPassed: Double
       
-      var top: Double = js.native
+      var top: Double
       
-      var topPassed: Boolean = js.native
+      var topPassed: Boolean
       
-      var topVisible: Boolean = js.native
+      var topVisible: Boolean
     }
     object ElementCalculations {
       
@@ -409,16 +406,15 @@ object SemanticUI {
       }
     }
     
-    @js.native
     trait ElementPosition extends StObject {
       
-      var fits: Boolean = js.native
+      var fits: Boolean
       
-      var height: Double = js.native
+      var height: Double
       
-      var offset: JQueryCoordinates = js.native
+      var offset: JQueryCoordinates
       
-      var width: Double = js.native
+      var width: Double
     }
     object ElementPosition {
       
@@ -446,15 +442,14 @@ object SemanticUI {
     }
     
     /* Inlined semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings.Param */
-    @js.native
     trait ErrorSettings extends StObject {
       
-      var method: String with js.UndefOr[String] = js.native
+      var method: String & js.UndefOr[String]
     }
     object ErrorSettings {
       
       @scala.inline
-      def apply(method: String with js.UndefOr[String]): ErrorSettings = {
+      def apply(method: String & js.UndefOr[String]): ErrorSettings = {
         val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
         __obj.asInstanceOf[ErrorSettings]
       }
@@ -463,16 +458,15 @@ object SemanticUI {
       implicit class ErrorSettingsMutableBuilder[Self <: ErrorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
       }
       object Impl {
         
@@ -491,15 +485,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl, 'method'> & std.Partial<std.Pick<semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl, keyof semantic-ui-visibility.SemanticUI.Visibility.ErrorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var method: String with js.UndefOr[String] = js.native
+        var method: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(method: String with js.UndefOr[String]): Param = {
+        def apply(method: String & js.UndefOr[String]): Param = {
           val __obj = js.Dynamic.literal(method = method.asInstanceOf[js.Any])
           __obj.asInstanceOf[Param]
         }
@@ -508,17 +501,16 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setMethod(value: String with js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+          def setMethod(value: String & js.UndefOr[String]): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
         }
       }
     }
     
-    @js.native
     trait ScreenCalculations extends StObject {
       
-      var bottom: Double = js.native
+      var bottom: Double
       
-      var top: Double = js.native
+      var top: Double
     }
     object ScreenCalculations {
       
@@ -539,10 +531,9 @@ object SemanticUI {
       }
     }
     
-    @js.native
     trait ScreenSize extends StObject {
       
-      var height: Double = js.native
+      var height: Double
     }
     object ScreenSize {
       
@@ -563,7 +554,6 @@ object SemanticUI {
   
   object VisibilitySettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
@@ -572,65 +562,65 @@ object SemanticUI {
         *
         * @default true
         */
-      var checkOnRefresh: Boolean = js.native
+      var checkOnRefresh: Boolean
       
       // endregion
       // region DOM Settings
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * The scroll context visibility should use.
         *
         * @default 'window'
         */
-      var context: String | JQuery = js.native
+      var context: String | JQuery
       
       /**
         * When set to true a callback will occur anytime an element passes a condition not just immediately after the threshold is met.
         *
         * @default false
         */
-      var continuous: Boolean = js.native
+      var continuous: Boolean
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * When using type: image allows you to specify transition duration
         *
         * @default 1000
         */
-      var duration: Double = js.native
+      var duration: Double
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Whether element calculations should include its margin
         *
         * @default false
         */
-      var includeMargin: Boolean = js.native
+      var includeMargin: Boolean
       
       /**
         * Whether visibility conditions should be checked immediately on init
         *
         * @default true
         */
-      var initialCheck: Boolean = js.native
+      var initialCheck: Boolean
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -638,48 +628,48 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Whether to automatically refresh content when changes are made to the element's DOM subtree
         *
         * @default true
         */
-      var observeChanges: Boolean = js.native
+      var observeChanges: Boolean
       
       /**
         * Value that context scrollTop should be adjusted in pixels. Useful for making content appear below content fixed to the page.
         *
         * @default 0
         */
-      var offset: Double = js.native
+      var offset: Double
       
       /**
         * Occurs after all img initialized at the same time have loaded.
         *
         * @since 2.2
         */
-      def onAllLoaded(): Unit = js.native
+      def onAllLoaded(): Unit
       
       /**
         * Element's bottom edge has passed top of screen
         */
-      def onBottomPassed(): Unit = js.native
+      def onBottomPassed(): Unit
       
       /**
         * Element's bottom edge has not passed top of screen
         */
-      def onBottomPassedReverse(): Unit = js.native
+      def onBottomPassedReverse(): Unit
       
       /**
         * Element's bottom edge has passed bottom of screen
         */
-      def onBottomVisible(): Unit = js.native
+      def onBottomVisible(): Unit
       
       /**
         * Element's bottom edge has not passed bottom of screen
         */
-      def onBottomVisibleReverse(): Unit = js.native
+      def onBottomVisibleReverse(): Unit
       
       // endregion
       // region Fixed Callbacks
@@ -688,7 +678,7 @@ object SemanticUI {
         *
         * @since 2.2
         */
-      def onFixed(): Unit = js.native
+      def onFixed(): Unit
       
       // endregion
       // region Image Callbacks
@@ -697,62 +687,62 @@ object SemanticUI {
         *
         * @since 2.2
         */
-      def onLoad(): Unit = js.native
+      def onLoad(): Unit
       
-      def onOffScreen(): Unit = js.native
+      def onOffScreen(): Unit
       
-      def onOnScreen(): Unit = js.native
+      def onOnScreen(): Unit
       
       /**
         * Any part of an element is visible on screen
         */
-      def onPassing(): Unit = js.native
+      def onPassing(): Unit
       
       /**
         * Element's top has not passed top of screen but bottom has
         */
-      def onPassingReverse(): Unit = js.native
+      def onPassingReverse(): Unit
       
       /**
         * Occurs whenever element's visibility is refreshed
         */
-      def onRefresh(): Unit = js.native
+      def onRefresh(): Unit
       
       /**
         * Element's top edge has passed top of the screen
         */
-      def onTopPassed(): Unit = js.native
+      def onTopPassed(): Unit
       
       /**
         * Element's top edge has not passed top of the screen
         */
-      def onTopPassedReverse(): Unit = js.native
+      def onTopPassedReverse(): Unit
       
       // endregion
       // region Visibility Callbacks
       /**
         * Element's top edge has passed bottom of screen
         */
-      def onTopVisible(): Unit = js.native
+      def onTopVisible(): Unit
       
       /**
         * Element's top edge has not passed bottom of screen
         */
-      def onTopVisibleReverse(): Unit = js.native
+      def onTopVisibleReverse(): Unit
       
       /**
         * Occurs after element has been removed from fixed position
         *
         * @since 2.2
         */
-      def onUnfixed(): Unit = js.native
+      def onUnfixed(): Unit
       
       // endregion
       // region Utility Callbacks
       /**
         * Occurs each time an elements calculations are updated
         */
-      def onUpdate(calculations: ElementCalculations): Unit = js.native
+      def onUpdate(calculations: ElementCalculations): Unit
       
       // region Functionality
       /**
@@ -760,57 +750,57 @@ object SemanticUI {
         *
         * @default true
         */
-      var once: Boolean = js.native
+      var once: Boolean
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Whether visibility conditions should be checked on window load. This ensures that after images load content positions will be updated correctly.
         *
         * @default true
         */
-      var refreshOnLoad: Boolean = js.native
+      var refreshOnLoad: Boolean
       
       /**
         * Whether visibility conditions should be checked on window resize. Useful when content resizes causes continuous changes in position
         *
         * @default true
         */
-      var refreshOnResize: Boolean = js.native
+      var refreshOnResize: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * When set to an integer, scroll position will be debounced using this ms value. false will debounce with requestAnimationFrame.
         *
         * @default false
         */
-      var throttle: `false` | Double = js.native
+      var throttle: `false` | Double
       
       /**
         * When using type: image allows you to specify transition when showing a loaded image
         *
         * @default false
         */
-      var transition: `false` | String = js.native
+      var transition: `false` | String
       
       /**
         * Set to image to load images when on screen. Set to fixed to add class name fixed when passed.
         *
         * @default false
         */
-      var `type`: `false` | image | fixed = js.native
+      var `type`: `false` | image | fixed
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
       
       /**
         * Specify a z-index when using type: 'fixed'.
@@ -818,7 +808,7 @@ object SemanticUI {
         * @default 1
         * @since 2.2
         */
-      var zIndex: Double = js.native
+      var zIndex: Double
     }
     object Impl {
       
@@ -999,7 +989,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplonce | PickImplcontinuous | PickImpltype | PickImplinitialCheck | PickImplcontext | PickImplrefreshOnLoad | PickImplrefreshOnResize | PickImplcheckOnRefresh | PickImplzIndex | PickImploffset | PickImplincludeMargin | PickImplthrottle | PickImplobserveChanges | PickImpltransition | PickImplduration | PickImplonTopVisible | PickImplonTopPassed | PickImplonBottomVisible | PickImplonPassing | PickImplonBottomPassed | PickImplonTopVisibleRever | PickImplonTopPassedRevers | PickImplonBottomVisibleRe | PickImplonPassingReverse | PickImplonBottomPassedRev | PickImplonOnScreen | PickImplonOffScreen | PickImplonLoad | PickImplonAllLoaded | PickImplonFixed | PickImplonUnfixed | PickImplonUpdate | PickImplonRefresh | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplonce | PickImplcontinuous | PickImpltype | PickImplinitialCheck | PickImplcontext | PickImplrefreshOnLoad | PickImplrefreshOnResize | PickImplcheckOnRefresh | PickImplzIndex | PickImploffset | PickImplincludeMargin | PickImplthrottle | PickImplobserveChanges | PickImpltransition | PickImplduration | PickImplonTopVisible | PickImplonTopPassed | PickImplonBottomVisible | PickImplonPassing | PickImplonBottomPassed | PickImplonTopVisibleRever | PickImplonTopPassedRevers | PickImplonBottomVisibleRe | PickImplonPassingReverse | PickImplonBottomPassedRev | PickImplonOnScreen | PickImplonOffScreen | PickImplonLoad | PickImplonAllLoaded | PickImplonFixed | PickImplonUnfixed | PickImplonUpdate | PickImplonRefresh | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/behaviors/visibility.html#/settings}

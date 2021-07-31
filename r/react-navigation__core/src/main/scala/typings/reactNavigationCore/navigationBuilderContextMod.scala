@@ -14,7 +14,6 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navigationBuilderContextMod extends Shortcut {
@@ -53,12 +52,11 @@ object navigationBuilderContextMod extends Shortcut {
   
   type GetStateListener = js.Function0[NavigationState[ParamListBase]]
   
-  @js.native
   trait KeyedListenerMap extends StObject {
     
-    var beforeRemove: ChildBeforeRemoveListener = js.native
+    var beforeRemove: ChildBeforeRemoveListener
     
-    var getState: GetStateListener = js.native
+    var getState: GetStateListener
   }
   object KeyedListenerMap {
     
@@ -82,12 +80,11 @@ object navigationBuilderContextMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ListenerMap extends StObject {
     
-    var action: ChildActionListener = js.native
+    var action: ChildActionListener
     
-    var focus: FocusedNavigationListener = js.native
+    var focus: FocusedNavigationListener
   }
   object ListenerMap {
     

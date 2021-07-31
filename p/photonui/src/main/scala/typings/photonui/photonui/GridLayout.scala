@@ -2,11 +2,12 @@ package typings.photonui.photonui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait GridLayout extends Layout {
+trait GridLayout
+  extends StObject
+     with Layout {
   
   var horizontalPadding: Double = js.native
   

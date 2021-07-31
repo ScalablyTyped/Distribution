@@ -2,15 +2,13 @@ package typings.cassanknex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TtlableQueryBuilder extends StObject {
   
-  def usingTTL(ttl: Double): this.type = js.native
+  def usingTTL(ttl: Double): this.type
   
-  def usingTimestamp(timestamp: Double): this.type = js.native
+  def usingTimestamp(timestamp: Double): this.type
 }
 object TtlableQueryBuilder {
   

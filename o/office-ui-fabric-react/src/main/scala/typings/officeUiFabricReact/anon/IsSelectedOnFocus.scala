@@ -3,15 +3,13 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsSelectedOnFocus extends StObject {
   
-  var isSelectedOnFocus: Boolean = js.native
+  var isSelectedOnFocus: Boolean
   
-  var selectionMode: SelectionMode = js.native
+  var selectionMode: SelectionMode
 }
 object IsSelectedOnFocus {
   

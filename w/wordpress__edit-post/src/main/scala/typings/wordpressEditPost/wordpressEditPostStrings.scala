@@ -4,7 +4,6 @@ import typings.wordpressEditPost.mod.EditorMode
 import typings.wordpressEditPost.mod.MetaboxLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wordpressEditPostStrings {
@@ -25,7 +24,9 @@ object wordpressEditPostStrings {
   def `additions text`: `additions text` = ("additions text").asInstanceOf[`additions text`]
   
   @js.native
-  sealed trait advanced extends MetaboxLocation
+  sealed trait advanced
+    extends StObject
+       with MetaboxLocation
   @scala.inline
   def advanced: advanced = "advanced".asInstanceOf[advanced]
   
@@ -160,7 +161,9 @@ object wordpressEditPostStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait normal extends MetaboxLocation
+  sealed trait normal
+    extends StObject
+       with MetaboxLocation
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
   
@@ -220,7 +223,9 @@ object wordpressEditPostStrings {
   def search: search = "search".asInstanceOf[search]
   
   @js.native
-  sealed trait side extends MetaboxLocation
+  sealed trait side
+    extends StObject
+       with MetaboxLocation
   @scala.inline
   def side: side = "side".asInstanceOf[side]
   
@@ -240,7 +245,9 @@ object wordpressEditPostStrings {
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends EditorMode
+  sealed trait text
+    extends StObject
+       with EditorMode
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -275,7 +282,9 @@ object wordpressEditPostStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait visual extends EditorMode
+  sealed trait visual
+    extends StObject
+       with EditorMode
   @scala.inline
   def visual: visual = "visual".asInstanceOf[visual]
   

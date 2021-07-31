@@ -2,21 +2,19 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalPropsAndroid extends StObject {
   
   /**
     *  Controls whether to force hardware acceleration for the underlying window.
     */
-  var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+  var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Determines whether your modal should go under the system statusbar.
     */
-  var statusBarTranslucent: js.UndefOr[Boolean] = js.native
+  var statusBarTranslucent: js.UndefOr[Boolean] = js.undefined
 }
 object ModalPropsAndroid {
   

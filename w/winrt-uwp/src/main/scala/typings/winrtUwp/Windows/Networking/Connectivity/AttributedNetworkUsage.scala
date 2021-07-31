@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 import typings.winrtUwp.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to property values containing information on current usage of the attributed network connection. */
-@js.native
 trait AttributedNetworkUsage extends StObject {
   
   /** Gets the Id of the of the app. */
-  var attributionId: String = js.native
+  var attributionId: String
   
   /** Gets the name of the app. */
-  var attributionName: String = js.native
+  var attributionName: String
   
   /** Gets the thumbnail of the app. */
-  var attributionThumbnail: IRandomAccessStreamReference = js.native
+  var attributionThumbnail: IRandomAccessStreamReference
   
   /** Gets the number of bytes received by the app over the network. */
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
   /** Gets the number of bytes sent by the app over the network. */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
 }
 object AttributedNetworkUsage {
   

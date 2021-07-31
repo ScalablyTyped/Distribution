@@ -2,15 +2,13 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorrectedQuery extends StObject {
   
-  var correctedQuery: js.UndefOr[String] = js.native
+  var correctedQuery: js.UndefOr[String] = js.undefined
   
-  var htmlCorrectedQuery: js.UndefOr[String] = js.native
+  var htmlCorrectedQuery: js.UndefOr[String] = js.undefined
 }
 object CorrectedQuery {
   

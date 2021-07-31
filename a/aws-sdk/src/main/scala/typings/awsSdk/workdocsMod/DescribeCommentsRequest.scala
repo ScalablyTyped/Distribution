@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCommentsRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType = js.native
+  var DocumentId: ResourceIdType
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * The marker for the next set of results. This marker was received from a previous call.
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
   
   /**
     * The ID of the document version.
     */
-  var VersionId: DocumentVersionIdType = js.native
+  var VersionId: DocumentVersionIdType
 }
 object DescribeCommentsRequest {
   

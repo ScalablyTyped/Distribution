@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conditionalForwaderMod {
@@ -43,6 +42,10 @@ object conditionalForwaderMod {
   /* static members */
   object ConditionalForwader {
     
+    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConditionalForwader resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object conditionalForwaderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ConditionalForwader = js.native
-    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ConditionalForwader = js.native
-    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConditionalForwaderState): ConditionalForwader = js.native
-    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConditionalForwaderState, opts: CustomResourceOptions): ConditionalForwader = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConditionalForwaderState): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConditionalForwaderState, opts: CustomResourceOptions): ConditionalForwader = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConditionalForwader]
     
     /**
       * Returns true if the given object is an instance of ConditionalForwader.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directoryservice/conditionalForwader", "ConditionalForwader.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directoryservice/conditionalForwader.ConditionalForwader */ Boolean]
   }
   
-  @js.native
   trait ConditionalForwaderArgs extends StObject {
     
     /**
       * The id of directory.
       */
-    val directoryId: Input[String] = js.native
+    val directoryId: Input[String]
     
     /**
       * A list of forwarder IP addresses.
       */
-    val dnsIps: Input[js.Array[Input[String]]] = js.native
+    val dnsIps: Input[js.Array[Input[String]]]
     
     /**
       * The fully qualified domain name of the remote domain for which forwarders will be used.
       */
-    val remoteDomainName: Input[String] = js.native
+    val remoteDomainName: Input[String]
   }
   object ConditionalForwaderArgs {
     
@@ -121,23 +118,22 @@ object conditionalForwaderMod {
     }
   }
   
-  @js.native
   trait ConditionalForwaderState extends StObject {
     
     /**
       * The id of directory.
       */
-    val directoryId: js.UndefOr[Input[String]] = js.native
+    val directoryId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of forwarder IP addresses.
       */
-    val dnsIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val dnsIps: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The fully qualified domain name of the remote domain for which forwarders will be used.
       */
-    val remoteDomainName: js.UndefOr[Input[String]] = js.native
+    val remoteDomainName: js.UndefOr[Input[String]] = js.undefined
   }
   object ConditionalForwaderState {
     

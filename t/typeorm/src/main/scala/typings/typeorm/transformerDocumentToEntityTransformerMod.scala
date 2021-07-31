@@ -4,7 +4,6 @@ import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformerDocumentToEntityTransformerMod {
@@ -19,6 +18,6 @@ object transformerDocumentToEntityTransformerMod {
     
     def transform(document: js.Any, metadata: EntityMetadata): js.Any = js.native
     
-    def transformAll(documents: js.Array[ObjectLiteral], metadata: EntityMetadata): js.Array[_] = js.native
+    def transformAll(documents: js.Array[ObjectLiteral], metadata: EntityMetadata): js.Array[js.Any] = js.native
   }
 }

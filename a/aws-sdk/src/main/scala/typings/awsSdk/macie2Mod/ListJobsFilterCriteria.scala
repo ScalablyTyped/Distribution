@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsFilterCriteria extends StObject {
   
   /**
     * An array of objects, one for each condition that determines which jobs to exclude from the results.
     */
-  var excludes: js.UndefOr[listOfListJobsFilterTerm] = js.native
+  var excludes: js.UndefOr[listOfListJobsFilterTerm] = js.undefined
   
   /**
     * An array of objects, one for each condition that determines which jobs to include in the results.
     */
-  var includes: js.UndefOr[listOfListJobsFilterTerm] = js.native
+  var includes: js.UndefOr[listOfListJobsFilterTerm] = js.undefined
 }
 object ListJobsFilterCriteria {
   

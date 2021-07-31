@@ -2,25 +2,23 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StrutStyle extends StObject {
   
-  var fontFamilies: js.UndefOr[js.Array[String]] = js.native
+  var fontFamilies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
-  var forceStrutHeight: js.UndefOr[Boolean] = js.native
+  var forceStrutHeight: js.UndefOr[Boolean] = js.undefined
   
-  var heightMultiplier: js.UndefOr[Double] = js.native
+  var heightMultiplier: js.UndefOr[Double] = js.undefined
   
-  var leading: js.UndefOr[Double] = js.native
+  var leading: js.UndefOr[Double] = js.undefined
   
-  var strutEnabled: js.UndefOr[Boolean] = js.native
+  var strutEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object StrutStyle {
   

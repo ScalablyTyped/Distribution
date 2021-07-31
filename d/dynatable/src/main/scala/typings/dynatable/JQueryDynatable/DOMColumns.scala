@@ -3,7 +3,6 @@ package typings.dynatable.JQueryDynatable
 import typings.dynatable.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait DOMColumns extends StObject {
     * @param skipUpdate A boolean allowing to skip the call to `dom.update()`
     */
   def add($column: JQuery, position: Double): Unit = js.native
-  def add($column: JQuery, position: Double, skipAppend: js.UndefOr[scala.Nothing], skipUpdate: Boolean): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean): Unit = js.native
   def add($column: JQuery, position: Double, skipAppend: Boolean, skipUpdate: Boolean): Unit = js.native
+  def add($column: JQuery, position: Double, skipAppend: Unit, skipUpdate: Boolean): Unit = js.native
   
   /**
     * Add several `data-` attributes on the provided `$cell`

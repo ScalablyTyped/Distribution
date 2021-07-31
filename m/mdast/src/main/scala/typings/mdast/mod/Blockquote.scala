@@ -3,26 +3,25 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.blockquote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blockquote
-  extends Parent
+  extends StObject
+     with Parent
      with BlockContent {
   
   @JSName("children")
-  var children_Blockquote: js.Array[BlockContent] = js.native
+  var children_Blockquote: js.Array[BlockContent]
   
   @JSName("type")
-  var type_Blockquote: blockquote = js.native
+  var type_Blockquote: blockquote
 }
 object Blockquote {
   
   @scala.inline
-  def apply(children: js.Array[BlockContent], `type`: blockquote): Blockquote = {
+  def apply(children: js.Array[BlockContent]): Blockquote = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("blockquote")
     __obj.asInstanceOf[Blockquote]
   }
   

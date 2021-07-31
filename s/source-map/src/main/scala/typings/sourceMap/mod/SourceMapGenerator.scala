@@ -2,7 +2,6 @@ package typings.sourceMap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("source-map", "SourceMapGenerator")
@@ -38,18 +37,10 @@ class SourceMapGenerator () extends StObject {
     *        paths. If so, those relative source paths need to be rewritten
     *        relative to the SourceMapGenerator.
     */
-  def applySourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): Unit = js.native
-  def applySourceMap(
-    sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer,
-    sourceFile: js.UndefOr[scala.Nothing],
-    sourceMapPath: String
-  ): Unit = js.native
-  def applySourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer, sourceFile: String): Unit = js.native
-  def applySourceMap(
-    sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer,
-    sourceFile: String,
-    sourceMapPath: String
-  ): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: String, sourceMapPath: String): Unit = js.native
+  def applySourceMap(sourceMapConsumer: SourceMapConsumer, sourceFile: Unit, sourceMapPath: String): Unit = js.native
   
   /**
     * Set the source content for a source file.
@@ -61,12 +52,15 @@ class SourceMapGenerator () extends StObject {
 /* static members */
 object SourceMapGenerator {
   
+  @JSImport("source-map", "SourceMapGenerator")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SourceMapGenerator based on a SourceMapConsumer
     *
     * @param sourceMapConsumer The SourceMap.
     */
-  @JSImport("source-map", "SourceMapGenerator.fromSourceMap")
-  @js.native
-  def fromSourceMap(sourceMapConsumer: typings.sourceMap.mod.SourceMapConsumer): SourceMapGenerator = js.native
+  @scala.inline
+  def fromSourceMap(sourceMapConsumer: SourceMapConsumer): SourceMapGenerator = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSourceMap")(sourceMapConsumer.asInstanceOf[js.Any]).asInstanceOf[SourceMapGenerator]
 }

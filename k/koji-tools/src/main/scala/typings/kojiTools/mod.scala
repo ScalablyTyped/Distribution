@@ -2,50 +2,45 @@ package typings.kojiTools
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("koji-tools", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("koji-tools", "config")
   @js.native
   val config: js.Object = js.native
   
-  @JSImport("koji-tools", "on")
-  @js.native
-  def on(event: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def on(event: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("koji-tools", "pageLoad")
-  @js.native
-  def pageLoad(): Unit = js.native
-  @JSImport("koji-tools", "pageLoad")
-  @js.native
-  def pageLoad(options: js.Object): Unit = js.native
+  @scala.inline
+  def pageLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pageLoad")().asInstanceOf[Unit]
+  @scala.inline
+  def pageLoad(options: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("pageLoad")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("koji-tools", "pwa")
   @js.native
   val pwa: js.Any = js.native
   
-  @JSImport("koji-tools", "pwaPrompt")
-  @js.native
-  def pwaPrompt(): js.Any = js.native
+  @scala.inline
+  def pwaPrompt(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("pwaPrompt")().asInstanceOf[js.Any]
   
-  @JSImport("koji-tools", "request")
-  @js.native
-  def request(route: js.Object): js.Promise[_] = js.native
-  @JSImport("koji-tools", "request")
-  @js.native
-  def request(route: js.Object, params: js.Object): js.Promise[_] = js.native
+  @scala.inline
+  def request(route: js.Object): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def request(route: js.Object, params: js.Object): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(route.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("koji-tools", "resolveSecret")
-  @js.native
-  def resolveSecret(key: String): String | Null = js.native
+  @scala.inline
+  def resolveSecret(key: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveSecret")(key.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   @JSImport("koji-tools", "routes")
   @js.native
   val routes: js.Object = js.native
   
-  @JSImport("koji-tools", "watch")
-  @js.native
-  def watch(): Unit = js.native
+  @scala.inline
+  def watch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")().asInstanceOf[Unit]
 }

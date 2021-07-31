@@ -2,123 +2,123 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DriveItem extends BaseItem {
+trait DriveItem
+  extends StObject
+     with BaseItem {
   
   /**
     * If present, indicates that this item is a package instead of a folder or file. Packages are treated like files in some
     * contexts and folders in others. Read-only.
     */
   @JSName("package")
-  var _package: js.UndefOr[NullableOption[Package]] = js.native
+  var _package: js.UndefOr[NullableOption[Package]] = js.undefined
   
   // Analytics about the view activities that took place on this item.
-  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.native
+  var analytics: js.UndefOr[NullableOption[ItemAnalytics]] = js.undefined
   
   // Audio metadata, if the item is an audio file. Read-only.
-  var audio: js.UndefOr[NullableOption[Audio]] = js.native
+  var audio: js.UndefOr[NullableOption[Audio]] = js.undefined
   
   /**
     * An eTag for the content of the item. This eTag is not changed if only the metadata is changed. Note This property is
     * not returned if the item is a folder. Read-only.
     */
-  var cTag: js.UndefOr[NullableOption[String]] = js.native
+  var cTag: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Collection containing Item objects for the immediate children of Item. Only items representing folders have children.
     * Read-only. Nullable.
     */
-  var children: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.native
+  var children: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // The content stream, if the item represents a file.
-  var content: js.UndefOr[NullableOption[_]] = js.native
+  var content: js.UndefOr[NullableOption[js.Any]] = js.undefined
   
   // Information about the deleted state of the item. Read-only.
-  var deleted: js.UndefOr[NullableOption[Deleted]] = js.native
+  var deleted: js.UndefOr[NullableOption[Deleted]] = js.undefined
   
   // File metadata, if the item is a file. Read-only.
-  var file: js.UndefOr[NullableOption[File]] = js.native
+  var file: js.UndefOr[NullableOption[File]] = js.undefined
   
   // File system information on client. Read-write.
-  var fileSystemInfo: js.UndefOr[NullableOption[FileSystemInfo]] = js.native
+  var fileSystemInfo: js.UndefOr[NullableOption[FileSystemInfo]] = js.undefined
   
   // Folder metadata, if the item is a folder. Read-only.
-  var folder: js.UndefOr[NullableOption[Folder]] = js.native
+  var folder: js.UndefOr[NullableOption[Folder]] = js.undefined
   
   // Image metadata, if the item is an image. Read-only.
-  var image: js.UndefOr[NullableOption[Image]] = js.native
+  var image: js.UndefOr[NullableOption[Image]] = js.undefined
   
   // For drives in SharePoint, the associated document library list item. Read-only. Nullable.
-  var listItem: js.UndefOr[NullableOption[ListItem]] = js.native
+  var listItem: js.UndefOr[NullableOption[ListItem]] = js.undefined
   
   // Location metadata, if the item has location data. Read-only.
-  var location: js.UndefOr[NullableOption[GeoCoordinates]] = js.native
+  var location: js.UndefOr[NullableOption[GeoCoordinates]] = js.undefined
   
   /**
     * If present, indicates that one or more operations that might affect the state of the driveItem are pending completion.
     * Read-only.
     */
-  var pendingOperations: js.UndefOr[NullableOption[PendingOperations]] = js.native
+  var pendingOperations: js.UndefOr[NullableOption[PendingOperations]] = js.undefined
   
   // The set of permissions for the item. Read-only. Nullable.
-  var permissions: js.UndefOr[NullableOption[js.Array[Permission]]] = js.native
+  var permissions: js.UndefOr[NullableOption[js.Array[Permission]]] = js.undefined
   
   // Photo metadata, if the item is a photo. Read-only.
-  var photo: js.UndefOr[NullableOption[Photo]] = js.native
+  var photo: js.UndefOr[NullableOption[Photo]] = js.undefined
   
   /**
     * Provides information about the published or checked-out state of an item, in locations that support such actions. This
     * property is not returned by default. Read-only.
     */
-  var publication: js.UndefOr[NullableOption[PublicationFacet]] = js.native
+  var publication: js.UndefOr[NullableOption[PublicationFacet]] = js.undefined
   
   // Remote item data, if the item is shared from a drive other than the one being accessed. Read-only.
-  var remoteItem: js.UndefOr[NullableOption[RemoteItem]] = js.native
+  var remoteItem: js.UndefOr[NullableOption[RemoteItem]] = js.undefined
   
   // If this property is non-null, it indicates that the driveItem is the top-most driveItem in the drive.
-  var root: js.UndefOr[NullableOption[Root]] = js.native
+  var root: js.UndefOr[NullableOption[Root]] = js.undefined
   
   // Search metadata, if the item is from a search result. Read-only.
-  var searchResult: js.UndefOr[NullableOption[SearchResult]] = js.native
+  var searchResult: js.UndefOr[NullableOption[SearchResult]] = js.undefined
   
   /**
     * Indicates that the item has been shared with others and provides information about the shared state of the item.
     * Read-only.
     */
-  var shared: js.UndefOr[NullableOption[Shared]] = js.native
+  var shared: js.UndefOr[NullableOption[Shared]] = js.undefined
   
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
   // Size of the item in bytes. Read-only.
-  var size: js.UndefOr[NullableOption[Double]] = js.native
+  var size: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // If the current item is also available as a special folder, this facet is returned. Read-only.
-  var specialFolder: js.UndefOr[NullableOption[SpecialFolder]] = js.native
+  var specialFolder: js.UndefOr[NullableOption[SpecialFolder]] = js.undefined
   
   // The set of subscriptions on the item. Only supported on the root of a drive.
-  var subscriptions: js.UndefOr[NullableOption[js.Array[Subscription]]] = js.native
+  var subscriptions: js.UndefOr[NullableOption[js.Array[Subscription]]] = js.undefined
   
   /**
     * Collection containing [ThumbnailSet][] objects associated with the item. For more info, see [getting thumbnails][].
     * Read-only. Nullable.
     */
-  var thumbnails: js.UndefOr[NullableOption[js.Array[ThumbnailSet]]] = js.native
+  var thumbnails: js.UndefOr[NullableOption[js.Array[ThumbnailSet]]] = js.undefined
   
   // The list of previous versions of the item. For more info, see [getting previous versions][]. Read-only. Nullable.
-  var versions: js.UndefOr[NullableOption[js.Array[DriveItemVersion]]] = js.native
+  var versions: js.UndefOr[NullableOption[js.Array[DriveItemVersion]]] = js.undefined
   
   // Video metadata, if the item is a video. Read-only.
-  var video: js.UndefOr[NullableOption[Video]] = js.native
+  var video: js.UndefOr[NullableOption[Video]] = js.undefined
   
   // WebDAV compatible URL for the item.
-  var webDavUrl: js.UndefOr[NullableOption[String]] = js.native
+  var webDavUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For files that are Excel spreadsheets, accesses the workbook API to work with the spreadsheet's contents. Nullable.
-  var workbook: js.UndefOr[NullableOption[Workbook]] = js.native
+  var workbook: js.UndefOr[NullableOption[Workbook]] = js.undefined
 }
 object DriveItem {
   
@@ -171,7 +171,7 @@ object DriveItem {
     def setChildrenVarargs(value: DriveItem*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setContent(value: NullableOption[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: NullableOption[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentNull: Self = StObject.set(x, "content", null)

@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkingMod {
@@ -31,11 +30,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: IngressArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object Ingress {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.Ingress")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing Ingress resource's state with the given name, ID, and optional extra
@@ -45,20 +48,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressMod.Ingress = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressMod.Ingress = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressMod.Ingress]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressMod.Ingress]
       
       /**
         * Returns true if the given object is an instance of Ingress.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.Ingress.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingress.Ingress */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingress.Ingress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingress.Ingress */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1.IngressClass")
@@ -74,11 +74,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: IngressClassArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressClassArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object IngressClass {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClass")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing IngressClass resource's state with the given name, ID, and optional extra
@@ -88,20 +92,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClass.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressClassMod.IngressClass = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClass.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressClassMod.IngressClass = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressClassMod.IngressClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressClassMod.IngressClass]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressClassMod.IngressClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressClassMod.IngressClass]
       
       /**
         * Returns true if the given object is an instance of IngressClass.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClass.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClass.IngressClass */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClass.IngressClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClass.IngressClass */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1.IngressClassList")
@@ -117,11 +118,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: IngressClassListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressClassListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object IngressClassList {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClassList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing IngressClassList resource's state with the given name, ID, and optional extra
@@ -131,20 +136,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClassList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClassList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressClassListMod.IngressClassList]
       
       /**
         * Returns true if the given object is an instance of IngressClassList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressClassList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClassList.IngressClassList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClassList.IngressClassList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressClassList.IngressClassList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1.IngressList")
@@ -160,11 +162,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: IngressListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: IngressListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object IngressList {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.IngressList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing IngressList resource's state with the given name, ID, and optional extra
@@ -174,20 +180,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressListMod.IngressList = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressListMod.IngressList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1IngressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressListMod.IngressList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1IngressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1IngressListMod.IngressList]
       
       /**
         * Returns true if the given object is an instance of IngressList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.IngressList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressList.IngressList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressList.IngressList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/ingressList.IngressList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicy")
@@ -203,11 +206,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: NetworkPolicyArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: NetworkPolicyArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object NetworkPolicy {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicy")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing NetworkPolicy resource's state with the given name, ID, and optional extra
@@ -217,20 +224,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicy.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1NetworkPolicyMod.NetworkPolicy]
       
       /**
         * Returns true if the given object is an instance of NetworkPolicy.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicy.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicy.NetworkPolicy */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicy.NetworkPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicy.NetworkPolicy */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicyList")
@@ -246,11 +250,15 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: NetworkPolicyListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(name: String, args: NetworkPolicyListArgs, opts: CustomResourceOptions) = this()
     }
     /* static members */
     object NetworkPolicyList {
+      
+      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicyList")
+      @js.native
+      val ^ : js.Any = js.native
       
       /**
         * Get an existing NetworkPolicyList resource's state with the given name, ID, and optional extra
@@ -260,20 +268,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicyList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1NetworkPolicyListMod.NetworkPolicyList]
       
       /**
         * Returns true if the given object is an instance of NetworkPolicyList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1.NetworkPolicyList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicyList.NetworkPolicyList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicyList.NetworkPolicyList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1/networkPolicyList.NetworkPolicyList */ Boolean]
     }
   }
   
@@ -292,7 +297,7 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.v1beta1IngressMod.IngressArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.v1beta1IngressMod.IngressArgs,
@@ -302,6 +307,10 @@ object networkingMod {
     /* static members */
     object Ingress {
       
+      @JSImport("@pulumi/kubernetes/networking", "v1beta1.Ingress")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing Ingress resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -310,20 +319,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.Ingress.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1IngressMod.Ingress]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressMod.Ingress = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1IngressMod.Ingress]
       
       /**
         * Returns true if the given object is an instance of Ingress.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.Ingress.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingress.Ingress */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingress.Ingress */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingress.Ingress */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClass")
@@ -339,7 +345,7 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.ingressClassMod.IngressClassArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.ingressClassMod.IngressClassArgs,
@@ -349,6 +355,10 @@ object networkingMod {
     /* static members */
     object IngressClass {
       
+      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClass")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing IngressClass resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -357,20 +367,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClass.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassMod.IngressClass = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClass.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassMod.IngressClass = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassMod.IngressClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressClassMod.IngressClass]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassMod.IngressClass = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressClassMod.IngressClass]
       
       /**
         * Returns true if the given object is an instance of IngressClass.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClass.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClass.IngressClass */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClass.IngressClass */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClass.IngressClass */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClassList")
@@ -386,7 +393,7 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.ingressClassListMod.IngressClassListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.ingressClassListMod.IngressClassListArgs,
@@ -396,6 +403,10 @@ object networkingMod {
     /* static members */
     object IngressClassList {
       
+      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClassList")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing IngressClassList resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -404,20 +415,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClassList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClassList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressClassListMod.IngressClassList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.ingressClassListMod.IngressClassList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.ingressClassListMod.IngressClassList]
       
       /**
         * Returns true if the given object is an instance of IngressClassList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressClassList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClassList.IngressClassList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClassList.IngressClassList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressClassList.IngressClassList */ Boolean]
     }
     
     @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressList")
@@ -433,7 +441,7 @@ object networkingMod {
         */
       def this(name: String) = this()
       def this(name: String, args: typings.pulumiKubernetes.v1beta1IngressListMod.IngressListArgs) = this()
-      def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+      def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
       def this(
         name: String,
         args: typings.pulumiKubernetes.v1beta1IngressListMod.IngressListArgs,
@@ -443,6 +451,10 @@ object networkingMod {
     /* static members */
     object IngressList {
       
+      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressList")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /**
         * Get an existing IngressList resource's state with the given name, ID, and optional extra
         * properties used to qualify the lookup.
@@ -451,20 +463,17 @@ object networkingMod {
         * @param id The _unique_ provider ID of the resource to lookup.
         * @param opts Optional settings to control the behavior of the CustomResource.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = js.native
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressList.get")
-      @js.native
-      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = js.native
+      @scala.inline
+      def get(name: String, id: Input[ID]): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1IngressListMod.IngressList]
+      @scala.inline
+      def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.v1beta1IngressListMod.IngressList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.v1beta1IngressListMod.IngressList]
       
       /**
         * Returns true if the given object is an instance of IngressList.  This is designed to work even
         * when multiple copies of the Pulumi SDK have been loaded into the same process.
         */
-      @JSImport("@pulumi/kubernetes/networking", "v1beta1.IngressList.isInstance")
-      @js.native
-      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressList.IngressList */ Boolean = js.native
+      @scala.inline
+      def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressList.IngressList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/networking/v1beta1/ingressList.IngressList */ Boolean]
     }
   }
 }

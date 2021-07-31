@@ -3,19 +3,17 @@ package typings.json5
 import typings.json5.mod.JSONReplacer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Quote extends StObject {
     
-    var quote: js.UndefOr[String] = js.native
+    var quote: js.UndefOr[String] = js.undefined
     
-    var replacer: js.UndefOr[JSONReplacer] = js.native
+    var replacer: js.UndefOr[JSONReplacer] = js.undefined
     
-    var space: js.UndefOr[Double | String] = js.native
+    var space: js.UndefOr[Double | String] = js.undefined
   }
   object Quote {
     

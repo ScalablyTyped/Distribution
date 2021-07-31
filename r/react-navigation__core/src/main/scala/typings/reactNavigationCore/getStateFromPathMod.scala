@@ -7,24 +7,24 @@ import typings.reactNavigationRouters.typesMod.Route
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getStateFromPathMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/getStateFromPath", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/getStateFromPath", JSImport.Namespace)
   @js.native
-  def default(path: String): js.UndefOr[ResultState] = js.native
-  @JSImport("@react-navigation/core/lib/typescript/src/getStateFromPath", JSImport.Default)
-  @js.native
-  def default(path: String, options: Options): js.UndefOr[ResultState] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(path: String): js.UndefOr[ResultState] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ResultState]]
+  @scala.inline
+  def default(path: String, options: Options): js.UndefOr[ResultState] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ResultState]]
+  
   trait Options extends StObject {
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap = js.native
+    var screens: PathConfigMap
   }
   object Options {
     
@@ -49,14 +49,13 @@ object getStateFromPathMod {
   }
   
   /* Inlined @react-navigation/routers.@react-navigation/routers.PartialState<@react-navigation/routers.@react-navigation/routers.NavigationState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase>> & {  state :@react-navigation/core.@react-navigation/core/lib/typescript/src/getStateFromPath.ResultState | undefined} */
-  @js.native
   trait ResultState extends StObject {
     
-    var history: js.UndefOr[js.Array[_]] = js.native
+    var history: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     var routeNames: js.UndefOr[
         js.Array[
@@ -65,7 +64,7 @@ object getStateFromPathMod {
             String
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     val routes: js.Array[
         PartialRoute[
@@ -74,13 +73,13 @@ object getStateFromPathMod {
             js.UndefOr[js.Object]
           ]
         ]
-      ] = js.native
+      ]
     
-    val stale: js.UndefOr[`true`] = js.native
+    val stale: js.UndefOr[`true`] = js.undefined
     
-    var state: js.UndefOr[ResultState] = js.native
+    var state: js.UndefOr[ResultState] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResultState {
     
@@ -103,7 +102,7 @@ object getStateFromPathMod {
     implicit class ResultStateMutableBuilder[Self <: ResultState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+      def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

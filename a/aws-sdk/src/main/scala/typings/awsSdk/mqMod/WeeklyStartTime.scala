@@ -2,26 +2,24 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeeklyStartTime extends StObject {
   
   /**
     * Required. The day of the week.
     */
-  var DayOfWeek: js.UndefOr[typings.awsSdk.mqMod.DayOfWeek] = js.native
+  var DayOfWeek: js.UndefOr[typings.awsSdk.mqMod.DayOfWeek] = js.undefined
   
   /**
     * Required. The time, in 24-hour format.
     */
-  var TimeOfDay: js.UndefOr[string] = js.native
+  var TimeOfDay: js.UndefOr[string] = js.undefined
   
   /**
     * The time zone, UTC by default, in either the Country/City format, or the UTC offset format.
     */
-  var TimeZone: js.UndefOr[string] = js.native
+  var TimeZone: js.UndefOr[string] = js.undefined
 }
 object WeeklyStartTime {
   

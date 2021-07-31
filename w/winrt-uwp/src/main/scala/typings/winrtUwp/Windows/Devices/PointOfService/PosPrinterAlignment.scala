@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PosPrinterAlignment extends StObject {
   
   /** Text is centered. */
   @js.native
-  sealed trait center extends PosPrinterAlignment
+  sealed trait center
+    extends StObject
+       with PosPrinterAlignment
   
   /** Text is left-aligned. */
   @js.native
-  sealed trait left extends PosPrinterAlignment
+  sealed trait left
+    extends StObject
+       with PosPrinterAlignment
   
   /** Text is right-aligned. */
   @js.native
-  sealed trait right extends PosPrinterAlignment
+  sealed trait right
+    extends StObject
+       with PosPrinterAlignment
 }

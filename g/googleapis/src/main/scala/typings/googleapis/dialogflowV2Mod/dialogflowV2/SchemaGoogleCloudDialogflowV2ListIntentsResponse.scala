@@ -2,26 +2,24 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response message for Intents.ListIntents.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2ListIntentsResponse extends StObject {
   
   /**
     * The list of agent intents. There will be a maximum number of items
     * returned based on the page_size field in the request.
     */
-  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Intent]] = js.native
+  var intents: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Intent]] = js.undefined
   
   /**
     * Token to retrieve the next page of results, or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2ListIntentsResponse {
   

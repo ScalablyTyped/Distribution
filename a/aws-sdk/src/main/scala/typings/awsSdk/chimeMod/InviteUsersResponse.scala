@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InviteUsersResponse extends StObject {
   
   /**
     * The email invitation details.
     */
-  var Invites: js.UndefOr[InviteList] = js.native
+  var Invites: js.UndefOr[InviteList] = js.undefined
 }
 object InviteUsersResponse {
   

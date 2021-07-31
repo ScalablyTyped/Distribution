@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an orientation-sensor reading. */
-@js.native
 trait OrientationSensorReading extends StObject {
   
   /** Gets the Quaternion for the current orientation-sensor reading. */
-  var quaternion: SensorQuaternion = js.native
+  var quaternion: SensorQuaternion
   
   /** Gets the rotation matrix for the current orientation-sensor reading. */
-  var rotationMatrix: SensorRotationMatrix = js.native
+  var rotationMatrix: SensorRotationMatrix
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   /** Gets the orientation sensor's z-axis accuracy. */
-  var yawAccuracy: MagnetometerAccuracy = js.native
+  var yawAccuracy: MagnetometerAccuracy
 }
 object OrientationSensorReading {
   

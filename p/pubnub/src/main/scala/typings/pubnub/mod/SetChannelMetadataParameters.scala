@@ -3,17 +3,15 @@ package typings.pubnub.mod
 import typings.pubnub.anon.CustomFields
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetChannelMetadataParameters[Custom /* <: ObjectCustom */] extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
-  var data: ChannelMetadata[Custom] = js.native
+  var data: ChannelMetadata[Custom]
   
-  var include: js.UndefOr[CustomFields] = js.native
+  var include: js.UndefOr[CustomFields] = js.undefined
 }
 object SetChannelMetadataParameters {
   
@@ -24,7 +22,7 @@ object SetChannelMetadataParameters {
   }
   
   @scala.inline
-  implicit class SetChannelMetadataParametersMutableBuilder[Self <: SetChannelMetadataParameters[_], Custom /* <: ObjectCustom */] (val x: Self with SetChannelMetadataParameters[Custom]) extends AnyVal {
+  implicit class SetChannelMetadataParametersMutableBuilder[Self <: SetChannelMetadataParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetChannelMetadataParameters[Custom]) extends AnyVal {
     
     @scala.inline
     def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])

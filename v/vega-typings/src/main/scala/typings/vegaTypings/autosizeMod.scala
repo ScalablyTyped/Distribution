@@ -2,7 +2,6 @@ package typings.vegaTypings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object autosizeMod {
@@ -20,7 +19,9 @@ object autosizeMod {
     - typings.vegaTypings.vegaTypingsStrings.`fit-y`
     - typings.vegaTypings.vegaTypingsStrings.none
   */
-  trait AutoSizeType extends AutoSize
+  trait AutoSizeType
+    extends StObject
+       with AutoSize
   object AutoSizeType {
     
     @scala.inline

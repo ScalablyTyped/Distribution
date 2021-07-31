@@ -19,7 +19,6 @@ import typings.rx.Rx.Observable
 import typings.rx.Rx.Observer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -34,39 +33,12 @@ object mod {
     def to(
       topic: String,
       options: ISubscribeOptions,
-      observerOrOnNext: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      onCompleted: js.Function0[Unit]
-    ): Subscriber = js.native
-    def to(
-      topic: String,
-      options: ISubscribeOptions,
-      observerOrOnNext: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* exception */ js.Any, Unit]
-    ): Subscriber = js.native
-    def to(
-      topic: String,
-      options: ISubscribeOptions,
-      observerOrOnNext: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* exception */ js.Any, Unit],
-      onCompleted: js.Function0[Unit]
-    ): Subscriber = js.native
-    def to(
-      topic: String,
-      options: ISubscribeOptions,
       observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit]
     ): Subscriber = js.native
     def to(
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
-      onError: js.UndefOr[scala.Nothing],
-      onCompleted: js.Function0[Unit]
-    ): Subscriber = js.native
-    def to(
-      topic: String,
-      options: ISubscribeOptions,
-      observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
       onError: js.Function1[/* exception */ js.Any, Unit]
     ): Subscriber = js.native
     def to(
@@ -74,6 +46,33 @@ object mod {
       options: ISubscribeOptions,
       observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
       onError: js.Function1[/* exception */ js.Any, Unit],
+      onCompleted: js.Function0[Unit]
+    ): Subscriber = js.native
+    def to(
+      topic: String,
+      options: ISubscribeOptions,
+      observerOrOnNext: js.Function1[/* value */ IWampEvent, Unit],
+      onError: Unit,
+      onCompleted: js.Function0[Unit]
+    ): Subscriber = js.native
+    def to(
+      topic: String,
+      options: ISubscribeOptions,
+      observerOrOnNext: Unit,
+      onError: js.Function1[/* exception */ js.Any, Unit]
+    ): Subscriber = js.native
+    def to(
+      topic: String,
+      options: ISubscribeOptions,
+      observerOrOnNext: Unit,
+      onError: js.Function1[/* exception */ js.Any, Unit],
+      onCompleted: js.Function0[Unit]
+    ): Subscriber = js.native
+    def to(
+      topic: String,
+      options: ISubscribeOptions,
+      observerOrOnNext: Unit,
+      onError: Unit,
       onCompleted: js.Function0[Unit]
     ): Subscriber = js.native
     def to(topic: String, options: ISubscribeOptions, observerOrOnNext: IObserver[IWampEvent]): Subscriber = js.native
@@ -81,13 +80,6 @@ object mod {
       topic: String,
       options: ISubscribeOptions,
       observerOrOnNext: IObserver[IWampEvent],
-      onError: js.UndefOr[scala.Nothing],
-      onCompleted: js.Function0[Unit]
-    ): Subscriber = js.native
-    def to(
-      topic: String,
-      options: ISubscribeOptions,
-      observerOrOnNext: IObserver[IWampEvent],
       onError: js.Function1[/* exception */ js.Any, Unit]
     ): Subscriber = js.native
     def to(
@@ -95,6 +87,13 @@ object mod {
       options: ISubscribeOptions,
       observerOrOnNext: IObserver[IWampEvent],
       onError: js.Function1[/* exception */ js.Any, Unit],
+      onCompleted: js.Function0[Unit]
+    ): Subscriber = js.native
+    def to(
+      topic: String,
+      options: ISubscribeOptions,
+      observerOrOnNext: IObserver[IWampEvent],
+      onError: Unit,
       onCompleted: js.Function0[Unit]
     ): Subscriber = js.native
   }
@@ -103,26 +102,26 @@ object mod {
   trait IObservableWampStatic extends StObject {
     
     def callAsObservable[TResult](session: Session, procedure: String): js.Function2[
-        /* args */ js.UndefOr[js.Array[_]], 
+        /* args */ js.UndefOr[js.Array[js.Any]], 
         /* kwargs */ js.UndefOr[js.Any], 
         Observable[TResult]
       ] = js.native
     def callAsObservable[TResult](session: Session, procedure: String, options: ICallOptions): js.Function2[
-        /* args */ js.UndefOr[js.Array[_]], 
+        /* args */ js.UndefOr[js.Array[js.Any]], 
         /* kwargs */ js.UndefOr[js.Any], 
         Observable[TResult]
       ] = js.native
     
     def fromConnection(options: IConnectionOptions): Observable[Session] = js.native
-    def fromConnection(
-      options: IConnectionOptions,
-      keepReconnecting: js.UndefOr[scala.Nothing],
-      factory: js.Function1[/* options */ js.UndefOr[IConnectionOptions], Connection]
-    ): Observable[Session] = js.native
     def fromConnection(options: IConnectionOptions, keepReconnecting: Boolean): Observable[Session] = js.native
     def fromConnection(
       options: IConnectionOptions,
       keepReconnecting: Boolean,
+      factory: js.Function1[/* options */ js.UndefOr[IConnectionOptions], Connection]
+    ): Observable[Session] = js.native
+    def fromConnection(
+      options: IConnectionOptions,
+      keepReconnecting: Unit,
       factory: js.Function1[/* options */ js.UndefOr[IConnectionOptions], Connection]
     ): Observable[Session] = js.native
     
@@ -135,31 +134,13 @@ object mod {
     ): IPubSubSubject = js.native
     
     def publishAsObservable(session: Session, topic: String): Observable[IPublication] = js.native
-    def publishAsObservable(
-      session: Session,
-      topic: String,
-      args: js.UndefOr[scala.Nothing],
-      kwargs: js.UndefOr[scala.Nothing],
-      options: IPublishOptions
-    ): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.UndefOr[scala.Nothing], kwargs: js.Any): Observable[IPublication] = js.native
-    def publishAsObservable(
-      session: Session,
-      topic: String,
-      args: js.UndefOr[scala.Nothing],
-      kwargs: js.Any,
-      options: IPublishOptions
-    ): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[_]): Observable[IPublication] = js.native
-    def publishAsObservable(
-      session: Session,
-      topic: String,
-      args: js.Array[_],
-      kwargs: js.UndefOr[scala.Nothing],
-      options: IPublishOptions
-    ): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[_], kwargs: js.Any): Observable[IPublication] = js.native
-    def publishAsObservable(session: Session, topic: String, args: js.Array[_], kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any]): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: js.Any): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: js.Array[js.Any], kwargs: Unit, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: js.Any): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: js.Any, options: IPublishOptions): Observable[IPublication] = js.native
+    def publishAsObservable(session: Session, topic: String, args: Unit, kwargs: Unit, options: IPublishOptions): Observable[IPublication] = js.native
     
     def registerAsObservable(
       sessionOrObservable: Session,
@@ -175,12 +156,7 @@ object mod {
     ): Observable[IRegistration] = js.native
     
     def subscribeAsObservable(sessionOrObservable: Session, topic: String): Observable[IWampEvent] = js.native
-    def subscribeAsObservable(
-      sessionOrObservable: Session,
-      topic: String,
-      options: js.UndefOr[scala.Nothing],
-      openObserver: IObserver[ISubscription]
-    ): Observable[IWampEvent] = js.native
+    def subscribeAsObservable(sessionOrObservable: Session, topic: String, options: Unit, openObserver: IObserver[ISubscription]): Observable[IWampEvent] = js.native
     def subscribeAsObservable(sessionOrObservable: Session, topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
     def subscribeAsObservable(
       sessionOrObservable: Session,
@@ -192,7 +168,7 @@ object mod {
     def subscribeAsObservable(
       sessionOrObservable: Observable[Session],
       topic: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       openObserver: IObserver[ISubscription]
     ): Observable[IWampEvent] = js.native
     def subscribeAsObservable(sessionOrObservable: Observable[Session], topic: String, options: ISubscribeOptions): Observable[IWampEvent] = js.native
@@ -204,12 +180,13 @@ object mod {
     ): Observable[IWampEvent] = js.native
     
     def subscriber(sessionOrObservable: Session): Subscriber = js.native
-    def subscriber(sessionOrObservable: Observable[_]): Subscriber = js.native
+    def subscriber(sessionOrObservable: Observable[js.Any]): Subscriber = js.native
   }
   
   @js.native
   trait IPubSubSubject
-    extends Observable[IWampEvent]
+    extends StObject
+       with Observable[IWampEvent]
        with Observer[IWampEvent] {
     
     var errors: IObservable[IError] = js.native
@@ -221,14 +198,13 @@ object mod {
     var opened: IObservable[ISubscription] = js.native
   }
   
-  @js.native
   trait IWampEvent extends StObject {
     
-    var args: js.UndefOr[js.Array[_]] = js.native
+    var args: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var details: js.UndefOr[IEvent] = js.native
+    var details: js.UndefOr[IEvent] = js.undefined
     
-    var kwargs: js.UndefOr[js.Any] = js.native
+    var kwargs: js.UndefOr[js.Any] = js.undefined
   }
   object IWampEvent {
     
@@ -242,7 +218,7 @@ object mod {
     implicit class IWampEventMutableBuilder[Self <: IWampEvent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsUndefined: Self = StObject.set(x, "args", js.undefined)

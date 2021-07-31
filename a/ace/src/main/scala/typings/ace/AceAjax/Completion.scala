@@ -2,27 +2,25 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Completion extends StObject {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var docHTML: js.UndefOr[String] = js.native
+  var docHTML: js.UndefOr[String] = js.undefined
   
-  var exactMatch: js.UndefOr[Double] = js.native
+  var exactMatch: js.UndefOr[Double] = js.undefined
   
-  var meta: String = js.native
+  var meta: String
   
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
-  var snippet: js.UndefOr[js.Any] = js.native
+  var snippet: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var value: String = js.native
+  var value: String
 }
 object Completion {
   

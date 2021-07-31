@@ -6,25 +6,25 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Access number format codes defined in locale data. */
-@js.native
-trait XNumberFormatCode extends XInterface {
+trait XNumberFormatCode
+  extends StObject
+     with XInterface {
   
   /**
     * returns all format codes for a given **nFormatUsage** and locale.
     * @param nFormatUsage one of {@link KNumberFormatUsage} values
     * @param rLocale The locale for which the format codes are requested.
     */
-  def getAllFormatCode(nFormatUsage: Double, rLocale: Locale): SafeArray[NumberFormatCode] = js.native
+  def getAllFormatCode(nFormatUsage: Double, rLocale: Locale): SafeArray[NumberFormatCode]
   
   /**
     * returns all format codes for a given locale.
     * @param rLocale The locale for which the format codes are requested.
     */
-  def getAllFormatCodes(rLocale: Locale): SafeArray[NumberFormatCode] = js.native
+  def getAllFormatCodes(rLocale: Locale): SafeArray[NumberFormatCode]
   
   /**
     * returns the default number format code of a specific category (usage group) for a given locale and format length type.
@@ -32,14 +32,14 @@ trait XNumberFormatCode extends XInterface {
     * @param nFormatUsage one of {@link KNumberFormatUsage} values
     * @param rLocale The locale for which the format code is requested.
     */
-  def getDefault(nFormatType: Double, nFormatUsage: Double, rLocale: Locale): NumberFormatCode = js.native
+  def getDefault(nFormatType: Double, nFormatUsage: Double, rLocale: Locale): NumberFormatCode
   
   /**
     * returns the number format pointed to by **nFormatIndex** for a given locale.
     * @param nFormatIndex one of {@link NumberFormatIndex} values
     * @param rLocale The locale for which the format code is requested.
     */
-  def getFormatCode(nFormatIndex: Double, rLocale: Locale): NumberFormatCode = js.native
+  def getFormatCode(nFormatIndex: Double, rLocale: Locale): NumberFormatCode
 }
 object XNumberFormatCode {
   

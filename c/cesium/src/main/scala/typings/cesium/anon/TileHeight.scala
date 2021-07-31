@@ -2,21 +2,19 @@ package typings.cesium.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TileHeight extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.native
+  var ellipsoid: js.UndefOr[typings.cesium.mod.Ellipsoid] = js.undefined
   
-  var tileHeight: js.UndefOr[Double] = js.native
+  var tileHeight: js.UndefOr[Double] = js.undefined
   
-  var tileWidth: js.UndefOr[Double] = js.native
+  var tileWidth: js.UndefOr[Double] = js.undefined
   
-  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.native
+  var tilingScheme: js.UndefOr[typings.cesium.mod.TilingScheme] = js.undefined
 }
 object TileHeight {
   

@@ -2,34 +2,34 @@ package typings.sauronjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
   
-  @JSImport("sauronjs/src/core/cache", JSImport.Namespace)
-  @js.native
-  def apply(): Unit = js.native
-  @JSImport("sauronjs/src/core/cache", JSImport.Namespace)
-  @js.native
-  def apply(id: String): Cache = js.native
+  @scala.inline
+  def apply(): Unit = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Unit]
+  @scala.inline
+  def apply(id: String): Cache = ^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any]).asInstanceOf[Cache]
   
+  @JSImport("sauronjs/src/core/cache", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Cache extends StObject {
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def exists(key: String): Boolean = js.native
+    def exists(key: String): Boolean
     
-    def forEach(fn: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit = js.native
+    def forEach(fn: js.Function2[/* key */ String, /* value */ js.Any, Unit]): Unit
     
-    def get(key: String): js.Any = js.native
+    def get(key: String): js.Any
     
-    def keys(): js.Array[String] = js.native
+    def keys(): js.Array[String]
     
-    def set(key: String, value: js.Any): Unit = js.native
+    def set(key: String, value: js.Any): Unit
     
-    def size(): Double = js.native
+    def size(): Double
   }
   object Cache {
     

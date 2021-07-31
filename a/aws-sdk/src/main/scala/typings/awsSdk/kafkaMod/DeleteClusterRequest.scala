@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterRequest extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait DeleteClusterRequest extends StObject {
     The Amazon Resource Name (ARN) that uniquely identifies the cluster.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The current version of the MSK cluster.
     
     */
-  var CurrentVersion: js.UndefOr[string] = js.native
+  var CurrentVersion: js.UndefOr[string] = js.undefined
 }
 object DeleteClusterRequest {
   

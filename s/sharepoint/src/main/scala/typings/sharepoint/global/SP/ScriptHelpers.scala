@@ -9,122 +9,104 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.ScriptHelpers")
 @js.native
 class ScriptHelpers ()
-  extends typings.sharepoint.SP.ScriptHelpers
+  extends StObject
+     with typings.sharepoint.SP.ScriptHelpers
 object ScriptHelpers {
   
-  /* static member */
-  @JSGlobal("SP.ScriptHelpers.disableWebpartSelection")
+  @JSGlobal("SP.ScriptHelpers")
   @js.native
-  def disableWebpartSelection(context: RenderContext): Unit = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getDocumentQueryPairs")
-  @js.native
-  def getDocumentQueryPairs(): StringDictionary[String] = js.native
+  @scala.inline
+  def disableWebpartSelection(context: RenderContext): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableWebpartSelection")(context.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getFieldFromSchema")
-  @js.native
-  def getFieldFromSchema(schema: ListSchema, fieldName: String): FieldSchema = js.native
+  @scala.inline
+  def getDocumentQueryPairs(): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentQueryPairs")().asInstanceOf[StringDictionary[String]]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getLayoutsPageUrl")
-  @js.native
-  def getLayoutsPageUrl(pageName: String, webServerRelativeUrl: String): String = js.native
+  @scala.inline
+  def getFieldFromSchema(schema: ListSchema, fieldName: String): FieldSchema = (^.asInstanceOf[js.Dynamic].applyDynamic("getFieldFromSchema")(schema.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any])).asInstanceOf[FieldSchema]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getListLevelPermissionMask")
-  @js.native
-  def getListLevelPermissionMask(jsonItem: String): Double = js.native
+  @scala.inline
+  def getLayoutsPageUrl(pageName: String, webServerRelativeUrl: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getLayoutsPageUrl")(pageName.asInstanceOf[js.Any], webServerRelativeUrl.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getTextAreaElementValue")
-  @js.native
-  def getTextAreaElementValue(textAreaElement: HTMLTextAreaElement): String = js.native
+  @scala.inline
+  def getListLevelPermissionMask(jsonItem: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getListLevelPermissionMask")(jsonItem.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getUrlQueryPairs")
-  @js.native
-  def getUrlQueryPairs(docUrl: String): StringDictionary[String] = js.native
+  @scala.inline
+  def getTextAreaElementValue(textAreaElement: HTMLTextAreaElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextAreaElementValue")(textAreaElement.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.getUserFieldProperty")
-  @js.native
-  def getUserFieldProperty(item: typings.sharepoint.SP.ListItem[_], fieldName: String, propertyName: String): js.Any = js.native
+  @scala.inline
+  def getUrlQueryPairs(docUrl: String): StringDictionary[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrlQueryPairs")(docUrl.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[String]]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.hasPermission")
-  @js.native
-  def hasPermission(listPermissionMask: Double, listPermission: typings.sharepoint.SP.ListLevelPermissionMask): Boolean = js.native
+  @scala.inline
+  def getUserFieldProperty(item: typings.sharepoint.SP.ListItem[js.Any], fieldName: String, propertyName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserFieldProperty")(item.asInstanceOf[js.Any], fieldName.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.isNullOrEmptyString")
-  @js.native
-  def isNullOrEmptyString(str: String): Boolean = js.native
+  @scala.inline
+  def hasPermission(listPermissionMask: Double, listPermission: typings.sharepoint.SP.ListLevelPermissionMask): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPermission")(listPermissionMask.asInstanceOf[js.Any], listPermission.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.isNullOrUndefined")
-  @js.native
-  def isNullOrUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNullOrEmptyString(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrEmptyString")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.isNullOrUndefinedOrEmpty")
-  @js.native
-  def isNullOrUndefinedOrEmpty(str: String): Boolean = js.native
+  @scala.inline
+  def isNullOrUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.isUndefined")
-  @js.native
-  def isUndefined(obj: js.Any): Boolean = js.native
+  @scala.inline
+  def isNullOrUndefinedOrEmpty(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNullOrUndefinedOrEmpty")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.newGuid")
-  @js.native
-  def newGuid(): typings.sharepoint.SP.Guid = js.native
+  @scala.inline
+  def isUndefined(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.removeHtml")
-  @js.native
-  def removeHtml(str: String): String = js.native
+  @scala.inline
+  def newGuid(): typings.sharepoint.SP.Guid = ^.asInstanceOf[js.Dynamic].applyDynamic("newGuid")().asInstanceOf[typings.sharepoint.SP.Guid]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.removeHtmlAndTrimStringWithEllipsis")
-  @js.native
-  def removeHtmlAndTrimStringWithEllipsis(str: String, maxLength: Double): String = js.native
+  @scala.inline
+  def removeHtml(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("removeHtml")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.removeStyleChildren")
-  @js.native
-  def removeStyleChildren(element: HTMLElement): Unit = js.native
+  @scala.inline
+  def removeHtmlAndTrimStringWithEllipsis(str: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("removeHtmlAndTrimStringWithEllipsis")(str.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.replaceOrAddQueryString")
-  @js.native
-  def replaceOrAddQueryString(url: String, key: String, value: String): String = js.native
+  @scala.inline
+  def removeStyleChildren(element: HTMLElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeStyleChildren")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.resizeImageToSquareLength")
-  @js.native
-  def resizeImageToSquareLength(imgElement: HTMLImageElement, squareLength: Double): Unit = js.native
+  @scala.inline
+  def replaceOrAddQueryString(url: String, key: String, value: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceOrAddQueryString")(url.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.setTextAreaElementValue")
-  @js.native
-  def setTextAreaElementValue(textAreaElement: HTMLTextAreaElement, newValue: String): Unit = js.native
+  @scala.inline
+  def resizeImageToSquareLength(imgElement: HTMLImageElement, squareLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeImageToSquareLength")(imgElement.asInstanceOf[js.Any], squareLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.truncateToInt")
-  @js.native
-  def truncateToInt(n: Double): Double = js.native
+  @scala.inline
+  def setTextAreaElementValue(textAreaElement: HTMLTextAreaElement, newValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTextAreaElementValue")(textAreaElement.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SP.ScriptHelpers.urlCombine")
-  @js.native
-  def urlCombine(path1: String, path2: String): String = js.native
+  @scala.inline
+  def truncateToInt(n: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateToInt")(n.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  /* static member */
+  @scala.inline
+  def urlCombine(path1: String, path2: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlCombine")(path1.asInstanceOf[js.Any], path2.asInstanceOf[js.Any])).asInstanceOf[String]
 }

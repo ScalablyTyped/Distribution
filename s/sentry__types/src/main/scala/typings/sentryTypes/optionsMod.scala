@@ -15,21 +15,19 @@ import typings.sentryTypes.transportMod.TransportOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Options which are in beta, or otherwise not guaranteed to be stable.
       */
-    var _experiments: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var _experiments: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** Attaches stacktraces to pure capture message / log integrations */
-    var attachStacktrace: js.UndefOr[Boolean] = js.native
+    var attachStacktrace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A callback invoked when adding a breadcrumb, allowing to optionally modify
@@ -48,7 +46,7 @@ object optionsMod {
           /* hint */ js.UndefOr[BreadcrumbHint], 
           Breadcrumb | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A callback invoked during event submission, allowing to optionally modify
@@ -68,43 +66,43 @@ object optionsMod {
           /* hint */ js.UndefOr[EventHint], 
           (js.Thenable[Event | Null]) | Event | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enable debug functionality in the SDK itself
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If this is set to false, default integrations will not be added, otherwise this will internally be set to the
       * recommended default integrations.
       */
-    var defaultIntegrations: js.UndefOr[`false` | js.Array[Integration]] = js.native
+    var defaultIntegrations: js.UndefOr[`false` | js.Array[Integration]] = js.undefined
     
     /** Sets the distribution for all events */
-    var dist: js.UndefOr[String] = js.native
+    var dist: js.UndefOr[String] = js.undefined
     
     /**
       * The Dsn used to connect to Sentry and identify the project. If omitted, the
       * SDK will not send any data to Sentry.
       */
-    var dsn: js.UndefOr[String] = js.native
+    var dsn: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies whether this SDK should activate and send events to Sentry.
       * Disabling the SDK reduces all overhead from instrumentation, collecting
       * breadcrumbs and capturing events. Defaults to true.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** The current environment of your application (e.g. "production"). */
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
     /**
       * A pattern for error messages which should not be sent to Sentry.
       * By default, all errors will be sent.
       */
-    var ignoreErrors: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var ignoreErrors: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * List of integrations that should be installed after SDK was initialized.
@@ -113,19 +111,19 @@ object optionsMod {
       */
     var integrations: js.UndefOr[
         js.Array[Integration] | (js.Function1[/* integrations */ js.Array[Integration], js.Array[Integration]])
-      ] = js.native
+      ] = js.undefined
     
     /** Console logging verbosity for the SDK Client. */
-    var logLevel: js.UndefOr[LogLevel] = js.native
+    var logLevel: js.UndefOr[LogLevel] = js.undefined
     
     /**
       * The maximum number of breadcrumbs sent with events. Defaults to 100.
       * Values over 100 will be ignored and 100 used instead.
       */
-    var maxBreadcrumbs: js.UndefOr[Double] = js.native
+    var maxBreadcrumbs: js.UndefOr[Double] = js.undefined
     
     /** Maxium number of chars a single value can have before it will be truncated. */
-    var maxValueLength: js.UndefOr[Double] = js.native
+    var maxValueLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Maximum number of levels that normalization algorithm will traverse in objects and arrays.
@@ -136,17 +134,17 @@ object optionsMod {
       * - `extra`
       * Defaults to `3`. Set to `0` to disable.
       */
-    var normalizeDepth: js.UndefOr[Double] = js.native
+    var normalizeDepth: js.UndefOr[Double] = js.undefined
     
     /**
       * The release identifier used when uploading respective source maps. Specify
       * this value to allow Sentry to resolve the correct source maps when
       * processing events.
       */
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
     /** A global sample rate to apply to all events (0 - 1). */
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
     /**
       * Controls how many milliseconds to wait before shutting down. The default is
@@ -155,7 +153,7 @@ object optionsMod {
       * high can cause the application to block for users with network connectivity
       * problems.
       */
-    var shutdownTimeout: js.UndefOr[Double] = js.native
+    var shutdownTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Sample rate to determine trace sampling.
@@ -166,7 +164,7 @@ object optionsMod {
       * Tracing is enabled if either this or `tracesSampler` is defined. If both are defined, `tracesSampleRate` is
       * ignored.
       */
-    var tracesSampleRate: js.UndefOr[Double] = js.native
+    var tracesSampleRate: js.UndefOr[Double] = js.undefined
     
     /**
       * Function to compute tracing sample rate dynamically and filter unwanted traces.
@@ -180,17 +178,17 @@ object optionsMod {
       * @returns A sample rate between 0 and 1 (0 drops the trace, 1 guarantees it will be sent). Returning `true` is
       * equivalent to returning 1 and returning `false` is equivalent to returning 0.
       */
-    var tracesSampler: js.UndefOr[js.Function1[/* samplingContext */ SamplingContext, Double | Boolean]] = js.native
+    var tracesSampler: js.UndefOr[js.Function1[/* samplingContext */ SamplingContext, Double | Boolean]] = js.undefined
     
     /**
       * Transport object that should be used to send events to Sentry
       */
-    var transport: js.UndefOr[TransportClass[Transport]] = js.native
+    var transport: js.UndefOr[TransportClass[Transport]] = js.undefined
     
     /**
       * Options for the default transport that the SDK uses.
       */
-    var transportOptions: js.UndefOr[TransportOptions] = js.native
+    var transportOptions: js.UndefOr[TransportOptions] = js.undefined
   }
   object Options {
     

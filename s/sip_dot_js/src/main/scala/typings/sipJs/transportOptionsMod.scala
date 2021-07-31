@@ -2,42 +2,40 @@ package typings.sipJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportOptionsMod {
   
-  @js.native
   trait TransportOptions extends StObject {
     
     /**
       * Seconds to wait for WebSocket to connect before giving up.
       * @defaultValue `5`
       */
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Keep alive - needs review.
       * @internal
       */
-    var keepAliveDebounce: js.UndefOr[Double] = js.native
+    var keepAliveDebounce: js.UndefOr[Double] = js.undefined
     
     /**
       * Keep alive - needs review.
       * @internal
       */
-    var keepAliveInterval: js.UndefOr[Double] = js.native
+    var keepAliveInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * URL of WebSocket server to connect with. For example, "wss://localhost:8080".
       */
-    var server: String = js.native
+    var server: String
     
     /**
       * If true, messages sent and received by the transport are logged.
       * @defaultValue `true`
       */
-    var traceSip: js.UndefOr[Boolean] = js.native
+    var traceSip: js.UndefOr[Boolean] = js.undefined
   }
   object TransportOptions {
     

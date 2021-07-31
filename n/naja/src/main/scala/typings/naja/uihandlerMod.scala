@@ -12,30 +12,31 @@ import typings.std.HTMLFormElement
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uihandlerMod {
   
   @JSImport("naja/src/core/UIHandler", "UIHandler")
   @js.native
-  class UIHandler () extends EventTarget {
+  class UIHandler ()
+    extends StObject
+       with EventTarget {
     
     @JSName("addEventListener")
     def addEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _]
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any]
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -54,18 +55,18 @@ object uihandlerMod {
     @JSName("removeEventListener")
     def removeEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _]
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any]
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_interaction(
       `type`: interaction,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InteractionEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     

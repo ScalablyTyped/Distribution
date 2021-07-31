@@ -3,14 +3,16 @@ package typings.struct
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("struct", JSImport.Default)
+  @JSImport("struct", JSImport.Namespace)
   @js.native
-  def default[T](): Struct[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](): Struct[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Struct[T]]
   
   @JSImport("struct", "Struct")
   @js.native

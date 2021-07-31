@@ -3,17 +3,15 @@ package typings.lucene
 import typings.lucene.mod.TermLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: TermLocation = js.native
+    var end: TermLocation
     
-    var start: TermLocation = js.native
+    var start: TermLocation
   }
   object End {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Start extends StObject {
     
-    var end: TermLocation = js.native
+    var end: TermLocation
     
-    var start: TermLocation = js.native
+    var start: TermLocation
   }
   object Start {
     

@@ -2,17 +2,17 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from a GET all indirections request.
   */
-@js.native
-trait AllIndirectionsResponse extends ResponseBase {
+trait AllIndirectionsResponse
+  extends StObject
+     with ResponseBase {
   
   @JSName("result")
-  var result_AllIndirectionsResponse: js.Array[Indirection] = js.native
+  var result_AllIndirectionsResponse: js.Array[Indirection]
 }
 object AllIndirectionsResponse {
   

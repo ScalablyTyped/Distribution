@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnexpectedExitStatusEvent extends StObject {
   
   /** The numeric ID of the action that started the container. */
-  var actionId: js.UndefOr[Double] = js.native
+  var actionId: js.UndefOr[Double] = js.undefined
   
   /** The exit status of the container. */
-  var exitStatus: js.UndefOr[Double] = js.native
+  var exitStatus: js.UndefOr[Double] = js.undefined
 }
 object UnexpectedExitStatusEvent {
   

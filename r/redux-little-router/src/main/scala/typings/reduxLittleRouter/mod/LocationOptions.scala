@@ -2,15 +2,13 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationOptions extends StObject {
   
-  var persistQuery: js.UndefOr[Boolean] = js.native
+  var persistQuery: js.UndefOr[Boolean] = js.undefined
   
-  var updateRoutes: js.UndefOr[Boolean] = js.native
+  var updateRoutes: js.UndefOr[Boolean] = js.undefined
 }
 object LocationOptions {
   

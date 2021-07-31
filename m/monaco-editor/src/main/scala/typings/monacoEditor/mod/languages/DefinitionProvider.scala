@@ -5,16 +5,14 @@ import typings.monacoEditor.mod.Position
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefinitionProvider extends StObject {
   
   /**
     * Provide the definition of the symbol at the given position and document.
     */
-  def provideDefinition(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[LocationLink]] = js.native
+  def provideDefinition(model: ITextModel, position: Position, token: CancellationToken): ProviderResult[Definition | js.Array[LocationLink]]
 }
 object DefinitionProvider {
   

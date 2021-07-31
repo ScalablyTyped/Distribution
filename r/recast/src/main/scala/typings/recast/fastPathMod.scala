@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fastPathMod extends Shortcut {
@@ -12,7 +11,9 @@ object fastPathMod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("recast/lib/fast-path", JSImport.Default)
   @js.native
-  class default protected () extends FastPathType {
+  class default protected ()
+    extends StObject
+       with FastPathType {
     def this(value: js.Any) = this()
   }
   @JSImport("recast/lib/fast-path", JSImport.Default)
@@ -21,7 +22,8 @@ object fastPathMod extends Shortcut {
   
   @js.native
   trait FastPathConstructor
-    extends Instantiable1[/* value */ js.Any, FastPathType] {
+    extends StObject
+       with Instantiable1[/* value */ js.Any, FastPathType] {
     
     def from(obj: js.Any): js.Any = js.native
   }
@@ -61,7 +63,7 @@ object fastPathMod extends Shortcut {
     
     def needsParens(assumeExpressionContext: js.Any): js.Any = js.native
     
-    var stack: js.Array[_] = js.native
+    var stack: js.Array[js.Any] = js.native
     
     def valueIsDuplicate(): js.Any = js.native
   }

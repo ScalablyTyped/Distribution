@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsRequest extends StObject {
   
   /**
     * The maximum number of results to return per request.
     */
-  var maxResults: js.UndefOr[LaserMaxResults] = js.native
+  var maxResults: js.UndefOr[LaserMaxResults] = js.undefined
   
   /**
     * The namespace used to indicate that a job is a customer-managed job. When you specify a value for this parameter, AWS IoT Core sends jobs notifications to MQTT topics that contain the value in the following format.  $aws/things/THING_NAME/jobs/JOB_ID/notify-namespace-NAMESPACE_ID/   The namespaceId feature is in public preview. 
     */
-  var namespaceId: js.UndefOr[NamespaceId] = js.native
+  var namespaceId: js.UndefOr[NamespaceId] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An optional filter that lets you search for jobs that have the specified status.
     */
-  var status: js.UndefOr[JobStatus] = js.native
+  var status: js.UndefOr[JobStatus] = js.undefined
   
   /**
     * Specifies whether the job will continue to run (CONTINUOUS), or will be complete after all those things specified as targets have completed the job (SNAPSHOT). If continuous, the job may also be run on a thing when a change is detected in a target. For example, a job will run on a thing when the thing is added to a target group, even after the job was completed by all things originally in the group. 
     */
-  var targetSelection: js.UndefOr[TargetSelection] = js.native
+  var targetSelection: js.UndefOr[TargetSelection] = js.undefined
   
   /**
     * A filter that limits the returned jobs to those for the specified group.
     */
-  var thingGroupId: js.UndefOr[ThingGroupId] = js.native
+  var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
   
   /**
     * A filter that limits the returned jobs to those for the specified group.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
 }
 object ListJobsRequest {
   

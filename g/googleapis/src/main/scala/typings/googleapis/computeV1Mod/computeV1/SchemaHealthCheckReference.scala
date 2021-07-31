@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - projects/project-id/global/httpHealthChecks/health-check  -
   * global/httpHealthChecks/health-check
   */
-@js.native
 trait SchemaHealthCheckReference extends StObject {
   
-  var healthCheck: js.UndefOr[String] = js.native
+  var healthCheck: js.UndefOr[String] = js.undefined
 }
 object SchemaHealthCheckReference {
   

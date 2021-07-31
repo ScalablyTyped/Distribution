@@ -2,25 +2,23 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainVpcOptions extends StObject {
   
-  var availabilityZones: js.Array[String] = js.native
+  var availabilityZones: js.Array[String]
   
   /**
     * List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
     */
-  var securityGroupIds: js.UndefOr[js.Array[String]] = js.native
+  var securityGroupIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
     */
-  var subnetIds: js.UndefOr[js.Array[String]] = js.native
+  var subnetIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object DomainVpcOptions {
   

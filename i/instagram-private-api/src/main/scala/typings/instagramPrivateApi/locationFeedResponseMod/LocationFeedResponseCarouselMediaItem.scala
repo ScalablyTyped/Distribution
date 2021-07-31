@@ -2,39 +2,37 @@ package typings.instagramPrivateApi.locationFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFeedResponseCarouselMediaItem extends StObject {
   
-  var carousel_parent_id: String = js.native
+  var carousel_parent_id: String
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: LocationFeedResponseImageVersions2 = js.native
+  var image_versions2: LocationFeedResponseImageVersions2
   
-  var is_dash_eligible: js.UndefOr[Double] = js.native
+  var is_dash_eligible: js.UndefOr[Double] = js.undefined
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var number_of_qualities: js.UndefOr[Double] = js.native
+  var number_of_qualities: js.UndefOr[Double] = js.undefined
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var pk: String = js.native
+  var pk: String
   
-  var usertags: js.UndefOr[LocationFeedResponseUsertags] = js.native
+  var usertags: js.UndefOr[LocationFeedResponseUsertags] = js.undefined
   
-  var video_codec: js.UndefOr[String] = js.native
+  var video_codec: js.UndefOr[String] = js.undefined
   
-  var video_dash_manifest: js.UndefOr[String] = js.native
+  var video_dash_manifest: js.UndefOr[String] = js.undefined
   
-  var video_duration: js.UndefOr[Double] = js.native
+  var video_duration: js.UndefOr[Double] = js.undefined
   
-  var video_versions: js.UndefOr[js.Array[LocationFeedResponseVideoVersionsItem]] = js.native
+  var video_versions: js.UndefOr[js.Array[LocationFeedResponseVideoVersionsItem]] = js.undefined
 }
 object LocationFeedResponseCarouselMediaItem {
   

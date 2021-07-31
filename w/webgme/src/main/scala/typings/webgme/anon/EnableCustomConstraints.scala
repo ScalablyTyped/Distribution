@@ -2,10 +2,8 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableCustomConstraints extends StObject {
   
   // GmeClasses.Core;
@@ -14,7 +12,7 @@ trait EnableCustomConstraints extends StObject {
     * of custom constraints defined in the meta nodes.
     *   config.core.enableCustomConstraints = false;
     */
-  var enableCustomConstraints: Boolean = js.native
+  var enableCustomConstraints: Boolean
 }
 object EnableCustomConstraints {
   

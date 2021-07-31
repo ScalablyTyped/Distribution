@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAppsScriptTypeFunctionSet extends StObject {
   
   /** A list of functions composing the set. */
-  var values: js.UndefOr[js.Array[GoogleAppsScriptTypeFunction]] = js.native
+  var values: js.UndefOr[js.Array[GoogleAppsScriptTypeFunction]] = js.undefined
 }
 object GoogleAppsScriptTypeFunctionSet {
   

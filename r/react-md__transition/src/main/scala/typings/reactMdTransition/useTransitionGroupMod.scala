@@ -5,20 +5,21 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useTransitionGroupMod {
   
-  @JSImport("@react-md/transition/types/useTransitionGroup", "useTransitionGroup")
+  @JSImport("@react-md/transition/types/useTransitionGroup", JSImport.Namespace)
   @js.native
-  def useTransitionGroup[E /* <: HTMLElement */](hasAppearEnterExitChildren: TransitionGroupOptions): ReactNode = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useTransitionGroup[E /* <: HTMLElement */](hasAppearEnterExitProvidedChildren: TransitionGroupOptions): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("useTransitionGroup")(hasAppearEnterExitProvidedChildren.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
   type TransitionGroupChild[E /* <: HTMLElement */] = ReactElement
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionActions * / any */ @js.native
-  trait TransitionGroupOptions extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionActions * / any */ trait TransitionGroupOptions extends StObject {
     
     /**
       * The children **must** be a list of React elements that are either a
@@ -28,7 +29,7 @@ object useTransitionGroupMod {
       * used for storing which components should be rendered and eventually
       * unmounted.
       */
-    var children: ReactNode = js.native
+    var children: ReactNode
   }
   object TransitionGroupOptions {
     

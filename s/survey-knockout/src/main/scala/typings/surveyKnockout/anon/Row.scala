@@ -2,21 +2,19 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
-  var cell: String = js.native
+  var cell: String
   
-  var item: String = js.native
+  var item: String
   
-  var itemTitle: String = js.native
+  var itemTitle: String
   
-  var root: String = js.native
+  var root: String
   
-  var row: String = js.native
+  var row: String
 }
 object Row {
   

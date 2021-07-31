@@ -7,43 +7,41 @@ import typings.cleanCss.cleanCssStrings.none
 import typings.cleanCss.cleanCssStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AdjacentSpace extends StObject {
     
     /**
       * Controls extra space before `nav` element; defaults to `false`
       */
-    var adjacentSpace: js.UndefOr[Boolean] = js.native
+    var adjacentSpace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removal of IE7 selector hacks, e.g. `*+html...`; defaults to `true`
       */
-    var ie7Hack: js.UndefOr[Boolean] = js.native
+    var ie7Hack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls maximum number of selectors in a single rule (since 4.1.0); defaults to `8191`
       */
-    var mergeLimit: Double = js.native
+    var mergeLimit: Double
     
     /**
       * Controls a whitelist of mergeable pseudo classes; defaults to `[':active', ...]`
       */
-    var mergeablePseudoClasses: js.UndefOr[js.Array[String]] = js.native
+    var mergeablePseudoClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Controls a whitelist of mergeable pseudo elements; defaults to `['::after', ...]`
       */
-    var mergeablePseudoElements: js.Array[String] = js.native
+    var mergeablePseudoElements: js.Array[String]
     
     /**
       * Controls merging of rules with multiple pseudo classes / elements (since 4.1.0); defaults to `true`
       */
-    var multiplePseudoMerging: Boolean = js.native
+    var multiplePseudoMerging: Boolean
   }
   object AdjacentSpace {
     
@@ -91,53 +89,52 @@ object anon {
     }
   }
   
-  @js.native
   trait AfterAtRule extends StObject {
     
     /**
       * Controls if a line break comes after an at-rule; e.g. `@charset`; defaults to `false`
       */
-    var afterAtRule: js.UndefOr[Boolean] = js.native
+    var afterAtRule: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a block begins; e.g. `@media`; defaults to `false`
       */
-    var afterBlockBegins: js.UndefOr[Boolean] = js.native
+    var afterBlockBegins: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a block ends, defaults to `false`
       */
-    var afterBlockEnds: js.UndefOr[Boolean] = js.native
+    var afterBlockEnds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a comment; defaults to `false`
       */
-    var afterComment: js.UndefOr[Boolean] = js.native
+    var afterComment: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a property; defaults to `false`
       */
-    var afterProperty: js.UndefOr[Boolean] = js.native
+    var afterProperty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a rule begins; defaults to `false`
       */
-    var afterRuleBegins: js.UndefOr[Boolean] = js.native
+    var afterRuleBegins: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes after a rule ends; defaults to `false`
       */
-    var afterRuleEnds: js.UndefOr[Boolean] = js.native
+    var afterRuleEnds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes before a block ends; defaults to `false`
       */
-    var beforeBlockEnds: js.UndefOr[Boolean] = js.native
+    var beforeBlockEnds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a line break comes between selectors; defaults to `false`
       */
-    var betweenSelectors: js.UndefOr[Boolean] = js.native
+    var betweenSelectors: js.UndefOr[Boolean] = js.undefined
   }
   object AfterAtRule {
     
@@ -206,119 +203,118 @@ object anon {
     }
   }
   
-  @js.native
   trait All extends StObject {
     
     /**
       * Sets all optimizations at this level unless otherwise specified
       */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `@charset` moving to the front of a stylesheet; defaults to `true`
       */
-    var cleanupCharsets: js.UndefOr[Boolean] = js.native
+    var cleanupCharsets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls URL normalization; defaults to `true`
       */
-    var normalizeUrls: js.UndefOr[Boolean] = js.native
+    var normalizeUrls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `background` property optimizations; defaults to `true`
       */
-    var optimizeBackground: js.UndefOr[Boolean] = js.native
+    var optimizeBackground: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `border-radius` property optimizations; defaults to `true`
       */
-    var optimizeBorderRadius: js.UndefOr[Boolean] = js.native
+    var optimizeBorderRadius: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `filter` property optimizations; defaults to `true`
       */
-    var optimizeFilter: js.UndefOr[Boolean] = js.native
+    var optimizeFilter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `font` property optimizations; defaults to `true`
       */
-    var optimizeFont: js.UndefOr[Boolean] = js.native
+    var optimizeFont: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `font-weight` property optimizations; defaults to `true`
       */
-    var optimizeFontWeight: js.UndefOr[Boolean] = js.native
+    var optimizeFontWeight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `outline` property optimizations; defaults to `true`
       */
-    var optimizeOutline: js.UndefOr[Boolean] = js.native
+    var optimizeOutline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removing empty rules and nested blocks; defaults to `true`
       */
-    var removeEmpty: js.UndefOr[Boolean] = js.native
+    var removeEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removing negative paddings; defaults to `true`
       */
-    var removeNegativePaddings: js.UndefOr[Boolean] = js.native
+    var removeNegativePaddings: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removing quotes when unnecessary; defaults to `true`
       */
-    var removeQuotes: js.UndefOr[Boolean] = js.native
+    var removeQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removing unused whitespace; defaults to `true`
       */
-    var removeWhitespace: js.UndefOr[Boolean] = js.native
+    var removeWhitespace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Contols removing redundant zeros; defaults to `true`
       */
-    var replaceMultipleZeros: js.UndefOr[Boolean] = js.native
+    var replaceMultipleZeros: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls replacing time units with shorter values; defaults to `true`
       */
-    var replaceTimeUnits: js.UndefOr[Boolean] = js.native
+    var replaceTimeUnits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls replacing zero values with units; defaults to `true`
       */
-    var replaceZeroUnits: js.UndefOr[Boolean] = js.native
+    var replaceZeroUnits: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Rounds pixel values to `N` decimal places; `false` disables rounding; defaults to `false`
       */
-    var roundingPrecision: js.UndefOr[Boolean] = js.native
+    var roundingPrecision: js.UndefOr[Boolean] = js.undefined
     
     /**
       * denotes selector sorting method; can be `'natural'` or `'standard'`, `'none'`, or false (the last two
       * since 4.1.0); defaults to `'standard'`
       */
-    var selectorsSortingMethod: js.UndefOr[standard | natural | none] = js.native
+    var selectorsSortingMethod: js.UndefOr[standard | natural | none] = js.undefined
     
     /**
       * denotes a number of / *! ... * / comments preserved; defaults to `all`
       */
-    var specialComments: js.UndefOr[String] = js.native
+    var specialComments: js.UndefOr[String] = js.undefined
     
     /**
       * Controls at-rules (e.g. `@charset`, `@import`) optimizing; defaults to `true`
       */
-    var tidyAtRules: js.UndefOr[Boolean] = js.native
+    var tidyAtRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls block scopes (e.g. `@media`) optimizing; defaults to `true`
       */
-    var tidyBlockScopes: js.UndefOr[Boolean] = js.native
+    var tidyBlockScopes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls selectors optimizing; defaults to `true`
       */
-    var tidySelectors: js.UndefOr[Boolean] = js.native
+    var tidySelectors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines a callback for fine-grained property optimization; defaults to no-op
@@ -330,7 +326,7 @@ object anon {
           /* selector */ js.UndefOr[String], 
           String
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object All {
     
@@ -485,23 +481,22 @@ object anon {
     }
   }
   
-  @js.native
   trait AroundSelectorRelation extends StObject {
     
     /**
       * Controls if spaces come around selector relations; e.g. `div > a`; defaults to `false`
       */
-    var aroundSelectorRelation: js.UndefOr[Boolean] = js.native
+    var aroundSelectorRelation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a space comes before a block begins; e.g. `.block {`; defaults to `false`
       */
-    var beforeBlockBegins: js.UndefOr[Boolean] = js.native
+    var beforeBlockBegins: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls if a space comes before a value; e.g. `width: 1rem`; defaults to `false`
       */
-    var beforeValue: js.UndefOr[Boolean] = js.native
+    var beforeValue: js.UndefOr[Boolean] = js.undefined
   }
   object AroundSelectorRelation {
     
@@ -534,73 +529,72 @@ object anon {
     }
   }
   
-  @js.native
   trait BackgroundClipMerging extends StObject {
     
     /**
       * Controls background-clip merging into shorthand; defaults to `true`
       */
-    var backgroundClipMerging: js.UndefOr[Boolean] = js.native
+    var backgroundClipMerging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls background-origin merging into shorthand; defaults to `true`
       */
-    var backgroundOriginMerging: js.UndefOr[Boolean] = js.native
+    var backgroundOriginMerging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls background-size merging into shorthand; defaults to `true`
       */
-    var backgroundSizeMerging: js.UndefOr[Boolean] = js.native
+    var backgroundSizeMerging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * controls color optimizations; defaults to `true`
       */
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls keeping IE bang hack; defaults to `false`
       */
-    var ieBangHack: js.UndefOr[Boolean] = js.native
+    var ieBangHack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls keeping IE `filter` / `-ms-filter`; defaults to `false`
       */
-    var ieFilters: js.UndefOr[Boolean] = js.native
+    var ieFilters: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls keeping IE prefix hack; defaults to `false`
       */
-    var iePrefixHack: js.UndefOr[Boolean] = js.native
+    var iePrefixHack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls keeping IE suffix hack; defaults to `false`
       */
-    var ieSuffixHack: js.UndefOr[Boolean] = js.native
+    var ieSuffixHack: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls property merging based on understandably; defaults to `true`
       */
-    var merging: js.UndefOr[Boolean] = js.native
+    var merging: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls shortening pixel units into `pc`, `pt`, or `in` units; defaults to `false`
       */
-    var shorterLengthUnits: js.UndefOr[`false`] = js.native
+    var shorterLengthUnits: js.UndefOr[`false`] = js.undefined
     
     /**
       * Controls keeping space after closing brace - `url() no-repeat` into `url()no-repeat`; defaults to `true`
       */
-    var spaceAfterClosingBrace: js.UndefOr[`true`] = js.native
+    var spaceAfterClosingBrace: js.UndefOr[`true`] = js.undefined
     
     /**
       * Controls keeping quoting inside `url()`; defaults to `false`
       */
-    var urlQuotes: js.UndefOr[Boolean] = js.native
+    var urlQuotes: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removal of units `0` value; defaults to `true`
       */
-    var zeroUnits: js.UndefOr[Boolean] = js.native
+    var zeroUnits: js.UndefOr[Boolean] = js.undefined
   }
   object BackgroundClipMerging {
     
@@ -693,53 +687,52 @@ object anon {
     }
   }
   
-  @js.native
   trait Ch extends StObject {
     
     /**
       * Controls treating `ch` as a supported unit; defaults to `true`
       */
-    var ch: js.UndefOr[Boolean] = js.native
+    var ch: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `in` as a supported unit; defaults to `true`
       */
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `pc` as a supported unit; defaults to `true`
       */
-    var pc: js.UndefOr[Boolean] = js.native
+    var pc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `pt` as a supported unit; defaults to `true`
       */
-    var pt: js.UndefOr[Boolean] = js.native
+    var pt: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `rem` as a supported unit; defaults to `true`
       */
-    var rem: js.UndefOr[Boolean] = js.native
+    var rem: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `vh` as a supported unit; defaults to `true`
       */
-    var vh: js.UndefOr[Boolean] = js.native
+    var vh: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `vm` as a supported unit; defaults to `true`
       */
-    var vm: js.UndefOr[Boolean] = js.native
+    var vm: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `vmax` as a supported unit; defaults to `true`
       */
-    var vmax: js.UndefOr[Boolean] = js.native
+    var vmax: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls treating `vmin` as a supported unit; defaults to `true`
       */
-    var vmin: js.UndefOr[Boolean] = js.native
+    var vmin: js.UndefOr[Boolean] = js.undefined
   }
   object Ch {
     
@@ -808,28 +801,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Efficiency extends StObject {
     
     /**
       * `(originalSize - minifiedSize) / originalSize`, e.g. 0.25 if size is reduced from 100 bytes to 75 bytes
       */
-    var efficiency: Double = js.native
+    var efficiency: Double
     
     /**
       * Optimized content size
       */
-    var minifiedSize: Double = js.native
+    var minifiedSize: Double
     
     /**
       * Original content size after import inlining
       */
-    var originalSize: Double = js.native
+    var originalSize: Double
     
     /**
       * Time spent on optimizations in milliseconds
       */
-    var timeSpent: Double = js.native
+    var timeSpent: Double
   }
   object Efficiency {
     
@@ -856,83 +848,82 @@ object anon {
     }
   }
   
-  @js.native
   trait MergeAdjacentRules extends StObject {
     
     /**
       * Sets all optimizations at this level unless otherwise specified
       */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls adjacent rules merging; defaults to true
       */
-    var mergeAdjacentRules: js.UndefOr[Boolean] = js.native
+    var mergeAdjacentRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls merging properties into shorthands; defaults to true
       */
-    var mergeIntoShorthands: js.UndefOr[Boolean] = js.native
+    var mergeIntoShorthands: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls `@media` merging; defaults to true
       */
-    var mergeMedia: js.UndefOr[Boolean] = js.native
+    var mergeMedia: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls non-adjacent rule merging; defaults to true
       */
-    var mergeNonAdjacentRules: js.UndefOr[Boolean] = js.native
+    var mergeNonAdjacentRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls semantic merging; defaults to false
       */
-    var mergeSemantically: js.UndefOr[Boolean] = js.native
+    var mergeSemantically: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls property overriding based on understandably; defaults to true
       */
-    var overrideProperties: js.UndefOr[Boolean] = js.native
+    var overrideProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls non-adjacent rule reducing; defaults to true
       */
-    var reduceNonAdjacentRules: js.UndefOr[Boolean] = js.native
+    var reduceNonAdjacentRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls duplicate `@font-face` removing; defaults to true
       */
-    var removeDuplicateFontRules: js.UndefOr[Boolean] = js.native
+    var removeDuplicateFontRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls duplicate `@media` removing; defaults to true
       */
-    var removeDuplicateMediaBlocks: js.UndefOr[Boolean] = js.native
+    var removeDuplicateMediaBlocks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls duplicate rules removing; defaults to true
       */
-    var removeDuplicateRules: js.UndefOr[Boolean] = js.native
+    var removeDuplicateRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls removing empty rules and nested blocks; defaults to `true`
       */
-    var removeEmpty: js.UndefOr[Boolean] = js.native
+    var removeEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls unused at rule removing; defaults to false (available since 4.1.0)
       */
-    var removeUnusedAtRules: js.UndefOr[Boolean] = js.native
+    var removeUnusedAtRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls rule restructuring; defaults to false
       */
-    var restructureRules: js.UndefOr[Boolean] = js.native
+    var restructureRules: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls which properties won't be optimized, defaults to `[]` which means all will be optimized (since 4.1.0)
       */
-    var skipProperties: js.UndefOr[js.Array[String]] = js.native
+    var skipProperties: js.UndefOr[js.Array[String]] = js.undefined
   }
   object MergeAdjacentRules {
     
@@ -1040,13 +1031,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Opacity extends StObject {
     
     /**
       * Controls `rgba()` / `hsla()` color support; defaults to `true`
       */
-    var opacity: js.UndefOr[Boolean] = js.native
+    var opacity: js.UndefOr[Boolean] = js.undefined
   }
   object Opacity {
     
@@ -1067,18 +1057,17 @@ object anon {
     }
   }
   
-  @js.native
   trait SourceMap extends StObject {
     
     /**
       * The source map of the file, if needed
       */
-    var sourceMap: js.UndefOr[String] = js.native
+    var sourceMap: js.UndefOr[String] = js.undefined
     
     /**
       * The contents of the file, should be css
       */
-    var styles: String = js.native
+    var styles: String
   }
   object SourceMap {
     

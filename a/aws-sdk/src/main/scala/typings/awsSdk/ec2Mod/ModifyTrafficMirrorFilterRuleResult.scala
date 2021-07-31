@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyTrafficMirrorFilterRuleResult extends StObject {
   
   /**
     * Modifies a Traffic Mirror rule.
     */
-  var TrafficMirrorFilterRule: js.UndefOr[typings.awsSdk.ec2Mod.TrafficMirrorFilterRule] = js.native
+  var TrafficMirrorFilterRule: js.UndefOr[typings.awsSdk.ec2Mod.TrafficMirrorFilterRule] = js.undefined
 }
 object ModifyTrafficMirrorFilterRuleResult {
   

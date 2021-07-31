@@ -2,33 +2,31 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Season extends StObject {
   
-  var name: String = js.native
+  var name: String
   
   /**
     * The message to display when the season ends
     */
-  var over: String = js.native
+  var over: String
   
   /**
     * The message to display when the season starts
     */
-  var start: String = js.native
+  var start: String
   
   /**
     * The name of the upgrade which triggers the season
     */
-  var trigger: String = js.native
+  var trigger: String
   
   /**
     * The upgrade which triggers the season
     */
-  var triggerUpgrade: SeasonSwitch = js.native
+  var triggerUpgrade: SeasonSwitch
 }
 object Season {
   

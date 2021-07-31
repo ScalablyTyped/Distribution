@@ -12,7 +12,7 @@ An express middleware to have simple NTLM-authentication.
 | Keywords           | express, ntlm, ldap, authentication |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 54019 |
+| # downloads        | 53404 |
 | # stars            | 4 |
 
 ## Links

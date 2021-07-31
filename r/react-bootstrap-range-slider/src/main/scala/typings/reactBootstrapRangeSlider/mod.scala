@@ -31,63 +31,61 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("react-bootstrap-range-slider", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] with RefAttributes[HTMLInputElement]] = js.native
+  val default: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] & RefAttributes[HTMLInputElement]] = js.native
   
   @JSImport("react-bootstrap-range-slider", "RangeSlider")
   @js.native
-  val RangeSlider: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] with RefAttributes[HTMLInputElement]] = js.native
+  val RangeSlider: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] & RefAttributes[HTMLInputElement]] = js.native
   
-  @js.native
   trait RangeSliderProps extends StObject {
     
-    var bsPrefix: js.UndefOr[String] = js.native
+    var bsPrefix: js.UndefOr[String] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLInputElement], HTMLInputElement]] = js.native
+    var inputProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLInputElement], HTMLInputElement]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     var onAfterChange: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLInputElement, NativeMouseEvent], /* value */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* event */ ChangeEvent[HTMLInputElement], /* value */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var ref: js.UndefOr[
         (js.Function1[/* instance */ HTMLInputElement | Null, Unit]) | RefObject[HTMLInputElement] | Null
-      ] = js.native
+      ] = js.undefined
     
-    var size: js.UndefOr[sm | lg] = js.native
+    var size: js.UndefOr[sm | lg] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var tooltip: js.UndefOr[auto | on | off] = js.native
+    var tooltip: js.UndefOr[auto | on | off] = js.undefined
     
-    var tooltipLabel: js.UndefOr[js.Function1[/* value */ Double, ReactNode]] = js.native
+    var tooltipLabel: js.UndefOr[js.Function1[/* value */ Double, ReactNode]] = js.undefined
     
-    var tooltipPlacement: js.UndefOr[top | bottom] = js.native
+    var tooltipPlacement: js.UndefOr[top | bottom] = js.undefined
     
-    var tooltipProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]] = js.native
+    var tooltipProps: js.UndefOr[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]] = js.undefined
     
-    var tooltipStyle: js.UndefOr[CSSProperties] = js.native
+    var tooltipStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
-    var variant: js.UndefOr[primary | secondary | success | danger | warning | info | dark | light] = js.native
+    var variant: js.UndefOr[primary | secondary | success | danger | warning | info | dark | light] = js.undefined
   }
   object RangeSliderProps {
     
@@ -216,8 +214,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] with RefAttributes[HTMLInputElement]]
+  type _To = ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] & RefAttributes[HTMLInputElement]]
   
   /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] with RefAttributes[HTMLInputElement]] = default
+  override def _to: ForwardRefExoticComponent[PropsWithoutRef[RangeSliderProps] & RefAttributes[HTMLInputElement]] = default
 }

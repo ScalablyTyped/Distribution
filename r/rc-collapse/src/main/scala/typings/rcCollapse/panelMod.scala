@@ -6,7 +6,6 @@ import typings.react.mod.KeyboardEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelMod {
@@ -41,9 +40,8 @@ object panelMod {
       @scala.inline
       def isActive_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isActive")(x.asInstanceOf[js.Any])
       
-      @JSImport("rc-collapse/es/Panel", "default.defaultProps.onItemClick")
-      @js.native
-      def onItemClick(): Unit = js.native
+      @scala.inline
+      def onItemClick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onItemClick")().asInstanceOf[Unit]
       
       @JSImport("rc-collapse/es/Panel", "default.defaultProps.showArrow")
       @js.native

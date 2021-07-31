@@ -10,16 +10,21 @@ import typings.stylableOptimizer.classnameOptimizerMod.StylableClassNameOptimize
 import typings.stylableOptimizer.namespaceOptimizerMod.StylableNamespaceOptimizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableOptimizerMod {
   
+  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "StylableOptimizer")
   @js.native
-  class StylableOptimizer () extends IStylableOptimizer {
+  class StylableOptimizer ()
+    extends StObject
+       with IStylableOptimizer {
     def this(classNameOptimizer: StylableClassNameOptimizer) = this()
-    def this(classNameOptimizer: js.UndefOr[scala.Nothing], namespaceOptimizer: StylableNamespaceOptimizer) = this()
+    def this(classNameOptimizer: Unit, namespaceOptimizer: StylableNamespaceOptimizer) = this()
     def this(classNameOptimizer: StylableClassNameOptimizer, namespaceOptimizer: StylableNamespaceOptimizer) = this()
     
     @JSName("classNameOptimizer")
@@ -47,42 +52,35 @@ object stylableOptimizerMod {
     var removeUnusedComponents: js.Any = js.native
   }
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "createCommentFromNode")
-  @js.native
-  def createCommentFromNode(label: String, node: Node): js.Array[Comment_] = js.native
+  @scala.inline
+  def createCommentFromNode(label: String, node: Node): js.Array[Comment_] = (^.asInstanceOf[js.Dynamic].applyDynamic("createCommentFromNode")(label.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[js.Array[Comment_]]
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "createLineByLineComment")
-  @js.native
-  def createLineByLineComment(node: Node): js.Array[Comment_] = js.native
+  @scala.inline
+  def createLineByLineComment(node: Node): js.Array[Comment_] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLineByLineComment")(node.asInstanceOf[js.Any]).asInstanceOf[js.Array[Comment_]]
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "removeCommentNodes")
-  @js.native
-  def removeCommentNodes(root: Root_): Unit = js.native
+  @scala.inline
+  def removeCommentNodes(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCommentNodes")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "removeEmptyNodes")
-  @js.native
-  def removeEmptyNodes(root: Root_): Unit = js.native
+  @scala.inline
+  def removeEmptyNodes(root: Root_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeEmptyNodes")(root.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "removeRecursiveUpIfEmpty")
-  @js.native
-  def removeRecursiveUpIfEmpty(node: Node): Unit = js.native
+  @scala.inline
+  def removeRecursiveUpIfEmpty(node: Node): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeRecursiveUpIfEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@stylable/optimizer/cjs/stylable-optimizer", "replaceRecursiveUpIfEmpty")
-  @js.native
-  def replaceRecursiveUpIfEmpty(label: String, node: Node): Unit = js.native
+  @scala.inline
+  def replaceRecursiveUpIfEmpty(label: String, node: Node): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRecursiveUpIfEmpty")(label.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait OptimizeConfig extends StObject {
     
-    var classNameOptimizations: js.UndefOr[Boolean] = js.native
+    var classNameOptimizations: js.UndefOr[Boolean] = js.undefined
     
-    var removeComments: js.UndefOr[Boolean] = js.native
+    var removeComments: js.UndefOr[Boolean] = js.undefined
     
-    var removeEmptyNodes: js.UndefOr[Boolean] = js.native
+    var removeEmptyNodes: js.UndefOr[Boolean] = js.undefined
     
-    var removeStylableDirectives: js.UndefOr[Boolean] = js.native
+    var removeStylableDirectives: js.UndefOr[Boolean] = js.undefined
     
-    var removeUnusedComponents: js.UndefOr[Boolean] = js.native
+    var removeUnusedComponents: js.UndefOr[Boolean] = js.undefined
   }
   object OptimizeConfig {
     

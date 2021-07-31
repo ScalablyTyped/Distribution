@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait decoratorsPropertyPropertyMetadata extends Object {
+trait decoratorsPropertyPropertyMetadata
+  extends StObject
+     with Object {
   
   /**
     * The property decorator that creates a two-way binding between the property it decorates and an inner property of one of its members.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var aliasOf: js.UndefOr[String] = js.native
+  var aliasOf: js.UndefOr[String] = js.undefined
   
   /**
     * The function to use to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var cast: js.UndefOr[js.Function] = js.native
+  var cast: js.UndefOr[js.Function] = js.undefined
   
   /**
     * Indicates whether the property can be set during construction but is otherwise read-only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var constructOnly: js.UndefOr[Boolean] = js.native
+  var constructOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Property names of dependencies.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var dependsOn: js.UndefOr[js.Array[String]] = js.native
+  var dependsOn: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether the property is read-only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The constructor used to [autocast](https://developers.arcgis.com/javascript/latest/guide/programming-patterns/#autocasting) the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var `type`: js.UndefOr[js.Function] = js.native
+  var `type`: js.UndefOr[js.Function] = js.undefined
   
   /**
     * The default value for the property.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-accessorSupport-decorators.html#property)
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object decoratorsPropertyPropertyMetadata {
   

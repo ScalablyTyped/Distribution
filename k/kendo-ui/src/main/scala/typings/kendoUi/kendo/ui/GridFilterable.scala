@@ -2,19 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridFilterable extends StObject {
   
-  var extra: js.UndefOr[Boolean] = js.native
+  var extra: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[GridFilterableMessages] = js.native
+  var messages: js.UndefOr[GridFilterableMessages] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var operators: js.UndefOr[GridFilterableOperators] = js.native
+  var operators: js.UndefOr[GridFilterableOperators] = js.undefined
 }
 object GridFilterable {
   

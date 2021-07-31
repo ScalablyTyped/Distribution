@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Organizations$Roles")
@@ -31,7 +30,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaRole] = js.native
   def create(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def create(params: ParamsResourceOrganizationsRolesCreate): GaxiosPromise[SchemaRole] = js.native
   def create(params: ParamsResourceOrganizationsRolesCreate, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def create(
@@ -66,7 +65,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaRole] = js.native
   def delete(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def delete(params: ParamsResourceOrganizationsRolesDelete): GaxiosPromise[SchemaRole] = js.native
   def delete(params: ParamsResourceOrganizationsRolesDelete, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def delete(
@@ -95,7 +94,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaRole] = js.native
   def get(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceOrganizationsRolesGet): GaxiosPromise[SchemaRole] = js.native
   def get(params: ParamsResourceOrganizationsRolesGet, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def get(
@@ -128,7 +127,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListRolesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListRolesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(params: ParamsResourceOrganizationsRolesList): GaxiosPromise[SchemaListRolesResponse] = js.native
   def list(
     params: ParamsResourceOrganizationsRolesList,
@@ -162,7 +161,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaRole] = js.native
   def patch(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def patch(params: ParamsResourceOrganizationsRolesPatch): GaxiosPromise[SchemaRole] = js.native
   def patch(params: ParamsResourceOrganizationsRolesPatch, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def patch(
@@ -192,7 +191,7 @@ class ResourceOrganizationsRoles protected () extends StObject {
     */
   def undelete(): GaxiosPromise[SchemaRole] = js.native
   def undelete(callback: BodyResponseCallback[SchemaRole]): Unit = js.native
-  def undelete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
+  def undelete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRole] = js.native
   def undelete(params: ParamsResourceOrganizationsRolesUndelete): GaxiosPromise[SchemaRole] = js.native
   def undelete(params: ParamsResourceOrganizationsRolesUndelete, callback: BodyResponseCallback[SchemaRole]): Unit = js.native
   def undelete(

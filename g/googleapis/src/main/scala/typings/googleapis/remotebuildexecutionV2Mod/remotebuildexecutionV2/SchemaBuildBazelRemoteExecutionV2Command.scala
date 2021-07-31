@@ -2,7 +2,6 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * what filesystems are mounted where) is defined by and specific to the
   * implementation of the remote execution API.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
     * executable, which must be either a relative path, in which case it is
     * evaluated with respect to the input root, or an absolute path.
     */
-  var arguments: js.UndefOr[js.Array[String]] = js.native
+  var arguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The environment variables to set when running the program. The worker may
@@ -31,7 +29,7 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
     * name. Sorting of strings is done by code point, equivalently, by the
     * UTF-8 bytes.
     */
-  var environmentVariables: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2CommandEnvironmentVariable]] = js.native
+  var environmentVariables: js.UndefOr[js.Array[SchemaBuildBazelRemoteExecutionV2CommandEnvironmentVariable]] = js.undefined
   
   /**
     * A list of the output directories that the client expects to retrieve from
@@ -54,7 +52,7 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
     * prior to execution, even if they are not explicitly part of the input
     * root.
     */
-  var outputDirectories: js.UndefOr[js.Array[String]] = js.native
+  var outputDirectories: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of the output files that the client expects to retrieve from the
@@ -73,7 +71,7 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
     * leading up to the output files are created by the worker prior to
     * execution, even if they are not explicitly part of the input root.
     */
-  var outputFiles: js.UndefOr[js.Array[String]] = js.native
+  var outputFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The platform requirements for the execution environment. The server MAY
@@ -81,14 +79,14 @@ trait SchemaBuildBazelRemoteExecutionV2Command extends StObject {
     * so the client SHOULD ensure that running the action on any such worker
     * will have the same result.
     */
-  var platform: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Platform] = js.native
+  var platform: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Platform] = js.undefined
   
   /**
     * The working directory, relative to the input root, for the command to run
     * in. It must be a directory which exists in the input tree. If it is left
     * empty, then the action is run in the input root.
     */
-  var workingDirectory: js.UndefOr[String] = js.native
+  var workingDirectory: js.UndefOr[String] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2Command {
   

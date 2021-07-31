@@ -3,40 +3,38 @@ package typings.activexMsforms.MSForms
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var AutoSize: Boolean = js.native
+  var AutoSize: Boolean
   
-  var BackColor: Double = js.native
+  var BackColor: Double
   
-  var BackStyle: fmBackStyle = js.native
+  var BackStyle: fmBackStyle
   
-  var BorderColor: Double = js.native
+  var BorderColor: Double
   
-  var BorderStyle: fmBorderStyle = js.native
+  var BorderStyle: fmBorderStyle
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("MSForms.Image_typekey")
-  var MSFormsDotImage_typekey: Image = js.native
+  var MSFormsDotImage_typekey: Image
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: fmMousePointer = js.native
+  var MousePointer: fmMousePointer
   
-  var Picture: StdPicture = js.native
+  var Picture: StdPicture
   
-  var PictureAlignment: fmPictureAlignment = js.native
+  var PictureAlignment: fmPictureAlignment
   
-  var PictureSizeMode: fmPictureSizeMode = js.native
+  var PictureSizeMode: fmPictureSizeMode
   
-  var PictureTiling: Boolean = js.native
+  var PictureTiling: Boolean
   
-  var SpecialEffect: fmSpecialEffect = js.native
+  var SpecialEffect: fmSpecialEffect
 }
 object Image {
   

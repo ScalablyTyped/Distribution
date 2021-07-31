@@ -3,7 +3,6 @@ package typings.base16
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -156,44 +155,43 @@ object mod extends Shortcut {
   @js.native
   val twilight: Base16Theme = js.native
   
-  @js.native
   trait Base16Theme extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var base00: String = js.native
+    var base00: String
     
-    var base01: String = js.native
+    var base01: String
     
-    var base02: String = js.native
+    var base02: String
     
-    var base03: String = js.native
+    var base03: String
     
-    var base04: String = js.native
+    var base04: String
     
-    var base05: String = js.native
+    var base05: String
     
-    var base06: String = js.native
+    var base06: String
     
-    var base07: String = js.native
+    var base07: String
     
-    var base08: String = js.native
+    var base08: String
     
-    var base09: String = js.native
+    var base09: String
     
-    var base0A: String = js.native
+    var base0A: String
     
-    var base0B: String = js.native
+    var base0B: String
     
-    var base0C: String = js.native
+    var base0C: String
     
-    var base0D: String = js.native
+    var base0D: String
     
-    var base0E: String = js.native
+    var base0E: String
     
-    var base0F: String = js.native
+    var base0F: String
     
-    var scheme: String = js.native
+    var scheme: String
   }
   object Base16Theme {
     

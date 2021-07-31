@@ -2,16 +2,14 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInsightResult extends StObject {
   
   /**
     * The summary information of an insight.
     */
-  var Insight: js.UndefOr[typings.awsSdk.xrayMod.Insight] = js.native
+  var Insight: js.UndefOr[typings.awsSdk.xrayMod.Insight] = js.undefined
 }
 object GetInsightResult {
   

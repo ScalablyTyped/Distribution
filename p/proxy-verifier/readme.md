@@ -12,7 +12,7 @@ Check that proxies are working, verify their anonymity level, check for other ca
 | Keywords           | proxy, proxies, verify, check, anonymity |
 | # releases         | 2 |
 | # dependents       | 2 |
-| # downloads        | 2732 |
+| # downloads        | 2787 |
 | # stars            | 0 |
 
 ## Links

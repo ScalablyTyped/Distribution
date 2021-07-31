@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFBackupType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackupJob extends StObject {
   
-  var BackupType: MFBackupType = js.native
+  var BackupType: MFBackupType
   
-  def Clone(): IBackupJob = js.native
+  def Clone(): IBackupJob
   
-  var FileSizeLimitInMB: Double = js.native
+  var FileSizeLimitInMB: Double
   
-  var Impersonation: IImpersonation = js.native
+  var Impersonation: IImpersonation
   
-  var OverwriteExistingFiles: Boolean = js.native
+  var OverwriteExistingFiles: Boolean
   
-  var TargetFile: String = js.native
+  var TargetFile: String
   
-  var VaultGUID: String = js.native
+  var VaultGUID: String
 }
 object IBackupJob {
   

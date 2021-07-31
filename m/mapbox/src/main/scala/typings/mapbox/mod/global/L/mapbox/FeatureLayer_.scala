@@ -2,37 +2,35 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FeatureGroup<ILayer> * / any */ @js.native
-trait FeatureLayer_ extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FeatureGroup<ILayer> * / any */ trait FeatureLayer_ extends StObject {
   
   /**
     * Gets the filter function for this data layer.
     */
-  def getFilter(): FilterFunction = js.native
+  def getFilter(): FilterFunction
   
   /**
     * Get the contents of this layer as GeoJSON data.
     */
-  def getGeoJSON(): js.Any = js.native
+  def getGeoJSON(): js.Any
   
   /**
     * Load marker GeoJSON data from a map with the given id on Mapbox.
     */
-  def loadID(id: String): js.Any = js.native
+  def loadID(id: String): js.Any
   
   /**
     * Load GeoJSON data for this layer from the URL given by url.
     */
-  def loadURL(url: String): js.Any = js.native
+  def loadURL(url: String): js.Any
   
   /**
     * Sets the filter function for this data layer.
     */
-  def setFilter(filter: FilterFunction): js.Any = js.native
+  def setFilter(filter: FilterFunction): js.Any
   
   /**
     * Set the contents of a markers layer: run the provided features through
@@ -41,7 +39,7 @@ trait FeatureLayer_ extends StObject {
     * replaced with the new features. An empty array will clear the
     * layer of all features.
     */
-  def setGeoJSON(geojson: js.Any): FeatureLayer_ = js.native
+  def setGeoJSON(geojson: js.Any): FeatureLayer_
 }
 object FeatureLayer_ {
   

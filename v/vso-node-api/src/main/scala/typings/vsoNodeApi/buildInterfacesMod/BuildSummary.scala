@@ -4,27 +4,25 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildSummary extends StObject {
   
-  var build: XamlBuildReference = js.native
+  var build: XamlBuildReference
   
-  var finishTime: Date = js.native
+  var finishTime: Date
   
-  var keepForever: Boolean = js.native
+  var keepForever: Boolean
   
-  var quality: String = js.native
+  var quality: String
   
-  var reason: BuildReason = js.native
+  var reason: BuildReason
   
-  var requestedFor: IdentityRef = js.native
+  var requestedFor: IdentityRef
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var status: BuildStatus = js.native
+  var status: BuildStatus
 }
 object BuildSummary {
   

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzurePublisher extends StObject {
   
-  var azurePublisherId: String = js.native
+  var azurePublisherId: String
   
-  var publisherName: String = js.native
+  var publisherName: String
 }
 object AzurePublisher {
   

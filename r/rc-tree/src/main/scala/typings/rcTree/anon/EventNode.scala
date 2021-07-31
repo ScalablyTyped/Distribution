@@ -6,15 +6,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventNode extends StObject {
   
-  var event: MouseEvent[Element, NativeMouseEvent] = js.native
+  var event: MouseEvent[Element, NativeMouseEvent]
   
-  var node: EventDataNode = js.native
+  var node: EventDataNode
 }
 object EventNode {
   

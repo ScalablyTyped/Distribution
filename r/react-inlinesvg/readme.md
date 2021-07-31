@@ -10,9 +10,9 @@ An SVG loader for React
 | ------------------ | :-------------: |
 | Full name          | react-inlinesvg |
 | Keywords           | react, svg |
-| # releases         | 20 |
-| # dependents       | 89 |
-| # downloads        | 3670458 |
+| # releases         | 24 |
+| # dependents       | 95 |
+| # downloads        | 4188035 |
 | # stars            | 3 |
 
 ## Links

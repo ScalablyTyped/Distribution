@@ -3,124 +3,122 @@ package typings.officeUiFabricReact.anon
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<office-ui-fabric-react.office-ui-fabric-react/lib/components/ComboBox/ComboBox.types.IComboBoxOptionStyles> */
-@js.native
 trait PartialIComboBoxOptionSty extends StObject {
   
-  var description: js.UndefOr[IStyle] = js.native
+  var description: js.UndefOr[IStyle] = js.undefined
   
-  var descriptionChecked: js.UndefOr[IStyle] = js.native
+  var descriptionChecked: js.UndefOr[IStyle] = js.undefined
   
-  var descriptionDisabled: js.UndefOr[IStyle] = js.native
+  var descriptionDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var descriptionHovered: js.UndefOr[IStyle] = js.native
+  var descriptionHovered: js.UndefOr[IStyle] = js.undefined
   
-  var descriptionPressed: js.UndefOr[IStyle] = js.native
+  var descriptionPressed: js.UndefOr[IStyle] = js.undefined
   
-  var flexContainer: js.UndefOr[IStyle] = js.native
+  var flexContainer: js.UndefOr[IStyle] = js.undefined
   
-  var icon: js.UndefOr[IStyle] = js.native
+  var icon: js.UndefOr[IStyle] = js.undefined
   
-  var iconChecked: js.UndefOr[IStyle] = js.native
+  var iconChecked: js.UndefOr[IStyle] = js.undefined
   
-  var iconDisabled: js.UndefOr[IStyle] = js.native
+  var iconDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var iconExpanded: js.UndefOr[IStyle] = js.native
+  var iconExpanded: js.UndefOr[IStyle] = js.undefined
   
-  var iconExpandedHovered: js.UndefOr[IStyle] = js.native
+  var iconExpandedHovered: js.UndefOr[IStyle] = js.undefined
   
-  var iconHovered: js.UndefOr[IStyle] = js.native
+  var iconHovered: js.UndefOr[IStyle] = js.undefined
   
-  var iconPressed: js.UndefOr[IStyle] = js.native
+  var iconPressed: js.UndefOr[IStyle] = js.undefined
   
-  var label: js.UndefOr[IStyle] = js.native
+  var label: js.UndefOr[IStyle] = js.undefined
   
-  var labelChecked: js.UndefOr[IStyle] = js.native
+  var labelChecked: js.UndefOr[IStyle] = js.undefined
   
-  var labelDisabled: js.UndefOr[IStyle] = js.native
+  var labelDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var labelHovered: js.UndefOr[IStyle] = js.native
+  var labelHovered: js.UndefOr[IStyle] = js.undefined
   
-  var menuIcon: js.UndefOr[IStyle] = js.native
+  var menuIcon: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconChecked: js.UndefOr[IStyle] = js.native
+  var menuIconChecked: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconDisabled: js.UndefOr[IStyle] = js.native
+  var menuIconDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconExpanded: js.UndefOr[IStyle] = js.native
+  var menuIconExpanded: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconExpandedHovered: js.UndefOr[IStyle] = js.native
+  var menuIconExpandedHovered: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconHovered: js.UndefOr[IStyle] = js.native
+  var menuIconHovered: js.UndefOr[IStyle] = js.undefined
   
-  var menuIconPressed: js.UndefOr[IStyle] = js.native
+  var menuIconPressed: js.UndefOr[IStyle] = js.undefined
   
-  var optionText: js.UndefOr[IStyle] = js.native
+  var optionText: js.UndefOr[IStyle] = js.undefined
   
-  var optionTextWrapper: js.UndefOr[IStyle] = js.native
+  var optionTextWrapper: js.UndefOr[IStyle] = js.undefined
   
-  var root: js.UndefOr[IStyle] = js.native
+  var root: js.UndefOr[IStyle] = js.undefined
   
-  var rootChecked: js.UndefOr[IStyle] = js.native
+  var rootChecked: js.UndefOr[IStyle] = js.undefined
   
-  var rootCheckedDisabled: js.UndefOr[IStyle] = js.native
+  var rootCheckedDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var rootCheckedHovered: js.UndefOr[IStyle] = js.native
+  var rootCheckedHovered: js.UndefOr[IStyle] = js.undefined
   
-  var rootCheckedPressed: js.UndefOr[IStyle] = js.native
+  var rootCheckedPressed: js.UndefOr[IStyle] = js.undefined
   
-  var rootDisabled: js.UndefOr[IStyle] = js.native
+  var rootDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var rootExpanded: js.UndefOr[IStyle] = js.native
+  var rootExpanded: js.UndefOr[IStyle] = js.undefined
   
-  var rootExpandedHovered: js.UndefOr[IStyle] = js.native
+  var rootExpandedHovered: js.UndefOr[IStyle] = js.undefined
   
-  var rootFocused: js.UndefOr[IStyle] = js.native
+  var rootFocused: js.UndefOr[IStyle] = js.undefined
   
-  var rootHasMenu: js.UndefOr[IStyle] = js.native
+  var rootHasMenu: js.UndefOr[IStyle] = js.undefined
   
-  var rootHovered: js.UndefOr[IStyle] = js.native
+  var rootHovered: js.UndefOr[IStyle] = js.undefined
   
-  var rootPressed: js.UndefOr[IStyle] = js.native
+  var rootPressed: js.UndefOr[IStyle] = js.undefined
   
-  var screenReaderText: js.UndefOr[IStyle] = js.native
+  var screenReaderText: js.UndefOr[IStyle] = js.undefined
   
-  var secondaryText: js.UndefOr[IStyle] = js.native
+  var secondaryText: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainer: js.UndefOr[IStyle] = js.native
+  var splitButtonContainer: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainerChecked: js.UndefOr[IStyle] = js.native
+  var splitButtonContainerChecked: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainerCheckedHovered: js.UndefOr[IStyle] = js.native
+  var splitButtonContainerCheckedHovered: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainerDisabled: js.UndefOr[IStyle] = js.native
+  var splitButtonContainerDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainerFocused: js.UndefOr[IStyle] = js.native
+  var splitButtonContainerFocused: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonContainerHovered: js.UndefOr[IStyle] = js.native
+  var splitButtonContainerHovered: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonDivider: js.UndefOr[IStyle] = js.native
+  var splitButtonDivider: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonDividerDisabled: js.UndefOr[IStyle] = js.native
+  var splitButtonDividerDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonFlexContainer: js.UndefOr[IStyle] = js.native
+  var splitButtonFlexContainer: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuButton: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuButton: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuButtonChecked: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuButtonChecked: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuButtonDisabled: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuButtonDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuButtonExpanded: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuIcon: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuIcon: js.UndefOr[IStyle] = js.undefined
   
-  var splitButtonMenuIconDisabled: js.UndefOr[IStyle] = js.native
+  var splitButtonMenuIconDisabled: js.UndefOr[IStyle] = js.undefined
   
-  var textContainer: js.UndefOr[IStyle] = js.native
+  var textContainer: js.UndefOr[IStyle] = js.undefined
 }
 object PartialIComboBoxOptionSty {
   

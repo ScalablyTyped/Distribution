@@ -15,88 +15,88 @@ import typings.arcgisJsApi.arcgisJsApiStrings.tick
 import typings.arcgisJsApi.arcgisJsApiStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramRangeSliderProperties extends WidgetProperties {
+trait HistogramRangeSliderProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The statistical average of the data in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#average)
     */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /**
     * Function for styling bars representing histogram bins.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#barCreatedFunction)
     */
-  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.native
+  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.undefined
   
   /**
     * An array of objects representing each bin in the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#bins)
     */
-  var bins: js.UndefOr[js.Array[Bin]] = js.native
+  var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
     * Function that fires each time a data line is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLineCreatedFunction)
     */
-  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.native
+  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.undefined
   
   /**
     * When set, renders lines on the histogram that indicate important or meaningful values to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#dataLines)
     */
-  var dataLines: js.UndefOr[js.Array[HistogramRangeSliderDataLines]] = js.native
+  var dataLines: js.UndefOr[js.Array[HistogramRangeSliderDataLines]] = js.undefined
   
   /**
     * Sets the color of the histogram bars that are excluded based on the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#excludedBarColor)
     */
-  var excludedBarColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var excludedBarColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * Sets the color of the histogram bars that are included in the specified [rangeType](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#rangeType).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#includedBarColor)
     */
-  var includedBarColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.native
+  var includedBarColor: js.UndefOr[Color_ | js.Array[Double] | String] = js.undefined
   
   /**
     * A function used to format labels.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#labelFormatFunction)
     */
-  var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.native
+  var labelFormatFunction: js.UndefOr[SliderLabelFormatter] = js.undefined
   
   /**
     * The maximum value or upper bound of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#max)
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum value or lower bound of the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#min)
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines how slider thumb values should be rounded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#precision)
     */
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates how the histogram bins should be rendered as the user slides the thumbs.
@@ -105,35 +105,35 @@ trait HistogramRangeSliderProperties extends WidgetProperties {
     */
   var rangeType: js.UndefOr[
     equal | `not-equal` | `less-than` | `greater-than` | `at-most` | `at-least` | between | `not-between`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Indicates the standard deviation of the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#standardDeviation)
     */
-  var standardDeviation: js.UndefOr[Double] = js.native
+  var standardDeviation: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the number of standard deviation lines to render on the histogram from the [average].
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#standardDeviationCount)
     */
-  var standardDeviationCount: js.UndefOr[Double] = js.native
+  var standardDeviationCount: js.UndefOr[Double] = js.undefined
   
   /**
     * An array of either one or two numbers representing thumb positions on the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#values)
     */
-  var values: js.UndefOr[js.Array[Double]] = js.native
+  var values: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The view model for the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-HistogramRangeSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[HistogramRangeSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[HistogramRangeSliderViewModelProperties] = js.undefined
 }
 object HistogramRangeSliderProperties {
   

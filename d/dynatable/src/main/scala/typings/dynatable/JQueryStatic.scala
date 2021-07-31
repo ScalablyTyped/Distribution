@@ -3,11 +3,9 @@ package typings.dynatable
 import typings.dynatable.JQueryDynatable.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static members of jQuery (those on $ and jQuery themselves) */
-@js.native
 trait JQueryStatic extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait JQueryStatic extends StObject {
     *
     * @param options The configuration options to be set globally
     */
-  def dynatableSetup(options: Options): Unit = js.native
+  def dynatableSetup(options: Options): Unit
 }
 object JQueryStatic {
   

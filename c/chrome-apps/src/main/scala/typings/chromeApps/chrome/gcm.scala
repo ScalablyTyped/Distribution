@@ -6,7 +6,6 @@ import typings.std.Exclude
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -64,17 +63,16 @@ object gcm {
     def google: google_ = "google".asInstanceOf[google_]
   }
   
-  @js.native
   trait GcmError extends StObject {
     
     /** Additional details related to the error, when available. */
-    var detail: js.Object = js.native
+    var detail: js.Object
     
     /** The error message describing the problem. */
-    var errorMessage: String = js.native
+    var errorMessage: String
     
     /** The ID of the message with this error, if error is related to a specific message. */
-    var messageId: js.UndefOr[String] = js.native
+    var messageId: js.UndefOr[String] = js.undefined
   }
   object GcmError {
     
@@ -105,24 +103,23 @@ object gcm {
   
   type IGCMDataSend = Record[Exclude[DisallowedKeys, String], js.Any]
   
-  @js.native
   trait IncomingMessage extends StObject {
     
     /**
       * Optional.
       * The collapse key of a message. See Collapsible Messages section of Cloud Messaging documentation for details.
       */
-    var collapseKey: js.UndefOr[String] = js.native
+    var collapseKey: js.UndefOr[String] = js.undefined
     
     /** The message data. */
-    var data: IGCMDataReceive = js.native
+    var data: IGCMDataReceive
     
     /**
       * Optional.
       * The sender who issued the message.
       * @since Chrome 41.
       */
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
   }
   object IncomingMessage {
     
@@ -152,7 +149,6 @@ object gcm {
     }
   }
   
-  @js.native
   trait OutgoingMessage extends StObject {
     
     /**
@@ -164,16 +160,16 @@ object gcm {
       *
       * Sum of all key/value pairs should not exceed gcm.MAX_MESSAGE_SIZE.
       **/
-    var data: IGCMDataSend = js.native
+    var data: IGCMDataSend
     
     /** The ID of the server to send the message to as assigned by Google API Console. */
-    var destinationId: String = js.native
+    var destinationId: String
     
     /** The ID of the message. It must be unique for each message in scope of the applications. See the Cloud Messaging documentation for advice for picking and handling an ID. */
-    var messageId: String = js.native
+    var messageId: String
     
     /** Time-to-live of the message in seconds. If it is not possible to send the message within that time, an onSendError event will be raised. A time-to-live of 0 indicates that the message should be sent immediately or fail if it's not possible. The maximum and a default value of time-to-live is 86400 seconds (1 day). */
-    var timeToLive: js.UndefOr[integer] = js.native
+    var timeToLive: js.UndefOr[integer] = js.undefined
   }
   object OutgoingMessage {
     

@@ -6,7 +6,6 @@ import typings.blessed.mod.Widgets.Events.IKeyEventArg
 import typings.blessed.mod.Widgets.Events.IMouseEventArg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("blessed", "Widgets.NodeWithEvents")

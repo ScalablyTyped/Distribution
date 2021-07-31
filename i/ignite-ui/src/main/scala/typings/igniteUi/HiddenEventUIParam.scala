@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HiddenEventUIParam extends StObject {
   
   /**
     * Gets the content displayed in the popover as a string.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the element the popover is hidden for.
     */
-  var element: js.UndefOr[String] = js.native
+  var element: js.UndefOr[String] = js.undefined
   
   /**
     * Gets reference to the %%WidgetName%% widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the popover element hidden.
     */
-  var popover: js.UndefOr[String] = js.native
+  var popover: js.UndefOr[String] = js.undefined
 }
 object HiddenEventUIParam {
   

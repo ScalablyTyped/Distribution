@@ -5,7 +5,6 @@ import typings.npmUserPackages.anon.Email
 import typings.npmUserPackages.anon.Username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,32 +13,34 @@ object mod {
     * Get packages by a npm user.
     * @param username User to fetch packages from.
     */
+  @scala.inline
+  def apply(username: String): js.Promise[js.Array[PackageData]] = ^.asInstanceOf[js.Dynamic].apply(username.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[PackageData]]]
+  
   @JSImport("npm-user-packages", JSImport.Namespace)
   @js.native
-  def apply(username: String): js.Promise[js.Array[PackageData]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait PackageData extends StObject {
     
-    var author: Email = js.native
+    var author: Email
     
-    var date: String = js.native
+    var date: String
     
-    var description: String = js.native
+    var description: String
     
-    var keywords: js.Array[String] = js.native
+    var keywords: js.Array[String]
     
-    var links: Bugs = js.native
+    var links: Bugs
     
-    var maintainers: js.Array[Username] = js.native
+    var maintainers: js.Array[Username]
     
-    var name: String = js.native
+    var name: String
     
-    var publisher: Username = js.native
+    var publisher: Username
     
-    var scope: String = js.native
+    var scope: String
     
-    var version: String = js.native
+    var version: String
   }
   object PackageData {
     

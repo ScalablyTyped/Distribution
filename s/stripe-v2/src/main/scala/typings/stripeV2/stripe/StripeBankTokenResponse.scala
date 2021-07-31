@@ -3,13 +3,13 @@ package typings.stripeV2.stripe
 import typings.stripeV2.anon.Bankname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StripeBankTokenResponse extends StripeTokenResponse {
+trait StripeBankTokenResponse
+  extends StObject
+     with StripeTokenResponse {
   
-  var bank_account: Bankname = js.native
+  var bank_account: Bankname
 }
 object StripeBankTokenResponse {
   

@@ -10,9 +10,9 @@ Finds all elementary circuits of a directed graph using Johnson's algorithm (197
 | ------------------ | :-------------: |
 | Full name          | elementary-circuits-directed-graph |
 | Keywords           | - |
-| # releases         | 8 |
-| # dependents       | 2 |
-| # downloads        | 2527664 |
+| # releases         | 7 |
+| # dependents       | 5 |
+| # downloads        | 3232745 |
 | # stars            | 0 |
 
 ## Links

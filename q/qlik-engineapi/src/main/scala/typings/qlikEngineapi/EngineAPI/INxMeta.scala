@@ -2,20 +2,18 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   * NxMeta...
   */
-@js.native
 trait INxMeta extends StObject {
   
   /**
     * Name.
     * >> This property is optional.
     */
-  var qName: js.UndefOr[String] = js.native
+  var qName: js.UndefOr[String] = js.undefined
 }
 object INxMeta {
   

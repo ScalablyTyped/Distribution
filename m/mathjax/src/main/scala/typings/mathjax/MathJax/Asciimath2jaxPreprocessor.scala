@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Asciimath2jaxPreprocessor extends StObject {
   
   /*Array of pairs of strings that are to be used as math delimiters. The first in each pair is the initial
@@ -20,7 +18,7 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * turned into tags by the browser before MathJax has the chance to run. You can only include text, not tags,
     * as your math delimiters.
     */
-  var delimiters: js.UndefOr[js.Any] = js.native
+  var delimiters: js.UndefOr[js.Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should not be processed by asciimath2jax (other
     * than to look for the processClass pattern below). Note that this is a regular expression, and so you need to
@@ -30,7 +28,7 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * vertical line character (|). For instance, with ignoreClass: "class1|class2" any element assigned a class of
     * either class1 or class2 will be skipped.
     */
-  var ignoreClass: js.UndefOr[String] = js.native
+  var ignoreClass: js.UndefOr[String] = js.undefined
   
   /*This controls whether asciimath2jax inserts MathJax_Preview spans to make a preview available, and what
     * preview to use, when it locates in-line or display mathematics in the page. The default is "AsciiMath", which
@@ -44,7 +42,7 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * preview: ["[math]"],     //  insert the text "[math]" as the preview
     * preview: [["img",{src: "/images/mypic.jpg"}]],  // insert an image as the preview
     */
-  var preview: js.UndefOr[js.Any] = js.native
+  var preview: js.UndefOr[js.Any] = js.undefined
   
   /*This is the class name used to mark elements whose contents should be processed by asciimath2jax. This is used
     * to restart processing within tags that have been marked as ignored via the ignoreClass or to cause a tag that
@@ -55,13 +53,13 @@ trait Asciimath2jaxPreprocessor extends StObject {
     * separating them by the vertical line character (|). For instance, with processClass: "class1|class2" any
     * element assigned a class of either class1 or class2 will have its contents processed.
     */
-  var processClass: js.UndefOr[String] = js.native
+  var processClass: js.UndefOr[String] = js.undefined
   
   /*This array lists the names of the tags whose contents should not be processed by asciimath2jax (other than to
     * look for ignore/process classes as listed below). You can add to (or remove from) this list to prevent MathJax
     * from processing mathematics in specific contexts.
     */
-  var skipTags: js.UndefOr[js.Array[String]] = js.native
+  var skipTags: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Asciimath2jaxPreprocessor {
   

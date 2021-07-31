@@ -2,15 +2,13 @@ package typings.rsocketTypes.reactiveSocketTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payload[D, M] extends StObject {
   
-  var data: js.UndefOr[D] = js.native
+  var data: js.UndefOr[D] = js.undefined
   
-  var metadata: js.UndefOr[M] = js.native
+  var metadata: js.UndefOr[M] = js.undefined
 }
 object Payload {
   
@@ -21,7 +19,7 @@ object Payload {
   }
   
   @scala.inline
-  implicit class PayloadMutableBuilder[Self <: Payload[_, _], D, M] (val x: Self with (Payload[D, M])) extends AnyVal {
+  implicit class PayloadMutableBuilder[Self <: Payload[?, ?], D, M] (val x: Self & (Payload[D, M])) extends AnyVal {
     
     @scala.inline
     def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

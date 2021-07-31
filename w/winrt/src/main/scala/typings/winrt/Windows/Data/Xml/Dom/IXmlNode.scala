@@ -2,55 +2,54 @@ package typings.winrt.Windows.Data.Xml.Dom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IXmlNode
-  extends IXmlNodeSelector
+  extends StObject
+     with IXmlNodeSelector
      with IXmlNodeSerializer {
   
-  def appendChild(newChild: IXmlNode): IXmlNode = js.native
+  def appendChild(newChild: IXmlNode): IXmlNode
   
-  var attributes: XmlNamedNodeMap = js.native
+  var attributes: XmlNamedNodeMap
   
-  var childNodes: XmlNodeList = js.native
+  var childNodes: XmlNodeList
   
-  def cloneNode(deep: Boolean): IXmlNode = js.native
+  def cloneNode(deep: Boolean): IXmlNode
   
-  var firstChild: IXmlNode = js.native
+  var firstChild: IXmlNode
   
-  def hasChildNodes(): Boolean = js.native
+  def hasChildNodes(): Boolean
   
-  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def insertBefore(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
   
-  var lastChild: IXmlNode = js.native
+  var lastChild: IXmlNode
   
-  var localName: js.Any = js.native
+  var localName: js.Any
   
-  var namespaceUri: js.Any = js.native
+  var namespaceUri: js.Any
   
-  var nextSibling: IXmlNode = js.native
+  var nextSibling: IXmlNode
   
-  var nodeName: String = js.native
+  var nodeName: String
   
-  var nodeType: NodeType = js.native
+  var nodeType: NodeType
   
-  var nodeValue: js.Any = js.native
+  var nodeValue: js.Any
   
-  def normalize(): Unit = js.native
+  def normalize(): Unit
   
-  var ownerDocument: XmlDocument = js.native
+  var ownerDocument: XmlDocument
   
-  var parentNode: IXmlNode = js.native
+  var parentNode: IXmlNode
   
-  var prefix: js.Any = js.native
+  var prefix: js.Any
   
-  var previousSibling: IXmlNode = js.native
+  var previousSibling: IXmlNode
   
-  def removeChild(childNode: IXmlNode): IXmlNode = js.native
+  def removeChild(childNode: IXmlNode): IXmlNode
   
-  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode = js.native
+  def replaceChild(newChild: IXmlNode, referenceChild: IXmlNode): IXmlNode
 }
 object IXmlNode {
   

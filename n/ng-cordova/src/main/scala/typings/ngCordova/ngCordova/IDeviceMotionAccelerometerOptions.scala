@@ -2,13 +2,11 @@ package typings.ngCordova.ngCordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceMotionAccelerometerOptions extends StObject {
   
-  var frequency: Double = js.native
+  var frequency: Double
 }
 object IDeviceMotionAccelerometerOptions {
   

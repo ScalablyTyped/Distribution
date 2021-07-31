@@ -4,33 +4,31 @@ import typings.select2.mod.global.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Select2 extends StObject {
   
   @JSName("$container")
-  var $container: JQuery[HTMLElement] = js.native
+  var $container: JQuery[HTMLElement]
   
   @JSName("$dropdown")
-  var $dropdown: JQuery[HTMLElement] = js.native
+  var $dropdown: JQuery[HTMLElement]
   
   @JSName("$results")
-  var $results: JQuery[HTMLElement] = js.native
+  var $results: JQuery[HTMLElement]
   
   @JSName("$selection")
-  var $selection: JQuery[HTMLElement] = js.native
+  var $selection: JQuery[HTMLElement]
   
-  var dropdown: js.Any = js.native
+  var dropdown: js.Any
   
-  var id: String = js.native
+  var id: String
   
-  var options: typings.select2.anon.Options = js.native
+  var options: typings.select2.anon.Options
   
-  var results: js.Any = js.native
+  var results: js.Any
   
-  var selection: js.Any = js.native
+  var selection: js.Any
 }
 object Select2 {
   

@@ -9,100 +9,98 @@ import typings.googleapis.anon.MimeType
 import typings.googleapis.anon.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata for a file.
   */
-@js.native
 trait SchemaFile extends StObject {
   
   /**
     * A link for opening the file in a relevant Google editor or viewer.
     */
-  var alternateLink: js.UndefOr[String] = js.native
+  var alternateLink: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this file is in the Application Data folder.
     */
-  var appDataContents: js.UndefOr[Boolean] = js.native
+  var appDataContents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated: use capabilities/canComment.
     */
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated: use capabilities/canReadRevisions.
     */
-  var canReadRevisions: js.UndefOr[Boolean] = js.native
+  var canReadRevisions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Capabilities the current user has on this file. Each capability
     * corresponds to a fine-grained action that a user may take.
     */
-  var capabilities: js.UndefOr[CanAddChildren] = js.native
+  var capabilities: js.UndefOr[CanAddChildren] = js.undefined
   
   /**
     * Whether the options to copy, print, or download this file, should be
     * disabled for readers and commenters.
     */
-  var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.native
+  var copyRequiresWriterPermission: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated: use capabilities/canCopy.
     */
-  var copyable: js.UndefOr[Boolean] = js.native
+  var copyable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Create time for this file (formatted RFC 3339 timestamp).
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * A link to open this file with the user&#39;s default app for this file.
     * Only populated when the drive.apps.readonly scope is used.
     */
-  var defaultOpenWithLink: js.UndefOr[String] = js.native
+  var defaultOpenWithLink: js.UndefOr[String] = js.undefined
   
   /**
     * A short description of the file.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Short lived download URL for the file. This field is only populated for
     * files with content stored in Drive; it is not populated for Google Docs
     * or shortcut files.
     */
-  var downloadUrl: js.UndefOr[String] = js.native
+  var downloadUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: use capabilities/canEdit.
     */
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A link for embedding the file.
     */
-  var embedLink: js.UndefOr[String] = js.native
+  var embedLink: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the file.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this file has been explicitly trashed, as opposed to recursively
     * trashed.
     */
-  var explicitlyTrashed: js.UndefOr[Boolean] = js.native
+  var explicitlyTrashed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Links for exporting Google Docs to specific formats.
     */
-  var exportLinks: js.UndefOr[StringDictionary[String]] = js.native
+  var exportLinks: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The final component of fullFileExtension with trailing text that does not
@@ -110,14 +108,14 @@ trait SchemaFile extends StObject {
     * for files with content stored in Drive; it is not populated for Google
     * Docs or shortcut files.
     */
-  var fileExtension: js.UndefOr[String] = js.native
+  var fileExtension: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the file in bytes. This field is only populated for files
     * with content stored in Drive; it is not populated for Google Docs or
     * shortcut files.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * Folder color as an RGB hex string if the file is a folder. The list of
@@ -125,7 +123,7 @@ trait SchemaFile extends StObject {
     * About resource. If an unsupported color is specified, it will be changed
     * to the closest color in the palette. Not populated for Team Drive files.
     */
-  var folderColorRgb: js.UndefOr[String] = js.native
+  var folderColorRgb: js.UndefOr[String] = js.undefined
   
   /**
     * The full file extension; extracted from the title. May contain multiple
@@ -135,143 +133,143 @@ trait SchemaFile extends StObject {
     * populated for files with content stored in Drive; it is not populated for
     * Google Docs or shortcut files.
     */
-  var fullFileExtension: js.UndefOr[String] = js.native
+  var fullFileExtension: js.UndefOr[String] = js.undefined
   
   /**
     * Whether any users are granted file access directly on this file. This
     * field is only populated for Team Drive files.
     */
-  var hasAugmentedPermissions: js.UndefOr[Boolean] = js.native
+  var hasAugmentedPermissions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this file has a thumbnail. This does not indicate whether the
     * requesting app has access to the thumbnail. To check access, look for the
     * presence of the thumbnailLink field.
     */
-  var hasThumbnail: js.UndefOr[Boolean] = js.native
+  var hasThumbnail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the file&#39;s head revision. This field is only populated for
     * files with content stored in Drive; it is not populated for Google Docs
     * or shortcut files.
     */
-  var headRevisionId: js.UndefOr[String] = js.native
+  var headRevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the file&#39;s icon.
     */
-  var iconLink: js.UndefOr[String] = js.native
+  var iconLink: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the file.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about image media. This will only be present for image types,
     * and its contents will depend on what can be parsed from the image
     * content.
     */
-  var imageMediaMetadata: js.UndefOr[Aperture] = js.native
+  var imageMediaMetadata: js.UndefOr[Aperture] = js.undefined
   
   /**
     * Indexable text attributes for the file (can only be written)
     */
-  var indexableText: js.UndefOr[Text] = js.native
+  var indexableText: js.UndefOr[Text] = js.undefined
   
   /**
     * Whether the file was created or opened by the requesting app.
     */
-  var isAppAuthorized: js.UndefOr[Boolean] = js.native
+  var isAppAuthorized: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of file. This is always drive#file.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A group of labels for the file.
     */
-  var labels: js.UndefOr[Hidden] = js.native
+  var labels: js.UndefOr[Hidden] = js.undefined
   
   /**
     * The last user to modify this file.
     */
-  var lastModifyingUser: js.UndefOr[SchemaUser] = js.native
+  var lastModifyingUser: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * Name of the last user to modify this file.
     */
-  var lastModifyingUserName: js.UndefOr[String] = js.native
+  var lastModifyingUserName: js.UndefOr[String] = js.undefined
   
   /**
     * Last time this file was viewed by the user (formatted RFC 3339
     * timestamp).
     */
-  var lastViewedByMeDate: js.UndefOr[String] = js.native
+  var lastViewedByMeDate: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated.
     */
-  var markedViewedByMeDate: js.UndefOr[String] = js.native
+  var markedViewedByMeDate: js.UndefOr[String] = js.undefined
   
   /**
     * An MD5 checksum for the content of this file. This field is only
     * populated for files with content stored in Drive; it is not populated for
     * Google Docs or shortcut files.
     */
-  var md5Checksum: js.UndefOr[String] = js.native
+  var md5Checksum: js.UndefOr[String] = js.undefined
   
   /**
     * The MIME type of the file. This is only mutable on update when uploading
     * new content. This field can be left blank, and the mimetype will be
     * determined from the uploaded content&#39;s MIME type.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Last time this file was modified by the user (formatted RFC 3339
     * timestamp). Note that setting modifiedDate will also update the
     * modifiedByMe date for the user which set the date.
     */
-  var modifiedByMeDate: js.UndefOr[String] = js.native
+  var modifiedByMeDate: js.UndefOr[String] = js.undefined
   
   /**
     * Last time this file was modified by anyone (formatted RFC 3339
     * timestamp). This is only mutable on update when the setModifiedDate
     * parameter is set.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * A map of the id of each of the user&#39;s apps to a link to open this
     * file with that app. Only populated when the drive.apps.readonly scope is
     * used.
     */
-  var openWithLinks: js.UndefOr[StringDictionary[String]] = js.native
+  var openWithLinks: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The original filename of the uploaded content if available, or else the
     * original value of the title field. This is only available for files with
     * binary content in Drive.
     */
-  var originalFilename: js.UndefOr[String] = js.native
+  var originalFilename: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the file is owned by the current user. Not populated for Team
     * Drive files.
     */
-  var ownedByMe: js.UndefOr[Boolean] = js.native
+  var ownedByMe: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name(s) of the owner(s) of this file. Not populated for Team Drive files.
     */
-  var ownerNames: js.UndefOr[js.Array[String]] = js.native
+  var ownerNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The owner(s) of this file. Not populated for Team Drive files.
     */
-  var owners: js.UndefOr[js.Array[SchemaUser]] = js.native
+  var owners: js.UndefOr[js.Array[SchemaUser]] = js.undefined
   
   /**
     * Collection of parent folders which contain this file. If not specified as
@@ -281,138 +279,138 @@ trait SchemaFile extends StObject {
     * requests can also use the addParents and removeParents parameters to
     * modify the parents list.
     */
-  var parents: js.UndefOr[js.Array[SchemaParentReference]] = js.native
+  var parents: js.UndefOr[js.Array[SchemaParentReference]] = js.undefined
   
   /**
     * List of permission IDs for users with access to this file.
     */
-  var permissionIds: js.UndefOr[js.Array[String]] = js.native
+  var permissionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of permissions for users with access to this file. Not populated
     * for Team Drive files.
     */
-  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[SchemaPermission]] = js.undefined
   
   /**
     * The list of properties.
     */
-  var properties: js.UndefOr[js.Array[SchemaProperty]] = js.native
+  var properties: js.UndefOr[js.Array[SchemaProperty]] = js.undefined
   
   /**
     * The number of quota bytes used by this file.
     */
-  var quotaBytesUsed: js.UndefOr[String] = js.native
+  var quotaBytesUsed: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this file.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated: use capabilities/canShare.
     */
-  var shareable: js.UndefOr[Boolean] = js.native
+  var shareable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the file has been shared. Not populated for Team Drive files.
     */
-  var shared: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Time at which this file was shared with the user (formatted RFC 3339
     * timestamp).
     */
-  var sharedWithMeDate: js.UndefOr[String] = js.native
+  var sharedWithMeDate: js.UndefOr[String] = js.undefined
   
   /**
     * User that shared the item with the current user, if available.
     */
-  var sharingUser: js.UndefOr[SchemaUser] = js.native
+  var sharingUser: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * The list of spaces which contain the file. Supported values are
     * &#39;drive&#39;, &#39;appDataFolder&#39; and &#39;photos&#39;.
     */
-  var spaces: js.UndefOr[js.Array[String]] = js.native
+  var spaces: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ID of the Team Drive the file resides in.
     */
-  var teamDriveId: js.UndefOr[String] = js.native
+  var teamDriveId: js.UndefOr[String] = js.undefined
   
   /**
     * A thumbnail for the file. This will only be used if Drive cannot generate
     * a standard thumbnail.
     */
-  var thumbnail: js.UndefOr[MimeType] = js.native
+  var thumbnail: js.UndefOr[MimeType] = js.undefined
   
   /**
     * A short-lived link to the file&#39;s thumbnail. Typically lasts on the
     * order of hours. Only populated when the requesting app can access the
     * file&#39;s content.
     */
-  var thumbnailLink: js.UndefOr[String] = js.native
+  var thumbnailLink: js.UndefOr[String] = js.undefined
   
   /**
     * The thumbnail version for use in thumbnail cache invalidation.
     */
-  var thumbnailVersion: js.UndefOr[String] = js.native
+  var thumbnailVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The title of this file. Note that for immutable items such as the top
     * level folders of Team Drives, My Drive root folder, and Application Data
     * folder the title is constant.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the item was trashed (formatted RFC 3339 timestamp). Only
     * populated for Team Drive files.
     */
-  var trashedDate: js.UndefOr[String] = js.native
+  var trashedDate: js.UndefOr[String] = js.undefined
   
   /**
     * If the file has been explicitly trashed, the user who trashed it. Only
     * populated for Team Drive files.
     */
-  var trashingUser: js.UndefOr[SchemaUser] = js.native
+  var trashingUser: js.UndefOr[SchemaUser] = js.undefined
   
   /**
     * The permissions for the authenticated user on this file.
     */
-  var userPermission: js.UndefOr[SchemaPermission] = js.native
+  var userPermission: js.UndefOr[SchemaPermission] = js.undefined
   
   /**
     * A monotonically increasing version number for the file. This reflects
     * every change made to the file on the server, even those not visible to
     * the requesting user.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about video media. This will only be present for video types.
     */
-  var videoMediaMetadata: js.UndefOr[DurationMillis] = js.native
+  var videoMediaMetadata: js.UndefOr[DurationMillis] = js.undefined
   
   /**
     * A link for downloading the content of the file in a browser using cookie
     * based authentication. In cases where the content is shared publicly, the
     * content can be downloaded without any credentials.
     */
-  var webContentLink: js.UndefOr[String] = js.native
+  var webContentLink: js.UndefOr[String] = js.undefined
   
   /**
     * A link only available on public folders for viewing their static web
     * assets (HTML, CSS, JS, etc) via Google Drive&#39;s Website Hosting.
     */
-  var webViewLink: js.UndefOr[String] = js.native
+  var webViewLink: js.UndefOr[String] = js.undefined
   
   /**
     * Whether writers can share the document with other users. Not populated
     * for Team Drive files.
     */
-  var writersCanShare: js.UndefOr[Boolean] = js.native
+  var writersCanShare: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaFile {
   

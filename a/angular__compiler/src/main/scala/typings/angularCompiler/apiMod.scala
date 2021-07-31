@@ -17,17 +17,15 @@ import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
   
-  @js.native
   trait R3ComponentDef extends StObject {
     
-    var expression: Expression = js.native
+    var expression: Expression
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object R3ComponentDef {
     
@@ -49,24 +47,25 @@ object apiMod {
     }
   }
   
-  @js.native
-  trait R3ComponentMetadata extends R3DirectiveMetadata {
+  trait R3ComponentMetadata
+    extends StObject
+       with R3DirectiveMetadata {
     
     /**
       * A collection of animation triggers that will be used in the component template.
       */
-    var animations: Expression | Null = js.native
+    var animations: Expression | Null
     
     /**
       * Strategy used for detecting changes in the component.
       */
-    var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.native
+    var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
     
     /**
       * A list of directive selectors and an expression referencing the directive type which are in the
       * scope of the compilation.
       */
-    var directives: js.Array[ExpressionSelector] = js.native
+    var directives: js.Array[ExpressionSelector]
     
     /**
       * An encapsulation policy for the template and CSS styles. One of:
@@ -75,53 +74,53 @@ object apiMod {
       * - `ViewEncapsulation.ShadowDom`: Use the latest ShadowDOM API to natively encapsulate styles
       * into a shadow root.
       */
-    var encapsulation: ViewEncapsulation = js.native
+    var encapsulation: ViewEncapsulation
     
     /**
       * Whether translation variable name should contain external message id
       * (used by Closure Compiler's output of `goog.getMsg` for transition period).
       */
-    var i18nUseExternalIds: Boolean = js.native
+    var i18nUseExternalIds: Boolean
     
     /**
       * Overrides the default interpolation start and end delimiters ({{ and }}).
       */
-    var interpolation: InterpolationConfig = js.native
+    var interpolation: InterpolationConfig
     
     /**
       * A map of pipe names to an expression referencing the pipe type which are in the scope of the
       * compilation.
       */
-    var pipes: Map[String, Expression] = js.native
+    var pipes: Map[String, Expression]
     
     /**
       * Path to the .ts file in which this template's generated code will be included, relative to
       * the compilation root. This will be used to generate identifiers that need to be globally
       * unique in certain contexts (such as g3).
       */
-    var relativeContextFilePath: String = js.native
+    var relativeContextFilePath: String
     
     /**
       * A collection of styling data that will be applied and scoped to the component.
       */
-    var styles: js.Array[String] = js.native
+    var styles: js.Array[String]
     
     /**
       * Information about the component's template.
       */
-    var template: NgContentSelectors = js.native
+    var template: NgContentSelectors
     
     /**
       * The list of view providers defined in the component.
       */
-    var viewProviders: Expression | Null = js.native
+    var viewProviders: Expression | Null
     
     /**
       * Whether to wrap the 'directives' and/or `pipes` array, if one is generated, in a closure.
       *
       * This is done when the directives or pipes contain forward references.
       */
-    var wrapDirectivesAndPipesInClosure: Boolean = js.native
+    var wrapDirectivesAndPipesInClosure: Boolean
   }
   object R3ComponentMetadata {
     
@@ -150,7 +149,7 @@ object apiMod {
       viewQueries: js.Array[R3QueryMetadata],
       wrapDirectivesAndPipesInClosure: Boolean
     ): R3ComponentMetadata = {
-      val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], wrapDirectivesAndPipesInClosure = wrapDirectivesAndPipesInClosure.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(directives = directives.asInstanceOf[js.Any], encapsulation = encapsulation.asInstanceOf[js.Any], fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], i18nUseExternalIds = i18nUseExternalIds.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], interpolation = interpolation.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], pipes = pipes.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], relativeContextFilePath = relativeContextFilePath.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], template = template.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], wrapDirectivesAndPipesInClosure = wrapDirectivesAndPipesInClosure.asInstanceOf[js.Any], animations = null, deps = null, exportAs = null, providers = null, selector = null, viewProviders = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3ComponentMetadata]
     }
@@ -211,12 +210,11 @@ object apiMod {
     }
   }
   
-  @js.native
   trait R3DirectiveDef extends StObject {
     
-    var expression: Expression = js.native
+    var expression: Expression
     
-    var `type`: Type = js.native
+    var `type`: Type
   }
   object R3DirectiveDef {
     
@@ -238,35 +236,34 @@ object apiMod {
     }
   }
   
-  @js.native
   trait R3DirectiveMetadata extends StObject {
     
     /**
       * Dependencies of the directive's constructor.
       */
-    var deps: js.Array[R3DependencyMetadata] | invalid | Null = js.native
+    var deps: js.Array[R3DependencyMetadata] | invalid | Null
     
     /**
       * Reference name under which to export the directive's type in a template,
       * if any.
       */
-    var exportAs: js.Array[String] | Null = js.native
+    var exportAs: js.Array[String] | Null
     
     /**
       * Whether or not the component or directive inherits its entire decorator from its base class.
       */
-    var fullInheritance: Boolean = js.native
+    var fullInheritance: Boolean
     
     /**
       * Mappings indicating how the directive interacts with its host element (host bindings,
       * listeners, etc).
       */
-    var host: R3HostMetadata = js.native
+    var host: R3HostMetadata
     
     /**
       * A mapping of input field names to the property names.
       */
-    var inputs: StringDictionary[String | (js.Tuple2[String, String])] = js.native
+    var inputs: StringDictionary[String | (js.Tuple2[String, String])]
     
     /**
       * An expression representing a reference to the directive being compiled, intended for use within
@@ -275,63 +272,63 @@ object apiMod {
       * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
       * an IIFE structure that uses a different name internally.
       */
-    var internalType: Expression = js.native
+    var internalType: Expression
     
     /**
       * Information about usage of specific lifecycle events which require special treatment in the
       * code generator.
       */
-    var lifecycle: UsesOnChanges = js.native
+    var lifecycle: UsesOnChanges
     
     /**
       * Name of the directive type.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * A mapping of output field names to the property names.
       */
-    var outputs: StringDictionary[String] = js.native
+    var outputs: StringDictionary[String]
     
     /**
       * The list of providers defined in the directive.
       */
-    var providers: Expression | Null = js.native
+    var providers: Expression | Null
     
     /**
       * Information about the content queries made by the directive.
       */
-    var queries: js.Array[R3QueryMetadata] = js.native
+    var queries: js.Array[R3QueryMetadata]
     
     /**
       * Unparsed selector of the directive, or `null` if there was no selector.
       */
-    var selector: String | Null = js.native
+    var selector: String | Null
     
     /**
       * An expression representing a reference to the directive itself.
       */
-    var `type`: R3Reference = js.native
+    var `type`: R3Reference
     
     /**
       * Number of generic type parameters of the type itself.
       */
-    var typeArgumentCount: Double = js.native
+    var typeArgumentCount: Double
     
     /**
       * A source span for the directive type.
       */
-    var typeSourceSpan: ParseSourceSpan = js.native
+    var typeSourceSpan: ParseSourceSpan
     
     /**
       * Whether or not the component or directive inherits from another class
       */
-    var usesInheritance: Boolean = js.native
+    var usesInheritance: Boolean
     
     /**
       * Information about the view queries made by the directive.
       */
-    var viewQueries: js.Array[R3QueryMetadata] = js.native
+    var viewQueries: js.Array[R3QueryMetadata]
   }
   object R3DirectiveMetadata {
     
@@ -351,7 +348,7 @@ object apiMod {
       usesInheritance: Boolean,
       viewQueries: js.Array[R3QueryMetadata]
     ): R3DirectiveMetadata = {
-      val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(fullInheritance = fullInheritance.asInstanceOf[js.Any], host = host.asInstanceOf[js.Any], inputs = inputs.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], lifecycle = lifecycle.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], outputs = outputs.asInstanceOf[js.Any], queries = queries.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], typeSourceSpan = typeSourceSpan.asInstanceOf[js.Any], usesInheritance = usesInheritance.asInstanceOf[js.Any], viewQueries = viewQueries.asInstanceOf[js.Any], deps = null, exportAs = null, providers = null, selector = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3DirectiveMetadata]
     }
@@ -436,25 +433,24 @@ object apiMod {
     }
   }
   
-  @js.native
   trait R3HostMetadata extends StObject {
     
     /**
       * A mapping of attribute binding keys to `o.Expression`s.
       */
-    var attributes: StringDictionary[Expression] = js.native
+    var attributes: StringDictionary[Expression]
     
     /**
       * A mapping of event binding keys to unparsed expressions.
       */
-    var listeners: StringDictionary[String] = js.native
+    var listeners: StringDictionary[String]
     
     /**
       * A mapping of property binding keys to unparsed expressions.
       */
-    var properties: StringDictionary[String] = js.native
+    var properties: StringDictionary[String]
     
-    var specialAttributes: ClassAttr = js.native
+    var specialAttributes: ClassAttr
   }
   object R3HostMetadata {
     
@@ -486,35 +482,34 @@ object apiMod {
     }
   }
   
-  @js.native
   trait R3QueryMetadata extends StObject {
     
     /**
       * Whether to include only direct children or all descendants.
       */
-    var descendants: Boolean = js.native
+    var descendants: Boolean
     
     /**
       * Whether to read only the first matching result, or an array of results.
       */
-    var first: Boolean = js.native
+    var first: Boolean
     
     /**
       * Either an expression representing a type or `InjectionToken` for the query
       * predicate, or a set of string selectors.
       */
-    var predicate: Expression | js.Array[String] = js.native
+    var predicate: Expression | js.Array[String]
     
     /**
       * Name of the property on the class to update with query results.
       */
-    var propertyName: String = js.native
+    var propertyName: String
     
     /**
       * An expression representing a type to read from each matched node, or null if the default value
       * for a given node is to be returned.
       */
-    var read: Expression | Null = js.native
+    var read: Expression | Null
     
     /**
       * Whether or not this query should collect only static results.
@@ -529,7 +524,7 @@ object apiMod {
       * the results will not be available in the ngOnInit hook (only in the ngAfterContentInit for
       * content hooks and ngAfterViewInit for view hooks).
       */
-    var static: Boolean = js.native
+    var static: Boolean
   }
   object R3QueryMetadata {
     
@@ -541,7 +536,7 @@ object apiMod {
       propertyName: String,
       static: Boolean
     ): R3QueryMetadata = {
-      val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(descendants = descendants.asInstanceOf[js.Any], first = first.asInstanceOf[js.Any], predicate = predicate.asInstanceOf[js.Any], propertyName = propertyName.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], read = null)
       __obj.asInstanceOf[R3QueryMetadata]
     }
     

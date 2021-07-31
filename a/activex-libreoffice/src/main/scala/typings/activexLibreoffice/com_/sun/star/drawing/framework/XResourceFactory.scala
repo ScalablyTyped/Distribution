@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A factory may want to implement a cache to reuse previously released resources.
   */
-@js.native
 trait XResourceFactory extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait XResourceFactory extends StObject {
     * @returns Returns a resource object that has been just created or was taken from a cache. When the requested resource can not be created then an empty refe
     * @throws InvalidArgumentException when the given URL is not supported by the factory.
     */
-  def createResource(xResourceId: XResourceId): XResource = js.native
+  def createResource(xResourceId: XResourceId): XResource
   
   /**
     * Call this method to tell a factory that the given resource is no longer in use. The factory can decide whether to destroy the resource or to keep it
@@ -29,7 +27,7 @@ trait XResourceFactory extends StObject {
     * @param xResource The given resource has to be one created by the same factory.
     * @throws InvalidArgumentException when the given pane was not created by the same factory.
     */
-  def releaseResource(xResource: XResource): Unit = js.native
+  def releaseResource(xResource: XResource): Unit
 }
 object XResourceFactory {
   

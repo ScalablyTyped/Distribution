@@ -2,7 +2,6 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,9 +10,9 @@ trait Controls extends StObject {
   def apply(varg: js.Any): js.Any = js.native
   
   def Add(bstrProgID: String): Control = js.native
-  def Add(bstrProgID: String, Name: js.UndefOr[scala.Nothing], Visible: js.Any): Control = js.native
   def Add(bstrProgID: String, Name: js.Any): Control = js.native
   def Add(bstrProgID: String, Name: js.Any, Visible: js.Any): Control = js.native
+  def Add(bstrProgID: String, Name: Unit, Visible: js.Any): Control = js.native
   
   def AlignToGrid(): Unit = js.native
   

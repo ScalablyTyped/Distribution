@@ -2,14 +2,16 @@ package typings.domHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isTransformMod {
   
-  @JSImport("dom-helpers/cjs/isTransform", JSImport.Default)
+  @JSImport("dom-helpers/cjs/isTransform", JSImport.Namespace)
   @js.native
-  def default(value: String): /* is dom-helpers.dom-helpers/cjs/isTransform.TransformValue */ Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(value: String): /* is dom-helpers.dom-helpers/cjs/isTransform.TransformValue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(value.asInstanceOf[js.Any]).asInstanceOf[/* is dom-helpers.dom-helpers/cjs/isTransform.TransformValue */ Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.domHelpers.domHelpersStrings.translate

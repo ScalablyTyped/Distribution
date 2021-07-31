@@ -2,20 +2,27 @@ package typings.plottable
 
 import typings.d3Shape.mod.Area_
 import typings.d3Shape.mod.Line_
+import typings.plottable.drawStepMod.AppliedDrawStep
 import typings.plottable.drawerMod.IDrawer
 import typings.plottable.interfacesMod.AttributeToAppliedProjector
 import typings.std.CanvasRenderingContext2D
+import typings.std.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object canvasDrawerMod {
   
+  @JSImport("plottable/build/src/drawers/canvasDrawer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("plottable/build/src/drawers/canvasDrawer", "CanvasDrawer")
   @js.native
-  class CanvasDrawer protected () extends IDrawer {
+  class CanvasDrawer protected ()
+    extends StObject
+       with IDrawer {
     /**
       * @param _context The context for a canvas that this drawer will draw to.
       * @param _drawStep The draw step logic that actually draws.
@@ -26,45 +33,71 @@ object canvasDrawerMod {
     
     var _drawStep: js.Any = js.native
     
+    /**
+      * Mutate the surface to reflect the data being passed in. This method is responsible
+      * for calling the animators at the right time and order.
+      * @param data The data to be drawn.
+      * @param drawSteps The draw steps that the data go through.
+      */
+    /* CompleteClass */
+    override def draw(data: js.Array[js.Any], drawSteps: js.Array[AppliedDrawStep]): Unit = js.native
+    
     def getDrawStep(): CanvasDrawStep = js.native
+    
+    /**
+      * Get the visual primitive for the given *data* index.
+      */
+    /* CompleteClass */
+    override def getVisualPrimitiveAtIndex(index: Double): Element = js.native
+    
+    /**
+      * Get the the last drawn visual primitives.
+      */
+    /* CompleteClass */
+    override def getVisualPrimitives(): js.Array[Element] = js.native
+    
+    /**
+      * Called when the Drawer is no longer needed - implementors may use this to cleanup
+      * any resources they've created
+      */
+    /* CompleteClass */
+    override def remove(): Unit = js.native
   }
   
   @JSImport("plottable/build/src/drawers/canvasDrawer", "ContextStyleAttrs")
   @js.native
   val ContextStyleAttrs: js.Array[String] = js.native
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "getStrokeDashArray")
-  @js.native
-  def getStrokeDashArray(style: Record[String, _]): js.Array[Double] = js.native
+  @scala.inline
+  def getStrokeDashArray(style: Record[String, js.Any]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeDashArray")(style.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "getStrokeWidth")
-  @js.native
-  def getStrokeWidth(style: Record[String, _]): Double = js.native
+  @scala.inline
+  def getStrokeWidth(style: Record[String, js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStrokeWidth")(style.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "renderArea")
-  @js.native
+  @scala.inline
   def renderArea(
     context: CanvasRenderingContext2D,
-    d3Area: Area_[_],
-    data: js.Array[_],
-    style: IFillStyle with IStrokeStyle
-  ): Unit = js.native
+    d3Area: Area_[js.Any],
+    data: js.Array[js.Any],
+    style: IFillStyle & IStrokeStyle
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderArea")(context.asInstanceOf[js.Any], d3Area.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "renderLine")
-  @js.native
-  def renderLine(context: CanvasRenderingContext2D, d3Line: Line_[_], data: js.Array[_], style: IStrokeStyle): Unit = js.native
+  @scala.inline
+  def renderLine(
+    context: CanvasRenderingContext2D,
+    d3Line: Line_[js.Any],
+    data: js.Array[js.Any],
+    style: IStrokeStyle
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderLine")(context.asInstanceOf[js.Any], d3Line.asInstanceOf[js.Any], data.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "renderPathWithStyle")
-  @js.native
-  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, _]): Unit = js.native
+  @scala.inline
+  def renderPathWithStyle(context: CanvasRenderingContext2D, style: Record[String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderPathWithStyle")(context.asInstanceOf[js.Any], style.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "resolveAttributes")
-  @js.native
-  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
+  @scala.inline
+  def resolveAttributes(projector: AttributeToAppliedProjector, attrKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributes")(projector.asInstanceOf[js.Any], attrKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
-  @JSImport("plottable/build/src/drawers/canvasDrawer", "resolveAttributesSubsetWithStyles")
-  @js.native
-  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, _] = js.native
+  @scala.inline
+  def resolveAttributesSubsetWithStyles(projector: AttributeToAppliedProjector, extraKeys: js.Array[String], datum: js.Any, index: Double): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveAttributesSubsetWithStyles")(projector.asInstanceOf[js.Any], extraKeys.asInstanceOf[js.Any], datum.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
   
   type CanvasDrawStep = js.Function3[
     /* context */ CanvasRenderingContext2D, 
@@ -73,14 +106,13 @@ object canvasDrawerMod {
     Unit
   ]
   
-  @js.native
   trait IFillStyle extends StObject {
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var `fill-opacity`: js.UndefOr[Double] = js.native
+    var `fill-opacity`: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
   }
   object IFillStyle {
     
@@ -113,18 +145,17 @@ object canvasDrawerMod {
     }
   }
   
-  @js.native
   trait IStrokeStyle extends StObject {
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[String] = js.native
+    var stroke: js.UndefOr[String] = js.undefined
     
-    var `stroke-dasharray`: js.UndefOr[String] = js.native
+    var `stroke-dasharray`: js.UndefOr[String] = js.undefined
     
-    var `stroke-opacity`: js.UndefOr[Double] = js.native
+    var `stroke-opacity`: js.UndefOr[Double] = js.undefined
     
-    var `stroke-width`: js.UndefOr[Double] = js.native
+    var `stroke-width`: js.UndefOr[Double] = js.undefined
   }
   object IStrokeStyle {
     

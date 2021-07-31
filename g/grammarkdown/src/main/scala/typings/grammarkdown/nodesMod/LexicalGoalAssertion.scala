@@ -6,7 +6,6 @@ import typings.grammarkdown.tokensMod.SyntaxKind.LexicalKeyword
 import typings.grammarkdown.tokensMod.SyntaxKind.OpenBracketToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/nodes", "LexicalGoalAssertion")
@@ -23,7 +22,7 @@ class LexicalGoalAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
     symbol: Identifier
   ) = this()
   def this(
@@ -35,14 +34,14 @@ class LexicalGoalAssertion protected ()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
-    symbol: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
+    symbol: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(
     openBracketToken: Token[OpenBracketToken],
     lexicalKeyword: Token[LexicalKeyword],
-    goalKeyword: js.UndefOr[scala.Nothing],
+    goalKeyword: Unit,
     symbol: Identifier,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
@@ -50,7 +49,7 @@ class LexicalGoalAssertion protected ()
     openBracketToken: Token[OpenBracketToken],
     lexicalKeyword: Token[LexicalKeyword],
     goalKeyword: Token[GoalKeyword],
-    symbol: js.UndefOr[scala.Nothing],
+    symbol: Unit,
     closeBracketToken: Token[CloseBracketToken]
   ) = this()
   def this(

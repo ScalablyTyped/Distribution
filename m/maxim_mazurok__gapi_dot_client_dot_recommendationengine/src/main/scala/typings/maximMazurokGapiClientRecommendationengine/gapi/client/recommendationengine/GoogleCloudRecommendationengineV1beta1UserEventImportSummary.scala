@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1UserEventImportSummary extends StObject {
   
   /** Count of user events imported with complete existing catalog information. */
-  var joinedEventsCount: js.UndefOr[String] = js.native
+  var joinedEventsCount: js.UndefOr[String] = js.undefined
   
   /** Count of user events imported, but with catalog information not found in the imported catalog. */
-  var unjoinedEventsCount: js.UndefOr[String] = js.native
+  var unjoinedEventsCount: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1UserEventImportSummary {
   

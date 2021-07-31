@@ -2,15 +2,13 @@ package typings.chromeApps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElementTagNameMap extends StObject {
   
-  var appview: HTMLAppViewElement = js.native
+  var appview: HTMLAppViewElement
   
-  var webview: HTMLWebViewElement = js.native
+  var webview: HTMLWebViewElement
 }
 object HTMLElementTagNameMap {
   

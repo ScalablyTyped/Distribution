@@ -9,7 +9,6 @@ import typings.winrtUwp.winrtUwpStrings.requestingfocusonkeyboardinput
 import typings.winrtUwp.winrtUwpStrings.suggestionsrequested
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to search suggestions for the in-app SearchBox control and the search pane. */
@@ -24,42 +23,46 @@ object Core {
     
     /** The suggestion is a query suggestion. */
     @js.native
-    sealed trait query extends SearchSuggestionKind
+    sealed trait query
+      extends StObject
+         with SearchSuggestionKind
     
     /** The suggestion is a result suggestion. */
     @js.native
-    sealed trait result extends SearchSuggestionKind
+    sealed trait result
+      extends StObject
+         with SearchSuggestionKind
     
     /** Represents a separator between search suggestions that's useful for grouping. */
     @js.native
-    sealed trait separator extends SearchSuggestionKind
+    sealed trait separator
+      extends StObject
+         with SearchSuggestionKind
   }
   
   /** Provides data for the RequestingFocusOnKeyboardInput event. */
-  @js.native
   trait RequestingFocusOnKeyboardInputEventArgs extends StObject
   
   /** Enables access to the search suggestions that the SearchSuggestionManager provides. */
-  @js.native
   trait SearchSuggestion extends StObject {
     
     /** Gets the value that was passed to the detailText parameter of the AppendResultSuggestion method. */
-    var detailText: String = js.native
+    var detailText: String
     
     /** Gets the value that was passed to the image parameter of the AppendResultSuggestion method. */
-    var image: IRandomAccessStreamReference = js.native
+    var image: IRandomAccessStreamReference
     
     /** Gets the value that was passed to the imageAlternateText parameter of the AppendResultSuggestion method. */
-    var imageAlternateText: String = js.native
+    var imageAlternateText: String
     
     /** Gets the type of suggestion. */
-    var kind: SearchSuggestionKind = js.native
+    var kind: SearchSuggestionKind
     
     /** Gets the value that was passed to the tag parameter of the AppendResultSuggestion method. */
-    var tag: String = js.native
+    var tag: String
     
     /** Gets the localized text of the suggestion for display in the search suggestions UI. */
-    var text: String = js.native
+    var text: String
   }
   object SearchSuggestion {
     
@@ -103,7 +106,7 @@ object Core {
   @js.native
   trait SearchSuggestionManager extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestingfocusonkeyboardinput(
       `type`: requestingfocusonkeyboardinput,
@@ -131,18 +134,18 @@ object Core {
     def clearHistory(): Unit = js.native
     
     /** Raised when the user presses a key that initiates type-to-search. */
-    def onrequestingfocusonkeyboardinput(ev: RequestingFocusOnKeyboardInputEventArgs with WinRTEvent[SearchSuggestionManager]): Unit = js.native
+    def onrequestingfocusonkeyboardinput(ev: RequestingFocusOnKeyboardInputEventArgs & WinRTEvent[SearchSuggestionManager]): Unit = js.native
     /** Raised when the user presses a key that initiates type-to-search. */
     @JSName("onrequestingfocusonkeyboardinput")
     var onrequestingfocusonkeyboardinput_Original: TypedEventHandler[SearchSuggestionManager, RequestingFocusOnKeyboardInputEventArgs] = js.native
     
     /** Raised when the user's query text changes and the app needs to provide new suggestions to display in the search box. */
-    def onsuggestionsrequested(ev: SearchSuggestionsRequestedEventArgs with WinRTEvent[SearchSuggestionManager]): Unit = js.native
+    def onsuggestionsrequested(ev: SearchSuggestionsRequestedEventArgs & WinRTEvent[SearchSuggestionManager]): Unit = js.native
     /** Raised when the user's query text changes and the app needs to provide new suggestions to display in the search box. */
     @JSName("onsuggestionsrequested")
     var onsuggestionsrequested_Original: TypedEventHandler[SearchSuggestionManager, SearchSuggestionsRequestedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestingfocusonkeyboardinput(
       `type`: requestingfocusonkeyboardinput,
@@ -190,20 +193,19 @@ object Core {
   }
   
   /** Provides data for the SuggestionsRequested event. */
-  @js.native
   trait SearchSuggestionsRequestedEventArgs extends StObject {
     
     /** Gets the Internet Engineering Task Force (IETF) language tag (BCP 47 standard) that identifies the language currently associated with the user's text input device. */
-    var language: String = js.native
+    var language: String
     
     /** Gets an object that provides linguistic information about query text that the user is entering through an Input Method Editor (IME). */
-    var linguisticDetails: SearchQueryLinguisticDetails = js.native
+    var linguisticDetails: SearchQueryLinguisticDetails
     
     /** The text that the app should provide suggestions for and that was in the search box when the SuggestionsRequested event was raised. */
-    var queryText: String = js.native
+    var queryText: String
     
     /** Gets an object that stores suggestions and information about the request. */
-    var request: SearchSuggestionsRequest = js.native
+    var request: SearchSuggestionsRequest
   }
   object SearchSuggestionsRequestedEventArgs {
     

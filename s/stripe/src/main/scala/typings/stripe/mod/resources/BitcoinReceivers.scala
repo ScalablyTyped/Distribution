@@ -12,7 +12,6 @@ import typings.stripe.mod.bitcoinReceivers.IBitcoinReceiverCreationOptions
 import typings.stripe.mod.bitcoinReceivers.IBitcoinReceiverListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.BitcoinReceivers")

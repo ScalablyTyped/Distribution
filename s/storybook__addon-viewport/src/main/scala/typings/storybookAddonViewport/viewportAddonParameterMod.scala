@@ -3,19 +3,17 @@ package typings.storybookAddonViewport
 import typings.storybookAddonViewport.viewportMod.ViewportMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewportAddonParameterMod {
   
-  @js.native
   trait ViewportAddonParameter extends StObject {
     
-    var defaultViewport: js.UndefOr[String] = js.native
+    var defaultViewport: js.UndefOr[String] = js.undefined
     
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
-    var viewports: js.UndefOr[ViewportMap] = js.native
+    var viewports: js.UndefOr[ViewportMap] = js.undefined
   }
   object ViewportAddonParameter {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTimeToLiveOutput extends StObject {
   
   /**
     * Represents the output of an UpdateTimeToLive operation.
     */
-  var TimeToLiveSpecification: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveSpecification] = js.native
+  var TimeToLiveSpecification: js.UndefOr[typings.awsSdk.dynamodbMod.TimeToLiveSpecification] = js.undefined
 }
 object UpdateTimeToLiveOutput {
   

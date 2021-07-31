@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentitySet extends StObject {
   
   // Optional. The application associated with this action.
-  var application: js.UndefOr[NullableOption[Identity]] = js.native
+  var application: js.UndefOr[NullableOption[Identity]] = js.undefined
   
   // Optional. The device associated with this action.
-  var device: js.UndefOr[NullableOption[Identity]] = js.native
+  var device: js.UndefOr[NullableOption[Identity]] = js.undefined
   
   // Optional. The user associated with this action.
-  var user: js.UndefOr[NullableOption[Identity]] = js.native
+  var user: js.UndefOr[NullableOption[Identity]] = js.undefined
 }
 object IdentitySet {
   

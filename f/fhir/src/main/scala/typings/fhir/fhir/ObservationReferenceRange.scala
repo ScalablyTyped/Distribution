@@ -2,49 +2,49 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides guide for interpretation
   */
-@js.native
-trait ObservationReferenceRange extends BackboneElement {
+trait ObservationReferenceRange
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'text'.
     */
-  var _text: js.UndefOr[Element] = js.native
+  var _text: js.UndefOr[Element] = js.undefined
   
   /**
     * Applicable age range, if relevant
     */
-  var age: js.UndefOr[Range] = js.native
+  var age: js.UndefOr[Range] = js.undefined
   
   /**
     * Reference range population
     */
-  var appliesTo: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var appliesTo: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * High Range, if relevant
     */
-  var high: js.UndefOr[Quantity] = js.native
+  var high: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Low Range, if relevant
     */
-  var low: js.UndefOr[Quantity] = js.native
+  var low: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Text based reference range in an observation
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Reference range qualifier
     */
-  var `type`: js.UndefOr[CodeableConcept] = js.native
+  var `type`: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ObservationReferenceRange {
   

@@ -8,272 +8,208 @@ import typings.std.ArrayBufferView
 import typings.webidlConversions.anon.BufferSourceOptionsallowS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webidl-conversions", "ArrayBuffer")
+  @JSImport("webidl-conversions", JSImport.Namespace)
   @js.native
-  def ArrayBuffer(V: js.Any): typings.std.ArrayBuffer = js.native
-  @JSImport("webidl-conversions", "ArrayBuffer")
-  @js.native
-  def ArrayBuffer(V: js.Any, opts: BufferSourceOptionsallowS): typings.std.ArrayBuffer = js.native
-  @JSImport("webidl-conversions", "ArrayBuffer")
-  @js.native
-  def ArrayBuffer(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("webidl-conversions", "ArrayBufferView")
-  @js.native
-  def ArrayBufferView(V: js.Any): typings.std.ArrayBufferView = js.native
-  @JSImport("webidl-conversions", "ArrayBufferView")
-  @js.native
-  def ArrayBufferView(V: js.Any, opts: BufferSourceOptions): typings.std.ArrayBufferView = js.native
+  @scala.inline
+  def ArrayBuffer(V: js.Any): typings.std.ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBuffer]
+  @scala.inline
+  def ArrayBuffer(V: js.Any, opts: BufferSourceOptionsallowS): typings.std.ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.ArrayBuffer]
+  @scala.inline
+  def ArrayBuffer(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike]
   
-  @JSImport("webidl-conversions", "ArrayBuffer")
-  @js.native
-  def ArrayBuffer_ArrayBufferLike(V: js.Any): ArrayBufferLike = js.native
+  @scala.inline
+  def ArrayBufferView(V: js.Any): typings.std.ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.ArrayBufferView]
+  @scala.inline
+  def ArrayBufferView(V: js.Any, opts: BufferSourceOptions): typings.std.ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBufferView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.ArrayBufferView]
   
-  @JSImport("webidl-conversions", "BufferSource")
-  @js.native
-  def BufferSource(V: js.Any): ArrayBuffer | ArrayBufferView = js.native
-  @JSImport("webidl-conversions", "BufferSource")
-  @js.native
-  def BufferSource(V: js.Any, opts: BufferSourceOptionsallowS): ArrayBuffer | ArrayBufferView = js.native
-  @JSImport("webidl-conversions", "BufferSource")
-  @js.native
-  def BufferSource(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike | ArrayBufferView = js.native
+  @scala.inline
+  def ArrayBuffer_ArrayBufferLike(V: js.Any): ArrayBufferLike = ^.asInstanceOf[js.Dynamic].applyDynamic("ArrayBuffer")(V.asInstanceOf[js.Any]).asInstanceOf[ArrayBufferLike]
   
-  @JSImport("webidl-conversions", "ByteString")
-  @js.native
-  def ByteString(V: js.Any): String = js.native
-  @JSImport("webidl-conversions", "ByteString")
-  @js.native
-  def ByteString(V: js.Any, opts: StringOptions): String = js.native
+  @scala.inline
+  def BufferSource(V: js.Any): ArrayBuffer | ArrayBufferView = ^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer | ArrayBufferView]
+  @scala.inline
+  def BufferSource(V: js.Any, opts: BufferSourceOptionsallowS): ArrayBuffer | ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer | ArrayBufferView]
+  @scala.inline
+  def BufferSource(V: js.Any, opts: BufferSourceOptions): ArrayBufferLike | ArrayBufferView = (^.asInstanceOf[js.Dynamic].applyDynamic("BufferSource")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ArrayBufferLike | ArrayBufferView]
   
-  @JSImport("webidl-conversions", "DOMString")
-  @js.native
-  def DOMString(V: js.Any): String = js.native
-  @JSImport("webidl-conversions", "DOMString")
-  @js.native
-  def DOMString(V: js.Any, opts: StringOptions): String = js.native
+  @scala.inline
+  def ByteString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def ByteString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("ByteString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("webidl-conversions", "DOMTimeStamp")
-  @js.native
-  def DOMTimeStamp(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "DOMTimeStamp")
-  @js.native
-  def DOMTimeStamp(V: js.Any, opts: Options): Double = js.native
+  @scala.inline
+  def DOMString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def DOMString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("webidl-conversions", "DataView")
-  @js.native
-  def DataView(V: js.Any): typings.std.DataView = js.native
-  @JSImport("webidl-conversions", "DataView")
-  @js.native
-  def DataView(V: js.Any, opts: BufferSourceOptions): typings.std.DataView = js.native
+  @scala.inline
+  def DOMTimeStamp(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def DOMTimeStamp(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("DOMTimeStamp")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "Float32Array")
-  @js.native
-  def Float32Array(V: js.Any): typings.std.Float32Array = js.native
-  @JSImport("webidl-conversions", "Float32Array")
-  @js.native
-  def Float32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float32Array = js.native
+  @scala.inline
+  def DataView(V: js.Any): typings.std.DataView = ^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.DataView]
+  @scala.inline
+  def DataView(V: js.Any, opts: BufferSourceOptions): typings.std.DataView = (^.asInstanceOf[js.Dynamic].applyDynamic("DataView")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.DataView]
   
-  @JSImport("webidl-conversions", "Float64Array")
-  @js.native
-  def Float64Array(V: js.Any): typings.std.Float64Array = js.native
-  @JSImport("webidl-conversions", "Float64Array")
-  @js.native
-  def Float64Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float64Array = js.native
+  @scala.inline
+  def Float32Array(V: js.Any): typings.std.Float32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Float32Array]
+  @scala.inline
+  def Float32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Float32Array]
+  
+  @scala.inline
+  def Float64Array(V: js.Any): typings.std.Float64Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Float64Array]
+  @scala.inline
+  def Float64Array(V: js.Any, opts: BufferSourceOptions): typings.std.Float64Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Float64Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Float64Array]
   
   // tslint:disable:ban-types
   /** @deprecated Will be removed in v7.0 */
-  @JSImport("webidl-conversions", "Function")
-  @js.native
-  def Function[V](V: V): js.Function | V = js.native
-  @JSImport("webidl-conversions", "Function")
-  @js.native
-  def Function[V](V: V, opts: Options): js.Function | V = js.native
+  @scala.inline
+  def Function[V](V: V): js.Function | V = ^.asInstanceOf[js.Dynamic].applyDynamic("Function")(V.asInstanceOf[js.Any]).asInstanceOf[js.Function | V]
+  @scala.inline
+  def Function[V](V: V, opts: Options): js.Function | V = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function | V]
   
-  @JSImport("webidl-conversions", "Int16Array")
-  @js.native
-  def Int16Array(V: js.Any): typings.std.Int16Array = js.native
-  @JSImport("webidl-conversions", "Int16Array")
-  @js.native
-  def Int16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int16Array = js.native
+  @scala.inline
+  def Int16Array(V: js.Any): typings.std.Int16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int16Array]
+  @scala.inline
+  def Int16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int16Array]
   
-  @JSImport("webidl-conversions", "Int32Array")
-  @js.native
-  def Int32Array(V: js.Any): typings.std.Int32Array = js.native
-  @JSImport("webidl-conversions", "Int32Array")
-  @js.native
-  def Int32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int32Array = js.native
+  @scala.inline
+  def Int32Array(V: js.Any): typings.std.Int32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int32Array]
+  @scala.inline
+  def Int32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int32Array]
   
-  @JSImport("webidl-conversions", "Int8Array")
-  @js.native
-  def Int8Array(V: js.Any): typings.std.Int8Array = js.native
-  @JSImport("webidl-conversions", "Int8Array")
-  @js.native
-  def Int8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int8Array = js.native
+  @scala.inline
+  def Int8Array(V: js.Any): typings.std.Int8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Int8Array]
+  @scala.inline
+  def Int8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Int8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Int8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Int8Array]
   
-  @JSImport("webidl-conversions", "USVString")
-  @js.native
-  def USVString(V: js.Any): String = js.native
-  @JSImport("webidl-conversions", "USVString")
-  @js.native
-  def USVString(V: js.Any, opts: StringOptions): String = js.native
+  @scala.inline
+  def USVString(V: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def USVString(V: js.Any, opts: StringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("USVString")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("webidl-conversions", "Uint16Array")
-  @js.native
-  def Uint16Array(V: js.Any): typings.std.Uint16Array = js.native
-  @JSImport("webidl-conversions", "Uint16Array")
-  @js.native
-  def Uint16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint16Array = js.native
+  @scala.inline
+  def Uint16Array(V: js.Any): typings.std.Uint16Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint16Array]
+  @scala.inline
+  def Uint16Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint16Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint16Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint16Array]
   
-  @JSImport("webidl-conversions", "Uint32Array")
-  @js.native
-  def Uint32Array(V: js.Any): typings.std.Uint32Array = js.native
-  @JSImport("webidl-conversions", "Uint32Array")
-  @js.native
-  def Uint32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint32Array = js.native
+  @scala.inline
+  def Uint32Array(V: js.Any): typings.std.Uint32Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint32Array]
+  @scala.inline
+  def Uint32Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint32Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint32Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint32Array]
   
-  @JSImport("webidl-conversions", "Uint8Array")
-  @js.native
-  def Uint8Array(V: js.Any): typings.std.Uint8Array = js.native
-  @JSImport("webidl-conversions", "Uint8Array")
-  @js.native
-  def Uint8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8Array = js.native
+  @scala.inline
+  def Uint8Array(V: js.Any): typings.std.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8Array]
+  @scala.inline
+  def Uint8Array(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8Array")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8Array]
   
-  @JSImport("webidl-conversions", "Uint8ClampedArray")
-  @js.native
-  def Uint8ClampedArray(V: js.Any): typings.std.Uint8ClampedArray = js.native
-  @JSImport("webidl-conversions", "Uint8ClampedArray")
-  @js.native
-  def Uint8ClampedArray(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8ClampedArray = js.native
+  @scala.inline
+  def Uint8ClampedArray(V: js.Any): typings.std.Uint8ClampedArray = ^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any]).asInstanceOf[typings.std.Uint8ClampedArray]
+  @scala.inline
+  def Uint8ClampedArray(V: js.Any, opts: BufferSourceOptions): typings.std.Uint8ClampedArray = (^.asInstanceOf[js.Dynamic].applyDynamic("Uint8ClampedArray")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.std.Uint8ClampedArray]
   
   /** @deprecated Will be removed in v7.0 */
-  @JSImport("webidl-conversions", "VoidFunction")
-  @js.native
-  def VoidFunction[V](V: V): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = js.native
-  @JSImport("webidl-conversions", "VoidFunction")
-  @js.native
-  def VoidFunction[V](V: V, opts: Options): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = js.native
+  @scala.inline
+  def VoidFunction[V](V: V): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = ^.asInstanceOf[js.Dynamic].applyDynamic("VoidFunction")(V.asInstanceOf[js.Any]).asInstanceOf[js.Function | (js.Function1[/* args */ Parameters[V], Unit])]
+  @scala.inline
+  def VoidFunction[V](V: V, opts: Options): js.Function | (js.Function1[/* args */ Parameters[V], Unit]) = (^.asInstanceOf[js.Dynamic].applyDynamic("VoidFunction")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Function | (js.Function1[/* args */ Parameters[V], Unit])]
   
-  @JSImport("webidl-conversions", "any")
-  @js.native
-  def any[V](V: V): V = js.native
-  @JSImport("webidl-conversions", "any")
-  @js.native
-  def any[V](V: V, opts: Options): V = js.native
+  @scala.inline
+  def any[V](V: V): V = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(V.asInstanceOf[js.Any]).asInstanceOf[V]
+  @scala.inline
+  def any[V](V: V, opts: Options): V = (^.asInstanceOf[js.Dynamic].applyDynamic("any")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[V]
   
-  @JSImport("webidl-conversions", "boolean")
-  @js.native
-  def boolean(V: js.Any): Boolean = js.native
-  @JSImport("webidl-conversions", "boolean")
-  @js.native
-  def boolean(V: js.Any, opts: Options): Boolean = js.native
+  @scala.inline
+  def boolean(V: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def boolean(V: js.Any, opts: Options): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("webidl-conversions", "byte")
-  @js.native
-  def byte(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "byte")
-  @js.native
-  def byte(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def byte(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def byte(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("byte")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "double")
-  @js.native
-  def double(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "double")
-  @js.native
-  def double(V: js.Any, opts: Options): Double = js.native
+  @scala.inline
+  def double(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def double(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "float")
-  @js.native
-  def float(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "float")
-  @js.native
-  def float(V: js.Any, opts: Options): Double = js.native
+  @scala.inline
+  def float(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def float(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "long")
-  @js.native
-  def long(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "long")
-  @js.native
-  def long(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def long(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def long(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "long long")
-  @js.native
-  def longLong(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "long long")
-  @js.native
-  def longLong(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def longLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def longLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "octet")
-  @js.native
-  def octet(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "octet")
-  @js.native
-  def octet(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def `object`[V](V: V): (V & js.Object) | V = ^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any]).asInstanceOf[(V & js.Object) | V]
+  @scala.inline
+  def `object`[V](V: V, opts: Options): (V & js.Object) | V = (^.asInstanceOf[js.Dynamic].applyDynamic("object")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[(V & js.Object) | V]
   
-  @JSImport("webidl-conversions", "short")
-  @js.native
-  def short(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "short")
-  @js.native
-  def short(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def octet(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def octet(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("octet")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "unrestricted double")
-  @js.native
-  def unrestrictedDouble(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "unrestricted double")
-  @js.native
-  def unrestrictedDouble(V: js.Any, opts: Options): Double = js.native
+  @scala.inline
+  def short(V: js.Any): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def short(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "unrestricted float")
-  @js.native
-  def unrestrictedFloat(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "unrestricted float")
-  @js.native
-  def unrestrictedFloat(V: js.Any, opts: Options): Double = js.native
+  @scala.inline
+  def unrestrictedDouble(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unrestrictedDouble(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted double")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "unsigned long")
-  @js.native
-  def unsignedLong(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "unsigned long")
-  @js.native
-  def unsignedLong(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def unrestrictedFloat(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unrestrictedFloat(V: js.Any, opts: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unrestricted float")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "unsigned long long")
-  @js.native
-  def unsignedLongLong(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "unsigned long long")
-  @js.native
-  def unsignedLongLong(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def unsignedLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unsignedLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "unsigned short")
-  @js.native
-  def unsignedShort(V: js.Any): Double = js.native
-  @JSImport("webidl-conversions", "unsigned short")
-  @js.native
-  def unsignedShort(V: js.Any, opts: IntegerOptions): Double = js.native
+  @scala.inline
+  def unsignedLongLong(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unsignedLongLong(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned long long")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("webidl-conversions", "void")
-  @js.native
-  def void(): Unit = js.native
-  @JSImport("webidl-conversions", "void")
-  @js.native
-  def void(V: js.UndefOr[scala.Nothing], opts: Options): Unit = js.native
-  @JSImport("webidl-conversions", "void")
-  @js.native
-  def void(V: js.Any): Unit = js.native
-  @JSImport("webidl-conversions", "void")
-  @js.native
-  def void(V: js.Any, opts: Options): Unit = js.native
+  @scala.inline
+  def unsignedShort(V: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def unsignedShort(V: js.Any, opts: IntegerOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unsigned short")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
-  trait BufferSourceOptions extends Options {
+  @scala.inline
+  def void(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("void")().asInstanceOf[Unit]
+  @scala.inline
+  def void(V: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def void(V: js.Any, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def void(V: Unit, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("void")(V.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  trait BufferSourceOptions
+    extends StObject
+       with Options {
     
-    var allowShared: js.UndefOr[Boolean] = js.native
+    var allowShared: js.UndefOr[Boolean] = js.undefined
   }
   object BufferSourceOptions {
     
@@ -296,7 +232,8 @@ object mod {
   
   @js.native
   trait Globals
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     def Number(): Double = js.native
     def Number(value: js.Any): Double = js.native
@@ -309,12 +246,13 @@ object mod {
   
   type IntegerConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[IntegerOptions], Double]
   
-  @js.native
-  trait IntegerOptions extends Options {
+  trait IntegerOptions
+    extends StObject
+       with Options {
     
-    var clamp: js.UndefOr[Boolean] = js.native
+    var clamp: js.UndefOr[Boolean] = js.undefined
     
-    var enforceRange: js.UndefOr[Boolean] = js.native
+    var enforceRange: js.UndefOr[Boolean] = js.undefined
   }
   object IntegerOptions {
     
@@ -343,12 +281,11 @@ object mod {
   
   type NumberConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[Options], Double]
   
-  @js.native
   trait Options extends StObject {
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var globals: js.UndefOr[Globals] = js.native
+    var globals: js.UndefOr[Globals] = js.undefined
   }
   object Options {
     
@@ -375,14 +312,15 @@ object mod {
     }
   }
   
-  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type Parameters[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Any
   
   type StringConversion = js.Function2[/* V */ js.Any, /* opts */ js.UndefOr[StringOptions], String]
   
-  @js.native
-  trait StringOptions extends Options {
+  trait StringOptions
+    extends StObject
+       with Options {
     
-    var treatNullAsEmptyString: js.UndefOr[Boolean] = js.native
+    var treatNullAsEmptyString: js.UndefOr[Boolean] = js.undefined
   }
   object StringOptions {
     
@@ -402,11 +340,4 @@ object mod {
       def setTreatNullAsEmptyStringUndefined: Self = StObject.set(x, "treatNullAsEmptyString", js.undefined)
     }
   }
-  
-  @JSImport("webidl-conversions", "object")
-  @js.native
-  def `object`[V](V: V): (V with js.Object) | V = js.native
-  @JSImport("webidl-conversions", "object")
-  @js.native
-  def `object`[V](V: V, opts: Options): (V with js.Object) | V = js.native
 }

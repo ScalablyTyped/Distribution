@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DependencyEdge extends StObject {
   
   /**
     * Represents the head of this token in the dependency tree. This is the index of the token which has an arc going to this token. The index is the position of the token in the array of
     * tokens returned by the API method. If this token is a root token, then the `head_token_index` is its own index.
     */
-  var headTokenIndex: js.UndefOr[Double] = js.native
+  var headTokenIndex: js.UndefOr[Double] = js.undefined
   
   /** The parse label for the token. */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object DependencyEdge {
   

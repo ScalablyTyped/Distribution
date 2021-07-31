@@ -3,23 +3,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationTableProperties extends StObject {
   
   /**
     * [Optional] The description for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the
     * current description is provided, the job will fail.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The friendly name for the destination table. This will only be used if the destination table is newly created. If the table already exists and a value different than the
     * current friendly name is provided, the job will fail.
     */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The labels associated with this table. You can use these to organize and group your tables. This will only be used if the destination table is newly created. If the table
@@ -28,8 +26,8 @@ trait DestinationTableProperties extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[js.Any]
+  ] = js.undefined
 }
 object DestinationTableProperties {
   
@@ -58,7 +56,7 @@ object DestinationTableProperties {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DestinationTableProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

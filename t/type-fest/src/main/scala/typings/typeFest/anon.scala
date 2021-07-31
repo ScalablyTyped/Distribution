@@ -3,18 +3,17 @@ package typings.typeFest
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DictmoduleName
-    extends /* moduleName */ StringDictionary[js.UndefOr[String]] {
+    extends StObject
+       with /* moduleName */ StringDictionary[js.UndefOr[String]] {
     
-    var browser: js.UndefOr[String] = js.native
+    var browser: js.UndefOr[String] = js.undefined
     
-    var main: js.UndefOr[String] = js.native
+    var main: js.UndefOr[String] = js.undefined
   }
   object DictmoduleName {
     
@@ -41,14 +40,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Email extends StObject {
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Email {
     
@@ -78,18 +76,17 @@ object anon {
     }
   }
   
-  @js.native
   trait EmailUrl extends StObject {
     
     /**
     			The email address to which issues should be reported.
     			*/
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
     			The URL to the package's issue tracker.
     			*/
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object EmailUrl {
     
@@ -116,10 +113,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Opaque extends StObject {
     
-    val __opaque__ : js.Symbol = js.native
+    val __opaque__ : js.Symbol
   }
   object Opaque {
     
@@ -137,12 +133,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Type {
     
@@ -169,12 +164,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     
@@ -196,10 +190,9 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("_")
-    var _underscore: js.UndefOr[scala.Nothing] = js.native
+    var _underscore: js.UndefOr[scala.Nothing] = js.undefined
   }
 }

@@ -2,16 +2,14 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
   /**
     * 结果, 0为操作成功
     */
-  var code: Double = js.native
+  var code: Double
 }
 object Code {
   

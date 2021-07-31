@@ -2,21 +2,19 @@ package typings.nodemailer.smtpConnectionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAuthenticationResponse extends StObject {
   
-  var code: js.UndefOr[Double] = js.native
+  var code: js.UndefOr[Double] = js.undefined
   
-  var command: String = js.native
+  var command: String
   
-  var response: String = js.native
+  var response: String
   
-  var status: Double = js.native
+  var status: Double
   
-  var text: String = js.native
+  var text: String
 }
 object CustomAuthenticationResponse {
   

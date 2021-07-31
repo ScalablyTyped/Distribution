@@ -10,9 +10,9 @@ TypeScript typings for Google Workspace Reseller API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.reseller |
 | Keywords           | - |
-| # releases         | 18 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 1463 |
+| # downloads        | 1591 |
 | # stars            | 0 |
 
 ## Links

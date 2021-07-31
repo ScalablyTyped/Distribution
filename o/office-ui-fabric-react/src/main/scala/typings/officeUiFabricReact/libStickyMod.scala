@@ -5,7 +5,6 @@ import typings.officeUiFabricReact.stickyTypesMod.IStickyProps
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libStickyMod {
@@ -41,12 +40,12 @@ object libStickyMod {
   object StickyPositionType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.stickyTypesMod.StickyPositionType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.officeUiFabricReact.stickyTypesMod.StickyPositionType & Double] = js.native
     
-    /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both with Double = js.native
+    /* 0 */ val Both: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Both & Double = js.native
     
-    /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer with Double = js.native
+    /* 2 */ val Footer: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Footer & Double = js.native
     
-    /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header with Double = js.native
+    /* 1 */ val Header: typings.officeUiFabricReact.stickyTypesMod.StickyPositionType.Header & Double = js.native
   }
 }

@@ -2,33 +2,31 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitLightboxPanelOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var autoplay: js.UndefOr[Boolean] = js.native
+  var autoplay: js.UndefOr[Boolean] = js.undefined
   
-  var `autoplay-interval`: js.UndefOr[Double] = js.native
+  var `autoplay-interval`: js.UndefOr[Double] = js.undefined
   
-  var `delay-controls`: js.UndefOr[Double] = js.native
+  var `delay-controls`: js.UndefOr[Double] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var items: js.UndefOr[js.Array[js.Object]] = js.native
+  var items: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var `pause-on-hover`: js.UndefOr[Boolean] = js.native
+  var `pause-on-hover`: js.UndefOr[Boolean] = js.undefined
   
-  var preload: js.UndefOr[Double] = js.native
+  var preload: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var velocity: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.undefined
   
-  var `video-autoplay`: js.UndefOr[Boolean] = js.native
+  var `video-autoplay`: js.UndefOr[Boolean] = js.undefined
 }
 object UIkitLightboxPanelOptions {
   

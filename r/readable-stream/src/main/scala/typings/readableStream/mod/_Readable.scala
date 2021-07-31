@@ -3,7 +3,6 @@ package typings.readableStream.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,6 +14,6 @@ trait _Readable
   
   def _undestroy(): Unit = js.native
   
-  def destroy(err: js.UndefOr[scala.Nothing], callback: js.Function1[/* error */ Error | Null, Unit]): this.type = js.native
+  def destroy(err: Unit, callback: js.Function1[/* error */ Error | Null, Unit]): this.type = js.native
   def destroy(err: Error, callback: js.Function1[/* error */ Error | Null, Unit]): this.type = js.native
 }

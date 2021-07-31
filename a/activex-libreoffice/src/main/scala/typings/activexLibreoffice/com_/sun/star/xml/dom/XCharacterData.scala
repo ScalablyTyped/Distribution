@@ -3,70 +3,70 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XCharacterData extends XNode {
+trait XCharacterData
+  extends StObject
+     with XNode {
   
   /**
     * Return the character data of the node that implements this interface. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised when the node
     * is readonly. {@link DOMException} - DOMSTRING_SIZE_ERR: Raised when it would return more characters than fit in a DOMString variable on the
     * implementation platform.
     */
-  var Data: String = js.native
+  var Data: String
   
   /** The number of 16-bit units that are available through data and the substringData method below. */
-  val Length: Double = js.native
+  val Length: Double
   
   /**
     * Append the string to the end of the character data of the node. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised if this node is
     * readonly.
     */
-  def appendData(arg: String): Unit = js.native
+  def appendData(arg: String): Unit
   
   /**
     * Remove a range of 16-bit units from the node. Throws: {@link DOMException} - INDEX_SIZE_ERR: Raised if the specified offset is negative or greater
     * than the number of 16-bit units in data, or if the specified count is negative. NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
     */
-  def deleteData(offset: Double, count: Double): Unit = js.native
+  def deleteData(offset: Double, count: Double): Unit
   
   /**
     * Return the character data of the node that implements this interface. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised when the node
     * is readonly. {@link DOMException} - DOMSTRING_SIZE_ERR: Raised when it would return more characters than fit in a DOMString variable on the
     * implementation platform.
     */
-  def getData(): String = js.native
+  def getData(): String
   
   /** The number of 16-bit units that are available through data and the substringData method below. */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /**
     * Insert a string at the specified 16-bit unit offset. Throws: {@link DOMException} - INDEX_SIZE_ERR: Raised if the specified offset is negative or
     * greater than the number of 16-bit units in data. NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
     */
-  def insertData(offset: Double, arg: String): Unit = js.native
+  def insertData(offset: Double, arg: String): Unit
   
   /**
     * Replace the characters starting at the specified 16-bit unit offset with the specified string. Throws; {@link DOMException} - INDEX_SIZE_ERR: Raised
     * if the specified offset is negative or greater than the number of 16-bit units in data, or if the specified count is negative.
     * NO_MODIFICATION_ALLOWED_ERR: Raised if this node is readonly.
     */
-  def replaceData(offset: Double, count: Double, arg: String): Unit = js.native
+  def replaceData(offset: Double, count: Double, arg: String): Unit
   
   /**
     * Set the character data of the node that implements this interface. Throws: {@link DOMException} - NO_MODIFICATION_ALLOWED_ERR: Raised when the node is
     * readonly. {@link DOMException} - DOMSTRING_SIZE_ERR: Raised when it would return more characters than fit in a DOMString variable on the
     * implementation platform.
     */
-  def setData(data: String): Unit = js.native
+  def setData(data: String): Unit
   
   /**
     * Extracts a range of data from the node. Throws: {@link DOMException} - INDEX_SIZE_ERR: Raised if the specified offset is negative or greater than the
     * number of 16-bit units in data, or if the specified count is negative. DOMSTRING_SIZE_ERR: Raised if the specified range of text does not fit into a
     * DOMString.
     */
-  def subStringData(offset: Double, count: Double): String = js.native
+  def subStringData(offset: Double, count: Double): String
 }
 object XCharacterData {
   

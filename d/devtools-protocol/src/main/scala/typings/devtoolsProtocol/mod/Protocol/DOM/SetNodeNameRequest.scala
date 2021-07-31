@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetNodeNameRequest extends StObject {
   
   /**
     * New node's name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Id of the node to set name for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object SetNodeNameRequest {
   

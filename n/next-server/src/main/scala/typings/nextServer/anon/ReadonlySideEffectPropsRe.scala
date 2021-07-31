@@ -5,20 +5,18 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<next-server.next-server/dist/lib/side-effect.SideEffectProps> & std.Readonly<{  children :react.react.ReactNode | undefined}> */
-@js.native
 trait ReadonlySideEffectPropsRe extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val handleStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.native
+  val handleStateChange: js.UndefOr[js.Function1[/* state */ State, Unit]] = js.undefined
   
-  val inAmpMode: js.UndefOr[Boolean] = js.native
+  val inAmpMode: js.UndefOr[Boolean] = js.undefined
   
-  val reduceComponentsToState: js.Function2[/* components */ js.Array[ReactElement], /* props */ js.Any, State] = js.native
+  val reduceComponentsToState: js.Function2[/* components */ js.Array[ReactElement], /* props */ js.Any, State]
 }
 object ReadonlySideEffectPropsRe {
   

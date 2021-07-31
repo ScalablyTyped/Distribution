@@ -3,7 +3,6 @@ package typings.winrtUwp.Windows.UI.Notifications
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Manages the toast notifications for an app including the ability the clear all toast history and removing individual toasts. */

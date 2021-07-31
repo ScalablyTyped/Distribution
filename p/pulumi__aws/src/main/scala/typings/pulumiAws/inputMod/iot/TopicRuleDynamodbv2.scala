@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.iot
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleDynamodbv2 extends StObject {
   
   /**
     * Configuration block with DynamoDB Table to which the message will be written. Nested arguments below.
     */
-  var putItem: js.UndefOr[Input[TopicRuleDynamodbv2PutItem]] = js.native
+  var putItem: js.UndefOr[Input[TopicRuleDynamodbv2PutItem]] = js.undefined
   
   /**
     * The IAM role ARN that allows access to the CloudWatch alarm.
     */
-  var roleArn: Input[String] = js.native
+  var roleArn: Input[String]
 }
 object TopicRuleDynamodbv2 {
   

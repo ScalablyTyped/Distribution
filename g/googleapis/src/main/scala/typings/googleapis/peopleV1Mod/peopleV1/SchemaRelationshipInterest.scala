@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s read-only relationship interest .
   */
-@js.native
 trait SchemaRelationshipInterest extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait SchemaRelationshipInterest extends StObject {
     * viewer&#39;s account locale or the locale specified in the
     * Accept-Language HTTP header.
     */
-  var formattedValue: js.UndefOr[String] = js.native
+  var formattedValue: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the relationship interest.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The kind of relationship the person is looking for. The value can be
     * custom or one of these predefined values:  * `friend` * `date` *
     * `relationship` * `networking`
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaRelationshipInterest {
   

@@ -4,7 +4,6 @@ import typings.instagramPrivateApi.clientMod.IgApiClient
 import typings.instagramPrivateApi.profileEntityMod.ProfileEntity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accountFriendshipsBestiesFeedResponseMod {
@@ -38,20 +37,19 @@ object accountFriendshipsBestiesFeedResponseMod {
     var username: String = js.native
   }
   
-  @js.native
   trait BestiesFeedResponse extends StObject {
     
-    var big_list: Boolean = js.native
+    var big_list: Boolean
     
-    var next_max_id: Null = js.native
+    var next_max_id: Null
     
-    var page_size: Double = js.native
+    var page_size: Double
     
-    var sections: Null = js.native
+    var sections: Null
     
-    var status: String = js.native
+    var status: String
     
-    var users: js.Array[BestiesFeedResponseUsersItem] = js.native
+    var users: js.Array[BestiesFeedResponseUsersItem]
   }
   object BestiesFeedResponse {
     

@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,33 +17,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param pointOther - The point on the other entity where the contact occurred, in world space.
   * @param normal - The normal vector of the contact on the other entity, in world space.
   */
-@js.native
 trait ContactPoint extends StObject {
   
   /**
     * The point on the entity where the contact occurred, relative to the entity.
     */
-  var localPoint: Vec3 = js.native
+  var localPoint: Vec3
   
   /**
     * The point on the other entity where the contact occurred, relative to the other entity.
     */
-  var localPointOther: Vec3 = js.native
+  var localPointOther: Vec3
   
   /**
     * The normal vector of the contact on the other entity, in world space.
     */
-  var normal: Vec3 = js.native
+  var normal: Vec3
   
   /**
     * The point on the entity where the contact occurred, in world space.
     */
-  var point: Vec3 = js.native
+  var point: Vec3
   
   /**
     * The point on the other entity where the contact occurred, in world space.
     */
-  var pointOther: Vec3 = js.native
+  var pointOther: Vec3
 }
 object ContactPoint {
   

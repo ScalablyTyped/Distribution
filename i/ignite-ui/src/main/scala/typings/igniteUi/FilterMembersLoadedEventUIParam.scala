@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterMembersLoadedEventUIParam extends StObject {
   
   /**
     * A collection with the newly loaded filter members.
     */
-  var filterMembers: js.UndefOr[js.Array[_]] = js.native
+  var filterMembers: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Gets the parent node or the igTree instance in the initial load.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * A collection with the root filter members .
     */
-  var rootFilterMembers: js.UndefOr[js.Array[_]] = js.native
+  var rootFilterMembers: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object FilterMembersLoadedEventUIParam {
   
@@ -35,7 +33,7 @@ object FilterMembersLoadedEventUIParam {
   implicit class FilterMembersLoadedEventUIParamMutableBuilder[Self <: FilterMembersLoadedEventUIParam] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFilterMembers(value: js.Array[_]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
+    def setFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "filterMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterMembersUndefined: Self = StObject.set(x, "filterMembers", js.undefined)
@@ -50,7 +48,7 @@ object FilterMembersLoadedEventUIParam {
     def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)
     
     @scala.inline
-    def setRootFilterMembers(value: js.Array[_]): Self = StObject.set(x, "rootFilterMembers", value.asInstanceOf[js.Any])
+    def setRootFilterMembers(value: js.Array[js.Any]): Self = StObject.set(x, "rootFilterMembers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRootFilterMembersUndefined: Self = StObject.set(x, "rootFilterMembers", js.undefined)

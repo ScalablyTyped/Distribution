@@ -5,17 +5,18 @@ import typings.slackNode.slackNodeStrings.fail
 import typings.slackNode.slackNodeStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("slack-node", JSImport.Namespace)
   @js.native
-  class ^ () extends Slack {
+  class ^ ()
+    extends StObject
+       with Slack {
     def this(token: String) = this()
-    def this(token: js.UndefOr[scala.Nothing], domain: String) = this()
     def this(token: String, domain: String) = this()
+    def this(token: Unit, domain: String) = this()
   }
   
   @js.native
@@ -52,22 +53,21 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait WebhookOptions extends StObject {
     
-    var attachments: js.UndefOr[js.Array[_]] = js.native
+    var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var icon_emoji: js.UndefOr[String] = js.native
+    var icon_emoji: js.UndefOr[String] = js.undefined
     
-    var link_names: js.UndefOr[js.Any] = js.native
+    var link_names: js.UndefOr[js.Any] = js.undefined
     
-    var response_type: js.UndefOr[String] = js.native
+    var response_type: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object WebhookOptions {
     
@@ -81,7 +81,7 @@ object mod {
     implicit class WebhookOptionsMutableBuilder[Self <: WebhookOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
@@ -127,16 +127,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WebhookResponse extends StObject {
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var response: js.Any = js.native
+    var response: js.Any
     
-    var status: fail | ok = js.native
+    var status: fail | ok
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object WebhookResponse {
     

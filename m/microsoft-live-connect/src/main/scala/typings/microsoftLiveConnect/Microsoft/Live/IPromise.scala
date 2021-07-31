@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,15 +25,15 @@ trait IPromise[T] extends StObject {
     *   making progress toward completion.
     */
   def `then`(onSuccess: js.Function1[/* response */ T, Unit]): IPromise[T] = js.native
-  def `then`(
-    onSuccess: js.Function1[/* response */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onProgress: js.Function1[/* progress */ js.Any, Unit]
-  ): IPromise[T] = js.native
   def `then`(onSuccess: js.Function1[/* response */ T, Unit], onError: js.Function1[/* error */ js.Any, Unit]): IPromise[T] = js.native
   def `then`(
     onSuccess: js.Function1[/* response */ T, Unit],
     onError: js.Function1[/* error */ js.Any, Unit],
+    onProgress: js.Function1[/* progress */ js.Any, Unit]
+  ): IPromise[T] = js.native
+  def `then`(
+    onSuccess: js.Function1[/* response */ T, Unit],
+    onError: Unit,
     onProgress: js.Function1[/* progress */ js.Any, Unit]
   ): IPromise[T] = js.native
 }

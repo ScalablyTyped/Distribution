@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverIndexNativeMod {
@@ -43,20 +42,21 @@ object popoverIndexNativeMod {
     var menuContextRef: js.Any = js.native
   }
   
-  @js.native
-  trait PopoverProps extends PopoverPropsType {
+  trait PopoverProps
+    extends StObject
+       with PopoverPropsType {
     
-    var contextStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var contextStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var overlayStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var renderOverlayComponent: js.UndefOr[js.Function1[/* values */ js.Any, Element]] = js.native
+    var renderOverlayComponent: js.UndefOr[js.Function1[/* values */ js.Any, Element]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var triggerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var triggerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object PopoverProps {
     

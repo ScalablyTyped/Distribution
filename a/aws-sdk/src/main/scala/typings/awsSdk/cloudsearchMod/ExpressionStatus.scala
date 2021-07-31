@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionStatus extends StObject {
   
   /**
     * The expression that is evaluated for sorting while processing a search request.
     */
-  var Options: Expression = js.native
+  var Options: Expression
   
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object ExpressionStatus {
   

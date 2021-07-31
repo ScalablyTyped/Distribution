@@ -2,31 +2,29 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateOnExit extends StObject {
   
   /**
     * Specifies the action to take if all of the specified conditions (onStatusReason, onReason, and onExitCode) are met.
     */
-  var action: RetryAction = js.native
+  var action: RetryAction
   
   /**
     * Contains a glob pattern to match against the decimal representation of the ExitCode returned for a job. The patten can be up to 512 characters long, can contain only numbers, and can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match.
     */
-  var onExitCode: js.UndefOr[String] = js.native
+  var onExitCode: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a glob pattern to match against the Reason returned for a job. The patten can be up to 512 characters long, can contain letters, numbers, periods (.), colons (:), and whitespace (spaces, tabs), and can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match.
     */
-  var onReason: js.UndefOr[String] = js.native
+  var onReason: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a glob pattern to match against the StatusReason returned for a job. The patten can be up to 512 characters long, can contain letters, numbers, periods (.), colons (:), and whitespace (spaces, tabs). and can optionally end with an asterisk (*) so that only the start of the string needs to be an exact match.
     */
-  var onStatusReason: js.UndefOr[String] = js.native
+  var onStatusReason: js.UndefOr[String] = js.undefined
 }
 object EvaluateOnExit {
   

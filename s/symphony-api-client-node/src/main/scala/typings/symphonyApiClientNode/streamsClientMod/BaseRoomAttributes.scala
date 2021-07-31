@@ -2,27 +2,25 @@ package typings.symphonyApiClientNode.streamsClientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseRoomAttributes extends StObject {
   
-  var crossPod: js.UndefOr[Boolean] = js.native
+  var crossPod: js.UndefOr[Boolean] = js.undefined
   
-  var description: String = js.native
+  var description: String
   
-  var discoverable: js.UndefOr[Boolean] = js.native
+  var discoverable: js.UndefOr[Boolean] = js.undefined
   
-  var keywords: js.UndefOr[js.Array[Keyword]] = js.native
+  var keywords: js.UndefOr[js.Array[Keyword]] = js.undefined
   
-  var membersCanInvite: js.UndefOr[Boolean] = js.native
+  var membersCanInvite: js.UndefOr[Boolean] = js.undefined
   
-  var multiLateralRoom: js.UndefOr[Boolean] = js.native
+  var multiLateralRoom: js.UndefOr[Boolean] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var viewHistory: js.UndefOr[Boolean] = js.native
+  var viewHistory: js.UndefOr[Boolean] = js.undefined
 }
 object BaseRoomAttributes {
   

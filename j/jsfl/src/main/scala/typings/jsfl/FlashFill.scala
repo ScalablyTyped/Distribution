@@ -2,40 +2,38 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This object contains all the properties of the Fill color setting of the Tools panel or of a selected shape. To retrieve a Fill object, use document.getCustomFill().
   */
-@js.native
 trait FlashFill extends StObject {
   
-  var bitmapIsClipped: Boolean = js.native
+  var bitmapIsClipped: Boolean
   
-  var bitmapPath: String = js.native
+  var bitmapPath: String
   
   /** Property; the color of the fill, in one of the following formats:
     * - A string in the format "#RRGGBB" or "#RRGGBBAA"
     * - A hexadecimal number in the format 0xRRGGBB
     * - An integer that represents the decimal equivalent of a hexadecimal number
     */
-  var color: js.Any = js.native
+  var color: js.Any
   
   /** Property; an array of colors in the gradient, expressed as integers. This property is available only if the value of the fill.style property is either "radialGradient" or "linearGradient". See fill.style */
-  var colorArray: js.Array[_] = js.native
+  var colorArray: js.Array[js.Any]
   
-  var focalPoint: Double = js.native
+  var focalPoint: Double
   
-  var linearRGB: Boolean = js.native
+  var linearRGB: Boolean
   
-  var matrix: FlashMatrix = js.native
+  var matrix: FlashMatrix
   
-  var overflow: String = js.native
+  var overflow: String
   
-  var posArray: js.Array[Double] = js.native
+  var posArray: js.Array[Double]
   
-  var style: String = js.native
+  var style: String
 }
 object FlashFill {
   
@@ -44,7 +42,7 @@ object FlashFill {
     bitmapIsClipped: Boolean,
     bitmapPath: String,
     color: js.Any,
-    colorArray: js.Array[_],
+    colorArray: js.Array[js.Any],
     focalPoint: Double,
     linearRGB: Boolean,
     matrix: FlashMatrix,
@@ -69,7 +67,7 @@ object FlashFill {
     def setColor(value: js.Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setColorArray(value: js.Array[_]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
+    def setColorArray(value: js.Array[js.Any]): Self = StObject.set(x, "colorArray", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColorArrayVarargs(value: js.Any*): Self = StObject.set(x, "colorArray", js.Array(value :_*))

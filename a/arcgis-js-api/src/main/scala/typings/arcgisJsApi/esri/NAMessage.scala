@@ -10,12 +10,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.informative
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait NAMessage
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

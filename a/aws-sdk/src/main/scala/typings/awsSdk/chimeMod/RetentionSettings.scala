@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetentionSettings extends StObject {
   
   /**
     * The chat conversation retention settings.
     */
-  var ConversationRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.ConversationRetentionSettings] = js.native
+  var ConversationRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.ConversationRetentionSettings] = js.undefined
   
   /**
     * The chat room retention settings.
     */
-  var RoomRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.RoomRetentionSettings] = js.native
+  var RoomRetentionSettings: js.UndefOr[typings.awsSdk.chimeMod.RoomRetentionSettings] = js.undefined
 }
 object RetentionSettings {
   

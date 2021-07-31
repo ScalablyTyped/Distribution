@@ -6,7 +6,6 @@ import typings.forkTsCheckerWebpackPlugin.loggerFactoryMod.LoggerType
 import typings.forkTsCheckerWebpackPlugin.partialLoggerMod.LoggerMethods
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object forkTsCheckerWebpackPluginStrings {
@@ -42,7 +41,9 @@ object forkTsCheckerWebpackPluginStrings {
   def codeframe: codeframe = "codeframe".asInstanceOf[codeframe]
   
   @js.native
-  sealed trait console extends LoggerType
+  sealed trait console
+    extends StObject
+       with LoggerType
   @scala.inline
   def console: console = "console".asInstanceOf[console]
   
@@ -53,13 +54,16 @@ object forkTsCheckerWebpackPluginStrings {
   
   @js.native
   sealed trait error
-    extends IssueSeverity
+    extends StObject
+       with IssueSeverity
        with LoggerMethods
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends LoggerMethods
+  sealed trait info
+    extends StObject
+       with LoggerMethods
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -74,7 +78,9 @@ object forkTsCheckerWebpackPluginStrings {
   def line: line = "line".asInstanceOf[line]
   
   @js.native
-  sealed trait log extends LoggerMethods
+  sealed trait log
+    extends StObject
+       with LoggerMethods
   @scala.inline
   def log: log = "log".asInstanceOf[log]
   
@@ -84,7 +90,9 @@ object forkTsCheckerWebpackPluginStrings {
   def quit: quit = "quit".asInstanceOf[quit]
   
   @js.native
-  sealed trait readonly extends FileSystemMode
+  sealed trait readonly
+    extends StObject
+       with FileSystemMode
   @scala.inline
   def readonly: readonly = "readonly".asInstanceOf[readonly]
   
@@ -94,7 +102,9 @@ object forkTsCheckerWebpackPluginStrings {
   def `return`: `return` = "return".asInstanceOf[`return`]
   
   @js.native
-  sealed trait silent extends LoggerType
+  sealed trait silent
+    extends StObject
+       with LoggerType
   @scala.inline
   def silent: silent = "silent".asInstanceOf[silent]
   
@@ -109,22 +119,30 @@ object forkTsCheckerWebpackPluginStrings {
   def `throw`: `throw` = "throw".asInstanceOf[`throw`]
   
   @js.native
-  sealed trait warning extends IssueSeverity
+  sealed trait warning
+    extends StObject
+       with IssueSeverity
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   
   @js.native
-  sealed trait `webpack-infrastructure` extends LoggerType
+  sealed trait `webpack-infrastructure`
+    extends StObject
+       with LoggerType
   @scala.inline
   def `webpack-infrastructure`: `webpack-infrastructure` = "webpack-infrastructure".asInstanceOf[`webpack-infrastructure`]
   
   @js.native
-  sealed trait `write-references` extends FileSystemMode
+  sealed trait `write-references`
+    extends StObject
+       with FileSystemMode
   @scala.inline
   def `write-references`: `write-references` = "write-references".asInstanceOf[`write-references`]
   
   @js.native
-  sealed trait `write-tsbuildinfo` extends FileSystemMode
+  sealed trait `write-tsbuildinfo`
+    extends StObject
+       with FileSystemMode
   @scala.inline
   def `write-tsbuildinfo`: `write-tsbuildinfo` = "write-tsbuildinfo".asInstanceOf[`write-tsbuildinfo`]
 }

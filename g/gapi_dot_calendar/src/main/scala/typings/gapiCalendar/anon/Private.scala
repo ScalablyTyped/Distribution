@@ -2,15 +2,13 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Private extends StObject {
   
-  def `private`(key: String): String = js.native
+  def `private`(key: String): String
   
-  def shared(key: String): String = js.native
+  def shared(key: String): String
 }
 object Private {
   

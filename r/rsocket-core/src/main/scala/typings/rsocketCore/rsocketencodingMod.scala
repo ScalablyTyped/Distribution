@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.rsocketTypes.reactiveSocketTypesMod.Encodable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsocketencodingMod {
@@ -25,14 +24,13 @@ object rsocketencodingMod {
   @js.native
   val Utf8Encoders: Encoders[String] = js.native
   
-  @js.native
   trait Encoder[T /* <: Encodable */] extends StObject {
     
-    def byteLength(value: Encodable): Double = js.native
+    def byteLength(value: Encodable): Double
     
-    def decode(buffer: Buffer, start: Double, end: Double): T = js.native
+    def decode(buffer: Buffer, start: Double, end: Double): T
     
-    def encode(value: Encodable, buffer: Buffer, start: Double, end: Double): Double = js.native
+    def encode(value: Encodable, buffer: Buffer, start: Double, end: Double): Double
   }
   object Encoder {
     
@@ -47,7 +45,7 @@ object rsocketencodingMod {
     }
     
     @scala.inline
-    implicit class EncoderMutableBuilder[Self <: Encoder[_], T /* <: Encodable */] (val x: Self with Encoder[T]) extends AnyVal {
+    implicit class EncoderMutableBuilder[Self <: Encoder[?], T /* <: Encodable */] (val x: Self & Encoder[T]) extends AnyVal {
       
       @scala.inline
       def setByteLength(value: Encodable => Double): Self = StObject.set(x, "byteLength", js.Any.fromFunction1(value))
@@ -60,20 +58,19 @@ object rsocketencodingMod {
     }
   }
   
-  @js.native
   trait Encoders[T /* <: Encodable */] extends StObject {
     
-    var data: Encoder[T] = js.native
+    var data: Encoder[T]
     
-    var dataMimeType: Encoder[String] = js.native
+    var dataMimeType: Encoder[String]
     
-    var message: Encoder[String] = js.native
+    var message: Encoder[String]
     
-    var metadata: Encoder[T] = js.native
+    var metadata: Encoder[T]
     
-    var metadataMimeType: Encoder[String] = js.native
+    var metadataMimeType: Encoder[String]
     
-    var resumeToken: Encoder[T] = js.native
+    var resumeToken: Encoder[T]
   }
   object Encoders {
     
@@ -91,7 +88,7 @@ object rsocketencodingMod {
     }
     
     @scala.inline
-    implicit class EncodersMutableBuilder[Self <: Encoders[_], T /* <: Encodable */] (val x: Self with Encoders[T]) extends AnyVal {
+    implicit class EncodersMutableBuilder[Self <: Encoders[?], T /* <: Encodable */] (val x: Self & Encoders[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: Encoder[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

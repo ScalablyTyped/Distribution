@@ -2,43 +2,41 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes information about a regional election administrative area.
   */
-@js.native
 trait SchemaAdministrationRegion extends StObject {
   
   /**
     * The election administration body for this area.
     */
-  var electionAdministrationBody: js.UndefOr[SchemaAdministrativeBody] = js.native
+  var electionAdministrationBody: js.UndefOr[SchemaAdministrativeBody] = js.undefined
   
   /**
     * An ID for this object. IDs may change in future requests and should not
     * be cached. Access to this field requires special access that can be
     * requested from the Request more link on the Quotas page.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The city or county that provides election information for this voter.
     * This object can have the same elements as state.
     */
-  var local_jurisdiction: js.UndefOr[SchemaAdministrationRegion] = js.native
+  var local_jurisdiction: js.UndefOr[SchemaAdministrationRegion] = js.undefined
   
   /**
     * The name of the jurisdiction.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of sources for this area. If multiple sources are listed the data
     * has been aggregated from those sources.
     */
-  var sources: js.UndefOr[js.Array[SchemaSource]] = js.native
+  var sources: js.UndefOr[js.Array[SchemaSource]] = js.undefined
 }
 object SchemaAdministrationRegion {
   

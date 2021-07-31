@@ -12,25 +12,23 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Children extends StObject {
   
   var children: js.UndefOr[
     js.Array[
       JSXTextKind | JSXExpressionContainerKind | JSXSpreadChildKind | JSXElementKind | JSXFragmentKind | LiteralKind
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var closingFragment: JSXClosingFragmentKind = js.native
+  var closingFragment: JSXClosingFragmentKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var openingFragment: JSXOpeningFragmentKind = js.native
+  var openingFragment: JSXOpeningFragmentKind
 }
 object Children {
   

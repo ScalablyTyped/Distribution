@@ -2,15 +2,13 @@ package typings.sinon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SinonExposeOptions extends StObject {
   
-  var includeFail: Boolean = js.native
+  var includeFail: Boolean
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object SinonExposeOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedManagedPolicy extends StObject {
   
   /**
     * The ARN of the IAM managed policy. For more information about ARNs, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var Arn: js.UndefOr[ManagedPolicyArn] = js.native
+  var Arn: js.UndefOr[ManagedPolicyArn] = js.undefined
   
   /**
     * The name of the IAM managed policy.
     */
-  var Name: js.UndefOr[typings.awsSdk.ssoadminMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.ssoadminMod.Name] = js.undefined
 }
 object AttachedManagedPolicy {
   

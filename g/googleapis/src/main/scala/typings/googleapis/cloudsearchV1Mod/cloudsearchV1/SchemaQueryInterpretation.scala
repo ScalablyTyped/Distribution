@@ -2,20 +2,18 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaQueryInterpretation extends StObject {
   
-  var interpretationType: js.UndefOr[String] = js.native
+  var interpretationType: js.UndefOr[String] = js.undefined
   
   /**
     * The interpretation of the query used in search. For example, query
     * &quot;email from john&quot; will be interpreted as &quot;from:john
     * source:mail&quot;
     */
-  var interpretedQuery: js.UndefOr[String] = js.native
+  var interpretedQuery: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryInterpretation {
   

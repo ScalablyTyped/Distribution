@@ -2,17 +2,15 @@ package typings.foreverMonitor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Array[String] = js.native
+    var args: js.Array[String]
     
-    var command: String = js.native
+    var command: String
   }
   object Args {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Command extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var command: String = js.native
+    var command: String
   }
   object Command {
     

@@ -4,15 +4,13 @@ import typings.muiDatatables.muiDatatablesStrings.asc
 import typings.muiDatatables.muiDatatablesStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUISortOptions extends StObject {
   
-  var direction: asc | desc = js.native
+  var direction: asc | desc
   
-  var name: String = js.native
+  var name: String
 }
 object MUISortOptions {
   

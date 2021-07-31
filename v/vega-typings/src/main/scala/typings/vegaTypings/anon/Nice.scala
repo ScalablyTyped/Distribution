@@ -3,15 +3,13 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nice extends StObject {
   
-  var count: js.UndefOr[Double | SignalRef] = js.native
+  var count: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var nice: js.UndefOr[Double | SignalRef] = js.native
+  var nice: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object Nice {
   

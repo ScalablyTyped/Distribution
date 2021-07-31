@@ -2,13 +2,13 @@ package typings.reactNativeKeychain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedWebCredentials extends UserCredentials {
+trait SharedWebCredentials
+  extends StObject
+     with UserCredentials {
   
-  var server: String = js.native
+  var server: String
 }
 object SharedWebCredentials {
   

@@ -2,33 +2,31 @@ package typings.portNumbers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("port-numbers", "getPort")
+  @JSImport("port-numbers", JSImport.Namespace)
   @js.native
-  def getPort(service: String): PortInfo | Null = js.native
-  @JSImport("port-numbers", "getPort")
-  @js.native
-  def getPort(service: String, protocol: String): PortInfo | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("port-numbers", "getService")
-  @js.native
-  def getService(port: Double): ServiceInfo | Null = js.native
-  @JSImport("port-numbers", "getService")
-  @js.native
-  def getService(port: Double, protocol: String): ServiceInfo | Null = js.native
+  @scala.inline
+  def getPort(service: String): PortInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any]).asInstanceOf[PortInfo | Null]
+  @scala.inline
+  def getPort(service: String, protocol: String): PortInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPort")(service.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[PortInfo | Null]
   
-  @js.native
+  @scala.inline
+  def getService(port: Double): ServiceInfo | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any]).asInstanceOf[ServiceInfo | Null]
+  @scala.inline
+  def getService(port: Double, protocol: String): ServiceInfo | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getService")(port.asInstanceOf[js.Any], protocol.asInstanceOf[js.Any])).asInstanceOf[ServiceInfo | Null]
+  
   trait PortInfo extends StObject {
     
-    val description: String = js.native
+    val description: String
     
-    val port: Double = js.native
+    val port: Double
     
-    val protocol: String = js.native
+    val protocol: String
   }
   object PortInfo {
     
@@ -52,12 +50,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServiceInfo extends StObject {
     
-    val description: String = js.native
+    val description: String
     
-    val name: String = js.native
+    val name: String
   }
   object ServiceInfo {
     

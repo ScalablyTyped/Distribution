@@ -2,7 +2,6 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,7 +25,7 @@ trait Target extends StObject {
   
   def isTagged(): Boolean = js.native
   
-  def matchesArray(name: ServiceIdentifier[_]): Boolean = js.native
+  def matchesArray(name: ServiceIdentifier[js.Any]): Boolean = js.native
   
   def matchesNamedTag(name: String): Boolean = js.native
   
@@ -38,7 +37,7 @@ trait Target extends StObject {
   
   var name: QueryableString = js.native
   
-  var serviceIdentifier: ServiceIdentifier[_] = js.native
+  var serviceIdentifier: ServiceIdentifier[js.Any] = js.native
   
   var `type`: TargetType = js.native
 }

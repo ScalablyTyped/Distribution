@@ -3,15 +3,13 @@ package typings.coBody
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Req extends StObject {
     
-    var req: IncomingMessage = js.native
+    var req: IncomingMessage
   }
   object Req {
     

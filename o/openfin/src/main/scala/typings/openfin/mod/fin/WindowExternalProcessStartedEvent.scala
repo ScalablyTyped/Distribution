@@ -1,29 +1,28 @@
 package typings.openfin.mod.fin
 
 import typings.openfin.openfinStrings.`external-process-started`
-import typings.openfin.openfinStrings.window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowExternalProcessStartedEvent extends WindowBaseEvent {
+trait WindowExternalProcessStartedEvent
+  extends StObject
+     with WindowBaseEvent {
   
   /**
     * the process handle uuid
     */
-  var processUuid: String = js.native
+  var processUuid: String
   
   @JSName("type")
-  var type_WindowExternalProcessStartedEvent: `external-process-started` = js.native
+  var type_WindowExternalProcessStartedEvent: `external-process-started`
 }
 object WindowExternalProcessStartedEvent {
   
   @scala.inline
-  def apply(name: String, processUuid: String, topic: window, `type`: `external-process-started`, uuid: String): WindowExternalProcessStartedEvent = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], processUuid = processUuid.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String, processUuid: String, uuid: String): WindowExternalProcessStartedEvent = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], processUuid = processUuid.asInstanceOf[js.Any], topic = "window", uuid = uuid.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("external-process-started")
     __obj.asInstanceOf[WindowExternalProcessStartedEvent]
   }
   

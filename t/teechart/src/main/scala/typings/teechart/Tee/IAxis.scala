@@ -2,83 +2,81 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAxis extends StObject {
   
-  var automatic: Boolean = js.native
+  var automatic: Boolean
   
   // %
-  var axisSize: Double = js.native
+  var axisSize: Double
   
   // readonly
-  var bounds: IRectangle = js.native
+  var bounds: IRectangle
   
-  def calc(value: Double): Double = js.native
+  def calc(value: Double): Double
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var custom: Boolean = js.native
+  var custom: Boolean
   
   // %
-  var end: Double = js.native
+  var end: Double
   
-  var endPos: Double = js.native
+  var endPos: Double
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  def fromPos(position: Double): Double = js.native
+  def fromPos(position: Double): Double
   
-  def fromSize(size: Double): Double = js.native
-  
-  // readonly
-  var grid: IGrid = js.native
-  
-  def hasAnySeries(): Boolean = js.native
-  
-  var horizontal: Boolean = js.native
-  
-  var increm: Double = js.native
-  
-  var increment: Double = js.native
-  
-  var innerTicks: ITicks = js.native
-  
-  var inverted: Boolean = js.native
-  
-  var labels: IAxisLabels = js.native
-  
-  var log: Boolean = js.native
-  
-  var maximum: Double = js.native
-  
-  var minimum: Double = js.native
-  
-  var minorTicks: IMinorTicks = js.native
+  def fromSize(size: Double): Double
   
   // readonly
-  var otherSize: Boolean = js.native
+  var grid: IGrid
+  
+  def hasAnySeries(): Boolean
+  
+  var horizontal: Boolean
+  
+  var increm: Double
+  
+  var increment: Double
+  
+  var innerTicks: ITicks
+  
+  var inverted: Boolean
+  
+  var labels: IAxisLabels
+  
+  var log: Boolean
+  
+  var maximum: Double
+  
+  var minimum: Double
+  
+  var minorTicks: IMinorTicks
+  
+  // readonly
+  var otherSize: Boolean
   
   // readonly?
-  var position: Double = js.native
+  var position: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  def scroll(delta: Double): Unit = js.native
+  def scroll(delta: Double): Unit
   
-  def setMinMax(minimum: Double, maximum: Double): Unit = js.native
+  def setMinMax(minimum: Double, maximum: Double): Unit
   
-  var start: Double = js.native
+  var start: Double
   
-  var startPos: Double = js.native
+  var startPos: Double
   
-  var ticks: ITicks = js.native
+  var ticks: ITicks
   
-  var title: IAxisTitle = js.native
+  var title: IAxisTitle
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object IAxis {
   

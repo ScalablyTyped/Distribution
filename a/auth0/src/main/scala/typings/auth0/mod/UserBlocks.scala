@@ -2,13 +2,11 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserBlocks extends StObject {
   
-  var blocked_for: js.Array[BlockedForEntry] = js.native
+  var blocked_for: js.Array[BlockedForEntry]
 }
 object UserBlocks {
   

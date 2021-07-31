@@ -3,7 +3,6 @@ package typings.fridaGum.global
 import typings.fridaGum.UnixStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("UnixOutputStream")
 @js.native
 class UnixOutputStream protected ()
-  extends typings.fridaGum.OutputStream {
+  extends StObject
+     with typings.fridaGum.OutputStream {
   /**
     * Creates a new output stream from the specified file descriptor `fd`.
     *

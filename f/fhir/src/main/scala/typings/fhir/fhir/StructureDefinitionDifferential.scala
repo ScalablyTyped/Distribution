@@ -2,19 +2,19 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Differential view of the structure
   */
-@js.native
-trait StructureDefinitionDifferential extends BackboneElement {
+trait StructureDefinitionDifferential
+  extends StObject
+     with BackboneElement {
   
   /**
     * Definition of elements in the resource (if no StructureDefinition)
     */
-  var element: js.Array[ElementDefinition] = js.native
+  var element: js.Array[ElementDefinition]
 }
 object StructureDefinitionDifferential {
   

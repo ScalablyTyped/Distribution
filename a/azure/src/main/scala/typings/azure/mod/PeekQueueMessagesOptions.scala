@@ -2,13 +2,13 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PeekQueueMessagesOptions extends TimeoutIntervalOptions {
+trait PeekQueueMessagesOptions
+  extends StObject
+     with TimeoutIntervalOptions {
   
-  var numofmessages: js.UndefOr[Double] = js.native
+  var numofmessages: js.UndefOr[Double] = js.undefined
 }
 object PeekQueueMessagesOptions {
   

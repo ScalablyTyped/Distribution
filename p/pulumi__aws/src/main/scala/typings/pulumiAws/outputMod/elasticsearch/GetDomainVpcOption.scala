@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainVpcOption extends StObject {
   
   /**
     * The availability zones used by the domain.
     */
-  var availabilityZones: js.Array[String] = js.native
+  var availabilityZones: js.Array[String]
   
   /**
     * The security groups used by the domain.
     */
-  var securityGroupIds: js.Array[String] = js.native
+  var securityGroupIds: js.Array[String]
   
   /**
     * The subnets used by the domain.
     */
-  var subnetIds: js.Array[String] = js.native
+  var subnetIds: js.Array[String]
   
   /**
     * The VPC used by the domain.
     */
-  var vpcId: String = js.native
+  var vpcId: String
 }
 object GetDomainVpcOption {
   

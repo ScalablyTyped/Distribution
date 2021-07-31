@@ -3,23 +3,21 @@ package typings.braintree.mod
 import typings.braintree.anon.AllowVaulting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaymentMethodGateway extends StObject {
   
-  def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]] = js.native
+  def create(request: PaymentMethodCreateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
   
-  def delete(token: String): js.Promise[Unit] = js.native
+  def delete(token: String): js.Promise[Unit]
   
-  def find(token: String): js.Promise[PaymentMethod] = js.native
+  def find(token: String): js.Promise[PaymentMethod]
   
-  def grant(sharedPaymentMethodToken: String, options: AllowVaulting): js.Promise[ValidatedResponse[PaymentMethodNonce]] = js.native
+  def grant(sharedPaymentMethodToken: String, options: AllowVaulting): js.Promise[ValidatedResponse[PaymentMethodNonce]]
   
-  def revoke(sharedPaymentMethodToken: String): js.Promise[Unit] = js.native
+  def revoke(sharedPaymentMethodToken: String): js.Promise[Unit]
   
-  def update(token: String, updates: PaymentMethodUpdateRequest): js.Promise[ValidatedResponse[PaymentMethod]] = js.native
+  def update(token: String, updates: PaymentMethodUpdateRequest): js.Promise[ValidatedResponse[PaymentMethod]]
 }
 object PaymentMethodGateway {
   

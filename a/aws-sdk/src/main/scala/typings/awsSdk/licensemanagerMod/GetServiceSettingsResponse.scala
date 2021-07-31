@@ -2,36 +2,34 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetServiceSettingsResponse extends StObject {
   
   /**
     * Indicates whether cross-account discovery has been enabled.
     */
-  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.native
+  var EnableCrossAccountsDiscovery: js.UndefOr[BoxBoolean] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the AWS resource share. The License Manager master account will provide member accounts with access to this share.
     */
-  var LicenseManagerResourceShareArn: js.UndefOr[String] = js.native
+  var LicenseManagerResourceShareArn: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether AWS Organizations has been integrated with License Manager for cross-account discovery.
     */
-  var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.native
+  var OrganizationConfiguration: js.UndefOr[typings.awsSdk.licensemanagerMod.OrganizationConfiguration] = js.undefined
   
   /**
     * Regional S3 bucket path for storing reports, license trail event data, discovery data, and so on.
     */
-  var S3BucketArn: js.UndefOr[String] = js.native
+  var S3BucketArn: js.UndefOr[String] = js.undefined
   
   /**
     * SNS topic configured to receive notifications from License Manager.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.native
+  var SnsTopicArn: js.UndefOr[String] = js.undefined
 }
 object GetServiceSettingsResponse {
   

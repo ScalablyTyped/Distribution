@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateConsumerConfigResponse extends StObject {
   
-  var isValid: js.UndefOr[Boolean] = js.native
+  var isValid: js.UndefOr[Boolean] = js.undefined
   
-  var validationError: js.UndefOr[String] = js.native
+  var validationError: js.UndefOr[String] = js.undefined
 }
 object ValidateConsumerConfigResponse {
   

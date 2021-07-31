@@ -2,15 +2,13 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MoveLearnset extends StObject {
   
-  var games: js.Array[String] = js.native
+  var games: js.Array[String]
   
-  var learnset: js.Array[Learnset] = js.native
+  var learnset: js.Array[Learnset]
 }
 object MoveLearnset {
   

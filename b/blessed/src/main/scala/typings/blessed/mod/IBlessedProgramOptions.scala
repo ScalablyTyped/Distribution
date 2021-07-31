@@ -4,33 +4,31 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBlessedProgramOptions extends StObject {
   
-  var buffer: js.UndefOr[Boolean] = js.native
+  var buffer: js.UndefOr[Boolean] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var dump: js.UndefOr[Boolean] = js.native
+  var dump: js.UndefOr[Boolean] = js.undefined
   
-  var input: js.UndefOr[Readable] = js.native
+  var input: js.UndefOr[Readable] = js.undefined
   
-  var log: js.UndefOr[String] = js.native
+  var log: js.UndefOr[String] = js.undefined
   
-  var output: js.UndefOr[Writable] = js.native
+  var output: js.UndefOr[Writable] = js.undefined
   
-  var resizeTimeout: js.UndefOr[Boolean] = js.native
+  var resizeTimeout: js.UndefOr[Boolean] = js.undefined
   
-  var term: js.UndefOr[String] = js.native
+  var term: js.UndefOr[String] = js.undefined
   
-  var terminal: js.UndefOr[String] = js.native
+  var terminal: js.UndefOr[String] = js.undefined
   
-  var tput: js.UndefOr[String] = js.native
+  var tput: js.UndefOr[String] = js.undefined
   
-  var zero: js.UndefOr[Boolean] = js.native
+  var zero: js.UndefOr[Boolean] = js.undefined
 }
 object IBlessedProgramOptions {
   

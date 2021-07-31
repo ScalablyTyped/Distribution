@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppsResponse extends StObject {
   
-  var ApplicationsResponse: typings.awsSdk.pinpointMod.ApplicationsResponse = js.native
+  var ApplicationsResponse: typings.awsSdk.pinpointMod.ApplicationsResponse
 }
 object GetAppsResponse {
   

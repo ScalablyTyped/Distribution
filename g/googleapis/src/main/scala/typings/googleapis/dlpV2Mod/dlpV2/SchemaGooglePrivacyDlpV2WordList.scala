@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message defining a list of words or phrases to search for in the data.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2WordList extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGooglePrivacyDlpV2WordList extends StObject {
     * least one phrase and every phrase must contain at least 2 characters that
     * are letters or digits. [required]
     */
-  var words: js.UndefOr[js.Array[String]] = js.native
+  var words: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2WordList {
   

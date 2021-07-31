@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardTimeZoneOffset extends StObject {
   
   // Represents the nth occurrence of the day of week that the transition from daylight saving time to standard time occurs.
-  var dayOccurrence: js.UndefOr[NullableOption[Double]] = js.native
+  var dayOccurrence: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Represents the day of the week when the transition from daylight saving time to standard time.
-  var dayOfWeek: js.UndefOr[NullableOption[DayOfWeek]] = js.native
+  var dayOfWeek: js.UndefOr[NullableOption[DayOfWeek]] = js.undefined
   
   // Represents the month of the year when the transition from daylight saving time to standard time occurs.
-  var month: js.UndefOr[NullableOption[Double]] = js.native
+  var month: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Represents the time of day when the transition from daylight saving time to standard time occurs.
-  var time: js.UndefOr[NullableOption[String]] = js.native
+  var time: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Represents how frequently in terms of years the change from daylight saving time to standard time occurs. For example,
     * a value of 0 means every year.
     */
-  var year: js.UndefOr[NullableOption[Double]] = js.native
+  var year: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object StandardTimeZoneOffset {
   

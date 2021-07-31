@@ -6,41 +6,41 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceCitiesList extends StandardParameters {
+trait ParamsResourceCitiesList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Select only cities from these countries.
     */
-  var countryDartIds: js.UndefOr[js.Array[String]] = js.native
+  var countryDartIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only cities with these DART IDs.
     */
-  var dartIds: js.UndefOr[js.Array[String]] = js.native
+  var dartIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Select only cities with names starting with this prefix.
     */
-  var namePrefix: js.UndefOr[String] = js.native
+  var namePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * User profile ID associated with this request.
     */
-  var profileId: js.UndefOr[String] = js.native
+  var profileId: js.UndefOr[String] = js.undefined
   
   /**
     * Select only cities from these regions.
     */
-  var regionDartIds: js.UndefOr[js.Array[String]] = js.native
+  var regionDartIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceCitiesList {
   

@@ -2,18 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 需要添加的卡券列表 */
-@js.native
 trait AddCardRequestInfo extends StObject {
   
   /** 卡券的扩展参数。需将 CardExt 对象 JSON 序列化为**字符串**传入 */
-  var cardExt: String = js.native
+  var cardExt: String
   
   /** 卡券 ID */
-  var cardId: String = js.native
+  var cardId: String
 }
 object AddCardRequestInfo {
   

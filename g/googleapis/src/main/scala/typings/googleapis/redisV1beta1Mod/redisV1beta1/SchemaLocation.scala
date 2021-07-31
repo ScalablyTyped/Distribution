@@ -3,31 +3,29 @@ package typings.googleapis.redisV1beta1Mod.redisV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A resource that represents Google Cloud Platform location.
   */
-@js.native
 trait SchemaLocation extends StObject {
   
   /**
     * The friendly name for this location, typically a nearby city name. For
     * example, &quot;Tokyo&quot;.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Cross-service attributes for the location. For example
     * {&quot;cloud.googleapis.com/region&quot;: &quot;us-east1&quot;}
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Resource ID for the region. For example: &quot;us-east1&quot;.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The set of available zones in the location. The map is keyed
@@ -35,13 +33,13 @@ trait SchemaLocation extends StObject {
     * keys can be specified in `location_id` or `alternative_location_id`
     * fields when creating a Redis instance.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Full resource name for the region. For example:
     * &quot;projects/example-project/locations/us-east1&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaLocation {
   

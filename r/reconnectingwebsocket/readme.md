@@ -12,7 +12,7 @@ A small JavaScript library that decorates the WebSocket API to provide a WebSock
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 109279 |
+| # downloads        | 137419 |
 | # stars            | 3 |
 
 ## Links

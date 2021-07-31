@@ -5,7 +5,6 @@ import typings.materialLineRipple.foundationMod.MDCLineRippleFoundation
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentMod {
@@ -13,7 +12,7 @@ object componentMod {
   @JSImport("@material/line-ripple/component", "MDCLineRipple")
   @js.native
   class MDCLineRipple protected () extends MDCComponent[MDCLineRippleFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCLineRippleFoundation, args: js.Any*) = this()
     
     /**
@@ -35,9 +34,12 @@ object componentMod {
   /* static members */
   object MDCLineRipple {
     
-    @JSImport("@material/line-ripple/component", "MDCLineRipple.attachTo")
+    @JSImport("@material/line-ripple/component", "MDCLineRipple")
     @js.native
-    def attachTo(root: Element): MDCLineRipple = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCLineRipple = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCLineRipple]
   }
   
   type MDCLineRippleFactory = js.Function2[

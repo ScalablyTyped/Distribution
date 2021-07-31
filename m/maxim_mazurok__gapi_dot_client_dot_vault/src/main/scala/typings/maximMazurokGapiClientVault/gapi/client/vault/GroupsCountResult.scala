@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupsCountResult extends StObject {
   
   /** Error occurred when querying these accounts. */
-  var accountCountErrors: js.UndefOr[js.Array[AccountCountError]] = js.native
+  var accountCountErrors: js.UndefOr[js.Array[AccountCountError]] = js.undefined
   
   /** Subtotal count per matching account that have more than zero messages. */
-  var accountCounts: js.UndefOr[js.Array[AccountCount]] = js.native
+  var accountCounts: js.UndefOr[js.Array[AccountCount]] = js.undefined
   
   /** Total number of accounts that can be queried and have more than zero messages. */
-  var matchingAccountsCount: js.UndefOr[String] = js.native
+  var matchingAccountsCount: js.UndefOr[String] = js.undefined
   
   /** When data scope is HELD_DATA in the request Query, these accounts in the request are not queried because they are not on hold. For other data scope, this field is not set. */
-  var nonQueryableAccounts: js.UndefOr[js.Array[String]] = js.native
+  var nonQueryableAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Total number of accounts involved in this count operation. */
-  var queriedAccountsCount: js.UndefOr[String] = js.native
+  var queriedAccountsCount: js.UndefOr[String] = js.undefined
 }
 object GroupsCountResult {
   

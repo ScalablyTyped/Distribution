@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListV2LoggingLevelsResponse extends StObject {
   
   /**
     * The logging configuration for a target.
     */
-  var logTargetConfigurations: js.UndefOr[LogTargetConfigurations] = js.native
+  var logTargetConfigurations: js.UndefOr[LogTargetConfigurations] = js.undefined
   
   /**
     * The token to use to get the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListV2LoggingLevelsResponse {
   

@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the fields will default to the value used for new page elements created in
   * the Slides editor, which may depend on the page element kind.
   */
-@js.native
 trait SchemaOutline extends StObject {
   
   /**
     * The dash style of the outline.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The fill of the outline.
     */
-  var outlineFill: js.UndefOr[SchemaOutlineFill] = js.native
+  var outlineFill: js.UndefOr[SchemaOutlineFill] = js.undefined
   
   /**
     * The outline property state.  Updating the outline on a page element will
@@ -31,12 +29,12 @@ trait SchemaOutline extends StObject {
     * this field to `NOT_RENDERED`. In this case, any other outline fields set
     * in the same request will be ignored.
     */
-  var propertyState: js.UndefOr[String] = js.native
+  var propertyState: js.UndefOr[String] = js.undefined
   
   /**
     * The thickness of the outline.
     */
-  var weight: js.UndefOr[SchemaDimension] = js.native
+  var weight: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaOutline {
   

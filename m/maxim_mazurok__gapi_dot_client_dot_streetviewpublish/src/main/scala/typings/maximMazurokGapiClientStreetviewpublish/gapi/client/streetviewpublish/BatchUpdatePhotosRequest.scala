@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientStreetviewpublish.gapi.client.streetviewpu
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePhotosRequest extends StObject {
   
   /** Required. List of UpdatePhotoRequests. */
-  var updatePhotoRequests: js.UndefOr[js.Array[UpdatePhotoRequest]] = js.native
+  var updatePhotoRequests: js.UndefOr[js.Array[UpdatePhotoRequest]] = js.undefined
 }
 object BatchUpdatePhotosRequest {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Checksum extends StObject {
   
   /** The SHA256 hash of the client state; that is, of the sorted list of all hashes present in the database. */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
 }
 object Checksum {
   

@@ -4,56 +4,54 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitStatus extends StObject {
   
   /**
     * Reference links.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Context of the status.
     */
-  var context: GitStatusContext = js.native
+  var context: GitStatusContext
   
   /**
     * Identity that created the status.
     */
-  var createdBy: IdentityRef = js.native
+  var createdBy: IdentityRef
   
   /**
     * Creation date and time of the status.
     */
-  var creationDate: Date = js.native
+  var creationDate: Date
   
   /**
     * Status description. Typically describes current state of the status.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Status identifier.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * State of the status.
     */
-  var state: GitStatusState = js.native
+  var state: GitStatusState
   
   /**
     * URL with status details.
     */
-  var targetUrl: String = js.native
+  var targetUrl: String
   
   /**
     * Last update date and time of the status.
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
 }
 object GitStatus {
   

@@ -2,61 +2,59 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The properties of the Image.
   */
-@js.native
 trait SchemaImageProperties extends StObject {
   
   /**
     * The brightness effect of the image. The value should be in the interval
     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
     */
-  var brightness: js.UndefOr[Double] = js.native
+  var brightness: js.UndefOr[Double] = js.undefined
   
   /**
     * The contrast effect of the image. The value should be in the interval
     * [-1.0, 1.0], where 0 means no effect. This property is read-only.
     */
-  var contrast: js.UndefOr[Double] = js.native
+  var contrast: js.UndefOr[Double] = js.undefined
   
   /**
     * The crop properties of the image. If not set, the image is not cropped.
     * This property is read-only.
     */
-  var cropProperties: js.UndefOr[SchemaCropProperties] = js.native
+  var cropProperties: js.UndefOr[SchemaCropProperties] = js.undefined
   
   /**
     * The hyperlink destination of the image. If unset, there is no link.
     */
-  var link: js.UndefOr[SchemaLink] = js.native
+  var link: js.UndefOr[SchemaLink] = js.undefined
   
   /**
     * The outline of the image. If not set, the image has no outline.
     */
-  var outline: js.UndefOr[SchemaOutline] = js.native
+  var outline: js.UndefOr[SchemaOutline] = js.undefined
   
   /**
     * The recolor effect of the image. If not set, the image is not recolored.
     * This property is read-only.
     */
-  var recolor: js.UndefOr[SchemaRecolor] = js.native
+  var recolor: js.UndefOr[SchemaRecolor] = js.undefined
   
   /**
     * The shadow of the image. If not set, the image has no shadow. This
     * property is read-only.
     */
-  var shadow: js.UndefOr[SchemaShadow] = js.native
+  var shadow: js.UndefOr[SchemaShadow] = js.undefined
   
   /**
     * The transparency effect of the image. The value should be in the interval
     * [0.0, 1.0], where 0 means no effect and 1 means completely transparent.
     * This property is read-only.
     */
-  var transparency: js.UndefOr[Double] = js.native
+  var transparency: js.UndefOr[Double] = js.undefined
 }
 object SchemaImageProperties {
   

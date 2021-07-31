@@ -6,17 +6,15 @@ import typings.vegaLite.channeldefMod.StringValueDefWithCondition
 import typings.vegaLite.srcTypeMod.StandardType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTooltipWithoutAggregatedField[F /* <: typings.vegaLite.channeldefMod.Field */] extends StObject {
   
   var customTooltipWithoutAggregatedField: js.UndefOr[
     StringFieldDefWithCondition[F] | (StringValueDefWithCondition[F, StandardType]) | js.Array[StringFieldDef[F]]
-  ] = js.native
+  ] = js.undefined
   
-  var filteredEncoding: typings.vegaLite.encodingMod.Encoding[F] = js.native
+  var filteredEncoding: typings.vegaLite.encodingMod.Encoding[F]
 }
 object CustomTooltipWithoutAggregatedField {
   
@@ -27,7 +25,7 @@ object CustomTooltipWithoutAggregatedField {
   }
   
   @scala.inline
-  implicit class CustomTooltipWithoutAggregatedFieldMutableBuilder[Self <: CustomTooltipWithoutAggregatedField[_], F /* <: typings.vegaLite.channeldefMod.Field */] (val x: Self with CustomTooltipWithoutAggregatedField[F]) extends AnyVal {
+  implicit class CustomTooltipWithoutAggregatedFieldMutableBuilder[Self <: CustomTooltipWithoutAggregatedField[?], F /* <: typings.vegaLite.channeldefMod.Field */] (val x: Self & CustomTooltipWithoutAggregatedField[F]) extends AnyVal {
     
     @scala.inline
     def setCustomTooltipWithoutAggregatedField(

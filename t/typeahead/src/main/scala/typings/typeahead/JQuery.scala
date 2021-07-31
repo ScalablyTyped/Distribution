@@ -21,7 +21,6 @@ import typings.typeahead.typeaheadStrings.typeaheadColonrender
 import typings.typeahead.typeaheadStrings.typeaheadColonselect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,20 +41,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadactive(events: typeaheadColonactive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadactive(
-    events: typeaheadColonactive,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadactive(events: typeaheadColonactive, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadactive(events: typeaheadColonactive, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadactive(
     events: typeaheadColonactive,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadactive(
+    events: typeaheadColonactive,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -72,12 +71,9 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasynccancel(events: typeaheadColonasynccancel, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
   def off_typeaheadasynccancel(
     events: typeaheadColonasynccancel,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   @JSName("off")
   def off_typeaheadasynccancel(events: typeaheadColonasynccancel, selector: String): JQuery = js.native
@@ -85,7 +81,13 @@ trait JQuery extends StObject {
   def off_typeaheadasynccancel(
     events: typeaheadColonasynccancel,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadasynccancel(
+    events: typeaheadColonasynccancel,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -102,12 +104,9 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
   def off_typeaheadasyncreceive(
     events: typeaheadColonasyncreceive,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncreceive(events: typeaheadColonasyncreceive, selector: String): JQuery = js.native
@@ -115,7 +114,13 @@ trait JQuery extends StObject {
   def off_typeaheadasyncreceive(
     events: typeaheadColonasyncreceive,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadasyncreceive(
+    events: typeaheadColonasyncreceive,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -132,12 +137,9 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
   def off_typeaheadasyncrequest(
     events: typeaheadColonasyncrequest,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   @JSName("off")
   def off_typeaheadasyncrequest(events: typeaheadColonasyncrequest, selector: String): JQuery = js.native
@@ -145,7 +147,13 @@ trait JQuery extends StObject {
   def off_typeaheadasyncrequest(
     events: typeaheadColonasyncrequest,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadasyncrequest(
+    events: typeaheadColonasyncrequest,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -162,12 +170,9 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadautocomplete(events: typeaheadColonautocomplete, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
   def off_typeaheadautocomplete(
     events: typeaheadColonautocomplete,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   @JSName("off")
   def off_typeaheadautocomplete(events: typeaheadColonautocomplete, selector: String): JQuery = js.native
@@ -175,7 +180,13 @@ trait JQuery extends StObject {
   def off_typeaheadautocomplete(
     events: typeaheadColonautocomplete,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadautocomplete(
+    events: typeaheadColonautocomplete,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -192,20 +203,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadchange(events: typeaheadColonchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadchange(
-    events: typeaheadColonchange,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadchange(events: typeaheadColonchange, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadchange(events: typeaheadColonchange, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadchange(
     events: typeaheadColonchange,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadchange(
+    events: typeaheadColonchange,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -222,20 +233,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadclose(events: typeaheadColonclose, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadclose(
-    events: typeaheadColonclose,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadclose(events: typeaheadColonclose, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadclose(events: typeaheadColonclose, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadclose(
     events: typeaheadColonclose,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadclose(
+    events: typeaheadColonclose,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -252,12 +263,9 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadcursorchange(events: typeaheadColoncursorchange, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
   def off_typeaheadcursorchange(
     events: typeaheadColoncursorchange,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   @JSName("off")
   def off_typeaheadcursorchange(events: typeaheadColoncursorchange, selector: String): JQuery = js.native
@@ -265,7 +273,13 @@ trait JQuery extends StObject {
   def off_typeaheadcursorchange(
     events: typeaheadColoncursorchange,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadcursorchange(
+    events: typeaheadColoncursorchange,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -282,20 +296,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadidle(events: typeaheadColonidle, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadidle(
-    events: typeaheadColonidle,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadidle(events: typeaheadColonidle, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadidle(events: typeaheadColonidle, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadidle(
     events: typeaheadColonidle,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadidle(
+    events: typeaheadColonidle,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -312,20 +326,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadopen(events: typeaheadColonopen, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadopen(
-    events: typeaheadColonopen,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadopen(events: typeaheadColonopen, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadopen(events: typeaheadColonopen, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadopen(
     events: typeaheadColonopen,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadopen(
+    events: typeaheadColonopen,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -342,20 +356,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadrender(events: typeaheadColonrender, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadrender(
-    events: typeaheadColonrender,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadrender(events: typeaheadColonrender, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadrender(events: typeaheadColonrender, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadrender(
     events: typeaheadColonrender,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadrender(
+    events: typeaheadColonrender,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   /**
     * Remove an event handler.
@@ -372,20 +386,20 @@ trait JQuery extends StObject {
     * @param handler A handler function previously attached for the event(s), or the special value false.
     */
   @JSName("off")
-  def off_typeaheadselect(events: typeaheadColonselect, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
-  @JSName("off")
-  def off_typeaheadselect(
-    events: typeaheadColonselect,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
-  ): JQuery = js.native
+  def off_typeaheadselect(events: typeaheadColonselect, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
   @JSName("off")
   def off_typeaheadselect(events: typeaheadColonselect, selector: String): JQuery = js.native
   @JSName("off")
   def off_typeaheadselect(
     events: typeaheadColonselect,
     selector: String,
-    handler: js.Function1[/* eventObject */ JQueryEventObject, _]
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
+  ): JQuery = js.native
+  @JSName("off")
+  def off_typeaheadselect(
+    events: typeaheadColonselect,
+    selector: Unit,
+    handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]
   ): JQuery = js.native
   
   /**
@@ -399,7 +413,7 @@ trait JQuery extends StObject {
   def on_typeaheadactive(
     events: typeaheadColonactive,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:active event to the selected elements.
@@ -410,7 +424,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadactive(
     events: typeaheadColonactive,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:active event to the selected elements.
@@ -425,7 +439,7 @@ trait JQuery extends StObject {
     events: typeaheadColonactive,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:active event to the selected elements.
@@ -438,7 +452,7 @@ trait JQuery extends StObject {
   def on_typeaheadactive(
     events: typeaheadColonactive,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asynccancel event to the selected elements.
@@ -451,7 +465,7 @@ trait JQuery extends StObject {
   def on_typeaheadasynccancel(
     events: typeaheadColonasynccancel,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asynccancel event to the selected elements.
@@ -462,7 +476,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadasynccancel(
     events: typeaheadColonasynccancel,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asynccancel event to the selected elements.
@@ -477,7 +491,7 @@ trait JQuery extends StObject {
     events: typeaheadColonasynccancel,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asynccancel event to the selected elements.
@@ -490,7 +504,7 @@ trait JQuery extends StObject {
   def on_typeaheadasynccancel(
     events: typeaheadColonasynccancel,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncreceive event to the selected elements.
@@ -503,7 +517,7 @@ trait JQuery extends StObject {
   def on_typeaheadasyncreceive(
     events: typeaheadColonasyncreceive,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncreceive event to the selected elements.
@@ -514,7 +528,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadasyncreceive(
     events: typeaheadColonasyncreceive,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncreceive event to the selected elements.
@@ -529,7 +543,7 @@ trait JQuery extends StObject {
     events: typeaheadColonasyncreceive,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncreceive event to the selected elements.
@@ -542,7 +556,7 @@ trait JQuery extends StObject {
   def on_typeaheadasyncreceive(
     events: typeaheadColonasyncreceive,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncrequest event to the selected elements.
@@ -555,7 +569,7 @@ trait JQuery extends StObject {
   def on_typeaheadasyncrequest(
     events: typeaheadColonasyncrequest,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncrequest event to the selected elements.
@@ -566,7 +580,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadasyncrequest(
     events: typeaheadColonasyncrequest,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncrequest event to the selected elements.
@@ -581,7 +595,7 @@ trait JQuery extends StObject {
     events: typeaheadColonasyncrequest,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:asyncrequest event to the selected elements.
@@ -594,7 +608,7 @@ trait JQuery extends StObject {
   def on_typeaheadasyncrequest(
     events: typeaheadColonasyncrequest,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:autocomplete event to the selected elements.
@@ -607,7 +621,7 @@ trait JQuery extends StObject {
   def on_typeaheadautocomplete(
     events: typeaheadColonautocomplete,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:autocomplete event to the selected elements.
@@ -618,7 +632,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadautocomplete(
     events: typeaheadColonautocomplete,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:autocomplete event to the selected elements.
@@ -633,7 +647,7 @@ trait JQuery extends StObject {
     events: typeaheadColonautocomplete,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:autocomplete event to the selected elements.
@@ -646,7 +660,7 @@ trait JQuery extends StObject {
   def on_typeaheadautocomplete(
     events: typeaheadColonautocomplete,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:change event to the selected elements.
@@ -659,7 +673,7 @@ trait JQuery extends StObject {
   def on_typeaheadchange(
     events: typeaheadColonchange,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:change event to the selected elements.
@@ -670,7 +684,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadchange(
     events: typeaheadColonchange,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:change event to the selected elements.
@@ -685,7 +699,7 @@ trait JQuery extends StObject {
     events: typeaheadColonchange,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:change event to the selected elements.
@@ -698,7 +712,7 @@ trait JQuery extends StObject {
   def on_typeaheadchange(
     events: typeaheadColonchange,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:close event to the selected elements.
@@ -711,7 +725,7 @@ trait JQuery extends StObject {
   def on_typeaheadclose(
     events: typeaheadColonclose,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:close event to the selected elements.
@@ -722,7 +736,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadclose(
     events: typeaheadColonclose,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:close event to the selected elements.
@@ -737,7 +751,7 @@ trait JQuery extends StObject {
     events: typeaheadColonclose,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:close event to the selected elements.
@@ -750,7 +764,7 @@ trait JQuery extends StObject {
   def on_typeaheadclose(
     events: typeaheadColonclose,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:cursorchange event to the selected elements.
@@ -763,7 +777,7 @@ trait JQuery extends StObject {
   def on_typeaheadcursorchange(
     events: typeaheadColoncursorchange,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:cursorchange event to the selected elements.
@@ -774,7 +788,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadcursorchange(
     events: typeaheadColoncursorchange,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:cursorchange event to the selected elements.
@@ -789,7 +803,7 @@ trait JQuery extends StObject {
     events: typeaheadColoncursorchange,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:cursorchange event to the selected elements.
@@ -802,7 +816,7 @@ trait JQuery extends StObject {
   def on_typeaheadcursorchange(
     events: typeaheadColoncursorchange,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:idle event to the selected elements.
@@ -815,7 +829,7 @@ trait JQuery extends StObject {
   def on_typeaheadidle(
     events: typeaheadColonidle,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:idle event to the selected elements.
@@ -826,7 +840,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadidle(
     events: typeaheadColonidle,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:idle event to the selected elements.
@@ -841,7 +855,7 @@ trait JQuery extends StObject {
     events: typeaheadColonidle,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:idle event to the selected elements.
@@ -854,7 +868,7 @@ trait JQuery extends StObject {
   def on_typeaheadidle(
     events: typeaheadColonidle,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:open event to the selected elements.
@@ -867,7 +881,7 @@ trait JQuery extends StObject {
   def on_typeaheadopen(
     events: typeaheadColonopen,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:open event to the selected elements.
@@ -878,7 +892,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadopen(
     events: typeaheadColonopen,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:open event to the selected elements.
@@ -893,7 +907,7 @@ trait JQuery extends StObject {
     events: typeaheadColonopen,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:open event to the selected elements.
@@ -906,7 +920,7 @@ trait JQuery extends StObject {
   def on_typeaheadopen(
     events: typeaheadColonopen,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:render event to the selected elements.
@@ -919,7 +933,7 @@ trait JQuery extends StObject {
   def on_typeaheadrender(
     events: typeaheadColonrender,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:render event to the selected elements.
@@ -930,7 +944,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadrender(
     events: typeaheadColonrender,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:render event to the selected elements.
@@ -945,7 +959,7 @@ trait JQuery extends StObject {
     events: typeaheadColonrender,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:render event to the selected elements.
@@ -958,7 +972,7 @@ trait JQuery extends StObject {
   def on_typeaheadrender(
     events: typeaheadColonrender,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:select event to the selected elements.
@@ -971,7 +985,7 @@ trait JQuery extends StObject {
   def on_typeaheadselect(
     events: typeaheadColonselect,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:select event to the selected elements.
@@ -982,7 +996,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_typeaheadselect(
     events: typeaheadColonselect,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:select event to the selected elements.
@@ -997,7 +1011,7 @@ trait JQuery extends StObject {
     events: typeaheadColonselect,
     selector: String,
     data: js.Any,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   /**
     * Attach an event handler function for typeahead:select event to the selected elements.
@@ -1010,7 +1024,7 @@ trait JQuery extends StObject {
   def on_typeaheadselect(
     events: typeaheadColonselect,
     selector: String,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   
   /**

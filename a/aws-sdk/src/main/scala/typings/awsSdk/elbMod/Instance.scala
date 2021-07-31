@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
   /**
     * The instance ID.
     */
-  var InstanceId: js.UndefOr[typings.awsSdk.elbMod.InstanceId] = js.native
+  var InstanceId: js.UndefOr[typings.awsSdk.elbMod.InstanceId] = js.undefined
 }
 object Instance {
   

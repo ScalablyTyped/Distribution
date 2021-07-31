@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionFilterResultMetadata extends StObject {
   
   /**
     * The metadata items for the category
     */
-  var metadataItems: js.Array[MetadataItem] = js.native
+  var metadataItems: js.Array[MetadataItem]
   
   /**
     * Defines the category of metadata items
     */
-  var metadataType: String = js.native
+  var metadataType: String
 }
 object ExtensionFilterResultMetadata {
   

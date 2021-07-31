@@ -5,21 +5,21 @@ import typings.ebml.ebmlStrings.i
 import typings.ebml.ebmlStrings.u
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.ebml.mod.EBMLTagSchema because Already inherited */ @js.native
-trait EBMLNumericTagSchema extends EBMLDefaultableTagSchema {
+- typings.ebml.mod.EBMLTagSchema because Already inherited */ trait EBMLNumericTagSchema
+  extends StObject
+     with EBMLDefaultableTagSchema {
   
   var br: js.UndefOr[
     String | (js.Tuple2[String, String]) | (js.Tuple3[String, String, String]) | (js.Tuple4[String, String, String, String])
-  ] = js.native
+  ] = js.undefined
   
-  var range: String = js.native
+  var range: String
   
   @JSName("type")
-  var type_EBMLNumericTagSchema: u | i | f = js.native
+  var type_EBMLNumericTagSchema: u | i | f
 }
 object EBMLNumericTagSchema {
   

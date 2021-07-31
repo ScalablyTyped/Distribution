@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.layout
 import typings.openui5.sap.ui.core.LayoutData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SplitterLayoutData extends LayoutData {
+trait SplitterLayoutData
+  extends StObject
+     with LayoutData {
   
   /**
     * Gets current value of property <code>minSize</code>.Sets the minimum size of the splitter content in

@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "GameObjects.GameObjectFactory")
 @js.native
 class GameObjectFactory protected ()
-  extends typings.phaser.Phaser.GameObjects.GameObjectFactory {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.GameObjectFactory {
   /**
     * 
     * @param scene The Scene to which this Game Object Factory belongs.
@@ -24,6 +24,10 @@ class GameObjectFactory protected ()
   def this(scene: Scene) = this()
 }
 object GameObjectFactory {
+  
+  @JSImport("phaser", "GameObjects.GameObjectFactory")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Static method called directly by the Game Object factory functions.
@@ -34,9 +38,8 @@ object GameObjectFactory {
     * @param factoryFunction The constructor function to be called when you invoke to the Phaser.Scene.add method.
     */
   /* static member */
-  @JSImport("phaser", "GameObjects.GameObjectFactory.register")
-  @js.native
-  def register(factoryType: String, factoryFunction: js.Function): Unit = js.native
+  @scala.inline
+  def register(factoryType: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(factoryType.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Static method called directly by the Game Object factory functions.
@@ -45,7 +48,6 @@ object GameObjectFactory {
     * @param factoryType The key of the factory that you want to remove from the GameObjectFactory.
     */
   /* static member */
-  @JSImport("phaser", "GameObjects.GameObjectFactory.remove")
-  @js.native
-  def remove(factoryType: String): Unit = js.native
+  @scala.inline
+  def remove(factoryType: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(factoryType.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

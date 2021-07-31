@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Target.CreateBrowserContextRequest
 import typings.devtoolsProtocol.mod.Protocol.Target.CreateBrowserContextResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCreateBrowserContextResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[CreateBrowserContextRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[CreateBrowserContextRequest]]
   
-  var returnType: CreateBrowserContextResponse = js.native
+  var returnType: CreateBrowserContextResponse
 }
 object ReturnTypeCreateBrowserContextResponse {
   

@@ -5,61 +5,57 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generatorCommonMod {
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "copyAndReplaceAll")
+  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def copyAndReplaceAll(
     srcPath: String,
     destPath: String,
     relativeDestDir: String,
     replacements: Replacements,
     alwaysOverwrite: Boolean
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndReplaceAll")(srcPath.asInstanceOf[js.Any], destPath.asInstanceOf[js.Any], relativeDestDir.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], alwaysOverwrite.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "copyAndReplaceWithChangedCallback")
-  @js.native
-  def copyAndReplaceWithChangedCallback(srcPath: String, destRoot: String, relativeDestPath: String): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "copyAndReplaceWithChangedCallback")
-  @js.native
+  @scala.inline
+  def copyAndReplaceWithChangedCallback(srcPath: String, destRoot: String, relativeDestPath: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndReplaceWithChangedCallback")(srcPath.asInstanceOf[js.Any], destRoot.asInstanceOf[js.Any], relativeDestPath.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def copyAndReplaceWithChangedCallback(
     srcPath: String,
     destRoot: String,
     relativeDestPath: String,
-    replacements: js.UndefOr[scala.Nothing],
+    replacements: Unit,
     alwaysOverwrite: Boolean
-  ): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "copyAndReplaceWithChangedCallback")
-  @js.native
-  def copyAndReplaceWithChangedCallback(srcPath: String, destRoot: String, relativeDestPath: String, replacements: Record[String, String]): js.Promise[Unit] = js.native
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "copyAndReplaceWithChangedCallback")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndReplaceWithChangedCallback")(srcPath.asInstanceOf[js.Any], destRoot.asInstanceOf[js.Any], relativeDestPath.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], alwaysOverwrite.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def copyAndReplaceWithChangedCallback(srcPath: String, destRoot: String, relativeDestPath: String, replacements: Record[String, String]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndReplaceWithChangedCallback")(srcPath.asInstanceOf[js.Any], destRoot.asInstanceOf[js.Any], relativeDestPath.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def copyAndReplaceWithChangedCallback(
     srcPath: String,
     destRoot: String,
     relativeDestPath: String,
     replacements: Record[String, String],
     alwaysOverwrite: Boolean
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAndReplaceWithChangedCallback")(srcPath.asInstanceOf[js.Any], destRoot.asInstanceOf[js.Any], relativeDestPath.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any], alwaysOverwrite.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "createDir")
-  @js.native
-  def createDir(destPath: String): Unit = js.native
+  @scala.inline
+  def createDir(destPath: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("createDir")(destPath.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@react-native-windows/cli/lib-commonjs/generator-common", "resolveContents")
-  @js.native
-  def resolveContents(srcPath: String, replacements: Replacements): String = js.native
+  @scala.inline
+  def resolveContents(srcPath: String, replacements: Replacements): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveContents")(srcPath.asInstanceOf[js.Any], replacements.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Replacements
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var regExpPatternsToRemove: js.UndefOr[js.Array[RegExp]] = js.native
+    var regExpPatternsToRemove: js.UndefOr[js.Array[RegExp]] = js.undefined
     
-    var useMustache: js.UndefOr[Boolean] = js.native
+    var useMustache: js.UndefOr[Boolean] = js.undefined
   }
   object Replacements {
     

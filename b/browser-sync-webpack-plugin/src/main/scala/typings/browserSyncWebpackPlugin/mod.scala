@@ -5,47 +5,47 @@ import typings.std.Error
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("browser-sync-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Plugin {
+  class ^ protected ()
+    extends StObject
+       with Plugin {
     def this(browserSyncOptions: typings.browserSync.mod.Options) = this()
     def this(browserSyncOptions: typings.browserSync.mod.Options, pluginOptions: Options) = this()
   }
   
   type BrowserSyncPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * BrowserSync instance init callback.
       * @defaultValue undefined
       */
-    var callback: js.UndefOr[js.Function2[/* error */ Error, /* bs */ BrowserSyncInstance, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* error */ Error, /* bs */ BrowserSyncInstance, Unit]] = js.undefined
     
     /**
       * allows BrowserSync to inject changes inplace instead of reloading the page when changed
       * chunks are all CSS files.
       * @defaultValue false
       */
-    var injectCss: js.UndefOr[Boolean] = js.native
+    var injectCss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * BrowserSync instance name.
       * @defaultValue 'bs-webpack-plugin'
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Should BrowserSync handle reloads?
       * @defaultValue true
       */
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

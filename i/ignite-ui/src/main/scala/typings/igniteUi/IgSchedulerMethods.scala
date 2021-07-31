@@ -3,51 +3,49 @@ package typings.igniteUi
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSchedulerMethods extends StObject {
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales into the widget element to the language specified in [options.language](ui.igscheduler#options:language)
     * Note that this method is for rare scenarios, see [language](ui.igscheduler#options:language) or [locale](ui.igscheduler#options:locale) option setter
     */
-  def changeLocale(): Unit = js.native
+  def changeLocale(): Unit
   
   /**
     * Creates an appointment and adds it to the appointment collection
     *
     * @param appointment appointment
     */
-  def createAppointment(appointment: js.Object): js.Object = js.native
+  def createAppointment(appointment: js.Object): js.Object
   
   /**
     * Gets reference to the date range UI button.
     */
-  def dateRangeButton(): String = js.native
+  def dateRangeButton(): String
   
   /**
     * Deletes appointment from the appointment collection
     *
     * @param appointment appointment
     */
-  def deleteAppointment(appointment: js.Object): js.Object = js.native
+  def deleteAppointment(appointment: js.Object): js.Object
   
   /**
     * Destroys the widget
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Deletes appointment from the appointment collection
@@ -55,7 +53,7 @@ trait IgSchedulerMethods extends StObject {
     * @param appointment appointment
     * @param updateAppoinment updateAppoinment
     */
-  def editAppointment(appointment: js.Object, updateAppoinment: js.Object): js.Object = js.native
+  def editAppointment(appointment: js.Object, updateAppoinment: js.Object): js.Object
   
   /**
     * Gets reference to a collection of all appointments for the given time range
@@ -63,27 +61,27 @@ trait IgSchedulerMethods extends StObject {
     * @param start Start date.
     * @param end End date.
     */
-  def getAppointmentsInRange(start: Date, end: Date): js.Object = js.native
+  def getAppointmentsInRange(start: Date, end: Date): js.Object
   
   /**
     * Gets reference to the jQuery calendar UI control.
     */
-  def getCalendar(): String = js.native
+  def getCalendar(): String
   
   /**
     * Gets reference to the next UI button.
     */
-  def nextButton(): String = js.native
+  def nextButton(): String
   
   /**
     * Gets reference to the previous UI button.
     */
-  def previousButton(): String = js.native
+  def previousButton(): String
   
   /**
     * Gets reference to the today UI button.
     */
-  def todayButton(): String = js.native
+  def todayButton(): String
 }
 object IgSchedulerMethods {
   

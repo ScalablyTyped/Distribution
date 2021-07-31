@@ -2,24 +2,22 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A mobile suspicious activity alert. Derived from audit logs.
   */
-@js.native
 trait SchemaSuspiciousActivity extends StObject {
   
   /**
     * The email of the user this alert was created for.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The list of security events.
     */
-  var events: js.UndefOr[js.Array[SchemaSuspiciousActivitySecurityDetail]] = js.native
+  var events: js.UndefOr[js.Array[SchemaSuspiciousActivitySecurityDetail]] = js.undefined
 }
 object SchemaSuspiciousActivity {
   

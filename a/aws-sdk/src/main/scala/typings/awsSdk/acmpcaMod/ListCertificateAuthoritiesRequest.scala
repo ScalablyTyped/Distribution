@@ -2,26 +2,24 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCertificateAuthoritiesRequest extends StObject {
   
   /**
     * Use this parameter when paginating results to specify the maximum number of items to return in the response on each page. If additional items exist beyond the number you specify, the NextToken element is sent in the response. Use this NextToken value in a subsequent request to retrieve additional items.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.acmpcaMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.acmpcaMod.MaxResults] = js.undefined
   
   /**
     * Use this parameter when paginating results in a subsequent request after you receive a response with truncated results. Set it to the value of the NextToken parameter from the response you just received.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.acmpcaMod.NextToken] = js.undefined
   
   /**
     * Use this parameter to filter the returned set of certificate authorities based on their owner. The default is SELF.
     */
-  var ResourceOwner: js.UndefOr[typings.awsSdk.acmpcaMod.ResourceOwner] = js.native
+  var ResourceOwner: js.UndefOr[typings.awsSdk.acmpcaMod.ResourceOwner] = js.undefined
 }
 object ListCertificateAuthoritiesRequest {
   

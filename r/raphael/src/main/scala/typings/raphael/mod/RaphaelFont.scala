@@ -5,20 +5,18 @@ import typings.raphael.anon.PartialRaphaelFontGlyph
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelFont extends StObject {
   
   /** The font faces that are available in this font. */
-  var face: PartialRaphaelFontFace = js.native
+  var face: PartialRaphaelFontFace
   
   /** The glyphs that are available in this font. */
-  var glyphs: Record[String, PartialRaphaelFontGlyph] = js.native
+  var glyphs: Record[String, PartialRaphaelFontGlyph]
   
   /** The width of this font. */
-  var w: Double = js.native
+  var w: Double
 }
 object RaphaelFont {
   

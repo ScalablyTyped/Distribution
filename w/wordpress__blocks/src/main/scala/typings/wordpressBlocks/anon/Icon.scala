@@ -3,15 +3,13 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.mod.BlockIcon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: js.UndefOr[BlockIcon] = js.native
+  var icon: js.UndefOr[BlockIcon] = js.undefined
   
-  var title: String = js.native
+  var title: String
 }
 object Icon {
   

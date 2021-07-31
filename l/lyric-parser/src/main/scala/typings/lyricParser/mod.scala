@@ -5,14 +5,15 @@ import typings.lyricParser.anon.LineNum
 import typings.lyricParser.anon.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("lyric-parser", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Lyric {
+  class ^ protected ()
+    extends StObject
+       with Lyric {
     def this(lrc: String, handler: js.Function1[/* params */ LineNum, Unit]) = this()
   }
   

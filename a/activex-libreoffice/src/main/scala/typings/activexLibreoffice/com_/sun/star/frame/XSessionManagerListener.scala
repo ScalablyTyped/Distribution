@@ -5,11 +5,11 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XSessionManagerListener extends XEventListener {
+trait XSessionManagerListener
+  extends StObject
+     with XEventListener {
   
   /**
     * approveInteraction is called when an outstanding interaction request was processed by the session manager
@@ -17,10 +17,10 @@ trait XSessionManagerListener extends XEventListener {
     * @see XSessionManagerClient
     * @see XSessionManagerClient.interactionDone()
     */
-  def approveInteraction(bInteractionGranted: Boolean): Unit = js.native
+  def approveInteraction(bInteractionGranted: Boolean): Unit
   
   /** returns true, if a session was restored */
-  def doRestore(): Boolean = js.native
+  def doRestore(): Boolean
   
   /**
     * doSave gets called when a save event was issued by the session manager the listener should do what is necessary to restore the current state of the
@@ -35,13 +35,13 @@ trait XSessionManagerListener extends XEventListener {
     * @see XSessionManagerClient
     * @see XSessionManagerClient.saveDone()
     */
-  def doSave(bShutdown: Boolean, bCancelable: Boolean): Unit = js.native
+  def doSave(bShutdown: Boolean, bCancelable: Boolean): Unit
   
   /**
     * shutdownCanceled is called when a shutdown was canceled by the user The listener can cancel its saving operations. No further interaction is necessary
     * and further calls on the session manager client service object will be ignored.
     */
-  def shutdownCanceled(): Unit = js.native
+  def shutdownCanceled(): Unit
 }
 object XSessionManagerListener {
   

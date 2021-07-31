@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryFilter extends StObject {
   
   /**
     * The prefix that an object must have to be included in the inventory results.
     */
-  var Prefix: typings.awsSdk.s3Mod.Prefix = js.native
+  var Prefix: typings.awsSdk.s3Mod.Prefix
 }
 object InventoryFilter {
   

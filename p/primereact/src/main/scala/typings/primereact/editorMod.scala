@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editorMod {
@@ -23,32 +22,31 @@ object editorMod {
     def this(props: EditorProps, context: js.Any) = this()
   }
   
-  @js.native
   trait EditorProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var formats: js.UndefOr[js.Array[_]] = js.native
+    var formats: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var headerTemplate: js.UndefOr[Element] = js.native
+    var headerTemplate: js.UndefOr[Element] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var modules: js.UndefOr[js.Any] = js.native
+    var modules: js.UndefOr[js.Any] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ OldRange, Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* e */ OldRange, Unit]] = js.undefined
     
-    var onTextChange: js.UndefOr[js.Function1[/* e */ HtmlValue, Unit]] = js.native
+    var onTextChange: js.UndefOr[js.Function1[/* e */ HtmlValue, Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object EditorProps {
     
@@ -68,7 +66,7 @@ object editorMod {
       def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
       
       @scala.inline
-      def setFormats(value: js.Array[_]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
+      def setFormats(value: js.Array[js.Any]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFormatsUndefined: Self = StObject.set(x, "formats", js.undefined)

@@ -2,27 +2,25 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxRefs extends StObject {
   
-  var bg: JQuery = js.native
+  var bg: JQuery
   
-  var caption: JQuery = js.native
+  var caption: JQuery
   
-  var container: JQuery = js.native
+  var container: JQuery
   
-  var infobar: JQuery = js.native
+  var infobar: JQuery
   
-  var inner: JQuery = js.native
+  var inner: JQuery
   
-  var navigation: JQuery = js.native
+  var navigation: JQuery
   
-  var stage: JQuery = js.native
+  var stage: JQuery
   
-  var toolbar: JQuery = js.native
+  var toolbar: JQuery
 }
 object FancyBoxRefs {
   

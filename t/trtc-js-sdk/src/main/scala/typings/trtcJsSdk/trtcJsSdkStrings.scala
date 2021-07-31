@@ -6,74 +6,94 @@ import typings.trtcJsSdk.mod.ScreenProfileString
 import typings.trtcJsSdk.mod.VideoProfileString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trtcJsSdkStrings {
   
   @js.native
   sealed trait `1080p`
-    extends ScreenProfileString
+    extends StObject
+       with ScreenProfileString
        with VideoProfileString
   @scala.inline
   def `1080p`: `1080p` = "1080p".asInstanceOf[`1080p`]
   
   @js.native
-  sealed trait `1080p_2` extends ScreenProfileString
+  sealed trait `1080p_2`
+    extends StObject
+       with ScreenProfileString
   @scala.inline
   def `1080p_2`: `1080p_2` = "1080p_2".asInstanceOf[`1080p_2`]
   
   @js.native
-  sealed trait `120p` extends VideoProfileString
+  sealed trait `120p`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `120p`: `120p` = "120p".asInstanceOf[`120p`]
   
   @js.native
-  sealed trait `1440p` extends VideoProfileString
+  sealed trait `1440p`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `1440p`: `1440p` = "1440p".asInstanceOf[`1440p`]
   
   @js.native
-  sealed trait `180p` extends VideoProfileString
+  sealed trait `180p`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `180p`: `180p` = "180p".asInstanceOf[`180p`]
   
   @js.native
-  sealed trait `240p` extends VideoProfileString
+  sealed trait `240p`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `240p`: `240p` = "240p".asInstanceOf[`240p`]
   
   @js.native
-  sealed trait `360p` extends VideoProfileString
+  sealed trait `360p`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `360p`: `360p` = "360p".asInstanceOf[`360p`]
   
   @js.native
   sealed trait `480p`
-    extends ScreenProfileString
+    extends StObject
+       with ScreenProfileString
        with VideoProfileString
   @scala.inline
   def `480p`: `480p` = "480p".asInstanceOf[`480p`]
   
   @js.native
-  sealed trait `480p_2` extends ScreenProfileString
+  sealed trait `480p_2`
+    extends StObject
+       with ScreenProfileString
   @scala.inline
   def `480p_2`: `480p_2` = "480p_2".asInstanceOf[`480p_2`]
   
   @js.native
-  sealed trait `4K` extends VideoProfileString
+  sealed trait `4K`
+    extends StObject
+       with VideoProfileString
   @scala.inline
   def `4K`: `4K` = "4K".asInstanceOf[`4K`]
   
   @js.native
   sealed trait `720p`
-    extends ScreenProfileString
+    extends StObject
+       with ScreenProfileString
        with VideoProfileString
   @scala.inline
   def `720p`: `720p` = "720p".asInstanceOf[`720p`]
   
   @js.native
-  sealed trait `720p_2` extends ScreenProfileString
+  sealed trait `720p_2`
+    extends StObject
+       with ScreenProfileString
   @scala.inline
   def `720p_2`: `720p_2` = "720p_2".asInstanceOf[`720p_2`]
   
@@ -83,17 +103,23 @@ object trtcJsSdkStrings {
   def Asterisk: Asterisk = "*".asInstanceOf[Asterisk]
   
   @js.native
-  sealed trait CONNECTED extends ConnectionState
+  sealed trait CONNECTED
+    extends StObject
+       with ConnectionState
   @scala.inline
   def CONNECTED: CONNECTED = "CONNECTED".asInstanceOf[CONNECTED]
   
   @js.native
-  sealed trait CONNECTING extends ConnectionState
+  sealed trait CONNECTING
+    extends StObject
+       with ConnectionState
   @scala.inline
   def CONNECTING: CONNECTING = "CONNECTING".asInstanceOf[CONNECTING]
   
   @js.native
-  sealed trait DISCONNECTED extends ConnectionState
+  sealed trait DISCONNECTED
+    extends StObject
+       with ConnectionState
   @scala.inline
   def DISCONNECTED: DISCONNECTED = "DISCONNECTED".asInstanceOf[DISCONNECTED]
   
@@ -108,7 +134,9 @@ object trtcJsSdkStrings {
   def PLAYING: PLAYING = "PLAYING".asInstanceOf[PLAYING]
   
   @js.native
-  sealed trait RECONNECTING extends ConnectionState
+  sealed trait RECONNECTING
+    extends StObject
+       with ConnectionState
   @scala.inline
   def RECONNECTING: RECONNECTING = "RECONNECTING".asInstanceOf[RECONNECTING]
   
@@ -118,12 +146,16 @@ object trtcJsSdkStrings {
   def STOPPED: STOPPED = "STOPPED".asInstanceOf[STOPPED]
   
   @js.native
-  sealed trait anchor extends Role
+  sealed trait anchor
+    extends StObject
+       with Role
   @scala.inline
   def anchor: anchor = "anchor".asInstanceOf[anchor]
   
   @js.native
-  sealed trait audience extends Role
+  sealed trait audience
+    extends StObject
+       with Role
   @scala.inline
   def audience: audience = "audience".asInstanceOf[audience]
   

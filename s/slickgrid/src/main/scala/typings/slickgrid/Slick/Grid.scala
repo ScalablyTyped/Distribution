@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -115,7 +114,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Returns the active cell editor. If there is no actively edited cell, null is returned.
     * @return
     **/
-  def getCellEditor(): Editor[_] = js.native
+  def getCellEditor(): Editor[js.Any] = js.native
   
   /**
     * Returns a hash containing row and cell indexes from a standard W3C/jQuery event.
@@ -192,7 +191,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
   
   // #endregion Rendering
   // #region Editors
-  def getEditorLock(): EditorLock[_] = js.native
+  def getEditorLock(): EditorLock[js.Any] = js.native
   
   /**
     * todo: no docs
@@ -211,18 +210,18 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * @param columnId
     * @return
     **/
-  def getHeaderRowColumn(columnId: String): Column[_] = js.native
+  def getHeaderRowColumn(columnId: String): Column[js.Any] = js.native
   
   /**
     * Returns an object containing all of the Grid options set on the grid. See a list of Grid Options here.
     * @return
     **/
-  def getOptions(): GridOptions[_] = js.native
+  def getOptions(): GridOptions[js.Any] = js.native
   
   def getRenderedRange(): Viewport = js.native
-  def getRenderedRange(viewportTop: js.UndefOr[scala.Nothing], viewportLeft: Double): Viewport = js.native
   def getRenderedRange(viewportTop: Double): Viewport = js.native
   def getRenderedRange(viewportTop: Double, viewportLeft: Double): Viewport = js.native
+  def getRenderedRange(viewportTop: Unit, viewportLeft: Double): Viewport = js.native
   
   /**
     * Returns an array of row indices corresponding to the currently selected rows.
@@ -234,7 +233,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Returns the current SelectionModel. See here for more information about SelectionModels.
     * @return
     **/
-  def getSelectionModel(): SelectionModel[_, _] = js.native
+  def getSelectionModel(): SelectionModel[js.Any, js.Any] = js.native
   
   /**
     * todo: no docs or comments available
@@ -249,9 +248,9 @@ trait Grid[T /* <: SlickData */] extends StObject {
   def getTopPanel(): HTMLElement = js.native
   
   def getViewport(): Viewport = js.native
-  def getViewport(viewportTop: js.UndefOr[scala.Nothing], viewportLeft: Double): Viewport = js.native
   def getViewport(viewportTop: Double): Viewport = js.native
   def getViewport(viewportTop: Double, viewportLeft: Double): Viewport = js.native
+  def getViewport(viewportTop: Unit, viewportLeft: Double): Viewport = js.native
   
   /**
     * Accepts a row integer and a cell integer, scrolling the view to the row where row is its row index, and cell is its cell index. Optionally accepts a forceEdit boolean which, if true, will attempt to initiate the edit dialogue for the field in the specified cell.
@@ -467,7 +466,7 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * Unregisters a current selection model and registers a new one. See the definition of SelectionModel for more information.
     * @selectionModel A SelectionModel.
     **/
-  def setSelectionModel(selectionModel: SelectionModel[T, _]): Unit = js.native
+  def setSelectionModel(selectionModel: SelectionModel[T, js.Any]): Unit = js.native
   
   /**
     * Accepts a columnId string and an ascending boolean. Applies a sort glyph in either ascending or descending form to the header of the column. Note that this does not actually sort the column. It only adds the sort glyph to the header.
@@ -499,9 +498,9 @@ trait Grid[T /* <: SlickData */] extends StObject {
     * @param toolTip New column tooltip.
     **/
   def updateColumnHeader(columnId: String): Unit = js.native
-  def updateColumnHeader(columnId: String, title: js.UndefOr[scala.Nothing], toolTip: String): Unit = js.native
   def updateColumnHeader(columnId: String, title: String): Unit = js.native
   def updateColumnHeader(columnId: String, title: String, toolTip: String): Unit = js.native
+  def updateColumnHeader(columnId: String, title: Unit, toolTip: String): Unit = js.native
   
   def updateRow(row: Double): Unit = js.native
   

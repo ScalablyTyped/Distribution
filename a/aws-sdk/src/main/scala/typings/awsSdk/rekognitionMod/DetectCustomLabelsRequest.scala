@@ -2,28 +2,26 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectCustomLabelsRequest extends StObject {
   
-  var Image: typings.awsSdk.rekognitionMod.Image = js.native
+  var Image: typings.awsSdk.rekognitionMod.Image
   
   /**
     * Maximum number of results you want the service to return in the response. The service returns the specified number of highest confidence labels ranked from highest confidence to lowest.
     */
-  var MaxResults: js.UndefOr[UInteger] = js.native
+  var MaxResults: js.UndefOr[UInteger] = js.undefined
   
   /**
     * Specifies the minimum confidence level for the labels to return. Amazon Rekognition doesn't return any labels with a confidence lower than this specified value. If you specify a value of 0, all labels are return, regardless of the default thresholds that the model version applies.
     */
-  var MinConfidence: js.UndefOr[Percent] = js.native
+  var MinConfidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * The ARN of the model version that you want to use.
     */
-  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn = js.native
+  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn
 }
 object DetectCustomLabelsRequest {
   

@@ -9,7 +9,6 @@ import typings.three.loadingManagerMod.LoadingManager
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageBitmapLoaderMod {
@@ -22,33 +21,10 @@ object imageBitmapLoaderMod {
     val isImageBitmapLoader: `true` = js.native
     
     def load(url: String): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.UndefOr[scala.Nothing],
-      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
     def load(url: String, onLoad: js.Function1[/* response */ ImageBitmap, Unit]): js.Any = js.native
     def load(
       url: String,
       onLoad: js.Function1[/* response */ ImageBitmap, Unit],
-      onProgress: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* event */ ErrorEvent, Unit]
-    ): js.Any = js.native
-    def load(
-      url: String,
-      onLoad: js.Function1[/* response */ ImageBitmap, Unit],
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
     ): js.Any = js.native
     def load(
@@ -57,6 +33,24 @@ object imageBitmapLoaderMod {
       onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
       onError: js.Function1[/* event */ ErrorEvent, Unit]
     ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: js.Function1[/* response */ ImageBitmap, Unit],
+      onProgress: Unit,
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit]
+    ): js.Any = js.native
+    def load(
+      url: String,
+      onLoad: Unit,
+      onProgress: js.Function1[/* request */ ProgressEvent[EventTarget], Unit],
+      onError: js.Function1[/* event */ ErrorEvent, Unit]
+    ): js.Any = js.native
+    def load(url: String, onLoad: Unit, onProgress: Unit, onError: js.Function1[/* event */ ErrorEvent, Unit]): js.Any = js.native
     
     /**
     	 * @default { premultiplyAlpha: 'none' }

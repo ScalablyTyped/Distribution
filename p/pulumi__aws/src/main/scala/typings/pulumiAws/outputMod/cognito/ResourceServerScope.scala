@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceServerScope extends StObject {
   
   /**
     * The scope description.
     */
-  var scopeDescription: String = js.native
+  var scopeDescription: String
   
   /**
     * The scope name.
     */
-  var scopeName: String = js.native
+  var scopeName: String
 }
 object ResourceServerScope {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsExportDestination extends StObject {
   
   /**
     * A destination signifying output to an S3 bucket.
     */
-  var S3BucketDestination: AnalyticsS3BucketDestination = js.native
+  var S3BucketDestination: AnalyticsS3BucketDestination
 }
 object AnalyticsExportDestination {
   

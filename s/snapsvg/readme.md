@@ -11,8 +11,8 @@ JavaScript Vector Library
 | Full name          | snapsvg |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 76 |
-| # downloads        | 5028387 |
+| # dependents       | 78 |
+| # downloads        | 5042163 |
 | # stars            | 12 |
 
 ## Links

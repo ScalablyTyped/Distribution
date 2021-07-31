@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspiciousActivitySecurityDetail extends StObject {
   
   /** Required. The device ID. */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /** The model of the device. */
-  var deviceModel: js.UndefOr[String] = js.native
+  var deviceModel: js.UndefOr[String] = js.undefined
   
   /** The device property which was changed. */
-  var deviceProperty: js.UndefOr[String] = js.native
+  var deviceProperty: js.UndefOr[String] = js.undefined
   
   /** The type of the device. */
-  var deviceType: js.UndefOr[String] = js.native
+  var deviceType: js.UndefOr[String] = js.undefined
   
   /** Required for iOS, empty for others. */
-  var iosVendorId: js.UndefOr[String] = js.native
+  var iosVendorId: js.UndefOr[String] = js.undefined
   
   /** The new value of the device property after the change. */
-  var newValue: js.UndefOr[String] = js.native
+  var newValue: js.UndefOr[String] = js.undefined
   
   /** The old value of the device property before the change. */
-  var oldValue: js.UndefOr[String] = js.native
+  var oldValue: js.UndefOr[String] = js.undefined
   
   /** The device resource ID. */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /** The serial number of the device. */
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
 }
 object SuspiciousActivitySecurityDetail {
   

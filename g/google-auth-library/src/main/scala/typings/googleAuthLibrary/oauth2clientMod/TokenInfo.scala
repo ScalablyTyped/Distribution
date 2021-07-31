@@ -2,10 +2,8 @@ package typings.googleAuthLibrary.oauth2clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenInfo extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait TokenInfo extends StObject {
     * first time that your application exchanges an authorization code for
     * tokens.
     */
-  var access_type: js.UndefOr[String] = js.native
+  var access_type: js.UndefOr[String] = js.undefined
   
   /**
     * The application that is the intended user of the access token.
     */
-  var aud: String = js.native
+  var aud: String
   
   /**
     * The client_id of the authorized presenter. This claim is only needed when
@@ -32,29 +30,29 @@ trait TokenInfo extends StObject {
     * application and Android app have a different client_id but share the same
     * project.
     */
-  var azp: js.UndefOr[String] = js.native
+  var azp: js.UndefOr[String] = js.undefined
   
   /**
     * The user's email address. This value may not be unique to this user and
     * is not suitable for use as a primary key. Provided only if your scope
     * included the email scope value.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * True if the user's e-mail address has been verified; otherwise false.
     */
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The datetime when the token becomes invalid.
     */
-  var expiry_date: Double = js.native
+  var expiry_date: Double
   
   /**
     * An array of scopes that the user granted access to.
     */
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
   
   /**
     * An identifier for the user, unique among all Google accounts and never
@@ -62,7 +60,7 @@ trait TokenInfo extends StObject {
     * time, but the sub value is never changed. Use sub within your application
     * as the unique-identifier key for the user.
     */
-  var sub: js.UndefOr[String] = js.native
+  var sub: js.UndefOr[String] = js.undefined
   
   /**
     * This value lets you correlate profile information from multiple Google
@@ -73,7 +71,7 @@ trait TokenInfo extends StObject {
     * is used to retrieve it. This enables multiple applications in the same
     * organization to correlate profile information.
     */
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
 }
 object TokenInfo {
   

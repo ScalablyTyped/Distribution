@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudshell/v1alpha1", "cloudshell_v1alpha1.Resource$Users$Environments$Publickeys")
@@ -34,7 +33,7 @@ class ResourceUsersEnvironmentsPublickeys protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaPublicKey] = js.native
   def create(callback: BodyResponseCallback[SchemaPublicKey]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPublicKey] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPublicKey] = js.native
   def create(params: ParamsResourceUsersEnvironmentsPublickeysCreate): GaxiosPromise[SchemaPublicKey] = js.native
   def create(
     params: ParamsResourceUsersEnvironmentsPublickeysCreate,
@@ -68,7 +67,7 @@ class ResourceUsersEnvironmentsPublickeys protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceUsersEnvironmentsPublickeysDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceUsersEnvironmentsPublickeysDelete,

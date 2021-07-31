@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "QueryStringQuery")
 @js.native
-class QueryStringQuery protected () extends Query {
+class QueryStringQuery protected ()
+  extends StObject
+     with Query {
   /*
     A query that is parsed using Lucene's default query parser.
     */
@@ -78,7 +79,7 @@ class QueryStringQuery protected () extends Query {
     field name.  For example, title^10, to give the title field a
     boost of 10.
     */
-  def fields(fieldNames: js.Array[_]): QueryStringQuery = js.native
+  def fields(fieldNames: js.Array[js.Any]): QueryStringQuery = js.native
   
   /*
     Sets the max number of term expansions for fuzzy queries.

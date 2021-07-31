@@ -6,7 +6,6 @@ import typings.apolloProtobufjs.mod.IType
 import typings.apolloProtobufjs.mod.TypeDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@apollo/protobufjs/light", "Type")
@@ -24,17 +23,19 @@ class Type protected ()
 /* static members */
 object Type {
   
+  @JSImport("@apollo/protobufjs/light", "Type")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Type decorator (TypeScript).
     * @param [typeName] Type name, defaults to the constructor's name
     * @returns Decorator function
     */
-  @JSImport("@apollo/protobufjs/light", "Type.d")
-  @js.native
-  def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](): TypeDecorator[T] = js.native
-  @JSImport("@apollo/protobufjs/light", "Type.d")
-  @js.native
-  def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = js.native
+  @scala.inline
+  def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")().asInstanceOf[TypeDecorator[T]]
+  @scala.inline
+  def d[T /* <: typings.apolloProtobufjs.mod.Message[T] */](typeName: String): TypeDecorator[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("d")(typeName.asInstanceOf[js.Any]).asInstanceOf[TypeDecorator[T]]
   
   /**
     * Creates a message type from a message type descriptor.
@@ -42,16 +43,14 @@ object Type {
     * @param json Message type descriptor
     * @returns Created message type
     */
-  @JSImport("@apollo/protobufjs/light", "Type.fromJSON")
-  @js.native
-  def fromJSON(name: String, json: IType): typings.apolloProtobufjs.mod.Type = js.native
+  @scala.inline
+  def fromJSON(name: String, json: IType): typings.apolloProtobufjs.mod.Type = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(name.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[typings.apolloProtobufjs.mod.Type]
   
   /**
     * Generates a constructor function for the specified type.
     * @param mtype Message type
     * @returns Codegen instance
     */
-  @JSImport("@apollo/protobufjs/light", "Type.generateConstructor")
-  @js.native
-  def generateConstructor(mtype: typings.apolloProtobufjs.mod.Type): Codegen = js.native
+  @scala.inline
+  def generateConstructor(mtype: typings.apolloProtobufjs.mod.Type): Codegen = ^.asInstanceOf[js.Dynamic].applyDynamic("generateConstructor")(mtype.asInstanceOf[js.Any]).asInstanceOf[Codegen]
 }

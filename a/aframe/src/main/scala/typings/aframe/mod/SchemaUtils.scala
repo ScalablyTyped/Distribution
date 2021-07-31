@@ -2,15 +2,13 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUtils extends StObject {
   
-  def isSingleProperty(schema: Schema_[js.Object]): Boolean = js.native
+  def isSingleProperty(schema: Schema_[js.Object]): Boolean
   
-  def process(schema: Schema_[js.Object]): Boolean = js.native
+  def process(schema: Schema_[js.Object]): Boolean
 }
 object SchemaUtils {
   

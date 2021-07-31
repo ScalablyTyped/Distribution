@@ -4,28 +4,26 @@ import typings.vegaLite.channeldefMod.FieldName
 import typings.vegaTypings.transformMod.AggregateOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedFieldDef extends StObject {
   
   /**
     * The output field names to use for each aggregated field.
     */
-  var as: FieldName = js.native
+  var as: FieldName
   
   /**
     * The data field for which to compute aggregate function. This is required for all aggregation operations except `"count"`.
     */
-  var field: js.UndefOr[FieldName] = js.native
+  var field: js.UndefOr[FieldName] = js.undefined
   
   /**
     * The aggregation operation to apply to the fields (e.g., `"sum"`, `"average"`, or `"count"`).
     * See the [full list of supported aggregation operations](https://vega.github.io/vega-lite/docs/aggregate.html#ops)
     * for more information.
     */
-  var op: AggregateOp = js.native
+  var op: AggregateOp
 }
 object AggregatedFieldDef {
   

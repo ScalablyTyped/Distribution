@@ -2,36 +2,34 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionBundle extends StObject {
   
   /**
     * The ID of the bundle.
     */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the bundle is active, and can be specified for a new distribution.
     */
-  var isActive: js.UndefOr[Boolean] = js.native
+  var isActive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the distribution bundle.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The monthly price, in US dollars, of the bundle.
     */
-  var price: js.UndefOr[float] = js.native
+  var price: js.UndefOr[float] = js.undefined
   
   /**
     * The monthly network transfer quota of the bundle.
     */
-  var transferPerMonthInGb: js.UndefOr[integer] = js.native
+  var transferPerMonthInGb: js.UndefOr[integer] = js.undefined
 }
 object DistributionBundle {
   

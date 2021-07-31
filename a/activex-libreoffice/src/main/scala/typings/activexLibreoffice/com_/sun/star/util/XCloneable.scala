@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to create a copy of the object which supports this interface. */
-@js.native
-trait XCloneable extends XInterface {
+trait XCloneable
+  extends StObject
+     with XInterface {
   
   /** creates a copy of the object. */
-  def createClone(): XCloneable = js.native
+  def createClone(): XCloneable
 }
 object XCloneable {
   

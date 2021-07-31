@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserSettingsRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: String = js.native
+  var AccountId: String
   
   /**
     * The user ID.
     */
-  var UserId: String = js.native
+  var UserId: String
   
   /**
     * The user settings to update.
     */
-  var UserSettings: typings.awsSdk.chimeMod.UserSettings = js.native
+  var UserSettings: typings.awsSdk.chimeMod.UserSettings
 }
 object UpdateUserSettingsRequest {
   

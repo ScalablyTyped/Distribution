@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Annotation extends StObject {
   
   /** Length of the substring in the plain-text message body this annotation corresponds to. */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /** The metadata for a slash command. */
-  var slashCommand: js.UndefOr[SlashCommandMetadata] = js.native
+  var slashCommand: js.UndefOr[SlashCommandMetadata] = js.undefined
   
   /** Start index (0-based, inclusive) in the plain-text message body this annotation corresponds to. */
-  var startIndex: js.UndefOr[Double] = js.native
+  var startIndex: js.UndefOr[Double] = js.undefined
   
   /** The type of this annotation. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** The metadata of user mention. */
-  var userMention: js.UndefOr[UserMentionMetadata] = js.native
+  var userMention: js.UndefOr[UserMentionMetadata] = js.undefined
 }
 object Annotation {
   

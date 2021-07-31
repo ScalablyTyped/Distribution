@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ProjectsGetCardResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersProjectsGetCardEndpoint extends StObject {
   
-  var parameters: ProjectsGetCardEndpoint = js.native
+  var parameters: ProjectsGetCardEndpoint
   
-  var request: ProjectsGetCardRequestOptions = js.native
+  var request: ProjectsGetCardRequestOptions
   
-  var response: OctokitResponse[ProjectsGetCardResponseData] = js.native
+  var response: OctokitResponse[ProjectsGetCardResponseData]
 }
 object ParametersProjectsGetCardEndpoint {
   

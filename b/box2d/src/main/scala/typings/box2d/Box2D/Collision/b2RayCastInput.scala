@@ -3,26 +3,24 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2RayCastInput extends StObject {
   
   /**
     * Truncate the ray to reach up to this fraction from p1 to p2
     **/
-  var maxFraction: Double = js.native
+  var maxFraction: Double
   
   /**
     * The start point of the ray.
     **/
-  var p1: b2Vec2 = js.native
+  var p1: b2Vec2
   
   /**
     * The end point of the ray.
     **/
-  var p2: b2Vec2 = js.native
+  var p2: b2Vec2
 }
 object b2RayCastInput {
   

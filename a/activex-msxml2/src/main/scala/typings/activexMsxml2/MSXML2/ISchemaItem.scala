@@ -2,29 +2,27 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** XML Schema Item */
-@js.native
 trait ISchemaItem extends StObject {
   
   @JSName("MSXML2.ISchemaItem_typekey")
-  var MSXML2DotISchemaItem_typekey: ISchemaItem = js.native
+  var MSXML2DotISchemaItem_typekey: ISchemaItem
   
-  val id: String = js.native
+  val id: String
   
-  val itemType: SOMITEMTYPE = js.native
+  val itemType: SOMITEMTYPE
   
-  val name: String = js.native
+  val name: String
   
-  val namespaceURI: String = js.native
+  val namespaceURI: String
   
-  val schema: ISchema = js.native
+  val schema: ISchema
   
-  val unhandledAttributes: IVBSAXAttributes = js.native
+  val unhandledAttributes: IVBSAXAttributes
   
-  def writeAnnotation(annotationSink: js.Any): Boolean = js.native
+  def writeAnnotation(annotationSink: js.Any): Boolean
 }
 object ISchemaItem {
   

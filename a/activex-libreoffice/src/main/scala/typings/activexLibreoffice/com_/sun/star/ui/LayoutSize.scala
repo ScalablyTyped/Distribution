@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param Maximum A value larger than or equal to Minimum. The special value -1 means that there is no upper bound. Every value larger than or equal to Min
   * @param Preferred The preferred size inside the valid range.
   */
-@js.native
 trait LayoutSize extends StObject {
   
-  var Maximum: Double = js.native
+  var Maximum: Double
   
-  var Minimum: Double = js.native
+  var Minimum: Double
   
-  var Preferred: Double = js.native
+  var Preferred: Double
 }
 object LayoutSize {
   

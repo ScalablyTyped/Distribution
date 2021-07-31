@@ -2,91 +2,89 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTypeOutput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the type.
     */
-  var Arn: js.UndefOr[TypeArn] = js.native
+  var Arn: js.UndefOr[TypeArn] = js.undefined
   
   /**
     * The ID of the default version of the type. The default version is used when the type version is not specified. To set the default version of a type, use  SetTypeDefaultVersion . 
     */
-  var DefaultVersionId: js.UndefOr[TypeVersionId] = js.native
+  var DefaultVersionId: js.UndefOr[TypeVersionId] = js.undefined
   
   /**
     * The deprecation status of the type. Valid values include:    LIVE: The type is registered and can be used in CloudFormation operations, dependent on its provisioning behavior and visibility scope.    DEPRECATED: The type has been deregistered and can no longer be used in CloudFormation operations.   
     */
-  var DeprecatedStatus: js.UndefOr[typings.awsSdk.cloudformationMod.DeprecatedStatus] = js.native
+  var DeprecatedStatus: js.UndefOr[typings.awsSdk.cloudformationMod.DeprecatedStatus] = js.undefined
   
   /**
     * The description of the registered type.
     */
-  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.cloudformationMod.Description] = js.undefined
   
   /**
     * The URL of a page providing detailed documentation for this type.
     */
-  var DocumentationUrl: js.UndefOr[OptionalSecureUrl] = js.native
+  var DocumentationUrl: js.UndefOr[OptionalSecureUrl] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM execution role used to register the type. If your resource type calls AWS APIs in any of its handlers, you must create an  IAM execution role  that includes the necessary permissions to call those AWS APIs, and provision that execution role in your account. CloudFormation then assumes that execution role to provide your resource type with the appropriate credentials.
     */
-  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.native
+  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * Whether the specified type version is set as the default version.
     */
-  var IsDefaultVersion: js.UndefOr[typings.awsSdk.cloudformationMod.IsDefaultVersion] = js.native
+  var IsDefaultVersion: js.UndefOr[typings.awsSdk.cloudformationMod.IsDefaultVersion] = js.undefined
   
   /**
     * When the specified type version was registered.
     */
-  var LastUpdated: js.UndefOr[Timestamp] = js.native
+  var LastUpdated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Contains logging configuration information for a type.
     */
-  var LoggingConfig: js.UndefOr[typings.awsSdk.cloudformationMod.LoggingConfig] = js.native
+  var LoggingConfig: js.UndefOr[typings.awsSdk.cloudformationMod.LoggingConfig] = js.undefined
   
   /**
     * The provisioning behavior of the type. AWS CloudFormation determines the provisioning type during registration, based on the types of handlers in the schema handler package submitted. Valid values include:    FULLY_MUTABLE: The type includes an update handler to process updates to the type during stack update operations.    IMMUTABLE: The type does not include an update handler, so the type cannot be updated and must instead be replaced during stack update operations.    NON_PROVISIONABLE: The type does not include all of the following handlers, and therefore cannot actually be provisioned.   create   read   delete    
     */
-  var ProvisioningType: js.UndefOr[typings.awsSdk.cloudformationMod.ProvisioningType] = js.native
+  var ProvisioningType: js.UndefOr[typings.awsSdk.cloudformationMod.ProvisioningType] = js.undefined
   
   /**
     * The schema that defines the type. For more information on type schemas, see Resource Provider Schema in the CloudFormation CLI User Guide.
     */
-  var Schema: js.UndefOr[TypeSchema] = js.native
+  var Schema: js.UndefOr[TypeSchema] = js.undefined
   
   /**
     * The URL of the source code for the type.
     */
-  var SourceUrl: js.UndefOr[OptionalSecureUrl] = js.native
+  var SourceUrl: js.UndefOr[OptionalSecureUrl] = js.undefined
   
   /**
     * When the specified type version was registered.
     */
-  var TimeCreated: js.UndefOr[Timestamp] = js.native
+  var TimeCreated: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The kind of type.  Currently the only valid value is RESOURCE.
     */
-  var Type: js.UndefOr[RegistryType] = js.native
+  var Type: js.UndefOr[RegistryType] = js.undefined
   
   /**
     * The name of the registered type.
     */
-  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.native
+  var TypeName: js.UndefOr[typings.awsSdk.cloudformationMod.TypeName] = js.undefined
   
   /**
     * The scope at which the type is visible and usable in CloudFormation operations. Valid values include:    PRIVATE: The type is only visible and usable within the account in which it is registered. Currently, AWS CloudFormation marks any types you register as PRIVATE.    PUBLIC: The type is publically visible and usable within any Amazon account.  
     */
-  var Visibility: js.UndefOr[typings.awsSdk.cloudformationMod.Visibility] = js.native
+  var Visibility: js.UndefOr[typings.awsSdk.cloudformationMod.Visibility] = js.undefined
 }
 object DescribeTypeOutput {
   

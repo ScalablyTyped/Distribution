@@ -2,20 +2,18 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A connection is the link from a source photo to a destination photo.
   */
-@js.native
 trait SchemaConnection extends StObject {
   
   /**
     * Required. The destination of the connection from the containing photo to
     * another photo.
     */
-  var target: js.UndefOr[SchemaPhotoId] = js.native
+  var target: js.UndefOr[SchemaPhotoId] = js.undefined
 }
 object SchemaConnection {
   

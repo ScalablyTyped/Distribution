@@ -2,7 +2,6 @@ package typings.vscodeLanguageclient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageclient", "ErrorAction")
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ErrorAction extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.ErrorAction with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.vscodeLanguageclient.clientMod.ErrorAction & Double] = js.native
   
-  /* 1 */ val Continue: typings.vscodeLanguageclient.clientMod.ErrorAction.Continue with Double = js.native
+  /* 1 */ val Continue: typings.vscodeLanguageclient.clientMod.ErrorAction.Continue & Double = js.native
   
-  /* 2 */ val Shutdown: typings.vscodeLanguageclient.clientMod.ErrorAction.Shutdown with Double = js.native
+  /* 2 */ val Shutdown: typings.vscodeLanguageclient.clientMod.ErrorAction.Shutdown & Double = js.native
 }

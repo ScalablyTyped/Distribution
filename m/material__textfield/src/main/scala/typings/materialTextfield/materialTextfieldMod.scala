@@ -13,7 +13,6 @@ import typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoun
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object materialTextfieldMod {
@@ -22,7 +21,7 @@ object materialTextfieldMod {
   - typings.materialRipple.typesMod.MDCRippleCapableSurface because var conflicts: root. Inlined disabled, unbounded */ @JSImport("@material/textfield/component", "MDCTextField")
   @js.native
   class MDCTextField protected () extends MDCComponent[MDCTextFieldFoundation] {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: MDCTextFieldFoundation, args: js.Any*) = this()
     
     def disabled: Boolean = js.native
@@ -165,8 +164,11 @@ object materialTextfieldMod {
   /* static members */
   object MDCTextField {
     
-    @JSImport("@material/textfield/component", "MDCTextField.attachTo")
+    @JSImport("@material/textfield/component", "MDCTextField")
     @js.native
-    def attachTo(root: Element): MDCTextField = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[MDCTextField]
   }
 }

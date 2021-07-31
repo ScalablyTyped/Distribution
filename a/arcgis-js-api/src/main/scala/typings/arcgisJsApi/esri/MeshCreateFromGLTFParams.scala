@@ -5,25 +5,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCreateFromGLTFParams extends Object {
+trait MeshCreateFromGLTFParams
+  extends StObject
+     with Object {
   
   /**
     * Whether the model coordinates should be relative to the geographic or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An [AbortSignal](https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal) to abort the loading process.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createFromGLTF)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
 }
 object MeshCreateFromGLTFParams {
   

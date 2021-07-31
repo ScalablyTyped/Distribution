@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsDbInstanceMod {
@@ -48,6 +47,10 @@ object rdsDbInstanceMod {
   /* static members */
   object RdsDbInstance {
     
+    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RdsDbInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object rdsDbInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RdsDbInstance = js.native
-    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RdsDbInstance = js.native
-    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RdsDbInstanceState): RdsDbInstance = js.native
-    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RdsDbInstanceState, opts: CustomResourceOptions): RdsDbInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RdsDbInstanceState): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RdsDbInstanceState, opts: CustomResourceOptions): RdsDbInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RdsDbInstance]
     
     /**
       * Returns true if the given object is an instance of RdsDbInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/rdsDbInstance", "RdsDbInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/rdsDbInstance.RdsDbInstance */ Boolean]
   }
   
-  @js.native
   trait RdsDbInstanceArgs extends StObject {
     
     /**
       * A db password
       */
-    val dbPassword: Input[String] = js.native
+    val dbPassword: Input[String]
     
     /**
       * A db username
       */
-    val dbUser: Input[String] = js.native
+    val dbUser: Input[String]
     
     /**
       * The db instance to register for this stack. Changing this will force a new resource.
       */
-    val rdsDbInstanceArn: Input[String] = js.native
+    val rdsDbInstanceArn: Input[String]
     
     /**
       * The stack to register a db instance for. Changing this will force a new resource.
       */
-    val stackId: Input[String] = js.native
+    val stackId: Input[String]
   }
   object RdsDbInstanceArgs {
     
@@ -132,28 +129,27 @@ object rdsDbInstanceMod {
     }
   }
   
-  @js.native
   trait RdsDbInstanceState extends StObject {
     
     /**
       * A db password
       */
-    val dbPassword: js.UndefOr[Input[String]] = js.native
+    val dbPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A db username
       */
-    val dbUser: js.UndefOr[Input[String]] = js.native
+    val dbUser: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The db instance to register for this stack. Changing this will force a new resource.
       */
-    val rdsDbInstanceArn: js.UndefOr[Input[String]] = js.native
+    val rdsDbInstanceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The stack to register a db instance for. Changing this will force a new resource.
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
   }
   object RdsDbInstanceState {
     

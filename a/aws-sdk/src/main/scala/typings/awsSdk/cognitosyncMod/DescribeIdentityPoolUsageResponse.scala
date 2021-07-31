@@ -2,16 +2,14 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeIdentityPoolUsageResponse extends StObject {
   
   /**
     * Information about the usage of the identity pool.
     */
-  var IdentityPoolUsage: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityPoolUsage] = js.native
+  var IdentityPoolUsage: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityPoolUsage] = js.undefined
 }
 object DescribeIdentityPoolUsageResponse {
   

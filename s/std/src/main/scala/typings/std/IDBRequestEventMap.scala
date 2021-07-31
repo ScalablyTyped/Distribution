@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDBRequestEventMap extends StObject {
   
-  var error: Event = js.native
+  var error: Event
   
-  var success: Event = js.native
+  var success: Event
 }
 object IDBRequestEventMap {
   

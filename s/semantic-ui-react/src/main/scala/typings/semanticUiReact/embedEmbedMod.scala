@@ -23,7 +23,6 @@ import typings.semanticUiReact.semanticUiReactStrings.youtube
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object embedEmbedMod extends Shortcut {
@@ -40,9 +39,9 @@ object embedEmbedMod extends Shortcut {
   @js.native
   val default: ComponentClass[EmbedProps, ComponentState] = js.native
   
-  @js.native
   trait EmbedProps
-    extends StrictEmbedProps
+    extends StObject
+       with StrictEmbedProps
        with /* key */ StringDictionary[js.Any]
   object EmbedProps {
     
@@ -53,50 +52,49 @@ object embedEmbedMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictEmbedProps extends StObject {
     
     /** An embed can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** An embed can specify an alternative aspect ratio. */
-    var aspectRatio: js.UndefOr[`4Colon3` | `16Colon9` | `21Colon9`] = js.native
+    var aspectRatio: js.UndefOr[`4Colon3` | `16Colon9` | `21Colon9`] = js.undefined
     
     /** Setting to true or false will force autoplay. */
-    var autoplay: js.UndefOr[Boolean] = js.native
+    var autoplay: js.UndefOr[Boolean] = js.undefined
     
     /** Whether to show networks branded UI like title cards, or after video calls to action. */
-    var brandedUI: js.UndefOr[Boolean] = js.native
+    var brandedUI: js.UndefOr[Boolean] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Specifies a default chrome color with Vimeo or YouTube. */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Initial value of active. */
-    var defaultActive: js.UndefOr[Boolean] = js.native
+    var defaultActive: js.UndefOr[Boolean] = js.undefined
     
     /** Whether to prefer HD content. */
-    var hd: js.UndefOr[Boolean] = js.native
+    var hd: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies an icon to use with placeholder content. */
-    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.native
+    var icon: js.UndefOr[SemanticShorthandItem[IconProps]] = js.undefined
     
     /** Specifies an id for source. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Shorthand for HTML iframe. */
-    var iframe: js.UndefOr[SemanticShorthandItem[HtmlIframeProps]] = js.native
+    var iframe: js.UndefOr[SemanticShorthandItem[HtmlIframeProps]] = js.undefined
     
     /**
       * Сalled on click.
@@ -110,16 +108,16 @@ object embedEmbedMod extends Shortcut {
           /* data */ EmbedProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A placeholder image for embed. */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /** Specifies a source to use. */
-    var source: js.UndefOr[youtube | vimeo] = js.native
+    var source: js.UndefOr[youtube | vimeo] = js.undefined
     
     /** Specifies a url to use for embed. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object StrictEmbedProps {
     

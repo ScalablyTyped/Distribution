@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`web-tile`
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebTileLayer
-  extends Layer
+  extends StObject
+     with Layer
      with ScaleRangeLayer
      with RefreshableLayer
      with PortalLayer

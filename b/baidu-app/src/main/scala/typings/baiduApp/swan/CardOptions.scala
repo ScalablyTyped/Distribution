@@ -2,23 +2,22 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var cardList: js.Array[Card] = js.native
+  var cardList: js.Array[Card]
   
   @JSName("complete")
-  var complete_CardOptions: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete_CardOptions: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("fail")
-  var fail_CardOptions: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail_CardOptions: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   @JSName("success")
-  var success_CardOptions: js.UndefOr[js.Function0[Unit]] = js.native
+  var success_CardOptions: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object CardOptions {
   

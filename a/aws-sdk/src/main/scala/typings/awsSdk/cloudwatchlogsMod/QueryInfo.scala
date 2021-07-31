@@ -2,36 +2,34 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryInfo extends StObject {
   
   /**
     * The date and time that this query was created.
     */
-  var createTime: js.UndefOr[Timestamp] = js.native
+  var createTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the log group scanned by this query.
     */
-  var logGroupName: js.UndefOr[LogGroupName] = js.native
+  var logGroupName: js.UndefOr[LogGroupName] = js.undefined
   
   /**
     * The unique ID number of this query.
     */
-  var queryId: js.UndefOr[QueryId] = js.native
+  var queryId: js.UndefOr[QueryId] = js.undefined
   
   /**
     * The query string used in this query.
     */
-  var queryString: js.UndefOr[QueryString] = js.native
+  var queryString: js.UndefOr[QueryString] = js.undefined
   
   /**
     * The status of this query. Possible values are Cancelled, Complete, Failed, Running, Scheduled, and Unknown.
     */
-  var status: js.UndefOr[QueryStatus] = js.native
+  var status: js.UndefOr[QueryStatus] = js.undefined
 }
 object QueryInfo {
   

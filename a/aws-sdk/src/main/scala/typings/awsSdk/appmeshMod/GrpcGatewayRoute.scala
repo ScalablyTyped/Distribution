@@ -2,21 +2,19 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrpcGatewayRoute extends StObject {
   
   /**
     * An object that represents the action to take if a match is determined.
     */
-  var action: GrpcGatewayRouteAction = js.native
+  var action: GrpcGatewayRouteAction
   
   /**
     * An object that represents the criteria for determining a request match.
     */
-  var `match`: GrpcGatewayRouteMatch = js.native
+  var `match`: GrpcGatewayRouteMatch
 }
 object GrpcGatewayRoute {
   

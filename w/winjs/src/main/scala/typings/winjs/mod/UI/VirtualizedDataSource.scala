@@ -3,7 +3,6 @@ package typings.winjs.mod.UI
 import typings.winjs.WinJS.UI.IListDataAdapter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("winjs", "UI.VirtualizedDataSource")
 @js.native
 class VirtualizedDataSource[T] protected ()
-  extends typings.winjs.WinJS.UI.VirtualizedDataSource[T] {
+  extends StObject
+     with typings.winjs.WinJS.UI.VirtualizedDataSource[T] {
   //#region Constructors
   /**
     * Initializes the VirtualizedDataSource base class of a custom data source.

@@ -2,13 +2,13 @@ package typings.vegaTypings.markMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait From extends FromFacet {
+trait From
+  extends StObject
+     with FromFacet {
   
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
 }
 object From {
   

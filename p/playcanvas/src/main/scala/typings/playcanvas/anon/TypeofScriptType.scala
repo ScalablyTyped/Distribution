@@ -3,10 +3,8 @@ package typings.playcanvas.anon
 import typings.playcanvas.pc.ScriptAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofScriptType extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait TypeofScriptType extends StObject {
     * });
     */
   /* static member */
-  val attributes: ScriptAttributes = js.native
+  val attributes: ScriptAttributes
   
   /**
     * Shorthand function to extend Script Type prototype with list of methods.
@@ -40,19 +38,19 @@ trait TypeofScriptType extends StObject {
     * @param methods - Object with methods, where key - is name of method, and value - is function.
     */
   /* static member */
-  def extend(methods: js.Any): Unit = js.native
+  def extend(methods: js.Any): Unit
   
   /**
     * Name of a Script Type
     */
   /* static member */
-  val scriptName: String | Null = js.native
+  val scriptName: String | Null
 }
 object TypeofScriptType {
   
   @scala.inline
   def apply(attributes: ScriptAttributes, extend: js.Any => Unit): TypeofScriptType = {
-    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend))
+    val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], extend = js.Any.fromFunction1(extend), scriptName = null)
     __obj.asInstanceOf[TypeofScriptType]
   }
   

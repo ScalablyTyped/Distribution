@@ -3,37 +3,35 @@ package typings.procfsStats.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileDescriptorStat extends StObject {
   
-  var atime: Date = js.native
+  var atime: Date
   
-  var blksize: Double = js.native
+  var blksize: Double
   
-  var blocks: Double = js.native
+  var blocks: Double
   
-  var ctime: Date = js.native
+  var ctime: Date
   
-  var dev: Double = js.native
+  var dev: Double
   
-  var gid: Double = js.native
+  var gid: Double
   
-  var ino: Double = js.native
+  var ino: Double
   
-  var mode: Double = js.native
+  var mode: Double
   
-  var mtime: Date = js.native
+  var mtime: Date
   
-  var nlink: Double = js.native
+  var nlink: Double
   
-  var rdev: Double = js.native
+  var rdev: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var uid: Double = js.native
+  var uid: Double
 }
 object FileDescriptorStat {
   

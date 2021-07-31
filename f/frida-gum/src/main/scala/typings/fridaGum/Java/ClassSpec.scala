@@ -3,38 +3,36 @@ package typings.fridaGum.Java
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassSpec extends StObject {
   
   /**
     * Name and type of each field to expose.
     */
-  var fields: js.UndefOr[StringDictionary[String]] = js.native
+  var fields: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Interfaces implemented by this class.
     */
-  var implements: js.UndefOr[js.Array[typings.fridaGum.anon.Wrapper]] = js.native
+  var implements: js.UndefOr[js.Array[typings.fridaGum.anon.Wrapper]] = js.undefined
   
   /**
     * Methods to implement. Use the special name `$init` to define one or more constructors.
     */
   var methods: js.UndefOr[
     StringDictionary[MethodImplementation[js.Object] | MethodSpec | js.Array[MethodSpec]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Name of the class.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Super-class. Omit to inherit from `java.lang.Object`.
     */
-  var superClass: js.UndefOr[typings.fridaGum.anon.Wrapper] = js.native
+  var superClass: js.UndefOr[typings.fridaGum.anon.Wrapper] = js.undefined
 }
 object ClassSpec {
   

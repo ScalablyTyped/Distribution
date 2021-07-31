@@ -10,9 +10,9 @@ Streamlined processing of tasks in a shared threadpool.
 | ------------------ | :-------------: |
 | Full name          | task-worklet |
 | Keywords           | tasks, task worklet, TaskWorklet, threads, multithreading |
-| # releases         | 4 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 195 |
+| # downloads        | 356 |
 | # stars            | 0 |
 
 ## Links

@@ -13,21 +13,19 @@ import typings.vueI18n.mod.VueI18n.TranslateResult
 import typings.vueI18n.mod.VueI18n.Values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DateTimeFormats extends StObject {
     
-    var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.native
+    var dateTimeFormats: js.UndefOr[typings.vueI18n.mod.VueI18n.DateTimeFormats] = js.undefined
     
-    var messages: js.UndefOr[LocaleMessages] = js.native
+    var messages: js.UndefOr[LocaleMessages] = js.undefined
     
-    var numberFormats: js.UndefOr[NumberFormats] = js.native
+    var numberFormats: js.UndefOr[NumberFormats] = js.undefined
     
-    var sharedMessages: js.UndefOr[LocaleMessages] = js.native
+    var sharedMessages: js.UndefOr[LocaleMessages] = js.undefined
   }
   object DateTimeFormats {
     
@@ -71,7 +69,7 @@ object anon {
     
     def apply(value: Double): NumberFormatResult = js.native
     def apply(value: Double, args: StringDictionary[String]): NumberFormatResult = js.native
-    def apply(value: Double, key: js.UndefOr[scala.Nothing], locale: Locale): NumberFormatResult = js.native
+    def apply(value: Double, key: Unit, locale: Locale): NumberFormatResult = js.native
     def apply(value: Double, key: Path): NumberFormatResult = js.native
     def apply(value: Double, key: Path, locale: Locale): NumberFormatResult = js.native
   }
@@ -89,7 +87,7 @@ object anon {
   trait FnCallKeyChoiceLocaleValues extends StObject {
     
     def apply(key: Path): String = js.native
-    def apply(key: Path, choice: js.UndefOr[scala.Nothing], values: Values): String = js.native
+    def apply(key: Path, choice: Unit, values: Values): String = js.native
     def apply(key: Path, choice: Choice): String = js.native
     def apply(key: Path, choice: Choice, locale: Locale): String = js.native
     def apply(key: Path, choice: Choice, locale: Locale, values: Values): String = js.native
@@ -101,12 +99,12 @@ object anon {
     
     def apply(value: Double): DateTimeFormatResult = js.native
     def apply(value: Double, args: StringDictionary[String]): DateTimeFormatResult = js.native
-    def apply(value: Double, key: js.UndefOr[scala.Nothing], locale: Locale): DateTimeFormatResult = js.native
+    def apply(value: Double, key: Unit, locale: Locale): DateTimeFormatResult = js.native
     def apply(value: Double, key: Path): DateTimeFormatResult = js.native
     def apply(value: Double, key: Path, locale: Locale): DateTimeFormatResult = js.native
     def apply(value: Date): DateTimeFormatResult = js.native
     def apply(value: Date, args: StringDictionary[String]): DateTimeFormatResult = js.native
-    def apply(value: Date, key: js.UndefOr[scala.Nothing], locale: Locale): DateTimeFormatResult = js.native
+    def apply(value: Date, key: Unit, locale: Locale): DateTimeFormatResult = js.native
     def apply(value: Date, key: Path): DateTimeFormatResult = js.native
     def apply(value: Date, key: Path, locale: Locale): DateTimeFormatResult = js.native
   }

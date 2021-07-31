@@ -3,31 +3,31 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcItem extends ItemModel {
+trait TfvcItem
+  extends StObject
+     with ItemModel {
   
-  var changeDate: Date = js.native
+  var changeDate: Date
   
-  var deletionId: Double = js.native
+  var deletionId: Double
   
   /**
     * MD5 hash as a base 64 string, applies to files only.
     */
-  var hashValue: String = js.native
+  var hashValue: String
   
-  var isBranch: Boolean = js.native
+  var isBranch: Boolean
   
-  var isPendingChange: Boolean = js.native
+  var isPendingChange: Boolean
   
   /**
     * The size of the file, if applicable.
     */
-  var size: Double = js.native
+  var size: Double
   
-  var version: Double = js.native
+  var version: Double
 }
 object TfvcItem {
   

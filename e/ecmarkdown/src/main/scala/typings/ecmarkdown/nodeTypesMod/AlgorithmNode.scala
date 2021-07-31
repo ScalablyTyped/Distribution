@@ -3,23 +3,23 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.algorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AlgorithmNode extends Node {
+trait AlgorithmNode
+  extends StObject
+     with Node {
   
-  var contents: OrderedListNode = js.native
+  var contents: OrderedListNode
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: algorithm = js.native
+  var name: algorithm
 }
 object AlgorithmNode {
   
   @scala.inline
-  def apply(contents: OrderedListNode, location: LocationRange, name: algorithm): AlgorithmNode = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: OrderedListNode, location: LocationRange): AlgorithmNode = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "algorithm")
     __obj.asInstanceOf[AlgorithmNode]
   }
   

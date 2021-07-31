@@ -2,141 +2,139 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelationalDatabase extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the database.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A Boolean value indicating whether automated backup retention is enabled for the database.
     */
-  var backupRetentionEnabled: js.UndefOr[Boolean] = js.native
+  var backupRetentionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The certificate associated with the database.
     */
-  var caCertificateIdentifier: js.UndefOr[String] = js.native
+  var caCertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the database was created. Formatted in Unix time.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The database software (for example, MySQL).
     */
-  var engine: js.UndefOr[NonEmptyString] = js.native
+  var engine: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The database engine version (for example, 5.7.23).
     */
-  var engineVersion: js.UndefOr[NonEmptyString] = js.native
+  var engineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Describes the hardware of the database.
     */
-  var hardware: js.UndefOr[RelationalDatabaseHardware] = js.native
+  var hardware: js.UndefOr[RelationalDatabaseHardware] = js.undefined
   
   /**
     * The latest point in time to which the database can be restored. Formatted in Unix time.
     */
-  var latestRestorableTime: js.UndefOr[IsoDate] = js.native
+  var latestRestorableTime: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The Region name and Availability Zone where the database is located.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the master database created when the Lightsail database resource is created.
     */
-  var masterDatabaseName: js.UndefOr[String] = js.native
+  var masterDatabaseName: js.UndefOr[String] = js.undefined
   
   /**
     * The master endpoint for the database.
     */
-  var masterEndpoint: js.UndefOr[RelationalDatabaseEndpoint] = js.native
+  var masterEndpoint: js.UndefOr[RelationalDatabaseEndpoint] = js.undefined
   
   /**
     * The master user name of the database.
     */
-  var masterUsername: js.UndefOr[NonEmptyString] = js.native
+  var masterUsername: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The unique name of the database resource in Lightsail.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The status of parameter updates for the database.
     */
-  var parameterApplyStatus: js.UndefOr[NonEmptyString] = js.native
+  var parameterApplyStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Describes the pending maintenance actions for the database.
     */
-  var pendingMaintenanceActions: js.UndefOr[PendingMaintenanceActionList] = js.native
+  var pendingMaintenanceActions: js.UndefOr[PendingMaintenanceActionList] = js.undefined
   
   /**
     * Describes pending database value modifications.
     */
-  var pendingModifiedValues: js.UndefOr[PendingModifiedRelationalDatabaseValues] = js.native
+  var pendingModifiedValues: js.UndefOr[PendingModifiedRelationalDatabaseValues] = js.undefined
   
   /**
     * The daily time range during which automated backups are created for the database (for example, 16:00-16:30).
     */
-  var preferredBackupWindow: js.UndefOr[NonEmptyString] = js.native
+  var preferredBackupWindow: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The weekly time range during which system maintenance can occur on the database. In the format ddd:hh24:mi-ddd:hh24:mi. For example, Tue:17:00-Tue:17:30.
     */
-  var preferredMaintenanceWindow: js.UndefOr[NonEmptyString] = js.native
+  var preferredMaintenanceWindow: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A Boolean value indicating whether the database is publicly accessible.
     */
-  var publiclyAccessible: js.UndefOr[Boolean] = js.native
+  var publiclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The blueprint ID for the database. A blueprint describes the major engine version of a database.
     */
-  var relationalDatabaseBlueprintId: js.UndefOr[NonEmptyString] = js.native
+  var relationalDatabaseBlueprintId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The bundle ID for the database. A bundle describes the performance specifications for your database.
     */
-  var relationalDatabaseBundleId: js.UndefOr[NonEmptyString] = js.native
+  var relationalDatabaseBundleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The Lightsail resource type for the database (for example, RelationalDatabase).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * Describes the secondary Availability Zone of a high availability database. The secondary database is used for failover support of a high availability database.
     */
-  var secondaryAvailabilityZone: js.UndefOr[String] = js.native
+  var secondaryAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the current state of the database.
     */
-  var state: js.UndefOr[NonEmptyString] = js.native
+  var state: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The support code for the database. Include this code in your email to support when you have questions about a database in Lightsail. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
   
   /**
     * The tag keys and optional values for the resource. For more information about tags in Lightsail, see the Lightsail Dev Guide.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object RelationalDatabase {
   

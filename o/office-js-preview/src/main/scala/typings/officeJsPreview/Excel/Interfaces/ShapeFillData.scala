@@ -9,11 +9,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.PictureAndTexture
 import typings.officeJsPreview.officeJsPreviewStrings.Solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `shapeFill.toJSON()`. */
-@js.native
 trait ShapeFillData extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ShapeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait ShapeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var transparency: js.UndefOr[Double] = js.native
+  var transparency: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait ShapeFillData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var `type`: js.UndefOr[ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed] = js.native
+  var `type`: js.UndefOr[ShapeFillType | NoFill | Solid | Gradient | Pattern | PictureAndTexture | Mixed] = js.undefined
 }
 object ShapeFillData {
   

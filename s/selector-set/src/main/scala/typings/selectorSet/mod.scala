@@ -5,23 +5,23 @@ import typings.selectorSet.anon.Elements
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("selector-set", JSImport.Default)
   @js.native
-  class default[T] () extends SelectorSet[T]
+  class default[T] ()
+    extends StObject
+       with SelectorSet[T]
   
-  @js.native
   trait ISelectorSetIndex extends StObject {
     
-    def element(el: Element): js.Array[String] | Unit = js.native
+    def element(el: Element): js.Array[String] | Unit
     
-    var name: String = js.native
+    var name: String
     
-    def selector(selector: String): String | Unit = js.native
+    def selector(selector: String): String | Unit
   }
   object ISelectorSetIndex {
     

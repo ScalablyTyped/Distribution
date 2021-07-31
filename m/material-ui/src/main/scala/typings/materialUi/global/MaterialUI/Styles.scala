@@ -15,7 +15,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Styles {
@@ -65,9 +64,8 @@ object Styles {
   @scala.inline
   def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("__MaterialUI.Styles.getMuiTheme")
-  @js.native
-  def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = js.native
+  @scala.inline
+  def getMuiTheme(muiTheme: MuiTheme*): MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[MuiTheme]
   
   @JSGlobal("__MaterialUI.Styles.lightBaseTheme")
   @js.native
@@ -75,12 +73,14 @@ object Styles {
   @scala.inline
   def lightBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("lightBaseTheme")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("__MaterialUI.Styles.muiThemeable")
-  @js.native
+  @scala.inline
   def muiThemeable(): js.Function1[
     /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme], 
     (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("muiThemeable")().asInstanceOf[js.Function1[
+    /* component */ (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme], 
+    (ComponentClass[typings.materialUi.anon.MuiTheme, ComponentState]) | StatelessComponent[typings.materialUi.anon.MuiTheme]
+  ]]
   
   @JSGlobal("__MaterialUI.Styles.zIndex")
   @js.native

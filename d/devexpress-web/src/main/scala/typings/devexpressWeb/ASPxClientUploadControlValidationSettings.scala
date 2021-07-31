@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings that relate to the ASPxClientUploadControl.ValidationErrorOccurred client event.
   */
-@js.native
 trait ASPxClientUploadControlValidationSettings extends StObject {
   
   /**
     * Gets the allowed file extensions.
     */
-  var allowedFileExtensions: js.Array[String] = js.native
+  var allowedFileExtensions: js.Array[String]
   
   /**
     * Gets which characters in a file name are not allowed.
     */
-  var invalidFileNameCharacters: js.Array[String] = js.native
+  var invalidFileNameCharacters: js.Array[String]
   
   /**
     * Gets the maximum count of files that can be selected for uploading at once.
     */
-  var maxFileCount: Double = js.native
+  var maxFileCount: Double
   
   /**
     * Gets the maximum file size.
     */
-  var maxFileSize: Double = js.native
+  var maxFileSize: Double
 }
 object ASPxClientUploadControlValidationSettings {
   

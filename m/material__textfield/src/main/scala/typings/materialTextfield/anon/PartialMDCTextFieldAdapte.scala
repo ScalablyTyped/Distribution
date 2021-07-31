@@ -6,73 +6,71 @@ import typings.materialTextfield.typesMod.MDCTextFieldNativeInputElement
 import typings.std.MutationObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/adapter.MDCTextFieldAdapter> */
-@js.native
 trait PartialMDCTextFieldAdapte extends StObject {
   
-  var activateLineRipple: js.UndefOr[js.Function0[Unit]] = js.native
+  var activateLineRipple: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+  var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   
-  var closeOutline: js.UndefOr[js.Function0[Unit]] = js.native
+  var closeOutline: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var deactivateLineRipple: js.UndefOr[js.Function0[Unit]] = js.native
+  var deactivateLineRipple: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   var deregisterInputInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var deregisterTextFieldInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var deregisterValidationAttributeChangeHandler: js.UndefOr[js.Function1[/* observer */ MutationObserver, Unit]] = js.native
+  var deregisterValidationAttributeChangeHandler: js.UndefOr[js.Function1[/* observer */ MutationObserver, Unit]] = js.undefined
   
-  var floatLabel: js.UndefOr[js.Function1[/* shouldFloat */ Boolean, Unit]] = js.native
+  var floatLabel: js.UndefOr[js.Function1[/* shouldFloat */ Boolean, Unit]] = js.undefined
   
-  var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.native
+  var getLabelWidth: js.UndefOr[js.Function0[Double]] = js.undefined
   
-  var getNativeInput: js.UndefOr[js.Function0[MDCTextFieldNativeInputElement | Null]] = js.native
+  var getNativeInput: js.UndefOr[js.Function0[MDCTextFieldNativeInputElement | Null]] = js.undefined
   
-  var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+  var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
   
-  var hasLabel: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasLabel: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var hasOutline: js.UndefOr[js.Function0[Boolean]] = js.native
+  var hasOutline: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var isFocused: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isFocused: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var notchOutline: js.UndefOr[js.Function1[/* labelWidth */ Double, Unit]] = js.native
+  var notchOutline: js.UndefOr[js.Function1[/* labelWidth */ Double, Unit]] = js.undefined
   
   var registerInputInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var registerTextFieldInteractionHandler: js.UndefOr[
     js.Function2[/* evtType */ EventType, /* handler */ SpecificEventListener[EventType], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var registerValidationAttributeChangeHandler: js.UndefOr[
     js.Function1[
       /* handler */ js.Function1[/* attributeNames */ js.Array[String], Unit], 
       MutationObserver
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+  var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
   
-  var removeInputAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.native
+  var removeInputAttr: js.UndefOr[js.Function1[/* attr */ String, Unit]] = js.undefined
   
-  var setInputAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+  var setInputAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
   
-  var setLabelRequired: js.UndefOr[js.Function1[/* isRequired */ Boolean, Unit]] = js.native
+  var setLabelRequired: js.UndefOr[js.Function1[/* isRequired */ Boolean, Unit]] = js.undefined
   
-  var setLineRippleTransformOrigin: js.UndefOr[js.Function1[/* normalizedX */ Double, Unit]] = js.native
+  var setLineRippleTransformOrigin: js.UndefOr[js.Function1[/* normalizedX */ Double, Unit]] = js.undefined
   
-  var shakeLabel: js.UndefOr[js.Function1[/* shouldShake */ Boolean, Unit]] = js.native
+  var shakeLabel: js.UndefOr[js.Function1[/* shouldShake */ Boolean, Unit]] = js.undefined
 }
 object PartialMDCTextFieldAdapte {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mailFromMod {
@@ -43,6 +42,10 @@ object mailFromMod {
   /* static members */
   object MailFrom {
     
+    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MailFrom resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,45 +55,39 @@ object mailFromMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MailFrom = js.native
-    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MailFrom = js.native
-    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MailFromState): MailFrom = js.native
-    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MailFromState, opts: CustomResourceOptions): MailFrom = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MailFromState): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MailFromState, opts: CustomResourceOptions): MailFrom = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MailFrom]
     
     /**
       * Returns true if the given object is an instance of MailFrom.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/mailFrom", "MailFrom.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/mailFrom.MailFrom */ Boolean]
   }
   
-  @js.native
   trait MailFromArgs extends StObject {
     
     /**
       * The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to `UseDefaultValue`. See the [SES API documentation](https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityMailFromDomain.html) for more information.
       */
-    val behaviorOnMxFailure: js.UndefOr[Input[String]] = js.native
+    val behaviorOnMxFailure: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Verified domain name to generate DKIM tokens for.
       */
-    val domain: Input[String] = js.native
+    val domain: Input[String]
     
     /**
       * Subdomain (of above domain) which is to be used as MAIL FROM address (Required for DMARC validation)
       */
-    val mailFromDomain: Input[String] = js.native
+    val mailFromDomain: Input[String]
   }
   object MailFromArgs {
     
@@ -117,23 +114,22 @@ object mailFromMod {
     }
   }
   
-  @js.native
   trait MailFromState extends StObject {
     
     /**
       * The action that you want Amazon SES to take if it cannot successfully read the required MX record when you send an email. Defaults to `UseDefaultValue`. See the [SES API documentation](https://docs.aws.amazon.com/ses/latest/APIReference/API_SetIdentityMailFromDomain.html) for more information.
       */
-    val behaviorOnMxFailure: js.UndefOr[Input[String]] = js.native
+    val behaviorOnMxFailure: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Verified domain name to generate DKIM tokens for.
       */
-    val domain: js.UndefOr[Input[String]] = js.native
+    val domain: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subdomain (of above domain) which is to be used as MAIL FROM address (Required for DMARC validation)
       */
-    val mailFromDomain: js.UndefOr[Input[String]] = js.native
+    val mailFromDomain: js.UndefOr[Input[String]] = js.undefined
   }
   object MailFromState {
     

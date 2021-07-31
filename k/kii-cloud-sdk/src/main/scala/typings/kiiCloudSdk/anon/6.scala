@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiBucket
 import typings.kiiCloudSdk.KiiCloud.KiiQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6` extends StObject {
   
-  def failure(bucket: KiiBucket, errorString: String): js.Any = js.native
+  def failure(bucket: KiiBucket, errorString: String): js.Any
   
-  def success(bucket: KiiBucket, query: KiiQuery, count: Double): js.Any = js.native
+  def success(bucket: KiiBucket, query: KiiQuery, count: Double): js.Any
 }
 object `6` {
   

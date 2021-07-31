@@ -2,36 +2,34 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This resource represents the configuration of a transfer job that runs
   * periodically.
   */
-@js.native
 trait SchemaTransferJob extends StObject {
   
   /**
     * This field cannot be changed by user requests.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * This field cannot be changed by user requests.
     */
-  var deletionTime: js.UndefOr[String] = js.native
+  var deletionTime: js.UndefOr[String] = js.undefined
   
   /**
     * A description provided by the user for the job. Its max length is 1024
     * bytes when Unicode-encoded.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * This field cannot be changed by user requests.
     */
-  var lastModificationTime: js.UndefOr[String] = js.native
+  var lastModificationTime: js.UndefOr[String] = js.undefined
   
   /**
     * A globally unique name assigned by Storage Transfer Service when the job
@@ -39,17 +37,17 @@ trait SchemaTransferJob extends StObject {
     * transfer job; otherwise, the requests result in an `INVALID_ARGUMENT`
     * error.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Google Cloud Platform Project that owns the job.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Schedule specification.
     */
-  var schedule: js.UndefOr[SchemaSchedule] = js.native
+  var schedule: js.UndefOr[SchemaSchedule] = js.undefined
   
   /**
     * Status of the job. This value MUST be specified for
@@ -59,12 +57,12 @@ trait SchemaTransferJob extends StObject {
     * transfer is running, the status change would not affect the current
     * operation.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Transfer specification.
     */
-  var transferSpec: js.UndefOr[SchemaTransferSpec] = js.native
+  var transferSpec: js.UndefOr[SchemaTransferSpec] = js.undefined
 }
 object SchemaTransferJob {
   

@@ -4,16 +4,17 @@ import typings.baconjs.observableMod.default
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object argumentstoobservablesMod {
   
-  @JSImport("baconjs/types/internal/argumentstoobservables", "argumentsToObservables")
+  @JSImport("baconjs/types/internal/argumentstoobservables", JSImport.Namespace)
   @js.native
-  def argumentsToObservables[T](args: js.Array[default[T] | js.Array[default[T]] | T]): js.Array[default[T]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/internal/argumentstoobservables", "argumentsToObservablesAndFunction")
-  @js.native
-  def argumentsToObservablesAndFunction[V](args: IArguments): js.Tuple2[js.Array[default[_]], js.Function1[/* repeated */ _, V]] = js.native
+  @scala.inline
+  def argumentsToObservables[T](args: js.Array[default[T] | js.Array[default[T]] | T]): js.Array[default[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentsToObservables")(args.asInstanceOf[js.Any]).asInstanceOf[js.Array[default[T]]]
+  
+  @scala.inline
+  def argumentsToObservablesAndFunction[V](args: IArguments): js.Tuple2[js.Array[default[js.Any]], js.Function1[/* repeated */ js.Any, V]] = ^.asInstanceOf[js.Dynamic].applyDynamic("argumentsToObservablesAndFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[default[js.Any]], js.Function1[/* repeated */ js.Any, V]]]
 }

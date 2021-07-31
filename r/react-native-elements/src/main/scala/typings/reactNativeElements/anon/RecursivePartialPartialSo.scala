@@ -9,48 +9,46 @@ import typings.reactNativeElements.mod.RecursivePartial
 import typings.reactNativeElements.mod.SocialMediaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.SocialIconProps>> */
-@js.native
 trait RecursivePartialPartialSo extends StObject {
   
-  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.native
+  var Component: js.UndefOr[RecursivePartial[js.UndefOr[ComponentClass[js.Object, ComponentState]]]] = js.undefined
   
-  var button: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var button: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var disabled: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var fontFamily: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var fontFamily: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var fontStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var fontStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var fontWeight: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var fontWeight: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var iconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var iconColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var iconSize: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.native
+  var iconSize: js.UndefOr[RecursivePartial[js.UndefOr[Double]]] = js.undefined
   
-  var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var iconStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var light: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var light: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var loading: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var loading: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onLongPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var raised: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.native
+  var raised: js.UndefOr[RecursivePartial[js.UndefOr[Boolean]]] = js.undefined
   
-  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var style: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var `type`: js.UndefOr[RecursivePartial[js.UndefOr[SocialMediaType]]] = js.native
+  var `type`: js.UndefOr[RecursivePartial[js.UndefOr[SocialMediaType]]] = js.undefined
   
-  var underlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var underlayColor: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
 }
 object RecursivePartialPartialSo {
   

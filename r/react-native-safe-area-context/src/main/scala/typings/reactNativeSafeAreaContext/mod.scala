@@ -14,10 +14,13 @@ import typings.reactNativeSafeAreaContext.safeAreaTypesMod.NativeSafeAreaViewPro
 import typings.reactNativeSafeAreaContext.safeAreaTypesMod.Rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-safe-area-context", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-native-safe-area-context", "SafeAreaConsumer")
   @js.native
@@ -35,13 +38,11 @@ object mod {
   @js.native
   val SafeAreaInsetsContext: Context[EdgeInsets | Null] = js.native
   
-  @JSImport("react-native-safe-area-context", "SafeAreaProvider")
-  @js.native
-  def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyle: SafeAreaViewProps): Element = js.native
+  @scala.inline
+  def SafeAreaProvider(hasChildrenInitialMetricsInitialSafeAreaInsetsStyle: SafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaProvider")(hasChildrenInitialMetricsInitialSafeAreaInsetsStyle.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("react-native-safe-area-context", "SafeAreaView")
-  @js.native
-  def SafeAreaView(hasStyleModeEdgesRest: NativeSafeAreaViewProps): Element = js.native
+  @scala.inline
+  def SafeAreaView(hasStyleModeEdgesRest: NativeSafeAreaViewProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SafeAreaView")(hasStyleModeEdgesRest.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("react-native-safe-area-context", "initialWindowMetrics")
   @js.native
@@ -51,19 +52,15 @@ object mod {
   @js.native
   val initialWindowSafeAreaInsets: EdgeInsets | Null = js.native
   
-  @JSImport("react-native-safe-area-context", "useSafeArea")
-  @js.native
-  def useSafeArea(): EdgeInsets = js.native
+  @scala.inline
+  def useSafeArea(): EdgeInsets = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeArea")().asInstanceOf[EdgeInsets]
   
-  @JSImport("react-native-safe-area-context", "useSafeAreaFrame")
-  @js.native
-  def useSafeAreaFrame(): Rect = js.native
+  @scala.inline
+  def useSafeAreaFrame(): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeAreaFrame")().asInstanceOf[Rect]
   
-  @JSImport("react-native-safe-area-context", "useSafeAreaInsets")
-  @js.native
-  def useSafeAreaInsets(): EdgeInsets = js.native
+  @scala.inline
+  def useSafeAreaInsets(): EdgeInsets = ^.asInstanceOf[js.Dynamic].applyDynamic("useSafeAreaInsets")().asInstanceOf[EdgeInsets]
   
-  @JSImport("react-native-safe-area-context", "withSafeAreaInsets")
-  @js.native
-  def withSafeAreaInsets[T](WrappedComponent: ComponentType[T]): ForwardRefExoticComponent[PropsWithoutRef[T] with RefAttributes[T]] = js.native
+  @scala.inline
+  def withSafeAreaInsets[T](WrappedComponent: ComponentType[T]): ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSafeAreaInsets")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[T] & RefAttributes[T]]]
 }

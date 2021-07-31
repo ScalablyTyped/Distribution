@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.officeUiFabricReact.keytipTypesMod.IKeytipProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipManagerMod {
@@ -119,17 +118,15 @@ object keytipManagerMod {
       *
       * @returns Singleton KeytipManager instance
       */
-    @JSImport("office-ui-fabric-react/lib/utilities/keytips/KeytipManager", "KeytipManager.getInstance")
-    @js.native
-    def getInstance(): KeytipManager = js.native
+    @scala.inline
+    def getInstance(): KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[KeytipManager]
   }
   
-  @js.native
   trait IUniqueKeytip extends StObject {
     
-    var keytip: IKeytipProps = js.native
+    var keytip: IKeytipProps
     
-    var uniqueID: String = js.native
+    var uniqueID: String
   }
   object IUniqueKeytip {
     

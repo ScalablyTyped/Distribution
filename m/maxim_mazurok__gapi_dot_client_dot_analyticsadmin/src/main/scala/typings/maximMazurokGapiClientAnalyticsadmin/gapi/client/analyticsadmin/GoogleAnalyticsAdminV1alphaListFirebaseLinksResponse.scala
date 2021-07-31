@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse extends StObject {
   
   /** List of FirebaseLinks. This will have at most one value. */
-  var firebaseLinks: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaFirebaseLink]] = js.native
+  var firebaseLinks: js.UndefOr[js.Array[GoogleAnalyticsAdminV1alphaFirebaseLink]] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaListFirebaseLinksResponse {
   

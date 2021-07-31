@@ -4,15 +4,15 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.GanttTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GanttEditEvent extends GanttEvent {
+trait GanttEditEvent
+  extends StObject
+     with GanttEvent {
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var task: js.UndefOr[GanttTask] = js.native
+  var task: js.UndefOr[GanttTask] = js.undefined
 }
 object GanttEditEvent {
   

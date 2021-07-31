@@ -3,10 +3,13 @@ package typings.dashdash
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("dashdash", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dashdash", "Parser")
   @js.native
@@ -39,42 +42,34 @@ object mod {
     def parse(inputs: ParsingConfiguration): Results = js.native
   }
   
-  @JSImport("dashdash", "addOptionType")
-  @js.native
-  def addOptionType(optionType: OptionType): Unit = js.native
+  @scala.inline
+  def addOptionType(optionType: OptionType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addOptionType")(optionType.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("dashdash", "bashCompletionFromOptions")
-  @js.native
-  def bashCompletionFromOptions(args: BashCompletionConfiguration): String = js.native
+  @scala.inline
+  def bashCompletionFromOptions(args: BashCompletionConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bashCompletionFromOptions")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("dashdash", "bashCompletionSpecFromOptions")
-  @js.native
-  def bashCompletionSpecFromOptions(args: BashCompletionSpecConfiguration): String = js.native
+  @scala.inline
+  def bashCompletionSpecFromOptions(args: BashCompletionSpecConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bashCompletionSpecFromOptions")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("dashdash", "createParser")
-  @js.native
-  def createParser(config: ParserConfiguration): Parser = js.native
+  @scala.inline
+  def createParser(config: ParserConfiguration): Parser = ^.asInstanceOf[js.Dynamic].applyDynamic("createParser")(config.asInstanceOf[js.Any]).asInstanceOf[Parser]
   
-  @JSImport("dashdash", "getOptionType")
-  @js.native
-  def getOptionType(name: String): OptionType = js.native
+  @scala.inline
+  def getOptionType(name: String): OptionType = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionType")(name.asInstanceOf[js.Any]).asInstanceOf[OptionType]
   
-  @JSImport("dashdash", "parse")
-  @js.native
-  def parse(config: ParsingConfiguration): Results = js.native
+  @scala.inline
+  def parse(config: ParsingConfiguration): Results = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Results]
   
-  @JSImport("dashdash", "synopsisFromOpt")
-  @js.native
-  def synopsisFromOpt(o: Option): String = js.native
+  @scala.inline
+  def synopsisFromOpt(o: Option): String = ^.asInstanceOf[js.Dynamic].applyDynamic("synopsisFromOpt")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait Arg extends StObject {
     
-    var from: String = js.native
+    var from: String
     
-    var name: String = js.native
+    var name: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Arg {
     
@@ -98,31 +93,30 @@ object mod {
     }
   }
   
-  @js.native
   trait BashCompletionConfiguration extends StObject {
     
     /**
       * Array of completion types for positional args (i.e. non-options).
       * If not given, positional args will use Bash's 'default' completion.
       */
-    var argtypes: js.UndefOr[js.Array[String]] = js.native
+    var argtypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The tool name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The array of dashdash option specs.
       */
-    var options: js.UndefOr[js.Array[Option | Group]] = js.native
+    var options: js.UndefOr[js.Array[Option | Group]] = js.undefined
     
     /**
       * Extra Bash code content to add
       * to the end of the "spec". Typically this is used to append Bash
       * "complete_TYPE" functions for custom option types.
       */
-    var specExtra: js.UndefOr[String] = js.native
+    var specExtra: js.UndefOr[String] = js.undefined
   }
   object BashCompletionConfiguration {
     
@@ -164,21 +158,20 @@ object mod {
     }
   }
   
-  @js.native
   trait BashCompletionSpecConfiguration extends StObject {
     
     /**
       * Array of completion types for positional args (i.e. non-options).
       * If not given, positional args will use Bash's 'default' completion.
       */
-    var argtypes: js.UndefOr[js.Array[String]] = js.native
+    var argtypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A context string for the "local cmd*"
       * vars in the spec. By default it is the empty string. When used to
       * scope for completion on a *sub-command*.
       */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
       * By default
@@ -187,12 +180,12 @@ object mod {
       * will be completed. "Hidden" options and subcmds are ones with the
       * `hidden: true` attribute to exclude them from default help output.
       */
-    var includeHidden: js.UndefOr[Boolean] = js.native
+    var includeHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The array of dashdash option specs.
       */
-    var options: js.Array[Option | Group] = js.native
+    var options: js.Array[Option | Group]
   }
   object BashCompletionSpecConfiguration {
     
@@ -234,10 +227,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
-    var group: String = js.native
+    var group: String
   }
   object Group {
     
@@ -255,7 +247,6 @@ object mod {
     }
   }
   
-  @js.native
   trait HelpConfiguration extends StObject {
     
     /**
@@ -263,59 +254,59 @@ object mod {
       * This indent applies to group heading lines, between normal option lines.
       * Default: half length of `indent`
       */
-    var headingIndent: js.UndefOr[Double | String] = js.native
+    var headingIndent: js.UndefOr[Double | String] = js.undefined
     
     /**
       * If not set a reasonable value will be determined between minHelpCol and maxHelpCol.
       */
-    var helpCol: js.UndefOr[Double] = js.native
+    var helpCol: js.UndefOr[Double] = js.undefined
     
     /**
       * Set to `false` to have option `help` strings not be textwrapped to the helpCol..maxCol range.
       * Default: true
       */
-    var helpWrap: js.UndefOr[Boolean] = js.native
+    var helpWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the option has a default value (via the default option spec attribute, or a default on the option's type), then a "Default: VALUE" string will be appended to the help string.
       * Default: false
       */
-    var includeDefault: js.UndefOr[Boolean] = js.native
+    var includeDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If the option has associated environment variables (via the env option spec attribute), then append mentioned of those envvars to the help string.
       * Default: false
       */
-    var includeEnv: js.UndefOr[Boolean] = js.native
+    var includeEnv: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set to a number (for that many spaces) or a string for the literal indent.
       * Default: 4
       */
-    var indent: js.UndefOr[Double | String] = js.native
+    var indent: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Note that reflow is just done on whitespace so a long token in the option help can overflow maxCol.
       * Default: 80
       */
-    var maxCol: js.UndefOr[Double] = js.native
+    var maxCol: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: 40
       */
-    var maxHelpCol: js.UndefOr[Double] = js.native
+    var maxHelpCol: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: 20
       */
-    var minHelpCol: js.UndefOr[Double] = js.native
+    var minHelpCol: js.UndefOr[Double] = js.undefined
     
     /**
       * By default the names are sorted to put the short opts first (i.e. '-h, --help' preferred to '--help, -h').
       * Set to 'none' to not do this sorting.
       * Default: 'length'
       */
-    var nameSort: js.UndefOr[String] = js.native
+    var nameSort: js.UndefOr[String] = js.undefined
   }
   object HelpConfiguration {
     
@@ -412,13 +403,12 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionBase extends StObject {
     
     /**
       * A default value used for this option, if the option isn't specified in argv.
       */
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
     /**
       * This is used for Bash completion for an option argument.
@@ -429,33 +419,33 @@ object mod {
       * This is for custom completions for a given tool.
       * Typically these custom functions are provided in the specExtra argument to dashdash.bashCompletionFromOptions().
       */
-    var completionType: js.UndefOr[String] = js.native
+    var completionType: js.UndefOr[String] = js.undefined
     
     /**
       * An environment variable name (or names) that can be used as a fallback for this option.
       * An environment variable is only used as a fallback, i.e. it is ignored if the associated option is given in `argv`.
       */
-    var env: js.UndefOr[String | js.Array[String]] = js.native
+    var env: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Used for parser.help() output.
       */
-    var help: js.UndefOr[String] = js.native
+    var help: js.UndefOr[String] = js.undefined
     
     /**
       * Used in help output as the placeholder for the option argument.
       */
-    var helpArg: js.UndefOr[String] = js.native
+    var helpArg: js.UndefOr[String] = js.undefined
     
     /**
       * Set this to false to have that option's help not be text wrapped in <parser>.help() output.
       */
-    var helpWrap: js.UndefOr[Boolean] = js.native
+    var helpWrap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, help output will not include this option.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * One of: bool, string, number, integer, positiveInteger, arrayOfBool, arrayOfString,
@@ -464,7 +454,7 @@ object mod {
       * You can add your own custom option types with `dashdash.addOptionType`
       * These names attempt to match with asserts on `assert-plus`.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object OptionBase {
     
@@ -528,43 +518,42 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionType extends StObject {
     
     /**
       * Default value for options of this type, if no default is specified in the option type usage.
       */
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Set to true if this is an 'arrayOf' type
       * that collects multiple usages of the option in process.argv and puts results in an array.
       */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
-    var arrayFlatten: js.UndefOr[Boolean] = js.native
+    var arrayFlatten: js.UndefOr[Boolean] = js.undefined
     
-    var completionType: js.UndefOr[js.Any] = js.native
+    var completionType: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Required iff `takesArg === true`. The string to show in generated help for options of this type.
       */
-    var helpArg: js.UndefOr[String] = js.native
+    var helpArg: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
     /**
       * parser that takes a string argument and returns an instance of the
       * appropriate type, or throws an error if the arg is invalid.
       */
-    def parseArg(option: Option, optstr: String, arg: String): js.Any = js.native
+    def parseArg(option: Option, optstr: String, arg: String): js.Any
     
     /**
       * Whether this type of option takes an
       * argument on process.argv. Typically this is true for all but the
       * "bool" type.
       */
-    var takesArg: Boolean = js.native
+    var takesArg: Boolean
   }
   object OptionType {
     
@@ -618,15 +607,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionWithAliases
-    extends OptionBase
+    extends StObject
+       with OptionBase
        with Option {
     
     /**
       * The option name and aliases. The first name (if more than one given) is the key for the parsed `opts` object.
       */
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
   }
   object OptionWithAliases {
     
@@ -648,15 +637,15 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionWithoutAliases
-    extends OptionBase
+    extends StObject
+       with OptionBase
        with Option {
     
     /**
       * The option name
       */
-    var name: String = js.native
+    var name: String
   }
   object OptionWithoutAliases {
     
@@ -675,7 +664,6 @@ object mod {
     }
   }
   
-  @js.native
   trait ParserConfiguration extends StObject {
     
     /**
@@ -683,7 +671,7 @@ object mod {
       * If false, then unknown args are included in the _args array.
       * Default: false
       */
-    var allowUnknown: js.UndefOr[Boolean] = js.native
+    var allowUnknown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to allow interspersed arguments (non-options) and options.
@@ -698,12 +686,12 @@ object mod {
       *
       * Default: true
       */
-    var interspersed: js.UndefOr[Boolean] = js.native
+    var interspersed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of option specs.
       */
-    var options: js.Array[Option | Group] = js.native
+    var options: js.Array[Option | Group]
   }
   object ParserConfiguration {
     
@@ -736,26 +724,25 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsingConfiguration extends StObject {
     
     /**
       * The argv to parse. Defaults to `process.argv`.
       */
-    var argv: js.UndefOr[js.Array[String]] = js.native
+    var argv: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The env to use for 'env' entries in the option specs. Defaults to `process.env`.
       */
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
     // NodeJS.ProcessEnv;
-    var options: js.UndefOr[js.Array[Option | Group]] = js.native
+    var options: js.UndefOr[js.Array[Option | Group]] = js.undefined
     
     /**
       * The index into argv at which options/args begin.  Default is 2, as appropriate for `process.argv`.
       */
-    var slice: js.UndefOr[Double] = js.native
+    var slice: js.UndefOr[Double] = js.undefined
   }
   object ParsingConfiguration {
     
@@ -800,13 +787,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Results
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var _args: js.Array[String] = js.native
+    var _args: js.Array[String]
     
-    var _order: js.Array[Arg] = js.native
+    var _order: js.Array[Arg]
   }
   object Results {
     

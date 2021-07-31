@@ -4,7 +4,6 @@ import typings.tizenTvWebapis.webapisMod.ErrorCallback
 import typings.tizenTvWebapis.webapisMod.SuccessCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object widgetdataMod {
@@ -54,7 +53,7 @@ object widgetdataMod {
       * @note If you need to share a file created by the widgetdata api with another c or c# app, you need to use one more privilege(http://tizen.org/privilege/appdir.shareddata)
       */
     def remove(): Unit = js.native
-    def remove(onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def remove(onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def remove(onsuccess: SuccessCallback): Unit = js.native
     def remove(onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
     
@@ -74,7 +73,7 @@ object widgetdataMod {
       * @note If you need to share a file created by the widgetdata api with another c or c# app, you need to use one more privilege(http://tizen.org/privilege/appdir.shareddata)
       */
     def write(data: String): Unit = js.native
-    def write(data: String, onsuccess: js.UndefOr[scala.Nothing], onerror: ErrorCallback): Unit = js.native
+    def write(data: String, onsuccess: Unit, onerror: ErrorCallback): Unit = js.native
     def write(data: String, onsuccess: SuccessCallback): Unit = js.native
     def write(data: String, onsuccess: SuccessCallback, onerror: ErrorCallback): Unit = js.native
   }

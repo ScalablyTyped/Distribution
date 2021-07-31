@@ -10,24 +10,22 @@ import typings.googleAppsScript.GoogleAppsScript.AdminReports.Schema.Channel
 import typings.googleAppsScript.GoogleAppsScript.AdminReports.Schema.UsageReports
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminReports extends StObject {
   
-  var Activities: js.UndefOr[ActivitiesCollection] = js.native
+  var Activities: js.UndefOr[ActivitiesCollection] = js.undefined
   
-  var Channels: js.UndefOr[ChannelsCollection] = js.native
+  var Channels: js.UndefOr[ChannelsCollection] = js.undefined
   
-  var CustomerUsageReports: js.UndefOr[CustomerUsageReportsCollection] = js.native
+  var CustomerUsageReports: js.UndefOr[CustomerUsageReportsCollection] = js.undefined
   
-  var EntityUsageReports: js.UndefOr[EntityUsageReportsCollection] = js.native
+  var EntityUsageReports: js.UndefOr[EntityUsageReportsCollection] = js.undefined
   
-  var UserUsageReport: js.UndefOr[UserUsageReportCollection] = js.native
+  var UserUsageReport: js.UndefOr[UserUsageReportCollection] = js.undefined
   
   // Create a new instance of Channel
-  def newChannel(): Channel = js.native
+  def newChannel(): Channel
 }
 object AdminReports {
   
@@ -90,11 +88,10 @@ object AdminReports {
       def watch(resource: Channel, userKey: String, applicationName: String, optionalArgs: js.Object): Channel = js.native
     }
     
-    @js.native
     trait ChannelsCollection extends StObject {
       
       // Stop watching resources through this channel
-      def stop(resource: Channel): Unit = js.native
+      def stop(resource: Channel): Unit
     }
     object ChannelsCollection {
       
@@ -142,16 +139,15 @@ object AdminReports {
   
   object Schema {
     
-    @js.native
     trait Activities extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[Activity]] = js.native
+      var items: js.UndefOr[js.Array[Activity]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object Activities {
       
@@ -193,22 +189,21 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait Activity extends StObject {
       
-      var actor: js.UndefOr[ActivityActor] = js.native
+      var actor: js.UndefOr[ActivityActor] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var events: js.UndefOr[js.Array[ActivityEvents]] = js.native
+      var events: js.UndefOr[js.Array[ActivityEvents]] = js.undefined
       
-      var id: js.UndefOr[ActivityId] = js.native
+      var id: js.UndefOr[ActivityId] = js.undefined
       
-      var ipAddress: js.UndefOr[String] = js.native
+      var ipAddress: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var ownerDomain: js.UndefOr[String] = js.native
+      var ownerDomain: js.UndefOr[String] = js.undefined
     }
     object Activity {
       
@@ -268,16 +263,15 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait ActivityActor extends StObject {
       
-      var callerType: js.UndefOr[String] = js.native
+      var callerType: js.UndefOr[String] = js.undefined
       
-      var email: js.UndefOr[String] = js.native
+      var email: js.UndefOr[String] = js.undefined
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
     }
     object ActivityActor {
       
@@ -316,14 +310,13 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait ActivityEvents extends StObject {
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var parameters: js.UndefOr[js.Array[ActivityEventsParameters]] = js.native
+      var parameters: js.UndefOr[js.Array[ActivityEventsParameters]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ActivityEvents {
       
@@ -359,20 +352,19 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait ActivityEventsParameters extends StObject {
       
-      var boolValue: js.UndefOr[Boolean] = js.native
+      var boolValue: js.UndefOr[Boolean] = js.undefined
       
-      var intValue: js.UndefOr[String] = js.native
+      var intValue: js.UndefOr[String] = js.undefined
       
-      var multiIntValue: js.UndefOr[js.Array[String]] = js.native
+      var multiIntValue: js.UndefOr[js.Array[String]] = js.undefined
       
-      var multiValue: js.UndefOr[js.Array[String]] = js.native
+      var multiValue: js.UndefOr[js.Array[String]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object ActivityEventsParameters {
       
@@ -429,16 +421,15 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait ActivityId extends StObject {
       
-      var applicationName: js.UndefOr[String] = js.native
+      var applicationName: js.UndefOr[String] = js.undefined
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var time: js.UndefOr[String] = js.native
+      var time: js.UndefOr[String] = js.undefined
       
-      var uniqueQualifier: js.UndefOr[String] = js.native
+      var uniqueQualifier: js.UndefOr[String] = js.undefined
     }
     object ActivityId {
       
@@ -477,28 +468,27 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait Channel extends StObject {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var expiration: js.UndefOr[String] = js.native
+      var expiration: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var params: js.UndefOr[js.Object] = js.native
+      var params: js.UndefOr[js.Object] = js.undefined
       
-      var payload: js.UndefOr[Boolean] = js.native
+      var payload: js.UndefOr[Boolean] = js.undefined
       
-      var resourceId: js.UndefOr[String] = js.native
+      var resourceId: js.UndefOr[String] = js.undefined
       
-      var resourceUri: js.UndefOr[String] = js.native
+      var resourceUri: js.UndefOr[String] = js.undefined
       
-      var token: js.UndefOr[String] = js.native
+      var token: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Channel {
       
@@ -573,18 +563,17 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReport extends StObject {
       
-      var date: js.UndefOr[String] = js.native
+      var date: js.UndefOr[String] = js.undefined
       
-      var entity: js.UndefOr[UsageReportEntity] = js.native
+      var entity: js.UndefOr[UsageReportEntity] = js.undefined
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var parameters: js.UndefOr[js.Array[UsageReportParameters]] = js.native
+      var parameters: js.UndefOr[js.Array[UsageReportParameters]] = js.undefined
     }
     object UsageReport {
       
@@ -632,18 +621,17 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReportEntity extends StObject {
       
-      var customerId: js.UndefOr[String] = js.native
+      var customerId: js.UndefOr[String] = js.undefined
       
-      var entityId: js.UndefOr[String] = js.native
+      var entityId: js.UndefOr[String] = js.undefined
       
-      var profileId: js.UndefOr[String] = js.native
+      var profileId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var userEmail: js.UndefOr[String] = js.native
+      var userEmail: js.UndefOr[String] = js.undefined
     }
     object UsageReportEntity {
       
@@ -688,20 +676,19 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReportParameters extends StObject {
       
-      var boolValue: js.UndefOr[Boolean] = js.native
+      var boolValue: js.UndefOr[Boolean] = js.undefined
       
-      var datetimeValue: js.UndefOr[String] = js.native
+      var datetimeValue: js.UndefOr[String] = js.undefined
       
-      var intValue: js.UndefOr[String] = js.native
+      var intValue: js.UndefOr[String] = js.undefined
       
-      var msgValue: js.UndefOr[js.Array[js.Object]] = js.native
+      var msgValue: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var stringValue: js.UndefOr[String] = js.native
+      var stringValue: js.UndefOr[String] = js.undefined
     }
     object UsageReportParameters {
       
@@ -755,18 +742,17 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReports extends StObject {
       
-      var etag: js.UndefOr[String] = js.native
+      var etag: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var usageReports: js.UndefOr[js.Array[UsageReport]] = js.native
+      var usageReports: js.UndefOr[js.Array[UsageReport]] = js.undefined
       
-      var warnings: js.UndefOr[js.Array[UsageReportsWarnings]] = js.native
+      var warnings: js.UndefOr[js.Array[UsageReportsWarnings]] = js.undefined
     }
     object UsageReports {
       
@@ -817,14 +803,13 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReportsWarnings extends StObject {
       
-      var code: js.UndefOr[String] = js.native
+      var code: js.UndefOr[String] = js.undefined
       
-      var data: js.UndefOr[js.Array[UsageReportsWarningsData]] = js.native
+      var data: js.UndefOr[js.Array[UsageReportsWarningsData]] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
     }
     object UsageReportsWarnings {
       
@@ -860,12 +845,11 @@ object AdminReports {
       }
     }
     
-    @js.native
     trait UsageReportsWarningsData extends StObject {
       
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
-      var value: js.UndefOr[String] = js.native
+      var value: js.UndefOr[String] = js.undefined
     }
     object UsageReportsWarningsData {
       

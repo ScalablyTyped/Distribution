@@ -2,19 +2,17 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for an alert listing request.
   */
-@js.native
 trait SchemaListAlertsResponse extends StObject {
   
   /**
     * The list of alerts.
     */
-  var alerts: js.UndefOr[js.Array[SchemaAlert]] = js.native
+  var alerts: js.UndefOr[js.Array[SchemaAlert]] = js.undefined
   
   /**
     * The token for the next page. If not empty, indicates that there may be
@@ -22,7 +20,7 @@ trait SchemaListAlertsResponse extends StObject {
     * subsequent ListAlertsRequest to get alerts continuing from last result of
     * the current list call.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAlertsResponse {
   

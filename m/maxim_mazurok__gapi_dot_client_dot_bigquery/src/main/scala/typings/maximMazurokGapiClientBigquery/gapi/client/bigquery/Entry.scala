@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entry extends StObject {
   
   /** Number of items being predicted as this label. */
-  var itemCount: js.UndefOr[String] = js.native
+  var itemCount: js.UndefOr[String] = js.undefined
   
   /** The predicted label. For confidence_threshold > 0, we will also add an entry indicating the number of items under the confidence threshold. */
-  var predictedLabel: js.UndefOr[String] = js.native
+  var predictedLabel: js.UndefOr[String] = js.undefined
 }
 object Entry {
   

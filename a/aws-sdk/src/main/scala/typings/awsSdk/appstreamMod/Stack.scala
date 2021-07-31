@@ -2,76 +2,74 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stack extends StObject {
   
   /**
     * The list of virtual private cloud (VPC) interface endpoint objects. Users of the stack can connect to AppStream 2.0 only through the specified endpoints. 
     */
-  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.native
+  var AccessEndpoints: js.UndefOr[AccessEndpointList] = js.undefined
   
   /**
     * The persistent application settings for users of the stack.
     */
-  var ApplicationSettings: js.UndefOr[ApplicationSettingsResponse] = js.native
+  var ApplicationSettings: js.UndefOr[ApplicationSettingsResponse] = js.undefined
   
   /**
     * The ARN of the stack.
     */
-  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.appstreamMod.Arn] = js.undefined
   
   /**
     * The time the stack was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp] = js.native
+  var CreatedTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description to display.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The stack name to display.
     */
-  var DisplayName: js.UndefOr[String] = js.native
+  var DisplayName: js.UndefOr[String] = js.undefined
   
   /**
     * The domains where AppStream 2.0 streaming sessions can be embedded in an iframe. You must approve the domains that you want to host embedded AppStream 2.0 streaming sessions.
     */
-  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.native
+  var EmbedHostDomains: js.UndefOr[typings.awsSdk.appstreamMod.EmbedHostDomains] = js.undefined
   
   /**
     * The URL that users are redirected to after they click the Send Feedback link. If no URL is specified, no Send Feedback link is displayed.
     */
-  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.native
+  var FeedbackURL: js.UndefOr[typings.awsSdk.appstreamMod.FeedbackURL] = js.undefined
   
   /**
     * The name of the stack.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * The URL that users are redirected to after their streaming session ends.
     */
-  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.native
+  var RedirectURL: js.UndefOr[typings.awsSdk.appstreamMod.RedirectURL] = js.undefined
   
   /**
     * The errors for the stack.
     */
-  var StackErrors: js.UndefOr[typings.awsSdk.appstreamMod.StackErrors] = js.native
+  var StackErrors: js.UndefOr[typings.awsSdk.appstreamMod.StackErrors] = js.undefined
   
   /**
     * The storage connectors to enable.
     */
-  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.native
+  var StorageConnectors: js.UndefOr[StorageConnectorList] = js.undefined
   
   /**
     * The actions that are enabled or disabled for users during their streaming sessions. By default these actions are enabled.
     */
-  var UserSettings: js.UndefOr[UserSettingList] = js.native
+  var UserSettings: js.UndefOr[UserSettingList] = js.undefined
 }
 object Stack {
   

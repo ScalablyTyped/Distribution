@@ -7,22 +7,22 @@ import typings.std.WebGLContextAttributes
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gl", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: Double): WebGLRenderingContext with StackGLExtension = js.native
-  @JSImport("gl", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: Double, options: WebGLContextAttributes): WebGLRenderingContext with StackGLExtension = js.native
+  @scala.inline
+  def apply(width: Double, height: Double): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
+  @scala.inline
+  def apply(width: Double, height: Double, options: WebGLContextAttributes): WebGLRenderingContext & StackGLExtension = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[WebGLRenderingContext & StackGLExtension]
   
+  @JSImport("gl", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait STACKGLDestroyContext extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
   }
   object STACKGLDestroyContext {
     
@@ -40,10 +40,9 @@ object mod {
     }
   }
   
-  @js.native
   trait STACKGLResizeDrawingbuffer extends StObject {
     
-    def resize(width: GLint, height: GLint): Unit = js.native
+    def resize(width: GLint, height: GLint): Unit
   }
   object STACKGLResizeDrawingbuffer {
     

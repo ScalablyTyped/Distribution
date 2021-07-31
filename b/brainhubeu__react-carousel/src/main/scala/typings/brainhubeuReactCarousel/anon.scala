@@ -7,31 +7,29 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterCarouselItems extends StObject {
     
-    var afterCarouselItems: js.UndefOr[js.Function0[Element]] = js.native
+    var afterCarouselItems: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var beforeCarouselItems: js.UndefOr[js.Function0[Element]] = js.native
+    var beforeCarouselItems: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var carouselClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var carouselClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var carouselCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[_]]]] = js.native
+    var carouselCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
     
-    var itemClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.native
+    var itemClassNames: js.UndefOr[js.Function0[js.Array[String]]] = js.undefined
     
-    var plugin: js.UndefOr[js.Function0[Unit]] = js.native
+    var plugin: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[_]]]] = js.native
+    var slideCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
     
-    var strategies: js.UndefOr[js.Function0[Record[String, PluginStrategy]]] = js.native
+    var strategies: js.UndefOr[js.Function0[Record[String, PluginStrategy]]] = js.undefined
     
-    var trackCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[_]]]] = js.native
+    var trackCustomProps: js.UndefOr[js.Function0[Record[String, js.Function0[js.Any]]]] = js.undefined
   }
   object AfterCarouselItems {
     
@@ -63,7 +61,7 @@ object anon {
       def setCarouselClassNamesUndefined: Self = StObject.set(x, "carouselClassNames", js.undefined)
       
       @scala.inline
-      def setCarouselCustomProps(value: () => Record[String, js.Function0[_]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
+      def setCarouselCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "carouselCustomProps", js.Any.fromFunction0(value))
       
       @scala.inline
       def setCarouselCustomPropsUndefined: Self = StObject.set(x, "carouselCustomProps", js.undefined)
@@ -81,7 +79,7 @@ object anon {
       def setPluginUndefined: Self = StObject.set(x, "plugin", js.undefined)
       
       @scala.inline
-      def setSlideCustomProps(value: () => Record[String, js.Function0[_]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
+      def setSlideCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "slideCustomProps", js.Any.fromFunction0(value))
       
       @scala.inline
       def setSlideCustomPropsUndefined: Self = StObject.set(x, "slideCustomProps", js.undefined)
@@ -93,21 +91,20 @@ object anon {
       def setStrategiesUndefined: Self = StObject.set(x, "strategies", js.undefined)
       
       @scala.inline
-      def setTrackCustomProps(value: () => Record[String, js.Function0[_]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
+      def setTrackCustomProps(value: () => Record[String, js.Function0[js.Any]]): Self = StObject.set(x, "trackCustomProps", js.Any.fromFunction0(value))
       
       @scala.inline
       def setTrackCustomPropsUndefined: Self = StObject.set(x, "trackCustomProps", js.undefined)
     }
   }
   
-  @js.native
   trait CarouselProps extends StObject {
     
-    var carouselProps: typings.brainhubeuReactCarousel.mod.CarouselProps = js.native
+    var carouselProps: typings.brainhubeuReactCarousel.mod.CarouselProps
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var refs: Record[String, RefObject[HTMLElement]] = js.native
+    var refs: Record[String, RefObject[HTMLElement]]
   }
   object CarouselProps {
     
@@ -138,24 +135,23 @@ object anon {
   }
   
   /* Inlined std.Pick<@brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, std.Exclude<keyof @brainhubeu/react-carousel.@brainhubeu/react-carousel.CarouselProps, 'breakpoints' | 'plugins'>> */
-  @js.native
   trait PickCarouselPropsExcludek extends StObject {
     
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var itemWidth: js.UndefOr[Double] = js.native
+    var itemWidth: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ Double, Unit]] = js.undefined
     
-    var slides: js.UndefOr[js.Array[Element]] = js.native
+    var slides: js.UndefOr[js.Array[Element]] = js.undefined
     
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object PickCarouselPropsExcludek {
     

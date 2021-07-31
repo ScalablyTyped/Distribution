@@ -5,28 +5,26 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
-  var REVISION: Double = js.native
+  var REVISION: Double
   
-  def addPanel(panel: Panel): Panel = js.native
+  def addPanel(panel: Panel): Panel
   
-  def begin(): Unit = js.native
+  def begin(): Unit
   
-  var dom: HTMLDivElement = js.native
+  var dom: HTMLDivElement
   
-  def end(): Double = js.native
+  def end(): Double
   
   /**
     * @param value 0:fps, 1: ms, 2: mb, 3+: custom
     */
-  def showPanel(value: Double): Unit = js.native
+  def showPanel(value: Double): Unit
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object Stats {
   
@@ -44,12 +42,11 @@ object Stats {
     __obj.asInstanceOf[Stats]
   }
   
-  @js.native
   trait Panel extends StObject {
     
-    var dom: HTMLCanvasElement = js.native
+    var dom: HTMLCanvasElement
     
-    def update(value: Double, maxValue: Double): Unit = js.native
+    def update(value: Double, maxValue: Double): Unit
   }
   object Panel {
     

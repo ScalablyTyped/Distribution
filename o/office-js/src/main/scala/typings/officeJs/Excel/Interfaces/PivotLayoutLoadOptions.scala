@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait PivotLayoutLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFormat: js.UndefOr[Boolean] = js.native
+  var autoFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var enableFieldList: js.UndefOr[Boolean] = js.native
+  var enableFieldList: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var layoutType: js.UndefOr[Boolean] = js.native
+  var layoutType: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var preserveFormatting: js.UndefOr[Boolean] = js.native
+  var preserveFormatting: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showColumnGrandTotals: js.UndefOr[Boolean] = js.native
+  var showColumnGrandTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showRowGrandTotals: js.UndefOr[Boolean] = js.native
+  var showRowGrandTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -74,7 +72,7 @@ trait PivotLayoutLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var subtotalLocation: js.UndefOr[Boolean] = js.native
+  var subtotalLocation: js.UndefOr[Boolean] = js.undefined
 }
 object PivotLayoutLoadOptions {
   

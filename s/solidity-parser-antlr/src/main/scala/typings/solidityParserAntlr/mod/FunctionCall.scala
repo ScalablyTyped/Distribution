@@ -2,34 +2,28 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionCall
-  extends Expression
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with Expression {
   
-  var arguments: js.Array[Expression] = js.native
+  var arguments: js.Array[Expression]
   
-  var expression: Expression = js.native
+  var expression: Expression
   
-  var names: js.Array[String] = js.native
+  var names: js.Array[String]
   
   @JSName("type")
-  var type_FunctionCall: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall = js.native
+  var type_FunctionCall: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall
 }
 object FunctionCall {
   
   @scala.inline
-  def apply(
-    arguments: js.Array[Expression],
-    expression: Expression,
-    names: js.Array[String],
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionCall
-  ): FunctionCall = {
+  def apply(arguments: js.Array[Expression], expression: Expression, names: js.Array[String]): FunctionCall = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], names = names.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionCall")
     __obj.asInstanceOf[FunctionCall]
   }
   

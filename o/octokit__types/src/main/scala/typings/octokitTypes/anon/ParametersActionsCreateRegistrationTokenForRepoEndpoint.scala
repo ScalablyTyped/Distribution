@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActionsCreateRegistrationTokenForRepoRe
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActionsCreateRegistrationTokenForRepoEndpoint extends StObject {
   
-  var parameters: ActionsCreateRegistrationTokenForRepoEndpoint = js.native
+  var parameters: ActionsCreateRegistrationTokenForRepoEndpoint
   
-  var request: ActionsCreateRegistrationTokenForRepoRequestOptions = js.native
+  var request: ActionsCreateRegistrationTokenForRepoRequestOptions
   
-  var response: OctokitResponse[ActionsCreateRegistrationTokenForRepoResponseData] = js.native
+  var response: OctokitResponse[ActionsCreateRegistrationTokenForRepoResponseData]
 }
 object ParametersActionsCreateRegistrationTokenForRepoEndpoint {
   

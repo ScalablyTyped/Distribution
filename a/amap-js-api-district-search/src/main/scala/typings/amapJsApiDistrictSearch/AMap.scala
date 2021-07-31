@@ -17,13 +17,14 @@ import typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error
 import typings.amapJsApiDistrictSearch.anon.Info
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
   
   @js.native
-  trait DistrictSearch extends EventEmitter {
+  trait DistrictSearch
+    extends StObject
+       with EventEmitter {
     
     /**
       * 根据关键字查询行政区或商圈信息
@@ -62,43 +63,42 @@ object AMap {
   }
   object DistrictSearch {
     
-    @js.native
     trait District extends StObject {
       
       /**
         * 区域编码
         */
-      var adcode: String = js.native
+      var adcode: String
       
       /**
         * 边界坐标集合
         */
-      var boundaries: js.UndefOr[js.Array[js.Array[LngLat]]] = js.native
+      var boundaries: js.UndefOr[js.Array[js.Array[LngLat]]] = js.undefined
       
       /**
         * 中心点经纬度坐标
         */
-      var center: LngLat = js.native
+      var center: LngLat
       
       /**
         * 城市编码
         */
-      var citycode: String = js.native
+      var citycode: String
       
       /**
         * 下级行政区信息列表
         */
-      var districtList: js.UndefOr[js.Array[District]] = js.native
+      var districtList: js.UndefOr[js.Array[District]] = js.undefined
       
       /**
         * 行政区划级别
         */
-      var level: Level = js.native
+      var level: Level
       
       /**
         * 行政区名称
         */
-      var name: String = js.native
+      var name: String
     }
     object District {
       
@@ -146,15 +146,14 @@ object AMap {
       }
     }
     
-    @js.native
     trait EventMap extends StObject {
       
       var complete: Event_[
             typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.complete, 
             SearchResult
-          ] = js.native
+          ]
       
-      var error: Event_[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.error, Info]
     }
     object EventMap {
       
@@ -201,23 +200,22 @@ object AMap {
       def province: typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province = "province".asInstanceOf[typings.amapJsApiDistrictSearch.amapJsApiDistrictSearchStrings.province]
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 是否返回行政区边界坐标点
         */
-      var extensions: js.UndefOr[base | all] = js.native
+      var extensions: js.UndefOr[base | all] = js.undefined
       
       /**
         * 关键字对应的行政区级别或商圈
         */
-      var level: js.UndefOr[Level] = js.native
+      var level: js.UndefOr[Level] = js.undefined
       
       /**
         * 是否显示商圈
         */
-      var showbiz: js.UndefOr[Boolean] = js.native
+      var showbiz: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 显示下级行政区级数
@@ -226,7 +224,7 @@ object AMap {
         * 2：返回下两级行政区
         * 3：返回下三级行政区
         */
-      var subdistrict: js.UndefOr[`0` | `1` | `2` | `3`] = js.native
+      var subdistrict: js.UndefOr[`0` | `1` | `2` | `3`] = js.undefined
     }
     object Options {
       
@@ -265,18 +263,17 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResult extends StObject {
       
       /**
         * 行政区划列表
         */
-      var districtList: js.Array[District] = js.native
+      var districtList: js.Array[District]
       
       /**
         * 成功状态文字描述
         */
-      var info: String = js.native
+      var info: String
     }
     object SearchResult {
       

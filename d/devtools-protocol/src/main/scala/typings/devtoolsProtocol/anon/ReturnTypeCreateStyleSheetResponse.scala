@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.CreateStyleSheetRequest
 import typings.devtoolsProtocol.mod.Protocol.CSS.CreateStyleSheetResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCreateStyleSheetResponse extends StObject {
   
-  var paramsType: js.Array[CreateStyleSheetRequest] = js.native
+  var paramsType: js.Array[CreateStyleSheetRequest]
   
-  var returnType: CreateStyleSheetResponse = js.native
+  var returnType: CreateStyleSheetResponse
 }
 object ReturnTypeCreateStyleSheetResponse {
   

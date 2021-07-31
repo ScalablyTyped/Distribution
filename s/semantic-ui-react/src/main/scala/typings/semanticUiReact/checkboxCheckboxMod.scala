@@ -20,7 +20,6 @@ import typings.semanticUiReact.semanticUiReactStrings.radio
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxCheckboxMod extends Shortcut {
@@ -37,9 +36,9 @@ object checkboxCheckboxMod extends Shortcut {
   @js.native
   val default: ComponentClass[CheckboxProps, ComponentState] = js.native
   
-  @js.native
   trait CheckboxProps
-    extends StrictCheckboxProps
+    extends StObject
+       with StrictCheckboxProps
        with /* key */ StringDictionary[js.Any]
   object CheckboxProps {
     
@@ -50,27 +49,28 @@ object checkboxCheckboxMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait StrictCheckboxProps extends InputHTMLAttributes[HTMLInputElement] {
+  trait StrictCheckboxProps
+    extends StObject
+       with InputHTMLAttributes[HTMLInputElement] {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Whether or not checkbox is indeterminate. */
-    var defaultIndeterminate: js.UndefOr[Boolean] = js.native
+    var defaultIndeterminate: js.UndefOr[Boolean] = js.undefined
     
     /** Removes padding for a label. Auto applied when there is no label. */
-    var fitted: js.UndefOr[Boolean] = js.native
+    var fitted: js.UndefOr[Boolean] = js.undefined
     
     /** A unique identifier. */
     @JSName("id")
-    var id_StrictCheckboxProps: js.UndefOr[Double | String] = js.native
+    var id_StrictCheckboxProps: js.UndefOr[Double | String] = js.undefined
     
     /** Whether or not checkbox is indeterminate. */
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
     
     /** The text of the associated label element. */
-    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.native
+    var label: js.UndefOr[SemanticShorthandItem[HtmlLabelProps]] = js.undefined
     
     /**
       * Called when the user attempts to change the checked state.
@@ -81,7 +81,7 @@ object checkboxCheckboxMod extends Shortcut {
     @JSName("onChange")
     var onChange_StrictCheckboxProps: js.UndefOr[
         js.Function2[/* event */ FormEvent[HTMLInputElement], /* data */ CheckboxProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the checkbox or label is clicked.
@@ -96,7 +96,7 @@ object checkboxCheckboxMod extends Shortcut {
           /* data */ CheckboxProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the user presses down on the mouse.
@@ -111,7 +111,7 @@ object checkboxCheckboxMod extends Shortcut {
           /* data */ CheckboxProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the user releases the mouse.
@@ -126,28 +126,28 @@ object checkboxCheckboxMod extends Shortcut {
           /* data */ CheckboxProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Format as a radio element. This means it is an exclusive option. */
-    var radio: js.UndefOr[Boolean] = js.native
+    var radio: js.UndefOr[Boolean] = js.undefined
     
     /** Format to emphasize the current selection state. */
-    var slider: js.UndefOr[Boolean] = js.native
+    var slider: js.UndefOr[Boolean] = js.undefined
     
     /** A checkbox can receive focus. */
     @JSName("tabIndex")
-    var tabIndex_StrictCheckboxProps: js.UndefOr[Double | String] = js.native
+    var tabIndex_StrictCheckboxProps: js.UndefOr[Double | String] = js.undefined
     
     /** Format to show an on or off choice. */
-    var toggle: js.UndefOr[Boolean] = js.native
+    var toggle: js.UndefOr[Boolean] = js.undefined
     
     /** HTML input type, either checkbox or radio. */
     @JSName("type")
-    var type_StrictCheckboxProps: js.UndefOr[checkbox | radio] = js.native
+    var type_StrictCheckboxProps: js.UndefOr[checkbox | radio] = js.undefined
     
     /** The HTML input value. */
     @JSName("value")
-    var value_StrictCheckboxProps: js.UndefOr[Double | String] = js.native
+    var value_StrictCheckboxProps: js.UndefOr[Double | String] = js.undefined
   }
   object StrictCheckboxProps {
     

@@ -2,16 +2,16 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalizationClientExtension extends NormalizationSelection {
+trait NormalizationClientExtension
+  extends StObject
+     with NormalizationSelection {
   
-  var kind: String = js.native
+  var kind: String
   
   // 'ClientExtension';
-  var selections: js.Array[NormalizationSelection] = js.native
+  var selections: js.Array[NormalizationSelection]
 }
 object NormalizationClientExtension {
   

@@ -2,15 +2,15 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LogAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait LogAction[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var expr: String | (LogExpr[TContext, TEvent]) = js.native
+  var expr: String | (LogExpr[TContext, TEvent])
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
 }
 object LogAction {
   
@@ -22,7 +22,7 @@ object LogAction {
   }
   
   @scala.inline
-  implicit class LogActionMutableBuilder[Self <: LogAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (LogAction[TContext, TEvent])) extends AnyVal {
+  implicit class LogActionMutableBuilder[Self <: LogAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (LogAction[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setExpr(value: String | (LogExpr[TContext, TEvent])): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,23 +11,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The semantics of **default value** depends on the providing service.
   */
-@js.native
-trait XReset extends XInterface {
+trait XReset
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive events related to resetting the component.
     * @param aListener the listener to add.
     */
-  def addResetListener(aListener: XResetListener): Unit = js.native
+  def addResetListener(aListener: XResetListener): Unit
   
   /**
     * removes the specified listener
     * @param aListener the listener to remove
     */
-  def removeResetListener(aListener: XResetListener): Unit = js.native
+  def removeResetListener(aListener: XResetListener): Unit
   
   /** resets a component to some default value. */
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object XReset {
   

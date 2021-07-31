@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultSetSummary extends StObject {
   
-  var batchId: Double = js.native
+  var batchId: Double
   
-  var columnInfo: js.Array[IDbColumn] = js.native
+  var columnInfo: js.Array[IDbColumn]
   
-  var complete: Boolean = js.native
+  var complete: Boolean
   
-  var id: Double = js.native
+  var id: Double
   
-  var rowCount: Double = js.native
+  var rowCount: Double
 }
 object ResultSetSummary {
   

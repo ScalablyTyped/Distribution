@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultDocument extends StObject {
   
-  var operationReference: TestOperationReference = js.native
+  var operationReference: TestOperationReference
   
-  var payload: TestResultPayload = js.native
+  var payload: TestResultPayload
 }
 object TestResultDocument {
   

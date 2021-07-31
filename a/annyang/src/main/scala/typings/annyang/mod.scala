@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -81,7 +80,7 @@ object mod {
     
     def removeCallback(): Unit = js.native
     def removeCallback(
-      event: js.UndefOr[scala.Nothing],
+      event: Unit,
       callback: js.Function3[/* userSaid */ String, /* commandText */ String, /* results */ js.Array[String], Unit]
     ): Unit = js.native
     def removeCallback(event: Events): Unit = js.native
@@ -160,12 +159,11 @@ object mod {
   
   type CommandOption = StringDictionary[CommandOptionRegex | js.Function0[Unit]]
   
-  @js.native
   trait CommandOptionRegex extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var regexp: RegExp = js.native
+    var regexp: RegExp
   }
   object CommandOptionRegex {
     
@@ -232,18 +230,17 @@ object mod {
     def start: typings.annyang.annyangStrings.start = "start".asInstanceOf[typings.annyang.annyangStrings.start]
   }
   
-  @js.native
   trait StartOptions extends StObject {
     
     /**
       * Should annyang restart itself if it is closed indirectly, because of silence or window conflicts?
       */
-    var autoRestart: js.UndefOr[Boolean] = js.native
+    var autoRestart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow forcing continuous mode on or off. Annyang is pretty smart about this, so only set this if you know what you're doing.
       */
-    var continuous: js.UndefOr[Boolean] = js.native
+    var continuous: js.UndefOr[Boolean] = js.undefined
   }
   object StartOptions {
     

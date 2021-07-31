@@ -2,7 +2,6 @@ package typings.winrt.Windows.UI.Text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait RangeGravity extends StObject
 object RangeGravity extends StObject {
   
   @js.native
-  sealed trait backward extends RangeGravity
+  sealed trait backward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait forward extends RangeGravity
+  sealed trait forward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait inward extends RangeGravity
+  sealed trait inward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait outward extends RangeGravity
+  sealed trait outward
+    extends StObject
+       with RangeGravity
   
   @js.native
-  sealed trait uIBehavior extends RangeGravity
+  sealed trait uIBehavior
+    extends StObject
+       with RangeGravity
 }

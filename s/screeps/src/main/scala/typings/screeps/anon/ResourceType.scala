@@ -3,17 +3,15 @@ package typings.screeps.anon
 import typings.screeps.ResourceConstant
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceType extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var resourceType: ResourceConstant = js.native
+  var resourceType: ResourceConstant
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object ResourceType {
   

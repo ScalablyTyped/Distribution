@@ -14,25 +14,25 @@ import typings.relayRuntime.relayStoreTypesMod.SelectorStoreUpdater
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMutationMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useMutation", "useMutation")
+  @JSImport("react-relay/lib/relay-experimental/useMutation", JSImport.Namespace)
   @js.native
-  def useMutation[TMutation /* <: MutationParameters */](mutation: GraphQLTaggedNode): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = js.native
-  @JSImport("react-relay/lib/relay-experimental/useMutation", "useMutation")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useMutation[TMutation /* <: MutationParameters */](mutation: GraphQLTaggedNode): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
+  @scala.inline
   def useMutation[TMutation /* <: MutationParameters */](
     mutation: GraphQLTaggedNode,
     commitMutationFn: js.Function2[/* environment */ Environment, /* config */ MutationConfig[TMutation], Disposable]
-  ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = js.native
+  ): js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("useMutation")(mutation.asInstanceOf[js.Any], commitMutationFn.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[js.Function1[/* config */ UseMutationConfig[TMutation], Disposable], Boolean]]
   
-  @js.native
   trait UseMutationConfig[TMutation /* <: MutationParameters */] extends StObject {
     
-    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.native
+    var configs: js.UndefOr[js.Array[DeclarativeMutationConfig]] = js.undefined
     
     var onCompleted: js.UndefOr[
         js.Function2[
@@ -40,31 +40,31 @@ object useMutationMod {
           /* errors */ js.Array[PayloadError], 
           Unit | Null
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit | Null]] = js.native
+    var onError: js.UndefOr[js.Function1[/* error */ Error, Unit | Null]] = js.undefined
     
-    var onUnsubscribe: js.UndefOr[js.Function0[Unit | Null]] = js.native
+    var onUnsubscribe: js.UndefOr[js.Function0[Unit | Null]] = js.undefined
     
     var optimisticResponse: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: TMutation['rawResponse'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var optimisticUpdater: js.UndefOr[
         (SelectorStoreUpdater[
           /* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ js.Any
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     var updater: js.UndefOr[
         (SelectorStoreUpdater[
           /* import warning: importer.ImportType#apply Failed type conversion: TMutation['response'] */ js.Any
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var uploadables: js.UndefOr[UploadableMap] = js.native
+    var uploadables: js.UndefOr[UploadableMap] = js.undefined
     
-    var variables: VariablesOf[TMutation] = js.native
+    var variables: VariablesOf[TMutation]
   }
   object UseMutationConfig {
     
@@ -75,7 +75,7 @@ object useMutationMod {
     }
     
     @scala.inline
-    implicit class UseMutationConfigMutableBuilder[Self <: UseMutationConfig[_], TMutation /* <: MutationParameters */] (val x: Self with UseMutationConfig[TMutation]) extends AnyVal {
+    implicit class UseMutationConfigMutableBuilder[Self <: UseMutationConfig[?], TMutation /* <: MutationParameters */] (val x: Self & UseMutationConfig[TMutation]) extends AnyVal {
       
       @scala.inline
       def setConfigs(value: js.Array[DeclarativeMutationConfig]): Self = StObject.set(x, "configs", value.asInstanceOf[js.Any])

@@ -2,24 +2,22 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource representing a single performance measure or data point
   */
-@js.native
 trait SchemaPerfSample extends StObject {
   
   /**
     * Timestamp of collection
     */
-  var sampleTime: js.UndefOr[SchemaTimestamp] = js.native
+  var sampleTime: js.UndefOr[SchemaTimestamp] = js.undefined
   
   /**
     * Value observed
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SchemaPerfSample {
   

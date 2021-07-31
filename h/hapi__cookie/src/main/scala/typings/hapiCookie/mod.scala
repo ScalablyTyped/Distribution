@@ -10,7 +10,6 @@ import typings.hapiHapi.mod.Plugin
 import typings.hapiHapi.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,35 +21,34 @@ object mod extends Shortcut {
   /**
     * Options passed to 'hapi.auth.strategy' when this plugin is used
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * Only works if 'redirectTo' is true
       * If set to true, a string, or an object, appends the current request path to the query component of the 'redirectTo' URI.
       */
-    var appendNext: js.UndefOr[Boolean | String] = js.native
+    var appendNext: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Cookie options.
       *
       * @default { name: 'sid', clearInvalid: false, isSameSite: 'Strict', isSecure: true, isHttpOnly: true }
       */
-    var cookie: js.UndefOr[ServerStateCookieOptionsn] = js.native
+    var cookie: js.UndefOr[ServerStateCookieOptionsn] = js.undefined
     
     /**
       * Automatically sets the session cookie after validation to extend the current session for a new TTL duration.
       *
       * @default false
       */
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Login URI or function that returns a URI to redirect unauthenticated requests to.
       * Note that it will only trigger when the authentication mode is 'required'.
       * Defaults to no redirection.
       */
-    var redirectTo: js.UndefOr[String | RedirectToFunction] = js.native
+    var redirectTo: js.UndefOr[String | RedirectToFunction] = js.undefined
     
     /**
       * A name to use with decorating the request object.
@@ -59,13 +57,13 @@ object mod extends Shortcut {
       *
       * @default 'cookieAuth'
       */
-    var requestDecoratorName: js.UndefOr[String] = js.native
+    var requestDecoratorName: js.UndefOr[String] = js.undefined
     
     /**
       * An optional session validation function used to validate the content of the session cookie on each request.
       * Used to verify that the internal session state is still valid (e.g. user account still exists).
       */
-    var validateFunc: js.UndefOr[ValidateFunction] = js.native
+    var validateFunc: js.UndefOr[ValidateFunction] = js.undefined
   }
   object Options {
     
@@ -129,12 +127,11 @@ object mod extends Shortcut {
     js.Promise[ValidateResponse]
   ]
   
-  @js.native
   trait ValidateResponse extends StObject {
     
-    var credentials: js.UndefOr[AuthCredentials] = js.native
+    var credentials: js.UndefOr[AuthCredentials] = js.undefined
     
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object ValidateResponse {
     
@@ -166,10 +163,9 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait PluginSpecificConfiguration extends StObject {
       
-      var `hapi-auth-cookie`: js.UndefOr[RedirectTo] = js.native
+      var `hapi-auth-cookie`: js.UndefOr[RedirectTo] = js.undefined
     }
     object PluginSpecificConfiguration {
       
@@ -190,10 +186,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Request extends StObject {
       
-      var cookieAuth: Clear = js.native
+      var cookieAuth: Clear
     }
     object Request {
       

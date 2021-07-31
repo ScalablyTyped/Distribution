@@ -2,17 +2,17 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from a GET indirection by UID request.
   */
-@js.native
-trait IndirectionByUidResponse extends ResponseBase {
+trait IndirectionByUidResponse
+  extends StObject
+     with ResponseBase {
   
   @JSName("result")
-  var result_IndirectionByUidResponse: Indirection = js.native
+  var result_IndirectionByUidResponse: Indirection
 }
 object IndirectionByUidResponse {
   

@@ -10,7 +10,6 @@ import typings.koaHbs.anon.TypeofUtils
 import typings.koaHbs.mod.Hbs.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -27,44 +26,69 @@ object mod extends Shortcut {
     def this(str: String) = this()
   }
   
-  @js.native
   trait Hbs extends StObject {
     
-    var SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString] = js.native
+    var SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]
     
-    var Utils: TypeofUtils = js.native
+    var Utils: TypeofUtils
     
-    def middleware(opts: Middleware): js.Any = js.native
+    def middleware(opts: Middleware): js.Any
     
-    def registerHelper(name: String, fn: HelperDelegate): Unit = js.native
-    def registerHelper(name: HelperDeclareSpec): Unit = js.native
+    def registerHelper(name: String, fn: HelperDelegate): Unit
+    def registerHelper(name: HelperDeclareSpec): Unit
     @JSName("registerHelper")
-    var registerHelper_Original: FnCall = js.native
+    var registerHelper_Original: FnCall
   }
   object Hbs {
     
-    @js.native
+    @scala.inline
+    def apply(
+      SafeString: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString],
+      Utils: TypeofUtils,
+      middleware: Middleware => js.Any,
+      registerHelper: FnCall
+    ): Hbs = {
+      val __obj = js.Dynamic.literal(SafeString = SafeString.asInstanceOf[js.Any], Utils = Utils.asInstanceOf[js.Any], middleware = js.Any.fromFunction1(middleware), registerHelper = registerHelper.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Hbs]
+    }
+    
+    @scala.inline
+    implicit class HbsMutableBuilder[Self <: Hbs] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMiddleware(value: Middleware => js.Any): Self = StObject.set(x, "middleware", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setRegisterHelper(value: FnCall): Self = StObject.set(x, "registerHelper", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSafeString(value: Instantiable1[/* str */ String, typings.handlebars.mod.SafeString]): Self = StObject.set(x, "SafeString", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setUtils(value: TypeofUtils): Self = StObject.set(x, "Utils", value.asInstanceOf[js.Any])
+    }
+    
     trait Middleware extends StObject {
       
-      var blockHelperName: js.UndefOr[String] = js.native
+      var blockHelperName: js.UndefOr[String] = js.undefined
       
-      var contentHelperName: js.UndefOr[String] = js.native
+      var contentHelperName: js.UndefOr[String] = js.undefined
       
-      var defaultLayout: js.UndefOr[String] = js.native
+      var defaultLayout: js.UndefOr[String] = js.undefined
       
-      var disableCache: js.UndefOr[Boolean] = js.native
+      var disableCache: js.UndefOr[Boolean] = js.undefined
       
-      var extname: js.UndefOr[String] = js.native
+      var extname: js.UndefOr[String] = js.undefined
       
-      var handlebars: js.UndefOr[js.Function] = js.native
+      var handlebars: js.UndefOr[js.Function] = js.undefined
       
-      var layoutsPath: js.UndefOr[String] = js.native
+      var layoutsPath: js.UndefOr[String] = js.undefined
       
-      var partialsPath: js.UndefOr[js.Array[String] | String] = js.native
+      var partialsPath: js.UndefOr[js.Array[String] | String] = js.undefined
       
-      var templateOptions: js.UndefOr[js.Object] = js.native
+      var templateOptions: js.UndefOr[js.Object] = js.undefined
       
-      var viewPath: js.Array[String] | String = js.native
+      var viewPath: js.Array[String] | String
     }
     object Middleware {
       

@@ -2,19 +2,17 @@ package typings.bootstrapDatepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerViewDate extends StObject {
   
   /** Day of the month starting with 1 */
-  var day: Double = js.native
+  var day: Double
   
   /** Month starting with 0 */
-  var month: Double = js.native
+  var month: Double
   
-  var year: Double = js.native
+  var year: Double
 }
 object DatepickerViewDate {
   

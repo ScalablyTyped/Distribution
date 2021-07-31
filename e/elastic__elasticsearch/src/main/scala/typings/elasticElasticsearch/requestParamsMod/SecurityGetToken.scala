@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityGetToken[T] extends Generic {
+trait SecurityGetToken[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
 }
 object SecurityGetToken {
   
@@ -19,7 +19,7 @@ object SecurityGetToken {
   }
   
   @scala.inline
-  implicit class SecurityGetTokenMutableBuilder[Self <: SecurityGetToken[_], T] (val x: Self with SecurityGetToken[T]) extends AnyVal {
+  implicit class SecurityGetTokenMutableBuilder[Self <: SecurityGetToken[?], T] (val x: Self & SecurityGetToken[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -2,25 +2,23 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxSizing extends StObject {
   
-  var MozBoxSizing: String = js.native
+  var MozBoxSizing: String
   
-  var boxSizing: String = js.native
+  var boxSizing: String
   
-  var display: String = js.native
+  var display: String
   
-  var height: String = js.native
+  var height: String
   
-  var position: String = js.native
+  var position: String
   
-  var visibility: String = js.native
+  var visibility: String
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object BoxSizing {
   

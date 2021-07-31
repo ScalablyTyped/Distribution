@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for a Datastore connector used by the job.
   */
-@js.native
 trait SchemaDatastoreIODetails extends StObject {
   
   /**
     * Namespace used in the connection.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * ProjectId accessed in the connection.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object SchemaDatastoreIODetails {
   

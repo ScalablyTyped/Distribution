@@ -2,29 +2,27 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A line, curved line or other simple two dimensional shape.
   */
-@js.native
 trait IPath extends StObject {
   
   /**
     * Optional layer of this path.
     */
-  var layer: js.UndefOr[String] = js.native
+  var layer: js.UndefOr[String] = js.undefined
   
   /**
     * The main point of reference for this path.
     */
-  var origin: IPoint = js.native
+  var origin: IPoint
   
   /**
     * The type of the path, e.g. "line", "circle", or "arc". These strings are enumerated in pathType.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object IPath {
   

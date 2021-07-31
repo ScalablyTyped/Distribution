@@ -8,28 +8,27 @@ import typings.lodash.mod.Primitive
 import typings.lodash.mod.__
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait LodashBindKey extends StObject {
   
   def apply(`object`: js.Object): LodashBindKey1x1 = js.native
-  def apply(`object`: js.Object, key: String): js.Function1[/* repeated */ js.Any, _] = js.native
+  def apply(`object`: js.Object, key: String): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   def apply(`object`: __, key: String): LodashBindKey1x2 = js.native
   
   def placeholder(): typings.lodash.mod.String = js.native
   def placeholder(value: String): typings.lodash.mod.String = js.native
-  def placeholder[T /* <: js.Object */](value: T): Object[T] = js.native
+  def placeholder[T /* <: js.Function1[/* args */ js.Any, js.Any] */](value: T): Function[T] = js.native
   def placeholder[T](value: List[T]): Collection[T] = js.native
   @JSName("placeholder")
   var placeholder_Original: __ = js.native
   @JSName("placeholder")
   def placeholder_T_Collection[T](): Collection[T] = js.native
   @JSName("placeholder")
-  def placeholder_T_Function1AnyWildcard_Function[T /* <: js.Function1[/* args */ js.Any, _] */](value: T): Function[T] = js.native
-  @JSName("placeholder")
   def placeholder_T_Object_Object[T /* <: js.Object */](): Object[T] = js.native
+  @JSName("placeholder")
+  def placeholder_T_Object_Object[T /* <: js.Object */](value: T): Object[T] = js.native
   @JSName("placeholder")
   def placeholder_T_Primitive[T](value: T): Primitive[T] = js.native
   @JSName("placeholder")
@@ -103,5 +102,5 @@ trait LodashBindKey extends StObject {
     * upperFirst, value, and words.
     **/
   @JSName("placeholder")
-  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[_] with Function[_] with Object[_] with Primitive[_] with typings.lodash.mod.String = js.native
+  def placeholder_TrapAny_TrapAny_Intersection[TrapAny /* <: typings.lodash.anon.TrapAny */](value: TrapAny): Collection[js.Any] & Function[js.Any] & Object[js.Any] & Primitive[js.Any] & typings.lodash.mod.String = js.native
 }

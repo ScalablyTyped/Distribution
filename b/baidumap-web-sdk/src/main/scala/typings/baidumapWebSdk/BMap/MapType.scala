@@ -2,25 +2,23 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapType extends StObject {
   
-  def getMaxZoom(): Double = js.native
+  def getMaxZoom(): Double
   
-  def getMinZoom(): Double = js.native
+  def getMinZoom(): Double
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def getProjection(): Projection = js.native
+  def getProjection(): Projection
   
-  def getTextColor(): String = js.native
+  def getTextColor(): String
   
-  def getTileLayer(): TileLayer = js.native
+  def getTileLayer(): TileLayer
   
-  def getTips(): String = js.native
+  def getTips(): String
 }
 object MapType {
   

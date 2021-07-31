@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties (beyond the regular HTMLElement interface it also has available to it by inheritance) for manipulating <basefont> elements. */
 @js.native
 trait HTMLBaseFontElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with DOML2DeprecatedColorProperty {
   
   /* InferMemberOverrides */

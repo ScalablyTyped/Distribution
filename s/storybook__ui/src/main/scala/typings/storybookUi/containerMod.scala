@@ -6,6 +6,7 @@ import typings.react.mod.ReactNode
 import typings.react.mod.SFC
 import typings.reactDraggable.mod.DraggableData
 import typings.reactDraggable.mod.DraggableEvent
+import typings.storybookApi.modulesStoriesMod.ViewMode
 import typings.storybookTheming.typesMod.Theme
 import typings.storybookUi.anon.Align
 import typings.storybookUi.anon.BasePanelRenderPropsalign
@@ -20,7 +21,6 @@ import typings.storybookUi.storybookUiStrings.nav
 import typings.storybookUi.storybookUiStrings.panel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
@@ -64,18 +64,15 @@ object containerMod {
   @js.native
   val Sidebar: FunctionComponent[Hidden] = js.native
   
-  @js.native
   trait BasePanelRenderProps extends StObject {
     
-    var animate: Boolean = js.native
+    var animate: Boolean
     
-    var isFullscreen: js.UndefOr[Boolean] = js.native
+    var isFullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var position: Bounds = js.native
+    var position: Bounds
     
-    var viewMode: js.UndefOr[
-        /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-      ] = js.native
+    var viewMode: js.UndefOr[ViewMode & js.UndefOr[String]] = js.undefined
   }
   object BasePanelRenderProps {
     
@@ -101,25 +98,22 @@ object containerMod {
       def setPosition(value: Bounds): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setViewMode(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-      ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setViewModeUndefined: Self = StObject.set(x, "viewMode", js.undefined)
     }
   }
   
-  @js.native
   trait Bounds extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Bounds {
     
@@ -146,12 +140,11 @@ object containerMod {
     }
   }
   
-  @js.native
   trait Coordinates extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Coordinates {
     
@@ -172,22 +165,21 @@ object containerMod {
     }
   }
   
-  @js.native
   trait LayoutProps extends StObject {
     
-    var bounds: Left = js.native
+    var bounds: Left
     
-    def children(data: LayoutRenderProps): ReactNode = js.native
+    def children(data: LayoutRenderProps): ReactNode
     
-    var docsOnly: Boolean = js.native
+    var docsOnly: Boolean
     
-    var options: IsToolshown = js.native
+    var options: IsToolshown
     
-    var panelCount: Double = js.native
+    var panelCount: Double
     
-    var theme: Theme = js.native
+    var theme: Theme
     
-    var viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any = js.native
+    var viewMode: ViewMode & js.UndefOr[String]
   }
   object LayoutProps {
     
@@ -199,7 +191,7 @@ object containerMod {
       options: IsToolshown,
       panelCount: Double,
       theme: Theme,
-      viewMode: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
+      viewMode: ViewMode & js.UndefOr[String]
     ): LayoutProps = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], children = js.Any.fromFunction1(children), docsOnly = docsOnly.asInstanceOf[js.Any], options = options.asInstanceOf[js.Any], panelCount = panelCount.asInstanceOf[js.Any], theme = theme.asInstanceOf[js.Any], viewMode = viewMode.asInstanceOf[js.Any])
       __obj.asInstanceOf[LayoutProps]
@@ -227,22 +219,19 @@ object containerMod {
       def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setViewMode(
-        value: /* import warning: importer.ImportType#apply Failed type conversion: @storybook/api.@storybook/api.State['viewMode'] */ js.Any
-      ): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
+      def setViewMode(value: ViewMode & js.UndefOr[String]): Self = StObject.set(x, "viewMode", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait LayoutRenderProps extends StObject {
     
-    var mainProps: BasePanelRenderProps = js.native
+    var mainProps: BasePanelRenderProps
     
-    var navProps: BasePanelRenderPropshidde = js.native
+    var navProps: BasePanelRenderPropshidde
     
-    var panelProps: BasePanelRenderPropsalign = js.native
+    var panelProps: BasePanelRenderPropsalign
     
-    var previewProps: BasePanelRenderPropsdocsO = js.native
+    var previewProps: BasePanelRenderPropsdocsO
   }
   object LayoutRenderProps {
     
@@ -274,14 +263,13 @@ object containerMod {
     }
   }
   
-  @js.native
   trait LayoutState extends StObject {
     
-    var isDragging: nav | panel | `false` = js.native
+    var isDragging: nav | panel | `false`
     
-    var resizerNav: Coordinates = js.native
+    var resizerNav: Coordinates
     
-    var resizerPanel: Coordinates = js.native
+    var resizerPanel: Coordinates
   }
   object LayoutState {
     

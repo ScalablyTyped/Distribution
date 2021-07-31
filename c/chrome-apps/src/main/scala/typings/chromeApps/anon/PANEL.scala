@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.panel
 import typings.chromeApps.chromeAppsStrings.shell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PANEL extends StObject {
   
-  var PANEL: panel = js.native
+  var PANEL: panel
   
-  var SHELL: shell = js.native
+  var SHELL: shell
 }
 object PANEL {
   
   @scala.inline
-  def apply(PANEL: panel, SHELL: shell): PANEL = {
-    val __obj = js.Dynamic.literal(PANEL = PANEL.asInstanceOf[js.Any], SHELL = SHELL.asInstanceOf[js.Any])
+  def apply(): PANEL = {
+    val __obj = js.Dynamic.literal(PANEL = "panel", SHELL = "shell")
     __obj.asInstanceOf[PANEL]
   }
   

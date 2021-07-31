@@ -3,17 +3,15 @@ package typings.devextreme.anon
 import typings.devextreme.mod.DevExpress.viz.basePointObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementTarget extends StObject {
   
-  var component: js.UndefOr[js.Any] = js.native
+  var component: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var target: js.UndefOr[basePointObject] = js.native
+  var target: js.UndefOr[basePointObject] = js.undefined
 }
 object ElementTarget {
   

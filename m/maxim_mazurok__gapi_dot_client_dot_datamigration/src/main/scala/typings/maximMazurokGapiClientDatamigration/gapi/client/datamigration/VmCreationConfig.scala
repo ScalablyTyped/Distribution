@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatamigration.gapi.client.datamigration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmCreationConfig extends StObject {
   
   /** The subnet name the vm needs to be created in. */
-  var subnet: js.UndefOr[String] = js.native
+  var subnet: js.UndefOr[String] = js.undefined
   
   /** Required. VM instance machine type to create. */
-  var vmMachineType: js.UndefOr[String] = js.native
+  var vmMachineType: js.UndefOr[String] = js.undefined
   
   /** The Google Cloud Platform zone to create the VM in. */
-  var vmZone: js.UndefOr[String] = js.native
+  var vmZone: js.UndefOr[String] = js.undefined
 }
 object VmCreationConfig {
   

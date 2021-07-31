@@ -2,20 +2,18 @@ package typings.cordovaPluginCamera
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A handle to the popover dialog created by navigator.camera.getPicture. Used on iOS only.
   */
-@js.native
 trait CameraPopoverHandle extends StObject {
   
   /**
     * Set the position of the popover.
     * @param popoverOptions the CameraPopoverOptions that specify the new position.
     */
-  def setPosition(popoverOptions: CameraPopoverOptions): Unit = js.native
+  def setPosition(popoverOptions: CameraPopoverOptions): Unit
 }
 object CameraPopoverHandle {
   

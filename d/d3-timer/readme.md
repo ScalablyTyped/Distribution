@@ -11,8 +11,8 @@ An efficient queue capable of managing thousands of concurrent animations.
 | Full name          | d3-timer |
 | Keywords           | d3, d3-module, timer, transition, animation, requestAnimationFrame, setTimeout, setInterval |
 | # releases         | 4 |
-| # dependents       | 90 |
-| # downloads        | 52898913 |
+| # dependents       | 101 |
+| # downloads        | 65116091 |
 | # stars            | 0 |
 
 ## Links

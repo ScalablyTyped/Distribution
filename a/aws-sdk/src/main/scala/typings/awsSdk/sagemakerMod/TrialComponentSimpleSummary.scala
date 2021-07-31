@@ -2,30 +2,28 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrialComponentSimpleSummary extends StObject {
   
-  var CreatedBy: js.UndefOr[UserContext] = js.native
+  var CreatedBy: js.UndefOr[UserContext] = js.undefined
   
   /**
     * When the component was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the trial component.
     */
-  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.native
+  var TrialComponentArn: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentArn] = js.undefined
   
   /**
     * The name of the trial component.
     */
-  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.native
+  var TrialComponentName: js.UndefOr[ExperimentEntityName] = js.undefined
   
-  var TrialComponentSource: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentSource] = js.native
+  var TrialComponentSource: js.UndefOr[typings.awsSdk.sagemakerMod.TrialComponentSource] = js.undefined
 }
 object TrialComponentSimpleSummary {
   

@@ -3,31 +3,31 @@ package typings.axiosTokenInterceptor
 import typings.axios.mod.AxiosRequestConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   // Module
+  @scala.inline
+  def apply(Options: InterceptorOptions): TokenProvider = ^.asInstanceOf[js.Dynamic].apply(Options.asInstanceOf[js.Any]).asInstanceOf[TokenProvider]
+  
   @JSImport("axios-token-interceptor", JSImport.Namespace)
   @js.native
-  def apply(Options: InterceptorOptions): TokenProvider = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("axios-token-interceptor", "tokenCache")
-  @js.native
-  def tokenCache(getToken: js.Function0[js.Promise[String]], options: TokenCacheOptions): TokenCache_ = js.native
+  @scala.inline
+  def tokenCache(getToken: js.Function0[js.Promise[String]], options: TokenCacheOptions): TokenCache_ = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenCache")(getToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[TokenCache_]
   
   // Interfaces
-  @js.native
   trait InterceptorOptions extends StObject {
     
-    var getToken: js.UndefOr[js.Function0[String | js.Promise[String]]] = js.native
+    var getToken: js.UndefOr[js.Function0[String | js.Promise[String]]] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var headerFormatter: js.UndefOr[js.Function1[/* token */ String, String]] = js.native
+    var headerFormatter: js.UndefOr[js.Function1[/* token */ String, String]] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object InterceptorOptions {
     
@@ -66,12 +66,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenCacheOptions extends StObject {
     
-    var getMaxAge: js.UndefOr[js.Function0[Double]] = js.native
+    var getMaxAge: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
   }
   object TokenCacheOptions {
     

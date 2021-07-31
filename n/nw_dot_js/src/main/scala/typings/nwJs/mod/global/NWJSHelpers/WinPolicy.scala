@@ -2,46 +2,44 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * nw.Window.get().on('new-win-policy') callback policy argument object
   */
-@js.native
 trait WinPolicy extends StObject {
   
   /**
     * Force the link to be opened in the same frame
     */
-  def forceCurrent(): Unit = js.native
+  def forceCurrent(): Unit
   
   /**
     * Force the link to be a downloadable, or open by external program
     */
-  def forceDownload(): Unit = js.native
+  def forceDownload(): Unit
   
   /**
     * Force the link to be opened in a new popup window
     */
-  def forceNewPopup(): Unit = js.native
+  def forceNewPopup(): Unit
   
   /**
     * Force the link to be opened in a new window
     */
-  def forceNewWindow(): Unit = js.native
+  def forceNewWindow(): Unit
   
   /**
     * Ignore the request, navigation won’t happen.
     */
-  def ignore(): Unit = js.native
+  def ignore(): Unit
   
   /**
     * Control the options for the new popup window.
     *
     *@param m {Object} The object is in the same format as the Window subfields in manifest format.
     */
-  def setNewWindowManifest(m: WindowOption): Unit = js.native
+  def setNewWindowManifest(m: WindowOption): Unit
 }
 object WinPolicy {
   

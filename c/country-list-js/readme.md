@@ -12,7 +12,7 @@ Country list with ISO2, ISO3 code, continent, capital, dialing code
 | Keywords           | country, geopolitical, iso2, iso3, phone, continent, capital, region |
 | # releases         | 13 |
 | # dependents       | 1 |
-| # downloads        | 41698 |
+| # downloads        | 101139 |
 | # stars            | 0 |
 
 ## Links

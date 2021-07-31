@@ -2,13 +2,13 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MotionFadeProps extends MotionProps {
+trait MotionFadeProps
+  extends StObject
+     with MotionProps {
   
-  var fadeOpacity: js.UndefOr[Double] = js.native
+  var fadeOpacity: js.UndefOr[Double] = js.undefined
 }
 object MotionFadeProps {
   

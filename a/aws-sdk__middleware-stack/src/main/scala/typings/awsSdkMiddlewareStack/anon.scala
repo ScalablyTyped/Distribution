@@ -2,21 +2,19 @@ package typings.awsSdkMiddlewareStack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait After extends StObject {
     
     var after: js.Array[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object
-      ] = js.native
+      ]
     
     var before: js.Array[
         /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.Normalized<@aws-sdk/middleware-stack.@aws-sdk/middleware-stack/dist/cjs/types.RelativeMiddlewareEntry<Input, Output>, Input, Output> */ js.Object
-      ] = js.native
+      ]
   }
   object After {
     

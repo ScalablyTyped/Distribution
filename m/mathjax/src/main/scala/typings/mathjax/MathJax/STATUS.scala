@@ -2,17 +2,15 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait STATUS extends StObject {
   
   /*The value used to indicate that a file load has caused an error or a timeout to occur.*/
-  var ERROR: String = js.native
+  var ERROR: String
   
   /*The value used to indicate that a file load has occurred successfully.*/
-  var OK: String = js.native
+  var OK: String
 }
 object STATUS {
   

@@ -12,29 +12,44 @@ import typings.puppeteer.mod.PDFOptions
 import typings.puppeteer.mod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("html5-to-pdf", JSImport.Namespace)
   @js.native
-  class ^ protected () extends HTML5ToPDF {
+  class ^ protected ()
+    extends StObject
+       with HTML5ToPDF {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    override def build(): js.Promise[Buffer] = js.native
+    
+    /* CompleteClass */
+    override def close(): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def includeAssets(): js.Promise[Unit] = js.native
+    
+    /* CompleteClass */
+    override def parseOptions(options: Options): ParsedOptions = js.native
+    
+    /* CompleteClass */
+    override def start(): js.Promise[Page] = js.native
   }
   
-  @js.native
   trait FileDef extends StObject {
     
     /**
       * File path
       */
-    var filePath: String = js.native
+    var filePath: String
     
     /**
       * File type
       */
-    var `type`: css | js_ = js.native
+    var `type`: css | js_
   }
   object FileDef {
     
@@ -56,18 +71,17 @@ object mod {
     }
   }
   
-  @js.native
   trait HTML5ToPDF extends StObject {
     
-    def build(): js.Promise[Buffer] = js.native
+    def build(): js.Promise[Buffer]
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def includeAssets(): js.Promise[Unit] = js.native
+    def includeAssets(): js.Promise[Unit]
     
-    def parseOptions(options: Options): ParsedOptions = js.native
+    def parseOptions(options: Options): ParsedOptions
     
-    def start(): js.Promise[Page] = js.native
+    def start(): js.Promise[Page]
   }
   object HTML5ToPDF {
     
@@ -103,14 +117,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LegacyOptions extends StObject {
     
     /**
       * [COMPATIBLE]\
       * True for landscape, false for portrait.
       */
-    var landscape: js.UndefOr[Boolean] = js.native
+    var landscape: js.UndefOr[Boolean] = js.undefined
     
     /**
       * [NOT COMPATIBLE]\
@@ -118,19 +131,19 @@ object mod {
       * 1 - none\
       * 2 - minimum
       */
-    var marginsType: js.UndefOr[Double] = js.native
+    var marginsType: js.UndefOr[Double] = js.undefined
     
     /**
       * [COMPATIBLE]\
       * Page size
       */
-    var pageSize: js.UndefOr[A3 | A4 | Legal | Tabloid] = js.native
+    var pageSize: js.UndefOr[A3 | A4 | Legal | Tabloid] = js.undefined
     
     /**
       * [COMPATIBLE]\
       * Whether to print CSS backgrounds.
       */
-    var printBackground: js.UndefOr[Boolean] = js.native
+    var printBackground: js.UndefOr[Boolean] = js.undefined
   }
   object LegacyOptions {
     
@@ -169,60 +182,59 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * A list of CSS or JS assets to include.
       */
-    var include: js.UndefOr[js.Array[String | FileDef]] = js.native
+    var include: js.UndefOr[js.Array[String | FileDef]] = js.undefined
     
     /**
       * Path to the input html as a String, or Buffer. If specified this will override inputPath.
       */
-    var inputBody: js.UndefOr[String | Buffer] = js.native
+    var inputBody: js.UndefOr[String | Buffer] = js.undefined
     
     /**
       * Path to the input HTML.
       */
-    var inputPath: js.UndefOr[String] = js.native
+    var inputPath: js.UndefOr[String] = js.undefined
     
     /**
       * This object will be passed directly to `puppeteer`.
       */
-    var launchOptions: js.UndefOr[LaunchOptions] = js.native
+    var launchOptions: js.UndefOr[LaunchOptions] = js.undefined
     
     /**
       * @deprecated Legacy Options.
       * See `options.pdf` for pdf options. Since some of these options are converted over to work with `puppeteer`,
       * this is automatically done if `options.pdf` is left empty.
       */
-    var options: js.UndefOr[LegacyOptions] = js.native
+    var options: js.UndefOr[LegacyOptions] = js.undefined
     
     /**
       * Path to the output pdf file.
       */
-    var outputPath: js.UndefOr[String] = js.native
+    var outputPath: js.UndefOr[String] = js.undefined
     
     /**
       * This object will be passed directly to `puppeteer`.
       */
-    var pdf: js.UndefOr[PDFOptions] = js.native
+    var pdf: js.UndefOr[PDFOptions] = js.undefined
     
     /**
       * Delay in milliseconds before rendering the PDF (give HTML and CSS a chance to load).
       */
-    var rendererDelay: js.UndefOr[Double] = js.native
+    var rendererDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The template to use when rendering the html.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * The template to use for rendering the html. If this is set, it will use this instead of the template path.
       */
-    var templateUrl: js.UndefOr[String] = js.native
+    var templateUrl: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -300,22 +312,21 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedOptions extends StObject {
     
-    var body: String | Buffer = js.native
+    var body: String | Buffer
     
-    var include: js.Array[FileDef] = js.native
+    var include: js.Array[FileDef]
     
-    var launchOptions: LaunchOptions = js.native
+    var launchOptions: LaunchOptions
     
-    var pdf: PDFOptions = js.native
+    var pdf: PDFOptions
     
-    var renderDelay: Double = js.native
+    var renderDelay: Double
     
-    var templatePath: String = js.native
+    var templatePath: String
     
-    var templateUrl: String = js.native
+    var templateUrl: String
   }
   object ParsedOptions {
     

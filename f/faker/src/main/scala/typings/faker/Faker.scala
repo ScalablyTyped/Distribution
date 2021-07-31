@@ -21,25 +21,23 @@ import typings.faker.anon.Recent
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Faker {
   
-  @js.native
   trait Address extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var geo: Geo = js.native
+    var geo: Geo
     
-    var state: String = js.native
+    var state: String
     
-    var street: String = js.native
+    var street: String
     
-    var suite: String = js.native
+    var suite: String
     
-    var zipcode: String = js.native
+    var zipcode: String
   }
   object Address {
     
@@ -72,26 +70,25 @@ object Faker {
     }
   }
   
-  @js.native
   trait Card extends StObject {
     
-    var accountHistory: js.Array[String] = js.native
+    var accountHistory: js.Array[String]
     
-    var address: FullAddress = js.native
+    var address: FullAddress
     
-    var company: Company = js.native
+    var company: Company
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var posts: js.Array[Post] = js.native
+    var posts: js.Array[Post]
     
-    var username: String = js.native
+    var username: String
     
-    var website: String = js.native
+    var website: String
   }
   object Card {
     
@@ -149,14 +146,13 @@ object Faker {
     }
   }
   
-  @js.native
   trait Company extends StObject {
     
-    var bs: String = js.native
+    var bs: String
     
-    var catchPhrase: String = js.native
+    var catchPhrase: String
     
-    var name: String = js.native
+    var name: String
   }
   object Company {
     
@@ -180,26 +176,25 @@ object Faker {
     }
   }
   
-  @js.native
   trait ContextualCard extends StObject {
     
-    var address: Address = js.native
+    var address: Address
     
-    var avatar: String = js.native
+    var avatar: String
     
-    var company: Company = js.native
+    var company: Company
     
-    var dob: Date = js.native
+    var dob: Date
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var username: String = js.native
+    var username: String
     
-    var website: String = js.native
+    var website: String
   }
   object ContextualCard {
     
@@ -251,56 +246,55 @@ object Faker {
     }
   }
   
-  @js.native
   trait FakerStatic extends StObject {
     
-    var address: CardinalDirection = js.native
+    var address: CardinalDirection
     
-    var commerce: Color = js.native
+    var commerce: Color
     
-    var company: Bs = js.native
+    var company: Bs
     
-    var database: Collation = js.native
+    var database: Collation
     
-    var date: Between = js.native
+    var date: Between
     
-    def fake(str: String): String = js.native
+    def fake(str: String): String
     
-    var finance: Account = js.native
+    var finance: Account
     
-    var git: Branch = js.native
+    var git: Branch
     
-    var hacker: Abbreviation = js.native
+    var hacker: Abbreviation
     
-    var helpers: typings.faker.anon.ContextualCard = js.native
+    var helpers: typings.faker.anon.ContextualCard
     
-    var image: Abstract = js.native
+    var image: Abstract
     
-    var internet: Avatar = js.native
+    var internet: Avatar
     
-    var locale: String = js.native
+    var locale: String
     
-    var lorem: Lines = js.native
+    var lorem: Lines
     
-    var music: Genre = js.native
+    var music: Genre
     
-    var name: FindName = js.native
+    var name: FindName
     
-    var phone: PhoneFormats = js.native
+    var phone: PhoneFormats
     
-    var random: Alpha = js.native
+    var random: Alpha
     
-    def seed(value: Double): Unit = js.native
+    def seed(value: Double): Unit
     
-    var seedValue: js.UndefOr[Double] = js.native
+    var seedValue: js.UndefOr[Double] = js.undefined
     
-    def setLocale(locale: String): Unit = js.native
+    def setLocale(locale: String): Unit
     
-    var system: CommonFileExt = js.native
+    var system: CommonFileExt
     
-    var time: Recent = js.native
+    var time: Recent
     
-    var vehicle: Fuel = js.native
+    var vehicle: Fuel
   }
   object FakerStatic {
     
@@ -414,26 +408,25 @@ object Faker {
     }
   }
   
-  @js.native
   trait FullAddress extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var county: String = js.native
+    var county: String
     
-    var geo: Geo = js.native
+    var geo: Geo
     
-    var state: String = js.native
+    var state: String
     
-    var streetA: String = js.native
+    var streetA: String
     
-    var streetB: String = js.native
+    var streetB: String
     
-    var streetC: String = js.native
+    var streetC: String
     
-    var streetD: String = js.native
+    var streetD: String
     
-    var zipcode: String = js.native
+    var zipcode: String
   }
   object FullAddress {
     
@@ -485,12 +478,11 @@ object Faker {
     }
   }
   
-  @js.native
   trait Geo extends StObject {
     
-    var lat: String = js.native
+    var lat: String
     
-    var lng: String = js.native
+    var lng: String
   }
   object Geo {
     
@@ -511,16 +503,15 @@ object Faker {
     }
   }
   
-  @js.native
   trait Post extends StObject {
     
-    var paragraph: String = js.native
+    var paragraph: String
     
-    var sentence: String = js.native
+    var sentence: String
     
-    var sentences: String = js.native
+    var sentences: String
     
-    var words: String = js.native
+    var words: String
   }
   object Post {
     
@@ -547,20 +538,19 @@ object Faker {
     }
   }
   
-  @js.native
   trait Transaction extends StObject {
     
-    var account: String = js.native
+    var account: String
     
-    var amount: String = js.native
+    var amount: String
     
-    var business: String = js.native
+    var business: String
     
-    var date: Date = js.native
+    var date: Date
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Transaction {
     
@@ -594,22 +584,21 @@ object Faker {
     }
   }
   
-  @js.native
   trait UserCard extends StObject {
     
-    var address: Address = js.native
+    var address: Address
     
-    var company: Company = js.native
+    var company: Company
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var username: String = js.native
+    var username: String
     
-    var website: String = js.native
+    var website: String
   }
   object UserCard {
     

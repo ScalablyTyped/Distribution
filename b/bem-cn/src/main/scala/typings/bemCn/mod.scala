@@ -1,15 +1,17 @@
 package typings.bemCn
 
-import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import typings.bemCn.anon.PartialBemSettings
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object mod extends Shortcut {
+object mod {
+  
+  @JSImport("bem-cn", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bem-cn", JSImport.Default)
   @js.native
@@ -27,31 +29,30 @@ object mod extends Shortcut {
   @js.native
   val block: BemCn = js.native
   
-  @JSImport("bem-cn", "setup")
-  @js.native
-  def setup(): BemCn = js.native
-  @JSImport("bem-cn", "setup")
-  @js.native
-  def setup(settings: PartialBemSettings): BemCn = js.native
+  @scala.inline
+  def setup(): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[BemCn]
+  @scala.inline
+  def setup(settings: PartialBemSettings): BemCn = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")(settings.asInstanceOf[js.Any]).asInstanceOf[BemCn]
   
   @js.native
-  trait BemBlock extends _BemMix {
+  trait BemBlock
+    extends StObject
+       with _BemMix {
     
     def apply(settings: BemSettings, context: BemContext, elemNameOrMods: (String | BemMods)*): BemItem | String = js.native
   }
   
   type BemCn = js.Function1[/* blockName */ String, Block_]
   
-  @js.native
   trait BemContext extends StObject {
     
-    var mixes: js.Array[BemMix] = js.native
+    var mixes: js.Array[BemMix]
     
-    var mods: BemMods = js.native
+    var mods: BemMods
     
-    var name: String = js.native
+    var name: String
     
-    var states: BemStates = js.native
+    var states: BemStates
   }
   object BemContext {
     
@@ -84,18 +85,18 @@ object mod extends Shortcut {
   @js.native
   trait BemItem extends StObject {
     
-    def has(state: BemState): BemItem with String = js.native
+    def has(state: BemState): BemItem & String = js.native
     
-    def is(state: BemState): BemItem with String = js.native
+    def is(state: BemState): BemItem & String = js.native
     
-    def mix(mix: BemMix*): BemItem with String = js.native
+    def mix(mix: BemMix*): BemItem & String = js.native
     
-    def split(): BemItem with String = js.native
-    def split(separator: js.UndefOr[scala.Nothing], limit: Double): BemItem with String = js.native
-    def split(separator: String): BemItem with String = js.native
-    def split(separator: String, limit: Double): BemItem with String = js.native
+    def split(): BemItem & String = js.native
+    def split(separator: String): BemItem & String = js.native
+    def split(separator: String, limit: Double): BemItem & String = js.native
+    def split(separator: Unit, limit: Double): BemItem & String = js.native
     
-    def state(state: BemState): BemItem with String = js.native
+    def state(state: BemState): BemItem & String = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -103,24 +104,23 @@ object mod extends Shortcut {
     - js.Array[java.lang.String]
     - typings.bemCn.mod.BemBlock
     - typings.bemCn.anon.ToString
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
   */
   type BemMix = js.UndefOr[_BemMix | js.Array[String] | String]
   
   type BemMods = StringDictionary[String | Boolean | js.Any]
   
-  @js.native
   trait BemSettings extends StObject {
     
-    var classMap: js.UndefOr[Record[String, String]] = js.native
+    var classMap: js.UndefOr[Record[String, String]] = js.undefined
     
-    var el: String = js.native
+    var el: String
     
-    var mod: String = js.native
+    var mod: String
     
-    var modValue: String = js.native
+    var modValue: String
     
-    var ns: js.UndefOr[String] = js.native
+    var ns: js.UndefOr[String] = js.undefined
   }
   object BemSettings {
     
@@ -173,12 +173,11 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Record<bem-cn.bem-cn.BemStatePrefix, bem-cn.bem-cn.BemState> */
-  @js.native
   trait BemStates extends StObject {
     
-    var `has-`: BemState = js.native
+    var `has-`: BemState
     
-    var `is-`: BemState = js.native
+    var `is-`: BemState
   }
   object BemStates {
     
@@ -201,18 +200,30 @@ object mod extends Shortcut {
     }
   }
   
-  type Block_ = IBlock with String
+  @js.native
+  trait Block_
+    extends StObject
+       with IBlock
+       with typings.std.String {
+    
+    /**
+      * Split a string into substrings using the specified separator and return them as an array.
+      * @param separator A string that identifies character or characters to use in separating the string. If omitted, a single-element array containing the entire string is returned.
+      * @param limit A value used to limit the number of elements returned in the array.
+      */
+    /* InferMemberOverrides */
+    override def split(separator: String): js.Array[String] & BemItem & String = js.native
+    /* InferMemberOverrides */
+    override def split(separator: String, limit: Double): js.Array[String] & BemItem & String = js.native
+  }
   
   @js.native
-  trait IBlock extends BemItem {
+  trait IBlock
+    extends StObject
+       with BemItem {
     
-    def apply(elemNameOrMods: (String | BemMods)*): BemItem with String = js.native
+    def apply(elemNameOrMods: (String | BemMods)*): BemItem & String = js.native
   }
   
   trait _BemMix extends StObject
-  
-  type _To = BemCn
-  
-  /* This means you don't have to write `default`, but can instead just say `mod.foo` */
-  override def _to: BemCn = default
 }

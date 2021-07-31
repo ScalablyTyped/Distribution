@@ -2,16 +2,16 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerConfigOptions extends LayerOptions {
+trait LayerConfigOptions
+  extends StObject
+     with LayerOptions {
   
-  var extend: js.UndefOr[js.Array[String]] = js.native
+  var extend: js.UndefOr[js.Array[String]] = js.undefined
   
   // 初始化全局配置
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object LayerConfigOptions {
   

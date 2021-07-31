@@ -2,55 +2,53 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignY extends StObject {
   
-  var alignX: String = js.native
+  var alignX: String
   
-  var alignY: String = js.native
+  var alignY: String
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var animateOption: Appear = js.native
+  var animateOption: Appear
   
-  var capture: Boolean = js.native
+  var capture: Boolean
   
-  var container: js.Any = js.native
+  var container: js.Any
   
-  var containerClassName: String = js.native
+  var containerClassName: String
   
-  var containerTpl: String = js.native
+  var containerTpl: String
   
-  var events: js.Any = js.native
+  var events: js.Any
   
-  var html: String = js.native
+  var html: String
   
-  var id: String = js.native
+  var id: String
   
-  var locationType: String = js.native
+  var locationType: String
   
-  var name: String = js.native
+  var name: String
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var parent: js.Any = js.native
+  var parent: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var updateAutoRender: Boolean = js.native
+  var updateAutoRender: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
   
-  var zIndex: Double = js.native
+  var zIndex: Double
 }
 object AlignY {
   

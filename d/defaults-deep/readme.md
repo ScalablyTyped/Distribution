@@ -11,8 +11,8 @@ Like `extend` but recursively copies only the missing properties/values to the t
 | Full name          | defaults-deep |
 | Keywords           | copy, default, defaults, extend, merge, object, properties, property, value, values, javascript, js, util, utils |
 | # releases         | 0 |
-| # dependents       | 26 |
-| # downloads        | 1343083 |
+| # dependents       | 27 |
+| # downloads        | 1413747 |
 | # stars            | 1 |
 
 ## Links

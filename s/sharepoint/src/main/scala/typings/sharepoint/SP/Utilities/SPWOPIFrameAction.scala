@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Utilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait SPWOPIFrameAction extends StObject
 object SPWOPIFrameAction extends StObject {
   
   @js.native
-  sealed trait edit extends SPWOPIFrameAction
+  sealed trait edit
+    extends StObject
+       with SPWOPIFrameAction
   
   @js.native
-  sealed trait interactivePreview extends SPWOPIFrameAction
+  sealed trait interactivePreview
+    extends StObject
+       with SPWOPIFrameAction
   
   @js.native
-  sealed trait mobileView extends SPWOPIFrameAction
+  sealed trait mobileView
+    extends StObject
+       with SPWOPIFrameAction
   
   @js.native
-  sealed trait view extends SPWOPIFrameAction
+  sealed trait view
+    extends StObject
+       with SPWOPIFrameAction
 }

@@ -5,45 +5,39 @@ import typings.node.Buffer
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tunnel", "httpOverHttp")
+  @JSImport("tunnel", JSImport.Namespace)
   @js.native
-  def httpOverHttp(): Agent = js.native
-  @JSImport("tunnel", "httpOverHttp")
-  @js.native
-  def httpOverHttp(options: HttpOptions): Agent = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tunnel", "httpOverHttps")
-  @js.native
-  def httpOverHttps(): Agent = js.native
-  @JSImport("tunnel", "httpOverHttps")
-  @js.native
-  def httpOverHttps(options: HttpOverHttpsOptions): Agent = js.native
+  @scala.inline
+  def httpOverHttp(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttp")().asInstanceOf[Agent]
+  @scala.inline
+  def httpOverHttp(options: HttpOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttp")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
-  @JSImport("tunnel", "httpsOverHttp")
-  @js.native
-  def httpsOverHttp(): Agent = js.native
-  @JSImport("tunnel", "httpsOverHttp")
-  @js.native
-  def httpsOverHttp(options: HttpsOverHttpOptions): Agent = js.native
+  @scala.inline
+  def httpOverHttps(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")().asInstanceOf[Agent]
+  @scala.inline
+  def httpOverHttps(options: HttpOverHttpsOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
-  @JSImport("tunnel", "httpsOverHttps")
-  @js.native
-  def httpsOverHttps(): Agent = js.native
-  @JSImport("tunnel", "httpsOverHttps")
-  @js.native
-  def httpsOverHttps(options: HttpsOverHttpsOptions): Agent = js.native
+  @scala.inline
+  def httpsOverHttp(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttp")().asInstanceOf[Agent]
+  @scala.inline
+  def httpsOverHttp(options: HttpsOverHttpOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttp")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
   
-  @js.native
+  @scala.inline
+  def httpsOverHttps(): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")().asInstanceOf[Agent]
+  @scala.inline
+  def httpsOverHttps(options: HttpsOverHttpsOptions): Agent = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsOverHttps")(options.asInstanceOf[js.Any]).asInstanceOf[Agent]
+  
   trait HttpOptions extends StObject {
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var proxy: js.UndefOr[ProxyOptions] = js.native
+    var proxy: js.UndefOr[ProxyOptions] = js.undefined
   }
   object HttpOptions {
     
@@ -70,11 +64,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpOverHttpsOptions extends HttpOptions {
+  trait HttpOverHttpsOptions
+    extends StObject
+       with HttpOptions {
     
     @JSName("proxy")
-    var proxy_HttpOverHttpsOptions: js.UndefOr[HttpsProxyOptions] = js.native
+    var proxy_HttpOverHttpsOptions: js.UndefOr[HttpsProxyOptions] = js.undefined
   }
   object HttpOverHttpsOptions {
     
@@ -95,14 +90,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpsOverHttpOptions extends HttpOptions {
+  trait HttpsOverHttpOptions
+    extends StObject
+       with HttpOptions {
     
-    var ca: js.UndefOr[js.Array[Buffer]] = js.native
+    var ca: js.UndefOr[js.Array[Buffer]] = js.undefined
     
-    var cert: js.UndefOr[Buffer] = js.native
+    var cert: js.UndefOr[Buffer] = js.undefined
     
-    var key: js.UndefOr[Buffer] = js.native
+    var key: js.UndefOr[Buffer] = js.undefined
   }
   object HttpsOverHttpOptions {
     
@@ -138,11 +134,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpsOverHttpsOptions extends HttpsOverHttpOptions {
+  trait HttpsOverHttpsOptions
+    extends StObject
+       with HttpsOverHttpOptions {
     
     @JSName("proxy")
-    var proxy_HttpsOverHttpsOptions: js.UndefOr[HttpsProxyOptions] = js.native
+    var proxy_HttpsOverHttpsOptions: js.UndefOr[HttpsProxyOptions] = js.undefined
   }
   object HttpsOverHttpsOptions {
     
@@ -163,16 +160,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait HttpsProxyOptions extends ProxyOptions {
+  trait HttpsProxyOptions
+    extends StObject
+       with ProxyOptions {
     
-    var ca: js.UndefOr[js.Array[Buffer]] = js.native
+    var ca: js.UndefOr[js.Array[Buffer]] = js.undefined
     
-    var cert: js.UndefOr[Buffer] = js.native
+    var cert: js.UndefOr[Buffer] = js.undefined
     
-    var key: js.UndefOr[Buffer] = js.native
+    var key: js.UndefOr[Buffer] = js.undefined
     
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
   }
   object HttpsProxyOptions {
     
@@ -214,18 +212,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ProxyOptions extends StObject {
     
-    var headers: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var headers: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var proxyAuth: js.UndefOr[String] = js.native
+    var proxyAuth: js.UndefOr[String] = js.undefined
   }
   object ProxyOptions {
     

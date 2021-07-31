@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,8 +12,8 @@ object mod {
   @js.native
   class BinaryHeap () extends StObject {
     def this(weightFunc: js.Function) = this()
-    def this(weightFunc: js.UndefOr[scala.Nothing], compareFunc: js.Function) = this()
     def this(weightFunc: js.Function, compareFunc: js.Function) = this()
+    def this(weightFunc: Unit, compareFunc: js.Function) = this()
     
     def peek(): js.Any = js.native
     
@@ -87,7 +86,7 @@ object mod {
     def touch(key: String): Unit = js.native
     def touch(key: Double): Unit = js.native
     
-    def values(): js.Array[_] = js.native
+    def values(): js.Array[js.Any] = js.native
   }
   
   @JSImport("cachefactory", "CacheFactory")
@@ -130,12 +129,13 @@ object mod {
   @js.native
   val utils: Utils_ = js.native
   
-  @js.native
-  trait CacheFactoryInfo extends CacheOptions {
+  trait CacheFactoryInfo
+    extends StObject
+       with CacheOptions {
     
-    var caches: StringDictionary[CacheInfo] = js.native
+    var caches: StringDictionary[CacheInfo]
     
-    var size: Double = js.native
+    var size: Double
   }
   object CacheFactoryInfo {
     
@@ -156,12 +156,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CacheInfo extends CacheOptions {
+  trait CacheInfo
+    extends StObject
+       with CacheOptions {
     
-    var id: String = js.native
+    var id: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object CacheInfo {
     
@@ -182,32 +183,31 @@ object mod {
     }
   }
   
-  @js.native
   trait CacheOptions extends StObject {
     
-    var cacheFlushInterval: js.UndefOr[Double] = js.native
+    var cacheFlushInterval: js.UndefOr[Double] = js.undefined
     
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
-    var deleteOnExpire: js.UndefOr[DeleteOnExpire] = js.native
+    var deleteOnExpire: js.UndefOr[DeleteOnExpire] = js.undefined
     
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var onExpire: js.UndefOr[OnExpireCallback] = js.native
+    var onExpire: js.UndefOr[OnExpireCallback] = js.undefined
     
-    var recycleFreq: js.UndefOr[Double] = js.native
+    var recycleFreq: js.UndefOr[Double] = js.undefined
     
-    var storageImpl: js.UndefOr[StorageImpl] = js.native
+    var storageImpl: js.UndefOr[StorageImpl] = js.undefined
     
-    var storageMode: js.UndefOr[StorageMode] = js.native
+    var storageMode: js.UndefOr[StorageMode] = js.undefined
     
-    var storagePrefix: js.UndefOr[String] = js.native
+    var storagePrefix: js.UndefOr[String] = js.undefined
     
-    var storeOnReject: js.UndefOr[Boolean] = js.native
+    var storeOnReject: js.UndefOr[Boolean] = js.undefined
     
-    var storeOnResolve: js.UndefOr[Boolean] = js.native
+    var storeOnResolve: js.UndefOr[Boolean] = js.undefined
   }
   object CacheOptions {
     
@@ -312,16 +312,17 @@ object mod {
     def passive: typings.cachefactory.cachefactoryStrings.passive = "passive".asInstanceOf[typings.cachefactory.cachefactoryStrings.passive]
   }
   
-  @js.native
-  trait GetPutOptions extends ItemInfo {
+  trait GetPutOptions
+    extends StObject
+       with ItemInfo {
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var onExpire: js.UndefOr[OnExpireCallback] = js.native
+    var onExpire: js.UndefOr[OnExpireCallback] = js.undefined
     
-    var storeOnReject: js.UndefOr[Boolean] = js.native
+    var storeOnReject: js.UndefOr[Boolean] = js.undefined
     
-    var storeOnResolve: js.UndefOr[Boolean] = js.native
+    var storeOnResolve: js.UndefOr[Boolean] = js.undefined
   }
   object GetPutOptions {
     
@@ -360,16 +361,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemInfo extends StObject {
     
-    var accessed: js.UndefOr[Double] = js.native
+    var accessed: js.UndefOr[Double] = js.undefined
     
-    var created: js.UndefOr[Double] = js.native
+    var created: js.UndefOr[Double] = js.undefined
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var isExpired: js.UndefOr[Boolean] = js.native
+    var isExpired: js.UndefOr[Boolean] = js.undefined
   }
   object ItemInfo {
     
@@ -441,22 +441,21 @@ object mod {
     def sessionStorage: typings.cachefactory.cachefactoryStrings.sessionStorage = "sessionStorage".asInstanceOf[typings.cachefactory.cachefactoryStrings.sessionStorage]
   }
   
-  @js.native
   trait Utils_ extends StObject {
     
-    var Promise: js.UndefOr[PromiseConstructor] = js.native
+    var Promise: js.UndefOr[PromiseConstructor] = js.undefined
     
-    def equals(a: js.Any, b: js.Any): Boolean = js.native
+    def equals(a: js.Any, b: js.Any): Boolean
     
-    def fromJson(value: String): js.Any = js.native
+    def fromJson(value: String): js.Any
     
-    def isFunction(value: js.Any): Boolean = js.native
+    def isFunction(value: js.Any): Boolean
     
-    def isNumber(value: js.Any): Boolean = js.native
+    def isNumber(value: js.Any): Boolean
     
-    def isObject(value: js.Any): Boolean = js.native
+    def isObject(value: js.Any): Boolean
     
-    def isString(value: js.Any): Boolean = js.native
+    def isString(value: js.Any): Boolean
   }
   object Utils_ {
     

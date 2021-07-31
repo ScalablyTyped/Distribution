@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesCommentMod.UnmarshalledComment
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteCommentContentOutputMod {
   
-  @js.native
-  trait DeleteCommentContentOutput extends OutputTypesUnion {
+  trait DeleteCommentContentOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the comment you just deleted.</p>
       */
-    var comment: js.UndefOr[UnmarshalledComment] = js.native
+    var comment: js.UndefOr[UnmarshalledComment] = js.undefined
   }
   object DeleteCommentContentOutput {
     

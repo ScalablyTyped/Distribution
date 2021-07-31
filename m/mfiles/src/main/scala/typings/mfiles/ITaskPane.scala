@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITaskPane extends StObject {
   
-  def AddCustomCommandToGroup(customCommand: Double, group: Double, orderPriority: Double): Unit = js.native
+  def AddCustomCommandToGroup(customCommand: Double, group: Double, orderPriority: Double): Unit
   
-  val Available: Boolean = js.native
+  val Available: Boolean
   
-  def CreateGroup(groupName: String, priority: Double): Double = js.native
+  def CreateGroup(groupName: String, priority: Double): Double
   
-  def DeleteGroup(groupID: Double): Unit = js.native
+  def DeleteGroup(groupID: Double): Unit
   
-  val Events: ITaskPaneEvents = js.native
+  val Events: ITaskPaneEvents
   
-  def RemoveCustomCommandFromGroup(customCommand: Double, group: Double): Unit = js.native
+  def RemoveCustomCommandFromGroup(customCommand: Double, group: Double): Unit
   
-  def SetLogo(filename: String): Unit = js.native
+  def SetLogo(filename: String): Unit
   
-  def SetTheme(theme: ITheme): Unit = js.native
+  def SetTheme(theme: ITheme): Unit
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object ITaskPane {
   

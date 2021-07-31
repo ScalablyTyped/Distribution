@@ -4,20 +4,20 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XNodeList extends XInterface {
+trait XNodeList
+  extends StObject
+     with XInterface {
   
   /** The number of nodes in the list. */
-  val Length: Double = js.native
+  val Length: Double
   
   /** The number of nodes in the list. */
-  def getLength(): Double = js.native
+  def getLength(): Double
   
   /** Returns a node specified by index in the collection. */
-  def item(index: Double): XNode = js.native
+  def item(index: Double): XNode
 }
 object XNodeList {
   

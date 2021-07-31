@@ -2,15 +2,13 @@ package typings.preact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var jsx: js.UndefOr[Boolean] = js.native
+  var jsx: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[Key] = js.native
+  var key: js.UndefOr[Key] = js.undefined
 }
 object Attributes {
   

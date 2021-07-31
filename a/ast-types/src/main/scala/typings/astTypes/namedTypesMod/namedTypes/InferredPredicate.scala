@@ -9,23 +9,22 @@ import typings.astTypes.kindsMod.SourceLocationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.FlowPredicate, 'type'> */
-@js.native
 trait InferredPredicate
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with FlowKind
      with FlowPredicateKind
      with NodeKind
      with PrintableKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.InferredPredicate = js.native
+  var `type`: typings.astTypes.astTypesStrings.InferredPredicate
 }
 object InferredPredicate {
   

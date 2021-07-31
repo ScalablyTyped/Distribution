@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobResult extends StObject {
   
   /**
     * Information about a specific job, including shipping information, job status, and other important metadata.
     */
-  var JobMetadata: js.UndefOr[typings.awsSdk.snowballMod.JobMetadata] = js.native
+  var JobMetadata: js.UndefOr[typings.awsSdk.snowballMod.JobMetadata] = js.undefined
   
   /**
     * Information about a specific job part (in the case of an export job), including shipping information, job status, and other important metadata.
     */
-  var SubJobMetadata: js.UndefOr[JobMetadataList] = js.native
+  var SubJobMetadata: js.UndefOr[JobMetadataList] = js.undefined
 }
 object DescribeJobResult {
   

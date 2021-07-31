@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsub.gapi.client.pubsub
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSubscriptionRequest extends StObject {
   
   /** Required. The updated subscription object. */
-  var subscription: js.UndefOr[Subscription] = js.native
+  var subscription: js.UndefOr[Subscription] = js.undefined
   
   /** Required. Indicates which fields in the provided subscription to update. Must be specified and non-empty. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object UpdateSubscriptionRequest {
   

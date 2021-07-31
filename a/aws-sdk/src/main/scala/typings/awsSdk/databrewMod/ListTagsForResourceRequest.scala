@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) string that uniquely identifies the DataBrew resource. 
     */
-  var ResourceArn: Arn = js.native
+  var ResourceArn: Arn
 }
 object ListTagsForResourceRequest {
   

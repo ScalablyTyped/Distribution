@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncAwsOrganizationsSource extends StObject {
   
   /**
     * If an AWS Organization is present, this is either OrganizationalUnits or EntireOrganization. For OrganizationalUnits, the data is aggregated from a set of organization units. For EntireOrganization, the data is aggregated from the entire AWS Organization. 
     */
-  var OrganizationSourceType: ResourceDataSyncOrganizationSourceType = js.native
+  var OrganizationSourceType: ResourceDataSyncOrganizationSourceType
   
   /**
     * The AWS Organizations organization units included in the sync.
     */
-  var OrganizationalUnits: js.UndefOr[ResourceDataSyncOrganizationalUnitList] = js.native
+  var OrganizationalUnits: js.UndefOr[ResourceDataSyncOrganizationalUnitList] = js.undefined
 }
 object ResourceDataSyncAwsOrganizationsSource {
   

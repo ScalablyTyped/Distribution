@@ -10,9 +10,9 @@ Helper functions for V8 coverage files.
 | ------------------ | :-------------: |
 | Full name          | @bcoe/v8-coverage |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 65530375 |
+| # downloads        | 165887979 |
 | # stars            | 0 |
 
 ## Links

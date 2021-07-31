@@ -14,7 +14,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Polynomial
 import typings.officeJsPreview.officeJsPreviewStrings.Power
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,7 +23,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.7]
   */
 @js.native
-trait ChartTrendlineCollection extends ClientObject {
+trait ChartTrendlineCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new trendline to trendline collection.
@@ -77,7 +78,7 @@ trait ChartTrendlineCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ChartTrendlineCollection = js.native
-  def load(options: ChartTrendlineCollectionLoadOptions with CollectionLoadOptions): ChartTrendlineCollection = js.native
+  def load(options: ChartTrendlineCollectionLoadOptions & CollectionLoadOptions): ChartTrendlineCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ChartTrendlineCollection = js.native
   def load(propertyNames: String): ChartTrendlineCollection = js.native
   def load(propertyNames: js.Array[String]): ChartTrendlineCollection = js.native

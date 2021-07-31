@@ -10,10 +10,10 @@ Fast, unopinionated, minimalist web framework
 | ------------------ | :-------------: |
 | Full name          | express |
 | Keywords           | express, framework, sinatra, web, rest, restful, router, app, api |
-| # releases         | 6 |
-| # dependents       | 35554 |
-| # downloads        | 604957173 |
-| # stars            | 2566 |
+| # releases         | 3 |
+| # dependents       | 39146 |
+| # downloads        | 702275983 |
+| # stars            | 2570 |
 
 ## Links
 - [Homepage](http://expressjs.com/)

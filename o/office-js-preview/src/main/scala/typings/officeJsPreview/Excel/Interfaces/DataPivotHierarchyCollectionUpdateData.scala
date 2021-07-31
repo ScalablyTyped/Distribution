@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the DataPivotHierarchyCollection object, for use in `dataPivotHierarchyCollection.set({ ... })`. */
-@js.native
 trait DataPivotHierarchyCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.native
+  var items: js.UndefOr[js.Array[DataPivotHierarchyData]] = js.undefined
 }
 object DataPivotHierarchyCollectionUpdateData {
   

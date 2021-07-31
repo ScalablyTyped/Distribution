@@ -2,13 +2,11 @@ package typings.googleapis.speechV1Mod.speechV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Alternative hypotheses (a.k.a. n-best list).
   */
-@js.native
 trait SchemaSpeechRecognitionAlternative extends StObject {
   
   /**
@@ -20,19 +18,19 @@ trait SchemaSpeechRecognitionAlternative extends StObject {
     * it to be always provided. The default of 0.0 is a sentinel value
     * indicating `confidence` was not set.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. Transcript text representing the words that the user spoke.
     */
-  var transcript: js.UndefOr[String] = js.native
+  var transcript: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A list of word-specific information for each recognized
     * word. Note: When `enable_speaker_diarization` is true, you will see all
     * the words from the beginning of the audio.
     */
-  var words: js.UndefOr[js.Array[SchemaWordInfo]] = js.native
+  var words: js.UndefOr[js.Array[SchemaWordInfo]] = js.undefined
 }
 object SchemaSpeechRecognitionAlternative {
   

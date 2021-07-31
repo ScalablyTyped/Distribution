@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Site extends StObject {
   
   /** Output only. The resource name of the site. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The URL or app ID of the site. Must be UTF-8 encoded with a maximum length of 240 bytes. */
-  var urlOrAppId: js.UndefOr[String] = js.native
+  var urlOrAppId: js.UndefOr[String] = js.undefined
 }
 object Site {
   

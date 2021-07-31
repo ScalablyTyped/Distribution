@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMinuteUsageRequest extends StObject {
   
   /**
     * The month being requested, with a value of 1-12.
     */
-  var month: Integer = js.native
+  var month: Integer
   
   /**
     * The year being requested, in the format of YYYY.
     */
-  var year: Integer = js.native
+  var year: Integer
 }
 object GetMinuteUsageRequest {
   

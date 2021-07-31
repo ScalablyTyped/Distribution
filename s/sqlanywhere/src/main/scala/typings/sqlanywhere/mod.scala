@@ -3,29 +3,30 @@ package typings.sqlanywhere
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sqlanywhere", "createConnection")
+  @JSImport("sqlanywhere", JSImport.Namespace)
   @js.native
-  def createConnection(): SybaseConnection = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createConnection(): SybaseConnection = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")().asInstanceOf[SybaseConnection]
+  
   trait ConnectionParameters extends StObject {
     
-    var AutoStart: js.UndefOr[String] = js.native
+    var AutoStart: js.UndefOr[String] = js.undefined
     
-    var DatabaseFile: js.UndefOr[String] = js.native
+    var DatabaseFile: js.UndefOr[String] = js.undefined
     
-    var Host: js.UndefOr[String] = js.native
+    var Host: js.UndefOr[String] = js.undefined
     
-    var Password: String = js.native
+    var Password: String
     
-    var Server: String = js.native
+    var Server: String
     
-    var UserId: String = js.native
+    var UserId: String
   }
   object ConnectionParameters {
     
@@ -72,10 +73,13 @@ object mod {
     
     def drop(cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
-    def exec(args: js.Array[_]): js.Array[_] = js.native
-    def exec(args: js.Array[_], cb: js.Function2[/* err */ js.UndefOr[Error], /* rows */ js.Array[_], Unit]): Unit = js.native
+    def exec(args: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def exec(
+      args: js.Array[js.Any],
+      cb: js.Function2[/* err */ js.UndefOr[Error], /* rows */ js.Array[js.Any], Unit]
+    ): Unit = js.native
     
-    def getMoreResults(): js.Array[_] = js.native
+    def getMoreResults(): js.Array[js.Any] = js.native
   }
   
   @js.native
@@ -94,7 +98,7 @@ object mod {
     def exec(query: String, cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.Any, Unit]): Unit = js.native
     def exec(
       query: String,
-      placeholders: js.Array[_],
+      placeholders: js.Array[js.Any],
       cb: js.Function2[/* err */ js.UndefOr[Error], /* result */ js.Any, Unit]
     ): Unit = js.native
     

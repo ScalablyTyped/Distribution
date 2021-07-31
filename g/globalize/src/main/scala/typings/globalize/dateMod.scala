@@ -14,19 +14,20 @@ import typings.globalize.globalizeStrings.short
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/date", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/date", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -41,20 +42,19 @@ object dateMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `dateMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
     
-    @js.native
     trait DateFormatPart extends StObject {
       
-      var `type`: DateFormatPartTypes = js.native
+      var `type`: DateFormatPartTypes
       
-      var value: String = js.native
+      var value: String
     }
     object DateFormatPart {
       
@@ -126,42 +126,41 @@ object dateMod extends Shortcut {
       def zone: typings.globalize.globalizeStrings.zone = "zone".asInstanceOf[typings.globalize.globalizeStrings.zone]
     }
     
-    @js.native
     trait DateFormatterOptions extends StObject {
       
       /**
         * One of the following String values: full, long, medium, or short, eg. { date: "full" }.
         */
-      var date: js.UndefOr[full | long | medium | short] = js.native
+      var date: js.UndefOr[full | long | medium | short] = js.undefined
       
       /**
         * One of the following String values: full, long, medium, or short, eg. { datetime: "full" }
         */
-      var datetime: js.UndefOr[full | long | medium | short] = js.native
+      var datetime: js.UndefOr[full | long | medium | short] = js.undefined
       
       /**
         * String value indicating a machine raw pattern (anything in the "Sym." column) eg. { raw: "dd/mm" }.
         * Note this is NOT recommended for i18n in general. Use skeleton instead.
         */
-      var raw: js.UndefOr[String] = js.native
+      var raw: js.UndefOr[String] = js.undefined
       
       /**
         * String value indicating a skeleton (see description above), eg. { skeleton: "GyMMMd" }.
         * Skeleton provides a more flexible formatting mechanism than the predefined list full, long, medium, or short represented by date, time, or datetime.
         * Instead, they are an open-ended list of patterns containing only date field information, and in a canonical order.
         */
-      var skeleton: js.UndefOr[String] = js.native
+      var skeleton: js.UndefOr[String] = js.undefined
       
       /**
         * One of the following String values: full, long, medium, or short, eg. { time: "full" }.
         */
-      var time: js.UndefOr[full | long | medium | short] = js.native
+      var time: js.UndefOr[full | long | medium | short] = js.undefined
       
       /**
         * String based on the time zone names of the IANA time zone database,
         * such as "Asia/Shanghai", "Asia/Kolkata", "America/New_York".
         */
-      var timeZone: js.UndefOr[String] = js.native
+      var timeZone: js.UndefOr[String] = js.undefined
     }
     object DateFormatterOptions {
       
@@ -212,9 +211,9 @@ object dateMod extends Shortcut {
       }
     }
     
-    @js.native
     trait NumberFormatterOptions
-      extends CommonNumberFormatterOptions
+      extends StObject
+         with CommonNumberFormatterOptions
          with typings.globalize.numberMod.globalizeDistGlobalizeAugmentingMod.NumberParserOptions
     object NumberFormatterOptions {
       
@@ -225,13 +224,12 @@ object dateMod extends Shortcut {
       }
     }
     
-    @js.native
     trait NumberParserOptions extends StObject {
       
       /**
         * decimal (default), or percent.
         */
-      var style: js.UndefOr[decimal | percent] = js.native
+      var style: js.UndefOr[decimal | percent] = js.undefined
     }
     object NumberParserOptions {
       
@@ -347,7 +345,6 @@ object dateMod extends Shortcut {
       ): Double = js.native
     }
     
-    @js.native
     trait Static extends StObject {
       
       /**
@@ -355,7 +352,7 @@ object dateMod extends Shortcut {
         * This method allows you to load IANA time zone data to enable options.timeZone feature on date formatters and parsers.
         * @param {Object} ianaTzData A JSON object with zdumped IANA timezone data. Get the data via https://github.com/rxaviers/iana-tz-data
         */
-      def loadTimeZone(ianaTzData: js.Object): Unit = js.native
+      def loadTimeZone(ianaTzData: js.Object): Unit
     }
     object Static {
       

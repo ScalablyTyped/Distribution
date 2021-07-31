@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTableRequest extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait CreateTableRequest extends StObject {
     * initial_split_keys := `["apple", "customer_1", "customer_2", "other"]` * Key assignment: - Tablet 1 `[, apple) => {"a"}.` - Tablet 2 `[apple, customer_1) => {"apple", "custom"}.` -
     * Tablet 3 `[customer_1, customer_2) => {"customer_1"}.` - Tablet 4 `[customer_2, other) => {"customer_2"}.` - Tablet 5 `[other, ) => {"other", "zz"}.`
     */
-  var initialSplits: js.UndefOr[js.Array[Split]] = js.native
+  var initialSplits: js.UndefOr[js.Array[Split]] = js.undefined
   
   /** Required. The Table to create. */
-  var table: js.UndefOr[Table] = js.native
+  var table: js.UndefOr[Table] = js.undefined
   
   /** Required. The name by which the new table should be referred to within the parent instance, e.g., `foobar` rather than `{parent}/tables/foobar`. Maximum 50 characters. */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object CreateTableRequest {
   

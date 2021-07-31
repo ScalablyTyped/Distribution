@@ -3,7 +3,6 @@ package typings.vscodeLanguageserverProtocol.mod
 import typings.vscodeJsonrpc.mod.TraceValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode-languageserver-protocol", "Trace")
@@ -11,13 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object Trace extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.vscodeJsonrpc.mod.Trace with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.vscodeJsonrpc.mod.Trace & Double] = js.native
   
-  /* 1 */ val Messages: typings.vscodeJsonrpc.mod.Trace.Messages with Double = js.native
+  /* 1 */ val Messages: typings.vscodeJsonrpc.mod.Trace.Messages & Double = js.native
   
-  /* 0 */ val Off: typings.vscodeJsonrpc.mod.Trace.Off with Double = js.native
+  /* 0 */ val Off: typings.vscodeJsonrpc.mod.Trace.Off & Double = js.native
   
-  /* 2 */ val Verbose: typings.vscodeJsonrpc.mod.Trace.Verbose with Double = js.native
+  /* 2 */ val Verbose: typings.vscodeJsonrpc.mod.Trace.Verbose & Double = js.native
   
   def fromString(value: String): typings.vscodeJsonrpc.mod.Trace = js.native
   

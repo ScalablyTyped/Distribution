@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Edits$Tracks")
@@ -33,7 +32,7 @@ class ResourceEditsTracks protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTrack] = js.native
   def get(callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
   def get(params: ParamsResourceEditsTracksGet): GaxiosPromise[SchemaTrack] = js.native
   def get(params: ParamsResourceEditsTracksGet, callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
   def get(
@@ -63,7 +62,7 @@ class ResourceEditsTracks protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTracksListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaTracksListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTracksListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTracksListResponse] = js.native
   def list(params: ParamsResourceEditsTracksList): GaxiosPromise[SchemaTracksListResponse] = js.native
   def list(params: ParamsResourceEditsTracksList, callback: BodyResponseCallback[SchemaTracksListResponse]): Unit = js.native
   def list(
@@ -98,7 +97,7 @@ class ResourceEditsTracks protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTrack] = js.native
   def patch(callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
   def patch(params: ParamsResourceEditsTracksPatch): GaxiosPromise[SchemaTrack] = js.native
   def patch(params: ParamsResourceEditsTracksPatch, callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
   def patch(
@@ -132,7 +131,7 @@ class ResourceEditsTracks protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaTrack] = js.native
   def update(callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTrack] = js.native
   def update(params: ParamsResourceEditsTracksUpdate): GaxiosPromise[SchemaTrack] = js.native
   def update(params: ParamsResourceEditsTracksUpdate, callback: BodyResponseCallback[SchemaTrack]): Unit = js.native
   def update(

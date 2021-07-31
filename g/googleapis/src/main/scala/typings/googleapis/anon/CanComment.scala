@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanComment extends StObject {
   
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
-  var canPlusone: js.UndefOr[Boolean] = js.native
+  var canPlusone: js.UndefOr[Boolean] = js.undefined
   
-  var canUpdate: js.UndefOr[Boolean] = js.native
+  var canUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var isPlusOned: js.UndefOr[Boolean] = js.native
+  var isPlusOned: js.UndefOr[Boolean] = js.undefined
   
-  var resharingDisabled: js.UndefOr[Boolean] = js.native
+  var resharingDisabled: js.UndefOr[Boolean] = js.undefined
 }
 object CanComment {
   

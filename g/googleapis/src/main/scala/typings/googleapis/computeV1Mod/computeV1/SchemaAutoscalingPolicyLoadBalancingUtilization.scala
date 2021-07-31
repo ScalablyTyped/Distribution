@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration parameters of autoscaling based on load balancing.
   */
-@js.native
 trait SchemaAutoscalingPolicyLoadBalancingUtilization extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAutoscalingPolicyLoadBalancingUtilization extends StObject {
     * configuration) that autoscaler should maintain. Must be a positive float
     * value. If not defined, the default is 0.8.
     */
-  var utilizationTarget: js.UndefOr[Double] = js.native
+  var utilizationTarget: js.UndefOr[Double] = js.undefined
 }
 object SchemaAutoscalingPolicyLoadBalancingUtilization {
   

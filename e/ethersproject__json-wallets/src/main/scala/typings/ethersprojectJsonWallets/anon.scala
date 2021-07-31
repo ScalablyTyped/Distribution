@@ -2,19 +2,17 @@ package typings.ethersprojectJsonWallets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait N extends StObject {
     
-    var N: js.UndefOr[Double] = js.native
+    var N: js.UndefOr[Double] = js.undefined
     
-    var p: js.UndefOr[Double] = js.native
+    var p: js.UndefOr[Double] = js.undefined
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
   }
   object N {
     

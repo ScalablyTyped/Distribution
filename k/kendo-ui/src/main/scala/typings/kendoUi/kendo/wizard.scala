@@ -3,26 +3,31 @@ package typings.kendoUi.kendo
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wizard {
   
-  @js.native
-  trait Step extends Class {
+  trait Step
+    extends StObject
+       with Class {
     
-    def buttons(): js.Array[_] = js.native
+    def buttons(): js.Array[js.Any]
     
-    def load(): Unit = js.native
+    def load(): Unit
     
-    var options: WizardStepOptions = js.native
+    var options: WizardStepOptions
     
-    def resetButtons(): Unit = js.native
+    def resetButtons(): Unit
   }
   object Step {
     
     @scala.inline
-    def apply(buttons: () => js.Array[_], load: () => Unit, options: WizardStepOptions, resetButtons: () => Unit): Step = {
+    def apply(
+      buttons: () => js.Array[js.Any],
+      load: () => Unit,
+      options: WizardStepOptions,
+      resetButtons: () => Unit
+    ): Step = {
       val __obj = js.Dynamic.literal(buttons = js.Any.fromFunction0(buttons), load = js.Any.fromFunction0(load), options = options.asInstanceOf[js.Any], resetButtons = js.Any.fromFunction0(resetButtons))
       __obj.asInstanceOf[Step]
     }
@@ -31,7 +36,7 @@ object wizard {
     implicit class StepMutableBuilder[Self <: Step] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setButtons(value: () => js.Array[_]): Self = StObject.set(x, "buttons", js.Any.fromFunction0(value))
+      def setButtons(value: () => js.Array[js.Any]): Self = StObject.set(x, "buttons", js.Any.fromFunction0(value))
       
       @scala.inline
       def setLoad(value: () => Unit): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
@@ -44,40 +49,39 @@ object wizard {
     }
   }
   
-  @js.native
   trait WizardStepOptions extends StObject {
     
-    var actionBar: js.UndefOr[Boolean] = js.native
+    var actionBar: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[_]] = js.native
+    var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
-    var contentId: js.UndefOr[String] = js.native
+    var contentId: js.UndefOr[String] = js.undefined
     
-    var contentUrl: js.UndefOr[String] = js.native
+    var contentUrl: js.UndefOr[String] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var form: js.UndefOr[js.Any] = js.native
+    var form: js.UndefOr[js.Any] = js.undefined
     
-    var formTag: js.UndefOr[String] = js.native
+    var formTag: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var markupContainer: js.UndefOr[JQuery] = js.native
+    var markupContainer: js.UndefOr[JQuery] = js.undefined
     
-    var messages: js.UndefOr[js.Any] = js.native
+    var messages: js.UndefOr[js.Any] = js.undefined
     
-    var pager: js.UndefOr[Boolean] = js.native
+    var pager: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var totalSteps: Double = js.native
+    var totalSteps: Double
     
-    var wizardId: js.UndefOr[String] = js.native
+    var wizardId: js.UndefOr[String] = js.undefined
   }
   object WizardStepOptions {
     
@@ -97,7 +101,7 @@ object wizard {
       def setActionBarUndefined: Self = StObject.set(x, "actionBar", js.undefined)
       
       @scala.inline
-      def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)

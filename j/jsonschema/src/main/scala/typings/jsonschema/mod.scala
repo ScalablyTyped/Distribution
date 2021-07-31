@@ -5,15 +5,26 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("jsonschema", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("jsonschema", "SchemaError")
   @js.native
-  class SchemaError protected () extends Error {
+  class SchemaError protected ()
+    extends StObject
+       with Error {
     def this(msg: String, schema: Schema) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var schema: Schema = js.native
   }
@@ -52,7 +63,7 @@ object mod {
   class Validator () extends StObject {
     
     def addSchema(): Schema | Unit = js.native
-    def addSchema(schema: js.UndefOr[scala.Nothing], uri: String): Schema | Unit = js.native
+    def addSchema(schema: Unit, uri: String): Schema | Unit = js.native
     def addSchema(schema: Schema): Schema | Unit = js.native
     def addSchema(schema: Schema, uri: String): Schema | Unit = js.native
     
@@ -65,7 +76,7 @@ object mod {
     var unresolvedRefs: js.Array[String] = js.native
     
     def validate(instance: js.Any, schema: Schema): ValidatorResult = js.native
-    def validate(instance: js.Any, schema: Schema, options: js.UndefOr[scala.Nothing], ctx: SchemaContext): ValidatorResult = js.native
+    def validate(instance: js.Any, schema: Schema, options: Unit, ctx: SchemaContext): ValidatorResult = js.native
     def validate(instance: js.Any, schema: Schema, options: Options): ValidatorResult = js.native
     def validate(instance: js.Any, schema: Schema, options: Options, ctx: SchemaContext): ValidatorResult = js.native
   }
@@ -93,12 +104,10 @@ object mod {
     var valid: Boolean = js.native
   }
   
-  @JSImport("jsonschema", "validate")
-  @js.native
-  def validate(instance: js.Any, schema: js.Any): ValidatorResult = js.native
-  @JSImport("jsonschema", "validate")
-  @js.native
-  def validate(instance: js.Any, schema: js.Any, options: Options): ValidatorResult = js.native
+  @scala.inline
+  def validate(instance: js.Any, schema: js.Any): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
+  @scala.inline
+  def validate(instance: js.Any, schema: js.Any, options: Options): ValidatorResult = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(instance.asInstanceOf[js.Any], schema.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ValidatorResult]
   
   type CustomFormat = js.Function1[/* input */ js.Any, Boolean]
   
@@ -110,14 +119,13 @@ object mod {
     String | ValidatorResult
   ]
   
-  @js.native
   trait ErrorDetail extends StObject {
     
-    var argument: String = js.native
+    var argument: String
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
   }
   object ErrorDetail {
     
@@ -141,26 +149,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var allowUnknownAttributes: js.UndefOr[Boolean] = js.native
+    var allowUnknownAttributes: js.UndefOr[Boolean] = js.undefined
     
-    var base: js.UndefOr[String] = js.native
+    var base: js.UndefOr[String] = js.undefined
     
-    var nestedErrors: js.UndefOr[Boolean] = js.native
+    var nestedErrors: js.UndefOr[Boolean] = js.undefined
     
-    var preValidateProperty: js.UndefOr[PreValidatePropertyFunction] = js.native
+    var preValidateProperty: js.UndefOr[PreValidatePropertyFunction] = js.undefined
     
-    var rewrite: js.UndefOr[RewriteFunction] = js.native
+    var rewrite: js.UndefOr[RewriteFunction] = js.undefined
     
-    var skipAttributes: js.UndefOr[js.Array[String]] = js.native
+    var skipAttributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var throwAll: js.UndefOr[Boolean] = js.native
+    var throwAll: js.UndefOr[Boolean] = js.undefined
     
-    var throwError: js.UndefOr[Boolean] = js.native
+    var throwError: js.UndefOr[Boolean] = js.undefined
     
-    var throwFirst: js.UndefOr[Boolean] = js.native
+    var throwFirst: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -253,87 +260,86 @@ object mod {
     js.Any
   ]
   
-  @js.native
   trait Schema extends StObject {
     
     @JSName("$id")
-    var $id: js.UndefOr[String] = js.native
+    var $id: js.UndefOr[String] = js.undefined
     
     @JSName("$ref")
-    var $ref: js.UndefOr[String] = js.native
+    var $ref: js.UndefOr[String] = js.undefined
     
     @JSName("$schema")
-    var $schema: js.UndefOr[String] = js.native
+    var $schema: js.UndefOr[String] = js.undefined
     
-    var additionalItems: js.UndefOr[Boolean | Schema] = js.native
+    var additionalItems: js.UndefOr[Boolean | Schema] = js.undefined
     
-    var additionalProperties: js.UndefOr[Boolean | Schema] = js.native
+    var additionalProperties: js.UndefOr[Boolean | Schema] = js.undefined
     
-    var allOf: js.UndefOr[js.Array[Schema]] = js.native
+    var allOf: js.UndefOr[js.Array[Schema]] = js.undefined
     
-    var anyOf: js.UndefOr[js.Array[Schema]] = js.native
+    var anyOf: js.UndefOr[js.Array[Schema]] = js.undefined
     
-    var const: js.UndefOr[js.Any] = js.native
+    var const: js.UndefOr[js.Any] = js.undefined
     
-    var definitions: js.UndefOr[StringDictionary[Schema]] = js.native
+    var definitions: js.UndefOr[StringDictionary[Schema]] = js.undefined
     
-    var dependencies: js.UndefOr[StringDictionary[Schema | js.Array[String]]] = js.native
+    var dependencies: js.UndefOr[StringDictionary[Schema | js.Array[String]]] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var `else`: js.UndefOr[Schema] = js.native
+    var `else`: js.UndefOr[Schema] = js.undefined
     
-    var enum: js.UndefOr[js.Array[_]] = js.native
+    var `enum`: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var exclusiveMaximum: js.UndefOr[Double | Boolean] = js.native
+    var exclusiveMaximum: js.UndefOr[Double | Boolean] = js.undefined
     
-    var exclusiveMinimum: js.UndefOr[Double | Boolean] = js.native
+    var exclusiveMinimum: js.UndefOr[Double | Boolean] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `if`: js.UndefOr[Schema] = js.native
+    var `if`: js.UndefOr[Schema] = js.undefined
     
-    var items: js.UndefOr[Schema | js.Array[Schema]] = js.native
+    var items: js.UndefOr[Schema | js.Array[Schema]] = js.undefined
     
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var maxProperties: js.UndefOr[Double] = js.native
+    var maxProperties: js.UndefOr[Double] = js.undefined
     
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
-    var minItems: js.UndefOr[Double] = js.native
+    var minItems: js.UndefOr[Double] = js.undefined
     
-    var minLength: js.UndefOr[Double] = js.native
+    var minLength: js.UndefOr[Double] = js.undefined
     
-    var minProperties: js.UndefOr[Double] = js.native
+    var minProperties: js.UndefOr[Double] = js.undefined
     
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
-    var multipleOf: js.UndefOr[Double] = js.native
+    var multipleOf: js.UndefOr[Double] = js.undefined
     
-    var not: js.UndefOr[Schema] = js.native
+    var not: js.UndefOr[Schema] = js.undefined
     
-    var oneOf: js.UndefOr[js.Array[Schema]] = js.native
+    var oneOf: js.UndefOr[js.Array[Schema]] = js.undefined
     
-    var pattern: js.UndefOr[String | RegExp] = js.native
+    var pattern: js.UndefOr[String | RegExp] = js.undefined
     
-    var patternProperties: js.UndefOr[StringDictionary[Schema]] = js.native
+    var patternProperties: js.UndefOr[StringDictionary[Schema]] = js.undefined
     
-    var properties: js.UndefOr[StringDictionary[Schema]] = js.native
+    var properties: js.UndefOr[StringDictionary[Schema]] = js.undefined
     
-    var required: js.UndefOr[js.Array[String] | Boolean] = js.native
+    var required: js.UndefOr[js.Array[String] | Boolean] = js.undefined
     
-    var `then`: js.UndefOr[Schema] = js.native
+    var `then`: js.UndefOr[Schema] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String | js.Array[String]] = js.native
+    var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var uniqueItems: js.UndefOr[Boolean] = js.native
+    var uniqueItems: js.UndefOr[Boolean] = js.undefined
   }
   object Schema {
     
@@ -425,7 +431,7 @@ object mod {
       def setElseUndefined: Self = StObject.set(x, "else", js.undefined)
       
       @scala.inline
-      def setEnum(value: js.Array[_]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
+      def setEnum(value: js.Array[js.Any]): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEnumUndefined: Self = StObject.set(x, "enum", js.undefined)
@@ -597,18 +603,17 @@ object mod {
     }
   }
   
-  @js.native
   trait SchemaContext extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var options: Options = js.native
+    var options: Options
     
-    var propertyPath: String = js.native
+    var propertyPath: String
     
-    var schema: Schema = js.native
+    var schema: Schema
     
-    var schemas: StringDictionary[Schema] = js.native
+    var schemas: StringDictionary[Schema]
   }
   object SchemaContext {
     

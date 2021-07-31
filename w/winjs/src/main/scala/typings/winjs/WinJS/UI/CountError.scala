@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,5 +17,7 @@ object CountError extends StObject {
     * An attempt to count items timed out.
     **/
   @js.native
-  sealed trait noResponse extends CountError
+  sealed trait noResponse
+    extends StObject
+       with CountError
 }

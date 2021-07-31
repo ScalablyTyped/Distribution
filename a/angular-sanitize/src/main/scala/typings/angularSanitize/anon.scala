@@ -2,19 +2,17 @@ package typings.angularSanitize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HtmlElements extends StObject {
     
-    var htmlElements: js.UndefOr[js.Array[String]] = js.native
+    var htmlElements: js.UndefOr[js.Array[String]] = js.undefined
     
-    var htmlVoidElements: js.UndefOr[js.Array[String]] = js.native
+    var htmlVoidElements: js.UndefOr[js.Array[String]] = js.undefined
     
-    var svgElements: js.UndefOr[js.Array[String]] = js.native
+    var svgElements: js.UndefOr[js.Array[String]] = js.undefined
   }
   object HtmlElements {
     

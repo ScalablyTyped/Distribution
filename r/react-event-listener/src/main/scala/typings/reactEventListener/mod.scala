@@ -24,526 +24,679 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-event-listener", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-event-listener", JSImport.Default)
   @js.native
   class default[T /* <: EventTarget | WindowEventTargets */] ()
     extends PureComponent[EventListenerProps[T], js.Object, js.Any]
   
-  @JSImport("react-event-listener", "withOptions")
-  @js.native
-  def withOptions[T, TThis](handler: js.ThisFunction1[/* this */ TThis, /* ev */ T, _], options: EventOptions): js.ThisFunction1[/* this */ TThis, /* ev */ T, _] = js.native
+  @scala.inline
+  def withOptions[T, TThis](handler: js.ThisFunction1[/* this */ TThis, /* ev */ T, js.Any], options: EventOptions): js.ThisFunction1[/* this */ TThis, /* ev */ T, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("withOptions")(handler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ TThis, /* ev */ T, js.Any]]
   
   type EventListener[T /* <: EventTarget | WindowEventTargets */] = PureComponent[EventListenerProps[T], js.Object, js.Any]
   
-  @js.native
   trait EventListenerProps[T /* <: EventTarget | WindowEventTargets */] extends StObject {
     
     var oNmsPointerUp: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var oNmsPointerUpCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
-    var onAbort: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onAbort: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onAbortCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onAbortCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onAfterPrint: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onAfterPrint: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onAfterPrintCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onAfterPrintCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onBeforePrint: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onBeforePrint: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onBeforePrintCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onBeforePrintCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     var onBeforeUnload: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, js.Any]
+      ] = js.undefined
     
     var onBeforeUnloadCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, js.Any]
+      ] = js.undefined
     
-    var onBlur: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]] = js.native
+    var onBlur: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]
+      ] = js.undefined
     
-    var onBlurCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]] = js.native
+    var onBlurCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]
+      ] = js.undefined
     
-    var onCanPlay: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCanPlay: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onCanPlayCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCanPlayCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onCanPlayThrough: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCanPlayThrough: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onCanPlayThroughCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCanPlayThroughCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onClick: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onClick: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onClickCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onClickCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onCompassNeedsCalibration: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCompassNeedsCalibration: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onCompassNeedsCalibrationCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onCompassNeedsCalibrationCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onContextMenu: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onContextMenu: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onContextMenuCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onContextMenuCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onDblClick: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onDblClick: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onDblClickCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onDblClickCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
     var onDeviceMotion: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, js.Any]
+      ] = js.undefined
     
     var onDeviceMotionCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, js.Any]
+      ] = js.undefined
     
     var onDeviceOrientation: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, js.Any]
+      ] = js.undefined
     
     var onDeviceOrientationCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, js.Any]
+      ] = js.undefined
     
-    var onDrag: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDrag: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragEnd: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragEndCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragEndCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragEnter: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragEnter: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragEnterCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragEnterCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragLeave: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragLeave: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragLeaveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragLeaveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragOver: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragOver: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragOverCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragOverCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragStart: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragStart: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDragStartCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDragStartCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDrop: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDrop: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDropCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]] = js.native
+    var onDropCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]
+      ] = js.undefined
     
-    var onDurationChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onDurationChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onDurationChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onDurationChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onEmptied: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onEmptied: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onEmptiedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onEmptiedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onEnded: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onEnded: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onEndedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onEndedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     var onError: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, js.Any]
+      ] = js.undefined
     
     var onErrorCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, js.Any]
+      ] = js.undefined
     
-    var onFocus: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]] = js.native
+    var onFocus: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]
+      ] = js.undefined
     
-    var onFocusCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]] = js.native
+    var onFocusCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]
+      ] = js.undefined
     
     var onHashChange: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, js.Any]
+      ] = js.undefined
     
     var onHashChangeCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, js.Any]
+      ] = js.undefined
     
-    var onInput: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onInput: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onInputCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onInputCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyDown: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onKeyDownCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyDownCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onKeyPress: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyPress: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onKeyPressCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyPressCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onKeyUp: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyUp: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onKeyUpCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]] = js.native
+    var onKeyUpCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]
+      ] = js.undefined
     
-    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoad: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadStart: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadStart: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadStartCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadStartCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadedData: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadedData: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadedDataCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadedDataCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadedMetadata: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadedMetadata: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onLoadedMetadataCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onLoadedMetadataCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     var onMessage: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[_], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[js.Any], js.Any]
+      ] = js.undefined
     
     var onMessageCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[_], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[js.Any], js.Any]
+      ] = js.undefined
     
-    var onMouseDown: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseDown: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseDownCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseDownCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseEnter: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseEnterCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseEnterCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseLeave: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseLeaveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseLeaveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseMove: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseMoveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseMoveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseOut: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseOut: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseOutCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseOutCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseOver: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseOver: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseOverCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseOverCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseUp: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseUpCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]] = js.native
+    var onMouseUpCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseWheel: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]] = js.native
+    var onMouseWheel: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]
+      ] = js.undefined
     
-    var onMouseWheelCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]] = js.native
+    var onMouseWheelCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureChange: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureChangeCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureDoubleTap: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureDoubleTapCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureEnd: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureEndCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureHold: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureHoldCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureStart: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureStartCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureTap: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsGestureTapCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsInertiaStart: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsInertiaStartCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerCancel: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerCancelCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerDown: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerDownCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerEnter: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerEnterCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerLeave: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerLeaveCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerMove: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerMoveCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerOut: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerOutCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerOver: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
     var onMsPointerOverCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]
+      ] = js.undefined
     
-    var onOffline: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOffline: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onOfflineCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOfflineCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onOnline: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOnline: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onOnlineCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOnlineCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onOrientationChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOrientationChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onOrientationChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onOrientationChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     var onPageHide: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]
+      ] = js.undefined
     
     var onPageHideCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]
+      ] = js.undefined
     
     var onPageShow: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]
+      ] = js.undefined
     
     var onPageShowCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]
+      ] = js.undefined
     
-    var onPause: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPause: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onPauseCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPauseCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onPlay: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPlay: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onPlayCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPlayCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onPlaying: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPlaying: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onPlayingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onPlayingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     // Global events
-    var onPointerCancel: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerCancel: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerCancelCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerCancelCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerDown: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerDown: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerDownCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerDownCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerEnter: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerEnter: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerEnterCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerEnterCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerLeave: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerLeave: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerLeaveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerLeaveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerMove: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerMove: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerMoveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerMoveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerOut: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerOut: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerOutCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerOutCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerOver: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerOver: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerOverCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerOverCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerUp: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerUp: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPointerUpCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]] = js.native
+    var onPointerUpCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]
+      ] = js.undefined
     
-    var onPopState: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, _]] = js.native
+    var onPopState: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, js.Any]
+      ] = js.undefined
     
-    var onPopStateCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, _]] = js.native
+    var onPopStateCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, js.Any]
+      ] = js.undefined
     
     var onProgress: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
+      ] = js.undefined
     
     var onProgressCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
+      ] = js.undefined
     
-    var onRateChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onRateChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onRateChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onRateChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
     var onReadyStateChange: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
+      ] = js.undefined
     
     var onReadyStateChangeCapture: js.UndefOr[
-        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
-      ] = js.native
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
+      ] = js.undefined
     
-    var onReset: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onReset: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onResetCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onResetCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onResize: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onResize: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onResizeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onResizeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onScroll: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onScroll: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onScrollCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onScrollCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onSeeked: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSeeked: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSeekedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSeekedCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSeeking: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSeeking: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSeekingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSeekingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSelect: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onSelect: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onSelectCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]] = js.native
+    var onSelectCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSelectionChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSelectionChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSelectionChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onStalled: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onStalled: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onStalledCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onStalledCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onStorage: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, _]] = js.native
+    var onStorage: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, js.Any]
+      ] = js.undefined
     
-    var onStorageCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, _]] = js.native
+    var onStorageCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, js.Any]
+      ] = js.undefined
     
-    var onSubmit: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSubmit: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSubmitCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSubmitCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSuspend: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSuspend: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onSuspendCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onSuspendCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onTimeUpdate: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onTimeUpdate: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onTimeUpdateCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onTimeUpdateCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onTouchCancel: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchCancel: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchCancelCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchCancelCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchEnd: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchEnd: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchEndCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchEndCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchMove: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchMove: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchMoveCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchMoveCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchStart: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchStart: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onTouchStartCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]] = js.native
+    var onTouchStartCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]
+      ] = js.undefined
     
-    var onUnload: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onUnload: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onUnloadCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onUnloadCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onVolumeChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onVolumeChange: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onVolumeChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onVolumeChangeCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onWaiting: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onWaiting: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onWaitingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]] = js.native
+    var onWaitingCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]] = js.undefined
     
-    var onWheel: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]] = js.native
+    var onWheel: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]
+      ] = js.undefined
     
-    var onWheelCapture: js.UndefOr[js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]] = js.native
+    var onWheelCapture: js.UndefOr[
+        js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]
+      ] = js.undefined
     
     /**
       * Target (window or document)
       */
-    var target: T = js.native
+    var target: T
   }
   object EventListenerProps {
     
@@ -554,13 +707,13 @@ object mod {
     }
     
     @scala.inline
-    implicit class EventListenerPropsMutableBuilder[Self <: EventListenerProps[_], T /* <: EventTarget | WindowEventTargets */] (val x: Self with EventListenerProps[T]) extends AnyVal {
+    implicit class EventListenerPropsMutableBuilder[Self <: EventListenerProps[?], T /* <: EventTarget | WindowEventTargets */] (val x: Self & EventListenerProps[T]) extends AnyVal {
       
       @scala.inline
-      def setONmsPointerUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "oNmsPointerUp", value.asInstanceOf[js.Any])
+      def setONmsPointerUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "oNmsPointerUp", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setONmsPointerUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "oNmsPointerUpCapture", value.asInstanceOf[js.Any])
+      def setONmsPointerUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "oNmsPointerUpCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setONmsPointerUpCaptureUndefined: Self = StObject.set(x, "oNmsPointerUpCapture", js.undefined)
@@ -569,10 +722,10 @@ object mod {
       def setONmsPointerUpUndefined: Self = StObject.set(x, "oNmsPointerUp", js.undefined)
       
       @scala.inline
-      def setOnAbort(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
+      def setOnAbort(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onAbort", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAbortCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
+      def setOnAbortCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onAbortCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnAbortCaptureUndefined: Self = StObject.set(x, "onAbortCapture", js.undefined)
@@ -581,10 +734,10 @@ object mod {
       def setOnAbortUndefined: Self = StObject.set(x, "onAbort", js.undefined)
       
       @scala.inline
-      def setOnAfterPrint(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onAfterPrint", value.asInstanceOf[js.Any])
+      def setOnAfterPrint(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onAfterPrint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnAfterPrintCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onAfterPrintCapture", value.asInstanceOf[js.Any])
+      def setOnAfterPrintCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onAfterPrintCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnAfterPrintCaptureUndefined: Self = StObject.set(x, "onAfterPrintCapture", js.undefined)
@@ -593,10 +746,10 @@ object mod {
       def setOnAfterPrintUndefined: Self = StObject.set(x, "onAfterPrint", js.undefined)
       
       @scala.inline
-      def setOnBeforePrint(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onBeforePrint", value.asInstanceOf[js.Any])
+      def setOnBeforePrint(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onBeforePrint", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBeforePrintCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onBeforePrintCapture", value.asInstanceOf[js.Any])
+      def setOnBeforePrintCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onBeforePrintCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnBeforePrintCaptureUndefined: Self = StObject.set(x, "onBeforePrintCapture", js.undefined)
@@ -605,10 +758,10 @@ object mod {
       def setOnBeforePrintUndefined: Self = StObject.set(x, "onBeforePrint", js.undefined)
       
       @scala.inline
-      def setOnBeforeUnload(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, _]): Self = StObject.set(x, "onBeforeUnload", value.asInstanceOf[js.Any])
+      def setOnBeforeUnload(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, js.Any]): Self = StObject.set(x, "onBeforeUnload", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBeforeUnloadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, _]): Self = StObject.set(x, "onBeforeUnloadCapture", value.asInstanceOf[js.Any])
+      def setOnBeforeUnloadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ BeforeUnloadEvent, js.Any]): Self = StObject.set(x, "onBeforeUnloadCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnBeforeUnloadCaptureUndefined: Self = StObject.set(x, "onBeforeUnloadCapture", js.undefined)
@@ -617,10 +770,10 @@ object mod {
       def setOnBeforeUnloadUndefined: Self = StObject.set(x, "onBeforeUnload", js.undefined)
       
       @scala.inline
-      def setOnBlur(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
+      def setOnBlur(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onBlur", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnBlurCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
+      def setOnBlurCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onBlurCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnBlurCaptureUndefined: Self = StObject.set(x, "onBlurCapture", js.undefined)
@@ -629,19 +782,19 @@ object mod {
       def setOnBlurUndefined: Self = StObject.set(x, "onBlur", js.undefined)
       
       @scala.inline
-      def setOnCanPlay(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCanPlay", value.asInstanceOf[js.Any])
+      def setOnCanPlay(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCanPlay", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCanPlayCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
+      def setOnCanPlayCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCanPlayCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnCanPlayCaptureUndefined: Self = StObject.set(x, "onCanPlayCapture", js.undefined)
       
       @scala.inline
-      def setOnCanPlayThrough(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCanPlayThrough", value.asInstanceOf[js.Any])
+      def setOnCanPlayThrough(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCanPlayThrough", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCanPlayThroughCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
+      def setOnCanPlayThroughCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCanPlayThroughCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnCanPlayThroughCaptureUndefined: Self = StObject.set(x, "onCanPlayThroughCapture", js.undefined)
@@ -653,10 +806,10 @@ object mod {
       def setOnCanPlayUndefined: Self = StObject.set(x, "onCanPlay", js.undefined)
       
       @scala.inline
-      def setOnChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
+      def setOnChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
+      def setOnChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnChangeCaptureUndefined: Self = StObject.set(x, "onChangeCapture", js.undefined)
@@ -665,10 +818,10 @@ object mod {
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnClick(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
+      def setOnClick(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnClickCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
+      def setOnClickCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onClickCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnClickCaptureUndefined: Self = StObject.set(x, "onClickCapture", js.undefined)
@@ -677,10 +830,10 @@ object mod {
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
       
       @scala.inline
-      def setOnCompassNeedsCalibration(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCompassNeedsCalibration", value.asInstanceOf[js.Any])
+      def setOnCompassNeedsCalibration(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCompassNeedsCalibration", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnCompassNeedsCalibrationCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onCompassNeedsCalibrationCapture", value.asInstanceOf[js.Any])
+      def setOnCompassNeedsCalibrationCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onCompassNeedsCalibrationCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnCompassNeedsCalibrationCaptureUndefined: Self = StObject.set(x, "onCompassNeedsCalibrationCapture", js.undefined)
@@ -689,10 +842,10 @@ object mod {
       def setOnCompassNeedsCalibrationUndefined: Self = StObject.set(x, "onCompassNeedsCalibration", js.undefined)
       
       @scala.inline
-      def setOnContextMenu(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
+      def setOnContextMenu(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onContextMenu", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnContextMenuCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
+      def setOnContextMenuCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onContextMenuCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnContextMenuCaptureUndefined: Self = StObject.set(x, "onContextMenuCapture", js.undefined)
@@ -701,10 +854,10 @@ object mod {
       def setOnContextMenuUndefined: Self = StObject.set(x, "onContextMenu", js.undefined)
       
       @scala.inline
-      def setOnDblClick(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
+      def setOnDblClick(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDblClickCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onDblClickCapture", value.asInstanceOf[js.Any])
+      def setOnDblClickCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onDblClickCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDblClickCaptureUndefined: Self = StObject.set(x, "onDblClickCapture", js.undefined)
@@ -713,10 +866,10 @@ object mod {
       def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
       
       @scala.inline
-      def setOnDeviceMotion(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, _]): Self = StObject.set(x, "onDeviceMotion", value.asInstanceOf[js.Any])
+      def setOnDeviceMotion(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, js.Any]): Self = StObject.set(x, "onDeviceMotion", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDeviceMotionCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, _]): Self = StObject.set(x, "onDeviceMotionCapture", value.asInstanceOf[js.Any])
+      def setOnDeviceMotionCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceMotionEvent, js.Any]): Self = StObject.set(x, "onDeviceMotionCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDeviceMotionCaptureUndefined: Self = StObject.set(x, "onDeviceMotionCapture", js.undefined)
@@ -725,10 +878,14 @@ object mod {
       def setOnDeviceMotionUndefined: Self = StObject.set(x, "onDeviceMotion", js.undefined)
       
       @scala.inline
-      def setOnDeviceOrientation(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, _]): Self = StObject.set(x, "onDeviceOrientation", value.asInstanceOf[js.Any])
+      def setOnDeviceOrientation(
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, js.Any]
+      ): Self = StObject.set(x, "onDeviceOrientation", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDeviceOrientationCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, _]): Self = StObject.set(x, "onDeviceOrientationCapture", value.asInstanceOf[js.Any])
+      def setOnDeviceOrientationCapture(
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DeviceOrientationEvent, js.Any]
+      ): Self = StObject.set(x, "onDeviceOrientationCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDeviceOrientationCaptureUndefined: Self = StObject.set(x, "onDeviceOrientationCapture", js.undefined)
@@ -737,19 +894,19 @@ object mod {
       def setOnDeviceOrientationUndefined: Self = StObject.set(x, "onDeviceOrientation", js.undefined)
       
       @scala.inline
-      def setOnDrag(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
+      def setOnDrag(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDrag", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
+      def setOnDragCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragCaptureUndefined: Self = StObject.set(x, "onDragCapture", js.undefined)
       
       @scala.inline
-      def setOnDragEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
+      def setOnDragEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
+      def setOnDragEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragEndCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragEndCaptureUndefined: Self = StObject.set(x, "onDragEndCapture", js.undefined)
@@ -758,10 +915,10 @@ object mod {
       def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
       
       @scala.inline
-      def setOnDragEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragEnter", value.asInstanceOf[js.Any])
+      def setOnDragEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragEnter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
+      def setOnDragEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragEnterCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragEnterCaptureUndefined: Self = StObject.set(x, "onDragEnterCapture", js.undefined)
@@ -770,10 +927,10 @@ object mod {
       def setOnDragEnterUndefined: Self = StObject.set(x, "onDragEnter", js.undefined)
       
       @scala.inline
-      def setOnDragLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragLeave", value.asInstanceOf[js.Any])
+      def setOnDragLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragLeave", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
+      def setOnDragLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragLeaveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragLeaveCaptureUndefined: Self = StObject.set(x, "onDragLeaveCapture", js.undefined)
@@ -782,10 +939,10 @@ object mod {
       def setOnDragLeaveUndefined: Self = StObject.set(x, "onDragLeave", js.undefined)
       
       @scala.inline
-      def setOnDragOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
+      def setOnDragOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragOver", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
+      def setOnDragOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragOverCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragOverCaptureUndefined: Self = StObject.set(x, "onDragOverCapture", js.undefined)
@@ -794,10 +951,10 @@ object mod {
       def setOnDragOverUndefined: Self = StObject.set(x, "onDragOver", js.undefined)
       
       @scala.inline
-      def setOnDragStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
+      def setOnDragStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDragStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
+      def setOnDragStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDragStartCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDragStartCaptureUndefined: Self = StObject.set(x, "onDragStartCapture", js.undefined)
@@ -809,10 +966,10 @@ object mod {
       def setOnDragUndefined: Self = StObject.set(x, "onDrag", js.undefined)
       
       @scala.inline
-      def setOnDrop(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
+      def setOnDrop(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDrop", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDropCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, _]): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
+      def setOnDropCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ DragEvent, js.Any]): Self = StObject.set(x, "onDropCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDropCaptureUndefined: Self = StObject.set(x, "onDropCapture", js.undefined)
@@ -821,10 +978,10 @@ object mod {
       def setOnDropUndefined: Self = StObject.set(x, "onDrop", js.undefined)
       
       @scala.inline
-      def setOnDurationChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onDurationChange", value.asInstanceOf[js.Any])
+      def setOnDurationChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onDurationChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnDurationChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
+      def setOnDurationChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onDurationChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnDurationChangeCaptureUndefined: Self = StObject.set(x, "onDurationChangeCapture", js.undefined)
@@ -833,10 +990,10 @@ object mod {
       def setOnDurationChangeUndefined: Self = StObject.set(x, "onDurationChange", js.undefined)
       
       @scala.inline
-      def setOnEmptied(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
+      def setOnEmptied(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onEmptied", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnEmptiedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
+      def setOnEmptiedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onEmptiedCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnEmptiedCaptureUndefined: Self = StObject.set(x, "onEmptiedCapture", js.undefined)
@@ -845,10 +1002,10 @@ object mod {
       def setOnEmptiedUndefined: Self = StObject.set(x, "onEmptied", js.undefined)
       
       @scala.inline
-      def setOnEnded(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
+      def setOnEnded(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onEnded", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnEndedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
+      def setOnEndedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onEndedCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnEndedCaptureUndefined: Self = StObject.set(x, "onEndedCapture", js.undefined)
@@ -858,12 +1015,12 @@ object mod {
       
       @scala.inline
       def setOnError(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, js.Any]
       ): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnErrorCapture(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* args */ OnErrorEventHandlerArgs, js.Any]
       ): Self = StObject.set(x, "onErrorCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -873,10 +1030,10 @@ object mod {
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       @scala.inline
-      def setOnFocus(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
+      def setOnFocus(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onFocus", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnFocusCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, _]): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
+      def setOnFocusCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ FocusEvent, js.Any]): Self = StObject.set(x, "onFocusCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnFocusCaptureUndefined: Self = StObject.set(x, "onFocusCapture", js.undefined)
@@ -885,10 +1042,10 @@ object mod {
       def setOnFocusUndefined: Self = StObject.set(x, "onFocus", js.undefined)
       
       @scala.inline
-      def setOnHashChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, _]): Self = StObject.set(x, "onHashChange", value.asInstanceOf[js.Any])
+      def setOnHashChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, js.Any]): Self = StObject.set(x, "onHashChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnHashChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, _]): Self = StObject.set(x, "onHashChangeCapture", value.asInstanceOf[js.Any])
+      def setOnHashChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ HashChangeEvent, js.Any]): Self = StObject.set(x, "onHashChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnHashChangeCaptureUndefined: Self = StObject.set(x, "onHashChangeCapture", js.undefined)
@@ -897,10 +1054,10 @@ object mod {
       def setOnHashChangeUndefined: Self = StObject.set(x, "onHashChange", js.undefined)
       
       @scala.inline
-      def setOnInput(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
+      def setOnInput(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onInput", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnInputCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
+      def setOnInputCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onInputCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnInputCaptureUndefined: Self = StObject.set(x, "onInputCapture", js.undefined)
@@ -909,10 +1066,10 @@ object mod {
       def setOnInputUndefined: Self = StObject.set(x, "onInput", js.undefined)
       
       @scala.inline
-      def setOnKeyDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
+      def setOnKeyDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyDown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnKeyDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
+      def setOnKeyDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyDownCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnKeyDownCaptureUndefined: Self = StObject.set(x, "onKeyDownCapture", js.undefined)
@@ -921,10 +1078,10 @@ object mod {
       def setOnKeyDownUndefined: Self = StObject.set(x, "onKeyDown", js.undefined)
       
       @scala.inline
-      def setOnKeyPress(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
+      def setOnKeyPress(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyPress", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnKeyPressCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
+      def setOnKeyPressCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyPressCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnKeyPressCaptureUndefined: Self = StObject.set(x, "onKeyPressCapture", js.undefined)
@@ -933,10 +1090,10 @@ object mod {
       def setOnKeyPressUndefined: Self = StObject.set(x, "onKeyPress", js.undefined)
       
       @scala.inline
-      def setOnKeyUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyUp", value.asInstanceOf[js.Any])
+      def setOnKeyUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyUp", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnKeyUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, _]): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
+      def setOnKeyUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ KeyboardEvent, js.Any]): Self = StObject.set(x, "onKeyUpCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnKeyUpCaptureUndefined: Self = StObject.set(x, "onKeyUpCapture", js.undefined)
@@ -945,19 +1102,19 @@ object mod {
       def setOnKeyUpUndefined: Self = StObject.set(x, "onKeyUp", js.undefined)
       
       @scala.inline
-      def setOnLoad(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
+      def setOnLoad(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoad", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLoadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
+      def setOnLoadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadCaptureUndefined: Self = StObject.set(x, "onLoadCapture", js.undefined)
       
       @scala.inline
-      def setOnLoadStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
+      def setOnLoadStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLoadStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
+      def setOnLoadStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadStartCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadStartCaptureUndefined: Self = StObject.set(x, "onLoadStartCapture", js.undefined)
@@ -969,10 +1126,10 @@ object mod {
       def setOnLoadUndefined: Self = StObject.set(x, "onLoad", js.undefined)
       
       @scala.inline
-      def setOnLoadedData(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadedData", value.asInstanceOf[js.Any])
+      def setOnLoadedData(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadedData", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLoadedDataCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
+      def setOnLoadedDataCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadedDataCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadedDataCaptureUndefined: Self = StObject.set(x, "onLoadedDataCapture", js.undefined)
@@ -981,10 +1138,10 @@ object mod {
       def setOnLoadedDataUndefined: Self = StObject.set(x, "onLoadedData", js.undefined)
       
       @scala.inline
-      def setOnLoadedMetadata(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadedMetadata", value.asInstanceOf[js.Any])
+      def setOnLoadedMetadata(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadedMetadata", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnLoadedMetadataCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
+      def setOnLoadedMetadataCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onLoadedMetadataCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnLoadedMetadataCaptureUndefined: Self = StObject.set(x, "onLoadedMetadataCapture", js.undefined)
@@ -993,10 +1150,14 @@ object mod {
       def setOnLoadedMetadataUndefined: Self = StObject.set(x, "onLoadedMetadata", js.undefined)
       
       @scala.inline
-      def setOnMessage(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[_], _]): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
+      def setOnMessage(
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[js.Any], js.Any]
+      ): Self = StObject.set(x, "onMessage", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMessageCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[_], _]): Self = StObject.set(x, "onMessageCapture", value.asInstanceOf[js.Any])
+      def setOnMessageCapture(
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MessageEvent[js.Any], js.Any]
+      ): Self = StObject.set(x, "onMessageCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMessageCaptureUndefined: Self = StObject.set(x, "onMessageCapture", js.undefined)
@@ -1005,10 +1166,10 @@ object mod {
       def setOnMessageUndefined: Self = StObject.set(x, "onMessage", js.undefined)
       
       @scala.inline
-      def setOnMouseDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
+      def setOnMouseDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseDown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
+      def setOnMouseDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseDownCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseDownCaptureUndefined: Self = StObject.set(x, "onMouseDownCapture", js.undefined)
@@ -1017,10 +1178,10 @@ object mod {
       def setOnMouseDownUndefined: Self = StObject.set(x, "onMouseDown", js.undefined)
       
       @scala.inline
-      def setOnMouseEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
+      def setOnMouseEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseEnter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseEnterCapture", value.asInstanceOf[js.Any])
+      def setOnMouseEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseEnterCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseEnterCaptureUndefined: Self = StObject.set(x, "onMouseEnterCapture", js.undefined)
@@ -1029,10 +1190,10 @@ object mod {
       def setOnMouseEnterUndefined: Self = StObject.set(x, "onMouseEnter", js.undefined)
       
       @scala.inline
-      def setOnMouseLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
+      def setOnMouseLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseLeave", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseLeaveCapture", value.asInstanceOf[js.Any])
+      def setOnMouseLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseLeaveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseLeaveCaptureUndefined: Self = StObject.set(x, "onMouseLeaveCapture", js.undefined)
@@ -1041,10 +1202,10 @@ object mod {
       def setOnMouseLeaveUndefined: Self = StObject.set(x, "onMouseLeave", js.undefined)
       
       @scala.inline
-      def setOnMouseMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
+      def setOnMouseMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
+      def setOnMouseMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseMoveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseMoveCaptureUndefined: Self = StObject.set(x, "onMouseMoveCapture", js.undefined)
@@ -1053,10 +1214,10 @@ object mod {
       def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
       
       @scala.inline
-      def setOnMouseOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
+      def setOnMouseOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseOut", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
+      def setOnMouseOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseOutCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseOutCaptureUndefined: Self = StObject.set(x, "onMouseOutCapture", js.undefined)
@@ -1065,10 +1226,10 @@ object mod {
       def setOnMouseOutUndefined: Self = StObject.set(x, "onMouseOut", js.undefined)
       
       @scala.inline
-      def setOnMouseOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
+      def setOnMouseOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseOver", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
+      def setOnMouseOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseOverCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseOverCaptureUndefined: Self = StObject.set(x, "onMouseOverCapture", js.undefined)
@@ -1077,10 +1238,10 @@ object mod {
       def setOnMouseOverUndefined: Self = StObject.set(x, "onMouseOver", js.undefined)
       
       @scala.inline
-      def setOnMouseUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
+      def setOnMouseUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseUp", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, _]): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
+      def setOnMouseUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MouseEvent, js.Any]): Self = StObject.set(x, "onMouseUpCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseUpCaptureUndefined: Self = StObject.set(x, "onMouseUpCapture", js.undefined)
@@ -1089,10 +1250,10 @@ object mod {
       def setOnMouseUpUndefined: Self = StObject.set(x, "onMouseUp", js.undefined)
       
       @scala.inline
-      def setOnMouseWheel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]): Self = StObject.set(x, "onMouseWheel", value.asInstanceOf[js.Any])
+      def setOnMouseWheel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onMouseWheel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMouseWheelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]): Self = StObject.set(x, "onMouseWheelCapture", value.asInstanceOf[js.Any])
+      def setOnMouseWheelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onMouseWheelCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMouseWheelCaptureUndefined: Self = StObject.set(x, "onMouseWheelCapture", js.undefined)
@@ -1101,10 +1262,10 @@ object mod {
       def setOnMouseWheelUndefined: Self = StObject.set(x, "onMouseWheel", js.undefined)
       
       @scala.inline
-      def setOnMsGestureChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureChange", value.asInstanceOf[js.Any])
+      def setOnMsGestureChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureChangeCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureChangeCaptureUndefined: Self = StObject.set(x, "onMsGestureChangeCapture", js.undefined)
@@ -1113,10 +1274,10 @@ object mod {
       def setOnMsGestureChangeUndefined: Self = StObject.set(x, "onMsGestureChange", js.undefined)
       
       @scala.inline
-      def setOnMsGestureDoubleTap(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureDoubleTap", value.asInstanceOf[js.Any])
+      def setOnMsGestureDoubleTap(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureDoubleTap", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureDoubleTapCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureDoubleTapCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureDoubleTapCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureDoubleTapCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureDoubleTapCaptureUndefined: Self = StObject.set(x, "onMsGestureDoubleTapCapture", js.undefined)
@@ -1125,10 +1286,10 @@ object mod {
       def setOnMsGestureDoubleTapUndefined: Self = StObject.set(x, "onMsGestureDoubleTap", js.undefined)
       
       @scala.inline
-      def setOnMsGestureEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureEnd", value.asInstanceOf[js.Any])
+      def setOnMsGestureEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureEnd", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureEndCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureEndCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureEndCaptureUndefined: Self = StObject.set(x, "onMsGestureEndCapture", js.undefined)
@@ -1137,10 +1298,10 @@ object mod {
       def setOnMsGestureEndUndefined: Self = StObject.set(x, "onMsGestureEnd", js.undefined)
       
       @scala.inline
-      def setOnMsGestureHold(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureHold", value.asInstanceOf[js.Any])
+      def setOnMsGestureHold(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureHold", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureHoldCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureHoldCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureHoldCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureHoldCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureHoldCaptureUndefined: Self = StObject.set(x, "onMsGestureHoldCapture", js.undefined)
@@ -1149,10 +1310,10 @@ object mod {
       def setOnMsGestureHoldUndefined: Self = StObject.set(x, "onMsGestureHold", js.undefined)
       
       @scala.inline
-      def setOnMsGestureStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureStart", value.asInstanceOf[js.Any])
+      def setOnMsGestureStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureStartCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureStartCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureStartCaptureUndefined: Self = StObject.set(x, "onMsGestureStartCapture", js.undefined)
@@ -1161,10 +1322,10 @@ object mod {
       def setOnMsGestureStartUndefined: Self = StObject.set(x, "onMsGestureStart", js.undefined)
       
       @scala.inline
-      def setOnMsGestureTap(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureTap", value.asInstanceOf[js.Any])
+      def setOnMsGestureTap(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureTap", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsGestureTapCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsGestureTapCapture", value.asInstanceOf[js.Any])
+      def setOnMsGestureTapCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsGestureTapCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsGestureTapCaptureUndefined: Self = StObject.set(x, "onMsGestureTapCapture", js.undefined)
@@ -1173,10 +1334,10 @@ object mod {
       def setOnMsGestureTapUndefined: Self = StObject.set(x, "onMsGestureTap", js.undefined)
       
       @scala.inline
-      def setOnMsInertiaStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsInertiaStart", value.asInstanceOf[js.Any])
+      def setOnMsInertiaStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsInertiaStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsInertiaStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, _]): Self = StObject.set(x, "onMsInertiaStartCapture", value.asInstanceOf[js.Any])
+      def setOnMsInertiaStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSGestureEvent, js.Any]): Self = StObject.set(x, "onMsInertiaStartCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsInertiaStartCaptureUndefined: Self = StObject.set(x, "onMsInertiaStartCapture", js.undefined)
@@ -1185,10 +1346,10 @@ object mod {
       def setOnMsInertiaStartUndefined: Self = StObject.set(x, "onMsInertiaStart", js.undefined)
       
       @scala.inline
-      def setOnMsPointerCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerCancel", value.asInstanceOf[js.Any])
+      def setOnMsPointerCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerCancelCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerCancelCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerCancelCaptureUndefined: Self = StObject.set(x, "onMsPointerCancelCapture", js.undefined)
@@ -1197,10 +1358,10 @@ object mod {
       def setOnMsPointerCancelUndefined: Self = StObject.set(x, "onMsPointerCancel", js.undefined)
       
       @scala.inline
-      def setOnMsPointerDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerDown", value.asInstanceOf[js.Any])
+      def setOnMsPointerDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerDown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerDownCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerDownCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerDownCaptureUndefined: Self = StObject.set(x, "onMsPointerDownCapture", js.undefined)
@@ -1209,10 +1370,10 @@ object mod {
       def setOnMsPointerDownUndefined: Self = StObject.set(x, "onMsPointerDown", js.undefined)
       
       @scala.inline
-      def setOnMsPointerEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerEnter", value.asInstanceOf[js.Any])
+      def setOnMsPointerEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerEnter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerEnterCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerEnterCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerEnterCaptureUndefined: Self = StObject.set(x, "onMsPointerEnterCapture", js.undefined)
@@ -1221,10 +1382,10 @@ object mod {
       def setOnMsPointerEnterUndefined: Self = StObject.set(x, "onMsPointerEnter", js.undefined)
       
       @scala.inline
-      def setOnMsPointerLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerLeave", value.asInstanceOf[js.Any])
+      def setOnMsPointerLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerLeave", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerLeaveCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerLeaveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerLeaveCaptureUndefined: Self = StObject.set(x, "onMsPointerLeaveCapture", js.undefined)
@@ -1233,10 +1394,10 @@ object mod {
       def setOnMsPointerLeaveUndefined: Self = StObject.set(x, "onMsPointerLeave", js.undefined)
       
       @scala.inline
-      def setOnMsPointerMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerMove", value.asInstanceOf[js.Any])
+      def setOnMsPointerMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerMove", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerMoveCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerMoveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerMoveCaptureUndefined: Self = StObject.set(x, "onMsPointerMoveCapture", js.undefined)
@@ -1245,10 +1406,10 @@ object mod {
       def setOnMsPointerMoveUndefined: Self = StObject.set(x, "onMsPointerMove", js.undefined)
       
       @scala.inline
-      def setOnMsPointerOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerOut", value.asInstanceOf[js.Any])
+      def setOnMsPointerOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerOut", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerOutCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerOutCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerOutCaptureUndefined: Self = StObject.set(x, "onMsPointerOutCapture", js.undefined)
@@ -1257,10 +1418,10 @@ object mod {
       def setOnMsPointerOutUndefined: Self = StObject.set(x, "onMsPointerOut", js.undefined)
       
       @scala.inline
-      def setOnMsPointerOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerOver", value.asInstanceOf[js.Any])
+      def setOnMsPointerOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerOver", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnMsPointerOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, _]): Self = StObject.set(x, "onMsPointerOverCapture", value.asInstanceOf[js.Any])
+      def setOnMsPointerOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ MSPointerEvent, js.Any]): Self = StObject.set(x, "onMsPointerOverCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnMsPointerOverCaptureUndefined: Self = StObject.set(x, "onMsPointerOverCapture", js.undefined)
@@ -1269,10 +1430,10 @@ object mod {
       def setOnMsPointerOverUndefined: Self = StObject.set(x, "onMsPointerOver", js.undefined)
       
       @scala.inline
-      def setOnOffline(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOffline", value.asInstanceOf[js.Any])
+      def setOnOffline(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOffline", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnOfflineCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOfflineCapture", value.asInstanceOf[js.Any])
+      def setOnOfflineCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOfflineCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnOfflineCaptureUndefined: Self = StObject.set(x, "onOfflineCapture", js.undefined)
@@ -1281,10 +1442,10 @@ object mod {
       def setOnOfflineUndefined: Self = StObject.set(x, "onOffline", js.undefined)
       
       @scala.inline
-      def setOnOnline(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOnline", value.asInstanceOf[js.Any])
+      def setOnOnline(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOnline", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnOnlineCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOnlineCapture", value.asInstanceOf[js.Any])
+      def setOnOnlineCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOnlineCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnOnlineCaptureUndefined: Self = StObject.set(x, "onOnlineCapture", js.undefined)
@@ -1293,10 +1454,10 @@ object mod {
       def setOnOnlineUndefined: Self = StObject.set(x, "onOnline", js.undefined)
       
       @scala.inline
-      def setOnOrientationChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOrientationChange", value.asInstanceOf[js.Any])
+      def setOnOrientationChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOrientationChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnOrientationChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onOrientationChangeCapture", value.asInstanceOf[js.Any])
+      def setOnOrientationChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onOrientationChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnOrientationChangeCaptureUndefined: Self = StObject.set(x, "onOrientationChangeCapture", js.undefined)
@@ -1305,10 +1466,10 @@ object mod {
       def setOnOrientationChangeUndefined: Self = StObject.set(x, "onOrientationChange", js.undefined)
       
       @scala.inline
-      def setOnPageHide(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]): Self = StObject.set(x, "onPageHide", value.asInstanceOf[js.Any])
+      def setOnPageHide(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]): Self = StObject.set(x, "onPageHide", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPageHideCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]): Self = StObject.set(x, "onPageHideCapture", value.asInstanceOf[js.Any])
+      def setOnPageHideCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]): Self = StObject.set(x, "onPageHideCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPageHideCaptureUndefined: Self = StObject.set(x, "onPageHideCapture", js.undefined)
@@ -1317,10 +1478,10 @@ object mod {
       def setOnPageHideUndefined: Self = StObject.set(x, "onPageHide", js.undefined)
       
       @scala.inline
-      def setOnPageShow(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]): Self = StObject.set(x, "onPageShow", value.asInstanceOf[js.Any])
+      def setOnPageShow(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]): Self = StObject.set(x, "onPageShow", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPageShowCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, _]): Self = StObject.set(x, "onPageShowCapture", value.asInstanceOf[js.Any])
+      def setOnPageShowCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PageTransitionEvent, js.Any]): Self = StObject.set(x, "onPageShowCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPageShowCaptureUndefined: Self = StObject.set(x, "onPageShowCapture", js.undefined)
@@ -1329,10 +1490,10 @@ object mod {
       def setOnPageShowUndefined: Self = StObject.set(x, "onPageShow", js.undefined)
       
       @scala.inline
-      def setOnPause(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
+      def setOnPause(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPause", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPauseCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
+      def setOnPauseCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPauseCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPauseCaptureUndefined: Self = StObject.set(x, "onPauseCapture", js.undefined)
@@ -1341,10 +1502,10 @@ object mod {
       def setOnPauseUndefined: Self = StObject.set(x, "onPause", js.undefined)
       
       @scala.inline
-      def setOnPlay(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
+      def setOnPlay(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPlay", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPlayCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
+      def setOnPlayCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPlayCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPlayCaptureUndefined: Self = StObject.set(x, "onPlayCapture", js.undefined)
@@ -1353,10 +1514,10 @@ object mod {
       def setOnPlayUndefined: Self = StObject.set(x, "onPlay", js.undefined)
       
       @scala.inline
-      def setOnPlaying(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
+      def setOnPlaying(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPlaying", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPlayingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
+      def setOnPlayingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onPlayingCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPlayingCaptureUndefined: Self = StObject.set(x, "onPlayingCapture", js.undefined)
@@ -1365,10 +1526,10 @@ object mod {
       def setOnPlayingUndefined: Self = StObject.set(x, "onPlaying", js.undefined)
       
       @scala.inline
-      def setOnPointerCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
+      def setOnPointerCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
+      def setOnPointerCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerCancelCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerCancelCaptureUndefined: Self = StObject.set(x, "onPointerCancelCapture", js.undefined)
@@ -1377,10 +1538,10 @@ object mod {
       def setOnPointerCancelUndefined: Self = StObject.set(x, "onPointerCancel", js.undefined)
       
       @scala.inline
-      def setOnPointerDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
+      def setOnPointerDown(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerDown", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
+      def setOnPointerDownCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerDownCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerDownCaptureUndefined: Self = StObject.set(x, "onPointerDownCapture", js.undefined)
@@ -1389,10 +1550,10 @@ object mod {
       def setOnPointerDownUndefined: Self = StObject.set(x, "onPointerDown", js.undefined)
       
       @scala.inline
-      def setOnPointerEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
+      def setOnPointerEnter(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerEnter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
+      def setOnPointerEnterCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerEnterCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerEnterCaptureUndefined: Self = StObject.set(x, "onPointerEnterCapture", js.undefined)
@@ -1401,10 +1562,10 @@ object mod {
       def setOnPointerEnterUndefined: Self = StObject.set(x, "onPointerEnter", js.undefined)
       
       @scala.inline
-      def setOnPointerLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
+      def setOnPointerLeave(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerLeave", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
+      def setOnPointerLeaveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerLeaveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerLeaveCaptureUndefined: Self = StObject.set(x, "onPointerLeaveCapture", js.undefined)
@@ -1413,10 +1574,10 @@ object mod {
       def setOnPointerLeaveUndefined: Self = StObject.set(x, "onPointerLeave", js.undefined)
       
       @scala.inline
-      def setOnPointerMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
+      def setOnPointerMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerMove", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
+      def setOnPointerMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerMoveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerMoveCaptureUndefined: Self = StObject.set(x, "onPointerMoveCapture", js.undefined)
@@ -1425,10 +1586,10 @@ object mod {
       def setOnPointerMoveUndefined: Self = StObject.set(x, "onPointerMove", js.undefined)
       
       @scala.inline
-      def setOnPointerOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerOut", value.asInstanceOf[js.Any])
+      def setOnPointerOut(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerOut", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
+      def setOnPointerOutCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerOutCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerOutCaptureUndefined: Self = StObject.set(x, "onPointerOutCapture", js.undefined)
@@ -1437,10 +1598,10 @@ object mod {
       def setOnPointerOutUndefined: Self = StObject.set(x, "onPointerOut", js.undefined)
       
       @scala.inline
-      def setOnPointerOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerOver", value.asInstanceOf[js.Any])
+      def setOnPointerOver(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerOver", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
+      def setOnPointerOverCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerOverCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerOverCaptureUndefined: Self = StObject.set(x, "onPointerOverCapture", js.undefined)
@@ -1449,10 +1610,10 @@ object mod {
       def setOnPointerOverUndefined: Self = StObject.set(x, "onPointerOver", js.undefined)
       
       @scala.inline
-      def setOnPointerUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
+      def setOnPointerUp(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerUp", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPointerUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, _]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
+      def setOnPointerUpCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PointerEvent, js.Any]): Self = StObject.set(x, "onPointerUpCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPointerUpCaptureUndefined: Self = StObject.set(x, "onPointerUpCapture", js.undefined)
@@ -1461,10 +1622,10 @@ object mod {
       def setOnPointerUpUndefined: Self = StObject.set(x, "onPointerUp", js.undefined)
       
       @scala.inline
-      def setOnPopState(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, _]): Self = StObject.set(x, "onPopState", value.asInstanceOf[js.Any])
+      def setOnPopState(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, js.Any]): Self = StObject.set(x, "onPopState", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnPopStateCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, _]): Self = StObject.set(x, "onPopStateCapture", value.asInstanceOf[js.Any])
+      def setOnPopStateCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ PopStateEvent, js.Any]): Self = StObject.set(x, "onPopStateCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnPopStateCaptureUndefined: Self = StObject.set(x, "onPopStateCapture", js.undefined)
@@ -1474,12 +1635,12 @@ object mod {
       
       @scala.inline
       def setOnProgress(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
       ): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnProgressCapture(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
       ): Self = StObject.set(x, "onProgressCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -1489,10 +1650,10 @@ object mod {
       def setOnProgressUndefined: Self = StObject.set(x, "onProgress", js.undefined)
       
       @scala.inline
-      def setOnRateChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onRateChange", value.asInstanceOf[js.Any])
+      def setOnRateChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onRateChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnRateChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
+      def setOnRateChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onRateChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnRateChangeCaptureUndefined: Self = StObject.set(x, "onRateChangeCapture", js.undefined)
@@ -1502,12 +1663,12 @@ object mod {
       
       @scala.inline
       def setOnReadyStateChange(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
       ): Self = StObject.set(x, "onReadyStateChange", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnReadyStateChangeCapture(
-        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], _]
+        value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ ProgressEvent[EventTarget], js.Any]
       ): Self = StObject.set(x, "onReadyStateChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -1517,10 +1678,10 @@ object mod {
       def setOnReadyStateChangeUndefined: Self = StObject.set(x, "onReadyStateChange", js.undefined)
       
       @scala.inline
-      def setOnReset(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
+      def setOnReset(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onReset", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnResetCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
+      def setOnResetCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onResetCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnResetCaptureUndefined: Self = StObject.set(x, "onResetCapture", js.undefined)
@@ -1529,10 +1690,10 @@ object mod {
       def setOnResetUndefined: Self = StObject.set(x, "onReset", js.undefined)
       
       @scala.inline
-      def setOnResize(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
+      def setOnResize(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onResize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnResizeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onResizeCapture", value.asInstanceOf[js.Any])
+      def setOnResizeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onResizeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnResizeCaptureUndefined: Self = StObject.set(x, "onResizeCapture", js.undefined)
@@ -1541,10 +1702,10 @@ object mod {
       def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
       
       @scala.inline
-      def setOnScroll(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
+      def setOnScroll(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onScroll", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnScrollCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
+      def setOnScrollCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onScrollCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnScrollCaptureUndefined: Self = StObject.set(x, "onScrollCapture", js.undefined)
@@ -1553,10 +1714,10 @@ object mod {
       def setOnScrollUndefined: Self = StObject.set(x, "onScroll", js.undefined)
       
       @scala.inline
-      def setOnSeeked(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
+      def setOnSeeked(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSeeked", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSeekedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
+      def setOnSeekedCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSeekedCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSeekedCaptureUndefined: Self = StObject.set(x, "onSeekedCapture", js.undefined)
@@ -1565,10 +1726,10 @@ object mod {
       def setOnSeekedUndefined: Self = StObject.set(x, "onSeeked", js.undefined)
       
       @scala.inline
-      def setOnSeeking(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
+      def setOnSeeking(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSeeking", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSeekingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
+      def setOnSeekingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSeekingCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSeekingCaptureUndefined: Self = StObject.set(x, "onSeekingCapture", js.undefined)
@@ -1577,10 +1738,10 @@ object mod {
       def setOnSeekingUndefined: Self = StObject.set(x, "onSeeking", js.undefined)
       
       @scala.inline
-      def setOnSelect(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
+      def setOnSelect(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onSelect", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, _]): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
+      def setOnSelectCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ UIEvent, js.Any]): Self = StObject.set(x, "onSelectCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSelectCaptureUndefined: Self = StObject.set(x, "onSelectCapture", js.undefined)
@@ -1589,10 +1750,10 @@ object mod {
       def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
       
       @scala.inline
-      def setOnSelectionChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
+      def setOnSelectionChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSelectionChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSelectionChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSelectionChangeCapture", value.asInstanceOf[js.Any])
+      def setOnSelectionChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSelectionChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSelectionChangeCaptureUndefined: Self = StObject.set(x, "onSelectionChangeCapture", js.undefined)
@@ -1601,10 +1762,10 @@ object mod {
       def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
       @scala.inline
-      def setOnStalled(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
+      def setOnStalled(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onStalled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnStalledCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
+      def setOnStalledCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onStalledCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnStalledCaptureUndefined: Self = StObject.set(x, "onStalledCapture", js.undefined)
@@ -1613,10 +1774,10 @@ object mod {
       def setOnStalledUndefined: Self = StObject.set(x, "onStalled", js.undefined)
       
       @scala.inline
-      def setOnStorage(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, _]): Self = StObject.set(x, "onStorage", value.asInstanceOf[js.Any])
+      def setOnStorage(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, js.Any]): Self = StObject.set(x, "onStorage", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnStorageCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, _]): Self = StObject.set(x, "onStorageCapture", value.asInstanceOf[js.Any])
+      def setOnStorageCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ StorageEvent, js.Any]): Self = StObject.set(x, "onStorageCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnStorageCaptureUndefined: Self = StObject.set(x, "onStorageCapture", js.undefined)
@@ -1625,10 +1786,10 @@ object mod {
       def setOnStorageUndefined: Self = StObject.set(x, "onStorage", js.undefined)
       
       @scala.inline
-      def setOnSubmit(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
+      def setOnSubmit(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSubmit", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSubmitCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
+      def setOnSubmitCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSubmitCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSubmitCaptureUndefined: Self = StObject.set(x, "onSubmitCapture", js.undefined)
@@ -1637,10 +1798,10 @@ object mod {
       def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
       
       @scala.inline
-      def setOnSuspend(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
+      def setOnSuspend(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSuspend", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnSuspendCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
+      def setOnSuspendCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onSuspendCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnSuspendCaptureUndefined: Self = StObject.set(x, "onSuspendCapture", js.undefined)
@@ -1649,10 +1810,10 @@ object mod {
       def setOnSuspendUndefined: Self = StObject.set(x, "onSuspend", js.undefined)
       
       @scala.inline
-      def setOnTimeUpdate(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onTimeUpdate", value.asInstanceOf[js.Any])
+      def setOnTimeUpdate(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onTimeUpdate", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTimeUpdateCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
+      def setOnTimeUpdateCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onTimeUpdateCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTimeUpdateCaptureUndefined: Self = StObject.set(x, "onTimeUpdateCapture", js.undefined)
@@ -1661,10 +1822,10 @@ object mod {
       def setOnTimeUpdateUndefined: Self = StObject.set(x, "onTimeUpdate", js.undefined)
       
       @scala.inline
-      def setOnTouchCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
+      def setOnTouchCancel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTouchCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
+      def setOnTouchCancelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchCancelCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTouchCancelCaptureUndefined: Self = StObject.set(x, "onTouchCancelCapture", js.undefined)
@@ -1673,10 +1834,10 @@ object mod {
       def setOnTouchCancelUndefined: Self = StObject.set(x, "onTouchCancel", js.undefined)
       
       @scala.inline
-      def setOnTouchEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
+      def setOnTouchEnd(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchEnd", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTouchEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
+      def setOnTouchEndCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchEndCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTouchEndCaptureUndefined: Self = StObject.set(x, "onTouchEndCapture", js.undefined)
@@ -1685,10 +1846,10 @@ object mod {
       def setOnTouchEndUndefined: Self = StObject.set(x, "onTouchEnd", js.undefined)
       
       @scala.inline
-      def setOnTouchMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
+      def setOnTouchMove(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchMove", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTouchMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
+      def setOnTouchMoveCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchMoveCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTouchMoveCaptureUndefined: Self = StObject.set(x, "onTouchMoveCapture", js.undefined)
@@ -1697,10 +1858,10 @@ object mod {
       def setOnTouchMoveUndefined: Self = StObject.set(x, "onTouchMove", js.undefined)
       
       @scala.inline
-      def setOnTouchStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
+      def setOnTouchStart(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchStart", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnTouchStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, _]): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
+      def setOnTouchStartCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ TouchEvent, js.Any]): Self = StObject.set(x, "onTouchStartCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnTouchStartCaptureUndefined: Self = StObject.set(x, "onTouchStartCapture", js.undefined)
@@ -1709,10 +1870,10 @@ object mod {
       def setOnTouchStartUndefined: Self = StObject.set(x, "onTouchStart", js.undefined)
       
       @scala.inline
-      def setOnUnload(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
+      def setOnUnload(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onUnload", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnUnloadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onUnloadCapture", value.asInstanceOf[js.Any])
+      def setOnUnloadCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onUnloadCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnUnloadCaptureUndefined: Self = StObject.set(x, "onUnloadCapture", js.undefined)
@@ -1721,10 +1882,10 @@ object mod {
       def setOnUnloadUndefined: Self = StObject.set(x, "onUnload", js.undefined)
       
       @scala.inline
-      def setOnVolumeChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
+      def setOnVolumeChange(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onVolumeChange", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnVolumeChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
+      def setOnVolumeChangeCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onVolumeChangeCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnVolumeChangeCaptureUndefined: Self = StObject.set(x, "onVolumeChangeCapture", js.undefined)
@@ -1733,10 +1894,10 @@ object mod {
       def setOnVolumeChangeUndefined: Self = StObject.set(x, "onVolumeChange", js.undefined)
       
       @scala.inline
-      def setOnWaiting(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
+      def setOnWaiting(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onWaiting", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnWaitingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, _]): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
+      def setOnWaitingCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ Event, js.Any]): Self = StObject.set(x, "onWaitingCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnWaitingCaptureUndefined: Self = StObject.set(x, "onWaitingCapture", js.undefined)
@@ -1745,10 +1906,10 @@ object mod {
       def setOnWaitingUndefined: Self = StObject.set(x, "onWaiting", js.undefined)
       
       @scala.inline
-      def setOnWheel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
+      def setOnWheel(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onWheel", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setOnWheelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, _]): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
+      def setOnWheelCapture(value: js.ThisFunction1[/* this */ EventListenerThisType[T], /* ev */ WheelEvent, js.Any]): Self = StObject.set(x, "onWheelCapture", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOnWheelCaptureUndefined: Self = StObject.set(x, "onWheelCapture", js.undefined)
@@ -1764,12 +1925,11 @@ object mod {
   type EventListenerThisType[T /* <: EventTarget | WindowEventTargets */] = T | (/* import warning: importer.ImportType#apply Failed type conversion: std.Window[T] */ js.Any)
   
   /* Inlined parent std.Pick<std.AddEventListenerOptions, 'capture' | 'passive'> */
-  @js.native
   trait EventOptions extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
-    var passive: js.UndefOr[Boolean] = js.native
+    var passive: js.UndefOr[Boolean] = js.undefined
   }
   object EventOptions {
     
@@ -1801,7 +1961,7 @@ object mod {
   /* Rewritten from type alias, can be one of: 
     - typings.reactEventListener.reactEventListenerStrings.locationbar
     - typings.reactEventListener.reactEventListenerStrings.onmspointerleave
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.reactEventListener.reactEventListenerStrings.opener
     - typings.reactEventListener.reactEventListenerStrings.window
     - typings.reactEventListener.reactEventListenerStrings.onvrdisplayactivate

@@ -2,18 +2,16 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardHlsSettings extends StObject {
   
   /**
     * List all the audio groups that are used with the video output stream. Input all the audio GROUP-IDs that are associated to the video, separate by ','.
     */
-  var AudioRenditionSets: js.UndefOr[string] = js.native
+  var AudioRenditionSets: js.UndefOr[string] = js.undefined
   
-  var M3u8Settings: typings.awsSdk.medialiveMod.M3u8Settings = js.native
+  var M3u8Settings: typings.awsSdk.medialiveMod.M3u8Settings
 }
 object StandardHlsSettings {
   

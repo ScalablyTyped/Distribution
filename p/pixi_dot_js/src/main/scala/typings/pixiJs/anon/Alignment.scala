@@ -6,31 +6,29 @@ import typings.pixiJs.PIXI.Matrix
 import typings.pixiJs.PIXI.Texture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alignment extends StObject {
   
-  var alignment: js.UndefOr[Double] = js.native
+  var alignment: js.UndefOr[Double] = js.undefined
   
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
-  var cap: js.UndefOr[LINE_CAP] = js.native
+  var cap: js.UndefOr[LINE_CAP] = js.undefined
   
-  var color: js.UndefOr[Double] = js.native
+  var color: js.UndefOr[Double] = js.undefined
   
-  var join: js.UndefOr[LINE_JOIN] = js.native
+  var join: js.UndefOr[LINE_JOIN] = js.undefined
   
-  var matrix: js.UndefOr[Matrix] = js.native
+  var matrix: js.UndefOr[Matrix] = js.undefined
   
-  var miterLimit: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.undefined
   
-  var native: js.UndefOr[Boolean] = js.native
+  var native: js.UndefOr[Boolean] = js.undefined
   
-  var texture: js.UndefOr[Texture] = js.native
+  var texture: js.UndefOr[Texture] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Alignment {
   

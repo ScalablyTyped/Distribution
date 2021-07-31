@@ -2,43 +2,41 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsTopBarLargeTitle extends StObject {
   
   /**
     * Set the color of large title's text
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the font family of the large title text
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Set the font size of large title's text
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style of the large title text
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Enable large titles
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsTopBarLargeTitle {
   

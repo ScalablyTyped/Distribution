@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Secret extends StObject {
   
   /** The value of the cipherText response from the `encrypt` method. This field is intentionally unaudited. */
-  var cipherText: js.UndefOr[String] = js.native
+  var cipherText: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Cloud KMS key that will be used to decrypt the secret value. The VM service account must have the required permissions and authentication scopes to invoke the
     * `decrypt` method on the specified key.
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
 }
 object Secret {
   

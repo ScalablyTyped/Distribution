@@ -3,102 +3,100 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableView extends StObject {
   
-  var AllowInCellEditing: Boolean = js.native
+  var AllowInCellEditing: Boolean
   
-  var AlwaysExpandConversation: Boolean = js.native
+  var AlwaysExpandConversation: Boolean
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
-  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules = js.native
+  val AutoFormatRules: typings.activexOutlook.Outlook.AutoFormatRules
   
-  var AutoPreview: OlAutoPreview = js.native
+  var AutoPreview: OlAutoPreview
   
-  val AutoPreviewFont: ViewFont = js.native
+  val AutoPreviewFont: ViewFont
   
-  var AutomaticColumnSizing: Boolean = js.native
+  var AutomaticColumnSizing: Boolean
   
-  var AutomaticGrouping: Boolean = js.native
+  var AutomaticGrouping: Boolean
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val ColumnFont: ViewFont = js.native
+  val ColumnFont: ViewFont
   
-  def Copy(Name: String, SaveOption: OlViewSaveOption): View = js.native
+  def Copy(Name: String, SaveOption: OlViewSaveOption): View
   
-  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting = js.native
+  var DefaultExpandCollapseSetting: OlDefaultExpandCollapseSetting
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Filter: String = js.native
+  var Filter: String
   
-  def GetTable(): Table = js.native
+  def GetTable(): Table
   
-  def GoToDate(Date: VarDate): Unit = js.native
+  def GoToDate(Date: VarDate): Unit
   
-  var GridLineStyle: OlGridLineStyle = js.native
+  var GridLineStyle: OlGridLineStyle
   
-  val GroupByFields: OrderFields = js.native
+  val GroupByFields: OrderFields
   
-  var HideReadingPaneHeaderInfo: Boolean = js.native
+  var HideReadingPaneHeaderInfo: Boolean
   
-  var Language: String = js.native
+  var Language: String
   
-  var LockUserChanges: Boolean = js.native
+  var LockUserChanges: Boolean
   
-  var MaxLinesInMultiLineView: Double = js.native
+  var MaxLinesInMultiLineView: Double
   
-  var MultiLine: OlMultiLine = js.native
+  var MultiLine: OlMultiLine
   
-  var MultiLineWidth: Double = js.native
+  var MultiLineWidth: Double
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.TableView_typekey")
-  var OutlookDotTableView_typekey: TableView = js.native
+  var OutlookDotTableView_typekey: TableView
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Reset(): Unit = js.native
+  def Reset(): Unit
   
-  val RowFont: ViewFont = js.native
+  val RowFont: ViewFont
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  val SaveOption: OlViewSaveOption = js.native
+  val SaveOption: OlViewSaveOption
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var ShowConversationByDate: Boolean = js.native
+  var ShowConversationByDate: Boolean
   
-  var ShowConversationSendersAboveSubject: Boolean = js.native
+  var ShowConversationSendersAboveSubject: Boolean
   
-  var ShowFullConversations: Boolean = js.native
+  var ShowFullConversations: Boolean
   
-  var ShowItemsInGroups: Boolean = js.native
+  var ShowItemsInGroups: Boolean
   
-  var ShowNewItemRow: Boolean = js.native
+  var ShowNewItemRow: Boolean
   
-  var ShowReadingPane: Boolean = js.native
+  var ShowReadingPane: Boolean
   
-  var ShowUnreadAndFlaggedMessages: Boolean = js.native
+  var ShowUnreadAndFlaggedMessages: Boolean
   
-  val SortFields: OrderFields = js.native
+  val SortFields: OrderFields
   
-  val Standard: Boolean = js.native
+  val Standard: Boolean
   
-  val ViewFields: typings.activexOutlook.Outlook.ViewFields = js.native
+  val ViewFields: typings.activexOutlook.Outlook.ViewFields
   
-  val ViewType: OlViewType = js.native
+  val ViewType: OlViewType
   
-  var XML: String = js.native
+  var XML: String
 }
 object TableView {
   

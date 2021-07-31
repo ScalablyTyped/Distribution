@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,19 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ChartLegendPosition extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartLegendPosition with String] = js.native
+  def apply(value: String): js.UndefOr[typings.officeJsPreview.Excel.ChartLegendPosition & String] = js.native
   
-  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ChartLegendPosition.bottom with String = js.native
+  /* "Bottom" */ val bottom: typings.officeJsPreview.Excel.ChartLegendPosition.bottom & String = js.native
   
-  /* "Corner" */ val corner: typings.officeJsPreview.Excel.ChartLegendPosition.corner with String = js.native
+  /* "Corner" */ val corner: typings.officeJsPreview.Excel.ChartLegendPosition.corner & String = js.native
   
-  /* "Custom" */ val custom: typings.officeJsPreview.Excel.ChartLegendPosition.custom with String = js.native
+  /* "Custom" */ val custom: typings.officeJsPreview.Excel.ChartLegendPosition.custom & String = js.native
   
-  /* "Invalid" */ val invalid: typings.officeJsPreview.Excel.ChartLegendPosition.invalid with String = js.native
+  /* "Invalid" */ val invalid: typings.officeJsPreview.Excel.ChartLegendPosition.invalid & String = js.native
   
-  /* "Left" */ val left: typings.officeJsPreview.Excel.ChartLegendPosition.left with String = js.native
+  /* "Left" */ val left: typings.officeJsPreview.Excel.ChartLegendPosition.left & String = js.native
   
-  /* "Right" */ val right: typings.officeJsPreview.Excel.ChartLegendPosition.right with String = js.native
+  /* "Right" */ val right: typings.officeJsPreview.Excel.ChartLegendPosition.right & String = js.native
   
-  /* "Top" */ val top: typings.officeJsPreview.Excel.ChartLegendPosition.top with String = js.native
+  /* "Top" */ val top: typings.officeJsPreview.Excel.ChartLegendPosition.top & String = js.native
 }

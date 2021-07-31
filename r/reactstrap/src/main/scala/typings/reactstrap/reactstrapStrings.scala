@@ -5,7 +5,6 @@ import typings.reactstrap.dropdownMod.Direction
 import typings.reactstrap.inputMod.InputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactstrapStrings {
@@ -51,7 +50,9 @@ object reactstrapStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait button extends InputType
+  sealed trait button
+    extends StObject
+       with InputType
   @scala.inline
   def button: button = "button".asInstanceOf[button]
   
@@ -62,13 +63,16 @@ object reactstrapStrings {
   
   @js.native
   sealed trait checkbox
-    extends CustomInputType
+    extends StObject
+       with CustomInputType
        with InputType
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait color extends InputType
+  sealed trait color
+    extends StObject
+       with InputType
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
@@ -78,17 +82,23 @@ object reactstrapStrings {
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait date extends InputType
+  sealed trait date
+    extends StObject
+       with InputType
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait datetime extends InputType
+  sealed trait datetime
+    extends StObject
+       with InputType
   @scala.inline
   def datetime: datetime = "datetime".asInstanceOf[datetime]
   
   @js.native
-  sealed trait `datetime-local` extends InputType
+  sealed trait `datetime-local`
+    extends StObject
+       with InputType
   @scala.inline
   def `datetime-local`: `datetime-local` = "datetime-local".asInstanceOf[`datetime-local`]
   
@@ -113,12 +123,16 @@ object reactstrapStrings {
   def done: done = "done".asInstanceOf[done]
   
   @js.native
-  sealed trait down extends Direction
+  sealed trait down
+    extends StObject
+       with Direction
   @scala.inline
   def down: down = "down".asInstanceOf[down]
   
   @js.native
-  sealed trait email extends InputType
+  sealed trait email
+    extends StObject
+       with InputType
   @scala.inline
   def email: email = "email".asInstanceOf[email]
   
@@ -134,7 +148,8 @@ object reactstrapStrings {
   
   @js.native
   sealed trait file
-    extends CustomInputType
+    extends StObject
+       with CustomInputType
        with InputType
   @scala.inline
   def file: file = "file".asInstanceOf[file]
@@ -155,7 +170,9 @@ object reactstrapStrings {
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait hidden extends InputType
+  sealed trait hidden
+    extends StObject
+       with InputType
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -170,7 +187,9 @@ object reactstrapStrings {
   def hover: hover = "hover".asInstanceOf[hover]
   
   @js.native
-  sealed trait image extends InputType
+  sealed trait image
+    extends StObject
+       with InputType
   @scala.inline
   def image: image = "image".asInstanceOf[image]
   
@@ -185,7 +204,9 @@ object reactstrapStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait left
+    extends StObject
+       with Direction
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -225,7 +246,9 @@ object reactstrapStrings {
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait month extends InputType
+  sealed trait month
+    extends StObject
+       with InputType
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
@@ -250,7 +273,9 @@ object reactstrapStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends InputType
+  sealed trait number
+    extends StObject
+       with InputType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -280,7 +305,9 @@ object reactstrapStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait password extends InputType
+  sealed trait password
+    extends StObject
+       with InputType
   @scala.inline
   def password: password = "password".asInstanceOf[password]
   
@@ -311,14 +338,16 @@ object reactstrapStrings {
   
   @js.native
   sealed trait radio
-    extends CustomInputType
+    extends StObject
+       with CustomInputType
        with InputType
   @scala.inline
   def radio: radio = "radio".asInstanceOf[radio]
   
   @js.native
   sealed trait range
-    extends CustomInputType
+    extends StObject
+       with CustomInputType
        with InputType
   @scala.inline
   def range: range = "range".asInstanceOf[range]
@@ -339,23 +368,30 @@ object reactstrapStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait reset extends InputType
+  sealed trait reset
+    extends StObject
+       with InputType
   @scala.inline
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait right
+    extends StObject
+       with Direction
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait search extends InputType
+  sealed trait search
+    extends StObject
+       with InputType
   @scala.inline
   def search: search = "search".asInstanceOf[search]
   
   @js.native
   sealed trait select
-    extends CustomInputType
+    extends StObject
+       with CustomInputType
        with InputType
   @scala.inline
   def select: select = "select".asInstanceOf[select]
@@ -386,22 +422,30 @@ object reactstrapStrings {
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait submit extends InputType
+  sealed trait submit
+    extends StObject
+       with InputType
   @scala.inline
   def submit: submit = "submit".asInstanceOf[submit]
   
   @js.native
-  sealed trait switch extends CustomInputType
+  sealed trait switch
+    extends StObject
+       with CustomInputType
   @scala.inline
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait tel extends InputType
+  sealed trait tel
+    extends StObject
+       with InputType
   @scala.inline
   def tel: tel = "tel".asInstanceOf[tel]
   
   @js.native
-  sealed trait text extends InputType
+  sealed trait text
+    extends StObject
+       with InputType
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -416,12 +460,16 @@ object reactstrapStrings {
   def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait textarea extends InputType
+  sealed trait textarea
+    extends StObject
+       with InputType
   @scala.inline
   def textarea: textarea = "textarea".asInstanceOf[textarea]
   
   @js.native
-  sealed trait time extends InputType
+  sealed trait time
+    extends StObject
+       with InputType
   @scala.inline
   def time: time = "time".asInstanceOf[time]
   
@@ -431,12 +479,16 @@ object reactstrapStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait up extends Direction
+  sealed trait up
+    extends StObject
+       with Direction
   @scala.inline
   def up: up = "up".asInstanceOf[up]
   
   @js.native
-  sealed trait url extends InputType
+  sealed trait url
+    extends StObject
+       with InputType
   @scala.inline
   def url: url = "url".asInstanceOf[url]
   
@@ -446,7 +498,9 @@ object reactstrapStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait week extends InputType
+  sealed trait week
+    extends StObject
+       with InputType
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   

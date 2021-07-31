@@ -6,93 +6,42 @@ import typings.tensorflowTfjsCore.distTypesMod.TensorLike
 import typings.tensorflowTfjsCore.lossOpsUtilsMod.Reduction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cosineDistanceMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", JSImport.Namespace)
   @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, axis: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: js.UndefOr[TensorLike], reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: Tensor[Rank], reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: T, axis: Double, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: T,
-    predictions: TensorLike,
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
     axis: Double,
-    weights: js.UndefOr[TensorLike],
+    weights: Unit,
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: Tensor[Rank], reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: Tensor[Rank]): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
   def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: T,
-    axis: Double,
-    weights: js.UndefOr[TensorLike],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: Tensor[Rank], reduction: Reduction): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: T, axis: Double, weights: TensorLike): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
-    axis: Double,
-    weights: js.UndefOr[TensorLike],
-    reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double, weights: Tensor[Rank]): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
-    labels: TensorLike,
-    predictions: TensorLike,
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
     axis: Double,
     weights: Tensor[Rank],
     reduction: Reduction
-  ): O = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/losses/cosine_distance", "cosineDistance")
-  @js.native
-  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: TensorLike, predictions: TensorLike, axis: Double, weights: TensorLike): O = js.native
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](labels: T | TensorLike, predictions: T | TensorLike, axis: Double, weights: TensorLike): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[O]
+  @scala.inline
+  def cosineDistance[T /* <: Tensor[Rank] */, O /* <: Tensor[Rank] */](
+    labels: T | TensorLike,
+    predictions: T | TensorLike,
+    axis: Double,
+    weights: TensorLike,
+    reduction: Reduction
+  ): O = (^.asInstanceOf[js.Dynamic].applyDynamic("cosineDistance")(labels.asInstanceOf[js.Any], predictions.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], reduction.asInstanceOf[js.Any])).asInstanceOf[O]
 }

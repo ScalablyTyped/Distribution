@@ -9,7 +9,6 @@ import typings.uifabricMergeStyles.istyleMod.IStyle
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expandingCardTypesMod {
@@ -21,56 +20,60 @@ object expandingCardTypesMod {
   object ExpandingCardMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ExpandingCardMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[ExpandingCardMode & Double] = js.native
     
     /**
       * To have top compact card only
       */
     @js.native
-    sealed trait compact extends ExpandingCardMode
-    /* 0 */ val compact: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact with Double = js.native
+    sealed trait compact
+      extends StObject
+         with ExpandingCardMode
+    /* 0 */ val compact: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.compact & Double = js.native
     
     /**
       * To have both top compact and bottom expanded card
       */
     @js.native
-    sealed trait expanded extends ExpandingCardMode
-    /* 1 */ val expanded: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded with Double = js.native
+    sealed trait expanded
+      extends StObject
+         with ExpandingCardMode
+    /* 1 */ val expanded: typings.officeUiFabricReact.expandingCardTypesMod.ExpandingCardMode.expanded & Double = js.native
   }
   
-  @js.native
   trait IExpandingCard extends StObject
   
-  @js.native
-  trait IExpandingCardProps extends IBaseCardProps[IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps] {
+  trait IExpandingCardProps
+    extends StObject
+       with IBaseCardProps[IExpandingCard, IExpandingCardStyles, IExpandingCardStyleProps] {
     
     /**
       * Height of compact card
       * @defaultvalue 156
       */
-    var compactCardHeight: js.UndefOr[Double] = js.native
+    var compactCardHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Height of expanded card
       * @defaultvalue 384
       */
-    var expandedCardHeight: js.UndefOr[Double] = js.native
+    var expandedCardHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Use to open the card in expanded format and not wait for the delay
       * @defaultvalue ExpandingCardMode.compact
       */
-    var mode: js.UndefOr[ExpandingCardMode] = js.native
+    var mode: js.UndefOr[ExpandingCardMode] = js.undefined
     
     /**
       *  Render function to populate compact content area
       */
-    var onRenderCompactCard: js.UndefOr[IRenderFunction[_]] = js.native
+    var onRenderCompactCard: js.UndefOr[IRenderFunction[js.Any]] = js.undefined
     
     /**
       *  Render function to populate expanded content area
       */
-    var onRenderExpandedCard: js.UndefOr[IRenderFunction[_]] = js.native
+    var onRenderExpandedCard: js.UndefOr[IRenderFunction[js.Any]] = js.undefined
   }
   object IExpandingCardProps {
     
@@ -103,7 +106,7 @@ object expandingCardTypesMod {
       
       @scala.inline
       def setOnRenderCompactCard(
-        value: (/* props */ js.UndefOr[_], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[_], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderCompactCard", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -111,7 +114,7 @@ object expandingCardTypesMod {
       
       @scala.inline
       def setOnRenderExpandedCard(
-        value: (/* props */ js.UndefOr[_], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[_], Element | Null]]) => Element | Null
+        value: (/* props */ js.UndefOr[js.Any], /* defaultRender */ js.UndefOr[js.Function1[/* props */ js.UndefOr[js.Any], Element | Null]]) => Element | Null
       ): Self = StObject.set(x, "onRenderExpandedCard", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -119,28 +122,29 @@ object expandingCardTypesMod {
     }
   }
   
-  @js.native
-  trait IExpandingCardStyleProps extends IBaseCardStyleProps {
+  trait IExpandingCardStyleProps
+    extends StObject
+       with IBaseCardStyleProps {
     
     /**
       * Height of the compact section of the card.
       */
-    var compactCardHeight: js.UndefOr[Double] = js.native
+    var compactCardHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Boolean flag that expanded card is in Expanded.mode === expanded && first frame was rendered.
       */
-    var expandedCardFirstFrameRendered: js.UndefOr[Boolean] = js.native
+    var expandedCardFirstFrameRendered: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Height of the expanded section of the card.
       */
-    var expandedCardHeight: js.UndefOr[Double] = js.native
+    var expandedCardHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the content of the expanded card overflows vertically.
       */
-    var needsScroll: js.UndefOr[Boolean] = js.native
+    var needsScroll: js.UndefOr[Boolean] = js.undefined
   }
   object IExpandingCardStyleProps {
     
@@ -179,23 +183,24 @@ object expandingCardTypesMod {
     }
   }
   
-  @js.native
-  trait IExpandingCardStyles extends IBaseCardStyles {
+  trait IExpandingCardStyles
+    extends StObject
+       with IBaseCardStyles {
     
     /**
       * Style for the main card element.
       */
-    var compactCard: js.UndefOr[IStyle] = js.native
+    var compactCard: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Base Style for the expanded card content.
       */
-    var expandedCard: js.UndefOr[IStyle] = js.native
+    var expandedCard: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style for the expanded card scroll content.
       */
-    var expandedCardScroll: js.UndefOr[IStyle] = js.native
+    var expandedCardScroll: js.UndefOr[IStyle] = js.undefined
   }
   object IExpandingCardStyles {
     

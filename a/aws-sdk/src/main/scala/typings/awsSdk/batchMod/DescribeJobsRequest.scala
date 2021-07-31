@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeJobsRequest extends StObject {
   
   /**
     * A list of up to 100 job IDs.
     */
-  var jobs: StringList = js.native
+  var jobs: StringList
 }
 object DescribeJobsRequest {
   

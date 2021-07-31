@@ -3,19 +3,17 @@ package typings.node.fsMod
 import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigIntOptions extends StObject {
   
-  var bigint: `true` = js.native
+  var bigint: `true`
 }
 object BigIntOptions {
   
   @scala.inline
-  def apply(bigint: `true`): BigIntOptions = {
-    val __obj = js.Dynamic.literal(bigint = bigint.asInstanceOf[js.Any])
+  def apply(): BigIntOptions = {
+    val __obj = js.Dynamic.literal(bigint = true)
     __obj.asInstanceOf[BigIntOptions]
   }
   

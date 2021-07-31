@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information supplied about each concept
   */
-@js.native
-trait CodeSystemProperty extends BackboneElement {
+trait CodeSystemProperty
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.native
+  var _uri: js.UndefOr[Element] = js.undefined
   
   /**
     * Identifies the property on the concepts, and when referred to in operations
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * Why the property is defined, and/or what it conveys
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * code | Coding | string | integer | boolean | dateTime
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * Formal identifier for the property
     */
-  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.native
+  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.undefined
 }
 object CodeSystemProperty {
   

@@ -3,13 +3,11 @@ package typings.jqueryui.JQueryUI
 import typings.jqueryui.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectMenuUIParams extends StObject {
   
-  var item: js.UndefOr[JQuery] = js.native
+  var item: js.UndefOr[JQuery] = js.undefined
 }
 object SelectMenuUIParams {
   

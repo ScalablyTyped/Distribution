@@ -2,56 +2,54 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainDescription extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) of the domain. 
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The total size of all assets in the domain. 
     */
-  var assetSizeBytes: js.UndefOr[Long] = js.native
+  var assetSizeBytes: js.UndefOr[Long] = js.undefined
   
   /**
     *  A timestamp that represents the date and time the domain was created. 
     */
-  var createdTime: js.UndefOr[Timestamp] = js.native
+  var createdTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The ARN of an AWS Key Management Service (AWS KMS) key associated with a domain. 
     */
-  var encryptionKey: js.UndefOr[Arn] = js.native
+  var encryptionKey: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The name of the domain. 
     */
-  var name: js.UndefOr[DomainName] = js.native
+  var name: js.UndefOr[DomainName] = js.undefined
   
   /**
     *  The AWS account ID that owns the domain. 
     */
-  var owner: js.UndefOr[AccountId] = js.native
+  var owner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The number of repositories in the domain. 
     */
-  var repositoryCount: js.UndefOr[Integer] = js.native
+  var repositoryCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon S3 bucket that is used to store package assets in the domain.
     */
-  var s3BucketArn: js.UndefOr[Arn] = js.native
+  var s3BucketArn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  The current status of a domain. The valid values are     Active     Deleted   
     */
-  var status: js.UndefOr[DomainStatus] = js.native
+  var status: js.UndefOr[DomainStatus] = js.undefined
 }
 object DomainDescription {
   

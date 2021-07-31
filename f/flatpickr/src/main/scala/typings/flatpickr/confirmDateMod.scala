@@ -3,25 +3,26 @@ package typings.flatpickr
 import typings.flatpickr.optionsMod.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object confirmDateMod {
   
-  @JSImport("flatpickr/dist/plugins/confirmDate/confirmDate", JSImport.Default)
+  @JSImport("flatpickr/dist/plugins/confirmDate/confirmDate", JSImport.Namespace)
   @js.native
-  def default(pluginConfig: Config): Plugin[js.Object] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(pluginConfig: Config): Plugin[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(pluginConfig.asInstanceOf[js.Any]).asInstanceOf[Plugin[js.Object]]
+  
   trait Config extends StObject {
     
-    var confirmIcon: js.UndefOr[String] = js.native
+    var confirmIcon: js.UndefOr[String] = js.undefined
     
-    var confirmText: js.UndefOr[String] = js.native
+    var confirmText: js.UndefOr[String] = js.undefined
     
-    var showAlways: js.UndefOr[Boolean] = js.native
+    var showAlways: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object Config {
     

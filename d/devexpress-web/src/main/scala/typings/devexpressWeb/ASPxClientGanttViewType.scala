@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Declare client constants that specify the Gantt's view type.
   */
-@js.native
 trait ASPxClientGanttViewType extends StObject {
   
   /**
     * Displays days.
     */
-  var Days: Double = js.native
+  var Days: Double
   
   /**
     * Displays hours.
     */
-  var Hours: Double = js.native
+  var Hours: Double
   
   /**
     * Display months.
     */
-  var Months: Double = js.native
+  var Months: Double
   
   /**
     * Displays weeks.
     */
-  var Weeks: Double = js.native
+  var Weeks: Double
 }
 object ASPxClientGanttViewType {
   

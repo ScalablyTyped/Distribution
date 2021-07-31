@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetKeyPairRequest extends StObject {
   
   /**
     * The name of the key pair for which you are requesting information.
     */
-  var keyPairName: ResourceName = js.native
+  var keyPairName: ResourceName
 }
 object GetKeyPairRequest {
   

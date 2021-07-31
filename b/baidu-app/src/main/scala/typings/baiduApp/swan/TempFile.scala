@@ -2,17 +2,15 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TempFile extends StObject {
   
   /** 本地文件路径 */
-  var path: String = js.native
+  var path: String
   
   /** 本地文件大小，单位：B */
-  var size: Double = js.native
+  var size: Double
 }
 object TempFile {
   

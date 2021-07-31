@@ -3,51 +3,51 @@ package typings.ariClient.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BridgeBlindTransfer extends Event {
+trait BridgeBlindTransfer
+  extends StObject
+     with Event {
   
   /**
     * The bridge being transferred.
     */
-  var bridge: Bridge = js.native
+  var bridge: Bridge
   
   /**
     * The channel performing the blind transfer.
     */
-  var channel: Channel = js.native
+  var channel: Channel
   
   /**
     * The context transferred to.
     */
-  var context: String = js.native
+  var context: String
   
   /**
     * The extension transferred to.
     */
-  var exten: String = js.native
+  var exten: String
   
   /**
     * Whether the transfer was externally initiated or not.
     */
-  var is_external: Boolean = js.native
+  var is_external: Boolean
   
   /**
     * The channel that is replacing transferer when the transferee(s) can not be transferred directly.
     */
-  var replace_channel: js.UndefOr[Channel] = js.native
+  var replace_channel: js.UndefOr[Channel] = js.undefined
   
   /**
     * The result of the transfer attempt.
     */
-  var result: String = js.native
+  var result: String
   
   /**
     * The channel that is being transferred.
     */
-  var transferee: js.UndefOr[Channel] = js.native
+  var transferee: js.UndefOr[Channel] = js.undefined
 }
 object BridgeBlindTransfer {
   

@@ -2,83 +2,81 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorediSCSIVolume extends StObject {
   
   /**
     * The date the volume was created. Volumes created prior to March 28, 2017 don’t have this timestamp.
     */
-  var CreatedDate: js.UndefOr[typings.awsSdk.storagegatewayMod.CreatedDate] = js.native
+  var CreatedDate: js.UndefOr[typings.awsSdk.storagegatewayMod.CreatedDate] = js.undefined
   
-  var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.native
+  var KMSKey: js.UndefOr[typings.awsSdk.storagegatewayMod.KMSKey] = js.undefined
   
   /**
     * Indicates if when the stored volume was created, existing data on the underlying local disk was preserved. Valid Values: true | false 
     */
-  var PreservedExistingData: js.UndefOr[scala.Boolean] = js.native
+  var PreservedExistingData: js.UndefOr[scala.Boolean] = js.undefined
   
   /**
     * If the stored volume was created from a snapshot, this field contains the snapshot ID used, e.g. snap-78e22663. Otherwise, this field is not included.
     */
-  var SourceSnapshotId: js.UndefOr[SnapshotId] = js.native
+  var SourceSnapshotId: js.UndefOr[SnapshotId] = js.undefined
   
   /**
     * The name of the iSCSI target used by an initiator to connect to a volume and used as a suffix for the target ARN. For example, specifying TargetName as myvolume results in the target ARN of arn:aws:storagegateway:us-east-2:111122223333:gateway/sgw-12A3456B/target/iqn.1997-05.com.amazon:myvolume. The target name must be unique across all volumes on a gateway. If you don't specify a value, Storage Gateway uses the value that was previously used for this volume as the new target name.
     */
-  var TargetName: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetName] = js.native
+  var TargetName: js.UndefOr[typings.awsSdk.storagegatewayMod.TargetName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the storage volume.
     */
-  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.native
+  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.undefined
   
   /**
     * A value that indicates whether a storage volume is attached to, detached from, or is in the process of detaching from a gateway. For more information, see Moving your volumes to a different gateway.
     */
-  var VolumeAttachmentStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeAttachmentStatus] = js.native
+  var VolumeAttachmentStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeAttachmentStatus] = js.undefined
   
   /**
     * The ID of the local disk that was specified in the CreateStorediSCSIVolume operation.
     */
-  var VolumeDiskId: js.UndefOr[DiskId] = js.native
+  var VolumeDiskId: js.UndefOr[DiskId] = js.undefined
   
   /**
     * The unique identifier of the volume, e.g., vol-AE4B946D.
     */
-  var VolumeId: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeId] = js.native
+  var VolumeId: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeId] = js.undefined
   
   /**
     * Represents the percentage complete if the volume is restoring or bootstrapping that represents the percent of data transferred. This field does not appear in the response if the stored volume is not restoring or bootstrapping.
     */
-  var VolumeProgress: js.UndefOr[DoubleObject] = js.native
+  var VolumeProgress: js.UndefOr[DoubleObject] = js.undefined
   
   /**
     * The size of the volume in bytes.
     */
-  var VolumeSizeInBytes: js.UndefOr[long] = js.native
+  var VolumeSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * One of the VolumeStatus values that indicates the state of the storage volume.
     */
-  var VolumeStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeStatus] = js.native
+  var VolumeStatus: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeStatus] = js.undefined
   
   /**
     * One of the VolumeType enumeration values describing the type of the volume.
     */
-  var VolumeType: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeType] = js.native
+  var VolumeType: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeType] = js.undefined
   
   /**
     * The size of the data stored on the volume in bytes. This value is calculated based on the number of blocks that are touched, instead of the actual amount of data written. This value can be useful for sequential write patterns but less accurate for random write patterns. VolumeUsedInBytes is different from the compressed size of the volume, which is the value that is used to calculate your bill.  This value is not available for volumes created prior to May 13, 2015, until you store data on the volume. 
     */
-  var VolumeUsedInBytes: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeUsedInBytes] = js.native
+  var VolumeUsedInBytes: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeUsedInBytes] = js.undefined
   
   /**
     * An VolumeiSCSIAttributes object that represents a collection of iSCSI attributes for one stored volume.
     */
-  var VolumeiSCSIAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeiSCSIAttributes] = js.native
+  var VolumeiSCSIAttributes: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeiSCSIAttributes] = js.undefined
 }
 object StorediSCSIVolume {
   

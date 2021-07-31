@@ -42,7 +42,6 @@ import typings.antvGBase.interfacesMod.IShape
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -58,50 +57,49 @@ object typesMod {
     Double
   ]
   
-  @js.native
   trait AnimateCfg extends StObject {
     
     /**
       * 动画执行完时的回调函数
       * @type {function}}
       */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * 动画执行的延迟时间
       * @type {function}}
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * 动画执行时间
       * @type {number}
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * 动画缓动效果
       * @type {string}}
       */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /**
       * 动画暂停时的回调函数
       * @type {function}}
       */
-    var pauseCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var pauseCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * 是否重复执行动画
       * @type {boolean}}
       */
-    var repeat: js.UndefOr[Boolean] = js.native
+    var repeat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 动画恢复(重新唤醒)时的回调函数
       * @type {function}}
       */
-    var resumeCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var resumeCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object AnimateCfg {
     
@@ -155,67 +153,25 @@ object typesMod {
     }
   }
   
-  /* Inlined @antv/g-base.@antv/g-base/lib/types.AnimateCfg & {  id :string,   fromAttrs :{[key: string] : any},   toAttrs :{[key: string] : any},   startTime :number,   pathFormatted :boolean,   onFrame :@antv/g-base.@antv/g-base/lib/types.OnFrame | undefined,   _paused :boolean | undefined,   _pauseTime :number | undefined} */
-  @js.native
-  trait Animation extends StObject {
+  trait Animation
+    extends StObject
+       with AnimateCfg {
     
-    var _pauseTime: js.UndefOr[Double] = js.native
+    var _pauseTime: js.UndefOr[Double] = js.undefined
     
-    var _paused: js.UndefOr[Boolean] = js.native
+    var _paused: js.UndefOr[Boolean] = js.undefined
     
-    /**
-      * 动画执行完时的回调函数
-      * @type {function}}
-      */
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var fromAttrs: StringDictionary[js.Any]
     
-    /**
-      * 动画执行的延迟时间
-      * @type {function}}
-      */
-    var delay: js.UndefOr[Double] = js.native
+    var id: String
     
-    /**
-      * 动画执行时间
-      * @type {number}
-      */
-    var duration: Double = js.native
+    var onFrame: js.UndefOr[OnFrame] = js.undefined
     
-    /**
-      * 动画缓动效果
-      * @type {string}}
-      */
-    var easing: js.UndefOr[String] = js.native
+    var pathFormatted: Boolean
     
-    var fromAttrs: StringDictionary[js.Any] = js.native
+    var startTime: Double
     
-    var id: String = js.native
-    
-    var onFrame: js.UndefOr[OnFrame] = js.native
-    
-    var pathFormatted: Boolean = js.native
-    
-    /**
-      * 动画暂停时的回调函数
-      * @type {function}}
-      */
-    var pauseCallback: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    /**
-      * 是否重复执行动画
-      * @type {boolean}}
-      */
-    var repeat: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * 动画恢复(重新唤醒)时的回调函数
-      * @type {function}}
-      */
-    var resumeCallback: js.UndefOr[js.Function0[Unit]] = js.native
-    
-    var startTime: Double = js.native
-    
-    var toAttrs: StringDictionary[js.Any] = js.native
+    var toAttrs: StringDictionary[js.Any]
   }
   object Animation {
     
@@ -236,27 +192,6 @@ object typesMod {
     implicit class AnimationMutableBuilder[Self <: Animation] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
-      
-      @scala.inline
-      def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
-      
-      @scala.inline
-      def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEasing(value: String): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
-      
-      @scala.inline
       def setFromAttrs(value: StringDictionary[js.Any]): Self = StObject.set(x, "fromAttrs", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -270,24 +205,6 @@ object typesMod {
       
       @scala.inline
       def setPathFormatted(value: Boolean): Self = StObject.set(x, "pathFormatted", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPauseCallback(value: () => Unit): Self = StObject.set(x, "pauseCallback", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setPauseCallbackUndefined: Self = StObject.set(x, "pauseCallback", js.undefined)
-      
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRepeatUndefined: Self = StObject.set(x, "repeat", js.undefined)
-      
-      @scala.inline
-      def setResumeCallback(value: () => Unit): Self = StObject.set(x, "resumeCallback", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setResumeCallbackUndefined: Self = StObject.set(x, "resumeCallback", js.undefined)
       
       @scala.inline
       def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
@@ -309,24 +226,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait BBox extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var maxX: Double = js.native
+    var maxX: Double
     
-    var maxY: Double = js.native
+    var maxY: Double
     
-    var minX: Double = js.native
+    var minX: Double
     
-    var minY: Double = js.native
+    var minY: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object BBox {
     
@@ -376,45 +292,45 @@ object typesMod {
   
   type C = js.Tuple7[c_ | typings.antvGBase.antvGBaseStrings.C, Double, Double, Double, Double, Double, Double]
   
-  @js.native
   trait CanvasCfg
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * 是否可监听
       * @type {boolean}
       */
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 容器
       * @type {string|HTMLElement}
       */
-    var container: String | HTMLElement = js.native
+    var container: String | HTMLElement
     
     /**
       * 画布的 cursor 样式
       * @type {Cursor}
       */
-    var cursor: js.UndefOr[Cursor] = js.native
+    var cursor: js.UndefOr[Cursor] = js.undefined
     
     /**
       * 画布高度
       * @type {number}
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * 只读属性，渲染引擎
       * @type {string}
       */
-    var renderer: js.UndefOr[Renderer] = js.native
+    var renderer: js.UndefOr[Renderer] = js.undefined
     
     /**
       * 画布宽度
       * @type {number}
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CanvasCfg {
     
@@ -506,20 +422,19 @@ object typesMod {
     def zIndex: typings.antvGBase.antvGBaseStrings.zIndex = "zIndex".asInstanceOf[typings.antvGBase.antvGBaseStrings.zIndex]
   }
   
-  @js.native
   trait ClipCfg extends StObject {
     
     /**
       * 图形的属性
       * @type {ShapeAttrs}
       */
-    var attrs: ShapeAttrs = js.native
+    var attrs: ShapeAttrs
     
     /**
       * 作为 clip 的图形
       * @type {string}
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object ClipCfg {
     
@@ -692,32 +607,31 @@ object typesMod {
   
   type ElementAttrs = StringDictionary[js.Any]
   
-  @js.native
   trait ElementCfg extends StObject {
     
     /**
       * 是否可以拾取
       * @type {Boolean}
       */
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 元素 id,可以为空
       * @type {String}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * 是否可见
       * @type {Boolean}
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 层次索引，决定绘制的先后顺序
       * @type {Number}
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ElementCfg {
     
@@ -774,12 +688,11 @@ object typesMod {
   
   type PathCommand = A | C | O | H | L | M | R | Q | S | T | V | U | Z
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -829,95 +742,95 @@ object typesMod {
     Double
   ]
   
-  @js.native
   trait ShapeAttrs
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /** 填充颜色 */
-    var fill: js.UndefOr[ColorType] = js.native
+    var fill: js.UndefOr[ColorType] = js.undefined
     
     /** 填充透明度 */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /** 文本字体 */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** 文本字体大小 */
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
     /** 字体样式 */
-    var fontStyle: js.UndefOr[normal | italic | oblique] = js.native
+    var fontStyle: js.UndefOr[normal | italic | oblique] = js.undefined
     
     /** 字体变体 */
-    var fontVariant: js.UndefOr[normal | `small-caps` | String] = js.native
+    var fontVariant: js.UndefOr[normal | `small-caps` | String] = js.undefined
     
     /** 文本粗细 */
-    var fontWeight: js.UndefOr[normal | bold | bolder | lighter | Double] = js.native
+    var fontWeight: js.UndefOr[normal | bold | bolder | lighter | Double] = js.undefined
     
     /** 高度 */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** 指定如何绘制每一条线段末端 */
-    var lineCap: js.UndefOr[butt | round | square] = js.native
+    var lineCap: js.UndefOr[butt | round | square] = js.undefined
     
     /**
       * 设置线的虚线样式，可以指定一个数组。一组描述交替绘制线段和间距（坐标空间单位）长度的数字。 如果数组元素的数量是奇数， 数组的元素会被复制并重复。例如， [5, 15, 25] 会变成 [5, 15, 25, 5, 15, 25]。这个属性取决于浏览器是否支持 setLineDash() 函数。
       */
-    var lineDash: js.UndefOr[js.Array[Double] | Null] = js.native
+    var lineDash: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
     /** 文本行高 */
-    var lineHeight: js.UndefOr[Double] = js.native
+    var lineHeight: js.UndefOr[Double] = js.undefined
     
     /** 用来设置2个长度不为0的相连部分（线段，圆弧，曲线）如何连接在一起的属性（长度为0的变形部分，其指定的末端和控制点在同一位置，会被忽略） */
-    var lineJoin: js.UndefOr[bevel | round | miter] = js.native
+    var lineJoin: js.UndefOr[bevel | round | miter] = js.undefined
     
     /** 线宽 */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /** 整体透明度 */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Path 路径 */
-    var path: js.UndefOr[String | js.Array[js.Object]] = js.native
+    var path: js.UndefOr[String | js.Array[js.Object]] = js.undefined
     
     /** 图形坐标点 */
-    var points: js.UndefOr[js.Array[js.Object]] = js.native
+    var points: js.UndefOr[js.Array[js.Object]] = js.undefined
     
     /** 圆半径 */
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
     
     /** 阴影模糊效果程度 */
-    var shadowBlur: js.UndefOr[Double] = js.native
+    var shadowBlur: js.UndefOr[Double] = js.undefined
     
     /** 阴影颜色 */
-    var shadowColor: js.UndefOr[ColorType] = js.native
+    var shadowColor: js.UndefOr[ColorType] = js.undefined
     
     /** 阴影 x 方向偏移量 */
-    var shadowOffsetX: js.UndefOr[Double] = js.native
+    var shadowOffsetX: js.UndefOr[Double] = js.undefined
     
     /** 阴影 y 方向偏移量 */
-    var shadowOffsetY: js.UndefOr[Double] = js.native
+    var shadowOffsetY: js.UndefOr[Double] = js.undefined
     
     /** 描边颜色 */
-    var stroke: js.UndefOr[ColorType] = js.native
+    var stroke: js.UndefOr[ColorType] = js.undefined
     
     /** 描边透明度 */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
     /** 设置文本内容的当前对齐方式 */
-    var textAlign: js.UndefOr[start | center | end | left | right] = js.native
+    var textAlign: js.UndefOr[start | center | end | left | right] = js.undefined
     
     /** 设置在绘制文本时使用的当前文本基线 */
-    var textBaseline: js.UndefOr[top | hanging | middle | alphabetic | ideographic | bottom] = js.native
+    var textBaseline: js.UndefOr[top | hanging | middle | alphabetic | ideographic | bottom] = js.undefined
     
     /** 宽度 */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** x 坐标 */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** y 坐标 */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ShapeAttrs {
     
@@ -1123,40 +1036,16 @@ object typesMod {
   
   type ShapeBase = StringDictionary[ICtor[IShape]]
   
-  /* Inlined @antv/g-base.@antv/g-base/lib/types.ElementCfg & {  attrs :@antv/g-base.@antv/g-base/lib/types.ShapeAttrs, [key: string] : any} */
-  @js.native
   trait ShapeCfg
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with ElementCfg
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * 图形的属性
       * @type {ShapeAttrs}
       */
-    var attrs: ShapeAttrs = js.native
-    
-    /**
-      * 是否可以拾取
-      * @type {Boolean}
-      */
-    var capture: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * 元素 id,可以为空
-      * @type {String}
-      */
-    var id: js.UndefOr[String] = js.native
-    
-    /**
-      * 是否可见
-      * @type {Boolean}
-      */
-    var visible: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * 层次索引，决定绘制的先后顺序
-      * @type {Number}
-      */
-    var zIndex: js.UndefOr[Double] = js.native
+    var attrs: ShapeAttrs
   }
   object ShapeCfg {
     
@@ -1171,43 +1060,18 @@ object typesMod {
       
       @scala.inline
       def setAttrs(value: ShapeAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCapture(value: Boolean): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCaptureUndefined: Self = StObject.set(x, "capture", js.undefined)
-      
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
-      
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      @scala.inline
-      def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setZIndexUndefined: Self = StObject.set(x, "zIndex", js.undefined)
     }
   }
   
-  @js.native
   trait SimpleBBox extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object SimpleBBox {
     

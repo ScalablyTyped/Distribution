@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactPhoneNumber extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ContactPhoneNumber extends StObject {
     *
     * Example: `+12223334444`
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The type of phone number. Valid values are:
@@ -24,7 +22,7 @@ trait ContactPhoneNumber extends StObject {
     * - `other`
     * - `fax`
     */
-  var phoneType: js.UndefOr[String] = js.native
+  var phoneType: js.UndefOr[String] = js.undefined
 }
 object ContactPhoneNumber {
   

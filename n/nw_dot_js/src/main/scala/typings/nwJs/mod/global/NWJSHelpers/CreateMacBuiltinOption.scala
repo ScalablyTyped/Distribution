@@ -2,24 +2,22 @@ package typings.nwJs.mod.global.NWJSHelpers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to modify default `edit` and `window` MenuItems in Mac.
   */
-@js.native
 trait CreateMacBuiltinOption extends StObject {
   
   /**
     * {Boolean} (Optional) do not populate the Edit menu
     */
-  var hideEdit: js.UndefOr[Boolean] = js.native
+  var hideEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * {Boolean} (Optional) do not populate the Window menu
     */
-  var hideWindow: js.UndefOr[Boolean] = js.native
+  var hideWindow: js.UndefOr[Boolean] = js.undefined
 }
 object CreateMacBuiltinOption {
   

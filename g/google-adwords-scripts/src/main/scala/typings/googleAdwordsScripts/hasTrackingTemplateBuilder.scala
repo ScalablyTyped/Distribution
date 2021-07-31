@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasTrackingTemplateBuilder[B] extends StObject {
   
-  def withCustomParameters(customParameters: js.Object): B = js.native
+  def withCustomParameters(customParameters: js.Object): B
   
-  def withTrackingTemplate(trackingTemplate: String): B = js.native
+  def withTrackingTemplate(trackingTemplate: String): B
 }
 object hasTrackingTemplateBuilder {
   
@@ -21,7 +19,7 @@ object hasTrackingTemplateBuilder {
   }
   
   @scala.inline
-  implicit class hasTrackingTemplateBuilderMutableBuilder[Self <: hasTrackingTemplateBuilder[_], B] (val x: Self with hasTrackingTemplateBuilder[B]) extends AnyVal {
+  implicit class hasTrackingTemplateBuilderMutableBuilder[Self <: hasTrackingTemplateBuilder[?], B] (val x: Self & hasTrackingTemplateBuilder[B]) extends AnyVal {
     
     @scala.inline
     def setWithCustomParameters(value: js.Object => B): Self = StObject.set(x, "withCustomParameters", js.Any.fromFunction1(value))

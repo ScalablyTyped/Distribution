@@ -5,16 +5,10 @@ import typings.connectHistoryApiFallback.mod.Options
 import typings.express.mod.Application_
 import typings.httpProxyMiddleware.mod.Config
 import typings.httpProxyMiddleware.mod.Filter
-import typings.httpProxyMiddleware.mod.LogProvider
 import typings.node.eventsMod.global.NodeJS.EventEmitter
-import typings.node.httpMod.Agent
-import typings.node.httpMod.ClientRequest
 import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import typings.node.httpsMod.ServerOptions
-import typings.node.netMod.Socket
-import typings.node.streamMod.Readable
-import typings.node.tlsMod.TlsOptions
 import typings.serveStatic.mod.ServeStaticOptions
 import typings.std.Error
 import typings.webpackDevServer.anon.Client
@@ -23,7 +17,6 @@ import typings.webpackDevServer.anon.Errors
 import typings.webpackDevServer.anon.Port
 import typings.webpackDevServer.anon.Server
 import typings.webpackDevServer.anon.TypeMap
-import typings.webpackDevServer.webpackDevServerBooleans.`false`
 import typings.webpackDevServer.webpackDevServerStrings.debug
 import typings.webpackDevServer.webpackDevServerStrings.error
 import typings.webpackDevServer.webpackDevServerStrings.info
@@ -36,54 +29,53 @@ import typings.webpackDevServer.webpackDevServerStrings.warning
 import typings.webpackDevServer.webpackDevServerStrings.ws
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-dev-server", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WebpackDevServer {
+  class ^ protected ()
+    extends StObject
+       with WebpackDevServer {
     def this(webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any) = this()
     def this(
       webpack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
       config: Configuration
     ) = this()
   }
+  @JSImport("webpack-dev-server", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("webpack-dev-server", "addDevServerEntrypoints")
-  @js.native
+  @scala.inline
   def addDevServerEntrypoints(
     webpackOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
     config: Configuration
-  ): Unit = js.native
-  @JSImport("webpack-dev-server", "addDevServerEntrypoints")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDevServerEntrypoints")(webpackOptions.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addDevServerEntrypoints(
     webpackOptions: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any,
     config: Configuration,
     listeningApp: ListeningApp
-  ): Unit = js.native
-  @JSImport("webpack-dev-server", "addDevServerEntrypoints")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDevServerEntrypoints")(webpackOptions.asInstanceOf[js.Any], config.asInstanceOf[js.Any], listeningApp.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addDevServerEntrypoints(
     webpackOptions: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
     ],
     config: Configuration
-  ): Unit = js.native
-  @JSImport("webpack-dev-server", "addDevServerEntrypoints")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDevServerEntrypoints")(webpackOptions.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addDevServerEntrypoints(
     webpackOptions: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
     ],
     config: Configuration,
     listeningApp: ListeningApp
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addDevServerEntrypoints")(webpackOptions.asInstanceOf[js.Any], config.asInstanceOf[js.Any], listeningApp.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Configuration extends StObject {
     
     /**
@@ -97,13 +89,13 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This option allows you to whitelist services that are allowed to
       * access the dev server.
       */
-    var allowedHosts: js.UndefOr[js.Array[String]] = js.native
+    var allowedHosts: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Provides the ability to execute custom middleware prior to all
@@ -116,12 +108,12 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compiler */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This option broadcasts the server via ZeroConf networking on start.
       */
-    var bonjour: js.UndefOr[Boolean] = js.native
+    var bonjour: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When using inline mode, the console in your DevTools will show you
@@ -131,12 +123,12 @@ object mod {
       * 'none' and 'warning' are going to be deprecated at the next major
       * version.
       */
-    var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.native
+    var clientLogLevel: js.UndefOr[silent | trace | debug | info | warn | error | none | warning] = js.undefined
     
     /**
       * Enable gzip compression for everything served.
       */
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tell the server where to serve content from. This is only necessary
@@ -144,42 +136,42 @@ object mod {
       * to determine where the bundles should be served from, and takes
       * precedence.
       */
-    var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.native
+    var contentBase: js.UndefOr[Boolean | String | js.Array[String] | Double] = js.undefined
     
     /**
       * Tell the server at what URL to serve `devServer.contentBase`.
       * If there was a file `assets/manifest.json`,
       * it would be served at `/serve-content-base-at-this-url/manifest.json`
       */
-    var contentBasePublicPath: js.UndefOr[String | js.Array[String]] = js.native
+    var contentBasePublicPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * When set to true this option bypasses host checking.  THIS IS NOT
       * RECOMMENDED as apps that do not check the host are vulnerable to DNS
       * rebinding attacks.
       */
-    var disableHostCheck: js.UndefOr[Boolean] = js.native
+    var disableHostCheck: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This option lets you reduce the compilations in lazy mode.
       * By default in lazy mode, every request results in a new compilation.
       * With filename, it's possible to only compile when a certain file is requested.
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Adds headers to all responses. */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * When using the HTML5 History API, the index.html page will likely
       * have to be served in place of any 404 responses.
       */
-    var historyApiFallback: js.UndefOr[Boolean | Options] = js.native
+    var historyApiFallback: js.UndefOr[Boolean | Options] = js.undefined
     
     /**
       * Specify a host to use. By default this is localhost.
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Enable webpack's Hot Module Replacement feature.
@@ -188,31 +180,31 @@ object mod {
       * --hot option, this plugin will be added automatically, so you may
       * not need to add this to your webpack.config.js.
       */
-    var hot: js.UndefOr[Boolean] = js.native
+    var hot: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables Hot Module Replacement (see devServer.hot) without page
       * refresh as fallback in case of build failures.
       */
-    var hotOnly: js.UndefOr[Boolean] = js.native
+    var hotOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Serve over HTTP/2 using spdy. This option is ignored for Node 10.0.0
       * and above, as spdy is broken for those versions. The dev server will
       * migrate over to Node's built-in HTTP/2 once Express supports it.
       */
-    var http2: js.UndefOr[Boolean] = js.native
+    var http2: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default dev-server will be served over HTTP. It can optionally be
       * served over HTTP/2 with HTTPS.
       */
-    var https: js.UndefOr[Boolean | ServerOptions] = js.native
+    var https: js.UndefOr[Boolean | ServerOptions] = js.undefined
     
     /**
       * The filename that is considered the index file.
       */
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
     /**
       * Tells devServer to inject a client. Setting devServer.injectClient
@@ -224,7 +216,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compilerConfig */ js.Any, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Tells devServer to inject a Hot Module Replacement. Setting
@@ -236,7 +228,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ /* compilerConfig */ js.Any, 
           Boolean
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Toggle between the dev-server's two different modes.  By default the
@@ -244,14 +236,14 @@ object mod {
       * that a script will be inserted in your bundle to take care of live
       * reloading, and build messages will appear in the browser console.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * When lazy is enabled, the dev-server will only compile the bundle
       * when it gets requested.  This means that webpack will not watch any
       * file changes.
       */
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, the dev-server will reload/refresh the page when file
@@ -260,51 +252,51 @@ object mod {
       * liveReload to take effect. Disable devServer.liveReload by setting
       * it to false
       */
-    var liveReload: js.UndefOr[Boolean] = js.native
+    var liveReload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The object is passed to the underlying webpack-dev-middleware. See
       * [documentation](https://github.com/webpack/webpack-dev-middleware#mimetypes)
       * for usage notes.
       */
-    var mimeTypes: js.UndefOr[StringDictionary[js.Array[String]] | TypeMap] = js.native
+    var mimeTypes: js.UndefOr[StringDictionary[js.Array[String]] | TypeMap] = js.undefined
     
     /**
       * With noInfo enabled, messages like the webpack bundle information
       * that is shown when starting up and after each save,will be hidden.
       * Errors and warnings will still be shown.
       */
-    var noInfo: js.UndefOr[Boolean] = js.native
+    var noInfo: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provides an option to execute a custom function when
       * webpack-dev-server starts listening for connections on a port.
       */
-    var onListening: js.UndefOr[js.Function1[/* server */ WebpackDevServer, Unit]] = js.native
+    var onListening: js.UndefOr[js.Function1[/* server */ WebpackDevServer, Unit]] = js.undefined
     
     /** When open is enabled, the dev server will open the browser. */
-    var open: js.UndefOr[Boolean | String | js.Object] = js.native
+    var open: js.UndefOr[Boolean | String | js.Object] = js.undefined
     
     /** Specify a page to navigate to when opening the browser. */
-    var openPage: js.UndefOr[String | js.Array[String]] = js.native
+    var openPage: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Shows a full-screen overlay in the browser when there are compiler
       * errors or warnings. Disabled by default.
       */
-    var overlay: js.UndefOr[Boolean | Errors] = js.native
+    var overlay: js.UndefOr[Boolean | Errors] = js.undefined
     
     /**
       * When used via the CLI, a path to an SSL .pfx file. If used in
       * options, it should be the bytestream of the .pfx file.
       */
-    var pfx: js.UndefOr[String] = js.native
+    var pfx: js.UndefOr[String] = js.undefined
     
     /** The passphrase to a SSL PFX file. */
-    var pfxPassphrase: js.UndefOr[String] = js.native
+    var pfxPassphrase: js.UndefOr[String] = js.undefined
     
     /** Specify a port number to listen for requests on. */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       * Proxying some URLs can be useful when you have a separate API
@@ -320,7 +312,7 @@ object mod {
       * otherwise webpack-dev-server won't pass it along to
       * http-proxy-middleware).
       */
-    var proxy: js.UndefOr[ProxyConfigMap | ProxyConfigArray] = js.native
+    var proxy: js.UndefOr[ProxyConfigMap | ProxyConfigArray] = js.undefined
     
     /**
       * When using inline mode and you're proxying dev-server, the inline
@@ -328,20 +320,20 @@ object mod {
       * to guess the URL of the server based on window.location, but if that
       * fails you'll need to use this.
       */
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
     /**
       * The bundled files will be available in the browser under this path.
       * default is '/'
       */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
     
     /**
       * With quiet enabled, nothing except the initial startup information
       * will be written to the console.  This also means that errors or
       * warnings from webpack are not visible.
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tells dev-server to use serveIndex middleware when enabled.
@@ -349,33 +341,33 @@ object mod {
       * serveIndex middleware generates directory listings on viewing
       * directories that don't have an index.html file.
       */
-    var serveIndex: js.UndefOr[Boolean] = js.native
+    var serveIndex: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated This option is deprecated in favor of devServer.before
       * and will be removed in v3.0.0. Here you can access the Express app
       * object and add your own custom middleware to it.
       */
-    var setup: js.UndefOr[js.Function2[/* app */ Application_, /* server */ WebpackDevServer, Unit]] = js.native
+    var setup: js.UndefOr[js.Function2[/* app */ Application_, /* server */ WebpackDevServer, Unit]] = js.undefined
     
     /**
       * Tells clients connected to devServer to use provided socket host.
       */
-    var sockHost: js.UndefOr[String] = js.native
+    var sockHost: js.UndefOr[String] = js.undefined
     
     /**
       * The path at which to connect to the reloading socket. Default is
       * '/sockjs-node'
       */
-    var sockPath: js.UndefOr[String] = js.native
+    var sockPath: js.UndefOr[String] = js.undefined
     
     /**
       * Tells clients connected to devServer to use provided socket port.
       */
-    var sockPort: js.UndefOr[String | Double] = js.native
+    var sockPort: js.UndefOr[String | Double] = js.undefined
     
     /** The Unix socket to listen to (instead of a host). */
-    var socket: js.UndefOr[String] = js.native
+    var socket: js.UndefOr[String] = js.undefined
     
     /**
       * It is possible to configure advanced options for serving static
@@ -383,7 +375,7 @@ object mod {
       *
       * This only works when using devServer.contentBase as a string.
       */
-    var staticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.native
+    var staticOptions: js.UndefOr[ServeStaticOptions[ServerResponse]] = js.undefined
     
     /**
       * This option lets you precisely control what bundle information gets
@@ -392,7 +384,7 @@ object mod {
       */
     var stats: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration * / any['stats'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * transportMode is an experimental option, meaning its usage could
@@ -414,25 +406,25 @@ object mod {
       * version. This mode uses ws as a server, and native WebSockets on the
       * client.
       */
-    var transportMode: js.UndefOr[sockjs | ws | Client | Server | ClientServer] = js.native
+    var transportMode: js.UndefOr[sockjs | ws | Client | Server | ClientServer] = js.undefined
     
     /** This option lets the browser open with your local IP. */
-    var useLocalIp: js.UndefOr[Boolean] = js.native
+    var useLocalIp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tell the server to watch the files served by the
       * devServer.contentBase option. File changes will trigger a full page
       * reload.
       */
-    var watchContentBase: js.UndefOr[Boolean] = js.native
+    var watchContentBase: js.UndefOr[Boolean] = js.undefined
     
     /** Control options related to watching the files. */
     var watchOptions: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration * / any['watchOptions'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Tells devServer to write generated assets to the disk. */
-    var writeToDisk: js.UndefOr[Boolean | (js.Function1[/* filePath */ String, Boolean])] = js.native
+    var writeToDisk: js.UndefOr[Boolean | (js.Function1[/* filePath */ String, Boolean])] = js.undefined
   }
   object Configuration {
     
@@ -787,10 +779,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ListeningApp extends StObject {
     
-    def address(): Port = js.native
+    def address(): Port
   }
   object ListeningApp {
     
@@ -810,122 +801,13 @@ object mod {
   
   type ProxyConfigArray = js.Array[ProxyConfigArrayItem]
   
-  /* Inlined {  path :string | std.Array<string> | undefined,   context :string | std.Array<string> | http-proxy-middleware.http-proxy-middleware.Filter | undefined} & http-proxy-middleware.http-proxy-middleware.Config */
-  @js.native
-  trait ProxyConfigArrayItem extends StObject {
+  trait ProxyConfigArrayItem
+    extends StObject
+       with Config {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var context: js.UndefOr[String | js.Array[String] | Filter] = js.undefined
     
-    var auth: js.UndefOr[String] = js.native
-    
-    var autoRewrite: js.UndefOr[Boolean] = js.native
-    
-    var buffer: js.UndefOr[Readable] = js.native
-    
-    var changeOrigin: js.UndefOr[Boolean] = js.native
-    
-    var context: js.UndefOr[String | js.Array[String] | Filter] = js.native
-    
-    var cookieDomainRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
-    
-    var cookiePathRewrite: js.UndefOr[`false` | String | StringDictionary[String]] = js.native
-    
-    var followRedirects: js.UndefOr[Boolean] = js.native
-    
-    var forward: js.UndefOr[String] = js.native
-    
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
-    
-    var hostRewrite: js.UndefOr[String] = js.native
-    
-    var ignorePath: js.UndefOr[Boolean] = js.native
-    
-    var localAddress: js.UndefOr[String] = js.native
-    
-    var logLevel: js.UndefOr[debug | info | warn | error | silent] = js.native
-    
-    var logProvider: js.UndefOr[js.Function1[/* provider */ LogProvider, LogProvider]] = js.native
-    
-    var onClose: js.UndefOr[
-        js.Function3[/* res */ IncomingMessage, /* socket */ Socket, /* head */ js.Any, Unit]
-      ] = js.native
-    
-    var onError: js.UndefOr[
-        js.Function3[/* err */ Error, /* req */ IncomingMessage, /* res */ ServerResponse, Unit]
-      ] = js.native
-    
-    var onOpen: js.UndefOr[js.Function1[/* proxySocket */ Socket, Unit]] = js.native
-    
-    var onProxyReq: js.UndefOr[
-        js.Function3[
-          /* proxyReq */ ClientRequest, 
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          Unit
-        ]
-      ] = js.native
-    
-    var onProxyReqWs: js.UndefOr[
-        js.Function5[
-          /* proxyReq */ ClientRequest, 
-          /* req */ IncomingMessage, 
-          /* socket */ Socket, 
-          /* options */ typings.httpProxy.mod.ServerOptions, 
-          /* head */ js.Any, 
-          Unit
-        ]
-      ] = js.native
-    
-    var onProxyRes: js.UndefOr[
-        js.Function3[
-          /* proxyRes */ IncomingMessage, 
-          /* req */ IncomingMessage, 
-          /* res */ ServerResponse, 
-          Unit
-        ]
-      ] = js.native
-    
-    var path: js.UndefOr[String | js.Array[String]] = js.native
-    
-    var pathRewrite: js.UndefOr[
-        StringDictionary[String] | (js.Function2[/* path */ String, /* req */ IncomingMessage, String])
-      ] = js.native
-    
-    var prependPath: js.UndefOr[Boolean] = js.native
-    
-    var preserveHeaderKeyCase: js.UndefOr[Boolean] = js.native
-    
-    var protocolRewrite: js.UndefOr[String] = js.native
-    
-    /**
-      * @deprecated
-      */
-    var proxyHost: js.UndefOr[js.Any] = js.native
-    
-    /**
-      * @deprecated
-      */
-    var proxyTable: js.UndefOr[js.Any] = js.native
-    
-    var proxyTimeout: js.UndefOr[Double] = js.native
-    
-    var router: js.UndefOr[StringDictionary[String] | (js.Function1[/* req */ IncomingMessage, String])] = js.native
-    
-    var secure: js.UndefOr[Boolean] = js.native
-    
-    var selfHandleResponse: js.UndefOr[Boolean] = js.native
-    
-    var ssl: js.UndefOr[TlsOptions] = js.native
-    
-    var target: js.UndefOr[String] = js.native
-    
-    var timeout: js.UndefOr[Double] = js.native
-    
-    var toProxy: js.UndefOr[Boolean] = js.native
-    
-    var ws: js.UndefOr[Boolean] = js.native
-    
-    var xfwd: js.UndefOr[Boolean] = js.native
+    var path: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ProxyConfigArrayItem {
     
@@ -937,36 +819,6 @@ object mod {
     
     @scala.inline
     implicit class ProxyConfigArrayItemMutableBuilder[Self <: ProxyConfigArrayItem] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAgentUndefined: Self = StObject.set(x, "agent", js.undefined)
-      
-      @scala.inline
-      def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
-      
-      @scala.inline
-      def setAutoRewrite(value: Boolean): Self = StObject.set(x, "autoRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoRewriteUndefined: Self = StObject.set(x, "autoRewrite", js.undefined)
-      
-      @scala.inline
-      def setBuffer(value: Readable): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBufferUndefined: Self = StObject.set(x, "buffer", js.undefined)
-      
-      @scala.inline
-      def setChangeOrigin(value: Boolean): Self = StObject.set(x, "changeOrigin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setChangeOriginUndefined: Self = StObject.set(x, "changeOrigin", js.undefined)
       
       @scala.inline
       def setContext(value: String | js.Array[String] | Filter): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -981,217 +833,13 @@ object mod {
       def setContextVarargs(value: String*): Self = StObject.set(x, "context", js.Array(value :_*))
       
       @scala.inline
-      def setCookieDomainRewrite(value: `false` | String | StringDictionary[String]): Self = StObject.set(x, "cookieDomainRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCookieDomainRewriteUndefined: Self = StObject.set(x, "cookieDomainRewrite", js.undefined)
-      
-      @scala.inline
-      def setCookiePathRewrite(value: `false` | String | StringDictionary[String]): Self = StObject.set(x, "cookiePathRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCookiePathRewriteUndefined: Self = StObject.set(x, "cookiePathRewrite", js.undefined)
-      
-      @scala.inline
-      def setFollowRedirects(value: Boolean): Self = StObject.set(x, "followRedirects", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFollowRedirectsUndefined: Self = StObject.set(x, "followRedirects", js.undefined)
-      
-      @scala.inline
-      def setForward(value: String): Self = StObject.set(x, "forward", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setForwardUndefined: Self = StObject.set(x, "forward", js.undefined)
-      
-      @scala.inline
-      def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
-      
-      @scala.inline
-      def setHostRewrite(value: String): Self = StObject.set(x, "hostRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHostRewriteUndefined: Self = StObject.set(x, "hostRewrite", js.undefined)
-      
-      @scala.inline
-      def setIgnorePath(value: Boolean): Self = StObject.set(x, "ignorePath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIgnorePathUndefined: Self = StObject.set(x, "ignorePath", js.undefined)
-      
-      @scala.inline
-      def setLocalAddress(value: String): Self = StObject.set(x, "localAddress", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocalAddressUndefined: Self = StObject.set(x, "localAddress", js.undefined)
-      
-      @scala.inline
-      def setLogLevel(value: debug | info | warn | error | silent): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLogLevelUndefined: Self = StObject.set(x, "logLevel", js.undefined)
-      
-      @scala.inline
-      def setLogProvider(value: /* provider */ LogProvider => LogProvider): Self = StObject.set(x, "logProvider", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setLogProviderUndefined: Self = StObject.set(x, "logProvider", js.undefined)
-      
-      @scala.inline
-      def setOnClose(value: (/* res */ IncomingMessage, /* socket */ Socket, /* head */ js.Any) => Unit): Self = StObject.set(x, "onClose", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
-      
-      @scala.inline
-      def setOnError(value: (/* err */ Error, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
-      
-      @scala.inline
-      def setOnOpen(value: /* proxySocket */ Socket => Unit): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
-      
-      @scala.inline
-      def setOnProxyReq(value: (/* proxyReq */ ClientRequest, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit): Self = StObject.set(x, "onProxyReq", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setOnProxyReqUndefined: Self = StObject.set(x, "onProxyReq", js.undefined)
-      
-      @scala.inline
-      def setOnProxyReqWs(
-        value: (/* proxyReq */ ClientRequest, /* req */ IncomingMessage, /* socket */ Socket, /* options */ typings.httpProxy.mod.ServerOptions, /* head */ js.Any) => Unit
-      ): Self = StObject.set(x, "onProxyReqWs", js.Any.fromFunction5(value))
-      
-      @scala.inline
-      def setOnProxyReqWsUndefined: Self = StObject.set(x, "onProxyReqWs", js.undefined)
-      
-      @scala.inline
-      def setOnProxyRes(
-        value: (/* proxyRes */ IncomingMessage, /* req */ IncomingMessage, /* res */ ServerResponse) => Unit
-      ): Self = StObject.set(x, "onProxyRes", js.Any.fromFunction3(value))
-      
-      @scala.inline
-      def setOnProxyResUndefined: Self = StObject.set(x, "onProxyRes", js.undefined)
-      
-      @scala.inline
       def setPath(value: String | js.Array[String]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPathRewrite(
-        value: StringDictionary[String] | (js.Function2[/* path */ String, /* req */ IncomingMessage, String])
-      ): Self = StObject.set(x, "pathRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPathRewriteFunction2(value: (/* path */ String, /* req */ IncomingMessage) => String): Self = StObject.set(x, "pathRewrite", js.Any.fromFunction2(value))
-      
-      @scala.inline
-      def setPathRewriteUndefined: Self = StObject.set(x, "pathRewrite", js.undefined)
       
       @scala.inline
       def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
       
       @scala.inline
       def setPathVarargs(value: String*): Self = StObject.set(x, "path", js.Array(value :_*))
-      
-      @scala.inline
-      def setPrependPath(value: Boolean): Self = StObject.set(x, "prependPath", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPrependPathUndefined: Self = StObject.set(x, "prependPath", js.undefined)
-      
-      @scala.inline
-      def setPreserveHeaderKeyCase(value: Boolean): Self = StObject.set(x, "preserveHeaderKeyCase", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPreserveHeaderKeyCaseUndefined: Self = StObject.set(x, "preserveHeaderKeyCase", js.undefined)
-      
-      @scala.inline
-      def setProtocolRewrite(value: String): Self = StObject.set(x, "protocolRewrite", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProtocolRewriteUndefined: Self = StObject.set(x, "protocolRewrite", js.undefined)
-      
-      @scala.inline
-      def setProxyHost(value: js.Any): Self = StObject.set(x, "proxyHost", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProxyHostUndefined: Self = StObject.set(x, "proxyHost", js.undefined)
-      
-      @scala.inline
-      def setProxyTable(value: js.Any): Self = StObject.set(x, "proxyTable", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProxyTableUndefined: Self = StObject.set(x, "proxyTable", js.undefined)
-      
-      @scala.inline
-      def setProxyTimeout(value: Double): Self = StObject.set(x, "proxyTimeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setProxyTimeoutUndefined: Self = StObject.set(x, "proxyTimeout", js.undefined)
-      
-      @scala.inline
-      def setRouter(value: StringDictionary[String] | (js.Function1[/* req */ IncomingMessage, String])): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRouterFunction1(value: /* req */ IncomingMessage => String): Self = StObject.set(x, "router", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setRouterUndefined: Self = StObject.set(x, "router", js.undefined)
-      
-      @scala.inline
-      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
-      
-      @scala.inline
-      def setSelfHandleResponse(value: Boolean): Self = StObject.set(x, "selfHandleResponse", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSelfHandleResponseUndefined: Self = StObject.set(x, "selfHandleResponse", js.undefined)
-      
-      @scala.inline
-      def setSsl(value: TlsOptions): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSslUndefined: Self = StObject.set(x, "ssl", js.undefined)
-      
-      @scala.inline
-      def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTargetUndefined: Self = StObject.set(x, "target", js.undefined)
-      
-      @scala.inline
-      def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeoutUndefined: Self = StObject.set(x, "timeout", js.undefined)
-      
-      @scala.inline
-      def setToProxy(value: Boolean): Self = StObject.set(x, "toProxy", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setToProxyUndefined: Self = StObject.set(x, "toProxy", js.undefined)
-      
-      @scala.inline
-      def setWs(value: Boolean): Self = StObject.set(x, "ws", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWsUndefined: Self = StObject.set(x, "ws", js.undefined)
-      
-      @scala.inline
-      def setXfwd(value: Boolean): Self = StObject.set(x, "xfwd", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setXfwdUndefined: Self = StObject.set(x, "xfwd", js.undefined)
     }
   }
   
@@ -1217,14 +865,13 @@ object mod {
   /* augmented module */
   object webpackAugmentingMod {
     
-    @js.native
     trait Configuration extends StObject {
       
       /**
         * Can be used to configure the behaviour of webpack-dev-server when
         * the webpack config is passed to webpack-dev-server CLI.
         */
-      var devServer: js.UndefOr[typings.webpackDevServer.mod.webpackAugmentingMod.Configuration] = js.native
+      var devServer: js.UndefOr[typings.webpackDevServer.mod.webpackAugmentingMod.Configuration] = js.undefined
     }
     object Configuration {
       

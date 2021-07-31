@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val BuildingBlocks: typings.activexWord.Word.BuildingBlocks = js.native
+  val BuildingBlocks: typings.activexWord.Word.BuildingBlocks
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: BuildingBlockType = js.native
+  val Type: BuildingBlockType
   
   @JSName("Word.Category_typekey")
-  var WordDotCategory_typekey: Category = js.native
+  var WordDotCategory_typekey: Category
 }
 object Category {
   

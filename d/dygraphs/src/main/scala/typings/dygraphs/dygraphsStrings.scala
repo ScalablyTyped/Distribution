@@ -3,7 +3,6 @@ package typings.dygraphs
 import typings.dygraphs.dygraphs.Axis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dygraphsStrings {
@@ -29,12 +28,16 @@ object dygraphsStrings {
   def onmouseover: onmouseover = "onmouseover".asInstanceOf[onmouseover]
   
   @js.native
-  sealed trait x extends Axis
+  sealed trait x
+    extends StObject
+       with Axis
   @scala.inline
   def x: x = "x".asInstanceOf[x]
   
   @js.native
-  sealed trait y extends Axis
+  sealed trait y
+    extends StObject
+       with Axis
   @scala.inline
   def y: y = "y".asInstanceOf[y]
   
@@ -44,7 +47,9 @@ object dygraphsStrings {
   def y1: y1 = "y1".asInstanceOf[y1]
   
   @js.native
-  sealed trait y2 extends Axis
+  sealed trait y2
+    extends StObject
+       with Axis
   @scala.inline
   def y2: y2 = "y2".asInstanceOf[y2]
 }

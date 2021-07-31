@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetectEntitiesItemResult extends StObject {
   
   /**
     * One or more Entity objects, one for each entity detected in the document.
     */
-  var Entities: js.UndefOr[ListOfEntities] = js.native
+  var Entities: js.UndefOr[ListOfEntities] = js.undefined
   
   /**
     * The zero-based index of the document in the input list.
     */
-  var Index: js.UndefOr[Integer] = js.native
+  var Index: js.UndefOr[Integer] = js.undefined
 }
 object BatchDetectEntitiesItemResult {
   

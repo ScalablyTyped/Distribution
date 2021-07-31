@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceSelectionCriteria extends StObject {
   
   /**
     *  A container for filter information for the selection of Amazon S3 objects encrypted with AWS KMS. If you include SourceSelectionCriteria in the replication configuration, this element is required. 
     */
-  var SseKmsEncryptedObjects: js.UndefOr[typings.awsSdk.s3Mod.SseKmsEncryptedObjects] = js.native
+  var SseKmsEncryptedObjects: js.UndefOr[typings.awsSdk.s3Mod.SseKmsEncryptedObjects] = js.undefined
 }
 object SourceSelectionCriteria {
   

@@ -4,47 +4,45 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerPropsMod {
   
-  @js.native
   trait DatePickerProps extends StObject {
     
-    var date: js.UndefOr[js.Any] = js.native
+    var date: js.UndefOr[js.Any] = js.undefined
     
-    var defaultDate: js.UndefOr[js.Any] = js.native
+    var defaultDate: js.UndefOr[js.Any] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var formatDay: js.UndefOr[js.Function2[/* day */ Double, /* date */ js.UndefOr[js.Any], _]] = js.native
+    var formatDay: js.UndefOr[js.Function2[/* day */ Double, /* date */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var formatMonth: js.UndefOr[js.Function2[/* month */ Double, /* date */ js.UndefOr[js.Any], _]] = js.native
+    var formatMonth: js.UndefOr[js.Function2[/* month */ Double, /* date */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var locale: js.UndefOr[js.Any] = js.native
+    var locale: js.UndefOr[js.Any] = js.undefined
     
-    var maxDate: js.UndefOr[js.Any] = js.native
+    var maxDate: js.UndefOr[js.Any] = js.undefined
     
-    var minDate: js.UndefOr[js.Any] = js.native
+    var minDate: js.UndefOr[js.Any] = js.undefined
     
-    var minuteStep: js.UndefOr[Double] = js.native
+    var minuteStep: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var onDateChange: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.native
+    var onDateChange: js.UndefOr[js.Function1[/* date */ js.Any, Unit]] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function3[/* date */ js.Any, /* vals */ js.Any, /* index */ Double, Unit]] = js.native
+    var onScrollChange: js.UndefOr[js.Function3[/* date */ js.Any, /* vals */ js.Any, /* index */ Double, Unit]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function2[/* vals */ js.Any, /* index */ Double, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function2[/* vals */ js.Any, /* index */ Double, Unit]] = js.undefined
     
-    var rootNativeProps: js.UndefOr[js.Object] = js.native
+    var rootNativeProps: js.UndefOr[js.Object] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var use12Hours: js.UndefOr[Boolean] = js.native
+    var use12Hours: js.UndefOr[Boolean] = js.undefined
   }
   object DatePickerProps {
     
@@ -76,13 +74,13 @@ object datePickerPropsMod {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setFormatDay(value: (/* day */ Double, /* date */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "formatDay", js.Any.fromFunction2(value))
+      def setFormatDay(value: (/* day */ Double, /* date */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "formatDay", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFormatDayUndefined: Self = StObject.set(x, "formatDay", js.undefined)
       
       @scala.inline
-      def setFormatMonth(value: (/* month */ Double, /* date */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "formatMonth", js.Any.fromFunction2(value))
+      def setFormatMonth(value: (/* month */ Double, /* date */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "formatMonth", js.Any.fromFunction2(value))
       
       @scala.inline
       def setFormatMonthUndefined: Self = StObject.set(x, "formatMonth", js.undefined)

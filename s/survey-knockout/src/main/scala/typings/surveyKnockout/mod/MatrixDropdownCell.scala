@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "MatrixDropdownCell")
@@ -22,7 +21,7 @@ class MatrixDropdownCell protected () extends StObject {
   
   var row: MatrixDropdownRowModelBase = js.native
   
-  def runCondition(values: HashTable[_], properties: HashTable[_]): Unit = js.native
+  def runCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): Unit = js.native
   
   var value: js.Any = js.native
 }

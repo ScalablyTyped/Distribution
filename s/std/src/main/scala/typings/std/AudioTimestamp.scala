@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioTimestamp extends StObject {
   
-  var contextTime: js.UndefOr[Double] = js.native
+  var contextTime: js.UndefOr[Double] = js.undefined
   
-  var performanceTime: js.UndefOr[Double] = js.native
+  var performanceTime: js.UndefOr[Double] = js.undefined
 }
 object AudioTimestamp {
   

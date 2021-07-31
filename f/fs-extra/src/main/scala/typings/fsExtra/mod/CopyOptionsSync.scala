@@ -2,14 +2,14 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CopyOptionsSync extends CopyOptions {
+trait CopyOptionsSync
+  extends StObject
+     with CopyOptions {
   
   @JSName("filter")
-  var filter_CopyOptionsSync: js.UndefOr[CopyFilterSync] = js.native
+  var filter_CopyOptionsSync: js.UndefOr[CopyFilterSync] = js.undefined
 }
 object CopyOptionsSync {
   

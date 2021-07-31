@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait LoadIndicator extends StObject
 object LoadIndicator extends StObject {
   
   @js.native
-  sealed trait NONE extends LoadIndicator
+  sealed trait NONE
+    extends StObject
+       with LoadIndicator
   
   @js.native
-  sealed trait SPINNER extends LoadIndicator
+  sealed trait SPINNER
+    extends StObject
+       with LoadIndicator
 }

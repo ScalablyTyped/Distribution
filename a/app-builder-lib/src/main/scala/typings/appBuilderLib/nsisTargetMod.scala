@@ -9,7 +9,6 @@ import typings.builderUtilRuntime.updateInfoMod.PackageFileInfo
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nsisTargetMod {
@@ -35,7 +34,7 @@ object nsisTargetMod {
     
     var computeVersionKey: js.Any = js.native
     
-    /* protected */ def configureDefines(oneClick: Boolean, defines: js.Any): js.Promise[_] = js.native
+    /* protected */ def configureDefines(oneClick: Boolean, defines: js.Any): js.Promise[js.Any] = js.native
     
     var configureDefinesForAllTypeOfInstaller: js.Any = js.native
     

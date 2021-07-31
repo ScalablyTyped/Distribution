@@ -5,7 +5,6 @@ import typings.gatsbyImage.mod.GatsbyImageProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withIEPolyfillMod {
@@ -17,5 +16,5 @@ object withIEPolyfillMod {
   
   type GatsbyImageWithIEPolyfill = Component[GatsbyImageWithIEPolyfillProps, js.Object, js.Any]
   
-  type GatsbyImageWithIEPolyfillProps = GatsbyImageProps with ObjectFit
+  type GatsbyImageWithIEPolyfillProps = GatsbyImageProps & ObjectFit
 }

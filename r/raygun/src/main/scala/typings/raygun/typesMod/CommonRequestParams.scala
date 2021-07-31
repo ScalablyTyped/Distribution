@@ -2,23 +2,21 @@ package typings.raygun.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonRequestParams extends StObject {
   
-  var body: js.Object = js.native
+  var body: js.Object
   
-  var headers: js.Object = js.native
+  var headers: js.Object
   
-  var ip: String = js.native
+  var ip: String
   
-  var method: String = js.native
+  var method: String
   
-  var path: String = js.native
+  var path: String
   
-  var query: js.Object = js.native
+  var query: js.Object
 }
 object CommonRequestParams {
   

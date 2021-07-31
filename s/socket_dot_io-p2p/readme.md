@@ -12,7 +12,7 @@ WebRTC data channel communication with a socket.io-like API
 | Keywords           | webrtc, peer-to-peer |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 10132 |
+| # downloads        | 8354 |
 | # stars            | 6 |
 
 ## Links

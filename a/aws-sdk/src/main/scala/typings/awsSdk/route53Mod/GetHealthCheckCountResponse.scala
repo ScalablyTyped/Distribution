@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHealthCheckCountResponse extends StObject {
   
   /**
     * The number of health checks associated with the current AWS account.
     */
-  var HealthCheckCount: typings.awsSdk.route53Mod.HealthCheckCount = js.native
+  var HealthCheckCount: typings.awsSdk.route53Mod.HealthCheckCount
 }
 object GetHealthCheckCountResponse {
   

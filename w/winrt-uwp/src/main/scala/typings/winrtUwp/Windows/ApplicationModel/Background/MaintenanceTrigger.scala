@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a maintenance trigger. */
-@js.native
 trait MaintenanceTrigger extends StObject {
   
   /** Gets the interval of a maintenance trigger. */
-  var freshnessTime: Double = js.native
+  var freshnessTime: Double
   
   /** Gets whether the maintenance trigger is used only once or each time the FreshnessTime interval elapses. */
-  var oneShot: Boolean = js.native
+  var oneShot: Boolean
 }
 object MaintenanceTrigger {
   

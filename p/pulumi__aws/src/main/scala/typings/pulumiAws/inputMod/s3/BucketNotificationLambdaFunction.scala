@@ -3,36 +3,34 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketNotificationLambdaFunction extends StObject {
   
   /**
     * Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
     */
-  var events: Input[js.Array[Input[String]]] = js.native
+  var events: Input[js.Array[Input[String]]]
   
   /**
     * Specifies object key name prefix.
     */
-  var filterPrefix: js.UndefOr[Input[String]] = js.native
+  var filterPrefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies object key name suffix.
     */
-  var filterSuffix: js.UndefOr[Input[String]] = js.native
+  var filterSuffix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies unique identifier for each of the notification configurations.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Specifies Amazon Lambda function ARN.
     */
-  var lambdaFunctionArn: js.UndefOr[Input[String]] = js.native
+  var lambdaFunctionArn: js.UndefOr[Input[String]] = js.undefined
 }
 object BucketNotificationLambdaFunction {
   

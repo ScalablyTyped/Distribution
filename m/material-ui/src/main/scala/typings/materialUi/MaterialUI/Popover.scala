@@ -8,7 +8,6 @@ import typings.react.mod.ComponentState
 import typings.react.mod.ReactInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Popover {
@@ -17,14 +16,15 @@ object Popover {
   
   type PopoverAnimationDefault = Component[PopoverAnimationDefaultProps, js.Object, js.Any]
   
-  @js.native
-  trait PopoverAnimationDefaultProps extends PopoverAnimationProps {
+  trait PopoverAnimationDefaultProps
+    extends StObject
+       with PopoverAnimationProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var targetOrigin: js.UndefOr[origin] = js.native
+    var targetOrigin: js.UndefOr[origin] = js.undefined
     
-    var zDepth: js.UndefOr[Double] = js.native
+    var zDepth: js.UndefOr[Double] = js.undefined
   }
   object PopoverAnimationDefaultProps {
     
@@ -57,12 +57,11 @@ object Popover {
     }
   }
   
-  @js.native
   trait PopoverAnimationProps extends StObject {
     
-    var open: Boolean = js.native
+    var open: Boolean
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object PopoverAnimationProps {
     
@@ -88,14 +87,15 @@ object Popover {
   
   type PopoverAnimationVertical = Component[PopoverAnimationVerticalProps, js.Object, js.Any]
   
-  @js.native
-  trait PopoverAnimationVerticalProps extends PopoverAnimationProps {
+  trait PopoverAnimationVerticalProps
+    extends StObject
+       with PopoverAnimationProps {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var targetOrigin: js.UndefOr[origin] = js.native
+    var targetOrigin: js.UndefOr[origin] = js.undefined
     
-    var zDepth: js.UndefOr[Double] = js.native
+    var zDepth: js.UndefOr[Double] = js.undefined
   }
   object PopoverAnimationVerticalProps {
     
@@ -128,34 +128,33 @@ object Popover {
     }
   }
   
-  @js.native
   trait PopoverProps extends StObject {
     
-    var anchorEl: js.UndefOr[ReactInstance] = js.native
+    var anchorEl: js.UndefOr[ReactInstance] = js.undefined
     
-    var anchorOrigin: js.UndefOr[origin] = js.native
+    var anchorOrigin: js.UndefOr[origin] = js.undefined
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.native
+    var animation: js.UndefOr[ComponentClass[PopoverAnimationProps, ComponentState]] = js.undefined
     
-    var autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.native
+    var autoCloseWhenOffScreen: js.UndefOr[Boolean] = js.undefined
     
-    var canAutoPosition: js.UndefOr[Boolean] = js.native
+    var canAutoPosition: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.native
+    var onRequestClose: js.UndefOr[js.Function1[/* reason */ String, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var targetOrigin: js.UndefOr[origin] = js.native
+    var targetOrigin: js.UndefOr[origin] = js.undefined
     
-    var useLayerForClickAway: js.UndefOr[Boolean] = js.native
+    var useLayerForClickAway: js.UndefOr[Boolean] = js.undefined
     
-    var zDepth: js.UndefOr[Double] = js.native
+    var zDepth: js.UndefOr[Double] = js.undefined
   }
   object PopoverProps {
     

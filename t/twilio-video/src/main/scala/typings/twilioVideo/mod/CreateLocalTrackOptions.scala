@@ -3,18 +3,18 @@ package typings.twilioVideo.mod
 import typings.std.MediaTrackConstraints
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreateLocalTrackOptions extends MediaTrackConstraints {
+trait CreateLocalTrackOptions
+  extends StObject
+     with MediaTrackConstraints {
   
   // In API reference logLevel is not optional, but in the Twilio examples it is
-  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.native
+  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var workaroundWebKitBug180748: js.UndefOr[Boolean] = js.native
+  var workaroundWebKitBug180748: js.UndefOr[Boolean] = js.undefined
 }
 object CreateLocalTrackOptions {
   

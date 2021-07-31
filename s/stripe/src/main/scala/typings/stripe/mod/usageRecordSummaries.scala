@@ -4,7 +4,6 @@ import typings.stripe.mod.invoices.IPeriod
 import typings.stripe.stripeStrings.list
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usageRecordSummaries {
@@ -14,18 +13,19 @@ object usageRecordSummaries {
     * starting after summary starting_after. Each entry in the array is a separate summary object.
     * If no more summaries are available, the resulting array is empty.
     */
-  @js.native
-  trait IUsageRecordSummaries extends IList[IUsageRecordSummariesItem] {
+  trait IUsageRecordSummaries
+    extends StObject
+       with IList[IUsageRecordSummariesItem] {
     
     @JSName("object")
-    var object_IUsageRecordSummaries: list = js.native
+    var object_IUsageRecordSummaries: list
   }
   object IUsageRecordSummaries {
     
     @scala.inline
-    def apply(data: js.Array[IUsageRecordSummariesItem], has_more: Boolean, `object`: list, url: String): IUsageRecordSummaries = {
+    def apply(data: js.Array[IUsageRecordSummariesItem], has_more: Boolean, url: String): IUsageRecordSummaries = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], has_more = has_more.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("list")
       __obj.asInstanceOf[IUsageRecordSummaries]
     }
     
@@ -37,22 +37,21 @@ object usageRecordSummaries {
     }
   }
   
-  @js.native
   trait IUsageRecordSummariesItem extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var invoice: String = js.native
+    var invoice: String
     
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
-    var `object`: String = js.native
+    var `object`: String
     
-    var period: IPeriod = js.native
+    var period: IPeriod
     
-    var subscription_item: String = js.native
+    var subscription_item: String
     
-    var total_usage: Double = js.native
+    var total_usage: Double
   }
   object IUsageRecordSummariesItem {
     

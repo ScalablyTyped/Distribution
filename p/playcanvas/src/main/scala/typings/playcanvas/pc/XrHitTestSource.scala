@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param transient - True if XRHitTestSource created for input source profile.
   */
 @js.native
-trait XrHitTestSource extends EventHandler {
+trait XrHitTestSource
+  extends StObject
+     with EventHandler {
   
   /**
     * Stop and remove hit test source.

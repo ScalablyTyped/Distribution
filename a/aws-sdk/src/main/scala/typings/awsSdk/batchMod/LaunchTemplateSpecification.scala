@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateSpecification extends StObject {
   
   /**
     * The ID of the launch template.
     */
-  var launchTemplateId: js.UndefOr[String] = js.native
+  var launchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the launch template.
     */
-  var launchTemplateName: js.UndefOr[String] = js.native
+  var launchTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the launch template, $Latest, or $Default. If the value is $Latest, the latest version of the launch template is used. If the value is $Default, the default version of the launch template is used. Default: $Default.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object LaunchTemplateSpecification {
   

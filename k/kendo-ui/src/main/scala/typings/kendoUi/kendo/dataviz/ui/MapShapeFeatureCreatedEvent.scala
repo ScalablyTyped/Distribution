@@ -4,19 +4,19 @@ import typings.kendoUi.kendo.dataviz.map.layer.Shape
 import typings.kendoUi.kendo.drawing.Group
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapShapeFeatureCreatedEvent extends MapEvent {
+trait MapShapeFeatureCreatedEvent
+  extends StObject
+     with MapEvent {
   
-  var dataItem: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.undefined
   
-  var group: js.UndefOr[Group] = js.native
+  var group: js.UndefOr[Group] = js.undefined
   
-  var layer: js.UndefOr[Shape] = js.native
+  var layer: js.UndefOr[Shape] = js.undefined
   
-  var properties: js.UndefOr[js.Any] = js.native
+  var properties: js.UndefOr[js.Any] = js.undefined
 }
 object MapShapeFeatureCreatedEvent {
   

@@ -4,22 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("combine-reducers", JSImport.Default)
+  @JSImport("combine-reducers", JSImport.Namespace)
   @js.native
-  def default[S](reducers: ReducersMapObject[S, _]): Reducer[S, AnyAction] = js.native
-  @JSImport("combine-reducers", JSImport.Default)
-  @js.native
-  def default_SA_ActionWildcard[S, A /* <: Action[_] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[S](reducers: ReducersMapObject[S, js.Any]): Reducer[S, AnyAction] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, AnyAction]]
+  
+  @scala.inline
+  def default_SA_ActionAny[S, A /* <: Action[js.Any] */](reducers: ReducersMapObject[S, A]): Reducer[S, A] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(reducers.asInstanceOf[js.Any]).asInstanceOf[Reducer[S, A]]
+  
   trait Action[T] extends StObject {
     
-    var `type`: T = js.native
+    var `type`: T
   }
   object Action {
     
@@ -31,16 +32,16 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], T] (val x: Self with Action[T]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: T): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait AnyAction
-    extends Action[js.Any]
+    extends StObject
+       with Action[js.Any]
        with // Allows any extra properties to be defined in an action.
   /* extraProps */ StringDictionary[js.Any]
   object AnyAction {
@@ -53,9 +54,9 @@ object mod {
     }
   }
   
-  type Reducer[S, A /* <: Action[_] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
+  type Reducer[S, A /* <: Action[js.Any] */] = js.Function2[/* state */ js.UndefOr[S], /* action */ A, S]
   
-  type ReducersMapObject[S, A /* <: Action[_] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type ReducersMapObject[S, A /* <: Action[js.Any] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: combine-reducers.combine-reducers.Reducer<S[K], A>}
-    */ typings.combineReducers.combineReducersStrings.ReducersMapObject with TopLevel[S]
+    */ typings.combineReducers.combineReducersStrings.ReducersMapObject & TopLevel[S]
 }

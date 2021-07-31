@@ -6,7 +6,6 @@ import typings.heremaps.H.service.Platform.DefaultLayersOptions
 import typings.heremaps.H.service.metaInfo.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -143,22 +142,21 @@ object Platform {
     * @property crossOrigin {(string | boolean=)} - indicates if CORS headers should be used for default layers, if false is specified, CORS headers are not set, defaults to 'anonymous'.
     * Be aware that storing of content is not possible if crossOrigin is not set to true (see H.Map#storeContent).
     */
-  @js.native
   trait DefaultLayersOptions extends StObject {
     
-    var crossOrigin: js.UndefOr[String | Boolean] = js.native
+    var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
     
-    var lg: js.UndefOr[String] = js.native
+    var lg: js.UndefOr[String] = js.undefined
     
-    var lg2: js.UndefOr[String] = js.native
+    var lg2: js.UndefOr[String] = js.undefined
     
-    var pois: js.UndefOr[Boolean] = js.native
+    var pois: js.UndefOr[Boolean] = js.undefined
     
-    var ppi: js.UndefOr[Double] = js.native
+    var ppi: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var tileSize: js.UndefOr[Double] = js.native
+    var tileSize: js.UndefOr[Double] = js.undefined
   }
   object DefaultLayersOptions {
     
@@ -218,15 +216,15 @@ object Platform {
   /**
     * pre-configured set of HERE tile layers for convenient use with the map.
     */
-  @js.native
   trait MapTypes
-    extends /* key */ StringDictionary[js.UndefOr[MapType]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[MapType]] {
     
-    var normal: js.UndefOr[MapType] = js.native
+    var normal: js.UndefOr[MapType] = js.undefined
     
-    var satellite: js.UndefOr[MapType] = js.native
+    var satellite: js.UndefOr[MapType] = js.undefined
     
-    var terrain: js.UndefOr[MapType] = js.native
+    var terrain: js.UndefOr[MapType] = js.undefined
   }
   object MapTypes {
     
@@ -266,16 +264,15 @@ object Platform {
     * @property useCIT {boolean=} - Indicates whether the Customer Integration Testing should be used, default is false
     * @property useHTTPS {boolean=} - Indicates whether secure communication should be used, default is false
     */
-  @js.native
   trait Options extends StObject {
     
-    var apikey: String = js.native
+    var apikey: String
     
-    var baseUrl: js.UndefOr[Url] = js.native
+    var baseUrl: js.UndefOr[Url] = js.undefined
     
-    var useCIT: js.UndefOr[Boolean] = js.native
+    var useCIT: js.UndefOr[Boolean] = js.undefined
     
-    var useHTTPS: js.UndefOr[Boolean] = js.native
+    var useHTTPS: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

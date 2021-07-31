@@ -3,31 +3,29 @@ package typings.durandal
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurandalRouteConfiguration extends StObject {
   
-  var hasChildRoutes: js.UndefOr[Boolean] = js.native
+  var hasChildRoutes: js.UndefOr[Boolean] = js.undefined
   
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   var isActive: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutComputed<boolean> */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var moduleId: js.UndefOr[String] = js.native
+  var moduleId: js.UndefOr[String] = js.undefined
   
-  var nav: js.UndefOr[js.Any] = js.native
+  var nav: js.UndefOr[js.Any] = js.undefined
   
-  var route: js.UndefOr[String | js.Array[String]] = js.native
+  var route: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var routePattern: js.UndefOr[RegExp] = js.native
+  var routePattern: js.UndefOr[RegExp] = js.undefined
   
-  var title: js.UndefOr[js.Any] = js.native
+  var title: js.UndefOr[js.Any] = js.undefined
   
-  var viewUrl: js.UndefOr[String] = js.native
+  var viewUrl: js.UndefOr[String] = js.undefined
 }
 object DurandalRouteConfiguration {
   

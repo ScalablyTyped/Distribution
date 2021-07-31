@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxCell...
   */
-@js.native
 trait INxCell extends StObject {
   
   /**
     * Attribute dimensions values.
     */
-  var qAttrDims: INxAttributeExpressionValues = js.native
+  var qAttrDims: INxAttributeExpressionValues
   
   /**
     * Attribute expression values.
     */
-  var qAttrExps: INxAttributeExpressionValues = js.native
+  var qAttrExps: INxAttributeExpressionValues
   
   /**
     * Rank number of the value, starting from 0.
@@ -32,31 +30,31 @@ trait INxCell extends StObject {
     * - 3: the cell belongs to the group Others.
     * - 4: the cell is empty. Applies to pivot tables.
     */
-  var qElemNumber: Double = js.native
+  var qElemNumber: Double
   
   /**
     * Frequency of the value.
     * This parameter is optional.
     */
-  var qFrequency: js.UndefOr[String] = js.native
+  var qFrequency: js.UndefOr[String] = js.undefined
   
   /**
     * Search hits.
     * The search hits are highlighted.
     * This parameter is optional.
     */
-  var qHighlightRanges: js.UndefOr[INxHighlightRanges] = js.native
+  var qHighlightRanges: js.UndefOr[INxHighlightRanges] = js.undefined
   
   /**
     * Is set to true, if qText and qNum are empty.
     * This parameter is optional. The default value is false.
     */
-  var qIsEmpty: js.UndefOr[Boolean] = js.native
+  var qIsEmpty: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is set to true if the value is Null.
     */
-  var qIsNull: Boolean = js.native
+  var qIsNull: Boolean
   
   /**
     * Is set to true if the cell belongs to the group Others.
@@ -64,20 +62,20 @@ trait INxCell extends StObject {
     * This parameter is optional. The default value is false.
     * Not applicable to list objects.
     */
-  var qIsOtherCell: js.UndefOr[Boolean] = js.native
+  var qIsOtherCell: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is set to true if a total is displayed in the cell.
     * This parameter is optional. The default value is false.
     * Not applicable to list objects.
     */
-  var qIsTotalCell: js.UndefOr[Boolean] = js.native
+  var qIsTotalCell: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value.
     * This parameter is optional.
     */
-  var qNum: js.UndefOr[Double] = js.native
+  var qNum: js.UndefOr[Double] = js.undefined
   
   /**
     * State of the value.
@@ -93,13 +91,13 @@ trait INxCell extends StObject {
     *               XS for eXcluded Selected
     *               XL for eXcluded Locked
     */
-  var qState: NxCellStateType = js.native
+  var qState: NxCellStateType
   
   /**
     * Some text.
     * This parameter is optional.
     */
-  var qText: js.UndefOr[String] = js.native
+  var qText: js.UndefOr[String] = js.undefined
 }
 object INxCell {
   

@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CatchClause extends AST {
+trait CatchClause
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
   
-  def structuralEquals(ast: CatchClause, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: CatchClause, includingPosition: Boolean): Boolean
   
-  var typeAnnotation: TypeAnnotation = js.native
+  var typeAnnotation: TypeAnnotation
 }
 object CatchClause {
   

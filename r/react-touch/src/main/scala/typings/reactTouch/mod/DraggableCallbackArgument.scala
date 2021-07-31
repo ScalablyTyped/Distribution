@@ -2,15 +2,15 @@ package typings.reactTouch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DraggableCallbackArgument extends DraggableStyle {
+trait DraggableCallbackArgument
+  extends StObject
+     with DraggableStyle {
   
-  var dx: Double = js.native
+  var dx: Double
   
-  var dy: Double = js.native
+  var dy: Double
 }
 object DraggableCallbackArgument {
   

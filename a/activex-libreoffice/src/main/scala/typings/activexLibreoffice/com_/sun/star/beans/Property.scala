@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.beans
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,32 +10,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * There are three types of properties: bound propertiesconstrained propertiesfree properties
   */
-@js.native
 trait Property extends StObject {
   
   /** This field may contain zero or more constants of the {@link PropertyAttribute} constants group. */
-  var Attributes: Double = js.native
+  var Attributes: Double
   
   /**
     * contains an implementation-specific handle for the property.
     *
     * It may be -1 if the implementation has no handle. You can use this handle to get values from the {@link XFastPropertySet} .
     */
-  var Handle: Double = js.native
+  var Handle: Double
   
   /**
     * specifies the name of the property.
     *
     * The name is unique within an {@link XPropertySet} . Upper and lower case are distinguished.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * contains an object that identifies the declared type for the property.
     *
     * If the property has multiple types or the type is not known, **but not an any** , then void must be returned.
     */
-  var Type: `type` = js.native
+  var Type: `type`
 }
 object Property {
   

@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The results of a successful `GET /v1/batches` request. */
-@js.native
 trait Batches extends StObject {
   
   /** A list of the status of all batch requests. */
-  var batches: js.UndefOr[js.Array[BatchStatus]] = js.native
+  var batches: js.UndefOr[js.Array[BatchStatus]] = js.undefined
 }
 object Batches {
   

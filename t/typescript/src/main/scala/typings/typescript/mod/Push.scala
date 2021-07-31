@@ -2,14 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Array that is only intended to be pushed to, never read. */
-@js.native
 trait Push[T] extends StObject {
   
-  def push(values: T*): Unit = js.native
+  def push(values: T*): Unit
 }
 object Push {
   
@@ -20,7 +18,7 @@ object Push {
   }
   
   @scala.inline
-  implicit class PushMutableBuilder[Self <: Push[_], T] (val x: Self with Push[T]) extends AnyVal {
+  implicit class PushMutableBuilder[Self <: Push[?], T] (val x: Self & Push[T]) extends AnyVal {
     
     @scala.inline
     def setPush(value: /* repeated */ T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))

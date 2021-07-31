@@ -2,14 +2,12 @@ package typings.semanticUiShape.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-shape.SemanticUI.Shape.ErrorSettings._Impl, 'side'> */
-@js.native
 trait PickImplside extends StObject {
   
-  var side: String = js.native
+  var side: String
 }
 object PickImplside {
   

@@ -18,88 +18,86 @@ import typings.semanticUiTab.semanticUiTabStrings.siblings
 import typings.semanticUiTab.semanticUiTabStrings.state
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, keyof semantic-ui-tab.SemanticUI.TabSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var alwaysRefresh: js.UndefOr[Boolean] = js.native
+  var alwaysRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var apiSettings: js.UndefOr[ApiSettings] = js.native
+  var apiSettings: js.UndefOr[ApiSettings] = js.undefined
   
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var cacheType: js.UndefOr[response | DOM | html] = js.native
+  var cacheType: js.UndefOr[response | DOM | html] = js.undefined
   
-  var childrenOnly: js.UndefOr[Boolean] = js.native
+  var childrenOnly: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var context: js.UndefOr[`false` | String | JQuery] = js.native
+  var context: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var deactivate: js.UndefOr[siblings | all] = js.native
+  var deactivate: js.UndefOr[siblings | all] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var evaluateScripts: js.UndefOr[once | Boolean] = js.native
+  var evaluateScripts: js.UndefOr[once | Boolean] = js.undefined
   
-  var history: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[Boolean] = js.undefined
   
-  var historyType: js.UndefOr[hash | state] = js.native
+  var historyType: js.UndefOr[hash | state] = js.undefined
   
-  var ignoreFirstLoad: js.UndefOr[Boolean] = js.native
+  var ignoreFirstLoad: js.UndefOr[Boolean] = js.undefined
   
-  var loadOnce: js.UndefOr[Boolean] = js.native
+  var loadOnce: js.UndefOr[Boolean] = js.undefined
   
-  var maxDepth: js.UndefOr[Double] = js.native
+  var maxDepth: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   var onFirstLoad: js.UndefOr[
     js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
-      /* parameterArray */ js.Array[_], 
+      /* parameterArray */ js.Array[js.Any], 
       /* historyEvent */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onLoad: js.UndefOr[
     js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
-      /* parameterArray */ js.Array[_], 
+      /* parameterArray */ js.Array[js.Any], 
       /* historyEvent */ js.Any, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var onRequest: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.native
+  var onRequest: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.undefined
   
-  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.native
+  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]] = js.undefined
   
-  var path: js.UndefOr[`false` | String] = js.native
+  var path: js.UndefOr[`false` | String] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var templates: js.UndefOr[TemplatesSettings] = js.native
+  var templates: js.UndefOr[TemplatesSettings] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   
@@ -237,7 +235,7 @@ object PartialPickImplkeyofImpl {
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
-          /* parameterArray */ js.Array[_], 
+          /* parameterArray */ js.Array[js.Any], 
           /* historyEvent */ js.Any, 
           Unit
         ]
@@ -251,7 +249,7 @@ object PartialPickImplkeyofImpl {
       value: js.ThisFunction3[
           /* this */ JQuery, 
           /* tabPath */ String, 
-          /* parameterArray */ js.Array[_], 
+          /* parameterArray */ js.Array[js.Any], 
           /* historyEvent */ js.Any, 
           Unit
         ]

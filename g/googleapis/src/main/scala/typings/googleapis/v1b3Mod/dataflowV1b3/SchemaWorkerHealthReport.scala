@@ -3,7 +3,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * VM should be identified by the labels attached to the WorkerMessage that
   * this health ping belongs to.
   */
-@js.native
 trait SchemaWorkerHealthReport extends StObject {
   
   /**
@@ -20,24 +18,24 @@ trait SchemaWorkerHealthReport extends StObject {
     * This field is used by the worker to send the status of the indvidual
     * containers running on each worker.
     */
-  var pods: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var pods: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
   /**
     * The interval at which the worker is sending health reports. The default
     * value of 0 should be interpreted as the field is not being explicitly set
     * by the worker.
     */
-  var reportInterval: js.UndefOr[String] = js.native
+  var reportInterval: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the VM is healthy.
     */
-  var vmIsHealthy: js.UndefOr[Boolean] = js.native
+  var vmIsHealthy: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The time the VM was booted.
     */
-  var vmStartupTime: js.UndefOr[String] = js.native
+  var vmStartupTime: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerHealthReport {
   
@@ -51,7 +49,7 @@ object SchemaWorkerHealthReport {
   implicit class SchemaWorkerHealthReportMutableBuilder[Self <: SchemaWorkerHealthReport] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setPods(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
+    def setPods(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "pods", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPodsUndefined: Self = StObject.set(x, "pods", js.undefined)

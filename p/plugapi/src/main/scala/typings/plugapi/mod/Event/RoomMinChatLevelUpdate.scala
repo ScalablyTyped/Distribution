@@ -3,17 +3,15 @@ package typings.plugapi.mod.Event
 import typings.plugapi.mod.User.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RoomMinChatLevelUpdate extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var level: Double = js.native
+  var level: Double
   
-  var user: User = js.native
+  var user: User
 }
 object RoomMinChatLevelUpdate {
   

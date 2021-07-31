@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata extends StObject {
   
   /** Operation create time. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** The ID of the request / operation. */
-  var operationName: js.UndefOr[String] = js.native
+  var operationName: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PurgeUserEventsMetadata {
   

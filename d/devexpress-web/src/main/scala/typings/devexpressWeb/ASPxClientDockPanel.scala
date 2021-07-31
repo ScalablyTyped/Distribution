@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ASPxDockPanel object.
   */
 @js.native
-trait ASPxClientDockPanel extends ASPxClientPopupControlBase {
+trait ASPxClientDockPanel
+  extends StObject
+     with ASPxClientPopupControlBase {
   
   /**
     * Fires on the client side after a panel is docked in a zone.
@@ -65,9 +66,9 @@ trait ASPxClientDockPanel extends ASPxClientPopupControlBase {
     * @param y An integer value that specifies the Y-coordinate of the panel's display position.
     */
   def MakeFloat(): Unit = js.native
-  def MakeFloat(x: js.UndefOr[scala.Nothing], y: Double): Unit = js.native
   def MakeFloat(x: Double): Unit = js.native
   def MakeFloat(x: Double, y: Double): Unit = js.native
+  def MakeFloat(x: Unit, y: Double): Unit = js.native
   
   /**
     * Sets a value specifying the position of the current panel, amongst the visible panels in a zone.

@@ -10,9 +10,9 @@ Tiny hashing module that uses the native crypto API in Node.js and the browser
 | ------------------ | :-------------: |
 | Full name          | crypto-hash |
 | Keywords           | crypto, hash, isomorphic, hashing, hasher, cryptography, sha1, sha256, sha384, sha512, browser |
-| # releases         | 7 |
-| # dependents       | 10 |
-| # downloads        | 178900 |
+| # releases         | 6 |
+| # dependents       | 14 |
+| # downloads        | 293096 |
 | # stars            | 0 |
 
 ## Links

@@ -8,14 +8,28 @@ import typings.phaser.anon.Name
 import typings.phaser.anon.Uses
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("MatterJS.Plugin")
 @js.native
 class Plugin ()
-  extends typings.phaser.MatterJS.Plugin
+  extends StObject
+     with typings.phaser.MatterJS.Plugin {
+  
+  /* CompleteClass */
+  override def install(): Unit = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
+  
+  /* CompleteClass */
+  var version: String = js.native
+}
 object Plugin {
+  
+  @JSGlobal("MatterJS.Plugin")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Recursively finds all of a module's dependencies and returns a flat dependency graph.
@@ -24,12 +38,10 @@ object Plugin {
     * @return {object} A dependency graph.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.dependencies")
-  @js.native
-  def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
-  @JSGlobal("MatterJS.Plugin.dependencies")
-  @js.native
-  def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = js.native
+  @scala.inline
+  def dependencies(module: Dependency): js.UndefOr[StringDictionary[js.Array[String]] | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(module.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[StringDictionary[js.Array[String]] | String]]
+  @scala.inline
+  def dependencies(module: Dependency, tracked: StringDictionary[js.Array[String]]): js.UndefOr[StringDictionary[js.Array[String]] | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("dependencies")(module.asInstanceOf[js.Any], tracked.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[StringDictionary[js.Array[String]] | String]]
   
   /**
     * Parses a dependency string into its components.
@@ -41,9 +53,8 @@ object Plugin {
     * @return {object} The dependency parsed into its components.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.dependencyParse")
-  @js.native
-  def dependencyParse(dependency: Dependency): Name = js.native
+  @scala.inline
+  def dependencyParse(dependency: Dependency): Name = ^.asInstanceOf[js.Dynamic].applyDynamic("dependencyParse")(dependency.asInstanceOf[js.Any]).asInstanceOf[Name]
   
   /**
     * Returns `true` if `plugin.for` is applicable to `module` by comparing against `module.name` and `module.version`.
@@ -55,9 +66,8 @@ object Plugin {
     * @return {boolean} `true` if `plugin.for` is applicable to `module`, otherwise `false`.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.isFor")
-  @js.native
-  def isFor(plugin: typings.phaser.MatterJS.Plugin, module: Dict): Boolean = js.native
+  @scala.inline
+  def isFor(plugin: typings.phaser.MatterJS.Plugin, module: Dict): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isFor")(plugin.asInstanceOf[js.Any], module.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Returns `true` if the object meets the minimum standard to be considered a plugin.
@@ -70,9 +80,8 @@ object Plugin {
     * @return {boolean} `true` if the object can be considered a plugin otherwise `false`.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.isPlugin")
-  @js.native
-  def isPlugin(obj: js.Object): Boolean = js.native
+  @scala.inline
+  def isPlugin(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlugin")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Registers a plugin object so it can be resolved later by name.
@@ -81,9 +90,8 @@ object Plugin {
     * @return {object} The plugin.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.register")
-  @js.native
-  def register(plugin: typings.phaser.MatterJS.Plugin): typings.phaser.MatterJS.Plugin = js.native
+  @scala.inline
+  def register(plugin: typings.phaser.MatterJS.Plugin): typings.phaser.MatterJS.Plugin = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Plugin]
   
   /**
     * Resolves a dependency to a plugin object from the registry if it exists. 
@@ -93,9 +101,8 @@ object Plugin {
     * @return {object} The plugin if resolved, otherwise `undefined`.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.resolve")
-  @js.native
-  def resolve(dependency: String): js.UndefOr[typings.phaser.MatterJS.Plugin] = js.native
+  @scala.inline
+  def resolve(dependency: String): js.UndefOr[typings.phaser.MatterJS.Plugin] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(dependency.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[typings.phaser.MatterJS.Plugin]]
   
   /**
     * Returns a pretty printed plugin name and version.
@@ -104,12 +111,10 @@ object Plugin {
     * @return {string} Pretty printed plugin name and version.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.toString")
-  @js.native
-  def toString_(plugin: String): String = js.native
-  @JSGlobal("MatterJS.Plugin.toString")
-  @js.native
-  def toString_(plugin: typings.phaser.MatterJS.Plugin): String = js.native
+  @scala.inline
+  def toString_(plugin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(plugin.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toString_(plugin: typings.phaser.MatterJS.Plugin): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(plugin.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Installs the plugins by calling `plugin.install` on each plugin specified in `plugins` if passed, otherwise `module.uses`.
@@ -128,9 +133,8 @@ object Plugin {
     * @param [plugins=module.uses] {} The plugins to install on module (optional, defaults to `module.uses`).
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.use")
-  @js.native
-  def use(module: Uses, plugins: js.Array[typings.phaser.MatterJS.Plugin | String]): Unit = js.native
+  @scala.inline
+  def use(module: Uses, plugins: js.Array[typings.phaser.MatterJS.Plugin | String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("use")(module.asInstanceOf[js.Any], plugins.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Parses a version string into its components.
@@ -147,9 +151,8 @@ object Plugin {
     * @return {object} The version range parsed into its components.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.versionParse")
-  @js.native
-  def versionParse(range: String): IsRange = js.native
+  @scala.inline
+  def versionParse(range: String): IsRange = ^.asInstanceOf[js.Dynamic].applyDynamic("versionParse")(range.asInstanceOf[js.Any]).asInstanceOf[IsRange]
   
   /**
     * Returns `true` if `version` satisfies the given `range`.
@@ -161,7 +164,6 @@ object Plugin {
     * @return {boolean} `true` if `version` satisfies `range`, otherwise `false`.
     */
   /* static member */
-  @JSGlobal("MatterJS.Plugin.versionSatisfies")
-  @js.native
-  def versionSatisfies(version: String, range: String): Boolean = js.native
+  @scala.inline
+  def versionSatisfies(version: String, range: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("versionSatisfies")(version.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

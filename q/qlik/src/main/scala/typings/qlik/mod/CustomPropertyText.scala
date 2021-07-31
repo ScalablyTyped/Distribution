@@ -3,21 +3,20 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyText
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: text = js.native
+  var component: text
 }
 object CustomPropertyText {
   
   @scala.inline
-  def apply(component: text): CustomPropertyText = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+  def apply(): CustomPropertyText = {
+    val __obj = js.Dynamic.literal(component = "text")
     __obj.asInstanceOf[CustomPropertyText]
   }
   

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This service is deprecated, instead please use the `Transformation` property of the service {@link Shape} .
   * @deprecated Deprecated
   */
-@js.native
 trait RotationDescriptor extends StObject {
   
   /**
@@ -21,13 +19,13 @@ trait RotationDescriptor extends StObject {
     * pointing down. Please use the `Transformation` property of the service {@link Shape} instead.
     * @deprecated Deprecated
     */
-  var RotateAngle: Double = js.native
+  var RotateAngle: Double
   
   /**
     * This is the amount of shearing for this {@link Shape} . The shape is sheared counter-clockwise around the center of the bounding box
     * @deprecated Deprecated
     */
-  var ShearAngle: Double = js.native
+  var ShearAngle: Double
 }
 object RotationDescriptor {
   

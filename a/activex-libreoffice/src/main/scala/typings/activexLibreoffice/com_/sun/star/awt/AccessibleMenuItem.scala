@@ -20,18 +20,17 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies accessibility support for a menu item.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleMenuItem
-  extends XAccessibleExtendedComponent
+  extends StObject
      with XAccessibleContext
      with XAccessibleEventBroadcaster
+     with XAccessibleExtendedComponent
      with XAccessibleText
      with XAccessibleAction
      with XAccessibleValue

@@ -10,9 +10,9 @@ GraphQL IDE for better development workflows (GraphQL Subscriptions, interactive
 | ------------------ | :-------------: |
 | Full name          | @apollographql/graphql-playground-html |
 | Keywords           | - |
-| # releases         | 14 |
-| # dependents       | 65 |
-| # downloads        | 31061110 |
+| # releases         | 11 |
+| # dependents       | 72 |
+| # downloads        | 41566476 |
 | # stars            | 0 |
 
 ## Links

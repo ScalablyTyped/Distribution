@@ -2,15 +2,13 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Server extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: String | Double = js.native
+  var port: String | Double
 }
 object Server {
   

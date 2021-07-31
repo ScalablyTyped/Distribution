@@ -2,18 +2,16 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   // Example: 'global'
-  var sequence: js.UndefOr[Double] = js.native
+  var sequence: js.UndefOr[Double] = js.undefined
   
-  var visibility: js.UndefOr[Boolean] = js.native
+  var visibility: js.UndefOr[Boolean] = js.undefined
 }
 object Location {
   

@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Referrer extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var referrer: String = js.native
+  var referrer: String
   
-  var uniques: Double = js.native
+  var uniques: Double
 }
 object Referrer {
   

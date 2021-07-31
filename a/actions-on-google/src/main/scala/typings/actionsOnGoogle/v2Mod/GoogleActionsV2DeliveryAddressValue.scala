@@ -2,22 +2,20 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2DeliveryAddressValue extends StObject {
   
   /**
     * Contains delivery address only when user agrees to share the delivery
     * address.
     */
-  var location: js.UndefOr[GoogleActionsV2Location] = js.native
+  var location: js.UndefOr[GoogleActionsV2Location] = js.undefined
   
   /**
     * User's decision regarding the request.
     */
-  var userDecision: js.UndefOr[GoogleActionsV2DeliveryAddressValueUserDecision] = js.native
+  var userDecision: js.UndefOr[GoogleActionsV2DeliveryAddressValueUserDecision] = js.undefined
 }
 object GoogleActionsV2DeliveryAddressValue {
   

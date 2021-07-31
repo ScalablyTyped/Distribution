@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.services
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,20 +22,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Section navigation and search, and maintain their state for the entire application lifetime
   *
   */
-@js.native
 trait INavigationService extends StObject {
   
   /**
     Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
     have to set an active tree and then sync, the new API does this in one method by using syncTreePath
     */
-  def _setActiveTreeType(treeAlias: String, loadChildren: Boolean): Unit = js.native
+  def _setActiveTreeType(treeAlias: String, loadChildren: Boolean): Unit
   
   /**
     Internal method that should ONLY be used by the legacy API wrapper, the legacy API used to
     have to set an active tree and then sync, the new API does this in one method by using syncTree
     */
-  def _syncPath(path: js.Array[String], forceReload: Boolean): Unit = js.native
+  def _syncPath(path: js.Array[String], forceReload: Boolean): Unit
   
   /**
     * @ngdoc method
@@ -49,10 +47,10 @@ trait INavigationService extends StObject {
     * and load the dashboard related to the section
     * @param {string} sectionAlias The alias of the section
     */
-  def changeSection(sectionAlias: String, force: Boolean): Unit = js.native
+  def changeSection(sectionAlias: String, force: Boolean): Unit
   
   /** Executes a given menu action */
-  def executeMenuAction(action: js.Any, node: js.Any, section: js.Any): Unit = js.native
+  def executeMenuAction(action: js.Any, node: js.Any, section: js.Any): Unit
   
   /**
     * @ngdoc method
@@ -62,7 +60,7 @@ trait INavigationService extends StObject {
     * @description
     * hides the currently open dialog
     */
-  def hideDialog(showMenu: Boolean): Unit = js.native
+  def hideDialog(showMenu: Boolean): Unit
   
   /**
     * @ngdoc method
@@ -72,7 +70,7 @@ trait INavigationService extends StObject {
     * @description
     * Hides the menu by hiding the containing dom element
     */
-  def hideMenu(): Unit = js.native
+  def hideMenu(): Unit
   
   /**
     * @ngdoc method
@@ -82,7 +80,7 @@ trait INavigationService extends StObject {
     * @description
     * hides any open navigation panes and resets the tree, actions and the currently selected node
     */
-  def hideNavigation(): Unit = js.native
+  def hideNavigation(): Unit
   
   /**
     * @ngdoc method
@@ -92,9 +90,9 @@ trait INavigationService extends StObject {
     * @description
     * hides the search pane
     */
-  def hideSearch(): Unit = js.native
+  def hideSearch(): Unit
   
-  def hideTray(): Unit = js.native
+  def hideTray(): Unit
   
   /**
     * @ngdoc method
@@ -104,7 +102,7 @@ trait INavigationService extends StObject {
     * @description
     * Hides the tree by hiding the containing dom element
     */
-  def hideTree(): Unit = js.native
+  def hideTree(): Unit
   
   /**
     * @ngdoc method
@@ -115,19 +113,19 @@ trait INavigationService extends StObject {
     * Shows the legacy iframe and loads in the content based on the source url
     * @param {String} source The URL to load into the iframe
     */
-  def loadLegacyIFrame(source: String): Unit = js.native
+  def loadLegacyIFrame(source: String): Unit
   
   //TODO: This should return a promise
-  def reloadNode(node: js.Any): Unit = js.native
+  def reloadNode(node: js.Any): Unit
   
   //TODO: This should return a promise
-  def reloadSection(sectionAlias: String): Unit = js.native
+  def reloadSection(sectionAlias: String): Unit
   
   /**
     Called to assign the main tree event handler - this is called by the navigation controller.
     TODO: Potentially another dev could call this which would kind of mung the whole app so potentially there's a better way.
     */
-  def setupTreeEvents(treeEventHandler: js.Any): Unit = js.native
+  def setupTreeEvents(treeEventHandler: js.Any): Unit
   
   /**
     * @ngdoc method
@@ -149,7 +147,7 @@ trait INavigationService extends StObject {
     * @param {Scope} args.scope current scope passed to the dialog
     * @param {Object} args.action the clicked action containing `name` and `alias`
     */
-  def showDialog(args: IShowDialogArgs): Unit = js.native
+  def showDialog(args: IShowDialogArgs): Unit
   
   /**
     * @ngdoc method
@@ -160,7 +158,7 @@ trait INavigationService extends StObject {
     * Opens the user dialog, next to the sections navigation
     * template is located in views/common/dialogs/user.html
     */
-  def showHelpDialog(): Unit = js.native
+  def showHelpDialog(): Unit
   
   /**
     * @ngdoc method
@@ -173,7 +171,7 @@ trait INavigationService extends StObject {
     *
     * @param {Event} event the click event triggering the method, passed from the DOM element
     */
-  def showMenu(event: Event, args: js.Any*): Unit = js.native
+  def showMenu(event: Event, args: js.Any*): Unit
   
   /**
     * @ngdoc method
@@ -183,9 +181,9 @@ trait INavigationService extends StObject {
     * @description
     * shows the search pane
     */
-  def showSearch(): Unit = js.native
+  def showSearch(): Unit
   
-  def showTray(): Unit = js.native
+  def showTray(): Unit
   
   /**
     * @ngdoc method
@@ -198,7 +196,7 @@ trait INavigationService extends StObject {
     * @param {string} sectionAlias The alias of the section to load
     * @param {Object} syncArgs Optional object of arguments for syncing the tree for the section being shown
     */
-  def showTree(sectionAlias: String, syncArgs: ISyncTreeArgs): Unit = js.native
+  def showTree(sectionAlias: String, syncArgs: ISyncTreeArgs): Unit
   
   /**
     * @ngdoc method
@@ -209,7 +207,7 @@ trait INavigationService extends StObject {
     * Opens the user dialog, next to the sections navigation
     * template is located in views/common/dialogs/user.html
     */
-  def showUserDialog(): Unit = js.native
+  def showUserDialog(): Unit
   
   /**
     * @ngdoc method
@@ -229,7 +227,7 @@ trait INavigationService extends StObject {
     * @param {Boolean} args.forceReload optional, specifies whether to force reload the node data from the server even if it already exists in the tree currently
     * @param {Boolean} args.activate optional, specifies whether to set the synced node to be the active node, this will default to true if not specified
     */
-  def syncTree(args: ISyncTreeArgs): js.Any = js.native
+  def syncTree(args: ISyncTreeArgs): js.Any
 }
 object INavigationService {
   

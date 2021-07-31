@@ -42,7 +42,6 @@ import typings.std.MouseEvent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {
@@ -162,39 +161,31 @@ object treeMod {
     }
     
     /* static member */
-    @JSImport("rc-tree/es/Tree", "default.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: TreeProps, prevState: TreeState): PartialTreeState = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: TreeProps, prevState: TreeState): PartialTreeState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[PartialTreeState]
   }
   
-  @js.native
   trait CheckInfo extends StObject {
     
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var checkedNodes: js.Array[DataNode] = js.native
+    var checkedNodes: js.Array[DataNode]
     
-    var checkedNodesPositions: js.UndefOr[js.Array[Pos]] = js.native
+    var checkedNodesPositions: js.UndefOr[js.Array[Pos]] = js.undefined
     
-    var event: check = js.native
+    var event: check
     
-    var halfCheckedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var halfCheckedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var nativeEvent: MouseEvent = js.native
+    var nativeEvent: MouseEvent
     
-    var node: EventDataNode = js.native
+    var node: EventDataNode
   }
   object CheckInfo {
     
     @scala.inline
-    def apply(
-      checked: Boolean,
-      checkedNodes: js.Array[DataNode],
-      event: check,
-      nativeEvent: MouseEvent,
-      node: EventDataNode
-    ): CheckInfo = {
-      val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], checkedNodes = checkedNodes.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
+    def apply(checked: Boolean, checkedNodes: js.Array[DataNode], nativeEvent: MouseEvent, node: EventDataNode): CheckInfo = {
+      val __obj = js.Dynamic.literal(checked = checked.asInstanceOf[js.Any], checkedNodes = checkedNodes.asInstanceOf[js.Any], event = "check", nativeEvent = nativeEvent.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any])
       __obj.asInstanceOf[CheckInfo]
     }
     
@@ -307,7 +298,7 @@ object treeMod {
     
     def onNodeExpand(e: typings.react.mod.MouseEvent[HTMLDivElement, NativeMouseEvent], treeNode: EventDataNode): Unit = js.native
     
-    def onNodeLoad(treeNode: EventDataNode): js.Promise[_] = js.native
+    def onNodeLoad(treeNode: EventDataNode): js.Promise[js.Any] = js.native
     
     var onNodeMouseEnter: NodeMouseEventHandler[HTMLSpanElement] = js.native
     
@@ -324,125 +315,124 @@ object treeMod {
       * Only update the value which is not in props
       */
     def setUncontrolledState(state: PartialTreeState): Unit = js.native
-    def setUncontrolledState(state: PartialTreeState, atomic: js.UndefOr[scala.Nothing], forceState: PartialTreeState): Unit = js.native
     def setUncontrolledState(state: PartialTreeState, atomic: Boolean): Unit = js.native
     def setUncontrolledState(state: PartialTreeState, atomic: Boolean, forceState: PartialTreeState): Unit = js.native
+    def setUncontrolledState(state: PartialTreeState, atomic: Unit, forceState: PartialTreeState): Unit = js.native
   }
   
-  @js.native
   trait TreeProps extends StObject {
     
-    var autoExpandParent: js.UndefOr[Boolean] = js.native
+    var autoExpandParent: js.UndefOr[Boolean] = js.undefined
     
-    var checkStrictly: js.UndefOr[Boolean] = js.native
+    var checkStrictly: js.UndefOr[Boolean] = js.undefined
     
-    var checkable: js.UndefOr[Boolean | ReactNode] = js.native
+    var checkable: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var checkedKeys: js.UndefOr[js.Array[Key] | Checked] = js.native
+    var checkedKeys: js.UndefOr[js.Array[Key] | Checked] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultCheckedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultCheckedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var defaultExpandAll: js.UndefOr[Boolean] = js.native
+    var defaultExpandAll: js.UndefOr[Boolean] = js.undefined
     
-    var defaultExpandParent: js.UndefOr[Boolean] = js.native
+    var defaultExpandParent: js.UndefOr[Boolean] = js.undefined
     
-    var defaultExpandedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultExpandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var defaultSelectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var defaultSelectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var expandedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var expandedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var filterTreeNode: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, Boolean]] = js.native
+    var filterTreeNode: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, Boolean]] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var icon: js.UndefOr[IconType] = js.native
+    var icon: js.UndefOr[IconType] = js.undefined
     
-    var itemHeight: js.UndefOr[Double] = js.native
+    var itemHeight: js.UndefOr[Double] = js.undefined
     
-    var loadData: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, js.Promise[Unit]]] = js.native
+    var loadData: js.UndefOr[js.Function1[/* treeNode */ EventDataNode, js.Promise[Unit]]] = js.undefined
     
-    var loadedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var loadedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var motion: js.UndefOr[js.Any] = js.native
+    var motion: js.UndefOr[js.Any] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used for `rc-tree-select` only.
       * Do not use in your production code directly since this will be refactor.
       */
-    var onActiveChange: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.native
+    var onActiveChange: js.UndefOr[js.Function1[/* key */ Key, Unit]] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onCheck: js.UndefOr[js.Function2[/* checked */ Checked | js.Array[Key], /* info */ CheckInfo, Unit]] = js.native
+    var onCheck: js.UndefOr[js.Function2[/* checked */ Checked | js.Array[Key], /* info */ CheckInfo, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.native
+    var onClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onContextMenu: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onDoubleClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.native
+    var onDoubleClick: js.UndefOr[NodeMouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onDragEnd: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragEnter: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDi, Unit]] = js.native
+    var onDragEnter: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDi, Unit]] = js.undefined
     
-    var onDragLeave: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragLeave: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragOver: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragOver: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDragStart: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* info */ NodeDragEventParams[HTMLDivElement], Unit]] = js.undefined
     
-    var onDrop: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDiDragNode, Unit]] = js.native
+    var onDrop: js.UndefOr[js.Function1[/* info */ NodeDragEventParamsHTMLDiDragNode, Unit]] = js.undefined
     
-    var onExpand: js.UndefOr[js.Function2[/* expandedKeys */ js.Array[Key], /* info */ Expanded, Unit]] = js.native
+    var onExpand: js.UndefOr[js.Function2[/* expandedKeys */ js.Array[Key], /* info */ Expanded, Unit]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLDivElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function2[/* loadedKeys */ js.Array[Key], /* info */ Node, Unit]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.native
+    var onMouseEnter: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.native
+    var onMouseLeave: js.UndefOr[js.Function1[/* info */ NodeMouseEventParams[HTMLSpanElement], Unit]] = js.undefined
     
-    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode, Unit]] = js.native
+    var onRightClick: js.UndefOr[js.Function1[/* info */ EventNode, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function2[/* selectedKeys */ js.Array[Key], /* info */ Event, Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function2[/* selectedKeys */ js.Array[Key], /* info */ Event, Unit]] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var selectable: js.UndefOr[Boolean] = js.native
+    var selectable: js.UndefOr[Boolean] = js.undefined
     
-    var selectedKeys: js.UndefOr[js.Array[Key]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[Key]] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var showLine: js.UndefOr[Boolean] = js.native
+    var showLine: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var switcherIcon: js.UndefOr[IconType] = js.native
+    var switcherIcon: js.UndefOr[IconType] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.native
+    var titleRender: js.UndefOr[js.Function1[/* node */ DataNode, ReactNode]] = js.undefined
     
-    var treeData: js.UndefOr[js.Array[DataNode]] = js.native
+    var treeData: js.UndefOr[js.Array[DataNode]] = js.undefined
     
-    var virtual: js.UndefOr[Boolean] = js.native
+    var virtual: js.UndefOr[Boolean] = js.undefined
   }
   object TreeProps {
     
@@ -812,42 +802,41 @@ object treeMod {
     }
   }
   
-  @js.native
   trait TreeState extends StObject {
     
-    var activeKey: Key = js.native
+    var activeKey: Key
     
-    var checkedKeys: js.Array[Key] = js.native
+    var checkedKeys: js.Array[Key]
     
-    var dragNodesKeys: js.Array[Key] = js.native
+    var dragNodesKeys: js.Array[Key]
     
-    var dragOverNodeKey: Key = js.native
+    var dragOverNodeKey: Key
     
-    var dragging: Boolean = js.native
+    var dragging: Boolean
     
-    var dropPosition: Double = js.native
+    var dropPosition: Double
     
-    var expandedKeys: js.Array[Key] = js.native
+    var expandedKeys: js.Array[Key]
     
-    var flattenNodes: js.Array[FlattenNode] = js.native
+    var flattenNodes: js.Array[FlattenNode]
     
-    var focused: Boolean = js.native
+    var focused: Boolean
     
-    var halfCheckedKeys: js.Array[Key] = js.native
+    var halfCheckedKeys: js.Array[Key]
     
-    var keyEntities: Record[Key, DataEntity] = js.native
+    var keyEntities: Record[Key, DataEntity]
     
-    var listChanging: Boolean = js.native
+    var listChanging: Boolean
     
-    var loadedKeys: js.Array[Key] = js.native
+    var loadedKeys: js.Array[Key]
     
-    var loadingKeys: js.Array[Key] = js.native
+    var loadingKeys: js.Array[Key]
     
-    var prevProps: TreeProps = js.native
+    var prevProps: TreeProps
     
-    var selectedKeys: js.Array[Key] = js.native
+    var selectedKeys: js.Array[Key]
     
-    var treeData: js.Array[DataNode] = js.native
+    var treeData: js.Array[DataNode]
   }
   object TreeState {
     

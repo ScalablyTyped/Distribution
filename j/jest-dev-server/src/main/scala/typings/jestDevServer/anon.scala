@@ -6,48 +6,46 @@ import typings.waitOn.mod.ValidateStatus
 import typings.waitOn.mod.WaitOnAuth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<wait-on.wait-on.WaitOnOptions> */
-  @js.native
   trait PartialWaitOnOptions extends StObject {
     
-    var auth: js.UndefOr[WaitOnAuth] = js.native
+    var auth: js.UndefOr[WaitOnAuth] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var followRedirect: js.UndefOr[Boolean] = js.native
+    var followRedirect: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var httpTimeout: js.UndefOr[Double] = js.native
+    var httpTimeout: js.UndefOr[Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[Boolean] = js.native
+    var log: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[AxiosProxyConfig] = js.native
+    var proxy: js.UndefOr[AxiosProxyConfig] = js.undefined
     
-    var resources: js.UndefOr[js.Array[String]] = js.native
+    var resources: js.UndefOr[js.Array[String]] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var simultaneous: js.UndefOr[Double] = js.native
+    var simultaneous: js.UndefOr[Double] = js.undefined
     
-    var strictSSL: js.UndefOr[Boolean] = js.native
+    var strictSSL: js.UndefOr[Boolean] = js.undefined
     
-    var tcpTimeout: js.UndefOr[Double] = js.native
+    var tcpTimeout: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var validateStatus: js.UndefOr[ValidateStatus] = js.native
+    var validateStatus: js.UndefOr[ValidateStatus] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var window: js.UndefOr[Double] = js.native
+    var window: js.UndefOr[Double] = js.undefined
   }
   object PartialWaitOnOptions {
     
@@ -79,7 +77,7 @@ object anon {
       def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)

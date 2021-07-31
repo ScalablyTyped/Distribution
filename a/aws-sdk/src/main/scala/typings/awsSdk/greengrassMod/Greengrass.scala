@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait Greengrass extends Service {
   ): Request[AssociateServiceRoleToAccountResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Greengrass: ConfigBase with ClientConfiguration = js.native
+  var config_Greengrass: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a connector definition. You may provide the initial version of the connector definition now or use ''CreateConnectorDefinitionVersion'' at a later time.

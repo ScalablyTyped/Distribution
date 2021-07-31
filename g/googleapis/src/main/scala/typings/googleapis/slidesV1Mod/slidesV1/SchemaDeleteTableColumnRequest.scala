@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a column from a table.
   */
-@js.native
 trait SchemaDeleteTableColumnRequest extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaDeleteTableColumnRequest extends StObject {
     * multiple columns will be deleted. If no columns remain in the table after
     * this deletion, the whole table is deleted.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The table to delete columns from.
     */
-  var tableObjectId: js.UndefOr[String] = js.native
+  var tableObjectId: js.UndefOr[String] = js.undefined
 }
 object SchemaDeleteTableColumnRequest {
   

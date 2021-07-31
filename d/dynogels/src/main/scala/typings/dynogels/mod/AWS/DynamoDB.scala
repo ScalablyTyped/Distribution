@@ -8,7 +8,6 @@ import typings.awsSdk.dynamodbMod.AttributeValue
 import typings.awsSdk.dynamodbMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.DynamoDB")
@@ -29,33 +28,29 @@ object DynamoDB {
   /* static members */
   object Converter {
     
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.input")
+    @JSImport("dynogels", "AWS.DynamoDB.Converter")
     @js.native
-    def input(data: js.Any): AttributeValue = js.native
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.input")
-    @js.native
-    def input(data: js.Any, options: ConverterOptions): AttributeValue = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.marshall")
-    @js.native
-    def marshall(data: StringDictionary[js.Any]): AttributeMap = js.native
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.marshall")
-    @js.native
-    def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = js.native
+    @scala.inline
+    def input(data: js.Any): AttributeValue = ^.asInstanceOf[js.Dynamic].applyDynamic("input")(data.asInstanceOf[js.Any]).asInstanceOf[AttributeValue]
+    @scala.inline
+    def input(data: js.Any, options: ConverterOptions): AttributeValue = (^.asInstanceOf[js.Dynamic].applyDynamic("input")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AttributeValue]
     
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.output")
-    @js.native
-    def output(data: AttributeValue): js.Any = js.native
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.output")
-    @js.native
-    def output(data: AttributeValue, options: ConverterOptions): js.Any = js.native
+    @scala.inline
+    def marshall(data: StringDictionary[js.Any]): AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(data.asInstanceOf[js.Any]).asInstanceOf[AttributeMap]
+    @scala.inline
+    def marshall(data: StringDictionary[js.Any], options: ConverterOptions): AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("marshall")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AttributeMap]
     
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.unmarshall")
-    @js.native
-    def unmarshall(data: AttributeMap): StringDictionary[js.Any] = js.native
-    @JSImport("dynogels", "AWS.DynamoDB.Converter.unmarshall")
-    @js.native
-    def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def output(data: AttributeValue): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("output")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def output(data: AttributeValue, options: ConverterOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("output")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def unmarshall(data: AttributeMap): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(data.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def unmarshall(data: AttributeMap, options: ConverterOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("unmarshall")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   }
   
   @JSImport("dynogels", "AWS.DynamoDB.DocumentClient")
@@ -65,6 +60,6 @@ object DynamoDB {
     */
   class DocumentClient ()
     extends typings.awsSdk.mod.DynamoDB.DocumentClient {
-    def this(options: DocumentClientOptions with ClientConfiguration) = this()
+    def this(options: DocumentClientOptions & ClientConfiguration) = this()
   }
 }

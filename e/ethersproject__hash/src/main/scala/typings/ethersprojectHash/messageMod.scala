@@ -3,17 +3,18 @@ package typings.ethersprojectHash
 import typings.ethersprojectBytes.mod.Bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
-  @JSImport("@ethersproject/hash/lib/message", "hashMessage")
+  @JSImport("@ethersproject/hash/lib/message", JSImport.Namespace)
   @js.native
-  def hashMessage(message: String): String = js.native
-  @JSImport("@ethersproject/hash/lib/message", "hashMessage")
-  @js.native
-  def hashMessage(message: Bytes): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def hashMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def hashMessage(message: Bytes): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hashMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("@ethersproject/hash/lib/message", "messagePrefix")
   @js.native

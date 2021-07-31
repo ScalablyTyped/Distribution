@@ -4,41 +4,40 @@ import typings.reactNative.reactNativeStrings.hidden
 import typings.reactNative.reactNativeStrings.visible
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageStyle
-  extends FlexStyle
+  extends StObject
+     with FlexStyle
      with ShadowStyleIOS
      with TransformsStyle {
   
-  var backfaceVisibility: js.UndefOr[visible | hidden] = js.native
+  var backfaceVisibility: js.UndefOr[visible | hidden] = js.undefined
   
-  var backgroundColor: js.UndefOr[ColorValue] = js.native
+  var backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderBottomLeftRadius: js.UndefOr[Double] = js.native
+  var borderBottomLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderBottomRightRadius: js.UndefOr[Double] = js.native
+  var borderBottomRightRadius: js.UndefOr[Double] = js.undefined
   
-  var borderColor: js.UndefOr[ColorValue] = js.native
+  var borderColor: js.UndefOr[ColorValue] = js.undefined
   
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopLeftRadius: js.UndefOr[Double] = js.native
+  var borderTopLeftRadius: js.UndefOr[Double] = js.undefined
   
-  var borderTopRightRadius: js.UndefOr[Double] = js.native
+  var borderTopRightRadius: js.UndefOr[Double] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   @JSName("overflow")
-  var overflow_ImageStyle: js.UndefOr[visible | hidden] = js.native
+  var overflow_ImageStyle: js.UndefOr[visible | hidden] = js.undefined
   
-  var overlayColor: js.UndefOr[ColorValue] = js.native
+  var overlayColor: js.UndefOr[ColorValue] = js.undefined
   
-  var resizeMode: js.UndefOr[ImageResizeMode] = js.native
+  var resizeMode: js.UndefOr[ImageResizeMode] = js.undefined
   
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
 }
 object ImageStyle {
   

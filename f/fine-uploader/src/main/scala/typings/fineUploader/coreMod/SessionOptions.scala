@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionOptions extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait SessionOptions extends StObject {
     *
     * @default `{}`
     */
-  var customHeaders: js.UndefOr[js.Any] = js.native
+  var customHeaders: js.UndefOr[js.Any] = js.undefined
   
   /**
     * If non-null, Fine Uploader will send a `GET` request on startup to this endpoint, expecting a `JSON` response containing data about the initial file list to populate
     *
     * @default `null`
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Any parameters you would like passed with the associated `GET` request to your server
     *
     * @default `{}`
     */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set this to `false` if you do not want the file list to be retrieved from the server as part of a reset.
     *
     * @default `true`
     */
-  var refreshOnReset: js.UndefOr[Boolean] = js.native
+  var refreshOnReset: js.UndefOr[Boolean] = js.undefined
 }
 object SessionOptions {
   

@@ -6,7 +6,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMenuMod {
@@ -30,12 +29,11 @@ object dropdownMenuMod {
     def renderDropdown(hasNotFoundContentActiveIndexSetActiveIndexSelectOptionOnFocusOnBlur: MentionsContextProps): Element = js.native
   }
   
-  @js.native
   trait DropdownMenuProps extends StObject {
     
-    var options: js.Array[OptionProps] = js.native
+    var options: js.Array[OptionProps]
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object DropdownMenuProps {
     

@@ -2,11 +2,12 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileSourceEvent extends OSDEvent[TileSource] {
+trait TileSourceEvent
+  extends StObject
+     with OSDEvent[TileSource] {
   
   var message: js.UndefOr[String] = js.native
   

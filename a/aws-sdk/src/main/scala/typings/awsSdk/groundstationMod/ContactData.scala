@@ -2,76 +2,74 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactData extends StObject {
   
   /**
     * UUID of a contact.
     */
-  var contactId: js.UndefOr[String] = js.native
+  var contactId: js.UndefOr[String] = js.undefined
   
   /**
     * Status of a contact.
     */
-  var contactStatus: js.UndefOr[ContactStatus] = js.native
+  var contactStatus: js.UndefOr[ContactStatus] = js.undefined
   
   /**
     * End time of a contact.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Error message of a contact.
     */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Name of a ground station.
     */
-  var groundStation: js.UndefOr[String] = js.native
+  var groundStation: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum elevation angle of a contact.
     */
-  var maximumElevation: js.UndefOr[Elevation] = js.native
+  var maximumElevation: js.UndefOr[Elevation] = js.undefined
   
   /**
     * ARN of a mission profile.
     */
-  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.native
+  var missionProfileArn: js.UndefOr[MissionProfileArn] = js.undefined
   
   /**
     * Amount of time after a contact ends that you’d like to receive a CloudWatch event indicating the pass has finished.
     */
-  var postPassEndTime: js.UndefOr[Timestamp] = js.native
+  var postPassEndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Amount of time prior to contact start you’d like to receive a CloudWatch event indicating an upcoming pass.
     */
-  var prePassStartTime: js.UndefOr[Timestamp] = js.native
+  var prePassStartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Region of a contact.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * ARN of a satellite.
     */
-  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.native
+  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.undefined
   
   /**
     * Start time of a contact.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Tags assigned to a contact.
     */
-  var tags: js.UndefOr[TagsMap] = js.native
+  var tags: js.UndefOr[TagsMap] = js.undefined
 }
 object ContactData {
   

@@ -2,32 +2,35 @@ package typings.rasha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("rasha", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   // JWK-to-PEM
-  @JSImport("rasha", "export")
-  @js.native
-  def export(opts: ExportOptions): js.Promise[String] = js.native
+  @scala.inline
+  def `export`(opts: ExportOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("export")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("rasha", "generate")
-  @js.native
-  def generate(opts: GenerateOptions): js.Promise[RsaKeys] = js.native
+  @scala.inline
+  def generate(opts: GenerateOptions): js.Promise[RsaKeys] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[RsaKeys]]
   
-  @JSImport("rasha", "thumbprint")
-  @js.native
-  def thumbprint(jwk: Jwk): js.Promise[_] = js.native
+  // PEM-to-JWK
+  @scala.inline
+  def `import`(opts: ImportOptions): js.Promise[Jwk] = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Jwk]]
   
-  @js.native
+  @scala.inline
+  def thumbprint(jwk: Jwk): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("thumbprint")(jwk.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  
   trait ExportOptions extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var jwk: Jwk = js.native
+    var jwk: Jwk
     
-    var public: Boolean = js.native
+    var public: Boolean
   }
   object ExportOptions {
     
@@ -51,16 +54,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GenerateOptions extends StObject {
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var format: String = js.native
+    var format: String
     
-    var modulusLength: js.UndefOr[Double] = js.native
+    var modulusLength: js.UndefOr[Double] = js.undefined
     
-    var publicExponent: js.UndefOr[Double] = js.native
+    var publicExponent: js.UndefOr[Double] = js.undefined
   }
   object GenerateOptions {
     
@@ -96,12 +98,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ImportOptions extends StObject {
     
-    var pem: String = js.native
+    var pem: String
     
-    var public: Boolean = js.native
+    var public: Boolean
   }
   object ImportOptions {
     
@@ -122,26 +123,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Jwk extends StObject {
     
-    var d: String = js.native
+    var d: String
     
-    var dp: String = js.native
+    var dp: String
     
-    var dq: String = js.native
+    var dq: String
     
-    var e: String = js.native
+    var e: String
     
-    var kty: String = js.native
+    var kty: String
     
-    var n: String = js.native
+    var n: String
     
-    var p: String = js.native
+    var p: String
     
-    var q: String = js.native
+    var q: String
     
-    var qi: String = js.native
+    var qi: String
   }
   object Jwk {
     
@@ -193,12 +193,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RsaKeys extends StObject {
     
-    var `private`: String = js.native
+    var `private`: String
     
-    var public: String = js.native
+    var public: String
   }
   object RsaKeys {
     
@@ -219,9 +218,4 @@ object mod {
       def setPublic(value: String): Self = StObject.set(x, "public", value.asInstanceOf[js.Any])
     }
   }
-  
-  // PEM-to-JWK
-  @JSImport("rasha", "import")
-  @js.native
-  def `import`(opts: ImportOptions): js.Promise[Jwk] = js.native
 }

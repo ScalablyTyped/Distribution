@@ -5,10 +5,8 @@ import typings.node.tlsMod.PeerCertificate
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSLOptions extends StObject {
   
   /**
@@ -16,67 +14,67 @@ trait SSLOptions extends StObject {
     */
   var checkServerIdentity: js.UndefOr[
     Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
     */
-  var ciphers: js.UndefOr[String] = js.native
+  var ciphers: js.UndefOr[String] = js.undefined
   
   /**
     * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
     */
-  var ecdhCurve: js.UndefOr[String] = js.native
+  var ecdhCurve: js.UndefOr[String] = js.undefined
   
   /**
     * If present, the connection pool will be initialized with minSize connections, and will never dip below minSize connections
     */
-  var minSize: js.UndefOr[scala.Double] = js.native
+  var minSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Default:5; Number of connections for each server instance; set to 5 as default for legacy reasons.
     */
-  var poolSize: js.UndefOr[scala.Double] = js.native
+  var poolSize: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * String containing the server name requested via TLS SNI.
     */
-  var servername: js.UndefOr[String] = js.native
+  var servername: js.UndefOr[String] = js.undefined
   
   /**
     * Use ssl connection (needs to have a mongod server with ssl support)
     */
-  var ssl: js.UndefOr[Boolean] = js.native
+  var ssl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of valid certificates either as Buffers or Strings
     */
-  var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.native
+  var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.undefined
   
   /**
     * SSL Certificate revocation list binary buffer
     */
-  var sslCRL: js.UndefOr[js.Array[Buffer | String]] = js.native
+  var sslCRL: js.UndefOr[js.Array[Buffer | String]] = js.undefined
   
   /**
     * SSL Certificate binary buffer
     */
-  var sslCert: js.UndefOr[Buffer | String] = js.native
+  var sslCert: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * SSL Key file binary buffer
     */
-  var sslKey: js.UndefOr[Buffer | String] = js.native
+  var sslKey: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * SSL Certificate pass phrase
     */
-  var sslPass: js.UndefOr[Buffer | String] = js.native
+  var sslPass: js.UndefOr[Buffer | String] = js.undefined
   
   /**
     * Default: true; Validate mongod server certificate against ca (mongod server >=2.4 with ssl support required)
     */
-  var sslValidate: js.UndefOr[Boolean] = js.native
+  var sslValidate: js.UndefOr[Boolean] = js.undefined
 }
 object SSLOptions {
   

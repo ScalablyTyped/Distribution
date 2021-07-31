@@ -5,39 +5,37 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
   
-  @js.native
   trait Context extends StObject {
     
-    var clauseNumberer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClauseNumberIterator */ js.Any = js.native
+    var clauseNumberer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClauseNumberIterator */ js.Any
     
     var clauseStack: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any
+      ]
     
-    var currentId: String | Null = js.native
+    var currentId: String | Null
     
     var importStack: js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any
+      ]
     
-    var inAlg: Boolean = js.native
+    var inAlg: Boolean
     
-    var inNoAutolink: Boolean = js.native
+    var inNoAutolink: Boolean
     
-    var inNoEmd: Boolean = js.native
+    var inNoEmd: Boolean
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var spec: Spec = js.native
+    var spec: Spec
     
-    var startEmd: Node | Null = js.native
+    var startEmd: Node | Null
     
-    var tagStack: js.Array[HTMLElement] = js.native
+    var tagStack: js.Array[HTMLElement]
   }
   object Context {
     
@@ -45,10 +43,10 @@ object contextMod {
     def apply(
       clauseNumberer: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ClauseNumberIterator */ js.Any,
       clauseStack: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any
         ],
       importStack: js.Array[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any
         ],
       inAlg: Boolean,
       inNoAutolink: Boolean,
@@ -57,7 +55,7 @@ object contextMod {
       spec: Spec,
       tagStack: js.Array[HTMLElement]
     ): Context = {
-      val __obj = js.Dynamic.literal(clauseNumberer = clauseNumberer.asInstanceOf[js.Any], clauseStack = clauseStack.asInstanceOf[js.Any], importStack = importStack.asInstanceOf[js.Any], inAlg = inAlg.asInstanceOf[js.Any], inNoAutolink = inNoAutolink.asInstanceOf[js.Any], inNoEmd = inNoEmd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tagStack = tagStack.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(clauseNumberer = clauseNumberer.asInstanceOf[js.Any], clauseStack = clauseStack.asInstanceOf[js.Any], importStack = importStack.asInstanceOf[js.Any], inAlg = inAlg.asInstanceOf[js.Any], inNoAutolink = inNoAutolink.asInstanceOf[js.Any], inNoEmd = inNoEmd.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any], tagStack = tagStack.asInstanceOf[js.Any], currentId = null, startEmd = null)
       __obj.asInstanceOf[Context]
     }
     
@@ -72,12 +70,14 @@ object contextMod {
       @scala.inline
       def setClauseStack(
         value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any
             ]
       ): Self = StObject.set(x, "clauseStack", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setClauseStackVarargs(value: js.Any*): Self = StObject.set(x, "clauseStack", js.Array(value :_*))
+      def setClauseStackVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Clause */ js.Any)*
+      ): Self = StObject.set(x, "clauseStack", js.Array(value :_*))
       
       @scala.inline
       def setCurrentId(value: String): Self = StObject.set(x, "currentId", value.asInstanceOf[js.Any])
@@ -88,12 +88,14 @@ object contextMod {
       @scala.inline
       def setImportStack(
         value: js.Array[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any
             ]
       ): Self = StObject.set(x, "importStack", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setImportStackVarargs(value: js.Any*): Self = StObject.set(x, "importStack", js.Array(value :_*))
+      def setImportStackVarargs(
+        value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Import */ js.Any)*
+      ): Self = StObject.set(x, "importStack", js.Array(value :_*))
       
       @scala.inline
       def setInAlg(value: Boolean): Self = StObject.set(x, "inAlg", value.asInstanceOf[js.Any])

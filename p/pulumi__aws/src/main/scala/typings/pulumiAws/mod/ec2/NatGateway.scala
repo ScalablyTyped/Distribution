@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ec2.NatGateway")
@@ -27,6 +26,10 @@ class NatGateway protected ()
 /* static members */
 object NatGateway {
   
+  @JSImport("@pulumi/aws", "ec2.NatGateway")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing NatGateway resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object NatGateway {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws", "ec2.NatGateway.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.natGatewayMod.NatGateway = js.native
-  @JSImport("@pulumi/aws", "ec2.NatGateway.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.natGatewayMod.NatGateway = js.native
-  @JSImport("@pulumi/aws", "ec2.NatGateway.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: NatGatewayState): typings.pulumiAws.natGatewayMod.NatGateway = js.native
-  @JSImport("@pulumi/aws", "ec2.NatGateway.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: NatGatewayState, opts: CustomResourceOptions): typings.pulumiAws.natGatewayMod.NatGateway = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.natGatewayMod.NatGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.natGatewayMod.NatGateway]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.natGatewayMod.NatGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.natGatewayMod.NatGateway]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: NatGatewayState): typings.pulumiAws.natGatewayMod.NatGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.natGatewayMod.NatGateway]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: NatGatewayState, opts: CustomResourceOptions): typings.pulumiAws.natGatewayMod.NatGateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.natGatewayMod.NatGateway]
   
   /**
     * Returns true if the given object is an instance of NatGateway.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws", "ec2.NatGateway.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/natGateway.NatGateway */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/natGateway.NatGateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/natGateway.NatGateway */ Boolean]
 }

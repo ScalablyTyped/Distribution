@@ -35,6 +35,8 @@ import typings.grommet.utilsMod.PadType
 import typings.react.mod.AbstractView
 import typings.react.mod.Component
 import typings.react.mod.DetailedHTMLProps
+import typings.react.mod.KeyboardEvent
+import typings.react.mod.MouseEvent
 import typings.react.mod.NativeKeyboardEvent
 import typings.react.mod.NativeMouseEvent
 import typings.react.mod.ReactNode
@@ -45,7 +47,6 @@ import typings.std.HTMLTableElement
 import typings.std.HTMLTableRowElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataTableMod {
@@ -54,47 +55,46 @@ object dataTableMod {
   @js.native
   class DataTable[TRowType] protected ()
     extends Component[
-          DataTableProps[TRowType] with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]), 
+          DataTableProps[TRowType] & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]), 
           js.Object, 
           js.Any
         ] {
-    def this(props: DataTableProps[TRowType] with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])) = this()
+    def this(props: DataTableProps[TRowType] & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement])) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(
-      props: DataTableProps[TRowType] with (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]),
+      props: DataTableProps[TRowType] & (DetailedHTMLProps[TableHTMLAttributes[HTMLTableElement], HTMLTableElement]),
       context: js.Any
     ) = this()
   }
   
-  @js.native
   trait ColumnConfig[TRowType] extends StObject {
     
-    var aggregate: js.UndefOr[avg | max | min | sum] = js.native
+    var aggregate: js.UndefOr[avg | max | min | sum] = js.undefined
     
-    var align: js.UndefOr[center | start | end] = js.native
+    var align: js.UndefOr[center | start | end] = js.undefined
     
-    var footer: js.UndefOr[ReactNode | Aggregate] = js.native
+    var footer: js.UndefOr[ReactNode | Aggregate] = js.undefined
     
-    var header: js.UndefOr[String | ReactNode | Aggregate] = js.native
+    var header: js.UndefOr[String | ReactNode | Aggregate] = js.undefined
     
-    var pin: js.UndefOr[Boolean] = js.native
+    var pin: js.UndefOr[Boolean] = js.undefined
     
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
     
-    var property: String = js.native
+    var property: String
     
-    var render: js.UndefOr[js.Function1[/* datum */ TRowType, ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* datum */ TRowType, ReactNode]] = js.undefined
     
-    var search: js.UndefOr[Boolean] = js.native
+    var search: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[ColumnSizeType | String] = js.native
+    var size: js.UndefOr[ColumnSizeType | String] = js.undefined
     
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
-    var verticalAlign: js.UndefOr[middle | top | bottom] = js.native
+    var verticalAlign: js.UndefOr[middle | top | bottom] = js.undefined
   }
   object ColumnConfig {
     
@@ -105,7 +105,7 @@ object dataTableMod {
     }
     
     @scala.inline
-    implicit class ColumnConfigMutableBuilder[Self <: ColumnConfig[_], TRowType] (val x: Self with ColumnConfig[TRowType]) extends AnyVal {
+    implicit class ColumnConfigMutableBuilder[Self <: ColumnConfig[?], TRowType] (val x: Self & ColumnConfig[TRowType]) extends AnyVal {
       
       @scala.inline
       def setAggregate(value: avg | max | min | sum): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
@@ -224,13 +224,12 @@ object dataTableMod {
     def xlarge: typings.grommet.grommetStrings.xlarge = "xlarge".asInstanceOf[typings.grommet.grommetStrings.xlarge]
   }
   
-  @js.native
   trait DataTableProps[TRowType] extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
     // Appearance
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
     var background: js.UndefOr[
         BackgroundType | (Sections[
@@ -239,55 +238,55 @@ object dataTableMod {
           BackgroundType, 
           BackgroundType | js.Array[String]
         ])
-      ] = js.native
+      ] = js.undefined
     
-    var border: js.UndefOr[BorderType | (Sections[BorderType, BorderType, BorderType, BorderType])] = js.native
+    var border: js.UndefOr[BorderType | (Sections[BorderType, BorderType, BorderType, BorderType])] = js.undefined
     
-    var columns: js.UndefOr[js.Array[ColumnConfig[TRowType]]] = js.native
+    var columns: js.UndefOr[js.Array[ColumnConfig[TRowType]]] = js.undefined
     
     // Data
-    var data: js.UndefOr[js.Array[TRowType]] = js.native
+    var data: js.UndefOr[js.Array[TRowType]] = js.undefined
     
-    var fill: js.UndefOr[Boolean | vertical | horizontal] = js.native
+    var fill: js.UndefOr[Boolean | vertical | horizontal] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var groupBy: js.UndefOr[String | Expand] = js.native
+    var groupBy: js.UndefOr[String | Expand] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
     // Events
-    var onClickRow: js.UndefOr[js.Function1[/* event */ MouseClick[TRowType] | KeyPress[TRowType], Unit]] = js.native
+    var onClickRow: js.UndefOr[js.Function1[/* event */ MouseClick[TRowType] | KeyPress[TRowType], Unit]] = js.undefined
     
-    var onMore: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMore: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* select */ js.Array[String | Double], Unit]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* select */ js.Array[String | Double], Unit]] = js.undefined
     
-    var onSort: js.UndefOr[js.Function1[/* sort */ DirectionProperty, Unit]] = js.native
+    var onSort: js.UndefOr[js.Function1[/* sort */ DirectionProperty, Unit]] = js.undefined
     
-    var pad: js.UndefOr[PadType | (Sections[PadType, PadType, PadType, PadType])] = js.native
+    var pad: js.UndefOr[PadType | (Sections[PadType, PadType, PadType, PadType])] = js.undefined
     
-    var pin: js.UndefOr[Boolean | header | footer] = js.native
+    var pin: js.UndefOr[Boolean | header | footer] = js.undefined
     
-    var primaryKey: js.UndefOr[String | Boolean] = js.native
+    var primaryKey: js.UndefOr[String | Boolean] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var resizeable: js.UndefOr[Boolean] = js.native
+    var resizeable: js.UndefOr[Boolean] = js.undefined
     
-    var rowProps: js.UndefOr[StringDictionary[Background]] = js.native
+    var rowProps: js.UndefOr[StringDictionary[Background]] = js.undefined
     
-    var select: js.UndefOr[js.Array[String | Double]] = js.native
+    var select: js.UndefOr[js.Array[String | Double]] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var sort: js.UndefOr[Direction] = js.native
+    var sort: js.UndefOr[Direction] = js.undefined
     
-    var sortable: js.UndefOr[Boolean] = js.native
+    var sortable: js.UndefOr[Boolean] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object DataTableProps {
     
@@ -298,7 +297,7 @@ object dataTableMod {
     }
     
     @scala.inline
-    implicit class DataTablePropsMutableBuilder[Self <: DataTableProps[_], TRowType] (val x: Self with DataTableProps[TRowType]) extends AnyVal {
+    implicit class DataTablePropsMutableBuilder[Self <: DataTableProps[?], TRowType] (val x: Self & DataTableProps[TRowType]) extends AnyVal {
       
       @scala.inline
       def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
@@ -477,76 +476,11 @@ object dataTableMod {
     }
   }
   
-  /* Inlined react.react.KeyboardEvent<std.Element> & {  datum :TRowType} */
-  @js.native
-  trait KeyPress[TRowType] extends StObject {
+  trait KeyPress[TRowType]
+    extends StObject
+       with KeyboardEvent[Element] {
     
-    var altKey: Boolean = js.native
-    
-    var bubbles: Boolean = js.native
-    
-    var cancelable: Boolean = js.native
-    
-    /** @deprecated */
-    var charCode: Double = js.native
-    
-    var code: String = js.native
-    
-    var ctrlKey: Boolean = js.native
-    
-    var currentTarget: EventTarget with Element = js.native
-    
-    var datum: TRowType = js.native
-    
-    var defaultPrevented: Boolean = js.native
-    
-    var eventPhase: Double = js.native
-    
-    /**
-      * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
-      */
-    def getModifierState(key: String): Boolean = js.native
-    
-    def isDefaultPrevented(): Boolean = js.native
-    
-    def isPropagationStopped(): Boolean = js.native
-    
-    var isTrusted: Boolean = js.native
-    
-    /**
-      * See the [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#named-key-attribute-values). for possible values
-      */
-    var key: String = js.native
-    
-    /** @deprecated */
-    var keyCode: Double = js.native
-    
-    var locale: String = js.native
-    
-    var location: Double = js.native
-    
-    var metaKey: Boolean = js.native
-    
-    var nativeEvent: NativeKeyboardEvent = js.native
-    
-    def persist(): Unit = js.native
-    
-    def preventDefault(): Unit = js.native
-    
-    var repeat: Boolean = js.native
-    
-    var shiftKey: Boolean = js.native
-    
-    def stopPropagation(): Unit = js.native
-    
-    var target: EventTarget = js.native
-    
-    var timeStamp: Double = js.native
-    
-    var `type`: String = js.native
-    
-    /** @deprecated */
-    var which: Double = js.native
+    var datum: TRowType
   }
   object KeyPress {
     
@@ -558,7 +492,7 @@ object dataTableMod {
       charCode: Double,
       code: String,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with Element,
+      currentTarget: EventTarget & Element,
       datum: TRowType,
       defaultPrevented: Boolean,
       eventPhase: Double,
@@ -588,173 +522,20 @@ object dataTableMod {
     }
     
     @scala.inline
-    implicit class KeyPressMutableBuilder[Self <: KeyPress[_], TRowType] (val x: Self with KeyPress[TRowType]) extends AnyVal {
-      
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCharCode(value: Double): Self = StObject.set(x, "charCode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCurrentTarget(value: EventTarget with Element): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    implicit class KeyPressMutableBuilder[Self <: KeyPress[?], TRowType] (val x: Self & KeyPress[TRowType]) extends AnyVal {
       
       @scala.inline
       def setDatum(value: TRowType): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLocation(value: Double): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNativeEvent(value: NativeKeyboardEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setRepeat(value: Boolean): Self = StObject.set(x, "repeat", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWhich(value: Double): Self = StObject.set(x, "which", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined react.react.MouseEvent<std.HTMLTableRowElement, react.react.NativeMouseEvent> & {  datum :TRowType,   index :number} */
-  @js.native
-  trait MouseClick[TRowType] extends StObject {
+  trait MouseClick[TRowType]
+    extends StObject
+       with MouseEvent[HTMLTableRowElement, NativeMouseEvent] {
     
-    var altKey: Boolean = js.native
+    var datum: TRowType
     
-    var bubbles: Boolean = js.native
-    
-    var button: Double = js.native
-    
-    var buttons: Double = js.native
-    
-    var cancelable: Boolean = js.native
-    
-    var clientX: Double = js.native
-    
-    var clientY: Double = js.native
-    
-    var ctrlKey: Boolean = js.native
-    
-    var currentTarget: EventTarget with HTMLTableRowElement = js.native
-    
-    var datum: TRowType = js.native
-    
-    var defaultPrevented: Boolean = js.native
-    
-    var detail: Double = js.native
-    
-    var eventPhase: Double = js.native
-    
-    /**
-      * See [DOM Level 3 Events spec](https://www.w3.org/TR/uievents-key/#keys-modifier). for a list of valid (case-sensitive) arguments to this method.
-      */
-    def getModifierState(key: String): Boolean = js.native
-    
-    var index: Double = js.native
-    
-    def isDefaultPrevented(): Boolean = js.native
-    
-    def isPropagationStopped(): Boolean = js.native
-    
-    var isTrusted: Boolean = js.native
-    
-    var metaKey: Boolean = js.native
-    
-    var movementX: Double = js.native
-    
-    var movementY: Double = js.native
-    
-    var nativeEvent: NativeMouseEvent = js.native
-    
-    var pageX: Double = js.native
-    
-    var pageY: Double = js.native
-    
-    def persist(): Unit = js.native
-    
-    def preventDefault(): Unit = js.native
-    
-    var relatedTarget: EventTarget | Null = js.native
-    
-    var screenX: Double = js.native
-    
-    var screenY: Double = js.native
-    
-    var shiftKey: Boolean = js.native
-    
-    def stopPropagation(): Unit = js.native
-    
-    var target: EventTarget = js.native
-    
-    var timeStamp: Double = js.native
-    
-    var `type`: String = js.native
-    
-    var view: AbstractView = js.native
+    var index: Double
   }
   object MouseClick {
     
@@ -768,7 +549,7 @@ object dataTableMod {
       clientX: Double,
       clientY: Double,
       ctrlKey: Boolean,
-      currentTarget: EventTarget with HTMLTableRowElement,
+      currentTarget: EventTarget & HTMLTableRowElement,
       datum: TRowType,
       defaultPrevented: Boolean,
       detail: Double,
@@ -795,134 +576,31 @@ object dataTableMod {
       `type`: String,
       view: AbstractView
     ): MouseClick[TRowType] = {
-      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), index = index.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(altKey = altKey.asInstanceOf[js.Any], bubbles = bubbles.asInstanceOf[js.Any], button = button.asInstanceOf[js.Any], buttons = buttons.asInstanceOf[js.Any], cancelable = cancelable.asInstanceOf[js.Any], clientX = clientX.asInstanceOf[js.Any], clientY = clientY.asInstanceOf[js.Any], ctrlKey = ctrlKey.asInstanceOf[js.Any], currentTarget = currentTarget.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], defaultPrevented = defaultPrevented.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], eventPhase = eventPhase.asInstanceOf[js.Any], getModifierState = js.Any.fromFunction1(getModifierState), index = index.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), isTrusted = isTrusted.asInstanceOf[js.Any], metaKey = metaKey.asInstanceOf[js.Any], movementX = movementX.asInstanceOf[js.Any], movementY = movementY.asInstanceOf[js.Any], nativeEvent = nativeEvent.asInstanceOf[js.Any], pageX = pageX.asInstanceOf[js.Any], pageY = pageY.asInstanceOf[js.Any], persist = js.Any.fromFunction0(persist), preventDefault = js.Any.fromFunction0(preventDefault), screenX = screenX.asInstanceOf[js.Any], screenY = screenY.asInstanceOf[js.Any], shiftKey = shiftKey.asInstanceOf[js.Any], stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any], timeStamp = timeStamp.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any], relatedTarget = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MouseClick[TRowType]]
     }
     
     @scala.inline
-    implicit class MouseClickMutableBuilder[Self <: MouseClick[_], TRowType] (val x: Self with MouseClick[TRowType]) extends AnyVal {
-      
-      @scala.inline
-      def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setButton(value: Double): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setButtons(value: Double): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCancelable(value: Boolean): Self = StObject.set(x, "cancelable", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setClientY(value: Double): Self = StObject.set(x, "clientY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCtrlKey(value: Boolean): Self = StObject.set(x, "ctrlKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCurrentTarget(value: EventTarget with HTMLTableRowElement): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
+    implicit class MouseClickMutableBuilder[Self <: MouseClick[?], TRowType] (val x: Self & MouseClick[TRowType]) extends AnyVal {
       
       @scala.inline
       def setDatum(value: TRowType): Self = StObject.set(x, "datum", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDefaultPrevented(value: Boolean): Self = StObject.set(x, "defaultPrevented", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDetail(value: Double): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEventPhase(value: Double): Self = StObject.set(x, "eventPhase", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setGetModifierState(value: String => Boolean): Self = StObject.set(x, "getModifierState", js.Any.fromFunction1(value))
-      
-      @scala.inline
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setIsPropagationStopped(value: () => Boolean): Self = StObject.set(x, "isPropagationStopped", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setIsTrusted(value: Boolean): Self = StObject.set(x, "isTrusted", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMetaKey(value: Boolean): Self = StObject.set(x, "metaKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMovementX(value: Double): Self = StObject.set(x, "movementX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setMovementY(value: Double): Self = StObject.set(x, "movementY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNativeEvent(value: NativeMouseEvent): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPageY(value: Double): Self = StObject.set(x, "pageY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setPersist(value: () => Unit): Self = StObject.set(x, "persist", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setRelatedTarget(value: EventTarget): Self = StObject.set(x, "relatedTarget", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRelatedTargetNull: Self = StObject.set(x, "relatedTarget", null)
-      
-      @scala.inline
-      def setScreenX(value: Double): Self = StObject.set(x, "screenX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScreenY(value: Double): Self = StObject.set(x, "screenY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setShiftKey(value: Boolean): Self = StObject.set(x, "shiftKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStopPropagation(value: () => Unit): Self = StObject.set(x, "stopPropagation", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setTarget(value: EventTarget): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTimeStamp(value: Double): Self = StObject.set(x, "timeStamp", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setView(value: AbstractView): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Sections[TBody, THeader, TFooter, TPinned] extends StObject {
     
-    var body: js.UndefOr[TBody] = js.native
+    var body: js.UndefOr[TBody] = js.undefined
     
-    var footer: js.UndefOr[TFooter] = js.native
+    var footer: js.UndefOr[TFooter] = js.undefined
     
-    var header: js.UndefOr[THeader] = js.native
+    var header: js.UndefOr[THeader] = js.undefined
     
-    var pinned: js.UndefOr[TPinned] = js.native
+    var pinned: js.UndefOr[TPinned] = js.undefined
   }
   object Sections {
     
@@ -933,7 +611,7 @@ object dataTableMod {
     }
     
     @scala.inline
-    implicit class SectionsMutableBuilder[Self <: Sections[_, _, _, _], TBody, THeader, TFooter, TPinned] (val x: Self with (Sections[TBody, THeader, TFooter, TPinned])) extends AnyVal {
+    implicit class SectionsMutableBuilder[Self <: Sections[?, ?, ?, ?], TBody, THeader, TFooter, TPinned] (val x: Self & (Sections[TBody, THeader, TFooter, TPinned])) extends AnyVal {
       
       @scala.inline
       def setBody(value: TBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

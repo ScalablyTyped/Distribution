@@ -2,23 +2,21 @@ package typings.winrt.Windows.ApplicationModel.DataTransfer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStandardDataFormatsStatics extends StObject {
   
-  var bitmap: String = js.native
+  var bitmap: String
   
-  var html: String = js.native
+  var html: String
   
-  var rtf: String = js.native
+  var rtf: String
   
-  var storageItems: String = js.native
+  var storageItems: String
   
-  var text: String = js.native
+  var text: String
   
-  var uri: String = js.native
+  var uri: String
 }
 object IStandardDataFormatsStatics {
   

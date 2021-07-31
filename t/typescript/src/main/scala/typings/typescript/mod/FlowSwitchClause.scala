@@ -2,21 +2,20 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowSwitchClause
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
   
-  var antecedent: FlowNode = js.native
+  var antecedent: FlowNode
   
-  var clauseEnd: Double = js.native
+  var clauseEnd: Double
   
-  var clauseStart: Double = js.native
+  var clauseStart: Double
   
-  var switchStatement: SwitchStatement = js.native
+  var switchStatement: SwitchStatement
 }
 object FlowSwitchClause {
   

@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,15 @@ object GradientStrokeMethod extends StObject {
     * A gradient across the line.
     */
   @js.native
-  sealed trait AcrossLine extends GradientStrokeMethod
+  sealed trait AcrossLine
+    extends StObject
+       with GradientStrokeMethod
   
   /**
     * A gradient along the line.
     */
   @js.native
-  sealed trait AlongLine extends GradientStrokeMethod
+  sealed trait AlongLine
+    extends StObject
+       with GradientStrokeMethod
 }

@@ -2,15 +2,15 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextInputChangeEventData extends TargetedEvent {
+trait TextInputChangeEventData
+  extends StObject
+     with TargetedEvent {
   
-  var eventCount: Double = js.native
+  var eventCount: Double
   
-  var text: String = js.native
+  var text: String
 }
 object TextInputChangeEventData {
   

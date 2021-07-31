@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object LaunchQuerySupportStatus extends StObject {
   
   /** No app is installed to handle the activation. */
   @js.native
-  sealed trait appNotInstalled extends LaunchQuerySupportStatus
+  sealed trait appNotInstalled
+    extends StObject
+       with LaunchQuerySupportStatus
   
   /** An app that handles the activation is installed but not available because it is being updated by the store or it was installed on a removable device that is not available. */
   @js.native
-  sealed trait appUnavailable extends LaunchQuerySupportStatus
+  sealed trait appUnavailable
+    extends StObject
+       with LaunchQuerySupportStatus
   
   /** An app that handles the activation is available and may be activated. */
   @js.native
-  sealed trait available extends LaunchQuerySupportStatus
+  sealed trait available
+    extends StObject
+       with LaunchQuerySupportStatus
   
   /** The app does not handle the activation. */
   @js.native
-  sealed trait notSupported extends LaunchQuerySupportStatus
+  sealed trait notSupported
+    extends StObject
+       with LaunchQuerySupportStatus
   
   /** An unknown error was encountered while determining whether an app supports the activation. */
   @js.native
-  sealed trait unknown extends LaunchQuerySupportStatus
+  sealed trait unknown
+    extends StObject
+       with LaunchQuerySupportStatus
 }

@@ -6,7 +6,6 @@ import typings.koa.mod.Context
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
-import typings.koa.mod.^
 import typings.koaSession.anon.Changed
 import typings.koaSession.anon.Instantiable
 import typings.koaSession.anon.PartialSession
@@ -23,53 +22,53 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("koa-session", JSImport.Namespace)
-  @js.native
-  def apply(CONFIG: Partialopts, app: ^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = js.native
-  @JSImport("koa-session", JSImport.Namespace)
-  @js.native
-  def apply(app: ^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = js.native
+  @scala.inline
+  def apply(CONFIG: Partialopts, app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = (^.asInstanceOf[js.Dynamic].apply(CONFIG.asInstanceOf[js.Any], app.asInstanceOf[js.Any])).asInstanceOf[Middleware[DefaultState, DefaultContext]]
+  @scala.inline
+  def apply(app: typings.koa.mod.^[DefaultState, DefaultContext]): Middleware[DefaultState, DefaultContext] = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Middleware[DefaultState, DefaultContext]]
   
+  @JSImport("koa-session", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ContextSession extends StObject {
     
-    var app: Application[DefaultState, DefaultContext] = js.native
+    var app: Application[DefaultState, DefaultContext]
     
     /**
       * Commit the session changes or removal.
       */
-    def commit(): js.Promise[Unit] = js.native
+    def commit(): js.Promise[Unit]
     
-    var ctx: Context = js.native
+    var ctx: Context
     
     /**
       * internal logic of `ctx.session`
       */
-    def get(): Session = js.native
+    def get(): Session
     
     /**
       * init session from external store
       * will be called in the front of session middleware
       */
-    def initFromExternal(): js.Promise[Unit] = js.native
+    def initFromExternal(): js.Promise[Unit]
     
-    var opts: typings.koaSession.mod.opts = js.native
+    var opts: typings.koaSession.mod.opts
     
-    var prevHash: String = js.native
+    var prevHash: String
     
-    var session: Session | `false` = js.native
+    var session: Session | `false`
     
     /**
       * internal logic of `ctx.session=`
       */
-    def set(`val`: js.Any): Unit = js.native
+    def set(`val`: js.Any): Unit
     
-    var store: stores = js.native
+    var store: stores
   }
   object ContextSession {
     
@@ -125,18 +124,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ExternalKeys extends StObject {
     
     /**
       * get session object by key
       */
-    def get(ctx: Context): String = js.native
+    def get(ctx: Context): String
     
     /**
       * set session object for key, with a maxAge (in ms)
       */
-    def set(ctx: Context, value: js.Any): Unit = js.native
+    def set(ctx: Context, value: js.Any): Unit
   }
   object ExternalKeys {
     
@@ -162,9 +160,9 @@ object mod {
   /**
     * Session model.
     */
-  @js.native
   trait Session
-    extends /**
+    extends StObject
+       with /**
     * allow to put any value on session object
     */
   /* _ */ StringDictionary[js.Any] {
@@ -172,33 +170,33 @@ object mod {
     /**
       * alias to `toJSON`
       */
-    def inspect(): js.Object = js.native
+    def inspect(): js.Object
     
     /**
       * Return how many values there are in the session object.
       * Used to see if it"s "populated".
       */
-    val length: Double = js.native
+    val length: Double
     
     /**
       * get/set session maxAge
       */
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
     /**
       * populated flag, which is just a boolean alias of .length.
       */
-    val populated: Boolean = js.native
+    val populated: Boolean
     
     /**
       * save this session no matter whether it is populated
       */
-    def save(): Unit = js.native
+    def save(): Unit
     
     /**
       * JSON representation of the session.
       */
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
   }
   object Session {
     
@@ -243,18 +241,17 @@ object mod {
   /* augmented module */
   object koaAugmentingMod {
     
-    @js.native
     trait BaseContext extends StObject {
       
-      var session: Session | Null = js.native
+      var session: Session | Null
       
-      val sessionOptions: js.UndefOr[opts] = js.native
+      val sessionOptions: js.UndefOr[opts] = js.undefined
     }
     object BaseContext {
       
       @scala.inline
       def apply(): BaseContext = {
-        val __obj = js.Dynamic.literal()
+        val __obj = js.Dynamic.literal(session = null)
         __obj.asInstanceOf[BaseContext]
       }
       
@@ -277,7 +274,6 @@ object mod {
   }
   
   /* Inlined parent koa-session.koa-session.Omit<cookies.cookies.SetOption, 'maxAge'> */
-  @js.native
   trait opts extends StObject {
     
     /**
@@ -285,98 +281,235 @@ object mod {
       * ContextStore must be a class which claims three instance methods demonstrated above.
       * new ContextStore(ctx) will be executed on every request.
       */
-    var ContextStore: js.UndefOr[Instantiable] = js.native
+    var ContextStore: js.UndefOr[Instantiable] = js.undefined
     
     /**
       * Hook: before save session
       */
-    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.native
+    var beforeSave: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ Session, Unit]] = js.undefined
     
     /**
       * custom decode method
       */
-    def decode(str: String): js.Object = js.native
+    def decode(str: String): js.Object
     /**
       * custom decode method
       */
     @JSName("decode")
-    var decode_Original: js.Function1[/* str */ String, js.Object] = js.native
+    var decode_Original: js.Function1[/* str */ String, js.Object]
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * custom encode method
       */
-    def encode(obj: js.Object): String = js.native
+    def encode(obj: js.Object): String
     /**
       * custom encode method
       */
     @JSName("encode")
-    var encode_Original: js.Function1[/* obj */ js.Object, String] = js.native
+    var encode_Original: js.Function1[/* obj */ js.Object, String]
     
-    var expires: js.UndefOr[Date] = js.native
+    var expires: js.UndefOr[Date] = js.undefined
     
     /**
       * External key is used the cookie by default,
       * but you can use options.externalKey to customize your own external key methods.
       */
-    var externalKey: js.UndefOr[ExternalKeys] = js.native
+    var externalKey: js.UndefOr[ExternalKeys] = js.undefined
     
     /**
       * The way of generating external session id is controlled by the options.genid, which defaults to Date.now() + "-" + uid.sync(24).
       */
-    def genid(): String = js.native
+    def genid(): String
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * cookie key (default is koa:sess)
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * maxAge in ms (default is 1 days)
       * "session" will result in a cookie that expires when session/browser is closed
       * Warning: If a session cookie is stolen, this cookie will never expire
       */
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * If you want to add prefix for all external session id, you can use options.prefix, it will not work if options.genid present.
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Renew session when session is nearly expired, so we can always keep user logged in. (default is false)
       */
-    var renew: js.UndefOr[Boolean] = js.native
+    var renew: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Force a session identifier cookie to be set on every response. The expiration is reset to the original maxAge, resetting the expiration countdown. default is false
       */
-    var rolling: js.UndefOr[Boolean] = js.native
+    var rolling: js.UndefOr[Boolean] = js.undefined
     
-    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.native
+    var sameSite: js.UndefOr[strict | lax | none | Boolean] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
-    var secureProxy: js.UndefOr[Boolean] = js.native
+    var secureProxy: js.UndefOr[Boolean] = js.undefined
     
-    var signed: js.UndefOr[Boolean] = js.native
+    var signed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can store the session content in external stores(redis, mongodb or other DBs)
       */
-    var store: js.UndefOr[stores] = js.native
+    var store: js.UndefOr[stores] = js.undefined
     
     /**
       * Hook: valid session value before use it
       */
-    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ PartialSession, Unit]] = js.native
+    var valid: js.UndefOr[js.Function2[/* ctx */ Context, /* session */ PartialSession, Unit]] = js.undefined
+  }
+  object opts {
+    
+    @scala.inline
+    def apply(
+      decode: /* str */ String => js.Object,
+      encode: /* obj */ js.Object => String,
+      genid: () => String,
+      key: String
+    ): opts = {
+      val __obj = js.Dynamic.literal(decode = js.Any.fromFunction1(decode), encode = js.Any.fromFunction1(encode), genid = js.Any.fromFunction0(genid), key = key.asInstanceOf[js.Any])
+      __obj.asInstanceOf[opts]
+    }
+    
+    @scala.inline
+    implicit class optsMutableBuilder[Self <: opts] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBeforeSave(value: (/* ctx */ Context, /* session */ Session) => Unit): Self = StObject.set(x, "beforeSave", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setBeforeSaveUndefined: Self = StObject.set(x, "beforeSave", js.undefined)
+      
+      @scala.inline
+      def setContextStore(value: Instantiable): Self = StObject.set(x, "ContextStore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setContextStoreUndefined: Self = StObject.set(x, "ContextStore", js.undefined)
+      
+      @scala.inline
+      def setDecode(value: /* str */ String => js.Object): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDomainUndefined: Self = StObject.set(x, "domain", js.undefined)
+      
+      @scala.inline
+      def setEncode(value: /* obj */ js.Object => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setExpires(value: Date): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExpiresUndefined: Self = StObject.set(x, "expires", js.undefined)
+      
+      @scala.inline
+      def setExternalKey(value: ExternalKeys): Self = StObject.set(x, "externalKey", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setExternalKeyUndefined: Self = StObject.set(x, "externalKey", js.undefined)
+      
+      @scala.inline
+      def setGenid(value: () => String): Self = StObject.set(x, "genid", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setHttpOnly(value: Boolean): Self = StObject.set(x, "httpOnly", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setHttpOnlyUndefined: Self = StObject.set(x, "httpOnly", js.undefined)
+      
+      @scala.inline
+      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxAge(value: Double | session): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMaxAgeUndefined: Self = StObject.set(x, "maxAge", js.undefined)
+      
+      @scala.inline
+      def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setOverwriteUndefined: Self = StObject.set(x, "overwrite", js.undefined)
+      
+      @scala.inline
+      def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+      
+      @scala.inline
+      def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrefixUndefined: Self = StObject.set(x, "prefix", js.undefined)
+      
+      @scala.inline
+      def setRenew(value: Boolean): Self = StObject.set(x, "renew", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRenewUndefined: Self = StObject.set(x, "renew", js.undefined)
+      
+      @scala.inline
+      def setRolling(value: Boolean): Self = StObject.set(x, "rolling", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRollingUndefined: Self = StObject.set(x, "rolling", js.undefined)
+      
+      @scala.inline
+      def setSameSite(value: strict | lax | none | Boolean): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSameSiteUndefined: Self = StObject.set(x, "sameSite", js.undefined)
+      
+      @scala.inline
+      def setSecure(value: Boolean): Self = StObject.set(x, "secure", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSecureProxy(value: Boolean): Self = StObject.set(x, "secureProxy", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSecureProxyUndefined: Self = StObject.set(x, "secureProxy", js.undefined)
+      
+      @scala.inline
+      def setSecureUndefined: Self = StObject.set(x, "secure", js.undefined)
+      
+      @scala.inline
+      def setSigned(value: Boolean): Self = StObject.set(x, "signed", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSignedUndefined: Self = StObject.set(x, "signed", js.undefined)
+      
+      @scala.inline
+      def setStore(value: stores): Self = StObject.set(x, "store", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStoreUndefined: Self = StObject.set(x, "store", js.undefined)
+      
+      @scala.inline
+      def setValid(value: (/* ctx */ Context, /* session */ PartialSession) => Unit): Self = StObject.set(x, "valid", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setValidUndefined: Self = StObject.set(x, "valid", js.undefined)
+    }
   }
   
   @js.native
@@ -387,37 +520,36 @@ object mod {
       */
     def destroy(key: String): js.Any = js.native
     
-    def get(key: String, maxAge: js.UndefOr[scala.Nothing], data: Rolling): js.Any = js.native
     /**
       * get session object by key
       */
     def get(key: String, maxAge: Double, data: Rolling): js.Any = js.native
+    def get(key: String, maxAge: Unit, data: Rolling): js.Any = js.native
     @JSName("get")
     def get_session(key: String, maxAge: session, data: Rolling): js.Any = js.native
     
-    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: js.UndefOr[scala.Nothing], data: Changed): js.Any = js.native
     /**
       * set session object for key, with a maxAge (in ms)
       */
     def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Double, data: Changed): js.Any = js.native
+    def set(key: String, sess: PartialSessionexpirenumbe, maxAge: Unit, data: Changed): js.Any = js.native
     @JSName("set")
     def set_session(key: String, sess: PartialSessionexpirenumbe, maxAge: session, data: Changed): js.Any = js.native
   }
   
-  @js.native
   trait util extends StObject {
     
     /**
       * Decode the base64 cookie value to an object.
       */
-    def decode(str: String): js.Object = js.native
+    def decode(str: String): js.Object
     
     /**
       * Encode an object into a base64-encoded JSON string.
       */
-    def encode(obj: js.Object): String = js.native
+    def encode(obj: js.Object): String
     
-    def hash(sess: js.Any): String = js.native
+    def hash(sess: js.Any): String
   }
   object util {
     

@@ -2,105 +2,103 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Atrule extends StObject {
   
   @JSName("&.atrule")
-  var AmpersandDotatrule: Color = js.native
+  var AmpersandDotatrule: Color
   
   @JSName("&.attr-name")
-  var `AmpersandDotattr-name`: Color = js.native
+  var `AmpersandDotattr-name`: Color
   
   @JSName("&.attr-value")
-  var `AmpersandDotattr-value`: Color = js.native
+  var `AmpersandDotattr-value`: Color
   
   @JSName("&.bold")
-  var AmpersandDotbold: FontWeight = js.native
+  var AmpersandDotbold: FontWeight
   
   @JSName("&.boolean")
-  var AmpersandDotboolean: Color = js.native
+  var AmpersandDotboolean: Color
   
   @JSName("&.cdata")
-  var AmpersandDotcdata: FontStyle = js.native
+  var AmpersandDotcdata: FontStyle
   
   @JSName("&.class-name")
-  var `AmpersandDotclass-name`: Color = js.native
+  var `AmpersandDotclass-name`: Color
   
   @JSName("&.comment")
-  var AmpersandDotcomment: FontStyle = js.native
+  var AmpersandDotcomment: FontStyle
   
   @JSName("&.constant")
-  var AmpersandDotconstant: Color = js.native
+  var AmpersandDotconstant: Color
   
   @JSName("&.deleted")
-  var AmpersandDotdeleted: Color = js.native
+  var AmpersandDotdeleted: Color
   
   @JSName("&.directive.tag .tag")
-  var `AmpersandDotdirectiveDottag Dottag`: BackgroundColor = js.native
+  var `AmpersandDotdirectiveDottag Dottag`: BackgroundColor
   
   @JSName("&.doctype")
-  var AmpersandDotdoctype: FontStyle = js.native
+  var AmpersandDotdoctype: FontStyle
   
   @JSName("&.entity")
-  var AmpersandDotentity: Color = js.native
+  var AmpersandDotentity: Color
   
   @JSName("&.function")
-  var AmpersandDotfunction: Color = js.native
+  var AmpersandDotfunction: Color
   
   @JSName("&.important")
-  var AmpersandDotimportant: FontWeight = js.native
+  var AmpersandDotimportant: FontWeight
   
   @JSName("&.inserted")
-  var AmpersandDotinserted: Color = js.native
+  var AmpersandDotinserted: Color
   
   @JSName("&.italic")
-  var AmpersandDotitalic: FontStyleString = js.native
+  var AmpersandDotitalic: FontStyleString
   
   @JSName("&.keyword")
-  var AmpersandDotkeyword: Color = js.native
+  var AmpersandDotkeyword: Color
   
   @JSName("&.number")
-  var AmpersandDotnumber: Color = js.native
+  var AmpersandDotnumber: Color
   
   @JSName("&.operator")
-  var AmpersandDotoperator: Color = js.native
+  var AmpersandDotoperator: Color
   
   @JSName("&.prolog")
-  var AmpersandDotprolog: FontStyle = js.native
+  var AmpersandDotprolog: FontStyle
   
   @JSName("&.property")
-  var AmpersandDotproperty: Color = js.native
+  var AmpersandDotproperty: Color
   
   @JSName("&.punctuation")
-  var AmpersandDotpunctuation: Color = js.native
+  var AmpersandDotpunctuation: Color
   
   @JSName("&.regex")
-  var AmpersandDotregex: Color = js.native
+  var AmpersandDotregex: Color
   
   @JSName("&.selector")
-  var AmpersandDotselector: Color = js.native
+  var AmpersandDotselector: Color
   
   @JSName("&.string")
-  var AmpersandDotstring: Color = js.native
+  var AmpersandDotstring: Color
   
   @JSName("&.symbol")
-  var AmpersandDotsymbol: Color = js.native
+  var AmpersandDotsymbol: Color
   
   @JSName("&.tag")
-  var AmpersandDottag: Color = js.native
+  var AmpersandDottag: Color
   
   @JSName("&.url")
-  var AmpersandDoturl: Color = js.native
+  var AmpersandDoturl: Color
   
   @JSName("&.variable")
-  var AmpersandDotvariable: Color = js.native
+  var AmpersandDotvariable: Color
   
-  var WebkitFontSmoothing: String = js.native
+  var WebkitFontSmoothing: String
   
-  var fontFamily: String = js.native
+  var fontFamily: String
 }
 object Atrule {
   

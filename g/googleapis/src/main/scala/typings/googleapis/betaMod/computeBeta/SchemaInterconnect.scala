@@ -3,7 +3,6 @@ package typings.googleapis.betaMod.computeBeta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * network. For more information, see the  Dedicated overview page. (==
   * resource_for v1.interconnects ==) (== resource_for beta.interconnects ==)
   */
-@js.native
 trait SchemaInterconnect extends StObject {
   
   /**
@@ -21,71 +19,71 @@ trait SchemaInterconnect extends StObject {
     * packets can be carried over the interconnect and no BGP routes are
     * exchanged over it. By default, the status is set to true.
     */
-  var adminEnabled: js.UndefOr[Boolean] = js.native
+  var adminEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output Only] A list of CircuitInfo objects, that describe the individual
     * circuits in this LAG.
     */
-  var circuitInfos: js.UndefOr[js.Array[SchemaInterconnectCircuitInfo]] = js.native
+  var circuitInfos: js.UndefOr[js.Array[SchemaInterconnectCircuitInfo]] = js.undefined
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Customer name, to put in the Letter of Authorization as the party
     * authorized to request a crossconnect.
     */
-  var customerName: js.UndefOr[String] = js.native
+  var customerName: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A list of outages expected for this Interconnect.
     */
-  var expectedOutages: js.UndefOr[js.Array[SchemaInterconnectOutageNotification]] = js.native
+  var expectedOutages: js.UndefOr[js.Array[SchemaInterconnectOutageNotification]] = js.undefined
   
   /**
     * [Output Only] IP address configured on the Google side of the
     * Interconnect link. This can be used only for ping tests.
     */
-  var googleIpAddress: js.UndefOr[String] = js.native
+  var googleIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Google reference ID to be used when raising support tickets
     * with Google or otherwise to debug backend connectivity issues.
     */
-  var googleReferenceId: js.UndefOr[String] = js.native
+  var googleReferenceId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A list of the URLs of all InterconnectAttachments
     * configured to use this Interconnect.
     */
-  var interconnectAttachments: js.UndefOr[js.Array[String]] = js.native
+  var interconnectAttachments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Type of interconnect. Note that &quot;IT_PRIVATE&quot; has been
     * deprecated in favor of &quot;DEDICATED&quot;
     */
-  var interconnectType: js.UndefOr[String] = js.native
+  var interconnectType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#interconnect for
     * interconnects.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this Interconnect, which is
@@ -96,26 +94,26 @@ trait SchemaInterconnect extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make a get() request to retrieve an Interconnect.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this Interconnect resource. These can be later
     * modified by the setLabels method. Each label key/value must comply with
     * RFC1035. Label values may be empty.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Type of link requested. This field indicates speed of each of the links
     * in the bundle, not the entire bundle.
     */
-  var linkType: js.UndefOr[String] = js.native
+  var linkType: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the InterconnectLocation object that represents where this
     * connection is to be provisioned.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -126,7 +124,7 @@ trait SchemaInterconnect extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Email address to contact the customer NOC for operations and maintenance
@@ -134,42 +132,42 @@ trait SchemaInterconnect extends StObject {
     * used for notifications in addition to all other forms described, such as
     * Stackdriver logs alerting and Cloud Notifications.
     */
-  var nocContactEmail: js.UndefOr[String] = js.native
+  var nocContactEmail: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The current status of whether or not this Interconnect is
     * functional.
     */
-  var operationalStatus: js.UndefOr[String] = js.native
+  var operationalStatus: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] IP address configured on the customer side of the
     * Interconnect link. The customer should configure this IP address during
     * turnup when prompted by Google NOC. This can be used only for ping tests.
     */
-  var peerIpAddress: js.UndefOr[String] = js.native
+  var peerIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Number of links actually provisioned in this interconnect.
     */
-  var provisionedLinkCount: js.UndefOr[Double] = js.native
+  var provisionedLinkCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Target number of physical links in the link bundle, as requested by the
     * customer.
     */
-  var requestedLinkCount: js.UndefOr[Double] = js.native
+  var requestedLinkCount: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The current state of whether or not this Interconnect is
     * functional.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnect {
   

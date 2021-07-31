@@ -4,19 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mfiles.mfilesNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITheme extends /* key */ StringDictionary[String | Boolean | Double] {
+trait ITheme
+  extends StObject
+     with /* key */ StringDictionary[String | Boolean | Double] {
   
-  var last: `0` = js.native
+  var last: `0`
 }
 object ITheme {
   
   @scala.inline
-  def apply(last: `0`): ITheme = {
-    val __obj = js.Dynamic.literal(last = last.asInstanceOf[js.Any])
+  def apply(): ITheme = {
+    val __obj = js.Dynamic.literal(last = 0)
     __obj.asInstanceOf[ITheme]
   }
   

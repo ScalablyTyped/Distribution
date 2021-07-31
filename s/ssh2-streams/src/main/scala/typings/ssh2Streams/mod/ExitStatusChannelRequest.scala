@@ -3,23 +3,23 @@ package typings.ssh2Streams.mod
 import typings.ssh2Streams.ssh2StreamsStrings.`exit-status`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExitStatusChannelRequest extends ChannelRequest {
+trait ExitStatusChannelRequest
+  extends StObject
+     with ChannelRequest {
   
-  var code: Double = js.native
+  var code: Double
   
-  var recipient: Double = js.native
+  var recipient: Double
   
-  var request: `exit-status` = js.native
+  var request: `exit-status`
 }
 object ExitStatusChannelRequest {
   
   @scala.inline
-  def apply(code: Double, recipient: Double, request: `exit-status`): ExitStatusChannelRequest = {
-    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any])
+  def apply(code: Double, recipient: Double): ExitStatusChannelRequest = {
+    val __obj = js.Dynamic.literal(code = code.asInstanceOf[js.Any], recipient = recipient.asInstanceOf[js.Any], request = "exit-status")
     __obj.asInstanceOf[ExitStatusChannelRequest]
   }
   

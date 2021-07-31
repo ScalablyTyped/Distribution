@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Key images associated with this report
   */
-@js.native
-trait DiagnosticReportImage extends BackboneElement {
+trait DiagnosticReportImage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.native
+  var _comment: js.UndefOr[Element] = js.undefined
   
   /**
     * Comment about the image (e.g. explanation)
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to the image source
     */
-  var link: Reference = js.native
+  var link: Reference
 }
 object DiagnosticReportImage {
   

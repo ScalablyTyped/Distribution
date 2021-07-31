@@ -15,7 +15,6 @@ import typings.node.streamMod.TransformOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,8 +25,8 @@ object mod {
     extends TrackerBase
        with TrackerObject {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], todo: Double) = this()
     def this(name: String, todo: Double) = this()
+    def this(name: Unit, todo: Double) = this()
     
     def addWork(work: Double): Unit = js.native
     
@@ -43,21 +42,27 @@ object mod {
   class TrackerBase () extends EventEmitter {
     def this(name: String) = this()
     
+    def addListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("addListener")
     def addListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     
+    def on(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("on")
     def on_change(event: change, listener: TrackerEventListener): this.type = js.native
     
+    def once(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("once")
     def once_change(event: change, listener: TrackerEventListener): this.type = js.native
     
+    def prependListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("prependListener")
     def prependListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     
+    def prependOnceListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     
+    def removeListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("removeListener")
     def removeListener_change(event: change, listener: TrackerEventListener): this.type = js.native
   }
@@ -79,27 +84,27 @@ object mod {
     def finish(): Unit = js.native
     
     def newGroup(): TrackerGroup = js.native
-    def newGroup(name: js.UndefOr[scala.Nothing], weight: Double): TrackerGroup = js.native
     def newGroup(name: String): TrackerGroup = js.native
     def newGroup(name: String, weight: Double): TrackerGroup = js.native
+    def newGroup(name: Unit, weight: Double): TrackerGroup = js.native
     
     def newItem(): Tracker = js.native
-    def newItem(name: js.UndefOr[scala.Nothing], todo: js.UndefOr[scala.Nothing], weight: Double): Tracker = js.native
-    def newItem(name: js.UndefOr[scala.Nothing], todo: Double): Tracker = js.native
-    def newItem(name: js.UndefOr[scala.Nothing], todo: Double, weight: Double): Tracker = js.native
     def newItem(name: String): Tracker = js.native
-    def newItem(name: String, todo: js.UndefOr[scala.Nothing], weight: Double): Tracker = js.native
     def newItem(name: String, todo: Double): Tracker = js.native
     def newItem(name: String, todo: Double, weight: Double): Tracker = js.native
+    def newItem(name: String, todo: Unit, weight: Double): Tracker = js.native
+    def newItem(name: Unit, todo: Double): Tracker = js.native
+    def newItem(name: Unit, todo: Double, weight: Double): Tracker = js.native
+    def newItem(name: Unit, todo: Unit, weight: Double): Tracker = js.native
     
     def newStream(): TrackerStream = js.native
-    def newStream(name: js.UndefOr[scala.Nothing], todo: js.UndefOr[scala.Nothing], weight: Double): TrackerStream = js.native
-    def newStream(name: js.UndefOr[scala.Nothing], todo: Double): TrackerStream = js.native
-    def newStream(name: js.UndefOr[scala.Nothing], todo: Double, weight: Double): TrackerStream = js.native
     def newStream(name: String): TrackerStream = js.native
-    def newStream(name: String, todo: js.UndefOr[scala.Nothing], weight: Double): TrackerStream = js.native
     def newStream(name: String, todo: Double): TrackerStream = js.native
     def newStream(name: String, todo: Double, weight: Double): TrackerStream = js.native
+    def newStream(name: String, todo: Unit, weight: Double): TrackerStream = js.native
+    def newStream(name: Unit, todo: Double): TrackerStream = js.native
+    def newStream(name: Unit, todo: Double, weight: Double): TrackerStream = js.native
+    def newStream(name: Unit, todo: Unit, weight: Double): TrackerStream = js.native
   }
   
   @JSImport("are-we-there-yet", "TrackerStream")
@@ -108,13 +113,14 @@ object mod {
     extends Transform
        with TrackerObject {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], size: Double) = this()
     def this(name: String, size: Double) = this()
-    def this(name: js.UndefOr[scala.Nothing], size: js.UndefOr[scala.Nothing], options: TransformOptions) = this()
-    def this(name: js.UndefOr[scala.Nothing], size: Double, options: TransformOptions) = this()
-    def this(name: String, size: js.UndefOr[scala.Nothing], options: TransformOptions) = this()
+    def this(name: Unit, size: Double) = this()
     def this(name: String, size: Double, options: TransformOptions) = this()
+    def this(name: String, size: Unit, options: TransformOptions) = this()
+    def this(name: Unit, size: Double, options: TransformOptions) = this()
+    def this(name: Unit, size: Unit, options: TransformOptions) = this()
     
+    def addListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("addListener")
     def addListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("addListener")
@@ -132,6 +138,7 @@ object mod {
     
     def completed(): Double = js.native
     
+    def on(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("on")
     def on_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("on")
@@ -145,6 +152,7 @@ object mod {
     @JSName("on")
     def on_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
     
+    def once(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("once")
     def once_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("once")
@@ -163,6 +171,7 @@ object mod {
     /* InferMemberOverrides */
     override def pipe[T /* <: WritableStream */](destination: T, options: End): T = js.native
     
+    def prependListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("prependListener")
     def prependListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("prependListener")
@@ -176,6 +185,7 @@ object mod {
     @JSName("prependListener")
     def prependListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
     
+    def prependOnceListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("prependOnceListener")
     def prependOnceListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("prependOnceListener")
@@ -189,6 +199,7 @@ object mod {
     @JSName("prependOnceListener")
     def prependOnceListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
     
+    def removeListener(event: String, listener: GenericEventListener): this.type = js.native
     @JSName("removeListener")
     def removeListener_change(event: change, listener: TrackerEventListener): this.type = js.native
     @JSName("removeListener")
@@ -203,7 +214,11 @@ object mod {
     def removeListener_readable(event: readable, listener: js.Function0[Unit]): this.type = js.native
   }
   
-  type GenericEventListener = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait GenericEventListener extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   type TrackerEventListener = js.Function3[/* name */ String, /* completed */ Double, /* tracker */ TrackerObject, Unit]
   

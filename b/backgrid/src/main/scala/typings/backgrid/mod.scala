@@ -8,7 +8,6 @@ import typings.backbone.mod.View
 import typings.backbone.mod.ViewOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,23 +16,23 @@ object mod {
   @js.native
   class Body ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
     
     def initialize(options: js.Any): Unit = js.native
     
     def insertRow(
-      model: Model[_, ModelSetOptions, js.Object],
-      collection: Collection[Model[_, ModelSetOptions, js.Object]],
+      model: Model[js.Any, ModelSetOptions, js.Object],
+      collection: Collection[Model[js.Any, ModelSetOptions, js.Object]],
       options: js.Any
     ): js.Any = js.native
     
-    def moveToNextCell(model: Model[_, ModelSetOptions, js.Object], cell: Column, command: Command): js.Any = js.native
+    def moveToNextCell(model: Model[js.Any, ModelSetOptions, js.Object], cell: Column, command: Command): js.Any = js.native
     
     def refresh(): Body = js.native
     
     def removeRow(
-      model: Model[_, ModelSetOptions, js.Object],
-      collection: Collection[Model[_, ModelSetOptions, js.Object]],
+      model: Model[js.Any, ModelSetOptions, js.Object],
+      collection: Collection[Model[js.Any, ModelSetOptions, js.Object]],
       options: js.Any
     ): js.Any = js.native
   }
@@ -42,7 +41,7 @@ object mod {
   @js.native
   class Cell ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
     
     var editor: InputCellEditor = js.native
     
@@ -59,20 +58,23 @@ object mod {
   @js.native
   class CellEditor ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
     
     def initialize(options: js.Any): Unit = js.native
     
-    def postRender(model: Model[_, ModelSetOptions, js.Object], column: Model[_, ModelSetOptions, js.Object]): js.Any = js.native
+    def postRender(
+      model: Model[js.Any, ModelSetOptions, js.Object],
+      column: Model[js.Any, ModelSetOptions, js.Object]
+    ): js.Any = js.native
   }
   
   @JSImport("backgrid", "CellFormatter")
   @js.native
   class CellFormatter () extends StObject {
     
-    def fromRaw(rawData: js.Any, model: Model[_, ModelSetOptions, js.Object]): js.Any = js.native
+    def fromRaw(rawData: js.Any, model: Model[js.Any, ModelSetOptions, js.Object]): js.Any = js.native
     
-    def toRaw(formattedData: js.Any, model: Model[_, ModelSetOptions, js.Object]): js.Any = js.native
+    def toRaw(formattedData: js.Any, model: Model[js.Any, ModelSetOptions, js.Object]): js.Any = js.native
   }
   
   @JSImport("backgrid", "Column")
@@ -81,12 +83,12 @@ object mod {
     extends Model[js.Any, ModelSetOptions, js.Object] {
     def this(attributes: js.Any) = this()
     def this(
-      attributes: js.UndefOr[scala.Nothing],
-      options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+      attributes: js.Any,
+      options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
     ) = this()
     def this(
-      attributes: js.Any,
-      options: CombinedModelConstructorOptions[js.Object, Model[_, ModelSetOptions, js.Object]]
+      attributes: Unit,
+      options: CombinedModelConstructorOptions[js.Object, Model[js.Any, ModelSetOptions, js.Object]]
     ) = this()
   }
   
@@ -121,7 +123,7 @@ object mod {
   @js.native
   class Footer ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
   }
   
   @JSImport("backgrid", "Grid")
@@ -134,7 +136,7 @@ object mod {
     
     var footer: js.Any = js.native
     
-    def getSelectedModels(): js.Array[Model[_, ModelSetOptions, js.Object]] = js.native
+    def getSelectedModels(): js.Array[Model[js.Any, ModelSetOptions, js.Object]] = js.native
     
     var header: js.Any = js.native
     
@@ -143,16 +145,16 @@ object mod {
     def insertColumn(options: js.Any*): Grid = js.native
     
     def insertRow(
-      model: Model[_, ModelSetOptions, js.Object],
-      collection: Collection[Model[_, ModelSetOptions, js.Object]],
+      model: Model[js.Any, ModelSetOptions, js.Object],
+      collection: Collection[Model[js.Any, ModelSetOptions, js.Object]],
       options: js.Any
     ): js.Any = js.native
     
     def removeColumn(options: js.Any*): Grid = js.native
     
     def removeRow(
-      model: Model[_, ModelSetOptions, js.Object],
-      collection: Collection[Model[_, ModelSetOptions, js.Object]],
+      model: Model[js.Any, ModelSetOptions, js.Object],
+      collection: Collection[Model[js.Any, ModelSetOptions, js.Object]],
       options: js.Any
     ): js.Any = js.native
   }
@@ -161,13 +163,13 @@ object mod {
   @js.native
   class Header ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
   }
   
   @JSImport("backgrid", "InputCellEditor")
   @js.native
   class InputCellEditor () extends CellEditor {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
     
     def saveOrCancel(event: js.Any): js.Any = js.native
   }
@@ -184,7 +186,7 @@ object mod {
   @js.native
   class Row ()
     extends View[Model[js.Any, ModelSetOptions, js.Object]] {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
   }
   
   @JSImport("backgrid", "SelectFormatter")
@@ -194,31 +196,30 @@ object mod {
   @JSImport("backgrid", "StringCell")
   @js.native
   class StringCell () extends Cell {
-    def this(options: ViewOptions[Model[_, ModelSetOptions, js.Object]]) = this()
+    def this(options: ViewOptions[Model[js.Any, ModelSetOptions, js.Object]]) = this()
   }
   
   @JSImport("backgrid", "StringFormatter")
   @js.native
   class StringFormatter () extends CellFormatter
   
-  @js.native
   trait ColumnAttr extends StObject {
     
-    var cell: String = js.native
+    var cell: String
     
-    var editable: Boolean = js.native
+    var editable: Boolean
     
-    var formater: String = js.native
+    var formater: String
     
-    var headerCell: String = js.native
+    var headerCell: String
     
-    var label: String = js.native
+    var label: String
     
-    var name: String = js.native
+    var name: String
     
-    var renderable: Boolean = js.native
+    var renderable: Boolean
     
-    var sortable: Boolean = js.native
+    var sortable: Boolean
   }
   object ColumnAttr {
     
@@ -266,25 +267,24 @@ object mod {
     }
   }
   
-  @js.native
   trait GridOptions extends StObject {
     
-    var body: js.UndefOr[Body] = js.native
+    var body: js.UndefOr[Body] = js.undefined
     
-    var collection: Collection[Model[_, ModelSetOptions, js.Object]] = js.native
+    var collection: Collection[Model[js.Any, ModelSetOptions, js.Object]]
     
-    var columns: js.Array[Column] = js.native
+    var columns: js.Array[Column]
     
-    var footer: js.UndefOr[Footer] = js.native
+    var footer: js.UndefOr[Footer] = js.undefined
     
-    var header: js.UndefOr[Header] = js.native
+    var header: js.UndefOr[Header] = js.undefined
     
-    var row: js.UndefOr[Row] = js.native
+    var row: js.UndefOr[Row] = js.undefined
   }
   object GridOptions {
     
     @scala.inline
-    def apply(collection: Collection[Model[_, ModelSetOptions, js.Object]], columns: js.Array[Column]): GridOptions = {
+    def apply(collection: Collection[Model[js.Any, ModelSetOptions, js.Object]], columns: js.Array[Column]): GridOptions = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], columns = columns.asInstanceOf[js.Any])
       __obj.asInstanceOf[GridOptions]
     }
@@ -299,7 +299,7 @@ object mod {
       def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
       
       @scala.inline
-      def setCollection(value: Collection[Model[_, ModelSetOptions, js.Object]]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      def setCollection(value: Collection[Model[js.Any, ModelSetOptions, js.Object]]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setColumns(value: js.Array[Column]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])

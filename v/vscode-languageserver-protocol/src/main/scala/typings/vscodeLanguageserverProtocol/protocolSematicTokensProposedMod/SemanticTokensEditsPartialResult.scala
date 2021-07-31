@@ -2,13 +2,11 @@ package typings.vscodeLanguageserverProtocol.protocolSematicTokensProposedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokensEditsPartialResult extends StObject {
   
-  var edits: js.Array[SemanticTokensEdit] = js.native
+  var edits: js.Array[SemanticTokensEdit]
 }
 object SemanticTokensEditsPartialResult {
   

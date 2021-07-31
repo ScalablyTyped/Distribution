@@ -4,7 +4,6 @@ import typings.classValidator.validationArgumentsMod.ValidationArguments
 import typings.classValidator.validationMetadataArgsMod.ValidationMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationMetadataMod {
@@ -27,7 +26,7 @@ object validationMetadataMod {
     /**
       * Array of constraints of this validation.
       */
-    var constraints: js.Array[_] = js.native
+    var constraints: js.Array[js.Any] = js.native
     
     var context: js.UndefOr[js.Any] = js.native
     

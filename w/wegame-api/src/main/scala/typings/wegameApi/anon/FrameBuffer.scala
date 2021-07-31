@@ -3,15 +3,13 @@ package typings.wegameApi.anon
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameBuffer extends StObject {
   
-  var frameBuffer: ArrayBuffer = js.native
+  var frameBuffer: ArrayBuffer
   
-  var isLastFrame: Boolean = js.native
+  var isLastFrame: Boolean
 }
 object FrameBuffer {
   

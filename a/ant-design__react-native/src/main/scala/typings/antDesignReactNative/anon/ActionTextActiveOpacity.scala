@@ -3,31 +3,29 @@ package typings.antDesignReactNative.anon
 import typings.reactNative.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionTextActiveOpacity extends StObject {
   
-  var WrapComponent: View = js.native
+  var WrapComponent: View
   
-  var actionTextActiveOpacity: Double = js.native
+  var actionTextActiveOpacity: Double
   
-  var actionTextUnderlayColor: String = js.native
+  var actionTextUnderlayColor: String
   
-  var dismissText: String = js.native
+  var dismissText: String
   
-  var okText: String = js.native
+  var okText: String
   
-  def onDismiss(): Unit = js.native
+  def onDismiss(): Unit
   
-  def onOk(_underscore: js.Any): Unit = js.native
+  def onOk(_underscore: js.Any): Unit
   
-  def onVisibleChange(_underscore: js.Any): Unit = js.native
+  def onVisibleChange(_underscore: js.Any): Unit
   
-  var title: String = js.native
+  var title: String
   
-  var triggerType: String = js.native
+  var triggerType: String
 }
 object ActionTextActiveOpacity {
   

@@ -10,10 +10,13 @@ import typings.tensorflowTfjsCore.distTypesMod.BackendValues
 import typings.tensorflowTfjsCore.distTypesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object texUtilMod {
+  
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait PackingScheme extends StObject
@@ -22,7 +25,7 @@ object texUtilMod {
   object PackingScheme extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PackingScheme with Double] = js.native
+    def apply(value: Double): js.UndefOr[PackingScheme & Double] = js.native
     
     /**
       * All values in a single texel are densely packed without any constraints.
@@ -40,8 +43,10 @@ object texUtilMod {
       *
       */
     @js.native
-    sealed trait DENSE extends PackingScheme
-    /* 0 */ val DENSE: typings.tensorflowTfjsBackendWebgl.texUtilMod.PackingScheme.DENSE with Double = js.native
+    sealed trait DENSE
+      extends StObject
+         with PackingScheme
+    /* 0 */ val DENSE: typings.tensorflowTfjsBackendWebgl.texUtilMod.PackingScheme.DENSE & Double = js.native
     
     /**
       * Single texels contain only values from the same batch, and from adjacent
@@ -60,8 +65,10 @@ object texUtilMod {
       *
       */
     @js.native
-    sealed trait SHARED_BATCH extends PackingScheme
-    /* 1 */ val SHARED_BATCH: typings.tensorflowTfjsBackendWebgl.texUtilMod.PackingScheme.SHARED_BATCH with Double = js.native
+    sealed trait SHARED_BATCH
+      extends StObject
+         with PackingScheme
+    /* 1 */ val SHARED_BATCH: typings.tensorflowTfjsBackendWebgl.texUtilMod.PackingScheme.SHARED_BATCH & Double = js.native
   }
   
   @js.native
@@ -71,27 +78,37 @@ object texUtilMod {
   object PhysicalTextureType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PhysicalTextureType with Double] = js.native
+    def apply(value: Double): js.UndefOr[PhysicalTextureType & Double] = js.native
     
     @js.native
-    sealed trait PACKED_2X2_FLOAT16 extends PhysicalTextureType
-    /* 4 */ val PACKED_2X2_FLOAT16: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT16 with Double = js.native
+    sealed trait PACKED_2X2_FLOAT16
+      extends StObject
+         with PhysicalTextureType
+    /* 4 */ val PACKED_2X2_FLOAT16: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT16 & Double = js.native
     
     @js.native
-    sealed trait PACKED_2X2_FLOAT32 extends PhysicalTextureType
-    /* 3 */ val PACKED_2X2_FLOAT32: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT32 with Double = js.native
+    sealed trait PACKED_2X2_FLOAT32
+      extends StObject
+         with PhysicalTextureType
+    /* 3 */ val PACKED_2X2_FLOAT32: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_2X2_FLOAT32 & Double = js.native
     
     @js.native
-    sealed trait PACKED_4X1_UNSIGNED_BYTE extends PhysicalTextureType
-    /* 2 */ val PACKED_4X1_UNSIGNED_BYTE: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_4X1_UNSIGNED_BYTE with Double = js.native
+    sealed trait PACKED_4X1_UNSIGNED_BYTE
+      extends StObject
+         with PhysicalTextureType
+    /* 2 */ val PACKED_4X1_UNSIGNED_BYTE: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.PACKED_4X1_UNSIGNED_BYTE & Double = js.native
     
     @js.native
-    sealed trait UNPACKED_FLOAT16 extends PhysicalTextureType
-    /* 0 */ val UNPACKED_FLOAT16: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.UNPACKED_FLOAT16 with Double = js.native
+    sealed trait UNPACKED_FLOAT16
+      extends StObject
+         with PhysicalTextureType
+    /* 0 */ val UNPACKED_FLOAT16: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.UNPACKED_FLOAT16 & Double = js.native
     
     @js.native
-    sealed trait UNPACKED_FLOAT32 extends PhysicalTextureType
-    /* 1 */ val UNPACKED_FLOAT32: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.UNPACKED_FLOAT32 with Double = js.native
+    sealed trait UNPACKED_FLOAT32
+      extends StObject
+         with PhysicalTextureType
+    /* 1 */ val UNPACKED_FLOAT32: typings.tensorflowTfjsBackendWebgl.texUtilMod.PhysicalTextureType.UNPACKED_FLOAT32 & Double = js.native
   }
   
   @js.native
@@ -101,86 +118,83 @@ object texUtilMod {
   object TextureUsage extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TextureUsage with Double] = js.native
+    def apply(value: Double): js.UndefOr[TextureUsage & Double] = js.native
     
     @js.native
-    sealed trait DOWNLOAD extends TextureUsage
-    /* 3 */ val DOWNLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.DOWNLOAD with Double = js.native
+    sealed trait DOWNLOAD
+      extends StObject
+         with TextureUsage
+    /* 3 */ val DOWNLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.DOWNLOAD & Double = js.native
     
     @js.native
-    sealed trait PIXELS extends TextureUsage
-    /* 2 */ val PIXELS: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.PIXELS with Double = js.native
+    sealed trait PIXELS
+      extends StObject
+         with TextureUsage
+    /* 2 */ val PIXELS: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.PIXELS & Double = js.native
     
     @js.native
-    sealed trait RENDER extends TextureUsage
-    /* 0 */ val RENDER: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.RENDER with Double = js.native
+    sealed trait RENDER
+      extends StObject
+         with TextureUsage
+    /* 0 */ val RENDER: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.RENDER & Double = js.native
     
     @js.native
-    sealed trait UPLOAD extends TextureUsage
-    /* 1 */ val UPLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.UPLOAD with Double = js.native
+    sealed trait UPLOAD
+      extends StObject
+         with TextureUsage
+    /* 1 */ val UPLOAD: typings.tensorflowTfjsBackendWebgl.texUtilMod.TextureUsage.UPLOAD & Double = js.native
   }
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "decodeMatrixFromUnpackedColorRGBAArray")
-  @js.native
-  def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: Float32Array, matrix: Float32Array, channels: Double): Unit = js.native
+  @scala.inline
+  def decodeMatrixFromUnpackedColorRGBAArray(unpackedArray: Float32Array, matrix: Float32Array, channels: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeMatrixFromUnpackedColorRGBAArray")(unpackedArray.asInstanceOf[js.Any], matrix.asInstanceOf[js.Any], channels.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getColorMatrixTextureShapeWidthHeight")
-  @js.native
-  def getColorMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getColorMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getDenseTexShape")
-  @js.native
-  def getDenseTexShape(shape: js.Array[Double]): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getDenseTexShape(shape: js.Array[Double]): js.Tuple2[Double, Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDenseTexShape")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getMatrixSizeFromUnpackedArraySize")
-  @js.native
-  def getMatrixSizeFromUnpackedArraySize(unpackedSize: Double, channelsPerTexture: Double): Double = js.native
+  @scala.inline
+  def getMatrixSizeFromUnpackedArraySize(unpackedSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getMatrixSizeFromUnpackedArraySize")(unpackedSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getPackedMatrixTextureShapeWidthHeight")
-  @js.native
-  def getPackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getPackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getPackedRGBAArraySizeFromMatrixShape")
-  @js.native
-  def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = js.native
+  @scala.inline
+  def getPackedRGBAArraySizeFromMatrixShape(rows: Double, columns: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getPackedRGBAArraySizeFromMatrixShape")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getTextureConfig")
-  @js.native
-  def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = js.native
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getTextureConfig")
-  @js.native
-  def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = js.native
+  @scala.inline
+  def getTextureConfig(gl: WebGLRenderingContext): TextureConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any]).asInstanceOf[TextureConfig]
+  @scala.inline
+  def getTextureConfig(gl: WebGLRenderingContext, textureHalfFloatExtension: js.Any): TextureConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextureConfig")(gl.asInstanceOf[js.Any], textureHalfFloatExtension.asInstanceOf[js.Any])).asInstanceOf[TextureConfig]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getUnpackedArraySizeFromMatrixSize")
-  @js.native
-  def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = js.native
+  @scala.inline
+  def getUnpackedArraySizeFromMatrixSize(matrixSize: Double, channelsPerTexture: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedArraySizeFromMatrixSize")(matrixSize.asInstanceOf[js.Any], channelsPerTexture.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/tex_util", "getUnpackedMatrixTextureShapeWidthHeight")
-  @js.native
-  def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = js.native
+  @scala.inline
+  def getUnpackedMatrixTextureShapeWidthHeight(rows: Double, columns: Double): js.Tuple2[Double, Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUnpackedMatrixTextureShapeWidthHeight")(rows.asInstanceOf[js.Any], columns.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Double]]
   
-  @js.native
   trait TextureConfig extends StObject {
     
-    var defaultNumChannels: Double = js.native
+    var defaultNumChannels: Double
     
-    var downloadTextureFormat: Double = js.native
+    var downloadTextureFormat: Double
     
-    var downloadUnpackNumChannels: Double = js.native
+    var downloadUnpackNumChannels: Double
     
-    var internalFormatFloat: Double = js.native
+    var internalFormatFloat: Double
     
-    var internalFormatHalfFloat: Double = js.native
+    var internalFormatHalfFloat: Double
     
-    var internalFormatPackedFloat: Double = js.native
+    var internalFormatPackedFloat: Double
     
-    var internalFormatPackedHalfFloat: Double = js.native
+    var internalFormatPackedHalfFloat: Double
     
-    var textureFormatFloat: Double = js.native
+    var textureFormatFloat: Double
     
-    var textureTypeFloat: Double = js.native
+    var textureTypeFloat: Double
     
-    var textureTypeHalfFloat: Double = js.native
+    var textureTypeHalfFloat: Double
   }
   object TextureConfig {
     
@@ -236,31 +250,30 @@ object texUtilMod {
     }
   }
   
-  @js.native
   trait TextureData extends StObject {
     
-    var complexParentRefCount: Double = js.native
+    var complexParentRefCount: Double
     
-    var complexTensorInfos: js.UndefOr[Imag] = js.native
+    var complexTensorInfos: js.UndefOr[Imag] = js.undefined
     
-    var dtype: DataType = js.native
+    var dtype: DataType
     
-    var isPacked: js.UndefOr[Boolean] = js.native
+    var isPacked: js.UndefOr[Boolean] = js.undefined
     
-    var refCount: Double = js.native
+    var refCount: Double
     
-    var shape: js.Array[Double] = js.native
+    var shape: js.Array[Double]
     
-    var slice: js.UndefOr[FlatOffset] = js.native
+    var slice: js.UndefOr[FlatOffset] = js.undefined
     
     /** [rows, columns] shape of the texture. */
-    var texShape: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var texShape: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var texture: js.UndefOr[WebGLTexture] = js.native
+    var texture: js.UndefOr[WebGLTexture] = js.undefined
     
-    var usage: js.UndefOr[TextureUsage] = js.native
+    var usage: js.UndefOr[TextureUsage] = js.undefined
     
-    var values: js.UndefOr[BackendValues] = js.native
+    var values: js.UndefOr[BackendValues] = js.undefined
   }
   object TextureData {
     

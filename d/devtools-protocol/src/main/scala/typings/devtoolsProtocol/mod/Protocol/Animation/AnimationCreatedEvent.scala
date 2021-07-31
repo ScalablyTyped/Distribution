@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Animation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationCreatedEvent extends StObject {
   
   /**
     * Id of the animation that was created.
     */
-  var id: String = js.native
+  var id: String
 }
 object AnimationCreatedEvent {
   

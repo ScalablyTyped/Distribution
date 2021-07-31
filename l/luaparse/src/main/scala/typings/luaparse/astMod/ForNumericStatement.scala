@@ -2,36 +2,29 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForNumericStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.ForNumericStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.ForNumericStatement]
+     with _Statement {
   
-  var body: js.Array[Statement] = js.native
+  var body: js.Array[Statement]
   
-  var end: Expression = js.native
+  var end: Expression
   
-  var start: Expression = js.native
+  var start: Expression
   
-  var step: Expression | Null = js.native
+  var step: Expression | Null
   
-  var variable: Identifier = js.native
+  var variable: Identifier
 }
 object ForNumericStatement {
   
   @scala.inline
-  def apply(
-    body: js.Array[Statement],
-    end: Expression,
-    start: Expression,
-    `type`: typings.luaparse.luaparseStrings.ForNumericStatement,
-    variable: Identifier
-  ): ForNumericStatement = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: js.Array[Statement], end: Expression, start: Expression, variable: Identifier): ForNumericStatement = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], variable = variable.asInstanceOf[js.Any], step = null)
+    __obj.updateDynamic("type")("ForNumericStatement")
     __obj.asInstanceOf[ForNumericStatement]
   }
   

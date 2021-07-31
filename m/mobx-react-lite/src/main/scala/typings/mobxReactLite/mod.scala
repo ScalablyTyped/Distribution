@@ -12,72 +12,58 @@ import typings.react.mod.RefForwardingComponent
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mobx-react-lite", "enableStaticRendering")
+  @JSImport("mobx-react-lite", JSImport.Namespace)
   @js.native
-  def enableStaticRendering(enable: Boolean): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx-react-lite", "isObserverBatched")
-  @js.native
-  def isObserverBatched(): Boolean = js.native
+  @scala.inline
+  def enableStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react-lite", "isUsingStaticRendering")
-  @js.native
-  def isUsingStaticRendering(): Boolean = js.native
+  @scala.inline
+  def isObserverBatched(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObserverBatched")().asInstanceOf[Boolean]
   
-  @JSImport("mobx-react-lite", "observer")
-  @js.native
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = js.native
-  @JSImport("mobx-react-lite", "observer")
-  @js.native
-  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = js.native
-  @JSImport("mobx-react-lite", "observer")
-  @js.native
-  def observer[C /* <: FunctionComponent[_] | (RefForwardingComponent[_, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C): (C with DisplayName) | (C with (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[_] with RefAttributes[_]]])) = js.native
-  @JSImport("mobx-react-lite", "observer")
-  @js.native
-  def observer[C /* <: FunctionComponent[_] | (RefForwardingComponent[_, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C, options: Options): (C with DisplayName) | (C with (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[_] with RefAttributes[_]]])) = js.native
-  @JSImport("mobx-react-lite", "observer")
-  @js.native
-  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[TRef]]] = js.native
+  @scala.inline
+  def isUsingStaticRendering(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUsingStaticRendering")().asInstanceOf[Boolean]
   
-  @JSImport("mobx-react-lite", "observerBatching")
-  @js.native
-  def observerBatching(reactionScheduler: js.Any): Unit = js.native
+  @scala.inline
+  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P]): FunctionComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[FunctionComponent[P]]
+  @scala.inline
+  def observer[P /* <: js.Object */](baseComponent: FunctionComponent[P], options: IObserverOptions): FunctionComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FunctionComponent[P]]
+  @scala.inline
+  def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = ^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any]).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
+  @scala.inline
+  def observer[C /* <: FunctionComponent[js.Any] | (RefForwardingComponent[js.Any, js.Object]) */, Options /* <: IObserverOptions */](baseComponent: C, options: Options): (C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]])) = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[(C & DisplayName) | (C & (MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[js.Any] & RefAttributes[js.Any]]]))]
+  @scala.inline
+  def observer[P /* <: js.Object */, TRef](baseComponent: RefForwardingComponent[TRef, P], options: IObserverOptionsforwardRe): MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("observer")(baseComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[TRef]]]]
   
-  @JSImport("mobx-react-lite", "useAsObservableSource")
-  @js.native
-  def useAsObservableSource[TSource](current: TSource): TSource = js.native
+  @scala.inline
+  def observerBatching(reactionScheduler: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observerBatching")(reactionScheduler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx-react-lite", "useLocalObservable")
-  @js.native
-  def useLocalObservable[TStore /* <: Record[String, _] */](initializer: js.Function0[TStore]): TStore = js.native
-  @JSImport("mobx-react-lite", "useLocalObservable")
-  @js.native
-  def useLocalObservable[TStore /* <: Record[String, _] */](
+  @scala.inline
+  def useAsObservableSource[TSource](current: TSource): TSource = ^.asInstanceOf[js.Dynamic].applyDynamic("useAsObservableSource")(current.asInstanceOf[js.Any]).asInstanceOf[TSource]
+  
+  @scala.inline
+  def useLocalObservable[TStore /* <: Record[String, js.Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  @scala.inline
+  def useLocalObservable[TStore /* <: Record[String, js.Any] */](
     initializer: js.Function0[TStore],
     annotations: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnnotationsMap<TStore, never> */ js.Any
-  ): TStore = js.native
+  ): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalObservable")(initializer.asInstanceOf[js.Any], annotations.asInstanceOf[js.Any])).asInstanceOf[TStore]
   
-  @JSImport("mobx-react-lite", "useLocalStore")
-  @js.native
-  def useLocalStore[TStore /* <: Record[String, _] */](initializer: js.Function0[TStore]): TStore = js.native
-  @JSImport("mobx-react-lite", "useLocalStore")
-  @js.native
-  def useLocalStore[TStore /* <: Record[String, _] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = js.native
+  @scala.inline
+  def useLocalStore[TStore /* <: Record[String, js.Any] */](initializer: js.Function0[TStore]): TStore = ^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any]).asInstanceOf[TStore]
+  @scala.inline
+  def useLocalStore[TStore /* <: Record[String, js.Any] */, TSource /* <: js.Object */](initializer: js.Function1[/* source */ TSource, TStore], current: TSource): TStore = (^.asInstanceOf[js.Dynamic].applyDynamic("useLocalStore")(initializer.asInstanceOf[js.Any], current.asInstanceOf[js.Any])).asInstanceOf[TStore]
   
-  @JSImport("mobx-react-lite", "useObserver")
-  @js.native
-  def useObserver[T](fn: js.Function0[T]): T = js.native
-  @JSImport("mobx-react-lite", "useObserver")
-  @js.native
-  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = js.native
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def useObserver[T](fn: js.Function0[T], baseComponentName: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useObserver")(fn.asInstanceOf[js.Any], baseComponentName.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("mobx-react-lite", "useStaticRendering")
-  @js.native
-  def useStaticRendering(enable: Boolean): Unit = js.native
+  @scala.inline
+  def useStaticRendering(enable: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useStaticRendering")(enable.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

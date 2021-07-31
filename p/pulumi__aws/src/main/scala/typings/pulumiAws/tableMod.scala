@@ -19,7 +19,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableMod {
@@ -158,6 +157,10 @@ object tableMod {
   /* static members */
   object Table {
     
+    @JSImport("@pulumi/aws/dynamodb/table", "Table")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Table resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -167,40 +170,34 @@ object tableMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb/table", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Table = js.native
-    @JSImport("@pulumi/aws/dynamodb/table", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Table = js.native
-    @JSImport("@pulumi/aws/dynamodb/table", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableState): Table = js.native
-    @JSImport("@pulumi/aws/dynamodb/table", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): Table = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableState): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Table]
     
     /**
       * Returns true if the given object is an instance of Table.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb/table", "Table.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean]
   }
   
-  @js.native
   trait TableArgs extends StObject {
     
     /**
       * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
       */
-    val attributes: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]] = js.native
+    val attributes: Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]
     
     /**
       * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
       */
-    val billingMode: js.UndefOr[Input[String]] = js.native
+    val billingMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Describe a GSI for the table;
@@ -209,13 +206,13 @@ object tableMod {
       */
     val globalSecondaryIndexes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the hash key in the index; must be
       * defined as an attribute in the resource.
       */
-    val hashKey: Input[String] = js.native
+    val hashKey: Input[String]
     
     /**
       * Describe an LSI on the table;
@@ -224,62 +221,62 @@ object tableMod {
       */
     val localSecondaryIndexes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the index
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Point-in-time recovery options.
       */
-    val pointInTimeRecovery: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]] = js.native
+    val pointInTimeRecovery: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]] = js.undefined
     
     /**
       * The name of the range key; must be defined
       */
-    val rangeKey: js.UndefOr[Input[String]] = js.native
+    val rangeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    val readCapacity: js.UndefOr[Input[Double]] = js.native
+    val readCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
       */
-    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]] = js.native
+    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]] = js.undefined
     
     /**
       * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
       */
-    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]] = js.native
+    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]] = js.undefined
     
     /**
       * Indicates whether Streams are to be enabled (true) or disabled (false).
       */
-    val streamEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val streamEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
       */
-    val streamViewType: js.UndefOr[Input[String]] = js.native
+    val streamViewType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to populate on the created table.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Defines ttl, has two properties, and can only be specified once:
       */
-    val ttl: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]] = js.native
+    val ttl: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]] = js.undefined
     
     /**
       * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    val writeCapacity: js.UndefOr[Input[Double]] = js.native
+    val writeCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object TableArgs {
     
@@ -399,23 +396,22 @@ object tableMod {
     }
   }
   
-  @js.native
   trait TableState extends StObject {
     
     /**
       * The arn of the table
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of nested attribute definitions. Only required for `hashKey` and `rangeKey` attributes. Each attribute has two properties:
       */
-    val attributes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]] = js.native
+    val attributes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableAttribute]]]] = js.undefined
     
     /**
       * Controls how you are charged for read and write throughput and how you manage capacity. The valid values are `PROVISIONED` and `PAY_PER_REQUEST`. Defaults to `PROVISIONED`.
       */
-    val billingMode: js.UndefOr[Input[String]] = js.native
+    val billingMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Describe a GSI for the table;
@@ -424,13 +420,13 @@ object tableMod {
       */
     val globalSecondaryIndexes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableGlobalSecondaryIndex]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the hash key in the index; must be
       * defined as an attribute in the resource.
       */
-    val hashKey: js.UndefOr[Input[String]] = js.native
+    val hashKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Describe an LSI on the table;
@@ -439,47 +435,47 @@ object tableMod {
       */
     val localSecondaryIndexes: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableLocalSecondaryIndex]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the index
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Point-in-time recovery options.
       */
-    val pointInTimeRecovery: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]] = js.native
+    val pointInTimeRecovery: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TablePointInTimeRecovery]] = js.undefined
     
     /**
       * The name of the range key; must be defined
       */
-    val rangeKey: js.UndefOr[Input[String]] = js.native
+    val rangeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of read units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    val readCapacity: js.UndefOr[Input[Double]] = js.native
+    val readCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block(s) with [DynamoDB Global Tables V2 (version 2019.11.21)](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/globaltables.V2.html) replication configurations. Detailed below.
       */
-    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]] = js.native
+    val replicas: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dynamodb.TableReplica]]]] = js.undefined
     
     /**
       * Encryption at rest options. AWS DynamoDB tables are automatically encrypted at rest with an AWS owned Customer Master Key if this argument isn't specified.
       */
-    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]] = js.native
+    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableServerSideEncryption]] = js.undefined
     
     /**
       * The ARN of the Table Stream. Only available when `streamEnabled = true`
       */
-    val streamArn: js.UndefOr[Input[String]] = js.native
+    val streamArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether Streams are to be enabled (true) or disabled (false).
       */
-    val streamEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val streamEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A timestamp, in ISO 8601 format, for this stream. Note that this timestamp is not
@@ -487,27 +483,27 @@ object tableMod {
       * table name and this field is guaranteed to be unique.
       * It can be used for creating CloudWatch Alarms. Only available when `streamEnabled = true`
       */
-    val streamLabel: js.UndefOr[Input[String]] = js.native
+    val streamLabel: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When an item in the table is modified, StreamViewType determines what information is written to the table's stream. Valid values are `KEYS_ONLY`, `NEW_IMAGE`, `OLD_IMAGE`, `NEW_AND_OLD_IMAGES`.
       */
-    val streamViewType: js.UndefOr[Input[String]] = js.native
+    val streamViewType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to populate on the created table.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Defines ttl, has two properties, and can only be specified once:
       */
-    val ttl: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]] = js.native
+    val ttl: js.UndefOr[Input[typings.pulumiAws.inputMod.dynamodb.TableTtl]] = js.undefined
     
     /**
       * The number of write units for this index. Must be set if billingMode is set to PROVISIONED.
       */
-    val writeCapacity: js.UndefOr[Input[Double]] = js.native
+    val writeCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object TableState {
     

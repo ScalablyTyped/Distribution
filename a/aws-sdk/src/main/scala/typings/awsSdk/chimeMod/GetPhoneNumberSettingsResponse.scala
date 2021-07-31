@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPhoneNumberSettingsResponse extends StObject {
   
   /**
     * The default outbound calling name for the account.
     */
-  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.native
+  var CallingName: js.UndefOr[typings.awsSdk.chimeMod.CallingName] = js.undefined
   
   /**
     * The updated outbound calling name timestamp, in ISO 8601 format.
     */
-  var CallingNameUpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.native
+  var CallingNameUpdatedTimestamp: js.UndefOr[Iso8601Timestamp] = js.undefined
 }
 object GetPhoneNumberSettingsResponse {
   

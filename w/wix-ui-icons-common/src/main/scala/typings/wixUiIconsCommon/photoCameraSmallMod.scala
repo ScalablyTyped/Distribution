@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object photoCameraSmallMod extends Shortcut {
@@ -15,10 +14,11 @@ object photoCameraSmallMod extends Shortcut {
   @js.native
   val default: SFC[PhotoCameraSmallProps] = js.native
   
-  @js.native
-  trait PhotoCameraSmallProps extends SVGAttributes[SVGElement] {
+  trait PhotoCameraSmallProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object PhotoCameraSmallProps {
     

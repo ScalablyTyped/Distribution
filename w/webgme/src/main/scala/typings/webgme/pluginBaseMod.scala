@@ -3,7 +3,6 @@ package typings.webgme
 import typings.webgme.GmePlugin.PluginBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginBaseMod {
@@ -13,5 +12,7 @@ object pluginBaseMod {
     */
   @JSImport("plugin/PluginBase", JSImport.Namespace)
   @js.native
-  class ^ () extends PluginBase
+  class ^ ()
+    extends StObject
+       with PluginBase
 }

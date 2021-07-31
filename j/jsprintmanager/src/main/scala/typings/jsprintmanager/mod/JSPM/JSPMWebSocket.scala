@@ -2,47 +2,26 @@ package typings.jsprintmanager.mod.JSPM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.JSPMWebSocket")
 @js.native
 class JSPMWebSocket () extends StObject {
   def this(addr: String) = this()
-  def this(addr: js.UndefOr[scala.Nothing], port: Double) = this()
   def this(addr: String, port: Double) = this()
-  def this(addr: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], secure: Boolean) = this()
-  def this(addr: js.UndefOr[scala.Nothing], port: Double, secure: Boolean) = this()
-  def this(addr: String, port: js.UndefOr[scala.Nothing], secure: Boolean) = this()
+  def this(addr: Unit, port: Double) = this()
   def this(addr: String, port: Double, secure: Boolean) = this()
-  def this(
-    addr: js.UndefOr[scala.Nothing],
-    port: js.UndefOr[scala.Nothing],
-    secure: js.UndefOr[scala.Nothing],
-    auto_reconnect: Boolean
-  ) = this()
-  def this(
-    addr: js.UndefOr[scala.Nothing],
-    port: js.UndefOr[scala.Nothing],
-    secure: Boolean,
-    auto_reconnect: Boolean
-  ) = this()
-  def this(
-    addr: js.UndefOr[scala.Nothing],
-    port: Double,
-    secure: js.UndefOr[scala.Nothing],
-    auto_reconnect: Boolean
-  ) = this()
-  def this(addr: js.UndefOr[scala.Nothing], port: Double, secure: Boolean, auto_reconnect: Boolean) = this()
-  def this(
-    addr: String,
-    port: js.UndefOr[scala.Nothing],
-    secure: js.UndefOr[scala.Nothing],
-    auto_reconnect: Boolean
-  ) = this()
-  def this(addr: String, port: js.UndefOr[scala.Nothing], secure: Boolean, auto_reconnect: Boolean) = this()
-  def this(addr: String, port: Double, secure: js.UndefOr[scala.Nothing], auto_reconnect: Boolean) = this()
+  def this(addr: String, port: Unit, secure: Boolean) = this()
+  def this(addr: Unit, port: Double, secure: Boolean) = this()
+  def this(addr: Unit, port: Unit, secure: Boolean) = this()
   def this(addr: String, port: Double, secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(addr: String, port: Double, secure: Unit, auto_reconnect: Boolean) = this()
+  def this(addr: String, port: Unit, secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(addr: String, port: Unit, secure: Unit, auto_reconnect: Boolean) = this()
+  def this(addr: Unit, port: Double, secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(addr: Unit, port: Double, secure: Unit, auto_reconnect: Boolean) = this()
+  def this(addr: Unit, port: Unit, secure: Boolean, auto_reconnect: Boolean) = this()
+  def this(addr: Unit, port: Unit, secure: Unit, auto_reconnect: Boolean) = this()
   
   var _addr: js.Any = js.native
   
@@ -84,7 +63,7 @@ class JSPMWebSocket () extends StObject {
   
   val port: Double = js.native
   
-  def send(data: js.Any): js.Promise[_] = js.native
+  def send(data: js.Any): js.Promise[js.Any] = js.native
   
   def start(): js.Promise[Unit] = js.native
   

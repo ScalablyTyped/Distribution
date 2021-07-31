@@ -6,89 +6,87 @@ import typings.electron.electronStrings.simplex
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebContentsPrintOptions extends StObject {
   
   /**
     * Whether the web page should be collated.
     */
-  var collate: js.UndefOr[Boolean] = js.native
+  var collate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set whether the printed web page will be in color or grayscale. Default is
     * `true`.
     */
-  var color: js.UndefOr[Boolean] = js.native
+  var color: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of copies of the web page to print.
     */
-  var copies: js.UndefOr[Double] = js.native
+  var copies: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the printer device name to use. Must be the system-defined name and not the
     * 'friendly' name, e.g 'Brother_QL_820NWB' and not 'Brother QL-820NWB'.
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
-  var dpi: js.UndefOr[Record[String, Double]] = js.native
+  var dpi: js.UndefOr[Record[String, Double]] = js.undefined
   
   /**
     * Set the duplex mode of the printed web page. Can be `simplex`, `shortEdge`, or
     * `longEdge`.
     */
-  var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.native
+  var duplexMode: js.UndefOr[simplex | shortEdge | longEdge] = js.undefined
   
   /**
     * String to be printed as page footer.
     */
-  var footer: js.UndefOr[String] = js.native
+  var footer: js.UndefOr[String] = js.undefined
   
   /**
     * String to be printed as page header.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the web page should be printed in landscape mode. Default is `false`.
     */
-  var landscape: js.UndefOr[Boolean] = js.native
+  var landscape: js.UndefOr[Boolean] = js.undefined
   
-  var margins: js.UndefOr[Margins] = js.native
+  var margins: js.UndefOr[Margins] = js.undefined
   
   /**
     * The page range to print. On macOS, only one range is honored.
     */
-  var pageRanges: js.UndefOr[js.Array[PageRanges]] = js.native
+  var pageRanges: js.UndefOr[js.Array[PageRanges]] = js.undefined
   
   /**
     * Specify page size of the printed document. Can be `A3`, `A4`, `A5`, `Legal`,
     * `Letter`, `Tabloid` or an Object containing `height`.
     */
-  var pageSize: js.UndefOr[String | Size] = js.native
+  var pageSize: js.UndefOr[String | Size] = js.undefined
   
   /**
     * The number of pages to print per page sheet.
     */
-  var pagesPerSheet: js.UndefOr[Double] = js.native
+  var pagesPerSheet: js.UndefOr[Double] = js.undefined
   
   /**
     * Prints the background color and image of the web page. Default is `false`.
     */
-  var printBackground: js.UndefOr[Boolean] = js.native
+  var printBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The scale factor of the web page.
     */
-  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Don't ask user for print settings. Default is `false`.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
 }
 object WebContentsPrintOptions {
   

@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EditorViewModelFailures extends Object {
+trait EditorViewModelFailures
+  extends StObject
+     with Object {
   
   /**
     * The readonly error message.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor-EditorViewModel.html#failures)
     */
-  var error: Error = js.native
+  var error: Error
 }
 object EditorViewModelFailures {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a system condition that must be in effect for a background task to run. */
-@js.native
 trait SystemCondition extends StObject {
   
   /** Gets the condition type of a system condition. */
-  var conditionType: SystemConditionType = js.native
+  var conditionType: SystemConditionType
 }
 object SystemCondition {
   

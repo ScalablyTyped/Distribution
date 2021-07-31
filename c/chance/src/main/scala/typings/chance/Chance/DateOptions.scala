@@ -3,25 +3,23 @@ package typings.chance.Chance
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateOptions extends StObject {
   
-  var american: js.UndefOr[Boolean] = js.native
+  var american: js.UndefOr[Boolean] = js.undefined
   
-  var day: js.UndefOr[Double] = js.native
+  var day: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Date] = js.native
+  var max: js.UndefOr[Date] = js.undefined
   
-  var min: js.UndefOr[Date] = js.native
+  var min: js.UndefOr[Date] = js.undefined
   
-  var month: js.UndefOr[Double] = js.native
+  var month: js.UndefOr[Double] = js.undefined
   
-  var string: js.UndefOr[Boolean] = js.native
+  var string: js.UndefOr[Boolean] = js.undefined
   
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object DateOptions {
   

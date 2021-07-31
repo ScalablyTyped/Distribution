@@ -6,15 +6,13 @@ import typings.qlik.qlikStrings.R
 import typings.qlik.qlikStrings.V
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDataOptions extends StObject {
   
-  var frequencyMode: V | P | R | N = js.native
+  var frequencyMode: V | P | R | N
   
-  var rows: Double = js.native
+  var rows: Double
 }
 object GetDataOptions {
   

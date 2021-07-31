@@ -3,33 +3,31 @@ package typings.kendoUi.kendo.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttView extends StObject {
   
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
-  var dayHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var dayHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var monthHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var monthHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var range: js.UndefOr[GanttViewRange] = js.native
+  var range: js.UndefOr[GanttViewRange] = js.undefined
   
-  var resizeTooltipFormat: js.UndefOr[String] = js.native
+  var resizeTooltipFormat: js.UndefOr[String] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var slotSize: js.UndefOr[Double | String] = js.native
+  var slotSize: js.UndefOr[Double | String] = js.undefined
   
-  var timeHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var timeHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var weekHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var weekHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var yearHeaderTemplate: js.UndefOr[String | js.Function] = js.native
+  var yearHeaderTemplate: js.UndefOr[String | js.Function] = js.undefined
 }
 object GanttView {
   

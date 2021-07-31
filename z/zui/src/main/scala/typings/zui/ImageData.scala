@@ -2,31 +2,29 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageData extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
   // width: number;
   // height: number;
-  var left: Double = js.native
+  var left: Double
   
-  var originHeight: Double = js.native
+  var originHeight: Double
   
-  var originWidth: Double = js.native
+  var originWidth: Double
   
-  var right: Double = js.native
+  var right: Double
   
-  var scaleHeight: Double = js.native
+  var scaleHeight: Double
   
-  var scaleWidth: Double = js.native
+  var scaleWidth: Double
   
-  var scaled: Boolean = js.native
+  var scaled: Boolean
   
-  var top: Double = js.native
+  var top: Double
 }
 object ImageData {
   

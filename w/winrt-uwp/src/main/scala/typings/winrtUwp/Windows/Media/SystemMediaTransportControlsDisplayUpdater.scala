@@ -5,18 +5,16 @@ import typings.winrtUwp.Windows.Storage.StorageFile
 import typings.winrtUwp.Windows.Storage.Streams.RandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality to update the music information that is displayed on the SystemMediaTransportControls . */
-@js.native
 trait SystemMediaTransportControlsDisplayUpdater extends StObject {
   
   /** Gets or sets the media id of the app. */
-  var appMediaId: String = js.native
+  var appMediaId: String
   
   /** Clears out all of the media metadata. */
-  def clearAll(): Unit = js.native
+  def clearAll(): Unit
   
   /**
     * Initialize the media properties using the specified file.
@@ -24,25 +22,25 @@ trait SystemMediaTransportControlsDisplayUpdater extends StObject {
     * @param source The file to initialize the media properties.
     * @return When this method completes, it returns a boolean value that indicates true if the operation succeeded; otherwise, false.
     */
-  def copyFromFileAsync(`type`: MediaPlaybackType, source: StorageFile): IPromiseWithIAsyncOperation[Boolean] = js.native
+  def copyFromFileAsync(`type`: MediaPlaybackType, source: StorageFile): IPromiseWithIAsyncOperation[Boolean]
   
   /** Gets the image properties associated with the currently playing media. */
-  var imageProperties: ImageDisplayProperties = js.native
+  var imageProperties: ImageDisplayProperties
   
   /** Gets the music properties associated with the currently playing media. */
-  var musicProperties: MusicDisplayProperties = js.native
+  var musicProperties: MusicDisplayProperties
   
   /** Gets or sets thumbnail image associated with the currently playing media. */
-  var thumbnail: RandomAccessStreamReference = js.native
+  var thumbnail: RandomAccessStreamReference
   
   /** Gets or sets the type of media. */
-  var `type`: MediaPlaybackType = js.native
+  var `type`: MediaPlaybackType
   
   /** Updates the metadata for the currently playing media. */
-  def update(): Unit = js.native
+  def update(): Unit
   
   /** Gets the video properties associated with the currently playing media. */
-  var videoProperties: VideoDisplayProperties = js.native
+  var videoProperties: VideoDisplayProperties
 }
 object SystemMediaTransportControlsDisplayUpdater {
   

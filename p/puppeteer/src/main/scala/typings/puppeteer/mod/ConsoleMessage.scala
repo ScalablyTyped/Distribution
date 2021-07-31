@@ -2,28 +2,26 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsoleMessage extends StObject {
   
   /** The message arguments. */
-  def args(): js.Array[JSHandle[_]] = js.native
+  def args(): js.Array[JSHandle[js.Any]]
   
   /** The location the message originated from */
-  def location(): ConsoleMessageLocation = js.native
+  def location(): ConsoleMessageLocation
   
   /** The message text. */
-  def text(): String = js.native
+  def text(): String
   
-  def `type`(): ConsoleMessageType = js.native
+  def `type`(): ConsoleMessageType
 }
 object ConsoleMessage {
   
   @scala.inline
   def apply(
-    args: () => js.Array[JSHandle[_]],
+    args: () => js.Array[JSHandle[js.Any]],
     location: () => ConsoleMessageLocation,
     text: () => String,
     `type`: () => ConsoleMessageType
@@ -37,7 +35,7 @@ object ConsoleMessage {
   implicit class ConsoleMessageMutableBuilder[Self <: ConsoleMessage] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArgs(value: () => js.Array[JSHandle[_]]): Self = StObject.set(x, "args", js.Any.fromFunction0(value))
+    def setArgs(value: () => js.Array[JSHandle[js.Any]]): Self = StObject.set(x, "args", js.Any.fromFunction0(value))
     
     @scala.inline
     def setLocation(value: () => ConsoleMessageLocation): Self = StObject.set(x, "location", js.Any.fromFunction0(value))

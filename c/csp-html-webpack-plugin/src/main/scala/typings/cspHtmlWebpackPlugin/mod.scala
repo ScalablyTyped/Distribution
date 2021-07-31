@@ -8,7 +8,6 @@ import typings.cspHtmlWebpackPlugin.cspHtmlWebpackPluginStrings.sha512
 import typings.tapable.mod.AsyncSeriesWaterfallHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,10 +19,18 @@ object mod {
     * @param policy - the policy object
     * @param additionalOpts - additional config options
     */
-  class ^ () extends CspHtmlWebpackPlugin {
+  class ^ ()
+    extends StObject
+       with CspHtmlWebpackPlugin {
     def this(policy: Policy) = this()
-    def this(policy: js.UndefOr[scala.Nothing], additionalOpts: AdditionalOptions) = this()
+    def this(policy: Unit, additionalOpts: AdditionalOptions) = this()
     def this(policy: Policy, additionalOpts: AdditionalOptions) = this()
+    
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(
+      compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any
+    ): Unit = js.native
   }
   
   // Fallback when nothing works.
@@ -45,7 +52,6 @@ object mod {
     * }
     * ```
     */
-  @js.native
   trait AdditionalOptions extends StObject {
     
     /**
@@ -57,25 +63,25 @@ object mod {
       * * If `enabled` is set the false, it will disable generating a CSP for
       *   all instances of HtmlWebpackPlugin in your webpack config.
       */
-    var enabled: js.UndefOr[Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])] = js.native
+    var enabled: js.UndefOr[Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])] = js.undefined
     
     /**
       * A `<string, boolean>` entry for which policy rules are allowed to
       * include hashes.
       */
-    var hashEnabled: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var hashEnabled: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
     /**
       * The hashing method. Your node version must also accept this hashing
       * method.
       */
-    var hashingMethod: js.UndefOr[sha256 | sha384 | sha512] = js.native
+    var hashingMethod: js.UndefOr[sha256 | sha384 | sha512] = js.undefined
     
     /**
       * A `<string, boolean>` entry for which policy rules are allowed to
       * include nonces.
       */
-    var nonceEnabled: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var nonceEnabled: js.UndefOr[StringDictionary[Boolean]] = js.undefined
   }
   object AdditionalOptions {
     
@@ -117,13 +123,12 @@ object mod {
     }
   }
   
-  @js.native
   trait CspHtmlWebpackPlugin extends StObject {
     
     @JSName("apply")
     def apply(
       compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify WebpackCompiler */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object CspHtmlWebpackPlugin {
     
@@ -151,45 +156,43 @@ object mod {
   
   // Helpers for extracting the relevant generic types from
   // HtmlWebpackPlugin.Hooks.
-  @js.native
   trait HtmlPluginDataHookV3[T] extends StObject {
     
-    var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, _, _] = js.native
+    var htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]
   }
   object HtmlPluginDataHookV3 {
     
     @scala.inline
-    def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, _, _]): HtmlPluginDataHookV3[T] = {
+    def apply[T](htmlWebpackPluginAfterHtmlProcessing: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV3[T] = {
       val __obj = js.Dynamic.literal(htmlWebpackPluginAfterHtmlProcessing = htmlWebpackPluginAfterHtmlProcessing.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV3[T]]
     }
     
     @scala.inline
-    implicit class HtmlPluginDataHookV3MutableBuilder[Self <: HtmlPluginDataHookV3[_], T] (val x: Self with HtmlPluginDataHookV3[T]) extends AnyVal {
+    implicit class HtmlPluginDataHookV3MutableBuilder[Self <: HtmlPluginDataHookV3[?], T] (val x: Self & HtmlPluginDataHookV3[T]) extends AnyVal {
       
       @scala.inline
-      def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, _, _]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
+      def setHtmlWebpackPluginAfterHtmlProcessing(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "htmlWebpackPluginAfterHtmlProcessing", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait HtmlPluginDataHookV4[T] extends StObject {
     
-    var beforeEmit: AsyncSeriesWaterfallHook[T, _, _] = js.native
+    var beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]
   }
   object HtmlPluginDataHookV4 {
     
     @scala.inline
-    def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, _, _]): HtmlPluginDataHookV4[T] = {
+    def apply[T](beforeEmit: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): HtmlPluginDataHookV4[T] = {
       val __obj = js.Dynamic.literal(beforeEmit = beforeEmit.asInstanceOf[js.Any])
       __obj.asInstanceOf[HtmlPluginDataHookV4[T]]
     }
     
     @scala.inline
-    implicit class HtmlPluginDataHookV4MutableBuilder[Self <: HtmlPluginDataHookV4[_], T] (val x: Self with HtmlPluginDataHookV4[T]) extends AnyVal {
+    implicit class HtmlPluginDataHookV4MutableBuilder[Self <: HtmlPluginDataHookV4[?], T] (val x: Self & HtmlPluginDataHookV4[T]) extends AnyVal {
       
       @scala.inline
-      def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, _, _]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
+      def setBeforeEmit(value: AsyncSeriesWaterfallHook[T, js.Any, js.Any]): Self = StObject.set(x, "beforeEmit", value.asInstanceOf[js.Any])
     }
   }
   
@@ -213,10 +216,9 @@ object mod {
   /* augmented module */
   object htmlWebpackPluginAugmentingMod {
     
-    @js.native
     trait Options extends StObject {
       
-      var cspPlugin: js.UndefOr[AdditionalOptionspolicyPo] = js.native
+      var cspPlugin: js.UndefOr[AdditionalOptionspolicyPo] = js.undefined
     }
     object Options {
       

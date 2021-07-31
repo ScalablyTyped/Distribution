@@ -4,7 +4,6 @@ import typings.msRestAzure.mod.CloudErrorParameters
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkModelsMod {
@@ -21,18 +20,17 @@ object linkModelsMod {
     def this(parameters: CloudErrorParameters) = this()
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /**
       * The object that represents the operation.
       */
-    var display: js.UndefOr[OperationDisplay] = js.native
+    var display: js.UndefOr[OperationDisplay] = js.undefined
     
     /**
       * Operation name: {provider}/{resource}/{operation}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Operation {
     
@@ -59,28 +57,27 @@ object linkModelsMod {
     }
   }
   
-  @js.native
   trait OperationDisplay extends StObject {
     
     /**
       * Description of the operation.
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Operation type: Read, write, delete, etc.
       */
-    var operation: js.UndefOr[String] = js.native
+    var operation: js.UndefOr[String] = js.undefined
     
     /**
       * Service provider: Microsoft.Resources
       */
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
     /**
       * Resource on which the operation is performed: Profile, endpoint, etc.
       */
-    var resource: js.UndefOr[String] = js.native
+    var resource: js.UndefOr[String] = js.undefined
   }
   object OperationDisplay {
     
@@ -120,7 +117,9 @@ object linkModelsMod {
   }
   
   @js.native
-  trait OperationListResult extends Array[Operation] {
+  trait OperationListResult
+    extends StObject
+       with Array[Operation] {
     
     /**
       * URL to get the next set of operation list results if there are any.
@@ -153,13 +152,12 @@ object linkModelsMod {
     val `type`: js.UndefOr[js.Any] = js.native
   }
   
-  @js.native
   trait ResourceLinkFilter extends StObject {
     
     /**
       * The ID of the target resource.
       */
-    var targetId: String = js.native
+    var targetId: String
   }
   object ResourceLinkFilter {
     
@@ -177,23 +175,22 @@ object linkModelsMod {
     }
   }
   
-  @js.native
   trait ResourceLinkProperties extends StObject {
     
     /**
       * Notes about the resource link.
       */
-    var notes: js.UndefOr[String] = js.native
+    var notes: js.UndefOr[String] = js.undefined
     
     /**
       * The fully qualified ID of the source resource in the link.
       */
-    val sourceId: js.UndefOr[String] = js.native
+    val sourceId: js.UndefOr[String] = js.undefined
     
     /**
       * The fully qualified ID of the target resource in the link.
       */
-    var targetId: String = js.native
+    var targetId: String
   }
   object ResourceLinkProperties {
     
@@ -224,7 +221,9 @@ object linkModelsMod {
   }
   
   @js.native
-  trait ResourceLinkResult extends Array[ResourceLink] {
+  trait ResourceLinkResult
+    extends StObject
+       with Array[ResourceLink] {
     
     /**
       * The URL to use for getting the next set of results.

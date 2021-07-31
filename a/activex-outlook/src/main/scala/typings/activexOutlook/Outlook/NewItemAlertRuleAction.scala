@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewItemAlertRuleAction extends StObject {
   
-  val ActionType: OlRuleActionType = js.native
+  val ActionType: OlRuleActionType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Outlook.NewItemAlertRuleAction_typekey")
-  var OutlookDotNewItemAlertRuleAction_typekey: NewItemAlertRuleAction = js.native
+  var OutlookDotNewItemAlertRuleAction_typekey: NewItemAlertRuleAction
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var Text: String = js.native
+  var Text: String
 }
 object NewItemAlertRuleAction {
   

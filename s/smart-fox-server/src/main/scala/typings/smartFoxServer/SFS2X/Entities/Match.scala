@@ -5,7 +5,6 @@ import typings.smartFoxServer.SFS2X.Requests.System.FindRoomsRequest
 import typings.smartFoxServer.SFS2X.Requests.System.FindUsersRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -13,10 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // http://docs2x.smartfoxserver.com/api-docs/jsdoc/symbols/SFS2X.Entities.Match.html
 object Match {
   
-  @js.native
   trait BoolMatch extends StObject
   
-  @js.native
   trait LogicOperator extends StObject
   
   @js.native
@@ -82,15 +79,11 @@ object Match {
     var varName: String = js.native
   }
   
-  @js.native
   trait NumberMatch extends StObject
   
-  @js.native
   trait RoomProperties extends StObject
   
-  @js.native
   trait StringMatch extends StObject
   
-  @js.native
   trait UserProperties extends StObject
 }

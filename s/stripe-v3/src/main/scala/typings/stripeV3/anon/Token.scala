@@ -2,17 +2,15 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
   /*
     * Converts the provided token into a PaymentMethod to use for
     * confirmation.
     */
-  var token: String = js.native
+  var token: String
 }
 object Token {
   

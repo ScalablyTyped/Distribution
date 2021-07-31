@@ -2,28 +2,26 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotPsarParamsOptions extends StObject {
   
   /**
     * (Highstock) Number of maximum decimals that are used in PSAR
     * calculations.
     */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Acceleration factor increases by increment each time the
     * extreme point makes a new high.
     */
-  var increment: js.UndefOr[Double] = js.native
+  var increment: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Index from which PSAR is starting calculation
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The initial value for acceleration factor. Acceleration
@@ -31,13 +29,13 @@ trait PlotPsarParamsOptions extends StObject {
     * each time the extreme point makes a new high. AF can reach a maximum of
     * maxAccelerationFactor, no matter how long the uptrend extends.
     */
-  var initialAccelerationFactor: js.UndefOr[Double] = js.native
+  var initialAccelerationFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The Maximum value for acceleration factor. AF can reach a
     * maximum of maxAccelerationFactor, no matter how long the uptrend extends.
     */
-  var maxAccelerationFactor: js.UndefOr[Double] = js.native
+  var maxAccelerationFactor: js.UndefOr[Double] = js.undefined
 }
 object PlotPsarParamsOptions {
   

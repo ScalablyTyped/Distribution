@@ -67,154 +67,152 @@ import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.UserProfile
 import typings.googleAppsScript.GoogleAppsScript.Classroom.Schema.YouTubeVideo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classroom extends StObject {
   
-  var Courses: js.UndefOr[CoursesCollection] = js.native
+  var Courses: js.UndefOr[CoursesCollection] = js.undefined
   
-  var Invitations: js.UndefOr[InvitationsCollection] = js.native
+  var Invitations: js.UndefOr[InvitationsCollection] = js.undefined
   
-  var Registrations: js.UndefOr[RegistrationsCollection] = js.native
+  var Registrations: js.UndefOr[RegistrationsCollection] = js.undefined
   
-  var UserProfiles: js.UndefOr[UserProfilesCollection] = js.native
+  var UserProfiles: js.UndefOr[UserProfilesCollection] = js.undefined
   
   // Create a new instance of Announcement
-  def newAnnouncement(): Announcement = js.native
+  def newAnnouncement(): Announcement
   
   // Create a new instance of Assignment
-  def newAssignment(): Assignment = js.native
+  def newAssignment(): Assignment
   
   // Create a new instance of AssignmentSubmission
-  def newAssignmentSubmission(): AssignmentSubmission = js.native
+  def newAssignmentSubmission(): AssignmentSubmission
   
   // Create a new instance of Attachment
-  def newAttachment(): Attachment = js.native
+  def newAttachment(): Attachment
   
   // Create a new instance of CloudPubsubTopic
-  def newCloudPubsubTopic(): CloudPubsubTopic = js.native
+  def newCloudPubsubTopic(): CloudPubsubTopic
   
   // Create a new instance of Course
-  def newCourse(): Course = js.native
+  def newCourse(): Course
   
   // Create a new instance of CourseAlias
-  def newCourseAlias(): CourseAlias = js.native
+  def newCourseAlias(): CourseAlias
   
   // Create a new instance of CourseMaterial
-  def newCourseMaterial(): CourseMaterial = js.native
+  def newCourseMaterial(): CourseMaterial
   
   // Create a new instance of CourseMaterialSet
-  def newCourseMaterialSet(): CourseMaterialSet = js.native
+  def newCourseMaterialSet(): CourseMaterialSet
   
   // Create a new instance of CourseRosterChangesInfo
-  def newCourseRosterChangesInfo(): CourseRosterChangesInfo = js.native
+  def newCourseRosterChangesInfo(): CourseRosterChangesInfo
   
   // Create a new instance of CourseWork
-  def newCourseWork(): CourseWork = js.native
+  def newCourseWork(): CourseWork
   
   // Create a new instance of CourseWorkChangesInfo
-  def newCourseWorkChangesInfo(): CourseWorkChangesInfo = js.native
+  def newCourseWorkChangesInfo(): CourseWorkChangesInfo
   
   // Create a new instance of Date
-  def newDate(): Date = js.native
+  def newDate(): Date
   
   // Create a new instance of DriveFile
-  def newDriveFile(): DriveFile = js.native
+  def newDriveFile(): DriveFile
   
   // Create a new instance of DriveFolder
-  def newDriveFolder(): DriveFolder = js.native
+  def newDriveFolder(): DriveFolder
   
   // Create a new instance of Feed
-  def newFeed(): Feed = js.native
+  def newFeed(): Feed
   
   // Create a new instance of Form
-  def newForm(): Form = js.native
+  def newForm(): Form
   
   // Create a new instance of GlobalPermission
-  def newGlobalPermission(): GlobalPermission = js.native
+  def newGlobalPermission(): GlobalPermission
   
   // Create a new instance of GradeHistory
-  def newGradeHistory(): GradeHistory = js.native
+  def newGradeHistory(): GradeHistory
   
   // Create a new instance of GuardianInvitation
-  def newGuardianInvitation(): GuardianInvitation = js.native
+  def newGuardianInvitation(): GuardianInvitation
   
   // Create a new instance of IndividualStudentsOptions
-  def newIndividualStudentsOptions(): IndividualStudentsOptions = js.native
+  def newIndividualStudentsOptions(): IndividualStudentsOptions
   
   // Create a new instance of Invitation
-  def newInvitation(): Invitation = js.native
+  def newInvitation(): Invitation
   
   // Create a new instance of Link
-  def newLink(): Link = js.native
+  def newLink(): Link
   
   // Create a new instance of Material
-  def newMaterial(): Material = js.native
+  def newMaterial(): Material
   
   // Create a new instance of ModifyAnnouncementAssigneesRequest
-  def newModifyAnnouncementAssigneesRequest(): ModifyAnnouncementAssigneesRequest = js.native
+  def newModifyAnnouncementAssigneesRequest(): ModifyAnnouncementAssigneesRequest
   
   // Create a new instance of ModifyAttachmentsRequest
-  def newModifyAttachmentsRequest(): ModifyAttachmentsRequest = js.native
+  def newModifyAttachmentsRequest(): ModifyAttachmentsRequest
   
   // Create a new instance of ModifyCourseWorkAssigneesRequest
-  def newModifyCourseWorkAssigneesRequest(): ModifyCourseWorkAssigneesRequest = js.native
+  def newModifyCourseWorkAssigneesRequest(): ModifyCourseWorkAssigneesRequest
   
   // Create a new instance of ModifyIndividualStudentsOptions
-  def newModifyIndividualStudentsOptions(): ModifyIndividualStudentsOptions = js.native
+  def newModifyIndividualStudentsOptions(): ModifyIndividualStudentsOptions
   
   // Create a new instance of MultipleChoiceQuestion
-  def newMultipleChoiceQuestion(): MultipleChoiceQuestion = js.native
+  def newMultipleChoiceQuestion(): MultipleChoiceQuestion
   
   // Create a new instance of MultipleChoiceSubmission
-  def newMultipleChoiceSubmission(): MultipleChoiceSubmission = js.native
+  def newMultipleChoiceSubmission(): MultipleChoiceSubmission
   
   // Create a new instance of Name
-  def newName(): Name = js.native
+  def newName(): Name
   
   // Create a new instance of ReclaimStudentSubmissionRequest
-  def newReclaimStudentSubmissionRequest(): js.Any = js.native
+  def newReclaimStudentSubmissionRequest(): js.Any
   
   // Create a new instance of Registration
-  def newRegistration(): Registration = js.native
+  def newRegistration(): Registration
   
   // Create a new instance of ReturnStudentSubmissionRequest
-  def newReturnStudentSubmissionRequest(): js.Any = js.native
+  def newReturnStudentSubmissionRequest(): js.Any
   
   // Create a new instance of SharedDriveFile
-  def newSharedDriveFile(): SharedDriveFile = js.native
+  def newSharedDriveFile(): SharedDriveFile
   
   // Create a new instance of ShortAnswerSubmission
-  def newShortAnswerSubmission(): ShortAnswerSubmission = js.native
+  def newShortAnswerSubmission(): ShortAnswerSubmission
   
   // Create a new instance of StateHistory
-  def newStateHistory(): StateHistory = js.native
+  def newStateHistory(): StateHistory
   
   // Create a new instance of Student
-  def newStudent(): Student = js.native
+  def newStudent(): Student
   
   // Create a new instance of StudentSubmission
-  def newStudentSubmission(): StudentSubmission = js.native
+  def newStudentSubmission(): StudentSubmission
   
   // Create a new instance of SubmissionHistory
-  def newSubmissionHistory(): SubmissionHistory = js.native
+  def newSubmissionHistory(): SubmissionHistory
   
   // Create a new instance of Teacher
-  def newTeacher(): Teacher = js.native
+  def newTeacher(): Teacher
   
   // Create a new instance of TimeOfDay
-  def newTimeOfDay(): TimeOfDay = js.native
+  def newTimeOfDay(): TimeOfDay
   
   // Create a new instance of TurnInStudentSubmissionRequest
-  def newTurnInStudentSubmissionRequest(): js.Any = js.native
+  def newTurnInStudentSubmissionRequest(): js.Any
   
   // Create a new instance of UserProfile
-  def newUserProfile(): UserProfile = js.native
+  def newUserProfile(): UserProfile
   
   // Create a new instance of YouTubeVideo
-  def newYouTubeVideo(): YouTubeVideo = js.native
+  def newYouTubeVideo(): YouTubeVideo
 }
 object Classroom {
   
@@ -1074,7 +1072,6 @@ object Classroom {
       def remove(id: String): Unit = js.native
     }
     
-    @js.native
     trait RegistrationsCollection extends StObject {
       
       // Creates a `Registration`, causing Classroom to start sending notifications
@@ -1103,11 +1100,11 @@ object Classroom {
       //       not have permission to determine whether or not it exists; or
       //     * the specified `cloudPubsubTopic` cannot be located, or Classroom has
       //       not been granted permission to publish to it.
-      def create(resource: Registration): Registration = js.native
+      def create(resource: Registration): Registration
       
       // Deletes a `Registration`, causing Classroom to stop sending notifications
       // for that `Registration`.
-      def remove(registrationId: String): Unit = js.native
+      def remove(registrationId: String): Unit
     }
     object RegistrationsCollection {
       
@@ -1314,19 +1311,18 @@ object Classroom {
       }
     }
     
-    @js.native
     trait UserProfilesCollection extends StObject {
       
-      var GuardianInvitations: js.UndefOr[GuardianInvitationsCollection] = js.native
+      var GuardianInvitations: js.UndefOr[GuardianInvitationsCollection] = js.undefined
       
-      var Guardians: js.UndefOr[GuardiansCollection] = js.native
+      var Guardians: js.UndefOr[GuardiansCollection] = js.undefined
       
       // Returns a user profile.
       // This method returns the following error codes:
       // * `PERMISSION_DENIED` if the requesting user is not permitted to access
       // this user profile, if no profile exists with the requested ID, or for
       // access errors.
-      def get(userId: String): UserProfile = js.native
+      def get(userId: String): UserProfile
     }
     object UserProfilesCollection {
       
@@ -1359,32 +1355,31 @@ object Classroom {
   
   object Schema {
     
-    @js.native
     trait Announcement extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var assigneeMode: js.UndefOr[String] = js.native
+      var assigneeMode: js.UndefOr[String] = js.undefined
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var creatorUserId: js.UndefOr[String] = js.native
+      var creatorUserId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.native
+      var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
       
-      var materials: js.UndefOr[js.Array[Material]] = js.native
+      var materials: js.UndefOr[js.Array[Material]] = js.undefined
       
-      var scheduledTime: js.UndefOr[String] = js.native
+      var scheduledTime: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var text: js.UndefOr[String] = js.native
+      var text: js.UndefOr[String] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
     }
     object Announcement {
       
@@ -1474,10 +1469,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Assignment extends StObject {
       
-      var studentWorkFolder: js.UndefOr[DriveFolder] = js.native
+      var studentWorkFolder: js.UndefOr[DriveFolder] = js.undefined
     }
     object Assignment {
       
@@ -1498,10 +1492,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait AssignmentSubmission extends StObject {
       
-      var attachments: js.UndefOr[js.Array[Attachment]] = js.native
+      var attachments: js.UndefOr[js.Array[Attachment]] = js.undefined
     }
     object AssignmentSubmission {
       
@@ -1525,16 +1518,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Attachment extends StObject {
       
-      var driveFile: js.UndefOr[DriveFile] = js.native
+      var driveFile: js.UndefOr[DriveFile] = js.undefined
       
-      var form: js.UndefOr[Form] = js.native
+      var form: js.UndefOr[Form] = js.undefined
       
-      var link: js.UndefOr[Link] = js.native
+      var link: js.UndefOr[Link] = js.undefined
       
-      var youTubeVideo: js.UndefOr[YouTubeVideo] = js.native
+      var youTubeVideo: js.UndefOr[YouTubeVideo] = js.undefined
     }
     object Attachment {
       
@@ -1573,10 +1565,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CloudPubsubTopic extends StObject {
       
-      var topicName: js.UndefOr[String] = js.native
+      var topicName: js.UndefOr[String] = js.undefined
     }
     object CloudPubsubTopic {
       
@@ -1597,44 +1588,43 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Course extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var calendarId: js.UndefOr[String] = js.native
+      var calendarId: js.UndefOr[String] = js.undefined
       
-      var courseGroupEmail: js.UndefOr[String] = js.native
+      var courseGroupEmail: js.UndefOr[String] = js.undefined
       
-      var courseMaterialSets: js.UndefOr[js.Array[CourseMaterialSet]] = js.native
+      var courseMaterialSets: js.UndefOr[js.Array[CourseMaterialSet]] = js.undefined
       
-      var courseState: js.UndefOr[String] = js.native
+      var courseState: js.UndefOr[String] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var descriptionHeading: js.UndefOr[String] = js.native
+      var descriptionHeading: js.UndefOr[String] = js.undefined
       
-      var enrollmentCode: js.UndefOr[String] = js.native
+      var enrollmentCode: js.UndefOr[String] = js.undefined
       
-      var guardiansEnabled: js.UndefOr[Boolean] = js.native
+      var guardiansEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var ownerId: js.UndefOr[String] = js.native
+      var ownerId: js.UndefOr[String] = js.undefined
       
-      var room: js.UndefOr[String] = js.native
+      var room: js.UndefOr[String] = js.undefined
       
-      var section: js.UndefOr[String] = js.native
+      var section: js.UndefOr[String] = js.undefined
       
-      var teacherFolder: js.UndefOr[DriveFolder] = js.native
+      var teacherFolder: js.UndefOr[DriveFolder] = js.undefined
       
-      var teacherGroupEmail: js.UndefOr[String] = js.native
+      var teacherGroupEmail: js.UndefOr[String] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
     }
     object Course {
       
@@ -1760,10 +1750,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseAlias extends StObject {
       
-      var alias: js.UndefOr[String] = js.native
+      var alias: js.UndefOr[String] = js.undefined
     }
     object CourseAlias {
       
@@ -1784,16 +1773,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseMaterial extends StObject {
       
-      var driveFile: js.UndefOr[DriveFile] = js.native
+      var driveFile: js.UndefOr[DriveFile] = js.undefined
       
-      var form: js.UndefOr[Form] = js.native
+      var form: js.UndefOr[Form] = js.undefined
       
-      var link: js.UndefOr[Link] = js.native
+      var link: js.UndefOr[Link] = js.undefined
       
-      var youTubeVideo: js.UndefOr[YouTubeVideo] = js.native
+      var youTubeVideo: js.UndefOr[YouTubeVideo] = js.undefined
     }
     object CourseMaterial {
       
@@ -1832,12 +1820,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseMaterialSet extends StObject {
       
-      var materials: js.UndefOr[js.Array[CourseMaterial]] = js.native
+      var materials: js.UndefOr[js.Array[CourseMaterial]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object CourseMaterialSet {
       
@@ -1867,10 +1854,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseRosterChangesInfo extends StObject {
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
     }
     object CourseRosterChangesInfo {
       
@@ -1891,52 +1877,51 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseWork extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var assigneeMode: js.UndefOr[String] = js.native
+      var assigneeMode: js.UndefOr[String] = js.undefined
       
-      var assignment: js.UndefOr[Assignment] = js.native
+      var assignment: js.UndefOr[Assignment] = js.undefined
       
-      var associatedWithDeveloper: js.UndefOr[Boolean] = js.native
+      var associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var creatorUserId: js.UndefOr[String] = js.native
+      var creatorUserId: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var dueDate: js.UndefOr[Date] = js.native
+      var dueDate: js.UndefOr[Date] = js.undefined
       
-      var dueTime: js.UndefOr[TimeOfDay] = js.native
+      var dueTime: js.UndefOr[TimeOfDay] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.native
+      var individualStudentsOptions: js.UndefOr[IndividualStudentsOptions] = js.undefined
       
-      var materials: js.UndefOr[js.Array[Material]] = js.native
+      var materials: js.UndefOr[js.Array[Material]] = js.undefined
       
-      var maxPoints: js.UndefOr[Double] = js.native
+      var maxPoints: js.UndefOr[Double] = js.undefined
       
-      var multipleChoiceQuestion: js.UndefOr[MultipleChoiceQuestion] = js.native
+      var multipleChoiceQuestion: js.UndefOr[MultipleChoiceQuestion] = js.undefined
       
-      var scheduledTime: js.UndefOr[String] = js.native
+      var scheduledTime: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var submissionModificationMode: js.UndefOr[String] = js.native
+      var submissionModificationMode: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var topicId: js.UndefOr[String] = js.native
+      var topicId: js.UndefOr[String] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
       
-      var workType: js.UndefOr[String] = js.native
+      var workType: js.UndefOr[String] = js.undefined
     }
     object CourseWork {
       
@@ -2086,10 +2071,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait CourseWorkChangesInfo extends StObject {
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
     }
     object CourseWorkChangesInfo {
       
@@ -2110,14 +2094,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Date extends StObject {
       
-      var day: js.UndefOr[Double] = js.native
+      var day: js.UndefOr[Double] = js.undefined
       
-      var month: js.UndefOr[Double] = js.native
+      var month: js.UndefOr[Double] = js.undefined
       
-      var year: js.UndefOr[Double] = js.native
+      var year: js.UndefOr[Double] = js.undefined
     }
     object Date {
       
@@ -2150,16 +2133,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait DriveFile extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var thumbnailUrl: js.UndefOr[String] = js.native
+      var thumbnailUrl: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object DriveFile {
       
@@ -2198,14 +2180,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait DriveFolder extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object DriveFolder {
       
@@ -2238,14 +2219,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Feed extends StObject {
       
-      var courseRosterChangesInfo: js.UndefOr[CourseRosterChangesInfo] = js.native
+      var courseRosterChangesInfo: js.UndefOr[CourseRosterChangesInfo] = js.undefined
       
-      var courseWorkChangesInfo: js.UndefOr[CourseWorkChangesInfo] = js.native
+      var courseWorkChangesInfo: js.UndefOr[CourseWorkChangesInfo] = js.undefined
       
-      var feedType: js.UndefOr[String] = js.native
+      var feedType: js.UndefOr[String] = js.undefined
     }
     object Feed {
       
@@ -2278,16 +2258,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Form extends StObject {
       
-      var formUrl: js.UndefOr[String] = js.native
+      var formUrl: js.UndefOr[String] = js.undefined
       
-      var responseUrl: js.UndefOr[String] = js.native
+      var responseUrl: js.UndefOr[String] = js.undefined
       
-      var thumbnailUrl: js.UndefOr[String] = js.native
+      var thumbnailUrl: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Form {
       
@@ -2326,10 +2305,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait GlobalPermission extends StObject {
       
-      var permission: js.UndefOr[String] = js.native
+      var permission: js.UndefOr[String] = js.undefined
     }
     object GlobalPermission {
       
@@ -2350,18 +2328,17 @@ object Classroom {
       }
     }
     
-    @js.native
     trait GradeHistory extends StObject {
       
-      var actorUserId: js.UndefOr[String] = js.native
+      var actorUserId: js.UndefOr[String] = js.undefined
       
-      var gradeChangeType: js.UndefOr[String] = js.native
+      var gradeChangeType: js.UndefOr[String] = js.undefined
       
-      var gradeTimestamp: js.UndefOr[String] = js.native
+      var gradeTimestamp: js.UndefOr[String] = js.undefined
       
-      var maxPoints: js.UndefOr[Double] = js.native
+      var maxPoints: js.UndefOr[Double] = js.undefined
       
-      var pointsEarned: js.UndefOr[Double] = js.native
+      var pointsEarned: js.UndefOr[Double] = js.undefined
     }
     object GradeHistory {
       
@@ -2406,16 +2383,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Guardian extends StObject {
       
-      var guardianId: js.UndefOr[String] = js.native
+      var guardianId: js.UndefOr[String] = js.undefined
       
-      var guardianProfile: js.UndefOr[UserProfile] = js.native
+      var guardianProfile: js.UndefOr[UserProfile] = js.undefined
       
-      var invitedEmailAddress: js.UndefOr[String] = js.native
+      var invitedEmailAddress: js.UndefOr[String] = js.undefined
       
-      var studentId: js.UndefOr[String] = js.native
+      var studentId: js.UndefOr[String] = js.undefined
     }
     object Guardian {
       
@@ -2454,18 +2430,17 @@ object Classroom {
       }
     }
     
-    @js.native
     trait GuardianInvitation extends StObject {
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var invitationId: js.UndefOr[String] = js.native
+      var invitationId: js.UndefOr[String] = js.undefined
       
-      var invitedEmailAddress: js.UndefOr[String] = js.native
+      var invitedEmailAddress: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var studentId: js.UndefOr[String] = js.native
+      var studentId: js.UndefOr[String] = js.undefined
     }
     object GuardianInvitation {
       
@@ -2510,10 +2485,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait IndividualStudentsOptions extends StObject {
       
-      var studentIds: js.UndefOr[js.Array[String]] = js.native
+      var studentIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object IndividualStudentsOptions {
       
@@ -2537,16 +2511,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Invitation extends StObject {
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var role: js.UndefOr[String] = js.native
+      var role: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object Invitation {
       
@@ -2585,14 +2558,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Link extends StObject {
       
-      var thumbnailUrl: js.UndefOr[String] = js.native
+      var thumbnailUrl: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var url: js.UndefOr[String] = js.native
+      var url: js.UndefOr[String] = js.undefined
     }
     object Link {
       
@@ -2625,12 +2597,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListAnnouncementsResponse extends StObject {
       
-      var announcements: js.UndefOr[js.Array[Announcement]] = js.native
+      var announcements: js.UndefOr[js.Array[Announcement]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListAnnouncementsResponse {
       
@@ -2660,12 +2631,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListCourseAliasesResponse extends StObject {
       
-      var aliases: js.UndefOr[js.Array[CourseAlias]] = js.native
+      var aliases: js.UndefOr[js.Array[CourseAlias]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListCourseAliasesResponse {
       
@@ -2695,12 +2665,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListCourseWorkResponse extends StObject {
       
-      var courseWork: js.UndefOr[js.Array[CourseWork]] = js.native
+      var courseWork: js.UndefOr[js.Array[CourseWork]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListCourseWorkResponse {
       
@@ -2730,12 +2699,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListCoursesResponse extends StObject {
       
-      var courses: js.UndefOr[js.Array[Course]] = js.native
+      var courses: js.UndefOr[js.Array[Course]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListCoursesResponse {
       
@@ -2765,12 +2733,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListGuardianInvitationsResponse extends StObject {
       
-      var guardianInvitations: js.UndefOr[js.Array[GuardianInvitation]] = js.native
+      var guardianInvitations: js.UndefOr[js.Array[GuardianInvitation]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListGuardianInvitationsResponse {
       
@@ -2800,12 +2767,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListGuardiansResponse extends StObject {
       
-      var guardians: js.UndefOr[js.Array[Guardian]] = js.native
+      var guardians: js.UndefOr[js.Array[Guardian]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListGuardiansResponse {
       
@@ -2835,12 +2801,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListInvitationsResponse extends StObject {
       
-      var invitations: js.UndefOr[js.Array[Invitation]] = js.native
+      var invitations: js.UndefOr[js.Array[Invitation]] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
     }
     object ListInvitationsResponse {
       
@@ -2870,12 +2835,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListStudentSubmissionsResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var studentSubmissions: js.UndefOr[js.Array[StudentSubmission]] = js.native
+      var studentSubmissions: js.UndefOr[js.Array[StudentSubmission]] = js.undefined
     }
     object ListStudentSubmissionsResponse {
       
@@ -2905,12 +2869,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListStudentsResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var students: js.UndefOr[js.Array[Student]] = js.native
+      var students: js.UndefOr[js.Array[Student]] = js.undefined
     }
     object ListStudentsResponse {
       
@@ -2940,12 +2903,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ListTeachersResponse extends StObject {
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var teachers: js.UndefOr[js.Array[Teacher]] = js.native
+      var teachers: js.UndefOr[js.Array[Teacher]] = js.undefined
     }
     object ListTeachersResponse {
       
@@ -2975,16 +2937,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Material extends StObject {
       
-      var driveFile: js.UndefOr[SharedDriveFile] = js.native
+      var driveFile: js.UndefOr[SharedDriveFile] = js.undefined
       
-      var form: js.UndefOr[Form] = js.native
+      var form: js.UndefOr[Form] = js.undefined
       
-      var link: js.UndefOr[Link] = js.native
+      var link: js.UndefOr[Link] = js.undefined
       
-      var youtubeVideo: js.UndefOr[YouTubeVideo] = js.native
+      var youtubeVideo: js.UndefOr[YouTubeVideo] = js.undefined
     }
     object Material {
       
@@ -3023,12 +2984,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ModifyAnnouncementAssigneesRequest extends StObject {
       
-      var assigneeMode: js.UndefOr[String] = js.native
+      var assigneeMode: js.UndefOr[String] = js.undefined
       
-      var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.native
+      var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.undefined
     }
     object ModifyAnnouncementAssigneesRequest {
       
@@ -3055,10 +3015,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ModifyAttachmentsRequest extends StObject {
       
-      var addAttachments: js.UndefOr[js.Array[Attachment]] = js.native
+      var addAttachments: js.UndefOr[js.Array[Attachment]] = js.undefined
     }
     object ModifyAttachmentsRequest {
       
@@ -3082,12 +3041,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ModifyCourseWorkAssigneesRequest extends StObject {
       
-      var assigneeMode: js.UndefOr[String] = js.native
+      var assigneeMode: js.UndefOr[String] = js.undefined
       
-      var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.native
+      var modifyIndividualStudentsOptions: js.UndefOr[ModifyIndividualStudentsOptions] = js.undefined
     }
     object ModifyCourseWorkAssigneesRequest {
       
@@ -3114,12 +3072,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ModifyIndividualStudentsOptions extends StObject {
       
-      var addStudentIds: js.UndefOr[js.Array[String]] = js.native
+      var addStudentIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var removeStudentIds: js.UndefOr[js.Array[String]] = js.native
+      var removeStudentIds: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ModifyIndividualStudentsOptions {
       
@@ -3152,10 +3109,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait MultipleChoiceQuestion extends StObject {
       
-      var choices: js.UndefOr[js.Array[String]] = js.native
+      var choices: js.UndefOr[js.Array[String]] = js.undefined
     }
     object MultipleChoiceQuestion {
       
@@ -3179,10 +3135,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait MultipleChoiceSubmission extends StObject {
       
-      var answer: js.UndefOr[String] = js.native
+      var answer: js.UndefOr[String] = js.undefined
     }
     object MultipleChoiceSubmission {
       
@@ -3203,14 +3158,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Name extends StObject {
       
-      var familyName: js.UndefOr[String] = js.native
+      var familyName: js.UndefOr[String] = js.undefined
       
-      var fullName: js.UndefOr[String] = js.native
+      var fullName: js.UndefOr[String] = js.undefined
       
-      var givenName: js.UndefOr[String] = js.native
+      var givenName: js.UndefOr[String] = js.undefined
     }
     object Name {
       
@@ -3243,16 +3197,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Registration extends StObject {
       
-      var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.native
+      var cloudPubsubTopic: js.UndefOr[CloudPubsubTopic] = js.undefined
       
-      var expiryTime: js.UndefOr[String] = js.native
+      var expiryTime: js.UndefOr[String] = js.undefined
       
-      var feed: js.UndefOr[Feed] = js.native
+      var feed: js.UndefOr[Feed] = js.undefined
       
-      var registrationId: js.UndefOr[String] = js.native
+      var registrationId: js.UndefOr[String] = js.undefined
     }
     object Registration {
       
@@ -3291,12 +3244,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait SharedDriveFile extends StObject {
       
-      var driveFile: js.UndefOr[DriveFile] = js.native
+      var driveFile: js.UndefOr[DriveFile] = js.undefined
       
-      var shareMode: js.UndefOr[String] = js.native
+      var shareMode: js.UndefOr[String] = js.undefined
     }
     object SharedDriveFile {
       
@@ -3323,10 +3275,9 @@ object Classroom {
       }
     }
     
-    @js.native
     trait ShortAnswerSubmission extends StObject {
       
-      var answer: js.UndefOr[String] = js.native
+      var answer: js.UndefOr[String] = js.undefined
     }
     object ShortAnswerSubmission {
       
@@ -3347,14 +3298,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait StateHistory extends StObject {
       
-      var actorUserId: js.UndefOr[String] = js.native
+      var actorUserId: js.UndefOr[String] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var stateTimestamp: js.UndefOr[String] = js.native
+      var stateTimestamp: js.UndefOr[String] = js.undefined
     }
     object StateHistory {
       
@@ -3387,16 +3337,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Student extends StObject {
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var profile: js.UndefOr[UserProfile] = js.native
+      var profile: js.UndefOr[UserProfile] = js.undefined
       
-      var studentWorkFolder: js.UndefOr[DriveFolder] = js.native
+      var studentWorkFolder: js.UndefOr[DriveFolder] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object Student {
       
@@ -3435,42 +3384,41 @@ object Classroom {
       }
     }
     
-    @js.native
     trait StudentSubmission extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var assignedGrade: js.UndefOr[Double] = js.native
+      var assignedGrade: js.UndefOr[Double] = js.undefined
       
-      var assignmentSubmission: js.UndefOr[AssignmentSubmission] = js.native
+      var assignmentSubmission: js.UndefOr[AssignmentSubmission] = js.undefined
       
-      var associatedWithDeveloper: js.UndefOr[Boolean] = js.native
+      var associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var courseWorkId: js.UndefOr[String] = js.native
+      var courseWorkId: js.UndefOr[String] = js.undefined
       
-      var courseWorkType: js.UndefOr[String] = js.native
+      var courseWorkType: js.UndefOr[String] = js.undefined
       
-      var creationTime: js.UndefOr[String] = js.native
+      var creationTime: js.UndefOr[String] = js.undefined
       
-      var draftGrade: js.UndefOr[Double] = js.native
+      var draftGrade: js.UndefOr[Double] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var late: js.UndefOr[Boolean] = js.native
+      var late: js.UndefOr[Boolean] = js.undefined
       
-      var multipleChoiceSubmission: js.UndefOr[MultipleChoiceSubmission] = js.native
+      var multipleChoiceSubmission: js.UndefOr[MultipleChoiceSubmission] = js.undefined
       
-      var shortAnswerSubmission: js.UndefOr[ShortAnswerSubmission] = js.native
+      var shortAnswerSubmission: js.UndefOr[ShortAnswerSubmission] = js.undefined
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var submissionHistory: js.UndefOr[js.Array[SubmissionHistory]] = js.native
+      var submissionHistory: js.UndefOr[js.Array[SubmissionHistory]] = js.undefined
       
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object StudentSubmission {
       
@@ -3590,12 +3538,11 @@ object Classroom {
       }
     }
     
-    @js.native
     trait SubmissionHistory extends StObject {
       
-      var gradeHistory: js.UndefOr[GradeHistory] = js.native
+      var gradeHistory: js.UndefOr[GradeHistory] = js.undefined
       
-      var stateHistory: js.UndefOr[StateHistory] = js.native
+      var stateHistory: js.UndefOr[StateHistory] = js.undefined
     }
     object SubmissionHistory {
       
@@ -3622,14 +3569,13 @@ object Classroom {
       }
     }
     
-    @js.native
     trait Teacher extends StObject {
       
-      var courseId: js.UndefOr[String] = js.native
+      var courseId: js.UndefOr[String] = js.undefined
       
-      var profile: js.UndefOr[UserProfile] = js.native
+      var profile: js.UndefOr[UserProfile] = js.undefined
       
-      var userId: js.UndefOr[String] = js.native
+      var userId: js.UndefOr[String] = js.undefined
     }
     object Teacher {
       
@@ -3662,16 +3608,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait TimeOfDay extends StObject {
       
-      var hours: js.UndefOr[Double] = js.native
+      var hours: js.UndefOr[Double] = js.undefined
       
-      var minutes: js.UndefOr[Double] = js.native
+      var minutes: js.UndefOr[Double] = js.undefined
       
-      var nanos: js.UndefOr[Double] = js.native
+      var nanos: js.UndefOr[Double] = js.undefined
       
-      var seconds: js.UndefOr[Double] = js.native
+      var seconds: js.UndefOr[Double] = js.undefined
     }
     object TimeOfDay {
       
@@ -3710,20 +3655,19 @@ object Classroom {
       }
     }
     
-    @js.native
     trait UserProfile extends StObject {
       
-      var emailAddress: js.UndefOr[String] = js.native
+      var emailAddress: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[Name] = js.native
+      var name: js.UndefOr[Name] = js.undefined
       
-      var permissions: js.UndefOr[js.Array[GlobalPermission]] = js.native
+      var permissions: js.UndefOr[js.Array[GlobalPermission]] = js.undefined
       
-      var photoUrl: js.UndefOr[String] = js.native
+      var photoUrl: js.UndefOr[String] = js.undefined
       
-      var verifiedTeacher: js.UndefOr[Boolean] = js.native
+      var verifiedTeacher: js.UndefOr[Boolean] = js.undefined
     }
     object UserProfile {
       
@@ -3777,16 +3721,15 @@ object Classroom {
       }
     }
     
-    @js.native
     trait YouTubeVideo extends StObject {
       
-      var alternateLink: js.UndefOr[String] = js.native
+      var alternateLink: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var thumbnailUrl: js.UndefOr[String] = js.native
+      var thumbnailUrl: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object YouTubeVideo {
       

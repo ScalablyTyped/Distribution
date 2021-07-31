@@ -8,13 +8,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This is a container for custom presentations. */
-@js.native
 trait CustomPresentationAccess
-  extends XNameContainer
+  extends StObject
+     with XNameContainer
      with XSingleServiceFactory
 object CustomPresentationAccess {
   
@@ -24,7 +23,7 @@ object CustomPresentationAccess {
     ElementType: `type`,
     acquire: () => Unit,
     createInstance: () => XInterface,
-    createInstanceWithArguments: SeqEquiv[_] => XInterface,
+    createInstanceWithArguments: SeqEquiv[js.Any] => XInterface,
     getByName: String => js.Any,
     getElementNames: () => SafeArray[String],
     getElementType: () => `type`,

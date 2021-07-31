@@ -2,69 +2,67 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherProfile extends StObject {
   
   /** Description on the publisher's audience. */
-  var audienceDescription: js.UndefOr[String] = js.native
+  var audienceDescription: js.UndefOr[String] = js.undefined
   
   /** Statement explaining what's unique about publisher's business, and why buyers should partner with the publisher. */
-  var buyerPitchStatement: js.UndefOr[String] = js.native
+  var buyerPitchStatement: js.UndefOr[String] = js.undefined
   
   /** Contact information for direct reservation deals. This is free text entered by the publisher and may include information like names, phone numbers and email addresses. */
-  var directDealsContact: js.UndefOr[String] = js.native
+  var directDealsContact: js.UndefOr[String] = js.undefined
   
   /** Name of the publisher profile. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The list of domains represented in this publisher profile. Empty if this is a parent profile. These are top private domains, meaning that these will not contain a string like
     * "photos.google.co.uk/123", but will instead contain "google.co.uk".
     */
-  var domains: js.UndefOr[js.Array[String]] = js.native
+  var domains: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URL to publisher's Google+ page. */
-  var googlePlusUrl: js.UndefOr[String] = js.native
+  var googlePlusUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if this profile is the parent profile of the seller. A parent profile represents all the inventory from the seller, as opposed to child profile that is created to brand a
     * portion of inventory. One seller should have only one parent publisher profile, and can have multiple child profiles. Publisher profiles for the same seller will have same value of
     * field google.ads.adexchange.buyer.v2beta1.PublisherProfile.seller. See https://support.google.com/admanager/answer/6035806 for details.
     */
-  var isParent: js.UndefOr[Boolean] = js.native
+  var isParent: js.UndefOr[Boolean] = js.undefined
   
   /** A Google public URL to the logo for this publisher profile. The logo is stored as a PNG, JPG, or GIF image. */
-  var logoUrl: js.UndefOr[String] = js.native
+  var logoUrl: js.UndefOr[String] = js.undefined
   
   /** URL to additional marketing and sales materials. */
-  var mediaKitUrl: js.UndefOr[String] = js.native
+  var mediaKitUrl: js.UndefOr[String] = js.undefined
   
   /** The list of apps represented in this publisher profile. Empty if this is a parent profile. */
-  var mobileApps: js.UndefOr[js.Array[PublisherProfileMobileApplication]] = js.native
+  var mobileApps: js.UndefOr[js.Array[PublisherProfileMobileApplication]] = js.undefined
   
   /** Overview of the publisher. */
-  var overview: js.UndefOr[String] = js.native
+  var overview: js.UndefOr[String] = js.undefined
   
   /** Contact information for programmatic deals. This is free text entered by the publisher and may include information like names, phone numbers and email addresses. */
-  var programmaticDealsContact: js.UndefOr[String] = js.native
+  var programmaticDealsContact: js.UndefOr[String] = js.undefined
   
   /** Unique ID for publisher profile. */
-  var publisherProfileId: js.UndefOr[String] = js.native
+  var publisherProfileId: js.UndefOr[String] = js.undefined
   
   /** URL to a publisher rate card. */
-  var rateCardInfoUrl: js.UndefOr[String] = js.native
+  var rateCardInfoUrl: js.UndefOr[String] = js.undefined
   
   /** URL to a sample content page. */
-  var samplePageUrl: js.UndefOr[String] = js.native
+  var samplePageUrl: js.UndefOr[String] = js.undefined
   
   /** Seller of the publisher profile. */
-  var seller: js.UndefOr[Seller] = js.native
+  var seller: js.UndefOr[Seller] = js.undefined
   
   /** Up to three key metrics and rankings. Max 100 characters each. For example "#1 Mobile News Site for 20 Straight Months". */
-  var topHeadlines: js.UndefOr[js.Array[String]] = js.native
+  var topHeadlines: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PublisherProfile {
   

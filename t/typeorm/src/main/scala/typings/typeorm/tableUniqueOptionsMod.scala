@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableUniqueOptionsMod {
   
-  @js.native
   trait TableUniqueOptions extends StObject {
     
     /**
       * Columns that contains this constraint.
       */
-    var columnNames: js.Array[String] = js.native
+    var columnNames: js.Array[String]
     
     /**
       * Constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object TableUniqueOptions {
     

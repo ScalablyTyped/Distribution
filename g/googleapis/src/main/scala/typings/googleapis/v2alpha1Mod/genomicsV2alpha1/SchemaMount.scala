@@ -2,29 +2,27 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Carries information about a particular disk mount inside a container.
   */
-@js.native
 trait SchemaMount extends StObject {
   
   /**
     * The name of the disk to mount, as specified in the resources section.
     */
-  var disk: js.UndefOr[String] = js.native
+  var disk: js.UndefOr[String] = js.undefined
   
   /**
     * The path to mount the disk inside the container.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * If true, the disk is mounted read-only inside the container.
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaMount {
   

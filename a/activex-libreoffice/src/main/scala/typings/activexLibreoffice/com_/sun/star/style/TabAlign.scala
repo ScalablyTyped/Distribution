@@ -7,7 +7,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`3`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These enumeration values are used to specify the alignment of the text range delimited by a tabulator. */

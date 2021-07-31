@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerConfig extends StObject {
   
   /**
     * The event type or types for which notifications are triggered.
     */
-  var triggerEvents: js.UndefOr[TriggerEventTypeList] = js.native
+  var triggerEvents: js.UndefOr[TriggerEventTypeList] = js.undefined
   
   /**
     * The name of the notification trigger.
     */
-  var triggerName: js.UndefOr[TriggerName] = js.native
+  var triggerName: js.UndefOr[TriggerName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon Simple Notification Service topic through which notifications about deployment or instance events are sent.
     */
-  var triggerTargetArn: js.UndefOr[TriggerTargetArn] = js.native
+  var triggerTargetArn: js.UndefOr[TriggerTargetArn] = js.undefined
 }
 object TriggerConfig {
   

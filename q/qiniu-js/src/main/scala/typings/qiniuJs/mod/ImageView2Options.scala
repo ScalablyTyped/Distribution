@@ -12,25 +12,23 @@ import typings.qiniuJs.qiniuJsStrings.png
 import typings.qiniuJs.qiniuJsStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageView2Options extends StObject {
   
   // 新图的图像质量，取值范围：1-100
-  var format: jpg | gif | png | webp | String = js.native
+  var format: jpg | gif | png | webp | String
   
   // 具体含义由缩略模式决定
-  var h: Double = js.native
+  var h: Double
   
-  var mode: `0` | `1` | `2` | `3` | `4` | `5` = js.native
+  var mode: `0` | `1` | `2` | `3` | `4` | `5`
   
   // 具体含义由缩略模式决定
-  var q: Double = js.native
+  var q: Double
   
   // 缩略模式，共6种[0-5]
-  var w: Double = js.native
+  var w: Double
 }
 object ImageView2Options {
   

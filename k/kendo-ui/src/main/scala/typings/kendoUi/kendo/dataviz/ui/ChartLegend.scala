@@ -2,45 +2,43 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegend extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[ChartLegendBorder] = js.native
+  var border: js.UndefOr[ChartLegendBorder] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var inactiveItems: js.UndefOr[ChartLegendInactiveItems] = js.native
+  var inactiveItems: js.UndefOr[ChartLegendInactiveItems] = js.undefined
   
-  var item: js.UndefOr[ChartLegendItem] = js.native
+  var item: js.UndefOr[ChartLegendItem] = js.undefined
   
-  var labels: js.UndefOr[ChartLegendLabels] = js.native
+  var labels: js.UndefOr[ChartLegendLabels] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartLegendMargin] = js.native
+  var margin: js.UndefOr[Double | ChartLegendMargin] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var padding: js.UndefOr[Double | ChartLegendPadding] = js.native
+  var padding: js.UndefOr[Double | ChartLegendPadding] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ChartLegend {
   

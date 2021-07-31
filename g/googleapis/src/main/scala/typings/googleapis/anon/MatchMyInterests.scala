@@ -2,21 +2,19 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchMyInterests extends StObject {
   
-  var matchMyInterests: js.UndefOr[Optedstate] = js.native
+  var matchMyInterests: js.UndefOr[Optedstate] = js.undefined
   
-  var moreFromAuthors: js.UndefOr[Optedstate] = js.native
+  var moreFromAuthors: js.UndefOr[Optedstate] = js.undefined
   
-  var moreFromSeries: js.UndefOr[Optedstate] = js.native
+  var moreFromSeries: js.UndefOr[Optedstate] = js.undefined
   
-  var priceDrop: js.UndefOr[Optedstate] = js.native
+  var priceDrop: js.UndefOr[Optedstate] = js.undefined
   
-  var rewardExpirations: js.UndefOr[Optedstate] = js.native
+  var rewardExpirations: js.UndefOr[Optedstate] = js.undefined
 }
 object MatchMyInterests {
   

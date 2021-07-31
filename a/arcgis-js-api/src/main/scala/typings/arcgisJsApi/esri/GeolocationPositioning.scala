@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeolocationPositioning extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait GeolocationPositioning extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#geolocationOptions)
     */
-  var geolocationOptions: js.Any = js.native
+  var geolocationOptions: js.Any
   
   /**
     * Indicates whether to navigate the view to the position and scale of the geolocated result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#goToLocationEnabled)
     */
-  var goToLocationEnabled: Boolean = js.native
+  var goToLocationEnabled: Boolean
   
   /**
     * The graphic used to show the user's location on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#graphic)
     */
-  var graphic: Graphic = js.native
+  var graphic: Graphic
   
   /**
     * The scale to set on the view when navigating to the position of the geolocated result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#scale)
     */
-  var scale: Double = js.native
+  var scale: Double
   
   /**
     * The view associated with the widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-support-GeolocationPositioning.html#view)
     */
-  var view: MapView | SceneView = js.native
+  var view: MapView | SceneView
 }
 object GeolocationPositioning {
   

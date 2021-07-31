@@ -2,41 +2,40 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Pure binary content defined by a format other than FHIR
   */
-@js.native
 trait Binary
-  extends ResourceBase
+  extends StObject
+     with ResourceBase
      with Resource {
   
   /**
     * Contains extended information for property 'content'.
     */
-  var _content: js.UndefOr[Element] = js.native
+  var _content: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'contentType'.
     */
-  var _contentType: js.UndefOr[Element] = js.native
+  var _contentType: js.UndefOr[Element] = js.undefined
   
   /**
     * The actual content
     */
-  var content: base64Binary = js.native
+  var content: base64Binary
   
   /**
     * MimeType of the binary content
     */
-  var contentType: code = js.native
+  var contentType: code
   
   /**
     * Access Control Management
     */
-  var securityContext: js.UndefOr[Reference] = js.native
+  var securityContext: js.UndefOr[Reference] = js.undefined
 }
 object Binary {
   

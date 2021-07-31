@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon")
@@ -42,9 +41,8 @@ object GlyphIcon {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.create")
-  @js.native
-  def create(model: IModel): GlyphIcon = js.native
+  @scala.inline
+  def create(model: IModel): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object GlyphIcon {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.createInBottomBarItemUnderIcon")
-  @js.native
-  def createInBottomBarItemUnderIcon(container: BottomBarItem): GlyphIcon = js.native
+  @scala.inline
+  def createInBottomBarItemUnderIcon(container: BottomBarItem): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBottomBarItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -65,9 +62,8 @@ object GlyphIcon {
     * of the parent Button element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.createInButtonUnderIcon")
-  @js.native
-  def createInButtonUnderIcon(container: Button): GlyphIcon = js.native
+  @scala.inline
+  def createInButtonUnderIcon(container: Button): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -75,9 +71,8 @@ object GlyphIcon {
     * of the parent ControlBarButton element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.createInControlBarButtonUnderIcon")
-  @js.native
-  def createInControlBarButtonUnderIcon(container: ControlBarButton): GlyphIcon = js.native
+  @scala.inline
+  def createInControlBarButtonUnderIcon(container: ControlBarButton): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInControlBarButtonUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -85,9 +80,8 @@ object GlyphIcon {
     * of the parent menus.MenuItem element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.createInMenuItemUnderIcon")
-  @js.native
-  def createInMenuItemUnderIcon(container: MenuItem): GlyphIcon = js.native
+  @scala.inline
+  def createInMenuItemUnderIcon(container: MenuItem): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMenuItemUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /**
     * Creates and returns a new GlyphIcon instance in the SDK and on the server.
@@ -98,9 +92,8 @@ object GlyphIcon {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.createInWidgetValueUnderIcon")
-  @js.native
-  def createInWidgetValueUnderIcon(container: WidgetValue): GlyphIcon = js.native
+  @scala.inline
+  def createInWidgetValueUnderIcon(container: WidgetValue): GlyphIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderIcon")(container.asInstanceOf[js.Any]).asInstanceOf[GlyphIcon]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GlyphIcon.structureTypeName")

@@ -2,13 +2,13 @@ package typings.angularAnimations.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimateChildOptions extends AnimationOptions {
+trait AnimateChildOptions
+  extends StObject
+     with AnimationOptions {
   
-  var duration: js.UndefOr[Double | String] = js.native
+  var duration: js.UndefOr[Double | String] = js.undefined
 }
 object AnimateChildOptions {
   

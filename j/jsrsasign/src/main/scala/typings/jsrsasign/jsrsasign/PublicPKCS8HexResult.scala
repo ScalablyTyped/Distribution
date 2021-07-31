@@ -2,20 +2,18 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublicPKCS8HexResult extends StObject {
   
   /** hexadecimal string of OID of asymmetric key algorithm */
-  var algoid: String = js.native
+  var algoid: String
   
   /** hexadecimal string of OID of ECC curve name, parameter SEQUENCE of DSA or null */
-  var algparam: String = js.native
+  var algparam: String
   
   /** hexadecimal string of public key */
-  var key: String = js.native
+  var key: String
 }
 object PublicPKCS8HexResult {
   

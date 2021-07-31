@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,19 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object AccessibleLandmarkRole extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.AccessibleLandmarkRole with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.ui.core.AccessibleLandmarkRole & Double] = js.native
   
-  /* 0 */ val Banner: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Banner with Double = js.native
+  /* 0 */ val Banner: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Banner & Double = js.native
   
-  /* 1 */ val Complementary: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Complementary with Double = js.native
+  /* 1 */ val Complementary: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Complementary & Double = js.native
   
-  /* 2 */ val Main: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Main with Double = js.native
+  /* 2 */ val Main: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Main & Double = js.native
   
-  /* 3 */ val Navigation: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Navigation with Double = js.native
+  /* 3 */ val Navigation: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Navigation & Double = js.native
   
-  /* 4 */ val None: typings.openui5.sap.ui.core.AccessibleLandmarkRole.None with Double = js.native
+  /* 4 */ val None: typings.openui5.sap.ui.core.AccessibleLandmarkRole.None & Double = js.native
   
-  /* 5 */ val Region: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Region with Double = js.native
+  /* 5 */ val Region: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Region & Double = js.native
   
-  /* 6 */ val Search: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Search with Double = js.native
+  /* 6 */ val Search: typings.openui5.sap.ui.core.AccessibleLandmarkRole.Search & Double = js.native
 }

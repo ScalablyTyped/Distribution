@@ -3,29 +3,27 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.anon.ItemsIPlayReadyDomain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides for iteration of the PlayReadyDomain class. */
-@js.native
 trait PlayReadyDomainIterator extends StObject {
   
   /** Gets the current item in the PlayReady domain collection. */
-  var current: IPlayReadyDomain = js.native
+  var current: IPlayReadyDomain
   
   /**
     * Retrieves all items in the PlayReady domain collection.
     */
-  def getMany(): ItemsIPlayReadyDomain = js.native
+  def getMany(): ItemsIPlayReadyDomain
   
   /** Gets a value that indicates whether there is a current item or the iterator is at the end of the PlayReady domain collection. */
-  var hasCurrent: Boolean = js.native
+  var hasCurrent: Boolean
   
   /**
     * Advances the enumerator to the next item in the collection.
     * @return true if the iterator refers to a valid item that is in the collection or false if the iterator is at the end of the collection.
     */
-  def moveNext(): Boolean = js.native
+  def moveNext(): Boolean
 }
 object PlayReadyDomainIterator {
   

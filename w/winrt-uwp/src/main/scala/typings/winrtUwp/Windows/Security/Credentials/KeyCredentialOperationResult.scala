@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Security.Credentials
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a key credential operation. */
-@js.native
 trait KeyCredentialOperationResult extends StObject {
   
   /** Gets the result of the key credential operation. */
-  var result: IBuffer = js.native
+  var result: IBuffer
   
   /** Gets the status of the key credential. */
-  var status: KeyCredentialStatus = js.native
+  var status: KeyCredentialStatus
 }
 object KeyCredentialOperationResult {
   

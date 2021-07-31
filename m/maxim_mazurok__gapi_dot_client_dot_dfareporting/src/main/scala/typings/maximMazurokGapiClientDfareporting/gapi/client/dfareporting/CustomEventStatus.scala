@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomEventStatus extends StObject {
   
   /** The original custom event that was inserted. */
-  var customEvent: js.UndefOr[CustomEvent] = js.native
+  var customEvent: js.UndefOr[CustomEvent] = js.undefined
   
   /** A list of errors related to this custom event. */
-  var errors: js.UndefOr[js.Array[CustomEventError]] = js.native
+  var errors: js.UndefOr[js.Array[CustomEventError]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#customEventStatus". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object CustomEventStatus {
   

@@ -2,27 +2,25 @@ package typings.jui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var event: js.UndefOr[js.Any] = js.native
+  var event: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {String/DOMElement} [target=null]
     * Designates a target selector when an autofill route is not a target
     */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
   
-  var tpl: js.UndefOr[js.Any] = js.native
+  var tpl: js.UndefOr[js.Any] = js.undefined
   
   /**
     * @cfg {Array} words
     * Designates words subject to autofill
     */
-  var words: js.UndefOr[js.Array[String]] = js.native
+  var words: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Event {
   

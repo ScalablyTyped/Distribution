@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents something that can be filtered using an {@link XSheetFilterDescriptor} .
   * @see com.sun.star.sheet.XSheetFilterableEx
   */
-@js.native
-trait XSheetFilterable extends XInterface {
+trait XSheetFilterable
+  extends StObject
+     with XInterface {
   
   /**
     * creates a filter descriptor.
     * @param bEmpty if set to `TRUE` , creates an empty filter descriptor. If set to `FALSE` , fills the filter descriptor with previous settings of the curre
     */
-  def createFilterDescriptor(bEmpty: Boolean): XSheetFilterDescriptor = js.native
+  def createFilterDescriptor(bEmpty: Boolean): XSheetFilterDescriptor
   
   /**
     * performs a filter operation, using the settings of the passed filter descriptor.
     * @param xDescriptor the settings for the filter operation.
     */
-  def filter(xDescriptor: XSheetFilterDescriptor): Unit = js.native
+  def filter(xDescriptor: XSheetFilterDescriptor): Unit
 }
 object XSheetFilterable {
   

@@ -2,27 +2,25 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A condition that can evaluate to true or false. BooleanConditions are used
   * by conditional formatting, data validation, and the criteria in filters.
   */
-@js.native
 trait SchemaBooleanCondition extends StObject {
   
   /**
     * The type of condition.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The values of the condition. The number of supported values depends on
     * the condition type.  Some support zero values, others one or two values,
     * and ConditionType.ONE_OF_LIST supports an arbitrary number of values.
     */
-  var values: js.UndefOr[js.Array[SchemaConditionValue]] = js.native
+  var values: js.UndefOr[js.Array[SchemaConditionValue]] = js.undefined
 }
 object SchemaBooleanCondition {
   

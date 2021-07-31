@@ -2,13 +2,11 @@ package typings.acmeClient.rfc8555Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateRevocationRequest extends StObject {
   
-  var reason: js.UndefOr[CertificateRevocationReason] = js.native
+  var reason: js.UndefOr[CertificateRevocationReason] = js.undefined
 }
 object CertificateRevocationRequest {
   

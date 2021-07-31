@@ -5,28 +5,26 @@ import typings.tryghostContentApi.tryghostContentApiStrings.v2
 import typings.tryghostContentApi.tryghostContentApiStrings.v3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GhostContentAPIOptions extends StObject {
   
   /** @default "ghost" */
-  var ghostPath: js.UndefOr[String] = js.native
+  var ghostPath: js.UndefOr[String] = js.undefined
   
   /** @deprecated since version v2 */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var url: String = js.native
+  var url: String
   
   /**
     * Version of GhostContentAPI
     *
     * Supported Versions: 'v2', 'v3', 'canary'
     */
-  var version: v2 | v3 | canary = js.native
+  var version: v2 | v3 | canary
 }
 object GhostContentAPIOptions {
   

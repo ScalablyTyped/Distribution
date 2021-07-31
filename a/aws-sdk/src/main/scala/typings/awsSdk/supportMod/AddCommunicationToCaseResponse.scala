@@ -2,16 +2,14 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCommunicationToCaseResponse extends StObject {
   
   /**
     * True if AddCommunicationToCase succeeds. Otherwise, returns an error.
     */
-  var result: js.UndefOr[Result] = js.native
+  var result: js.UndefOr[Result] = js.undefined
 }
 object AddCommunicationToCaseResponse {
   

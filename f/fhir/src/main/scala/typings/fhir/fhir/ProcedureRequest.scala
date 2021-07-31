@@ -2,195 +2,195 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request for a procedure or diagnostic to be performed
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait ProcedureRequest extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait ProcedureRequest
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'asNeededBoolean'.
     */
-  var _asNeededBoolean: js.UndefOr[Element] = js.native
+  var _asNeededBoolean: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'authoredOn'.
     */
-  var _authoredOn: js.UndefOr[Element] = js.native
+  var _authoredOn: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'doNotPerform'.
     */
-  var _doNotPerform: js.UndefOr[Element] = js.native
+  var _doNotPerform: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'intent'.
     */
-  var _intent: js.UndefOr[Element] = js.native
+  var _intent: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'occurrenceDateTime'.
     */
-  var _occurrenceDateTime: js.UndefOr[Element] = js.native
+  var _occurrenceDateTime: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'priority'.
     */
-  var _priority: js.UndefOr[Element] = js.native
+  var _priority: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Preconditions for procedure or diagnostic
     */
-  var asNeededBoolean: js.UndefOr[Boolean] = js.native
+  var asNeededBoolean: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Preconditions for procedure or diagnostic
     */
-  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.native
+  var asNeededCodeableConcept: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Date request signed
     */
-  var authoredOn: js.UndefOr[dateTime] = js.native
+  var authoredOn: js.UndefOr[dateTime] = js.undefined
   
   /**
     * What request fulfills
     */
-  var basedOn: js.UndefOr[js.Array[Reference]] = js.native
+  var basedOn: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Location on Body
     */
-  var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var bodySite: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Classification of procedure
     */
-  var category: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var category: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * What is being requested/ordered
     */
-  var code: CodeableConcept = js.native
+  var code: CodeableConcept
   
   /**
     * Encounter or Episode during which request was created
     */
-  var context: js.UndefOr[Reference] = js.native
+  var context: js.UndefOr[Reference] = js.undefined
   
   /**
     * Protocol or definition
     */
-  var definition: js.UndefOr[js.Array[Reference]] = js.native
+  var definition: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * True if procedure should not be performed
     */
-  var doNotPerform: js.UndefOr[Boolean] = js.native
+  var doNotPerform: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifiers assigned to this order
     */
-  var identifier: js.UndefOr[js.Array[Identifier]] = js.native
+  var identifier: js.UndefOr[js.Array[Identifier]] = js.undefined
   
   /**
     * proposal | plan | order +
     */
-  var intent: code = js.native
+  var intent: code
   
   /**
     * Comments
     */
-  var note: js.UndefOr[js.Array[Annotation]] = js.native
+  var note: js.UndefOr[js.Array[Annotation]] = js.undefined
   
   /**
     * When procedure should occur
     */
-  var occurrenceDateTime: js.UndefOr[dateTime] = js.native
+  var occurrenceDateTime: js.UndefOr[dateTime] = js.undefined
   
   /**
     * When procedure should occur
     */
-  var occurrencePeriod: js.UndefOr[Period] = js.native
+  var occurrencePeriod: js.UndefOr[Period] = js.undefined
   
   /**
     * When procedure should occur
     */
-  var occurrenceTiming: js.UndefOr[Timing] = js.native
+  var occurrenceTiming: js.UndefOr[Timing] = js.undefined
   
   /**
     * Requested perfomer
     */
-  var performer: js.UndefOr[Reference] = js.native
+  var performer: js.UndefOr[Reference] = js.undefined
   
   /**
     * Performer role
     */
-  var performerType: js.UndefOr[CodeableConcept] = js.native
+  var performerType: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * routine | urgent | asap | stat
     */
-  var priority: js.UndefOr[code] = js.native
+  var priority: js.UndefOr[code] = js.undefined
   
   /**
     * Explanation/Justification for test
     */
-  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var reasonCode: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * Explanation/Justification for test
     */
-  var reasonReference: js.UndefOr[js.Array[Reference]] = js.native
+  var reasonReference: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Request provenance
     */
-  var relevantHistory: js.UndefOr[js.Array[Reference]] = js.native
+  var relevantHistory: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * What request replaces
     */
-  var replaces: js.UndefOr[js.Array[Reference]] = js.native
+  var replaces: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Who/what is requesting procedure or diagnostic
     */
-  var requester: js.UndefOr[ProcedureRequestRequester] = js.native
+  var requester: js.UndefOr[ProcedureRequestRequester] = js.undefined
   
   /**
     * Composite Request ID
     */
-  var requisition: js.UndefOr[Identifier] = js.native
+  var requisition: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Procedure Samples
     */
-  var specimen: js.UndefOr[js.Array[Reference]] = js.native
+  var specimen: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * draft | active | suspended | completed | entered-in-error | cancelled
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Individual the service is ordered for
     */
-  var subject: Reference = js.native
+  var subject: Reference
   
   /**
     * Additional clinical information
     */
-  var supportingInfo: js.UndefOr[js.Array[Reference]] = js.native
+  var supportingInfo: js.UndefOr[js.Array[Reference]] = js.undefined
 }
 object ProcedureRequest {
   

@@ -3,7 +3,6 @@ package typings.googleapis.loggingV2beta1Mod.loggingV2beta1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/logging/v2beta1", "logging_v2beta1.Resource$Projects")

@@ -11,8 +11,8 @@ plugin to pretty-print or minify XML, JSON, CSS and SQL files
 | Full name          | pretty-data |
 | Keywords           | pretty print, beautify, minify, XML, JSON, CSS, SQL |
 | # releases         | 0 |
-| # dependents       | 189 |
-| # downloads        | 4220073 |
+| # dependents       | 192 |
+| # downloads        | 4793313 |
 | # stars            | 11 |
 
 ## Links

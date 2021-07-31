@@ -2,21 +2,19 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobHeaders extends StObject {
   
-  var cacheControl: js.UndefOr[String] = js.native
+  var cacheControl: js.UndefOr[String] = js.undefined
   
-  var contentDisposition: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.undefined
   
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
   
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
 }
 object BlobHeaders {
   

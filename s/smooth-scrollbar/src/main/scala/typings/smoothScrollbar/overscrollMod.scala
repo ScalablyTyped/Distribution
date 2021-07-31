@@ -4,7 +4,6 @@ import typings.smoothScrollbar.mod.ScrollbarPlugin
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overscrollMod {
@@ -39,23 +38,26 @@ object overscrollMod {
   object OverscrollEffect extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[OverscrollEffect with String] = js.native
+    def apply(value: String): js.UndefOr[OverscrollEffect & String] = js.native
     
     @js.native
-    sealed trait BOUNCE extends OverscrollEffect
-    /* "bounce" */ val BOUNCE: typings.smoothScrollbar.overscrollMod.OverscrollEffect.BOUNCE with String = js.native
+    sealed trait BOUNCE
+      extends StObject
+         with OverscrollEffect
+    /* "bounce" */ val BOUNCE: typings.smoothScrollbar.overscrollMod.OverscrollEffect.BOUNCE & String = js.native
     
     @js.native
-    sealed trait GLOW extends OverscrollEffect
-    /* "glow" */ val GLOW: typings.smoothScrollbar.overscrollMod.OverscrollEffect.GLOW with String = js.native
+    sealed trait GLOW
+      extends StObject
+         with OverscrollEffect
+    /* "glow" */ val GLOW: typings.smoothScrollbar.overscrollMod.OverscrollEffect.GLOW & String = js.native
   }
   
-  @js.native
   trait Data2d extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Data2d {
     
@@ -78,18 +80,17 @@ object overscrollMod {
   
   type OnScrollCallback = js.ThisFunction1[/* this */ OverscrollPlugin, /* position */ Data2d, Unit]
   
-  @js.native
   trait OverscrollOptions extends StObject {
     
-    var damping: Double = js.native
+    var damping: Double
     
-    var effect: js.UndefOr[OverscrollEffect] = js.native
+    var effect: js.UndefOr[OverscrollEffect] = js.undefined
     
-    var glowColor: String = js.native
+    var glowColor: String
     
-    var maxOverscroll: Double = js.native
+    var maxOverscroll: Double
     
-    var onScroll: js.UndefOr[OnScrollCallback] = js.native
+    var onScroll: js.UndefOr[OnScrollCallback] = js.undefined
   }
   object OverscrollOptions {
     

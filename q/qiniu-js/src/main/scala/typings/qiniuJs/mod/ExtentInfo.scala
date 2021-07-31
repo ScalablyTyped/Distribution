@@ -3,23 +3,23 @@ package typings.qiniuJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtentInfo extends /* key */ StringDictionary[ExtentInfoValue] {
+trait ExtentInfo
+  extends StObject
+     with /* key */ StringDictionary[ExtentInfoValue] {
   
-  var DateTime: ExtentInfoValue = js.native
+  var DateTime: ExtentInfoValue
   
-  var ExposureBiasValue: ExtentInfoValue = js.native
+  var ExposureBiasValue: ExtentInfoValue
   
-  var ExposureTime: ExtentInfoValue = js.native
+  var ExposureTime: ExtentInfoValue
   
-  var ISOSpeedRatings: ExtentInfoValue = js.native
+  var ISOSpeedRatings: ExtentInfoValue
   
-  var Model: ExtentInfoValue = js.native
+  var Model: ExtentInfoValue
   
-  var ResolutionUnit: ExtentInfoValue = js.native
+  var ResolutionUnit: ExtentInfoValue
 }
 object ExtentInfo {
   

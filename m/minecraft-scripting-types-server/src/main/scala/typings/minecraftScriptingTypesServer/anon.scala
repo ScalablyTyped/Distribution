@@ -4,38 +4,36 @@ import typings.minecraftScriptingTypesShared.MinecraftFilter
 import typings.minecraftScriptingTypesShared.MinecraftTrigger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accepteditems extends StObject {
     
     /**
       * The list of items that can go in this slot
       */
-    var accepted_items: js.Array[String] = js.native
+    var accepted_items: js.Array[String]
     
     /**
       * Text to be displayed when the entity can be equipped with this item when playing with Touch-screen controls
       */
-    var interact_text: String = js.native
+    var interact_text: String
     
     /**
       * Event to trigger when this entity is equipped with this item
       */
-    var on_equip: MinecraftTrigger | String = js.native
+    var on_equip: MinecraftTrigger | String
     
     /**
       * Event to trigger when this item is removed from this entity
       */
-    var on_unequip: MinecraftTrigger | String = js.native
+    var on_unequip: MinecraftTrigger | String
     
     /**
       * The slot number of this slot
       */
-    var slot: Double = js.native
+    var slot: Double
   }
   object Accepteditems {
     
@@ -74,28 +72,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Amplifier extends StObject {
     
     /**
       * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
       */
-    var amplifier: Double = js.native
+    var amplifier: Double
     
     /**
       * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
       */
-    var chance: Double = js.native
+    var chance: Double
     
     /**
       * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
       */
-    var duration: Double = js.native
+    var duration: Double
     
     /**
       * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
       */
-    var name: String = js.native
+    var name: String
   }
   object Amplifier {
     
@@ -122,18 +119,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Dropchance extends StObject {
     
     /**
       * The chance that the item in this slot will be dropped
       */
-    var drop_chance: Double = js.native
+    var drop_chance: Double
     
     /**
       * The slot number
       */
-    var slot: Double = js.native
+    var slot: Double
   }
   object Dropchance {
     
@@ -154,29 +150,28 @@ object anon {
     }
   }
   
-  @js.native
   trait Effects extends StObject {
     
     /**
       * FIXME - UNDOCUMENTED - NO DESCRIPTION FROM MOJANG
       */
-    var effects: js.Array[Amplifier] = js.native
+    var effects: js.Array[Amplifier]
     
     /**
       * The filter group that defines the conditions for using this item to heal the entity
       */
-    var filters: js.UndefOr[MinecraftFilter] = js.native
+    var filters: js.UndefOr[MinecraftFilter] = js.undefined
     
     /**
       * The amount of health this entity gains when fed this item
       * @default 1
       */
-    var heal_amount: Double = js.native
+    var heal_amount: Double
     
     /**
       * Item identifier that can be used to heal this entity
       */
-    var item: String = js.native
+    var item: String
   }
   object Effects {
     
@@ -209,12 +204,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Message {
     
@@ -235,18 +229,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Namefilter extends StObject {
     
     /**
       * List of special names that will cause the events defined in 'on_named' to fire
       */
-    var name_filter: js.Array[String] = js.native
+    var name_filter: js.Array[String]
     
     /**
       * Event to be called when this entity acquires the name specified in 'name_filter'
       */
-    var on_named: MinecraftTrigger | String = js.native
+    var on_named: MinecraftTrigger | String
   }
   object Namefilter {
     
@@ -270,25 +263,24 @@ object anon {
     }
   }
   
-  @js.native
   trait Particleoffsettowardsinteractor extends StObject {
     
     /**
       * Whether or not the particle will appear closer to who performed the interaction
       * @default false
       */
-    var particle_offset_towards_interactor: Boolean = js.native
+    var particle_offset_towards_interactor: Boolean
     
     /**
       * The type of particle that will be spawned
       */
-    var particle_type: String = js.native
+    var particle_type: String
     
     /**
       * Will offset the particle this amount in the y direction
       * @default 0.0
       */
-    var particle_y_offset: Double = js.native
+    var particle_y_offset: Double
   }
   object Particleoffsettowardsinteractor {
     
@@ -312,20 +304,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Rangemax extends StObject {
     
     /**
       * The maximum amount of damage the entity will deal
       * @default 0.0
       */
-    var range_max: Double = js.native
+    var range_max: Double
     
     /**
       * The minimum amount of damage the entity will deal
       * @default 0.0
       */
-    var range_min: Double = js.native
+    var range_min: Double
   }
   object Rangemax {
     
@@ -346,13 +337,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Table extends StObject {
     
     /**
       * File path, relative to the behavior pack's path, to the loot table file
       */
-    var table: String = js.native
+    var table: String
   }
   object Table {
     

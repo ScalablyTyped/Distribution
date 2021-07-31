@@ -4,59 +4,57 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupPickerTypesMod {
   
-  @js.native
   trait PopupPickerProps extends StObject {
     
-    var WrapComponent: js.UndefOr[js.Any] = js.native
+    var WrapComponent: js.UndefOr[js.Any] = js.undefined
     
-    var actionTextActiveOpacity: js.UndefOr[Double] = js.native
+    var actionTextActiveOpacity: js.UndefOr[Double] = js.undefined
     
-    var actionTextUnderlayColor: js.UndefOr[String] = js.native
+    var actionTextUnderlayColor: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[ReactElement | String] = js.native
+    var content: js.UndefOr[ReactElement | String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dismissText: js.UndefOr[String | ReactElement] = js.native
+    var dismissText: js.UndefOr[String | ReactElement] = js.undefined
     
-    var maskTransitionName: js.UndefOr[String] = js.native
+    var maskTransitionName: js.UndefOr[String] = js.undefined
     
-    var okText: js.UndefOr[String | ReactElement] = js.native
+    var okText: js.UndefOr[String | ReactElement] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+    var onOk: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.native
+    var onVisibleChange: js.UndefOr[js.Function1[/* visible */ Boolean, Unit]] = js.undefined
     
-    var picker: js.UndefOr[js.Any] = js.native
+    var picker: js.UndefOr[js.Any] = js.undefined
     
-    var pickerValueChangeProp: js.UndefOr[String] = js.native
+    var pickerValueChangeProp: js.UndefOr[String] = js.undefined
     
-    var pickerValueProp: js.UndefOr[String] = js.native
+    var pickerValueProp: js.UndefOr[String] = js.undefined
     
-    var popupTransitionName: js.UndefOr[String] = js.native
+    var popupTransitionName: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var styles: js.UndefOr[js.Any] = js.native
+    var styles: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String | ReactElement] = js.native
+    var title: js.UndefOr[String | ReactElement] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
     
-    var triggerType: js.UndefOr[String] = js.native
+    var triggerType: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var wrapStyle: js.UndefOr[CSSProperties] = js.native
+    var wrapStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object PopupPickerProps {
     

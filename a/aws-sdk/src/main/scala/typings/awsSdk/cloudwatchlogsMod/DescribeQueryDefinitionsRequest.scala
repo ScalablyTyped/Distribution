@@ -2,23 +2,21 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeQueryDefinitionsRequest extends StObject {
   
   /**
     * Limits the number of returned query definitions to the specified number.
     */
-  var maxResults: js.UndefOr[QueryListMaxResults] = js.native
+  var maxResults: js.UndefOr[QueryListMaxResults] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * Use this parameter to filter your results to only the query definitions that have names that start with the prefix you specify.
     */
-  var queryDefinitionNamePrefix: js.UndefOr[QueryDefinitionName] = js.native
+  var queryDefinitionNamePrefix: js.UndefOr[QueryDefinitionName] = js.undefined
 }
 object DescribeQueryDefinitionsRequest {
   

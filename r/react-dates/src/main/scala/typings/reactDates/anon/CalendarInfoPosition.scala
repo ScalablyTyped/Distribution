@@ -14,88 +14,86 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarInfoPosition extends StObject {
   
-  var calendarInfoPosition: js.UndefOr[CalendarInfoPositionShape] = js.native
+  var calendarInfoPosition: js.UndefOr[CalendarInfoPositionShape] = js.undefined
   
   // navigation props
-  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, _]) | Null] = js.native
+  var dayPickerNavigationInlineStyles: js.UndefOr[(Record[String, js.Any]) | Null] = js.undefined
   
-  var disableNext: js.UndefOr[Boolean] = js.native
+  var disableNext: js.UndefOr[Boolean] = js.undefined
   
-  var disablePrev: js.UndefOr[Boolean] = js.native
+  var disablePrev: js.UndefOr[Boolean] = js.undefined
   
-  var getFirstFocusableDay: js.UndefOr[(js.Function1[/* month */ Moment, Moment]) | Null] = js.native
+  var getFirstFocusableDay: js.UndefOr[(js.Function1[/* month */ Moment, Moment]) | Null] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.native
+  var hideKeyboardShortcutsPanel: js.UndefOr[Boolean] = js.undefined
   
-  var initialVisibleMonth: js.UndefOr[js.Function0[Moment]] = js.native
+  var initialVisibleMonth: js.UndefOr[js.Function0[Moment]] = js.undefined
   
   // accessibility props
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var navNext: js.UndefOr[ReactNode] = js.native
+  var navNext: js.UndefOr[ReactNode] = js.undefined
   
-  var navPosition: js.UndefOr[NavPositionShape] = js.native
+  var navPosition: js.UndefOr[NavPositionShape] = js.undefined
   
-  var navPrev: js.UndefOr[ReactNode] = js.native
+  var navPrev: js.UndefOr[ReactNode] = js.undefined
   
-  var noBorder: js.UndefOr[Boolean] = js.native
+  var noBorder: js.UndefOr[Boolean] = js.undefined
   
-  var noNavButtons: js.UndefOr[Boolean] = js.native
+  var noNavButtons: js.UndefOr[Boolean] = js.undefined
   
-  var noNavNextButton: js.UndefOr[Boolean] = js.native
+  var noNavNextButton: js.UndefOr[Boolean] = js.undefined
   
-  var noNavPrevButton: js.UndefOr[Boolean] = js.native
+  var noNavPrevButton: js.UndefOr[Boolean] = js.undefined
   
   // calendar presentation props
-  var numberOfMonths: js.UndefOr[Double] = js.native
+  var numberOfMonths: js.UndefOr[Double] = js.undefined
   
-  var onBlur: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onBlur: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onMonthChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.native
+  var onMonthChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.undefined
   
-  var onNextMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.native
+  var onNextMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.undefined
   
-  var onOutsideClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.native
+  var onOutsideClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLElement, NativeMouseEvent], Unit]] = js.undefined
   
-  var onPrevMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.native
+  var onPrevMonthClick: js.UndefOr[js.Function1[/* newCurrentMonth */ Moment, Unit]] = js.undefined
   
-  var onShiftTab: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShiftTab: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onTab: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.native
+  var onTab: js.UndefOr[KeyboardEventHandler[HTMLDivElement]] = js.undefined
   
-  var onYearChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.native
+  var onYearChange: js.UndefOr[js.Function1[/* newMonth */ Moment, Unit]] = js.undefined
   
-  var phrases: js.UndefOr[DayPickerPhrases] = js.native
+  var phrases: js.UndefOr[DayPickerPhrases] = js.undefined
   
-  var renderCalendarInfo: js.UndefOr[js.Function0[ReactNode] | Null] = js.native
+  var renderCalendarInfo: js.UndefOr[js.Function0[ReactNode] | Null] = js.undefined
   
-  var renderKeyboardShortcutsButton: js.UndefOr[js.Function1[/* props */ OnClick, ReactNode]] = js.native
+  var renderKeyboardShortcutsButton: js.UndefOr[js.Function1[/* props */ OnClick, ReactNode]] = js.undefined
   
-  var renderKeyboardShortcutsPanel: js.UndefOr[js.Function1[/* props */ CloseButtonAriaLabel, ReactNode]] = js.native
+  var renderKeyboardShortcutsPanel: js.UndefOr[js.Function1[/* props */ CloseButtonAriaLabel, ReactNode]] = js.undefined
   
-  var renderNavNextButton: js.UndefOr[(js.Function1[/* props */ AriaLabel, ReactNode]) | Null] = js.native
+  var renderNavNextButton: js.UndefOr[(js.Function1[/* props */ AriaLabel, ReactNode]) | Null] = js.undefined
   
-  var renderNavPrevButton: js.UndefOr[(js.Function1[/* props */ AriaLabel, ReactNode]) | Null] = js.native
+  var renderNavPrevButton: js.UndefOr[(js.Function1[/* props */ AriaLabel, ReactNode]) | Null] = js.undefined
   
   // month props
-  var renderWeekHeaderElement: js.UndefOr[(js.Function1[/* day */ String, ReactNode]) | Null] = js.native
+  var renderWeekHeaderElement: js.UndefOr[(js.Function1[/* day */ String, ReactNode]) | Null] = js.undefined
   
-  var showKeyboardShortcuts: js.UndefOr[Boolean] = js.native
+  var showKeyboardShortcuts: js.UndefOr[Boolean] = js.undefined
   
-  var verticalHeight: js.UndefOr[Double | Null] = js.native
+  var verticalHeight: js.UndefOr[Double | Null] = js.undefined
   
   // internationalization
-  var weekDayFormat: js.UndefOr[String] = js.native
+  var weekDayFormat: js.UndefOr[String] = js.undefined
   
-  var withPortal: js.UndefOr[Boolean] = js.native
+  var withPortal: js.UndefOr[Boolean] = js.undefined
 }
 object CalendarInfoPosition {
   
@@ -115,7 +113,7 @@ object CalendarInfoPosition {
     def setCalendarInfoPositionUndefined: Self = StObject.set(x, "calendarInfoPosition", js.undefined)
     
     @scala.inline
-    def setDayPickerNavigationInlineStyles(value: Record[String, _]): Self = StObject.set(x, "dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
+    def setDayPickerNavigationInlineStyles(value: Record[String, js.Any]): Self = StObject.set(x, "dayPickerNavigationInlineStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDayPickerNavigationInlineStylesNull: Self = StObject.set(x, "dayPickerNavigationInlineStyles", null)

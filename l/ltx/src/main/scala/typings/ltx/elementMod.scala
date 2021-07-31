@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.ltx.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elementMod {
@@ -54,9 +53,9 @@ object elementMod {
     def getChild(name: String, xmlns: String): js.UndefOr[Element] = js.native
     
     def getChildByAttr(attr: String, `val`: js.Any): js.UndefOr[Element] = js.native
-    def getChildByAttr(attr: String, `val`: js.Any, xmlns: js.UndefOr[scala.Nothing], recursive: Boolean): js.UndefOr[Element] = js.native
     def getChildByAttr(attr: String, `val`: js.Any, xmlns: String): js.UndefOr[Element] = js.native
     def getChildByAttr(attr: String, `val`: js.Any, xmlns: String, recursive: Boolean): js.UndefOr[Element] = js.native
+    def getChildByAttr(attr: String, `val`: js.Any, xmlns: Unit, recursive: Boolean): js.UndefOr[Element] = js.native
     
     /**
       * Return all direct descendents that are Elements.
@@ -72,9 +71,9 @@ object elementMod {
     def getChildren(name: String, xmlns: String): js.Array[Element] = js.native
     
     def getChildrenByAttr(attr: String, `val`: js.Any): js.Array[Element] = js.native
-    def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: js.UndefOr[scala.Nothing], recursive: Boolean): js.Array[Element] = js.native
     def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: String): js.Array[Element] = js.native
     def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: String, recursive: Boolean): js.Array[Element] = js.native
+    def getChildrenByAttr(attr: String, `val`: js.Any, xmlns: Unit, recursive: Boolean): js.Array[Element] = js.native
     
     def getChildrenByFilter(filter: js.Function1[/* child */ Node, Boolean]): js.Array[Element] = js.native
     def getChildrenByFilter(filter: js.Function1[/* child */ Node, Boolean], recursive: Boolean): js.Array[Element] = js.native
@@ -140,14 +139,13 @@ object elementMod {
     def write(writer: js.Function1[/* part */ String, Unit]): Unit = js.native
   }
   
-  @js.native
   trait ElementJson extends StObject {
     
-    var attrs: StringDictionary[js.Any] = js.native
+    var attrs: StringDictionary[js.Any]
     
-    var children: js.Array[ElementJson | TextNode] = js.native
+    var children: js.Array[ElementJson | TextNode]
     
-    var name: String = js.native
+    var name: String
   }
   object ElementJson {
     

@@ -6,14 +6,13 @@ import typings.materialTextfield.typesMod.MDCTextFieldNativeInputElement
 import typings.std.MutationObserver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCTextFieldAdapter
-    extends MDCTextFieldRootAdapter
+    extends StObject
+       with MDCTextFieldRootAdapter
        with MDCTextFieldInputAdapter
        with MDCTextFieldLabelAdapter
        with MDCTextFieldLineRippleAdapter
@@ -52,39 +51,38 @@ object adapterMod {
     }
   }
   
-  @js.native
   trait MDCTextFieldInputAdapter extends StObject {
     
     /**
       * Deregisters an event listener on the native input element for a given event.
       */
-    def deregisterInputInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterInputInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * @return The native `<input>` element, or an object with the same shape.
       * Note that this method can return null, which the foundation will handle gracefully.
       */
-    def getNativeInput(): MDCTextFieldNativeInputElement | Null = js.native
+    def getNativeInput(): MDCTextFieldNativeInputElement | Null
     
     /**
       * @return true if the textfield is focused. We achieve this via `document.activeElement === this.root`.
       */
-    def isFocused(): Boolean = js.native
+    def isFocused(): Boolean
     
     /**
       * Registers an event listener on the native input element for a given event.
       */
-    def registerInputInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerInputInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Removes the specified attribute from the input element.
       */
-    def removeInputAttr(attr: String): Unit = js.native
+    def removeInputAttr(attr: String): Unit
     
     /**
       * Sets the specified attribute to the specified value on the input element.
       */
-    def setInputAttr(attr: String, value: String): Unit = js.native
+    def setInputAttr(attr: String, value: String): Unit
   }
   object MDCTextFieldInputAdapter {
     
@@ -124,37 +122,36 @@ object adapterMod {
     }
   }
   
-  @js.native
   trait MDCTextFieldLabelAdapter extends StObject {
     
     /**
       * Only implement if label exists.
       * Floats the label above the input element if shouldFloat is true.
       */
-    def floatLabel(shouldFloat: Boolean): Unit = js.native
+    def floatLabel(shouldFloat: Boolean): Unit
     
     /**
       * Only implement if label exists.
       * @return width of label in pixels.
       */
-    def getLabelWidth(): Double = js.native
+    def getLabelWidth(): Double
     
     /**
       * @return true if label element exists, false if it doesn't.
       */
-    def hasLabel(): Boolean = js.native
+    def hasLabel(): Boolean
     
     /**
       * Only implement if label exists.
       * Styles the label as required.
       */
-    def setLabelRequired(isRequired: Boolean): Unit = js.native
+    def setLabelRequired(isRequired: Boolean): Unit
     
     /**
       * Only implement if label exists.
       * Shakes label if shouldShake is true.
       */
-    def shakeLabel(shouldShake: Boolean): Unit = js.native
+    def shakeLabel(shouldShake: Boolean): Unit
   }
   object MDCTextFieldLabelAdapter {
     
@@ -190,23 +187,22 @@ object adapterMod {
     }
   }
   
-  @js.native
   trait MDCTextFieldLineRippleAdapter extends StObject {
     
     /**
       * Activates the line ripple.
       */
-    def activateLineRipple(): Unit = js.native
+    def activateLineRipple(): Unit
     
     /**
       * Deactivates the line ripple.
       */
-    def deactivateLineRipple(): Unit = js.native
+    def deactivateLineRipple(): Unit
     
     /**
       * Sets the transform origin of the line ripple.
       */
-    def setLineRippleTransformOrigin(normalizedX: Double): Unit = js.native
+    def setLineRippleTransformOrigin(normalizedX: Double): Unit
   }
   object MDCTextFieldLineRippleAdapter {
     
@@ -234,24 +230,23 @@ object adapterMod {
     }
   }
   
-  @js.native
   trait MDCTextFieldOutlineAdapter extends StObject {
     
     /**
       * Only implement if outline element exists.
       * Closes notch in outline element.
       */
-    def closeOutline(): Unit = js.native
+    def closeOutline(): Unit
     
     /**
       * @return true if outline element exists, false if it doesn't.
       */
-    def hasOutline(): Boolean = js.native
+    def hasOutline(): Boolean
     
     /**
       * Only implement if outline element exists.
       */
-    def notchOutline(labelWidth: Double): Unit = js.native
+    def notchOutline(labelWidth: Double): Unit
   }
   object MDCTextFieldOutlineAdapter {
     
@@ -275,44 +270,43 @@ object adapterMod {
     }
   }
   
-  @js.native
   trait MDCTextFieldRootAdapter extends StObject {
     
     /**
       * Adds a class to the root Element.
       */
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
     /**
       * Deregisters an event handler on the root element for a given event.
       */
-    def deregisterTextFieldInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def deregisterTextFieldInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Disconnects a validation attribute observer on the input element.
       */
-    def deregisterValidationAttributeChangeHandler(observer: MutationObserver): Unit = js.native
+    def deregisterValidationAttributeChangeHandler(observer: MutationObserver): Unit
     
     /**
       * @return true if the root element contains the given class name.
       */
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
     /**
       * Registers an event handler on the root element for a given event.
       */
-    def registerTextFieldInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit = js.native
+    def registerTextFieldInteractionHandler[K /* <: EventType */](evtType: K, handler: SpecificEventListener[K]): Unit
     
     /**
       * Registers a validation attribute change listener on the input element.
       * Handler accepts list of attribute names.
       */
-    def registerValidationAttributeChangeHandler(handler: js.Function1[/* attributeNames */ js.Array[String], Unit]): MutationObserver = js.native
+    def registerValidationAttributeChangeHandler(handler: js.Function1[/* attributeNames */ js.Array[String], Unit]): MutationObserver
     
     /**
       * Removes a class from the root Element.
       */
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
   }
   object MDCTextFieldRootAdapter {
     

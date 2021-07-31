@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EventSource contains information for an event.
   */
-@js.native
 trait EventSource extends StObject {
   
   /**
     * Component from which the event is generated.
     */
-  var component: js.UndefOr[Input[String]] = js.native
+  var component: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Node name on which the event is generated.
     */
-  var host: js.UndefOr[Input[String]] = js.native
+  var host: js.UndefOr[Input[String]] = js.undefined
 }
 object EventSource {
   

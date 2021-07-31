@@ -2,23 +2,21 @@ package typings.loopback.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fields extends StObject {
   
-  var fields: js.UndefOr[String | js.Any | js.Array[_]] = js.native
+  var fields: js.UndefOr[String | js.Any | js.Array[js.Any]] = js.undefined
   
-  var include: js.UndefOr[String | js.Any | js.Array[_]] = js.native
+  var include: js.UndefOr[String | js.Any | js.Array[js.Any]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var order: js.UndefOr[String] = js.native
+  var order: js.UndefOr[String] = js.undefined
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var where: js.UndefOr[js.Any] = js.native
+  var where: js.UndefOr[js.Any] = js.undefined
 }
 object Fields {
   
@@ -32,7 +30,7 @@ object Fields {
   implicit class FieldsMutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFields(value: String | js.Any | js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    def setFields(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -41,7 +39,7 @@ object Fields {
     def setFieldsVarargs(value: js.Any*): Self = StObject.set(x, "fields", js.Array(value :_*))
     
     @scala.inline
-    def setInclude(value: String | js.Any | js.Array[_]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    def setInclude(value: String | js.Any | js.Array[js.Any]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)

@@ -2,39 +2,37 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A custom configuration for the environment. */
-@js.native
 trait Configuration extends StObject {
   
   /** The unique identifier of the configuration. */
-  var configuration_id: js.UndefOr[String] = js.native
+  var configuration_id: js.UndefOr[String] = js.undefined
   
   /** Document conversion settings. */
-  var conversions: js.UndefOr[Conversions] = js.native
+  var conversions: js.UndefOr[Conversions] = js.undefined
   
   /** The creation date of the configuration in the format yyyy-MM-dd'T'HH:mm:ss.SSS'Z'. */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /** The description of the configuration, if available. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** An array of document enrichment settings for the configuration. */
-  var enrichments: js.UndefOr[js.Array[Enrichment]] = js.native
+  var enrichments: js.UndefOr[js.Array[Enrichment]] = js.undefined
   
   /** The name of the configuration. */
-  var name: String = js.native
+  var name: String
   
   /** Defines operations that can be used to transform the final output JSON into a normalized form. Operations are executed in the order that they appear in the array. */
-  var normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.native
+  var normalizations: js.UndefOr[js.Array[NormalizationOperation]] = js.undefined
   
   /** Object containing source parameters for the configuration. */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /** The timestamp of when the configuration was last updated in the format yyyy-MM-dd'T'HH:mm:ss.SSS'Z'. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

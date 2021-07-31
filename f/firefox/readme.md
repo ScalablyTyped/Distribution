@@ -11,7 +11,7 @@ CLI for Firefox
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 23840 |
+| # downloads        | 29959 |
 | # stars            | 1 |
 
 ## Links

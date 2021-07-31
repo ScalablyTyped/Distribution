@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payments extends StObject {
   
   /** The list of Payments for the account. One or both of a) the account's most recent payment; and b) the account's upcoming payment. */
-  var items: js.UndefOr[js.Array[Payment]] = js.native
+  var items: js.UndefOr[js.Array[Payment]] = js.undefined
   
   /** Kind of list this is, in this case adsense#payments. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object Payments {
   

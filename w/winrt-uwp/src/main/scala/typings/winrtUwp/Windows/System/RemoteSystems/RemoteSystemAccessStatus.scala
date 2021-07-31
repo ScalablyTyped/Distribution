@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object RemoteSystemAccessStatus extends StObject {
   
   /** Access is allowed */
   @js.native
-  sealed trait allowed extends RemoteSystemAccessStatus
+  sealed trait allowed
+    extends StObject
+       with RemoteSystemAccessStatus
   
   /** Access is denied to this app by the System; the app hasn't requested the proper capability. */
   @js.native
-  sealed trait deniedBySystem extends RemoteSystemAccessStatus
+  sealed trait deniedBySystem
+    extends StObject
+       with RemoteSystemAccessStatus
   
   /** Access has been denied to this particular app by this particular user. */
   @js.native
-  sealed trait deniedByUser extends RemoteSystemAccessStatus
+  sealed trait deniedByUser
+    extends StObject
+       with RemoteSystemAccessStatus
   
   /** Access is denied for an unknown reason. */
   @js.native
-  sealed trait unspecified extends RemoteSystemAccessStatus
+  sealed trait unspecified
+    extends StObject
+       with RemoteSystemAccessStatus
 }

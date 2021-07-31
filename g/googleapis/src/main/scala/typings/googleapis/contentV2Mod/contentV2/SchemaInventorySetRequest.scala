@@ -2,61 +2,59 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInventorySetRequest extends StObject {
   
   /**
     * The availability of the product.
     */
-  var availability: js.UndefOr[String] = js.native
+  var availability: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 0 for custom grouping of items in a Shopping campaign. Only
     * supported for online products.
     */
-  var customLabel0: js.UndefOr[String] = js.native
+  var customLabel0: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 1 for custom grouping of items in a Shopping campaign. Only
     * supported for online products.
     */
-  var customLabel1: js.UndefOr[String] = js.native
+  var customLabel1: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 2 for custom grouping of items in a Shopping campaign. Only
     * supported for online products.
     */
-  var customLabel2: js.UndefOr[String] = js.native
+  var customLabel2: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 3 for custom grouping of items in a Shopping campaign. Only
     * supported for online products.
     */
-  var customLabel3: js.UndefOr[String] = js.native
+  var customLabel3: js.UndefOr[String] = js.undefined
   
   /**
     * Custom label 3 for custom grouping of items in a Shopping campaign. Only
     * supported for online products.
     */
-  var customLabel4: js.UndefOr[String] = js.native
+  var customLabel4: js.UndefOr[String] = js.undefined
   
   /**
     * Number and amount of installments to pay for an item. Brazil only.
     */
-  var installment: js.UndefOr[SchemaInstallment] = js.native
+  var installment: js.UndefOr[SchemaInstallment] = js.undefined
   
   /**
     * The instore product location. Supported only for local products.
     */
-  var instoreProductLocation: js.UndefOr[String] = js.native
+  var instoreProductLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Loyalty points that users receive after purchasing the item. Japan only.
     */
-  var loyaltyPoints: js.UndefOr[SchemaLoyaltyPoints] = js.native
+  var loyaltyPoints: js.UndefOr[SchemaLoyaltyPoints] = js.undefined
   
   /**
     * Store pickup information. Only supported for local inventory. Not setting
@@ -65,37 +63,37 @@ trait SchemaInventorySetRequest extends StObject {
     * pickupSla must be set together, unless pickupMethod is &quot;not
     * supported&quot;.
     */
-  var pickup: js.UndefOr[SchemaInventoryPickup] = js.native
+  var pickup: js.UndefOr[SchemaInventoryPickup] = js.undefined
   
   /**
     * The price of the product.
     */
-  var price: js.UndefOr[SchemaPrice] = js.native
+  var price: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The quantity of the product. Must be equal to or greater than zero.
     * Supported only for local products.
     */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
   
   /**
     * The sale price of the product. Mandatory if sale_price_effective_date is
     * defined.
     */
-  var salePrice: js.UndefOr[SchemaPrice] = js.native
+  var salePrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * A date range represented by a pair of ISO 8601 dates separated by a
     * space, comma, or slash. Both dates might be specified as &#39;null&#39;
     * if undecided.
     */
-  var salePriceEffectiveDate: js.UndefOr[String] = js.native
+  var salePriceEffectiveDate: js.UndefOr[String] = js.undefined
   
   /**
     * The quantity of the product that is available for selling on Google.
     * Supported only for online products.
     */
-  var sellOnGoogleQuantity: js.UndefOr[Double] = js.native
+  var sellOnGoogleQuantity: js.UndefOr[Double] = js.undefined
 }
 object SchemaInventorySetRequest {
   

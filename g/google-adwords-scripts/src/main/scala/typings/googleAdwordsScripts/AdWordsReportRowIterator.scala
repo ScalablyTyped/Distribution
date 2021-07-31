@@ -2,15 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsReportRowIterator extends StObject {
   
-  def hasNext(): Boolean = js.native
+  def hasNext(): Boolean
   
-  def next(): AdWordsReportRow = js.native
+  def next(): AdWordsReportRow
 }
 object AdWordsReportRowIterator {
   

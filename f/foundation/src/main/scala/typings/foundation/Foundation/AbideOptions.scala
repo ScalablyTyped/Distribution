@@ -2,25 +2,23 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbideOptions extends StObject {
   
-  var error_labels: js.UndefOr[Boolean] = js.native
+  var error_labels: js.UndefOr[Boolean] = js.undefined
   
-  var focus_on_invalid: js.UndefOr[Boolean] = js.native
+  var focus_on_invalid: js.UndefOr[Boolean] = js.undefined
   
-  var live_validate: js.UndefOr[Boolean] = js.native
+  var live_validate: js.UndefOr[Boolean] = js.undefined
   
-  var patterns: js.UndefOr[AbidePatterns] = js.native
+  var patterns: js.UndefOr[AbidePatterns] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var validate_on_blur: js.UndefOr[Boolean] = js.native
+  var validate_on_blur: js.UndefOr[Boolean] = js.undefined
   
-  var validators: js.UndefOr[js.Object] = js.native
+  var validators: js.UndefOr[js.Object] = js.undefined
 }
 object AbideOptions {
   

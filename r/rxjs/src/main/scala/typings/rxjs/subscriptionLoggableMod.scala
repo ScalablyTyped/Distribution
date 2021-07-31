@@ -4,7 +4,6 @@ import typings.rxjs.schedulerMod.Scheduler
 import typings.rxjs.subscriptionLogMod.SubscriptionLog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionLoggableMod {

@@ -8,20 +8,18 @@ import typings.std.ArrayBuffer
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object RTCDataChannel {
   
-  @js.native
   trait Message extends StObject {
     
-    var binary: js.UndefOr[Blob] = js.native
+    var binary: js.UndefOr[Blob] = js.undefined
     
-    var buffer: js.UndefOr[ArrayBuffer] = js.native
+    var buffer: js.UndefOr[ArrayBuffer] = js.undefined
     
     // Exactly one of the below must be specified.
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Message {
     

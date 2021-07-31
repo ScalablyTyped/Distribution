@@ -2,56 +2,54 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResultItem extends StObject {
   
   /**
     * One or more additional attributes associated with the query result.
     */
-  var AdditionalAttributes: js.UndefOr[AdditionalResultAttributeList] = js.native
+  var AdditionalAttributes: js.UndefOr[AdditionalResultAttributeList] = js.undefined
   
   /**
     * An array of document attributes for the document that the query result maps to. For example, the document author (Author) or the source URI (SourceUri) of the document.
     */
-  var DocumentAttributes: js.UndefOr[DocumentAttributeList] = js.native
+  var DocumentAttributes: js.UndefOr[DocumentAttributeList] = js.undefined
   
   /**
     * An extract of the text in the document. Contains information about highlighting the relevant terms in the excerpt.
     */
-  var DocumentExcerpt: js.UndefOr[TextWithHighlights] = js.native
+  var DocumentExcerpt: js.UndefOr[TextWithHighlights] = js.undefined
   
   /**
     * The unique identifier for the document.
     */
-  var DocumentId: js.UndefOr[typings.awsSdk.kendraMod.DocumentId] = js.native
+  var DocumentId: js.UndefOr[typings.awsSdk.kendraMod.DocumentId] = js.undefined
   
   /**
     * The title of the document. Contains the text of the title and information for highlighting the relevant terms in the title.
     */
-  var DocumentTitle: js.UndefOr[TextWithHighlights] = js.native
+  var DocumentTitle: js.UndefOr[TextWithHighlights] = js.undefined
   
   /**
     * The URI of the original location of the document.
     */
-  var DocumentURI: js.UndefOr[Url] = js.native
+  var DocumentURI: js.UndefOr[Url] = js.undefined
   
   /**
     * The unique identifier for the query result.
     */
-  var Id: js.UndefOr[ResultId] = js.native
+  var Id: js.UndefOr[ResultId] = js.undefined
   
   /**
     * Indicates the confidence that Amazon Kendra has that a result matches the query that you provided. Each result is placed into a bin that indicates the confidence, VERY_HIGH, HIGH, MEDIUM and LOW. You can use the score to determine if a response meets the confidence needed for your application. The field is only set to LOW when the Type field is set to DOCUMENT and Amazon Kendra is not confident that the result matches the query.
     */
-  var ScoreAttributes: js.UndefOr[typings.awsSdk.kendraMod.ScoreAttributes] = js.native
+  var ScoreAttributes: js.UndefOr[typings.awsSdk.kendraMod.ScoreAttributes] = js.undefined
   
   /**
     * The type of document. 
     */
-  var Type: js.UndefOr[QueryResultType] = js.native
+  var Type: js.UndefOr[QueryResultType] = js.undefined
 }
 object QueryResultItem {
   

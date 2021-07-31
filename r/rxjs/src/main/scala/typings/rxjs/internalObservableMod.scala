@@ -12,7 +12,6 @@ import typings.std.PromiseConstructor
 import typings.std.PromiseConstructorLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internalObservableMod {
@@ -26,14 +25,16 @@ object internalObservableMod {
     * can be `next`ed, or an `error` method can be called to raise an error, or
     * `complete` can be called to notify of a successful completion.
     */
-  class Observable[T] () extends Subscribable[T] {
+  class Observable[T] ()
+    extends StObject
+       with Subscribable[T] {
     def this(subscribe: js.ThisFunction1[/* this */ Observable[T], /* subscriber */ Subscriber[T], TeardownLogic]) = this()
     
     /** Internal implementation detail, do not use directly. */
     var _isScalar: Boolean = js.native
     
     /** @internal This is an internal implementation detail, do not use. */
-    def _subscribe(subscriber: Subscriber[_]): TeardownLogic = js.native
+    def _subscribe(subscriber: Subscriber[js.Any]): TeardownLogic = js.native
     
     /** @deprecated This is an internal implementation detail, do not use. */
     def _trySubscribe(sink: Subscriber[T]): TeardownLogic = js.native
@@ -58,7 +59,7 @@ object internalObservableMod {
     def lift[R](operator: Operator[T, R]): Observable[R] = js.native
     
     /** @deprecated This is an internal implementation detail, do not use. */
-    var operator: Operator[_, T] = js.native
+    var operator: Operator[js.Any, T] = js.native
     
     def pipe(): Observable[T] = js.native
     def pipe[A](op1: OperatorFunction[T, A]): Observable[A] = js.native
@@ -125,11 +126,11 @@ object internalObservableMod {
       op7: OperatorFunction[F, G],
       op8: OperatorFunction[G, H],
       op9: OperatorFunction[H, I],
-      operations: (OperatorFunction[_, _])*
+      operations: (OperatorFunction[js.Any, js.Any])*
     ): Observable[js.Object] = js.native
     
     /** @deprecated This is an internal implementation detail, do not use. */
-    var source: Observable[_] = js.native
+    var source: Observable[js.Any] = js.native
     
     def toPromise[T](): js.Promise[T] = js.native
     def toPromise[T](PromiseCtor: PromiseConstructor): js.Promise[T] = js.native
@@ -169,19 +170,18 @@ object internalObservableMod {
       * @nocollapse
       * @deprecated In favor of iif creation function: import { iif } from 'rxjs';
       */
-    @JSImport("rxjs/internal/Observable", "Observable.if")
-    @js.native
-    def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = js.native
-    @JSImport("rxjs/internal/Observable", "Observable.if")
-    @js.native
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean]): Observable[T | F] = ^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any]).asInstanceOf[Observable[T | F]]
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean], trueResult: Unit, falseResult: SubscribableOrPromise[F]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+    @scala.inline
+    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
+    @scala.inline
     def `if`[T, F](
       condition: js.Function0[Boolean],
-      trueResult: js.UndefOr[SubscribableOrPromise[T]],
+      trueResult: SubscribableOrPromise[T],
       falseResult: SubscribableOrPromise[F]
-    ): Observable[T | F] = js.native
-    @JSImport("rxjs/internal/Observable", "Observable.if")
-    @js.native
-    def `if`[T, F](condition: js.Function0[Boolean], trueResult: SubscribableOrPromise[T]): Observable[T | F] = js.native
+    ): Observable[T | F] = (^.asInstanceOf[js.Dynamic].applyDynamic("if")(condition.asInstanceOf[js.Any], trueResult.asInstanceOf[js.Any], falseResult.asInstanceOf[js.Any])).asInstanceOf[Observable[T | F]]
     
     /**
       * @nocollapse
@@ -198,11 +198,9 @@ object internalObservableMod {
       * @nocollapse
       * @deprecated In favor of throwError creation function: import { throwError } from 'rxjs';
       */
-    @JSImport("rxjs/internal/Observable", "Observable.throw")
-    @js.native
-    def `throw`(error: js.Any): Observable[scala.Nothing] = js.native
-    @JSImport("rxjs/internal/Observable", "Observable.throw")
-    @js.native
-    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = js.native
+    @scala.inline
+    def `throw`(error: js.Any): Observable[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any]).asInstanceOf[Observable[scala.Nothing]]
+    @scala.inline
+    def `throw`(error: js.Any, scheduler: SchedulerLike): Observable[scala.Nothing] = (^.asInstanceOf[js.Dynamic].applyDynamic("throw")(error.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[Observable[scala.Nothing]]
   }
 }

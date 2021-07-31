@@ -4,14 +4,15 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardSubtitleMod {
   
   @JSImport("@ionic/core/dist/types/components/card-subtitle/card-subtitle", "CardSubtitle")
   @js.native
-  class CardSubtitle () extends ComponentInterface {
+  class CardSubtitle ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * The color to use from your application's color palette.

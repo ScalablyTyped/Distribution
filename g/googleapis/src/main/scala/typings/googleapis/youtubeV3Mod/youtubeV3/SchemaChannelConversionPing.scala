@@ -2,7 +2,6 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * has a context, in which the app must fire the ping, and a url identifying
   * the ping.
   */
-@js.native
 trait SchemaChannelConversionPing extends StObject {
   
   /**
     * Defines the context of the ping.
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * The url (without the schema) that the player shall send the ping to.
@@ -28,7 +26,7 @@ trait SchemaChannelConversionPing extends StObject {
     * append biscotti authentication (ms param in case of mobile, for example)
     * to this ping.
     */
-  var conversionUrl: js.UndefOr[String] = js.native
+  var conversionUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaChannelConversionPing {
   

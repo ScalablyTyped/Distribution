@@ -19,60 +19,61 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldMod {
   
-  @JSImport("rc-field-form/es/Field", JSImport.Default)
+  @JSImport("rc-field-form/es/Field", JSImport.Namespace)
   @js.native
-  def default[Values](hasNameRestProps: FieldProps[Values]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Values](hasNameRestProps: FieldProps[Values]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNameRestProps.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type ChildProps = StringDictionary[js.Any]
   
   /* Inlined parent std.Omit<rc-field-form.rc-field-form/es/Field.InternalFieldProps<Values>, 'name' | 'fieldContext'> */
-  @js.native
   trait FieldProps[Values] extends StObject {
     
     var children: js.UndefOr[
         ReactElement | (js.Function3[/* control */ ChildProps, /* meta */ Meta, /* form */ FormInstance[Values], ReactNode])
-      ] = js.native
+      ] = js.undefined
     
-    var dependencies: js.UndefOr[js.Array[NamePath]] = js.native
+    var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
     
-    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.native
+    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
     
-    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.native
+    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.native
+    var initialValue: js.UndefOr[js.Any] = js.undefined
     
-    var isList: js.UndefOr[Boolean] = js.native
+    var isList: js.UndefOr[Boolean] = js.undefined
     
-    var isListField: js.UndefOr[Boolean] = js.native
+    var isListField: js.UndefOr[Boolean] = js.undefined
     
-    var messageVariables: js.UndefOr[Record[String, String]] = js.native
+    var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
     
-    var name: js.UndefOr[NamePath] = js.native
+    var name: js.UndefOr[NamePath] = js.undefined
     
     var normalize: js.UndefOr[
         js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
-      ] = js.native
+      ] = js.undefined
     
-    var onReset: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
-    var rules: js.UndefOr[js.Array[Rule]] = js.native
+    var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     
-    var shouldUpdate: js.UndefOr[ShouldUpdate[Values]] = js.native
+    var shouldUpdate: js.UndefOr[ShouldUpdate[Values]] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.native
+    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.native
+    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
     
-    var valuePropName: js.UndefOr[String] = js.native
+    var valuePropName: js.UndefOr[String] = js.undefined
   }
   object FieldProps {
     
@@ -83,7 +84,7 @@ object fieldMod {
     }
     
     @scala.inline
-    implicit class FieldPropsMutableBuilder[Self <: FieldProps[_], Values] (val x: Self with FieldProps[Values]) extends AnyVal {
+    implicit class FieldPropsMutableBuilder[Self <: FieldProps[?], Values] (val x: Self & FieldProps[Values]) extends AnyVal {
       
       @scala.inline
       def setChildren(
@@ -215,10 +216,9 @@ object fieldMod {
     }
   }
   
-  @js.native
   trait FieldState extends StObject {
     
-    var resetCount: Double = js.native
+    var resetCount: Double
   }
   object FieldState {
     
@@ -236,59 +236,58 @@ object fieldMod {
     }
   }
   
-  @js.native
   trait InternalFieldProps[Values] extends StObject {
     
     var children: js.UndefOr[
         ReactElement | (js.Function3[/* control */ ChildProps, /* meta */ Meta, /* form */ FormInstance[Values], ReactNode])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Set up `dependencies` field.
       * When dependencies field update and current field is touched,
       * will trigger validate rules and render.
       */
-    var dependencies: js.UndefOr[js.Array[NamePath]] = js.native
+    var dependencies: js.UndefOr[js.Array[NamePath]] = js.undefined
     
     /** @private Pass context as prop instead of context api
       *  since class component can not get context in constructor */
-    var fieldContext: js.UndefOr[InternalFormInstance] = js.native
+    var fieldContext: js.UndefOr[InternalFormInstance] = js.undefined
     
-    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.native
+    var getValueFromEvent: js.UndefOr[js.Function1[/* args */ EventArgs, StoreValue]] = js.undefined
     
-    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.native
+    var getValueProps: js.UndefOr[js.Function1[/* value */ StoreValue, js.Object]] = js.undefined
     
-    var initialValue: js.UndefOr[js.Any] = js.native
-    
-    /** @private Passed by Form.List props. Do not use since it will break by path check. */
-    var isList: js.UndefOr[Boolean] = js.native
+    var initialValue: js.UndefOr[js.Any] = js.undefined
     
     /** @private Passed by Form.List props. Do not use since it will break by path check. */
-    var isListField: js.UndefOr[Boolean] = js.native
+    var isList: js.UndefOr[Boolean] = js.undefined
     
-    var messageVariables: js.UndefOr[Record[String, String]] = js.native
+    /** @private Passed by Form.List props. Do not use since it will break by path check. */
+    var isListField: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[InternalNamePath] = js.native
+    var messageVariables: js.UndefOr[Record[String, String]] = js.undefined
+    
+    var name: js.UndefOr[InternalNamePath] = js.undefined
     
     var normalize: js.UndefOr[
         js.Function3[/* value */ StoreValue, /* prevValue */ StoreValue, /* allValues */ Store, StoreValue]
-      ] = js.native
+      ] = js.undefined
     
-    var onReset: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReset: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preserve: js.UndefOr[Boolean] = js.native
+    var preserve: js.UndefOr[Boolean] = js.undefined
     
-    var rules: js.UndefOr[js.Array[Rule]] = js.native
+    var rules: js.UndefOr[js.Array[Rule]] = js.undefined
     
-    var shouldUpdate: js.UndefOr[ShouldUpdate[Values]] = js.native
+    var shouldUpdate: js.UndefOr[ShouldUpdate[Values]] = js.undefined
     
-    var trigger: js.UndefOr[String] = js.native
+    var trigger: js.UndefOr[String] = js.undefined
     
-    var validateFirst: js.UndefOr[Boolean | parallel] = js.native
+    var validateFirst: js.UndefOr[Boolean | parallel] = js.undefined
     
-    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.native
+    var validateTrigger: js.UndefOr[String | js.Array[String] | `false`] = js.undefined
     
-    var valuePropName: js.UndefOr[String] = js.native
+    var valuePropName: js.UndefOr[String] = js.undefined
   }
   object InternalFieldProps {
     
@@ -299,7 +298,7 @@ object fieldMod {
     }
     
     @scala.inline
-    implicit class InternalFieldPropsMutableBuilder[Self <: InternalFieldProps[_], Values] (val x: Self with InternalFieldProps[Values]) extends AnyVal {
+    implicit class InternalFieldPropsMutableBuilder[Self <: InternalFieldProps[?], Values] (val x: Self & InternalFieldProps[Values]) extends AnyVal {
       
       @scala.inline
       def setChildren(

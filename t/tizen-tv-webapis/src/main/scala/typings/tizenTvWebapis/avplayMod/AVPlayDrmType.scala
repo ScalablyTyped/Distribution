@@ -2,7 +2,6 @@ package typings.tizenTvWebapis.avplayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,25 +11,35 @@ sealed trait AVPlayDrmType extends StObject
 object AVPlayDrmType extends StObject {
   
   @JSBracketAccess
-  def apply(value: String): js.UndefOr[AVPlayDrmType with String] = js.native
+  def apply(value: String): js.UndefOr[AVPlayDrmType & String] = js.native
   
   @js.native
-  sealed trait EME_PLAYREADY extends AVPlayDrmType
-  /* "EME_PLAYREADY" */ val EME_PLAYREADY: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.EME_PLAYREADY with String = js.native
+  sealed trait EME_PLAYREADY
+    extends StObject
+       with AVPlayDrmType
+  /* "EME_PLAYREADY" */ val EME_PLAYREADY: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.EME_PLAYREADY & String = js.native
   
   @js.native
-  sealed trait EME_WIDEVINE_CDM extends AVPlayDrmType
-  /* "EME_WIDEVINE_CDM" */ val EME_WIDEVINE_CDM: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.EME_WIDEVINE_CDM with String = js.native
+  sealed trait EME_WIDEVINE_CDM
+    extends StObject
+       with AVPlayDrmType
+  /* "EME_WIDEVINE_CDM" */ val EME_WIDEVINE_CDM: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.EME_WIDEVINE_CDM & String = js.native
   
   @js.native
-  sealed trait PLAYREADY extends AVPlayDrmType
-  /* "PLAYREADY" */ val PLAYREADY: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.PLAYREADY with String = js.native
+  sealed trait PLAYREADY
+    extends StObject
+       with AVPlayDrmType
+  /* "PLAYREADY" */ val PLAYREADY: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.PLAYREADY & String = js.native
   
   @js.native
-  sealed trait VERIMATRIX extends AVPlayDrmType
-  /* "VERIMATRIX" */ val VERIMATRIX: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.VERIMATRIX with String = js.native
+  sealed trait VERIMATRIX
+    extends StObject
+       with AVPlayDrmType
+  /* "VERIMATRIX" */ val VERIMATRIX: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.VERIMATRIX & String = js.native
   
   @js.native
-  sealed trait WIDEVINE_CDM extends AVPlayDrmType
-  /* "WIDEVINE_CDM" */ val WIDEVINE_CDM: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.WIDEVINE_CDM with String = js.native
+  sealed trait WIDEVINE_CDM
+    extends StObject
+       with AVPlayDrmType
+  /* "WIDEVINE_CDM" */ val WIDEVINE_CDM: typings.tizenTvWebapis.avplayMod.AVPlayDrmType.WIDEVINE_CDM & String = js.native
 }

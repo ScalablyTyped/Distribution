@@ -3,41 +3,39 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getOutpostsMod {
   
-  @JSImport("@pulumi/aws/outposts/getOutposts", "getOutposts")
+  @JSImport("@pulumi/aws/outposts/getOutposts", JSImport.Namespace)
   @js.native
-  def getOutposts(): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutposts", "getOutposts")
-  @js.native
-  def getOutposts(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutposts", "getOutposts")
-  @js.native
-  def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = js.native
-  @JSImport("@pulumi/aws/outposts/getOutposts", "getOutposts")
-  @js.native
-  def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getOutposts(): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")().asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: Unit, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: GetOutpostsArgs): js.Promise[GetOutpostsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetOutpostsResult]]
+  @scala.inline
+  def getOutposts(args: GetOutpostsArgs, opts: InvokeOptions): js.Promise[GetOutpostsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getOutposts")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetOutpostsResult]]
+  
   trait GetOutpostsArgs extends StObject {
     
     /**
       * Availability Zone name.
       */
-    val availabilityZone: js.UndefOr[String] = js.native
+    val availabilityZone: js.UndefOr[String] = js.undefined
     
     /**
       * Availability Zone identifier.
       */
-    val availabilityZoneId: js.UndefOr[String] = js.native
+    val availabilityZoneId: js.UndefOr[String] = js.undefined
     
     /**
       * Site identifier.
       */
-    val siteId: js.UndefOr[String] = js.native
+    val siteId: js.UndefOr[String] = js.undefined
   }
   object GetOutpostsArgs {
     
@@ -70,29 +68,28 @@ object getOutpostsMod {
     }
   }
   
-  @js.native
   trait GetOutpostsResult extends StObject {
     
     /**
       * Set of Amazon Resource Names (ARNs).
       */
-    val arns: js.Array[String] = js.native
+    val arns: js.Array[String]
     
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
-    val availabilityZoneId: String = js.native
+    val availabilityZoneId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of identifiers.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val siteId: String = js.native
+    val siteId: String
   }
   object GetOutpostsResult {
     

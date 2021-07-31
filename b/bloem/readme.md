@@ -11,8 +11,8 @@ Bloom Filter using the FNV hash function
 | Full name          | bloem |
 | Keywords           | bloom filter, scalable bloom filters |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 28747 |
+| # dependents       | 9 |
+| # downloads        | 24680 |
 | # stars            | 1 |
 
 ## Links

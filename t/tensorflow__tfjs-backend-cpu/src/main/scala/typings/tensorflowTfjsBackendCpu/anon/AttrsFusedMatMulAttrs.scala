@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.FusedMatMulAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.FusedMatMulInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsFusedMatMulAttrs extends StObject {
   
-  var attrs: FusedMatMulAttrs = js.native
+  var attrs: FusedMatMulAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: FusedMatMulInputs = js.native
+  var inputs: FusedMatMulInputs
 }
 object AttrsFusedMatMulAttrs {
   

@@ -4,21 +4,19 @@ import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DIRECT
 import typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.WEB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPayInExecutionType extends StObject {
   
-  var Direct: DIRECT = js.native
+  var Direct: DIRECT
   
-  var Web: WEB = js.native
+  var Web: WEB
 }
 object IPayInExecutionType {
   
   @scala.inline
-  def apply(Direct: DIRECT, Web: WEB): IPayInExecutionType = {
-    val __obj = js.Dynamic.literal(Direct = Direct.asInstanceOf[js.Any], Web = Web.asInstanceOf[js.Any])
+  def apply(): IPayInExecutionType = {
+    val __obj = js.Dynamic.literal(Direct = "DIRECT", Web = "WEB")
     __obj.asInstanceOf[IPayInExecutionType]
   }
   

@@ -8,7 +8,6 @@ import typings.uifabricMergeStyles.irawstylebaseMod.IFontWeight
 import typings.uifabricMergeStyles.irawstylebaseMod.IMixBlendModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uifabricMergeStylesStrings {
@@ -19,47 +18,65 @@ object uifabricMergeStylesStrings {
   def `-ms-autohiding-scrollbar`: `-ms-autohiding-scrollbar` = "-ms-autohiding-scrollbar".asInstanceOf[`-ms-autohiding-scrollbar`]
   
   @js.native
-  sealed trait `100` extends IFontWeight
+  sealed trait `100`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `100`: `100` = "100".asInstanceOf[`100`]
   
   @js.native
-  sealed trait `200` extends IFontWeight
+  sealed trait `200`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `200`: `200` = "200".asInstanceOf[`200`]
   
   @js.native
-  sealed trait `300` extends IFontWeight
+  sealed trait `300`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `300`: `300` = "300".asInstanceOf[`300`]
   
   @js.native
-  sealed trait `400` extends IFontWeight
+  sealed trait `400`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `400`: `400` = "400".asInstanceOf[`400`]
   
   @js.native
-  sealed trait `500` extends IFontWeight
+  sealed trait `500`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `500`: `500` = "500".asInstanceOf[`500`]
   
   @js.native
-  sealed trait `600` extends IFontWeight
+  sealed trait `600`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `600`: `600` = "600".asInstanceOf[`600`]
   
   @js.native
-  sealed trait `700` extends IFontWeight
+  sealed trait `700`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `700`: `700` = "700".asInstanceOf[`700`]
   
   @js.native
-  sealed trait `800` extends IFontWeight
+  sealed trait `800`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `800`: `800` = "800".asInstanceOf[`800`]
   
   @js.native
-  sealed trait `900` extends IFontWeight
+  sealed trait `900`
+    extends StObject
+       with IFontWeight
   @scala.inline
   def `900`: `900` = "900".asInstanceOf[`900`]
   
@@ -109,27 +126,37 @@ object uifabricMergeStylesStrings {
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait baseline extends ICSSBaselinePositionRule
+  sealed trait baseline
+    extends StObject
+       with ICSSBaselinePositionRule
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
   @js.native
-  sealed trait block extends ICSSDisplayRule
+  sealed trait block
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def block: block = "block".asInstanceOf[block]
   
   @js.native
-  sealed trait `block flow` extends ICSSDisplayRule
+  sealed trait `block flow`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `block flow`: `block flow` = ("block flow").asInstanceOf[`block flow`]
   
   @js.native
-  sealed trait bold extends IFontWeight
+  sealed trait bold
+    extends StObject
+       with IFontWeight
   @scala.inline
   def bold: bold = "bold".asInstanceOf[bold]
   
   @js.native
-  sealed trait bolder extends IFontWeight
+  sealed trait bolder
+    extends StObject
+       with IFontWeight
   @scala.inline
   def bolder: bolder = "bolder".asInstanceOf[bolder]
   
@@ -154,22 +181,30 @@ object uifabricMergeStylesStrings {
   def butt: butt = "butt".asInstanceOf[butt]
   
   @js.native
-  sealed trait center extends ICSSOverflowAndSelfPositionRule
+  sealed trait center
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait color extends IMixBlendModes
+  sealed trait color
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
   @js.native
-  sealed trait `color-burn` extends IMixBlendModes
+  sealed trait `color-burn`
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def `color-burn`: `color-burn` = "color-burn".asInstanceOf[`color-burn`]
   
   @js.native
-  sealed trait `color-dodge` extends IMixBlendModes
+  sealed trait `color-dodge`
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def `color-dodge`: `color-dodge` = "color-dodge".asInstanceOf[`color-dodge`]
   
@@ -199,7 +234,9 @@ object uifabricMergeStylesStrings {
   def `content-box`: `content-box` = "content-box".asInstanceOf[`content-box`]
   
   @js.native
-  sealed trait contents extends ICSSDisplayRule
+  sealed trait contents
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def contents: contents = "contents".asInstanceOf[contents]
   
@@ -209,22 +246,30 @@ object uifabricMergeStylesStrings {
   def cover: cover = "cover".asInstanceOf[cover]
   
   @js.native
-  sealed trait darken extends IMixBlendModes
+  sealed trait darken
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def darken: darken = "darken".asInstanceOf[darken]
   
   @js.native
-  sealed trait difference extends IMixBlendModes
+  sealed trait difference
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def difference: difference = "difference".asInstanceOf[difference]
   
   @js.native
-  sealed trait end extends ICSSOverflowAndSelfPositionRule
+  sealed trait end
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait exclusion extends IMixBlendModes
+  sealed trait exclusion
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def exclusion: exclusion = "exclusion".asInstanceOf[exclusion]
   
@@ -254,7 +299,9 @@ object uifabricMergeStylesStrings {
   def fill: fill = "fill".asInstanceOf[fill]
   
   @js.native
-  sealed trait `first baseline` extends ICSSBaselinePositionRule
+  sealed trait `first baseline`
+    extends StObject
+       with ICSSBaselinePositionRule
   @scala.inline
   def `first baseline`: `first baseline` = ("first baseline").asInstanceOf[`first baseline`]
   
@@ -264,37 +311,51 @@ object uifabricMergeStylesStrings {
   def fixed: fixed = "fixed".asInstanceOf[fixed]
   
   @js.native
-  sealed trait flex extends ICSSDisplayRule
+  sealed trait flex
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def flex: flex = "flex".asInstanceOf[flex]
   
   @js.native
-  sealed trait `flex run-in` extends ICSSDisplayRule
+  sealed trait `flex run-in`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `flex run-in`: `flex run-in` = ("flex run-in").asInstanceOf[`flex run-in`]
   
   @js.native
-  sealed trait `flex-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `flex-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `flex-end`: `flex-end` = "flex-end".asInstanceOf[`flex-end`]
   
   @js.native
-  sealed trait `flex-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `flex-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `flex-start`: `flex-start` = "flex-start".asInstanceOf[`flex-start`]
   
   @js.native
-  sealed trait flow extends ICSSDisplayRule
+  sealed trait flow
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def flow: flow = "flow".asInstanceOf[flow]
   
   @js.native
-  sealed trait `flow list-item block` extends ICSSDisplayRule
+  sealed trait `flow list-item block`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `flow list-item block`: `flow list-item block` = ("flow list-item block").asInstanceOf[`flow list-item block`]
   
   @js.native
-  sealed trait `flow-root` extends ICSSDisplayRule
+  sealed trait `flow-root`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `flow-root`: `flow-root` = "flow-root".asInstanceOf[`flow-root`]
   
@@ -309,12 +370,16 @@ object uifabricMergeStylesStrings {
   def grayscale: grayscale = "grayscale".asInstanceOf[grayscale]
   
   @js.native
-  sealed trait grid extends ICSSDisplayRule
+  sealed trait grid
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait `hard-light` extends IMixBlendModes
+  sealed trait `hard-light`
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def `hard-light`: `hard-light` = "hard-light".asInstanceOf[`hard-light`]
   
@@ -329,13 +394,16 @@ object uifabricMergeStylesStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait hue extends IMixBlendModes
+  sealed trait hue
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def hue: hue = "hue".asInstanceOf[hue]
   
   @js.native
   sealed trait inherit
-    extends ICSSRule
+    extends StObject
+       with ICSSRule
        with IFontWeight
        with IMixBlendModes
   @scala.inline
@@ -343,39 +411,52 @@ object uifabricMergeStylesStrings {
   
   @js.native
   sealed trait initial
-    extends ICSSRule
+    extends StObject
+       with ICSSRule
        with IFontWeight
        with IMixBlendModes
   @scala.inline
   def initial: initial = "initial".asInstanceOf[initial]
   
   @js.native
-  sealed trait `inline` extends ICSSDisplayRule
+  sealed trait `inline`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait `inline table` extends ICSSDisplayRule
+  sealed trait `inline table`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline table`: `inline table` = ("inline table").asInstanceOf[`inline table`]
   
   @js.native
-  sealed trait `inline-block` extends ICSSDisplayRule
+  sealed trait `inline-block`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline-block`: `inline-block` = "inline-block".asInstanceOf[`inline-block`]
   
   @js.native
-  sealed trait `inline-flex` extends ICSSDisplayRule
+  sealed trait `inline-flex`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline-flex`: `inline-flex` = "inline-flex".asInstanceOf[`inline-flex`]
   
   @js.native
-  sealed trait `inline-grid` extends ICSSDisplayRule
+  sealed trait `inline-grid`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline-grid`: `inline-grid` = "inline-grid".asInstanceOf[`inline-grid`]
   
   @js.native
-  sealed trait `inline-table` extends ICSSDisplayRule
+  sealed trait `inline-table`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `inline-table`: `inline-table` = "inline-table".asInstanceOf[`inline-table`]
   
@@ -395,7 +476,9 @@ object uifabricMergeStylesStrings {
   def larger: larger = "larger".asInstanceOf[larger]
   
   @js.native
-  sealed trait `last baseline` extends ICSSBaselinePositionRule
+  sealed trait `last baseline`
+    extends StObject
+       with ICSSBaselinePositionRule
   @scala.inline
   def `last baseline`: `last baseline` = ("last baseline").asInstanceOf[`last baseline`]
   
@@ -405,47 +488,65 @@ object uifabricMergeStylesStrings {
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait lighten extends IMixBlendModes
+  sealed trait lighten
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def lighten: lighten = "lighten".asInstanceOf[lighten]
   
   @js.native
-  sealed trait lighter extends IFontWeight
+  sealed trait lighter
+    extends StObject
+       with IFontWeight
   @scala.inline
   def lighter: lighter = "lighter".asInstanceOf[lighter]
   
   @js.native
-  sealed trait `list-item` extends ICSSDisplayRule
+  sealed trait `list-item`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item`: `list-item` = "list-item".asInstanceOf[`list-item`]
   
   @js.native
-  sealed trait `list-item block` extends ICSSDisplayRule
+  sealed trait `list-item block`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item block`: `list-item block` = ("list-item block").asInstanceOf[`list-item block`]
   
   @js.native
-  sealed trait `list-item block flow` extends ICSSDisplayRule
+  sealed trait `list-item block flow`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item block flow`: `list-item block flow` = ("list-item block flow").asInstanceOf[`list-item block flow`]
   
   @js.native
-  sealed trait `list-item block flow-root` extends ICSSDisplayRule
+  sealed trait `list-item block flow-root`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item block flow-root`: `list-item block flow-root` = ("list-item block flow-root").asInstanceOf[`list-item block flow-root`]
   
   @js.native
-  sealed trait `list-item flow` extends ICSSDisplayRule
+  sealed trait `list-item flow`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item flow`: `list-item flow` = ("list-item flow").asInstanceOf[`list-item flow`]
   
   @js.native
-  sealed trait `list-item flow-root` extends ICSSDisplayRule
+  sealed trait `list-item flow-root`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item flow-root`: `list-item flow-root` = ("list-item flow-root").asInstanceOf[`list-item flow-root`]
   
   @js.native
-  sealed trait `list-item inline` extends ICSSDisplayRule
+  sealed trait `list-item inline`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `list-item inline`: `list-item inline` = ("list-item inline").asInstanceOf[`list-item inline`]
   
@@ -455,7 +556,9 @@ object uifabricMergeStylesStrings {
   def local: local = "local".asInstanceOf[local]
   
   @js.native
-  sealed trait luminosity extends IMixBlendModes
+  sealed trait luminosity
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def luminosity: luminosity = "luminosity".asInstanceOf[luminosity]
   
@@ -465,18 +568,23 @@ object uifabricMergeStylesStrings {
   def medium: medium = "medium".asInstanceOf[medium]
   
   @js.native
-  sealed trait multiply extends IMixBlendModes
+  sealed trait multiply
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def multiply: multiply = "multiply".asInstanceOf[multiply]
   
   @js.native
-  sealed trait none extends ICSSDisplayRule
+  sealed trait none
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
   sealed trait normal
-    extends IFontWeight
+    extends StObject
+       with IFontWeight
        with IMixBlendModes
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
@@ -497,7 +605,9 @@ object uifabricMergeStylesStrings {
   def optional: optional = "optional".asInstanceOf[optional]
   
   @js.native
-  sealed trait overlay extends IMixBlendModes
+  sealed trait overlay
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def overlay: overlay = "overlay".asInstanceOf[overlay]
   
@@ -532,52 +642,72 @@ object uifabricMergeStylesStrings {
   def `row-reverse`: `row-reverse` = "row-reverse".asInstanceOf[`row-reverse`]
   
   @js.native
-  sealed trait ruby extends ICSSDisplayRule
+  sealed trait ruby
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def ruby: ruby = "ruby".asInstanceOf[ruby]
   
   @js.native
-  sealed trait `ruby-base` extends ICSSDisplayRule
+  sealed trait `ruby-base`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `ruby-base`: `ruby-base` = "ruby-base".asInstanceOf[`ruby-base`]
   
   @js.native
-  sealed trait `ruby-base-container` extends ICSSDisplayRule
+  sealed trait `ruby-base-container`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `ruby-base-container`: `ruby-base-container` = "ruby-base-container".asInstanceOf[`ruby-base-container`]
   
   @js.native
-  sealed trait `ruby-text` extends ICSSDisplayRule
+  sealed trait `ruby-text`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `ruby-text`: `ruby-text` = "ruby-text".asInstanceOf[`ruby-text`]
   
   @js.native
-  sealed trait `ruby-text-container` extends ICSSDisplayRule
+  sealed trait `ruby-text-container`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `ruby-text-container`: `ruby-text-container` = "ruby-text-container".asInstanceOf[`ruby-text-container`]
   
   @js.native
-  sealed trait `run-in` extends ICSSDisplayRule
+  sealed trait `run-in`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `run-in`: `run-in` = "run-in".asInstanceOf[`run-in`]
   
   @js.native
-  sealed trait `safe center` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe center`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe center`: `safe center` = ("safe center").asInstanceOf[`safe center`]
   
   @js.native
-  sealed trait `safe end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe end`: `safe end` = ("safe end").asInstanceOf[`safe end`]
   
   @js.native
-  sealed trait `safe flex-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe flex-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe flex-end`: `safe flex-end` = ("safe flex-end").asInstanceOf[`safe flex-end`]
   
   @js.native
-  sealed trait `safe flex-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe flex-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe flex-start`: `safe flex-start` = ("safe flex-start").asInstanceOf[`safe flex-start`]
   
@@ -592,27 +722,37 @@ object uifabricMergeStylesStrings {
   def `safe right`: `safe right` = ("safe right").asInstanceOf[`safe right`]
   
   @js.native
-  sealed trait `safe self-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe self-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe self-end`: `safe self-end` = ("safe self-end").asInstanceOf[`safe self-end`]
   
   @js.native
-  sealed trait `safe self-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe self-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe self-start`: `safe self-start` = ("safe self-start").asInstanceOf[`safe self-start`]
   
   @js.native
-  sealed trait `safe start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `safe start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `safe start`: `safe start` = ("safe start").asInstanceOf[`safe start`]
   
   @js.native
-  sealed trait saturation extends IMixBlendModes
+  sealed trait saturation
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def saturation: saturation = "saturation".asInstanceOf[saturation]
   
   @js.native
-  sealed trait screen extends IMixBlendModes
+  sealed trait screen
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   
@@ -627,12 +767,16 @@ object uifabricMergeStylesStrings {
   def scrollbar: scrollbar = "scrollbar".asInstanceOf[scrollbar]
   
   @js.native
-  sealed trait `self-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `self-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `self-end`: `self-end` = "self-end".asInstanceOf[`self-end`]
   
   @js.native
-  sealed trait `self-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `self-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `self-start`: `self-start` = "self-start".asInstanceOf[`self-start`]
   
@@ -657,7 +801,9 @@ object uifabricMergeStylesStrings {
   def smaller: smaller = "smaller".asInstanceOf[smaller]
   
   @js.native
-  sealed trait `soft-light` extends IMixBlendModes
+  sealed trait `soft-light`
+    extends StObject
+       with IMixBlendModes
   @scala.inline
   def `soft-light`: `soft-light` = "soft-light".asInstanceOf[`soft-light`]
   
@@ -682,7 +828,9 @@ object uifabricMergeStylesStrings {
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait start extends ICSSOverflowAndSelfPositionRule
+  sealed trait start
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -712,47 +860,65 @@ object uifabricMergeStylesStrings {
   def swap: swap = "swap".asInstanceOf[swap]
   
   @js.native
-  sealed trait table extends ICSSDisplayRule
+  sealed trait table
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
   @js.native
-  sealed trait `table-caption` extends ICSSDisplayRule
+  sealed trait `table-caption`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-caption`: `table-caption` = "table-caption".asInstanceOf[`table-caption`]
   
   @js.native
-  sealed trait `table-cell` extends ICSSDisplayRule
+  sealed trait `table-cell`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-cell`: `table-cell` = "table-cell".asInstanceOf[`table-cell`]
   
   @js.native
-  sealed trait `table-column` extends ICSSDisplayRule
+  sealed trait `table-column`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-column`: `table-column` = "table-column".asInstanceOf[`table-column`]
   
   @js.native
-  sealed trait `table-column-group` extends ICSSDisplayRule
+  sealed trait `table-column-group`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-column-group`: `table-column-group` = "table-column-group".asInstanceOf[`table-column-group`]
   
   @js.native
-  sealed trait `table-footer-group` extends ICSSDisplayRule
+  sealed trait `table-footer-group`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-footer-group`: `table-footer-group` = "table-footer-group".asInstanceOf[`table-footer-group`]
   
   @js.native
-  sealed trait `table-header-group` extends ICSSDisplayRule
+  sealed trait `table-header-group`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-header-group`: `table-header-group` = "table-header-group".asInstanceOf[`table-header-group`]
   
   @js.native
-  sealed trait `table-row` extends ICSSDisplayRule
+  sealed trait `table-row`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-row`: `table-row` = "table-row".asInstanceOf[`table-row`]
   
   @js.native
-  sealed trait `table-row-group` extends ICSSDisplayRule
+  sealed trait `table-row-group`
+    extends StObject
+       with ICSSDisplayRule
   @scala.inline
   def `table-row-group`: `table-row-group` = "table-row-group".asInstanceOf[`table-row-group`]
   
@@ -777,22 +943,30 @@ object uifabricMergeStylesStrings {
   def `ultra-expanded`: `ultra-expanded` = "ultra-expanded".asInstanceOf[`ultra-expanded`]
   
   @js.native
-  sealed trait `unsafe center` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe center`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe center`: `unsafe center` = ("unsafe center").asInstanceOf[`unsafe center`]
   
   @js.native
-  sealed trait `unsafe end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe end`: `unsafe end` = ("unsafe end").asInstanceOf[`unsafe end`]
   
   @js.native
-  sealed trait `unsafe flex-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe flex-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe flex-end`: `unsafe flex-end` = ("unsafe flex-end").asInstanceOf[`unsafe flex-end`]
   
   @js.native
-  sealed trait `unsafe flex-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe flex-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe flex-start`: `unsafe flex-start` = ("unsafe flex-start").asInstanceOf[`unsafe flex-start`]
   
@@ -807,23 +981,30 @@ object uifabricMergeStylesStrings {
   def `unsafe right`: `unsafe right` = ("unsafe right").asInstanceOf[`unsafe right`]
   
   @js.native
-  sealed trait `unsafe self-end` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe self-end`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe self-end`: `unsafe self-end` = ("unsafe self-end").asInstanceOf[`unsafe self-end`]
   
   @js.native
-  sealed trait `unsafe self-start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe self-start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe self-start`: `unsafe self-start` = ("unsafe self-start").asInstanceOf[`unsafe self-start`]
   
   @js.native
-  sealed trait `unsafe start` extends ICSSOverflowAndSelfPositionRule
+  sealed trait `unsafe start`
+    extends StObject
+       with ICSSOverflowAndSelfPositionRule
   @scala.inline
   def `unsafe start`: `unsafe start` = ("unsafe start").asInstanceOf[`unsafe start`]
   
   @js.native
   sealed trait unset
-    extends ICSSRule
+    extends StObject
+       with ICSSRule
        with IFontWeight
        with IMixBlendModes
   @scala.inline

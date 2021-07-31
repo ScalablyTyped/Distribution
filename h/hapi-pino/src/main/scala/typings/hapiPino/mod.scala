@@ -15,7 +15,6 @@ import typings.pino.mod.SerializerFn
 import typings.pino.mod.redactOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -24,40 +23,39 @@ object mod extends Shortcut {
   @js.native
   val ^ : Plugin[Options] = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var allTags: js.UndefOr[Level] = js.native
+    var allTags: js.UndefOr[Level] = js.undefined
     
-    var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.native
+    var getChildBindings: js.UndefOr[js.Function1[/* req */ Request, Dictkey]] = js.undefined
     
-    var ignorePaths: js.UndefOr[js.Array[String]] = js.native
+    var ignorePaths: js.UndefOr[js.Array[String]] = js.undefined
     
-    var instance: js.UndefOr[Logger] = js.native
+    var instance: js.UndefOr[Logger] = js.undefined
     
-    var level: js.UndefOr[Level] = js.native
+    var level: js.UndefOr[Level] = js.undefined
     
-    var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.native
+    var logEvents: js.UndefOr[js.Array[String] | `false` | Null] = js.undefined
     
-    var logPayload: js.UndefOr[Boolean] = js.native
+    var logPayload: js.UndefOr[Boolean] = js.undefined
     
-    var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.native
+    var logRequestComplete: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
     
-    var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.native
+    var logRequestStart: js.UndefOr[Boolean | (js.Function1[/* req */ Request, Boolean])] = js.undefined
     
-    var logRouteTags: js.UndefOr[Boolean] = js.native
+    var logRouteTags: js.UndefOr[Boolean] = js.undefined
     
-    var mergeHapiLogData: js.UndefOr[Boolean] = js.native
+    var mergeHapiLogData: js.UndefOr[Boolean] = js.undefined
     
-    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.native
+    var prettyPrint: js.UndefOr[Boolean | PrettyOptions] = js.undefined
     
-    var redact: js.UndefOr[js.Array[String] | redactOptions] = js.native
+    var redact: js.UndefOr[js.Array[String] | redactOptions] = js.undefined
     
-    var serializers: js.UndefOr[Serializers] = js.native
+    var serializers: js.UndefOr[Serializers] = js.undefined
     
-    var stream: js.UndefOr[WriteStream] = js.native
+    var stream: js.UndefOr[WriteStream] = js.undefined
     
-    var tags: js.UndefOr[keyinLevelstring] = js.native
+    var tags: js.UndefOr[keyinLevelstring] = js.undefined
   }
   object Options {
     
@@ -196,10 +194,9 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var logger: Logger = js.native
+      var logger: Logger
     }
     object Request {
       
@@ -217,10 +214,9 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait Server extends StObject {
       
-      var logger: Logger = js.native
+      var logger: Logger
     }
     object Server {
       

@@ -2,15 +2,13 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofpower extends StObject {
   
-  def releaseKeepAwake(): Unit = js.native
+  def releaseKeepAwake(): Unit
   
-  def requestKeepAwake(level: String): Unit = js.native
+  def requestKeepAwake(level: String): Unit
 }
 object Typeofpower {
   

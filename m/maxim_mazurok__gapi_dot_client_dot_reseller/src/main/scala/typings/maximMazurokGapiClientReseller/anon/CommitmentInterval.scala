@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientReseller.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitmentInterval extends StObject {
   
   /**
     * In this version of the API, annual commitment plan's interval is one year.  Note: When billingMethod value is OFFLINE, the subscription property object plan.commitmentInterval
     * is omitted in all API responses.
     */
-  var commitmentInterval: js.UndefOr[EndTime] = js.native
+  var commitmentInterval: js.UndefOr[EndTime] = js.undefined
   
   /**
     * The isCommitmentPlan property's boolean value identifies the plan as an annual commitment plan:
     * - true — The subscription's plan is an annual commitment plan.
     * - false — The plan is not an annual commitment plan.
     */
-  var isCommitmentPlan: js.UndefOr[Boolean] = js.native
+  var isCommitmentPlan: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The planName property is required. This is the name of the subscription's plan. For more information about the Google payment plans, see the API concepts.
@@ -33,7 +31,7 @@ trait CommitmentInterval extends StObject {
     *
     * - FREE — The free plan is exclusive to the Cloud Identity SKU and does not incur any billing.
     */
-  var planName: js.UndefOr[String] = js.native
+  var planName: js.UndefOr[String] = js.undefined
 }
 object CommitmentInterval {
   

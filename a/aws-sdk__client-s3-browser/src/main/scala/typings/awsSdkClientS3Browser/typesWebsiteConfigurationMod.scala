@@ -11,37 +11,37 @@ import typings.awsSdkClientS3Browser.typesRoutingRuleMod.UnmarshalledRoutingRule
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesWebsiteConfigurationMod {
   
-  @js.native
-  trait UnmarshalledWebsiteConfiguration extends WebsiteConfiguration {
+  trait UnmarshalledWebsiteConfiguration
+    extends StObject
+       with WebsiteConfiguration {
     
     /**
       * _ErrorDocument shape
       */
     @JSName("ErrorDocument")
-    var ErrorDocument_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledErrorDocument] = js.native
+    var ErrorDocument_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledErrorDocument] = js.undefined
     
     /**
       * _IndexDocument shape
       */
     @JSName("IndexDocument")
-    var IndexDocument_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledIndexDocument] = js.native
+    var IndexDocument_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledIndexDocument] = js.undefined
     
     /**
       * _RedirectAllRequestsTo shape
       */
     @JSName("RedirectAllRequestsTo")
-    var RedirectAllRequestsTo_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledRedirectAllRequestsTo] = js.native
+    var RedirectAllRequestsTo_UnmarshalledWebsiteConfiguration: js.UndefOr[UnmarshalledRedirectAllRequestsTo] = js.undefined
     
     /**
       * _RoutingRules shape
       */
     @JSName("RoutingRules")
-    var RoutingRules_UnmarshalledWebsiteConfiguration: js.UndefOr[js.Array[UnmarshalledRoutingRule]] = js.native
+    var RoutingRules_UnmarshalledWebsiteConfiguration: js.UndefOr[js.Array[UnmarshalledRoutingRule]] = js.undefined
   }
   object UnmarshalledWebsiteConfiguration {
     
@@ -83,30 +83,29 @@ object typesWebsiteConfigurationMod {
     }
   }
   
-  @js.native
   trait WebsiteConfiguration extends StObject {
     
     /**
       * _ErrorDocument shape
       */
-    var ErrorDocument: js.UndefOr[typings.awsSdkClientS3Browser.typesErrorDocumentMod.ErrorDocument] = js.native
+    var ErrorDocument: js.UndefOr[typings.awsSdkClientS3Browser.typesErrorDocumentMod.ErrorDocument] = js.undefined
     
     /**
       * _IndexDocument shape
       */
-    var IndexDocument: js.UndefOr[typings.awsSdkClientS3Browser.typesIndexDocumentMod.IndexDocument] = js.native
+    var IndexDocument: js.UndefOr[typings.awsSdkClientS3Browser.typesIndexDocumentMod.IndexDocument] = js.undefined
     
     /**
       * _RedirectAllRequestsTo shape
       */
     var RedirectAllRequestsTo: js.UndefOr[
         typings.awsSdkClientS3Browser.typesRedirectAllRequestsToMod.RedirectAllRequestsTo
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _RoutingRules shape
       */
-    var RoutingRules: js.UndefOr[js.Array[RoutingRule] | Iterable[RoutingRule]] = js.native
+    var RoutingRules: js.UndefOr[js.Array[RoutingRule] | Iterable[RoutingRule]] = js.undefined
   }
   object WebsiteConfiguration {
     

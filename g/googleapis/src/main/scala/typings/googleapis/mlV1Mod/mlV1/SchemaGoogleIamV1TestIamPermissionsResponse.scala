@@ -2,20 +2,18 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for `TestIamPermissions` method.
   */
-@js.native
 trait SchemaGoogleIamV1TestIamPermissionsResponse extends StObject {
   
   /**
     * A subset of `TestPermissionsRequest.permissions` that the caller is
     * allowed.
     */
-  var permissions: js.UndefOr[js.Array[String]] = js.native
+  var permissions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGoogleIamV1TestIamPermissionsResponse {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyComplianceStatus extends StObject {
   
   /**
     * An array of EvaluationResult objects.
     */
-  var EvaluationResults: js.UndefOr[typings.awsSdk.fmsMod.EvaluationResults] = js.native
+  var EvaluationResults: js.UndefOr[typings.awsSdk.fmsMod.EvaluationResults] = js.undefined
   
   /**
     * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be noncompliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
     */
-  var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.native
+  var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.undefined
   
   /**
     * Timestamp of the last update to the EvaluationResult objects.
     */
-  var LastUpdated: js.UndefOr[TimeStamp] = js.native
+  var LastUpdated: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * The member account ID.
     */
-  var MemberAccount: js.UndefOr[AWSAccountId] = js.native
+  var MemberAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * The ID of the AWS Firewall Manager policy.
     */
-  var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.native
+  var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.undefined
   
   /**
     * The name of the AWS Firewall Manager policy.
     */
-  var PolicyName: js.UndefOr[ResourceName] = js.native
+  var PolicyName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The AWS account that created the AWS Firewall Manager policy.
     */
-  var PolicyOwner: js.UndefOr[AWSAccountId] = js.native
+  var PolicyOwner: js.UndefOr[AWSAccountId] = js.undefined
 }
 object PolicyComplianceStatus {
   

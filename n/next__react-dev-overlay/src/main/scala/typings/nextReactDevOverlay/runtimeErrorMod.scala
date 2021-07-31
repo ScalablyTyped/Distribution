@@ -4,7 +4,6 @@ import typings.nextReactDevOverlay.errorsMod.ReadyRuntimeError
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runtimeErrorMod {
@@ -17,10 +16,9 @@ object runtimeErrorMod {
   @js.native
   val styles: String = js.native
   
-  @js.native
   trait RuntimeErrorProps extends StObject {
     
-    var error: ReadyRuntimeError = js.native
+    var error: ReadyRuntimeError
   }
   object RuntimeErrorProps {
     

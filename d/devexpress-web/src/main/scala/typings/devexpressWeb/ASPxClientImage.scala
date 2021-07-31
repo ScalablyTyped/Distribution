@@ -2,25 +2,25 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxImage control.
   */
-@js.native
-trait ASPxClientImage extends ASPxClientImageBase {
+trait ASPxClientImage
+  extends StObject
+     with ASPxClientImageBase {
   
   /**
     * Returns the URL pointing to the image displayed within the image editor.
     */
-  def GetImageUrl(): String = js.native
+  def GetImageUrl(): String
   
   /**
     * Sets the URL which points to the image displayed within the image editor.
     * @param url A string value specifying the URL to the image displayed within the editor.
     */
-  def SetImageUrl(url: String): Unit = js.native
+  def SetImageUrl(url: String): Unit
 }
 object ASPxClientImage {
   

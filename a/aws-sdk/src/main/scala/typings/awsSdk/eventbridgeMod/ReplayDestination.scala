@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplayDestination extends StObject {
   
   /**
     * The ARN of the event bus to replay event to. You can replay events only to the event bus specified to create the archive.
     */
-  var Arn: typings.awsSdk.eventbridgeMod.Arn = js.native
+  var Arn: typings.awsSdk.eventbridgeMod.Arn
   
   /**
     * A list of ARNs for rules to replay events to.
     */
-  var FilterArns: js.UndefOr[ReplayDestinationFilters] = js.native
+  var FilterArns: js.UndefOr[ReplayDestinationFilters] = js.undefined
 }
 object ReplayDestination {
   

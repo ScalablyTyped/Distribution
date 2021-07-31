@@ -4,7 +4,6 @@ import typings.pixiJs.PIXI.resources.Resource
 import typings.pixiJs.PIXI.utils.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *        see {@link PIXI.resources.autoDetectResource autoDetectResource}
   */
 @js.native
-trait BaseTexture extends EventEmitter {
+trait BaseTexture
+  extends StObject
+     with EventEmitter {
   
   /**
     * Number of the texture batch, used by multi-texture renderers
@@ -248,7 +249,7 @@ trait BaseTexture extends EventEmitter {
     * @returns {PIXI.BaseTexture} this
     */
   def setStyle(): BaseTexture = js.native
-  def setStyle(scaleMode: js.UndefOr[scala.Nothing], mipmap: MIPMAP_MODES): BaseTexture = js.native
+  def setStyle(scaleMode: Unit, mipmap: MIPMAP_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES): BaseTexture = js.native
   def setStyle(scaleMode: SCALE_MODES, mipmap: MIPMAP_MODES): BaseTexture = js.native
   

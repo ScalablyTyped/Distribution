@@ -2,7 +2,6 @@ package typings.materialSlider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -14,15 +13,19 @@ object typesMod {
   object Thumb extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Thumb with Double] = js.native
+    def apply(value: Double): js.UndefOr[Thumb & Double] = js.native
     
     @js.native
-    sealed trait END extends Thumb
-    /* 2 */ val END: typings.materialSlider.typesMod.Thumb.END with Double = js.native
+    sealed trait END
+      extends StObject
+         with Thumb
+    /* 2 */ val END: typings.materialSlider.typesMod.Thumb.END & Double = js.native
     
     @js.native
-    sealed trait START extends Thumb
-    /* 1 */ val START: typings.materialSlider.typesMod.Thumb.START with Double = js.native
+    sealed trait START
+      extends StObject
+         with Thumb
+    /* 1 */ val START: typings.materialSlider.typesMod.Thumb.START & Double = js.native
   }
   
   @js.native
@@ -32,23 +35,26 @@ object typesMod {
   object TickMark extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[TickMark with Double] = js.native
+    def apply(value: Double): js.UndefOr[TickMark & Double] = js.native
     
     @js.native
-    sealed trait ACTIVE extends TickMark
-    /* 0 */ val ACTIVE: typings.materialSlider.typesMod.TickMark.ACTIVE with Double = js.native
+    sealed trait ACTIVE
+      extends StObject
+         with TickMark
+    /* 0 */ val ACTIVE: typings.materialSlider.typesMod.TickMark.ACTIVE & Double = js.native
     
     @js.native
-    sealed trait INACTIVE extends TickMark
-    /* 1 */ val INACTIVE: typings.materialSlider.typesMod.TickMark.INACTIVE with Double = js.native
+    sealed trait INACTIVE
+      extends StObject
+         with TickMark
+    /* 1 */ val INACTIVE: typings.materialSlider.typesMod.TickMark.INACTIVE & Double = js.native
   }
   
-  @js.native
   trait MDCSliderChangeEventDetail extends StObject {
     
-    var thumb: Thumb = js.native
+    var thumb: Thumb
     
-    var value: Double = js.native
+    var value: Double
   }
   object MDCSliderChangeEventDetail {
     

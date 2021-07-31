@@ -18,11 +18,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.userInput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapTagBox extends BootstrapClientEdit {
+trait BootstrapTagBox
+  extends StObject
+     with BootstrapClientEdit {
   
   def addItem(text: String): Double = js.native
   // tslint:disable-line:unified-signatures

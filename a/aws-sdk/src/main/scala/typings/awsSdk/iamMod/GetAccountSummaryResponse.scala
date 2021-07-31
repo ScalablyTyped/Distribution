@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccountSummaryResponse extends StObject {
   
   /**
     * A set of key–value pairs containing information about IAM entity usage and IAM quotas.
     */
-  var SummaryMap: js.UndefOr[summaryMapType] = js.native
+  var SummaryMap: js.UndefOr[summaryMapType] = js.undefined
 }
 object GetAccountSummaryResponse {
   

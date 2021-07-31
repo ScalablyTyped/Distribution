@@ -5,58 +5,58 @@ import typings.activexLibreoffice.com_.sun.star.task.InteractionClassification
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An error specifying lack of correct authentication data (e.g., to log into an account). */
-@js.native
-trait AuthenticationRequest extends ClassifiedInteractionRequest {
+trait AuthenticationRequest
+  extends StObject
+     with ClassifiedInteractionRequest {
   
   /**
     * Any already specified account.
     *
     * If HasAccount is false, this member should be ignored.
     */
-  var Account: String = js.native
+  var Account: String
   
   /** Any diagnostic message about the failure to log in (if applicable; it will typically be an English phrase or sentence). */
-  var Diagnostic: String = js.native
+  var Diagnostic: String
   
   /** Specifies if the authentication involves an "account" (as can be the case for FTP). */
-  var HasAccount: Boolean = js.native
+  var HasAccount: Boolean
   
   /** Specifies if the authentication involves a "password" (as is almost always the case). */
-  var HasPassword: Boolean = js.native
+  var HasPassword: Boolean
   
   /** Specifies if the authentication involves a "realm" (as can be the case for HTTP). */
-  var HasRealm: Boolean = js.native
+  var HasRealm: Boolean
   
   /** Specifies if the authentication involves a "user name" (as is almost always the case). */
-  var HasUserName: Boolean = js.native
+  var HasUserName: Boolean
   
   /**
     * Any already specified password.
     *
     * If HasPassword is false, this member should be ignored.
     */
-  var Password: String = js.native
+  var Password: String
   
   /**
     * Any already specified realm.
     *
     * If HasRealm is false, this member should be ignored.
     */
-  var Realm: String = js.native
+  var Realm: String
   
   /** The name of the server (if applicable). */
-  var ServerName: String = js.native
+  var ServerName: String
   
   /**
     * Any already specified user name.
     *
     * If HasUserName is false, this member should be ignored.
     */
-  var UserName: String = js.native
+  var UserName: String
 }
 object AuthenticationRequest {
   

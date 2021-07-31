@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGatewayRequest extends StObject {
   
   /**
     * The ID of the gateway to update.
     */
-  var gatewayId: ID = js.native
+  var gatewayId: ID
   
   /**
     * A unique, friendly name for the gateway.
     */
-  var gatewayName: Name = js.native
+  var gatewayName: Name
 }
 object UpdateGatewayRequest {
   

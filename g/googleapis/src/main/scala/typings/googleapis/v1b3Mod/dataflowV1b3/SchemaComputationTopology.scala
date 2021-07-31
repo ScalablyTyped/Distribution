@@ -2,44 +2,42 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * All configuration data for a particular Computation.
   */
-@js.native
 trait SchemaComputationTopology extends StObject {
   
   /**
     * The ID of the computation.
     */
-  var computationId: js.UndefOr[String] = js.native
+  var computationId: js.UndefOr[String] = js.undefined
   
   /**
     * The inputs to the computation.
     */
-  var inputs: js.UndefOr[js.Array[SchemaStreamLocation]] = js.native
+  var inputs: js.UndefOr[js.Array[SchemaStreamLocation]] = js.undefined
   
   /**
     * The key ranges processed by the computation.
     */
-  var keyRanges: js.UndefOr[js.Array[SchemaKeyRangeLocation]] = js.native
+  var keyRanges: js.UndefOr[js.Array[SchemaKeyRangeLocation]] = js.undefined
   
   /**
     * The outputs from the computation.
     */
-  var outputs: js.UndefOr[js.Array[SchemaStreamLocation]] = js.native
+  var outputs: js.UndefOr[js.Array[SchemaStreamLocation]] = js.undefined
   
   /**
     * The state family values.
     */
-  var stateFamilies: js.UndefOr[js.Array[SchemaStateFamilyConfig]] = js.native
+  var stateFamilies: js.UndefOr[js.Array[SchemaStateFamilyConfig]] = js.undefined
   
   /**
     * The system stage name.
     */
-  var systemStageName: js.UndefOr[String] = js.native
+  var systemStageName: js.UndefOr[String] = js.undefined
 }
 object SchemaComputationTopology {
   

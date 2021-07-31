@@ -9,20 +9,20 @@ import typings.node.streamMod.Readable
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("naudiodon", "AudioIO")
+  @JSImport("naudiodon", JSImport.Namespace)
   @js.native
-  def AudioIO(options: InOptions): Readable with AudioStream = js.native
-  @JSImport("naudiodon", "AudioIO")
-  @js.native
-  def AudioIO(options: InOptionsOutOptions): Duplex with AudioStream = js.native
-  @JSImport("naudiodon", "AudioIO")
-  @js.native
-  def AudioIO(options: OutOptions): Writable with AudioStream = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def AudioIO(options: InOptions): Readable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Readable & AudioStream]
+  @scala.inline
+  def AudioIO(options: InOptionsOutOptions): Duplex & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Duplex & AudioStream]
+  @scala.inline
+  def AudioIO(options: OutOptions): Writable & AudioStream = ^.asInstanceOf[js.Dynamic].applyDynamic("AudioIO")(options.asInstanceOf[js.Any]).asInstanceOf[Writable & AudioStream]
   
   @JSImport("naudiodon", "SampleFormat16Bit")
   @js.native
@@ -44,26 +44,23 @@ object mod {
   @js.native
   val SampleFormatFloat32: Double = js.native
   
-  @JSImport("naudiodon", "getDevices")
-  @js.native
-  def getDevices(): js.Array[Device] = js.native
+  @scala.inline
+  def getDevices(): js.Array[Device] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDevices")().asInstanceOf[js.Array[Device]]
   
-  @JSImport("naudiodon", "getHostAPIs")
-  @js.native
-  def getHostAPIs(): DefaultHostAPI = js.native
+  @scala.inline
+  def getHostAPIs(): DefaultHostAPI = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostAPIs")().asInstanceOf[DefaultHostAPI]
   
-  @js.native
   trait AudioOptions extends StObject {
     
-    var channelCount: js.UndefOr[Double] = js.native
+    var channelCount: js.UndefOr[Double] = js.undefined
     
-    var deviceId: js.UndefOr[Double] = js.native
+    var deviceId: js.UndefOr[Double] = js.undefined
     
-    var maxQueue: js.UndefOr[Double] = js.native
+    var maxQueue: js.UndefOr[Double] = js.undefined
     
-    var sampleFormat: js.UndefOr[Double] = js.native
+    var sampleFormat: js.UndefOr[Double] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
   }
   object AudioOptions {
     
@@ -120,28 +117,27 @@ object mod {
     def start(): Unit = js.native
   }
   
-  @js.native
   trait Device extends StObject {
     
-    var defaultHighInputLatency: Double = js.native
+    var defaultHighInputLatency: Double
     
-    var defaultHighOutputLatency: Double = js.native
+    var defaultHighOutputLatency: Double
     
-    var defaultLowInputLatency: Double = js.native
+    var defaultLowInputLatency: Double
     
-    var defaultLowOutputLatency: Double = js.native
+    var defaultLowOutputLatency: Double
     
-    var defaultSampleRate: Double = js.native
+    var defaultSampleRate: Double
     
-    var hostAPIName: Double = js.native
+    var hostAPIName: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var maxInputChannels: Double = js.native
+    var maxInputChannels: Double
     
-    var maxOutputChannels: Double = js.native
+    var maxOutputChannels: Double
     
-    var name: String = js.native
+    var name: String
   }
   object Device {
     
@@ -197,20 +193,19 @@ object mod {
     }
   }
   
-  @js.native
   trait HostAPI extends StObject {
     
-    var defaultInput: Double = js.native
+    var defaultInput: Double
     
-    var defaultOutput: Double = js.native
+    var defaultOutput: Double
     
-    var deviceCount: Double = js.native
+    var deviceCount: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object HostAPI {
     

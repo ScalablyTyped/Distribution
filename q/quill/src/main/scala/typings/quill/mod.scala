@@ -13,7 +13,6 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,42 +28,39 @@ object mod {
   /* static members */
   object default {
     
+    @JSImport("quill", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     // static methods: debug, import, register, find
-    @JSImport("quill", "default.debug")
-    @js.native
-    def debug(level: String): Unit = js.native
-    @JSImport("quill", "default.debug")
-    @js.native
-    def debug(level: Boolean): Unit = js.native
+    @scala.inline
+    def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("quill", "default.find")
-    @js.native
-    def find(domNode: Node): Quill | js.Any = js.native
-    @JSImport("quill", "default.find")
-    @js.native
-    def find(domNode: Node, bubble: Boolean): Quill | js.Any = js.native
+    @scala.inline
+    def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
+    @scala.inline
+    def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
     
-    @JSImport("quill", "default.register")
-    @js.native
-    def register(defs: StringMap): Unit = js.native
-    @JSImport("quill", "default.register")
-    @js.native
-    def register(defs: StringMap, suppressWarning: Boolean): Unit = js.native
-    @JSImport("quill", "default.register")
-    @js.native
-    def register(path: String, `def`: js.Any): Unit = js.native
-    @JSImport("quill", "default.register")
-    @js.native
-    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = js.native
+    @scala.inline
+    def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("quill", "default.import")
-    @js.native
-    def `import`(path: String): js.Any = js.native
+    @scala.inline
+    def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("quill", "Quill")
   @js.native
-  class Quill protected () extends EventEmitter {
+  class Quill protected ()
+    extends StObject
+       with EventEmitter {
     def this(container: String) = this()
     def this(container: Element) = this()
     def this(container: String, options: QuillOptionsStatic) = this()
@@ -114,9 +110,9 @@ object mod {
     def getBounds(index: Double, length: Double): BoundsStatic = js.native
     
     def getContents(): js.Any = js.native
-    def getContents(index: js.UndefOr[scala.Nothing], length: Double): js.Any = js.native
     def getContents(index: Double): js.Any = js.native
     def getContents(index: Double, length: Double): js.Any = js.native
+    def getContents(index: Unit, length: Double): js.Any = js.native
     
     def getFormat(): StringMap = js.native
     def getFormat(index: Double): StringMap = js.native
@@ -130,13 +126,13 @@ object mod {
     
     def getLength(): Double = js.native
     
-    def getLine(index: Double): js.Tuple2[_, Double] = js.native
+    def getLine(index: Double): js.Tuple2[js.Any, Double] = js.native
     
-    def getLines(): js.Array[_] = js.native
-    def getLines(index: js.UndefOr[scala.Nothing], length: Double): js.Array[_] = js.native
-    def getLines(index: Double): js.Array[_] = js.native
-    def getLines(index: Double, length: Double): js.Array[_] = js.native
-    def getLines(range: RangeStatic): js.Array[_] = js.native
+    def getLines(): js.Array[js.Any] = js.native
+    def getLines(index: Double): js.Array[js.Any] = js.native
+    def getLines(index: Double, length: Double): js.Array[js.Any] = js.native
+    def getLines(index: Unit, length: Double): js.Array[js.Any] = js.native
+    def getLines(range: RangeStatic): js.Array[js.Any] = js.native
     
     def getModule(name: String): js.Any = js.native
     
@@ -147,9 +143,9 @@ object mod {
     def getSelection_true(focus: `true`): RangeStatic = js.native
     
     def getText(): String = js.native
-    def getText(index: js.UndefOr[scala.Nothing], length: Double): String = js.native
     def getText(index: Double): String = js.native
     def getText(index: Double, length: Double): String = js.native
+    def getText(index: Unit, length: Double): String = js.native
     
     def hasFocus(): Boolean = js.native
     
@@ -216,37 +212,32 @@ object mod {
   /* static members */
   object Quill {
     
+    @JSImport("quill", "Quill")
+    @js.native
+    val ^ : js.Any = js.native
+    
     // static methods: debug, import, register, find
-    @JSImport("quill", "Quill.debug")
-    @js.native
-    def debug(level: String): Unit = js.native
-    @JSImport("quill", "Quill.debug")
-    @js.native
-    def debug(level: Boolean): Unit = js.native
+    @scala.inline
+    def debug(level: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(level: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("quill", "Quill.find")
-    @js.native
-    def find(domNode: Node): Quill | js.Any = js.native
-    @JSImport("quill", "Quill.find")
-    @js.native
-    def find(domNode: Node, bubble: Boolean): Quill | js.Any = js.native
+    @scala.inline
+    def find(domNode: Node): Quill | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any]).asInstanceOf[Quill | js.Any]
+    @scala.inline
+    def find(domNode: Node, bubble: Boolean): Quill | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("find")(domNode.asInstanceOf[js.Any], bubble.asInstanceOf[js.Any])).asInstanceOf[Quill | js.Any]
     
-    @JSImport("quill", "Quill.register")
-    @js.native
-    def register(defs: StringMap): Unit = js.native
-    @JSImport("quill", "Quill.register")
-    @js.native
-    def register(defs: StringMap, suppressWarning: Boolean): Unit = js.native
-    @JSImport("quill", "Quill.register")
-    @js.native
-    def register(path: String, `def`: js.Any): Unit = js.native
-    @JSImport("quill", "Quill.register")
-    @js.native
-    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = js.native
+    @scala.inline
+    def `import`(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("import")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("quill", "Quill.import")
-    @js.native
-    def `import`(path: String): js.Any = js.native
+    @scala.inline
+    def register(defs: StringMap): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def register(defs: StringMap, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(defs.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(path: String, `def`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def register(path: String, `def`: js.Any, suppressWarning: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(path.asInstanceOf[js.Any], `def`.asInstanceOf[js.Any], suppressWarning.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("quill", "RangeStatic")
@@ -258,20 +249,19 @@ object mod {
     var length: Double = js.native
   }
   
-  @js.native
   trait BoundsStatic extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object BoundsStatic {
     
@@ -318,7 +308,7 @@ object mod {
     def addMatcher(selectorOrNodeType: ClipboardMatcherNode, callback: ClipboardMatcherCallback): Unit = js.native
     
     def convert(): js.Any = js.native
-    def convert(content: js.UndefOr[scala.Nothing], formats: StringMap): js.Any = js.native
+    def convert(content: Unit, formats: StringMap): js.Any = js.native
     def convert(content: Html): js.Any = js.native
     def convert(content: Html, formats: StringMap): js.Any = js.native
     
@@ -330,17 +320,15 @@ object mod {
     var matchers: js.Array[js.Tuple2[ClipboardMatcherNode, ClipboardMatcherCallback]] = js.native
   }
   
-  /* Inlined {  insert :any | undefined,   delete :number | undefined,   retain :number | undefined} & quill.quill.OptionalAttributes */
-  @js.native
-  trait DeltaOperation extends StObject {
+  trait DeltaOperation
+    extends StObject
+       with OptionalAttributes {
     
-    var attributes: js.UndefOr[StringMap] = js.native
+    var delete: js.UndefOr[Double] = js.undefined
     
-    var delete: js.UndefOr[Double] = js.native
+    var insert: js.UndefOr[js.Any] = js.undefined
     
-    var insert: js.UndefOr[js.Any] = js.native
-    
-    var retain: js.UndefOr[Double] = js.native
+    var retain: js.UndefOr[Double] = js.undefined
   }
   object DeltaOperation {
     
@@ -352,12 +340,6 @@ object mod {
     
     @scala.inline
     implicit class DeltaOperationMutableBuilder[Self <: DeltaOperation] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setAttributes(value: StringMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAttributesUndefined: Self = StObject.set(x, "attributes", js.undefined)
       
       @scala.inline
       def setDelete(value: Double): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
@@ -412,12 +394,11 @@ object mod {
     def once_textchange(eventName: `text-change`, handler: TextChangeHandler): EventEmitter = js.native
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String | Double = js.native
+    var key: String | Double
     
-    var shortKey: js.UndefOr[Boolean] = js.native
+    var shortKey: js.UndefOr[Boolean] = js.undefined
   }
   object Key {
     
@@ -452,10 +433,9 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait OptionalAttributes extends StObject {
     
-    var attributes: js.UndefOr[StringMap] = js.native
+    var attributes: js.UndefOr[StringMap] = js.undefined
   }
   object OptionalAttributes {
     
@@ -476,26 +456,25 @@ object mod {
     }
   }
   
-  @js.native
   trait QuillOptionsStatic extends StObject {
     
-    var bounds: js.UndefOr[HTMLElement | String] = js.native
+    var bounds: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var debug: js.UndefOr[String | Boolean] = js.native
+    var debug: js.UndefOr[String | Boolean] = js.undefined
     
-    var formats: js.UndefOr[js.Array[String]] = js.native
+    var formats: js.UndefOr[js.Array[String]] = js.undefined
     
-    var modules: js.UndefOr[StringMap] = js.native
+    var modules: js.UndefOr[StringMap] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollingContainer: js.UndefOr[HTMLElement | String] = js.native
+    var scrollingContainer: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object QuillOptionsStatic {
     

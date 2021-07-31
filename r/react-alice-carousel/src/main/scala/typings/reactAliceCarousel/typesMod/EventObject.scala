@@ -2,21 +2,19 @@ package typings.reactAliceCarousel.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventObject extends StObject {
   
-  var isNextSlideDisabled: Boolean = js.native
+  var isNextSlideDisabled: Boolean
   
-  var isPrevSlideDisabled: Boolean = js.native
+  var isPrevSlideDisabled: Boolean
   
-  var item: Double = js.native
+  var item: Double
   
-  var itemsInSlide: Double = js.native
+  var itemsInSlide: Double
   
-  var slide: Double = js.native
+  var slide: Double
 }
 object EventObject {
   

@@ -2,43 +2,43 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AST extends IASTSpan {
+trait AST
+  extends StObject
+     with IASTSpan {
   
-  var _astID: js.Any = js.native
+  var _astID: js.Any
   
-  var _postComments: js.Any = js.native
+  var _postComments: js.Any
   
-  var _preComments: js.Any = js.native
+  var _preComments: js.Any
   
-  var _trailingTriviaWidth: Double = js.native
+  var _trailingTriviaWidth: Double
   
-  def fileName(): String = js.native
+  def fileName(): String
   
-  def isExpression(): Boolean = js.native
+  def isExpression(): Boolean
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
   
-  var parent: AST = js.native
+  var parent: AST
   
-  def postComments(): js.Array[Comment] = js.native
+  def postComments(): js.Array[Comment]
   
-  def preComments(): js.Array[Comment] = js.native
+  def preComments(): js.Array[Comment]
   
-  def setPostComments(comments: js.Array[Comment]): Unit = js.native
+  def setPostComments(comments: js.Array[Comment]): Unit
   
-  def setPreComments(comments: js.Array[Comment]): Unit = js.native
+  def setPreComments(comments: js.Array[Comment]): Unit
   
-  def structuralEquals(ast: AST, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: AST, includingPosition: Boolean): Boolean
   
-  def syntaxID(): Double = js.native
+  def syntaxID(): Double
   
-  def trailingTriviaWidth(): Double = js.native
+  def trailingTriviaWidth(): Double
   
-  def width(): Double = js.native
+  def width(): Double
 }
 object AST {
   

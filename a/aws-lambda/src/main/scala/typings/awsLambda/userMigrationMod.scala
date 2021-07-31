@@ -9,17 +9,17 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMigrationMod {
   
-  @js.native
-  trait BaseUserMigrationTriggerEvent[T /* <: String */] extends BaseTriggerEvent[T] {
+  trait BaseUserMigrationTriggerEvent[T /* <: String */]
+    extends StObject
+       with BaseTriggerEvent[T] {
     
-    var request: Password = js.native
+    var request: Password
     
-    var response: DesiredDeliveryMediums = js.native
+    var response: DesiredDeliveryMediums
   }
   object BaseUserMigrationTriggerEvent {
     
@@ -39,7 +39,7 @@ object userMigrationMod {
     }
     
     @scala.inline
-    implicit class BaseUserMigrationTriggerEventMutableBuilder[Self <: BaseUserMigrationTriggerEvent[_], T /* <: String */] (val x: Self with BaseUserMigrationTriggerEvent[T]) extends AnyVal {
+    implicit class BaseUserMigrationTriggerEventMutableBuilder[Self <: BaseUserMigrationTriggerEvent[?], T /* <: String */] (val x: Self & BaseUserMigrationTriggerEvent[T]) extends AnyVal {
       
       @scala.inline
       def setRequest(value: Password): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

@@ -9,17 +9,15 @@ import typings.minappEnv.minappEnvStrings.ease
 import typings.minappEnv.minappEnvStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepOption extends StObject {
   
   /** 动画延迟时间，单位 ms */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /** 动画持续时间，单位 ms */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /** 动画的效果
     *
@@ -33,9 +31,9 @@ trait StepOption extends StObject {
     * - 'step-end': 动画一直保持开始状态，最后一帧跳到结束状态; */
   var timingFunction: js.UndefOr[
     linear | ease | `ease-in` | `ease-in-out` | `ease-out` | `step-start` | `step-end`
-  ] = js.native
+  ] = js.undefined
   
-  var transformOrigin: js.UndefOr[String] = js.native
+  var transformOrigin: js.UndefOr[String] = js.undefined
 }
 object StepOption {
   

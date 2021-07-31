@@ -3,7 +3,6 @@ package typings.dockerEvents
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,10 +21,9 @@ object mod {
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait DockerEventsOptions extends StObject {
     
-    var docker: typings.dockerode.mod.^ = js.native
+    var docker: typings.dockerode.mod.^
   }
   object DockerEventsOptions {
     

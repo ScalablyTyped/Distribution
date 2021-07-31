@@ -3,17 +3,15 @@ package typings.twilioVideo.mod
 import typings.twilioVideo.mod.VideoTrack.Dimensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoRenderDimensions extends StObject {
   
-  var high: js.UndefOr[Dimensions] = js.native
+  var high: js.UndefOr[Dimensions] = js.undefined
   
-  var low: js.UndefOr[Dimensions] = js.native
+  var low: js.UndefOr[Dimensions] = js.undefined
   
-  var standard: js.UndefOr[Dimensions] = js.native
+  var standard: js.UndefOr[Dimensions] = js.undefined
 }
 object VideoRenderDimensions {
   

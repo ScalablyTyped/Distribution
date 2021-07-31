@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side counterpart of the Scheduler extension.
   */
 @js.native
-trait MVCxClientScheduler extends ASPxClientScheduler {
+trait MVCxClientScheduler
+  extends StObject
+     with ASPxClientScheduler {
   
   /**
     * Occurs when a callback for server-side processing is initiated.

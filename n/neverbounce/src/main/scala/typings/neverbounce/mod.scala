@@ -7,15 +7,43 @@ import typings.neverbounce.anon.Remote
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("neverbounce", JSImport.Namespace)
   @js.native
-  class ^ protected () extends NeverBounce {
+  class ^ protected ()
+    extends StObject
+       with NeverBounce {
     def this(config: Config) = this()
+    
+    /* CompleteClass */
+    var account: Account = js.native
+    
+    /* CompleteClass */
+    var errors: Errors = js.native
+    
+    /* CompleteClass */
+    override def getConfig(): Config = js.native
+    
+    /* CompleteClass */
+    override def getRequestOpts(opts: ConfigOptions): ConfigOptions = js.native
+    
+    /* CompleteClass */
+    var jobs: Jobs = js.native
+    
+    /* CompleteClass */
+    var poe: Poe = js.native
+    
+    /* CompleteClass */
+    override def setApiKey(key: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def setHost(host: String): Unit = js.native
+    
+    /* CompleteClass */
+    var single: Single = js.native
   }
   @JSImport("neverbounce", JSImport.Namespace)
   @js.native
@@ -55,6 +83,26 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
+    @JSImport("neverbounce", "result.0")
+    @js.native
+    val `0`: String = js.native
+    
+    @JSImport("neverbounce", "result.1")
+    @js.native
+    val `1`: String = js.native
+    
+    @JSImport("neverbounce", "result.2")
+    @js.native
+    val `2`: String = js.native
+    
+    @JSImport("neverbounce", "result.3")
+    @js.native
+    val `3`: String = js.native
+    
+    @JSImport("neverbounce", "result.4")
+    @js.native
+    val `4`: String = js.native
+    
     @JSImport("neverbounce", "result.catchall")
     @js.native
     def catchall: Double = js.native
@@ -90,32 +138,11 @@ object mod {
     def valid: Double = js.native
     @scala.inline
     def valid_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("valid")(x.asInstanceOf[js.Any])
-    
-    @JSImport("neverbounce", "result.0")
-    @js.native
-    val `0`: String = js.native
-    
-    @JSImport("neverbounce", "result.1")
-    @js.native
-    val `1`: String = js.native
-    
-    @JSImport("neverbounce", "result.2")
-    @js.native
-    val `2`: String = js.native
-    
-    @JSImport("neverbounce", "result.3")
-    @js.native
-    val `3`: String = js.native
-    
-    @JSImport("neverbounce", "result.4")
-    @js.native
-    val `4`: String = js.native
   }
   
-  @js.native
   trait Account extends StObject {
     
-    def info(): js.Promise[typings.std.Response] = js.native
+    def info(): js.Promise[typings.std.Response]
   }
   object Account {
     
@@ -133,14 +160,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var apiKey: js.UndefOr[js.Any] = js.native
+    var apiKey: js.UndefOr[js.Any] = js.undefined
     
-    var opts: js.UndefOr[ConfigOptions] = js.native
+    var opts: js.UndefOr[ConfigOptions] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Config {
     
@@ -173,16 +199,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var acceptedType: js.UndefOr[String] = js.native
+    var acceptedType: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[ContentType] = js.native
+    var headers: js.UndefOr[ContentType] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object ConfigOptions {
     
@@ -227,38 +252,7 @@ object mod {
   trait Jobs extends StObject {
     
     def create(input: js.Any, inputLocation: js.Any, fileName: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.UndefOr[scala.Nothing],
-      autoParse: js.UndefOr[scala.Nothing],
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.UndefOr[scala.Nothing],
-      autoParse: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.UndefOr[scala.Nothing],
-      autoParse: js.Any,
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
     def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any): js.Promise[typings.std.Response] = js.native
-    def create(
-      input: js.Any,
-      inputLocation: js.Any,
-      fileName: js.Any,
-      runSample: js.Any,
-      autoParse: js.UndefOr[scala.Nothing],
-      autoStart: js.Any
-    ): js.Promise[typings.std.Response] = js.native
     def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: js.Any, autoParse: js.Any): js.Promise[typings.std.Response] = js.native
     def create(
       input: js.Any,
@@ -266,6 +260,31 @@ object mod {
       fileName: js.Any,
       runSample: js.Any,
       autoParse: js.Any,
+      autoStart: js.Any
+    ): js.Promise[typings.std.Response] = js.native
+    def create(
+      input: js.Any,
+      inputLocation: js.Any,
+      fileName: js.Any,
+      runSample: js.Any,
+      autoParse: Unit,
+      autoStart: js.Any
+    ): js.Promise[typings.std.Response] = js.native
+    def create(input: js.Any, inputLocation: js.Any, fileName: js.Any, runSample: Unit, autoParse: js.Any): js.Promise[typings.std.Response] = js.native
+    def create(
+      input: js.Any,
+      inputLocation: js.Any,
+      fileName: js.Any,
+      runSample: Unit,
+      autoParse: js.Any,
+      autoStart: js.Any
+    ): js.Promise[typings.std.Response] = js.native
+    def create(
+      input: js.Any,
+      inputLocation: js.Any,
+      fileName: js.Any,
+      runSample: Unit,
+      autoParse: Unit,
       autoStart: js.Any
     ): js.Promise[typings.std.Response] = js.native
     
@@ -284,26 +303,25 @@ object mod {
     def status(jobId: Double): js.Promise[typings.std.Response] = js.native
   }
   
-  @js.native
   trait NeverBounce extends StObject {
     
-    var account: Account = js.native
+    var account: Account
     
-    var errors: Errors = js.native
+    var errors: Errors
     
-    def getConfig(): Config = js.native
+    def getConfig(): Config
     
-    def getRequestOpts(opts: ConfigOptions): ConfigOptions = js.native
+    def getRequestOpts(opts: ConfigOptions): ConfigOptions
     
-    var jobs: Jobs = js.native
+    var jobs: Jobs
     
-    var poe: Poe = js.native
+    var poe: Poe
     
-    def setApiKey(key: String): Unit = js.native
+    def setApiKey(key: String): Unit
     
-    def setHost(host: String): Unit = js.native
+    def setHost(host: String): Unit
     
-    var single: Single = js.native
+    var single: Single
   }
   object NeverBounce {
     
@@ -355,10 +373,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Poe extends StObject {
     
-    def confirm(email: String, result: String, confirmationToken: String, transactionId: String): js.Promise[typings.std.Response] = js.native
+    def confirm(email: String, result: String, confirmationToken: String, transactionId: String): js.Promise[typings.std.Response]
   }
   object Poe {
     
@@ -382,17 +399,12 @@ object mod {
   trait Single extends StObject {
     
     def check(email: String): js.Promise[typings.std.Response] = js.native
-    def check(
-      email: String,
-      addressInfo: js.UndefOr[scala.Nothing],
-      creditsInfo: js.UndefOr[scala.Nothing],
-      timeout: js.Any
-    ): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: js.UndefOr[scala.Nothing], creditsInfo: Boolean): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: js.UndefOr[scala.Nothing], creditsInfo: Boolean, timeout: js.Any): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Boolean): js.Promise[typings.std.Response] = js.native
-    def check(email: String, addressInfo: Boolean, creditsInfo: js.UndefOr[scala.Nothing], timeout: js.Any): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Boolean, creditsInfo: Boolean): js.Promise[typings.std.Response] = js.native
     def check(email: String, addressInfo: Boolean, creditsInfo: Boolean, timeout: js.Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Boolean, creditsInfo: Unit, timeout: js.Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Unit, creditsInfo: Boolean): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Unit, creditsInfo: Boolean, timeout: js.Any): js.Promise[typings.std.Response] = js.native
+    def check(email: String, addressInfo: Unit, creditsInfo: Unit, timeout: js.Any): js.Promise[typings.std.Response] = js.native
   }
 }

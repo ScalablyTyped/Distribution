@@ -3,20 +3,19 @@ package typings.layuiSrc.layui
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableResponse
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[js.Any] {
   
-  var code: Double = js.native
+  var code: Double
   
-  var count: Double = js.native
+  var count: Double
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var msg: String = js.native
+  var msg: String
 }
 object TableResponse {
   

@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html)
   */
-@js.native
 trait relationship extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait relationship extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)
     */
-  def createRenderer(params: relationshipCreateRendererParams): js.Promise[relationshipRendererResult] = js.native
+  def createRenderer(params: relationshipCreateRendererParams): js.Promise[relationshipRendererResult]
   
   /**
     * Updates a relationship renderer (bivariate choropleth) generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer) based on the given input parameters.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  def updateRenderer(params: relationshipUpdateRendererParams): js.Promise[UniqueValueRenderer] = js.native
+  def updateRenderer(params: relationshipUpdateRendererParams): js.Promise[UniqueValueRenderer]
 }
 object relationship {
   

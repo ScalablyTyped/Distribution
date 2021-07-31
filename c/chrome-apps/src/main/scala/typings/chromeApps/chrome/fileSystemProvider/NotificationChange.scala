@@ -6,10 +6,8 @@ import typings.chromeApps.chromeAppsStrings.CHANGED
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationChange extends StObject {
   
   /**
@@ -23,10 +21,10 @@ trait NotificationChange extends StObject {
       /* keyof chrome-apps.anon.DELETED */ CHANGED | typings.chromeApps.chromeAppsStrings.DELETED, 
       CHANGED | typings.chromeApps.chromeAppsStrings.DELETED
     ]
-  ] = js.native
+  ]
   
   /** The path of the changed entry. */
-  var entryPath: String = js.native
+  var entryPath: String
 }
 object NotificationChange {
   

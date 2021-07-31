@@ -2,19 +2,17 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Lowenergy extends StObject {
   
-  var low_energy: js.UndefOr[Boolean] = js.native
+  var low_energy: js.UndefOr[Boolean] = js.undefined
   
-  var peripheral: js.UndefOr[Boolean] = js.native
+  var peripheral: js.UndefOr[Boolean] = js.undefined
   
-  var socket: js.UndefOr[Boolean] = js.native
+  var socket: js.UndefOr[Boolean] = js.undefined
   
-  var uuids: js.UndefOr[js.Array[String]] = js.native
+  var uuids: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Lowenergy {
   

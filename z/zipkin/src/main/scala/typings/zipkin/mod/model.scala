@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.zipkin.anon.Ipv4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object model {
@@ -75,12 +74,11 @@ object model {
     val traceId: String = js.native
   }
   
-  @js.native
   trait Annotation extends StObject {
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var value: String = js.native
+    var value: String
   }
   object Annotation {
     

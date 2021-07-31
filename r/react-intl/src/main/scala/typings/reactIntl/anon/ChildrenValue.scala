@@ -6,15 +6,13 @@ import typings.reactIntl.reactIntlStrings.formatTime
 import typings.std.Intl.DateTimeFormatPart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildrenValue[Name /* <: formatDate | formatTime */] extends StObject {
   
-  def children(`val`: js.Array[DateTimeFormatPart]): ReactElement | Null = js.native
+  def children(`val`: js.Array[DateTimeFormatPart]): ReactElement | Null
   
-  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.react-intl/lib/src/types.IntlShape[Name]>[0] */ js.Any = js.native
+  var value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<react-intl.react-intl/lib/src/types.IntlShape[Name]>[0] */ js.Any
 }
 object ChildrenValue {
   
@@ -28,7 +26,7 @@ object ChildrenValue {
   }
   
   @scala.inline
-  implicit class ChildrenValueMutableBuilder[Self <: ChildrenValue[_], Name /* <: formatDate | formatTime */] (val x: Self with ChildrenValue[Name]) extends AnyVal {
+  implicit class ChildrenValueMutableBuilder[Self <: ChildrenValue[?], Name /* <: formatDate | formatTime */] (val x: Self & ChildrenValue[Name]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: js.Array[DateTimeFormatPart] => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

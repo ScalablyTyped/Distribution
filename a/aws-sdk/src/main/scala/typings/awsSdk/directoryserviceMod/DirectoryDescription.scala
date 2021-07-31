@@ -2,136 +2,134 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectoryDescription extends StObject {
   
   /**
     * The access URL for the directory, such as http://&lt;alias&gt;.awsapps.com. If no alias has been created for the directory, &lt;alias&gt; is the directory identifier, such as d-XXXXXXXXXX.
     */
-  var AccessUrl: js.UndefOr[typings.awsSdk.directoryserviceMod.AccessUrl] = js.native
+  var AccessUrl: js.UndefOr[typings.awsSdk.directoryserviceMod.AccessUrl] = js.undefined
   
   /**
     * The alias for the directory. If no alias has been created for the directory, the alias is the directory identifier, such as d-XXXXXXXXXX.
     */
-  var Alias: js.UndefOr[AliasName] = js.native
+  var Alias: js.UndefOr[AliasName] = js.undefined
   
   /**
     * A DirectoryConnectSettingsDescription object that contains additional information about an AD Connector directory. This member is only present if the directory is an AD Connector directory.
     */
-  var ConnectSettings: js.UndefOr[DirectoryConnectSettingsDescription] = js.native
+  var ConnectSettings: js.UndefOr[DirectoryConnectSettingsDescription] = js.undefined
   
   /**
     * The description for the directory.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * The desired number of domain controllers in the directory if the directory is Microsoft AD.
     */
-  var DesiredNumberOfDomainControllers: js.UndefOr[typings.awsSdk.directoryserviceMod.DesiredNumberOfDomainControllers] = js.native
+  var DesiredNumberOfDomainControllers: js.UndefOr[typings.awsSdk.directoryserviceMod.DesiredNumberOfDomainControllers] = js.undefined
   
   /**
     * The directory identifier.
     */
-  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.native
+  var DirectoryId: js.UndefOr[typings.awsSdk.directoryserviceMod.DirectoryId] = js.undefined
   
   /**
     * The IP addresses of the DNS servers for the directory. For a Simple AD or Microsoft AD directory, these are the IP addresses of the Simple AD or Microsoft AD directory servers. For an AD Connector directory, these are the IP addresses of the DNS servers or domain controllers in the on-premises directory to which the AD Connector is connected.
     */
-  var DnsIpAddrs: js.UndefOr[typings.awsSdk.directoryserviceMod.DnsIpAddrs] = js.native
+  var DnsIpAddrs: js.UndefOr[typings.awsSdk.directoryserviceMod.DnsIpAddrs] = js.undefined
   
   /**
     * The edition associated with this directory.
     */
-  var Edition: js.UndefOr[DirectoryEdition] = js.native
+  var Edition: js.UndefOr[DirectoryEdition] = js.undefined
   
   /**
     * Specifies when the directory was created.
     */
-  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.native
+  var LaunchTime: js.UndefOr[typings.awsSdk.directoryserviceMod.LaunchTime] = js.undefined
   
   /**
     * The fully qualified name of the directory.
     */
-  var Name: js.UndefOr[DirectoryName] = js.native
+  var Name: js.UndefOr[DirectoryName] = js.undefined
   
   /**
     * Describes the AWS Managed Microsoft AD directory in the directory owner account.
     */
-  var OwnerDirectoryDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.OwnerDirectoryDescription] = js.native
+  var OwnerDirectoryDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.OwnerDirectoryDescription] = js.undefined
   
   /**
     * A RadiusSettings object that contains information about the RADIUS server configured for this directory.
     */
-  var RadiusSettings: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusSettings] = js.native
+  var RadiusSettings: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusSettings] = js.undefined
   
   /**
     * The status of the RADIUS MFA server connection.
     */
-  var RadiusStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusStatus] = js.native
+  var RadiusStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.RadiusStatus] = js.undefined
   
   /**
     * Lists the Regions where the directory has replicated.
     */
-  var RegionsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsInfo] = js.native
+  var RegionsInfo: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsInfo] = js.undefined
   
   /**
     * The method used when sharing a directory to determine whether the directory should be shared within your AWS organization (ORGANIZATIONS) or with any AWS account by sending a shared directory request (HANDSHAKE).
     */
-  var ShareMethod: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareMethod] = js.native
+  var ShareMethod: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareMethod] = js.undefined
   
   /**
     * A directory share request that is sent by the directory owner to the directory consumer. The request includes a typed message to help the directory consumer administrator determine whether to approve or reject the share invitation.
     */
-  var ShareNotes: js.UndefOr[Notes] = js.native
+  var ShareNotes: js.UndefOr[Notes] = js.undefined
   
   /**
     * Current directory status of the shared AWS Managed Microsoft AD directory.
     */
-  var ShareStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareStatus] = js.native
+  var ShareStatus: js.UndefOr[typings.awsSdk.directoryserviceMod.ShareStatus] = js.undefined
   
   /**
     * The short name of the directory.
     */
-  var ShortName: js.UndefOr[DirectoryShortName] = js.native
+  var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
   /**
     * The directory size.
     */
-  var Size: js.UndefOr[DirectorySize] = js.native
+  var Size: js.UndefOr[DirectorySize] = js.undefined
   
   /**
     * Indicates if single sign-on is enabled for the directory. For more information, see EnableSso and DisableSso.
     */
-  var SsoEnabled: js.UndefOr[typings.awsSdk.directoryserviceMod.SsoEnabled] = js.native
+  var SsoEnabled: js.UndefOr[typings.awsSdk.directoryserviceMod.SsoEnabled] = js.undefined
   
   /**
     * The current stage of the directory.
     */
-  var Stage: js.UndefOr[DirectoryStage] = js.native
+  var Stage: js.UndefOr[DirectoryStage] = js.undefined
   
   /**
     * The date and time that the stage was last updated.
     */
-  var StageLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.native
+  var StageLastUpdatedDateTime: js.UndefOr[LastUpdatedDateTime] = js.undefined
   
   /**
     * Additional information about the directory stage.
     */
-  var StageReason: js.UndefOr[typings.awsSdk.directoryserviceMod.StageReason] = js.native
+  var StageReason: js.UndefOr[typings.awsSdk.directoryserviceMod.StageReason] = js.undefined
   
   /**
     * The directory size.
     */
-  var Type: js.UndefOr[DirectoryType] = js.native
+  var Type: js.UndefOr[DirectoryType] = js.undefined
   
   /**
     * A DirectoryVpcSettingsDescription object that contains additional information about a directory. This member is only present if the directory is a Simple AD or Managed AD directory.
     */
-  var VpcSettings: js.UndefOr[DirectoryVpcSettingsDescription] = js.native
+  var VpcSettings: js.UndefOr[DirectoryVpcSettingsDescription] = js.undefined
 }
 object DirectoryDescription {
   

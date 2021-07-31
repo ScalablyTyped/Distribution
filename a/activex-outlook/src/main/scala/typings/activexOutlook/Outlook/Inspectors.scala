@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inspectors extends StObject {
   
-  def Add(Item: js.Any): Inspector = js.native
+  def Add(Item: js.Any): Inspector
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Inspector = js.native
+  def Item(Index: js.Any): Inspector
   
   @JSName("Outlook.Inspectors_typekey")
-  var OutlookDotInspectors_typekey: Inspectors = js.native
+  var OutlookDotInspectors_typekey: Inspectors
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Inspectors {
   

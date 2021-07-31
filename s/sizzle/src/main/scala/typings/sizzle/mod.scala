@@ -19,7 +19,6 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,26 +27,25 @@ object mod extends Shortcut {
   @js.native
   val ^ : SizzleStatic = js.native
   
-  @js.native
   trait Selectors extends StObject {
     
-    var attrHandle: AttrHandleFunctions = js.native
+    var attrHandle: AttrHandleFunctions
     
-    var cacheLength: Double = js.native
+    var cacheLength: Double
     
-    def createPseudo(fn: CreatePseudoFunction): PseudoFunction = js.native
+    def createPseudo(fn: CreatePseudoFunction): PseudoFunction
     
-    var filter: FilterFunctions = js.native
+    var filter: FilterFunctions
     
-    var find: FindFunctions = js.native
+    var find: FindFunctions
     
-    var `match`: Matches = js.native
+    var `match`: Matches
     
-    var preFilter: PreFilterFunctions = js.native
+    var preFilter: PreFilterFunctions
     
-    var pseudos: PseudoFunctions = js.native
+    var pseudos: PseudoFunctions
     
-    var setFilters: SetFilterFunctions = js.native
+    var setFilters: SetFilterFunctions
   }
   object Selectors {
     

@@ -7,7 +7,6 @@ import typings.moment.momentStrings.m_
 import typings.moment.momentStrings.w_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unitOfTime {
@@ -236,7 +235,9 @@ object unitOfTime {
     - typings.moment.momentStrings.milliseconds
     - typings.moment.momentStrings.ms
   */
-  trait Base extends _StartOf
+  trait Base
+    extends StObject
+       with _StartOf
   object Base {
     
     @scala.inline
@@ -672,7 +673,9 @@ object unitOfTime {
     - typings.moment.momentStrings.dates
     - typings.moment.momentStrings.D
   */
-  trait date extends _StartOf
+  trait date
+    extends StObject
+       with _StartOf
   object date {
     
     @scala.inline
@@ -690,7 +693,9 @@ object unitOfTime {
     - typings.moment.momentStrings.isoWeeks
     - typings.moment.momentStrings.W
   */
-  trait isoWeek extends _StartOf
+  trait isoWeek
+    extends StObject
+       with _StartOf
   object isoWeek {
     
     @scala.inline
@@ -708,7 +713,9 @@ object unitOfTime {
     - typings.moment.momentStrings.quarters
     - typings.moment.momentStrings.Q
   */
-  trait quarter extends _StartOf
+  trait quarter
+    extends StObject
+       with _StartOf
   object quarter {
     
     @scala.inline

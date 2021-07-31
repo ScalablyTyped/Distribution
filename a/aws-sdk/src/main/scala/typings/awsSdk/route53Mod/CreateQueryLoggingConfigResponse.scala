@@ -2,21 +2,19 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateQueryLoggingConfigResponse extends StObject {
   
   /**
     * The unique URL representing the new query logging configuration.
     */
-  var Location: ResourceURI = js.native
+  var Location: ResourceURI
   
   /**
     * A complex type that contains the ID for a query logging configuration, the ID of the hosted zone that you want to log queries for, and the ARN for the log group that you want Amazon Route 53 to send query logs to.
     */
-  var QueryLoggingConfig: typings.awsSdk.route53Mod.QueryLoggingConfig = js.native
+  var QueryLoggingConfig: typings.awsSdk.route53Mod.QueryLoggingConfig
 }
 object CreateQueryLoggingConfigResponse {
   

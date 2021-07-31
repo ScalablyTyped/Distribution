@@ -2,21 +2,19 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePermissionResponse extends StObject {
   
   /**
     *  The JSON-formatted resource-based policy on the profiling group after the specified permissions were removed. 
     */
-  var policy: String = js.native
+  var policy: String
   
   /**
     *  A universally unique identifier (UUID) for the revision of the resource-based policy after the specified permissions were removed. The updated JSON-formatted policy is in the policy element of the response. 
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object RemovePermissionResponse {
   

@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v2alpha1CronJobListMod {
@@ -27,7 +26,7 @@ object v2alpha1CronJobListMod {
       */
     def this(name: String) = this()
     def this(name: String, args: CronJobListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: CronJobListArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object v2alpha1CronJobListMod {
   /* static members */
   object CronJobList {
     
+    @JSImport("@pulumi/kubernetes/batch/v2alpha1/cronJobList", "CronJobList")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CronJobList resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object v2alpha1CronJobListMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/batch/v2alpha1/cronJobList", "CronJobList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CronJobList = js.native
-    @JSImport("@pulumi/kubernetes/batch/v2alpha1/cronJobList", "CronJobList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CronJobList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CronJobList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CronJobList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CronJobList]
     
     /**
       * Returns true if the given object is an instance of CronJobList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/batch/v2alpha1/cronJobList", "CronJobList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/batch/v2alpha1/cronJobList.CronJobList */ Boolean]
   }
   
-  @js.native
   trait CronJobListArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[batchSlashv2alpha1]] = js.native
+    val apiVersion: js.UndefOr[Input[batchSlashv2alpha1]] = js.undefined
     
     /**
       * items is the list of CronJobs.
       */
-    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.batch.v2alpha1.CronJob]]] = js.native
+    val items: Input[js.Array[Input[typings.pulumiKubernetes.inputMod.batch.v2alpha1.CronJob]]]
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJobList]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CronJobList]] = js.undefined
     
     /**
       * Standard list metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ListMeta]] = js.undefined
   }
   object CronJobListArgs {
     

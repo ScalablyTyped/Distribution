@@ -2,14 +2,12 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specification of the parameters to use when creating the instance
   * template from a source instance.
   */
-@js.native
 trait SchemaSourceInstanceParams extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaSourceInstanceParams extends StObject {
     * each disk. For read-only disks, they will be attached in read-only mode.
     * Local SSD disks will be created as blank volumes.
     */
-  var diskConfigs: js.UndefOr[js.Array[SchemaDiskInstantiationConfig]] = js.native
+  var diskConfigs: js.UndefOr[js.Array[SchemaDiskInstantiationConfig]] = js.undefined
 }
 object SchemaSourceInstanceParams {
   

@@ -2,13 +2,13 @@ package typings.tampermonkey.Tampermonkey
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorResponse extends ResponseBase {
+trait ErrorResponse
+  extends StObject
+     with ResponseBase {
   
-  val error: String = js.native
+  val error: String
 }
 object ErrorResponse {
   
@@ -22,7 +22,7 @@ object ErrorResponse {
     status: Double,
     statusText: String
   ): ErrorResponse = {
-    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], readyState = readyState.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any], responseHeaders = responseHeaders.asInstanceOf[js.Any], responseText = responseText.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], statusText = statusText.asInstanceOf[js.Any], responseXML = null)
     __obj.asInstanceOf[ErrorResponse]
   }
   

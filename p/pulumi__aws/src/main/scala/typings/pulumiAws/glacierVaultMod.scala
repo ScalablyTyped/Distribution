@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glacierVaultMod {
@@ -26,7 +25,7 @@ object glacierVaultMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VaultArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VaultArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -63,6 +62,10 @@ object glacierVaultMod {
   /* static members */
   object Vault {
     
+    @JSImport("@pulumi/aws/glacier/vault", "Vault")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Vault resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -72,51 +75,45 @@ object glacierVaultMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glacier/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Vault = js.native
-    @JSImport("@pulumi/aws/glacier/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Vault = js.native
-    @JSImport("@pulumi/aws/glacier/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState): Vault = js.native
-    @JSImport("@pulumi/aws/glacier/vault", "Vault.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Vault]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VaultState, opts: CustomResourceOptions): Vault = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Vault]
     
     /**
       * Returns true if the given object is an instance of Vault.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glacier/vault", "Vault.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glacier/vault.Vault */ Boolean]
   }
   
-  @js.native
   trait VaultArgs extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string.
       * The heredoc syntax or `file` function is helpful here. Use the [Glacier Developer Guide](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html) for more information on Glacier Vault Policy
       */
-    val accessPolicy: js.UndefOr[Input[String]] = js.native
+    val accessPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Vault. Names can be between 1 and 255 characters long and the valid characters are a-z, A-Z, 0-9, '_' (underscore), '-' (hyphen), and '.' (period).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The notifications for the Vault. Fields documented below.
       */
-    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]] = js.native
+    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VaultArgs {
     
@@ -158,39 +155,38 @@ object glacierVaultMod {
     }
   }
   
-  @js.native
   trait VaultState extends StObject {
     
     /**
       * The policy document. This is a JSON formatted string.
       * The heredoc syntax or `file` function is helpful here. Use the [Glacier Developer Guide](https://docs.aws.amazon.com/amazonglacier/latest/dev/vault-access-policy.html) for more information on Glacier Vault Policy
       */
-    val accessPolicy: js.UndefOr[Input[String]] = js.native
+    val accessPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the vault.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The URI of the vault that was created.
       */
-    val location: js.UndefOr[Input[String]] = js.native
+    val location: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Vault. Names can be between 1 and 255 characters long and the valid characters are a-z, A-Z, 0-9, '_' (underscore), '-' (hyphen), and '.' (period).
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The notifications for the Vault. Fields documented below.
       */
-    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]] = js.native
+    val notifications: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.glacier.VaultNotification]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object VaultState {
     

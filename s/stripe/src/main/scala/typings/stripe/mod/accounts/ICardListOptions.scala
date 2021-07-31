@@ -4,20 +4,20 @@ import typings.stripe.mod.IListOptions
 import typings.stripe.stripeStrings.card
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICardListOptions extends IListOptions {
+trait ICardListOptions
+  extends StObject
+     with IListOptions {
   
-  var `object`: card = js.native
+  var `object`: card
 }
 object ICardListOptions {
   
   @scala.inline
-  def apply(`object`: card): ICardListOptions = {
+  def apply(): ICardListOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("card")
     __obj.asInstanceOf[ICardListOptions]
   }
   

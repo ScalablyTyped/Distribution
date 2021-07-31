@@ -12,10 +12,13 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@firebase/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object CONSTANTS {
     
@@ -60,7 +63,7 @@ object mod {
   @js.native
   class ErrorFactory[ErrorCode /* <: String */, ErrorParams /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {readonly [ K in ErrorCode ]:? @firebase/util.@firebase/util/dist/src/errors.ErrorData}
-    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory with TopLevel[js.Any] */] protected ()
+    */ typings.firebaseUtil.firebaseUtilStrings.ErrorFactory & TopLevel[js.Any] */] protected ()
     extends typings.firebaseUtil.errorsMod.ErrorFactory[ErrorCode, ErrorParams] {
     def this(service: String, serviceName: String, errors: ErrorMap[ErrorCode]) = this()
   }
@@ -70,7 +73,7 @@ object mod {
   class FirebaseError protected ()
     extends typings.firebaseUtil.errorsMod.FirebaseError {
     def this(code: String, message: String) = this()
-    def this(code: String, message: String, customData: Record[String, _]) = this()
+    def this(code: String, message: String, customData: Record[String, js.Any]) = this()
   }
   
   @JSImport("@firebase/util", "MAX_VALUE_MILLIS")
@@ -86,232 +89,188 @@ object mod {
   class Sha1 ()
     extends typings.firebaseUtil.sha1Mod.Sha1
   
-  @JSImport("@firebase/util", "areCookiesEnabled")
-  @js.native
-  def areCookiesEnabled(): Boolean = js.native
+  @scala.inline
+  def areCookiesEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areCookiesEnabled")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "assert")
-  @js.native
-  def assert(assertion: js.Any, message: String): Unit = js.native
+  @scala.inline
+  def assert(assertion: js.Any, message: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(assertion.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/util", "assertionError")
-  @js.native
-  def assertionError(message: String): Error = js.native
+  @scala.inline
+  def assertionError(message: String): Error = ^.asInstanceOf[js.Dynamic].applyDynamic("assertionError")(message.asInstanceOf[js.Any]).asInstanceOf[Error]
   
-  @JSImport("@firebase/util", "async")
-  @js.native
-  def async(fn: js.Function): js.Function = js.native
-  @JSImport("@firebase/util", "async")
-  @js.native
-  def async(fn: js.Function, onError: ErrorFn): js.Function = js.native
+  @scala.inline
+  def async(fn: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function]
+  @scala.inline
+  def async(fn: js.Function, onError: ErrorFn): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(fn.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Function]
   
   @JSImport("@firebase/util", "base64")
   @js.native
   val base64: Base64_ = js.native
   
-  @JSImport("@firebase/util", "base64Decode")
-  @js.native
-  def base64Decode(str: String): String | Null = js.native
+  @scala.inline
+  def base64Decode(str: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(str.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@firebase/util", "base64Encode")
-  @js.native
-  def base64Encode(str: String): String = js.native
+  @scala.inline
+  def base64Encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/util", "calculateBackoffMillis")
-  @js.native
-  def calculateBackoffMillis(backoffCount: Double): Double = js.native
-  @JSImport("@firebase/util", "calculateBackoffMillis")
-  @js.native
-  def calculateBackoffMillis(backoffCount: Double, intervalMillis: js.UndefOr[scala.Nothing], backoffFactor: Double): Double = js.native
-  @JSImport("@firebase/util", "calculateBackoffMillis")
-  @js.native
-  def calculateBackoffMillis(backoffCount: Double, intervalMillis: Double): Double = js.native
-  @JSImport("@firebase/util", "calculateBackoffMillis")
-  @js.native
-  def calculateBackoffMillis(backoffCount: Double, intervalMillis: Double, backoffFactor: Double): Double = js.native
+  @scala.inline
+  def calculateBackoffMillis(backoffCount: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackoffMillis")(backoffCount.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def calculateBackoffMillis(backoffCount: Double, intervalMillis: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackoffMillis")(backoffCount.asInstanceOf[js.Any], intervalMillis.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def calculateBackoffMillis(backoffCount: Double, intervalMillis: Double, backoffFactor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackoffMillis")(backoffCount.asInstanceOf[js.Any], intervalMillis.asInstanceOf[js.Any], backoffFactor.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def calculateBackoffMillis(backoffCount: Double, intervalMillis: Unit, backoffFactor: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateBackoffMillis")(backoffCount.asInstanceOf[js.Any], intervalMillis.asInstanceOf[js.Any], backoffFactor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@firebase/util", "contains")
-  @js.native
-  def contains[T /* <: js.Object */](obj: T, key: String): Boolean = js.native
+  @scala.inline
+  def contains[T /* <: js.Object */](obj: T, key: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "createSubscribe")
-  @js.native
-  def createSubscribe[T](executor: Executor[T]): Subscribe[T] = js.native
-  @JSImport("@firebase/util", "createSubscribe")
-  @js.native
-  def createSubscribe[T](executor: Executor[T], onNoObservers: Executor[T]): Subscribe[T] = js.native
+  @scala.inline
+  def createSubscribe[T](executor: Executor[T]): Subscribe[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSubscribe")(executor.asInstanceOf[js.Any]).asInstanceOf[Subscribe[T]]
+  @scala.inline
+  def createSubscribe[T](executor: Executor[T], onNoObservers: Executor[T]): Subscribe[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubscribe")(executor.asInstanceOf[js.Any], onNoObservers.asInstanceOf[js.Any])).asInstanceOf[Subscribe[T]]
   
-  @JSImport("@firebase/util", "decode")
-  @js.native
-  def decode(token: String): DecodedToken = js.native
+  @scala.inline
+  def decode(token: String): DecodedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[DecodedToken]
   
-  @JSImport("@firebase/util", "deepCopy")
-  @js.native
-  def deepCopy[T](value: T): T = js.native
+  @scala.inline
+  def deepCopy[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@firebase/util", "deepExtend")
-  @js.native
-  def deepExtend(target: js.Any, source: js.Any): js.Any = js.native
+  @scala.inline
+  def deepExtend(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepExtend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/util", "errorPrefix")
-  @js.native
-  def errorPrefix(fnName: String, argumentNumber: Double, optional: Boolean): String = js.native
+  @scala.inline
+  def errorPrefix(fnName: String, argumentNumber: Double, optional: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("errorPrefix")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@firebase/util", "getUA")
-  @js.native
-  def getUA(): String = js.native
+  @scala.inline
+  def getUA(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getUA")().asInstanceOf[String]
   
-  @JSImport("@firebase/util", "isAdmin")
-  @js.native
-  def isAdmin(token: String): Boolean = js.native
+  @scala.inline
+  def isAdmin(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdmin")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isBrowser")
-  @js.native
-  def isBrowser(): Boolean = js.native
+  @scala.inline
+  def isBrowser(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowser")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isBrowserExtension")
-  @js.native
-  def isBrowserExtension(): Boolean = js.native
+  @scala.inline
+  def isBrowserExtension(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBrowserExtension")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isElectron")
-  @js.native
-  def isElectron(): Boolean = js.native
+  @scala.inline
+  def isElectron(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElectron")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isEmpty")
-  @js.native
-  def isEmpty(obj: js.Object): Boolean = js.native
+  @scala.inline
+  def isEmpty(obj: js.Object): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isIE")
-  @js.native
-  def isIE(): Boolean = js.native
+  @scala.inline
+  def isIE(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIE")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isIndexedDBAvailable")
-  @js.native
-  def isIndexedDBAvailable(): Boolean = js.native
+  @scala.inline
+  def isIndexedDBAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIndexedDBAvailable")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isMobileCordova")
-  @js.native
-  def isMobileCordova(): Boolean = js.native
+  @scala.inline
+  def isMobileCordova(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMobileCordova")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isNode")
-  @js.native
-  def isNode(): Boolean = js.native
+  @scala.inline
+  def isNode(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isNodeSdk")
-  @js.native
-  def isNodeSdk(): Boolean = js.native
+  @scala.inline
+  def isNodeSdk(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeSdk")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isReactNative")
-  @js.native
-  def isReactNative(): Boolean = js.native
+  @scala.inline
+  def isReactNative(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNative")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isSafari")
-  @js.native
-  def isSafari(): Boolean = js.native
+  @scala.inline
+  def isSafari(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafari")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isUWP")
-  @js.native
-  def isUWP(): Boolean = js.native
+  @scala.inline
+  def isUWP(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUWP")().asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isValidFormat")
-  @js.native
-  def isValidFormat(token: String): Boolean = js.native
+  @scala.inline
+  def isValidFormat(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFormat")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "isValidTimestamp")
-  @js.native
-  def isValidTimestamp(token: String): Boolean = js.native
+  @scala.inline
+  def isValidTimestamp(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTimestamp")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util", "issuedAtTime")
-  @js.native
-  def issuedAtTime(token: String): Double | Null = js.native
+  @scala.inline
+  def issuedAtTime(token: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("issuedAtTime")(token.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @JSImport("@firebase/util", "jsonEval")
-  @js.native
-  def jsonEval(str: String): js.Any = js.native
+  @scala.inline
+  def jsonEval(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("jsonEval")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@firebase/util", "map")
-  @js.native
+  @scala.inline
   def map[K /* <: String */, V, U](
     obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any],
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any],
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any], 
+    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any], 
       U
     ]
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any] = js.native
-  @JSImport("@firebase/util", "map")
-  @js.native
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in K ]: U}
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any]]
+  @scala.inline
   def map[K /* <: String */, V, U](
     obj: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
-    */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any],
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any],
     fn: js.Function3[
       /* value */ V, 
       /* key */ K, 
       /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: V}
-    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any], 
+    */ /* obj */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any], 
       U
     ],
     contextObj: js.Any
   ): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in K ]: U}
-    */ typings.firebaseUtil.firebaseUtilStrings.map with TopLevel[js.Any] = js.native
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("map")(obj.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], contextObj.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ key in K ]: U}
+    */ typings.firebaseUtil.firebaseUtilStrings.map & TopLevel[js.Any]]
   
-  @JSImport("@firebase/util", "ordinal")
-  @js.native
-  def ordinal(i: Double): String = js.native
+  @scala.inline
+  def ordinal(i: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ordinal")(i.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/util", "querystring")
-  @js.native
-  def querystring(querystringParams: StringDictionary[String | Double]): String = js.native
+  @scala.inline
+  def querystring(querystringParams: StringDictionary[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("querystring")(querystringParams.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/util", "querystringDecode")
-  @js.native
-  def querystringDecode(querystring: String): js.Object = js.native
+  @scala.inline
+  def querystringDecode(querystring: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("querystringDecode")(querystring.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("@firebase/util", "safeGet")
-  @js.native
+  @scala.inline
   def safeGet[T /* <: js.Object */, K /* <: /* keyof T */ String */](obj: T, key: K): js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGet")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+  ]]
   
-  @JSImport("@firebase/util", "stringLength")
-  @js.native
-  def stringLength(str: String): Double = js.native
+  @scala.inline
+  def stringLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@firebase/util", "stringToByteArray")
-  @js.native
-  def stringToByteArray(str: String): js.Array[Double] = js.native
+  @scala.inline
+  def stringToByteArray(str: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToByteArray")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@firebase/util", "stringify")
-  @js.native
-  def stringify(data: js.Any): String = js.native
+  @scala.inline
+  def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@firebase/util", "validateArgCount")
-  @js.native
-  def validateArgCount(fnName: String, minCount: Double, maxCount: Double, argCount: Double): Unit = js.native
+  @scala.inline
+  def validateArgCount(fnName: String, minCount: Double, maxCount: Double, argCount: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateArgCount")(fnName.asInstanceOf[js.Any], minCount.asInstanceOf[js.Any], maxCount.asInstanceOf[js.Any], argCount.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/util", "validateCallback")
-  @js.native
-  def validateCallback(fnName: String, argumentNumber: Double, callback: js.Function, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateCallback(fnName: String, argumentNumber: Double, callback: js.Function, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateCallback")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/util", "validateContextObject")
-  @js.native
-  def validateContextObject(fnName: String, argumentNumber: Double, context: js.Any, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateContextObject(fnName: String, argumentNumber: Double, context: js.Any, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateContextObject")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], context.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@firebase/util", "validateIndexedDBOpenable")
-  @js.native
-  def validateIndexedDBOpenable(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def validateIndexedDBOpenable(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("validateIndexedDBOpenable")().asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@firebase/util", "validateNamespace")
-  @js.native
-  def validateNamespace(fnName: String, argumentNumber: Double, namespace: String, optional: Boolean): Unit = js.native
+  @scala.inline
+  def validateNamespace(fnName: String, argumentNumber: Double, namespace: String, optional: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateNamespace")(fnName.asInstanceOf[js.Any], argumentNumber.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

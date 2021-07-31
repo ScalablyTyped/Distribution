@@ -11,8 +11,8 @@ Karma reporter with Nyan Cat style logging.
 | Full name          | karma-nyan-reporter |
 | Keywords           | karma-plugin, karma-reporter, nyan, cat |
 | # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 470210 |
+| # dependents       | 20 |
+| # downloads        | 400615 |
 | # stars            | 14 |
 
 ## Links

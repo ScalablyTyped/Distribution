@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisCrosshairLabelOptions extends StObject {
   
   /**
@@ -13,59 +11,59 @@ trait AxisCrosshairLabelOptions extends StObject {
     * `"left"` for right-side axes, `"right"` for left-side axes and `"center"`
     * for horizontal axes.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highstock) The background color for the label. Defaults to the related
     * series color, or `#666666` if that is not available.
     */
-  var backgroundColor: js.UndefOr[ColorType] = js.native
+  var backgroundColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock) The border color for the crosshair label
     */
-  var borderColor: js.UndefOr[ColorType] = js.native
+  var borderColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highstock) The border corner radius of the crosshair label.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The border width for the crosshair label.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Flag to enable crosshair's label.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) A format string for the crosshair label. Defaults to
     * `{value}` for numeric axes and `{value:%b %d, %Y}` for datetime axes.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Formatter function for the label text.
     */
-  var formatter: js.UndefOr[XAxisCrosshairLabelFormatterCallbackFunction] = js.native
+  var formatter: js.UndefOr[XAxisCrosshairLabelFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highstock) Padding inside the crosshair label.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The shape to use for the label box.
     */
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Text styles for the crosshair label.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
 }
 object AxisCrosshairLabelOptions {
   

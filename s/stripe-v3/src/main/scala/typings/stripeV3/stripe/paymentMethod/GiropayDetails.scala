@@ -2,19 +2,17 @@ package typings.stripeV3.stripe.paymentMethod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GiropayDetails extends StObject {
   
-  var bank_code: String = js.native
+  var bank_code: String
   
-  var bank_name: String = js.native
+  var bank_name: String
   
-  var bic: String = js.native
+  var bic: String
   
-  var verified_name: String = js.native
+  var verified_name: String
 }
 object GiropayDetails {
   

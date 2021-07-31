@@ -2,23 +2,21 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fbsearchRepositoryTopsearchFlatResponseMod {
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseFriendshipStatus extends StObject {
     
-    var following: Boolean = js.native
+    var following: Boolean
     
-    var incoming_request: Boolean = js.native
+    var incoming_request: Boolean
     
-    var is_bestie: Boolean = js.native
+    var is_bestie: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var outgoing_request: Boolean = js.native
+    var outgoing_request: Boolean
   }
   object FbsearchRepositoryTopsearchFlatResponseFriendshipStatus {
     
@@ -54,18 +52,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseHashtag extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var media_count: Double = js.native
+    var media_count: Double
     
-    var name: String = js.native
+    var name: String
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var search_result_subtitle: String = js.native
+    var search_result_subtitle: String
   }
   object FbsearchRepositoryTopsearchFlatResponseHashtag {
     
@@ -101,19 +98,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseHeaderMedia extends StObject
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseListItem extends StObject {
     
-    var hashtag: js.UndefOr[FbsearchRepositoryTopsearchFlatResponseHashtag] = js.native
+    var hashtag: js.UndefOr[FbsearchRepositoryTopsearchFlatResponseHashtag] = js.undefined
     
-    var place: js.UndefOr[FbsearchRepositoryTopsearchFlatResponsePlace] = js.native
+    var place: js.UndefOr[FbsearchRepositoryTopsearchFlatResponsePlace] = js.undefined
     
-    var position: Double = js.native
+    var position: Double
     
-    var user: js.UndefOr[FbsearchRepositoryTopsearchFlatResponseUser] = js.native
+    var user: js.UndefOr[FbsearchRepositoryTopsearchFlatResponseUser] = js.undefined
   }
   object FbsearchRepositoryTopsearchFlatResponseListItem {
     
@@ -149,26 +144,25 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var city: String = js.native
+    var city: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var facebook_places_id: Double = js.native
+    var facebook_places_id: Double
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var short_name: String = js.native
+    var short_name: String
   }
   object FbsearchRepositoryTopsearchFlatResponseLocation {
     
@@ -220,18 +214,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponsePlace extends StObject {
     
-    var header_media: FbsearchRepositoryTopsearchFlatResponseHeaderMedia = js.native
+    var header_media: FbsearchRepositoryTopsearchFlatResponseHeaderMedia
     
-    var location: FbsearchRepositoryTopsearchFlatResponseLocation = js.native
+    var location: FbsearchRepositoryTopsearchFlatResponseLocation
     
-    var media_bundles: js.Array[_] = js.native
+    var media_bundles: js.Array[js.Any]
     
-    var subtitle: String = js.native
+    var subtitle: String
     
-    var title: String = js.native
+    var title: String
   }
   object FbsearchRepositoryTopsearchFlatResponsePlace {
     
@@ -239,7 +232,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     def apply(
       header_media: FbsearchRepositoryTopsearchFlatResponseHeaderMedia,
       location: FbsearchRepositoryTopsearchFlatResponseLocation,
-      media_bundles: js.Array[_],
+      media_bundles: js.Array[js.Any],
       subtitle: String,
       title: String
     ): FbsearchRepositoryTopsearchFlatResponsePlace = {
@@ -257,7 +250,7 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
       def setLocation(value: FbsearchRepositoryTopsearchFlatResponseLocation): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMedia_bundles(value: js.Array[_]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
+      def setMedia_bundles(value: js.Array[js.Any]): Self = StObject.set(x, "media_bundles", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMedia_bundlesVarargs(value: js.Any*): Self = StObject.set(x, "media_bundles", js.Array(value :_*))
@@ -270,18 +263,17 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseRootObject extends StObject {
     
-    var clear_client_cache: Boolean = js.native
+    var clear_client_cache: Boolean
     
-    var has_more: Boolean = js.native
+    var has_more: Boolean
     
-    var list: js.Array[FbsearchRepositoryTopsearchFlatResponseListItem] = js.native
+    var list: js.Array[FbsearchRepositoryTopsearchFlatResponseListItem]
     
-    var rank_token: String = js.native
+    var rank_token: String
     
-    var status: String = js.native
+    var status: String
   }
   object FbsearchRepositoryTopsearchFlatResponseRootObject {
     
@@ -320,38 +312,37 @@ object fbsearchRepositoryTopsearchFlatResponseMod {
     }
   }
   
-  @js.native
   trait FbsearchRepositoryTopsearchFlatResponseUser extends StObject {
     
-    var byline: String = js.native
+    var byline: String
     
-    var follower_count: Double = js.native
+    var follower_count: Double
     
-    var friendship_status: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus = js.native
+    var friendship_status: FbsearchRepositoryTopsearchFlatResponseFriendshipStatus
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: Boolean = js.native
+    var has_anonymous_profile_picture: Boolean
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var mutual_followers_count: Double = js.native
+    var mutual_followers_count: Double
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var search_social_context: js.UndefOr[String] = js.native
+    var search_social_context: js.UndefOr[String] = js.undefined
     
-    var social_context: js.UndefOr[String] = js.native
+    var social_context: js.UndefOr[String] = js.undefined
     
-    var username: String = js.native
+    var username: String
   }
   object FbsearchRepositoryTopsearchFlatResponseUser {
     

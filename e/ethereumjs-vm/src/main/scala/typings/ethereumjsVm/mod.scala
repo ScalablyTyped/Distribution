@@ -12,7 +12,6 @@ import typings.ethereumjsVm.runTxMod.RunTxResult
 import typings.ethereumjsVm.stateMod.StateManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,32 +26,37 @@ object mod {
     *  - `activatePrecompiles`: false
     *  - `allowUnlimitedContractSize`: false [ONLY set to `true` during debugging]
     */
-  class default () extends VM {
+  class default ()
+    extends StObject
+       with VM {
     def this(opts: VMOpts) = this()
-  }
-  
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait VM extends StObject {
     
+    /* CompleteClass */
     var _common: typings.ethereumjsCommon.mod.default = js.native
     
-    def _emit(topic: String, data: js.Any): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def _emit(topic: String, data: js.Any): js.Promise[Unit] = js.native
     
+    /* CompleteClass */
     var _opcodes: OpcodeList = js.native
     
+    /* CompleteClass */
     var allowUnlimitedContractSize: Boolean = js.native
     
+    /* CompleteClass */
     var blockchain: typings.ethereumjsBlockchain.mod.default = js.native
     
     /**
       * Returns a copy of the [[VM]] instance.
       */
-    def copy(): VM = js.native
+    /* CompleteClass */
+    override def copy(): VM = js.native
     
+    /* CompleteClass */
     var opts: VMOpts = js.native
     
-    val pStateManager: typings.ethereumjsVm.promisifiedMod.default = js.native
+    /* CompleteClass */
+    override val pStateManager: typings.ethereumjsVm.promisifiedMod.default = js.native
     
     /**
       * Processes the `block` running all of the transactions it contains and updating the miner's account
@@ -64,7 +68,8 @@ object mod {
       * @param opts - Default values for options:
       *  - `generate`: false
       */
-    def runBlock(opts: RunBlockOpts): js.Promise[RunBlockResult] = js.native
+    /* CompleteClass */
+    override def runBlock(opts: RunBlockOpts): js.Promise[RunBlockResult] = js.native
     
     /**
       * Processes blocks and adds them to the blockchain.
@@ -73,21 +78,24 @@ object mod {
       *
       * @param blockchain -  A [blockchain](https://github.com/ethereum/ethereumjs-blockchain) object to process
       */
-    def runBlockchain(blockchain: js.Any): js.Promise[Unit] = js.native
+    /* CompleteClass */
+    override def runBlockchain(blockchain: js.Any): js.Promise[Unit] = js.native
     
     /**
       * runs a call (or create) operation.
       *
       * This method modifies the state.
       */
-    def runCall(opts: RunCallOpts): js.Promise[EVMResult] = js.native
+    /* CompleteClass */
+    override def runCall(opts: RunCallOpts): js.Promise[EVMResult] = js.native
     
     /**
       * Runs EVM code.
       *
       * This method modifies the state.
       */
-    def runCode(opts: RunCodeOpts): js.Promise[ExecResult] = js.native
+    /* CompleteClass */
+    override def runCode(opts: RunCodeOpts): js.Promise[ExecResult] = js.native
     
     /**
       * Process a transaction. Run the vm. Transfers eth. Checks balances.
@@ -96,9 +104,80 @@ object mod {
       * when the error is thrown from an event handler. In the latter case the state may or may not be
       * reverted.
       */
-    def runTx(opts: RunTxOpts): js.Promise[RunTxResult] = js.native
+    /* CompleteClass */
+    override def runTx(opts: RunTxOpts): js.Promise[RunTxResult] = js.native
     
+    /* CompleteClass */
     var stateManager: StateManager = js.native
+  }
+  
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped any */ trait VM extends StObject {
+    
+    var _common: typings.ethereumjsCommon.mod.default
+    
+    def _emit(topic: String, data: js.Any): js.Promise[Unit]
+    
+    var _opcodes: OpcodeList
+    
+    var allowUnlimitedContractSize: Boolean
+    
+    var blockchain: typings.ethereumjsBlockchain.mod.default
+    
+    /**
+      * Returns a copy of the [[VM]] instance.
+      */
+    def copy(): VM
+    
+    var opts: VMOpts
+    
+    val pStateManager: typings.ethereumjsVm.promisifiedMod.default
+    
+    /**
+      * Processes the `block` running all of the transactions it contains and updating the miner's account
+      *
+      * This method modifies the state. If `generate` is `true`, the state modifications will be
+      * reverted if an exception is raised. If it's `false`, it won't revert if the block's header is
+      * invalid. If an error is thrown from an event handler, the state may or may not be reverted.
+      *
+      * @param opts - Default values for options:
+      *  - `generate`: false
+      */
+    def runBlock(opts: RunBlockOpts): js.Promise[RunBlockResult]
+    
+    /**
+      * Processes blocks and adds them to the blockchain.
+      *
+      * This method modifies the state.
+      *
+      * @param blockchain -  A [blockchain](https://github.com/ethereum/ethereumjs-blockchain) object to process
+      */
+    def runBlockchain(blockchain: js.Any): js.Promise[Unit]
+    
+    /**
+      * runs a call (or create) operation.
+      *
+      * This method modifies the state.
+      */
+    def runCall(opts: RunCallOpts): js.Promise[EVMResult]
+    
+    /**
+      * Runs EVM code.
+      *
+      * This method modifies the state.
+      */
+    def runCode(opts: RunCodeOpts): js.Promise[ExecResult]
+    
+    /**
+      * Process a transaction. Run the vm. Transfers eth. Checks balances.
+      *
+      * This method modifies the state. If an error is thrown, the modifications are reverted, except
+      * when the error is thrown from an event handler. In the latter case the state may or may not be
+      * reverted.
+      */
+    def runTx(opts: RunTxOpts): js.Promise[RunTxResult]
+    
+    var stateManager: StateManager
   }
   object VM {
     
@@ -170,7 +249,6 @@ object mod {
     }
   }
   
-  @js.native
   trait VMOpts extends StObject {
     
     /**
@@ -183,40 +261,40 @@ object mod {
       * Setting this to true has the effect of precompiled contracts' gas costs matching mainnet's from
       * the very first call, which is intended for testing networks.
       */
-    var activatePrecompiles: js.UndefOr[Boolean] = js.native
+    var activatePrecompiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allows unlimited contract sizes while debugging. By setting this to `true`, the check for contract size limit of 24KB (see [EIP-170](https://git.io/vxZkK)) is bypassed
       */
-    var allowUnlimitedContractSize: js.UndefOr[Boolean] = js.native
+    var allowUnlimitedContractSize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A [blockchain](https://github.com/ethereumjs/ethereumjs-blockchain) object for storing/retrieving blocks
       */
-    var blockchain: js.UndefOr[typings.ethereumjsBlockchain.mod.default] = js.native
+    var blockchain: js.UndefOr[typings.ethereumjsBlockchain.mod.default] = js.undefined
     
     /**
       * The chain the VM operates on
       */
-    var chain: js.UndefOr[String] = js.native
+    var chain: js.UndefOr[String] = js.undefined
     
-    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.native
+    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.undefined
     
     /**
       * Hardfork rules to be used
       */
-    var hardfork: js.UndefOr[String] = js.native
+    var hardfork: js.UndefOr[String] = js.undefined
     
     /**
       * A [merkle-patricia-tree](https://github.com/ethereumjs/merkle-patricia-tree) instance for the state tree (ignored if stateManager is passed)
       * @deprecated
       */
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
     /**
       * A [[StateManager]] instance to use as the state store (Beta API)
       */
-    var stateManager: js.UndefOr[StateManager] = js.native
+    var stateManager: js.UndefOr[StateManager] = js.undefined
   }
   object VMOpts {
     

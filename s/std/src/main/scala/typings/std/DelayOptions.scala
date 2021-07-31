@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DelayOptions extends AudioNodeOptions {
+trait DelayOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var delayTime: js.UndefOr[Double] = js.native
+  var delayTime: js.UndefOr[Double] = js.undefined
   
-  var maxDelayTime: js.UndefOr[Double] = js.native
+  var maxDelayTime: js.UndefOr[Double] = js.undefined
 }
 object DelayOptions {
   

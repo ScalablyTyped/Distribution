@@ -10,9 +10,9 @@ Typings are for version 3.0.2
 | ------------------ | :-------------: |
 | Full name          | @vue/compiler-core |
 | Keywords           | vue |
-| # releases         | 51 |
-| # dependents       | 17 |
-| # downloads        | 1085092 |
+| # releases         | 58 |
+| # dependents       | 23 |
+| # downloads        | 8287874 |
 | # stars            | 0 |
 
 ## Links

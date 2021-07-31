@@ -3,23 +3,23 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContentBase extends Style {
+trait ContentBase
+  extends StObject
+     with Style {
   
-  var absolutePosition: js.UndefOr[X] = js.native
+  var absolutePosition: js.UndefOr[X] = js.undefined
   
-  var headlineLevel: js.UndefOr[Double] = js.native
+  var headlineLevel: js.UndefOr[Double] = js.undefined
   
-  var pageBreak: js.UndefOr[PageBreak] = js.native
+  var pageBreak: js.UndefOr[PageBreak] = js.undefined
   
-  var pageOrientation: js.UndefOr[PageOrientation] = js.native
+  var pageOrientation: js.UndefOr[PageOrientation] = js.undefined
   
-  var relativePosition: js.UndefOr[X] = js.native
+  var relativePosition: js.UndefOr[X] = js.undefined
   
-  var style: js.UndefOr[String | js.Array[String] | Style] = js.native
+  var style: js.UndefOr[String | js.Array[String] | Style] = js.undefined
 }
 object ContentBase {
   

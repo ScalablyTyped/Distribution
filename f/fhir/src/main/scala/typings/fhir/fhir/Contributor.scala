@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contributor information
   */
-@js.native
-trait Contributor extends Element {
+trait Contributor
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contact details of the contributor
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Who contributed the content
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * author | editor | reviewer | endorser
     */
-  var `type`: code = js.native
+  var `type`: code
 }
 object Contributor {
   

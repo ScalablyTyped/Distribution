@@ -2,20 +2,18 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConfigure extends StObject {
   
   // please note, filter could be also a function. This case is not represented here
-  var container: js.UndefOr[js.Any] = js.native
+  var container: js.UndefOr[js.Any] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var filter: js.UndefOr[String | js.Array[String] | Boolean] = js.native
+  var filter: js.UndefOr[String | js.Array[String] | Boolean] = js.undefined
   
-  var showButton: js.UndefOr[Boolean] = js.native
+  var showButton: js.UndefOr[Boolean] = js.undefined
 }
 object NetworkConfigure {
   

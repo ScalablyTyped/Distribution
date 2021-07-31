@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.bluebird.mod.Resolvable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,7 @@ class Promise[R] protected ()
     */
   def this(callback: js.Function3[
         /* resolve */ js.Function1[
-          /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ _]], 
+          /* thenableOrResult */ js.UndefOr[Resolvable[/* import warning: RewrittenClass.unapply cls was tparam R */ js.Any]], 
           Unit
         ], 
         /* reject */ js.Function1[/* error */ js.UndefOr[js.Any], Unit], 

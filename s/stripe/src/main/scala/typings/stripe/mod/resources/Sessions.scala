@@ -8,7 +8,6 @@ import typings.stripe.mod.checkouts.sessions.ICheckoutCreationOptions
 import typings.stripe.mod.checkouts.sessions.ICheckoutSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Sessions")

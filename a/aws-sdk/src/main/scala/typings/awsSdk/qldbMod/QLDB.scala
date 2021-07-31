@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait QLDB extends Service {
   ): Request[CancelJournalKinesisStreamResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_QLDB: ConfigBase with ClientConfiguration = js.native
+  var config_QLDB: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new ledger in your AWS account.

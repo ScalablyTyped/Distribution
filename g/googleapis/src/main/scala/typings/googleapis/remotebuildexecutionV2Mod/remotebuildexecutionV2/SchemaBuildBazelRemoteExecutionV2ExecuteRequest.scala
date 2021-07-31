@@ -2,39 +2,37 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request message for Execution.Execute.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ExecuteRequest extends StObject {
   
   /**
     * The digest of the Action to execute.
     */
-  var actionDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var actionDigest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * An optional policy for execution of the action. The server will have a
     * default policy if this is not provided.
     */
-  var executionPolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutionPolicy] = js.native
+  var executionPolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ExecutionPolicy] = js.undefined
   
   /**
     * An optional policy for the results of this execution in the remote cache.
     * The server will have a default policy if this is not provided. This may
     * be applied to both the ActionResult and the associated blobs.
     */
-  var resultsCachePolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy] = js.native
+  var resultsCachePolicy: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy] = js.undefined
   
   /**
     * If true, the action will be executed anew even if its result was already
     * present in the cache. If false, the result may be served from the
     * ActionCache.
     */
-  var skipCacheLookup: js.UndefOr[Boolean] = js.native
+  var skipCacheLookup: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ExecuteRequest {
   

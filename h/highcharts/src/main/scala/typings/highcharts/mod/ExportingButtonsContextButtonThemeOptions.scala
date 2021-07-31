@@ -2,27 +2,25 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportingButtonsContextButtonThemeOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The default fill exists only to
     * capture hover events.
     */
-  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fill: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Padding for the button.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Default stroke for the buttons.
     */
-  var stroke: js.UndefOr[ColorString] = js.native
+  var stroke: js.UndefOr[ColorString] = js.undefined
 }
 object ExportingButtonsContextButtonThemeOptions {
   

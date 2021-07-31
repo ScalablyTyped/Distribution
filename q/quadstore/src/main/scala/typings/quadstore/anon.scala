@@ -2,15 +2,13 @@ package typings.quadstore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0`[CK /* <: String */] extends StObject {
     
-    var contextKey: js.UndefOr[CK] = js.native
+    var contextKey: js.UndefOr[CK] = js.undefined
   }
   object `0` {
     
@@ -21,7 +19,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `0MutableBuilder`[Self <: `0`[_], CK /* <: String */] (val x: Self with `0`[CK]) extends AnyVal {
+    implicit class `0MutableBuilder`[Self <: `0`[?], CK /* <: String */] (val x: Self & `0`[CK]) extends AnyVal {
       
       @scala.inline
       def setContextKey(value: CK): Self = StObject.set(x, "contextKey", value.asInstanceOf[js.Any])
@@ -31,10 +29,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ContextKey extends StObject {
     
-    var contextKey: js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any] = js.native
+    var contextKey: js.UndefOr[/* import warning: RewrittenClass.unapply cls was tparam CK */ js.Any] = js.undefined
   }
   object ContextKey {
     

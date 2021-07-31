@@ -13,7 +13,6 @@ import typings.mangopay2NodejsSdk.mod.refund.CreatePayInRefund
 import typings.mangopay2NodejsSdk.mod.refund.RefundData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mangopay2-nodejs-sdk", "PayIns")
@@ -213,7 +212,7 @@ class PayIns () extends StObject {
     * @param options
     */
   @JSName("create")
-  var create_Original: (MethodOverload[CreateCardDirectPayIn, CardDirectPayInData]) with (MethodOverload[CreateCardPreAuthorizedPayIn, CardPreAuthorizedPayInData]) with (MethodOverload[CreateCardWebPayIn, CardWebPayInData]) with (MethodOverload[CreateBankWireDirectPayIn, BankWireDirectPayInData]) = js.native
+  var create_Original: (MethodOverload[CreateCardDirectPayIn, CardDirectPayInData]) & (MethodOverload[CreateCardPreAuthorizedPayIn, CardPreAuthorizedPayInData]) & (MethodOverload[CreateCardWebPayIn, CardWebPayInData]) & (MethodOverload[CreateBankWireDirectPayIn, BankWireDirectPayInData]) = js.native
   
   /**
     * Get pay-in

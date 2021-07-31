@@ -6,20 +6,18 @@ import typings.libp2pGossipsub.messageMod.ControlIWant
 import typings.libp2pGossipsub.messageMod.ControlPrune
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<libp2p-gossipsub.libp2p-gossipsub/src/message.ControlMessage> */
-@js.native
 trait PartialControlMessage extends StObject {
   
-  var graft: js.UndefOr[js.Array[ControlGraft]] = js.native
+  var graft: js.UndefOr[js.Array[ControlGraft]] = js.undefined
   
-  var ihave: js.UndefOr[js.Array[ControlIHave]] = js.native
+  var ihave: js.UndefOr[js.Array[ControlIHave]] = js.undefined
   
-  var iwant: js.UndefOr[js.Array[ControlIWant]] = js.native
+  var iwant: js.UndefOr[js.Array[ControlIWant]] = js.undefined
   
-  var prune: js.UndefOr[js.Array[ControlPrune]] = js.native
+  var prune: js.UndefOr[js.Array[ControlPrune]] = js.undefined
 }
 object PartialControlMessage {
   

@@ -3,14 +3,12 @@ package typings.fundamentalReact.anon
 import typings.react.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<fundamental-react.fundamental-react/lib/Forms/FormGroup.FormGroupProps> */
-@js.native
 trait WeakValidationMapFormGrou extends StObject {
   
-  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.native
+  var disableStyles: js.UndefOr[Validator[js.UndefOr[Boolean | Null]]] = js.undefined
 }
 object WeakValidationMapFormGrou {
   

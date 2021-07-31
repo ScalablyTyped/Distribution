@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifiedProperty extends StObject {
   
   // Indicates the property name of the target attribute that was changed.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the updated value for the propery.
-  var newValue: js.UndefOr[NullableOption[String]] = js.native
+  var newValue: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates the previous value (before the update) for the property.
-  var oldValue: js.UndefOr[NullableOption[String]] = js.native
+  var oldValue: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ModifiedProperty {
   

@@ -2,61 +2,59 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserRequest extends StObject {
   
   /**
     * The identifier of the user account in the directory used for identity management. If Amazon Connect cannot access the directory, you can specify this identifier to authenticate users. If you include the identifier, we assume that Amazon Connect cannot access the directory. Otherwise, the identity information is used to authenticate users from your directory. This parameter is required if you are using an existing directory for identity management in Amazon Connect when Amazon Connect cannot access your directory to authenticate users. If you are using SAML for identity management and include this parameter, an error is returned.
     */
-  var DirectoryUserId: js.UndefOr[typings.awsSdk.connectMod.DirectoryUserId] = js.native
+  var DirectoryUserId: js.UndefOr[typings.awsSdk.connectMod.DirectoryUserId] = js.undefined
   
   /**
     * The identifier of the hierarchy group for the user.
     */
-  var HierarchyGroupId: js.UndefOr[typings.awsSdk.connectMod.HierarchyGroupId] = js.native
+  var HierarchyGroupId: js.UndefOr[typings.awsSdk.connectMod.HierarchyGroupId] = js.undefined
   
   /**
     * The information about the identity of the user.
     */
-  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.native
+  var IdentityInfo: js.UndefOr[UserIdentityInfo] = js.undefined
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The password for the user account. A password is required if you are using Amazon Connect for identity management. Otherwise, it is an error to include a password.
     */
-  var Password: js.UndefOr[typings.awsSdk.connectMod.Password] = js.native
+  var Password: js.UndefOr[typings.awsSdk.connectMod.Password] = js.undefined
   
   /**
     * The phone settings for the user.
     */
-  var PhoneConfig: UserPhoneConfig = js.native
+  var PhoneConfig: UserPhoneConfig
   
   /**
     * The identifier of the routing profile for the user.
     */
-  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId = js.native
+  var RoutingProfileId: typings.awsSdk.connectMod.RoutingProfileId
   
   /**
     * The identifier of the security profile for the user.
     */
-  var SecurityProfileIds: typings.awsSdk.connectMod.SecurityProfileIds = js.native
+  var SecurityProfileIds: typings.awsSdk.connectMod.SecurityProfileIds
   
   /**
     * One or more tags.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The user name for the account. For instances not using SAML for identity management, the user name can include up to 20 characters. If you are using SAML for identity management, the user name can include up to 64 characters from [a-zA-Z0-9_-.\@]+.
     */
-  var Username: AgentUsername = js.native
+  var Username: AgentUsername
 }
 object CreateUserRequest {
   

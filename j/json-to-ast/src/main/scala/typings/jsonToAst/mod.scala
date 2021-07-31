@@ -7,24 +7,24 @@ import typings.jsonToAst.jsonToAstStrings.Object
 import typings.jsonToAst.jsonToAstStrings.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json-to-ast", JSImport.Namespace)
-  @js.native
-  def apply(json: String): ValueNode = js.native
-  @JSImport("json-to-ast", JSImport.Namespace)
-  @js.native
-  def apply(json: String, settings: Options): ValueNode = js.native
+  @scala.inline
+  def apply(json: String): ValueNode = ^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any]).asInstanceOf[ValueNode]
+  @scala.inline
+  def apply(json: String, settings: Options): ValueNode = (^.asInstanceOf[js.Dynamic].apply(json.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[ValueNode]
   
+  @JSImport("json-to-ast", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ASTNode extends StObject {
     
-    var loc: js.UndefOr[Location] = js.native
+    var loc: js.UndefOr[Location] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ASTNode {
     
@@ -49,22 +49,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ArrayNode
-    extends ASTNode
+    extends StObject
+       with ASTNode
        with ValueNode {
     
-    var children: js.Array[ValueNode] = js.native
+    var children: js.Array[ValueNode]
     
     @JSName("type")
-    var type_ArrayNode: Array = js.native
+    var type_ArrayNode: Array
   }
   object ArrayNode {
     
     @scala.inline
-    def apply(children: js.Array[ValueNode], `type`: Array): ArrayNode = {
+    def apply(children: js.Array[ValueNode]): ArrayNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[ArrayNode]
     }
     
@@ -82,22 +82,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait IdentifierNode extends ASTNode {
+  trait IdentifierNode
+    extends StObject
+       with ASTNode {
     
-    var raw: String = js.native
+    var raw: String
     
     @JSName("type")
-    var type_IdentifierNode: Identifier = js.native
+    var type_IdentifierNode: Identifier
     
-    var value: String = js.native
+    var value: String
   }
   object IdentifierNode {
     
     @scala.inline
-    def apply(raw: String, `type`: Identifier, value: String): IdentifierNode = {
+    def apply(raw: String, value: String): IdentifierNode = {
       val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Identifier")
       __obj.asInstanceOf[IdentifierNode]
     }
     
@@ -115,24 +116,24 @@ object mod {
     }
   }
   
-  @js.native
   trait LiteralNode
-    extends ASTNode
+    extends StObject
+       with ASTNode
        with ValueNode {
     
-    var raw: String = js.native
+    var raw: String
     
     @JSName("type")
-    var type_LiteralNode: Literal = js.native
+    var type_LiteralNode: Literal
     
-    var value: String | Double | Boolean | Null = js.native
+    var value: String | Double | Boolean | Null
   }
   object LiteralNode {
     
     @scala.inline
-    def apply(raw: String, `type`: Literal): LiteralNode = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(raw: String): LiteralNode = {
+      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = null)
+      __obj.updateDynamic("type")("Literal")
       __obj.asInstanceOf[LiteralNode]
     }
     
@@ -153,20 +154,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var end: Position = js.native
+    var end: Position
     
-    var source: String | Null = js.native
+    var source: String | Null
     
-    var start: Position = js.native
+    var start: Position
   }
   object Location {
     
     @scala.inline
     def apply(end: Position, start: Position): Location = {
-      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], source = null)
       __obj.asInstanceOf[Location]
     }
     
@@ -187,22 +187,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ObjectNode
-    extends ASTNode
+    extends StObject
+       with ASTNode
        with ValueNode {
     
-    var children: js.Array[PropertyNode] = js.native
+    var children: js.Array[PropertyNode]
     
     @JSName("type")
-    var type_ObjectNode: Object = js.native
+    var type_ObjectNode: Object
   }
   object ObjectNode {
     
     @scala.inline
-    def apply(children: js.Array[PropertyNode], `type`: Object): ObjectNode = {
+    def apply(children: js.Array[PropertyNode]): ObjectNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Object")
       __obj.asInstanceOf[ObjectNode]
     }
     
@@ -220,7 +220,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -228,14 +227,14 @@ object mod {
       *
       * @default true
       */
-    var loc: js.UndefOr[Boolean] = js.native
+    var loc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Appends source information to node’s location.
       *
       * @default null
       */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -262,14 +261,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Position {
     
@@ -293,22 +291,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait PropertyNode extends ASTNode {
+  trait PropertyNode
+    extends StObject
+       with ASTNode {
     
-    var key: IdentifierNode = js.native
+    var key: IdentifierNode
     
     @JSName("type")
-    var type_PropertyNode: Property = js.native
+    var type_PropertyNode: Property
     
-    var value: ValueNode = js.native
+    var value: ValueNode
   }
   object PropertyNode {
     
     @scala.inline
-    def apply(key: IdentifierNode, `type`: Property, value: ValueNode): PropertyNode = {
+    def apply(key: IdentifierNode, value: ValueNode): PropertyNode = {
       val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Property")
       __obj.asInstanceOf[PropertyNode]
     }
     
@@ -335,23 +334,23 @@ object mod {
   object ValueNode {
     
     @scala.inline
-    def ArrayNode(children: js.Array[ValueNode], `type`: Array): typings.jsonToAst.mod.ArrayNode = {
+    def ArrayNode(children: js.Array[ValueNode]): typings.jsonToAst.mod.ArrayNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Array")
       __obj.asInstanceOf[typings.jsonToAst.mod.ArrayNode]
     }
     
     @scala.inline
-    def LiteralNode(raw: String, `type`: Literal): typings.jsonToAst.mod.LiteralNode = {
-      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def LiteralNode(raw: String): typings.jsonToAst.mod.LiteralNode = {
+      val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], value = null)
+      __obj.updateDynamic("type")("Literal")
       __obj.asInstanceOf[typings.jsonToAst.mod.LiteralNode]
     }
     
     @scala.inline
-    def ObjectNode(children: js.Array[PropertyNode], `type`: Object): typings.jsonToAst.mod.ObjectNode = {
+    def ObjectNode(children: js.Array[PropertyNode]): typings.jsonToAst.mod.ObjectNode = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Object")
       __obj.asInstanceOf[typings.jsonToAst.mod.ObjectNode]
     }
   }

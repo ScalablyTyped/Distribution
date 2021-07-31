@@ -2,36 +2,34 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayValue extends StObject {
   
   /**
     * An array of arrays.
     */
-  var arrayValues: js.UndefOr[ArrayOfArray] = js.native
+  var arrayValues: js.UndefOr[ArrayOfArray] = js.undefined
   
   /**
     * An array of Boolean values.
     */
-  var booleanValues: js.UndefOr[BooleanArray] = js.native
+  var booleanValues: js.UndefOr[BooleanArray] = js.undefined
   
   /**
     * An array of integers.
     */
-  var doubleValues: js.UndefOr[DoubleArray] = js.native
+  var doubleValues: js.UndefOr[DoubleArray] = js.undefined
   
   /**
     * An array of floating point numbers.
     */
-  var longValues: js.UndefOr[LongArray] = js.native
+  var longValues: js.UndefOr[LongArray] = js.undefined
   
   /**
     * An array of strings.
     */
-  var stringValues: js.UndefOr[StringArray] = js.native
+  var stringValues: js.UndefOr[StringArray] = js.undefined
 }
 object ArrayValue {
   

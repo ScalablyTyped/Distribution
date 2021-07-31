@@ -3,11 +3,11 @@ package typings.winrt.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompassReading extends ICompassReading
+trait CompassReading
+  extends StObject
+     with ICompassReading
 object CompassReading {
   
   @scala.inline

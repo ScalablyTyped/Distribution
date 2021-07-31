@@ -5,7 +5,6 @@ import typings.firebase.mod.firebase.app.App
 import typings.firebase.mod.firebase.messaging.Messaging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,18 +44,18 @@ object messaging {
     * @param app The app to create a Messaging service for.
     *     If not passed, uses the default app.
     */
+  @scala.inline
+  def apply(): Messaging = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Messaging]
+  @scala.inline
+  def apply(app: App): Messaging = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Messaging]
+  
   @JSImport("firebase", "default.messaging")
   @js.native
-  def apply(): Messaging = js.native
-  @JSImport("firebase", "default.messaging")
-  @js.native
-  def apply(app: App): Messaging = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("firebase", "default.messaging.isSupported")
-  @js.native
-  def isSupported(): Boolean = js.native
+  @scala.inline
+  def isSupported(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[Boolean]
   
-  @js.native
   trait FcmOptions extends StObject {
     
     /**
@@ -64,14 +63,14 @@ object messaging {
       * {@link https://firebase.google.com/docs/cloud-messaging/understand-delivery#adding-analytics-labels-to-messages
       * Adding analytics labels}.
       */
-    var analyticsLabel: js.UndefOr[String] = js.native
+    var analyticsLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The link to open when the user clicks on the notification. For all URL values, HTTPS is
       * required. For example, by setting this value to your app's URL, a notification click event
       * will put your app in focus for the user.
       */
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
   }
   object FcmOptions {
     
@@ -98,7 +97,6 @@ object messaging {
     }
   }
   
-  @js.native
   trait MessagePayload extends StObject {
     
     /**
@@ -106,27 +104,27 @@ object messaging {
       * {@link https://firebase.google.com/docs/cloud-messaging/concept-options#collapsible_and_non-collapsible_messages
       * Collapsible and non-collapsible messages}.
       */
-    var collapseKey: String = js.native
+    var collapseKey: String
     
     /**
       * Arbitrary key/value pairs.
       */
-    var data: js.UndefOr[StringDictionary[String]] = js.native
+    var data: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * See {@link firebase.messaging.FcmOptions}.
       */
-    var fcmOptions: js.UndefOr[typings.firebase.mod.firebase.messaging.FcmOptions] = js.native
+    var fcmOptions: js.UndefOr[typings.firebase.mod.firebase.messaging.FcmOptions] = js.undefined
     
     /**
       * The sender of this message.
       */
-    var from: String = js.native
+    var from: String
     
     /**
       * See {@link firebase.messaging.NotificationPayload}.
       */
-    var notification: js.UndefOr[typings.firebase.mod.firebase.messaging.NotificationPayload] = js.native
+    var notification: js.UndefOr[typings.firebase.mod.firebase.messaging.NotificationPayload] = js.undefined
   }
   object MessagePayload {
     
@@ -165,25 +163,24 @@ object messaging {
     }
   }
   
-  @js.native
   trait NotificationPayload extends StObject {
     
     /**
       * The body of a notification.
       */
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
     /**
       * The URL of the image that is shown with the notification. See
       * {@link https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages#notification
       * `notification.image`} for supported image format.
       */
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
     /**
       * The title of a notification.
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NotificationPayload {
     

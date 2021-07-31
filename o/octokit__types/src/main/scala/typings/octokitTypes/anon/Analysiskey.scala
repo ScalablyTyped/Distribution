@@ -2,43 +2,41 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Analysiskey extends StObject {
   
   /**
     * Identifies the configuration under which the analysis was executed. For example, in GitHub Actions this includes the workflow filename and job name.
     */
-  var analysis_key: String = js.native
+  var analysis_key: String
   
   /**
     * The commit SHA of the code scanning analysis file.
     */
-  var commit_sha: String = js.native
+  var commit_sha: String
   
   /**
     * The time that the analysis was created in ISO 8601 format: `YYYY-MM-DDTHH:MM:SSZ`.
     */
-  var created_at: String = js.native
+  var created_at: String
   
   /**
     * Identifies the variable values associated with the environment in which this analysis was performed.
     */
-  var environment: String = js.native
+  var environment: String
   
-  var error: String = js.native
+  var error: String
   
   /**
     * The full Git reference of the code scanning analysis file, formatted as `refs/heads/<branch name>`.
     */
-  var ref: String = js.native
+  var ref: String
   
   /**
     * The name of the tool used to generate the code scanning analysis alert.
     */
-  var tool_name: String = js.native
+  var tool_name: String
 }
 object Analysiskey {
   

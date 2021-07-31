@@ -4,16 +4,16 @@ import typings.xstate.anon.Id
 import typings.xstate.typesMod.ActionTypes.Stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StopAction[TContext, TEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait StopAction[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var activity: String | Id | (Expr[TContext, TEvent, String | Id]) = js.native
+  var activity: String | Id | (Expr[TContext, TEvent, String | Id])
   
   @JSName("type")
-  var type_StopAction: Stop = js.native
+  var type_StopAction: Stop
 }
 object StopAction {
   
@@ -25,7 +25,7 @@ object StopAction {
   }
   
   @scala.inline
-  implicit class StopActionMutableBuilder[Self <: StopAction[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (StopAction[TContext, TEvent])) extends AnyVal {
+  implicit class StopActionMutableBuilder[Self <: StopAction[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (StopAction[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActivity(value: String | Id | (Expr[TContext, TEvent, String | Id])): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])

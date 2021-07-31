@@ -2,10 +2,8 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReplicasDeleteRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaReplicasDeleteRequest extends StObject {
     * virtual machine instance will remain. By default, this is set to false
     * and the instance will be deleted along with the replica.
     */
-  var abandonInstance: js.UndefOr[Boolean] = js.native
+  var abandonInstance: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaReplicasDeleteRequest {
   

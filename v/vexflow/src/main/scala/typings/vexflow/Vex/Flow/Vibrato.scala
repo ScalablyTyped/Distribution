@@ -4,15 +4,15 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Vibrato extends Modifier {
+trait Vibrato
+  extends StObject
+     with Modifier {
   
-  def setHarsh(harsh: Boolean): Vibrato = js.native
+  def setHarsh(harsh: Boolean): Vibrato
   
-  def setVibratoWidth(width: Double): Vibrato = js.native
+  def setVibratoWidth(width: Double): Vibrato
 }
 object Vibrato {
   

@@ -17,42 +17,40 @@ import typings.std.InstanceType
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-onclickoutside", JSImport.Default)
+  @JSImport("react-onclickoutside", JSImport.Namespace)
   @js.native
-  def default[P](component: ComponentClass[P, ComponentState]): WrapperClass[P, ComponentClass[P, ComponentState]] = js.native
-  @JSImport("react-onclickoutside", JSImport.Default)
-  @js.native
-  def default[P](component: ComponentClass[P, ComponentState], config: ConfigObject): WrapperClass[P, ComponentClass[P, ComponentState]] = js.native
-  @JSImport("react-onclickoutside", JSImport.Default)
-  @js.native
-  def default[P](component: FunctionComponent[P]): WrapperClass[P, FunctionComponent[P]] = js.native
-  @JSImport("react-onclickoutside", JSImport.Default)
-  @js.native
-  def default[P](component: FunctionComponent[P], config: ConfigObject): WrapperClass[P, FunctionComponent[P]] = js.native
-  @JSImport("react-onclickoutside", JSImport.Default)
-  @js.native
-  def default[P](component: ClickOutComponentClass[P]): WrapperClass[P, ClickOutComponentClass[P]] = js.native
-  @JSImport("react-onclickoutside", JSImport.Default)
-  @js.native
-  def default[P](component: ClickOutComponentClass[P], config: ConfigObject): WrapperClass[P, ClickOutComponentClass[P]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AdditionalProps extends ConfigObject {
+  @scala.inline
+  def default[P](component: ComponentClass[P, ComponentState]): WrapperClass[P, ComponentClass[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
+  @scala.inline
+  def default[P](component: ComponentClass[P, ComponentState], config: ConfigObject): WrapperClass[P, ComponentClass[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ComponentClass[P, ComponentState]]]
+  @scala.inline
+  def default[P](component: FunctionComponent[P]): WrapperClass[P, FunctionComponent[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
+  @scala.inline
+  def default[P](component: FunctionComponent[P], config: ConfigObject): WrapperClass[P, FunctionComponent[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, FunctionComponent[P]]]
+  @scala.inline
+  def default[P](component: ClickOutComponentClass[P]): WrapperClass[P, ClickOutComponentClass[P]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
+  @scala.inline
+  def default[P](component: ClickOutComponentClass[P], config: ConfigObject): WrapperClass[P, ClickOutComponentClass[P]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[WrapperClass[P, ClickOutComponentClass[P]]]
+  
+  trait AdditionalProps
+    extends StObject
+       with ConfigObject {
     
-    var disableOnClickOutside: js.UndefOr[Boolean] = js.native
+    var disableOnClickOutside: js.UndefOr[Boolean] = js.undefined
     
-    var eventTypes: js.UndefOr[String | js.Array[String]] = js.native
+    var eventTypes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var outsideClickIgnoreClass: js.UndefOr[String] = js.native
+    var outsideClickIgnoreClass: js.UndefOr[String] = js.undefined
     
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var stopPropagation: js.UndefOr[Boolean] = js.native
+    var stopPropagation: js.UndefOr[Boolean] = js.undefined
   }
   object AdditionalProps {
     
@@ -101,16 +99,17 @@ object mod {
   }
   
   @js.native
-  trait ClickOutComponentClass[P] extends ComponentClass[P, ComponentState]
+  trait ClickOutComponentClass[P]
+    extends StObject
+       with ComponentClass[P, ComponentState]
   
   type ComponentConstructor[P] = ComponentType[P]
   
-  @js.native
   trait ConfigObject extends StObject {
     
-    var excludeScrollbar: js.UndefOr[Boolean] = js.native
+    var excludeScrollbar: js.UndefOr[Boolean] = js.undefined
     
-    var handleClickOutside: js.UndefOr[MouseEventHandler[_]] = js.native
+    var handleClickOutside: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   }
   object ConfigObject {
     
@@ -130,17 +129,16 @@ object mod {
       def setExcludeScrollbarUndefined: Self = StObject.set(x, "excludeScrollbar", js.undefined)
       
       @scala.inline
-      def setHandleClickOutside(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
+      def setHandleClickOutside(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHandleClickOutsideUndefined: Self = StObject.set(x, "handleClickOutside", js.undefined)
     }
   }
   
-  @js.native
   trait HandleClickOutside[T] extends StObject {
     
-    var handleClickOutside: MouseEventHandler[T] = js.native
+    var handleClickOutside: MouseEventHandler[T]
   }
   object HandleClickOutside {
     
@@ -151,19 +149,18 @@ object mod {
     }
     
     @scala.inline
-    implicit class HandleClickOutsideMutableBuilder[Self <: HandleClickOutside[_], T] (val x: Self with HandleClickOutside[T]) extends AnyVal {
+    implicit class HandleClickOutsideMutableBuilder[Self <: HandleClickOutside[?], T] (val x: Self & HandleClickOutside[T]) extends AnyVal {
       
       @scala.inline
       def setHandleClickOutside(value: MouseEvent[T, NativeMouseEvent] => Unit): Self = StObject.set(x, "handleClickOutside", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait InjectedOnClickOutProps extends StObject {
     
-    def disableOnClickOutside(): Unit = js.native
+    def disableOnClickOutside(): Unit
     
-    def enableOnClickOutside(): Unit = js.native
+    def enableOnClickOutside(): Unit
   }
   object InjectedOnClickOutProps {
     
@@ -184,7 +181,7 @@ object mod {
     }
   }
   
-  type OnClickOutProps[P] = WithoutInjectedClickOutProps[P] with AdditionalProps
+  type OnClickOutProps[P] = WithoutInjectedClickOutProps[P] & AdditionalProps
   
   type PropsOf[T] = js.Any
   
@@ -197,7 +194,9 @@ object mod {
   ]
   
   @js.native
-  trait WrapperClass[P, C] extends Instantiable0[WrapperInstance[P, C]]
+  trait WrapperClass[P, C]
+    extends StObject
+       with Instantiable0[WrapperInstance[P, C]]
   
   @js.native
   trait WrapperInstance[P, C]

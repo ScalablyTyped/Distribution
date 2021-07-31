@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents accept encoding information used in the Accept-Encoding HTTP header on an HTTP request. */
-@js.native
 trait HttpContentCodingWithQualityHeaderValue extends StObject {
   
   /** Gets the value of the content-coding characteristic in the Accept-Encoding HTTP header. */
-  var contentCoding: String = js.native
+  var contentCoding: String
   
   /** Gets the value of the qvalue attribute in the Accept-Encoding HTTP header. */
-  var quality: Double = js.native
+  var quality: Double
 }
 object HttpContentCodingWithQualityHeaderValue {
   

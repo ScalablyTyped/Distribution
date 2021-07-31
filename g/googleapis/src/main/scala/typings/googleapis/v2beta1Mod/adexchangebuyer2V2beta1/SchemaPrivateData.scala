@@ -2,21 +2,19 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Buyers are allowed to store certain types of private data in a
   * proposal/deal.
   */
-@js.native
 trait SchemaPrivateData extends StObject {
   
   /**
     * A buyer or seller specified reference ID. This can be queried in the list
     * operations (max-length: 1024 unicode code units).
     */
-  var referenceId: js.UndefOr[String] = js.native
+  var referenceId: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivateData {
   

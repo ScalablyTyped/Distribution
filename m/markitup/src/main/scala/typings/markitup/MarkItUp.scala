@@ -3,136 +3,134 @@ package typings.markitup
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MarkItUp {
   
-  @js.native
   trait MarkupSet extends StObject {
     
     /**
       * Function to be called just after a markup insertion. If a global afterInsert callback is already defined this function is fired before.
       */
-    var afterInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
+    var afterInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.undefined
     
     /**
       * Function to be called after a multiline markup insertion.
       */
-    var afterMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
+    var afterMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.undefined
     
     /**
       * Returns true if the Alt key is pressed when the callback is fired.
       */
-    var altKey: js.UndefOr[Boolean] = js.native
+    var altKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function to be called just before a markup insertion. If a global beforeInsert callback is already defined this function is fired just after.
       */
-    var beforeInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
+    var beforeInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.undefined
     
     /**
       * Function to be called before a multiline markup insertion.
       */
-    var beforeMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.native
+    var beforeMultiInsert: js.UndefOr[js.Function1[/* h */ this.type, String]] = js.undefined
     
     /**
       * Returns the position of the selection.
       */
-    var caretPosition: js.UndefOr[Double] = js.native
+    var caretPosition: js.UndefOr[Double] = js.undefined
     
     /**
       * Classname to be applied to this very button.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Text to be added after a whole block. Accepts functions.
       */
-    var closeBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var closeBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Markup to be added after selection. Accepts functions.
       */
-    var closeWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var closeWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Returns true if the Control key is pressed when the callback is fired.
       */
-    var ctrlKey: js.UndefOr[Boolean] = js.native
+    var ctrlKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Open a dropdown menu with another button set.
       */
-    var dropMenu: js.UndefOr[js.Array[MarkupSet]] = js.native
+    var dropMenu: js.UndefOr[js.Array[MarkupSet]] = js.undefined
     
     /**
       * Keep (true) or not (false) the default behaviour of the key.
       */
-    var keepDefault: js.UndefOr[Boolean] = js.native
+    var keepDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shortcut key to be applied to the button. Ctrl+key trigger the action of a button.
       */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /**
       * If a multi-line edition is trigged (Ctrl + Shift + click). This property return the number of the line being processed.
       */
-    var line: js.UndefOr[Double] = js.native
+    var line: js.UndefOr[Double] = js.undefined
     
     /**
       * Set whether the tags has to be inserted at each line or on the whole selected block.
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Button name
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Text to be added before a whole block. Accepts functions.
       */
-    var openBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var openBlockWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Markup to be added before selection. Accepts functions.
       */
-    var openWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var openWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Placeholder text to be inserted if no text is selected by the user.
       */
-    var placeHolder: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var placeHolder: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Text to be added in place of the cursor or selection. Accepts functions.
       */
-    var replaceWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.native
+    var replaceWith: js.UndefOr[String | (js.Function1[/* h */ this.type, String])] = js.undefined
     
     /**
       * Returns the position of the scrollbar.
       */
-    var scrollPosition: js.UndefOr[Double] = js.native
+    var scrollPosition: js.UndefOr[Double] = js.undefined
     
     /**
       * Returns the selection.
       */
-    var selection: js.UndefOr[String] = js.native
+    var selection: js.UndefOr[String] = js.undefined
     
     /** Not documented on the markitup site, but present in the tests */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * Returns true if the Shift key is pressed when the callback is fired.
       */
-    var shiftKey: js.UndefOr[Boolean] = js.native
+    var shiftKey: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Returns the textarea object.
       */
-    var textarea: js.UndefOr[HTMLElement] = js.native
+    var textarea: js.UndefOr[HTMLElement] = js.undefined
   }
   object MarkupSet {
     
@@ -318,78 +316,77 @@ object MarkItUp {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Function to be called after any markup insertion.
       */
-    var afterInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.native
+    var afterInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
     
     /**
       * Function to be called before any markup insertion.
       */
-    var beforeInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.native
+    var beforeInsert: js.UndefOr[js.Function1[/* h */ MarkupSet, String]] = js.undefined
     
     /**
       * Note that most of the settings below are used by the engine for all insertion calls ($.markItUp( {} ), onEnter, onShiftEnter, onCtrlEnter, onTab) except exclusive button properties marked by
       */
-    var markupSet: js.UndefOr[js.Array[MarkupSet]] = js.native
+    var markupSet: js.UndefOr[js.Array[MarkupSet]] = js.undefined
     
     /**
       * Apply a specific className to the wrapping Div. Useful to prevent CSS conflicts between instances.
       */
-    var nameSpace: js.UndefOr[String] = js.native
+    var nameSpace: js.UndefOr[String] = js.undefined
     
     /**
       * Define what to do when Ctrl+Enter keys are pressed.
       */
-    var onCtrlEnter: js.UndefOr[MarkupSet] = js.native
+    var onCtrlEnter: js.UndefOr[MarkupSet] = js.undefined
     
     /**
       * Define what to do when Enter key is pressed.
       */
-    var onEnter: js.UndefOr[MarkupSet] = js.native
+    var onEnter: js.UndefOr[MarkupSet] = js.undefined
     
     /**
       * Define what to do when Shift+Enter keys are pressed.
       */
-    var onShiftEnter: js.UndefOr[MarkupSet] = js.native
+    var onShiftEnter: js.UndefOr[MarkupSet] = js.undefined
     
     /**
       * Define what to do when Tab key is pressed. Warning, this key is also used to jump at the end of a new inserted markup.
       */
-    var onTab: js.UndefOr[MarkupSet] = js.native
+    var onTab: js.UndefOr[MarkupSet] = js.undefined
     
     /**
       * AutoRefresh the preview iFrame or window when the editor is used.
       */
-    var previewAutoRefresh: js.UndefOr[Boolean] = js.native
+    var previewAutoRefresh: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Display the preview in a popup window with comma-separated list of specs. If empty or false, the preview will be displayed in the built-in iFrame preview.
       */
-    var previewInWindow: js.UndefOr[String] = js.native
+    var previewInWindow: js.UndefOr[String] = js.undefined
     
     /**
       * Parse the content with the javascript parser of your choice before passing it to the preview.
       *
       * default: false
       */
-    var previewParser: js.UndefOr[Boolean] = js.native
+    var previewParser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can set the path of your own parser to preview markup languages other than html. If this property is set, the built-in preview will be overridden by your own preview script.
       * Use ~/ for markItUp! root.
       */
-    var previewParserPath: js.UndefOr[String] = js.native
+    var previewParserPath: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the var posted with the editor content to the parser defined above.
       *
       * default: 'data'
       */
-    var previewParserVar: js.UndefOr[String] = js.native
+    var previewParserVar: js.UndefOr[String] = js.undefined
     
     /**
       * Position of the Built-in preview before or after the main textarea.
@@ -397,7 +394,7 @@ object MarkItUp {
       *
       * default: 'after'
       */
-    var previewPosition: js.UndefOr[String] = js.native
+    var previewPosition: js.UndefOr[String] = js.undefined
     
     /**
       * Path to the Html preview template.
@@ -405,12 +402,12 @@ object MarkItUp {
       *
       * default: '~/templates/preview.html'
       */
-    var previewTemplatePath: js.UndefOr[String] = js.native
+    var previewTemplatePath: js.UndefOr[String] = js.undefined
     
     /**
       * Enable/Disable the handle to resize the editor.
       */
-    var resizeHandle: js.UndefOr[Boolean] = js.native
+    var resizeHandle: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

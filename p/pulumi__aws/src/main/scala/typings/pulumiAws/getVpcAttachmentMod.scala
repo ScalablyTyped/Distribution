@@ -5,41 +5,39 @@ import typings.pulumiAws.inputMod.ec2transitgateway.GetVpcAttachmentFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcAttachmentMod {
   
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpcAttachment", "getVpcAttachment")
+  @JSImport("@pulumi/aws/ec2transitgateway/getVpcAttachment", JSImport.Namespace)
   @js.native
-  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpcAttachment", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpcAttachment", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] = js.native
-  @JSImport("@pulumi/aws/ec2transitgateway/getVpcAttachment", "getVpcAttachment")
-  @js.native
-  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpcAttachment(): js.Promise[GetVpcAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")().asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: Unit, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: GetVpcAttachmentArgs): js.Promise[GetVpcAttachmentResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  @scala.inline
+  def getVpcAttachment(args: GetVpcAttachmentArgs, opts: InvokeOptions): js.Promise[GetVpcAttachmentResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpcAttachment")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcAttachmentResult]]
+  
   trait GetVpcAttachmentArgs extends StObject {
     
     /**
       * One or more configuration blocks containing name-values filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcAttachmentFilter]] = js.undefined
     
     /**
       * Identifier of the EC2 Transit Gateway VPC Attachment.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Key-value tags for the EC2 Transit Gateway VPC Attachment
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcAttachmentArgs {
     
@@ -75,55 +73,54 @@ object getVpcAttachmentMod {
     }
   }
   
-  @js.native
   trait GetVpcAttachmentResult extends StObject {
     
     /**
       * Whether Appliance Mode support is enabled.
       */
-    val applianceModeSupport: String = js.native
+    val applianceModeSupport: String
     
     /**
       * Whether DNS support is enabled.
       */
-    val dnsSupport: String = js.native
+    val dnsSupport: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpcAttachmentFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2transitgateway.GetVpcAttachmentFilter]] = js.undefined
     
     /**
       * EC2 Transit Gateway VPC Attachment identifier
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Whether IPv6 support is enabled.
       */
-    val ipv6Support: String = js.native
+    val ipv6Support: String
     
     /**
       * Identifiers of EC2 Subnets.
       */
-    val subnetIds: js.Array[String] = js.native
+    val subnetIds: js.Array[String]
     
     /**
       * Key-value tags for the EC2 Transit Gateway VPC Attachment
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * EC2 Transit Gateway identifier
       */
-    val transitGatewayId: String = js.native
+    val transitGatewayId: String
     
     /**
       * Identifier of EC2 VPC.
       */
-    val vpcId: String = js.native
+    val vpcId: String
     
     /**
       * Identifier of the AWS account that owns the EC2 VPC.
       */
-    val vpcOwnerId: String = js.native
+    val vpcOwnerId: String
   }
   object GetVpcAttachmentResult {
     

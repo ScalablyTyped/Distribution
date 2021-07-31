@@ -2,29 +2,29 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignTransactionParams extends CommonParams {
+trait SignTransactionParams
+  extends StObject
+     with CommonParams {
   
-  var branchId: js.UndefOr[Double] = js.native
+  var branchId: js.UndefOr[Double] = js.undefined
   
-  var coin: String = js.native
+  var coin: String
   
-  var expiry: js.UndefOr[Double] = js.native
+  var expiry: js.UndefOr[Double] = js.undefined
   
-  var inputs: js.Array[Input] = js.native
+  var inputs: js.Array[Input]
   
-  var locktime: js.UndefOr[Double] = js.native
+  var locktime: js.UndefOr[Double] = js.undefined
   
-  var outputs: js.Array[Output] = js.native
+  var outputs: js.Array[Output]
   
-  var push: js.UndefOr[Boolean] = js.native
+  var push: js.UndefOr[Boolean] = js.undefined
   
-  var refTxs: js.UndefOr[js.Array[RefTransaction]] = js.native
+  var refTxs: js.UndefOr[js.Array[RefTransaction]] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object SignTransactionParams {
   

@@ -2,13 +2,11 @@ package typings.googleapis.v3p1beta1Mod.jobsV3p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input only.  Custom ranking information for SearchJobsRequest.
   */
-@js.native
 trait SchemaCustomRankingInfo extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaCustomRankingInfo extends StObject {
     * CustomRankingInfo.ranking_expression gets applied to job&#39;s final
     * ranking position.  An error is thrown if not specified.
     */
-  var importanceLevel: js.UndefOr[String] = js.native
+  var importanceLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  Controls over how job documents get ranked on top of existing
@@ -30,7 +28,7 @@ trait SchemaCustomRankingInfo extends StObject {
     * expression must be &lt; 100 characters in length.  Sample ranking
     * expression (year + 25) * 0.25 - (freshness / 0.5)
     */
-  var rankingExpression: js.UndefOr[String] = js.native
+  var rankingExpression: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomRankingInfo {
   

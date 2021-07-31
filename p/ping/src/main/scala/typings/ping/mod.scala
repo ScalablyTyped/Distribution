@@ -3,12 +3,15 @@ package typings.ping
 import typings.ping.pingStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object promise {
+    
+    @JSImport("ping", "promise")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Performs a system ping utility.
@@ -16,15 +19,17 @@ object mod {
       * @param addr Hostname or IP address
       * @param config Optional configuration
       */
-    @JSImport("ping", "promise.probe")
-    @js.native
-    def probe(addr: String): js.Promise[PingResponse] = js.native
-    @JSImport("ping", "promise.probe")
-    @js.native
-    def probe(addr: String, config: PingConfig): js.Promise[PingResponse] = js.native
+    @scala.inline
+    def probe(addr: String): js.Promise[PingResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PingResponse]]
+    @scala.inline
+    def probe(addr: String, config: PingConfig): js.Promise[PingResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Promise[PingResponse]]
   }
   
   object sys {
+    
+    @JSImport("ping", "sys")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Performs a system ping utility.
@@ -35,50 +40,47 @@ object mod {
       *   Second argument is any error, `null` if no error.
       * @param config Optional configuration
       */
-    @JSImport("ping", "sys.probe")
-    @js.native
-    def probe(addr: String, cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit]): Unit = js.native
-    @JSImport("ping", "sys.probe")
-    @js.native
+    @scala.inline
+    def probe(addr: String, cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def probe(
       addr: String,
       cb: js.Function2[/* isAlive */ Boolean, /* error */ js.Any, Unit],
       config: PingConfig
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(addr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
   trait PingConfig extends StObject {
     
     /**
       * Additional arguments. Default `[]`
       */
-    var extra: js.UndefOr[js.Array[String]] = js.native
+    var extra: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       *  Exit after sending number of `ECHO_REQUEST`. Default `1`
       */
-    var min_reply: js.UndefOr[Double] = js.native
+    var min_reply: js.UndefOr[Double] = js.undefined
     
     /**
       * Map IP address to hostname or not. Default `true`
       */
-    var numeric: js.UndefOr[Boolean] = js.native
+    var numeric: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Source address for sending the ping.
       */
-    var sourceAddr: js.UndefOr[String] = js.native
+    var sourceAddr: js.UndefOr[String] = js.undefined
     
     /**
       * Time duration, in seconds, for ping command to exit. Default `2` on Mac/Linux, `5` on Windows.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Ping via ipv6 or not. Default `false`
       */
-    var v6: js.UndefOr[Boolean] = js.native
+    var v6: js.UndefOr[Boolean] = js.undefined
   }
   object PingConfig {
     
@@ -132,53 +134,52 @@ object mod {
     }
   }
   
-  @js.native
   trait PingResponse extends StObject {
     
     /**
       * `true` for existing host
       */
-    var alive: Boolean = js.native
+    var alive: Boolean
     
     /**
       * Average time for collection records. `unknown` if ping fails.
       */
-    var avg: String = js.native
+    var avg: String
     
     /**
       * The input IP address or host. `unknown` if ping fails.
       */
-    var host: String = js.native
+    var host: String
     
     /**
       * Maximum time for collection records. `unknown` if ping fails.
       */
-    var max: String = js.native
+    var max: String
     
     /**
       * Minimum time for collection records. `unknown` if ping fails.
       */
-    var min: String = js.native
+    var min: String
     
     /**
       * Numeric target IP address
       */
-    var numeric_host: js.UndefOr[String] = js.native
+    var numeric_host: js.UndefOr[String] = js.undefined
     
     /**
       * Raw stdout from system ping
       */
-    var output: String = js.native
+    var output: String
     
     /**
       * Standard deviation time for collected records. `unknown` if ping fails.
       */
-    var stddev: String = js.native
+    var stddev: String
     
     /**
       * Time (float) in ms for first successful ping response. `unknown` if ping fails.
       */
-    var time: Double | unknown = js.native
+    var time: Double | unknown
   }
   object PingResponse {
     

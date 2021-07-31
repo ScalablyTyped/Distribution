@@ -35,7 +35,6 @@ import typings.videoJs.videoJsStrings.spacer_
 import typings.videoJs.videoJsStrings.timeTooltip_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Component {
@@ -44,7 +43,8 @@ object Component {
   @JSImport("video.js/dist/alt/video.core.novtt", "default.Component")
   @js.native
   class ^ protected ()
-    extends typings.videoJs.mod.videojs.Component {
+    extends StObject
+       with typings.videoJs.mod.videojs.Component {
     /**
       * Creates an instance of this class.
       *
@@ -64,17 +64,17 @@ object Component {
       */
     def this(player: typings.videoJs.mod.videojs.Player) = this()
     def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions) = this()
-    def this(
-      player: typings.videoJs.mod.videojs.Player,
-      options: js.UndefOr[scala.Nothing],
-      ready: ReadyCallback
-    ) = this()
+    def this(player: typings.videoJs.mod.videojs.Player, options: Unit, ready: ReadyCallback) = this()
     def this(player: typings.videoJs.mod.videojs.Player, options: ComponentOptions, ready: ReadyCallback) = this()
   }
   
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
+  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component")
   @js.native
-  def getComponent(name: String): TypeofComponent = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getComponent(name: String): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  
   /**
     * Get a `Component` based on the name it was registered with.
     *
@@ -88,72 +88,71 @@ object Component {
     *             check the global `videojs` object for a `Component` name and
     *             return that if it exists.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_Button(name: Button): Instantiable = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_Menu(name: Menu): InstantiableMenu = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_Spacer(name: Spacer): InstantiableSpacer = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_button(name: button_): Instantiable = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_component(name: component_): TypeofComponent = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_menu(name: menu_): InstantiableMenu = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_player(name: player_): TypeofPlayer = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_spacer(name: spacer_): InstantiableSpacer = js.native
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.getComponent")
-  @js.native
-  def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = js.native
+  @scala.inline
+  def getComponent_Button(name: Button): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  
+  @scala.inline
+  def getComponent_ClickableComponent(name: ClickableComponent): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
+  
+  @scala.inline
+  def getComponent_Component(name: typings.videoJs.videoJsStrings.Component): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  
+  @scala.inline
+  def getComponent_Menu(name: Menu): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
+  
+  @scala.inline
+  def getComponent_MenuButton(name: MenuButton): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
+  
+  @scala.inline
+  def getComponent_MenuItem(name: MenuItem): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
+  
+  @scala.inline
+  def getComponent_ModalDialog(name: ModalDialog): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
+  
+  @scala.inline
+  def getComponent_MouseTimeDisplay(name: MouseTimeDisplay): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
+  
+  @scala.inline
+  def getComponent_Player(name: typings.videoJs.videoJsStrings.Player): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
+  
+  @scala.inline
+  def getComponent_Spacer(name: Spacer): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
+  
+  @scala.inline
+  def getComponent_TimeTooltip(name: TimeTooltip): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
+  
+  @scala.inline
+  def getComponent_button(name: button_): Instantiable = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[Instantiable]
+  
+  @scala.inline
+  def getComponent_clickablecomponent(name: clickablecomponent_): InstantiableClickableComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableClickableComponent]
+  
+  @scala.inline
+  def getComponent_component(name: component_): TypeofComponent = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofComponent]
+  
+  @scala.inline
+  def getComponent_menu(name: menu_): InstantiableMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenu]
+  
+  @scala.inline
+  def getComponent_menubutton(name: menubutton_): InstantiableMenuButton = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuButton]
+  
+  @scala.inline
+  def getComponent_menuitem(name: menuitem_): InstantiableMenuItem = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMenuItem]
+  
+  @scala.inline
+  def getComponent_modaldialog(name: modaldialog_): InstantiableModalDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableModalDialog]
+  
+  @scala.inline
+  def getComponent_mouseTimeDisplay(name: mouseTimeDisplay_): InstantiableMouseTimeDisplay = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableMouseTimeDisplay]
+  
+  @scala.inline
+  def getComponent_player(name: player_): TypeofPlayer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[TypeofPlayer]
+  
+  @scala.inline
+  def getComponent_spacer(name: spacer_): InstantiableSpacer = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableSpacer]
+  
+  @scala.inline
+  def getComponent_timeTooltip(name: timeTooltip_): InstantiableTimeToolTip = ^.asInstanceOf[js.Dynamic].applyDynamic("getComponent")(name.asInstanceOf[js.Any]).asInstanceOf[InstantiableTimeToolTip]
   
   /**
     * Register a `Component` with `videojs` given the name and the component.
@@ -173,7 +172,6 @@ object Component {
     *
     * @return The `Component` that was registered.
     */
-  @JSImport("video.js/dist/alt/video.core.novtt", "default.Component.registerComponent")
-  @js.native
-  def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = js.native
+  @scala.inline
+  def registerComponent(name: String, ComponentToRegister: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("registerComponent")(name.asInstanceOf[js.Any], ComponentToRegister.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

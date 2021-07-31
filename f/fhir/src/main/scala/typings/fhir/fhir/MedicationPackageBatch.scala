@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies a single production run
   */
-@js.native
-trait MedicationPackageBatch extends BackboneElement {
+trait MedicationPackageBatch
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'expirationDate'.
     */
-  var _expirationDate: js.UndefOr[Element] = js.native
+  var _expirationDate: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'lotNumber'.
     */
-  var _lotNumber: js.UndefOr[Element] = js.native
+  var _lotNumber: js.UndefOr[Element] = js.undefined
   
   /**
     * When batch will expire
     */
-  var expirationDate: js.UndefOr[dateTime] = js.native
+  var expirationDate: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Identifier assigned to batch
     */
-  var lotNumber: js.UndefOr[String] = js.native
+  var lotNumber: js.UndefOr[String] = js.undefined
 }
 object MedicationPackageBatch {
   

@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imagePickerMod {
@@ -49,13 +48,13 @@ object imagePickerMod {
     def removeImage(index: Double): Unit = js.native
   }
   
-  @js.native
   trait ImagePickerPropTypes
-    extends typings.antdMobile.imagePickerPropsTypeMod.ImagePickerPropTypes {
+    extends StObject
+       with typings.antdMobile.imagePickerPropsTypeMod.ImagePickerPropTypes {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object ImagePickerPropTypes {
     

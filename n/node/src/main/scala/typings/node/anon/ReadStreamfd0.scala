@@ -29,7 +29,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.process.<global>.NodeJS.ReadStream & {  fd :0} */
@@ -192,13 +191,13 @@ trait ReadStreamfd0 extends StObject {
   def end(cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any): Unit = js.native
   def end(chunk: js.Any, cb: js.Function0[Unit]): Unit = js.native
-  def end(chunk: js.Any, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+  def end(chunk: js.Any, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding): Unit = js.native
   def end(chunk: js.Any, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+  def end(str: String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   def end(str: String, encoding: BufferEncoding): Unit = js.native
   def end(str: String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
-  def end(str: Uint8Array, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+  def end(str: Uint8Array, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
   def end(str: Uint8Array, encoding: BufferEncoding): Unit = js.native
   def end(str: Uint8Array, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
   
@@ -472,9 +471,9 @@ trait ReadStreamfd0 extends StObject {
   def setEncoding(encoding: BufferEncoding): this.type = js.native
   
   def setKeepAlive(): this.type = js.native
-  def setKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): this.type = js.native
   def setKeepAlive(enable: Boolean): this.type = js.native
   def setKeepAlive(enable: Boolean, initialDelay: Double): this.type = js.native
+  def setKeepAlive(enable: Unit, initialDelay: Double): this.type = js.native
   
   def setMaxListeners(n: Double): this.type = js.native
   
@@ -523,25 +522,17 @@ trait ReadStreamfd0 extends StObject {
   def write(buffer: Uint8Array, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(chunk: js.Any): Boolean = js.native
   def write(chunk: js.Any, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(
-    chunk: js.Any,
-    encoding: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): Boolean = js.native
+  def write(chunk: js.Any, encoding: Unit, cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(chunk: js.Any, encoding: BufferEncoding): Boolean = js.native
   def write(
     chunk: js.Any,
     encoding: BufferEncoding,
     cb: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
   ): Boolean = js.native
-  def write(str: String, encoding: js.UndefOr[scala.Nothing], cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
+  def write(str: String, encoding: Unit, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
   def write(str: String, encoding: BufferEncoding): Boolean = js.native
   def write(str: String, encoding: BufferEncoding, cb: js.Function1[js.UndefOr[Error | Null], Unit]): Boolean = js.native
-  def write(
-    str: Uint8Array,
-    encoding: js.UndefOr[scala.Nothing],
-    cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-  ): Boolean = js.native
+  def write(str: Uint8Array, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
   def write(str: Uint8Array, encoding: BufferEncoding): Boolean = js.native
   def write(str: Uint8Array, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
 }

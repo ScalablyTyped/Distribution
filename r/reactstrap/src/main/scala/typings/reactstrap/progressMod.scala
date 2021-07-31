@@ -7,7 +7,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressMod {
@@ -19,34 +18,34 @@ object progressMod {
   
   type Progress = Component[ProgressProps, js.Object, js.Any]
   
-  @js.native
   trait ProgressProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var bar: js.UndefOr[Boolean] = js.native
+    var bar: js.UndefOr[Boolean] = js.undefined
     
-    var barAriaLabelledBy: js.UndefOr[String] = js.native
+    var barAriaLabelledBy: js.UndefOr[String] = js.undefined
     
-    var barAriaValueText: js.UndefOr[String] = js.native
+    var barAriaValueText: js.UndefOr[String] = js.undefined
     
-    var barClassName: js.UndefOr[String] = js.native
+    var barClassName: js.UndefOr[String] = js.undefined
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var max: js.UndefOr[String | Double] = js.native
+    var max: js.UndefOr[String | Double] = js.undefined
     
-    var min: js.UndefOr[String | Double] = js.native
+    var min: js.UndefOr[String | Double] = js.undefined
     
-    var multi: js.UndefOr[Boolean] = js.native
+    var multi: js.UndefOr[Boolean] = js.undefined
     
-    var striped: js.UndefOr[Boolean] = js.native
+    var striped: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String | Double] = js.native
+    var value: js.UndefOr[String | Double] = js.undefined
   }
   object ProgressProps {
     

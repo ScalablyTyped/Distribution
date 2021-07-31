@@ -2,51 +2,49 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedElasticsearchInstanceOffering extends StObject {
   
   /**
     * The currency code for the reserved Elasticsearch instance offering.
     */
-  var CurrencyCode: js.UndefOr[String] = js.native
+  var CurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The duration, in seconds, for which the offering will reserve the Elasticsearch instance.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Elasticsearch instance type offered by the reserved instance offering.
     */
-  var ElasticsearchInstanceType: js.UndefOr[ESPartitionInstanceType] = js.native
+  var ElasticsearchInstanceType: js.UndefOr[ESPartitionInstanceType] = js.undefined
   
   /**
     * The upfront fixed charge you will pay to purchase the specific reserved Elasticsearch instance offering. 
     */
-  var FixedPrice: js.UndefOr[Double] = js.native
+  var FixedPrice: js.UndefOr[Double] = js.undefined
   
   /**
     * Payment option for the reserved Elasticsearch instance offering
     */
-  var PaymentOption: js.UndefOr[ReservedElasticsearchInstancePaymentOption] = js.native
+  var PaymentOption: js.UndefOr[ReservedElasticsearchInstancePaymentOption] = js.undefined
   
   /**
     * The charge to your account regardless of whether you are creating any domains using the instance offering.
     */
-  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.native
+  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.undefined
   
   /**
     * The Elasticsearch reserved instance offering identifier.
     */
-  var ReservedElasticsearchInstanceOfferingId: js.UndefOr[GUID] = js.native
+  var ReservedElasticsearchInstanceOfferingId: js.UndefOr[GUID] = js.undefined
   
   /**
     * The rate you are charged for each hour the domain that is using the offering is running.
     */
-  var UsagePrice: js.UndefOr[Double] = js.native
+  var UsagePrice: js.UndefOr[Double] = js.undefined
 }
 object ReservedElasticsearchInstanceOffering {
   

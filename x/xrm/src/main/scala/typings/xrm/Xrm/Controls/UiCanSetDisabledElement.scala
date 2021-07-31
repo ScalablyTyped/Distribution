@@ -2,20 +2,18 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for UI elements which can have the disabled value updated.
   */
-@js.native
 trait UiCanSetDisabledElement extends StObject {
   
   /**
     * Sets the state of the control to either enabled, or disabled.
     * @param disabled true to disable, false to enable.
     */
-  def setDisabled(disabled: Boolean): Unit = js.native
+  def setDisabled(disabled: Boolean): Unit
 }
 object UiCanSetDisabledElement {
   

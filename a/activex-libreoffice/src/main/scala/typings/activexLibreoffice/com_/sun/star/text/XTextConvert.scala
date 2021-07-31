@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.sequence
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows converting selections of text to frames or tables. */
-@js.native
-trait XTextConvert extends XInterface {
+trait XTextConvert
+  extends StObject
+     with XInterface {
   
   /**
     * converts the paragraphs marked in TableRanges into a table.
@@ -27,7 +27,7 @@ trait XTextConvert extends XInterface {
     CellProperties: SeqEquiv[SeqEquiv[PropertyValues]],
     RowProperties: SeqEquiv[PropertyValues],
     TableProperties: PropertyValues
-  ): XTextTable = js.native
+  ): XTextTable
   
   /**
     * moves the paragraphs from Start to End into a text frame.
@@ -36,7 +36,7 @@ trait XTextConvert extends XInterface {
     * @param FrameProperties contains the properties of the to-be-created text frame
     * @returns the newly created text frame
     */
-  def convertToTextFrame(Start: XTextRange, End: XTextRange, FrameProperties: PropertyValues): XTextContent = js.native
+  def convertToTextFrame(Start: XTextRange, End: XTextRange, FrameProperties: PropertyValues): XTextContent
 }
 object XTextConvert {
   

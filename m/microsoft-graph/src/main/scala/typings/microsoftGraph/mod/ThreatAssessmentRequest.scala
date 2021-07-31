@@ -2,41 +2,41 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThreatAssessmentRequest extends Entity {
+trait ThreatAssessmentRequest
+  extends StObject
+     with Entity {
   
   // The threat category. Possible values are: spam, phishing, malware.
-  var category: js.UndefOr[ThreatCategory] = js.native
+  var category: js.UndefOr[ThreatCategory] = js.undefined
   
   // The content type of threat assessment. Possible values are: mail, url, file.
-  var contentType: js.UndefOr[NullableOption[ThreatAssessmentContentType]] = js.native
+  var contentType: js.UndefOr[NullableOption[ThreatAssessmentContentType]] = js.undefined
   
   // The threat assessment request creator.
-  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var createdBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
     */
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The expected assessment from submitter. Possible values are: block, unblock.
-  var expectedAssessment: js.UndefOr[ThreatExpectedAssessment] = js.native
+  var expectedAssessment: js.UndefOr[ThreatExpectedAssessment] = js.undefined
   
   // The source of the threat assessment request. Possible values are: user, administrator.
-  var requestSource: js.UndefOr[NullableOption[ThreatAssessmentRequestSource]] = js.native
+  var requestSource: js.UndefOr[NullableOption[ThreatAssessmentRequestSource]] = js.undefined
   
   /**
     * A collection of threat assessment results. Read-only. By default, a GET /threatAssessmentRequests/{id} does not return
     * this property unless you apply $expand on it.
     */
-  var results: js.UndefOr[NullableOption[js.Array[ThreatAssessmentResult]]] = js.native
+  var results: js.UndefOr[NullableOption[js.Array[ThreatAssessmentResult]]] = js.undefined
   
   // The assessment process status. Possible values are: pending, completed.
-  var status: js.UndefOr[NullableOption[ThreatAssessmentStatus]] = js.native
+  var status: js.UndefOr[NullableOption[ThreatAssessmentStatus]] = js.undefined
 }
 object ThreatAssessmentRequest {
   

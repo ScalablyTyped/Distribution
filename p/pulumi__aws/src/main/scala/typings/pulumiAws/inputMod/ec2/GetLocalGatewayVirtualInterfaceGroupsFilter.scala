@@ -2,21 +2,19 @@ package typings.pulumiAws.inputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLocalGatewayVirtualInterfaceGroupsFilter extends StObject {
   
   /**
     * Name of the filter.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * List of one or more values for the filter.
     */
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetLocalGatewayVirtualInterfaceGroupsFilter {
   

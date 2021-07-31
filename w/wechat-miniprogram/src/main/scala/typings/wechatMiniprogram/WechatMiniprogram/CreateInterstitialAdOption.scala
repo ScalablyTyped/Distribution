@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInterstitialAdOption extends StObject {
   
   /** 广告单元 id */
-  var adUnitId: String = js.native
+  var adUnitId: String
 }
 object CreateInterstitialAdOption {
   

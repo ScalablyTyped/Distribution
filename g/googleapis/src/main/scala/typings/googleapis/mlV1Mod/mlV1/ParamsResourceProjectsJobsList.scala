@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsJobsList extends StandardParameters {
+trait ParamsResourceProjectsJobsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional. Specifies the subset of jobs to retrieve. You can filter on the
@@ -27,7 +27,7 @@ trait ParamsResourceProjectsJobsList extends StandardParameters {
     * see the guide to <a
     * href="/ml-engine/docs/tensorflow/monitor-training">monitoring jobs</a>.
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The number of jobs to retrieve per "page" of results. If there
@@ -35,19 +35,19 @@ trait ParamsResourceProjectsJobsList extends StandardParameters {
     * contain a valid value in the `next_page_token` field.  The default value
     * is 20, and the maximum page size is 100.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. A page token to request the next page of results.  You get the
     * token from the `next_page_token` field of the response from the previous
     * call.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the project for which to list jobs.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsJobsList {
   

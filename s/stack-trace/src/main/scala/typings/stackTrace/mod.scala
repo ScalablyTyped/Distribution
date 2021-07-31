@@ -3,38 +3,37 @@ package typings.stackTrace
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("stack-trace", "get")
+  @JSImport("stack-trace", JSImport.Namespace)
   @js.native
-  def get(): js.Array[StackFrame] = js.native
-  @JSImport("stack-trace", "get")
-  @js.native
-  def get(belowFn: js.Function0[Unit]): js.Array[StackFrame] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("stack-trace", "parse")
-  @js.native
-  def parse(err: Error): js.Array[StackFrame] = js.native
+  @scala.inline
+  def get(): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Array[StackFrame]]
+  @scala.inline
+  def get(belowFn: js.Function0[Unit]): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(belowFn.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
   
-  @js.native
+  @scala.inline
+  def parse(err: Error): js.Array[StackFrame] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(err.asInstanceOf[js.Any]).asInstanceOf[js.Array[StackFrame]]
+  
   trait StackFrame extends StObject {
     
-    def getColumnNumber(): Double = js.native
+    def getColumnNumber(): Double
     
-    def getFileName(): String = js.native
+    def getFileName(): String
     
-    def getFunctionName(): String = js.native
+    def getFunctionName(): String
     
-    def getLineNumber(): Double = js.native
+    def getLineNumber(): Double
     
-    def getMethodName(): String = js.native
+    def getMethodName(): String
     
-    def getTypeName(): String = js.native
+    def getTypeName(): String
     
-    def isNative(): Boolean = js.native
+    def isNative(): Boolean
   }
   object StackFrame {
     

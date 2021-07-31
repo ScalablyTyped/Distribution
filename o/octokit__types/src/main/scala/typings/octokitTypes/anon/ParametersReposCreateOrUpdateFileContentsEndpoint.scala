@@ -7,19 +7,17 @@ import typings.octokitTypes.endpointsMod.ReposCreateOrUpdateFileContentsResponse
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposCreateOrUpdateFileContentsEndpoint extends StObject {
   
-  var parameters: ReposCreateOrUpdateFileContentsEndpoint = js.native
+  var parameters: ReposCreateOrUpdateFileContentsEndpoint
   
-  var request: ReposCreateOrUpdateFileContentsRequestOptions = js.native
+  var request: ReposCreateOrUpdateFileContentsRequestOptions
   
   var response: OctokitResponse[
     ReposCreateOrUpdateFileContentsResponseData | ReposCreateOrUpdateFileContentsResponse201Data
-  ] = js.native
+  ]
 }
 object ParametersReposCreateOrUpdateFileContentsEndpoint {
   

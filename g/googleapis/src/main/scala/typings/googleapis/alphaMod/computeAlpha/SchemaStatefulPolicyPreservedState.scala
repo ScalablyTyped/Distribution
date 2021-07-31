@@ -3,20 +3,18 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration of preserved resources.
   */
-@js.native
 trait SchemaStatefulPolicyPreservedState extends StObject {
   
   /**
     * Disks created on the instances that will be preserved on instance delete,
     * resize down, etc. This map is keyed with the device names of the disks.
     */
-  var disks: js.UndefOr[StringDictionary[SchemaStatefulPolicyPreservedStateDiskDevice]] = js.native
+  var disks: js.UndefOr[StringDictionary[SchemaStatefulPolicyPreservedStateDiskDevice]] = js.undefined
 }
 object SchemaStatefulPolicyPreservedState {
   

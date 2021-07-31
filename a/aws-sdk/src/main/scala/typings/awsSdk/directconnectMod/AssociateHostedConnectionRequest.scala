@@ -2,21 +2,19 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateHostedConnectionRequest extends StObject {
   
   /**
     * The ID of the hosted connection.
     */
-  var connectionId: ConnectionId = js.native
+  var connectionId: ConnectionId
   
   /**
     * The ID of the interconnect or the LAG.
     */
-  var parentConnectionId: ConnectionId = js.native
+  var parentConnectionId: ConnectionId
 }
 object AssociateHostedConnectionRequest {
   

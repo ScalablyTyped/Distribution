@@ -50,10 +50,13 @@ import typings.std.ReadonlySet
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libMod {
+  
+  @JSImport("@ionic/cli-framework/lib", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/cli-framework/lib", "AbstractExecutor")
   @js.native
@@ -228,9 +231,12 @@ object libMod {
   /* static members */
   object Logger_ {
     
-    @JSImport("@ionic/cli-framework/lib", "Logger.cloneHandlers")
+    @JSImport("@ionic/cli-framework/lib", "Logger")
     @js.native
-    def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def cloneHandlers(handlers: ReadonlySet[LoggerHandler]): Set[LoggerHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneHandlers")(handlers.asInstanceOf[js.Any]).asInstanceOf[Set[LoggerHandler]]
   }
   
   @JSImport("@ionic/cli-framework/lib", "NO_COLORS")
@@ -272,19 +278,19 @@ object libMod {
   
   object OptionFilters {
     
-    @JSImport("@ionic/cli-framework/lib", "OptionFilters.excludesGroups")
+    @JSImport("@ionic/cli-framework/lib", "OptionFilters")
     @js.native
-    def excludesGroups[O /* <: CommandMetadataOption */](groups: String): OptionPredicate[O] = js.native
-    @JSImport("@ionic/cli-framework/lib", "OptionFilters.excludesGroups")
-    @js.native
-    def excludesGroups[O /* <: CommandMetadataOption */](groups: js.Array[String]): OptionPredicate[O] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/cli-framework/lib", "OptionFilters.includesGroups")
-    @js.native
-    def includesGroups[O /* <: CommandMetadataOption */](groups: String): OptionPredicate[O] = js.native
-    @JSImport("@ionic/cli-framework/lib", "OptionFilters.includesGroups")
-    @js.native
-    def includesGroups[O /* <: CommandMetadataOption */](groups: js.Array[String]): OptionPredicate[O] = js.native
+    @scala.inline
+    def excludesGroups[O /* <: CommandMetadataOption */](groups: String): OptionPredicate[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("excludesGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[OptionPredicate[O]]
+    @scala.inline
+    def excludesGroups[O /* <: CommandMetadataOption */](groups: js.Array[String]): OptionPredicate[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("excludesGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[OptionPredicate[O]]
+    
+    @scala.inline
+    def includesGroups[O /* <: CommandMetadataOption */](groups: String): OptionPredicate[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("includesGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[OptionPredicate[O]]
+    @scala.inline
+    def includesGroups[O /* <: CommandMetadataOption */](groups: js.Array[String]): OptionPredicate[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("includesGroups")(groups.asInstanceOf[js.Any]).asInstanceOf[OptionPredicate[O]]
   }
   
   @JSImport("@ionic/cli-framework/lib", "Spinner")
@@ -329,172 +335,130 @@ object libMod {
     def this(hasNamespace: CompletionFormatterDeps[C, N, M, I, O]) = this()
   }
   
-  @JSImport("@ionic/cli-framework/lib", "combine")
-  @js.native
-  def combine(validators: Validator*): Validator = js.native
+  @scala.inline
+  def combine(validators: Validator*): Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("combine")(validators.asInstanceOf[js.Any]).asInstanceOf[Validator]
   
-  @JSImport("@ionic/cli-framework/lib", "contains")
-  @js.native
-  def contains(values: js.Array[js.UndefOr[String]], hasCaseSensitive: CaseSensitive): Validator = js.native
+  @scala.inline
+  def contains(values: js.Array[js.UndefOr[String]], hasCaseSensitive: CaseSensitive): Validator = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(values.asInstanceOf[js.Any], hasCaseSensitive.asInstanceOf[js.Any])).asInstanceOf[Validator]
   
-  @JSImport("@ionic/cli-framework/lib", "createCommandMetadataFromSchema")
-  @js.native
-  def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = js.native
+  @scala.inline
+  def createCommandMetadataFromSchema(schema: CommandHelpSchema): RequiredCommandMetadataCo = ^.asInstanceOf[js.Dynamic].applyDynamic("createCommandMetadataFromSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[RequiredCommandMetadataCo]
   
-  @JSImport("@ionic/cli-framework/lib", "createPrefixedFormatter")
-  @js.native
-  def createPrefixedFormatter(prefix: String): LoggerFormatter = js.native
-  @JSImport("@ionic/cli-framework/lib", "createPrefixedFormatter")
-  @js.native
-  def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = js.native
+  @scala.inline
+  def createPrefixedFormatter(prefix: String): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
+  @scala.inline
+  def createPrefixedFormatter(prefix: js.Function0[String]): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixedFormatter")(prefix.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @JSImport("@ionic/cli-framework/lib", "createTaggedFormatter")
-  @js.native
-  def createTaggedFormatter(): LoggerFormatter = js.native
-  @JSImport("@ionic/cli-framework/lib", "createTaggedFormatter")
-  @js.native
-  def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = js.native
+  @scala.inline
+  def createTaggedFormatter(): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")().asInstanceOf[LoggerFormatter]
+  @scala.inline
+  def createTaggedFormatter(hasColorsPrefixTitleizeWrap: CreateTaggedFormatterOptions): LoggerFormatter = ^.asInstanceOf[js.Dynamic].applyDynamic("createTaggedFormatter")(hasColorsPrefixTitleizeWrap.asInstanceOf[js.Any]).asInstanceOf[LoggerFormatter]
   
-  @JSImport("@ionic/cli-framework/lib", "execute")
-  @js.native
-  def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) with (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = js.native
+  @scala.inline
+  def execute[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](hasNamespaceArgvEnvRest: (Argv[N, C, M, I, O]) & (Partial[BaseExecutorDeps[C, N, M, I, O]])): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("execute")(hasNamespaceArgvEnvRest.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@ionic/cli-framework/lib", "filterCommandLineOptions")
-  @js.native
-  def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions): CommandLineOptions = js.native
-  @JSImport("@ionic/cli-framework/lib", "filterCommandLineOptions")
-  @js.native
-  def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, predicate: OptionPredicate[O]): CommandLineOptions = js.native
+  @scala.inline
+  def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptions")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
+  @scala.inline
+  def filterCommandLineOptions[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, predicate: OptionPredicate[O]): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptions")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
   
-  @JSImport("@ionic/cli-framework/lib", "filterCommandLineOptionsByGroup")
-  @js.native
-  def filterCommandLineOptionsByGroup[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, groups: String): CommandLineOptions = js.native
-  @JSImport("@ionic/cli-framework/lib", "filterCommandLineOptionsByGroup")
-  @js.native
-  def filterCommandLineOptionsByGroup[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, groups: js.Array[String]): CommandLineOptions = js.native
+  @scala.inline
+  def filterCommandLineOptionsByGroup[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, groups: String): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptionsByGroup")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
+  @scala.inline
+  def filterCommandLineOptionsByGroup[O /* <: CommandMetadataOption */](options: js.Array[O], parsedArgs: CommandLineOptions, groups: js.Array[String]): CommandLineOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("filterCommandLineOptionsByGroup")(options.asInstanceOf[js.Any], parsedArgs.asInstanceOf[js.Any], groups.asInstanceOf[js.Any])).asInstanceOf[CommandLineOptions]
   
-  @JSImport("@ionic/cli-framework/lib", "formatOptionName")
-  @js.native
-  def formatOptionName[O /* <: CommandMetadataOption */](opt: O): String = js.native
-  @JSImport("@ionic/cli-framework/lib", "formatOptionName")
-  @js.native
-  def formatOptionName[O /* <: CommandMetadataOption */](opt: O, hasShowAliasesShowValueSpecColors: FormatOptionNameOptions): String = js.native
+  @scala.inline
+  def formatOptionName[O /* <: CommandMetadataOption */](opt: O): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatOptionName[O /* <: CommandMetadataOption */](opt: O, hasShowAliasesShowValueSpecColors: FormatOptionNameOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatOptionName")(opt.asInstanceOf[js.Any], hasShowAliasesShowValueSpecColors.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/cli-framework/lib", "generateCommandPath")
-  @js.native
-  def generateCommandPath[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: C): js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]] = js.native
+  @scala.inline
+  def generateCommandPath[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: C): js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCommandPath")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[CommandPathItem[C, N, M, I, O]]]]
   
-  @JSImport("@ionic/cli-framework/lib", "getCompletionWords")
-  @js.native
-  def getCompletionWords[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](ns: N, argv: js.Array[String]): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def getCompletionWords[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](ns: N, argv: js.Array[String]): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompletionWords")(ns.asInstanceOf[js.Any], argv.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  @JSImport("@ionic/cli-framework/lib", "getLoggerLevelColor")
-  @js.native
-  def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = js.native
-  @JSImport("@ionic/cli-framework/lib", "getLoggerLevelColor")
-  @js.native
-  def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = js.native
+  @scala.inline
+  def getLoggerLevelColor(colors: Colors): js.UndefOr[ColorFunction] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ColorFunction]]
+  @scala.inline
+  def getLoggerLevelColor(colors: Colors, level: LoggerLevelWeight): js.UndefOr[ColorFunction] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelColor")(colors.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ColorFunction]]
   
-  @JSImport("@ionic/cli-framework/lib", "getLoggerLevelName")
-  @js.native
-  def getLoggerLevelName(): js.UndefOr[LoggerLevel] = js.native
-  @JSImport("@ionic/cli-framework/lib", "getLoggerLevelName")
-  @js.native
-  def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = js.native
+  @scala.inline
+  def getLoggerLevelName(): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")().asInstanceOf[js.UndefOr[LoggerLevel]]
+  @scala.inline
+  def getLoggerLevelName(level: LoggerLevelWeight): js.UndefOr[LoggerLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoggerLevelName")(level.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[LoggerLevel]]
   
-  @JSImport("@ionic/cli-framework/lib", "hydrateCommandMetadataOption")
-  @js.native
-  def hydrateCommandMetadataOption[O /* <: CommandMetadataOption */](option: O): HydratedCommandMetadataOption[O] = js.native
+  @scala.inline
+  def hydrateCommandMetadataOption[O /* <: CommandMetadataOption */](option: O): HydratedCommandMetadataOption[O] = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateCommandMetadataOption")(option.asInstanceOf[js.Any]).asInstanceOf[HydratedCommandMetadataOption[O]]
   
-  @JSImport("@ionic/cli-framework/lib", "hydrateOptionSpec")
-  @js.native
-  def hydrateOptionSpec[O /* <: CommandMetadataOption */](opt: O): HydratedOptionSpec = js.native
+  @scala.inline
+  def hydrateOptionSpec[O /* <: CommandMetadataOption */](opt: O): HydratedOptionSpec = ^.asInstanceOf[js.Dynamic].applyDynamic("hydrateOptionSpec")(opt.asInstanceOf[js.Any]).asInstanceOf[HydratedOptionSpec]
   
-  @JSImport("@ionic/cli-framework/lib", "isCommandVisible")
-  @js.native
-  def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isCommandVisible[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */](cmd: HydratedCommandMetadata[C, N, M, I, O]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommandVisible")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@ionic/cli-framework/lib", "isOptionVisible")
-  @js.native
-  def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = js.native
+  @scala.inline
+  def isOptionVisible[O /* <: CommandMetadataOption */](opt: O): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOptionVisible")(opt.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   @JSImport("@ionic/cli-framework/lib", "logger")
   @js.native
   val logger: Logger = js.native
   
-  @JSImport("@ionic/cli-framework/lib", "metadataOptionsToParseArgsOptions")
-  @js.native
-  def metadataOptionsToParseArgsOptions(commandOptions: js.Array[CommandMetadataOption]): HydratedParseArgsOptions = js.native
+  @scala.inline
+  def metadataOptionsToParseArgsOptions(commandOptions: js.Array[CommandMetadataOption]): HydratedParseArgsOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("metadataOptionsToParseArgsOptions")(commandOptions.asInstanceOf[js.Any]).asInstanceOf[HydratedParseArgsOptions]
   
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs(): ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs(args: js.UndefOr[scala.Nothing], opts: Opts): ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs(args: js.Array[String]): ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs(args: js.Array[String], opts: Opts): ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_Intersection[T](): T with ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_Intersection[T](args: js.UndefOr[scala.Nothing], opts: Opts): T with ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_Intersection[T](args: js.Array[String]): T with ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_Intersection[T](args: js.Array[String], opts: Opts): T with ParsedArgs = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](): T = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: js.UndefOr[scala.Nothing], opts: Opts): T = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: js.Array[String]): T = js.native
-  @JSImport("@ionic/cli-framework/lib", "parseArgs")
-  @js.native
-  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: js.Array[String], opts: Opts): T = js.native
+  @scala.inline
+  def parseArgs(): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")().asInstanceOf[ParsedArgs]
+  @scala.inline
+  def parseArgs(args: js.Array[String]): ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any]).asInstanceOf[ParsedArgs]
+  @scala.inline
+  def parseArgs(args: js.Array[String], opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
+  @scala.inline
+  def parseArgs(args: Unit, opts: Opts): ParsedArgs = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ParsedArgs]
   
-  @JSImport("@ionic/cli-framework/lib", "separateArgv")
-  @js.native
-  def separateArgv(pargv: js.Array[String]): js.Tuple2[js.Array[String], js.Array[String]] = js.native
+  @scala.inline
+  def parseArgs_T_Intersection[T](): T & ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")().asInstanceOf[T & ParsedArgs]
+  @scala.inline
+  def parseArgs_T_Intersection[T](args: js.Array[String]): T & ParsedArgs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any]).asInstanceOf[T & ParsedArgs]
+  @scala.inline
+  def parseArgs_T_Intersection[T](args: js.Array[String], opts: Opts): T & ParsedArgs = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T & ParsedArgs]
+  @scala.inline
+  def parseArgs_T_Intersection[T](args: Unit, opts: Opts): T & ParsedArgs = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T & ParsedArgs]
   
-  @JSImport("@ionic/cli-framework/lib", "stripOptions")
-  @js.native
-  def stripOptions(pargv: js.Array[String], hasIncludeSeparated: IncludeSeparated): js.Array[String] = js.native
+  @scala.inline
+  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")().asInstanceOf[T]
+  @scala.inline
+  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: js.Array[String]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: js.Array[String], opts: Opts): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def parseArgs_T_ParsedArgs_T[T /* <: ParsedArgs */](args: Unit, opts: Opts): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parseArgs")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@ionic/cli-framework/lib", "unparseArgs")
-  @js.native
-  def unparseArgs(parsedArgs: ParsedArgs): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/lib", "unparseArgs")
-  @js.native
+  @scala.inline
+  def separateArgv(pargv: js.Array[String]): js.Tuple2[js.Array[String], js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("separateArgv")(pargv.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[js.Array[String], js.Array[String]]]
+  
+  @scala.inline
+  def stripOptions(pargv: js.Array[String], hasIncludeSeparated: IncludeSeparated): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("stripOptions")(pargv.asInstanceOf[js.Any], hasIncludeSeparated.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
+  @scala.inline
+  def unparseArgs(parsedArgs: ParsedArgs): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
   def unparseArgs(
     parsedArgs: ParsedArgs,
-    hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: js.UndefOr[scala.Nothing],
+    hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: Unit,
     parseArgsOptions: Opts
-  ): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/lib", "unparseArgs")
-  @js.native
-  def unparseArgs(parsedArgs: ParsedArgs, hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions): js.Array[String] = js.native
-  @JSImport("@ionic/cli-framework/lib", "unparseArgs")
-  @js.native
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def unparseArgs(parsedArgs: ParsedArgs, hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
   def unparseArgs(
     parsedArgs: ParsedArgs,
     hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase: UnparseArgsOptions,
     parseArgsOptions: Opts
-  ): js.Array[String] = js.native
+  ): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("unparseArgs")(parsedArgs.asInstanceOf[js.Any], hasUseDoubleQuotesUseEqualsIgnoreFalseAllowCamelCase.asInstanceOf[js.Any], parseArgsOptions.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("@ionic/cli-framework/lib", "validate")
-  @js.native
-  def validate(input: String, key: String, validatorsToUse: js.Array[Validator]): Unit = js.native
+  @scala.inline
+  def validate(input: String, key: String, validatorsToUse: js.Array[Validator]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(input.asInstanceOf[js.Any], key.asInstanceOf[js.Any], validatorsToUse.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@ionic/cli-framework/lib", "validators")
   @js.native

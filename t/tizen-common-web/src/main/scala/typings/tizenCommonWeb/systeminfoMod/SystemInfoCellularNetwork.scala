@@ -7,21 +7,21 @@ import typings.tizenCommonWeb.tizenCommonWebStrings.NONE
 import typings.tizenCommonWeb.tizenCommonWebStrings.STATIC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoCellularNetwork extends SystemInfoProperty {
+trait SystemInfoCellularNetwork
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents an Access Point Name of the cellular network.
     */
-  val apn: String = js.native
+  val apn: String
   
   /**
     * Represents Cell ID.
     */
-  val cellId: Double = js.native
+  val cellId: Double
   
   /**
     * Represents the DNS address of this connection.
@@ -30,7 +30,7 @@ trait SystemInfoCellularNetwork extends SystemInfoProperty {
     *
     * @since 2.4
     */
-  val dns: String = js.native
+  val dns: String
   
   /**
     * Represents the gateway of this connection.
@@ -39,7 +39,7 @@ trait SystemInfoCellularNetwork extends SystemInfoProperty {
     *
     * @since 2.4
     */
-  val gateway: String = js.native
+  val gateway: String
   
   /**
     * Represents the International Mobile Equipment Identity (IMEI).
@@ -52,59 +52,59 @@ trait SystemInfoCellularNetwork extends SystemInfoProperty {
     *
     * @warning 2.3.1 `http://tizen.org/privilege/systemmanager` `(partner level)` has been deprecated since 2.3.1. Instead, use `http://tizen.org/privilege/telephony`.
     */
-  val imei: String = js.native
+  val imei: String
   
   /**
     * Represents the IPv4 address of the cellular network.
     */
-  val ipAddress: String = js.native
+  val ipAddress: String
   
   /**
     * Represents this connection's IP configuration type.
     *
     * @since 2.4
     */
-  val ipMode: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED = js.native
+  val ipMode: SystemInfoNetworkIpMode | NONE | STATIC | DYNAMIC | AUTO | FIXED
   
   /**
     * Represents the IPv6 address of the cellular network.
     *
     * @since 2.0
     */
-  val ipv6Address: String = js.native
+  val ipv6Address: String
   
   /**
     * Indicates whether the device is in flight mode.
     *
     * @since 2.1
     */
-  val isFlightMode: Boolean = js.native
+  val isFlightMode: Boolean
   
   /**
     * Indicates whether the connection is set up while the device is roaming.
     */
-  val isRoaming: Boolean = js.native
+  val isRoaming: Boolean
   
   /**
     * Represents Location Area Code.
     */
-  val lac: Double = js.native
+  val lac: Double
   
   /**
     * Represents Mobile Country Code (MCC) of the cellular network.
     */
-  val mcc: Double = js.native
+  val mcc: Double
   
   /**
     * Represents Mobile Network Code (MNC) of the cellular network. MNC is used in combination with MCC (also known as a "MCC / MNC tuple") to uniquely
     * identify a mobile phone operator/carrier using the GSM, CDMA, iDEN, TETRA and UMTS public land mobile networks and some satellite mobile networks.
     */
-  val mnc: Double = js.native
+  val mnc: Double
   
   /**
     * Represents the status (ON or OFF) of the cellular network.
     */
-  val status: String = js.native
+  val status: String
   
   /**
     * Represents the subnet mask of this connection.
@@ -113,7 +113,7 @@ trait SystemInfoCellularNetwork extends SystemInfoProperty {
     *
     * @since 2.4
     */
-  val subnetMask: String = js.native
+  val subnetMask: String
 }
 object SystemInfoCellularNetwork {
   

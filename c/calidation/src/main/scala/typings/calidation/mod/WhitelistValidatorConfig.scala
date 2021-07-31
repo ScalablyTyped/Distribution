@@ -2,13 +2,13 @@ package typings.calidation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WhitelistValidatorConfig[T /* <: js.Object */] extends SimpleValidatorConfig[T] {
+trait WhitelistValidatorConfig[T /* <: js.Object */]
+  extends StObject
+     with SimpleValidatorConfig[T] {
   
-  var whitelist: js.Array[String] = js.native
+  var whitelist: js.Array[String]
 }
 object WhitelistValidatorConfig {
   
@@ -19,7 +19,7 @@ object WhitelistValidatorConfig {
   }
   
   @scala.inline
-  implicit class WhitelistValidatorConfigMutableBuilder[Self <: WhitelistValidatorConfig[_], T /* <: js.Object */] (val x: Self with WhitelistValidatorConfig[T]) extends AnyVal {
+  implicit class WhitelistValidatorConfigMutableBuilder[Self <: WhitelistValidatorConfig[?], T /* <: js.Object */] (val x: Self & WhitelistValidatorConfig[T]) extends AnyVal {
     
     @scala.inline
     def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])

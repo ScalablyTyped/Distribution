@@ -2,7 +2,6 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * accessed (i.e. with `state` = NEW) may not have a creation time or update
   * time.
   */
-@js.native
 trait SchemaStudentSubmission extends StObject {
   
   /**
     * Absolute link to the submission in the Classroom web UI.  Read-only.
     */
-  var alternateLink: js.UndefOr[String] = js.native
+  var alternateLink: js.UndefOr[String] = js.undefined
   
   /**
     * Optional grade. If unset, no grade was set. This value must be
@@ -25,41 +23,41 @@ trait SchemaStudentSubmission extends StObject {
     * rounded to two decimal places.  This may be modified only by course
     * teachers.
     */
-  var assignedGrade: js.UndefOr[Double] = js.native
+  var assignedGrade: js.UndefOr[Double] = js.undefined
   
   /**
     * Submission content when course_work_type is ASSIGNMENT.  Students can
     * modify this content using google.classroom.Work.ModifyAttachments.
     */
-  var assignmentSubmission: js.UndefOr[SchemaAssignmentSubmission] = js.native
+  var assignmentSubmission: js.UndefOr[SchemaAssignmentSubmission] = js.undefined
   
   /**
     * Whether this student submission is associated with the Developer Console
     * project making the request.  See google.classroom.Work.CreateCourseWork
     * for more details.  Read-only.
     */
-  var associatedWithDeveloper: js.UndefOr[Boolean] = js.native
+  var associatedWithDeveloper: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Identifier of the course.  Read-only.
     */
-  var courseId: js.UndefOr[String] = js.native
+  var courseId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the course work this corresponds to.  Read-only.
     */
-  var courseWorkId: js.UndefOr[String] = js.native
+  var courseWorkId: js.UndefOr[String] = js.undefined
   
   /**
     * Type of course work this submission is for.  Read-only.
     */
-  var courseWorkType: js.UndefOr[String] = js.native
+  var courseWorkType: js.UndefOr[String] = js.undefined
   
   /**
     * Creation time of this submission. This may be unset if the student has
     * not accessed this item.  Read-only.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Optional pending grade. If unset, no grade was set. This value must be
@@ -67,50 +65,50 @@ trait SchemaStudentSubmission extends StObject {
     * rounded to two decimal places.  This is only visible to and modifiable by
     * course teachers.
     */
-  var draftGrade: js.UndefOr[Double] = js.native
+  var draftGrade: js.UndefOr[Double] = js.undefined
   
   /**
     * Classroom-assigned Identifier for the student submission. This is unique
     * among submissions for the relevant course work.  Read-only.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this submission is late.  Read-only.
     */
-  var late: js.UndefOr[Boolean] = js.native
+  var late: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Submission content when course_work_type is MULTIPLE_CHOICE_QUESTION.
     */
-  var multipleChoiceSubmission: js.UndefOr[SchemaMultipleChoiceSubmission] = js.native
+  var multipleChoiceSubmission: js.UndefOr[SchemaMultipleChoiceSubmission] = js.undefined
   
   /**
     * Submission content when course_work_type is SHORT_ANSWER_QUESTION.
     */
-  var shortAnswerSubmission: js.UndefOr[SchemaShortAnswerSubmission] = js.native
+  var shortAnswerSubmission: js.UndefOr[SchemaShortAnswerSubmission] = js.undefined
   
   /**
     * State of this submission.  Read-only.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The history of the submission (includes state and grade histories).
     * Read-only.
     */
-  var submissionHistory: js.UndefOr[js.Array[SchemaSubmissionHistory]] = js.native
+  var submissionHistory: js.UndefOr[js.Array[SchemaSubmissionHistory]] = js.undefined
   
   /**
     * Last update time of this submission. This may be unset if the student has
     * not accessed this item.  Read-only.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier for the student that owns this submission.  Read-only.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object SchemaStudentSubmission {
   

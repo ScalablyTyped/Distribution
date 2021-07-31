@@ -5,19 +5,20 @@ import typings.std.Array
 import typings.std.ReadonlyArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonMod {
   
   object JSONExt {
     
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
+    @JSImport("@lumino/coreutils/types/json", "JSONExt")
     @js.native
-    def deepCopy(value: String): String = js.native
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deepCopy(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReadonlyPartialJSONValue]]
     /**
       * Create a deep copy of a JSON value.
       *
@@ -25,18 +26,14 @@ object jsonMod {
       *
       * @returns A deep copy of the given JSON value.
       */
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Boolean): Boolean = js.native
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Double): Double = js.native
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Null): Null = js.native
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = js.native
+    @scala.inline
+    def deepCopy(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def deepCopy(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def deepCopy(value: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Null]
+    @scala.inline
+    def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[ReadonlyPartialJSONObject]
     
     /**
       * Compare two JSON values for deep equality.
@@ -47,9 +44,8 @@ object jsonMod {
       *
       * @returns `true` if the values are equivalent, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.deepEqual")
-    @js.native
-    def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = js.native
+    @scala.inline
+    def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * A shared frozen empty JSONArray
@@ -72,9 +68,8 @@ object jsonMod {
       *
       * @returns `true` if the value is a an array, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.isArray")
-    @js.native
-    def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = js.native
+    @scala.inline
+    def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean]
     
     /**
       * Test whether a JSON value is an object.
@@ -83,9 +78,8 @@ object jsonMod {
       *
       * @returns `true` if the value is a an object, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.isObject")
-    @js.native
-    def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = js.native
+    @scala.inline
+    def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean]
     
     /**
       * Test whether a JSON value is a primitive.
@@ -94,19 +88,19 @@ object jsonMod {
       *
       * @returns `true` if the value is a primitive,`false` otherwise.
       */
-    @JSImport("@lumino/coreutils/types/json", "JSONExt.isPrimitive")
-    @js.native
-    def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = js.native
+    @scala.inline
+    def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean]
   }
   
   @js.native
   trait JSONArray
-    extends Array[JSONValue]
+    extends StObject
+       with Array[JSONValue]
        with _JSONValue
   
-  @js.native
   trait JSONObject
-    extends /* key */ StringDictionary[JSONValue]
+    extends StObject
+       with /* key */ StringDictionary[JSONValue]
        with _JSONValue
   object JSONObject {
     
@@ -128,12 +122,13 @@ object jsonMod {
   
   @js.native
   trait PartialJSONArray
-    extends Array[PartialJSONValue]
+    extends StObject
+       with Array[PartialJSONValue]
        with _PartialJSONValue
   
-  @js.native
   trait PartialJSONObject
-    extends /* key */ StringDictionary[js.UndefOr[PartialJSONValue]]
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[PartialJSONValue]]
        with _PartialJSONValue
   object PartialJSONObject {
     
@@ -153,12 +148,13 @@ object jsonMod {
   
   @js.native
   trait ReadonlyJSONArray
-    extends ReadonlyArray[ReadonlyJSONValue]
+    extends StObject
+       with ReadonlyArray[ReadonlyJSONValue]
        with _ReadonlyJSONValue
   
-  @js.native
   trait ReadonlyJSONObject
-    extends /* key */ StringDictionary[ReadonlyJSONValue]
+    extends StObject
+       with /* key */ StringDictionary[ReadonlyJSONValue]
        with _ReadonlyJSONValue
   object ReadonlyJSONObject {
     
@@ -178,12 +174,13 @@ object jsonMod {
   
   @js.native
   trait ReadonlyPartialJSONArray
-    extends ReadonlyArray[ReadonlyPartialJSONValue]
+    extends StObject
+       with ReadonlyArray[ReadonlyPartialJSONValue]
        with _ReadonlyPartialJSONValue
   
-  @js.native
   trait ReadonlyPartialJSONObject
-    extends /* key */ StringDictionary[js.UndefOr[ReadonlyPartialJSONValue]]
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[ReadonlyPartialJSONValue]]
        with _ReadonlyPartialJSONValue
   object ReadonlyPartialJSONObject {
     

@@ -3,23 +3,21 @@ package typings.minappEnv.wx
 import typings.minappEnv.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBLECharacteristicValueChangeCallbackResult extends StObject {
   
   /** 蓝牙特征值的 uuid */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /** 蓝牙设备 id */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** 蓝牙特征值对应服务的 uuid */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /** 特征值最新的值 */
-  var value: ArrayBuffer = js.native
+  var value: ArrayBuffer
 }
 object OnBLECharacteristicValueChangeCallbackResult {
   

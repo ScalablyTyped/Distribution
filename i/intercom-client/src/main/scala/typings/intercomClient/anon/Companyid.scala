@@ -3,13 +3,13 @@ package typings.intercomClient.anon
 import typings.intercomClient.companyMod.CompanyIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Companyid extends CompanyIdentifier {
+trait Companyid
+  extends StObject
+     with CompanyIdentifier {
   
-  var company_id: String = js.native
+  var company_id: String
 }
 object Companyid {
   

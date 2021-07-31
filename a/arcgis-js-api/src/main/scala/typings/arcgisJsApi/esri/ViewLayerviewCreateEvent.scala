@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewLayerviewCreateEvent extends StObject {
   
-  var layer: Layer = js.native
+  var layer: Layer
   
-  var layerView: LayerView = js.native
+  var layerView: LayerView
 }
 object ViewLayerviewCreateEvent {
   

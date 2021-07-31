@@ -3,19 +3,17 @@ package typings.typescript.mod.server
 import typings.typescript.typescriptStrings.typesRegistry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypesRegistryRequest extends StObject {
   
-  val kind: typesRegistry = js.native
+  val kind: typesRegistry
 }
 object TypesRegistryRequest {
   
   @scala.inline
-  def apply(kind: typesRegistry): TypesRegistryRequest = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def apply(): TypesRegistryRequest = {
+    val __obj = js.Dynamic.literal(kind = "typesRegistry")
     __obj.asInstanceOf[TypesRegistryRequest]
   }
   

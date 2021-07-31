@@ -4,18 +4,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This exception can be thrown in case specified state can not be reached. */
-@js.native
-trait UnreachableStateException extends Exception {
+trait UnreachableStateException
+  extends StObject
+     with Exception {
   
   /** The current state of the object. */
-  var CurrentState: Double = js.native
+  var CurrentState: Double
   
   /** The state that could not be reached. */
-  var NextState: Double = js.native
+  var NextState: Double
 }
 object UnreachableStateException {
   

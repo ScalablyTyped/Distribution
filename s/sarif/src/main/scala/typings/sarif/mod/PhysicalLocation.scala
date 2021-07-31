@@ -2,37 +2,35 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhysicalLocation extends StObject {
   
   /**
     * The address of the location.
     */
-  var address: js.UndefOr[Address] = js.native
+  var address: js.UndefOr[Address] = js.undefined
   
   /**
     * The location of the artifact.
     */
-  var artifactLocation: js.UndefOr[ArtifactLocation] = js.native
+  var artifactLocation: js.UndefOr[ArtifactLocation] = js.undefined
   
   /**
     * Specifies a portion of the artifact that encloses the region. Allows a viewer to display additional context
     * around the region.
     */
-  var contextRegion: js.UndefOr[Region] = js.native
+  var contextRegion: js.UndefOr[Region] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the physical location.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * Specifies a portion of the artifact.
     */
-  var region: js.UndefOr[Region] = js.native
+  var region: js.UndefOr[Region] = js.undefined
 }
 object PhysicalLocation {
   

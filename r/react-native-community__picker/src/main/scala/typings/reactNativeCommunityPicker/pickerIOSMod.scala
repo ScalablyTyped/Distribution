@@ -10,7 +10,6 @@ import typings.reactNativeCommunityPicker.pickerMod.ItemValue
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickerIOSMod {
@@ -37,16 +36,15 @@ object pickerIOSMod {
   
   type PickerIOSItem = Component[PickerIOSItemProps, js.Object, js.Any]
   
-  @js.native
   trait PickerIOSItemProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Double | String] = js.native
+    var value: js.UndefOr[Double | String] = js.undefined
   }
   object PickerIOSItemProps {
     
@@ -85,19 +83,20 @@ object pickerIOSMod {
     }
   }
   
-  @js.native
-  trait PickerIOSProps extends ViewProps {
+  trait PickerIOSProps
+    extends StObject
+       with ViewProps {
     
-    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var itemStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var onChange: js.UndefOr[SyntheticEvent[ItemIndex, Event]] = js.native
+    var onChange: js.UndefOr[SyntheticEvent[ItemIndex, Event]] = js.undefined
     
-    var onValueChange: js.UndefOr[js.Function2[/* itemValue */ ItemValue, /* itemIndex */ Double, Unit]] = js.native
+    var onValueChange: js.UndefOr[js.Function2[/* itemValue */ ItemValue, /* itemIndex */ Double, Unit]] = js.undefined
     
-    var selectedValue: js.UndefOr[ItemValue] = js.native
+    var selectedValue: js.UndefOr[ItemValue] = js.undefined
     
     @JSName("style")
-    var style_PickerIOSProps: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style_PickerIOSProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object PickerIOSProps {
     

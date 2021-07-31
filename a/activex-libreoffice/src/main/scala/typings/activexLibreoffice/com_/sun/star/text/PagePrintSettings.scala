@@ -2,39 +2,37 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** These properties describe the way the {@link XPagePrintable} interface prints the page on one printer page. */
-@js.native
 trait PagePrintSettings extends StObject {
   
   /** contains the right margin of the printer page. */
-  var BottomMargin: Double = js.native
+  var BottomMargin: Double
   
   /** contains the margin between the rows of printed pages. */
-  var HoriMargin: Double = js.native
+  var HoriMargin: Double
   
   /** defines if the printer page is used in landscape format. */
-  var IsLandscape: Boolean = js.native
+  var IsLandscape: Boolean
   
   /** contains the left margin of the printer page. */
-  var LeftMargin: Double = js.native
+  var LeftMargin: Double
   
   /** contains the number of pages per printed row of pages. */
-  var PageColumns: Double = js.native
+  var PageColumns: Double
   
   /** contains the number of pages per printed column of pages. */
-  var PageRows: Double = js.native
+  var PageRows: Double
   
   /** contains the right margin of the printer page. */
-  var RightMargin: Double = js.native
+  var RightMargin: Double
   
   /** contains the top margin of the printer page. */
-  var TopMargin: Double = js.native
+  var TopMargin: Double
   
   /** contains the margin between the columns of printed pages. */
-  var VertMargin: Double = js.native
+  var VertMargin: Double
 }
 object PagePrintSettings {
   

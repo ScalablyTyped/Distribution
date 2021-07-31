@@ -3,23 +3,21 @@ package typings.googleapis.anon
 import typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.SchemaPagespeedApiFormatStringV4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beta extends StObject {
   
-  var beta: js.UndefOr[Boolean] = js.native
+  var beta: js.UndefOr[Boolean] = js.undefined
   
-  var groups: js.UndefOr[js.Array[String]] = js.native
+  var groups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var localizedRuleName: js.UndefOr[String] = js.native
+  var localizedRuleName: js.UndefOr[String] = js.undefined
   
-  var ruleImpact: js.UndefOr[Double] = js.native
+  var ruleImpact: js.UndefOr[Double] = js.undefined
   
-  var summary: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.native
+  var summary: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.undefined
   
-  var urlBlocks: js.UndefOr[js.Array[HeaderUrls]] = js.native
+  var urlBlocks: js.UndefOr[js.Array[HeaderUrls]] = js.undefined
 }
 object Beta {
   

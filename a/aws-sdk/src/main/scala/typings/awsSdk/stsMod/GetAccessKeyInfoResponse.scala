@@ -2,16 +2,14 @@ package typings.awsSdk.stsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessKeyInfoResponse extends StObject {
   
   /**
     * The number used to identify the AWS account.
     */
-  var Account: js.UndefOr[accountType] = js.native
+  var Account: js.UndefOr[accountType] = js.undefined
 }
 object GetAccessKeyInfoResponse {
   

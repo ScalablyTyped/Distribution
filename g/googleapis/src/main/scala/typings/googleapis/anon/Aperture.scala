@@ -2,53 +2,51 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aperture extends StObject {
   
-  var aperture: js.UndefOr[Double] = js.native
+  var aperture: js.UndefOr[Double] = js.undefined
   
-  var cameraMake: js.UndefOr[String] = js.native
+  var cameraMake: js.UndefOr[String] = js.undefined
   
-  var cameraModel: js.UndefOr[String] = js.native
+  var cameraModel: js.UndefOr[String] = js.undefined
   
-  var colorSpace: js.UndefOr[String] = js.native
+  var colorSpace: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
-  var exposureBias: js.UndefOr[Double] = js.native
+  var exposureBias: js.UndefOr[Double] = js.undefined
   
-  var exposureMode: js.UndefOr[String] = js.native
+  var exposureMode: js.UndefOr[String] = js.undefined
   
-  var exposureTime: js.UndefOr[Double] = js.native
+  var exposureTime: js.UndefOr[Double] = js.undefined
   
-  var flashUsed: js.UndefOr[Boolean] = js.native
+  var flashUsed: js.UndefOr[Boolean] = js.undefined
   
-  var focalLength: js.UndefOr[Double] = js.native
+  var focalLength: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var isoSpeed: js.UndefOr[Double] = js.native
+  var isoSpeed: js.UndefOr[Double] = js.undefined
   
-  var lens: js.UndefOr[String] = js.native
+  var lens: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[Altitude] = js.native
+  var location: js.UndefOr[Altitude] = js.undefined
   
-  var maxApertureValue: js.UndefOr[Double] = js.native
+  var maxApertureValue: js.UndefOr[Double] = js.undefined
   
-  var meteringMode: js.UndefOr[String] = js.native
+  var meteringMode: js.UndefOr[String] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var sensor: js.UndefOr[String] = js.native
+  var sensor: js.UndefOr[String] = js.undefined
   
-  var subjectDistance: js.UndefOr[Double] = js.native
+  var subjectDistance: js.UndefOr[Double] = js.undefined
   
-  var whiteBalance: js.UndefOr[String] = js.native
+  var whiteBalance: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Aperture {
   

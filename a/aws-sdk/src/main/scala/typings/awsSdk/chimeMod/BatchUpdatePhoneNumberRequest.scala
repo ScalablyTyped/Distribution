@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdatePhoneNumberRequest extends StObject {
   
   /**
     * The request containing the phone number IDs and product types or calling names to update.
     */
-  var UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList = js.native
+  var UpdatePhoneNumberRequestItems: UpdatePhoneNumberRequestItemList
 }
 object BatchUpdatePhoneNumberRequest {
   

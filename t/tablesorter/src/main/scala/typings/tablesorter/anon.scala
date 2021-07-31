@@ -2,19 +2,17 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[js.Any] = js.native
+    var max: js.UndefOr[js.Any] = js.undefined
     
-    var min: js.UndefOr[js.Any] = js.native
+    var min: js.UndefOr[js.Any] = js.undefined
     
-    var step: js.UndefOr[js.Any] = js.native
+    var step: js.UndefOr[js.Any] = js.undefined
   }
   object Max {
     

@@ -2,19 +2,17 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options when matching points
   */
-@js.native
 trait IPointMatchOptions extends StObject {
   
   /**
     * Max distance to consider two points as the same.
     */
-  var pointMatchingDistance: js.UndefOr[Double] = js.native
+  var pointMatchingDistance: js.UndefOr[Double] = js.undefined
 }
 object IPointMatchOptions {
   

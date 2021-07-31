@@ -3,7 +3,6 @@ package typings.typesettable
 import typings.typesettable.measurersMod.AbstractMeasurer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrapperMod {
@@ -51,18 +50,17 @@ object wrapperMod {
     /* private */ def wrapNextToken(token: js.Any, state: js.Any, measurer: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait IWrappingResult extends StObject {
     
-    var noBrokeWords: Double = js.native
+    var noBrokeWords: Double
     
-    var noLines: Double = js.native
+    var noLines: Double
     
-    var originalText: String = js.native
+    var originalText: String
     
-    var truncatedText: String = js.native
+    var truncatedText: String
     
-    var wrappedText: String = js.native
+    var wrappedText: String
   }
   object IWrappingResult {
     

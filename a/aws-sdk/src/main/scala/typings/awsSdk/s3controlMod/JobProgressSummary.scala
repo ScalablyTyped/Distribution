@@ -2,26 +2,24 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobProgressSummary extends StObject {
   
   /**
     * 
     */
-  var NumberOfTasksFailed: js.UndefOr[JobNumberOfTasksFailed] = js.native
+  var NumberOfTasksFailed: js.UndefOr[JobNumberOfTasksFailed] = js.undefined
   
   /**
     * 
     */
-  var NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.native
+  var NumberOfTasksSucceeded: js.UndefOr[JobNumberOfTasksSucceeded] = js.undefined
   
   /**
     * 
     */
-  var TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.native
+  var TotalNumberOfTasks: js.UndefOr[JobTotalNumberOfTasks] = js.undefined
 }
 object JobProgressSummary {
   

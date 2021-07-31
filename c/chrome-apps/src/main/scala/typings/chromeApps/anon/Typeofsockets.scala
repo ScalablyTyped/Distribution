@@ -2,10 +2,8 @@ package typings.chromeApps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofsockets extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Typeofsockets extends StObject {
     * @since Chrome 33.
     * @requires Manifest: 'Sockets': {...}
     */
-  val tcp: Typeoftcp = js.native
+  val tcp: Typeoftcp
   
   /**
     * Use the chrome.sockets.tcpServer API to create server applications using TCP
@@ -24,7 +22,7 @@ trait Typeofsockets extends StObject {
     * @since Chrome 33
     * @see https://developer.chrome.com/apps/sockets_tcpServer
     */
-  val tcpServer: TypeoftcpServer = js.native
+  val tcpServer: TypeoftcpServer
   
   /**
     * Use the chrome.sockets.udp API to send and receive data over the network
@@ -34,7 +32,7 @@ trait Typeofsockets extends StObject {
     * @since Chrome 33
     * @see https://developer.chrome.com/apps/sockets_udp
     */
-  val udp: Typeofudp = js.native
+  val udp: Typeofudp
 }
 object Typeofsockets {
   

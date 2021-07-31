@@ -2,20 +2,18 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // subscribe
-@js.native
 trait SubscribeParameters extends StObject {
   
-  var channelGroups: js.UndefOr[js.Array[String]] = js.native
+  var channelGroups: js.UndefOr[js.Array[String]] = js.undefined
   
-  var channels: js.UndefOr[js.Array[String]] = js.native
+  var channels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var timetoken: js.UndefOr[Double] = js.native
+  var timetoken: js.UndefOr[Double] = js.undefined
   
-  var withPresence: js.UndefOr[Boolean] = js.native
+  var withPresence: js.UndefOr[Boolean] = js.undefined
 }
 object SubscribeParameters {
   

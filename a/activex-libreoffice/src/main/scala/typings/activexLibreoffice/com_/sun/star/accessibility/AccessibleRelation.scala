@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The represented relation points from the implementing object to a set of target objects.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleRelation extends StObject {
   
   /**
@@ -23,14 +21,14 @@ trait AccessibleRelation extends StObject {
     * invalid. The content of the TargetSet is then undefined.
     * @see AccessibleRelationType
     */
-  var RelationType: Double = js.native
+  var RelationType: Double
   
   /**
     * Set of objects that are the relation's targets.
     *
     * The content of this set is undefined if the relation's type is INVALID. The set must not contain references to one object more than once.
     */
-  var TargetSet: SafeArray[XInterface] = js.native
+  var TargetSet: SafeArray[XInterface]
 }
 object AccessibleRelation {
   

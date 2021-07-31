@@ -20,10 +20,13 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object netMod {
+  
+  @JSImport("net", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   // https://github.com/nodejs/node/blob/master/lib/net.js
   @JSImport("net", "Server")
@@ -33,7 +36,7 @@ object netMod {
        with SendHandle {
     def this(connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
     def this(options: AllowHalfOpen) = this()
-    def this(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
+    def this(options: Unit, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
     def this(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]) = this()
     
     @JSName("addListener")
@@ -65,81 +68,42 @@ object netMod {
     
     def listen(): this.type = js.native
     def listen(handle: js.Any): this.type = js.native
-    def listen(handle: js.Any, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(handle: js.Any, backlog: Double): this.type = js.native
     def listen(handle: js.Any, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(handle: js.Any, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(handle: js.Any, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(options: ListenOptions): this.type = js.native
     def listen(options: ListenOptions, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: java.lang.String): this.type = js.native
-    def listen(path: java.lang.String, backlog: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: java.lang.String, backlog: Double): this.type = js.native
     def listen(path: java.lang.String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(path: java.lang.String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(path: java.lang.String, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: java.lang.String): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: java.lang.String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: java.lang.String, backlog: Double): this.type = js.native
-    def listen(
-      port: js.UndefOr[scala.Nothing],
-      hostname: java.lang.String,
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], hostname: java.lang.String, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(port: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double): this.type = js.native
     def listen(port: Double, backlog: Double): this.type = js.native
     def listen(port: Double, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: Double,
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, hostname: java.lang.String): this.type = js.native
-    def listen(
-      port: Double,
-      hostname: java.lang.String,
-      backlog: js.UndefOr[scala.Nothing],
-      listeningListener: js.Function0[Unit]
-    ): this.type = js.native
     def listen(port: Double, hostname: java.lang.String, backlog: Double): this.type = js.native
     def listen(port: Double, hostname: java.lang.String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: java.lang.String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, hostname: java.lang.String, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Double, hostname: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     def listen(port: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, backlog: Double): this.type = js.native
+    def listen(port: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: java.lang.String): this.type = js.native
+    def listen(port: Unit, hostname: java.lang.String, backlog: Double): this.type = js.native
+    def listen(port: Unit, hostname: java.lang.String, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: java.lang.String, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: java.lang.String, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Double, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, backlog: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, hostname: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
+    def listen(port: Unit, listeningListener: js.Function0[Unit]): this.type = js.native
     
     var listening: Boolean = js.native
     
@@ -253,10 +217,10 @@ object netMod {
     def end(buffer: java.lang.String, cb: js.Function0[Unit]): Unit = js.native
     def end(buffer: Uint8Array): Unit = js.native
     def end(buffer: Uint8Array, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: java.lang.String, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: java.lang.String, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: java.lang.String, encoding: BufferEncoding): Unit = js.native
     def end(str: java.lang.String, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
-    def end(str: Uint8Array, encoding: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
+    def end(str: Uint8Array, encoding: Unit, cb: js.Function0[Unit]): Unit = js.native
     def end(str: Uint8Array, encoding: BufferEncoding): Unit = js.native
     def end(str: Uint8Array, encoding: BufferEncoding, cb: js.Function0[Unit]): Unit = js.native
     
@@ -352,9 +316,9 @@ object netMod {
     def setEncoding(): this.type = js.native
     
     def setKeepAlive(): this.type = js.native
-    def setKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): this.type = js.native
     def setKeepAlive(enable: Boolean): this.type = js.native
     def setKeepAlive(enable: Boolean, initialDelay: Double): this.type = js.native
+    def setKeepAlive(enable: Unit, initialDelay: Double): this.type = js.native
     
     def setNoDelay(): this.type = js.native
     def setNoDelay(noDelay: Boolean): this.type = js.native
@@ -369,112 +333,79 @@ object netMod {
     // Extended base methods
     def write(buffer: Uint8Array): Boolean = js.native
     def write(buffer: Uint8Array, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
-    def write(
-      str: java.lang.String,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Boolean = js.native
+    def write(str: java.lang.String, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
     def write(str: java.lang.String, encoding: BufferEncoding): Boolean = js.native
     def write(
       str: java.lang.String,
       encoding: BufferEncoding,
       cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Boolean = js.native
-    def write(
-      str: Uint8Array,
-      encoding: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Boolean = js.native
+    def write(str: Uint8Array, encoding: Unit, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
     def write(str: Uint8Array, encoding: BufferEncoding): Boolean = js.native
     def write(str: Uint8Array, encoding: BufferEncoding, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Boolean = js.native
   }
   
-  @JSImport("net", "connect")
-  @js.native
-  def connect(options: NetConnectOpts): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(options: NetConnectOpts, connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(path: java.lang.String): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(path: java.lang.String, connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(port: Double): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(port: Double, host: java.lang.String): Socket = js.native
-  @JSImport("net", "connect")
-  @js.native
-  def connect(port: Double, host: java.lang.String, connectionListener: js.Function0[Unit]): Socket = js.native
+  @scala.inline
+  def connect(options: NetConnectOpts): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def connect(options: NetConnectOpts, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def connect(path: java.lang.String): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(path.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def connect(path: java.lang.String, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(path.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def connect(port: Double): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def connect(port: Double, host: java.lang.String): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def connect(port: Double, host: java.lang.String, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def connect(port: Double, host: Unit, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
   
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(options: NetConnectOpts): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(options: NetConnectOpts, connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(path: java.lang.String): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(path: java.lang.String, connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(port: Double): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: js.Function0[Unit]): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(port: Double, host: java.lang.String): Socket = js.native
-  @JSImport("net", "createConnection")
-  @js.native
-  def createConnection(port: Double, host: java.lang.String, connectionListener: js.Function0[Unit]): Socket = js.native
+  @scala.inline
+  def createConnection(options: NetConnectOpts): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(options: NetConnectOpts, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(path: java.lang.String): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(path.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(path: java.lang.String, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(path.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(port: Double): Socket = ^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any]).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(port: Double, host: java.lang.String): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(port: Double, host: java.lang.String, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
+  @scala.inline
+  def createConnection(port: Double, host: Unit, connectionListener: js.Function0[Unit]): Socket = (^.asInstanceOf[js.Dynamic].applyDynamic("createConnection")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Socket]
   
-  @JSImport("net", "createServer")
-  @js.native
-  def createServer(): Server = js.native
-  @JSImport("net", "createServer")
-  @js.native
-  def createServer(connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
-  @JSImport("net", "createServer")
-  @js.native
-  def createServer(options: js.UndefOr[scala.Nothing], connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
-  @JSImport("net", "createServer")
-  @js.native
-  def createServer(options: AllowHalfOpen): Server = js.native
-  @JSImport("net", "createServer")
-  @js.native
-  def createServer(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = js.native
+  @scala.inline
+  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  @scala.inline
+  def createServer(connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(connectionListener.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: Unit, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: AllowHalfOpen): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Server]
+  @scala.inline
+  def createServer(options: AllowHalfOpen, connectionListener: js.Function1[/* socket */ Socket, Unit]): Server = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[Server]
   
-  @JSImport("net", "isIP")
-  @js.native
-  def isIP(input: java.lang.String): Double = js.native
+  @scala.inline
+  def isIP(input: java.lang.String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isIP")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("net", "isIPv4")
-  @js.native
-  def isIPv4(input: java.lang.String): Boolean = js.native
+  @scala.inline
+  def isIPv4(input: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv4")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("net", "isIPv6")
-  @js.native
-  def isIPv6(input: java.lang.String): Boolean = js.native
+  @scala.inline
+  def isIPv6(input: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPv6")(input.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait AddressInfo extends StObject {
     
-    var address: java.lang.String = js.native
+    var address: java.lang.String
     
-    var family: java.lang.String = js.native
+    var family: java.lang.String
     
-    var port: Double = js.native
+    var port: Double
   }
   object AddressInfo {
     
@@ -498,7 +429,6 @@ object netMod {
     }
   }
   
-  @js.native
   trait ConnectOpts extends StObject {
     
     /**
@@ -506,7 +436,7 @@ object netMod {
       * Note: this will cause the streaming functionality to not provide any data, however events like 'error', 'end', and 'close' will
       * still be emitted as normal and methods like pause() and resume() will also behave as expected.
       */
-    var onread: js.UndefOr[OnReadOpts] = js.native
+    var onread: js.UndefOr[OnReadOpts] = js.undefined
   }
   object ConnectOpts {
     
@@ -527,13 +457,13 @@ object netMod {
     }
   }
   
-  @js.native
   trait IpcNetConnectOpts
-    extends IpcSocketConnectOpts
+    extends StObject
+       with IpcSocketConnectOpts
        with SocketConstructorOpts
        with NetConnectOpts {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object IpcNetConnectOpts {
     
@@ -554,12 +484,12 @@ object netMod {
     }
   }
   
-  @js.native
   trait IpcSocketConnectOpts
-    extends ConnectOpts
+    extends StObject
+       with ConnectOpts
        with SocketConnectOpts {
     
-    var path: java.lang.String = js.native
+    var path: java.lang.String
   }
   object IpcSocketConnectOpts {
     
@@ -577,27 +507,26 @@ object netMod {
     }
   }
   
-  @js.native
   trait ListenOptions extends StObject {
     
-    var backlog: js.UndefOr[Double] = js.native
+    var backlog: js.UndefOr[Double] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[java.lang.String] = js.native
+    var host: js.UndefOr[java.lang.String] = js.undefined
     
     /**
       * @default false
       */
-    var ipv6Only: js.UndefOr[Boolean] = js.native
+    var ipv6Only: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[java.lang.String] = js.native
+    var path: js.UndefOr[java.lang.String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var readableAll: js.UndefOr[Boolean] = js.native
+    var readableAll: js.UndefOr[Boolean] = js.undefined
     
-    var writableAll: js.UndefOr[Boolean] = js.native
+    var writableAll: js.UndefOr[Boolean] = js.undefined
   }
   object ListenOptions {
     
@@ -692,17 +621,16 @@ object netMod {
     }
   }
   
-  @js.native
   trait OnReadOpts extends StObject {
     
-    var buffer: Uint8Array | js.Function0[Uint8Array] = js.native
+    var buffer: Uint8Array | js.Function0[Uint8Array]
     
     /**
       * This function is called for every chunk of incoming data.
       * Two arguments are passed to it: the number of bytes written to buffer and a reference to buffer.
       * Return false from this function to implicitly pause() the socket.
       */
-    def callback(bytesWritten: Double, buf: Uint8Array): Boolean = js.native
+    def callback(bytesWritten: Double, buf: Uint8Array): Boolean
   }
   object OnReadOpts {
     
@@ -746,16 +674,15 @@ object netMod {
     }
   }
   
-  @js.native
   trait SocketConstructorOpts extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var fd: js.UndefOr[Double] = js.native
+    var fd: js.UndefOr[Double] = js.undefined
     
-    var readable: js.UndefOr[Boolean] = js.native
+    var readable: js.UndefOr[Boolean] = js.undefined
     
-    var writable: js.UndefOr[Boolean] = js.native
+    var writable: js.UndefOr[Boolean] = js.undefined
   }
   object SocketConstructorOpts {
     
@@ -794,13 +721,13 @@ object netMod {
     }
   }
   
-  @js.native
   trait TcpNetConnectOpts
-    extends TcpSocketConnectOpts
+    extends StObject
+       with TcpSocketConnectOpts
        with SocketConstructorOpts
        with NetConnectOpts {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object TcpNetConnectOpts {
     
@@ -821,24 +748,24 @@ object netMod {
     }
   }
   
-  @js.native
   trait TcpSocketConnectOpts
-    extends ConnectOpts
+    extends StObject
+       with ConnectOpts
        with SocketConnectOpts {
     
-    var family: js.UndefOr[Double] = js.native
+    var family: js.UndefOr[Double] = js.undefined
     
-    var hints: js.UndefOr[Double] = js.native
+    var hints: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[java.lang.String] = js.native
+    var host: js.UndefOr[java.lang.String] = js.undefined
     
-    var localAddress: js.UndefOr[java.lang.String] = js.native
+    var localAddress: js.UndefOr[java.lang.String] = js.undefined
     
-    var localPort: js.UndefOr[Double] = js.native
+    var localPort: js.UndefOr[Double] = js.undefined
     
-    var lookup: js.UndefOr[LookupFunction] = js.native
+    var lookup: js.UndefOr[LookupFunction] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
   }
   object TcpSocketConnectOpts {
     

@@ -2,69 +2,67 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDbColumn extends StObject {
   
-  var allowDBNull: js.UndefOr[Boolean] = js.native
+  var allowDBNull: js.UndefOr[Boolean] = js.undefined
   
-  var baseCatalogName: String = js.native
+  var baseCatalogName: String
   
-  var baseColumnName: String = js.native
+  var baseColumnName: String
   
-  var baseSchemaName: String = js.native
+  var baseSchemaName: String
   
-  var baseServerName: String = js.native
+  var baseServerName: String
   
-  var baseTableName: String = js.native
+  var baseTableName: String
   
-  var columnName: String = js.native
+  var columnName: String
   
-  var columnOrdinal: js.UndefOr[Double] = js.native
+  var columnOrdinal: js.UndefOr[Double] = js.undefined
   
-  var columnSize: js.UndefOr[Double] = js.native
+  var columnSize: js.UndefOr[Double] = js.undefined
   
-  var dataType: String = js.native
+  var dataType: String
   
-  var dataTypeName: String = js.native
+  var dataTypeName: String
   
-  var isAliased: js.UndefOr[Boolean] = js.native
+  var isAliased: js.UndefOr[Boolean] = js.undefined
   
-  var isAutoIncrement: js.UndefOr[Boolean] = js.native
+  var isAutoIncrement: js.UndefOr[Boolean] = js.undefined
   
-  var isBytes: js.UndefOr[Boolean] = js.native
+  var isBytes: js.UndefOr[Boolean] = js.undefined
   
-  var isChars: js.UndefOr[Boolean] = js.native
+  var isChars: js.UndefOr[Boolean] = js.undefined
   
-  var isExpression: js.UndefOr[Boolean] = js.native
+  var isExpression: js.UndefOr[Boolean] = js.undefined
   
-  var isHidden: js.UndefOr[Boolean] = js.native
+  var isHidden: js.UndefOr[Boolean] = js.undefined
   
-  var isIdentity: js.UndefOr[Boolean] = js.native
+  var isIdentity: js.UndefOr[Boolean] = js.undefined
   
-  var isJson: js.UndefOr[Boolean] = js.native
+  var isJson: js.UndefOr[Boolean] = js.undefined
   
-  var isKey: js.UndefOr[Boolean] = js.native
+  var isKey: js.UndefOr[Boolean] = js.undefined
   
-  var isLong: js.UndefOr[Boolean] = js.native
+  var isLong: js.UndefOr[Boolean] = js.undefined
   
-  var isReadOnly: js.UndefOr[Boolean] = js.native
+  var isReadOnly: js.UndefOr[Boolean] = js.undefined
   
-  var isSqlVariant: js.UndefOr[Boolean] = js.native
+  var isSqlVariant: js.UndefOr[Boolean] = js.undefined
   
-  var isUdt: js.UndefOr[Boolean] = js.native
+  var isUdt: js.UndefOr[Boolean] = js.undefined
   
-  var isUnique: js.UndefOr[Boolean] = js.native
+  var isUnique: js.UndefOr[Boolean] = js.undefined
   
-  var isXml: js.UndefOr[Boolean] = js.native
+  var isXml: js.UndefOr[Boolean] = js.undefined
   
-  var numericPrecision: js.UndefOr[Double] = js.native
+  var numericPrecision: js.UndefOr[Double] = js.undefined
   
-  var numericScale: js.UndefOr[Double] = js.native
+  var numericScale: js.UndefOr[Double] = js.undefined
   
-  var udtAssemblyQualifiedName: String = js.native
+  var udtAssemblyQualifiedName: String
 }
 object IDbColumn {
   

@@ -2,13 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageEditorImageLoadedEvent extends ImageEditorEvent {
+trait ImageEditorImageLoadedEvent
+  extends StObject
+     with ImageEditorEvent {
   
-  var image: js.UndefOr[js.Any] = js.native
+  var image: js.UndefOr[js.Any] = js.undefined
 }
 object ImageEditorImageLoadedEvent {
   

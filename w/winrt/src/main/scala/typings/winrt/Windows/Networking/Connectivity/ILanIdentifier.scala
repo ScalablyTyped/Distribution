@@ -2,17 +2,15 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanIdentifier extends StObject {
   
-  var infrastructureId: LanIdentifierData = js.native
+  var infrastructureId: LanIdentifierData
   
-  var networkAdapterId: String = js.native
+  var networkAdapterId: String
   
-  var portId: LanIdentifierData = js.native
+  var portId: LanIdentifierData
 }
 object ILanIdentifier {
   

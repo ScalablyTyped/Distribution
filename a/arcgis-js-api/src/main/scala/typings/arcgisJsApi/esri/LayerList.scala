@@ -4,11 +4,12 @@ import typings.arcgisJsApi.IHandle
 import typings.arcgisJsApi.arcgisJsApiStrings.`trigger-action`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LayerList extends Widget_ {
+trait LayerList
+  extends StObject
+     with Widget_ {
   
   /**
     * The widget's default CSS icon class.

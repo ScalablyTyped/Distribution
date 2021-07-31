@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAliasRequest extends StObject {
   
   /**
     * The alias to add to the member set.
     */
-  var Alias: EmailAddress = js.native
+  var Alias: EmailAddress
   
   /**
     * The member (user or group) to which this alias is added.
     */
-  var EntityId: WorkMailIdentifier = js.native
+  var EntityId: WorkMailIdentifier
   
   /**
     * The organization under which the member (user or group) exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object CreateAliasRequest {
   

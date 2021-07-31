@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTestGridSessionArtifactsResult extends StObject {
   
   /**
     * A list of test grid session artifacts for a TestGridSession.
     */
-  var artifacts: js.UndefOr[TestGridSessionArtifacts] = js.native
+  var artifacts: js.UndefOr[TestGridSessionArtifacts] = js.undefined
   
   /**
     * Pagination token.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListTestGridSessionArtifactsResult {
   

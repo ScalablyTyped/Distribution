@@ -2,16 +2,14 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityStartedEventDetails extends StObject {
   
   /**
     * The name of the worker that the task is assigned to. These names are provided by the workers when calling GetActivityTask.
     */
-  var workerName: js.UndefOr[Identity] = js.native
+  var workerName: js.UndefOr[Identity] = js.undefined
 }
 object ActivityStartedEventDetails {
   

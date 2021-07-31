@@ -6,96 +6,82 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.eventsMod.EventEmitter
 import typings.yeomanGenerator.mod.Answers
 import typings.yeomanGenerator.mod.GeneratorOptions
-import typings.yeomanGenerator.mod.^
 import typings.yeomanTest.anon.FnCall
 import typings.yeomanTest.anon.FnCallOnrejected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("yeoman-test", "createDummyGenerator")
+  @JSImport("yeoman-test", JSImport.Namespace)
   @js.native
-  def createDummyGenerator(): ^[GeneratorOptions] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
-  def createGenerator(name: String, dependencies: js.Array[Dependency]): ^[GeneratorOptions] = js.native
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
+  @scala.inline
+  def createDummyGenerator(): typings.yeomanGenerator.mod.^[GeneratorOptions] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDummyGenerator")().asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  
+  @scala.inline
+  def createGenerator(name: String, dependencies: js.Array[Dependency]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  @scala.inline
+  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  @scala.inline
+  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  @scala.inline
+  def createGenerator(name: String, dependencies: js.Array[Dependency], args: js.Array[String]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  @scala.inline
   def createGenerator(
     name: String,
     dependencies: js.Array[Dependency],
-    args: js.UndefOr[scala.Nothing],
-    options: Dictionary[_]
-  ): ^[GeneratorOptions] = js.native
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String): ^[GeneratorOptions] = js.native
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: String, options: Dictionary[_]): ^[GeneratorOptions] = js.native
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: js.Array[String]): ^[GeneratorOptions] = js.native
-  @JSImport("yeoman-test", "createGenerator")
-  @js.native
-  def createGenerator(name: String, dependencies: js.Array[Dependency], args: js.Array[String], options: Dictionary[_]): ^[GeneratorOptions] = js.native
+    args: js.Array[String],
+    options: Dictionary[js.Any]
+  ): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
+  @scala.inline
+  def createGenerator(name: String, dependencies: js.Array[Dependency], args: Unit, options: Dictionary[js.Any]): typings.yeomanGenerator.mod.^[GeneratorOptions] = (^.asInstanceOf[js.Dynamic].applyDynamic("createGenerator")(name.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any], args.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.yeomanGenerator.mod.^[GeneratorOptions]]
   
-  @JSImport("yeoman-test", "gruntfile")
-  @js.native
-  def gruntfile(options: Dictionary[_]): Unit = js.native
-  @JSImport("yeoman-test", "gruntfile")
-  @js.native
-  def gruntfile(options: Dictionary[_], done: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+  @scala.inline
+  def gruntfile(options: Dictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def gruntfile(options: Dictionary[js.Any], done: js.Function1[/* repeated */ js.Any, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("gruntfile")(options.asInstanceOf[js.Any], done.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-test", "mockLocalConfig")
-  @js.native
-  def mockLocalConfig(generator: ^[GeneratorOptions], localConfig: Dictionary[_]): Unit = js.native
+  @scala.inline
+  def mockLocalConfig(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], localConfig: Dictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockLocalConfig")(generator.asInstanceOf[js.Any], localConfig.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-test", "mockPrompt")
-  @js.native
-  def mockPrompt(generator: ^[GeneratorOptions], answers: Answers): Unit = js.native
+  @scala.inline
+  def mockPrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions], answers: Answers): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mockPrompt")(generator.asInstanceOf[js.Any], answers.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-test", "registerDependencies")
-  @js.native
-  def registerDependencies(env: Env, dependencies: js.Array[Dependency]): Unit = js.native
+  @scala.inline
+  def registerDependencies(env: Env, dependencies: js.Array[Dependency]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerDependencies")(env.asInstanceOf[js.Any], dependencies.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("yeoman-test", "restorePrompt")
-  @js.native
-  def restorePrompt(generator: ^[GeneratorOptions]): Unit = js.native
+  @scala.inline
+  def restorePrompt(generator: typings.yeomanGenerator.mod.^[GeneratorOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("restorePrompt")(generator.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("yeoman-test", "run")
-  @js.native
-  def run(GeneratorOrNamespace: String): RunContext = js.native
-  @JSImport("yeoman-test", "run")
-  @js.native
-  def run(GeneratorOrNamespace: String, settings: RunContextSettings): RunContext = js.native
-  @JSImport("yeoman-test", "run")
-  @js.native
-  def run(GeneratorOrNamespace: Constructor[^[GeneratorOptions]]): RunContext = js.native
-  @JSImport("yeoman-test", "run")
-  @js.native
-  def run(GeneratorOrNamespace: Constructor[^[GeneratorOptions]], settings: RunContextSettings): RunContext = js.native
+  @scala.inline
+  def run(GeneratorOrNamespace: String): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
+  @scala.inline
+  def run(GeneratorOrNamespace: String, settings: RunContextSettings): RunContext = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[RunContext]
+  @scala.inline
+  def run(GeneratorOrNamespace: Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]]): RunContext = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any]).asInstanceOf[RunContext]
+  @scala.inline
+  def run(
+    GeneratorOrNamespace: Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]],
+    settings: RunContextSettings
+  ): RunContext = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(GeneratorOrNamespace.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[RunContext]
   
-  @JSImport("yeoman-test", "setUpTestDirectory")
-  @js.native
-  def setUpTestDirectory(dir: String): js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit] = js.native
+  @scala.inline
+  def setUpTestDirectory(dir: String): js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("setUpTestDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* done */ js.Function1[/* repeated */ js.Any, Unit], Unit]]
   
-  @JSImport("yeoman-test", "testDirectory")
-  @js.native
-  def testDirectory(dir: String): Unit = js.native
-  @JSImport("yeoman-test", "testDirectory")
-  @js.native
-  def testDirectory(dir: String, cb: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  @scala.inline
+  def testDirectory(dir: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def testDirectory(dir: String, cb: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testDirectory")(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @js.native
   trait Constructor[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T]
   
-  type Dependency = String | (js.Tuple2[^[GeneratorOptions], String])
+  type Dependency = String | (js.Tuple2[typings.yeomanGenerator.mod.^[GeneratorOptions], String])
   
   type Dictionary[T] = StringDictionary[T]
   
@@ -107,10 +93,20 @@ object mod {
     var queues: js.Array[String] = js.native
   }
   
-  @js.native
-  trait RunContext
-    extends EventEmitter
-       with RunContextConstructor {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.Instantiable2 because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.Instantiable1 because Inheritance from two classes. Inlined 
+  - typings.yeomanTest.mod.RunContextConstructor because Inheritance from two classes. Inlined  */ @js.native
+  trait RunContext extends EventEmitter {
     
     var answers: Answers = js.native
     
@@ -206,13 +202,13 @@ object mod {
       * Mock the local configuration with the provided config
       * @param  localConfig - should look just like if called config.getAll()
       */
-    def withLocalConfig(localConfig: Dictionary[_]): this.type = js.native
+    def withLocalConfig(localConfig: Dictionary[js.Any]): this.type = js.native
     
     /**
       * Provide options to the run context
       * @param  options - command line options (e.g. `--opt-one=foo`)
       */
-    def withOptions(options: Dictionary[_]): this.type = js.native
+    def withOptions(options: Dictionary[js.Any]): this.type = js.native
     
     /**
       * Mock the prompt with dummy answers
@@ -223,7 +219,8 @@ object mod {
   
   @js.native
   trait RunContextConstructor
-    extends /**
+    extends StObject
+       with /**
     * This class provide a run context object to façade the complexity involved in setting
     * up a generator for testing
     * @param Generator - Namespace or generator constructor. If the later
@@ -231,34 +228,33 @@ object mod {
     *                                      'gen:test' in all cases
     */
   Instantiable1[
-          (/* Generator */ Constructor[^[GeneratorOptions]]) | (/* Generator */ String), 
+          (/* Generator */ Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]]) | (/* Generator */ String), 
           RunContext
         ]
        with Instantiable2[
-          (/* Generator */ Constructor[^[GeneratorOptions]]) | (/* Generator */ String), 
+          (/* Generator */ Constructor[typings.yeomanGenerator.mod.^[GeneratorOptions]]) | (/* Generator */ String), 
           /* settings */ RunContextSettings, 
           RunContext
         ]
   
-  @js.native
   trait RunContextSettings extends StObject {
     
     /**
       * Namespace (only used if Generator is a constructor)
       * @default 'gen:test'
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * File path to the generator (only used if Generator is a constructor)
       */
-    var resolved: js.UndefOr[String] = js.native
+    var resolved: js.UndefOr[String] = js.undefined
     
     /**
       * Automatically run this generator in a tmp dir
       * @default true
       */
-    var tmpdir: js.UndefOr[Boolean] = js.native
+    var tmpdir: js.UndefOr[Boolean] = js.undefined
   }
   object RunContextSettings {
     

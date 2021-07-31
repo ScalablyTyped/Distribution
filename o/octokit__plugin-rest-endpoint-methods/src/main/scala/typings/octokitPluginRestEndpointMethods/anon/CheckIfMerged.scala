@@ -7,25 +7,23 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckIfMerged extends StObject {
   
   def checkIfMerged(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
-  ] = js.native
+  ]
   def checkIfMerged(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/merge']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("checkIfMerged")
-  var checkIfMerged_Original: `292` = js.native
+  var checkIfMerged_Original: `292`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -38,15 +36,15 @@ trait CheckIfMerged extends StObject {
     */
   def create(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls']['response'] */ js.Any
-  ] = js.native
+  ]
   def create(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
@@ -55,22 +53,22 @@ trait CheckIfMerged extends StObject {
     */
   def createReplyForReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
-  ] = js.native
+  ]
   def createReplyForReviewComment(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments/:comment_id/replies']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Creates a reply to a review comment for a pull request. For the `comment_id`, provide the ID of the review comment you are replying to. This must be the ID of a _top-level review comment_, not a reply to that comment. Replies to replies are not supported.
     *
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("createReplyForReviewComment")
-  var createReplyForReviewComment_Original: `294` = js.native
+  var createReplyForReviewComment_Original: `294`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
@@ -83,15 +81,15 @@ trait CheckIfMerged extends StObject {
     */
   def createReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews']['response'] */ js.Any
-  ] = js.native
+  ]
   def createReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -122,15 +120,15 @@ trait CheckIfMerged extends StObject {
     */
   def createReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   def createReviewComment(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -159,7 +157,7 @@ trait CheckIfMerged extends StObject {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("createReviewComment")
-  var createReviewComment_Original: `296` = js.native
+  var createReviewComment_Original: `296`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
@@ -171,7 +169,7 @@ trait CheckIfMerged extends StObject {
     * The `position` value equals the number of lines down from the first "@@" hunk header in the file you want to add a comment. The line just below the "@@" line is position 1, the next line is position 2, and so on. The position in the diff continues to increase through lines of whitespace and additional hunks until the beginning of a new file.
     */
   @JSName("createReview")
-  var createReview_Original: `295` = js.native
+  var createReview_Original: `295`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -183,61 +181,61 @@ trait CheckIfMerged extends StObject {
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("create")
-  var create_Original: `293` = js.native
+  var create_Original: `293`
   
   def deletePendingReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def deletePendingReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("deletePendingReview")
-  var deletePendingReview_Original: `297` = js.native
+  var deletePendingReview_Original: `297`
   
   /**
     * Deletes a review comment.
     */
   def deleteReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def deleteReviewComment(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Deletes a review comment.
     */
   @JSName("deleteReviewComment")
-  var deleteReviewComment_Original: `298` = js.native
+  var deleteReviewComment_Original: `298`
   
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   def dismissReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals']['response'] */ js.Any
-  ] = js.native
+  ]
   def dismissReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/dismissals']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** To dismiss a pull request review on a [protected branch](https://developer.github.com/v3/repos/branches/), you must be a repository administrator or be included in the list of people or teams who can dismiss pull request reviews.
     */
   @JSName("dismissReview")
-  var dismissReview_Original: `299` = js.native
+  var dismissReview_Original: `299`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -258,27 +256,27 @@ trait CheckIfMerged extends StObject {
     */
   def get(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number']['response'] */ js.Any
-  ] = js.native
+  ]
   def get(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number']['response'] */ js.Any
-  ] = js.native
+  ]
   
   def getReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def getReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -305,15 +303,15 @@ trait CheckIfMerged extends StObject {
     */
   def getReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def getReviewComment(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -338,10 +336,10 @@ trait CheckIfMerged extends StObject {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("getReviewComment")
-  var getReviewComment_Original: `302` = js.native
+  var getReviewComment_Original: `302`
   
   @JSName("getReview")
-  var getReview_Original: `301` = js.native
+  var getReview_Original: `301`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -361,96 +359,96 @@ trait CheckIfMerged extends StObject {
     * Pass the appropriate [media type](https://developer.github.com/v3/media/#commits-commit-comparison-and-pull-requests) to fetch diff and patch formats.
     */
   @JSName("get")
-  var get_Original: `300` = js.native
+  var get_Original: `300`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   def list(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls']['response'] */ js.Any
-  ] = js.native
+  ]
   def list(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * List comments for a specific pull request review.
     */
   def listCommentsForReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   def listCommentsForReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * List comments for a specific pull request review.
     */
   @JSName("listCommentsForReview")
-  var listCommentsForReview_Original: `304` = js.native
+  var listCommentsForReview_Original: `304`
   
   /**
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [List commits](https://developer.github.com/v3/repos/commits/#list-commits) endpoint.
     */
   def listCommits(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   def listCommits(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/commits']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/commits']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Lists a maximum of 250 commits for a pull request. To receive a complete commit list for pull requests with more than 250 commits, use the [List commits](https://developer.github.com/v3/repos/commits/#list-commits) endpoint.
     */
   @JSName("listCommits")
-  var listCommits_Original: `305` = js.native
+  var listCommits_Original: `305`
   
   /**
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   def listFiles(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/files']['response'] */ js.Any
-  ] = js.native
+  ]
   def listFiles(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/files']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/files']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** Responses include a maximum of 3000 files. The paginated response returns 30 files per page by default.
     */
   @JSName("listFiles")
-  var listFiles_Original: `306` = js.native
+  var listFiles_Original: `306`
   
   def listRequestedReviewers(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   def listRequestedReviewers(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("listRequestedReviewers")
-  var listRequestedReviewers_Original: `307` = js.native
+  var listRequestedReviewers_Original: `307`
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -477,15 +475,15 @@ trait CheckIfMerged extends StObject {
     */
   def listReviewComments(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   def listReviewComments(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -512,15 +510,15 @@ trait CheckIfMerged extends StObject {
     */
   def listReviewCommentsForRepo(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   def listReviewCommentsForRepo(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/comments']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -545,7 +543,7 @@ trait CheckIfMerged extends StObject {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listReviewCommentsForRepo")
-  var listReviewCommentsForRepo_Original: `309` = js.native
+  var listReviewCommentsForRepo_Original: `309`
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -571,101 +569,101 @@ trait CheckIfMerged extends StObject {
     * The `reactions` key will have the following payload where `url` can be used to construct the API location for [listing and creating](https://developer.github.com/v3/reactions) reactions.
     */
   @JSName("listReviewComments")
-  var listReviewComments_Original: `308` = js.native
+  var listReviewComments_Original: `308`
   
   /**
     * The list of reviews returns in chronological order.
     */
   def listReviews(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews']['response'] */ js.Any
-  ] = js.native
+  ]
   def listReviews(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['GET /repos/:owner/:repo/pulls/:pull_number/reviews']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * The list of reviews returns in chronological order.
     */
   @JSName("listReviews")
-  var listReviews_Original: `310` = js.native
+  var listReviews_Original: `310`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
     */
   @JSName("list")
-  var list_Original: `303` = js.native
+  var list_Original: `303`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def merge(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
-  ] = js.native
+  ]
   def merge(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/merge']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/merge']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("merge")
-  var merge_Original: `311` = js.native
+  var merge_Original: `311`
   
   def removeRequestedReviewers(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   def removeRequestedReviewers(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['DELETE /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("removeRequestedReviewers")
-  var removeRequestedReviewers_Original: `312` = js.native
+  var removeRequestedReviewers_Original: `312`
   
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   def requestReviewers(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   def requestReviewers(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/requested_reviewers']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * This endpoint triggers [notifications](https://docs.github.com/articles/about-notifications/). Creating content too quickly using this endpoint may result in abuse rate limiting. See "[Abuse rate limits](https://developer.github.com/v3/#abuse-rate-limits)" and "[Dealing with abuse rate limits](https://developer.github.com/v3/guides/best-practices-for-integrators/#dealing-with-abuse-rate-limits)" for details.
     */
   @JSName("requestReviewers")
-  var requestReviewers_Original: `313` = js.native
+  var requestReviewers_Original: `313`
   
   def submitReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events']['response'] */ js.Any
-  ] = js.native
+  ]
   def submitReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['POST /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id/events']['response'] */ js.Any
-  ] = js.native
+  ]
   @JSName("submitReview")
-  var submitReview_Original: `314` = js.native
+  var submitReview_Original: `314`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -674,50 +672,50 @@ trait CheckIfMerged extends StObject {
     */
   def update(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/:pull_number']['response'] */ js.Any
-  ] = js.native
+  ]
   def update(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/:pull_number']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/:pull_number']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
   def updateBranch(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/update-branch']['response'] */ js.Any
-  ] = js.native
+  ]
   def updateBranch(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/update-branch']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/update-branch']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * Updates the pull request branch with the latest upstream changes by merging HEAD from the base branch into the pull request branch.
     */
   @JSName("updateBranch")
-  var updateBranch_Original: `316` = js.native
+  var updateBranch_Original: `316`
   
   /**
     * Update the review summary comment with new text.
     */
   def updateReview(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def updateReview(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PUT /repos/:owner/:repo/pulls/:pull_number/reviews/:review_id']['response'] */ js.Any
-  ] = js.native
+  ]
   
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
@@ -742,15 +740,15 @@ trait CheckIfMerged extends StObject {
     */
   def updateReviewComment(): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   def updateReviewComment(
-    params: RequestParameters with (Omit[
+    params: RequestParameters & (Omit[
       /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['parameters'] */ js.Any, 
       baseUrl | headers | mediaType
     ])
   ): js.Promise[
     /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/generated/Endpoints.Endpoints['PATCH /repos/:owner/:repo/pulls/comments/:comment_id']['response'] */ js.Any
-  ] = js.native
+  ]
   /**
     * **Note:** Multi-line comments on pull requests are currently in public beta and subject to change.
     *
@@ -773,13 +771,13 @@ trait CheckIfMerged extends StObject {
     * *   For single-line comments, the diff-positioned way of referencing comments for the `position` attribute. For more information, see `position` in the [input parameters](https://developer.github.com/v3/pulls/comments/#parameters-2) table.
     */
   @JSName("updateReviewComment")
-  var updateReviewComment_Original: `318` = js.native
+  var updateReviewComment_Original: `318`
   
   /**
     * Update the review summary comment with new text.
     */
   @JSName("updateReview")
-  var updateReview_Original: `317` = js.native
+  var updateReview_Original: `317`
   
   /**
     * Draft pull requests are available in public repositories with GitHub Free and GitHub Free for organizations, GitHub Pro, and legacy per-repository billing plans, and in public and private repositories with GitHub Team and GitHub Enterprise Cloud. For more information, see [GitHub's products](https://docs.github.com/github/getting-started-with-github/githubs-products) in the GitHub Help documentation.
@@ -787,5 +785,126 @@ trait CheckIfMerged extends StObject {
     * To open or update a pull request in a public repository, you must have write access to the head or the source branch. For organization-owned repositories, you must be a member of the organization that owns the repository to open or update a pull request.
     */
   @JSName("update")
-  var update_Original: `315` = js.native
+  var update_Original: `315`
+}
+object CheckIfMerged {
+  
+  @scala.inline
+  def apply(
+    checkIfMerged: `292`,
+    create: `293`,
+    createReplyForReviewComment: `294`,
+    createReview: `295`,
+    createReviewComment: `296`,
+    deletePendingReview: `297`,
+    deleteReviewComment: `298`,
+    dismissReview: `299`,
+    get: `300`,
+    getReview: `301`,
+    getReviewComment: `302`,
+    list: `303`,
+    listCommentsForReview: `304`,
+    listCommits: `305`,
+    listFiles: `306`,
+    listRequestedReviewers: `307`,
+    listReviewComments: `308`,
+    listReviewCommentsForRepo: `309`,
+    listReviews: `310`,
+    merge: `311`,
+    removeRequestedReviewers: `312`,
+    requestReviewers: `313`,
+    submitReview: `314`,
+    update: `315`,
+    updateBranch: `316`,
+    updateReview: `317`,
+    updateReviewComment: `318`
+  ): CheckIfMerged = {
+    val __obj = js.Dynamic.literal(checkIfMerged = checkIfMerged.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], createReplyForReviewComment = createReplyForReviewComment.asInstanceOf[js.Any], createReview = createReview.asInstanceOf[js.Any], createReviewComment = createReviewComment.asInstanceOf[js.Any], deletePendingReview = deletePendingReview.asInstanceOf[js.Any], deleteReviewComment = deleteReviewComment.asInstanceOf[js.Any], dismissReview = dismissReview.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], getReview = getReview.asInstanceOf[js.Any], getReviewComment = getReviewComment.asInstanceOf[js.Any], list = list.asInstanceOf[js.Any], listCommentsForReview = listCommentsForReview.asInstanceOf[js.Any], listCommits = listCommits.asInstanceOf[js.Any], listFiles = listFiles.asInstanceOf[js.Any], listRequestedReviewers = listRequestedReviewers.asInstanceOf[js.Any], listReviewComments = listReviewComments.asInstanceOf[js.Any], listReviewCommentsForRepo = listReviewCommentsForRepo.asInstanceOf[js.Any], listReviews = listReviews.asInstanceOf[js.Any], merge = merge.asInstanceOf[js.Any], removeRequestedReviewers = removeRequestedReviewers.asInstanceOf[js.Any], requestReviewers = requestReviewers.asInstanceOf[js.Any], submitReview = submitReview.asInstanceOf[js.Any], update = update.asInstanceOf[js.Any], updateBranch = updateBranch.asInstanceOf[js.Any], updateReview = updateReview.asInstanceOf[js.Any], updateReviewComment = updateReviewComment.asInstanceOf[js.Any])
+    __obj.asInstanceOf[CheckIfMerged]
+  }
+  
+  @scala.inline
+  implicit class CheckIfMergedMutableBuilder[Self <: CheckIfMerged] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setCheckIfMerged(value: `292`): Self = StObject.set(x, "checkIfMerged", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreate(value: `293`): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateReplyForReviewComment(value: `294`): Self = StObject.set(x, "createReplyForReviewComment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateReview(value: `295`): Self = StObject.set(x, "createReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreateReviewComment(value: `296`): Self = StObject.set(x, "createReviewComment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeletePendingReview(value: `297`): Self = StObject.set(x, "deletePendingReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDeleteReviewComment(value: `298`): Self = StObject.set(x, "deleteReviewComment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDismissReview(value: `299`): Self = StObject.set(x, "dismissReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGet(value: `300`): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetReview(value: `301`): Self = StObject.set(x, "getReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGetReviewComment(value: `302`): Self = StObject.set(x, "getReviewComment", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setList(value: `303`): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListCommentsForReview(value: `304`): Self = StObject.set(x, "listCommentsForReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListCommits(value: `305`): Self = StObject.set(x, "listCommits", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListFiles(value: `306`): Self = StObject.set(x, "listFiles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListRequestedReviewers(value: `307`): Self = StObject.set(x, "listRequestedReviewers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListReviewComments(value: `308`): Self = StObject.set(x, "listReviewComments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListReviewCommentsForRepo(value: `309`): Self = StObject.set(x, "listReviewCommentsForRepo", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListReviews(value: `310`): Self = StObject.set(x, "listReviews", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMerge(value: `311`): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRemoveRequestedReviewers(value: `312`): Self = StObject.set(x, "removeRequestedReviewers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRequestReviewers(value: `313`): Self = StObject.set(x, "requestReviewers", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSubmitReview(value: `314`): Self = StObject.set(x, "submitReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdate(value: `315`): Self = StObject.set(x, "update", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateBranch(value: `316`): Self = StObject.set(x, "updateBranch", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateReview(value: `317`): Self = StObject.set(x, "updateReview", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setUpdateReviewComment(value: `318`): Self = StObject.set(x, "updateReviewComment", value.asInstanceOf[js.Any])
+  }
 }

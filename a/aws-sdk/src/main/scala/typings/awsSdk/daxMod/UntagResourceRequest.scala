@@ -2,21 +2,19 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The name of the DAX resource from which the tags should be removed.
     */
-  var ResourceName: String = js.native
+  var ResourceName: String
   
   /**
     * A list of tag keys. If the DAX cluster has any tags with these keys, then the tags are removed from the cluster.
     */
-  var TagKeys: KeyList = js.native
+  var TagKeys: KeyList
 }
 object UntagResourceRequest {
   

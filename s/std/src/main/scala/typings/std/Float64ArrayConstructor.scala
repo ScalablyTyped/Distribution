@@ -6,12 +6,12 @@ import org.scalablytyped.runtime.Instantiable2
 import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Float64ArrayConstructor
-  extends Instantiable0[Float64Array]
+  extends StObject
+     with Instantiable0[Float64Array]
      with Instantiable1[
       (/* array */ ArrayBufferLike) | (/* array */ ArrayLike[Double]) | (/* length */ Double) | (/* elements */ Iterable[Double]), 
       Float64Array
@@ -19,7 +19,7 @@ trait Float64ArrayConstructor
      with Instantiable2[/* buffer */ ArrayBufferLike, /* byteOffset */ Double, Float64Array]
      with Instantiable3[
       /* buffer */ ArrayBufferLike, 
-      js.UndefOr[/* byteOffset */ Double], 
+      (/* byteOffset */ Double) | (/* byteOffset */ Unit), 
       /* length */ Double, 
       Float64Array
     ] {
@@ -41,13 +41,13 @@ trait Float64ArrayConstructor
     * @param thisArg Value of 'this' used to invoke the mapfn.
     */
   def from(arrayLike: Iterable[Double]): Float64Array = js.native
-  def from(arrayLike: Iterable[Double], mapfn: js.UndefOr[scala.Nothing], thisArg: js.Any): Float64Array = js.native
   def from(arrayLike: Iterable[Double], mapfn: js.Function2[/* v */ Double, /* k */ Double, Double]): Float64Array = js.native
   def from(
     arrayLike: Iterable[Double],
     mapfn: js.Function2[/* v */ Double, /* k */ Double, Double],
     thisArg: js.Any
   ): Float64Array = js.native
+  def from(arrayLike: Iterable[Double], mapfn: Unit, thisArg: js.Any): Float64Array = js.native
   /**
     * Creates an array from an array-like or iterable object.
     * @param arrayLike An array-like or iterable object to convert to an array.

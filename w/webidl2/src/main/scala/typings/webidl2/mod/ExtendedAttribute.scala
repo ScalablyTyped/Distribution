@@ -3,26 +3,26 @@ package typings.webidl2.mod
 import typings.webidl2.webidl2Strings.`extended-attribute`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedAttribute extends AbstractBase {
+trait ExtendedAttribute
+  extends StObject
+     with AbstractBase {
   
   /** If the extended attribute takes arguments or if its right-hand side does they are listed here. */
-  var arguments: js.Array[Argument] = js.native
+  var arguments: js.Array[Argument]
   
   /** The extended attribute's name. */
-  var name: String = js.native
+  var name: String
   
   @JSName("parent")
-  var parent_ExtendedAttribute: IDLRootType | FieldType | IDLInterfaceMemberType = js.native
+  var parent_ExtendedAttribute: IDLRootType | FieldType | IDLInterfaceMemberType
   
   /** If there is a right-hand side, this will capture its type and value. */
-  var rhs: ExtendedAttributeRightHandSide | Null = js.native
+  var rhs: ExtendedAttributeRightHandSide | Null
   
   @JSName("type")
-  var type_ExtendedAttribute: `extended-attribute` = js.native
+  var type_ExtendedAttribute: `extended-attribute`
 }
 object ExtendedAttribute {
   
@@ -31,11 +31,10 @@ object ExtendedAttribute {
     arguments: js.Array[Argument],
     extAttrs: js.Array[ExtendedAttribute],
     name: String,
-    parent: IDLRootType | FieldType | IDLInterfaceMemberType,
-    `type`: `extended-attribute`
+    parent: IDLRootType | FieldType | IDLInterfaceMemberType
   ): ExtendedAttribute = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], rhs = null)
+    __obj.updateDynamic("type")("extended-attribute")
     __obj.asInstanceOf[ExtendedAttribute]
   }
   

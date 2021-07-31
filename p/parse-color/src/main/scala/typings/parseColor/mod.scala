@@ -2,37 +2,38 @@ package typings.parseColor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(cstr: String): Color = ^.asInstanceOf[js.Dynamic].apply(cstr.asInstanceOf[js.Any]).asInstanceOf[Color]
+  
   @JSImport("parse-color", JSImport.Namespace)
   @js.native
-  def apply(cstr: String): Color = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Color extends StObject {
     
-    var cmyk: js.Tuple4[Double, Double, Double, Double] = js.native
+    var cmyk: js.Tuple4[Double, Double, Double, Double]
     
-    var cmyka: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+    var cmyka: js.Tuple5[Double, Double, Double, Double, Double]
     
-    var hex: String = js.native
+    var hex: String
     
-    var hsl: js.Tuple3[Double, Double, Double] = js.native
+    var hsl: js.Tuple3[Double, Double, Double]
     
-    var hsla: js.Tuple4[Double, Double, Double, Double] = js.native
+    var hsla: js.Tuple4[Double, Double, Double, Double]
     
-    var hsv: js.Tuple3[Double, Double, Double] = js.native
+    var hsv: js.Tuple3[Double, Double, Double]
     
-    var hsva: js.Tuple4[Double, Double, Double, Double] = js.native
+    var hsva: js.Tuple4[Double, Double, Double, Double]
     
-    var keyword: String = js.native
+    var keyword: String
     
-    var rgb: js.Tuple3[Double, Double, Double] = js.native
+    var rgb: js.Tuple3[Double, Double, Double]
     
-    var rgba: js.Tuple4[Double, Double, Double, Double] = js.native
+    var rgba: js.Tuple4[Double, Double, Double, Double]
   }
   object Color {
     

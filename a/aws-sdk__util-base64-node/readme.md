@@ -10,12 +10,15 @@ A Node.JS Base64 <-> UInt8Array converter
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-base64-node |
 | Keywords           | - |
-| # releases         | 16 |
-| # dependents       | 403 |
-| # downloads        | 1677060 |
+| # releases         | 26 |
+| # dependents       | 248 |
+| # downloads        | 7035267 |
 | # stars            | 0 |
 
 ## Links
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-base64-node)
+- [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
+- [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-base64-node)
     
 

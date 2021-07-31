@@ -3,19 +3,17 @@ package typings.antvDataSet
 import typings.antvDataSet.viewMod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regionMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var as: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var field: String = js.native
+    var field: String
     
-    var geoDataView: View | String = js.native
+    var geoDataView: View | String
   }
   object Options {
     

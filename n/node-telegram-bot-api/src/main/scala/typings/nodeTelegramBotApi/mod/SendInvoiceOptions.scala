@@ -2,31 +2,31 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendInvoiceOptions extends SendBasicOptions {
+trait SendInvoiceOptions
+  extends StObject
+     with SendBasicOptions {
   
-  var is_flexible: js.UndefOr[Boolean] = js.native
+  var is_flexible: js.UndefOr[Boolean] = js.undefined
   
-  var need_email: js.UndefOr[Boolean] = js.native
+  var need_email: js.UndefOr[Boolean] = js.undefined
   
-  var need_name: js.UndefOr[Boolean] = js.native
+  var need_name: js.UndefOr[Boolean] = js.undefined
   
-  var need_phone_number: js.UndefOr[Boolean] = js.native
+  var need_phone_number: js.UndefOr[Boolean] = js.undefined
   
-  var need_shipping_address: js.UndefOr[Boolean] = js.native
+  var need_shipping_address: js.UndefOr[Boolean] = js.undefined
   
-  var photo_height: js.UndefOr[Double] = js.native
+  var photo_height: js.UndefOr[Double] = js.undefined
   
-  var photo_size: js.UndefOr[Double] = js.native
+  var photo_size: js.UndefOr[Double] = js.undefined
   
-  var photo_url: js.UndefOr[String] = js.native
+  var photo_url: js.UndefOr[String] = js.undefined
   
-  var photo_width: js.UndefOr[Double] = js.native
+  var photo_width: js.UndefOr[Double] = js.undefined
   
-  var provider_data: js.UndefOr[String] = js.native
+  var provider_data: js.UndefOr[String] = js.undefined
 }
 object SendInvoiceOptions {
   

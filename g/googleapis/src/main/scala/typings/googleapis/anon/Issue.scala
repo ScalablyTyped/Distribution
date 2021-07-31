@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issue extends StObject {
   
-  var issue: js.UndefOr[js.Array[IssueDisplayNumber]] = js.native
+  var issue: js.UndefOr[js.Array[IssueDisplayNumber]] = js.undefined
   
-  var orderNumber: js.UndefOr[Double] = js.native
+  var orderNumber: js.UndefOr[Double] = js.undefined
   
-  var seriesBookType: js.UndefOr[String] = js.native
+  var seriesBookType: js.UndefOr[String] = js.undefined
   
-  var seriesId: js.UndefOr[String] = js.native
+  var seriesId: js.UndefOr[String] = js.undefined
 }
 object Issue {
   

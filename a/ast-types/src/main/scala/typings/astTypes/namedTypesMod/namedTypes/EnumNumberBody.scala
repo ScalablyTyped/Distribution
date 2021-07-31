@@ -4,17 +4,17 @@ import typings.astTypes.kindsMod.EnumNumberMemberKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumNumberBody extends ASTNode {
+trait EnumNumberBody
+  extends StObject
+     with ASTNode {
   
-  var explicitType: Boolean = js.native
+  var explicitType: Boolean
   
-  var members: js.Array[EnumNumberMemberKind] = js.native
+  var members: js.Array[EnumNumberMemberKind]
   
-  var `type`: typings.astTypes.astTypesStrings.EnumNumberBody = js.native
+  var `type`: typings.astTypes.astTypesStrings.EnumNumberBody
 }
 object EnumNumberBody {
   

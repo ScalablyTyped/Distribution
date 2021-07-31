@@ -6,41 +6,41 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.semi_structured_
 import typings.elasticElasticsearch.elasticElasticsearchStrings.xml
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlFindFileStructure[T] extends Generic {
+trait MlFindFileStructure[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var charset: js.UndefOr[String] = js.native
+  var charset: js.UndefOr[String] = js.undefined
   
-  var column_names: js.UndefOr[String | js.Array[String]] = js.native
+  var column_names: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[ndjson | xml | delimited | semi_structured_text] = js.native
+  var format: js.UndefOr[ndjson | xml | delimited | semi_structured_text] = js.undefined
   
-  var grok_pattern: js.UndefOr[String] = js.native
+  var grok_pattern: js.UndefOr[String] = js.undefined
   
-  var has_header_row: js.UndefOr[Boolean] = js.native
+  var has_header_row: js.UndefOr[Boolean] = js.undefined
   
-  var line_merge_size_limit: js.UndefOr[Double] = js.native
+  var line_merge_size_limit: js.UndefOr[Double] = js.undefined
   
-  var lines_to_sample: js.UndefOr[Double] = js.native
+  var lines_to_sample: js.UndefOr[Double] = js.undefined
   
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
-  var should_trim_fields: js.UndefOr[Boolean] = js.native
+  var should_trim_fields: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var timestamp_field: js.UndefOr[String] = js.native
+  var timestamp_field: js.UndefOr[String] = js.undefined
   
-  var timestamp_format: js.UndefOr[String] = js.native
+  var timestamp_format: js.UndefOr[String] = js.undefined
 }
 object MlFindFileStructure {
   
@@ -51,7 +51,7 @@ object MlFindFileStructure {
   }
   
   @scala.inline
-  implicit class MlFindFileStructureMutableBuilder[Self <: MlFindFileStructure[_], T] (val x: Self with MlFindFileStructure[T]) extends AnyVal {
+  implicit class MlFindFileStructureMutableBuilder[Self <: MlFindFileStructure[?], T] (val x: Self & MlFindFileStructure[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

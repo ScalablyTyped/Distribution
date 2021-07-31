@@ -2,21 +2,21 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlAltitudeGeometry extends KmlObject {
+trait KmlAltitudeGeometry
+  extends StObject
+     with KmlObject {
   
   /**
     * Specifies how altitude components in the geometry coordinates are interpreted.
     */
-  def getAltitudeMode(): KmlAltitudeModeEnum = js.native
+  def getAltitudeMode(): KmlAltitudeModeEnum
   
   /**
     * Specifies how altitude components in the geometry coordinates are interpreted.
     */
-  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit = js.native
+  def setAltitudeMode(altitudeMode: KmlAltitudeModeEnum): Unit
 }
 object KmlAltitudeGeometry {
   

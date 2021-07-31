@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,31 +9,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * defined by the app developer in the app&#39;s managed configurations
   * schema, as well as any configuration variables defined for the user.
   */
-@js.native
 trait SchemaManagedConfiguration extends StObject {
   
   /**
     * Contains the ID of the managed configuration profile and the set of
     * configuration variables (if any) defined for the user.
     */
-  var configurationVariables: js.UndefOr[SchemaConfigurationVariables] = js.native
+  var configurationVariables: js.UndefOr[SchemaConfigurationVariables] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#managedConfiguration&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The set of managed properties for this configuration.
     */
-  var managedProperty: js.UndefOr[js.Array[SchemaManagedProperty]] = js.native
+  var managedProperty: js.UndefOr[js.Array[SchemaManagedProperty]] = js.undefined
   
   /**
     * The ID of the product that the managed configuration is for, e.g.
     * &quot;app:com.google.android.gm&quot;.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedConfiguration {
   

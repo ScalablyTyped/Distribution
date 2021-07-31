@@ -2,23 +2,21 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutAnimationTypes extends StObject {
   
-  var easeIn: String = js.native
+  var easeIn: String
   
-  var easeInEaseOut: String = js.native
+  var easeInEaseOut: String
   
-  var easeOut: String = js.native
+  var easeOut: String
   
-  var keyboard: String = js.native
+  var keyboard: String
   
-  var linear: String = js.native
+  var linear: String
   
-  var spring: String = js.native
+  var spring: String
 }
 object LayoutAnimationTypes {
   

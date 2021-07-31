@@ -4,7 +4,6 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The implementation reads the original data from the input stream, that has been set previously at the {@link XActiveDataSink} interface. In general
   * the implementation must buffer the data.
   */
-@js.native
 trait MarkableInputStream
-  extends XInputStream
+  extends StObject
+     with XInputStream
      with XMarkableStream
      with XActiveDataSink
      with XConnectable

@@ -2,31 +2,29 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSnapshotBlockResponse extends StObject {
   
   /**
     * The data content of the block.
     */
-  var BlockData: js.UndefOr[typings.awsSdk.ebsMod.BlockData] = js.native
+  var BlockData: js.UndefOr[typings.awsSdk.ebsMod.BlockData] = js.undefined
   
   /**
     * The checksum generated for the block, which is Base64 encoded.
     */
-  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.native
+  var Checksum: js.UndefOr[typings.awsSdk.ebsMod.Checksum] = js.undefined
   
   /**
     * The algorithm used to generate the checksum for the block, such as SHA256.
     */
-  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.native
+  var ChecksumAlgorithm: js.UndefOr[typings.awsSdk.ebsMod.ChecksumAlgorithm] = js.undefined
   
   /**
     * The size of the data in the block.
     */
-  var DataLength: js.UndefOr[typings.awsSdk.ebsMod.DataLength] = js.native
+  var DataLength: js.UndefOr[typings.awsSdk.ebsMod.DataLength] = js.undefined
 }
 object GetSnapshotBlockResponse {
   

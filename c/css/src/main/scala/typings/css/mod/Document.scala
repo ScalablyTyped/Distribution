@@ -2,22 +2,21 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
   
   /** The part following @document. */
-  var document: js.UndefOr[String] = js.native
+  var document: js.UndefOr[String] = js.undefined
   
   /** Array of nodes with the types rule, comment and any of the at-rule types. */
-  var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.undefined
   
   /** The vendor prefix in @document, or undefined if there is none. */
-  var vendor: js.UndefOr[String] = js.native
+  var vendor: js.UndefOr[String] = js.undefined
 }
 object Document {
   

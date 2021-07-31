@@ -3,15 +3,15 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Atrule extends Node {
+trait Atrule
+  extends StObject
+     with Node {
   
-  var hasOnlyProperties: scala.Boolean = js.native
+  var hasOnlyProperties: scala.Boolean
   
-  var `type`: java.lang.String = js.native
+  var `type`: java.lang.String
 }
 object Atrule {
   

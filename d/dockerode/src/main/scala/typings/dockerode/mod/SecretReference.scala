@@ -3,17 +3,15 @@ package typings.dockerode.mod
 import typings.dockerode.anon.GID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecretReference extends StObject {
   
-  var File: js.UndefOr[GID] = js.native
+  var File: js.UndefOr[GID] = js.undefined
   
-  var SecretID: js.UndefOr[String] = js.native
+  var SecretID: js.UndefOr[String] = js.undefined
   
-  var SecretName: js.UndefOr[String] = js.native
+  var SecretName: js.UndefOr[String] = js.undefined
 }
 object SecretReference {
   

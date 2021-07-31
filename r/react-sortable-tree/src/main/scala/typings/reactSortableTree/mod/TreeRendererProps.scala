@@ -9,49 +9,47 @@ import typings.reactSortableTree.reactSortableTreeStrings.ltr
 import typings.reactSortableTree.reactSortableTreeStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeRendererProps extends StObject {
   
-  var canDrop: js.UndefOr[Boolean] = js.native
+  var canDrop: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.Array[Element] = js.native
+  var children: js.Array[Element]
   
   // Drop target
-  var connectDropTarget: ConnectDropTarget = js.native
+  var connectDropTarget: ConnectDropTarget
   
-  var draggedNode: js.UndefOr[TreeItem] = js.native
+  var draggedNode: js.UndefOr[TreeItem] = js.undefined
   
   // used in dndManager
-  def getPrevRow(): FlatDataItem | Null = js.native
+  def getPrevRow(): FlatDataItem | Null
   
-  var isOver: Boolean = js.native
+  var isOver: Boolean
   
-  var listIndex: Double = js.native
+  var listIndex: Double
   
-  var lowerSiblingCounts: js.Array[Double] = js.native
+  var lowerSiblingCounts: js.Array[Double]
   
-  var node: TreeItem = js.native
+  var node: TreeItem
   
-  var path: NumberOrStringArray = js.native
+  var path: NumberOrStringArray
   
-  var rowDirection: js.UndefOr[ltr | rtl] = js.native
+  var rowDirection: js.UndefOr[ltr | rtl] = js.undefined
   
-  var scaffoldBlockPxWidth: Double = js.native
+  var scaffoldBlockPxWidth: Double
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var swapDepth: js.UndefOr[Double] = js.native
+  var swapDepth: js.UndefOr[Double] = js.undefined
   
-  var swapFrom: js.UndefOr[Double] = js.native
+  var swapFrom: js.UndefOr[Double] = js.undefined
   
-  var swapLength: js.UndefOr[Double] = js.native
+  var swapLength: js.UndefOr[Double] = js.undefined
   
-  var treeId: String = js.native
+  var treeId: String
   
-  var treeIndex: Double = js.native
+  var treeIndex: Double
 }
 object TreeRendererProps {
   

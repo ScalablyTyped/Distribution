@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCardSuccessCallbackResult extends StObject {
   
   /** 卡券添加结果列表 */
-  var cardList: js.Array[AddCardResponseInfo] = js.native
+  var cardList: js.Array[AddCardResponseInfo]
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object AddCardSuccessCallbackResult {
   

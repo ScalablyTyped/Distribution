@@ -9,40 +9,38 @@ import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime
 import typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.UnmarshalledQuietTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesScheduleMod {
   
-  @js.native
   trait Schedule extends StObject {
     
     /**
       * The scheduled time that the campaign ends in ISO 8601 format.
       */
-    var EndTime: js.UndefOr[String] = js.native
+    var EndTime: js.UndefOr[String] = js.undefined
     
     /**
       * How often the campaign delivers messages.
       *
       * Valid values: ONCE, HOURLY, DAILY, WEEKLY, MONTHLY
       */
-    var Frequency: js.UndefOr[ONCE | HOURLY | DAILY | WEEKLY | MONTHLY | String] = js.native
+    var Frequency: js.UndefOr[ONCE | HOURLY | DAILY | WEEKLY | MONTHLY | String] = js.undefined
     
     /**
       * Indicates whether the campaign schedule takes effect according to each user's local time.
       */
-    var IsLocalTime: js.UndefOr[Boolean] = js.native
+    var IsLocalTime: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The time during which the campaign sends no messages.
       */
-    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.native
+    var QuietTime: js.UndefOr[typings.awsSdkClientPinpointBrowser.typesQuietTimeMod.QuietTime] = js.undefined
     
     /**
       * The scheduled time that the campaign begins in ISO 8601 format.
       */
-    var StartTime: js.UndefOr[String] = js.native
+    var StartTime: js.UndefOr[String] = js.undefined
     
     /**
       * The starting UTC offset for the schedule if the value for isLocalTime is true
@@ -80,7 +78,7 @@ object typesScheduleMod {
       * UTC-10
       * UTC-11
       */
-    var Timezone: js.UndefOr[String] = js.native
+    var Timezone: js.UndefOr[String] = js.undefined
   }
   object Schedule {
     
@@ -131,14 +129,15 @@ object typesScheduleMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSchedule extends Schedule {
+  trait UnmarshalledSchedule
+    extends StObject
+       with Schedule {
     
     /**
       * The time during which the campaign sends no messages.
       */
     @JSName("QuietTime")
-    var QuietTime_UnmarshalledSchedule: js.UndefOr[UnmarshalledQuietTime] = js.native
+    var QuietTime_UnmarshalledSchedule: js.UndefOr[UnmarshalledQuietTime] = js.undefined
   }
   object UnmarshalledSchedule {
     

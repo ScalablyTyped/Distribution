@@ -2,16 +2,15 @@ package typings.echarts.echarts
 
 import typings.echarts.anon.AspectRatio
 import typings.echarts.echarts.EChartOption.Series
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EChartsMediaOption extends js.Object {
+trait EChartsMediaOption extends StObject {
   
-  var option: EChartOption[Series] = js.native
+  var option: EChartOption[Series]
   
-  var query: AspectRatio = js.native
+  var query: AspectRatio
 }
 object EChartsMediaOption {
   
@@ -22,24 +21,12 @@ object EChartsMediaOption {
   }
   
   @scala.inline
-  implicit class EChartsMediaOptionOps[Self <: EChartsMediaOption] (val x: Self) extends AnyVal {
+  implicit class EChartsMediaOptionMutableBuilder[Self <: EChartsMediaOption] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setOption(value: EChartOption[Series]): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
-    
-    @scala.inline
-    def setOption(value: EChartOption[Series]): Self = this.set("option", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setQuery(value: AspectRatio): Self = this.set("query", value.asInstanceOf[js.Any])
+    def setQuery(value: AspectRatio): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }
 }

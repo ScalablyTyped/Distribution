@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBranchOutput extends StObject {
   
   /**
     * The name of the branch.
     */
-  var branch: js.UndefOr[BranchInfo] = js.native
+  var branch: js.UndefOr[BranchInfo] = js.undefined
 }
 object GetBranchOutput {
   

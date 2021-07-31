@@ -5,71 +5,69 @@ import typings.electron.electronStrings.unavailable
 import typings.electron.electronStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Display extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/display
   /**
     * Can be `available`, `unavailable`, `unknown`.
     */
-  var accelerometerSupport: available | unavailable | unknown_ = js.native
+  var accelerometerSupport: available | unavailable | unknown_
   
-  var bounds: Rectangle = js.native
+  var bounds: Rectangle
   
   /**
     * The number of bits per pixel.
     */
-  var colorDepth: Double = js.native
+  var colorDepth: Double
   
   /**
     * represent a color space (three-dimensional object which contains all realizable
     * color combinations) for the purpose of color conversions
     */
-  var colorSpace: String = js.native
+  var colorSpace: String
   
   /**
     * The number of bits per color component.
     */
-  var depthPerComponent: Double = js.native
+  var depthPerComponent: Double
   
   /**
     * Unique identifier associated with the display.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * `true` for an internal display and `false` for an external display
     */
-  var internal: Boolean = js.native
+  var internal: Boolean
   
   /**
     * Whether or not the display is a monochrome display.
     */
-  var monochrome: Boolean = js.native
+  var monochrome: Boolean
   
   /**
     * Can be 0, 90, 180, 270, represents screen rotation in clock-wise degrees.
     */
-  var rotation: Double = js.native
+  var rotation: Double
   
   /**
     * Output device's pixel scale factor.
     */
-  var scaleFactor: Double = js.native
+  var scaleFactor: Double
   
-  var size: Size = js.native
+  var size: Size
   
   /**
     * Can be `available`, `unavailable`, `unknown`.
     */
-  var touchSupport: available | unavailable | unknown_ = js.native
+  var touchSupport: available | unavailable | unknown_
   
-  var workArea: Rectangle = js.native
+  var workArea: Rectangle
   
-  var workAreaSize: Size = js.native
+  var workAreaSize: Size
 }
 object Display {
   

@@ -3,20 +3,20 @@ package typings.rcFieldForm.interfaceMod
 import typings.rcFieldForm.rcFieldFormStrings.validateFinish
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValidateFinishInfo extends NotifyInfo {
+trait ValidateFinishInfo
+  extends StObject
+     with NotifyInfo {
   
-  var `type`: validateFinish = js.native
+  var `type`: validateFinish
 }
 object ValidateFinishInfo {
   
   @scala.inline
-  def apply(`type`: validateFinish): ValidateFinishInfo = {
+  def apply(): ValidateFinishInfo = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("validateFinish")
     __obj.asInstanceOf[ValidateFinishInfo]
   }
   

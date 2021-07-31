@@ -6,25 +6,26 @@ import typings.reactNavigationRouters.typesMod.ParamListBase
 import typings.reactNavigationRouters.typesMod.Router
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useOnRouteFocusMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useOnRouteFocus", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useOnRouteFocus", JSImport.Namespace)
   @js.native
-  def default[Action /* <: NavigationAction */](hasRouterGetStateKeySetState: Options[Action]): js.Function1[/* key */ String, Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[Action /* <: NavigationAction */](hasRouterGetStateSourceRouteKeySetState: Options[Action]): js.Function1[/* key */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasRouterGetStateSourceRouteKeySetState.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* key */ String, Unit]]
+  
   trait Options[Action /* <: NavigationAction */] extends StObject {
     
-    def getState(): NavigationState[ParamListBase] = js.native
+    def getState(): NavigationState[ParamListBase]
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var router: Router[NavigationState[ParamListBase], Action] = js.native
+    var router: Router[NavigationState[ParamListBase], Action]
     
-    def setState(state: NavigationState[ParamListBase]): Unit = js.native
+    def setState(state: NavigationState[ParamListBase]): Unit
   }
   object Options {
     
@@ -39,7 +40,7 @@ object useOnRouteFocusMod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], Action /* <: NavigationAction */] (val x: Self with Options[Action]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], Action /* <: NavigationAction */] (val x: Self & Options[Action]) extends AnyVal {
       
       @scala.inline
       def setGetState(value: () => NavigationState[ParamListBase]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))

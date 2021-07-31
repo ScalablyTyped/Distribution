@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.rendering.XCanvas
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * used for placing the bitmaps that are used paint the border. The inner sides and corners are places relative to this center box, i.e. when not further
   * offsets are given then the upper left corner bitmap is painted with its lower right at the upper left of the center box.
   */
-@js.native
 trait XPaneBorderPainter extends StObject {
   
   /**
@@ -27,13 +25,13 @@ trait XPaneBorderPainter extends StObject {
     * @param aRectangle This rectangle will be converted into a larger one. This should be the center box or the inner bounding box of the border.
     * @param eBorderType The part of the border to add to the given rectangle. Use INNER_BORDER to convert an inner bounding box into the center box or TOTAL_
     */
-  def addBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle = js.native
+  def addBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle
   
   /**
     * Return the offset of a call out anchor with respect to the outer border. This value is used when the call out is realized by a fixed bitmap in order
     * to determine the size and/or location of the outer border for a given call out.
     */
-  def getCalloutOffset(sPaneBorderStyleName: String): Point = js.native
+  def getCalloutOffset(sPaneBorderStyleName: String): Point
   
   /**
     * Paint the border around a pane.
@@ -49,7 +47,7 @@ trait XPaneBorderPainter extends StObject {
     aOuterBorderRectangle: Rectangle,
     aRepaintArea: Rectangle,
     sTitle: String
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Paint the border around a pane where the border includes a call out that is anchored at the given point. Most arguments have the same meaning as in
@@ -69,7 +67,7 @@ trait XPaneBorderPainter extends StObject {
     aRepaintArea: Rectangle,
     sTitle: String,
     aCalloutAnchor: Point
-  ): Unit = js.native
+  ): Unit
   
   /**
     * Shrink the given rectangle by the size of the specified part of the border. This method can be used to convert an outer bounding box into the center
@@ -78,7 +76,7 @@ trait XPaneBorderPainter extends StObject {
     * @param aRectangle This rectangle will be converted into a smaller one that lies inside it. It should be the center box or the outer bounding box of the
     * @param eBorderType The part of the border to remove from the given rectangle. Use OUTER_BORDER to convert an outer bounding box into the center box or T
     */
-  def removeBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle = js.native
+  def removeBorder(sPaneBorderStyleName: String, aRectangle: Rectangle, eBorderType: BorderType): Rectangle
 }
 object XPaneBorderPainter {
   

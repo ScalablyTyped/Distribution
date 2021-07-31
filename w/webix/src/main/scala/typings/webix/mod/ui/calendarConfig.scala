@@ -7,111 +7,109 @@ import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait calendarConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var blockDates: js.UndefOr[WebixCallback] = js.native
+  var blockDates: js.UndefOr[WebixCallback] = js.undefined
   
-  var blockTime: js.UndefOr[WebixCallback] = js.native
+  var blockTime: js.UndefOr[WebixCallback] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var calendarHeader: js.UndefOr[String] = js.native
+  var calendarHeader: js.UndefOr[String] = js.undefined
   
-  var calendarTime: js.UndefOr[String] = js.native
+  var calendarTime: js.UndefOr[String] = js.undefined
   
-  var calendarWeekHeader: js.UndefOr[String] = js.native
+  var calendarWeekHeader: js.UndefOr[String] = js.undefined
   
-  var cellHeight: js.UndefOr[Double | String] = js.native
+  var cellHeight: js.UndefOr[Double | String] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var date: js.UndefOr[Date | String] = js.native
+  var date: js.UndefOr[Date | String] = js.undefined
   
-  var dayTemplate: js.UndefOr[WebixCallback] = js.native
+  var dayTemplate: js.UndefOr[WebixCallback] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var events: js.UndefOr[WebixCallback] = js.native
+  var events: js.UndefOr[WebixCallback] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var headerHeight: js.UndefOr[Double] = js.native
+  var headerHeight: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icons: js.UndefOr[js.Any] = js.native
+  var icons: js.UndefOr[js.Any] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String] = js.native
+  var maxDate: js.UndefOr[Date | String] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxTime: js.UndefOr[String] = js.native
+  var maxTime: js.UndefOr[String] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | String] = js.native
+  var minDate: js.UndefOr[Date | String] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minTime: js.UndefOr[String] = js.native
+  var minTime: js.UndefOr[String] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var minuteStep: js.UndefOr[Double] = js.native
+  var minuteStep: js.UndefOr[Double] = js.undefined
   
-  var monthHeader: js.UndefOr[Boolean] = js.native
+  var monthHeader: js.UndefOr[Boolean] = js.undefined
   
-  var monthSelect: js.UndefOr[Boolean] = js.native
+  var monthSelect: js.UndefOr[Boolean] = js.undefined
   
-  var mouseEventDelay: js.UndefOr[Double] = js.native
+  var mouseEventDelay: js.UndefOr[Double] = js.undefined
   
-  var multiselect: js.UndefOr[Boolean | String] = js.native
+  var multiselect: js.UndefOr[Boolean | String] = js.undefined
   
-  var navigation: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[Boolean] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onDblClick: js.UndefOr[WebixCallback] = js.native
+  var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
-  var onMouseMove: js.UndefOr[WebixCallback] = js.native
+  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
-  var select: js.UndefOr[Boolean] = js.native
+  var select: js.UndefOr[Boolean] = js.undefined
   
-  var skipEmptyWeeks: js.UndefOr[Boolean] = js.native
+  var skipEmptyWeeks: js.UndefOr[Boolean] = js.undefined
   
-  var timeIcon: js.UndefOr[String] = js.native
+  var timeIcon: js.UndefOr[String] = js.undefined
   
-  var timepicker: js.UndefOr[Boolean] = js.native
+  var timepicker: js.UndefOr[Boolean] = js.undefined
   
-  var timepickerHeight: js.UndefOr[Double] = js.native
+  var timepickerHeight: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var weekHeader: js.UndefOr[Boolean] = js.native
+  var weekHeader: js.UndefOr[Boolean] = js.undefined
   
-  var weekNumber: js.UndefOr[Boolean] = js.native
+  var weekNumber: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object calendarConfig {
   
@@ -131,13 +129,13 @@ object calendarConfig {
     def setAnimateUndefined: Self = StObject.set(x, "animate", js.undefined)
     
     @scala.inline
-    def setBlockDates(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "blockDates", js.Any.fromFunction1(value))
+    def setBlockDates(value: WebixCallback): Self = StObject.set(x, "blockDates", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBlockDatesUndefined: Self = StObject.set(x, "blockDates", js.undefined)
     
     @scala.inline
-    def setBlockTime(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "blockTime", js.Any.fromFunction1(value))
+    def setBlockTime(value: WebixCallback): Self = StObject.set(x, "blockTime", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBlockTimeUndefined: Self = StObject.set(x, "blockTime", js.undefined)
@@ -191,7 +189,7 @@ object calendarConfig {
     def setDateUndefined: Self = StObject.set(x, "date", js.undefined)
     
     @scala.inline
-    def setDayTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dayTemplate", js.Any.fromFunction1(value))
+    def setDayTemplate(value: WebixCallback): Self = StObject.set(x, "dayTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDayTemplateUndefined: Self = StObject.set(x, "dayTemplate", js.undefined)
@@ -203,7 +201,7 @@ object calendarConfig {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setEvents(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "events", js.Any.fromFunction1(value))
+    def setEvents(value: WebixCallback): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsUndefined: Self = StObject.set(x, "events", js.undefined)
@@ -350,13 +348,13 @@ object calendarConfig {
     def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
     @scala.inline
-    def setOnDblClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDblClick", js.Any.fromFunction1(value))
+    def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)

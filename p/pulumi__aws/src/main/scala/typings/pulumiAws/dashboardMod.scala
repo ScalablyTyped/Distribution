@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dashboardMod {
@@ -43,6 +42,10 @@ object dashboardMod {
   /* static members */
   object Dashboard {
     
+    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Dashboard resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -52,40 +55,34 @@ object dashboardMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Dashboard = js.native
-    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Dashboard = js.native
-    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DashboardState): Dashboard = js.native
-    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DashboardState, opts: CustomResourceOptions): Dashboard = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DashboardState): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DashboardState, opts: CustomResourceOptions): Dashboard = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Dashboard]
     
     /**
       * Returns true if the given object is an instance of Dashboard.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/dashboard", "Dashboard.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/dashboard.Dashboard */ Boolean]
   }
   
-  @js.native
   trait DashboardArgs extends StObject {
     
     /**
       * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
       */
-    val dashboardBody: Input[String] = js.native
+    val dashboardBody: Input[String]
     
     /**
       * The name of the dashboard.
       */
-    val dashboardName: Input[String] = js.native
+    val dashboardName: Input[String]
   }
   object DashboardArgs {
     
@@ -106,23 +103,22 @@ object dashboardMod {
     }
   }
   
-  @js.native
   trait DashboardState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of the dashboard.
       */
-    val dashboardArn: js.UndefOr[Input[String]] = js.native
+    val dashboardArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The detailed information about the dashboard, including what widgets are included and their location on the dashboard. You can read more about the body structure in the [documentation](https://docs.aws.amazon.com/AmazonCloudWatch/latest/APIReference/CloudWatch-Dashboard-Body-Structure.html).
       */
-    val dashboardBody: js.UndefOr[Input[String]] = js.native
+    val dashboardBody: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the dashboard.
       */
-    val dashboardName: js.UndefOr[Input[String]] = js.native
+    val dashboardName: js.UndefOr[Input[String]] = js.undefined
   }
   object DashboardState {
     

@@ -4,7 +4,6 @@ import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object olTileMod {
@@ -18,10 +17,9 @@ object olTileMod {
   
   type LoadFunction = js.Function2[/* p0 */ Tile, /* p1 */ String, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

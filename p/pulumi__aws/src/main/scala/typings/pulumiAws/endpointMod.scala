@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object endpointMod {
@@ -134,6 +133,10 @@ object endpointMod {
   /* static members */
   object Endpoint {
     
+    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Endpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -143,125 +146,119 @@ object endpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Endpoint = js.native
-    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Endpoint = js.native
-    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = js.native
-    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EndpointState, opts: CustomResourceOptions): Endpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Endpoint]
     
     /**
       * Returns true if the given object is an instance of Endpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dms/endpoint", "Endpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dms/endpoint.Endpoint */ Boolean]
   }
   
-  @js.native
   trait EndpointArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) for the certificate.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the endpoint database.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with Elasticsearch settings. Detailed below.
       */
-    val elasticsearchSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]] = js.native
+    val elasticsearchSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]] = js.undefined
     
     /**
       * The database endpoint identifier.
       */
-    val endpointId: Input[String] = js.native
+    val endpointId: Input[String]
     
     /**
       * The type of endpoint. Can be one of `source | target`.
       */
-    val endpointType: Input[String] = js.native
+    val endpointType: Input[String]
     
     /**
       * The type of engine for the endpoint. Can be one of `aurora | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch | kafka | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
       */
-    val engineName: Input[String] = js.native
+    val engineName: Input[String]
     
     /**
       * Additional attributes associated with the connection. For available attributes see [Using Extra Connection Attributes with AWS Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
       */
-    val extraConnectionAttributes: js.UndefOr[Input[String]] = js.native
+    val extraConnectionAttributes: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with Kafka settings. Detailed below.
       */
-    val kafkaSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]] = js.native
+    val kafkaSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]] = js.undefined
     
     /**
       * Configuration block with Kinesis settings. Detailed below.
       */
-    val kinesisSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]] = js.native
+    val kinesisSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with MongoDB settings. Detailed below.
       */
-    val mongodbSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]] = js.native
+    val mongodbSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]] = js.undefined
     
     /**
       * The password to be used to login to the endpoint database.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port used by the endpoint database.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block with S3 settings. Detailed below.
       */
-    val s3Settings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]] = js.native
+    val s3Settings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]] = js.undefined
     
     /**
       * The host name of the server.
       */
-    val serverName: js.UndefOr[Input[String]] = js.native
+    val serverName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) used by the service access IAM role for dynamodb endpoints.
       */
-    val serviceAccessRole: js.UndefOr[Input[String]] = js.native
+    val serviceAccessRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The SSL mode to use for the connection. Can be one of `none | require | verify-ca | verify-full`
       */
-    val sslMode: js.UndefOr[Input[String]] = js.native
+    val sslMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user name to be used to login to the endpoint database.
       */
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointArgs {
     
@@ -381,108 +378,107 @@ object endpointMod {
     }
   }
   
-  @js.native
   trait EndpointState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) for the certificate.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the endpoint database.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with Elasticsearch settings. Detailed below.
       */
-    val elasticsearchSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]] = js.native
+    val elasticsearchSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointElasticsearchSettings]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the endpoint.
       */
-    val endpointArn: js.UndefOr[Input[String]] = js.native
+    val endpointArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The database endpoint identifier.
       */
-    val endpointId: js.UndefOr[Input[String]] = js.native
+    val endpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of endpoint. Can be one of `source | target`.
       */
-    val endpointType: js.UndefOr[Input[String]] = js.native
+    val endpointType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of engine for the endpoint. Can be one of `aurora | aurora-postgresql| azuredb | db2 | docdb | dynamodb | elasticsearch | kafka | kinesis | mariadb | mongodb | mysql | oracle | postgres | redshift | s3 | sqlserver | sybase`.
       */
-    val engineName: js.UndefOr[Input[String]] = js.native
+    val engineName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Additional attributes associated with the connection. For available attributes see [Using Extra Connection Attributes with AWS Database Migration Service](http://docs.aws.amazon.com/dms/latest/userguide/CHAP_Introduction.ConnectionAttributes.html).
       */
-    val extraConnectionAttributes: js.UndefOr[Input[String]] = js.native
+    val extraConnectionAttributes: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with Kafka settings. Detailed below.
       */
-    val kafkaSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]] = js.native
+    val kafkaSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKafkaSettings]] = js.undefined
     
     /**
       * Configuration block with Kinesis settings. Detailed below.
       */
-    val kinesisSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]] = js.native
+    val kinesisSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointKinesisSettings]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) for the KMS key that will be used to encrypt the connection parameters. If you do not specify a value for `kmsKeyArn`, then AWS DMS will use your default encryption key. AWS KMS creates the default encryption key for your AWS account. Your AWS account has a different default encryption key for each AWS region.
       */
-    val kmsKeyArn: js.UndefOr[Input[String]] = js.native
+    val kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block with MongoDB settings. Detailed below.
       */
-    val mongodbSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]] = js.native
+    val mongodbSettings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointMongodbSettings]] = js.undefined
     
     /**
       * The password to be used to login to the endpoint database.
       */
-    val password: js.UndefOr[Input[String]] = js.native
+    val password: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port used by the endpoint database.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block with S3 settings. Detailed below.
       */
-    val s3Settings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]] = js.native
+    val s3Settings: js.UndefOr[Input[typings.pulumiAws.inputMod.dms.EndpointS3Settings]] = js.undefined
     
     /**
       * The host name of the server.
       */
-    val serverName: js.UndefOr[Input[String]] = js.native
+    val serverName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) used by the service access IAM role for dynamodb endpoints.
       */
-    val serviceAccessRole: js.UndefOr[Input[String]] = js.native
+    val serviceAccessRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The SSL mode to use for the connection. Can be one of `none | require | verify-ca | verify-full`
       */
-    val sslMode: js.UndefOr[Input[String]] = js.native
+    val sslMode: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The user name to be used to login to the endpoint database.
       */
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
   }
   object EndpointState {
     

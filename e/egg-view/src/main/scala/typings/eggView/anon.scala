@@ -2,23 +2,21 @@ package typings.eggView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cache extends StObject {
     
-    var cache: Boolean = js.native
+    var cache: Boolean
     
-    var defaultExtension: String = js.native
+    var defaultExtension: String
     
-    var defaultViewEngine: String = js.native
+    var defaultViewEngine: String
     
-    var mapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ js.Any = js.native
+    var mapping: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject<string> */ js.Any
     
-    var root: String = js.native
+    var root: String
   }
   object Cache {
     

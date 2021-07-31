@@ -3,29 +3,29 @@ package typings.voximplantWebsdk.mod.IMEventTypes
 import typings.voximplantWebsdk.mod.VoxImplantIMEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Event dispatched when instant message was removed by user
   */
-@js.native
-trait MessageRemoved extends VoxImplantIMEvent {
+trait MessageRemoved
+  extends StObject
+     with VoxImplantIMEvent {
   
   /**
     *    User id (of the user who sent the message)
     */
-  var id: String = js.native
+  var id: String
   
   /**
     *    Message id
     */
-  var message_id: String = js.native
+  var message_id: String
   
   /**
     *    User id (of the user to whom the message was sent)
     */
-  var to: String = js.native
+  var to: String
 }
 object MessageRemoved {
   

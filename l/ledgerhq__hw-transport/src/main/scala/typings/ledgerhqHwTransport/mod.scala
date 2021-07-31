@@ -5,76 +5,82 @@ import typings.ledgerhqHwTransport.ledgerhqHwTransportStrings.remove
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@ledgerhq/hw-transport", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@ledgerhq/hw-transport", JSImport.Default)
   @js.native
-  class default[TDescriptor /* <: Descriptor */] () extends Transport[TDescriptor]
+  class default[TDescriptor /* <: Descriptor */] ()
+    extends StObject
+       with Transport[TDescriptor]
   object default {
     
-    /* static member */
-    @JSImport("@ledgerhq/hw-transport", "default.create")
+    @JSImport("@ledgerhq/hw-transport", JSImport.Default)
     @js.native
-    def create(): js.Promise[Transport[Descriptor]] = js.native
-    @JSImport("@ledgerhq/hw-transport", "default.create")
-    @js.native
-    def create(openTimeout: js.UndefOr[scala.Nothing], listenTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
-    @JSImport("@ledgerhq/hw-transport", "default.create")
-    @js.native
-    def create(openTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
-    @JSImport("@ledgerhq/hw-transport", "default.create")
-    @js.native
-    def create(openTimeout: Double, listenTimeout: Double): js.Promise[Transport[Descriptor]] = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport", "default.isSupported")
-    @js.native
-    def isSupported(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[js.Promise[Transport[Descriptor]]]
+    @scala.inline
+    def create(openTimeout: Double): js.Promise[Transport[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Transport[Descriptor]]]
+    @scala.inline
+    def create(openTimeout: Double, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
+    @scala.inline
+    def create(openTimeout: Unit, listenTimeout: Double): js.Promise[Transport[Descriptor]] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(openTimeout.asInstanceOf[js.Any], listenTimeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Transport[Descriptor]]]
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport", "default.list")
-    @js.native
-    def list(): js.Promise[js.Array[Descriptor]] = js.native
+    @scala.inline
+    def isSupported(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")().asInstanceOf[js.Promise[Boolean]]
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport", "default.listen")
-    @js.native
-    def listen(observer: Observer[DescriptorEvent[Descriptor]]): Subscription = js.native
+    @scala.inline
+    def list(): js.Promise[js.Array[Descriptor]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")().asInstanceOf[js.Promise[js.Array[Descriptor]]]
     
     /* static member */
-    @JSImport("@ledgerhq/hw-transport", "default.open")
-    @js.native
+    @scala.inline
+    def listen(observer: Observer[DescriptorEvent[Descriptor]]): Subscription = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(observer.asInstanceOf[js.Any]).asInstanceOf[Subscription]
+    
+    /* static member */
+    @scala.inline
     def open(descriptor: Descriptor): js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ _
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
         ]
-      ] = js.native
-    @JSImport("@ledgerhq/hw-transport", "default.open")
-    @js.native
+      ] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(descriptor.asInstanceOf[js.Any]).asInstanceOf[js.Promise[
+        Transport[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+        ]
+      ]]
+    @scala.inline
     def open(descriptor: Descriptor, timeout: Double): js.Promise[
         Transport[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ _
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
         ]
-      ] = js.native
+      ] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(descriptor.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[js.Promise[
+        Transport[
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof descriptor */ js.Any
+        ]
+      ]]
   }
   
-  @JSImport("@ledgerhq/hw-transport", "getAltStatusMessage")
-  @js.native
-  def getAltStatusMessage(code: Double): String = js.native
+  @scala.inline
+  def getAltStatusMessage(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAltStatusMessage")(code.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Descriptor = String
   
-  @js.native
   trait DescriptorEvent[Descriptor] extends StObject {
     
-    var descriptor: Descriptor = js.native
+    var descriptor: Descriptor
     
-    var device: js.UndefOr[Device] = js.native
+    var device: js.UndefOr[Device] = js.undefined
     
-    var `type`: add | remove = js.native
+    var `type`: add | remove
   }
   object DescriptorEvent {
     
@@ -86,7 +92,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DescriptorEventMutableBuilder[Self <: DescriptorEvent[_], Descriptor] (val x: Self with DescriptorEvent[Descriptor]) extends AnyVal {
+    implicit class DescriptorEventMutableBuilder[Self <: DescriptorEvent[?], Descriptor] (val x: Self & DescriptorEvent[Descriptor]) extends AnyVal {
       
       @scala.inline
       def setDescriptor(value: Descriptor): Self = StObject.set(x, "descriptor", value.asInstanceOf[js.Any])
@@ -104,14 +110,13 @@ object mod {
   
   type Device = js.Any
   
-  @js.native
   trait Observer[Ev] extends StObject {
     
-    def complete(): js.Any = js.native
+    def complete(): js.Any
     
-    def error(e: js.Any): js.Any = js.native
+    def error(e: js.Any): js.Any
     
-    def next(event: Ev): js.Any = js.native
+    def next(event: Ev): js.Any
   }
   object Observer {
     
@@ -122,7 +127,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ObserverMutableBuilder[Self <: Observer[_], Ev] (val x: Self with Observer[Ev]) extends AnyVal {
+    implicit class ObserverMutableBuilder[Self <: Observer[?], Ev] (val x: Self & Observer[Ev]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -135,10 +140,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object Subscription {
     
@@ -176,14 +180,7 @@ object mod {
       * @return A Promise of the response Buffer
       */
     def send(cla: Double, ins: Double, p1: Double, p2: Double): js.Promise[Buffer] = js.native
-    def send(
-      cla: Double,
-      ins: Double,
-      p1: Double,
-      p2: Double,
-      data: js.UndefOr[scala.Nothing],
-      statusList: js.Array[Double]
-    ): js.Promise[Buffer] = js.native
+    def send(cla: Double, ins: Double, p1: Double, p2: Double, data: Unit, statusList: js.Array[Double]): js.Promise[Buffer] = js.native
     def send(cla: Double, ins: Double, p1: Double, p2: Double, data: Buffer): js.Promise[Buffer] = js.native
     def send(cla: Double, ins: Double, p1: Double, p2: Double, data: Buffer, statusList: js.Array[Double]): js.Promise[Buffer] = js.native
     

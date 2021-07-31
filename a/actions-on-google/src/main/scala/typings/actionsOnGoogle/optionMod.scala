@@ -7,10 +7,13 @@ import typings.actionsOnGoogle.optionOptionMod.OptionItem
 import typings.actionsOnGoogle.optionOptionMod.OptionItems
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionMod {
+  
+  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option", "Carousel")
   @js.native
@@ -34,7 +37,6 @@ object optionMod {
     def this(options: ListOptions) = this()
   }
   
-  @JSImport("actions-on-google/dist/service/actionssdk/conversation/helper/option", "convert")
-  @js.native
-  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = js.native
+  @scala.inline
+  def convert(items: OptionItems[String | OptionItem]): js.Array[ApiOptionItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(items.asInstanceOf[js.Any]).asInstanceOf[js.Array[ApiOptionItem]]
 }

@@ -2,19 +2,17 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartFontOptions extends StObject {
   
-  var defaultFontColor: js.UndefOr[ChartColor] = js.native
+  var defaultFontColor: js.UndefOr[ChartColor] = js.undefined
   
-  var defaultFontFamily: js.UndefOr[String] = js.native
+  var defaultFontFamily: js.UndefOr[String] = js.undefined
   
-  var defaultFontSize: js.UndefOr[Double] = js.native
+  var defaultFontSize: js.UndefOr[Double] = js.undefined
   
-  var defaultFontStyle: js.UndefOr[String] = js.native
+  var defaultFontStyle: js.UndefOr[String] = js.undefined
 }
 object ChartFontOptions {
   

@@ -4,17 +4,15 @@ import typings.xstate.anon.ContextTContext
 import typings.xstate.stateMod.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignMeta[TContext, TEvent /* <: EventObject */] extends StObject {
   
-  var _event: typings.xstate.typesMod.SCXML.Event[TEvent] = js.native
+  var _event: typings.xstate.typesMod.SCXML.Event[TEvent]
   
-  var action: AssignAction[TContext, TEvent] = js.native
+  var action: AssignAction[TContext, TEvent]
   
-  var state: js.UndefOr[State[TContext, TEvent, _, ContextTContext[TContext]]] = js.native
+  var state: js.UndefOr[State[TContext, TEvent, js.Any, ContextTContext[TContext]]] = js.undefined
 }
 object AssignMeta {
   
@@ -25,13 +23,13 @@ object AssignMeta {
   }
   
   @scala.inline
-  implicit class AssignMetaMutableBuilder[Self <: AssignMeta[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (AssignMeta[TContext, TEvent])) extends AnyVal {
+  implicit class AssignMetaMutableBuilder[Self <: AssignMeta[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (AssignMeta[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setAction(value: AssignAction[TContext, TEvent]): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setState(value: State[TContext, TEvent, _, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
+    def setState(value: State[TContext, TEvent, js.Any, ContextTContext[TContext]]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStateUndefined: Self = StObject.set(x, "state", js.undefined)

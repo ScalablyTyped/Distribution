@@ -5,7 +5,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object editableNameMod {
@@ -31,41 +30,41 @@ object editableNameMod {
     var invokeCallback: js.Any = js.native
   }
   
-  @js.native
   trait IEditableNameProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /**
       * The index of the name in the header. If provided, this will be passed as an argument to any
       * callbacks when they are invoked.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * The name displayed in the text box. Be sure to update this value when
       * rendering this component after a confirmed change.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A listener that is triggered if the user cancels the edit. This is
       * important to listen to if you are doing anything with `onChange` events,
       * since you'll likely want to revert whatever changes you made.
       */
-    var onCancel: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * A listener that is triggered as soon as the editable name is modified.
       * This can be due, for example, to keyboard input or the clipboard.
       */
-    var onChange: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
     
     /**
       * A listener that is triggered once the editing is confirmed. This is
       * usually due to the `return` (or `enter`) key press.
       */
-    var onConfirm: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.native
+    var onConfirm: js.UndefOr[js.Function2[/* value */ String, /* columnIndex */ js.UndefOr[Double], Unit]] = js.undefined
   }
   object IEditableNameProps {
     
@@ -110,14 +109,13 @@ object editableNameMod {
     }
   }
   
-  @js.native
   trait IEditableNameState extends StObject {
     
-    var dirtyName: js.UndefOr[String] = js.native
+    var dirtyName: js.UndefOr[String] = js.undefined
     
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
-    var savedName: js.UndefOr[String] = js.native
+    var savedName: js.UndefOr[String] = js.undefined
   }
   object IEditableNameState {
     

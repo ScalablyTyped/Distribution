@@ -3,44 +3,42 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedWorkspaceTask extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AssignedTo: String = js.native
+  var AssignedTo: String
   
-  val CreatedBy: String = js.native
+  val CreatedBy: String
   
-  val CreatedDate: VarDate = js.native
+  val CreatedDate: VarDate
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Description: String = js.native
+  var Description: String
   
-  var DueDate: VarDate = js.native
+  var DueDate: VarDate
   
-  val ModifiedBy: String = js.native
+  val ModifiedBy: String
   
-  val ModifiedDate: VarDate = js.native
+  val ModifiedDate: VarDate
   
   @JSName("Office.SharedWorkspaceTask_typekey")
-  var OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask = js.native
+  var OfficeDotSharedWorkspaceTask_typekey: SharedWorkspaceTask
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Priority: MsoSharedWorkspaceTaskPriority = js.native
+  var Priority: MsoSharedWorkspaceTaskPriority
   
-  def Save(): Unit = js.native
+  def Save(): Unit
   
-  var Status: MsoSharedWorkspaceTaskStatus = js.native
+  var Status: MsoSharedWorkspaceTaskStatus
   
-  var Title: String = js.native
+  var Title: String
 }
 object SharedWorkspaceTask {
   

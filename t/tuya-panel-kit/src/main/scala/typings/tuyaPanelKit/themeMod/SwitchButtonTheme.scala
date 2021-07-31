@@ -2,27 +2,25 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchButtonTheme extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var margin: Double = js.native
+  var margin: Double
   
-  var onThumbTintColor: String = js.native
+  var onThumbTintColor: String
   
-  var onTintColor: String = js.native
+  var onTintColor: String
   
-  var thumbSize: Double = js.native
+  var thumbSize: Double
   
-  var thumbTintColor: String = js.native
+  var thumbTintColor: String
   
-  var tintColor: String = js.native
+  var tintColor: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object SwitchButtonTheme {
   

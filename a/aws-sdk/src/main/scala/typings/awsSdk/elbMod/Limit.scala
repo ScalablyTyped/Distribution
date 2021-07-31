@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
   /**
     * The maximum value of the limit.
     */
-  var Max: js.UndefOr[typings.awsSdk.elbMod.Max] = js.native
+  var Max: js.UndefOr[typings.awsSdk.elbMod.Max] = js.undefined
   
   /**
     * The name of the limit. The possible values are:   classic-listeners   classic-load-balancers   classic-registered-instances  
     */
-  var Name: js.UndefOr[typings.awsSdk.elbMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.elbMod.Name] = js.undefined
 }
 object Limit {
   

@@ -2,71 +2,55 @@ package typings.commentJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("comment-json", "assign")
+  @JSImport("comment-json", JSImport.Namespace)
   @js.native
-  def assign(target: js.Any, source: js.Any): js.Any = js.native
-  @JSImport("comment-json", "assign")
-  @js.native
-  def assign(target: js.Any, source: js.Any, keys: js.Array[String]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("comment-json", "parse")
-  @js.native
-  def parse(json: String): CommentJSONValue = js.native
-  @JSImport("comment-json", "parse")
-  @js.native
-  def parse(json: String, reviver: js.UndefOr[scala.Nothing], removes_comments: Boolean): CommentJSONValue = js.native
-  @JSImport("comment-json", "parse")
-  @js.native
-  def parse(json: String, reviver: Reviver): CommentJSONValue = js.native
-  @JSImport("comment-json", "parse")
-  @js.native
-  def parse(json: String, reviver: Reviver, removes_comments: Boolean): CommentJSONValue = js.native
+  @scala.inline
+  def assign(target: js.Any, source: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def assign(target: js.Any, source: js.Any, keys: js.Array[String]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("assign")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: String): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: Double): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, space: String): String = js.native
-  @JSImport("comment-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: Null, space: Double): String = js.native
+  @scala.inline
+  def parse(json: String): CommentJSONValue = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any]).asInstanceOf[CommentJSONValue]
+  @scala.inline
+  def parse(json: String, reviver: Unit, removes_comments: Boolean): CommentJSONValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], removes_comments.asInstanceOf[js.Any])).asInstanceOf[CommentJSONValue]
+  @scala.inline
+  def parse(json: String, reviver: Reviver): CommentJSONValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[CommentJSONValue]
+  @scala.inline
+  def parse(json: String, reviver: Reviver, removes_comments: Boolean): CommentJSONValue = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(json.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any], removes_comments.asInstanceOf[js.Any])).asInstanceOf[CommentJSONValue]
   
-  @JSImport("comment-json", "tokenize")
-  @js.native
-  def tokenize(input: String): js.Array[Token] = js.native
-  @JSImport("comment-json", "tokenize")
-  @js.native
-  def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[Double | String], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Null, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def tokenize(input: String): js.Array[Token] = ^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any]).asInstanceOf[js.Array[Token]]
+  @scala.inline
+  def tokenize(input: String, config: TokenizeOptions): js.Array[Token] = (^.asInstanceOf[js.Dynamic].applyDynamic("tokenize")(input.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Array[Token]]
   
   type CommentArray = js.Any
   
@@ -74,12 +58,11 @@ object mod {
   
   type Reviver = js.Function2[/* k */ Double | String, /* v */ js.Any, js.Any]
   
-  @js.native
   trait Token extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     
@@ -101,16 +84,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenizeOptions extends StObject {
     
-    var comment: js.UndefOr[Boolean] = js.native
+    var comment: js.UndefOr[Boolean] = js.undefined
     
-    var loc: js.UndefOr[Boolean] = js.native
+    var loc: js.UndefOr[Boolean] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
   }
   object TokenizeOptions {
     

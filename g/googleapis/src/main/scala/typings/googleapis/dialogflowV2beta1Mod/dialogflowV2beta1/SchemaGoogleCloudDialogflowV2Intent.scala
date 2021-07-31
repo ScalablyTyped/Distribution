@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,57 +9,56 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * patterns into an action. An action is an extraction of a user command or
   * sentence semantics.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
   
   /**
     * Optional. The name of the action associated with the intent. Note: The
     * action name must not contain whitespaces.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The list of platforms for which the first response will be
     * taken from among the messages assigned to the DEFAULT_PLATFORM.
     */
-  var defaultResponsePlatforms: js.UndefOr[js.Array[String]] = js.native
+  var defaultResponsePlatforms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The name of this intent.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of event names that trigger the intent. If the
     * collection of input contexts is not empty, all of the contexts must be
     * present in the active user session for an event to trigger this intent.
     */
-  var events: js.UndefOr[js.Array[String]] = js.native
+  var events: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Read-only. Information about all followup intents that have this intent
     * as a direct or indirect parent. We populate this field only in the
     * output.
     */
-  var followupIntentInfo: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo]] = js.native
+  var followupIntentInfo: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentFollowupIntentInfo]] = js.undefined
   
   /**
     * Optional. The list of context names required for this intent to be
     * triggered. Format: `projects/&lt;Project
     * ID&gt;/agent/sessions/-/contexts/&lt;Context ID&gt;`.
     */
-  var inputContextNames: js.UndefOr[js.Array[String]] = js.native
+  var inputContextNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. Indicates whether this is a fallback intent.
     */
-  var isFallback: js.UndefOr[Boolean] = js.native
+  var isFallback: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The collection of rich messages corresponding to the `Response`
     * field in the Dialogflow console.
     */
-  var messages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.native
+  var messages: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
   /**
     * Optional. Indicates whether Machine Learning is disabled for the intent.
@@ -68,14 +66,14 @@ trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
     * taken into account during inference in `ML ONLY` match mode. Also,
     * auto-markup in the UI is turned off.
     */
-  var mlDisabled: js.UndefOr[Boolean] = js.native
+  var mlDisabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The unique identifier of this intent. Required for Intents.UpdateIntent
     * and Intents.BatchUpdateIntents methods. Format: `projects/&lt;Project
     * ID&gt;/agent/intents/&lt;Intent ID&gt;`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of contexts that are activated when the intent
@@ -84,12 +82,12 @@ trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
     * context when the intent is matched. Format: `projects/&lt;Project
     * ID&gt;/agent/sessions/-/contexts/&lt;Context ID&gt;`.
     */
-  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2Context]] = js.undefined
   
   /**
     * Optional. The collection of parameters associated with the intent.
     */
-  var parameters: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentParameter]] = js.native
+  var parameters: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentParameter]] = js.undefined
   
   /**
     * Read-only after creation. The unique identifier of the parent intent in
@@ -99,20 +97,20 @@ trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
     * intent. Format: `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent
     * ID&gt;`.
     */
-  var parentFollowupIntentName: js.UndefOr[String] = js.native
+  var parentFollowupIntentName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The priority of this intent. Higher numbers represent higher
     * priorities. If this is zero or unspecified, we use the default priority
     * 500000.  Negative numbers mean that the intent is disabled.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional. Indicates whether to delete all contexts in the current session
     * when this intent is matched.
     */
-  var resetContexts: js.UndefOr[Boolean] = js.native
+  var resetContexts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Read-only. The unique identifier of the root intent in the chain of
@@ -120,17 +118,17 @@ trait SchemaGoogleCloudDialogflowV2Intent extends StObject {
     * this intent. We populate this field only in the output.  Format:
     * `projects/&lt;Project ID&gt;/agent/intents/&lt;Intent ID&gt;`.
     */
-  var rootFollowupIntentName: js.UndefOr[String] = js.native
+  var rootFollowupIntentName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The collection of examples that the agent is trained on.
     */
-  var trainingPhrases: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrase]] = js.native
+  var trainingPhrases: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2IntentTrainingPhrase]] = js.undefined
   
   /**
     * Optional. Indicates whether webhooks are enabled for the intent.
     */
-  var webhookState: js.UndefOr[String] = js.native
+  var webhookState: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2Intent {
   

@@ -5,7 +5,6 @@ import typings.reactMapGl.anon.PositionInputscalenumbers
 import typings.reactMapGl.anon.PositionInputstartPosnumb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-map-gl", "MapState")

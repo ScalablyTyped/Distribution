@@ -2,21 +2,21 @@ package typings.vsoNodeApi.coreInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebApiTeam extends WebApiTeamRef {
+trait WebApiTeam
+  extends StObject
+     with WebApiTeamRef {
   
   /**
     * Team description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Identity REST API Url to this team
     */
-  var identityUrl: String = js.native
+  var identityUrl: String
 }
 object WebApiTeam {
   

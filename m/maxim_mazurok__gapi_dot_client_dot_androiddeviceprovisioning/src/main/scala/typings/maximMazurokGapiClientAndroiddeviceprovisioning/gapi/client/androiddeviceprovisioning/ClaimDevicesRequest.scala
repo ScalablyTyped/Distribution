@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClaimDevicesRequest extends StObject {
   
   /** Required. A list of device claims. */
-  var claims: js.UndefOr[js.Array[PartnerClaim]] = js.native
+  var claims: js.UndefOr[js.Array[PartnerClaim]] = js.undefined
 }
 object ClaimDevicesRequest {
   

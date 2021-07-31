@@ -10,11 +10,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeSliderViewModel extends Accessor {
+trait TimeSliderViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * Defined specific locations on the timeline that the handles will snap to when manipulated.

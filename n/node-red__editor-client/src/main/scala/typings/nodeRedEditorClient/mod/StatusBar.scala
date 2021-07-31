@@ -3,15 +3,13 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Align
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusBar extends StObject {
   
-  def add(options: Align): Unit = js.native
+  def add(options: Align): Unit
   
-  def init(): Unit = js.native
+  def init(): Unit
 }
 object StatusBar {
   

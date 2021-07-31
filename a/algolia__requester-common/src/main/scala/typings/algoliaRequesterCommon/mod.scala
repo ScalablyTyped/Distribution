@@ -5,7 +5,6 @@ import typings.algoliaRequesterCommon.anon.ReadonlyPromisevoid
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,6 @@ object mod {
   @js.native
   val MethodEnum: Record[String, MethodType] = js.native
   
-  @js.native
   trait Destroyable extends StObject {
     
     /**
@@ -24,7 +22,7 @@ object mod {
       * it is best to explicitly shut down the agent when it will no longer be used. Otherwise, sockets
       * may hang open for quite a long time before the server terminates them.
       */
-    def destroy(): ReadonlyPromisevoid = js.native
+    def destroy(): ReadonlyPromisevoid
   }
   object Destroyable {
     
@@ -64,38 +62,37 @@ object mod {
     def PUT: typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT = "PUT".asInstanceOf[typings.algoliaRequesterCommon.algoliaRequesterCommonStrings.PUT]
   }
   
-  @js.native
   trait Request extends StObject {
     
     /**
       * The timeout to stablish a connection with the server.
       */
-    val connectTimeout: Double = js.native
+    val connectTimeout: Double
     
     /**
       * The data to be transfered to the server.
       */
-    val data: js.UndefOr[String] = js.native
+    val data: js.UndefOr[String] = js.undefined
     
     /**
       * The headers of the request.
       */
-    val headers: Record[String, String] = js.native
+    val headers: Record[String, String]
     
     /**
       * The method of the request. `GET`, etc.
       */
-    val method: MethodType = js.native
+    val method: MethodType
     
     /**
       * The timeout to receive the response.
       */
-    val responseTimeout: Double = js.native
+    val responseTimeout: Double
     
     /**
       * The complete url of the request, with the protocol.
       */
-    val url: String = js.native
+    val url: String
   }
   object Request {
     
@@ -137,13 +134,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Requester extends StObject {
     
     /**
       * Sends the given `request` to the server.
       */
-    def send(request: Request): ReadonlyPromiseResponse = js.native
+    def send(request: Request): ReadonlyPromiseResponse
   }
   object Requester {
     
@@ -161,23 +157,22 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
     /**
       * The raw response from the server.
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * If the request timeouted.
       */
-    var isTimedOut: Boolean = js.native
+    var isTimedOut: Boolean
     
     /**
       * The http status code.
       */
-    var status: Double = js.native
+    var status: Double
   }
   object Response {
     

@@ -3,15 +3,13 @@ package typings.ariClient.anon
 import typings.ariClient.mod.IndexableObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
-  var applicationName: String = js.native
+  var applicationName: String
   
-  var filter: js.UndefOr[IndexableObject] = js.native
+  var filter: js.UndefOr[IndexableObject] = js.undefined
 }
 object Filter {
   

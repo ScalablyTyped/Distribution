@@ -2,33 +2,31 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachments extends StObject {
   
-  var actor: js.UndefOr[Verification] = js.native
+  var actor: js.UndefOr[Verification] = js.undefined
   
-  var attachments: js.UndefOr[js.Array[Embed]] = js.native
+  var attachments: js.UndefOr[js.Array[Embed]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
-  var originalContent: js.UndefOr[String] = js.native
+  var originalContent: js.UndefOr[String] = js.undefined
   
-  var plusoners: js.UndefOr[SelfLink] = js.native
+  var plusoners: js.UndefOr[SelfLink] = js.undefined
   
-  var replies: js.UndefOr[SelfLink] = js.native
+  var replies: js.UndefOr[SelfLink] = js.undefined
   
-  var resharers: js.UndefOr[SelfLink] = js.native
+  var resharers: js.UndefOr[SelfLink] = js.undefined
   
-  var statusForViewer: js.UndefOr[CanComment] = js.native
+  var statusForViewer: js.UndefOr[CanComment] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Attachments {
   

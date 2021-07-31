@@ -4,17 +4,17 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitPush extends GitPushRef {
+trait GitPush
+  extends StObject
+     with GitPushRef {
   
-  var commits: js.Array[GitCommitRef] = js.native
+  var commits: js.Array[GitCommitRef]
   
-  var refUpdates: js.Array[GitRefUpdate] = js.native
+  var refUpdates: js.Array[GitRefUpdate]
   
-  var repository: GitRepository = js.native
+  var repository: GitRepository
 }
 object GitPush {
   

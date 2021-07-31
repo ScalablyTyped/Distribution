@@ -2,23 +2,23 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridBroadphase extends BroadPhase {
+trait GridBroadphase
+  extends StObject
+     with BroadPhase {
   
-  var aabbMax: Vec3 = js.native
+  var aabbMax: Vec3
   
-  var aabbMin: Vec3 = js.native
+  var aabbMin: Vec3
   
-  var bins: js.Array[_] = js.native
+  var bins: js.Array[js.Any]
   
-  var nx: Double = js.native
+  var nx: Double
   
-  var ny: Double = js.native
+  var ny: Double
   
-  var nz: Double = js.native
+  var nz: Double
 }
 object GridBroadphase {
   
@@ -27,7 +27,7 @@ object GridBroadphase {
     aabbMax: Vec3,
     aabbMin: Vec3,
     aabbQuery: (World, AABB, js.Array[Body]) => js.Array[Body],
-    bins: js.Array[_],
+    bins: js.Array[js.Any],
     boundingSphereCheck: (Body, Body) => Boolean,
     collisionPairs: (World, js.Array[Body], js.Array[Body]) => Unit,
     dirty: Boolean,
@@ -57,7 +57,7 @@ object GridBroadphase {
     def setAabbMin(value: Vec3): Self = StObject.set(x, "aabbMin", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setBins(value: js.Array[_]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
+    def setBins(value: js.Array[js.Any]): Self = StObject.set(x, "bins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBinsVarargs(value: js.Any*): Self = StObject.set(x, "bins", js.Array(value :_*))

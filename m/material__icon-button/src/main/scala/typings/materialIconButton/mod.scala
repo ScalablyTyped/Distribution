@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,7 @@ object mod {
   @js.native
   class MDCIconButtonToggle protected ()
     extends typings.materialIconButton.componentMod.MDCIconButtonToggle {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialIconButton.foundationMod.MDCIconButtonToggleFoundation,
@@ -24,9 +23,12 @@ object mod {
   /* static members */
   object MDCIconButtonToggle {
     
-    @JSImport("@material/icon-button", "MDCIconButtonToggle.attachTo")
+    @JSImport("@material/icon-button", "MDCIconButtonToggle")
     @js.native
-    def attachTo(root: HTMLElement): typings.materialIconButton.componentMod.MDCIconButtonToggle = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: HTMLElement): typings.materialIconButton.componentMod.MDCIconButtonToggle = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialIconButton.componentMod.MDCIconButtonToggle]
   }
   
   @JSImport("@material/icon-button", "MDCIconButtonToggleFoundation")

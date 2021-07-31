@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -52,9 +51,9 @@ class Node () extends Part {
     * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
     */
   def findLinksBetween(othernode: Node): Iterator[Link] = js.native
-  def findLinksBetween(othernode: Node, pid: js.UndefOr[scala.Nothing], otherpid: String): Iterator[Link] = js.native
   def findLinksBetween(othernode: Node, pid: String): Iterator[Link] = js.native
   def findLinksBetween(othernode: Node, pid: String, otherpid: String): Iterator[Link] = js.native
+  def findLinksBetween(othernode: Node, pid: Unit, otherpid: String): Iterator[Link] = js.native
   
   /**
     * Returns an iterator over all of the Links that connect with this node in either direction, perhaps limited to the given port id on this node.
@@ -84,9 +83,9 @@ class Node () extends Part {
     * @param {string|null=} otherpid A port identifier string; if null the link's portId is ignored and all links are included in the search.
     */
   def findLinksTo(othernode: Node): Iterator[Link] = js.native
-  def findLinksTo(othernode: Node, pid: js.UndefOr[scala.Nothing], otherpid: String): Iterator[Link] = js.native
   def findLinksTo(othernode: Node, pid: String): Iterator[Link] = js.native
   def findLinksTo(othernode: Node, pid: String, otherpid: String): Iterator[Link] = js.native
+  def findLinksTo(othernode: Node, pid: Unit, otherpid: String): Iterator[Link] = js.native
   
   /**
     * Returns an iterator over the Nodes that are connected with this node in either direction, perhaps limited to the given port id on this node.
@@ -165,9 +164,9 @@ class Node () extends Part {
   
   // undocumented
   def invalidateLinkBundle(other: Node): Unit = js.native
-  def invalidateLinkBundle(other: Node, thisportid: js.UndefOr[scala.Nothing], otherportid: String): Unit = js.native
   def invalidateLinkBundle(other: Node, thisportid: String): Unit = js.native
   def invalidateLinkBundle(other: Node, thisportid: String, otherportid: String): Unit = js.native
+  def invalidateLinkBundle(other: Node, thisportid: Unit, otherportid: String): Unit = js.native
   
   /**
     * This predicate is true if this node is a child of the given Node, perhaps indirectly as a descendant.

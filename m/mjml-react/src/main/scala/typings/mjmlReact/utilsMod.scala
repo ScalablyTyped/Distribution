@@ -3,40 +3,35 @@ package typings.mjmlReact
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("mjml-react/utils", "addQueryParams")
+  @JSImport("mjml-react/utils", JSImport.Namespace)
   @js.native
-  def addQueryParams(url: String, params: StringDictionary[js.Any]): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mjml-react/utils", "fixConditionalComment")
-  @js.native
-  def fixConditionalComment(html: String, havingContent: String, newCondition: String): String = js.native
+  @scala.inline
+  def addQueryParams(url: String, params: StringDictionary[js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParams")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("mjml-react/utils", "getTextAlign")
-  @js.native
-  def getTextAlign(value: String): TextAlignment = js.native
-  @JSImport("mjml-react/utils", "getTextAlign")
-  @js.native
-  def getTextAlign(value: String, fallback: TextAlignment): TextAlignment = js.native
+  @scala.inline
+  def fixConditionalComment(html: String, havingContent: String, newCondition: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("fixConditionalComment")(html.asInstanceOf[js.Any], havingContent.asInstanceOf[js.Any], newCondition.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("mjml-react/utils", "namedEntityToHexCode")
-  @js.native
-  def namedEntityToHexCode(html: String): String = js.native
+  @scala.inline
+  def getTextAlign(value: String): TextAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextAlign")(value.asInstanceOf[js.Any]).asInstanceOf[TextAlignment]
+  @scala.inline
+  def getTextAlign(value: String, fallback: TextAlignment): TextAlignment = (^.asInstanceOf[js.Dynamic].applyDynamic("getTextAlign")(value.asInstanceOf[js.Any], fallback.asInstanceOf[js.Any])).asInstanceOf[TextAlignment]
   
-  @JSImport("mjml-react/utils", "toMobileFontSize")
-  @js.native
-  def toMobileFontSize(sizeWithUnit: String): Double = js.native
+  @scala.inline
+  def namedEntityToHexCode(html: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("namedEntityToHexCode")(html.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("mjml-react/utils", "useHttps")
-  @js.native
-  def useHttps(): js.UndefOr[String] = js.native
-  @JSImport("mjml-react/utils", "useHttps")
-  @js.native
-  def useHttps(url: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def toMobileFontSize(sizeWithUnit: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toMobileFontSize")(sizeWithUnit.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def useHttps(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHttps")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def useHttps(url: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useHttps")(url.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.mjmlReact.mjmlReactStrings.left

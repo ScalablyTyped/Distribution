@@ -2,49 +2,49 @@ package typings.wechatMiniprogram.DB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DatabaseQueryCommand extends DatabaseLogicCommand {
+trait DatabaseQueryCommand
+  extends StObject
+     with DatabaseLogicCommand {
   
-  def all(`val`: js.Array[_]): DatabaseLogicCommand = js.native
+  def all(`val`: js.Array[js.Any]): DatabaseLogicCommand
   
-  def elemMatch(`val`: js.Any): DatabaseLogicCommand = js.native
+  def elemMatch(`val`: js.Any): DatabaseLogicCommand
   
-  def eq(`val`: js.Any): DatabaseLogicCommand = js.native
+  def eq(`val`: js.Any): DatabaseLogicCommand
   
-  def exists(`val`: Boolean): DatabaseLogicCommand = js.native
+  def exists(`val`: Boolean): DatabaseLogicCommand
   
-  def geoIntersects(options: IGeoIntersectsCommandOptions): DatabaseLogicCommand = js.native
+  def geoIntersects(options: IGeoIntersectsCommandOptions): DatabaseLogicCommand
   
-  def geoNear(options: IGeoNearCommandOptions): DatabaseLogicCommand = js.native
+  def geoNear(options: IGeoNearCommandOptions): DatabaseLogicCommand
   
-  def geoWithin(options: IGeoWithinCommandOptions): DatabaseLogicCommand = js.native
+  def geoWithin(options: IGeoWithinCommandOptions): DatabaseLogicCommand
   
-  def gt(`val`: js.Any): DatabaseLogicCommand = js.native
+  def gt(`val`: js.Any): DatabaseLogicCommand
   
-  def gte(`val`: js.Any): DatabaseLogicCommand = js.native
+  def gte(`val`: js.Any): DatabaseLogicCommand
   
-  def in(`val`: js.Array[_]): DatabaseLogicCommand = js.native
+  def in(`val`: js.Array[js.Any]): DatabaseLogicCommand
   
-  def lt(`val`: js.Any): DatabaseLogicCommand = js.native
+  def lt(`val`: js.Any): DatabaseLogicCommand
   
-  def lte(`val`: js.Any): DatabaseLogicCommand = js.native
+  def lte(`val`: js.Any): DatabaseLogicCommand
   
-  def mod(divisor: Double, remainder: Double): DatabaseLogicCommand = js.native
+  def mod(divisor: Double, remainder: Double): DatabaseLogicCommand
   
-  def neq(`val`: js.Any): DatabaseLogicCommand = js.native
+  def neq(`val`: js.Any): DatabaseLogicCommand
   
-  def nin(`val`: js.Array[_]): DatabaseLogicCommand = js.native
+  def nin(`val`: js.Array[js.Any]): DatabaseLogicCommand
   
-  def size(`val`: Double): DatabaseLogicCommand = js.native
+  def size(`val`: Double): DatabaseLogicCommand
 }
 object DatabaseQueryCommand {
   
   @scala.inline
   def apply(
-    all: js.Array[_] => DatabaseLogicCommand,
+    all: js.Array[js.Any] => DatabaseLogicCommand,
     and: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
     elemMatch: js.Any => DatabaseLogicCommand,
     eq_ : js.Any => DatabaseLogicCommand,
@@ -54,12 +54,12 @@ object DatabaseQueryCommand {
     geoWithin: IGeoWithinCommandOptions => DatabaseLogicCommand,
     gt: js.Any => DatabaseLogicCommand,
     gte: js.Any => DatabaseLogicCommand,
-    in: js.Array[_] => DatabaseLogicCommand,
+    in: js.Array[js.Any] => DatabaseLogicCommand,
     lt: js.Any => DatabaseLogicCommand,
     lte: js.Any => DatabaseLogicCommand,
     mod: (Double, Double) => DatabaseLogicCommand,
     neq: js.Any => DatabaseLogicCommand,
-    nin: js.Array[_] => DatabaseLogicCommand,
+    nin: js.Array[js.Any] => DatabaseLogicCommand,
     nor: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
     not: DatabaseLogicCommand => DatabaseLogicCommand,
     or: /* repeated */ DatabaseLogicCommand => DatabaseLogicCommand,
@@ -74,7 +74,7 @@ object DatabaseQueryCommand {
   implicit class DatabaseQueryCommandMutableBuilder[Self <: DatabaseQueryCommand] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAll(value: js.Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
+    def setAll(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
     
     @scala.inline
     def setElemMatch(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "elemMatch", js.Any.fromFunction1(value))
@@ -101,7 +101,7 @@ object DatabaseQueryCommand {
     def setGte(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: js.Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    def setIn(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
     def setLt(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "lt", js.Any.fromFunction1(value))
@@ -116,7 +116,7 @@ object DatabaseQueryCommand {
     def setNeq(value: js.Any => DatabaseLogicCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNin(value: js.Array[_] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    def setNin(value: js.Array[js.Any] => DatabaseLogicCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSize(value: Double => DatabaseLogicCommand): Self = StObject.set(x, "size", js.Any.fromFunction1(value))

@@ -3,7 +3,6 @@ package typings.markdownEscapes
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,14 +38,13 @@ object mod extends Shortcut {
     val gfm: js.Array[String] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** @default false */
-    var commonmark: js.UndefOr[Boolean] = js.native
+    var commonmark: js.UndefOr[Boolean] = js.undefined
     
     /** @default false */
-    var gfm: js.UndefOr[Boolean] = js.native
+    var gfm: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

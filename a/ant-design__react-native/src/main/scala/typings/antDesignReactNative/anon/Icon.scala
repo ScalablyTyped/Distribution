@@ -3,15 +3,13 @@ package typings.antDesignReactNative.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon extends StObject {
   
-  var icon: Element = js.native
+  var icon: Element
   
-  var text: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any = js.native
+  var text: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 420 */ js.Any
 }
 object Icon {
   

@@ -2,10 +2,8 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapToRoadsRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SnapToRoadsRequest extends StObject {
     *
     * @default false
     */
-  var interpolate: js.UndefOr[Boolean] = js.native
+  var interpolate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path to be snapped. The `path` parameter accepts a list of latitude/longitude pairs.
@@ -29,7 +27,7 @@ trait SnapToRoadsRequest extends StObject {
     *  of points are within 300m of each other. This will also help in handling any isolated, long jumps between
     * consecutive points caused by GPS signal loss, or noise.
     */
-  var path: js.Array[LatLng] = js.native
+  var path: js.Array[LatLng]
 }
 object SnapToRoadsRequest {
   

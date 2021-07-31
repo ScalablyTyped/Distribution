@@ -6,28 +6,26 @@ import typings.blueprintjsCore.popoverMod.IPopoverProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/breadcrumbs/breadcrumbs.IBreadcrumbsProps> */
-@js.native
 trait PartialIBreadcrumbsProps extends StObject {
   
-  var breadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.native
+  var breadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var collapseFrom: js.UndefOr[Boundary] = js.native
+  var collapseFrom: js.UndefOr[Boundary] = js.undefined
   
-  var currentBreadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.native
+  var currentBreadcrumbRenderer: js.UndefOr[js.Function1[/* props */ IBreadcrumbProps, Element]] = js.undefined
   
-  var items: js.UndefOr[js.Array[IBreadcrumbProps]] = js.native
+  var items: js.UndefOr[js.Array[IBreadcrumbProps]] = js.undefined
   
-  var minVisibleItems: js.UndefOr[Double] = js.native
+  var minVisibleItems: js.UndefOr[Double] = js.undefined
   
-  var overflowListProps: js.UndefOr[PartialIOverflowListProps] = js.native
+  var overflowListProps: js.UndefOr[PartialIOverflowListProps] = js.undefined
   
-  var popoverProps: js.UndefOr[IPopoverProps] = js.native
+  var popoverProps: js.UndefOr[IPopoverProps] = js.undefined
 }
 object PartialIBreadcrumbsProps {
   

@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocatorProperties extends TaskProperties {
+trait LocatorProperties
+  extends StObject
+     with TaskProperties {
   
   /**
     * The spatial reference of the output geometries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-Locator.html#outSpatialReference)
     */
-  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var outSpatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object LocatorProperties {
   

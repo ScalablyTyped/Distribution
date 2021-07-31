@@ -2,26 +2,24 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContributionNodeQuery extends StObject {
   
   /**
     * The contribution ids of the nodes to find.
     */
-  var contributionIds: js.Array[String] = js.native
+  var contributionIds: js.Array[String]
   
   /**
     * Indicator if contribution provider details should be included in the result.
     */
-  var includeProviderDetails: Boolean = js.native
+  var includeProviderDetails: Boolean
   
   /**
     * Query options tpo be used when fetching ContributionNodes
     */
-  var queryOptions: ContributionQueryOptions = js.native
+  var queryOptions: ContributionQueryOptions
 }
 object ContributionNodeQuery {
   

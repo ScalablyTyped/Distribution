@@ -4,7 +4,6 @@ import typings.fabric.fabricImplMod.ICircleOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Circle")
@@ -34,15 +33,13 @@ object Circle {
     * @param element Element to parse
     * @param [options] Options object
     */
-  @JSImport("fabric", "fabric.Circle.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, options: ICircleOptions): typings.fabric.fabricImplMod.Circle = js.native
+  @scala.inline
+  def fromElement(element: SVGElement, options: ICircleOptions): typings.fabric.fabricImplMod.Circle = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Circle]
   
   /**
     * Returns Circle instance from an object representation
     * @param object Object to create an instance from
     */
-  @JSImport("fabric", "fabric.Circle.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Circle = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Circle]
 }

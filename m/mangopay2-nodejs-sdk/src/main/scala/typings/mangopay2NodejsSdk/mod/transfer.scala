@@ -6,48 +6,46 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionNature
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transfer {
   
-  @js.native
   trait CreateTransfer extends StObject {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: js.UndefOr[String] = js.native
+    var CreditedUserId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
     /**
       * The ID of the wallet that was debited
       */
-    var DebitedWalletId: String = js.native
+    var DebitedWalletId: String
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
     /**
       * Custom data that you can add to this item
       */
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateTransfer {
     
@@ -95,73 +93,74 @@ object transfer {
     }
   }
   
-  @js.native
-  trait TransferData extends EntityBaseData {
+  trait TransferData
+    extends StObject
+       with EntityBaseData {
     
     /**
       * A user's ID
       */
-    var AuthorId: String = js.native
+    var AuthorId: String
     
     /**
       * Details about the funds that are being credited (DebitedFunds – Fees = CreditedFunds)
       */
-    var CreditedFunds: MoneyData = js.native
+    var CreditedFunds: MoneyData
     
     /**
       * The user ID who is credited (defaults to the owner of the wallet)
       */
-    var CreditedUserId: String = js.native
+    var CreditedUserId: String
     
     /**
       * The ID of the wallet where money will be credited
       */
-    var CreditedWalletId: String = js.native
+    var CreditedWalletId: String
     
     /**
       * Information about the funds that are being debited
       */
-    var DebitedFunds: MoneyData = js.native
+    var DebitedFunds: MoneyData
     
     /**
       * The ID of the wallet that was debited
       */
-    var DebitedWalletId: String = js.native
+    var DebitedWalletId: String
     
     /**
       * When the transaction happened
       */
-    var ExecutionDate: Timestamp = js.native
+    var ExecutionDate: Timestamp
     
     /**
       * Information about the fees that were taken by the client for this transaction (and were hence transferred to the Client's platform wallet)
       */
-    var Fees: MoneyData = js.native
+    var Fees: MoneyData
     
     /**
       * The nature of the transaction
       */
-    var Nature: TransactionNature = js.native
+    var Nature: TransactionNature
     
     /**
       * The result code
       */
-    var ResultCode: String = js.native
+    var ResultCode: String
     
     /**
       * A verbal explanation of the ResultCode
       */
-    var ResultMessage: String = js.native
+    var ResultMessage: String
     
     /**
       * The status of the transaction
       */
-    var Status: TransactionStatus = js.native
+    var Status: TransactionStatus
     
     /**
       * The type of the transaction
       */
-    var Type: TRANSFER = js.native
+    var Type: TRANSFER
   }
   object TransferData {
     
@@ -181,10 +180,9 @@ object transfer {
       ResultCode: String,
       ResultMessage: String,
       Status: TransactionStatus,
-      Tag: String,
-      Type: TRANSFER
+      Tag: String
     ): TransferData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = "TRANSFER")
       __obj.asInstanceOf[TransferData]
     }
     

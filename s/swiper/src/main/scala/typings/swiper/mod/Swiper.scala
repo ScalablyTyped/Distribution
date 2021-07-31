@@ -23,7 +23,6 @@ import typings.swiper.swiperEsmMod.Virtual
 import typings.swiper.swiperEsmMod.Zoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -356,9 +355,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slideNext(): Unit = js.native
-  def slideNext(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideNext(speed: Double): Unit = js.native
   def slideNext(speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slideNext(speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Run transition to previous slide.
@@ -368,9 +367,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slidePrev(): Unit = js.native
-  def slidePrev(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slidePrev(speed: Double): Unit = js.native
   def slidePrev(speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slidePrev(speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Reset swiper position to currently active slide for the duration equal to 'speed'
@@ -381,9 +380,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slideReset(): Unit = js.native
-  def slideReset(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideReset(speed: Double): Unit = js.native
   def slideReset(speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slideReset(speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Run transition to the slide with index number equal to 'index' parameter for the
@@ -395,9 +394,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slideTo(index: Double): Unit = js.native
-  def slideTo(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideTo(index: Double, speed: Double): Unit = js.native
   def slideTo(index: Double, speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slideTo(index: Double, speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Reset swiper position to closest slide/snap point for the duration equal to 'speed' parameter.
@@ -407,9 +406,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slideToClosest(): Unit = js.native
-  def slideToClosest(speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideToClosest(speed: Double): Unit = js.native
   def slideToClosest(speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slideToClosest(speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Does the same as .slideTo but for the case when used with enabled loop. So this
@@ -421,9 +420,9 @@ trait Swiper extends StObject {
     *  not produce transition events.
     */
   def slideToLoop(index: Double): Unit = js.native
-  def slideToLoop(index: Double, speed: js.UndefOr[scala.Nothing], runCallbacks: Boolean): Unit = js.native
   def slideToLoop(index: Double, speed: Double): Unit = js.native
   def slideToLoop(index: Double, speed: Double, runCallbacks: Boolean): Unit = js.native
+  def slideToLoop(index: Double, speed: Unit, runCallbacks: Boolean): Unit = js.native
   
   /**
     * Dom7 array-like collection of slides HTML elements. To get specific slide HTMLElement use slides[1]
@@ -449,14 +448,9 @@ trait Swiper extends StObject {
     * Animate custom css3 transform's translate value for swiper wrapper
     */
   def translateTo(translate: Double, speed: Double): js.Any = js.native
-  def translateTo(
-    translate: Double,
-    speed: Double,
-    runCallbacks: js.UndefOr[scala.Nothing],
-    translateBounds: Boolean
-  ): js.Any = js.native
   def translateTo(translate: Double, speed: Double, runCallbacks: Boolean): js.Any = js.native
   def translateTo(translate: Double, speed: Double, runCallbacks: Boolean, translateBounds: Boolean): js.Any = js.native
+  def translateTo(translate: Double, speed: Double, runCallbacks: Unit, translateBounds: Boolean): js.Any = js.native
   
   /**
     * Unset grab cursor

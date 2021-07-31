@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfiguration extends StObject {
   
   /**
     * The ARN of the IAM role for Amazon S3 to assume when replicating the objects.
     */
-  var role: String = js.native
+  var role: String
   
   /**
     * Specifies the rules managing the replication (documented below).
     */
-  var rules: js.Array[BucketReplicationConfigurationRule] = js.native
+  var rules: js.Array[BucketReplicationConfigurationRule]
 }
 object BucketReplicationConfiguration {
   

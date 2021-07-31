@@ -2,19 +2,17 @@ package typings.thrift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WSOptions extends StObject {
   
-  var headers: HttpHeaders = js.native
+  var headers: HttpHeaders
   
-  var host: String = js.native
+  var host: String
   
-  var path: String = js.native
+  var path: String
   
-  var port: Double = js.native
+  var port: Double
 }
 object WSOptions {
   

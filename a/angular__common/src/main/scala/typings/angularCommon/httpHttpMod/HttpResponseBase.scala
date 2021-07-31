@@ -5,7 +5,6 @@ import typings.angularCommon.httpHttpMod.HttpEventType.Response
 import typings.angularCommon.httpHttpMod.HttpEventType.ResponseHeader
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/common/http/http", "HttpResponseBase")
@@ -19,8 +18,8 @@ abstract class HttpResponseBase protected () extends StObject {
     */
   def this(init: Headers) = this()
   def this(init: Headers, defaultStatus: Double) = this()
-  def this(init: Headers, defaultStatus: js.UndefOr[scala.Nothing], defaultStatusText: String) = this()
   def this(init: Headers, defaultStatus: Double, defaultStatusText: String) = this()
+  def this(init: Headers, defaultStatus: Unit, defaultStatusText: String) = this()
   
   /**
     * All response headers.

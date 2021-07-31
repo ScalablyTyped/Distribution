@@ -7,7 +7,6 @@ import typings.escpos.escposNumbers.`3`
 import typings.escpos.escposNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("escpos", "Screen")
@@ -45,9 +44,9 @@ class Screen protected () extends StObject {
   def clearLine(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Screen = js.native
   
   def close(): Screen = js.native
-  def close(callback: js.UndefOr[scala.Nothing], options: js.Any): Screen = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit]): Screen = js.native
   def close(callback: js.Function1[/* error */ js.UndefOr[js.Any], Unit], options: js.Any): Screen = js.native
+  def close(callback: Unit, options: js.Any): Screen = js.native
   
   /**
     * Turn cursor display mode on/off.
@@ -137,7 +136,10 @@ class Screen protected () extends StObject {
 /* static members */
 object Screen {
   
-  @JSImport("escpos", "Screen.create")
+  @JSImport("escpos", "Screen")
   @js.native
-  def create(device: Adapter): js.Promise[Screen] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(device: Adapter): js.Promise[Screen] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(device.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Screen]]
 }

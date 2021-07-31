@@ -5,24 +5,25 @@ import typings.firebaseStorage.anon.Call
 import typings.firebaseStorageTypes.mod.FirebaseStorage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@firebase/storage", "registerStorage")
+  @JSImport("@firebase/storage", JSImport.Namespace)
   @js.native
-  def registerStorage(instance: FirebaseNamespace): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def registerStorage(instance: FirebaseNamespace): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerStorage")(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Define extension behavior for `registerStorage`
     */
   object firebaseAppTypesAugmentingMod {
     
-    @js.native
     trait FirebaseApp extends StObject {
       
-      var storage: js.UndefOr[js.Function1[/* storageBucket */ js.UndefOr[String], FirebaseStorage]] = js.native
+      var storage: js.UndefOr[js.Function1[/* storageBucket */ js.UndefOr[String], FirebaseStorage]] = js.undefined
     }
     object FirebaseApp {
       
@@ -43,10 +44,9 @@ object mod {
       }
     }
     
-    @js.native
     trait FirebaseNamespace extends StObject {
       
-      var storage: js.UndefOr[Call] = js.native
+      var storage: js.UndefOr[Call] = js.undefined
     }
     object FirebaseNamespace {
       

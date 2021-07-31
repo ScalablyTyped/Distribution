@@ -2,15 +2,13 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSetting[T] extends StObject {
   
-  var exportable: js.UndefOr[Boolean] = js.native
+  var exportable: js.UndefOr[Boolean] = js.undefined
   
-  var value: T = js.native
+  var value: T
 }
 object NodeSetting {
   
@@ -21,7 +19,7 @@ object NodeSetting {
   }
   
   @scala.inline
-  implicit class NodeSettingMutableBuilder[Self <: NodeSetting[_], T] (val x: Self with NodeSetting[T]) extends AnyVal {
+  implicit class NodeSettingMutableBuilder[Self <: NodeSetting[?], T] (val x: Self & NodeSetting[T]) extends AnyVal {
     
     @scala.inline
     def setExportable(value: Boolean): Self = StObject.set(x, "exportable", value.asInstanceOf[js.Any])

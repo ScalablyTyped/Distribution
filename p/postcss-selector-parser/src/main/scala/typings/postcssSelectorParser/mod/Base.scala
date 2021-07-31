@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] extends StObject {
   
   /**
@@ -19,9 +17,9 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param {any} value the unescaped value of the property
     * @param {string} valueEscaped optional. the escaped value of the property.
     */
-  def appendToPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit = js.native
+  def appendToPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit
   
-  def clone(opts: StringDictionary[js.Any]): Node = js.native
+  def clone(opts: StringDictionary[js.Any]): Node
   
   /**
     * Return whether this node includes the character at the position of the given line and column.
@@ -29,21 +27,21 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param line 1-index based line number relative to the start of the selector.
     * @param column 1-index based column number relative to the start of the selector.
     */
-  def isAtPosition(line: Double, column: Double): js.UndefOr[Boolean] = js.native
+  def isAtPosition(line: Double, column: Double): js.UndefOr[Boolean]
   
-  def next(): Node = js.native
+  def next(): Node
   
-  var parent: ParentType = js.native
+  var parent: ParentType
   
-  def prev(): Node = js.native
+  def prev(): Node
   
-  var rawSpaceAfter: String = js.native
+  var rawSpaceAfter: String
   
-  var rawSpaceBefore: String = js.native
+  var rawSpaceBefore: String
   
-  def remove(): Node = js.native
+  def remove(): Node
   
-  def replaceWith(nodes: Node*): Node = js.native
+  def replaceWith(nodes: Node*): Node
   
   /**
     * Some non-standard syntax doesn't follow normal escaping rules for css,
@@ -53,7 +51,7 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param value the unescaped value of the property
     * @param valueEscaped optional. the escaped value of the property.
     */
-  def setPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit = js.native
+  def setPropertyAndEscape(name: String, value: js.Any, valueEscaped: String): Unit
   
   /**
     * When you want a value to passed through to CSS directly. This method
@@ -62,17 +60,17 @@ trait Base[Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Contai
     * @param name the property to set.
     * @param value The value that is both escaped and unescaped.
     */
-  def setPropertyWithoutEscape(name: String, value: js.Any): Unit = js.native
+  def setPropertyWithoutEscape(name: String, value: js.Any): Unit
   
-  var source: js.UndefOr[NodeSource] = js.native
+  var source: js.UndefOr[NodeSource] = js.undefined
   
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
   
-  var spaces: Spaces = js.native
+  var spaces: Spaces
   
-  var `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal = js.native
+  var `type`: typings.postcssSelectorParser.postcssSelectorParserStrings.tag | typings.postcssSelectorParser.postcssSelectorParserStrings.string | typings.postcssSelectorParser.postcssSelectorParserStrings.selector | typings.postcssSelectorParser.postcssSelectorParserStrings.root | typings.postcssSelectorParser.postcssSelectorParserStrings.pseudo | typings.postcssSelectorParser.postcssSelectorParserStrings.nesting | typings.postcssSelectorParser.postcssSelectorParserStrings.id | typings.postcssSelectorParser.postcssSelectorParserStrings.comment | typings.postcssSelectorParser.postcssSelectorParserStrings.combinator | `class` | typings.postcssSelectorParser.postcssSelectorParserStrings.attribute | typings.postcssSelectorParser.postcssSelectorParserStrings.universal
   
-  var value: Value = js.native
+  var value: Value
 }
 object Base {
   
@@ -102,7 +100,7 @@ object Base {
   }
   
   @scala.inline
-  implicit class BaseMutableBuilder[Self <: Base[_, _], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self with (Base[Value, ParentType])) extends AnyVal {
+  implicit class BaseMutableBuilder[Self <: Base[?, ?], Value /* <: js.UndefOr[String] */, ParentType /* <: js.UndefOr[Container[String, Node]] */] (val x: Self & (Base[Value, ParentType])) extends AnyVal {
     
     @scala.inline
     def setAppendToPropertyAndEscape(value: (String, js.Any, String) => Unit): Self = StObject.set(x, "appendToPropertyAndEscape", js.Any.fromFunction3(value))

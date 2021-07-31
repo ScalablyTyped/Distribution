@@ -2,19 +2,17 @@ package typings.inboxsdk.mod.Conversations
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadButtonDescriptor extends StObject {
   
-  var downloadFilename: js.UndefOr[String] = js.native
+  var downloadFilename: js.UndefOr[String] = js.undefined
   
-  var downloadUrl: String = js.native
+  var downloadUrl: String
   
-  def onClick(event: js.Any): Unit = js.native
+  def onClick(event: js.Any): Unit
   
-  var openInNewTab: js.UndefOr[Boolean] = js.native
+  var openInNewTab: js.UndefOr[Boolean] = js.undefined
 }
 object DownloadButtonDescriptor {
   

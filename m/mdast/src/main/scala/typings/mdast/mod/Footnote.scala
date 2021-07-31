@@ -3,26 +3,25 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.footnote
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Footnote
-  extends Parent
+  extends StObject
+     with Parent
      with StaticPhrasingContent {
   
   @JSName("children")
-  var children_Footnote: js.Array[PhrasingContent] = js.native
+  var children_Footnote: js.Array[PhrasingContent]
   
   @JSName("type")
-  var type_Footnote: footnote = js.native
+  var type_Footnote: footnote
 }
 object Footnote {
   
   @scala.inline
-  def apply(children: js.Array[PhrasingContent], `type`: footnote): Footnote = {
+  def apply(children: js.Array[PhrasingContent]): Footnote = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("footnote")
     __obj.asInstanceOf[Footnote]
   }
   

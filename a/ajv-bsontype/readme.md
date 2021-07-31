@@ -10,9 +10,9 @@ adds mongodb's bsonType validators
 | ------------------ | :-------------: |
 | Full name          | ajv-bsontype |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 5 |
-| # downloads        | 62785 |
+| # releases         | 2 |
+| # dependents       | 6 |
+| # downloads        | 92930 |
 | # stars            | 0 |
 
 ## Links

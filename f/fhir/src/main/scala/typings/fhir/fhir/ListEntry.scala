@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Entries in the list
   */
-@js.native
-trait ListEntry extends BackboneElement {
+trait ListEntry
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'deleted'.
     */
-  var _deleted: js.UndefOr[Element] = js.native
+  var _deleted: js.UndefOr[Element] = js.undefined
   
   /**
     * When item added to list
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * If this item is actually marked as deleted
     */
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Status/Workflow information about this item
     */
-  var flag: js.UndefOr[CodeableConcept] = js.native
+  var flag: js.UndefOr[CodeableConcept] = js.undefined
   
   /**
     * Actual entry
     */
-  var item: Reference = js.native
+  var item: Reference
 }
 object ListEntry {
   

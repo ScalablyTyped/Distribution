@@ -5,12 +5,10 @@ import typings.std.RegExp
 import typings.uirouterCore.paramTypeMod.ParamType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paramsInterfaceMod {
   
-  @js.native
   trait ParamDeclaration extends StObject {
     
     /**
@@ -46,7 +44,7 @@ object paramsInterfaceMod {
       * @default `auto` for query parameters, such as `url: '/foo?queryParam'`
       * @default `true` if the parameter name ends in `[]`, such as `url: '/foo/{implicitArrayParam:int[]}'`
       */
-    var array: js.UndefOr[Boolean] = js.native
+    var array: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Dynamic flag
@@ -68,7 +66,7 @@ object paramsInterfaceMod {
       *
       * Default: `false`
       */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables/disables inheriting of this parameter's value
@@ -106,7 +104,7 @@ object paramsInterfaceMod {
       *
       * Default: `true`
       */
-    var inherit: js.UndefOr[Boolean] = js.native
+    var inherit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @internal
@@ -114,7 +112,7 @@ object paramsInterfaceMod {
       *
       * This is not part of the declaration; it is a calculated value depending on if a default value was specified or not.
       */
-    var isOptional: js.UndefOr[Boolean] = js.native
+    var isOptional: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Disables url-encoding of parameter values
@@ -152,7 +150,7 @@ object paramsInterfaceMod {
       *
       * Default: `false`
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @internal
@@ -171,7 +169,7 @@ object paramsInterfaceMod {
       * ]
       * ```
       */
-    var replace: js.UndefOr[js.Array[Replace]] = js.native
+    var replace: js.UndefOr[js.Array[Replace]] = js.undefined
     
     /**
       * Squash mode: omit default parameter values in URL
@@ -226,7 +224,7 @@ object paramsInterfaceMod {
       *
       * Default: If squash is not set, it uses the configured default squash policy. (See [[defaultSquashPolicy]]())
       */
-    var squash: js.UndefOr[Boolean | String] = js.native
+    var squash: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * The parameter's type
@@ -247,7 +245,7 @@ object paramsInterfaceMod {
       * - Non-url parameters (`param: { foo: null }`): `any`
       *
       */
-    var `type`: js.UndefOr[String | ParamType] = js.native
+    var `type`: js.UndefOr[String | ParamType] = js.undefined
     
     /**
       * The default value for this parameter.
@@ -304,7 +302,7 @@ object paramsInterfaceMod {
       *
       * Default: `undefined`
       */
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ParamDeclaration {
     
@@ -532,7 +530,6 @@ object paramsInterfaceMod {
   
   type RawParams = StringDictionary[js.Any]
   
-  @js.native
   trait Replace extends StObject {
     
     /**
@@ -542,14 +539,14 @@ object paramsInterfaceMod {
       * The entire value must match using `===`.
       * When found, the [[to]] value is used instead.
       */
-    var from: String = js.native
+    var from: String
     
     /**
       * The new value
       *
       * Used instead of the [[from]] value.
       */
-    var to: String = js.native
+    var to: String
   }
   object Replace {
     

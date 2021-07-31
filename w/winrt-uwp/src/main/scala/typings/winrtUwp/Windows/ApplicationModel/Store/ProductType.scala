@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Store
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object ProductType extends StObject {
   
   /** A consumable product. */
   @js.native
-  sealed trait consumable extends ProductType
+  sealed trait consumable
+    extends StObject
+       with ProductType
   
   /** A durable product. */
   @js.native
-  sealed trait durable extends ProductType
+  sealed trait durable
+    extends StObject
+       with ProductType
   
   /** The product type is unknown. */
   @js.native
-  sealed trait unknown extends ProductType
+  sealed trait unknown
+    extends StObject
+       with ProductType
 }

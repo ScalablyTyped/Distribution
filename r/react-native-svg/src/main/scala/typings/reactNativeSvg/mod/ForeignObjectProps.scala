@@ -2,19 +2,17 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForeignObjectProps extends StObject {
   
-  var height: js.UndefOr[NumberProp] = js.native
+  var height: js.UndefOr[NumberProp] = js.undefined
   
-  var width: js.UndefOr[NumberProp] = js.native
+  var width: js.UndefOr[NumberProp] = js.undefined
   
-  var x: js.UndefOr[NumberProp] = js.native
+  var x: js.UndefOr[NumberProp] = js.undefined
   
-  var y: js.UndefOr[NumberProp] = js.native
+  var y: js.UndefOr[NumberProp] = js.undefined
 }
 object ForeignObjectProps {
   

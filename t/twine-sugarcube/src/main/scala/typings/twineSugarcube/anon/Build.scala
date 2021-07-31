@@ -3,31 +3,29 @@ package typings.twineSugarcube.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Build extends StObject {
   
-  val build: Double = js.native
+  val build: Double
   
-  val date: Date = js.native
+  val date: Date
   
-  val major: Double = js.native
+  val major: Double
   
-  val minor: Double = js.native
+  val minor: Double
   
-  val patch: Double = js.native
+  val patch: Double
   
-  val prerelease: String | Null = js.native
+  val prerelease: String | Null
   
-  val title: String = js.native
+  val title: String
 }
 object Build {
   
   @scala.inline
   def apply(build: Double, date: Date, major: Double, minor: Double, patch: Double, title: String): Build = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], major = major.asInstanceOf[js.Any], minor = minor.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], prerelease = null)
     __obj.asInstanceOf[Build]
   }
   

@@ -13,12 +13,10 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-1`
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.`us-west-2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateBucketConfigurationMod {
   
-  @js.native
   trait CreateBucketConfiguration extends StObject {
     
     /**
@@ -26,7 +24,7 @@ object typesCreateBucketConfigurationMod {
       */
     var LocationConstraint: js.UndefOr[
         EU | `eu-west-1` | `us-west-1` | `us-west-2` | `ap-south-1` | `ap-southeast-1` | `ap-southeast-2` | `ap-northeast-1` | `sa-east-1` | `cn-north-1` | `eu-central-1` | String
-      ] = js.native
+      ] = js.undefined
   }
   object CreateBucketConfiguration {
     

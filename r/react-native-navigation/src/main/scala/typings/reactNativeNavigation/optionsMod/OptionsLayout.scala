@@ -5,47 +5,45 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.ltr
 import typings.reactNativeNavigation.reactNativeNavigationStrings.rtl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsLayout extends StObject {
   
   /**
     * Controls the application's preferred home indicator auto-hiding.
     * #### (iOS specific)
     */
-  var autoHideHomeIndicator: js.UndefOr[Boolean] = js.native
+  var autoHideHomeIndicator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the screen background color
     */
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set background color only for components, helps reduce overdraw if background color is set in default options.
     * #### (Android specific)
     */
-  var componentBackgroundColor: js.UndefOr[Color] = js.native
+  var componentBackgroundColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set language direction.
     * only works with DefaultOptions
     */
-  var direction: js.UndefOr[rtl | ltr | locale] = js.native
+  var direction: js.UndefOr[rtl | ltr | locale] = js.undefined
   
-  var fitSystemWindows: js.UndefOr[Boolean] = js.native
+  var fitSystemWindows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the allowed orientations
     */
-  var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.native
+  var orientation: js.UndefOr[js.Array[LayoutOrientation]] = js.undefined
   
   /**
     * Layout top margin
     * #### (Android specific)
     */
-  var topMargin: js.UndefOr[Double] = js.native
+  var topMargin: js.UndefOr[Double] = js.undefined
 }
 object OptionsLayout {
   

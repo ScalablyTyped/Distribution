@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.highlightsRepositoryEditReelResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryEditReelResponseParticipantsItem extends StObject {
   
-  var answer: Double = js.native
+  var answer: Double
   
-  var ts: Double = js.native
+  var ts: Double
   
-  var user: HighlightsRepositoryEditReelResponseUser = js.native
+  var user: HighlightsRepositoryEditReelResponseUser
 }
 object HighlightsRepositoryEditReelResponseParticipantsItem {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users")
@@ -32,7 +31,7 @@ class ResourceUsers protected () extends StObject {
     */
   def getProfile(): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
-  def getProfile(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
+  def getProfile(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(params: ParamsResourceUsersGetprofile): GaxiosPromise[SchemaProfile] = js.native
   def getProfile(params: ParamsResourceUsersGetprofile, callback: BodyResponseCallback[SchemaProfile]): Unit = js.native
   def getProfile(
@@ -69,7 +68,7 @@ class ResourceUsers protected () extends StObject {
     */
   def stop(): GaxiosPromise[Unit] = js.native
   def stop(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def stop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def stop(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceUsersStop): GaxiosPromise[Unit] = js.native
   def stop(params: ParamsResourceUsersStop, callback: BodyResponseCallback[Unit]): Unit = js.native
   def stop(
@@ -98,7 +97,7 @@ class ResourceUsers protected () extends StObject {
     */
   def watch(): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(callback: BodyResponseCallback[SchemaWatchResponse]): Unit = js.native
-  def watch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWatchResponse] = js.native
+  def watch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(params: ParamsResourceUsersWatch): GaxiosPromise[SchemaWatchResponse] = js.native
   def watch(params: ParamsResourceUsersWatch, callback: BodyResponseCallback[SchemaWatchResponse]): Unit = js.native
   def watch(

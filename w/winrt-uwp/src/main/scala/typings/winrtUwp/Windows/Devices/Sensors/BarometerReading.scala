@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a barometer reading. */
-@js.native
 trait BarometerReading extends StObject {
   
   /** Gets the barometric pressure determined by the barometer sensor. */
-  var stationPressureInHectopascals: Double = js.native
+  var stationPressureInHectopascals: Double
   
   /** Gets the time for the most recent barometer reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object BarometerReading {
   

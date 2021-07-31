@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSpeech.gapi.client.speech
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpeakerDiarizationConfig extends StObject {
   
   /** If 'true', enables speaker detection for each recognized word in the top alternative of the recognition result using a speaker_tag provided in the WordInfo. */
-  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.native
+  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of speakers in the conversation. This range gives you more flexibility by allowing the system to automatically determine the correct number of speakers. If not set,
     * the default value is 6.
     */
-  var maxSpeakerCount: js.UndefOr[Double] = js.native
+  var maxSpeakerCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of speakers in the conversation. This range gives you more flexibility by allowing the system to automatically determine the correct number of speakers. If not set,
     * the default value is 2.
     */
-  var minSpeakerCount: js.UndefOr[Double] = js.native
+  var minSpeakerCount: js.UndefOr[Double] = js.undefined
   
   /** Output only. Unused. */
-  var speakerTag: js.UndefOr[Double] = js.native
+  var speakerTag: js.UndefOr[Double] = js.undefined
 }
 object SpeakerDiarizationConfig {
   

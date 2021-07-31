@@ -5,10 +5,13 @@ import typings.chromedriver.chromedriverBooleans.`true`
 import typings.node.childProcessMod.ChildProcess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("chromedriver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("chromedriver", "defaultInstance")
   @js.native
@@ -18,31 +21,25 @@ object mod {
   @js.native
   val path: String = js.native
   
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start(): ChildProcess = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start(args: js.Array[String]): ChildProcess = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start_false(args: js.UndefOr[scala.Nothing], returnPromise: `false`): ChildProcess = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start_false(args: js.Array[String], returnPromise: `false`): ChildProcess = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start_true(args: js.UndefOr[scala.Nothing], returnPromise: `true`): js.Promise[ChildProcess] = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start_true(args: js.Array[String], returnPromise: `true`): js.Promise[ChildProcess] = js.native
-  @JSImport("chromedriver", "start")
-  @js.native
-  def start_true(args: Null, returnPromise: `true`): js.Promise[ChildProcess] = js.native
+  @scala.inline
+  def start(): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[ChildProcess]
+  @scala.inline
+  def start(args: js.Array[String]): ChildProcess = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any]).asInstanceOf[ChildProcess]
   
-  @JSImport("chromedriver", "stop")
-  @js.native
-  def stop(): Unit = js.native
+  @scala.inline
+  def start_false(args: js.Array[String], returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  @scala.inline
+  def start_false(args: Unit, returnPromise: `false`): ChildProcess = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[ChildProcess]
+  
+  @scala.inline
+  def start_true(args: js.Array[String], returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  @scala.inline
+  def start_true(args: Null, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  @scala.inline
+  def start_true(args: Unit, returnPromise: `true`): js.Promise[ChildProcess] = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(args.asInstanceOf[js.Any], returnPromise.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ChildProcess]]
+  
+  @scala.inline
+  def stop(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[Unit]
   
   @JSImport("chromedriver", "version")
   @js.native

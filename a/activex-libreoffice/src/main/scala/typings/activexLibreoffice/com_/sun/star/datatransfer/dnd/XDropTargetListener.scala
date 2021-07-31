@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,26 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Methods of this interface may be implemented to provide "drag under" visual feedback to the user throughout the Drag and Drop operation.
   */
-@js.native
-trait XDropTargetListener extends XEventListener {
+trait XDropTargetListener
+  extends StObject
+     with XEventListener {
   
   /**
     * Called when a drag operation has encountered the drop target.
     * @param dtdee The {@link DropTargetDragEvent} .
     */
-  def dragEnter(dtdee: DropTargetDragEnterEvent): Unit = js.native
+  def dragEnter(dtdee: DropTargetDragEnterEvent): Unit
   
   /**
     * The drag operation has departed the drop target without dropping.
     * @param dte The {@link DropTargetEvent} .
     */
-  def dragExit(dte: DropTargetEvent): Unit = js.native
+  def dragExit(dte: DropTargetEvent): Unit
   
   /**
     * Called when a drag operation is ongoing on the drop target.
     * @param dtde The {@link DropTargetEvent} .
     */
-  def dragOver(dtde: DropTargetDragEvent): Unit = js.native
+  def dragOver(dtde: DropTargetDragEvent): Unit
   
   /**
     * The drag operation has terminated with a drop on this drop target.
@@ -43,13 +43,13 @@ trait XDropTargetListener extends XEventListener {
     * should not assume the {@link DropTargetDropEvent} to be meaningful after returning from the {@link XDropTargetListener.drop()} method.
     * @param dtde The {@link DropTargetDropEvent} .
     */
-  def drop(dtde: DropTargetDropEvent): Unit = js.native
+  def drop(dtde: DropTargetDropEvent): Unit
   
   /**
     * Called when the user has modified the drop gesture.
     * @param dtde The {@link DropTargetEvent} .
     */
-  def dropActionChanged(dtde: DropTargetDragEvent): Unit = js.native
+  def dropActionChanged(dtde: DropTargetDragEvent): Unit
 }
 object XDropTargetListener {
   

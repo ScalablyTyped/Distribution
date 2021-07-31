@@ -6,12 +6,10 @@ import typings.std.RTCPeerConnectionIceErrorEvent
 import typings.std.RTCPeerConnectionIceEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peerConnectionDelegateMod {
   
-  @js.native
   trait PeerConnectionDelegate extends StObject {
     
     /**
@@ -20,26 +18,26 @@ object peerConnectionDelegateMod {
       * individual network transports being used by the connection.
       * @param event - Event.
       */
-    var onconnectionstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onconnectionstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when an RTCDataChannel is added to the connection by the
       * remote peer calling createDataChannel().
       * @param event - RTCDataChannelEvent.
       */
-    var ondatachannel: js.UndefOr[js.Function1[/* event */ RTCDataChannelEvent, Unit]] = js.native
+    var ondatachannel: js.UndefOr[js.Function1[/* event */ RTCDataChannelEvent, Unit]] = js.undefined
     
     /**
       * Triggered when a new ICE candidate has been found.
       * @param event - RTCPeerConnectionIceEvent.
       */
-    var onicecandidate: js.UndefOr[js.Function1[/* event */ RTCPeerConnectionIceEvent, Unit]] = js.native
+    var onicecandidate: js.UndefOr[js.Function1[/* event */ RTCPeerConnectionIceEvent, Unit]] = js.undefined
     
     /**
       * Triggered when an error occurred during ICE candidate gathering.
       * @param event - RTCPeerConnectionIceErrorEvent.
       */
-    var onicecandidateerror: js.UndefOr[js.Function1[/* event */ RTCPeerConnectionIceErrorEvent, Unit]] = js.native
+    var onicecandidateerror: js.UndefOr[js.Function1[/* event */ RTCPeerConnectionIceErrorEvent, Unit]] = js.undefined
     
     /**
       * This happens whenever the local ICE agent needs to deliver a message to
@@ -49,37 +47,37 @@ object peerConnectionDelegateMod {
       * signalingTriggered when the IceConnectionState changes.
       * @param event - Event.
       */
-    var oniceconnectionstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var oniceconnectionstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when the ICE gathering state changes.
       * @param event - Event.
       */
-    var onicegatheringstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onicegatheringstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when renegotiation is necessary.
       * @param event - Event.
       */
-    var onnegotiationneeded: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onnegotiationneeded: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when the SignalingState changes.
       * @param event - Event.
       */
-    var onsignalingstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onsignalingstatechange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when when a statistics object being monitored is deleted.
       * @param event - Event.
       */
-    var onstatsended: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onstatsended: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
     /**
       * Triggered when a new track is signaled by the remote peer, as a result of setRemoteDescription.
       * @param event - Event.
       */
-    var ontrack: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var ontrack: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   }
   object PeerConnectionDelegate {
     

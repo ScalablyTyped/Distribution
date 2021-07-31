@@ -12,13 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.pngjpg
 import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.arcgisJsApi.esri.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ @js.native
-trait MapImageLayerProperties
-  extends LayerProperties
+- typings.arcgisJsApi.esri.ArcGISMapServiceProperties because var conflicts: fullExtent. Inlined copyright, legendEnabled */ trait MapImageLayerProperties
+  extends StObject
+     with LayerProperties
      with ScaleRangeLayerProperties
      with RefreshableLayerProperties
      with TemporalLayerProperties
@@ -29,84 +28,84 @@ trait MapImageLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * The output dots per inch (DPI) of the MapImageLayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#dpi)
     */
-  var dpi: js.UndefOr[Double] = js.native
+  var dpi: js.UndefOr[Double] = js.undefined
   
   /**
     * The version of the geodatabase of the map service data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#gdbVersion)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The output image type.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageFormat)
     */
-  var imageFormat: js.UndefOr[png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg] = js.native
+  var imageFormat: js.UndefOr[png | png8 | png24 | png32 | jpg | pdf | bmp | gif | svg | pngjpg] = js.undefined
   
   /**
     * Indicates the maximum height of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageMaxHeight)
     */
-  var imageMaxHeight: js.UndefOr[Double] = js.native
+  var imageMaxHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the maximum width of the image exported by the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageMaxWidth)
     */
-  var imageMaxWidth: js.UndefOr[Double] = js.native
+  var imageMaxWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the background of the image exported by the service is transparent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#imageTransparency)
     */
-  var imageTransparency: js.UndefOr[Boolean] = js.native
+  var imageTransparency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISMapService.html#legendEnabled)
     */
-  var legendEnabled: js.UndefOr[Boolean] = js.native
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The portal item from which the layer is loaded.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#portalItem)
     */
-  var portalItem: js.UndefOr[PortalItemProperties] = js.native
+  var portalItem: js.UndefOr[PortalItemProperties] = js.undefined
   
   /**
     * The [map service's metadata JSON](https://developers.arcgis.com/rest/services-reference/map-service.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A [Collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of [Sublayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html) objects that allow you to alter the properties of one or more sublayers of the MapImageLayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#sublayers)
     */
-  var sublayers: js.UndefOr[CollectionProperties[SublayerProperties]] = js.native
+  var sublayers: js.UndefOr[CollectionProperties[SublayerProperties]] = js.undefined
   
   /**
     * The URL to the REST endpoint of the map service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-MapImageLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object MapImageLayerProperties {
   

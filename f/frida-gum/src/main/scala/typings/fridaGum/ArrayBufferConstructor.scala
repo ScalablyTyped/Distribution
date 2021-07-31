@@ -2,10 +2,8 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayBufferConstructor extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ArrayBufferConstructor extends StObject {
     * @param size Size of the region. Passing `0` will result in an empty
     *             buffer.
     */
-  def wrap(address: NativePointerValue, size: Double): ArrayBuffer = js.native
+  def wrap(address: NativePointerValue, size: Double): ArrayBuffer
 }
 object ArrayBufferConstructor {
   

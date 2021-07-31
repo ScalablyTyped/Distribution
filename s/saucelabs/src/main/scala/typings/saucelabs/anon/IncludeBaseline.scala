@@ -2,17 +2,15 @@ package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeBaseline extends StObject {
   
-  var includeBaseline: js.UndefOr[Boolean] = js.native
+  var includeBaseline: js.UndefOr[Boolean] = js.undefined
   
-  var metricNames: js.Array[String] = js.native
+  var metricNames: js.Array[String]
   
-  var orderIndex: Double = js.native
+  var orderIndex: Double
 }
 object IncludeBaseline {
   

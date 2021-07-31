@@ -2,51 +2,49 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHumanLoopResponse extends StObject {
   
   /**
     * The creation time when Amazon Augmented AI created the human loop.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * A failure code that identifies the type of failure.
     */
-  var FailureCode: js.UndefOr[String] = js.native
+  var FailureCode: js.UndefOr[String] = js.undefined
   
   /**
     * The reason why a human loop failed. The failure reason is returned when the status of the human loop is Failed.
     */
-  var FailureReason: js.UndefOr[String] = js.native
+  var FailureReason: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition.
     */
-  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn
   
   /**
     * The Amazon Resource Name (ARN) of the human loop.
     */
-  var HumanLoopArn: typings.awsSdk.augmentedairuntimeMod.HumanLoopArn = js.native
+  var HumanLoopArn: typings.awsSdk.augmentedairuntimeMod.HumanLoopArn
   
   /**
     * The name of the human loop. The name must be lowercase, unique within the Region in your account, and can have up to 63 characters. Valid characters: a-z, 0-9, and - (hyphen).
     */
-  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName = js.native
+  var HumanLoopName: typings.awsSdk.augmentedairuntimeMod.HumanLoopName
   
   /**
     * An object that contains information about the output of the human loop.
     */
-  var HumanLoopOutput: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopOutput] = js.native
+  var HumanLoopOutput: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.HumanLoopOutput] = js.undefined
   
   /**
     * The status of the human loop. 
     */
-  var HumanLoopStatus: typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus = js.native
+  var HumanLoopStatus: typings.awsSdk.augmentedairuntimeMod.HumanLoopStatus
 }
 object DescribeHumanLoopResponse {
   

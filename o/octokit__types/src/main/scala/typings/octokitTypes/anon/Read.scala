@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Read extends StObject {
   
-  var admin: Boolean = js.native
+  var admin: Boolean
   
-  var read: Boolean = js.native
+  var read: Boolean
   
-  var write: Boolean = js.native
+  var write: Boolean
 }
 object Read {
   

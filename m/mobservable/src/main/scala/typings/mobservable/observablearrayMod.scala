@@ -10,10 +10,13 @@ import typings.mobservable.interfacesMod.Lambda
 import typings.mobservable.simpleeventemitterMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object observablearrayMod {
+  
+  @JSImport("mobservable/lib/observablearray", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobservable/lib/observablearray", "ObservableArray")
   @js.native
@@ -33,16 +36,16 @@ object observablearrayMod {
     def find(predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean]): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
-      thisArg: js.UndefOr[scala.Nothing],
-      fromIndex: Double
-    ): T = js.native
-    def find(
-      predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
       thisArg: js.Any
     ): T = js.native
     def find(
       predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
       thisArg: js.Any,
+      fromIndex: Double
+    ): T = js.native
+    def find(
+      predicate: js.Function3[/* item */ T, /* index */ Double, /* array */ ObservableArray[T], Boolean],
+      thisArg: Unit,
       fromIndex: Double
     ): T = js.native
     
@@ -69,8 +72,8 @@ object observablearrayMod {
     def sort(): js.Array[T] = js.native
     def sort(compareFn: js.Function2[/* a */ T, /* b */ T, Double]): js.Array[T] = js.native
     
-    def splice(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: T*): js.Array[T] = js.native
     def splice(index: Double, deleteCount: Double, newItems: T*): js.Array[T] = js.native
+    def splice(index: Double, deleteCount: Unit, newItems: T*): js.Array[T] = js.native
     
     def toJSON(): js.Array[T] = js.native
     
@@ -108,9 +111,9 @@ object observablearrayMod {
     def setLength(newLength: js.Any): Double = js.native
     
     def spliceWithArray(index: Double): js.Array[T] = js.native
-    def spliceWithArray(index: Double, deleteCount: js.UndefOr[scala.Nothing], newItems: js.Array[T]): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double): js.Array[T] = js.native
     def spliceWithArray(index: Double, deleteCount: Double, newItems: js.Array[T]): js.Array[T] = js.native
+    def spliceWithArray(index: Double, deleteCount: Unit, newItems: js.Array[T]): js.Array[T] = js.native
     
     var supportEnumerable: Boolean = js.native
     
@@ -123,12 +126,11 @@ object observablearrayMod {
   @js.native
   class StubArray () extends StObject
   
-  @JSImport("mobservable/lib/observablearray", "createObservableArray")
-  @js.native
+  @scala.inline
   def createObservableArray[T](
     initialValues: js.Array[T],
     mode: ValueMode,
     supportEnumerable: Boolean,
     context: IContextInfoStruct
-  ): IObservableArray[T] = js.native
+  ): IObservableArray[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createObservableArray")(initialValues.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], supportEnumerable.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[IObservableArray[T]]
 }

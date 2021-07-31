@@ -9,7 +9,6 @@ import typings.eurekaJsClient.mod.EurekaClient.EurekaYmlConfig
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,12 +51,11 @@ object mod {
       def MODIFIED: typings.eurekaJsClient.eurekaJsClientStrings.MODIFIED = "MODIFIED".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.MODIFIED]
     }
     
-    @js.native
     trait DataCenterInfo extends StObject {
       
-      var `@class`: js.UndefOr[String] = js.native
+      var `@class`: js.UndefOr[String] = js.undefined
       
-      var name: DataCenterName = js.native
+      var name: DataCenterName
     }
     object DataCenterInfo {
       
@@ -99,44 +97,43 @@ object mod {
       def Netflix: typings.eurekaJsClient.eurekaJsClientStrings.Netflix = "Netflix".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.Netflix]
     }
     
-    @js.native
     trait EurekaClientConfig extends StObject {
       
-      var clusterRefreshInterval: js.UndefOr[Boolean] = js.native
+      var clusterRefreshInterval: js.UndefOr[Boolean] = js.undefined
       
-      var fetchMetadata: js.UndefOr[Boolean] = js.native
+      var fetchMetadata: js.UndefOr[Boolean] = js.undefined
       
-      var fetchRegistry: js.UndefOr[Boolean] = js.native
+      var fetchRegistry: js.UndefOr[Boolean] = js.undefined
       
-      var filterUpInstances: js.UndefOr[Boolean] = js.native
+      var filterUpInstances: js.UndefOr[Boolean] = js.undefined
       
-      var heartbeatInterval: js.UndefOr[Double] = js.native
+      var heartbeatInterval: js.UndefOr[Double] = js.undefined
       
-      var host: js.UndefOr[String] = js.native
+      var host: js.UndefOr[String] = js.undefined
       
-      var maxRetries: js.UndefOr[Double] = js.native
+      var maxRetries: js.UndefOr[Double] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var preferIpAddress: js.UndefOr[Boolean] = js.native
+      var preferIpAddress: js.UndefOr[Boolean] = js.undefined
       
-      var preferSameZone: js.UndefOr[Boolean] = js.native
+      var preferSameZone: js.UndefOr[Boolean] = js.undefined
       
-      var registerWithEureka: js.UndefOr[Boolean] = js.native
+      var registerWithEureka: js.UndefOr[Boolean] = js.undefined
       
-      var registryFetchInterval: js.UndefOr[Double] = js.native
+      var registryFetchInterval: js.UndefOr[Double] = js.undefined
       
-      var requestRetryDelay: js.UndefOr[Double] = js.native
+      var requestRetryDelay: js.UndefOr[Double] = js.undefined
       
-      var servicePath: js.UndefOr[String] = js.native
+      var servicePath: js.UndefOr[String] = js.undefined
       
-      var serviceUrls: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+      var serviceUrls: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
       
-      var ssl: js.UndefOr[Boolean] = js.native
+      var ssl: js.UndefOr[Boolean] = js.undefined
       
-      var useDns: js.UndefOr[Boolean] = js.native
+      var useDns: js.UndefOr[Boolean] = js.undefined
       
-      var useLocalMetadata: js.UndefOr[Boolean] = js.native
+      var useLocalMetadata: js.UndefOr[Boolean] = js.undefined
     }
     object EurekaClientConfig {
       
@@ -259,20 +256,19 @@ object mod {
       }
     }
     
-    @js.native
     trait EurekaConfig extends StObject {
       
-      var eureka: EurekaClientConfig = js.native
+      var eureka: EurekaClientConfig
       
-      var instance: EurekaInstanceConfig = js.native
+      var instance: EurekaInstanceConfig
       
-      var logger: js.UndefOr[Debug] = js.native
+      var logger: js.UndefOr[Debug] = js.undefined
       
       var requestMiddleware: js.UndefOr[
             js.Function2[/* requestOpts */ js.Any, /* done */ js.Function1[/* opts */ js.Any, Unit], Unit]
-          ] = js.native
+          ] = js.undefined
       
-      var shouldUseDelta: js.UndefOr[Boolean] = js.native
+      var shouldUseDelta: js.UndefOr[Boolean] = js.undefined
     }
     object EurekaConfig {
       
@@ -311,56 +307,55 @@ object mod {
       }
     }
     
-    @js.native
     trait EurekaInstanceConfig extends StObject {
       
-      var actionType: js.UndefOr[ActionType] = js.native
+      var actionType: js.UndefOr[ActionType] = js.undefined
       
-      var app: String = js.native
+      var app: String
       
-      var appGroupName: js.UndefOr[String] = js.native
+      var appGroupName: js.UndefOr[String] = js.undefined
       
-      var countryId: js.UndefOr[Double] = js.native
+      var countryId: js.UndefOr[Double] = js.undefined
       
-      var dataCenterInfo: DataCenterInfo = js.native
+      var dataCenterInfo: DataCenterInfo
       
-      var healthCheckUrl: js.UndefOr[String] = js.native
+      var healthCheckUrl: js.UndefOr[String] = js.undefined
       
-      var homePageUrl: js.UndefOr[String] = js.native
+      var homePageUrl: js.UndefOr[String] = js.undefined
       
-      var hostName: String = js.native
+      var hostName: String
       
-      var instanceId: js.UndefOr[String] = js.native
+      var instanceId: js.UndefOr[String] = js.undefined
       
-      var ipAddr: String = js.native
+      var ipAddr: String
       
-      var isCoordinatingDiscoveryServer: js.UndefOr[Boolean] = js.native
+      var isCoordinatingDiscoveryServer: js.UndefOr[Boolean] = js.undefined
       
-      var lastDirtyTimestamp: js.UndefOr[Double] = js.native
+      var lastDirtyTimestamp: js.UndefOr[Double] = js.undefined
       
-      var lastUpdatedTimestamp: js.UndefOr[Double] = js.native
+      var lastUpdatedTimestamp: js.UndefOr[Double] = js.undefined
       
-      var leaseInfo: js.UndefOr[LeaseInfo] = js.native
+      var leaseInfo: js.UndefOr[LeaseInfo] = js.undefined
       
-      var metadata: js.UndefOr[StringDictionary[String]] = js.native
+      var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var overriddenstatus: js.UndefOr[InstanceStatus] = js.native
+      var overriddenstatus: js.UndefOr[InstanceStatus] = js.undefined
       
-      var port: js.UndefOr[Double | PortWrapper | LegacyPortWrapper] = js.native
+      var port: js.UndefOr[Double | PortWrapper | LegacyPortWrapper] = js.undefined
       
-      var secureHealthCheckUrl: js.UndefOr[String] = js.native
+      var secureHealthCheckUrl: js.UndefOr[String] = js.undefined
       
-      var securePort: js.UndefOr[Double | PortWrapper | LegacyPortWrapper] = js.native
+      var securePort: js.UndefOr[Double | PortWrapper | LegacyPortWrapper] = js.undefined
       
-      var secureVipAddress: js.UndefOr[String] = js.native
+      var secureVipAddress: js.UndefOr[String] = js.undefined
       
-      var sid: js.UndefOr[String] = js.native
+      var sid: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[InstanceStatus] = js.native
+      var status: js.UndefOr[InstanceStatus] = js.undefined
       
-      var statusPageUrl: js.UndefOr[String] = js.native
+      var statusPageUrl: js.UndefOr[String] = js.undefined
       
-      var vipAddress: String = js.native
+      var vipAddress: String
     }
     object EurekaInstanceConfig {
       
@@ -504,10 +499,9 @@ object mod {
       }
     }
     
-    @js.native
     trait EurekaMiddlewareConfig extends StObject {
       
-      def requestMiddleware(requestOpts: js.Any, done: js.Function1[/* opts */ js.Any, Unit]): Unit = js.native
+      def requestMiddleware(requestOpts: js.Any, done: js.Function1[/* opts */ js.Any, Unit]): Unit
     }
     object EurekaMiddlewareConfig {
       
@@ -525,12 +519,11 @@ object mod {
       }
     }
     
-    @js.native
     trait EurekaYmlConfig extends StObject {
       
-      var cwd: String = js.native
+      var cwd: String
       
-      var filename: js.UndefOr[String] = js.native
+      var filename: js.UndefOr[String] = js.undefined
     }
     object EurekaYmlConfig {
       
@@ -580,20 +573,19 @@ object mod {
       def UP: typings.eurekaJsClient.eurekaJsClientStrings.UP = "UP".asInstanceOf[typings.eurekaJsClient.eurekaJsClientStrings.UP]
     }
     
-    @js.native
     trait LeaseInfo extends StObject {
       
-      var durationInSecs: js.UndefOr[Double] = js.native
+      var durationInSecs: js.UndefOr[Double] = js.undefined
       
-      var evictionTimestamp: js.UndefOr[Double] = js.native
+      var evictionTimestamp: js.UndefOr[Double] = js.undefined
       
-      var lastRenewalTimestamp: js.UndefOr[Double] = js.native
+      var lastRenewalTimestamp: js.UndefOr[Double] = js.undefined
       
-      var registrationTimestamp: js.UndefOr[Double] = js.native
+      var registrationTimestamp: js.UndefOr[Double] = js.undefined
       
-      var renewalIntervalInSecs: js.UndefOr[Double] = js.native
+      var renewalIntervalInSecs: js.UndefOr[Double] = js.undefined
       
-      var serviceUpTimestamp: js.UndefOr[Double] = js.native
+      var serviceUpTimestamp: js.UndefOr[Double] = js.undefined
     }
     object LeaseInfo {
       
@@ -644,13 +636,12 @@ object mod {
       }
     }
     
-    @js.native
     trait LegacyPortWrapper extends StObject {
       
       @JSName("$")
-      var $: Double = js.native
+      var $: Double
       
-      var `@enabled`: Boolean = js.native
+      var `@enabled`: Boolean
     }
     object LegacyPortWrapper {
       
@@ -672,12 +663,11 @@ object mod {
       }
     }
     
-    @js.native
     trait PortWrapper extends StObject {
       
-      var enabled: Boolean = js.native
+      var enabled: Boolean
       
-      var port: Double = js.native
+      var port: Double
     }
     object PortWrapper {
       

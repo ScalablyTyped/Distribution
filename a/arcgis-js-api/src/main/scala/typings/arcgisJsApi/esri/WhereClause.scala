@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhereClause extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait WhereClause extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#calculateValue)
     */
-  def calculateValue(feature: js.Any): js.Any = js.native
+  def calculateValue(feature: js.Any): js.Any
   
   /**
     * An array of the field names used in the where clause.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#fieldNames)
     */
-  var fieldNames: js.Array[String] = js.native
+  var fieldNames: js.Array[String]
   
   /**
     * Returns `true` if the parsed where clause meets the requirements of standardized sql.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#isStandardized)
     */
-  val isStandardized: Boolean = js.native
+  val isStandardized: Boolean
   
   /**
     * Tests the attributes of a feature against the `whereClause`, and returns `true` if the test passes, `false` otherwise.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-sql-WhereClause.html#testFeature)
     */
-  def testFeature(feature: js.Any): Boolean = js.native
+  def testFeature(feature: js.Any): Boolean
 }
 object WhereClause {
   

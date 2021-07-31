@@ -3,26 +3,24 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellularBase extends StObject {
   
   /** Carrier account activation state. */
-  var ActivationState: js.UndefOr[ActivationStateType] = js.native
+  var ActivationState: js.UndefOr[ActivationStateType] = js.undefined
   
   /** If the modem is registered on a network, the network technology currently in use. */
-  var NetworkTechnology: js.UndefOr[String] = js.native
+  var NetworkTechnology: js.UndefOr[String] = js.undefined
   
   /** The roaming state of the cellular modem on the current network. */
-  var RoamingState: js.UndefOr[String] = js.native
+  var RoamingState: js.UndefOr[String] = js.undefined
   
   /** Whether a SIM card is present. */
-  var SIMPresent: js.UndefOr[Boolean] = js.native
+  var SIMPresent: js.UndefOr[Boolean] = js.undefined
   
   /** The current network signal strength. */
-  var SignalStrength: js.UndefOr[integer] = js.native
+  var SignalStrength: js.UndefOr[integer] = js.undefined
 }
 object CellularBase {
   

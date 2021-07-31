@@ -3,89 +3,87 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagramOptions extends StObject {
   
-  var add: js.UndefOr[js.Function1[/* e */ DiagramAddEvent, Unit]] = js.native
+  var add: js.UndefOr[js.Function1[/* e */ DiagramAddEvent, Unit]] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var cancel: js.UndefOr[js.Function1[/* e */ DiagramCancelEvent, Unit]] = js.native
+  var cancel: js.UndefOr[js.Function1[/* e */ DiagramCancelEvent, Unit]] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ DiagramChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ DiagramChangeEvent, Unit]] = js.undefined
   
-  var click: js.UndefOr[js.Function1[/* e */ DiagramClickEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ DiagramClickEvent, Unit]] = js.undefined
   
-  var connectionDefaults: js.UndefOr[DiagramConnectionDefaults] = js.native
+  var connectionDefaults: js.UndefOr[DiagramConnectionDefaults] = js.undefined
   
-  var connections: js.UndefOr[js.Array[DiagramConnection]] = js.native
+  var connections: js.UndefOr[js.Array[DiagramConnection]] = js.undefined
   
-  var connectionsDataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var connectionsDataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ DiagramDataBoundEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ DiagramDataBoundEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var drag: js.UndefOr[js.Function1[/* e */ DiagramDragEvent, Unit]] = js.native
+  var drag: js.UndefOr[js.Function1[/* e */ DiagramDragEvent, Unit]] = js.undefined
   
-  var dragEnd: js.UndefOr[js.Function1[/* e */ DiagramDragEndEvent, Unit]] = js.native
+  var dragEnd: js.UndefOr[js.Function1[/* e */ DiagramDragEndEvent, Unit]] = js.undefined
   
-  var dragStart: js.UndefOr[js.Function1[/* e */ DiagramDragStartEvent, Unit]] = js.native
+  var dragStart: js.UndefOr[js.Function1[/* e */ DiagramDragStartEvent, Unit]] = js.undefined
   
-  var edit: js.UndefOr[js.Function1[/* e */ DiagramEditEvent, Unit]] = js.native
+  var edit: js.UndefOr[js.Function1[/* e */ DiagramEditEvent, Unit]] = js.undefined
   
-  var editable: js.UndefOr[Boolean | DiagramEditable] = js.native
+  var editable: js.UndefOr[Boolean | DiagramEditable] = js.undefined
   
-  var itemBoundsChange: js.UndefOr[js.Function1[/* e */ DiagramItemBoundsChangeEvent, Unit]] = js.native
+  var itemBoundsChange: js.UndefOr[js.Function1[/* e */ DiagramItemBoundsChangeEvent, Unit]] = js.undefined
   
-  var itemRotate: js.UndefOr[js.Function1[/* e */ DiagramItemRotateEvent, Unit]] = js.native
+  var itemRotate: js.UndefOr[js.Function1[/* e */ DiagramItemRotateEvent, Unit]] = js.undefined
   
-  var layout: js.UndefOr[DiagramLayout] = js.native
+  var layout: js.UndefOr[DiagramLayout] = js.undefined
   
-  var mouseEnter: js.UndefOr[js.Function1[/* e */ DiagramMouseEnterEvent, Unit]] = js.native
+  var mouseEnter: js.UndefOr[js.Function1[/* e */ DiagramMouseEnterEvent, Unit]] = js.undefined
   
-  var mouseLeave: js.UndefOr[js.Function1[/* e */ DiagramMouseLeaveEvent, Unit]] = js.native
+  var mouseLeave: js.UndefOr[js.Function1[/* e */ DiagramMouseLeaveEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pan: js.UndefOr[js.Function1[/* e */ DiagramPanEvent, Unit]] = js.native
+  var pan: js.UndefOr[js.Function1[/* e */ DiagramPanEvent, Unit]] = js.undefined
   
-  var pannable: js.UndefOr[Boolean | DiagramPannable] = js.native
+  var pannable: js.UndefOr[Boolean | DiagramPannable] = js.undefined
   
-  var pdf: js.UndefOr[DiagramPdf] = js.native
+  var pdf: js.UndefOr[DiagramPdf] = js.undefined
   
-  var remove: js.UndefOr[js.Function1[/* e */ DiagramRemoveEvent, Unit]] = js.native
+  var remove: js.UndefOr[js.Function1[/* e */ DiagramRemoveEvent, Unit]] = js.undefined
   
-  var save: js.UndefOr[js.Function1[/* e */ DiagramSaveEvent, Unit]] = js.native
+  var save: js.UndefOr[js.Function1[/* e */ DiagramSaveEvent, Unit]] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ DiagramSelectEvent, Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ DiagramSelectEvent, Unit]] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | DiagramSelectable] = js.native
+  var selectable: js.UndefOr[Boolean | DiagramSelectable] = js.undefined
   
-  var shapeDefaults: js.UndefOr[DiagramShapeDefaults] = js.native
+  var shapeDefaults: js.UndefOr[DiagramShapeDefaults] = js.undefined
   
-  var shapes: js.UndefOr[js.Array[DiagramShape]] = js.native
+  var shapes: js.UndefOr[js.Array[DiagramShape]] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var toolBarClick: js.UndefOr[js.Function1[/* e */ DiagramToolBarClickEvent, Unit]] = js.native
+  var toolBarClick: js.UndefOr[js.Function1[/* e */ DiagramToolBarClickEvent, Unit]] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ DiagramZoomEndEvent, Unit]] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ DiagramZoomEndEvent, Unit]] = js.undefined
   
-  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMax: js.UndefOr[Double] = js.undefined
   
-  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.undefined
   
-  var zoomRate: js.UndefOr[Double] = js.native
+  var zoomRate: js.UndefOr[Double] = js.undefined
   
-  var zoomStart: js.UndefOr[js.Function1[/* e */ DiagramZoomStartEvent, Unit]] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ DiagramZoomStartEvent, Unit]] = js.undefined
 }
 object DiagramOptions {
   

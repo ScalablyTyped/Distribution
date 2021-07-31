@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.SelectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelGroupMod {
@@ -19,19 +18,20 @@ object panelGroupMod {
   trait PanelGroup
     extends Component[PanelGroupProps, js.Object, js.Any]
   
-  @js.native
-  trait PanelGroupProps extends HTMLProps[PanelGroup] {
+  trait PanelGroupProps
+    extends StObject
+       with HTMLProps[PanelGroup] {
     
-    var accordion: js.UndefOr[Boolean] = js.native
+    var accordion: js.UndefOr[Boolean] = js.undefined
     
-    var activeKey: js.UndefOr[js.Any] = js.native
+    var activeKey: js.UndefOr[js.Any] = js.undefined
     
-    var defaultActiveKey: js.UndefOr[js.Any] = js.native
+    var defaultActiveKey: js.UndefOr[js.Any] = js.undefined
     
-    var generateChildId: js.UndefOr[js.Function] = js.native
+    var generateChildId: js.UndefOr[js.Function] = js.undefined
     
     @JSName("onSelect")
-    var onSelect_PanelGroupProps: js.UndefOr[SelectCallback] = js.native
+    var onSelect_PanelGroupProps: js.UndefOr[SelectCallback] = js.undefined
   }
   object PanelGroupProps {
     

@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,7 +39,7 @@ trait CustomXmlPart extends StObject {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(
@@ -72,7 +71,7 @@ trait CustomXmlPart extends StObject {
     */
   def deleteAsync(): Unit = js.native
   def deleteAsync(callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
-  def deleteAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def deleteAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   def deleteAsync(options: AsyncContextOptions): Unit = js.native
   def deleteAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
   
@@ -92,7 +91,7 @@ trait CustomXmlPart extends StObject {
   def getNodesAsync(xPath: String, callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlNode]], Unit]): Unit = js.native
   def getNodesAsync(
     xPath: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[js.Array[CustomXmlNode]], Unit]
   ): Unit = js.native
   def getNodesAsync(xPath: String, options: AsyncContextOptions): Unit = js.native
@@ -115,7 +114,7 @@ trait CustomXmlPart extends StObject {
     */
   def getXmlAsync(): Unit = js.native
   def getXmlAsync(callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
-  def getXmlAsync(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
+  def getXmlAsync(options: Unit, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions): Unit = js.native
   def getXmlAsync(options: AsyncContextOptions, callback: js.Function1[/* result */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -143,24 +142,6 @@ trait CustomXmlPart extends StObject {
     * @param callback Optional. A function that is invoked when the callback returns, whose only parameter is of type {@link Office.AsyncResult}.
     */
   def removeHandlerAsync(eventType: EventType): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
-  def removeHandlerAsync(eventType: EventType, handler: js.UndefOr[scala.Nothing], options: RemoveHandlerOptions): Unit = js.native
-  def removeHandlerAsync(
-    eventType: EventType,
-    handler: js.UndefOr[scala.Nothing],
-    options: RemoveHandlerOptions,
-    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, handler: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
@@ -170,7 +151,7 @@ trait CustomXmlPart extends StObject {
   def removeHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, Unit],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(
@@ -181,6 +162,20 @@ trait CustomXmlPart extends StObject {
   def removeHandlerAsync(
     eventType: EventType,
     handler: js.Function1[/* result */ js.Any, Unit],
+    options: RemoveHandlerOptions,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, handler: Unit, callback: js.Function1[/* result */ AsyncResult[Unit], Unit]): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    handler: Unit,
+    options: Unit,
+    callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
+  ): Unit = js.native
+  def removeHandlerAsync(eventType: EventType, handler: Unit, options: RemoveHandlerOptions): Unit = js.native
+  def removeHandlerAsync(
+    eventType: EventType,
+    handler: Unit,
     options: RemoveHandlerOptions,
     callback: js.Function1[/* result */ AsyncResult[Unit], Unit]
   ): Unit = js.native

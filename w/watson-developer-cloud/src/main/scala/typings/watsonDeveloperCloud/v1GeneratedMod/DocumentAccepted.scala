@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DocumentAccepted. */
-@js.native
 trait DocumentAccepted extends StObject {
   
   /** The unique identifier of the ingested document. */
-  var document_id: js.UndefOr[String] = js.native
+  var document_id: js.UndefOr[String] = js.undefined
   
   /** Array of notices produced by the document-ingestion process. */
-  var notices: js.UndefOr[js.Array[Notice]] = js.native
+  var notices: js.UndefOr[js.Array[Notice]] = js.undefined
   
   /** Status of the document in the ingestion process. A status of `processing` is returned for documents that are ingested with a *version* date before `2019-01-01`. The `pending` status is returned for all others. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object DocumentAccepted {
   

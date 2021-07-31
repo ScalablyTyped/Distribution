@@ -2,13 +2,11 @@ package typings.spotifyWebApiNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
-  var snapshot_id: js.UndefOr[String] = js.native
+  var snapshot_id: js.UndefOr[String] = js.undefined
 }
 object SnapshotOptions {
   

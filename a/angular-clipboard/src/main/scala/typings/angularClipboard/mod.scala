@@ -2,24 +2,22 @@ package typings.angularClipboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait ClipboardService extends StObject {
     
     /**
       * copies text to a clipboard
       * @param text the text to be copied to the clipboard
       */
-    def copyText(text: String): Unit = js.native
+    def copyText(text: String): Unit
     
     /**
       * tells us whether or not angular-clipboard is supported
       */
-    var supported: Boolean = js.native
+    var supported: Boolean
   }
   object ClipboardService {
     

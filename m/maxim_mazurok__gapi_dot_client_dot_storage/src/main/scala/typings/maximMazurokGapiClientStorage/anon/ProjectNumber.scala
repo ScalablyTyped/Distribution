@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectNumber extends StObject {
   
   /** The project number. */
-  var projectNumber: js.UndefOr[String] = js.native
+  var projectNumber: js.UndefOr[String] = js.undefined
   
   /** The team. */
-  var team: js.UndefOr[String] = js.native
+  var team: js.UndefOr[String] = js.undefined
 }
 object ProjectNumber {
   

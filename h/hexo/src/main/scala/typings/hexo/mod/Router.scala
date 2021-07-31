@@ -7,7 +7,6 @@ import typings.node.Buffer
 import typings.node.streamMod.Readable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -45,12 +44,11 @@ object Router {
   
   type Callback = (js.Function2[/* err */ js.Any, /* result */ String, Unit]) | js.Function0[js.Promise[String]]
   
-  @js.native
   trait Data extends StObject {
     
-    var data: String | Buffer | Callback = js.native
+    var data: String | Buffer | Callback
     
-    var modified: Boolean = js.native
+    var modified: Boolean
   }
   object Data {
     

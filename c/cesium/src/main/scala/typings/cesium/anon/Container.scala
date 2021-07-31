@@ -3,21 +3,19 @@ package typings.cesium.anon
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: Element | String = js.native
+  var container: Element | String
   
-  var flightDuration: js.UndefOr[Double] = js.native
+  var flightDuration: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var scene: typings.cesium.mod.Scene = js.native
+  var scene: typings.cesium.mod.Scene
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Container {
   

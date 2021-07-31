@@ -2,31 +2,29 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlueTable extends StObject {
   
   /**
     * A unique identifier for the AWS Glue Data Catalog.
     */
-  var CatalogId: js.UndefOr[NameString] = js.native
+  var CatalogId: js.UndefOr[NameString] = js.undefined
   
   /**
     * The name of the connection to the AWS Glue Data Catalog.
     */
-  var ConnectionName: js.UndefOr[NameString] = js.native
+  var ConnectionName: js.UndefOr[NameString] = js.undefined
   
   /**
     * A database name in the AWS Glue Data Catalog.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * A table name in the AWS Glue Data Catalog.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object GlueTable {
   

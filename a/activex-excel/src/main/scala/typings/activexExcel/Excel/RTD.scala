@@ -2,20 +2,18 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTD extends StObject {
   
   @JSName("Excel.RTD_typekey")
-  var ExcelDotRTD_typekey: RTD = js.native
+  var ExcelDotRTD_typekey: RTD
   
-  def RefreshData(): Unit = js.native
+  def RefreshData(): Unit
   
-  def RestartServers(): Unit = js.native
+  def RestartServers(): Unit
   
-  var ThrottleInterval: Double = js.native
+  var ThrottleInterval: Double
 }
 object RTD {
   

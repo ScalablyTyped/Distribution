@@ -2,23 +2,21 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Restriction extends StObject {
   
-  var cred_def_id: js.UndefOr[CredentialDefinitionID] = js.native
+  var cred_def_id: js.UndefOr[CredentialDefinitionID] = js.undefined
   
-  var issuer_did: js.UndefOr[DID] = js.native
+  var issuer_did: js.UndefOr[DID] = js.undefined
   
-  var schema_id: js.UndefOr[CredentialSchemaID] = js.native
+  var schema_id: js.UndefOr[CredentialSchemaID] = js.undefined
   
-  var schema_issuer_did: js.UndefOr[DID] = js.native
+  var schema_issuer_did: js.UndefOr[DID] = js.undefined
   
-  var schema_name: js.UndefOr[String] = js.native
+  var schema_name: js.UndefOr[String] = js.undefined
   
-  var schema_version: js.UndefOr[String] = js.native
+  var schema_version: js.UndefOr[String] = js.undefined
 }
 object Restriction {
   

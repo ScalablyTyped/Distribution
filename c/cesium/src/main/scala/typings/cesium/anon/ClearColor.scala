@@ -4,27 +4,25 @@ import typings.cesium.mod.BoundingRectangle
 import typings.cesium.mod.PixelFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClearColor extends StObject {
   
-  var clearColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var clearColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var forcePowerOfTwo: js.UndefOr[Boolean] = js.native
+  var forcePowerOfTwo: js.UndefOr[Boolean] = js.undefined
   
-  var fragmentShader: String = js.native
+  var fragmentShader: String
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pixelFormat: js.UndefOr[PixelFormat] = js.native
+  var pixelFormat: js.UndefOr[PixelFormat] = js.undefined
   
-  var scissorRectangle: js.UndefOr[BoundingRectangle] = js.native
+  var scissorRectangle: js.UndefOr[BoundingRectangle] = js.undefined
   
-  var textureScale: js.UndefOr[Double] = js.native
+  var textureScale: js.UndefOr[Double] = js.undefined
   
-  var uniforms: js.UndefOr[js.Object] = js.native
+  var uniforms: js.UndefOr[js.Object] = js.undefined
 }
 object ClearColor {
   

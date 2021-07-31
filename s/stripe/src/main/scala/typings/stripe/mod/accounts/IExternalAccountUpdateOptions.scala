@@ -3,16 +3,16 @@ package typings.stripe.mod.accounts
 import typings.stripe.mod.IDataOptionsWithMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IExternalAccountUpdateOptions extends IDataOptionsWithMetadata {
+trait IExternalAccountUpdateOptions
+  extends StObject
+     with IDataOptionsWithMetadata {
   
   /**
     * If set to true, this bank account will become the default external account for its currency.
     */
-  var default_for_currency: js.UndefOr[Boolean] = js.native
+  var default_for_currency: js.UndefOr[Boolean] = js.undefined
 }
 object IExternalAccountUpdateOptions {
   

@@ -2,29 +2,27 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Geographical coordinates of a point, in WGS84.
   */
-@js.native
 trait SchemaGeoPoint extends StObject {
   
   /**
     * Altitude above the reference ellipsoid, in meters.
     */
-  var altitude: js.UndefOr[Double] = js.native
+  var altitude: js.UndefOr[Double] = js.undefined
   
   /**
     * Latitude in degrees.
     */
-  var latitude: js.UndefOr[Double] = js.native
+  var latitude: js.UndefOr[Double] = js.undefined
   
   /**
     * Longitude in degrees.
     */
-  var longitude: js.UndefOr[Double] = js.native
+  var longitude: js.UndefOr[Double] = js.undefined
 }
 object SchemaGeoPoint {
   

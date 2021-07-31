@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corpora. */
-@js.native
 trait Corpora extends StObject {
   
   /** An array of `Corpus` objects that provides information about the corpora for the custom model. The array is empty if the custom model has no corpora. */
-  var corpora: js.Array[Corpus] = js.native
+  var corpora: js.Array[Corpus]
 }
 object Corpora {
   

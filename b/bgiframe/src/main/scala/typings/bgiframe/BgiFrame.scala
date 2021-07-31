@@ -3,23 +3,21 @@ package typings.bgiframe
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BgiFrame {
   
-  @js.native
   trait IBgiframe extends StObject {
     
-    def createIframe(): HTMLElement = js.native
+    def createIframe(): HTMLElement
     
-    def fire(element: HTMLElement): Unit = js.native
+    def fire(element: HTMLElement): Unit
     
-    def getIframe(element: HTMLElement): HTMLElement = js.native
+    def getIframe(element: HTMLElement): HTMLElement
     
-    def prop(n: js.Any): String = js.native
+    def prop(n: js.Any): String
     
-    var s: ISettings = js.native
+    var s: ISettings
   }
   object IBgiframe {
     
@@ -55,22 +53,21 @@ object BgiFrame {
     }
   }
   
-  @js.native
   trait ISettings extends StObject {
     
-    var conditional: Boolean = js.native
+    var conditional: Boolean
     
-    var height: String = js.native
+    var height: String
     
-    var left: String = js.native
+    var left: String
     
-    var opacity: Boolean = js.native
+    var opacity: Boolean
     
-    var src: String = js.native
+    var src: String
     
-    var top: String = js.native
+    var top: String
     
-    var width: String = js.native
+    var width: String
   }
   object ISettings {
     

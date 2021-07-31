@@ -2,13 +2,11 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for EnableService method.
   */
-@js.native
 trait SchemaEnableServiceRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaEnableServiceRequest extends StObject {
     * following forms: - &quot;project:&lt;project_id&gt;&quot;  Note: this is
     * made compatible with google.api.servicecontrol.v1.Operation.consumer_id.
     */
-  var consumerId: js.UndefOr[String] = js.native
+  var consumerId: js.UndefOr[String] = js.undefined
 }
 object SchemaEnableServiceRequest {
   

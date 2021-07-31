@@ -5,10 +5,8 @@ import typings.highcharts.highchartsStrings.circle
 import typings.highcharts.highchartsStrings.random
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * directly for nearby cells, and for all others, cells are treated as a
     * separate node with center of mass.
     */
-  var approximation: js.UndefOr[OptionsApproximationValue] = js.native
+  var approximation: js.UndefOr[OptionsApproximationValue] = js.undefined
   
   /**
     * (Highcharts) Attraction force applied on a node which is conected to
@@ -34,32 +32,32 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * In `verlet` integration, defaults to: `function (d, k) { return (k - d) /
     * d; }`
     */
-  var attractiveForce: js.UndefOr[js.Function] = js.native
+  var attractiveForce: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) Experimental. Enables live simulation of the algorithm
     * implementation. All nodes are animated as the forces applies on them.
     */
-  var enableSimulation: js.UndefOr[Boolean] = js.native
+  var enableSimulation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Friction applied on forces to prevent nodes rushing to fast
     * to the desired positions.
     */
-  var friction: js.UndefOr[Double] = js.native
+  var friction: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Gravitational const used in the barycenter force of the
     * algorithm.
     */
-  var gravitationalConstant: js.UndefOr[Double] = js.native
+  var gravitationalConstant: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) When `initialPositions` are set to 'circle',
     * `initialPositionRadius` is a distance from the center of circle, in which
     * nodes are created.
     */
-  var initialPositionRadius: js.UndefOr[Double] = js.native
+  var initialPositionRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Initial layout algorithm for positioning nodes. Can be one
@@ -67,7 +65,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * should be set on each node (`this.nodes`) as `node.plotX` and
     * `node.plotY`
     */
-  var initialPositions: js.UndefOr[circle | random | js.Function] = js.native
+  var initialPositions: js.UndefOr[circle | random | js.Function] = js.undefined
   
   /**
     * (Highcharts) Integration type. Available options are `'euler'` and
@@ -82,7 +80,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     *
     * In Highcharts v7.0.x only `'euler'` integration was supported.
     */
-  var integration: js.UndefOr[OptionsIntegrationValue] = js.native
+  var integration: js.UndefOr[OptionsIntegrationValue] = js.undefined
   
   /**
     * (Highcharts) Ideal length (px) of the link between two nodes. When not
@@ -92,7 +90,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * Note: Because of the algorithm specification, length of each link might
     * be not exactly as specified.
     */
-  var linkLength: js.UndefOr[Double] = js.native
+  var linkLength: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Max number of iterations before algorithm will stop. In
@@ -100,7 +98,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * number of nodes, it is recommended to increase this value as finding
     * perfect graph positions can require more time.
     */
-  var maxIterations: js.UndefOr[Double] = js.native
+  var maxIterations: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Verlet integration only. Max speed that node can get in one
@@ -109,7 +107,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * applied on all nodes, max speed is applied only for nodes that move very
     * fast, for example small or disconnected ones.
     */
-  var maxSpeed: js.UndefOr[Double] = js.native
+  var maxSpeed: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Repulsive force applied on a node. Passed are two arguments:
@@ -121,7 +119,7 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * In `verlet` integration, defaults to: `function (d, k) { return (k - d) /
     * d * (k > d ? 1 : 0) }`
     */
-  var repulsiveForce: js.UndefOr[js.Function] = js.native
+  var repulsiveForce: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts) Barnes-Hut approximation only. Deteremines when distance
@@ -130,12 +128,12 @@ trait PlotNetworkgraphLayoutAlgorithmOptions extends StObject {
     * of the cell, and `d` is distance between center of cell's mass and
     * currently compared node.
     */
-  var theta: js.UndefOr[Double] = js.native
+  var theta: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Type of the algorithm used when positioning nodes.
     */
-  var `type`: js.UndefOr[`reingold-fruchterman`] = js.native
+  var `type`: js.UndefOr[`reingold-fruchterman`] = js.undefined
 }
 object PlotNetworkgraphLayoutAlgorithmOptions {
   

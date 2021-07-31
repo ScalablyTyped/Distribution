@@ -2,17 +2,15 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
   /** Returns a string in the form '#abcdef'. */
-  def toHexString(): String = js.native
+  def toHexString(): String
   
   /** Returns a string in the form 'rgba(25, 50, 75, .9)'. */
-  def toRGBAString(): String = js.native
+  def toRGBAString(): String
 }
 object Color {
   

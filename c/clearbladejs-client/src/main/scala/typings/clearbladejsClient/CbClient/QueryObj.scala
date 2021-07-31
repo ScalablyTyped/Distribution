@@ -3,63 +3,61 @@ package typings.clearbladejsClient.CbClient
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryObj extends StObject {
   
-  var OR: js.Array[Query] = js.native
+  var OR: js.Array[Query]
   
-  var URI: String = js.native
+  var URI: String
   
-  def addFilterToQuery(query: QueryObj, condition: QueryConditions, key: String, value: QueryValue): Unit = js.native
+  def addFilterToQuery(query: QueryObj, condition: QueryConditions, key: String, value: QueryValue): Unit
   
-  def addSortToQuery(query: QueryObj, direction: QuerySortDirections, column: String): Unit = js.native
+  def addSortToQuery(query: QueryObj, direction: QuerySortDirections, column: String): Unit
   
-  def ascending(field: String): Unit = js.native
+  def ascending(field: String): Unit
   
-  def columns(columnsArray: js.Array[String]): Unit = js.native
+  def columns(columnsArray: js.Array[String]): Unit
   
-  def descending(field: String): Unit = js.native
+  def descending(field: String): Unit
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  def equalTo(field: String, value: QueryValue): Unit = js.native
+  def equalTo(field: String, value: QueryValue): Unit
   
-  def fetch(callback: CbCallback): Unit = js.native
+  def fetch(callback: CbCallback): Unit
   
-  def greaterThan(field: String, value: QueryValue): Unit = js.native
+  def greaterThan(field: String, value: QueryValue): Unit
   
-  def greaterThanEqualTo(field: String, value: QueryValue): Unit = js.native
+  def greaterThanEqualTo(field: String, value: QueryValue): Unit
   
-  def lessThan(field: String, value: QueryValue): Unit = js.native
+  def lessThan(field: String, value: QueryValue): Unit
   
-  def lessThanEqualTo(field: String, value: QueryValue): Unit = js.native
+  def lessThanEqualTo(field: String, value: QueryValue): Unit
   
-  var limit: Double = js.native
+  var limit: Double
   
-  def matches(field: String, pattern: RegExp): Unit = js.native
+  def matches(field: String, pattern: RegExp): Unit
   
-  def notEqualTo(field: String, value: QueryValue): Unit = js.native
+  def notEqualTo(field: String, value: QueryValue): Unit
   
-  var offset: Double = js.native
+  var offset: Double
   
-  def or(query: QueryObj): Unit = js.native
+  def or(query: QueryObj): Unit
   
-  var query: Query = js.native
+  var query: Query
   
-  def remove(callback: CbCallback): Unit = js.native
+  def remove(callback: CbCallback): Unit
   
-  def setPage(pageSize: Double, pageNum: Double): Unit = js.native
+  def setPage(pageSize: Double, pageNum: Double): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  def update(changes: js.Object, callback: CbCallback): Unit = js.native
+  def update(changes: js.Object, callback: CbCallback): Unit
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object QueryObj {
   

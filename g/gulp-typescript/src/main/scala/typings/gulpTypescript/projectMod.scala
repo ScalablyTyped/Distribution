@@ -13,13 +13,15 @@ import typings.typescript.mod.CompilerOptions
 import typings.typescript.mod.ProjectReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod {
   
-  @JSImport("gulp-typescript/release/project", "setupProject")
+  @JSImport("gulp-typescript/release/project", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def setupProject(
     projectDirectory: String,
     configFileName: String,
@@ -29,10 +31,12 @@ object projectMod {
     projectReferences: js.Array[ProjectReference],
     typescript: Typeofts,
     finalTransformers: FinalTransformers
-  ): Project = js.native
+  ): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("setupProject")(projectDirectory.asInstanceOf[js.Any], configFileName.asInstanceOf[js.Any], rawConfig.asInstanceOf[js.Any], config.asInstanceOf[js.Any], options.asInstanceOf[js.Any], projectReferences.asInstanceOf[js.Any], typescript.asInstanceOf[js.Any], finalTransformers.asInstanceOf[js.Any])).asInstanceOf[Project]
   
   @js.native
-  trait ICompileStream extends ReadWriteStream {
+  trait ICompileStream
+    extends StObject
+       with ReadWriteStream {
     
     var dts: Readable = js.native
     
@@ -63,26 +67,25 @@ object projectMod {
     val typescript: js.UndefOr[Typeofts] = js.native
   }
   
-  @js.native
   trait ProjectInfo extends StObject {
     
-    var compiler: ICompiler = js.native
+    var compiler: ICompiler
     
-    var directory: String = js.native
+    var directory: String
     
-    var input: FileCache = js.native
+    var input: FileCache
     
-    var options: CompilerOptions = js.native
+    var options: CompilerOptions
     
-    var output: Output = js.native
+    var output: Output
     
-    var projectReferences: js.Array[ProjectReference] = js.native
+    var projectReferences: js.Array[ProjectReference]
     
-    var reporter: Reporter = js.native
+    var reporter: Reporter
     
-    var singleOutput: Boolean = js.native
+    var singleOutput: Boolean
     
-    var typescript: Typeofts = js.native
+    var typescript: Typeofts
   }
   object ProjectInfo {
     

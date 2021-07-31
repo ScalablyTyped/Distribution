@@ -8,12 +8,11 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureLayerProperties
-  extends LayerProperties
+  extends StObject
+     with LayerProperties
      with PortalLayerProperties
      with ScaleRangeLayerProperties
      with RefreshableLayerProperties
@@ -25,224 +24,224 @@ trait FeatureLayerProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#copyright)
     */
-  var copyright: js.UndefOr[String] = js.native
+  var copyright: js.UndefOr[String] = js.undefined
   
   /**
     * The SQL where clause used to filter features on the client.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#definitionExpression)
     */
-  var definitionExpression: js.UndefOr[String] = js.native
+  var definitionExpression: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the layer's primary display field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#displayField)
     */
-  var displayField: js.UndefOr[String] = js.native
+  var displayField: js.UndefOr[String] = js.undefined
   
   /**
     * An object that allows you to create a dynamic layer with data either from map service sublayers or data from a registered workspace.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#dynamicDataSource)
     */
-  var dynamicDataSource: js.UndefOr[DynamicMapLayer | DynamicDataLayer] = js.native
+  var dynamicDataSource: js.UndefOr[DynamicMapLayer | DynamicDataLayer] = js.undefined
   
   /**
     * Specifies how features are placed on the vertical axis (z).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#elevationInfo)
     */
-  var elevationInfo: js.UndefOr[FeatureLayerElevationInfo] = js.native
+  var elevationInfo: js.UndefOr[FeatureLayerElevationInfo] = js.undefined
   
   /**
     * Configures the method for reducing the number of point features in the view.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#featureReduction)
     */
-  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.native
+  var featureReduction: js.UndefOr[FeatureReductionClusterProperties | FeatureReductionSelectionProperties] = js.undefined
   
   /**
     * An array of fields in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields)
     */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.native
+  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
     * The associated [template](https://developers.arcgis.com/javascript/latest/api-reference/esri-form-FormTemplate.html) used in an associated layer's [FeatureForm](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureForm.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#formTemplate)
     */
-  var formTemplate: js.UndefOr[FormTemplateProperties] = js.native
+  var formTemplate: js.UndefOr[FormTemplateProperties] = js.undefined
   
   /**
     * The version of the geodatabase of the feature service data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#gdbVersion)
     */
-  var gdbVersion: js.UndefOr[String] = js.native
+  var gdbVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The geometry type of features in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#geometryType)
     */
-  var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.native
+  var geometryType: js.UndefOr[point | multipoint | polyline | polygon | multipatch | mesh] = js.undefined
   
   /**
     * Indicates whether the client-side features in the layer have `M` (measurement) values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasM)
     */
-  var hasM: js.UndefOr[Boolean] = js.native
+  var hasM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the client-side features in the layer have `Z` (elevation) values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#hasZ)
     */
-  var hasZ: js.UndefOr[Boolean] = js.native
+  var hasZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The historic moment to query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#historicMoment)
     */
-  var historicMoment: js.UndefOr[DateProperties] = js.native
+  var historicMoment: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The label definition for this layer, specified as an array of [LabelClass](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-LabelClass.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelingInfo)
     */
-  var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.native
+  var labelingInfo: js.UndefOr[js.Array[LabelClassProperties]] = js.undefined
   
   /**
     * Indicates whether to display labels for this layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#labelsVisible)
     */
-  var labelsVisible: js.UndefOr[Boolean] = js.native
+  var labelsVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer ID, or layer index, of a Feature Service layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#layerId)
     */
-  var layerId: js.UndefOr[Double] = js.native
+  var layerId: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether the layer will be included in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#legendEnabled)
     */
-  var legendEnabled: js.UndefOr[Boolean] = js.native
+  var legendEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of an `oid` [field](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#fields) containing a unique value or identifier for each feature in the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#objectIdField)
     */
-  var objectIdField: js.UndefOr[String] = js.native
+  var objectIdField: js.UndefOr[String] = js.undefined
   
   /**
     * An array of field names from the service to include with each feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#outFields)
     */
-  var outFields: js.UndefOr[js.Array[String]] = js.native
+  var outFields: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether to display popups when features in the layer are clicked.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupEnabled)
     */
-  var popupEnabled: js.UndefOr[Boolean] = js.native
+  var popupEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The popup template for the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * The renderer assigned to the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#renderer)
     */
-  var renderer: js.UndefOr[RendererProperties] = js.native
+  var renderer: js.UndefOr[RendererProperties] = js.undefined
   
   /**
     * When `true`, indicates that M values will be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnM)
     */
-  var returnM: js.UndefOr[Boolean] = js.native
+  var returnM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, indicates that z-values will always be returned.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#returnZ)
     */
-  var returnZ: js.UndefOr[Boolean] = js.native
+  var returnZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Apply perspective scaling to screen-size point symbols in a [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#screenSizePerspectiveEnabled)
     */
-  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.native
+  var screenSizePerspectiveEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A collection of [Graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) objects used to create a FeatureLayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#source)
     */
-  var source: js.UndefOr[CollectionProperties[GraphicProperties]] = js.native
+  var source: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   
   /**
     * The [feature service's metadata JSON](https://developers.arcgis.com/rest/services-reference/layer-feature-service-.htm) exposed by the ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The spatial reference of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
   
   /**
     * An array of feature templates defined in the feature layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#templates)
     */
-  var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.native
+  var templates: js.UndefOr[js.Array[FeatureTemplateProperties]] = js.undefined
   
   /**
     * The name of the field holding the type ID or subtypes for the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#typeIdField)
     */
-  var typeIdField: js.UndefOr[String] = js.native
+  var typeIdField: js.UndefOr[String] = js.undefined
   
   /**
     * An array of subtypes defined in the feature service exposed by ArcGIS REST API.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#types)
     */
-  var types: js.UndefOr[js.Array[FeatureTypeProperties]] = js.native
+  var types: js.UndefOr[js.Array[FeatureTypeProperties]] = js.undefined
   
   /**
     * The URL of the REST endpoint of the layer, non-spatial table or service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object FeatureLayerProperties {
   

@@ -2,23 +2,21 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EraSpec extends StObject {
   
-  var abbr: String = js.native
+  var abbr: String
   
-  var name: String = js.native
+  var name: String
   
-  var narrow: String = js.native
+  var narrow: String
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var since: String | Double = js.native
+  var since: String | Double
   
-  var until: String | Double = js.native
+  var until: String | Double
 }
 object EraSpec {
   

@@ -3,13 +3,13 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Null extends Node {
+trait Null
+  extends StObject
+     with Node {
   
-  var isNull: scala.Boolean = js.native
+  var isNull: scala.Boolean
 }
 object Null {
   

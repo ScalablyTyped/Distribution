@@ -2,16 +2,14 @@ package typings.sequelize.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clone extends StObject {
   
   @JSName("clone")
-  var clone_FClone: js.UndefOr[Boolean] = js.native
+  var clone_FClone: js.UndefOr[Boolean] = js.undefined
   
-  var plain: js.UndefOr[Boolean] = js.native
+  var plain: js.UndefOr[Boolean] = js.undefined
 }
 object Clone {
   

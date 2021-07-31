@@ -12,7 +12,7 @@ lyric-parser base on javascript
 | Keywords           | lyric, parser |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 8547 |
+| # downloads        | 7969 |
 | # stars            | 0 |
 
 ## Links

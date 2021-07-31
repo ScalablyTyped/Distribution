@@ -4,13 +4,11 @@ import typings.vegaLite.vegaLiteStrings.data
 import typings.vegaLite.vegaLiteStrings.encoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipContent extends StObject {
   
-  var content: encoding | data = js.native
+  var content: encoding | data
 }
 object TooltipContent {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,34 +20,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated DeprecatedThis interface was only implemented in an intermediate developer release anyway.
   * @since OOo 1.1.2
   */
-@js.native
-trait XExtendedToolkit extends XInterface {
+trait XExtendedToolkit
+  extends StObject
+     with XInterface {
   
   /**
     * Return the currently active top-level window, i.e. which has currently the input focus.
     * @returns The returned reference may be empty when no top-level window is active.
     */
-  val ActiveTopWindow: XTopWindow = js.native
+  val ActiveTopWindow: XTopWindow
   
   /**
     * This function returns the number of currently existing top-level windows.
     * @returns Returns the number of top-level windows. This includes all top-level windows, regardless of whether they are iconized, visible, or active.
     */
-  val TopWindowCount: Double = js.native
+  val TopWindowCount: Double
   
   /**
     * Add a new listener that is called on {@link com.sun.star.awt.FocusEvent} . Use this focus broadcaster to keep track of the object that currently has
     * the input focus.
     * @param xListener If this is a valid reference it is inserted into the list of listeners. It is the task of the caller to not register the same listener
     */
-  def addFocusListener(xListener: XFocusListener): Unit = js.native
+  def addFocusListener(xListener: XFocusListener): Unit
   
   /**
     * Add a new listener that is called on {@link com.sun.star.awt.KeyEvent} . Every listener is given the opportunity to consume the event, i.e. prevent
     * the not yet called listeners from being called.
     * @param xHandler If this is a valid reference it is inserted into the list of handlers. It is the task of the caller to not register the same handler twi
     */
-  def addKeyHandler(xHandler: XKeyHandler): Unit = js.native
+  def addKeyHandler(xHandler: XKeyHandler): Unit
   
   /**
     * Add a new listener that is called for events that involve {@link com.sun.star.awt.XTopWindow} . After having obtained the current list of existing
@@ -56,25 +56,25 @@ trait XExtendedToolkit extends XInterface {
     * top-level windows to keep track of the currently active frame.
     * @param xListener If this is a valid reference it is inserted into the list of listeners. It is the task of the caller to not register the same listener
     */
-  def addTopWindowListener(xListener: XTopWindowListener): Unit = js.native
+  def addTopWindowListener(xListener: XTopWindowListener): Unit
   
   /**
     * Broadcasts the a focusGained on all registered focus listeners
     * @param source The object that has gained the input focus. It should implement {@link com.sun.star.accessibility.XAccessible} .
     */
-  def fireFocusGained(source: XInterface): Unit = js.native
+  def fireFocusGained(source: XInterface): Unit
   
   /**
     * Broadcasts the a focusGained on all registered focus listeners
     * @param source The object that has lost the input focus. It should implement {@link com.sun.star.accessibility.XAccessible} .
     */
-  def fireFocusLost(source: XInterface): Unit = js.native
+  def fireFocusLost(source: XInterface): Unit
   
   /**
     * Return the currently active top-level window, i.e. which has currently the input focus.
     * @returns The returned reference may be empty when no top-level window is active.
     */
-  def getActiveTopWindow(): XTopWindow = js.native
+  def getActiveTopWindow(): XTopWindow
   
   /**
     * Return a reference to the specified top-level window. Note that the number of top-level windows may change between a call to {@link
@@ -83,31 +83,31 @@ trait XExtendedToolkit extends XInterface {
     * @returns The returned value is a valid reference to a top-level window.
     * @throws IndexOutOfBoundsException when the specified index is outside the valid range.
     */
-  def getTopWindow(nIndex: Double): XTopWindow = js.native
+  def getTopWindow(nIndex: Double): XTopWindow
   
   /**
     * This function returns the number of currently existing top-level windows.
     * @returns Returns the number of top-level windows. This includes all top-level windows, regardless of whether they are iconized, visible, or active.
     */
-  def getTopWindowCount(): Double = js.native
+  def getTopWindowCount(): Double
   
   /**
     * Remove the specified listener from the list of listeners.
     * @param xListener If the reference is empty then nothing will be changed. If the listener has been registered twice (or more) then all references will be
     */
-  def removeFocusListener(xListener: XFocusListener): Unit = js.native
+  def removeFocusListener(xListener: XFocusListener): Unit
   
   /**
     * Remove the specified listener from the list of listeners.
     * @param xHandler If the reference is empty then nothing will be changed. If the handler has been registered twice (or more) then all references will be r
     */
-  def removeKeyHandler(xHandler: XKeyHandler): Unit = js.native
+  def removeKeyHandler(xHandler: XKeyHandler): Unit
   
   /**
     * Remove the specified listener from the list of listeners.
     * @param xListener If the reference is empty then nothing will be changed. If the listener has been registered twice (or more) then all references will be
     */
-  def removeTopWindowListener(xListener: XTopWindowListener): Unit = js.native
+  def removeTopWindowListener(xListener: XTopWindowListener): Unit
 }
 object XExtendedToolkit {
   

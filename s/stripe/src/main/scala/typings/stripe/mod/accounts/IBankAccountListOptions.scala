@@ -4,20 +4,20 @@ import typings.stripe.mod.IListOptions
 import typings.stripe.stripeStrings.bank_account
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBankAccountListOptions extends IListOptions {
+trait IBankAccountListOptions
+  extends StObject
+     with IListOptions {
   
-  var `object`: bank_account = js.native
+  var `object`: bank_account
 }
 object IBankAccountListOptions {
   
   @scala.inline
-  def apply(`object`: bank_account): IBankAccountListOptions = {
+  def apply(): IBankAccountListOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+    __obj.updateDynamic("object")("bank_account")
     __obj.asInstanceOf[IBankAccountListOptions]
   }
   

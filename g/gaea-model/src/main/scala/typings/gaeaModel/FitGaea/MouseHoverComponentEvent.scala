@@ -2,15 +2,13 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MouseHoverComponentEvent extends StObject {
   
-  var mapUniqueKey: String = js.native
+  var mapUniqueKey: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object MouseHoverComponentEvent {
   

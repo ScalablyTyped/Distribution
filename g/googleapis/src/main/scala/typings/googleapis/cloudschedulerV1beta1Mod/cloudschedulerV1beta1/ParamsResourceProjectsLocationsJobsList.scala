@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsJobsList extends StandardParameters {
+trait ParamsResourceProjectsLocationsJobsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Requested page size.  The maximum page size is 500. If unspecified, the
@@ -23,7 +23,7 @@ trait ParamsResourceProjectsLocationsJobsList extends StandardParameters {
     * returned, even if more jobs exist; use next_page_token to determine if
     * more jobs exist.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A token identifying a page of results the server will return. To request
@@ -32,13 +32,13 @@ trait ParamsResourceProjectsLocationsJobsList extends StandardParameters {
     * from the previous call to ListJobs. It is an error to switch the value of
     * filter or order_by while iterating through pages.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Required.  The location name. For example:
     * `projects/PROJECT_ID/locations/LOCATION_ID`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsLocationsJobsList {
   

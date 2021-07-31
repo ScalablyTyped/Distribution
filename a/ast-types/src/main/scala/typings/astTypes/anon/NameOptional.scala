@@ -6,27 +6,25 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NameOptional extends StObject {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var name: IdentifierKind | Null = js.native
+  var name: IdentifierKind | Null
   
-  var optional: Boolean = js.native
+  var optional: Boolean
   
-  var typeAnnotation: FlowTypeKind = js.native
+  var typeAnnotation: FlowTypeKind
 }
 object NameOptional {
   
   @scala.inline
   def apply(optional: Boolean, typeAnnotation: FlowTypeKind): NameOptional = {
-    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(optional = optional.asInstanceOf[js.Any], typeAnnotation = typeAnnotation.asInstanceOf[js.Any], name = null)
     __obj.asInstanceOf[NameOptional]
   }
   

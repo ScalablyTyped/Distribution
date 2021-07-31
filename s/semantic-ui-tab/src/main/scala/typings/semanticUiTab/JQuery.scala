@@ -58,144 +58,137 @@ import typings.semanticUiTab.semanticUiTabStrings.templates
 import typings.semanticUiTab.semanticUiTabStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
-  def tab(): JQuery = js.native
-  def tab(behavior: setting, name: alwaysRefresh, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: alwaysRefresh, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: apiSettings, value: js.UndefOr[scala.Nothing]): ApiSettings = js.native
-  def tab(behavior: setting, name: auto, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: auto, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: cacheType, value: js.UndefOr[scala.Nothing]): response | DOM | html = js.native
-  def tab(behavior: setting, name: cacheType, value: DOM): JQuery = js.native
-  def tab(behavior: setting, name: cacheType, value: html): JQuery = js.native
-  def tab(behavior: setting, name: cacheType, value: response): JQuery = js.native
-  def tab(behavior: setting, name: cache, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: cache, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: childrenOnly, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: childrenOnly, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-  def tab(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
-  def tab(behavior: setting, name: context, value: String): JQuery = js.native
-  def tab(behavior: setting, name: context, value: JQuery): JQuery = js.native
-  def tab(behavior: setting, name: context, value: `false`): JQuery = js.native
-  def tab(behavior: setting, name: deactivate, value: js.UndefOr[scala.Nothing]): siblings | all = js.native
-  def tab(behavior: setting, name: deactivate, value: all): JQuery = js.native
-  def tab(behavior: setting, name: deactivate, value: siblings): JQuery = js.native
-  def tab(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-  def tab(behavior: setting, name: evaluateScripts, value: js.UndefOr[scala.Nothing]): once | Boolean = js.native
-  def tab(behavior: setting, name: evaluateScripts, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: evaluateScripts, value: once): JQuery = js.native
-  def tab(behavior: setting, name: historyType, value: js.UndefOr[scala.Nothing]): hash | state = js.native
-  def tab(behavior: setting, name: historyType, value: hash): JQuery = js.native
-  def tab(behavior: setting, name: historyType, value: state): JQuery = js.native
-  def tab(behavior: setting, name: history, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: history, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: ignoreFirstLoad, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: ignoreFirstLoad, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: loadOnce, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: loadOnce, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: maxDepth, value: js.UndefOr[scala.Nothing]): Double = js.native
-  def tab(behavior: setting, name: maxDepth, value: Double): JQuery = js.native
-  def tab(behavior: setting, name: metadata, value: js.UndefOr[scala.Nothing]): MetadataSettings = js.native
-  def tab(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
-  def tab(behavior: setting, name: namespace, value: String): JQuery = js.native
-  def tab(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
-  def tab(behavior: setting, name: name, value: String): JQuery = js.native
-  def tab(behavior: setting, name: onFirstLoad, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
-    /* this */ JQuery, 
-    /* tabPath */ String, 
-    /* parameterArray */ js.Array[_], 
-    /* historyEvent */ js.Any, 
-    Unit
-  ] = js.native
+  def tab(): JQuery
+  def tab(behavior: setting, name: alwaysRefresh, value: Boolean): JQuery
+  def tab(behavior: setting, name: alwaysRefresh, value: Unit): Boolean
+  def tab(behavior: setting, name: apiSettings, value: Unit): ApiSettings
+  def tab(behavior: setting, name: apiSettings, value: ApiSettings): JQuery
+  def tab(behavior: setting, name: auto, value: Boolean): JQuery
+  def tab(behavior: setting, name: auto, value: Unit): Boolean
+  def tab(behavior: setting, name: cacheType, value: Unit): response | DOM | html
+  def tab(behavior: setting, name: cacheType, value: DOM): JQuery
+  def tab(behavior: setting, name: cacheType, value: html): JQuery
+  def tab(behavior: setting, name: cacheType, value: response): JQuery
+  def tab(behavior: setting, name: cache, value: Boolean): JQuery
+  def tab(behavior: setting, name: cache, value: Unit): Boolean
+  def tab(behavior: setting, name: childrenOnly, value: Boolean): JQuery
+  def tab(behavior: setting, name: childrenOnly, value: Unit): Boolean
+  def tab(behavior: setting, name: className, value: Unit): ClassNameSettings
+  def tab(behavior: setting, name: className, value: ClassNameSettings): JQuery
+  def tab(behavior: setting, name: context, value: String): JQuery
+  def tab(behavior: setting, name: context, value: Unit): `false` | String | JQuery
+  def tab(behavior: setting, name: context, value: JQuery): JQuery
+  def tab(behavior: setting, name: context, value: `false`): JQuery
+  def tab(behavior: setting, name: deactivate, value: Unit): siblings | all
+  def tab(behavior: setting, name: deactivate, value: all): JQuery
+  def tab(behavior: setting, name: deactivate, value: siblings): JQuery
+  def tab(behavior: setting, name: debug, value: Boolean): JQuery
+  def tab(behavior: setting, name: debug, value: Unit): Boolean
+  def tab(behavior: setting, name: error, value: Unit): ErrorSettings
+  def tab(behavior: setting, name: error, value: ErrorSettings): JQuery
+  def tab(behavior: setting, name: evaluateScripts, value: Boolean): JQuery
+  def tab(behavior: setting, name: evaluateScripts, value: Unit): once | Boolean
+  def tab(behavior: setting, name: evaluateScripts, value: once): JQuery
+  def tab(behavior: setting, name: historyType, value: Unit): hash | state
+  def tab(behavior: setting, name: historyType, value: hash): JQuery
+  def tab(behavior: setting, name: historyType, value: state): JQuery
+  def tab(behavior: setting, name: history, value: Boolean): JQuery
+  def tab(behavior: setting, name: history, value: Unit): Boolean
+  def tab(behavior: setting, name: ignoreFirstLoad, value: Boolean): JQuery
+  def tab(behavior: setting, name: ignoreFirstLoad, value: Unit): Boolean
+  def tab(behavior: setting, name: loadOnce, value: Boolean): JQuery
+  def tab(behavior: setting, name: loadOnce, value: Unit): Boolean
+  def tab(behavior: setting, name: maxDepth, value: Double): JQuery
+  def tab(behavior: setting, name: maxDepth, value: Unit): Double
+  def tab(behavior: setting, name: metadata, value: Unit): MetadataSettings
+  def tab(behavior: setting, name: metadata, value: MetadataSettings): JQuery
+  def tab(behavior: setting, name: namespace, value: String): JQuery
+  def tab(behavior: setting, name: namespace, value: Unit): String
+  def tab(behavior: setting, name: name, value: String): JQuery
+  def tab(behavior: setting, name: name, value: Unit): String
   def tab(
     behavior: setting,
     name: onFirstLoad,
     value: js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
-      /* parameterArray */ js.Array[_], 
+      /* parameterArray */ js.Array[js.Any], 
       /* historyEvent */ js.Any, 
       Unit
     ]
-  ): JQuery = js.native
-  def tab(behavior: setting, name: onLoad, value: js.UndefOr[scala.Nothing]): js.ThisFunction3[
+  ): JQuery
+  def tab(behavior: setting, name: onFirstLoad, value: Unit): js.ThisFunction3[
     /* this */ JQuery, 
     /* tabPath */ String, 
-    /* parameterArray */ js.Array[_], 
+    /* parameterArray */ js.Array[js.Any], 
     /* historyEvent */ js.Any, 
     Unit
-  ] = js.native
+  ]
   def tab(
     behavior: setting,
     name: onLoad,
     value: js.ThisFunction3[
       /* this */ JQuery, 
       /* tabPath */ String, 
-      /* parameterArray */ js.Array[_], 
+      /* parameterArray */ js.Array[js.Any], 
       /* historyEvent */ js.Any, 
       Unit
     ]
-  ): JQuery = js.native
-  def tab(behavior: setting, name: onRequest, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
+  ): JQuery
+  def tab(behavior: setting, name: onLoad, value: Unit): js.ThisFunction3[
+    /* this */ JQuery, 
+    /* tabPath */ String, 
+    /* parameterArray */ js.Array[js.Any], 
+    /* historyEvent */ js.Any, 
+    Unit
+  ]
   def tab(
     behavior: setting,
     name: onRequest,
     value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
-  ): JQuery = js.native
-  def tab(behavior: setting, name: onVisible, value: js.UndefOr[scala.Nothing]): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit] = js.native
+  ): JQuery
+  def tab(behavior: setting, name: onRequest, value: Unit): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
   def tab(
     behavior: setting,
     name: onVisible,
     value: js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
-  ): JQuery = js.native
-  def tab(behavior: setting, name: path, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
-  def tab(behavior: setting, name: path, value: String): JQuery = js.native
-  def tab(behavior: setting, name: path, value: `false`): JQuery = js.native
-  def tab(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
-  def tab(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-  def tab(behavior: setting, name: templates, value: js.UndefOr[scala.Nothing]): TemplatesSettings = js.native
-  def tab(behavior: setting, name: templates, value: TemplatesSettings): JQuery = js.native
-  def tab(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
-  def tab(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
-  def tab(settings: TabSettings): JQuery = js.native
+  ): JQuery
+  def tab(behavior: setting, name: onVisible, value: Unit): js.ThisFunction1[/* this */ JQuery, /* tabPath */ String, Unit]
+  def tab(behavior: setting, name: path, value: String): JQuery
+  def tab(behavior: setting, name: path, value: Unit): `false` | String
+  def tab(behavior: setting, name: path, value: `false`): JQuery
+  def tab(behavior: setting, name: performance, value: Boolean): JQuery
+  def tab(behavior: setting, name: performance, value: Unit): Boolean
+  def tab(behavior: setting, name: selector, value: Unit): SelectorSettings
+  def tab(behavior: setting, name: selector, value: SelectorSettings): JQuery
+  def tab(behavior: setting, name: silent, value: Boolean): JQuery
+  def tab(behavior: setting, name: silent, value: Unit): Boolean
+  def tab(behavior: setting, name: templates, value: Unit): TemplatesSettings
+  def tab(behavior: setting, name: templates, value: TemplatesSettings): JQuery
+  def tab(behavior: setting, name: verbose, value: Boolean): JQuery
+  def tab(behavior: setting, name: verbose, value: Unit): Boolean
+  def tab(settings: TabSettings): JQuery
   @JSName("tab")
-  def tab_JQuery(behavior: setting, name: apiSettings, value: ApiSettings): JQuery = js.native
-  @JSName("tab")
-  def tab_JQuery(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-  @JSName("tab")
-  def tab_JQuery(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-  @JSName("tab")
-  def tab_JQuery(behavior: setting, name: metadata, value: MetadataSettings): JQuery = js.native
-  @JSName("tab")
-  def tab_JQuery(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-  @JSName("tab")
-  var tab_Original: Tab = js.native
+  var tab_Original: Tab
   /**
     * Sets cached HTML for path
     */
   @JSName("tab")
-  def tab_cacheadd(behavior: `cache add`, path: String, html: String): JQuery = js.native
+  def tab_cacheadd(behavior: `cache add`, path: String, html: String): JQuery
   /**
     * Returns cached HTML for path
     */
   @JSName("tab")
-  def tab_cacheread(behavior: `cache read`, path: String): String | `false` = js.native
+  def tab_cacheread(behavior: `cache read`, path: String): String | `false`
   /**
     * Removes cached HTML for path
     */
   @JSName("tab")
-  def tab_cacheremove(behavior: `cache remove`, path: String): JQuery = js.native
+  def tab_cacheremove(behavior: `cache remove`, path: String): JQuery
   // Documentation says this exists but it does not.
   // /**
   //  * Attaches tab action to given selector. Default event if none specified is toggle
@@ -205,24 +198,39 @@ trait JQuery extends StObject {
     * Changes tab to path
     */
   @JSName("tab")
-  def tab_changetab(behavior: `change tab`, path: String): JQuery = js.native
+  def tab_changetab(behavior: `change tab`, path: String): JQuery
   @JSName("tab")
-  def tab_destroy(behavior: destroy): JQuery = js.native
+  def tab_destroy(behavior: destroy): JQuery
   /**
     * Returns current path
     */
   @JSName("tab")
-  def tab_getpath(behavior: `get path`): String = js.native
+  def tab_getpath(behavior: `get path`): String
   /**
     * Returns whether tab exists
     */
   @JSName("tab")
-  def tab_istab(behavior: `is tab`): Boolean = js.native
+  def tab_istab(behavior: `is tab`): Boolean
   /**
     * Sets current path to state
     */
   @JSName("tab")
-  def tab_setstate(behavior: `set state`, path: String): JQuery = js.native
+  def tab_setstate(behavior: `set state`, path: String): JQuery
   @JSName("tab")
-  def tab_setting(behavior: setting, value: TabSettings): JQuery = js.native
+  def tab_setting(behavior: setting, value: TabSettings): JQuery
+}
+object JQuery {
+  
+  @scala.inline
+  def apply(tab: Tab): JQuery = {
+    val __obj = js.Dynamic.literal(tab = tab.asInstanceOf[js.Any])
+    __obj.asInstanceOf[JQuery]
+  }
+  
+  @scala.inline
+  implicit class JQueryMutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setTab(value: Tab): Self = StObject.set(x, "tab", value.asInstanceOf[js.Any])
+  }
 }

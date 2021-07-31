@@ -2,17 +2,15 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SplitterSideOptions extends StObject {
   
   /**
     * @description This function will be called after the menu has been opened.
     * @return {Function}
     */
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
 }
 object SplitterSideOptions {
   

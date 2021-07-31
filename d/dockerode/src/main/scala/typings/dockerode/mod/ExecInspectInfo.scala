@@ -3,33 +3,31 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Arguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecInspectInfo extends StObject {
   
-  var CanRemove: Boolean = js.native
+  var CanRemove: Boolean
   
-  var ContainerID: String = js.native
+  var ContainerID: String
   
-  var DetachKeys: String = js.native
+  var DetachKeys: String
   
-  var ExitCode: Double | Null = js.native
+  var ExitCode: Double | Null
   
-  var ID: String = js.native
+  var ID: String
   
-  var OpenStderr: Boolean = js.native
+  var OpenStderr: Boolean
   
-  var OpenStdin: Boolean = js.native
+  var OpenStdin: Boolean
   
-  var OpenStdout: Boolean = js.native
+  var OpenStdout: Boolean
   
-  var Pid: Double = js.native
+  var Pid: Double
   
-  var ProcessConfig: Arguments = js.native
+  var ProcessConfig: Arguments
   
-  var Running: Boolean = js.native
+  var Running: Boolean
 }
 object ExecInspectInfo {
   
@@ -46,7 +44,7 @@ object ExecInspectInfo {
     ProcessConfig: Arguments,
     Running: Boolean
   ): ExecInspectInfo = {
-    val __obj = js.Dynamic.literal(CanRemove = CanRemove.asInstanceOf[js.Any], ContainerID = ContainerID.asInstanceOf[js.Any], DetachKeys = DetachKeys.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], OpenStderr = OpenStderr.asInstanceOf[js.Any], OpenStdin = OpenStdin.asInstanceOf[js.Any], OpenStdout = OpenStdout.asInstanceOf[js.Any], Pid = Pid.asInstanceOf[js.Any], ProcessConfig = ProcessConfig.asInstanceOf[js.Any], Running = Running.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CanRemove = CanRemove.asInstanceOf[js.Any], ContainerID = ContainerID.asInstanceOf[js.Any], DetachKeys = DetachKeys.asInstanceOf[js.Any], ID = ID.asInstanceOf[js.Any], OpenStderr = OpenStderr.asInstanceOf[js.Any], OpenStdin = OpenStdin.asInstanceOf[js.Any], OpenStdout = OpenStdout.asInstanceOf[js.Any], Pid = Pid.asInstanceOf[js.Any], ProcessConfig = ProcessConfig.asInstanceOf[js.Any], Running = Running.asInstanceOf[js.Any], ExitCode = null)
     __obj.asInstanceOf[ExecInspectInfo]
   }
   

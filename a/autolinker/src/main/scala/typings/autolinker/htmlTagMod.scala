@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object htmlTagMod {
@@ -177,16 +176,15 @@ object htmlTagMod {
     var whitespaceRegex: RegExp = js.native
   }
   
-  @js.native
   trait HtmlTagCfg extends StObject {
     
-    var attrs: js.UndefOr[StringDictionary[String]] = js.native
+    var attrs: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var innerHTML: js.UndefOr[String] = js.native
+    var innerHTML: js.UndefOr[String] = js.undefined
     
-    var innerHtml: js.UndefOr[String] = js.native
+    var innerHtml: js.UndefOr[String] = js.undefined
     
-    var tagName: js.UndefOr[String] = js.native
+    var tagName: js.UndefOr[String] = js.undefined
   }
   object HtmlTagCfg {
     

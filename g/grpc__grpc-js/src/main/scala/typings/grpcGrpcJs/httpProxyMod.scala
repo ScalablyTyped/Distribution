@@ -7,25 +7,25 @@ import typings.node.netMod.Socket
 import typings.node.tlsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpProxyMod {
   
-  @JSImport("@grpc/grpc-js/build/src/http_proxy", "getProxiedConnection")
+  @JSImport("@grpc/grpc-js/build/src/http_proxy", JSImport.Namespace)
   @js.native
-  def getProxiedConnection(address: SubchannelAddress, channelOptions: ChannelOptions, connectionOptions: ConnectionOptions): js.Promise[ProxyConnectionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@grpc/grpc-js/build/src/http_proxy", "mapProxyName")
-  @js.native
-  def mapProxyName(target: GrpcUri, options: ChannelOptions): ProxyMapResult = js.native
+  @scala.inline
+  def getProxiedConnection(address: SubchannelAddress, channelOptions: ChannelOptions, connectionOptions: ConnectionOptions): js.Promise[ProxyConnectionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProxiedConnection")(address.asInstanceOf[js.Any], channelOptions.asInstanceOf[js.Any], connectionOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyConnectionResult]]
   
-  @js.native
+  @scala.inline
+  def mapProxyName(target: GrpcUri, options: ChannelOptions): ProxyMapResult = (^.asInstanceOf[js.Dynamic].applyDynamic("mapProxyName")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ProxyMapResult]
+  
   trait ProxyConnectionResult extends StObject {
     
-    var realTarget: js.UndefOr[GrpcUri] = js.native
+    var realTarget: js.UndefOr[GrpcUri] = js.undefined
     
-    var socket: js.UndefOr[Socket] = js.native
+    var socket: js.UndefOr[Socket] = js.undefined
   }
   object ProxyConnectionResult {
     
@@ -52,12 +52,11 @@ object httpProxyMod {
     }
   }
   
-  @js.native
   trait ProxyMapResult extends StObject {
     
-    var extraOptions: ChannelOptions = js.native
+    var extraOptions: ChannelOptions
     
-    var target: GrpcUri = js.native
+    var target: GrpcUri
   }
   object ProxyMapResult {
     

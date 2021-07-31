@@ -7,7 +7,6 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object json2csvtransformMod {
@@ -17,7 +16,7 @@ object json2csvtransformMod {
   // implements JSON2CSVBase<T>
   class default[T] () extends JSON2CSVTransform[T] {
     def this(opts: Options[T]) = this()
-    def this(opts: js.UndefOr[scala.Nothing], transformOpts: TransformOptions) = this()
+    def this(opts: Unit, transformOpts: TransformOptions) = this()
     def this(opts: Options[T], transformOpts: TransformOptions) = this()
   }
   

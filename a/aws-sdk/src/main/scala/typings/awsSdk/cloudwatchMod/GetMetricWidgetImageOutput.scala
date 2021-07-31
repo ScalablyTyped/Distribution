@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMetricWidgetImageOutput extends StObject {
   
   /**
     * The image of the graph, in the output format specified. The output is base64-encoded.
     */
-  var MetricWidgetImage: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricWidgetImage] = js.native
+  var MetricWidgetImage: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricWidgetImage] = js.undefined
 }
 object GetMetricWidgetImageOutput {
   

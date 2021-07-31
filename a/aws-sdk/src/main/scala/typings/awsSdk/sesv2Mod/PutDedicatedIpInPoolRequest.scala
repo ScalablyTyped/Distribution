@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDedicatedIpInPoolRequest extends StObject {
   
   /**
     * The name of the IP pool that you want to add the dedicated IP address to. You have to specify an IP pool that already exists.
     */
-  var DestinationPoolName: PoolName = js.native
+  var DestinationPoolName: PoolName
   
   /**
     * The IP address that you want to move to the dedicated IP pool. The value you specify has to be a dedicated IP address that's associated with your AWS account.
     */
-  var Ip: typings.awsSdk.sesv2Mod.Ip = js.native
+  var Ip: typings.awsSdk.sesv2Mod.Ip
 }
 object PutDedicatedIpInPoolRequest {
   

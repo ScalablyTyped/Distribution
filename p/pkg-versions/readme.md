@@ -12,7 +12,7 @@ Get the version numbers of a package from the npm registry
 | Keywords           | versions, version, numbers, npm, registry, package, package.json, json, module |
 | # releases         | 3 |
 | # dependents       | 8 |
-| # downloads        | 17806 |
+| # downloads        | 17485 |
 | # stars            | 0 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Twitter extends StObject {
   
-  var twitter_description: js.UndefOr[Nullable[String]] = js.native
+  var twitter_description: js.UndefOr[Nullable[String]] = js.undefined
   
-  var twitter_image: js.UndefOr[Nullable[String]] = js.native
+  var twitter_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var twitter_title: js.UndefOr[Nullable[String]] = js.native
+  var twitter_title: js.UndefOr[Nullable[String]] = js.undefined
 }
 object Twitter {
   

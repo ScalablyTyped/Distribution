@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/binaryauthorization/v1beta1", "binaryauthorization_v1beta1.Resource$Projects")
@@ -33,7 +32,7 @@ class ResourceProjects protected () extends StObject {
     */
   def getPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(params: ParamsResourceProjectsGetpolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getPolicy(params: ParamsResourceProjectsGetpolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getPolicy(
@@ -69,7 +68,7 @@ class ResourceProjects protected () extends StObject {
     */
   def updatePolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def updatePolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def updatePolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(params: ParamsResourceProjectsUpdatepolicy): GaxiosPromise[SchemaPolicy] = js.native
   def updatePolicy(params: ParamsResourceProjectsUpdatepolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def updatePolicy(

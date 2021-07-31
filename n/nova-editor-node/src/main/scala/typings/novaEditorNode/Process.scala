@@ -3,7 +3,6 @@ package typings.novaEditorNode
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/process/
@@ -27,9 +26,15 @@ trait Process extends StObject {
   
   def onDidExit(callback: js.Function1[/* status */ Double, Unit]): Disposable = js.native
   
-  def onNotify(methodName: String, callback: js.Function1[/* message */ ProcessMessage[_, _, _], Unit]): Disposable = js.native
+  def onNotify(
+    methodName: String,
+    callback: js.Function1[/* message */ ProcessMessage[js.Any, js.Any, js.Any], Unit]
+  ): Disposable = js.native
   
-  def onRequest(methodName: String, callback: js.Function1[/* message */ ProcessMessage[_, _, _], _]): Disposable = js.native
+  def onRequest(
+    methodName: String,
+    callback: js.Function1[/* message */ ProcessMessage[js.Any, js.Any, js.Any], js.Any]
+  ): Disposable = js.native
   
   def onStderr(callback: js.Function1[/* line */ String, Unit]): Disposable = js.native
   
@@ -37,27 +42,27 @@ trait Process extends StObject {
   
   val pid: Double = js.native
   
-  def request(methodName: String): js.Promise[_] = js.native
-  def request(methodName: String, params: js.Any): js.Promise[_] = js.native
+  def request(methodName: String): js.Promise[js.Any] = js.native
+  def request(methodName: String, params: js.Any): js.Promise[js.Any] = js.native
   
   def signal(signal: String): Unit = js.native
   def signal(signal: Double): Unit = js.native
   
   def start(): Unit = js.native
   
-  val stderr: js.UndefOr[ReadableStream[_] | WritableStream[_] | Null] = js.native
+  val stderr: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
   
-  val stdin: js.UndefOr[ReadableStream[_] | WritableStream[_] | Null] = js.native
+  val stdin: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
   
   val stdio: js.UndefOr[
     js.Tuple3[
-      ReadableStream[_] | WritableStream[_] | Null, 
-      ReadableStream[_] | WritableStream[_] | Null, 
-      ReadableStream[_] | WritableStream[_] | Null
+      ReadableStream[js.Any] | WritableStream[js.Any] | Null, 
+      ReadableStream[js.Any] | WritableStream[js.Any] | Null, 
+      ReadableStream[js.Any] | WritableStream[js.Any] | Null
     ]
   ] = js.native
   
-  val stdout: js.UndefOr[ReadableStream[_] | WritableStream[_] | Null] = js.native
+  val stdout: js.UndefOr[ReadableStream[js.Any] | WritableStream[js.Any] | Null] = js.native
   
   def terminate(): Unit = js.native
 }

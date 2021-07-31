@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlQueryDatasetAction extends StObject {
   
   /**
     * Prefilters applied to message data.
     */
-  var filters: js.UndefOr[QueryFilters] = js.native
+  var filters: js.UndefOr[QueryFilters] = js.undefined
   
   /**
     * A SQL query string.
     */
-  var sqlQuery: SqlQuery = js.native
+  var sqlQuery: SqlQuery
 }
 object SqlQueryDatasetAction {
   

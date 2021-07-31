@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticsearch {
   
-  @js.native
   trait DomainAdvancedSecurityOptions extends StObject {
     
     /**
       * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
     
     /**
       * Whether the internal user database is enabled. If not set, defaults to `false` by the AWS API.
       */
-    var internalUserDatabaseEnabled: js.UndefOr[Input[Boolean]] = js.native
+    var internalUserDatabaseEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Credentials for the master user: username and password, or ARN
       */
-    var masterUserOptions: js.UndefOr[Input[DomainAdvancedSecurityOptionsMasterUserOptions]] = js.native
+    var masterUserOptions: js.UndefOr[Input[DomainAdvancedSecurityOptionsMasterUserOptions]] = js.undefined
   }
   object DomainAdvancedSecurityOptions {
     
@@ -54,23 +52,22 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainAdvancedSecurityOptionsMasterUserOptions extends StObject {
     
     /**
       * ARN for the master user. Only specify if `internalUserDatabaseEnabled` is not set or set to `false`)
       */
-    var masterUserArn: js.UndefOr[Input[String]] = js.native
+    var masterUserArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The master user's username, which is stored in the Amazon Elasticsearch Service domain's internal database. Only specify if `internalUserDatabaseEnabled` is set to `true`.
       */
-    var masterUserName: js.UndefOr[Input[String]] = js.native
+    var masterUserName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The master user's password, which is stored in the Amazon Elasticsearch Service domain's internal database. Only specify if `internalUserDatabaseEnabled` is set to `true`.
       */
-    var masterUserPassword: js.UndefOr[Input[String]] = js.native
+    var masterUserPassword: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainAdvancedSecurityOptionsMasterUserOptions {
     
@@ -103,58 +100,57 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainClusterConfig extends StObject {
     
     /**
       * Number of dedicated master nodes in the cluster
       */
-    var dedicatedMasterCount: js.UndefOr[Input[Double]] = js.native
+    var dedicatedMasterCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates whether dedicated master nodes are enabled for the cluster.
       */
-    var dedicatedMasterEnabled: js.UndefOr[Input[Boolean]] = js.native
+    var dedicatedMasterEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Instance type of the dedicated master nodes in the cluster.
       */
-    var dedicatedMasterType: js.UndefOr[Input[String]] = js.native
+    var dedicatedMasterType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Number of instances in the cluster.
       */
-    var instanceCount: js.UndefOr[Input[Double]] = js.native
+    var instanceCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Instance type of data nodes in the cluster.
       */
-    var instanceType: js.UndefOr[Input[String]] = js.native
+    var instanceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of warm nodes in the cluster. Valid values are between `2` and `150`. `warmCount` can be only and must be set when `warmEnabled` is set to `true`.
       */
-    var warmCount: js.UndefOr[Input[Double]] = js.native
+    var warmCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Indicates whether to enable warm storage.
       */
-    var warmEnabled: js.UndefOr[Input[Boolean]] = js.native
+    var warmEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The instance type for the Elasticsearch cluster's warm nodes. Valid values are `ultrawarm1.medium.elasticsearch`, `ultrawarm1.large.elasticsearch` and `ultrawarm1.xlarge.elasticsearch`. `warmType` can be only and must be set when `warmEnabled` is set to `true`.
       */
-    var warmType: js.UndefOr[Input[String]] = js.native
+    var warmType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing zone awareness settings. Documented below.
       */
-    var zoneAwarenessConfig: js.UndefOr[Input[DomainClusterConfigZoneAwarenessConfig]] = js.native
+    var zoneAwarenessConfig: js.UndefOr[Input[DomainClusterConfigZoneAwarenessConfig]] = js.undefined
     
     /**
       * Indicates whether zone awareness is enabled, set to `true` for multi-az deployment. To enable awareness with three Availability Zones, the `availabilityZoneCount` within the `zoneAwarenessConfig` must be set to `3`.
       */
-    var zoneAwarenessEnabled: js.UndefOr[Input[Boolean]] = js.native
+    var zoneAwarenessEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object DomainClusterConfig {
     
@@ -229,13 +225,12 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainClusterConfigZoneAwarenessConfig extends StObject {
     
     /**
       * Number of Availability Zones for the domain to use with `zoneAwarenessEnabled`. Defaults to `2`. Valid values: `2` or `3`.
       */
-    var availabilityZoneCount: js.UndefOr[Input[Double]] = js.native
+    var availabilityZoneCount: js.UndefOr[Input[Double]] = js.undefined
   }
   object DomainClusterConfigZoneAwarenessConfig {
     
@@ -256,28 +251,27 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainCognitoOptions extends StObject {
     
     /**
       * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
       */
-    var enabled: js.UndefOr[Input[Boolean]] = js.native
+    var enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * ID of the Cognito Identity Pool to use
       */
-    var identityPoolId: Input[String] = js.native
+    var identityPoolId: Input[String]
     
     /**
       * ARN of the IAM role that has the AmazonESCognitoAccess policy attached
       */
-    var roleArn: Input[String] = js.native
+    var roleArn: Input[String]
     
     /**
       * ID of the Cognito User Pool to use
       */
-    var userPoolId: Input[String] = js.native
+    var userPoolId: Input[String]
   }
   object DomainCognitoOptions {
     
@@ -307,18 +301,17 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainDomainEndpointOptions extends StObject {
     
     /**
       * Whether or not to require HTTPS
       */
-    var enforceHttps: Input[Boolean] = js.native
+    var enforceHttps: Input[Boolean]
     
     /**
       * The name of the TLS security policy that needs to be applied to the HTTPS endpoint. Valid values:  `Policy-Min-TLS-1-0-2019-07` and `Policy-Min-TLS-1-2-2019-07`. This provider will only perform drift detection if a configuration value is provided.
       */
-    var tlsSecurityPolicy: js.UndefOr[Input[String]] = js.native
+    var tlsSecurityPolicy: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainDomainEndpointOptions {
     
@@ -342,29 +335,28 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainEbsOptions extends StObject {
     
     /**
       * Whether EBS volumes are attached to data nodes in the domain.
       */
-    var ebsEnabled: Input[Boolean] = js.native
+    var ebsEnabled: Input[Boolean]
     
     /**
       * The baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type.
       */
-    var iops: js.UndefOr[Input[Double]] = js.native
+    var iops: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The size of EBS volumes attached to data nodes (in GiB).
       * **Required** if `ebsEnabled` is set to `true`.
       */
-    var volumeSize: js.UndefOr[Input[Double]] = js.native
+    var volumeSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The type of EBS volumes attached to data nodes.
       */
-    var volumeType: js.UndefOr[Input[String]] = js.native
+    var volumeType: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainEbsOptions {
     
@@ -400,18 +392,17 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainEncryptAtRest extends StObject {
     
     /**
       * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
     
     /**
       * The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
       */
-    var kmsKeyId: js.UndefOr[Input[String]] = js.native
+    var kmsKeyId: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainEncryptAtRest {
     
@@ -435,23 +426,22 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainLogPublishingOption extends StObject {
     
     /**
       * ARN of the Cloudwatch log group to which log needs to be published.
       */
-    var cloudwatchLogGroupArn: Input[String] = js.native
+    var cloudwatchLogGroupArn: Input[String]
     
     /**
       * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
       */
-    var enabled: js.UndefOr[Input[Boolean]] = js.native
+    var enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A type of Elasticsearch log. Valid values: INDEX_SLOW_LOGS, SEARCH_SLOW_LOGS, ES_APPLICATION_LOGS, AUDIT_LOGS
       */
-    var logType: Input[String] = js.native
+    var logType: Input[String]
   }
   object DomainLogPublishingOption {
     
@@ -478,13 +468,12 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainNodeToNodeEncryption extends StObject {
     
     /**
       * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
       */
-    var enabled: Input[Boolean] = js.native
+    var enabled: Input[Boolean]
   }
   object DomainNodeToNodeEncryption {
     
@@ -502,13 +491,12 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainSnapshotOptions extends StObject {
     
     /**
       * Hour during which the service takes an automated daily snapshot of the indices in the domain.
       */
-    var automatedSnapshotStartHour: Input[Double] = js.native
+    var automatedSnapshotStartHour: Input[Double]
   }
   object DomainSnapshotOptions {
     
@@ -526,22 +514,21 @@ object elasticsearch {
     }
   }
   
-  @js.native
   trait DomainVpcOptions extends StObject {
     
-    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of VPC Security Group IDs to be applied to the Elasticsearch domain endpoints. If omitted, the default Security Group for the VPC will be used.
       */
-    var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of VPC Subnet IDs for the Elasticsearch domain endpoints to be created in.
       */
-    var subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var subnetIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
-    var vpcId: js.UndefOr[Input[String]] = js.native
+    var vpcId: js.UndefOr[Input[String]] = js.undefined
   }
   object DomainVpcOptions {
     

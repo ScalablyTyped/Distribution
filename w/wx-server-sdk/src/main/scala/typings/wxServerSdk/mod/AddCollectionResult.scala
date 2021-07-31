@@ -2,13 +2,11 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddCollectionResult extends StObject {
   
-  var _id: String | Double = js.native
+  var _id: String | Double
 }
 object AddCollectionResult {
   

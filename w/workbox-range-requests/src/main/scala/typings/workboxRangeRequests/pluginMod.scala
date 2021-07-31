@@ -6,14 +6,15 @@ import typings.workboxCore.workboxPluginMod.CachedResponseWillBeUsedCallbackPara
 import typings.workboxCore.workboxPluginMod.WorkboxPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginMod {
   
   @JSImport("workbox-range-requests/Plugin", "Plugin")
   @js.native
-  class Plugin () extends WorkboxPlugin {
+  class Plugin ()
+    extends StObject
+       with WorkboxPlugin {
     
     @JSName("cachedResponseWillBeUsed")
     def cachedResponseWillBeUsed_MPlugin(param: CachedResponseWillBeUsedCallbackParam): js.Promise[js.UndefOr[Response]] = js.native

@@ -5,61 +5,59 @@ import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait colorboardConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxLightness: js.UndefOr[Double] = js.native
+  var maxLightness: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minLightness: js.UndefOr[Double] = js.native
+  var minLightness: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var navigation: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[Boolean] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var palette: js.UndefOr[js.Array[_]] = js.native
+  var palette: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var template: js.UndefOr[WebixCallback] = js.native
+  var template: js.UndefOr[WebixCallback] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object colorboardConfig {
   
@@ -187,7 +185,7 @@ object colorboardConfig {
     def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def setPalette(value: js.Array[_]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
+    def setPalette(value: js.Array[js.Any]): Self = StObject.set(x, "palette", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPaletteUndefined: Self = StObject.set(x, "palette", js.undefined)
@@ -202,7 +200,7 @@ object colorboardConfig {
     def setRowsUndefined: Self = StObject.set(x, "rows", js.undefined)
     
     @scala.inline
-    def setTemplate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
+    def setTemplate(value: WebixCallback): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)

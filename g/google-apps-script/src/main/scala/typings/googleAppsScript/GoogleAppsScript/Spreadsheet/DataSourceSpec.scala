@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,16 +19,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       Logger.log("Raw query string: %s\n", bqSpec.getRawQuery());
   *     }
   */
-@js.native
 trait DataSourceSpec extends StObject {
   
-  def asBigQuery(): BigQueryDataSourceSpec = js.native
+  def asBigQuery(): BigQueryDataSourceSpec
   
-  def copy(): DataSourceSpecBuilder = js.native
+  def copy(): DataSourceSpecBuilder
   
-  def getParameters(): js.Array[DataSourceParameter] = js.native
+  def getParameters(): js.Array[DataSourceParameter]
   
-  def getType(): DataSourceType = js.native
+  def getType(): DataSourceType
 }
 object DataSourceSpec {
   

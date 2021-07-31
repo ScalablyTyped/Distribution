@@ -2,25 +2,23 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handle extends StObject {
   
-  var bar: js.UndefOr[Width] = js.native
+  var bar: js.UndefOr[Width] = js.undefined
   
-  var handle: js.UndefOr[Bordertop] = js.native
+  var handle: js.UndefOr[Bordertop] = js.undefined
   
   /**
     * Sets an x offset that will be applied to the scroll-x object. 4 | '6px' | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a y offset that will be applied to the scroll-x object. 4 | '6px' | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
 }
 object Handle {
   

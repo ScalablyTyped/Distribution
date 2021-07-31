@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.DOMSnapshot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureSnapshotRequest extends StObject {
   
   /**
     * Whitelist of computed styles to return.
     */
-  var computedStyles: js.Array[String] = js.native
+  var computedStyles: js.Array[String]
   
   /**
     * Whether to include DOM rectangles (offsetRects, clientRects, scrollRects) into the snapshot
     */
-  var includeDOMRects: js.UndefOr[Boolean] = js.native
+  var includeDOMRects: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to include layout object paint orders into the snapshot.
     */
-  var includePaintOrder: js.UndefOr[Boolean] = js.native
+  var includePaintOrder: js.UndefOr[Boolean] = js.undefined
 }
 object CaptureSnapshotRequest {
   

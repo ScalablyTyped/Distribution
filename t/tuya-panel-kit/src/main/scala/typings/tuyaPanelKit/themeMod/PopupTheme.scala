@@ -2,55 +2,53 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupTheme extends StObject {
   
-  var backIconColor: String = js.native
+  var backIconColor: String
   
-  var bottomBg: String = js.native
+  var bottomBg: String
   
-  var cancelFontColor: String = js.native
+  var cancelFontColor: String
   
-  var cancelFontSize: Double = js.native
+  var cancelFontSize: Double
   
-  var cellBg: String = js.native
+  var cellBg: String
   
-  var cellFontColor: String = js.native
+  var cellFontColor: String
   
-  var cellFontSize: Double = js.native
+  var cellFontSize: Double
   
-  var cellHeight: Double = js.native
+  var cellHeight: Double
   
-  var checkboxColor: String = js.native
+  var checkboxColor: String
   
-  var confirmFontColor: String = js.native
+  var confirmFontColor: String
   
-  var confirmFontSize: Double = js.native
+  var confirmFontSize: Double
   
-  var footerRadius: Double = js.native
+  var footerRadius: Double
   
-  var lineColor: String = js.native
+  var lineColor: String
   
-  var list: PopupListTheme = js.native
+  var list: PopupListTheme
   
-  var numberSelector: PopupNumberSelectorTheme = js.native
+  var numberSelector: PopupNumberSelectorTheme
   
-  var subTitleFontColor: String = js.native
+  var subTitleFontColor: String
   
-  var tintColor: String = js.native
+  var tintColor: String
   
-  var titleBg: String = js.native
+  var titleBg: String
   
-  var titleFontColor: String = js.native
+  var titleFontColor: String
   
-  var titleFontSize: Double = js.native
+  var titleFontSize: Double
   
-  var titleHeight: Double = js.native
+  var titleHeight: Double
   
-  var titleRadius: Double = js.native
+  var titleRadius: Double
 }
 object PopupTheme {
   

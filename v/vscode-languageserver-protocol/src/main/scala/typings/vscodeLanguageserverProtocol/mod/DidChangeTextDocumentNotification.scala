@@ -6,7 +6,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.TextDocumentChangeRegist
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.textDocumentSlashdidChange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DidChangeTextDocumentNotification {

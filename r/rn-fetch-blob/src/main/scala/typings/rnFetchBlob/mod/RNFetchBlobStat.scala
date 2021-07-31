@@ -4,7 +4,6 @@ import typings.rnFetchBlob.rnFetchBlobStrings.directory
 import typings.rnFetchBlob.rnFetchBlobStrings.file
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rn-fetch-blob", "RNFetchBlobStat")

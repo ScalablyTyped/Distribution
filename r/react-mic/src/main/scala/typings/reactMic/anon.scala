@@ -2,17 +2,15 @@ package typings.reactMic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AudioBitsPerSecond extends StObject {
     
-    var audioBitsPerSecond: Double = js.native
+    var audioBitsPerSecond: Double
     
-    var mimeType: String = js.native
+    var mimeType: String
   }
   object AudioBitsPerSecond {
     

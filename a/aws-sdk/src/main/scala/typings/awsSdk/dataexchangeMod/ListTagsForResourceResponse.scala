@@ -2,16 +2,14 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * A label that consists of a customer-defined key and an optional value.
     */
-  var Tags: js.UndefOr[MapOfString] = js.native
+  var Tags: js.UndefOr[MapOfString] = js.undefined
 }
 object ListTagsForResourceResponse {
   

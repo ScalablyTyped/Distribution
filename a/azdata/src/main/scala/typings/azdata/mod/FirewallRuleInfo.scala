@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallRuleInfo extends StObject {
   
-  var endIpAddress: String = js.native
+  var endIpAddress: String
   
-  var serverName: String = js.native
+  var serverName: String
   
-  var startIpAddress: String = js.native
+  var startIpAddress: String
 }
 object FirewallRuleInfo {
   

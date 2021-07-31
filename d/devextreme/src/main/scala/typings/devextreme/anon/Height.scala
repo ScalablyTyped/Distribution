@@ -2,23 +2,21 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
-  var allowSearch: js.UndefOr[Boolean] = js.native
+  var allowSearch: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var searchTimeout: js.UndefOr[Double] = js.native
+  var searchTimeout: js.UndefOr[Double] = js.undefined
   
-  var texts: js.UndefOr[Cancel] = js.native
+  var texts: js.UndefOr[Cancel] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Height {
   

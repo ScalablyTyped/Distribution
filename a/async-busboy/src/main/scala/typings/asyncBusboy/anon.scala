@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.fsMod.ReadStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: StringDictionary[js.Any] = js.native
+    var fields: StringDictionary[js.Any]
     
-    var files: js.UndefOr[js.Array[ReadStream]] = js.native
+    var files: js.UndefOr[js.Array[ReadStream]] = js.undefined
   }
   object Fields {
     

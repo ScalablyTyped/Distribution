@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amiFromInstanceMod {
@@ -126,6 +125,10 @@ object amiFromInstanceMod {
   /* static members */
   object AmiFromInstance {
     
+    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AmiFromInstance resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -135,35 +138,29 @@ object amiFromInstanceMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AmiFromInstance = js.native
-    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AmiFromInstance = js.native
-    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AmiFromInstanceState): AmiFromInstance = js.native
-    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AmiFromInstanceState, opts: CustomResourceOptions): AmiFromInstance = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AmiFromInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AmiFromInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AmiFromInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AmiFromInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AmiFromInstanceState): AmiFromInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AmiFromInstance]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AmiFromInstanceState, opts: CustomResourceOptions): AmiFromInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AmiFromInstance]
     
     /**
       * Returns true if the given object is an instance of AmiFromInstance.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/amiFromInstance", "AmiFromInstance.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiFromInstance.AmiFromInstance */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/amiFromInstance.AmiFromInstance */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/amiFromInstance.AmiFromInstance */ Boolean]
   }
   
-  @js.native
   trait AmiFromInstanceArgs extends StObject {
     
     /**
       * A longer, human-readable description for the AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested block describing an EBS block device that should be
@@ -171,7 +168,7 @@ object amiFromInstanceMod {
       */
     val ebsBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiFromInstanceEbsBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Nested block describing an ephemeral block device that
@@ -181,12 +178,12 @@ object amiFromInstanceMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiFromInstanceEphemeralBlockDevice]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean that overrides the behavior of stopping
@@ -194,17 +191,17 @@ object amiFromInstanceMod {
       * inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
       * guarantees that no filesystem writes will be underway at the time of snapshot.
       */
-    val snapshotWithoutReboot: js.UndefOr[Input[Boolean]] = js.native
+    val snapshotWithoutReboot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The id of the instance to use as the basis of the AMI.
       */
-    val sourceInstanceId: Input[String] = js.native
+    val sourceInstanceId: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AmiFromInstanceArgs {
     
@@ -268,23 +265,22 @@ object amiFromInstanceMod {
     }
   }
   
-  @js.native
   trait AmiFromInstanceState extends StObject {
     
     /**
       * Machine architecture for created instances. Defaults to "x8664".
       */
-    val architecture: js.UndefOr[Input[String]] = js.native
+    val architecture: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the AMI.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A longer, human-readable description for the AMI.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested block describing an EBS block device that should be
@@ -292,12 +288,12 @@ object amiFromInstanceMod {
       */
     val ebsBlockDevices: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiFromInstanceEbsBlockDevice]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specifies whether enhanced networking with ENA is enabled. Defaults to `false`.
       */
-    val enaSupport: js.UndefOr[Input[Boolean]] = js.native
+    val enaSupport: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Nested block describing an ephemeral block device that
@@ -307,39 +303,39 @@ object amiFromInstanceMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.AmiFromInstanceEphemeralBlockDevice]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Path to an S3 object containing an image manifest, e.g. created
       * by the `ec2-upload-bundle` command in the EC2 command line tools.
       */
-    val imageLocation: js.UndefOr[Input[String]] = js.native
+    val imageLocation: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of the kernel image (AKI) that will be used as the paravirtual
       * kernel in created instances.
       */
-    val kernelId: js.UndefOr[Input[String]] = js.native
+    val kernelId: js.UndefOr[Input[String]] = js.undefined
     
-    val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.native
+    val manageEbsSnapshots: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A region-unique name for the AMI.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The id of an initrd image (ARI) that will be used when booting the
       * created instances.
       */
-    val ramdiskId: js.UndefOr[Input[String]] = js.native
+    val ramdiskId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the root device (for example, `/dev/sda1`, or `/dev/xvda`).
       */
-    val rootDeviceName: js.UndefOr[Input[String]] = js.native
+    val rootDeviceName: js.UndefOr[Input[String]] = js.undefined
     
-    val rootSnapshotId: js.UndefOr[Input[String]] = js.native
+    val rootSnapshotId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Boolean that overrides the behavior of stopping
@@ -347,30 +343,30 @@ object amiFromInstanceMod {
       * inconsistent filesystem state, but can be used to avoid downtime if the user otherwise
       * guarantees that no filesystem writes will be underway at the time of snapshot.
       */
-    val snapshotWithoutReboot: js.UndefOr[Input[Boolean]] = js.native
+    val snapshotWithoutReboot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The id of the instance to use as the basis of the AMI.
       */
-    val sourceInstanceId: js.UndefOr[Input[String]] = js.native
+    val sourceInstanceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When set to "simple" (the default), enables enhanced networking
       * for created instances. No other value is supported at this time.
       */
-    val sriovNetSupport: js.UndefOr[Input[String]] = js.native
+    val sriovNetSupport: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Keyword to choose what virtualization mode created instances
       * will use. Can be either "paravirtual" (the default) or "hvm". The choice of virtualization type
       * changes the set of further arguments that are required, as described below.
       */
-    val virtualizationType: js.UndefOr[Input[String]] = js.native
+    val virtualizationType: js.UndefOr[Input[String]] = js.undefined
   }
   object AmiFromInstanceState {
     

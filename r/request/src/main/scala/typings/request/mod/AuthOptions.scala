@@ -2,23 +2,21 @@ package typings.request.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthOptions extends StObject {
   
-  var bearer: js.UndefOr[String | js.Function0[String]] = js.native
+  var bearer: js.UndefOr[String | js.Function0[String]] = js.undefined
   
-  var pass: js.UndefOr[String] = js.native
+  var pass: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var sendImmediately: js.UndefOr[Boolean] = js.native
+  var sendImmediately: js.UndefOr[Boolean] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object AuthOptions {
   

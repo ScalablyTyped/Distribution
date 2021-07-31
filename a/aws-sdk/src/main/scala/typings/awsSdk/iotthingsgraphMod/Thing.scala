@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Thing extends StObject {
   
   /**
     * The ARN of the thing.
     */
-  var thingArn: js.UndefOr[ThingArn] = js.native
+  var thingArn: js.UndefOr[ThingArn] = js.undefined
   
   /**
     * The name of the thing.
     */
-  var thingName: js.UndefOr[ThingName] = js.native
+  var thingName: js.UndefOr[ThingName] = js.undefined
 }
 object Thing {
   

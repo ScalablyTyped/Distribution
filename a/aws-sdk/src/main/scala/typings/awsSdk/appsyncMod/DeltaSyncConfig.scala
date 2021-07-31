@@ -2,26 +2,24 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeltaSyncConfig extends StObject {
   
   /**
     * The number of minutes an Item is stored in the datasource.
     */
-  var baseTableTTL: js.UndefOr[Long] = js.native
+  var baseTableTTL: js.UndefOr[Long] = js.undefined
   
   /**
     * The Delta Sync table name.
     */
-  var deltaSyncTableName: js.UndefOr[String] = js.native
+  var deltaSyncTableName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of minutes a Delta Sync log entry is stored in the Delta Sync table.
     */
-  var deltaSyncTableTTL: js.UndefOr[Long] = js.native
+  var deltaSyncTableTTL: js.UndefOr[Long] = js.undefined
 }
 object DeltaSyncConfig {
   

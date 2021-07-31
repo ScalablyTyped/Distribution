@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthCheckObservation extends StObject {
   
   /**
     * The IP address of the Amazon Route 53 health checker that provided the failure reason in StatusReport.
     */
-  var IPAddress: js.UndefOr[typings.awsSdk.route53Mod.IPAddress] = js.native
+  var IPAddress: js.UndefOr[typings.awsSdk.route53Mod.IPAddress] = js.undefined
   
   /**
     * The region of the Amazon Route 53 health checker that provided the status in StatusReport.
     */
-  var Region: js.UndefOr[HealthCheckRegion] = js.native
+  var Region: js.UndefOr[HealthCheckRegion] = js.undefined
   
   /**
     * A complex type that contains the last failure reason as reported by one Amazon Route 53 health checker and the time of the failed health check.
     */
-  var StatusReport: js.UndefOr[typings.awsSdk.route53Mod.StatusReport] = js.native
+  var StatusReport: js.UndefOr[typings.awsSdk.route53Mod.StatusReport] = js.undefined
 }
 object HealthCheckObservation {
   

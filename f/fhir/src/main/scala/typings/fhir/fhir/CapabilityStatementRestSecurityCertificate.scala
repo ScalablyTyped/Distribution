@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Certificates associated with security profiles
   */
-@js.native
-trait CapabilityStatementRestSecurityCertificate extends BackboneElement {
+trait CapabilityStatementRestSecurityCertificate
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'blob'.
     */
-  var _blob: js.UndefOr[Element] = js.native
+  var _blob: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Actual certificate
     */
-  var blob: js.UndefOr[base64Binary] = js.native
+  var blob: js.UndefOr[base64Binary] = js.undefined
   
   /**
     * Mime type for certificates
     */
-  var `type`: js.UndefOr[code] = js.native
+  var `type`: js.UndefOr[code] = js.undefined
 }
 object CapabilityStatementRestSecurityCertificate {
   

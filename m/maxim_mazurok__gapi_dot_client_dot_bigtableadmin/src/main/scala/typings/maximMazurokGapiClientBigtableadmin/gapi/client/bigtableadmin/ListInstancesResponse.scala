@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstancesResponse extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ListInstancesResponse extends StObject {
     * may be missing from `instances`, and Instances with at least one Cluster in a failed location may only have partial information returned. Values are of the form
     * `projects//locations/`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The list of requested instances. */
-  var instances: js.UndefOr[js.Array[Instance]] = js.native
+  var instances: js.UndefOr[js.Array[Instance]] = js.undefined
   
   /** DEPRECATED: This field is unused and ignored. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListInstancesResponse {
   

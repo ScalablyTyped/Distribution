@@ -5,7 +5,6 @@ import typings.std.HTMLImageElement
 import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "MapboxProviderCommonApi")
@@ -23,7 +22,7 @@ abstract class MapboxProviderCommonApi () extends StObject {
     * By subscribing to the event, you will be notified of the error and can potentially recover from it.
     * Event listeners are passed an instance of TileProviderError.
     */
-  val errorEvent: Event[js.Array[_]] = js.native
+  val errorEvent: Event[js.Array[js.Any]] = js.native
   
   /**
     * Gets the credits to be displayed when a given tile is displayed.

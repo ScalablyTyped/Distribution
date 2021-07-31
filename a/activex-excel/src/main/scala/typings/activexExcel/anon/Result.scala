@@ -4,17 +4,15 @@ import typings.activexExcel.Excel.XlXmlExportResult
 import typings.activexExcel.Excel.XmlMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Result extends StObject {
   
-  val Map: XmlMap = js.native
+  val Map: XmlMap
   
-  val Result: XlXmlExportResult = js.native
+  val Result: XlXmlExportResult
   
-  val Url: String = js.native
+  val Url: String
 }
 object Result {
   

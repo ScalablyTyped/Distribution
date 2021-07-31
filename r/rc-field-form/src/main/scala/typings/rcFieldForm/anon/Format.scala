@@ -3,17 +3,15 @@ package typings.rcFieldForm.anon
 import typings.rcFieldForm.interfaceMod.ValidateMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format extends StObject {
   
-  var format: js.UndefOr[ValidateMessage] = js.native
+  var format: js.UndefOr[ValidateMessage] = js.undefined
   
-  var invalid: js.UndefOr[ValidateMessage] = js.native
+  var invalid: js.UndefOr[ValidateMessage] = js.undefined
   
-  var parse: js.UndefOr[ValidateMessage] = js.native
+  var parse: js.UndefOr[ValidateMessage] = js.undefined
 }
 object Format {
   

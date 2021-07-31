@@ -4,17 +4,15 @@ import typings.jsreportDocx.jsreportDocxBooleans.`false`
 import typings.jsreportDocx.jsreportDocxBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var encoding: String = js.native
+    var encoding: String
   }
   object Content {
     
@@ -35,20 +33,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: `true` = js.native
+    var enabled: `true`
     
-    var publicUri: String = js.native
+    var publicUri: String
     
-    var showWarning: `false` = js.native
+    var showWarning: `false`
   }
   object Enabled {
     
     @scala.inline
-    def apply(enabled: `true`, publicUri: String, showWarning: `false`): Enabled = {
-      val __obj = js.Dynamic.literal(enabled = enabled.asInstanceOf[js.Any], publicUri = publicUri.asInstanceOf[js.Any], showWarning = showWarning.asInstanceOf[js.Any])
+    def apply(publicUri: String): Enabled = {
+      val __obj = js.Dynamic.literal(enabled = true, publicUri = publicUri.asInstanceOf[js.Any], showWarning = false)
       __obj.asInstanceOf[Enabled]
     }
     

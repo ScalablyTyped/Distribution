@@ -8,7 +8,6 @@ import typings.pngjs2.pngjs2Strings.parsed
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,8 +53,11 @@ object mod {
   /* static members */
   object PNG {
     
-    @JSImport("pngjs2", "PNG.bitblt")
+    @JSImport("pngjs2", "PNG")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def bitblt(
       src: PNG,
       dst: PNG,
@@ -65,39 +67,38 @@ object mod {
       height: Double,
       deltaX: Double,
       deltaY: Double
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bitblt")(src.asInstanceOf[js.Any], dst.asInstanceOf[js.Any], srcX.asInstanceOf[js.Any], srcY.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], deltaX.asInstanceOf[js.Any], deltaY.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object sync {
       
-      @JSImport("pngjs2", "PNG.sync.read")
+      @JSImport("pngjs2", "PNG.sync")
       @js.native
-      def read(buffer: String): PNG = js.native
-      @JSImport("pngjs2", "PNG.sync.read")
-      @js.native
-      def read(buffer: String, options: PNGOptions): PNG = js.native
-      @JSImport("pngjs2", "PNG.sync.read")
-      @js.native
-      def read(buffer: Buffer): PNG = js.native
-      @JSImport("pngjs2", "PNG.sync.read")
-      @js.native
-      def read(buffer: Buffer, options: PNGOptions): PNG = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def read(buffer: String): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
+      @scala.inline
+      def read(buffer: String, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
+      @scala.inline
+      def read(buffer: Buffer): PNG = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any]).asInstanceOf[PNG]
+      @scala.inline
+      def read(buffer: Buffer, options: PNGOptions): PNG = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(buffer.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PNG]
     }
   }
   
-  @js.native
   trait PNGMetadata extends StObject {
     
-    var alpha: Boolean = js.native
+    var alpha: Boolean
     
-    var color: Boolean = js.native
+    var color: Boolean
     
-    var height: Double = js.native
+    var height: Double
     
-    var interlace: Boolean = js.native
+    var interlace: Boolean
     
-    var palette: Boolean = js.native
+    var palette: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object PNGMetadata {
     
@@ -137,28 +138,27 @@ object mod {
     }
   }
   
-  @js.native
   trait PNGOptions extends StObject {
     
-    var checkCRC: js.UndefOr[Boolean] = js.native
+    var checkCRC: js.UndefOr[Boolean] = js.undefined
     
-    var colorType: js.UndefOr[Double] = js.native
+    var colorType: js.UndefOr[Double] = js.undefined
     
-    var deflateChunkSize: js.UndefOr[Double] = js.native
+    var deflateChunkSize: js.UndefOr[Double] = js.undefined
     
-    var deflateFactory: js.UndefOr[js.Any] = js.native
+    var deflateFactory: js.UndefOr[js.Any] = js.undefined
     
-    var deflateLevel: js.UndefOr[Double] = js.native
+    var deflateLevel: js.UndefOr[Double] = js.undefined
     
-    var deflateStrategy: js.UndefOr[Double] = js.native
+    var deflateStrategy: js.UndefOr[Double] = js.undefined
     
-    var filterType: js.UndefOr[Double | js.Array[Double]] = js.native
+    var filterType: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var inputHasAlpha: js.UndefOr[Boolean] = js.native
+    var inputHasAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object PNGOptions {
     

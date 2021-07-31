@@ -2,41 +2,39 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
   /**
     * The Availability Zones. Follows the format us-east-2a (case-sensitive).
     */
-  var availabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var availabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
   
   /**
     * The continent code (e.g., NA, meaning North America).
     */
-  var continentCode: js.UndefOr[String] = js.native
+  var continentCode: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the AWS Region (e.g., This region is recommended to serve users in the eastern United States and eastern Canada).
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The display name (e.g., Ohio).
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The region name (e.g., us-east-2).
     */
-  var name: js.UndefOr[RegionName] = js.native
+  var name: js.UndefOr[RegionName] = js.undefined
   
   /**
     * The Availability Zones for databases. Follows the format us-east-2a (case-sensitive).
     */
-  var relationalDatabaseAvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.native
+  var relationalDatabaseAvailabilityZones: js.UndefOr[AvailabilityZoneList] = js.undefined
 }
 object Region {
   

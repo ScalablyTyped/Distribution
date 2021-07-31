@@ -2,7 +2,6 @@ package typings.resolvePkg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,21 +20,22 @@ object mod {
   //=> Error: Cannot find module 'grunt-svgmin'
   ```
   */
-  @JSImport("resolve-pkg", JSImport.Namespace)
-  @js.native
-  def apply(moduleId: String): js.UndefOr[String] = js.native
-  @JSImport("resolve-pkg", JSImport.Namespace)
-  @js.native
-  def apply(moduleId: String, options: Options): js.UndefOr[String] = js.native
+  @scala.inline
+  def apply(moduleId: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def apply(moduleId: String, options: Options): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].apply(moduleId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
+  @JSImport("resolve-pkg", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Directory to resolve from.
     		@default process.cwd()
     		*/
-    val cwd: js.UndefOr[String] = js.native
+    val cwd: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -37,10 +37,13 @@ import typings.react.mod.ValidationMap
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subPopupMenuMod {
+  
+  @JSImport("rc-menu/es/SubPopupMenu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rc-menu/es/SubPopupMenu", JSImport.Default)
@@ -99,9 +102,8 @@ object subPopupMenuMod {
     @scala.inline
     def getDerivedStateFromProps_=(x: js.UndefOr[GetDerivedStateFromProps[SubPopupMenuProps, js.Any]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getDerivedStateFromProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("rc-menu/es/SubPopupMenu", "default.getWrappedInstance")
-    @js.native
-    def getWrappedInstance(): SubPopupMenu = js.native
+    @scala.inline
+    def getWrappedInstance(): SubPopupMenu = ^.asInstanceOf[js.Dynamic].applyDynamic("getWrappedInstance")().asInstanceOf[SubPopupMenu]
     
     @JSImport("rc-menu/es/SubPopupMenu", "default.propTypes")
     @js.native
@@ -170,92 +172,89 @@ object subPopupMenuMod {
     def defaultProps_=(x: ClassName): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("rc-menu/es/SubPopupMenu", "getActiveKey")
-  @js.native
-  def getActiveKey(props: Children, originalActiveKey: String): String | Double = js.native
+  @scala.inline
+  def getActiveKey(props: Children, originalActiveKey: String): String | Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getActiveKey")(props.asInstanceOf[js.Any], originalActiveKey.asInstanceOf[js.Any])).asInstanceOf[String | Double]
   
-  @JSImport("rc-menu/es/SubPopupMenu", "saveRef")
-  @js.native
-  def saveRef(c: ReactInstance): Unit = js.native
+  @scala.inline
+  def saveRef(c: ReactInstance): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("saveRef")(c.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait SubPopupMenuProps extends StObject {
     
-    var activeKey: js.UndefOr[String] = js.native
+    var activeKey: js.UndefOr[String] = js.undefined
     
-    var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.native
+    var builtinPlacements: js.UndefOr[BuiltinPlacements] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultActiveFirst: js.UndefOr[Boolean] = js.native
+    var defaultActiveFirst: js.UndefOr[Boolean] = js.undefined
     
-    var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.native
+    var defaultOpenKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.native
+    var defaultSelectedKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var direction: js.UndefOr[ltr | rtl] = js.native
+    var direction: js.UndefOr[ltr | rtl] = js.undefined
     
-    var eventKey: js.UndefOr[Key] = js.native
+    var eventKey: js.UndefOr[Key] = js.undefined
     
-    var expandIcon: js.UndefOr[RenderIconType] = js.native
+    var expandIcon: js.UndefOr[RenderIconType] = js.undefined
     
-    var focusable: js.UndefOr[Boolean] = js.native
+    var focusable: js.UndefOr[Boolean] = js.undefined
     
-    var forceSubMenuRender: js.UndefOr[Boolean] = js.native
+    var forceSubMenuRender: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inlineIndent: js.UndefOr[Double] = js.native
+    var inlineIndent: js.UndefOr[Double] = js.undefined
     
-    var itemIcon: js.UndefOr[RenderIconType] = js.native
+    var itemIcon: js.UndefOr[RenderIconType] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var manualRef: js.UndefOr[LegacyFunctionRef] = js.native
+    var manualRef: js.UndefOr[LegacyFunctionRef] = js.undefined
     
-    var mode: js.UndefOr[MenuMode] = js.native
+    var mode: js.UndefOr[MenuMode] = js.undefined
     
-    var motion: js.UndefOr[CSSMotionProps] = js.native
+    var motion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var onClick: js.UndefOr[MenuClickEventHandler] = js.native
+    var onClick: js.UndefOr[MenuClickEventHandler] = js.undefined
     
-    var onDeselect: js.UndefOr[SelectEventHandler] = js.native
+    var onDeselect: js.UndefOr[SelectEventHandler] = js.undefined
     
-    var onDestroy: js.UndefOr[DestroyEventHandler] = js.native
+    var onDestroy: js.UndefOr[DestroyEventHandler] = js.undefined
     
-    var onOpenChange: js.UndefOr[OpenEventHandler] = js.native
+    var onOpenChange: js.UndefOr[OpenEventHandler] = js.undefined
     
-    var onSelect: js.UndefOr[SelectEventHandler] = js.native
+    var onSelect: js.UndefOr[SelectEventHandler] = js.undefined
     
-    var openKeys: js.UndefOr[js.Array[String]] = js.native
+    var openKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var overflowedIndicator: js.UndefOr[ReactNode] = js.native
+    var overflowedIndicator: js.UndefOr[ReactNode] = js.undefined
     
-    var parentMenu: js.UndefOr[ReactInstance] = js.native
+    var parentMenu: js.UndefOr[ReactInstance] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var selectedKeys: js.UndefOr[js.Array[String]] = js.native
+    var selectedKeys: js.UndefOr[js.Array[String]] = js.undefined
     
-    var store: js.UndefOr[MiniStore] = js.native
+    var store: js.UndefOr[MiniStore] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subMenuCloseDelay: js.UndefOr[Double] = js.native
+    var subMenuCloseDelay: js.UndefOr[Double] = js.undefined
     
-    var subMenuOpenDelay: js.UndefOr[Double] = js.native
+    var subMenuOpenDelay: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var triggerSubMenuAction: js.UndefOr[TriggerSubMenuAction] = js.native
+    var triggerSubMenuAction: js.UndefOr[TriggerSubMenuAction] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object SubPopupMenuProps {
     

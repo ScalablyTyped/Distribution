@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides power and energy usage APIs. */
@@ -17,19 +16,27 @@ object Power {
     
     /** The battery is charging. */
     @js.native
-    sealed trait charging extends BatteryStatus
+    sealed trait charging
+      extends StObject
+         with BatteryStatus
     
     /** The battery is discharging. */
     @js.native
-    sealed trait discharging extends BatteryStatus
+    sealed trait discharging
+      extends StObject
+         with BatteryStatus
     
     /** The battery is idle. */
     @js.native
-    sealed trait idle extends BatteryStatus
+    sealed trait idle
+      extends StObject
+         with BatteryStatus
     
     /** The battery or battery controller is not present. */
     @js.native
-    sealed trait notPresent extends BatteryStatus
+    sealed trait notPresent
+      extends StObject
+         with BatteryStatus
   }
   
   @js.native
@@ -41,15 +48,21 @@ object Power {
     
     /** Battery saver is off permanently or the device is plugged in. */
     @js.native
-    sealed trait disabled extends EnergySaverStatus
+    sealed trait disabled
+      extends StObject
+         with EnergySaverStatus
     
     /** Battery saver is off now, but ready to turn on automatically. */
     @js.native
-    sealed trait off extends EnergySaverStatus
+    sealed trait off
+      extends StObject
+         with EnergySaverStatus
     
     /** Battery saver is on. Save energy where possible. */
     @js.native
-    sealed trait on extends EnergySaverStatus
+    sealed trait on
+      extends StObject
+         with EnergySaverStatus
   }
   
   @js.native
@@ -61,38 +74,39 @@ object Power {
     
     /** The device has an adequate power supply. */
     @js.native
-    sealed trait adequate extends PowerSupplyStatus
+    sealed trait adequate
+      extends StObject
+         with PowerSupplyStatus
     
     /** The device has an inadequate power supply. */
     @js.native
-    sealed trait inadequate extends PowerSupplyStatus
+    sealed trait inadequate
+      extends StObject
+         with PowerSupplyStatus
     
     /** The device has no power supply. */
     @js.native
-    sealed trait notPresent extends PowerSupplyStatus
+    sealed trait notPresent
+      extends StObject
+         with PowerSupplyStatus
   }
   
   /** Provides information about your app's background energy usage. */
-  @js.native
   trait BackgroundEnergyManager extends StObject
   
   /** Provides debugging APIs for computing your app’s total energy usage in real time. We recommend using these APIs only for debugging. */
   object Diagnostics {
     
     /** Provides debugging APIs for calculating your app's background energy usage in real time. We recommend using these APIs only for debugging. */
-    @js.native
     trait BackgroundEnergyDiagnostics extends StObject
     
     /** Provides debugging APIs for calculating your app's foreground energy usage in real time. We recommend using these APIs only for debugging. */
-    @js.native
     trait ForegroundEnergyDiagnostics extends StObject
   }
   
   /** Provides information about your app's foreground energy usage. */
-  @js.native
   trait ForegroundEnergyManager extends StObject
   
   /** Provides access to information about a device's battery and power supply status. */
-  @js.native
   trait PowerManager extends StObject
 }

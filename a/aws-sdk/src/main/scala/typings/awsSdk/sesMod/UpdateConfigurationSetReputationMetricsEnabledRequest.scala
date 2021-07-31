@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConfigurationSetReputationMetricsEnabledRequest extends StObject {
   
   /**
     * The name of the configuration set that you want to update.
     */
-  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName = js.native
+  var ConfigurationSetName: typings.awsSdk.sesMod.ConfigurationSetName
   
   /**
     * Describes whether or not Amazon SES will publish reputation metrics for the configuration set, such as bounce and complaint rates, to Amazon CloudWatch.
     */
-  var Enabled: typings.awsSdk.sesMod.Enabled = js.native
+  var Enabled: typings.awsSdk.sesMod.Enabled
 }
 object UpdateConfigurationSetReputationMetricsEnabledRequest {
   

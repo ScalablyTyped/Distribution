@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrantAccessResult extends StObject {
   
   /**
     * A TemporaryCredential object that contains the data needed to log in to the instance by RDP clients, such as the Microsoft Remote Desktop Connection.
     */
-  var TemporaryCredential: js.UndefOr[typings.awsSdk.opsworksMod.TemporaryCredential] = js.native
+  var TemporaryCredential: js.UndefOr[typings.awsSdk.opsworksMod.TemporaryCredential] = js.undefined
 }
 object GrantAccessResult {
   

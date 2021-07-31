@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationDefaults extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait NotificationDefaults extends StObject {
     */
   var apiEmailNotifications: js.UndefOr[
     /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The default notification settings for envelopes sent by using the API.
     */
   var emailNotifications: js.UndefOr[
     /* Contains details about the default notification settings for the envelope notifications that senders and signers receive. */ NotificationDefaultSettings
-  ] = js.native
+  ] = js.undefined
 }
 object NotificationDefaults {
   

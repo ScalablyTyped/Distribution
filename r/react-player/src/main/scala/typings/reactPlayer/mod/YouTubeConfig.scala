@@ -2,17 +2,15 @@ package typings.reactPlayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YouTubeConfig extends StObject {
   
-  var embedOptions: js.UndefOr[js.Object] = js.native
+  var embedOptions: js.UndefOr[js.Object] = js.undefined
   
-  var onUnstarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var onUnstarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var playerVars: js.UndefOr[js.Object] = js.native
+  var playerVars: js.UndefOr[js.Object] = js.undefined
 }
 object YouTubeConfig {
   

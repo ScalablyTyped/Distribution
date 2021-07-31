@@ -6,19 +6,17 @@ import typings.nextAuth.adaptersMod.TypeORMUserModel
 import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session[A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] extends StObject {
   
-  var Account: js.UndefOr[Schema[A]] = js.native
+  var Account: js.UndefOr[Schema[A]] = js.undefined
   
-  var Session: js.UndefOr[ModelS_[S]] = js.native
+  var Session: js.UndefOr[ModelS_[S]] = js.undefined
   
-  var User: js.UndefOr[ModelSchema[U]] = js.native
+  var User: js.UndefOr[ModelSchema[U]] = js.undefined
   
-  var VerificationRequest: js.UndefOr[ModelVR[VR]] = js.native
+  var VerificationRequest: js.UndefOr[ModelVR[VR]] = js.undefined
 }
 object Session {
   
@@ -29,7 +27,7 @@ object Session {
   }
   
   @scala.inline
-  implicit class SessionMutableBuilder[Self <: Session[_, _, _, _], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self with (Session[A, U, S, VR])) extends AnyVal {
+  implicit class SessionMutableBuilder[Self <: Session[?, ?, ?, ?], A /* <: TypeORMAccountModel */, U /* <: TypeORMUserModel */, S /* <: TypeORMSessionModel */, VR /* <: TypeORMVerificationRequestModel */] (val x: Self & (Session[A, U, S, VR])) extends AnyVal {
     
     @scala.inline
     def setAccount(value: Schema[A]): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])

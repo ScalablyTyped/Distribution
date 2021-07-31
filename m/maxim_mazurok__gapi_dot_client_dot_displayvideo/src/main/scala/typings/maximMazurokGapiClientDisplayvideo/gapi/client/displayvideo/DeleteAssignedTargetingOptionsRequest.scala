@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAssignedTargetingOptionsRequest extends StObject {
   
   /** Required. The assigned targeting option IDs to delete. */
-  var assignedTargetingOptionIds: js.UndefOr[js.Array[String]] = js.native
+  var assignedTargetingOptionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Required. Identifies the type of this assigned targeting option. */
-  var targetingType: js.UndefOr[String] = js.native
+  var targetingType: js.UndefOr[String] = js.undefined
 }
 object DeleteAssignedTargetingOptionsRequest {
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.GitGetTreeResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersGitGetTreeEndpoint extends StObject {
   
-  var parameters: GitGetTreeEndpoint = js.native
+  var parameters: GitGetTreeEndpoint
   
-  var request: GitGetTreeRequestOptions = js.native
+  var request: GitGetTreeRequestOptions
   
-  var response: OctokitResponse[GitGetTreeResponseData] = js.native
+  var response: OctokitResponse[GitGetTreeResponseData]
 }
 object ParametersGitGetTreeEndpoint {
   

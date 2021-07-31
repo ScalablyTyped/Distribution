@@ -3,37 +3,33 @@ package typings.ol
 import typings.ol.tilegridTileGridMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilecoordMod {
   
-  @JSImport("ol/tilecoord", "createOrUpdate")
+  @JSImport("ol/tilecoord", JSImport.Namespace)
   @js.native
-  def createOrUpdate(z: Double, x: Double, y: Double): TileCoord = js.native
-  @JSImport("ol/tilecoord", "createOrUpdate")
-  @js.native
-  def createOrUpdate(z: Double, x: Double, y: Double, opt_tileCoord: TileCoord): TileCoord = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ol/tilecoord", "fromKey")
-  @js.native
-  def fromKey(key: String): TileCoord = js.native
+  @scala.inline
+  def createOrUpdate(z: Double, x: Double, y: Double): TileCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[TileCoord]
+  @scala.inline
+  def createOrUpdate(z: Double, x: Double, y: Double, opt_tileCoord: TileCoord): TileCoord = (^.asInstanceOf[js.Dynamic].applyDynamic("createOrUpdate")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], opt_tileCoord.asInstanceOf[js.Any])).asInstanceOf[TileCoord]
   
-  @JSImport("ol/tilecoord", "getKey")
-  @js.native
-  def getKey(tileCoord: TileCoord): String = js.native
+  @scala.inline
+  def fromKey(key: String): TileCoord = ^.asInstanceOf[js.Dynamic].applyDynamic("fromKey")(key.asInstanceOf[js.Any]).asInstanceOf[TileCoord]
   
-  @JSImport("ol/tilecoord", "getKeyZXY")
-  @js.native
-  def getKeyZXY(z: Double, x: Double, y: Double): String = js.native
+  @scala.inline
+  def getKey(tileCoord: TileCoord): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")(tileCoord.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("ol/tilecoord", "hash")
-  @js.native
-  def hash(tileCoord: TileCoord): Double = js.native
+  @scala.inline
+  def getKeyZXY(z: Double, x: Double, y: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getKeyZXY")(z.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ol/tilecoord", "withinExtentAndZ")
-  @js.native
-  def withinExtentAndZ(tileCoord: TileCoord, tileGrid: default): Boolean = js.native
+  @scala.inline
+  def hash(tileCoord: TileCoord): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(tileCoord.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def withinExtentAndZ(tileCoord: TileCoord, tileGrid: default): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("withinExtentAndZ")(tileCoord.asInstanceOf[js.Any], tileGrid.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   type TileCoord = js.Array[Double]
 }

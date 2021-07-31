@@ -4,23 +4,21 @@ import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.http
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.https
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRedirectAllRequestsToMod {
   
-  @js.native
   trait RedirectAllRequestsTo extends StObject {
     
     /**
       * <p>Name of the host where requests will be redirected.</p>
       */
-    var HostName: String = js.native
+    var HostName: String
     
     /**
       * <p>Protocol to use (http, https) when redirecting requests. The default is the protocol that is used in the original request.</p>
       */
-    var Protocol: js.UndefOr[http | https | String] = js.native
+    var Protocol: js.UndefOr[http | https | String] = js.undefined
   }
   object RedirectAllRequestsTo {
     

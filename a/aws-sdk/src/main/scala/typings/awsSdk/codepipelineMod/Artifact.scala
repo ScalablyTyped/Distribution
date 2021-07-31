@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /**
     * The location of an artifact.
     */
-  var location: js.UndefOr[ArtifactLocation] = js.native
+  var location: js.UndefOr[ArtifactLocation] = js.undefined
   
   /**
     * The artifact's name.
     */
-  var name: js.UndefOr[ArtifactName] = js.native
+  var name: js.UndefOr[ArtifactName] = js.undefined
   
   /**
     * The artifact's revision ID. Depending on the type of object, this could be a commit ID (GitHub) or a revision ID (Amazon S3).
     */
-  var revision: js.UndefOr[Revision] = js.native
+  var revision: js.UndefOr[Revision] = js.undefined
 }
 object Artifact {
   

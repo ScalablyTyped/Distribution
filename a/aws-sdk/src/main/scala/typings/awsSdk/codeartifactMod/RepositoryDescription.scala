@@ -2,51 +2,49 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryDescription extends StObject {
   
   /**
     *  The 12-digit account number of the AWS account that manages the repository. 
     */
-  var administratorAccount: js.UndefOr[AccountId] = js.native
+  var administratorAccount: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The Amazon Resource Name (ARN) of the repository. 
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     *  A text description of the repository. 
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     *  The name of the domain that contains the repository. 
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain that contains the repository. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  An array of external connections associated with the repository. 
     */
-  var externalConnections: js.UndefOr[RepositoryExternalConnectionInfoList] = js.native
+  var externalConnections: js.UndefOr[RepositoryExternalConnectionInfoList] = js.undefined
   
   /**
     *  The name of the repository. 
     */
-  var name: js.UndefOr[RepositoryName] = js.native
+  var name: js.UndefOr[RepositoryName] = js.undefined
   
   /**
     *  A list of upstream repositories to associate with the repository. The order of the upstream repositories in the list determines their priority order when AWS CodeArtifact looks for a requested package version. For more information, see Working with upstream repositories. 
     */
-  var upstreams: js.UndefOr[UpstreamRepositoryInfoList] = js.native
+  var upstreams: js.UndefOr[UpstreamRepositoryInfoList] = js.undefined
 }
 object RepositoryDescription {
   

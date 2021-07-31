@@ -2,21 +2,19 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RejectAssignmentRequest extends StObject {
   
   /**
     *  The ID of the assignment. The assignment must correspond to a HIT created by the Requester. 
     */
-  var AssignmentId: EntityId = js.native
+  var AssignmentId: EntityId
   
   /**
     *  A message for the Worker, which the Worker can see in the Status section of the web site. 
     */
-  var RequesterFeedback: String = js.native
+  var RequesterFeedback: String
 }
 object RejectAssignmentRequest {
   

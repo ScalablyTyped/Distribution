@@ -4,86 +4,72 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dotenv-flow", "config")
+  @JSImport("dotenv-flow", JSImport.Namespace)
   @js.native
-  def config(): DotenvLoadOutput = js.native
-  @JSImport("dotenv-flow", "config")
-  @js.native
-  def config(options: DotenvConfigOptions): DotenvLoadOutput = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dotenv-flow", "listDotenvFiles")
-  @js.native
-  def listDotenvFiles(dirname: String): js.Array[String] = js.native
-  @JSImport("dotenv-flow", "listDotenvFiles")
-  @js.native
-  def listDotenvFiles(dirname: String, options: DotenvListFilesOptions): js.Array[String] = js.native
+  @scala.inline
+  def config(): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvLoadOutput]
+  @scala.inline
+  def config(options: DotenvConfigOptions): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
   
-  @JSImport("dotenv-flow", "load")
-  @js.native
-  def load(filenames: String): DotenvLoadOutput = js.native
-  @JSImport("dotenv-flow", "load")
-  @js.native
-  def load(filenames: String, options: DotenvReadFileOptions): DotenvLoadOutput = js.native
-  @JSImport("dotenv-flow", "load")
-  @js.native
-  def load(filenames: js.Array[String]): DotenvLoadOutput = js.native
-  @JSImport("dotenv-flow", "load")
-  @js.native
-  def load(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvLoadOutput = js.native
+  @scala.inline
+  def listDotenvFiles(dirname: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def listDotenvFiles(dirname: String, options: DotenvListFilesOptions): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDotenvFiles")(dirname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("dotenv-flow", "parse")
-  @js.native
-  def parse(filenames: String): DotenvParseOutput = js.native
-  @JSImport("dotenv-flow", "parse")
-  @js.native
-  def parse(filenames: String, options: DotenvReadFileOptions): DotenvParseOutput = js.native
-  @JSImport("dotenv-flow", "parse")
-  @js.native
-  def parse(filenames: js.Array[String]): DotenvParseOutput = js.native
-  @JSImport("dotenv-flow", "parse")
-  @js.native
-  def parse(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvParseOutput = js.native
+  @scala.inline
+  def load(filenames: String): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
+  @scala.inline
+  def load(filenames: String, options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
+  @scala.inline
+  def load(filenames: js.Array[String]): DotenvLoadOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvLoadOutput]
+  @scala.inline
+  def load(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvLoadOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvLoadOutput]
   
-  @JSImport("dotenv-flow", "unload")
-  @js.native
-  def unload(filenames: String): Unit = js.native
-  @JSImport("dotenv-flow", "unload")
-  @js.native
-  def unload(filenames: String, options: DotenvReadFileOptions): Unit = js.native
-  @JSImport("dotenv-flow", "unload")
-  @js.native
-  def unload(filenames: js.Array[String]): Unit = js.native
-  @JSImport("dotenv-flow", "unload")
-  @js.native
-  def unload(filenames: js.Array[String], options: DotenvReadFileOptions): Unit = js.native
+  @scala.inline
+  def parse(filenames: String): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(filenames: String, options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(filenames: js.Array[String]): DotenvParseOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any]).asInstanceOf[DotenvParseOutput]
+  @scala.inline
+  def parse(filenames: js.Array[String], options: DotenvReadFileOptions): DotenvParseOutput = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[DotenvParseOutput]
   
-  @js.native
+  @scala.inline
+  def unload(filenames: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unload(filenames: String, options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def unload(filenames: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def unload(filenames: js.Array[String], options: DotenvReadFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unload")(filenames.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait DotenvConfigOptions extends StObject {
     
     /**
       * Default node environment to use if `process.env.NODE_ENV` is not present.
       */
-    var default_node_env: js.UndefOr[String] = js.native
+    var default_node_env: js.UndefOr[String] = js.undefined
     
     /**
       * Encoding for reading the `.env*` files.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Node environment (development/test/production/etc,.).
       */
-    var node_env: js.UndefOr[String] = js.native
+    var node_env: js.UndefOr[String] = js.undefined
     
     /**
       * Path to `.env*` files directory.
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * In some cases the original "dotenv" library can be used by one of the dependent npm modules.
@@ -93,12 +79,12 @@ object mod {
       *
       * Setting the `purge_dotenv` option to `true` can gracefully fix this issue.
       */
-    var purge_dotenv: js.UndefOr[Boolean] = js.native
+    var purge_dotenv: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Suppress all console outputs except errors and deprecation warnings.
       */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object DotenvConfigOptions {
     
@@ -149,13 +135,12 @@ object mod {
     }
   }
   
-  @js.native
   trait DotenvListFilesOptions extends StObject {
     
     /**
       * Node environment (development/test/production/etc,.).
       */
-    var node_env: js.UndefOr[String] = js.native
+    var node_env: js.UndefOr[String] = js.undefined
   }
   object DotenvListFilesOptions {
     
@@ -176,12 +161,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DotenvLoadOutput extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var parsed: js.UndefOr[DotenvParseOutput] = js.native
+    var parsed: js.UndefOr[DotenvParseOutput] = js.undefined
   }
   object DotenvLoadOutput {
     
@@ -210,13 +194,12 @@ object mod {
   
   type DotenvParseOutput = StringDictionary[String]
   
-  @js.native
   trait DotenvReadFileOptions extends StObject {
     
     /**
       * Encoding for reading the `.env*` files.
       */
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
   }
   object DotenvReadFileOptions {
     

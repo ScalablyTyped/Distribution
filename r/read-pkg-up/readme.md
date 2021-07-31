@@ -11,8 +11,8 @@ Read the closest package.json file
 | Full name          | read-pkg-up |
 | Keywords           | json, read, parse, file, fs, graceful, load, package, find, up, find-up, findup, look-up, look, search, match, resolve, parent, parents, folder, directory, walk, walking, path |
 | # releases         | 5 |
-| # dependents       | 982 |
-| # downloads        | 1184323625 |
+| # dependents       | 1072 |
+| # downloads        | 1435995077 |
 | # stars            | 6 |
 
 ## Links

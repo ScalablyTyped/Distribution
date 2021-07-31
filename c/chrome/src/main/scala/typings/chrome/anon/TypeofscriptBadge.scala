@@ -6,19 +6,17 @@ import typings.chrome.chrome.scriptBadge.ScriptBadgeClickedEvent
 import typings.chrome.chrome.scriptBadge.SetPopupDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofscriptBadge extends StObject {
   
-  def getAttention(details: AttentionDetails): Unit = js.native
+  def getAttention(details: AttentionDetails): Unit
   
-  def getPopup(details: GetPopupDetails, callback: js.Function): Unit = js.native
+  def getPopup(details: GetPopupDetails, callback: js.Function): Unit
   
-  var onClicked: ScriptBadgeClickedEvent = js.native
+  var onClicked: ScriptBadgeClickedEvent
   
-  def setPopup(details: SetPopupDetails): Unit = js.native
+  def setPopup(details: SetPopupDetails): Unit
 }
 object TypeofscriptBadge {
   

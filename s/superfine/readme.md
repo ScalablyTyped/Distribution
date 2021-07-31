@@ -9,10 +9,10 @@ Minimal view layer for building web interfaces.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | superfine |
-| Keywords           | superfine, frontend, vdom, web, app, ui |
+| Keywords           | superfine, frontend, vdom, web, ui |
 | # releases         | 13 |
-| # dependents       | 6 |
-| # downloads        | 8049 |
+| # dependents       | 7 |
+| # downloads        | 7496 |
 | # stars            | 0 |
 
 ## Links

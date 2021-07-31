@@ -4,17 +4,14 @@ import typings.std.HTMLElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wordcloud", JSImport.Namespace)
-  @js.native
-  def apply(elements: js.Array[HTMLElement], options: Options): Unit = js.native
-  @JSImport("wordcloud", JSImport.Namespace)
-  @js.native
-  def apply(elements: HTMLElement, options: Options): Unit = js.native
+  @scala.inline
+  def apply(elements: js.Array[HTMLElement], options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(elements.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(elements: HTMLElement, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(elements.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("wordcloud", JSImport.Namespace)
   @js.native
@@ -30,16 +27,15 @@ object mod {
   @scala.inline
   def miniumFontSize_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("miniumFontSize")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Dimension extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var w: Double = js.native
+    var w: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Dimension {
     
@@ -70,17 +66,16 @@ object mod {
   
   type ListEntry = js.Tuple2[String, Double]
   
-  @js.native
   trait Options extends StObject {
     
     /** callback function to call when abort. */
-    var abort: js.UndefOr[js.Function] = js.native
+    var abort: js.UndefOr[js.Function] = js.undefined
     
     /** If the call with in the loop takes more than x milliseconds (and blocks the browser), abort immediately. */
-    var abortThreshold: js.UndefOr[Double] = js.native
+    var abortThreshold: js.UndefOr[Double] = js.undefined
     
     /** color of the background. */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /**
       * for DOM clouds, allows the user to define the class of the span elements.Can be a normal class
@@ -96,17 +91,17 @@ object mod {
           /* theta */ Double, 
           String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** paint the entire canvas with background color and consider it empty before start. */
-    var clearCanvas: js.UndefOr[Boolean] = js.native
+    var clearCanvas: js.UndefOr[Boolean] = js.undefined
     
     /**
       * callback to call when the user clicks on a word. The callback will take arugments
       * callback(item, dimension,  event), where event is the original click event. This only will work on HTML5
       * canvas word clouds.
       */
-    var click: js.UndefOr[EventCallback] = js.native
+    var click: js.UndefOr[EventCallback] = js.undefined
     
     /**
       * color of the text, can be any CSS color, or a callback(word, weight, fontSize, distance, theta)
@@ -122,65 +117,65 @@ object mod {
           /* theta */ Double, 
           String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /** visualize the grid by draw squares to mask the drawn areas. */
-    var drawMask: js.UndefOr[Boolean] = js.native
+    var drawMask: js.UndefOr[Boolean] = js.undefined
     
     /** set to true to allow word being draw partly outside of the canvas. Allow word bigger than the size of the canvas to be drawn. */
-    var drawOutOfBound: js.UndefOr[Boolean] = js.native
+    var drawOutOfBound: js.UndefOr[Boolean] = js.undefined
     
     /** degree of "flatness" of the shape wordcloud2.js should draw. */
-    var ellipticity: js.UndefOr[Double] = js.native
+    var ellipticity: js.UndefOr[Double] = js.undefined
     
     /** font to use. */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** font weight to use, e.g. normal, bold or 600 */
-    var fontWeight: js.UndefOr[String | Double] = js.native
+    var fontWeight: js.UndefOr[String | Double] = js.undefined
     
     /**
       * size of the grid in pixels for marking the availability of the canvas — the larger the grid size,
       * the  bigger the gap between words.
       */
-    var gridSize: js.UndefOr[Double] = js.native
+    var gridSize: js.UndefOr[Double] = js.undefined
     
     /**
       * callback to call when the cursor enters or leaves a region occupied by a word. The callback will take
       * arugments callback(item, dimension, event), where event is the original mousemove event. This only will work
       * on HTML5 canvas word clouds.
       */
-    var hover: js.UndefOr[EventCallback] = js.native
+    var hover: js.UndefOr[EventCallback] = js.undefined
     
     /**
       * List of words/text to paint on the canvas in a 2-d array, in the form of [word, size],
       * e.g. [['foo', 12] , ['bar', 6]].
       */
-    var list: js.UndefOr[js.Array[_ | ListEntry]] = js.native
+    var list: js.UndefOr[js.Array[js.Any | ListEntry]] = js.undefined
     
     /** color of the mask squares. */
-    var maskColor: js.UndefOr[String] = js.native
+    var maskColor: js.UndefOr[String] = js.undefined
     
     /** width of the gaps between mask squares. */
-    var maskGapWidth: js.UndefOr[Double] = js.native
+    var maskGapWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * If the word should rotate, the maximum rotation (in rad) the text should rotate. Set the two value equal
       * to  keep all text in one angle.
       */
-    var maxRotation: js.UndefOr[Double] = js.native
+    var maxRotation: js.UndefOr[Double] = js.undefined
     
     /** If the word should rotate, the minimum rotation (in rad) the text should rotate. */
-    var minRotation: js.UndefOr[Double] = js.native
+    var minRotation: js.UndefOr[Double] = js.undefined
     
     /** minimum font size to draw on the canvas. */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /** origin of the “cloud” in [x, y]. */
-    var origin: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var origin: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     /** Probability for the word to rotate. Set the number to 1 to always rotate. */
-    var rotateRatio: js.UndefOr[Double] = js.native
+    var rotateRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * The shape of the "cloud" to draw. Can be any polar equation represented as a callback function, or a
@@ -188,17 +183,17 @@ object mod {
       * known polar equation), diamond (alias of square), triangle-forward, triangle, (alias of triangle-upright,
       * pentagon, and star.
       */
-    var shape: js.UndefOr[String | (js.Function1[/* theta */ Double, Double])] = js.native
+    var shape: js.UndefOr[String | (js.Function1[/* theta */ Double, Double])] = js.undefined
     
     /** Shuffle the points to draw so the result will be different each time for the same list and settings. */
-    var shuffle: js.UndefOr[Boolean] = js.native
+    var shuffle: js.UndefOr[Boolean] = js.undefined
     
     /** Wait for x milliseconds before start drawn the next item using setTimeout. */
     @JSName("wait")
-    var wait_FOptions: js.UndefOr[Double] = js.native
+    var wait_FOptions: js.UndefOr[Double] = js.undefined
     
     /** function to call or number to multiply for size of each word in the list. */
-    var weightFactor: js.UndefOr[Double | (js.Function1[/* weight */ Double, Double])] = js.native
+    var weightFactor: js.UndefOr[Double | (js.Function1[/* weight */ Double, Double])] = js.undefined
   }
   object Options {
     
@@ -324,7 +319,7 @@ object mod {
       def setHoverUndefined: Self = StObject.set(x, "hover", js.undefined)
       
       @scala.inline
-      def setList(value: js.Array[_ | ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      def setList(value: js.Array[js.Any | ListEntry]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListUndefined: Self = StObject.set(x, "list", js.undefined)

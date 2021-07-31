@@ -8,51 +8,49 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.bottom
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabProps extends StObject {
   
-  var activeKey: js.UndefOr[String | Double] = js.native
+  var activeKey: js.UndefOr[String | Double] = js.undefined
   
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var defaultActiveKey: js.UndefOr[String | Double] = js.native
+  var defaultActiveKey: js.UndefOr[String | Double] = js.undefined
   
-  var distanceToChangeTab: js.UndefOr[Double] = js.native
+  var distanceToChangeTab: js.UndefOr[Double] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* activeKey */ js.UndefOr[Double | String], Unit]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* activeKey */ js.UndefOr[Double | String], Unit]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var swipeable: js.UndefOr[Boolean] = js.native
+  var swipeable: js.UndefOr[Boolean] = js.undefined
   
-  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabActiveTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var tabBarBackgroundColor: js.UndefOr[String] = js.native
+  var tabBarBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var tabBarPosition: js.UndefOr[top | bottom] = js.native
+  var tabBarPosition: js.UndefOr[top | bottom] = js.undefined
   
-  var tabBarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabBarStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabBarUnderlineStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabContentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabContentStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabDefaultColor: js.UndefOr[String] = js.native
+  var tabDefaultColor: js.UndefOr[String] = js.undefined
   
-  var tabNavAccessibilityLabel: js.UndefOr[String] = js.native
+  var tabNavAccessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var tabTextStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var tabsContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var tabsContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var useViewPagerOnAndroid: js.UndefOr[Boolean] = js.native
+  var useViewPagerOnAndroid: js.UndefOr[Boolean] = js.undefined
 }
 object TabProps {
   

@@ -2,51 +2,49 @@ package typings.playcanvas.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddressU extends StObject {
   
-  var addressU: js.UndefOr[Double] = js.native
+  var addressU: js.UndefOr[Double] = js.undefined
   
-  var addressV: js.UndefOr[Double] = js.native
+  var addressV: js.UndefOr[Double] = js.undefined
   
-  var addressW: js.UndefOr[Double] = js.native
+  var addressW: js.UndefOr[Double] = js.undefined
   
-  var anisotropy: js.UndefOr[Double] = js.native
+  var anisotropy: js.UndefOr[Double] = js.undefined
   
-  var compareFunc: js.UndefOr[Double] = js.native
+  var compareFunc: js.UndefOr[Double] = js.undefined
   
-  var compareOnRead: js.UndefOr[Boolean] = js.native
+  var compareOnRead: js.UndefOr[Boolean] = js.undefined
   
-  var cubemap: js.UndefOr[Boolean] = js.native
+  var cubemap: js.UndefOr[Boolean] = js.undefined
   
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
-  var fixCubemapSeams: js.UndefOr[Boolean] = js.native
+  var fixCubemapSeams: js.UndefOr[Boolean] = js.undefined
   
-  var flipY: js.UndefOr[Boolean] = js.native
+  var flipY: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[Double] = js.native
+  var format: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var magFilter: js.UndefOr[Double] = js.native
+  var magFilter: js.UndefOr[Double] = js.undefined
   
-  var minFilter: js.UndefOr[Double] = js.native
+  var minFilter: js.UndefOr[Double] = js.undefined
   
-  var mipmaps: js.UndefOr[Boolean] = js.native
+  var mipmaps: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var premultiplyAlpha: js.UndefOr[Boolean] = js.native
+  var premultiplyAlpha: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var volume: js.UndefOr[Boolean] = js.native
+  var volume: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AddressU {
   

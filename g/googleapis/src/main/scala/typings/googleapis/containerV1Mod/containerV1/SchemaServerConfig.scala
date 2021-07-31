@@ -2,39 +2,37 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Kubernetes Engine service configuration.
   */
-@js.native
 trait SchemaServerConfig extends StObject {
   
   /**
     * Version of Kubernetes the service deploys by default.
     */
-  var defaultClusterVersion: js.UndefOr[String] = js.native
+  var defaultClusterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Default image type.
     */
-  var defaultImageType: js.UndefOr[String] = js.native
+  var defaultImageType: js.UndefOr[String] = js.undefined
   
   /**
     * List of valid image types.
     */
-  var validImageTypes: js.UndefOr[js.Array[String]] = js.native
+  var validImageTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of valid master versions.
     */
-  var validMasterVersions: js.UndefOr[js.Array[String]] = js.native
+  var validMasterVersions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * List of valid node upgrade target versions.
     */
-  var validNodeVersions: js.UndefOr[js.Array[String]] = js.native
+  var validNodeVersions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaServerConfig {
   

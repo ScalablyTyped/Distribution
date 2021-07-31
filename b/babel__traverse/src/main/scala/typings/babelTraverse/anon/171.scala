@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.CatchClause
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `171` extends StObject {
   
-  var `type`: CatchClause = js.native
+  var `type`: CatchClause
 }
 object `171` {
   
   @scala.inline
-  def apply(`type`: CatchClause): `171` = {
+  def apply(): `171` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CatchClause")
     __obj.asInstanceOf[`171`]
   }
   

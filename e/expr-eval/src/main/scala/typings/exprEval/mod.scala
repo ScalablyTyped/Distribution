@@ -5,7 +5,6 @@ import typings.exprEval.anon.Abs
 import typings.exprEval.anon.WithMembers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,16 +28,17 @@ object mod {
   /* static members */
   object Parser {
     
-    @JSImport("expr-eval", "Parser.evaluate")
+    @JSImport("expr-eval", "Parser")
     @js.native
-    def evaluate(expression: String): Double = js.native
-    @JSImport("expr-eval", "Parser.evaluate")
-    @js.native
-    def evaluate(expression: String, values: Value): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("expr-eval", "Parser.parse")
-    @js.native
-    def parse(expression: String): Expression = js.native
+    @scala.inline
+    def evaluate(expression: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def evaluate(expression: String, values: Value): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("evaluate")(expression.asInstanceOf[js.Any], values.asInstanceOf[js.Any])).asInstanceOf[Double]
+    
+    @scala.inline
+    def parse(expression: String): Expression = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(expression.asInstanceOf[js.Any]).asInstanceOf[Expression]
   }
   
   @js.native
@@ -64,12 +64,11 @@ object mod {
     def variables(options: WithMembers): js.Array[String] = js.native
   }
   
-  @js.native
   trait ParserOptions extends StObject {
     
-    var allowMemberAccess: js.UndefOr[Boolean] = js.native
+    var allowMemberAccess: js.UndefOr[Boolean] = js.undefined
     
-    var operators: js.UndefOr[Abs] = js.native
+    var operators: js.UndefOr[Abs] = js.undefined
   }
   object ParserOptions {
     

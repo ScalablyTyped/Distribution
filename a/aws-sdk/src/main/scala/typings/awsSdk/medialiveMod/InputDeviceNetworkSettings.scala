@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDeviceNetworkSettings extends StObject {
   
   /**
     * The DNS addresses of the input device.
     */
-  var DnsAddresses: js.UndefOr[listOfString] = js.native
+  var DnsAddresses: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The network gateway IP address.
     */
-  var Gateway: js.UndefOr[string] = js.native
+  var Gateway: js.UndefOr[string] = js.undefined
   
   /**
     * The IP address of the input device.
     */
-  var IpAddress: js.UndefOr[string] = js.native
+  var IpAddress: js.UndefOr[string] = js.undefined
   
   /**
     * Specifies whether the input device has been configured (outside of MediaLive) to use a dynamic IP address assignment (DHCP) or a static IP address.
     */
-  var IpScheme: js.UndefOr[InputDeviceIpScheme] = js.native
+  var IpScheme: js.UndefOr[InputDeviceIpScheme] = js.undefined
   
   /**
     * The subnet mask of the input device.
     */
-  var SubnetMask: js.UndefOr[string] = js.native
+  var SubnetMask: js.UndefOr[string] = js.undefined
 }
 object InputDeviceNetworkSettings {
   

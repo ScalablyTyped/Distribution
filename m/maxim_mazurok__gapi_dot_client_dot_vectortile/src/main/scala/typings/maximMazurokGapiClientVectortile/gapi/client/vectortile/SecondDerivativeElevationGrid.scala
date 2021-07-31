@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientVectortile.gapi.client.vectortile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecondDerivativeElevationGrid extends StObject {
   
   /** A multiplier applied to the elements in the encoded data to extract the actual altitudes in meters. */
-  var altitudeMultiplier: js.UndefOr[Double] = js.native
+  var altitudeMultiplier: js.UndefOr[Double] = js.undefined
   
   /** The number of columns included in the encoded elevation data (i.e. the horizontal resolution of the grid). */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /**
     * A stream of elements each representing a point on the tile running across each row from left to right, top to bottom. There will be precisely horizontal_resolution *
@@ -24,10 +22,10 @@ trait SecondDerivativeElevationGrid extends StObject {
     * ------------------------------------------------------------------------| | Bit 0 | Bit 1-3 | | Terminator| Least significant 3 bits of absolute error |
     * ------------------------------------------------------------------------|
     */
-  var encodedData: js.UndefOr[String] = js.native
+  var encodedData: js.UndefOr[String] = js.undefined
   
   /** The number of rows included in the encoded elevation data (i.e. the vertical resolution of the grid). */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
 }
 object SecondDerivativeElevationGrid {
   

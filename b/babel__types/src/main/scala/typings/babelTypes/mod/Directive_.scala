@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.Directive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Directive_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
   @JSName("type")
-  var type_Directive_ : Directive = js.native
+  var type_Directive_ : Directive
   
-  var value: DirectiveLiteral_ = js.native
+  var value: DirectiveLiteral_
 }
 object Directive_ {
   
   @scala.inline
-  def apply(`type`: Directive, value: DirectiveLiteral_): Directive_ = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: DirectiveLiteral_): Directive_ = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("Directive")
     __obj.asInstanceOf[Directive_]
   }
   

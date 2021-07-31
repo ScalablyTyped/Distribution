@@ -5,7 +5,6 @@ import typings.reactNativeNavigation.uniqueIdProviderMod.UniqueIdProvider
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commandsObserverMod {
@@ -17,7 +16,7 @@ object commandsObserverMod {
     
     var listeners: js.Any = js.native
     
-    def notify(commandName: String, params: Record[String, _]): Unit = js.native
+    def notify(commandName: String, params: Record[String, js.Any]): Unit = js.native
     
     def register(listener: CommandsListener): EventSubscription = js.native
     

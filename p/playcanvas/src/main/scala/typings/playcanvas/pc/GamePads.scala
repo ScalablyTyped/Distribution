@@ -2,13 +2,11 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Input handler for accessing GamePad input.
   */
-@js.native
 trait GamePads extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait GamePads extends StObject {
     * @param axes - The axes to get the value of, use constants pc.PAD_L_STICK_X, etc.
     * @returns The value of the axis between -1 and 1.
     */
-  def getAxis(index: Double, axes: Double): Double = js.native
+  def getAxis(index: Double, axes: Double): Double
   
   /**
     * Returns true if the button on the pad requested is pressed.
@@ -25,7 +23,7 @@ trait GamePads extends StObject {
     * @param button - The button to test, use constants pc.PAD_FACE_1, etc.
     * @returns True if the button is pressed.
     */
-  def isPressed(index: Double, button: Double): Boolean = js.native
+  def isPressed(index: Double, button: Double): Boolean
   
   /**
     * Poll for the latest data from the gamepad API.
@@ -34,13 +32,13 @@ trait GamePads extends StObject {
     * var pads = gamepads.poll();
     * @returns An array of gamepads and mappings for the model of gamepad that is attached.
     */
-  def poll(): js.Array[js.Object] = js.native
+  def poll(): js.Array[js.Object]
   
   /**
     * Update the current and previous state of the gamepads. This must be called every frame for wasPressed()
     * to work.
     */
-  def update(): Unit = js.native
+  def update(): Unit
   
   /**
     * Returns true if the button was pressed since the last frame.
@@ -48,7 +46,7 @@ trait GamePads extends StObject {
     * @param button - The button to test, use constants pc.PAD_FACE_1, etc.
     * @returns True if the button was pressed since the last frame.
     */
-  def wasPressed(index: Double, button: Double): Boolean = js.native
+  def wasPressed(index: Double, button: Double): Boolean
 }
 object GamePads {
   

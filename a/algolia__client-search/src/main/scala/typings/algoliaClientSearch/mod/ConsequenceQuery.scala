@@ -3,21 +3,19 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaClientSearch.anon.Delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsequenceQuery extends StObject {
   
   /**
     * List of edits.
     */
-  val edits: js.UndefOr[js.Array[Delete]] = js.native
+  val edits: js.UndefOr[js.Array[Delete]] = js.undefined
   
   /**
     * List of removes.
     */
-  val remove: js.UndefOr[js.Array[String]] = js.native
+  val remove: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConsequenceQuery {
   

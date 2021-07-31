@@ -5,32 +5,33 @@ import typings.redux.mod.AnyAction
 import typings.redux.mod.Dispatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("redux-async-queue", JSImport.Default)
+  @JSImport("redux-async-queue", JSImport.Namespace)
   @js.native
-  def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, _], _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AsyncQueueAction[T /* <: Action[_] */] extends StObject {
+  @scala.inline
+  def default(): js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* next */ js.Function1[/* action */ AnyAction, js.Any], js.Any]]
+  
+  trait AsyncQueueAction[T /* <: Action[js.Any] */] extends StObject {
     
-    def callback(next: js.Function0[Unit], dispatch: Dispatch[T]): Unit = js.native
+    def callback(next: js.Function0[Unit], dispatch: Dispatch[T]): Unit
     
-    var queue: String = js.native
+    var queue: String
   }
   object AsyncQueueAction {
     
     @scala.inline
-    def apply[T /* <: Action[_] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
+    def apply[T /* <: Action[js.Any] */](callback: (js.Function0[Unit], Dispatch[T]) => Unit, queue: String): AsyncQueueAction[T] = {
       val __obj = js.Dynamic.literal(callback = js.Any.fromFunction2(callback), queue = queue.asInstanceOf[js.Any])
       __obj.asInstanceOf[AsyncQueueAction[T]]
     }
     
     @scala.inline
-    implicit class AsyncQueueActionMutableBuilder[Self <: AsyncQueueAction[_], T /* <: Action[_] */] (val x: Self with AsyncQueueAction[T]) extends AnyVal {
+    implicit class AsyncQueueActionMutableBuilder[Self <: AsyncQueueAction[?], T /* <: Action[js.Any] */] (val x: Self & AsyncQueueAction[T]) extends AnyVal {
       
       @scala.inline
       def setCallback(value: (js.Function0[Unit], Dispatch[T]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))

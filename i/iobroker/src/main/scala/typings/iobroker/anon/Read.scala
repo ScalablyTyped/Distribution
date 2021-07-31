@@ -2,20 +2,18 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Read extends StObject {
   
   /** The target state id */
-  var id: String = js.native
+  var id: String
   
   /** An optional conversion function when reading, e.g. `"(val − 32) * 5/9"` */
-  var read: js.UndefOr[String] = js.native
+  var read: js.UndefOr[String] = js.undefined
   
   /** An optional conversion function when reading, e.g. `"(val * 9/5) + 32"` */
-  var write: js.UndefOr[String] = js.native
+  var write: js.UndefOr[String] = js.undefined
 }
 object Read {
   

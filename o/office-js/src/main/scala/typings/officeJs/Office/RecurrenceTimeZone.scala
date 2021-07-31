@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,18 +15,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait RecurrenceTimeZone extends StObject {
   
   /**
     * Represents the name of the recurrence time zone.
     */
-  var name: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String = js.native
+  var name: typings.officeJs.Office.MailboxEnums.RecurrenceTimeZone | String
   
   /**
     * Integer value representing the difference in minutes between the local time zone and UTC at the date that the meeting series began.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
 }
 object RecurrenceTimeZone {
   

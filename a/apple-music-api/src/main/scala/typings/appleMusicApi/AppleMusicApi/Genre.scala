@@ -4,24 +4,24 @@ import typings.appleMusicApi.anon.Name
 import typings.appleMusicApi.appleMusicApiStrings.genres
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/genre
-@js.native
-trait Genre extends Resource {
+trait Genre
+  extends StObject
+     with Resource {
   
-  var attributes: Name = js.native
+  var attributes: Name
   
   @JSName("type")
-  var type_Genre: genres = js.native
+  var type_Genre: genres
 }
 object Genre {
   
   @scala.inline
-  def apply(attributes: Name, id: String, `type`: genres): Genre = {
+  def apply(attributes: Name, id: String): Genre = {
     val __obj = js.Dynamic.literal(attributes = attributes.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("genres")
     __obj.asInstanceOf[Genre]
   }
   

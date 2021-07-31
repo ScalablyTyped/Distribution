@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.createPullRequestExceptionsUnionMod.CreatePullRequestExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMaximumOpenPullRequestsExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumOpenPullRequestsExceededExceptionDetails> * / any */ @js.native
-  trait MaximumOpenPullRequestsExceededException extends CreatePullRequestExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_MaximumOpenPullRequestsExceededExceptionDetails> * / any */ trait MaximumOpenPullRequestsExceededException
+    extends StObject
+       with CreatePullRequestExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumOpenPullRequestsExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumOpenPullRequestsExceededException
   }
   object MaximumOpenPullRequestsExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.MaximumOpenPullRequestsExceededException
-    ): MaximumOpenPullRequestsExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): MaximumOpenPullRequestsExceededException = {
+      val __obj = js.Dynamic.literal(name = "MaximumOpenPullRequestsExceededException")
       __obj.asInstanceOf[MaximumOpenPullRequestsExceededException]
     }
     
@@ -34,6 +32,5 @@ object typesMaximumOpenPullRequestsExceededExceptionMod {
     }
   }
   
-  @js.native
   trait MaximumOpenPullRequestsExceededExceptionDetails extends StObject
 }

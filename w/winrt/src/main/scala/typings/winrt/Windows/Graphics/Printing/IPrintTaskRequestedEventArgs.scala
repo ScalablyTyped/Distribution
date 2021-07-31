@@ -2,13 +2,11 @@ package typings.winrt.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintTaskRequestedEventArgs extends StObject {
   
-  var request: PrintTaskRequest = js.native
+  var request: PrintTaskRequest
 }
 object IPrintTaskRequestedEventArgs {
   

@@ -2,51 +2,49 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScalingPlan extends StObject {
   
   /**
     * The application source.
     */
-  var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource = js.native
+  var ApplicationSource: typings.awsSdk.autoscalingplansMod.ApplicationSource
   
   /**
     * The Unix time stamp when the scaling plan was created.
     */
-  var CreationTime: js.UndefOr[TimestampType] = js.native
+  var CreationTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The scaling instructions.
     */
-  var ScalingInstructions: typings.awsSdk.autoscalingplansMod.ScalingInstructions = js.native
+  var ScalingInstructions: typings.awsSdk.autoscalingplansMod.ScalingInstructions
   
   /**
     * The name of the scaling plan.
     */
-  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName = js.native
+  var ScalingPlanName: typings.awsSdk.autoscalingplansMod.ScalingPlanName
   
   /**
     * The version number of the scaling plan.
     */
-  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion = js.native
+  var ScalingPlanVersion: typings.awsSdk.autoscalingplansMod.ScalingPlanVersion
   
   /**
     * The status of the scaling plan.    Active - The scaling plan is active.    ActiveWithProblems - The scaling plan is active, but the scaling configuration for one or more resources could not be applied.    CreationInProgress - The scaling plan is being created.    CreationFailed - The scaling plan could not be created.    DeletionInProgress - The scaling plan is being deleted.    DeletionFailed - The scaling plan could not be deleted.    UpdateInProgress - The scaling plan is being updated.    UpdateFailed - The scaling plan could not be updated.  
     */
-  var StatusCode: ScalingPlanStatusCode = js.native
+  var StatusCode: ScalingPlanStatusCode
   
   /**
     * A simple message about the current status of the scaling plan.
     */
-  var StatusMessage: js.UndefOr[XmlString] = js.native
+  var StatusMessage: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The Unix time stamp when the scaling plan entered the current status.
     */
-  var StatusStartTime: js.UndefOr[TimestampType] = js.native
+  var StatusStartTime: js.UndefOr[TimestampType] = js.undefined
 }
 object ScalingPlan {
   

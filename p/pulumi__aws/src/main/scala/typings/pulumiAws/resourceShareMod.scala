@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceShareMod {
@@ -25,7 +24,7 @@ object resourceShareMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ResourceShareArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ResourceShareArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -51,6 +50,10 @@ object resourceShareMod {
   /* static members */
   object ResourceShare {
     
+    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceShare resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,45 +63,39 @@ object resourceShareMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareState): ResourceShare = js.native
-    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareState, opts: CustomResourceOptions): ResourceShare = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareState): ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceShare]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareState, opts: CustomResourceOptions): ResourceShare = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShare]
     
     /**
       * Returns true if the given object is an instance of ResourceShare.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram/resourceShare", "ResourceShare.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShare.ResourceShare */ Boolean]
   }
   
-  @js.native
   trait ResourceShareArgs extends StObject {
     
     /**
       * Indicates whether principals outside your organization can be associated with a resource share.
       */
-    val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.native
+    val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the resource share.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource share.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResourceShareArgs {
     
@@ -131,28 +128,27 @@ object resourceShareMod {
     }
   }
   
-  @js.native
   trait ResourceShareState extends StObject {
     
     /**
       * Indicates whether principals outside your organization can be associated with a resource share.
       */
-    val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.native
+    val allowExternalPrincipals: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the resource share.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the resource share.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource share.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ResourceShareState {
     

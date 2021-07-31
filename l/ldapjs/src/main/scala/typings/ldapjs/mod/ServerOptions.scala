@@ -2,17 +2,15 @@ package typings.ldapjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
-  var certificate: js.UndefOr[js.Any] = js.native
+  var certificate: js.UndefOr[js.Any] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var log: js.UndefOr[js.Any] = js.native
+  var log: js.UndefOr[js.Any] = js.undefined
 }
 object ServerOptions {
   

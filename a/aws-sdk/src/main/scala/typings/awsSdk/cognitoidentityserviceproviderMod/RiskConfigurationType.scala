@@ -2,41 +2,39 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RiskConfigurationType extends StObject {
   
   /**
     * The account takeover risk configuration object including the NotifyConfiguration object and Actions to take in the case of an account takeover.
     */
-  var AccountTakeoverRiskConfiguration: js.UndefOr[AccountTakeoverRiskConfigurationType] = js.native
+  var AccountTakeoverRiskConfiguration: js.UndefOr[AccountTakeoverRiskConfigurationType] = js.undefined
   
   /**
     * The app client ID.
     */
-  var ClientId: js.UndefOr[ClientIdType] = js.native
+  var ClientId: js.UndefOr[ClientIdType] = js.undefined
   
   /**
     * The compromised credentials risk configuration object including the EventFilter and the EventAction 
     */
-  var CompromisedCredentialsRiskConfiguration: js.UndefOr[CompromisedCredentialsRiskConfigurationType] = js.native
+  var CompromisedCredentialsRiskConfiguration: js.UndefOr[CompromisedCredentialsRiskConfigurationType] = js.undefined
   
   /**
     * The last modified date.
     */
-  var LastModifiedDate: js.UndefOr[DateType] = js.native
+  var LastModifiedDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The configuration to override the risk decision.
     */
-  var RiskExceptionConfiguration: js.UndefOr[RiskExceptionConfigurationType] = js.native
+  var RiskExceptionConfiguration: js.UndefOr[RiskExceptionConfigurationType] = js.undefined
   
   /**
     * The user pool ID.
     */
-  var UserPoolId: js.UndefOr[UserPoolIdType] = js.native
+  var UserPoolId: js.UndefOr[UserPoolIdType] = js.undefined
 }
 object RiskConfigurationType {
   

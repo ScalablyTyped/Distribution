@@ -2,21 +2,19 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * Unique identifier of the self-hosted runner.
     */
-  var runner_id: Double = js.native
+  var runner_id: Double
 }
 object EnterpriseAdminGetSelfHostedRunnerForEnterpriseEndpoint {
   

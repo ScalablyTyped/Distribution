@@ -3,17 +3,15 @@ package typings.abortableIterator
 import typings.std.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Options[T] extends StObject {
     
-    var options: js.UndefOr[typings.abortableIterator.mod.Options[T]] = js.native
+    var options: js.UndefOr[typings.abortableIterator.mod.Options[T]] = js.undefined
     
-    var signal: AbortSignal = js.native
+    var signal: AbortSignal
   }
   object Options {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setOptions(value: typings.abortableIterator.mod.Options[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

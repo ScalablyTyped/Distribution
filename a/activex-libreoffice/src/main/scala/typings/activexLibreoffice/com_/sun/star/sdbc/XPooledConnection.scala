@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,22 +26,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * </p>
   * @@see com::sun::star::sdbc::XConnection
   */
-@js.native
-trait XPooledConnection extends XInterface {
+trait XPooledConnection
+  extends StObject
+     with XInterface {
   
   /**
     * return the connection which is pooled
     * @returns the pooled {@link Connection} object
     * @throws SQLException if a database access error occurs.
     */
-  val Connection: XConnection = js.native
+  val Connection: XConnection
   
   /**
     * return the connection which is pooled
     * @returns the pooled {@link Connection} object
     * @throws SQLException if a database access error occurs.
     */
-  def getConnection(): XConnection = js.native
+  def getConnection(): XConnection
 }
 object XPooledConnection {
   

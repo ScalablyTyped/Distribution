@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SubscribedSku extends Entity {
+trait SubscribedSku
+  extends StObject
+     with Entity {
   
   // For example, 'User' or 'Company'.
-  var appliesTo: js.UndefOr[NullableOption[String]] = js.native
+  var appliesTo: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Possible values are: Enabled, Warning, Suspended, Deleted, LockedOut.
-  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.native
+  var capabilityStatus: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The number of licenses that have been assigned.
-  var consumedUnits: js.UndefOr[NullableOption[Double]] = js.native
+  var consumedUnits: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Information about the number and status of prepaid licenses.
-  var prepaidUnits: js.UndefOr[NullableOption[LicenseUnitsDetail]] = js.native
+  var prepaidUnits: js.UndefOr[NullableOption[LicenseUnitsDetail]] = js.undefined
   
   // Information about the service plans that are available with the SKU. Not nullable
-  var servicePlans: js.UndefOr[js.Array[ServicePlanInfo]] = js.native
+  var servicePlans: js.UndefOr[js.Array[ServicePlanInfo]] = js.undefined
   
   // The unique identifier (GUID) for the service SKU.
-  var skuId: js.UndefOr[NullableOption[String]] = js.native
+  var skuId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The SKU part number; for example: 'AAD_PREMIUM' or 'RMSBASIC'. To get a list of commercial subscriptions that an
     * organization has acquired, see List subscribedSkus.
     */
-  var skuPartNumber: js.UndefOr[NullableOption[String]] = js.native
+  var skuPartNumber: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SubscribedSku {
   

@@ -3,25 +3,23 @@ package typings.bingmaps.Microsoft.Maps.Directions
 import typings.bingmaps.Microsoft.Maps.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWaypointOptions extends StObject {
   
   /** 
     * The address string of the waypoint. For example, the following strings are valid for this parameter: "Seattle", "1 Microsoft Way, Redmond, WA". Either the address or location property must be specified.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /** 
     * A boolean indicating whether the waypoint is a via point. A via point is a point along the route that is not a stop point. Set this property to
     * true if you just want the route to pass through this location. Default: false
     */
-  var isViaPoint: js.UndefOr[Boolean] = js.native
+  var isViaPoint: js.UndefOr[Boolean] = js.undefined
   
   /** The location of the waypoint. Either the address or location property must be specified. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
 }
 object IWaypointOptions {
   

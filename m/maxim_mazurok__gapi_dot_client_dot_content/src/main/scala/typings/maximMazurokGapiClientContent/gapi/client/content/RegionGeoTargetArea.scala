@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionGeoTargetArea extends StObject {
   
   /** Required. A non-empty list of [location IDs](https://developers.google.com/adwords/api/docs/appendix/geotargeting). They must all be of the same location type (e.g., state). */
-  var geotargetCriteriaIds: js.UndefOr[js.Array[String]] = js.native
+  var geotargetCriteriaIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RegionGeoTargetArea {
   

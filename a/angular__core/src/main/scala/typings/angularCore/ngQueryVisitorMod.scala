@@ -9,7 +9,6 @@ import typings.typescript.mod.SourceFile
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngQueryVisitorMod {
@@ -44,26 +43,25 @@ object ngQueryVisitorMod {
     var visitPropertyDeclaration: js.Any = js.native
   }
   
-  @js.native
   trait ClassMetadata extends StObject {
     
     /** List of class declarations that derive from the given class. */
-    var derivedClasses: js.Array[ClassDeclaration] = js.native
+    var derivedClasses: js.Array[ClassDeclaration]
     
     /** List of property names that declare an Angular input within the given class. */
-    var ngInputNames: js.Array[String] = js.native
+    var ngInputNames: js.Array[String]
     
     /** Super class of the given class. */
-    var superClass: ClassDeclaration | Null = js.native
+    var superClass: ClassDeclaration | Null
     
     /** Component template that belongs to that class if present. */
-    var template: js.UndefOr[ResolvedTemplate] = js.native
+    var template: js.UndefOr[ResolvedTemplate] = js.undefined
   }
   object ClassMetadata {
     
     @scala.inline
     def apply(derivedClasses: js.Array[ClassDeclaration], ngInputNames: js.Array[String]): ClassMetadata = {
-      val __obj = js.Dynamic.literal(derivedClasses = derivedClasses.asInstanceOf[js.Any], ngInputNames = ngInputNames.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(derivedClasses = derivedClasses.asInstanceOf[js.Any], ngInputNames = ngInputNames.asInstanceOf[js.Any], superClass = null)
       __obj.asInstanceOf[ClassMetadata]
     }
     

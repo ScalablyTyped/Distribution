@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.CollectionProp
 import typings.contentfulManagement.commonTypesMod.DefaultElements
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object teamMembershipMod {
   
-  @JSImport("contentful-management/dist/typings/entities/team-membership", "wrapTeamMembership")
+  @JSImport("contentful-management/dist/typings/entities/team-membership", JSImport.Namespace)
   @js.native
-  def wrapTeamMembership(http: AxiosInstance, data: TeamMembershipProps): TeamMembership = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/team-membership", "wrapTeamMembershipCollection")
-  @js.native
-  def wrapTeamMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamMembershipProps]): Collection[TeamMembership, TeamMembershipProps] = js.native
+  @scala.inline
+  def wrapTeamMembership(http: AxiosInstance, data: TeamMembershipProps): TeamMembership = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamMembership")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[TeamMembership]
   
-  @js.native
+  @scala.inline
+  def wrapTeamMembershipCollection(http: AxiosInstance, data: CollectionProp[TeamMembershipProps]): Collection[TeamMembership, TeamMembershipProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapTeamMembershipCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[TeamMembership, TeamMembershipProps]]
+  
   trait TeamMembership
-    extends TeamMembershipProps
+    extends StObject
+       with TeamMembershipProps
        with DefaultElements[TeamMembershipProps] {
     
     /**
@@ -43,7 +44,7 @@ object teamMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def delete(): js.Promise[Unit] = js.native
+    def delete(): js.Promise[Unit]
     
     /**
       * Sends an update to the server with any changes made to the object's properties
@@ -64,7 +65,7 @@ object teamMembershipMod {
       * .catch(console.error)
       * ```
       */
-    def update(): js.Promise[TeamMembership] = js.native
+    def update(): js.Promise[TeamMembership]
   }
   object TeamMembership {
     
@@ -92,23 +93,22 @@ object teamMembershipMod {
     }
   }
   
-  @js.native
   trait TeamMembershipProps extends StObject {
     
     /**
       * Is admin
       */
-    var admin: Boolean = js.native
+    var admin: Boolean
     
     /**
       * Organization membership id
       */
-    var organizationMembershipId: String = js.native
+    var organizationMembershipId: String
     
     /**
       * System metadata
       */
-    var sys: MetaSysPropsteamsysMetaLi = js.native
+    var sys: MetaSysPropsteamsysMetaLi
   }
   object TeamMembershipProps {
     

@@ -7,62 +7,57 @@ import typings.typescriptServices.TypeScript.PullVisibleSymbolsInfo
 import typings.typescriptServices.TypeScript.SourceUnitSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("TypeScript.Services.CompletionHelpers")
 @js.native
 class CompletionHelpers ()
-  extends typings.typescriptServices.TypeScript.Services.CompletionHelpers
+  extends StObject
+     with typings.typescriptServices.TypeScript.Services.CompletionHelpers
 object CompletionHelpers {
   
-  /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.filterContextualMembersList")
+  @JSGlobal("TypeScript.Services.CompletionHelpers")
   @js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
   def filterContextualMembersList(
     contextualMemberSymbols: js.Array[PullSymbol],
     existingMembers: PullVisibleSymbolsInfo,
     fileName: String,
     position: Double
-  ): js.Array[PullSymbol] = js.native
+  ): js.Array[PullSymbol] = (^.asInstanceOf[js.Dynamic].applyDynamic("filterContextualMembersList")(contextualMemberSymbols.asInstanceOf[js.Any], existingMembers.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Array[PullSymbol]]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.getContainingObjectLiteralApplicableForCompletion")
-  @js.native
-  def getContainingObjectLiteralApplicableForCompletion(sourceUnit: SourceUnitSyntax, position: Double): PositionedElement = js.native
+  @scala.inline
+  def getContainingObjectLiteralApplicableForCompletion(sourceUnit: SourceUnitSyntax, position: Double): PositionedElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getContainingObjectLiteralApplicableForCompletion")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedElement]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.getNonIdentifierCompleteTokenOnLeft")
-  @js.native
-  def getNonIdentifierCompleteTokenOnLeft(sourceUnit: SourceUnitSyntax, position: Double): PositionedToken = js.native
+  @scala.inline
+  def getNonIdentifierCompleteTokenOnLeft(sourceUnit: SourceUnitSyntax, position: Double): PositionedToken = (^.asInstanceOf[js.Dynamic].applyDynamic("getNonIdentifierCompleteTokenOnLeft")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[PositionedToken]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.getSpan")
-  @js.native
-  def getSpan(ast: js.Any): js.Any = js.native
+  @scala.inline
+  def getSpan(ast: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpan")(ast.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.getValidCompletionEntryDisplayName")
-  @js.native
-  def getValidCompletionEntryDisplayName(displayName: String): String = js.native
+  @scala.inline
+  def getValidCompletionEntryDisplayName(displayName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getValidCompletionEntryDisplayName")(displayName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.isCompletionListBlocker")
-  @js.native
-  def isCompletionListBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = js.native
+  @scala.inline
+  def isCompletionListBlocker(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isCompletionListBlocker")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.isIdentifierDefinitionLocation")
-  @js.native
-  def isIdentifierDefinitionLocation(sourceUnit: SourceUnitSyntax, position: Double): Boolean = js.native
+  @scala.inline
+  def isIdentifierDefinitionLocation(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isIdentifierDefinitionLocation")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.isRightOfIllegalDot")
-  @js.native
-  def isRightOfIllegalDot(sourceUnit: SourceUnitSyntax, position: Double): Boolean = js.native
+  @scala.inline
+  def isRightOfIllegalDot(sourceUnit: SourceUnitSyntax, position: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRightOfIllegalDot")(sourceUnit.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /* static member */
-  @JSGlobal("TypeScript.Services.CompletionHelpers.symbolDeclarationIntersectsPosition")
-  @js.native
-  def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = js.native
+  @scala.inline
+  def symbolDeclarationIntersectsPosition(symbol: js.Any, fileName: js.Any, position: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolDeclarationIntersectsPosition")(symbol.asInstanceOf[js.Any], fileName.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

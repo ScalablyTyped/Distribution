@@ -4,10 +4,13 @@ import typings.mobx.mod.Reaction_
 import typings.react.mod.MutableRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactionCleanupTrackingCommonMod {
+  
+  @JSImport("mobx-react-lite/dist/utils/reactionCleanupTrackingCommon", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("mobx-react-lite/dist/utils/reactionCleanupTrackingCommon", "CLEANUP_LEAKED_REACTIONS_AFTER_MILLIS")
   @js.native
@@ -17,39 +20,37 @@ object reactionCleanupTrackingCommonMod {
   @js.native
   val CLEANUP_TIMER_LOOP_MILLIS: /* 10000 */ Double = js.native
   
-  @JSImport("mobx-react-lite/dist/utils/reactionCleanupTrackingCommon", "createTrackingData")
-  @js.native
-  def createTrackingData(reaction: Reaction_): IReactionTracking = js.native
+  @scala.inline
+  def createTrackingData(reaction: Reaction_): IReactionTracking = ^.asInstanceOf[js.Dynamic].applyDynamic("createTrackingData")(reaction.asInstanceOf[js.Any]).asInstanceOf[IReactionTracking]
   
-  @js.native
   trait IReactionTracking extends StObject {
     
     /**
       * Whether the observables that the component is tracking changed between
       * the first render and the first useEffect.
       */
-    var changedBeforeMount: Boolean = js.native
+    var changedBeforeMount: Boolean
     
     /**
       * The time (in ticks) at which point we should dispose of the reaction
       * if this component hasn't yet been fully mounted.
       */
-    var cleanAt: Double = js.native
+    var cleanAt: Double
     
     /**
       * In case we are using finalization registry based cleanup,
       * this will hold the cleanup token associated with this reaction
       */
-    var finalizationRegistryCleanupToken: js.UndefOr[Double] = js.native
+    var finalizationRegistryCleanupToken: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether the component has yet completed mounting (for us, whether
       * its useEffect has run)
       */
-    var mounted: Boolean = js.native
+    var mounted: Boolean
     
     /** The Reaction created during first render, which may be leaked */
-    var reaction: Reaction_ = js.native
+    var reaction: Reaction_
   }
   object IReactionTracking {
     
@@ -82,7 +83,6 @@ object reactionCleanupTrackingCommonMod {
     }
   }
   
-  @js.native
   trait ReactionCleanupTracking extends StObject {
     
     /**
@@ -94,13 +94,13 @@ object reactionCleanupTrackingCommonMod {
       reactionTrackingRef: MutableRefObject[IReactionTracking | Null],
       reaction: Reaction_,
       objectRetainedByReact: js.Object
-    ): IReactionTracking = js.native
+    ): IReactionTracking
     
-    def forceCleanupTimerToRunNowForTests(): Unit = js.native
+    def forceCleanupTimerToRunNowForTests(): Unit
     
-    def recordReactionAsCommitted(reactionRef: MutableRefObject[IReactionTracking | Null]): Unit = js.native
+    def recordReactionAsCommitted(reactionRef: MutableRefObject[IReactionTracking | Null]): Unit
     
-    def resetCleanupScheduleForTests(): Unit = js.native
+    def resetCleanupScheduleForTests(): Unit
   }
   object ReactionCleanupTracking {
     

@@ -2,14 +2,12 @@ package typings.semanticUiTransition.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-transition.SemanticUI.Transition.ErrorSettings._Impl, 'noAnimation'> */
-@js.native
 trait PickImplnoAnimation extends StObject {
   
-  var noAnimation: String = js.native
+  var noAnimation: String
 }
 object PickImplnoAnimation {
   

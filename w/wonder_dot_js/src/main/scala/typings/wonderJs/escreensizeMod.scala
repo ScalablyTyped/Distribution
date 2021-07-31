@@ -1,27 +1,24 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/device/EScreenSize", JSImport.Namespace)
-@js.native
-object escreensizeMod extends js.Object {
-  @js.native
-  sealed trait EScreenSize extends js.Object
+object escreensizeMod {
   
   @js.native
-  object EScreenSize extends js.Object {
-    @js.native
-    sealed trait FULL extends EScreenSize
+  sealed trait EScreenSize extends StObject
+  @JSImport("wonder.js/dist/es2015/device/EScreenSize", "EScreenSize")
+  @js.native
+  object EScreenSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EScreenSize with Double] = js.native
-    /* 0 */ @js.native
-    object FULL extends TopLevel[FULL with Double]
+    def apply(value: Double): js.UndefOr[EScreenSize & Double] = js.native
     
+    @js.native
+    sealed trait FULL
+      extends StObject
+         with EScreenSize
+    /* 0 */ val FULL: typings.wonderJs.escreensizeMod.EScreenSize.FULL & Double = js.native
   }
-  
 }
-

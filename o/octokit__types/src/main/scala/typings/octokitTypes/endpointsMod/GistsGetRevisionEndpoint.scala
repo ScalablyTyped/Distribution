@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GistsGetRevisionEndpoint extends StObject {
   
-  var gist_id: String = js.native
+  var gist_id: String
   
-  var sha: String = js.native
+  var sha: String
 }
 object GistsGetRevisionEndpoint {
   

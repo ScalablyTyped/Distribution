@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.elementsMod.IElement
 import typings.mendixmodelsdk.instancesMod.IList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 8.9.0: introduced
   */
 @js.native
-trait IODataKey extends IElement {
+trait IODataKey
+  extends StObject
+     with IElement {
   
   val containerAsODataRemoteEntitySource: IODataRemoteEntitySource = js.native
   

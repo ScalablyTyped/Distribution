@@ -10,39 +10,37 @@ import typings.winrt.Windows.Storage.Streams.IInputStream
 import typings.winrt.Windows.Storage.Streams.IOutputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInkStrokeContainer extends StObject {
   
-  def addStroke(stroke: InkStroke): Unit = js.native
+  def addStroke(stroke: InkStroke): Unit
   
-  var boundingRect: Rect = js.native
+  var boundingRect: Rect
   
-  def canPasteFromClipboard(): Boolean = js.native
+  def canPasteFromClipboard(): Boolean
   
-  def copySelectedToClipboard(): Unit = js.native
+  def copySelectedToClipboard(): Unit
   
-  def deleteSelected(): Rect = js.native
+  def deleteSelected(): Rect
   
-  def getRecognitionResults(): IVectorView[InkRecognitionResult] = js.native
+  def getRecognitionResults(): IVectorView[InkRecognitionResult]
   
-  def getStrokes(): IVectorView[InkStroke] = js.native
+  def getStrokes(): IVectorView[InkStroke]
   
-  def loadAsync(inputStream: IInputStream): IAsyncActionWithProgress[Double] = js.native
+  def loadAsync(inputStream: IInputStream): IAsyncActionWithProgress[Double]
   
-  def moveSelected(translation: Point): Rect = js.native
+  def moveSelected(translation: Point): Rect
   
-  def pasteFromClipboard(position: Point): Rect = js.native
+  def pasteFromClipboard(position: Point): Rect
   
-  def saveAsync(outputStream: IOutputStream): IAsyncOperationWithProgress[Double, Double] = js.native
+  def saveAsync(outputStream: IOutputStream): IAsyncOperationWithProgress[Double, Double]
   
-  def selectWithLine(from: Point, to: Point): Rect = js.native
+  def selectWithLine(from: Point, to: Point): Rect
   
-  def selectWithPolyLine(polyline: IIterable[Point]): Rect = js.native
+  def selectWithPolyLine(polyline: IIterable[Point]): Rect
   
-  def updateRecognitionResults(recognitionResults: IVectorView[InkRecognitionResult]): Unit = js.native
+  def updateRecognitionResults(recognitionResults: IVectorView[InkRecognitionResult]): Unit
 }
 object IInkStrokeContainer {
   

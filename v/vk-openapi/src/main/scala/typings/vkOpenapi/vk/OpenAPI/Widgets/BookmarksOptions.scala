@@ -7,15 +7,13 @@ import typings.vkOpenapi.vkOpenapiNumbers.`24`
 import typings.vkOpenapi.vkOpenapiNumbers.`30`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BookmarksOptions extends StObject {
   
-  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.native
+  var height: js.UndefOr[`18` | `20` | `22` | `24` | `30`] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object BookmarksOptions {
   

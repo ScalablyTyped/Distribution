@@ -2,27 +2,25 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Adjustlayout extends StObject {
   
   /**
     * Forces the plotarea to consider the legend positioning and prevent overlapping with it. true | false | 1 | 0
     */
-  var `adjust-layout`: js.UndefOr[Boolean] = js.native
+  var `adjust-layout`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Automatically aligns the legend and adjusts "plotarea" margins accordingly. "left" | "center" | "right"
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the object. The higher the value, the less transparent the object appears. Requires the formatting 0.x. 0
     * .3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g. "red", "blue", "yellow"), in hexadecimal notation (e.
@@ -30,359 +28,359 @@ trait Adjustlayout extends StObject {
     * t a solid background color, two colors will, by default, create a horizontal gradient. For more complex gradients, use gradient-co
     * lors and gradient-stops. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. To be used with background-color-2. "none" | "transparent" |
     * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. To be used with background-color-1. "none" | "transparent" |
     *  "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction/s on which the background image is being "stretched". "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the background-repeat value is no-repeat. "0 0" | "50 100" | "80% 60%" | ...
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's bottom border style. Accepts solid, dotted, and dashed. Also accepts named colors. If color is not set properly,
     *  will default to black. "2px solid #f00" | ...
     */
-  var `border-bottom`: js.UndefOr[String] = js.native
+  var `border-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object, applicable on closed shapes. See also line-color for closed shapes. "none" | "transparent" |
     * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's left border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.native
+  var `border-left`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's border radius, for rounded corners. The higher the value, the more rounded the corners appear. 4 | "6px" | "6px
     * 10px 3px 5px" | "-10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-left border radius, for rounded corners. Larger values create rounder corners, while smaller values creat
     * e sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-right border radius, for rounded corners. Larger values create rounder corners, while smaller values crea
     * te sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-left border radius, for rounded corners. Larger values create rounder corners, while smaller values create s
     * harper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-right border radius, for rounded corners. Larger values create rounder corners, while smaller values create
     * sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
     */
-  var `border-right`: js.UndefOr[String] = js.native
+  var `border-right`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's top border style. Values must include the border width, style, and color. Accepts solid, dashed, and dotted styl
     * es. "2px solid #f00" | ...
     */
-  var `border-top`: js.UndefOr[String] = js.native
+  var `border-top`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object, applicable on closed shapes. See also line-width for closed shapes. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether an object will have a callout arrow or not. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the length for an extension line off the tip of the callout arrow. 4 | "6px" | ...
     */
-  var `callout-extension`: js.UndefOr[js.Any] = js.native
+  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the height of the object's callout arrow. A larger value will create a taller callout arrow. 4 | "6px" | ...
     */
-  var `callout-height`: js.UndefOr[js.Any] = js.native
+  var `callout-height`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a location for the point of the tip of the callout arrow. Uses XY coordinates. [200, 50] | ...
     */
-  var `callout-hook`: js.UndefOr[js.Any] = js.native
+  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the offset for the origin of the callout arrow. Uses positive or negative values to move the arrow right/left/up/down. 4 | "6
     * px" | ...
     */
-  var `callout-offset`: js.UndefOr[js.Any] = js.native
+  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the position for the object's callout arrow. The position is "bottom" by default. "top" | "right" | "bottom" | "left"
     */
-  var `callout-position`: js.UndefOr[String] = js.native
+  var `callout-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets which edge will be the location for the object's callout arrow. 4 | "6px" | ...
     */
-  var `callout-width`: js.UndefOr[js.Any] = js.native
+  var `callout-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets legend to be collapsed by default true | false | 1 | 0
     */
-  var collapse: js.UndefOr[Boolean] = js.native
+  var collapse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the handler used to drag the legend: icon will create a dragging icon on the legend header, which will be the only area on wh
     * ich you can click and drag, header will make the whole header object active for dragging the legend. "header" | "icon"
     */
-  var `drag-handler`: js.UndefOr[String] = js.native
+  var `drag-handler`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the legend can be dragged or not. true | false | 1 | 0
     */
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
-  var footer: js.UndefOr[Backgroundposition] = js.native
+  var footer: js.UndefOr[Backgroundposition] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient (more than 2 colors). To be used with gradient-stops. "#f00 #0f0 #00f" | ..
     * .
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position for the introduction of each color for a complex background gradient (more than 2 colors). To be used with gradi
     * ent-colors. "0.1 0.5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
-  var header: js.UndefOr[Backgroundrepeat] = js.native
+  var header: js.UndefOr[Backgroundrepeat] = js.undefined
   
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * An alias for the "highlight" attribute in the "plot" object. Highlights the corresponding plot when the legend item is moused over
     * . true | false | 1 | 0
     */
-  var `highlight-plot`: js.UndefOr[Boolean] = js.native
+  var `highlight-plot`: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Linecolor] = js.native
+  var icon: js.UndefOr[Linecolor] = js.undefined
   
-  var item: js.UndefOr[Borderleft] = js.native
+  var item: js.UndefOr[Borderleft] = js.undefined
   
-  var `item-off`: js.UndefOr[Borderbottom] = js.native
+  var `item-off`: js.UndefOr[Borderbottom] = js.undefined
   
   /**
     * Sets the layout for the legend items. "horizontal" | "h" | "vertical" | "v" | "row x col" | "x col" | "row x" | "float"
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's margin/s from the top-left of the chart. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom margin. 4 | "6px" | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. 4 | "6px" | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right margin. 4 | "6px" | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. 4 | "6px" | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
-  var marker: js.UndefOr[Fillangle] = js.native
+  var marker: js.UndefOr[Fillangle] = js.undefined
   
   /**
     * Sets the maximum number of items displayed on the legend. To be used with overflow. 5 | 10 | ...
     */
-  var `max-items`: js.UndefOr[Double] = js.native
+  var `max-items`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets whether the legend can be minimized or not.
     */
-  var minimize: js.UndefOr[Boolean] = js.native
+  var minimize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the legend. A positive value moves the legend to the right. A negative value moves the
     * legend to the left. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a Y offset to apply when positioning the legend. A positive value moves the legend down. A negative value moves the legend up
     * . 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the display mode for legend items beyond max-items setting: none will display all items, hidden will display just top max-ite
     * ms items, page will enable the pagination module, scrollwill enable legend scrolling, with top max-items items per page. To be use
     * d with max-item. "none" | "hidden" | "page" | "scroll"
     */
-  var overflow: js.UndefOr[String] = js.native
+  var overflow: js.UndefOr[String] = js.undefined
   
-  var `page-off`: js.UndefOr[Filloffsetx] = js.native
+  var `page-off`: js.UndefOr[Filloffsetx] = js.undefined
   
-  var `page-on`: js.UndefOr[Filloffsetx] = js.native
+  var `page-on`: js.UndefOr[Filloffsetx] = js.undefined
   
-  var `page-status`: js.UndefOr[Bold] = js.native
+  var `page-status`: js.UndefOr[Bold] = js.undefined
   
   /**
     * Sets the object's position relative to its container. Similar results can be obtained by setting [margin] and [margin-...] attribu
     * tes. Uses x,y coordinates originating from the top left of the chart.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Reverses the items in the legend
     */
-  var `reverse-series`: js.UndefOr[Boolean] = js.native
+  var `reverse-series`: js.UndefOr[Boolean] = js.undefined
   
-  var scroll: js.UndefOr[Bar] = js.native
+  var scroll: js.UndefOr[Bar] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the shadow of the object. The higher the value, the less transparent the shadow will be. 0.3 | 0.9 | ...
     */
-  var `shadow-alpha`: js.UndefOr[Double] = js.native
+  var `shadow-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the angle of the shadow underneath the object. -45 | 115 | ...
     */
-  var `shadow-angle`: js.UndefOr[Double] = js.native
+  var `shadow-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the blur effect size for the shadow of the object. Has limited effect on HTML5 implementation. 4 | "6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.native
+  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ..
     * .
     */
-  var `shadow-color`: js.UndefOr[String] = js.native
+  var `shadow-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the distance between the shadow and the object. 4 | "6px" | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.native
+  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * For graphsets with multiple chart objects, setting this attribute to true within the legend object of each chart will allow you to
     *  use one legend to toggle data on or off for each chart simultaneously. It should be noted that while each chart must have a legen
     * d object, the visible attribute can be set to false to hide a legend. true | false | 1 | 0
     */
-  var shared: js.UndefOr[js.Any] = js.native
+  var shared: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the action performed on legend item toggle: hide will simply hide the respective plot, remove will repaint the chart without
     * considering the respective plot, disabled will not generate any action for the legend items/markers. "hide" | "remove" | "disabled
     * "
     */
-  var `toggle-action`: js.UndefOr[String] = js.native
+  var `toggle-action`: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[Borderalpha] = js.native
+  var tooltip: js.UndefOr[Borderalpha] = js.undefined
   
   /**
     * Automatically aligns the legend and adjusts "plotarea" margins accordingly. "top" | "middle" | "bottom"
     */
-  var `vertical-align`: js.UndefOr[String] = js.native
+  var `vertical-align`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the X position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the Y position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
 }
 object Adjustlayout {
   

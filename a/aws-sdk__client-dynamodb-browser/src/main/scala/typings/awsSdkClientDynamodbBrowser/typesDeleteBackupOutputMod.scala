@@ -5,24 +5,24 @@ import typings.awsSdkClientDynamodbBrowser.typesBackupDescriptionMod.Unmarshalle
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteBackupOutputMod {
   
-  @js.native
-  trait DeleteBackupOutput extends OutputTypesUnion {
+  trait DeleteBackupOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Contains the description of the backup created for the table.</p>
       */
-    var BackupDescription: js.UndefOr[UnmarshalledBackupDescription] = js.native
+    var BackupDescription: js.UndefOr[UnmarshalledBackupDescription] = js.undefined
   }
   object DeleteBackupOutput {
     

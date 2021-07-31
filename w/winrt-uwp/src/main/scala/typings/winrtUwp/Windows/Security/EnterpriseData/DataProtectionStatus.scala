@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.EnterpriseData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object DataProtectionStatus extends StObject {
   
   /** The keys to access the protected item have been dropped while the device is locked. */
   @js.native
-  sealed trait accessSuspended extends DataProtectionStatus
+  sealed trait accessSuspended
+    extends StObject
+       with DataProtectionStatus
   
   /** The item's RMS license has expired. */
   @js.native
-  sealed trait licenseExpired extends DataProtectionStatus
+  sealed trait licenseExpired
+    extends StObject
+       with DataProtectionStatus
   
   /** The item is protected. */
   @js.native
-  sealed trait `protected` extends DataProtectionStatus
+  sealed trait `protected`
+    extends StObject
+       with DataProtectionStatus
   
   /** The item is protected to another enterprise identity. */
   @js.native
-  sealed trait protectedToOtherIdentity extends DataProtectionStatus
+  sealed trait protectedToOtherIdentity
+    extends StObject
+       with DataProtectionStatus
   
   /** The protection of the item has been revoked. */
   @js.native
-  sealed trait revoked extends DataProtectionStatus
+  sealed trait revoked
+    extends StObject
+       with DataProtectionStatus
   
   /** The item is not protected to an enterprise identity. */
   @js.native
-  sealed trait unprotected extends DataProtectionStatus
+  sealed trait unprotected
+    extends StObject
+       with DataProtectionStatus
 }

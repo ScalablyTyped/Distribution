@@ -2,21 +2,19 @@ package typings.knockback.Knockback
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Factory extends StObject {
   
-  def addPathMapping(path: String, create_info: js.Any): js.Any = js.native
+  def addPathMapping(path: String, create_info: js.Any): js.Any
   
-  def addPathMappings(factories: js.Any, owner_path: String): js.Any = js.native
+  def addPathMappings(factories: js.Any, owner_path: String): js.Any
   
-  def creatorForPath(obj: js.Any, path: String): js.Any = js.native
+  def creatorForPath(obj: js.Any, path: String): js.Any
   
-  def hasPath(path: String): Boolean = js.native
+  def hasPath(path: String): Boolean
   
-  def hasPathMappings(factories: js.Any, owner_path: String): Boolean = js.native
+  def hasPathMappings(factories: js.Any, owner_path: String): Boolean
 }
 object Factory {
   

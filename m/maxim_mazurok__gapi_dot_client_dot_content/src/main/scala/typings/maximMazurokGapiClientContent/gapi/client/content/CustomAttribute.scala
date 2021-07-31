@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomAttribute extends StObject {
   
   /** Subattributes within this attribute group. Exactly one of value or groupValues must be provided. */
-  var groupValues: js.UndefOr[js.Array[CustomAttribute]] = js.native
+  var groupValues: js.UndefOr[js.Array[CustomAttribute]] = js.undefined
   
   /** The name of the attribute. Underscores will be replaced by spaces upon insertion. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The value of the attribute. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object CustomAttribute {
   

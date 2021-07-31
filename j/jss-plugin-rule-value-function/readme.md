@@ -10,9 +10,9 @@ JSS plugin for function value and rule syntax
 | ------------------ | :-------------: |
 | Full name          | jss-plugin-rule-value-function |
 | Keywords           | jss, style, sheet, stylesheet, css, components, composable, css in js, css-in-js, dynamic, function, reactive, animation |
-| # releases         | 39 |
-| # dependents       | 13 |
-| # downloads        | 46880260 |
+| # releases         | 30 |
+| # dependents       | 14 |
+| # downloads        | 54422301 |
 | # stars            | 0 |
 
 ## Links

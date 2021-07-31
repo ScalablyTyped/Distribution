@@ -4,7 +4,6 @@ import typings.credential.mod.HashCallback
 import typings.credential.mod.VerifyCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {

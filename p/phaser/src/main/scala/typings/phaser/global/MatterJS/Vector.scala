@@ -3,7 +3,6 @@ package typings.phaser.global.MatterJS
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.Vector")
 @js.native
 class Vector ()
-  extends typings.phaser.MatterJS.Vector
+  extends StObject
+     with typings.phaser.MatterJS.Vector {
+  
+  /* CompleteClass */
+  var x: Double = js.native
+  
+  /* CompleteClass */
+  var y: Double = js.native
+}
 object Vector {
+  
+  @JSGlobal("MatterJS.Vector")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Adds the two vectors.
@@ -30,16 +41,14 @@ object Vector {
     * @return {vector} A new vector of vectorA and vectorB added
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.add")
-  @js.native
-  def add(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.add")
-  @js.native
+  @scala.inline
+  def add(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
   def add(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,
     output: typings.phaser.MatterJS.Vector
-  ): typings.phaser.MatterJS.Vector = js.native
+  ): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Returns the angle in radians between the two vectors relative to the x-axis.
@@ -49,9 +58,8 @@ object Vector {
     * @return {number} The angle in radians
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.angle")
-  @js.native
-  def angle(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
+  @scala.inline
+  def angle(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angle")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns a new vector with `x` and `y` copied from the given `vector`.
@@ -60,9 +68,8 @@ object Vector {
     * @return {vector} A new cloned vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.clone")
-  @js.native
-  def clone_(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def clone_(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Creates a new vector.
@@ -72,18 +79,14 @@ object Vector {
     * @return {vector} A new vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.create")
-  @js.native
-  def create(): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.create")
-  @js.native
-  def create(x: js.UndefOr[scala.Nothing], y: Double): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.create")
-  @js.native
-  def create(x: Double): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.create")
-  @js.native
-  def create(x: Double, y: Double): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def create(): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
+  def create(x: Double): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
+  def create(x: Double, y: Double): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
+  def create(x: Unit, y: Double): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Returns the cross-product of two vectors.
@@ -93,9 +96,8 @@ object Vector {
     * @return {number} The cross product of the two vectors
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.cross")
-  @js.native
-  def cross(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = js.native
+  @scala.inline
+  def cross(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the cross-product of three vectors.
@@ -106,13 +108,12 @@ object Vector {
     * @return {number} The cross product of the three vectors
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.cross3")
-  @js.native
+  @scala.inline
   def cross3(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,
     vectorC: typings.phaser.MatterJS.Vector
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("cross3")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any], vectorC.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Divides a vector and a scalar.
@@ -122,9 +123,8 @@ object Vector {
     * @return {vector} A new vector divided by scalar
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.div")
-  @js.native
-  def div(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def div(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("div")(vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Returns the dot-product of two vectors.
@@ -134,9 +134,8 @@ object Vector {
     * @return {number} The dot product of the two vectors
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.dot")
-  @js.native
-  def dot(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Number = js.native
+  @scala.inline
+  def dot(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): Number = (^.asInstanceOf[js.Dynamic].applyDynamic("dot")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any])).asInstanceOf[Number]
   
   /**
     * Returns the magnitude (length) of a vector.
@@ -145,9 +144,8 @@ object Vector {
     * @return {number} The magnitude of the vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.magnitude")
-  @js.native
-  def magnitude(vector: typings.phaser.MatterJS.Vector): Double = js.native
+  @scala.inline
+  def magnitude(vector: typings.phaser.MatterJS.Vector): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magnitude")(vector.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Returns the magnitude (length) of a vector (therefore saving a `sqrt` operation).
@@ -156,9 +154,8 @@ object Vector {
     * @return {number} The squared magnitude of the vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.magnitudeSquared")
-  @js.native
-  def magnitudeSquared(vector: typings.phaser.MatterJS.Vector): Double = js.native
+  @scala.inline
+  def magnitudeSquared(vector: typings.phaser.MatterJS.Vector): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("magnitudeSquared")(vector.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Multiplies a vector and a scalar.
@@ -168,9 +165,8 @@ object Vector {
     * @return {vector} A new vector multiplied by scalar
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.mult")
-  @js.native
-  def mult(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def mult(vector: typings.phaser.MatterJS.Vector, scalar: Double): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("mult")(vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Negates both components of a vector such that it points in the opposite direction.
@@ -179,9 +175,8 @@ object Vector {
     * @return {vector} The negated vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.neg")
-  @js.native
-  def neg(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def neg(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("neg")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Normalises a vector (such that its magnitude is `1`).
@@ -190,9 +185,8 @@ object Vector {
     * @return {vector} A new vector normalised
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.normalise")
-  @js.native
-  def normalise(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def normalise(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("normalise")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Returns the perpendicular vector. Set `negate` to true for the perpendicular in the opposite direction.
@@ -202,12 +196,10 @@ object Vector {
     * @return {vector} The perpendicular vector
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.perp")
-  @js.native
-  def perp(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.perp")
-  @js.native
-  def perp(vector: typings.phaser.MatterJS.Vector, negate: Boolean): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def perp(vector: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("perp")(vector.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
+  def perp(vector: typings.phaser.MatterJS.Vector, negate: Boolean): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("perp")(vector.asInstanceOf[js.Any], negate.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Rotates the vector about (0, 0) by specified angle.
@@ -217,9 +209,8 @@ object Vector {
     * @return {vector} A new vector rotated about (0, 0)
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.rotate")
-  @js.native
-  def rotate(vector: typings.phaser.MatterJS.Vector, angle: Double): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def rotate(vector: typings.phaser.MatterJS.Vector, angle: Double): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(vector.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Rotates the vector about a specified point by specified angle.
@@ -231,17 +222,15 @@ object Vector {
     * @return {vector} A new vector rotated about the point
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.rotateAbout")
-  @js.native
-  def rotateAbout(vector: typings.phaser.MatterJS.Vector, angle: Double, point: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.rotateAbout")
-  @js.native
+  @scala.inline
+  def rotateAbout(vector: typings.phaser.MatterJS.Vector, angle: Double, point: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAbout")(vector.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
   def rotateAbout(
     vector: typings.phaser.MatterJS.Vector,
     angle: Double,
     point: typings.phaser.MatterJS.Vector,
     output: typings.phaser.MatterJS.Vector
-  ): typings.phaser.MatterJS.Vector = js.native
+  ): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateAbout")(vector.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], point.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
   
   /**
     * Subtracts the two vectors.
@@ -252,14 +241,12 @@ object Vector {
     * @return {vector} A new vector of vectorA and vectorB subtracted
     */
   /* static member */
-  @JSGlobal("MatterJS.Vector.sub")
-  @js.native
-  def sub(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = js.native
-  @JSGlobal("MatterJS.Vector.sub")
-  @js.native
+  @scala.inline
+  def sub(vectorA: typings.phaser.MatterJS.Vector, vectorB: typings.phaser.MatterJS.Vector): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
+  @scala.inline
   def sub(
     vectorA: typings.phaser.MatterJS.Vector,
     vectorB: typings.phaser.MatterJS.Vector,
     optional: typings.phaser.MatterJS.Vector
-  ): typings.phaser.MatterJS.Vector = js.native
+  ): typings.phaser.MatterJS.Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("sub")(vectorA.asInstanceOf[js.Any], vectorB.asInstanceOf[js.Any], optional.asInstanceOf[js.Any])).asInstanceOf[typings.phaser.MatterJS.Vector]
 }

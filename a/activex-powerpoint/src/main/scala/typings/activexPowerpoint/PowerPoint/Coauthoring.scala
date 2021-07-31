@@ -2,28 +2,26 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coauthoring extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val CoauthorCount: Double = js.native
+  val CoauthorCount: Double
   
-  def EndReview(): Unit = js.native
+  def EndReview(): Unit
   
-  var FavorServerEditsDuringMerge: Boolean = js.native
+  var FavorServerEditsDuringMerge: Boolean
   
-  val MergeMode: Boolean = js.native
+  val MergeMode: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PendingUpdates: Boolean = js.native
+  val PendingUpdates: Boolean
   
   @JSName("PowerPoint.Coauthoring_typekey")
-  var PowerPointDotCoauthoring_typekey: Coauthoring = js.native
+  var PowerPointDotCoauthoring_typekey: Coauthoring
 }
 object Coauthoring {
   

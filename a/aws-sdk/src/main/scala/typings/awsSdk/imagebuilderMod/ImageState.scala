@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageState extends StObject {
   
   /**
     * The reason for the image's status. 
     */
-  var reason: js.UndefOr[NonEmptyString] = js.native
+  var reason: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The status of the image. 
     */
-  var status: js.UndefOr[ImageStatus] = js.native
+  var status: js.UndefOr[ImageStatus] = js.undefined
 }
 object ImageState {
   

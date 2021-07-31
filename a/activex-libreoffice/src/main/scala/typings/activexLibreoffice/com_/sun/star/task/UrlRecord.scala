@@ -3,15 +3,13 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlRecord extends StObject {
   
-  var Url: String = js.native
+  var Url: String
   
-  var UserList: SafeArray[UserRecord] = js.native
+  var UserList: SafeArray[UserRecord]
 }
 object UrlRecord {
   

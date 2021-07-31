@@ -2,38 +2,36 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The URL interface represents an object providing static methods used for creating object URLs. */
-@js.native
 trait URL extends StObject {
   
-  var hash: java.lang.String = js.native
+  var hash: java.lang.String
   
-  var host: java.lang.String = js.native
+  var host: java.lang.String
   
-  var hostname: java.lang.String = js.native
+  var hostname: java.lang.String
   
-  var href: java.lang.String = js.native
+  var href: java.lang.String
   
-  val origin: java.lang.String = js.native
+  val origin: java.lang.String
   
-  var password: java.lang.String = js.native
+  var password: java.lang.String
   
-  var pathname: java.lang.String = js.native
+  var pathname: java.lang.String
   
-  var port: java.lang.String = js.native
+  var port: java.lang.String
   
-  var protocol: java.lang.String = js.native
+  var protocol: java.lang.String
   
-  var search: java.lang.String = js.native
+  var search: java.lang.String
   
-  val searchParams: URLSearchParams = js.native
+  val searchParams: URLSearchParams
   
-  def toJSON(): java.lang.String = js.native
+  def toJSON(): java.lang.String
   
-  var username: java.lang.String = js.native
+  var username: java.lang.String
 }
 object URL {
   

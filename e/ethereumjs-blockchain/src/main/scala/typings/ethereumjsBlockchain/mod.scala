@@ -7,7 +7,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,14 +18,18 @@ object mod {
     *
     * @param opts - An object with the options that this constructor takes. See [[BlockchainOptions]].
     */
-  class default () extends Blockchain {
+  class default ()
+    extends StObject
+       with Blockchain {
     def this(opts: BlockchainOptions) = this()
   }
   
   type Block = js.Any
   
   @js.native
-  trait Blockchain extends BlockchainInterface {
+  trait Blockchain
+    extends StObject
+       with BlockchainInterface {
     
     /**
       * Executes multiple db operations in a single batch call
@@ -278,7 +281,7 @@ object mod {
       * @param blocks - The blocks to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the last of the saved `blocks`
       */
-    def putBlocks(blocks: js.Array[_], cb: js.Any): Unit = js.native
+    def putBlocks(blocks: js.Array[js.Any], cb: js.Any): Unit = js.native
     
     /**
       * Puts the genesis block in the database
@@ -302,7 +305,7 @@ object mod {
       * @param headers - The headers to be added to the blockchain
       * @param cb - The callback. It is given two parameters `err` and the last of the saved `headers`
       */
-    def putHeaders(headers: js.Array[_], cb: js.Any): Unit = js.native
+    def putHeaders(headers: js.Array[js.Any], cb: js.Any): Unit = js.native
     
     /**
       * Given an ordered array, returns to the callback an array of hashes that are not in the blockchain yet.
@@ -310,7 +313,7 @@ object mod {
       * @param hashes - Ordered array of hashes
       * @param cb - The callback. It is given two parameters `err` and hashes found.
       */
-    def selectNeededHashes(hashes: js.Array[_], cb: js.Any): Unit = js.native
+    def selectNeededHashes(hashes: js.Array[js.Any], cb: js.Any): Unit = js.native
     
     /**
       * This field is always `true`. It's here only for backwards compatibility.
@@ -369,30 +372,29 @@ object mod {
     def putBlock(block: Block, cb: js.Any, isGenesis: Boolean): Unit = js.native
   }
   
-  @js.native
   trait BlockchainOptions extends StObject {
     
     /**
       * The chain id or name. Default: `"mainnet"`.
       */
-    var chain: js.UndefOr[String | Double] = js.native
+    var chain: js.UndefOr[String | Double] = js.undefined
     
     /**
       * An alternative way to specify the chain and hardfork is by passing a Common instance.
       */
-    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.native
+    var common: js.UndefOr[typings.ethereumjsCommon.mod.default] = js.undefined
     
     /**
       * Database to store blocks and metadata. Should be a
       * [levelup](https://github.com/rvagg/node-levelup) instance.
       */
-    var db: js.UndefOr[js.Any] = js.native
+    var db: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Hardfork for the blocks. If `undefined` or `null` is passed, it gets computed based on block
       * numbers.
       */
-    var hardfork: js.UndefOr[String | Null] = js.native
+    var hardfork: js.UndefOr[String | Null] = js.undefined
     
     /**
       * This the flag indicates if blocks and Proof-of-Work should be validated.
@@ -400,21 +402,21 @@ object mod {
       *
       * @deprecated
       */
-    var validate: js.UndefOr[Boolean] = js.native
+    var validate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This flags indicates if blocks should be validated. See Block#validate for details. If
       * `validate` is provided, this option takes its value. If neither `validate` nor this option are
       * provided, it defaults to `true`.
       */
-    var validateBlocks: js.UndefOr[Boolean] = js.native
+    var validateBlocks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This flags indicates if Proof-of-work should be validated. If `validate` is provided, this
       * option takes its value. If neither `validate` nor this option are provided, it defaults to
       * `true`.
       */
-    var validatePow: js.UndefOr[Boolean] = js.native
+    var validatePow: js.UndefOr[Boolean] = js.undefined
   }
   object BlockchainOptions {
     

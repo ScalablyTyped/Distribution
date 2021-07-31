@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,29 +19,21 @@ trait PlusAudioAudioRecorder extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/audio.html](http://www.html5plus.org/doc/zh_cn/audio.html)
     */
   def record(): Unit = js.native
+  def record(option: Unit, successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def record(
-    option: js.UndefOr[scala.Nothing],
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def record(option: js.UndefOr[scala.Nothing], successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
-  def record(
-    option: js.UndefOr[scala.Nothing],
+    option: Unit,
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def record(option: Unit, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def record(option: PlusAudioRecordOptions): Unit = js.native
-  def record(
-    option: PlusAudioRecordOptions,
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def record(option: PlusAudioRecordOptions, successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def record(
     option: PlusAudioRecordOptions,
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def record(option: PlusAudioRecordOptions, successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 结束录音操作

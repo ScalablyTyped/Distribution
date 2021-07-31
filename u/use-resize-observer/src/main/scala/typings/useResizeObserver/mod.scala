@@ -4,7 +4,6 @@ import typings.react.mod.RefObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,9 +15,8 @@ object mod {
     *         and ref.current's width (undefined before the first measurement),
     *         and ref.current's height (undefined before the first measurement).
     */
-  @JSImport("use-resize-observer", JSImport.Namespace)
-  @js.native
-  def apply(): ObserverResultWithSize[HTMLElement] = js.native
+  @scala.inline
+  def apply(): ObserverResultWithSize[HTMLElement] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ObserverResultWithSize[HTMLElement]]
   /***
     * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
     * The hook is invoked at least once before the first measurement of actual size by the observer.
@@ -27,9 +25,8 @@ object mod {
     * @return a ref (optionally pass in your own)
     *         The callback function will be called with new ref.current's width and height as a parameter.
     */
-  @JSImport("use-resize-observer", JSImport.Namespace)
-  @js.native
-  def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithResizeHandler[TElement]): ObserverResultForResizeHandler[TElement] = js.native
+  @scala.inline
+  def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithResizeHandler[TElement]): ObserverResultForResizeHandler[TElement] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[ObserverResultForResizeHandler[TElement]]
   /***
     * Allows using a ResizeObserver to measure size of an element assigned with ref returned from the hook.
     * The hook is invoked at least once before the first measurement of actual size by the observer.
@@ -37,16 +34,20 @@ object mod {
     *         and ref.current's width (undefined before the first measurement),
     *         and ref.current's height (undefined before the first measurement).
     */
+  @scala.inline
+  def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = ^.asInstanceOf[js.Dynamic].apply(defaults.asInstanceOf[js.Any]).asInstanceOf[ObserverResultWithSize[TElement]]
+  
   @JSImport("use-resize-observer", JSImport.Namespace)
   @js.native
-  def apply[TElement /* <: HTMLElement */](defaults: DefaultsWithoutResizeHandler[TElement]): ObserverResultWithSize[TElement] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait DefaultsWithResizeHandler[TElement] extends ObserverDefaults[TElement] {
+  trait DefaultsWithResizeHandler[TElement]
+    extends StObject
+       with ObserverDefaults[TElement] {
     
-    var onResize: ResizeHandler = js.native
+    var onResize: ResizeHandler
     
-    var ref: js.UndefOr[RefObject[TElement]] = js.native
+    var ref: js.UndefOr[RefObject[TElement]] = js.undefined
   }
   object DefaultsWithResizeHandler {
     
@@ -57,7 +58,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DefaultsWithResizeHandlerMutableBuilder[Self <: DefaultsWithResizeHandler[_], TElement] (val x: Self with DefaultsWithResizeHandler[TElement]) extends AnyVal {
+    implicit class DefaultsWithResizeHandlerMutableBuilder[Self <: DefaultsWithResizeHandler[?], TElement] (val x: Self & DefaultsWithResizeHandler[TElement]) extends AnyVal {
       
       @scala.inline
       def setOnResize(value: /* newSize */ RefSize => Unit): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
@@ -70,10 +71,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait DefaultsWithoutResizeHandler[TElement] extends ObserverDefaults[TElement] {
+  trait DefaultsWithoutResizeHandler[TElement]
+    extends StObject
+       with ObserverDefaults[TElement] {
     
-    var ref: js.UndefOr[RefObject[TElement]] = js.native
+    var ref: js.UndefOr[RefObject[TElement]] = js.undefined
   }
   object DefaultsWithoutResizeHandler {
     
@@ -84,7 +86,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DefaultsWithoutResizeHandlerMutableBuilder[Self <: DefaultsWithoutResizeHandler[_], TElement] (val x: Self with DefaultsWithoutResizeHandler[TElement]) extends AnyVal {
+    implicit class DefaultsWithoutResizeHandlerMutableBuilder[Self <: DefaultsWithoutResizeHandler[?], TElement] (val x: Self & DefaultsWithoutResizeHandler[TElement]) extends AnyVal {
       
       @scala.inline
       def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
@@ -116,10 +118,9 @@ object mod {
   
   type ObserverRefSize = RefSize
   
-  @js.native
   trait ObserverResultForResizeHandler[TElement] extends StObject {
     
-    var ref: RefObject[TElement] = js.native
+    var ref: RefObject[TElement]
   }
   object ObserverResultForResizeHandler {
     
@@ -130,21 +131,20 @@ object mod {
     }
     
     @scala.inline
-    implicit class ObserverResultForResizeHandlerMutableBuilder[Self <: ObserverResultForResizeHandler[_], TElement] (val x: Self with ObserverResultForResizeHandler[TElement]) extends AnyVal {
+    implicit class ObserverResultForResizeHandlerMutableBuilder[Self <: ObserverResultForResizeHandler[?], TElement] (val x: Self & ObserverResultForResizeHandler[TElement]) extends AnyVal {
       
       @scala.inline
       def setRef(value: RefObject[TElement]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ObserverResultWithSize[TElement] extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var ref: RefObject[TElement] = js.native
+    var ref: RefObject[TElement]
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ObserverResultWithSize {
     
@@ -155,7 +155,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ObserverResultWithSizeMutableBuilder[Self <: ObserverResultWithSize[_], TElement] (val x: Self with ObserverResultWithSize[TElement]) extends AnyVal {
+    implicit class ObserverResultWithSizeMutableBuilder[Self <: ObserverResultWithSize[?], TElement] (val x: Self & ObserverResultWithSize[TElement]) extends AnyVal {
       
       @scala.inline
       def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
@@ -174,12 +174,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RefSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object RefSize {
     

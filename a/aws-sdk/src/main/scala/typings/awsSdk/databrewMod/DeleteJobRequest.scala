@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteJobRequest extends StObject {
   
   /**
     * The name of the job to be deleted.
     */
-  var Name: JobName = js.native
+  var Name: JobName
 }
 object DeleteJobRequest {
   

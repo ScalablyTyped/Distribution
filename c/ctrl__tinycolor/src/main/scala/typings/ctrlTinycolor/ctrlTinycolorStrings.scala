@@ -3,7 +3,6 @@ package typings.ctrlTinycolor
 import typings.ctrlTinycolor.distMod.ColorFormats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ctrlTinycolorStrings {
@@ -44,37 +43,51 @@ object ctrlTinycolorStrings {
   def green: green = "green".asInstanceOf[green]
   
   @js.native
-  sealed trait hex extends ColorFormats
+  sealed trait hex
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
   @js.native
-  sealed trait hex3 extends ColorFormats
+  sealed trait hex3
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hex3: hex3 = "hex3".asInstanceOf[hex3]
   
   @js.native
-  sealed trait hex4 extends ColorFormats
+  sealed trait hex4
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hex4: hex4 = "hex4".asInstanceOf[hex4]
   
   @js.native
-  sealed trait hex6 extends ColorFormats
+  sealed trait hex6
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hex6: hex6 = "hex6".asInstanceOf[hex6]
   
   @js.native
-  sealed trait hex8 extends ColorFormats
+  sealed trait hex8
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hex8: hex8 = "hex8".asInstanceOf[hex8]
   
   @js.native
-  sealed trait hsl extends ColorFormats
+  sealed trait hsl
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hsl: hsl = "hsl".asInstanceOf[hsl]
   
   @js.native
-  sealed trait hsv extends ColorFormats
+  sealed trait hsv
+    extends StObject
+       with ColorFormats
   @scala.inline
   def hsv: hsv = "hsv".asInstanceOf[hsv]
   
@@ -94,7 +107,9 @@ object ctrlTinycolorStrings {
   def monochrome: monochrome = "monochrome".asInstanceOf[monochrome]
   
   @js.native
-  sealed trait name extends ColorFormats
+  sealed trait name
+    extends StObject
+       with ColorFormats
   @scala.inline
   def name: name = "name".asInstanceOf[name]
   
@@ -109,7 +124,9 @@ object ctrlTinycolorStrings {
   def pink: pink = "pink".asInstanceOf[pink]
   
   @js.native
-  sealed trait prgb extends ColorFormats
+  sealed trait prgb
+    extends StObject
+       with ColorFormats
   @scala.inline
   def prgb: prgb = "prgb".asInstanceOf[prgb]
   
@@ -129,7 +146,9 @@ object ctrlTinycolorStrings {
   def red: red = "red".asInstanceOf[red]
   
   @js.native
-  sealed trait rgb extends ColorFormats
+  sealed trait rgb
+    extends StObject
+       with ColorFormats
   @scala.inline
   def rgb: rgb = "rgb".asInstanceOf[rgb]
   

@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureException extends StObject {
   
   /**
     * Description of the failure.
     */
-  var ExceptionDescription: js.UndefOr[typings.awsSdk.dynamodbMod.ExceptionDescription] = js.native
+  var ExceptionDescription: js.UndefOr[typings.awsSdk.dynamodbMod.ExceptionDescription] = js.undefined
   
   /**
     * Exception name.
     */
-  var ExceptionName: js.UndefOr[typings.awsSdk.dynamodbMod.ExceptionName] = js.native
+  var ExceptionName: js.UndefOr[typings.awsSdk.dynamodbMod.ExceptionName] = js.undefined
 }
 object FailureException {
   

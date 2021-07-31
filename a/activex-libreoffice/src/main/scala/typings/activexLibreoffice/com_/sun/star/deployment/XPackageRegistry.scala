@@ -4,21 +4,19 @@ import typings.activexLibreoffice.com_.sun.star.ucb.XCommandEnvironment
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface to bind an UNO package.
   * @since OOo 2.0
   */
-@js.native
 trait XPackageRegistry extends StObject {
   
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  val SupportedPackageTypes: SafeArray[XPackageTypeInfo] = js.native
+  val SupportedPackageTypes: SafeArray[XPackageTypeInfo]
   
   /**
     * binds a package URL to a {@link XPackage} handle. The returned UNO package handle ought to late-initialize itself, thus the process of binding must
@@ -46,15 +44,15 @@ trait XPackageRegistry extends StObject {
     * @param xCmdEnv command environment for error and progress handling
     * @returns {@link XPackage} handle
     */
-  def bindPackage(url: String, mediaType: String, removed: Boolean, identifier: String, xCmdEnv: XCommandEnvironment): XPackage = js.native
+  def bindPackage(url: String, mediaType: String, removed: Boolean, identifier: String, xCmdEnv: XCommandEnvironment): XPackage
   
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  def getSupportedPackageTypes(): SafeArray[XPackageTypeInfo] = js.native
+  def getSupportedPackageTypes(): SafeArray[XPackageTypeInfo]
   
-  def packageRemoved(url: String, mediaType: String): Unit = js.native
+  def packageRemoved(url: String, mediaType: String): Unit
 }
 object XPackageRegistry {
   

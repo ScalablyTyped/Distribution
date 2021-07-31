@@ -2,7 +2,6 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The prebuilt binaries do not include this - see
   * {@link https://sharp.pixelplumbing.com/install#custom-libvips installing a custom libvips}.
   */
-@js.native
 trait GifOptions
-  extends OutputOptions
+  extends StObject
+     with OutputOptions
      with AnimationOptions
 object GifOptions {
   

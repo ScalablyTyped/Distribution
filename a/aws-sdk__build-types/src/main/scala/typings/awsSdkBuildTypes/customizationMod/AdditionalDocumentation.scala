@@ -2,17 +2,15 @@ package typings.awsSdkBuildTypes.customizationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdditionalDocumentation extends StObject {
   
   /**
     * A documentation string to append to the general configuration property
     * documentation.
     */
-  var additionalDocumentation: js.UndefOr[String] = js.native
+  var additionalDocumentation: js.UndefOr[String] = js.undefined
 }
 object AdditionalDocumentation {
   

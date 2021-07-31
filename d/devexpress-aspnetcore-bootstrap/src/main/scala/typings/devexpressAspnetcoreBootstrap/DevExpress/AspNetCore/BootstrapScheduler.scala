@@ -25,11 +25,12 @@ import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapString
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapScheduler extends Control {
+trait BootstrapScheduler
+  extends StObject
+     with Control {
   
   def appointmentFormCancel(): Unit = js.native
   
@@ -100,7 +101,7 @@ trait BootstrapScheduler extends Control {
   def navigateForward(): Unit = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[
       /* this */ this.type, 
       js.UndefOr[

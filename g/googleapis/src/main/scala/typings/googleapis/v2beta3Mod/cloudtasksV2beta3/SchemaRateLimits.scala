@@ -2,7 +2,6 @@ package typings.googleapis.v2beta3Mod.cloudtasksV2beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * attempt or a retry.  Note: The debugging command, RunTask, will run a task
   * even if the queue has reached its RateLimits.
   */
-@js.native
 trait SchemaRateLimits extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait SchemaRateLimits extends StObject {
     * on the value of max_dispatches_per_second, regardless of whether
     * max_dispatches_per_second is updated.
     */
-  var maxBurstSize: js.UndefOr[Double] = js.native
+  var maxBurstSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum number of concurrent tasks that Cloud Tasks allows to be
@@ -47,7 +45,7 @@ trait SchemaRateLimits extends StObject {
     * the same meaning as [max_concurrent_requests in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#max_concurrent_requests).
     */
-  var maxConcurrentDispatches: js.UndefOr[Double] = js.native
+  var maxConcurrentDispatches: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum rate at which tasks are dispatched from this queue.  If
@@ -56,7 +54,7 @@ trait SchemaRateLimits extends StObject {
     * has the same meaning as [rate in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#rate).
     */
-  var maxDispatchesPerSecond: js.UndefOr[Double] = js.native
+  var maxDispatchesPerSecond: js.UndefOr[Double] = js.undefined
 }
 object SchemaRateLimits {
   

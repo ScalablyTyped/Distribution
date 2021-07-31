@@ -2,51 +2,49 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsDto extends StObject {
   
-  var armor: Double = js.native
+  var armor: Double
   
-  var armorperlevel: Double = js.native
+  var armorperlevel: Double
   
-  var attackdamage: Double = js.native
+  var attackdamage: Double
   
-  var attackdamageperlevel: Double = js.native
+  var attackdamageperlevel: Double
   
-  var attackrange: Double = js.native
+  var attackrange: Double
   
-  var attackspeedoffset: Double = js.native
+  var attackspeedoffset: Double
   
-  var attackspeedperlevel: Double = js.native
+  var attackspeedperlevel: Double
   
-  var crit: Double = js.native
+  var crit: Double
   
-  var critperlevel: Double = js.native
+  var critperlevel: Double
   
-  var hp: Double = js.native
+  var hp: Double
   
-  var hpperlevel: Double = js.native
+  var hpperlevel: Double
   
-  var hpregen: Double = js.native
+  var hpregen: Double
   
-  var hpregenperlevel: Double = js.native
+  var hpregenperlevel: Double
   
-  var movespeed: Double = js.native
+  var movespeed: Double
   
-  var mp: Double = js.native
+  var mp: Double
   
-  var mpperlevel: Double = js.native
+  var mpperlevel: Double
   
-  var mpregen: Double = js.native
+  var mpregen: Double
   
-  var mpregenperlevel: Double = js.native
+  var mpregenperlevel: Double
   
-  var spellblock: Double = js.native
+  var spellblock: Double
   
-  var spellblockperlevel: Double = js.native
+  var spellblockperlevel: Double
 }
 object StatsDto {
   

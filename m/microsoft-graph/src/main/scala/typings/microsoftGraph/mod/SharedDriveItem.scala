@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedDriveItem extends BaseItem {
+trait SharedDriveItem
+  extends StObject
+     with BaseItem {
   
   // Used to access the underlying driveItem
-  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var driveItem: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
   // All driveItems contained in the sharing root. This collection cannot be enumerated.
-  var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.native
+  var items: js.UndefOr[NullableOption[js.Array[DriveItem]]] = js.undefined
   
   // Used to access the underlying list
-  var list: js.UndefOr[NullableOption[List]] = js.native
+  var list: js.UndefOr[NullableOption[List]] = js.undefined
   
   // Used to access the underlying listItem
-  var listItem: js.UndefOr[NullableOption[ListItem]] = js.native
+  var listItem: js.UndefOr[NullableOption[ListItem]] = js.undefined
   
   // Information about the owner of the shared item being referenced.
-  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var owner: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // Used to access the permission representing the underlying sharing link
-  var permission: js.UndefOr[NullableOption[Permission]] = js.native
+  var permission: js.UndefOr[NullableOption[Permission]] = js.undefined
   
   // Used to access the underlying driveItem. Deprecated -- use driveItem instead.
-  var root: js.UndefOr[NullableOption[DriveItem]] = js.native
+  var root: js.UndefOr[NullableOption[DriveItem]] = js.undefined
   
   // Used to access the underlying site
-  var site: js.UndefOr[NullableOption[Site]] = js.native
+  var site: js.UndefOr[NullableOption[Site]] = js.undefined
 }
 object SharedDriveItem {
   

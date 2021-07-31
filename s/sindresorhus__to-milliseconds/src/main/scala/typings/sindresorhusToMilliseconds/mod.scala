@@ -2,7 +2,6 @@ package typings.sindresorhusToMilliseconds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,9 +24,8 @@ object mod {
   	}, toMilliseconds({minutes: 2}));
   	```
   	*/
-  @JSImport("@sindresorhus/to-milliseconds", JSImport.Namespace)
-  @js.native
-  def apply(timeDescriptor: TimeDescriptor): Double = js.native
+  @scala.inline
+  def apply(timeDescriptor: TimeDescriptor): Double = ^.asInstanceOf[js.Dynamic].apply(timeDescriptor.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   @JSImport("@sindresorhus/to-milliseconds", JSImport.Namespace)
   @js.native
@@ -40,22 +38,21 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof toMilliseconds */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait TimeDescriptor extends StObject {
     
-    val days: js.UndefOr[Double] = js.native
+    val days: js.UndefOr[Double] = js.undefined
     
-    val hours: js.UndefOr[Double] = js.native
+    val hours: js.UndefOr[Double] = js.undefined
     
-    val microseconds: js.UndefOr[Double] = js.native
+    val microseconds: js.UndefOr[Double] = js.undefined
     
-    val milliseconds: js.UndefOr[Double] = js.native
+    val milliseconds: js.UndefOr[Double] = js.undefined
     
-    val minutes: js.UndefOr[Double] = js.native
+    val minutes: js.UndefOr[Double] = js.undefined
     
-    val nanoseconds: js.UndefOr[Double] = js.native
+    val nanoseconds: js.UndefOr[Double] = js.undefined
     
-    val seconds: js.UndefOr[Double] = js.native
+    val seconds: js.UndefOr[Double] = js.undefined
   }
   object TimeDescriptor {
     

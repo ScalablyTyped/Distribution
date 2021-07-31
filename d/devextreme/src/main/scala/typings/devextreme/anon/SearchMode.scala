@@ -13,23 +13,23 @@ import typings.devextreme.devextremeStrings.year
 import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchMode extends StObject {
   
-  var allowSearch: js.UndefOr[Boolean] = js.native
+  var allowSearch: js.UndefOr[Boolean] = js.undefined
   
-  var dataSource: js.UndefOr[js.Array[_] | (js.Function1[/* options */ DataSource, _]) | DataSourceOptions] = js.native
+  var dataSource: js.UndefOr[
+    js.Array[js.Any] | (js.Function1[/* options */ DataSource, js.Any]) | DataSourceOptions
+  ] = js.undefined
   
-  var groupInterval: js.UndefOr[day | hour | minute | month | quarter | second | year | Double] = js.native
+  var groupInterval: js.UndefOr[day | hour | minute | month | quarter | second | year | Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var searchMode: js.UndefOr[contains | startswith | equals] = js.native
+  var searchMode: js.UndefOr[contains | startswith | equals] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object SearchMode {
   
@@ -49,10 +49,10 @@ object SearchMode {
     def setAllowSearchUndefined: Self = StObject.set(x, "allowSearch", js.undefined)
     
     @scala.inline
-    def setDataSource(value: js.Array[_] | (js.Function1[/* options */ DataSource, _]) | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+    def setDataSource(value: js.Array[js.Any] | (js.Function1[/* options */ DataSource, js.Any]) | DataSourceOptions): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceFunction1(value: /* options */ DataSource => _): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
+    def setDataSourceFunction1(value: /* options */ DataSource => js.Any): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

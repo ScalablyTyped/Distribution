@@ -4,37 +4,35 @@ import typings.playable.mediaStreamMod.MediaStreamType
 import typings.playable.playableStrings.html5video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentBitrate extends StObject {
   
-  var bitrates: js.Array[String] = js.native
+  var bitrates: js.Array[String]
   
-  var bwEstimate: Double = js.native
+  var bwEstimate: Double
   
-  var currentBitrate: String = js.native
+  var currentBitrate: String
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var deliveryPriority: String = js.native
+  var deliveryPriority: String
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var loadingStateTimestamps: js.Object = js.native
+  var loadingStateTimestamps: js.Object
   
-  var nearestBufferSegInfo: js.Object = js.native
+  var nearestBufferSegInfo: js.Object
   
-  var output: html5video = js.native
+  var output: html5video
   
-  var overallBufferLength: Double = js.native
+  var overallBufferLength: Double
   
-  var `type`: MediaStreamType = js.native
+  var `type`: MediaStreamType
   
-  var url: String = js.native
+  var url: String
   
-  var viewDimensions: js.Object = js.native
+  var viewDimensions: js.Object
 }
 object CurrentBitrate {
   
@@ -48,13 +46,12 @@ object CurrentBitrate {
     duration: Double,
     loadingStateTimestamps: js.Object,
     nearestBufferSegInfo: js.Object,
-    output: html5video,
     overallBufferLength: Double,
     `type`: MediaStreamType,
     url: String,
     viewDimensions: js.Object
   ): CurrentBitrate = {
-    val __obj = js.Dynamic.literal(bitrates = bitrates.asInstanceOf[js.Any], bwEstimate = bwEstimate.asInstanceOf[js.Any], currentBitrate = currentBitrate.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], deliveryPriority = deliveryPriority.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], loadingStateTimestamps = loadingStateTimestamps.asInstanceOf[js.Any], nearestBufferSegInfo = nearestBufferSegInfo.asInstanceOf[js.Any], output = output.asInstanceOf[js.Any], overallBufferLength = overallBufferLength.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], viewDimensions = viewDimensions.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bitrates = bitrates.asInstanceOf[js.Any], bwEstimate = bwEstimate.asInstanceOf[js.Any], currentBitrate = currentBitrate.asInstanceOf[js.Any], currentTime = currentTime.asInstanceOf[js.Any], deliveryPriority = deliveryPriority.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], loadingStateTimestamps = loadingStateTimestamps.asInstanceOf[js.Any], nearestBufferSegInfo = nearestBufferSegInfo.asInstanceOf[js.Any], output = "html5video", overallBufferLength = overallBufferLength.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], viewDimensions = viewDimensions.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CurrentBitrate]
   }

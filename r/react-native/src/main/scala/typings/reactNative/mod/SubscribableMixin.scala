@@ -2,10 +2,8 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribableMixin extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SubscribableMixin extends StObject {
     * @param listener Function to invoke when event occurs.
     * @param context Object to use as listener context.
     */
-  def addListenerOn(eventEmitter: js.Any, eventType: String, listener: js.Function0[_], context: js.Any): Unit = js.native
+  def addListenerOn(eventEmitter: js.Any, eventType: String, listener: js.Function0[js.Any], context: js.Any): Unit
 }
 object SubscribableMixin {
   
   @scala.inline
-  def apply(addListenerOn: (js.Any, String, js.Function0[_], js.Any) => Unit): SubscribableMixin = {
+  def apply(addListenerOn: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): SubscribableMixin = {
     val __obj = js.Dynamic.literal(addListenerOn = js.Any.fromFunction4(addListenerOn))
     __obj.asInstanceOf[SubscribableMixin]
   }
@@ -35,6 +33,6 @@ object SubscribableMixin {
   implicit class SubscribableMixinMutableBuilder[Self <: SubscribableMixin] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAddListenerOn(value: (js.Any, String, js.Function0[_], js.Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
+    def setAddListenerOn(value: (js.Any, String, js.Function0[js.Any], js.Any) => Unit): Self = StObject.set(x, "addListenerOn", js.Any.fromFunction4(value))
   }
 }

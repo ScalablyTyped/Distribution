@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderLineItemShippingDetailsMethod extends StObject {
   
   /** The carrier for the shipping. Optional. See `shipments[].carrier` for a list of acceptable values. */
-  var carrier: js.UndefOr[String] = js.native
+  var carrier: js.UndefOr[String] = js.undefined
   
   /** Required. Maximum transit time. */
-  var maxDaysInTransit: js.UndefOr[Double] = js.native
+  var maxDaysInTransit: js.UndefOr[Double] = js.undefined
   
   /** Required. The name of the shipping method. */
-  var methodName: js.UndefOr[String] = js.native
+  var methodName: js.UndefOr[String] = js.undefined
   
   /** Required. Minimum transit time. */
-  var minDaysInTransit: js.UndefOr[Double] = js.native
+  var minDaysInTransit: js.UndefOr[Double] = js.undefined
 }
 object OrderLineItemShippingDetailsMethod {
   

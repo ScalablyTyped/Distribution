@@ -2,26 +2,26 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeoXmlLayerOptions extends IGeoXmlReadOptions {
+trait IGeoXmlLayerOptions
+  extends StObject
+     with IGeoXmlReadOptions {
   
   /** A boolean indicating if the map should automatically upate the view when a data set is loaded. Default: true */
-  var autoUpdateMapView: js.UndefOr[Boolean] = js.native
+  var autoUpdateMapView: js.UndefOr[Boolean] = js.undefined
   
   /** Options used to customize how the default infobox renders. */
-  var infoboxOptions: js.UndefOr[IInfoboxOptions] = js.native
+  var infoboxOptions: js.UndefOr[IInfoboxOptions] = js.undefined
   
   /** An optional name to identify the layer by. */
-  var layerName: js.UndefOr[String] = js.native
+  var layerName: js.UndefOr[String] = js.undefined
   
   /** A boolean indicating if infoboxes should automatically appear when shapes clicked. Default: false */
-  var suppressInfoboxes: js.UndefOr[Boolean] = js.native
+  var suppressInfoboxes: js.UndefOr[Boolean] = js.undefined
   
   /** A boolean indicating if the layer is visible or not. Default: true */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IGeoXmlLayerOptions {
   

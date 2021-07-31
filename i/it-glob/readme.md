@@ -10,9 +10,9 @@ Async iterable filename pattern matcher
 | ------------------ | :-------------: |
 | Full name          | it-glob |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 11 |
 | # dependents       | 7 |
-| # downloads        | 552546 |
+| # downloads        | 916043 |
 | # stars            | 0 |
 
 ## Links

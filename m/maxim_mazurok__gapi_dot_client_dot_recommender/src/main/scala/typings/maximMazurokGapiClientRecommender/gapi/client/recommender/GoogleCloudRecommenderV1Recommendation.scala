@@ -2,45 +2,43 @@ package typings.maximMazurokGapiClientRecommender.gapi.client.recommender
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommenderV1Recommendation extends StObject {
   
   /** Optional set of additional impact that this recommendation may have when trying to optimize for the primary category. These may be positive or negative. */
-  var additionalImpact: js.UndefOr[js.Array[GoogleCloudRecommenderV1Impact]] = js.native
+  var additionalImpact: js.UndefOr[js.Array[GoogleCloudRecommenderV1Impact]] = js.undefined
   
   /** Insights that led to this recommendation. */
-  var associatedInsights: js.UndefOr[js.Array[GoogleCloudRecommenderV1RecommendationInsightReference]] = js.native
+  var associatedInsights: js.UndefOr[js.Array[GoogleCloudRecommenderV1RecommendationInsightReference]] = js.undefined
   
   /** Content of the recommendation describing recommended changes to resources. */
-  var content: js.UndefOr[GoogleCloudRecommenderV1RecommendationContent] = js.native
+  var content: js.UndefOr[GoogleCloudRecommenderV1RecommendationContent] = js.undefined
   
   /** Free-form human readable summary in English. The maximum length is 500 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Fingerprint of the Recommendation. Provides optimistic locking when updating states. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** Last time this recommendation was refreshed by the system that created it in the first place. */
-  var lastRefreshTime: js.UndefOr[String] = js.native
+  var lastRefreshTime: js.UndefOr[String] = js.undefined
   
   /** Name of recommendation. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The primary impact that this recommendation can have while trying to optimize for one category. */
-  var primaryImpact: js.UndefOr[GoogleCloudRecommenderV1Impact] = js.native
+  var primaryImpact: js.UndefOr[GoogleCloudRecommenderV1Impact] = js.undefined
   
   /**
     * Contains an identifier for a subtype of recommendations produced for the same recommender. Subtype is a function of content and impact, meaning a new subtype might be added when
     * significant changes to `content` or `primary_impact.category` are introduced. See the Recommenders section to see a list of subtypes for a given Recommender. Examples: For
     * recommender = "google.iam.policy.Recommender", recommender_subtype can be one of "REMOVE_ROLE"/"REPLACE_ROLE"
     */
-  var recommenderSubtype: js.UndefOr[String] = js.native
+  var recommenderSubtype: js.UndefOr[String] = js.undefined
   
   /** Information for state. Contains state and metadata. */
-  var stateInfo: js.UndefOr[GoogleCloudRecommenderV1RecommendationStateInfo] = js.native
+  var stateInfo: js.UndefOr[GoogleCloudRecommenderV1RecommendationStateInfo] = js.undefined
 }
 object GoogleCloudRecommenderV1Recommendation {
   

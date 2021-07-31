@@ -5,7 +5,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amChartMod {
@@ -15,7 +14,9 @@ object amChartMod {
   /**
     * used when constructing a chart with a theme
     */
-  class default () extends AmChart {
+  class default ()
+    extends StObject
+       with AmChart {
     def this(theme: js.Any) = this()
   }
   
@@ -186,7 +187,7 @@ object amChartMod {
       * You can have any number of fields and use any field names.
       * In case of AmMap, data provider should be MapData object.
       */
-    var dataProvider: js.Array[_] = js.native
+    var dataProvider: js.Array[js.Any] = js.native
     
     /**
       * Decimal separator.
@@ -205,7 +206,7 @@ object amChartMod {
       * Export config. Specifies how export to image/data export/print/annotate menu will look and behave.
       * You can find a lot of examples in amcharts/plugins/export folder.
       */
-    var export: typings.amcharts.exportSettingsMod.default = js.native
+    var `export`: typings.amcharts.exportSettingsMod.default = js.native
     
     /**
       * Font family. Verdana
@@ -323,7 +324,7 @@ object amChartMod {
       *     {number:1e+24,prefix:"Y"}
       * ]
       */
-    var prefixesOfBigNumbers: js.Array[_] = js.native
+    var prefixesOfBigNumbers: js.Array[js.Any] = js.native
     
     /**
       * Prefixes which are used to make small numbers shorter: 2μ instead of 0.000002, etc.
@@ -340,7 +341,7 @@ object amChartMod {
       *     {number:1e-3, prefix:"m"}
       * ]
       */
-    var prefixesOfSmallNumbers: js.Array[_] = js.native
+    var prefixesOfSmallNumbers: js.Array[js.Any] = js.native
     
     /**
       * Removes chart's legend.

@@ -7,18 +7,20 @@ import typings.reactToastify.typesMod.ToastClassName
 import typings.reactToastify.typesMod.TypeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
   
   object ProgressBar {
     
+    @scala.inline
+    def apply(
+      hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn: ProgressBarProps
+    ): Element = ^.asInstanceOf[js.Dynamic].apply(hasDelayIsRunningCloseToastTypeHideClassNameUserStyleControlledProgressProgressRtlIsIn.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("react-toastify/dist/components/ProgressBar", "ProgressBar")
     @js.native
-    def apply(
-      hasDelayIsRunningCloseToastTypeHideClassNameStyleControlledProgressProgressRtlIsIn: ProgressBarProps
-    ): Element = js.native
+    val ^ : js.Any = js.native
     
     object defaultProps {
       
@@ -38,63 +40,62 @@ object progressBarMod {
     }
   }
   
-  @js.native
   trait ProgressBarProps extends StObject {
     
     /**
       * Optionnal className
       */
-    var className: js.UndefOr[ToastClassName] = js.native
+    var className: js.UndefOr[ToastClassName] = js.undefined
     
     /**
       * Func to close the current toast
       */
-    def closeToast(): Unit = js.native
+    def closeToast(): Unit
     
     /**
       * Tell wether or not controlled progress bar is used
       */
-    var controlledProgress: js.UndefOr[Boolean] = js.native
+    var controlledProgress: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The animation delay which determine when to close the toast
       */
-    var delay: Double = js.native
+    var delay: Double
     
     /**
       * Hide or not the progress bar
       */
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tell if the component is visible on screen or not
       */
-    var isIn: js.UndefOr[Boolean] = js.native
+    var isIn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether or not the animation is running or paused
       */
-    var isRunning: Boolean = js.native
+    var isRunning: Boolean
     
     /**
       * Controlled progress value
       */
-    var progress: js.UndefOr[Double | String] = js.native
+    var progress: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Support rtl content
       */
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optionnal inline style
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Optional type : info, success ...
       */
-    var `type`: TypeOptions = js.native
+    var `type`: TypeOptions
   }
   object ProgressBarProps {
     

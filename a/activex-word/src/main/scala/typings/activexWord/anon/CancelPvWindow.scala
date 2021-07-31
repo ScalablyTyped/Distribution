@@ -3,15 +3,13 @@ package typings.activexWord.anon
 import typings.activexWord.Word.ProtectedViewWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelPvWindow extends StObject {
   
-  var Cancel: Boolean = js.native
+  var Cancel: Boolean
   
-  val PvWindow: ProtectedViewWindow = js.native
+  val PvWindow: ProtectedViewWindow
 }
 object CancelPvWindow {
   

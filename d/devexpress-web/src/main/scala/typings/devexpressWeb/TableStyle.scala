@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the table style settings.
   */
-@js.native
-trait TableStyle extends StyleBase {
+trait TableStyle
+  extends StObject
+     with StyleBase {
   
   /**
     * Gets or sets the style from which the current style inherits.
     */
-  val parent: TableStyle = js.native
+  val parent: TableStyle
 }
 object TableStyle {
   

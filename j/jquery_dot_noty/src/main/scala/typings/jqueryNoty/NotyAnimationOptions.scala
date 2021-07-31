@@ -2,19 +2,17 @@ package typings.jqueryNoty
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotyAnimationOptions extends StObject {
   
-  var close: js.UndefOr[js.Any] = js.native
+  var close: js.UndefOr[js.Any] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var open: js.UndefOr[js.Any] = js.native
+  var open: js.UndefOr[js.Any] = js.undefined
   
-  var speed: js.UndefOr[Double] = js.native
+  var speed: js.UndefOr[Double] = js.undefined
 }
 object NotyAnimationOptions {
   

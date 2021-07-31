@@ -3,27 +3,25 @@ package typings.stylus.anon
 import typings.stylus.mod.Stylus.Nodes.Expression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cond extends StObject {
   
-  var __type: String = js.native
+  var __type: String
   
-  var block: typings.stylus.mod.Stylus.Nodes.Block = js.native
+  var block: typings.stylus.mod.Stylus.Nodes.Block
   
-  var column: Double = js.native
+  var column: Double
   
-  var cond: Expression = js.native
+  var cond: Expression
   
-  var elses: js.Array[Expression] = js.native
+  var elses: js.Array[Expression]
   
-  var filename: String = js.native
+  var filename: String
   
-  var lineno: Double = js.native
+  var lineno: Double
   
-  var negate: Boolean = js.native
+  var negate: Boolean
 }
 object Cond {
   

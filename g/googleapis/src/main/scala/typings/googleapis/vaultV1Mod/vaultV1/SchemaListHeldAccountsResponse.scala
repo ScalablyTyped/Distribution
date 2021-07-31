@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Returns a list of held accounts for a hold.
   */
-@js.native
 trait SchemaListHeldAccountsResponse extends StObject {
   
   /**
     * The held accounts on a hold.
     */
-  var accounts: js.UndefOr[js.Array[SchemaHeldAccount]] = js.native
+  var accounts: js.UndefOr[js.Array[SchemaHeldAccount]] = js.undefined
 }
 object SchemaListHeldAccountsResponse {
   

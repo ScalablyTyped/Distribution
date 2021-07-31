@@ -2,24 +2,22 @@ package typings.googleGax.operationsMod.google.longrunning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a ListOperationsRequest. */
-@js.native
 trait IListOperationsRequest extends StObject {
   
   /** ListOperationsRequest filter */
-  var filter: js.UndefOr[String | Null] = js.native
+  var filter: js.UndefOr[String | Null] = js.undefined
   
   /** ListOperationsRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** ListOperationsRequest pageSize */
-  var pageSize: js.UndefOr[Double | Null] = js.native
+  var pageSize: js.UndefOr[Double | Null] = js.undefined
   
   /** ListOperationsRequest pageToken */
-  var pageToken: js.UndefOr[String | Null] = js.native
+  var pageToken: js.UndefOr[String | Null] = js.undefined
 }
 object IListOperationsRequest {
   

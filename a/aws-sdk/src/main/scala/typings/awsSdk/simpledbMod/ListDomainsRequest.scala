@@ -2,21 +2,19 @@ package typings.awsSdk.simpledbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDomainsRequest extends StObject {
   
   /**
     * The maximum number of domain names you want returned. The range is 1 to 100. The default setting is 100.
     */
-  var MaxNumberOfDomains: js.UndefOr[Integer] = js.native
+  var MaxNumberOfDomains: js.UndefOr[Integer] = js.undefined
   
   /**
     * A string informing Amazon SimpleDB where to start the next list of domain names.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListDomainsRequest {
   

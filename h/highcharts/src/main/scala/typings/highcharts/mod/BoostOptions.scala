@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoostOptions extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait BoostOptions extends StObject {
     * will be boosted if one of the series crosses its threshold, and all the
     * series can be boosted.
     */
-  var allowForce: js.UndefOr[Boolean] = js.native
+  var allowForce: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Debugging options for boost.
     * Useful for benchmarking, and general timing.
     */
-  var debug: js.UndefOr[BoostDebugOptions] = js.native
+  var debug: js.UndefOr[BoostDebugOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable boost on a
     * chart.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Set the series threshold for
@@ -36,7 +34,7 @@ trait BoostOptions extends StObject {
     * every series in it will be rendered to a common canvas. This offers a
     * significant speed improvment in charts with a very high amount of series.
     */
-  var seriesThreshold: js.UndefOr[Double | Null] = js.native
+  var seriesThreshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable GPU
@@ -48,7 +46,7 @@ trait BoostOptions extends StObject {
     * timestamps), it won't work correctly. This is due to floating point
     * precission.
     */
-  var useGPUTranslations: js.UndefOr[Boolean] = js.native
+  var useGPUTranslations: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable pre-allocation
@@ -65,7 +63,7 @@ trait BoostOptions extends StObject {
     * As such, care should be taken when using this setting to make sure that
     * it doesn't cause any rendering glitches with the given use-case.
     */
-  var usePreallocated: js.UndefOr[Boolean] = js.native
+  var usePreallocated: js.UndefOr[Boolean] = js.undefined
 }
 object BoostOptions {
   

@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet")
@@ -17,7 +16,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class FileDescriptorSet () extends Message {
   
   def addFile(): FileDescriptorProto = js.native
-  def addFile(value: js.UndefOr[scala.Nothing], index: Double): FileDescriptorProto = js.native
+  def addFile(value: Unit, index: Double): FileDescriptorProto = js.native
   def addFile(value: FileDescriptorProto): FileDescriptorProto = js.native
   def addFile(value: FileDescriptorProto, index: Double): FileDescriptorProto = js.native
   
@@ -34,13 +33,11 @@ object FileDescriptorSet {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): FileDescriptorSet = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): FileDescriptorSet = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[FileDescriptorSet]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: FileDescriptorSet, reader: BinaryReader): FileDescriptorSet = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: FileDescriptorSet, reader: BinaryReader): FileDescriptorSet = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[FileDescriptorSet]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet.extensions")
   @js.native
@@ -55,18 +52,15 @@ object FileDescriptorSet {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: FileDescriptorSet, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: FileDescriptorSet, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "FileDescriptorSet.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: FileDescriptorSet): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: FileDescriptorSet): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var fileList: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject] = js.native
+    var fileList: js.Array[typings.googleProtobuf.descriptorPbMod.FileDescriptorProto.AsObject]
   }
   object AsObject {
     

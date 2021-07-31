@@ -21,252 +21,200 @@ import typings.vueShared.vueSharedStrings.nullishCoalescingOperator
 import typings.vueShared.vueSharedStrings.optionalChaining
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@vue/shared", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@vue/shared", "EMPTY_ARR")
   @js.native
   val EMPTY_ARR: js.Array[scala.Nothing] = js.native
   
-  @JSImport("@vue/shared", "NO")
-  @js.native
-  def NO(): Boolean = js.native
+  @scala.inline
+  def NO(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("NO")().asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "NOOP")
-  @js.native
-  def NOOP(): Unit = js.native
+  @scala.inline
+  def NOOP(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("NOOP")().asInstanceOf[Unit]
   
   @JSImport("@vue/shared", "babelParserDefaultPlugins")
   @js.native
   val babelParserDefaultPlugins: js.Tuple3[bigInt, optionalChaining, nullishCoalescingOperator] = js.native
   
-  @JSImport("@vue/shared", "camelize")
-  @js.native
-  def camelize(str: String): String = js.native
+  @scala.inline
+  def camelize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("camelize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "capitalize")
-  @js.native
-  def capitalize(str: String): String = js.native
+  @scala.inline
+  def capitalize(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("capitalize")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "escapeHtml")
-  @js.native
-  def escapeHtml(string: js.Any): String = js.native
+  @scala.inline
+  def `def`(obj: js.Object, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("def")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def `def`(obj: js.Object, key: js.Symbol, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("def")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@vue/shared", "escapeHtmlComment")
-  @js.native
-  def escapeHtmlComment(src: String): String = js.native
+  @scala.inline
+  def escapeHtml(string: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtml")(string.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "extend")
-  @js.native
-  def extend(target: js.Object, sources: js.Any*): js.Any = js.native
-  @JSImport("@vue/shared", "extend")
-  @js.native
-  def extend[T, U](target: T, source: U): T with U = js.native
-  @JSImport("@vue/shared", "extend")
-  @js.native
-  def extend[T_1, U_1, V](target: T_1, source1: U_1, source2: V): T_1 with U_1 with V = js.native
-  @JSImport("@vue/shared", "extend")
-  @js.native
-  def extend[T_2, U_2, V_1, W](target: T_2, source1: U_2, source2: V_1, source3: W): T_2 with U_2 with V_1 with W = js.native
+  @scala.inline
+  def escapeHtmlComment(src: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeHtmlComment")(src.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String): String = js.native
-  @JSImport("@vue/shared", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: js.UndefOr[scala.Nothing], end: Double): String = js.native
-  @JSImport("@vue/shared", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: Double): String = js.native
-  @JSImport("@vue/shared", "generateCodeFrame")
-  @js.native
-  def generateCodeFrame(source: String, start: Double, end: Double): String = js.native
+  @scala.inline
+  def extend(target: js.Object, sources: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], sources.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def extend[T, U](target: T, source: U): T & U = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[T & U]
+  @scala.inline
+  def extend[T_1, U_1, V](target: T_1, source1: U_1, source2: V): T_1 & U_1 & V = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any])).asInstanceOf[T_1 & U_1 & V]
+  @scala.inline
+  def extend[T_2, U_2, V_1, W](target: T_2, source1: U_2, source2: V_1, source3: W): T_2 & U_2 & V_1 & W = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(target.asInstanceOf[js.Any], source1.asInstanceOf[js.Any], source2.asInstanceOf[js.Any], source3.asInstanceOf[js.Any])).asInstanceOf[T_2 & U_2 & V_1 & W]
   
-  @JSImport("@vue/shared", "getGlobalThis")
-  @js.native
-  def getGlobalThis(): js.Any = js.native
+  @scala.inline
+  def generateCodeFrame(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Double, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def generateCodeFrame(source: String, start: Unit, end: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateCodeFrame")(source.asInstanceOf[js.Any], start.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "hasChanged")
-  @js.native
-  def hasChanged(value: js.Any, oldValue: js.Any): Boolean = js.native
+  @scala.inline
+  def getGlobalThis(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalThis")().asInstanceOf[js.Any]
   
-  @JSImport("@vue/shared", "hasOwn")
-  @js.native
-  def hasOwn(`val`: js.Object, key: String): /* is never */ Boolean = js.native
-  @JSImport("@vue/shared", "hasOwn")
-  @js.native
-  def hasOwn(`val`: js.Object, key: js.Symbol): /* is never */ Boolean = js.native
+  @scala.inline
+  def hasChanged(value: js.Any, oldValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasChanged")(value.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "hyphenate")
-  @js.native
-  def hyphenate(str: String): String = js.native
+  @scala.inline
+  def hasOwn(`val`: js.Object, key: String): /* is never */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwn")(`val`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[/* is never */ Boolean]
+  @scala.inline
+  def hasOwn(`val`: js.Object, key: js.Symbol): /* is never */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasOwn")(`val`.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[/* is never */ Boolean]
   
-  @JSImport("@vue/shared", "invokeArrayFns")
-  @js.native
-  def invokeArrayFns(fns: js.Array[js.Function]): Unit = js.native
-  @JSImport("@vue/shared", "invokeArrayFns")
-  @js.native
-  def invokeArrayFns(fns: js.Array[js.Function], arg: js.Any): Unit = js.native
+  @scala.inline
+  def hyphenate(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hyphenate")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "isArray")
-  @js.native
-  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = js.native
+  @scala.inline
+  def invokeArrayFns(fns: js.Array[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invokeArrayFns")(fns.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def invokeArrayFns(fns: js.Array[js.Function], arg: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("invokeArrayFns")(fns.asInstanceOf[js.Any], arg.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@vue/shared", "isBooleanAttr")
-  @js.native
-  def isBooleanAttr(key: String): Boolean = js.native
+  @scala.inline
+  def isArray(arg: js.Any): /* is std.Array<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is std.Array<any> */ Boolean]
   
-  @JSImport("@vue/shared", "isDate")
-  @js.native
-  def isDate(`val`: js.Any): /* is std.Date */ Boolean = js.native
+  @scala.inline
+  def isBooleanAttr(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isBooleanAttr")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isFunction")
-  @js.native
-  def isFunction(`val`: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isDate(`val`: js.Any): /* is std.Date */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDate")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Date */ Boolean]
   
-  @JSImport("@vue/shared", "isGloballyWhitelisted")
-  @js.native
-  def isGloballyWhitelisted(key: String): Boolean = js.native
+  @scala.inline
+  def isFunction(`val`: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("@vue/shared", "isHTMLTag")
-  @js.native
-  def isHTMLTag(key: String): Boolean = js.native
+  @scala.inline
+  def isGloballyWhitelisted(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGloballyWhitelisted")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isIntegerKey")
-  @js.native
-  def isIntegerKey(key: js.Any): Boolean = js.native
+  @scala.inline
+  def isHTMLTag(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHTMLTag")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isKnownAttr")
-  @js.native
-  def isKnownAttr(key: String): Boolean = js.native
+  @scala.inline
+  def isIntegerKey(key: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIntegerKey")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isMap")
-  @js.native
-  def isMap(`val`: js.Any): /* is std.Map<any, any> */ Boolean = js.native
+  @scala.inline
+  def isKnownAttr(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKnownAttr")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isModelListener")
-  @js.native
-  def isModelListener(key: String): Boolean = js.native
+  @scala.inline
+  def isMap(`val`: js.Any): /* is std.Map<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMap")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Map<any, any> */ Boolean]
   
-  @JSImport("@vue/shared", "isNoUnitNumericStyleProp")
-  @js.native
-  def isNoUnitNumericStyleProp(key: String): Boolean = js.native
+  @scala.inline
+  def isModelListener(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isModelListener")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isObject")
-  @js.native
-  def isObject(`val`: js.Any): /* is std.Record<any, any> */ Boolean = js.native
+  @scala.inline
+  def isNoUnitNumericStyleProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNoUnitNumericStyleProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isOn")
-  @js.native
-  def isOn(key: String): Boolean = js.native
+  @scala.inline
+  def isObject(`val`: js.Any): /* is std.Record<any, any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Record<any, any> */ Boolean]
   
-  @JSImport("@vue/shared", "isPlainObject")
-  @js.native
-  def isPlainObject(`val`: js.Any): /* is object */ Boolean = js.native
+  @scala.inline
+  def isOn(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isOn")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isPromise")
-  @js.native
-  def isPromise[T](`val`: js.Any): /* is std.Promise<T> */ Boolean = js.native
+  @scala.inline
+  def isPlainObject(`val`: js.Any): /* is object */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPlainObject")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is object */ Boolean]
   
-  @JSImport("@vue/shared", "isReservedProp")
-  @js.native
-  def isReservedProp(key: String): Boolean = js.native
+  @scala.inline
+  def isPromise[T](`val`: js.Any): /* is std.Promise<T> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPromise")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Promise<T> */ Boolean]
   
-  @JSImport("@vue/shared", "isSSRSafeAttrName")
-  @js.native
-  def isSSRSafeAttrName(name: String): Boolean = js.native
+  @scala.inline
+  def isReservedProp(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReservedProp")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isSVGTag")
-  @js.native
-  def isSVGTag(key: String): Boolean = js.native
+  @scala.inline
+  def isSSRSafeAttrName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSSRSafeAttrName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isSet")
-  @js.native
-  def isSet(`val`: js.Any): /* is std.Set<any> */ Boolean = js.native
+  @scala.inline
+  def isSVGTag(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSVGTag")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isSpecialBooleanAttr")
-  @js.native
-  def isSpecialBooleanAttr(key: String): Boolean = js.native
+  @scala.inline
+  def isSet(`val`: js.Any): /* is std.Set<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSet")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is std.Set<any> */ Boolean]
   
-  @JSImport("@vue/shared", "isString")
-  @js.native
-  def isString(`val`: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isSpecialBooleanAttr(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpecialBooleanAttr")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "isSymbol")
-  @js.native
-  def isSymbol(`val`: js.Any): /* is symbol */ Boolean = js.native
+  @scala.inline
+  def isString(`val`: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
   
-  @JSImport("@vue/shared", "isVoidTag")
-  @js.native
-  def isVoidTag(key: String): Boolean = js.native
+  @scala.inline
+  def isSymbol(`val`: js.Any): /* is symbol */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbol")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is symbol */ Boolean]
   
-  @JSImport("@vue/shared", "looseEqual")
-  @js.native
-  def looseEqual(a: js.Any, b: js.Any): Boolean = js.native
+  @scala.inline
+  def isVoidTag(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVoidTag")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "looseIndexOf")
-  @js.native
-  def looseIndexOf(arr: js.Array[_], `val`: js.Any): Double = js.native
+  @scala.inline
+  def looseEqual(a: js.Any, b: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("looseEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@vue/shared", "makeMap")
-  @js.native
-  def makeMap(str: String): js.Function1[/* key */ String, Boolean] = js.native
-  @JSImport("@vue/shared", "makeMap")
-  @js.native
-  def makeMap(str: String, expectsLowerCase: Boolean): js.Function1[/* key */ String, Boolean] = js.native
+  @scala.inline
+  def looseIndexOf(arr: js.Array[js.Any], `val`: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("looseIndexOf")(arr.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@vue/shared", "normalizeClass")
-  @js.native
-  def normalizeClass(value: js.Any): String = js.native
+  @scala.inline
+  def makeMap(str: String): js.Function1[/* key */ String, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMap")(str.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* key */ String, Boolean]]
+  @scala.inline
+  def makeMap(str: String, expectsLowerCase: Boolean): js.Function1[/* key */ String, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeMap")(str.asInstanceOf[js.Any], expectsLowerCase.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* key */ String, Boolean]]
   
-  @JSImport("@vue/shared", "normalizeStyle")
-  @js.native
-  def normalizeStyle(value: js.Any): js.UndefOr[NormalizedStyle] = js.native
+  @scala.inline
+  def normalizeClass(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeClass")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "objectToString")
-  @js.native
-  def objectToString(): String = js.native
+  @scala.inline
+  def normalizeStyle(value: js.Any): js.UndefOr[NormalizedStyle] = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeStyle")(value.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[NormalizedStyle]]
   
-  @JSImport("@vue/shared", "parseStringStyle")
-  @js.native
-  def parseStringStyle(cssText: String): NormalizedStyle = js.native
+  @scala.inline
+  def objectToString(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("objectToString")().asInstanceOf[String]
+  
+  @scala.inline
+  def parseStringStyle(cssText: String): NormalizedStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("parseStringStyle")(cssText.asInstanceOf[js.Any]).asInstanceOf[NormalizedStyle]
   
   @JSImport("@vue/shared", "propsToAttrMap")
   @js.native
   val propsToAttrMap: Record[String, js.UndefOr[String]] = js.native
   
-  @JSImport("@vue/shared", "remove")
-  @js.native
-  def remove[T](arr: js.Array[T], el: T): Unit = js.native
+  @scala.inline
+  def remove[T](arr: js.Array[T], el: T): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(arr.asInstanceOf[js.Any], el.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@vue/shared", "stringifyStyle")
-  @js.native
-  def stringifyStyle(): String = js.native
-  @JSImport("@vue/shared", "stringifyStyle")
-  @js.native
-  def stringifyStyle(styles: NormalizedStyle): String = js.native
+  @scala.inline
+  def stringifyStyle(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyStyle")().asInstanceOf[String]
+  @scala.inline
+  def stringifyStyle(styles: NormalizedStyle): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringifyStyle")(styles.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "toDisplayString")
-  @js.native
-  def toDisplayString(`val`: js.Any): String = js.native
+  @scala.inline
+  def toDisplayString(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDisplayString")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "toHandlerKey")
-  @js.native
-  def toHandlerKey(str: String): String = js.native
+  @scala.inline
+  def toHandlerKey(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHandlerKey")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "toNumber")
-  @js.native
-  def toNumber(`val`: js.Any): js.Any = js.native
+  @scala.inline
+  def toNumber(`val`: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("toNumber")(`val`.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@vue/shared", "toRawType")
-  @js.native
-  def toRawType(value: js.Any): String = js.native
+  @scala.inline
+  def toRawType(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toRawType")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@vue/shared", "toTypeString")
-  @js.native
-  def toTypeString(value: js.Any): String = js.native
+  @scala.inline
+  def toTypeString(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTypeString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type NormalizedStyle = Record[String, String | Double]
   
@@ -411,11 +359,4 @@ object mod {
     @scala.inline
     def STABLE: `1` = 1.asInstanceOf[`1`]
   }
-  
-  @JSImport("@vue/shared", "def")
-  @js.native
-  def `def`(obj: js.Object, key: String, value: js.Any): Unit = js.native
-  @JSImport("@vue/shared", "def")
-  @js.native
-  def `def`(obj: js.Object, key: js.Symbol, value: js.Any): Unit = js.native
 }

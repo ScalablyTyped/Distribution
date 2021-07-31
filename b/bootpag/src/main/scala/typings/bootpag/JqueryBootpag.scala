@@ -3,103 +3,101 @@ package typings.bootpag
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JqueryBootpag {
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * css class for active (default 'active')
       */
-    var activeClass: js.UndefOr[String] = js.native
+    var activeClass: js.UndefOr[String] = js.undefined
     
     /**
       * css class for disabled (default 'disabled')
       */
-    var disabledClass: js.UndefOr[String] = js.native
+    var disabledClass: js.UndefOr[String] = js.undefined
     
     /**
       * name of first (default 'FIRST')
       */
-    var first: js.UndefOr[String] = js.native
+    var first: js.UndefOr[String] = js.undefined
     
     /**
       * css class for first (default 'first')
       */
-    var firstClass: js.UndefOr[String] = js.native
+    var firstClass: js.UndefOr[String] = js.undefined
     
     /**
       * do we ant first and last (default true)
       */
-    var firstLastUse: js.UndefOr[Boolean] = js.native
+    var firstLastUse: js.UndefOr[Boolean] = js.undefined
     
     /**
       * template for pagination links (default "javascript:void(0);")
       */
-    var href: js.UndefOr[String] = js.native
+    var href: js.UndefOr[String] = js.undefined
     
     /**
       * variable name in href template for page number (default "{{number}}")
       */
-    var hrefVariable: js.UndefOr[String] = js.native
+    var hrefVariable: js.UndefOr[String] = js.undefined
     
     /**
       * name of last (default 'LAST')
       */
-    var last: js.UndefOr[String] = js.native
+    var last: js.UndefOr[String] = js.undefined
     
     /**
       * css class for last (default 'last')
       */
-    var lastClass: js.UndefOr[String] = js.native
+    var lastClass: js.UndefOr[String] = js.undefined
     
     /**
       * next/prev buttons move over one page or maximum visible pages (default true)
       */
-    var leaps: js.UndefOr[Boolean] = js.native
+    var leaps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * maximum number of visible pages
       */
-    var maxVisible: Double = js.native
+    var maxVisible: Double
     
     /**
       * next button text (default ???)
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * css class for next (default 'next')
       */
-    var nextClass: js.UndefOr[String] = js.native
+    var nextClass: js.UndefOr[String] = js.undefined
     
     /**
       * page to show on start
       */
-    var page: js.UndefOr[Double] = js.native
+    var page: js.UndefOr[Double] = js.undefined
     
     /**
       * prev button text (default ???)
       */
-    var prev: js.UndefOr[String] = js.native
+    var prev: js.UndefOr[String] = js.undefined
     
     /**
       * css class for prev (default 'prev')
       */
-    var prevClass: js.UndefOr[String] = js.native
+    var prevClass: js.UndefOr[String] = js.undefined
     
     /**
       * number of pages
       */
-    var total: Double = js.native
+    var total: Double
     
     /**
       * css class for wrap (default 'pagination')
       */
-    var wrapClass: js.UndefOr[String] = js.native
+    var wrapClass: js.UndefOr[String] = js.undefined
   }
   object Options {
     

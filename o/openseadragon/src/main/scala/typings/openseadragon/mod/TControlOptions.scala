@@ -2,17 +2,15 @@ package typings.openseadragon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TControlOptions extends StObject {
   
-  var anchor: js.UndefOr[ControlAnchor] = js.native
+  var anchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var attachToViewer: js.UndefOr[Boolean] = js.native
+  var attachToViewer: js.UndefOr[Boolean] = js.undefined
   
-  var autoFade: js.UndefOr[Boolean] = js.native
+  var autoFade: js.UndefOr[Boolean] = js.undefined
 }
 object TControlOptions {
   

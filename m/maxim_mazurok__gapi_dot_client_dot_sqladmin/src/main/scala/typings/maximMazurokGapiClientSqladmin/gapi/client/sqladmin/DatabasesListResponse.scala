@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabasesListResponse extends StObject {
   
   /** List of database resources in the instance. */
-  var items: js.UndefOr[js.Array[Database]] = js.native
+  var items: js.UndefOr[js.Array[Database]] = js.undefined
   
   /** This is always *sql#databasesList*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object DatabasesListResponse {
   

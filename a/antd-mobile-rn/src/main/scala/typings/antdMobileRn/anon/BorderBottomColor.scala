@@ -2,29 +2,27 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderBottomColor extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var borderBottomColor: String = js.native
+  var borderBottomColor: String
   
-  var borderBottomWidth: Double = js.native
+  var borderBottomWidth: Double
   
-  var flexDirection: String = js.native
+  var flexDirection: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var marginBottom: Double = js.native
+  var marginBottom: Double
   
-  var marginLeft: Double = js.native
+  var marginLeft: Double
   
-  var marginTop: Double = js.native
+  var marginTop: Double
   
-  var paddingRight: Double = js.native
+  var paddingRight: Double
 }
 object BorderBottomColor {
   

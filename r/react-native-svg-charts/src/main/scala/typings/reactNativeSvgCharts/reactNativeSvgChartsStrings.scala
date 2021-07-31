@@ -3,7 +3,6 @@ package typings.reactNativeSvgCharts
 import typings.reactNativeSvgCharts.mod.GridDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeSvgChartsStrings {
@@ -14,17 +13,23 @@ object reactNativeSvgChartsStrings {
   def default: default = "default".asInstanceOf[default]
   
   @js.native
-  sealed trait BOTH extends GridDirection
+  sealed trait BOTH
+    extends StObject
+       with GridDirection
   @scala.inline
   def BOTH: BOTH = "BOTH".asInstanceOf[BOTH]
   
   @js.native
-  sealed trait HORIZONTAL extends GridDirection
+  sealed trait HORIZONTAL
+    extends StObject
+       with GridDirection
   @scala.inline
   def HORIZONTAL: HORIZONTAL = "HORIZONTAL".asInstanceOf[HORIZONTAL]
   
   @js.native
-  sealed trait VERTICAL extends GridDirection
+  sealed trait VERTICAL
+    extends StObject
+       with GridDirection
   @scala.inline
   def VERTICAL: VERTICAL = "VERTICAL".asInstanceOf[VERTICAL]
   

@@ -3,7 +3,6 @@ package typings.jqueryAjaxfile
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait JQueryXHR
-  extends XMLHttpRequest
+  extends StObject
+     with XMLHttpRequest
      with JQueryPromise[js.Any] {
   
   def abort(statusText: String): Unit = js.native
@@ -31,9 +31,9 @@ trait JQueryXHR
     */
   def `then`(
     doneCallback: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ this.type, Unit]
-  ): JQueryPromise[_] = js.native
+  ): JQueryPromise[js.Any] = js.native
   def `then`(
     doneCallback: js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ this.type, Unit],
     failCallback: js.Function3[/* jqXHR */ this.type, /* textStatus */ String, /* errorThrown */ js.Any, Unit]
-  ): JQueryPromise[_] = js.native
+  ): JQueryPromise[js.Any] = js.native
 }

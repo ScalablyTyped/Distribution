@@ -4,7 +4,6 @@ import typings.node.NodeJS.Timeout
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object retryifyQueueMod {
@@ -15,13 +14,11 @@ object retryifyQueueMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.add")
-    @js.native
-    def add(fn: js.Function): Unit = js.native
+    @scala.inline
+    def add(fn: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.init")
-    @js.native
-    def init(): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
     
     @JSImport("atomically/dist/utils/retryify_queue", "default.interval")
     @js.native
@@ -54,20 +51,16 @@ object retryifyQueueMod {
     @scala.inline
     def queueWaiting_=(x: Set[js.Function]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queueWaiting")(x.asInstanceOf[js.Any])
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.remove")
-    @js.native
-    def remove(fn: js.Function): Unit = js.native
+    @scala.inline
+    def remove(fn: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(fn.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.schedule")
-    @js.native
-    def schedule(): js.Promise[js.Function] = js.native
+    @scala.inline
+    def schedule(): js.Promise[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("schedule")().asInstanceOf[js.Promise[js.Function]]
     
-    @JSImport("atomically/dist/utils/retryify_queue", "default.tick")
-    @js.native
-    def tick(): Unit = js.native
+    @scala.inline
+    def tick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tick")().asInstanceOf[Unit]
   }
 }

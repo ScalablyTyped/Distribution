@@ -7,7 +7,6 @@ import typings.jquery.JQueryEventObject
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
@@ -51,16 +50,15 @@ object jasmine {
     def set(html: String): String = js.native
   }
   
-  @js.native
   trait JQueryEventSpy extends StObject {
     
-    var eventName: String = js.native
+    var eventName: String
     
-    def handler(eventObject: JQueryEventObject): js.Any = js.native
+    def handler(eventObject: JQueryEventObject): js.Any
     
-    def reset(): js.Any = js.native
+    def reset(): js.Any
     
-    var selector: String = js.native
+    var selector: String
   }
   object JQueryEventSpy {
     
@@ -87,22 +85,21 @@ object jasmine {
     }
   }
   
-  @js.native
   trait JSONFixtures extends StObject {
     
-    def clearCache(): Unit = js.native
+    def clearCache(): Unit
     
-    var fixturesPath: String = js.native
+    var fixturesPath: String
     
-    def getFixtureData_(url: String): js.Any = js.native
+    def getFixtureData_(url: String): js.Any
     
-    def load(uls: String*): Unit = js.native
+    def load(uls: String*): Unit
     
-    def loadFixtureIntoCache_(relativeUrl: String): Unit = js.native
+    def loadFixtureIntoCache_(relativeUrl: String): Unit
     
-    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any = js.native
+    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any
     
-    def read(uls: String*): String = js.native
+    def read(uls: String*): String
   }
   object JSONFixtures {
     
@@ -146,16 +143,15 @@ object jasmine {
     }
   }
   
-  @js.native
   trait JasmineJQuery extends StObject {
     
-    def browserTagCaseIndependentHtml(html: String): String = js.native
+    def browserTagCaseIndependentHtml(html: String): String
     
-    def elementToString(element: JQuery[HTMLElement]): String = js.native
+    def elementToString(element: JQuery[HTMLElement]): String
     
-    var events: JasmineJQueryEvents = js.native
+    var events: JasmineJQueryEvents
     
-    var matchersClass: js.Any = js.native
+    var matchersClass: js.Any
   }
   object JasmineJQuery {
     
@@ -187,22 +183,21 @@ object jasmine {
     }
   }
   
-  @js.native
   trait JasmineJQueryEvents extends StObject {
     
-    def args(selector: String, eventName: String): js.Any = js.native
+    def args(selector: String, eventName: String): js.Any
     
-    def cleanUp(): Unit = js.native
+    def cleanUp(): Unit
     
-    def spyOn(selector: String, eventName: String): JQueryEventSpy = js.native
+    def spyOn(selector: String, eventName: String): JQueryEventSpy
     
-    def wasPrevented(selector: String, eventName: String): Boolean = js.native
+    def wasPrevented(selector: String, eventName: String): Boolean
     
-    def wasStopped(selector: String, eventName: String): Boolean = js.native
+    def wasStopped(selector: String, eventName: String): Boolean
     
-    def wasTriggered(selector: String, eventName: String): Boolean = js.native
+    def wasTriggered(selector: String, eventName: String): Boolean
     
-    def wasTriggeredWith(selector: String, eventName: String, expectedArgs: js.Any, env: Env): Boolean = js.native
+    def wasTriggeredWith(selector: String, eventName: String, expectedArgs: js.Any, env: Env): Boolean
   }
   object JasmineJQueryEvents {
     
@@ -532,36 +527,35 @@ object jasmine {
     def toHaveValue(value: String): Boolean = js.native
   }
   
-  @js.native
   trait StyleFixtures extends StObject {
     
-    def appendLoad(uls: String*): Unit = js.native
+    def appendLoad(uls: String*): Unit
     
-    def appendSet(html: String): Unit = js.native
+    def appendSet(html: String): Unit
     
-    def cleanUp(): Unit = js.native
+    def cleanUp(): Unit
     
-    def clearCache(): Unit = js.native
+    def clearCache(): Unit
     
-    def createStyle_(html: String): Unit = js.native
+    def createStyle_(html: String): Unit
     
-    var fixturesPath: String = js.native
+    var fixturesPath: String
     
-    def getFixtureHtml_(url: String): String = js.native
+    def getFixtureHtml_(url: String): String
     
-    def load(uls: String*): Unit = js.native
+    def load(uls: String*): Unit
     
-    def loadFixtureIntoCache_(relativeUrl: String): Unit = js.native
+    def loadFixtureIntoCache_(relativeUrl: String): Unit
     
-    def makeFixtureUrl_(relativeUrl: String): String = js.native
+    def makeFixtureUrl_(relativeUrl: String): String
     
-    def preload(uls: String*): Unit = js.native
+    def preload(uls: String*): Unit
     
-    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any = js.native
+    def proxyCallTo_(methodName: String, passedArguments: js.Any): js.Any
     
-    def read_(uls: String*): String = js.native
+    def read_(uls: String*): String
     
-    def set(html: String): String = js.native
+    def set(html: String): String
   }
   object StyleFixtures {
     

@@ -2,7 +2,6 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://securetoken.google.com       rules:       - selector: &quot;*&quot;
   * requirements:           provider_id: google_calendar_auth
   */
-@js.native
 trait SchemaService extends StObject {
   
   /**
@@ -29,22 +27,22 @@ trait SchemaService extends StObject {
     * normalization process. It is an error to specify an API interface here
     * which cannot be resolved against the associated IDL files.
     */
-  var apis: js.UndefOr[js.Array[SchemaApi]] = js.native
+  var apis: js.UndefOr[js.Array[SchemaApi]] = js.undefined
   
   /**
     * Auth configuration.
     */
-  var authentication: js.UndefOr[SchemaAuthentication] = js.native
+  var authentication: js.UndefOr[SchemaAuthentication] = js.undefined
   
   /**
     * API backend configuration.
     */
-  var backend: js.UndefOr[SchemaBackend] = js.native
+  var backend: js.UndefOr[SchemaBackend] = js.undefined
   
   /**
     * Billing configuration.
     */
-  var billing: js.UndefOr[SchemaBilling] = js.native
+  var billing: js.UndefOr[SchemaBilling] = js.undefined
   
   /**
     * The semantic version of the service configuration. The config version
@@ -52,34 +50,34 @@ trait SchemaService extends StObject {
     * certain features are enabled by default for certain config versions. The
     * latest config version is `3`.
     */
-  var configVersion: js.UndefOr[Double] = js.native
+  var configVersion: js.UndefOr[Double] = js.undefined
   
   /**
     * Context configuration.
     */
-  var context: js.UndefOr[SchemaContext] = js.native
+  var context: js.UndefOr[SchemaContext] = js.undefined
   
   /**
     * Configuration for the service control plane.
     */
-  var control: js.UndefOr[SchemaControl] = js.native
+  var control: js.UndefOr[SchemaControl] = js.undefined
   
   /**
     * Custom error configuration.
     */
-  var customError: js.UndefOr[SchemaCustomError] = js.native
+  var customError: js.UndefOr[SchemaCustomError] = js.undefined
   
   /**
     * Additional API documentation.
     */
-  var documentation: js.UndefOr[SchemaDocumentation] = js.native
+  var documentation: js.UndefOr[SchemaDocumentation] = js.undefined
   
   /**
     * Configuration for network endpoints.  If this is empty, then an endpoint
     * with the same name as the service is automatically generated to service
     * all defined APIs.
     */
-  var endpoints: js.UndefOr[js.Array[SchemaEndpoint]] = js.native
+  var endpoints: js.UndefOr[js.Array[SchemaEndpoint]] = js.undefined
   
   /**
     * A list of all enum types included in this API service.  Enums referenced
@@ -87,50 +85,50 @@ trait SchemaService extends StObject {
     * which are not referenced but shall be included should be listed here by
     * name. Example:      enums:     - name: google.someapi.v1.SomeEnum
     */
-  var enums: js.UndefOr[js.Array[SchemaEnum]] = js.native
+  var enums: js.UndefOr[js.Array[SchemaEnum]] = js.undefined
   
   /**
     * Experimental configuration.
     */
-  var experimental: js.UndefOr[SchemaExperimental] = js.native
+  var experimental: js.UndefOr[SchemaExperimental] = js.undefined
   
   /**
     * HTTP configuration.
     */
-  var http: js.UndefOr[SchemaHttp] = js.native
+  var http: js.UndefOr[SchemaHttp] = js.undefined
   
   /**
     * A unique ID for a specific instance of this message, typically assigned
     * by the client for tracking purpose. If empty, the server may choose to
     * generate one instead. Must be no longer than 60 characters.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Logging configuration.
     */
-  var logging: js.UndefOr[SchemaLogging] = js.native
+  var logging: js.UndefOr[SchemaLogging] = js.undefined
   
   /**
     * Defines the logs used by this service.
     */
-  var logs: js.UndefOr[js.Array[SchemaLogDescriptor]] = js.native
+  var logs: js.UndefOr[js.Array[SchemaLogDescriptor]] = js.undefined
   
   /**
     * Defines the metrics used by this service.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetricDescriptor]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetricDescriptor]] = js.undefined
   
   /**
     * Defines the monitored resources used by this service. This is required by
     * the Service.monitoring and Service.logging configurations.
     */
-  var monitoredResources: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.native
+  var monitoredResources: js.UndefOr[js.Array[SchemaMonitoredResourceDescriptor]] = js.undefined
   
   /**
     * Monitoring configuration.
     */
-  var monitoring: js.UndefOr[SchemaMonitoring] = js.native
+  var monitoring: js.UndefOr[SchemaMonitoring] = js.undefined
   
   /**
     * The service name, which is a DNS-like logical identifier for the service,
@@ -138,27 +136,27 @@ trait SchemaService extends StObject {
     * through DNS verification to make sure the owner of the service also owns
     * the DNS name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The Google project that owns this service.
     */
-  var producerProjectId: js.UndefOr[String] = js.native
+  var producerProjectId: js.UndefOr[String] = js.undefined
   
   /**
     * Quota configuration.
     */
-  var quota: js.UndefOr[SchemaQuota] = js.native
+  var quota: js.UndefOr[SchemaQuota] = js.undefined
   
   /**
     * Output only. The source information for this configuration if available.
     */
-  var sourceInfo: js.UndefOr[SchemaSourceInfo] = js.native
+  var sourceInfo: js.UndefOr[SchemaSourceInfo] = js.undefined
   
   /**
     * System parameter configuration.
     */
-  var systemParameters: js.UndefOr[SchemaSystemParameters] = js.native
+  var systemParameters: js.UndefOr[SchemaSystemParameters] = js.undefined
   
   /**
     * A list of all proto message types included in this API service. It serves
@@ -167,12 +165,12 @@ trait SchemaService extends StObject {
     * the generated discovery doc. This field should only be used to define
     * system APIs in ESF.
     */
-  var systemTypes: js.UndefOr[js.Array[SchemaType]] = js.native
+  var systemTypes: js.UndefOr[js.Array[SchemaType]] = js.undefined
   
   /**
     * The product title for this service.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * A list of all proto message types included in this API service. Types
@@ -181,12 +179,12 @@ trait SchemaService extends StObject {
     * as types used by the `google.protobuf.Any` type, should be listed here by
     * name. Example:      types:     - name: google.protobuf.Int32
     */
-  var types: js.UndefOr[js.Array[SchemaType]] = js.native
+  var types: js.UndefOr[js.Array[SchemaType]] = js.undefined
   
   /**
     * Configuration controlling usage of this service.
     */
-  var usage: js.UndefOr[SchemaUsage] = js.native
+  var usage: js.UndefOr[SchemaUsage] = js.undefined
 }
 object SchemaService {
   

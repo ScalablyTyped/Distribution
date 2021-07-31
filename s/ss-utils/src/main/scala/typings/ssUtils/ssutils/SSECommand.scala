@@ -2,19 +2,17 @@ package typings.ssUtils.ssutils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSECommand extends StObject {
   
-  var channels: String = js.native
+  var channels: String
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var profileUrl: String = js.native
+  var profileUrl: String
   
-  var userId: String = js.native
+  var userId: String
 }
 object SSECommand {
   

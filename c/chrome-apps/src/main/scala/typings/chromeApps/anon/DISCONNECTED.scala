@@ -10,42 +10,31 @@ import typings.chromeApps.chromeAppsStrings.resume_
 import typings.chromeApps.chromeAppsStrings.suspend_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DISCONNECTED extends StObject {
   
-  var CONNECTED: connected__ = js.native
+  var CONNECTED: connected__
   
-  var DISCONNECTED: disconnected__ = js.native
+  var DISCONNECTED: disconnected__
   
-  var ERROR: error_ = js.native
+  var ERROR: error_
   
-  var LINK_CHANGED: linkChanged = js.native
+  var LINK_CHANGED: linkChanged
   
-  var LINK_DOWN: linkDown = js.native
+  var LINK_DOWN: linkDown
   
-  var LINK_UP: linkUp = js.native
+  var LINK_UP: linkUp
   
-  var RESUME: resume_ = js.native
+  var RESUME: resume_
   
-  var SUSPEND: suspend_ = js.native
+  var SUSPEND: suspend_
 }
 object DISCONNECTED {
   
   @scala.inline
-  def apply(
-    CONNECTED: connected__,
-    DISCONNECTED: disconnected__,
-    ERROR: error_,
-    LINK_CHANGED: linkChanged,
-    LINK_DOWN: linkDown,
-    LINK_UP: linkUp,
-    RESUME: resume_,
-    SUSPEND: suspend_
-  ): DISCONNECTED = {
-    val __obj = js.Dynamic.literal(CONNECTED = CONNECTED.asInstanceOf[js.Any], DISCONNECTED = DISCONNECTED.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], LINK_CHANGED = LINK_CHANGED.asInstanceOf[js.Any], LINK_DOWN = LINK_DOWN.asInstanceOf[js.Any], LINK_UP = LINK_UP.asInstanceOf[js.Any], RESUME = RESUME.asInstanceOf[js.Any], SUSPEND = SUSPEND.asInstanceOf[js.Any])
+  def apply(): DISCONNECTED = {
+    val __obj = js.Dynamic.literal(CONNECTED = "connected", DISCONNECTED = "disconnected", ERROR = "error", LINK_CHANGED = "linkChanged", LINK_DOWN = "linkDown", LINK_UP = "linkUp", RESUME = "resume", SUSPEND = "suspend")
     __obj.asInstanceOf[DISCONNECTED]
   }
   

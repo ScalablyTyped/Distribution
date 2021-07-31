@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceConfig extends StObject {
   
   /** The name of this instance configuration as it appears in UIs. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** A unique identifier for the instance configuration. Values are of the form `projects//instanceConfigs/a-z*` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The geographic placement of nodes in this instance configuration and their replication properties. */
-  var replicas: js.UndefOr[js.Array[ReplicaInfo]] = js.native
+  var replicas: js.UndefOr[js.Array[ReplicaInfo]] = js.undefined
 }
 object InstanceConfig {
   

@@ -3,17 +3,15 @@ package typings.reactNative.anon
 import typings.reactNative.mod.LayoutAnimationConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EaseInEaseOut extends StObject {
   
-  var easeInEaseOut: LayoutAnimationConfig = js.native
+  var easeInEaseOut: LayoutAnimationConfig
   
-  var linear: LayoutAnimationConfig = js.native
+  var linear: LayoutAnimationConfig
   
-  var spring: LayoutAnimationConfig = js.native
+  var spring: LayoutAnimationConfig
 }
 object EaseInEaseOut {
   

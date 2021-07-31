@@ -5,37 +5,35 @@ import typings.pulumiAws.inputMod.ec2.GetLocalGatewaysFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLocalGatewaysMod {
   
-  @JSImport("@pulumi/aws/ec2/getLocalGateways", "getLocalGateways")
+  @JSImport("@pulumi/aws/ec2/getLocalGateways", JSImport.Namespace)
   @js.native
-  def getLocalGateways(): js.Promise[GetLocalGatewaysResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateways", "getLocalGateways")
-  @js.native
-  def getLocalGateways(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLocalGatewaysResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateways", "getLocalGateways")
-  @js.native
-  def getLocalGateways(args: GetLocalGatewaysArgs): js.Promise[GetLocalGatewaysResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getLocalGateways", "getLocalGateways")
-  @js.native
-  def getLocalGateways(args: GetLocalGatewaysArgs, opts: InvokeOptions): js.Promise[GetLocalGatewaysResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLocalGateways(): js.Promise[GetLocalGatewaysResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateways")().asInstanceOf[js.Promise[GetLocalGatewaysResult]]
+  @scala.inline
+  def getLocalGateways(args: Unit, opts: InvokeOptions): js.Promise[GetLocalGatewaysResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateways")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewaysResult]]
+  @scala.inline
+  def getLocalGateways(args: GetLocalGatewaysArgs): js.Promise[GetLocalGatewaysResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateways")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLocalGatewaysResult]]
+  @scala.inline
+  def getLocalGateways(args: GetLocalGatewaysArgs, opts: InvokeOptions): js.Promise[GetLocalGatewaysResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLocalGateways")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLocalGatewaysResult]]
+  
   trait GetLocalGatewaysArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetLocalGatewaysFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetLocalGatewaysFilter]] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired local_gateways.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLocalGatewaysArgs {
     
@@ -65,22 +63,21 @@ object getLocalGatewaysMod {
     }
   }
   
-  @js.native
   trait GetLocalGatewaysResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewaysFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetLocalGatewaysFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of all the Local Gateway identifiers
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetLocalGatewaysResult {
     

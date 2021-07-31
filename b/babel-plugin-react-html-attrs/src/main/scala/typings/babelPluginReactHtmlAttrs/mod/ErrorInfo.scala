@@ -2,19 +2,17 @@ package typings.babelPluginReactHtmlAttrs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Error Interfaces
 // ----------------------------------------------------------------------
-@js.native
 trait ErrorInfo extends StObject {
   
   /**
     * Captures which component contained the exception, and its ancestors.
     */
-  var componentStack: String = js.native
+  var componentStack: String
 }
 object ErrorInfo {
   

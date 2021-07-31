@@ -4,13 +4,13 @@ import typings.baidumapWebSdk.BMap.MapStyleItem
 import typings.baidumapWebSdk.BMap.MapStyleV2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StyleJson extends MapStyleV2 {
+trait StyleJson
+  extends StObject
+     with MapStyleV2 {
   
-  var styleJson: js.Array[MapStyleItem] = js.native
+  var styleJson: js.Array[MapStyleItem]
 }
 object StyleJson {
   

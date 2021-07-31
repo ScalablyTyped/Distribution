@@ -2,31 +2,29 @@ package typings.antvDataSet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionParserMod {
   
-  @JSImport("@antv/data-set/lib/util/option-parser", "getField")
+  @JSImport("@antv/data-set/lib/util/option-parser", JSImport.Namespace)
   @js.native
-  def getField(options: Options): String = js.native
-  @JSImport("@antv/data-set/lib/util/option-parser", "getField")
-  @js.native
-  def getField(options: Options, defaultField: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/data-set/lib/util/option-parser", "getFields")
-  @js.native
-  def getFields(options: Options): js.Array[String] = js.native
-  @JSImport("@antv/data-set/lib/util/option-parser", "getFields")
-  @js.native
-  def getFields(options: Options, defaultFields: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def getField(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getField")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getField(options: Options, defaultField: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getField")(options.asInstanceOf[js.Any], defaultField.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def getFields(options: Options): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFields")(options.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def getFields(options: Options, defaultFields: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFields")(options.asInstanceOf[js.Any], defaultFields.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait Options extends StObject {
     
-    var field: js.UndefOr[String | js.Array[String]] = js.native
+    var field: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var fields: js.UndefOr[String | js.Array[String]] = js.native
+    var fields: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Options {
     

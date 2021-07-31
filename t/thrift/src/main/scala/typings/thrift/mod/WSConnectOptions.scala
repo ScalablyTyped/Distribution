@@ -2,23 +2,21 @@ package typings.thrift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WSConnectOptions extends StObject {
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[TProtocolConstructor] = js.native
+  var protocol: js.UndefOr[TProtocolConstructor] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
-  var transport: js.UndefOr[TTransportConstructor] = js.native
+  var transport: js.UndefOr[TTransportConstructor] = js.undefined
   
-  var wsOptions: js.UndefOr[WSOptions] = js.native
+  var wsOptions: js.UndefOr[WSOptions] = js.undefined
 }
 object WSConnectOptions {
   

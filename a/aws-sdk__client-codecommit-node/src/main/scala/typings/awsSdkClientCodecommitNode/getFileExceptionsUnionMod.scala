@@ -2,7 +2,6 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getFileExceptionsUnionMod {
@@ -27,106 +26,86 @@ object getFileExceptionsUnionMod {
   object GetFileExceptionsUnion {
     
     @scala.inline
-    def CommitDoesNotExistException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommitDoesNotExistException
-    ): typings.awsSdkClientCodecommitNode.typesCommitDoesNotExistExceptionMod.CommitDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def CommitDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesCommitDoesNotExistExceptionMod.CommitDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "CommitDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesCommitDoesNotExistExceptionMod.CommitDoesNotExistException]
     }
     
     @scala.inline
-    def EncryptionIntegrityChecksFailedException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionIntegrityChecksFailedException
-    ): typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def EncryptionIntegrityChecksFailedException(): typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionIntegrityChecksFailedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionIntegrityChecksFailedExceptionMod.EncryptionIntegrityChecksFailedException]
     }
     
     @scala.inline
-    def EncryptionKeyAccessDeniedException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyAccessDeniedException
-    ): typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def EncryptionKeyAccessDeniedException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyAccessDeniedException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyAccessDeniedExceptionMod.EncryptionKeyAccessDeniedException]
     }
     
     @scala.inline
-    def EncryptionKeyDisabledException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyDisabledException
-    ): typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def EncryptionKeyDisabledException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyDisabledException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyDisabledExceptionMod.EncryptionKeyDisabledException]
     }
     
     @scala.inline
-    def EncryptionKeyNotFoundException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyNotFoundException
-    ): typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def EncryptionKeyNotFoundException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyNotFoundException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyNotFoundExceptionMod.EncryptionKeyNotFoundException]
     }
     
     @scala.inline
-    def EncryptionKeyUnavailableException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.EncryptionKeyUnavailableException
-    ): typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def EncryptionKeyUnavailableException(): typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException = {
+      val __obj = js.Dynamic.literal(name = "EncryptionKeyUnavailableException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesEncryptionKeyUnavailableExceptionMod.EncryptionKeyUnavailableException]
     }
     
     @scala.inline
-    def FileDoesNotExistException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileDoesNotExistException
-    ): typings.awsSdkClientCodecommitNode.typesFileDoesNotExistExceptionMod.FileDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def FileDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesFileDoesNotExistExceptionMod.FileDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "FileDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesFileDoesNotExistExceptionMod.FileDoesNotExistException]
     }
     
     @scala.inline
-    def FileTooLargeException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.FileTooLargeException): typings.awsSdkClientCodecommitNode.typesFileTooLargeExceptionMod.FileTooLargeException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def FileTooLargeException(): typings.awsSdkClientCodecommitNode.typesFileTooLargeExceptionMod.FileTooLargeException = {
+      val __obj = js.Dynamic.literal(name = "FileTooLargeException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesFileTooLargeExceptionMod.FileTooLargeException]
     }
     
     @scala.inline
-    def InvalidCommitException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommitException): typings.awsSdkClientCodecommitNode.typesInvalidCommitExceptionMod.InvalidCommitException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidCommitException(): typings.awsSdkClientCodecommitNode.typesInvalidCommitExceptionMod.InvalidCommitException = {
+      val __obj = js.Dynamic.literal(name = "InvalidCommitException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidCommitExceptionMod.InvalidCommitException]
     }
     
     @scala.inline
-    def InvalidPathException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidPathException): typings.awsSdkClientCodecommitNode.typesInvalidPathExceptionMod.InvalidPathException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidPathException(): typings.awsSdkClientCodecommitNode.typesInvalidPathExceptionMod.InvalidPathException = {
+      val __obj = js.Dynamic.literal(name = "InvalidPathException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidPathExceptionMod.InvalidPathException]
     }
     
     @scala.inline
-    def InvalidRepositoryNameException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidRepositoryNameException
-    ): typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def InvalidRepositoryNameException(): typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException = {
+      val __obj = js.Dynamic.literal(name = "InvalidRepositoryNameException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesInvalidRepositoryNameExceptionMod.InvalidRepositoryNameException]
     }
     
     @scala.inline
-    def PathRequiredException(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathRequiredException): typings.awsSdkClientCodecommitNode.typesPathRequiredExceptionMod.PathRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def PathRequiredException(): typings.awsSdkClientCodecommitNode.typesPathRequiredExceptionMod.PathRequiredException = {
+      val __obj = js.Dynamic.literal(name = "PathRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesPathRequiredExceptionMod.PathRequiredException]
     }
     
     @scala.inline
-    def RepositoryDoesNotExistException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryDoesNotExistException
-    ): typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def RepositoryDoesNotExistException(): typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryDoesNotExistException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesRepositoryDoesNotExistExceptionMod.RepositoryDoesNotExistException]
     }
     
     @scala.inline
-    def RepositoryNameRequiredException(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryNameRequiredException
-    ): typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def RepositoryNameRequiredException(): typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException = {
+      val __obj = js.Dynamic.literal(name = "RepositoryNameRequiredException")
       __obj.asInstanceOf[typings.awsSdkClientCodecommitNode.typesRepositoryNameRequiredExceptionMod.RepositoryNameRequiredException]
     }
   }

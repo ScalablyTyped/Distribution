@@ -6,31 +6,29 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.regular
 import typings.reactNativeNavigation.reactNativeNavigationStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsFab extends StObject {
   
-  var alignHorizontally: js.UndefOr[left | right] = js.native
+  var alignHorizontally: js.UndefOr[left | right] = js.undefined
   
-  var backgroundColor: js.UndefOr[Color] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
-  var clickColor: js.UndefOr[Color] = js.native
+  var clickColor: js.UndefOr[Color] = js.undefined
   
-  var hideOnScroll: js.UndefOr[Boolean] = js.native
+  var hideOnScroll: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[ImageResource] = js.native
+  var icon: js.UndefOr[ImageResource] = js.undefined
   
-  var iconColor: js.UndefOr[Color] = js.native
+  var iconColor: js.UndefOr[Color] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var rippleColor: js.UndefOr[Color] = js.native
+  var rippleColor: js.UndefOr[Color] = js.undefined
   
-  var size: js.UndefOr[mini | regular] = js.native
+  var size: js.UndefOr[mini | regular] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object OptionsFab {
   

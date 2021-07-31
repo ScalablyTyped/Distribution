@@ -6,81 +6,73 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   // for docs go to https://github.com/expressjs/body-parser/tree/1.19.0#body-parser
   /** @deprecated */
+  @scala.inline
+  def apply(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def apply(options: OptionsJson & OptionsText & OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
+  
   @JSImport("body-parser", JSImport.Namespace)
   @js.native
-  def apply(): NextHandleFunction = js.native
-  @JSImport("body-parser", JSImport.Namespace)
-  @js.native
-  def apply(options: OptionsJson with OptionsText with OptionsUrlencoded): NextHandleFunction = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns middleware that only parses json and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @JSImport("body-parser", "json")
-  @js.native
-  def json(): NextHandleFunction = js.native
-  @JSImport("body-parser", "json")
-  @js.native
-  def json(options: OptionsJson): NextHandleFunction = js.native
+  @scala.inline
+  def json(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def json(options: OptionsJson): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("json")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that parses all bodies as a Buffer and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @JSImport("body-parser", "raw")
-  @js.native
-  def raw(): NextHandleFunction = js.native
-  @JSImport("body-parser", "raw")
-  @js.native
-  def raw(options: Options): NextHandleFunction = js.native
+  @scala.inline
+  def raw(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def raw(options: Options): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("raw")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that parses all bodies as a string and only looks at requests
     * where the Content-Type header matches the type option.
     */
-  @JSImport("body-parser", "text")
-  @js.native
-  def text(): NextHandleFunction = js.native
-  @JSImport("body-parser", "text")
-  @js.native
-  def text(options: OptionsText): NextHandleFunction = js.native
+  @scala.inline
+  def text(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def text(options: OptionsText): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
   /**
     * Returns middleware that only parses urlencoded bodies and only looks at requests
     * where the Content-Type header matches the type option
     */
-  @JSImport("body-parser", "urlencoded")
-  @js.native
-  def urlencoded(): NextHandleFunction = js.native
-  @JSImport("body-parser", "urlencoded")
-  @js.native
-  def urlencoded(options: OptionsUrlencoded): NextHandleFunction = js.native
+  @scala.inline
+  def urlencoded(): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")().asInstanceOf[NextHandleFunction]
+  @scala.inline
+  def urlencoded(options: OptionsUrlencoded): NextHandleFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("urlencoded")(options.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction]
   
-  @js.native
   trait Options extends StObject {
     
     /** When set to true, then deflated (compressed) bodies will be inflated; when false, deflated bodies are rejected. Defaults to true. */
-    var inflate: js.UndefOr[Boolean] = js.native
+    var inflate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Controls the maximum request body size. If this is a number,
       * then the value specifies the number of bytes; if it is a string,
       * the value is passed to the bytes library for parsing. Defaults to '100kb'.
       */
-    var limit: js.UndefOr[Double | String] = js.native
+    var limit: js.UndefOr[Double | String] = js.undefined
     
     /**
       * The type option is used to determine what media type the middleware will parse
       */
-    var `type`: js.UndefOr[String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _])] = js.native
+    var `type`: js.UndefOr[String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])] = js.undefined
     
     /**
       * The verify option, if supplied, is called as verify(req, res, buf, encoding),
@@ -94,7 +86,7 @@ object mod {
           /* encoding */ String, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -120,10 +112,10 @@ object mod {
       def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
       
       @scala.inline
-      def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: String | js.Array[String] | (js.Function1[/* req */ IncomingMessage, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTypeFunction1(value: /* req */ IncomingMessage => _): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+      def setTypeFunction1(value: /* req */ IncomingMessage => js.Any): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
@@ -141,20 +133,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsJson extends Options {
+  trait OptionsJson
+    extends StObject
+       with Options {
     
     /**
       *
       * The reviver option is passed directly to JSON.parse as the second argument.
       */
-    var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+    var reviver: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
     
     /**
       * When set to `true`, will only accept arrays and objects;
       * when `false` will accept anything JSON.parse accepts. Defaults to `true`.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsJson {
     
@@ -168,7 +161,7 @@ object mod {
     implicit class OptionsJsonMutableBuilder[Self <: OptionsJson] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setReviver(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      def setReviver(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
@@ -181,15 +174,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsText extends Options {
+  trait OptionsText
+    extends StObject
+       with Options {
     
     /**
       * Specify the default character set for the text content if the charset
       * is not specified in the Content-Type header of the request.
       * Defaults to `utf-8`.
       */
-    var defaultCharset: js.UndefOr[String] = js.native
+    var defaultCharset: js.UndefOr[String] = js.undefined
   }
   object OptionsText {
     
@@ -210,21 +204,22 @@ object mod {
     }
   }
   
-  @js.native
-  trait OptionsUrlencoded extends Options {
+  trait OptionsUrlencoded
+    extends StObject
+       with Options {
     
     /**
       * The extended option allows to choose between parsing the URL-encoded data
       * with the querystring library (when `false`) or the qs library (when `true`).
       */
-    var extended: js.UndefOr[Boolean] = js.native
+    var extended: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The parameterLimit option controls the maximum number of parameters
       * that are allowed in the URL-encoded data. If a request contains more parameters than this value,
       * a 413 will be returned to the client. Defaults to 1000.
       */
-    var parameterLimit: js.UndefOr[Double] = js.native
+    var parameterLimit: js.UndefOr[Double] = js.undefined
   }
   object OptionsUrlencoded {
     

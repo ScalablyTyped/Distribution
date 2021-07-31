@@ -10,7 +10,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingIconMod extends Shortcut {
@@ -27,9 +26,9 @@ object ratingIconMod extends Shortcut {
   @js.native
   val default: ComponentClass[RatingIconProps, ComponentState] = js.native
   
-  @js.native
   trait RatingIconProps
-    extends StrictRatingIconProps
+    extends StObject
+       with StrictRatingIconProps
        with /* key */ StringDictionary[js.Any]
   object RatingIconProps {
     
@@ -40,20 +39,19 @@ object ratingIconMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictRatingIconProps extends StObject {
     
     /** Indicates activity of an icon. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** An index of icon inside Rating. */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /**
       * Called on click.
@@ -67,7 +65,7 @@ object ratingIconMod extends Shortcut {
           /* data */ RatingIconProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on keyup.
@@ -81,7 +79,7 @@ object ratingIconMod extends Shortcut {
           /* data */ RatingIconProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called on mouseenter.
@@ -95,10 +93,10 @@ object ratingIconMod extends Shortcut {
           /* data */ RatingIconProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Indicates selection of an icon. */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object StrictRatingIconProps {
     

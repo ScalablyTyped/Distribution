@@ -6,75 +6,73 @@ import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait commentsConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var currentUser: js.UndefOr[Double] = js.native
+  var currentUser: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var listItem: js.UndefOr[js.Any] = js.native
+  var listItem: js.UndefOr[js.Any] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var mentions: js.UndefOr[Boolean] = js.native
+  var mentions: js.UndefOr[Boolean] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var moreButton: js.UndefOr[String | WebixCallback] = js.native
+  var moreButton: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var sendAction: js.UndefOr[String] = js.native
+  var sendAction: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var users: js.UndefOr[js.Array[_] | String | DataCollection] = js.native
+  var users: js.UndefOr[js.Array[js.Any] | String | DataCollection] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object commentsConfig {
   
@@ -118,7 +116,7 @@ object commentsConfig {
     def setCurrentUserUndefined: Self = StObject.set(x, "currentUser", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -208,9 +206,6 @@ object commentsConfig {
     def setMoreButton(value: String | WebixCallback): Self = StObject.set(x, "moreButton", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMoreButtonFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "moreButton", js.Any.fromFunction1(value))
-    
-    @scala.inline
     def setMoreButtonUndefined: Self = StObject.set(x, "moreButton", js.undefined)
     
     @scala.inline
@@ -268,7 +263,7 @@ object commentsConfig {
     def setUrlUndefined: Self = StObject.set(x, "url", js.undefined)
     
     @scala.inline
-    def setUsers(value: js.Array[_] | String | DataCollection): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
+    def setUsers(value: js.Array[js.Any] | String | DataCollection): Self = StObject.set(x, "users", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUsersUndefined: Self = StObject.set(x, "users", js.undefined)

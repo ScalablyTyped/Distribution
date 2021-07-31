@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEcsClustersResult extends StObject {
   
   /**
     * A list of EcsCluster objects containing the cluster descriptions.
     */
-  var EcsClusters: js.UndefOr[typings.awsSdk.opsworksMod.EcsClusters] = js.native
+  var EcsClusters: js.UndefOr[typings.awsSdk.opsworksMod.EcsClusters] = js.undefined
   
   /**
     * If a paginated request does not return all of the remaining results, this parameter is set to a token that you can assign to the request object's NextToken parameter to retrieve the next set of results. If the previous paginated request returned all of the remaining results, this parameter is set to null.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object DescribeEcsClustersResult {
   

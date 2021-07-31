@@ -3,17 +3,15 @@ package typings.fluentuiDomUtilities
 import typings.fluentuiDomUtilities.ivirtualelementMod.IVirtualElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.Array[IVirtualElement] = js.native
+    var children: js.Array[IVirtualElement]
     
-    var parent: js.UndefOr[IVirtualElement] = js.native
+    var parent: js.UndefOr[IVirtualElement] = js.undefined
   }
   object Children {
     

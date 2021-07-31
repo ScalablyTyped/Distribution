@@ -41,10 +41,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object route53Mod {
+  
+  @JSImport("@pulumi/aws/route53", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/route53", "DelegationSet")
   @js.native
@@ -59,11 +62,15 @@ object route53Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: DelegationSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DelegationSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object DelegationSet {
+    
+    @JSImport("@pulumi/aws/route53", "DelegationSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing DelegationSet resource's state with the given name, ID, and optional extra
@@ -74,26 +81,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DelegationSetState): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
-    @JSImport("@pulumi/aws/route53", "DelegationSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.delegationSetMod.DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.delegationSetMod.DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.delegationSetMod.DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DelegationSetState): typings.pulumiAws.delegationSetMod.DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.delegationSetMod.DelegationSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DelegationSetState, opts: CustomResourceOptions): typings.pulumiAws.delegationSetMod.DelegationSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.delegationSetMod.DelegationSet]
     
     /**
       * Returns true if the given object is an instance of DelegationSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "DelegationSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/delegationSet.DelegationSet */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "HealthCheck")
@@ -113,6 +115,10 @@ object route53Mod {
   /* static members */
   object HealthCheck {
     
+    @JSImport("@pulumi/aws/route53", "HealthCheck")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HealthCheck resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -122,26 +128,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HealthCheckState): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
-    @JSImport("@pulumi/aws/route53", "HealthCheck.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.healthCheckMod.HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.healthCheckMod.HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.healthCheckMod.HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HealthCheckState): typings.pulumiAws.healthCheckMod.HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.healthCheckMod.HealthCheck]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HealthCheckState, opts: CustomResourceOptions): typings.pulumiAws.healthCheckMod.HealthCheck = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.healthCheckMod.HealthCheck]
     
     /**
       * Returns true if the given object is an instance of HealthCheck.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "HealthCheck.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/healthCheck.HealthCheck */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "QueryLog")
@@ -161,6 +162,10 @@ object route53Mod {
   /* static members */
   object QueryLog {
     
+    @JSImport("@pulumi/aws/route53", "QueryLog")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing QueryLog resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -170,26 +175,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.queryLogMod.QueryLog = js.native
-    @JSImport("@pulumi/aws/route53", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
-    @JSImport("@pulumi/aws/route53", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueryLogState): typings.pulumiAws.queryLogMod.QueryLog = js.native
-    @JSImport("@pulumi/aws/route53", "QueryLog.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.queryLogMod.QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queryLogMod.QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queryLogMod.QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueryLogState): typings.pulumiAws.queryLogMod.QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queryLogMod.QueryLog]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueryLogState, opts: CustomResourceOptions): typings.pulumiAws.queryLogMod.QueryLog = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queryLogMod.QueryLog]
     
     /**
       * Returns true if the given object is an instance of QueryLog.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "QueryLog.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/queryLog.QueryLog */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "Record")
@@ -209,6 +209,10 @@ object route53Mod {
   /* static members */
   object Record {
     
+    @JSImport("@pulumi/aws/route53", "Record")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Record resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -218,26 +222,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.recordMod.Record = js.native
-    @JSImport("@pulumi/aws/route53", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
-    @JSImport("@pulumi/aws/route53", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecordState): typings.pulumiAws.recordMod.Record = js.native
-    @JSImport("@pulumi/aws/route53", "Record.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.recordMod.Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.recordMod.Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecordState): typings.pulumiAws.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.recordMod.Record]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecordState, opts: CustomResourceOptions): typings.pulumiAws.recordMod.Record = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.recordMod.Record]
     
     /**
       * Returns true if the given object is an instance of Record.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "Record.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/record.Record */ Boolean]
   }
   
   object RecordType {
@@ -371,6 +370,10 @@ object route53Mod {
   /* static members */
   object ResolverEndpoint {
     
+    @JSImport("@pulumi/aws/route53", "ResolverEndpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverEndpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -380,26 +383,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverEndpointState): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverEndpointMod.ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverEndpointMod.ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverEndpointState): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverEndpointMod.ResolverEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverEndpointState, opts: CustomResourceOptions): typings.pulumiAws.resolverEndpointMod.ResolverEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverEndpointMod.ResolverEndpoint]
     
     /**
       * Returns true if the given object is an instance of ResolverEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverEndpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverEndpoint.ResolverEndpoint */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig")
@@ -419,6 +417,10 @@ object route53Mod {
   /* static members */
   object ResolverQueryLogConfig {
     
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverQueryLogConfig resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -428,26 +430,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState, opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigState, opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigMod.ResolverQueryLogConfig]
     
     /**
       * Returns true if the given object is an instance of ResolverQueryLogConfig.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfig.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfig.ResolverQueryLogConfig */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation")
@@ -467,6 +464,10 @@ object route53Mod {
   /* static members */
   object ResolverQueryLogConfigAssociation {
     
+    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverQueryLogConfigAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -476,31 +477,26 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverQueryLogConfigAssociationState): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: ResolverQueryLogConfigAssociationState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = js.native
+    ): typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverQueryLogConfigAssociationMod.ResolverQueryLogConfigAssociation]
     
     /**
       * Returns true if the given object is an instance of ResolverQueryLogConfigAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverQueryLogConfigAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverQueryLogConfigAssociation.ResolverQueryLogConfigAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "ResolverRule")
@@ -520,6 +516,10 @@ object route53Mod {
   /* static members */
   object ResolverRule {
     
+    @JSImport("@pulumi/aws/route53", "ResolverRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -529,26 +529,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleState): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleMod.ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleMod.ResolverRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleMod.ResolverRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleState): typings.pulumiAws.resolverRuleMod.ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleMod.ResolverRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleMod.ResolverRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleMod.ResolverRule]
     
     /**
       * Returns true if the given object is an instance of ResolverRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRule.ResolverRule */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation")
@@ -568,6 +563,10 @@ object route53Mod {
   /* static members */
   object ResolverRuleAssociation {
     
+    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResolverRuleAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -577,26 +576,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResolverRuleAssociationState, opts: CustomResourceOptions): typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.resolverRuleAssociationMod.ResolverRuleAssociation]
     
     /**
       * Returns true if the given object is an instance of ResolverRuleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ResolverRuleAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/resolverRuleAssociation.ResolverRuleAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization")
@@ -616,6 +610,10 @@ object route53Mod {
   /* static members */
   object VpcAssociationAuthorization {
     
+    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcAssociationAuthorization resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -625,26 +623,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
-    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcAssociationAuthorizationState, opts: CustomResourceOptions): typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.vpcAssociationAuthorizationMod.VpcAssociationAuthorization]
     
     /**
       * Returns true if the given object is an instance of VpcAssociationAuthorization.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "VpcAssociationAuthorization.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/vpcAssociationAuthorization.VpcAssociationAuthorization */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "Zone")
@@ -660,11 +653,15 @@ object route53Mod {
       */
     def this(name: String) = this()
     def this(name: String, args: ZoneArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ZoneArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Zone {
+    
+    @JSImport("@pulumi/aws/route53", "Zone")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Zone resource's state with the given name, ID, and optional extra
@@ -675,26 +672,21 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "Zone.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneMod.Zone = js.native
-    @JSImport("@pulumi/aws/route53", "Zone.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
-    @JSImport("@pulumi/aws/route53", "Zone.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneState): typings.pulumiAws.zoneMod.Zone = js.native
-    @JSImport("@pulumi/aws/route53", "Zone.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneMod.Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneMod.Zone]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneMod.Zone]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneState): typings.pulumiAws.zoneMod.Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneMod.Zone]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneState, opts: CustomResourceOptions): typings.pulumiAws.zoneMod.Zone = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneMod.Zone]
     
     /**
       * Returns true if the given object is an instance of Zone.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "Zone.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zone.Zone */ Boolean]
   }
   
   @JSImport("@pulumi/aws/route53", "ZoneAssociation")
@@ -714,6 +706,10 @@ object route53Mod {
   /* static members */
   object ZoneAssociation {
     
+    @JSImport("@pulumi/aws/route53", "ZoneAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ZoneAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -723,84 +719,61 @@ object route53Mod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneAssociationState): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
-    @JSImport("@pulumi/aws/route53", "ZoneAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneAssociationMod.ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneAssociationMod.ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneAssociationState): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneAssociationMod.ZoneAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ZoneAssociationState, opts: CustomResourceOptions): typings.pulumiAws.zoneAssociationMod.ZoneAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.zoneAssociationMod.ZoneAssociation]
     
     /**
       * Returns true if the given object is an instance of ZoneAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/route53", "ZoneAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/route53/zoneAssociation.ZoneAssociation */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/route53", "getDelegationSet")
-  @js.native
-  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getDelegationSet")
-  @js.native
-  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = js.native
+  @scala.inline
+  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDelegationSetResult]]
+  @scala.inline
+  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDelegationSetResult]]
   
-  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: GetResolverEndpointArgs): js.Promise[GetResolverEndpointResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverEndpoint")
-  @js.native
-  def getResolverEndpoint(args: GetResolverEndpointArgs, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = js.native
+  @scala.inline
+  def getResolverEndpoint(): js.Promise[GetResolverEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")().asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: Unit, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: GetResolverEndpointArgs): js.Promise[GetResolverEndpointResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverEndpointResult]]
+  @scala.inline
+  def getResolverEndpoint(args: GetResolverEndpointArgs, opts: InvokeOptions): js.Promise[GetResolverEndpointResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverEndpoint")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverEndpointResult]]
   
-  @JSImport("@pulumi/aws/route53", "getResolverRule")
-  @js.native
-  def getResolverRule(): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRule")
-  @js.native
-  def getResolverRule(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRule")
-  @js.native
-  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRule")
-  @js.native
-  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = js.native
+  @scala.inline
+  def getResolverRule(): js.Promise[GetResolverRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")().asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: Unit, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: GetResolverRuleArgs): js.Promise[GetResolverRuleResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverRuleResult]]
+  @scala.inline
+  def getResolverRule(args: GetResolverRuleArgs, opts: InvokeOptions): js.Promise[GetResolverRuleResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRule")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRuleResult]]
   
-  @JSImport("@pulumi/aws/route53", "getResolverRules")
-  @js.native
-  def getResolverRules(): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRules")
-  @js.native
-  def getResolverRules(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRules")
-  @js.native
-  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getResolverRules")
-  @js.native
-  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = js.native
+  @scala.inline
+  def getResolverRules(): js.Promise[GetResolverRulesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")().asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: Unit, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: GetResolverRulesArgs): js.Promise[GetResolverRulesResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetResolverRulesResult]]
+  @scala.inline
+  def getResolverRules(args: GetResolverRulesArgs, opts: InvokeOptions): js.Promise[GetResolverRulesResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getResolverRules")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetResolverRulesResult]]
   
-  @JSImport("@pulumi/aws/route53", "getZone")
-  @js.native
-  def getZone(): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getZone")
-  @js.native
-  def getZone(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getZone")
-  @js.native
-  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = js.native
-  @JSImport("@pulumi/aws/route53", "getZone")
-  @js.native
-  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = js.native
+  @scala.inline
+  def getZone(): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")().asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: Unit, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: GetZoneArgs): js.Promise[GetZoneResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetZoneResult]]
+  @scala.inline
+  def getZone(args: GetZoneArgs, opts: InvokeOptions): js.Promise[GetZoneResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getZone")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetZoneResult]]
 }

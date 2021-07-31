@@ -2,26 +2,24 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceRegion extends StObject {
   
   /**
     * The endpoint for the source AWS Region endpoint.
     */
-  var Endpoint: js.UndefOr[String] = js.native
+  var Endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the source AWS Region.
     */
-  var RegionName: js.UndefOr[String] = js.native
+  var RegionName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the source AWS Region.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object SourceRegion {
   

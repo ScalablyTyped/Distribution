@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2StoredInfoTypeConfig extends StObject {
   
   /** Description of the StoredInfoType (max 256 characters). */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Store dictionary-based CustomInfoType. */
-  var dictionary: js.UndefOr[GooglePrivacyDlpV2Dictionary] = js.native
+  var dictionary: js.UndefOr[GooglePrivacyDlpV2Dictionary] = js.undefined
   
   /** Display name of the StoredInfoType (max 256 characters). */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** StoredInfoType where findings are defined by a dictionary of phrases. */
-  var largeCustomDictionary: js.UndefOr[GooglePrivacyDlpV2LargeCustomDictionaryConfig] = js.native
+  var largeCustomDictionary: js.UndefOr[GooglePrivacyDlpV2LargeCustomDictionaryConfig] = js.undefined
   
   /** Store regular expression-based StoredInfoType. */
-  var regex: js.UndefOr[GooglePrivacyDlpV2Regex] = js.native
+  var regex: js.UndefOr[GooglePrivacyDlpV2Regex] = js.undefined
 }
 object GooglePrivacyDlpV2StoredInfoTypeConfig {
   

@@ -3,20 +3,18 @@ package typings.reactTable.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  manualGroupBy :boolean,   disableGroupBy :boolean,   defaultCanGroupBy :boolean,   aggregations :std.Record<string, react-table.react-table.AggregatorFn<D>>, groupByFn (rows : std.Array<react-table.react-table.Row<D>>, columnId : react-table.react-table.IdType<D>): std.Record<string, std.Array<react-table.react-table.Row<D>>>,   autoResetGroupBy :boolean | undefined}> */
-@js.native
 trait UseGroupByOptions[D /* <: js.Object */] extends StObject {
   
-  var aggregations: js.UndefOr[Record[String, AggregatorFn[D]]] = js.native
+  var aggregations: js.UndefOr[Record[String, AggregatorFn[D]]] = js.undefined
   
-  var autoResetGroupBy: js.UndefOr[Boolean] = js.native
+  var autoResetGroupBy: js.UndefOr[Boolean] = js.undefined
   
-  var defaultCanGroupBy: js.UndefOr[Boolean] = js.native
+  var defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined
   
-  var disableGroupBy: js.UndefOr[Boolean] = js.native
+  var disableGroupBy: js.UndefOr[Boolean] = js.undefined
   
   var groupByFn: js.UndefOr[
     js.Function2[
@@ -24,9 +22,9 @@ trait UseGroupByOptions[D /* <: js.Object */] extends StObject {
       /* columnId */ IdType[D], 
       Record[String, js.Array[Row[D]]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var manualGroupBy: js.UndefOr[Boolean] = js.native
+  var manualGroupBy: js.UndefOr[Boolean] = js.undefined
 }
 object UseGroupByOptions {
   
@@ -37,7 +35,7 @@ object UseGroupByOptions {
   }
   
   @scala.inline
-  implicit class UseGroupByOptionsMutableBuilder[Self <: UseGroupByOptions[_], D /* <: js.Object */] (val x: Self with UseGroupByOptions[D]) extends AnyVal {
+  implicit class UseGroupByOptionsMutableBuilder[Self <: UseGroupByOptions[?], D /* <: js.Object */] (val x: Self & UseGroupByOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAggregations(value: Record[String, AggregatorFn[D]]): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])

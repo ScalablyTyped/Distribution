@@ -2,31 +2,29 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProjectRequest extends StObject {
   
   /**
     *  ZIP or YAML file which contains configuration settings to be used when creating the project. This may be the contents of the file downloaded from the URL provided in an export project operation. 
     */
-  var contents: js.UndefOr[Contents] = js.native
+  var contents: js.UndefOr[Contents] = js.undefined
   
   /**
     *  Name of the project. 
     */
-  var name: js.UndefOr[ProjectName] = js.native
+  var name: js.UndefOr[ProjectName] = js.undefined
   
   /**
     *  Default region where project resources should be created. 
     */
-  var region: js.UndefOr[ProjectRegion] = js.native
+  var region: js.UndefOr[ProjectRegion] = js.undefined
   
   /**
     *  Unique identifier for an exported snapshot of project configuration. This snapshot identifier is included in the share URL when a project is exported. 
     */
-  var snapshotId: js.UndefOr[SnapshotId] = js.native
+  var snapshotId: js.UndefOr[SnapshotId] = js.undefined
 }
 object CreateProjectRequest {
   

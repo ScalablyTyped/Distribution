@@ -2,7 +2,6 @@ package typings.googleapis.androiddeviceprovisioningV1Mod.androiddeviceprovision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Long‑running batch
   * operations](/zero-touch/guides/how-it-works#operations).
   */
-@js.native
 trait SchemaDevicesLongRunningOperationMetadata extends StObject {
   
   /**
@@ -19,19 +17,19 @@ trait SchemaDevicesLongRunningOperationMetadata extends StObject {
     * from the number of updates in the request if the API can&#39;t parse some
     * of the updates.
     */
-  var devicesCount: js.UndefOr[Double] = js.native
+  var devicesCount: js.UndefOr[Double] = js.undefined
   
   /**
     * The processing status of the operation.
     */
-  var processingStatus: js.UndefOr[String] = js.native
+  var processingStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The processing progress of the operation. Measured as a number from 0 to
     * 100. A value of 10O doesnt always mean the operation completed—check for
     * the inclusion of a `done` field.
     */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
 }
 object SchemaDevicesLongRunningOperationMetadata {
   

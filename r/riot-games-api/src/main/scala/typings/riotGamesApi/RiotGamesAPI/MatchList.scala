@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object MatchList {
   
-  @js.native
   trait MatchList extends StObject {
     
-    var endIndex: Double = js.native
+    var endIndex: Double
     
-    var matches: js.Array[MatchReference] = js.native
+    var matches: js.Array[MatchReference]
     
-    var startIndex: Double = js.native
+    var startIndex: Double
     
-    var totalGames: Double = js.native
+    var totalGames: Double
   }
   object MatchList {
     
@@ -49,26 +47,25 @@ object MatchList {
     }
   }
   
-  @js.native
   trait MatchReference extends StObject {
     
-    var champion: Double = js.native
+    var champion: Double
     
-    var lane: String = js.native
+    var lane: String
     
-    var matchId: Double = js.native
+    var matchId: Double
     
-    var plateformId: String = js.native
+    var plateformId: String
     
-    var queue: String = js.native
+    var queue: String
     
-    var region: String = js.native
+    var region: String
     
-    var role: String = js.native
+    var role: String
     
-    var season: String = js.native
+    var season: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object MatchReference {
     

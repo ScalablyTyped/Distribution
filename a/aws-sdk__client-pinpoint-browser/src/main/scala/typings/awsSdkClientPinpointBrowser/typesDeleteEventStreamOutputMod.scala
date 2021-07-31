@@ -5,24 +5,24 @@ import typings.awsSdkClientPinpointBrowser.typesEventStreamMod.UnmarshalledEvent
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteEventStreamOutputMod {
   
-  @js.native
-  trait DeleteEventStreamOutput extends OutputTypesUnion {
+  trait DeleteEventStreamOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * Model for an event publishing subscription export.
       */
-    var EventStream: UnmarshalledEventStream = js.native
+    var EventStream: UnmarshalledEventStream
   }
   object DeleteEventStreamOutput {
     

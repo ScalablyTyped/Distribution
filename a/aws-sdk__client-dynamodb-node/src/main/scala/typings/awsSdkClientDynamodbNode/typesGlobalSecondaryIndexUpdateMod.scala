@@ -8,28 +8,26 @@ import typings.awsSdkClientDynamodbNode.typesUpdateGlobalSecondaryIndexActionMod
 import typings.awsSdkClientDynamodbNode.typesUpdateGlobalSecondaryIndexActionMod.UpdateGlobalSecondaryIndexAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGlobalSecondaryIndexUpdateMod {
   
-  @js.native
   trait GlobalSecondaryIndexUpdate extends StObject {
     
     /**
       * <p>The parameters required for creating a global secondary index on an existing table:</p> <ul> <li> <p> <code>IndexName </code> </p> </li> <li> <p> <code>KeySchema </code> </p> </li> <li> <p> <code>AttributeDefinitions </code> </p> </li> <li> <p> <code>Projection </code> </p> </li> <li> <p> <code>ProvisionedThroughput </code> </p> </li> </ul>
       */
-    var Create: js.UndefOr[CreateGlobalSecondaryIndexAction] = js.native
+    var Create: js.UndefOr[CreateGlobalSecondaryIndexAction] = js.undefined
     
     /**
       * <p>The name of an existing global secondary index to be removed.</p>
       */
-    var Delete: js.UndefOr[DeleteGlobalSecondaryIndexAction] = js.native
+    var Delete: js.UndefOr[DeleteGlobalSecondaryIndexAction] = js.undefined
     
     /**
       * <p>The name of an existing global secondary index, along with new provisioned throughput settings to be applied to that index.</p>
       */
-    var Update: js.UndefOr[UpdateGlobalSecondaryIndexAction] = js.native
+    var Update: js.UndefOr[UpdateGlobalSecondaryIndexAction] = js.undefined
   }
   object GlobalSecondaryIndexUpdate {
     
@@ -62,26 +60,27 @@ object typesGlobalSecondaryIndexUpdateMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGlobalSecondaryIndexUpdate extends GlobalSecondaryIndexUpdate {
+  trait UnmarshalledGlobalSecondaryIndexUpdate
+    extends StObject
+       with GlobalSecondaryIndexUpdate {
     
     /**
       * <p>The parameters required for creating a global secondary index on an existing table:</p> <ul> <li> <p> <code>IndexName </code> </p> </li> <li> <p> <code>KeySchema </code> </p> </li> <li> <p> <code>AttributeDefinitions </code> </p> </li> <li> <p> <code>Projection </code> </p> </li> <li> <p> <code>ProvisionedThroughput </code> </p> </li> </ul>
       */
     @JSName("Create")
-    var Create_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledCreateGlobalSecondaryIndexAction] = js.native
+    var Create_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledCreateGlobalSecondaryIndexAction] = js.undefined
     
     /**
       * <p>The name of an existing global secondary index to be removed.</p>
       */
     @JSName("Delete")
-    var Delete_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledDeleteGlobalSecondaryIndexAction] = js.native
+    var Delete_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledDeleteGlobalSecondaryIndexAction] = js.undefined
     
     /**
       * <p>The name of an existing global secondary index, along with new provisioned throughput settings to be applied to that index.</p>
       */
     @JSName("Update")
-    var Update_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledUpdateGlobalSecondaryIndexAction] = js.native
+    var Update_UnmarshalledGlobalSecondaryIndexUpdate: js.UndefOr[UnmarshalledUpdateGlobalSecondaryIndexAction] = js.undefined
   }
   object UnmarshalledGlobalSecondaryIndexUpdate {
     

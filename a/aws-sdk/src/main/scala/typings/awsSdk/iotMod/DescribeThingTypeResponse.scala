@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeThingTypeResponse extends StObject {
   
   /**
     * The thing type ARN.
     */
-  var thingTypeArn: js.UndefOr[ThingTypeArn] = js.native
+  var thingTypeArn: js.UndefOr[ThingTypeArn] = js.undefined
   
   /**
     * The thing type ID.
     */
-  var thingTypeId: js.UndefOr[ThingTypeId] = js.native
+  var thingTypeId: js.UndefOr[ThingTypeId] = js.undefined
   
   /**
     * The ThingTypeMetadata contains additional information about the thing type including: creation date and time, a value indicating whether the thing type is deprecated, and a date and time when it was deprecated.
     */
-  var thingTypeMetadata: js.UndefOr[ThingTypeMetadata] = js.native
+  var thingTypeMetadata: js.UndefOr[ThingTypeMetadata] = js.undefined
   
   /**
     * The name of the thing type.
     */
-  var thingTypeName: js.UndefOr[ThingTypeName] = js.native
+  var thingTypeName: js.UndefOr[ThingTypeName] = js.undefined
   
   /**
     * The ThingTypeProperties contains information about the thing type including description, and a list of searchable thing attribute names.
     */
-  var thingTypeProperties: js.UndefOr[ThingTypeProperties] = js.native
+  var thingTypeProperties: js.UndefOr[ThingTypeProperties] = js.undefined
 }
 object DescribeThingTypeResponse {
   

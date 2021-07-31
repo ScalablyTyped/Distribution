@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HealthConfig extends StObject {
   
-  var Interval: js.UndefOr[Double] = js.native
+  var Interval: js.UndefOr[Double] = js.undefined
   
-  var Retries: js.UndefOr[Double] = js.native
+  var Retries: js.UndefOr[Double] = js.undefined
   
-  var StartPeriod: js.UndefOr[Double] = js.native
+  var StartPeriod: js.UndefOr[Double] = js.undefined
   
-  var Test: js.UndefOr[js.Array[String]] = js.native
+  var Test: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Timeout: js.UndefOr[Double] = js.native
+  var Timeout: js.UndefOr[Double] = js.undefined
 }
 object HealthConfig {
   

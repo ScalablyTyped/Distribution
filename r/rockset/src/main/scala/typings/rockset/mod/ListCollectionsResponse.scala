@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCollectionsResponse extends StObject {
   
   // list of all collections
-  var data: js.UndefOr[js.Array[Collection]] = js.native
+  var data: js.UndefOr[js.Array[Collection]] = js.undefined
 }
 object ListCollectionsResponse {
   

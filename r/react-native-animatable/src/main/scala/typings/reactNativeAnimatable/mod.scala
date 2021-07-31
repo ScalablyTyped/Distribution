@@ -19,10 +19,13 @@ import typings.reactNativeAnimatable.anon.Style
 import typings.reactNativeAnimatable.reactNativeAnimatableStrings.infinite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-native-animatable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-native-animatable", "Image")
   @js.native
@@ -32,9 +35,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "Image")
   @js.native
-  class ImageCls protected () extends ClassicComponent[AnimatableProperties[ImageStyle] with ImageProperties, ComponentState] {
-    def this(props: AnimatableProperties[ImageStyle] with ImageProperties) = this()
-    def this(props: AnimatableProperties[ImageStyle] with ImageProperties, context: js.Any) = this()
+  class ImageCls protected () extends ClassicComponent[AnimatableProperties[ImageStyle] & ImageProperties, ComponentState] {
+    def this(props: AnimatableProperties[ImageStyle] & ImageProperties) = this()
+    def this(props: AnimatableProperties[ImageStyle] & ImageProperties, context: js.Any) = this()
   }
   
   @JSImport("react-native-animatable", "Text")
@@ -45,9 +48,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "Text")
   @js.native
-  class TextCls protected () extends ClassicComponent[AnimatableProperties[TextStyle] with TextProperties, ComponentState] {
-    def this(props: AnimatableProperties[TextStyle] with TextProperties) = this()
-    def this(props: AnimatableProperties[TextStyle] with TextProperties, context: js.Any) = this()
+  class TextCls protected () extends ClassicComponent[AnimatableProperties[TextStyle] & TextProperties, ComponentState] {
+    def this(props: AnimatableProperties[TextStyle] & TextProperties) = this()
+    def this(props: AnimatableProperties[TextStyle] & TextProperties, context: js.Any) = this()
   }
   
   @JSImport("react-native-animatable", "View")
@@ -58,160 +61,153 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("react-native-animatable", "View")
   @js.native
-  class ViewCls protected () extends ClassicComponent[AnimatableProperties[ViewStyle] with ViewProperties, ComponentState] {
-    def this(props: AnimatableProperties[ViewStyle] with ViewProperties) = this()
-    def this(props: AnimatableProperties[ViewStyle] with ViewProperties, context: js.Any) = this()
+  class ViewCls protected () extends ClassicComponent[AnimatableProperties[ViewStyle] & ViewProperties, ComponentState] {
+    def this(props: AnimatableProperties[ViewStyle] & ViewProperties) = this()
+    def this(props: AnimatableProperties[ViewStyle] & ViewProperties, context: js.Any) = this()
   }
   
-  @JSImport("react-native-animatable", "createAnimatableComponent")
-  @js.native
-  def createAnimatableComponent[P /* <: Style */, S](Component: ClassicComponentClass[P]): AnimatableComponent[P, S] = js.native
-  @JSImport("react-native-animatable", "createAnimatableComponent")
-  @js.native
-  def createAnimatableComponent[P /* <: Style */, S](Component: ComponentClass[P, ComponentState]): AnimatableComponent[P, S] = js.native
-  @JSImport("react-native-animatable", "createAnimatableComponent")
-  @js.native
-  def createAnimatableComponent[P /* <: Style */, S](Component: StatelessComponent[P]): AnimatableComponent[P, S] = js.native
+  @scala.inline
+  def createAnimatableComponent[P /* <: Style */, S](Component: ClassicComponentClass[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
+  @scala.inline
+  def createAnimatableComponent[P /* <: Style */, S](Component: ComponentClass[P, ComponentState]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
+  @scala.inline
+  def createAnimatableComponent[P /* <: Style */, S](Component: StatelessComponent[P]): AnimatableComponent[P, S] = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimatableComponent")(Component.asInstanceOf[js.Any]).asInstanceOf[AnimatableComponent[P, S]]
   
-  @JSImport("react-native-animatable", "createAnimation")
-  @js.native
-  def createAnimation(animation: CustomAnimation[TextStyle with ViewStyle with ImageStyle]): js.Object = js.native
+  @scala.inline
+  def createAnimation(animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animation.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   
-  @JSImport("react-native-animatable", "initializeRegistryWithDefinitions")
-  @js.native
-  def initializeRegistryWithDefinitions(animations: StringDictionary[CustomAnimation[TextStyle with ViewStyle with ImageStyle]]): Unit = js.native
+  @scala.inline
+  def initializeRegistryWithDefinitions(animations: StringDictionary[CustomAnimation[TextStyle & ViewStyle & ImageStyle]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeRegistryWithDefinitions")(animations.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("react-native-animatable", "registerAnimation")
-  @js.native
-  def registerAnimation(name: String, animation: CustomAnimation[TextStyle with ViewStyle with ImageStyle]): Unit = js.native
+  @scala.inline
+  def registerAnimation(name: String, animation: CustomAnimation[TextStyle & ViewStyle & ImageStyle]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Inlined std.Partial<{[ k in react-native-animatable.react-native-animatable.Animation ]: (duration : number | undefined): std.Promise<{  finished :boolean}>}> */
-  @js.native
   trait AnimatableAnimationMethods extends StObject {
     
-    var bounce: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounce: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var bounceOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var bounceOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeInUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeInUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutDownBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutLeftBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutRightBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var fadeOutUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var fadeOutUpBig: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var flash: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var flash: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var flipInX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var flipInX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var flipInY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var flipInY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var flipOutX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var flipOutX: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var flipOutY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var flipOutY: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var jello: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var jello: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var lightSpeedIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var lightSpeedIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var lightSpeedOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var lightSpeedOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var pulse: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var pulse: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var rotate: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var rotate: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var rubberBand: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var rubberBand: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var shake: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var shake: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var slideOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var slideOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var swing: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var swing: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var tada: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var tada: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var wobble: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var wobble: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomIn: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomInDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomInLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomInRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomInUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomOut: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomOutDown: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomOutLeft: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomOutRight: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
     
-    var zoomOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.native
+    var zoomOutUp: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], js.Promise[Finished]]] = js.undefined
   }
   object AnimatableAnimationMethods {
     
@@ -600,51 +596,51 @@ object mod {
   
   @js.native
   trait AnimatableComponent[P /* <: js.Object */, S /* <: js.Object */]
-    extends ClassicComponentClass[AnimatableProperties[S] with P]
+    extends StObject
        with NativeMethods
-       with AnimatableAnimationMethods {
+       with AnimatableAnimationMethods
+       with ClassicComponentClass[AnimatableProperties[S] & P] {
     
     def stopAnimation(): Unit = js.native
     
     def transition[T /* <: S */](fromValues: T, toValues: T): Unit = js.native
-    def transition[T /* <: S */](fromValues: T, toValues: T, duration: js.UndefOr[scala.Nothing], easing: Easing): Unit = js.native
     def transition[T /* <: S */](fromValues: T, toValues: T, duration: Double): Unit = js.native
     def transition[T /* <: S */](fromValues: T, toValues: T, duration: Double, easing: Easing): Unit = js.native
+    def transition[T /* <: S */](fromValues: T, toValues: T, duration: Unit, easing: Easing): Unit = js.native
     
     def transitionTo[T /* <: S */](toValues: T): Unit = js.native
-    def transitionTo[T /* <: S */](toValues: T, duration: js.UndefOr[scala.Nothing], easing: Easing): Unit = js.native
     def transitionTo[T /* <: S */](toValues: T, duration: Double): Unit = js.native
     def transitionTo[T /* <: S */](toValues: T, duration: Double, easing: Easing): Unit = js.native
+    def transitionTo[T /* <: S */](toValues: T, duration: Unit, easing: Easing): Unit = js.native
   }
   
-  @js.native
   trait AnimatableProperties[S /* <: js.Object */] extends StObject {
     
-    var animation: js.UndefOr[Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])] = js.native
+    var animation: js.UndefOr[Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[Direction] = js.native
+    var direction: js.UndefOr[Direction] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[Easing] = js.native
+    var easing: js.UndefOr[Easing] = js.undefined
     
-    var iterationCount: js.UndefOr[Double | infinite] = js.native
+    var iterationCount: js.UndefOr[Double | infinite] = js.undefined
     
-    var iterationDelay: js.UndefOr[Double] = js.native
+    var iterationDelay: js.UndefOr[Double] = js.undefined
     
-    var onAnimationBegin: js.UndefOr[js.Function] = js.native
+    var onAnimationBegin: js.UndefOr[js.Function] = js.undefined
     
-    var onAnimationEnd: js.UndefOr[js.Function] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function] = js.undefined
     
-    var onTransitionBegin: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.native
+    var onTransitionBegin: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
     
-    var onTransitionEnd: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.native
+    var onTransitionEnd: js.UndefOr[js.Function1[/* property */ String, Unit]] = js.undefined
     
-    var transition: js.UndefOr[(/* keyof S */ String) | (js.Array[/* keyof S */ String])] = js.native
+    var transition: js.UndefOr[(/* keyof S */ String) | (js.Array[/* keyof S */ String])] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object AnimatableProperties {
     
@@ -655,10 +651,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class AnimatablePropertiesMutableBuilder[Self <: AnimatableProperties[_], S /* <: js.Object */] (val x: Self with AnimatableProperties[S]) extends AnyVal {
+    implicit class AnimatablePropertiesMutableBuilder[Self <: AnimatableProperties[?], S /* <: js.Object */] (val x: Self & AnimatableProperties[S]) extends AnyVal {
       
       @scala.inline
-      def setAnimation(value: Animation | String | (CustomAnimation[TextStyle with ViewStyle with ImageStyle])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
+      def setAnimation(value: Animation | String | (CustomAnimation[TextStyle & ViewStyle & ImageStyle])): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAnimationUndefined: Self = StObject.set(x, "animation", js.undefined)
@@ -997,16 +993,17 @@ object mod {
     def zoomOutUp: typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp = "zoomOutUp".asInstanceOf[typings.reactNativeAnimatable.reactNativeAnimatableStrings.zoomOutUp]
   }
   
-  @js.native
-  trait CustomAnimation[T] extends /* progress */ NumberDictionary[T] {
+  trait CustomAnimation[T]
+    extends StObject
+       with /* progress */ NumberDictionary[T] {
     
-    var easing: js.UndefOr[Easing] = js.native
+    var easing: js.UndefOr[Easing] = js.undefined
     
-    var from: js.UndefOr[T] = js.native
+    var from: js.UndefOr[T] = js.undefined
     
-    var style: js.UndefOr[T] = js.native
+    var style: js.UndefOr[T] = js.undefined
     
-    var to: js.UndefOr[T] = js.native
+    var to: js.UndefOr[T] = js.undefined
   }
   object CustomAnimation {
     
@@ -1017,7 +1014,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CustomAnimationMutableBuilder[Self <: CustomAnimation[_], T] (val x: Self with CustomAnimation[T]) extends AnyVal {
+    implicit class CustomAnimationMutableBuilder[Self <: CustomAnimation[?], T] (val x: Self & CustomAnimation[T]) extends AnyVal {
       
       @scala.inline
       def setEasing(value: Easing): Self = StObject.set(x, "easing", value.asInstanceOf[js.Any])

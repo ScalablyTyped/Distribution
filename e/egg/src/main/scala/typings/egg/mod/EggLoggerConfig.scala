@@ -6,47 +6,45 @@ import typings.egg.eggStrings.ignore
 import typings.egg.eggStrings.redirect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent egg.egg.RemoveSpecProp<egg-logger.egg-logger.EggLoggersOptions, 'type'> */
-@js.native
 trait EggLoggerConfig extends StObject {
   
-  var agentLogName: String = js.native
+  var agentLogName: String
   
   /** allow debug log at prod, defaults to true */
-  var allowDebugAtProd: js.UndefOr[Boolean] = js.native
+  var allowDebugAtProd: js.UndefOr[Boolean] = js.undefined
   
-  var appLogName: String = js.native
+  var appLogName: String
   
-  var buffer: js.UndefOr[Boolean] = js.native
+  var buffer: js.UndefOr[Boolean] = js.undefined
   
-  var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.native
+  var concentrateError: js.UndefOr[duplicate | redirect | ignore] = js.undefined
   
-  var consoleLevel: js.UndefOr[typings.eggLogger.mod.LoggerLevel] = js.native
+  var consoleLevel: js.UndefOr[typings.eggLogger.mod.LoggerLevel] = js.undefined
   
-  var coreLogName: String = js.native
+  var coreLogName: String
   
   /** custom config of coreLogger */
-  var coreLogger: js.UndefOr[PartialEggLoggerOptions] = js.native
+  var coreLogger: js.UndefOr[PartialEggLoggerOptions] = js.undefined
   
-  var dir: String = js.native
+  var dir: String
   
   /** disable logger console after app ready. defaults to `false` on local and unittest env, others is `true`. */
-  var disableConsoleAfterReady: js.UndefOr[Boolean] = js.native
+  var disableConsoleAfterReady: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.undefined
   
-  var eol: js.UndefOr[String] = js.native
+  var eol: js.UndefOr[String] = js.undefined
   
-  var errorLogName: String = js.native
+  var errorLogName: String
   
-  var level: js.UndefOr[typings.eggLogger.mod.LoggerLevel] = js.native
+  var level: js.UndefOr[typings.eggLogger.mod.LoggerLevel] = js.undefined
   
-  var outputJSON: js.UndefOr[Boolean] = js.native
+  var outputJSON: js.UndefOr[Boolean] = js.undefined
 }
 object EggLoggerConfig {
   

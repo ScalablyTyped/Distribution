@@ -2,46 +2,44 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transport extends StObject {
   
   /**
     * The range of IP addresses that should be allowed to initiate output requests to this flow. These IP addresses should be in the form of a Classless Inter-Domain Routing (CIDR) block; for example, 10.0.0.0/16.
     */
-  var CidrAllowList: js.UndefOr[listOfString] = js.native
+  var CidrAllowList: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The smoothing max bitrate for RIST, RTP, and RTP-FEC streams.
     */
-  var MaxBitrate: js.UndefOr[integer] = js.native
+  var MaxBitrate: js.UndefOr[integer] = js.undefined
   
   /**
     * The maximum latency in milliseconds. This parameter applies only to RIST-based and Zixi-based streams.
     */
-  var MaxLatency: js.UndefOr[integer] = js.native
+  var MaxLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The protocol that is used by the source or output.
     */
-  var Protocol: typings.awsSdk.mediaconnectMod.Protocol = js.native
+  var Protocol: typings.awsSdk.mediaconnectMod.Protocol
   
   /**
     * The remote ID for the Zixi-pull stream.
     */
-  var RemoteId: js.UndefOr[string] = js.native
+  var RemoteId: js.UndefOr[string] = js.undefined
   
   /**
     * The smoothing latency in milliseconds for RIST, RTP, and RTP-FEC streams.
     */
-  var SmoothingLatency: js.UndefOr[integer] = js.native
+  var SmoothingLatency: js.UndefOr[integer] = js.undefined
   
   /**
     * The stream ID that you want to use for this transport. This parameter applies only to Zixi-based streams.
     */
-  var StreamId: js.UndefOr[string] = js.native
+  var StreamId: js.UndefOr[string] = js.undefined
 }
 object Transport {
   

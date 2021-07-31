@@ -3,19 +3,17 @@ package typings.cron
 import typings.node.childProcessMod.SpawnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var command: String = js.native
+    var command: String
     
-    var options: js.UndefOr[SpawnOptions] = js.native
+    var options: js.UndefOr[SpawnOptions] = js.undefined
   }
   object Args {
     

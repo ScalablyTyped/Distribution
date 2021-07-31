@@ -2,36 +2,34 @@ package typings.awsSdk.stepfunctionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateStateMachineInput extends StObject {
   
   /**
     * The Amazon States Language definition of the state machine. See Amazon States Language.
     */
-  var definition: js.UndefOr[Definition] = js.native
+  var definition: js.UndefOr[Definition] = js.undefined
   
   /**
     * The LoggingConfiguration data type is used to set CloudWatch Logs options.
     */
-  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.native
+  var loggingConfiguration: js.UndefOr[LoggingConfiguration] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role of the state machine.
     */
-  var roleArn: js.UndefOr[Arn] = js.native
+  var roleArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the state machine.
     */
-  var stateMachineArn: Arn = js.native
+  var stateMachineArn: Arn
   
   /**
     * Selects whether AWS X-Ray tracing is enabled.
     */
-  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.native
+  var tracingConfiguration: js.UndefOr[TracingConfiguration] = js.undefined
 }
 object UpdateStateMachineInput {
   

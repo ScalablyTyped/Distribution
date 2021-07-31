@@ -4,19 +4,19 @@ import typings.spectacle.mod.TransitionEffect
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Config extends TransitionEffect {
+trait Config
+  extends StObject
+     with TransitionEffect {
   
-  var config: Record[String, Double | String] = js.native
+  var config: Record[String, Double | String]
   
-  var enter: Record[String, Double | String] = js.native
+  var enter: Record[String, Double | String]
   
-  var from: Record[String, Double | String] = js.native
+  var from: Record[String, Double | String]
   
-  var leave: Record[String, Double | String] = js.native
+  var leave: Record[String, Double | String]
 }
 object Config {
   

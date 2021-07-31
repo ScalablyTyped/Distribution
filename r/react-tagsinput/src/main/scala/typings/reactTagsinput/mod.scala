@@ -11,7 +11,6 @@ import typings.reactTagsinput.anon.Value
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,56 +21,57 @@ object mod {
   
   type InputProps = StringDictionary[js.Any]
   
-  @js.native
-  trait ReactTagsInputProps[Tag] extends Props[TagsInput[Tag]] {
+  trait ReactTagsInputProps[Tag]
+    extends StObject
+       with Props[TagsInput[Tag]] {
     
-    var addKeys: js.UndefOr[js.Array[Double | String]] = js.native
+    var addKeys: js.UndefOr[js.Array[Double | String]] = js.undefined
     
-    var addOnBlur: js.UndefOr[Boolean] = js.native
+    var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
-    var addOnPaste: js.UndefOr[Boolean] = js.native
+    var addOnPaste: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var currentValue: js.UndefOr[String] = js.native
+    var currentValue: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var focusedClassName: js.UndefOr[String] = js.native
+    var focusedClassName: js.UndefOr[String] = js.undefined
     
-    var inputProps: js.UndefOr[InputProps] = js.native
+    var inputProps: js.UndefOr[InputProps] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
-    var maxTags: js.UndefOr[Double] = js.native
+    var maxTags: js.UndefOr[Double] = js.undefined
     
-    def onChange(tags: js.Array[Tag], changed: js.Array[Tag], changedIndexes: js.Array[Double]): Unit = js.native
+    def onChange(tags: js.Array[Tag], changed: js.Array[Tag], changedIndexes: js.Array[Double]): Unit
     
-    var onChangeInput: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onChangeInput: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onValidationReject: js.UndefOr[js.Function1[/* tags */ js.Array[String], Unit]] = js.native
+    var onValidationReject: js.UndefOr[js.Function1[/* tags */ js.Array[String], Unit]] = js.undefined
     
-    var onlyUnique: js.UndefOr[Boolean] = js.native
+    var onlyUnique: js.UndefOr[Boolean] = js.undefined
     
-    var pasteSplit: js.UndefOr[js.Function1[/* data */ String, js.Array[String]]] = js.native
+    var pasteSplit: js.UndefOr[js.Function1[/* data */ String, js.Array[String]]] = js.undefined
     
-    var preventSubmit: js.UndefOr[Boolean] = js.native
+    var preventSubmit: js.UndefOr[Boolean] = js.undefined
     
-    var removeKeys: js.UndefOr[js.Array[Double]] = js.native
+    var removeKeys: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps[Tag], ReactNode]] = js.native
+    var renderInput: js.UndefOr[js.Function1[/* props */ RenderInputProps[Tag], ReactNode]] = js.undefined
     
-    var renderLayout: js.UndefOr[RenderLayout] = js.native
+    var renderLayout: js.UndefOr[RenderLayout] = js.undefined
     
-    var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps[Tag], ReactNode]] = js.native
+    var renderTag: js.UndefOr[js.Function1[/* props */ RenderTagProps[Tag], ReactNode]] = js.undefined
     
-    var tagDisplayProp: js.UndefOr[(/* keyof Tag */ String) | Null] = js.native
+    var tagDisplayProp: js.UndefOr[(/* keyof Tag */ String) | Null] = js.undefined
     
-    var tagProps: js.UndefOr[TagProps] = js.native
+    var tagProps: js.UndefOr[TagProps] = js.undefined
     
-    var validationRegex: js.UndefOr[RegExp] = js.native
+    var validationRegex: js.UndefOr[RegExp] = js.undefined
     
-    var value: js.Array[Tag] = js.native
+    var value: js.Array[Tag]
   }
   object ReactTagsInputProps {
     
@@ -82,7 +82,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReactTagsInputPropsMutableBuilder[Self <: ReactTagsInputProps[_], Tag] (val x: Self with ReactTagsInputProps[Tag]) extends AnyVal {
+    implicit class ReactTagsInputPropsMutableBuilder[Self <: ReactTagsInputProps[?], Tag] (val x: Self & ReactTagsInputProps[Tag]) extends AnyVal {
       
       @scala.inline
       def setAddKeys(value: js.Array[Double | String]): Self = StObject.set(x, "addKeys", value.asInstanceOf[js.Any])
@@ -236,17 +236,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait RenderInputProps[Tag] extends InputProps {
+  trait RenderInputProps[Tag]
+    extends StObject
+       with InputProps {
     
-    def addTag(tag: Tag): Unit = js.native
+    def addTag(tag: Tag): Unit
     
-    def onChange(e: ChangeEvent[Value]): Unit = js.native
+    def onChange(e: ChangeEvent[Value]): Unit
     
-    def ref(r: js.Any): Unit = js.native
+    def ref(r: js.Any): Unit
     
     // parameter is either a DOM element or a mounted React component
-    val value: Tag = js.native
+    val value: Tag
   }
   object RenderInputProps {
     
@@ -257,7 +258,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RenderInputPropsMutableBuilder[Self <: RenderInputProps[_], Tag] (val x: Self with RenderInputProps[Tag]) extends AnyVal {
+    implicit class RenderInputPropsMutableBuilder[Self <: RenderInputProps[?], Tag] (val x: Self & RenderInputProps[Tag]) extends AnyVal {
       
       @scala.inline
       def setAddTag(value: Tag => Unit): Self = StObject.set(x, "addTag", js.Any.fromFunction1(value))
@@ -279,16 +280,17 @@ object mod {
     ReactChild
   ]
   
-  @js.native
-  trait RenderTagProps[Tag] extends TagProps {
+  trait RenderTagProps[Tag]
+    extends StObject
+       with TagProps {
     
-    val disabled: Boolean = js.native
+    val disabled: Boolean
     
-    def getTagDisplayValue(tag: Tag): String = js.native
+    def getTagDisplayValue(tag: Tag): String
     
-    def onRemove(tagIndex: Double): Unit = js.native
+    def onRemove(tagIndex: Double): Unit
     
-    val tag: Tag = js.native
+    val tag: Tag
   }
   object RenderTagProps {
     
@@ -299,7 +301,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RenderTagPropsMutableBuilder[Self <: RenderTagProps[_], Tag] (val x: Self with RenderTagProps[Tag]) extends AnyVal {
+    implicit class RenderTagPropsMutableBuilder[Self <: RenderTagProps[?], Tag] (val x: Self & RenderTagProps[Tag]) extends AnyVal {
       
       @scala.inline
       def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])

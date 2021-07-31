@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchLogsConfiguration extends StObject {
   
   /**
     * Whether CloudWatch Logs is enabled for a layer.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of configuration options for CloudWatch Logs.
     */
-  var LogStreams: js.UndefOr[CloudWatchLogsLogStreams] = js.native
+  var LogStreams: js.UndefOr[CloudWatchLogsLogStreams] = js.undefined
 }
 object CloudWatchLogsConfiguration {
   

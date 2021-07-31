@@ -5,17 +5,16 @@ import typings.react.reactStrings.forwards
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectionalSuspenseListProps
-  extends typings.react.experimentalMod.reactAugmentingMod.SuspenseListCommonProps {
+  extends StObject
+     with typings.react.experimentalMod.reactAugmentingMod.SuspenseListCommonProps {
   
   /**
     * Defines the order in which the `SuspenseList` children should be revealed.
     */
-  var revealOrder: forwards | backwards = js.native
+  var revealOrder: forwards | backwards
   
   /**
     * Dictates how unloaded items in a SuspenseList is shown.
@@ -24,7 +23,7 @@ trait DirectionalSuspenseListProps
     * - `collapsed` shows only the next fallback in the list.
     * - `hidden` doesn’t show any unloaded items.
     */
-  var tail: js.UndefOr[typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode] = js.native
+  var tail: js.UndefOr[typings.react.experimentalMod.reactAugmentingMod.SuspenseListTailMode] = js.undefined
 }
 object DirectionalSuspenseListProps {
   

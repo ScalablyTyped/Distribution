@@ -6,23 +6,21 @@ import typings.activexShdocvw.SHDocVw.ShellUIHelper
 import typings.activexShdocvw.SHDocVw.WebBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("InternetExplorer.Application")
-  var InternetExplorerDotApplication: InternetExplorer = js.native
+  var InternetExplorerDotApplication: InternetExplorer
   
   @JSName("Shell.Explorer")
-  var ShellDotExplorer: WebBrowser = js.native
+  var ShellDotExplorer: WebBrowser
   
   @JSName("Shell.UIHelper")
-  var ShellDotUIHelper: ShellUIHelper = js.native
+  var ShellDotUIHelper: ShellUIHelper
   
   @JSName("ShellNameSpace.ShellNameSpace")
-  var ShellNameSpaceDotShellNameSpace: ShellNameSpace = js.native
+  var ShellNameSpaceDotShellNameSpace: ShellNameSpace
 }
 object ActiveXObjectNameMap {
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is passed to an {@link InteractionHandler} when merging fails due to invalid layer data or access problems.
   * @since OOo 2.0
   */
-@js.native
-trait MergeRecoveryRequest extends Exception {
+trait MergeRecoveryRequest
+  extends StObject
+     with Exception {
   
   /**
     * data that provides more detailed information about the reason and location of the error.
@@ -27,10 +27,10 @@ trait MergeRecoveryRequest extends Exception {
     *
     * If no more detail information is available, this may be left `VOID` .
     */
-  var ErrorDetails: js.Any = js.native
+  var ErrorDetails: js.Any
   
   /** Identifier of the layer object containing the invalid data. */
-  var ErrorLayerId: String = js.native
+  var ErrorLayerId: String
   
   /**
     * specifies whether the requester wants to remove or skip the invalid layer.
@@ -38,7 +38,7 @@ trait MergeRecoveryRequest extends Exception {
     * If `TRUE` the requester wants to remove the underlying data of the layer. ;  If `FALSE` the request is to skip the underlying data this time, but
     * without removing it.
     */
-  var IsRemovalRequest: Boolean = js.native
+  var IsRemovalRequest: Boolean
 }
 object MergeRecoveryRequest {
   

@@ -4,31 +4,29 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonSpinner extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Duration of the spinner animation in milliseconds. The default varies based on the spinner.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the SVG spinner to use. If a name is not provided, the platform's default spinner will be used.
     */
-  var name: js.UndefOr[SpinnerTypes] = js.native
+  var name: js.UndefOr[SpinnerTypes] = js.undefined
   
   /**
     * If `true`, the spinner's animation will be paused.
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
 }
 object IonSpinner {
   

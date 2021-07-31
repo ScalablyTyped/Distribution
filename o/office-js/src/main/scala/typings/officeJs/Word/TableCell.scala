@@ -28,7 +28,6 @@ import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -38,7 +37,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: WordApi 1.3]
   */
 @js.native
-trait TableCell extends ClientObject {
+trait TableCell
+  extends StObject
+     with ClientObject {
   
   /**
     *

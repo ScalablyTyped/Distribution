@@ -3,7 +3,6 @@ package typings.screeps
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,15 +40,16 @@ trait Game extends StObject {
     * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
     * @param id The unique identifier.
     * @returns an object instance or null if it cannot be found.
+    * @deprecated Use Id<T>, instead of strings, to increase type safety
     */
+  // tslint:disable-next-line:unified-signatures
+  def getObjectById[T](id: String): T | Null = js.native
   /**
     * Get an object with the specified unique ID. It may be a game object of any type. Only objects from the rooms which are visible to you can be accessed.
     * @param id The unique identifier.
     * @returns an object instance or null if it cannot be found.
-    * @deprecated Use Id<T>, instead of strings, to increase type safety
     */
-  // tslint:disable-next-line:unified-signatures
-  def getObjectById[T](id: Id[T] | String): T | Null = js.native
+  def getObjectById[T](id: Id[T]): T | Null = js.native
   
   /**
     * Your clobal Power Level
@@ -76,8 +76,8 @@ trait Game extends StObject {
     * @param groupInterval If set to 0 (default), the notification will be scheduled immediately.
     * Otherwise, it will be grouped with other notifications and mailed out later using the specified time in minutes.
     */
-  def notify(message: String): js.UndefOr[scala.Nothing] = js.native
-  def notify(message: String, groupInterval: Double): js.UndefOr[scala.Nothing] = js.native
+  def notify(message: String): Unit = js.native
+  def notify(message: String, groupInterval: Double): Unit = js.native
   
   /**
     * A hash containing all your power creeps with their names as hash keys. Even power creeps not spawned in the world can be accessed here.

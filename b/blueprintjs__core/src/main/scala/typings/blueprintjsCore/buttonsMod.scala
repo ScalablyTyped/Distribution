@@ -9,7 +9,6 @@ import typings.std.HTMLAnchorElement
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object buttonsMod {
@@ -17,8 +16,8 @@ object buttonsMod {
   @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "AnchorButton")
   @js.native
   class AnchorButton protected () extends AbstractButton[AnchorHTMLAttributes[HTMLAnchorElement]] {
-    def this(props: IButtonProps with AnchorHTMLAttributes[HTMLAnchorElement]) = this()
-    def this(props: IButtonProps with AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
+    def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement]) = this()
+    def this(props: IButtonProps & AnchorHTMLAttributes[HTMLAnchorElement], context: js.Any) = this()
     
     @JSName("buttonRef")
     var buttonRef_AnchorButton: HTMLAnchorElement | IRefObject[HTMLAnchorElement] | Null = js.native
@@ -42,8 +41,8 @@ object buttonsMod {
   @JSImport("@blueprintjs/core/lib/esm/components/button/buttons", "Button")
   @js.native
   class Button protected () extends AbstractButton[ButtonHTMLAttributes[HTMLButtonElement]] {
-    def this(props: IButtonProps with ButtonHTMLAttributes[HTMLButtonElement]) = this()
-    def this(props: IButtonProps with ButtonHTMLAttributes[HTMLButtonElement], context: js.Any) = this()
+    def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement]) = this()
+    def this(props: IButtonProps & ButtonHTMLAttributes[HTMLButtonElement], context: js.Any) = this()
     
     @JSName("buttonRef")
     var buttonRef_Button: HTMLButtonElement | IRefObject[HTMLButtonElement] | Null = js.native

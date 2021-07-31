@@ -2,20 +2,18 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AffectedCookie extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
   /**
     * The following three properties uniquely identify a cookie
     */
-  var name: String = js.native
+  var name: String
   
-  var path: String = js.native
+  var path: String
 }
 object AffectedCookie {
   

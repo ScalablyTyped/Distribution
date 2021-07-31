@@ -2,31 +2,29 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeObjectsInput extends StObject {
   
   /**
     * Indicates whether any expressions in the object should be evaluated when the object descriptions are returned.
     */
-  var evaluateExpressions: js.UndefOr[Boolean] = js.native
+  var evaluateExpressions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The starting point for the results to be returned. For the first call, this value should be empty. As long as there are more results, continue to call DescribeObjects with the marker value from the previous call to retrieve the next set of results.
     */
-  var marker: js.UndefOr[String] = js.native
+  var marker: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the pipeline objects that contain the definitions to be described. You can pass as many as 25 identifiers in a single call to DescribeObjects.
     */
-  var objectIds: idList = js.native
+  var objectIds: idList
   
   /**
     * The ID of the pipeline that contains the object definitions.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
 }
 object DescribeObjectsInput {
   

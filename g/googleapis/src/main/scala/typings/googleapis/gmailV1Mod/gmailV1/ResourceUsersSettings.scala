@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Settings")
@@ -36,7 +35,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def getAutoForwarding(): GaxiosPromise[SchemaAutoForwarding] = js.native
   def getAutoForwarding(callback: BodyResponseCallback[SchemaAutoForwarding]): Unit = js.native
-  def getAutoForwarding(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoForwarding] = js.native
+  def getAutoForwarding(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoForwarding] = js.native
   def getAutoForwarding(params: ParamsResourceUsersSettingsGetautoforwarding): GaxiosPromise[SchemaAutoForwarding] = js.native
   def getAutoForwarding(
     params: ParamsResourceUsersSettingsGetautoforwarding,
@@ -68,7 +67,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def getImap(): GaxiosPromise[SchemaImapSettings] = js.native
   def getImap(callback: BodyResponseCallback[SchemaImapSettings]): Unit = js.native
-  def getImap(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImapSettings] = js.native
+  def getImap(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImapSettings] = js.native
   def getImap(params: ParamsResourceUsersSettingsGetimap): GaxiosPromise[SchemaImapSettings] = js.native
   def getImap(params: ParamsResourceUsersSettingsGetimap, callback: BodyResponseCallback[SchemaImapSettings]): Unit = js.native
   def getImap(
@@ -97,7 +96,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def getPop(): GaxiosPromise[SchemaPopSettings] = js.native
   def getPop(callback: BodyResponseCallback[SchemaPopSettings]): Unit = js.native
-  def getPop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPopSettings] = js.native
+  def getPop(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPopSettings] = js.native
   def getPop(params: ParamsResourceUsersSettingsGetpop): GaxiosPromise[SchemaPopSettings] = js.native
   def getPop(params: ParamsResourceUsersSettingsGetpop, callback: BodyResponseCallback[SchemaPopSettings]): Unit = js.native
   def getPop(
@@ -126,7 +125,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def getVacation(): GaxiosPromise[SchemaVacationSettings] = js.native
   def getVacation(callback: BodyResponseCallback[SchemaVacationSettings]): Unit = js.native
-  def getVacation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVacationSettings] = js.native
+  def getVacation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVacationSettings] = js.native
   def getVacation(params: ParamsResourceUsersSettingsGetvacation): GaxiosPromise[SchemaVacationSettings] = js.native
   def getVacation(
     params: ParamsResourceUsersSettingsGetvacation,
@@ -164,7 +163,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def updateAutoForwarding(): GaxiosPromise[SchemaAutoForwarding] = js.native
   def updateAutoForwarding(callback: BodyResponseCallback[SchemaAutoForwarding]): Unit = js.native
-  def updateAutoForwarding(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoForwarding] = js.native
+  def updateAutoForwarding(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoForwarding] = js.native
   def updateAutoForwarding(params: ParamsResourceUsersSettingsUpdateautoforwarding): GaxiosPromise[SchemaAutoForwarding] = js.native
   def updateAutoForwarding(
     params: ParamsResourceUsersSettingsUpdateautoforwarding,
@@ -197,7 +196,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def updateImap(): GaxiosPromise[SchemaImapSettings] = js.native
   def updateImap(callback: BodyResponseCallback[SchemaImapSettings]): Unit = js.native
-  def updateImap(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaImapSettings] = js.native
+  def updateImap(params: Unit, options: MethodOptions): GaxiosPromise[SchemaImapSettings] = js.native
   def updateImap(params: ParamsResourceUsersSettingsUpdateimap): GaxiosPromise[SchemaImapSettings] = js.native
   def updateImap(params: ParamsResourceUsersSettingsUpdateimap, callback: BodyResponseCallback[SchemaImapSettings]): Unit = js.native
   def updateImap(
@@ -227,7 +226,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def updatePop(): GaxiosPromise[SchemaPopSettings] = js.native
   def updatePop(callback: BodyResponseCallback[SchemaPopSettings]): Unit = js.native
-  def updatePop(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPopSettings] = js.native
+  def updatePop(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPopSettings] = js.native
   def updatePop(params: ParamsResourceUsersSettingsUpdatepop): GaxiosPromise[SchemaPopSettings] = js.native
   def updatePop(params: ParamsResourceUsersSettingsUpdatepop, callback: BodyResponseCallback[SchemaPopSettings]): Unit = js.native
   def updatePop(
@@ -257,7 +256,7 @@ class ResourceUsersSettings protected () extends StObject {
     */
   def updateVacation(): GaxiosPromise[SchemaVacationSettings] = js.native
   def updateVacation(callback: BodyResponseCallback[SchemaVacationSettings]): Unit = js.native
-  def updateVacation(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVacationSettings] = js.native
+  def updateVacation(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVacationSettings] = js.native
   def updateVacation(params: ParamsResourceUsersSettingsUpdatevacation): GaxiosPromise[SchemaVacationSettings] = js.native
   def updateVacation(
     params: ParamsResourceUsersSettingsUpdatevacation,

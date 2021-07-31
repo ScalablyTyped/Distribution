@@ -7,7 +7,6 @@ import typings.instagramPrivateApi.musicGenreFeedResponseMod.MusicGenreFeedRespo
 import typings.instagramPrivateApi.musicGenreFeedResponseMod.MusicGenreFeedResponseRootObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object musicGenreFeedMod {

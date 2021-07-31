@@ -3,47 +3,47 @@ package typings.devexpressWeb
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the RecurrenceRangeControl.
   */
-@js.native
-trait ASPxClientRecurrenceRangeControl extends ASPxClientControl {
+trait ASPxClientRecurrenceRangeControl
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Gets the recurrence end date.
     */
-  def GetEndDate(): Date = js.native
+  def GetEndDate(): Date
   
   /**
     * Gets how many times the appointment occurs.
     */
-  def GetOccurrenceCount(): Double = js.native
+  def GetOccurrenceCount(): Double
   
   /**
     * Gets the type of the recurrence range.
     */
-  def GetRange(): ASPxClientRecurrenceRange = js.native
+  def GetRange(): ASPxClientRecurrenceRange
   
   /**
     * Sets the recurrence end date.
     * @param date A JavaScript Date object that specifies the end date for the recurrence.
     */
-  def SetEndDate(date: Date): Unit = js.native
+  def SetEndDate(date: Date): Unit
   
   /**
     * Sets how many times the appointment occurs.
     * @param occurrenceCount An integer value that specifies how many times the appointment occurs.
     */
-  def SetOccurrenceCount(occurrenceCount: Double): Unit = js.native
+  def SetOccurrenceCount(occurrenceCount: Double): Unit
   
   /**
     * Sets the type of the recurrence range.
     * @param range An ASPxClientRecurrenceRangeenumeration value that specifies the recurrence range type.
     */
-  def SetRange(range: ASPxClientRecurrenceRange): Unit = js.native
+  def SetRange(range: ASPxClientRecurrenceRange): Unit
 }
 object ASPxClientRecurrenceRangeControl {
   

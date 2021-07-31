@@ -8,18 +8,16 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ValidationMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.FunctionComponent<fundamental-react.fundamental-react/lib/Table/Table.TableProps> & {  displayName :'Table'} */
 object Table {
   
-  @JSImport("fundamental-react", "Table")
-  @js.native
-  def apply(props: PropsWithChildren[TableProps]): ReactElement | Null = js.native
-  @JSImport("fundamental-react", "Table")
-  @js.native
-  def apply(props: PropsWithChildren[TableProps], context: js.Any): ReactElement | Null = js.native
+  @scala.inline
+  def apply(props: PropsWithChildren[TableProps]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+  @scala.inline
+  def apply(props: PropsWithChildren[TableProps], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+  
   @JSImport("fundamental-react", "Table")
   @js.native
   val ^ : js.Any = js.native

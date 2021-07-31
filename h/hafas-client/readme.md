@@ -10,13 +10,13 @@ Client for HAFAS public transport APIs.
 | ------------------ | :-------------: |
 | Full name          | hafas-client |
 | Keywords           | hafas, public, transport, transit, api, http |
-| # releases         | 60 |
+| # releases         | 57 |
 | # dependents       | 11 |
-| # downloads        | 28137 |
+| # downloads        | 29747 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/public-transport/hafas-client/tree/5.10.1)
+- [Homepage](https://github.com/public-transport/hafas-client/tree/5.15.1)
 - [Bugs](https://github.com/public-transport/hafas-client/issues)
 - [Repository](https://github.com/public-transport/hafas-client)
 - [Npm](https://www.npmjs.com/package/hafas-client)

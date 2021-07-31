@@ -6,53 +6,51 @@ import typings.musicmatch.mod.TBoolean
 import typings.musicmatch.mod.TrackResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Albumid extends StObject {
     
-    var album_id: Double = js.native
+    var album_id: Double
     
-    var album_name: String = js.native
+    var album_name: String
     
-    var artist_id: Double = js.native
+    var artist_id: Double
     
-    var artist_name: String = js.native
+    var artist_name: String
     
-    var commontrack_id: Double = js.native
+    var commontrack_id: Double
     
-    var explicit: TBoolean = js.native
+    var explicit: TBoolean
     
-    var has_lyrics: TBoolean = js.native
+    var has_lyrics: TBoolean
     
-    var has_richsync: TBoolean = js.native
+    var has_richsync: TBoolean
     
-    var has_subtitles: TBoolean = js.native
+    var has_subtitles: TBoolean
     
-    var instrumental: TBoolean = js.native
+    var instrumental: TBoolean
     
-    var num_favourite: Double = js.native
+    var num_favourite: Double
     
-    var primary_genres: PrimaryGenres = js.native
+    var primary_genres: PrimaryGenres
     
-    var restricted: TBoolean = js.native
+    var restricted: TBoolean
     
-    var track_edit_url: String = js.native
+    var track_edit_url: String
     
-    var track_id: Double = js.native
+    var track_id: Double
     
-    var track_name: String = js.native
+    var track_name: String
     
-    var track_name_translation_list: js.Array[_] = js.native
+    var track_name_translation_list: js.Array[js.Any]
     
-    var track_rating: Double = js.native
+    var track_rating: Double
     
-    var track_share_url: String = js.native
+    var track_share_url: String
     
-    var updated_time: String = js.native
+    var updated_time: String
   }
   object Albumid {
     
@@ -74,7 +72,7 @@ object anon {
       track_edit_url: String,
       track_id: Double,
       track_name: String,
-      track_name_translation_list: js.Array[_],
+      track_name_translation_list: js.Array[js.Any],
       track_rating: Double,
       track_share_url: String,
       updated_time: String
@@ -135,7 +133,7 @@ object anon {
       def setTrack_name(value: String): Self = StObject.set(x, "track_name", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTrack_name_translation_list(value: js.Array[_]): Self = StObject.set(x, "track_name_translation_list", value.asInstanceOf[js.Any])
+      def setTrack_name_translation_list(value: js.Array[js.Any]): Self = StObject.set(x, "track_name_translation_list", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTrack_name_translation_listVarargs(value: js.Any*): Self = StObject.set(x, "track_name_translation_list", js.Array(value :_*))
@@ -151,12 +149,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Apikey extends StObject {
     
-    var apikey: js.UndefOr[String] = js.native
+    var apikey: js.UndefOr[String] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
   }
   object Apikey {
     
@@ -183,14 +180,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Available extends StObject {
     
-    var available: Double = js.native
+    var available: Double
     
-    var execute_time: Double = js.native
+    var execute_time: Double
     
-    var status_code: Double = js.native
+    var status_code: Double
   }
   object Available {
     
@@ -214,12 +210,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Body extends StObject {
     
-    var body: Tracklist = js.native
+    var body: Tracklist
     
-    var header: Available = js.native
+    var header: Available
   }
   object Body {
     
@@ -240,10 +235,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Musicgenre extends StObject {
     
-    var music_genre: MusicGenre = js.native
+    var music_genre: MusicGenre
   }
   object Musicgenre {
     
@@ -261,10 +255,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Tracklist extends StObject {
     
-    var track_list: js.Array[TrackResult] = js.native
+    var track_list: js.Array[TrackResult]
   }
   object Tracklist {
     

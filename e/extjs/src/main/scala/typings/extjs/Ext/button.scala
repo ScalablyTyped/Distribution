@@ -4,7 +4,6 @@ import typings.extjs.Ext.menu.ICheckItem
 import typings.extjs.Ext.menu.IMenu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object button {
@@ -12,161 +11,162 @@ object button {
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.extjs.Ext.IClass because Already inherited
   - typings.extjs.Ext.IBase because Already inherited
-  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ @js.native
-  trait IButton extends IComponent {
+  - typings.extjs.Ext.IQueryable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined child, down, query, queryBy, queryById */ trait IButton
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Boolean) */
-    var allowDepress: js.UndefOr[Boolean] = js.native
+    var allowDepress: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var arrowAlign: js.UndefOr[java.lang.String] = js.native
+    var arrowAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var arrowCls: js.UndefOr[java.lang.String] = js.native
+    var arrowCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var baseParams: js.UndefOr[js.Any] = js.native
+    var baseParams: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Retrieves the first direct child of this container which matches the passed selector or component
       * @param selector String/Ext.Component An Ext.ComponentQuery selector. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching child Ext.Component (or null if no match was found).
       */
-    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var child: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var clickEvent: js.UndefOr[java.lang.String] = js.native
+    var clickEvent: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var destroyMenu: js.UndefOr[Boolean] = js.native
+    var destroyMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] inherit docs
       * @param silent Object
       */
     @JSName("disable")
-    var disable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.native
+    var disable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Retrieves the first descendant of this container which matches the passed selector
       * @param selector String/Ext.Component An Ext.ComponentQuery selector or Ext.Component. If no selector is specified, the first child will be returned.
       * @returns Object Ext.Component The matching descendant Ext.Component (or null if no match was found).
       */
-    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], _]] = js.native
+    var down: js.UndefOr[js.Function1[js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableToggle: js.UndefOr[Boolean] = js.native
+    var enableToggle: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] inherit docs
       * @param silent Object
       */
     @JSName("enable")
-    var enable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.native
+    var enable_IButton: js.UndefOr[js.Function1[/* silent */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var focusCls: js.UndefOr[java.lang.String] = js.native
+    var focusCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] This method returns an object which provides substitution parameters for the XTemplate used to create this Button s D
       * @returns Object Substitution data for a Template. The default implementation which provides data for the default template returns an Object containing the following properties:
       */
-    var getTemplateArgs: js.UndefOr[js.Function0[_]] = js.native
+    var getTemplateArgs: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Gets the text for this Button
       * @returns String The button text
       */
-    var getText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var glyph: js.UndefOr[js.Any] = js.native
+    var glyph: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var handleMouseEvents: js.UndefOr[Boolean] = js.native
+    var handleMouseEvents: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Function) */
-    var handler: js.UndefOr[js.Any] = js.native
+    var handler: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns true if the button has a menu and it is visible
       * @returns Boolean
       */
-    var hasVisibleMenu: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasVisibleMenu: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Hides this button s menu if it has one
       * @returns Ext.button.Button this
       */
-    var hideMenu: js.UndefOr[js.Function0[this.type]] = js.native
+    var hideMenu: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Config Option] (String) */
-    var href: js.UndefOr[java.lang.String] = js.native
+    var href: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var hrefTarget: js.UndefOr[java.lang.String] = js.native
+    var hrefTarget: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var icon: js.UndefOr[java.lang.String] = js.native
+    var icon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var iconAlign: js.UndefOr[java.lang.String] = js.native
+    var iconAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var iconCls: js.UndefOr[java.lang.String] = js.native
+    var iconCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Boolean) */
-    var isAction: js.UndefOr[Boolean] = js.native
+    var isAction: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.menu.Menu/String/Object) */
-    var menu: js.UndefOr[js.Any] = js.native
+    var menu: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var menuActiveCls: js.UndefOr[java.lang.String] = js.native
+    var menuActiveCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var menuAlign: js.UndefOr[java.lang.String] = js.native
+    var menuAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var overflowText: js.UndefOr[java.lang.String] = js.native
+    var overflowText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var pressed: js.UndefOr[Boolean] = js.native
+    var pressed: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var pressedCls: js.UndefOr[java.lang.String] = js.native
+    var pressedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed selector
       * @param selector String Selector complying to an Ext.ComponentQuery selector. If no selector is specified all items will be returned.
       * @returns Ext.Component[] Components which matched the selector
       */
-    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.native
+    var query: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], Array]] = js.undefined
     
     /** [Method] Retrieves all descendant components which match the passed function
       * @param fn Function The matcher function. It will be called with a single argument, the component being tested.
       * @param scope Object The scope in which to run the function. If not specified, it will default to the active component.
       * @returns Ext.Component[] Components matched by the passed function
       */
-    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.native
+    var queryBy: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[js.Any], Array]] = js.undefined
     
     /** [Method] Finds a component at any level under this container matching the id itemId
       * @param id String The id to find
       * @returns Ext.Component The matching id, null if not found
       */
-    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.native
+    var queryById: js.UndefOr[js.Function1[js.UndefOr[java.lang.String], IComponent]] = js.undefined
     
     /** [Config Option] (Boolean/Object) */
-    var repeat: js.UndefOr[js.Any] = js.native
+    var repeat: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] ("small"/"medium"/"large") */
-    var scale: js.UndefOr[js.Any] = js.native
+    var scale: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets this button s glyph
       * @param glyph Number/String the numeric charCode or string charCode/font-family. This parameter expects a format consistent with that of glyph
       * @returns Ext.button.Button this
       */
-    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[js.Any], this.type]] = js.native
+    var setGlyph: js.UndefOr[js.Function1[/* glyph */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] Assigns this Button s click handler
       * @param handler Function The function to call when the button is clicked
@@ -175,77 +175,77 @@ object button {
       */
     var setHandler: js.UndefOr[
         js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the href of the embedded anchor element to the passed URL
       * @param href String The URL to set in the anchor element.
       */
-    var setHref: js.UndefOr[js.Function1[/* href */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setHref: js.UndefOr[js.Function1[/* href */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the background image inline style of the button
       * @param icon String The path to an image to display in the button
       * @returns Ext.button.Button this
       */
-    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var setIcon: js.UndefOr[js.Function1[/* icon */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Sets the CSS class that provides a background image to use as the button s icon
       * @param cls String The CSS class providing the icon image
       * @returns Ext.button.Button this
       */
-    var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var setIconCls: js.UndefOr[js.Function1[/* cls */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Sets the href of the link dynamically according to the params passed and any baseParams configured
       * @param params Object Parameters to use in the href URL.
       */
-    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.native
+    var setParams: js.UndefOr[js.Function1[/* params */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Method to change the scale of the button
       * @param scale String The scale to change to.
       */
-    var setScale: js.UndefOr[js.Function1[/* scale */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setScale: js.UndefOr[js.Function1[/* scale */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets this Button s text
       * @param text String The button text
       * @returns Ext.button.Button this
       */
-    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var setText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Sets the text alignment for this button
       * @param align String The new alignment of the button text. See textAlign.
       */
-    var setTextAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setTextAlign: js.UndefOr[js.Function1[/* align */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the tooltip for this Button
       * @param tooltip String/Object This may be:  String : A string to be used as innerHTML (html tags are accepted) to show in a tooltip Object : A configuration object for Ext.tip.QuickTipManager.register.
       * @returns Ext.button.Button this
       */
-    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.native
+    var setTooltip: js.UndefOr[js.Function1[/* tooltip */ js.UndefOr[js.Any], this.type]] = js.undefined
     
     /** [Method] inherit docs
       * @param ui Object
       */
     @JSName("setUI")
-    var setUI_IButton: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.native
+    var setUI_IButton: js.UndefOr[js.Function1[/* ui */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showEmptyMenu: js.UndefOr[Boolean] = js.native
+    var showEmptyMenu: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Shows this button s menu if it has one
       * @param fromEvent Object
       */
-    var showMenu: js.UndefOr[js.Function1[/* fromEvent */ js.UndefOr[js.Any], Unit]] = js.native
+    var showMenu: js.UndefOr[js.Function1[/* fromEvent */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Ext.Template) */
-    var template: js.UndefOr[ITemplate] = js.native
+    var template: js.UndefOr[ITemplate] = js.undefined
     
     /** [Config Option] (String) */
-    var text: js.UndefOr[java.lang.String] = js.native
+    var text: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var textAlign: js.UndefOr[java.lang.String] = js.native
+    var textAlign: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] If a state it passed it becomes the pressed state otherwise the current state is toggled
       * @param state Boolean Force a particular state
@@ -254,19 +254,19 @@ object button {
       */
     var toggle: js.UndefOr[
         js.Function2[/* state */ js.UndefOr[Boolean], /* suppressEvent */ js.UndefOr[Boolean], this.type]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var toggleGroup: js.UndefOr[java.lang.String] = js.native
+    var toggleGroup: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Function) */
-    var toggleHandler: js.UndefOr[js.Any] = js.native
+    var toggleHandler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var tooltip: js.UndefOr[js.Any] = js.native
+    var tooltip: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var tooltipType: js.UndefOr[java.lang.String] = js.native
+    var tooltipType: js.UndefOr[java.lang.String] = js.undefined
   }
   object IButton {
     
@@ -304,7 +304,7 @@ object button {
       def setBaseParamsUndefined: Self = StObject.set(x, "baseParams", js.undefined)
       
       @scala.inline
-      def setChild(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
+      def setChild(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildUndefined: Self = StObject.set(x, "child", js.undefined)
@@ -328,7 +328,7 @@ object button {
       def setDisableUndefined: Self = StObject.set(x, "disable", js.undefined)
       
       @scala.inline
-      def setDown(value: js.UndefOr[js.Any] => _): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
+      def setDown(value: js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "down", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownUndefined: Self = StObject.set(x, "down", js.undefined)
@@ -352,7 +352,7 @@ object button {
       def setFocusClsUndefined: Self = StObject.set(x, "focusCls", js.undefined)
       
       @scala.inline
-      def setGetTemplateArgs(value: () => _): Self = StObject.set(x, "getTemplateArgs", js.Any.fromFunction0(value))
+      def setGetTemplateArgs(value: () => js.Any): Self = StObject.set(x, "getTemplateArgs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTemplateArgsUndefined: Self = StObject.set(x, "getTemplateArgs", js.undefined)
@@ -651,32 +651,33 @@ object button {
     }
   }
   
-  @js.native
-  trait ICycle extends ISplit {
+  trait ICycle
+    extends StObject
+       with ISplit {
     
     /** [Config Option] (Function) */
-    var changeHandler: js.UndefOr[js.Any] = js.native
+    var changeHandler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Number/String) */
-    var forceGlyph: js.UndefOr[js.Any] = js.native
+    var forceGlyph: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var forceIcon: js.UndefOr[java.lang.String] = js.native
+    var forceIcon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Gets the currently active menu item
       * @returns Ext.menu.CheckItem The active item
       */
-    var getActiveItem: js.UndefOr[js.Function0[ICheckItem]] = js.native
+    var getActiveItem: js.UndefOr[js.Function0[ICheckItem]] = js.undefined
     
     /** [Config Option] (Object[]) */
-    var items: js.UndefOr[Array] = js.native
+    var items: js.UndefOr[Array] = js.undefined
     
     /** [Property] (Ext.menu.Menu) */
     @JSName("menu")
-    var menu_ICycle: js.UndefOr[IMenu] = js.native
+    var menu_ICycle: js.UndefOr[IMenu] = js.undefined
     
     /** [Config Option] (String) */
-    var prependText: js.UndefOr[java.lang.String] = js.native
+    var prependText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the button s active menu item
       * @param item Ext.menu.CheckItem The item to activate
@@ -684,13 +685,13 @@ object button {
       */
     var setActiveItem: js.UndefOr[
         js.Function2[/* item */ js.UndefOr[ICheckItem], /* suppressEvent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var showText: js.UndefOr[Boolean] = js.native
+    var showText: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] This is normally called internally on button click but can be called externally to advance the button s active item */
-    var toggleSelected: js.UndefOr[js.Function0[Unit]] = js.native
+    var toggleSelected: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object ICycle {
     
@@ -767,15 +768,15 @@ object button {
   
   type IManager = IBase
   
-  @js.native
   trait ISplit
-    extends typings.extjs.Ext.button.IButton {
+    extends StObject
+       with typings.extjs.Ext.button.IButton {
     
     /** [Config Option] (Function) */
-    var arrowHandler: js.UndefOr[js.Any] = js.native
+    var arrowHandler: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var arrowTooltip: js.UndefOr[java.lang.String] = js.native
+    var arrowTooltip: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets this button s arrow click handler
       * @param handler Function The function to call when the arrow is clicked.
@@ -783,7 +784,7 @@ object button {
       */
     var setArrowHandler: js.UndefOr[
         js.Function2[/* handler */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ISplit {
     
@@ -816,6 +817,5 @@ object button {
     }
   }
   
-  @js.native
   trait Manager extends StObject
 }

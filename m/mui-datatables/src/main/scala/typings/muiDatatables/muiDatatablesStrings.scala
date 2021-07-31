@@ -7,14 +7,14 @@ import typings.muiDatatables.mod.Responsive
 import typings.muiDatatables.mod.SelectableRows
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object muiDatatablesStrings {
   
   @js.native
   sealed trait default
-    extends ChipColor
+    extends StObject
+       with ChipColor
        with ChipVariant
   @scala.inline
   def default: default = "default".asInstanceOf[default]
@@ -30,7 +30,9 @@ object muiDatatablesStrings {
   def asc: asc = "asc".asInstanceOf[asc]
   
   @js.native
-  sealed trait checkbox extends FilterType
+  sealed trait checkbox
+    extends StObject
+       with FilterType
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
@@ -40,7 +42,9 @@ object muiDatatablesStrings {
   def chip: chip = "chip".asInstanceOf[chip]
   
   @js.native
-  sealed trait custom extends FilterType
+  sealed trait custom
+    extends StObject
+       with FilterType
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
@@ -55,7 +59,9 @@ object muiDatatablesStrings {
   def disabled: disabled = "disabled".asInstanceOf[disabled]
   
   @js.native
-  sealed trait dropdown extends FilterType
+  sealed trait dropdown
+    extends StObject
+       with FilterType
   @scala.inline
   def dropdown: dropdown = "dropdown".asInstanceOf[dropdown]
   
@@ -65,27 +71,37 @@ object muiDatatablesStrings {
   def excluded: excluded = "excluded".asInstanceOf[excluded]
   
   @js.native
-  sealed trait multiple extends SelectableRows
+  sealed trait multiple
+    extends StObject
+       with SelectableRows
   @scala.inline
   def multiple: multiple = "multiple".asInstanceOf[multiple]
   
   @js.native
-  sealed trait multiselect extends FilterType
+  sealed trait multiselect
+    extends StObject
+       with FilterType
   @scala.inline
   def multiselect: multiselect = "multiselect".asInstanceOf[multiselect]
   
   @js.native
-  sealed trait none extends SelectableRows
+  sealed trait none
+    extends StObject
+       with SelectableRows
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait outlined extends ChipVariant
+  sealed trait outlined
+    extends StObject
+       with ChipVariant
   @scala.inline
   def outlined: outlined = "outlined".asInstanceOf[outlined]
   
   @js.native
-  sealed trait primary extends ChipColor
+  sealed trait primary
+    extends StObject
+       with ChipColor
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
@@ -100,32 +116,44 @@ object muiDatatablesStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait secondary extends ChipColor
+  sealed trait secondary
+    extends StObject
+       with ChipColor
   @scala.inline
   def secondary: secondary = "secondary".asInstanceOf[secondary]
   
   @js.native
-  sealed trait simple extends Responsive
+  sealed trait simple
+    extends StObject
+       with Responsive
   @scala.inline
   def simple: simple = "simple".asInstanceOf[simple]
   
   @js.native
-  sealed trait single extends SelectableRows
+  sealed trait single
+    extends StObject
+       with SelectableRows
   @scala.inline
   def single: single = "single".asInstanceOf[single]
   
   @js.native
-  sealed trait standard extends Responsive
+  sealed trait standard
+    extends StObject
+       with Responsive
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   
   @js.native
-  sealed trait textField extends FilterType
+  sealed trait textField
+    extends StObject
+       with FilterType
   @scala.inline
   def textField: textField = "textField".asInstanceOf[textField]
   
   @js.native
-  sealed trait vertical extends Responsive
+  sealed trait vertical
+    extends StObject
+       with Responsive
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
 }

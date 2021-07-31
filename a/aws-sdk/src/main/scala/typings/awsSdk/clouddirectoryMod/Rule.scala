@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
     * The minimum and maximum parameters that are associated with the rule.
     */
-  var Parameters: js.UndefOr[RuleParameterMap] = js.native
+  var Parameters: js.UndefOr[RuleParameterMap] = js.undefined
   
   /**
     * The type of attribute validation rule.
     */
-  var Type: js.UndefOr[RuleType] = js.native
+  var Type: js.UndefOr[RuleType] = js.undefined
 }
 object Rule {
   

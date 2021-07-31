@@ -4,23 +4,21 @@ import typings.sawtoothSdk.protobufMod.ClientStateListResponse.IEntry
 import typings.sawtoothSdk.protobufMod.ClientStateListResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IClientStateListResponse extends StObject {
   
   /** ClientStateListResponse entries */
-  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.native
+  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.undefined
   
   /** ClientStateListResponse paging */
-  var paging: js.UndefOr[IClientPagingResponse | Null] = js.native
+  var paging: js.UndefOr[IClientPagingResponse | Null] = js.undefined
   
   /** ClientStateListResponse stateRoot */
-  var stateRoot: js.UndefOr[String | Null] = js.native
+  var stateRoot: js.UndefOr[String | Null] = js.undefined
   
   /** ClientStateListResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IClientStateListResponse {
   

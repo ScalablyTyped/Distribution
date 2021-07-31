@@ -3,13 +3,11 @@ package typings.reactNativeWebrtc.mod
 import typings.reactNativeWebrtc.anon.IceConnectionState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventOnConnectionStateChange extends StObject {
   
-  var target: IceConnectionState = js.native
+  var target: IceConnectionState
 }
 object EventOnConnectionStateChange {
   

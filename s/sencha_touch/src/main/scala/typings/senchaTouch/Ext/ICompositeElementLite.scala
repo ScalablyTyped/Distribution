@@ -3,12 +3,11 @@ package typings.senchaTouch.Ext
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompositeElementLite
-  extends typings.senchaTouch.Ext.dom.IElement {
+  extends StObject
+     with typings.senchaTouch.Ext.dom.IElement {
   
   /** [Method] Adds elements to this Composite object
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an Array of DOM elements to add, or another Composite object who's elements should be added.
@@ -17,7 +16,7 @@ trait ICompositeElementLite
     */
   var add: js.UndefOr[
     js.Function2[/* els */ js.UndefOr[js.Any], /* root */ js.UndefOr[js.Any], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds the given CSS class es to this Element
     * @param names String The CSS class(es) to add to this element.
@@ -33,7 +32,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] fixes scope with flyweight
     * @param eventName Object
@@ -51,7 +50,7 @@ trait ICompositeElementLite
       /* opt */ js.UndefOr[js.Any], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Appends the passed element s to this element
     * @param element HTMLElement/Ext.dom.Element a DOM Node or an existing Element.
@@ -60,14 +59,14 @@ trait ICompositeElementLite
   @JSName("appendChild")
   var appendChild_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Appends this element to the passed element
     * @param el String/HTMLElement/Ext.dom.Element The new parent element. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("appendTo")
-  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var appendTo_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] More flexible version of setStyle for setting style properties
     * @param styles String/Object/Function A style specification string, e.g. "width:100px", or object in the form {width:"100px"}, or a function which returns such a specification.
@@ -76,10 +75,10 @@ trait ICompositeElementLite
   @JSName("applyStyles")
   var applyStyles_ICompositeElementLite: js.UndefOr[
     js.Function1[/* styles */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes all elements  */
-  var clear: js.UndefOr[js.Function0[Unit]] = js.native
+  var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Creates the passed DomHelper config and appends it to this element or optionally inserts it before the passed child e
     * @param config Object DomHelper element config object. If no tag is specified (e.g., {tag:'input'}) then a div will be automatically generated with the specified attributes.
@@ -95,7 +94,7 @@ trait ICompositeElementLite
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Calls the passed function for each element in this composite
     * @param fn Function The function to call.
@@ -104,47 +103,47 @@ trait ICompositeElementLite
     */
   var each: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (HTMLElement[]) */
-  var elements: js.UndefOr[Array] = js.native
+  var elements: js.UndefOr[Array] = js.undefined
   
   /** [Method] Clears this Composite and adds the elements passed
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an array of DOM elements, or another Composite from which to fill this Composite.
     * @returns Ext.dom.CompositeElementLite this
     */
-  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.native
+  var fill: js.UndefOr[js.Function1[/* els */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] Filters this composite to only elements that match the passed selector
     * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
     * @returns Ext.dom.CompositeElementLite this
     */
-  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.native
+  var filter: js.UndefOr[js.Function1[/* selector */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] Returns the number of elements in this Composite
     * @returns Number
     */
-  var getCount: js.UndefOr[js.Function0[Double]] = js.native
+  var getCount: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Find the index of the passed element within the composite collection
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, or an Ext.dom.Element, or an HtmlElement to find within the composite collection.
     * @returns Number The index of the passed Ext.dom.Element in the composite collection, or -1 if not found.
     */
-  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.native
+  var indexOf: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], Double]] = js.undefined
   
   /** [Method] Inserts this element after the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element to insert after. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertAfter")
-  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var insertAfter_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Inserts this element before the passed element in the DOM
     * @param el String/HTMLElement/Ext.dom.Element The element before which this element will be inserted. The id of the node, a DOM Node or an existing Element.
     * @returns Ext.dom.Element This element.
     */
   @JSName("insertBefore")
-  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var insertBefore_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Inserts an element as the first child of this element
     * @param element String/HTMLElement/Ext.dom.Element The id or element to insert.
@@ -153,7 +152,7 @@ trait ICompositeElementLite
   @JSName("insertFirst")
   var insertFirst_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Inserts or creates the passed element or DomHelper config as a sibling of this element
     * @param el String/HTMLElement/Ext.dom.Element/Object/Array The id, element to insert or a DomHelper config to create and insert or an array of any of those.
@@ -169,7 +168,7 @@ trait ICompositeElementLite
       /* returnDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns a flyweight Element of the dom element object at the specified index
     * @param index Number
@@ -177,7 +176,7 @@ trait ICompositeElementLite
     */
   var item: js.UndefOr[
     js.Function1[/* index */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds one or more CSS classes to this element and removes the same class es from all siblings
     * @param className String/String[] The CSS class to add, or an array of classes.
@@ -186,7 +185,7 @@ trait ICompositeElementLite
   @JSName("radioCls")
   var radioCls_ICompositeElementLite: js.UndefOr[
     js.Function1[/* className */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes the given CSS class es from this Element
     * @param names String The CSS class(es) to remove from this element.
@@ -202,7 +201,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes the specified element s
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite or an array of any of those.
@@ -211,13 +210,13 @@ trait ICompositeElementLite
     */
   var removeElement: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[js.Any], /* removeDom */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Forces the browser to repaint this element
     * @returns Ext.dom.Element this
     */
   @JSName("repaint")
-  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var repaint_ICompositeElementLite: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Replaces a CSS class on the element with another
     * @param oldName String The CSS class to replace.
@@ -235,7 +234,7 @@ trait ICompositeElementLite
       /* suffix */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Replaces the specified element with the passed element
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite to replace.
@@ -250,14 +249,14 @@ trait ICompositeElementLite
       /* domReplace */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Replaces this element with the passed element
     * @param el String/HTMLElement/Ext.dom.Element/Object The new element (id of the node, a DOM Node or an existing Element) or a DomHelper config of an element to create.
     * @returns Ext.dom.Element This element.
     */
   @JSName("replaceWith")
-  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var replaceWith_ICompositeElementLite: js.UndefOr[js.Function1[/* el */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Replaces the passed element with this element
     * @param element String/HTMLElement/Ext.dom.Element The element to replace. The id of the node, a DOM Node or an existing Element.
@@ -266,7 +265,7 @@ trait ICompositeElementLite
   @JSName("replace")
   var replace_ICompositeElementLite: js.UndefOr[
     js.Function1[/* element */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
     * @param selector String/HTMLElement[] The CSS selector or an array of elements
@@ -275,7 +274,7 @@ trait ICompositeElementLite
     */
   var select: js.UndefOr[
     js.Function2[/* selector */ js.UndefOr[js.Any], /* composite */ js.UndefOr[Boolean], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s CSS bottom style
     * @param bottom String The bottom CSS property value.
@@ -284,14 +283,14 @@ trait ICompositeElementLite
   @JSName("setBottom")
   var setBottom_ICompositeElementLite: js.UndefOr[
     js.Function1[/* bottom */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s box
     * @param box Object The box to fill, for example: {  left: ...,  top: ...,  width: ...,  height: ... }
     * @returns Ext.dom.Element this
     */
   @JSName("setBox")
-  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var setBox_ICompositeElementLite: js.UndefOr[js.Function1[/* box */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Set the height of this Element
     * @param height Number/String The new height.
@@ -300,7 +299,7 @@ trait ICompositeElementLite
   @JSName("setHeight")
   var setHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s left position directly using CSS style instead of setX
     * @param left String The left CSS property value.
@@ -309,7 +308,7 @@ trait ICompositeElementLite
   @JSName("setLeft")
   var setLeft_ICompositeElementLite: js.UndefOr[
     js.Function1[/* left */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the maximum height of this Element
     * @param height Number/String The new maximum height.
@@ -318,7 +317,7 @@ trait ICompositeElementLite
   @JSName("setMaxHeight")
   var setMaxHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the maximum width of this Element
     * @param width Number/String The new maximum width.
@@ -327,7 +326,7 @@ trait ICompositeElementLite
   @JSName("setMaxWidth")
   var setMaxWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the minimum height of this Element
     * @param height Number/String The new minimum height.
@@ -336,7 +335,7 @@ trait ICompositeElementLite
   @JSName("setMinHeight")
   var setMinHeight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* height */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the minimum width of this Element
     * @param width Number/String The new minimum width.
@@ -345,7 +344,7 @@ trait ICompositeElementLite
   @JSName("setMinWidth")
   var setMinWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s CSS right style
     * @param right String The right CSS property value.
@@ -354,7 +353,7 @@ trait ICompositeElementLite
   @JSName("setRight")
   var setRight_ICompositeElementLite: js.UndefOr[
     js.Function1[/* right */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Set the size of this Element
     * @param width Number/String The new width. This may be one of:  A Number specifying the new width in this Element's defaultUnits (by default, pixels). A String used to set the CSS width style. Animation may not be used. A size object in the format {width: widthValue, height: heightValue}.
@@ -368,7 +367,7 @@ trait ICompositeElementLite
       /* height */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Wrapper for setting style properties also takes single object parameter of multiple styles
     * @param property String/Object The style property to be set, or an object of multiple styles.
@@ -382,7 +381,7 @@ trait ICompositeElementLite
       /* value */ js.UndefOr[java.lang.String], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the element s top position directly using CSS style instead of setY
     * @param top String The top CSS property value.
@@ -391,7 +390,7 @@ trait ICompositeElementLite
   @JSName("setTop")
   var setTop_ICompositeElementLite: js.UndefOr[
     js.Function1[/* top */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Use this to change the visibility mode between VISIBILITY DISPLAY or OFFSETS
     * @param mode Object
@@ -400,14 +399,14 @@ trait ICompositeElementLite
   @JSName("setVisibilityMode")
   var setVisibilityMode_ICompositeElementLite: js.UndefOr[
     js.Function1[/* mode */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the visibility of the element see details
     * @param visible Boolean Whether the element is visible.
     * @returns Ext.Element this
     */
   @JSName("setVisible")
-  var setVisible_ICompositeElementLite: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IElement]] = js.native
+  var setVisible_ICompositeElementLite: js.UndefOr[js.Function1[/* visible */ js.UndefOr[Boolean], IElement]] = js.undefined
   
   /** [Method] Set the width of this Element
     * @param width Number/String The new width.
@@ -416,28 +415,28 @@ trait ICompositeElementLite
   @JSName("setWidth")
   var setWidth_ICompositeElementLite: js.UndefOr[
     js.Function1[/* width */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the position of the element in page coordinates regardless of how the element is positioned
     * @param pos Number[] Contains X &amp; Y [x, y] values for new position (coordinates are page-based).
     * @returns Ext.dom.Element this
     */
   @JSName("setXY")
-  var setXY_ICompositeElementLite: js.UndefOr[js.Function1[/* pos */ js.UndefOr[Array], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var setXY_ICompositeElementLite: js.UndefOr[js.Function1[/* pos */ js.UndefOr[Array], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the X position of the element based on page coordinates
     * @param x Number The X position of the element
     * @returns Ext.dom.Element this
     */
   @JSName("setX")
-  var setX_ICompositeElementLite: js.UndefOr[js.Function1[/* x */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var setX_ICompositeElementLite: js.UndefOr[js.Function1[/* x */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the Y position of the element based on page coordinates
     * @param y Number The Y position of the element.
     * @returns Ext.dom.Element this
     */
   @JSName("setY")
-  var setY_ICompositeElementLite: js.UndefOr[js.Function1[/* y */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.native
+  var setY_ICompositeElementLite: js.UndefOr[js.Function1[/* y */ js.UndefOr[Double], typings.senchaTouch.Ext.dom.IElement]] = js.undefined
   
   /** [Method] Sets the passed attributes as attributes of this element a style attribute can be a string object or function
     * @param attributes Object The object with the attributes.
@@ -451,7 +450,7 @@ trait ICompositeElementLite
       /* useSet */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.IElement
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Toggles the specified CSS class on this element removes it if it already exists otherwise adds it
     * @param className String The CSS class to toggle.
@@ -460,7 +459,7 @@ trait ICompositeElementLite
   @JSName("toggleCls")
   var toggleCls_ICompositeElementLite: js.UndefOr[
     js.Function1[/* className */ js.UndefOr[java.lang.String], typings.senchaTouch.Ext.dom.IElement]
-  ] = js.native
+  ] = js.undefined
 }
 object ICompositeElementLite {
   

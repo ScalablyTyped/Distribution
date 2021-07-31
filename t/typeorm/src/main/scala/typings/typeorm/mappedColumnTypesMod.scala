@@ -3,144 +3,142 @@ package typings.typeorm
 import typings.typeorm.columnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mappedColumnTypesMod {
   
-  @js.native
   trait MappedColumnTypes extends StObject {
     
     /**
       * Column type for duration column in query result cache table.
       */
-    var cacheDuration: ColumnType = js.native
+    var cacheDuration: ColumnType
     
     /**
       * Column type for identifier column in query result cache table.
       */
-    var cacheId: ColumnType = js.native
+    var cacheId: ColumnType
     
     /**
       * Column type for identifier column in query result cache table.
       */
-    var cacheIdentifier: ColumnType = js.native
+    var cacheIdentifier: ColumnType
     
     /**
       * Column type for query column in query result cache table.
       */
-    var cacheQuery: ColumnType = js.native
+    var cacheQuery: ColumnType
     
     /**
       * Column type for result column in query result cache table.
       */
-    var cacheResult: ColumnType = js.native
+    var cacheResult: ColumnType
     
     /**
       * Column type for time column in query result cache table.
       */
-    var cacheTime: ColumnType = js.native
+    var cacheTime: ColumnType
     
     /**
       * Column type for the create date column.
       */
-    var createDate: ColumnType = js.native
+    var createDate: ColumnType
     
     /**
       * Default value should be used by a database for "created date" column.
       */
-    var createDateDefault: String = js.native
+    var createDateDefault: String
     
     /**
       * Precision of datetime column. Used in MySql to define milliseconds.
       */
-    var createDatePrecision: js.UndefOr[Double] = js.native
+    var createDatePrecision: js.UndefOr[Double] = js.undefined
     
     /**
       * Column type for the delete date column.
       */
-    var deleteDate: ColumnType = js.native
+    var deleteDate: ColumnType
     
     /**
       * Nullable value should be used by a database for "deleted date" column.
       */
-    var deleteDateNullable: Boolean = js.native
+    var deleteDateNullable: Boolean
     
     /**
       * Precision of datetime column. Used in MySql to define milliseconds.
       */
-    var deleteDatePrecision: js.UndefOr[Double] = js.native
+    var deleteDatePrecision: js.UndefOr[Double] = js.undefined
     
     /**
       * Column type for metadata database name column in typeorm metadata table.
       */
-    var metadataDatabase: ColumnType = js.native
+    var metadataDatabase: ColumnType
     
     /**
       * Column type for metadata name column in typeorm metadata table.
       */
-    var metadataName: ColumnType = js.native
+    var metadataName: ColumnType
     
     /**
       * Column type for metadata schema name column in typeorm metadata table.
       */
-    var metadataSchema: ColumnType = js.native
+    var metadataSchema: ColumnType
     
     /**
       * Column type for metadata table name column in typeorm metadata table.
       */
-    var metadataTable: ColumnType = js.native
+    var metadataTable: ColumnType
     
     /**
       * Column type for metadata type column in typeorm metadata table.
       * Stores type of metadata. E.g. 'VIEW' or 'CHECK'
       */
-    var metadataType: ColumnType = js.native
+    var metadataType: ColumnType
     
     /**
       * Column type for metadata value column in typeorm metadata table.
       */
-    var metadataValue: ColumnType = js.native
+    var metadataValue: ColumnType
     
     /**
       * Column type of id column used for migrations table.
       */
-    var migrationId: ColumnType = js.native
+    var migrationId: ColumnType
     
     /**
       * Column type for migration name column used for migrations table.
       */
-    var migrationName: ColumnType = js.native
+    var migrationName: ColumnType
     
     /**
       * Column type of timestamp column used for migrations table.
       */
-    var migrationTimestamp: ColumnType = js.native
+    var migrationTimestamp: ColumnType
     
     /**
       * Column type for the tree level column.
       */
-    var treeLevel: ColumnType = js.native
+    var treeLevel: ColumnType
     
     /**
       * Column type for the update date column.
       */
-    var updateDate: ColumnType = js.native
+    var updateDate: ColumnType
     
     /**
       * Default value should be used by a database for "updated date" column.
       */
-    var updateDateDefault: String = js.native
+    var updateDateDefault: String
     
     /**
       * Precision of datetime column. Used in MySql to define milliseconds.
       */
-    var updateDatePrecision: js.UndefOr[Double] = js.native
+    var updateDatePrecision: js.UndefOr[Double] = js.undefined
     
     /**
       * Column type for the version column.
       */
-    var version: ColumnType = js.native
+    var version: ColumnType
   }
   object MappedColumnTypes {
     

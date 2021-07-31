@@ -14,40 +14,40 @@ import typings.react.mod.TouchEventHandler
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Stepper {
   
-  @js.native
-  trait SnackbarProps extends Props[Snackbar] {
+  trait SnackbarProps
+    extends StObject
+       with Props[Snackbar] {
     
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
-    var autoHideDuration: js.UndefOr[Double] = js.native
+    var autoHideDuration: js.UndefOr[Double] = js.undefined
     
-    var bodyStyle: js.UndefOr[CSSProperties] = js.native
+    var bodyStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var message: String | Element = js.native
+    var message: String | Element
     
-    var onActionClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onActionClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
     /** @deprecated Use the open property to control the component instead */
-    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // DEPRECATED
-    def onRequestClose(reason: String): Unit = js.native
+    def onRequestClose(reason: String): Unit
     
     /** @deprecated Use the open property to control the component instead */
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // DEPRECATED
-    var open: Boolean = js.native
+    var open: Boolean
     
     /** @deprecated Use the open property to control the component instead */
-    var openOnMount: js.UndefOr[Boolean] = js.native
+    var openOnMount: js.UndefOr[Boolean] = js.undefined
   }
   object SnackbarProps {
     
@@ -125,22 +125,23 @@ object Stepper {
   trait StepButton
     extends Component[StepButtonProps, js.Object, js.Any]
   
-  @js.native
-  trait StepButtonProps extends SharedEnhancedButtonProps[StepButton] {
+  trait StepButtonProps
+    extends StObject
+       with SharedEnhancedButtonProps[StepButton] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var completed: js.UndefOr[Boolean] = js.native
+    var completed: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode | String | Double] = js.native
+    var icon: js.UndefOr[ReactNode | String | Double] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
     
-    var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.native
+    var onTouchStart: js.UndefOr[TouchEventHandler[js.Object]] = js.undefined
   }
   object StepButtonProps {
     
@@ -199,14 +200,13 @@ object Stepper {
   
   type StepContent = Component[StepContentProps, js.Object, js.Any]
   
-  @js.native
   trait StepContentProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var last: js.UndefOr[Boolean] = js.native
+    var last: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StepContentProps {
     
@@ -241,20 +241,19 @@ object Stepper {
   
   type StepLabel = Component[StepLabelProps, js.Object, js.Any]
   
-  @js.native
   trait StepLabelProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var completed: js.UndefOr[Boolean] = js.native
+    var completed: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode | String | Double] = js.native
+    var icon: js.UndefOr[ReactNode | String | Double] = js.undefined
     
-    var iconContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var iconContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StepLabelProps {
     
@@ -305,16 +304,15 @@ object Stepper {
     }
   }
   
-  @js.native
   trait StepProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var completed: js.UndefOr[Boolean] = js.native
+    var completed: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StepProps {
     
@@ -355,16 +353,15 @@ object Stepper {
   
   type Stepper = Component[StepperProps, js.Object, js.Any]
   
-  @js.native
   trait StepperProps extends StObject {
     
-    var activeStep: js.UndefOr[Double] = js.native
+    var activeStep: js.UndefOr[Double] = js.undefined
     
-    var linear: js.UndefOr[Boolean] = js.native
+    var linear: js.UndefOr[Boolean] = js.undefined
     
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StepperProps {
     

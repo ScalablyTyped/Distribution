@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExchangeConfig extends StObject {
   
   /** All enabled exchanges in the partner. Duplicate enabled exchanges will be ignored. */
-  var enabledExchanges: js.UndefOr[js.Array[ExchangeConfigEnabledExchange]] = js.native
+  var enabledExchanges: js.UndefOr[js.Array[ExchangeConfigEnabledExchange]] = js.undefined
 }
 object ExchangeConfig {
   

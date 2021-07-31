@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adsense/v1.4", "adsense_v1_4.Resource$Customchannels")
@@ -33,7 +32,7 @@ class ResourceCustomchannels protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet): GaxiosPromise[SchemaCustomChannel] = js.native
   def get(params: ParamsResourceCustomchannelsGet, callback: BodyResponseCallback[SchemaCustomChannel]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceCustomchannels protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCustomChannels] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList): GaxiosPromise[SchemaCustomChannels] = js.native
   def list(params: ParamsResourceCustomchannelsList, callback: BodyResponseCallback[SchemaCustomChannels]): Unit = js.native
   def list(

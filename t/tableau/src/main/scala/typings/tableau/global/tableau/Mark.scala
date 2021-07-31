@@ -2,7 +2,6 @@ package typings.tableau.global.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -14,7 +13,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("tableau.Mark")
 @js.native
 class Mark protected ()
-  extends typings.tableau.tableau.Mark {
+  extends StObject
+     with typings.tableau.tableau.Mark {
   /** Creates a new Mark with the specified pairs. */
   def this(pairs: js.Array[typings.tableau.tableau.Pair]) = this()
+  
+  /** Gets a collection of field name/value pairs associated with the mark. */
+  /* CompleteClass */
+  override def getPairs(): js.Array[typings.tableau.tableau.Pair] = js.native
 }

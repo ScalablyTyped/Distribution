@@ -11,8 +11,8 @@ A user-friendlier drop-in replacement for the standard select with multiple attr
 | Full name          | multiselect |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 240306 |
+| # dependents       | 9 |
+| # downloads        | 272519 |
 | # stars            | 0 |
 
 ## Links

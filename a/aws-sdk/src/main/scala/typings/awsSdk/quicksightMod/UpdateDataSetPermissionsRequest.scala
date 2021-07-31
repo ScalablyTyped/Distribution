@@ -2,31 +2,29 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSetPermissionsRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID for the dataset whose permissions you want to update. This ID is unique per AWS Region for each AWS account.
     */
-  var DataSetId: ResourceId = js.native
+  var DataSetId: ResourceId
   
   /**
     * The resource permissions that you want to grant to the dataset.
     */
-  var GrantPermissions: js.UndefOr[ResourcePermissionList] = js.native
+  var GrantPermissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * The resource permissions that you want to revoke from the dataset.
     */
-  var RevokePermissions: js.UndefOr[ResourcePermissionList] = js.native
+  var RevokePermissions: js.UndefOr[ResourcePermissionList] = js.undefined
 }
 object UpdateDataSetPermissionsRequest {
   

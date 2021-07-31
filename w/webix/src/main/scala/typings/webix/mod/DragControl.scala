@@ -2,9 +2,9 @@ package typings.webix.mod
 
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -53,4 +53,9 @@ trait DragControl extends StObject {
   def sendSignal(signal: String): Unit = js.native
   
   var top: Double = js.native
+}
+object DragControl {
+  
+  @scala.inline
+  def apply: DragControl = ^.asInstanceOf[js.Dynamic].selectDynamic("DragControl").asInstanceOf[DragControl]
 }

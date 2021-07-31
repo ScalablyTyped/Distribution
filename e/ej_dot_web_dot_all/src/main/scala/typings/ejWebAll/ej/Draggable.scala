@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Draggable extends Widget_ {
+trait Draggable
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -15,20 +16,19 @@ trait Draggable extends Widget_ {
 }
 object Draggable {
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the autocomplete model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -61,28 +61,27 @@ object Draggable {
     }
   }
   
-  @js.native
   trait DragEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the draggable model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragEventArgs {
     
@@ -127,28 +126,27 @@ object Draggable {
     }
   }
   
-  @js.native
   trait DragStartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the draggable model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStartEventArgs {
     
@@ -193,28 +191,27 @@ object Draggable {
     }
   }
   
-  @js.native
   trait DragStopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the event model values
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** returns the draggable model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the exact mouse down target element
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStopEventArgs {
     
@@ -259,16 +256,15 @@ object Draggable {
     }
   }
   
-  @js.native
   trait HelperEventArgs extends StObject {
     
     /** returns the draggable element object
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the event model values
       */
-    var sender: js.UndefOr[js.Any] = js.native
+    var sender: js.UndefOr[js.Any] = js.undefined
   }
   object HelperEventArgs {
     
@@ -295,75 +291,74 @@ object Draggable {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Used to enable auto scroll while drag and drop the element.
       * @Default {'false'}
       */
-    var autoScroll: js.UndefOr[Boolean] = js.native
+    var autoScroll: js.UndefOr[Boolean] = js.undefined
     
     /** If clone is specified.
       * @Default {false}
       */
     @JSName("clone")
-    var clone_FModel: js.UndefOr[Boolean] = js.native
+    var clone_FModel: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the offset of the dragging helper relative to the mouse cursor.
       * @Default {{ top: -1, left: -2 }}
       */
-    var cursorAt: js.UndefOr[js.Any] = js.native
+    var cursorAt: js.UndefOr[js.Any] = js.undefined
     
     /** This event is triggered when dragging element is destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Distance in pixels after mousedown the mouse must move before dragging should start. This option can be used to prevent unwanted drags when clicking on an element.
       * @Default {1}
       */
-    var distance: js.UndefOr[Double] = js.native
+    var distance: js.UndefOr[Double] = js.undefined
     
     /** This event is triggered when the mouse is moved during the dragging.
       */
-    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.native
+    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.undefined
     
     /** The drag area is used to restrict the dragging element bounds.Specify the id of the container within which the element should be dragged.
       * @Default {null}
       */
-    var dragArea: js.UndefOr[Boolean] = js.native
+    var dragArea: js.UndefOr[Boolean] = js.undefined
     
     /** Supply a callback function to handle the drag start event as an init option.
       */
-    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.undefined
     
     /** This event is triggered when the mouse is moved during the dragging.
       */
-    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.native
+    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.undefined
     
     /** If specified, restricts drag start click to the specified element(s).
       * @Default {null}
       */
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
     /** This event is triggered when dragged.
       */
-    var helper: js.UndefOr[js.Function1[/* e */ HelperEventArgs, Unit]] = js.native
+    var helper: js.UndefOr[js.Function1[/* e */ HelperEventArgs, Unit]] = js.undefined
     
     /** Used to group sets of draggable and droppable items, in addition to droppable's accept option. A draggable with the same scope value as a droppable will be accepted by the
       * droppable.
       * @Default {'default'}
       */
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
     /** Represents when to start the scrolling inside the scroll container on dragging
       * @Default {'20'}
       */
-    var scrollSensitivity: js.UndefOr[Double] = js.native
+    var scrollSensitivity: js.UndefOr[Double] = js.undefined
     
     /** Specifies how much distance of scroll should move on dragging once reached scroll sensitivity area.
       * @Default {'20'}
       */
-    var scrollSpeed: js.UndefOr[Double] = js.native
+    var scrollSpeed: js.UndefOr[Double] = js.undefined
   }
   object Model {
     

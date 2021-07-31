@@ -2,15 +2,13 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bar extends StObject {
   
-  var bar: js.UndefOr[Borderradius] = js.native
+  var bar: js.UndefOr[Borderradius] = js.undefined
   
-  var handle: js.UndefOr[Borderradius] = js.native
+  var handle: js.UndefOr[Borderradius] = js.undefined
 }
 object Bar {
   

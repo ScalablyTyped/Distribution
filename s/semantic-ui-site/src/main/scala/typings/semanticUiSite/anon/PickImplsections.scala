@@ -2,14 +2,12 @@ package typings.semanticUiSite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-site.SemanticUI.Site.NamespaceStubSettings._Impl, 'sections'> */
-@js.native
 trait PickImplsections extends StObject {
   
-  var sections: js.Any = js.native
+  var sections: js.Any
 }
 object PickImplsections {
   

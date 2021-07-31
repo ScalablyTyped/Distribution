@@ -5,29 +5,29 @@ import typings.awsSdkClientXrayNode.typesServiceMod.UnmarshalledService
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetTraceGraphOutputMod {
   
-  @js.native
-  trait GetTraceGraphOutput extends OutputTypesUnion {
+  trait GetTraceGraphOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Pagination token. Not used.</p>
       */
-    var NextToken: js.UndefOr[String] = js.native
+    var NextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The services that have processed one of the specified requests.</p>
       */
-    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.native
+    var Services: js.UndefOr[js.Array[UnmarshalledService]] = js.undefined
   }
   object GetTraceGraphOutput {
     

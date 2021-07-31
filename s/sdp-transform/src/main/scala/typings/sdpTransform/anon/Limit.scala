@@ -7,15 +7,13 @@ import typings.sdpTransform.sdpTransformStrings.RS
 import typings.sdpTransform.sdpTransformStrings.TIAS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Limit extends StObject {
   
-  var limit: Double | String = js.native
+  var limit: Double | String
   
-  var `type`: TIAS | AS | CT | RR | RS = js.native
+  var `type`: TIAS | AS | CT | RR | RS
 }
 object Limit {
   

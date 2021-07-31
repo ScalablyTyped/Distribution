@@ -2,21 +2,19 @@ package typings.datatablesNetButtons.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ButtonKey extends StObject {
   
-  var altKey: js.UndefOr[Boolean] = js.native
+  var altKey: js.UndefOr[Boolean] = js.undefined
   
-  var ctrlKey: js.UndefOr[Boolean] = js.native
+  var ctrlKey: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var metaKey: js.UndefOr[Boolean] = js.native
+  var metaKey: js.UndefOr[Boolean] = js.undefined
   
-  var shiftKey: js.UndefOr[Boolean] = js.native
+  var shiftKey: js.UndefOr[Boolean] = js.undefined
 }
 object ButtonKey {
   

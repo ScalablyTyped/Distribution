@@ -5,11 +5,12 @@ import typings.vexflow.anon.FillStyle_
 import typings.vexflow.anon.Stemdirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StemmableNote extends Note {
+trait StemmableNote
+  extends StObject
+     with Note {
   
   def buildStem(): StemmableNote = js.native
   

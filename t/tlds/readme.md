@@ -10,9 +10,9 @@ A list of TLDs.
 | ------------------ | :-------------: |
 | Full name          | tlds |
 | Keywords           | data, tld, tlds, top, level, domains |
-| # releases         | 3 |
-| # dependents       | 75 |
-| # downloads        | 18255020 |
+| # releases         | 11 |
+| # dependents       | 78 |
+| # downloads        | 23476834 |
 | # stars            | 1 |
 
 ## Links

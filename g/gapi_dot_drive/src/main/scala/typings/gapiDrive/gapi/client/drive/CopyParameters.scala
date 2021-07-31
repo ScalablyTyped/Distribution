@@ -2,31 +2,29 @@ package typings.gapiDrive.gapi.client.drive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyParameters extends StObject {
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var fileId: String = js.native
+  var fileId: String
   
-  var ocr: js.UndefOr[Boolean] = js.native
+  var ocr: js.UndefOr[Boolean] = js.undefined
   
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
-  var resource: js.UndefOr[FileResource] = js.native
+  var resource: js.UndefOr[FileResource] = js.undefined
   
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
-  var timedTextLanguage: js.UndefOr[String] = js.native
+  var timedTextLanguage: js.UndefOr[String] = js.undefined
   
-  var timedTextTrackName: js.UndefOr[String] = js.native
+  var timedTextTrackName: js.UndefOr[String] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object CopyParameters {
   

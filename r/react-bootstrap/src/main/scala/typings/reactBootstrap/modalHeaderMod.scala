@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalHeaderMod {
@@ -18,16 +17,17 @@ object modalHeaderMod {
   trait ModalHeader
     extends Component[ModalHeaderProps, js.Object, js.Any]
   
-  @js.native
-  trait ModalHeaderProps extends HTMLProps[ModalHeader] {
+  trait ModalHeaderProps
+    extends StObject
+       with HTMLProps[ModalHeader] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var closeButton: js.UndefOr[Boolean] = js.native
+    var closeButton: js.UndefOr[Boolean] = js.undefined
     
-    var closeLabel: js.UndefOr[String] = js.native
+    var closeLabel: js.UndefOr[String] = js.undefined
     
-    var onHide: js.UndefOr[js.Function] = js.native
+    var onHide: js.UndefOr[js.Function] = js.undefined
   }
   object ModalHeaderProps {
     

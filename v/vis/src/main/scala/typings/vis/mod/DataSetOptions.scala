@@ -2,11 +2,11 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataSetOptions extends DataSetQueueOptions {
+trait DataSetOptions
+  extends StObject
+     with DataSetQueueOptions {
   
   /**
     * The name of the field containing the id of the items.
@@ -14,7 +14,7 @@ trait DataSetOptions extends DataSetQueueOptions {
     * this field name can be specified in the DataSet using the option fieldId.
     * For example CouchDB uses the field "_id" to identify documents.
     */
-  var fieldId: js.UndefOr[String] = js.native
+  var fieldId: js.UndefOr[String] = js.undefined
   
   /**
     * An object containing field names as key, and data types as value.
@@ -24,7 +24,7 @@ trait DataSetOptions extends DataSetQueueOptions {
     * from a server into JavaScript Date objects.
     * The available data types are listed in section Data Types.
     */
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
 }
 object DataSetOptions {
   

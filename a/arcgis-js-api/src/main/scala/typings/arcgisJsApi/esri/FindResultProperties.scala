@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindResultProperties extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait FindResultProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#displayFieldName)
     */
-  var displayFieldName: js.UndefOr[String] = js.native
+  var displayFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * The found feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#feature)
     */
-  var feature: js.UndefOr[GraphicProperties] = js.native
+  var feature: js.UndefOr[GraphicProperties] = js.undefined
   
   /**
     * The name of the field that contains the search text.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#foundFieldName)
     */
-  var foundFieldName: js.UndefOr[String] = js.native
+  var foundFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * Unique ID of the layer that contains the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#layerId)
     */
-  var layerId: js.UndefOr[Double] = js.native
+  var layerId: js.UndefOr[Double] = js.undefined
   
   /**
     * The layer name that contains the feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#layerName)
     */
-  var layerName: js.UndefOr[String] = js.native
+  var layerName: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the `foundFieldName` in the feature's attributes.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FindResult.html#value)
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object FindResultProperties {
   

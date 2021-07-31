@@ -3,12 +3,12 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ActionSheet
-  extends typings.kendoUi.kendo.ui.Widget {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Widget {
   
   def close(): Unit = js.native
   

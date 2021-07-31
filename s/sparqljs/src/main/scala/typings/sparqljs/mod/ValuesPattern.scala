@@ -3,22 +3,22 @@ package typings.sparqljs.mod
 import typings.sparqljs.sparqljsStrings.values
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ValuesPattern extends Pattern {
+trait ValuesPattern
+  extends StObject
+     with Pattern {
   
-  var `type`: values = js.native
+  var `type`: values
   
-  var values: js.Array[ValuePatternRow] = js.native
+  var values: js.Array[ValuePatternRow]
 }
 object ValuesPattern {
   
   @scala.inline
-  def apply(`type`: values, values: js.Array[ValuePatternRow]): ValuesPattern = {
+  def apply(values: js.Array[ValuePatternRow]): ValuesPattern = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("values")
     __obj.asInstanceOf[ValuesPattern]
   }
   

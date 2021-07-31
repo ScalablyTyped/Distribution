@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.util
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,17 +9,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The time zone is unknown.
   */
-@js.native
 trait Date extends StObject {
   
   /** contains the day of month (1-31 or 0 for a void date). */
-  var Day: Double = js.native
+  var Day: Double
   
   /** contains the month of year (1-12 or 0 for a void date). */
-  var Month: Double = js.native
+  var Month: Double
   
   /** contains the year. */
-  var Year: Double = js.native
+  var Year: Double
 }
 object Date {
   

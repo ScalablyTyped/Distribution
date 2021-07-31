@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
   
   @JSImport("@ionic/core/dist/types/components/range/range", "Range")
   @js.native
-  class Range () extends ComponentInterface {
+  class Range ()
+    extends StObject
+       with ComponentInterface {
     
     var clampBounds: js.Any = js.native
     

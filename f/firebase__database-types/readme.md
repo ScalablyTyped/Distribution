@@ -10,9 +10,9 @@ Typings are for version 0.6.1
 | ------------------ | :-------------: |
 | Full name          | @firebase/database-types |
 | Keywords           | - |
-| # releases         | 1124 |
+| # releases         | 1289 |
 | # dependents       | 22 |
-| # downloads        | 59563883 |
+| # downloads        | 65840269 |
 | # stars            | 0 |
 
 ## Links

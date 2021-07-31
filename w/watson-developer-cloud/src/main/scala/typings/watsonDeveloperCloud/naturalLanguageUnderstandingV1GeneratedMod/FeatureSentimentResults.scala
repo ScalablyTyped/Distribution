@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FeatureSentimentResults. */
-@js.native
 trait FeatureSentimentResults extends StObject {
   
   /** Sentiment score from -1 (negative) to 1 (positive). */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object FeatureSentimentResults {
   

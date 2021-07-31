@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.wordpressBlockEditor.checkMod.MediaUploadCheck.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkMod {
@@ -25,12 +24,11 @@ object checkMod {
   
   object MediaUploadCheck {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var fallback: js.UndefOr[ReactNode] = js.native
+      var fallback: js.UndefOr[ReactNode] = js.undefined
     }
     object Props {
       

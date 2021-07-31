@@ -22,14 +22,16 @@ import typings.absSvgPath.absSvgPathStrings.v_
 import typings.absSvgPath.absSvgPathStrings.z_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: js.Array[AnyCommand]): js.Array[AbsAnyCommand] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[AbsAnyCommand]]
+  
   @JSImport("abs-svg-path", JSImport.Namespace)
   @js.native
-  def apply(path: js.Array[AnyCommand]): js.Array[AbsAnyCommand] = js.native
+  val ^ : js.Any = js.native
   
   type AbsAnyCommand = AbsMoveCommand | AbsLineCommand | AbsHorizontalCommand | AbsVerticalCommand | AbsClosePathCommand | AbsBezierCurveCommand | AbsFollowingBezierCurveCommand | AbsQuadraticCurveCommand | AbsFollowingQuadraticCurveCommand | AbsArcCommand
   

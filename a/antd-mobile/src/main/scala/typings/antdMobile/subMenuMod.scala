@@ -4,31 +4,32 @@ import typings.antdMobile.menuPropsTypeMod.DataItem
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subMenuMod {
   
-  @JSImport("antd-mobile/lib/menu/SubMenu", JSImport.Default)
+  @JSImport("antd-mobile/lib/menu/SubMenu", JSImport.Namespace)
   @js.native
-  def default(props: PropsType): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: PropsType): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait PropsType extends StObject {
     
-    var multiSelect: js.UndefOr[Boolean] = js.native
+    var multiSelect: js.UndefOr[Boolean] = js.undefined
     
-    def onSel(dataItem: DataItem): Unit = js.native
+    def onSel(dataItem: DataItem): Unit
     
-    var radioPrefixCls: js.UndefOr[String] = js.native
+    var radioPrefixCls: js.UndefOr[String] = js.undefined
     
-    var selItem: js.Array[DataItem] = js.native
+    var selItem: js.Array[DataItem]
     
-    var showSelect: Boolean = js.native
+    var showSelect: Boolean
     
-    var subMenuData: js.Array[DataItem] = js.native
+    var subMenuData: js.Array[DataItem]
     
-    var subMenuPrefixCls: js.UndefOr[String] = js.native
+    var subMenuPrefixCls: js.UndefOr[String] = js.undefined
   }
   object PropsType {
     

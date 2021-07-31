@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -47,9 +46,8 @@ object ExportMappingJavaActionParameterValue {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExportMappingJavaActionParameterValue.create")
-  @js.native
-  def create(model: IModel): ExportMappingJavaActionParameterValue = js.native
+  @scala.inline
+  def create(model: IModel): ExportMappingJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExportMappingJavaActionParameterValue]
   
   /**
     * Creates and returns a new ExportMappingJavaActionParameterValue instance in the SDK and on the server.
@@ -60,9 +58,8 @@ object ExportMappingJavaActionParameterValue {
     *  7.2.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExportMappingJavaActionParameterValue.createIn")
-  @js.native
-  def createIn(container: JavaActionParameterMapping): ExportMappingJavaActionParameterValue = js.native
+  @scala.inline
+  def createIn(container: JavaActionParameterMapping): ExportMappingJavaActionParameterValue = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportMappingJavaActionParameterValue]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.ExportMappingJavaActionParameterValue.structureTypeName")

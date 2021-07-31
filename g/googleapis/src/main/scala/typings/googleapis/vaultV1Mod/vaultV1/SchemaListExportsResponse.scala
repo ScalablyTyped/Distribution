@@ -2,24 +2,22 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The holds for a matter.
   */
-@js.native
 trait SchemaListExportsResponse extends StObject {
   
   /**
     * The list of exports.
     */
-  var exports: js.UndefOr[js.Array[SchemaExport]] = js.native
+  var exports: js.UndefOr[js.Array[SchemaExport]] = js.undefined
   
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListExportsResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingSessionEndpoint extends StObject {
   
   /**
     * The URL of a meeting session endpoint.
     */
-  var Url: js.UndefOr[UrlType] = js.native
+  var Url: js.UndefOr[UrlType] = js.undefined
 }
 object MessagingSessionEndpoint {
   

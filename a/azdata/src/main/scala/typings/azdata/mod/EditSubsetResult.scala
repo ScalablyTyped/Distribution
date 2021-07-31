@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditSubsetResult extends StObject {
   
-  var rowCount: Double = js.native
+  var rowCount: Double
   
-  var subset: js.Array[EditRow] = js.native
+  var subset: js.Array[EditRow]
 }
 object EditSubsetResult {
   

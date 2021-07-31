@@ -3,21 +3,22 @@ package typings.reactNavigationStack
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maskedViewMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/MaskedView", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/vendor/views/MaskedView", JSImport.Namespace)
   @js.native
-  def default(hasChildren: Props): ReactElement = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasChildren: Props): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+  
   trait Props extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
-    var maskElement: ReactElement = js.native
+    var maskElement: ReactElement
   }
   object Props {
     

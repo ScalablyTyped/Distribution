@@ -6,7 +6,6 @@ import typings.winrt.Windows.Graphics.Display.ResolutionScale
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Display {
@@ -16,23 +15,24 @@ object Display {
   object DisplayOrientations extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Display.DisplayOrientations with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Display.DisplayOrientations & Double] = js.native
     
-    /* 1 */ val landscape: typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscape with Double = js.native
+    /* 1 */ val landscape: typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscape & Double = js.native
     
-    /* 3 */ val landscapeFlipped: typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscapeFlipped with Double = js.native
+    /* 3 */ val landscapeFlipped: typings.winrt.Windows.Graphics.Display.DisplayOrientations.landscapeFlipped & Double = js.native
     
-    /* 0 */ val none: typings.winrt.Windows.Graphics.Display.DisplayOrientations.none with Double = js.native
+    /* 0 */ val none: typings.winrt.Windows.Graphics.Display.DisplayOrientations.none & Double = js.native
     
-    /* 2 */ val portrait: typings.winrt.Windows.Graphics.Display.DisplayOrientations.portrait with Double = js.native
+    /* 2 */ val portrait: typings.winrt.Windows.Graphics.Display.DisplayOrientations.portrait & Double = js.native
     
-    /* 4 */ val portraitFlipped: typings.winrt.Windows.Graphics.Display.DisplayOrientations.portraitFlipped with Double = js.native
+    /* 4 */ val portraitFlipped: typings.winrt.Windows.Graphics.Display.DisplayOrientations.portraitFlipped & Double = js.native
   }
   
   @JSGlobal("Windows.Graphics.Display.DisplayProperties")
   @js.native
   class DisplayProperties ()
-    extends typings.winrt.Windows.Graphics.Display.DisplayProperties
+    extends StObject
+       with typings.winrt.Windows.Graphics.Display.DisplayProperties
   /* static members */
   object DisplayProperties {
     
@@ -52,9 +52,8 @@ object Display {
     @scala.inline
     def currentOrientation_=(x: DisplayOrientations): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentOrientation")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("Windows.Graphics.Display.DisplayProperties.getColorProfileAsync")
-    @js.native
-    def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream] = js.native
+    @scala.inline
+    def getColorProfileAsync(): IAsyncOperation[IRandomAccessStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorProfileAsync")().asInstanceOf[IAsyncOperation[IRandomAccessStream]]
     
     @JSGlobal("Windows.Graphics.Display.DisplayProperties.logicalDpi")
     @js.native
@@ -116,14 +115,14 @@ object Display {
   object ResolutionScale extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Display.ResolutionScale with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Graphics.Display.ResolutionScale & Double] = js.native
     
-    /* 0 */ val invalid: typings.winrt.Windows.Graphics.Display.ResolutionScale.invalid with Double = js.native
+    /* 0 */ val invalid: typings.winrt.Windows.Graphics.Display.ResolutionScale.invalid & Double = js.native
     
-    /* 1 */ val scale100Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale100Percent with Double = js.native
+    /* 1 */ val scale100Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale100Percent & Double = js.native
     
-    /* 2 */ val scale140Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale140Percent with Double = js.native
+    /* 2 */ val scale140Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale140Percent & Double = js.native
     
-    /* 3 */ val scale180Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale180Percent with Double = js.native
+    /* 3 */ val scale180Percent: typings.winrt.Windows.Graphics.Display.ResolutionScale.scale180Percent & Double = js.native
   }
 }

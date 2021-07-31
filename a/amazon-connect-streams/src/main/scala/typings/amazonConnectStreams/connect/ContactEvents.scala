@@ -2,7 +2,6 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,41 +11,67 @@ sealed trait ContactEvents extends StObject
 object ContactEvents extends StObject {
   
   @js.native
-  sealed trait ACCEPTED extends ContactEvents
+  sealed trait ACCEPTED
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait ACW extends ContactEvents
+  sealed trait ACW
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait CONNECTED extends ContactEvents
+  sealed trait CONNECTED
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait CONNECTING extends ContactEvents
+  sealed trait CONNECTING
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait DESTROYED extends ContactEvents
+  sealed trait DESTROYED
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait ENDED extends ContactEvents
+  sealed trait ENDED
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait ERROR extends ContactEvents
+  sealed trait ERROR
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait INCOMING extends ContactEvents
+  sealed trait INCOMING
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait INIT extends ContactEvents
+  sealed trait INIT
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait MISSED extends ContactEvents
+  sealed trait MISSED
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait PENDING extends ContactEvents
+  sealed trait PENDING
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait REFRESH extends ContactEvents
+  sealed trait REFRESH
+    extends StObject
+       with ContactEvents
   
   @js.native
-  sealed trait VIEW extends ContactEvents
+  sealed trait VIEW
+    extends StObject
+       with ContactEvents
 }

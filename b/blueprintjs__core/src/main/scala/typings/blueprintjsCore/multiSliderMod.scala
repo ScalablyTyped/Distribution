@@ -10,7 +10,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiSliderMod {
@@ -104,9 +103,8 @@ object multiSliderMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: IMultiSliderProps): LabelPrecision = ^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[LabelPrecision]
     
     @JSImport("@blueprintjs/core/lib/esm/components/slider/multiSlider", "MultiSlider.getLabelPrecision")
     @js.native
@@ -115,17 +113,18 @@ object multiSliderMod {
     def getLabelPrecision_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("getLabelPrecision")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IMultiSliderProps extends ISliderBaseProps {
+  trait IMultiSliderProps
+    extends StObject
+       with ISliderBaseProps {
     
     /** Default intent of a track segment, used only if no handle specifies `intentBefore/After`. */
-    var defaultTrackIntent: js.UndefOr[Intent] = js.native
+    var defaultTrackIntent: js.UndefOr[Intent] = js.undefined
     
     /** Callback invoked when a handle value changes. Receives handle values in sorted order. */
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
     
     /** Callback invoked when a handle is released. Receives handle values in sorted order. */
-    var onRelease: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.native
+    var onRelease: js.UndefOr[js.Function1[/* values */ js.Array[Double], Unit]] = js.undefined
   }
   object IMultiSliderProps {
     
@@ -158,16 +157,16 @@ object multiSliderMod {
     }
   }
   
-  @js.native
   trait ISliderBaseProps
-    extends IProps
+    extends StObject
+       with IProps
        with IIntentProps {
     
     /**
       * Whether the slider is non-interactive.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Number of decimal places to use when rendering label value. Default value is the number of
@@ -175,7 +174,7 @@ object multiSliderMod {
       * `labelRenderer` callback.
       * @default inferred from stepSize
       */
-    var labelPrecision: js.UndefOr[Double] = js.native
+    var labelPrecision: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback to render a single label. Useful for formatting numbers as currency or percentages.
@@ -183,50 +182,50 @@ object multiSliderMod {
       * If `false`, labels will not be shown.
       * @default true
       */
-    var labelRenderer: js.UndefOr[Boolean | (js.Function1[/* value */ Double, String | Element])] = js.native
+    var labelRenderer: js.UndefOr[Boolean | (js.Function1[/* value */ Double, String | Element])] = js.undefined
     
     /**
       * Increment between successive labels. Must be greater than zero.
       * @default inferred (if labelStepSize is undefined)
       */
-    var labelStepSize: js.UndefOr[Double] = js.native
+    var labelStepSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Array of specific values for the label placement. This prop is mutually exclusive with
       * `labelStepSize`.
       */
-    var labelValues: js.UndefOr[js.Array[Double]] = js.native
+    var labelValues: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Maximum value of the slider.
       * @default 10
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum value of the slider.
       * @default 0
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether a solid bar should be rendered on the track between current and initial values,
       * or between handles for `RangeSlider`.
       * @default true
       */
-    var showTrackFill: js.UndefOr[Boolean] = js.native
+    var showTrackFill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Increment between successive values; amount by which the handle moves. Must be greater than zero.
       * @default 1
       */
-    var stepSize: js.UndefOr[Double] = js.native
+    var stepSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to show the slider in a vertical orientation.
       * @default false
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object ISliderBaseProps {
     
@@ -307,16 +306,15 @@ object multiSliderMod {
     }
   }
   
-  @js.native
   trait ISliderState extends StObject {
     
-    var labelPrecision: Double = js.native
+    var labelPrecision: Double
     
     /** the client size, in pixels, of one tick */
-    var tickSize: Double = js.native
+    var tickSize: Double
     
     /** the size of one tick as a ratio of the component's client size */
-    var tickSizeRatio: Double = js.native
+    var tickSizeRatio: Double
   }
   object ISliderState {
     

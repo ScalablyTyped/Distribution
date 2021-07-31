@@ -4,26 +4,24 @@ import typings.activexOffice.Office.MsoEditingType
 import typings.activexOffice.Office.MsoSegmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeNode extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val EditingType: MsoEditingType = js.native
+  val EditingType: MsoEditingType
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Points: js.Any = js.native
+  val Points: js.Any
   
   @JSName("PowerPoint.ShapeNode_typekey")
-  var PowerPointDotShapeNode_typekey: ShapeNode = js.native
+  var PowerPointDotShapeNode_typekey: ShapeNode
   
-  val SegmentType: MsoSegmentType = js.native
+  val SegmentType: MsoSegmentType
 }
 object ShapeNode {
   

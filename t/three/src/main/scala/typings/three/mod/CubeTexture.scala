@@ -2,7 +2,6 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three", "CubeTexture")
@@ -22,7 +21,7 @@ class CubeTexture protected ()
   	 * @param [encoding=THREE.LinearEncoding]
   	 */
   def this(
-    images: js.UndefOr[js.Array[_]],
+    images: js.UndefOr[js.Array[js.Any]],
     // HTMLImageElement or HTMLCanvasElement
   mapping: js.UndefOr[typings.three.constantsMod.Mapping],
     wrapS: js.UndefOr[typings.three.constantsMod.Wrapping],

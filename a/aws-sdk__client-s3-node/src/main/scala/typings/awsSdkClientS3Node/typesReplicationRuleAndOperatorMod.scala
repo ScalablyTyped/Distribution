@@ -5,23 +5,21 @@ import typings.awsSdkClientS3Node.typesTagMod.UnmarshalledTag
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicationRuleAndOperatorMod {
   
-  @js.native
   trait ReplicationRuleAndOperator extends StObject {
     
     /**
       * _Prefix shape
       */
-    var Prefix: js.UndefOr[String] = js.native
+    var Prefix: js.UndefOr[String] = js.undefined
     
     /**
       * _TagSet shape
       */
-    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.native
+    var Tags: js.UndefOr[js.Array[Tag] | Iterable[Tag]] = js.undefined
   }
   object ReplicationRuleAndOperator {
     
@@ -51,14 +49,15 @@ object typesReplicationRuleAndOperatorMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledReplicationRuleAndOperator extends ReplicationRuleAndOperator {
+  trait UnmarshalledReplicationRuleAndOperator
+    extends StObject
+       with ReplicationRuleAndOperator {
     
     /**
       * _TagSet shape
       */
     @JSName("Tags")
-    var Tags_UnmarshalledReplicationRuleAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.native
+    var Tags_UnmarshalledReplicationRuleAndOperator: js.UndefOr[js.Array[UnmarshalledTag]] = js.undefined
   }
   object UnmarshalledReplicationRuleAndOperator {
     

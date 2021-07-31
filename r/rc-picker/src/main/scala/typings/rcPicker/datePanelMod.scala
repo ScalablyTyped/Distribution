@@ -7,18 +7,22 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePanelMod {
   
-  @JSImport("rc-picker/es/panels/DatePanel", JSImport.Default)
+  @JSImport("rc-picker/es/panels/DatePanel", JSImport.Namespace)
   @js.native
-  def default[DateType](props: DatePanelProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[DateType](props: DatePanelProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.rcPicker.dateBodyMod.DateBodyPassProps because var conflicts: disabledDate. Inlined dateRender, prefixColumn, rowClassName */ @js.native
-  trait DatePanelProps[DateType] extends PanelSharedProps[DateType] {
+  trait DatePanelProps[DateType]
+    extends StObject
+       with PanelSharedProps[DateType] {
     
     var active: js.UndefOr[Boolean] = js.native
     

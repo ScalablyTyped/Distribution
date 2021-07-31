@@ -2,41 +2,39 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DrawingManagerOptions extends StObject {
   
-  var circleOptions: js.UndefOr[CircleOptions] = js.native
+  var circleOptions: js.UndefOr[CircleOptions] = js.undefined
   
-  var drawingMode: js.UndefOr[DrawingType] = js.native
+  var drawingMode: js.UndefOr[DrawingType] = js.undefined
   
-  var drawingToolOptions: js.UndefOr[DrawingToolOptions] = js.native
+  var drawingToolOptions: js.UndefOr[DrawingToolOptions] = js.undefined
   
-  var enableCalculate: js.UndefOr[Boolean] = js.native
+  var enableCalculate: js.UndefOr[Boolean] = js.undefined
   
-  var enableDrawingTool: js.UndefOr[Boolean] = js.native
+  var enableDrawingTool: js.UndefOr[Boolean] = js.undefined
   
-  var enableGpc: js.UndefOr[Boolean] = js.native
+  var enableGpc: js.UndefOr[Boolean] = js.undefined
   
-  var enableLimit: js.UndefOr[Boolean] = js.native
+  var enableLimit: js.UndefOr[Boolean] = js.undefined
   
-  var enableSorption: js.UndefOr[Boolean] = js.native
+  var enableSorption: js.UndefOr[Boolean] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var limitOptions: js.UndefOr[DrawingLimitOptions] = js.native
+  var limitOptions: js.UndefOr[DrawingLimitOptions] = js.undefined
   
-  var markerOptions: js.UndefOr[MarkerOptions] = js.native
+  var markerOptions: js.UndefOr[MarkerOptions] = js.undefined
   
-  var polygonOptions: js.UndefOr[PolygonOptions] = js.native
+  var polygonOptions: js.UndefOr[PolygonOptions] = js.undefined
   
-  var polylineOptions: js.UndefOr[PolylineOptions] = js.native
+  var polylineOptions: js.UndefOr[PolylineOptions] = js.undefined
   
-  var rectangleOptions: js.UndefOr[PolygonOptions] = js.native
+  var rectangleOptions: js.UndefOr[PolygonOptions] = js.undefined
   
-  var sorptionDistance: js.UndefOr[Double] = js.native
+  var sorptionDistance: js.UndefOr[Double] = js.undefined
 }
 object DrawingManagerOptions {
   

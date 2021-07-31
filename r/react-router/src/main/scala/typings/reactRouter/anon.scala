@@ -8,34 +8,32 @@ import typings.reactRouter.mod.`match`
 import typings.std.InstanceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait History[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouter.reactRouterStrings.History with TopLevel[js.Any] */] extends StObject {
+    */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */] extends StObject {
     
-    var history: typings.history.mod.History[LocationState] = js.native
+    var history: typings.history.mod.History[LocationState]
     
-    var route: Location[Params] = js.native
+    var route: Location[Params]
   }
   object History {
     
     @scala.inline
     def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.History with TopLevel[js.Any] */](history: typings.history.mod.History[LocationState], route: Location[Params]): History[Params] = {
+      */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */](history: typings.history.mod.History[LocationState], route: Location[Params]): History[Params] = {
       val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], route = route.asInstanceOf[js.Any])
       __obj.asInstanceOf[History[Params]]
     }
     
     @scala.inline
-    implicit class HistoryMutableBuilder[Self <: History[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class HistoryMutableBuilder[Self <: History[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.History with TopLevel[js.Any] */] (val x: Self with History[Params]) extends AnyVal {
+      */ typings.reactRouter.reactRouterStrings.History & TopLevel[js.Any] */] (val x: Self & History[Params]) extends AnyVal {
       
       @scala.inline
       def setHistory(value: typings.history.mod.History[LocationState]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
@@ -45,30 +43,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Location[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Params ]:? string}
-    */ typings.reactRouter.reactRouterStrings.Location with TopLevel[js.Any] */] extends StObject {
+    */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */] extends StObject {
     
-    var location: typings.history.mod.Location[LocationState] = js.native
+    var location: typings.history.mod.Location[LocationState]
     
-    var `match`: typings.reactRouter.mod.`match`[Params] = js.native
+    var `match`: typings.reactRouter.mod.`match`[Params]
   }
   object Location {
     
     @scala.inline
     def apply[Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.Location with TopLevel[js.Any] */](location: typings.history.mod.Location[LocationState], `match`: `match`[Params]): Location[Params] = {
+      */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */](location: typings.history.mod.Location[LocationState], `match`: `match`[Params]): Location[Params] = {
       val __obj = js.Dynamic.literal(location = location.asInstanceOf[js.Any])
       __obj.updateDynamic("match")(`match`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Location[Params]]
     }
     
     @scala.inline
-    implicit class LocationMutableBuilder[Self <: Location[_], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class LocationMutableBuilder[Self <: Location[?], Params /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof Params ]:? string}
-      */ typings.reactRouter.reactRouterStrings.Location with TopLevel[js.Any] */] (val x: Self with Location[Params]) extends AnyVal {
+      */ typings.reactRouter.reactRouterStrings.Location & TopLevel[js.Any] */] (val x: Self & Location[Params]) extends AnyVal {
       
       @scala.inline
       def setLocation(value: typings.history.mod.Location[LocationState]): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
@@ -78,21 +75,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait WrappedComponentRef[C /* <: ComponentType[_] */] extends StObject {
+  trait WrappedComponentRef[C /* <: ComponentType[js.Any] */] extends StObject {
     
-    var wrappedComponentRef: js.UndefOr[Ref[InstanceType[C]]] = js.native
+    var wrappedComponentRef: js.UndefOr[Ref[InstanceType[C]]] = js.undefined
   }
   object WrappedComponentRef {
     
     @scala.inline
-    def apply[C /* <: ComponentType[_] */](): WrappedComponentRef[C] = {
+    def apply[C /* <: ComponentType[js.Any] */](): WrappedComponentRef[C] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[WrappedComponentRef[C]]
     }
     
     @scala.inline
-    implicit class WrappedComponentRefMutableBuilder[Self <: WrappedComponentRef[_], C /* <: ComponentType[_] */] (val x: Self with WrappedComponentRef[C]) extends AnyVal {
+    implicit class WrappedComponentRefMutableBuilder[Self <: WrappedComponentRef[?], C /* <: ComponentType[js.Any] */] (val x: Self & WrappedComponentRef[C]) extends AnyVal {
       
       @scala.inline
       def setWrappedComponentRef(value: Ref[InstanceType[C]]): Self = StObject.set(x, "wrappedComponentRef", value.asInstanceOf[js.Any])

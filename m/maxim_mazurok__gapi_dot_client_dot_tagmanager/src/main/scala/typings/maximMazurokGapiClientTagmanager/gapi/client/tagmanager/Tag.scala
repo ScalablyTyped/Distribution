@@ -2,116 +2,114 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Blocking rule IDs. If any of the listed rules evaluate to true, the tag will not fire. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var blockingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var blockingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Blocking trigger IDs. If any of the listed triggers evaluate to true, the tag will not fire. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var blockingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var blockingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the GTM Tag as computed at storage time. This value is recomputed whenever the tag is modified. */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Firing rule IDs. A tag will fire when any of the listed rules are true and all of its blockingRuleIds (if any specified) are false. @mutable
     * tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var firingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var firingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Firing trigger IDs. A tag will fire when any of the listed triggers are true and all of its blockingTriggerIds (if any specified) are false. @mutable
     * tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var firingTriggerId: js.UndefOr[js.Array[String]] = js.native
+  var firingTriggerId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set to true, this tag will only fire in the live environment (e.g. not in preview or debug mode). @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var liveOnly: js.UndefOr[Boolean] = js.native
+  var liveOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A map of key-value pairs of tag metadata to be included in the event data for tag monitoring. Notes: - This parameter must be type MAP. - Each parameter in the map are type
     * TEMPLATE, however cannot contain variable references. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var monitoringMetadata: js.UndefOr[Parameter] = js.native
+  var monitoringMetadata: js.UndefOr[Parameter] = js.undefined
   
   /**
     * If non-empty, then the tag display name will be included in the monitoring metadata map using the key specified. @mutable tagmanager.accounts.containers.workspaces.tags.create
     * @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var monitoringMetadataTagNameKey: js.UndefOr[String] = js.native
+  var monitoringMetadataTagNameKey: js.UndefOr[String] = js.undefined
   
   /** Tag display name. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** User notes on how to apply this tag in the container. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /** The tag's parameters. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var parameter: js.UndefOr[js.Array[Parameter]] = js.native
+  var parameter: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /** Parent folder id. */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /** GTM Tag's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the tag is paused, which prevents the tag from firing. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var paused: js.UndefOr[Boolean] = js.native
+  var paused: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User defined numeric priority of the tag. Tags are fired asynchronously in order of priority. Tags with higher numeric value fire first. A tag's priority can be a positive or
     * negative value. The default value is 0. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var priority: js.UndefOr[Parameter] = js.native
+  var priority: js.UndefOr[Parameter] = js.undefined
   
   /** The end timestamp in milliseconds to schedule a tag. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var scheduleEndMs: js.UndefOr[String] = js.native
+  var scheduleEndMs: js.UndefOr[String] = js.undefined
   
   /** The start timestamp in milliseconds to schedule a tag. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var scheduleStartMs: js.UndefOr[String] = js.native
+  var scheduleStartMs: js.UndefOr[String] = js.undefined
   
   /** The list of setup tags. Currently we only allow one. */
-  var setupTag: js.UndefOr[js.Array[SetupTag]] = js.native
+  var setupTag: js.UndefOr[js.Array[SetupTag]] = js.undefined
   
   /** Option to fire this tag. */
-  var tagFiringOption: js.UndefOr[String] = js.native
+  var tagFiringOption: js.UndefOr[String] = js.undefined
   
   /** The Tag ID uniquely identifies the GTM Tag. */
-  var tagId: js.UndefOr[String] = js.native
+  var tagId: js.UndefOr[String] = js.undefined
   
   /** Auto generated link to the tag manager UI */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /** The list of teardown tags. Currently we only allow one. */
-  var teardownTag: js.UndefOr[js.Array[TeardownTag]] = js.native
+  var teardownTag: js.UndefOr[js.Array[TeardownTag]] = js.undefined
   
   /** GTM Tag Type. @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** GTM Workspace ID. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object Tag {
   

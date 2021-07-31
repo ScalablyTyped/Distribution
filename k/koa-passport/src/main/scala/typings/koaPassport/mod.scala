@@ -16,7 +16,6 @@ import typings.passport.mod.Framework
 import typings.passport.mod.Strategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,37 +28,46 @@ object mod extends Shortcut {
   @JSImport("koa-passport", "KoaPassport")
   @js.native
   class KoaPassport ()
-    extends typings.koaPassport.mod.KoaPassport.KoaPassport
+    extends StObject
+       with typings.koaPassport.mod.KoaPassport.KoaPassport
   object KoaPassport {
     
     @js.native
     trait KoaPassport extends StObject {
       
       def authenticate(strategy: String): Middleware[DefaultState, DefaultContext] = js.native
-      def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(strategy: String, options: js.Object): Middleware[DefaultState, DefaultContext] = js.native
-      def authenticate(strategy: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authenticate(strategy: String, options: js.Object, callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(strategy: String, options: AuthenticateOptions): Middleware[DefaultState, DefaultContext] = js.native
-      def authenticate(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authenticate(
+        strategy: String,
+        options: AuthenticateOptions,
+        callback: js.Function1[/* repeated */ js.Any, js.Any]
+      ): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(strategy: js.Array[String]): Middleware[DefaultState, DefaultContext] = js.native
-      def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(strategy: js.Array[String], options: js.Object): Middleware[DefaultState, DefaultContext] = js.native
-      def authenticate(strategy: js.Array[String], options: js.Object, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authenticate(
+        strategy: js.Array[String],
+        options: js.Object,
+        callback: js.Function1[/* repeated */ js.Any, js.Any]
+      ): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(strategy: js.Array[String], options: AuthenticateOptions): Middleware[DefaultState, DefaultContext] = js.native
       def authenticate(
         strategy: js.Array[String],
         options: AuthenticateOptions,
-        callback: js.Function1[/* repeated */ js.Any, _]
+        callback: js.Function1[/* repeated */ js.Any, js.Any]
       ): Middleware[DefaultState, DefaultContext] = js.native
       
       def authorize(strategy: String): Middleware[DefaultState, DefaultContext] = js.native
-      def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authorize(strategy: String, options: js.Any): Middleware[DefaultState, DefaultContext] = js.native
-      def authorize(strategy: String, options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authorize(strategy: String, options: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authorize(strategy: js.Array[String]): Middleware[DefaultState, DefaultContext] = js.native
-      def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       def authorize(strategy: js.Array[String], options: js.Any): Middleware[DefaultState, DefaultContext] = js.native
-      def authorize(strategy: js.Array[String], options: js.Any, callback: js.Function1[/* repeated */ js.Any, _]): Middleware[DefaultState, DefaultContext] = js.native
+      def authorize(strategy: js.Array[String], options: js.Any, callback: js.Function1[/* repeated */ js.Any, js.Any]): Middleware[DefaultState, DefaultContext] = js.native
       
       def deserializeUser[TUser, TID](
         fn: js.Function2[
@@ -79,7 +87,7 @@ object mod extends Shortcut {
       @JSName("deserializeUser")
       var deserializeUser_Original: FnCallFn = js.native
       
-      def framework(fw: Framework[_, _, _]): this.type = js.native
+      def framework(fw: Framework[js.Any, js.Any, js.Any]): this.type = js.native
       
       def initialize(): Middleware[DefaultState, DefaultContext] = js.native
       def initialize(options: UserProperty): Middleware[DefaultState, DefaultContext] = js.native
@@ -130,7 +138,8 @@ object mod extends Shortcut {
     
     @js.native
     trait Static
-      extends typings.koaPassport.mod.KoaPassport.KoaPassport {
+      extends StObject
+         with typings.koaPassport.mod.KoaPassport.KoaPassport {
       
       var Authenticator: /* import warning: importer.ImportType#apply Failed type conversion: koa-passport.koa-passport.KoaPassport.Static['Passport'] */ js.Any = js.native
       

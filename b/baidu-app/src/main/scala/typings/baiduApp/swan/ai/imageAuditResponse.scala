@@ -2,22 +2,20 @@ package typings.baiduApp.swan.ai
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait imageAuditResponse extends StObject {
   
   // 请求唯一id
-  var conclusion: String = js.native
+  var conclusion: String
   
   // 审核结果描述，成功才返回，失败不返回。
-  var conclusionType: Double = js.native
+  var conclusionType: Double
   
   // 审核结果标识，成功才返回，失败不返回。
-  var data: js.Array[imageAuditdata] = js.native
+  var data: js.Array[imageAuditdata]
   
-  var log_id: String = js.native
+  var log_id: String
 }
 object imageAuditResponse {
   

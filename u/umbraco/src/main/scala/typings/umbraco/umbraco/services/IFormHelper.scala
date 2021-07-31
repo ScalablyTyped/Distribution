@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A utility class used to streamline how forms are developed, to ensure that validation is check and displayed consistently and to ensure that the correct events
   * fire when they need to.
   */
-@js.native
 trait IFormHelper extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait IFormHelper extends StObject {
     *
     * @param {object} err The error object returned from the http promise
     */
-  def handleError(err: js.Object): Unit = js.native
+  def handleError(err: js.Object): Unit
   
   /**
     * @ngdoc function
@@ -42,7 +40,7 @@ trait IFormHelper extends StObject {
     *
     * @param {object} err The error object returned from the http promise
     */
-  def handleServerValidation(modelState: IModelState): Unit = js.native
+  def handleServerValidation(modelState: IModelState): Unit
   
   /**
     * @ngdoc function
@@ -56,7 +54,7 @@ trait IFormHelper extends StObject {
     *
     * @param {object} args An object containing arguments for form submission
     */
-  def resetForm(args: js.Any*): Unit = js.native
+  def resetForm(args: js.Any*): Unit
   
   /**
     * @ngdoc function
@@ -71,7 +69,7 @@ trait IFormHelper extends StObject {
     *
     * @param {object} args An object containing arguments for form submission
     */
-  def submitForm(args: js.Any*): Unit = js.native
+  def submitForm(args: js.Any*): Unit
 }
 object IFormHelper {
   

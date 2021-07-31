@@ -4,7 +4,6 @@ import typings.chromeApps.chrome.documentScan.DocumentScanCallbackArg
 import typings.chromeApps.chrome.documentScan.DocumentScanOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -29,12 +28,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object documentScan {
   
+  @JSGlobal("chrome.documentScan")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Performs a document scan. On success, the PNG data will be sent to the callback.
     * @param options Object containing scan parameters.
     * @param callback Called with the result and data from the scan.
     */
-  @JSGlobal("chrome.documentScan.scan")
-  @js.native
-  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = js.native
+  @scala.inline
+  def scan(options: DocumentScanOptions, callback: js.Function1[/* result */ DocumentScanCallbackArg, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scan")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

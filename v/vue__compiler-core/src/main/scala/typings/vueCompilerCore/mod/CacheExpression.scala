@@ -3,29 +3,28 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`20`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheExpression
-  extends JSChildNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with JSChildNode {
   
-  var index: Double = js.native
+  var index: Double
   
-  var isVNode: Boolean = js.native
+  var isVNode: Boolean
   
   @JSName("type")
-  var type_CacheExpression: `20` = js.native
+  var type_CacheExpression: `20`
   
-  var value: JSChildNode = js.native
+  var value: JSChildNode
 }
 object CacheExpression {
   
   @scala.inline
-  def apply(index: Double, isVNode: Boolean, loc: SourceLocation, `type`: `20`, value: JSChildNode): CacheExpression = {
+  def apply(index: Double, isVNode: Boolean, loc: SourceLocation, value: JSChildNode): CacheExpression = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], isVNode = isVNode.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(20)
     __obj.asInstanceOf[CacheExpression]
   }
   

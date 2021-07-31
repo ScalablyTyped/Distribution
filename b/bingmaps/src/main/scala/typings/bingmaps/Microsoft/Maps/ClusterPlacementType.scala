@@ -2,7 +2,6 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,12 +15,16 @@ object ClusterPlacementType extends StObject {
     * represent the data but requires little processing power.
     */
   @js.native
-  sealed trait FirstLocation extends ClusterPlacementType
+  sealed trait FirstLocation
+    extends StObject
+       with ClusterPlacementType
   
   /**
     * Mean Average placement calculates the average position of a group of coordinates. This method creates a more realistic representation of the data,
     * however requires more processing power and increases the chances of pushpins overlapping.
     */
   @js.native
-  sealed trait MeanAverage extends ClusterPlacementType
+  sealed trait MeanAverage
+    extends StObject
+       with ClusterPlacementType
 }

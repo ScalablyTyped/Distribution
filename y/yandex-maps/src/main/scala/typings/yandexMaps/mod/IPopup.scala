@@ -3,11 +3,12 @@ package typings.yandexMaps.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPopup[T] extends ICustomizable {
+trait IPopup[T]
+  extends StObject
+     with ICustomizable {
   
   def close(): js.Promise[T] = js.native
   def close(force: Boolean): js.Promise[T] = js.native

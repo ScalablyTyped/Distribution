@@ -2,15 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileResult extends StObject {
   
-  var diagnostics: js.Array[Diagnostic] = js.native
+  var diagnostics: js.Array[Diagnostic]
   
-  var outputFiles: js.Array[OutputFile] = js.native
+  var outputFiles: js.Array[OutputFile]
 }
 object CompileResult {
   

@@ -17,7 +17,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreSerializationMod {
@@ -26,10 +25,11 @@ object coreSerializationMod {
   @js.native
   val coreLayerClassNames: js.Array[CoreLayerClassName] = js.native
   
-  @js.native
-  trait ActivationLayerConfig extends LayerConfig {
+  trait ActivationLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var activation: ActivationSerialization = js.native
+    var activation: ActivationSerialization
   }
   object ActivationLayerConfig {
     
@@ -90,30 +90,31 @@ object coreSerializationMod {
   
   type CoreLayerSerialization = DropoutLayerSerialization | DenseLayerSerialization | FlattenLayerSerialization | ActivationLayerSerialization | RepeatVectorLayerSerialization | ReshapeLayerSerialization | PermuteLayerSerialization | MaskingLayerSerialization
   
-  @js.native
-  trait DenseLayerConfig extends LayerConfig {
+  trait DenseLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var activation: js.UndefOr[ActivationSerialization] = js.native
+    var activation: js.UndefOr[ActivationSerialization] = js.undefined
     
-    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var activity_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var bias_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var bias_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var bias_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var bias_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var input_dim: js.UndefOr[Double] = js.native
+    var input_dim: js.UndefOr[Double] = js.undefined
     
-    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.native
+    var kernel_constraint: js.UndefOr[ConstraintSerialization] = js.undefined
     
-    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.native
+    var kernel_initializer: js.UndefOr[InitializerSerialization] = js.undefined
     
-    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.native
+    var kernel_regularizer: js.UndefOr[RegularizerSerialization] = js.undefined
     
-    var units: Double = js.native
+    var units: Double
     
-    var use_bias: js.UndefOr[Boolean] = js.native
+    var use_bias: js.UndefOr[Boolean] = js.undefined
   }
   object DenseLayerConfig {
     
@@ -193,14 +194,15 @@ object coreSerializationMod {
   
   type DenseLayerSerialization = BaseLayerSerialization[Dense, DenseLayerConfig]
   
-  @js.native
-  trait DropoutLayerConfig extends LayerConfig {
+  trait DropoutLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var noise_shape: js.UndefOr[js.Array[Double]] = js.native
+    var noise_shape: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var rate: Double = js.native
+    var rate: Double
     
-    var seed: js.UndefOr[Double] = js.native
+    var seed: js.UndefOr[Double] = js.undefined
   }
   object DropoutLayerConfig {
     
@@ -237,10 +239,11 @@ object coreSerializationMod {
   
   type FlattenLayerSerialization = BaseLayerSerialization[Flatten, LayerConfig]
   
-  @js.native
-  trait MaskingLayerConfig extends LayerConfig {
+  trait MaskingLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var maskValue: Double = js.native
+    var maskValue: Double
   }
   object MaskingLayerConfig {
     
@@ -260,10 +263,11 @@ object coreSerializationMod {
   
   type MaskingLayerSerialization = BaseLayerSerialization[Masking, MaskingLayerConfig]
   
-  @js.native
-  trait PermuteLayerConfig extends LayerConfig {
+  trait PermuteLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var dims: js.Array[Double] = js.native
+    var dims: js.Array[Double]
   }
   object PermuteLayerConfig {
     
@@ -286,10 +290,11 @@ object coreSerializationMod {
   
   type PermuteLayerSerialization = BaseLayerSerialization[Permute, PermuteLayerConfig]
   
-  @js.native
-  trait RepeatVectorLayerConfig extends LayerConfig {
+  trait RepeatVectorLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var n: Double = js.native
+    var n: Double
   }
   object RepeatVectorLayerConfig {
     
@@ -309,10 +314,11 @@ object coreSerializationMod {
   
   type RepeatVectorLayerSerialization = BaseLayerSerialization[RepeatVector, RepeatVectorLayerConfig]
   
-  @js.native
-  trait ReshapeLayerConfig extends LayerConfig {
+  trait ReshapeLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var target_shape: Shape = js.native
+    var target_shape: Shape
   }
   object ReshapeLayerConfig {
     

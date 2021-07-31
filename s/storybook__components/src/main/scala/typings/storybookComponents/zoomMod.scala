@@ -6,10 +6,13 @@ import typings.storybookComponents.zoomElementMod.ZoomProps
 import typings.storybookComponents.zoomIFrameMod.ZoomIFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomMod {
+  
+  @JSImport("@storybook/components/dist/Zoom/Zoom", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object Zoom {
     
@@ -34,7 +37,6 @@ object zoomMod {
     def IFrame_=(x: Instantiable0[ZoomIFrame]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IFrame")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/components/dist/Zoom/Zoom", "browserSupportsCssZoom")
-  @js.native
-  def browserSupportsCssZoom(): Boolean = js.native
+  @scala.inline
+  def browserSupportsCssZoom(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("browserSupportsCssZoom")().asInstanceOf[Boolean]
 }

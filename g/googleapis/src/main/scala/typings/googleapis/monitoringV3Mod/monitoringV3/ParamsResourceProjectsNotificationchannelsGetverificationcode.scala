@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsNotificationchannelsGetverificationcode extends StandardParameters {
+trait ParamsResourceProjectsNotificationchannelsGetverificationcode
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The notification channel for which a verification code is to be generated
     * and retrieved. This must name a channel that is already verified; if the
     * specified channel is not verified, the request will fail.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGetNotificationChannelVerificationCodeRequest] = js.native
+  var requestBody: js.UndefOr[SchemaGetNotificationChannelVerificationCodeRequest] = js.undefined
 }
 object ParamsResourceProjectsNotificationchannelsGetverificationcode {
   

@@ -2,31 +2,29 @@ package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoOnly extends StObject {
   
-  var autoOnly: js.UndefOr[Boolean] = js.native
+  var autoOnly: js.UndefOr[Boolean] = js.undefined
   
-  var from: js.UndefOr[Double] = js.native
+  var from: js.UndefOr[Double] = js.undefined
   
-  var full: js.UndefOr[Boolean] = js.native
+  var full: js.UndefOr[Boolean] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var manualOnly: js.UndefOr[Boolean] = js.native
+  var manualOnly: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var owner: js.UndefOr[String] = js.native
+  var owner: js.UndefOr[String] = js.undefined
   
-  var ownerType: js.UndefOr[String] = js.native
+  var ownerType: js.UndefOr[String] = js.undefined
   
-  var subaccounts: js.UndefOr[Boolean] = js.native
+  var subaccounts: js.UndefOr[Boolean] = js.undefined
   
-  var to: js.UndefOr[Double] = js.native
+  var to: js.UndefOr[Double] = js.undefined
 }
 object AutoOnly {
   

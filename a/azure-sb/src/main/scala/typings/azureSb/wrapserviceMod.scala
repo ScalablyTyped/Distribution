@@ -4,18 +4,19 @@ import typings.azureSb.anon.SignRequest
 import typings.azureSb.mod.Azure.ServiceBus.ResponseCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrapserviceMod {
   
   @JSImport("azure-sb/lib/wrapservice", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WrapService {
+  class ^ protected ()
+    extends StObject
+       with WrapService {
     def this(acsHost: String) = this()
     def this(acsHost: String, issuer: String) = this()
-    def this(acsHost: String, issuer: js.UndefOr[scala.Nothing], accessKey: String) = this()
     def this(acsHost: String, issuer: String, accessKey: String) = this()
+    def this(acsHost: String, issuer: Unit, accessKey: String) = this()
   }
   
   @js.native

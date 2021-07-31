@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBuiltinSlotTypesResponse extends StObject {
   
   /**
     * If the response is truncated, the response includes a pagination token that you can use in your next request to fetch the next page of slot types.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An array of BuiltInSlotTypeMetadata objects, one entry for each slot type returned.
     */
-  var slotTypes: js.UndefOr[BuiltinSlotTypeMetadataList] = js.native
+  var slotTypes: js.UndefOr[BuiltinSlotTypeMetadataList] = js.undefined
 }
 object GetBuiltinSlotTypesResponse {
   

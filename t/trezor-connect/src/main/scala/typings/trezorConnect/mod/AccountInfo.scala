@@ -2,42 +2,40 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountInfo extends StObject {
   
   // These fields are returned, presumably, to save further calls when the use case requires
   // a usable address:
-  var address: String = js.native
+  var address: String
   
-  var addressIndex: Double = js.native
+  var addressIndex: Double
   
-  var addressPath: js.Array[Double] = js.native
+  var addressPath: js.Array[Double]
   
-  var addressSerializedPath: String = js.native
+  var addressSerializedPath: String
   
   // serialized HD public key. Despite the name, this may be `ypub` for segWit.
-  var balance: Double = js.native
+  var balance: Double
   
-  var confirmed: Double = js.native
+  var confirmed: Double
   
-  var id: Double = js.native
+  var id: Double
   
-  var path: js.Array[Double] = js.native
+  var path: js.Array[Double]
   
-  var serializedPath: String = js.native
+  var serializedPath: String
   
-  var transactions: Double = js.native
+  var transactions: Double
   
-  var unusedAddresses: js.Array[String] = js.native
+  var unusedAddresses: js.Array[String]
   
-  var usedAddresses: js.Array[typings.trezorConnect.anon.Address] = js.native
+  var usedAddresses: js.Array[typings.trezorConnect.anon.Address]
   
-  var utxo: js.Array[Utxo] = js.native
+  var utxo: js.Array[Utxo]
   
-  var xpub: String = js.native
+  var xpub: String
 }
 object AccountInfo {
   

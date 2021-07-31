@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3SetObjectLegalHoldOperation extends StObject {
   
   /**
     * Contains the Object Lock legal hold status to be applied to all objects in the Batch Operations job.
     */
-  var LegalHold: S3ObjectLockLegalHold = js.native
+  var LegalHold: S3ObjectLockLegalHold
 }
 object S3SetObjectLegalHoldOperation {
   

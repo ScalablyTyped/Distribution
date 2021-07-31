@@ -3,13 +3,11 @@ package typings.storybookUi.anon
 import typings.storybookAddons.distMod.Addon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait List extends StObject {
   
-  var list: js.Array[Addon] = js.native
+  var list: js.Array[Addon]
 }
 object List {
   

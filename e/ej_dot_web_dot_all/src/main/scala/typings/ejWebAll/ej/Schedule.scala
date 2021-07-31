@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Schedule extends Widget_ {
+trait Schedule
+  extends StObject
+     with Widget_ {
   
   /** It is used to add the resources dynamically in the scheduler. It renders the resource based on the index if it is available or else it renders this resource at end of all
     * resources.
@@ -47,12 +48,12 @@ trait Schedule extends Widget_ {
     * @param {any[]} Holds array of one or more conditional objects for filtering the appointments based on it.
     * @returns {any[]}
     */
-  def filterAppointments(filterConditions: js.Array[_]): js.Array[_] = js.native
+  def filterAppointments(filterConditions: js.Array[js.Any]): js.Array[js.Any] = js.native
   
   /** Gets the complete appointment list of Schedule control.
     * @returns {any[]}
     */
-  def getAppointments(): js.Array[_] = js.native
+  def getAppointments(): js.Array[js.Any] = js.native
   
   /** Generate the recurrence rule as a string, based on the repeat options selected.
     * @returns {string}
@@ -110,9 +111,9 @@ trait Schedule extends Widget_ {
     */
   def saveAppointment(appointmentObject: js.Any): Unit = js.native
   
-  def searchAppointments(searchString: String, field: String, operator: String, ignoreCase: Boolean): js.Array[_] = js.native
-  def searchAppointments(searchString: String, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[_] = js.native
-  def searchAppointments(searchString: js.Any, field: String, operator: String, ignoreCase: Boolean): js.Array[_] = js.native
+  def searchAppointments(searchString: String, field: String, operator: String, ignoreCase: Boolean): js.Array[js.Any] = js.native
+  def searchAppointments(searchString: String, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[js.Any] = js.native
+  def searchAppointments(searchString: js.Any, field: String, operator: String, ignoreCase: Boolean): js.Array[js.Any] = js.native
   /** Searches the appointments from the appointment list of Schedule control based on the provided search string in its argument list.
     * @param {any|string} Defines the search word or the filter condition, based on which the appointments are filtered from the list.
     * @param {string} Defines the field name on which the search is to be made.
@@ -120,7 +121,7 @@ trait Schedule extends Widget_ {
     * @param {boolean} Defines the ignoreCase value for performing the search operation.
     * @returns {any[]}
     */
-  def searchAppointments(searchString: js.Any, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[_] = js.native
+  def searchAppointments(searchString: js.Any, field: String, operator: FilterOperators, ignoreCase: Boolean): js.Array[js.Any] = js.native
 }
 object Schedule {
   
@@ -132,27 +133,39 @@ object Schedule {
     
     ///Sets currentView of the Scheduler as Agenda
     @js.native
-    sealed trait Agenda extends CurrentView
+    sealed trait Agenda
+      extends StObject
+         with CurrentView
     
     ///Sets currentView of the Scheduler as CustomView with user-specified date range.
     @js.native
-    sealed trait CustomView extends CurrentView
+    sealed trait CustomView
+      extends StObject
+         with CurrentView
     
     ///Sets currentView of the Scheduler as Day
     @js.native
-    sealed trait Day extends CurrentView
+    sealed trait Day
+      extends StObject
+         with CurrentView
     
     ///Sets currentView of the Scheduler as Month
     @js.native
-    sealed trait Month extends CurrentView
+    sealed trait Month
+      extends StObject
+         with CurrentView
     
     ///Sets currentView of the Scheduler as Week
     @js.native
-    sealed trait Week extends CurrentView
+    sealed trait Week
+      extends StObject
+         with CurrentView
     
     ///Sets currentView of the Scheduler as WorkWeek
     @js.native
-    sealed trait Workweek extends CurrentView
+    sealed trait Workweek
+      extends StObject
+         with CurrentView
   }
   
   @js.native
@@ -164,12 +177,14 @@ object Schedule {
     ///Set orientation as horizontal to Scheduler
     @js.native
     sealed trait Horizontal
-      extends typings.ejWebAll.ej.Schedule.Orientation
+      extends StObject
+         with typings.ejWebAll.ej.Schedule.Orientation
     
     ///Set orientation as vertical to Scheduler
     @js.native
     sealed trait Vertical
-      extends typings.ejWebAll.ej.Schedule.Orientation
+      extends StObject
+         with typings.ejWebAll.ej.Schedule.Orientation
   }
   
   @js.native
@@ -180,43 +195,46 @@ object Schedule {
     
     ///Sets 12 hour time mode to Scheduler
     @js.native
-    sealed trait Hour12 extends TimeMode
+    sealed trait Hour12
+      extends StObject
+         with TimeMode
     
     ///Sets 24 hour time mode to Scheduler
     @js.native
-    sealed trait Hour24 extends TimeMode
+    sealed trait Hour24
+      extends StObject
+         with TimeMode
   }
   
-  @js.native
   trait ActionBeginEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRUD action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the data about the view change action.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the GUid of appointment.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the action begin request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionBeginEventArgs {
     
@@ -273,36 +291,35 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ActionCompleteEventArgs extends StObject {
     
     /** Returns the appointment data dropped.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRUD action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the data about view change action.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the action complete request type.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ActionCompleteEventArgs {
     
@@ -359,23 +376,22 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AgendaViewSettings extends StObject {
     
     /** You can customize the Date column display based on the requirement.
       * @Default {null}
       */
-    var dateColumnTemplateId: js.UndefOr[String] = js.native
+    var dateColumnTemplateId: js.UndefOr[String] = js.undefined
     
     /** You can display the summary of multiple week's appointment by setting this value.
       * @Default {7}
       */
-    var daysInAgenda: js.UndefOr[Double] = js.native
+    var daysInAgenda: js.UndefOr[Double] = js.undefined
     
     /** You can customize the time column display based on the requirement.
       * @Default {null}
       */
-    var timeColumnTemplateId: js.UndefOr[String] = js.native
+    var timeColumnTemplateId: js.UndefOr[String] = js.undefined
   }
   object AgendaViewSettings {
     
@@ -408,32 +424,31 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentChangedEventArgs extends StObject {
     
     /** Returns the edited appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRUD action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentChangedEventArgs {
     
@@ -484,28 +499,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentClickEventArgs extends StObject {
     
     /** Returns the clicked appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the object of appointmentClick event.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentClickEventArgs {
     
@@ -550,28 +564,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentCreatedEventArgs extends StObject {
     
     /** Returns the appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentCreatedEventArgs {
     
@@ -616,28 +629,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentHoverEventArgs extends StObject {
     
     /** Returns the hovered appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the object of appointmentHover event.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentHoverEventArgs {
     
@@ -682,32 +694,31 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentRemovedEventArgs extends StObject {
     
     /** Returns the deleted appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRDU action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentRemovedEventArgs {
     
@@ -758,105 +769,104 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentSettings extends StObject {
     
     /** Binds the name of allDay field in dataSource. It indicates whether the appointment is an all-day appointment or not.
       * @Default {null}
       */
-    var allDay: js.UndefOr[String] = js.native
+    var allDay: js.UndefOr[String] = js.undefined
     
     /** When set to false, doesn't consider the time difference offset calculation on appointment time.
       * @Default {true}
       */
-    var applyTimeOffset: js.UndefOr[Boolean] = js.native
+    var applyTimeOffset: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of categorize field in dataSource. It indicates the categorize value, red categorize, green, yellow and so on applied to the appointments.
       * @Default {null}
       */
-    var categorize: js.UndefOr[String] = js.native
+    var categorize: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule appointments.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** Binds the description field name in dataSource. It indicates the appointment description.
       * @Default {null}
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** When set to true, introduces a new option to edit only the future occurrences of the appointments in a recurrence series from the currently selected appointment's date.
       * @Default {false}
       */
-    var editFutureEventsOnly: js.UndefOr[Boolean] = js.native
+    var editFutureEventsOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of endTime field in dataSource with the end time of Schedule appointments. It indicates the date and time when Schedule appointment actually ends.
       * @Default {null}
       */
-    var endTime: js.UndefOr[String] = js.native
+    var endTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of end timezone field in dataSource. It indicates the timezone of appointment end date. When the endTimeZone field is not mentioned, the appointment uses the
       * Schedule timeZone or System timeZone.
       * @Default {null}
       */
-    var endTimeZone: js.UndefOr[String] = js.native
+    var endTimeZone: js.UndefOr[String] = js.undefined
     
     /** Binds the id field name in dataSource to the id of Schedule appointments. It denotes the unique id assigned to appointments.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Binds the name of location field in dataSource. It indicates the appointment location.
       * @Default {null}
       */
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
     /** Binds the name of the priority field in dataSource. It indicates the priority, high, low, medium and none of the appointments.
       * @Default {null}
       */
-    var priority: js.UndefOr[String] = js.native
+    var priority: js.UndefOr[String] = js.undefined
     
     /** It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
       * @Default {null}
       */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** Binds the name of recurrence field in dataSource. It indicates whether the appointment is a recurrence appointment or not.
       * @Default {null}
       */
-    var recurrence: js.UndefOr[String] = js.native
+    var recurrence: js.UndefOr[String] = js.undefined
     
     /** Binds the name of recurrenceRule field in dataSource. It indicates the recurrence pattern associated with appointments.
       * @Default {null}
       */
-    var recurrenceRule: js.UndefOr[String] = js.native
+    var recurrenceRule: js.UndefOr[String] = js.undefined
     
     /** Binds one or more fields in resource collection dataSource. It maps the resource field names with appointments denoting the resource of appointments actually belongs.
       * @Default {null}
       */
-    var resourceFields: js.UndefOr[String] = js.native
+    var resourceFields: js.UndefOr[String] = js.undefined
     
     /** Binds the name of startTime field in the dataSource with start time of the Schedule appointments. It indicates the date and Time when Schedule appointment actually starts.
       * @Default {null}
       */
-    var startTime: js.UndefOr[String] = js.native
+    var startTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of start timezone field in dataSource. It indicates the timezone of appointment start date. When startTimeZone field is not mentioned, the appointment uses the
       * Schedule timeZone or System timeZone.
       * @Default {null}
       */
-    var startTimeZone: js.UndefOr[String] = js.native
+    var startTimeZone: js.UndefOr[String] = js.undefined
     
     /** Binds the name of subject field in the dataSource to appointment Subject. Indicates the Subject or title that gets displayed on Schedule appointments.
       * @Default {null}
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /** Assign the table name from where the records are to be fetched for the Schedule.
       * @Default {null}
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
   }
   object AppointmentSettings {
     
@@ -888,7 +898,7 @@ object Schedule {
       def setCategorizeUndefined: Self = StObject.set(x, "categorize", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -988,48 +998,47 @@ object Schedule {
     }
   }
   
-  @js.native
   trait AppointmentWindowOpenEventArgs extends StObject {
     
     /** Returns the edit appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the edit occurrence option value.
       */
-    var edit: js.UndefOr[Boolean] = js.native
+    var edit: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the end time of the double clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.native
+    var endTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the object of appointmentWindowOpen event while selecting the detail option from quick window or edit appointment or edit series option.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the action name that triggers window open.
       */
-    var originalEventType: js.UndefOr[String] = js.native
+    var originalEventType: js.UndefOr[String] = js.undefined
     
     /** Returns the start time of the double clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.native
+    var startTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target of the double clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object AppointmentWindowOpenEventArgs {
     
@@ -1104,32 +1113,31 @@ object Schedule {
     }
   }
   
-  @js.native
   trait BeforeAppointmentChangeEventArgs extends StObject {
     
     /** Returns the edited appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRUD action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeAppointmentChangeEventArgs {
     
@@ -1180,24 +1188,23 @@ object Schedule {
     }
   }
   
-  @js.native
   trait BeforeAppointmentCreateEventArgs extends StObject {
     
     /** Returns the appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeAppointmentCreateEventArgs {
     
@@ -1236,28 +1243,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait BeforeAppointmentRemoveEventArgs extends StObject {
     
     /** Returns the deleted appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the name of the CRUD action performed.
       */
-    var currentAction: js.UndefOr[String] = js.native
+    var currentAction: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeAppointmentRemoveEventArgs {
     
@@ -1302,44 +1308,43 @@ object Schedule {
     }
   }
   
-  @js.native
   trait BeforeContextMenuOpenEventArgs extends StObject {
     
     /** Returns the current appointment details while opening the menu from appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current cell index value.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the current date value.
       */
-    var currentDate: js.UndefOr[js.Any] = js.native
+    var currentDate: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the object of before opening menu target.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the object of beforeContextMenuOpen event.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current resource details, when multiple resources are present, otherwise returns null.
       */
-    var resources: js.UndefOr[js.Any] = js.native
+    var resources: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object BeforeContextMenuOpenEventArgs {
     
@@ -1408,80 +1413,79 @@ object Schedule {
     }
   }
   
-  @js.native
   trait BlockoutSettings extends StObject {
     
     /** Binds the name of customStyle field in dataSource. It applies the custom CSS to the block intervals.
       * @Default {null}
       */
-    var customStyle: js.UndefOr[String] = js.native
+    var customStyle: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule block intervals.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** When set to true, enables the blockout option to be applied on the Scheduler cells.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Binds the name of endTime field in dataSource with the end time of block time interval. It indicates the date and time, when the block interval actually ends in the Scheduler.
       * @Default {null}
       */
-    var endTime: js.UndefOr[String] = js.native
+    var endTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of groupId field in dataSource. Specifies the id of the resource group, to which the time intervals are needed to be blocked.
       * @Default {null}
       */
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
     /** Binds the id field name in dataSource to the id of block time interval. It denotes the unique id assigned to each of the block records.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Binds the name of isAllDay field in dataSource. It indicates whether an entire day is blocked or not.
       * @Default {null}
       */
-    var isAllDay: js.UndefOr[String] = js.native
+    var isAllDay: js.UndefOr[String] = js.undefined
     
     /** Binds the name of isBlockAppointment field in dataSource. When set to true, disables the appointments that lies on the blocked area and restrict to perform CRUD operations in it.
       * @Default {null}
       */
-    var isBlockAppointment: js.UndefOr[String] = js.native
+    var isBlockAppointment: js.UndefOr[String] = js.undefined
     
     /** It holds either the ej.Query() object or simply the query string that retrieves the specified records from the table.
       * @Default {null}
       */
-    var query: js.UndefOr[String] = js.native
+    var query: js.UndefOr[String] = js.undefined
     
     /** Binds the name of resourceId field in dataSource. Specifies the id of the resources, to which the time intervals are needed to be blocked.
       * @Default {null}
       */
-    var resourceId: js.UndefOr[String] = js.native
+    var resourceId: js.UndefOr[String] = js.undefined
     
     /** Binds the name of startTime field in the dataSource with start time of block time interval. It indicates the date and time, when the block interval actually starts in the
       * Scheduler.
       * @Default {null}
       */
-    var startTime: js.UndefOr[String] = js.native
+    var startTime: js.UndefOr[String] = js.undefined
     
     /** Binds the name of subject field in the dataSource to block time Subject. Indicates the Subject or title that gets displayed on the Schedule block intervals.
       * @Default {null}
       */
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
     /** Assign the table name from where the records are to be fetched for the Schedule.
       * @Default {null}
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
     
     /** Template design that applies on the Schedule block intervals. All the field names that are mapped from dataSource to the appropriate field properties within the blockoutSettings
       * can be used within the template.
       * @Default {null}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
   }
   object BlockoutSettings {
     
@@ -1501,7 +1505,7 @@ object Schedule {
       def setCustomStyleUndefined: Self = StObject.set(x, "customStyle", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1583,42 +1587,41 @@ object Schedule {
     }
   }
   
-  @js.native
   trait CategorizeSettings extends StObject {
     
     /** When set to true, enables the multiple selection of categories to be applied for the appointments.
       * @Default {false}
       */
-    var allowMultiple: js.UndefOr[Boolean] = js.native
+    var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
     /** Binds color field name in the dataSource to category color.
       * @Default {color}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either the JSON object collection or DataManager [ej.DataManager] instance that contains the categorize data.
       */
-    var dataSource: js.UndefOr[js.Array[_] | js.Any] = js.native
+    var dataSource: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
     
     /** When set to true, enables the categories option to be applied for the appointments.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Binds fontColor field name in the dataSource to category font.
       * @Default {fontColor}
       */
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
     /** Binds id field name in the dataSource to id of category data.
       * @Default {id}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to category text.
       * @Default {text}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object CategorizeSettings {
     
@@ -1644,7 +1647,7 @@ object Schedule {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Array[_] | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -1678,44 +1681,43 @@ object Schedule {
     }
   }
   
-  @js.native
   trait CellClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the index of the cell.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the end time of the clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.native
+    var endTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns day, date and time information.
       */
-    var quickString: js.UndefOr[String] = js.native
+    var quickString: js.UndefOr[String] = js.undefined
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.native
+    var resources: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the start time of the clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.native
+    var startTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target of the clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellClickEventArgs {
     
@@ -1784,36 +1786,35 @@ object Schedule {
     }
   }
   
-  @js.native
   trait CellDoubleClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the end time of the double clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.native
+    var endTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.native
+    var resources: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the start time of the double clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.native
+    var startTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target of the double clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellDoubleClickEventArgs {
     
@@ -1870,40 +1871,39 @@ object Schedule {
     }
   }
   
-  @js.native
   trait CellHoverEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the index of the hovered cell.
       */
-    var cellIndex: js.UndefOr[Double] = js.native
+    var cellIndex: js.UndefOr[Double] = js.undefined
     
     /** Returns the end time of the clicked cell.
       */
-    var endTime: js.UndefOr[js.Any] = js.native
+    var endTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the object of the resource.
       */
-    var resources: js.UndefOr[js.Any] = js.native
+    var resources: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the start time of the clicked cell.
       */
-    var startTime: js.UndefOr[js.Any] = js.native
+    var startTime: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the target of the clicked cell.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CellHoverEventArgs {
     
@@ -1966,18 +1966,17 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ContextMenuSettings extends StObject {
     
     /** When set to true, enables the context menu options available for the Schedule cells and appointments.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Contains all the default context menu options that are applicable for both Schedule cells and appointments. It also supports adding custom menu items to cells or appointment
       * collection.
       */
-    var menuItems: js.UndefOr[ContextMenuSettingsMenuItems] = js.native
+    var menuItems: js.UndefOr[ContextMenuSettingsMenuItems] = js.undefined
   }
   object ContextMenuSettings {
     
@@ -2004,16 +2003,15 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ContextMenuSettingsMenuItems extends StObject {
     
     /** All the appointment related context menu items are grouped under this appointment menu collection.
       */
-    var appointment: js.UndefOr[js.Array[_]] = js.native
+    var appointment: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** All the Scheduler cell related context menu items are grouped under this cells menu item collection.
       */
-    var cells: js.UndefOr[js.Array[_]] = js.native
+    var cells: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ContextMenuSettingsMenuItems {
     
@@ -2027,7 +2025,7 @@ object Schedule {
     implicit class ContextMenuSettingsMenuItemsMutableBuilder[Self <: ContextMenuSettingsMenuItems] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAppointment(value: js.Array[_]): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
+      def setAppointment(value: js.Array[js.Any]): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAppointmentUndefined: Self = StObject.set(x, "appointment", js.undefined)
@@ -2036,7 +2034,7 @@ object Schedule {
       def setAppointmentVarargs(value: js.Any*): Self = StObject.set(x, "appointment", js.Array(value :_*))
       
       @scala.inline
-      def setCells(value: js.Array[_]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
+      def setCells(value: js.Array[js.Any]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCellsUndefined: Self = StObject.set(x, "cells", js.undefined)
@@ -2046,20 +2044,19 @@ object Schedule {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -2092,20 +2089,19 @@ object Schedule {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -2138,28 +2134,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait DragEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the default dragging interval range in minutes
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target of the drag over appointment.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragEventArgs {
     
@@ -2204,28 +2199,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait DragStartEventArgs extends StObject {
     
     /** Returns the dragged appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target of the dragging appointment.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStartEventArgs {
     
@@ -2270,24 +2264,23 @@ object Schedule {
     }
   }
   
-  @js.native
   trait DragStopEventArgs extends StObject {
     
     /** Returns the dropped appointment object.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DragStopEventArgs {
     
@@ -2326,17 +2319,16 @@ object Schedule {
     }
   }
   
-  @js.native
   trait Group extends StObject {
     
     /** When set to true, allows performing CRUD actions simultaneously on all the grouped appointments of multiple resources.
       * @Default {false}
       */
-    var allowGroupEditing: js.UndefOr[Boolean] = js.native
+    var allowGroupEditing: js.UndefOr[Boolean] = js.undefined
     
     /** Holds the array of resource names to be grouped on the Schedule.
       */
-    var resources: js.UndefOr[js.Array[_]] = js.native
+    var resources: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Group {
     
@@ -2356,7 +2348,7 @@ object Schedule {
       def setAllowGroupEditingUndefined: Self = StObject.set(x, "allowGroupEditing", js.undefined)
       
       @scala.inline
-      def setResources(value: js.Array[_]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
+      def setResources(value: js.Array[js.Any]): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResourcesUndefined: Self = StObject.set(x, "resources", js.undefined)
@@ -2366,24 +2358,23 @@ object Schedule {
     }
   }
   
-  @js.native
   trait KeyDownEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object KeyDownEventArgs {
     
@@ -2422,28 +2413,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait MenuItemClickEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the right clicked cell details.
       */
-    var targetInfo: js.UndefOr[js.Any] = js.native
+    var targetInfo: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object MenuItemClickEventArgs {
     
@@ -2488,434 +2478,433 @@ object Schedule {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers on the beginning of every action that starts within the Schedule.
       */
-    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.native
+    var actionBegin: js.UndefOr[js.Function1[/* e */ ActionBeginEventArgs, Unit]] = js.undefined
     
     /** Triggers after the completion of every action within the Schedule.
       */
-    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.native
+    var actionComplete: js.UndefOr[js.Function1[/* e */ ActionCompleteEventArgs, Unit]] = js.undefined
     
     /** Sets the week to display more than one week appointment summary.
       */
-    var agendaViewSettings: js.UndefOr[AgendaViewSettings] = js.native
+    var agendaViewSettings: js.UndefOr[AgendaViewSettings] = js.undefined
     
     /** Accepts the id value of the template layout defined for the all-day cells and customizes it.
       * @Default {null}
       */
-    var allDayCellsTemplateId: js.UndefOr[String] = js.native
+    var allDayCellsTemplateId: js.UndefOr[String] = js.undefined
     
     /** When set to false, disables the appointment delete option on the Scheduler.
       * @Default {true}
       */
-    var allowDelete: js.UndefOr[Boolean] = js.native
+    var allowDelete: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Schedule allows the appointments to be dragged and dropped at required time.
       * @Default {true}
       */
-    var allowDragAndDrop: js.UndefOr[Boolean] = js.native
+    var allowDragAndDrop: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, allows the user to create/edit appointments inline - simply through a single click made either on the Scheduler cells or on the existing appointmentâ€™s Subject
       * text respectively. Pressing enter key after the new Subject text   typed onto the inline created text box, will save/update the appointments appropriately.
       * @Default {false}
       */
-    var allowInline: js.UndefOr[Boolean] = js.native
+    var allowInline: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Scheduler allows interaction through keyboard shortcut keys.
       * @Default {true}
       */
-    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.native
+    var allowKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers after an existing appointment is edited.
       */
-    var appointmentChanged: js.UndefOr[js.Function1[/* e */ AppointmentChangedEventArgs, Unit]] = js.native
+    var appointmentChanged: js.UndefOr[js.Function1[/* e */ AppointmentChangedEventArgs, Unit]] = js.undefined
     
     /** Triggers after an appointment is clicked.
       */
-    var appointmentClick: js.UndefOr[js.Function1[/* e */ AppointmentClickEventArgs, Unit]] = js.native
+    var appointmentClick: js.UndefOr[js.Function1[/* e */ AppointmentClickEventArgs, Unit]] = js.undefined
     
     /** Triggers after the new appointment is saved.
       */
-    var appointmentCreated: js.UndefOr[js.Function1[/* e */ AppointmentCreatedEventArgs, Unit]] = js.native
+    var appointmentCreated: js.UndefOr[js.Function1[/* e */ AppointmentCreatedEventArgs, Unit]] = js.undefined
     
     /** Allows setting draggable area for the Scheduler appointments. Also, turns on the external drag and drop, when set with some specific external drag area name.
       */
-    var appointmentDragArea: js.UndefOr[String] = js.native
+    var appointmentDragArea: js.UndefOr[String] = js.undefined
     
     /** Triggers on hovering the mouse over the appointments.
       */
-    var appointmentHover: js.UndefOr[js.Function1[/* e */ AppointmentHoverEventArgs, Unit]] = js.native
+    var appointmentHover: js.UndefOr[js.Function1[/* e */ AppointmentHoverEventArgs, Unit]] = js.undefined
     
     /** Triggers after the appointment is deleted.
       */
-    var appointmentRemoved: js.UndefOr[js.Function1[/* e */ AppointmentRemovedEventArgs, Unit]] = js.native
+    var appointmentRemoved: js.UndefOr[js.Function1[/* e */ AppointmentRemovedEventArgs, Unit]] = js.undefined
     
     /** It includes the dataSource option and the fields related to Schedule appointments. The appointment fields within the appointmentSettings can accept both string and object type
       * values. To apply validation rules on the appointment window fields, then the appointment fields needs to be defined with object type values.
       */
-    var appointmentSettings: js.UndefOr[AppointmentSettings] = js.native
+    var appointmentSettings: js.UndefOr[AppointmentSettings] = js.undefined
     
     /** Template design that applies on the Schedule appointments. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings
       * can be used within the template.
       * @Default {null}
       */
-    var appointmentTemplateId: js.UndefOr[String] = js.native
+    var appointmentTemplateId: js.UndefOr[String] = js.undefined
     
     /** Triggers before the appointment window opens.
       */
-    var appointmentWindowOpen: js.UndefOr[js.Function1[/* e */ AppointmentWindowOpenEventArgs, Unit]] = js.native
+    var appointmentWindowOpen: js.UndefOr[js.Function1[/* e */ AppointmentWindowOpenEventArgs, Unit]] = js.undefined
     
     /** Triggers before the edited appointment is being saved.
       */
-    var beforeAppointmentChange: js.UndefOr[js.Function1[/* e */ BeforeAppointmentChangeEventArgs, Unit]] = js.native
+    var beforeAppointmentChange: js.UndefOr[js.Function1[/* e */ BeforeAppointmentChangeEventArgs, Unit]] = js.undefined
     
     /** Triggers before the new appointment gets saved.
       */
-    var beforeAppointmentCreate: js.UndefOr[js.Function1[/* e */ BeforeAppointmentCreateEventArgs, Unit]] = js.native
+    var beforeAppointmentCreate: js.UndefOr[js.Function1[/* e */ BeforeAppointmentCreateEventArgs, Unit]] = js.undefined
     
     /** Triggers before the appointment is being removed from the Scheduler.
       */
-    var beforeAppointmentRemove: js.UndefOr[js.Function1[/* e */ BeforeAppointmentRemoveEventArgs, Unit]] = js.native
+    var beforeAppointmentRemove: js.UndefOr[js.Function1[/* e */ BeforeAppointmentRemoveEventArgs, Unit]] = js.undefined
     
     /** Triggers before the context menu opens.
       */
-    var beforeContextMenuOpen: js.UndefOr[js.Function1[/* e */ BeforeContextMenuOpenEventArgs, Unit]] = js.native
+    var beforeContextMenuOpen: js.UndefOr[js.Function1[/* e */ BeforeContextMenuOpenEventArgs, Unit]] = js.undefined
     
     /** Blocks the user-specific time interval on the Scheduler, so that no appointments can be created on that particular time slots. It includes the dataSource option and also the
       * fields related to block intervals.
       */
-    var blockoutSettings: js.UndefOr[BlockoutSettings] = js.native
+    var blockoutSettings: js.UndefOr[BlockoutSettings] = js.undefined
     
     /** Sets various categorize colors to the Schedule appointments to differentiate it.
       */
-    var categorizeSettings: js.UndefOr[CategorizeSettings] = js.native
+    var categorizeSettings: js.UndefOr[CategorizeSettings] = js.undefined
     
     /** Triggers after the cell is clicked.
       */
-    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.native
+    var cellClick: js.UndefOr[js.Function1[/* e */ CellClickEventArgs, Unit]] = js.undefined
     
     /** Triggers after the cell is clicked twice.
       */
-    var cellDoubleClick: js.UndefOr[js.Function1[/* e */ CellDoubleClickEventArgs, Unit]] = js.native
+    var cellDoubleClick: js.UndefOr[js.Function1[/* e */ CellDoubleClickEventArgs, Unit]] = js.undefined
     
     /** Sets the height for Schedule cells.
       * @Default {20px}
       */
-    var cellHeight: js.UndefOr[String] = js.native
+    var cellHeight: js.UndefOr[String] = js.undefined
     
     /** Triggers on hovering the mouse overs the cells.
       */
-    var cellHover: js.UndefOr[js.Function1[/* e */ CellHoverEventArgs, Unit]] = js.native
+    var cellHover: js.UndefOr[js.Function1[/* e */ CellHoverEventArgs, Unit]] = js.undefined
     
     /** Sets the width for Schedule cells.
       */
-    var cellWidth: js.UndefOr[String] = js.native
+    var cellWidth: js.UndefOr[String] = js.undefined
     
     /** Holds all options related to the context menu settings of Scheduler.
       */
-    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+    var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
     
     /** Triggers when the Scheduler completely renders on the page.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Accepts the custom CSS class name that defines specific user-defined styles and themes to be applied for partial or complete elements of the Schedule.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets current date of the Schedule. The Schedule displays initially with the date that is provided here.
       * @Default {new Date()}
       */
-    var currentDate: js.UndefOr[js.Any] = js.native
+    var currentDate: js.UndefOr[js.Any] = js.undefined
     
     /** Sets current view of the Schedule. Schedule renders initially with the view that is specified here. The available views are day, week, workweek, month, agenda and custom view -
       * from which any one of the required view can be set to the Schedule. It accepts both string or enum values. The enum values that are accepted by
       * currentView(ej.Schedule.CurrentView) are as follows,
       * @Default {ej.Schedule.CurrentView.Week}
       */
-    var currentView: js.UndefOr[String | CurrentView] = js.native
+    var currentView: js.UndefOr[String | CurrentView] = js.undefined
     
     /** Sets the date format for Schedule.
       */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /** Accepts the id value of the template layout defined for the date header cells and customizes it.
       * @Default {null}
       */
-    var dateHeaderTemplateId: js.UndefOr[String] = js.native
+    var dateHeaderTemplateId: js.UndefOr[String] = js.undefined
     
     /** Triggers when the Scheduler and all its sub-components gets destroyed.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Triggers while the appointment is being dragged over the work cells.
       */
-    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.native
+    var drag: js.UndefOr[js.Function1[/* e */ DragEventArgs, Unit]] = js.undefined
     
     /** Triggers when the appointment dragging begins.
       */
-    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.native
+    var dragStart: js.UndefOr[js.Function1[/* e */ DragStartEventArgs, Unit]] = js.undefined
     
     /** Triggers when the appointment is dropped.
       */
-    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.native
+    var dragStop: js.UndefOr[js.Function1[/* e */ DragStopEventArgs, Unit]] = js.undefined
     
     /** When set to true, enables the resize behavior of appointments within the Schedule.
       * @Default {true}
       */
-    var enableAppointmentResize: js.UndefOr[Boolean] = js.native
+    var enableAppointmentResize: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, enables the loading of Schedule appointments based on your demand. With this load on demand concept, the data consumption of the Schedule can be limited.
       * @Default {false}
       */
-    var enableLoadOnDemand: js.UndefOr[Boolean] = js.native
+    var enableLoadOnDemand: js.UndefOr[Boolean] = js.undefined
     
     /** Saves the current model value to browser cookies for state maintenance. When the page gets refreshed, Schedule control values are retained.
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, the Schedule layout and behavior changes as per the common RTL conventions.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, Schedule allows the validation of recurrence pattern to take place before it is being assigned to the appointments. For example, when one of the instance of
       * recurrence appointment is dragged beyond the next or previous instance of the same recurrence appointment, a pop-up is displayed with the validation message disallowing the drag
       * functionality.
       * @Default {true}
       */
-    var enableRecurrenceValidation: js.UndefOr[Boolean] = js.native
+    var enableRecurrenceValidation: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the end hour time limit to be displayed on the Schedule.
       * @Default {24}
       */
-    var endHour: js.UndefOr[Double] = js.native
+    var endHour: js.UndefOr[Double] = js.undefined
     
     /** Sets specific day as the starting day of the week.
       * @Default {null}
       */
-    var firstDayOfWeek: js.UndefOr[String] = js.native
+    var firstDayOfWeek: js.UndefOr[String] = js.undefined
     
     /** To configure resource grouping on the Schedule.
       */
-    var group: js.UndefOr[Group] = js.native
+    var group: js.UndefOr[Group] = js.undefined
     
     /** Sets the height of the Schedule. Accepts both pixel and percentage values.
       * @Default {1120px}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** When set to true, enables the Schedule to observe Daylight Saving Time for supported timezones.
       * @Default {false}
       */
-    var isDST: js.UndefOr[Boolean] = js.native
+    var isDST: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, adapts the Schedule layout to fit the screen size of devices on which it renders.
       * @Default {true}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when any of the keyboard keys are pressed.
       */
-    var keyDown: js.UndefOr[js.Function1[/* e */ KeyDownEventArgs, Unit]] = js.native
+    var keyDown: js.UndefOr[js.Function1[/* e */ KeyDownEventArgs, Unit]] = js.undefined
     
     /** Sets the specific culture to the Schedule.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum date limit to display on the Schedule. Setting maxDate with specific date value disallows the Schedule to navigate beyond that date.
       * @Default {new Date(2099, 12, 31)}
       */
-    var maxDate: js.UndefOr[js.Any] = js.native
+    var maxDate: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers after the menu/sub-menu items within the context menu is clicked.
       */
-    var menuItemClick: js.UndefOr[js.Function1[/* e */ MenuItemClickEventArgs, Unit]] = js.native
+    var menuItemClick: js.UndefOr[js.Function1[/* e */ MenuItemClickEventArgs, Unit]] = js.undefined
     
     /** Sets the minimum date limit to display on the Schedule. Setting minDate with specific date value disallows the Schedule to navigate beyond that date.
       * @Default {new Date(1900, 01, 01)}
       */
-    var minDate: js.UndefOr[js.Any] = js.native
+    var minDate: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers after the Schedule view or date is navigated.
       */
-    var navigation: js.UndefOr[js.Function1[/* e */ NavigationEventArgs, Unit]] = js.native
+    var navigation: js.UndefOr[js.Function1[/* e */ NavigationEventArgs, Unit]] = js.undefined
     
     /** Sets the mode of Schedule rendering either in a vertical or horizontal direction. It accepts either string(&quot;vertical&quot; or &quot;horizontal&quot;) or enum values. The enum
       * values that are accepted by orientation(ej.Schedule.Orientation) are as follows,
       * @Default {ej.Schedule.Orientation.Vertical}
       */
-    var orientation: js.UndefOr[String | typings.ejWebAll.ej.Orientation] = js.native
+    var orientation: js.UndefOr[String | typings.ejWebAll.ej.Orientation] = js.undefined
     
     /** Triggers when the overflow button is clicked.
       */
-    var overflowButtonClick: js.UndefOr[js.Function1[/* e */ OverflowButtonClickEventArgs, Unit]] = js.native
+    var overflowButtonClick: js.UndefOr[js.Function1[/* e */ OverflowButtonClickEventArgs, Unit]] = js.undefined
     
     /** Triggers while mouse hovering on the overflow button.
       */
-    var overflowButtonHover: js.UndefOr[js.Function1[/* e */ OverflowButtonHoverEventArgs, Unit]] = js.native
+    var overflowButtonHover: js.UndefOr[js.Function1[/* e */ OverflowButtonHoverEventArgs, Unit]] = js.undefined
     
     /** Holds all the options related to priority settings of the Schedule.
       */
-    var prioritySettings: js.UndefOr[PrioritySettings] = js.native
+    var prioritySettings: js.UndefOr[PrioritySettings] = js.undefined
     
     /** Triggers every time before the elements of the scheduler such as work cells, time cells or header cells and so on renders or re-renders on a page.
       */
-    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.native
+    var queryCellInfo: js.UndefOr[js.Function1[/* e */ QueryCellInfoEventArgs, Unit]] = js.undefined
     
     /** When set to true, disables the interaction with the Schedule appointments, simply allowing the date and view navigation to occur.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers when the reminder is raised for an appointment based on the alertBefore value.
       */
-    var reminder: js.UndefOr[js.Function1[/* e */ ReminderEventArgs, Unit]] = js.native
+    var reminder: js.UndefOr[js.Function1[/* e */ ReminderEventArgs, Unit]] = js.undefined
     
     /** Holds all the options related to reminder settings of the Schedule.
       */
-    var reminderSettings: js.UndefOr[ReminderSettings] = js.native
+    var reminderSettings: js.UndefOr[ReminderSettings] = js.undefined
     
     /** Defines the specific start and end dates to be rendered in the Schedule control. To render such user-specified custom date ranges in the Schedule control, set the currentView
       * property to ej.Schedule.CurrentView.CustomView.
       * @Default {null}
       */
-    var renderDates: js.UndefOr[RenderDates] = js.native
+    var renderDates: js.UndefOr[RenderDates] = js.undefined
     
     /** Triggers while resizing the appointment.
       */
-    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.native
+    var resize: js.UndefOr[js.Function1[/* e */ ResizeEventArgs, Unit]] = js.undefined
     
     /** Triggers when the appointment resizing begins.
       */
-    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.native
+    var resizeStart: js.UndefOr[js.Function1[/* e */ ResizeStartEventArgs, Unit]] = js.undefined
     
     /** Triggers when an appointment resizing stops.
       */
-    var resizeStop: js.UndefOr[js.Function1[/* e */ ResizeStopEventArgs, Unit]] = js.native
+    var resizeStop: js.UndefOr[js.Function1[/* e */ ResizeStopEventArgs, Unit]] = js.undefined
     
     /** Template design that applies on the Schedule resource header.
       * @Default {null}
       */
-    var resourceHeaderTemplateId: js.UndefOr[String] = js.native
+    var resourceHeaderTemplateId: js.UndefOr[String] = js.undefined
     
     /** Holds all the options related to the resources settings of the Schedule. It is a collection of one or more resource objects, where the levels of resources are rendered on the
       * Schedule based on the order of the resource data provided within this collection.
       * @Default {null}
       */
-    var resources: js.UndefOr[js.Array[Resource]] = js.native
+    var resources: js.UndefOr[js.Array[Resource]] = js.undefined
     
     /** When set to true, displays the all-day row cells on the Schedule.
       * @Default {true}
       */
-    var showAllDayRow: js.UndefOr[Boolean] = js.native
+    var showAllDayRow: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, shows the previous/next appointment navigator button on the Scheduler.
       * @Default {true}
       */
-    var showAppointmentNavigator: js.UndefOr[Boolean] = js.native
+    var showAppointmentNavigator: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the current time indicator on the Schedule.
       * @Default {true}
       */
-    var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.native
+    var showCurrentTimeIndicator: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, shows the delete confirmation dialog before deleting an appointment.
       * @Default {true}
       */
-    var showDeleteConfirmationDialog: js.UndefOr[Boolean] = js.native
+    var showDeleteConfirmationDialog: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the header bar on the Schedule.
       * @Default {true}
       */
-    var showHeaderBar: js.UndefOr[Boolean] = js.native
+    var showHeaderBar: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the location field additionally on Schedule appointment window.
       * @Default {false}
       */
-    var showLocationField: js.UndefOr[Boolean] = js.native
+    var showLocationField: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the other months days from the current month on the Schedule.
       * @Default {true}
       */
-    var showNextPrevMonth: js.UndefOr[Boolean] = js.native
+    var showNextPrevMonth: js.UndefOr[Boolean] = js.undefined
     
     /** when set to false, allows the height of the work-cells to adjust automatically (either expand or collapse) based on the number of appointment count it has.
       * @Default {true}
       */
-    var showOverflowButton: js.UndefOr[Boolean] = js.native
+    var showOverflowButton: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, displays the quick window for every single click made on the Schedule cells or appointments.
       * @Default {true}
       */
-    var showQuickWindow: js.UndefOr[Boolean] = js.native
+    var showQuickWindow: js.UndefOr[Boolean] = js.undefined
     
     /** When set to false, doesn't render the start and end timezone fields on the Schedule appointment window.
       * @Default {true}
       */
-    var showTimeZoneFields: js.UndefOr[Boolean] = js.native
+    var showTimeZoneFields: js.UndefOr[Boolean] = js.undefined
     
     /** When set to false, hides the weekend days on all the Scheduler views.
       * @Default {true}
       */
-    var showWeekend: js.UndefOr[Boolean] = js.native
+    var showWeekend: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the start hour time range to be displayed on the Schedule.
       * @Default {0}
       */
-    var startHour: js.UndefOr[Double] = js.native
+    var startHour: js.UndefOr[Double] = js.undefined
     
     /** Sets either 12 or 24 hour time mode on the Schedule. It accepts either the string value(&quot;12&quot; or &quot;24&quot;) or the below mentioned enum values. The enum values that
       * are accepted by timeMode(ej.Schedule.TimeMode) are as follows,
       * @Default {null}
       */
-    var timeMode: js.UndefOr[String | TimeMode] = js.native
+    var timeMode: js.UndefOr[String | TimeMode] = js.undefined
     
     /** Holds all the options related to the time scale of Scheduler. The timeslots either major or minor slots can be customized with this property.
       */
-    var timeScale: js.UndefOr[TimeScale] = js.native
+    var timeScale: js.UndefOr[TimeScale] = js.undefined
     
     /** Sets the timezone for the Schedule.
       * @Default {null}
       */
-    var timeZone: js.UndefOr[String] = js.native
+    var timeZone: js.UndefOr[String] = js.undefined
     
     /** Sets the collection of timezone items to be bound to the Schedule. Only the items bound to this property gets listed out in the timezone field of the appointment window.
       */
-    var timeZoneCollection: js.UndefOr[TimeZoneCollection] = js.native
+    var timeZoneCollection: js.UndefOr[TimeZoneCollection] = js.undefined
     
     /** Allows to pop-up appointment details in a tooltip while hovering over the appointments.
       */
-    var tooltipSettings: js.UndefOr[TooltipSettings] = js.native
+    var tooltipSettings: js.UndefOr[TooltipSettings] = js.undefined
     
     /** Defines the view collection to be displayed on the Schedule. By default, it displays all the views namely, Day, Week, WorkWeek and Month.
       * @Default {[Day, Week, WorkWeek, Month, Agenda]}
       */
-    var views: js.UndefOr[js.Array[_]] = js.native
+    var views: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the width of the Schedule. Accepts both pixel and percentage values.
       * @Default {100%}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
     /** Accepts the id value of the template layout defined for the work cells and month cells.
       * @Default {null}
       */
-    var workCellsTemplateId: js.UndefOr[String] = js.native
+    var workCellsTemplateId: js.UndefOr[String] = js.undefined
     
     /** To define the work hours within the Schedule control.
       */
-    var workHours: js.UndefOr[WorkHours] = js.native
+    var workHours: js.UndefOr[WorkHours] = js.undefined
     
     /** Sets different day collection within workWeek view.
       * @Default {[Monday, Tuesday, Wednesday, Thursday, Friday]}
       */
-    var workWeek: js.UndefOr[js.Array[_]] = js.native
+    var workWeek: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object Model {
     
@@ -3454,7 +3443,7 @@ object Schedule {
       def setTooltipSettingsUndefined: Self = StObject.set(x, "tooltipSettings", js.undefined)
       
       @scala.inline
-      def setViews(value: js.Array[_]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
+      def setViews(value: js.Array[js.Any]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setViewsUndefined: Self = StObject.set(x, "views", js.undefined)
@@ -3481,7 +3470,7 @@ object Schedule {
       def setWorkHoursUndefined: Self = StObject.set(x, "workHours", js.undefined)
       
       @scala.inline
-      def setWorkWeek(value: js.Array[_]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
+      def setWorkWeek(value: js.Array[js.Any]): Self = StObject.set(x, "workWeek", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWorkWeekUndefined: Self = StObject.set(x, "workWeek", js.undefined)
@@ -3491,44 +3480,43 @@ object Schedule {
     }
   }
   
-  @js.native
   trait NavigationEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the current date object.
       */
-    var currentDate: js.UndefOr[js.Any] = js.native
+    var currentDate: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the current view value.
       */
-    var currentView: js.UndefOr[String] = js.native
+    var currentView: js.UndefOr[String] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the previous date of the Schedule.
       */
-    var previousDate: js.UndefOr[js.Any] = js.native
+    var previousDate: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the previous view value.
       */
-    var previousView: js.UndefOr[String] = js.native
+    var previousView: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the Scheduler event.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the target of the action.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object NavigationEventArgs {
     
@@ -3597,28 +3585,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait OverflowButtonClickEventArgs extends StObject {
     
     /** Returns the icon rendered cell information.
       */
-    var Datas: js.UndefOr[js.Any] = js.native
+    var Datas: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the object of menu item event.
       */
-    var events: js.UndefOr[js.Any] = js.native
+    var events: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OverflowButtonClickEventArgs {
     
@@ -3663,28 +3650,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait OverflowButtonHoverEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the icon rendered cell information.
       */
-    var datas: js.UndefOr[js.Any] = js.native
+    var datas: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the object of menu item event.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object OverflowButtonHoverEventArgs {
     
@@ -3729,33 +3715,32 @@ object Schedule {
     }
   }
   
-  @js.native
   trait PrioritySettings extends StObject {
     
     /** The dataSource option can accept the JSON object collection that contains the priority related data.
       * @Default {{% highlight js%}[{ text: None, value: none },{ text: High, value: high },{ text: Medium, value: medium },{ text: Low, value: low }]{% endhighlight %}}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** When set to true, enables the priority options available for the Schedule appointments.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Allows priority field customization in the appointment window to add custom icons denoting the priority level for the appointments.
       * @Default {null}
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to prioritySettings text. These text gets listed out in priority field of the appointment window.
       * @Default {text}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Binds value field name in the dataSource to prioritySettings value. These field names usually accepts four priority values by default, high, low, medium and none.
       * @Default {value}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object PrioritySettings {
     
@@ -3769,7 +3754,7 @@ object Schedule {
     implicit class PrioritySettingsMutableBuilder[Self <: PrioritySettings] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -3803,48 +3788,47 @@ object Schedule {
     }
   }
   
-  @js.native
   trait QueryCellInfoEventArgs extends StObject {
     
     /** Returns the current appointment data.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the currently rendering cell information.
       */
-    var cell: js.UndefOr[js.Any] = js.native
+    var cell: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cell type which is currently rendering on the Scheduler.
       */
-    var cellType: js.UndefOr[String] = js.native
+    var cellType: js.UndefOr[String] = js.undefined
     
     /** Returns the start date of the currently rendering appointment.
       */
-    var currentAppointmentDate: js.UndefOr[js.Any] = js.native
+    var currentAppointmentDate: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the currently rendering date information.
       */
-    var currentDay: js.UndefOr[js.Any] = js.native
+    var currentDay: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the currently rendering DOM element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the currently rendering element on the scheduler.
       */
-    var requestType: js.UndefOr[String] = js.native
+    var requestType: js.UndefOr[String] = js.undefined
     
     /** Returns the currently rendering resource details.
       */
-    var resource: js.UndefOr[js.Any] = js.native
+    var resource: js.UndefOr[js.Any] = js.undefined
   }
   object QueryCellInfoEventArgs {
     
@@ -3919,24 +3903,23 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ReminderEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the appointment object for which the reminder is raised.
       */
-    var reminderAppointment: js.UndefOr[js.Any] = js.native
+    var reminderAppointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ReminderEventArgs {
     
@@ -3975,18 +3958,17 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ReminderSettings extends StObject {
     
     /** Sets the timing, when the reminders are to be alerted for the Schedule appointments.
       * @Default {5}
       */
-    var alertBefore: js.UndefOr[Double] = js.native
+    var alertBefore: js.UndefOr[Double] = js.undefined
     
     /** When set to true, enables the reminder option available for the Schedule appointments.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
   }
   object ReminderSettings {
     
@@ -4013,18 +3995,17 @@ object Schedule {
     }
   }
   
-  @js.native
   trait RenderDates extends StObject {
     
     /** Sets the end limit of the custom date range.
       * @Default {null}
       */
-    var end: js.UndefOr[js.Any] = js.native
+    var end: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the start of custom date range to be rendered in the Schedule.
       * @Default {null}
       */
-    var start: js.UndefOr[js.Any] = js.native
+    var start: js.UndefOr[js.Any] = js.undefined
   }
   object RenderDates {
     
@@ -4051,28 +4032,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ResizeEventArgs extends StObject {
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the resize element value.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the default appointment resizing range .
       */
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeEventArgs {
     
@@ -4117,28 +4097,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ResizeStartEventArgs extends StObject {
     
     /** Returns the object of the resized appointment.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the resize element value.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeStartEventArgs {
     
@@ -4183,28 +4162,27 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ResizeStopEventArgs extends StObject {
     
     /** Returns the resized appointment value.
       */
-    var appointment: js.UndefOr[js.Any] = js.native
+    var appointment: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Schedule model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the target of the resized appointment.
       */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** Returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResizeStopEventArgs {
     
@@ -4249,32 +4227,31 @@ object Schedule {
     }
   }
   
-  @js.native
   trait Resource extends StObject {
     
     /** When set to true, allows multiple selection of resource names, thus creating multiple instances of same appointment for the selected resources.
       * @Default {false}
       */
-    var allowMultiple: js.UndefOr[Boolean] = js.native
+    var allowMultiple: js.UndefOr[Boolean] = js.undefined
     
     /** It holds the name of the resource field to be bound to the Schedule appointments that contains the resource Id.
       * @Default {null}
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
     /** A unique resource name that is used for differentiating various resource objects while grouping it in various levels.
       * @Default {null}
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** It holds the field names of the resources to be bound to the Schedule and also the dataSource.
       */
-    var resourceSettings: js.UndefOr[ResourcesResourceSettings] = js.native
+    var resourceSettings: js.UndefOr[ResourcesResourceSettings] = js.undefined
     
     /** It holds the title name of the resource field to be displayed on the Schedule appointment window.
       * @Default {null}
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Resource {
     
@@ -4319,54 +4296,53 @@ object Schedule {
     }
   }
   
-  @js.native
   trait ResourcesResourceSettings extends StObject {
     
     /** Binds appointmentClass field name in the dataSource. It applies custom CSS class name to appointments depicting to the resource it belongs.
       * @Default {null}
       */
-    var appointmentClass: js.UndefOr[String] = js.native
+    var appointmentClass: js.UndefOr[String] = js.undefined
     
     /** Binds color field name in the dataSource to resourceSettings color. The color specified here gets applied to the Schedule appointments denoting to the resource it belongs.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** The dataSource option accepts either JSON object collection or DataManager (ejDataManager) instance that contains the resources related data.
       * @Default {[]}
       */
-    var dataSource: js.UndefOr[js.Any | js.Array[_]] = js.native
+    var dataSource: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
     
     /** Binds the end work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the end work hour for specific resources.
       * @Default {null}
       */
-    var end: js.UndefOr[String] = js.native
+    var end: js.UndefOr[String] = js.undefined
     
     /** Binds groupId field name in the dataSource to resourceSettings groupId.
       * @Default {null}
       */
-    var groupId: js.UndefOr[String] = js.native
+    var groupId: js.UndefOr[String] = js.undefined
     
     /** Binds id field name in the dataSource to resourceSettings id.
       * @Default {null}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Binds the starting work hour field name in the dataSource. It's optional, but providing it with some numeric value will set the starting work hour for specific resources.
       * @Default {null}
       */
-    var start: js.UndefOr[String] = js.native
+    var start: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to resourceSettings text. These text gets listed out in resources field of the appointment window.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Binds the resources working days field name in the dataSource. It's optional, and accepts the array of strings (week day names). When provided with specific collection of days
       * (array of day names), only those days will render for the specific resources.
       * @Default {null}
       */
-    var workWeek: js.UndefOr[String] = js.native
+    var workWeek: js.UndefOr[String] = js.undefined
   }
   object ResourcesResourceSettings {
     
@@ -4392,7 +4368,7 @@ object Schedule {
       def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
       
       @scala.inline
-      def setDataSource(value: js.Any | js.Array[_]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
+      def setDataSource(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)
@@ -4438,34 +4414,33 @@ object Schedule {
     }
   }
   
-  @js.native
   trait TimeScale extends StObject {
     
     /** When set to true, displays the time slots on the Scheduler.
       * @Default {true}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Accepts the value in minutes. When provided with specific value, displays the appropriate time interval on the Scheduler
       * @Default {60}
       */
-    var majorSlot: js.UndefOr[Double] = js.native
+    var majorSlot: js.UndefOr[Double] = js.undefined
     
     /** Template design that customizes the timecells (major slots). Accepts id value of the template defined for major time slots.
       * @Default {null}
       */
-    var majorSlotTemplateId: js.UndefOr[String] = js.native
+    var majorSlotTemplateId: js.UndefOr[String] = js.undefined
     
     /** When set with some specific value, defines the number of time divisions split per hour(as per value given for the majorTimeSlot). Those time divisions are meant to be the minor
       * slots.
       * @Default {2}
       */
-    var minorSlotCount: js.UndefOr[Double] = js.native
+    var minorSlotCount: js.UndefOr[Double] = js.undefined
     
     /** Template design that customizes the timecells (minor slots) that are partitioned based on minorSlotCount. Accepts id value of the template defined for minor time slots.
       * @Default {null}
       */
-    var minorSlotTemplateId: js.UndefOr[String] = js.native
+    var minorSlotTemplateId: js.UndefOr[String] = js.undefined
   }
   object TimeScale {
     
@@ -4510,27 +4485,26 @@ object Schedule {
     }
   }
   
-  @js.native
   trait TimeZoneCollection extends StObject {
     
     /** Sets the collection of timezone items to the dataSource that accepts either JSON object collection or DataManager (ej.DataManager) instance that contains Schedule timezones.
       */
-    var dataSource: js.UndefOr[js.Any] = js.native
+    var dataSource: js.UndefOr[js.Any] = js.undefined
     
     /** Binds id field name in the dataSource to timeZoneCollection id.
       * @Default {id}
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Binds text field name in the dataSource to timeZoneCollection text. These text gets listed out in the timezone fields of the appointment window.
       * @Default {text}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Binds value field name in the dataSource to timeZoneCollection value.
       * @Default {value}
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TimeZoneCollection {
     
@@ -4569,19 +4543,18 @@ object Schedule {
     }
   }
   
-  @js.native
   trait TooltipSettings extends StObject {
     
     /** Enables or disables the tooltip display.
       * @Default {false}
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Template design that customizes the tooltip. All the field names that are mapped from dataSource to the appropriate field properties within the appointmentSettings can be accessed
       * within the template.
       * @Default {null}
       */
-    var templateId: js.UndefOr[String] = js.native
+    var templateId: js.UndefOr[String] = js.undefined
   }
   object TooltipSettings {
     
@@ -4608,23 +4581,22 @@ object Schedule {
     }
   }
   
-  @js.native
   trait WorkHours extends StObject {
     
     /** Sets the end time to depict the end of working or business hour in a day.
       * @Default {18}
       */
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
     /** When set to true, highlights the work hours of the Schedule.
       * @Default {true}
       */
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the start time to depict the start of working or business hour in a day.
       * @Default {9}
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object WorkHours {
     

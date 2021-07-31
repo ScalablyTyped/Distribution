@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StockChartSelectEndEvent extends StockChartEvent {
+trait StockChartSelectEndEvent
+  extends StObject
+     with StockChartEvent {
   
-  var axis: js.UndefOr[js.Any] = js.native
+  var axis: js.UndefOr[js.Any] = js.undefined
   
-  var from: js.UndefOr[Date] = js.native
+  var from: js.UndefOr[Date] = js.undefined
   
-  var to: js.UndefOr[Date] = js.native
+  var to: js.UndefOr[Date] = js.undefined
 }
 object StockChartSelectEndEvent {
   

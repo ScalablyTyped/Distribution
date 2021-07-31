@@ -7,7 +7,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import typings.vsoNodeApi.vsoClientMod.VsoClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientApiBasesMod {
@@ -17,13 +16,8 @@ object clientApiBasesMod {
   class ClientApiBase protected () extends StObject {
     def this(baseUrl: String, handlers: js.Array[IRequestHandler]) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String) = this()
-    def this(
-      baseUrl: String,
-      handlers: js.Array[IRequestHandler],
-      userAgent: js.UndefOr[scala.Nothing],
-      options: IRequestOptions
-    ) = this()
     def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: String, options: IRequestOptions) = this()
+    def this(baseUrl: String, handlers: js.Array[IRequestHandler], userAgent: Unit, options: IRequestOptions) = this()
     
     var baseUrl: String = js.native
     

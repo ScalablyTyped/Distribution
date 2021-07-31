@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.webservicesMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk", "webservices.WsdlDescription")
@@ -38,9 +37,8 @@ object WsdlDescription {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.WsdlDescription.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -48,9 +46,8 @@ object WsdlDescription {
     * of the parent ImportedWebService element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.WsdlDescription.createInImportedWebServiceUnderWsdlDescription")
-  @js.native
-  def createInImportedWebServiceUnderWsdlDescription(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = js.native
+  @scala.inline
+  def createInImportedWebServiceUnderWsdlDescription(container: typings.mendixmodelsdk.webservicesMod.webservices.ImportedWebService): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInImportedWebServiceUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
   
   /**
     * Creates and returns a new WsdlDescription instance in the SDK and on the server.
@@ -58,9 +55,8 @@ object WsdlDescription {
     * of the parent appservices.Msd element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "webservices.WsdlDescription.createInMsdUnderWsdlDescription")
-  @js.native
-  def createInMsdUnderWsdlDescription(container: Msd): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = js.native
+  @scala.inline
+  def createInMsdUnderWsdlDescription(container: Msd): typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMsdUnderWsdlDescription")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription]
   
   /* static member */
   @JSImport("mendixmodelsdk", "webservices.WsdlDescription.structureTypeName")

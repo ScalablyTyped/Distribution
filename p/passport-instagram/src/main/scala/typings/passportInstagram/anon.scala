@@ -2,17 +2,15 @@ package typings.passportInstagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FamilyName extends StObject {
     
-    var familyName: String = js.native
+    var familyName: String
     
-    var givenName: String = js.native
+    var givenName: String
   }
   object FamilyName {
     

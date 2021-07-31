@@ -8,151 +8,149 @@ import typings.googleapis.anon.SizeType
 import typings.googleapis.anon.Targets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An item with user information and settings.
   */
-@js.native
 trait SchemaAbout extends StObject {
   
   /**
     * Information about supported additional roles per file type. The most
     * specific type takes precedence.
     */
-  var additionalRoleInfo: js.UndefOr[js.Array[RoleSets]] = js.native
+  var additionalRoleInfo: js.UndefOr[js.Array[RoleSets]] = js.undefined
   
   /**
     * Whether the user can create Team Drives.
     */
-  var canCreateTeamDrives: js.UndefOr[Boolean] = js.native
+  var canCreateTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The domain sharing policy for the current user. Possible values are:   -
     * allowed  - allowedWithWarning  - incomingOnly  - disallowed
     */
-  var domainSharingPolicy: js.UndefOr[String] = js.native
+  var domainSharingPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The ETag of the item.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The allowable export formats.
     */
-  var exportFormats: js.UndefOr[js.Array[Targets]] = js.native
+  var exportFormats: js.UndefOr[js.Array[Targets]] = js.undefined
   
   /**
     * List of additional features enabled on this account.
     */
-  var features: js.UndefOr[js.Array[FeatureName]] = js.native
+  var features: js.UndefOr[js.Array[FeatureName]] = js.undefined
   
   /**
     * The palette of allowable folder colors as RGB hex strings.
     */
-  var folderColorPalette: js.UndefOr[js.Array[String]] = js.native
+  var folderColorPalette: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The allowable import formats.
     */
-  var importFormats: js.UndefOr[js.Array[Targets]] = js.native
+  var importFormats: js.UndefOr[js.Array[Targets]] = js.undefined
   
   /**
     * A boolean indicating whether the authenticated app is installed by the
     * authenticated user.
     */
-  var isCurrentAppInstalled: js.UndefOr[Boolean] = js.native
+  var isCurrentAppInstalled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This is always drive#about.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The user&#39;s language or locale code, as defined by BCP 47, with some
     * extensions from Unicode&#39;s LDML format
     * (http://www.unicode.org/reports/tr35/).
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * The largest change id.
     */
-  var largestChangeId: js.UndefOr[String] = js.native
+  var largestChangeId: js.UndefOr[String] = js.undefined
   
   /**
     * List of max upload sizes for each file type. The most specific type takes
     * precedence.
     */
-  var maxUploadSizes: js.UndefOr[js.Array[SizeType]] = js.native
+  var maxUploadSizes: js.UndefOr[js.Array[SizeType]] = js.undefined
   
   /**
     * The name of the current user.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The current user&#39;s ID as visible in the permissions collection.
     */
-  var permissionId: js.UndefOr[String] = js.native
+  var permissionId: js.UndefOr[String] = js.undefined
   
   /**
     * The amount of storage quota used by different Google services.
     */
-  var quotaBytesByService: js.UndefOr[js.Array[BytesUsed]] = js.native
+  var quotaBytesByService: js.UndefOr[js.Array[BytesUsed]] = js.undefined
   
   /**
     * The total number of quota bytes.
     */
-  var quotaBytesTotal: js.UndefOr[String] = js.native
+  var quotaBytesTotal: js.UndefOr[String] = js.undefined
   
   /**
     * The number of quota bytes used by Google Drive.
     */
-  var quotaBytesUsed: js.UndefOr[String] = js.native
+  var quotaBytesUsed: js.UndefOr[String] = js.undefined
   
   /**
     * The number of quota bytes used by all Google apps (Drive, Picasa, etc.).
     */
-  var quotaBytesUsedAggregate: js.UndefOr[String] = js.native
+  var quotaBytesUsedAggregate: js.UndefOr[String] = js.undefined
   
   /**
     * The number of quota bytes used by trashed items.
     */
-  var quotaBytesUsedInTrash: js.UndefOr[String] = js.native
+  var quotaBytesUsedInTrash: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the user&#39;s storage quota. Possible values are:   -
     * LIMITED  - UNLIMITED
     */
-  var quotaType: js.UndefOr[String] = js.native
+  var quotaType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of remaining change ids, limited to no more than 2500.
     */
-  var remainingChangeIds: js.UndefOr[String] = js.native
+  var remainingChangeIds: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the root folder.
     */
-  var rootFolderId: js.UndefOr[String] = js.native
+  var rootFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * A link back to this item.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * A list of themes that are supported for Team Drives.
     */
-  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.native
+  var teamDriveThemes: js.UndefOr[js.Array[BackgroundImageLink]] = js.undefined
   
   /**
     * The authenticated user.
     */
-  var user: js.UndefOr[SchemaUser] = js.native
+  var user: js.UndefOr[SchemaUser] = js.undefined
 }
 object SchemaAbout {
   

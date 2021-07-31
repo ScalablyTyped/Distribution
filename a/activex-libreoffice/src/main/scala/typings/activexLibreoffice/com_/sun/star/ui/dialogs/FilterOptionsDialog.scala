@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertyAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,9 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Otherwise, the filter operation is canceled.
   * @since OOo 1.1.2
   */
-@js.native
 trait FilterOptionsDialog
-  extends XPropertyAccess
+  extends StObject
+     with XPropertyAccess
      with XExecutableDialog
 object FilterOptionsDialog {
   

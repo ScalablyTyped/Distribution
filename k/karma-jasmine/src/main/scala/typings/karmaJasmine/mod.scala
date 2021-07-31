@@ -3,16 +3,14 @@ package typings.karmaJasmine
 import typings.karmaJasmine.anon.EnvConfigurationtimeoutIn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.native
+    var jasmine: js.UndefOr[EnvConfigurationtimeoutIn] = js.undefined
     
     /**
       * run a subset of the full set of specs.
@@ -21,7 +19,7 @@ object mod {
       * See {@link https://github.com/karma-runner/karma-jasmine#sharding}
       *
       */
-    var shardIndex: js.UndefOr[Double] = js.native
+    var shardIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * run a subset of the full set of specs.
@@ -29,7 +27,7 @@ object mod {
       * and would need to support test result integration across shards.
       * See {@link https://github.com/karma-runner/karma-jasmine#sharding}
       */
-    var totalShards: js.UndefOr[Double] = js.native
+    var totalShards: js.UndefOr[Double] = js.undefined
   }
   object ClientOptions {
     

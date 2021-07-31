@@ -2,16 +2,14 @@ package typings.contentfulManagement.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Omit<contentful-management.contentful-management/dist/typings/entities/team-membership.TeamMembershipProps, 'sys'> */
-@js.native
 trait OmitTeamMembershipPropssy extends StObject {
   
-  var admin: Boolean = js.native
+  var admin: Boolean
   
-  var organizationMembershipId: String = js.native
+  var organizationMembershipId: String
 }
 object OmitTeamMembershipPropssy {
   

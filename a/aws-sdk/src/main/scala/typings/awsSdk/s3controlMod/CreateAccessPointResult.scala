@@ -2,16 +2,14 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAccessPointResult extends StObject {
   
   /**
     * The ARN of the access point.  This is only supported by Amazon S3 on Outposts. 
     */
-  var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.native
+  var AccessPointArn: js.UndefOr[S3AccessPointArn] = js.undefined
 }
 object CreateAccessPointResult {
   

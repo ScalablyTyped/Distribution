@@ -3,17 +3,15 @@ package typings.fsTreeDiff
 import typings.fsTreeDiff.entryMod.BaseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Entries[T /* <: BaseEntry */] extends StObject {
     
-    var entries: js.UndefOr[js.Array[T]] = js.native
+    var entries: js.UndefOr[js.Array[T]] = js.undefined
     
-    var sortAndExpand: js.UndefOr[Boolean] = js.native
+    var sortAndExpand: js.UndefOr[Boolean] = js.undefined
   }
   object Entries {
     
@@ -24,7 +22,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EntriesMutableBuilder[Self <: Entries[_], T /* <: BaseEntry */] (val x: Self with Entries[T]) extends AnyVal {
+    implicit class EntriesMutableBuilder[Self <: Entries[?], T /* <: BaseEntry */] (val x: Self & Entries[T]) extends AnyVal {
       
       @scala.inline
       def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])

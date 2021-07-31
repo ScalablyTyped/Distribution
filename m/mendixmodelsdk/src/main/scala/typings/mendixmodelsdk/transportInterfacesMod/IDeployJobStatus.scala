@@ -4,25 +4,23 @@ import typings.mendixmodelsdk.mendixmodelsdkStrings.fast
 import typings.mendixmodelsdk.mendixmodelsdkStrings.full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeployJobStatus extends StObject {
   
-  var appUrl: js.UndefOr[String] = js.native
+  var appUrl: js.UndefOr[String] = js.undefined
   
-  var buildErrors: js.UndefOr[js.Array[IBuildError]] = js.native
+  var buildErrors: js.UndefOr[js.Array[IBuildError]] = js.undefined
   
-  var buildstatus: String | Null = js.native
+  var buildstatus: String | Null
   
-  var consistencyErrors: js.UndefOr[js.Array[IProblem]] = js.native
+  var consistencyErrors: js.UndefOr[js.Array[IProblem]] = js.undefined
   
-  var jobid: String = js.native
+  var jobid: String
   
-  var startTime: Double = js.native
+  var startTime: Double
   
-  var status: IUpdateAppJobStatus = js.native
+  var status: IUpdateAppJobStatus
   
   /**
     * Used to keep track of which steps this app update went trough,
@@ -30,9 +28,9 @@ trait IDeployJobStatus extends StObject {
     *
     * @memberOf IGetUpdateAppStatusResponse
     */
-  var trace: js.Array[String] = js.native
+  var trace: js.Array[String]
   
-  var `type`: full | fast = js.native
+  var `type`: full | fast
 }
 object IDeployJobStatus {
   
@@ -44,7 +42,7 @@ object IDeployJobStatus {
     trace: js.Array[String],
     `type`: full | fast
   ): IDeployJobStatus = {
-    val __obj = js.Dynamic.literal(jobid = jobid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(jobid = jobid.asInstanceOf[js.Any], startTime = startTime.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], trace = trace.asInstanceOf[js.Any], buildstatus = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[IDeployJobStatus]
   }

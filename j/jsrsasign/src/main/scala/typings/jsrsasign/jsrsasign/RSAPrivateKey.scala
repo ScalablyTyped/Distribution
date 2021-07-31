@@ -2,27 +2,25 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RSAPrivateKey extends StObject {
   
-  var co: String = js.native
+  var co: String
   
-  var d: String = js.native
+  var d: String
   
-  var dp: String = js.native
+  var dp: String
   
-  var dq: String = js.native
+  var dq: String
   
-  var e: String = js.native
+  var e: String
   
-  var n: String = js.native
+  var n: String
   
-  var p: String = js.native
+  var p: String
   
-  var q: String = js.native
+  var q: String
 }
 object RSAPrivateKey {
   

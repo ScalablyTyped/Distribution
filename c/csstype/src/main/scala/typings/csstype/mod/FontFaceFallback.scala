@@ -2,39 +2,37 @@ package typings.csstype.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontFaceFallback extends StObject {
   
   var MozFontFeatureSettings: js.UndefOr[
     FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty]] = js.native
+  var fontDisplay: js.UndefOr[FontFaceFontDisplayProperty | js.Array[FontFaceFontDisplayProperty]] = js.undefined
   
-  var fontFamily: js.UndefOr[String | js.Array[String]] = js.native
+  var fontFamily: js.UndefOr[String | js.Array[String]] = js.undefined
   
   var fontFeatureSettings: js.UndefOr[
     FontFaceFontFeatureSettingsProperty | js.Array[FontFaceFontFeatureSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var fontStretch: js.UndefOr[FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty]] = js.native
+  var fontStretch: js.UndefOr[FontFaceFontStretchProperty | js.Array[FontFaceFontStretchProperty]] = js.undefined
   
-  var fontStyle: js.UndefOr[FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty]] = js.native
+  var fontStyle: js.UndefOr[FontFaceFontStyleProperty | js.Array[FontFaceFontStyleProperty]] = js.undefined
   
-  var fontVariant: js.UndefOr[FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty]] = js.native
+  var fontVariant: js.UndefOr[FontFaceFontVariantProperty | js.Array[FontFaceFontVariantProperty]] = js.undefined
   
   var fontVariationSettings: js.UndefOr[
     FontFaceFontVariationSettingsProperty | js.Array[FontFaceFontVariationSettingsProperty]
-  ] = js.native
+  ] = js.undefined
   
-  var fontWeight: js.UndefOr[FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty]] = js.native
+  var fontWeight: js.UndefOr[FontFaceFontWeightProperty | js.Array[FontFaceFontWeightProperty]] = js.undefined
   
-  var src: js.UndefOr[String | js.Array[String]] = js.native
+  var src: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var unicodeRange: js.UndefOr[String | js.Array[String]] = js.native
+  var unicodeRange: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object FontFaceFallback {
   

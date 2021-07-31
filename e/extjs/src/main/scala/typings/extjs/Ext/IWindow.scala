@@ -3,95 +3,100 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IComponentDragger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWindow
-  extends typings.extjs.Ext.panel.IPanel {
+  extends StObject
+     with typings.extjs.Ext.panel.IPanel {
   
   /** [Method] Invoked after the Panel is Collapsed  */
   @JSName("afterCollapse")
-  var afterCollapse_IWindow: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterCollapse_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Invoked after the Panel is Expanded  */
   @JSName("afterExpand")
-  var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.native
+  var afterExpand_IWindow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/Ext.Element) */
-  var animateTarget: js.UndefOr[js.Any] = js.native
+  var animateTarget: js.UndefOr[js.Any] = js.undefined
+  
+  /** [Method] Applies the state to the object
+    * @param state Object
+    */
+  @JSName("applyState")
+  var applyState_IWindow: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
   @JSName("autoRender")
-  var autoRender_IWindow: js.UndefOr[Boolean] = js.native
+  var autoRender_IWindow: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Ext.util.ComponentDragger) */
   @JSName("dd")
-  var dd_IWindow: js.UndefOr[IComponentDragger] = js.native
+  var dd_IWindow: js.UndefOr[IComponentDragger] = js.undefined
   
   /** [Config Option] (String/Number/Ext.Component) */
-  var defaultFocus: js.UndefOr[js.Any] = js.native
+  var defaultFocus: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var expandOnShow: js.UndefOr[Boolean] = js.native
+  var expandOnShow: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Gets the configured default focus item  */
-  var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.native
+  var getDefaultFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean/Function) */
-  var ghost: js.UndefOr[js.Any] = js.native
+  var ghost: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.native
+  var hideShadowOnDeactivate: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var isWindow: js.UndefOr[Boolean] = js.native
+  var isWindow: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var maximizable: js.UndefOr[Boolean] = js.native
+  var maximizable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Fits the window within its current container and automatically replaces the maximize tool button with the restore
     * @param animate Boolean true to animate this Window to full size.
     * @returns Ext.window.Window this
     */
-  var maximize: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.native
+  var maximize: js.UndefOr[js.Function1[/* animate */ js.UndefOr[Boolean], this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var maximized: js.UndefOr[Boolean] = js.native
+  var maximized: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var minimizable: js.UndefOr[Boolean] = js.native
+  var minimizable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Placeholder method for minimizing the window
     * @returns Ext.window.Window this
     */
-  var minimize: js.UndefOr[js.Function0[this.type]] = js.native
+  var minimize: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Function) */
-  var onEsc: js.UndefOr[js.Any] = js.native
+  var onEsc: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var plain: js.UndefOr[Boolean] = js.native
+  var plain: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Restores a maximized window back to its original size and position prior to being maximized and also replaces the re
     * @param animate Object
     * @returns Ext.window.Window this
     */
-  var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.native
+  var restore: js.UndefOr[js.Function1[/* animate */ js.UndefOr[js.Any], this.type]] = js.undefined
   
   /** [Method] A shortcut method for toggling between maximize and restore based on the current maximized state of the window
     * @returns Ext.window.Window this
     */
-  var toggleMaximize: js.UndefOr[js.Function0[this.type]] = js.native
+  var toggleMaximize: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Number) */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Number) */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object IWindow {
   
@@ -121,6 +126,12 @@ object IWindow {
     
     @scala.inline
     def setAnimateTargetUndefined: Self = StObject.set(x, "animateTarget", js.undefined)
+    
+    @scala.inline
+    def setApplyState(value: /* state */ js.UndefOr[js.Any] => Unit): Self = StObject.set(x, "applyState", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setApplyStateUndefined: Self = StObject.set(x, "applyState", js.undefined)
     
     @scala.inline
     def setAutoRender(value: Boolean): Self = StObject.set(x, "autoRender", value.asInstanceOf[js.Any])

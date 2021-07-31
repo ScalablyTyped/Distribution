@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinalAutoMLJobObjectiveMetric extends StObject {
   
   /**
     * The name of the metric with the best result. For a description of the possible objective metrics, see AutoMLJobObjective$MetricName.
     */
-  var MetricName: AutoMLMetricEnum = js.native
+  var MetricName: AutoMLMetricEnum
   
   /**
     * The type of metric with the best result.
     */
-  var Type: js.UndefOr[AutoMLJobObjectiveType] = js.native
+  var Type: js.UndefOr[AutoMLJobObjectiveType] = js.undefined
   
   /**
     * The value of the metric with the best result.
     */
-  var Value: MetricValue = js.native
+  var Value: MetricValue
 }
 object FinalAutoMLJobObjectiveMetric {
   

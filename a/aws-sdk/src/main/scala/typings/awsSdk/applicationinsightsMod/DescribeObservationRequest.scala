@@ -2,16 +2,14 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeObservationRequest extends StObject {
   
   /**
     * The ID of the observation.
     */
-  var ObservationId: typings.awsSdk.applicationinsightsMod.ObservationId = js.native
+  var ObservationId: typings.awsSdk.applicationinsightsMod.ObservationId
 }
 object DescribeObservationRequest {
   

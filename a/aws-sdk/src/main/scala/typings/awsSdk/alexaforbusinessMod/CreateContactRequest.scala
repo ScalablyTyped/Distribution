@@ -2,46 +2,44 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateContactRequest extends StObject {
   
   /**
     * A unique, user-specified identifier for this request that ensures idempotency.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.alexaforbusinessMod.ClientRequestToken] = js.undefined
   
   /**
     * The name of the contact to display on the console.
     */
-  var DisplayName: js.UndefOr[ContactName] = js.native
+  var DisplayName: js.UndefOr[ContactName] = js.undefined
   
   /**
     * The first name of the contact that is used to call the contact on the device.
     */
-  var FirstName: ContactName = js.native
+  var FirstName: ContactName
   
   /**
     * The last name of the contact that is used to call the contact on the device.
     */
-  var LastName: js.UndefOr[ContactName] = js.native
+  var LastName: js.UndefOr[ContactName] = js.undefined
   
   /**
     * The phone number of the contact in E.164 format. The phone number type defaults to WORK. You can specify PhoneNumber or PhoneNumbers. We recommend that you use PhoneNumbers, which lets you specify the phone number type and multiple numbers.
     */
-  var PhoneNumber: js.UndefOr[RawPhoneNumber] = js.native
+  var PhoneNumber: js.UndefOr[RawPhoneNumber] = js.undefined
   
   /**
     * The list of phone numbers for the contact.
     */
-  var PhoneNumbers: js.UndefOr[PhoneNumberList] = js.native
+  var PhoneNumbers: js.UndefOr[PhoneNumberList] = js.undefined
   
   /**
     * The list of SIP addresses for the contact.
     */
-  var SipAddresses: js.UndefOr[SipAddressList] = js.native
+  var SipAddresses: js.UndefOr[SipAddressList] = js.undefined
 }
 object CreateContactRequest {
   

@@ -2,15 +2,13 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryBindingDef extends StObject {
   
-  var bindingType: ɵQueryBindingType = js.native
+  var bindingType: ɵQueryBindingType
   
-  var propName: String = js.native
+  var propName: String
 }
 object QueryBindingDef {
   

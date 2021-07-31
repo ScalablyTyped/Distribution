@@ -2,48 +2,42 @@ package typings.mdxJsUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@mdx-js/util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@mdx-js/util", "EMPTY_NEWLINE")
   @js.native
   val EMPTY_NEWLINE: String = js.native
   
-  @JSImport("@mdx-js/util", "getCommentContents")
-  @js.native
-  def getCommentContents(text: String): String = js.native
+  @scala.inline
+  def getCommentContents(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCommentContents")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@mdx-js/util", "isComment")
-  @js.native
-  def isComment(text: String): Boolean = js.native
+  @scala.inline
+  def isComment(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isComment")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "isExport")
-  @js.native
-  def isExport(text: String): Boolean = js.native
+  @scala.inline
+  def isExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "isExportDefault")
-  @js.native
-  def isExportDefault(text: String): Boolean = js.native
+  @scala.inline
+  def isExportDefault(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExportDefault")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "isImport")
-  @js.native
-  def isImport(text: String): Boolean = js.native
+  @scala.inline
+  def isImport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "isImportOrExport")
-  @js.native
-  def isImportOrExport(text: String): Boolean = js.native
+  @scala.inline
+  def isImportOrExport(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImportOrExport")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "paramCase")
-  @js.native
-  def paramCase(text: String): String = js.native
+  @scala.inline
+  def paramCase(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("paramCase")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@mdx-js/util", "startsWithCapitalLetter")
-  @js.native
-  def startsWithCapitalLetter(text: String): Boolean = js.native
+  @scala.inline
+  def startsWithCapitalLetter(text: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("startsWithCapitalLetter")(text.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@mdx-js/util", "toTemplateLiteral")
-  @js.native
-  def toTemplateLiteral(text: String): String = js.native
+  @scala.inline
+  def toTemplateLiteral(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toTemplateLiteral")(text.asInstanceOf[js.Any]).asInstanceOf[String]
 }

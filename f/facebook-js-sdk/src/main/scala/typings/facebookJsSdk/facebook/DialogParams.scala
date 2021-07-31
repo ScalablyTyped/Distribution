@@ -6,7 +6,6 @@ import typings.facebookJsSdk.facebookJsSdkStrings.page
 import typings.facebookJsSdk.facebookJsSdkStrings.popup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////////
@@ -14,14 +13,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //  DIALOGS
 //
 ////////////////////////
-@js.native
 trait DialogParams extends StObject {
   
-  var app_id: js.UndefOr[String] = js.native
+  var app_id: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[page | iframe | async | popup] = js.native
+  var display: js.UndefOr[page | iframe | async | popup] = js.undefined
   
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
 }
 object DialogParams {
   

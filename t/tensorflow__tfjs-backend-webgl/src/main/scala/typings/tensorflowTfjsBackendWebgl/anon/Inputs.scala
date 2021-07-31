@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.FusedBatchNormAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.FusedBatchNormInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inputs extends StObject {
   
-  var attrs: FusedBatchNormAttrs = js.native
+  var attrs: FusedBatchNormAttrs
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: FusedBatchNormInputs = js.native
+  var inputs: FusedBatchNormInputs
 }
 object Inputs {
   

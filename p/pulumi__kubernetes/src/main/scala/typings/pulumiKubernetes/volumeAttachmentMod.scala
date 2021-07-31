@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object volumeAttachmentMod {
@@ -28,7 +27,7 @@ object volumeAttachmentMod {
       */
     def this(name: String) = this()
     def this(name: String, args: VolumeAttachmentArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: VolumeAttachmentArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -59,6 +58,10 @@ object volumeAttachmentMod {
   /* static members */
   object VolumeAttachment {
     
+    @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachment", "VolumeAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VolumeAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,44 +70,40 @@ object volumeAttachmentMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VolumeAttachment = js.native
-    @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachment", "VolumeAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): VolumeAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): VolumeAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VolumeAttachment]
     
     /**
       * Returns true if the given object is an instance of VolumeAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1alpha1/volumeAttachment", "VolumeAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachment.VolumeAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachment.VolumeAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1alpha1/volumeAttachment.VolumeAttachment */ Boolean]
   }
   
-  @js.native
   trait VolumeAttachmentArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1alpha1]] = js.native
+    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1alpha1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.VolumeAttachment]] = js.undefined
     
     /**
       * Standard object metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Specification of the desired attach/detach volume behavior. Populated by the Kubernetes system.
       */
-    val spec: Input[typings.pulumiKubernetes.inputMod.storage.v1alpha1.VolumeAttachmentSpec] = js.native
+    val spec: Input[typings.pulumiKubernetes.inputMod.storage.v1alpha1.VolumeAttachmentSpec]
   }
   object VolumeAttachmentArgs {
     

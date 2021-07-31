@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideProperties extends StObject {
   
   /**
@@ -13,63 +11,63 @@ trait SlideProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#basemap)
     */
-  var basemap: js.UndefOr[BasemapProperties | String] = js.native
+  var basemap: js.UndefOr[BasemapProperties | String] = js.undefined
   
   /**
     * The description of the slide.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#description)
     */
-  var description: js.UndefOr[SlideDescriptionProperties | String] = js.native
+  var description: js.UndefOr[SlideDescriptionProperties | String] = js.undefined
   
   /**
     * Represents settings that affect the environment in which the WebScene is displayed (such as lighting).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#environment)
     */
-  var environment: js.UndefOr[SlideEnvironmentProperties] = js.native
+  var environment: js.UndefOr[SlideEnvironmentProperties] = js.undefined
   
   /**
     * Ground properties for this slide.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#ground)
     */
-  var ground: js.UndefOr[SlideGroundProperties] = js.native
+  var ground: js.UndefOr[SlideGroundProperties] = js.undefined
   
   /**
     * The unique id of a slide within the [slides property](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Presentation.html#slides) of a [Presentation](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Presentation.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A data URI encoded thumbnail.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#thumbnail)
     */
-  var thumbnail: js.UndefOr[SlideThumbnailProperties | String] = js.native
+  var thumbnail: js.UndefOr[SlideThumbnailProperties | String] = js.undefined
   
   /**
     * The title of the slide.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#title)
     */
-  var title: js.UndefOr[SlideTitleProperties | String] = js.native
+  var title: js.UndefOr[SlideTitleProperties | String] = js.undefined
   
   /**
     * The viewpoint of the slide.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#viewpoint)
     */
-  var viewpoint: js.UndefOr[ViewpointProperties] = js.native
+  var viewpoint: js.UndefOr[ViewpointProperties] = js.undefined
   
   /**
     * The visible layers of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#visibleLayers)
     */
-  var visibleLayers: js.UndefOr[CollectionProperties[SlideVisibleLayersProperties]] = js.native
+  var visibleLayers: js.UndefOr[CollectionProperties[SlideVisibleLayersProperties]] = js.undefined
 }
 object SlideProperties {
   

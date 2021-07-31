@@ -12,7 +12,7 @@ Subscribe to changes in any part of redux state
 | Keywords           | redux, store, state, subscribe, subscriber, watch, watcher, observe, observer, react |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 146512 |
+| # downloads        | 189103 |
 | # stars            | 1 |
 
 ## Links

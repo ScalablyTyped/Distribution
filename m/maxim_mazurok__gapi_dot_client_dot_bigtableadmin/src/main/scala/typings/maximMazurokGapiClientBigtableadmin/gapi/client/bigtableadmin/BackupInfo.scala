@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupInfo extends StObject {
   
   /** Output only. Name of the backup. */
-  var backup: js.UndefOr[String] = js.native
+  var backup: js.UndefOr[String] = js.undefined
   
   /** Output only. This time that the backup was finished. Row data in the backup will be no newer than this timestamp. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Name of the table the backup was created from. */
-  var sourceTable: js.UndefOr[String] = js.native
+  var sourceTable: js.UndefOr[String] = js.undefined
   
   /** Output only. The time that the backup was started. Row data in the backup will be no older than this timestamp. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object BackupInfo {
   

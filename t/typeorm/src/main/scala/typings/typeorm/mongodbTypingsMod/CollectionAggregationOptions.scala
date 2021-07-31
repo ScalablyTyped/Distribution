@@ -3,38 +3,36 @@ package typings.typeorm.mongodbTypingsMod
 import typings.typeorm.anon.BatchSizeNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionAggregationOptions extends StObject {
   
   /**
     * allowDiskUse lets the server know if it can use disk to store temporary results for the aggregation (requires mongodb 2.6 >).
     */
-  var allowDiskUse: js.UndefOr[Boolean] = js.native
+  var allowDiskUse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow driver to bypass schema validation in MongoDB 3.2 or higher.
     */
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return the query as cursor, on 2.6 > it returns as a real cursor on pre 2.6 it returns as an emulated cursor.
     */
-  var cursor: js.UndefOr[BatchSizeNumber] = js.native
+  var cursor: js.UndefOr[BatchSizeNumber] = js.undefined
   
   /**
     * Explain returns the aggregation execution plan (requires mongodb 2.6 >).
     */
-  var explain: js.UndefOr[Boolean] = js.native
+  var explain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * maxTimeMS specifies a cumulative time limit in milliseconds for processing operations on the cursor. MongoDB interrupts the operation at the earliest following interrupt point.
     */
-  var maxTimeMS: js.UndefOr[Boolean] = js.native
+  var maxTimeMS: js.UndefOr[Boolean] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
 }
 object CollectionAggregationOptions {
   

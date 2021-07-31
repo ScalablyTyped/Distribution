@@ -2,56 +2,54 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BehaviorModel extends StObject {
   
   /**
     * Is the behavior abstract (i.e. can not be associated with any work item type)
     */
-  var `abstract`: Boolean = js.native
+  var `abstract`: Boolean
   
   /**
     * Color
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * Description
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Behavior Id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Parent behavior reference
     */
-  var inherits: WorkItemBehaviorReference = js.native
+  var inherits: WorkItemBehaviorReference
   
   /**
     * Behavior Name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Is the behavior overrides a behavior from system process
     */
-  var overridden: Boolean = js.native
+  var overridden: Boolean
   
   /**
     * Rank
     */
-  var rank: Double = js.native
+  var rank: Double
   
   /**
     * Url of the behavior
     */
-  var url: String = js.native
+  var url: String
 }
 object BehaviorModel {
   

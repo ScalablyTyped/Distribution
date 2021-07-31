@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddApplicationReferenceDataSourceResponse extends StObject {
   
   /**
     * The application Amazon Resource Name (ARN).
     */
-  var ApplicationARN: js.UndefOr[ResourceARN] = js.native
+  var ApplicationARN: js.UndefOr[ResourceARN] = js.undefined
   
   /**
     * The updated application version ID. Kinesis Data Analytics increments this ID when the application is updated.
     */
-  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.native
+  var ApplicationVersionId: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationVersionId] = js.undefined
   
   /**
     * Describes reference data sources configured for the application. 
     */
-  var ReferenceDataSourceDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSourceDescriptions] = js.native
+  var ReferenceDataSourceDescriptions: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ReferenceDataSourceDescriptions] = js.undefined
 }
 object AddApplicationReferenceDataSourceResponse {
   

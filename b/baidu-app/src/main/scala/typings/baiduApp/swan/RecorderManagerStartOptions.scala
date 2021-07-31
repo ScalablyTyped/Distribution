@@ -2,10 +2,8 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderManagerStartOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RecorderManagerStartOptions extends StObject {
     * 如果传入了合法的 duration
     * 在到达指定的 duration 后会自动停止录音，最大值 600000（10 分钟）,默认值 60000（1 分钟）
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * 编码码率
@@ -29,20 +27,20 @@ trait RecorderManagerStartOptions extends StObject {
     * + 44100 64000 ~ 320000
     * + 48000 64000 ~ 320000
     */
-  var encodeBitRate: Double = js.native
+  var encodeBitRate: Double
   
   /** 音频格式，有效值 aac/mp3 */
-  var format: String = js.native
+  var format: String
   
   /**
     * 否 录音通道数，有效值 1/2
     */
-  var numberOfChannels: js.UndefOr[Double] = js.native
+  var numberOfChannels: js.UndefOr[Double] = js.undefined
   
   /**
     * 采样率，有效值 8000/16000/44100
     */
-  var sampleRate: js.UndefOr[Double] = js.native
+  var sampleRate: js.UndefOr[Double] = js.undefined
 }
 object RecorderManagerStartOptions {
   

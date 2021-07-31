@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsAlertpoliciesPatch extends StandardParameters {
+trait ParamsResourceProjectsAlertpoliciesPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required if the policy exists. The resource name for this policy. The
@@ -24,12 +24,12 @@ trait ParamsResourceProjectsAlertpoliciesPatch extends StandardParameters {
     * is created. When calling the alertPolicies.create method, do not include
     * the name field in the alerting policy passed as part of the request.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAlertPolicy] = js.native
+  var requestBody: js.UndefOr[SchemaAlertPolicy] = js.undefined
   
   /**
     * Optional. A list of alerting policy field names. If this field is not
@@ -50,7 +50,7 @@ trait ParamsResourceProjectsAlertpoliciesPatch extends StandardParameters {
     * supplied condition omits the name field, then a new [CONDITION_ID] is
     * created.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsAlertpoliciesPatch {
   

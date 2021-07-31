@@ -5,7 +5,6 @@ import typings.std.Iterable
 import typings.std.Iterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -38,7 +37,7 @@ object listMod {
     def deleteNode(): Boolean = js.native
     def deleteNode(node: LinkedListNode[T]): Boolean = js.native
     
-    def drain(): Generator[js.UndefOr[T], Unit, _] = js.native
+    def drain(): Generator[js.UndefOr[T], Unit, js.Any] = js.native
     
     def find(value: T): js.UndefOr[LinkedListNode[T]] = js.native
     
@@ -65,11 +64,11 @@ object listMod {
     def insertNodeBefore(node: LinkedListNode[T], newNode: LinkedListNode[T]): Unit = js.native
     
     @JSName(js.Symbol.iterator)
-    var iterator: js.Function0[Iterator[T, _, js.UndefOr[scala.Nothing]]] = js.native
+    var iterator: js.Function0[Iterator[T, js.Any, Unit]] = js.native
     
     def last: js.UndefOr[LinkedListNode[T]] = js.native
     
-    def nodes(): Generator[LinkedListNode[T], Unit, _] = js.native
+    def nodes(): Generator[LinkedListNode[T], Unit, js.Any] = js.native
     
     def pop(): js.UndefOr[T] = js.native
     
@@ -91,7 +90,7 @@ object listMod {
     
     def unshiftNode(newNode: LinkedListNode[T]): Unit = js.native
     
-    def values(): Generator[js.UndefOr[T], Unit, _] = js.native
+    def values(): Generator[js.UndefOr[T], Unit, js.Any] = js.native
   }
   
   @JSImport("prex/out/lib/list", "LinkedListNode")

@@ -6,7 +6,6 @@ import typings.simpleUrlCache.mod.privateN.StorageConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,29 +24,54 @@ object mod {
   @JSImport("simple-url-cache", "FileStorage")
   @js.native
   class FileStorage protected ()
-    extends CacheCategory
+    extends StObject
+       with CacheCategory
        with CacheStorage {
     def this(_url: String, _storageConfig: FileStorageConfig, _regexRules: CacheRules) = this()
+    
+    /* CompleteClass */
+    /* private */ override def getCacheCategory(): String = js.native
+    
+    /* CompleteClass */
+    override def getCategory(): String = js.native
+    
+    /* CompleteClass */
+    override def getCurrentUrl(): String = js.native
+    
+    /* CompleteClass */
+    /* private */ override def getRegexTest(u: RegexRule): Boolean = js.native
   }
   
   @JSImport("simple-url-cache", "RedisStorage")
   @js.native
   class RedisStorage protected ()
-    extends CacheCategory
+    extends StObject
+       with CacheCategory
        with CacheStorage {
     def this(_url: String, _storageConfig: RedisStorageConfig, _regexRules: CacheRules) = this()
+    
+    /* CompleteClass */
+    /* private */ override def getCacheCategory(): String = js.native
+    
+    /* CompleteClass */
+    override def getCategory(): String = js.native
+    
+    /* CompleteClass */
+    override def getCurrentUrl(): String = js.native
+    
+    /* CompleteClass */
+    /* private */ override def getRegexTest(u: RegexRule): Boolean = js.native
   }
   
-  @js.native
   trait CacheRules extends StObject {
     
-    var default: String = js.native
+    var default: String
     
-    var cacheAlways: js.Array[RegexRule] = js.native
+    var cacheAlways: js.Array[RegexRule]
     
-    var cacheMaxAge: js.Array[MaxAgeRegexRule] = js.native
+    var cacheMaxAge: js.Array[MaxAgeRegexRule]
     
-    var cacheNever: js.Array[RegexRule] = js.native
+    var cacheNever: js.Array[RegexRule]
   }
   object CacheRules {
     
@@ -88,10 +112,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait FileStorageConfig extends StorageConfig {
+  trait FileStorageConfig
+    extends StObject
+       with StorageConfig {
     
-    var dir: String = js.native
+    var dir: String
   }
   object FileStorageConfig {
     
@@ -110,10 +135,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MaxAgeRegexRule extends RegexRule {
+  trait MaxAgeRegexRule
+    extends StObject
+       with RegexRule {
     
-    var maxAge: Double = js.native
+    var maxAge: Double
   }
   object MaxAgeRegexRule {
     
@@ -131,22 +157,23 @@ object mod {
     }
   }
   
-  @js.native
-  trait RedisStorageConfig extends StorageConfig {
+  trait RedisStorageConfig
+    extends StObject
+       with StorageConfig {
     
-    var db: js.UndefOr[String] = js.native
+    var db: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var socket_keepalive: js.UndefOr[Boolean] = js.native
+    var socket_keepalive: js.UndefOr[Boolean] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object RedisStorageConfig {
     
@@ -198,10 +225,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RegexRule extends StObject {
     
-    var regex: RegExp = js.native
+    var regex: RegExp
   }
   object RegexRule {
     
@@ -221,16 +247,15 @@ object mod {
   
   object privateN {
     
-    @js.native
     trait CacheCategory extends StObject {
       
-      /* private */ def getCacheCategory(): String = js.native
+      /* private */ def getCacheCategory(): String
       
-      def getCategory(): String = js.native
+      def getCategory(): String
       
-      def getCurrentUrl(): String = js.native
+      def getCurrentUrl(): String
       
-      /* private */ def getRegexTest(u: RegexRule): Boolean = js.native
+      /* private */ def getRegexTest(u: RegexRule): Boolean
     }
     object CacheCategory {
       
@@ -277,10 +302,9 @@ object mod {
       def removeUrl(): js.Promise[Boolean] = js.native
     }
     
-    @js.native
     trait StorageConfig extends StObject {
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object StorageConfig {
       

@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectType extends Type {
+trait ObjectType
+  extends StObject
+     with Type {
   
-  var objectFlags: ObjectFlags = js.native
+  var objectFlags: ObjectFlags
 }
 object ObjectType {
   

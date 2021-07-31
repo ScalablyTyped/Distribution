@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.PerformSearchRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.PerformSearchResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypePerformSearchResponse extends StObject {
   
-  var paramsType: js.Array[PerformSearchRequest] = js.native
+  var paramsType: js.Array[PerformSearchRequest]
   
-  var returnType: PerformSearchResponse = js.native
+  var returnType: PerformSearchResponse
 }
 object ReturnTypePerformSearchResponse {
   

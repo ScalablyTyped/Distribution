@@ -2,7 +2,6 @@ package typings.cordova
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,7 +10,7 @@ trait Cordova extends StObject {
   /** Defines custom logic as a Cordova module. Other modules can later access it using module name provided. */
   def define(
     moduleName: String,
-    factory: js.Function3[/* require */ js.Any, /* exports */ js.Any, /* module */ js.Any, _]
+    factory: js.Function3[/* require */ js.Any, /* exports */ js.Any, /* module */ js.Any, js.Any]
   ): Unit = js.native
   
   /** Invokes native functionality by specifying corresponding service name, action and optional parameters.
@@ -22,17 +21,17 @@ trait Cordova extends StObject {
     * @param args An array of arguments to pass into the native environment.
     */
   def exec(
-    success: js.Function1[/* data */ js.Any, _],
-    fail: js.Function1[/* err */ js.Any, _],
+    success: js.Function1[/* data */ js.Any, js.Any],
+    fail: js.Function1[/* err */ js.Any, js.Any],
     service: String,
     action: String
   ): Unit = js.native
   def exec(
-    success: js.Function1[/* data */ js.Any, _],
-    fail: js.Function1[/* err */ js.Any, _],
+    success: js.Function1[/* data */ js.Any, js.Any],
+    fail: js.Function1[/* err */ js.Any, js.Any],
     service: String,
     action: String,
-    args: js.Array[_]
+    args: js.Array[js.Any]
   ): Unit = js.native
   
   /** Gets the operating system name. */

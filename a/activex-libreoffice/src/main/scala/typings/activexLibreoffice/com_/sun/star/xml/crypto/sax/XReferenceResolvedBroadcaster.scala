@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate reference resolved listener.
   */
-@js.native
-trait XReferenceResolvedBroadcaster extends XInterface {
+trait XReferenceResolvedBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds a new reference resolved listener for a element collector.
@@ -22,7 +22,7 @@ trait XReferenceResolvedBroadcaster extends XInterface {
     * @param referenceId the id of the element collector for which the new listener is added
     * @param listener the listener to be added
     */
-  def addReferenceResolvedListener(referenceId: Double, listener: XReferenceResolvedListener): Unit = js.native
+  def addReferenceResolvedListener(referenceId: Double, listener: XReferenceResolvedListener): Unit
   
   /**
     * Removes a listener from a element collector.
@@ -31,7 +31,7 @@ trait XReferenceResolvedBroadcaster extends XInterface {
     * @param referenceId the id of the element collector from which the listener is removed
     * @param listener the listener to be removed
     */
-  def removeReferenceResolvedListener(referenceId: Double, listener: XReferenceResolvedListener): Unit = js.native
+  def removeReferenceResolvedListener(referenceId: Double, listener: XReferenceResolvedListener): Unit
 }
 object XReferenceResolvedBroadcaster {
   

@@ -2,25 +2,23 @@ package typings.ejWebAll.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Condition extends StObject {
   
-  var condition: String = js.native
+  var condition: String
   
-  var field: String = js.native
+  var field: String
   
-  var ignoreCase: Boolean = js.native
+  var ignoreCase: Boolean
   
-  var isComplex: Boolean = js.native
+  var isComplex: Boolean
   
-  var operator: String = js.native
+  var operator: String
   
-  var predicates: js.Any = js.native
+  var predicates: js.Any
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Condition {
   

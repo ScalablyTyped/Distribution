@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientVerticalGrid.BatchEditRecordValidating event.
   */
-@js.native
-trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientVerticalGridBatchEditRecordValidatingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides validation information on the record currently being validated.
     */
-  var validationInfo: js.Any = js.native
+  var validationInfo: js.Any
   
   /**
     * Gets the processed record's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientVerticalGridBatchEditRecordValidatingEventArgs {
   

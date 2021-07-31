@@ -2,29 +2,27 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnBlur extends StObject {
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onClear(): Unit = js.native
+  def onClear(): Unit
   
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
-  def onSubmit(): Unit = js.native
+  def onSubmit(): Unit
   
-  var placeholder: String = js.native
+  var placeholder: String
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var showCancelButton: Boolean = js.native
+  var showCancelButton: Boolean
 }
 object OnBlur {
   

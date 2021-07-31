@@ -2,12 +2,12 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SnippetBuilder[Snippet]
-  extends AdWordsBuilder[Snippet]
+  extends StObject
+     with AdWordsBuilder[Snippet]
      with hasMobilePreferredBuilder[SnippetBuilder[Snippet]]
      with hasStartAndEndDateBuilder[SnippetBuilder[Snippet]]
      with hasSchedulesBuilder[SnippetBuilder[Snippet]] {

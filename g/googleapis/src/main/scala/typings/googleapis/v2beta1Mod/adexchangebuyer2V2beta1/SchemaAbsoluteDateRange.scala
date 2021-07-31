@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * date range is run at a later date more than 30 days after start_date, it
   * will fail.
   */
-@js.native
 trait SchemaAbsoluteDateRange extends StObject {
   
   /**
     * The end date of the range (inclusive). Must be within the 30 days leading
     * up to current date, and must be equal to or after start_date.
     */
-  var endDate: js.UndefOr[SchemaDate] = js.native
+  var endDate: js.UndefOr[SchemaDate] = js.undefined
   
   /**
     * The start date of the range (inclusive). Must be within the 30 days
     * leading up to current date, and must be equal to or before end_date.
     */
-  var startDate: js.UndefOr[SchemaDate] = js.native
+  var startDate: js.UndefOr[SchemaDate] = js.undefined
 }
 object SchemaAbsoluteDateRange {
   

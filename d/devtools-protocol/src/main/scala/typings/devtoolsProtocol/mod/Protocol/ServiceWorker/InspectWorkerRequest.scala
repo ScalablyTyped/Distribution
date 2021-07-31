@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectWorkerRequest extends StObject {
   
-  var versionId: String = js.native
+  var versionId: String
 }
 object InspectWorkerRequest {
   

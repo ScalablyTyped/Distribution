@@ -8,7 +8,6 @@ import typings.grommet.maskedInputMod.MaskedInputType
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateInputMod {
@@ -17,30 +16,29 @@ object dateInputMod {
   @js.native
   val DateInput: FC[DateInputProps] = js.native
   
-  @js.native
   trait DateInputProps extends StObject {
     
-    var buttonProps: js.UndefOr[ButtonType] = js.native
+    var buttonProps: js.UndefOr[ButtonType] = js.undefined
     
-    var calendarProps: js.UndefOr[CalendarType] = js.native
+    var calendarProps: js.UndefOr[CalendarType] = js.undefined
     
-    var defaultValue: js.UndefOr[String | js.Array[String]] = js.native
+    var defaultValue: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var dropProps: js.UndefOr[DropType] = js.native
+    var dropProps: js.UndefOr[DropType] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var inputProps: js.UndefOr[MaskedInputType] = js.native
+    var inputProps: js.UndefOr[MaskedInputType] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ Target, Unit]] = js.undefined
     
-    var value: js.UndefOr[String | js.Array[String]] = js.native
+    var value: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object DateInputProps {
     

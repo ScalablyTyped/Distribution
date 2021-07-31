@@ -2,23 +2,21 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInappproductsListResponse extends StObject {
   
-  var inappproduct: js.UndefOr[js.Array[SchemaInAppProduct]] = js.native
+  var inappproduct: js.UndefOr[js.Array[SchemaInAppProduct]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidpublisher#inappproductsListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
 }
 object SchemaInappproductsListResponse {
   

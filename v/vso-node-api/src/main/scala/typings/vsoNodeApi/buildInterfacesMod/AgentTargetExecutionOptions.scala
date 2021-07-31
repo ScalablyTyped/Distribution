@@ -2,16 +2,14 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentTargetExecutionOptions extends StObject {
   
   /**
     * Indicates the type of execution options.
     */
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object AgentTargetExecutionOptions {
   

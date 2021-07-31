@@ -2,7 +2,6 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ControlChannelTriggerResetReason extends StObject
 object ControlChannelTriggerResetReason extends StObject {
   
   @js.native
-  sealed trait fastUserSwitched extends ControlChannelTriggerResetReason
+  sealed trait fastUserSwitched
+    extends StObject
+       with ControlChannelTriggerResetReason
   
   @js.native
-  sealed trait lowPowerExit extends ControlChannelTriggerResetReason
+  sealed trait lowPowerExit
+    extends StObject
+       with ControlChannelTriggerResetReason
 }

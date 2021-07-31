@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomerUserStats extends StObject {
   
   /** Date for which session stats were calculated. Stats calculated on the next day close to midnight are returned. */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /** The count of unique active users in the past one day */
-  var oneDayActiveUsersCount: js.UndefOr[String] = js.native
+  var oneDayActiveUsersCount: js.UndefOr[String] = js.undefined
   
   /** The count of unique active users in the past seven days */
-  var sevenDaysActiveUsersCount: js.UndefOr[String] = js.native
+  var sevenDaysActiveUsersCount: js.UndefOr[String] = js.undefined
   
   /** The count of unique active users in the past thirty days */
-  var thirtyDaysActiveUsersCount: js.UndefOr[String] = js.native
+  var thirtyDaysActiveUsersCount: js.UndefOr[String] = js.undefined
 }
 object CustomerUserStats {
   

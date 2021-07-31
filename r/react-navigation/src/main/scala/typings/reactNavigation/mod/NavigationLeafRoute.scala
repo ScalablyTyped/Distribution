@@ -2,49 +2,49 @@ package typings.reactNavigation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigationLeafRoute[Params] extends StObject {
+trait NavigationLeafRoute[Params]
+  extends StObject
+     with NavigationRoute[Params] {
   
   /**
     * Index that represents the depth of the stack
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Flag that indicates the transition state of the route
     */
-  var isTransitioning: Boolean = js.native
+  var isTransitioning: Boolean
   
   /**
     * React's key used by some navigators. No need to specify these manually,
     * they will be defined by the router.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * Params passed to this route when navigating to it,
     * e.g. `{ car_id: 123 }` in a route that displays a car.
     */
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
   
   /**
     * Path is an advanced feature used for deep linking and on the web.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * For example 'Home'.
     * This is used as a key in a route config when creating a navigator.
     */
-  var routeName: String = js.native
+  var routeName: String
   
   /**
     * Array containing the navigator's routes
     */
-  var routes: js.Array[NavigationRoute[NavigationParams]] = js.native
+  var routes: js.Array[NavigationRoute[NavigationParams]]
 }
 object NavigationLeafRoute {
   
@@ -61,7 +61,7 @@ object NavigationLeafRoute {
   }
   
   @scala.inline
-  implicit class NavigationLeafRouteMutableBuilder[Self <: NavigationLeafRoute[_], Params] (val x: Self with NavigationLeafRoute[Params]) extends AnyVal {
+  implicit class NavigationLeafRouteMutableBuilder[Self <: NavigationLeafRoute[?], Params] (val x: Self & NavigationLeafRoute[Params]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

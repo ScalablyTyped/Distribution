@@ -2,61 +2,59 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssetResponse extends StObject {
   
   /**
     * The ARN for the asset.
     */
-  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.dataexchangeMod.Arn] = js.undefined
   
   /**
     * Information about the asset, including its size.
     */
-  var AssetDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetDetails] = js.native
+  var AssetDetails: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetDetails] = js.undefined
   
   /**
     * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
     */
-  var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.native
+  var AssetType: js.UndefOr[typings.awsSdk.dataexchangeMod.AssetType] = js.undefined
   
   /**
     * The date and time that the asset was created, in ISO 8601 format.
     */
-  var CreatedAt: js.UndefOr[Timestamp] = js.native
+  var CreatedAt: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The unique identifier for the data set associated with this asset.
     */
-  var DataSetId: js.UndefOr[Id] = js.native
+  var DataSetId: js.UndefOr[Id] = js.undefined
   
   /**
     * The unique identifier for the asset.
     */
-  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.native
+  var Id: js.UndefOr[typings.awsSdk.dataexchangeMod.Id] = js.undefined
   
   /**
     * The name of the asset When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key.
     */
-  var Name: js.UndefOr[AssetName] = js.native
+  var Name: js.UndefOr[AssetName] = js.undefined
   
   /**
     * The unique identifier for the revision associated with this asset.
     */
-  var RevisionId: js.UndefOr[Id] = js.native
+  var RevisionId: js.UndefOr[Id] = js.undefined
   
   /**
     * The asset ID of the owned asset corresponding to the entitled asset being viewed. This parameter is returned when an asset owner is viewing the entitled copy of its owned asset.
     */
-  var SourceId: js.UndefOr[Id] = js.native
+  var SourceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The date and time that the asset was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: js.UndefOr[Timestamp] = js.native
+  var UpdatedAt: js.UndefOr[Timestamp] = js.undefined
 }
 object UpdateAssetResponse {
   

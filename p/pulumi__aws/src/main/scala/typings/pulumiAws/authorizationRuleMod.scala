@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorizationRuleMod {
@@ -53,6 +52,10 @@ object authorizationRuleMod {
   /* static members */
   object AuthorizationRule {
     
+    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AuthorizationRule resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -62,55 +65,49 @@ object authorizationRuleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AuthorizationRule = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AuthorizationRule = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizationRuleState): AuthorizationRule = js.native
-    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AuthorizationRuleState, opts: CustomResourceOptions): AuthorizationRule = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizationRuleState): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AuthorizationRuleState, opts: CustomResourceOptions): AuthorizationRule = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AuthorizationRule]
     
     /**
       * Returns true if the given object is an instance of AuthorizationRule.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2clientvpn/authorizationRule", "AuthorizationRule.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2clientvpn/authorizationRule.AuthorizationRule */ Boolean]
   }
   
-  @js.native
   trait AuthorizationRuleArgs extends StObject {
     
     /**
       * The ID of the group to which the authorization rule grants access. One of `accessGroupId` or `authorizeAllGroups` must be set.
       */
-    val accessGroupId: js.UndefOr[Input[String]] = js.native
+    val accessGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the authorization rule grants access to all clients. One of `accessGroupId` or `authorizeAllGroups` must be set.
       */
-    val authorizeAllGroups: js.UndefOr[Input[Boolean]] = js.native
+    val authorizeAllGroups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: Input[String] = js.native
+    val clientVpnEndpointId: Input[String]
     
     /**
       * A brief description of the authorization rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
       */
-    val targetNetworkCidr: Input[String] = js.native
+    val targetNetworkCidr: Input[String]
   }
   object AuthorizationRuleArgs {
     
@@ -149,33 +146,32 @@ object authorizationRuleMod {
     }
   }
   
-  @js.native
   trait AuthorizationRuleState extends StObject {
     
     /**
       * The ID of the group to which the authorization rule grants access. One of `accessGroupId` or `authorizeAllGroups` must be set.
       */
-    val accessGroupId: js.UndefOr[Input[String]] = js.native
+    val accessGroupId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether the authorization rule grants access to all clients. One of `accessGroupId` or `authorizeAllGroups` must be set.
       */
-    val authorizeAllGroups: js.UndefOr[Input[Boolean]] = js.native
+    val authorizeAllGroups: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ID of the Client VPN endpoint.
       */
-    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.native
+    val clientVpnEndpointId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A brief description of the authorization rule.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 address range, in CIDR notation, of the network to which the authorization rule applies.
       */
-    val targetNetworkCidr: js.UndefOr[Input[String]] = js.native
+    val targetNetworkCidr: js.UndefOr[Input[String]] = js.undefined
   }
   object AuthorizationRuleState {
     

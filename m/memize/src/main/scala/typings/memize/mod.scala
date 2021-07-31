@@ -2,7 +2,6 @@ package typings.memize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,44 +42,45 @@ object mod {
     *
     * @return {F & MemizeMemoizedFunction} Memoized function.
     */
+  @scala.inline
+  def apply[F /* <: js.Function */](fn: F): F & MemizeMemoizedFunction = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[F & MemizeMemoizedFunction]
+  @scala.inline
+  def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F & MemizeMemoizedFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[F & MemizeMemoizedFunction]
+  
   @JSImport("memize", JSImport.Namespace)
   @js.native
-  def apply[F /* <: js.Function */](fn: F): F with MemizeMemoizedFunction = js.native
-  @JSImport("memize", JSImport.Namespace)
-  @js.native
-  def apply[F /* <: js.Function */](fn: F, options: MemizeOptions): F with MemizeMemoizedFunction = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Internal cache entry.
     */
-  @js.native
   trait MemizeCacheNode extends StObject {
     
     /**
       * Function arguments for cache
       * entry.
       */
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
     /**
       * Next node.
       */
-    var next: js.UndefOr[MemizeCacheNode | Null] = js.native
+    var next: js.UndefOr[MemizeCacheNode | Null] = js.undefined
     
     /**
       * Previous node.
       */
-    var prev: js.UndefOr[MemizeCacheNode | Null] = js.native
+    var prev: js.UndefOr[MemizeCacheNode | Null] = js.undefined
     
     /**
       * Function result.
       */
-    var `val`: js.Any = js.native
+    var `val`: js.Any
   }
   object MemizeCacheNode {
     
     @scala.inline
-    def apply(args: js.Array[_], `val`: js.Any): MemizeCacheNode = {
+    def apply(args: js.Array[js.Any], `val`: js.Any): MemizeCacheNode = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
       __obj.updateDynamic("val")(`val`.asInstanceOf[js.Any])
       __obj.asInstanceOf[MemizeCacheNode]
@@ -90,7 +90,7 @@ object mod {
     implicit class MemizeCacheNodeMutableBuilder[Self <: MemizeCacheNode] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -121,13 +121,12 @@ object mod {
   /**
     * Properties of the enhanced function for controlling cache.
     */
-  @js.native
   trait MemizeMemoizedFunction extends StObject {
     
     /**
       * Clear the cache.
       */
-    def clear(): Unit = js.native
+    def clear(): Unit
   }
   object MemizeMemoizedFunction {
     
@@ -148,13 +147,12 @@ object mod {
   /**
     * Memize options object.
     */
-  @js.native
   trait MemizeOptions extends StObject {
     
     /**
       * Maximum size of the cache.
       */
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
   }
   object MemizeOptions {
     

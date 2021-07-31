@@ -3,23 +3,23 @@ package typings.typedGraphql.mod
 import typings.typedGraphql.typedGraphqlStrings.SCALAR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IntrospectionScalarType extends IntrospectionType {
+trait IntrospectionScalarType
+  extends StObject
+     with IntrospectionType {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var kind: SCALAR = js.native
+  var kind: SCALAR
   
-  var name: String = js.native
+  var name: String
 }
 object IntrospectionScalarType {
   
   @scala.inline
-  def apply(kind: SCALAR, name: String): IntrospectionScalarType = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(name: String): IntrospectionScalarType = {
+    val __obj = js.Dynamic.literal(kind = "SCALAR", name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[IntrospectionScalarType]
   }
   

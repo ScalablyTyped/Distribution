@@ -13,10 +13,13 @@ import typings.soap.wssecurityMod.IWSSecurityOptions
 import typings.soap.wssecuritycertMod.IWSSecurityCertOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("soap", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("soap", "BasicAuthSecurity")
   @js.native
@@ -40,8 +43,8 @@ object mod {
     extends typings.soap.clientMod.Client {
     def this(wsdl: typings.soap.wsdlMod.WSDL) = this()
     def this(wsdl: typings.soap.wsdlMod.WSDL, endpoint: String) = this()
-    def this(wsdl: typings.soap.wsdlMod.WSDL, endpoint: js.UndefOr[scala.Nothing], options: IOptions) = this()
     def this(wsdl: typings.soap.wsdlMod.WSDL, endpoint: String, options: IOptions) = this()
+    def this(wsdl: typings.soap.wsdlMod.WSDL, endpoint: Unit, options: IOptions) = this()
   }
   
   @JSImport("soap", "ClientSSLSecurity")
@@ -54,39 +57,39 @@ object mod {
     def this(key: Buffer, cert: Buffer) = this()
     def this(key: String, cert: String, ca: String) = this()
     def this(key: String, cert: String, ca: js.Any) = this()
-    def this(key: String, cert: String, ca: js.Array[_]) = this()
+    def this(key: String, cert: String, ca: js.Array[js.Any]) = this()
     def this(key: String, cert: String, ca: Buffer) = this()
     def this(key: String, cert: Buffer, ca: String) = this()
     def this(key: String, cert: Buffer, ca: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.Array[_]) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[js.Any]) = this()
     def this(key: String, cert: Buffer, ca: Buffer) = this()
     def this(key: Buffer, cert: String, ca: String) = this()
     def this(key: Buffer, cert: String, ca: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.Array[_]) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[js.Any]) = this()
     def this(key: Buffer, cert: String, ca: Buffer) = this()
     def this(key: Buffer, cert: Buffer, ca: String) = this()
     def this(key: Buffer, cert: Buffer, ca: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Array[_]) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any]) = this()
     def this(key: Buffer, cert: Buffer, ca: Buffer) = this()
-    def this(key: String, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
     def this(key: String, cert: String, ca: String, defaults: js.Any) = this()
     def this(key: String, cert: String, ca: js.Any, defaults: js.Any) = this()
-    def this(key: String, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
+    def this(key: String, cert: String, ca: Unit, defaults: js.Any) = this()
     def this(key: String, cert: String, ca: Buffer, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
     def this(key: String, cert: Buffer, ca: String, defaults: js.Any) = this()
     def this(key: String, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-    def this(key: String, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
+    def this(key: String, cert: Buffer, ca: Unit, defaults: js.Any) = this()
     def this(key: String, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
     def this(key: Buffer, cert: String, ca: String, defaults: js.Any) = this()
     def this(key: Buffer, cert: String, ca: js.Any, defaults: js.Any) = this()
-    def this(key: Buffer, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
+    def this(key: Buffer, cert: String, ca: Unit, defaults: js.Any) = this()
     def this(key: Buffer, cert: String, ca: Buffer, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
     def this(key: Buffer, cert: Buffer, ca: String, defaults: js.Any) = this()
     def this(key: Buffer, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-    def this(key: Buffer, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
+    def this(key: Buffer, cert: Buffer, ca: Unit, defaults: js.Any) = this()
     def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
   }
   
@@ -152,51 +155,39 @@ object mod {
     def this(privatePEM: js.Any, publicP12PEM: js.Any, password: js.Any, options: IWSSecurityCertOptions) = this()
   }
   
-  @JSImport("soap", "createClient")
-  @js.native
-  def createClient(url: String, callback: CreateClientCallback): Unit = js.native
-  @JSImport("soap", "createClient")
-  @js.native
-  def createClient(url: String, callback: CreateClientCallback, endpoint: String): Unit = js.native
-  @JSImport("soap", "createClient")
-  @js.native
-  def createClient(url: String, options: IOptions, callback: CreateClientCallback): Unit = js.native
-  @JSImport("soap", "createClient")
-  @js.native
-  def createClient(url: String, options: IOptions, callback: CreateClientCallback, endpoint: String): Unit = js.native
+  @scala.inline
+  def createClient(url: String, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createClient(url: String, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createClient(url: String, options: IOptions, callback: CreateClientCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createClient(url: String, options: IOptions, callback: CreateClientCallback, endpoint: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("soap", "createClientAsync")
-  @js.native
-  def createClientAsync(url: String): js.Promise[typings.soap.clientMod.Client] = js.native
-  @JSImport("soap", "createClientAsync")
-  @js.native
-  def createClientAsync(url: String, options: js.UndefOr[scala.Nothing], endpoint: String): js.Promise[typings.soap.clientMod.Client] = js.native
-  @JSImport("soap", "createClientAsync")
-  @js.native
-  def createClientAsync(url: String, options: IOptions): js.Promise[typings.soap.clientMod.Client] = js.native
-  @JSImport("soap", "createClientAsync")
-  @js.native
-  def createClientAsync(url: String, options: IOptions, endpoint: String): js.Promise[typings.soap.clientMod.Client] = js.native
+  @scala.inline
+  def createClientAsync(url: String): js.Promise[typings.soap.clientMod.Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  @scala.inline
+  def createClientAsync(url: String, options: Unit, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  @scala.inline
+  def createClientAsync(url: String, options: IOptions): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
+  @scala.inline
+  def createClientAsync(url: String, options: IOptions, endpoint: String): js.Promise[typings.soap.clientMod.Client] = (^.asInstanceOf[js.Dynamic].applyDynamic("createClientAsync")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.soap.clientMod.Client]]
   
-  @JSImport("soap", "listen")
-  @js.native
-  def listen(server: ServerType, options: IServerOptions): typings.soap.serverMod.Server = js.native
-  @JSImport("soap", "listen")
-  @js.native
-  def listen(server: ServerType, path: String, services: IServices, wsdl: String): typings.soap.serverMod.Server = js.native
-  @JSImport("soap", "listen")
-  @js.native
+  @scala.inline
+  def listen(server: ServerType, options: IServerOptions): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  @scala.inline
+  def listen(server: ServerType, path: String, services: IServices, wsdl: String): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
+  @scala.inline
   def listen(
     server: ServerType,
     path: String,
     services: IServices,
     wsdl: String,
     callback: js.Function2[/* err */ js.Any, /* res */ js.Any, Unit]
-  ): typings.soap.serverMod.Server = js.native
+  ): typings.soap.serverMod.Server = (^.asInstanceOf[js.Dynamic].applyDynamic("listen")(server.asInstanceOf[js.Any], path.asInstanceOf[js.Any], services.asInstanceOf[js.Any], wsdl.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.soap.serverMod.Server]
   
-  @JSImport("soap", "passwordDigest")
-  @js.native
-  def passwordDigest(nonce: String, created: String, password: String): String = js.native
+  @scala.inline
+  def passwordDigest(nonce: String, created: String, password: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("passwordDigest")(nonce.asInstanceOf[js.Any], created.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object security {
     
@@ -279,39 +270,39 @@ object mod {
       def this(key: Buffer, cert: Buffer) = this()
       def this(key: String, cert: String, ca: String) = this()
       def this(key: String, cert: String, ca: js.Any) = this()
-      def this(key: String, cert: String, ca: js.Array[_]) = this()
+      def this(key: String, cert: String, ca: js.Array[js.Any]) = this()
       def this(key: String, cert: String, ca: Buffer) = this()
       def this(key: String, cert: Buffer, ca: String) = this()
       def this(key: String, cert: Buffer, ca: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.Array[_]) = this()
+      def this(key: String, cert: Buffer, ca: js.Array[js.Any]) = this()
       def this(key: String, cert: Buffer, ca: Buffer) = this()
       def this(key: Buffer, cert: String, ca: String) = this()
       def this(key: Buffer, cert: String, ca: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.Array[_]) = this()
+      def this(key: Buffer, cert: String, ca: js.Array[js.Any]) = this()
       def this(key: Buffer, cert: String, ca: Buffer) = this()
       def this(key: Buffer, cert: Buffer, ca: String) = this()
       def this(key: Buffer, cert: Buffer, ca: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Array[_]) = this()
+      def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any]) = this()
       def this(key: Buffer, cert: Buffer, ca: Buffer) = this()
-      def this(key: String, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
       def this(key: String, cert: String, ca: String, defaults: js.Any) = this()
       def this(key: String, cert: String, ca: js.Any, defaults: js.Any) = this()
-      def this(key: String, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+      def this(key: String, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
+      def this(key: String, cert: String, ca: Unit, defaults: js.Any) = this()
       def this(key: String, cert: String, ca: Buffer, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
       def this(key: String, cert: Buffer, ca: String, defaults: js.Any) = this()
       def this(key: String, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-      def this(key: String, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+      def this(key: String, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
+      def this(key: String, cert: Buffer, ca: Unit, defaults: js.Any) = this()
       def this(key: String, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
       def this(key: Buffer, cert: String, ca: String, defaults: js.Any) = this()
       def this(key: Buffer, cert: String, ca: js.Any, defaults: js.Any) = this()
-      def this(key: Buffer, cert: String, ca: js.Array[_], defaults: js.Any) = this()
+      def this(key: Buffer, cert: String, ca: js.Array[js.Any], defaults: js.Any) = this()
+      def this(key: Buffer, cert: String, ca: Unit, defaults: js.Any) = this()
       def this(key: Buffer, cert: String, ca: Buffer, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.UndefOr[scala.Nothing], defaults: js.Any) = this()
       def this(key: Buffer, cert: Buffer, ca: String, defaults: js.Any) = this()
       def this(key: Buffer, cert: Buffer, ca: js.Any, defaults: js.Any) = this()
-      def this(key: Buffer, cert: Buffer, ca: js.Array[_], defaults: js.Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: js.Array[js.Any], defaults: js.Any) = this()
+      def this(key: Buffer, cert: Buffer, ca: Unit, defaults: js.Any) = this()
       def this(key: Buffer, cert: Buffer, ca: Buffer, defaults: js.Any) = this()
     }
     

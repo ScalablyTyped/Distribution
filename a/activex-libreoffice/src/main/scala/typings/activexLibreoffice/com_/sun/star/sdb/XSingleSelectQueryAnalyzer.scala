@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The interface can be used for analyzing single SELECT statements without knowing the structure of the used query.
   */
-@js.native
-trait XSingleSelectQueryAnalyzer extends XInterface {
+trait XSingleSelectQueryAnalyzer
+  extends StObject
+     with XInterface {
   
   /**
     * returns the used filter.
@@ -24,7 +24,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
     * @returns the filter
     */
-  val Filter: String = js.native
+  val Filter: String
   
   /**
     * returns the currently used GROUP BY.
@@ -32,7 +32,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The group criteria returned is part of the GROUP BY clause of the select command, but it does not contain the GROUP BY keyword .
     * @returns the group
     */
-  val Group: String = js.native
+  val Group: String
   
   /**
     * returns the currently used group.
@@ -40,7 +40,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The columns returned form the GROUP BY clause.
     * @returns a collection of com::sun::star::sdb::GroupColumn which form the GROUP BY.
     */
-  val GroupColumns: XIndexAccess = js.native
+  val GroupColumns: XIndexAccess
   
   /**
     * returns the used HAVING filter.
@@ -48,7 +48,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The HAVING filter criteria returned is part of the HAVING condition of the select command, but it does not contain the HAVING token.
     * @returns the filter
     */
-  val HavingClause: String = js.native
+  val HavingClause: String
   
   /**
     * returns the currently used sort order.
@@ -56,7 +56,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns the order
     */
-  val Order: String = js.native
+  val Order: String
   
   /**
     * returns the currently used sort order.
@@ -64,13 +64,13 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns a collection of {@link com.sun.star.sdb.OrderColumn} which form the ORDER BY.
     */
-  val OrderColumns: XIndexAccess = js.native
+  val OrderColumns: XIndexAccess
   
   /**
     * returns the query.
     * @returns the query
     */
-  var Query: String = js.native
+  var Query: String
   
   /**
     * returns the query previously set at the analyzer, with all application-level features being substituted by their database-level counterparts.
@@ -92,7 +92,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * @since OOo 2.0.4
     * @throws com::sun::star::sdbc::SQLException if the query represented cannot be completely substituted. A usual case for this is a recursion in the sub que
     */
-  val QueryWithSubstitution: String = js.native
+  val QueryWithSubstitution: String
   
   /**
     * returns the currently used filter.
@@ -102,7 +102,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * com.sun.star.sdb.SQLFilterOperator} .
     * @returns the structured filter
     */
-  val StructuredFilter: SafeArray[SafeArray[PropertyValue]] = js.native
+  val StructuredFilter: SafeArray[SafeArray[PropertyValue]]
   
   /**
     * returns the currently used HAVING filter.
@@ -112,7 +112,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * com.sun.star.sdb.SQLFilterOperator} .
     * @returns the structured HAVING filter
     */
-  val StructuredHavingClause: SafeArray[SafeArray[PropertyValue]] = js.native
+  val StructuredHavingClause: SafeArray[SafeArray[PropertyValue]]
   
   /**
     * returns the used filter.
@@ -120,7 +120,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The filter criteria returned is part of the where condition of the select command, but it does not contain the where token.
     * @returns the filter
     */
-  def getFilter(): String = js.native
+  def getFilter(): String
   
   /**
     * returns the currently used GROUP BY.
@@ -128,7 +128,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The group criteria returned is part of the GROUP BY clause of the select command, but it does not contain the GROUP BY keyword .
     * @returns the group
     */
-  def getGroup(): String = js.native
+  def getGroup(): String
   
   /**
     * returns the currently used group.
@@ -136,7 +136,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The columns returned form the GROUP BY clause.
     * @returns a collection of com::sun::star::sdb::GroupColumn which form the GROUP BY.
     */
-  def getGroupColumns(): XIndexAccess = js.native
+  def getGroupColumns(): XIndexAccess
   
   /**
     * returns the used HAVING filter.
@@ -144,7 +144,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The HAVING filter criteria returned is part of the HAVING condition of the select command, but it does not contain the HAVING token.
     * @returns the filter
     */
-  def getHavingClause(): String = js.native
+  def getHavingClause(): String
   
   /**
     * returns the currently used sort order.
@@ -152,7 +152,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns the order
     */
-  def getOrder(): String = js.native
+  def getOrder(): String
   
   /**
     * returns the currently used sort order.
@@ -160,13 +160,13 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * The order criteria returned is part of the ORDER BY clause of the select command, but it does not contain the ORDER BY keyword .
     * @returns a collection of {@link com.sun.star.sdb.OrderColumn} which form the ORDER BY.
     */
-  def getOrderColumns(): XIndexAccess = js.native
+  def getOrderColumns(): XIndexAccess
   
   /**
     * returns the query.
     * @returns the query
     */
-  def getQuery(): String = js.native
+  def getQuery(): String
   
   /**
     * returns the query previously set at the analyzer, with all application-level features being substituted by their database-level counterparts.
@@ -188,7 +188,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * @since OOo 2.0.4
     * @throws com::sun::star::sdbc::SQLException if the query represented cannot be completely substituted. A usual case for this is a recursion in the sub que
     */
-  def getQueryWithSubstitution(): String = js.native
+  def getQueryWithSubstitution(): String
   
   /**
     * returns the currently used filter.
@@ -198,7 +198,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * com.sun.star.sdb.SQLFilterOperator} .
     * @returns the structured filter
     */
-  def getStructuredFilter(): SafeArray[SafeArray[PropertyValue]] = js.native
+  def getStructuredFilter(): SafeArray[SafeArray[PropertyValue]]
   
   /**
     * returns the currently used HAVING filter.
@@ -208,7 +208,7 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * com.sun.star.sdb.SQLFilterOperator} .
     * @returns the structured HAVING filter
     */
-  def getStructuredHavingClause(): SafeArray[SafeArray[PropertyValue]] = js.native
+  def getStructuredHavingClause(): SafeArray[SafeArray[PropertyValue]]
   
   /**
     * sets a new query for the composer, which may be expanded by filters, group by, having and sort criteria.
@@ -219,14 +219,14 @@ trait XSingleSelectQueryAnalyzer extends XInterface {
     * @see com.sun.star.sdb.CommandType
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't a single select statement or the statement isn't vali
     */
-  def setCommand(Command: String, CommandType: Double): Unit = js.native
+  def setCommand(Command: String, CommandType: Double): Unit
   
   /**
     * sets a new query for the composer, which may be expanded by filters, group by, having and sort criteria.
     * @param command the single select statement to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't a single select statement or the statement isn't vali
     */
-  def setQuery(command: String): Unit = js.native
+  def setQuery(command: String): Unit
 }
 object XSingleSelectQueryAnalyzer {
   

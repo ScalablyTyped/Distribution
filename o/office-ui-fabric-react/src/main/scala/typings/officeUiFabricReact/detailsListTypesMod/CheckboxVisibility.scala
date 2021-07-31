@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.detailsListTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,26 @@ sealed trait CheckboxVisibility extends StObject
 object CheckboxVisibility extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CheckboxVisibility with Double] = js.native
+  def apply(value: Double): js.UndefOr[CheckboxVisibility & Double] = js.native
   
   /** Visible always. */
   @js.native
-  sealed trait always extends CheckboxVisibility
-  /* 1 */ val always: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.always with Double = js.native
+  sealed trait always
+    extends StObject
+       with CheckboxVisibility
+  /* 1 */ val always: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.always & Double = js.native
   
   /** Hide checkboxes. */
   @js.native
-  sealed trait hidden extends CheckboxVisibility
-  /* 2 */ val hidden: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.hidden with Double = js.native
+  sealed trait hidden
+    extends StObject
+       with CheckboxVisibility
+  /* 2 */ val hidden: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.hidden & Double = js.native
   
   /** Visible on hover. */
   @js.native
-  sealed trait onHover extends CheckboxVisibility
-  /* 0 */ val onHover: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.onHover with Double = js.native
+  sealed trait onHover
+    extends StObject
+       with CheckboxVisibility
+  /* 0 */ val onHover: typings.officeUiFabricReact.detailsListTypesMod.CheckboxVisibility.onHover & Double = js.native
 }

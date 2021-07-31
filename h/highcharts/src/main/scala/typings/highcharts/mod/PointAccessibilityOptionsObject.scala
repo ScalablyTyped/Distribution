@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointAccessibilityOptionsObject extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PointAccessibilityOptionsObject extends StObject {
   /**
     * Provide a description of the data point, announced to screen readers.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
 }
 object PointAccessibilityOptionsObject {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object partitionMod {
@@ -72,6 +71,10 @@ object partitionMod {
   /* static members */
   object Partition {
     
+    @JSImport("@pulumi/aws/glue/partition", "Partition")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Partition resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,57 +84,51 @@ object partitionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/partition", "Partition.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Partition = js.native
-    @JSImport("@pulumi/aws/glue/partition", "Partition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Partition = js.native
-    @JSImport("@pulumi/aws/glue/partition", "Partition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PartitionState): Partition = js.native
-    @JSImport("@pulumi/aws/glue/partition", "Partition.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PartitionState, opts: CustomResourceOptions): Partition = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PartitionState): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Partition]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PartitionState, opts: CustomResourceOptions): Partition = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Partition]
     
     /**
       * Returns true if the given object is an instance of Partition.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/partition", "Partition.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/partition.Partition */ Boolean]
   }
   
-  @js.native
   trait PartitionArgs extends StObject {
     
     /**
       * ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all lowercase.
       */
-    val databaseName: Input[String] = js.native
+    val databaseName: Input[String]
     
     /**
       * A map of initialization parameters for the SerDe, in key-value form.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The values that define the partition.
       */
-    val partitionValues: Input[js.Array[Input[String]]] = js.native
+    val partitionValues: Input[js.Array[Input[String]]]
     
     /**
       * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
       */
-    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]] = js.native
+    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]] = js.undefined
     
-    val tableName: Input[String] = js.native
+    val tableName: Input[String]
   }
   object PartitionArgs {
     
@@ -180,50 +177,49 @@ object partitionMod {
     }
   }
   
-  @js.native
   trait PartitionState extends StObject {
     
     /**
       * ID of the Glue Catalog and database to create the table in. If omitted, this defaults to the AWS Account ID plus the database name.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The time at which the partition was created.
       */
-    val creationTime: js.UndefOr[Input[String]] = js.native
+    val creationTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the metadata database where the table metadata resides. For Hive compatibility, this must be all lowercase.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last time at which the partition was accessed.
       */
-    val lastAccessedTime: js.UndefOr[Input[String]] = js.native
+    val lastAccessedTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The last time at which column statistics were computed for this partition.
       */
-    val lastAnalyzedTime: js.UndefOr[Input[String]] = js.native
+    val lastAnalyzedTime: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of initialization parameters for the SerDe, in key-value form.
       */
-    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val parameters: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The values that define the partition.
       */
-    val partitionValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val partitionValues: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A storage descriptor object containing information about the physical storage of this table. You can refer to the [Glue Developer Guide](https://docs.aws.amazon.com/glue/latest/dg/aws-glue-api-catalog-tables.html#aws-glue-api-catalog-tables-StorageDescriptor) for a full explanation of this object.
       */
-    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]] = js.native
+    val storageDescriptor: js.UndefOr[Input[typings.pulumiAws.inputMod.glue.PartitionStorageDescriptor]] = js.undefined
     
-    val tableName: js.UndefOr[Input[String]] = js.native
+    val tableName: js.UndefOr[Input[String]] = js.undefined
   }
   object PartitionState {
     

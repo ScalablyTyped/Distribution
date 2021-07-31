@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConversionPosition extends Object {
+trait ConversionPosition
+  extends StObject
+     with Object {
   
   /**
     * A string representing the location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html#Position)
     */
-  var coordinate: String = js.native
+  var coordinate: String
   
   /**
     * A point geometry representing the location described by the conversion.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-CoordinateConversion-support-Conversion.html#Position)
     */
-  var location: Point = js.native
+  var location: Point
 }
 object ConversionPosition {
   

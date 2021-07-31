@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnimatedLength extends StObject {
   
   @JSName("MSHTML.SVGAnimatedLength_typekey")
-  var MSHTMLDotSVGAnimatedLength_typekey: SVGAnimatedLength = js.native
+  var MSHTMLDotSVGAnimatedLength_typekey: SVGAnimatedLength
   
-  var animVal: SVGLength = js.native
+  var animVal: SVGLength
   
-  var baseVal: SVGLength = js.native
+  var baseVal: SVGLength
 }
 object SVGAnimatedLength {
   

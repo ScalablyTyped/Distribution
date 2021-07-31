@@ -2,16 +2,14 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolveCustomerRequest extends StObject {
   
   /**
     * When a buyer visits your website during the registration process, the buyer submits a registration token through the browser. The registration token is resolved to obtain a CustomerIdentifier and product code.
     */
-  var RegistrationToken: NonEmptyString = js.native
+  var RegistrationToken: NonEmptyString
 }
 object ResolveCustomerRequest {
   

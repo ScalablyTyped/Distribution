@@ -2,51 +2,73 @@ package typings.pkijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issuingDistributionPointMod {
   
   @JSImport("pkijs/src/IssuingDistributionPoint", JSImport.Default)
   @js.native
-  class default () extends IssuingDistributionPoint {
+  class default ()
+    extends StObject
+       with IssuingDistributionPoint {
     def this(params: js.Any) = this()
+    
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var indirectCRL: Boolean = js.native
+    
+    /* CompleteClass */
+    var onlyContainsAttributeCerts: Boolean = js.native
+    
+    /* CompleteClass */
+    var onlyContainsUserCerts: Boolean = js.native
+    
+    /* CompleteClass */
+    var onlySomeReasons: Double = js.native
+    
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
   }
   /* static members */
   object default {
     
-    @JSImport("pkijs/src/IssuingDistributionPoint", "default.defaultValues")
+    @JSImport("pkijs/src/IssuingDistributionPoint", JSImport.Default)
     @js.native
-    def defaultValues(memberName: String): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("pkijs/src/IssuingDistributionPoint", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/IssuingDistributionPoint", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
-  @js.native
   trait IssuingDistributionPoint extends StObject {
     
     var distributionPoint: js.UndefOr[
         js.Array[typings.pkijs.generalNameMod.default] | typings.pkijs.relativeDistinguishedNamesMod.default
-      ] = js.native
+      ] = js.undefined
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    def fromSchema(schema: js.Any): Unit
     
-    var indirectCRL: Boolean = js.native
+    var indirectCRL: Boolean
     
-    var onlyContainsAttributeCerts: Boolean = js.native
+    var onlyContainsAttributeCerts: Boolean
     
-    var onlyContainsUserCerts: Boolean = js.native
+    var onlyContainsUserCerts: Boolean
     
-    var onlySomeReasons: Double = js.native
+    var onlySomeReasons: Double
     
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
     
-    def toSchema(): js.Any = js.native
+    def toSchema(): js.Any
   }
   object IssuingDistributionPoint {
     

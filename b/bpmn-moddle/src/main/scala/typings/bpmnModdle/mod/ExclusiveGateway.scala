@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExclusiveGateway extends Gateway {
+trait ExclusiveGateway
+  extends StObject
+     with Gateway {
   
-  var default: SequenceFlow = js.native
+  var default: SequenceFlow
 }
 object ExclusiveGateway {
   

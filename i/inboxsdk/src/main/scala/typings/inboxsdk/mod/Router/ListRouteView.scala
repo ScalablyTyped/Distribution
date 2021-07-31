@@ -3,19 +3,19 @@ package typings.inboxsdk.mod.Router
 import typings.inboxsdk.inboxsdkStrings.destroy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListRouteView extends RouteView {
+trait ListRouteView
+  extends StObject
+     with RouteView {
   
-  def addCollapsibleSection(options: SectionDescriptor): CollapsibleSectionView = js.native
+  def addCollapsibleSection(options: SectionDescriptor): CollapsibleSectionView
   
   // addCollapsibleSection(options: Stream<SectionDescriptor>): CollapsibleSectionView;
-  def addSection(options: SectionDescriptor): SectionView = js.native
+  def addSection(options: SectionDescriptor): SectionView
   
   // addSection(options: Stream<SectionDescriptor>): SectionView;
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object ListRouteView {
   

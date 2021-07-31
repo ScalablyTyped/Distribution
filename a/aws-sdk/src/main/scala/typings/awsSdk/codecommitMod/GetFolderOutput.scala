@@ -2,46 +2,44 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFolderOutput extends StObject {
   
   /**
     * The full commit ID used as a reference for the returned version of the folder content.
     */
-  var commitId: ObjectId = js.native
+  var commitId: ObjectId
   
   /**
     * The list of files in the specified folder, if any.
     */
-  var files: js.UndefOr[FileList] = js.native
+  var files: js.UndefOr[FileList] = js.undefined
   
   /**
     * The fully qualified path of the folder whose contents are returned.
     */
-  var folderPath: Path = js.native
+  var folderPath: Path
   
   /**
     * The list of folders that exist under the specified folder, if any.
     */
-  var subFolders: js.UndefOr[FolderList] = js.native
+  var subFolders: js.UndefOr[FolderList] = js.undefined
   
   /**
     * The list of submodules in the specified folder, if any.
     */
-  var subModules: js.UndefOr[SubModuleList] = js.native
+  var subModules: js.UndefOr[SubModuleList] = js.undefined
   
   /**
     * The list of symbolic links to other files and folders in the specified folder, if any.
     */
-  var symbolicLinks: js.UndefOr[SymbolicLinkList] = js.native
+  var symbolicLinks: js.UndefOr[SymbolicLinkList] = js.undefined
   
   /**
     * The full SHA-1 pointer of the tree information for the commit that contains the folder.
     */
-  var treeId: js.UndefOr[ObjectId] = js.native
+  var treeId: js.UndefOr[ObjectId] = js.undefined
 }
 object GetFolderOutput {
   

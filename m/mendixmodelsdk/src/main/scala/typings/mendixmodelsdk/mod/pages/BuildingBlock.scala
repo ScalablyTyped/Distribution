@@ -5,7 +5,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,9 +35,8 @@ object BuildingBlock {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.BuildingBlock.createIn")
-  @js.native
-  def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.BuildingBlock = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): typings.mendixmodelsdk.pagesMod.pages.BuildingBlock = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.BuildingBlock]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.BuildingBlock.structureTypeName")

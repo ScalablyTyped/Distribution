@@ -2,15 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListItemCollectionPosition extends ClientValueObject {
+trait ListItemCollectionPosition
+  extends StObject
+     with ClientValueObject {
   
-  def get_pagingInfo(): String = js.native
+  def get_pagingInfo(): String
   
-  def set_pagingInfo(value: String): Unit = js.native
+  def set_pagingInfo(value: String): Unit
 }
 object ListItemCollectionPosition {
   

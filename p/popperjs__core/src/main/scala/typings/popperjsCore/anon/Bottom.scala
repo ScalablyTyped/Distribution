@@ -3,23 +3,21 @@ package typings.popperjsCore.anon
 import typings.popperjsCore.typesMod.PositioningStrategy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: String = js.native
+  var bottom: String
   
-  var left: String = js.native
+  var left: String
   
-  var position: PositioningStrategy = js.native
+  var position: PositioningStrategy
   
-  var right: String = js.native
+  var right: String
   
-  var top: String = js.native
+  var top: String
   
-  var transform: String = js.native
+  var transform: String
 }
 object Bottom {
   

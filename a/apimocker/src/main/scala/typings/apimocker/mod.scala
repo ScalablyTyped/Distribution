@@ -11,45 +11,39 @@ import typings.node.httpMod.ServerResponse
 import typings.qs.mod.ParsedQs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("apimocker", "createServer")
+  @JSImport("apimocker", JSImport.Namespace)
   @js.native
-  def createServer(): ApiMocker = js.native
-  @JSImport("apimocker", "createServer")
-  @js.native
-  def createServer(options: ConfigOptions): ApiMocker = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createServer(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[ApiMocker]
+  @scala.inline
+  def createServer(options: ConfigOptions): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
   @JSImport("apimocker", "middlewares")
   @js.native
   val middlewares: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
   
-  @JSImport("apimocker", "setConfigFile")
-  @js.native
-  def setConfigFile(file: String): ApiMocker = js.native
+  @scala.inline
+  def setConfigFile(file: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("setConfigFile")(file.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
-  @JSImport("apimocker", "start")
-  @js.native
-  def start(serverPort: String): ApiMocker = js.native
-  @JSImport("apimocker", "start")
-  @js.native
-  def start(serverPort: String, callback: js.Function0[Unit]): ApiMocker = js.native
-  @JSImport("apimocker", "start")
-  @js.native
-  def start(serverPort: Double): ApiMocker = js.native
-  @JSImport("apimocker", "start")
-  @js.native
-  def start(serverPort: Double, callback: js.Function0[Unit]): ApiMocker = js.native
+  @scala.inline
+  def start(serverPort: String): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  @scala.inline
+  def start(serverPort: String, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
+  @scala.inline
+  def start(serverPort: Double): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
+  @scala.inline
+  def start(serverPort: Double, callback: js.Function0[Unit]): ApiMocker = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(serverPort.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ApiMocker]
   
-  @JSImport("apimocker", "stop")
-  @js.native
-  def stop(): ApiMocker = js.native
-  @JSImport("apimocker", "stop")
-  @js.native
-  def stop(callback: js.Function0[Unit]): ApiMocker = js.native
+  @scala.inline
+  def stop(): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")().asInstanceOf[ApiMocker]
+  @scala.inline
+  def stop(callback: js.Function0[Unit]): ApiMocker = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(callback.asInstanceOf[js.Any]).asInstanceOf[ApiMocker]
   
   @js.native
   trait ApiMocker extends StObject {
@@ -58,16 +52,16 @@ object mod {
       * Express instance itself is a request handler, which could be invoked without
       * third argument.
       */
-    def express(req: Request[ParamsDictionary, _, _, ParsedQs], res: Response[_, Double]): js.Any = js.native
-    def express(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def express(req: IncomingMessage, res: Response[_, Double]): js.Any = js.native
+    def express(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: Response[js.Any, Double]): js.Any = js.native
+    def express(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def express(req: IncomingMessage, res: Response[js.Any, Double]): js.Any = js.native
     def express(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("express")
     var express_Original: Application_ = js.native
     
     def loadConfigFile(): Unit = js.native
     
-    var middlewares: js.Array[RequestHandler[ParamsDictionary, _, _, Query]] = js.native
+    var middlewares: js.Array[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]] = js.native
     
     def setConfigFile(file: String): ApiMocker = js.native
     
@@ -93,26 +87,25 @@ object mod {
     def stop(callback: js.Function0[Unit]): ApiMocker = js.native
   }
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var allowAvoidPreFlight: js.UndefOr[Boolean] = js.native
+    var allowAvoidPreFlight: js.UndefOr[Boolean] = js.undefined
     
-    var allowedDomains: js.UndefOr[js.Array[String]] = js.native
+    var allowedDomains: js.UndefOr[js.Array[String]] = js.undefined
     
-    var allowedHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowedHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
-    var logRequestHeaders: js.UndefOr[Boolean] = js.native
+    var logRequestHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var mockDirectory: js.UndefOr[String] = js.native
+    var mockDirectory: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[String] = js.native
+    var port: js.UndefOr[String] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var useUploadFieldname: js.UndefOr[Boolean] = js.native
+    var useUploadFieldname: js.UndefOr[Boolean] = js.undefined
     
-    var webServices: js.UndefOr[js.Any] = js.native
+    var webServices: js.UndefOr[js.Any] = js.undefined
   }
   object ConfigOptions {
     

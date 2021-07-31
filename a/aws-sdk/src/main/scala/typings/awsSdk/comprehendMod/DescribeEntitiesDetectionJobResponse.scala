@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEntitiesDetectionJobResponse extends StObject {
   
   /**
     * An object that contains the properties associated with an entities detection job.
     */
-  var EntitiesDetectionJobProperties: js.UndefOr[typings.awsSdk.comprehendMod.EntitiesDetectionJobProperties] = js.native
+  var EntitiesDetectionJobProperties: js.UndefOr[typings.awsSdk.comprehendMod.EntitiesDetectionJobProperties] = js.undefined
 }
 object DescribeEntitiesDetectionJobResponse {
   

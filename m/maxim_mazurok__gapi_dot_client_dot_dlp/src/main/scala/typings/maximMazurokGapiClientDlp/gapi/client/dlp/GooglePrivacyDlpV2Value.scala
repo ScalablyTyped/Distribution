@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Value extends StObject {
   
   /** boolean */
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
   /** date */
-  var dateValue: js.UndefOr[GoogleTypeDate] = js.native
+  var dateValue: js.UndefOr[GoogleTypeDate] = js.undefined
   
   /** day of week */
-  var dayOfWeekValue: js.UndefOr[String] = js.native
+  var dayOfWeekValue: js.UndefOr[String] = js.undefined
   
   /** float */
-  var floatValue: js.UndefOr[Double] = js.native
+  var floatValue: js.UndefOr[Double] = js.undefined
   
   /** integer */
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
   /** string */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /** time of day */
-  var timeValue: js.UndefOr[GoogleTypeTimeOfDay] = js.native
+  var timeValue: js.UndefOr[GoogleTypeTimeOfDay] = js.undefined
   
   /** timestamp */
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2Value {
   

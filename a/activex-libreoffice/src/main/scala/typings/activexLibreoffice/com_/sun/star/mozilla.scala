@@ -12,41 +12,39 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mozilla {
   
   /** Explains properties of a menu item */
-  @js.native
   trait MenuMultipleChange extends StObject {
     
     /** unique ID of the group this menu item belongs to */
-    var GroupID: Double = js.native
+    var GroupID: Double
     
     /** unique ID of this menu item */
-    var ID: Double = js.native
+    var ID: Double
     
     /** sequence of bytes representing a possible image */
-    var Image: SafeArray[Double] = js.native
+    var Image: SafeArray[Double]
     
     /** true if active, so clickable */
-    var IsActive: Boolean = js.native
+    var IsActive: Boolean
     
     /** true if checkable, so there can be a checkmark */
-    var IsCheckable: Boolean = js.native
+    var IsCheckable: Boolean
     
     /** true if there is a checkmark */
-    var IsChecked: Boolean = js.native
+    var IsChecked: Boolean
     
     /** true if visible */
-    var IsVisible: Boolean = js.native
+    var IsVisible: Boolean
     
     /** text of the menu item */
-    var ItemText: String = js.native
+    var ItemText: String
     
     /** unique ID of the item directly above this menu item, used for fuzzy placement */
-    var PreItemID: Double = js.native
+    var PreItemID: Double
   }
   object MenuMultipleChange {
     
@@ -105,17 +103,16 @@ object mozilla {
   type MenuProxyListener = XMenuProxyListener
   
   /** Explains a change for a menu item */
-  @js.native
   trait MenuSingleChange extends StObject {
     
     /** value of change */
-    var Change: js.Any = js.native
+    var Change: js.Any
     
     /** ID identifying the type of change in the any type change */
-    var ChangeID: Double = js.native
+    var ChangeID: Double
     
     /** unique ID of this menu item */
-    var ID: Double = js.native
+    var ID: Double
   }
   object MenuSingleChange {
     
@@ -173,14 +170,15 @@ object mozilla {
   }
   
   /** Listener for closing of the corresponding session. */
-  @js.native
-  trait XCloseSessionListener extends XInterface {
+  trait XCloseSessionListener
+    extends StObject
+       with XInterface {
     
     /**
       * Notifies a closesession listener that the corresponding session was logged out
       * @param sessionData [in]: the data identifying the session that was closed
       */
-    def sessionClosed(sessionData: js.Any): Unit = js.native
+    def sessionClosed(sessionData: js.Any): Unit
   }
   object XCloseSessionListener {
     
@@ -209,23 +207,24 @@ object mozilla {
     * @see XProxyRunner
     * @see XMozillaBootstrap
     */
-  @js.native
-  trait XCodeProxy extends XInterface {
+  trait XCodeProxy
+    extends StObject
+       with XInterface {
     
     /** which Mozilla product this code is write for */
-    val ProductType: MozillaProductType = js.native
+    val ProductType: MozillaProductType
     
     /** which Mozilla profile this code will use */
-    val ProfileName: String = js.native
+    val ProfileName: String
     
     /** which Mozilla product this code is write for */
-    def getProductType(): MozillaProductType = js.native
+    def getProductType(): MozillaProductType
     
     /** which Mozilla profile this code will use */
-    def getProfileName(): String = js.native
+    def getProfileName(): String
     
     /** all Mozilla XPCOM code must be called in {@link run()} or functions called by {@link run()} */
-    def run(): Double = js.native
+    def run(): Double
   }
   object XCodeProxy {
     
@@ -265,26 +264,27 @@ object mozilla {
   }
   
   /** Allows to execute dispatch for a menu item and handles listeners for changes in menu items. */
-  @js.native
-  trait XMenuProxy extends XComponent {
+  trait XMenuProxy
+    extends StObject
+       with XComponent {
     
     /**
       * Registers an event listener, which will be called when the menu changes
       * @param xListener [in]: the listener to be set
       */
-    def addMenuProxyListener(xListener: XMenuProxyListener): Unit = js.native
+    def addMenuProxyListener(xListener: XMenuProxyListener): Unit
     
     /**
       * Executes dispatch for the given menu id
       * @param ID [in]: the menu item
       */
-    def executeMenuItem(ID: Double): Unit = js.native
+    def executeMenuItem(ID: Double): Unit
     
     /**
       * Unregisters an event listener which was registered with {@link XMenuProxy.addMenuProxyListener()} .
       * @param xListener [in]: the listener to be removed
       */
-    def removeMenuProxyListener(xListener: XMenuProxyListener): Unit = js.native
+    def removeMenuProxyListener(xListener: XMenuProxyListener): Unit
   }
   object XMenuProxy {
     
@@ -319,20 +319,21 @@ object mozilla {
   }
   
   /** Listens for changes in menu items. */
-  @js.native
-  trait XMenuProxyListener extends XInterface {
+  trait XMenuProxyListener
+    extends StObject
+       with XInterface {
     
     /** is called, if the content or graphical representation/state of the menu changes completely, for one or more menu items */
-    def menuChangedMultiple(MenuMultipleChanges: SeqEquiv[MenuMultipleChange]): Unit = js.native
+    def menuChangedMultiple(MenuMultipleChanges: SeqEquiv[MenuMultipleChange]): Unit
     
     /** is called, if the content or graphical representation/state of the menu changes, by one property for one or more menu items */
-    def menuChangedSingle(MenuSingleChanges: SeqEquiv[MenuSingleChange]): Unit = js.native
+    def menuChangedSingle(MenuSingleChanges: SeqEquiv[MenuSingleChange]): Unit
     
     /**
       * is called, if one menu item designated by the ID, is deleted.
       * @param ID [in]: the menu item
       */
-    def menuItemDeleted(ID: Double): Unit = js.native
+    def menuItemDeleted(ID: Double): Unit
   }
   object XMenuProxyListener {
     
@@ -369,9 +370,9 @@ object mozilla {
     * @see com.sun.star.mozilla.XProxyRunner
     * @see com.sun.star.mozilla.MozillaBootstrap
     */
-  @js.native
   trait XMozillaBootstrap
-    extends XProfileDiscover
+    extends StObject
+       with XProfileDiscover
        with XProfileManager
        with XProxyRunner
   object XMozillaBootstrap {
@@ -407,22 +408,23 @@ object mozilla {
     * @see com.sun.star.mozilla.XProfileManager
     * @see com.sun.star.mozilla.MozillaBootstrap
     */
-  @js.native
-  trait XProfileDiscover extends XInterface {
+  trait XProfileDiscover
+    extends StObject
+       with XInterface {
     
     /**
       * attempts to get the default profile name for the given product.
       * @param product is the product name to get default profile.Currently support "Mozilla" and "Thunderbird".
       * @returns the default profile name for the given product.
       */
-    def getDefaultProfile(product: MozillaProductType): String = js.native
+    def getDefaultProfile(product: MozillaProductType): String
     
     /**
       * attempts to get the profiles count.
       * @param product is the product name to get profiles count.Currently support "Mozilla" and "Thunderbird".
       * @returns the profiles count of selected product.
       */
-    def getProfileCount(product: MozillaProductType): Double = js.native
+    def getProfileCount(product: MozillaProductType): Double
     
     /**
       * return true if the given profile exists
@@ -430,7 +432,7 @@ object mozilla {
       * @param profileName the profile name to check.
       * @returns whether given profile exists
       */
-    def getProfileExists(product: MozillaProductType, profileName: String): Boolean = js.native
+    def getProfileExists(product: MozillaProductType, profileName: String): Boolean
     
     /**
       * attempts to get the profile list for the given product.
@@ -438,7 +440,7 @@ object mozilla {
       * @param list is a list of all profile of the given product.
       * @returns the profile count for the given product.
       */
-    def getProfileList(product: MozillaProductType, list: js.Array[SeqEquiv[String]]): Double = js.native
+    def getProfileList(product: MozillaProductType, list: js.Array[SeqEquiv[String]]): Double
     
     /**
       * attempts to get the full path for the given profile.
@@ -446,7 +448,7 @@ object mozilla {
       * @param profileName the profile name to get full path.
       * @returns the full path of the given profile.
       */
-    def getProfilePath(product: MozillaProductType, profileName: String): String = js.native
+    def getProfilePath(product: MozillaProductType, profileName: String): String
     
     /**
       * attempts to get whether profile is locked by other applications.
@@ -454,7 +456,7 @@ object mozilla {
       * @param profileName the profile name to check.
       * @returns true is the given profile is locked.
       */
-    def isProfileLocked(product: MozillaProductType, profileName: String): Boolean = js.native
+    def isProfileLocked(product: MozillaProductType, profileName: String): Boolean
   }
   object XProfileDiscover {
     
@@ -503,20 +505,21 @@ object mozilla {
     * @see com.sun.star.mozilla.XProfileDiscover
     * @see com.sun.star.mozilla.MozillaBootstrap
     */
-  @js.native
-  trait XProfileManager extends XInterface {
+  trait XProfileManager
+    extends StObject
+       with XInterface {
     
     /**
       * attempts to get the current product.
       * @returns the current used product.
       */
-    val CurrentProduct: MozillaProductType = js.native
+    val CurrentProduct: MozillaProductType
     
     /**
       * attempts to get the current profile name.
       * @returns the current used profile.
       */
-    val CurrentProfile: String = js.native
+    val CurrentProfile: String
     
     /**
       * attempts to init XPCOM runtime using given profile.
@@ -524,25 +527,25 @@ object mozilla {
       * @param profileName the profile name to be used.
       * @returns the current reference count for the given profile.
       */
-    def bootupProfile(product: MozillaProductType, profileName: String): Double = js.native
+    def bootupProfile(product: MozillaProductType, profileName: String): Double
     
     /**
       * attempts to get the current product.
       * @returns the current used product.
       */
-    def getCurrentProduct(): MozillaProductType = js.native
+    def getCurrentProduct(): MozillaProductType
     
     /**
       * attempts to get the current profile name.
       * @returns the current used profile.
       */
-    def getCurrentProfile(): String = js.native
+    def getCurrentProfile(): String
     
     /**
       * attempts to check whether the current profile locked or not
       * @returns return sal_True is current profile is locked
       */
-    def isCurrentProfileLocked(): Boolean = js.native
+    def isCurrentProfileLocked(): Boolean
     
     /**
       * attempts to set the current used profile name for the given product.
@@ -550,13 +553,13 @@ object mozilla {
       * @param profileName the profile name to be used.
       * @returns the current used profile name for the given product.
       */
-    def setCurrentProfile(product: MozillaProductType, profileName: String): String = js.native
+    def setCurrentProfile(product: MozillaProductType, profileName: String): String
     
     /**
       * attempts to shutdown the current profile.
       * @returns the current reference count for the current profile.
       */
-    def shutdownProfile(): Double = js.native
+    def shutdownProfile(): Double
   }
   object XProfileManager {
     
@@ -612,15 +615,16 @@ object mozilla {
     * @see com.sun.star.mozilla.XProfileDiscover
     * @see com.sun.star.mozilla.MozillaBootstrap
     */
-  @js.native
-  trait XProxyRunner extends XInterface {
+  trait XProxyRunner
+    extends StObject
+       with XInterface {
     
     /**
       * attempts to Run XPCOM code in a managed environment
       * @param aCode is a com:sun:star:mozilla: {@link XCodeProxy} object to be run.
       * @returns the error code, is 0 when no error happened.
       */
-    def Run(aCode: XCodeProxy): Double = js.native
+    def Run(aCode: XCodeProxy): Double
   }
   object XProxyRunner {
     

@@ -2,29 +2,27 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProductStatusDataQualityIssue extends StObject {
   
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
-  var fetchStatus: js.UndefOr[String] = js.native
+  var fetchStatus: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
-  var valueOnLandingPage: js.UndefOr[String] = js.native
+  var valueOnLandingPage: js.UndefOr[String] = js.undefined
   
-  var valueProvided: js.UndefOr[String] = js.native
+  var valueProvided: js.UndefOr[String] = js.undefined
 }
 object SchemaProductStatusDataQualityIssue {
   

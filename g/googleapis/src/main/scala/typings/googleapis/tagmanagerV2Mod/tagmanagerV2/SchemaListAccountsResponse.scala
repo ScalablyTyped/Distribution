@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List Accounts Response.
   */
-@js.native
 trait SchemaListAccountsResponse extends StObject {
   
   /**
     * List of GTM Accounts that a user has access to.
     */
-  var account: js.UndefOr[js.Array[SchemaAccount]] = js.native
+  var account: js.UndefOr[js.Array[SchemaAccount]] = js.undefined
   
   /**
     * Continuation token for fetching the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAccountsResponse {
   

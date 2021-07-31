@@ -2,14 +2,12 @@ package typings.semanticUiTab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-tab.SemanticUI.TabSettings._Impl, 'maxDepth'> */
-@js.native
 trait PickImplmaxDepth extends StObject {
   
-  var maxDepth: Double = js.native
+  var maxDepth: Double
 }
 object PickImplmaxDepth {
   

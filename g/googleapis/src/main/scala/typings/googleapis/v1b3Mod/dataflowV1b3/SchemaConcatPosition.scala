@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * position. A ConcatPosition can be used by a reader of a source that
   * encapsulates a set of other sources.
   */
-@js.native
 trait SchemaConcatPosition extends StObject {
   
   /**
     * Index of the inner source.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * Position within the inner source.
     */
-  var position: js.UndefOr[SchemaPosition] = js.native
+  var position: js.UndefOr[SchemaPosition] = js.undefined
 }
 object SchemaConcatPosition {
   

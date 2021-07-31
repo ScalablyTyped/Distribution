@@ -2,29 +2,27 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies what kind of log the caller must write
   */
-@js.native
 trait SchemaLogConfig extends StObject {
   
   /**
     * Cloud audit options.
     */
-  var cloudAudit: js.UndefOr[SchemaLogConfigCloudAuditOptions] = js.native
+  var cloudAudit: js.UndefOr[SchemaLogConfigCloudAuditOptions] = js.undefined
   
   /**
     * Counter options.
     */
-  var counter: js.UndefOr[SchemaLogConfigCounterOptions] = js.native
+  var counter: js.UndefOr[SchemaLogConfigCounterOptions] = js.undefined
   
   /**
     * Data access options.
     */
-  var dataAccess: js.UndefOr[SchemaLogConfigDataAccessOptions] = js.native
+  var dataAccess: js.UndefOr[SchemaLogConfigDataAccessOptions] = js.undefined
 }
 object SchemaLogConfig {
   

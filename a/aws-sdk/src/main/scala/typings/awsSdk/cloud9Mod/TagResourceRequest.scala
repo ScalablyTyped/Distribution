@@ -2,21 +2,19 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Cloud9 development environment to add tags to.
     */
-  var ResourceARN: EnvironmentArn = js.native
+  var ResourceARN: EnvironmentArn
   
   /**
     * The list of tags to add to the given AWS Cloud9 development environment.
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object TagResourceRequest {
   

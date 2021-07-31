@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The resource ARN for the tag.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * The collection of tags. Each tag element is associated with a given resource.
     */
-  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.apigatewayv2Mod.Tags] = js.undefined
 }
 object TagResourceRequest {
   

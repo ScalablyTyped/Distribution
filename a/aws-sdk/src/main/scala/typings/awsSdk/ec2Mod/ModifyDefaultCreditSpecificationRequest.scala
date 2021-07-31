@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDefaultCreditSpecificationRequest extends StObject {
   
   /**
     * The credit option for CPU usage of the instance family. Valid Values: standard | unlimited 
     */
-  var CpuCredits: String = js.native
+  var CpuCredits: String
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The instance family.
     */
-  var InstanceFamily: UnlimitedSupportedInstanceFamily = js.native
+  var InstanceFamily: UnlimitedSupportedInstanceFamily
 }
 object ModifyDefaultCreditSpecificationRequest {
   

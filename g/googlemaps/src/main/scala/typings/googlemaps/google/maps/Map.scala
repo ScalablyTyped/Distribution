@@ -22,12 +22,13 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @see {@link https://developers.google.com/maps/documentation/javascript/reference/map#Map Maps JavaScript API} */
 @js.native
-trait Map[E /* <: Element */] extends MVCObject {
+trait Map[E /* <: Element */]
+  extends StObject
+     with MVCObject {
   
   /**
     * @see {@link MapHandlerMap#bounds_changed bounds_changed} event

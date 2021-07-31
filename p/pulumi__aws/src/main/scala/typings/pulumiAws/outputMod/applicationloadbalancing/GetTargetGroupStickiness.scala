@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.applicationloadbalancing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTargetGroupStickiness extends StObject {
   
-  var cookieDuration: Double = js.native
+  var cookieDuration: Double
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object GetTargetGroupStickiness {
   

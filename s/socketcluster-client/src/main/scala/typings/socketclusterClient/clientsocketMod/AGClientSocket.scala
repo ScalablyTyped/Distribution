@@ -36,7 +36,6 @@ import typings.socketclusterServer.serverMod.CodecEngine
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -82,7 +81,7 @@ trait AGClientSocket
   def cancelBatching(): Unit = js.native
   
   // ---- Channel logic ----
-  def channel(channelName: String): typings.agChannel.mod.^[_] = js.native
+  def channel(channelName: String): typings.agChannel.mod.^[js.Any] = js.native
   
   var channelPrefix: String | Null = js.native
   
@@ -94,9 +93,17 @@ trait AGClientSocket
   
   def closeAllChannels(): Unit = js.native
   
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def closeAllListeners(): Unit = js.native
+  
   def closeAllProcedures(): Unit = js.native
   
   def closeAllReceivers(): Unit = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def closeListener(eventName: String): Unit = js.native
   
   def closeProcedure(procedureName: String): Unit = js.native
   
@@ -117,12 +124,15 @@ trait AGClientSocket
   def decodeBase64(encodedString: String): String = js.native
   
   def disconnect(): Unit = js.native
-  def disconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def disconnect(code: Double): Unit = js.native
   def disconnect(code: Double, reason: String): Unit = js.native
+  def disconnect(code: Unit, reason: String): Unit = js.native
   
   var disconnectOnUnload: Boolean = js.native
   
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def emit(eventName: String, data: js.Any): Unit = js.native
   @JSName("emit")
   def emit_authStateChange(eventName: authStateChange, data: AuthStateChangeData): Unit = js.native
   @JSName("emit")
@@ -166,13 +176,21 @@ trait AGClientSocket
   
   def getAllChannelListenersBackpressure(): Double = js.native
   
-  def getAllChannelListenersConsumerStatsList(): js.Array[_] = js.native
+  def getAllChannelListenersConsumerStatsList(): js.Array[js.Any] = js.native
   
   def getAllChannelOutputsBackpressure(): Double = js.native
   
-  def getAllChannelOutputsConsumerStatsList(): js.Array[_] = js.native
+  def getAllChannelOutputsConsumerStatsList(): js.Array[js.Any] = js.native
   
   def getAllChannelsBackpressure(): Double = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getAllListenersBackpressure(): Double = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getAllListenersConsumerStatsList(): js.Array[ConsumerStats] = js.native
   
   def getAllProceduresBackpressure(): Double = js.native
   
@@ -188,6 +206,22 @@ trait AGClientSocket
   def getBackpressure(): Double = js.native
   
   def getBytesReceived(): Double = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getListenerBackpressure(eventName: String): Double = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getListenerConsumerBackpressure(consumerId: Double): Double = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getListenerConsumerStats(consumerId: Double): ConsumerStats = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def getListenerConsumerStatsList(eventName: String): js.Array[ConsumerStats] = js.native
   
   def getProcedureBackpressure(procedureName: String): Double = js.native
   
@@ -213,9 +247,17 @@ trait AGClientSocket
   
   def hasAnyChannelOutputConsumer(consumerId: js.Any): Boolean = js.native
   
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def hasAnyListenerConsumer(consumerId: Double): Boolean = js.native
+  
   def hasAnyProcedureConsumer(consumerId: Double): Boolean = js.native
   
   def hasAnyReceiverConsumer(consumerId: Double): Boolean = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def hasListenerConsumer(eventName: String, consumerId: Double): Boolean = js.native
   
   def hasProcedureConsumer(procedureName: String, consumerId: Double): Boolean = js.native
   
@@ -225,8 +267,8 @@ trait AGClientSocket
   
   val ignoreStatuses: SocketProtocolIgnoreStatuses_ = js.native
   
-  def invoke(event: String, data: js.Any): js.Promise[_] = js.native
-  def invoke(event: String, data: js.Any, options: AckTimeout): js.Promise[_] = js.native
+  def invoke(event: String, data: js.Any): js.Promise[js.Any] = js.native
+  def invoke(event: String, data: js.Any, options: AckTimeout): js.Promise[js.Any] = js.native
   
   var isBatching: Boolean = js.native
   
@@ -238,9 +280,21 @@ trait AGClientSocket
   
   def killAllChannels(): Unit = js.native
   
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def killAllListeners(): Unit = js.native
+  
   def killAllProcedures(): Unit = js.native
   
   def killAllReceivers(): Unit = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def killListener(eventName: String): Unit = js.native
+  
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def killListenerConsumer(consumerId: Double): Unit = js.native
   
   def killProcedure(procedureName: String): Unit = js.native
   
@@ -250,6 +304,9 @@ trait AGClientSocket
   
   def killReceiverConsumer(consumerId: Double): Unit = js.native
   
+  /* CompleteClass */
+  /* InferMemberOverrides */
+  override def listener(eventName: String): typings.consumableStream.mod.^[js.Any] = js.native
   @JSName("listener")
   def listener_authStateChange(eventName: authStateChange): typings.consumableStream.mod.^[AuthStateChangeData] = js.native
   @JSName("listener")
@@ -298,19 +355,19 @@ trait AGClientSocket
   var preparingPendingSubscriptions: Boolean = js.native
   
   // ---- Procedure logic ----
-  def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[_] = js.native
+  def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
   
   def processPendingSubscriptions(): Unit = js.native
   
   var protocolVersion: ProtocolVersions = js.native
   
   // ---- Receiver logic ----
-  def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[_] = js.native
+  def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
   
   def reconnect(): Unit = js.native
-  def reconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
   def reconnect(code: Double): Unit = js.native
   def reconnect(code: Double, reason: String): Unit = js.native
+  def reconnect(code: Unit, reason: String): Unit = js.native
   
   def send(data: js.Any): Unit = js.native
   
@@ -324,7 +381,7 @@ trait AGClientSocket
   
   def stopBatching(): Unit = js.native
   
-  def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[_] = js.native
+  def subscribe(channelName: String, options: SubscribeOptions): typings.agChannel.mod.^[js.Any] = js.native
   
   // ---- Subscriptions ----
   def subscriptions(): js.Array[String] = js.native

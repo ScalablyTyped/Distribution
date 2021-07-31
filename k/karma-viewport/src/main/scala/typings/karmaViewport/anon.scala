@@ -3,17 +3,15 @@ package typings.karmaViewport
 import typings.karmaViewport.viewportMod.ViewportBreakpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -35,12 +33,11 @@ object anon {
   }
   
   /* Inlined std.Partial<karma-viewport.karma-viewport/dist/adapter/viewport.ViewportConfiguration> */
-  @js.native
   trait PartialViewportConfigurat extends StObject {
     
-    var breakpoints: js.UndefOr[js.Array[ViewportBreakpoint]] = js.native
+    var breakpoints: js.UndefOr[js.Array[ViewportBreakpoint]] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
   }
   object PartialViewportConfigurat {
     
@@ -71,12 +68,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<karma-viewport.karma-viewport/dist/adapter/viewport.ViewportConfiguration> */
-  @js.native
   trait ReadonlyViewportConfigura extends StObject {
     
-    val breakpoints: js.Array[ViewportBreakpoint] = js.native
+    val breakpoints: js.Array[ViewportBreakpoint]
     
-    val context: String = js.native
+    val context: String
   }
   object ReadonlyViewportConfigura {
     

@@ -3,7 +3,6 @@ package typings.sharepoint
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,9 +20,9 @@ trait MQuery extends StObject {
   def contains(container: HTMLElement, contained: HTMLElement): Boolean = js.native
   
   def data(element: HTMLElement): js.Any = js.native
-  def data(element: HTMLElement, key: js.UndefOr[scala.Nothing], value: js.Any): js.Any = js.native
   def data(element: HTMLElement, key: String): js.Any = js.native
   def data(element: HTMLElement, key: String, value: js.Any): js.Any = js.native
+  def data(element: HTMLElement, key: Unit, value: js.Any): js.Any = js.native
   
   def every[T](
     obj: js.Array[T],
@@ -125,7 +124,7 @@ trait MQuery extends StObject {
   def lastIndexOf[T](obj: js.Array[T], `object`: T): Double = js.native
   def lastIndexOf[T](obj: js.Array[T], `object`: T, startIndex: Double): Double = js.native
   
-  def makeArray[T](obj: js.Any): js.Array[_] = js.native
+  def makeArray[T](obj: js.Any): js.Array[js.Any] = js.native
   
   def map[T, U](
     array: js.Array[T],
@@ -137,7 +136,7 @@ trait MQuery extends StObject {
   ): MQueryResultSet[U] = js.native
   
   def proxy(context: js.Any, name: String, args: js.Any*): js.Any = js.native
-  def proxy(fn: js.Function1[/* repeated */ js.Any, _], context: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, _] = js.native
+  def proxy(fn: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any, args: js.Any*): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   
   def ready(callback: js.Function0[Unit]): Unit = js.native
   
@@ -163,5 +162,5 @@ trait MQuery extends StObject {
     context: js.Any
   ): Boolean = js.native
   
-  def throttle[T /* <: js.Function1[/* repeated */ js.Any, _] */](fn: T, interval: Double, shouldOverrideThrottle: Boolean): T = js.native
+  def throttle[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: T, interval: Double, shouldOverrideThrottle: Boolean): T = js.native
 }

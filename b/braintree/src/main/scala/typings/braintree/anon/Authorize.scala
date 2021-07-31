@@ -2,17 +2,15 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorize extends StObject {
   
-  var Authorize: String = js.native
+  var Authorize: String
   
-  var Decline: String = js.native
+  var Decline: String
   
-  var Fail: String = js.native
+  var Fail: String
 }
 object Authorize {
   

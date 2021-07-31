@@ -2,21 +2,19 @@ package typings.storybookAddonActions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionOptionsMod {
   
-  @js.native
   trait ActionOptions extends StObject {
     
-    var allowFunction: js.UndefOr[Boolean] = js.native
+    var allowFunction: js.UndefOr[Boolean] = js.undefined
     
-    var clearOnStoryChange: js.UndefOr[Boolean] = js.native
+    var clearOnStoryChange: js.UndefOr[Boolean] = js.undefined
     
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
   }
   object ActionOptions {
     

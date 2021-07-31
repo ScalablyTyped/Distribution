@@ -2,23 +2,21 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetConfiguration extends StObject {
   
   /**
     * The configuration to use for this deployment.
     */
-  var config: js.UndefOr[SchemaConfigFile] = js.native
+  var config: js.UndefOr[SchemaConfigFile] = js.undefined
   
   /**
     * Specifies any files to import for this configuration. This can be used to
     * import templates or other files. For example, you might import a text
     * file in order to use the file in a template.
     */
-  var imports: js.UndefOr[js.Array[SchemaImportFile]] = js.native
+  var imports: js.UndefOr[js.Array[SchemaImportFile]] = js.undefined
 }
 object SchemaTargetConfiguration {
   

@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Moves one or more rows or columns.
   */
-@js.native
 trait SchemaMoveDimensionRequest extends StObject {
   
   /**
@@ -23,12 +21,12 @@ trait SchemaMoveDimensionRequest extends StObject {
     * index would be `&quot;4&quot;` (the zero-based index of row 5). The end
     * result would be `A1..A5` of `0, 3, 1, 2, 4`.
     */
-  var destinationIndex: js.UndefOr[Double] = js.native
+  var destinationIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The source dimensions to move.
     */
-  var source: js.UndefOr[SchemaDimensionRange] = js.native
+  var source: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaMoveDimensionRequest {
   

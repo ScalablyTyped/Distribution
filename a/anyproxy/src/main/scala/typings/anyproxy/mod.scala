@@ -15,7 +15,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -132,50 +131,49 @@ object mod {
     /** Manage certificates of AnyProxy. */
     object certMgr {
       
-      /** Generate a rootCA */
-      @JSImport("anyproxy", "utils.certMgr.generateRootCA")
+      @JSImport("anyproxy", "utils.certMgr")
       @js.native
-      def generateRootCA(callback: js.Function2[/* err */ Error, /* keyPath */ String, Unit]): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      /** Generate a rootCA */
+      @scala.inline
+      def generateRootCA(callback: js.Function2[/* err */ Error, /* keyPath */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generateRootCA")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** Detect if AnyProx rootCA exists */
-      @JSImport("anyproxy", "utils.certMgr.ifRootCAFileExists")
-      @js.native
-      def ifRootCAFileExists(): Boolean = js.native
+      @scala.inline
+      def ifRootCAFileExists(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("ifRootCAFileExists")().asInstanceOf[Boolean]
     }
     
     /** Manage the system proxy config. sudo password may be required. */
     object systemProxyMgr {
       
+      @JSImport("anyproxy", "utils.systemProxyMgr")
+      @js.native
+      val ^ : js.Any = js.native
+      
       /** Disable global system proxy. sudo password may be required. */
-      @JSImport("anyproxy", "utils.systemProxyMgr.disableGlobalProxy")
-      @js.native
-      def disableGlobalProxy(): Unit = js.native
-      @JSImport("anyproxy", "utils.systemProxyMgr.disableGlobalProxy")
-      @js.native
-      def disableGlobalProxy(networkType: NetworkType): Unit = js.native
+      @scala.inline
+      def disableGlobalProxy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableGlobalProxy")().asInstanceOf[Unit]
+      @scala.inline
+      def disableGlobalProxy(networkType: NetworkType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableGlobalProxy")(networkType.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       /** Enable global system proxy with specified params. sudo password may be required. */
-      @JSImport("anyproxy", "utils.systemProxyMgr.enableGlobalProxy")
-      @js.native
-      def enableGlobalProxy(host: String, port: String): Unit = js.native
-      @JSImport("anyproxy", "utils.systemProxyMgr.enableGlobalProxy")
-      @js.native
-      def enableGlobalProxy(host: String, port: String, networkType: NetworkType): Unit = js.native
-      @JSImport("anyproxy", "utils.systemProxyMgr.enableGlobalProxy")
-      @js.native
-      def enableGlobalProxy(host: String, port: Double): Unit = js.native
-      @JSImport("anyproxy", "utils.systemProxyMgr.enableGlobalProxy")
-      @js.native
-      def enableGlobalProxy(host: String, port: Double, networkType: NetworkType): Unit = js.native
+      @scala.inline
+      def enableGlobalProxy(host: String, port: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableGlobalProxy")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def enableGlobalProxy(host: String, port: String, networkType: NetworkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableGlobalProxy")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], networkType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def enableGlobalProxy(host: String, port: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableGlobalProxy")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def enableGlobalProxy(host: String, port: Double, networkType: NetworkType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enableGlobalProxy")(host.asInstanceOf[js.Any], port.asInstanceOf[js.Any], networkType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
   
-  @js.native
   trait BeforeDealHttpsRequestDetail extends StObject {
     
-    var _req: IncomingMessage = js.native
+    var _req: IncomingMessage
     
-    var host: String = js.native
+    var host: String
   }
   object BeforeDealHttpsRequestDetail {
     
@@ -197,20 +195,19 @@ object mod {
   }
   
   /* Inlined parent std.Partial<anyproxy.anyproxy.RequestDetail> */
-  @js.native
   trait BeforeSendRequestResult extends StObject {
     
-    var _req: js.UndefOr[IncomingMessage] = js.native
+    var _req: js.UndefOr[IncomingMessage] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var requestData: js.UndefOr[js.Any] = js.native
+    var requestData: js.UndefOr[js.Any] = js.undefined
     
-    var requestOptions: js.UndefOr[RequestOptions] = js.native
+    var requestOptions: js.UndefOr[RequestOptions] = js.undefined
     
-    var response: js.UndefOr[PartialResponse] = js.native
+    var response: js.UndefOr[PartialResponse] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BeforeSendRequestResult {
     
@@ -261,10 +258,9 @@ object mod {
     }
   }
   
-  @js.native
   trait BeforeSendResponseResult extends StObject {
     
-    var response: PartialResponse = js.native
+    var response: PartialResponse
   }
   object BeforeSendResponseResult {
     
@@ -298,41 +294,40 @@ object mod {
     def https: typings.anyproxy.anyproxyStrings.https = "https".asInstanceOf[typings.anyproxy.anyproxyStrings.https]
   }
   
-  @js.native
   trait ProxyOptions extends StObject {
     
     /** If ignore certificate error in request, default to false */
-    var dangerouslyIgnoreUnauthorized: js.UndefOr[Boolean] = js.native
+    var dangerouslyIgnoreUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     /** Force intercept all https request, default to false */
-    var forceProxyHttps: js.UndefOr[Boolean] = js.native
+    var forceProxyHttps: js.UndefOr[Boolean] = js.undefined
     
     /** Host name of the proxy server, required when this is an https proxy */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /** Port number of proxy server */
-    var port: String | Double = js.native
+    var port: String | Double
     
     /** Recorder to use */
-    var recorder: js.UndefOr[ProxyRecorder] = js.native
+    var recorder: js.UndefOr[ProxyRecorder] = js.undefined
     
     /** Your rule module */
-    var rule: js.UndefOr[String | RuleModule] = js.native
+    var rule: js.UndefOr[String | RuleModule] = js.undefined
     
     /** If keep silent in console, false for default false */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     /** Throttle in kb/s, unlimited for default */
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
     
     /** Type of the proxy server, could be 'http' or 'https'. */
-    var `type`: js.UndefOr[http | https] = js.native
+    var `type`: js.UndefOr[http | https] = js.undefined
     
     /** Config for web interface */
-    var webInterface: js.UndefOr[WebInterfaceOptions] = js.native
+    var webInterface: js.UndefOr[WebInterfaceOptions] = js.undefined
     
     /** Whether to intercept websocket, default to false */
-    var wsIntercept: js.UndefOr[Boolean] = js.native
+    var wsIntercept: js.UndefOr[Boolean] = js.undefined
   }
   object ProxyOptions {
     
@@ -410,42 +405,41 @@ object mod {
     }
   }
   
-  @js.native
   trait RecorderInfo extends StObject {
     
-    var _id: Double = js.native
+    var _id: Double
     
-    var duration: Double | String = js.native
+    var duration: Double | String
     
-    var endTime: Double | String = js.native
+    var endTime: Double | String
     
-    var host: String = js.native
+    var host: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var length: Double | String = js.native
+    var length: Double | String
     
-    var method: String = js.native
+    var method: String
     
-    var mime: String = js.native
+    var mime: String
     
-    var path: String = js.native
+    var path: String
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var reqBody: js.Any = js.native
+    var reqBody: js.Any
     
     // req
-    var reqHeader: Record[String, String] = js.native
+    var reqHeader: Record[String, String]
     
-    var resHeader: (Record[String, String]) | String = js.native
+    var resHeader: (Record[String, String]) | String
     
-    var startTime: Double = js.native
+    var startTime: Double
     
     // res
-    var statusCode: Double | String = js.native
+    var statusCode: Double | String
     
-    var url: String = js.native
+    var url: String
   }
   object RecorderInfo {
     
@@ -525,18 +519,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestDetail extends StObject {
     
-    var _req: IncomingMessage = js.native
+    var _req: IncomingMessage
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var requestData: js.Any = js.native
+    var requestData: js.Any
     
-    var requestOptions: RequestOptions = js.native
+    var requestOptions: RequestOptions
     
-    var url: String = js.native
+    var url: String
   }
   object RequestDetail {
     
@@ -572,14 +565,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var body: js.Any = js.native
+    var body: js.Any
     
-    var header: Record[String, String] = js.native
+    var header: Record[String, String]
     
-    var statusCode: Double = js.native
+    var statusCode: Double
   }
   object Response {
     
@@ -603,12 +595,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ResponseDetail extends StObject {
     
-    var _res: ServerResponse = js.native
+    var _res: ServerResponse
     
-    var response: Response = js.native
+    var response: Response
   }
   object ResponseDetail {
     
@@ -629,7 +620,6 @@ object mod {
     }
   }
   
-  @js.native
   trait RuleModule extends StObject {
     
     /**
@@ -639,7 +629,7 @@ object mod {
       */
     var beforeDealHttpsRequest: js.UndefOr[
         js.Function1[/* requestDetail */ BeforeDealHttpsRequestDetail, MaybePromise[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     /** Before sending request to server, AnyProxy will call beforeSendRequest with param requestDetail. */
     var beforeSendRequest: js.UndefOr[
@@ -647,7 +637,7 @@ object mod {
           /* requestDetail */ RequestDetail, 
           MaybePromise[js.UndefOr[BeforeSendRequestResult | Null]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Before sending response to client, AnyProxy will call beforeSendResponse with param requestDetail responseDetail. */
     var beforeSendResponse: js.UndefOr[
@@ -656,7 +646,7 @@ object mod {
           /* responseDetail */ ResponseDetail, 
           MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** AnyProxy will call this method when failed to connect target server in https request. */
     var onConnectError: js.UndefOr[
@@ -665,7 +655,7 @@ object mod {
           /* err */ Error, 
           MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * AnyProxy will call this method when an error happened in request handling.
@@ -677,10 +667,10 @@ object mod {
           /* err */ Error, 
           MaybePromise[js.UndefOr[BeforeSendResponseResult | Null]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Introduction of this rule file. AnyProxy will read this field and give some tip to user. */
-    var summary: js.UndefOr[String] = js.native
+    var summary: js.UndefOr[String] = js.undefined
   }
   object RuleModule {
     
@@ -739,14 +729,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WebInterfaceOptions extends StObject {
     
     /** If enable web interface, default to false */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /** Port number for web interface */
-    var webPort: js.UndefOr[Double] = js.native
+    var webPort: js.UndefOr[Double] = js.undefined
   }
   object WebInterfaceOptions {
     

@@ -11,14 +11,16 @@ import typings.typedoc.reflectionsMod.ProjectReflection
 import typings.typedoc.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputComponentsMod {
   
-  @JSImport("typedoc/dist/lib/output/components", "Component")
+  @JSImport("typedoc/dist/lib/output/components", JSImport.Namespace)
   @js.native
-  def Component(options: ComponentOptions): ClassDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Component(options: ComponentOptions): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Component")(options.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
   
   @JSImport("typedoc/dist/lib/output/components", "ContextAwareRendererComponent")
   @js.native

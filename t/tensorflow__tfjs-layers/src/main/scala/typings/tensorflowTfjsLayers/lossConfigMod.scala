@@ -15,7 +15,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.sparse_categoric
 import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.squared_hinge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lossConfigMod {

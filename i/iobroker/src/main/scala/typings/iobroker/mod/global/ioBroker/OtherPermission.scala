@@ -6,24 +6,24 @@ import typings.iobroker.iobrokerStrings.other
 import typings.iobroker.iobrokerStrings.sendto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OtherPermission extends Permission {
+trait OtherPermission
+  extends StObject
+     with Permission {
   
   @JSName("operation")
-  var operation_OtherPermission: execute | http | sendto = js.native
+  var operation_OtherPermission: execute | http | sendto
   
   @JSName("type")
-  var type_OtherPermission: other = js.native
+  var type_OtherPermission: other
 }
 object OtherPermission {
   
   @scala.inline
-  def apply(operation: execute | http | sendto, `type`: other): OtherPermission = {
+  def apply(operation: execute | http | sendto): OtherPermission = {
     val __obj = js.Dynamic.literal(operation = operation.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("other")
     __obj.asInstanceOf[OtherPermission]
   }
   

@@ -3,38 +3,36 @@ package typings.chromeApps.chrome.webViewRequest
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specification of a cookie in HTTP Responses.
   */
-@js.native
 trait ResponseCookie extends StObject {
   
   /** Value of the Domain cookie attribute. */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** Value of the Expires cookie attribute. */
-  var expires: js.UndefOr[String] = js.native
+  var expires: js.UndefOr[String] = js.undefined
   
   /** Existence of the HttpOnly cookie attribute. */
-  var httpOnly: js.UndefOr[String] = js.native
+  var httpOnly: js.UndefOr[String] = js.undefined
   
   /** Value of the Max-Age cookie attribute */
-  var maxAge: js.UndefOr[integer] = js.native
+  var maxAge: js.UndefOr[integer] = js.undefined
   
   /** Name of a cookie. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Value of the Path cookie attribute. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Existence of the Secure cookie attribute. */
-  var secure: js.UndefOr[String] = js.native
+  var secure: js.UndefOr[String] = js.undefined
   
   /** Value of a cookie, may be padded in double-quotes. */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object ResponseCookie {
   

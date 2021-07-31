@@ -4,7 +4,6 @@ import typings.typedoc.abstractMod.Reflection
 import typings.typedoc.reflectionsDeclarationMod.DeclarationReflection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reflectionsReferenceMod {
@@ -48,14 +47,18 @@ object reflectionsReferenceMod {
   object ReferenceState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ReferenceState with Double] = js.native
+    def apply(value: Double): js.UndefOr[ReferenceState & Double] = js.native
     
     @js.native
-    sealed trait Resolved extends ReferenceState
-    /* 1 */ val Resolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Resolved with Double = js.native
+    sealed trait Resolved
+      extends StObject
+         with ReferenceState
+    /* 1 */ val Resolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Resolved & Double = js.native
     
     @js.native
-    sealed trait Unresolved extends ReferenceState
-    /* 0 */ val Unresolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Unresolved with Double = js.native
+    sealed trait Unresolved
+      extends StObject
+         with ReferenceState
+    /* 0 */ val Unresolved: typings.typedoc.reflectionsReferenceMod.ReferenceState.Unresolved & Double = js.native
   }
 }

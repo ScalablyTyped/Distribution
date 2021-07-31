@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.sequelize.anon.Msg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,64 +10,65 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Attributes
   */
-@js.native
-trait DefineAttributeColumnOptions extends ColumnOptions {
+trait DefineAttributeColumnOptions
+  extends StObject
+     with ColumnOptions {
   
   /**
     * Is this field an auto increment field
     */
-  var autoIncrement: js.UndefOr[Boolean] = js.native
+  var autoIncrement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Comment for the database
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Provide a custom getter for this column. Use `this.getDataValue(String)` to manipulate the underlying
     * values.
     */
-  var get: js.UndefOr[js.Function0[_]] = js.native
+  var get: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /**
     * What should happen when the referenced key is deleted. One of CASCADE, RESTRICT, SET DEFAULT, SET NULL or
     * NO ACTION
     */
-  var onDelete: js.UndefOr[String] = js.native
+  var onDelete: js.UndefOr[String] = js.undefined
   
   /**
     * What should happen when the referenced key is updated. One of CASCADE, RESTRICT, SET DEFAULT, SET NULL or
     * NO ACTION
     */
-  var onUpdate: js.UndefOr[String] = js.native
+  var onUpdate: js.UndefOr[String] = js.undefined
   
   /**
     * Primary key flag
     */
-  var primaryKey: js.UndefOr[Boolean] = js.native
+  var primaryKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An object with reference configurations
     */
-  var references: js.UndefOr[DefineAttributeColumnReferencesOptions] = js.native
+  var references: js.UndefOr[DefineAttributeColumnReferencesOptions] = js.undefined
   
   /**
     * Provide a custom setter for this column. Use `this.setDataValue(String, Value)` to manipulate the
     * underlying values.
     */
-  var set: js.UndefOr[js.Function1[/* val */ js.Any, Unit]] = js.native
+  var set: js.UndefOr[js.Function1[/* val */ js.Any, Unit]] = js.undefined
   
   /**
     * A string or a data type
     */
-  var `type`: String | DataTypeAbstract = js.native
+  var `type`: String | DataTypeAbstract
   
   /**
     * If true, the column will get a unique constraint. If a string is provided, the column will be part of a
     * composite unique index. If multiple columns have the same string, they will be part of the same unique
     * index
     */
-  var unique: js.UndefOr[Boolean | String | Msg] = js.native
+  var unique: js.UndefOr[Boolean | String | Msg] = js.undefined
   
   /**
     * An object of validations to execute for this column every time the model is saved. Can be either the
@@ -79,7 +79,7 @@ trait DefineAttributeColumnOptions extends ColumnOptions {
     * they are asynchronous. If the validator is sync, it should throw in the case of a failed validation, it
     * it is async, the callback should be called with the error text.
     */
-  var validate: js.UndefOr[DefineValidateOptions] = js.native
+  var validate: js.UndefOr[DefineValidateOptions] = js.undefined
   
   /**
     * Usage in object notation
@@ -93,7 +93,7 @@ trait DefineAttributeColumnOptions extends ColumnOptions {
     *   })
     * ```
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DefineAttributeColumnOptions {
   
@@ -120,7 +120,7 @@ object DefineAttributeColumnOptions {
     def setCommentUndefined: Self = StObject.set(x, "comment", js.undefined)
     
     @scala.inline
-    def setGet(value: () => _): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
+    def setGet(value: () => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetUndefined: Self = StObject.set(x, "get", js.undefined)

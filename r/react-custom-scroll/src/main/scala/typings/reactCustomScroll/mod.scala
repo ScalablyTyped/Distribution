@@ -6,7 +6,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,28 +25,27 @@ object mod extends Shortcut {
   @js.native
   val default: ComponentClass[CustomScrollProps, ComponentState] = js.native
   
-  @js.native
   trait CustomScrollProps extends StObject {
     
-    var addScrolledClass: js.UndefOr[Boolean] = js.native
+    var addScrolledClass: js.UndefOr[Boolean] = js.undefined
     
-    var allowOuterScroll: js.UndefOr[Boolean] = js.native
+    var allowOuterScroll: js.UndefOr[Boolean] = js.undefined
     
-    var flex: js.UndefOr[Double | String] = js.native
+    var flex: js.UndefOr[Double | String] = js.undefined
     
-    var freezePosition: js.UndefOr[Boolean] = js.native
+    var freezePosition: js.UndefOr[Boolean] = js.undefined
     
-    var heightRelativeToParent: js.UndefOr[String] = js.native
+    var heightRelativeToParent: js.UndefOr[String] = js.undefined
     
-    var keepAtBottom: js.UndefOr[Boolean] = js.native
+    var keepAtBottom: js.UndefOr[Boolean] = js.undefined
     
-    var minScrollHandleHeight: js.UndefOr[Double] = js.native
+    var minScrollHandleHeight: js.UndefOr[Double] = js.undefined
     
-    var onScoll: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], _]] = js.native
+    var onScoll: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var scrollTo: js.UndefOr[Double] = js.native
+    var scrollTo: js.UndefOr[Double] = js.undefined
   }
   object CustomScrollProps {
     
@@ -103,7 +101,7 @@ object mod extends Shortcut {
       def setMinScrollHandleHeightUndefined: Self = StObject.set(x, "minScrollHandleHeight", js.undefined)
       
       @scala.inline
-      def setOnScoll(value: /* e */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "onScoll", js.Any.fromFunction1(value))
+      def setOnScoll(value: /* e */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "onScoll", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnScollUndefined: Self = StObject.set(x, "onScoll", js.undefined)

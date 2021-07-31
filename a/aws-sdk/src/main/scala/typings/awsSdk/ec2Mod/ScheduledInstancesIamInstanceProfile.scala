@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledInstancesIamInstanceProfile extends StObject {
   
   /**
     * The Amazon Resource Name (ARN).
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The name.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object ScheduledInstancesIamInstanceProfile {
   

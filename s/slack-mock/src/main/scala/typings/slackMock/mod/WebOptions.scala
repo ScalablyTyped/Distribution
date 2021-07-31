@@ -3,19 +3,17 @@ package typings.slackMock.mod
 import typings.nock.mod.ReplyHeaderValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebOptions[T] extends StObject {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var headers: js.UndefOr[WebHttpHeaders] = js.native
+  var headers: js.UndefOr[WebHttpHeaders] = js.undefined
   
-  var statusCode: js.UndefOr[Double] = js.native
+  var statusCode: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[WebUrl] = js.native
+  var url: js.UndefOr[WebUrl] = js.undefined
 }
 object WebOptions {
   
@@ -26,7 +24,7 @@ object WebOptions {
   }
   
   @scala.inline
-  implicit class WebOptionsMutableBuilder[Self <: WebOptions[_], T] (val x: Self with WebOptions[T]) extends AnyVal {
+  implicit class WebOptionsMutableBuilder[Self <: WebOptions[?], T] (val x: Self & WebOptions[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

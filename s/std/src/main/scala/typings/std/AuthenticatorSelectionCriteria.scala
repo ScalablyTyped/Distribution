@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticatorSelectionCriteria extends StObject {
   
-  var authenticatorAttachment: js.UndefOr[AuthenticatorAttachment] = js.native
+  var authenticatorAttachment: js.UndefOr[AuthenticatorAttachment] = js.undefined
   
-  var requireResidentKey: js.UndefOr[scala.Boolean] = js.native
+  var requireResidentKey: js.UndefOr[scala.Boolean] = js.undefined
   
-  var residentKey: js.UndefOr[ResidentKeyRequirement] = js.native
+  var residentKey: js.UndefOr[ResidentKeyRequirement] = js.undefined
   
-  var userVerification: js.UndefOr[UserVerificationRequirement] = js.native
+  var userVerification: js.UndefOr[UserVerificationRequirement] = js.undefined
 }
 object AuthenticatorSelectionCriteria {
   

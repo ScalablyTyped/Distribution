@@ -3,19 +3,19 @@ package typings.nodeForge.mod.pki
 import typings.nodeForge.mod.asn1.Class
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CertificateField extends CertificateFieldOptions {
+trait CertificateField
+  extends StObject
+     with CertificateFieldOptions {
   
-  var extensions: js.UndefOr[js.Array[_]] = js.native
+  var extensions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var value: js.UndefOr[js.Array[_] | String] = js.native
+  var value: js.UndefOr[js.Array[js.Any] | String] = js.undefined
   
-  var valueConstructed: js.UndefOr[Boolean] = js.native
+  var valueConstructed: js.UndefOr[Boolean] = js.undefined
   
-  var valueTagClass: js.UndefOr[Class] = js.native
+  var valueTagClass: js.UndefOr[Class] = js.undefined
 }
 object CertificateField {
   
@@ -29,7 +29,7 @@ object CertificateField {
   implicit class CertificateFieldMutableBuilder[Self <: CertificateField] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setExtensions(value: js.Array[_]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
+    def setExtensions(value: js.Array[js.Any]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtensionsUndefined: Self = StObject.set(x, "extensions", js.undefined)
@@ -38,7 +38,7 @@ object CertificateField {
     def setExtensionsVarargs(value: js.Any*): Self = StObject.set(x, "extensions", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: js.Array[_] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: js.Array[js.Any] | String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueConstructed(value: Boolean): Self = StObject.set(x, "valueConstructed", value.asInstanceOf[js.Any])

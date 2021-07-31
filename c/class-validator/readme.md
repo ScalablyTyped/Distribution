@@ -4,15 +4,15 @@
 Typings are for version 0.12.2
 
 ## Library description:
-Class-based validation with Typescript / ES6 / ES5 using decorators or validation schemas. Supports both node.js and browser
+Decorator-based property validation for classes.
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | class-validator |
 | Keywords           | - |
-| # releases         | 18 |
-| # dependents       | 663 |
-| # downloads        | 16506773 |
+| # releases         | 20 |
+| # dependents       | 846 |
+| # downloads        | 21797691 |
 | # stars            | 5 |
 
 ## Links

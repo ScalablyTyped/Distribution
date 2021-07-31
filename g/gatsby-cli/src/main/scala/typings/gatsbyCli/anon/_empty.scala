@@ -2,118 +2,116 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _empty extends StObject {
   
-  var `10122`: CategoryLevel = js.native
+  var `10122`: CategoryLevel
   
-  var `10123`: CategoryLevel = js.native
+  var `10123`: CategoryLevel
   
-  var `10124`: CategoryLevel = js.native
+  var `10124`: CategoryLevel
   
-  var `10125`: CategoryLevel = js.native
+  var `10125`: CategoryLevel
   
-  var `10126`: CategoryLevel = js.native
+  var `10126`: CategoryLevel
   
-  var `10226`: Text = js.native
+  var `10226`: Text
   
-  var `11321`: Text = js.native
+  var `11321`: Text
   
-  var `11322`: LevelText = js.native
+  var `11322`: LevelText
   
-  var `11323`: LevelText = js.native
+  var `11323`: LevelText
   
-  var `11324`: Level = js.native
+  var `11324`: Level
   
-  var `11325`: LevelText = js.native
+  var `11325`: LevelText
   
-  var `11326`: LevelText = js.native
+  var `11326`: LevelText
   
-  var `11327`: LevelText = js.native
+  var `11327`: LevelText
   
-  var `11328`: LevelText = js.native
+  var `11328`: LevelText
   
-  var `11329`: Level = js.native
+  var `11329`: Level
   
-  var `11330`: CategoryLevel = js.native
+  var `11330`: CategoryLevel
   
-  var `11331`: CategoryLevel = js.native
+  var `11331`: CategoryLevel
   
-  var `11467`: DocsUrl = js.native
+  var `11467`: DocsUrl
   
-  var `11521`: DocsUrlLevel = js.native
+  var `11521`: DocsUrlLevel
   
-  var `11522`: DocsUrlLevelText = js.native
+  var `11522`: DocsUrlLevelText
   
-  var `11610`: Category = js.native
+  var `11610`: Category
   
-  var `11611`: Category = js.native
+  var `11611`: Category
   
-  var `11612`: Category = js.native
+  var `11612`: Category
   
-  var `11613`: DocsUrl = js.native
+  var `11613`: DocsUrl
   
-  var `11614`: DocsUrlString = js.native
+  var `11614`: DocsUrlString
   
-  var `11701`: Level = js.native
+  var `11701`: Level
   
-  var `85901`: Text = js.native
+  var `85901`: Text
   
-  var `85907`: Text = js.native
+  var `85907`: Text
   
-  var `85908`: CategoryLevel = js.native
+  var `85908`: CategoryLevel
   
-  var `85909`: Text = js.native
+  var `85909`: Text
   
-  var `85910`: CategoryDocsUrl = js.native
+  var `85910`: CategoryDocsUrl
   
-  var `85911`: CategoryLevel = js.native
+  var `85911`: CategoryLevel
   
-  var `85912`: Text = js.native
+  var `85912`: Text
   
-  var `85913`: Text = js.native
+  var `85913`: Text
   
-  var `85914`: Text = js.native
+  var `85914`: Text
   
-  var `85915`: Text = js.native
+  var `85915`: Text
   
-  var `85916`: CategoryLevel = js.native
+  var `85916`: CategoryLevel
   
-  var `85917`: Text = js.native
+  var `85917`: Text
   
-  var `85918`: CategoryLevel = js.native
+  var `85918`: CategoryLevel
   
-  var `85919`: CategoryLevel = js.native
+  var `85919`: CategoryLevel
   
-  var `85920`: CategoryLevel = js.native
+  var `85920`: CategoryLevel
   
-  var `85921`: CategoryLevel = js.native
+  var `85921`: CategoryLevel
   
-  var `85922`: CategoryLevel = js.native
+  var `85922`: CategoryLevel
   
-  var `85923`: CategoryLevel = js.native
+  var `85923`: CategoryLevel
   
-  var `85924`: CategoryLevel = js.native
+  var `85924`: CategoryLevel
   
-  var `85925`: CategoryLevel = js.native
+  var `85925`: CategoryLevel
   
-  var `85926`: CategoryLevel = js.native
+  var `85926`: CategoryLevel
   
-  var `85927`: CategoryLevel = js.native
+  var `85927`: CategoryLevel
   
-  var `95312`: Category = js.native
+  var `95312`: Category
   
-  var `95313`: DocsUrl = js.native
+  var `95313`: DocsUrl
   
-  var `98123`: Text = js.native
+  var `98123`: Text
   
-  var `98124`: CategoryLevel = js.native
+  var `98124`: CategoryLevel
   
   @JSName("")
-  var _empty: Level = js.native
+  var _empty: Level
 }
 object _empty {
   

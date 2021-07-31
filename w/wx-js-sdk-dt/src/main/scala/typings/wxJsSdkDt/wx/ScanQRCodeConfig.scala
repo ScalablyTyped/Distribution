@@ -3,27 +3,27 @@ package typings.wxJsSdkDt.wx
 import typings.wxJsSdkDt.anon.ResultStr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScanQRCodeConfig extends WxBaseRequestConfig {
+trait ScanQRCodeConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
     */
-  var needResult: js.UndefOr[Double] = js.native
+  var needResult: js.UndefOr[Double] = js.undefined
   
   /**
     * ["qrCode","barCode"], 可以指定扫二维码还是一维码，默认二者都有
     */
-  var scanType: js.UndefOr[js.Array[String]] = js.native
+  var scanType: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * resultStr 是当 needResult 为 1 时，扫码返回的结果
     */
   @JSName("success")
-  var success_ScanQRCodeConfig: js.UndefOr[js.Function1[/* res */ ResultStr, Unit]] = js.native
+  var success_ScanQRCodeConfig: js.UndefOr[js.Function1[/* res */ ResultStr, Unit]] = js.undefined
 }
 object ScanQRCodeConfig {
   

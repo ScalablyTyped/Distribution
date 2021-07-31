@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionPostalCodeArea extends StObject {
   
   /** Required. A range of postal codes. */
-  var postalCodes: js.UndefOr[js.Array[RegionPostalCodeAreaPostalCodeRange]] = js.native
+  var postalCodes: js.UndefOr[js.Array[RegionPostalCodeAreaPostalCodeRange]] = js.undefined
   
   /** Required. CLDR territory code or the country the postal code group applies to. */
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
 }
 object RegionPostalCodeArea {
   

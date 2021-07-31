@@ -9,17 +9,15 @@ import typings.reactAuthKit.reactAuthKitStrings.localstorage
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait AuthContextInterface extends StObject {
     
-    var authState: TokenInterface = js.native
+    var authState: TokenInterface
     
-    var setAuthState: Dispatch[SetStateAction[TokenInterface]] = js.native
+    var setAuthState: Dispatch[SetStateAction[TokenInterface]]
   }
   object AuthContextInterface {
     
@@ -40,10 +38,11 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait AuthProviderProps extends TokenObjectParamsInterface {
+  trait AuthProviderProps
+    extends StObject
+       with TokenObjectParamsInterface {
     
-    var children: ReactChildren = js.native
+    var children: ReactChildren
   }
   object AuthProviderProps {
     
@@ -67,22 +66,21 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TokenInterface extends StObject {
     
-    var authState: js.Object | Null = js.native
+    var authState: js.Object | Null
     
-    var authToken: String | Null = js.native
+    var authToken: String | Null
     
-    var authTokenType: String | Null = js.native
+    var authTokenType: String | Null
     
-    var expireAt: Date | Null = js.native
+    var expireAt: Date | Null
   }
   object TokenInterface {
     
     @scala.inline
     def apply(): TokenInterface = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(authState = null, authToken = null, authTokenType = null, expireAt = null)
       __obj.asInstanceOf[TokenInterface]
     }
     
@@ -115,20 +113,19 @@ object typesMod {
     }
   }
   
-  @js.native
   trait TokenObjectParamsInterface extends StObject {
     
-    var authStorageName: String = js.native
+    var authStorageName: String
     
-    var authStorageType: cookie | localstorage = js.native
+    var authStorageType: cookie | localstorage
     
-    var authTimeStorageName: String = js.native
+    var authTimeStorageName: String
     
-    var cookieDomain: js.UndefOr[String] = js.native
+    var cookieDomain: js.UndefOr[String] = js.undefined
     
-    var cookieSecure: js.UndefOr[Boolean] = js.native
+    var cookieSecure: js.UndefOr[Boolean] = js.undefined
     
-    var stateStorageName: String = js.native
+    var stateStorageName: String
   }
   object TokenObjectParamsInterface {
     
@@ -172,16 +169,15 @@ object typesMod {
     }
   }
   
-  @js.native
   trait signInFunctionParams extends StObject {
     
-    var authState: js.Object = js.native
+    var authState: js.Object
     
-    var expiresIn: Double = js.native
+    var expiresIn: Double
     
-    var token: String = js.native
+    var token: String
     
-    var tokenType: String | Bearer = js.native
+    var tokenType: String | Bearer
   }
   object signInFunctionParams {
     

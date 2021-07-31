@@ -3,12 +3,14 @@ package typings.typeorm
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listenersAfterRemoveMod {
   
-  @JSImport("typeorm/decorator/listeners/AfterRemove", "AfterRemove")
+  @JSImport("typeorm/decorator/listeners/AfterRemove", JSImport.Namespace)
   @js.native
-  def AfterRemove(): PropertyDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def AfterRemove(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("AfterRemove")().asInstanceOf[PropertyDecorator]
 }

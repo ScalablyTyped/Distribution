@@ -3,17 +3,15 @@ package typings.meteor.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayFilters extends StObject {
   
-  var arrayFilters: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var arrayFilters: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object ArrayFilters {
   
@@ -27,7 +25,7 @@ object ArrayFilters {
   implicit class ArrayFiltersMutableBuilder[Self <: ArrayFilters] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArrayFilters(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
+    def setArrayFilters(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setArrayFiltersUndefined: Self = StObject.set(x, "arrayFilters", js.undefined)

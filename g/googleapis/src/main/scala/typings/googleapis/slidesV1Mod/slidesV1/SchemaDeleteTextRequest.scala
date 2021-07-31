@@ -2,25 +2,23 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes text from a shape or a table cell.
   */
-@js.native
 trait SchemaDeleteTextRequest extends StObject {
   
   /**
     * The optional table cell location if the text is to be deleted from a
     * table cell. If present, the object_id must refer to a table.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The object ID of the shape or table from which the text will be deleted.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The range of text to delete, based on TextElement indexes.  There is
@@ -35,7 +33,7 @@ trait SchemaDeleteTextRequest extends StObject {
     * are merged.  Ranges that include only one code unit of a surrogate pair
     * are expanded to include both code units.
     */
-  var textRange: js.UndefOr[SchemaRange] = js.native
+  var textRange: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaDeleteTextRequest {
   

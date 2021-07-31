@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -32,7 +31,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Spritesheet")
 @js.native
 class Spritesheet protected ()
-  extends typings.pixiJs.PIXI.Spritesheet {
+  extends StObject
+     with typings.pixiJs.PIXI.Spritesheet {
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any) = this()
   def this(baseTexture: typings.pixiJs.PIXI.Texture, data: js.Any) = this()
   def this(baseTexture: typings.pixiJs.PIXI.BaseTexture, data: js.Any, resolutionFilename: String) = this()

@@ -4,17 +4,17 @@ import typings.vexflow.Vex.Flow.Modifier.Position
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Bend extends Modifier {
+trait Bend
+  extends StObject
+     with Modifier {
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def setFont(font: String): Bend = js.native
+  def setFont(font: String): Bend
   
-  def updateWidth(): Bend = js.native
+  def updateWidth(): Bend
 }
 object Bend {
   

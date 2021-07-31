@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -84,7 +83,7 @@ trait projection extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-projection.html#load)
     */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   def project(geometry: js.Array[Geometry_], outSpatialReference: SpatialReference): Geometry_ | js.Array[Geometry_] = js.native
   def project(geometry: js.Array[Geometry_], outSpatialReference: SpatialReferenceProperties): Geometry_ | js.Array[Geometry_] = js.native

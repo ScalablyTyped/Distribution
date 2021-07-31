@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,44 +15,45 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * words to be used may be provided along with a failure-type that may specify why the word was not correct.
   * @see com.sun.star.linguistic2.SpellFailure
   */
-@js.native
-trait XSpellAlternatives extends XInterface {
+trait XSpellAlternatives
+  extends StObject
+     with XInterface {
   
   /** @returns the sequence of suggested spelling alternatives. */
-  val Alternatives: SafeArray[String] = js.native
+  val Alternatives: SafeArray[String]
   
   /** @returns the number of suggested spelling alternatives available. */
-  val AlternativesCount: Double = js.native
+  val AlternativesCount: Double
   
   /**
     * @returns the type (reason) for spell checking to have failed verification.
     * @see com.sun.star.linguistic2.SpellFailure
     */
-  val FailureType: Double = js.native
+  val FailureType: Double
   
   /** @returns the Locale which specifies the language of the misspelled word. */
-  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the word that was misspelled. */
-  val Word: String = js.native
+  val Word: String
   
   /** @returns the sequence of suggested spelling alternatives. */
-  def getAlternatives(): SafeArray[String] = js.native
+  def getAlternatives(): SafeArray[String]
   
   /** @returns the number of suggested spelling alternatives available. */
-  def getAlternativesCount(): Double = js.native
+  def getAlternativesCount(): Double
   
   /**
     * @returns the type (reason) for spell checking to have failed verification.
     * @see com.sun.star.linguistic2.SpellFailure
     */
-  def getFailureType(): Double = js.native
+  def getFailureType(): Double
   
   /** @returns the Locale which specifies the language of the misspelled word. */
-  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the word that was misspelled. */
-  def getWord(): String = js.native
+  def getWord(): String
 }
 object XSpellAlternatives {
   

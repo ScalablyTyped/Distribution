@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePermission extends StObject {
   
   /**
     * The IAM action to grant or revoke permissions on.
     */
-  var Actions: ActionList = js.native
+  var Actions: ActionList
   
   /**
     * The Amazon Resource Name (ARN) of the principal. This can be one of the following:   The ARN of an Amazon QuickSight user or group associated with a data source or dataset. (This is common.)   The ARN of an Amazon QuickSight user, group, or namespace associated with an analysis, dashboard, template, or theme. (This is common.)   The ARN of an AWS account root: This is an IAM ARN rather than a QuickSight ARN. Use this option only to share resources (templates) across AWS accounts. (This is less common.)   
     */
-  var Principal: typings.awsSdk.quicksightMod.Principal = js.native
+  var Principal: typings.awsSdk.quicksightMod.Principal
 }
 object ResourcePermission {
   

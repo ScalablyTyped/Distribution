@@ -10,13 +10,14 @@ import typings.rdfExt.variableMod.VariableExt
 import typings.rdfJs.mod.Quad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object quadMod {
   
   @js.native
-  trait QuadExt extends Quad {
+  trait QuadExt
+    extends StObject
+       with Quad {
     
     @JSName("graph")
     var graph_QuadExt: DefaultGraphExt | NamedNodeExt[String] | BlankNodeExt | VariableExt = js.native

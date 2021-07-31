@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DicomConfig extends StObject {
   
   /** Tag filtering profile that determines which tags to keep/remove. */
-  var filterProfile: js.UndefOr[String] = js.native
+  var filterProfile: js.UndefOr[String] = js.undefined
   
   /** List of tags to keep. Remove all other tags. */
-  var keepList: js.UndefOr[TagFilterList] = js.native
+  var keepList: js.UndefOr[TagFilterList] = js.undefined
   
   /** List of tags to remove. Keep all other tags. */
-  var removeList: js.UndefOr[TagFilterList] = js.native
+  var removeList: js.UndefOr[TagFilterList] = js.undefined
   
   /**
     * If true, skip replacing StudyInstanceUID, SeriesInstanceUID, SOPInstanceUID, and MediaStorageSOPInstanceUID and leave them untouched. The Cloud Healthcare API regenerates these UIDs
@@ -23,7 +21,7 @@ trait DicomConfig extends StObject {
     * database of the original images containing the UIDs, it would be possible to recover the individual's identity."
     * http://dicom.nema.org/medical/dicom/current/output/chtml/part15/sect_E.3.9.html
     */
-  var skipIdRedaction: js.UndefOr[Boolean] = js.native
+  var skipIdRedaction: js.UndefOr[Boolean] = js.undefined
 }
 object DicomConfig {
   

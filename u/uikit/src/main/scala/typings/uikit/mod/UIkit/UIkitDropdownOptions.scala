@@ -2,33 +2,31 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitDropdownOptions extends StObject {
   
-  var animation: js.UndefOr[String] = js.native
+  var animation: js.UndefOr[String] = js.undefined
   
-  var boundary: js.UndefOr[String] = js.native
+  var boundary: js.UndefOr[String] = js.undefined
   
-  var `boundary-align`: js.UndefOr[Boolean] = js.native
+  var `boundary-align`: js.UndefOr[Boolean] = js.undefined
   
-  var `delay-hide`: js.UndefOr[Double] = js.native
+  var `delay-hide`: js.UndefOr[Double] = js.undefined
   
-  var `delay-show`: js.UndefOr[Double] = js.native
+  var `delay-show`: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var flip: js.UndefOr[Boolean | String] = js.native
+  var flip: js.UndefOr[Boolean | String] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var pos: js.UndefOr[String] = js.native
+  var pos: js.UndefOr[String] = js.undefined
   
-  var toggle: js.UndefOr[String | Boolean] = js.native
+  var toggle: js.UndefOr[String | Boolean] = js.undefined
 }
 object UIkitDropdownOptions {
   

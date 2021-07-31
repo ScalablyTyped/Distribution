@@ -2,21 +2,19 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaApkListing extends StObject {
   
   /**
     * The language code, in BCP 47 format (eg &quot;en-US&quot;).
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Describe what&#39;s new in your APK.
     */
-  var recentChanges: js.UndefOr[String] = js.native
+  var recentChanges: js.UndefOr[String] = js.undefined
 }
 object SchemaApkListing {
   

@@ -11,7 +11,7 @@ Angular.js service providing simple notifications using Bootstrap 3 styles with 
 | Keywords           | angular, notification, notify, bootstrap |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 280467 |
+| # downloads        | 302902 |
 | # stars            | 0 |
 
 ## Links

@@ -4,51 +4,51 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcChangeset extends TfvcChangesetRef {
+trait TfvcChangeset
+  extends StObject
+     with TfvcChangesetRef {
   
   /**
     * Account Id of the changeset.
     */
-  var accountId: String = js.native
+  var accountId: String
   
   /**
     * List of associated changes.
     */
-  var changes: js.Array[TfvcChange] = js.native
+  var changes: js.Array[TfvcChange]
   
   /**
     * Checkin Notes for the changeset.
     */
-  var checkinNotes: js.Array[CheckinNote] = js.native
+  var checkinNotes: js.Array[CheckinNote]
   
   /**
     * Collection Id of the changeset.
     */
-  var collectionId: String = js.native
+  var collectionId: String
   
   /**
     * Are more changes available.
     */
-  var hasMoreChanges: Boolean = js.native
+  var hasMoreChanges: Boolean
   
   /**
     * Policy Override for the changeset.
     */
-  var policyOverride: TfvcPolicyOverrideInfo = js.native
+  var policyOverride: TfvcPolicyOverrideInfo
   
   /**
     * Team Project Ids for the changeset.
     */
-  var teamProjectIds: js.Array[String] = js.native
+  var teamProjectIds: js.Array[String]
   
   /**
     * List of work items associated with the changeset.
     */
-  var workItems: js.Array[AssociatedWorkItem] = js.native
+  var workItems: js.Array[AssociatedWorkItem]
 }
 object TfvcChangeset {
   

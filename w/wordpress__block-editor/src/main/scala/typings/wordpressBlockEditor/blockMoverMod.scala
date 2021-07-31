@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.blockMoverMod.BlockMover.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockMoverMod {
@@ -24,24 +23,23 @@ object blockMoverMod {
   
   object BlockMover {
     
-    @js.native
     trait Props extends StObject {
       
-      var blockElementId: js.UndefOr[String] = js.native
+      var blockElementId: js.UndefOr[String] = js.undefined
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var clientIds: js.Array[String] = js.native
+      var clientIds: js.Array[String]
       
-      var instanceId: js.UndefOr[String] = js.native
+      var instanceId: js.UndefOr[String] = js.undefined
       
-      var isDraggable: js.UndefOr[Boolean] = js.native
+      var isDraggable: js.UndefOr[Boolean] = js.undefined
       
-      var isHidden: js.UndefOr[Boolean] = js.native
+      var isHidden: js.UndefOr[Boolean] = js.undefined
       
-      var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.native
+      var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var onDragStart: js.UndefOr[js.Function0[Unit]] = js.native
+      var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     }
     object Props {
       

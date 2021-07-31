@@ -2,19 +2,17 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockstrapCarouselDefaults extends StObject {
   
-  var controlsTemplate: KnockstrapCarouselDefaultsControlsTemplate = js.native
+  var controlsTemplate: KnockstrapCarouselDefaultsControlsTemplate
   
-  var css: String = js.native
+  var css: String
   
-  var indicatorsTemplate: KnockstrapCarouselDefaultsIndicatorsTemplate = js.native
+  var indicatorsTemplate: KnockstrapCarouselDefaultsIndicatorsTemplate
   
-  var itemTemplate: KnockstrapCarouselDefaultsItemTemplate = js.native
+  var itemTemplate: KnockstrapCarouselDefaultsItemTemplate
 }
 object KnockstrapCarouselDefaults {
   

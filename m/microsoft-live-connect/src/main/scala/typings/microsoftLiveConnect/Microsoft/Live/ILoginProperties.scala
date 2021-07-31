@@ -2,13 +2,11 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 'Properties' object passed into the WL.login method.
   */
-@js.native
 trait ILoginProperties extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait ILoginProperties extends StObject {
     * value overrides the default redirect URI that is provided in the call
     * to WL.init.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the scopes to which the user who is signing in consents.
@@ -34,7 +32,7 @@ trait ILoginProperties extends StObject {
     * Server-side scenarios.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var scope: js.Any = js.native
+  var scope: js.Any
   
   /**
     * Windows Store apps using JavaScript: not applicable.
@@ -46,7 +44,7 @@ trait ILoginProperties extends StObject {
     * authorization code" section.
     * http://msdn.microsoft.com/en-us/library/live/hh243649.aspx
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object ILoginProperties {
   

@@ -29,22 +29,21 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides default settings of a text component for paragraph and character properties. */
-@js.native
 trait Defaults
-  extends XPropertySet
+  extends StObject
      with CharacterProperties
      with ParagraphProperties
      with CharacterPropertiesAsian
      with CharacterPropertiesComplex
      with ParagraphPropertiesAsian
-     with ParagraphPropertiesComplex {
+     with ParagraphPropertiesComplex
+     with XPropertySet {
   
   /** default tab-distance to be used. */
-  var TabStopDistance: Double = js.native
+  var TabStopDistance: Double
 }
 object Defaults {
   

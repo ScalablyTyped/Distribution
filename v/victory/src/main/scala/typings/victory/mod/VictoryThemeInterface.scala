@@ -2,18 +2,16 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryThemeInterface extends StObject {
   
   /**
     * Default theme
     */
-  var grayscale: VictoryThemeDefinition = js.native
+  var grayscale: VictoryThemeDefinition
   
-  var material: VictoryThemeDefinition = js.native
+  var material: VictoryThemeDefinition
 }
 object VictoryThemeInterface {
   

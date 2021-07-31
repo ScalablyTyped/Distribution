@@ -5,24 +5,23 @@ import typings.postcss.mod.Root_
 import typings.stylableCore.typesMod.CSSObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
   
-  @JSImport("@stylable/core/cjs/parser", "cssObjectToAst")
+  @JSImport("@stylable/core/cjs/parser", JSImport.Namespace)
   @js.native
-  def cssObjectToAst(cssObject: CSSObject): js.Any = js.native
-  @JSImport("@stylable/core/cjs/parser", "cssObjectToAst")
-  @js.native
-  def cssObjectToAst(cssObject: CSSObject, sourceFile: String): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@stylable/core/cjs/parser", "safeParse")
-  @js.native
-  def safeParse(css: String): Root_ = js.native
-  @JSImport("@stylable/core/cjs/parser", "safeParse")
-  @js.native
-  def safeParse(css: String, options: ProcessOptions): Root_ = js.native
+  @scala.inline
+  def cssObjectToAst(cssObject: CSSObject): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def cssObjectToAst(cssObject: CSSObject, sourceFile: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("cssObjectToAst")(cssObject.asInstanceOf[js.Any], sourceFile.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def safeParse(css: String): Root_ = ^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any]).asInstanceOf[Root_]
+  @scala.inline
+  def safeParse(css: String, options: ProcessOptions): Root_ = (^.asInstanceOf[js.Dynamic].applyDynamic("safeParse")(css.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Root_]
   
   type CssParser = js.Function2[/* css */ String, /* options */ js.UndefOr[ProcessOptions], Root_]
 }

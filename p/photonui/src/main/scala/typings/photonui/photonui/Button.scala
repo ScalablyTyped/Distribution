@@ -5,32 +5,32 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Button extends Widget {
+trait Button
+  extends StObject
+     with Widget {
   
-  var appearance: String = js.native
+  var appearance: String
   
   //  normal | flat
-  var buttonColor: String = js.native
+  var buttonColor: String
   
-  var leftIcon: BaseIcon = js.native
+  var leftIcon: BaseIcon
   
-  var leftIconName: String = js.native
+  var leftIconName: String
   
-  var leftIconVisible: Boolean = js.native
+  var leftIconVisible: Boolean
   
-  var rightIcon: BaseIcon = js.native
+  var rightIcon: BaseIcon
   
-  var rightIconName: String = js.native
+  var rightIconName: String
   
-  var rightIconVisible: Boolean = js.native
+  var rightIconVisible: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var textVisible: Boolean = js.native
+  var textVisible: Boolean
 }
 object Button {
   

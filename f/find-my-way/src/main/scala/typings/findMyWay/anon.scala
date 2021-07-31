@@ -5,21 +5,19 @@ import typings.findMyWay.mod.Handler
 import typings.findMyWay.mod.Req
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Del[V /* <: HTTPVersion */] extends StObject {
     
-    def del(version: String): Unit = js.native
+    def del(version: String): Unit
     
-    def empty(): Unit = js.native
+    def empty(): Unit
     
-    def get(version: String): Handler[V] | Null = js.native
+    def get(version: String): Handler[V] | Null
     
-    def set(version: String, store: Handler[V]): Unit = js.native
+    def set(version: String, store: Handler[V]): Unit
   }
   object Del {
     
@@ -35,7 +33,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DelMutableBuilder[Self <: Del[_], V /* <: HTTPVersion */] (val x: Self with Del[V]) extends AnyVal {
+    implicit class DelMutableBuilder[Self <: Del[?], V /* <: HTTPVersion */] (val x: Self & Del[V]) extends AnyVal {
       
       @scala.inline
       def setDel(value: String => Unit): Self = StObject.set(x, "del", js.Any.fromFunction1(value))

@@ -3,11 +3,12 @@ package typings.tryghostContentApi.mod
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BrowseResults[T] extends Array[T] {
+trait BrowseResults[T]
+  extends StObject
+     with Array[T] {
   
   var meta: typings.tryghostContentApi.anon.Pagination = js.native
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The tag key. Length Constraints: Maximum length of 128 characters.
     */
-  var Key: js.UndefOr[TagKey] = js.native
+  var Key: js.UndefOr[TagKey] = js.undefined
   
   /**
     * The tag value. Length Constraints: Maximum length of 256 characters.
     */
-  var Value: js.UndefOr[TagValue] = js.native
+  var Value: js.UndefOr[TagValue] = js.undefined
 }
 object Tag {
   

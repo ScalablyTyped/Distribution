@@ -2,7 +2,6 @@ package typings.nodeDijkstra
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,8 +51,10 @@ object mod {
     *
     * const route = new Graph(g)
     */
-  class ^ () extends Graph {
-    def this(nodes: js.Array[_]) = this()
+  class ^ ()
+    extends StObject
+       with Graph {
+    def this(nodes: js.Array[js.Any]) = this()
   }
   
   @js.native
@@ -147,16 +148,15 @@ object mod {
     def removeNode(name: String): Graph = js.native
   }
   
-  @js.native
   trait PathOption extends StObject {
     
-    var avoid: js.UndefOr[js.Array[_]] = js.native
+    var avoid: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var cost: js.UndefOr[Boolean] = js.native
+    var cost: js.UndefOr[Boolean] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object PathOption {
     
@@ -170,7 +170,7 @@ object mod {
     implicit class PathOptionMutableBuilder[Self <: PathOption] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAvoid(value: js.Array[_]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
+      def setAvoid(value: js.Array[js.Any]): Self = StObject.set(x, "avoid", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAvoidUndefined: Self = StObject.set(x, "avoid", js.undefined)

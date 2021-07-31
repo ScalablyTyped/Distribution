@@ -3,30 +3,28 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Exception extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val AppointmentItem: typings.activexOutlook.Outlook.AppointmentItem = js.native
+  val AppointmentItem: typings.activexOutlook.Outlook.AppointmentItem
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Deleted: Boolean = js.native
+  val Deleted: Boolean
   
-  val ItemProperties: typings.activexOutlook.Outlook.ItemProperties = js.native
+  val ItemProperties: typings.activexOutlook.Outlook.ItemProperties
   
-  val OriginalDate: VarDate = js.native
+  val OriginalDate: VarDate
   
   @JSName("Outlook.Exception_typekey")
-  var OutlookDotException_typekey: Exception = js.native
+  var OutlookDotException_typekey: Exception
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Exception {
   

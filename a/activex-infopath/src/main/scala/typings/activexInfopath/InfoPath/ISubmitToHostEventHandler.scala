@@ -2,16 +2,14 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISubmitToHostEventHandler extends StObject {
   
   @JSName("InfoPath.ISubmitToHostEventHandler_typekey")
-  var InfoPathDotISubmitToHostEventHandler_typekey: ISubmitToHostEventHandler = js.native
+  var InfoPathDotISubmitToHostEventHandler_typekey: ISubmitToHostEventHandler
   
-  def SubmitToHostEventHandler(punkSender: js.Any, bstrAdapterName: String, pbstrErrorMessage: String): Double = js.native
+  def SubmitToHostEventHandler(punkSender: js.Any, bstrAdapterName: String, pbstrErrorMessage: String): Double
 }
 object ISubmitToHostEventHandler {
   

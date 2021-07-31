@@ -5,23 +5,21 @@ import typings.rollup.anon.Left
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<rollup.rollup.OutputPluginHooks> */
 /* Inlined parent std.Partial<rollup.rollup.OutputPluginValueHooks> */
-@js.native
 trait OutputPlugin extends StObject {
   
   var augmentChunkHash: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* chunk */ PreRenderedChunk, String | Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var banner: js.UndefOr[AddonHook] = js.native
+  var banner: js.UndefOr[AddonHook] = js.undefined
   
-  var cacheKey: js.UndefOr[String] = js.native
+  var cacheKey: js.UndefOr[String] = js.undefined
   
-  var footer: js.UndefOr[AddonHook] = js.native
+  var footer: js.UndefOr[AddonHook] = js.undefined
   
   var generateBundle: js.UndefOr[
     js.ThisFunction3[
@@ -31,11 +29,11 @@ trait OutputPlugin extends StObject {
       /* isWrite */ Boolean, 
       Unit | js.Promise[Unit]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var intro: js.UndefOr[AddonHook] = js.native
+  var intro: js.UndefOr[AddonHook] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var outputOptions: js.UndefOr[
     js.ThisFunction1[
@@ -43,19 +41,19 @@ trait OutputPlugin extends StObject {
       /* options */ OutputOptions, 
       js.UndefOr[OutputOptions | Null]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var outro: js.UndefOr[AddonHook] = js.native
+  var outro: js.UndefOr[AddonHook] = js.undefined
   
-  var renderChunk: js.UndefOr[RenderChunkHook] = js.native
+  var renderChunk: js.UndefOr[RenderChunkHook] = js.undefined
   
   var renderDynamicImport: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* options */ CustomResolution, js.UndefOr[Left | Null]]
-  ] = js.native
+  ] = js.undefined
   
   var renderError: js.UndefOr[
     js.ThisFunction1[/* this */ PluginContext, /* err */ js.UndefOr[Error], js.Promise[Unit] | Unit]
-  ] = js.native
+  ] = js.undefined
   
   var renderStart: js.UndefOr[
     js.ThisFunction2[
@@ -64,13 +62,13 @@ trait OutputPlugin extends StObject {
       /* inputOptions */ NormalizedInputOptions, 
       js.Promise[Unit] | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.native
+  var resolveAssetUrl: js.UndefOr[ResolveAssetUrlHook] = js.undefined
   
-  var resolveFileUrl: js.UndefOr[ResolveFileUrlHook] = js.native
+  var resolveFileUrl: js.UndefOr[ResolveFileUrlHook] = js.undefined
   
-  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.native
+  var resolveImportMeta: js.UndefOr[ResolveImportMetaHook] = js.undefined
   
   var writeBundle: js.UndefOr[
     js.ThisFunction2[
@@ -79,7 +77,7 @@ trait OutputPlugin extends StObject {
       /* bundle */ OutputBundle, 
       Unit | js.Promise[Unit]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object OutputPlugin {
   

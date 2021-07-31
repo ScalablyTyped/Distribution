@@ -11,39 +11,37 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectRowProps[T] extends StObject {
   
-  var bgColor: js.UndefOr[js.Function2[/* row */ T, /* rowIndex */ Double, String]] = js.native
+  var bgColor: js.UndefOr[js.Function2[/* row */ T, /* rowIndex */ Double, String]] = js.undefined
   
-  var classes: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String] = js.native
+  var classes: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String] = js.undefined
   
-  var clickToEdit: js.UndefOr[Boolean] = js.native
+  var clickToEdit: js.UndefOr[Boolean] = js.undefined
   
-  var clickToExpand: js.UndefOr[Boolean] = js.native
+  var clickToExpand: js.UndefOr[Boolean] = js.undefined
   
-  var clickToSelect: js.UndefOr[Boolean] = js.native
+  var clickToSelect: js.UndefOr[Boolean] = js.undefined
   
   var headerColumnStyle: js.UndefOr[
     (js.Function1[/* status */ TableCheckboxStatus, js.UndefOr[CSSProperties]]) | CSSProperties
-  ] = js.native
+  ] = js.undefined
   
-  var hideSelectAll: js.UndefOr[Boolean] = js.native
+  var hideSelectAll: js.UndefOr[Boolean] = js.undefined
   
-  var hideSelectColumn: js.UndefOr[Boolean] = js.native
+  var hideSelectColumn: js.UndefOr[Boolean] = js.undefined
   
-  var mode: RowSelectionType = js.native
+  var mode: RowSelectionType
   
-  var nonSelectable: js.UndefOr[js.Array[Double]] = js.native
+  var nonSelectable: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var nonSelectableClasses: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String] = js.native
+  var nonSelectableClasses: js.UndefOr[(js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[String]]) | String] = js.undefined
   
   var nonSelectableStyle: js.UndefOr[
     (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[CSSProperties]]) | CSSProperties
-  ] = js.native
+  ] = js.undefined
   
   var onSelect: js.UndefOr[
     js.Function4[
@@ -53,7 +51,7 @@ trait SelectRowProps[T] extends StObject {
       /* e */ SyntheticEvent[Element, Event], 
       Unit | Boolean
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * This callback function will be called when select/unselect all and it only work when you configure selectRow.mode as checkbox.
@@ -65,21 +63,21 @@ trait SelectRowProps[T] extends StObject {
       /* e */ SyntheticEvent[Element, Event], 
       Unit | js.Array[Double]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var selectColumnPosition: js.UndefOr[left | right] = js.native
+  var selectColumnPosition: js.UndefOr[left | right] = js.undefined
   
-  var selectColumnStyle: js.UndefOr[(js.Function1[/* props */ Disabled, js.UndefOr[CSSProperties]]) | CSSProperties] = js.native
+  var selectColumnStyle: js.UndefOr[(js.Function1[/* props */ Disabled, js.UndefOr[CSSProperties]]) | CSSProperties] = js.undefined
   
-  var selected: js.UndefOr[js.Array[Double | String]] = js.native
+  var selected: js.UndefOr[js.Array[Double | String]] = js.undefined
   
-  var selectionHeaderRenderer: js.UndefOr[js.Function1[/* options */ Indeterminate, typings.react.mod.global.JSX.Element]] = js.native
+  var selectionHeaderRenderer: js.UndefOr[js.Function1[/* options */ Indeterminate, typings.react.mod.global.JSX.Element]] = js.undefined
   
-  var selectionRenderer: js.UndefOr[js.Function1[/* options */ Checked, typings.react.mod.global.JSX.Element]] = js.native
+  var selectionRenderer: js.UndefOr[js.Function1[/* options */ Checked, typings.react.mod.global.JSX.Element]] = js.undefined
   
   var style: js.UndefOr[
     (js.Function2[/* row */ T, /* rowIndex */ Double, js.UndefOr[CSSProperties]]) | CSSProperties
-  ] = js.native
+  ] = js.undefined
 }
 object SelectRowProps {
   
@@ -90,7 +88,7 @@ object SelectRowProps {
   }
   
   @scala.inline
-  implicit class SelectRowPropsMutableBuilder[Self <: SelectRowProps[_], T] (val x: Self with SelectRowProps[T]) extends AnyVal {
+  implicit class SelectRowPropsMutableBuilder[Self <: SelectRowProps[?], T] (val x: Self & SelectRowProps[T]) extends AnyVal {
     
     @scala.inline
     def setBgColor(value: (/* row */ T, /* rowIndex */ Double) => String): Self = StObject.set(x, "bgColor", js.Any.fromFunction2(value))

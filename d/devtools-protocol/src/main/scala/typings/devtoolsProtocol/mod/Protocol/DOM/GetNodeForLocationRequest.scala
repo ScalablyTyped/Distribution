@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetNodeForLocationRequest extends StObject {
   
   /**
     * Whether to ignore pointer-events: none on elements and hit test them.
     */
-  var ignorePointerEventsNone: js.UndefOr[Boolean] = js.native
+  var ignorePointerEventsNone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * False to skip to the nearest non-UA shadow root ancestor (default: false).
     */
-  var includeUserAgentShadowDOM: js.UndefOr[Boolean] = js.native
+  var includeUserAgentShadowDOM: js.UndefOr[Boolean] = js.undefined
   
   /**
     * X coordinate.
     */
-  var x: integer = js.native
+  var x: integer
   
   /**
     * Y coordinate.
     */
-  var y: integer = js.native
+  var y: integer
 }
 object GetNodeForLocationRequest {
   

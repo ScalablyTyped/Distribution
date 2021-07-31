@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,46 +13,47 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentEventListener
   * @version 1.0
   */
-@js.native
-trait XContent extends XInterface {
+trait XContent
+  extends StObject
+     with XInterface {
   
   /**
     * returns a type string, which is unique for that type of content (e.g. "application/vnd.sun.star.hierarchy-folder").
     * @returns the content type string.
     */
-  val ContentType: String = js.native
+  val ContentType: String
   
   /**
     * returns the identifier of the content.
     * @returns the identifier.
     */
-  val Identifier: XContentIdentifier = js.native
+  val Identifier: XContentIdentifier
   
   /**
     * adds a listener for content events.
     * @param Listener the listener to add.
     * @see ContentEvent
     */
-  def addContentEventListener(Listener: XContentEventListener): Unit = js.native
+  def addContentEventListener(Listener: XContentEventListener): Unit
   
   /**
     * returns a type string, which is unique for that type of content (e.g. "application/vnd.sun.star.hierarchy-folder").
     * @returns the content type string.
     */
-  def getContentType(): String = js.native
+  def getContentType(): String
   
   /**
     * returns the identifier of the content.
     * @returns the identifier.
     */
-  def getIdentifier(): XContentIdentifier = js.native
+  def getIdentifier(): XContentIdentifier
   
   /**
     * removes a listener for content events.
     * @param Listener the listener to remove.
     * @see ContentEvent
     */
-  def removeContentEventListener(Listener: XContentEventListener): Unit = js.native
+  def removeContentEventListener(Listener: XContentEventListener): Unit
 }
 object XContent {
   

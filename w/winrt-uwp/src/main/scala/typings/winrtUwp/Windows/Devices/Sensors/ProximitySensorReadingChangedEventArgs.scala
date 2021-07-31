@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the reading–changed event of the proximity sensor. */
-@js.native
 trait ProximitySensorReadingChangedEventArgs extends StObject {
   
   /** Gets or sets the most recent proximity sensor reading. */
-  var reading: ProximitySensorReading = js.native
+  var reading: ProximitySensorReading
 }
 object ProximitySensorReadingChangedEventArgs {
   

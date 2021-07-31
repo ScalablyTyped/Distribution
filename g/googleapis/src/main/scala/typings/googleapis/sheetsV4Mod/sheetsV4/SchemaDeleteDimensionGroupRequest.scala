@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * over B:E and a depth-2 group over C:D. Deleting a group over D:E leaves the
   * sheet with a depth-1 group over B:D and a depth-2 group over C:C.
   */
-@js.native
 trait SchemaDeleteDimensionGroupRequest extends StObject {
   
   /**
     * The range of the group to be deleted.
     */
-  var range: js.UndefOr[SchemaDimensionRange] = js.native
+  var range: js.UndefOr[SchemaDimensionRange] = js.undefined
 }
 object SchemaDeleteDimensionGroupRequest {
   

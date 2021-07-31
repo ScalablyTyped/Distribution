@@ -3,23 +3,23 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.ttmlToParse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TtmlToParseEvent extends Event {
+trait TtmlToParseEvent
+  extends StObject
+     with Event {
   
-  var content: js.Object = js.native
+  var content: js.Object
   
   @JSName("type")
-  var type_TtmlToParseEvent: ttmlToParse = js.native
+  var type_TtmlToParseEvent: ttmlToParse
 }
 object TtmlToParseEvent {
   
   @scala.inline
-  def apply(content: js.Object, `type`: ttmlToParse): TtmlToParseEvent = {
+  def apply(content: js.Object): TtmlToParseEvent = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ttmlToParse")
     __obj.asInstanceOf[TtmlToParseEvent]
   }
   

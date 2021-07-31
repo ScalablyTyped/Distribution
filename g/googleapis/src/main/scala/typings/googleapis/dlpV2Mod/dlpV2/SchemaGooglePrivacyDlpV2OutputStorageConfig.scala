@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Cloud repository for storing output.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends StObject {
     * with no schema, and no changes will be made to an existing table that has
     * a schema.
     */
-  var outputSchema: js.UndefOr[String] = js.native
+  var outputSchema: js.UndefOr[String] = js.undefined
   
   /**
     * Store findings in an existing table or a new table in an existing
@@ -36,7 +34,7 @@ trait SchemaGooglePrivacyDlpV2OutputStorageConfig extends StObject {
     * metric, or use different sets of quasi-identifiers, cannot store their
     * results in the same table.
     */
-  var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.native
+  var table: js.UndefOr[SchemaGooglePrivacyDlpV2BigQueryTable] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2OutputStorageConfig {
   

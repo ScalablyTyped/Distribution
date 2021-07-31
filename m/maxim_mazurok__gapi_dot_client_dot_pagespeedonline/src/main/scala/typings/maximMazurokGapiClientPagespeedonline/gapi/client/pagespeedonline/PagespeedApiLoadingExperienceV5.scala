@@ -3,30 +3,28 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagespeedApiLoadingExperienceV5 extends StObject {
   
   /** The url, pattern or origin which the metrics are on. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The requested URL, which may differ from the resolved "id". */
-  var initial_url: js.UndefOr[String] = js.native
+  var initial_url: js.UndefOr[String] = js.undefined
   
   /** The map of . */
   var metrics: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5}
-    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 & TopLevel[js.Any]
+  ] = js.undefined
   
   /** True if the result is an origin fallback from a page, false otherwise. */
-  var origin_fallback: js.UndefOr[Boolean] = js.native
+  var origin_fallback: js.UndefOr[Boolean] = js.undefined
   
   /** The human readable speed "category" of the id. */
-  var overall_category: js.UndefOr[String] = js.native
+  var overall_category: js.UndefOr[String] = js.undefined
 }
 object PagespeedApiLoadingExperienceV5 {
   
@@ -55,7 +53,7 @@ object PagespeedApiLoadingExperienceV5 {
     def setMetrics(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.pagespeedonline.gapi.client.pagespeedonline.UserPageLoadMetricV5}
-      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientPagespeedonline.maximMazurokGapiClientPagespeedonlineStrings.PagespeedApiLoadingExperienceV5 & TopLevel[js.Any]
     ): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
     
     @scala.inline

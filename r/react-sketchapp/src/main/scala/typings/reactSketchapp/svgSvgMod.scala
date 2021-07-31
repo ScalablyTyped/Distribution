@@ -24,7 +24,6 @@ import typings.reactSketchapp.symbolMod.SymbolProps
 import typings.reactSketchapp.useMod.UseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgSvgMod {
@@ -166,19 +165,20 @@ object svgSvgMod {
   
   type Svg = Component[SvgProps, js.Object, js.Any]
   
-  @js.native
-  trait SvgProps extends ViewProps {
+  trait SvgProps
+    extends StObject
+       with ViewProps {
     
-    var height: js.UndefOr[String | Double] = js.native
+    var height: js.UndefOr[String | Double] = js.undefined
     
-    var opacity: js.UndefOr[String | Double] = js.native
+    var opacity: js.UndefOr[String | Double] = js.undefined
     
-    var preserveAspectRatio: js.UndefOr[String] = js.native
+    var preserveAspectRatio: js.UndefOr[String] = js.undefined
     
     // more detail https://svgwg.org/svg2-draft/coords.html#ViewBoxAttribute
-    var viewBox: js.UndefOr[String] = js.native
+    var viewBox: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object SvgProps {
     

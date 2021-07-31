@@ -4,17 +4,18 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(callback: AddressCallback): Unit = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(interfaceName: String, callback: AddressCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(interfaceName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("address", JSImport.Namespace)
   @js.native
-  def apply(callback: AddressCallback): Unit = js.native
-  @JSImport("address", JSImport.Namespace)
-  @js.native
-  def apply(interfaceName: String, callback: AddressCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("address", "MAC_IP_RE")
   @js.native
@@ -24,42 +25,33 @@ object mod {
   @js.native
   val MAC_RE: RegExp = js.native
   
-  @JSImport("address", "dns")
-  @js.native
-  def dns(callback: DnsCallback): Unit = js.native
-  @JSImport("address", "dns")
-  @js.native
-  def dns(filepath: String, callback: DnsCallback): Unit = js.native
+  @scala.inline
+  def dns(callback: DnsCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dns")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def dns(filepath: String, callback: DnsCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dns")(filepath.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("address", "ip")
-  @js.native
-  def ip(): js.Any = js.native
-  @JSImport("address", "ip")
-  @js.native
-  def ip(interfaceName: String): js.Any = js.native
+  @scala.inline
+  def ip(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ip")().asInstanceOf[js.Any]
+  @scala.inline
+  def ip(interfaceName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ip")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("address", "ipv6")
-  @js.native
-  def ipv6(): js.Any = js.native
-  @JSImport("address", "ipv6")
-  @js.native
-  def ipv6(interfaceName: String): js.Any = js.native
+  @scala.inline
+  def ipv6(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ipv6")().asInstanceOf[js.Any]
+  @scala.inline
+  def ipv6(interfaceName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("ipv6")(interfaceName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("address", "mac")
-  @js.native
-  def mac(callback: MacCallback): Unit = js.native
-  @JSImport("address", "mac")
-  @js.native
-  def mac(interfaceName: String, callback: MacCallback): Unit = js.native
+  @scala.inline
+  def mac(callback: MacCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mac")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mac(interfaceName: String, callback: MacCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mac")(interfaceName.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Address extends StObject {
     
-    var ip: String = js.native
+    var ip: String
     
-    var ipv6: String = js.native
+    var ipv6: String
     
-    var mac: String = js.native
+    var mac: String
   }
   object Address {
     

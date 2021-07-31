@@ -2,17 +2,15 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetails extends StObject {
   
-  var errorDetails: js.UndefOr[js.Any] = js.native
+  var errorDetails: js.UndefOr[js.Any] = js.undefined
   
-  var httpStatus: js.UndefOr[Double] = js.native
+  var httpStatus: js.UndefOr[Double] = js.undefined
   
-  var requestOptions: js.UndefOr[js.Any] = js.native
+  var requestOptions: js.UndefOr[js.Any] = js.undefined
 }
 object ErrorDetails {
   

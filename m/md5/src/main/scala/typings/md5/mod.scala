@@ -6,14 +6,12 @@ import typings.md5.md5Strings.binary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: String): String = js.native
+  @scala.inline
+  def apply(message: String): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * js function for hashing messages with MD5
     *
@@ -21,48 +19,40 @@ object mod {
     * @param options
     * @returns the resultant MD5 hash of the given message
     */
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: OptionsasBytestrue): js.Array[Double] = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: PickOptionsasStringencodi): String = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: String, options: Options): String | js.Array[Double] = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: js.Array[Double]): String = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: js.Array[Double], options: OptionsasBytestrue): js.Array[Double] = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: js.Array[Double], options: PickOptionsasStringencodi): String = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: js.Array[Double], options: Options): String | js.Array[Double] = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer): String = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: OptionsasBytestrue): js.Array[Double] = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: PickOptionsasStringencodi): String = js.native
-  @JSImport("md5", JSImport.Namespace)
-  @js.native
-  def apply(message: Buffer, options: Options): String | js.Array[Double] = js.native
+  @scala.inline
+  def apply(message: String, options: OptionsasBytestrue): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(message: String, options: PickOptionsasStringencodi): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(message: String, options: Options): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+  @scala.inline
+  def apply(message: js.Array[Double]): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(message: js.Array[Double], options: OptionsasBytestrue): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(message: js.Array[Double], options: PickOptionsasStringencodi): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(message: js.Array[Double], options: Options): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
+  @scala.inline
+  def apply(message: Buffer): String = ^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(message: Buffer, options: OptionsasBytestrue): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(message: Buffer, options: PickOptionsasStringencodi): String = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(message: Buffer, options: Options): String | js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[Double]]
   
+  @JSImport("md5", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var asBytes: js.UndefOr[Boolean] = js.native
+    var asBytes: js.UndefOr[Boolean] = js.undefined
     
-    var asString: js.UndefOr[Boolean] = js.native
+    var asString: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[binary | String] = js.native
+    var encoding: js.UndefOr[binary | String] = js.undefined
   }
   object Options {
     

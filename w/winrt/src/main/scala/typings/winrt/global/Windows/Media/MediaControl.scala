@@ -3,13 +3,13 @@ package typings.winrt.global.Windows.Media
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Media.MediaControl")
 @js.native
 class MediaControl ()
-  extends typings.winrt.Windows.Media.MediaControl
+  extends StObject
+     with typings.winrt.Windows.Media.MediaControl
 /* static members */
 object MediaControl {
   

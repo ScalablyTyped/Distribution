@@ -2,21 +2,19 @@ package typings.awsSdk.cloudhsmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHsmsResponse extends StObject {
   
   /**
     * The list of ARNs that identify the HSMs.
     */
-  var HsmList: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmList] = js.native
+  var HsmList: js.UndefOr[typings.awsSdk.cloudhsmMod.HsmList] = js.undefined
   
   /**
     * If not null, more results are available. Pass this value to ListHsms to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
 }
 object ListHsmsResponse {
   

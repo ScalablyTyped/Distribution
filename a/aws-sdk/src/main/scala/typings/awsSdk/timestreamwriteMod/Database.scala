@@ -2,41 +2,39 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
   /**
     * The Amazon Resource Name that uniquely identifies this database.
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * The time when the database was created, calculated from the Unix epoch time.
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: js.UndefOr[ResourceName] = js.native
+  var DatabaseName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The identifier of the KMS key used to encrypt the data stored in the database.
     */
-  var KmsKeyId: js.UndefOr[StringValue2048] = js.native
+  var KmsKeyId: js.UndefOr[StringValue2048] = js.undefined
   
   /**
     *  The last time that this database was updated. 
     */
-  var LastUpdatedTime: js.UndefOr[Date] = js.native
+  var LastUpdatedTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The total number of tables found within a Timestream database. 
     */
-  var TableCount: js.UndefOr[Long] = js.native
+  var TableCount: js.UndefOr[Long] = js.undefined
 }
 object Database {
   

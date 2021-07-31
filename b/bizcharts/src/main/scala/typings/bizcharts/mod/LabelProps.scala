@@ -5,18 +5,20 @@ import typings.antvG2.mod.Styles.text
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelProps
-  extends Props[js.Any] {
+  extends StObject
+     with Props[js.Any] {
   
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   var content: js.UndefOr[
-    String | (js.Tuple2[String, js.Function2[/* x */ js.UndefOr[_], /* y */ js.UndefOr[_], String]])
-  ] = js.native
+    String | (js.Tuple2[
+      String, 
+      js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], String]
+    ])
+  ] = js.undefined
   
   var formatter: js.UndefOr[
     (js.Function3[
@@ -25,7 +27,7 @@ trait LabelProps
       /* index */ js.UndefOr[Double], 
       String
     ]) | Double
-  ] = js.native
+  ] = js.undefined
   
   var htmlTemplate: js.UndefOr[
     (js.Function3[
@@ -34,17 +36,17 @@ trait LabelProps
       /* index */ js.UndefOr[Double], 
       String
     ]) | String
-  ] = js.native
+  ] = js.undefined
   
-  var labelEmit: js.UndefOr[Boolean] = js.native
+  var labelEmit: js.UndefOr[Boolean] = js.undefined
   
   var labelLine: js.UndefOr[
     (js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], line]) | line | Boolean
-  ] = js.native
+  ] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var textStyle: js.UndefOr[text | (js.Function1[/* t */ js.UndefOr[js.Any], text])] = js.native
+  var textStyle: js.UndefOr[text | (js.Function1[/* t */ js.UndefOr[js.Any], text])] = js.undefined
 }
 object LabelProps {
   
@@ -65,7 +67,10 @@ object LabelProps {
     
     @scala.inline
     def setContent(
-      value: String | (js.Tuple2[String, js.Function2[/* x */ js.UndefOr[_], /* y */ js.UndefOr[_], String]])
+      value: String | (js.Tuple2[
+          String, 
+          js.Function2[/* x */ js.UndefOr[js.Any], /* y */ js.UndefOr[js.Any], String]
+        ])
     ): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -3,15 +3,13 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import typings.googleCloudPubsub.protosMod.google.protobuf.IDuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an ExpirationPolicy. */
-@js.native
 trait IExpirationPolicy extends StObject {
   
   /** ExpirationPolicy ttl */
-  var ttl: js.UndefOr[IDuration | Null] = js.native
+  var ttl: js.UndefOr[IDuration | Null] = js.undefined
 }
 object IExpirationPolicy {
   

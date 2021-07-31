@@ -3,41 +3,39 @@ package typings.pulumiAws.inputMod.kinesisanalyticsv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfiguration extends StObject {
   
   /**
     * The code location and type parameters for the application.
     */
-  var applicationCodeConfiguration: Input[ApplicationApplicationConfigurationApplicationCodeConfiguration] = js.native
+  var applicationCodeConfiguration: Input[ApplicationApplicationConfigurationApplicationCodeConfiguration]
   
   /**
     * Describes whether snapshots are enabled for a Flink-based application.
     */
-  var applicationSnapshotConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationApplicationSnapshotConfiguration]] = js.native
+  var applicationSnapshotConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationApplicationSnapshotConfiguration]] = js.undefined
   
   /**
     * Describes execution properties for a Flink-based application.
     */
-  var environmentProperties: js.UndefOr[Input[ApplicationApplicationConfigurationEnvironmentProperties]] = js.native
+  var environmentProperties: js.UndefOr[Input[ApplicationApplicationConfigurationEnvironmentProperties]] = js.undefined
   
   /**
     * The configuration of a Flink-based application.
     */
-  var flinkApplicationConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationFlinkApplicationConfiguration]] = js.native
+  var flinkApplicationConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationFlinkApplicationConfiguration]] = js.undefined
   
   /**
     * The configuration of a SQL-based application.
     */
-  var sqlApplicationConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationSqlApplicationConfiguration]] = js.native
+  var sqlApplicationConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationSqlApplicationConfiguration]] = js.undefined
   
   /**
     * The VPC configuration of a Flink-based application.
     */
-  var vpcConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationVpcConfiguration]] = js.native
+  var vpcConfiguration: js.UndefOr[Input[ApplicationApplicationConfigurationVpcConfiguration]] = js.undefined
 }
 object ApplicationApplicationConfiguration {
   

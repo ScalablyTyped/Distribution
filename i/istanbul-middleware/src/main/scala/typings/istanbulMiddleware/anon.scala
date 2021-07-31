@@ -8,19 +8,17 @@ import typings.istanbulMiddleware.mod.PathTransformer
 import typings.istanbulMiddleware.mod.PostLoadHookFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Matcher extends StObject {
     
-    var matcher: js.UndefOr[ClientMatcher] = js.native
+    var matcher: js.UndefOr[ClientMatcher] = js.undefined
     
-    var pathTransformer: js.UndefOr[PathTransformer] = js.native
+    var pathTransformer: js.UndefOr[PathTransformer] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Matcher {
     
@@ -53,12 +51,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PostLoadHook extends StObject {
     
-    var postLoadHook: js.UndefOr[typings.istanbulMiddleware.mod.PostLoadHook] = js.native
+    var postLoadHook: js.UndefOr[typings.istanbulMiddleware.mod.PostLoadHook] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object PostLoadHook {
     
@@ -87,10 +84,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ResetOnGet extends StObject {
     
-    var resetOnGet: js.UndefOr[Boolean] = js.native
+    var resetOnGet: js.UndefOr[Boolean] = js.undefined
   }
   object ResetOnGet {
     

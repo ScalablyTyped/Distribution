@@ -2,46 +2,44 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceMetadata extends StObject {
   
   /**
     * The ID of the resource.
     */
-  var Id: js.UndefOr[ResourceIdType] = js.native
+  var Id: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The name of the resource.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The original name of the resource before a rename operation.
     */
-  var OriginalName: js.UndefOr[ResourceNameType] = js.native
+  var OriginalName: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The owner of the resource.
     */
-  var Owner: js.UndefOr[UserMetadata] = js.native
+  var Owner: js.UndefOr[UserMetadata] = js.undefined
   
   /**
     * The parent ID of the resource before a rename operation.
     */
-  var ParentId: js.UndefOr[ResourceIdType] = js.native
+  var ParentId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The type of resource.
     */
-  var Type: js.UndefOr[ResourceType] = js.native
+  var Type: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The version ID of the resource. This is an optional field and is filled for action on document version.
     */
-  var VersionId: js.UndefOr[DocumentVersionIdType] = js.native
+  var VersionId: js.UndefOr[DocumentVersionIdType] = js.undefined
 }
 object ResourceMetadata {
   

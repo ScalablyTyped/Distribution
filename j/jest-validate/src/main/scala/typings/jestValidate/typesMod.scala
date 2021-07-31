@@ -3,7 +3,6 @@ package typings.jestValidate
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -12,14 +11,13 @@ object typesMod {
   
   type DeprecatedOptions = Record[String, DeprecatedOptionFunc]
   
-  @js.native
   trait Title extends StObject {
     
-    var deprecation: js.UndefOr[String] = js.native
+    var deprecation: js.UndefOr[String] = js.undefined
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
   }
   object Title {
     
@@ -52,24 +50,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ValidationOptions extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var condition: js.UndefOr[js.Function2[/* option */ js.Any, /* validOption */ js.Any, Boolean]] = js.native
+    var condition: js.UndefOr[js.Function2[/* option */ js.Any, /* validOption */ js.Any, Boolean]] = js.undefined
     
     var deprecate: js.UndefOr[
         js.Function4[
-          /* config */ Record[String, _], 
+          /* config */ Record[String, js.Any], 
           /* option */ String, 
           /* deprecatedOptions */ DeprecatedOptions, 
           /* options */ this.type, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var deprecatedConfig: js.UndefOr[DeprecatedOptions] = js.native
+    var deprecatedConfig: js.UndefOr[DeprecatedOptions] = js.undefined
     
     var error: js.UndefOr[
         js.Function5[
@@ -80,33 +77,33 @@ object typesMod {
           /* path */ js.UndefOr[js.Array[String]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var exampleConfig: Record[String, _] = js.native
+    var exampleConfig: Record[String, js.Any]
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
-    var recursiveBlacklist: js.UndefOr[js.Array[String]] = js.native
+    var recursiveBlacklist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var recursiveDenylist: js.UndefOr[js.Array[String]] = js.native
+    var recursiveDenylist: js.UndefOr[js.Array[String]] = js.undefined
     
-    var title: js.UndefOr[Title] = js.native
+    var title: js.UndefOr[Title] = js.undefined
     
     var unknown: js.UndefOr[
         js.Function5[
-          /* config */ Record[String, _], 
-          /* exampleConfig */ Record[String, _], 
+          /* config */ Record[String, js.Any], 
+          /* exampleConfig */ Record[String, js.Any], 
           /* option */ String, 
           /* options */ this.type, 
           /* path */ js.UndefOr[js.Array[String]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ValidationOptions {
     
     @scala.inline
-    def apply(exampleConfig: Record[String, _]): ValidationOptions = {
+    def apply(exampleConfig: Record[String, js.Any]): ValidationOptions = {
       val __obj = js.Dynamic.literal(exampleConfig = exampleConfig.asInstanceOf[js.Any])
       __obj.asInstanceOf[ValidationOptions]
     }
@@ -128,7 +125,7 @@ object typesMod {
       
       @scala.inline
       def setDeprecate(
-        value: (/* config */ Record[String, _], /* option */ String, /* deprecatedOptions */ DeprecatedOptions, ValidationOptions) => Boolean
+        value: (/* config */ Record[String, js.Any], /* option */ String, /* deprecatedOptions */ DeprecatedOptions, ValidationOptions) => Boolean
       ): Self = StObject.set(x, "deprecate", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -149,7 +146,7 @@ object typesMod {
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
       
       @scala.inline
-      def setExampleConfig(value: Record[String, _]): Self = StObject.set(x, "exampleConfig", value.asInstanceOf[js.Any])
+      def setExampleConfig(value: Record[String, js.Any]): Self = StObject.set(x, "exampleConfig", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
@@ -183,7 +180,7 @@ object typesMod {
       
       @scala.inline
       def setUnknown(
-        value: (/* config */ Record[String, _], /* exampleConfig */ Record[String, _], /* option */ String, ValidationOptions, /* path */ js.UndefOr[js.Array[String]]) => Unit
+        value: (/* config */ Record[String, js.Any], /* exampleConfig */ Record[String, js.Any], /* option */ String, ValidationOptions, /* path */ js.UndefOr[js.Array[String]]) => Unit
       ): Self = StObject.set(x, "unknown", js.Any.fromFunction5(value))
       
       @scala.inline

@@ -2,21 +2,21 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleBlockSignature extends BlockSignature {
+trait SimpleBlockSignature
+  extends StObject
+     with BlockSignature {
   
   /**
     * Argument types.
     */
-  var argTypes: js.Array[String] = js.native
+  var argTypes: js.Array[String]
   
   /**
     * Return type.
     */
-  var retType: String = js.native
+  var retType: String
 }
 object SimpleBlockSignature {
   

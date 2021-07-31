@@ -5,19 +5,18 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryMod {
   
   @JSImport("optimism/lib/entry", "Entry")
   @js.native
-  class Entry[TArgs /* <: js.Array[_] */, TValue] protected () extends StObject {
+  class Entry[TArgs /* <: js.Array[js.Any] */, TValue] protected () extends StObject {
     def this(fn: js.Function1[/* args */ TArgs, TValue]) = this()
     
-    val childValues: Map[AnyEntry, Value[_]] = js.native
+    val childValues: Map[AnyEntry, Value[js.Any]] = js.native
     
-    def dependOn(dep: Dep_[_]): Unit = js.native
+    def dependOn(dep: Dep_[js.Any]): Unit = js.native
     
     var deps: js.Any = js.native
     
@@ -43,9 +42,9 @@ object entryMod {
     
     def setDirty(): Unit = js.native
     
-    var subscribe: js.UndefOr[js.Function1[/* args */ TArgs, Unit | js.Function0[_]]] = js.native
+    var subscribe: js.UndefOr[js.Function1[/* args */ TArgs, Unit | js.Function0[js.Any]]] = js.native
     
-    var unsubscribe: js.UndefOr[Unit | js.Function0[_]] = js.native
+    var unsubscribe: js.UndefOr[Unit | js.Function0[js.Any]] = js.native
     
     val value: Value[TValue] = js.native
   }

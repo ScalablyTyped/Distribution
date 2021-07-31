@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivityTaskCancelRequestedEventAttributes extends StObject {
   
   /**
     * The unique ID of the task.
     */
-  var activityId: ActivityId = js.native
+  var activityId: ActivityId
   
   /**
     * The ID of the DecisionTaskCompleted event corresponding to the decision task that resulted in the RequestCancelActivityTask decision for this cancellation request. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
 }
 object ActivityTaskCancelRequestedEventAttributes {
   

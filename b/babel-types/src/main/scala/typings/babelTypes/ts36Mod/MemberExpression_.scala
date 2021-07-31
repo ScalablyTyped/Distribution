@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.MemberExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression
      with LVal {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var `object`: Expression | Super = js.native
+  var `object`: Expression | Super
   
-  var property: Expression = js.native
+  var property: Expression
   
   @JSName("type")
-  var type_MemberExpression_ : MemberExpression = js.native
+  var type_MemberExpression_ : MemberExpression
 }
 object MemberExpression_ {
   
@@ -30,12 +29,11 @@ object MemberExpression_ {
     loc: SourceLocation,
     `object`: Expression | Super,
     property: Expression,
-    start: Double,
-    `type`: MemberExpression
+    start: Double
   ): MemberExpression_ = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], property = property.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MemberExpression")
     __obj.asInstanceOf[MemberExpression_]
   }
   

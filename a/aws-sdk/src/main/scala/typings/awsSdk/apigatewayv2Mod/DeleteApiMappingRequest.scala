@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteApiMappingRequest extends StObject {
   
   /**
     * The API mapping identifier.
     */
-  var ApiMappingId: string = js.native
+  var ApiMappingId: string
   
   /**
     * The domain name.
     */
-  var DomainName: string = js.native
+  var DomainName: string
 }
 object DeleteApiMappingRequest {
   

@@ -2,14 +2,12 @@ package typings.stripe.mod.paymentMethods
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPaymentMethodAttachOptions extends StObject {
   
   /** The ID of the customer to which to attach the PaymentMethod. */
-  var customer: String = js.native
+  var customer: String
 }
 object IPaymentMethodAttachOptions {
   

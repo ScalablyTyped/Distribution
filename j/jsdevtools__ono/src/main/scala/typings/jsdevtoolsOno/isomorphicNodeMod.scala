@@ -3,14 +3,16 @@ package typings.jsdevtoolsOno
 import typings.jsdevtoolsOno.typesMod.OnoError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isomorphicNodeMod {
   
-  @JSImport("@jsdevtools/ono/esm/isomorphic.node", "addInspectMethod")
+  @JSImport("@jsdevtools/ono/esm/isomorphic.node", JSImport.Namespace)
   @js.native
-  def addInspectMethod[T](newError: OnoError[T]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def addInspectMethod[T](newError: OnoError[T]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addInspectMethod")(newError.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@jsdevtools/ono/esm/isomorphic.node", "format")
   @js.native

@@ -2,17 +2,15 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabActiveInfo extends StObject {
   
   /** The ID of the tab that has become active. */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The ID of the window the active tab changed inside of. */
-  var windowId: Double = js.native
+  var windowId: Double
 }
 object TabActiveInfo {
   

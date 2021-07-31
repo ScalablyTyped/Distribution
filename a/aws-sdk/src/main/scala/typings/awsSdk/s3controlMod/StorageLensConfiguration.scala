@@ -2,51 +2,49 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageLensConfiguration extends StObject {
   
   /**
     * A container for all the account-level configurations of your S3 Storage Lens configuration.
     */
-  var AccountLevel: typings.awsSdk.s3controlMod.AccountLevel = js.native
+  var AccountLevel: typings.awsSdk.s3controlMod.AccountLevel
   
   /**
     * A container for the AWS organization for this S3 Storage Lens configuration.
     */
-  var AwsOrg: js.UndefOr[StorageLensAwsOrg] = js.native
+  var AwsOrg: js.UndefOr[StorageLensAwsOrg] = js.undefined
   
   /**
     * A container to specify the properties of your S3 Storage Lens metrics export including, the destination, schema and format.
     */
-  var DataExport: js.UndefOr[StorageLensDataExport] = js.native
+  var DataExport: js.UndefOr[StorageLensDataExport] = js.undefined
   
   /**
     * A container for what is excluded in this configuration. This container can only be valid if there is no Include container submitted, and it's not empty. 
     */
-  var Exclude: js.UndefOr[typings.awsSdk.s3controlMod.Exclude] = js.native
+  var Exclude: js.UndefOr[typings.awsSdk.s3controlMod.Exclude] = js.undefined
   
   /**
     * A container for the Amazon S3 Storage Lens configuration ID.
     */
-  var Id: ConfigId = js.native
+  var Id: ConfigId
   
   /**
     * A container for what is included in this configuration. This container can only be valid if there is no Exclude container submitted, and it's not empty. 
     */
-  var Include: js.UndefOr[typings.awsSdk.s3controlMod.Include] = js.native
+  var Include: js.UndefOr[typings.awsSdk.s3controlMod.Include] = js.undefined
   
   /**
     * A container for whether the S3 Storage Lens configuration is enabled.
     */
-  var IsEnabled: typings.awsSdk.s3controlMod.IsEnabled = js.native
+  var IsEnabled: typings.awsSdk.s3controlMod.IsEnabled
   
   /**
     * The Amazon Resource Name (ARN) of the S3 Storage Lens configuration. This property is read-only and follows the following format:  arn:aws:s3:us-east-1:example-account-id:storage-lens/your-dashboard-name  
     */
-  var StorageLensArn: js.UndefOr[typings.awsSdk.s3controlMod.StorageLensArn] = js.native
+  var StorageLensArn: js.UndefOr[typings.awsSdk.s3controlMod.StorageLensArn] = js.undefined
 }
 object StorageLensConfiguration {
   

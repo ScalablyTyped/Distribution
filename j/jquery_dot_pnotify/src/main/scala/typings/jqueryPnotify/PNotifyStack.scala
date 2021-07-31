@@ -4,29 +4,27 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PNotifyStack extends StObject {
   
-  var context: js.UndefOr[JQuery[HTMLElement]] = js.native
+  var context: js.UndefOr[JQuery[HTMLElement]] = js.undefined
   
-  var dir1: js.UndefOr[String] = js.native
+  var dir1: js.UndefOr[String] = js.undefined
   
-  var dir2: js.UndefOr[String] = js.native
+  var dir2: js.UndefOr[String] = js.undefined
   
-  var firstpos1: js.UndefOr[Double] = js.native
+  var firstpos1: js.UndefOr[Double] = js.undefined
   
-  var firstpos2: js.UndefOr[Double] = js.native
+  var firstpos2: js.UndefOr[Double] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var push: js.UndefOr[String] = js.native
+  var push: js.UndefOr[String] = js.undefined
   
-  var spacing1: js.UndefOr[Double] = js.native
+  var spacing1: js.UndefOr[Double] = js.undefined
   
-  var spacing2: js.UndefOr[Double] = js.native
+  var spacing2: js.UndefOr[Double] = js.undefined
 }
 object PNotifyStack {
   

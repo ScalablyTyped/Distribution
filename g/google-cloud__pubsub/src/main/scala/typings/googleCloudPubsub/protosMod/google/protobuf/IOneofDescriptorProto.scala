@@ -2,18 +2,16 @@ package typings.googleCloudPubsub.protosMod.google.protobuf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an OneofDescriptorProto. */
-@js.native
 trait IOneofDescriptorProto extends StObject {
   
   /** OneofDescriptorProto name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** OneofDescriptorProto options */
-  var options: js.UndefOr[IOneofOptions | Null] = js.native
+  var options: js.UndefOr[IOneofOptions | Null] = js.undefined
 }
 object IOneofDescriptorProto {
   

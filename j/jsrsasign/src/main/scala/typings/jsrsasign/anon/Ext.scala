@@ -6,21 +6,19 @@ import typings.jsrsasign.jsrsasign.KJUR.jws.JWS.JsonWebKey
 import typings.jsrsasign.jsrsasign.RSAKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ext extends StObject {
   
-  var ext: js.UndefOr[js.Array[SubjectAltName]] = js.native
+  var ext: js.UndefOr[js.Array[SubjectAltName]] = js.undefined
   
-  var sbjprvkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String = js.native
+  var sbjprvkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String
   
-  var sbjpubkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String = js.native
+  var sbjpubkey: RSAKey | ECDSA | DSA | JsonWebKey | E | String
   
-  var sigalg: String = js.native
+  var sigalg: String
   
-  var subject: StringParamcertissuerstri | X500NameParamcertissuerst | Certissuer = js.native
+  var subject: StringParamcertissuerstri | X500NameParamcertissuerst | Certissuer
 }
 object Ext {
   

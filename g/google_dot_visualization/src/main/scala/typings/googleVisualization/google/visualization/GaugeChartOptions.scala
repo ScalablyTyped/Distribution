@@ -2,45 +2,43 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GaugeChartOptions extends StObject {
   
-  var animation: js.UndefOr[TransitionAnimation] = js.native
+  var animation: js.UndefOr[TransitionAnimation] = js.undefined
   
-  var forceIFrame: js.UndefOr[Boolean] = js.native
+  var forceIFrame: js.UndefOr[Boolean] = js.undefined
   
-  var greenColor: js.UndefOr[String] = js.native
+  var greenColor: js.UndefOr[String] = js.undefined
   
-  var greenFrom: js.UndefOr[Double] = js.native
+  var greenFrom: js.UndefOr[Double] = js.undefined
   
-  var greenTo: js.UndefOr[Double] = js.native
+  var greenTo: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var majorTicks: js.UndefOr[js.Array[String]] = js.native
+  var majorTicks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var minorTicks: js.UndefOr[Double] = js.native
+  var minorTicks: js.UndefOr[Double] = js.undefined
   
-  var redColor: js.UndefOr[String] = js.native
+  var redColor: js.UndefOr[String] = js.undefined
   
-  var redFrom: js.UndefOr[Double] = js.native
+  var redFrom: js.UndefOr[Double] = js.undefined
   
-  var redTo: js.UndefOr[Double] = js.native
+  var redTo: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var yellowColor: js.UndefOr[String] = js.native
+  var yellowColor: js.UndefOr[String] = js.undefined
   
-  var yellowFrom: js.UndefOr[Double] = js.native
+  var yellowFrom: js.UndefOr[Double] = js.undefined
   
-  var yellowTo: js.UndefOr[Double] = js.native
+  var yellowTo: js.UndefOr[Double] = js.undefined
 }
 object GaugeChartOptions {
   

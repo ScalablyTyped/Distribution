@@ -6,25 +6,23 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.timeout
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.verified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PhoneAuthSnapshot extends StObject {
   
-  var code: String | Null = js.native
+  var code: String | Null
   
-  var error: NativeError | Null = js.native
+  var error: NativeError | Null
   
-  var state: sent | timeout | verified | error_ = js.native
+  var state: sent | timeout | verified | error_
   
-  var verificationId: String = js.native
+  var verificationId: String
 }
 object PhoneAuthSnapshot {
   
   @scala.inline
   def apply(state: sent | timeout | verified | error_, verificationId: String): PhoneAuthSnapshot = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], verificationId = verificationId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], verificationId = verificationId.asInstanceOf[js.Any], code = null, error = null)
     __obj.asInstanceOf[PhoneAuthSnapshot]
   }
   

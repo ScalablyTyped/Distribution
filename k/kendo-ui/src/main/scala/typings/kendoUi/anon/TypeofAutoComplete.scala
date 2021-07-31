@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.AutoComplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAutoComplete extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): AutoComplete = js.native
+  def extend(proto: js.Object): AutoComplete
   
   /* static member */
-  var fn: AutoComplete = js.native
+  var fn: AutoComplete
 }
 object TypeofAutoComplete {
   

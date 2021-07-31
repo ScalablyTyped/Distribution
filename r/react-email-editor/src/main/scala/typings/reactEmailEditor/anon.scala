@@ -3,15 +3,13 @@ package typings.reactEmailEditor
 import typings.reactEmailEditor.mod.DockPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dock extends StObject {
     
-    val dock: DockPosition = js.native
+    val dock: DockPosition
   }
   object Dock {
     
@@ -29,12 +27,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Rows extends StObject {
     
-    val rows: js.Array[js.Object] = js.native
+    val rows: js.Array[js.Object]
     
-    val values: js.UndefOr[js.Object] = js.native
+    val values: js.UndefOr[js.Object] = js.undefined
   }
   object Rows {
     
@@ -61,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Tools extends StObject {
     
-    val tools: js.UndefOr[Dock] = js.native
+    val tools: js.UndefOr[Dock] = js.undefined
   }
   object Tools {
     

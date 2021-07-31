@@ -3,7 +3,6 @@ package typings.angularCore.r3SymbolsMod
 import typings.angularCore.anon.PropName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,52 +20,52 @@ trait ComponentFactory[C] extends StObject {
   /**
     * The type of component the factory will create.
     */
-  def componentType: Type[_] = js.native
+  def componentType: Type[js.Any] = js.native
   
   /**
     * Creates a new component.
     */
   def create(injector: Injector): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[js.Any]]): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[js.Any]], rootSelectorOrNode: String): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
-    rootSelectorOrNode: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
-  ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: String): ComponentRef[C] = js.native
-  def create(
-    injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
+    projectableNodes: js.Array[js.Array[js.Any]],
     rootSelectorOrNode: String,
-    ngModule: NgModuleRef[_]
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.UndefOr[scala.Nothing], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: js.Array[js.Array[js.Any]], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.UndefOr[scala.Nothing],
+    projectableNodes: js.Array[js.Array[js.Any]],
     rootSelectorOrNode: js.Any,
-    ngModule: NgModuleRef[_]
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]]): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
-    rootSelectorOrNode: js.UndefOr[scala.Nothing],
-    ngModule: NgModuleRef[_]
+    projectableNodes: js.Array[js.Array[js.Any]],
+    rootSelectorOrNode: Unit,
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]], rootSelectorOrNode: String): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: Unit, rootSelectorOrNode: String): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
+    projectableNodes: Unit,
     rootSelectorOrNode: String,
-    ngModule: NgModuleRef[_]
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
-  def create(injector: Injector, projectableNodes: js.Array[js.Array[_]], rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
+  def create(injector: Injector, projectableNodes: Unit, rootSelectorOrNode: js.Any): ComponentRef[C] = js.native
   def create(
     injector: Injector,
-    projectableNodes: js.Array[js.Array[_]],
+    projectableNodes: Unit,
     rootSelectorOrNode: js.Any,
-    ngModule: NgModuleRef[_]
+    ngModule: NgModuleRef[js.Any]
+  ): ComponentRef[C] = js.native
+  def create(
+    injector: Injector,
+    projectableNodes: Unit,
+    rootSelectorOrNode: Unit,
+    ngModule: NgModuleRef[js.Any]
   ): ComponentRef[C] = js.native
   
   /**

@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestrictItem extends StObject {
   
   /** LINT.ThenChange(//depot/google3/java/com/google/apps/search/quality/itemsuggest/utils/SubtypeRerankingUtils.java) */
-  var driveFollowUpRestrict: js.UndefOr[DriveFollowUpRestrict] = js.native
+  var driveFollowUpRestrict: js.UndefOr[DriveFollowUpRestrict] = js.undefined
   
-  var driveLocationRestrict: js.UndefOr[DriveLocationRestrict] = js.native
+  var driveLocationRestrict: js.UndefOr[DriveLocationRestrict] = js.undefined
   
   /** LINT.IfChange Drive Types. */
-  var driveMimeTypeRestrict: js.UndefOr[DriveMimeTypeRestrict] = js.native
+  var driveMimeTypeRestrict: js.UndefOr[DriveMimeTypeRestrict] = js.undefined
   
-  var driveTimeSpanRestrict: js.UndefOr[DriveTimeSpanRestrict] = js.native
+  var driveTimeSpanRestrict: js.UndefOr[DriveTimeSpanRestrict] = js.undefined
   
   /** The search restrict (e.g. "after:2017-09-11 before:2017-09-12"). */
-  var searchOperator: js.UndefOr[String] = js.native
+  var searchOperator: js.UndefOr[String] = js.undefined
 }
 object RestrictItem {
   

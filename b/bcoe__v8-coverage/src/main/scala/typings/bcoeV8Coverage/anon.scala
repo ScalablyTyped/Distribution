@@ -5,20 +5,18 @@ import typings.bcoeV8Coverage.typesMod.RangeCov
 import typings.bcoeV8Coverage.typesMod.ScriptCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<@bcoe/v8-coverage.@bcoe/v8-coverage/dist/lib/types.FunctionCov> */
-  @js.native
   trait ReadonlyFunctionCov extends StObject {
     
-    val functionName: String = js.native
+    val functionName: String
     
-    val isBlockCoverage: Boolean = js.native
+    val isBlockCoverage: Boolean
     
-    val ranges: js.Array[RangeCov] = js.native
+    val ranges: js.Array[RangeCov]
   }
   object ReadonlyFunctionCov {
     
@@ -46,10 +44,9 @@ object anon {
   }
   
   /* Inlined std.Readonly<@bcoe/v8-coverage.@bcoe/v8-coverage/dist/lib/types.ProcessCov> */
-  @js.native
   trait ReadonlyProcessCov extends StObject {
     
-    val result: js.Array[ScriptCov] = js.native
+    val result: js.Array[ScriptCov]
   }
   object ReadonlyProcessCov {
     
@@ -71,14 +68,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<@bcoe/v8-coverage.@bcoe/v8-coverage/dist/lib/types.RangeCov> */
-  @js.native
   trait ReadonlyRangeCov extends StObject {
     
-    val count: Double = js.native
+    val count: Double
     
-    val endOffset: Double = js.native
+    val endOffset: Double
     
-    val startOffset: Double = js.native
+    val startOffset: Double
   }
   object ReadonlyRangeCov {
     
@@ -103,14 +99,13 @@ object anon {
   }
   
   /* Inlined std.Readonly<@bcoe/v8-coverage.@bcoe/v8-coverage/dist/lib/types.ScriptCov> */
-  @js.native
   trait ReadonlyScriptCov extends StObject {
     
-    val functions: js.Array[FunctionCov] = js.native
+    val functions: js.Array[FunctionCov]
     
-    val scriptId: String = js.native
+    val scriptId: String
     
-    val url: String = js.native
+    val url: String
   }
   object ReadonlyScriptCov {
     

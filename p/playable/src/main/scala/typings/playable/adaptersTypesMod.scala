@@ -9,7 +9,6 @@ import typings.playable.playbackEngineTypesMod.PlayableMediaSource
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adaptersTypesMod {
@@ -24,24 +23,23 @@ object adaptersTypesMod {
     * @property nearestBufferSegInfo - Object with start and end for current buffer segment
     * @property deliveryPriority - Priority of current adapter
     */
-  @js.native
   trait IAdapterDebugInfo extends StObject {
     
-    var bitrates: js.Array[String] = js.native
+    var bitrates: js.Array[String]
     
-    var bwEstimate: Double = js.native
+    var bwEstimate: Double
     
-    var currentBitrate: String = js.native
+    var currentBitrate: String
     
-    var deliveryPriority: MediaStreamDeliveryPriority = js.native
+    var deliveryPriority: MediaStreamDeliveryPriority
     
-    var nearestBufferSegInfo: js.Object = js.native
+    var nearestBufferSegInfo: js.Object
     
-    var overallBufferLength: Double = js.native
+    var overallBufferLength: Double
     
-    var `type`: MediaStreamType = js.native
+    var `type`: MediaStreamType
     
-    var url: String = js.native
+    var url: String
   }
   object IAdapterDebugInfo {
     
@@ -93,32 +91,31 @@ object adaptersTypesMod {
     }
   }
   
-  @js.native
   trait IPlaybackAdapter extends StObject {
     
-    def attach(videoElement: HTMLVideoElement): Unit = js.native
+    def attach(videoElement: HTMLVideoElement): Unit
     
-    def canPlay(mediaType: MediaStreamType): Boolean = js.native
+    def canPlay(mediaType: MediaStreamType): Boolean
     
-    var currentUrl: PlayableMediaSource = js.native
+    var currentUrl: PlayableMediaSource
     
-    var debugInfo: IAdapterDebugInfo = js.native
+    var debugInfo: IAdapterDebugInfo
     
-    def detach(): Unit = js.native
+    def detach(): Unit
     
-    var isDynamicContent: Boolean = js.native
+    var isDynamicContent: Boolean
     
-    var isDynamicContentEnded: Boolean = js.native
+    var isDynamicContentEnded: Boolean
     
-    var isSeekAvailable: Boolean = js.native
+    var isSeekAvailable: Boolean
     
-    var isSyncWithLive: Boolean = js.native
+    var isSyncWithLive: Boolean
     
-    var mediaStreamDeliveryPriority: MediaStreamDeliveryPriority = js.native
+    var mediaStreamDeliveryPriority: MediaStreamDeliveryPriority
     
-    def setMediaStreams(mediaStreams: js.Any): Unit = js.native
+    def setMediaStreams(mediaStreams: js.Any): Unit
     
-    var syncWithLiveTime: Double = js.native
+    var syncWithLiveTime: Double
   }
   object IPlaybackAdapter {
     
@@ -186,7 +183,9 @@ object adaptersTypesMod {
   }
   
   @js.native
-  trait IPlaybackAdapterClass extends Instantiable1[/* eventEmitter */ IEventEmitter, IPlaybackAdapter] {
+  trait IPlaybackAdapterClass
+    extends StObject
+       with Instantiable1[/* eventEmitter */ IEventEmitter, IPlaybackAdapter] {
     
     def isSupported(): Boolean = js.native
   }

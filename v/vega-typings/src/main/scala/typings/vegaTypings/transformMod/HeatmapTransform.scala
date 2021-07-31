@@ -6,30 +6,30 @@ import typings.vegaTypings.vegaTypingsStrings.independent
 import typings.vegaTypings.vegaTypingsStrings.shared
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HeatmapTransform extends _Transforms {
+trait HeatmapTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var color: js.UndefOr[String | TransformField] = js.native
+  var color: js.UndefOr[String | TransformField] = js.undefined
   
-  var field: js.UndefOr[String | TransformField] = js.native
+  var field: js.UndefOr[String | TransformField] = js.undefined
   
-  var opacity: js.UndefOr[Double | TransformField] = js.native
+  var opacity: js.UndefOr[Double | TransformField] = js.undefined
   
-  var resolve: js.UndefOr[independent | shared | SignalRef] = js.native
+  var resolve: js.UndefOr[independent | shared | SignalRef] = js.undefined
   
-  var `type`: heatmap = js.native
+  var `type`: heatmap
 }
 object HeatmapTransform {
   
   @scala.inline
-  def apply(`type`: heatmap): HeatmapTransform = {
+  def apply(): HeatmapTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("heatmap")
     __obj.asInstanceOf[HeatmapTransform]
   }
   

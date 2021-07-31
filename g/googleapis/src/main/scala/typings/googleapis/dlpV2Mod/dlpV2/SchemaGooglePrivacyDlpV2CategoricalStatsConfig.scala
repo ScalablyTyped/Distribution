@@ -2,14 +2,12 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Compute numerical stats over an individual column, including number of
   * distinct values and value count distribution.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CategoricalStatsConfig extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaGooglePrivacyDlpV2CategoricalStatsConfig extends StObject {
     * except for arrays and structs. However, it may be more informative to use
     * NumericalStats when the field type is supported, depending on the data.
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CategoricalStatsConfig {
   

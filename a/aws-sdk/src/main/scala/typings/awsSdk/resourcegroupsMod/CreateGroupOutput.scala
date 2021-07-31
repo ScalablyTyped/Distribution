@@ -2,31 +2,29 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGroupOutput extends StObject {
   
   /**
     * The description of the resource group.
     */
-  var Group: js.UndefOr[typings.awsSdk.resourcegroupsMod.Group] = js.native
+  var Group: js.UndefOr[typings.awsSdk.resourcegroupsMod.Group] = js.undefined
   
   /**
     * The service configuration associated with the resource group. AWS Resource Groups supports adding service configurations for the following resource group types:    AWS::EC2::CapacityReservationPool - Amazon EC2 capacity reservation pools. For more information, see Working with capacity reservation groups in the EC2 Users Guide.  
     */
-  var GroupConfiguration: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupConfiguration] = js.native
+  var GroupConfiguration: js.UndefOr[typings.awsSdk.resourcegroupsMod.GroupConfiguration] = js.undefined
   
   /**
     * The resource query associated with the group.
     */
-  var ResourceQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceQuery] = js.native
+  var ResourceQuery: js.UndefOr[typings.awsSdk.resourcegroupsMod.ResourceQuery] = js.undefined
   
   /**
     * The tags associated with the group.
     */
-  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.undefined
 }
 object CreateGroupOutput {
   

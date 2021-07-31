@@ -80,37 +80,35 @@ import typings.vuex.mod.Store
 import typings.vuex.mod.StoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@testing-library/vue", "buildQueries")
+  @JSImport("@testing-library/vue", JSImport.Namespace)
   @js.native
-  def buildQueries[Arguments /* <: js.Array[_] */](
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def buildQueries[Arguments /* <: js.Array[js.Any] */](
     queryByAll: GetAllBy[Arguments],
     getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
     getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-  ): BuiltQueryMethods[Arguments] = js.native
+  ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
   
-  @JSImport("@testing-library/vue", "cleanup")
-  @js.native
-  def cleanup(): Unit = js.native
+  @scala.inline
+  def cleanup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanup")().asInstanceOf[Unit]
   
-  @JSImport("@testing-library/vue", "computeHeadingLevel")
-  @js.native
-  def computeHeadingLevel(element: Element): js.UndefOr[Double] = js.native
+  @scala.inline
+  def computeHeadingLevel(element: Element): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHeadingLevel")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("@testing-library/vue", "configure")
-  @js.native
-  def configure(configDelta: PartialConfig): Unit = js.native
-  @JSImport("@testing-library/vue", "configure")
-  @js.native
-  def configure(configDelta: ConfigFn): Unit = js.native
+  @scala.inline
+  def configure(configDelta: PartialConfig): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def configure(configDelta: ConfigFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(configDelta.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@testing-library/vue", "createEvent")
   @js.native
-  val createEvent: CreateObject with CreateFunction = js.native
+  val createEvent: CreateObject & CreateFunction = js.native
   
   @JSImport("@testing-library/vue", "findAllByAltText")
   @js.native
@@ -244,130 +242,92 @@ object mod {
   @js.native
   val getByTitle: GetByBoundAttribute = js.native
   
-  @JSImport("@testing-library/vue", "getConfig")
-  @js.native
-  def getConfig(): Config = js.native
+  @scala.inline
+  def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
   
-  @JSImport("@testing-library/vue", "getDefaultNormalizer")
-  @js.native
-  def getDefaultNormalizer(): NormalizerFn = js.native
-  @JSImport("@testing-library/vue", "getDefaultNormalizer")
-  @js.native
-  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = js.native
+  @scala.inline
+  def getDefaultNormalizer(): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")().asInstanceOf[NormalizerFn]
+  @scala.inline
+  def getDefaultNormalizer(options: DefaultNormalizerOptions): NormalizerFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultNormalizer")(options.asInstanceOf[js.Any]).asInstanceOf[NormalizerFn]
   
-  @JSImport("@testing-library/vue", "getElementError")
-  @js.native
-  def getElementError(message: String, container: HTMLElement): Error = js.native
+  @scala.inline
+  def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("@testing-library/vue", "getNodeText")
-  @js.native
-  def getNodeText(node: HTMLElement): String = js.native
+  @scala.inline
+  def getNodeText(node: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeText")(node.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@testing-library/vue", "getQueriesForElement")
-  @js.native
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
-  @JSImport("@testing-library/vue", "getQueriesForElement")
-  @js.native
-  def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
+  @scala.inline
+  def getQueriesForElement[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  @scala.inline
+  def getQueriesForElement[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueriesForElement")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
-  @JSImport("@testing-library/vue", "getRoles")
-  @js.native
-  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
+  @scala.inline
+  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
-  @JSImport("@testing-library/vue", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/vue", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: js.UndefOr[scala.Nothing], method: Method): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/vue", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/vue", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = js.native
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Unit, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
   
-  @JSImport("@testing-library/vue", "isInaccessible")
-  @js.native
-  def isInaccessible(element: Element): Boolean = js.native
+  @scala.inline
+  def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: Element): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = js.native
-  @JSImport("@testing-library/vue", "logDOM")
-  @js.native
-  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+  @scala.inline
+  def logDOM(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")().asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def logDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@testing-library/vue", "logRoles")
-  @js.native
-  def logRoles(container: HTMLElement): String = js.native
+  @scala.inline
+  def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = js.native
-  @JSImport("@testing-library/vue", "prettyDOM")
-  @js.native
-  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = js.native
+  @scala.inline
+  def prettyDOM(): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")().asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Unit, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: Element, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument): String | `false` = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any]).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Double, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
+  @scala.inline
+  def prettyDOM(dom: HTMLDocument, maxLength: Unit, options: OptionsReceived): String | `false` = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyDOM")(dom.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | `false`]
   
   object prettyFormat {
     
@@ -376,12 +336,14 @@ object mod {
       * @param val any potential JavaScript object
       * @param options Custom settings
       */
+    @scala.inline
+    def apply(`val`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = (^.asInstanceOf[js.Dynamic].apply(`val`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("@testing-library/vue", "prettyFormat")
     @js.native
-    def apply(`val`: js.Any): String = js.native
-    @JSImport("@testing-library/vue", "prettyFormat")
-    @js.native
-    def apply(`val`: js.Any, options: typings.prettyFormat.typesMod.OptionsReceived): String = js.native
+    val ^ : js.Any = js.native
     
     object plugins {
       
@@ -702,17 +664,19 @@ object mod {
   
   object queryHelpers {
     
-    @JSImport("@testing-library/vue", "queryHelpers.buildQueries")
+    @JSImport("@testing-library/vue", "queryHelpers")
     @js.native
-    def buildQueries[Arguments /* <: js.Array[_] */](
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildQueries[Arguments /* <: js.Array[js.Any] */](
       queryByAll: GetAllBy[Arguments],
       getMultipleError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String],
       getMissingError: js.Function2[/* container */ HTMLElement, /* args */ Arguments, String]
-    ): BuiltQueryMethods[Arguments] = js.native
+    ): BuiltQueryMethods[Arguments] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildQueries")(queryByAll.asInstanceOf[js.Any], getMultipleError.asInstanceOf[js.Any], getMissingError.asInstanceOf[js.Any])).asInstanceOf[BuiltQueryMethods[Arguments]]
     
-    @JSImport("@testing-library/vue", "queryHelpers.getElementError")
-    @js.native
-    def getElementError(message: String, container: HTMLElement): Error = js.native
+    @scala.inline
+    def getElementError(message: String, container: HTMLElement): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementError")(message.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[Error]
     
     @JSImport("@testing-library/vue", "queryHelpers.queryAllByAttribute")
     @js.native
@@ -723,26 +687,18 @@ object mod {
     val queryByAttribute: QueryByAttribute_ = js.native
   }
   
-  @JSImport("@testing-library/vue", "render")
-  @js.native
-  def render[V /* <: Vue */](TestComponent: VueClass[V]): ComponentHarness = js.native
-  @JSImport("@testing-library/vue", "render")
-  @js.native
-  def render[V /* <: Vue */](
-    TestComponent: VueClass[V],
-    options: js.UndefOr[scala.Nothing],
-    configure: ConfigurationCallback[V]
-  ): ComponentHarness = js.native
-  @JSImport("@testing-library/vue", "render")
-  @js.native
-  def render[V /* <: Vue */](TestComponent: VueClass[V], options: RenderOptions[V, js.Object]): ComponentHarness = js.native
-  @JSImport("@testing-library/vue", "render")
-  @js.native
+  @scala.inline
+  def render[V /* <: Vue */](TestComponent: VueClass[V]): ComponentHarness = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentHarness]
+  @scala.inline
+  def render[V /* <: Vue */](TestComponent: VueClass[V], options: Unit, configure: ConfigurationCallback[V]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
+  @scala.inline
+  def render[V /* <: Vue */](TestComponent: VueClass[V], options: RenderOptions[V, js.Object]): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
+  @scala.inline
   def render[V /* <: Vue */](
     TestComponent: VueClass[V],
     options: RenderOptions[V, js.Object],
     configure: ConfigurationCallback[V]
-  ): ComponentHarness = js.native
+  ): ComponentHarness = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(TestComponent.asInstanceOf[js.Any], options.asInstanceOf[js.Any], configure.asInstanceOf[js.Any])).asInstanceOf[ComponentHarness]
   
   /* Inlined @testing-library/dom.@testing-library/dom/types/screen.Screen<{ readonly getByLabelText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByLabelText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByLabelText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByPlaceholderText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByText :@testing-library/dom.@testing-library/dom/types/queries.GetByText,  readonly getAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly queryByText :@testing-library/dom.@testing-library/dom/types/queries.QueryByText,  readonly queryAllByText :@testing-library/dom.@testing-library/dom/types/queries.AllByText,  readonly findByText :@testing-library/dom.@testing-library/dom/types/queries.FindByText,  readonly findAllByText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByText,  readonly getByAltText :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByAltText :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByAltText :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByTitle :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTitle :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTitle :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByDisplayValue :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute,  readonly getByRole :@testing-library/dom.@testing-library/dom/types/queries.GetByRole,  readonly getAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly queryByRole :@testing-library/dom.@testing-library/dom/types/queries.QueryByRole,  readonly queryAllByRole :@testing-library/dom.@testing-library/dom/types/queries.AllByRole,  readonly findByRole :@testing-library/dom.@testing-library/dom/types/queries.FindByRole,  readonly findAllByRole :@testing-library/dom.@testing-library/dom/types/queries.FindAllByRole,  readonly getByTestId :@testing-library/dom.@testing-library/dom/types/queries.GetByBoundAttribute,  readonly getAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly queryByTestId :@testing-library/dom.@testing-library/dom/types/queries.QueryByBoundAttribute,  readonly queryAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.AllByBoundAttribute,  readonly findByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindByBoundAttribute,  readonly findAllByTestId :@testing-library/dom.@testing-library/dom/types/queries.FindAllByBoundAttribute}> */
   object screen {
@@ -755,58 +711,38 @@ object mod {
       * Convenience function for `pretty-dom` which also allows an array
       * of elements
       */
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.UndefOr[scala.Nothing], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument]): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(
-      element: js.Array[Element | HTMLDocument],
-      maxLength: js.UndefOr[scala.Nothing],
-      options: OptionsReceived
-    ): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: Element): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: js.UndefOr[scala.Nothing], options: OptionsReceived): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.debug")
-    @js.native
-    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = js.native
+    @scala.inline
+    def debug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")().asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: js.Array[Element | HTMLDocument], maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Unit, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: Element, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Double, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def debug(element: HTMLDocument, maxLength: Unit, options: OptionsReceived): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(element.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@testing-library/vue", "screen.findAllByAltText")
     @js.native
@@ -1004,15 +940,12 @@ object mod {
       * Convenience function for `Testing Playground` which logs URL that
       * can be opened in a browser
       */
-    @JSImport("@testing-library/vue", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: Element): Unit = js.native
-    @JSImport("@testing-library/vue", "screen.logTestingPlaygroundURL")
-    @js.native
-    def logTestingPlaygroundURL(element: HTMLDocument): Unit = js.native
+    @scala.inline
+    def logTestingPlaygroundURL(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")().asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def logTestingPlaygroundURL(element: HTMLDocument): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logTestingPlaygroundURL")(element.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@testing-library/vue", "screen.queryAllByAltText")
     @js.native
@@ -1111,562 +1044,545 @@ object mod {
     def queryByTitle_=(x: BoundFunction[QueryByBoundAttribute]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryByTitle")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@testing-library/vue", "waitFor")
-  @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = js.native
-  @JSImport("@testing-library/vue", "waitFor")
-  @js.native
-  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = js.native
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def waitFor[T](callback: js.Function0[T | js.Promise[T]], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitFor")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@testing-library/vue", "waitForDomChange")
-  @js.native
-  def waitForDomChange(): js.Promise[_] = js.native
-  @JSImport("@testing-library/vue", "waitForDomChange")
-  @js.native
-  def waitForDomChange(options: waitForOptions): js.Promise[_] = js.native
+  @scala.inline
+  def waitForDomChange(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")().asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def waitForDomChange(options: waitForOptions): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForDomChange")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("@testing-library/vue", "waitForElement")
-  @js.native
-  def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = js.native
-  @JSImport("@testing-library/vue", "waitForElement")
-  @js.native
-  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = js.native
+  @scala.inline
+  def waitForElement[T](callback: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def waitForElement[T](callback: js.Function0[T], options: waitForOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElement")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @JSImport("@testing-library/vue", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "waitForElementToBeRemoved")
-  @js.native
-  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = js.native
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: T, options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def waitForElementToBeRemoved[T](callback: js.Function0[T], options: waitForOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("waitForElementToBeRemoved")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("@testing-library/vue", "wait")
-  @js.native
-  def wait_(): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "wait")
-  @js.native
-  def wait_(callback: js.UndefOr[scala.Nothing], options: Interval): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "wait")
-  @js.native
-  def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = js.native
-  @JSImport("@testing-library/vue", "wait")
-  @js.native
-  def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = js.native
+  @scala.inline
+  def wait_(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: js.Function0[Unit]): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: js.Function0[Unit], options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def wait_(callback: Unit, options: Interval): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("wait")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /* was `typeof getQueriesForElement` */
-  @JSImport("@testing-library/vue", "within")
-  @js.native
-  def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = js.native
-  @JSImport("@testing-library/vue", "within")
-  @js.native
-  def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = js.native
+  @scala.inline
+  def within[T /* <: Queries */](element: HTMLElement): BoundFunctions[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any]).asInstanceOf[BoundFunctions[T]]
+  @scala.inline
+  def within[T /* <: Queries */](element: HTMLElement, queriesToBind: T): BoundFunctions[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(element.asInstanceOf[js.Any], queriesToBind.asInstanceOf[js.Any])).asInstanceOf[BoundFunctions[T]]
   
   /* Inlined {[ K in @testing-library/dom.@testing-library/dom.EventType ]: (element : std.Document | std.Element | std.Window, options : {} | undefined): std.Promise<void>} */
-  @js.native
   trait AsyncFireObject extends StObject {
     
     var abort: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var animationEnd: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var animationIteration: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var animationStart: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var blur: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var canPlay: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var canPlayThrough: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var change: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var click: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var compositionEnd: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var compositionStart: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var compositionUpdate: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var contextMenu: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var copy: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var cut: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dblClick: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var doubleClick: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var drag: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragEnd: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragEnter: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragExit: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragLeave: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragOver: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var dragStart: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var drop: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var durationChange: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var emptied: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var encrypted: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var ended: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var error: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var focus: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var focusIn: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var focusOut: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var gotPointerCapture: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var input: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var invalid: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var keyDown: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var keyPress: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var keyUp: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var load: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var loadStart: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var loadedData: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var loadedMetadata: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var lostPointerCapture: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseDown: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseEnter: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseLeave: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseMove: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseOut: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseOver: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var mouseUp: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var paste: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pause: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var play: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var playing: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerCancel: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerDown: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerEnter: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerLeave: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerMove: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerOut: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerOver: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var pointerUp: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var popState: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var progress: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var rateChange: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var reset: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var scroll: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var seeked: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var seeking: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var select: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var stalled: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var submit: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var suspend: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var timeUpdate: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var touchCancel: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var touchEnd: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var touchMove: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var touchStart: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var transitionEnd: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var volumeChange: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var waiting: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
     
     var wheel: js.Function2[
         /* element */ Document | Element | Window, 
         /* options */ js.UndefOr[js.Object], 
         js.Promise[Unit]
-      ] = js.native
+      ]
   }
   object AsyncFireObject {
     
@@ -2192,7 +2108,7 @@ object mod {
     def debug(el: js.Array[HTMLElement]): Unit = js.native
     def debug(el: HTMLElement): Unit = js.native
     
-    def emitted(): StringDictionary[js.Array[js.Array[_]]] = js.native
+    def emitted(): StringDictionary[js.Array[js.Array[js.Any]]] = js.native
     
     var findAllByAltText: BoundFunction[FindAllByBoundAttribute] = js.native
     
@@ -2309,52 +2225,55 @@ object mod {
   /* Inlined parent // The props and store options special-cased by vue-testing-library and NOT passed to mount().
   // In TS 3.5+: Omit<ThisTypedMountOptions<V>, "store" | "props">
   std.Pick<@vue/test-utils.@vue/test-utils.ThisTypedMountOptions<V>, std.Exclude<keyof @vue/test-utils.@vue/test-utils.ThisTypedMountOptions<V>, 'store' | 'props'>> */
-  @js.native
   trait RenderOptions[V /* <: Vue */, S] extends StObject {
     
-    var activated: js.UndefOr[js.Function0[Unit]] = js.native
+    var activated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var attachTo: js.UndefOr[Element | String] = js.native
+    var attachTo: js.UndefOr[Element | String] = js.undefined
     
-    var attachToDocument: js.UndefOr[Boolean] = js.native
+    var attachToDocument: js.UndefOr[Boolean] = js.undefined
     
-    var attrs: js.UndefOr[Record[String, String]] = js.native
+    var attrs: js.UndefOr[Record[String, String]] = js.undefined
     
-    var baseElement: js.UndefOr[HTMLElement] = js.native
+    var baseElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var beforeCreate: js.UndefOr[js.ThisFunction0[/* this */ V, Unit]] = js.native
+    var beforeCreate: js.UndefOr[js.ThisFunction0[/* this */ V, Unit]] = js.undefined
     
-    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeMount: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeMount: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
-    var components: js.UndefOr[StringDictionary[(Component[_, _, _, _]) | (AsyncComponent[_, _, _, _])]] = js.native
+    var components: js.UndefOr[
+        StringDictionary[
+          (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
+        ]
+      ] = js.undefined
     
-    var computed: js.UndefOr[js.Object] = js.native
+    var computed: js.UndefOr[js.Object] = js.undefined
     
-    var container: js.UndefOr[HTMLElement] = js.native
+    var container: js.UndefOr[HTMLElement] = js.undefined
     
-    var context: js.UndefOr[VNodeData] = js.native
+    var context: js.UndefOr[VNodeData] = js.undefined
     
-    var created: js.UndefOr[js.Function0[Unit]] = js.native
+    var created: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var data: js.UndefOr[DefaultData[V]] = js.native
+    var data: js.UndefOr[DefaultData[V]] = js.undefined
     
-    var deactivated: js.UndefOr[js.Function0[Unit]] = js.native
+    var deactivated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.native
+    var delimiters: js.UndefOr[js.Tuple2[String, String]] = js.undefined
     
-    var destroyed: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroyed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var directives: js.UndefOr[StringDictionary[DirectiveFunction | DirectiveOptions]] = js.native
+    var directives: js.UndefOr[StringDictionary[DirectiveFunction | DirectiveOptions]] = js.undefined
     
-    var el: js.UndefOr[Element | String] = js.native
+    var el: js.UndefOr[Element | String] = js.undefined
     
-    var errorCaptured: js.UndefOr[js.Function3[/* err */ Error, /* vm */ Vue, /* info */ String, Boolean | Unit]] = js.native
+    var errorCaptured: js.UndefOr[js.Function3[/* err */ Error, /* vm */ Vue, /* info */ String, Boolean | Unit]] = js.undefined
     
     var `extends`: js.UndefOr[
         (ComponentOptions[
@@ -2365,19 +2284,19 @@ object mod {
           PropsDefinition[DefaultProps], 
           DefaultProps
         ]) | VueConstructor[Vue]
-      ] = js.native
+      ] = js.undefined
     
-    var filters: js.UndefOr[StringDictionary[js.Function]] = js.native
+    var filters: js.UndefOr[StringDictionary[js.Function]] = js.undefined
     
-    var inheritAttrs: js.UndefOr[Boolean] = js.native
+    var inheritAttrs: js.UndefOr[Boolean] = js.undefined
     
-    var inject: js.UndefOr[InjectOptions] = js.native
+    var inject: js.UndefOr[InjectOptions] = js.undefined
     
-    var listeners: js.UndefOr[Record[String, js.Function | js.Array[js.Function]]] = js.native
+    var listeners: js.UndefOr[Record[String, js.Function | js.Array[js.Function]]] = js.undefined
     
-    var localVue: js.UndefOr[VueConstructor[Vue]] = js.native
+    var localVue: js.UndefOr[VueConstructor[Vue]] = js.undefined
     
-    var methods: js.UndefOr[DefaultMethods[V]] = js.native
+    var methods: js.UndefOr[DefaultMethods[V]] = js.undefined
     
     var mixins: js.UndefOr[
         js.Array[
@@ -2390,17 +2309,17 @@ object mod {
             DefaultProps
           ]) | VueConstructor[Vue]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var mocks: js.UndefOr[js.Object | `false`] = js.native
+    var mocks: js.UndefOr[js.Object | `false`] = js.undefined
     
-    var model: js.UndefOr[Event] = js.native
+    var model: js.UndefOr[Event] = js.undefined
     
-    var mounted: js.UndefOr[js.Function0[Unit]] = js.native
+    var mounted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[Vue] = js.native
+    var parent: js.UndefOr[Vue] = js.undefined
     
     var parentComponent: js.UndefOr[
         Component[
@@ -2409,41 +2328,41 @@ object mod {
           DefaultComputed, 
           DefaultProps
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var props: js.UndefOr[js.Object] = js.native
+    var props: js.UndefOr[js.Object] = js.undefined
     
-    var propsData: js.UndefOr[js.Object] = js.native
+    var propsData: js.UndefOr[js.Object] = js.undefined
     
-    var provide: js.UndefOr[js.Object | js.Function0[js.Object]] = js.native
+    var provide: js.UndefOr[js.Object | js.Function0[js.Object]] = js.undefined
     
     var render: js.UndefOr[
         js.Function2[/* createElement */ CreateElement, /* hack */ RenderContext[DefaultProps], VNode]
-      ] = js.native
+      ] = js.undefined
     
-    var renderError: js.UndefOr[js.Function2[/* createElement */ CreateElement, /* err */ Error, VNode]] = js.native
+    var renderError: js.UndefOr[js.Function2[/* createElement */ CreateElement, /* err */ Error, VNode]] = js.undefined
     
-    var routes: js.UndefOr[js.Array[RouteConfig]] = js.native
+    var routes: js.UndefOr[js.Array[RouteConfig]] = js.undefined
     
-    var scopedSlots: js.UndefOr[Record[String, String | js.Function]] = js.native
+    var scopedSlots: js.UndefOr[Record[String, String | js.Function]] = js.undefined
     
-    var serverPrefetch: js.UndefOr[js.ThisFunction0[/* this */ V, js.Promise[Unit]]] = js.native
+    var serverPrefetch: js.UndefOr[js.ThisFunction0[/* this */ V, js.Promise[Unit]]] = js.undefined
     
-    var slots: js.UndefOr[Slots] = js.native
+    var slots: js.UndefOr[Slots] = js.undefined
     
-    var staticRenderFns: js.UndefOr[js.Array[js.Function1[/* createElement */ CreateElement, VNode]]] = js.native
+    var staticRenderFns: js.UndefOr[js.Array[js.Function1[/* createElement */ CreateElement, VNode]]] = js.undefined
     
-    var store: js.UndefOr[StoreOptions[S]] = js.native
+    var store: js.UndefOr[StoreOptions[S]] = js.undefined
     
-    var stubs: js.UndefOr[Stubs | `false`] = js.native
+    var stubs: js.UndefOr[Stubs | `false`] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var transitions: js.UndefOr[StringDictionary[js.Object]] = js.native
+    var transitions: js.UndefOr[StringDictionary[js.Object]] = js.undefined
     
-    var updated: js.UndefOr[js.Function0[Unit]] = js.native
+    var updated: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[_] | WatchHandler[_] | String]] = js.native
+    var watch: js.UndefOr[Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]] = js.undefined
   }
   object RenderOptions {
     
@@ -2454,7 +2373,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions[_, _], V /* <: Vue */, S] (val x: Self with (RenderOptions[V, S])) extends AnyVal {
+    implicit class RenderOptionsMutableBuilder[Self <: RenderOptions[?, ?], V /* <: Vue */, S] (val x: Self & (RenderOptions[V, S])) extends AnyVal {
       
       @scala.inline
       def setActivated(value: () => Unit): Self = StObject.set(x, "activated", js.Any.fromFunction0(value))
@@ -2517,7 +2436,11 @@ object mod {
       def setCommentsUndefined: Self = StObject.set(x, "comments", js.undefined)
       
       @scala.inline
-      def setComponents(value: StringDictionary[(Component[_, _, _, _]) | (AsyncComponent[_, _, _, _])]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
+      def setComponents(
+        value: StringDictionary[
+              (Component[js.Any, js.Any, js.Any, js.Any]) | (AsyncComponent[js.Any, js.Any, js.Any, js.Any])
+            ]
+      ): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setComponentsUndefined: Self = StObject.set(x, "components", js.undefined)
@@ -2817,7 +2740,7 @@ object mod {
       def setUpdatedUndefined: Self = StObject.set(x, "updated", js.undefined)
       
       @scala.inline
-      def setWatch(value: Record[String, WatchOptionsWithHandler[_] | WatchHandler[_] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
+      def setWatch(value: Record[String, WatchOptionsWithHandler[js.Any] | WatchHandler[js.Any] | String]): Self = StObject.set(x, "watch", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWatchUndefined: Self = StObject.set(x, "watch", js.undefined)
@@ -2825,7 +2748,9 @@ object mod {
   }
   
   @js.native
-  trait VueFireObject extends AsyncFireObject {
+  trait VueFireObject
+    extends StObject
+       with AsyncFireObject {
     
     def apply(element: Document, event: typings.std.Event): js.Promise[Unit] = js.native
     def apply(element: Element, event: typings.std.Event): js.Promise[Unit] = js.native

@@ -8,56 +8,54 @@ import typings.aframe.mod.System
 import typings.three.mod.Camera
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<aframe.aframe.Component<any, aframe.aframe.System<any>>> */
-@js.native
 trait PartialComponentanySystem extends StObject {
   
-  var attrName: js.UndefOr[String] = js.native
+  var attrName: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dependencies: js.UndefOr[js.Array[String]] = js.native
+  var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var el: js.UndefOr[Entity[ObjectMap[Component[_, System[_]]]]] = js.native
+  var el: js.UndefOr[Entity[ObjectMap[Component[js.Any, System[js.Any]]]]] = js.undefined
   
-  var events: js.UndefOr[js.Any] = js.native
+  var events: js.UndefOr[js.Any] = js.undefined
   
-  var extendSchema: js.UndefOr[js.Function1[/* update */ Schema_[js.Object], Unit]] = js.native
+  var extendSchema: js.UndefOr[js.Function1[/* update */ Schema_[js.Object], Unit]] = js.undefined
   
-  var flushToDOM: js.UndefOr[js.Function0[Unit]] = js.native
+  var flushToDOM: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var init: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+  var init: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var initialized: js.UndefOr[Boolean] = js.native
+  var initialized: js.UndefOr[Boolean] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pause: js.UndefOr[js.Function0[Unit]] = js.native
+  var pause: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var play: js.UndefOr[js.Function0[Unit]] = js.native
+  var play: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var remove: js.UndefOr[js.Function0[Unit]] = js.native
+  var remove: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var schema: js.UndefOr[Schema_[_]] = js.native
+  var schema: js.UndefOr[Schema_[js.Any]] = js.undefined
   
-  var system: js.UndefOr[System[_]] = js.native
+  var system: js.UndefOr[System[js.Any]] = js.undefined
   
-  var tick: js.UndefOr[js.Function2[/* time */ Double, /* timeDelta */ Double, Unit]] = js.native
+  var tick: js.UndefOr[js.Function2[/* time */ Double, /* timeDelta */ Double, Unit]] = js.undefined
   
   var tock: js.UndefOr[
     js.Function3[/* time */ Double, /* timeDelta */ Double, /* camera */ Camera, Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var update: js.UndefOr[js.Function1[/* oldData */ js.Any, Unit]] = js.native
+  var update: js.UndefOr[js.Function1[/* oldData */ js.Any, Unit]] = js.undefined
   
-  var updateSchema: js.UndefOr[js.Function0[Unit]] = js.native
+  var updateSchema: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PartialComponentanySystem {
   
@@ -92,7 +90,7 @@ object PartialComponentanySystem {
     def setDependenciesVarargs(value: String*): Self = StObject.set(x, "dependencies", js.Array(value :_*))
     
     @scala.inline
-    def setEl(value: Entity[ObjectMap[Component[_, System[_]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
+    def setEl(value: Entity[ObjectMap[Component[js.Any, System[js.Any]]]]): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setElUndefined: Self = StObject.set(x, "el", js.undefined)
@@ -164,13 +162,13 @@ object PartialComponentanySystem {
     def setRemoveUndefined: Self = StObject.set(x, "remove", js.undefined)
     
     @scala.inline
-    def setSchema(value: Schema_[_]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
+    def setSchema(value: Schema_[js.Any]): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSchemaUndefined: Self = StObject.set(x, "schema", js.undefined)
     
     @scala.inline
-    def setSystem(value: System[_]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
+    def setSystem(value: System[js.Any]): Self = StObject.set(x, "system", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSystemUndefined: Self = StObject.set(x, "system", js.undefined)

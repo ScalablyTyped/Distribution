@@ -2,29 +2,27 @@ package typings.applepayjs.ApplePayJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object that contains the user's payment credentials.
   */
-@js.native
 trait ApplePayPaymentToken extends StObject {
   
   /**
     * An object containing the encrypted payment data.
     */
-  var paymentData: js.Any = js.native
+  var paymentData: js.Any
   
   /**
     * Information about the card used in the transaction.
     */
-  var paymentMethod: ApplePayPaymentMethod = js.native
+  var paymentMethod: ApplePayPaymentMethod
   
   /**
     * A unique identifier for this payment.
     */
-  var transactionIdentifier: String = js.native
+  var transactionIdentifier: String
 }
 object ApplePayPaymentToken {
   

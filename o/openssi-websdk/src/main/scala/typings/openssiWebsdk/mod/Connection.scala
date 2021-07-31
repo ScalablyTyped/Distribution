@@ -2,23 +2,21 @@ package typings.openssiWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var local: js.UndefOr[ConnectionAgent] = js.native
+  var local: js.UndefOr[ConnectionAgent] = js.undefined
   
-  var properties: Properties = js.native
+  var properties: Properties
   
-  var remote: js.UndefOr[ConnectionAgent] = js.native
+  var remote: js.UndefOr[ConnectionAgent] = js.undefined
   
-  var role: String = js.native
+  var role: String
   
-  var state: ConnectionState = js.native
+  var state: ConnectionState
 }
 object Connection {
   

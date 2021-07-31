@@ -2,38 +2,36 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashFontItem extends StObject {
   
   // Specifies whether the Font item is bitmapped.
-  var bitmap: Boolean = js.native
+  var bitmap: Boolean
   
   // Specifies whether the Font item is bold.
-  var bold: Boolean = js.native
+  var bold: Boolean
   
   // Specifies items that can be selected in the Font Embedding dialog.
-  var embedRanges: String = js.native
+  var embedRanges: String
   
   // Specifies whether variant glyphs should be output in the font when publishing a SWF file.
-  var embedVariantGlyphs: Boolean = js.native
+  var embedVariantGlyphs: Boolean
   
   // Specifies characters to embed.
-  var embeddedCharacters: String = js.native
+  var embeddedCharacters: String
   
   // The name of the device font associated with the Font item.
-  var font: String = js.native
+  var font: String
   
   // Specifies the format of the font that is output when publishing a SWF filem.
-  var isDefineFont4Symbol: Boolean = js.native
+  var isDefineFont4Symbol: Boolean
   
   // Specifies whether the Font item is italic.
-  var italic: Boolean = js.native
+  var italic: Boolean
   
   // The size of the Font item, in points.
-  var size: Double = js.native
+  var size: Double
 }
 object FlashFontItem {
   

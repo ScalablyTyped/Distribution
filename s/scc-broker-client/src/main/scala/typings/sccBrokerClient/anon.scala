@@ -2,15 +2,13 @@ package typings.sccBrokerClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
   }
   object Error {
     
@@ -28,14 +26,13 @@ object anon {
     }
   }
   
-  @js.native
   trait NoMatchingPublishTargetError extends StObject {
     
-    def NoMatchingPublishTargetError(channelName: String): typings.std.Error = js.native
+    def NoMatchingPublishTargetError(channelName: String): typings.std.Error
     
-    def NoMatchingSubscribeTargetError(channelName: String): typings.std.Error = js.native
+    def NoMatchingSubscribeTargetError(channelName: String): typings.std.Error
     
-    def NoMatchingUnsubscribeTargetError(channelName: String): typings.std.Error = js.native
+    def NoMatchingUnsubscribeTargetError(channelName: String): typings.std.Error
   }
   object NoMatchingPublishTargetError {
     

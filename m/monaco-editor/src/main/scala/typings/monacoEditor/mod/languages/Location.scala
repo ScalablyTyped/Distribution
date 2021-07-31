@@ -4,21 +4,19 @@ import typings.monacoEditor.mod.IRange
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The document range of this locations.
     */
-  var range: IRange = js.native
+  var range: IRange
   
   /**
     * The resource identifier of this location.
     */
-  var uri: Uri = js.native
+  var uri: Uri
 }
 object Location {
   

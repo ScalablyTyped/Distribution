@@ -7,17 +7,15 @@ import typings.pgPromise.pgSubsetMod.IDefaults
 import typings.pgPromise.pgSubsetMod.ITypes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofpg extends StObject {
   
-  val Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient] = js.native
+  val Client: Instantiable1[/* config */ String | IConnectionParameters[IClient], IClient]
   
-  val defaults: IDefaults = js.native
+  val defaults: IDefaults
   
-  val types: ITypes = js.native
+  val types: ITypes
 }
 object Typeofpg {
   

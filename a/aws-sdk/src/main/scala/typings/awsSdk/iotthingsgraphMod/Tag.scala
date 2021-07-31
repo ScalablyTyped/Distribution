@@ -2,21 +2,19 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * The required name of the tag. The string value can be from 1 to 128 Unicode characters in length.
     */
-  var key: TagKey = js.native
+  var key: TagKey
   
   /**
     * The optional value of the tag. The string value can be from 1 to 256 Unicode characters in length.
     */
-  var value: TagValue = js.native
+  var value: TagValue
 }
 object Tag {
   

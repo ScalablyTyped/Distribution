@@ -8,7 +8,6 @@ import typings.sawtoothSdk.protobufMod.IConsensusNotifyBlockValid
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid")
@@ -24,17 +23,19 @@ class ConsensusNotifyBlockValid ()
 /* static members */
 object ConsensusNotifyBlockValid {
   
+  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ConsensusNotifyBlockValid instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ConsensusNotifyBlockValid instance
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.create")
-  @js.native
-  def create(): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.create")
-  @js.native
-  def create(properties: IConsensusNotifyBlockValid): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
+  @scala.inline
+  def create(): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
+  @scala.inline
+  def create(properties: IConsensusNotifyBlockValid): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
   
   /**
     * Decodes a ConsensusNotifyBlockValid message from the specified reader or buffer.
@@ -44,18 +45,14 @@ object ConsensusNotifyBlockValid {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decode")
-  @js.native
-  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decode")
-  @js.native
-  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
+  @scala.inline
+  def decode(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
+  @scala.inline
+  def decode(reader: Reader, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
+  @scala.inline
+  def decode(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
   
   /**
     * Decodes a ConsensusNotifyBlockValid message from the specified reader or buffer, length delimited.
@@ -64,12 +61,10 @@ object ConsensusNotifyBlockValid {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
   
   /**
     * Encodes the specified ConsensusNotifyBlockValid message. Does not implicitly {@link ConsensusNotifyBlockValid.verify|verify} messages.
@@ -77,12 +72,10 @@ object ConsensusNotifyBlockValid {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.encode")
-  @js.native
-  def encode(message: IConsensusNotifyBlockValid): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.encode")
-  @js.native
-  def encode(message: IConsensusNotifyBlockValid, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ConsensusNotifyBlockValid message, length delimited. Does not implicitly {@link ConsensusNotifyBlockValid.verify|verify} messages.
@@ -90,21 +83,18 @@ object ConsensusNotifyBlockValid {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusNotifyBlockValid): Writer = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IConsensusNotifyBlockValid, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IConsensusNotifyBlockValid): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IConsensusNotifyBlockValid, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ConsensusNotifyBlockValid message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ConsensusNotifyBlockValid
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid]
   
   /**
     * Creates a plain object from a ConsensusNotifyBlockValid message. Also converts values to other types if specified.
@@ -112,19 +102,16 @@ object ConsensusNotifyBlockValid {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.toObject")
-  @js.native
-  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: typings.sawtoothSdk.protobufMod.ConsensusNotifyBlockValid, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ConsensusNotifyBlockValid message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk", "protobuf.ConsensusNotifyBlockValid.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

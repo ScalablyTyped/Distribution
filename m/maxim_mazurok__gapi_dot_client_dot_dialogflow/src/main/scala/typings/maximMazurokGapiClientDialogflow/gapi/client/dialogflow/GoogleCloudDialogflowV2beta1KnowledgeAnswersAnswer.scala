@@ -2,34 +2,32 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer extends StObject {
   
   /** The piece of text from the `source` knowledge base document that answers this conversational query. */
-  var answer: js.UndefOr[String] = js.native
+  var answer: js.UndefOr[String] = js.undefined
   
   /** The corresponding FAQ question if the answer was extracted from a FAQ Document, empty otherwise. */
-  var faqQuestion: js.UndefOr[String] = js.native
+  var faqQuestion: js.UndefOr[String] = js.undefined
   
   /**
     * The system's confidence score that this Knowledge answer is a good match for this conversational query. The range is from 0.0 (completely uncertain) to 1.0 (completely certain).
     * Note: The confidence score is likely to vary somewhat (possibly even for identical requests), as the underlying model is under constant improvement. It may be deprecated in the
     * future. We recommend using `match_confidence_level` which should be generally more stable.
     */
-  var matchConfidence: js.UndefOr[Double] = js.native
+  var matchConfidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The system's confidence level that this knowledge answer is a good match for this conversational query. NOTE: The confidence level for a given `` pair may change without notice, as
     * it depends on models that are constantly being improved. However, it will change less frequently than the confidence score below, and should be preferred for referencing the quality
     * of an answer.
     */
-  var matchConfidenceLevel: js.UndefOr[String] = js.native
+  var matchConfidenceLevel: js.UndefOr[String] = js.undefined
   
   /** Indicates which Knowledge Document this answer was extracted from. Format: `projects//knowledgeBases//documents/`. */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1KnowledgeAnswersAnswer {
   

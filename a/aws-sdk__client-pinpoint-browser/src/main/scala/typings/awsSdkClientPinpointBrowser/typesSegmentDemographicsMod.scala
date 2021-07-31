@@ -4,43 +4,41 @@ import typings.awsSdkClientPinpointBrowser.typesSetDimensionMod.SetDimension
 import typings.awsSdkClientPinpointBrowser.typesSetDimensionMod.UnmarshalledSetDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentDemographicsMod {
   
-  @js.native
   trait SegmentDemographics extends StObject {
     
     /**
       * The app version criteria for the segment.
       */
-    var AppVersion: js.UndefOr[SetDimension] = js.native
+    var AppVersion: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The channel criteria for the segment.
       */
-    var Channel: js.UndefOr[SetDimension] = js.native
+    var Channel: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The device type criteria for the segment.
       */
-    var DeviceType: js.UndefOr[SetDimension] = js.native
+    var DeviceType: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The device make criteria for the segment.
       */
-    var Make: js.UndefOr[SetDimension] = js.native
+    var Make: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The device model criteria for the segment.
       */
-    var Model: js.UndefOr[SetDimension] = js.native
+    var Model: js.UndefOr[SetDimension] = js.undefined
     
     /**
       * The device platform criteria for the segment.
       */
-    var Platform: js.UndefOr[SetDimension] = js.native
+    var Platform: js.UndefOr[SetDimension] = js.undefined
   }
   object SegmentDemographics {
     
@@ -91,44 +89,45 @@ object typesSegmentDemographicsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentDemographics extends SegmentDemographics {
+  trait UnmarshalledSegmentDemographics
+    extends StObject
+       with SegmentDemographics {
     
     /**
       * The app version criteria for the segment.
       */
     @JSName("AppVersion")
-    var AppVersion_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var AppVersion_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The channel criteria for the segment.
       */
     @JSName("Channel")
-    var Channel_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var Channel_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The device type criteria for the segment.
       */
     @JSName("DeviceType")
-    var DeviceType_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var DeviceType_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The device make criteria for the segment.
       */
     @JSName("Make")
-    var Make_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var Make_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The device model criteria for the segment.
       */
     @JSName("Model")
-    var Model_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var Model_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
     
     /**
       * The device platform criteria for the segment.
       */
     @JSName("Platform")
-    var Platform_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.native
+    var Platform_UnmarshalledSegmentDemographics: js.UndefOr[UnmarshalledSetDimension] = js.undefined
   }
   object UnmarshalledSegmentDemographics {
     

@@ -17,112 +17,89 @@ import typings.stylableCore.stylableProcessorMod.StylableMeta
 import typings.stylableCore.stylableResolverMod.StylableResolver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableUtilsMod {
+  
+  @JSImport("@stylable/core/cjs/stylable-utils", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/core/cjs/stylable-utils", "CUSTOM_SELECTOR_RE")
   @js.native
   val CUSTOM_SELECTOR_RE: RegExp = js.native
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: js.UndefOr[scala.Nothing], isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "createSubsetAst")
-  @js.native
-  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: js.UndefOr[scala.Nothing], isRoot: Boolean): T = js.native
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: AtRule_, selectorPrefix: String, mixinTarget: Unit, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: T, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def createSubsetAst[T /* <: Root_ | AtRule_ */](root: Root_, selectorPrefix: String, mixinTarget: Unit, isRoot: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSubsetAst")(root.asInstanceOf[js.Any], selectorPrefix.asInstanceOf[js.Any], mixinTarget.asInstanceOf[js.Any], isRoot.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "expandCustomSelectors")
-  @js.native
-  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String]): String = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "expandCustomSelectors")
-  @js.native
-  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String], diagnostics: Diagnostics): String = js.native
+  @scala.inline
+  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expandCustomSelectors")(rule.asInstanceOf[js.Any], customSelectors.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def expandCustomSelectors(rule: Rule_, customSelectors: Record[String, String], diagnostics: Diagnostics): String = (^.asInstanceOf[js.Dynamic].applyDynamic("expandCustomSelectors")(rule.asInstanceOf[js.Any], customSelectors.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "findDeclaration")
-  @js.native
-  def findDeclaration(importNode: Imported, test: js.Any): Declaration = js.native
+  @scala.inline
+  def findDeclaration(importNode: Imported, test: js.Any): Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findDeclaration")(importNode.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Declaration]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "findRule")
-  @js.native
-  def findRule(root: Root_, selector: String): Null | Declaration = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "findRule")
-  @js.native
-  def findRule(root: Root_, selector: String, test: js.Any): Null | Declaration = js.native
+  @scala.inline
+  def findRule(root: Root_, selector: String): Null | Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findRule")(root.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Null | Declaration]
+  @scala.inline
+  def findRule(root: Root_, selector: String, test: js.Any): Null | Declaration = (^.asInstanceOf[js.Dynamic].applyDynamic("findRule")(root.asInstanceOf[js.Any], selector.asInstanceOf[js.Any], test.asInstanceOf[js.Any])).asInstanceOf[Null | Declaration]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "generateScopedCSSVar")
-  @js.native
-  def generateScopedCSSVar(namespace: String, varName: String): String = js.native
+  @scala.inline
+  def generateScopedCSSVar(namespace: String, varName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateScopedCSSVar")(namespace.asInstanceOf[js.Any], varName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "getAlias")
-  @js.native
-  def getAlias(symbol: StylableSymbol): js.UndefOr[ImportSymbol] = js.native
+  @scala.inline
+  def getAlias(symbol: StylableSymbol): js.UndefOr[ImportSymbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlias")(symbol.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ImportSymbol]]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "getDeclStylable")
-  @js.native
-  def getDeclStylable(decl: SDecl): DeclStylableProps = js.native
+  @scala.inline
+  def getDeclStylable(decl: SDecl): DeclStylableProps = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeclStylable")(decl.asInstanceOf[js.Any]).asInstanceOf[DeclStylableProps]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "getSourcePath")
-  @js.native
-  def getSourcePath(root: Root_, diagnostics: Diagnostics): String = js.native
+  @scala.inline
+  def getSourcePath(root: Root_, diagnostics: Diagnostics): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSourcePath")(root.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "isCSSVarProp")
-  @js.native
-  def isCSSVarProp(value: String): Boolean = js.native
+  @scala.inline
+  def isCSSVarProp(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCSSVarProp")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "isValidClassName")
-  @js.native
-  def isValidClassName(className: String): Boolean = js.native
+  @scala.inline
+  def isValidClassName(className: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidClassName")(className.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "isValidDeclaration")
-  @js.native
-  def isValidDeclaration(decl: Declaration): Boolean = js.native
+  @scala.inline
+  def isValidDeclaration(decl: Declaration): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidDeclaration")(decl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "mergeRules")
-  @js.native
-  def mergeRules(mixinAst: Root_, rule: Rule_): Rule_ = js.native
+  @scala.inline
+  def mergeRules(mixinAst: Root_, rule: Rule_): Rule_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeRules")(mixinAst.asInstanceOf[js.Any], rule.asInstanceOf[js.Any])).asInstanceOf[Rule_]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "removeUnusedRules")
-  @js.native
+  @scala.inline
   def removeUnusedRules(
     ast: Root_,
     meta: StylableMeta,
     _import: Imported,
     usedFiles: js.Array[String],
     resolvePath: js.Function2[/* ctx */ String, /* path */ String, String]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeUnusedRules")(ast.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], _import.asInstanceOf[js.Any], usedFiles.asInstanceOf[js.Any], resolvePath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "scopeCSSVar")
-  @js.native
-  def scopeCSSVar(resolver: StylableResolver, meta: StylableMeta, symbolName: String): String = js.native
+  @scala.inline
+  def scopeCSSVar(resolver: StylableResolver, meta: StylableMeta, symbolName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeCSSVar")(resolver.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], symbolName.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "scopeSelector")
-  @js.native
-  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String): Selector = js.native
-  @JSImport("@stylable/core/cjs/stylable-utils", "scopeSelector")
-  @js.native
-  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String, rootScopeLevel: Boolean): Selector = js.native
+  @scala.inline
+  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String): Selector = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeSelector")(scopeSelectorRule.asInstanceOf[js.Any], targetSelectorRule.asInstanceOf[js.Any])).asInstanceOf[Selector]
+  @scala.inline
+  def scopeSelector(scopeSelectorRule: String, targetSelectorRule: String, rootScopeLevel: Boolean): Selector = (^.asInstanceOf[js.Dynamic].applyDynamic("scopeSelector")(scopeSelectorRule.asInstanceOf[js.Any], targetSelectorRule.asInstanceOf[js.Any], rootScopeLevel.asInstanceOf[js.Any])).asInstanceOf[Selector]
   
-  @JSImport("@stylable/core/cjs/stylable-utils", "transformMatchesOnRule")
-  @js.native
-  def transformMatchesOnRule(rule: Rule_, lineBreak: Boolean): String = js.native
+  @scala.inline
+  def transformMatchesOnRule(rule: Rule_, lineBreak: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("transformMatchesOnRule")(rule.asInstanceOf[js.Any], lineBreak.asInstanceOf[js.Any])).asInstanceOf[String]
 }

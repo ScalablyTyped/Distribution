@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectAccessControls extends StObject {
   
   /** The list of items. */
-  var items: js.UndefOr[js.Array[ObjectAccessControl]] = js.native
+  var items: js.UndefOr[js.Array[ObjectAccessControl]] = js.undefined
   
   /** The kind of item this is. For lists of object access control entries, this is always storage#objectAccessControls. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ObjectAccessControls {
   

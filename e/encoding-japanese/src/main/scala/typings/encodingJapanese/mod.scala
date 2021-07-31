@@ -13,168 +13,132 @@ import typings.std.Uint32Array
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("encoding-japanese", "base64Decode")
+  @JSImport("encoding-japanese", JSImport.Namespace)
   @js.native
-  def base64Decode(data: String): js.Array[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("encoding-japanese", "base64Encode")
-  @js.native
-  def base64Encode(data: IntArrayType): String = js.native
+  @scala.inline
+  def base64Decode(data: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "codeToString")
-  @js.native
-  def codeToString(data: IntArrayType): String = js.native
+  @scala.inline
+  def base64Encode(data: IntArrayType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, options: ConvertArrayBufferOptions): ArrayBuffer = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, options: ConvertArrayOptions): js.Array[Double] = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, options: ConvertStringOptions): String = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, options: ConvertUnknownOptions): String = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, to: Encoding): String = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: String, to: Encoding, from: Encoding): String = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, options: ConvertArrayBufferOptions): ArrayBuffer = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, options: ConvertArrayOptions): js.Array[Double] = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, options: ConvertStringOptions): String = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, options: ConvertUnknownOptions): js.Array[Double] = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, to: Encoding): js.Array[Double] = js.native
-  @JSImport("encoding-japanese", "convert")
-  @js.native
-  def convert(data: RawType, to: Encoding, from: Encoding): js.Array[Double] = js.native
+  @scala.inline
+  def codeToString(data: IntArrayType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("codeToString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: String): EncodingDetection = js.native
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: String, encodings: js.Array[Encoding]): EncodingDetection = js.native
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: String, encodings: Encoding): EncodingDetection = js.native
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: RawType): EncodingDetection = js.native
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: RawType, encodings: js.Array[Encoding]): EncodingDetection = js.native
-  @JSImport("encoding-japanese", "detect")
-  @js.native
-  def detect(data: RawType, encodings: Encoding): EncodingDetection = js.native
+  @scala.inline
+  def convert(data: String, options: ConvertArrayBufferOptions): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def convert(data: String, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def convert(data: String, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(data: String, options: ConvertUnknownOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(data: String, to: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(data: String, to: Encoding, from: Encoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(data: RawType, options: ConvertArrayBufferOptions): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def convert(data: RawType, options: ConvertArrayOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def convert(data: RawType, options: ConvertStringOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def convert(data: RawType, options: ConvertUnknownOptions): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def convert(data: RawType, to: Encoding): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def convert(data: RawType, to: Encoding, from: Encoding): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(data.asInstanceOf[js.Any], to.asInstanceOf[js.Any], from.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  
+  @scala.inline
+  def detect(data: String): EncodingDetection = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any]).asInstanceOf[EncodingDetection]
+  @scala.inline
+  def detect(data: String, encodings: js.Array[Encoding]): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
+  @scala.inline
+  def detect(data: String, encodings: Encoding): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
+  @scala.inline
+  def detect(data: RawType): EncodingDetection = ^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any]).asInstanceOf[EncodingDetection]
+  @scala.inline
+  def detect(data: RawType, encodings: js.Array[Encoding]): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
+  @scala.inline
+  def detect(data: RawType, encodings: Encoding): EncodingDetection = (^.asInstanceOf[js.Dynamic].applyDynamic("detect")(data.asInstanceOf[js.Any], encodings.asInstanceOf[js.Any])).asInstanceOf[EncodingDetection]
   
   @JSImport("encoding-japanese", "orders")
   @js.native
   val orders: js.Array[String] = js.native
   
-  @JSImport("encoding-japanese", "stringToCode")
-  @js.native
-  def stringToCode(data: String): js.Array[Double] = js.native
+  @scala.inline
+  def stringToCode(data: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToCode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toHankakuCase")
-  @js.native
-  def toHankakuCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toHankakuCase")
-  @js.native
-  def toHankakuCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toHankakuCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankakuCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHankakuCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankakuCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toHankakuSpace")
-  @js.native
-  def toHankakuSpace(data: String): String = js.native
-  @JSImport("encoding-japanese", "toHankakuSpace")
-  @js.native
-  def toHankakuSpace(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toHankakuSpace(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankakuSpace")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHankakuSpace(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankakuSpace")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toHankanaCase")
-  @js.native
-  def toHankanaCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toHankanaCase")
-  @js.native
-  def toHankanaCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toHankanaCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHankanaCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHankanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toHiraganaCase")
-  @js.native
-  def toHiraganaCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toHiraganaCase")
-  @js.native
-  def toHiraganaCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toHiraganaCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiraganaCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toHiraganaCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toHiraganaCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toKatakanaCase")
-  @js.native
-  def toKatakanaCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toKatakanaCase")
-  @js.native
-  def toKatakanaCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toKatakanaCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toKatakanaCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toKatakanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toZenkakuCase")
-  @js.native
-  def toZenkakuCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toZenkakuCase")
-  @js.native
-  def toZenkakuCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toZenkakuCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkakuCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toZenkakuCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkakuCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toZenkakuSpace")
-  @js.native
-  def toZenkakuSpace(data: String): String = js.native
-  @JSImport("encoding-japanese", "toZenkakuSpace")
-  @js.native
-  def toZenkakuSpace(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toZenkakuSpace(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkakuSpace")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toZenkakuSpace(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkakuSpace")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "toZenkanaCase")
-  @js.native
-  def toZenkanaCase(data: String): String = js.native
-  @JSImport("encoding-japanese", "toZenkanaCase")
-  @js.native
-  def toZenkanaCase(data: js.Array[Double]): js.Array[Double] = js.native
+  @scala.inline
+  def toZenkanaCase(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toZenkanaCase(data: js.Array[Double]): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("toZenkanaCase")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "urlDecode")
-  @js.native
-  def urlDecode(data: String): js.Array[Double] = js.native
+  @scala.inline
+  def urlDecode(data: String): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("urlDecode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("encoding-japanese", "urlEncode")
-  @js.native
-  def urlEncode(data: IntArrayType): String = js.native
+  @scala.inline
+  def urlEncode(data: IntArrayType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlEncode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
-  trait ConvertArrayBufferOptions extends ConvertOptions {
+  trait ConvertArrayBufferOptions
+    extends StObject
+       with ConvertOptions {
     
-    var bom: js.UndefOr[Boolean | String] = js.native
+    var bom: js.UndefOr[Boolean | String] = js.undefined
     
-    var from: js.UndefOr[Encoding] = js.native
+    var from: js.UndefOr[Encoding] = js.undefined
     
-    var to: Encoding = js.native
+    var to: Encoding
     
-    var `type`: arraybuffer = js.native
+    var `type`: arraybuffer
   }
   object ConvertArrayBufferOptions {
     
     @scala.inline
-    def apply(to: Encoding, `type`: arraybuffer): ConvertArrayBufferOptions = {
+    def apply(to: Encoding): ConvertArrayBufferOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("arraybuffer")
       __obj.asInstanceOf[ConvertArrayBufferOptions]
     }
     
@@ -201,23 +165,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConvertArrayOptions extends ConvertOptions {
+  trait ConvertArrayOptions
+    extends StObject
+       with ConvertOptions {
     
-    var bom: js.UndefOr[Boolean | String] = js.native
+    var bom: js.UndefOr[Boolean | String] = js.undefined
     
-    var from: js.UndefOr[Encoding] = js.native
+    var from: js.UndefOr[Encoding] = js.undefined
     
-    var to: Encoding = js.native
+    var to: Encoding
     
-    var `type`: array = js.native
+    var `type`: array
   }
   object ConvertArrayOptions {
     
     @scala.inline
-    def apply(to: Encoding, `type`: array): ConvertArrayOptions = {
+    def apply(to: Encoding): ConvertArrayOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[ConvertArrayOptions]
     }
     
@@ -254,23 +219,23 @@ object mod {
   object ConvertOptions {
     
     @scala.inline
-    def ConvertArrayBufferOptions(to: Encoding, `type`: arraybuffer): typings.encodingJapanese.mod.ConvertArrayBufferOptions = {
+    def ConvertArrayBufferOptions(to: Encoding): typings.encodingJapanese.mod.ConvertArrayBufferOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("arraybuffer")
       __obj.asInstanceOf[typings.encodingJapanese.mod.ConvertArrayBufferOptions]
     }
     
     @scala.inline
-    def ConvertArrayOptions(to: Encoding, `type`: array): typings.encodingJapanese.mod.ConvertArrayOptions = {
+    def ConvertArrayOptions(to: Encoding): typings.encodingJapanese.mod.ConvertArrayOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("array")
       __obj.asInstanceOf[typings.encodingJapanese.mod.ConvertArrayOptions]
     }
     
     @scala.inline
-    def ConvertStringOptions(to: Encoding, `type`: string): typings.encodingJapanese.mod.ConvertStringOptions = {
+    def ConvertStringOptions(to: Encoding): typings.encodingJapanese.mod.ConvertStringOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.encodingJapanese.mod.ConvertStringOptions]
     }
     
@@ -281,23 +246,24 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConvertStringOptions extends ConvertOptions {
+  trait ConvertStringOptions
+    extends StObject
+       with ConvertOptions {
     
-    var bom: js.UndefOr[Boolean | String] = js.native
+    var bom: js.UndefOr[Boolean | String] = js.undefined
     
-    var from: js.UndefOr[Encoding] = js.native
+    var from: js.UndefOr[Encoding] = js.undefined
     
-    var to: Encoding = js.native
+    var to: Encoding
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object ConvertStringOptions {
     
     @scala.inline
-    def apply(to: Encoding, `type`: string): ConvertStringOptions = {
+    def apply(to: Encoding): ConvertStringOptions = {
       val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[ConvertStringOptions]
     }
     
@@ -324,14 +290,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ConvertUnknownOptions extends ConvertOptions {
+  trait ConvertUnknownOptions
+    extends StObject
+       with ConvertOptions {
     
-    var bom: js.UndefOr[Boolean | String] = js.native
+    var bom: js.UndefOr[Boolean | String] = js.undefined
     
-    var from: js.UndefOr[Encoding] = js.native
+    var from: js.UndefOr[Encoding] = js.undefined
     
-    var to: Encoding = js.native
+    var to: Encoding
   }
   object ConvertUnknownOptions {
     

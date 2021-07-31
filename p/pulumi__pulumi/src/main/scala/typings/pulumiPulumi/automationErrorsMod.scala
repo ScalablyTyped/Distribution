@@ -3,16 +3,23 @@ package typings.pulumiPulumi
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object automationErrorsMod {
   
   @JSImport("@pulumi/pulumi/x/automation/errors", "CommandError")
   @js.native
-  class CommandError () extends Error {
+  class CommandError ()
+    extends StObject
+       with Error {
     
     var commandResult: js.Any = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSImport("@pulumi/pulumi/x/automation/errors", "ConcurrentUpdateError")

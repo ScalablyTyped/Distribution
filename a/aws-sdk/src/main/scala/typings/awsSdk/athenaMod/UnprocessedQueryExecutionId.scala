@@ -2,26 +2,24 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnprocessedQueryExecutionId extends StObject {
   
   /**
     * The error code returned when the query execution failed to process, if applicable.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.athenaMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.athenaMod.ErrorCode] = js.undefined
   
   /**
     * The error message returned when the query execution failed to process, if applicable.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.athenaMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.athenaMod.ErrorMessage] = js.undefined
   
   /**
     * The unique identifier of the query execution.
     */
-  var QueryExecutionId: js.UndefOr[typings.awsSdk.athenaMod.QueryExecutionId] = js.native
+  var QueryExecutionId: js.UndefOr[typings.awsSdk.athenaMod.QueryExecutionId] = js.undefined
 }
 object UnprocessedQueryExecutionId {
   

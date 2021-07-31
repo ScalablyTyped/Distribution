@@ -12,11 +12,12 @@ import typings.node.streamMod.Readable
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Request extends Podium {
+trait Request
+  extends StObject
+     with Podium {
   
   /**
     * Returns `true` when the request is active and processing should continue and `false` when the
@@ -139,7 +140,7 @@ trait Request extends Podium {
   /**
     * An object where each key is a path parameter name with matching value as described in [Path parameters](https://github.com/hapijs/hapi/blob/master/API.md#path-parameters).
     */
-  val params: Dictionary[_] = js.native
+  val params: Dictionary[js.Any] = js.native
   
   /**
     * An array containing all the path params values in the order they appeared in the path.
@@ -166,12 +167,12 @@ trait Request extends Podium {
     * An object where each key is the name assigned by a route pre-handler methods function. The values are the raw values provided to the continuation function as argument. For the wrapped response
     * object, use responses.
     */
-  val pre: Dictionary[_] = js.native
+  val pre: Dictionary[js.Any] = js.native
   
   /**
     * Same as pre but represented as the response object created by the pre method.
     */
-  val preResponses: Dictionary[_] = js.native
+  val preResponses: Dictionary[js.Any] = js.native
   
   /**
     * By default the object outputted from node's URL parse() method.
@@ -191,7 +192,7 @@ trait Request extends Podium {
     * override with a different response.
     * In case of an aborted request the status code will be set to `disconnectStatusCode`.
     */
-  var response: ResponseObject | Boom[_] = js.native
+  var response: ResponseObject | Boom[js.Any] = js.native
   
   /**
     * The request route information object and method
@@ -232,7 +233,7 @@ trait Request extends Podium {
   /**
     * An object containing parsed HTTP state information (cookies) where each key is the cookie name and value is the matching cookie content after processing using any registered cookie definition.
     */
-  val state: Dictionary[_] = js.native
+  val state: Dictionary[js.Any] = js.native
   
   /**
     * The parsed request URI.

@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.polygon
 import typings.arcgisJsApi.arcgisJsApiStrings.polyline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureSetProperties extends StObject {
   
   /**
@@ -19,49 +17,49 @@ trait FeatureSetProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#displayFieldName)
     */
-  var displayFieldName: js.UndefOr[String] = js.native
+  var displayFieldName: js.UndefOr[String] = js.undefined
   
   /**
     * Typically, a layer has a limit on the number of features (i.e., records) returned by the query operation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#exceededTransferLimit)
     */
-  var exceededTransferLimit: js.UndefOr[Boolean] = js.native
+  var exceededTransferLimit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The array of graphics returned from a task.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#features)
     */
-  var features: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var features: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * Information about each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#fields)
     */
-  var fields: js.UndefOr[js.Array[FieldProperties]] = js.native
+  var fields: js.UndefOr[js.Array[FieldProperties]] = js.undefined
   
   /**
     * The geometry type of features in the FeatureSet.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#geometryType)
     */
-  var geometryType: js.UndefOr[point | multipoint | polyline | polygon | extent | mesh] = js.native
+  var geometryType: js.UndefOr[point | multipoint | polyline | polygon | extent | mesh] = js.undefined
   
   /**
     * The [geometry](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#geometry) used to query the features.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#queryGeometry)
     */
-  var queryGeometry: js.UndefOr[GeometryProperties] = js.native
+  var queryGeometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * When a FeatureSet is used as input to Geoprocessor, the spatial reference is set to the map's spatial reference by default.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-FeatureSet.html#spatialReference)
     */
-  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.native
+  var spatialReference: js.UndefOr[SpatialReferenceProperties] = js.undefined
 }
 object FeatureSetProperties {
   

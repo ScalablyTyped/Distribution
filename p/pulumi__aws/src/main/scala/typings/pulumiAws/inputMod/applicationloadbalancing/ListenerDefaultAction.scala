@@ -3,42 +3,40 @@ package typings.pulumiAws.inputMod.applicationloadbalancing
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerDefaultAction extends StObject {
   
-  var authenticateCognito: js.UndefOr[Input[ListenerDefaultActionAuthenticateCognito]] = js.native
+  var authenticateCognito: js.UndefOr[Input[ListenerDefaultActionAuthenticateCognito]] = js.undefined
   
-  var authenticateOidc: js.UndefOr[Input[ListenerDefaultActionAuthenticateOidc]] = js.native
+  var authenticateOidc: js.UndefOr[Input[ListenerDefaultActionAuthenticateOidc]] = js.undefined
   
   /**
     * Information for creating an action that returns a custom HTTP response. Required if `type` is `fixed-response`.
     */
-  var fixedResponse: js.UndefOr[Input[ListenerDefaultActionFixedResponse]] = js.native
+  var fixedResponse: js.UndefOr[Input[ListenerDefaultActionFixedResponse]] = js.undefined
   
   /**
     * Information for creating an action that distributes requests among one or more target groups. Specify only if `type` is `forward`. If you specify both `forward` block and `targetGroupArn` attribute, you can specify only one target group using `forward` and it must be the same target group specified in `targetGroupArn`.
     */
-  var forward: js.UndefOr[Input[ListenerDefaultActionForward]] = js.native
+  var forward: js.UndefOr[Input[ListenerDefaultActionForward]] = js.undefined
   
-  var order: js.UndefOr[Input[Double]] = js.native
+  var order: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Information for creating a redirect action. Required if `type` is `redirect`.
     */
-  var redirect: js.UndefOr[Input[ListenerDefaultActionRedirect]] = js.native
+  var redirect: js.UndefOr[Input[ListenerDefaultActionRedirect]] = js.undefined
   
   /**
     * The ARN of the Target Group to which to route traffic. Specify only if `type` is `forward` and you want to route to a single target group. To route to one or more target groups, use a `forward` block instead.
     */
-  var targetGroupArn: js.UndefOr[Input[String]] = js.native
+  var targetGroupArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The type of routing action. Valid values are `forward`, `redirect`, `fixed-response`, `authenticate-cognito` and `authenticate-oidc`.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object ListenerDefaultAction {
   

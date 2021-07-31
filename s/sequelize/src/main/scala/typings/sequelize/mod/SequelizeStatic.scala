@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.continuationLocalStorage.mod.Namespace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait SequelizeStatic
-  extends SequelizeStaticAndInstance
+  extends StObject
+     with SequelizeStaticAndInstance
      with DataTypes
      with /**
   * Instantiate sequelize with an URI

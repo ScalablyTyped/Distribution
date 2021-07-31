@@ -5,18 +5,18 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to receive callbacks from an importer or exporter. */
-@js.native
-trait XDataTransferEventListener extends XEventListener {
+trait XDataTransferEventListener
+  extends StObject
+     with XEventListener {
   
   /** is called when an import or export process has been cancelled. */
-  def cancelled(aEvent: DataTransferEvent): Unit = js.native
+  def cancelled(aEvent: DataTransferEvent): Unit
   
   /** is called when an import or export process has finished. */
-  def finished(aEvent: DataTransferEvent): Unit = js.native
+  def finished(aEvent: DataTransferEvent): Unit
 }
 object XDataTransferEventListener {
   

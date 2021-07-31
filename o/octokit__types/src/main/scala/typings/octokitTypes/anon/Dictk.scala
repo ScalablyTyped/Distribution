@@ -3,55 +3,47 @@ package typings.octokitTypes.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictk
-  extends /**
-  * Any additional parameter will be passed as follows
-  * 1. URL parameter if `':parameter'` or `{parameter}` is part of `url`
-  * 2. Query parameter if `method` is `'GET'` or `'HEAD'`
-  * 3. Request body if `parameter` is `'data'`
-  * 4. JSON in the request body in the form of `body[parameter]` unless `parameter` key is `'data'`
-  */
-/* parameter */ StringDictionary[js.Any] {
+  extends StObject
+     with /* k */ StringDictionary[js.Any] {
   
-  var avatar_url: js.UndefOr[String] = js.native
+  var avatar_url: js.UndefOr[String] = js.undefined
   
-  var events_url: js.UndefOr[String] = js.native
+  var events_url: js.UndefOr[String] = js.undefined
   
-  var followers_url: js.UndefOr[String] = js.native
+  var followers_url: js.UndefOr[String] = js.undefined
   
-  var following_url: js.UndefOr[String] = js.native
+  var following_url: js.UndefOr[String] = js.undefined
   
-  var gists_url: js.UndefOr[String] = js.native
+  var gists_url: js.UndefOr[String] = js.undefined
   
-  var gravatar_id: js.UndefOr[String] = js.native
+  var gravatar_id: js.UndefOr[String] = js.undefined
   
-  var html_url: js.UndefOr[String] = js.native
+  var html_url: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var login: js.UndefOr[String] = js.native
+  var login: js.UndefOr[String] = js.undefined
   
-  var node_id: js.UndefOr[String] = js.native
+  var node_id: js.UndefOr[String] = js.undefined
   
-  var organizations_url: js.UndefOr[String] = js.native
+  var organizations_url: js.UndefOr[String] = js.undefined
   
-  var received_events_url: js.UndefOr[String] = js.native
+  var received_events_url: js.UndefOr[String] = js.undefined
   
-  var repos_url: js.UndefOr[String] = js.native
+  var repos_url: js.UndefOr[String] = js.undefined
   
-  var site_admin: js.UndefOr[Boolean] = js.native
+  var site_admin: js.UndefOr[Boolean] = js.undefined
   
-  var starred_url: js.UndefOr[String] = js.native
+  var starred_url: js.UndefOr[String] = js.undefined
   
-  var subscriptions_url: js.UndefOr[String] = js.native
+  var subscriptions_url: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Dictk {
   

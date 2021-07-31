@@ -3,15 +3,15 @@ package typings.actionsOnGoogle.apiV1Mod
 import typings.actionsOnGoogle.anon.Intent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SmartHomeV1DisconnectRequest extends SmartHomeV1Request {
+trait SmartHomeV1DisconnectRequest
+  extends StObject
+     with SmartHomeV1Request {
   
-  var inputs: js.Array[Intent] = js.native
+  var inputs: js.Array[Intent]
   
-  var requestId: String = js.native
+  var requestId: String
 }
 object SmartHomeV1DisconnectRequest {
   

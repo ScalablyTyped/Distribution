@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iotCertificateMod {
@@ -62,6 +61,10 @@ object iotCertificateMod {
   /* static members */
   object Certificate {
     
+    @JSImport("@pulumi/aws/iot/certificate", "Certificate")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Certificate resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,35 +74,29 @@ object iotCertificateMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iot/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Certificate = js.native
-    @JSImport("@pulumi/aws/iot/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Certificate = js.native
-    @JSImport("@pulumi/aws/iot/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState): Certificate = js.native
-    @JSImport("@pulumi/aws/iot/certificate", "Certificate.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Certificate]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateState, opts: CustomResourceOptions): Certificate = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Certificate]
     
     /**
       * Returns true if the given object is an instance of Certificate.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iot/certificate", "Certificate.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iot/certificate.Certificate */ Boolean]
   }
   
-  @js.native
   trait CertificateArgs extends StObject {
     
     /**
       * Boolean flag to indicate if the certificate should be active
       */
-    val active: Input[Boolean] = js.native
+    val active: Input[Boolean]
     
     /**
       * The certificate signing request. Review
@@ -108,7 +105,7 @@ object iotCertificateMod {
       * If none is specified both the certificate and keys will be generated, review [CreateKeysAndCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html)
       * for more information on generating keys and a certificate.
       */
-    val csr: js.UndefOr[Input[String]] = js.native
+    val csr: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateArgs {
     
@@ -132,23 +129,22 @@ object iotCertificateMod {
     }
   }
   
-  @js.native
   trait CertificateState extends StObject {
     
     /**
       * Boolean flag to indicate if the certificate should be active
       */
-    val active: js.UndefOr[Input[Boolean]] = js.native
+    val active: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the created certificate.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate data, in PEM format.
       */
-    val certificatePem: js.UndefOr[Input[String]] = js.native
+    val certificatePem: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate signing request. Review
@@ -157,17 +153,17 @@ object iotCertificateMod {
       * If none is specified both the certificate and keys will be generated, review [CreateKeysAndCertificate](https://docs.aws.amazon.com/iot/latest/apireference/API_CreateKeysAndCertificate.html)
       * for more information on generating keys and a certificate.
       */
-    val csr: js.UndefOr[Input[String]] = js.native
+    val csr: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When no CSR is provided, the private key.
       */
-    val privateKey: js.UndefOr[Input[String]] = js.native
+    val privateKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When no CSR is provided, the public key.
       */
-    val publicKey: js.UndefOr[Input[String]] = js.native
+    val publicKey: js.UndefOr[Input[String]] = js.undefined
   }
   object CertificateState {
     

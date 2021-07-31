@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object certificateValidationMod {
@@ -38,6 +37,10 @@ object certificateValidationMod {
   /* static members */
   object CertificateValidation {
     
+    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CertificateValidation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object certificateValidationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CertificateValidation = js.native
-    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): CertificateValidation = js.native
-    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateValidationState): CertificateValidation = js.native
-    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: CertificateValidationState, opts: CustomResourceOptions): CertificateValidation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CertificateValidation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CertificateValidation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): CertificateValidation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateValidation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateValidationState): CertificateValidation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[CertificateValidation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: CertificateValidationState, opts: CustomResourceOptions): CertificateValidation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CertificateValidation]
     
     /**
       * Returns true if the given object is an instance of CertificateValidation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/acm/certificateValidation", "CertificateValidation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificateValidation.CertificateValidation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/acm/certificateValidation.CertificateValidation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/acm/certificateValidation.CertificateValidation */ Boolean]
   }
   
-  @js.native
   trait CertificateValidationArgs extends StObject {
     
     /**
       * The ARN of the certificate that is being validated.
       */
-    val certificateArn: Input[String] = js.native
+    val certificateArn: Input[String]
     
     /**
       * List of FQDNs that implement the validation. Only valid for DNS validation method ACM certificates. If this is set, the resource can implement additional sanity checks and has an explicit dependency on the resource that is implementing the validation
       */
-    val validationRecordFqdns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val validationRecordFqdns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object CertificateValidationArgs {
     
@@ -107,18 +104,17 @@ object certificateValidationMod {
     }
   }
   
-  @js.native
   trait CertificateValidationState extends StObject {
     
     /**
       * The ARN of the certificate that is being validated.
       */
-    val certificateArn: js.UndefOr[Input[String]] = js.native
+    val certificateArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of FQDNs that implement the validation. Only valid for DNS validation method ACM certificates. If this is set, the resource can implement additional sanity checks and has an explicit dependency on the resource that is implementing the validation
       */
-    val validationRecordFqdns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val validationRecordFqdns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object CertificateValidationState {
     

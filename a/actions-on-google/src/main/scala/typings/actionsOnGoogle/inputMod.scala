@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInput
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RawInputInputType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputMod {

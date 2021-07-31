@@ -2,16 +2,14 @@ package typings.hapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payload extends StObject {
   
   /**
     * if true, requires payload validation as part of the scheme and forbids routes from disabling payload auth validation. Defaults to false.
     */
-  var payload: js.UndefOr[Boolean] = js.native
+  var payload: js.UndefOr[Boolean] = js.undefined
 }
 object Payload {
   

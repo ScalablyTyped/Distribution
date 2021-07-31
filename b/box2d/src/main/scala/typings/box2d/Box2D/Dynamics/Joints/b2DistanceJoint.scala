@@ -4,47 +4,47 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2DistanceJoint extends b2Joint {
+trait b2DistanceJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Gets the damping ratio.
     * @return Damping ratio.
     **/
-  def GetDampingRatio(): Double = js.native
+  def GetDampingRatio(): Double
   
   /**
     * Gets the frequency.
     * @return Frequency.
     **/
-  def GetFrequency(): Double = js.native
+  def GetFrequency(): Double
   
   /**
     * Gets the length of distance between the two bodies.
     * @return Length.
     **/
-  def GetLength(): Double = js.native
+  def GetLength(): Double
   
   /**
     * Sets the damping ratio.
     * @param ratio New damping ratio.
     **/
-  def SetDampingRatio(ratio: Double): Unit = js.native
+  def SetDampingRatio(ratio: Double): Unit
   
   /**
     * Sets the frequency.
     * @param hz New frequency (hertz).
     **/
-  def SetFrequency(hz: Double): Unit = js.native
+  def SetFrequency(hz: Double): Unit
   
   /**
     * Sets the length of distance between the two bodies.
     * @param length New length.
     **/
-  def SetLength(length: Double): Unit = js.native
+  def SetLength(length: Double): Unit
 }
 object b2DistanceJoint {
   

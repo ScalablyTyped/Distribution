@@ -5,63 +5,61 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalProps extends StObject {
   
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
-  var footer: js.UndefOr[ReactNode] = js.native
+  var footer: js.UndefOr[ReactNode] = js.undefined
   
-  var hasOverlay: js.UndefOr[Boolean] = js.native
+  var hasOverlay: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var modalAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.native
+  var modalAnimation: js.UndefOr[FadeAnimation | ScaleAnimation | SlideAnimation] = js.undefined
   
-  var modalStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var modalStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var modalTitle: js.UndefOr[ReactNode] = js.native
+  var modalTitle: js.UndefOr[ReactNode] = js.undefined
   
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.native
+  var onHardwareBackPress: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
-  var onMove: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onMove: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onSwipeOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwipeOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwipeRelease: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwipeRelease: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwiping: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwiping: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwipingOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwipingOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.native
+  var onTouchOutside: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var overlayBackgroundColor: js.UndefOr[String] = js.native
+  var overlayBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var overlayOpacity: js.UndefOr[Double] = js.native
+  var overlayOpacity: js.UndefOr[Double] = js.undefined
   
-  var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.native
+  var overlayPointerEvents: js.UndefOr[OverlayPointerEventTypes] = js.undefined
   
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var swipeDirection: js.UndefOr[SwipeDirection | js.Array[SwipeDirection]] = js.native
+  var swipeDirection: js.UndefOr[SwipeDirection | js.Array[SwipeDirection]] = js.undefined
   
-  var swipeThreshold: js.UndefOr[Double] = js.native
+  var swipeThreshold: js.UndefOr[Double] = js.undefined
   
-  var useNativeDriver: js.UndefOr[Boolean] = js.native
+  var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ModalProps {
   

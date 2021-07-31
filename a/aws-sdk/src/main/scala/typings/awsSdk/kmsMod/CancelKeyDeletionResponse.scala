@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelKeyDeletionResponse extends StObject {
   
   /**
     * The Amazon Resource Name (key ARN) of the CMK whose deletion is canceled.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object CancelKeyDeletionResponse {
   

@@ -4,12 +4,14 @@ import typings.popperjsCore.typesMod.Rect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getLayoutRectMod {
   
-  @JSImport("@popperjs/core/lib/dom-utils/getLayoutRect", JSImport.Default)
+  @JSImport("@popperjs/core/lib/dom-utils/getLayoutRect", JSImport.Namespace)
   @js.native
-  def default(element: HTMLElement): Rect = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(element: HTMLElement): Rect = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any]).asInstanceOf[Rect]
 }

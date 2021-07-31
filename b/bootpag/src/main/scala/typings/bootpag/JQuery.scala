@@ -5,16 +5,14 @@ import typings.bootpag.JqueryBootpag.PageEventHandler
 import typings.bootpag.bootpagStrings.page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuery extends StObject {
   
   /**
     * jQuery Bootpag plugin main method
     */
-  def bootpag(options: Options): JQuery = js.native
+  def bootpag(options: Options): JQuery
   
   /**
     * jQuery Bootpag "page" event occurring on page click.
@@ -22,7 +20,7 @@ trait JQuery extends StObject {
     * @param handler : A function to execute when the event is triggered. The value false is also allowed as a shorthand for a function that simply does return false.
     */
   @JSName("on")
-  def on_page(eventName: page, handler: PageEventHandler): JQuery = js.native
+  def on_page(eventName: page, handler: PageEventHandler): JQuery
 }
 object JQuery {
   

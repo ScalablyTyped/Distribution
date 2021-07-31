@@ -2,17 +2,15 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantAccountId extends StObject {
   
-  var authorization: js.UndefOr[String] = js.native
+  var authorization: js.UndefOr[String] = js.undefined
   
-  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.native
+  var client: js.UndefOr[typings.braintreeWeb.clientMod.Client] = js.undefined
   
-  var merchantAccountId: js.UndefOr[String] = js.native
+  var merchantAccountId: js.UndefOr[String] = js.undefined
 }
 object MerchantAccountId {
   

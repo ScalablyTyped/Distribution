@@ -2,15 +2,13 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FeatureTableSelectionChangeEvent extends StObject {
   
-  var added: js.Array[FeatureTableSelectionChangeEventAdded] = js.native
+  var added: js.Array[FeatureTableSelectionChangeEventAdded]
   
-  var removed: js.Array[FeatureTableSelectionChangeEventRemoved] = js.native
+  var removed: js.Array[FeatureTableSelectionChangeEventRemoved]
 }
 object FeatureTableSelectionChangeEvent {
   

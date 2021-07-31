@@ -3,19 +3,17 @@ package typings.businessRulesEngine.mod
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAsyncPropertyValidator extends StObject {
   
-  var customMessage: js.UndefOr[IErrorCustomMessage] = js.native
+  var customMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
   
-  def isAcceptable(s: js.Any): Promise[Boolean] = js.native
+  def isAcceptable(s: js.Any): Promise[Boolean]
   
-  var isAsync: Boolean = js.native
+  var isAsync: Boolean
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object IAsyncPropertyValidator {
   

@@ -4,7 +4,6 @@ import typings.devexpressUtils.pointMod.Point
 import typings.devexpressUtils.segmentMod.Segment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vectorMod {
@@ -13,8 +12,8 @@ object vectorMod {
   @js.native
   class Vector () extends StObject {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
+    def this(x: Unit, y: Double) = this()
     
     val axisX: Vector = js.native
     
@@ -33,29 +32,26 @@ object vectorMod {
   /* static members */
   object Vector {
     
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.angleBetween")
+    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector")
     @js.native
-    def angleBetween(a: Vector, b: Vector): Double = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.fromPoints")
-    @js.native
-    def fromPoints(begin: Point, end: Point): Vector = js.native
+    @scala.inline
+    def angleBetween(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleBetween")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.fromSegment")
-    @js.native
-    def fromSegment(segment: Segment[Point]): Vector = js.native
+    @scala.inline
+    def fromPoints(begin: Point, end: Point): Vector = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPoints")(begin.asInstanceOf[js.Any], end.asInstanceOf[js.Any])).asInstanceOf[Vector]
     
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.scalarProduct")
-    @js.native
-    def scalarProduct(a: Point, b: Point): Double = js.native
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.scalarProduct")
-    @js.native
-    def scalarProduct(a: Point, b: Vector): Double = js.native
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.scalarProduct")
-    @js.native
-    def scalarProduct(a: Vector, b: Point): Double = js.native
-    @JSImport("@devexpress/utils/lib/geometry/vector", "Vector.scalarProduct")
-    @js.native
-    def scalarProduct(a: Vector, b: Vector): Double = js.native
+    @scala.inline
+    def fromSegment(segment: Segment[Point]): Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("fromSegment")(segment.asInstanceOf[js.Any]).asInstanceOf[Vector]
+    
+    @scala.inline
+    def scalarProduct(a: Point, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def scalarProduct(a: Point, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def scalarProduct(a: Vector, b: Point): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def scalarProduct(a: Vector, b: Vector): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("scalarProduct")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
 }

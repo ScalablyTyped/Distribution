@@ -2,17 +2,15 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enable extends StObject {
   
-  var devtools: js.UndefOr[Boolean] = js.native
+  var devtools: js.UndefOr[Boolean] = js.undefined
   
-  var enable: Boolean = js.native
+  var enable: Boolean
   
-  var reload: js.UndefOr[Boolean] = js.native
+  var reload: js.UndefOr[Boolean] = js.undefined
 }
 object Enable {
   

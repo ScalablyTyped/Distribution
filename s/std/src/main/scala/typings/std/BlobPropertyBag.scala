@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobPropertyBag extends StObject {
   
-  var endings: js.UndefOr[EndingType] = js.native
+  var endings: js.UndefOr[EndingType] = js.undefined
   
-  var `type`: js.UndefOr[java.lang.String] = js.native
+  var `type`: js.UndefOr[java.lang.String] = js.undefined
 }
 object BlobPropertyBag {
   

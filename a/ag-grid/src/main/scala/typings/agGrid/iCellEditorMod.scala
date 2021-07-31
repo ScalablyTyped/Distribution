@@ -9,38 +9,36 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iCellEditorMod {
   
-  @js.native
   trait ICellEditor extends StObject {
     
     /** If doing full line edit, then gets called when focus should be put into the editor */
-    var focusIn: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusIn: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** If doing full line edit, then gets called when focus is leaving the editor */
-    var focusOut: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusOut: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Return the final value - called by the grid once after editing is complete */
-    def getValue(): js.Any = js.native
+    def getValue(): js.Any
     
     /** Gets called once after editing is complete. If your return true, then the new value will not be used. The
       *  editing will have no impact on the record. Use this if you do not want a new value from your gui, i.e. you
       *  want to cancel the editing. */
-    var isCancelAfterEnd: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isCancelAfterEnd: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** Gets called once after initialised. If you return true, the editor will not be used and the grid will continue
       *  editing. Use this to make a decision on editing inside the init() function, eg maybe you want to only start
       *  editing if the user hits a numeric key, but not a letter, if the editor is for numbers.
       * */
-    var isCancelBeforeStart: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isCancelBeforeStart: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** Gets called once after initialised. If you return true, the editor will appear in a popup, so is not constrained
       *  to the boundaries of the cell. This is great if you want to, for example, provide you own custom dropdown list
       *  for selection. Default is false (ie if you don't provide the method). */
-    var isPopup: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isPopup: js.UndefOr[js.Function0[Boolean]] = js.undefined
   }
   object ICellEditor {
     
@@ -88,9 +86,9 @@ object iCellEditorMod {
     }
   }
   
-  @js.native
   trait ICellEditorComp
-    extends ICellEditor
+    extends StObject
+       with ICellEditor
        with IComponent[ICellEditorParams]
   object ICellEditorComp {
     

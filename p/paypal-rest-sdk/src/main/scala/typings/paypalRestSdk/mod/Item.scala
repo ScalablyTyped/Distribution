@@ -2,27 +2,25 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Item extends StObject {
   
-  var currency: String = js.native
+  var currency: String
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var price: String = js.native
+  var price: String
   
-  var quantity: Double = js.native
+  var quantity: Double
   
-  var sku: js.UndefOr[String] = js.native
+  var sku: js.UndefOr[String] = js.undefined
   
-  var tax: js.UndefOr[String] = js.native
+  var tax: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Item {
   

@@ -2,10 +2,8 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupressionSearchParameters extends StObject {
   
   /**
@@ -13,29 +11,29 @@ trait SupressionSearchParameters extends StObject {
     * When cursor is provided the page parameter is ignored. (Note: SparkPost only)
     *
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the entries to include in the search, i.e descriptions that include the text submitted.
     * ( Note: SparkPost only)
     *
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Domain of entries to include in the search. ( Note: SparkPost only)
     *
     */
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   /** Datetime the entries were last updated, in the format YYYY-MM-DDTHH:mm:ssZ */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return per page. Must be between 1 and 10,000.
     * @deprecated use per_page instead
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * The results page number to return. Used with per_page for paging through results.
@@ -44,23 +42,23 @@ trait SupressionSearchParameters extends StObject {
     * ( Note: SparkPost only)
     *
     */
-  var page: js.UndefOr[String | Double] = js.native
+  var page: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Maximum number of results to return per page. Must be between 1 and 10,000.
     * ( Note: SparkPost only)
     * @default 1000
     */
-  var per_page: js.UndefOr[String | Double] = js.native
+  var per_page: js.UndefOr[String | Double] = js.undefined
   
   /** Sources of the entries to include in the search, i.e. entries that were added by this source */
-  var sources: js.UndefOr[String] = js.native
+  var sources: js.UndefOr[String] = js.undefined
   
   /** Datetime the entries were last updated, in the format of YYYY-MM-DDTHH:mm:ssZ */
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
   /** Types of entries to include in the search, i.e. entries with “transactional” and/or “non_transactional” keys set to true */
-  var types: js.UndefOr[String] = js.native
+  var types: js.UndefOr[String] = js.undefined
 }
 object SupressionSearchParameters {
   

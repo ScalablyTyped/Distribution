@@ -5,51 +5,49 @@ import typings.std.HTMLCollection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateChunk[Scope, ParentScope] extends StObject {
   
-  var bindings: js.UndefOr[js.Array[Binding[Scope, ParentScope]]] = js.native
+  var bindings: js.UndefOr[js.Array[Binding[Scope, ParentScope]]] = js.undefined
   
-  var bindingsData: js.UndefOr[js.Array[BindingData]] = js.native
+  var bindingsData: js.UndefOr[js.Array[BindingData]] = js.undefined
   
-  var children: js.UndefOr[HTMLCollection] = js.native
+  var children: js.UndefOr[HTMLCollection] = js.undefined
   
-  def createDOM(el: HTMLElement): TemplateChunk[_, _] = js.native
+  def createDOM(el: HTMLElement): TemplateChunk[js.Any, js.Any]
   
-  var dom: js.UndefOr[HTMLElement] = js.native
+  var dom: js.UndefOr[HTMLElement] = js.undefined
   
-  var el: js.UndefOr[HTMLElement] = js.native
+  var el: js.UndefOr[HTMLElement] = js.undefined
   
-  var fragment: js.UndefOr[DocumentFragment] = js.native
+  var fragment: js.UndefOr[DocumentFragment] = js.undefined
   
-  var html: js.UndefOr[String | Null] = js.native
+  var html: js.UndefOr[String | Null] = js.undefined
   
-  var isTemplateTag: js.UndefOr[Boolean] = js.native
+  var isTemplateTag: js.UndefOr[Boolean] = js.undefined
   
-  def mount(el: HTMLElement, scope: Scope, parentScope: ParentScope, meta: TemplateChunkMeta): TemplateChunk[_, _] = js.native
+  def mount(el: HTMLElement, scope: Scope, parentScope: ParentScope, meta: TemplateChunkMeta): TemplateChunk[js.Any, js.Any]
   
-  def unmount(scope: Scope, parentScope: ParentScope, mustRemoveRoot: Boolean): TemplateChunk[_, _] = js.native
+  def unmount(scope: Scope, parentScope: ParentScope, mustRemoveRoot: Boolean): TemplateChunk[js.Any, js.Any]
   
-  def update(scope: Scope, parentScope: ParentScope): TemplateChunk[_, _] = js.native
+  def update(scope: Scope, parentScope: ParentScope): TemplateChunk[js.Any, js.Any]
 }
 object TemplateChunk {
   
   @scala.inline
   def apply[Scope, ParentScope](
-    createDOM: HTMLElement => TemplateChunk[_, _],
-    mount: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[_, _],
-    unmount: (Scope, ParentScope, Boolean) => TemplateChunk[_, _],
-    update: (Scope, ParentScope) => TemplateChunk[_, _]
+    createDOM: HTMLElement => TemplateChunk[js.Any, js.Any],
+    mount: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[js.Any, js.Any],
+    unmount: (Scope, ParentScope, Boolean) => TemplateChunk[js.Any, js.Any],
+    update: (Scope, ParentScope) => TemplateChunk[js.Any, js.Any]
   ): TemplateChunk[Scope, ParentScope] = {
     val __obj = js.Dynamic.literal(createDOM = js.Any.fromFunction1(createDOM), mount = js.Any.fromFunction4(mount), unmount = js.Any.fromFunction3(unmount), update = js.Any.fromFunction2(update))
     __obj.asInstanceOf[TemplateChunk[Scope, ParentScope]]
   }
   
   @scala.inline
-  implicit class TemplateChunkMutableBuilder[Self <: TemplateChunk[_, _], Scope, ParentScope] (val x: Self with (TemplateChunk[Scope, ParentScope])) extends AnyVal {
+  implicit class TemplateChunkMutableBuilder[Self <: TemplateChunk[?, ?], Scope, ParentScope] (val x: Self & (TemplateChunk[Scope, ParentScope])) extends AnyVal {
     
     @scala.inline
     def setBindings(value: js.Array[Binding[Scope, ParentScope]]): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
@@ -76,7 +74,7 @@ object TemplateChunk {
     def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
     
     @scala.inline
-    def setCreateDOM(value: HTMLElement => TemplateChunk[_, _]): Self = StObject.set(x, "createDOM", js.Any.fromFunction1(value))
+    def setCreateDOM(value: HTMLElement => TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "createDOM", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDom(value: HTMLElement): Self = StObject.set(x, "dom", value.asInstanceOf[js.Any])
@@ -112,12 +110,12 @@ object TemplateChunk {
     def setIsTemplateTagUndefined: Self = StObject.set(x, "isTemplateTag", js.undefined)
     
     @scala.inline
-    def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[_, _]): Self = StObject.set(x, "mount", js.Any.fromFunction4(value))
+    def setMount(value: (HTMLElement, Scope, ParentScope, TemplateChunkMeta) => TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "mount", js.Any.fromFunction4(value))
     
     @scala.inline
-    def setUnmount(value: (Scope, ParentScope, Boolean) => TemplateChunk[_, _]): Self = StObject.set(x, "unmount", js.Any.fromFunction3(value))
+    def setUnmount(value: (Scope, ParentScope, Boolean) => TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "unmount", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setUpdate(value: (Scope, ParentScope) => TemplateChunk[_, _]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
+    def setUpdate(value: (Scope, ParentScope) => TemplateChunk[js.Any, js.Any]): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
   }
 }

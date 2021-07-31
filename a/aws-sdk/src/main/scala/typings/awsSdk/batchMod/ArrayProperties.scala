@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayProperties extends StObject {
   
   /**
     * The size of the array job.
     */
-  var size: js.UndefOr[Integer] = js.native
+  var size: js.UndefOr[Integer] = js.undefined
 }
 object ArrayProperties {
   

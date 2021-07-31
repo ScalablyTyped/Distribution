@@ -3,29 +3,28 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.BindExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait BindExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait BindExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var callee: Expression = js.native
+  var callee: Expression
   
-  var `object`: Expression = js.native
+  var `object`: Expression
   
   @JSName("type")
-  var type_BindExpression_ : BindExpression = js.native
+  var type_BindExpression_ : BindExpression
 }
 object BindExpression_ {
   
   @scala.inline
-  def apply(callee: Expression, `object`: Expression, `type`: BindExpression): BindExpression_ = {
-    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any])
+  def apply(callee: Expression, `object`: Expression): BindExpression_ = {
+    val __obj = js.Dynamic.literal(callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BindExpression")
     __obj.asInstanceOf[BindExpression_]
   }
   

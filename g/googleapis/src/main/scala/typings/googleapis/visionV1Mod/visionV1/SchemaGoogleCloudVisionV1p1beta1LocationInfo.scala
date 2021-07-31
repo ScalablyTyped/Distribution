@@ -2,19 +2,17 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detected entity location information.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1LocationInfo extends StObject {
   
   /**
     * lat/long location coordinates.
     */
-  var latLng: js.UndefOr[SchemaLatLng] = js.native
+  var latLng: js.UndefOr[SchemaLatLng] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1LocationInfo {
   

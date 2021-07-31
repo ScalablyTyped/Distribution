@@ -16,11 +16,12 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MassMarks[D /* <: Data */] extends Layer {
+trait MassMarks[D /* <: Data */]
+  extends StObject
+     with Layer {
   
   /**
     * 清除海量点
@@ -30,7 +31,7 @@ trait MassMarks[D /* <: Data */] extends Layer {
   /**
     * 获取数据集
     */
-  def getData(): js.Array[(Pick[D, Exclude[/* keyof D */ String, lnglat]]) with LnglatLngLat] = js.native
+  def getData(): js.Array[(Pick[D, Exclude[/* keyof D */ String, lnglat]]) & LnglatLngLat] = js.native
   
   /**
     * 获取显示样式
@@ -53,12 +54,11 @@ trait MassMarks[D /* <: Data */] extends Layer {
 }
 object MassMarks {
   
-  @js.native
   trait Data extends StObject {
     
-    var lnglat: LocationValue = js.native
+    var lnglat: LocationValue
     
-    var style: js.UndefOr[Double] = js.native
+    var style: js.UndefOr[Double] = js.undefined
   }
   object Data {
     
@@ -82,24 +82,23 @@ object MassMarks {
     }
   }
   
-  @js.native
   trait EventMap[I] extends StObject {
     
-    var click: UIEvent[typings.amapJsApi.amapJsApiStrings.click, I] = js.native
+    var click: UIEvent[typings.amapJsApi.amapJsApiStrings.click, I]
     
-    var dblclick: UIEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I] = js.native
+    var dblclick: UIEvent[typings.amapJsApi.amapJsApiStrings.dblclick, I]
     
-    var mousedown: UIEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I] = js.native
+    var mousedown: UIEvent[typings.amapJsApi.amapJsApiStrings.mousedown, I]
     
-    var mouseout: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseout, I] = js.native
+    var mouseout: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseout, I]
     
-    var mouseover: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I] = js.native
+    var mouseover: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseover, I]
     
-    var mouseup: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I] = js.native
+    var mouseup: UIEvent[typings.amapJsApi.amapJsApiStrings.mouseup, I]
     
-    var touchend: UIEvent[typings.amapJsApi.amapJsApiStrings.touchend, I] = js.native
+    var touchend: UIEvent[typings.amapJsApi.amapJsApiStrings.touchend, I]
     
-    var touchstart: UIEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I] = js.native
+    var touchstart: UIEvent[typings.amapJsApi.amapJsApiStrings.touchstart, I]
   }
   object EventMap {
     
@@ -119,7 +118,7 @@ object MassMarks {
     }
     
     @scala.inline
-    implicit class EventMapMutableBuilder[Self <: EventMap[_], I] (val x: Self with EventMap[I]) extends AnyVal {
+    implicit class EventMapMutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       @scala.inline
       def setClick(value: UIEvent[click, I]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
@@ -147,29 +146,29 @@ object MassMarks {
     }
   }
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Layer.Options {
+    extends StObject
+       with typings.amapJsApi.AMap.Layer.Options {
     
     /**
       * 是否在拖拽缩放过程中实时重绘
       */
-    var alwayRender: js.UndefOr[Boolean] = js.native
+    var alwayRender: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 指针样式
       */
-    var cursor: js.UndefOr[String] = js.native
+    var cursor: js.UndefOr[String] = js.undefined
     
     /**
       * 设置点的样式
       */
-    var style: Style | js.Array[Style] = js.native
+    var style: Style | js.Array[Style]
     
     /**
       * 显示层级
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -208,28 +207,27 @@ object MassMarks {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
     /**
       * 图标显示位置偏移量，以图标的左上角为基准点（0,0）点
       */
-    var anchor: Pixel = js.native
+    var anchor: Pixel
     
     /**
       * 旋转角度
       */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /**
       * 图标的尺寸
       */
-    var size: Size = js.native
+    var size: Size
     
     /**
       * 图标的地址
       */
-    var url: String = js.native
+    var url: String
   }
   object Style {
     

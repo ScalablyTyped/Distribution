@@ -8,11 +8,12 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Observable[T] extends IObservable[T] {
+trait Observable[T]
+  extends StObject
+     with IObservable[T] {
   
   def asObservable(): Observable[T] = js.native
   
@@ -275,68 +276,41 @@ trait Observable[T] extends IObservable[T] {
   
   def distinctUntilChanged(skipParameter: Boolean, comparer: js.Function2[/* x */ T, /* y */ T, Boolean]): Observable[T] = js.native
   def distinctUntilChanged[TValue](): Observable[T] = js.native
-  def distinctUntilChanged[TValue](
-    keySelector: js.UndefOr[scala.Nothing],
-    comparer: js.Function2[/* x */ TValue, /* y */ TValue, Boolean]
-  ): Observable[T] = js.native
   def distinctUntilChanged[TValue](keySelector: js.Function1[/* value */ T, TValue]): Observable[T] = js.native
   def distinctUntilChanged[TValue](
     keySelector: js.Function1[/* value */ T, TValue],
     comparer: js.Function2[/* x */ TValue, /* y */ TValue, Boolean]
   ): Observable[T] = js.native
+  def distinctUntilChanged[TValue](keySelector: Unit, comparer: js.Function2[/* x */ TValue, /* y */ TValue, Boolean]): Observable[T] = js.native
   
   def `do`(): Observable[T] = js.native
   def `do`(observer: Observer[T]): Observable[T] = js.native
-  def `do`(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
-  def `do`(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
-  def `do`(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ Error, Unit],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def `do`(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
-  def `do`(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def `do`(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
   def `do`(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ Error, Unit],
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
+  def `do`(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit], onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def `do`(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
   
   // alias for do
   def doAction(): Observable[T] = js.native
   def doAction(observer: Observer[T]): Observable[T] = js.native
-  def doAction(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
-  def doAction(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
-  def doAction(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ Error, Unit],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def doAction(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
-  def doAction(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def doAction(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
   def doAction(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ Error, Unit],
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
+  def doAction(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def doAction(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
+  def doAction(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit], onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def doAction(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
   
   def doOnCompleted(onCompleted: js.Function0[Unit]): Observable[T] = js.native
   def doOnCompleted(onCompleted: js.Function0[Unit], thisArg: js.Any): Observable[T] = js.native
@@ -432,29 +406,17 @@ trait Observable[T] extends IObservable[T] {
   ): Observable[T2 | T3 | T4] = js.native
   
   def forEach(): IDisposable = js.native
-  def forEach(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
-  def forEach(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
-  def forEach(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ js.Any, Unit],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
   def forEach(onNext: js.Function1[/* value */ T, Unit]): IDisposable = js.native
-  def forEach(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): IDisposable = js.native
   def forEach(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
   def forEach(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ js.Any, Unit],
     onCompleted: js.Function0[Unit]
   ): IDisposable = js.native
+  def forEach(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: js.Function1[/* exception */ js.Any, Unit], onCompleted: js.Function0[Unit]): IDisposable = js.native
+  def forEach(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): IDisposable = js.native
   
   // alias for finally
   def ignoreElements(): Observable[T] = js.native
@@ -487,7 +449,7 @@ trait Observable[T] extends IObservable[T] {
   def retry(): Observable[T] = js.native
   def retry(retryCount: Double): Observable[T] = js.native
   
-  def retryWhen[TError](notifier: js.Function1[/* errors */ Observable[TError], Observable[_]]): Observable[T] = js.native
+  def retryWhen[TError](notifier: js.Function1[/* errors */ Observable[TError], Observable[js.Any]]): Observable[T] = js.native
   
   def sample(interval: Double): Observable[T] = js.native
   def sample(interval: Double, scheduler: IScheduler): Observable[T] = js.native
@@ -641,29 +603,17 @@ trait Observable[T] extends IObservable[T] {
   def tap(): Observable[T] = js.native
   // alias for do
   def tap(observer: Observer[T]): Observable[T] = js.native
-  def tap(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
-  def tap(onNext: js.UndefOr[scala.Nothing], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
-  def tap(
-    onNext: js.UndefOr[scala.Nothing],
-    onError: js.Function1[/* exception */ Error, Unit],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def tap(onNext: js.Function1[/* value */ T, Unit]): Observable[T] = js.native
-  def tap(
-    onNext: js.Function1[/* value */ T, Unit],
-    onError: js.UndefOr[scala.Nothing],
-    onCompleted: js.Function0[Unit]
-  ): Observable[T] = js.native
   def tap(onNext: js.Function1[/* value */ T, Unit], onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
   def tap(
     onNext: js.Function1[/* value */ T, Unit],
     onError: js.Function1[/* exception */ Error, Unit],
     onCompleted: js.Function0[Unit]
   ): Observable[T] = js.native
+  def tap(onNext: js.Function1[/* value */ T, Unit], onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: js.Function1[/* exception */ Error, Unit], onCompleted: js.Function0[Unit]): Observable[T] = js.native
+  def tap(onNext: Unit, onError: Unit, onCompleted: js.Function0[Unit]): Observable[T] = js.native
   
   def tapOnCompleted(onCompleted: js.Function0[Unit]): Observable[T] = js.native
   def tapOnCompleted(onCompleted: js.Function0[Unit], thisArg: js.Any): Observable[T] = js.native
@@ -687,11 +637,11 @@ trait Observable[T] extends IObservable[T] {
   def timeInterval(scheduler: IScheduler): Observable[TimeInterval[T]] = js.native
   
   def timeout(dueTime: Double): Observable[T] = js.native
-  def timeout(dueTime: Double, other: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
+  def timeout(dueTime: Double, other: Unit, scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Double, other: Observable[T]): Observable[T] = js.native
   def timeout(dueTime: Double, other: Observable[T], scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Date): Observable[T] = js.native
-  def timeout(dueTime: Date, other: js.UndefOr[scala.Nothing], scheduler: IScheduler): Observable[T] = js.native
+  def timeout(dueTime: Date, other: Unit, scheduler: IScheduler): Observable[T] = js.native
   def timeout(dueTime: Date, other: Observable[T]): Observable[T] = js.native
   def timeout(dueTime: Date, other: Observable[T], scheduler: IScheduler): Observable[T] = js.native
   

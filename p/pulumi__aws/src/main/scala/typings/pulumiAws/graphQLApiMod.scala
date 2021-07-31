@@ -12,7 +12,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphQLApiMod {
@@ -88,6 +87,10 @@ object graphQLApiMod {
   /* static members */
   object GraphQLApi {
     
+    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GraphQLApi resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -97,29 +100,23 @@ object graphQLApiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GraphQLApi = js.native
-    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GraphQLApi = js.native
-    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GraphQLApiState): GraphQLApi = js.native
-    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GraphQLApiState, opts: CustomResourceOptions): GraphQLApi = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GraphQLApiState): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GraphQLApiState, opts: CustomResourceOptions): GraphQLApi = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GraphQLApi]
     
     /**
       * Returns true if the given object is an instance of GraphQLApi.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appsync/graphQLApi", "GraphQLApi.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/graphQLApi.GraphQLApi */ Boolean]
   }
   
-  @js.native
   trait GraphQLApiArgs extends StObject {
     
     /**
@@ -131,47 +128,47 @@ object graphQLApiMod {
             Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
       */
-    val authenticationType: Input[String] = js.native
+    val authenticationType: Input[String]
     
     /**
       * Nested argument containing logging configuration. Defined below.
       */
-    val logConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]] = js.native
+    val logConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]] = js.undefined
     
     /**
       * A user-supplied name for the GraphqlApi.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing OpenID Connect configuration. Defined below.
       */
-    val openidConnectConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]] = js.native
+    val openidConnectConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]] = js.undefined
     
     /**
       * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
       */
-    val schema: js.UndefOr[Input[String]] = js.native
+    val schema: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Cognito User Pool configuration. Defined below.
       */
-    val userPoolConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]] = js.native
+    val userPoolConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]] = js.undefined
     
     /**
       * Whether tracing with X-ray is enabled. Defaults to false.
       */
-    val xrayEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val xrayEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GraphQLApiArgs {
     
@@ -246,7 +243,6 @@ object graphQLApiMod {
     }
   }
   
-  @js.native
   trait GraphQLApiState extends StObject {
     
     /**
@@ -258,57 +254,57 @@ object graphQLApiMod {
             Input[typings.pulumiAws.inputMod.appsync.GraphQLApiAdditionalAuthenticationProvider]
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The ARN
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The authentication type. Valid values: `API_KEY`, `AWS_IAM`, `AMAZON_COGNITO_USER_POOLS`, `OPENID_CONNECT`
       */
-    val authenticationType: js.UndefOr[Input[String]] = js.native
+    val authenticationType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing logging configuration. Defined below.
       */
-    val logConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]] = js.native
+    val logConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiLogConfig]] = js.undefined
     
     /**
       * A user-supplied name for the GraphqlApi.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Nested argument containing OpenID Connect configuration. Defined below.
       */
-    val openidConnectConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]] = js.native
+    val openidConnectConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiOpenidConnectConfig]] = js.undefined
     
     /**
       * The schema definition, in GraphQL schema language format. This provider cannot perform drift detection of this configuration.
       */
-    val schema: js.UndefOr[Input[String]] = js.native
+    val schema: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Map of URIs associated with the API. e.g. `uris["GRAPHQL"] = https://ID.appsync-api.REGION.amazonaws.com/graphql`
       */
-    val uris: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val uris: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The Amazon Cognito User Pool configuration. Defined below.
       */
-    val userPoolConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]] = js.native
+    val userPoolConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.appsync.GraphQLApiUserPoolConfig]] = js.undefined
     
     /**
       * Whether tracing with X-ray is enabled. Defaults to false.
       */
-    val xrayEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val xrayEnabled: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object GraphQLApiState {
     

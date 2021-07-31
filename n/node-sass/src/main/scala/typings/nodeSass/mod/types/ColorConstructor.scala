@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ColorConstructor
-  extends /**
+  extends StObject
+     with /**
   * Constructs a new Sass color given a 4 byte number. Do not invoke with the `new` keyword.
   *
   * If a single number is passed it is assumed to be a number that contains

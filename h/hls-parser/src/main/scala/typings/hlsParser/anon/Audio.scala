@@ -2,19 +2,17 @@ package typings.hlsParser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audio extends StObject {
   
-  var audio: js.UndefOr[Double] = js.native
+  var audio: js.UndefOr[Double] = js.undefined
   
-  var closedCaptions: js.UndefOr[Double] = js.native
+  var closedCaptions: js.UndefOr[Double] = js.undefined
   
-  var subtitles: js.UndefOr[Double] = js.native
+  var subtitles: js.UndefOr[Double] = js.undefined
   
-  var video: js.UndefOr[Double] = js.native
+  var video: js.UndefOr[Double] = js.undefined
 }
 object Audio {
   

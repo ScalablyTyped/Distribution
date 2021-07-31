@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("SimpleCommandState")
 @js.native
 class SimpleCommandState ()
-  extends typings.devexpressWeb.SimpleCommandState
+  extends StObject
+     with typings.devexpressWeb.SimpleCommandState {
+  
+  /**
+    * Specifies a command availability.
+    */
+  /* CompleteClass */
+  var enabled: Boolean = js.native
+  
+  /**
+    * Specifies a command visibility.
+    */
+  /* CompleteClass */
+  var visible: Boolean = js.native
+}

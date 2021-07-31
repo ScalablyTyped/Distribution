@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frame extends StObject {
   
-  var targetName: js.UndefOr[String] = js.native
+  var targetName: js.UndefOr[String] = js.undefined
   
-  var workflowGuid: js.UndefOr[String] = js.native
+  var workflowGuid: js.UndefOr[String] = js.undefined
   
-  var zoneId: js.UndefOr[String] = js.native
+  var zoneId: js.UndefOr[String] = js.undefined
 }
 object Frame {
   

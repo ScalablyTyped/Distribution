@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Button extends Widget_ {
+trait Button
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -25,28 +26,27 @@ trait Button extends Widget_ {
 }
 object Button {
   
-  @js.native
   trait ClickEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** return the event model for sever side processing.
       */
-    var e: js.UndefOr[js.Any] = js.native
+    var e: js.UndefOr[js.Any] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** return the button state
       */
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ClickEventArgs {
     
@@ -91,20 +91,19 @@ object Button {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -137,20 +136,19 @@ object Button {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the button model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -183,101 +181,100 @@ object Button {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Fires when Button control is clicked successfully.Consider the scenario to perform any validation,modification of content or any other operations click on button,we can make use
       * of this click event to achieve the scenario.
       */
-    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.native
+    var click: js.UndefOr[js.Function1[/* e */ ClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the contentType of the Button. See below to know available ContentType
       * @Default {ej.ContentType.TextOnly}
       */
-    var contentType: js.UndefOr[ContentType | String] = js.native
+    var contentType: js.UndefOr[ContentType | String] = js.undefined
     
     /** Fires after Button control is created.If the user want to perform any operation after the button control creation then the user can make use of this create event.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Sets the root CSS class for Button theme, which is used customize.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when the button is destroyed successfully.If the user want to perform any operation after the destroy button control then the user can make use of this destroy event.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specify the Right to Left direction to button
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the button control state.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the Button.
       * @Default {28}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** It allows to define the characteristics of the Button control. It will helps to extend the capability of an HTML element.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the image position of the Button. This image position is applicable only with the textandimage contentType property. The images can be positioned in both imageLeft and
       * imageRight options. See below to know about available ImagePosition
       * @Default {ej.ImagePosition.ImageLeft}
       */
-    var imagePosition: js.UndefOr[ImagePosition | String] = js.native
+    var imagePosition: js.UndefOr[ImagePosition | String] = js.undefined
     
     /** Specifies the primary icon for Button. This icon will be displayed from the left margin of the button.
       * @Default {null}
       */
-    var prefixIcon: js.UndefOr[String] = js.native
+    var prefixIcon: js.UndefOr[String] = js.undefined
     
     /** Convert the button as repeat button. It raises the 'Click' event repeatedly from the it is pressed until it is released.
       * @Default {false}
       */
-    var repeatButton: js.UndefOr[Boolean] = js.native
+    var repeatButton: js.UndefOr[Boolean] = js.undefined
     
     /** Displays the Button with rounded corners.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the size of the Button. See below to know available ButtonSize
       * @Default {ej.ButtonSize.Normal}
       */
-    var size: js.UndefOr[ButtonSize | String] = js.native
+    var size: js.UndefOr[ButtonSize | String] = js.undefined
     
     /** Specifies the secondary icon for Button. This icon will be displayed from the right margin of the button.
       * @Default {null}
       */
-    var suffixIcon: js.UndefOr[String] = js.native
+    var suffixIcon: js.UndefOr[String] = js.undefined
     
     /** Specifies the text content for Button.
       * @Default {null}
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specified the time interval between two consecutive 'click' event on the button.
       * @Default {150}
       */
-    var timeInterval: js.UndefOr[String] = js.native
+    var timeInterval: js.UndefOr[String] = js.undefined
     
     /** Specifies the Type of the Button. See below to know available ButtonType
       * @Default {ej.ButtonType.Submit}
       */
-    var `type`: js.UndefOr[ButtonType | String] = js.native
+    var `type`: js.UndefOr[ButtonType | String] = js.undefined
     
     /** Specifies the width of the Button.
       * @Default {100px}
       */
-    var width: js.UndefOr[String | Double] = js.native
+    var width: js.UndefOr[String | Double] = js.undefined
   }
   object Model {
     

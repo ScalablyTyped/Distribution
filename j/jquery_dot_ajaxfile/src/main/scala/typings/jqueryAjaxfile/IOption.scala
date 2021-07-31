@@ -2,23 +2,21 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOption extends StObject {
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var desiredResponseDataType: js.UndefOr[DataType] = js.native
+  var desiredResponseDataType: js.UndefOr[DataType] = js.undefined
   
-  var files: js.UndefOr[js.Array[IFileData]] = js.native
+  var files: js.UndefOr[js.Array[IFileData]] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var timeoutInSeconds: js.UndefOr[Double] = js.native
+  var timeoutInSeconds: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object IOption {
   

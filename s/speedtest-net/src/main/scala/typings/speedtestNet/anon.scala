@@ -2,17 +2,15 @@ package typings.speedtestNet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Download extends StObject {
     
-    var download: IsScalingEnabled = js.native
+    var download: IsScalingEnabled
     
-    var stableStop: IsEnabled = js.native
+    var stableStop: IsEnabled
   }
   object Download {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dynamic extends StObject {
     
-    var dynamic: Download = js.native
+    var dynamic: Download
     
-    var engine: IsUploadFirst = js.native
+    var engine: IsUploadFirst
   }
   object Dynamic {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var url: String = js.native
+    var url: String
   }
   object Id {
     
@@ -85,12 +81,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsClientPrimaryMeasureMethod extends StObject {
     
-    var isClientPrimaryMeasureMethod: Boolean = js.native
+    var isClientPrimaryMeasureMethod: Boolean
     
-    var isServerUploadEnabled: Boolean = js.native
+    var isServerUploadEnabled: Boolean
   }
   object IsClientPrimaryMeasureMethod {
     
@@ -111,10 +106,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsEnabled extends StObject {
     
-    var isEnabled: Boolean = js.native
+    var isEnabled: Boolean
   }
   object IsEnabled {
     
@@ -132,12 +126,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsScalingEnabled extends StObject {
     
-    var isScalingEnabled: Boolean = js.native
+    var isScalingEnabled: Boolean
     
-    var maxThreadCount: Double = js.native
+    var maxThreadCount: Double
   }
   object IsScalingEnabled {
     
@@ -158,16 +151,15 @@ object anon {
     }
   }
   
-  @js.native
   trait IsUploadFirst extends StObject {
     
-    var isUploadFirst: Boolean = js.native
+    var isUploadFirst: Boolean
     
-    var packetSizeBytes: Double = js.native
+    var packetSizeBytes: Double
     
-    var testDurationSeconds: Double = js.native
+    var testDurationSeconds: Double
     
-    var threadCount: Double = js.native
+    var threadCount: Double
   }
   object IsUploadFirst {
     
@@ -194,12 +186,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Latency extends StObject {
     
-    var latency: PingCount = js.native
+    var latency: PingCount
     
-    var upload: IsClientPrimaryMeasureMethod = js.native
+    var upload: IsClientPrimaryMeasureMethod
   }
   object Latency {
     
@@ -220,12 +211,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var version: String = js.native
+    var version: String
   }
   object Message {
     
@@ -246,10 +236,9 @@ object anon {
     }
   }
   
-  @js.native
   trait PingCount extends StObject {
     
-    var pingCount: Double = js.native
+    var pingCount: Double
   }
   object PingCount {
     

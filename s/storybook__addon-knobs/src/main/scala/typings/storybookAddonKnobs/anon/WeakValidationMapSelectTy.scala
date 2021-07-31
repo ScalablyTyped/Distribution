@@ -5,20 +5,18 @@ import typings.storybookAddonKnobs.selectMod.SelectTypeKnob
 import typings.storybookAddonKnobs.selectMod.SelectTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react.react.WeakValidationMap<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeProps<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Select.SelectTypeKnobValue>> */
-@js.native
 trait WeakValidationMapSelectTy extends StObject {
   
-  var knob: js.UndefOr[Validator[js.UndefOr[Null | SelectTypeKnob[SelectTypeKnobValue]]]] = js.native
+  var knob: js.UndefOr[Validator[js.UndefOr[Null | SelectTypeKnob[SelectTypeKnobValue]]]] = js.undefined
   
   var onChange: js.UndefOr[
     Validator[
       js.UndefOr[(js.Function1[/* value */ SelectTypeKnobValue, SelectTypeKnobValue]) | Null]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object WeakValidationMapSelectTy {
   

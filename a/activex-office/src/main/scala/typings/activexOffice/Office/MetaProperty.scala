@@ -2,36 +2,34 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetaProperty extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Id: String = js.native
+  val Id: String
   
-  val IsReadOnly: Boolean = js.native
+  val IsReadOnly: Boolean
   
-  val IsRequired: Boolean = js.native
+  val IsRequired: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.MetaProperty_typekey")
-  var OfficeDotMetaProperty_typekey: MetaProperty = js.native
+  var OfficeDotMetaProperty_typekey: MetaProperty
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: MsoMetaPropertyType = js.native
+  val Type: MsoMetaPropertyType
   
-  def Validate(): String = js.native
+  def Validate(): String
   
-  val ValidationError: String = js.native
+  val ValidationError: String
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object MetaProperty {
   

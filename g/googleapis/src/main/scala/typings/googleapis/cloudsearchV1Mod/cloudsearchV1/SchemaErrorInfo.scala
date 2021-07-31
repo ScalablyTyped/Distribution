@@ -2,16 +2,14 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Error information about the response.
   */
-@js.native
 trait SchemaErrorInfo extends StObject {
   
-  var errorMessages: js.UndefOr[js.Array[SchemaErrorMessage]] = js.native
+  var errorMessages: js.UndefOr[js.Array[SchemaErrorMessage]] = js.undefined
 }
 object SchemaErrorInfo {
   

@@ -43,17 +43,18 @@ import typings.rbx.rbxStrings.warning
 import typings.rbx.rbxStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typographyMod {
   
-  @JSImport("rbx/base/helpers/typography", "makePropTypes")
+  @JSImport("rbx/base/helpers/typography", JSImport.Namespace)
   @js.native
-  def makePropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/typography", "makePropTypes")
-  @js.native
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/typography", "makeValidatingTransform")
   @js.native
@@ -63,26 +64,25 @@ object typographyMod {
   @js.native
   val transform: TransformFunction[TypographyHelpersProps, js.Object] = js.native
   
-  @js.native
   trait TypographyHelpersProps extends StObject {
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
   }
   object TypographyHelpersProps {
     

@@ -3,34 +3,32 @@ package typings.activexWord.Word
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Version extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Comment: String = js.native
+  val Comment: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Date: VarDate = js.native
+  val Date: VarDate
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Index: Double = js.native
+  val Index: Double
   
-  def Open(): Document = js.native
+  def Open(): Document
   
-  def OpenOld(): Unit = js.native
+  def OpenOld(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val SavedBy: String = js.native
+  val SavedBy: String
   
   @JSName("Word.Version_typekey")
-  var WordDotVersion_typekey: Version = js.native
+  var WordDotVersion_typekey: Version
 }
 object Version {
   

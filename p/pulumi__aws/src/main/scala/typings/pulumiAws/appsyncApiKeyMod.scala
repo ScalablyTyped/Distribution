@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appsyncApiKeyMod {
@@ -48,6 +47,10 @@ object appsyncApiKeyMod {
   /* static members */
   object ApiKey {
     
+    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ApiKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object appsyncApiKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ApiKey = js.native
-    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApiKey = js.native
-    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiKeyState): ApiKey = js.native
-    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiKeyState, opts: CustomResourceOptions): ApiKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiKeyState): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiKeyState, opts: CustomResourceOptions): ApiKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApiKey]
     
     /**
       * Returns true if the given object is an instance of ApiKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/appsync/apiKey", "ApiKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/apiKey.ApiKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/appsync/apiKey.ApiKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/appsync/apiKey.ApiKey */ Boolean]
   }
   
-  @js.native
   trait ApiKeyArgs extends StObject {
     
     /**
       * The ID of the associated AppSync API
       */
-    val apiId: Input[String] = js.native
+    val apiId: Input[String]
     
     /**
       * The API key description. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.
       */
-    val expires: js.UndefOr[Input[String]] = js.native
+    val expires: js.UndefOr[Input[String]] = js.undefined
   }
   object ApiKeyArgs {
     
@@ -125,28 +122,27 @@ object appsyncApiKeyMod {
     }
   }
   
-  @js.native
   trait ApiKeyState extends StObject {
     
     /**
       * The ID of the associated AppSync API
       */
-    val apiId: js.UndefOr[Input[String]] = js.native
+    val apiId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API key description. Defaults to "Managed by Pulumi".
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * RFC3339 string representation of the expiry date. Rounded down to nearest hour. By default, it is 7 days from the date of creation.
       */
-    val expires: js.UndefOr[Input[String]] = js.native
+    val expires: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API key
       */
-    val key: js.UndefOr[Input[String]] = js.native
+    val key: js.UndefOr[Input[String]] = js.undefined
   }
   object ApiKeyState {
     

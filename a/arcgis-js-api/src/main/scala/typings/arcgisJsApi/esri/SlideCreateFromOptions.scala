@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlideCreateFromOptions extends Object {
+trait SlideCreateFromOptions
+  extends StObject
+     with Object {
   
   /**
     * Screenshot options to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#createFrom)
     */
-  var screenshot: js.UndefOr[SlideCreateFromOptionsScreenshot] = js.native
+  var screenshot: js.UndefOr[SlideCreateFromOptionsScreenshot] = js.undefined
 }
 object SlideCreateFromOptions {
   

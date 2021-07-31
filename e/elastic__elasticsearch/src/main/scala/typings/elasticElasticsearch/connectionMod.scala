@@ -18,14 +18,15 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
   
   @JSImport("@elastic/elasticsearch/lib/Connection", JSImport.Default)
   @js.native
-  class default () extends Connection {
+  class default ()
+    extends StObject
+       with Connection {
     def this(opts: ConnectionOptions) = this()
   }
   /* static members */
@@ -48,16 +49,15 @@ object connectionMod {
     def statuses_=(x: ALIVE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("statuses")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AgentOptions extends StObject {
     
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
-    var keepAliveMsecs: js.UndefOr[Double] = js.native
+    var keepAliveMsecs: js.UndefOr[Double] = js.undefined
     
-    var maxFreeSockets: js.UndefOr[Double] = js.native
+    var maxFreeSockets: js.UndefOr[Double] = js.undefined
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
   }
   object AgentOptions {
     
@@ -113,7 +113,7 @@ object connectionMod {
     
     var deadCount: Double = js.native
     
-    var headers: Record[String, _] = js.native
+    var headers: Record[String, js.Any] = js.native
     
     var id: String = js.native
     
@@ -139,26 +139,25 @@ object connectionMod {
     var url: URL_ = js.native
   }
   
-  @js.native
   trait ConnectionOptions extends StObject {
     
-    var agent: js.UndefOr[AgentOptions | agentFn] = js.native
+    var agent: js.UndefOr[AgentOptions | agentFn] = js.undefined
     
-    var auth: js.UndefOr[BasicAuth | ApiKeyAuth] = js.native
+    var auth: js.UndefOr[BasicAuth | ApiKeyAuth] = js.undefined
     
-    var headers: js.UndefOr[Record[String, _]] = js.native
+    var headers: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[String | URL_] = js.native
+    var proxy: js.UndefOr[String | URL_] = js.undefined
     
-    var roles: js.UndefOr[ConnectionRoles] = js.native
+    var roles: js.UndefOr[ConnectionRoles] = js.undefined
     
-    var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.native
+    var ssl: js.UndefOr[typings.node.tlsMod.ConnectionOptions] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var url: URL_ = js.native
+    var url: URL_
   }
   object ConnectionOptions {
     
@@ -187,7 +186,7 @@ object connectionMod {
       def setAuthUndefined: Self = StObject.set(x, "auth", js.undefined)
       
       @scala.inline
-      def setHeaders(value: Record[String, _]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
+      def setHeaders(value: Record[String, js.Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
@@ -227,16 +226,15 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait ConnectionRoles extends StObject {
     
-    var data: js.UndefOr[Boolean] = js.native
+    var data: js.UndefOr[Boolean] = js.undefined
     
-    var ingest: js.UndefOr[Boolean] = js.native
+    var ingest: js.UndefOr[Boolean] = js.undefined
     
-    var master: js.UndefOr[Boolean] = js.native
+    var master: js.UndefOr[Boolean] = js.undefined
     
-    var ml: js.UndefOr[Boolean] = js.native
+    var ml: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectionRoles {
     
@@ -275,14 +273,15 @@ object connectionMod {
     }
   }
   
-  @js.native
-  trait RequestOptions extends ClientRequestArgs {
+  trait RequestOptions
+    extends StObject
+       with ClientRequestArgs {
     
-    var asStream: js.UndefOr[Boolean] = js.native
+    var asStream: js.UndefOr[Boolean] = js.undefined
     
-    var body: js.UndefOr[String | Buffer | Readable | Null] = js.native
+    var body: js.UndefOr[String | Buffer | Readable | Null] = js.undefined
     
-    var querystring: js.UndefOr[String] = js.native
+    var querystring: js.UndefOr[String] = js.undefined
   }
   object RequestOptions {
     

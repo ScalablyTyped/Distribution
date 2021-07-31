@@ -3,13 +3,13 @@ package typings.sharepoint.SP
 import typings.microsoftAjax.Sys.EventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientRequestEventArgs extends EventArgs {
+trait ClientRequestEventArgs
+  extends StObject
+     with EventArgs {
   
-  def get_request(): ClientRequest = js.native
+  def get_request(): ClientRequest
 }
 object ClientRequestEventArgs {
   

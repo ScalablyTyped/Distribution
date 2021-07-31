@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.Message.MessageType
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessage extends StObject {
   
   /** Message content */
-  var content: js.UndefOr[Uint8Array | Null] = js.native
+  var content: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Message correlationId */
-  var correlationId: js.UndefOr[String | Null] = js.native
+  var correlationId: js.UndefOr[String | Null] = js.undefined
   
   /** Message messageType */
-  var messageType: js.UndefOr[MessageType | Null] = js.native
+  var messageType: js.UndefOr[MessageType | Null] = js.undefined
 }
 object IMessage {
   

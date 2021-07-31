@@ -8,7 +8,6 @@ import typings.typedoc.reflectionsMod.Reflection
 import typings.typedoc.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputPluginsMod {
@@ -55,9 +54,12 @@ object outputPluginsMod {
   /* static members */
   object MarkedLinksPlugin {
     
-    @JSImport("typedoc/dist/lib/output/plugins", "MarkedLinksPlugin.splitLinkText")
+    @JSImport("typedoc/dist/lib/output/plugins", "MarkedLinksPlugin")
     @js.native
-    def splitLinkText(text: String): Caption = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def splitLinkText(text: String): Caption = ^.asInstanceOf[js.Dynamic].applyDynamic("splitLinkText")(text.asInstanceOf[js.Any]).asInstanceOf[Caption]
   }
   
   @JSImport("typedoc/dist/lib/output/plugins", "MarkedPlugin")
@@ -113,16 +115,18 @@ object outputPluginsMod {
   /* static members */
   object TocPlugin {
     
-    @JSImport("typedoc/dist/lib/output/plugins", "TocPlugin.buildToc")
+    @JSImport("typedoc/dist/lib/output/plugins", "TocPlugin")
     @js.native
-    def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = js.native
-    @JSImport("typedoc/dist/lib/output/plugins", "TocPlugin.buildToc")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildToc(model: Reflection, trail: js.Array[Reflection], parent: NavigationItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def buildToc(
       model: Reflection,
       trail: js.Array[Reflection],
       parent: NavigationItem,
       restriction: js.Array[String]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("buildToc")(model.asInstanceOf[js.Any], trail.asInstanceOf[js.Any], parent.asInstanceOf[js.Any], restriction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

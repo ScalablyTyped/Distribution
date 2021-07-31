@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -35,7 +34,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.asset = null] - The asset id of the audio asset that is going to be played by this slot.
   */
 @js.native
-trait SoundSlot extends EventHandler {
+trait SoundSlot
+  extends StObject
+     with EventHandler {
   
   /**
     * The asset id.

@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.UsersListPublicEmailsForAuthenticatedRe
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersListPublicEmailsForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersListPublicEmailsForAuthenticatedEndpoint = js.native
+  var parameters: UsersListPublicEmailsForAuthenticatedEndpoint
   
-  var response: OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersListPublicEmailsForAuthenticatedResponseData]
 }
 object ParametersUsersListPublicEmailsForAuthenticatedEndpoint {
   

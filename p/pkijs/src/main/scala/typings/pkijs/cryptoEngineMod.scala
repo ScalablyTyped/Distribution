@@ -30,7 +30,6 @@ import typings.std.RsaPssParams
 import typings.std.SubtleCrypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoEngineMod {
@@ -41,12 +40,16 @@ object cryptoEngineMod {
     * Constructor for CryptoEngine class
     * @param {*} [parameters={}]
     */
-  class default () extends CryptoEngine {
+  class default ()
+    extends StObject
+       with CryptoEngine {
     def this(parameters: js.Any) = this()
   }
   
   @js.native
-  trait CryptoEngine extends SubtleCrypto {
+  trait CryptoEngine
+    extends StObject
+       with SubtleCrypto {
     
     /**
       * Convert WebCrypto keys between different export formats

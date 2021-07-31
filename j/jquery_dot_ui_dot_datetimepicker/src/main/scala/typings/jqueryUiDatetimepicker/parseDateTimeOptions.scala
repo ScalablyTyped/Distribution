@@ -2,21 +2,19 @@ package typings.jqueryUiDatetimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait parseDateTimeOptions extends StObject {
   
-  var dateFormat: String = js.native
+  var dateFormat: String
   
-  var dateSettings: String = js.native
+  var dateSettings: String
   
-  var dateTimeString: String = js.native
+  var dateTimeString: String
   
-  var timeFormat: String = js.native
+  var timeFormat: String
   
-  var timeSettings: String = js.native
+  var timeSettings: String
 }
 object parseDateTimeOptions {
   

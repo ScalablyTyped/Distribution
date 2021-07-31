@@ -2,23 +2,21 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Video
 // Non-entity
-@js.native
 trait ExtensionSchedule extends StObject {
   
-  def getDayOfWeek(): DayOfWeekString = js.native
+  def getDayOfWeek(): DayOfWeekString
   
-  def getEndHour(): Double = js.native
+  def getEndHour(): Double
   
-  def getEndMinute(): Double = js.native
+  def getEndMinute(): Double
   
-  def getStartHour(): Double = js.native
+  def getStartHour(): Double
   
-  def getStartMinute(): Double = js.native
+  def getStartMinute(): Double
 }
 object ExtensionSchedule {
   

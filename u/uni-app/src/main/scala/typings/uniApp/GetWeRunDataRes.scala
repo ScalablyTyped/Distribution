@@ -2,26 +2,24 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetWeRunDataRes extends StObject {
   
   /**
     * 包括敏感数据在内的完整用户信息的加密数据
     */
-  var encryptedData: js.UndefOr[String] = js.native
+  var encryptedData: js.UndefOr[String] = js.undefined
   
   /**
     * 调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 加密算法的初始向量
     */
-  var iv: js.UndefOr[String] = js.native
+  var iv: js.UndefOr[String] = js.undefined
 }
 object GetWeRunDataRes {
   

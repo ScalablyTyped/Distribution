@@ -5,27 +5,25 @@ import typings.storybookClientApi.typesMod.StoreSelection
 import typings.storybookClientApi.typesMod.StoreSelectionSpecifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlMod {
   
-  @JSImport("@storybook/core/dist/client/preview/url", "getSelectionSpecifierFromPath")
+  @JSImport("@storybook/core/dist/client/preview/url", JSImport.Namespace)
   @js.native
-  def getSelectionSpecifierFromPath(): StoreSelectionSpecifier = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/core/dist/client/preview/url", "parseQueryParameters")
-  @js.native
-  def parseQueryParameters(search: String): String | (js.Array[ParsedQs | String]) | ParsedQs = js.native
+  @scala.inline
+  def getSelectionSpecifierFromPath(): StoreSelectionSpecifier = ^.asInstanceOf[js.Dynamic].applyDynamic("getSelectionSpecifierFromPath")().asInstanceOf[StoreSelectionSpecifier]
   
-  @JSImport("@storybook/core/dist/client/preview/url", "pathToId")
-  @js.native
-  def pathToId(path: String): String = js.native
+  @scala.inline
+  def parseQueryParameters(search: String): String | (js.Array[ParsedQs | String]) | ParsedQs = ^.asInstanceOf[js.Dynamic].applyDynamic("parseQueryParameters")(search.asInstanceOf[js.Any]).asInstanceOf[String | (js.Array[ParsedQs | String]) | ParsedQs]
   
-  @JSImport("@storybook/core/dist/client/preview/url", "setPath")
-  @js.native
-  def setPath(): Unit = js.native
-  @JSImport("@storybook/core/dist/client/preview/url", "setPath")
-  @js.native
-  def setPath(selection: StoreSelection): Unit = js.native
+  @scala.inline
+  def pathToId(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathToId")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def setPath(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")().asInstanceOf[Unit]
+  @scala.inline
+  def setPath(selection: StoreSelection): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPath")(selection.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

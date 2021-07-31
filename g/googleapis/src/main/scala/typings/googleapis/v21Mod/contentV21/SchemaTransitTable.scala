@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTransitTable extends StObject {
   
   /**
@@ -14,16 +12,16 @@ trait SchemaTransitTable extends StObject {
     * &quot;all other locations&quot;]. The referred postal code groups must
     * match the delivery country of the service.
     */
-  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.native
+  var postalCodeGroupNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var rows: js.UndefOr[js.Array[SchemaTransitTableTransitTimeRow]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaTransitTableTransitTimeRow]] = js.undefined
   
   /**
     * A list of transit time labels. The last value can be &quot;all other
     * labels&quot;. Example: [&quot;food&quot;, &quot;electronics&quot;,
     * &quot;all other labels&quot;].
     */
-  var transitTimeLabels: js.UndefOr[js.Array[String]] = js.native
+  var transitTimeLabels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTransitTable {
   

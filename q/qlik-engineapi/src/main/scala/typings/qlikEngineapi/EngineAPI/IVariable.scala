@@ -3,7 +3,6 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The handle member in the JSON request for all methods listed in this section is the handle of the variable.
   */
-@js.native
-trait IVariable extends IGeneratedAPI {
+trait IVariable
+  extends StObject
+     with IGeneratedAPI {
   
   /**
     * Sets the value of a dual variable overriding any input constraints.
@@ -27,28 +27,28 @@ trait IVariable extends IGeneratedAPI {
     * @param qd - Numeric representation of a dual value.
     * >> This parameter is mandatory.
     */
-  def forceContent(qs: String, qd: Double): js.Promise[Unit] = js.native
+  def forceContent(qs: String, qd: Double): js.Promise[Unit]
   
   /**
     * Returns the calculated value of a variable.
     *
     * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
     */
-  def getContent(): js.Promise[IAlfaNumString] = js.native
+  def getContent(): js.Promise[IAlfaNumString]
   
   /**
     * Gets the properties of a variable.
     *
     * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
     */
-  def getNxProperties(): js.Promise[INxVariableProperties] = js.native
+  def getNxProperties(): js.Promise[INxVariableProperties]
   
   /**
     * Returns the raw value of a variable.
     *
     * Note: This method is deprecated (not recommended to use). Use GetProperties method instead.
     */
-  def getRawContent(): js.Promise[String] = js.native
+  def getRawContent(): js.Promise[String]
   
   /**
     * Sets a value to a variable.
@@ -59,7 +59,7 @@ trait IVariable extends IGeneratedAPI {
     * @param qUpdateMRU - If set to true, the value is added to the Most Recently Used (MRU) list.
     * >> This parameter is mandatory.
     */
-  def setContent(qContent: String, qUpdateMRU: Boolean): js.Promise[Boolean] = js.native
+  def setContent(qContent: String, qUpdateMRU: Boolean): js.Promise[Boolean]
   
   /**
     * Sets some properties to a variable.
@@ -69,7 +69,7 @@ trait IVariable extends IGeneratedAPI {
     * In addition to the properties described below, dynamic properties can be added.
     * @param qProperties - Information about the properties of the variable
     */
-  def setNxProperties(qProperties: INxVariableProperties): js.Promise[Unit] = js.native
+  def setNxProperties(qProperties: INxVariableProperties): js.Promise[Unit]
 }
 object IVariable {
   

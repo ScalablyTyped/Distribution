@@ -2,21 +2,19 @@ package typings.winrt.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmsEncodedLength extends StObject {
   
-  var byteCountLastSegment: Double = js.native
+  var byteCountLastSegment: Double
   
-  var bytesPerSegment: Double = js.native
+  var bytesPerSegment: Double
   
-  var characterCountLastSegment: Double = js.native
+  var characterCountLastSegment: Double
   
-  var charactersPerSegment: Double = js.native
+  var charactersPerSegment: Double
   
-  var segmentCount: Double = js.native
+  var segmentCount: Double
 }
 object SmsEncodedLength {
   

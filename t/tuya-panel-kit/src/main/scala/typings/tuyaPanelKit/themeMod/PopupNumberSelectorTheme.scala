@@ -2,15 +2,13 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupNumberSelectorTheme extends StObject {
   
-  var cellPlusColor: String = js.native
+  var cellPlusColor: String
   
-  var maximumTrackTintColor: String = js.native
+  var maximumTrackTintColor: String
 }
 object PopupNumberSelectorTheme {
   

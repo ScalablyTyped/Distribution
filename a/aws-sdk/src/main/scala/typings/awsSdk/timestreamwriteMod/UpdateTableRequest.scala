@@ -2,26 +2,24 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTableRequest extends StObject {
   
   /**
     * The name of the Timestream database.
     */
-  var DatabaseName: ResourceName = js.native
+  var DatabaseName: ResourceName
   
   /**
     * The retention duration of the memory store and the magnetic store.
     */
-  var RetentionProperties: typings.awsSdk.timestreamwriteMod.RetentionProperties = js.native
+  var RetentionProperties: typings.awsSdk.timestreamwriteMod.RetentionProperties
   
   /**
     * The name of the Timesream table.
     */
-  var TableName: ResourceName = js.native
+  var TableName: ResourceName
 }
 object UpdateTableRequest {
   

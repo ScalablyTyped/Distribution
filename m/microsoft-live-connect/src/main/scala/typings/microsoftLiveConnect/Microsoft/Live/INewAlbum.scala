@@ -2,24 +2,22 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a new album.
   */
-@js.native
 trait INewAlbum extends StObject {
   
   /**
     * A description of the album.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the album.
     */
-  var name: String = js.native
+  var name: String
 }
 object INewAlbum {
   

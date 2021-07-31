@@ -2,56 +2,54 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Anomaly extends StObject {
   
   /**
     *  The last day the anomaly is detected. 
     */
-  var AnomalyEndDate: js.UndefOr[YearMonthDay] = js.native
+  var AnomalyEndDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The unique identifier for the anomaly. 
     */
-  var AnomalyId: GenericString = js.native
+  var AnomalyId: GenericString
   
   /**
     *  The latest and maximum score for the anomaly. 
     */
-  var AnomalyScore: typings.awsSdk.costexplorerMod.AnomalyScore = js.native
+  var AnomalyScore: typings.awsSdk.costexplorerMod.AnomalyScore
   
   /**
     *  The first day the anomaly is detected. 
     */
-  var AnomalyStartDate: js.UndefOr[YearMonthDay] = js.native
+  var AnomalyStartDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The dimension for the anomaly. For example, an AWS service in a service monitor. 
     */
-  var DimensionValue: js.UndefOr[GenericString] = js.native
+  var DimensionValue: js.UndefOr[GenericString] = js.undefined
   
   /**
     *  The feedback value. 
     */
-  var Feedback: js.UndefOr[AnomalyFeedbackType] = js.native
+  var Feedback: js.UndefOr[AnomalyFeedbackType] = js.undefined
   
   /**
     *  The dollar impact for the anomaly. 
     */
-  var Impact: typings.awsSdk.costexplorerMod.Impact = js.native
+  var Impact: typings.awsSdk.costexplorerMod.Impact
   
   /**
     *  The Amazon Resource Name (ARN) for the cost monitor that generated this anomaly. 
     */
-  var MonitorArn: GenericString = js.native
+  var MonitorArn: GenericString
   
   /**
     *  The list of identified root causes for the anomaly. 
     */
-  var RootCauses: js.UndefOr[typings.awsSdk.costexplorerMod.RootCauses] = js.native
+  var RootCauses: js.UndefOr[typings.awsSdk.costexplorerMod.RootCauses] = js.undefined
 }
 object Anomaly {
   

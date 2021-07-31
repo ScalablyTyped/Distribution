@@ -2,18 +2,18 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BubbleDataset extends Dataset {
+trait BubbleDataset
+  extends StObject
+     with Dataset {
   
-  var config: js.UndefOr[BubbleDatasetConfig] = js.native
+  var config: js.UndefOr[BubbleDatasetConfig] = js.undefined
   
   @JSName("label")
-  var label_BubbleDataset: String = js.native
+  var label_BubbleDataset: String
   
-  var values: js.UndefOr[js.Array[BubbleValue]] = js.native
+  var values: js.UndefOr[js.Array[BubbleValue]] = js.undefined
 }
 object BubbleDataset {
   

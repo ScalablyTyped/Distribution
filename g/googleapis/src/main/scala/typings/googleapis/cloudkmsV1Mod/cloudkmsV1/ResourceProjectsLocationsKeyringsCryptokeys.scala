@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/cloudkms/v1", "cloudkms_v1.Resource$Projects$Locations$Keyrings$Cryptokeys")
@@ -33,7 +32,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def create(): GaxiosPromise[SchemaCryptoKey] = js.native
   def create(callback: BodyResponseCallback[SchemaCryptoKey]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
   def create(params: ParamsResourceProjectsLocationsKeyringsCryptokeysCreate): GaxiosPromise[SchemaCryptoKey] = js.native
   def create(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysCreate,
@@ -69,7 +68,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def decrypt(): GaxiosPromise[SchemaDecryptResponse] = js.native
   def decrypt(callback: BodyResponseCallback[SchemaDecryptResponse]): Unit = js.native
-  def decrypt(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDecryptResponse] = js.native
+  def decrypt(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDecryptResponse] = js.native
   def decrypt(params: ParamsResourceProjectsLocationsKeyringsCryptokeysDecrypt): GaxiosPromise[SchemaDecryptResponse] = js.native
   def decrypt(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysDecrypt,
@@ -103,7 +102,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def encrypt(): GaxiosPromise[SchemaEncryptResponse] = js.native
   def encrypt(callback: BodyResponseCallback[SchemaEncryptResponse]): Unit = js.native
-  def encrypt(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEncryptResponse] = js.native
+  def encrypt(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEncryptResponse] = js.native
   def encrypt(params: ParamsResourceProjectsLocationsKeyringsCryptokeysEncrypt): GaxiosPromise[SchemaEncryptResponse] = js.native
   def encrypt(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysEncrypt,
@@ -136,7 +135,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def get(): GaxiosPromise[SchemaCryptoKey] = js.native
   def get(callback: BodyResponseCallback[SchemaCryptoKey]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
   def get(params: ParamsResourceProjectsLocationsKeyringsCryptokeysGet): GaxiosPromise[SchemaCryptoKey] = js.native
   def get(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysGet,
@@ -169,7 +168,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceProjectsLocationsKeyringsCryptokeysGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysGetiampolicy,
@@ -204,7 +203,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def list(): GaxiosPromise[SchemaListCryptoKeysResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCryptoKeysResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCryptoKeysResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCryptoKeysResponse] = js.native
   def list(params: ParamsResourceProjectsLocationsKeyringsCryptokeysList): GaxiosPromise[SchemaListCryptoKeysResponse] = js.native
   def list(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysList,
@@ -238,7 +237,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def patch(): GaxiosPromise[SchemaCryptoKey] = js.native
   def patch(callback: BodyResponseCallback[SchemaCryptoKey]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
   def patch(params: ParamsResourceProjectsLocationsKeyringsCryptokeysPatch): GaxiosPromise[SchemaCryptoKey] = js.native
   def patch(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysPatch,
@@ -272,7 +271,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceProjectsLocationsKeyringsCryptokeysSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysSetiampolicy,
@@ -309,7 +308,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceProjectsLocationsKeyringsCryptokeysTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysTestiampermissions,
@@ -347,7 +346,7 @@ class ResourceProjectsLocationsKeyringsCryptokeys protected () extends StObject 
     */
   def updatePrimaryVersion(): GaxiosPromise[SchemaCryptoKey] = js.native
   def updatePrimaryVersion(callback: BodyResponseCallback[SchemaCryptoKey]): Unit = js.native
-  def updatePrimaryVersion(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
+  def updatePrimaryVersion(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCryptoKey] = js.native
   def updatePrimaryVersion(params: ParamsResourceProjectsLocationsKeyringsCryptokeysUpdateprimaryversion): GaxiosPromise[SchemaCryptoKey] = js.native
   def updatePrimaryVersion(
     params: ParamsResourceProjectsLocationsKeyringsCryptokeysUpdateprimaryversion,

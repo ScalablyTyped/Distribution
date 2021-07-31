@@ -2,17 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeDerived extends StObject {
   
   @JSName("$parent")
-  var $parent: TypeDerived = js.native
+  var $parent: TypeDerived
   
   @JSName("$type")
-  var $type: ElementType = js.native
+  var $type: ElementType
 }
 object TypeDerived {
   

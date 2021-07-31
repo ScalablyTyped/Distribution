@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAppsListRequest extends StObject {
   
   /**
     * Specifies whether the list to retrieve is a default list owned by AWS Firewall Manager.
     */
-  var DefaultList: js.UndefOr[Boolean] = js.native
+  var DefaultList: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the AWS Firewall Manager applications list that you want the details for.
     */
-  var ListId: typings.awsSdk.fmsMod.ListId = js.native
+  var ListId: typings.awsSdk.fmsMod.ListId
 }
 object GetAppsListRequest {
   

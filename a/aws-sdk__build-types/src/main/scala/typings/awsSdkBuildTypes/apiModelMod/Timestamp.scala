@@ -3,25 +3,24 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.timestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timestamp
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
-  var timestampFormat: js.UndefOr[java.lang.String] = js.native
+  var timestampFormat: js.UndefOr[java.lang.String] = js.undefined
   
   @JSName("type")
-  val type_Timestamp: timestamp = js.native
+  val type_Timestamp: timestamp
 }
 object Timestamp {
   
   @scala.inline
-  def apply(`type`: timestamp): Timestamp = {
+  def apply(): Timestamp = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("timestamp")
     __obj.asInstanceOf[Timestamp]
   }
   

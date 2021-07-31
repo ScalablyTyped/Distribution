@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNatGatewayResult extends StObject {
   
   /**
     * Unique, case-sensitive identifier to ensure the idempotency of the request. Only returned if a client token was provided in the request.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the NAT gateway.
     */
-  var NatGateway: js.UndefOr[typings.awsSdk.ec2Mod.NatGateway] = js.native
+  var NatGateway: js.UndefOr[typings.awsSdk.ec2Mod.NatGateway] = js.undefined
 }
 object CreateNatGatewayResult {
   

@@ -4,21 +4,19 @@ import typings.json8Patch.json8PatchBooleans.`false`
 import typings.json8Patch.json8PatchBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var reversible: `true` = js.native
+    var reversible: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(reversible: `true`): `0` = {
-      val __obj = js.Dynamic.literal(reversible = reversible.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(reversible = true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -30,16 +28,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Reversible extends StObject {
     
-    var reversible: `false` = js.native
+    var reversible: `false`
   }
   object Reversible {
     
     @scala.inline
-    def apply(reversible: `false`): Reversible = {
-      val __obj = js.Dynamic.literal(reversible = reversible.asInstanceOf[js.Any])
+    def apply(): Reversible = {
+      val __obj = js.Dynamic.literal(reversible = false)
       __obj.asInstanceOf[Reversible]
     }
     

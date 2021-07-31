@@ -4,15 +4,16 @@ import typings.awsSdkCredentialProviderImds.remoteProviderInitMod.RemoteProvider
 import typings.awsSdkTypes.credentialsMod.CredentialProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromInstanceMetadataMod {
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/fromInstanceMetadata", "fromInstanceMetadata")
+  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/fromInstanceMetadata", JSImport.Namespace)
   @js.native
-  def fromInstanceMetadata(): CredentialProvider = js.native
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/fromInstanceMetadata", "fromInstanceMetadata")
-  @js.native
-  def fromInstanceMetadata(init: RemoteProviderInit): CredentialProvider = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromInstanceMetadata(): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")().asInstanceOf[CredentialProvider]
+  @scala.inline
+  def fromInstanceMetadata(init: RemoteProviderInit): CredentialProvider = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInstanceMetadata")(init.asInstanceOf[js.Any]).asInstanceOf[CredentialProvider]
 }

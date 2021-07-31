@@ -2,7 +2,6 @@ package typings.googleapis.v1p2beta1Mod.videointelligenceV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `Operation` returned by the `GetOperation` call of the
   * `google::longrunning::Operations` service.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1p2beta1AnnotateVideoResponse extends StObject {
   
   /**
     * Annotation results for all videos specified in `AnnotateVideoRequest`.
     */
-  var annotationResults: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults]] = js.native
+  var annotationResults: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults]] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1p2beta1AnnotateVideoResponse {
   

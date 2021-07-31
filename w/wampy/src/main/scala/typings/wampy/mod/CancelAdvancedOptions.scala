@@ -5,13 +5,11 @@ import typings.wampy.wampyStrings.killnowait
 import typings.wampy.wampyStrings.skip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelAdvancedOptions extends StObject {
   
-  var mode: js.UndefOr[skip | kill | killnowait] = js.native
+  var mode: js.UndefOr[skip | kill | killnowait] = js.undefined
 }
 object CancelAdvancedOptions {
   

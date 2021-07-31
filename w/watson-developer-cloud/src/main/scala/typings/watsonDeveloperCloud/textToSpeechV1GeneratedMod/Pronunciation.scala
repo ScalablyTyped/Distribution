@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** Pronunciation. */
-@js.native
 trait Pronunciation extends StObject {
   
   /** The pronunciation of the specified text in the requested voice and format. If a custom voice model is specified, the pronunciation also reflects that custom voice. */
-  var pronunciation: String = js.native
+  var pronunciation: String
 }
 object Pronunciation {
   

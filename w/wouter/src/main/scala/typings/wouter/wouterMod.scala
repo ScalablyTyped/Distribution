@@ -5,23 +5,22 @@ import typings.wouter.wouterUseLocationMod.LocationHook
 import typings.wouter.wouterUseLocationMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wouterMod {
   
-  @JSImport("wouter/static-location", JSImport.Default)
+  @JSImport("wouter/static-location", JSImport.Namespace)
   @js.native
-  def default(): StaticLocationHook = js.native
-  @JSImport("wouter/static-location", JSImport.Default)
-  @js.native
-  def default(path: js.UndefOr[scala.Nothing], options: StaticLocationHookOptions): StaticLocationHook = js.native
-  @JSImport("wouter/static-location", JSImport.Default)
-  @js.native
-  def default(path: Path): StaticLocationHook = js.native
-  @JSImport("wouter/static-location", JSImport.Default)
-  @js.native
-  def default(path: Path, options: StaticLocationHookOptions): StaticLocationHook = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): StaticLocationHook = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[StaticLocationHook]
+  @scala.inline
+  def default(path: Unit, options: StaticLocationHookOptions): StaticLocationHook = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StaticLocationHook]
+  @scala.inline
+  def default(path: Path): StaticLocationHook = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any]).asInstanceOf[StaticLocationHook]
+  @scala.inline
+  def default(path: Path, options: StaticLocationHookOptions): StaticLocationHook = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StaticLocationHook]
   
   @js.native
   trait StaticLocationHook extends LocationHook {
@@ -29,10 +28,9 @@ object wouterMod {
     var history: ReadonlyArrayPathConcat = js.native
   }
   
-  @js.native
   trait StaticLocationHookOptions extends StObject {
     
-    var record: js.UndefOr[Boolean] = js.native
+    var record: js.UndefOr[Boolean] = js.undefined
   }
   object StaticLocationHookOptions {
     

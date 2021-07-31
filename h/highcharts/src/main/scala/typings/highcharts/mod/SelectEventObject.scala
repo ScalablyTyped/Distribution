@@ -3,17 +3,15 @@ package typings.highcharts.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectEventObject extends StObject {
   
-  var originalEvent: Event = js.native
+  var originalEvent: Event
   
-  var xAxis: js.Array[SelectDataObject] = js.native
+  var xAxis: js.Array[SelectDataObject]
   
-  var yAxis: js.Array[SelectDataObject] = js.native
+  var yAxis: js.Array[SelectDataObject]
 }
 object SelectEventObject {
   

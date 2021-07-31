@@ -2,28 +2,26 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyTest extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Condition: MsoCondition = js.native
+  val Condition: MsoCondition
   
-  val Connector: MsoConnector = js.native
+  val Connector: MsoConnector
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.PropertyTest_typekey")
-  var OfficeDotPropertyTest_typekey: PropertyTest = js.native
+  var OfficeDotPropertyTest_typekey: PropertyTest
   
-  val SecondValue: js.Any = js.native
+  val SecondValue: js.Any
   
-  val Value: js.Any = js.native
+  val Value: js.Any
 }
 object PropertyTest {
   

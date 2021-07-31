@@ -8,15 +8,13 @@ import typings.devextreme.devextremeStrings.indicatingSet
 import typings.devextreme.devextremeStrings.simpleSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseColorSet extends StObject {
   
-  var baseColorSet: js.UndefOr[simpleSet | indicatingSet | gradientSet] = js.native
+  var baseColorSet: js.UndefOr[simpleSet | indicatingSet | gradientSet] = js.undefined
   
-  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.native
+  var paletteExtensionMode: js.UndefOr[alternate | blend | extrapolate] = js.undefined
 }
 object BaseColorSet {
   

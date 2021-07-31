@@ -2,17 +2,15 @@ package typings.mapboxS3urls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bucket extends StObject {
     
-    var Bucket: js.UndefOr[String] = js.native
+    var Bucket: js.UndefOr[String] = js.undefined
     
-    var Key: js.UndefOr[String] = js.native
+    var Key: js.UndefOr[String] = js.undefined
   }
   object Bucket {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Bucketinhost extends StObject {
     
-    var `bucket-in-host`: String = js.native
+    var `bucket-in-host`: String
     
-    var `bucket-in-path`: String = js.native
+    var `bucket-in-path`: String
     
-    var s3: String = js.native
+    var s3: String
   }
   object Bucketinhost {
     

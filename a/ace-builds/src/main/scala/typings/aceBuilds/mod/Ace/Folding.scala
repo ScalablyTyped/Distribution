@@ -3,7 +3,6 @@ package typings.aceBuilds.mod.Ace
 import typings.aceBuilds.anon.FirstRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,13 +20,13 @@ trait Folding extends StObject {
   def expandFolds(folds: js.Array[Fold]): Unit = js.native
   
   def foldAll(): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double): Unit = js.native
-  def foldAll(startRow: js.UndefOr[scala.Nothing], endRow: Double, depth: Double): Unit = js.native
   def foldAll(startRow: Double): Unit = js.native
-  def foldAll(startRow: Double, endRow: js.UndefOr[scala.Nothing], depth: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double): Unit = js.native
   def foldAll(startRow: Double, endRow: Double, depth: Double): Unit = js.native
+  def foldAll(startRow: Double, endRow: Unit, depth: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Double, depth: Double): Unit = js.native
+  def foldAll(startRow: Unit, endRow: Unit, depth: Double): Unit = js.native
   
   def getAllFolds(): js.Array[Fold] = js.native
   
@@ -71,9 +70,9 @@ trait Folding extends StObject {
   def getFoldRowStart(docRow: Double, startFoldRow: FoldLine): Double = js.native
   
   def getFoldStringAt(row: Double, column: Double): String | Null = js.native
-  def getFoldStringAt(row: Double, column: Double, trim: js.UndefOr[scala.Nothing], foldLine: FoldLine): String | Null = js.native
   def getFoldStringAt(row: Double, column: Double, trim: Double): String | Null = js.native
   def getFoldStringAt(row: Double, column: Double, trim: Double, foldLine: FoldLine): String | Null = js.native
+  def getFoldStringAt(row: Double, column: Double, trim: Unit, foldLine: FoldLine): String | Null = js.native
   
   def getFoldedRowCount(first: Double, last: Double): Double = js.native
   

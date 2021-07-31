@@ -10,27 +10,25 @@ import typings.openlayers.mod.source.Vector
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageVectorOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var ratio: js.UndefOr[Double] = js.native
+  var ratio: js.UndefOr[Double] = js.undefined
   
-  var renderBuffer: js.UndefOr[Double] = js.native
+  var renderBuffer: js.UndefOr[Double] = js.undefined
   
-  var resolutions: js.UndefOr[js.Array[Double]] = js.native
+  var resolutions: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var source: Vector = js.native
+  var source: Vector
   
-  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+  var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
 }
 object ImageVectorOptions {
   

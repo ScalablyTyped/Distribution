@@ -2,10 +2,8 @@ package typings.stripe.mod.accounts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonDocumentCreateUpdateOptions extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait IPersonDocumentCreateUpdateOptions extends StObject {
     * The uploaded file needs to be a color image (smaller than 8,000px by 8,000px),
     * in JPG or PNG format, and less than 10 MB in size.
     */
-  var back: js.UndefOr[String] = js.native
+  var back: js.UndefOr[String] = js.undefined
   
   /**
     * The front of an ID returned by a file upload with a purpose value of identity_document.
     * The uploaded file needs to be a color image (smaller than 8,000px by 8,000px),
     * in JPG or PNG format, and less than 10 MB in size.
     */
-  var front: js.UndefOr[String] = js.native
+  var front: js.UndefOr[String] = js.undefined
 }
 object IPersonDocumentCreateUpdateOptions {
   

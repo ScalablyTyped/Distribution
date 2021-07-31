@@ -5,33 +5,31 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.fail
 import typings.instagramPrivateApi.instagramPrivateApiStrings.feedback_required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spamResponseMod {
   
-  @js.native
   trait SpamResponse extends StObject {
     
-    var error_type: js.UndefOr[String] = js.native
+    var error_type: js.UndefOr[String] = js.undefined
     
-    var feedback_action: String = js.native
+    var feedback_action: String
     
-    var feedback_appeal_label: String = js.native
+    var feedback_appeal_label: String
     
-    var feedback_ignore_label: String = js.native
+    var feedback_ignore_label: String
     
-    var feedback_message: String = js.native
+    var feedback_message: String
     
-    var feedback_title: String = js.native
+    var feedback_title: String
     
-    var feedback_url: String = js.native
+    var feedback_url: String
     
-    var message: feedback_required = js.native
+    var message: feedback_required
     
-    var spam: `true` = js.native
+    var spam: `true`
     
-    var status: fail = js.native
+    var status: fail
   }
   object SpamResponse {
     
@@ -42,12 +40,9 @@ object spamResponseMod {
       feedback_ignore_label: String,
       feedback_message: String,
       feedback_title: String,
-      feedback_url: String,
-      message: feedback_required,
-      spam: `true`,
-      status: fail
+      feedback_url: String
     ): SpamResponse = {
-      val __obj = js.Dynamic.literal(feedback_action = feedback_action.asInstanceOf[js.Any], feedback_appeal_label = feedback_appeal_label.asInstanceOf[js.Any], feedback_ignore_label = feedback_ignore_label.asInstanceOf[js.Any], feedback_message = feedback_message.asInstanceOf[js.Any], feedback_title = feedback_title.asInstanceOf[js.Any], feedback_url = feedback_url.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], spam = spam.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(feedback_action = feedback_action.asInstanceOf[js.Any], feedback_appeal_label = feedback_appeal_label.asInstanceOf[js.Any], feedback_ignore_label = feedback_ignore_label.asInstanceOf[js.Any], feedback_message = feedback_message.asInstanceOf[js.Any], feedback_title = feedback_title.asInstanceOf[js.Any], feedback_url = feedback_url.asInstanceOf[js.Any], message = "feedback_required", spam = true, status = "fail")
       __obj.asInstanceOf[SpamResponse]
     }
     

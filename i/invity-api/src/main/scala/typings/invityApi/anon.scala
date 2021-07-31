@@ -6,19 +6,17 @@ import typings.invityApi.invityApiStrings.POST
 import typings.invityApi.mod.StringMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: StringMap = js.native
+    var fields: StringMap
     
-    var formAction: String = js.native
+    var formAction: String
     
-    var formMethod: GET | POST | IFRAME = js.native
+    var formMethod: GET | POST | IFRAME
   }
   object Fields {
     

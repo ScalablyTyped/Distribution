@@ -6,7 +6,6 @@ import typings.chaiHtml.mod.ChaiHtml.HtmlAssertion
 import typings.chaiHtml.mod.global.Chai.Assertion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,10 +16,11 @@ object mod extends Shortcut {
   
   object ChaiHtml {
     
-    @js.native
-    trait HtmlAssertion extends Assertion {
+    trait HtmlAssertion
+      extends StObject
+         with Assertion {
       
-      var ignoringComments: Assertion = js.native
+      var ignoringComments: Assertion
     }
     object HtmlAssertion {
       
@@ -48,10 +48,9 @@ object mod extends Shortcut {
     
     object Chai {
       
-      @js.native
       trait Assertion extends StObject {
         
-        var html: HtmlAssertion = js.native
+        var html: HtmlAssertion
       }
       object Assertion {
         

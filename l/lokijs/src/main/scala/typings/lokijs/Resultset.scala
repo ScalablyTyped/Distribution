@@ -4,7 +4,6 @@ import typings.lokijs.anon.PartialGetDataOptions
 import typings.lokijs.anon.PartialSimplesortOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -81,97 +80,105 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     *
     * @returns Array of documents in the resultset
     */
-  def data(): js.Array[E with LokiObj] = js.native
-  def data(options: PartialGetDataOptions): js.Array[E with LokiObj] = js.native
+  def data(): js.Array[E & LokiObj] = js.native
+  def data(options: PartialGetDataOptions): js.Array[E & LokiObj] = js.native
   
-  def eqJoin(joinData: js.Array[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
+  def eqJoin(joinData: js.Array[js.Any], leftJoinKey: String, rightJoinKey: String): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: js.Array[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    rightJoinKey: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: js.Array[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ js.Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: js.Array[js.Any],
+    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    rightJoinKey: String
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: js.Array[js.Any],
+    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    rightJoinKey: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: js.Array[_],
+    joinData: js.Array[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: js.Array[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   /**
     * eqJoin() - Left joining two sets of data. Join keys can be defined or calculated properties
     * eqJoin expects the right join key values to be unique.  Otherwise left data will be joined on the last joinData object with that key
@@ -185,182 +192,198 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     * @param [dataOptions.forceCloneMethod] - Allows overriding the default or collection specified cloning method.
     * @returns A resultset with data in the format [{left: leftObj, right: rightObj}]
     */
-  def eqJoin(joinData: Collection[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
+  def eqJoin(joinData: Collection[js.Any], leftJoinKey: String, rightJoinKey: String): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Collection[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    rightJoinKey: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Collection[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ js.Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: Collection[js.Any],
+    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    rightJoinKey: String
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Collection[_],
+    joinData: Collection[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: String, rightJoinKey: String): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
+  def eqJoin(joinData: Resultset[js.Any], leftJoinKey: String, rightJoinKey: String): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: String, rightJoinKey: js.Function1[/* obj */ js.Any, String]): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    rightJoinKey: js.Function1[/* obj */ js.Any, String]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: String,
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
-  def eqJoin(joinData: Resultset[_], leftJoinKey: js.Function1[/* obj */ js.Any, String], rightJoinKey: String): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
+    leftJoinKey: String,
+    rightJoinKey: js.Function1[/* obj */ js.Any, String],
+    mapFun: Unit,
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: Resultset[js.Any],
+    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    rightJoinKey: String
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.UndefOr[scala.Nothing],
-    dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
+    dataOptions: PartialGetDataOptions
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: String,
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String]
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.UndefOr[scala.Nothing],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any]
+  ): Resultset[js.Any] = js.native
+  def eqJoin(
+    joinData: Resultset[js.Any],
+    leftJoinKey: js.Function1[/* obj */ js.Any, String],
+    rightJoinKey: js.Function1[/* obj */ js.Any, String],
+    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, js.Any],
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   def eqJoin(
-    joinData: Resultset[_],
+    joinData: Resultset[js.Any],
     leftJoinKey: js.Function1[/* obj */ js.Any, String],
     rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _]
-  ): Resultset[_] = js.native
-  def eqJoin(
-    joinData: Resultset[_],
-    leftJoinKey: js.Function1[/* obj */ js.Any, String],
-    rightJoinKey: js.Function1[/* obj */ js.Any, String],
-    mapFun: js.Function2[/* left */ js.Any, /* right */ js.Any, _],
+    mapFun: Unit,
     dataOptions: PartialGetDataOptions
-  ): Resultset[_] = js.native
+  ): Resultset[js.Any] = js.native
   
   var filterInitialized: Boolean = js.native
   
@@ -374,7 +397,7 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     * @returns this resultset for further chain ops.
     */
   def find(): this.type = js.native
-  def find(query: js.UndefOr[scala.Nothing], firstOnly: Boolean): this.type = js.native
+  def find(query: Unit, firstOnly: Boolean): this.type = js.native
   def find(query: LokiQuery[E]): this.type = js.native
   def find(query: LokiQuery[E], firstOnly: Boolean): this.type = js.native
   
@@ -485,7 +508,7 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     * @param comparefun - A javascript compare function used for sorting.
     * @returns Reference to this resultset, sorted, for future chain operations.
     */
-  def sort(comparefun: js.Function2[/* a */ E with LokiObj, /* b */ E with LokiObj, Double]): this.type = js.native
+  def sort(comparefun: js.Function2[/* a */ E & LokiObj, /* b */ E & LokiObj, Double]): this.type = js.native
   
   /**
     * toJSON() - Override of toJSON to avoid circular references
@@ -499,10 +522,10 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     * @param parameters - (Optional) object property hash of parameters, if the transform requires them.
     * @returns either (this) resultset or a clone of of this resultset (depending on steps)
     */
-  def transform(transform: String): Resultset[_] = js.native
-  def transform(transform: String, parameters: js.Object): Resultset[_] = js.native
-  def transform(transform: js.Array[String | Transform]): Resultset[_] = js.native
-  def transform(transform: js.Array[String | Transform], parameters: js.Object): Resultset[_] = js.native
+  def transform(transform: String): Resultset[js.Any] = js.native
+  def transform(transform: String, parameters: js.Object): Resultset[js.Any] = js.native
+  def transform(transform: js.Array[String | Transform]): Resultset[js.Any] = js.native
+  def transform(transform: js.Array[String | Transform], parameters: js.Object): Resultset[js.Any] = js.native
   
   /**
     * Used to run an update operation on all documents currently in the resultset.
@@ -518,5 +541,5 @@ trait Resultset[E /* <: js.Object */] extends StObject {
     * @param fun - A javascript function used for filtering current results by.
     * @returns this resultset for further chain ops.
     */
-  def where(fun: js.Function1[/* data */ E with LokiObj, Boolean]): this.type = js.native
+  def where(fun: js.Function1[/* data */ E & LokiObj, Boolean]): this.type = js.native
 }

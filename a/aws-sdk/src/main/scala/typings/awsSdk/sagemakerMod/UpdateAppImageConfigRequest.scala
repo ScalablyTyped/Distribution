@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAppImageConfigRequest extends StObject {
   
   /**
     * The name of the AppImageConfig to update.
     */
-  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName = js.native
+  var AppImageConfigName: typings.awsSdk.sagemakerMod.AppImageConfigName
   
   /**
     * The new KernelGateway app to run on the image.
     */
-  var KernelGatewayImageConfig: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayImageConfig] = js.native
+  var KernelGatewayImageConfig: js.UndefOr[typings.awsSdk.sagemakerMod.KernelGatewayImageConfig] = js.undefined
 }
 object UpdateAppImageConfigRequest {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
   /**
     * The launch command for the container.
     */
-  var command: js.UndefOr[StringList] = js.native
+  var command: js.UndefOr[StringList] = js.undefined
   
   /**
     * The environment variables of the container.
     */
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
   /**
     * The name of the image used for the container. Container images sourced from your Lightsail container service, that are registered and stored on your service, start with a colon (:). For example, :container-service-1.mystaticwebsite.1. Container images sourced from a public registry like Docker Hub don't start with a colon. For example, nginx:latest or nginx.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The open firewall ports of the container.
     */
-  var ports: js.UndefOr[PortMap] = js.native
+  var ports: js.UndefOr[PortMap] = js.undefined
 }
 object Container {
   

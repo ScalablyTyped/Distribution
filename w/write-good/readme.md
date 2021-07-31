@@ -10,9 +10,9 @@ Naive linter for English prose
 | ------------------ | :-------------: |
 | Full name          | write-good |
 | Keywords           | english, writing, prose, words, grammar |
-| # releases         | 5 |
-| # dependents       | 32 |
-| # downloads        | 260870 |
+| # releases         | 6 |
+| # dependents       | 36 |
+| # downloads        | 340403 |
 | # stars            | 10 |
 
 ## Links

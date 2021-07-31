@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportKey extends StObject {
   
   /** Query ID. */
-  var queryId: js.UndefOr[String] = js.native
+  var queryId: js.UndefOr[String] = js.undefined
   
   /** Report ID. */
-  var reportId: js.UndefOr[String] = js.native
+  var reportId: js.UndefOr[String] = js.undefined
 }
 object ReportKey {
   

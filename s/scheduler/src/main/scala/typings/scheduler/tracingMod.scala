@@ -4,10 +4,13 @@ import typings.scheduler.anon.Cancel
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tracingMod {
+  
+  @JSImport("scheduler/tracing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("scheduler/tracing", "__interactionsRef")
   @js.native
@@ -17,45 +20,35 @@ object tracingMod {
   @js.native
   val _SubscriberRef: IfSchedulerTracing[SubscriberRef, Null] = js.native
   
-  @JSImport("scheduler/tracing", "unstable_clear")
-  @js.native
-  def unstableClear[T](callback: js.Function0[T]): T = js.native
+  @scala.inline
+  def unstableClear[T](callback: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_clear")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("scheduler/tracing", "unstable_getCurrent")
-  @js.native
-  def unstableGetCurrent(): Set[Interaction] | Null = js.native
+  @scala.inline
+  def unstableGetCurrent(): Set[Interaction] | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getCurrent")().asInstanceOf[Set[Interaction] | Null]
   
-  @JSImport("scheduler/tracing", "unstable_getThreadID")
-  @js.native
-  def unstableGetThreadID(): Double = js.native
+  @scala.inline
+  def unstableGetThreadID(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_getThreadID")().asInstanceOf[Double]
   
-  @JSImport("scheduler/tracing", "unstable_subscribe")
-  @js.native
-  def unstableSubscribe(subscriber: Subscriber): Unit = js.native
+  @scala.inline
+  def unstableSubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_subscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scheduler/tracing", "unstable_trace")
-  @js.native
-  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T]): T = js.native
-  @JSImport("scheduler/tracing", "unstable_trace")
-  @js.native
-  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T], threadID: Double): T = js.native
+  @scala.inline
+  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def unstableTrace[T](name: String, timestamp: Double, callback: js.Function0[T], threadID: Double): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_trace")(name.asInstanceOf[js.Any], timestamp.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("scheduler/tracing", "unstable_unsubscribe")
-  @js.native
-  def unstableUnsubscribe(subscriber: Subscriber): Unit = js.native
+  @scala.inline
+  def unstableUnsubscribe(subscriber: Subscriber): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_unsubscribe")(subscriber.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scheduler/tracing", "unstable_wrap")
-  @js.native
-  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = js.native
-  @JSImport("scheduler/tracing", "unstable_wrap")
-  @js.native
-  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = js.native
+  @scala.inline
+  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): IfSchedulerTracing[WrappedFunction[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any]).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
+  @scala.inline
+  def unstableWrap[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, threadID: Double): IfSchedulerTracing[WrappedFunction[T], T] = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_wrap")(callback.asInstanceOf[js.Any], threadID.asInstanceOf[js.Any])).asInstanceOf[IfSchedulerTracing[WrappedFunction[T], T]]
   
-  @js.native
   trait Build extends StObject
   
   /* Rewritten from type alias, can be one of: 
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - typings.scheduler.schedulerBooleans.`true`
     - typings.scheduler.schedulerBooleans.`false`
   */
@@ -63,16 +56,15 @@ object tracingMod {
   
   type IfSchedulerTracing[WhenTrue, WhenFalse] = TypeByBuildFlag[EnableSchedulerTracing, WhenTrue, WhenFalse]
   
-  @js.native
   trait Interaction extends StObject {
     
-    var __count: Double = js.native
+    var __count: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object Interaction {
     
@@ -99,10 +91,9 @@ object tracingMod {
     }
   }
   
-  @js.native
   trait InteractionsRef extends StObject {
     
-    var current: Set[Interaction] = js.native
+    var current: Set[Interaction]
   }
   object InteractionsRef {
     
@@ -120,24 +111,23 @@ object tracingMod {
     }
   }
   
-  @js.native
   trait Subscriber extends StObject {
     
     /**
       * All scheduled async work for an interaction has finished.
       */
-    def onInteractionScheduledWorkCompleted(interaction: Interaction): Unit = js.native
+    def onInteractionScheduledWorkCompleted(interaction: Interaction): Unit
     
     /**
       * A new interaction has been created via the trace() method.
       */
-    def onInteractionTraced(interaction: Interaction): Unit = js.native
+    def onInteractionTraced(interaction: Interaction): Unit
     
     /**
       * A batch of scheduled work has been canceled.
       * Work is done by a "thread" which is identified by a unique ID.
       */
-    def onWorkCanceled(interactions: Set[Interaction], threadID: Double): Unit = js.native
+    def onWorkCanceled(interactions: Set[Interaction], threadID: Double): Unit
     
     /**
       * New async work has been scheduled for a set of interactions.
@@ -146,7 +136,7 @@ object tracingMod {
       * In that case, onWorkScheduled may be called more than once before onWorkStopped.
       * Work is scheduled by a "thread" which is identified by a unique ID.
       */
-    def onWorkScheduled(interactions: Set[Interaction], threadID: Double): Unit = js.native
+    def onWorkScheduled(interactions: Set[Interaction], threadID: Double): Unit
     
     /**
       * A batch of work has started for a set of interactions.
@@ -156,13 +146,13 @@ object tracingMod {
       * In that case, onWorkStarted may be called more than once before onWorkStopped.
       * Work is done by a "thread" which is identified by a unique ID.
       */
-    def onWorkStarted(interactions: Set[Interaction], threadID: Double): Unit = js.native
+    def onWorkStarted(interactions: Set[Interaction], threadID: Double): Unit
     
     /**
       * A batch of work has completed for a set of interactions.
       * Work is done by a "thread" which is identified by a unique ID.
       */
-    def onWorkStopped(interactions: Set[Interaction], threadID: Double): Unit = js.native
+    def onWorkStopped(interactions: Set[Interaction], threadID: Double): Unit
   }
   object Subscriber {
     
@@ -202,16 +192,15 @@ object tracingMod {
     }
   }
   
-  @js.native
   trait SubscriberRef extends StObject {
     
-    var current: Subscriber | Null = js.native
+    var current: Subscriber | Null
   }
   object SubscriberRef {
     
     @scala.inline
     def apply(): SubscriberRef = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(current = null)
       __obj.asInstanceOf[SubscriberRef]
     }
     
@@ -228,7 +217,7 @@ object tracingMod {
   
   type TypeByBuildFlag[Flag /* <: js.UndefOr[Boolean] */, WhenTrue, WhenFalse] = WhenFalse | WhenTrue
   
-  type WrappedFunction[T /* <: js.Function1[/* repeated */ js.Any, _] */] = T with Cancel
+  type WrappedFunction[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = T & Cancel
   
   trait _EnableSchedulerTracing extends StObject
 }

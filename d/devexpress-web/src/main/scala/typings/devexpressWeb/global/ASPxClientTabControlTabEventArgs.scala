@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientTabControlTabEventArgs")
 @js.native
 class ASPxClientTabControlTabEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientTabControlTabEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientTabControlTabEventArgs {
   /**
     * Initializes a new object of the ASPxClientTabControlTabEventArgs type with the specified value.
     * @param tab An ASPxClientTab object representing the tab related to the event.
     */
   def this(tab: typings.devexpressWeb.ASPxClientTab) = this()
+  
+  /**
+    * Gets the tab object related to the event.
+    */
+  /* CompleteClass */
+  var tab: typings.devexpressWeb.ASPxClientTab = js.native
 }

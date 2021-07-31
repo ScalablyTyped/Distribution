@@ -3,46 +3,44 @@ package typings.pulumiAws.inputMod.s3
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfigurationRule extends StObject {
   
   /**
     * Specifies the destination for the rule (documented below).
     */
-  var destination: Input[BucketReplicationConfigurationRuleDestination] = js.native
+  var destination: Input[BucketReplicationConfigurationRuleDestination]
   
   /**
     * Filter that identifies subset of objects to which the replication rule applies (documented below).
     */
-  var filter: js.UndefOr[Input[BucketReplicationConfigurationRuleFilter]] = js.native
+  var filter: js.UndefOr[Input[BucketReplicationConfigurationRuleFilter]] = js.undefined
   
   /**
     * Unique identifier for the rule. Must be less than or equal to 255 characters in length.
     */
-  var id: js.UndefOr[Input[String]] = js.native
+  var id: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * Object keyname prefix identifying one or more objects to which the rule applies. Must be less than or equal to 1024 characters in length.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * is optional (with a default value of `0`) but must be unique between multiple rules
     */
-  var priority: js.UndefOr[Input[Double]] = js.native
+  var priority: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * Specifies special object selection criteria (documented below).
     */
-  var sourceSelectionCriteria: js.UndefOr[Input[BucketReplicationConfigurationRuleSourceSelectionCriteria]] = js.native
+  var sourceSelectionCriteria: js.UndefOr[Input[BucketReplicationConfigurationRuleSourceSelectionCriteria]] = js.undefined
   
   /**
     * The status of the rule. Either `Enabled` or `Disabled`. The rule is ignored if status is not Enabled.
     */
-  var status: Input[String] = js.native
+  var status: Input[String]
 }
 object BucketReplicationConfigurationRule {
   

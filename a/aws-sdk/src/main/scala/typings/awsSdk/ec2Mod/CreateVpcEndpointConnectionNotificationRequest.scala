@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateVpcEndpointConnectionNotificationRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request. For more information, see How to Ensure Idempotency.
     */
-  var ClientToken: js.UndefOr[String] = js.native
+  var ClientToken: js.UndefOr[String] = js.undefined
   
   /**
     * One or more endpoint events for which to receive notifications. Valid values are Accept, Connect, Delete, and Reject.
     */
-  var ConnectionEvents: ValueStringList = js.native
+  var ConnectionEvents: ValueStringList
   
   /**
     * The ARN of the SNS topic for the notifications.
     */
-  var ConnectionNotificationArn: String = js.native
+  var ConnectionNotificationArn: String
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the endpoint service.
     */
-  var ServiceId: js.UndefOr[VpcEndpointServiceId] = js.native
+  var ServiceId: js.UndefOr[VpcEndpointServiceId] = js.undefined
   
   /**
     * The ID of the endpoint.
     */
-  var VpcEndpointId: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointId] = js.native
+  var VpcEndpointId: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointId] = js.undefined
 }
 object CreateVpcEndpointConnectionNotificationRequest {
   

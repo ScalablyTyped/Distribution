@@ -2,10 +2,8 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelAttributes extends StObject {
   
   /**
@@ -29,176 +27,176 @@ trait RaphaelAttributes extends StObject {
     * - short
     * - medium
     */
-  var `arrow-end`: String = js.native
+  var `arrow-end`: String
   
   /**
     * Comma or space separated values: `x`, `y`, `width` and `height`.
     */
-  var `clip-rect`: String = js.native
+  var `clip-rect`: String
   
   /**
     * CSS type of the cursor.
     */
-  var cursor: String = js.native
+  var cursor: String
   
   /**
     * Horizontal coordinate of the origin of the circle.
     */
-  var cx: Double = js.native
+  var cx: Double
   
   /**
     * Vertical coordinate of the origin of the circle.
     */
-  var cy: Double = js.native
+  var cy: Double
   
   /**
     * Colour, gradient or image.
     */
-  var fill: String = js.native
+  var fill: String
   
   /**
     * Opacity of the fill color.
     */
-  var `fill-opacity`: Double = js.native
+  var `fill-opacity`: Double
   
   /**
     * The combined font family and font size, e.g. `10px "Arial"`.
     */
-  var font: String = js.native
+  var font: String
   
   /**
     * Name of the font family to use.
     */
-  var `font-family`: String = js.native
+  var `font-family`: String
   
   /**
     * Font size in pixels.
     */
-  var `font-size`: Double | String = js.native
+  var `font-size`: Double | String
   
   /**
     * Font weight as a number, usually between `100` to `900`. Can also be `"bold"` etc.
     */
-  var `font-weight`: String = js.native
+  var `font-weight`: String
   
   /**
     * The height of e.g. a rectangle in pixels.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * URL, if specified element behaves as hyperlink.
     */
-  var href: String = js.native
+  var href: String
   
   /**
     * Opacity of the element, usually between `0` and `1`.
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * An SVG path string, e.g. `M 10 10 L 20 10 Z`.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * Radius of the circle in pixels.
     */
-  var r: Double = js.native
+  var r: Double
   
   /**
     * Horizontal half-axis of the ellipse in pixels.
     */
-  var rx: Double = js.native
+  var rx: Double
   
   /**
     * Vertical half-axis of the ellipse in pixels.
     */
-  var ry: Double = js.native
+  var ry: Double
   
   /**
     * Image URL, only works for {@link RaphaelPaper.image} elements.
     */
-  var src: String = js.native
+  var src: String
   
   /**
     * CSS stroke color.
     */
-  var stroke: String = js.native
+  var stroke: String
   
   /**
     * Controls the pattern of dashes and gaps used to form the shape of a path's stroke.
     */
-  var `stroke-dasharray`: RaphaelDashArrayType = js.native
+  var `stroke-dasharray`: RaphaelDashArrayType
   
   /**
     * Specifies the shape to be used at the end of open subpaths when they are stroked, and the shape to be drawn
     * for zero length subpaths whether they are open or closed.
     */
-  var `stroke-linecap`: RaphaelLineCapType = js.native
+  var `stroke-linecap`: RaphaelLineCapType
   
   /**
     * Specifies the shape to be used at the corners of paths or basic shapes when they are stroked.
     */
-  var `stroke-linejoin`: RaphaelLineJoinType = js.native
+  var `stroke-linejoin`: RaphaelLineJoinType
   
   /**
     * When two line segments meet at a sharp angle and a value of `miter`, `miter-clip`, or `arcs` has been
     * specified for `stroke-linejoin`, it is possible for the join to extend far beyond the thickness of the line
     * stroking the path. The `stroke-miterlimit` imposes a limit on the extent of the line join.
     */
-  var `stroke-miterlimit`: Double = js.native
+  var `stroke-miterlimit`: Double
   
   /**
     * Opacity of the stroke, usually between `0` and `1`.
     */
-  var `stroke-opacity`: Double = js.native
+  var `stroke-opacity`: Double
   
   /**
     * Width of the stroke in pixels.
     */
-  var `stroke-width`: Double = js.native
+  var `stroke-width`: Double
   
   /**
     * Used with {@link href}.
     */
-  var target: String = js.native
+  var target: String
   
   /**
     * Contents of the text element.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * Used to align (start-, middle- or end-alignment) a string of pre-formatted text or auto-wrapped text where
     * the wrapping area is determined from the `inline-size` property relative to a given point.
     */
-  var `text-anchor`: RaphaelTextAnchorType = js.native
+  var `text-anchor`: RaphaelTextAnchorType
   
   /**
     * Will create a tooltip with a given text.
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * The transform property of this element.
     */
-  var transform: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment] = js.native
+  var transform: String | RaphaelTransformSegment | js.Array[RaphaelTransformSegment]
   
   /**
     * The width of e.g. a rectangle in pixels.
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * The horizontal x coordinate in pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The vertical y coordinate in pixels.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object RaphaelAttributes {
   

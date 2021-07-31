@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraContextStopRecordResult extends StObject {
   
   /**
     * 封面图片文件的临时路径
     */
-  var tempThumbPath: js.UndefOr[String] = js.native
+  var tempThumbPath: js.UndefOr[String] = js.undefined
   
   /**
     * 视频的文件的临时路径
     */
-  var tempVideoPath: js.UndefOr[String] = js.native
+  var tempVideoPath: js.UndefOr[String] = js.undefined
 }
 object CameraContextStopRecordResult {
   

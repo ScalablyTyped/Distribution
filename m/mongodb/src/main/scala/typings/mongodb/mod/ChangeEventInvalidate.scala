@@ -4,28 +4,28 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.mongodb.mongodbStrings.invalidate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChangeEventInvalidate[TSchema /* <: StringDictionary[js.Any] */] extends ChangeEvent[TSchema] {
+trait ChangeEventInvalidate[TSchema /* <: StringDictionary[js.Any] */]
+  extends StObject
+     with ChangeEvent[TSchema] {
   
-  var _id: ResumeToken = js.native
+  var _id: ResumeToken
   
-  var clusterTime: typings.bson.mod.Timestamp = js.native
+  var clusterTime: typings.bson.mod.Timestamp
   
-  var operationType: invalidate = js.native
+  var operationType: invalidate
 }
 object ChangeEventInvalidate {
   
   @scala.inline
-  def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp, operationType: invalidate): ChangeEventInvalidate[TSchema] = {
-    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+  def apply[TSchema /* <: StringDictionary[js.Any] */](_id: ResumeToken, clusterTime: typings.bson.mod.Timestamp): ChangeEventInvalidate[TSchema] = {
+    val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], operationType = "invalidate")
     __obj.asInstanceOf[ChangeEventInvalidate[TSchema]]
   }
   
   @scala.inline
-  implicit class ChangeEventInvalidateMutableBuilder[Self <: ChangeEventInvalidate[_], TSchema /* <: StringDictionary[js.Any] */] (val x: Self with ChangeEventInvalidate[TSchema]) extends AnyVal {
+  implicit class ChangeEventInvalidateMutableBuilder[Self <: ChangeEventInvalidate[?], TSchema /* <: StringDictionary[js.Any] */] (val x: Self & ChangeEventInvalidate[TSchema]) extends AnyVal {
     
     @scala.inline
     def setClusterTime(value: typings.bson.mod.Timestamp): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])

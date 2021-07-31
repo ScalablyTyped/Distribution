@@ -3,19 +3,17 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFAdditionalClassInfoType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAdditionalClassInfo extends StObject {
   
-  var AssignmentClassInfo: IAssignmentClassInfo = js.native
+  var AssignmentClassInfo: IAssignmentClassInfo
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  def Clone(): IAdditionalClassInfo = js.native
+  def Clone(): IAdditionalClassInfo
   
-  val InfoType: MFAdditionalClassInfoType = js.native
+  val InfoType: MFAdditionalClassInfoType
 }
 object IAdditionalClassInfo {
   

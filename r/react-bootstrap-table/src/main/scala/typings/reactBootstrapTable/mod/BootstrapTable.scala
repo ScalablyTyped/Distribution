@@ -3,7 +3,6 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("react-bootstrap-table", "BootstrapTable")
@@ -63,7 +62,7 @@ class BootstrapTable protected ()
     *      price: { type: 'ArrayFilter', value: [2100, 2104] }
     *  });
     */
-  def handleFilterData(filter: FilterData[_]): Unit = js.native
+  def handleFilterData(filter: FilterData[js.Any]): Unit = js.native
   
   /**
     * Call this function with search text for fully searching.

@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncS3Destination extends StObject {
   
   /**
     * The ARN of an encryption key for a destination in Amazon S3. Must belong to the same Region as the destination S3 bucket.
     */
-  var AWSKMSKeyARN: js.UndefOr[ResourceDataSyncAWSKMSKeyARN] = js.native
+  var AWSKMSKeyARN: js.UndefOr[ResourceDataSyncAWSKMSKeyARN] = js.undefined
   
   /**
     * The name of the S3 bucket where the aggregated data is stored.
     */
-  var BucketName: ResourceDataSyncS3BucketName = js.native
+  var BucketName: ResourceDataSyncS3BucketName
   
   /**
     * Enables destination data sharing. By default, this field is null.
     */
-  var DestinationDataSharing: js.UndefOr[ResourceDataSyncDestinationDataSharing] = js.native
+  var DestinationDataSharing: js.UndefOr[ResourceDataSyncDestinationDataSharing] = js.undefined
   
   /**
     * An Amazon S3 prefix for the bucket.
     */
-  var Prefix: js.UndefOr[ResourceDataSyncS3Prefix] = js.native
+  var Prefix: js.UndefOr[ResourceDataSyncS3Prefix] = js.undefined
   
   /**
     * The AWS Region with the S3 bucket targeted by the Resource Data Sync.
     */
-  var Region: ResourceDataSyncS3Region = js.native
+  var Region: ResourceDataSyncS3Region
   
   /**
     * A supported sync format. The following format is currently supported: JsonSerDe
     */
-  var SyncFormat: ResourceDataSyncS3Format = js.native
+  var SyncFormat: ResourceDataSyncS3Format
 }
 object ResourceDataSyncS3Destination {
   

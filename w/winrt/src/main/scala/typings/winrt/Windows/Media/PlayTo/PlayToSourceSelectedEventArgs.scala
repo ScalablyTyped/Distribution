@@ -3,11 +3,11 @@ package typings.winrt.Windows.Media.PlayTo
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlayToSourceSelectedEventArgs extends IPlayToSourceSelectedEventArgs
+trait PlayToSourceSelectedEventArgs
+  extends StObject
+     with IPlayToSourceSelectedEventArgs
 object PlayToSourceSelectedEventArgs {
   
   @scala.inline

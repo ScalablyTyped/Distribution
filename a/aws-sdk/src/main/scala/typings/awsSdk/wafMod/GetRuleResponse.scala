@@ -2,16 +2,14 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRuleResponse extends StObject {
   
   /**
     * Information about the Rule that you specified in the GetRule request. For more information, see the following topics:    Rule: Contains MetricName, Name, an array of Predicate objects, and RuleId     Predicate: Each Predicate object contains DataId, Negated, and Type   
     */
-  var Rule: js.UndefOr[typings.awsSdk.wafMod.Rule] = js.native
+  var Rule: js.UndefOr[typings.awsSdk.wafMod.Rule] = js.undefined
 }
 object GetRuleResponse {
   

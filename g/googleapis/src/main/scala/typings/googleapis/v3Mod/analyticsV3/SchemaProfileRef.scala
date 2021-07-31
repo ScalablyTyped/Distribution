@@ -2,50 +2,48 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for a linked view (profile).
   */
-@js.native
 trait SchemaProfileRef extends StObject {
   
   /**
     * Account ID to which this view (profile) belongs.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Link for this view (profile).
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
   /**
     * View (Profile) ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Internal ID for the web property to which this view (profile) belongs.
     */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /**
     * Analytics view (profile) reference.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this view (profile).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Web property ID of the form UA-XXXXX-YY to which this view (profile)
     * belongs.
     */
-  var webPropertyId: js.UndefOr[String] = js.native
+  var webPropertyId: js.UndefOr[String] = js.undefined
 }
 object SchemaProfileRef {
   

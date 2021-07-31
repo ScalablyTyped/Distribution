@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductStatus extends StObject {
   
   /** Date on which the item has been created, in ISO 8601 format. */
-  var creationDate: js.UndefOr[String] = js.native
+  var creationDate: js.UndefOr[String] = js.undefined
   
   /** The intended destinations for the product. */
-  var destinationStatuses: js.UndefOr[js.Array[ProductStatusDestinationStatus]] = js.native
+  var destinationStatuses: js.UndefOr[js.Array[ProductStatusDestinationStatus]] = js.undefined
   
   /** Date on which the item expires in Google Shopping, in ISO 8601 format. */
-  var googleExpirationDate: js.UndefOr[String] = js.native
+  var googleExpirationDate: js.UndefOr[String] = js.undefined
   
   /** A list of all issues associated with the product. */
-  var itemLevelIssues: js.UndefOr[js.Array[ProductStatusItemLevelIssue]] = js.native
+  var itemLevelIssues: js.UndefOr[js.Array[ProductStatusItemLevelIssue]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#productStatus`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Date on which the item has been last updated, in ISO 8601 format. */
-  var lastUpdateDate: js.UndefOr[String] = js.native
+  var lastUpdateDate: js.UndefOr[String] = js.undefined
   
   /** The link to the product. */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
   /** The ID of the product for which status is reported. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** The title of the product. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ProductStatus {
   

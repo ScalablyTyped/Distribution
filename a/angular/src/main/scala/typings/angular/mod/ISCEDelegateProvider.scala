@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -10,17 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // see http://docs.angularjs.org/api/ng/provider/$sceDelegateProvider
 ///////////////////////////////////////////////////////////////////////////
 @js.native
-trait ISCEDelegateProvider extends IServiceProvider {
+trait ISCEDelegateProvider
+  extends StObject
+     with IServiceProvider {
   
-  def bannedResourceUrlList(): js.Array[_] = js.native
-  def bannedResourceUrlList(bannedList: js.Array[_]): Unit = js.native
+  def bannedResourceUrlList(): js.Array[js.Any] = js.native
+  def bannedResourceUrlList(bannedList: js.Array[js.Any]): Unit = js.native
   
-  def resourceUrlBlacklist(): js.Array[_] = js.native
-  def resourceUrlBlacklist(bannedList: js.Array[_]): Unit = js.native
+  def resourceUrlBlacklist(): js.Array[js.Any] = js.native
+  def resourceUrlBlacklist(bannedList: js.Array[js.Any]): Unit = js.native
   
-  def resourceUrlWhitelist(): js.Array[_] = js.native
-  def resourceUrlWhitelist(trustedList: js.Array[_]): Unit = js.native
+  def resourceUrlWhitelist(): js.Array[js.Any] = js.native
+  def resourceUrlWhitelist(trustedList: js.Array[js.Any]): Unit = js.native
   
-  def trustedResourceUrlList(): js.Array[_] = js.native
-  def trustedResourceUrlList(trustedList: js.Array[_]): Unit = js.native
+  def trustedResourceUrlList(): js.Array[js.Any] = js.native
+  def trustedResourceUrlList(trustedList: js.Array[js.Any]): Unit = js.native
 }

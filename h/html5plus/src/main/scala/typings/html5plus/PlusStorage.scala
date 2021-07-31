@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -59,7 +58,7 @@ trait PlusStorage extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/storage.html](http://www.html5plus.org/doc/zh_cn/storage.html)
     */
   def setItem(): Unit = js.native
-  def setItem(key: js.UndefOr[scala.Nothing], value: String): Unit = js.native
   def setItem(key: String): Unit = js.native
   def setItem(key: String, value: String): Unit = js.native
+  def setItem(key: Unit, value: String): Unit = js.native
 }

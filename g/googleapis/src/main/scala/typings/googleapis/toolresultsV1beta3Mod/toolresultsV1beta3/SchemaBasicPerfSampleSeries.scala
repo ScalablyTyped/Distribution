@@ -2,21 +2,19 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Encapsulates the metadata for basic sample series represented by a line
   * chart
   */
-@js.native
 trait SchemaBasicPerfSampleSeries extends StObject {
   
-  var perfMetricType: js.UndefOr[String] = js.native
+  var perfMetricType: js.UndefOr[String] = js.undefined
   
-  var perfUnit: js.UndefOr[String] = js.native
+  var perfUnit: js.UndefOr[String] = js.undefined
   
-  var sampleSeriesLabel: js.UndefOr[String] = js.native
+  var sampleSeriesLabel: js.UndefOr[String] = js.undefined
 }
 object SchemaBasicPerfSampleSeries {
   

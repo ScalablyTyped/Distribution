@@ -2,15 +2,13 @@ package typings.atom.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewValueNumber extends StObject {
   
-  var newValue: Double = js.native
+  var newValue: Double
   
-  var oldValue: js.UndefOr[Double] = js.native
+  var oldValue: js.UndefOr[Double] = js.undefined
 }
 object NewValueNumber {
   

@@ -10,9 +10,9 @@ base abstract trigger component for react mobile
 | ------------------ | :-------------: |
 | Full name          | rmc-trigger |
 | Keywords           | react, react-component, react-trigger, m-trigger |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 835701 |
+| # downloads        | 1000255 |
 | # stars            | 0 |
 
 ## Links

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,22 +20,21 @@ object mod {
     def this(props: TabfilterProps, context: js.Any) = this()
   }
   
-  @js.native
   trait TabfilterProps extends StObject {
     
-    var initialFilters: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.native
+    var initialFilters: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.undefined
     
-    def onFilterUpdate(filteredArray: js.Array[String], currentFilters: js.Array[_]): js.Array[_] | Unit = js.native
+    def onFilterUpdate(filteredArray: js.Array[String], currentFilters: js.Array[js.Any]): js.Array[js.Any] | Unit
     
-    var rowClass: js.UndefOr[String] = js.native
+    var rowClass: js.UndefOr[String] = js.undefined
     
-    var rows: String | js.Array[String] | StringDictionary[Boolean] = js.native
+    var rows: String | js.Array[String] | StringDictionary[Boolean]
   }
   object TabfilterProps {
     
     @scala.inline
     def apply(
-      onFilterUpdate: (js.Array[String], js.Array[_]) => js.Array[_] | Unit,
+      onFilterUpdate: (js.Array[String], js.Array[js.Any]) => js.Array[js.Any] | Unit,
       rows: String | js.Array[String] | StringDictionary[Boolean]
     ): TabfilterProps = {
       val __obj = js.Dynamic.literal(onFilterUpdate = js.Any.fromFunction2(onFilterUpdate), rows = rows.asInstanceOf[js.Any])
@@ -56,7 +54,7 @@ object mod {
       def setInitialFiltersVarargs(value: String*): Self = StObject.set(x, "initialFilters", js.Array(value :_*))
       
       @scala.inline
-      def setOnFilterUpdate(value: (js.Array[String], js.Array[_]) => js.Array[_] | Unit): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction2(value))
+      def setOnFilterUpdate(value: (js.Array[String], js.Array[js.Any]) => js.Array[js.Any] | Unit): Self = StObject.set(x, "onFilterUpdate", js.Any.fromFunction2(value))
       
       @scala.inline
       def setRowClass(value: String): Self = StObject.set(x, "rowClass", value.asInstanceOf[js.Any])

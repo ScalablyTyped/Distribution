@@ -12,7 +12,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutLayoutMod extends Shortcut {
@@ -37,12 +36,13 @@ object layoutLayoutMod extends Shortcut {
   @js.native
   val LayoutContext: Context[LayoutContextProps] = js.native
   
-  @js.native
-  trait BasicProps extends HTMLAttributes[HTMLDivElement] {
+  trait BasicProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var hasSider: js.UndefOr[Boolean] = js.native
+    var hasSider: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object BasicProps {
     
@@ -69,14 +69,13 @@ object layoutLayoutMod extends Shortcut {
     }
   }
   
-  @js.native
   trait GeneratorProps extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var suffixCls: String = js.native
+    var suffixCls: String
     
-    var tagName: header | footer | main | section = js.native
+    var tagName: header | footer | main | section
   }
   object GeneratorProps {
     
@@ -100,10 +99,9 @@ object layoutLayoutMod extends Shortcut {
     }
   }
   
-  @js.native
   trait LayoutContextProps extends StObject {
     
-    var siderHook: AddSider = js.native
+    var siderHook: AddSider
   }
   object LayoutContextProps {
     

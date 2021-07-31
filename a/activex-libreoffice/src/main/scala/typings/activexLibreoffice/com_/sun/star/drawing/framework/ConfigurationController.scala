@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing.framework
 import typings.activexLibreoffice.com_.sun.star.frame.XController
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,10 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * tighter coupling than the interfaces allow. These are reasons for removing this service in the future and let the controller manager create the sub
   * controllers directly.
   */
-@js.native
-trait ConfigurationController extends XConfigurationController {
+trait ConfigurationController
+  extends StObject
+     with XConfigurationController {
   
-  def create(xController: XController): Unit = js.native
+  def create(xController: XController): Unit
 }
 object ConfigurationController {
   

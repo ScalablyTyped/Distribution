@@ -3,7 +3,6 @@ package typings.angularOauth2
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -11,12 +10,11 @@ object mod {
   
   object oauth2 {
     
-    @js.native
     trait Data extends StObject {
       
-      var password: String = js.native
+      var password: String
       
-      var username: String = js.native
+      var username: String
     }
     object Data {
       
@@ -44,30 +42,29 @@ object mod {
       def getAccessToken(data: Data, options: js.Any): IPromise[String] = js.native
       
       def getRefreshToken(): IPromise[String] = js.native
-      def getRefreshToken(data: js.UndefOr[scala.Nothing], options: js.Any): IPromise[String] = js.native
+      def getRefreshToken(data: Unit, options: js.Any): IPromise[String] = js.native
       def getRefreshToken(data: Data): IPromise[String] = js.native
       def getRefreshToken(data: Data, options: js.Any): IPromise[String] = js.native
       
       def isAuthenticated(): Boolean = js.native
       
       def revokeToken(): IPromise[String] = js.native
-      def revokeToken(data: js.UndefOr[scala.Nothing], options: js.Any): IPromise[String] = js.native
+      def revokeToken(data: Unit, options: js.Any): IPromise[String] = js.native
       def revokeToken(data: Data): IPromise[String] = js.native
       def revokeToken(data: Data, options: js.Any): IPromise[String] = js.native
     }
     
-    @js.native
     trait OAuthConfig extends StObject {
       
-      var baseUrl: String = js.native
+      var baseUrl: String
       
-      var clientId: String = js.native
+      var clientId: String
       
-      var clientSecret: js.UndefOr[String] = js.native
+      var clientSecret: js.UndefOr[String] = js.undefined
       
-      var grantPath: js.UndefOr[String] = js.native
+      var grantPath: js.UndefOr[String] = js.undefined
       
-      var revokePath: js.UndefOr[String] = js.native
+      var revokePath: js.UndefOr[String] = js.undefined
     }
     object OAuthConfig {
       
@@ -106,10 +103,9 @@ object mod {
       }
     }
     
-    @js.native
     trait OAuthProvider extends StObject {
       
-      def configure(params: OAuthConfig): OAuthConfig = js.native
+      def configure(params: OAuthConfig): OAuthConfig
     }
     object OAuthProvider {
       
@@ -127,12 +123,11 @@ object mod {
       }
     }
     
-    @js.native
     trait OAuthTokenConfig extends StObject {
       
-      var name: String = js.native
+      var name: String
       
-      var options: js.Any = js.native
+      var options: js.Any
     }
     object OAuthTokenConfig {
       
@@ -153,10 +148,9 @@ object mod {
       }
     }
     
-    @js.native
     trait OAuthTokenOptions extends StObject {
       
-      var secure: Boolean = js.native
+      var secure: Boolean
     }
     object OAuthTokenOptions {
       
@@ -174,10 +168,9 @@ object mod {
       }
     }
     
-    @js.native
     trait OAuthTokenProvider extends StObject {
       
-      def configure(params: OAuthTokenConfig): OAuthTokenConfig = js.native
+      def configure(params: OAuthTokenConfig): OAuthTokenConfig
     }
     object OAuthTokenProvider {
       

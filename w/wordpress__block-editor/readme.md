@@ -10,9 +10,9 @@ Generic block editor.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/block-editor |
 | Keywords           | wordpress, gutenberg, editor, blocks |
-| # releases         | 50 |
-| # dependents       | 19 |
-| # downloads        | 502450 |
+| # releases         | 65 |
+| # dependents       | 23 |
+| # downloads        | 731643 |
 | # stars            | 0 |
 
 ## Links

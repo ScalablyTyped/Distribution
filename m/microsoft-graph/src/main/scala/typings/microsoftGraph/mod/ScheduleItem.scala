@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleItem extends StObject {
   
   // The date, time, and time zone that the corresponding event ends.
-  var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var end: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   // The sensitivity of the corresponding event. True if the event is marked private, false otherwise. Optional.
-  var isPrivate: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isPrivate: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The location where the corresponding event is held or attended from. Optional.
-  var location: js.UndefOr[NullableOption[String]] = js.native
+  var location: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date, time, and time zone that the corresponding event starts.
-  var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var start: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**
     * The availability status of the user or resource during the corresponding event. The possible values are: free,
     * tentative, busy, oof, workingElsewhere, unknown.
     */
-  var status: js.UndefOr[NullableOption[FreeBusyStatus]] = js.native
+  var status: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
   
   // The corresponding event's subject line. Optional.
-  var subject: js.UndefOr[NullableOption[String]] = js.native
+  var subject: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ScheduleItem {
   

@@ -14,23 +14,22 @@ import typings.vegaLite.vegaLiteStrings.x
 import typings.vegaLite.vegaLiteStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Encoding extends StObject {
   
-  var encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size = js.native
+  var encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
   
-  var order: js.UndefOr[scala.Nothing] = js.native
+  var order: Unit
 }
 object Encoding {
   
   @scala.inline
   def apply(
-    encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
+    encoding: text | fill | stroke | color | shape | x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size,
+    order: Unit
   ): Encoding = {
-    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(encoding = encoding.asInstanceOf[js.Any], order = order.asInstanceOf[js.Any])
     __obj.asInstanceOf[Encoding]
   }
   
@@ -41,5 +40,8 @@ object Encoding {
     def setEncoding(
       value: text | fill | stroke | color | shape | typings.vegaLite.vegaLiteStrings.x | y | opacity | fillOpacity | strokeOpacity | strokeWidth | size
     ): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOrder(value: Unit): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
   }
 }

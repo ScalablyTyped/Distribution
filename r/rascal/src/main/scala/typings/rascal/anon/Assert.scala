@@ -2,15 +2,13 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Assert extends StObject {
   
-  var assert: Boolean = js.native
+  var assert: Boolean
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Assert {
   

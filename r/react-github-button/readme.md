@@ -11,8 +11,8 @@ Unofficial GitHub buttons in React.
 | Full name          | react-github-button |
 | Keywords           | react, github, button |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 120249 |
+| # dependents       | 36 |
+| # downloads        | 183950 |
 | # stars            | 0 |
 
 ## Links

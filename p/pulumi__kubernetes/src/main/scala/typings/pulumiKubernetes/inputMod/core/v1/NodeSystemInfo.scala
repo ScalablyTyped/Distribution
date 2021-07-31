@@ -3,64 +3,62 @@ package typings.pulumiKubernetes.inputMod.core.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeSystemInfo is a set of ids/uuids to uniquely identify the node.
   */
-@js.native
 trait NodeSystemInfo extends StObject {
   
   /**
     * The Architecture reported by the node
     */
-  var architecture: Input[String] = js.native
+  var architecture: Input[String]
   
   /**
     * Boot ID reported by the node.
     */
-  var bootID: Input[String] = js.native
+  var bootID: Input[String]
   
   /**
     * ContainerRuntime Version reported by the node through runtime remote API (e.g. docker://1.5.0).
     */
-  var containerRuntimeVersion: Input[String] = js.native
+  var containerRuntimeVersion: Input[String]
   
   /**
     * Kernel Version reported by the node from 'uname -r' (e.g. 3.16.0-0.bpo.4-amd64).
     */
-  var kernelVersion: Input[String] = js.native
+  var kernelVersion: Input[String]
   
   /**
     * KubeProxy Version reported by the node.
     */
-  var kubeProxyVersion: Input[String] = js.native
+  var kubeProxyVersion: Input[String]
   
   /**
     * Kubelet Version reported by the node.
     */
-  var kubeletVersion: Input[String] = js.native
+  var kubeletVersion: Input[String]
   
   /**
     * MachineID reported by the node. For unique machine identification in the cluster this field is preferred. Learn more from man(5) machine-id: http://man7.org/linux/man-pages/man5/machine-id.5.html
     */
-  var machineID: Input[String] = js.native
+  var machineID: Input[String]
   
   /**
     * The Operating System reported by the node
     */
-  var operatingSystem: Input[String] = js.native
+  var operatingSystem: Input[String]
   
   /**
     * OS Image reported by the node from /etc/os-release (e.g. Debian GNU/Linux 7 (wheezy)).
     */
-  var osImage: Input[String] = js.native
+  var osImage: Input[String]
   
   /**
     * SystemUUID reported by the node. For unique machine identification MachineID is preferred. This field is specific to Red Hat hosts https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html/rhsm/uuid
     */
-  var systemUUID: Input[String] = js.native
+  var systemUUID: Input[String]
 }
 object NodeSystemInfo {
   

@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formControlMod {
@@ -34,20 +33,19 @@ object formControlMod {
   @js.native
   val StyledLabel: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait FormControlOverrides extends StObject {
     
     var Caption: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var ControlContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Label: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object FormControlOverrides {
     
@@ -86,24 +84,23 @@ object formControlMod {
     }
   }
   
-  @js.native
   trait FormControlProps extends StObject {
     
-    var caption: js.UndefOr[ReactNode] = js.native
+    var caption: js.UndefOr[ReactNode] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean | ReactNode] = js.native
+    var error: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var htmlFor: js.UndefOr[String] = js.native
+    var htmlFor: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var overrides: js.UndefOr[FormControlOverrides] = js.native
+    var overrides: js.UndefOr[FormControlOverrides] = js.undefined
     
-    var positive: js.UndefOr[ReactNode] = js.native
+    var positive: js.UndefOr[ReactNode] = js.undefined
   }
   object FormControlProps {
     
@@ -166,10 +163,9 @@ object formControlMod {
     }
   }
   
-  @js.native
   trait FormControlState extends StObject {
     
-    var captionId: String = js.native
+    var captionId: String
   }
   object FormControlState {
     

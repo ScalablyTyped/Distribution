@@ -2,25 +2,25 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefundResource extends Resource {
+trait RefundResource
+  extends StObject
+     with Resource {
   
-  val capture_id: js.UndefOr[String] = js.native
+  val capture_id: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var invoice_number: js.UndefOr[String] = js.native
+  var invoice_number: js.UndefOr[String] = js.undefined
   
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
-  val refund_funding_type: js.UndefOr[String] = js.native
+  val refund_funding_type: js.UndefOr[String] = js.undefined
   
-  val refund_reason_code: js.UndefOr[String] = js.native
+  val refund_reason_code: js.UndefOr[String] = js.undefined
   
-  val sale_id: js.UndefOr[String] = js.native
+  val sale_id: js.UndefOr[String] = js.undefined
 }
 object RefundResource {
   

@@ -10,8 +10,8 @@ RxJS Bindings for Node.js and io.js
 | Full name          | rx-node |
 | Keywords           | Rx, RxJS, EventEmitter, Streams, Reactive |
 | # releases         | 0 |
-| # dependents       | 57 |
-| # downloads        | 206060 |
+| # dependents       | 53 |
+| # downloads        | 237277 |
 | # stars            | 7 |
 
 ## Links

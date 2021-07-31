@@ -5,47 +5,45 @@ import typings.std.Event
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compatibility extends StObject {
   
-  def bind(func: js.Function1[/* repeated */ js.Any, _], thisObj: js.Any, args: js.Any*): js.Any = js.native
+  def bind(func: js.Function1[/* repeated */ js.Any, js.Any], thisObj: js.Any, args: js.Any*): js.Any
   
-  def cAF(): js.Function1[/* requestID */ Double, Unit] = js.native
+  def cAF(): js.Function1[/* requestID */ Double, Unit]
   
-  def inA[T](item: T, array: js.Array[T]): Double = js.native
+  def inA[T](item: T, array: js.Array[T]): Double
   
-  def isA(obj: js.Any): Boolean = js.native
+  def isA(obj: js.Any): Boolean
   
-  def mBtn(event: MouseEvent): Double = js.native
+  def mBtn(event: MouseEvent): Double
   
-  def mO(): js.Any = js.native
+  def mO(): js.Any
   
-  def now(): Double = js.native
+  def now(): Double
   
-  def page(event: MouseEvent): XNumber = js.native
+  def page(event: MouseEvent): XNumber
   
-  def prvD(event: Event): Unit = js.native
+  def prvD(event: Event): Unit
   
-  def rAF(): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Double] = js.native
+  def rAF(): js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Double]
   
-  def rO(): js.Any = js.native
+  def rO(): js.Any
   
-  def stpP(event: Event): Unit = js.native
+  def stpP(event: Event): Unit
   
-  def `type`(obj: js.Any): String = js.native
+  def `type`(obj: js.Any): String
   
-  def wH(): Double = js.native
+  def wH(): Double
   
-  def wW(): Double = js.native
+  def wW(): Double
 }
 object Compatibility {
   
   @scala.inline
   def apply(
-    bind: (js.Function1[/* repeated */ js.Any, _], js.Any, /* repeated */ js.Any) => js.Any,
+    bind: (js.Function1[/* repeated */ js.Any, js.Any], js.Any, /* repeated */ js.Any) => js.Any,
     cAF: () => js.Function1[/* requestID */ Double, Unit],
     inA: (js.Any, js.Array[js.Any]) => Double,
     isA: js.Any => Boolean,
@@ -54,7 +52,7 @@ object Compatibility {
     now: () => Double,
     page: MouseEvent => XNumber,
     prvD: Event => Unit,
-    rAF: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Double],
+    rAF: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Double],
     rO: () => js.Any,
     stpP: Event => Unit,
     `type`: js.Any => String,
@@ -70,7 +68,7 @@ object Compatibility {
   implicit class CompatibilityMutableBuilder[Self <: Compatibility] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBind(value: (js.Function1[/* repeated */ js.Any, _], js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
+    def setBind(value: (js.Function1[/* repeated */ js.Any, js.Any], js.Any, /* repeated */ js.Any) => js.Any): Self = StObject.set(x, "bind", js.Any.fromFunction3(value))
     
     @scala.inline
     def setCAF(value: () => js.Function1[/* requestID */ Double, Unit]): Self = StObject.set(x, "cAF", js.Any.fromFunction0(value))
@@ -97,7 +95,7 @@ object Compatibility {
     def setPrvD(value: Event => Unit): Self = StObject.set(x, "prvD", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setRAF(value: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Double]): Self = StObject.set(x, "rAF", js.Any.fromFunction0(value))
+    def setRAF(value: () => js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Double]): Self = StObject.set(x, "rAF", js.Any.fromFunction0(value))
     
     @scala.inline
     def setRO(value: () => js.Any): Self = StObject.set(x, "rO", js.Any.fromFunction0(value))

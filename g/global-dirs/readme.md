@@ -10,9 +10,9 @@ Get the directory of globally installed packages and binaries
 | ------------------ | :-------------: |
 | Full name          | global-dirs |
 | Keywords           | global, prefix, path, paths, npm, yarn, node, modules, node-modules, package, packages, binary, binaries, bin, directory, directories, npmrc, rc, config, root, resolve |
-| # releases         | 4 |
-| # dependents       | 58 |
-| # downloads        | 278155512 |
+| # releases         | 6 |
+| # dependents       | 76 |
+| # downloads        | 357703231 |
 | # stars            | 0 |
 
 ## Links

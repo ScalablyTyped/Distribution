@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskMod {
@@ -66,6 +65,10 @@ object taskMod {
   /* static members */
   object Task {
     
+    @JSImport("@pulumi/aws/datasync/task", "Task")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Task resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -75,60 +78,54 @@ object taskMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/datasync/task", "Task.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Task = js.native
-    @JSImport("@pulumi/aws/datasync/task", "Task.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Task = js.native
-    @JSImport("@pulumi/aws/datasync/task", "Task.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskState): Task = js.native
-    @JSImport("@pulumi/aws/datasync/task", "Task.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): Task = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Task]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskState): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Task]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TaskState, opts: CustomResourceOptions): Task = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Task]
     
     /**
       * Returns true if the given object is an instance of Task.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/datasync/task", "Task.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/datasync/task.Task */ Boolean]
   }
   
-  @js.native
   trait TaskArgs extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.
       */
-    val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.native
+    val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of destination DataSync Location.
       */
-    val destinationLocationArn: Input[ARN] = js.native
+    val destinationLocationArn: Input[ARN]
     
     /**
       * Name of the DataSync Task.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
       */
-    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.TaskOptions]] = js.native
+    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.TaskOptions]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of source DataSync Location.
       */
-    val sourceLocationArn: Input[ARN] = js.native
+    val sourceLocationArn: Input[ARN]
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Task.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TaskArgs {
     
@@ -167,43 +164,42 @@ object taskMod {
     }
   }
   
-  @js.native
   trait TaskState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the DataSync Task.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the CloudWatch Log Group that is used to monitor and log events in the sync task.
       */
-    val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.native
+    val cloudwatchLogGroupArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of destination DataSync Location.
       */
-    val destinationLocationArn: js.UndefOr[Input[ARN]] = js.native
+    val destinationLocationArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * Name of the DataSync Task.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration block containing option that controls the default behavior when you start an execution of this DataSync Task. For each individual task execution, you can override these options by specifying an overriding configuration in those executions.
       */
-    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.TaskOptions]] = js.native
+    val options: js.UndefOr[Input[typings.pulumiAws.inputMod.datasync.TaskOptions]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of source DataSync Location.
       */
-    val sourceLocationArn: js.UndefOr[Input[ARN]] = js.native
+    val sourceLocationArn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * Key-value pairs of resource tags to assign to the DataSync Task.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object TaskState {
     

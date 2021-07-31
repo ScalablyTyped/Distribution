@@ -3,17 +3,15 @@ package typings.ionicCore.stencilPublicRuntimeMod.JSXBase
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotAttributes extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onSlotchange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+  var onSlotchange: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
   
-  var slot: js.UndefOr[String] = js.native
+  var slot: js.UndefOr[String] = js.undefined
 }
 object SlotAttributes {
   

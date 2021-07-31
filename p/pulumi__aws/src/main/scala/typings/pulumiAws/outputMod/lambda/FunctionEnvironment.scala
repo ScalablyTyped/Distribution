@@ -3,16 +3,14 @@ package typings.pulumiAws.outputMod.lambda
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionEnvironment extends StObject {
   
   /**
     * A map that defines environment variables for the Lambda function.
     */
-  var variables: js.UndefOr[StringDictionary[String]] = js.native
+  var variables: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object FunctionEnvironment {
   

@@ -3,16 +3,17 @@ package typings.ionicUtilsFs
 import typings.fsExtra.mod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object safeMod {
   
-  @JSImport("@ionic/utils-fs/dist/safe", "readdir")
+  @JSImport("@ionic/utils-fs/dist/safe", JSImport.Namespace)
   @js.native
-  def readdir(dir: String): js.Promise[js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/utils-fs/dist/safe", "stat")
-  @js.native
-  def stat(p: String): js.Promise[js.UndefOr[Stats]] = js.native
+  @scala.inline
+  def readdir(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  
+  @scala.inline
+  def stat(p: String): js.Promise[js.UndefOr[Stats]] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(p.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[Stats]]]
 }

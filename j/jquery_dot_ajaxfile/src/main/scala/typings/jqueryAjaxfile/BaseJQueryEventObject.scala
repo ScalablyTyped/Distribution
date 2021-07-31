@@ -4,14 +4,15 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface of the JQuery extension of the W3C event object
   */
 @js.native
-trait BaseJQueryEventObject extends Event {
+trait BaseJQueryEventObject
+  extends StObject
+     with Event {
   
   var data: js.Any = js.native
   

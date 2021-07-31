@@ -2,19 +2,17 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a single hyperparameter to optimize.
   */
-@js.native
 trait SchemaGoogleCloudMlV1ParameterSpec extends StObject {
   
   /**
     * Required if type is `CATEGORICAL`. The list of possible categories.
     */
-  var categoricalValues: js.UndefOr[js.Array[String]] = js.native
+  var categoricalValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required if type is `DISCRETE`. A list of feasible points. The list
@@ -22,38 +20,38 @@ trait SchemaGoogleCloudMlV1ParameterSpec extends StObject {
     * might have possible settings of 1.5, 2.5, and 4.0. This list should not
     * contain more than 1,000 values.
     */
-  var discreteValues: js.UndefOr[js.Array[Double]] = js.native
+  var discreteValues: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Required if type is `DOUBLE` or `INTEGER`. This field should be unset if
     * type is `CATEGORICAL`. This value should be integers if type is
     * `INTEGER`.
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Required if type is `DOUBLE` or `INTEGER`. This field should be unset if
     * type is `CATEGORICAL`. This value should be integers if type is INTEGER.
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Required. The parameter name must be unique amongst all ParameterConfigs
     * in a HyperparameterSpec message. E.g., &quot;learning_rate&quot;.
     */
-  var parameterName: js.UndefOr[String] = js.native
+  var parameterName: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. How the parameter should be scaled to the hypercube. Leave
     * unset for categorical parameters. Some kind of scaling is strongly
     * recommended for real or integral parameters (e.g., `UNIT_LINEAR_SCALE`).
     */
-  var scaleType: js.UndefOr[String] = js.native
+  var scaleType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the parameter.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1ParameterSpec {
   

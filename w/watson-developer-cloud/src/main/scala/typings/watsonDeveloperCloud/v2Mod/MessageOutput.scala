@@ -2,30 +2,28 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Assistant output to be rendered or processed by the client. */
-@js.native
 trait MessageOutput extends StObject {
   
   /** An array of objects describing any actions requested by the dialog node. */
-  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.native
+  var actions: js.UndefOr[js.Array[DialogNodeAction]] = js.undefined
   
   /** Additional detailed information about a message response and how it was generated. */
-  var debug: js.UndefOr[MessageOutputDebug] = js.native
+  var debug: js.UndefOr[MessageOutputDebug] = js.undefined
   
   /** An array of entities identified in the user input. */
-  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[RuntimeEntity]] = js.undefined
   
   /** Output intended for any channel. It is the responsibility of the client application to implement the supported response types. */
-  var generic: js.UndefOr[js.Array[DialogRuntimeResponseGeneric]] = js.native
+  var generic: js.UndefOr[js.Array[DialogRuntimeResponseGeneric]] = js.undefined
   
   /** An array of intents recognized in the user input, sorted in descending order of confidence. */
-  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.native
+  var intents: js.UndefOr[js.Array[RuntimeIntent]] = js.undefined
   
   /** An object containing any custom properties included in the response. This object includes any arbitrary properties defined in the dialog JSON editor as part of the dialog node output. */
-  var user_defined: js.UndefOr[js.Object] = js.native
+  var user_defined: js.UndefOr[js.Object] = js.undefined
 }
 object MessageOutput {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyParametersRequest extends StObject {
   
   /**
     * Whether to apply instance-level parameter group to all nodes. If set to true, will explicitly restrict users from specifying any nodes, and apply parameter group updates to all
     * nodes within the instance.
     */
-  var applyAll: js.UndefOr[Boolean] = js.native
+  var applyAll: js.UndefOr[Boolean] = js.undefined
   
   /** Nodes to which we should apply the instance-level parameter group. */
-  var nodeIds: js.UndefOr[js.Array[String]] = js.native
+  var nodeIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ApplyParametersRequest {
   

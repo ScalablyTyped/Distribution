@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -44,9 +43,8 @@ object LoginIdTextBox {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.create")
-  @js.native
-  def create(model: IModel): LoginIdTextBox = js.native
+  @scala.inline
+  def create(model: IModel): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -57,9 +55,8 @@ object LoginIdTextBox {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: BuildingBlock): LoginIdTextBox = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: BuildingBlock): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -70,9 +67,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: BuildingBlock): LoginIdTextBox = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: BuildingBlock): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -83,9 +79,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: DataView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: DataView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -96,9 +91,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: DataView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: DataView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -109,9 +103,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: DataView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: DataView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -122,9 +115,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: DataView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: DataView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -135,9 +127,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: DivContainer): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: DivContainer): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -148,9 +139,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: DivContainer): LoginIdTextBox = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: DivContainer): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -161,9 +151,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: GroupBox): LoginIdTextBox = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: GroupBox): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -174,9 +163,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: GroupBox): LoginIdTextBox = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: GroupBox): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -187,9 +175,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: Header): LoginIdTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: Header): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -200,9 +187,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: Header): LoginIdTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: Header): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -213,9 +199,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: Header): LoginIdTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: Header): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -226,9 +211,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: Header): LoginIdTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: Header): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -239,9 +223,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: LayoutCallArgument): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -252,9 +235,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: LayoutCallArgument): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -265,9 +247,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: LayoutGridColumn): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -278,9 +259,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: LayoutGridColumn): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -291,9 +271,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: Layout): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: Layout): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -304,9 +283,8 @@ object LoginIdTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: Layout): LoginIdTextBox = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: Layout): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -317,9 +295,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LoginIdTextBox = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: ListViewTemplate): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -330,9 +307,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): LoginIdTextBox = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: ListViewTemplate): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -343,9 +319,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: ListView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: ListView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -356,9 +331,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: ListView): LoginIdTextBox = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: ListView): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -369,9 +343,8 @@ object LoginIdTextBox {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LoginIdTextBox = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: MasterDetailRegion): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -382,9 +355,8 @@ object LoginIdTextBox {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -395,9 +367,8 @@ object LoginIdTextBox {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: NativeLayoutContent): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -408,9 +379,8 @@ object LoginIdTextBox {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: NativeLayoutContent): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -421,9 +391,8 @@ object LoginIdTextBox {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -434,9 +403,8 @@ object LoginIdTextBox {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -447,9 +415,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: NavigationListItem): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: NavigationListItem): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -460,9 +427,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: NavigationListItem): LoginIdTextBox = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: NavigationListItem): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -473,9 +439,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LoginIdTextBox = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: ScrollContainerRegion): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -486,9 +451,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): LoginIdTextBox = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: ScrollContainerRegion): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -499,9 +463,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: Snippet): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: Snippet): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -512,9 +475,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: Snippet): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: Snippet): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -525,9 +487,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: SplitPane): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: SplitPane): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -538,9 +499,8 @@ object LoginIdTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: SplitPane): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: SplitPane): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -551,9 +511,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: SplitPane): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: SplitPane): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -564,9 +523,8 @@ object LoginIdTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: SplitPane): LoginIdTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: SplitPane): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -577,9 +535,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: TabPage): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: TabPage): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -590,9 +547,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: TabPage): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: TabPage): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -603,9 +559,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: TableCell): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: TableCell): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -616,9 +571,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: TableCell): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: TableCell): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -629,9 +583,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: TemplateGridContents): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -642,9 +595,8 @@ object LoginIdTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): LoginIdTextBox = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: TemplateGridContents): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -655,9 +607,8 @@ object LoginIdTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LoginIdTextBox = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: VerticalFlow): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -668,9 +619,8 @@ object LoginIdTextBox {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): LoginIdTextBox = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: WebLayoutContent): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /**
     * Creates and returns a new LoginIdTextBox instance in the SDK and on the server.
@@ -681,9 +631,8 @@ object LoginIdTextBox {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): LoginIdTextBox = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): LoginIdTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[LoginIdTextBox]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.LoginIdTextBox.structureTypeName")

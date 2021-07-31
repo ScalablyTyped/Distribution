@@ -8,53 +8,51 @@ import typings.baseui.baseuiStrings.search
 import typings.baseui.baseuiStrings.select
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clearable extends StObject {
   
   @JSName("$clearable")
-  var $clearable: Boolean = js.native
+  var $clearable: Boolean
   
   @JSName("$creatable")
-  var $creatable: Boolean = js.native
+  var $creatable: Boolean
   
   @JSName("$disabled")
-  var $disabled: Boolean = js.native
+  var $disabled: Boolean
   
   @JSName("$error")
-  var $error: Boolean = js.native
+  var $error: Boolean
   
   @JSName("$isFocused")
-  var $isFocused: Boolean = js.native
+  var $isFocused: Boolean
   
   @JSName("$isLoading")
-  var $isLoading: Boolean = js.native
+  var $isLoading: Boolean
   
   @JSName("$isOpen")
-  var $isOpen: Boolean = js.native
+  var $isOpen: Boolean
   
   @JSName("$isPseudoFocused")
-  var $isPseudoFocused: Boolean = js.native
+  var $isPseudoFocused: Boolean
   
   @JSName("$multi")
-  var $multi: Boolean = js.native
+  var $multi: Boolean
   
   @JSName("$positive")
-  var $positive: Boolean = js.native
+  var $positive: Boolean
   
   @JSName("$required")
-  var $required: Boolean = js.native
+  var $required: Boolean
   
   @JSName("$searchable")
-  var $searchable: Boolean = js.native
+  var $searchable: Boolean
   
   @JSName("$size")
-  var $size: mini | default_ | compact | large_ = js.native
+  var $size: mini | default_ | compact | large_
   
   @JSName("$type")
-  var $type: select | search = js.native
+  var $type: select | search
 }
 object Clearable {
   

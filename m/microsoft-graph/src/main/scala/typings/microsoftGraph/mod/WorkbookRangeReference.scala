@@ -2,13 +2,11 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookRangeReference extends StObject {
   
-  var address: js.UndefOr[NullableOption[String]] = js.native
+  var address: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object WorkbookRangeReference {
   

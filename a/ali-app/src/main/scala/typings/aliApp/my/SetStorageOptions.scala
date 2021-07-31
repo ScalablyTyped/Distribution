@@ -2,19 +2,18 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#region 缓存 https://docs.alipay.com/mini/api/storage
-@js.native
 trait SetStorageOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /** 需要存储的内容 */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /** 本地缓存中的指定的 key */
-  var key: String = js.native
+  var key: String
 }
 object SetStorageOptions {
   

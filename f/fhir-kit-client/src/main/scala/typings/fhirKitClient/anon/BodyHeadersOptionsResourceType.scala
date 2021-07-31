@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.AppointmentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyHeadersOptionsResourceType extends StObject {
   
-  var body: AppointmentResponse = js.native
+  var body: AppointmentResponse
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse
 }
 object BodyHeadersOptionsResourceType {
   
   @scala.inline
-  def apply(
-    body: AppointmentResponse,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.AppointmentResponse
-  ): BodyHeadersOptionsResourceType = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: AppointmentResponse): BodyHeadersOptionsResourceType = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "AppointmentResponse")
     __obj.asInstanceOf[BodyHeadersOptionsResourceType]
   }
   

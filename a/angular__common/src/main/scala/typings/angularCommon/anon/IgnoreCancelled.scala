@@ -2,13 +2,11 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgnoreCancelled extends StObject {
   
-  var ignoreCancelled: js.UndefOr[Boolean] = js.native
+  var ignoreCancelled: js.UndefOr[Boolean] = js.undefined
 }
 object IgnoreCancelled {
   

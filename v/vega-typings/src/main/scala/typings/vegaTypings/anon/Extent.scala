@@ -5,17 +5,17 @@ import typings.vegaTypings.schemeMod.ColorScheme
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Extent extends _RangeScheme {
+trait Extent
+  extends StObject
+     with _RangeScheme {
   
-  var count: js.UndefOr[Double | SignalRef] = js.native
+  var count: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var extent: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var extent: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var scheme: String | js.Array[String] | SignalRef | ColorScheme = js.native
+  var scheme: String | js.Array[String] | SignalRef | ColorScheme
 }
 object Extent {
   

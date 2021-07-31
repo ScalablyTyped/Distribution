@@ -2,36 +2,34 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMinuteUsageResponse extends StObject {
   
   /**
     * Estimated number of minutes remaining for an account, specific to the month being requested.
     */
-  var estimatedMinutesRemaining: js.UndefOr[Integer] = js.native
+  var estimatedMinutesRemaining: js.UndefOr[Integer] = js.undefined
   
   /**
     * Returns whether or not an account has signed up for the reserved minutes pricing plan, specific to the month being requested.
     */
-  var isReservedMinutesCustomer: js.UndefOr[Boolean] = js.native
+  var isReservedMinutesCustomer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Total number of reserved minutes allocated, specific to the month being requested.
     */
-  var totalReservedMinuteAllocation: js.UndefOr[Integer] = js.native
+  var totalReservedMinuteAllocation: js.UndefOr[Integer] = js.undefined
   
   /**
     * Total scheduled minutes for an account, specific to the month being requested.
     */
-  var totalScheduledMinutes: js.UndefOr[Integer] = js.native
+  var totalScheduledMinutes: js.UndefOr[Integer] = js.undefined
   
   /**
     * Upcoming minutes scheduled for an account, specific to the month being requested.
     */
-  var upcomingMinutesScheduled: js.UndefOr[Integer] = js.native
+  var upcomingMinutesScheduled: js.UndefOr[Integer] = js.undefined
 }
 object GetMinuteUsageResponse {
   

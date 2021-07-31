@@ -4,27 +4,38 @@ import typings.browserslist.browserslistBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
   
   @JSImport("browserslist/error", JSImport.Namespace)
   @js.native
-  class ^ protected () extends BrowserslistError {
+  class ^ protected ()
+    extends StObject
+       with BrowserslistError {
     def this(message: js.Any) = this()
+    
+    /* CompleteClass */
+    var browserslist: `true` = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
-  @js.native
-  trait BrowserslistError extends Error {
+  trait BrowserslistError
+    extends StObject
+       with Error {
     
-    var browserslist: `true` = js.native
+    var browserslist: `true`
   }
   object BrowserslistError {
     
     @scala.inline
-    def apply(browserslist: `true`, message: String, name: String): BrowserslistError = {
-      val __obj = js.Dynamic.literal(browserslist = browserslist.asInstanceOf[js.Any], message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String, name: String): BrowserslistError = {
+      val __obj = js.Dynamic.literal(browserslist = true, message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[BrowserslistError]
     }
     

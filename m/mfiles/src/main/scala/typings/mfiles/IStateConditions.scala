@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStateConditions extends StObject {
   
-  def Clone(): IStateConditions = js.native
+  def Clone(): IStateConditions
   
-  var PropertyConditions: Boolean = js.native
+  var PropertyConditions: Boolean
   
-  var PropertyConditionsDefinition: ISearchConditions = js.native
+  var PropertyConditionsDefinition: ISearchConditions
   
-  var VBScript: Boolean = js.native
+  var VBScript: Boolean
   
-  var VBScriptDefinition: String = js.native
+  var VBScriptDefinition: String
 }
 object IStateConditions {
   

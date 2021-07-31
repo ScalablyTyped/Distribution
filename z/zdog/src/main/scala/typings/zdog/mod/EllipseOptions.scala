@@ -2,21 +2,21 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EllipseOptions extends ShapeOptions {
+trait EllipseOptions
+  extends StObject
+     with ShapeOptions {
   
   /** @default 1 */
-  val diameter: js.UndefOr[Double] = js.native
+  val diameter: js.UndefOr[Double] = js.undefined
   
-  val height: js.UndefOr[Double] = js.native
+  val height: js.UndefOr[Double] = js.undefined
   
   /** @default 4 */
-  val quarters: js.UndefOr[QuartersValue] = js.native
+  val quarters: js.UndefOr[QuartersValue] = js.undefined
   
-  val width: js.UndefOr[Double] = js.native
+  val width: js.UndefOr[Double] = js.undefined
 }
 object EllipseOptions {
   

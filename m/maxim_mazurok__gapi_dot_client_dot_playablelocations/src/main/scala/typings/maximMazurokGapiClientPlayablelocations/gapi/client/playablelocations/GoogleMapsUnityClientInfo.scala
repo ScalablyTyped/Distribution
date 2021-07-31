@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsUnityClientInfo extends StObject {
   
   /** API client name and version. For example, the SDK calling the API. The exact format is up to the client. */
-  var apiClient: js.UndefOr[String] = js.native
+  var apiClient: js.UndefOr[String] = js.undefined
   
   /** Application ID, such as the package name on Android and the bundle identifier on iOS platforms. */
-  var applicationId: js.UndefOr[String] = js.native
+  var applicationId: js.UndefOr[String] = js.undefined
   
   /** Application version number, such as "1.2.3". The exact format is application-dependent. */
-  var applicationVersion: js.UndefOr[String] = js.native
+  var applicationVersion: js.UndefOr[String] = js.undefined
   
   /** Device model as reported by the device. The exact format is platform-dependent. */
-  var deviceModel: js.UndefOr[String] = js.native
+  var deviceModel: js.UndefOr[String] = js.undefined
   
   /**
     * Language code (in BCP-47 format) indicating the UI language of the client. Examples are "en", "en-US" or "ja-Latn". For more information, see
     * http://www.unicode.org/reports/tr35/#Unicode_locale_identifier.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Operating system name and version as reported by the OS. For example, "Mac OS X 10.10.4". The exact format is platform-dependent. */
-  var operatingSystem: js.UndefOr[String] = js.native
+  var operatingSystem: js.UndefOr[String] = js.undefined
   
   /** Build number/version of the operating system. e.g., the contents of android.os.Build.ID in Android, or the contents of sysctl "kern.osversion" in iOS. */
-  var operatingSystemBuild: js.UndefOr[String] = js.native
+  var operatingSystemBuild: js.UndefOr[String] = js.undefined
   
   /** Platform where the application is running. */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
 }
 object GoogleMapsUnityClientInfo {
   

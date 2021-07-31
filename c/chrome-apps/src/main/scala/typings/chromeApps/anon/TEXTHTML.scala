@@ -4,21 +4,19 @@ import typings.chromeApps.chromeAppsStrings.textHtml
 import typings.chromeApps.chromeAppsStrings.textPlain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TEXTHTML extends StObject {
   
-  var TEXT_HTML: textHtml = js.native
+  var TEXT_HTML: textHtml
   
-  var TEXT_PLAIN: textPlain = js.native
+  var TEXT_PLAIN: textPlain
 }
 object TEXTHTML {
   
   @scala.inline
-  def apply(TEXT_HTML: textHtml, TEXT_PLAIN: textPlain): TEXTHTML = {
-    val __obj = js.Dynamic.literal(TEXT_HTML = TEXT_HTML.asInstanceOf[js.Any], TEXT_PLAIN = TEXT_PLAIN.asInstanceOf[js.Any])
+  def apply(): TEXTHTML = {
+    val __obj = js.Dynamic.literal(TEXT_HTML = "textHtml", TEXT_PLAIN = "textPlain")
     __obj.asInstanceOf[TEXTHTML]
   }
   

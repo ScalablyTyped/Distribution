@@ -2,41 +2,41 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventMessage extends Message {
+trait EventMessage
+  extends StObject
+     with Message {
   
-  var endDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
   /**
     * The event associated with the event message. The assumption for attendees or room resources is that the Calendar
     * Attendant is set to automatically update the calendar with an event when meeting request event messages arrive.
     * Navigation property. Read-only.
     */
-  var event: js.UndefOr[NullableOption[Event]] = js.native
+  var event: js.UndefOr[NullableOption[Event]] = js.undefined
   
-  var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAllDay: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // True if this meeting request is accessible to a delegate, false otherwise. Default is false.
-  var isDelegated: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isDelegated: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var isOutOfDate: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isOutOfDate: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var location: js.UndefOr[NullableOption[Location]] = js.native
+  var location: js.UndefOr[NullableOption[Location]] = js.undefined
   
   /**
     * The type of event message: none, meetingRequest, meetingCancelled, meetingAccepted, meetingTenativelyAccepted,
     * meetingDeclined.
     */
-  var meetingMessageType: js.UndefOr[NullableOption[MeetingMessageType]] = js.native
+  var meetingMessageType: js.UndefOr[NullableOption[MeetingMessageType]] = js.undefined
   
-  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.native
+  var recurrence: js.UndefOr[NullableOption[PatternedRecurrence]] = js.undefined
   
-  var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[DateTimeTimeZone]] = js.undefined
   
-  var `type`: js.UndefOr[NullableOption[EventType]] = js.native
+  var `type`: js.UndefOr[NullableOption[EventType]] = js.undefined
 }
 object EventMessage {
   

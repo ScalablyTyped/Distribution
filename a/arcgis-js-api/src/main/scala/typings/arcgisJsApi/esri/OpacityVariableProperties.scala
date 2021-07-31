@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpacityVariableProperties extends VisualVariableProperties {
+trait OpacityVariableProperties
+  extends StObject
+     with VisualVariableProperties {
   
   /**
     * Name of the numeric attribute field by which to normalize the data.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#normalizationField)
     */
-  var normalizationField: js.UndefOr[String] = js.native
+  var normalizationField: js.UndefOr[String] = js.undefined
   
   /**
     * An array of objects that defines the opacity to apply to features in a layer in a sequence of stops.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-OpacityVariable.html#stops)
     */
-  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.native
+  var stops: js.UndefOr[js.Array[OpacityStopProperties]] = js.undefined
 }
 object OpacityVariableProperties {
   

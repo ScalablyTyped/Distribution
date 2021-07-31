@@ -2,49 +2,47 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Authorassociation extends StObject {
   
-  var _links: Html = js.native
+  var _links: Html
   
-  var author_association: String = js.native
+  var author_association: String
   
-  var body: String = js.native
+  var body: String
   
-  var commit_id: String = js.native
+  var commit_id: String
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var diff_hunk: String = js.native
+  var diff_hunk: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var in_reply_to_id: Double = js.native
+  var in_reply_to_id: Double
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var original_commit_id: String = js.native
+  var original_commit_id: String
   
-  var original_position: Double = js.native
+  var original_position: Double
   
-  var path: String = js.native
+  var path: String
   
-  var position: Double = js.native
+  var position: Double
   
-  var pull_request_review_id: Double = js.native
+  var pull_request_review_id: Double
   
-  var pull_request_url: String = js.native
+  var pull_request_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var user: Avatarurl = js.native
+  var user: Avatarurl
 }
 object Authorassociation {
   

@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.Cartesian3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstTangent extends StObject {
   
-  var firstTangent: js.UndefOr[Cartesian3] = js.native
+  var firstTangent: js.UndefOr[Cartesian3] = js.undefined
   
-  var lastTangent: js.UndefOr[Cartesian3] = js.native
+  var lastTangent: js.UndefOr[Cartesian3] = js.undefined
   
-  var points: js.Array[Cartesian3] = js.native
+  var points: js.Array[Cartesian3]
   
-  var times: js.Array[Double] = js.native
+  var times: js.Array[Double]
 }
 object FirstTangent {
   

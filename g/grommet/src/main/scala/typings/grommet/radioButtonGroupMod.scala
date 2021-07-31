@@ -12,7 +12,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioButtonGroupMod {
@@ -22,35 +21,34 @@ object radioButtonGroupMod {
   @js.native
   class RadioButtonGroup protected ()
     extends Component[
-          RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/RadioButtonGroup", "RadioButtonGroup")
   @js.native
   val RadioButtonGroup: ComponentClass[
-    RadioButtonGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    RadioButtonGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait RadioButtonGroupProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.undefined
     
-    var options: js.Array[String | Double | Boolean | Disabled] = js.native
+    var options: js.Array[String | Double | Boolean | Disabled]
     
-    var value: js.UndefOr[String | Double | Boolean | js.Object] = js.native
+    var value: js.UndefOr[String | Double | Boolean | js.Object] = js.undefined
   }
   object RadioButtonGroupProps {
     

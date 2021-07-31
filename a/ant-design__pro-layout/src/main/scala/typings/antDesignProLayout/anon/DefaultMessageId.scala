@@ -2,15 +2,13 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultMessageId extends StObject {
   
-  var defaultMessage: js.UndefOr[String] = js.native
+  var defaultMessage: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object DefaultMessageId {
   

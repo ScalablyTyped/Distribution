@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @publicApi
   */
-@js.native
 trait ElementRef[T] extends StObject {
   
   /**
@@ -41,7 +39,7 @@ trait ElementRef[T] extends StObject {
     * </div>
     *
     */
-  var nativeElement: T = js.native
+  var nativeElement: T
 }
 object ElementRef {
   
@@ -52,7 +50,7 @@ object ElementRef {
   }
   
   @scala.inline
-  implicit class ElementRefMutableBuilder[Self <: ElementRef[_], T] (val x: Self with ElementRef[T]) extends AnyVal {
+  implicit class ElementRefMutableBuilder[Self <: ElementRef[?], T] (val x: Self & ElementRef[T]) extends AnyVal {
     
     @scala.inline
     def setNativeElement(value: T): Self = StObject.set(x, "nativeElement", value.asInstanceOf[js.Any])

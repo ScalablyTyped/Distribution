@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gaugeMod {
@@ -17,20 +16,19 @@ object gaugeMod {
   
   type Gauge = Component[IGaugeProps, js.Any, js.Any]
   
-  @js.native
   trait IGaugeProps extends StObject {
     
-    var bgColor: js.UndefOr[Double] = js.native
+    var bgColor: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var percent: Double = js.native
+    var percent: Double
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var title: ReactNode = js.native
+    var title: ReactNode
   }
   object IGaugeProps {
     

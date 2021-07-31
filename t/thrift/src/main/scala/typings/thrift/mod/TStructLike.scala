@@ -2,15 +2,13 @@ package typings.thrift.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TStructLike extends StObject {
   
-  def read(input: TProtocol): Unit = js.native
+  def read(input: TProtocol): Unit
   
-  def write(output: TProtocol): Unit = js.native
+  def write(output: TProtocol): Unit
 }
 object TStructLike {
   

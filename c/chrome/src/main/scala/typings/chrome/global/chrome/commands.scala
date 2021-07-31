@@ -4,7 +4,6 @@ import typings.chrome.chrome.commands.Command
 import typings.chrome.chrome.commands.CommandEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -21,9 +20,8 @@ object commands {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("chrome.commands.getAll")
-  @js.native
-  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = js.native
+  @scala.inline
+  def getAll(callback: js.Function1[/* commands */ js.Array[Command], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("chrome.commands.onCommand")
   @js.native

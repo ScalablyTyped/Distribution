@@ -2,18 +2,16 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBridgeDestinationProperties extends StObject {
   
-  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.native
+  var errorHandlingConfig: js.UndefOr[ErrorHandlingConfig] = js.undefined
   
   /**
     *  The object specified in the Amazon EventBridge flow destination. 
     */
-  var `object`: Object = js.native
+  var `object`: Object
 }
 object EventBridgeDestinationProperties {
   

@@ -9,7 +9,6 @@ import typings.heremaps.H.service.venues.TileProvider.Options
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object venues {
@@ -19,7 +18,8 @@ object venues {
     */
   @js.native
   trait Service
-    extends EventTarget
+    extends StObject
+       with EventTarget
        with IConfigurable {
     
     /**
@@ -62,25 +62,30 @@ object venues {
     object State extends StObject {
       
       @js.native
-      sealed trait ERROR extends State
+      sealed trait ERROR
+        extends StObject
+           with State
       
       @js.native
-      sealed trait INIT extends State
+      sealed trait INIT
+        extends StObject
+           with State
       
       @js.native
-      sealed trait READY extends State
+      sealed trait READY
+        extends StObject
+           with State
     }
     
     /**
       * @property subDomain {string=} - the sub-domain of the Venue Maps service relative to the platform's base URL, default is 'venue.maps'
       * @property path {string=} - the path to append after host name when making requests to the Venue Maps API, default is empty
       */
-    @js.native
     trait Options extends StObject {
       
-      var path: js.UndefOr[String] = js.native
+      var path: js.UndefOr[String] = js.undefined
       
-      var subDomain: js.UndefOr[String] = js.native
+      var subDomain: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -112,7 +117,9 @@ object venues {
     * The class represents the building in the venue hiearachy (see H.service.venues.Venue) and holds floors that belong to the building.
     */
   @js.native
-  trait Building extends Group {
+  trait Building
+    extends StObject
+       with Group {
     
     /**
       * Method returns the floor (see H.service.venues.Floor) if one was already loaded. This method doesn't make attempt to fetch the floor data.
@@ -145,7 +152,9 @@ object venues {
     * that belong to this floor.
     */
   @js.native
-  trait Floor extends Group {
+  trait Floor
+    extends StObject
+       with Group {
     
     /**
       * Method returns parent object - building (see H.service.venues.Building) of the floor.
@@ -217,7 +226,9 @@ object venues {
     * This class represents a Venue Maps tile provider which requests venues tiles from a platform venue tile service.
     */
   @js.native
-  trait TileProvider extends RemoteTileProvider {
+  trait TileProvider
+    extends StObject
+       with RemoteTileProvider {
     
     /**
       * Method returns the floor level that provider uses for tile fetching.
@@ -240,14 +251,13 @@ object venues {
       * @property onSpaceCreated {function(H.service.venues.Space)=} - A callback function that is called on every created space (see H.service.venues.Space) object. The function can be
       * used for space object styling.
       */
-    @js.native
     trait Options extends StObject {
       
-      var onSpaceCreated: js.UndefOr[js.Function1[/* space */ Space, Unit]] = js.native
+      var onSpaceCreated: js.UndefOr[js.Function1[/* space */ Space, Unit]] = js.undefined
       
-      var pixelRatio: js.UndefOr[Double] = js.native
+      var pixelRatio: js.UndefOr[Double] = js.undefined
       
-      var tileCacheSize: js.UndefOr[Double] = js.native
+      var tileCacheSize: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -287,7 +297,9 @@ object venues {
     * and reside inside floor containers.
     */
   @js.native
-  trait Venue extends Group {
+  trait Venue
+    extends StObject
+       with Group {
     
     /**
       * Method returns the building object, that belongs to the venue, with the given ID . The method doesn't attempt to fetch building data.

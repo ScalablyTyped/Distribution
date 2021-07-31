@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Storage.Pickers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object PickerViewMode extends StObject {
   
   /** A list of items. */
   @js.native
-  sealed trait list extends PickerViewMode
+  sealed trait list
+    extends StObject
+       with PickerViewMode
   
   /** A set of thumbnail images. */
   @js.native
-  sealed trait thumbnail extends PickerViewMode
+  sealed trait thumbnail
+    extends StObject
+       with PickerViewMode
 }

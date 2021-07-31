@@ -4,7 +4,6 @@ import typings.materialTextfield.anon.PartialMDCTextFieldIconAd
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconIndexMod {
@@ -13,7 +12,7 @@ object iconIndexMod {
   @js.native
   class MDCTextFieldIcon protected ()
     extends typings.materialTextfield.iconComponentMod.MDCTextFieldIcon {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation,
@@ -23,9 +22,12 @@ object iconIndexMod {
   /* static members */
   object MDCTextFieldIcon {
     
-    @JSImport("@material/textfield/icon/index", "MDCTextFieldIcon.attachTo")
+    @JSImport("@material/textfield/icon/index", "MDCTextFieldIcon")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.iconComponentMod.MDCTextFieldIcon]
   }
   
   @JSImport("@material/textfield/icon/index", "MDCTextFieldIconFoundation")

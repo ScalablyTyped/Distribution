@@ -3,33 +3,32 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.DeclareOpaqueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait DeclareOpaqueType_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait DeclareOpaqueType_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var supertype: FlowType | Null = js.native
+  var supertype: FlowType | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_DeclareOpaqueType_ : DeclareOpaqueType = js.native
+  var type_DeclareOpaqueType_ : DeclareOpaqueType
 }
 object DeclareOpaqueType_ {
   
   @scala.inline
-  def apply(id: Identifier_, `type`: DeclareOpaqueType): DeclareOpaqueType_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_): DeclareOpaqueType_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, supertype = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("DeclareOpaqueType")
     __obj.asInstanceOf[DeclareOpaqueType_]
   }
   

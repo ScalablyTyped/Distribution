@@ -10,9 +10,9 @@ A wrapper around Sauce Labs REST API
 | ------------------ | :-------------: |
 | Full name          | saucelabs |
 | Keywords           | - |
-| # releases         | 48 |
-| # dependents       | 100 |
-| # downloads        | 62220706 |
+| # releases         | 55 |
+| # dependents       | 102 |
+| # downloads        | 67290694 |
 | # stars            | 1 |
 
 ## Links

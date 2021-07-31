@@ -6,7 +6,6 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssBaselineCssBaselineMod extends Shortcut {
@@ -17,10 +16,9 @@ object cssBaselineCssBaselineMod extends Shortcut {
   
   type CssBaselineClassKey = `@global`
   
-  @js.native
   trait CssBaselineProps extends StObject {
     
-    var children: js.UndefOr[ReactElement] = js.native
+    var children: js.UndefOr[ReactElement] = js.undefined
   }
   object CssBaselineProps {
     

@@ -5,14 +5,15 @@ import typings.inversify.interfacesMod.interfaces.BindingOnSyntax
 import typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideDoneSyntax
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provideOnSyntaxMod {
   
   @JSImport("inversify-binding-decorators/dts/syntax/provide_on_syntax", JSImport.Default)
   @js.native
-  class default[T] protected () extends ProvideOnSyntax[T] {
+  class default[T] protected ()
+    extends StObject
+       with ProvideOnSyntax[T] {
     def this(
       bindingOnSyntax: js.Function2[/* bind */ Bind, /* target */ js.Any, BindingOnSyntax[T]],
       provideDoneSyntax: ProvideDoneSyntax
@@ -21,7 +22,8 @@ object provideOnSyntaxMod {
   
   @js.native
   trait ProvideOnSyntax[T]
-    extends typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideOnSyntax[T] {
+    extends StObject
+       with typings.inversifyBindingDecorators.interfacesMod.interfaces.ProvideOnSyntax[T] {
     
     var _bindingOnSyntax: js.Any = js.native
     

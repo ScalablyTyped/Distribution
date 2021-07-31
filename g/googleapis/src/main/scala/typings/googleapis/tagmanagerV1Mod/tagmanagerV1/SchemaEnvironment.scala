@@ -2,7 +2,6 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,68 +9,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * delete and update environments of type USER, but can only update the
   * enable_debug and url fields of environments of other types.
   */
-@js.native
 trait SchemaEnvironment extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The environment authorization code.
     */
-  var authorizationCode: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.undefined
   
   /**
     * The last update time-stamp for the authorization code.
     */
-  var authorizationTimestampMs: js.UndefOr[String] = js.native
+  var authorizationTimestampMs: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
-  var containerVersionId: js.UndefOr[String] = js.native
+  var containerVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * The environment description. Can be set or changed only on USER type
     * environments.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to enable debug by default on for the environment.
     */
-  var enableDebug: js.UndefOr[Boolean] = js.native
+  var enableDebug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * GTM Environment ID uniquely identifies the GTM Environment.
     */
-  var environmentId: js.UndefOr[String] = js.native
+  var environmentId: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM environment as computed at storage time. This
     * value is recomputed whenever the environment is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The environment display name. Can be set or changed only on USER type
     * environments.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this environment.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Default preview page url for the environment.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaEnvironment {
   

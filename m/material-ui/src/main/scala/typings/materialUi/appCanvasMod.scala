@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appCanvasMod {
@@ -18,8 +17,9 @@ object appCanvasMod {
   trait AppCanvas
     extends Component[AppCanvasProps, js.Object, js.Any]
   
-  @js.native
-  trait AppCanvasProps extends Props[AppCanvas]
+  trait AppCanvasProps
+    extends StObject
+       with Props[AppCanvas]
   object AppCanvasProps {
     
     @scala.inline

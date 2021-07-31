@@ -2,34 +2,32 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemReference extends StObject {
   
   // Unique identifier of the drive instance that contains the item. Read-only.
-  var driveId: js.UndefOr[NullableOption[String]] = js.native
+  var driveId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Identifies the type of drive. See [drive][] resource for values.
-  var driveType: js.UndefOr[NullableOption[String]] = js.native
+  var driveType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique identifier of the item in the drive. Read-only.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The name of the item being referenced. Read-only.
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Path that can be used to navigate to the item. Read-only.
-  var path: js.UndefOr[NullableOption[String]] = js.native
+  var path: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A unique identifier for a shared resource that can be accessed via the [Shares][] API.
-  var shareId: js.UndefOr[NullableOption[String]] = js.native
+  var shareId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Returns identifiers useful for SharePoint REST compatibility. Read-only.
-  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.native
+  var sharepointIds: js.UndefOr[NullableOption[SharepointIds]] = js.undefined
   
-  var siteId: js.UndefOr[NullableOption[String]] = js.native
+  var siteId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ItemReference {
   

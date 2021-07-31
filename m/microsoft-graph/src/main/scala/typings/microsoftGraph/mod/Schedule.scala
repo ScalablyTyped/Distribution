@@ -2,62 +2,62 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Schedule extends Entity {
+trait Schedule
+  extends StObject
+     with Entity {
   
   // Indicates whether the schedule is enabled for the team. Required.
-  var enabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var enabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var offerShiftRequests: js.UndefOr[NullableOption[js.Array[OfferShiftRequest]]] = js.native
+  var offerShiftRequests: js.UndefOr[NullableOption[js.Array[OfferShiftRequest]]] = js.undefined
   
   // Indicates whether offer shift requests are enabled for the schedule.
-  var offerShiftRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var offerShiftRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
-  var openShiftChangeRequests: js.UndefOr[NullableOption[js.Array[OpenShiftChangeRequest]]] = js.native
+  var openShiftChangeRequests: js.UndefOr[NullableOption[js.Array[OpenShiftChangeRequest]]] = js.undefined
   
-  var openShifts: js.UndefOr[NullableOption[js.Array[OpenShift]]] = js.native
+  var openShifts: js.UndefOr[NullableOption[js.Array[OpenShift]]] = js.undefined
   
   // Indicates whether open shifts are enabled for the schedule.
-  var openShiftsEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var openShiftsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The status of the schedule provisioning. The possible values are notStarted, running, completed, failed.
-  var provisionStatus: js.UndefOr[NullableOption[OperationStatus]] = js.native
+  var provisionStatus: js.UndefOr[NullableOption[OperationStatus]] = js.undefined
   
   // Additional information about why schedule provisioning failed.
-  var provisionStatusCode: js.UndefOr[NullableOption[String]] = js.native
+  var provisionStatusCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The logical grouping of users in the schedule (usually by role).
-  var schedulingGroups: js.UndefOr[NullableOption[js.Array[SchedulingGroup]]] = js.native
+  var schedulingGroups: js.UndefOr[NullableOption[js.Array[SchedulingGroup]]] = js.undefined
   
   // The shifts in the schedule.
-  var shifts: js.UndefOr[NullableOption[js.Array[Shift]]] = js.native
+  var shifts: js.UndefOr[NullableOption[js.Array[Shift]]] = js.undefined
   
-  var swapShiftsChangeRequests: js.UndefOr[NullableOption[js.Array[SwapShiftsChangeRequest]]] = js.native
+  var swapShiftsChangeRequests: js.UndefOr[NullableOption[js.Array[SwapShiftsChangeRequest]]] = js.undefined
   
   // Indicates whether swap shifts requests are enabled for the schedule.
-  var swapShiftsRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var swapShiftsRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether time clock is enabled for the schedule.
-  var timeClockEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var timeClockEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The set of reasons for a time off in the schedule.
-  var timeOffReasons: js.UndefOr[NullableOption[js.Array[TimeOffReason]]] = js.native
+  var timeOffReasons: js.UndefOr[NullableOption[js.Array[TimeOffReason]]] = js.undefined
   
-  var timeOffRequests: js.UndefOr[NullableOption[js.Array[TimeOffRequest]]] = js.native
+  var timeOffRequests: js.UndefOr[NullableOption[js.Array[TimeOffRequest]]] = js.undefined
   
   // Indicates whether time off requests are enabled for the schedule.
-  var timeOffRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var timeOffRequestsEnabled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates the time zone of the schedule team using tz database format. Required.
-  var timeZone: js.UndefOr[NullableOption[String]] = js.native
+  var timeZone: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The instances of times off in the schedule.
-  var timesOff: js.UndefOr[NullableOption[js.Array[TimeOff]]] = js.native
+  var timesOff: js.UndefOr[NullableOption[js.Array[TimeOff]]] = js.undefined
   
-  var workforceIntegrationIds: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var workforceIntegrationIds: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
 }
 object Schedule {
   

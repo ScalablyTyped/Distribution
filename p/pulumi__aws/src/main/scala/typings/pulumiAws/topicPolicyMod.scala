@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object topicPolicyMod {
@@ -38,6 +37,10 @@ object topicPolicyMod {
   /* static members */
   object TopicPolicy {
     
+    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TopicPolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object topicPolicyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TopicPolicy = js.native
-    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TopicPolicy = js.native
-    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicPolicyState): TopicPolicy = js.native
-    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TopicPolicyState, opts: CustomResourceOptions): TopicPolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicPolicyState): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TopicPolicyState, opts: CustomResourceOptions): TopicPolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TopicPolicy]
     
     /**
       * Returns true if the given object is an instance of TopicPolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sns/topicPolicy", "TopicPolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sns/topicPolicy.TopicPolicy */ Boolean]
   }
   
-  @js.native
   trait TopicPolicyArgs extends StObject {
     
     /**
       * The ARN of the SNS topic
       */
-    val arn: Input[String] = js.native
+    val arn: Input[String]
     
     /**
       * The fully-formed AWS policy as JSON.
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object TopicPolicyArgs {
     
@@ -101,18 +98,17 @@ object topicPolicyMod {
     }
   }
   
-  @js.native
   trait TopicPolicyState extends StObject {
     
     /**
       * The ARN of the SNS topic
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The fully-formed AWS policy as JSON.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object TopicPolicyState {
     

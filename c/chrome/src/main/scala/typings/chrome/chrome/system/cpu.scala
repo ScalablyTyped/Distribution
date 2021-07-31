@@ -2,7 +2,6 @@ package typings.chrome.chrome.system
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -15,26 +14,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object cpu {
   
-  @js.native
   trait CpuInfo extends StObject {
     
     /** The architecture name of the processors. */
-    var archName: String = js.native
+    var archName: String
     
     /**
       * A set of feature codes indicating some of the processor's capabilities.
       * The currently supported codes are "mmx", "sse", "sse2", "sse3", "ssse3", "sse4_1", "sse4_2", and "avx".
       */
-    var features: js.Array[String] = js.native
+    var features: js.Array[String]
     
     /** The model name of the processors. */
-    var modelName: String = js.native
+    var modelName: String
     
     /** The number of logical processors. */
-    var numOfProcessors: Double = js.native
+    var numOfProcessors: Double
     
     /** Information about each logical processor. */
-    var processors: js.Array[ProcessorInfo] = js.native
+    var processors: js.Array[ProcessorInfo]
   }
   object CpuInfo {
     
@@ -76,11 +74,10 @@ object cpu {
     }
   }
   
-  @js.native
   trait ProcessorInfo extends StObject {
     
     /** Cumulative usage info for this logical processor. */
-    var usage: ProcessorUsage = js.native
+    var usage: ProcessorUsage
   }
   object ProcessorInfo {
     
@@ -98,20 +95,19 @@ object cpu {
     }
   }
   
-  @js.native
   trait ProcessorUsage extends StObject {
     
     /** The cumulative time spent idle by this processor. */
-    var idle: Double = js.native
+    var idle: Double
     
     /** The cumulative time used by kernel programs on this processor. */
-    var kernel: Double = js.native
+    var kernel: Double
     
     /** The total cumulative time for this processor. This value is equal to user + kernel + idle. */
-    var total: Double = js.native
+    var total: Double
     
     /** The cumulative time used by userspace programs on this processor. */
-    var user: Double = js.native
+    var user: Double
   }
   object ProcessorUsage {
     

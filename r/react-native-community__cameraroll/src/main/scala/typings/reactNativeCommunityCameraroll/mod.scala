@@ -7,66 +7,61 @@ import typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStri
 import typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-native-community/cameraroll", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Delete a photo from the camera roll or media library. photoUris is an array of photo uri's.
     */
-  @JSImport("@react-native-community/cameraroll", "deletePhotos")
-  @js.native
-  def deletePhotos(photoUris: js.Array[String]): js.Promise[Boolean] = js.native
+  @scala.inline
+  def deletePhotos(photoUris: js.Array[String]): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("deletePhotos")(photoUris.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
-  @JSImport("@react-native-community/cameraroll", "getAlbums")
-  @js.native
-  def getAlbums(params: GetAlbumsParams): js.Promise[js.Array[Album]] = js.native
+  @scala.inline
+  def getAlbums(params: GetAlbumsParams): js.Promise[js.Array[Album]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAlbums")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Album]]]
   
   /**
     * Returns a Promise with photo identifier objects from the local camera
     * roll of the device matching shape defined by `getPhotosReturnChecker`.
     */
-  @JSImport("@react-native-community/cameraroll", "getPhotos")
-  @js.native
-  def getPhotos(params: GetPhotosParams): js.Promise[PhotoIdentifiersPage] = js.native
+  @scala.inline
+  def getPhotos(params: GetPhotosParams): js.Promise[PhotoIdentifiersPage] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPhotos")(params.asInstanceOf[js.Any]).asInstanceOf[js.Promise[PhotoIdentifiersPage]]
   
   /**
     * Saves the photo or video to the camera roll or photo library.
     */
-  @JSImport("@react-native-community/cameraroll", "save")
-  @js.native
-  def save(tag: String): js.Promise[String] = js.native
-  @JSImport("@react-native-community/cameraroll", "save")
-  @js.native
-  def save(tag: String, options: SaveToCameraRollOptions): js.Promise[String] = js.native
+  @scala.inline
+  def save(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def save(tag: String, options: SaveToCameraRollOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(tag.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   /**
     * `CameraRoll.saveImageWithTag()` is deprecated. Use `CameraRoll.saveToCameraRoll()` instead.
     */
-  @JSImport("@react-native-community/cameraroll", "saveImageWithTag")
-  @js.native
-  def saveImageWithTag(tag: String): js.Promise[String] = js.native
+  @scala.inline
+  def saveImageWithTag(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveImageWithTag")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /**
     * Saves the photo or video to the camera roll or photo library.
     */
-  @JSImport("@react-native-community/cameraroll", "saveToCameraRoll")
-  @js.native
-  def saveToCameraRoll(tag: String): js.Promise[String] = js.native
-  @JSImport("@react-native-community/cameraroll", "saveToCameraRoll")
-  @js.native
-  def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = js.native
-  @JSImport("@react-native-community/cameraroll", "saveToCameraRoll")
-  @js.native
-  def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = js.native
+  @scala.inline
+  def saveToCameraRoll(tag: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @js.native
+  @scala.inline
+  def saveToCameraRoll_photo(tag: String, `type`: photo): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def saveToCameraRoll_video(tag: String, `type`: video): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("saveToCameraRoll")(tag.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   trait Album extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var title: String = js.native
+    var title: String
   }
   object Album {
     
@@ -105,10 +100,9 @@ object mod {
     def Videos: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos = "Videos".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.Videos]
   }
   
-  @js.native
   trait GetAlbumsParams extends StObject {
     
-    var assetType: js.UndefOr[AssetType] = js.native
+    var assetType: js.UndefOr[AssetType] = js.undefined
   }
   object GetAlbumsParams {
     
@@ -132,7 +126,6 @@ object mod {
   /**
     * Shape of the param arg for the `getPhotosFast` function.
     */
-  @js.native
   trait GetPhotosParams extends StObject {
     
     /**
@@ -141,53 +134,53 @@ object mod {
       * slightly on iOS. An alternative is just using the `fromTime` and `toTime`
       * filters, which have no such impact.
       */
-    var after: js.UndefOr[String] = js.native
+    var after: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies filter on asset type
       */
-    var assetType: js.UndefOr[AssetType] = js.native
+    var assetType: js.UndefOr[AssetType] = js.undefined
     
     /**
       * The number of photos wanted in reverse order of the photo application
       * (i.e. most recent first).
       */
-    var first: Double = js.native
+    var first: Double
     
     /**
       * Filter by creation time with a timestamp in milliseconds. This time is
       * exclusive, so we'll select all photos with `timestamp > fromTime`.
       */
-    var fromTime: js.UndefOr[Double] = js.native
+    var fromTime: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies filter on group names, like 'Recent Photos' or custom album
       * titles.
       */
-    var groupName: js.UndefOr[String] = js.native
+    var groupName: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies which group types to filter the results to.
       */
-    var groupTypes: js.UndefOr[GroupType] = js.native
+    var groupTypes: js.UndefOr[GroupType] = js.undefined
     
     /**
       * Specific fields in the output that we want to include, even though they
       * might have some performance impact.
       */
-    var include: js.UndefOr[js.Array[Include]] = js.native
+    var include: js.UndefOr[js.Array[Include]] = js.undefined
     
     /**
       * Filter by mimetype (e.g. image/jpeg). Note that using this will reduce
       * performance slightly on iOS.
       */
-    var mimeTypes: js.UndefOr[js.Array[String]] = js.native
+    var mimeTypes: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Filter by creation time with a timestamp in milliseconds. This time is
       * inclusive, so we'll select all photos with `timestamp <= toTime`.
       */
-    var toTime: js.UndefOr[Double] = js.native
+    var toTime: js.UndefOr[Double] = js.undefined
   }
   object GetPhotosParams {
     
@@ -319,10 +312,9 @@ object mod {
     def playableDuration: typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration = "playableDuration".asInstanceOf[typings.reactNativeCommunityCameraroll.reactNativeCommunityCamerarollStrings.playableDuration]
   }
   
-  @js.native
   trait PhotoIdentifier extends StObject {
     
-    var node: Groupname = js.native
+    var node: Groupname
   }
   object PhotoIdentifier {
     
@@ -340,12 +332,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PhotoIdentifiersPage extends StObject {
     
-    var edges: js.Array[PhotoIdentifier] = js.native
+    var edges: js.Array[PhotoIdentifier]
     
-    var page_info: Endcursor = js.native
+    var page_info: Endcursor
   }
   object PhotoIdentifiersPage {
     
@@ -369,12 +360,11 @@ object mod {
     }
   }
   
-  @js.native
   trait SaveToCameraRollOptions extends StObject {
     
-    var album: js.UndefOr[String] = js.native
+    var album: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[photo | video | auto] = js.native
+    var `type`: js.UndefOr[photo | video | auto] = js.undefined
   }
   object SaveToCameraRollOptions {
     

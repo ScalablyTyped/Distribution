@@ -3,18 +3,17 @@ package typings.vegaLite.srcDataMod
 import typings.vegaLite.vegaLiteBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SphereGenerator
-  extends Generator
-     with GeneratorBase {
+  extends StObject
+     with GeneratorBase
+     with Generator {
   
   /**
     * Generate sphere GeoJSON data for the full globe.
     */
-  var sphere: `true` | js.Object = js.native
+  var sphere: `true` | js.Object
 }
 object SphereGenerator {
   

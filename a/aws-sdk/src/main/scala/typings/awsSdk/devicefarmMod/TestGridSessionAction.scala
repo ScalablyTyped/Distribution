@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestGridSessionAction extends StObject {
   
   /**
     * The action taken by the session.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * The time, in milliseconds, that the action took to complete in the browser.
     */
-  var duration: js.UndefOr[Long] = js.native
+  var duration: js.UndefOr[Long] = js.undefined
   
   /**
     * HTTP method that the browser used to make the request.
     */
-  var requestMethod: js.UndefOr[String] = js.native
+  var requestMethod: js.UndefOr[String] = js.undefined
   
   /**
     * The time that the session invoked the action.
     */
-  var started: js.UndefOr[DateTime] = js.native
+  var started: js.UndefOr[DateTime] = js.undefined
   
   /**
     * HTTP status code returned to the browser when the action was taken.
     */
-  var statusCode: js.UndefOr[String] = js.native
+  var statusCode: js.UndefOr[String] = js.undefined
 }
 object TestGridSessionAction {
   

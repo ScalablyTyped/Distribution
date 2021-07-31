@@ -2,10 +2,8 @@ package typings.gatsbyPluginUtils.pluginOptionsSchemaJoiTypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenameOptions extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait RenameOptions extends StObject {
     *
     * @default false
     */
-  var alias: js.UndefOr[Boolean] = js.native
+  var alias: js.UndefOr[Boolean] = js.undefined
   
   /**
     * if true, skip renaming of a key if it's undefined.
     *
     * @default false
     */
-  var ignoreUndefined: js.UndefOr[Boolean] = js.native
+  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
   
   /**
     * if true, allows renaming multiple keys to the same destination where the last rename wins.
     *
     * @default false
     */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * if true, allows renaming a key over an existing key.
     *
     * @default false
     */
-  var `override`: js.UndefOr[Boolean] = js.native
+  var `override`: js.UndefOr[Boolean] = js.undefined
 }
 object RenameOptions {
   

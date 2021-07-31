@@ -2,36 +2,34 @@ package typings.rbx.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<rbx.rbx/base/helpers/variables.VariablesDefinitions> */
-@js.native
 trait PartialVariablesDefinitio extends StObject {
   
-  var badgeSizes: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var badgeSizes: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var breakpoints: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var breakpoints: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var breakpointsLimited: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var breakpointsLimited: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var colors: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var colors: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var displays: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var displays: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var floatPulledAlignments: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var floatPulledAlignments: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var shades: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var shades: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var textAlignments: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var textAlignments: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var textSizes: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var textSizes: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var textTransforms: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var textTransforms: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var textWeights: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var textWeights: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
   
-  var tooltipPositions: js.UndefOr[ReadonlyArraystringnumber] = js.native
+  var tooltipPositions: js.UndefOr[ReadonlyArraystringnumber] = js.undefined
 }
 object PartialVariablesDefinitio {
   

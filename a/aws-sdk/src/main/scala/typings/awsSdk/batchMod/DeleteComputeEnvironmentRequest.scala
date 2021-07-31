@@ -2,16 +2,14 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteComputeEnvironmentRequest extends StObject {
   
   /**
     * The name or Amazon Resource Name (ARN) of the compute environment to delete.
     */
-  var computeEnvironment: String = js.native
+  var computeEnvironment: String
 }
 object DeleteComputeEnvironmentRequest {
   

@@ -11,8 +11,8 @@ Escape string for use in HTML
 | Full name          | escape-html |
 | Keywords           | escape, html, utility |
 | # releases         | 0 |
-| # dependents       | 842 |
-| # downloads        | 573912659 |
+| # dependents       | 927 |
+| # downloads        | 675513091 |
 | # stars            | 37 |
 
 ## Links

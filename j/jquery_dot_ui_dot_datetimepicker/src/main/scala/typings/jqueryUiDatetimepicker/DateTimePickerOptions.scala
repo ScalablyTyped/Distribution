@@ -4,207 +4,207 @@ import typings.jqueryui.JQueryUI.DatepickerOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DateTimePickerOptions extends DatepickerOptions {
+trait DateTimePickerOptions
+  extends StObject
+     with DatepickerOptions {
   
   //Default: true - Whether to show the timepicker within the datepicker.
-  var addSliderAccess: js.UndefOr[Boolean] = js.native
+  var addSliderAccess: js.UndefOr[Boolean] = js.undefined
   
   //Default: 'strict' - How to parse the time string. Two methods are provided: 'strict' which must match the timeFormat exactly, and 'loose' which uses javascript's new Date(timeString) to guess the time. You may also pass in a function(timeFormat, timeString, options) to handle the parsing yourself, returning a simple object:      
   // Alt field options
-  var altFieldTimeOnly: js.UndefOr[Boolean] = js.native
+  var altFieldTimeOnly: js.UndefOr[Boolean] = js.undefined
   
   //Default: true - When altField is used from datepicker altField will only receive the formatted time and the original field only receives date.
-  var altSeparator: js.UndefOr[String] = js.native
+  var altSeparator: js.UndefOr[String] = js.undefined
   
   //Default: (timeSuffix option) - String always placed after the formatted time in the altField.
-  var altTimeFormat: js.UndefOr[String] = js.native
+  var altTimeFormat: js.UndefOr[String] = js.undefined
   
   //Default: (separator option) - String placed between formatted date and formatted time in the altField.
-  var altTimeSuffix: js.UndefOr[String] = js.native
+  var altTimeSuffix: js.UndefOr[String] = js.undefined
   
   //Default: null - Function to be called when a date is chosen or time has changed(parameters: datetimeText, datepickerInstance).
-  var alwaysSetTime: js.UndefOr[Boolean] = js.native
+  var alwaysSetTime: js.UndefOr[Boolean] = js.undefined
   
   //Default: "Done", A Localization Setting - Text for the Close button.
-  var amNames: js.UndefOr[String] = js.native
+  var amNames: js.UndefOr[String] = js.undefined
   
   //Default: false, A Localization Setting - Right to Left support. 
   // Timefield options
-  var controlType: js.UndefOr[String] = js.native
+  var controlType: js.UndefOr[String] = js.undefined
   
   //Default: null - Object to pass to sliderAccess when used.
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   //Default: 1 - Microseconds per step the slider makes.
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
   //Default: 999 - The maximum microsecond allowed for all dates.
-  var hourGrid: js.UndefOr[Double] = js.native
+  var hourGrid: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - The minimum microsecond allowed for all dates.
-  var hourMax: js.UndefOr[Double] = js.native
+  var hourMax: js.UndefOr[Double] = js.undefined
   
   //Default: null - Initial timezone set.This is the offset in minutes.If null the browser's local timezone will be used. If you're timezone is "-0400" you would use - 240. For backwards compatibility you may pass "-0400", however the timezone is stored in minutes and more reliable.
-  var hourMin: js.UndefOr[Double] = js.native
+  var hourMin: js.UndefOr[Double] = js.undefined
   
   //Default: "Time", A Localization Setting - Label used within timepicker for the formatted time.
-  var hourText: js.UndefOr[String] = js.native
+  var hourText: js.UndefOr[String] = js.undefined
   
   //Default: null - Date object of the minimum datetime allowed.Also available as minDate.
-  var maxDateTime: js.UndefOr[Date] = js.native
+  var maxDateTime: js.UndefOr[Date] = js.undefined
   
   //Default: 0 - Initial millisecond set.
-  var microsec: js.UndefOr[Double] = js.native
+  var microsec: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in milliseconds) between labels.
-  var microsecGrid: js.UndefOr[Double] = js.native
+  var microsecGrid: js.UndefOr[Double] = js.undefined
   
   //Default: 999 - The maximum millisecond allowed for all dates.
-  var microsecMax: js.UndefOr[Double] = js.native
+  var microsecMax: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - The minimum millisecond allowed for all dates.
-  var microsecMin: js.UndefOr[Double] = js.native
+  var microsecMin: js.UndefOr[Double] = js.undefined
   
   //Default: "Millisecond", A Localization Setting - Label used to identify the millisecond slider.
-  var microsecText: js.UndefOr[String] = js.native
+  var microsecText: js.UndefOr[String] = js.undefined
   
   //Default: 0 - Initial second set.
-  var millisec: js.UndefOr[Double] = js.native
+  var millisec: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in seconds) between labels.
-  var millisecGrid: js.UndefOr[Double] = js.native
+  var millisecGrid: js.UndefOr[Double] = js.undefined
   
   //Default: 59 - The maximum second allowed for all dates.
-  var millisecMax: js.UndefOr[Double] = js.native
+  var millisecMax: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - The minimum second allowed for all dates.
-  var millisecMin: js.UndefOr[Double] = js.native
+  var millisecMin: js.UndefOr[Double] = js.undefined
   
   //Default: "Second", A Localization Setting - Label used to identify the second slider.
-  var millisecText: js.UndefOr[String] = js.native
+  var millisecText: js.UndefOr[String] = js.undefined
   
   //Default: null - String of the default time value placed in the input on focus when the input is empty.
-  var minDateTime: js.UndefOr[Date] = js.native
+  var minDateTime: js.UndefOr[Date] = js.undefined
   
   //Default: 0 - Initial hour set.
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in hours) between labels.
-  var minuteGrid: js.UndefOr[Double] = js.native
+  var minuteGrid: js.UndefOr[Double] = js.undefined
   
   //Default: 23 - The maximum hour allowed for all dates.
-  var minuteMax: js.UndefOr[Double] = js.native
+  var minuteMax: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - The minimum hour allowed for all dates.
-  var minuteMin: js.UndefOr[Double] = js.native
+  var minuteMin: js.UndefOr[Double] = js.undefined
   
   //Default: "Hour", A Localization Setting - Label used to identify the hour slider.
-  var minuteText: js.UndefOr[String] = js.native
+  var minuteText: js.UndefOr[String] = js.undefined
   
   //Default: false - Hide the datepicker and only provide a time interface.
   @JSName("onSelect")
-  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[_]] = js.native
+  var onSelect_DateTimePickerOptions: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   //Default: null - Date object of the maximum datetime allowed.Also Available as maxDate.
-  var parse: js.UndefOr[String] = js.native
+  var parse: js.UndefOr[String] = js.undefined
   
   //Default: " " - When formatting the time this string is placed between the formatted date and formatted time.
-  var pickerTimeFormat: js.UndefOr[String] = js.native
+  var pickerTimeFormat: js.UndefOr[String] = js.undefined
   
   //Default: (timeFormat option) - How to format the time displayed within the timepicker.
-  var pickerTimeSuffix: js.UndefOr[String] = js.native
+  var pickerTimeSuffix: js.UndefOr[String] = js.undefined
   
   //Default: ['AM', 'A'], A Localization Setting - Array of strings to try and parse against to determine AM.
-  var pmNames: js.UndefOr[String] = js.native
+  var pmNames: js.UndefOr[String] = js.undefined
   
   //Default: 0 - Initial minute set.
-  var second: js.UndefOr[Double] = js.native
+  var second: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - When greater than 0 a label grid will be generated under the slider.This number represents the units (in minutes) between labels.
-  var secondGrid: js.UndefOr[Double] = js.native
+  var secondGrid: js.UndefOr[Double] = js.undefined
   
   //Default: 59 - The maximum minute allowed for all dates.
-  var secondMax: js.UndefOr[Double] = js.native
+  var secondMax: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - The minimum minute allowed for all dates.
-  var secondMin: js.UndefOr[Double] = js.native
+  var secondMin: js.UndefOr[Double] = js.undefined
   
   //Default: "Minute", A Localization Setting - Label used to identify the minute slider.
-  var secondText: js.UndefOr[String] = js.native
+  var secondText: js.UndefOr[String] = js.undefined
   
   //Default: true - Always have a time set internally, even before user has chosen one.
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
   //Default: 'slider' - Whether to use 'slider' or 'select'.If 'slider' is unavailable through jQueryUI, 'select' will be used.For advanced usage you may pass an object which implements "create", "options", "value" methods to use controls other than sliders or selects.See the _controls property in the source code for more details.
-  var showHour: js.UndefOr[Boolean] = js.native
+  var showHour: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the millisecond control. The default of null will use detection from timeFormat.
-  var showMicrosec: js.UndefOr[Boolean] = js.native
+  var showMicrosec: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the second control. The default of null will use detection from timeFormat.
-  var showMillisec: js.UndefOr[Boolean] = js.native
+  var showMillisec: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the hour control. The default of null will use detection from timeFormat.
-  var showMinute: js.UndefOr[Boolean] = js.native
+  var showMinute: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the minute control. The default of null will use detection from timeFormat.
-  var showSecond: js.UndefOr[Boolean] = js.native
+  var showSecond: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the timezone select.
-  var showTime: js.UndefOr[Boolean] = js.native
+  var showTime: js.UndefOr[Boolean] = js.undefined
   
   //Default: (timeSuffix option) - String to place after the formatted time within the timepicker.
-  var showTimepicker: js.UndefOr[Boolean] = js.native
+  var showTimepicker: js.UndefOr[Boolean] = js.undefined
   
   //Default: null - Whether to show the microsecond control. The default of null will use detection from timeFormat.
-  var showTimezone: js.UndefOr[Boolean] = js.native
+  var showTimezone: js.UndefOr[Boolean] = js.undefined
   
   //Default: false - Adds the sliderAccess plugin to sliders within timepicker
-  var sliderAccessArgs: js.UndefOr[js.Any] = js.native
+  var sliderAccessArgs: js.UndefOr[js.Any] = js.undefined
   
   //Default: true - Whether to show the time selected within the datetimepicker.
-  var stepHour: js.UndefOr[Double] = js.native
+  var stepHour: js.UndefOr[Double] = js.undefined
   
   //Default: 1 - Milliseconds per step the slider makes.
-  var stepMicrosec: js.UndefOr[Double] = js.native
+  var stepMicrosec: js.UndefOr[Double] = js.undefined
   
   //Default: 1 - Seconds per step the slider makes.
-  var stepMillisec: js.UndefOr[Double] = js.native
+  var stepMillisec: js.UndefOr[Double] = js.undefined
   
   //Default: 1 - Hours per step the slider makes.
-  var stepMinute: js.UndefOr[Double] = js.native
+  var stepMinute: js.UndefOr[Double] = js.undefined
   
   //Default: 1 - Minutes per step the slider makes.
-  var stepSecond: js.UndefOr[Double] = js.native
+  var stepSecond: js.UndefOr[Double] = js.undefined
   
   //Default: ['PM', 'P'], A Localization Setting - Array of strings to try and parse against to determine PM.
-  var timeFormat: js.UndefOr[String] = js.native
+  var timeFormat: js.UndefOr[String] = js.undefined
   
   //Default: true - Whether to show the button panel at the bottom.This is generally needed.
-  var timeOnly: js.UndefOr[Boolean] = js.native
+  var timeOnly: js.UndefOr[Boolean] = js.undefined
   
   //Default: "", A Localization Setting - String to place after the formatted time.
-  var timeOnlyTitle: js.UndefOr[String] = js.native
+  var timeOnlyTitle: js.UndefOr[String] = js.undefined
   
   //Default: "HH:mm", A Localization Setting - String of format tokens to be replaced with the time.See Formatting.
-  var timeSuffix: js.UndefOr[String] = js.native
+  var timeSuffix: js.UndefOr[String] = js.undefined
   
   //Default: "Choose Time", A Localization Setting - Title of the wigit when using only timepicker.
-  var timeText: js.UndefOr[String] = js.native
+  var timeText: js.UndefOr[String] = js.undefined
   
   //Default: 0 - Initial microsecond set. Note: Javascript's native Date object does not natively support microseconds. Timepicker adds ability to simply Date.setMicroseconds(m) and Date.getMicroseconds(). Date comparisons will not acknowledge microseconds. Use this only for display purposes.
-  var timezone: js.UndefOr[Double] = js.native
+  var timezone: js.UndefOr[Double] = js.undefined
   
   //Default: 0 - When greater than 0 a label grid will be genereated under the slider.This number represents the units (in microseconds) between labels.
   // Timezone options
-  var timezoneList: js.UndefOr[js.Array[TimezoneOptions]] = js.native
+  var timezoneList: js.UndefOr[js.Array[TimezoneOptions]] = js.undefined
   
   //Default: "Microsecond", A Localization Setting - Label used to identify the microsecond slider.
-  var timezoneText: js.UndefOr[String] = js.native
+  var timezoneText: js.UndefOr[String] = js.undefined
 }
 object DateTimePickerOptions {
   
@@ -404,7 +404,7 @@ object DateTimePickerOptions {
     def setMinuteUndefined: Self = StObject.set(x, "minute", js.undefined)
     
     @scala.inline
-    def setOnSelect(value: () => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
+    def setOnSelect(value: () => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)

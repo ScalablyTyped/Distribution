@@ -9,14 +9,15 @@ import typings.sentryTypes.severityMod.Severity
 import typings.sentryTypes.transportMod.Transport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basebackendMod {
   
   @JSImport("@sentry/core/dist/basebackend", "BaseBackend")
   @js.native
-  abstract class BaseBackend[O /* <: Options */] protected () extends Backend {
+  abstract class BaseBackend[O /* <: Options */] protected ()
+    extends StObject
+       with Backend {
     /** Creates a new backend instance. */
     def this(options: O) = this()
     
@@ -41,7 +42,7 @@ object basebackendMod {
     
     /** Creates a {@link Event} from a plain message. */
     def eventFromMessage(message: String): js.Thenable[Event] = js.native
-    def eventFromMessage(message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
+    def eventFromMessage(message: String, level: Unit, hint: EventHint): js.Thenable[Event] = js.native
     def eventFromMessage(message: String, level: Severity): js.Thenable[Event] = js.native
     def eventFromMessage(message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
     

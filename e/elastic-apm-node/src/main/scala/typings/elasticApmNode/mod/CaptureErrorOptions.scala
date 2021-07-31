@@ -4,29 +4,27 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptureErrorOptions extends StObject {
   
-  var custom: js.UndefOr[js.Object] = js.native
+  var custom: js.UndefOr[js.Object] = js.undefined
   
-  var handled: js.UndefOr[Boolean] = js.native
+  var handled: js.UndefOr[Boolean] = js.undefined
   
-  var labels: js.UndefOr[Labels] = js.native
+  var labels: js.UndefOr[Labels] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var request: js.UndefOr[IncomingMessage] = js.native
+  var request: js.UndefOr[IncomingMessage] = js.undefined
   
-  var response: js.UndefOr[ServerResponse] = js.native
+  var response: js.UndefOr[ServerResponse] = js.undefined
   
-  var tags: js.UndefOr[Labels] = js.native
+  var tags: js.UndefOr[Labels] = js.undefined
   
-  var timestamp: js.UndefOr[Double] = js.native
+  var timestamp: js.UndefOr[Double] = js.undefined
   
-  var user: js.UndefOr[UserObject] = js.native
+  var user: js.UndefOr[UserObject] = js.undefined
 }
 object CaptureErrorOptions {
   

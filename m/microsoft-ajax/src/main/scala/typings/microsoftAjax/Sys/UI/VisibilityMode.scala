@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,11 +18,15 @@ object VisibilityMode extends StObject {
     * The element is not visible, and the space it occupies is collapsed.
     */
   @js.native
-  sealed trait collapse extends VisibilityMode
+  sealed trait collapse
+    extends StObject
+       with VisibilityMode
   
   /**
     * The element is not visible, but it occupies space on the page.
     */
   @js.native
-  sealed trait hide extends VisibilityMode
+  sealed trait hide
+    extends StObject
+       with VisibilityMode
 }

@@ -2,19 +2,19 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RenderTask is basically a promise but adds a cancel function to termiate it.
   **/
-@js.native
-trait PDFRenderTask extends PDFLoadingTask[PDFPageProxy] {
+trait PDFRenderTask
+  extends StObject
+     with PDFLoadingTask[PDFPageProxy] {
   
   /**
     * Cancel the rendering task.  If the task is currently rendering it will not be cancelled until graphics pauses with a timeout.  The promise that this object extends will resolve when cancelled.
     **/
-  def cancel(): Unit = js.native
+  def cancel(): Unit
 }
 object PDFRenderTask {
   

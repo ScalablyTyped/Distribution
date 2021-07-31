@@ -7,7 +7,6 @@ import typings.xrm.xrmNumbers.`3`
 import typings.xrm.xrmNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

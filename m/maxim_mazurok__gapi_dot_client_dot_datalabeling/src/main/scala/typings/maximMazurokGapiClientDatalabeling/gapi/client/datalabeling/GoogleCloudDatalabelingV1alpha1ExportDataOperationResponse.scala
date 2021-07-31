@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse extends StObject {
   
   /** Output only. The name of annotated dataset in format "projects/∗/datasets/∗/annotatedDatasets/ *". */
-  var annotatedDataset: js.UndefOr[String] = js.native
+  var annotatedDataset: js.UndefOr[String] = js.undefined
   
   /** Ouptut only. The name of dataset. "projects/∗/datasets/ *" */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Number of examples exported successfully. */
-  var exportCount: js.UndefOr[Double] = js.native
+  var exportCount: js.UndefOr[Double] = js.undefined
   
   /** Output only. Statistic infos of labels in the exported dataset. */
-  var labelStats: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelStats] = js.native
+  var labelStats: js.UndefOr[GoogleCloudDatalabelingV1alpha1LabelStats] = js.undefined
   
   /** Output only. output_config in the ExportData request. */
-  var outputConfig: js.UndefOr[GoogleCloudDatalabelingV1alpha1OutputConfig] = js.native
+  var outputConfig: js.UndefOr[GoogleCloudDatalabelingV1alpha1OutputConfig] = js.undefined
   
   /** Output only. Total number of examples requested to export */
-  var totalCount: js.UndefOr[Double] = js.native
+  var totalCount: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudDatalabelingV1alpha1ExportDataOperationResponse {
   

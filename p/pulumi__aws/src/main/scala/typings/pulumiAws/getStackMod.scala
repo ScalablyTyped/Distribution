@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getStackMod {
   
-  @JSImport("@pulumi/aws/cloudformation/getStack", "getStack")
+  @JSImport("@pulumi/aws/cloudformation/getStack", JSImport.Namespace)
   @js.native
-  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = js.native
-  @JSImport("@pulumi/aws/cloudformation/getStack", "getStack")
-  @js.native
-  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getStack(args: GetStackArgs): js.Promise[GetStackResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetStackResult]]
+  @scala.inline
+  def getStack(args: GetStackArgs, opts: InvokeOptions): js.Promise[GetStackResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getStack")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetStackResult]]
+  
   trait GetStackArgs extends StObject {
     
     /**
       * The name of the stack
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * A map of tags associated with this stack.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetStackArgs {
     
@@ -51,65 +51,64 @@ object getStackMod {
     }
   }
   
-  @js.native
   trait GetStackResult extends StObject {
     
     /**
       * A list of capabilities
       */
-    val capabilities: js.Array[String] = js.native
+    val capabilities: js.Array[String]
     
     /**
       * Description of the stack
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * Whether the rollback of the stack is disabled when stack creation fails
       */
-    val disableRollback: Boolean = js.native
+    val disableRollback: Boolean
     
     /**
       * The ARN of the IAM role used to create the stack.
       */
-    val iamRoleArn: String = js.native
+    val iamRoleArn: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val name: String = js.native
+    val name: String
     
     /**
       * A list of SNS topic ARNs to publish stack related events
       */
-    val notificationArns: js.Array[String] = js.native
+    val notificationArns: js.Array[String]
     
     /**
       * A map of outputs from the stack.
       */
-    val outputs: StringDictionary[String] = js.native
+    val outputs: StringDictionary[String]
     
     /**
       * A map of parameters that specify input parameters for the stack.
       */
-    val parameters: StringDictionary[String] = js.native
+    val parameters: StringDictionary[String]
     
     /**
       * A map of tags associated with this stack.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Structure containing the template body.
       */
-    val templateBody: String = js.native
+    val templateBody: String
     
     /**
       * The amount of time that can pass before the stack status becomes `CREATE_FAILED`
       */
-    val timeoutInMinutes: Double = js.native
+    val timeoutInMinutes: Double
   }
   object GetStackResult {
     

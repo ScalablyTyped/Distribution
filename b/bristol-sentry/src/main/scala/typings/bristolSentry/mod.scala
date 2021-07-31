@@ -5,27 +5,27 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(config: SentryConfig): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+  
   @JSImport("bristol-sentry", JSImport.Namespace)
   @js.native
-  def apply(config: SentryConfig): js.Function0[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bristol-sentry", "formatter")
-  @js.native
-  def formatter(opts: js.Object, severity: String, date: Date, elems: js.Array[_]): FormattedLog = js.native
+  @scala.inline
+  def formatter(opts: js.Object, severity: String, date: Date, elems: js.Array[js.Any]): FormattedLog = (^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(opts.asInstanceOf[js.Any], severity.asInstanceOf[js.Any], date.asInstanceOf[js.Any], elems.asInstanceOf[js.Any])).asInstanceOf[FormattedLog]
   
-  @js.native
   trait FormattedLog extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var extra: js.Array[js.Object] = js.native
+    var extra: js.Array[js.Object]
     
-    var message: String = js.native
+    var message: String
   }
   object FormattedLog {
     
@@ -55,10 +55,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SentryConfig extends StObject {
     
-    var client: js.UndefOr[js.Object | Client] = js.native
+    var client: js.UndefOr[js.Object | Client] = js.undefined
   }
   object SentryConfig {
     

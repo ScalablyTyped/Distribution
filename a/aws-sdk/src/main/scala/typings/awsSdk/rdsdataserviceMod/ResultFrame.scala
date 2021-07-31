@@ -2,21 +2,19 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResultFrame extends StObject {
   
   /**
     * The records in the result set.
     */
-  var records: js.UndefOr[Records] = js.native
+  var records: js.UndefOr[Records] = js.undefined
   
   /**
     * The result-set metadata in the result set.
     */
-  var resultSetMetadata: js.UndefOr[ResultSetMetadata] = js.native
+  var resultSetMetadata: js.UndefOr[ResultSetMetadata] = js.undefined
 }
 object ResultFrame {
   

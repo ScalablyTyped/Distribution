@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2KmsWrappedCryptoKey extends StObject {
   
   /** Required. The resource name of the KMS CryptoKey to use for unwrapping. */
-  var cryptoKeyName: js.UndefOr[String] = js.native
+  var cryptoKeyName: js.UndefOr[String] = js.undefined
   
   /** Required. The wrapped data crypto key. */
-  var wrappedKey: js.UndefOr[String] = js.native
+  var wrappedKey: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2KmsWrappedCryptoKey {
   

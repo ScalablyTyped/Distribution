@@ -4,40 +4,34 @@ import typings.jwtThen.anon.Key
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jwt-then", "sign")
+  @JSImport("jwt-then", JSImport.Namespace)
   @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret): js.Promise[String] = js.native
-  @JSImport("jwt-then", "sign")
-  @js.native
-  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = js.native
-  @JSImport("jwt-then", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret): js.Promise[String] = js.native
-  @JSImport("jwt-then", "sign")
-  @js.native
-  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = js.native
-  @JSImport("jwt-then", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret): js.Promise[String] = js.native
-  @JSImport("jwt-then", "sign")
-  @js.native
-  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jwt-then", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: String): js.Promise[js.Object | String] = js.native
-  @JSImport("jwt-then", "verify")
-  @js.native
-  def verify(token: String, secretOrPublicKey: Buffer): js.Promise[js.Object | String] = js.native
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def sign(payload: String, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def sign(payload: js.Object, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def sign(payload: Buffer, secretOrPrivateKey: Secret, options: SignOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sign")(payload.asInstanceOf[js.Any], secretOrPrivateKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: String): js.Promise[js.Object | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object | String]]
+  @scala.inline
+  def verify(token: String, secretOrPublicKey: Buffer): js.Promise[js.Object | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("verify")(token.asInstanceOf[js.Any], secretOrPublicKey.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object | String]]
   
   type Secret = String | Buffer | Key
   
-  @js.native
   trait SignOptions extends StObject {
     
     /**
@@ -53,29 +47,29 @@ object mod {
       * - ES512:    ECDSA using P-521 curve and SHA-512 hash algorithm
       * - none:     No digital signature or MAC value included
       */
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var audience: js.UndefOr[String | js.Array[String]] = js.native
+    var audience: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
-    
-    /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
-    var expiresIn: js.UndefOr[String | Double] = js.native
-    
-    var header: js.UndefOr[js.Object] = js.native
-    
-    var issuer: js.UndefOr[String] = js.native
-    
-    var jwtid: js.UndefOr[String] = js.native
-    
-    var keyid: js.UndefOr[String] = js.native
-    
-    var noTimestamp: js.UndefOr[Boolean] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
-    var notBefore: js.UndefOr[String | Double] = js.native
+    var expiresIn: js.UndefOr[String | Double] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var header: js.UndefOr[js.Object] = js.undefined
+    
+    var issuer: js.UndefOr[String] = js.undefined
+    
+    var jwtid: js.UndefOr[String] = js.undefined
+    
+    var keyid: js.UndefOr[String] = js.undefined
+    
+    var noTimestamp: js.UndefOr[Boolean] = js.undefined
+    
+    /** expressed in seconds or a string describing a time span [zeit/ms](https://github.com/zeit/ms.js).  Eg: 60, "2 days", "10h", "7d" */
+    var notBefore: js.UndefOr[String | Double] = js.undefined
+    
+    var subject: js.UndefOr[String] = js.undefined
   }
   object SignOptions {
     

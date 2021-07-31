@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchIndexResponse extends StObject {
   
   /**
     * The token used to get the next set of results, or null if there are no additional results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The thing groups that match the search query.
     */
-  var thingGroups: js.UndefOr[ThingGroupDocumentList] = js.native
+  var thingGroups: js.UndefOr[ThingGroupDocumentList] = js.undefined
   
   /**
     * The things that match the search query.
     */
-  var things: js.UndefOr[ThingDocumentList] = js.native
+  var things: js.UndefOr[ThingDocumentList] = js.undefined
 }
 object SearchIndexResponse {
   

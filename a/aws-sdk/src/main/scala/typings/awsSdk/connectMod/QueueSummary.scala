@@ -2,31 +2,29 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueueSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the queue.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the queue.
     */
-  var Id: js.UndefOr[QueueId] = js.native
+  var Id: js.UndefOr[QueueId] = js.undefined
   
   /**
     * The name of the queue.
     */
-  var Name: js.UndefOr[QueueName] = js.native
+  var Name: js.UndefOr[QueueName] = js.undefined
   
   /**
     * The type of queue.
     */
-  var QueueType: js.UndefOr[typings.awsSdk.connectMod.QueueType] = js.native
+  var QueueType: js.UndefOr[typings.awsSdk.connectMod.QueueType] = js.undefined
 }
 object QueueSummary {
   

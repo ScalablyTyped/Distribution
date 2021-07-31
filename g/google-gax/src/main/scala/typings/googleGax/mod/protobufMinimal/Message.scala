@@ -6,7 +6,6 @@ import typings.protobufjs.mod.Properties
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-gax", "protobufMinimal.Message")
@@ -22,6 +21,10 @@ class Message[T /* <: js.Object */] ()
 /* static members */
 object Message {
   
+  @JSImport("google-gax", "protobufMinimal.Message")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Reference to the reflected type. */
   @JSImport("google-gax", "protobufMinimal.Message.$type")
   @js.native
@@ -32,36 +35,30 @@ object Message {
     * @param [properties] Properties to set
     * @returns Message instance
     */
-  @JSImport("google-gax", "protobufMinimal.Message.create")
-  @js.native
-  def create[T /* <: typings.protobufjs.mod.Message[T] */](): typings.protobufjs.mod.Message[T] = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.create")
-  @js.native
-  def create[T /* <: typings.protobufjs.mod.Message[T] */](properties: StringDictionary[js.Any]): typings.protobufjs.mod.Message[T] = js.native
+  @scala.inline
+  def create[T /* <: typings.protobufjs.mod.Message[T] */](): typings.protobufjs.mod.Message[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.protobufjs.mod.Message[T]]
+  @scala.inline
+  def create[T /* <: typings.protobufjs.mod.Message[T] */](properties: StringDictionary[js.Any]): typings.protobufjs.mod.Message[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Message[T]]
   
   /**
     * Decodes a message of this type.
     * @param reader Reader or buffer to decode
     * @returns Decoded message
     */
-  @JSImport("google-gax", "protobufMinimal.Message.decode")
-  @js.native
-  def decode[T /* <: typings.protobufjs.mod.Message[T] */](reader: typings.protobufjs.mod.Reader): T = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.decode")
-  @js.native
-  def decode[T /* <: typings.protobufjs.mod.Message[T] */](reader: Uint8Array): T = js.native
+  @scala.inline
+  def decode[T /* <: typings.protobufjs.mod.Message[T] */](reader: typings.protobufjs.mod.Reader): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def decode[T /* <: typings.protobufjs.mod.Message[T] */](reader: Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Decodes a message of this type preceeded by its length as a varint.
     * @param reader Reader or buffer to decode
     * @returns Decoded message
     */
-  @JSImport("google-gax", "protobufMinimal.Message.decodeDelimited")
-  @js.native
-  def decodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](reader: typings.protobufjs.mod.Reader): T = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.decodeDelimited")
-  @js.native
-  def decodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](reader: Uint8Array): T = js.native
+  @scala.inline
+  def decodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](reader: typings.protobufjs.mod.Reader): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def decodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](reader: Uint8Array): T = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Encodes a message of this type.
@@ -69,18 +66,14 @@ object Message {
     * @param [writer] Writer to use
     * @returns Writer
     */
-  @JSImport("google-gax", "protobufMinimal.Message.encode")
-  @js.native
-  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: T): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encode")
-  @js.native
-  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: T, writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encode")
-  @js.native
-  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any]): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encode")
-  @js.native
-  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any], writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = js.native
+  @scala.inline
+  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: T): typings.protobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: T, writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any]): typings.protobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encode[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any], writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Writer]
   
   /**
     * Encodes a message of this type preceeded by its length as a varint.
@@ -88,27 +81,22 @@ object Message {
     * @param [writer] Writer to use
     * @returns Writer
     */
-  @JSImport("google-gax", "protobufMinimal.Message.encodeDelimited")
-  @js.native
-  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: T): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encodeDelimited")
-  @js.native
-  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: T, writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encodeDelimited")
-  @js.native
-  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any]): typings.protobufjs.mod.Writer = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.encodeDelimited")
-  @js.native
-  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any], writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = js.native
+  @scala.inline
+  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: T): typings.protobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: T, writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any]): typings.protobufjs.mod.Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[typings.protobufjs.mod.Writer]
+  @scala.inline
+  def encodeDelimited[T /* <: typings.protobufjs.mod.Message[T] */](message: StringDictionary[js.Any], writer: typings.protobufjs.mod.Writer): typings.protobufjs.mod.Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[typings.protobufjs.mod.Writer]
   
   /**
     * Creates a new message of this type from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns Message instance
     */
-  @JSImport("google-gax", "protobufMinimal.Message.fromObject")
-  @js.native
-  def fromObject[T /* <: typings.protobufjs.mod.Message[T] */](`object`: StringDictionary[js.Any]): T = js.native
+  @scala.inline
+  def fromObject[T /* <: typings.protobufjs.mod.Message[T] */](`object`: StringDictionary[js.Any]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[T]
   
   /**
     * Creates a plain object from a message of this type. Also converts values to other types if specified.
@@ -116,19 +104,16 @@ object Message {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("google-gax", "protobufMinimal.Message.toObject")
-  @js.native
-  def toObject[T /* <: typings.protobufjs.mod.Message[T] */](message: T): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax", "protobufMinimal.Message.toObject")
-  @js.native
-  def toObject[T /* <: typings.protobufjs.mod.Message[T] */](message: T, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject[T /* <: typings.protobufjs.mod.Message[T] */](message: T): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject[T /* <: typings.protobufjs.mod.Message[T] */](message: T, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a message of this type.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("google-gax", "protobufMinimal.Message.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

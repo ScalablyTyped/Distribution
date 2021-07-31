@@ -5,14 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The argument for commands like "open", "update", and "synchronize".
   * @see XCommandProcessor
   */
-@js.native
 trait OpenCommandArgument extends StObject {
   
   /**
@@ -20,13 +18,13 @@ trait OpenCommandArgument extends StObject {
     *
     * The value can be one of the {@link OpenMode} constants.
     */
-  var Mode: Double = js.native
+  var Mode: Double
   
   /** The command's priority, in the range `0` (highest) to `65535` (lowest). */
-  var Priority: Double = js.native
+  var Priority: Double
   
   /** The properties, for that the values shall be provided by the {@link DynamicResultSet} returned by the command). */
-  var Properties: SafeArray[Property] = js.native
+  var Properties: SafeArray[Property]
   
   /**
     * The data sink to write the contents into (supporting either {@link com.sun.star.io.XActiveDataSink} , {@link com.sun.star.io.XOutputStream} or {@link
@@ -39,7 +37,7 @@ trait OpenCommandArgument extends StObject {
     * com.sun.star.io.XInputStream} . It is highly recommended that this object also implements the interface {@link com.sun.star.io.XSeekable} , if this
     * can be done without wasting resources (i.e. allocating huge memory buffers). The implementation object has to be supplied to the data sink.
     */
-  var Sink: XInterface = js.native
+  var Sink: XInterface
 }
 object OpenCommandArgument {
   

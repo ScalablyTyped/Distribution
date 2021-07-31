@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreInstanceRequest extends StObject {
   
   /** Required. Name of the file share in the Cloud Filestore instance that the backup is being restored to. */
-  var fileShare: js.UndefOr[String] = js.native
+  var fileShare: js.UndefOr[String] = js.undefined
   
   /** The resource name of the backup, in the format projects/{project_number}/locations/{location_id}/backups/{backup_id}. */
-  var sourceBackup: js.UndefOr[String] = js.native
+  var sourceBackup: js.UndefOr[String] = js.undefined
 }
 object RestoreInstanceRequest {
   

@@ -2,10 +2,8 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheProvisionOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CacheProvisionOptions extends StObject {
     *
     * @default 1000
     */
-  var max: Double = js.native
+  var max: Double
 }
 object CacheProvisionOptions {
   

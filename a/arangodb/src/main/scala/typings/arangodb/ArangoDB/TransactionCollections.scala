@@ -2,18 +2,16 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Global
-@js.native
 trait TransactionCollections extends StObject {
   
-  var allowImplicit: js.UndefOr[Boolean] = js.native
+  var allowImplicit: js.UndefOr[Boolean] = js.undefined
   
-  var read: js.UndefOr[String | js.Array[String]] = js.native
+  var read: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var write: js.UndefOr[String | js.Array[String]] = js.native
+  var write: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object TransactionCollections {
   

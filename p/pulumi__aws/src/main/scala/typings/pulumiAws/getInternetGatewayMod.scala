@@ -6,42 +6,40 @@ import typings.pulumiAws.outputMod.ec2.GetInternetGatewayAttachment
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInternetGatewayMod {
   
-  @JSImport("@pulumi/aws/ec2/getInternetGateway", "getInternetGateway")
+  @JSImport("@pulumi/aws/ec2/getInternetGateway", JSImport.Namespace)
   @js.native
-  def getInternetGateway(): js.Promise[GetInternetGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInternetGateway", "getInternetGateway")
-  @js.native
-  def getInternetGateway(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInternetGateway", "getInternetGateway")
-  @js.native
-  def getInternetGateway(args: GetInternetGatewayArgs): js.Promise[GetInternetGatewayResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getInternetGateway", "getInternetGateway")
-  @js.native
-  def getInternetGateway(args: GetInternetGatewayArgs, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInternetGateway(): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")().asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  @scala.inline
+  def getInternetGateway(args: Unit, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  @scala.inline
+  def getInternetGateway(args: GetInternetGatewayArgs): js.Promise[GetInternetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  @scala.inline
+  def getInternetGateway(args: GetInternetGatewayArgs, opts: InvokeOptions): js.Promise[GetInternetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInternetGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInternetGatewayResult]]
+  
   trait GetInternetGatewayArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetInternetGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetInternetGatewayFilter]] = js.undefined
     
     /**
       * The id of the specific Internet Gateway to retrieve.
       */
-    val internetGatewayId: js.UndefOr[String] = js.native
+    val internetGatewayId: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired Internet Gateway.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetInternetGatewayArgs {
     
@@ -77,31 +75,30 @@ object getInternetGatewayMod {
     }
   }
   
-  @js.native
   trait GetInternetGatewayResult extends StObject {
     
     /**
       * The ARN of the Internet Gateway.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val attachments: js.Array[GetInternetGatewayAttachment] = js.native
+    val attachments: js.Array[GetInternetGatewayAttachment]
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetInternetGatewayFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val internetGatewayId: String = js.native
+    val internetGatewayId: String
     
     /**
       * The ID of the AWS account that owns the internet gateway.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetInternetGatewayResult {
     

@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object League {
   
-  @js.native
   trait LeagueDto extends StObject {
     
-    var entries: js.Array[LeagueEntryDto] = js.native
+    var entries: js.Array[LeagueEntryDto]
     
-    var name: String = js.native
+    var name: String
     
-    var participantId: String = js.native
+    var participantId: String
     
-    var queue: String = js.native
+    var queue: String
     
-    var tier: String = js.native
+    var tier: String
   }
   object LeagueDto {
     
@@ -60,30 +58,29 @@ object League {
     }
   }
   
-  @js.native
   trait LeagueEntryDto extends StObject {
     
-    var division: String = js.native
+    var division: String
     
-    var isFreshBlood: Boolean = js.native
+    var isFreshBlood: Boolean
     
-    var isHotStreak: Boolean = js.native
+    var isHotStreak: Boolean
     
-    var isInactive: Boolean = js.native
+    var isInactive: Boolean
     
-    var isVeteran: Boolean = js.native
+    var isVeteran: Boolean
     
-    var leaguePoints: Double = js.native
+    var leaguePoints: Double
     
-    var losses: Double = js.native
+    var losses: Double
     
-    var miniSeries: MiniSeriesDto = js.native
+    var miniSeries: MiniSeriesDto
     
-    var playerOrTeamId: String = js.native
+    var playerOrTeamId: String
     
-    var playerOrTeamName: String = js.native
+    var playerOrTeamName: String
     
-    var wins: Double = js.native
+    var wins: Double
   }
   object LeagueEntryDto {
     
@@ -143,16 +140,15 @@ object League {
     }
   }
   
-  @js.native
   trait MiniSeriesDto extends StObject {
     
-    var losses: Double = js.native
+    var losses: Double
     
-    var progress: String = js.native
+    var progress: String
     
-    var target: Double = js.native
+    var target: Double
     
-    var wins: Double = js.native
+    var wins: Double
   }
   object MiniSeriesDto {
     

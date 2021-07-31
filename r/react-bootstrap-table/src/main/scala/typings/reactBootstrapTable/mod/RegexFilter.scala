@@ -3,43 +3,43 @@ package typings.reactBootstrapTable.mod
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegexFilter extends _Filter {
+trait RegexFilter
+  extends StObject
+     with _Filter {
   
   /**
     * Default value
     */
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * Delay time in milliseconds after the last key press prior to applying the filter. Defaults to 500ms.
     */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /**
     * Placeholder text to show in the filter.
     */
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
   /**
     * CSS Style to use for the select filter.
     */
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
   /**
     * Filter type must be 'RegexFilter'
     */
-  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter = js.native
+  var `type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter
 }
 object RegexFilter {
   
   @scala.inline
-  def apply(`type`: typings.reactBootstrapTable.reactBootstrapTableStrings.RegexFilter): RegexFilter = {
+  def apply(): RegexFilter = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RegexFilter")
     __obj.asInstanceOf[RegexFilter]
   }
   

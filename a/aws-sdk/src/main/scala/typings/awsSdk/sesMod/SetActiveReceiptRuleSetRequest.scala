@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetActiveReceiptRuleSetRequest extends StObject {
   
   /**
     * The name of the receipt rule set to make active. Setting this value to null disables all email receiving.
     */
-  var RuleSetName: js.UndefOr[ReceiptRuleSetName] = js.native
+  var RuleSetName: js.UndefOr[ReceiptRuleSetName] = js.undefined
 }
 object SetActiveReceiptRuleSetRequest {
   

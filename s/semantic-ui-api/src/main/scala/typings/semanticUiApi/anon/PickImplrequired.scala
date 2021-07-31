@@ -3,14 +3,12 @@ package typings.semanticUiApi.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-api.SemanticUI.Api.RegExpSettings._Impl, 'required'> */
-@js.native
 trait PickImplrequired extends StObject {
   
-  var required: RegExp = js.native
+  var required: RegExp
 }
 object PickImplrequired {
   

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerticalAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait VerticalAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ex
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align)
     */
-  var verticalAlign: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var verticalAlign: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object VerticalAlignProps {
   
@@ -24,7 +22,7 @@ object VerticalAlignProps {
   }
   
   @scala.inline
-  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (VerticalAlignProps[ThemeType, TVal])) extends AnyVal {
+  implicit class VerticalAlignPropsMutableBuilder[Self <: VerticalAlignProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (VerticalAlignProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setVerticalAlign(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "verticalAlign", value.asInstanceOf[js.Any])

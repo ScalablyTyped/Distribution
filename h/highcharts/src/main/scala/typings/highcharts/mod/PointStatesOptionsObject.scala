@@ -2,36 +2,34 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointStatesOptionsObject extends StObject {
   
   /**
     * (Highcharts, Highstock) The hover state for a single point marker.
     */
-  var hover: js.UndefOr[PointStatesHoverOptionsObject] = js.native
+  var hover: js.UndefOr[PointStatesHoverOptionsObject] = js.undefined
   
   /**
     * (Highcharts) The opposite state of a hover for a single point node.
     * Applied to all not connected nodes to the hovered one.
     */
-  var inactive: js.UndefOr[PointStatesInactiveOptionsObject] = js.native
+  var inactive: js.UndefOr[PointStatesInactiveOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The normal state of a single point marker.
     * Currently only used for setting animation when returning to normal state
     * from hover.
     */
-  var normal: js.UndefOr[PointStatesNormalOptionsObject] = js.native
+  var normal: js.UndefOr[PointStatesNormalOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) The appearance of the point marker when selected.
     * In order to allow a point to be selected, set the
     * `series.allowPointSelect` option to true.
     */
-  var select: js.UndefOr[PointStatesSelectOptionsObject] = js.native
+  var select: js.UndefOr[PointStatesSelectOptionsObject] = js.undefined
 }
 object PointStatesOptionsObject {
   

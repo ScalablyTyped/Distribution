@@ -2,22 +2,20 @@ package typings.dymoLabelFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ErrorDetails extends StObject {
     
     /** An empty string if no error is detected; an error message if an error is detected. */
-    var errorDetails: String = js.native
+    var errorDetails: String
     
     /** Indicates whether the browser is supported or not. */
-    var isBrowserSupported: Boolean = js.native
+    var isBrowserSupported: Boolean
     
     /** Indicates whether the Framework is installed or not. */
-    var isFrameworkInstalled: Boolean = js.native
+    var isFrameworkInstalled: Boolean
   }
   object ErrorDetails {
     

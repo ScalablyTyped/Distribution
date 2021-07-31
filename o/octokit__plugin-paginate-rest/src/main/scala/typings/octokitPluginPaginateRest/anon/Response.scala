@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.OauthAuthorizationsListGrantsResponseDa
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
-  var parameters: OauthAuthorizationsListGrantsEndpoint = js.native
+  var parameters: OauthAuthorizationsListGrantsEndpoint
   
-  var response: OctokitResponse[OauthAuthorizationsListGrantsResponseData] = js.native
+  var response: OctokitResponse[OauthAuthorizationsListGrantsResponseData]
 }
 object Response {
   

@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object TournamentProvider {
   
-  @js.native
   trait LobbyEventDto extends StObject {
     
-    var eventType: String = js.native
+    var eventType: String
     
-    var summonerId: String = js.native
+    var summonerId: String
     
-    var timestamp: String = js.native
+    var timestamp: String
   }
   object LobbyEventDto {
     
@@ -41,10 +39,9 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait LobbyEventDtoWrapper extends StObject {
     
-    var eventList: js.Array[LobbyEventDto] = js.native
+    var eventList: js.Array[LobbyEventDto]
   }
   object LobbyEventDtoWrapper {
     
@@ -65,12 +62,11 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait ProviderRegistrationParameters extends StObject {
     
-    var region: String = js.native
+    var region: String
     
-    var url: String = js.native
+    var url: String
   }
   object ProviderRegistrationParameters {
     
@@ -91,10 +87,9 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait SummonerIdParams extends StObject {
     
-    var participants: js.Array[Double] = js.native
+    var participants: js.Array[Double]
   }
   object SummonerIdParams {
     
@@ -115,34 +110,33 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait TournamentCodeDto extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var lobbyName: String = js.native
+    var lobbyName: String
     
-    var map: String = js.native
+    var map: String
     
-    var metaData: String = js.native
+    var metaData: String
     
-    var participants: js.Array[Double] = js.native
+    var participants: js.Array[Double]
     
-    var password: String = js.native
+    var password: String
     
-    var pickType: String = js.native
+    var pickType: String
     
-    var providerId: Double = js.native
+    var providerId: Double
     
-    var region: String = js.native
+    var region: String
     
-    var spectators: String = js.native
+    var spectators: String
     
-    var teamSize: Double = js.native
+    var teamSize: Double
     
-    var tournamentId: Double = js.native
+    var tournamentId: Double
   }
   object TournamentCodeDto {
     
@@ -213,20 +207,19 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait TournamentCodeParameters extends StObject {
     
-    var allowedSummonerIds: SummonerIdParams = js.native
+    var allowedSummonerIds: SummonerIdParams
     
-    var mapType: String = js.native
+    var mapType: String
     
-    var metadata: String = js.native
+    var metadata: String
     
-    var pickType: String = js.native
+    var pickType: String
     
-    var spectatorType: String = js.native
+    var spectatorType: String
     
-    var teamSize: Double = js.native
+    var teamSize: Double
   }
   object TournamentCodeParameters {
     
@@ -266,16 +259,15 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait TournamentCodeUpdateParameters extends StObject {
     
-    var allowedParticipants: String = js.native
+    var allowedParticipants: String
     
-    var mapType: String = js.native
+    var mapType: String
     
-    var pickType: String = js.native
+    var pickType: String
     
-    var spectatorType: String = js.native
+    var spectatorType: String
   }
   object TournamentCodeUpdateParameters {
     
@@ -302,12 +294,11 @@ object TournamentProvider {
     }
   }
   
-  @js.native
   trait TournamentRegistrationParameters extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var providerId: Double = js.native
+    var providerId: Double
   }
   object TournamentRegistrationParameters {
     

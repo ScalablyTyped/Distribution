@@ -28,29 +28,27 @@ import typings.devextreme.mod.DevExpress.ui.dxDiagramMoveShapeArgs
 import typings.devextreme.mod.DevExpress.ui.dxDiagramResizeShapeArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Allowed extends StObject {
   
-  var allowed: js.UndefOr[Boolean] = js.native
+  var allowed: js.UndefOr[Boolean] = js.undefined
   
   var args: js.UndefOr[
     dxDiagramAddShapeArgs | dxDiagramAddShapeFromToolboxArgs | dxDiagramDeleteShapeArgs | dxDiagramDeleteConnectorArgs | dxDiagramChangeConnectionArgs | dxDiagramChangeConnectorPointsArgs | dxDiagramBeforeChangeShapeTextArgs | dxDiagramChangeShapeTextArgs | dxDiagramBeforeChangeConnectorTextArgs | dxDiagramChangeConnectorTextArgs | dxDiagramResizeShapeArgs | dxDiagramMoveShapeArgs
-  ] = js.native
+  ] = js.undefined
   
-  var component: js.UndefOr[dxDiagram] = js.native
+  var component: js.UndefOr[dxDiagram] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
   var operation: js.UndefOr[
     addShape | addShapeFromToolbox | deleteShape | deleteConnector | changeConnection | changeConnectorPoints | beforeChangeShapeText | changeShapeText | beforeChangeConnectorText | changeConnectorText | resizeShape | moveShape
-  ] = js.native
+  ] = js.undefined
   
-  var updateUI: js.UndefOr[Boolean] = js.native
+  var updateUI: js.UndefOr[Boolean] = js.undefined
 }
 object Allowed {
   

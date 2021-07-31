@@ -73,7 +73,6 @@ import typings.semanticUiNag.semanticUiNagStrings.value
 import typings.semanticUiNag.semanticUiNagStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -88,62 +87,65 @@ object SemanticUI {
     def apply(behavior: clear): JQuery = js.native
     def apply(behavior: destroy): JQuery = js.native
     def apply(behavior: hide): JQuery = js.native
+    def apply(behavior: setting, name: animation, value: Unit): AnimationSettings = js.native
     def apply(behavior: setting, name: animation, value: AnimationSettings): JQuery = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
     def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
-    def apply(behavior: setting, name: context, value: js.UndefOr[scala.Nothing]): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: context, value: String): JQuery = js.native
+    def apply(behavior: setting, name: context, value: Unit): `false` | String | JQuery = js.native
     def apply(behavior: setting, name: context, value: JQuery): JQuery = js.native
     def apply(behavior: setting, name: context, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: detachable, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: detachable, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: displayTime, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: detachable, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: displayTime, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: domain, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: displayTime, value: Unit): Double = js.native
     def apply(behavior: setting, name: domain, value: String): JQuery = js.native
+    def apply(behavior: setting, name: domain, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: domain, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: easing, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: easing, value: String): JQuery = js.native
+    def apply(behavior: setting, name: easing, value: Unit): String = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
     def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
-    def apply(behavior: setting, name: expires, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: expires, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: key, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any = js.native
+    def apply(behavior: setting, name: expires, value: Unit): Double = js.native
     def apply(
       behavior: setting,
       name: key,
       value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any
     ): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: key, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['key'] */ js.Any = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: path, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: path, value: String): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: path, value: Unit): String = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: persist, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: persist, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: selector, value: js.UndefOr[scala.Nothing]): SelectorSettings = js.native
+    def apply(behavior: setting, name: persist, value: Unit): Boolean = js.native
+    def apply(behavior: setting, name: selector, value: Unit): SelectorSettings = js.native
     def apply(behavior: setting, name: selector, value: SelectorSettings): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: speed, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: speed, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: storageMethod, value: js.UndefOr[scala.Nothing]): cookie | localstorage | sessionstorage = js.native
+    def apply(behavior: setting, name: speed, value: Unit): Double = js.native
+    def apply(behavior: setting, name: storageMethod, value: Unit): cookie | localstorage | sessionstorage = js.native
     def apply(behavior: setting, name: storageMethod, value: cookie): JQuery = js.native
     def apply(behavior: setting, name: storageMethod, value: localstorage): JQuery = js.native
     def apply(behavior: setting, name: storageMethod, value: sessionstorage): JQuery = js.native
-    def apply(behavior: setting, name: value, value: js.UndefOr[scala.Nothing]): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any = js.native
     def apply(
       behavior: setting,
       name: value,
       value: /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any
     ): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: value, value: Unit): /* import warning: importer.ImportType#apply Failed type conversion: semantic-ui-nag.SemanticUI.NagSettings._Impl['value'] */ js.Any = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: NagSettings): JQuery = js.native
     def apply(behavior: show): JQuery = js.native
     def apply(settings: NagSettings): JQuery = js.native
@@ -154,18 +156,17 @@ object SemanticUI {
     
     object AnimationSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'slide'
           */
-        var hide: String = js.native
+        var hide: String
         
         /**
           * @default 'slide'
           */
-        var show: String = js.native
+        var show: String
       }
       object Impl {
         
@@ -186,24 +187,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplshow | PickImplhide) with PartialPickImplkeyofImplHide
+      type Param = (PickImplshow | PickImplhide) & PartialPickImplkeyofImplHide
     }
     type AnimationSettings = Param
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'bottom'
           */
-        var bottom: String = js.native
+        var bottom: String
         
         /**
           * @default 'fixed'
           */
-        var fixed: String = js.native
+        var fixed: String
       }
       object Impl {
         
@@ -224,29 +224,28 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplbottom | PickImplfixed) with PartialPickImplkeyofImplBottom
+      type Param = (PickImplbottom | PickImplfixed) & PartialPickImplkeyofImplBottom
     }
     type ClassNameSettings = typings.semanticUiNag.SemanticUI.Nag.ClassNameSettings.Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined.'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default '$.cookie is not included. A storage solution is required.'
           */
-        var noCookieStorage: String = js.native
+        var noCookieStorage: String
         
         /**
           * @default 'Neither $.cookie or store is defined. A storage solution is required for storing state'
           */
-        var noStorage: String = js.native
+        var noStorage: String
       }
       object Impl {
         
@@ -270,31 +269,29 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoCookieStorage | PickImplnoStorage | PickImplmethod) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplnoCookieStorage | PickImplnoStorage | PickImplmethod) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiNag.SemanticUI.Nag.ErrorSettings.Param
     
     /* Inlined semantic-ui-nag.SemanticUI.Nag.SelectorSettings.Param */
-    @js.native
     trait SelectorSettings extends StObject {
       
-      var close: String with js.UndefOr[String] = js.native
+      var close: String & js.UndefOr[String]
     }
     object SelectorSettings {
       
       @scala.inline
-      def apply(close: String with js.UndefOr[String]): SelectorSettings = {
+      def apply(close: String & js.UndefOr[String]): SelectorSettings = {
         val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
         __obj.asInstanceOf[SelectorSettings]
       }
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default '.close.icon'
           */
-        var close: String = js.native
+        var close: String
       }
       object Impl {
         
@@ -313,15 +310,14 @@ object SemanticUI {
       }
       
       /* Inlined std.Pick<semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl, 'close'> & std.Partial<std.Pick<semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl, keyof semantic-ui-nag.SemanticUI.Nag.SelectorSettings._Impl>> */
-      @js.native
       trait Param extends StObject {
         
-        var close: String with js.UndefOr[String] = js.native
+        var close: String & js.UndefOr[String]
       }
       object Param {
         
         @scala.inline
-        def apply(close: String with js.UndefOr[String]): typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param = {
+        def apply(close: String & js.UndefOr[String]): typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param = {
           val __obj = js.Dynamic.literal(close = close.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param]
         }
@@ -330,7 +326,7 @@ object SemanticUI {
         implicit class ParamMutableBuilder[Self <: typings.semanticUiNag.SemanticUI.Nag.SelectorSettings.Param] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setClose(value: String with js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+          def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
         }
       }
       
@@ -338,74 +334,73 @@ object SemanticUI {
       implicit class SelectorSettingsMutableBuilder[Self <: SelectorSettings] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setClose(value: String with js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
+        def setClose(value: String & js.UndefOr[String]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       }
     }
   }
   
   object NagSettings {
     
-    @js.native
     trait Impl extends StObject {
       
-      var animation: AnimationSettings = js.native
+      var animation: AnimationSettings
       
       // endregion
       // region DOM Settings
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * @default false
         */
-      var context: `false` | String | JQuery = js.native
+      var context: `false` | String | JQuery
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * @default false
         */
-      var detachable: Boolean = js.native
+      var detachable: Boolean
       
       /**
         * set to zero to require manually dismissal, otherwise hides on its own
         *
         * @default 0
         */
-      var displayTime: Double = js.native
+      var displayTime: Double
       
       /**
         * @default false
         */
-      var domain: `false` | String = js.native
+      var domain: `false` | String
       
       /**
         * @default 'easeOutQuad'
         */
-      var easing: String = js.native
+      var easing: String
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * @default 30
         */
-      var expires: Double = js.native
+      var expires: Double
       
       /**
         * @default 'nag'
         */
-      var key: js.Any = js.native
+      var key: js.Any
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -413,21 +408,21 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       // endregion
       // region Callbacks
-      def onHide(): Unit = js.native
+      def onHide(): Unit
       
       /**
         * @default '/'
         */
-      var path: String = js.native
+      var path: String
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       // region Behavior
       /**
@@ -435,36 +430,36 @@ object SemanticUI {
         *
         * @default false
         */
-      var persist: Boolean = js.native
+      var persist: Boolean
       
-      var selector: SelectorSettings = js.native
+      var selector: SelectorSettings
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * @default 500
         */
-      var speed: Double = js.native
+      var speed: Double
       
       /**
         * type of storage to use
         *
         * @default 'cookie'
         */
-      var storageMethod: cookie | localstorage | sessionstorage = js.native
+      var storageMethod: cookie | localstorage | sessionstorage
       
       /**
         * @default 'dismiss'
         */
-      var value: js.Any = js.native
+      var value: js.Any
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -572,7 +567,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplpersist | PickImpldisplayTime | PickImplanimation | PickImplcontext | PickImpldetachable | PickImplexpires | PickImpldomain | PickImplpath | PickImplstorageMethod | PickImplkey | PickImplvalue | PickImplspeed | PickImpleasing | PickImplonHide | PickImplclassName | PickImplselector | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplpersist | PickImpldisplayTime | PickImplanimation | PickImplcontext | PickImpldetachable | PickImplexpires | PickImpldomain | PickImplpath | PickImplstorageMethod | PickImplkey | PickImplvalue | PickImplspeed | PickImpleasing | PickImplonHide | PickImplclassName | PickImplselector | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/nag.html}

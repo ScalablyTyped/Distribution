@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Players")
@@ -33,7 +32,7 @@ class ResourcePlayers protected () extends StObject {
     */
   def hide(): GaxiosPromise[Unit] = js.native
   def hide(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def hide(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def hide(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def hide(params: ParamsResourcePlayersHide): GaxiosPromise[Unit] = js.native
   def hide(params: ParamsResourcePlayersHide, callback: BodyResponseCallback[Unit]): Unit = js.native
   def hide(
@@ -61,7 +60,7 @@ class ResourcePlayers protected () extends StObject {
     */
   def unhide(): GaxiosPromise[Unit] = js.native
   def unhide(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def unhide(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def unhide(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def unhide(params: ParamsResourcePlayersUnhide): GaxiosPromise[Unit] = js.native
   def unhide(params: ParamsResourcePlayersUnhide, callback: BodyResponseCallback[Unit]): Unit = js.native
   def unhide(

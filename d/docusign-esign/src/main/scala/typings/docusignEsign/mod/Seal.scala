@@ -3,21 +3,19 @@ package typings.docusignEsign.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Seal extends StObject {
   
   /**
     * Electronic seal configuration  properties
     */
-  var configuration: js.UndefOr[StringDictionary[String]] = js.native
+  var configuration: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Electronic Seal identifier
     */
-  var sealIdentifier: js.UndefOr[String] = js.native
+  var sealIdentifier: js.UndefOr[String] = js.undefined
 }
 object Seal {
   

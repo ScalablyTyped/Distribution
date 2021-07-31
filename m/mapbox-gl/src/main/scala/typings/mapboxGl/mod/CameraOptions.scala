@@ -2,26 +2,24 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraOptions extends StObject {
   
   /** If zooming, the zoom center (defaults to map center) */
-  var around: js.UndefOr[LngLatLike] = js.native
+  var around: js.UndefOr[LngLatLike] = js.undefined
   
   /** Map rotation bearing in degrees counter-clockwise from north */
-  var bearing: js.UndefOr[Double] = js.native
+  var bearing: js.UndefOr[Double] = js.undefined
   
   /** Map center */
-  var center: js.UndefOr[LngLatLike] = js.native
+  var center: js.UndefOr[LngLatLike] = js.undefined
   
   /** Map angle in degrees at which the camera is looking at the ground */
-  var pitch: js.UndefOr[Double] = js.native
+  var pitch: js.UndefOr[Double] = js.undefined
   
   /** Map zoom level */
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
 }
 object CameraOptions {
   

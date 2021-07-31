@@ -2,14 +2,12 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlattenOptions extends StObject {
   
   /** background colour, parsed by the color module, defaults to black. (optional, default {r:0,g:0,b:0}) */
-  var background: js.UndefOr[Color] = js.native
+  var background: js.UndefOr[Color] = js.undefined
 }
 object FlattenOptions {
   

@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * API for proofreading a text
   * @since OOo 3.0.1
   */
-@js.native
-trait XProofreader extends XSupportedLocales {
+trait XProofreader
+  extends StObject
+     with XSupportedLocales {
   
   /**
     * start checking
@@ -34,23 +34,23 @@ trait XProofreader extends XSupportedLocales {
     nStartOfSentencePosition: Double,
     nSuggestedBehindEndOfSentencePosition: Double,
     aProperties: SeqEquiv[PropertyValue]
-  ): ProofreadingResult = js.native
+  ): ProofreadingResult
   
   /**
     * disables a specific rule for a given locale.
     *
     * If the locale is empty the rule should be ignored for all languages.
     */
-  def ignoreRule(aRuleIdentifier: String, aLocale: Locale): Unit = js.native
+  def ignoreRule(aRuleIdentifier: String, aLocale: Locale): Unit
   
   /**
     * whether is the text checked by the spell checker
     * @returns true if it is also a spell checker
     */
-  def isSpellChecker(): Boolean = js.native
+  def isSpellChecker(): Boolean
   
   /** sets all rules back to their default settings. */
-  def resetIgnoreRules(): Unit = js.native
+  def resetIgnoreRules(): Unit
 }
 object XProofreader {
   

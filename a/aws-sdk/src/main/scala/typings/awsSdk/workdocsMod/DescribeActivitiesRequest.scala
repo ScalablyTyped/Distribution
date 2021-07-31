@@ -2,61 +2,59 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActivitiesRequest extends StObject {
   
   /**
     * Specifies which activity types to include in the response. If this field is left empty, all activity types are returned.
     */
-  var ActivityTypes: js.UndefOr[ActivityNamesFilterType] = js.native
+  var ActivityTypes: js.UndefOr[ActivityNamesFilterType] = js.undefined
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The timestamp that determines the end time of the activities. The response includes the activities performed before the specified timestamp.
     */
-  var EndTime: js.UndefOr[TimestampType] = js.native
+  var EndTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * Includes indirect activities. An indirect activity results from a direct activity performed on a parent resource. For example, sharing a parent folder (the direct activity) shares all of the subfolders and documents within the parent folder (the indirect activity).
     */
-  var IncludeIndirectActivities: js.UndefOr[BooleanType] = js.native
+  var IncludeIndirectActivities: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The maximum number of items to return.
     */
-  var Limit: js.UndefOr[LimitType] = js.native
+  var Limit: js.UndefOr[LimitType] = js.undefined
   
   /**
     * The marker for the next set of results.
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
   
   /**
     * The ID of the organization. This is a mandatory parameter when using administrative API (SigV4) requests.
     */
-  var OrganizationId: js.UndefOr[IdType] = js.native
+  var OrganizationId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The document or folder ID for which to describe activity types.
     */
-  var ResourceId: js.UndefOr[IdType] = js.native
+  var ResourceId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The timestamp that determines the starting time of the activities. The response includes the activities performed after the specified timestamp.
     */
-  var StartTime: js.UndefOr[TimestampType] = js.native
+  var StartTime: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the user who performed the action. The response includes activities pertaining to this user. This is an optional parameter and is only applicable for administrative API (SigV4) requests.
     */
-  var UserId: js.UndefOr[IdType] = js.native
+  var UserId: js.UndefOr[IdType] = js.undefined
 }
 object DescribeActivitiesRequest {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GenericSignedAttestation extends StObject {
   
   /**
     * Type (for example schema) of the attestation payload that was signed. The verifier must ensure that the provided type is one that the verifier supports, and that the attestation
     * payload is a valid instantiation of that type (for example by validating a JSON schema).
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /** The serialized payload that is verified by one or more `signatures`. The encoding and semantic meaning of this payload must match what is set in `content_type`. */
-  var serializedPayload: js.UndefOr[String] = js.native
+  var serializedPayload: js.UndefOr[String] = js.undefined
   
   /**
     * One or more signatures over `serialized_payload`. Verifier implementations should consider this attestation message verified if at least one `signature` verifies
     * `serialized_payload`. See `Signature` in common.proto for more details on signature structure and verification.
     */
-  var signatures: js.UndefOr[js.Array[Signature]] = js.native
+  var signatures: js.UndefOr[js.Array[Signature]] = js.undefined
 }
 object GenericSignedAttestation {
   

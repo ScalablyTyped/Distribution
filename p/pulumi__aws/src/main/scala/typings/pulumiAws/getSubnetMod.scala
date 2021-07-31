@@ -5,79 +5,77 @@ import typings.pulumiAws.inputMod.ec2.GetSubnetFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSubnetMod {
   
-  @JSImport("@pulumi/aws/ec2/getSubnet", "getSubnet")
+  @JSImport("@pulumi/aws/ec2/getSubnet", JSImport.Namespace)
   @js.native
-  def getSubnet(): js.Promise[GetSubnetResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSubnet", "getSubnet")
-  @js.native
-  def getSubnet(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSubnetResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSubnet", "getSubnet")
-  @js.native
-  def getSubnet(args: GetSubnetArgs): js.Promise[GetSubnetResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSubnet", "getSubnet")
-  @js.native
-  def getSubnet(args: GetSubnetArgs, opts: InvokeOptions): js.Promise[GetSubnetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSubnet(): js.Promise[GetSubnetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubnet")().asInstanceOf[js.Promise[GetSubnetResult]]
+  @scala.inline
+  def getSubnet(args: Unit, opts: InvokeOptions): js.Promise[GetSubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubnet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSubnetResult]]
+  @scala.inline
+  def getSubnet(args: GetSubnetArgs): js.Promise[GetSubnetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubnet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSubnetResult]]
+  @scala.inline
+  def getSubnet(args: GetSubnetArgs, opts: InvokeOptions): js.Promise[GetSubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSubnet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSubnetResult]]
+  
   trait GetSubnetArgs extends StObject {
     
     /**
       * The availability zone where the
       * subnet must reside.
       */
-    val availabilityZone: js.UndefOr[String] = js.native
+    val availabilityZone: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the Availability Zone for the subnet.
       */
-    val availabilityZoneId: js.UndefOr[String] = js.native
+    val availabilityZoneId: js.UndefOr[String] = js.undefined
     
     /**
       * The cidr block of the desired subnet.
       */
-    val cidrBlock: js.UndefOr[String] = js.native
+    val cidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * Boolean constraint for whether the desired
       * subnet must be the default subnet for its associated availability zone.
       */
-    val defaultForAz: js.UndefOr[Boolean] = js.native
+    val defaultForAz: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSubnetFilter]] = js.undefined
     
     /**
       * The id of the specific subnet to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The Ipv6 cidr block of the desired subnet
       */
-    val ipv6CidrBlock: js.UndefOr[String] = js.native
+    val ipv6CidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * The state that the desired subnet must have.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired subnet.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The id of the VPC that the desired subnet belongs to.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetSubnetArgs {
     
@@ -155,49 +153,48 @@ object getSubnetMod {
     }
   }
   
-  @js.native
   trait GetSubnetResult extends StObject {
     
     /**
       * The ARN of the subnet.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val assignIpv6AddressOnCreation: Boolean = js.native
+    val assignIpv6AddressOnCreation: Boolean
     
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
-    val availabilityZoneId: String = js.native
+    val availabilityZoneId: String
     
-    val cidrBlock: String = js.native
+    val cidrBlock: String
     
-    val defaultForAz: Boolean = js.native
+    val defaultForAz: Boolean
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSubnetFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSubnetFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
-    val ipv6CidrBlock: String = js.native
+    val ipv6CidrBlock: String
     
-    val ipv6CidrBlockAssociationId: String = js.native
+    val ipv6CidrBlockAssociationId: String
     
-    val mapPublicIpOnLaunch: Boolean = js.native
+    val mapPublicIpOnLaunch: Boolean
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: String = js.native
+    val outpostArn: String
     
     /**
       * The ID of the AWS account that owns the subnet.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
-    val state: String = js.native
+    val state: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetSubnetResult {
     

@@ -35,15 +35,14 @@ import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArc
 import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidParameterValueExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidParameterValueExceptionDetails> * / any */ @js.native
-  trait InvalidParameterValueException
-    extends AbortMultipartUploadExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidParameterValueExceptionDetails> * / any */ trait InvalidParameterValueException
+    extends StObject
+       with AbortMultipartUploadExceptionsUnion
        with AbortVaultLockExceptionsUnion
        with AddTagsToVaultExceptionsUnion
        with CompleteMultipartUploadExceptionsUnion
@@ -77,15 +76,13 @@ object typesInvalidParameterValueExceptionMod {
        with UploadArchiveExceptionsUnion
        with UploadMultipartPartExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException
   }
   object InvalidParameterValueException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.InvalidParameterValueException
-    ): InvalidParameterValueException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidParameterValueException = {
+      val __obj = js.Dynamic.literal(name = "InvalidParameterValueException")
       __obj.asInstanceOf[InvalidParameterValueException]
     }
     
@@ -99,23 +96,22 @@ object typesInvalidParameterValueExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidParameterValueExceptionDetails extends StObject {
     
     /**
       * <p>400 Bad Request</p>
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Returned if a parameter of the request is incorrectly specified.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Client</p>
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InvalidParameterValueExceptionDetails {
     

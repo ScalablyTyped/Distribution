@@ -4,11 +4,12 @@ import typings.std.EventTarget
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait VRDisplay extends EventTarget {
+trait VRDisplay
+  extends StObject
+     with EventTarget {
   
   /**
     * Passing the value returned by `requestAnimationFrame` to

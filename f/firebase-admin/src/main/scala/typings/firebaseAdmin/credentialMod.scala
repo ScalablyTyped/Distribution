@@ -3,12 +3,15 @@ package typings.firebaseAdmin
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object credentialMod {
   
   object credential {
+    
+    @JSImport("firebase-admin/lib/credential", "credential")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a credential created from the
@@ -44,12 +47,10 @@ object credentialMod {
       * @return {!admin.credential.Credential} A credential authenticated via Google
       *   Application Default Credentials that can be used to initialize an app.
       */
-    @JSImport("firebase-admin/lib/credential", "credential.applicationDefault")
-    @js.native
-    def applicationDefault(): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.applicationDefault")
-    @js.native
-    def applicationDefault(httpAgent: Agent): Credential = js.native
+    @scala.inline
+    def applicationDefault(): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")().asInstanceOf[Credential]
+    @scala.inline
+    def applicationDefault(httpAgent: Agent): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("applicationDefault")(httpAgent.asInstanceOf[js.Any]).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided service account that grants
@@ -96,18 +97,14 @@ object credentialMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @JSImport("firebase-admin/lib/credential", "credential.cert")
-    @js.native
-    def cert(serviceAccountPathOrObject: String): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.cert")
-    @js.native
-    def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.cert")
-    @js.native
-    def cert(serviceAccountPathOrObject: ServiceAccount): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.cert")
-    @js.native
-    def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = js.native
+    @scala.inline
+    def cert(serviceAccountPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    @scala.inline
+    def cert(serviceAccountPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    @scala.inline
+    def cert(serviceAccountPathOrObject: ServiceAccount): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    @scala.inline
+    def cert(serviceAccountPathOrObject: ServiceAccount, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("cert")(serviceAccountPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
     /**
       * Returns a credential created from the provided refresh token that grants
@@ -142,18 +139,14 @@ object credentialMod {
       * @return A credential authenticated via the
       *   provided service account that can be used to initialize an app.
       */
-    @JSImport("firebase-admin/lib/credential", "credential.refreshToken")
-    @js.native
-    def refreshToken(refreshTokenPathOrObject: String): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.refreshToken")
-    @js.native
-    def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.refreshToken")
-    @js.native
-    def refreshToken(refreshTokenPathOrObject: js.Object): Credential = js.native
-    @JSImport("firebase-admin/lib/credential", "credential.refreshToken")
-    @js.native
-    def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = js.native
+    @scala.inline
+    def refreshToken(refreshTokenPathOrObject: String): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    @scala.inline
+    def refreshToken(refreshTokenPathOrObject: String, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
+    @scala.inline
+    def refreshToken(refreshTokenPathOrObject: js.Object): Credential = ^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any]).asInstanceOf[Credential]
+    @scala.inline
+    def refreshToken(refreshTokenPathOrObject: js.Object, httpAgent: Agent): Credential = (^.asInstanceOf[js.Dynamic].applyDynamic("refreshToken")(refreshTokenPathOrObject.asInstanceOf[js.Any], httpAgent.asInstanceOf[js.Any])).asInstanceOf[Credential]
     
     /**
       * Interface that provides Google OAuth2 access tokens used to authenticate
@@ -163,7 +156,6 @@ object credentialMod {
       * use the default implementations provided by
       * {@link credential `admin.credential`}.
       */
-    @js.native
     trait Credential extends StObject {
       
       /**
@@ -177,7 +169,7 @@ object credentialMod {
         *
         * @return A Google OAuth2 access token object.
         */
-      def getAccessToken(): js.Promise[GoogleOAuthAccessToken] = js.native
+      def getAccessToken(): js.Promise[GoogleOAuthAccessToken]
     }
     object Credential {
       
@@ -196,12 +188,11 @@ object credentialMod {
     }
   }
   
-  @js.native
   trait GoogleOAuthAccessToken extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var expires_in: Double = js.native
+    var expires_in: Double
   }
   object GoogleOAuthAccessToken {
     
@@ -222,14 +213,13 @@ object credentialMod {
     }
   }
   
-  @js.native
   trait ServiceAccount extends StObject {
     
-    var clientEmail: js.UndefOr[String] = js.native
+    var clientEmail: js.UndefOr[String] = js.undefined
     
-    var privateKey: js.UndefOr[String] = js.native
+    var privateKey: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
   }
   object ServiceAccount {
     

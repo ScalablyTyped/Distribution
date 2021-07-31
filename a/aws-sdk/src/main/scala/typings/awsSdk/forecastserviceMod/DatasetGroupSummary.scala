@@ -2,31 +2,29 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetGroupSummary extends StObject {
   
   /**
     * When the dataset group was created.
     */
-  var CreationTime: js.UndefOr[Timestamp] = js.native
+  var CreationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the dataset group.
     */
-  var DatasetGroupArn: js.UndefOr[Arn] = js.native
+  var DatasetGroupArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the dataset group.
     */
-  var DatasetGroupName: js.UndefOr[Name] = js.native
+  var DatasetGroupName: js.UndefOr[Name] = js.undefined
   
   /**
     * When the dataset group was created or last updated from a call to the UpdateDatasetGroup operation. While the dataset group is being updated, LastModificationTime is the current time of the ListDatasetGroups call.
     */
-  var LastModificationTime: js.UndefOr[Timestamp] = js.native
+  var LastModificationTime: js.UndefOr[Timestamp] = js.undefined
 }
 object DatasetGroupSummary {
   

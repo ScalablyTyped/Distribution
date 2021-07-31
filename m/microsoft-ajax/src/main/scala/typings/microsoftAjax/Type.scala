@@ -2,7 +2,6 @@ package typings.microsoftAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -20,7 +19,7 @@ trait Type extends StObject {
     * @returns A value of the class that the base method returns. If the base method does not return a value, no value is returned.
     */
   def callBaseMethod(instance: js.Any, name: java.lang.String): js.Any = js.native
-  def callBaseMethod(instance: js.Any, name: java.lang.String, baseArguments: js.Array[_]): js.Any = js.native
+  def callBaseMethod(instance: js.Any, name: java.lang.String, baseArguments: js.Array[js.Any]): js.Any = js.native
   
   /**
     * Returns the base implementation of a method from the base class of the specified instance.
@@ -44,7 +43,7 @@ trait Type extends StObject {
     *
     * @return An Array object that contains the list of interfaces that the type implements.
     */
-  def getInterfaces(): js.Array[_] = js.native
+  def getInterfaces(): js.Array[js.Any] = js.native
   
   /**
     * Returns the name of the type of the instance.
@@ -77,7 +76,7 @@ trait Type extends StObject {
     *           (Optional) The arguments for the base constructor. Can be null.
     */
   def initializeBase(instance: js.Any): js.Any = js.native
-  def initializeBase(instance: js.Any, baseArguments: js.Array[_]): js.Any = js.native
+  def initializeBase(instance: js.Any, baseArguments: js.Array[js.Any]): js.Any = js.native
   
   /**
     * Determines whether an instance implements an interface.
@@ -106,9 +105,9 @@ trait Type extends StObject {
     * @return The registered type.
     */
   def registerClass(typeName: java.lang.String): js.Any = js.native
-  def registerClass(typeName: java.lang.String, baseType: js.UndefOr[scala.Nothing], interfaceTypes: js.Array[_]): js.Any = js.native
   def registerClass(typeName: java.lang.String, baseType: js.Any): js.Any = js.native
-  def registerClass(typeName: java.lang.String, baseType: js.Any, interfaceTypes: js.Array[_]): js.Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: js.Any, interfaceTypes: js.Array[js.Any]): js.Any = js.native
+  def registerClass(typeName: java.lang.String, baseType: Unit, interfaceTypes: js.Array[js.Any]): js.Any = js.native
   
   /**
     * Registers an enumeration.

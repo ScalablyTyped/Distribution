@@ -5,31 +5,29 @@ import typings.vegaLite.srcMarkMod.MarkConfig
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Groupsubtitle[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   /**
     * Default style for chart subtitles
     */
-  var `group-subtitle`: js.UndefOr[MarkConfig[ES]] = js.native
+  var `group-subtitle`: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /**
     * Default style for chart titles
     */
-  var `group-title`: js.UndefOr[MarkConfig[ES]] = js.native
+  var `group-title`: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /**
     * Default style for axis, legend, and header labels.
     */
-  var `guide-label`: js.UndefOr[MarkConfig[ES]] = js.native
+  var `guide-label`: js.UndefOr[MarkConfig[ES]] = js.undefined
   
   /**
     * Default style for axis, legend, and header titles.
     */
-  var `guide-title`: js.UndefOr[MarkConfig[ES]] = js.native
+  var `guide-title`: js.UndefOr[MarkConfig[ES]] = js.undefined
 }
 object Groupsubtitle {
   
@@ -40,7 +38,7 @@ object Groupsubtitle {
   }
   
   @scala.inline
-  implicit class GroupsubtitleMutableBuilder[Self <: Groupsubtitle[_], ES /* <: ExprRef | SignalRef */] (val x: Self with Groupsubtitle[ES]) extends AnyVal {
+  implicit class GroupsubtitleMutableBuilder[Self <: Groupsubtitle[?], ES /* <: ExprRef | SignalRef */] (val x: Self & Groupsubtitle[ES]) extends AnyVal {
     
     @scala.inline
     def `setGroup-subtitle`(value: MarkConfig[ES]): Self = StObject.set(x, "group-subtitle", value.asInstanceOf[js.Any])

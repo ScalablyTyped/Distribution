@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 object sslMod {
+  
+  @JSImport("ssl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ssl", "BADCERT_CN_MISMATCH")
   @js.native
@@ -30,15 +33,21 @@ object sslMod {
   
   @JSImport("ssl", "Handler")
   @js.native
-  class Handler () extends ClassSslHandler
+  class Handler ()
+    extends StObject
+       with ClassSslHandler
   
   @JSImport("ssl", "Server")
   @js.native
-  class Server () extends ClassSslServer
+  class Server ()
+    extends StObject
+       with ClassSslServer
   
   @JSImport("ssl", "Socket")
   @js.native
-  class Socket () extends ClassSslSocket
+  class Socket ()
+    extends StObject
+       with ClassSslSocket
   
   @JSImport("ssl", "VERIFY_NONE")
   @js.native
@@ -56,23 +65,18 @@ object sslMod {
   @js.native
   val ca: ClassX509Cert = js.native
   
-  @JSImport("ssl", "connect")
-  @js.native
-  def connect(url: String): ClassStream = js.native
-  @JSImport("ssl", "connect")
-  @js.native
-  def connect(url: String, timeout: Double): ClassStream = js.native
+  @scala.inline
+  def connect(url: String): ClassStream = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[ClassStream]
+  @scala.inline
+  def connect(url: String, timeout: Double): ClassStream = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[ClassStream]
   
-  @JSImport("ssl", "loadClientCertFile")
-  @js.native
-  def loadClientCertFile(crtFile: String, keyFile: String): Unit = js.native
-  @JSImport("ssl", "loadClientCertFile")
-  @js.native
-  def loadClientCertFile(crtFile: String, keyFile: String, password: String): Unit = js.native
+  @scala.inline
+  def loadClientCertFile(crtFile: String, keyFile: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def loadClientCertFile(crtFile: String, keyFile: String, password: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadClientCertFile")(crtFile.asInstanceOf[js.Any], keyFile.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ssl", "loadRootCerts")
-  @js.native
-  def loadRootCerts(): Unit = js.native
+  @scala.inline
+  def loadRootCerts(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadRootCerts")().asInstanceOf[Unit]
   
   @JSImport("ssl", "max_version")
   @js.native
@@ -82,9 +86,8 @@ object sslMod {
   @js.native
   val minVersion: Double = js.native
   
-  @JSImport("ssl", "setClientCert")
-  @js.native
-  def setClientCert(crt: ClassX509Cert, key: ClassPKey): Unit = js.native
+  @scala.inline
+  def setClientCert(crt: ClassX509Cert, key: ClassPKey): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setClientCert")(crt.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("ssl", "ssl3")
   @js.native

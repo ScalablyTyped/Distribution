@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -56,9 +55,8 @@ object BooleanType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.create")
-  @js.native
-  def create(model: IModel): BooleanType = js.native
+  @scala.inline
+  def create(model: IModel): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -69,9 +67,8 @@ object BooleanType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): BooleanType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -82,9 +79,8 @@ object BooleanType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInJavaActionParameterUnderJavaType")
-  @js.native
-  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): BooleanType = js.native
+  @scala.inline
+  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /**
     * Creates and returns a new BooleanType instance in the SDK and on the server.
@@ -95,9 +91,8 @@ object BooleanType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.createInJavaActionUnderJavaReturnType")
-  @js.native
-  def createInJavaActionUnderJavaReturnType(container: JavaAction): BooleanType = js.native
+  @scala.inline
+  def createInJavaActionUnderJavaReturnType(container: JavaAction): BooleanType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[BooleanType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.BooleanType.structureTypeName")

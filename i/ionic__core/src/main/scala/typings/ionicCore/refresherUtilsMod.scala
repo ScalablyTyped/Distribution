@@ -8,64 +8,52 @@ import typings.std.NodeListOf
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refresherUtilsMod {
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "createPullingAnimation")
+  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", JSImport.Namespace)
   @js.native
-  def createPullingAnimation(`type`: RefresherAnimationType, pullingSpinner: HTMLElement): Animation = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "createSnapBackAnimation")
-  @js.native
-  def createSnapBackAnimation(pullingRefresherIcon: HTMLElement): Animation = js.native
+  @scala.inline
+  def createPullingAnimation(`type`: RefresherAnimationType, pullingSpinner: HTMLElement): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("createPullingAnimation")(`type`.asInstanceOf[js.Any], pullingSpinner.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "getRefresherAnimationType")
-  @js.native
-  def getRefresherAnimationType(contentEl: HTMLIonContentElement): RefresherAnimationType = js.native
+  @scala.inline
+  def createSnapBackAnimation(pullingRefresherIcon: HTMLElement): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createSnapBackAnimation")(pullingRefresherIcon.asInstanceOf[js.Any]).asInstanceOf[Animation]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "handleScrollWhilePulling")
-  @js.native
-  def handleScrollWhilePulling(spinner: HTMLElement, ticks: NodeListOf[SVGElement], opacity: Double, currentTickToShow: Double): Unit = js.native
+  @scala.inline
+  def getRefresherAnimationType(contentEl: HTMLIonContentElement): RefresherAnimationType = ^.asInstanceOf[js.Dynamic].applyDynamic("getRefresherAnimationType")(contentEl.asInstanceOf[js.Any]).asInstanceOf[RefresherAnimationType]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "handleScrollWhileRefreshing")
-  @js.native
-  def handleScrollWhileRefreshing(spinner: HTMLElement, lastVelocityY: Double): Unit = js.native
+  @scala.inline
+  def handleScrollWhilePulling(spinner: HTMLElement, ticks: NodeListOf[SVGElement], opacity: Double, currentTickToShow: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleScrollWhilePulling")(spinner.asInstanceOf[js.Any], ticks.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any], currentTickToShow.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "setSpinnerOpacity")
-  @js.native
-  def setSpinnerOpacity(spinner: HTMLElement, opacity: Double): Unit = js.native
+  @scala.inline
+  def handleScrollWhileRefreshing(spinner: HTMLElement, lastVelocityY: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("handleScrollWhileRefreshing")(spinner.asInstanceOf[js.Any], lastVelocityY.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "shouldUseNativeRefresher")
-  @js.native
-  def shouldUseNativeRefresher(referenceEl: HTMLIonRefresherElement, mode: String): Boolean = js.native
+  @scala.inline
+  def setSpinnerOpacity(spinner: HTMLElement, opacity: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSpinnerOpacity")(spinner.asInstanceOf[js.Any], opacity.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "transitionEndAsync")
-  @js.native
-  def transitionEndAsync(): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "transitionEndAsync")
-  @js.native
-  def transitionEndAsync(el: Null, expectedDuration: Double): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "transitionEndAsync")
-  @js.native
-  def transitionEndAsync(el: HTMLElement): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "transitionEndAsync")
-  @js.native
-  def transitionEndAsync(el: HTMLElement, expectedDuration: Double): js.Promise[_] = js.native
+  @scala.inline
+  def shouldUseNativeRefresher(referenceEl: HTMLIonRefresherElement, mode: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldUseNativeRefresher")(referenceEl.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "translateElement")
-  @js.native
-  def translateElement(): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "translateElement")
-  @js.native
-  def translateElement(el: js.UndefOr[scala.Nothing], value: String): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "translateElement")
-  @js.native
-  def translateElement(el: HTMLElement): js.Promise[_] = js.native
-  @JSImport("@ionic/core/dist/types/components/refresher/refresher.utils", "translateElement")
-  @js.native
-  def translateElement(el: HTMLElement, value: String): js.Promise[_] = js.native
+  @scala.inline
+  def transitionEndAsync(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("transitionEndAsync")().asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def transitionEndAsync(el: Null, expectedDuration: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionEndAsync")(el.asInstanceOf[js.Any], expectedDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def transitionEndAsync(el: HTMLElement): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("transitionEndAsync")(el.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def transitionEndAsync(el: HTMLElement, expectedDuration: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionEndAsync")(el.asInstanceOf[js.Any], expectedDuration.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  
+  @scala.inline
+  def translateElement(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("translateElement")().asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def translateElement(el: Unit, value: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("translateElement")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def translateElement(el: HTMLElement): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("translateElement")(el.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def translateElement(el: HTMLElement, value: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("translateElement")(el.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.ionicCore.ionicCoreStrings.scale

@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ShapeFill object, for use in `shapeFill.set({ ... })`. */
-@js.native
 trait ShapeFillUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ShapeFillUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ShapeFillUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var transparency: js.UndefOr[Double] = js.native
+  var transparency: js.UndefOr[Double] = js.undefined
 }
 object ShapeFillUpdateData {
   

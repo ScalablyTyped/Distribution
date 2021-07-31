@@ -3,26 +3,26 @@ package typings.got.mod
 import typings.got.gotBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GotJSONOptions extends GotOptions[String | Null] {
+trait GotJSONOptions
+  extends StObject
+     with GotOptions[String | Null] {
   
   // Body must be an object or array. See https://github.com/sindresorhus/got/issues/511
-  var body: js.UndefOr[js.Object] = js.native
+  var body: js.UndefOr[js.Object] = js.undefined
   
-  var form: js.UndefOr[Boolean] = js.native
+  var form: js.UndefOr[Boolean] = js.undefined
   
-  var hooks: js.UndefOr[Hooks[GotJSONOptions, js.Object]] = js.native
+  var hooks: js.UndefOr[Hooks[GotJSONOptions, js.Object]] = js.undefined
   
-  var json: `true` = js.native
+  var json: `true`
 }
 object GotJSONOptions {
   
   @scala.inline
-  def apply(json: `true`): GotJSONOptions = {
-    val __obj = js.Dynamic.literal(json = json.asInstanceOf[js.Any])
+  def apply(): GotJSONOptions = {
+    val __obj = js.Dynamic.literal(json = true)
     __obj.asInstanceOf[GotJSONOptions]
   }
   

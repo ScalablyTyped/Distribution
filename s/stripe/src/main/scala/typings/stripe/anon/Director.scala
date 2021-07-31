@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Director extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait Director extends StObject {
     * Directors are typically members of the governing board of the company, or responsible for ensuring the
     * company meets its regulatory obligations.
     */
-  var director: js.UndefOr[Boolean] = js.native
+  var director: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the person has significant responsibility to control, manage, or direct the organization.
     */
-  var executive: js.UndefOr[Boolean] = js.native
+  var executive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the person is an owner of the account’s legal entity.
     */
-  var owner: js.UndefOr[Boolean] = js.native
+  var owner: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The percent owned by the person of the account’s legal entity.
     */
-  var percent_ownership: js.UndefOr[Double] = js.native
+  var percent_ownership: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the person is authorized as the primary representative of the account.
@@ -36,12 +34,12 @@ trait Director extends StObject {
     * and general information about the account. There can only be one representative at any given time.
     * At the time the account is created, this person should be set to the person responsible for opening the account.
     */
-  var representative: js.UndefOr[Boolean] = js.native
+  var representative: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The person’s title (e.g., CEO, Support Engineer).
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Director {
   

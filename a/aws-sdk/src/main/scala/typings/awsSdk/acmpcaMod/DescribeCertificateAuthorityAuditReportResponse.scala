@@ -2,31 +2,29 @@ package typings.awsSdk.acmpcaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCertificateAuthorityAuditReportResponse extends StObject {
   
   /**
     * Specifies whether report creation is in progress, has succeeded, or has failed.
     */
-  var AuditReportStatus: js.UndefOr[typings.awsSdk.acmpcaMod.AuditReportStatus] = js.native
+  var AuditReportStatus: js.UndefOr[typings.awsSdk.acmpcaMod.AuditReportStatus] = js.undefined
   
   /**
     * The date and time at which the report was created.
     */
-  var CreatedAt: js.UndefOr[TStamp] = js.native
+  var CreatedAt: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Name of the S3 bucket that contains the report.
     */
-  var S3BucketName: js.UndefOr[typings.awsSdk.acmpcaMod.S3BucketName] = js.native
+  var S3BucketName: js.UndefOr[typings.awsSdk.acmpcaMod.S3BucketName] = js.undefined
   
   /**
     * S3 key that uniquely identifies the report file in your S3 bucket.
     */
-  var S3Key: js.UndefOr[typings.awsSdk.acmpcaMod.S3Key] = js.native
+  var S3Key: js.UndefOr[typings.awsSdk.acmpcaMod.S3Key] = js.undefined
 }
 object DescribeCertificateAuthorityAuditReportResponse {
   

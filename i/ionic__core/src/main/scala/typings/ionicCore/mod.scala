@@ -210,10 +210,13 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ionic/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ionic/core", "Config")
   @js.native
@@ -257,127 +260,109 @@ object mod {
   
   object actionSheetController {
     
-    @JSImport("@ionic/core", "actionSheetController.create")
+    @JSImport("@ionic/core", "actionSheetController")
     @js.native
-    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "actionSheetController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ActionSheetOptions): js.Promise[HTMLIonActionSheetElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonActionSheetElement]]
     
-    @JSImport("@ionic/core", "actionSheetController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonActionSheetElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonActionSheetElement]]]
   }
   
   object alertController {
     
-    @JSImport("@ionic/core", "alertController.create")
+    @JSImport("@ionic/core", "alertController")
     @js.native
-    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "alertController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: AlertOptions): js.Promise[HTMLIonAlertElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonAlertElement]]
     
-    @JSImport("@ionic/core", "alertController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonAlertElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonAlertElement]]]
   }
   
   @JSImport("@ionic/core", "config")
   @js.native
   val config: typings.ionicCore.configMod.Config_ = js.native
   
-  @JSImport("@ionic/core", "configFromSession")
-  @js.native
-  def configFromSession(win: Window): js.Any = js.native
+  @scala.inline
+  def configFromSession(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromSession")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core", "configFromURL")
-  @js.native
-  def configFromURL(win: Window): js.Any = js.native
+  @scala.inline
+  def configFromURL(win: Window): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configFromURL")(win.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("@ionic/core", "createAnimation")
-  @js.native
-  def createAnimation(): Animation = js.native
-  @JSImport("@ionic/core", "createAnimation")
-  @js.native
-  def createAnimation(animationId: String): Animation = js.native
+  @scala.inline
+  def createAnimation(): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")().asInstanceOf[Animation]
+  @scala.inline
+  def createAnimation(animationId: String): Animation = ^.asInstanceOf[js.Dynamic].applyDynamic("createAnimation")(animationId.asInstanceOf[js.Any]).asInstanceOf[Animation]
   
-  @JSImport("@ionic/core", "createGesture")
-  @js.native
-  def createGesture(config: GestureConfig): Gesture = js.native
+  @scala.inline
+  def createGesture(config: GestureConfig): Gesture = ^.asInstanceOf[js.Dynamic].applyDynamic("createGesture")(config.asInstanceOf[js.Any]).asInstanceOf[Gesture]
   
-  @JSImport("@ionic/core", "getMode")
-  @js.native
-  def getMode(): Mode = js.native
+  @scala.inline
+  def getMode(): Mode = ^.asInstanceOf[js.Dynamic].applyDynamic("getMode")().asInstanceOf[Mode]
   
-  @JSImport("@ionic/core", "getPlatforms")
-  @js.native
+  @scala.inline
   def getPlatforms(): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
-  @JSImport("@ionic/core", "getPlatforms")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")().asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
+  @scala.inline
   def getPlatforms(win: js.Any): js.Array[
     ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatforms")(win.asInstanceOf[js.Any]).asInstanceOf[js.Array[
+    ios | ipad | iphone | android | phablet | tablet | cordova | capacitor | electron | pwa | mobile | mobileweb | desktop | hybrid
+  ]]
   
-  @JSImport("@ionic/core", "getTimeGivenProgression")
-  @js.native
+  @scala.inline
   def getTimeGivenProgression(
     p0: js.Array[Double],
     p1: js.Array[Double],
     p2: js.Array[Double],
     p3: js.Array[Double],
     progression: Double
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeGivenProgression")(p0.asInstanceOf[js.Any], p1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], p3.asInstanceOf[js.Any], progression.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("@ionic/core", "iosTransitionAnimation")
-  @js.native
-  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def iosTransitionAnimation(navEl: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("iosTransitionAnimation")(navEl.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
   @JSImport("@ionic/core", "isPlatform")
   @js.native
@@ -385,293 +370,238 @@ object mod {
   
   object loadingController {
     
-    @JSImport("@ionic/core", "loadingController.create")
+    @JSImport("@ionic/core", "loadingController")
     @js.native
-    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "loadingController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: LoadingOptions): js.Promise[HTMLIonLoadingElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonLoadingElement]]
     
-    @JSImport("@ionic/core", "loadingController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonLoadingElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonLoadingElement]]]
   }
   
-  @JSImport("@ionic/core", "mdTransitionAnimation")
-  @js.native
-  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = js.native
+  @scala.inline
+  def mdTransitionAnimation(_underscore: HTMLElement, opts: TransitionOptions): Animation = (^.asInstanceOf[js.Dynamic].applyDynamic("mdTransitionAnimation")(_underscore.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Animation]
   
   object menuController {
     
-    @JSImport("@ionic/core", "menuController.close")
+    @JSImport("@ionic/core", "menuController")
     @js.native
-    def close(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "menuController.close")
-    @js.native
-    def close(menu: String): js.Promise[Boolean] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "menuController._createAnimation")
-    @js.native
-    def createAnimation(`type`: String, menuCmp: MenuI): js.Any = js.native
+    @scala.inline
+    def close(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def close(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController.enable")
-    @js.native
-    def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
-    @JSImport("@ionic/core", "menuController.enable")
-    @js.native
-    def enable(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+    @scala.inline
+    def createAnimation(`type`: String, menuCmp: MenuI): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("_createAnimation")(`type`.asInstanceOf[js.Any], menuCmp.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@ionic/core", "menuController.get")
-    @js.native
-    def get(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
-    @JSImport("@ionic/core", "menuController.get")
-    @js.native
-    def get(menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+    @scala.inline
+    def enable(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    @scala.inline
+    def enable(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("enable")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @JSImport("@ionic/core", "menuController.getMenus")
-    @js.native
-    def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]] = js.native
+    @scala.inline
+    def get(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    @scala.inline
+    def get(menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @JSImport("@ionic/core", "menuController.getOpen")
-    @js.native
-    def getOpen(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+    @scala.inline
+    def getMenus(): js.Promise[js.Array[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMenus")().asInstanceOf[js.Promise[js.Array[HTMLIonMenuElement]]]
     
-    @JSImport("@ionic/core", "menuController._getOpenSync")
-    @js.native
-    def getOpenSync(): js.UndefOr[HTMLIonMenuElement] = js.native
+    @scala.inline
+    def getOpen(): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getOpen")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @JSImport("@ionic/core", "menuController.isAnimating")
-    @js.native
-    def isAnimating(): js.Promise[Boolean] = js.native
+    @scala.inline
+    def getOpenSync(): js.UndefOr[HTMLIonMenuElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("_getOpenSync")().asInstanceOf[js.UndefOr[HTMLIonMenuElement]]
     
-    @JSImport("@ionic/core", "menuController.isEnabled")
-    @js.native
-    def isEnabled(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "menuController.isEnabled")
-    @js.native
-    def isEnabled(menu: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isAnimating(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isAnimating")().asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController.isOpen")
-    @js.native
-    def isOpen(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "menuController.isOpen")
-    @js.native
-    def isOpen(menu: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isEnabled(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def isEnabled(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController.open")
-    @js.native
-    def open(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "menuController.open")
-    @js.native
-    def open(menu: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isOpen(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def isOpen(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isOpen")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController._register")
-    @js.native
-    def register(menu: MenuI): Unit = js.native
+    @scala.inline
+    def open(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def open(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController.registerAnimation")
-    @js.native
-    def registerAnimation(name: String, animation: AnimationBuilder): Unit = js.native
+    @scala.inline
+    def register(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_register")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ionic/core", "menuController._setActiveMenu")
-    @js.native
-    def setActiveMenu(menu: MenuI): Unit = js.native
+    @scala.inline
+    def registerAnimation(name: String, animation: AnimationBuilder): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerAnimation")(name.asInstanceOf[js.Any], animation.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@ionic/core", "menuController._setOpen")
-    @js.native
-    def setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = js.native
+    @scala.inline
+    def setActiveMenu(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_setActiveMenu")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@ionic/core", "menuController.swipeGesture")
-    @js.native
-    def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
-    @JSImport("@ionic/core", "menuController.swipeGesture")
-    @js.native
-    def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = js.native
+    @scala.inline
+    def setOpen(menu: MenuI, shouldOpen: Boolean, animated: Boolean): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("_setOpen")(menu.asInstanceOf[js.Any], shouldOpen.asInstanceOf[js.Any], animated.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@ionic/core", "menuController.toggle")
-    @js.native
-    def toggle(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "menuController.toggle")
-    @js.native
-    def toggle(menu: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def swipeGesture(shouldEnable: Boolean): js.Promise[js.UndefOr[HTMLIonMenuElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
+    @scala.inline
+    def swipeGesture(shouldEnable: Boolean, menu: String): js.Promise[js.UndefOr[HTMLIonMenuElement]] = (^.asInstanceOf[js.Dynamic].applyDynamic("swipeGesture")(shouldEnable.asInstanceOf[js.Any], menu.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[HTMLIonMenuElement]]]
     
-    @JSImport("@ionic/core", "menuController._unregister")
-    @js.native
-    def unregister(menu: MenuI): Unit = js.native
+    @scala.inline
+    def toggle(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def toggle(menu: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(menu.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def unregister(menu: MenuI): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_unregister")(menu.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object modalController {
     
-    @JSImport("@ionic/core", "modalController.create")
+    @JSImport("@ionic/core", "modalController")
     @js.native
-    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "modalController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ModalOptions[ComponentRef]): js.Promise[HTMLIonModalElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonModalElement]]
     
-    @JSImport("@ionic/core", "modalController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonModalElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonModalElement]]]
   }
   
   object pickerController {
     
-    @JSImport("@ionic/core", "pickerController.create")
+    @JSImport("@ionic/core", "pickerController")
     @js.native
-    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "pickerController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: PickerOptions): js.Promise[HTMLIonPickerElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPickerElement]]
     
-    @JSImport("@ionic/core", "pickerController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonPickerElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPickerElement]]]
   }
   
   object popoverController {
     
-    @JSImport("@ionic/core", "popoverController.create")
+    @JSImport("@ionic/core", "popoverController")
     @js.native
-    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "popoverController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: PopoverOptions[ComponentRef]): js.Promise[HTMLIonPopoverElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonPopoverElement]]
     
-    @JSImport("@ionic/core", "popoverController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonPopoverElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonPopoverElement]]]
   }
   
-  @JSImport("@ionic/core", "saveConfig")
-  @js.native
-  def saveConfig(win: Window, c: js.Any): Unit = js.native
+  @scala.inline
+  def saveConfig(win: Window, c: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveConfig")(win.asInstanceOf[js.Any], c.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@ionic/core", "setupConfig")
-  @js.native
-  def setupConfig(config: IonicConfig): js.Any = js.native
+  @scala.inline
+  def setupConfig(config: IonicConfig): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("setupConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   object toastController {
     
-    @JSImport("@ionic/core", "toastController.create")
+    @JSImport("@ionic/core", "toastController")
     @js.native
-    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.UndefOr[scala.Nothing], role: String, id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: js.UndefOr[scala.Nothing], id: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = js.native
-    @JSImport("@ionic/core", "toastController.dismiss")
-    @js.native
-    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def create(options: ToastOptions): js.Promise[HTMLIonToastElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[HTMLIonToastElement]]
     
-    @JSImport("@ionic/core", "toastController.getTop")
-    @js.native
-    def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = js.native
+    @scala.inline
+    def dismiss(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")().asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: js.Any, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: String, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def dismiss(data: Unit, role: Unit, id: String): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("dismiss")(data.asInstanceOf[js.Any], role.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def getTop(): js.Promise[js.UndefOr[HTMLIonToastElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTop")().asInstanceOf[js.Promise[js.UndefOr[HTMLIonToastElement]]]
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -898,19 +828,18 @@ object mod {
   
   type BackButtonEvent = CustomEvent[BackButtonEventDetail]
   
-  @js.native
   trait BackButtonEventDetail extends StObject {
     
     def register(
       priority: Double,
-      handler: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]
-    ): Unit = js.native
+      handler: js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]
+    ): Unit
   }
   object BackButtonEventDetail {
     
     @scala.inline
     def apply(
-      register: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]) => Unit
+      register: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]) => Unit
     ): BackButtonEventDetail = {
       val __obj = js.Dynamic.literal(register = js.Any.fromFunction2(register))
       __obj.asInstanceOf[BackButtonEventDetail]
@@ -921,7 +850,7 @@ object mod {
       
       @scala.inline
       def setRegister(
-        value: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[_] | Unit]) => Unit
+        value: (Double, js.Function1[/* processNextHandler */ js.Function0[Unit], js.Promise[js.Any] | Unit]) => Unit
       ): Self = StObject.set(x, "register", js.Any.fromFunction2(value))
     }
   }
@@ -940,22 +869,16 @@ object mod {
   trait FrameworkDelegate extends StObject {
     
     def attachViewToDom(container: js.Any, component: js.Any): js.Promise[HTMLElement] = js.native
-    def attachViewToDom(
-      container: js.Any,
-      component: js.Any,
-      propsOrDataObj: js.UndefOr[scala.Nothing],
-      cssClasses: js.Array[String]
-    ): js.Promise[HTMLElement] = js.native
     def attachViewToDom(container: js.Any, component: js.Any, propsOrDataObj: js.Any): js.Promise[HTMLElement] = js.native
     def attachViewToDom(container: js.Any, component: js.Any, propsOrDataObj: js.Any, cssClasses: js.Array[String]): js.Promise[HTMLElement] = js.native
+    def attachViewToDom(container: js.Any, component: js.Any, propsOrDataObj: Unit, cssClasses: js.Array[String]): js.Promise[HTMLElement] = js.native
     
     def removeViewFromDom(container: js.Any, component: js.Any): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait KeyboardEventDetail extends StObject {
     
-    var keyboardHeight: Double = js.native
+    var keyboardHeight: Double
   }
   object KeyboardEventDetail {
     
@@ -1117,274 +1040,273 @@ object mod {
     
     object JSX {
       
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var `ion-action-sheet`: IonActionSheet with HTMLAttributes[HTMLIonActionSheetElement] = js.native
+        var `ion-action-sheet`: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement]
         
-        var `ion-alert`: IonAlert with HTMLAttributes[HTMLIonAlertElement] = js.native
+        var `ion-alert`: IonAlert & HTMLAttributes[HTMLIonAlertElement]
         
-        var `ion-app`: IonApp with HTMLAttributes[HTMLIonAppElement] = js.native
+        var `ion-app`: IonApp & HTMLAttributes[HTMLIonAppElement]
         
-        var `ion-avatar`: IonAvatar with HTMLAttributes[HTMLIonAvatarElement] = js.native
+        var `ion-avatar`: IonAvatar & HTMLAttributes[HTMLIonAvatarElement]
         
-        var `ion-back-button`: IonBackButton with HTMLAttributes[HTMLIonBackButtonElement] = js.native
+        var `ion-back-button`: IonBackButton & HTMLAttributes[HTMLIonBackButtonElement]
         
-        var `ion-backdrop`: IonBackdrop with HTMLAttributes[HTMLIonBackdropElement] = js.native
+        var `ion-backdrop`: IonBackdrop & HTMLAttributes[HTMLIonBackdropElement]
         
-        var `ion-badge`: IonBadge with HTMLAttributes[HTMLIonBadgeElement] = js.native
+        var `ion-badge`: IonBadge & HTMLAttributes[HTMLIonBadgeElement]
         
-        var `ion-button`: IonButton with HTMLAttributes[HTMLIonButtonElement] = js.native
+        var `ion-button`: IonButton & HTMLAttributes[HTMLIonButtonElement]
         
-        var `ion-buttons`: IonButtons with HTMLAttributes[HTMLIonButtonsElement] = js.native
+        var `ion-buttons`: IonButtons & HTMLAttributes[HTMLIonButtonsElement]
         
-        var `ion-card`: IonCard with HTMLAttributes[HTMLIonCardElement] = js.native
+        var `ion-card`: IonCard & HTMLAttributes[HTMLIonCardElement]
         
-        var `ion-card-content`: IonCardContent with HTMLAttributes[HTMLIonCardContentElement] = js.native
+        var `ion-card-content`: IonCardContent & HTMLAttributes[HTMLIonCardContentElement]
         
-        var `ion-card-header`: IonCardHeader with HTMLAttributes[HTMLIonCardHeaderElement] = js.native
+        var `ion-card-header`: IonCardHeader & HTMLAttributes[HTMLIonCardHeaderElement]
         
-        var `ion-card-subtitle`: IonCardSubtitle with HTMLAttributes[HTMLIonCardSubtitleElement] = js.native
+        var `ion-card-subtitle`: IonCardSubtitle & HTMLAttributes[HTMLIonCardSubtitleElement]
         
-        var `ion-card-title`: IonCardTitle with HTMLAttributes[HTMLIonCardTitleElement] = js.native
+        var `ion-card-title`: IonCardTitle & HTMLAttributes[HTMLIonCardTitleElement]
         
-        var `ion-checkbox`: IonCheckbox with HTMLAttributes[HTMLIonCheckboxElement] = js.native
+        var `ion-checkbox`: IonCheckbox & HTMLAttributes[HTMLIonCheckboxElement]
         
-        var `ion-chip`: IonChip with HTMLAttributes[HTMLIonChipElement] = js.native
+        var `ion-chip`: IonChip & HTMLAttributes[HTMLIonChipElement]
         
-        var `ion-col`: IonCol with HTMLAttributes[HTMLIonColElement] = js.native
+        var `ion-col`: IonCol & HTMLAttributes[HTMLIonColElement]
         
-        var `ion-content`: IonContent with HTMLAttributes[HTMLIonContentElement] = js.native
+        var `ion-content`: IonContent & HTMLAttributes[HTMLIonContentElement]
         
-        var `ion-datetime`: IonDatetime with HTMLAttributes[HTMLIonDatetimeElement] = js.native
+        var `ion-datetime`: IonDatetime & HTMLAttributes[HTMLIonDatetimeElement]
         
-        var `ion-fab`: IonFab with HTMLAttributes[HTMLIonFabElement] = js.native
+        var `ion-fab`: IonFab & HTMLAttributes[HTMLIonFabElement]
         
-        var `ion-fab-button`: IonFabButton with HTMLAttributes[HTMLIonFabButtonElement] = js.native
+        var `ion-fab-button`: IonFabButton & HTMLAttributes[HTMLIonFabButtonElement]
         
-        var `ion-fab-list`: IonFabList with HTMLAttributes[HTMLIonFabListElement] = js.native
+        var `ion-fab-list`: IonFabList & HTMLAttributes[HTMLIonFabListElement]
         
-        var `ion-footer`: IonFooter with HTMLAttributes[HTMLIonFooterElement] = js.native
+        var `ion-footer`: IonFooter & HTMLAttributes[HTMLIonFooterElement]
         
-        var `ion-grid`: IonGrid with HTMLAttributes[HTMLIonGridElement] = js.native
+        var `ion-grid`: IonGrid & HTMLAttributes[HTMLIonGridElement]
         
-        var `ion-header`: IonHeader with HTMLAttributes[HTMLIonHeaderElement] = js.native
+        var `ion-header`: IonHeader & HTMLAttributes[HTMLIonHeaderElement]
         
-        var `ion-img`: IonImg with HTMLAttributes[HTMLIonImgElement] = js.native
+        var `ion-img`: IonImg & HTMLAttributes[HTMLIonImgElement]
         
-        var `ion-infinite-scroll`: IonInfiniteScroll with HTMLAttributes[HTMLIonInfiniteScrollElement] = js.native
+        var `ion-infinite-scroll`: IonInfiniteScroll & HTMLAttributes[HTMLIonInfiniteScrollElement]
         
-        var `ion-infinite-scroll-content`: IonInfiniteScrollContent with HTMLAttributes[HTMLIonInfiniteScrollContentElement] = js.native
+        var `ion-infinite-scroll-content`: IonInfiniteScrollContent & HTMLAttributes[HTMLIonInfiniteScrollContentElement]
         
-        var `ion-input`: IonInput with HTMLAttributes[HTMLIonInputElement] = js.native
+        var `ion-input`: IonInput & HTMLAttributes[HTMLIonInputElement]
         
-        var `ion-item`: IonItem with HTMLAttributes[HTMLIonItemElement] = js.native
+        var `ion-item`: IonItem & HTMLAttributes[HTMLIonItemElement]
         
-        var `ion-item-divider`: IonItemDivider with HTMLAttributes[HTMLIonItemDividerElement] = js.native
+        var `ion-item-divider`: IonItemDivider & HTMLAttributes[HTMLIonItemDividerElement]
         
-        var `ion-item-group`: IonItemGroup with HTMLAttributes[HTMLIonItemGroupElement] = js.native
+        var `ion-item-group`: IonItemGroup & HTMLAttributes[HTMLIonItemGroupElement]
         
-        var `ion-item-option`: IonItemOption with HTMLAttributes[HTMLIonItemOptionElement] = js.native
+        var `ion-item-option`: IonItemOption & HTMLAttributes[HTMLIonItemOptionElement]
         
-        var `ion-item-options`: IonItemOptions with HTMLAttributes[HTMLIonItemOptionsElement] = js.native
+        var `ion-item-options`: IonItemOptions & HTMLAttributes[HTMLIonItemOptionsElement]
         
-        var `ion-item-sliding`: IonItemSliding with HTMLAttributes[HTMLIonItemSlidingElement] = js.native
+        var `ion-item-sliding`: IonItemSliding & HTMLAttributes[HTMLIonItemSlidingElement]
         
-        var `ion-label`: IonLabel with HTMLAttributes[HTMLIonLabelElement] = js.native
+        var `ion-label`: IonLabel & HTMLAttributes[HTMLIonLabelElement]
         
-        var `ion-list`: IonList with HTMLAttributes[HTMLIonListElement] = js.native
+        var `ion-list`: IonList & HTMLAttributes[HTMLIonListElement]
         
-        var `ion-list-header`: IonListHeader with HTMLAttributes[HTMLIonListHeaderElement] = js.native
+        var `ion-list-header`: IonListHeader & HTMLAttributes[HTMLIonListHeaderElement]
         
-        var `ion-loading`: IonLoading with HTMLAttributes[HTMLIonLoadingElement] = js.native
+        var `ion-loading`: IonLoading & HTMLAttributes[HTMLIonLoadingElement]
         
-        var `ion-menu`: IonMenu with HTMLAttributes[HTMLIonMenuElement] = js.native
+        var `ion-menu`: IonMenu & HTMLAttributes[HTMLIonMenuElement]
         
-        var `ion-menu-button`: IonMenuButton with HTMLAttributes[HTMLIonMenuButtonElement] = js.native
+        var `ion-menu-button`: IonMenuButton & HTMLAttributes[HTMLIonMenuButtonElement]
         
-        var `ion-menu-toggle`: IonMenuToggle with HTMLAttributes[HTMLIonMenuToggleElement] = js.native
+        var `ion-menu-toggle`: IonMenuToggle & HTMLAttributes[HTMLIonMenuToggleElement]
         
-        var `ion-modal`: IonModal with HTMLAttributes[HTMLIonModalElement] = js.native
+        var `ion-modal`: IonModal & HTMLAttributes[HTMLIonModalElement]
         
-        var `ion-nav`: IonNav with HTMLAttributes[HTMLIonNavElement] = js.native
+        var `ion-nav`: IonNav & HTMLAttributes[HTMLIonNavElement]
         
-        var `ion-nav-link`: IonNavLink with HTMLAttributes[HTMLIonNavLinkElement] = js.native
+        var `ion-nav-link`: IonNavLink & HTMLAttributes[HTMLIonNavLinkElement]
         
-        var `ion-note`: IonNote with HTMLAttributes[HTMLIonNoteElement] = js.native
+        var `ion-note`: IonNote & HTMLAttributes[HTMLIonNoteElement]
         
-        var `ion-picker`: IonPicker with HTMLAttributes[HTMLIonPickerElement] = js.native
+        var `ion-picker`: IonPicker & HTMLAttributes[HTMLIonPickerElement]
         
-        var `ion-picker-column`: IonPickerColumn with HTMLAttributes[HTMLIonPickerColumnElement] = js.native
+        var `ion-picker-column`: IonPickerColumn & HTMLAttributes[HTMLIonPickerColumnElement]
         
-        var `ion-popover`: IonPopover with HTMLAttributes[HTMLIonPopoverElement] = js.native
+        var `ion-popover`: IonPopover & HTMLAttributes[HTMLIonPopoverElement]
         
-        var `ion-progress-bar`: IonProgressBar with HTMLAttributes[HTMLIonProgressBarElement] = js.native
+        var `ion-progress-bar`: IonProgressBar & HTMLAttributes[HTMLIonProgressBarElement]
         
-        var `ion-radio`: IonRadio with HTMLAttributes[HTMLIonRadioElement] = js.native
+        var `ion-radio`: IonRadio & HTMLAttributes[HTMLIonRadioElement]
         
-        var `ion-radio-group`: IonRadioGroup with HTMLAttributes[HTMLIonRadioGroupElement] = js.native
+        var `ion-radio-group`: IonRadioGroup & HTMLAttributes[HTMLIonRadioGroupElement]
         
-        var `ion-range`: IonRange with HTMLAttributes[HTMLIonRangeElement] = js.native
+        var `ion-range`: IonRange & HTMLAttributes[HTMLIonRangeElement]
         
-        var `ion-refresher`: IonRefresher with HTMLAttributes[HTMLIonRefresherElement] = js.native
+        var `ion-refresher`: IonRefresher & HTMLAttributes[HTMLIonRefresherElement]
         
-        var `ion-refresher-content`: IonRefresherContent with HTMLAttributes[HTMLIonRefresherContentElement] = js.native
+        var `ion-refresher-content`: IonRefresherContent & HTMLAttributes[HTMLIonRefresherContentElement]
         
-        var `ion-reorder`: IonReorder with HTMLAttributes[HTMLIonReorderElement] = js.native
+        var `ion-reorder`: IonReorder & HTMLAttributes[HTMLIonReorderElement]
         
-        var `ion-reorder-group`: IonReorderGroup with HTMLAttributes[HTMLIonReorderGroupElement] = js.native
+        var `ion-reorder-group`: IonReorderGroup & HTMLAttributes[HTMLIonReorderGroupElement]
         
-        var `ion-ripple-effect`: IonRippleEffect with HTMLAttributes[HTMLIonRippleEffectElement] = js.native
+        var `ion-ripple-effect`: IonRippleEffect & HTMLAttributes[HTMLIonRippleEffectElement]
         
-        var `ion-route`: IonRoute with HTMLAttributes[HTMLIonRouteElement] = js.native
+        var `ion-route`: IonRoute & HTMLAttributes[HTMLIonRouteElement]
         
-        var `ion-route-redirect`: IonRouteRedirect with HTMLAttributes[HTMLIonRouteRedirectElement] = js.native
+        var `ion-route-redirect`: IonRouteRedirect & HTMLAttributes[HTMLIonRouteRedirectElement]
         
-        var `ion-router`: IonRouter with HTMLAttributes[HTMLIonRouterElement] = js.native
+        var `ion-router`: IonRouter & HTMLAttributes[HTMLIonRouterElement]
         
-        var `ion-router-link`: IonRouterLink with HTMLAttributes[HTMLIonRouterLinkElement] = js.native
+        var `ion-router-link`: IonRouterLink & HTMLAttributes[HTMLIonRouterLinkElement]
         
-        var `ion-router-outlet`: IonRouterOutlet with HTMLAttributes[HTMLIonRouterOutletElement] = js.native
+        var `ion-router-outlet`: IonRouterOutlet & HTMLAttributes[HTMLIonRouterOutletElement]
         
-        var `ion-row`: IonRow with HTMLAttributes[HTMLIonRowElement] = js.native
+        var `ion-row`: IonRow & HTMLAttributes[HTMLIonRowElement]
         
-        var `ion-searchbar`: IonSearchbar with HTMLAttributes[HTMLIonSearchbarElement] = js.native
+        var `ion-searchbar`: IonSearchbar & HTMLAttributes[HTMLIonSearchbarElement]
         
-        var `ion-segment`: IonSegment with HTMLAttributes[HTMLIonSegmentElement] = js.native
+        var `ion-segment`: IonSegment & HTMLAttributes[HTMLIonSegmentElement]
         
-        var `ion-segment-button`: IonSegmentButton with HTMLAttributes[HTMLIonSegmentButtonElement] = js.native
+        var `ion-segment-button`: IonSegmentButton & HTMLAttributes[HTMLIonSegmentButtonElement]
         
-        var `ion-select`: IonSelect with HTMLAttributes[HTMLIonSelectElement] = js.native
+        var `ion-select`: IonSelect & HTMLAttributes[HTMLIonSelectElement]
         
-        var `ion-select-option`: IonSelectOption with HTMLAttributes[HTMLIonSelectOptionElement] = js.native
+        var `ion-select-option`: IonSelectOption & HTMLAttributes[HTMLIonSelectOptionElement]
         
-        var `ion-select-popover`: IonSelectPopover with HTMLAttributes[HTMLIonSelectPopoverElement] = js.native
+        var `ion-select-popover`: IonSelectPopover & HTMLAttributes[HTMLIonSelectPopoverElement]
         
-        var `ion-skeleton-text`: IonSkeletonText with HTMLAttributes[HTMLIonSkeletonTextElement] = js.native
+        var `ion-skeleton-text`: IonSkeletonText & HTMLAttributes[HTMLIonSkeletonTextElement]
         
-        var `ion-slide`: IonSlide with HTMLAttributes[HTMLIonSlideElement] = js.native
+        var `ion-slide`: IonSlide & HTMLAttributes[HTMLIonSlideElement]
         
-        var `ion-slides`: IonSlides with HTMLAttributes[HTMLIonSlidesElement] = js.native
+        var `ion-slides`: IonSlides & HTMLAttributes[HTMLIonSlidesElement]
         
-        var `ion-spinner`: IonSpinner with HTMLAttributes[HTMLIonSpinnerElement] = js.native
+        var `ion-spinner`: IonSpinner & HTMLAttributes[HTMLIonSpinnerElement]
         
-        var `ion-split-pane`: IonSplitPane with HTMLAttributes[HTMLIonSplitPaneElement] = js.native
+        var `ion-split-pane`: IonSplitPane & HTMLAttributes[HTMLIonSplitPaneElement]
         
-        var `ion-tab`: IonTab with HTMLAttributes[HTMLIonTabElement] = js.native
+        var `ion-tab`: IonTab & HTMLAttributes[HTMLIonTabElement]
         
-        var `ion-tab-bar`: IonTabBar with HTMLAttributes[HTMLIonTabBarElement] = js.native
+        var `ion-tab-bar`: IonTabBar & HTMLAttributes[HTMLIonTabBarElement]
         
-        var `ion-tab-button`: IonTabButton with HTMLAttributes[HTMLIonTabButtonElement] = js.native
+        var `ion-tab-button`: IonTabButton & HTMLAttributes[HTMLIonTabButtonElement]
         
-        var `ion-tabs`: IonTabs with HTMLAttributes[HTMLIonTabsElement] = js.native
+        var `ion-tabs`: IonTabs & HTMLAttributes[HTMLIonTabsElement]
         
-        var `ion-text`: IonText with HTMLAttributes[HTMLIonTextElement] = js.native
+        var `ion-text`: IonText & HTMLAttributes[HTMLIonTextElement]
         
-        var `ion-textarea`: IonTextarea with HTMLAttributes[HTMLIonTextareaElement] = js.native
+        var `ion-textarea`: IonTextarea & HTMLAttributes[HTMLIonTextareaElement]
         
-        var `ion-thumbnail`: IonThumbnail with HTMLAttributes[HTMLIonThumbnailElement] = js.native
+        var `ion-thumbnail`: IonThumbnail & HTMLAttributes[HTMLIonThumbnailElement]
         
-        var `ion-title`: IonTitle with HTMLAttributes[HTMLIonTitleElement] = js.native
+        var `ion-title`: IonTitle & HTMLAttributes[HTMLIonTitleElement]
         
-        var `ion-toast`: IonToast with HTMLAttributes[HTMLIonToastElement] = js.native
+        var `ion-toast`: IonToast & HTMLAttributes[HTMLIonToastElement]
         
-        var `ion-toggle`: IonToggle with HTMLAttributes[HTMLIonToggleElement] = js.native
+        var `ion-toggle`: IonToggle & HTMLAttributes[HTMLIonToggleElement]
         
-        var `ion-toolbar`: IonToolbar with HTMLAttributes[HTMLIonToolbarElement] = js.native
+        var `ion-toolbar`: IonToolbar & HTMLAttributes[HTMLIonToolbarElement]
         
-        var `ion-virtual-scroll`: IonVirtualScroll with HTMLAttributes[HTMLIonVirtualScrollElement] = js.native
+        var `ion-virtual-scroll`: IonVirtualScroll & HTMLAttributes[HTMLIonVirtualScrollElement]
       }
       object IntrinsicElements {
         
         @scala.inline
         def apply(
-          `ion-action-sheet`: IonActionSheet with HTMLAttributes[HTMLIonActionSheetElement],
-          `ion-alert`: IonAlert with HTMLAttributes[HTMLIonAlertElement],
-          `ion-app`: IonApp with HTMLAttributes[HTMLIonAppElement],
-          `ion-avatar`: IonAvatar with HTMLAttributes[HTMLIonAvatarElement],
-          `ion-back-button`: IonBackButton with HTMLAttributes[HTMLIonBackButtonElement],
-          `ion-backdrop`: IonBackdrop with HTMLAttributes[HTMLIonBackdropElement],
-          `ion-badge`: IonBadge with HTMLAttributes[HTMLIonBadgeElement],
-          `ion-button`: IonButton with HTMLAttributes[HTMLIonButtonElement],
-          `ion-buttons`: IonButtons with HTMLAttributes[HTMLIonButtonsElement],
-          `ion-card`: IonCard with HTMLAttributes[HTMLIonCardElement],
-          `ion-card-content`: IonCardContent with HTMLAttributes[HTMLIonCardContentElement],
-          `ion-card-header`: IonCardHeader with HTMLAttributes[HTMLIonCardHeaderElement],
-          `ion-card-subtitle`: IonCardSubtitle with HTMLAttributes[HTMLIonCardSubtitleElement],
-          `ion-card-title`: IonCardTitle with HTMLAttributes[HTMLIonCardTitleElement],
-          `ion-checkbox`: IonCheckbox with HTMLAttributes[HTMLIonCheckboxElement],
-          `ion-chip`: IonChip with HTMLAttributes[HTMLIonChipElement],
-          `ion-col`: IonCol with HTMLAttributes[HTMLIonColElement],
-          `ion-content`: IonContent with HTMLAttributes[HTMLIonContentElement],
-          `ion-datetime`: IonDatetime with HTMLAttributes[HTMLIonDatetimeElement],
-          `ion-fab`: IonFab with HTMLAttributes[HTMLIonFabElement],
-          `ion-fab-button`: IonFabButton with HTMLAttributes[HTMLIonFabButtonElement],
-          `ion-fab-list`: IonFabList with HTMLAttributes[HTMLIonFabListElement],
-          `ion-footer`: IonFooter with HTMLAttributes[HTMLIonFooterElement],
-          `ion-grid`: IonGrid with HTMLAttributes[HTMLIonGridElement],
-          `ion-header`: IonHeader with HTMLAttributes[HTMLIonHeaderElement],
-          `ion-img`: IonImg with HTMLAttributes[HTMLIonImgElement],
-          `ion-infinite-scroll`: IonInfiniteScroll with HTMLAttributes[HTMLIonInfiniteScrollElement],
-          `ion-infinite-scroll-content`: IonInfiniteScrollContent with HTMLAttributes[HTMLIonInfiniteScrollContentElement],
-          `ion-input`: IonInput with HTMLAttributes[HTMLIonInputElement],
-          `ion-item`: IonItem with HTMLAttributes[HTMLIonItemElement],
-          `ion-item-divider`: IonItemDivider with HTMLAttributes[HTMLIonItemDividerElement],
-          `ion-item-group`: IonItemGroup with HTMLAttributes[HTMLIonItemGroupElement],
-          `ion-item-option`: IonItemOption with HTMLAttributes[HTMLIonItemOptionElement],
-          `ion-item-options`: IonItemOptions with HTMLAttributes[HTMLIonItemOptionsElement],
-          `ion-item-sliding`: IonItemSliding with HTMLAttributes[HTMLIonItemSlidingElement],
-          `ion-label`: IonLabel with HTMLAttributes[HTMLIonLabelElement],
-          `ion-list`: IonList with HTMLAttributes[HTMLIonListElement],
-          `ion-list-header`: IonListHeader with HTMLAttributes[HTMLIonListHeaderElement],
-          `ion-loading`: IonLoading with HTMLAttributes[HTMLIonLoadingElement],
-          `ion-menu`: IonMenu with HTMLAttributes[HTMLIonMenuElement],
-          `ion-menu-button`: IonMenuButton with HTMLAttributes[HTMLIonMenuButtonElement],
-          `ion-menu-toggle`: IonMenuToggle with HTMLAttributes[HTMLIonMenuToggleElement],
-          `ion-modal`: IonModal with HTMLAttributes[HTMLIonModalElement],
-          `ion-nav`: IonNav with HTMLAttributes[HTMLIonNavElement],
-          `ion-nav-link`: IonNavLink with HTMLAttributes[HTMLIonNavLinkElement],
-          `ion-note`: IonNote with HTMLAttributes[HTMLIonNoteElement],
-          `ion-picker`: IonPicker with HTMLAttributes[HTMLIonPickerElement],
-          `ion-picker-column`: IonPickerColumn with HTMLAttributes[HTMLIonPickerColumnElement],
-          `ion-popover`: IonPopover with HTMLAttributes[HTMLIonPopoverElement],
-          `ion-progress-bar`: IonProgressBar with HTMLAttributes[HTMLIonProgressBarElement],
-          `ion-radio`: IonRadio with HTMLAttributes[HTMLIonRadioElement],
-          `ion-radio-group`: IonRadioGroup with HTMLAttributes[HTMLIonRadioGroupElement],
-          `ion-range`: IonRange with HTMLAttributes[HTMLIonRangeElement],
-          `ion-refresher`: IonRefresher with HTMLAttributes[HTMLIonRefresherElement],
-          `ion-refresher-content`: IonRefresherContent with HTMLAttributes[HTMLIonRefresherContentElement],
-          `ion-reorder`: IonReorder with HTMLAttributes[HTMLIonReorderElement],
-          `ion-reorder-group`: IonReorderGroup with HTMLAttributes[HTMLIonReorderGroupElement],
-          `ion-ripple-effect`: IonRippleEffect with HTMLAttributes[HTMLIonRippleEffectElement],
-          `ion-route`: IonRoute with HTMLAttributes[HTMLIonRouteElement],
-          `ion-route-redirect`: IonRouteRedirect with HTMLAttributes[HTMLIonRouteRedirectElement],
-          `ion-router`: IonRouter with HTMLAttributes[HTMLIonRouterElement],
-          `ion-router-link`: IonRouterLink with HTMLAttributes[HTMLIonRouterLinkElement],
-          `ion-router-outlet`: IonRouterOutlet with HTMLAttributes[HTMLIonRouterOutletElement],
-          `ion-row`: IonRow with HTMLAttributes[HTMLIonRowElement],
-          `ion-searchbar`: IonSearchbar with HTMLAttributes[HTMLIonSearchbarElement],
-          `ion-segment`: IonSegment with HTMLAttributes[HTMLIonSegmentElement],
-          `ion-segment-button`: IonSegmentButton with HTMLAttributes[HTMLIonSegmentButtonElement],
-          `ion-select`: IonSelect with HTMLAttributes[HTMLIonSelectElement],
-          `ion-select-option`: IonSelectOption with HTMLAttributes[HTMLIonSelectOptionElement],
-          `ion-select-popover`: IonSelectPopover with HTMLAttributes[HTMLIonSelectPopoverElement],
-          `ion-skeleton-text`: IonSkeletonText with HTMLAttributes[HTMLIonSkeletonTextElement],
-          `ion-slide`: IonSlide with HTMLAttributes[HTMLIonSlideElement],
-          `ion-slides`: IonSlides with HTMLAttributes[HTMLIonSlidesElement],
-          `ion-spinner`: IonSpinner with HTMLAttributes[HTMLIonSpinnerElement],
-          `ion-split-pane`: IonSplitPane with HTMLAttributes[HTMLIonSplitPaneElement],
-          `ion-tab`: IonTab with HTMLAttributes[HTMLIonTabElement],
-          `ion-tab-bar`: IonTabBar with HTMLAttributes[HTMLIonTabBarElement],
-          `ion-tab-button`: IonTabButton with HTMLAttributes[HTMLIonTabButtonElement],
-          `ion-tabs`: IonTabs with HTMLAttributes[HTMLIonTabsElement],
-          `ion-text`: IonText with HTMLAttributes[HTMLIonTextElement],
-          `ion-textarea`: IonTextarea with HTMLAttributes[HTMLIonTextareaElement],
-          `ion-thumbnail`: IonThumbnail with HTMLAttributes[HTMLIonThumbnailElement],
-          `ion-title`: IonTitle with HTMLAttributes[HTMLIonTitleElement],
-          `ion-toast`: IonToast with HTMLAttributes[HTMLIonToastElement],
-          `ion-toggle`: IonToggle with HTMLAttributes[HTMLIonToggleElement],
-          `ion-toolbar`: IonToolbar with HTMLAttributes[HTMLIonToolbarElement],
-          `ion-virtual-scroll`: IonVirtualScroll with HTMLAttributes[HTMLIonVirtualScrollElement]
+          `ion-action-sheet`: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement],
+          `ion-alert`: IonAlert & HTMLAttributes[HTMLIonAlertElement],
+          `ion-app`: IonApp & HTMLAttributes[HTMLIonAppElement],
+          `ion-avatar`: IonAvatar & HTMLAttributes[HTMLIonAvatarElement],
+          `ion-back-button`: IonBackButton & HTMLAttributes[HTMLIonBackButtonElement],
+          `ion-backdrop`: IonBackdrop & HTMLAttributes[HTMLIonBackdropElement],
+          `ion-badge`: IonBadge & HTMLAttributes[HTMLIonBadgeElement],
+          `ion-button`: IonButton & HTMLAttributes[HTMLIonButtonElement],
+          `ion-buttons`: IonButtons & HTMLAttributes[HTMLIonButtonsElement],
+          `ion-card`: IonCard & HTMLAttributes[HTMLIonCardElement],
+          `ion-card-content`: IonCardContent & HTMLAttributes[HTMLIonCardContentElement],
+          `ion-card-header`: IonCardHeader & HTMLAttributes[HTMLIonCardHeaderElement],
+          `ion-card-subtitle`: IonCardSubtitle & HTMLAttributes[HTMLIonCardSubtitleElement],
+          `ion-card-title`: IonCardTitle & HTMLAttributes[HTMLIonCardTitleElement],
+          `ion-checkbox`: IonCheckbox & HTMLAttributes[HTMLIonCheckboxElement],
+          `ion-chip`: IonChip & HTMLAttributes[HTMLIonChipElement],
+          `ion-col`: IonCol & HTMLAttributes[HTMLIonColElement],
+          `ion-content`: IonContent & HTMLAttributes[HTMLIonContentElement],
+          `ion-datetime`: IonDatetime & HTMLAttributes[HTMLIonDatetimeElement],
+          `ion-fab`: IonFab & HTMLAttributes[HTMLIonFabElement],
+          `ion-fab-button`: IonFabButton & HTMLAttributes[HTMLIonFabButtonElement],
+          `ion-fab-list`: IonFabList & HTMLAttributes[HTMLIonFabListElement],
+          `ion-footer`: IonFooter & HTMLAttributes[HTMLIonFooterElement],
+          `ion-grid`: IonGrid & HTMLAttributes[HTMLIonGridElement],
+          `ion-header`: IonHeader & HTMLAttributes[HTMLIonHeaderElement],
+          `ion-img`: IonImg & HTMLAttributes[HTMLIonImgElement],
+          `ion-infinite-scroll`: IonInfiniteScroll & HTMLAttributes[HTMLIonInfiniteScrollElement],
+          `ion-infinite-scroll-content`: IonInfiniteScrollContent & HTMLAttributes[HTMLIonInfiniteScrollContentElement],
+          `ion-input`: IonInput & HTMLAttributes[HTMLIonInputElement],
+          `ion-item`: IonItem & HTMLAttributes[HTMLIonItemElement],
+          `ion-item-divider`: IonItemDivider & HTMLAttributes[HTMLIonItemDividerElement],
+          `ion-item-group`: IonItemGroup & HTMLAttributes[HTMLIonItemGroupElement],
+          `ion-item-option`: IonItemOption & HTMLAttributes[HTMLIonItemOptionElement],
+          `ion-item-options`: IonItemOptions & HTMLAttributes[HTMLIonItemOptionsElement],
+          `ion-item-sliding`: IonItemSliding & HTMLAttributes[HTMLIonItemSlidingElement],
+          `ion-label`: IonLabel & HTMLAttributes[HTMLIonLabelElement],
+          `ion-list`: IonList & HTMLAttributes[HTMLIonListElement],
+          `ion-list-header`: IonListHeader & HTMLAttributes[HTMLIonListHeaderElement],
+          `ion-loading`: IonLoading & HTMLAttributes[HTMLIonLoadingElement],
+          `ion-menu`: IonMenu & HTMLAttributes[HTMLIonMenuElement],
+          `ion-menu-button`: IonMenuButton & HTMLAttributes[HTMLIonMenuButtonElement],
+          `ion-menu-toggle`: IonMenuToggle & HTMLAttributes[HTMLIonMenuToggleElement],
+          `ion-modal`: IonModal & HTMLAttributes[HTMLIonModalElement],
+          `ion-nav`: IonNav & HTMLAttributes[HTMLIonNavElement],
+          `ion-nav-link`: IonNavLink & HTMLAttributes[HTMLIonNavLinkElement],
+          `ion-note`: IonNote & HTMLAttributes[HTMLIonNoteElement],
+          `ion-picker`: IonPicker & HTMLAttributes[HTMLIonPickerElement],
+          `ion-picker-column`: IonPickerColumn & HTMLAttributes[HTMLIonPickerColumnElement],
+          `ion-popover`: IonPopover & HTMLAttributes[HTMLIonPopoverElement],
+          `ion-progress-bar`: IonProgressBar & HTMLAttributes[HTMLIonProgressBarElement],
+          `ion-radio`: IonRadio & HTMLAttributes[HTMLIonRadioElement],
+          `ion-radio-group`: IonRadioGroup & HTMLAttributes[HTMLIonRadioGroupElement],
+          `ion-range`: IonRange & HTMLAttributes[HTMLIonRangeElement],
+          `ion-refresher`: IonRefresher & HTMLAttributes[HTMLIonRefresherElement],
+          `ion-refresher-content`: IonRefresherContent & HTMLAttributes[HTMLIonRefresherContentElement],
+          `ion-reorder`: IonReorder & HTMLAttributes[HTMLIonReorderElement],
+          `ion-reorder-group`: IonReorderGroup & HTMLAttributes[HTMLIonReorderGroupElement],
+          `ion-ripple-effect`: IonRippleEffect & HTMLAttributes[HTMLIonRippleEffectElement],
+          `ion-route`: IonRoute & HTMLAttributes[HTMLIonRouteElement],
+          `ion-route-redirect`: IonRouteRedirect & HTMLAttributes[HTMLIonRouteRedirectElement],
+          `ion-router`: IonRouter & HTMLAttributes[HTMLIonRouterElement],
+          `ion-router-link`: IonRouterLink & HTMLAttributes[HTMLIonRouterLinkElement],
+          `ion-router-outlet`: IonRouterOutlet & HTMLAttributes[HTMLIonRouterOutletElement],
+          `ion-row`: IonRow & HTMLAttributes[HTMLIonRowElement],
+          `ion-searchbar`: IonSearchbar & HTMLAttributes[HTMLIonSearchbarElement],
+          `ion-segment`: IonSegment & HTMLAttributes[HTMLIonSegmentElement],
+          `ion-segment-button`: IonSegmentButton & HTMLAttributes[HTMLIonSegmentButtonElement],
+          `ion-select`: IonSelect & HTMLAttributes[HTMLIonSelectElement],
+          `ion-select-option`: IonSelectOption & HTMLAttributes[HTMLIonSelectOptionElement],
+          `ion-select-popover`: IonSelectPopover & HTMLAttributes[HTMLIonSelectPopoverElement],
+          `ion-skeleton-text`: IonSkeletonText & HTMLAttributes[HTMLIonSkeletonTextElement],
+          `ion-slide`: IonSlide & HTMLAttributes[HTMLIonSlideElement],
+          `ion-slides`: IonSlides & HTMLAttributes[HTMLIonSlidesElement],
+          `ion-spinner`: IonSpinner & HTMLAttributes[HTMLIonSpinnerElement],
+          `ion-split-pane`: IonSplitPane & HTMLAttributes[HTMLIonSplitPaneElement],
+          `ion-tab`: IonTab & HTMLAttributes[HTMLIonTabElement],
+          `ion-tab-bar`: IonTabBar & HTMLAttributes[HTMLIonTabBarElement],
+          `ion-tab-button`: IonTabButton & HTMLAttributes[HTMLIonTabButtonElement],
+          `ion-tabs`: IonTabs & HTMLAttributes[HTMLIonTabsElement],
+          `ion-text`: IonText & HTMLAttributes[HTMLIonTextElement],
+          `ion-textarea`: IonTextarea & HTMLAttributes[HTMLIonTextareaElement],
+          `ion-thumbnail`: IonThumbnail & HTMLAttributes[HTMLIonThumbnailElement],
+          `ion-title`: IonTitle & HTMLAttributes[HTMLIonTitleElement],
+          `ion-toast`: IonToast & HTMLAttributes[HTMLIonToastElement],
+          `ion-toggle`: IonToggle & HTMLAttributes[HTMLIonToggleElement],
+          `ion-toolbar`: IonToolbar & HTMLAttributes[HTMLIonToolbarElement],
+          `ion-virtual-scroll`: IonVirtualScroll & HTMLAttributes[HTMLIonVirtualScrollElement]
         ): IntrinsicElements = {
           val __obj = js.Dynamic.literal()
           __obj.updateDynamic("ion-action-sheet")(`ion-action-sheet`.asInstanceOf[js.Any])
@@ -1481,265 +1403,265 @@ object mod {
         implicit class IntrinsicElementsMutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def `setIon-action-sheet`(value: IonActionSheet with HTMLAttributes[HTMLIonActionSheetElement]): Self = StObject.set(x, "ion-action-sheet", value.asInstanceOf[js.Any])
+          def `setIon-action-sheet`(value: IonActionSheet & HTMLAttributes[HTMLIonActionSheetElement]): Self = StObject.set(x, "ion-action-sheet", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-alert`(value: IonAlert with HTMLAttributes[HTMLIonAlertElement]): Self = StObject.set(x, "ion-alert", value.asInstanceOf[js.Any])
+          def `setIon-alert`(value: IonAlert & HTMLAttributes[HTMLIonAlertElement]): Self = StObject.set(x, "ion-alert", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-app`(value: IonApp with HTMLAttributes[HTMLIonAppElement]): Self = StObject.set(x, "ion-app", value.asInstanceOf[js.Any])
+          def `setIon-app`(value: IonApp & HTMLAttributes[HTMLIonAppElement]): Self = StObject.set(x, "ion-app", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-avatar`(value: IonAvatar with HTMLAttributes[HTMLIonAvatarElement]): Self = StObject.set(x, "ion-avatar", value.asInstanceOf[js.Any])
+          def `setIon-avatar`(value: IonAvatar & HTMLAttributes[HTMLIonAvatarElement]): Self = StObject.set(x, "ion-avatar", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-back-button`(value: IonBackButton with HTMLAttributes[HTMLIonBackButtonElement]): Self = StObject.set(x, "ion-back-button", value.asInstanceOf[js.Any])
+          def `setIon-back-button`(value: IonBackButton & HTMLAttributes[HTMLIonBackButtonElement]): Self = StObject.set(x, "ion-back-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-backdrop`(value: IonBackdrop with HTMLAttributes[HTMLIonBackdropElement]): Self = StObject.set(x, "ion-backdrop", value.asInstanceOf[js.Any])
+          def `setIon-backdrop`(value: IonBackdrop & HTMLAttributes[HTMLIonBackdropElement]): Self = StObject.set(x, "ion-backdrop", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-badge`(value: IonBadge with HTMLAttributes[HTMLIonBadgeElement]): Self = StObject.set(x, "ion-badge", value.asInstanceOf[js.Any])
+          def `setIon-badge`(value: IonBadge & HTMLAttributes[HTMLIonBadgeElement]): Self = StObject.set(x, "ion-badge", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-button`(value: IonButton with HTMLAttributes[HTMLIonButtonElement]): Self = StObject.set(x, "ion-button", value.asInstanceOf[js.Any])
+          def `setIon-button`(value: IonButton & HTMLAttributes[HTMLIonButtonElement]): Self = StObject.set(x, "ion-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-buttons`(value: IonButtons with HTMLAttributes[HTMLIonButtonsElement]): Self = StObject.set(x, "ion-buttons", value.asInstanceOf[js.Any])
+          def `setIon-buttons`(value: IonButtons & HTMLAttributes[HTMLIonButtonsElement]): Self = StObject.set(x, "ion-buttons", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-card`(value: IonCard with HTMLAttributes[HTMLIonCardElement]): Self = StObject.set(x, "ion-card", value.asInstanceOf[js.Any])
+          def `setIon-card`(value: IonCard & HTMLAttributes[HTMLIonCardElement]): Self = StObject.set(x, "ion-card", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-card-content`(value: IonCardContent with HTMLAttributes[HTMLIonCardContentElement]): Self = StObject.set(x, "ion-card-content", value.asInstanceOf[js.Any])
+          def `setIon-card-content`(value: IonCardContent & HTMLAttributes[HTMLIonCardContentElement]): Self = StObject.set(x, "ion-card-content", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-card-header`(value: IonCardHeader with HTMLAttributes[HTMLIonCardHeaderElement]): Self = StObject.set(x, "ion-card-header", value.asInstanceOf[js.Any])
+          def `setIon-card-header`(value: IonCardHeader & HTMLAttributes[HTMLIonCardHeaderElement]): Self = StObject.set(x, "ion-card-header", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-card-subtitle`(value: IonCardSubtitle with HTMLAttributes[HTMLIonCardSubtitleElement]): Self = StObject.set(x, "ion-card-subtitle", value.asInstanceOf[js.Any])
+          def `setIon-card-subtitle`(value: IonCardSubtitle & HTMLAttributes[HTMLIonCardSubtitleElement]): Self = StObject.set(x, "ion-card-subtitle", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-card-title`(value: IonCardTitle with HTMLAttributes[HTMLIonCardTitleElement]): Self = StObject.set(x, "ion-card-title", value.asInstanceOf[js.Any])
+          def `setIon-card-title`(value: IonCardTitle & HTMLAttributes[HTMLIonCardTitleElement]): Self = StObject.set(x, "ion-card-title", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-checkbox`(value: IonCheckbox with HTMLAttributes[HTMLIonCheckboxElement]): Self = StObject.set(x, "ion-checkbox", value.asInstanceOf[js.Any])
+          def `setIon-checkbox`(value: IonCheckbox & HTMLAttributes[HTMLIonCheckboxElement]): Self = StObject.set(x, "ion-checkbox", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-chip`(value: IonChip with HTMLAttributes[HTMLIonChipElement]): Self = StObject.set(x, "ion-chip", value.asInstanceOf[js.Any])
+          def `setIon-chip`(value: IonChip & HTMLAttributes[HTMLIonChipElement]): Self = StObject.set(x, "ion-chip", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-col`(value: IonCol with HTMLAttributes[HTMLIonColElement]): Self = StObject.set(x, "ion-col", value.asInstanceOf[js.Any])
+          def `setIon-col`(value: IonCol & HTMLAttributes[HTMLIonColElement]): Self = StObject.set(x, "ion-col", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-content`(value: IonContent with HTMLAttributes[HTMLIonContentElement]): Self = StObject.set(x, "ion-content", value.asInstanceOf[js.Any])
+          def `setIon-content`(value: IonContent & HTMLAttributes[HTMLIonContentElement]): Self = StObject.set(x, "ion-content", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-datetime`(value: IonDatetime with HTMLAttributes[HTMLIonDatetimeElement]): Self = StObject.set(x, "ion-datetime", value.asInstanceOf[js.Any])
+          def `setIon-datetime`(value: IonDatetime & HTMLAttributes[HTMLIonDatetimeElement]): Self = StObject.set(x, "ion-datetime", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-fab`(value: IonFab with HTMLAttributes[HTMLIonFabElement]): Self = StObject.set(x, "ion-fab", value.asInstanceOf[js.Any])
+          def `setIon-fab`(value: IonFab & HTMLAttributes[HTMLIonFabElement]): Self = StObject.set(x, "ion-fab", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-fab-button`(value: IonFabButton with HTMLAttributes[HTMLIonFabButtonElement]): Self = StObject.set(x, "ion-fab-button", value.asInstanceOf[js.Any])
+          def `setIon-fab-button`(value: IonFabButton & HTMLAttributes[HTMLIonFabButtonElement]): Self = StObject.set(x, "ion-fab-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-fab-list`(value: IonFabList with HTMLAttributes[HTMLIonFabListElement]): Self = StObject.set(x, "ion-fab-list", value.asInstanceOf[js.Any])
+          def `setIon-fab-list`(value: IonFabList & HTMLAttributes[HTMLIonFabListElement]): Self = StObject.set(x, "ion-fab-list", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-footer`(value: IonFooter with HTMLAttributes[HTMLIonFooterElement]): Self = StObject.set(x, "ion-footer", value.asInstanceOf[js.Any])
+          def `setIon-footer`(value: IonFooter & HTMLAttributes[HTMLIonFooterElement]): Self = StObject.set(x, "ion-footer", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-grid`(value: IonGrid with HTMLAttributes[HTMLIonGridElement]): Self = StObject.set(x, "ion-grid", value.asInstanceOf[js.Any])
+          def `setIon-grid`(value: IonGrid & HTMLAttributes[HTMLIonGridElement]): Self = StObject.set(x, "ion-grid", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-header`(value: IonHeader with HTMLAttributes[HTMLIonHeaderElement]): Self = StObject.set(x, "ion-header", value.asInstanceOf[js.Any])
+          def `setIon-header`(value: IonHeader & HTMLAttributes[HTMLIonHeaderElement]): Self = StObject.set(x, "ion-header", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-img`(value: IonImg with HTMLAttributes[HTMLIonImgElement]): Self = StObject.set(x, "ion-img", value.asInstanceOf[js.Any])
+          def `setIon-img`(value: IonImg & HTMLAttributes[HTMLIonImgElement]): Self = StObject.set(x, "ion-img", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-infinite-scroll`(value: IonInfiniteScroll with HTMLAttributes[HTMLIonInfiniteScrollElement]): Self = StObject.set(x, "ion-infinite-scroll", value.asInstanceOf[js.Any])
+          def `setIon-infinite-scroll`(value: IonInfiniteScroll & HTMLAttributes[HTMLIonInfiniteScrollElement]): Self = StObject.set(x, "ion-infinite-scroll", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent with HTMLAttributes[HTMLIonInfiniteScrollContentElement]): Self = StObject.set(x, "ion-infinite-scroll-content", value.asInstanceOf[js.Any])
+          def `setIon-infinite-scroll-content`(value: IonInfiniteScrollContent & HTMLAttributes[HTMLIonInfiniteScrollContentElement]): Self = StObject.set(x, "ion-infinite-scroll-content", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-input`(value: IonInput with HTMLAttributes[HTMLIonInputElement]): Self = StObject.set(x, "ion-input", value.asInstanceOf[js.Any])
+          def `setIon-input`(value: IonInput & HTMLAttributes[HTMLIonInputElement]): Self = StObject.set(x, "ion-input", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item`(value: IonItem with HTMLAttributes[HTMLIonItemElement]): Self = StObject.set(x, "ion-item", value.asInstanceOf[js.Any])
+          def `setIon-item`(value: IonItem & HTMLAttributes[HTMLIonItemElement]): Self = StObject.set(x, "ion-item", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item-divider`(value: IonItemDivider with HTMLAttributes[HTMLIonItemDividerElement]): Self = StObject.set(x, "ion-item-divider", value.asInstanceOf[js.Any])
+          def `setIon-item-divider`(value: IonItemDivider & HTMLAttributes[HTMLIonItemDividerElement]): Self = StObject.set(x, "ion-item-divider", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item-group`(value: IonItemGroup with HTMLAttributes[HTMLIonItemGroupElement]): Self = StObject.set(x, "ion-item-group", value.asInstanceOf[js.Any])
+          def `setIon-item-group`(value: IonItemGroup & HTMLAttributes[HTMLIonItemGroupElement]): Self = StObject.set(x, "ion-item-group", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item-option`(value: IonItemOption with HTMLAttributes[HTMLIonItemOptionElement]): Self = StObject.set(x, "ion-item-option", value.asInstanceOf[js.Any])
+          def `setIon-item-option`(value: IonItemOption & HTMLAttributes[HTMLIonItemOptionElement]): Self = StObject.set(x, "ion-item-option", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item-options`(value: IonItemOptions with HTMLAttributes[HTMLIonItemOptionsElement]): Self = StObject.set(x, "ion-item-options", value.asInstanceOf[js.Any])
+          def `setIon-item-options`(value: IonItemOptions & HTMLAttributes[HTMLIonItemOptionsElement]): Self = StObject.set(x, "ion-item-options", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-item-sliding`(value: IonItemSliding with HTMLAttributes[HTMLIonItemSlidingElement]): Self = StObject.set(x, "ion-item-sliding", value.asInstanceOf[js.Any])
+          def `setIon-item-sliding`(value: IonItemSliding & HTMLAttributes[HTMLIonItemSlidingElement]): Self = StObject.set(x, "ion-item-sliding", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-label`(value: IonLabel with HTMLAttributes[HTMLIonLabelElement]): Self = StObject.set(x, "ion-label", value.asInstanceOf[js.Any])
+          def `setIon-label`(value: IonLabel & HTMLAttributes[HTMLIonLabelElement]): Self = StObject.set(x, "ion-label", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-list`(value: IonList with HTMLAttributes[HTMLIonListElement]): Self = StObject.set(x, "ion-list", value.asInstanceOf[js.Any])
+          def `setIon-list`(value: IonList & HTMLAttributes[HTMLIonListElement]): Self = StObject.set(x, "ion-list", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-list-header`(value: IonListHeader with HTMLAttributes[HTMLIonListHeaderElement]): Self = StObject.set(x, "ion-list-header", value.asInstanceOf[js.Any])
+          def `setIon-list-header`(value: IonListHeader & HTMLAttributes[HTMLIonListHeaderElement]): Self = StObject.set(x, "ion-list-header", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-loading`(value: IonLoading with HTMLAttributes[HTMLIonLoadingElement]): Self = StObject.set(x, "ion-loading", value.asInstanceOf[js.Any])
+          def `setIon-loading`(value: IonLoading & HTMLAttributes[HTMLIonLoadingElement]): Self = StObject.set(x, "ion-loading", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-menu`(value: IonMenu with HTMLAttributes[HTMLIonMenuElement]): Self = StObject.set(x, "ion-menu", value.asInstanceOf[js.Any])
+          def `setIon-menu`(value: IonMenu & HTMLAttributes[HTMLIonMenuElement]): Self = StObject.set(x, "ion-menu", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-menu-button`(value: IonMenuButton with HTMLAttributes[HTMLIonMenuButtonElement]): Self = StObject.set(x, "ion-menu-button", value.asInstanceOf[js.Any])
+          def `setIon-menu-button`(value: IonMenuButton & HTMLAttributes[HTMLIonMenuButtonElement]): Self = StObject.set(x, "ion-menu-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-menu-toggle`(value: IonMenuToggle with HTMLAttributes[HTMLIonMenuToggleElement]): Self = StObject.set(x, "ion-menu-toggle", value.asInstanceOf[js.Any])
+          def `setIon-menu-toggle`(value: IonMenuToggle & HTMLAttributes[HTMLIonMenuToggleElement]): Self = StObject.set(x, "ion-menu-toggle", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-modal`(value: IonModal with HTMLAttributes[HTMLIonModalElement]): Self = StObject.set(x, "ion-modal", value.asInstanceOf[js.Any])
+          def `setIon-modal`(value: IonModal & HTMLAttributes[HTMLIonModalElement]): Self = StObject.set(x, "ion-modal", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-nav`(value: IonNav with HTMLAttributes[HTMLIonNavElement]): Self = StObject.set(x, "ion-nav", value.asInstanceOf[js.Any])
+          def `setIon-nav`(value: IonNav & HTMLAttributes[HTMLIonNavElement]): Self = StObject.set(x, "ion-nav", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-nav-link`(value: IonNavLink with HTMLAttributes[HTMLIonNavLinkElement]): Self = StObject.set(x, "ion-nav-link", value.asInstanceOf[js.Any])
+          def `setIon-nav-link`(value: IonNavLink & HTMLAttributes[HTMLIonNavLinkElement]): Self = StObject.set(x, "ion-nav-link", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-note`(value: IonNote with HTMLAttributes[HTMLIonNoteElement]): Self = StObject.set(x, "ion-note", value.asInstanceOf[js.Any])
+          def `setIon-note`(value: IonNote & HTMLAttributes[HTMLIonNoteElement]): Self = StObject.set(x, "ion-note", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-picker`(value: IonPicker with HTMLAttributes[HTMLIonPickerElement]): Self = StObject.set(x, "ion-picker", value.asInstanceOf[js.Any])
+          def `setIon-picker`(value: IonPicker & HTMLAttributes[HTMLIonPickerElement]): Self = StObject.set(x, "ion-picker", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-picker-column`(value: IonPickerColumn with HTMLAttributes[HTMLIonPickerColumnElement]): Self = StObject.set(x, "ion-picker-column", value.asInstanceOf[js.Any])
+          def `setIon-picker-column`(value: IonPickerColumn & HTMLAttributes[HTMLIonPickerColumnElement]): Self = StObject.set(x, "ion-picker-column", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-popover`(value: IonPopover with HTMLAttributes[HTMLIonPopoverElement]): Self = StObject.set(x, "ion-popover", value.asInstanceOf[js.Any])
+          def `setIon-popover`(value: IonPopover & HTMLAttributes[HTMLIonPopoverElement]): Self = StObject.set(x, "ion-popover", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-progress-bar`(value: IonProgressBar with HTMLAttributes[HTMLIonProgressBarElement]): Self = StObject.set(x, "ion-progress-bar", value.asInstanceOf[js.Any])
+          def `setIon-progress-bar`(value: IonProgressBar & HTMLAttributes[HTMLIonProgressBarElement]): Self = StObject.set(x, "ion-progress-bar", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-radio`(value: IonRadio with HTMLAttributes[HTMLIonRadioElement]): Self = StObject.set(x, "ion-radio", value.asInstanceOf[js.Any])
+          def `setIon-radio`(value: IonRadio & HTMLAttributes[HTMLIonRadioElement]): Self = StObject.set(x, "ion-radio", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-radio-group`(value: IonRadioGroup with HTMLAttributes[HTMLIonRadioGroupElement]): Self = StObject.set(x, "ion-radio-group", value.asInstanceOf[js.Any])
+          def `setIon-radio-group`(value: IonRadioGroup & HTMLAttributes[HTMLIonRadioGroupElement]): Self = StObject.set(x, "ion-radio-group", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-range`(value: IonRange with HTMLAttributes[HTMLIonRangeElement]): Self = StObject.set(x, "ion-range", value.asInstanceOf[js.Any])
+          def `setIon-range`(value: IonRange & HTMLAttributes[HTMLIonRangeElement]): Self = StObject.set(x, "ion-range", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-refresher`(value: IonRefresher with HTMLAttributes[HTMLIonRefresherElement]): Self = StObject.set(x, "ion-refresher", value.asInstanceOf[js.Any])
+          def `setIon-refresher`(value: IonRefresher & HTMLAttributes[HTMLIonRefresherElement]): Self = StObject.set(x, "ion-refresher", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-refresher-content`(value: IonRefresherContent with HTMLAttributes[HTMLIonRefresherContentElement]): Self = StObject.set(x, "ion-refresher-content", value.asInstanceOf[js.Any])
+          def `setIon-refresher-content`(value: IonRefresherContent & HTMLAttributes[HTMLIonRefresherContentElement]): Self = StObject.set(x, "ion-refresher-content", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-reorder`(value: IonReorder with HTMLAttributes[HTMLIonReorderElement]): Self = StObject.set(x, "ion-reorder", value.asInstanceOf[js.Any])
+          def `setIon-reorder`(value: IonReorder & HTMLAttributes[HTMLIonReorderElement]): Self = StObject.set(x, "ion-reorder", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-reorder-group`(value: IonReorderGroup with HTMLAttributes[HTMLIonReorderGroupElement]): Self = StObject.set(x, "ion-reorder-group", value.asInstanceOf[js.Any])
+          def `setIon-reorder-group`(value: IonReorderGroup & HTMLAttributes[HTMLIonReorderGroupElement]): Self = StObject.set(x, "ion-reorder-group", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-ripple-effect`(value: IonRippleEffect with HTMLAttributes[HTMLIonRippleEffectElement]): Self = StObject.set(x, "ion-ripple-effect", value.asInstanceOf[js.Any])
+          def `setIon-ripple-effect`(value: IonRippleEffect & HTMLAttributes[HTMLIonRippleEffectElement]): Self = StObject.set(x, "ion-ripple-effect", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-route`(value: IonRoute with HTMLAttributes[HTMLIonRouteElement]): Self = StObject.set(x, "ion-route", value.asInstanceOf[js.Any])
+          def `setIon-route`(value: IonRoute & HTMLAttributes[HTMLIonRouteElement]): Self = StObject.set(x, "ion-route", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-route-redirect`(value: IonRouteRedirect with HTMLAttributes[HTMLIonRouteRedirectElement]): Self = StObject.set(x, "ion-route-redirect", value.asInstanceOf[js.Any])
+          def `setIon-route-redirect`(value: IonRouteRedirect & HTMLAttributes[HTMLIonRouteRedirectElement]): Self = StObject.set(x, "ion-route-redirect", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-router`(value: IonRouter with HTMLAttributes[HTMLIonRouterElement]): Self = StObject.set(x, "ion-router", value.asInstanceOf[js.Any])
+          def `setIon-router`(value: IonRouter & HTMLAttributes[HTMLIonRouterElement]): Self = StObject.set(x, "ion-router", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-router-link`(value: IonRouterLink with HTMLAttributes[HTMLIonRouterLinkElement]): Self = StObject.set(x, "ion-router-link", value.asInstanceOf[js.Any])
+          def `setIon-router-link`(value: IonRouterLink & HTMLAttributes[HTMLIonRouterLinkElement]): Self = StObject.set(x, "ion-router-link", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-router-outlet`(value: IonRouterOutlet with HTMLAttributes[HTMLIonRouterOutletElement]): Self = StObject.set(x, "ion-router-outlet", value.asInstanceOf[js.Any])
+          def `setIon-router-outlet`(value: IonRouterOutlet & HTMLAttributes[HTMLIonRouterOutletElement]): Self = StObject.set(x, "ion-router-outlet", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-row`(value: IonRow with HTMLAttributes[HTMLIonRowElement]): Self = StObject.set(x, "ion-row", value.asInstanceOf[js.Any])
+          def `setIon-row`(value: IonRow & HTMLAttributes[HTMLIonRowElement]): Self = StObject.set(x, "ion-row", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-searchbar`(value: IonSearchbar with HTMLAttributes[HTMLIonSearchbarElement]): Self = StObject.set(x, "ion-searchbar", value.asInstanceOf[js.Any])
+          def `setIon-searchbar`(value: IonSearchbar & HTMLAttributes[HTMLIonSearchbarElement]): Self = StObject.set(x, "ion-searchbar", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-segment`(value: IonSegment with HTMLAttributes[HTMLIonSegmentElement]): Self = StObject.set(x, "ion-segment", value.asInstanceOf[js.Any])
+          def `setIon-segment`(value: IonSegment & HTMLAttributes[HTMLIonSegmentElement]): Self = StObject.set(x, "ion-segment", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-segment-button`(value: IonSegmentButton with HTMLAttributes[HTMLIonSegmentButtonElement]): Self = StObject.set(x, "ion-segment-button", value.asInstanceOf[js.Any])
+          def `setIon-segment-button`(value: IonSegmentButton & HTMLAttributes[HTMLIonSegmentButtonElement]): Self = StObject.set(x, "ion-segment-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-select`(value: IonSelect with HTMLAttributes[HTMLIonSelectElement]): Self = StObject.set(x, "ion-select", value.asInstanceOf[js.Any])
+          def `setIon-select`(value: IonSelect & HTMLAttributes[HTMLIonSelectElement]): Self = StObject.set(x, "ion-select", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-select-option`(value: IonSelectOption with HTMLAttributes[HTMLIonSelectOptionElement]): Self = StObject.set(x, "ion-select-option", value.asInstanceOf[js.Any])
+          def `setIon-select-option`(value: IonSelectOption & HTMLAttributes[HTMLIonSelectOptionElement]): Self = StObject.set(x, "ion-select-option", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-select-popover`(value: IonSelectPopover with HTMLAttributes[HTMLIonSelectPopoverElement]): Self = StObject.set(x, "ion-select-popover", value.asInstanceOf[js.Any])
+          def `setIon-select-popover`(value: IonSelectPopover & HTMLAttributes[HTMLIonSelectPopoverElement]): Self = StObject.set(x, "ion-select-popover", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-skeleton-text`(value: IonSkeletonText with HTMLAttributes[HTMLIonSkeletonTextElement]): Self = StObject.set(x, "ion-skeleton-text", value.asInstanceOf[js.Any])
+          def `setIon-skeleton-text`(value: IonSkeletonText & HTMLAttributes[HTMLIonSkeletonTextElement]): Self = StObject.set(x, "ion-skeleton-text", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-slide`(value: IonSlide with HTMLAttributes[HTMLIonSlideElement]): Self = StObject.set(x, "ion-slide", value.asInstanceOf[js.Any])
+          def `setIon-slide`(value: IonSlide & HTMLAttributes[HTMLIonSlideElement]): Self = StObject.set(x, "ion-slide", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-slides`(value: IonSlides with HTMLAttributes[HTMLIonSlidesElement]): Self = StObject.set(x, "ion-slides", value.asInstanceOf[js.Any])
+          def `setIon-slides`(value: IonSlides & HTMLAttributes[HTMLIonSlidesElement]): Self = StObject.set(x, "ion-slides", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-spinner`(value: IonSpinner with HTMLAttributes[HTMLIonSpinnerElement]): Self = StObject.set(x, "ion-spinner", value.asInstanceOf[js.Any])
+          def `setIon-spinner`(value: IonSpinner & HTMLAttributes[HTMLIonSpinnerElement]): Self = StObject.set(x, "ion-spinner", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-split-pane`(value: IonSplitPane with HTMLAttributes[HTMLIonSplitPaneElement]): Self = StObject.set(x, "ion-split-pane", value.asInstanceOf[js.Any])
+          def `setIon-split-pane`(value: IonSplitPane & HTMLAttributes[HTMLIonSplitPaneElement]): Self = StObject.set(x, "ion-split-pane", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-tab`(value: IonTab with HTMLAttributes[HTMLIonTabElement]): Self = StObject.set(x, "ion-tab", value.asInstanceOf[js.Any])
+          def `setIon-tab`(value: IonTab & HTMLAttributes[HTMLIonTabElement]): Self = StObject.set(x, "ion-tab", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-tab-bar`(value: IonTabBar with HTMLAttributes[HTMLIonTabBarElement]): Self = StObject.set(x, "ion-tab-bar", value.asInstanceOf[js.Any])
+          def `setIon-tab-bar`(value: IonTabBar & HTMLAttributes[HTMLIonTabBarElement]): Self = StObject.set(x, "ion-tab-bar", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-tab-button`(value: IonTabButton with HTMLAttributes[HTMLIonTabButtonElement]): Self = StObject.set(x, "ion-tab-button", value.asInstanceOf[js.Any])
+          def `setIon-tab-button`(value: IonTabButton & HTMLAttributes[HTMLIonTabButtonElement]): Self = StObject.set(x, "ion-tab-button", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-tabs`(value: IonTabs with HTMLAttributes[HTMLIonTabsElement]): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
+          def `setIon-tabs`(value: IonTabs & HTMLAttributes[HTMLIonTabsElement]): Self = StObject.set(x, "ion-tabs", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-text`(value: IonText with HTMLAttributes[HTMLIonTextElement]): Self = StObject.set(x, "ion-text", value.asInstanceOf[js.Any])
+          def `setIon-text`(value: IonText & HTMLAttributes[HTMLIonTextElement]): Self = StObject.set(x, "ion-text", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-textarea`(value: IonTextarea with HTMLAttributes[HTMLIonTextareaElement]): Self = StObject.set(x, "ion-textarea", value.asInstanceOf[js.Any])
+          def `setIon-textarea`(value: IonTextarea & HTMLAttributes[HTMLIonTextareaElement]): Self = StObject.set(x, "ion-textarea", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-thumbnail`(value: IonThumbnail with HTMLAttributes[HTMLIonThumbnailElement]): Self = StObject.set(x, "ion-thumbnail", value.asInstanceOf[js.Any])
+          def `setIon-thumbnail`(value: IonThumbnail & HTMLAttributes[HTMLIonThumbnailElement]): Self = StObject.set(x, "ion-thumbnail", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-title`(value: IonTitle with HTMLAttributes[HTMLIonTitleElement]): Self = StObject.set(x, "ion-title", value.asInstanceOf[js.Any])
+          def `setIon-title`(value: IonTitle & HTMLAttributes[HTMLIonTitleElement]): Self = StObject.set(x, "ion-title", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-toast`(value: IonToast with HTMLAttributes[HTMLIonToastElement]): Self = StObject.set(x, "ion-toast", value.asInstanceOf[js.Any])
+          def `setIon-toast`(value: IonToast & HTMLAttributes[HTMLIonToastElement]): Self = StObject.set(x, "ion-toast", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-toggle`(value: IonToggle with HTMLAttributes[HTMLIonToggleElement]): Self = StObject.set(x, "ion-toggle", value.asInstanceOf[js.Any])
+          def `setIon-toggle`(value: IonToggle & HTMLAttributes[HTMLIonToggleElement]): Self = StObject.set(x, "ion-toggle", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-toolbar`(value: IonToolbar with HTMLAttributes[HTMLIonToolbarElement]): Self = StObject.set(x, "ion-toolbar", value.asInstanceOf[js.Any])
+          def `setIon-toolbar`(value: IonToolbar & HTMLAttributes[HTMLIonToolbarElement]): Self = StObject.set(x, "ion-toolbar", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def `setIon-virtual-scroll`(value: IonVirtualScroll with HTMLAttributes[HTMLIonVirtualScrollElement]): Self = StObject.set(x, "ion-virtual-scroll", value.asInstanceOf[js.Any])
+          def `setIon-virtual-scroll`(value: IonVirtualScroll & HTMLAttributes[HTMLIonVirtualScrollElement]): Self = StObject.set(x, "ion-virtual-scroll", value.asInstanceOf[js.Any])
         }
       }
     }

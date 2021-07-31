@@ -2,16 +2,14 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
   /**
     * List of data points in a single row of the result set.
     */
-  var Data: DatumList = js.native
+  var Data: DatumList
 }
 object Row {
   

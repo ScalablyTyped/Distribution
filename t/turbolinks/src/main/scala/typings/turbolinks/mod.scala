@@ -5,7 +5,6 @@ import typings.turbolinks.turbolinksStrings.advance
 import typings.turbolinks.turbolinksStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,10 +13,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : TurbolinksStatic = js.native
   
-  @js.native
   trait Action extends StObject {
     
-    var action: advance | replace = js.native
+    var action: advance | replace
   }
   object Action {
     

@@ -6,21 +6,19 @@ import typings.orientjs.orientjsStrings.memory
 import typings.orientjs.orientjsStrings.plocal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseOptions extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var storage: js.UndefOr[plocal | memory] = js.native
+  var storage: js.UndefOr[plocal | memory] = js.undefined
   
-  var `type`: js.UndefOr[graph | document] = js.native
+  var `type`: js.UndefOr[graph | document] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object DatabaseOptions {
   

@@ -5,40 +5,36 @@ import typings.babelTypes.babelTypesStrings.`type`
 import typings.babelTypes.babelTypesStrings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ExportNamedDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait ExportNamedDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with ExportDeclaration
      with ModuleDeclaration
      with Statement {
   
-  var assertions: ImportAttribute_ | Null = js.native
+  var assertions: ImportAttribute_ | Null
   
-  var declaration: Declaration | Null = js.native
+  var declaration: Declaration | Null
   
-  var exportKind: `type` | value | Null = js.native
+  var exportKind: `type` | value | Null
   
-  var source: StringLiteral_ | Null = js.native
+  var source: StringLiteral_ | Null
   
-  var specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_] = js.native
+  var specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]
   
   @JSName("type")
-  var type_ExportNamedDeclaration_ : ExportNamedDeclaration = js.native
+  var type_ExportNamedDeclaration_ : ExportNamedDeclaration
 }
 object ExportNamedDeclaration_ {
   
   @scala.inline
-  def apply(
-    specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_],
-    `type`: ExportNamedDeclaration
-  ): ExportNamedDeclaration_ = {
-    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(specifiers: js.Array[ExportSpecifier_ | ExportDefaultSpecifier_ | ExportNamespaceSpecifier_]): ExportNamedDeclaration_ = {
+    val __obj = js.Dynamic.literal(specifiers = specifiers.asInstanceOf[js.Any], assertions = null, declaration = null, end = null, exportKind = null, innerComments = null, leadingComments = null, loc = null, source = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("ExportNamedDeclaration")
     __obj.asInstanceOf[ExportNamedDeclaration_]
   }
   

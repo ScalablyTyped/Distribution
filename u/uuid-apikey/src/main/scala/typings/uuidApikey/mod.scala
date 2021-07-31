@@ -3,7 +3,6 @@ package typings.uuidApikey
 import typings.uuidApikey.anon.PartialUUIDOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,11 @@ object mod {
   @scala.inline
   def default_=(x: UUIDAPIKey): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ApiKeyInfo extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object ApiKeyInfo {
     
@@ -64,10 +62,9 @@ object mod {
     def toUUID(apiKey: String): String = js.native
   }
   
-  @js.native
   trait UUIDOptions extends StObject {
     
-    var noDashes: Boolean = js.native
+    var noDashes: Boolean
   }
   object UUIDOptions {
     

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleEntity extends StObject {
   
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var theme: js.UndefOr[ScheduleEntityTheme] = js.native
+  var theme: js.UndefOr[ScheduleEntityTheme] = js.undefined
 }
 object ScheduleEntity {
   

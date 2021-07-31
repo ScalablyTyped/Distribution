@@ -11,8 +11,8 @@ A simple and robust settings management library for Electron.
 | Full name          | electron-settings |
 | Keywords           | electron, app, user, data, settings, config, storage, json |
 | # releases         | 4 |
-| # dependents       | 41 |
-| # downloads        | 239950 |
+| # dependents       | 40 |
+| # downloads        | 305281 |
 | # stars            | 13 |
 
 ## Links

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDeploymentmanager.gapi.client.deploymentma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestsListResponse extends StObject {
   
   /** Output only. Manifests contained in this list response. */
-  var manifests: js.UndefOr[js.Array[Manifest]] = js.native
+  var manifests: js.UndefOr[js.Array[Manifest]] = js.undefined
   
   /** Output only. A token used to continue a truncated list request. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ManifestsListResponse {
   

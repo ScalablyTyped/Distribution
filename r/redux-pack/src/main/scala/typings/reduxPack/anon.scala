@@ -3,19 +3,17 @@ package typings.reduxPack
 import typings.reduxPack.mod.LIFECYCLEValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ReduxpackLIFECYCLE extends StObject {
     
     @JSName("redux-pack/LIFECYCLE")
-    var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.native
+    var `redux-packSlashLIFECYCLE`: js.UndefOr[LIFECYCLEValues] = js.undefined
     
     @JSName("redux-pack/TRANSACTION")
-    var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.native
+    var `redux-packSlashTRANSACTION`: js.UndefOr[String] = js.undefined
   }
   object ReduxpackLIFECYCLE {
     

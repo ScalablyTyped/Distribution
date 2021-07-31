@@ -12,15 +12,14 @@ import typings.std.MediaSource
 import typings.std.MediaStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait MeshRoom extends StObject {
   
-  def close(): js.UndefOr[scala.Nothing] = js.native
+  def close(): Unit = js.native
   
-  def getLog(): js.UndefOr[scala.Nothing] = js.native
+  def getLog(): Unit = js.native
   
   def on(event: String, cb: js.Function0[Unit]): Unit = js.native
   @JSName("on")
@@ -43,7 +42,7 @@ trait MeshRoom extends StObject {
   @JSName("once")
   def once_log(event: log, cb: js.Function1[/* logs */ js.Array[String], Unit]): Unit = js.native
   
-  def replaceStream(stream: MediaSource): js.UndefOr[scala.Nothing] = js.native
+  def replaceStream(stream: MediaSource): Unit = js.native
   
-  def send(data: js.Any): js.UndefOr[scala.Nothing] = js.native
+  def send(data: js.Any): Unit = js.native
 }

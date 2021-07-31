@@ -4,23 +4,21 @@ import typings.std.RegExp
 import typings.wordpressBlocks.mod.TransformRawSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classes extends StObject {
   
-  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var attributes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var children: js.UndefOr[TransformRawSchema] = js.native
+  var children: js.UndefOr[TransformRawSchema] = js.undefined
   
-  var classes: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var classes: js.UndefOr[js.Array[String | RegExp]] = js.undefined
   
   var require: js.UndefOr[
     js.Array[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 119 */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Classes {
   

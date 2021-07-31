@@ -2,7 +2,6 @@ package typings.throttleit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,9 +13,16 @@ object mod {
     * @param wait Number of milliseconds that must elapse between `func` invocations.
     * @return A new function that wraps the `func` function passed in.
     */
+  @scala.inline
+  def apply[GFunction /* <: AnyFunction */](fn: GFunction, wait: Double): GFunction = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], wait.asInstanceOf[js.Any])).asInstanceOf[GFunction]
+  
   @JSImport("throttleit", JSImport.Namespace)
   @js.native
-  def apply[GFunction /* <: AnyFunction */](fn: GFunction, wait: Double): GFunction = js.native
+  val ^ : js.Any = js.native
   
-  type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait AnyFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
 }

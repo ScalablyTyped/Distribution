@@ -21,7 +21,6 @@ import typings.officeJs.officeJsStrings.RightToLeft
 import typings.officeJs.officeJsStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,7 +30,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait RangeFormat extends ClientObject {
+trait RangeFormat
+  extends StObject
+     with ClientObject {
   
   /**
     * Adjusts the indentation of the range formatting. The indent value ranges from 0 to 250 and is measured in characters.

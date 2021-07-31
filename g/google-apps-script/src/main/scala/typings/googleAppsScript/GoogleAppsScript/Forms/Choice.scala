@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,16 +27,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *                choices[i].getPageNavigationType());
   *     }
   */
-@js.native
 trait Choice extends StObject {
   
-  def getGotoPage(): PageBreakItem = js.native
+  def getGotoPage(): PageBreakItem
   
-  def getPageNavigationType(): PageNavigationType = js.native
+  def getPageNavigationType(): PageNavigationType
   
-  def getValue(): String = js.native
+  def getValue(): String
   
-  def isCorrectAnswer(): Boolean = js.native
+  def isCorrectAnswer(): Boolean
 }
 object Choice {
   

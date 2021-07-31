@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReservationCoverageResponse extends StObject {
   
   /**
     * The amount of time that your reservations covered.
     */
-  var CoveragesByTime: typings.awsSdk.costexplorerMod.CoveragesByTime = js.native
+  var CoveragesByTime: typings.awsSdk.costexplorerMod.CoveragesByTime
   
   /**
     * The token for the next set of retrievable results. AWS provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.native
+  var NextPageToken: js.UndefOr[typings.awsSdk.costexplorerMod.NextPageToken] = js.undefined
   
   /**
     * The total amount of instance usage that a reservation covered.
     */
-  var Total: js.UndefOr[Coverage] = js.native
+  var Total: js.UndefOr[Coverage] = js.undefined
 }
 object GetReservationCoverageResponse {
   

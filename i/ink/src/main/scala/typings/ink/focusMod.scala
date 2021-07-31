@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object focusMod {
@@ -98,16 +97,15 @@ object focusMod {
     def writeToStdout(data: String): Unit = js.native
   }
   
-  @js.native
   trait State extends StObject {
     
-    var activeFocusId: js.UndefOr[String] = js.native
+    var activeFocusId: js.UndefOr[String] = js.undefined
     
-    var disabledFocusIds: js.Array[String] = js.native
+    var disabledFocusIds: js.Array[String]
     
-    var focusIds: js.Array[String] = js.native
+    var focusIds: js.Array[String]
     
-    var isFocusEnabled: Boolean = js.native
+    var isFocusEnabled: Boolean
   }
   object State {
     

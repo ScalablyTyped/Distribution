@@ -11,8 +11,8 @@ Gradient color component for Ink
 | Full name          | ink-gradient |
 | Keywords           | ink-component, ink, component, gradient, gradients, color, colors, rainbow, style, styles, react, jsx, terminal, term, console, command-line |
 | # releases         | 3 |
-| # dependents       | 63 |
-| # downloads        | 73703 |
+| # dependents       | 77 |
+| # downloads        | 104645 |
 | # stars            | 0 |
 
 ## Links

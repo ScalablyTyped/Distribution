@@ -2,14 +2,12 @@ package typings.semanticUiAccordion.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.AccordionSettings._Impl, 'easing'> */
-@js.native
 trait PickImpleasing extends StObject {
   
-  var easing: String = js.native
+  var easing: String
 }
 object PickImpleasing {
   

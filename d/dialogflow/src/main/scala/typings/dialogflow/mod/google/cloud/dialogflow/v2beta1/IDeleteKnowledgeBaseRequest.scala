@@ -2,18 +2,16 @@ package typings.dialogflow.mod.google.cloud.dialogflow.v2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DeleteKnowledgeBaseRequest. */
-@js.native
 trait IDeleteKnowledgeBaseRequest extends StObject {
   
   /** DeleteKnowledgeBaseRequest force */
-  var force: js.UndefOr[Boolean | Null] = js.native
+  var force: js.UndefOr[Boolean | Null] = js.undefined
   
   /** DeleteKnowledgeBaseRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object IDeleteKnowledgeBaseRequest {
   

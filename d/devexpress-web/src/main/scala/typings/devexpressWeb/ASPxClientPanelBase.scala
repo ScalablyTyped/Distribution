@@ -2,36 +2,36 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Serves as the base class for controls that implement panel functionality.
   */
-@js.native
-trait ASPxClientPanelBase extends ASPxClientControl {
+trait ASPxClientPanelBase
+  extends StObject
+     with ASPxClientControl {
   
   /**
     * Returns the HTML code that is the content of the panel.
     */
-  def GetContentHtml(): String = js.native
+  def GetContentHtml(): String
   
   /**
     * Returns a value specifying whether a panel is enabled.
     */
-  def GetEnabled(): Boolean = js.native
+  def GetEnabled(): Boolean
   
   /**
     * Sets the HTML content for the panel.
     * @param html A string value that is the HTML code defining the content of the panel.
     */
-  def SetContentHtml(html: String): Unit = js.native
+  def SetContentHtml(html: String): Unit
   
   /**
     * Sets a value specifying whether the panel is enabled.
     * @param enabled true to enable the panel; false to disable it.
     */
-  def SetEnabled(enabled: Boolean): Unit = js.native
+  def SetEnabled(enabled: Boolean): Unit
 }
 object ASPxClientPanelBase {
   

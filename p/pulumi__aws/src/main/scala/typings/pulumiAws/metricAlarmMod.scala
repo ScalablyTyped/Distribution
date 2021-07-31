@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metricAlarmMod {
@@ -154,6 +153,10 @@ object metricAlarmMod {
   /* static members */
   object MetricAlarm {
     
+    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing MetricAlarm resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -163,60 +166,54 @@ object metricAlarmMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm.get")
-    @js.native
-    def get(name: String, id: Input[ID]): MetricAlarm = js.native
-    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): MetricAlarm = js.native
-    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MetricAlarmState): MetricAlarm = js.native
-    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: MetricAlarmState, opts: CustomResourceOptions): MetricAlarm = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MetricAlarmState): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: MetricAlarmState, opts: CustomResourceOptions): MetricAlarm = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[MetricAlarm]
     
     /**
       * Returns true if the given object is an instance of MetricAlarm.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cloudwatch/metricAlarm", "MetricAlarm.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cloudwatch/metricAlarm.MetricAlarm */ Boolean]
   }
   
-  @js.native
   trait MetricAlarmArgs extends StObject {
     
     /**
       * Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
       */
-    val actionsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val actionsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val alarmActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val alarmActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The description for the alarm.
       */
-    val alarmDescription: js.UndefOr[Input[String]] = js.native
+    val alarmDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
       */
-    val comparisonOperator: Input[String] = js.native
+    val comparisonOperator: Input[String]
     
     /**
       * The number of datapoints that must be breaching to trigger the alarm.
       */
-    val datapointsToAlarm: js.UndefOr[Input[Double]] = js.native
+    val datapointsToAlarm: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val dimensions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val dimensions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Used only for alarms
@@ -226,87 +223,87 @@ object metricAlarmMod {
       * evaluated and possibly change state no matter how many data points are available.
       * The following values are supported: `ignore`, and `evaluate`.
       */
-    val evaluateLowSampleCountPercentiles: js.UndefOr[Input[String]] = js.native
+    val evaluateLowSampleCountPercentiles: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of periods over which data is compared to the specified threshold.
       */
-    val evaluationPeriods: Input[Double] = js.native
+    val evaluationPeriods: Input[Double]
     
     /**
       * The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
       */
-    val extendedStatistic: js.UndefOr[Input[String]] = js.native
+    val extendedStatistic: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val insufficientDataActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val insufficientDataActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The name for this metric.
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enables you to create an alarm based on a metric math expression. You may specify at most 20.
       */
     val metricQueries: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The descriptive name for the alarm. This name must be unique within the user's AWS account
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val okActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val okActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The period in seconds over which the specified `stat` is applied.
       */
-    val period: js.UndefOr[Input[Double]] = js.native
+    val period: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The statistic to apply to the alarm's associated metric.
       * Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
       */
-    val statistic: js.UndefOr[Input[String]] = js.native
+    val statistic: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
       */
-    val threshold: js.UndefOr[Input[Double]] = js.native
+    val threshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
       */
-    val thresholdMetricId: js.UndefOr[Input[String]] = js.native
+    val thresholdMetricId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
       */
-    val treatMissingData: js.UndefOr[Input[String]] = js.native
+    val treatMissingData: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unit for this metric.
       */
-    val unit: js.UndefOr[Input[String]] = js.native
+    val unit: js.UndefOr[Input[String]] = js.undefined
   }
   object MetricAlarmArgs {
     
@@ -459,43 +456,42 @@ object metricAlarmMod {
     }
   }
   
-  @js.native
   trait MetricAlarmState extends StObject {
     
     /**
       * Indicates whether or not actions should be executed during any changes to the alarm's state. Defaults to `true`.
       */
-    val actionsEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val actionsEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val alarmActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val alarmActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The description for the alarm.
       */
-    val alarmDescription: js.UndefOr[Input[String]] = js.native
+    val alarmDescription: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the cloudwatch metric alarm.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The arithmetic operation to use when comparing the specified Statistic and Threshold. The specified Statistic value is used as the first operand. Either of the following is supported: `GreaterThanOrEqualToThreshold`, `GreaterThanThreshold`, `LessThanThreshold`, `LessThanOrEqualToThreshold`. Additionally, the values  `LessThanLowerOrGreaterThanUpperThreshold`, `LessThanLowerThreshold`, and `GreaterThanUpperThreshold` are used only for alarms based on anomaly detection models.
       */
-    val comparisonOperator: js.UndefOr[Input[String]] = js.native
+    val comparisonOperator: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of datapoints that must be breaching to trigger the alarm.
       */
-    val datapointsToAlarm: js.UndefOr[Input[Double]] = js.native
+    val datapointsToAlarm: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val dimensions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val dimensions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Used only for alarms
@@ -505,87 +501,87 @@ object metricAlarmMod {
       * evaluated and possibly change state no matter how many data points are available.
       * The following values are supported: `ignore`, and `evaluate`.
       */
-    val evaluateLowSampleCountPercentiles: js.UndefOr[Input[String]] = js.native
+    val evaluateLowSampleCountPercentiles: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of periods over which data is compared to the specified threshold.
       */
-    val evaluationPeriods: js.UndefOr[Input[Double]] = js.native
+    val evaluationPeriods: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
       */
-    val extendedStatistic: js.UndefOr[Input[String]] = js.native
+    val extendedStatistic: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val insufficientDataActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val insufficientDataActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The name for this metric.
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val metricName: js.UndefOr[Input[String]] = js.native
+    val metricName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enables you to create an alarm based on a metric math expression. You may specify at most 20.
       */
     val metricQueries: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.cloudwatch.MetricAlarmMetricQuery]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The descriptive name for the alarm. This name must be unique within the user's AWS account
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    val namespace: js.UndefOr[Input[String]] = js.native
+    val namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The list of actions to execute when this alarm transitions into an OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
       */
-    val okActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.native
+    val okActions: js.UndefOr[Input[js.Array[Input[String | Topic]]]] = js.undefined
     
     /**
       * The period in seconds over which the specified `stat` is applied.
       */
-    val period: js.UndefOr[Input[Double]] = js.native
+    val period: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The statistic to apply to the alarm's associated metric.
       * Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
       */
-    val statistic: js.UndefOr[Input[String]] = js.native
+    val statistic: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The value against which the specified statistic is compared. This parameter is required for alarms based on static thresholds, but should not be used for alarms based on anomaly detection models.
       */
-    val threshold: js.UndefOr[Input[Double]] = js.native
+    val threshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If this is an alarm based on an anomaly detection model, make this value match the ID of the ANOMALY_DETECTION_BAND function.
       */
-    val thresholdMetricId: js.UndefOr[Input[String]] = js.native
+    val thresholdMetricId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Sets how this alarm is to handle missing data points. The following values are supported: `missing`, `ignore`, `breaching` and `notBreaching`. Defaults to `missing`.
       */
-    val treatMissingData: js.UndefOr[Input[String]] = js.native
+    val treatMissingData: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unit for this metric.
       */
-    val unit: js.UndefOr[Input[String]] = js.native
+    val unit: js.UndefOr[Input[String]] = js.undefined
   }
   object MetricAlarmState {
     

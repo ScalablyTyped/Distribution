@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttestationOccurrence extends StObject {
   
   /**
@@ -13,16 +11,16 @@ trait AttestationOccurrence extends StObject {
     * `serialized_payload` field when verifying these JWTs. If only JWTs are present on this AttestationOccurrence, then the `serialized_payload` SHOULD be left empty. Each JWT SHOULD
     * encode a claim specific to the `resource_uri` of this Occurrence, but this is not validated by Grafeas metadata API implementations. The JWT itself is opaque to Grafeas.
     */
-  var jwts: js.UndefOr[js.Array[Jwt]] = js.native
+  var jwts: js.UndefOr[js.Array[Jwt]] = js.undefined
   
   /** Required. The serialized payload that is verified by one or more `signatures`. */
-  var serializedPayload: js.UndefOr[String] = js.native
+  var serializedPayload: js.UndefOr[String] = js.undefined
   
   /**
     * One or more signatures over `serialized_payload`. Verifier implementations should consider this attestation message verified if at least one `signature` verifies
     * `serialized_payload`. See `Signature` in common.proto for more details on signature structure and verification.
     */
-  var signatures: js.UndefOr[js.Array[Signature]] = js.native
+  var signatures: js.UndefOr[js.Array[Signature]] = js.undefined
 }
 object AttestationOccurrence {
   

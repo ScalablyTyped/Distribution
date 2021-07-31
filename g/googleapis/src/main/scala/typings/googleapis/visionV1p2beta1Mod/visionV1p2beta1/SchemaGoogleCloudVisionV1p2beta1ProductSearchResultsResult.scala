@@ -2,31 +2,29 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a product.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult extends StObject {
   
   /**
     * The resource name of the image from the product that is the closest match
     * to the query.
     */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
   /**
     * The Product.
     */
-  var product: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1Product] = js.native
+  var product: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1Product] = js.undefined
   
   /**
     * A confidence level on the match, ranging from 0 (no confidence) to 1
     * (full confidence).
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1ProductSearchResultsResult {
   

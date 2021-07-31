@@ -3,56 +3,51 @@ package typings.senchaTouch.global.Ext
 import typings.senchaTouch.Ext.ILogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Logger")
 @js.native
 class Logger ()
-  extends typings.senchaTouch.Ext.Logger
+  extends StObject
+     with typings.senchaTouch.Ext.Logger
 /* static members */
 object Logger {
   
-  /** [Method] Convenience method for log with priority deprecate */
-  @JSGlobal("Ext.Logger.deprecate")
+  @JSGlobal("Ext.Logger")
   @js.native
-  def deprecate(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  /** [Method] Convenience method for log with priority deprecate */
+  @scala.inline
+  def deprecate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deprecate")().asInstanceOf[Unit]
   
   /** [Method] Convenience method for log with priority error */
-  @JSGlobal("Ext.Logger.error")
-  @js.native
-  def error(): Unit = js.native
+  @scala.inline
+  def error(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")().asInstanceOf[Unit]
   
   /** [Method] Convenience method for log with priority info */
-  @JSGlobal("Ext.Logger.info")
-  @js.native
-  def info(): Unit = js.native
+  @scala.inline
+  def info(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("info")().asInstanceOf[Unit]
   
   /** [Method] Logs a message to help with debugging
     * @param message String Message to log.
     * @param priority Number Priority of the log message.
     * @returns Ext.Logger this
     */
-  @JSGlobal("Ext.Logger.log")
-  @js.native
-  def log(): ILogger = js.native
-  @JSGlobal("Ext.Logger.log")
-  @js.native
-  def log(message: js.UndefOr[scala.Nothing], priority: Double): ILogger = js.native
-  @JSGlobal("Ext.Logger.log")
-  @js.native
-  def log(message: java.lang.String): ILogger = js.native
-  @JSGlobal("Ext.Logger.log")
-  @js.native
-  def log(message: java.lang.String, priority: Double): ILogger = js.native
+  @scala.inline
+  def log(): ILogger = ^.asInstanceOf[js.Dynamic].applyDynamic("log")().asInstanceOf[ILogger]
+  @scala.inline
+  def log(message: java.lang.String): ILogger = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[ILogger]
+  @scala.inline
+  def log(message: java.lang.String, priority: Double): ILogger = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[ILogger]
+  @scala.inline
+  def log(message: Unit, priority: Double): ILogger = (^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[ILogger]
   
   /** [Method] Convenience method for log with priority verbose */
-  @JSGlobal("Ext.Logger.verbose")
-  @js.native
-  def verbose(): Unit = js.native
+  @scala.inline
+  def verbose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verbose")().asInstanceOf[Unit]
   
   /** [Method] Convenience method for log with priority warn */
-  @JSGlobal("Ext.Logger.warn")
-  @js.native
-  def warn(): Unit = js.native
+  @scala.inline
+  def warn(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")().asInstanceOf[Unit]
 }

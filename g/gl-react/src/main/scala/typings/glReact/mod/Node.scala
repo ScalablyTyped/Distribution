@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gl-react", "Node")
@@ -28,7 +27,7 @@ class Node protected ()
   
   var dependencies: js.Array[Node | Bus] = js.native
   
-  var dependents: js.Array[Node | Surface[_]] = js.native
+  var dependents: js.Array[Node | Surface[js.Any]] = js.native
   
   var drawProps: NodeProps = js.native
   

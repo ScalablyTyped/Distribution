@@ -2,11 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MSPointerEvent extends MouseEvent {
+trait MSPointerEvent
+  extends StObject
+     with MouseEvent {
   
   val currentPoint: js.Any = js.native
   

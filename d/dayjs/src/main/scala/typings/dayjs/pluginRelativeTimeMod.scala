@@ -5,7 +5,6 @@ import typings.dayjs.mod.ConfigType
 import typings.dayjs.mod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pluginRelativeTimeMod extends Shortcut {
@@ -14,12 +13,11 @@ object pluginRelativeTimeMod extends Shortcut {
   @js.native
   val ^ : PluginFunc[RelativeTimeOptions] = js.native
   
-  @js.native
   trait RelativeTimeOptions extends StObject {
     
-    var rounding: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.native
+    var rounding: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.undefined
     
-    var thresholds: js.UndefOr[js.Array[RelativeTimeThreshold]] = js.native
+    var thresholds: js.UndefOr[js.Array[RelativeTimeThreshold]] = js.undefined
   }
   object RelativeTimeOptions {
     
@@ -49,14 +47,13 @@ object pluginRelativeTimeMod extends Shortcut {
     }
   }
   
-  @js.native
   trait RelativeTimeThreshold extends StObject {
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var l: String = js.native
+    var l: String
     
-    var r: js.UndefOr[Double] = js.native
+    var r: js.UndefOr[Double] = js.undefined
   }
   object RelativeTimeThreshold {
     

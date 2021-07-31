@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationEllipsisMod {
@@ -18,8 +17,9 @@ object paginationEllipsisMod {
   trait PaginationEllipsis
     extends Component[PaginationEllipsisProps, js.Object, js.Any]
   
-  @js.native
-  trait PaginationEllipsisProps extends HTMLProps[PaginationEllipsis]
+  trait PaginationEllipsisProps
+    extends StObject
+       with HTMLProps[PaginationEllipsis]
   object PaginationEllipsisProps {
     
     @scala.inline

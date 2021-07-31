@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.InteractionsGetRestrictionsForOrgRespon
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersInteractionsGetRestrictionsForOrgEndpoint extends StObject {
   
-  var parameters: InteractionsGetRestrictionsForOrgEndpoint = js.native
+  var parameters: InteractionsGetRestrictionsForOrgEndpoint
   
-  var request: InteractionsGetRestrictionsForOrgRequestOptions = js.native
+  var request: InteractionsGetRestrictionsForOrgRequestOptions
   
-  var response: OctokitResponse[InteractionsGetRestrictionsForOrgResponseData] = js.native
+  var response: OctokitResponse[InteractionsGetRestrictionsForOrgResponseData]
 }
 object ParametersInteractionsGetRestrictionsForOrgEndpoint {
   

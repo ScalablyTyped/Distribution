@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FunctionExpression extends AST {
+trait FunctionExpression
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var callSignature: CallSignature = js.native
+  var callSignature: CallSignature
   
-  var identifier: Identifier = js.native
+  var identifier: Identifier
 }
 object FunctionExpression {
   

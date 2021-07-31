@@ -3,13 +3,11 @@ package typings.nextServer.anon
 import typings.nextServer.libUtilsMod.BaseContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInitialProps[C /* <: BaseContext */, IP] extends StObject {
   
-  var getInitialProps: js.UndefOr[js.Function1[/* context */ C, IP | js.Promise[IP]]] = js.native
+  var getInitialProps: js.UndefOr[js.Function1[/* context */ C, IP | js.Promise[IP]]] = js.undefined
 }
 object GetInitialProps {
   
@@ -20,7 +18,7 @@ object GetInitialProps {
   }
   
   @scala.inline
-  implicit class GetInitialPropsMutableBuilder[Self <: GetInitialProps[_, _], C /* <: BaseContext */, IP] (val x: Self with (GetInitialProps[C, IP])) extends AnyVal {
+  implicit class GetInitialPropsMutableBuilder[Self <: GetInitialProps[?, ?], C /* <: BaseContext */, IP] (val x: Self & (GetInitialProps[C, IP])) extends AnyVal {
     
     @scala.inline
     def setGetInitialProps(value: /* context */ C => IP | js.Promise[IP]): Self = StObject.set(x, "getInitialProps", js.Any.fromFunction1(value))

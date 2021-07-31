@@ -5,21 +5,19 @@ import typings.jointjs.mod.attributes.SVGRectAttributes
 import typings.jointjs.mod.attributes.SVGTextAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderedRectangleSelectors extends StObject {
   
-  var body: js.UndefOr[SVGRectAttributes] = js.native
+  var body: js.UndefOr[SVGRectAttributes] = js.undefined
   
-  var bodyText: js.UndefOr[SVGTextAttributes] = js.native
+  var bodyText: js.UndefOr[SVGTextAttributes] = js.undefined
   
-  var header: js.UndefOr[SVGRectAttributes] = js.native
+  var header: js.UndefOr[SVGRectAttributes] = js.undefined
   
-  var headerText: js.UndefOr[SVGTextAttributes] = js.native
+  var headerText: js.UndefOr[SVGTextAttributes] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
 }
 object HeaderedRectangleSelectors {
   

@@ -2,11 +2,11 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FlingGestureHandlerGestureEvent extends GestureHandlerGestureEvent
+trait FlingGestureHandlerGestureEvent
+  extends StObject
+     with GestureHandlerGestureEvent
 object FlingGestureHandlerGestureEvent {
   
   @scala.inline

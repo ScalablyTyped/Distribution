@@ -3,10 +3,8 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomTextEditorProvider extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait CustomTextEditorProvider extends StObject {
     *
     * @return Thenable indicating that the custom editor has been resolved.
     */
-  def resolveCustomTextEditor(document: TextDocument, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit = js.native
+  def resolveCustomTextEditor(document: TextDocument, webviewPanel: WebviewPanel, token: CancellationToken): Thenable[Unit] | Unit
 }
 object CustomTextEditorProvider {
   

@@ -3,33 +3,47 @@ package typings.rsocketFlowable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object flowableRequestOperatorMod {
   
   @JSImport("rsocket-flowable/FlowableRequestOperator", JSImport.Default)
   @js.native
-  class default[T] protected () extends FlowableRequestOperator[T] {
+  class default[T] protected ()
+    extends StObject
+       with FlowableRequestOperator[T] {
     def this(
       subscriber: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> */ js.Any,
       toRequest: Double
     ) = this()
+    
+    /* CompleteClass */
+    override def onComplete(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onError(error: Error): Unit = js.native
+    
+    /* CompleteClass */
+    override def onNext(t: T): Unit = js.native
+    
+    /* CompleteClass */
+    override def onSubscribe(
+      subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any
+    ): Unit = js.native
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> * / any */ @js.native
-  trait FlowableRequestOperator[T] extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscriber<T> * / any */ trait FlowableRequestOperator[T] extends StObject {
     
-    def onComplete(): Unit = js.native
+    def onComplete(): Unit
     
-    def onError(error: Error): Unit = js.native
+    def onError(error: Error): Unit
     
-    def onNext(t: T): Unit = js.native
+    def onNext(t: T): Unit
     
     def onSubscribe(
       subscription: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ISubscription */ js.Any
-    ): Unit = js.native
+    ): Unit
   }
   object FlowableRequestOperator {
     
@@ -45,7 +59,7 @@ object flowableRequestOperatorMod {
     }
     
     @scala.inline
-    implicit class FlowableRequestOperatorMutableBuilder[Self <: FlowableRequestOperator[_], T] (val x: Self with FlowableRequestOperator[T]) extends AnyVal {
+    implicit class FlowableRequestOperatorMutableBuilder[Self <: FlowableRequestOperator[?], T] (val x: Self & FlowableRequestOperator[T]) extends AnyVal {
       
       @scala.inline
       def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))

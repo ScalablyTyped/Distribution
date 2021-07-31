@@ -9,7 +9,6 @@ import typings.blueprintjsSelect.listItemsPropsMod.IListItemsProps
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object multiSelectMod {
@@ -64,13 +63,14 @@ object multiSelectMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/select/lib/esm/components/select/multiSelect", "MultiSelect.ofType")
-    @js.native
-    def ofType[U](): Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]] = js.native
+    @scala.inline
+    def ofType[U](): Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]] = ^.asInstanceOf[js.Dynamic].applyDynamic("ofType")().asInstanceOf[Instantiable1[/* props */ IMultiSelectProps[U], MultiSelect[U]]]
   }
   
   @js.native
-  trait IMultiSelectProps[T] extends IListItemsProps[T] {
+  trait IMultiSelectProps[T]
+    extends StObject
+       with IListItemsProps[T] {
     
     /**
       * Whether the component should take up the full width of its container.
@@ -109,22 +109,21 @@ object multiSelectMod {
     var placeholder: js.UndefOr[String] = js.native
     
     /** Props to spread to `Popover`. Note that `content` cannot be changed. */
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.native
     
     /** Controlled selected values. */
     var selectedItems: js.UndefOr[js.Array[T]] = js.native
     
     /** Props to spread to `TagInput`. Use `query` and `onQueryChange` to control the input. */
-    var tagInputProps: js.UndefOr[PartialITagInputProps with js.Object] = js.native
+    var tagInputProps: js.UndefOr[PartialITagInputProps & js.Object] = js.native
     
     /** Custom renderer to transform an item into tag content. */
     def tagRenderer(item: T): ReactNode = js.native
   }
   
-  @js.native
   trait IMultiSelectState extends StObject {
     
-    var isOpen: Boolean = js.native
+    var isOpen: Boolean
   }
   object IMultiSelectState {
     

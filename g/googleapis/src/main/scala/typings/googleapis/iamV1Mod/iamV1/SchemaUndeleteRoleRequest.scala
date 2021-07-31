@@ -2,19 +2,17 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request to undelete an existing role.
   */
-@js.native
 trait SchemaUndeleteRoleRequest extends StObject {
   
   /**
     * Used to perform a consistent read-modify-write.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
 }
 object SchemaUndeleteRoleRequest {
   

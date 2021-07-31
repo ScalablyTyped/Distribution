@@ -7,24 +7,24 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * describes properties that control the formatting of headers and footers for documents that do not allow individual settings for individual parts like
   * pages or slides.
   */
-@js.native
-trait HeaderFooterSettings extends XPropertySet {
+trait HeaderFooterSettings
+  extends StObject
+     with XPropertySet {
   
   /** enables or disables the printing of the date in the header or footer */
-  var IsPrintDate: Boolean = js.native
+  var IsPrintDate: Boolean
   
   /** enables or disables the printing of the page name in the header or footer */
-  var IsPrintPageName: Boolean = js.native
+  var IsPrintPageName: Boolean
   
   /** enables or disables the printing of the current time in the header or footer */
-  var IsPrintTime: Boolean = js.native
+  var IsPrintTime: Boolean
 }
 object HeaderFooterSettings {
   

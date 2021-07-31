@@ -3,17 +3,15 @@ package typings.firmata.mod
 import typings.firmata.anon.BaudRate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var reportVersionTimeout: Double = js.native
+  var reportVersionTimeout: Double
   
-  var samplingInterval: Double = js.native
+  var samplingInterval: Double
   
-  var serialport: BaudRate = js.native
+  var serialport: BaudRate
 }
 object Settings {
   

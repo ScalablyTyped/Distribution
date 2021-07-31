@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an altimeter reading. */
-@js.native
 trait AltimeterReading extends StObject {
   
   /** Gets the current altitude determined by the altimeter sensor. */
-  var altitudeChangeInMeters: Double = js.native
+  var altitudeChangeInMeters: Double
   
   /** Gets the time for the most recent altimeter reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object AltimeterReading {
   

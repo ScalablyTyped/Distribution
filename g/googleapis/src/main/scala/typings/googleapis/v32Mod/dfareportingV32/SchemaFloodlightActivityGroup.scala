@@ -2,20 +2,18 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a Floodlight activity group.
   */
-@js.native
 trait SchemaFloodlightActivityGroup extends StObject {
   
   /**
     * Account ID of this floodlight activity group. This is a read-only field
     * that can be left blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser ID of this floodlight activity group. If this field is left
@@ -23,55 +21,55 @@ trait SchemaFloodlightActivityGroup extends StObject {
     * configuration&#39;s advertiser or from the existing activity group&#39;s
     * advertiser.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser. This is a read-only,
     * auto-generated field.
     */
-  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Floodlight configuration ID of this floodlight activity group. This is a
     * required field.
     */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the floodlight configuration. This is a
     * read-only, auto-generated field.
     */
-  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * ID of this floodlight activity group. This is a read-only, auto-generated
     * field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of this floodlight activity group. This is a
     * read-only, auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#floodlightActivityGroup&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this floodlight activity group. This is a required field. Must be
     * less than 65 characters long and cannot contain quotes.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this floodlight activity group. This is a read-only
     * field that can be left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the type= parameter in the floodlight tag, which the ad servers
@@ -82,13 +80,13 @@ trait SchemaFloodlightActivityGroup extends StObject {
     * activity groups of the same floodlight configuration. This field is
     * read-only after insertion.
     */
-  var tagString: js.UndefOr[String] = js.native
+  var tagString: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the floodlight activity group. This is a required field that is
     * read-only after insertion.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaFloodlightActivityGroup {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Basis extends StObject {
   
   /** Required. Immutable. The fingerprint of the base image. */
-  var fingerprint: js.UndefOr[Fingerprint] = js.native
+  var fingerprint: js.UndefOr[Fingerprint] = js.undefined
   
   /** Required. Immutable. The resource_url for the resource representing the basis of associated occurrence images. */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
 }
 object Basis {
   

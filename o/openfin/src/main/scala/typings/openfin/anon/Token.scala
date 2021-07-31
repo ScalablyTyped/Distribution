@@ -2,21 +2,19 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Token extends StObject {
   
   /**
     * this will be unique each time
     */
-  var token: String = js.native
+  var token: String
   
   /**
     * "remote-connection-uuid"
     */
-  var uuid: String = js.native
+  var uuid: String
 }
 object Token {
   

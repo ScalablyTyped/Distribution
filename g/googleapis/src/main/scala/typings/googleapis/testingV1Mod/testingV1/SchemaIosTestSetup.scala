@@ -2,13 +2,11 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A description of how to set up an iOS device prior to a test.
   */
-@js.native
 trait SchemaIosTestSetup extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaIosTestSetup extends StObject {
     * type when calling
     * TestEnvironmentDiscoveryService.GetTestEnvironmentCatalog.
     */
-  var networkProfile: js.UndefOr[String] = js.native
+  var networkProfile: js.UndefOr[String] = js.undefined
 }
 object SchemaIosTestSetup {
   

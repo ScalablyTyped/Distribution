@@ -3,7 +3,6 @@ package typings.blueprintjsTable
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeSensorMod {
@@ -30,9 +29,8 @@ object resizeSensorMod {
     @scala.inline
     def RESIZE_SENSOR_STYLE_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("RESIZE_SENSOR_STYLE")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/table/lib/esm/interactions/resizeSensor", "ResizeSensor.attach")
-    @js.native
-    def attach(element: HTMLElement, callback: js.Function0[Unit]): js.Function0[Unit] = js.native
+    @scala.inline
+    def attach(element: HTMLElement, callback: js.Function0[Unit]): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("attach")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     @JSImport("@blueprintjs/table/lib/esm/interactions/resizeSensor", "ResizeSensor.debounce")
     @js.native

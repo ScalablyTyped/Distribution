@@ -7,55 +7,53 @@ import typings.std.ClientRect
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
   
-  @js.native
   trait MDCMenuSurfaceAdapter extends StObject {
     
-    def addClass(className: String): Unit = js.native
+    def addClass(className: String): Unit
     
-    def getAnchorDimensions(): ClientRect | Null = js.native
+    def getAnchorDimensions(): ClientRect | Null
     
-    def getBodyDimensions(): MDCMenuDimensions = js.native
+    def getBodyDimensions(): MDCMenuDimensions
     
-    def getInnerDimensions(): MDCMenuDimensions = js.native
+    def getInnerDimensions(): MDCMenuDimensions
     
-    def getWindowDimensions(): MDCMenuDimensions = js.native
+    def getWindowDimensions(): MDCMenuDimensions
     
-    def getWindowScroll(): MDCMenuPoint = js.native
+    def getWindowScroll(): MDCMenuPoint
     
-    def hasAnchor(): Boolean = js.native
+    def hasAnchor(): Boolean
     
-    def hasClass(className: String): Boolean = js.native
+    def hasClass(className: String): Boolean
     
-    def isElementInContainer(el: Element): Boolean = js.native
+    def isElementInContainer(el: Element): Boolean
     
-    def isFocused(): Boolean = js.native
+    def isFocused(): Boolean
     
-    def isRtl(): Boolean = js.native
+    def isRtl(): Boolean
     
     /** Emits an event when the menu surface is closed. */
-    def notifyClose(): Unit = js.native
+    def notifyClose(): Unit
     
     /** Emits an event when the menu surface is opened. */
-    def notifyOpen(): Unit = js.native
+    def notifyOpen(): Unit
     
-    def removeClass(className: String): Unit = js.native
+    def removeClass(className: String): Unit
     
     /** Restores focus to the element that was focused before the menu surface was opened. */
-    def restoreFocus(): Unit = js.native
+    def restoreFocus(): Unit
     
     /** Saves the element that was focused before the menu surface was opened. */
-    def saveFocus(): Unit = js.native
+    def saveFocus(): Unit
     
-    def setMaxHeight(height: String): Unit = js.native
+    def setMaxHeight(height: String): Unit
     
-    def setPosition(position: PartialMDCMenuDistance): Unit = js.native
+    def setPosition(position: PartialMDCMenuDistance): Unit
     
-    def setTransformOrigin(origin: String): Unit = js.native
+    def setTransformOrigin(origin: String): Unit
   }
   object MDCMenuSurfaceAdapter {
     

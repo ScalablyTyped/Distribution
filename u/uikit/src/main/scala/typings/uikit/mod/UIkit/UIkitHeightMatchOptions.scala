@@ -2,15 +2,13 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitHeightMatchOptions extends StObject {
   
-  var row: js.UndefOr[Boolean] = js.native
+  var row: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object UIkitHeightMatchOptions {
   

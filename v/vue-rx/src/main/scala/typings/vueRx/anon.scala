@@ -2,17 +2,15 @@ package typings.vueRx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Msg extends StObject {
     
-    var msg: js.Any = js.native
+    var msg: js.Any
     
-    var name: String = js.native
+    var name: String
   }
   object Msg {
     

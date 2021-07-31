@@ -2,39 +2,37 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object processMod {
   
-  @js.native
   trait ProcessInfo extends StObject {
     
-    var cpuUsage: js.UndefOr[Double] = js.native
+    var cpuUsage: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nonPagedPoolUsage: js.UndefOr[Double] = js.native
+    var nonPagedPoolUsage: js.UndefOr[Double] = js.undefined
     
-    var pageFaultCount: js.UndefOr[Double] = js.native
+    var pageFaultCount: js.UndefOr[Double] = js.undefined
     
-    var pagedPoolUsage: js.UndefOr[Double] = js.native
+    var pagedPoolUsage: js.UndefOr[Double] = js.undefined
     
-    var pagefileUsage: js.UndefOr[Double] = js.native
+    var pagefileUsage: js.UndefOr[Double] = js.undefined
     
-    var peakNonPagedPoolUsage: js.UndefOr[Double] = js.native
+    var peakNonPagedPoolUsage: js.UndefOr[Double] = js.undefined
     
-    var peakPagedPoolUsage: js.UndefOr[Double] = js.native
+    var peakPagedPoolUsage: js.UndefOr[Double] = js.undefined
     
-    var peakPagefileUsage: js.UndefOr[Double] = js.native
+    var peakPagefileUsage: js.UndefOr[Double] = js.undefined
     
-    var peakWorkingSetSize: js.UndefOr[Double] = js.native
+    var peakWorkingSetSize: js.UndefOr[Double] = js.undefined
     
-    var processId: js.UndefOr[Double] = js.native
+    var processId: js.UndefOr[Double] = js.undefined
     
-    var uuid: js.UndefOr[String] = js.native
+    var uuid: js.UndefOr[String] = js.undefined
     
-    var workingSetSize: js.UndefOr[Double] = js.native
+    var workingSetSize: js.UndefOr[Double] = js.undefined
   }
   object ProcessInfo {
     

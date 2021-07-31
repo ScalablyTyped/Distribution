@@ -2,15 +2,13 @@ package typings.vscodeNotebookRenderer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait OutputId extends StObject {
     
-    var outputId: String = js.native
+    var outputId: String
   }
   object OutputId {
     

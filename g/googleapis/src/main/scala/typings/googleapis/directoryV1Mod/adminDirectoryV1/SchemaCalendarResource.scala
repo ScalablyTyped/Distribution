@@ -2,92 +2,90 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Calendar Resource object in Directory API.
   */
-@js.native
 trait SchemaCalendarResource extends StObject {
   
   /**
     * Unique ID for the building a resource is located in.
     */
-  var buildingId: js.UndefOr[String] = js.native
+  var buildingId: js.UndefOr[String] = js.undefined
   
   /**
     * Capacity of a resource, number of seats in a room.
     */
-  var capacity: js.UndefOr[Double] = js.native
+  var capacity: js.UndefOr[Double] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etags: js.UndefOr[String] = js.native
+  var etags: js.UndefOr[String] = js.undefined
   
-  var featureInstances: js.UndefOr[js.Any] = js.native
+  var featureInstances: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Name of the floor a resource is located on.
     */
-  var floorName: js.UndefOr[String] = js.native
+  var floorName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the section within a floor a resource is located in.
     */
-  var floorSection: js.UndefOr[String] = js.native
+  var floorSection: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only auto-generated name of the calendar resource which includes
     * metadata about the resource such as building name, floor, capacity, etc.
     * For example, &quot;NYC-2-Training Room 1A (16)&quot;.
     */
-  var generatedResourceName: js.UndefOr[String] = js.native
+  var generatedResourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the resource. For calendar resources, the value is
     * admin#directory#resources#calendars#CalendarResource.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The category of the calendar resource. Either CONFERENCE_ROOM or OTHER.
     * Legacy data is set to CATEGORY_UNKNOWN.
     */
-  var resourceCategory: js.UndefOr[String] = js.native
+  var resourceCategory: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the resource, visible only to admins.
     */
-  var resourceDescription: js.UndefOr[String] = js.native
+  var resourceDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only email for the calendar resource. Generated as part of
     * creating a new calendar resource.
     */
-  var resourceEmail: js.UndefOr[String] = js.native
+  var resourceEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID for the calendar resource.
     */
-  var resourceId: js.UndefOr[String] = js.native
+  var resourceId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the calendar resource. For example, &quot;Training Room
     * 1A&quot;.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the calendar resource, intended for non-room resources.
     */
-  var resourceType: js.UndefOr[String] = js.native
+  var resourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the resource, visible to users and admins.
     */
-  var userVisibleDescription: js.UndefOr[String] = js.native
+  var userVisibleDescription: js.UndefOr[String] = js.undefined
 }
 object SchemaCalendarResource {
   

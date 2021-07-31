@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RemoteUser")
@@ -16,5 +15,5 @@ class RemoteUser protected ()
     * @throws If identifier is not supplied.
     */
   def this(id: String) = this()
-  def this(id: String, data: Record[String, _]) = this()
+  def this(id: String, data: Record[String, js.Any]) = this()
 }

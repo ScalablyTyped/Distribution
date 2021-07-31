@@ -2,13 +2,13 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlacementBuilder[Placement] extends DisplayBuilder[PlacementBuilder[Placement]] {
+trait PlacementBuilder[Placement]
+  extends StObject
+     with DisplayBuilder[PlacementBuilder[Placement]] {
   
-  def withUrl(url: String): PlacementBuilder[Placement] = js.native
+  def withUrl(url: String): PlacementBuilder[Placement]
 }
 object PlacementBuilder {
   
@@ -25,7 +25,7 @@ object PlacementBuilder {
   }
   
   @scala.inline
-  implicit class PlacementBuilderMutableBuilder[Self <: PlacementBuilder[_], Placement] (val x: Self with PlacementBuilder[Placement]) extends AnyVal {
+  implicit class PlacementBuilderMutableBuilder[Self <: PlacementBuilder[?], Placement] (val x: Self & PlacementBuilder[Placement]) extends AnyVal {
     
     @scala.inline
     def setWithUrl(value: String => PlacementBuilder[Placement]): Self = StObject.set(x, "withUrl", js.Any.fromFunction1(value))

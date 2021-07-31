@@ -3,17 +3,18 @@ package typings.nssm
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(serviceName: String): Nssm = ^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any]).asInstanceOf[Nssm]
+  @scala.inline
+  def apply(serviceName: String, options: NssmOptions): Nssm = (^.asInstanceOf[js.Dynamic].apply(serviceName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Nssm]
+  
   @JSImport("nssm", JSImport.Namespace)
   @js.native
-  def apply(serviceName: String): Nssm = js.native
-  @JSImport("nssm", JSImport.Namespace)
-  @js.native
-  def apply(serviceName: String, options: NssmOptions): Nssm = js.native
+  val ^ : js.Any = js.native
   
   type CallbackFn = js.Function2[/* error */ js.UndefOr[String], /* result */ js.UndefOr[String], Unit]
   
@@ -72,128 +73,92 @@ object mod {
   }
   
   /* Inlined {[ key in nssm.nssm.Command ]: nssm.nssm.NssmCommandFn} */
-  @js.native
   trait Nssm extends StObject {
     
-    def continue(): NssmPromise[String] = js.native
-    def continue(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def continue(arg1: String): NssmPromise[String] = js.native
-    def continue(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def continue(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def continue(arg1: String, callback: CallbackFn): Unit = js.native
-    def continue(callback: CallbackFn): Unit = js.native
-    @JSName("continue")
-    var continue_Original: NssmCommandFn = js.native
+    var continue: NssmCommandFn
     
-    def get(): NssmPromise[String] = js.native
-    def get(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def get(arg1: String): NssmPromise[String] = js.native
-    def get(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def get(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def get(arg1: String, callback: CallbackFn): Unit = js.native
-    def get(callback: CallbackFn): Unit = js.native
-    @JSName("get")
-    var get_Original: NssmCommandFn = js.native
+    var get: NssmCommandFn
     
-    def install(): NssmPromise[String] = js.native
-    def install(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def install(arg1: String): NssmPromise[String] = js.native
-    def install(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def install(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def install(arg1: String, callback: CallbackFn): Unit = js.native
-    def install(callback: CallbackFn): Unit = js.native
-    @JSName("install")
-    var install_Original: NssmCommandFn = js.native
+    var install: NssmCommandFn
     
-    def pause(): NssmPromise[String] = js.native
-    def pause(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def pause(arg1: String): NssmPromise[String] = js.native
-    def pause(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def pause(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def pause(arg1: String, callback: CallbackFn): Unit = js.native
-    def pause(callback: CallbackFn): Unit = js.native
-    @JSName("pause")
-    var pause_Original: NssmCommandFn = js.native
+    var pause: NssmCommandFn
     
-    def remove(): NssmPromise[String] = js.native
-    def remove(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def remove(arg1: String): NssmPromise[String] = js.native
-    def remove(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def remove(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def remove(arg1: String, callback: CallbackFn): Unit = js.native
-    def remove(callback: CallbackFn): Unit = js.native
-    @JSName("remove")
-    var remove_Original: NssmCommandFn = js.native
+    var remove: NssmCommandFn
     
-    def reset(): NssmPromise[String] = js.native
-    def reset(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def reset(arg1: String): NssmPromise[String] = js.native
-    def reset(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def reset(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def reset(arg1: String, callback: CallbackFn): Unit = js.native
-    def reset(callback: CallbackFn): Unit = js.native
-    @JSName("reset")
-    var reset_Original: NssmCommandFn = js.native
+    var reset: NssmCommandFn
     
-    def restart(): NssmPromise[String] = js.native
-    def restart(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def restart(arg1: String): NssmPromise[String] = js.native
-    def restart(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def restart(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def restart(arg1: String, callback: CallbackFn): Unit = js.native
-    def restart(callback: CallbackFn): Unit = js.native
-    @JSName("restart")
-    var restart_Original: NssmCommandFn = js.native
+    var restart: NssmCommandFn
     
-    def rotate(): NssmPromise[String] = js.native
-    def rotate(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def rotate(arg1: String): NssmPromise[String] = js.native
-    def rotate(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def rotate(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def rotate(arg1: String, callback: CallbackFn): Unit = js.native
-    def rotate(callback: CallbackFn): Unit = js.native
-    @JSName("rotate")
-    var rotate_Original: NssmCommandFn = js.native
+    var rotate: NssmCommandFn
     
-    def set(): NssmPromise[String] = js.native
-    def set(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def set(arg1: String): NssmPromise[String] = js.native
-    def set(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def set(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def set(arg1: String, callback: CallbackFn): Unit = js.native
-    def set(callback: CallbackFn): Unit = js.native
-    @JSName("set")
-    var set_Original: NssmCommandFn = js.native
+    var set: NssmCommandFn
     
-    def start(): NssmPromise[String] = js.native
-    def start(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def start(arg1: String): NssmPromise[String] = js.native
-    def start(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def start(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def start(arg1: String, callback: CallbackFn): Unit = js.native
-    def start(callback: CallbackFn): Unit = js.native
-    @JSName("start")
-    var start_Original: NssmCommandFn = js.native
+    var start: NssmCommandFn
     
-    def status(): NssmPromise[String] = js.native
-    def status(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def status(arg1: String): NssmPromise[String] = js.native
-    def status(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def status(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def status(arg1: String, callback: CallbackFn): Unit = js.native
-    def status(callback: CallbackFn): Unit = js.native
-    @JSName("status")
-    var status_Original: NssmCommandFn = js.native
+    var status: NssmCommandFn
     
-    def stop(): NssmPromise[String] = js.native
-    def stop(arg1: js.UndefOr[scala.Nothing], arg2: String): NssmPromise[String] = js.native
-    def stop(arg1: String): NssmPromise[String] = js.native
-    def stop(arg1: String, arg2: String): NssmPromise[String] = js.native
-    def stop(arg1: String, arg2: String, callback: CallbackFn): Unit = js.native
-    def stop(arg1: String, callback: CallbackFn): Unit = js.native
-    def stop(callback: CallbackFn): Unit = js.native
-    @JSName("stop")
-    var stop_Original: NssmCommandFn = js.native
+    var stop: NssmCommandFn
+  }
+  object Nssm {
+    
+    @scala.inline
+    def apply(
+      continue: NssmCommandFn,
+      get: NssmCommandFn,
+      install: NssmCommandFn,
+      pause: NssmCommandFn,
+      remove: NssmCommandFn,
+      reset: NssmCommandFn,
+      restart: NssmCommandFn,
+      rotate: NssmCommandFn,
+      set: NssmCommandFn,
+      start: NssmCommandFn,
+      status: NssmCommandFn,
+      stop: NssmCommandFn
+    ): Nssm = {
+      val __obj = js.Dynamic.literal(continue = continue.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], install = install.asInstanceOf[js.Any], pause = pause.asInstanceOf[js.Any], remove = remove.asInstanceOf[js.Any], reset = reset.asInstanceOf[js.Any], restart = restart.asInstanceOf[js.Any], rotate = rotate.asInstanceOf[js.Any], set = set.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], stop = stop.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Nssm]
+    }
+    
+    @scala.inline
+    implicit class NssmMutableBuilder[Self <: Nssm] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setContinue(value: NssmCommandFn): Self = StObject.set(x, "continue", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGet(value: NssmCommandFn): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInstall(value: NssmCommandFn): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPause(value: NssmCommandFn): Self = StObject.set(x, "pause", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRemove(value: NssmCommandFn): Self = StObject.set(x, "remove", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReset(value: NssmCommandFn): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRestart(value: NssmCommandFn): Self = StObject.set(x, "restart", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRotate(value: NssmCommandFn): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSet(value: NssmCommandFn): Self = StObject.set(x, "set", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStart(value: NssmCommandFn): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStatus(value: NssmCommandFn): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStop(value: NssmCommandFn): Self = StObject.set(x, "stop", value.asInstanceOf[js.Any])
+    }
   }
   
   type NssmCatch[T] = js.Function1[
@@ -203,12 +168,29 @@ object mod {
     NssmPromise[T | scala.Nothing]
   ]
   
-  type NssmCommandFn = ZeroArgCommandFn with OneArgCommandFn with TwoArgCommandFn with PromiseCommandFn
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Already inherited
+  - scala.AnyRef because Already inherited
+  - js.Any because Already inherited
+  - js.Object because Already inherited
+  - js.Function because Already inherited
+  - typings.nssm.mod.PromiseCommandFn because Already inherited */ @js.native
+  trait NssmCommandFn
+    extends ZeroArgCommandFn
+       with OneArgCommandFn
+       with TwoArgCommandFn {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* arg1 */ String, arg2: /* arg2 */ String, arg3: /* callback */ CallbackFn): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(arg1: /* arg1 */ String, arg2: /* callback */ CallbackFn): Unit = js.native
+    /* InferMemberOverrides */
+    override def apply(arg1: /* callback */ CallbackFn): Unit = js.native
+  }
   
-  @js.native
   trait NssmOptions extends StObject {
     
-    var nssmExe: js.UndefOr[String] = js.native
+    var nssmExe: js.UndefOr[String] = js.undefined
   }
   object NssmOptions {
     
@@ -239,10 +221,6 @@ object mod {
     var catch_Original: NssmCatch[T] = js.native
     
     def `then`[TResult1, TResult2](): NssmPromise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function2[/* reason */ Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
-    ): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]]): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ T, TResult1 | js.Thenable[TResult1]],
@@ -250,6 +228,10 @@ object mod {
     ): NssmPromise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: Null,
+      onrejected: js.Function2[/* reason */ Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
+    ): NssmPromise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](
+      onfulfilled: Unit,
       onrejected: js.Function2[/* reason */ Error, /* stderr */ String, TResult2 | js.Thenable[TResult2]]
     ): NssmPromise[TResult1 | TResult2] = js.native
     @JSName("then")

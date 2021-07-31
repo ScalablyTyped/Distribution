@@ -4,41 +4,34 @@ import typings.edgeJs.edgeJsBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("edge-js", "func")
+  @JSImport("edge-js", JSImport.Namespace)
   @js.native
-  def func[TInput, TOutput](language: String, params: String): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](language: String, params: js.Function): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](language: String, params: Params): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](language: String, params: Source): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](language: String, params: TSQL): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](params: String): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](params: js.Function): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](params: Params): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](params: Source): Func_[TInput, TOutput] = js.native
-  @JSImport("edge-js", "func")
-  @js.native
-  def func[TInput, TOutput](params: TSQL): Func_[TInput, TOutput] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def func[TInput, TOutput](language: String, params: String): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](language: String, params: js.Function): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](language: String, params: Params): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](language: String, params: Source): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](language: String, params: TSQL): Func_[TInput, TOutput] = (^.asInstanceOf[js.Dynamic].applyDynamic("func")(language.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](params: String): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](params: js.Function): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](params: Params): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](params: Source): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
+  @scala.inline
+  def func[TInput, TOutput](params: TSQL): Func_[TInput, TOutput] = ^.asInstanceOf[js.Dynamic].applyDynamic("func")(params.asInstanceOf[js.Any]).asInstanceOf[Func_[TInput, TOutput]]
   
   @js.native
   trait Func_[TInput, TOutput] extends StObject {
@@ -47,14 +40,13 @@ object mod {
     def apply(payload: TInput, sync: `true`): TOutput = js.native
   }
   
-  @js.native
   trait Params extends StObject {
     
-    var assemblyFile: String = js.native
+    var assemblyFile: String
     
-    var methodName: js.UndefOr[String] = js.native
+    var methodName: js.UndefOr[String] = js.undefined
     
-    var typeName: js.UndefOr[String] = js.native
+    var typeName: js.UndefOr[String] = js.undefined
   }
   object Params {
     
@@ -84,12 +76,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var references: js.UndefOr[js.Array[String]] = js.native
+    var references: js.UndefOr[js.Array[String]] = js.undefined
     
-    var source: String | js.Function = js.native
+    var source: String | js.Function
   }
   object Source {
     
@@ -116,14 +107,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TSQL extends StObject {
     
-    var commandTimeout: js.UndefOr[Double] = js.native
+    var commandTimeout: js.UndefOr[Double] = js.undefined
     
-    var connectionString: js.UndefOr[String] = js.native
+    var connectionString: js.UndefOr[String] = js.undefined
     
-    var source: String = js.native
+    var source: String
   }
   object TSQL {
     

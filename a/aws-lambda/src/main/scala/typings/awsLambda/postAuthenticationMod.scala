@@ -7,15 +7,15 @@ import typings.awsLambda.commonMod.BaseTriggerEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object postAuthenticationMod {
   
-  @js.native
-  trait PostAuthenticationTriggerEvent extends BaseTriggerEvent[PostAuthentication_Authentication] {
+  trait PostAuthenticationTriggerEvent
+    extends StObject
+       with BaseTriggerEvent[PostAuthentication_Authentication] {
     
-    var request: NewDeviceUsed = js.native
+    var request: NewDeviceUsed
   }
   object PostAuthenticationTriggerEvent {
     
@@ -24,12 +24,11 @@ object postAuthenticationMod {
       callerContext: AwsSdkVersion,
       region: String,
       request: NewDeviceUsed,
-      triggerSource: PostAuthentication_Authentication,
       userName: String,
       userPoolId: String,
       version: String
     ): PostAuthenticationTriggerEvent = {
-      val __obj = js.Dynamic.literal(callerContext = callerContext.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], triggerSource = triggerSource.asInstanceOf[js.Any], userName = userName.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(callerContext = callerContext.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], request = request.asInstanceOf[js.Any], triggerSource = "PostAuthentication_Authentication", userName = userName.asInstanceOf[js.Any], userPoolId = userPoolId.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
       __obj.asInstanceOf[PostAuthenticationTriggerEvent]
     }
     

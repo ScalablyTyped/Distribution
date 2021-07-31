@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.Exception
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception is intended to be used with an {@link com.sun.star.task.XInteractionHandler} .
   * @since OOo 2.2
   */
-@js.native
-trait InstallException extends Exception {
+trait InstallException
+  extends StObject
+     with Exception {
   
   /** the display name of the extension, which is to be installed. */
-  var displayName: String = js.native
+  var displayName: String
 }
 object InstallException {
   

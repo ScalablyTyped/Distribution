@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Web.Http.Headers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents product information used in the User-Agent HTTP header on an HTTP request. */
-@js.native
 trait HttpProductInfoHeaderValue extends StObject {
   
   /** Gets the product comment from the HttpProductInfoHeaderValue used in the User-Agent HTTP header. */
-  var comment: String = js.native
+  var comment: String
   
   /** Gets the product from the HttpProductInfoHeaderValue used in the User-Agent HTTP header. */
-  var product: HttpProductHeaderValue = js.native
+  var product: HttpProductHeaderValue
 }
 object HttpProductInfoHeaderValue {
   

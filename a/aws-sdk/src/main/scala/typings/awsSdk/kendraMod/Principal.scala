@@ -2,26 +2,24 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Principal extends StObject {
   
   /**
     * Whether to allow or deny access to the principal.
     */
-  var Access: ReadAccessType = js.native
+  var Access: ReadAccessType
   
   /**
     * The name of the user or group.
     */
-  var Name: PrincipalName = js.native
+  var Name: PrincipalName
   
   /**
     * The type of principal.
     */
-  var Type: PrincipalType = js.native
+  var Type: PrincipalType
 }
 object Principal {
   

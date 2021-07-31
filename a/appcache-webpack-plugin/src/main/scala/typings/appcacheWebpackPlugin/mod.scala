@@ -3,7 +3,6 @@ package typings.appcacheWebpackPlugin
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,8 +12,13 @@ object mod {
     */
   @JSImport("appcache-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends AppCachePlugin {
+  class ^ ()
+    extends StObject
+       with AppCachePlugin {
     def this(options: Options) = this()
+    
+    /* CompleteClass */
+    var AppCache: typings.appcacheWebpackPlugin.mod.AppCache = js.native
   }
   
   @JSImport("appcache-webpack-plugin", "AppCache")
@@ -42,10 +46,9 @@ object mod {
     * Generate an HTML5 Application Cache for a Webpack build
     */
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ @js.native
-  trait AppCachePlugin extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin * / any */ trait AppCachePlugin extends StObject {
     
-    var AppCache: typings.appcacheWebpackPlugin.mod.AppCache = js.native
+    var AppCache: typings.appcacheWebpackPlugin.mod.AppCache
   }
   object AppCachePlugin {
     
@@ -63,46 +66,45 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * 'additional assets to cache
       */
-    var cache: js.UndefOr[js.Array[String]] = js.native
+    var cache: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * @default ''
       */
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
     /**
       * Assets in the compilation that match any of these patterns will be excluded from the manifest.
       * @default []
       */
-    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.native
+    var exclude: js.UndefOr[js.Array[String | RegExp]] = js.undefined
     
     /**
       * Fallback assets
       */
-    var fallback: js.UndefOr[js.Array[String]] = js.native
+    var fallback: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Assets that may be accessed via the network.
       * @default ['*']
       */
-    var network: js.UndefOr[js.Array[String] | Null] = js.native
+    var network: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /**
       * The filename to write the appcache to
       * @default 'manifest.appcache'
       */
-    var output: js.UndefOr[String] = js.native
+    var output: js.UndefOr[String] = js.undefined
     
     /**
       * Settings
       */
-    var settings: js.UndefOr[js.Array[String]] = js.native
+    var settings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     

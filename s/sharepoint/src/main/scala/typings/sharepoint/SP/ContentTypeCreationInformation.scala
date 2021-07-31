@@ -2,27 +2,27 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContentTypeCreationInformation extends ClientValueObject {
+trait ContentTypeCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_group(): String = js.native
+  def get_group(): String
   
-  def get_name(): String = js.native
+  def get_name(): String
   
-  def get_parentContentType(): ContentType = js.native
+  def get_parentContentType(): ContentType
   
-  def set_description(value: String): Unit = js.native
+  def set_description(value: String): Unit
   
-  def set_group(value: String): Unit = js.native
+  def set_group(value: String): Unit
   
-  def set_name(value: String): Unit = js.native
+  def set_name(value: String): Unit
   
-  def set_parentContentType(value: ContentType): Unit = js.native
+  def set_parentContentType(value: ContentType): Unit
 }
 object ContentTypeCreationInformation {
   

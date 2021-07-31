@@ -5,27 +5,25 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamWithContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContactInformation extends StObject {
   
-  var customFields: IVectorView[ContactField] = js.native
+  var customFields: IVectorView[ContactField]
   
-  var emails: IVectorView[ContactField] = js.native
+  var emails: IVectorView[ContactField]
   
-  def getThumbnailAsync(): IAsyncOperation[IRandomAccessStreamWithContentType] = js.native
+  def getThumbnailAsync(): IAsyncOperation[IRandomAccessStreamWithContentType]
   
-  var instantMessages: IVectorView[ContactInstantMessageField] = js.native
+  var instantMessages: IVectorView[ContactInstantMessageField]
   
-  var locations: IVectorView[ContactLocationField] = js.native
+  var locations: IVectorView[ContactLocationField]
   
-  var name: String = js.native
+  var name: String
   
-  var phoneNumbers: IVectorView[ContactField] = js.native
+  var phoneNumbers: IVectorView[ContactField]
   
-  def queryCustomFields(customName: String): IVectorView[ContactField] = js.native
+  def queryCustomFields(customName: String): IVectorView[ContactField]
 }
 object IContactInformation {
   

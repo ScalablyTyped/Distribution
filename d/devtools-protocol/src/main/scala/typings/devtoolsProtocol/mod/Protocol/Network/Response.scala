@@ -4,126 +4,124 @@ import typings.devtoolsProtocol.mod.Protocol.Security.SecurityState
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Response extends StObject {
   
   /**
     * Cache Storage Cache Name.
     */
-  var cacheStorageCacheName: js.UndefOr[String] = js.native
+  var cacheStorageCacheName: js.UndefOr[String] = js.undefined
   
   /**
     * Physical connection id that was actually used for this request.
     */
-  var connectionId: Double = js.native
+  var connectionId: Double
   
   /**
     * Specifies whether physical connection was actually reused for this request.
     */
-  var connectionReused: Boolean = js.native
+  var connectionReused: Boolean
   
   /**
     * Total number of bytes received for this request so far.
     */
-  var encodedDataLength: Double = js.native
+  var encodedDataLength: Double
   
   /**
     * Specifies that the request was served from the disk cache.
     */
-  var fromDiskCache: js.UndefOr[Boolean] = js.native
+  var fromDiskCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies that the request was served from the prefetch cache.
     */
-  var fromPrefetchCache: js.UndefOr[Boolean] = js.native
+  var fromPrefetchCache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies that the request was served from the ServiceWorker.
     */
-  var fromServiceWorker: js.UndefOr[Boolean] = js.native
+  var fromServiceWorker: js.UndefOr[Boolean] = js.undefined
   
   /**
     * HTTP response headers.
     */
-  var headers: Headers = js.native
+  var headers: Headers
   
   /**
     * HTTP response headers text.
     */
-  var headersText: js.UndefOr[String] = js.native
+  var headersText: js.UndefOr[String] = js.undefined
   
   /**
     * Resource mimeType as determined by the browser.
     */
-  var mimeType: String = js.native
+  var mimeType: String
   
   /**
     * Protocol used to fetch this request.
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * Remote IP address.
     */
-  var remoteIPAddress: js.UndefOr[String] = js.native
+  var remoteIPAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Remote port.
     */
-  var remotePort: js.UndefOr[integer] = js.native
+  var remotePort: js.UndefOr[integer] = js.undefined
   
   /**
     * Refined HTTP request headers that were actually transmitted over the network.
     */
-  var requestHeaders: js.UndefOr[Headers] = js.native
+  var requestHeaders: js.UndefOr[Headers] = js.undefined
   
   /**
     * HTTP request headers text.
     */
-  var requestHeadersText: js.UndefOr[String] = js.native
+  var requestHeadersText: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the returned response was generated.
     */
-  var responseTime: js.UndefOr[TimeSinceEpoch] = js.native
+  var responseTime: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * Security details for the request.
     */
-  var securityDetails: js.UndefOr[SecurityDetails] = js.native
+  var securityDetails: js.UndefOr[SecurityDetails] = js.undefined
   
   /**
     * Security state of the request resource.
     */
-  var securityState: SecurityState = js.native
+  var securityState: SecurityState
   
   /**
     * Response source of response from ServiceWorker.
     */
-  var serviceWorkerResponseSource: js.UndefOr[ServiceWorkerResponseSource] = js.native
+  var serviceWorkerResponseSource: js.UndefOr[ServiceWorkerResponseSource] = js.undefined
   
   /**
     * HTTP response status code.
     */
-  var status: integer = js.native
+  var status: integer
   
   /**
     * HTTP response status text.
     */
-  var statusText: String = js.native
+  var statusText: String
   
   /**
     * Timing information for the given request.
     */
-  var timing: js.UndefOr[ResourceTiming] = js.native
+  var timing: js.UndefOr[ResourceTiming] = js.undefined
   
   /**
     * Response URL. This URL can be different from CachedResource.url in case of redirect.
     */
-  var url: String = js.native
+  var url: String
 }
 object Response {
   

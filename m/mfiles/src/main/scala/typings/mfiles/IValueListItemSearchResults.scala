@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IValueListItemSearchResults extends StObject {
   
-  def Add(Index: Double, ValueListItem: IValueListItem): Unit = js.native
+  def Add(Index: Double, ValueListItem: IValueListItem): Unit
   
-  def Clone(): IValueListItemSearchResults = js.native
+  def Clone(): IValueListItemSearchResults
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IValueListItem = js.native
+  def Item(Index: Double): IValueListItem
   
-  var MoreResults: Boolean = js.native
+  var MoreResults: Boolean
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IValueListItemSearchResults {
   

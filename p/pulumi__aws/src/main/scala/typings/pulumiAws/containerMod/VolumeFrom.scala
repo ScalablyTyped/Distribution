@@ -2,15 +2,13 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeFrom extends StObject {
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var sourceContainer: js.UndefOr[String] = js.native
+  var sourceContainer: js.UndefOr[String] = js.undefined
 }
 object VolumeFrom {
   

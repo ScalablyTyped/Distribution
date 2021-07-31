@@ -2,59 +2,57 @@ package typings.angularCommon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HRK extends StObject {
   
-  var AUD: js.Array[js.UndefOr[String]] = js.native
+  var AUD: js.Array[js.UndefOr[String]]
   
-  var BMD: js.Array[js.UndefOr[String]] = js.native
+  var BMD: js.Array[js.UndefOr[String]]
   
-  var BRL: js.Array[js.UndefOr[String]] = js.native
+  var BRL: js.Array[js.UndefOr[String]]
   
-  var BSD: js.Array[js.UndefOr[String]] = js.native
+  var BSD: js.Array[js.UndefOr[String]]
   
-  var BZD: js.Array[js.UndefOr[String]] = js.native
+  var BZD: js.Array[js.UndefOr[String]]
   
-  var CAD: js.Array[js.UndefOr[String]] = js.native
+  var CAD: js.Array[js.UndefOr[String]]
   
-  var DOP: js.Array[js.UndefOr[String]] = js.native
+  var DOP: js.Array[js.UndefOr[String]]
   
-  var EGP: js.Array[js.UndefOr[String]] = js.native
+  var EGP: js.Array[js.UndefOr[String]]
   
-  var GBP: js.Array[js.UndefOr[String]] = js.native
+  var GBP: js.Array[js.UndefOr[String]]
   
-  var HKD: js.Array[js.UndefOr[String]] = js.native
+  var HKD: js.Array[js.UndefOr[String]]
   
-  var HRK: js.Array[js.UndefOr[String]] = js.native
+  var HRK: js.Array[js.UndefOr[String]]
   
-  var ILS: js.Array[js.UndefOr[String]] = js.native
+  var ILS: js.Array[js.UndefOr[String]]
   
-  var INR: js.Array[js.UndefOr[String]] = js.native
+  var INR: js.Array[js.UndefOr[String]]
   
-  var JMD: js.Array[js.UndefOr[String]] = js.native
+  var JMD: js.Array[js.UndefOr[String]]
   
-  var JPY: js.Array[String] = js.native
+  var JPY: js.Array[String]
   
-  var KGS: js.Array[String] = js.native
+  var KGS: js.Array[String]
   
-  var KRW: js.Array[js.UndefOr[String]] = js.native
+  var KRW: js.Array[js.UndefOr[String]]
   
-  var MXN: js.Array[js.UndefOr[String]] = js.native
+  var MXN: js.Array[js.UndefOr[String]]
   
-  var NZD: js.Array[js.UndefOr[String]] = js.native
+  var NZD: js.Array[js.UndefOr[String]]
   
-  var THB: js.Array[String] = js.native
+  var THB: js.Array[String]
   
-  var TTD: js.Array[js.UndefOr[String]] = js.native
+  var TTD: js.Array[js.UndefOr[String]]
   
-  var TWD: js.Array[js.UndefOr[String]] = js.native
+  var TWD: js.Array[js.UndefOr[String]]
   
-  var USD: js.Array[js.UndefOr[String]] = js.native
+  var USD: js.Array[js.UndefOr[String]]
   
-  var XCD: js.Array[js.UndefOr[String]] = js.native
+  var XCD: js.Array[js.UndefOr[String]]
 }
 object HRK {
   

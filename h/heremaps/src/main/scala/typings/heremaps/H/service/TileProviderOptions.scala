@@ -2,17 +2,15 @@ package typings.heremaps.H.service
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options which are used to initialize the tile provider.
   * @property crossOrigin {boolean=} - The string to be set for the crossOrigin attribute for loaded images
   */
-@js.native
 trait TileProviderOptions extends StObject {
   
-  var crossOrigin: js.UndefOr[Boolean] = js.native
+  var crossOrigin: js.UndefOr[Boolean] = js.undefined
 }
 object TileProviderOptions {
   

@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchUserIDsOptions extends StObject {
   
   /**
     * If specified, only clusters assigned to this cluster can be returned.
     * */
-  val cluster: js.UndefOr[String] = js.native
+  val cluster: js.UndefOr[String] = js.undefined
   
   /**
     * Number of users to return by page.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.native
+  val hitsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Page to fetch.
     */
-  val page: js.UndefOr[Double] = js.native
+  val page: js.UndefOr[Double] = js.undefined
 }
 object SearchUserIDsOptions {
   

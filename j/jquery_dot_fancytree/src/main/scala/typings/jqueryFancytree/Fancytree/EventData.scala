@@ -3,38 +3,36 @@ package typings.jqueryFancytree.Fancytree
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Context object passed to events and hook functions. */
-@js.native
 trait EventData extends StObject {
   
   /** The node that this call applies to (`null` for tree events) */
-  var node: FancytreeNode = js.native
+  var node: FancytreeNode
   
   // JQueryUI.Widget;
   /** Shortcut to tree.options */
-  var options: FancytreeOptions = js.native
+  var options: FancytreeOptions
   
   /** The jQuery Event that initially triggered this call */
-  var originalEvent: JQueryEventObject = js.native
+  var originalEvent: JQueryEventObject
   
   /** (only for postProcess event) Original ajax response */
-  var response: js.Any = js.native
+  var response: js.Any
   
   /** (output parameter) Event handlers can return values back to the
     * caller. Used by `lazyLoad`, `postProcess`, ... */
-  var result: js.Any = js.native
+  var result: js.Any
   
   /** (only for click and dblclick events) 'title' | 'prefix' | 'expander' | 'checkbox' | 'icon' */
-  var targetType: String = js.native
+  var targetType: String
   
   /** The tree instance */
-  var tree: typings.jqueryFancytree.Fancytree.Fancytree = js.native
+  var tree: typings.jqueryFancytree.Fancytree.Fancytree
   
   /** The jQuery UI tree widget */
-  var widget: js.Any = js.native
+  var widget: js.Any
 }
 object EventData {
   

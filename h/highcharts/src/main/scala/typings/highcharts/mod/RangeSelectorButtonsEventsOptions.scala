@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeSelectorButtonsEventsOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RangeSelectorButtonsEventsOptions extends StObject {
     *
     * Return false to stop default button's click action.
     */
-  var click: js.UndefOr[RangeSelectorClickCallbackFunction] = js.native
+  var click: js.UndefOr[RangeSelectorClickCallbackFunction] = js.undefined
 }
 object RangeSelectorButtonsEventsOptions {
   

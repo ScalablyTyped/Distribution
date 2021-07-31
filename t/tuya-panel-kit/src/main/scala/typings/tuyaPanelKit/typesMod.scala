@@ -46,6 +46,7 @@ import typings.tuyaPanelKit.anon.`5`
 import typings.tuyaPanelKit.anon.`6`
 import typings.tuyaPanelKit.anon.`7`
 import typings.tuyaPanelKit.anon.`8`
+import typings.tuyaPanelKit.routersTypesMod.DefaultRouterOptions
 import typings.tuyaPanelKit.routersTypesMod.InitialState
 import typings.tuyaPanelKit.routersTypesMod.NavigationAction
 import typings.tuyaPanelKit.routersTypesMod.NavigationState
@@ -76,7 +77,6 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.setParams
 import typings.tuyaPanelKit.tuyaPanelKitStrings.state
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -99,31 +99,25 @@ object typesMod {
     var _empty: js.UndefOr[AB[A, B, C]] = js.native
   }
   
-  type CompositeNavigationProp[A /* <: NavigationProp[ParamListBase, String, _, _, js.Object] */, B /* <: NavigationHelpersCommon[ParamListBase, _] */] = (Omit[
-    A with B, 
+  type CompositeNavigationProp[A /* <: NavigationProp[ParamListBase, String, js.Any, js.Any, js.Object] */, B /* <: NavigationHelpersCommon[ParamListBase, js.Any] */] = (Omit[
+    A & B, 
     /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.NavigationProp<any, string, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.NavigationState<any>, {}, {}> */ dispatch | navigate_ | reset_ | goBack | isFocused | canGoBack | dangerouslyGetParent | dangerouslyGetState | _empty | setParams | setOptions | addListener | removeListener
-  ]) with (NavigationProp[js.Any, String, NavigationState[ParamListBase], js.Object, js.Object])
+  ]) & (NavigationProp[js.Any, String, NavigationState[ParamListBase], js.Object, js.Object])
   
-  /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.DefaultRouterOptions<std.Extract<keyof ParamList, string>> & {  children :react.react.ReactNode,   screenOptions :ScreenOptions | (props : {  route :tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.RouteProp<ParamList, keyof ParamList>,   navigation :any}): ScreenOptions | undefined} */
-  @js.native
-  trait DefaultNavigatorOptions[ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */] extends StObject {
+  trait DefaultNavigatorOptions[ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */]
+    extends StObject
+       with DefaultRouterOptions[Extract[/* keyof ParamList */ String, String]] {
     
     /**
       * Children React Elements to extract the route configuration from.
       * Only `Screen` components are supported as children.
       */
-    var children: ReactNode = js.native
-    
-    /**
-      * Name of the route to focus by on initial render.
-      * If not specified, usually the first route is used.
-      */
-    var initialRouteName: js.UndefOr[Extract[/* keyof ParamList */ String, String]] = js.native
+    var children: ReactNode
     
     /**
       * Default options for all screens under this navigator.
       */
-    var screenOptions: js.UndefOr[ScreenOptions | (js.Function1[/* props */ Navigation[ParamList], ScreenOptions])] = js.native
+    var screenOptions: js.UndefOr[ScreenOptions | (js.Function1[/* props */ Navigation[ParamList], ScreenOptions])] = js.undefined
   }
   object DefaultNavigatorOptions {
     
@@ -134,19 +128,13 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class DefaultNavigatorOptionsMutableBuilder[Self <: DefaultNavigatorOptions[_, _], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */] (val x: Self with (DefaultNavigatorOptions[ScreenOptions, ParamList])) extends AnyVal {
+    implicit class DefaultNavigatorOptionsMutableBuilder[Self <: DefaultNavigatorOptions[?, ?], ScreenOptions /* <: js.Object */, ParamList /* <: ParamListBase */] (val x: Self & (DefaultNavigatorOptions[ScreenOptions, ParamList])) extends AnyVal {
       
       @scala.inline
       def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
-      
-      @scala.inline
-      def setInitialRouteName(value: Extract[/* keyof ParamList */ String, String]): Self = StObject.set(x, "initialRouteName", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
       @scala.inline
       def setScreenOptions(value: ScreenOptions | (js.Function1[/* props */ Navigation[ParamList], ScreenOptions])): Self = StObject.set(x, "screenOptions", value.asInstanceOf[js.Any])
@@ -159,23 +147,22 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Descriptor[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] extends StObject {
     
     /**
       * Navigation object for the screen
       */
-    var navigation: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap] = js.native
+    var navigation: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap]
     
     /**
       * Options for the route.
       */
-    var options: ScreenOptions = js.native
+    var options: ScreenOptions
     
     /**
       * Render the component associated with this route.
       */
-    def render(): Element = js.native
+    def render(): Element
   }
   object Descriptor {
     
@@ -190,7 +177,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class DescriptorMutableBuilder[Self <: Descriptor[_, _, _, _, _], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self with (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) extends AnyVal {
+    implicit class DescriptorMutableBuilder[Self <: Descriptor[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (Descriptor[ParamList, RouteName, State, ScreenOptions, EventMap])) extends AnyVal {
       
       @scala.inline
       def setNavigation(value: NavigationProp[ParamList, RouteName, State, ScreenOptions, EventMap]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
@@ -203,9 +190,8 @@ object typesMod {
     }
   }
   
-  type EventArg[EventName /* <: String */, CanPreventDefault /* <: js.UndefOr[Boolean] */, Data] = TypeEventName[EventName] with (js.Object | DefaultPrevented) with (DataReadonly[Data] | `2`[Data])
+  type EventArg[EventName /* <: String */, CanPreventDefault /* <: js.UndefOr[Boolean] */, Data] = TypeEventName[EventName] & (js.Object | DefaultPrevented) & (DataReadonly[Data] | `2`[Data])
   
-  @js.native
   trait EventConsumer[EventMap /* <: EventMapBase */] extends StObject {
     
     /**
@@ -214,9 +200,9 @@ object typesMod {
       * @param type Type of the event (e.g. `focus`, `blur`)
       * @param callback Callback listener which is executed upon receiving the event.
       */
-    def addListener[EventName /* <: Extract[/* keyof EventMap */ String, String] */](`type`: EventName, callback: EventListenerCallback[EventMap, EventName]): js.Function0[Unit] = js.native
+    def addListener[EventName /* <: Extract[/* keyof EventMap */ String, String] */](`type`: EventName, callback: EventListenerCallback[EventMap, EventName]): js.Function0[Unit]
     
-    def removeListener[EventName /* <: Extract[/* keyof EventMap */ String, String] */](`type`: EventName, callback: EventListenerCallback[EventMap, EventName]): Unit = js.native
+    def removeListener[EventName /* <: Extract[/* keyof EventMap */ String, String] */](`type`: EventName, callback: EventListenerCallback[EventMap, EventName]): Unit
   }
   object EventConsumer {
     
@@ -230,7 +216,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class EventConsumerMutableBuilder[Self <: EventConsumer[_], EventMap /* <: EventMapBase */] (val x: Self with EventConsumer[EventMap]) extends AnyVal {
+    implicit class EventConsumerMutableBuilder[Self <: EventConsumer[?], EventMap /* <: EventMapBase */] (val x: Self & EventConsumer[EventMap]) extends AnyVal {
       
       @scala.inline
       def setAddListener(value: (js.Any, EventListenerCallback[EventMap, js.Any]) => js.Function0[Unit]): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
@@ -240,7 +226,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait EventEmitter[EventMap /* <: EventMapBase */] extends StObject {
     
     /**
@@ -252,18 +237,18 @@ object typesMod {
       * If not specified, all routes receive the event.
       */
     def emit[EventName /* <: Extract[/* keyof EventMap */ String, String] */](
-      options: (TargetTypeEventName[EventName, EventMap]) with (js.Object | `3`) with ((`5`[EventMap, EventName]) | (`4`[EventMap, EventName]))
+      options: (TargetTypeEventName[EventName, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, EventName]) | (`4`[EventMap, EventName]))
     ): EventArg[
         EventName, 
         /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
-      ] = js.native
+      ]
   }
   object EventEmitter {
     
     @scala.inline
     def apply[EventMap /* <: EventMapBase */](
-      emit: (TargetTypeEventName[js.Any, EventMap]) with (js.Object | `3`) with ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
+      emit: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
           js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
@@ -274,11 +259,11 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class EventEmitterMutableBuilder[Self <: EventEmitter[_], EventMap /* <: EventMapBase */] (val x: Self with EventEmitter[EventMap]) extends AnyVal {
+    implicit class EventEmitterMutableBuilder[Self <: EventEmitter[?], EventMap /* <: EventMapBase */] (val x: Self & EventEmitter[EventMap]) extends AnyVal {
       
       @scala.inline
       def setEmit(
-        value: (TargetTypeEventName[js.Any, EventMap]) with (js.Object | `3`) with ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
+        value: (TargetTypeEventName[js.Any, EventMap]) & (js.Object | `3`) & ((`5`[EventMap, js.Any]) | (`4`[EventMap, js.Any])) => EventArg[
               js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
               /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['data'] */ js.Any
@@ -298,16 +283,15 @@ object typesMod {
   
   type EventMapBase = Record[String, CanPreventDefault]
   
-  @js.native
   trait EventMapCore[State /* <: NavigationState[ParamListBase] */] extends StObject {
     
-    var beforeRemove: CanPreventDefaultData = js.native
+    var beforeRemove: CanPreventDefaultData
     
-    var blur: Data = js.native
+    var blur: Data
     
-    var focus: Data = js.native
+    var focus: Data
     
-    var state: DataStateState[State] = js.native
+    var state: DataStateState[State]
   }
   object EventMapCore {
     
@@ -318,7 +302,7 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class EventMapCoreMutableBuilder[Self <: EventMapCore[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with EventMapCore[State]) extends AnyVal {
+    implicit class EventMapCoreMutableBuilder[Self <: EventMapCore[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & EventMapCore[State]) extends AnyVal {
       
       @scala.inline
       def setBeforeRemove(value: CanPreventDefaultData): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
@@ -334,7 +318,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NavigationContainerEventMap extends StObject {
     
     /**
@@ -342,17 +325,17 @@ object typesMod {
       * Only intended for debugging purposes, don't use it for app logic.
       * This event will be emitted before state changes have been applied.
       */
-    var __unsafe_action__ : DataNoop = js.native
+    var __unsafe_action__ : DataNoop
     
     /**
       * Event which fires when current options changes.
       */
-    var options: DataOptionsObject = js.native
+    var options: DataOptionsObject
     
     /**
       * Event which fires when the navigation state changes.
       */
-    var state: Data9 = js.native
+    var state: Data9
   }
   object NavigationContainerEventMap {
     
@@ -376,35 +359,34 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NavigationContainerProps extends StObject {
     
     /**
       * Children elements to render.
       */
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * Whether this navigation container should be independent of parent containers.
       * If this is not set to `true`, this container cannot be nested inside another container.
       * Setting it to `true` disconnects any children navigators from parent container.
       */
-    var independent: js.UndefOr[Boolean] = js.native
+    var independent: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial navigation state for the child navigators.
       */
-    var initialState: js.UndefOr[InitialState] = js.native
+    var initialState: js.UndefOr[InitialState] = js.undefined
     
     /**
       * Callback which is called with the latest navigation state when it changes.
       */
-    var onStateChange: js.UndefOr[js.Function1[/* state */ js.UndefOr[NavigationState[ParamListBase]], Unit]] = js.native
+    var onStateChange: js.UndefOr[js.Function1[/* state */ js.UndefOr[NavigationState[ParamListBase]], Unit]] = js.undefined
     
     /**
       * Callback which is called when an action is not handled.
       */
-    var onUnhandledAction: js.UndefOr[js.Function1[/* action */ NavigationAction, Unit]] = js.native
+    var onUnhandledAction: js.UndefOr[js.Function1[/* action */ NavigationAction, Unit]] = js.undefined
   }
   object NavigationContainerProps {
     
@@ -515,7 +497,7 @@ object typesMod {
       * @param [options.target] Key of the target route which should receive the event.
       * If not specified, all routes receive the event.
       */
-    def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](options: `10`[EventName] with (js.Object | `3`) with (`12`[EventName] | `11`[EventName])): EventArg[
+    def emit[EventName /* <: Extract[/* keyof {} */ String, String] */](options: `10`[EventName] & (js.Object | `3`) & (`12`[EventName] | `11`[EventName])): EventArg[
         EventName, 
         /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['canPreventDefault'] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: {}[EventName]['data'] */ js.Any
@@ -661,7 +643,7 @@ object typesMod {
       * If not specified, all routes receive the event.
       */
     def emit[EventName /* <: Extract[/* keyof EventMap */ String, String] */](
-      options: (`6`[EventName, EventMap]) with (js.Object | `3`) with ((`8`[EventMap, EventName]) | (`7`[EventMap, EventName]))
+      options: (`6`[EventName, EventMap]) & (js.Object | `3`) & ((`8`[EventMap, EventName]) | (`7`[EventMap, EventName]))
     ): EventArg[
         EventName, 
         /* import warning: importer.ImportType#apply Failed type conversion: EventMap[EventName]['canPreventDefault'] */ js.Any, 
@@ -724,22 +706,9 @@ object typesMod {
   }
   
   // tslint:disable-next-line strict-export-declare-modifiers
-  /* Inlined {dispatch (action : tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.NavigationAction | (state : State): tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.NavigationAction): void, navigate <RouteName extends keyof ParamList>(args : undefined extends ParamList[RouteName] ? [RouteName] | [RouteName, ParamList[RouteName]] : [RouteName, ParamList[RouteName]]): void, navigate <RouteName extends keyof ParamList>(route : {  key :string,   params :ParamList[RouteName] | undefined} | {  name :RouteName,   key :string | undefined,   params :ParamList[RouteName]}): void, reset (state : tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.PartialState<State> | State): void, goBack (): void, isFocused (): boolean, canGoBack (): boolean, dangerouslyGetParent <T = tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.NavigationProp<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.ParamListBase, string, tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.NavigationState<tuya-panel-kit.tuya-panel-kit/@react-navigation/routers.ParamListBase>, {}, {}> | undefined>(): T, dangerouslyGetState (): State} & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.PrivateValueStore<ParamList, keyof ParamList, {}> */
   @js.native
-  trait NavigationHelpersCommon[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */] extends StObject {
-    
-    /**
-      * UGLY HACK! DO NOT USE THE TYPE!!!
-      *
-      * TypeScript requires a type to be used to be able to infer it.
-      * The type should exist as its own without any operations such as union.
-      * So we need to figure out a way to store this type in a property.
-      * The problem with a normal property is that it shows up in intelliSense.
-      * Adding private keyword works, but the annotation is stripped away in declaration.
-      * Turns out if we use an empty string, it doesn't show up in intelliSense.
-      */
-    @JSName("")
-    var _empty: js.UndefOr[A[ParamList]] = js.native
+  trait NavigationHelpersCommon[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */]
+    extends PrivateValueStore[ParamList, /* keyof ParamList */ String, js.Object] {
     
     /**
       * Check if dispatching back action will be handled by navigation.
@@ -828,7 +797,7 @@ object typesMod {
       * Turns out if we use an empty string, it doesn't show up in intelliSense.
       */
     @JSName("")
-    var _empty: js.UndefOr[A[ParamList]] with (js.UndefOr[B[ParamList, RouteName, EventMap]]) = js.native
+    var _empty: js.UndefOr[A[ParamList]] & (js.UndefOr[B[ParamList, RouteName, EventMap]]) = js.native
     
     /**
       * Subscribe to events from the parent navigator.
@@ -839,7 +808,7 @@ object typesMod {
     def addListener[EventName /* <: Extract[
         /* keyof EventMap & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventMapCore<State> */ focus | blur | state | beforeRemove, 
         String
-      ] */](`type`: EventName, callback: EventListenerCallback[EventMap with EventMapCore[State], EventName]): js.Function0[Unit] = js.native
+      ] */](`type`: EventName, callback: EventListenerCallback[EventMap & EventMapCore[State], EventName]): js.Function0[Unit] = js.native
     
     /**
       * Check if dispatching back action will be handled by navigation.
@@ -907,7 +876,7 @@ object typesMod {
     def removeListener[EventName /* <: Extract[
         /* keyof EventMap & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventMapCore<State> */ focus | blur | state | beforeRemove, 
         String
-      ] */](`type`: EventName, callback: EventListenerCallback[EventMap with EventMapCore[State], EventName]): Unit = js.native
+      ] */](`type`: EventName, callback: EventListenerCallback[EventMap & EventMapCore[State], EventName]): Unit = js.native
     
     def reset(state: State): Unit = js.native
     /**
@@ -940,20 +909,19 @@ object typesMod {
   
   type NavigatorScreenParams[ParamList, State /* <: NavigationState[ParamListBase] */] = Initial[State] | (/* import warning: importer.ImportType#apply Failed type conversion: {[ RouteName in keyof ParamList ]: undefined extends ParamList[RouteName]? {  screen :RouteName,   params :ParamList[RouteName] | undefined,   initial :boolean | undefined,   state :never | undefined} : {  screen :RouteName,   params :ParamList[RouteName],   initial :boolean | undefined,   state :never | undefined}}[keyof ParamList] */ js.Any)
   
-  @js.native
   trait PathConfig extends StObject {
     
-    var exact: js.UndefOr[Boolean] = js.native
+    var exact: js.UndefOr[Boolean] = js.undefined
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var parse: js.UndefOr[Record[String, js.Function1[/* value */ String, _]]] = js.native
+    var parse: js.UndefOr[Record[String, js.Function1[/* value */ String, js.Any]]] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var screens: js.UndefOr[PathConfigMap] = js.native
+    var screens: js.UndefOr[PathConfigMap] = js.undefined
     
-    var stringify: js.UndefOr[Record[String, js.Function1[/* value */ _, String]]] = js.native
+    var stringify: js.UndefOr[Record[String, js.Function1[/* value */ js.Any, String]]] = js.undefined
   }
   object PathConfig {
     
@@ -979,7 +947,7 @@ object typesMod {
       def setInitialRouteNameUndefined: Self = StObject.set(x, "initialRouteName", js.undefined)
       
       @scala.inline
-      def setParse(value: Record[String, js.Function1[/* value */ String, _]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
+      def setParse(value: Record[String, js.Function1[/* value */ String, js.Any]]): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
@@ -997,15 +965,16 @@ object typesMod {
       def setScreensUndefined: Self = StObject.set(x, "screens", js.undefined)
       
       @scala.inline
-      def setStringify(value: Record[String, js.Function1[/* value */ _, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
+      def setStringify(value: Record[String, js.Function1[/* value */ js.Any, String]]): Self = StObject.set(x, "stringify", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStringifyUndefined: Self = StObject.set(x, "stringify", js.undefined)
     }
   }
   
-  @js.native
-  trait PathConfigMap extends /* routeName */ StringDictionary[String | PathConfig]
+  trait PathConfigMap
+    extends StObject
+       with /* routeName */ StringDictionary[String | PathConfig]
   object PathConfigMap {
     
     @scala.inline
@@ -1015,7 +984,7 @@ object typesMod {
     }
   }
   
-  type RouteConfig[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] = (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap]) with (Children | Component | (GetComponent[ParamList, RouteName]))
+  type RouteConfig[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] = (InitialParams[RouteName, ScreenOptions, ParamList, State, EventMap]) & (Children | Component | (GetComponent[ParamList, RouteName]))
   
   type RouteProp[ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] = Route[
     Extract[RouteName, String], 
@@ -1025,11 +994,10 @@ object typesMod {
   type ScreenListeners[State /* <: NavigationState[ParamListBase] */, EventMap /* <: EventMapBase */] = Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ EventName in keyof EventMap & tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventMapCore<State> ]: tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.EventListenerCallback<EventMap, EventName>}
-    */ typings.tuyaPanelKit.tuyaPanelKitStrings.ScreenListeners with TopLevel[js.Any]
+    */ typings.tuyaPanelKit.tuyaPanelKitStrings.ScreenListeners & TopLevel[js.Any]
   ]
   
-  @js.native
-  trait TypedNavigator[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[_] */] extends StObject {
+  trait TypedNavigator[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */] extends StObject {
     
     /**
       * Navigator component which manages the child screens.
@@ -1037,25 +1005,25 @@ object typesMod {
     var Navigator: ComponentType[
         (Omit[
           ComponentProps[Navigator], 
-          /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ initialRouteName | children | screenOptions
-        ]) with (DefaultNavigatorOptions[ScreenOptions, ParamList])
-      ] = js.native
+          /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ children | screenOptions | initialRouteName
+        ]) & (DefaultNavigatorOptions[ScreenOptions, ParamList])
+      ]
     
     /**
       * Component used for specifying route configuration.
       */
     // tslint:disable-next-line no-unnecessary-generics
-    def Screen[RouteName /* <: /* keyof ParamList */ String */](_underscore: RouteConfig[ParamList, RouteName, State, ScreenOptions, EventMap]): Null = js.native
+    def Screen[RouteName /* <: /* keyof ParamList */ String */](_underscore: RouteConfig[ParamList, RouteName, State, ScreenOptions, EventMap]): Null
   }
   object TypedNavigator {
     
     @scala.inline
-    def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[_] */](
+    def apply[ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */](
       Navigator: ComponentType[
           (Omit[
             ComponentProps[Navigator], 
-            /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ initialRouteName | children | screenOptions
-          ]) with (DefaultNavigatorOptions[ScreenOptions, ParamList])
+            /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ children | screenOptions | initialRouteName
+          ]) & (DefaultNavigatorOptions[ScreenOptions, ParamList])
         ],
       Screen: RouteConfig[ParamList, js.Any, State, ScreenOptions, EventMap] => Null
     ): TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator] = {
@@ -1064,15 +1032,15 @@ object typesMod {
     }
     
     @scala.inline
-    implicit class TypedNavigatorMutableBuilder[Self <: TypedNavigator[_, _, _, _, _], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[_] */] (val x: Self with (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) extends AnyVal {
+    implicit class TypedNavigatorMutableBuilder[Self <: TypedNavigator[?, ?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */, Navigator /* <: ComponentType[js.Any] */] (val x: Self & (TypedNavigator[ParamList, State, ScreenOptions, EventMap, Navigator])) extends AnyVal {
       
       @scala.inline
       def setNavigator(
         value: ComponentType[
               (Omit[
                 ComponentProps[Navigator], 
-                /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ initialRouteName | children | screenOptions
-              ]) with (DefaultNavigatorOptions[ScreenOptions, ParamList])
+                /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/core/types.DefaultNavigatorOptions<any, any> */ children | screenOptions | initialRouteName
+              ]) & (DefaultNavigatorOptions[ScreenOptions, ParamList])
             ]
       ): Self = StObject.set(x, "Navigator", value.asInstanceOf[js.Any])
       

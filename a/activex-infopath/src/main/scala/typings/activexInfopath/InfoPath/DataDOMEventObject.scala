@@ -3,7 +3,6 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,29 +33,6 @@ trait DataDOMEventObject extends StObject {
     varNode: js.Any,
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: js.UndefOr[scala.Nothing],
-    bstrType: String
-  ): ErrorObject = js.native
-  def ReportError(
-    varNode: js.Any,
-    bstrShortErrorMessage: String,
-    fSiteIndependent: Boolean,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: Double
-  ): ErrorObject = js.native
-  def ReportError(
-    varNode: js.Any,
-    bstrShortErrorMessage: String,
-    fSiteIndependent: Boolean,
-    bstrDetailedErrorMessage: js.UndefOr[scala.Nothing],
-    lErrorCode: Double,
-    bstrType: String
-  ): ErrorObject = js.native
-  def ReportError(
-    varNode: js.Any,
-    bstrShortErrorMessage: String,
-    fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String
   ): ErrorObject = js.native
   def ReportError(
@@ -64,14 +40,6 @@ trait DataDOMEventObject extends StObject {
     bstrShortErrorMessage: String,
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String,
-    lErrorCode: js.UndefOr[scala.Nothing],
-    bstrType: String
-  ): ErrorObject = js.native
-  def ReportError(
-    varNode: js.Any,
-    bstrShortErrorMessage: String,
-    fSiteIndependent: Boolean,
-    bstrDetailedErrorMessage: String,
     lErrorCode: Double
   ): ErrorObject = js.native
   def ReportError(
@@ -80,6 +48,37 @@ trait DataDOMEventObject extends StObject {
     fSiteIndependent: Boolean,
     bstrDetailedErrorMessage: String,
     lErrorCode: Double,
+    bstrType: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: String,
+    lErrorCode: Unit,
+    bstrType: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Double
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Double,
+    bstrType: String
+  ): ErrorObject = js.native
+  def ReportError(
+    varNode: js.Any,
+    bstrShortErrorMessage: String,
+    fSiteIndependent: Boolean,
+    bstrDetailedErrorMessage: Unit,
+    lErrorCode: Unit,
     bstrType: String
   ): ErrorObject = js.native
   

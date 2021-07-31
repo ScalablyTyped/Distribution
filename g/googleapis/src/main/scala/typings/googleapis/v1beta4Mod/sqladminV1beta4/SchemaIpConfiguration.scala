@@ -2,13 +2,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * IP Management configuration.
   */
-@js.native
 trait SchemaIpConfiguration extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaIpConfiguration extends StObject {
     * using the IP. In CIDR notation, also known as &#39;slash&#39; notation
     * (e.g. 192.168.100.0/24).
     */
-  var authorizedNetworks: js.UndefOr[js.Array[SchemaAclEntry]] = js.native
+  var authorizedNetworks: js.UndefOr[js.Array[SchemaAclEntry]] = js.undefined
   
   /**
     * Whether the instance should be assigned an IP address or not.
     */
-  var ipv4Enabled: js.UndefOr[Boolean] = js.native
+  var ipv4Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource link for the VPC network from which the Cloud SQL instance
@@ -29,12 +27,12 @@ trait SchemaIpConfiguration extends StObject {
     * /projects/myProject/global/networks/default. This setting can be updated,
     * but it cannot be removed after it is set.
     */
-  var privateNetwork: js.UndefOr[String] = js.native
+  var privateNetwork: js.UndefOr[String] = js.undefined
   
   /**
     * Whether SSL connections over IP should be enforced or not.
     */
-  var requireSsl: js.UndefOr[Boolean] = js.native
+  var requireSsl: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaIpConfiguration {
   

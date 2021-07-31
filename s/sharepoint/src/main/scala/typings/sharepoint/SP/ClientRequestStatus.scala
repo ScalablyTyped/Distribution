@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait ClientRequestStatus extends StObject
 object ClientRequestStatus extends StObject {
   
   @js.native
-  sealed trait active extends ClientRequestStatus
+  sealed trait active
+    extends StObject
+       with ClientRequestStatus
   
   @js.native
-  sealed trait completedException extends ClientRequestStatus
+  sealed trait completedException
+    extends StObject
+       with ClientRequestStatus
   
   @js.native
-  sealed trait completedSuccess extends ClientRequestStatus
+  sealed trait completedSuccess
+    extends StObject
+       with ClientRequestStatus
   
   @js.native
-  sealed trait inProgress extends ClientRequestStatus
+  sealed trait inProgress
+    extends StObject
+       with ClientRequestStatus
 }

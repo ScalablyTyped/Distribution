@@ -10,10 +10,10 @@ Reactive, component-oriented view layer for modern web interfaces.
 | ------------------ | :-------------: |
 | Full name          | vue |
 | Keywords           | vue |
-| # releases         | 72 |
-| # dependents       | 28849 |
-| # downloads        | 75646211 |
-| # stars            | 239 |
+| # releases         | 62 |
+| # dependents       | 33944 |
+| # downloads        | 92357191 |
+| # stars            | 243 |
 
 ## Links
 - [Homepage](https://github.com/vuejs/vue#readme)

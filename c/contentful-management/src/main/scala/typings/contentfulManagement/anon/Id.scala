@@ -4,24 +4,22 @@ import typings.contentfulManagement.contentfulManagementStrings.Environment
 import typings.contentfulManagement.contentfulManagementStrings.Link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var linkType: Environment = js.native
+  var linkType: Environment
   
-  var `type`: Link = js.native
+  var `type`: Link
 }
 object Id {
   
   @scala.inline
-  def apply(id: String, linkType: Environment, `type`: Link): Id = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], linkType = linkType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: String): Id = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], linkType = "Environment")
+    __obj.updateDynamic("type")("Link")
     __obj.asInstanceOf[Id]
   }
   

@@ -2,7 +2,6 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -31,4 +30,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.grammarkdown.grammarkdownMod.SyntaxKind.ElementOfToken
   - typings.grammarkdown.grammarkdownMod.SyntaxKind.NotAnElementOfToken
 */
-trait PunctuationKind extends TokenKind
+trait PunctuationKind
+  extends StObject
+     with TokenKind

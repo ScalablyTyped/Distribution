@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseComponent.componentContainerMod.ComponentContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -58,7 +57,6 @@ object typesMod {
   */
   trait Name extends StObject
   
-  @js.native
   trait NameServiceMapping extends StObject
   
   /* Inlined @firebase/component.@firebase/component/dist/src/types.NameServiceMapping[@firebase/component.@firebase/component/dist/src/types.Name] */

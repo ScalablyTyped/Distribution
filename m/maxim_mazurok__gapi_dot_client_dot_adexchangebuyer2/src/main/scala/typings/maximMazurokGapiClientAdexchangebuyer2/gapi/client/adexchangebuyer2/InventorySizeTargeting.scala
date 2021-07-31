@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySizeTargeting extends StObject {
   
   /** A list of inventory sizes to be excluded. */
-  var excludedInventorySizes: js.UndefOr[js.Array[AdSize]] = js.native
+  var excludedInventorySizes: js.UndefOr[js.Array[AdSize]] = js.undefined
   
   /** A list of inventory sizes to be included. */
-  var targetedInventorySizes: js.UndefOr[js.Array[AdSize]] = js.native
+  var targetedInventorySizes: js.UndefOr[js.Array[AdSize]] = js.undefined
 }
 object InventorySizeTargeting {
   

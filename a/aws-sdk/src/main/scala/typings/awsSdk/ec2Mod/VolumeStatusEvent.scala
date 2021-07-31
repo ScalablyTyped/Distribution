@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatusEvent extends StObject {
   
   /**
     * A description of the event.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this event.
     */
-  var EventId: js.UndefOr[String] = js.native
+  var EventId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of this event.
     */
-  var EventType: js.UndefOr[String] = js.native
+  var EventType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the instance associated with the event.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The latest end time of the event.
     */
-  var NotAfter: js.UndefOr[MillisecondDateTime] = js.native
+  var NotAfter: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * The earliest start time of the event.
     */
-  var NotBefore: js.UndefOr[MillisecondDateTime] = js.native
+  var NotBefore: js.UndefOr[MillisecondDateTime] = js.undefined
 }
 object VolumeStatusEvent {
   

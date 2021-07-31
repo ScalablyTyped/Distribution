@@ -3,19 +3,17 @@ package typings.forgeApis.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfModifiedSince extends StObject {
   
-  var acceptEncoding: js.UndefOr[String] = js.native
+  var acceptEncoding: js.UndefOr[String] = js.undefined
   
-  var ifModifiedSince: js.UndefOr[Date] = js.native
+  var ifModifiedSince: js.UndefOr[Date] = js.undefined
   
-  var ifNoneMatch: js.UndefOr[String] = js.native
+  var ifNoneMatch: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
 }
 object IfModifiedSince {
   

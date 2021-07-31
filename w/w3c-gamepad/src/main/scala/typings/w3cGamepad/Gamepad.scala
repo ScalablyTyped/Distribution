@@ -4,55 +4,53 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Gamepad {
   
-  @js.native
   trait Gamepad extends StObject {
     
     /**
       * Array of values for all axes of the gamepad. All axis values must be linearly normalized to the range [-1.0 .. 1.0]. As appropriate, -1.0 should correspond to "up" or "left", and 1.0 should correspond to "down" or "right". Axes that are drawn from a 2D input device should appear next to each other in the axes array, X then Y. It is recommended that axes appear in decreasing order of importance, such that element 0 and 1 typically represent the X and Y axis of a directional stick.
       * @readonly
       */
-    var axes: js.Array[Double] = js.native
+    var axes: js.Array[Double]
     
     /**
       * Array of values for all buttons of the gamepad. All button values must be linearly normalized to the range [0.0 .. 1.0]. 0.0 must mean fully unpressed, and 1.0 must mean fully pressed. It is recommended that buttons appear in decreasing importance such that the primary button, secondary button, tertiary button, and so on appear as elements 0, 1, 2, ... in the buttons array.
       * @readonly
       */
-    var buttons: js.Array[GamepadButton] = js.native
+    var buttons: js.Array[GamepadButton]
     
     /**
       * Indicates whether the physical device represented by this object is still connected to the system. When a gamepad becomes unavailable, whether by being physically disconnected, powered off or otherwise unusable, the connected attribute must be set to false.
       * @readonly
       */
-    var connected: Boolean = js.native
+    var connected: Boolean
     
     /**
       * An identification string for the gamepad. This string identifies the brand or style of connected gamepad device. Typically, this will include the USB vendor and a product ID.
       * @readonly
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The index of the gamepad in the Navigator. When multiple gamepads are connected to a user agent, indices must be assigned on a first-come, first-serve basis, starting at zero. If a gamepad is disconnected, previously assigned indices must not be reassigned to gamepads that continue to be connected. However, if a gamepad is disconnected, and subsequently the same or a different gamepad is then connected, index entries must be reused.
       * @readonly
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The mapping in use for this device. If the user agent has knowledge of the layout of the device, then it should indicate that a mapping is in use by setting this property to a known mapping name. Currently the only known mapping is "standard", which corresponds to the Standard Gamepad layout. If the user agent does not have knowledge of the device layout and is simply providing the controls as represented by the driver in use, then it must set the mapping property to an empty string.
       * @readonly
       */
-    var mapping: String = js.native
+    var mapping: String
     
     /**
       * Last time the data for this gamepad was updated. Timestamp is a monotonically increasing value that allows the author to determine if the axes and button data have been updated from the hardware, relative to a previously saved timestamp.
       * @readonly
       */
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object Gamepad {
     
@@ -102,12 +100,11 @@ object Gamepad {
     }
   }
   
-  @js.native
   trait GamepadButton extends StObject {
     
-    var pressed: Boolean = js.native
+    var pressed: Boolean
     
-    var value: Double = js.native
+    var value: Double
   }
   object GamepadButton {
     
@@ -129,7 +126,9 @@ object Gamepad {
   }
   
   @js.native
-  trait GamepadEvent extends Event {
+  trait GamepadEvent
+    extends StObject
+       with Event {
     
     /**
       * The single gamepad attribute provides access to the associated gamepad data for this event.
@@ -138,11 +137,11 @@ object Gamepad {
     var gamepad: typings.w3cGamepad.Gamepad.Gamepad = js.native
   }
   
-  @js.native
   trait GamepadList
-    extends /* index */ NumberDictionary[typings.w3cGamepad.Gamepad.Gamepad] {
+    extends StObject
+       with /* index */ NumberDictionary[typings.w3cGamepad.Gamepad.Gamepad] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object GamepadList {
     

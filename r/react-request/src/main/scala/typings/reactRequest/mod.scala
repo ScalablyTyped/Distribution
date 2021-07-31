@@ -7,10 +7,13 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-request", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-request", "Fetch")
   @js.native
@@ -24,44 +27,36 @@ object mod {
     def this(props: FetchProps[T], context: js.Any) = this()
   }
   
-  @JSImport("react-request", "clearRequestCache")
-  @js.native
-  def clearRequestCache(): Unit = js.native
+  @scala.inline
+  def clearRequestCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearRequestCache")().asInstanceOf[Unit]
   
-  @JSImport("react-request", "clearResponseCache")
-  @js.native
-  def clearResponseCache(): Unit = js.native
+  @scala.inline
+  def clearResponseCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearResponseCache")().asInstanceOf[Unit]
   
-  @JSImport("react-request", "fetchDedupe")
-  @js.native
-  def fetchDedupe(input: js.Any): js.Promise[ProxyRequest] = js.native
-  @JSImport("react-request", "fetchDedupe")
-  @js.native
-  def fetchDedupe(input: js.Any, init: js.UndefOr[scala.Nothing], dedupeOptions: js.Any): js.Promise[ProxyRequest] = js.native
-  @JSImport("react-request", "fetchDedupe")
-  @js.native
-  def fetchDedupe(input: js.Any, init: js.Any): js.Promise[ProxyRequest] = js.native
-  @JSImport("react-request", "fetchDedupe")
-  @js.native
-  def fetchDedupe(input: js.Any, init: js.Any, dedupeOptions: js.Any): js.Promise[ProxyRequest] = js.native
+  @scala.inline
+  def fetchDedupe(input: js.Any): js.Promise[ProxyRequest] = ^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ProxyRequest]]
+  @scala.inline
+  def fetchDedupe(input: js.Any, init: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
+  @scala.inline
+  def fetchDedupe(input: js.Any, init: js.Any, dedupeOptions: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
+  @scala.inline
+  def fetchDedupe(input: js.Any, init: Unit, dedupeOptions: js.Any): js.Promise[ProxyRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("fetchDedupe")(input.asInstanceOf[js.Any], init.asInstanceOf[js.Any], dedupeOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ProxyRequest]]
   
-  @JSImport("react-request", "getRequestKey")
-  @js.native
-  def getRequestKey(): String = js.native
-  @JSImport("react-request", "getRequestKey")
-  @js.native
-  def getRequestKey(keyOptions: RequestKeyOptions): String = js.native
+  @scala.inline
+  def getRequestKey(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestKey")().asInstanceOf[String]
+  @scala.inline
+  def getRequestKey(keyOptions: RequestKeyOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getRequestKey")(keyOptions.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("react-request", "isRequestInFlight")
-  @js.native
-  def isRequestInFlight(): Boolean = js.native
+  @scala.inline
+  def isRequestInFlight(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequestInFlight")().asInstanceOf[Boolean]
   
   type DoFetch[T] = js.Function1[/* options */ js.UndefOr[DoFetchOptions], js.Promise[FetchResponse[T]]]
   
-  @js.native
-  trait DoFetchOptions extends RequestInit {
+  trait DoFetchOptions
+    extends StObject
+       with RequestInit {
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object DoFetchOptions {
     
@@ -82,16 +77,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait FetchProps[T] extends FetchRequestProps {
+  trait FetchProps[T]
+    extends StObject
+       with FetchRequestProps {
     
-    var afterFetch: js.UndefOr[js.Function1[/* args */ FetchResponse[T], Unit]] = js.native
+    var afterFetch: js.UndefOr[js.Function1[/* args */ FetchResponse[T], Unit]] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps[T], ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* renderProps */ RenderProps[T], ReactNode]] = js.undefined
     
-    var responseType: js.UndefOr[ResponseType] = js.native
+    var responseType: js.UndefOr[ResponseType] = js.undefined
     
-    var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.native
+    var transformData: js.UndefOr[js.Function1[/* data */ js.Any, T]] = js.undefined
   }
   object FetchProps {
     
@@ -102,7 +98,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FetchPropsMutableBuilder[Self <: FetchProps[_], T] (val x: Self with FetchProps[T]) extends AnyVal {
+    implicit class FetchPropsMutableBuilder[Self <: FetchProps[?], T] (val x: Self & FetchProps[T]) extends AnyVal {
       
       @scala.inline
       def setAfterFetch(value: /* args */ FetchResponse[T] => Unit): Self = StObject.set(x, "afterFetch", js.Any.fromFunction1(value))
@@ -130,12 +126,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait FetchRequestProps extends RequestInit {
+  trait FetchRequestProps
+    extends StObject
+       with RequestInit {
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object FetchRequestProps {
     
@@ -159,35 +156,34 @@ object mod {
     }
   }
   
-  @js.native
   trait FetchResponse[T] extends StObject {
     
-    var data: T | Null = js.native
+    var data: T | Null
     
-    var didUnmount: Boolean = js.native
+    var didUnmount: Boolean
     
-    var error: Error | Null = js.native
+    var error: Error | Null
     
-    var failed: Boolean = js.native
+    var failed: Boolean
     
-    var init: js.Any = js.native
+    var init: js.Any
     
-    var requestKey: String = js.native
+    var requestKey: String
     
-    var response: Response | Null = js.native
+    var response: Response | Null
     
-    var url: String = js.native
+    var url: String
   }
   object FetchResponse {
     
     @scala.inline
     def apply[T](didUnmount: Boolean, failed: Boolean, init: js.Any, requestKey: String, url: String): FetchResponse[T] = {
-      val __obj = js.Dynamic.literal(didUnmount = didUnmount.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], requestKey = requestKey.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(didUnmount = didUnmount.asInstanceOf[js.Any], failed = failed.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], requestKey = requestKey.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], data = null, error = null, response = null)
       __obj.asInstanceOf[FetchResponse[T]]
     }
     
     @scala.inline
-    implicit class FetchResponseMutableBuilder[Self <: FetchResponse[_], T] (val x: Self with FetchResponse[T]) extends AnyVal {
+    implicit class FetchResponseMutableBuilder[Self <: FetchResponse[?], T] (val x: Self & FetchResponse[T]) extends AnyVal {
       
       @scala.inline
       def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -224,12 +220,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ProxyRequest extends StObject {
     
-    var requestKey: String = js.native
+    var requestKey: String
     
-    var res: Response = js.native
+    var res: Response
   }
   object ProxyRequest {
     
@@ -250,14 +245,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait RenderProps[T] extends FetchResponse[T] {
+  trait RenderProps[T]
+    extends StObject
+       with FetchResponse[T] {
     
-    var doFetch: DoFetch[T] = js.native
+    var doFetch: DoFetch[T]
     
-    var fetching: Boolean = js.native
+    var fetching: Boolean
     
-    var requestName: String = js.native
+    var requestName: String
   }
   object RenderProps {
     
@@ -272,12 +268,12 @@ object mod {
       requestName: String,
       url: String
     ): RenderProps[T] = {
-      val __obj = js.Dynamic.literal(didUnmount = didUnmount.asInstanceOf[js.Any], doFetch = js.Any.fromFunction1(doFetch), failed = failed.asInstanceOf[js.Any], fetching = fetching.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], requestKey = requestKey.asInstanceOf[js.Any], requestName = requestName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(didUnmount = didUnmount.asInstanceOf[js.Any], doFetch = js.Any.fromFunction1(doFetch), failed = failed.asInstanceOf[js.Any], fetching = fetching.asInstanceOf[js.Any], init = init.asInstanceOf[js.Any], requestKey = requestKey.asInstanceOf[js.Any], requestName = requestName.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], data = null, error = null, response = null)
       __obj.asInstanceOf[RenderProps[T]]
     }
     
     @scala.inline
-    implicit class RenderPropsMutableBuilder[Self <: RenderProps[_], T] (val x: Self with RenderProps[T]) extends AnyVal {
+    implicit class RenderPropsMutableBuilder[Self <: RenderProps[?], T] (val x: Self & RenderProps[T]) extends AnyVal {
       
       @scala.inline
       def setDoFetch(value: /* options */ js.UndefOr[DoFetchOptions] => js.Promise[FetchResponse[T]]): Self = StObject.set(x, "doFetch", js.Any.fromFunction1(value))
@@ -290,16 +286,15 @@ object mod {
     }
   }
   
-  @js.native
   trait RequestKeyOptions extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object RequestKeyOptions {
     

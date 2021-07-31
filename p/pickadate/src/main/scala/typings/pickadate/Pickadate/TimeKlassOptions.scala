@@ -2,22 +2,22 @@ package typings.pickadate.Pickadate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TimeKlassOptions extends KlassOptions {
+trait TimeKlassOptions
+  extends StObject
+     with KlassOptions {
   
   // default 'picker picker--time'
   // List of times
-  var list: js.UndefOr[String] = js.native
+  var list: js.UndefOr[String] = js.undefined
   
   // default 'picker__list'
-  var listItem: js.UndefOr[String] = js.native
+  var listItem: js.UndefOr[String] = js.undefined
   
   // default 'picker__list-item'
   // Time states
-  var viewset: js.UndefOr[String] = js.native
+  var viewset: js.UndefOr[String] = js.undefined
 }
 object TimeKlassOptions {
   

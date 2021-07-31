@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientStorage.gapi.client.storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HmacKeyMetadata extends StObject {
   
   /** The ID of the HMAC Key. */
-  var accessId: js.UndefOr[String] = js.native
+  var accessId: js.UndefOr[String] = js.undefined
   
   /** HTTP 1.1 Entity tag for the HMAC key. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID of the HMAC key, including the Project ID and the Access ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The kind of item this is. For HMAC Key metadata, this is always storage#hmacKeyMetadata. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Project ID owning the service account to which the key authenticates. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** The link to this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The email address of the key's associated service account. */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
   
   /** The state of the key. Can be one of ACTIVE, INACTIVE, or DELETED. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** The creation time of the HMAC key in RFC 3339 format. */
-  var timeCreated: js.UndefOr[String] = js.native
+  var timeCreated: js.UndefOr[String] = js.undefined
   
   /** The last modification time of the HMAC key metadata in RFC 3339 format. */
-  var updated: js.UndefOr[String] = js.native
+  var updated: js.UndefOr[String] = js.undefined
 }
 object HmacKeyMetadata {
   

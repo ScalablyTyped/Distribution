@@ -3,7 +3,6 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * deleted accidentally. The lien is deleted as part of tenant project
   * removal.
   */
-@js.native
 trait SchemaTenantProjectConfig extends StObject {
   
   /**
     * Billing account properties. The billing account must be specified.
     */
-  var billingConfig: js.UndefOr[SchemaBillingConfig] = js.native
+  var billingConfig: js.UndefOr[SchemaBillingConfig] = js.undefined
   
   /**
     * Folder where project in this tenancy unit must be located This folder
@@ -28,17 +26,17 @@ trait SchemaTenantProjectConfig extends StObject {
     * names have the format `folders/{folder_number}` (for example,
     * `folders/123456`).
     */
-  var folder: js.UndefOr[String] = js.native
+  var folder: js.UndefOr[String] = js.undefined
   
   /**
     * Labels that are applied to this project.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Configuration for the IAM service account on the tenant project.
     */
-  var serviceAccountConfig: js.UndefOr[SchemaServiceAccountConfig] = js.native
+  var serviceAccountConfig: js.UndefOr[SchemaServiceAccountConfig] = js.undefined
   
   /**
     * Google Cloud API names of services that are activated on this project
@@ -46,12 +44,12 @@ trait SchemaTenantProjectConfig extends StObject {
     * the request fails. For example:
     * &#39;compute.googleapis.com&#39;,&#39;cloudfunctions.googleapis.com&#39;
     */
-  var services: js.UndefOr[js.Array[String]] = js.native
+  var services: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Describes ownership and policies for the new tenant project. Required.
     */
-  var tenantProjectPolicy: js.UndefOr[SchemaTenantProjectPolicy] = js.native
+  var tenantProjectPolicy: js.UndefOr[SchemaTenantProjectPolicy] = js.undefined
 }
 object SchemaTenantProjectConfig {
   

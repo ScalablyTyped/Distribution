@@ -1,10 +1,11 @@
 package typings.sentryBrowser
 
 import typings.sentryBrowser.anon.PartialTryCatchOptions
+import typings.sentryTypes.eventprocessorMod.EventProcessor
+import typings.sentryTypes.hubMod.Hub
 import typings.sentryTypes.integrationMod.Integration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trycatchMod {
@@ -14,7 +15,9 @@ object trycatchMod {
   /**
     * @inheritDoc
     */
-  class TryCatch () extends Integration {
+  class TryCatch ()
+    extends StObject
+       with Integration {
     def this(options: PartialTryCatchOptions) = this()
     
     /** JSDoc */
@@ -33,10 +36,25 @@ object trycatchMod {
     var _wrapXHR: js.Any = js.native
     
     /**
+      * Returns {@link IntegrationClass.id}
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
       * Wrap timer functions and event targets to catch errors
       * and provide better metadata.
       */
     def setupOnce(): Unit = js.native
+    /**
+      * Sets the integration up only once.
+      * This takes no options on purpose, options should be passed in the constructor
+      */
+    /* CompleteClass */
+    override def setupOnce(
+      addGlobalEventProcessor: js.Function1[/* callback */ EventProcessor, Unit],
+      getCurrentHub: js.Function0[Hub]
+    ): Unit = js.native
   }
   /* static members */
   object TryCatch {
@@ -56,18 +74,17 @@ object trycatchMod {
   }
   
   /** JSDoc */
-  @js.native
   trait TryCatchOptions extends StObject {
     
-    var XMLHttpRequest: Boolean = js.native
+    var XMLHttpRequest: Boolean
     
-    var eventTarget: Boolean | js.Array[String] = js.native
+    var eventTarget: Boolean | js.Array[String]
     
-    var requestAnimationFrame: Boolean = js.native
+    var requestAnimationFrame: Boolean
     
-    var setInterval: Boolean = js.native
+    var setInterval: Boolean
     
-    var setTimeout: Boolean = js.native
+    var setTimeout: Boolean
   }
   object TryCatchOptions {
     

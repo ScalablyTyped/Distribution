@@ -20,16 +20,32 @@ import typings.iotaLibJs.iotaLibJsStrings.udp
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("iota.lib.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends IotaClass {
+  class ^ protected ()
+    extends StObject
+       with IotaClass {
     def this(settings: Host) = this()
     def this(settings: Provider) = this()
+    
+    /* CompleteClass */
+    var api: IotaApi = js.native
+    
+    /* CompleteClass */
+    var multisig: IotaMultisig = js.native
+    
+    /* CompleteClass */
+    var utils: IotaUtils = js.native
+    
+    /* CompleteClass */
+    var valid: IotaValid = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
   }
   
   /* Rewritten from type alias, can be one of: 
@@ -62,16 +78,15 @@ object mod {
     def i: typings.iotaLibJs.iotaLibJsStrings.i = "i".asInstanceOf[typings.iotaLibJs.iotaLibJsStrings.i]
   }
   
-  @js.native
   trait InputObject extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var balance: Double = js.native
+    var balance: Double
     
-    var keyIndex: Double = js.native
+    var keyIndex: Double
     
-    var security: Security = js.native
+    var security: Security
   }
   object InputObject {
     
@@ -102,7 +117,9 @@ object mod {
   // iota.api
   //
   @js.native
-  trait IotaApi extends IriApi {
+  trait IotaApi
+    extends StObject
+       with IriApi {
     
     def broadcastAndStore(trytes: js.Array[String]): Unit = js.native
     def broadcastAndStore(
@@ -122,7 +139,7 @@ object mod {
     def getAccountData(seed: String): Unit = js.native
     def getAccountData(
       seed: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* response */ Balance, Unit]
     ): Unit = js.native
     def getAccountData(seed: String, options: typings.iotaLibJs.anon.Security): Unit = js.native
@@ -141,7 +158,7 @@ object mod {
     def getInputs(seed: String): Unit = js.native
     def getInputs(
       seed: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* response */ Inputs, Unit]
     ): Unit = js.native
     def getInputs(seed: String, options: End): Unit = js.native
@@ -156,7 +173,7 @@ object mod {
     def getNewAddress(seed: String): Unit = js.native
     def getNewAddress(
       seed: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* response */ String | js.Array[String], Unit]
     ): Unit = js.native
     def getNewAddress(seed: String, options: Checksum): Unit = js.native
@@ -175,7 +192,7 @@ object mod {
     def getTransfers(seed: String): Unit = js.native
     def getTransfers(
       seed: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* transfers */ js.Array[js.Array[TransactionObject]], Unit]
     ): Unit = js.native
     def getTransfers(seed: String, options: InclusionStates): Unit = js.native
@@ -200,7 +217,7 @@ object mod {
     def prepareTransfers(
       seed: String,
       transfers: js.Array[TransferObject],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* response */ Trytes, Unit]
     ): Unit = js.native
     def prepareTransfers(seed: String, transfers: js.Array[TransferObject], options: Address): Unit = js.native
@@ -225,7 +242,7 @@ object mod {
       depth: Double,
       minWeightMagnitude: Double,
       transfers: js.Array[TransferObject],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* error */ Error, /* response */ InputsArray, Unit]
     ): Unit = js.native
     def sendTransfer(
@@ -253,18 +270,17 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait IotaClass extends StObject {
     
-    var api: IotaApi = js.native
+    var api: IotaApi
     
-    var multisig: IotaMultisig = js.native
+    var multisig: IotaMultisig
     
-    var utils: IotaUtils = js.native
+    var utils: IotaUtils
     
-    var valid: IotaValid = js.native
+    var valid: IotaValid
     
-    var version: String = js.native
+    var version: String
   }
   object IotaClass {
     
@@ -339,13 +355,13 @@ object mod {
   trait IotaUtils extends StObject {
     
     def addChecksum(inputValue: String): String = js.native
-    def addChecksum(inputValue: String, checksumLength: js.UndefOr[scala.Nothing], isAddress: Boolean): String = js.native
     def addChecksum(inputValue: String, checksumLength: Double): String = js.native
     def addChecksum(inputValue: String, checksumLength: Double, isAddress: Boolean): String = js.native
+    def addChecksum(inputValue: String, checksumLength: Unit, isAddress: Boolean): String = js.native
     def addChecksum(inputValue: js.Array[String]): js.Array[String] = js.native
-    def addChecksum(inputValue: js.Array[String], checksumLength: js.UndefOr[scala.Nothing], isAddress: Boolean): js.Array[String] = js.native
     def addChecksum(inputValue: js.Array[String], checksumLength: Double): js.Array[String] = js.native
     def addChecksum(inputValue: js.Array[String], checksumLength: Double, isAddress: Boolean): js.Array[String] = js.native
+    def addChecksum(inputValue: js.Array[String], checksumLength: Unit, isAddress: Boolean): js.Array[String] = js.native
     
     def categorizeTransfers(transfers: js.Array[TransactionObject], addresses: js.Array[String]): Received = js.native
     
@@ -411,13 +427,12 @@ object mod {
   //
   // iota.api
   //
-  @js.native
   trait IriApi extends StObject {
     
     def addNeighbors(
       uris: js.Array[String],
       callback: js.Function2[/* error */ Error, /* addedNeighbors */ Double, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def attachToTangle(
       trunkTransaction: String,
@@ -425,54 +440,54 @@ object mod {
       minWeightMagnitude: Double,
       trytes: js.Array[String],
       callback: js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]
-    ): Unit = js.native
+    ): Unit
     
     def broadcastTransactions(
       trytes: js.Array[String],
       callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def findTransactions(
       searchValues: Addresses,
       callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]
-    ): Unit = js.native
+    ): Unit
     
     def getBalances(
       addresses: js.Array[String],
       treshold: Double,
       callback: js.Function2[/* error */ Error, /* response */ Balances, Unit]
-    ): Unit = js.native
+    ): Unit
     
     def getInclusionStates(
       transactions: js.Array[String],
       tips: js.Array[String],
       callback: js.Function2[/* error */ Error, /* states */ js.Array[Boolean], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def getNeighbors(callback: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit]): Unit = js.native
+    def getNeighbors(callback: js.Function2[/* error */ Error, /* neighbors */ js.Array[Neighbor], Unit]): Unit
     
-    def getNodeInfo(callback: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit]): Unit = js.native
+    def getNodeInfo(callback: js.Function2[/* error */ Error, /* info */ NodeInfo, Unit]): Unit
     
-    def getTips(callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]): Unit = js.native
+    def getTips(callback: js.Function2[/* error */ Error, /* hashes */ js.Array[String], Unit]): Unit
     
-    def getTransactionsToApprove(depth: Double, callback: js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]): Unit = js.native
+    def getTransactionsToApprove(depth: Double, callback: js.Function2[/* error */ Error, /* response */ BranchTransaction, Unit]): Unit
     
     def getTrytes(
       hashes: js.Array[String],
       callback: js.Function2[/* error */ Error, /* trytes */ js.Array[String], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def interruptAttachingToTangle(callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]): Unit = js.native
+    def interruptAttachingToTangle(callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]): Unit
     
     def removeNeighbors(
       uris: js.Array[String],
       callback: js.Function2[/* error */ Error, /* removedNeighbors */ js.Array[Double], Unit]
-    ): Unit = js.native
+    ): Unit
     
     def storeTransactions(
       trytes: js.Array[String],
       callback: js.Function2[/* error */ Error, /* response */ js.Object, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object IriApi {
     
@@ -563,22 +578,21 @@ object mod {
     def absorb(digest: js.Array[String]): MultisigAddress = js.native
   }
   
-  @js.native
   trait Neighbor extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var connectionType: udp | tcp = js.native
+    var connectionType: udp | tcp
     
-    var numberOfAllTransactions: Double = js.native
+    var numberOfAllTransactions: Double
     
-    var numberOfInvalidTransactions: Double = js.native
+    var numberOfInvalidTransactions: Double
     
-    var numberOfNewTransactions: Double = js.native
+    var numberOfNewTransactions: Double
     
-    var numberOfRandomTransactionRequests: Double = js.native
+    var numberOfRandomTransactionRequests: Double
     
-    var numberOfSentTransactions: Double = js.native
+    var numberOfSentTransactions: Double
   }
   object Neighbor {
     
@@ -622,42 +636,41 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeInfo extends StObject {
     
-    var appName: String = js.native
+    var appName: String
     
-    var appVersion: String = js.native
+    var appVersion: String
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var jreAvailableProcessors: Double = js.native
+    var jreAvailableProcessors: Double
     
-    var jreFreeMemory: Double = js.native
+    var jreFreeMemory: Double
     
-    var jreMaxMemory: Double = js.native
+    var jreMaxMemory: Double
     
-    var jreTotalMemory: Double = js.native
+    var jreTotalMemory: Double
     
-    var jreVersion: String = js.native
+    var jreVersion: String
     
-    var latestMilestone: String = js.native
+    var latestMilestone: String
     
-    var latestMilestoneIndex: Double = js.native
+    var latestMilestoneIndex: Double
     
-    var latestSolidSubtangleMilestone: String = js.native
+    var latestSolidSubtangleMilestone: String
     
-    var latestSolidSubtangleMilestoneIndex: Double = js.native
+    var latestSolidSubtangleMilestoneIndex: Double
     
-    var neighbors: Double = js.native
+    var neighbors: Double
     
-    var packetsQueueSize: Double = js.native
+    var packetsQueueSize: Double
     
-    var time: Double = js.native
+    var time: Double
     
-    var tips: Double = js.native
+    var tips: Double
     
-    var transactionsToRequest: Double = js.native
+    var transactionsToRequest: Double
   }
   object NodeInfo {
     
@@ -765,38 +778,37 @@ object mod {
   //
   // Objects
   //
-  @js.native
   trait TransactionObject extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var attachmentTimestamp: Double = js.native
+    var attachmentTimestamp: Double
     
-    var attachmentTimestampLowerBound: Double = js.native
+    var attachmentTimestampLowerBound: Double
     
-    var attachmentTimestampUpperBound: Double = js.native
+    var attachmentTimestampUpperBound: Double
     
-    var branchTransaction: String = js.native
+    var branchTransaction: String
     
-    var bundle: Double = js.native
+    var bundle: Double
     
-    var currentIndex: Double = js.native
+    var currentIndex: Double
     
-    var hash: String = js.native
+    var hash: String
     
-    var lastIndex: Double = js.native
+    var lastIndex: Double
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var signatureMessageFragment: String = js.native
+    var signatureMessageFragment: String
     
-    var tag: String = js.native
+    var tag: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var trunkTransaction: String = js.native
+    var trunkTransaction: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object TransactionObject {
     
@@ -872,16 +884,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TransferObject extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var message: String = js.native
+    var message: String
     
-    var tag: String = js.native
+    var tag: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object TransferObject {
     

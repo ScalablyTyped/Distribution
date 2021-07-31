@@ -2,30 +2,30 @@ package typings.xmlcreate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlProcInstMod {
   
   @JSImport("xmlcreate/lib/nodes/XmlProcInst", JSImport.Default)
   @js.native
-  class default[Parent] protected () extends XmlProcInst[Parent] {
+  class default[Parent] protected ()
+    extends StObject
+       with XmlProcInst[Parent] {
     def this(parent: Parent, validation: Boolean, options: IXmlProcInstOptions) = this()
   }
   
-  @js.native
   trait IXmlProcInstOptions extends StObject {
     
     /**
       * The data of the processing instruction, or undefined if there is no
       * content.
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /**
       * The target of the processing instruction.
       */
-    var target: String = js.native
+    var target: String
   }
   object IXmlProcInstOptions {
     

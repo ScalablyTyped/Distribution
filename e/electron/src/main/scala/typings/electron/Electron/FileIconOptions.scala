@@ -5,13 +5,11 @@ import typings.electron.electronStrings.normal
 import typings.electron.electronStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileIconOptions extends StObject {
   
-  var size: small | normal | large = js.native
+  var size: small | normal | large
 }
 object FileIconOptions {
   

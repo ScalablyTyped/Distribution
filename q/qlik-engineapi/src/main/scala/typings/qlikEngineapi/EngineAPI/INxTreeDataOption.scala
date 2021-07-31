@@ -2,26 +2,24 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxTreeDataOption extends StObject {
   
   /**
     * Maximum number of nodes in the tree. If this limit is exceeded, no nodes are returned. All nodes are counted.
     */
-  var MaxNbrOfNodes: Double = js.native
+  var MaxNbrOfNodes: Double
   
   /**
     * Filters out complete dimensions from the fetched tree.
     */
-  var TreeLevels: INxPageTreeLevel = js.native
+  var TreeLevels: INxPageTreeLevel
   
   /**
     * Defines areas of the tree to be fetched. Areas must be defined left to right.
     */
-  var TreeNodes: js.Array[INxPageTreeNode] = js.native
+  var TreeNodes: js.Array[INxPageTreeNode]
 }
 object INxTreeDataOption {
   

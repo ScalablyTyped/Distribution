@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectReference extends StObject {
   
   /** True if it is intended that this reference form a circularity */
-  var circular: js.UndefOr[Boolean] = js.native
+  var circular: js.UndefOr[Boolean] = js.undefined
   
   /** The path as the user originally wrote it */
-  var originalPath: js.UndefOr[java.lang.String] = js.native
+  var originalPath: js.UndefOr[java.lang.String] = js.undefined
   
   /** A normalized path on disk */
-  var path: java.lang.String = js.native
+  var path: java.lang.String
   
   /** True if the output of this reference should be prepended to the output of this project. Only valid for --outFile compilations */
-  var prepend: js.UndefOr[Boolean] = js.native
+  var prepend: js.UndefOr[Boolean] = js.undefined
 }
 object ProjectReference {
   

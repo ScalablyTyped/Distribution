@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource")
@@ -64,9 +63,8 @@ object GridXPathSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.create")
-  @js.native
-  def create(model: IModel): GridXPathSource = js.native
+  @scala.inline
+  def create(model: IModel): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -77,9 +75,8 @@ object GridXPathSource {
     *  6.0.0 to 8.2.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.createIn")
-  @js.native
-  def createIn(container: EntityWidget): GridXPathSource = js.native
+  @scala.inline
+  def createIn(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -87,9 +84,8 @@ object GridXPathSource {
     * of the parent EntityWidget element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.createInEntityWidgetUnderDataSource")
-  @js.native
-  def createInEntityWidgetUnderDataSource(container: EntityWidget): GridXPathSource = js.native
+  @scala.inline
+  def createInEntityWidgetUnderDataSource(container: EntityWidget): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityWidgetUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /**
     * Creates and returns a new GridXPathSource instance in the SDK and on the server.
@@ -100,9 +96,8 @@ object GridXPathSource {
     *  8.3.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.createInWidgetValueUnderDataSource")
-  @js.native
-  def createInWidgetValueUnderDataSource(container: WidgetValue): GridXPathSource = js.native
+  @scala.inline
+  def createInWidgetValueUnderDataSource(container: WidgetValue): GridXPathSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderDataSource")(container.asInstanceOf[js.Any]).asInstanceOf[GridXPathSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridXPathSource.structureTypeName")

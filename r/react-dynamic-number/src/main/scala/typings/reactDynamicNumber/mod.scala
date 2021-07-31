@@ -17,7 +17,6 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,14 +36,13 @@ object mod {
   type DynamicNumber = Component[DynamicNumberProps, js.Object, js.Any]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'> ]:? react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>[P]} */ @js.native
-  trait DynamicNumberProps extends StObject {
+  - Dropped {[ P in keyof react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'> ]:? react-dynamic-number.react-dynamic-number.Omit<react.react.DetailedHTMLProps<react.react.InputHTMLAttributes<std.HTMLInputElement>, std.HTMLInputElement>, 'ref' | 'value' | 'onChange' | 'placeholder'>[P]} */ trait DynamicNumberProps extends StObject {
     
-    var fraction: js.UndefOr[Double] = js.native
+    var fraction: js.UndefOr[Double] = js.undefined
     
-    var integer: js.UndefOr[Double] = js.native
+    var integer: js.UndefOr[Double] = js.undefined
     
-    var negative: js.UndefOr[Boolean] = js.native
+    var negative: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[
@@ -53,17 +51,17 @@ object mod {
           /* viewValue */ String, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var positive: js.UndefOr[Boolean] = js.native
+    var positive: js.UndefOr[Boolean] = js.undefined
     
-    var separator: js.UndefOr[Dot | Comma] = js.native
+    var separator: js.UndefOr[Dot | Comma] = js.undefined
     
-    var thousand: js.UndefOr[Boolean | Space] = js.native
+    var thousand: js.UndefOr[Boolean | Space] = js.undefined
     
-    var value: js.UndefOr[Double | _empty] = js.native
+    var value: js.UndefOr[Double | _empty] = js.undefined
   }
   object DynamicNumberProps {
     

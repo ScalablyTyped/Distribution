@@ -3,33 +3,33 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ServerEntry extends ResponseEntry {
+trait ServerEntry
+  extends StObject
+     with ResponseEntry {
   
-  var virtualserverAutostart: Double = js.native
+  var virtualserverAutostart: Double
   
-  var virtualserverClientsonline: Double = js.native
+  var virtualserverClientsonline: Double
   
-  var virtualserverId: String = js.native
+  var virtualserverId: String
   
-  var virtualserverMachineId: String = js.native
+  var virtualserverMachineId: String
   
-  var virtualserverMaxclients: Double = js.native
+  var virtualserverMaxclients: Double
   
-  var virtualserverName: String = js.native
+  var virtualserverName: String
   
-  var virtualserverPort: Double = js.native
+  var virtualserverPort: Double
   
-  var virtualserverQueryclientsonline: Double = js.native
+  var virtualserverQueryclientsonline: Double
   
-  var virtualserverStatus: String = js.native
+  var virtualserverStatus: String
   
-  var virtualserverUniqueIdentifier: String = js.native
+  var virtualserverUniqueIdentifier: String
   
-  var virtualserverUptime: Double = js.native
+  var virtualserverUptime: Double
 }
 object ServerEntry {
   

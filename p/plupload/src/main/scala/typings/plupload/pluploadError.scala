@@ -2,17 +2,17 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait pluploadError extends pluploadResponse {
+trait pluploadError
+  extends StObject
+     with pluploadResponse {
   
-  var code: Double = js.native
+  var code: Double
   
-  var file: js.Any = js.native
+  var file: js.Any
   
-  var message: String = js.native
+  var message: String
 }
 object pluploadError {
   

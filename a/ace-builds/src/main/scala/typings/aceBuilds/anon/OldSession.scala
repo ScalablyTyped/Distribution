@@ -3,15 +3,13 @@ package typings.aceBuilds.anon
 import typings.aceBuilds.mod.Ace.EditSession
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OldSession extends StObject {
   
-  var oldSession: EditSession = js.native
+  var oldSession: EditSession
   
-  var session: EditSession = js.native
+  var session: EditSession
 }
 object OldSession {
   

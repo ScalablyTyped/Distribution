@@ -4,23 +4,21 @@ import typings.std.MediaKeySession
 import typings.std.MediaKeyStatusMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionToken extends StObject {
   
-  def getExpirationTime(): Double = js.native
+  def getExpirationTime(): Double
   
-  def getKeyStatuses(): MediaKeyStatusMap = js.native
+  def getKeyStatuses(): MediaKeyStatusMap
   
-  def getSessionID(): String = js.native
+  def getSessionID(): String
   
-  def getSessionType(): String = js.native
+  def getSessionType(): String
   
-  var initData: js.Any = js.native
+  var initData: js.Any
   
-  var session: MediaKeySession = js.native
+  var session: MediaKeySession
 }
 object SessionToken {
   

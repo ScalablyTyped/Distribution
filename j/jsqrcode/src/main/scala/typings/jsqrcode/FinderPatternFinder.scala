@@ -3,41 +3,39 @@ package typings.jsqrcode
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinderPatternFinder extends StObject {
   
-  val CrossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+  val CrossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double]
   
-  def centerFromEnd(stateCount: js.Tuple5[Double, Double, Double, Double, Double], end: Double): Double = js.native
+  def centerFromEnd(stateCount: js.Tuple5[Double, Double, Double, Double, Double], end: Double): Double
   
-  def crossCheckHorizontal(startJ: Double, centerI: Double, maxCount: Double, originalStateCountTotal: Double): Double = js.native
+  def crossCheckHorizontal(startJ: Double, centerI: Double, maxCount: Double, originalStateCountTotal: Double): Double
   
-  var crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double] = js.native
+  var crossCheckStateCount: js.Tuple5[Double, Double, Double, Double, Double]
   
-  def crossCheckVertical(startI: Double, centerJ: Double, maxCount: Double, originalStateCountTotal: Double): Double = js.native
+  def crossCheckVertical(startI: Double, centerJ: Double, maxCount: Double, originalStateCountTotal: Double): Double
   
-  def findFinderPattern(image: Uint8Array): FinderPatternInfo = js.native
+  def findFinderPattern(image: Uint8Array): FinderPatternInfo
   
-  def findRowSkip(): Double = js.native
+  def findRowSkip(): Double
   
-  def foundPatternCross(stateCount: js.Tuple5[Double, Double, Double, Double, Double]): Boolean = js.native
+  def foundPatternCross(stateCount: js.Tuple5[Double, Double, Double, Double, Double]): Boolean
   
-  def handlePossibleCenter(stateCount: js.Tuple5[Double, Double, Double, Double, Double], i: Double, j: Double): Boolean = js.native
+  def handlePossibleCenter(stateCount: js.Tuple5[Double, Double, Double, Double, Double], i: Double, j: Double): Boolean
   
-  var hasSkipped: Boolean = js.native
+  var hasSkipped: Boolean
   
-  def haveMultiplyConfirmedCenters(): Boolean = js.native
+  def haveMultiplyConfirmedCenters(): Boolean
   
-  var image: Uint8Array = js.native
+  var image: Uint8Array
   
-  var possibleCenters: js.Array[FinderPattern] = js.native
+  var possibleCenters: js.Array[FinderPattern]
   
-  var resultPointCallback: ResultPointCallback = js.native
+  var resultPointCallback: ResultPointCallback
   
-  def selectBestPatterns(): Double = js.native
+  def selectBestPatterns(): Double
 }
 object FinderPatternFinder {
   

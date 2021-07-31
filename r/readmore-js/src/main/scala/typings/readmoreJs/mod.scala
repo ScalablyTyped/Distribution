@@ -6,14 +6,15 @@ import typings.std.Element
 import typings.std.NodeList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("readmore-js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Readmore {
+  class ^ protected ()
+    extends StObject
+       with Readmore {
     def this(element: String) = this()
     def this(element: Element) = this()
     def this(element: NodeList) = this()
@@ -22,45 +23,44 @@ object mod {
     def this(element: NodeList, options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
     // called once per block during initilization after Readmore.js has processed the block
     var afterToggle: js.UndefOr[
         js.Function3[/* trigger */ Element, /* element */ Element, /* expanded */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var beforeToggle: js.UndefOr[
         js.Function3[/* trigger */ Element, /* element */ Element, /* expanded */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // insert required CSS dynamically, set this to false if you include the necessary CSS in a stylesheet
-    var blockCSS: js.UndefOr[String] = js.native
+    var blockCSS: js.UndefOr[String] = js.undefined
     
     // called after a more or less link is clicked, but before the block is collapsed or expanded
-    var blockProcessed: js.UndefOr[js.Function2[/* element */ Element, /* collapsable */ Boolean, Unit]] = js.native
+    var blockProcessed: js.UndefOr[js.Function2[/* element */ Element, /* collapsable */ Boolean, Unit]] = js.undefined
     
     // 100 in milliseconds
-    var collapsedHeight: js.UndefOr[Double] = js.native
+    var collapsedHeight: js.UndefOr[Double] = js.undefined
     
     // HTML string for the "less" toggle link; also accepts a callback function that returns an HTML string
-    var embedCSS: js.UndefOr[Boolean] = js.native
+    var embedCSS: js.UndefOr[Boolean] = js.undefined
     
     // 200 in pixels
-    var heightMargin: js.UndefOr[Double] = js.native
+    var heightMargin: js.UndefOr[Double] = js.undefined
     
     // HTML string for the "more" toggle link; also accepts a callback function that returns an HTML string
-    var lessLink: js.UndefOr[(js.Function1[/* element */ Element, String]) | String] = js.native
+    var lessLink: js.UndefOr[(js.Function1[/* element */ Element, String]) | String] = js.undefined
     
     // 16 in pixels, avoids collapsing blocks that are only slightly larger than collapsedHeight
-    var moreLink: js.UndefOr[(js.Function1[/* element */ Element, String]) | String] = js.native
+    var moreLink: js.UndefOr[(js.Function1[/* element */ Element, String]) | String] = js.undefined
     
-    var sourceOrder: js.UndefOr[after | before] = js.native
+    var sourceOrder: js.UndefOr[after | before] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
     
     // sets the styling of the blocks, ignored if embedCSS is false
-    var startOpen: js.UndefOr[Boolean] = js.native
+    var startOpen: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

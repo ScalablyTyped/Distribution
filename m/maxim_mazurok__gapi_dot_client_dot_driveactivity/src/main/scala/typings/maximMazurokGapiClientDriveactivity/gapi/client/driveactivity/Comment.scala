@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /** A change on an assignment. */
-  var assignment: js.UndefOr[Assignment] = js.native
+  var assignment: js.UndefOr[Assignment] = js.undefined
   
   /** Users who are mentioned in this comment. */
-  var mentionedUsers: js.UndefOr[js.Array[User]] = js.native
+  var mentionedUsers: js.UndefOr[js.Array[User]] = js.undefined
   
   /** A change on a regular posted comment. */
-  var post: js.UndefOr[Post] = js.native
+  var post: js.UndefOr[Post] = js.undefined
   
   /** A change on a suggestion. */
-  var suggestion: js.UndefOr[Suggestion] = js.native
+  var suggestion: js.UndefOr[Suggestion] = js.undefined
 }
 object Comment {
   

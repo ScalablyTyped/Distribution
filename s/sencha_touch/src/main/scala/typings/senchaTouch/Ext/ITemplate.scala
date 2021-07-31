@@ -2,11 +2,11 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITemplate extends IBase {
+trait ITemplate
+  extends StObject
+     with IBase {
   
   /** [Method] Applies the supplied values to the template and appends the new node s to the specified el
     * @param el String/HTMLElement/Ext.Element The context element.
@@ -19,16 +19,16 @@ trait ITemplate extends IBase {
       /* el */ js.UndefOr[js.Any], 
       /* values */ js.UndefOr[js.Any], 
       /* returnElement */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns an HTML fragment of this template with the specified values applied
     * @param values Object/Array The template values. Can be an array if your params are numeric:  var tpl = new Ext.Template('Name: {0}, Age: {1}'); tpl.apply(['John', 25]); or an object:  var tpl = new Ext.Template('Name: {name}, Age: {age}'); tpl.apply({name: 'John', age: 25});
     * @returns String The HTML fragment.
     */
   @JSName("apply")
-  var apply: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.native
+  var apply: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
   
   /** [Method] Appends the result of this template to the provided output array
     * @param values Object/Array The template values. See apply.
@@ -37,24 +37,24 @@ trait ITemplate extends IBase {
     */
   var applyOut: js.UndefOr[
     js.Function2[/* values */ js.UndefOr[js.Any], /* out */ js.UndefOr[Array], Array]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for apply
     * @param values Object/Array The template values. Can be an array if your params are numeric:  var tpl = new Ext.Template('Name: {0}, Age: {1}'); tpl.apply(['John', 25]); or an object:  var tpl = new Ext.Template('Name: {name}, Age: {age}'); tpl.apply({name: 'John', age: 25});
     * @returns String The HTML fragment.
     */
-  var applyTemplate: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.native
+  var applyTemplate: js.UndefOr[js.Function1[/* values */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
   
   /** [Method] Compiles the template into an internal function eliminating the RegEx overhead
     * @returns Ext.Template this
     */
-  var compile: js.UndefOr[js.Function0[this.type]] = js.native
+  var compile: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var compiled: js.UndefOr[Boolean] = js.native
+  var compiled: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var disableFormats: js.UndefOr[Boolean] = js.native
+  var disableFormats: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Applies the supplied values to the template and inserts the new node s after el
     * @param el String/HTMLElement/Ext.Element The context element.
@@ -67,9 +67,9 @@ trait ITemplate extends IBase {
       /* el */ js.UndefOr[js.Any], 
       /* values */ js.UndefOr[js.Any], 
       /* returnElement */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Applies the supplied values to the template and inserts the new node s before el
     * @param el String/HTMLElement/Ext.Element The context element.
@@ -82,9 +82,9 @@ trait ITemplate extends IBase {
       /* el */ js.UndefOr[js.Any], 
       /* values */ js.UndefOr[js.Any], 
       /* returnElement */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Applies the supplied values to the template and inserts the new node s as the first child of el
     * @param el String/HTMLElement/Ext.Element The context element.
@@ -97,12 +97,12 @@ trait ITemplate extends IBase {
       /* el */ js.UndefOr[js.Any], 
       /* values */ js.UndefOr[js.Any], 
       /* returnElement */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Boolean) */
-  var isTemplate: js.UndefOr[Boolean] = js.native
+  var isTemplate: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Applies the supplied values to the template and overwrites the content of el with the new node s
     * @param el String/HTMLElement/Ext.Element The context element.
@@ -115,9 +115,9 @@ trait ITemplate extends IBase {
       /* el */ js.UndefOr[js.Any], 
       /* values */ js.UndefOr[js.Any], 
       /* returnElement */ js.UndefOr[Boolean], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Sets the HTML used as the template and optionally compiles it
     * @param html String
@@ -130,7 +130,7 @@ trait ITemplate extends IBase {
       /* compile */ js.UndefOr[Boolean], 
       this.type
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ITemplate {
   
@@ -145,7 +145,7 @@ object ITemplate {
     
     @scala.inline
     def setAppend(
-      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "append", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -189,7 +189,7 @@ object ITemplate {
     
     @scala.inline
     def setInsertAfter(
-      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "insertAfter", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -197,7 +197,7 @@ object ITemplate {
     
     @scala.inline
     def setInsertBefore(
-      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "insertBefore", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -205,7 +205,7 @@ object ITemplate {
     
     @scala.inline
     def setInsertFirst(
-      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "insertFirst", js.Any.fromFunction3(value))
     
     @scala.inline
@@ -219,7 +219,7 @@ object ITemplate {
     
     @scala.inline
     def setOverwrite(
-      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => _
+      value: (/* el */ js.UndefOr[js.Any], /* values */ js.UndefOr[js.Any], /* returnElement */ js.UndefOr[Boolean]) => js.Any
     ): Self = StObject.set(x, "overwrite", js.Any.fromFunction3(value))
     
     @scala.inline

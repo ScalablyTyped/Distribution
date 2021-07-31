@@ -12,18 +12,18 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistanceMeasurement2DProperties extends WidgetProperties {
+trait DistanceMeasurement2DProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * The widget's default CSS icon class.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#iconClass)
     */
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.
@@ -32,7 +32,7 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
     */
   var unit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the distance values.
@@ -43,21 +43,21 @@ trait DistanceMeasurement2DProperties extends WidgetProperties {
     js.Array[
       metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#view)
     */
-  var view: js.UndefOr[MapViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties] = js.undefined
   
   /**
     * The view model for this widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-DistanceMeasurement2D.html#viewModel)
     */
-  var viewModel: js.UndefOr[DistanceMeasurement2DViewModelProperties] = js.native
+  var viewModel: js.UndefOr[DistanceMeasurement2DViewModelProperties] = js.undefined
 }
 object DistanceMeasurement2DProperties {
   

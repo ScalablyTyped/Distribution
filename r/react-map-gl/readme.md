@@ -4,15 +4,15 @@
 Typings are for version 5.2
 
 ## Library description:
-A React wrapper for MapboxGL-js and overlay API.
+React components for Mapbox GL JS-compatible libraries
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-map-gl |
 | Keywords           | mapbox, mapbox-gl, react, react-mapbox-gl, react mapbox |
-| # releases         | 77 |
-| # dependents       | 97 |
-| # downloads        | 3145127 |
+| # releases         | 79 |
+| # dependents       | 110 |
+| # downloads        | 4201223 |
 | # stars            | 3 |
 
 ## Links

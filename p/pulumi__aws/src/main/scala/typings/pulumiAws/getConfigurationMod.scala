@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getConfigurationMod {
   
-  @JSImport("@pulumi/aws/msk/getConfiguration", "getConfiguration")
+  @JSImport("@pulumi/aws/msk/getConfiguration", JSImport.Namespace)
   @js.native
-  def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = js.native
-  @JSImport("@pulumi/aws/msk/getConfiguration", "getConfiguration")
-  @js.native
-  def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getConfiguration(args: GetConfigurationArgs): js.Promise[GetConfigurationResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetConfigurationResult]]
+  @scala.inline
+  def getConfiguration(args: GetConfigurationArgs, opts: InvokeOptions): js.Promise[GetConfigurationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfiguration")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetConfigurationResult]]
+  
   trait GetConfigurationArgs extends StObject {
     
     /**
       * Name of the configuration.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetConfigurationArgs {
     
@@ -39,40 +39,39 @@ object getConfigurationMod {
     }
   }
   
-  @js.native
   trait GetConfigurationResult extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the configuration.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Description of the configuration.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * List of Apache Kafka versions which can use this configuration.
       */
-    val kafkaVersions: js.Array[String] = js.native
+    val kafkaVersions: js.Array[String]
     
     /**
       * Latest revision of the configuration.
       */
-    val latestRevision: Double = js.native
+    val latestRevision: Double
     
-    val name: String = js.native
+    val name: String
     
     /**
       * Contents of the server.properties file.
       */
-    val serverProperties: String = js.native
+    val serverProperties: String
   }
   object GetConfigurationResult {
     

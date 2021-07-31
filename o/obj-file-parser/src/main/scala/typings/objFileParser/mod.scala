@@ -2,7 +2,6 @@ package typings.objFileParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,21 +9,25 @@ object mod {
   /* Class module */
   @JSImport("obj-file-parser", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ObjFileParser {
+  class ^ protected ()
+    extends StObject
+       with ObjFileParser {
     def this(fileContents: js.Any) = this()
     def this(fileContents: js.Any, defaultModelName: js.Any) = this()
+    
+    /* CompleteClass */
+    override def parse(): ObjFile = js.native
   }
   
-  @js.native
   trait Face extends StObject {
     
-    var group: String = js.native
+    var group: String
     
-    var material: js.Any = js.native
+    var material: js.Any
     
-    var smoothingGroup: Double = js.native
+    var smoothingGroup: Double
     
-    var vertices: js.Array[FaceVertex] = js.native
+    var vertices: js.Array[FaceVertex]
   }
   object Face {
     
@@ -54,14 +57,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FaceVertex extends StObject {
     
-    var textureCoordsIndex: Double = js.native
+    var textureCoordsIndex: Double
     
-    var vertexIndex: Double = js.native
+    var vertexIndex: Double
     
-    var vertexNormalIndex: Double = js.native
+    var vertexNormalIndex: Double
   }
   object FaceVertex {
     
@@ -85,17 +87,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ObjFile extends StObject {
     
-    var materialLibraries: js.Array[_] = js.native
+    var materialLibraries: js.Array[js.Any]
     
-    var models: js.Array[ObjModel] = js.native
+    var models: js.Array[ObjModel]
   }
   object ObjFile {
     
     @scala.inline
-    def apply(materialLibraries: js.Array[_], models: js.Array[ObjModel]): ObjFile = {
+    def apply(materialLibraries: js.Array[js.Any], models: js.Array[ObjModel]): ObjFile = {
       val __obj = js.Dynamic.literal(materialLibraries = materialLibraries.asInstanceOf[js.Any], models = models.asInstanceOf[js.Any])
       __obj.asInstanceOf[ObjFile]
     }
@@ -104,7 +105,7 @@ object mod {
     implicit class ObjFileMutableBuilder[Self <: ObjFile] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMaterialLibraries(value: js.Array[_]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
+      def setMaterialLibraries(value: js.Array[js.Any]): Self = StObject.set(x, "materialLibraries", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMaterialLibrariesVarargs(value: js.Any*): Self = StObject.set(x, "materialLibraries", js.Array(value :_*))
@@ -118,10 +119,9 @@ object mod {
   }
   
   /* Class module */
-  @js.native
   trait ObjFileParser extends StObject {
     
-    def parse(): ObjFile = js.native
+    def parse(): ObjFile
   }
   object ObjFileParser {
     
@@ -139,18 +139,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ObjModel extends StObject {
     
-    var faces: js.Array[Face] = js.native
+    var faces: js.Array[Face]
     
-    var name: String = js.native
+    var name: String
     
-    var textureCoords: js.Array[VertexTexture] = js.native
+    var textureCoords: js.Array[VertexTexture]
     
-    var vertexNormals: js.Array[Vertex] = js.native
+    var vertexNormals: js.Array[Vertex]
     
-    var vertices: js.Array[Vertex] = js.native
+    var vertices: js.Array[Vertex]
   }
   object ObjModel {
     
@@ -198,14 +197,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Vertex extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object Vertex {
     
@@ -229,14 +227,13 @@ object mod {
     }
   }
   
-  @js.native
   trait VertexTexture extends StObject {
     
-    var u: Double = js.native
+    var u: Double
     
-    var v: Double = js.native
+    var v: Double
     
-    var w: Double = js.native
+    var w: Double
   }
   object VertexTexture {
     

@@ -4,86 +4,77 @@ import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ssf", "format")
+  @JSImport("ssf", JSImport.Namespace)
   @js.native
-  def format(fmt: String, `val`: js.Any): String = js.native
-  @JSImport("ssf", "format")
-  @js.native
-  def format(fmt: String, `val`: js.Any, opts: js.Any): String = js.native
-  @JSImport("ssf", "format")
-  @js.native
-  def format(fmt: Double, `val`: js.Any): String = js.native
-  @JSImport("ssf", "format")
-  @js.native
-  def format(fmt: Double, `val`: js.Any, opts: js.Any): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ssf", "get_table")
-  @js.native
-  def getTable(): SSFTable = js.native
+  @scala.inline
+  def format(fmt: String, `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: String, `val`: js.Any, opts: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: Double, `val`: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def format(fmt: Double, `val`: js.Any, opts: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(fmt.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ssf", "is_date")
-  @js.native
-  def isDate(fmt: String): Boolean = js.native
+  @scala.inline
+  def getTable(): SSFTable = ^.asInstanceOf[js.Dynamic].applyDynamic("get_table")().asInstanceOf[SSFTable]
   
-  @JSImport("ssf", "load")
-  @js.native
-  def load(fmt: String): Double = js.native
-  @JSImport("ssf", "load")
-  @js.native
-  def load(fmt: String, idx: Double): Double = js.native
+  @scala.inline
+  def isDate(fmt: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is_date")(fmt.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ssf", "load_table")
-  @js.native
-  def loadTable(tbl: SSFTable): Unit = js.native
+  @scala.inline
+  def load(fmt: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(fmt.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def load(fmt: String, idx: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(fmt.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("ssf", "parse_date_code")
-  @js.native
-  def parseDateCode(v: Double): SSFDate = js.native
-  @JSImport("ssf", "parse_date_code")
-  @js.native
-  def parseDateCode(v: Double, opts: js.Any): SSFDate = js.native
+  @scala.inline
+  def loadTable(tbl: SSFTable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("load_table")(tbl.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def parseDateCode(v: Double): SSFDate = ^.asInstanceOf[js.Dynamic].applyDynamic("parse_date_code")(v.asInstanceOf[js.Any]).asInstanceOf[SSFDate]
+  @scala.inline
+  def parseDateCode(v: Double, opts: js.Any): SSFDate = (^.asInstanceOf[js.Dynamic].applyDynamic("parse_date_code")(v.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SSFDate]
   
   @JSImport("ssf", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait SSFDate extends StObject {
     
     /** number of whole days since relevant epoch, 0 <= D */
-    var D: Double = js.native
+    var D: Double
     
     /** integral number of hours since midnight, 0 <= H < 24 */
-    var H: Double = js.native
+    var H: Double
     
     /** integral number of minutes since the last hour, 0 <= M < 60 */
-    var M: Double = js.native
+    var M: Double
     
     /** integral number of seconds since the last minute, 0 <= S < 60 */
-    var S: Double = js.native
+    var S: Double
     
     /** number of seconds since midnight, 0 <= T < 86400 */
-    var T: Double = js.native
+    var T: Double
     
     /** integral day portion, subject to gregorian YMD constraints */
-    var d: Double = js.native
+    var d: Double
     
     /** integral month portion, 1 <= m <= 12 */
-    var m: Double = js.native
+    var m: Double
     
     /** integral day of week (0=Sunday .. 6=Saturday) 0 <= q <= 6 */
-    var q: Double = js.native
+    var q: Double
     
     /** sub-second part of time, 0 <= u < 1 */
-    var u: Double = js.native
+    var u: Double
     
     /** integral year portion, epoch_year <= y */
-    var y: Double = js.native
+    var y: Double
   }
   object SSFDate {
     
@@ -133,5 +124,5 @@ object mod {
     }
   }
   
-  type SSFTable = StringDictionary[String] with NumberDictionary[String]
+  type SSFTable = StringDictionary[String] & NumberDictionary[String]
 }

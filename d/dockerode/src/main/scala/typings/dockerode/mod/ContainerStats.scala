@@ -3,23 +3,21 @@ package typings.dockerode.mod
 import typings.dockerode.anon.Current
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerStats extends StObject {
   
-  var cpu_stats: CPUStats = js.native
+  var cpu_stats: CPUStats
   
-  var memory_stats: MemoryStats = js.native
+  var memory_stats: MemoryStats
   
-  var networks: NetworkStats = js.native
+  var networks: NetworkStats
   
-  var pid_stats: Current = js.native
+  var pid_stats: Current
   
-  var precpu_stats: CPUStats = js.native
+  var precpu_stats: CPUStats
   
-  var read: String = js.native
+  var read: String
 }
 object ContainerStats {
   

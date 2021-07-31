@@ -11,24 +11,23 @@ import typings.superstruct.xtrasMod.InferObjectStruct
 import typings.superstruct.xtrasMod.ObjectSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libUtilitiesMod {
   
-  @JSImport("superstruct/lib/utilities", "assign")
+  @JSImport("superstruct/lib/utilities", JSImport.Namespace)
   @js.native
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */](Structs: js.Tuple2[InferObjectStruct[A], InferObjectStruct[B]]): InferObjectStruct[Assign[A, B]] = js.native
-  @JSImport("superstruct/lib/utilities", "assign")
-  @js.native
-  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */](Structs: js.Tuple3[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C]]): InferObjectStruct[Assign[Assign[A, B], C]] = js.native
-  @JSImport("superstruct/lib/utilities", "assign")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */](Structs: js.Tuple2[InferObjectStruct[A], InferObjectStruct[B]]): InferObjectStruct[Assign[A, B]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[A, B]]]
+  @scala.inline
+  def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */](Structs: js.Tuple3[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C]]): InferObjectStruct[Assign[Assign[A, B], C]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[A, B], C]]]
+  @scala.inline
   def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */](
     Structs: js.Tuple4[InferObjectStruct[A], InferObjectStruct[B], InferObjectStruct[C], InferObjectStruct[D]]
-  ): InferObjectStruct[Assign[Assign[Assign[A, B], C], D]] = js.native
-  @JSImport("superstruct/lib/utilities", "assign")
-  @js.native
+  ): InferObjectStruct[Assign[Assign[Assign[A, B], C], D]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[Assign[A, B], C], D]]]
+  @scala.inline
   def assign[A /* <: ObjectSchema */, B /* <: ObjectSchema */, C /* <: ObjectSchema */, D /* <: ObjectSchema */, E /* <: ObjectSchema */](
     Structs: js.Tuple5[
       InferObjectStruct[A], 
@@ -37,43 +36,44 @@ object libUtilitiesMod {
       InferObjectStruct[D], 
       InferObjectStruct[E]
     ]
-  ): InferObjectStruct[Assign[Assign[Assign[Assign[A, B], C], D], E]] = js.native
+  ): InferObjectStruct[Assign[Assign[Assign[Assign[A, B], C], D], E]] = ^.asInstanceOf[js.Dynamic].applyDynamic("assign")(Structs.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[Assign[Assign[Assign[Assign[A, B], C], D], E]]]
   
-  @JSImport("superstruct/lib/utilities", "dynamic")
-  @js.native
-  def dynamic[T](fn: js.Function2[/* value */ js.Any, /* ctx */ StructContext, Struct[T, _]]): Struct[T, _] = js.native
+  @scala.inline
+  def dynamic[T](fn: js.Function2[/* value */ js.Any, /* ctx */ StructContext, Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("dynamic")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/utilities", "omit")
-  @js.native
-  def omit[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Omit[S, K]] = js.native
+  @scala.inline
+  def `lazy`[T](fn: js.Function0[Struct[T, js.Any]]): Struct[T, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(fn.asInstanceOf[js.Any]).asInstanceOf[Struct[T, js.Any]]
   
-  @JSImport("superstruct/lib/utilities", "partial")
-  @js.native
+  @scala.inline
+  def omit[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Omit[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Omit[S, K]]]
+  
+  @scala.inline
   def partial[S /* <: ObjectSchema */](struct: S): InferObjectStruct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
-    */ typings.superstruct.superstructStrings.partial with TopLevel[S]
-  ] = js.native
-  @JSImport("superstruct/lib/utilities", "partial")
-  @js.native
+    */ typings.superstruct.superstructStrings.partial & TopLevel[S]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
+    */ typings.superstruct.superstructStrings.partial & TopLevel[S]
+  ]]
+  @scala.inline
   def partial[S /* <: ObjectSchema */](struct: InferObjectStruct[S]): InferObjectStruct[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
-    */ typings.superstruct.superstructStrings.partial with TopLevel[S]
-  ] = js.native
+    */ typings.superstruct.superstructStrings.partial & TopLevel[S]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("partial")(struct.asInstanceOf[js.Any]).asInstanceOf[InferObjectStruct[
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof S ]: superstruct.superstruct/lib/struct.Struct<superstruct.superstruct/lib/struct.StructType<S[K]> | undefined, any>}
+    */ typings.superstruct.superstructStrings.partial & TopLevel[S]
+  ]]
   
-  @JSImport("superstruct/lib/utilities", "pick")
-  @js.native
-  def pick[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Pick[S, K]] = js.native
+  @scala.inline
+  def pick[S /* <: ObjectSchema */, K /* <: /* keyof S */ String */](struct: InferObjectStruct[S], keys: js.Array[K]): InferObjectStruct[Pick[S, K]] = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(struct.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[InferObjectStruct[Pick[S, K]]]
   
-  @JSImport("superstruct/lib/utilities", "struct")
-  @js.native
+  @scala.inline
   def struct[T](
     name: String,
     validator: js.Function2[/* value */ js.Any, /* context */ StructContext, StructResult]
-  ): Struct[T, Null] = js.native
-  
-  @JSImport("superstruct/lib/utilities", "lazy")
-  @js.native
-  def `lazy`[T](fn: js.Function0[Struct[T, _]]): Struct[T, _] = js.native
+  ): Struct[T, Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("struct")(name.asInstanceOf[js.Any], validator.asInstanceOf[js.Any])).asInstanceOf[Struct[T, Null]]
 }

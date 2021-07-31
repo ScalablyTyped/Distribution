@@ -3,15 +3,13 @@ package typings.primereact.anon
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Files extends StObject {
   
-  var files: js.Any = js.native
+  var files: js.Any
   
-  var xhr: XMLHttpRequest = js.native
+  var xhr: XMLHttpRequest
 }
 object Files {
   

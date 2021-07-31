@@ -2,21 +2,19 @@ package typings.awsSdk.codeguruprofilerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPolicyResponse extends StObject {
   
   /**
     * The JSON-formatted resource-based policy attached to the ProfilingGroup.
     */
-  var policy: String = js.native
+  var policy: String
   
   /**
     * A unique identifier for the current revision of the returned policy.
     */
-  var revisionId: RevisionId = js.native
+  var revisionId: RevisionId
 }
 object GetPolicyResponse {
   

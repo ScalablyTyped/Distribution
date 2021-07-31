@@ -5,42 +5,41 @@ import typings.voucherCodeGenerator.voucherCodeGeneratorStrings.alphanumeric
 import typings.voucherCodeGenerator.voucherCodeGeneratorStrings.numbers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("voucher-code-generator", "charset")
+  @JSImport("voucher-code-generator", JSImport.Namespace)
   @js.native
-  def charset_alphabetic(name: alphabetic): String = js.native
-  @JSImport("voucher-code-generator", "charset")
-  @js.native
-  def charset_alphanumeric(name: alphanumeric): String = js.native
-  @JSImport("voucher-code-generator", "charset")
-  @js.native
-  def charset_numbers(name: numbers): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("voucher-code-generator", "generate")
-  @js.native
-  def generate(): js.Array[String] = js.native
-  @JSImport("voucher-code-generator", "generate")
-  @js.native
-  def generate(config: generatorConfig): js.Array[String] = js.native
+  @scala.inline
+  def charset_alphabetic(name: alphabetic): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def charset_alphanumeric(name: alphanumeric): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def charset_numbers(name: numbers): String = ^.asInstanceOf[js.Dynamic].applyDynamic("charset")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def generate(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[js.Array[String]]
+  @scala.inline
+  def generate(config: generatorConfig): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(config.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
   trait generatorConfig extends StObject {
     
-    var charset: js.UndefOr[String] = js.native
+    var charset: js.UndefOr[String] = js.undefined
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var pattern: js.UndefOr[String] = js.native
+    var pattern: js.UndefOr[String] = js.undefined
     
-    var postfix: js.UndefOr[String] = js.native
+    var postfix: js.UndefOr[String] = js.undefined
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
   }
   object generatorConfig {
     

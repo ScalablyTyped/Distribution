@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateResolverEndpointIpAddressRequest extends StObject {
   
   /**
     * The IPv4 address that you want to remove from a Resolver endpoint.
     */
-  var IpAddress: IpAddressUpdate = js.native
+  var IpAddress: IpAddressUpdate
   
   /**
     * The ID of the Resolver endpoint that you want to disassociate an IP address from.
     */
-  var ResolverEndpointId: ResourceId = js.native
+  var ResolverEndpointId: ResourceId
 }
 object DisassociateResolverEndpointIpAddressRequest {
   

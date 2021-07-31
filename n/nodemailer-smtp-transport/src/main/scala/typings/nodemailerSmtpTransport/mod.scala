@@ -5,50 +5,51 @@ import typings.nodemailer.mod.Transport
 import typings.nodemailerSmtpTransport.anon.MaxConnections
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: SmtpOptions): Transport = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Transport]
+  
   @JSImport("nodemailer-smtp-transport", JSImport.Namespace)
   @js.native
-  def apply(options: SmtpOptions): Transport = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait AuthOptions extends StObject {
     
     /** is the access token for the user. Required only if refreshToken is not available and there is no token refresh callback specified */
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
     /** is an optional HTTP endpoint for requesting new access tokens. This value defaults to Gmail */
-    var accessUrl: js.UndefOr[String] = js.native
+    var accessUrl: js.UndefOr[String] = js.undefined
     
     /** is the registered client id of the application */
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
     /** is the registered client secret of the application */
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
     /** is an optional expiration time for the current accessToken */
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
     /** is the password for the user if normal login is used */
-    var pass: js.UndefOr[String] = js.native
+    var pass: js.UndefOr[String] = js.undefined
     
     /** is the private key contents, you can find it from the “private_key” field in the service key file */
-    var privateKey: js.UndefOr[String] = js.native
+    var privateKey: js.UndefOr[String] = js.undefined
     
     /** is an optional refresh token. If it is provided then Nodemailer tries to generate a new access token if existing one expires or fails */
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
     /** service client id, you can find it from the “client_id” field in the service key file */
-    var serviceClient: js.UndefOr[String] = js.native
+    var serviceClient: js.UndefOr[String] = js.undefined
     
     /** indicates the authetication type, defaults to ‘login’, other option is ‘oauth2’ */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** is the username */
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object AuthOptions {
     
@@ -129,93 +130,92 @@ object mod {
     }
   }
   
-  @js.native
   trait SmtpOptions extends StObject {
     
     /**
       * defines authentication data (see authentication section below)
       */
-    var auth: js.UndefOr[AuthOptions] = js.native
+    var auth: js.UndefOr[AuthOptions] = js.undefined
     
     /**
       * defines preferred authentication method, eg. 'PLAIN'
       */
-    var authMethod: js.UndefOr[String] = js.native
+    var authMethod: js.UndefOr[String] = js.undefined
     
     /**
       * how many milliseconds to wait for the connection to establish
       */
-    var connectionTimeout: js.UndefOr[Double] = js.native
+    var connectionTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * if true, the connection emits all traffic between client and server as 'log' events
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * if true, then does not allow to use files as content. Use it when you want to use JSON data from untrusted source as the email. If an attachment or message node tries to fetch something from a file the sending returns an error
       */
-    var disableFileAccess: js.UndefOr[Boolean] = js.native
+    var disableFileAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  if true, then does not allow to use Urls as content
       */
-    var disableUrlAccess: js.UndefOr[Boolean] = js.native
+    var disableUrlAccess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * how many milliseconds to wait for the greeting after connection is established
       */
-    var greetingTimeout: js.UndefOr[Double] = js.native
+    var greetingTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * is the hostname or IP address to connect to (defaults to 'localhost')
       */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * if this is true and secure is false then TLS is not used even if the server supports STARTTLS extension
       */
-    var ignoreTLS: js.UndefOr[Boolean] = js.native
+    var ignoreTLS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * is the local interface to bind to for network connections
       */
-    var localAddress: js.UndefOr[String] = js.native
+    var localAddress: js.UndefOr[String] = js.undefined
     
     /**
       * optional bunyan compatible logger instance. If set to true then logs to console. If value is not set or is false then nothing is logged
       */
-    var logger: js.UndefOr[Boolean] = js.native
+    var logger: js.UndefOr[Boolean] = js.undefined
     
     /**
       * optional hostname of the client, used for identifying to the server
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * see Pooled SMTP for details about connection pooling
       */
-    var pool: js.UndefOr[MaxConnections] = js.native
+    var pool: js.UndefOr[MaxConnections] = js.undefined
     
     /**
       * is the port to connect to (defaults to 25 or 465)
       */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /**
       *  a proxy URL
       */
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
     /**
       * if this is true and secure is false then Nodemailer tries to use STARTTLS even if the server does not advertise support for it. If the connection can not be encrypted then message is not sent
       */
-    var requireTLS: js.UndefOr[Boolean] = js.native
+    var requireTLS: js.UndefOr[Boolean] = js.undefined
     
     /**
       * defines if the connection should use SSL (if true) or not (if false)
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fills in certain SMTP configurations options (e.g. 'host', 'port', and 'secure') for
@@ -250,17 +250,17 @@ object mod {
       *   - 'Yandex'
       *   - 'Zoho'
       */
-    var service: js.UndefOr[String] = js.native
+    var service: js.UndefOr[String] = js.undefined
     
     /**
       * how many milliseconds of inactivity to allow
       */
-    var socketTimeout: js.UndefOr[Double] = js.native
+    var socketTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * defines additional options to be passed to the socket constructor, eg. {rejectUnauthorized: true}
       */
-    var tls: js.UndefOr[ConnectionOptions] = js.native
+    var tls: js.UndefOr[ConnectionOptions] = js.undefined
   }
   object SmtpOptions {
     

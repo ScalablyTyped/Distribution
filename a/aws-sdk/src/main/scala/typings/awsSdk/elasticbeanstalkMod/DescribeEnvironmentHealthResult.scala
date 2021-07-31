@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentHealthResult extends StObject {
   
   /**
     * Application request metrics for the environment.
     */
-  var ApplicationMetrics: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationMetrics] = js.native
+  var ApplicationMetrics: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationMetrics] = js.undefined
   
   /**
     * Descriptions of the data that contributed to the environment's current health status.
     */
-  var Causes: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Causes] = js.native
+  var Causes: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Causes] = js.undefined
   
   /**
     * The health color of the environment.
     */
-  var Color: js.UndefOr[String] = js.native
+  var Color: js.UndefOr[String] = js.undefined
   
   /**
     * The environment's name.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * The health status of the environment. For example, Ok.
     */
-  var HealthStatus: js.UndefOr[String] = js.native
+  var HealthStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Summary health information for the instances in the environment.
     */
-  var InstancesHealth: js.UndefOr[InstanceHealthSummary] = js.native
+  var InstancesHealth: js.UndefOr[InstanceHealthSummary] = js.undefined
   
   /**
     * The date and time that the health information was retrieved.
     */
-  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.native
+  var RefreshedAt: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.RefreshedAt] = js.undefined
   
   /**
     * The environment's operational status. Ready, Launching, Updating, Terminating, or Terminated.
     */
-  var Status: js.UndefOr[EnvironmentHealth] = js.native
+  var Status: js.UndefOr[EnvironmentHealth] = js.undefined
 }
 object DescribeEnvironmentHealthResult {
   

@@ -2,33 +2,31 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Accept extends StObject {
   
-  var accept: String = js.native
+  var accept: String
   
-  var disableDelete: Boolean = js.native
+  var disableDelete: Boolean
   
-  var files: js.Array[scala.Nothing] = js.native
+  var files: js.Array[scala.Nothing]
   
-  var length: Double = js.native
+  var length: Double
   
-  var multiple: Boolean = js.native
+  var multiple: Boolean
   
-  var onAddImageClick: js.Function0[Unit] = js.native
+  var onAddImageClick: js.Function0[Unit]
   
-  var onChange: js.Function0[Unit] = js.native
+  var onChange: js.Function0[Unit]
   
-  var onFail: js.Function0[Unit] = js.native
+  var onFail: js.Function0[Unit]
   
-  var onImageClick: js.Function0[Unit] = js.native
+  var onImageClick: js.Function0[Unit]
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var selectable: Boolean = js.native
+  var selectable: Boolean
 }
 object Accept {
   

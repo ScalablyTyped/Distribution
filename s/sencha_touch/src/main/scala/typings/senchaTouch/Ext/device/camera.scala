@@ -4,13 +4,13 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object camera {
   
-  @js.native
-  trait IAbstract extends IBase {
+  trait IAbstract
+    extends StObject
+       with IBase {
     
     /** [Method] Allows you to capture a photo
       * @param options Object The options to use when taking a photo.
@@ -30,7 +30,7 @@ object camera {
           /* height */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object IAbstract {
     
@@ -53,14 +53,15 @@ object camera {
     }
   }
   
-  @js.native
-  trait ICordova extends IAbstract {
+  trait ICordova
+    extends StObject
+       with IAbstract {
     
     /** [Method] Allows you to capture a photo
       * @param args Object
       */
     @JSName("capture")
-    var capture_ICordova: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.native
+    var capture_ICordova: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ICordova {
     
@@ -81,14 +82,15 @@ object camera {
     }
   }
   
-  @js.native
-  trait IPhoneGap extends IAbstract {
+  trait IPhoneGap
+    extends StObject
+       with IAbstract {
     
     /** [Method] Allows you to capture a photo
       * @param args Object
       */
     @JSName("capture")
-    var capture_IPhoneGap: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.native
+    var capture_IPhoneGap: js.UndefOr[js.Function1[/* args */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IPhoneGap {
     
@@ -109,14 +111,15 @@ object camera {
     }
   }
   
-  @js.native
-  trait ISencha extends IAbstract {
+  trait ISencha
+    extends StObject
+       with IAbstract {
     
     /** [Method] Allows you to capture a photo
       * @param options Object
       */
     @JSName("capture")
-    var capture_ISencha: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+    var capture_ISencha: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISencha {
     
@@ -137,24 +140,25 @@ object camera {
     }
   }
   
-  @js.native
-  trait ISimulator extends IAbstract {
+  trait ISimulator
+    extends StObject
+       with IAbstract {
     
     /** [Method] Allows you to capture a photo
       * @param options Object
       */
     @JSName("capture")
-    var capture_ISimulator: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.native
+    var capture_ISimulator: js.UndefOr[js.Function1[/* options */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of samples
       * @returns Array
       */
-    var getSamples: js.UndefOr[js.Function0[Array]] = js.native
+    var getSamples: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Sets the value of samples
       * @param samples Array The new value.
       */
-    var setSamples: js.UndefOr[js.Function1[/* samples */ js.UndefOr[Array], Unit]] = js.native
+    var setSamples: js.UndefOr[js.Function1[/* samples */ js.UndefOr[Array], Unit]] = js.undefined
   }
   object ISimulator {
     

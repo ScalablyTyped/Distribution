@@ -3,7 +3,6 @@ package typings.readableStream.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("readable-stream", "Writable")
@@ -16,9 +15,6 @@ class Writable ()
   
   var _writableState: WritableState = js.native
   
-  def destroy(
-    error: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]
-  ): this.type = js.native
+  def destroy(error: Unit, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): this.type = js.native
   def destroy(error: Error, callback: js.Function1[/* error */ js.UndefOr[Error | Null], Unit]): this.type = js.native
 }

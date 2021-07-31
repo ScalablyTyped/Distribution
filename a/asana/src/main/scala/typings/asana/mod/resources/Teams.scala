@@ -5,7 +5,6 @@ import typings.asana.mod.Dispatcher
 import typings.asana.mod.resources.Teams.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait Teams
-  extends typings.asana.mod.resources.Resource {
+  extends StObject
+     with Resource {
   
   /**
     * * The user making this call must be a member of the team in order to add others.
@@ -35,10 +35,10 @@ trait Teams
     * @param dispatchOptions?
     * @return
     */
-  def addUser(team: String, data: UserParams): typings.bluebird.mod.^[_] = js.native
-  def addUser(team: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def addUser(team: Double, data: UserParams): typings.bluebird.mod.^[_] = js.native
-  def addUser(team: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def addUser(team: String, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
+  def addUser(team: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def addUser(team: Double, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
+  def addUser(team: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * * Returns the full record for a single team.
@@ -52,11 +52,11 @@ trait Teams
     * @return
     */
   def findById(team: String): typings.bluebird.mod.^[Type] = js.native
-  def findById(team: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(team: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(team: String, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(team: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(team: Double): typings.bluebird.mod.^[Type] = js.native
-  def findById(team: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
+  def findById(team: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   def findById(team: Double, params: Params): typings.bluebird.mod.^[Type] = js.native
   def findById(team: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[Type] = js.native
   
@@ -73,11 +73,11 @@ trait Teams
     * @return
     */
   def findByOrganization(organization: String): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def findByOrganization(organization: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def findByOrganization(organization: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def findByOrganization(organization: String, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def findByOrganization(organization: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def findByOrganization(organization: Double): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def findByOrganization(organization: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def findByOrganization(organization: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def findByOrganization(organization: Double, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def findByOrganization(organization: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   
@@ -96,10 +96,10 @@ trait Teams
     * @param dispatchOptions?
     * @return
     */
-  def removeUser(team: String, data: UserParams): typings.bluebird.mod.^[_] = js.native
-  def removeUser(team: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
-  def removeUser(team: Double, data: UserParams): typings.bluebird.mod.^[_] = js.native
-  def removeUser(team: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[_] = js.native
+  def removeUser(team: String, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
+  def removeUser(team: String, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
+  def removeUser(team: Double, data: UserParams): typings.bluebird.mod.^[js.Any] = js.native
+  def removeUser(team: Double, data: UserParams, dispatchOptions: js.Any): typings.bluebird.mod.^[js.Any] = js.native
   
   /**
     * * Returns the compact records for all users that are members of the team.
@@ -113,11 +113,11 @@ trait Teams
     * @return
     */
   def users(team: String): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def users(team: String, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def users(team: String, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def users(team: String, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def users(team: String, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def users(team: Double): typings.bluebird.mod.^[SimpleResourceList] = js.native
-  def users(team: Double, params: js.UndefOr[scala.Nothing], dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
+  def users(team: Double, params: Unit, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def users(team: Double, params: Params): typings.bluebird.mod.^[SimpleResourceList] = js.native
   def users(team: Double, params: Params, dispatchOptions: js.Any): typings.bluebird.mod.^[SimpleResourceList] = js.native
 }
@@ -126,7 +126,9 @@ object Teams extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("asana", "resources.Teams")
   @js.native
-  class ^ protected () extends Teams {
+  class ^ protected ()
+    extends StObject
+       with Teams {
     /**
       * @param dispatcher
       */
@@ -139,9 +141,10 @@ object Teams extends Shortcut {
   
   @js.native
   trait Type
-    extends typings.asana.mod.resources.Resource {
+    extends StObject
+       with Resource {
     
-    var organization: typings.asana.mod.resources.Resource = js.native
+    var organization: Resource = js.native
   }
   
   type _To = TeamsStatic

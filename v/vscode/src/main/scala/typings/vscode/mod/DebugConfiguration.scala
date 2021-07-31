@@ -3,12 +3,11 @@ package typings.vscode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugConfiguration
-  extends /**
+  extends StObject
+     with /**
   * Additional debug type specific properties.
   */
 /* key */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait DebugConfiguration
   /**
     * The name of the debug session.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The request type of the debug session.
     */
-  var request: String = js.native
+  var request: String
   
   /**
     * The type of the debug session.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object DebugConfiguration {
   

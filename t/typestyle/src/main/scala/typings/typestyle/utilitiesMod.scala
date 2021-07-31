@@ -6,24 +6,23 @@ import typings.typestyle.typesMod.NestedCSSProperties
 import typings.typestyle.typestyleBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilitiesMod {
   
-  @JSImport("typestyle/lib/internal/utilities", "classes")
+  @JSImport("typestyle/lib/internal/utilities", JSImport.Namespace)
   @js.native
-  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("typestyle/lib/internal/utilities", "extend")
-  @js.native
-  def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = js.native
+  @scala.inline
+  def classes_false(classes: (js.UndefOr[String | `false` | Null | StringDictionary[js.Any]])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("classes")(classes.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("typestyle/lib/internal/utilities", "media")
-  @js.native
-  def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = js.native
+  @scala.inline
+  def extend_false(objects: (js.UndefOr[NestedCSSProperties | Null | `false`])*): NestedCSSProperties = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(objects.asInstanceOf[js.Any]).asInstanceOf[NestedCSSProperties]
   
-  @JSImport("typestyle/lib/internal/utilities", "raf")
-  @js.native
-  def raf(cb: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def media_false(mediaQuery: MediaQuery, objects: (js.UndefOr[`false` | NestedCSSProperties | Null])*): NestedCSSProperties = (^.asInstanceOf[js.Dynamic].applyDynamic("media")(mediaQuery.asInstanceOf[js.Any], objects.asInstanceOf[js.Any])).asInstanceOf[NestedCSSProperties]
+  
+  @scala.inline
+  def raf(cb: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("raf")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

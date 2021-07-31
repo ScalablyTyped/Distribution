@@ -5,29 +5,29 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to an object's methods and properties. */
-@js.native
-trait XDirectInvocation extends XInterface {
+trait XDirectInvocation
+  extends StObject
+     with XInterface {
   
   /**
     * provides access to methods and properties exposed by an object.
     * @param aName the method to invoke
     * @param aParams all parameters, out parameters are not supported
     */
-  def directInvoke(aName: String, aParams: SeqEquiv[_]): js.Any = js.native
+  def directInvoke(aName: String, aParams: SeqEquiv[js.Any]): js.Any
   
   /** returns `TRUE` if the method or property with the specified name exists, else `FALSE` . */
-  def hasMember(aName: String): Boolean = js.native
+  def hasMember(aName: String): Boolean
 }
 object XDirectInvocation {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    directInvoke: (String, SeqEquiv[_]) => js.Any,
+    directInvoke: (String, SeqEquiv[js.Any]) => js.Any,
     hasMember: String => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit
@@ -40,7 +40,7 @@ object XDirectInvocation {
   implicit class XDirectInvocationMutableBuilder[Self <: XDirectInvocation] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDirectInvoke(value: (String, SeqEquiv[_]) => js.Any): Self = StObject.set(x, "directInvoke", js.Any.fromFunction2(value))
+    def setDirectInvoke(value: (String, SeqEquiv[js.Any]) => js.Any): Self = StObject.set(x, "directInvoke", js.Any.fromFunction2(value))
     
     @scala.inline
     def setHasMember(value: String => Boolean): Self = StObject.set(x, "hasMember", js.Any.fromFunction1(value))

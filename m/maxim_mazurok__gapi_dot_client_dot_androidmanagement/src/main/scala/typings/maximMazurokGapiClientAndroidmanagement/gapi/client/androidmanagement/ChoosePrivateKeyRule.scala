@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChoosePrivateKeyRule extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ChoosePrivateKeyRule extends StObject {
     * rule applies to that package and all other packages that shared the same Android UID. The SHA256 hash of the signing key signatures of each package_name will be verified against
     * those provided by Play
     */
-  var packageNames: js.UndefOr[js.Array[String]] = js.native
+  var packageNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The alias of the private key to be used. */
-  var privateKeyAlias: js.UndefOr[String] = js.native
+  var privateKeyAlias: js.UndefOr[String] = js.undefined
   
   /** The URL pattern to match against the URL of the outgoing request. The pattern may contain asterisk (*) wildcards. Any URL is matched if unspecified. */
-  var urlPattern: js.UndefOr[String] = js.native
+  var urlPattern: js.UndefOr[String] = js.undefined
 }
 object ChoosePrivateKeyRule {
   

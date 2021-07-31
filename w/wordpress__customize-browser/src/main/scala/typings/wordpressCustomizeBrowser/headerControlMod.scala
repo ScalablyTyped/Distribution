@@ -8,7 +8,6 @@ import typings.wordpressCustomizeBrowser.externalMod.Cropper
 import typings.wordpressCustomizeBrowser.externalMod.ImageModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerControlMod {

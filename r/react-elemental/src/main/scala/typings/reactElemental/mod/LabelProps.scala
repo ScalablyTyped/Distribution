@@ -2,15 +2,13 @@ package typings.reactElemental.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelProps extends StObject {
   
-  val label: js.UndefOr[String] = js.native
+  val label: js.UndefOr[String] = js.undefined
   
-  val sublabel: js.UndefOr[String] = js.native
+  val sublabel: js.UndefOr[String] = js.undefined
 }
 object LabelProps {
   

@@ -2,16 +2,14 @@ package typings.knockoutDeferredUpdates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Utils
-@js.native
 trait KnockoutUtils extends StObject {
   
-  def objectForEach(obj: js.Any, action: js.Function): Unit = js.native
+  def objectForEach(obj: js.Any, action: js.Function): Unit
   
-  def objectMap(source: js.Any, mapping: js.Function): js.Any = js.native
+  def objectMap(source: js.Any, mapping: js.Function): js.Any
 }
 object KnockoutUtils {
   

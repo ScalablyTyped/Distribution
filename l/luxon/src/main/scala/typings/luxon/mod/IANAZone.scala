@@ -2,7 +2,6 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("luxon", "IANAZone")
@@ -13,19 +12,19 @@ class IANAZone protected () extends Zone {
 /* static members */
 object IANAZone {
   
-  @JSImport("luxon", "IANAZone.create")
+  @JSImport("luxon", "IANAZone")
   @js.native
-  def create(name: String): IANAZone = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("luxon", "IANAZone.isValidSpecifier")
-  @js.native
-  def isValidSpecifier(s: String): Boolean = js.native
+  @scala.inline
+  def create(name: String): IANAZone = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[IANAZone]
   
-  @JSImport("luxon", "IANAZone.isValidZone")
-  @js.native
-  def isValidZone(zone: String): Boolean = js.native
+  @scala.inline
+  def isValidSpecifier(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidSpecifier")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("luxon", "IANAZone.resetCache")
-  @js.native
-  def resetCache(): Unit = js.native
+  @scala.inline
+  def isValidZone(zone: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidZone")(zone.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def resetCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetCache")().asInstanceOf[Unit]
 }

@@ -10,7 +10,6 @@ import typings.storybookUi.anon.Data
 import typings.storybookUi.anon.PickDetailedHTMLPropsButt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeMod {

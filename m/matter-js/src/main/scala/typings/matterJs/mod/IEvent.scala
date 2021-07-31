@@ -2,21 +2,19 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEvent[T] extends StObject {
   
   /**
     * The name of the event
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The source object of the event
     */
-  var source: T = js.native
+  var source: T
 }
 object IEvent {
   
@@ -27,7 +25,7 @@ object IEvent {
   }
   
   @scala.inline
-  implicit class IEventMutableBuilder[Self <: IEvent[_], T] (val x: Self with IEvent[T]) extends AnyVal {
+  implicit class IEventMutableBuilder[Self <: IEvent[?], T] (val x: Self & IEvent[T]) extends AnyVal {
     
     @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])

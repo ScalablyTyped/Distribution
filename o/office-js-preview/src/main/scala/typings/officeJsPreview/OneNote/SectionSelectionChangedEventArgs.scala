@@ -3,7 +3,6 @@ package typings.officeJsPreview.OneNote
 import typings.officeJsPreview.officeJsPreviewStrings.SectionSelectionChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: OneNoteApi 1.5]
   */
-@js.native
 trait SectionSelectionChangedEventArgs extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SectionSelectionChangedEventArgs extends StObject {
     *
     * [Api set: OneNoteApi 1.5]
     */
-  var oldId: String = js.native
+  var oldId: String
   
   /**
     *
@@ -29,14 +27,14 @@ trait SectionSelectionChangedEventArgs extends StObject {
     *
     * [Api set: OneNoteApi 1.5]
     */
-  var `type`: SectionSelectionChanged = js.native
+  var `type`: SectionSelectionChanged
 }
 object SectionSelectionChangedEventArgs {
   
   @scala.inline
-  def apply(oldId: String, `type`: SectionSelectionChanged): SectionSelectionChangedEventArgs = {
+  def apply(oldId: String): SectionSelectionChangedEventArgs = {
     val __obj = js.Dynamic.literal(oldId = oldId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SectionSelectionChanged")
     __obj.asInstanceOf[SectionSelectionChangedEventArgs]
   }
   

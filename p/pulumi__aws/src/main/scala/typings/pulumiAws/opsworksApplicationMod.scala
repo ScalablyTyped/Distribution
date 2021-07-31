@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object opsworksApplicationMod {
@@ -116,6 +115,10 @@ object opsworksApplicationMod {
   /* static members */
   object Application {
     
+    @JSImport("@pulumi/aws/opsworks/application", "Application")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Application resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -125,119 +128,113 @@ object opsworksApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/opsworks/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Application = js.native
-    @JSImport("@pulumi/aws/opsworks/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Application = js.native
-    @JSImport("@pulumi/aws/opsworks/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState): Application = js.native
-    @JSImport("@pulumi/aws/opsworks/application", "Application.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Application]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationState, opts: CustomResourceOptions): Application = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Application]
     
     /**
       * Returns true if the given object is an instance of Application.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/opsworks/application", "Application.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/opsworks/application.Application */ Boolean]
   }
   
-  @js.native
   trait ApplicationArgs extends StObject {
     
     /**
       * SCM configuration of the app as described below.
       */
-    val appSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]] = js.native
+    val appSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]] = js.undefined
     
     /**
       * Run bundle install when deploying for application of type `rails`.
       */
-    val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.native
+    val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify activity and workflow workers for your app using the aws-flow gem.
       */
-    val awsFlowRubySettings: js.UndefOr[Input[String]] = js.native
+    val awsFlowRubySettings: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The data source's ARN.
       */
-    val dataSourceArn: js.UndefOr[Input[String]] = js.native
+    val dataSourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The database name.
       */
-    val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.native
+    val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The data source's type one of `AutoSelectOpsworksMysqlInstance`, `OpsworksMysqlInstance`, or `RdsDbInstance`.
       */
-    val dataSourceType: js.UndefOr[Input[String]] = js.native
+    val dataSourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the app.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subfolder for the document root for application of type `rails`.
       */
-    val documentRoot: js.UndefOr[Input[String]] = js.native
+    val documentRoot: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of virtual host alias.
       */
-    val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable SSL for the app. This must be set in order to let `ssl_configuration.private_key`, `ssl_configuration.certificate` and `ssl_configuration.chain` take effect.
       */
-    val enableSsl: js.UndefOr[Input[Boolean]] = js.native
+    val enableSsl: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Object to define environment variables.  Object is described below.
       */
     val environments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A human-readable name for the application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Rails environment for application of type `rails`.
       */
-    val railsEnv: js.UndefOr[Input[String]] = js.native
+    val railsEnv: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A short, machine-readable name for the application. This can only be defined on resource creation and ignored on resource update.
       */
-    val shortName: js.UndefOr[Input[String]] = js.native
+    val shortName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The SSL configuration of the app. Object is described below.
       */
     val sslConfigurations: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The id of the stack the application will belong to.
       */
-    val stackId: Input[String] = js.native
+    val stackId: Input[String]
     
     /**
       * Opsworks application type. One of `aws-flow-ruby`, `java`, `rails`, `php`, `nodejs`, `static` or `other`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object ApplicationArgs {
     
@@ -361,97 +358,96 @@ object opsworksApplicationMod {
     }
   }
   
-  @js.native
   trait ApplicationState extends StObject {
     
     /**
       * SCM configuration of the app as described below.
       */
-    val appSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]] = js.native
+    val appSources: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationAppSource]]]] = js.undefined
     
     /**
       * Run bundle install when deploying for application of type `rails`.
       */
-    val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.native
+    val autoBundleOnDeploy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specify activity and workflow workers for your app using the aws-flow gem.
       */
-    val awsFlowRubySettings: js.UndefOr[Input[String]] = js.native
+    val awsFlowRubySettings: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The data source's ARN.
       */
-    val dataSourceArn: js.UndefOr[Input[String]] = js.native
+    val dataSourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The database name.
       */
-    val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.native
+    val dataSourceDatabaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The data source's type one of `AutoSelectOpsworksMysqlInstance`, `OpsworksMysqlInstance`, or `RdsDbInstance`.
       */
-    val dataSourceType: js.UndefOr[Input[String]] = js.native
+    val dataSourceType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the app.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Subfolder for the document root for application of type `rails`.
       */
-    val documentRoot: js.UndefOr[Input[String]] = js.native
+    val documentRoot: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of virtual host alias.
       */
-    val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val domains: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Whether to enable SSL for the app. This must be set in order to let `ssl_configuration.private_key`, `ssl_configuration.certificate` and `ssl_configuration.chain` take effect.
       */
-    val enableSsl: js.UndefOr[Input[Boolean]] = js.native
+    val enableSsl: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Object to define environment variables.  Object is described below.
       */
     val environments: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationEnvironment]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A human-readable name for the application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the Rails environment for application of type `rails`.
       */
-    val railsEnv: js.UndefOr[Input[String]] = js.native
+    val railsEnv: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A short, machine-readable name for the application. This can only be defined on resource creation and ignored on resource update.
       */
-    val shortName: js.UndefOr[Input[String]] = js.native
+    val shortName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The SSL configuration of the app. Object is described below.
       */
     val sslConfigurations: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.opsworks.ApplicationSslConfiguration]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The id of the stack the application will belong to.
       */
-    val stackId: js.UndefOr[Input[String]] = js.native
+    val stackId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Opsworks application type. One of `aws-flow-ruby`, `java`, `rails`, `php`, `nodejs`, `static` or `other`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
   }
   object ApplicationState {
     

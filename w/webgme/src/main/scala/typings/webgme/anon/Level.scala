@@ -4,15 +4,13 @@ import typings.webgme.GmeCommon.DefIntegerObject
 import typings.webgme.GmeCommon.DefStringObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Level extends StObject {
   
-  var level: DefIntegerObject = js.native
+  var level: DefIntegerObject
   
-  var name: DefStringObject = js.native
+  var name: DefStringObject
 }
 object Level {
   

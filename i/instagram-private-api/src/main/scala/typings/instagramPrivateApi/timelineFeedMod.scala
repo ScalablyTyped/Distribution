@@ -8,7 +8,6 @@ import typings.instagramPrivateApi.timelineFeedTypesMod.TimelineFeedReason
 import typings.instagramPrivateApi.timelineFeedTypesMod.TimelineFeedsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timelineFeedMod {

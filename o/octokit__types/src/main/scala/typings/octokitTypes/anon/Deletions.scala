@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deletions extends StObject {
   
-  var additions: Double = js.native
+  var additions: Double
   
-  var deletions: Double = js.native
+  var deletions: Double
   
-  var total: Double = js.native
+  var total: Double
 }
 object Deletions {
   

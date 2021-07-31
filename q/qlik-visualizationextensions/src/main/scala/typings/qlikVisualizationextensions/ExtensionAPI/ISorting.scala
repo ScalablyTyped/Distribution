@@ -3,19 +3,17 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.qlikVisualizationextensions.qlikVisualizationextensionsStrings.sorting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISorting extends StObject {
   
-  var uses: sorting = js.native
+  var uses: sorting
 }
 object ISorting {
   
   @scala.inline
-  def apply(uses: sorting): ISorting = {
-    val __obj = js.Dynamic.literal(uses = uses.asInstanceOf[js.Any])
+  def apply(): ISorting = {
+    val __obj = js.Dynamic.literal(uses = "sorting")
     __obj.asInstanceOf[ISorting]
   }
   

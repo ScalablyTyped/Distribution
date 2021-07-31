@@ -2,19 +2,17 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CharHeight extends StObject {
   
-  var charHeight: Double = js.native
+  var charHeight: Double
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var left: String = js.native
+  var left: String
   
-  var top: String = js.native
+  var top: String
 }
 object CharHeight {
   

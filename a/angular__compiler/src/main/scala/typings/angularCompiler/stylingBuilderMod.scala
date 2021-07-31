@@ -10,10 +10,13 @@ import typings.angularCompiler.templateMod.ValueConverter
 import typings.angularCompiler.viewUtilMod.DefinitionMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylingBuilderMod {
+  
+  @JSImport("@angular/compiler/src/render3/view/styling_builder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/render3/view/styling_builder", "MIN_STYLING_BINDING_SLOTS_REQUIRED")
   @js.native
@@ -150,31 +153,29 @@ object stylingBuilderMod {
     def registerStyleInput(name: String, isMapBased: Boolean, value: AST, sourceSpan: ParseSourceSpan, suffix: String): BoundStylingEntry | Null = js.native
   }
   
-  @JSImport("@angular/compiler/src/render3/view/styling_builder", "parseProperty")
-  @js.native
-  def parseProperty(name: String): HasOverrideFlag = js.native
+  @scala.inline
+  def parseProperty(name: String): HasOverrideFlag = ^.asInstanceOf[js.Dynamic].applyDynamic("parseProperty")(name.asInstanceOf[js.Any]).asInstanceOf[HasOverrideFlag]
   
   /**
     * An internal record of the input data for a styling binding
     */
-  @js.native
   trait BoundStylingEntry extends StObject {
     
-    var hasOverrideFlag: Boolean = js.native
+    var hasOverrideFlag: Boolean
     
-    var name: String | Null = js.native
+    var name: String | Null
     
-    var sourceSpan: ParseSourceSpan = js.native
+    var sourceSpan: ParseSourceSpan
     
-    var suffix: String | Null = js.native
+    var suffix: String | Null
     
-    var value: AST = js.native
+    var value: AST
   }
   object BoundStylingEntry {
     
     @scala.inline
     def apply(hasOverrideFlag: Boolean, sourceSpan: ParseSourceSpan, value: AST): BoundStylingEntry = {
-      val __obj = js.Dynamic.literal(hasOverrideFlag = hasOverrideFlag.asInstanceOf[js.Any], sourceSpan = sourceSpan.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(hasOverrideFlag = hasOverrideFlag.asInstanceOf[js.Any], sourceSpan = sourceSpan.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], name = null, suffix = null)
       __obj.asInstanceOf[BoundStylingEntry]
     }
     
@@ -204,13 +205,12 @@ object stylingBuilderMod {
     }
   }
   
-  @js.native
   trait StylingInstruction extends StObject {
     
     /** Calls to individual styling instructions. Used when chaining calls to the same instruction. */
-    var calls: js.Array[StylingInstructionCall] = js.native
+    var calls: js.Array[StylingInstructionCall]
     
-    var reference: ExternalReference = js.native
+    var reference: ExternalReference
   }
   object StylingInstruction {
     
@@ -234,16 +234,15 @@ object stylingBuilderMod {
     }
   }
   
-  @js.native
   trait StylingInstructionCall extends StObject {
     
-    var allocateBindingSlots: Double = js.native
+    var allocateBindingSlots: Double
     
-    def params(convertFn: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]]): js.Array[Expression] = js.native
+    def params(convertFn: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]]): js.Array[Expression]
     
-    var sourceSpan: ParseSourceSpan | Null = js.native
+    var sourceSpan: ParseSourceSpan | Null
     
-    var supportsInterpolation: Boolean = js.native
+    var supportsInterpolation: Boolean
   }
   object StylingInstructionCall {
     
@@ -253,7 +252,7 @@ object stylingBuilderMod {
       params: js.Function1[/* value */ js.Any, Expression | js.Array[Expression]] => js.Array[Expression],
       supportsInterpolation: Boolean
     ): StylingInstructionCall = {
-      val __obj = js.Dynamic.literal(allocateBindingSlots = allocateBindingSlots.asInstanceOf[js.Any], params = js.Any.fromFunction1(params), supportsInterpolation = supportsInterpolation.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allocateBindingSlots = allocateBindingSlots.asInstanceOf[js.Any], params = js.Any.fromFunction1(params), supportsInterpolation = supportsInterpolation.asInstanceOf[js.Any], sourceSpan = null)
       __obj.asInstanceOf[StylingInstructionCall]
     }
     

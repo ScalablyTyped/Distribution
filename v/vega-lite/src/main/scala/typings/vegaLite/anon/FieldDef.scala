@@ -10,25 +10,23 @@ import typings.vegaLite.vegaLiteStrings.binned
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldDef extends StObject {
   
-  var band: Double = js.native
+  var band: Double
   
-  var channel: PositionChannel | PolarPositionChannel = js.native
+  var channel: PositionChannel | PolarPositionChannel
   
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[SignalRef]] = js.native
+  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[SignalRef]] = js.undefined
   
-  var fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null] = js.native
+  var fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
   
-  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef] = js.native
+  var markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]
   
-  var offset: js.UndefOr[Double | SignalRef] = js.native
+  var offset: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var scaleName: String = js.native
+  var scaleName: String
 }
 object FieldDef {
   
@@ -36,7 +34,7 @@ object FieldDef {
   def apply(
     band: Double,
     channel: PositionChannel | PolarPositionChannel,
-    fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     markDef: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef],
     scaleName: String
   ): FieldDef = {
@@ -60,7 +58,7 @@ object FieldDef {
     def setConfigUndefined: Self = StObject.set(x, "config", js.undefined)
     
     @scala.inline
-    def setFieldDef(value: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
+    def setFieldDef(value: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): Self = StObject.set(x, "fieldDef", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMarkDef(value: typings.vegaLite.srcMarkMod.MarkDef[Mark, ExprRef | SignalRef]): Self = StObject.set(x, "markDef", value.asInstanceOf[js.Any])

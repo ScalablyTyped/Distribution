@@ -2,7 +2,6 @@ package typings.gsap.global.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("gsap.SimpleTimeline")
@@ -12,6 +11,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * intended for internal use in the GreenSock tweening platform. It is meant to be very fast and lightweight.
   */
 class SimpleTimeline ()
-  extends typings.gsap.gsap.SimpleTimeline {
+  extends StObject
+     with typings.gsap.gsap.SimpleTimeline {
   def this(vars: js.Any) = this()
 }

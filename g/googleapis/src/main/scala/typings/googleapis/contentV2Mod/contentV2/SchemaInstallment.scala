@@ -2,21 +2,19 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstallment extends StObject {
   
   /**
     * The amount the buyer has to pay per month.
     */
-  var amount: js.UndefOr[SchemaPrice] = js.native
+  var amount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The number of installments the buyer has to pay.
     */
-  var months: js.UndefOr[String] = js.native
+  var months: js.UndefOr[String] = js.undefined
 }
 object SchemaInstallment {
   

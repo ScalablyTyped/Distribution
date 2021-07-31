@@ -2,21 +2,19 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RRSetRoutingPolicyGeoPolicyGeoPolicyItem extends StObject {
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The geo-location granularity is a GCP region. This location string should correspond to a GCP region. e.g "us-east1", "southamerica-east1", "asia-east1", etc. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var rrdatas: js.UndefOr[js.Array[String]] = js.native
+  var rrdatas: js.UndefOr[js.Array[String]] = js.undefined
   
   /** DNSSEC generated signatures for the above geo_rrdata. */
-  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.native
+  var signatureRrdatas: js.UndefOr[js.Array[String]] = js.undefined
 }
 object RRSetRoutingPolicyGeoPolicyGeoPolicyItem {
   

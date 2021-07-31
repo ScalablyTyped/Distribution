@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCustomBiddingAlgorithmsResponse extends StObject {
   
   /** The list of custom bidding algorithms. This list will be absent if empty. */
-  var customBiddingAlgorithms: js.UndefOr[js.Array[CustomBiddingAlgorithm]] = js.native
+  var customBiddingAlgorithms: js.UndefOr[js.Array[CustomBiddingAlgorithm]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListCustomBiddingAlgorithmsRequest` method to retrieve the next page
     * of results. If this field is null, it means this is the last page.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListCustomBiddingAlgorithmsResponse {
   

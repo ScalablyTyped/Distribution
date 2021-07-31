@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMetricFilterRequest extends StObject {
   
   /**
     * The name of the metric filter.
     */
-  var filterName: FilterName = js.native
+  var filterName: FilterName
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
 }
 object DeleteMetricFilterRequest {
   

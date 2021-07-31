@@ -3,39 +3,37 @@ package typings.qiniuJs.mod
 import typings.qiniuJs.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoInfo extends StObject {
   
-  var bit_rate: String = js.native
+  var bit_rate: String
   
-  var codec_name: String = js.native
+  var codec_name: String
   
-  var codec_type: String = js.native
+  var codec_type: String
   
-  var display_aspect_ratio: String = js.native
+  var display_aspect_ratio: String
   
-  var duration: String = js.native
+  var duration: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var index: Double = js.native
+  var index: Double
   
-  var nb_frames: String = js.native
+  var nb_frames: String
   
-  var pix_fmt: String = js.native
+  var pix_fmt: String
   
-  var r_frame_rate: String = js.native
+  var r_frame_rate: String
   
-  var sample_aspect_ratio: String = js.native
+  var sample_aspect_ratio: String
   
-  var start_time: String = js.native
+  var start_time: String
   
-  var tags: Dictkey = js.native
+  var tags: Dictkey
   
-  var width: Double = js.native
+  var width: Double
 }
 object VideoInfo {
   

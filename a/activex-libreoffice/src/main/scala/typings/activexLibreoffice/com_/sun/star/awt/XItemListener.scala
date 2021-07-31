@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive events from a component when the state of an item changes. */
-@js.native
-trait XItemListener extends XEventListener {
+trait XItemListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when an item changes its state. */
-  def itemStateChanged(rEvent: ItemEvent): Unit = js.native
+  def itemStateChanged(rEvent: ItemEvent): Unit
 }
 object XItemListener {
   

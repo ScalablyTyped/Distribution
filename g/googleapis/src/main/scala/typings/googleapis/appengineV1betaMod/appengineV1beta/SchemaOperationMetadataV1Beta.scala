@@ -2,54 +2,52 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for the given google.longrunning.Operation.
   */
-@js.native
 trait SchemaOperationMetadataV1Beta extends StObject {
   
-  var createVersionMetadata: js.UndefOr[SchemaCreateVersionMetadataV1Beta] = js.native
+  var createVersionMetadata: js.UndefOr[SchemaCreateVersionMetadataV1Beta] = js.undefined
   
   /**
     * Time that this operation completed.@OutputOnly
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Ephemeral message that may change every time the operation is polled.
     * @OutputOnly
     */
-  var ephemeralMessage: js.UndefOr[String] = js.native
+  var ephemeralMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Time that this operation was created.@OutputOnly
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * API method that initiated this operation. Example:
     * google.appengine.v1beta.Versions.CreateVersion.@OutputOnly
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource that this operation is acting on. Example:
     * apps/myapp/services/default.@OutputOnly
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /**
     * User who requested this operation.@OutputOnly
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /**
     * Durable messages that persist on every operation poll. @OutputOnly
     */
-  var warning: js.UndefOr[js.Array[String]] = js.native
+  var warning: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaOperationMetadataV1Beta {
   

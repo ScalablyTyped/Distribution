@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetPoolsRemoveInstanceRequest extends StObject {
   
   /** URLs of the instances to be removed from target pool. */
-  var instances: js.UndefOr[js.Array[InstanceReference]] = js.native
+  var instances: js.UndefOr[js.Array[InstanceReference]] = js.undefined
 }
 object TargetPoolsRemoveInstanceRequest {
   

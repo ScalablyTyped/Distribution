@@ -3,12 +3,10 @@ package typings.i18n
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object i18n {
   
-  @js.native
   trait ConfigurationOptions extends StObject {
     
     /**
@@ -16,122 +14,122 @@ object i18n {
       * Note that this will *not* overwrite existing properties with the same name.
       * @default undefined
       */
-    var api: js.UndefOr[StringDictionary[String]] = js.native
+    var api: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * Watch for changes in json files to reload locale on updates
       * @default false
       */
-    var autoReload: js.UndefOr[Boolean] = js.native
+    var autoReload: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets a custom cookie name to parse locale settings from
       * @default null
       */
-    var cookie: js.UndefOr[String] = js.native
+    var cookie: js.UndefOr[String] = js.undefined
     
     /**
       * Alter a site wide default locale
       * @default "en"
       */
-    var defaultLocale: js.UndefOr[String] = js.native
+    var defaultLocale: js.UndefOr[String] = js.undefined
     
     /**
       * Where to store json files, relative to modules directory
       * @default "./locales"
       */
-    var directory: js.UndefOr[String] = js.native
+    var directory: js.UndefOr[String] = js.undefined
     
     /**
       * Control mode on directory creation. Setting has no effect on win.
       * @default null
       */
-    var directoryPermissions: js.UndefOr[String] = js.native
+    var directoryPermissions: js.UndefOr[String] = js.undefined
     
     /**
       * Setting extension of json files (you might want to set this to '.js' according to webtranslateit)
       * @default ".json"
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * Language fallback map
       * @default {}
       */
-    var fallbacks: js.UndefOr[StringDictionary[String]] = js.native
+    var fallbacks: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * What to use as the indentation unit
       * @default "\t"
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * Setup some locales - other locales default to en silently
       * @default []
       */
-    var locales: js.UndefOr[js.Array[String]] = js.native
+    var locales: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Setting of log level DEBUG
       * @default require("debug")("i18n:debug")
       */
-    var logDebugFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var logDebugFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     /**
       * Setting of log level ERROR
       * @default require("debug")("i18n:error")
       */
-    var logErrorFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var logErrorFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     /**
       * Setting of log level WARN
       * @default require("debug")("i18n:warn")
       */
-    var logWarnFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.native
+    var logWarnFn: js.UndefOr[js.Function1[/* msg */ String, Unit]] = js.undefined
     
     /**
       * Enable object notation
       * @default false
       */
-    var objectNotation: js.UndefOr[Boolean] = js.native
+    var objectNotation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Setting prefix of json files name (in case you use different locale files naming scheme (webapp-en.json), rather then just en.json)
       * @default ""
       */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /**
       * Downcase locale when passed on queryParam; e.g. lang=en-US becomes en-us.
       * When set to false, the queryParam value will be used as passed; e.g. lang=en-US remains en-US.
       * @default true
       */
-    var preserveLegacyCase: js.UndefOr[Boolean] = js.native
+    var preserveLegacyCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Query parameter to switch locale (ie. /home?lang=ch)
       * @default null
       */
-    var queryParameter: js.UndefOr[String] = js.native
+    var queryParameter: js.UndefOr[String] = js.undefined
     
     /**
       * object or [obj1, obj2] to bind the i18n api and current locale to
       * @default null
       */
-    var register: js.UndefOr[js.Any] = js.native
+    var register: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Sync locale information across all files
       * @default false
       */
-    var syncFiles: js.UndefOr[Boolean] = js.native
+    var syncFiles: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to write new locale information to disk
       * @default true
       */
-    var updateFiles: js.UndefOr[Boolean] = js.native
+    var updateFiles: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurationOptions {
     
@@ -275,16 +273,15 @@ object i18n {
   
   type LocaleCatalog = StringDictionary[String]
   
-  @js.native
   trait PluralOptions extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var plural: String = js.native
+    var plural: String
     
-    var singular: String = js.native
+    var singular: String
   }
   object PluralOptions {
     
@@ -319,12 +316,11 @@ object i18n {
   
   type Replacements = StringDictionary[String]
   
-  @js.native
   trait TranslateOptions extends StObject {
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var phrase: String = js.native
+    var phrase: String
   }
   object TranslateOptions {
     

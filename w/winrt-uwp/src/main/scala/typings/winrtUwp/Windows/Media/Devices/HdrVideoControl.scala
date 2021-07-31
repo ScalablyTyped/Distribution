@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Media.Devices
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** When supported, allows an app to enable High Dynamic Range (HDR) video recording on the capture device. */
-@js.native
 trait HdrVideoControl extends StObject {
   
   /** Gets or sets a value indicating the current High Dynamic Range (HDR) video recording mode of the capture device. */
-  var mode: HdrVideoMode = js.native
+  var mode: HdrVideoMode
   
   /** Gets a value that indicates if the capture device supports the HdrVideoControl . */
-  var supported: Boolean = js.native
+  var supported: Boolean
   
   /** Gets the list of HdrVideoMode values indicating the modes supported by the capture device. */
-  var supportedModes: IVectorView[HdrVideoMode] = js.native
+  var supportedModes: IVectorView[HdrVideoMode]
 }
 object HdrVideoControl {
   

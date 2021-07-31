@@ -5,11 +5,12 @@ import typings.kendoUi.kendo.data.DataSource
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Timeline extends Widget {
+trait Timeline
+  extends StObject
+     with Widget {
   
   def collapse(event: String): Unit = js.native
   def collapse(event: JQuery): Unit = js.native

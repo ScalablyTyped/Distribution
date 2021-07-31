@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to a container of columns, typically used for tables and indexes. */
-@js.native
-trait XColumnsSupplier extends XInterface {
+trait XColumnsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the container of columns.
     * @returns the columns
     */
-  val Columns: XNameAccess = js.native
+  val Columns: XNameAccess
   
   /**
     * returns the container of columns.
     * @returns the columns
     */
-  def getColumns(): XNameAccess = js.native
+  def getColumns(): XNameAccess
 }
 object XColumnsSupplier {
   

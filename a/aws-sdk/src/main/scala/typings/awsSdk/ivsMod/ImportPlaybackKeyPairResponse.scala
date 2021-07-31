@@ -2,13 +2,11 @@ package typings.awsSdk.ivsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportPlaybackKeyPairResponse extends StObject {
   
-  var keyPair: js.UndefOr[PlaybackKeyPair] = js.native
+  var keyPair: js.UndefOr[PlaybackKeyPair] = js.undefined
 }
 object ImportPlaybackKeyPairResponse {
   

@@ -4,21 +4,22 @@ import typings.jimpCore.etcMod.ImageCallback
 import typings.jimpPluginResize.anon.RESIZEBEZIER
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-resize", JSImport.Default)
+  @JSImport("@jimp/plugin-resize", JSImport.Namespace)
   @js.native
-  def default(): Resize = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): Resize = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Resize]
+  
   trait Resize extends StObject {
     
-    var `class`: ResizeClass = js.native
+    var `class`: ResizeClass
     
-    var constants: RESIZEBEZIER = js.native
+    var constants: RESIZEBEZIER
   }
   object Resize {
     
@@ -45,8 +46,8 @@ object mod {
     
     def resize(w: Double, h: Double): this.type = js.native
     def resize(w: Double, h: Double, cb: ImageCallback[this.type]): this.type = js.native
-    def resize(w: Double, h: Double, mode: js.UndefOr[scala.Nothing], cb: ImageCallback[this.type]): this.type = js.native
     def resize(w: Double, h: Double, mode: String): this.type = js.native
     def resize(w: Double, h: Double, mode: String, cb: ImageCallback[this.type]): this.type = js.native
+    def resize(w: Double, h: Double, mode: Unit, cb: ImageCallback[this.type]): this.type = js.native
   }
 }

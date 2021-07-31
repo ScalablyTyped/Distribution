@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects")
@@ -30,7 +29,7 @@ class ResourceProjects protected () extends StObject {
     */
   def deleteEvents(): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(callback: BodyResponseCallback[SchemaDeleteEventsResponse]): Unit = js.native
-  def deleteEvents(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
+  def deleteEvents(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(params: ParamsResourceProjectsDeleteevents): GaxiosPromise[SchemaDeleteEventsResponse] = js.native
   def deleteEvents(
     params: ParamsResourceProjectsDeleteevents,

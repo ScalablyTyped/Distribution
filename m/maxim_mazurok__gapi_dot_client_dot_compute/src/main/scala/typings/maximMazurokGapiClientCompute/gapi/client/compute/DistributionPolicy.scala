@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionPolicy extends StObject {
   
   /** Zones where the regional managed instance group will create and manage its instances. */
-  var zones: js.UndefOr[js.Array[DistributionPolicyZoneConfiguration]] = js.native
+  var zones: js.UndefOr[js.Array[DistributionPolicyZoneConfiguration]] = js.undefined
 }
 object DistributionPolicy {
   

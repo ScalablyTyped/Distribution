@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,23 +12,37 @@ sealed trait PersonalSiteCapabilities extends StObject
 object PersonalSiteCapabilities extends StObject {
   
   @js.native
-  sealed trait education extends PersonalSiteCapabilities
+  sealed trait education
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait guest extends PersonalSiteCapabilities
+  sealed trait guest
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait myTasksDashboard extends PersonalSiteCapabilities
+  sealed trait myTasksDashboard
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait none extends PersonalSiteCapabilities
+  sealed trait none
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait profile extends PersonalSiteCapabilities
+  sealed trait profile
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait social extends PersonalSiteCapabilities
+  sealed trait social
+    extends StObject
+       with PersonalSiteCapabilities
   
   @js.native
-  sealed trait storage extends PersonalSiteCapabilities
+  sealed trait storage
+    extends StObject
+       with PersonalSiteCapabilities
 }

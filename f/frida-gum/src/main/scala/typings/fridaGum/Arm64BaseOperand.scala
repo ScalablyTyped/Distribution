@@ -3,19 +3,17 @@ package typings.fridaGum
 import typings.fridaGum.anon.Value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arm64BaseOperand extends StObject {
   
-  var ext: js.UndefOr[Arm64Extender] = js.native
+  var ext: js.UndefOr[Arm64Extender] = js.undefined
   
-  var shift: js.UndefOr[Value] = js.native
+  var shift: js.UndefOr[Value] = js.undefined
   
-  var vas: js.UndefOr[Arm64Vas] = js.native
+  var vas: js.UndefOr[Arm64Vas] = js.undefined
   
-  var vectorIndex: js.UndefOr[Double] = js.native
+  var vectorIndex: js.UndefOr[Double] = js.undefined
 }
 object Arm64BaseOperand {
   

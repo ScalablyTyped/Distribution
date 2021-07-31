@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBusinessReportScheduleRequest extends StObject {
   
   /**
     * The ARN of the business report schedule.
     */
-  var ScheduleArn: Arn = js.native
+  var ScheduleArn: Arn
 }
 object DeleteBusinessReportScheduleRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteSchemaVersionRequest extends StObject {
   
   /**
     * The name of the registry.
     */
-  var RegistryName: string = js.native
+  var RegistryName: string
   
   /**
     * The name of the schema.
     */
-  var SchemaName: string = js.native
+  var SchemaName: string
   
   /**
     * The version number of the schema
     */
-  var SchemaVersion: string = js.native
+  var SchemaVersion: string
 }
 object DeleteSchemaVersionRequest {
   

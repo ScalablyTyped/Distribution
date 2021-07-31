@@ -7,15 +7,13 @@ import typings.reactNativeSvg.reactNativeSvgStrings.none
 import typings.reactNativeSvg.reactNativeSvgStrings.uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorEffectProps extends StObject {
   
   var vectorEffect: js.UndefOr[
     none | `non-scaling-stroke` | nonScalingStroke | typings.reactNativeSvg.reactNativeSvgStrings.default | inherit | uri
-  ] = js.native
+  ] = js.undefined
 }
 object VectorEffectProps {
   

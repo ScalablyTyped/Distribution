@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlternativeSecurityId extends StObject {
   
   // For internal use only
-  var identityProvider: js.UndefOr[NullableOption[String]] = js.native
+  var identityProvider: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For internal use only
-  var key: js.UndefOr[NullableOption[Double]] = js.native
+  var key: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // For internal use only
-  var `type`: js.UndefOr[NullableOption[Double]] = js.native
+  var `type`: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object AlternativeSecurityId {
   

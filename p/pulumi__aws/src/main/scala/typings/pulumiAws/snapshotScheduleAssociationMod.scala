@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotScheduleAssociationMod {
@@ -38,6 +37,10 @@ object snapshotScheduleAssociationMod {
   /* static members */
   object SnapshotScheduleAssociation {
     
+    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SnapshotScheduleAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,40 +50,34 @@ object snapshotScheduleAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SnapshotScheduleAssociation = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotScheduleAssociation = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): SnapshotScheduleAssociation = js.native
-    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): SnapshotScheduleAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotScheduleAssociationState, opts: CustomResourceOptions): SnapshotScheduleAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotScheduleAssociation]
     
     /**
       * Returns true if the given object is an instance of SnapshotScheduleAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/redshift/snapshotScheduleAssociation", "SnapshotScheduleAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/snapshotScheduleAssociation.SnapshotScheduleAssociation */ Boolean]
   }
   
-  @js.native
   trait SnapshotScheduleAssociationArgs extends StObject {
     
     /**
       * The cluster identifier.
       */
-    val clusterIdentifier: Input[String] = js.native
+    val clusterIdentifier: Input[String]
     
     /**
       * The snapshot schedule identifier.
       */
-    val scheduleIdentifier: Input[String] = js.native
+    val scheduleIdentifier: Input[String]
   }
   object SnapshotScheduleAssociationArgs {
     
@@ -101,18 +98,17 @@ object snapshotScheduleAssociationMod {
     }
   }
   
-  @js.native
   trait SnapshotScheduleAssociationState extends StObject {
     
     /**
       * The cluster identifier.
       */
-    val clusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The snapshot schedule identifier.
       */
-    val scheduleIdentifier: js.UndefOr[Input[String]] = js.native
+    val scheduleIdentifier: js.UndefOr[Input[String]] = js.undefined
   }
   object SnapshotScheduleAssociationState {
     

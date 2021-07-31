@@ -2,146 +2,144 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricAlarm extends StObject {
   
   /**
     * Indicates whether actions should be executed during any changes to the alarm state.
     */
-  var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.native
+  var ActionsEnabled: js.UndefOr[typings.awsSdk.cloudwatchMod.ActionsEnabled] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the ALARM state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var AlarmActions: js.UndefOr[ResourceList] = js.native
+  var AlarmActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
     */
-  var AlarmArn: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmArn] = js.native
+  var AlarmArn: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmArn] = js.undefined
   
   /**
     * The time stamp of the last update to the alarm configuration.
     */
-  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var AlarmConfigurationUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The description of the alarm.
     */
-  var AlarmDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmDescription] = js.native
+  var AlarmDescription: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmDescription] = js.undefined
   
   /**
     * The name of the alarm.
     */
-  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.native
+  var AlarmName: js.UndefOr[typings.awsSdk.cloudwatchMod.AlarmName] = js.undefined
   
   /**
     * The arithmetic operation to use when comparing the specified statistic and threshold. The specified statistic value is used as the first operand.
     */
-  var ComparisonOperator: js.UndefOr[typings.awsSdk.cloudwatchMod.ComparisonOperator] = js.native
+  var ComparisonOperator: js.UndefOr[typings.awsSdk.cloudwatchMod.ComparisonOperator] = js.undefined
   
   /**
     * The number of data points that must be breaching to trigger the alarm.
     */
-  var DatapointsToAlarm: js.UndefOr[typings.awsSdk.cloudwatchMod.DatapointsToAlarm] = js.native
+  var DatapointsToAlarm: js.UndefOr[typings.awsSdk.cloudwatchMod.DatapointsToAlarm] = js.undefined
   
   /**
     * The dimensions for the metric associated with the alarm.
     */
-  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.native
+  var Dimensions: js.UndefOr[typings.awsSdk.cloudwatchMod.Dimensions] = js.undefined
   
   /**
     * Used only for alarms based on percentiles. If ignore, the alarm state does not change during periods with too few data points to be statistically significant. If evaluate or this parameter is not used, the alarm is always evaluated and possibly changes state no matter how many data points are available.
     */
-  var EvaluateLowSampleCountPercentile: js.UndefOr[typings.awsSdk.cloudwatchMod.EvaluateLowSampleCountPercentile] = js.native
+  var EvaluateLowSampleCountPercentile: js.UndefOr[typings.awsSdk.cloudwatchMod.EvaluateLowSampleCountPercentile] = js.undefined
   
   /**
     * The number of periods over which data is compared to the specified threshold.
     */
-  var EvaluationPeriods: js.UndefOr[typings.awsSdk.cloudwatchMod.EvaluationPeriods] = js.native
+  var EvaluationPeriods: js.UndefOr[typings.awsSdk.cloudwatchMod.EvaluationPeriods] = js.undefined
   
   /**
     * The percentile statistic for the metric associated with the alarm. Specify a value between p0.0 and p100.
     */
-  var ExtendedStatistic: js.UndefOr[typings.awsSdk.cloudwatchMod.ExtendedStatistic] = js.native
+  var ExtendedStatistic: js.UndefOr[typings.awsSdk.cloudwatchMod.ExtendedStatistic] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the INSUFFICIENT_DATA state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var InsufficientDataActions: js.UndefOr[ResourceList] = js.native
+  var InsufficientDataActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * The name of the metric associated with the alarm, if this is an alarm based on a single metric.
     */
-  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.native
+  var MetricName: js.UndefOr[typings.awsSdk.cloudwatchMod.MetricName] = js.undefined
   
   /**
     * An array of MetricDataQuery structures, used in an alarm based on a metric math expression. Each structure either retrieves a metric or performs a math expression. One item in the Metrics array is the math expression that the alarm watches. This expression by designated by having ReturnData set to true.
     */
-  var Metrics: js.UndefOr[MetricDataQueries] = js.native
+  var Metrics: js.UndefOr[MetricDataQueries] = js.undefined
   
   /**
     * The namespace of the metric associated with the alarm.
     */
-  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.native
+  var Namespace: js.UndefOr[typings.awsSdk.cloudwatchMod.Namespace] = js.undefined
   
   /**
     * The actions to execute when this alarm transitions to the OK state from any other state. Each action is specified as an Amazon Resource Name (ARN).
     */
-  var OKActions: js.UndefOr[ResourceList] = js.native
+  var OKActions: js.UndefOr[ResourceList] = js.undefined
   
   /**
     * The period, in seconds, over which the statistic is applied.
     */
-  var Period: js.UndefOr[typings.awsSdk.cloudwatchMod.Period] = js.native
+  var Period: js.UndefOr[typings.awsSdk.cloudwatchMod.Period] = js.undefined
   
   /**
     * An explanation for the alarm state, in text format.
     */
-  var StateReason: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReason] = js.native
+  var StateReason: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReason] = js.undefined
   
   /**
     * An explanation for the alarm state, in JSON format.
     */
-  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.native
+  var StateReasonData: js.UndefOr[typings.awsSdk.cloudwatchMod.StateReasonData] = js.undefined
   
   /**
     * The time stamp of the last update to the alarm state.
     */
-  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var StateUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The state value for the alarm.
     */
-  var StateValue: js.UndefOr[typings.awsSdk.cloudwatchMod.StateValue] = js.native
+  var StateValue: js.UndefOr[typings.awsSdk.cloudwatchMod.StateValue] = js.undefined
   
   /**
     * The statistic for the metric associated with the alarm, other than percentile. For percentile statistics, use ExtendedStatistic.
     */
-  var Statistic: js.UndefOr[typings.awsSdk.cloudwatchMod.Statistic] = js.native
+  var Statistic: js.UndefOr[typings.awsSdk.cloudwatchMod.Statistic] = js.undefined
   
   /**
     * The value to compare with the specified statistic.
     */
-  var Threshold: js.UndefOr[typings.awsSdk.cloudwatchMod.Threshold] = js.native
+  var Threshold: js.UndefOr[typings.awsSdk.cloudwatchMod.Threshold] = js.undefined
   
   /**
     * In an alarm based on an anomaly detection model, this is the ID of the ANOMALY_DETECTION_BAND function used as the threshold for the alarm.
     */
-  var ThresholdMetricId: js.UndefOr[MetricId] = js.native
+  var ThresholdMetricId: js.UndefOr[MetricId] = js.undefined
   
   /**
     * Sets how this alarm is to handle missing data points. If this parameter is omitted, the default behavior of missing is used.
     */
-  var TreatMissingData: js.UndefOr[typings.awsSdk.cloudwatchMod.TreatMissingData] = js.native
+  var TreatMissingData: js.UndefOr[typings.awsSdk.cloudwatchMod.TreatMissingData] = js.undefined
   
   /**
     * The unit of the metric associated with the alarm.
     */
-  var Unit: js.UndefOr[StandardUnit] = js.native
+  var Unit: js.UndefOr[StandardUnit] = js.undefined
 }
 object MetricAlarm {
   

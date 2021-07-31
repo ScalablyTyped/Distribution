@@ -3,31 +3,29 @@ package typings.vscode.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputBoxOptions extends StObject {
   
   /**
     * Set to `true` to keep the input box open when focus moves to another part of the editor or to another window.
     */
-  var ignoreFocusOut: js.UndefOr[Boolean] = js.native
+  var ignoreFocusOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls if a password input is shown. Password input hides the typed text.
     */
-  var password: js.UndefOr[Boolean] = js.native
+  var password: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional string to show as placeholder in the input box to guide the user what to type.
     */
-  var placeHolder: js.UndefOr[String] = js.native
+  var placeHolder: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display underneath the input box.
     */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
   /**
     * An optional function that will be called to validate input and to give a hint
@@ -42,12 +40,12 @@ trait InputBoxOptions extends StObject {
       /* value */ String, 
       js.UndefOr[String | Null | (Thenable[js.UndefOr[String | Null]])]
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The value to prefill in the input box.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * Selection of the prefilled [`value`](#InputBoxOptions.value). Defined as tuple of two number where the
@@ -55,7 +53,7 @@ trait InputBoxOptions extends StObject {
     * word will be selected, when empty (start equals end) only the cursor will be set,
     * otherwise the defined range will be selected.
     */
-  var valueSelection: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var valueSelection: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
 }
 object InputBoxOptions {
   

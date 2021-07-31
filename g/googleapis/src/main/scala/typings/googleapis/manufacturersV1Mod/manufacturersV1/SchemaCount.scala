@@ -2,25 +2,23 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The number of products in a single package. For more information, see
   * https://support.google.com/manufacturers/answer/6124116#count.
   */
-@js.native
 trait SchemaCount extends StObject {
   
   /**
     * The unit in which these products are counted.
     */
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
   /**
     * The numeric value of the number of products in a package.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaCount {
   

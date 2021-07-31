@@ -2,61 +2,59 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for Customer Resource object in Directory API.
   */
-@js.native
 trait SchemaCustomer extends StObject {
   
   /**
     * The customer&#39;s secondary contact email address. This email address
     * cannot be on the same domain as the customerDomain
     */
-  var alternateEmail: js.UndefOr[String] = js.native
+  var alternateEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The customer&#39;s creation time (Readonly)
     */
-  var customerCreationTime: js.UndefOr[String] = js.native
+  var customerCreationTime: js.UndefOr[String] = js.undefined
   
   /**
     * The customer&#39;s primary domain name string. Do not include the www
     * prefix when creating a new customer.
     */
-  var customerDomain: js.UndefOr[String] = js.native
+  var customerDomain: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID for the customer&#39;s G Suite account. (Readonly)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the resource as a customer. Value: admin#directory#customer
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The customer&#39;s ISO 639-2 language code. The default value is en-US
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The customer&#39;s contact phone number in E.164 format.
     */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
   /**
     * The customer&#39;s postal address information.
     */
-  var postalAddress: js.UndefOr[SchemaCustomerPostalAddress] = js.native
+  var postalAddress: js.UndefOr[SchemaCustomerPostalAddress] = js.undefined
 }
 object SchemaCustomer {
   

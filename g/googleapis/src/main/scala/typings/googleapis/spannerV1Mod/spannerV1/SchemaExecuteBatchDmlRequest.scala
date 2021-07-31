@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for ExecuteBatchDml
   */
-@js.native
 trait SchemaExecuteBatchDmlRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaExecuteBatchDmlRequest extends StObject {
     * used in the same space as the seqno in ExecuteSqlRequest. See more
     * details in ExecuteSqlRequest.
     */
-  var seqno: js.UndefOr[String] = js.native
+  var seqno: js.UndefOr[String] = js.undefined
   
   /**
     * The list of statements to execute in this batch. Statements are executed
@@ -25,14 +23,14 @@ trait SchemaExecuteBatchDmlRequest extends StObject {
     * first failed statement; the remaining statements will not run.  REQUIRES:
     * statements_size() &gt; 0.
     */
-  var statements: js.UndefOr[js.Array[SchemaStatement]] = js.native
+  var statements: js.UndefOr[js.Array[SchemaStatement]] = js.undefined
   
   /**
     * The transaction to use. A ReadWrite transaction is required. Single-use
     * transactions are not supported (to avoid replay).  The caller must either
     * supply an existing transaction ID or begin a new transaction.
     */
-  var transaction: js.UndefOr[SchemaTransactionSelector] = js.native
+  var transaction: js.UndefOr[SchemaTransactionSelector] = js.undefined
 }
 object SchemaExecuteBatchDmlRequest {
   

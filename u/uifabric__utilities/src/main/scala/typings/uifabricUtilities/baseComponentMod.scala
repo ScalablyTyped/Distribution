@@ -10,14 +10,17 @@ import typings.uifabricUtilities.idisposableMod.IDisposable
 import typings.uifabricUtilities.warnWarnMod.ISettingsMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseComponentMod {
   
+  @JSImport("@uifabric/utilities/lib/BaseComponent", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
   @js.native
-  class BaseComponent[TProps /* <: IBaseProps[_] */, TState] protected ()
+  class BaseComponent[TProps /* <: IBaseProps[js.Any] */, TState] protected ()
     extends Component[TProps, TState, js.Any] {
     /**
       * BaseComponent constructor
@@ -78,8 +81,8 @@ object baseComponentMod {
     /**
       * Updates the componentRef (by calling it with "this" when necessary.)
       */
-    /* protected */ def _updateComponentRef(currentProps: IBaseProps[_]): Unit = js.native
-    /* protected */ def _updateComponentRef(currentProps: IBaseProps[_], newProps: IBaseProps[_]): Unit = js.native
+    /* protected */ def _updateComponentRef(currentProps: IBaseProps[js.Any]): Unit = js.native
+    /* protected */ def _updateComponentRef(currentProps: IBaseProps[js.Any], newProps: IBaseProps[js.Any]): Unit = js.native
     
     /**
       * Warns when props are required if a condition is met.
@@ -131,24 +134,23 @@ object baseComponentMod {
   /* static members */
   object BaseComponent {
     
+    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * @deprecated Use React's error boundaries instead.
       */
-    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
-    @js.native
-    def onError(): Unit = js.native
-    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
-    @js.native
-    def onError(errorMessage: js.UndefOr[scala.Nothing], ex: js.Any): Unit = js.native
-    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
-    @js.native
-    def onError(errorMessage: String): Unit = js.native
-    @JSImport("@uifabric/utilities/lib/BaseComponent", "BaseComponent.onError")
-    @js.native
-    def onError(errorMessage: String, ex: js.Any): Unit = js.native
+    @scala.inline
+    def onError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")().asInstanceOf[Unit]
+    @scala.inline
+    def onError(errorMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onError(errorMessage: String, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def onError(errorMessage: Unit, ex: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onError")(errorMessage.asInstanceOf[js.Any], ex.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("@uifabric/utilities/lib/BaseComponent", "nullRender")
-  @js.native
-  def nullRender(): Element | Null = js.native
+  @scala.inline
+  def nullRender(): Element | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("nullRender")().asInstanceOf[Element | Null]
 }

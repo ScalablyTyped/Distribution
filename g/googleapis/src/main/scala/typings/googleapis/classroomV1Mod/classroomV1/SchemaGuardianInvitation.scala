@@ -2,41 +2,39 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An invitation to become the guardian of a specified user, sent to a
   * specified email address.
   */
-@js.native
 trait SchemaGuardianInvitation extends StObject {
   
   /**
     * The time that this invitation was created.  Read-only.
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier for this invitation.  Read-only.
     */
-  var invitationId: js.UndefOr[String] = js.native
+  var invitationId: js.UndefOr[String] = js.undefined
   
   /**
     * Email address that the invitation was sent to. This field is only visible
     * to domain administrators.
     */
-  var invitedEmailAddress: js.UndefOr[String] = js.native
+  var invitedEmailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The state that this invitation is in.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the student (in standard format)
     */
-  var studentId: js.UndefOr[String] = js.native
+  var studentId: js.UndefOr[String] = js.undefined
 }
 object SchemaGuardianInvitation {
   

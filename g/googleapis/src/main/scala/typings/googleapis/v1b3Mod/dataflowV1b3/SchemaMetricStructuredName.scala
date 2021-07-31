@@ -3,13 +3,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies a metric, by describing the source which generated the metric.
   */
-@js.native
 trait SchemaMetricStructuredName extends StObject {
   
   /**
@@ -20,19 +18,19 @@ trait SchemaMetricStructuredName extends StObject {
     * PCollections in the SDK will have context[&#39;pcollection&#39;] =
     * &lt;pcollection-name&gt;.
     */
-  var context: js.UndefOr[StringDictionary[String]] = js.native
+  var context: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Worker-defined metric name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Origin (namespace) of metric name. May be blank for user-define metrics;
     * will be &quot;dataflow&quot; for metrics defined by the Dataflow service
     * or SDK.
     */
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
 }
 object SchemaMetricStructuredName {
   

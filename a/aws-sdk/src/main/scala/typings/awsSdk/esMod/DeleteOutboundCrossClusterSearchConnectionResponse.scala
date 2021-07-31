@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteOutboundCrossClusterSearchConnectionResponse extends StObject {
   
   /**
     * Specifies the OutboundCrossClusterSearchConnection of deleted outbound connection. 
     */
-  var CrossClusterSearchConnection: js.UndefOr[OutboundCrossClusterSearchConnection] = js.native
+  var CrossClusterSearchConnection: js.UndefOr[OutboundCrossClusterSearchConnection] = js.undefined
 }
 object DeleteOutboundCrossClusterSearchConnectionResponse {
   

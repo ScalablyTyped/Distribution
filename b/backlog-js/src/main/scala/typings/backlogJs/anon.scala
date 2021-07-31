@@ -5,21 +5,19 @@ import typings.backlogJs.mod.Params
 import typings.std.FormData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object AccessToken {
     
@@ -55,14 +53,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var host: String = js.native
+    var host: String
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
   }
   object Code {
     
@@ -89,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Array[BacklogErrorMessage] = js.native
+    var errors: js.Array[BacklogErrorMessage]
   }
   object Errors {
     
@@ -113,14 +109,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object Host {
     
@@ -150,14 +145,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
-    var method: String = js.native
+    var method: String
     
-    var params: js.UndefOr[Params | FormData] = js.native
+    var params: js.UndefOr[Params | FormData] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object Method {
     
@@ -184,12 +178,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RefreshToken extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var refreshToken: String = js.native
+    var refreshToken: String
   }
   object RefreshToken {
     

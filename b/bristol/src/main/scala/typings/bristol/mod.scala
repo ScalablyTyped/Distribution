@@ -3,7 +3,6 @@ package typings.bristol
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -31,18 +30,17 @@ object mod extends Shortcut {
     def withLowestSeverity(severity: String): js.Any = js.native
   }
   
-  @js.native
   trait LogData extends StObject {
     
-    var code: js.UndefOr[Double] = js.native
+    var code: js.UndefOr[Double] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var error: js.UndefOr[LogError] = js.native
+    var error: js.UndefOr[LogError] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object LogData {
     
@@ -87,14 +85,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait LogError extends StObject {
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var reason: js.UndefOr[js.Any] = js.native
+    var reason: js.UndefOr[js.Any] = js.undefined
     
-    var stack: js.UndefOr[js.Any] = js.native
+    var stack: js.UndefOr[js.Any] = js.undefined
   }
   object LogError {
     

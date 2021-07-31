@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,13 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * identifier. This message is used when generalizations or analysis must take
   * into account that multiple rows correspond to the same entity.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2EntityId extends StObject {
   
   /**
     * Composite key indicating which field contains the entity identifier.
     */
-  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[SchemaGooglePrivacyDlpV2FieldId] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2EntityId {
   

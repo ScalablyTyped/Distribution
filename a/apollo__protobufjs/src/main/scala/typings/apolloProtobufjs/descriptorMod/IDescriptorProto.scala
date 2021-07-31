@@ -2,31 +2,29 @@ package typings.apolloProtobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDescriptorProto extends StObject {
   
-  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto]] = js.native
+  var enumType: js.UndefOr[js.Array[IEnumDescriptorProto]] = js.undefined
   
-  var extension: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.native
+  var `extension`: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.undefined
   
-  var extensionRange: js.UndefOr[js.Array[IDescriptorProtoExtensionRange]] = js.native
+  var extensionRange: js.UndefOr[js.Array[IDescriptorProtoExtensionRange]] = js.undefined
   
-  var field: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.native
+  var field: js.UndefOr[js.Array[IFieldDescriptorProto]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var nestedType: js.UndefOr[js.Array[IDescriptorProto]] = js.native
+  var nestedType: js.UndefOr[js.Array[IDescriptorProto]] = js.undefined
   
-  var oneofDecl: js.UndefOr[js.Array[IOneofDescriptorProto]] = js.native
+  var oneofDecl: js.UndefOr[js.Array[IOneofDescriptorProto]] = js.undefined
   
-  var options: js.UndefOr[IMessageOptions] = js.native
+  var options: js.UndefOr[IMessageOptions] = js.undefined
   
-  var reservedName: js.UndefOr[js.Array[String]] = js.native
+  var reservedName: js.UndefOr[js.Array[String]] = js.undefined
   
-  var reservedRange: js.UndefOr[js.Array[IDescriptorProtoReservedRange]] = js.native
+  var reservedRange: js.UndefOr[js.Array[IDescriptorProtoReservedRange]] = js.undefined
 }
 object IDescriptorProto {
   

@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResponseStats extends StObject {
   
   // query time in milliseconds
-  var elapsed_time_ms: js.UndefOr[Double] = js.native
+  var elapsed_time_ms: js.UndefOr[Double] = js.undefined
   
   // rows scanned as part of query execution
-  var rows_scanned: js.UndefOr[Double] = js.native
+  var rows_scanned: js.UndefOr[Double] = js.undefined
 }
 object QueryResponseStats {
   

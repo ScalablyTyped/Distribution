@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileLobApp extends MobileApp {
+trait MobileLobApp
+  extends StObject
+     with MobileApp {
   
   // The internal committed content version.
-  var committedContentVersion: js.UndefOr[NullableOption[String]] = js.native
+  var committedContentVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The list of content versions for this app.
-  var contentVersions: js.UndefOr[NullableOption[js.Array[MobileAppContent]]] = js.native
+  var contentVersions: js.UndefOr[NullableOption[js.Array[MobileAppContent]]] = js.undefined
   
   // The name of the main Lob application file.
-  var fileName: js.UndefOr[NullableOption[String]] = js.native
+  var fileName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The total size, including all uploaded files.
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object MobileLobApp {
   

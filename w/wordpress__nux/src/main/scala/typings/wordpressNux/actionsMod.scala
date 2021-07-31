@@ -2,24 +2,23 @@ package typings.wordpressNux
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionsMod {
   
-  @JSImport("@wordpress/nux/store/actions", "disableTips")
+  @JSImport("@wordpress/nux/store/actions", JSImport.Namespace)
   @js.native
-  def disableTips(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/nux/store/actions", "dismissTip")
-  @js.native
-  def dismissTip(id: String): Unit = js.native
+  @scala.inline
+  def disableTips(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableTips")().asInstanceOf[Unit]
   
-  @JSImport("@wordpress/nux/store/actions", "enableTips")
-  @js.native
-  def enableTips(): Unit = js.native
+  @scala.inline
+  def dismissTip(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dismissTip")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@wordpress/nux/store/actions", "triggerGuide")
-  @js.native
-  def triggerGuide(tipIds: js.Array[String]): Unit = js.native
+  @scala.inline
+  def enableTips(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableTips")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def triggerGuide(tipIds: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("triggerGuide")(tipIds.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

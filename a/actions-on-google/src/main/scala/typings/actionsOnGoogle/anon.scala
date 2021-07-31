@@ -6,17 +6,15 @@ import typings.actionsOnGoogle.apiV1Mod.challengeType
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ack extends StObject {
     
-    var ack: js.UndefOr[Boolean] = js.native
+    var ack: js.UndefOr[Boolean] = js.undefined
     
-    var pin: js.UndefOr[String] = js.native
+    var pin: js.UndefOr[String] = js.undefined
   }
   object Ack {
     
@@ -43,10 +41,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Devices extends StObject {
     
-    var devices: States = js.native
+    var devices: States
   }
   object Devices {
     
@@ -64,16 +61,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Intent extends StObject {
     
-    var intent: actionDotdevicesDotDISCONNECT = js.native
+    var intent: actionDotdevicesDotDISCONNECT
   }
   object Intent {
     
     @scala.inline
-    def apply(intent: actionDotdevicesDotDISCONNECT): Intent = {
-      val __obj = js.Dynamic.literal(intent = intent.asInstanceOf[js.Any])
+    def apply(): Intent = {
+      val __obj = js.Dynamic.literal(intent = "action.devices.DISCONNECT")
       __obj.asInstanceOf[Intent]
     }
     
@@ -86,11 +82,11 @@ object anon {
   }
   
   /* Inlined actions-on-google.actions-on-google/dist/common.ProtoAny<string, actions-on-google.actions-on-google/dist/common.JsonObject> */
-  @js.native
   trait ProtoAnystringJsonObject
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var `@type`: String = js.native
+    var `@type`: String
   }
   object ProtoAnystringJsonObject {
     
@@ -109,15 +105,14 @@ object anon {
     }
   }
   
-  @js.native
   trait States extends StObject {
     
-    var states: ApiClientObjectMap[_] = js.native
+    var states: ApiClientObjectMap[js.Any]
   }
   object States {
     
     @scala.inline
-    def apply(states: ApiClientObjectMap[_]): States = {
+    def apply(states: ApiClientObjectMap[js.Any]): States = {
       val __obj = js.Dynamic.literal(states = states.asInstanceOf[js.Any])
       __obj.asInstanceOf[States]
     }
@@ -126,14 +121,13 @@ object anon {
     implicit class StatesMutableBuilder[Self <: States] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStates(value: ApiClientObjectMap[_]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
+      def setStates(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "states", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Type[TType] extends StObject {
     
-    var `@type`: TType = js.native
+    var `@type`: TType
   }
   object Type {
     
@@ -145,17 +139,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeMutableBuilder[Self <: Type[_], TType] (val x: Self with Type[TType]) extends AnyVal {
+    implicit class TypeMutableBuilder[Self <: Type[?], TType] (val x: Self & Type[TType]) extends AnyVal {
       
       @scala.inline
       def `set@type`(value: TType): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait TypeChallengeType extends StObject {
     
-    var `type`: challengeType = js.native
+    var `type`: challengeType
   }
   object TypeChallengeType {
     

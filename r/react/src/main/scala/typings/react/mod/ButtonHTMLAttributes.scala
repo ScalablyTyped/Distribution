@@ -5,33 +5,33 @@ import typings.react.reactStrings.reset
 import typings.react.reactStrings.submit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ButtonHTMLAttributes[T] extends HTMLAttributes[T] {
+trait ButtonHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var form: js.UndefOr[String] = js.native
+  var form: js.UndefOr[String] = js.undefined
   
-  var formAction: js.UndefOr[String] = js.native
+  var formAction: js.UndefOr[String] = js.undefined
   
-  var formEncType: js.UndefOr[String] = js.native
+  var formEncType: js.UndefOr[String] = js.undefined
   
-  var formMethod: js.UndefOr[String] = js.native
+  var formMethod: js.UndefOr[String] = js.undefined
   
-  var formNoValidate: js.UndefOr[Boolean] = js.native
+  var formNoValidate: js.UndefOr[Boolean] = js.undefined
   
-  var formTarget: js.UndefOr[String] = js.native
+  var formTarget: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[submit | reset | button] = js.native
+  var `type`: js.UndefOr[submit | reset | button] = js.undefined
   
-  var value: js.UndefOr[String | js.Array[String] | Double] = js.native
+  var value: js.UndefOr[String | js.Array[String] | Double] = js.undefined
 }
 object ButtonHTMLAttributes {
   
@@ -42,7 +42,7 @@ object ButtonHTMLAttributes {
   }
   
   @scala.inline
-  implicit class ButtonHTMLAttributesMutableBuilder[Self <: ButtonHTMLAttributes[_], T] (val x: Self with ButtonHTMLAttributes[T]) extends AnyVal {
+  implicit class ButtonHTMLAttributesMutableBuilder[Self <: ButtonHTMLAttributes[?], T] (val x: Self & ButtonHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])

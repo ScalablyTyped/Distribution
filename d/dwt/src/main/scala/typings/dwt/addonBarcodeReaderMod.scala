@@ -5,7 +5,6 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumBarcodeFormat2
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addonBarcodeReaderMod {
@@ -44,34 +43,33 @@ object addonBarcodeReaderMod {
     def updateRuntimeSettings(settings: RuntimeSettings): js.Promise[RuntimeSettings] = js.native
   }
   
-  @js.native
   trait FurtherModes extends StObject {
     
-    var accompanyingTextRecognitionModes: js.Array[Double] = js.native
+    var accompanyingTextRecognitionModes: js.Array[Double]
     
-    var barcodeColourModes: js.Array[Double] = js.native
+    var barcodeColourModes: js.Array[Double]
     
-    var barcodeComplementModes: js.Array[Double] = js.native
+    var barcodeComplementModes: js.Array[Double]
     
-    var colourClusteringModes: js.Array[Double] = js.native
+    var colourClusteringModes: js.Array[Double]
     
-    var colourConversionModes: js.Array[Double] = js.native
+    var colourConversionModes: js.Array[Double]
     
-    var deformationResistingModes: js.Array[Double] = js.native
+    var deformationResistingModes: js.Array[Double]
     
-    var dpmCodeReadingModes: js.Array[Double] = js.native
+    var dpmCodeReadingModes: js.Array[Double]
     
-    var grayscaleTransformationModes: js.Array[Double] = js.native
+    var grayscaleTransformationModes: js.Array[Double]
     
-    var imagePreprocessingModes: js.Array[Double] = js.native
+    var imagePreprocessingModes: js.Array[Double]
     
-    var regionPredetectionModes: js.Array[Double] = js.native
+    var regionPredetectionModes: js.Array[Double]
     
-    var textAssistedCorrectionMode: Double = js.native
+    var textAssistedCorrectionMode: Double
     
-    var textFilterModes: js.Array[Double] = js.native
+    var textFilterModes: js.Array[Double]
     
-    var textureDetectionModes: js.Array[Double] = js.native
+    var textureDetectionModes: js.Array[Double]
   }
   object FurtherModes {
     
@@ -175,63 +173,62 @@ object addonBarcodeReaderMod {
     }
   }
   
-  @js.native
   trait LocalizationResult extends StObject {
     
     /**
       * The angle of a barcode. Values range from 0 to 360.
       */
-    var angle: Double = js.native
+    var angle: Double
     
-    var moduleSize: Double = js.native
+    var moduleSize: Double
     
-    var pageNumber: Double = js.native
+    var pageNumber: Double
     
-    var regionName: Double = js.native
+    var regionName: Double
     
-    var resultCoordinateType: Double = js.native
+    var resultCoordinateType: Double
     
-    var terminatePhase: Double = js.native
+    var terminatePhase: Double
     
     /**
       * The X coordinate of the left-most point.
       */
-    var x1: Double = js.native
+    var x1: Double
     
     /**
       * The X coordinate of the second point in a clockwise direction.
       */
-    var x2: Double = js.native
+    var x2: Double
     
     /**
       * The X coordinate of the third point in a clockwise direction.
       */
-    var x3: Double = js.native
+    var x3: Double
     
     /**
       * The X coordinate of the fourth point in a clockwise direction.
       */
-    var x4: Double = js.native
+    var x4: Double
     
     /**
       * The Y coordinate of the left-most point.
       */
-    var y1: Double = js.native
+    var y1: Double
     
     /**
       * The Y coordinate of the second point in a clockwise direction.
       */
-    var y2: Double = js.native
+    var y2: Double
     
     /**
       * The Y coordinate of the third point in a clockwise direction.
       */
-    var y3: Double = js.native
+    var y3: Double
     
     /**
       * The Y coordinate of the fourth point in a clockwise direction.
       */
-    var y4: Double = js.native
+    var y4: Double
   }
   object LocalizationResult {
     
@@ -303,18 +300,17 @@ object addonBarcodeReaderMod {
     }
   }
   
-  @js.native
   trait Region extends StObject {
     
-    var regionBottom: Double = js.native
+    var regionBottom: Double
     
-    var regionLeft: Double = js.native
+    var regionLeft: Double
     
-    var regionMeasuredByPercentage: Double = js.native
+    var regionMeasuredByPercentage: Double
     
-    var regionRight: Double = js.native
+    var regionRight: Double
     
-    var regionTop: Double = js.native
+    var regionTop: Double
   }
   object Region {
     
@@ -350,18 +346,17 @@ object addonBarcodeReaderMod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var accompanyingTextBytes: js.Array[Double] = js.native
+    var accompanyingTextBytes: js.Array[Double]
     
-    var clarity: Double = js.native
+    var clarity: Double
     
-    var confidence: Double = js.native
+    var confidence: Double
     
-    var deformation: Double = js.native
+    var deformation: Double
     
-    var resultType: Double = js.native
+    var resultType: Double
   }
   object Result {
     
@@ -400,52 +395,51 @@ object addonBarcodeReaderMod {
     }
   }
   
-  @js.native
   trait RuntimeSettings extends StObject {
     
-    var barcodeFormatIds: Double = js.native
+    var barcodeFormatIds: Double
     
-    var barcodeFormatIds_2: Double = js.native
+    var barcodeFormatIds_2: Double
     
-    var binarizationModes: js.Array[Double] = js.native
+    var binarizationModes: js.Array[Double]
     
-    var deblurLevel: Double = js.native
+    var deblurLevel: Double
     
-    var expectedBarcodesCount: Double = js.native
+    var expectedBarcodesCount: Double
     
-    var furtherModes: FurtherModes = js.native
+    var furtherModes: FurtherModes
     
-    var intermediateResultSavingMode: Double = js.native
+    var intermediateResultSavingMode: Double
     
-    var intermediateResultTypes: Double = js.native
+    var intermediateResultTypes: Double
     
-    var localizationModes: js.Array[Double] = js.native
+    var localizationModes: js.Array[Double]
     
-    var maxAlgorithmThreadCount: Double = js.native
+    var maxAlgorithmThreadCount: Double
     
-    var minBarcodeTextLength: Double = js.native
+    var minBarcodeTextLength: Double
     
-    var minResultConfidence: Double = js.native
+    var minResultConfidence: Double
     
-    var pdfRasterDPI: Double = js.native
+    var pdfRasterDPI: Double
     
-    var pdfReadingMode: Double = js.native
+    var pdfReadingMode: Double
     
-    var region: Region = js.native
+    var region: Region
     
-    var resultCoordinateType: Double = js.native
+    var resultCoordinateType: Double
     
-    var returnBarcodeZoneClarity: Double = js.native
+    var returnBarcodeZoneClarity: Double
     
-    var scaleDownThreshold: Double = js.native
+    var scaleDownThreshold: Double
     
-    var scaleUpModes: js.Array[Double] = js.native
+    var scaleUpModes: js.Array[Double]
     
-    var terminatePhase: Double = js.native
+    var terminatePhase: Double
     
-    var textResultOrderModes: js.Array[Double] = js.native
+    var textResultOrderModes: js.Array[Double]
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object RuntimeSettings {
     
@@ -561,53 +555,52 @@ object addonBarcodeReaderMod {
     }
   }
   
-  @js.native
   trait TextResult extends StObject {
     
     /**
       * Barcode result content in a byte array.
       */
-    var barcodeBytes: js.Array[Double] = js.native
+    var barcodeBytes: js.Array[Double]
     
     /**
       * The barcode format.
       */
-    var barcodeFormat: EnumBarcodeFormat | Double = js.native
+    var barcodeFormat: EnumBarcodeFormat | Double
     
     /**
       * Barcode formats as a string.
       */
-    var barcodeFormatString: String = js.native
+    var barcodeFormatString: String
     
     /**
       * Extra barcode formats as a string.
       */
-    var barcodeFormatString_2: String = js.native
+    var barcodeFormatString_2: String
     
     /**
       * Extra barcde formats.
       */
-    var barcodeFormat_2: EnumBarcodeFormat2 | Double = js.native
+    var barcodeFormat_2: EnumBarcodeFormat2 | Double
     
     /**
       * The barcode result text.
       */
-    var barcodeText: String = js.native
+    var barcodeText: String
     
     /**
       * Detailed result information.
       */
-    var detailedResult: js.Any = js.native
+    var detailedResult: js.Any
     
     /**
       * The corresponding localization result.
       */
-    var localizationResult: LocalizationResult = js.native
+    var localizationResult: LocalizationResult
     
     /**
       * Other information
       */
-    var results: js.Array[Result] = js.native
+    var results: js.Array[Result]
   }
   object TextResult {
     
@@ -667,7 +660,8 @@ object addonBarcodeReaderMod {
   
   @js.native
   trait TextResults
-    extends Array[js.Any] {
+    extends StObject
+       with Array[js.Any] {
     
     var description: js.UndefOr[String] = js.native
     

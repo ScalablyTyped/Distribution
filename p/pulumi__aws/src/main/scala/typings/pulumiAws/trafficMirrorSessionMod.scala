@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trafficMirrorSessionMod {
@@ -74,6 +73,10 @@ object trafficMirrorSessionMod {
   /* static members */
   object TrafficMirrorSession {
     
+    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TrafficMirrorSession resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -83,70 +86,64 @@ object trafficMirrorSessionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession.get")
-    @js.native
-    def get(name: String, id: Input[ID]): TrafficMirrorSession = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): TrafficMirrorSession = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorSessionState): TrafficMirrorSession = js.native
-    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TrafficMirrorSessionState, opts: CustomResourceOptions): TrafficMirrorSession = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): TrafficMirrorSession = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorSession]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): TrafficMirrorSession = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorSession]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorSessionState): TrafficMirrorSession = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorSession]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TrafficMirrorSessionState, opts: CustomResourceOptions): TrafficMirrorSession = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TrafficMirrorSession]
     
     /**
       * Returns true if the given object is an instance of TrafficMirrorSession.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/trafficMirrorSession", "TrafficMirrorSession.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorSession.TrafficMirrorSession */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorSession.TrafficMirrorSession */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/trafficMirrorSession.TrafficMirrorSession */ Boolean]
   }
   
-  @js.native
   trait TrafficMirrorSessionArgs extends StObject {
     
     /**
       * A description of the traffic mirror session.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the source network interface. Not all network interfaces are eligible as mirror sources. On EC2 instances only nitro based instances support mirroring.
       */
-    val networkInterfaceId: Input[String] = js.native
+    val networkInterfaceId: Input[String]
     
     /**
       * The number of bytes in each packet to mirror. These are bytes after the VXLAN header. Do not specify this parameter when you want to mirror the entire packet. To mirror a subset of the packet, set this to the length (in bytes) that you want to mirror.
       */
-    val packetLength: js.UndefOr[Input[Double]] = js.native
+    val packetLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * - The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets.
       */
-    val sessionNumber: Input[Double] = js.native
+    val sessionNumber: Input[Double]
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * ID of the traffic mirror filter to be used
       */
-    val trafficMirrorFilterId: Input[String] = js.native
+    val trafficMirrorFilterId: Input[String]
     
     /**
       * ID of the traffic mirror target to be used
       */
-    val trafficMirrorTargetId: Input[String] = js.native
+    val trafficMirrorTargetId: Input[String]
     
     /**
       * - The VXLAN ID for the Traffic Mirror session. For more information about the VXLAN protocol, see RFC 7348. If you do not specify a VirtualNetworkId, an account-wide unique id is chosen at random.
       */
-    val virtualNetworkId: js.UndefOr[Input[Double]] = js.native
+    val virtualNetworkId: js.UndefOr[Input[Double]] = js.undefined
   }
   object TrafficMirrorSessionArgs {
     
@@ -202,53 +199,52 @@ object trafficMirrorSessionMod {
     }
   }
   
-  @js.native
   trait TrafficMirrorSessionState extends StObject {
     
     /**
       * The ARN of the traffic mirror session.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the traffic mirror session.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the source network interface. Not all network interfaces are eligible as mirror sources. On EC2 instances only nitro based instances support mirroring.
       */
-    val networkInterfaceId: js.UndefOr[Input[String]] = js.native
+    val networkInterfaceId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of bytes in each packet to mirror. These are bytes after the VXLAN header. Do not specify this parameter when you want to mirror the entire packet. To mirror a subset of the packet, set this to the length (in bytes) that you want to mirror.
       */
-    val packetLength: js.UndefOr[Input[Double]] = js.native
+    val packetLength: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * - The session number determines the order in which sessions are evaluated when an interface is used by multiple sessions. The first session with a matching filter is the one that mirrors the packets.
       */
-    val sessionNumber: js.UndefOr[Input[Double]] = js.native
+    val sessionNumber: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * ID of the traffic mirror filter to be used
       */
-    val trafficMirrorFilterId: js.UndefOr[Input[String]] = js.native
+    val trafficMirrorFilterId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * ID of the traffic mirror target to be used
       */
-    val trafficMirrorTargetId: js.UndefOr[Input[String]] = js.native
+    val trafficMirrorTargetId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * - The VXLAN ID for the Traffic Mirror session. For more information about the VXLAN protocol, see RFC 7348. If you do not specify a VirtualNetworkId, an account-wide unique id is chosen at random.
       */
-    val virtualNetworkId: js.UndefOr[Input[Double]] = js.native
+    val virtualNetworkId: js.UndefOr[Input[Double]] = js.undefined
   }
   object TrafficMirrorSessionState {
     

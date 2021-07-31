@@ -2,26 +2,24 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateDeviceFromPlacementRequest extends StObject {
   
   /**
     * The device ID that should be removed from the placement.
     */
-  var deviceTemplateName: DeviceTemplateName = js.native
+  var deviceTemplateName: DeviceTemplateName
   
   /**
     * The name of the placement that the device should be removed from.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The name of the project that contains the placement.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object DisassociateDeviceFromPlacementRequest {
   

@@ -3,24 +3,24 @@ package typings.fileSize
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("file-size", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Options */](bytes: Double): Required[T] with Result = js.native
-  @JSImport("file-size", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: Options */](bytes: Double, options: T): Required[T] with Result = js.native
+  @scala.inline
+  def apply[T /* <: Options */](bytes: Double): Required[T] & Result = ^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any]).asInstanceOf[Required[T] & Result]
+  @scala.inline
+  def apply[T /* <: Options */](bytes: Double, options: T): Required[T] & Result = (^.asInstanceOf[js.Dynamic].apply(bytes.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Required[T] & Result]
   
+  @JSImport("file-size", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Bits extends StObject {
     
-    var fixed: String = js.native
+    var fixed: String
     
-    var result: Double = js.native
+    var result: Double
   }
   object Bits {
     
@@ -41,18 +41,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Calculated extends StObject {
     
-    var bits: Bits = js.native
+    var bits: Bits
     
-    var fixed: String = js.native
+    var fixed: String
     
-    var magnitude: Double = js.native
+    var magnitude: Double
     
-    var result: Double = js.native
+    var result: Double
     
-    var suffix: String = js.native
+    var suffix: String
   }
   object Calculated {
     
@@ -82,12 +81,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var fixed: js.UndefOr[Double] = js.native
+    var fixed: js.UndefOr[Double] = js.undefined
     
-    var spacer: js.UndefOr[String] = js.native
+    var spacer: js.UndefOr[String] = js.undefined
   }
   object Options {
     

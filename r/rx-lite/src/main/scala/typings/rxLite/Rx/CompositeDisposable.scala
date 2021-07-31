@@ -3,21 +3,21 @@ package typings.rxLite.Rx
 import typings.rxCore.Rx.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompositeDisposable extends IDisposable {
+trait CompositeDisposable
+  extends StObject
+     with IDisposable {
   
-  def add(item: IDisposable): Unit = js.native
+  def add(item: IDisposable): Unit
   
-  var isDisposed: Boolean = js.native
+  var isDisposed: Boolean
   
-  var length: Double = js.native
+  var length: Double
   
-  def remove(item: IDisposable): Boolean = js.native
+  def remove(item: IDisposable): Boolean
   
-  def toArray(): js.Array[IDisposable] = js.native
+  def toArray(): js.Array[IDisposable]
 }
 object CompositeDisposable {
   

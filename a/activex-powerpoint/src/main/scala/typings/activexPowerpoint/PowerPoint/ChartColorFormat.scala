@@ -2,28 +2,26 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartColorFormat extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ChartColorFormat_typekey")
-  var PowerPointDotChartColorFormat_typekey: ChartColorFormat = js.native
+  var PowerPointDotChartColorFormat_typekey: ChartColorFormat
   
-  val RGB: Double = js.native
+  val RGB: Double
   
-  var SchemeColor: Double = js.native
+  var SchemeColor: Double
   
-  val Type: Double = js.native
+  val Type: Double
   
-  val _Default: Double = js.native
+  val _Default: Double
 }
 object ChartColorFormat {
   

@@ -7,14 +7,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioMod {
   
   @JSImport("@ionic/core/dist/types/components/radio/radio", "Radio")
   @js.native
-  class Radio () extends ComponentInterface {
+  class Radio ()
+    extends StObject
+       with ComponentInterface {
     
     var buttonEl: js.Any = js.native
     

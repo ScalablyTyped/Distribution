@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCsvOptions extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait SchemaCsvOptions extends StObject {
     * are treated as bad records, and if there are too many bad records, an
     * invalid error is returned in the job result. The default value is false.
     */
-  var allowJaggedRows: js.UndefOr[Boolean] = js.native
+  var allowJaggedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Indicates if BigQuery should allow quoted data sections that
     * contain newline characters in a CSV file. The default value is false.
     */
-  var allowQuotedNewlines: js.UndefOr[Boolean] = js.native
+  var allowQuotedNewlines: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] The character encoding of the data. The supported values are
@@ -29,7 +27,7 @@ trait SchemaCsvOptions extends StObject {
     * data after the raw, binary data has been split using the values of the
     * quote and fieldDelimiter properties.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The separator for fields in a CSV file. BigQuery converts the
@@ -38,7 +36,7 @@ trait SchemaCsvOptions extends StObject {
     * supports the escape sequence &quot;\t&quot; to specify a tab separator.
     * The default value is a comma (&#39;,&#39;).
     */
-  var fieldDelimiter: js.UndefOr[String] = js.native
+  var fieldDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The value that is used to quote data sections in a CSV file.
@@ -49,14 +47,14 @@ trait SchemaCsvOptions extends StObject {
     * string. If your data contains quoted newline characters, you must also
     * set the allowQuotedNewlines property to true.
     */
-  var quote: js.UndefOr[String] = js.native
+  var quote: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The number of rows at the top of a CSV file that BigQuery will
     * skip when reading the data. The default value is 0. This property is
     * useful if you have header rows in the file that should be skipped.
     */
-  var skipLeadingRows: js.UndefOr[String] = js.native
+  var skipLeadingRows: js.UndefOr[String] = js.undefined
 }
 object SchemaCsvOptions {
   

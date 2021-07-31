@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRichEdit.ParagraphPropertiesChanged event.
   */
-@js.native
-trait ASPxClientRichEditParagraphPropertiesChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientRichEditParagraphPropertiesChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the changed paragraph's index.
     */
-  var paragraphIndex: Double = js.native
+  var paragraphIndex: Double
   
   /**
     * Gets the active sub-document's identifier.
     */
-  var subDocumentId: Double = js.native
+  var subDocumentId: Double
 }
 object ASPxClientRichEditParagraphPropertiesChangedEventArgs {
   

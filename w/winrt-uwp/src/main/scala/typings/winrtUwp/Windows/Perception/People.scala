@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Perception
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object People {
   
-  @js.native
   trait HeadPose extends StObject {
     
-    var forwardDirection: js.Any = js.native
+    var forwardDirection: js.Any
     
     /* unmapped type */
-    var position: js.Any = js.native
+    var position: js.Any
     
     /* unmapped type */
-    var upDirection: js.Any = js.native
+    var upDirection: js.Any
   }
   object HeadPose {
     

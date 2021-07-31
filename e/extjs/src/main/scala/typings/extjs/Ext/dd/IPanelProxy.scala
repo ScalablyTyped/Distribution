@@ -6,35 +6,35 @@ import typings.extjs.Ext.panel.IPanel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPanelProxy extends IBase {
+trait IPanelProxy
+  extends StObject
+     with IBase {
   
   /** [Method] Gets the proxy s element
     * @returns Ext.Element The proxy's element
     */
-  var getEl: js.UndefOr[js.Function0[IElement]] = js.native
+  var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Gets the proxy s ghost Panel
     * @returns Ext.panel.Panel The proxy's ghost Panel
     */
-  var getGhost: js.UndefOr[js.Function0[IPanel]] = js.native
+  var getGhost: js.UndefOr[js.Function0[IPanel]] = js.undefined
   
   /** [Method] Gets the proxy element
     * @returns Ext.Element The proxy's element
     */
-  var getProxy: js.UndefOr[js.Function0[IElement]] = js.native
+  var getProxy: js.UndefOr[js.Function0[IElement]] = js.undefined
   
   /** [Method] Hides the proxy */
-  var hide: js.UndefOr[js.Function0[Unit]] = js.native
+  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var insertProxy: js.UndefOr[Boolean] = js.native
+  var insertProxy: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var moveOnDrag: js.UndefOr[Boolean] = js.native
+  var moveOnDrag: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Moves the proxy to a different position in the DOM
     * @param parentNode HTMLElement The proxy's parent DOM node
@@ -42,13 +42,13 @@ trait IPanelProxy extends IBase {
     */
   var moveProxy: js.UndefOr[
     js.Function2[/* parentNode */ js.UndefOr[HTMLElement], /* before */ js.UndefOr[HTMLElement], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Ext.panel.Panel) */
-  var panel: js.UndefOr[IPanel] = js.native
+  var panel: js.UndefOr[IPanel] = js.undefined
   
   /** [Method] Shows the proxy */
-  var show: js.UndefOr[js.Function0[Unit]] = js.native
+  var show: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IPanelProxy {
   

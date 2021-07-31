@@ -2,23 +2,21 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfvcItemRequestData extends StObject {
   
   /**
     * If true, include metadata about the file type
     */
-  var includeContentMetadata: Boolean = js.native
+  var includeContentMetadata: Boolean
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
-  var itemDescriptors: js.Array[TfvcItemDescriptor] = js.native
+  var itemDescriptors: js.Array[TfvcItemDescriptor]
 }
 object TfvcItemRequestData {
   

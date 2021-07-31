@@ -3,19 +3,17 @@ package typings.uiGrid.mod
 import typings.uiGrid.anon.AVG_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISharedTreeConstants extends StObject {
   
-  var COLLAPSED: String = js.native
+  var COLLAPSED: String
   
-  var EXPANDED: String = js.native
+  var EXPANDED: String
   
-  var aggregation: AVG_ = js.native
+  var aggregation: AVG_
   
-  var rowHeaderColName: String = js.native
+  var rowHeaderColName: String
 }
 object ISharedTreeConstants {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FulfillmentActivity extends StObject {
   
   /**
     *  A description of the Lambda function that is run to fulfill the intent. 
     */
-  var codeHook: js.UndefOr[CodeHook] = js.native
+  var codeHook: js.UndefOr[CodeHook] = js.undefined
   
   /**
     *  How the intent should be fulfilled, either by running a Lambda function or by returning the slot data to the client application. 
     */
-  var `type`: FulfillmentActivityType = js.native
+  var `type`: FulfillmentActivityType
 }
 object FulfillmentActivity {
   

@@ -2,25 +2,23 @@ package typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * request interfaces
   ************************/
 /** Parameters for the `getVoice` operation. */
-@js.native
 trait GetVoiceParams extends StObject {
   
   /** The customization ID (GUID) of a custom voice model for which information is to be returned. You must make the request with service credentials created for the instance of the service that owns the custom model. Omit the parameter to see information about the specified voice with no customization. */
-  var customization_id: js.UndefOr[String] = js.native
+  var customization_id: js.UndefOr[String] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** The voice for which information is to be returned. */
-  var voice: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.GetVoiceConstants.Voice | String = js.native
+  var voice: typings.watsonDeveloperCloud.textToSpeechV1GeneratedMod.GetVoiceConstants.Voice | String
 }
 object GetVoiceParams {
   

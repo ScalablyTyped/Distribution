@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultKmsKeyMod {
@@ -33,6 +32,10 @@ object defaultKmsKeyMod {
   /* static members */
   object DefaultKmsKey {
     
+    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DefaultKmsKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,35 +45,29 @@ object defaultKmsKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState): DefaultKmsKey = js.native
-    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): DefaultKmsKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultKmsKeyState): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DefaultKmsKeyState, opts: CustomResourceOptions): DefaultKmsKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DefaultKmsKey]
     
     /**
       * Returns true if the given object is an instance of DefaultKmsKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ebs/defaultKmsKey", "DefaultKmsKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ebs/defaultKmsKey.DefaultKmsKey */ Boolean]
   }
   
-  @js.native
   trait DefaultKmsKeyArgs extends StObject {
     
     /**
       * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.
       */
-    val keyArn: Input[String] = js.native
+    val keyArn: Input[String]
   }
   object DefaultKmsKeyArgs {
     
@@ -88,13 +85,12 @@ object defaultKmsKeyMod {
     }
   }
   
-  @js.native
   trait DefaultKmsKeyState extends StObject {
     
     /**
       * The ARN of the AWS Key Management Service (AWS KMS) customer master key (CMK) to use to encrypt the EBS volume.
       */
-    val keyArn: js.UndefOr[Input[String]] = js.native
+    val keyArn: js.UndefOr[Input[String]] = js.undefined
   }
   object DefaultKmsKeyState {
     

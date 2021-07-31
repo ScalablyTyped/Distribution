@@ -2,31 +2,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A combination of a source range and how to extend that source.
   */
-@js.native
 trait SchemaSourceAndDestination extends StObject {
   
   /**
     * The dimension that data should be filled into.
     */
-  var dimension: js.UndefOr[String] = js.native
+  var dimension: js.UndefOr[String] = js.undefined
   
   /**
     * The number of rows or columns that data should be filled into. Positive
     * numbers expand beyond the last row or last column of the source. Negative
     * numbers expand before the first row or first column of the source.
     */
-  var fillLength: js.UndefOr[Double] = js.native
+  var fillLength: js.UndefOr[Double] = js.undefined
   
   /**
     * The location of the data to use as the source of the autofill.
     */
-  var source: js.UndefOr[SchemaGridRange] = js.native
+  var source: js.UndefOr[SchemaGridRange] = js.undefined
 }
 object SchemaSourceAndDestination {
   

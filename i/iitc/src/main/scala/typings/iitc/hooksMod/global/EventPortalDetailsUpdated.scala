@@ -4,19 +4,17 @@ import typings.iitc.iitctypesMod.IITC.Portal
 import typings.iitc.iitctypesMod.IITC.PortalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventPortalDetailsUpdated extends StObject {
   
-  var guid: String = js.native
+  var guid: String
   
-  var portal: Portal = js.native
+  var portal: Portal
   
-  var portalData: PortalData = js.native
+  var portalData: PortalData
   
-  var portalDetails: js.Any = js.native
+  var portalDetails: js.Any
 }
 object EventPortalDetailsUpdated {
   

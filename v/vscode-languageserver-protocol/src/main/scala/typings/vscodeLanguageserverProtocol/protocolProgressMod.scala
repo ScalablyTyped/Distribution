@@ -12,7 +12,6 @@ import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.
 import typings.vscodeLanguageserverProtocol.vscodeLanguageserverProtocolStrings.report
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object protocolProgressMod {
@@ -26,23 +25,22 @@ object protocolProgressMod {
   
   object WorkDoneProgressCancelNotification {
     
-    type HandlerSignature = NotificationHandler[WorkDoneProgressCancelParams]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.progress", "WorkDoneProgressCancelNotification.type")
     @js.native
     val `type`: ProtocolNotificationType[WorkDoneProgressCancelParams, Unit] = js.native
+    
+    type HandlerSignature = NotificationHandler[WorkDoneProgressCancelParams]
   }
   
   object WorkDoneProgressCreateRequest {
     
-    type HandlerSignature = RequestHandler[WorkDoneProgressCreateParams, Unit, Unit]
-    
     @JSImport("vscode-languageserver-protocol/lib/protocol.progress", "WorkDoneProgressCreateRequest.type")
     @js.native
     val `type`: ProtocolRequestType[WorkDoneProgressCreateParams, Unit, scala.Nothing, Unit, Unit] = js.native
+    
+    type HandlerSignature = RequestHandler[WorkDoneProgressCreateParams, Unit, Unit]
   }
   
-  @js.native
   trait WorkDoneProgressBegin extends StObject {
     
     /**
@@ -50,9 +48,9 @@ object protocolProgressMod {
       * long running operation. Clients that don't support cancellation are allowed
       * to ignore the setting.
       */
-    var cancellable: js.UndefOr[Boolean] = js.native
+    var cancellable: js.UndefOr[Boolean] = js.undefined
     
-    var kind: begin = js.native
+    var kind: begin
     
     /**
       * Optional, more detailed associated progress message. Contains
@@ -61,7 +59,7 @@ object protocolProgressMod {
       * Examples: "3/25 files", "project/src/module2", "node_modules/some_dep".
       * If unset, the previous progress message (if any) is still valid.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * Optional progress percentage to display (value 100 is considered 100%).
@@ -71,7 +69,7 @@ object protocolProgressMod {
       * The value should be steadily rising. Clients are free to ignore values
       * that are not following this rule.
       */
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
     
     /**
       * Mandatory title of the progress operation. Used to briefly inform about
@@ -79,13 +77,13 @@ object protocolProgressMod {
       *
       * Examples: "Indexing" or "Linking dependencies".
       */
-    var title: String = js.native
+    var title: String
   }
   object WorkDoneProgressBegin {
     
     @scala.inline
-    def apply(kind: begin, title: String): WorkDoneProgressBegin = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    def apply(title: String): WorkDoneProgressBegin = {
+      val __obj = js.Dynamic.literal(kind = "begin", title = title.asInstanceOf[js.Any])
       __obj.asInstanceOf[WorkDoneProgressBegin]
     }
     
@@ -118,13 +116,12 @@ object protocolProgressMod {
     }
   }
   
-  @js.native
   trait WorkDoneProgressCancelParams extends StObject {
     
     /**
       * The token to be used to report progress.
       */
-    var token: ProgressToken = js.native
+    var token: ProgressToken
   }
   object WorkDoneProgressCancelParams {
     
@@ -142,13 +139,12 @@ object protocolProgressMod {
     }
   }
   
-  @js.native
   trait WorkDoneProgressClientCapabilities extends StObject {
     
     /**
       * Window specific client capabilities.
       */
-    var window: js.UndefOr[`3`] = js.native
+    var window: js.UndefOr[`3`] = js.undefined
   }
   object WorkDoneProgressClientCapabilities {
     
@@ -169,13 +165,12 @@ object protocolProgressMod {
     }
   }
   
-  @js.native
   trait WorkDoneProgressCreateParams extends StObject {
     
     /**
       * The token to be used to report progress.
       */
-    var token: ProgressToken = js.native
+    var token: ProgressToken
   }
   object WorkDoneProgressCreateParams {
     
@@ -193,22 +188,21 @@ object protocolProgressMod {
     }
   }
   
-  @js.native
   trait WorkDoneProgressEnd extends StObject {
     
-    var kind: end = js.native
+    var kind: end
     
     /**
       * Optional, a final message indicating to for example indicate the outcome
       * of the operation.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object WorkDoneProgressEnd {
     
     @scala.inline
-    def apply(kind: end): WorkDoneProgressEnd = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): WorkDoneProgressEnd = {
+      val __obj = js.Dynamic.literal(kind = "end")
       __obj.asInstanceOf[WorkDoneProgressEnd]
     }
     
@@ -226,7 +220,6 @@ object protocolProgressMod {
     }
   }
   
-  @js.native
   trait WorkDoneProgressReport extends StObject {
     
     /**
@@ -236,9 +229,9 @@ object protocolProgressMod {
       * Clients that don't support cancellation or don't support control the button's
       * enablement state are allowed to ignore the setting.
       */
-    var cancellable: js.UndefOr[Boolean] = js.native
+    var cancellable: js.UndefOr[Boolean] = js.undefined
     
-    var kind: report = js.native
+    var kind: report
     
     /**
       * Optional, more detailed associated progress message. Contains
@@ -247,7 +240,7 @@ object protocolProgressMod {
       * Examples: "3/25 files", "project/src/module2", "node_modules/some_dep".
       * If unset, the previous progress message (if any) is still valid.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * Optional progress percentage to display (value 100 is considered 100%).
@@ -257,13 +250,13 @@ object protocolProgressMod {
       * The value should be steadily rising. Clients are free to ignore values
       * that are not following this rule.
       */
-    var percentage: js.UndefOr[Double] = js.native
+    var percentage: js.UndefOr[Double] = js.undefined
   }
   object WorkDoneProgressReport {
     
     @scala.inline
-    def apply(kind: report): WorkDoneProgressReport = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+    def apply(): WorkDoneProgressReport = {
+      val __obj = js.Dynamic.literal(kind = "report")
       __obj.asInstanceOf[WorkDoneProgressReport]
     }
     

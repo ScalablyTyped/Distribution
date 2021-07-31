@@ -2,13 +2,11 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ExecAction describes a &quot;run in container&quot; action.
   */
-@js.native
 trait SchemaExecAction extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaExecAction extends StObject {
     * status of 0 is treated as live/healthy and non-zero is unhealthy.
     * +optional
     */
-  var command: js.UndefOr[String] = js.native
+  var command: js.UndefOr[String] = js.undefined
 }
 object SchemaExecAction {
   

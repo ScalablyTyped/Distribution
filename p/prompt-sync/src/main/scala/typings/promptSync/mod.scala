@@ -2,7 +2,6 @@ package typings.promptSync
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,23 +15,24 @@ object mod {
     * }
     * @returns {Function} prompt function
     */
+  @scala.inline
+  def apply(): Prompt = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Prompt]
+  @scala.inline
+  def apply(config: Config): Prompt = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Prompt]
+  
   @JSImport("prompt-sync", JSImport.Namespace)
   @js.native
-  def apply(): Prompt = js.native
-  @JSImport("prompt-sync", JSImport.Namespace)
-  @js.native
-  def apply(config: Config): Prompt = js.native
+  val ^ : js.Any = js.native
   
   type AutoCompleteFunction = js.Function1[/* input */ String, js.Array[String]]
   
-  @js.native
   trait Config extends StObject {
     
-    var autocomplete: js.UndefOr[AutoCompleteFunction] = js.native
+    var autocomplete: js.UndefOr[AutoCompleteFunction] = js.undefined
     
-    var history: js.UndefOr[History] = js.native
+    var history: js.UndefOr[History] = js.undefined
     
-    var sigint: js.UndefOr[Boolean] = js.native
+    var sigint: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -65,26 +65,25 @@ object mod {
     }
   }
   
-  @js.native
   trait History extends StObject {
     
-    def atEnd(): Boolean = js.native
+    def atEnd(): Boolean
     
-    def atPenultimate(): Boolean = js.native
+    def atPenultimate(): Boolean
     
-    def atStart(): Boolean = js.native
+    def atStart(): Boolean
     
-    def next(): String = js.native
+    def next(): String
     
-    def pastEnd(): Boolean = js.native
+    def pastEnd(): Boolean
     
-    def prev(): String = js.native
+    def prev(): String
     
-    def push(str: String): Unit = js.native
+    def push(str: String): Unit
     
-    def reset(): Unit = js.native
+    def reset(): Unit
     
-    def save(): Unit = js.native
+    def save(): Unit
   }
   object History {
     
@@ -136,16 +135,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var ask: js.UndefOr[String] = js.native
+    var ask: js.UndefOr[String] = js.undefined
     
-    var autocomplete: js.UndefOr[AutoCompleteFunction] = js.native
+    var autocomplete: js.UndefOr[AutoCompleteFunction] = js.undefined
     
-    var echo: js.UndefOr[String] = js.native
+    var echo: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object Option {
     

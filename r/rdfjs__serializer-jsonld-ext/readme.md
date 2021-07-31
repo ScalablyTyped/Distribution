@@ -11,8 +11,8 @@ JSON-LD serializer that implements the RDFJS Sink Interfaces and supports differ
 | Full name          | @rdfjs/serializer-jsonld-ext |
 | Keywords           | rdf, rdfjs, serializer, json-ld |
 | # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 1929 |
+| # dependents       | 2 |
+| # downloads        | 6875 |
 | # stars            | 0 |
 
 ## Links

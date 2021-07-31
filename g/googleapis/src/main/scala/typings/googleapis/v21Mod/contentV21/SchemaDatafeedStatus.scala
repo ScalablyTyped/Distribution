@@ -2,67 +2,65 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The status of a datafeed, i.e., the result of the last retrieval of the
   * datafeed computed asynchronously when the feed processing is finished.
   */
-@js.native
 trait SchemaDatafeedStatus extends StObject {
   
   /**
     * The country for which the status is reported, represented as a  CLDR
     * territory code.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the feed for which the status is reported.
     */
-  var datafeedId: js.UndefOr[String] = js.native
+  var datafeedId: js.UndefOr[String] = js.undefined
   
   /**
     * The list of errors occurring in the feed.
     */
-  var errors: js.UndefOr[js.Array[SchemaDatafeedStatusError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaDatafeedStatusError]] = js.undefined
   
   /**
     * The number of items in the feed that were processed.
     */
-  var itemsTotal: js.UndefOr[String] = js.native
+  var itemsTotal: js.UndefOr[String] = js.undefined
   
   /**
     * The number of items in the feed that were valid.
     */
-  var itemsValid: js.UndefOr[String] = js.native
+  var itemsValid: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#datafeedStatus&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The two-letter ISO 639-1 language for which the status is reported.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The last date at which the feed was uploaded.
     */
-  var lastUploadDate: js.UndefOr[String] = js.native
+  var lastUploadDate: js.UndefOr[String] = js.undefined
   
   /**
     * The processing status of the feed.
     */
-  var processingStatus: js.UndefOr[String] = js.native
+  var processingStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The list of errors occurring in the feed.
     */
-  var warnings: js.UndefOr[js.Array[SchemaDatafeedStatusError]] = js.native
+  var warnings: js.UndefOr[js.Array[SchemaDatafeedStatusError]] = js.undefined
 }
 object SchemaDatafeedStatus {
   

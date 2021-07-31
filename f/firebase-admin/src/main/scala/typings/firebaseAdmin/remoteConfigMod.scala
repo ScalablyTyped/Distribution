@@ -14,30 +14,32 @@ import typings.firebaseAdmin.firebaseNamespaceApiMod.app.App
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteConfigMod {
   
   object remoteConfig {
     
+    @scala.inline
+    def apply(): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RemoteConfig]
+    @scala.inline
+    def apply(app: App): RemoteConfig = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[RemoteConfig]
+    
     @JSImport("firebase-admin/lib/remote-config", "remoteConfig")
     @js.native
-    def apply(): RemoteConfig = js.native
-    @JSImport("firebase-admin/lib/remote-config", "remoteConfig")
-    @js.native
-    def apply(app: App): RemoteConfig = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Interface representing an explicit parameter value.
       */
-    @js.native
-    trait ExplicitParameterValue extends RemoteConfigParameterValue {
+    trait ExplicitParameterValue
+      extends StObject
+         with RemoteConfigParameterValue {
       
       /**
         * The `string` value that the parameter is set to.
         */
-      var value: String = js.native
+      var value: String
     }
     object ExplicitParameterValue {
       
@@ -58,13 +60,14 @@ object remoteConfigMod {
     /**
       * Interface representing an in-app-default value.
       */
-    @js.native
-    trait InAppDefaultValue extends RemoteConfigParameterValue {
+    trait InAppDefaultValue
+      extends StObject
+         with RemoteConfigParameterValue {
       
       /**
         * If `true`, the parameter is omitted from the parameter values returned to a client.
         */
-      var useInAppDefault: Boolean = js.native
+      var useInAppDefault: Boolean
     }
     object InAppDefaultValue {
       
@@ -85,36 +88,35 @@ object remoteConfigMod {
     /**
       * Interface representing options for Remote Config list versions operation.
       */
-    @js.native
     trait ListVersionsOptions extends StObject {
       
       /**
         * Specifies the latest update time to include in the results. Any entries updated on or after
         * this time are omitted.
         */
-      var endTime: js.UndefOr[Date | String] = js.native
+      var endTime: js.UndefOr[Date | String] = js.undefined
       
       /**
         * Specifies the newest version number to include in the results.
         * If specified, must be greater than zero. Defaults to the newest version.
         */
-      var endVersionNumber: js.UndefOr[String | Double] = js.native
+      var endVersionNumber: js.UndefOr[String | Double] = js.undefined
       
       /**
         * The maximum number of items to return per page.
         */
-      var pageSize: js.UndefOr[Double] = js.native
+      var pageSize: js.UndefOr[Double] = js.undefined
       
       /**
         * The `nextPageToken` value returned from a previous list versions request, if any.
         */
-      var pageToken: js.UndefOr[String] = js.native
+      var pageToken: js.UndefOr[String] = js.undefined
       
       /**
         * Specifies the earliest update time to include in the results. Any entries updated before this
         * time are omitted.
         */
-      var startTime: js.UndefOr[Date | String] = js.native
+      var startTime: js.UndefOr[Date | String] = js.undefined
     }
     object ListVersionsOptions {
       
@@ -162,19 +164,18 @@ object remoteConfigMod {
     /**
       * Interface representing a list of Remote Config template versions.
       */
-    @js.native
     trait ListVersionsResult extends StObject {
       
       /**
         * Token to retrieve the next page of results, or empty if there are no more results
         * in the list.
         */
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
       /**
         * A list of version metadata objects, sorted in reverse chronological order.
         */
-      var versions: js.Array[Version] = js.native
+      var versions: js.Array[Version]
     }
     object ListVersionsResult {
       
@@ -296,7 +297,6 @@ object remoteConfigMod {
       * A condition targets a specific group of users. A list of these conditions make up
       * part of a Remote Config template.
       */
-    @js.native
     trait RemoteConfigCondition extends StObject {
       
       /**
@@ -305,19 +305,19 @@ object remoteConfigMod {
         * {@link https://firebase.google.com/docs/remote-config/condition-reference condition expressions}
         * for the expected syntax of this field.
         */
-      var expression: String = js.native
+      var expression: String
       
       /**
         * A non-empty and unique name of this condition.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * The color associated with this condition for display purposes in the Firebase Console.
         * Not specifying this value results in the console picking an arbitrary color to associate
         * with the condition.
         */
-      var tagColor: js.UndefOr[TagColor] = js.native
+      var tagColor: js.UndefOr[TagColor] = js.undefined
     }
     object RemoteConfigCondition {
       
@@ -349,7 +349,6 @@ object remoteConfigMod {
       * At minimum, a `defaultValue` or a `conditionalValues` entry must be present for the
       * parameter to have any effect.
       */
-    @js.native
     trait RemoteConfigParameter extends StObject {
       
       /**
@@ -357,18 +356,18 @@ object remoteConfigMod {
         * (the one listed first in the Remote Config template's conditions list) determines the value of
         * this parameter.
         */
-      var conditionalValues: js.UndefOr[StringDictionary[RemoteConfigParameterValue]] = js.native
+      var conditionalValues: js.UndefOr[StringDictionary[RemoteConfigParameterValue]] = js.undefined
       
       /**
         * The value to set the parameter to, when none of the named conditions evaluate to `true`.
         */
-      var defaultValue: js.UndefOr[RemoteConfigParameterValue] = js.native
+      var defaultValue: js.UndefOr[RemoteConfigParameterValue] = js.undefined
       
       /**
         * A description for this parameter. Should not be over 100 characters and may contain any
         * Unicode characters.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
     }
     object RemoteConfigParameter {
       
@@ -406,14 +405,13 @@ object remoteConfigMod {
       * Grouping parameters is only for management purposes and does not affect client-side
       * fetching of parameter values.
       */
-    @js.native
     trait RemoteConfigParameterGroup extends StObject {
       
       /**
         * A description for the group. Its length must be less than or equal to 256 characters.
         * A description may contain any Unicode characters.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Map of parameter keys to their optional default values and optional conditional values for
@@ -421,7 +419,7 @@ object remoteConfigMod {
         * Remote Config template. An ungrouped parameter appears at the top level, whereas a
         * parameter organized within a group appears within its group's map of parameters.
         */
-      var parameters: StringDictionary[RemoteConfigParameter] = js.native
+      var parameters: StringDictionary[RemoteConfigParameter]
     }
     object RemoteConfigParameterGroup {
       
@@ -473,18 +471,17 @@ object remoteConfigMod {
     /**
       * Interface representing a Remote Config template.
       */
-    @js.native
     trait RemoteConfigTemplate extends StObject {
       
       /**
         * A list of conditions in descending order by priority.
         */
-      var conditions: js.Array[RemoteConfigCondition] = js.native
+      var conditions: js.Array[RemoteConfigCondition]
       
       /**
         * ETag of the current Remote Config template (readonly).
         */
-      val etag: String = js.native
+      val etag: String
       
       /**
         * Map of parameter group names to their parameter group objects.
@@ -492,17 +489,17 @@ object remoteConfigMod {
         * The name is limited to 256 characters and intended to be human-readable. Any Unicode
         * characters are allowed.
         */
-      var parameterGroups: StringDictionary[RemoteConfigParameterGroup] = js.native
+      var parameterGroups: StringDictionary[RemoteConfigParameterGroup]
       
       /**
         * Map of parameter keys to their optional default values and optional conditional values.
         */
-      var parameters: StringDictionary[RemoteConfigParameter] = js.native
+      var parameters: StringDictionary[RemoteConfigParameter]
       
       /**
         * Version information for the current Remote Config template.
         */
-      var version: js.UndefOr[Version] = js.native
+      var version: js.UndefOr[Version] = js.undefined
     }
     object RemoteConfigTemplate {
       
@@ -546,23 +543,22 @@ object remoteConfigMod {
     /**
       * Interface representing a Remote Config user.
       */
-    @js.native
     trait RemoteConfigUser extends StObject {
       
       /**
         * Email address. Output only.
         */
-      var email: String = js.native
+      var email: String
       
       /**
         * Image URL. Output only.
         */
-      var imageUrl: js.UndefOr[String] = js.native
+      var imageUrl: js.UndefOr[String] = js.undefined
       
       /**
         * Display name. Output only.
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object RemoteConfigUser {
       
@@ -652,53 +648,52 @@ object remoteConfigMod {
       * Config template is published. A version's description field may be specified in
       * `publishTemplate` calls.
       */
-    @js.native
     trait Version extends StObject {
       
       /**
         * The user-provided description of the corresponding Remote Config template.
         */
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
       /**
         * Indicates whether this Remote Config template was published before version history was
         * supported.
         */
-      var isLegacy: js.UndefOr[Boolean] = js.native
+      var isLegacy: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The version number of the Remote Config template that has become the current version
         * due to a rollback. Only present if this version is the result of a rollback.
         */
-      var rollbackSource: js.UndefOr[String] = js.native
+      var rollbackSource: js.UndefOr[String] = js.undefined
       
       /**
         * The origin of the template update action.
         */
-      var updateOrigin: js.UndefOr[REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED | CONSOLE | REST_API | ADMIN_SDK_NODE] = js.native
+      var updateOrigin: js.UndefOr[REMOTE_CONFIG_UPDATE_ORIGIN_UNSPECIFIED | CONSOLE | REST_API | ADMIN_SDK_NODE] = js.undefined
       
       /**
         * The timestamp of when this version of the Remote Config template was written to the
         * Remote Config backend.
         */
-      var updateTime: js.UndefOr[String] = js.native
+      var updateTime: js.UndefOr[String] = js.undefined
       
       /**
         * The type of the template update action.
         */
       var updateType: js.UndefOr[
             REMOTE_CONFIG_UPDATE_TYPE_UNSPECIFIED | INCREMENTAL_UPDATE | FORCED_UPDATE | ROLLBACK
-          ] = js.native
+          ] = js.undefined
       
       /**
         * Aggregation of all metadata fields about the account that performed the update.
         */
-      var updateUser: js.UndefOr[RemoteConfigUser] = js.native
+      var updateUser: js.UndefOr[RemoteConfigUser] = js.undefined
       
       /**
         * The version number of a Remote Config template.
         */
-      var versionNumber: js.UndefOr[String] = js.native
+      var versionNumber: js.UndefOr[String] = js.undefined
     }
     object Version {
       

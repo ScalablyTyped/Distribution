@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsS3BucketServerSideEncryptionConfiguration extends StObject {
   
   /**
     * The encryption rules that are applied to the S3 bucket.
     */
-  var Rules: js.UndefOr[AwsS3BucketServerSideEncryptionRules] = js.native
+  var Rules: js.UndefOr[AwsS3BucketServerSideEncryptionRules] = js.undefined
 }
 object AwsS3BucketServerSideEncryptionConfiguration {
   

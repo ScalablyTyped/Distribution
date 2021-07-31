@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimeBasedLinear extends StObject {
   
   /**
     * The number of minutes between each incremental traffic shift of a TimeBasedLinear deployment.
     */
-  var linearInterval: js.UndefOr[WaitTimeInMins] = js.native
+  var linearInterval: js.UndefOr[WaitTimeInMins] = js.undefined
   
   /**
     * The percentage of traffic that is shifted at the start of each increment of a TimeBasedLinear deployment.
     */
-  var linearPercentage: js.UndefOr[Percentage] = js.native
+  var linearPercentage: js.UndefOr[Percentage] = js.undefined
 }
 object TimeBasedLinear {
   

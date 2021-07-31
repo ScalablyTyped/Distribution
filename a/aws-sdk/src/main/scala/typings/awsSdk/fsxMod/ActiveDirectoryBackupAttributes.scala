@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveDirectoryBackupAttributes extends StObject {
   
   /**
     * The ID of the AWS Managed Microsoft Active Directory instance to which the file system is joined.
     */
-  var ActiveDirectoryId: js.UndefOr[DirectoryId] = js.native
+  var ActiveDirectoryId: js.UndefOr[DirectoryId] = js.undefined
   
   /**
     * The fully qualified domain name of the self-managed AD directory.
     */
-  var DomainName: js.UndefOr[ActiveDirectoryFullyQualifiedName] = js.native
+  var DomainName: js.UndefOr[ActiveDirectoryFullyQualifiedName] = js.undefined
 }
 object ActiveDirectoryBackupAttributes {
   

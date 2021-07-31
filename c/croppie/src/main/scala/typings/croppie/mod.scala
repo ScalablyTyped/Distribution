@@ -19,26 +19,26 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("croppie", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Croppie {
+  class ^ protected ()
+    extends StObject
+       with Croppie {
     def this(container: HTMLElement) = this()
     def this(container: HTMLElement, options: CroppieOptions) = this()
   }
   
-  @js.native
   trait CropData extends StObject {
     
-    var orientation: js.UndefOr[Double] = js.native
+    var orientation: js.UndefOr[Double] = js.undefined
     
-    var points: js.UndefOr[js.Array[Double]] = js.native
+    var points: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object CropData {
     
@@ -120,26 +120,25 @@ object mod {
     def setZoom(zoom: Double): Unit = js.native
   }
   
-  @js.native
   trait CroppieOptions extends StObject {
     
-    var boundary: js.UndefOr[Height] = js.native
+    var boundary: js.UndefOr[Height] = js.undefined
     
-    var customClass: js.UndefOr[String] = js.native
+    var customClass: js.UndefOr[String] = js.undefined
     
-    var enableExif: js.UndefOr[Boolean] = js.native
+    var enableExif: js.UndefOr[Boolean] = js.undefined
     
-    var enableOrientation: js.UndefOr[Boolean] = js.native
+    var enableOrientation: js.UndefOr[Boolean] = js.undefined
     
-    var enableZoom: js.UndefOr[Boolean] = js.native
+    var enableZoom: js.UndefOr[Boolean] = js.undefined
     
-    var enforceBoundary: js.UndefOr[Boolean] = js.native
+    var enforceBoundary: js.UndefOr[Boolean] = js.undefined
     
-    var mouseWheelZoom: js.UndefOr[Boolean] = js.native
+    var mouseWheelZoom: js.UndefOr[Boolean] = js.undefined
     
-    var showZoomer: js.UndefOr[Boolean] = js.native
+    var showZoomer: js.UndefOr[Boolean] = js.undefined
     
-    var viewport: js.UndefOr[typings.croppie.anon.Type] = js.native
+    var viewport: js.UndefOr[typings.croppie.anon.Type] = js.undefined
   }
   object CroppieOptions {
     
@@ -226,18 +225,17 @@ object mod {
     def webp: typings.croppie.croppieStrings.webp = "webp".asInstanceOf[typings.croppie.croppieStrings.webp]
   }
   
-  @js.native
   trait ResultOptions extends StObject {
     
-    var circle: js.UndefOr[Boolean] = js.native
+    var circle: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[Format] = js.native
+    var format: js.UndefOr[Format] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[viewport | original | Height] = js.native
+    var size: js.UndefOr[viewport | original | Height] = js.undefined
     
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object ResultOptions {
     

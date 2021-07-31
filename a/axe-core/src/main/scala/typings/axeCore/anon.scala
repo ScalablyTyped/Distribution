@@ -3,17 +3,15 @@ package typings.axeCore
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Application extends StObject {
     
-    var application: js.UndefOr[String] = js.native
+    var application: js.UndefOr[String] = js.undefined
     
-    var brand: js.UndefOr[String] = js.native
+    var brand: js.UndefOr[String] = js.undefined
   }
   object Application {
     
@@ -40,12 +38,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Callback extends StObject {
     
-    def callback(args: js.Any*): Unit = js.native
+    def callback(args: js.Any*): Unit
     
-    var id: String = js.native
+    var id: String
   }
   object Callback {
     
@@ -66,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var help: String = js.native
+    var help: String
   }
   object Description {
     
@@ -92,10 +88,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
   }
   object Enabled {
     
@@ -113,14 +108,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Fail extends StObject {
     
-    var fail: String | StringDictionary[String] = js.native
+    var fail: String | StringDictionary[String]
     
-    var incomplete: String | StringDictionary[String] = js.native
+    var incomplete: String | StringDictionary[String]
     
-    var pass: String | StringDictionary[String] = js.native
+    var pass: String | StringDictionary[String]
   }
   object Fail {
     

@@ -3,24 +3,22 @@ package typings.activexLibreoffice.com_.sun.star.sheet
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
 trait XGlobalSheetSettings extends StObject {
   
   /** specifies whether automatic completion of text in a cell is used. */
-  var DoAutoComplete: Boolean = js.native
+  var DoAutoComplete: Boolean
   
   /** specifies whether the enter key can be used to start editing a cell. */
-  var EnterEdit: Boolean = js.native
+  var EnterEdit: Boolean
   
   /** specifies whether formula references are extended when cells are inserted below or to the right of them. */
-  var ExpandReferences: Boolean = js.native
+  var ExpandReferences: Boolean
   
   /** specifies whether cell formatting is extended when entering data. */
-  var ExtendFormat: Boolean = js.native
+  var ExtendFormat: Boolean
   
   /**
     * specifies the update mode for external linked data.
@@ -31,37 +29,37 @@ trait XGlobalSheetSettings extends StObject {
     *
     * 2 = on demand
     */
-  var LinkUpdateMode: Double = js.native
+  var LinkUpdateMode: Double
   
   /** specifies whether the current selection is highlighted in column and row headers. */
-  var MarkHeader: Boolean = js.native
+  var MarkHeader: Boolean
   
   /**
     * contains the metric for all spreadsheet documents.
     * @see com.sun.star.util.MeasureUnit
     */
-  var Metric: Double = js.native
+  var Metric: Double
   
   /**
     * contains the direction the cursor moves after entering cells.
     * @see com.sun.star.sheet.MoveDirection
     */
-  var MoveDirection: Double = js.native
+  var MoveDirection: Double
   
   /** specifies whether the cursor is moved after entering into cells. */
-  var MoveSelection: Boolean = js.native
+  var MoveSelection: Boolean
   
   /** specifies whether all sheets or only selected sheets are printed. */
-  var PrintAllSheets: Boolean = js.native
+  var PrintAllSheets: Boolean
   
   /** specifies whether empty pages are printed. */
-  var PrintEmptyPages: Boolean = js.native
+  var PrintEmptyPages: Boolean
   
   /** specifies whether ranges are highlighted on the sheet when editing a formula. */
-  var RangeFinder: Boolean = js.native
+  var RangeFinder: Boolean
   
   /** specifies whether a warning is shown before replacing cells (i.e. when pasting from clipboard). */
-  var ReplaceCellsWarning: Boolean = js.native
+  var ReplaceCellsWarning: Boolean
   
   /**
     * contains the default scale for new spreadsheet documents (in percent).
@@ -74,26 +72,26 @@ trait XGlobalSheetSettings extends StObject {
     *
     * -3 = Page width
     */
-  var Scale: Double = js.native
+  var Scale: Double
   
   /**
     * contains the function that is displayed in the status bar.
     * @see com.sun.star.sheet.StatusBarFunction
     */
-  var StatusBarFunction: Double = js.native
+  var StatusBarFunction: Double
   
   /** specifies whether printer metrics are used for display. */
-  var UsePrinterMetrics: Boolean = js.native
+  var UsePrinterMetrics: Boolean
   
   /** specifies whether the enter key moves the cursor to the column it was in before using the tab key to change columns. */
-  var UseTabCol: Boolean = js.native
+  var UseTabCol: Boolean
   
   /**
     * contains the string lists used for sorting and filling.
     *
     * Each string contains the members of a list, separated by commas.
     */
-  var UserLists: SafeArray[String] = js.native
+  var UserLists: SafeArray[String]
 }
 object XGlobalSheetSettings {
   

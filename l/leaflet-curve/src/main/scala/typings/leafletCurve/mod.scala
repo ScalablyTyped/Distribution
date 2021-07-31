@@ -7,11 +7,14 @@ import typings.leaflet.mod.Path
 import typings.leaflet.mod.PathOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
+  
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("leaflet", "Curve")
   @js.native
@@ -42,7 +45,6 @@ object mod {
   /*
     * Drawing Bezier curves and other complex shapes.
     */
-  @JSImport("leaflet", "curve")
-  @js.native
-  def curve(path: js.Array[_], options: js.UndefOr[PathOptions]): Curve_ = js.native
+  @scala.inline
+  def curve(path: js.Array[js.Any], options: js.UndefOr[PathOptions]): Curve_ = (^.asInstanceOf[js.Dynamic].applyDynamic("curve")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Curve_]
 }

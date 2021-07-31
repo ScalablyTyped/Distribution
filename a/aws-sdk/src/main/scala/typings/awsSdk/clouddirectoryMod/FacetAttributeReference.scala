@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FacetAttributeReference extends StObject {
   
   /**
     * The target attribute name that is associated with the facet reference. See Attribute References for more information.
     */
-  var TargetAttributeName: AttributeName = js.native
+  var TargetAttributeName: AttributeName
   
   /**
     * The target facet name that is associated with the facet reference. See Attribute References for more information.
     */
-  var TargetFacetName: FacetName = js.native
+  var TargetFacetName: FacetName
 }
 object FacetAttributeReference {
   

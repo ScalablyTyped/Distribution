@@ -2,81 +2,79 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a Floodlight activity.
   */
-@js.native
 trait SchemaFloodlightActivity extends StObject {
   
   /**
     * Account ID of this floodlight activity. This is a read-only field that
     * can be left blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser ID of this floodlight activity. If this field is left blank,
     * the value will be copied over either from the activity group&#39;s
     * advertiser or the existing activity&#39;s advertiser.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser. This is a read-only,
     * auto-generated field.
     */
-  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Code type used for cache busting in the generated tag. Applicable only
     * when floodlightActivityGroupType is COUNTER and countingMethod is
     * STANDARD_COUNTING or UNIQUE_COUNTING.
     */
-  var cacheBustingType: js.UndefOr[String] = js.native
+  var cacheBustingType: js.UndefOr[String] = js.undefined
   
   /**
     * Counting method for conversions for this floodlight activity. This is a
     * required field.
     */
-  var countingMethod: js.UndefOr[String] = js.native
+  var countingMethod: js.UndefOr[String] = js.undefined
   
   /**
     * Dynamic floodlight tags.
     */
-  var defaultTags: js.UndefOr[js.Array[SchemaFloodlightActivityDynamicTag]] = js.native
+  var defaultTags: js.UndefOr[js.Array[SchemaFloodlightActivityDynamicTag]] = js.undefined
   
   /**
     * URL where this tag will be deployed. If specified, must be less than 256
     * characters long.
     */
-  var expectedUrl: js.UndefOr[String] = js.native
+  var expectedUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Floodlight activity group ID of this floodlight activity. This is a
     * required field.
     */
-  var floodlightActivityGroupId: js.UndefOr[String] = js.native
+  var floodlightActivityGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the associated floodlight activity group. This is a read-only
     * field.
     */
-  var floodlightActivityGroupName: js.UndefOr[String] = js.native
+  var floodlightActivityGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Tag string of the associated floodlight activity group. This is a
     * read-only field.
     */
-  var floodlightActivityGroupTagString: js.UndefOr[String] = js.native
+  var floodlightActivityGroupTagString: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the associated floodlight activity group. This is a read-only
     * field.
     */
-  var floodlightActivityGroupType: js.UndefOr[String] = js.native
+  var floodlightActivityGroupType: js.UndefOr[String] = js.undefined
   
   /**
     * Floodlight configuration ID of this floodlight activity. If this field is
@@ -84,86 +82,86 @@ trait SchemaFloodlightActivity extends StObject {
     * group&#39;s floodlight configuration or from the existing activity&#39;s
     * floodlight configuration.
     */
-  var floodlightConfigurationId: js.UndefOr[String] = js.native
+  var floodlightConfigurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the floodlight configuration. This is a
     * read-only, auto-generated field.
     */
-  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var floodlightConfigurationIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * The type of Floodlight tag this activity will generate. This is a
     * required field.
     */
-  var floodlightTagType: js.UndefOr[String] = js.native
+  var floodlightTagType: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this activity is archived.
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of this floodlight activity. This is a read-only, auto-generated
     * field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of this floodlight activity. This is a
     * read-only, auto-generated field.
     */
-  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var idDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#floodlightActivity&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this floodlight activity. This is a required field. Must be less
     * than 129 characters long and cannot contain quotes.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * General notes or implementation instructions for the tag.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * Publisher dynamic floodlight tags.
     */
-  var publisherTags: js.UndefOr[js.Array[SchemaFloodlightActivityPublisherDynamicTag]] = js.native
+  var publisherTags: js.UndefOr[js.Array[SchemaFloodlightActivityPublisherDynamicTag]] = js.undefined
   
   /**
     * Whether this tag should use SSL.
     */
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the floodlight activity is SSL-compliant. This is a read-only
     * field, its value detected by the system from the floodlight tags.
     */
-  var sslCompliant: js.UndefOr[Boolean] = js.native
+  var sslCompliant: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this floodlight activity must be SSL-compliant.
     */
-  var sslRequired: js.UndefOr[Boolean] = js.native
+  var sslRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Subaccount ID of this floodlight activity. This is a read-only field that
     * can be left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
   
   /**
     * Tag format type for the floodlight activity. If left blank, the tag
     * format will default to HTML.
     */
-  var tagFormat: js.UndefOr[String] = js.native
+  var tagFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the cat= parameter in the floodlight tag, which the ad servers
@@ -173,14 +171,14 @@ trait SchemaFloodlightActivity extends StObject {
     * string must also be unique among activities of the same activity group.
     * This field is read-only after insertion.
     */
-  var tagString: js.UndefOr[String] = js.native
+  var tagString: js.UndefOr[String] = js.undefined
   
   /**
     * List of the user-defined variables used by this conversion tag. These map
     * to the &quot;u[1-100]=&quot; in the tags. Each of these can have a user
     * defined type. Acceptable values are U1 to U100, inclusive.
     */
-  var userDefinedVariableTypes: js.UndefOr[js.Array[String]] = js.native
+  var userDefinedVariableTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaFloodlightActivity {
   

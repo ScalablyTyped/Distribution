@@ -3,21 +3,19 @@ package typings.algoliaClientSearch.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipleBatchResponse extends StObject {
   
   /**
     * The list of object ids.
     */
-  var objectIDs: js.Array[String] = js.native
+  var objectIDs: js.Array[String]
   
   /**
     * The operation task id. May be used to perform a wait task.
     */
-  var taskID: Record[String, Double] = js.native
+  var taskID: Record[String, Double]
 }
 object MultipleBatchResponse {
   

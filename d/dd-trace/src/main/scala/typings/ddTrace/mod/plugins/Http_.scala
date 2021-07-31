@@ -3,12 +3,12 @@ package typings.ddTrace.mod.plugins
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
-trait Http_ extends Instrumentation {
+trait Http_
+  extends StObject
+     with Instrumentation {
   
   /**
     * List of URLs that should not be instrumented. Takes precedence over
@@ -18,14 +18,14 @@ trait Http_ extends Instrumentation {
     */
   var blacklist: js.UndefOr[
     String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of headers to include in the span metadata.
     *
     * @default []
     */
-  var headers: js.UndefOr[js.Array[String]] = js.native
+  var headers: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Callback function to determine if there was an error. It should take a
@@ -34,7 +34,7 @@ trait Http_ extends Instrumentation {
     *
     * @default code => code < 500
     */
-  var validateStatus: js.UndefOr[js.Function1[/* code */ Double, Boolean]] = js.native
+  var validateStatus: js.UndefOr[js.Function1[/* code */ Double, Boolean]] = js.undefined
   
   /**
     * List of URLs that should be instrumented.
@@ -43,7 +43,7 @@ trait Http_ extends Instrumentation {
     */
   var whitelist: js.UndefOr[
     String | RegExp | (js.Function1[/* url */ String, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* url */ String, Boolean])])
-  ] = js.native
+  ] = js.undefined
 }
 object Http_ {
   

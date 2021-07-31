@@ -43,7 +43,6 @@ import typings.jwplayer.jwplayerStrings.volume
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -51,11 +50,11 @@ trait JWPlayer extends StObject {
   
   def addButton(icon: String, label: String, handler: js.Function0[Unit], id: String): Unit = js.native
   
-  def getAudioTracks(): js.Array[_] = js.native
+  def getAudioTracks(): js.Array[js.Any] = js.native
   
   def getBuffer(): Double = js.native
   
-  def getCaptionsList(): js.Array[_] = js.native
+  def getCaptionsList(): js.Array[js.Any] = js.native
   
   def getContainer(): HTMLElement = js.native
   
@@ -79,7 +78,7 @@ trait JWPlayer extends StObject {
   
   def getPlaybackRate(): Double = js.native
   
-  def getPlaylist(): js.Array[_] = js.native
+  def getPlaylist(): js.Array[js.Any] = js.native
   
   def getPlaylistIndex(): Double = js.native
   
@@ -88,7 +87,7 @@ trait JWPlayer extends StObject {
   
   def getPosition(): Double = js.native
   
-  def getQualityLevels(): js.Array[_] = js.native
+  def getQualityLevels(): js.Array[js.Any] = js.native
   
   def getRenderingMode(): String = js.native
   
@@ -103,7 +102,7 @@ trait JWPlayer extends StObject {
   def getWidth(): Double = js.native
   
   def load(playlist: String): Unit = js.native
-  def load(playlist: js.Array[_]): Unit = js.native
+  def load(playlist: js.Array[js.Any]): Unit = js.native
   
   def off(
     event: adClick | adCompanions | adComplete | adSkipped | adError | adRequest | adSchedule | adStarted | adImpression | adPlay | adPause | adTime | cast | meta | audioTracks | audioTrackChanged | firstFrame | buffer | bufferChange | captionsChanged | captionsList | controls | error | fullscreen | idle | levelsChanged | mute | volume | pause | play | playlist | playlistItem | ready | resize | visualQuality | playbackRateChanged | levels | seek | setupError | time

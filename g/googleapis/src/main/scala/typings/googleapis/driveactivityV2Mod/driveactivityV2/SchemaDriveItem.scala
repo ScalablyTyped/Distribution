@@ -2,45 +2,43 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Drive item, such as a file or folder.
   */
-@js.native
 trait SchemaDriveItem extends StObject {
   
   /**
     * The Drive item is a file.
     */
-  var file: js.UndefOr[SchemaFile] = js.native
+  var file: js.UndefOr[SchemaFile] = js.undefined
   
   /**
     * The Drive item is a folder.
     */
-  var folder: js.UndefOr[SchemaFolder] = js.native
+  var folder: js.UndefOr[SchemaFolder] = js.undefined
   
   /**
     * The MIME type of the Drive item.  See
     * https://developers.google.com/drive/v3/web/mime-types.
     */
-  var mimeType: js.UndefOr[String] = js.native
+  var mimeType: js.UndefOr[String] = js.undefined
   
   /**
     * The target Drive item. The format is &quot;items/ITEM_ID&quot;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Information about the owner of this Drive item.
     */
-  var owner: js.UndefOr[SchemaOwner] = js.native
+  var owner: js.UndefOr[SchemaOwner] = js.undefined
   
   /**
     * The title of the Drive item.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaDriveItem {
   

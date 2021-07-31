@@ -3,23 +3,22 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Boolean
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with Shape {
   
   @JSName("type")
-  val type_Boolean: boolean = js.native
+  val type_Boolean: boolean
 }
 object Boolean {
   
   @scala.inline
-  def apply(`type`: boolean): Boolean = {
+  def apply(): Boolean = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[Boolean]
   }
   

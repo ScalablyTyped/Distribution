@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserResponse extends StObject {
   
   /**
     * Information about the user account and configuration settings.
     */
-  var User: js.UndefOr[typings.awsSdk.connectMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.connectMod.User] = js.undefined
 }
 object DescribeUserResponse {
   

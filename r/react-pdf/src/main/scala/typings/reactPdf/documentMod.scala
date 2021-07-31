@@ -18,7 +18,6 @@ import typings.std.Error
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentMod {
@@ -30,28 +29,27 @@ object documentMod {
   
   type Document = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Defines custom class name(s), that will be added to rendered element.
       * @default 'react-pdf__Document'
       */
-    var className: js.UndefOr[String | js.Array[String]] = js.native
+    var className: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Defines what the component should display in case of an error.
       * @default 'Failed to load PDF file.'
       */
-    var error: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var error: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Defines link target for external links rendered in annotations.
       * Defaults to unset, which means that default behavior will be used.
       */
-    var externalLinkTarget: js.UndefOr[_self | _blank | _parent | _top] = js.native
+    var externalLinkTarget: js.UndefOr[_self | _blank | _parent | _top] = js.undefined
     
     /**
       * Defines what PDF should be displayed.
@@ -66,69 +64,69 @@ object documentMod {
       *   withCredentials - a boolean to indicate whether or not to include cookies in the request (defaults to false)
       *  )
       */
-    var file: js.Any = js.native
+    var file: js.Any
     
     /**
       * A function that behaves like ref,
       * but it's passed to main `<div>` rendered by `<Document>` component.
       */
-    var inputRef: js.UndefOr[LegacyRef[HTMLDivElement]] = js.native
+    var inputRef: js.UndefOr[LegacyRef[HTMLDivElement]] = js.undefined
     
     /**
       * Defines what the component should display while loading.
       * @default 'Loading PDF…'
       */
-    var loading: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var loading: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Defines what the component should display in case of no data.
       * @default 'No PDF file specified.'
       */
-    var noData: js.UndefOr[String | ReactElement | RenderFunction] = js.native
+    var noData: js.UndefOr[String | ReactElement | RenderFunction] = js.undefined
     
     /**
       * Function called when an outline item has been clicked.
       * Usually, you would like to use this callback to move the user wherever they requested to.
       */
-    var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ PageNumber, Unit]] = js.native
+    var onItemClick: js.UndefOr[js.Function1[/* hasPageNumber */ PageNumber, Unit]] = js.undefined
     
     /**
       * Function called in case of an error while loading a document.
       */
-    var onLoadError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onLoadError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called when the document is successfully loaded.
       */
-    var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ PDFDocumentProxy, Unit]] = js.native
+    var onLoadSuccess: js.UndefOr[js.Function1[/* pdf */ PDFDocumentProxy, Unit]] = js.undefined
     
     /**
       * Function called when a password-protected PDF is loaded.
       * Defaults to a function that prompts the user for password.
       */
-    var onPassword: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, _], Unit]] = js.native
+    var onPassword: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, js.Any], Unit]] = js.undefined
     
     /**
       * Function called in case of an error while retrieving document source from `file` prop.
       */
-    var onSourceError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var onSourceError: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
     /**
       * Function called when document source is successfully retrieved from `file` prop.
       */
-    var onSourceSuccess: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSourceSuccess: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * An object in which additional parameters to be passed to PDF.js can be defined.
       * For a full list of possible parameters, check PDF.js documentation on DocumentInitParameters.
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Defines the rendering mode of the document.
       * @default 'canvas'
       */
-    var renderMode: js.UndefOr[canvas | svg | none] = js.native
+    var renderMode: js.UndefOr[canvas | svg | none] = js.undefined
     
     /**
       * Defines the rotation of the document in degrees.
@@ -136,7 +134,7 @@ object documentMod {
       * even for the pages which were given rotate prop of their own.
       * 90 = rotated to the right, 180 = upside down, 270 = rotated to the left.
       */
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
   }
   object Props {
     
@@ -231,7 +229,7 @@ object documentMod {
       def setOnLoadSuccessUndefined: Self = StObject.set(x, "onLoadSuccess", js.undefined)
       
       @scala.inline
-      def setOnPassword(value: /* callback */ js.Function1[/* repeated */ js.Any, _] => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction1(value))
+      def setOnPassword(value: /* callback */ js.Function1[/* repeated */ js.Any, js.Any] => Unit): Self = StObject.set(x, "onPassword", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnPasswordUndefined: Self = StObject.set(x, "onPassword", js.undefined)

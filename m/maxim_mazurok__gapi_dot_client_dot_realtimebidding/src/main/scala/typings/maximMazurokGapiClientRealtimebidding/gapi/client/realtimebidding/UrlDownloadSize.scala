@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlDownloadSize extends StObject {
   
   /** Download size of the URL in kilobytes. */
-  var downloadSizeKb: js.UndefOr[Double] = js.native
+  var downloadSizeKb: js.UndefOr[Double] = js.undefined
   
   /** The normalized URL with query parameters and fragment removed. */
-  var normalizedUrl: js.UndefOr[String] = js.native
+  var normalizedUrl: js.UndefOr[String] = js.undefined
 }
 object UrlDownloadSize {
   

@@ -4,15 +4,15 @@ import typings.seleniumWebdriver.capabilitiesMod.Capabilities
 import typings.seleniumWebdriver.mod.CreateSessionCapabilities
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Desired extends CreateSessionCapabilities {
+trait Desired
+  extends StObject
+     with CreateSessionCapabilities {
   
-  var desired: js.UndefOr[Capabilities] = js.native
+  var desired: js.UndefOr[Capabilities] = js.undefined
   
-  var required: js.UndefOr[Capabilities] = js.native
+  var required: js.UndefOr[Capabilities] = js.undefined
 }
 object Desired {
   

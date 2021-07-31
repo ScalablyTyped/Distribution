@@ -2,31 +2,29 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainCognitoOptions extends StObject {
   
   /**
     * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID of the Cognito Identity Pool to use
     */
-  var identityPoolId: String = js.native
+  var identityPoolId: String
   
   /**
     * ARN of the IAM role that has the AmazonESCognitoAccess policy attached
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * ID of the Cognito User Pool to use
     */
-  var userPoolId: String = js.native
+  var userPoolId: String
 }
 object DomainCognitoOptions {
   

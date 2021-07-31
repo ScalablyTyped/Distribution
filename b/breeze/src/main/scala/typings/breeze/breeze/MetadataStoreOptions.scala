@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataStoreOptions extends StObject {
   
-  var localQueryComparisonOptions: js.UndefOr[LocalQueryComparisonOptions] = js.native
+  var localQueryComparisonOptions: js.UndefOr[LocalQueryComparisonOptions] = js.undefined
   
-  var namingConvention: js.UndefOr[NamingConvention] = js.native
+  var namingConvention: js.UndefOr[NamingConvention] = js.undefined
 }
 object MetadataStoreOptions {
   

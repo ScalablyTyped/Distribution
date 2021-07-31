@@ -6,22 +6,20 @@ import typings.plotlyJs.plotlyJsStrings.svg
 import typings.plotlyJs.plotlyJsStrings.webp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  filename :string,   scale :number,   format :'png' | 'svg' | 'jpeg' | 'webp',   height :number,   width :number}> */
-@js.native
 trait Partialfilenamestringscal extends StObject {
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[png | svg | jpeg | webp] = js.native
+  var format: js.UndefOr[png | svg | jpeg | webp] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Partialfilenamestringscal {
   

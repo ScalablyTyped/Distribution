@@ -2,27 +2,27 @@ package typings.scssParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("scss-parser", "parse")
+  @JSImport("scss-parser", JSImport.Namespace)
   @js.native
-  def parse(css: String): Node = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("scss-parser", "stringify")
-  @js.native
-  def stringify(node: Node): String = js.native
+  @scala.inline
+  def parse(css: String): Node = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(css.asInstanceOf[js.Any]).asInstanceOf[Node]
   
-  @js.native
+  @scala.inline
+  def stringify(node: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(node.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait InputStreamPosition extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var cursor: Double = js.native
+    var cursor: Double
     
-    var line: Double = js.native
+    var line: Double
   }
   object InputStreamPosition {
     
@@ -46,16 +46,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Node extends StObject {
     
-    var end: js.UndefOr[InputStreamPosition] = js.native
+    var end: js.UndefOr[InputStreamPosition] = js.undefined
     
-    var start: js.UndefOr[InputStreamPosition] = js.native
+    var start: js.UndefOr[InputStreamPosition] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String | js.Array[Node] = js.native
+    var value: String | js.Array[Node]
   }
   object Node {
     

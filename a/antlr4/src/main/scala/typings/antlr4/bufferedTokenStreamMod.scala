@@ -4,7 +4,6 @@ import typings.antlr4.intervalSetMod.Interval
 import typings.antlr4.tokenMod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferedTokenStreamMod {

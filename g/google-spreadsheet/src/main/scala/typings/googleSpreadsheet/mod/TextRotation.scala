@@ -2,15 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextRotation extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var vertical: Boolean = js.native
+  var vertical: Boolean
 }
 object TextRotation {
   

@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.inquirerStrings.choice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,34 +11,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait ChoiceOptions[T /* <: Answers */] extends ChoiceBase {
+trait ChoiceOptions[T /* <: Answers */]
+  extends StObject
+     with ChoiceBase {
   
   /**
     * The extra properties of the choice.
     */
-  var extra: js.UndefOr[js.Any] = js.native
+  var extra: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The name of the choice to show to the user.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The short form of the name of the choice.
     */
-  var short: js.UndefOr[String] = js.native
+  var short: js.UndefOr[String] = js.undefined
   
   /**
     * @inheritdoc
     */
   @JSName("type")
-  var type_ChoiceOptions: js.UndefOr[choice] = js.native
+  var type_ChoiceOptions: js.UndefOr[choice] = js.undefined
   
   /**
     * The value of the choice.
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ChoiceOptions {
   
@@ -50,7 +50,7 @@ object ChoiceOptions {
   }
   
   @scala.inline
-  implicit class ChoiceOptionsMutableBuilder[Self <: ChoiceOptions[_], T /* <: Answers */] (val x: Self with ChoiceOptions[T]) extends AnyVal {
+  implicit class ChoiceOptionsMutableBuilder[Self <: ChoiceOptions[?], T /* <: Answers */] (val x: Self & ChoiceOptions[T]) extends AnyVal {
     
     @scala.inline
     def setExtra(value: js.Any): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])

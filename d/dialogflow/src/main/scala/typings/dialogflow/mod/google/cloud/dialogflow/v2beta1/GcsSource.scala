@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GcsSource. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GcsSource.
   * @param [properties] Properties to set
   */
-class GcsSource () extends IGcsSource {
+class GcsSource ()
+  extends StObject
+     with IGcsSource {
   def this(properties: IGcsSource) = this()
   
   /**
@@ -32,18 +33,20 @@ class GcsSource () extends IGcsSource {
 }
 object GcsSource {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GcsSource instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GcsSource instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.create")
-  @js.native
-  def create(): GcsSource = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.create")
-  @js.native
-  def create(properties: IGcsSource): GcsSource = js.native
+  @scala.inline
+  def create(): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GcsSource]
+  @scala.inline
+  def create(properties: IGcsSource): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
   
   /**
     * Decodes a GcsSource message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GcsSource {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decode")
-  @js.native
-  def decode(reader: Reader): GcsSource = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GcsSource = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decode")
-  @js.native
-  def decode(reader: Uint8Array): GcsSource = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GcsSource = js.native
+  @scala.inline
+  def decode(reader: Reader): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GcsSource = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GcsSource]
+  @scala.inline
+  def decode(reader: Uint8Array): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GcsSource = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GcsSource]
   
   /**
     * Decodes a GcsSource message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GcsSource {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GcsSource = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GcsSource = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
   
   /**
     * Encodes the specified GcsSource message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.GcsSource.verify|verify} messages.
@@ -89,12 +86,10 @@ object GcsSource {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.encode")
-  @js.native
-  def encode(message: IGcsSource): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.encode")
-  @js.native
-  def encode(message: IGcsSource, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGcsSource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGcsSource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GcsSource message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.GcsSource.verify|verify} messages.
@@ -103,12 +98,10 @@ object GcsSource {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGcsSource): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGcsSource, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGcsSource): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGcsSource, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GcsSource message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GcsSource {
     * @returns GcsSource
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GcsSource = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GcsSource = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GcsSource]
   
   /**
     * Creates a plain object from a GcsSource message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GcsSource {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.toObject")
-  @js.native
-  def toObject(message: GcsSource): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.toObject")
-  @js.native
-  def toObject(message: GcsSource, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GcsSource): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GcsSource, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GcsSource message.
@@ -140,7 +130,6 @@ object GcsSource {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.GcsSource.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

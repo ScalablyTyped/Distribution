@@ -2,15 +2,13 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderTopRightRadius extends StObject {
   
-  var borderBottomRightRadius: Double = js.native
+  var borderBottomRightRadius: Double
   
-  var borderTopRightRadius: Double = js.native
+  var borderTopRightRadius: Double
 }
 object BorderTopRightRadius {
   

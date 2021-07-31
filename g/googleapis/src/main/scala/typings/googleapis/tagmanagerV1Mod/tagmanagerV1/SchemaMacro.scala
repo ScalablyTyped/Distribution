@@ -2,84 +2,82 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Macro.
   */
-@js.native
 trait SchemaMacro extends StObject {
   
   /**
     * GTM Account ID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Container ID.
     */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /**
     * For mobile containers only: A list of rule IDs for disabling conditional
     * macros; the macro is enabled if one of the enabling rules is true while
     * all the disabling rules are false. Treated as an unordered set.
     */
-  var disablingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var disablingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * For mobile containers only: A list of rule IDs for enabling conditional
     * macros; the macro is enabled if one of the enabling rules is true while
     * all the disabling rules are false. Treated as an unordered set.
     */
-  var enablingRuleId: js.UndefOr[js.Array[String]] = js.native
+  var enablingRuleId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The fingerprint of the GTM Macro as computed at storage time. This value
     * is recomputed whenever the macro is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The Macro ID uniquely identifies the GTM Macro.
     */
-  var macroId: js.UndefOr[String] = js.native
+  var macroId: js.UndefOr[String] = js.undefined
   
   /**
     * Macro display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * User notes on how to apply this macro in the container.
     */
-  var notes: js.UndefOr[String] = js.native
+  var notes: js.UndefOr[String] = js.undefined
   
   /**
     * The macro&#39;s parameters.
     */
-  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var parameter: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * Parent folder id.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * The end timestamp in milliseconds to schedule a macro.
     */
-  var scheduleEndMs: js.UndefOr[String] = js.native
+  var scheduleEndMs: js.UndefOr[String] = js.undefined
   
   /**
     * The start timestamp in milliseconds to schedule a macro.
     */
-  var scheduleStartMs: js.UndefOr[String] = js.native
+  var scheduleStartMs: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Macro Type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaMacro {
   

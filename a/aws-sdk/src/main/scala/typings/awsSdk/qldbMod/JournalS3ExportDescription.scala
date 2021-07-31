@@ -2,48 +2,46 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JournalS3ExportDescription extends StObject {
   
   /**
     * The exclusive end date and time for the range of journal contents that are specified in the original export request.
     */
-  var ExclusiveEndTime: Timestamp = js.native
+  var ExclusiveEndTime: Timestamp
   
   /**
     * The date and time, in epoch time format, when the export job was created. (Epoch time format is the number of seconds elapsed since 12:00:00 AM January 1, 1970 UTC.)
     */
-  var ExportCreationTime: Timestamp = js.native
+  var ExportCreationTime: Timestamp
   
   /**
     * The unique ID of the journal export job.
     */
-  var ExportId: UniqueId = js.native
+  var ExportId: UniqueId
   
   /**
     * The inclusive start date and time for the range of journal contents that are specified in the original export request.
     */
-  var InclusiveStartTime: Timestamp = js.native
+  var InclusiveStartTime: Timestamp
   
   /**
     * The name of the ledger.
     */
-  var LedgerName: typings.awsSdk.qldbMod.LedgerName = js.native
+  var LedgerName: typings.awsSdk.qldbMod.LedgerName
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that grants QLDB permissions for a journal export job to do the following:   Write objects into your Amazon Simple Storage Service (Amazon S3) bucket.   (Optional) Use your customer master key (CMK) in AWS Key Management Service (AWS KMS) for server-side encryption of your exported data.  
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
   
-  var S3ExportConfiguration: typings.awsSdk.qldbMod.S3ExportConfiguration = js.native
+  var S3ExportConfiguration: typings.awsSdk.qldbMod.S3ExportConfiguration
   
   /**
     * The current state of the journal export job.
     */
-  var Status: ExportStatus = js.native
+  var Status: ExportStatus
 }
 object JournalS3ExportDescription {
   

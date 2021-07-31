@@ -2,7 +2,6 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,38 +48,11 @@ trait IFieldExpression extends StObject {
     @param recurrenceIDField Internal name of "Recurrence ID" field (default: "RecurrenceID" - all OOTB Calendar lists use this name)
     */
   def DateRangesOverlap(overlapType: DateRangesOverlapType, calendarDate: String): IExpression = js.native
-  def DateRangesOverlap(
-    overlapType: DateRangesOverlapType,
-    calendarDate: String,
-    eventDateField: js.UndefOr[scala.Nothing],
-    endDateField: js.UndefOr[scala.Nothing],
-    recurrenceIDField: String
-  ): IExpression = js.native
-  def DateRangesOverlap(
-    overlapType: DateRangesOverlapType,
-    calendarDate: String,
-    eventDateField: js.UndefOr[scala.Nothing],
-    endDateField: String
-  ): IExpression = js.native
-  def DateRangesOverlap(
-    overlapType: DateRangesOverlapType,
-    calendarDate: String,
-    eventDateField: js.UndefOr[scala.Nothing],
-    endDateField: String,
-    recurrenceIDField: String
-  ): IExpression = js.native
   def DateRangesOverlap(overlapType: DateRangesOverlapType, calendarDate: String, eventDateField: String): IExpression = js.native
   def DateRangesOverlap(
     overlapType: DateRangesOverlapType,
     calendarDate: String,
     eventDateField: String,
-    endDateField: js.UndefOr[scala.Nothing],
-    recurrenceIDField: String
-  ): IExpression = js.native
-  def DateRangesOverlap(
-    overlapType: DateRangesOverlapType,
-    calendarDate: String,
-    eventDateField: String,
     endDateField: String
   ): IExpression = js.native
   def DateRangesOverlap(
@@ -88,6 +60,33 @@ trait IFieldExpression extends StObject {
     calendarDate: String,
     eventDateField: String,
     endDateField: String,
+    recurrenceIDField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: String,
+    endDateField: Unit,
+    recurrenceIDField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: Unit,
+    endDateField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: Unit,
+    endDateField: String,
+    recurrenceIDField: String
+  ): IExpression = js.native
+  def DateRangesOverlap(
+    overlapType: DateRangesOverlapType,
+    calendarDate: String,
+    eventDateField: Unit,
+    endDateField: Unit,
     recurrenceIDField: String
   ): IExpression = js.native
   

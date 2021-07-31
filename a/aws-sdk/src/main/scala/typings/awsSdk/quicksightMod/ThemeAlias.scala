@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeAlias extends StObject {
   
   /**
     * The display name of the theme alias.
     */
-  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.native
+  var AliasName: js.UndefOr[typings.awsSdk.quicksightMod.AliasName] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the theme alias.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The version number of the theme alias.
     */
-  var ThemeVersionNumber: js.UndefOr[VersionNumber] = js.native
+  var ThemeVersionNumber: js.UndefOr[VersionNumber] = js.undefined
 }
 object ThemeAlias {
   

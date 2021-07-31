@@ -5,12 +5,13 @@ import typings.jsprintmanager.mod.JSPM.Serial.Parity
 import typings.jsprintmanager.mod.JSPM.Serial.StopBits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("jsprintmanager", "JSPM.SerialPortPrinter")
 @js.native
-class SerialPortPrinter protected () extends IClientPrinter {
+class SerialPortPrinter protected ()
+  extends StObject
+     with IClientPrinter {
   def this(
     portName: String,
     baudRate: Double,
@@ -20,6 +21,8 @@ class SerialPortPrinter protected () extends IClientPrinter {
     flowControl: Handshake
   ) = this()
   
+  /* CompleteClass */
+  var Id: js.Any = js.native
   @JSName("Id")
   var Id_SerialPortPrinter: String = js.native
   
@@ -44,6 +47,9 @@ class SerialPortPrinter protected () extends IClientPrinter {
   var parity: Parity = js.native
   
   var portName: String = js.native
+  
+  /* CompleteClass */
+  override def serialize(): js.Any = js.native
   
   var stopBits: StopBits = js.native
 }

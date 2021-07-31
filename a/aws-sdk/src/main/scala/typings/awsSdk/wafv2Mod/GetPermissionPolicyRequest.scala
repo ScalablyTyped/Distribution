@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPermissionPolicyRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the rule group for which you want to get the policy.
     */
-  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.wafv2Mod.ResourceArn
 }
 object GetPermissionPolicyRequest {
   

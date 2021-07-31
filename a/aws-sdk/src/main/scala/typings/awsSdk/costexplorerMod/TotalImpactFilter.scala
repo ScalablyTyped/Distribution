@@ -2,26 +2,24 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TotalImpactFilter extends StObject {
   
   /**
     *  The upper bound dollar value used in the filter. 
     */
-  var EndValue: js.UndefOr[GenericDouble] = js.native
+  var EndValue: js.UndefOr[GenericDouble] = js.undefined
   
   /**
     *  The comparing value used in the filter. 
     */
-  var NumericOperator: typings.awsSdk.costexplorerMod.NumericOperator = js.native
+  var NumericOperator: typings.awsSdk.costexplorerMod.NumericOperator
   
   /**
     *  The lower bound dollar value used in the filter. 
     */
-  var StartValue: GenericDouble = js.native
+  var StartValue: GenericDouble
 }
 object TotalImpactFilter {
   

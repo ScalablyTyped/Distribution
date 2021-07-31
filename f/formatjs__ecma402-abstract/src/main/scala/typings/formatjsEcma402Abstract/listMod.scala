@@ -3,21 +3,19 @@ package typings.formatjsEcma402Abstract
 import typings.formatjsEcma402Abstract.coreMod.LocaleData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
   
-  @js.native
   trait ListPattern extends StObject {
     
-    var end: String = js.native
+    var end: String
     
-    var middle: String = js.native
+    var middle: String
     
-    var pair: String = js.native
+    var pair: String
     
-    var start: String = js.native
+    var start: String
   }
   object ListPattern {
     
@@ -44,14 +42,13 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListPatternData extends StObject {
     
-    var long: ListPattern = js.native
+    var long: ListPattern
     
-    var narrow: js.UndefOr[ListPattern] = js.native
+    var narrow: js.UndefOr[ListPattern] = js.undefined
     
-    var short: js.UndefOr[ListPattern] = js.native
+    var short: js.UndefOr[ListPattern] = js.undefined
   }
   object ListPatternData {
     
@@ -81,14 +78,13 @@ object listMod {
     }
   }
   
-  @js.native
   trait ListPatternFieldsData extends StObject {
     
-    var conjunction: js.UndefOr[ListPatternData] = js.native
+    var conjunction: js.UndefOr[ListPatternData] = js.undefined
     
-    var disjunction: js.UndefOr[ListPatternData] = js.native
+    var disjunction: js.UndefOr[ListPatternData] = js.undefined
     
-    var unit: js.UndefOr[ListPatternData] = js.native
+    var unit: js.UndefOr[ListPatternData] = js.undefined
   }
   object ListPatternFieldsData {
     

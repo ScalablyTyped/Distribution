@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurringSchedule extends StObject {
   
   /** Optional. The end time at which a recurring patch deployment schedule is no longer active. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Required. The frequency unit of this recurring schedule. */
-  var frequency: js.UndefOr[String] = js.native
+  var frequency: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the last patch job ran successfully. */
-  var lastExecuteTime: js.UndefOr[String] = js.native
+  var lastExecuteTime: js.UndefOr[String] = js.undefined
   
   /** Required. Schedule with monthly executions. */
-  var monthly: js.UndefOr[MonthlySchedule] = js.native
+  var monthly: js.UndefOr[MonthlySchedule] = js.undefined
   
   /** Output only. The time the next patch job is scheduled to run. */
-  var nextExecuteTime: js.UndefOr[String] = js.native
+  var nextExecuteTime: js.UndefOr[String] = js.undefined
   
   /** Optional. The time that the recurring schedule becomes effective. Defaults to `create_time` of the patch deployment. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** Required. Time of the day to run a recurring deployment. */
-  var timeOfDay: js.UndefOr[TimeOfDay] = js.native
+  var timeOfDay: js.UndefOr[TimeOfDay] = js.undefined
   
   /** Required. Defines the time zone that `time_of_day` is relative to. The rules for daylight saving time are determined by the chosen time zone. */
-  var timeZone: js.UndefOr[TimeZone] = js.native
+  var timeZone: js.UndefOr[TimeZone] = js.undefined
   
   /** Required. Schedule with weekly executions. */
-  var weekly: js.UndefOr[WeeklySchedule] = js.native
+  var weekly: js.UndefOr[WeeklySchedule] = js.undefined
 }
 object RecurringSchedule {
   

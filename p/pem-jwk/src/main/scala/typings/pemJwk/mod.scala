@@ -2,39 +2,39 @@ package typings.pemJwk
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pem-jwk", "jwk2pem")
+  @JSImport("pem-jwk", JSImport.Namespace)
   @js.native
-  def jwk2pem(rsa_jwk: RSA_JWK): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("pem-jwk", "pem2jwk")
-  @js.native
-  def pem2jwk(rsa_pem: String): RSA_JWK = js.native
+  @scala.inline
+  def jwk2pem(rsa_jwk: RSA_JWK): String = ^.asInstanceOf[js.Dynamic].applyDynamic("jwk2pem")(rsa_jwk.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def pem2jwk(rsa_pem: String): RSA_JWK = ^.asInstanceOf[js.Dynamic].applyDynamic("pem2jwk")(rsa_pem.asInstanceOf[js.Any]).asInstanceOf[RSA_JWK]
+  
   trait RSA_JWK extends StObject {
     
-    var d: js.UndefOr[String] = js.native
+    var d: js.UndefOr[String] = js.undefined
     
-    var dp: js.UndefOr[String] = js.native
+    var dp: js.UndefOr[String] = js.undefined
     
-    var dq: js.UndefOr[String] = js.native
+    var dq: js.UndefOr[String] = js.undefined
     
-    var e: String = js.native
+    var e: String
     
-    var kty: String = js.native
+    var kty: String
     
-    var n: String = js.native
+    var n: String
     
-    var p: js.UndefOr[String] = js.native
+    var p: js.UndefOr[String] = js.undefined
     
-    var q: js.UndefOr[String] = js.native
+    var q: js.UndefOr[String] = js.undefined
     
-    var qi: js.UndefOr[String] = js.native
+    var qi: js.UndefOr[String] = js.undefined
   }
   object RSA_JWK {
     
